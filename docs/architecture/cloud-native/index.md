@@ -9,7 +9,7 @@ ms.date: 01/10/2022
 
 ![cover image](./media/cover.png)
 
-**EDITION v1.0.2**
+**EDITION v1.0.3**
 
 Refer [changelog](https://aka.ms/cn-ebook-changelog) for the book updates and community contributions.
 
@@ -23,7 +23,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright &copy; 2022 by Microsoft Corporation
+Copyright &copy; 2023 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 
@@ -65,7 +65,7 @@ Editors:
 
 ## Version
 
-This guide has been written to cover **.NET 6** version along with many additional updates related to the same “wave” of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 6 release.
+This guide has been written to cover **.NET 7** version along with many additional updates related to the same “wave” of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 7 release.
 
 ## Who should use this guide
 
@@ -87,9 +87,7 @@ This guide begins by defining cloud native and introducing a reference applicati
 
 This guide is available both in [PDF](https://dotnet.microsoft.com/download/e-book/cloud-native-azure/pdf) form and online. Feel free to forward this document or links to its online version to your team to help ensure common understanding of these topics. Most of these topics benefit from a consistent understanding of the underlying principles and patterns, as well as the trade-offs involved in decisions related to these topics. Our goal with this document is to equip teams and their leaders with the information they need to make well-informed decisions for their applications' architecture, development, and hosting.
 
-## Send your feedback
-
-This book and related samples are constantly evolving, so your feedback is welcomed! If you have comments about how this book can be improved, use the feedback section at the bottom of any page built on [GitHub issues](https://github.com/dotnet/docs/issues).
+[!INCLUDE [feedback](../includes/feedback.md)]
 
 >[!div class="step-by-step"]
 >[Next](introduction.md)

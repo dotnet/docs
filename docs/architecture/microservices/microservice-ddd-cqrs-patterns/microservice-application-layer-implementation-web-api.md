@@ -20,7 +20,7 @@ The Solution Explorer view of the Ordering.API microservice, showing the subfold
 
 **Figure 7-23**. The application layer in the Ordering.API ASP.NET Core Web API project
 
-ASP.NET Core includes a simple [built-in IoC container](/aspnet/core/fundamentals/dependency-injection) (represented by the IServiceProvider interface) that supports constructor injection by default, and ASP.NET makes certain services available through DI. ASP.NET Core uses the term *service* for any of the types you register that will be injected through DI. You configure the built-in container's services in the ConfigureServices method in your application's Startup class. Your dependencies are implemented in the services that a type needs and that you register in the IoC container.
+ASP.NET Core includes a simple [built-in IoC container](/aspnet/core/fundamentals/dependency-injection) (represented by the IServiceProvider interface) that supports constructor injection by default, and ASP.NET makes certain services available through DI. ASP.NET Core uses the term *service* for any of the types you register that will be injected through DI. You configure the built-in container's services in your application's _Program.cs_ file. Your dependencies are implemented in the services that a type needs and that you register in the IoC container.
 
 Typically, you want to inject dependencies that implement infrastructure objects. A typical dependency to inject is a repository. But you could inject any other infrastructure dependency that you may have. For simpler implementations, you could directly inject your Unit of Work pattern object (the EF DbContext object), because the DBContext is also the implementation of your infrastructure persistence objects.
 
@@ -87,21 +87,17 @@ Before you use the objects injected through constructors, you need to know where
 
 #### Use the built-in IoC container provided by ASP.NET Core
 
-When you use the built-in IoC container provided by ASP.NET Core, you register the types you want to inject in the ConfigureServices method in the Startup.cs file, as in the following code:
+When you use the built-in IoC container provided by ASP.NET Core, you register the types you want to inject in the _Program.cs_ file, as in the following code:
 
 ```csharp
-// Registration of types into ASP.NET Core built-in container
-public void ConfigureServices(IServiceCollection services)
-{
-    // Register out-of-the-box framework services.
-    services.AddDbContext<CatalogContext>(c =>
-        c.UseSqlServer(Configuration["ConnectionString"]),
-        ServiceLifetime.Scoped);
+// Register out-of-the-box framework services.
+builder.Services.AddDbContext<CatalogContext>(c =>
+    c.UseSqlServer(Configuration["ConnectionString"]),
+    ServiceLifetime.Scoped);
 
-    services.AddMvc();
-    // Register custom application dependencies.
-    services.AddScoped<IMyCustomRepository, MyCustomSQLRepository>();
-}
+builder.Services.AddMvc();
+// Register custom application dependencies.
+builder.Services.AddScoped<IMyCustomRepository, MyCustomSQLRepository>();
 ```
 
 The most common pattern when registering types in an IoC container is to register a pair of types—an interface and its related implementation class. Then when you request an object from the IoC container through any constructor, you request an object of a certain type of interface. For instance, in the previous example, the last line states that when any of your constructors have a dependency on IMyCustomRepository (interface or abstraction), the IoC container will inject an instance of the MyCustomSQLServerRepository implementation class.
@@ -168,7 +164,7 @@ The instance scope type determines how an instance is shared between requests fo
 #### Additional resources
 
 - **Introduction to Dependency Injection in ASP.NET Core** \
-  [https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection](/aspnet/core/fundamentals/dependency-injection)
+  [https://learn.microsoft.com/aspnet/core/fundamentals/dependency-injection](/aspnet/core/fundamentals/dependency-injection)
 
 - **Autofac.** Official documentation. \
   <https://docs.autofac.org/en/latest/>
@@ -218,7 +214,7 @@ The following example shows the simplified `CreateOrderCommand` class. This is a
 // http://cqrs.nu/Faq
 // https://docs.spine3.org/motivation/immutability.html
 // http://blog.gauffin.org/2012/06/griffin-container-introducing-command-support/
-// https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties
+// https://learn.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties
 
 [DataContract]
 public class CreateOrderCommand
@@ -431,10 +427,10 @@ These are additional steps a command handler should take:
   <https://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/>
 
 - **Commands and events** \
-  <https://cqrs.nu/Faq/commands-and-events>
+  <https://cqrs.nu/faq/Command%20and%20Events>
 
 - **What does a command handler do?** \
-  <https://cqrs.nu/Faq/command-handlers>
+  <https://cqrs.nu/faq/Command%20Handlers>
 
 - **Jimmy Bogard. Domain Command Patterns – Handlers** \
   <https://jimmybogard.com/domain-command-patterns-handlers/>

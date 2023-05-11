@@ -86,7 +86,7 @@ let pi = $"{System.Math.PI:N4}"  // "3.1416"
 let now = $"{System.DateTime.UtcNow:``yyyyMMdd``}" // e.g. "20220210"
 ```
 
-If a .NET alignment contains an unusual character, then it can be escaped using double-backticks:
+If a .NET-style specifier contains an unusual character, then it can be escaped using double-backticks:
 
 ```fsharp
 let nowDashes = $"{System.DateTime.UtcNow:``yyyy-MM-dd``}" // e.g. "2022-02-10"

@@ -203,8 +203,8 @@ In this step, you use the <xref:Microsoft.ML.TimeSeriesCatalog.DetectEntireAnoma
     * `Index` is the index of each point.
     * `Anomaly` is the indicator of whether each point is detected as anomaly.
     * `ExpectedValue` is the estimated value of each point.
-    * `LowerBoundary` is the lowest value each point can be to be not anomaly.
-    * `UpperBoundary` is the highest value each point can be to be not anomaly.
+    * `LowerBoundary` is the lowest value each point can be to not be an anomaly.
+    * `UpperBoundary` is the highest value each point can be to not be an anomaly.
 
 6. Iterate through the `predictions` `IEnumerable` and display the results with the following code:
 

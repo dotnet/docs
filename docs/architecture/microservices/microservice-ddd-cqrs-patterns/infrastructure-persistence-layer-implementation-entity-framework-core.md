@@ -21,16 +21,16 @@ Since an introduction to EF Core is already available in Microsoft documentation
 ### Additional resources
 
 - **Entity Framework Core** \
-  [https://docs.microsoft.com/ef/core/](/ef/core/)
+  [https://learn.microsoft.com/ef/core/](/ef/core/)
 
 - **Getting started with ASP.NET Core and Entity Framework Core using Visual Studio** \
-  [https://docs.microsoft.com/aspnet/core/data/ef-mvc/](/aspnet/core/data/ef-mvc/)
+  [https://learn.microsoft.com/aspnet/core/data/ef-mvc/](/aspnet/core/data/ef-mvc/)
 
 - **DbContext Class** \
-  [https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext](xref:Microsoft.EntityFrameworkCore.DbContext)
+  [https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext](xref:Microsoft.EntityFrameworkCore.DbContext)
 
 - **Compare EF Core & EF6.x** \
-  [https://docs.microsoft.com/ef/efcore-and-ef6/index](/ef/efcore-and-ef6/index)
+  [https://learn.microsoft.com/ef/efcore-and-ef6/index](/ef/efcore-and-ef6/index)
 
 ## Infrastructure in Entity Framework Core from a DDD perspective
 
@@ -187,36 +187,33 @@ If you were using DbContext directly, you would have to mock it or to run unit t
 
 The `DbContext` object (exposed as an `IUnitOfWork` object) should be shared among multiple repositories within the same HTTP request scope. For example, this is true when the operation being executed must deal with multiple aggregates, or simply because you are using multiple repository instances. It is also important to mention that the `IUnitOfWork` interface is part of your domain layer, not an EF Core type.
 
-In order to do that, the instance of the `DbContext` object has to have its service lifetime set to ServiceLifetime.Scoped. This is the default lifetime when registering a `DbContext` with `services.AddDbContext` in your IoC container from the ConfigureServices method of the `Startup.cs` file in your ASP.NET Core Web API project. The following code illustrates this.
+In order to do that, the instance of the `DbContext` object has to have its service lifetime set to ServiceLifetime.Scoped. This is the default lifetime when registering a `DbContext` with `builder.Services.AddDbContext` in your IoC container from the _Program.cs_ file in your ASP.NET Core Web API project. The following code illustrates this.
 
 ```csharp
-public IServiceProvider ConfigureServices(IServiceCollection services)
+// Add framework services.
+builder.Services.AddMvc(options =>
 {
-    // Add framework services.
-    services.AddMvc(options =>
-    {
-        options.Filters.Add(typeof(HttpGlobalExceptionFilter));
-    }).AddControllersAsServices();
+    options.Filters.Add(typeof(HttpGlobalExceptionFilter));
+}).AddControllersAsServices();
 
-    services.AddEntityFrameworkSqlServer()
-      .AddDbContext<OrderingContext>(options =>
-      {
-          options.UseSqlServer(Configuration["ConnectionString"],
-                               sqlOptions => sqlOptions.MigrationsAssembly(typeof(Startup).GetTypeInfo().
-                                                                                    Assembly.GetName().Name));
-      },
-      ServiceLifetime.Scoped // Note that Scoped is the default choice
-                             // in AddDbContext. It is shown here only for
-                             // pedagogic purposes.
-      );
-}
+builder.Services.AddEntityFrameworkSqlServer()
+    .AddDbContext<OrderingContext>(options =>
+    {
+        options.UseSqlServer(Configuration["ConnectionString"],
+                            sqlOptions => sqlOptions.MigrationsAssembly(typeof(Startup).GetTypeInfo().
+                                                                                Assembly.GetName().Name));
+    },
+    ServiceLifetime.Scoped // Note that Scoped is the default choice
+                            // in AddDbContext. It is shown here only for
+                            // pedagogic purposes.
+    );
 ```
 
 The DbContext instantiation mode should not be configured as ServiceLifetime.Transient or ServiceLifetime.Singleton.
 
 ## The repository instance lifetime in your IoC container
 
-In a similar way, repository's lifetime should usually be set as scoped (InstancePerLifetimeScope in Autofac). It could also be transient (InstancePerDependency in Autofac), but your service will be more efficient in regards memory when using the scoped lifetime.
+In a similar way, repository's lifetime should usually be set as scoped (InstancePerLifetimeScope in Autofac). It could also be transient (InstancePerDependency in Autofac), but your service will be more efficient in regards to memory when using the scoped lifetime.
 
 ```csharp
 // Registering a Repository in Autofac IoC container
@@ -225,7 +222,7 @@ builder.RegisterType<OrderRepository>()
     .InstancePerLifetimeScope();
 ```
 
-Using the singleton lifetime for the repository could cause you serious concurrency problems when your DbContext is set to scoped (InstancePerLifetimeScope) lifetime (the default lifetimes for a DBContext).
+Using the singleton lifetime for the repository could cause you serious concurrency problems when your DbContext is set to scoped (InstancePerLifetimeScope) lifetime (the default lifetimes for a DBContext). As long as your service lifetimes for your repositories and your DbContext are both Scoped, you'll avoid these issues.
 
 ### Additional resources
 
@@ -474,22 +471,24 @@ Learn [how the specification pattern is applied in the eShopOnWeb sample](https:
 ### Additional resources
 
 - **Table Mapping** \
-  [https://docs.microsoft.com/ef/core/modeling/relational/tables](/ef/core/modeling/relational/tables)
+  [https://learn.microsoft.com/ef/core/modeling/relational/tables](/ef/core/modeling/relational/tables)
 
 - **Use HiLo to generate keys with Entity Framework Core** \
   <https://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/>
 
 - **Backing Fields** \
-  [https://docs.microsoft.com/ef/core/modeling/backing-field](/ef/core/modeling/backing-field)
+  [https://learn.microsoft.com/ef/core/modeling/backing-field](/ef/core/modeling/backing-field)
 
 - **Steve Smith. Encapsulated Collections in Entity Framework Core** \
   <https://ardalis.com/encapsulated-collections-in-entity-framework-core>
 
 - **Shadow Properties** \
-  [https://docs.microsoft.com/ef/core/modeling/shadow-properties](/ef/core/modeling/shadow-properties)
+  [https://learn.microsoft.com/ef/core/modeling/shadow-properties](/ef/core/modeling/shadow-properties)
 
 - **The Specification pattern** \
   <https://deviq.com/specification-pattern/>
+
+  **Ardalis.Specification NuGet Package** Used by eShopOnWeb. \ <https://www.nuget.org/packages/Ardalis.Specification>
 
 > [!div class="step-by-step"]
 > [Previous](infrastructure-persistence-layer-design.md)

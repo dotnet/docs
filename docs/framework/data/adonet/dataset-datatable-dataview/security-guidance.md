@@ -69,7 +69,7 @@ The object type restrictions don't apply when using `DataAdapter.Fill`, such as 
 
 An app can extend the allowed types list to include custom types in addition to the built-in types listed above. If extending the allowed types list, the change affects _all_ `DataSet` and `DataTable` instances within the app. Types cannot be removed from the built-in allowed types list.
 
-#### Extend through configuration (.NET Framework 4.0 - 4.8)
+#### Extend through configuration (.NET Framework 4.0 and later)
 
 _App.config_ can be used to extend the allowed types list. To extend the allowed types list:
 
@@ -215,7 +215,7 @@ If an app must remove all type limiting restrictions from `DataSet` and `DataTab
 > [!WARNING]
 > Removing all type restrictions can introduce a security hole inside the app. When using this mechanism, ensure the app does **not** use `DataSet` or `DataTable` to read untrusted input. For more information, see [CVE-2020-1147](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2020-1147) and the following section titled [Safety with regard to untrusted input](#swr).
 
-#### Through AppContext configuration (.NET Framework 4.6 - 4.8, .NET Core 2.1 and later, .NET 5 and later)
+#### Through AppContext configuration (.NET Framework 4.6 and later, .NET Core 2.1 and later, .NET 5 and later)
 
 The `AppContext` switch, `Switch.System.Data.AllowArbitraryDataSetTypeInstantiation`, when set to `true` removes all type limiting restrictions from `DataSet` and `DataTable`.
 
@@ -264,9 +264,9 @@ For more information, see [".NET Core runtime configuration settings"](../../../
 AppContext.SetSwitch("Switch.System.Data.AllowArbitraryDataSetTypeInstantiation", true);
 ```
 
- If you choose the preceding programmatic approach, the call to `AppContext.SetSwitch` should occur early in the apps startup.
+If you choose the preceding programmatic approach, the call to `AppContext.SetSwitch` should occur early in the apps startup.
 
-#### Through the machine-wide registry (.NET Framework 2.0 - 4.8)
+#### Through the machine-wide registry (.NET Framework 2.0 - 4.x)
 
 If `AppContext` is not available, type limiting checks can be disabled with the Windows registry:
 
@@ -288,7 +288,7 @@ For more information on using the registry to configure `AppContext`, see ["AppC
 
 ## Safety with regard to untrusted input
 
-While `DataSet` and `DataTable` do impose default limitations on the types that are allowed to be present while deserializing XML payloads, __`DataSet` and `DataTable` are in general not safe when populated with untrusted input.__ The following is a non-exhaustive list of ways that a `DataSet` or `DataTable` instance might read untrusted input.
+While `DataSet` and `DataTable` do impose default limitations on the types that are allowed to be present while deserializing XML payloads, **`DataSet` and `DataTable` are in general not safe when populated with untrusted input.** The following is a non-exhaustive list of ways that a `DataSet` or `DataTable` instance might read untrusted input.
 
 * A `DataAdapter` references a database, and the `DataAdapter.Fill` method is used to populate a `DataSet` with the contents of a database query.
 * The `DataSet.ReadXml` or `DataTable.ReadXml` method is used to read an XML file containing column and row information.
@@ -474,7 +474,7 @@ Deserializing a `DataSet` or `DataTable` in this manner from an untrusted JSON b
 
 ## Deserialize a DataSet or DataTable via BinaryFormatter
 
-Developers must never use `BinaryFormatter`, `NetDataContractSerializer`, `SoapFormatter`, or related ***unsafe*** formatters to deserialize a `DataSet` or `DataTable` instance from an untrusted payload:
+You must never use `BinaryFormatter`, `NetDataContractSerializer`, `SoapFormatter`, or related **_unsafe_** formatters to deserialize a `DataSet` or `DataTable` instance from an untrusted payload:
 
 * This is susceptible to a full remote code execution attack.
 * Using a custom `SerializationBinder` is not sufficient to prevent such an attack.

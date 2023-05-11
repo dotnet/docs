@@ -79,7 +79,7 @@ Console.WriteLine(s.Contains(v)); // True
 
 ## Version introduced
 
-.NET 7 Preview 5
+.NET 7
 
 ## Type of breaking change
 

@@ -3,7 +3,7 @@ title: .NET Generic Host
 author: IEvangelist
 description: Learn about the .NET Generic Host, which is responsible for app startup and lifetime management.
 ms.author: dapine
-ms.date: 11/12/2021
+ms.date: 03/13/2023
 ---
 
 # .NET Generic Host
@@ -33,20 +33,14 @@ The host is typically configured, built, and run by code in the `Program` class.
 The .NET Worker Service templates generate the following code to create a Generic Host:
 
 ```csharp
-public class Program
-{
-    public static void Main(string[] args)
+IHost host = Host.CreateDefaultBuilder(args)
+    .ConfigureServices((hostContext, services) =>
     {
-        CreateHostBuilder(args).Build().Run();
-    }
+        services.AddHostedService<Worker>();
+    })
+    .Build();
 
-    public static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureServices((hostContext, services) =>
-            {
-                services.AddHostedService<Worker>();
-            });
-}
+host.Run();
 ```
 
 ## Default builder settings
@@ -90,7 +84,7 @@ The following example is an `IHostedService` implementation that registers `IHos
 
 The Worker Service template could be modified to add the `ExampleHostedService` implementation:
 
-:::code language="csharp" source="snippets/configuration/app-lifetime/Program.cs" id="Program" highlight="14":::
+:::code language="csharp" source="snippets/configuration/app-lifetime/Program.cs" id="Program" highlight="8":::
 
 The application would write the following sample output:
 
@@ -113,7 +107,7 @@ Inject the <xref:Microsoft.Extensions.Hosting.IHostEnvironment> service into a c
 
 Host configuration is used to configure properties of the [IHostEnvironment](#ihostenvironment) implementation.
 
-The host configuration is available in [HostBuilderContext.Configuration](xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration) within the <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A> method. When calling the `ConfigureAppConfiguration` method, the `HostBuilderContext` and `IConfigurationBuilder` are passed into the `configureDelegate`. The `configureDelegate` is defined as an `Action<HostBuilderContext, IConfigurationBuilder>`. The host builder context exposes the `.Configuration` property, which is an instance of `IConfiguration`. It represents the configuration built from the host, whereas the `IConfigurationBuilder` is the builder object used to configure the app.
+The host configuration is available in [HostBuilderContext.Configuration](xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration) within the <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A> method. When calling the `ConfigureAppConfiguration` method, the `HostBuilderContext` and `IConfigurationBuilder` are passed into the `configureDelegate`. The `configureDelegate` is defined as an `Action<HostBuilderContext, IConfigurationBuilder>`. The host builder context exposes the `Configuration` property, which is an instance of `IConfiguration`. It represents the configuration built from the host, whereas the `IConfigurationBuilder` is the builder object used to configure the app.
 
 > [!TIP]
 > After `ConfigureAppConfiguration` is called the `HostBuilderContext.Configuration` is replaced with the [app config](#app-configuration).
@@ -122,7 +116,7 @@ To add host configuration, call <xref:Microsoft.Extensions.Hosting.HostBuilder.C
 
 The following example creates host configuration:
 
-:::code language="csharp" source="snippets/configuration/console-host/Program.cs" highlight="17-23":::
+:::code language="csharp" source="snippets/configuration/console-host/Program.cs" highlight="5-11":::
 
 ## App configuration
 
@@ -168,9 +162,7 @@ in the application calling `Environment.Exit`. `Environment.Exit` isn't a gracef
 in the `Microsoft.Extensions.Hosting` app model. It raises the `ProcessExit` event and then exits the process. The end of the
 `Main` method doesn't get executed. Background and foreground threads are terminated, and `finally` blocks are *not* executed.
 
-Since `ConsoleLifetime` blocked `ProcessExit` waiting for the host to shutdown, this behavior led to [deadlocks][deadlocks]
-from `Environment.Exit` also blocking waiting for `ProcessExit` to return. Additionally, since the SIGTERM handling was attempting
-to gracefully shut down the process, `ConsoleLifetime` would set the <xref:System.Environment.ExitCode> to `0`, which [clobbered][clobbered] the user's exit code passed to `Environment.Exit`.
+Since `ConsoleLifetime` blocked `ProcessExit` while waiting for the host to shut down, this behavior led to [deadlocks][deadlocks] from `Environment.Exit` also blocks waiting for the call to `ProcessExit`. Additionally, since the SIGTERM handling was attempting to gracefully shut down the process, `ConsoleLifetime` would set the <xref:System.Environment.ExitCode> to `0`, which [clobbered][clobbered] the user's exit code passed to `Environment.Exit`.
 
 [deadlocks]: https://github.com/dotnet/runtime/issues/50397
 [clobbered]: https://github.com/dotnet/runtime/issues/42224
@@ -187,7 +179,7 @@ If your application uses hosting, and you want to gracefully stop the host, you 
 
 ### Hosting shutdown process
 
-The following sequence diagram shows how the signals are handled internally in the hosting code. It isn't necessary for most users to understand this process. But for developers that need a deep understanding, this may help you get started.
+The following sequence diagram shows how the signals are handled internally in the hosting code. Most users don't need to understand this process. But for developers that need a deep understanding, this may help you get started.
 
 After the host has been started, when a user calls `Run` or `WaitForShutdown`, a handler gets registered for <xref:Microsoft.Extensions.Hosting.IApplicationLifetime.ApplicationStopping%2A?displayProperty=nameWithType>. Execution is paused in `WaitForShutdown`, waiting for the `ApplicationStopping` event to be raised. This is how the `Main` method doesn't return right away, and the app stays running until
 `Run` or `WaitForShutdown` returns.
@@ -211,4 +203,4 @@ to exit gracefully.
 - [Configuration in .NET](configuration.md)
 - [Worker Services in .NET](workers.md)
 - [ASP.NET Core Web Host](/aspnet/core/fundamentals/host/web-host)
-- Generic host bugs should be created in the [github.com/dotnet/extensions](https://github.com/dotnet/extensions/issues) repo
+- Generic host bugs should be created in the [github.com/dotnet/runtime](https://github.com/dotnet/runtime/issues) repo

@@ -1,7 +1,7 @@
 ---
-title: "Boolean logical operators - C# reference"
-description: "Learn about C# operators that perform logical negation, conjunction (AND), and inclusive and exclusive disjunction (OR) operations with Boolean operands."
-ms.date: 06/29/2020
+title: "Boolean logical operators - the boolean and, or, not, and xor operators"
+description: "C# logical operators perform logical negation (`!`), conjunction (AND - `&`, `&&`), and inclusive and exclusive disjunction (OR - `|`, `||`, `^`) operations with Boolean operands."
+ms.date: 11/29/2022
 author: pkulikov
 f1_keywords: 
   - "!_CSharpKeyword"
@@ -36,9 +36,9 @@ helpviewer_keywords:
   - "short-circuiting OR operator [C#]"
   - "|| operator [C#]"
 ---
-# Boolean logical operators (C# reference)
+# Boolean logical operators - AND, OR, NOT, XOR
 
-The following operators perform logical operations with [bool](../builtin-types/bool.md) operands:
+The logical Boolean operators perform logical operations with [bool](../builtin-types/bool.md) operands. The operators include the unary logical negation (`!`), binary logical AND (`&`), OR (`|`), and exclusive OR (`^`), and the binary conditional logical AND (`&&`) and OR (`||`).
 
 - Unary [`!` (logical negation)](#logical-negation-operator-) operator.
 - Binary [`&` (logical AND)](#logical-and-operator-), [`|` (logical OR)](#logical-or-operator-), and [`^` (logical exclusive OR)](#logical-exclusive-or-operator-) operators. Those operators always evaluate both operands.
@@ -52,7 +52,7 @@ The unary prefix `!` operator computes logical negation of its operand. That is,
 
 [!code-csharp-interactive[logical negation](snippets/shared/BooleanLogicalOperators.cs#Negation)]
 
-Beginning with C# 8.0, the unary postfix `!` operator is the [null-forgiving operator](null-forgiving.md).
+The unary postfix `!` operator is the [null-forgiving operator](null-forgiving.md).
 
 ## <a name="logical-and-operator-"></a> Logical AND operator &amp;
 
@@ -92,7 +92,7 @@ For operands of the [integral numeric types](../builtin-types/integral-numeric-t
 
 ## <a name="conditional-logical-and-operator-"></a> Conditional logical AND operator &amp;&amp;
 
-The conditional logical AND operator `&&`, also known as the "short-circuiting" logical AND operator, computes the logical AND of its operands. The result of `x && y` is `true` if both `x` and `y` evaluate to `true`. Otherwise, the result is `false`. If `x` evaluates to `false`, `y` is not evaluated.
+The conditional logical AND operator `&&`, also known as the "short-circuiting" logical AND operator, computes the logical AND of its operands. The result of `x && y` is `true` if both `x` and `y` evaluate to `true`. Otherwise, the result is `false`. If `x` evaluates to `false`, `y` isn't evaluated.
 
 In the following example, the right-hand operand of the `&&` operator is a method call, which isn't performed if the left-hand operand evaluates to `false`:
 
@@ -102,7 +102,7 @@ The [logical AND operator](#logical-and-operator-) `&` also computes the logical
 
 ## Conditional logical OR operator ||
 
-The conditional logical OR operator `||`, also known as the "short-circuiting" logical OR operator, computes the logical OR of its operands. The result of `x || y` is `true` if either `x` or `y` evaluates to `true`. Otherwise, the result is `false`. If `x` evaluates to `true`, `y` is not evaluated.
+The conditional logical OR operator `||`, also known as the "short-circuiting" logical OR operator, computes the logical OR of its operands. The result of `x || y` is `true` if either `x` or `y` evaluates to `true`. Otherwise, the result is `false`. If `x` evaluates to `true`, `y` isn't evaluated.
 
 In the following example, the right-hand operand of the `||` operator is a method call, which isn't performed if the left-hand operand evaluates to `true`:
 
@@ -132,7 +132,7 @@ The following table presents that semantics:
 |null|false|false|null|  
 |null|null|null|null|  
 
-The behavior of those operators differs from the typical operator behavior with nullable value types. Typically, an operator which is defined for operands of a value type can be also used with operands of the corresponding nullable value type. Such an operator produces `null` if any of its operands evaluates to `null`. However, the `&` and `|` operators can produce non-null even if one of the operands evaluates to `null`. For more information about the operator behavior with nullable value types, see the [Lifted operators](../builtin-types/nullable-value-types.md#lifted-operators) section of the [Nullable value types](../builtin-types/nullable-value-types.md) article.
+The behavior of those operators differs from the typical operator behavior with nullable value types. Typically, an operator that is defined for operands of a value type can be also used with operands of the corresponding nullable value type. Such an operator produces `null` if any of its operands evaluates to `null`. However, the `&` and `|` operators can produce non-null even if one of the operands evaluates to `null`. For more information about the operator behavior with nullable value types, see the [Lifted operators](../builtin-types/nullable-value-types.md#lifted-operators) section of the [Nullable value types](../builtin-types/nullable-value-types.md) article.
 
 You can also use the `!` and `^` operators with `bool?` operands, as the following example shows:
 
@@ -182,18 +182,18 @@ For the complete list of C# operators ordered by precedence level, see the [Oper
 
 ## Operator overloadability
 
-A user-defined type can [overload](operator-overloading.md) the `!`, `&`, `|`, and `^` operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. A user-defined type cannot explicitly overload a compound assignment operator.
+A user-defined type can [overload](operator-overloading.md) the `!`, `&`, `|`, and `^` operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. A user-defined type can't explicitly overload a compound assignment operator.
 
-A user-defined type cannot overload the conditional logical operators `&&` and `||`. However, if a user-defined type overloads the [true and false operators](true-false-operators.md) and the `&` or `|` operator in a certain way, the `&&` or `||` operation, respectively, can be evaluated for the operands of that type. For more information, see the [User-defined conditional logical operators](~/_csharpstandard/standard/expressions.md#11133-user-defined-conditional-logical-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+A user-defined type can't overload the conditional logical operators `&&` and `||`. However, if a user-defined type overloads the [true and false operators](true-false-operators.md) and the `&` or `|` operator in a certain way, the `&&` or `||` operation, respectively, can be evaluated for the operands of that type. For more information, see the [User-defined conditional logical operators](~/_csharpstandard/standard/expressions.md#12143-user-defined-conditional-logical-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## C# language specification
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Logical negation operator](~/_csharpstandard/standard/expressions.md#1184-logical-negation-operator)
-- [Logical operators](~/_csharpstandard/standard/expressions.md#1112-logical-operators)
-- [Conditional logical operators](~/_csharpstandard/standard/expressions.md#1113-conditional-logical-operators)
-- [Compound assignment](~/_csharpstandard/standard/expressions.md#11183-compound-assignment)
+- [Logical negation operator](~/_csharpstandard/standard/expressions.md#1294-logical-negation-operator)
+- [Logical operators](~/_csharpstandard/standard/expressions.md#1213-logical-operators)
+- [Conditional logical operators](~/_csharpstandard/standard/expressions.md#1214-conditional-logical-operators)
+- [Compound assignment](~/_csharpstandard/standard/expressions.md#12213-compound-assignment)
 
 ## See also
 

@@ -174,7 +174,7 @@ However, if the era changes, the intent of this code becomes ambiguous. Is the d
 
 - Instantiate the date and time value using the default <xref:System.Globalization.GregorianCalendar> class. You can then use the Japanese calendar or the Japanese Lunisolar calendar for the string representation of dates, as the following example shows.
 
-  [!code-csharp[Insantiating a Gregorian date](~/samples/snippets/standard/datetime/calendars/gregorian/cs/program.cs)]
+  [!code-csharp[Instantiating a Gregorian date](~/samples/snippets/standard/datetime/calendars/gregorian/cs/program.cs)]
   [!code-vb[Instantiating a Gregorian date](~/samples/snippets/standard/datetime/calendars/gregorian/vb/program.vb)]
 
 - Call a date and time method that explicitly specifies an era. This includes the following methods:
@@ -275,8 +275,8 @@ In the Japanese calendars, the first year of an era is called Gannen (元年). F
 - [The long date pattern](../base-types/standard-date-and-time-format-strings.md#LongDate), indicated by the "D" standard date and time format string.
 - [The full date long time pattern](../base-types/standard-date-and-time-format-strings.md#FullDateLongTime), indicated by the "F" standard date and time format string.
 - [The full date short time pattern](../base-types/standard-date-and-time-format-strings.md#FullDateShortTime), indicated by the "f" standard date and time format string.
-- [The year/month pattern](../base-types/standard-date-and-time-format-strings.md#YearMonth), indicated by the Y" or "y" standard date and time format string.
-- [The "ggy'年'" or "ggy年" [custom date and time format string](../base-types/custom-date-and-time-format-strings.md).
+- [The year/month pattern](../base-types/standard-date-and-time-format-strings.md#YearMonth), indicated by the "Y" or "y" standard date and time format string.
+- The "ggy'年'" or "ggy年" [custom date and time format string](../base-types/custom-date-and-time-format-strings.md).
 
 For example, the following example displays a date in the first year of the Heisei era in the <xref:System.Globalization.JapaneseCalendar>.
 
@@ -321,7 +321,7 @@ With gannen support in formatting operations disabled, the previous example disp
 Japanese calendar date: 平成1年8月18日 (Gregorian: Friday, August 18, 1989)
 ```
 
-.NET has also been updated so that date and time parsing operations support strings that contain the year represented as either "1" or Gannen. Although you should not need to do this, you can restore the previous behavior to recognizes only "1" as the first year of an era. You can do this as follows, depending on the version of .NET:
+.NET has also been updated so that date and time parsing operations support strings that contain the year represented as either "1" or Gannen. Although you should not need to do this, you can restore the previous behavior to recognize only "1" as the first year of an era. You can do this as follows, depending on the version of .NET:
 
 - **.NET Core:** Add the following to the *.netcore.runtime.json* config file:
 

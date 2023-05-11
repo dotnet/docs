@@ -2,7 +2,7 @@
 {
     /// <summary>
     /// Enter description here for class X.
-    /// ID string generated is "T:MyNamespace.X".
+    /// ID string generated is "T:MyNamespace.MyClass".
     /// </summary>
     public unsafe class MyClass
     {
@@ -101,7 +101,7 @@
 
         /// <summary>
         /// Enter description for operator.
-        /// ID string generated is "M:MyNamespace.MyClass.op_Explicit(MyNamespace.X)~System.Int32".
+        /// ID string generated is "M:MyNamespace.MyClass.op_Explicit(MyNamespace.MyClass)~System.Int32".
         /// </summary>
         /// <param name="myParameter">Describe parameter.</param>
         /// <returns>Describe return value.</returns>

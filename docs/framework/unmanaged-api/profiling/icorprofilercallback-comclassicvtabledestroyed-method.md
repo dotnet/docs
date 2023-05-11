@@ -35,13 +35,13 @@ HRESULT COMClassicVTableDestroyed(
   
 ## Parameters
 
-`wrappedClassId`
+`wrappedClassId`\
 [in] The ID of the class for which this vtable was created.
 
-`implementedIID`
+`implementedIID`\
 [in] The ID of the interface implemented by the class. This value may be NULL if the interface is internal only.
 
-`pVTable`
+`pVTable`\
 [in] A pointer to the start of the vtable.
 
 ## Remarks  

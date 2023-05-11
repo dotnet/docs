@@ -1,13 +1,14 @@
 ---
 title: Dependency injection with the Azure SDK for .NET
 description: Learn how to use dependency injection with the Azure SDK for .NET client libraries.
-ms.date: 05/20/2021
-author: pakrym
+ms.topic: how-to
+ms.custom: devx-track-dotnet, engagement-fy23
+ms.date: 2/28/2023
 ---
 
 # Dependency injection with the Azure SDK for .NET
 
-This article demonstrates how to register Azure service clients from the [latest Azure SDKs for .NET](https://azure.github.io/azure-sdk/releases/latest/index.html#net) in an ASP.NET Core app. Every ASP.NET Core app starts up by using the instructions provided in the `Startup` class. The `Startup` class includes a `ConfigureServices` method, which is an ideal place to configure clients.
+This article demonstrates how to register Azure service clients from the [latest Azure SDKs for .NET](https://azure.github.io/azure-sdk/releases/latest/index.html#net) for [dependency injection in an ASP.NET Core app](/aspnet/core/fundamentals/dependency-injection). Every ASP.NET Core app starts up by using the instructions provided in the _Program.cs_ file.
 
 To configure the service clients, first add the following NuGet packages to your project:
 
@@ -26,25 +27,22 @@ dotnet add package Azure.Storage.Blobs
 
 ## Register client
 
-In the `Startup.ConfigureServices` method, register a client for each service:
+In the _Program.cs_ file, register a client for each service:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
+builder.Services.AddAzureClients(clientBuilder =>
 {
-    services.AddAzureClients(builder =>
-    {
-        // Add a KeyVault client
-        builder.AddSecretClient(keyVaultUrl);
+    // Add a KeyVault client
+    clientBuilder.AddSecretClient(keyVaultUrl);
 
-        // Add a Storage account client
-        builder.AddBlobServiceClient(storageUrl);
+    // Add a Storage account client
+    clientBuilder.AddBlobServiceClient(storageUrl);
 
-        // Use DefaultAzureCredential by default
-        builder.UseCredential(new DefaultAzureCredential());
-    });
-  
-    services.AddControllers();
-}
+    // Use DefaultAzureCredential by default
+    clientBuilder.UseCredential(new DefaultAzureCredential());
+});
+
+builder.Services.AddControllers();
 ```
 
 In the preceding code:
@@ -54,7 +52,7 @@ In the preceding code:
 
 ## Use the registered clients
 
-With the clients registered in `Startup.ConfigureServices`, you can now use them:
+With the clients registered in the `AddAzureClients`, you can now use them:
 
 ```csharp
 [ApiController]
@@ -110,44 +108,38 @@ In the [Register client](#register-client) section, you explicitly specify the `
 
 You can add any options from <xref:Azure.Core.ClientOptions> into the JSON file's `AzureDefaults` section. One of the options is the retry policy. For more information, see [Configure a new retry policy](#configure-a-new-retry-policy).
 
-Since the `Configuration` object is injected from the host and stored inside the `Startup` constructor, you can use the following code in `Startup.ConfigureServices`:
+Since the `Configuration` object is a member of the `builder` instance, you can configure secrets:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
+builder.Services.AddAzureClients(clientBuilder =>
 {
-    services.AddAzureClients(builder =>
-    {
-        // Add a KeyVault client
-        builder.AddSecretClient(Configuration.GetSection("KeyVault"));
+    // Add a KeyVault client
+    clientBuilder.AddSecretClient(builder.Configuration.GetSection("KeyVault"));
 
-        // Add a storage account client
-        builder.AddBlobServiceClient(Configuration.GetSection("Storage"));
+    // Add a storage account client
+    clientBuilder.AddBlobServiceClient(builder.Configuration.GetSection("Storage"));
 
-        // Use DefaultAzureCredential by default
-        builder.UseCredential(new DefaultAzureCredential());
+    // Use DefaultAzureCredential by default
+    clientBuilder.UseCredential(new DefaultAzureCredential());
 
-        // Set up any default settings
-        builder.ConfigureDefaults(Configuration.GetSection("AzureDefaults"));
-    });
-  
-    services.AddControllers();
-}
+    // Set up any default settings
+    clientBuilder.ConfigureDefaults(builder.Configuration.GetSection("AzureDefaults"));
+});
+
+builder.Services.AddControllers();
 ```
 
 ## Configure multiple service clients with different names
 
-Assume you have two storage accounts: one for private information and one for public information. Your app transfers data from the public to private storage account after some operation. You need to have two storage service clients. To set up these clients in `Startup.ConfigureServices`:
+Assume you have two storage accounts: one for private information and one for public information. Your app transfers data from the public to private storage account after some operation. You need to have two storage service clients. To set up these clients in the _Program.cs_ file:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
+builder.Services.AddAzureClients(clientBuilder =>
 {
-    services.AddAzureClients(builder =>
-    {
-        builder.AddBlobServiceClient(Configuration.GetSection("PublicStorage"));
-        builder.AddBlobServiceClient(Configuration.GetSection("PrivateStorage"))
-            .WithName("PrivateStorage");
-    });
-}
+    clientBuilder.AddBlobServiceClient(builder.Configuration.GetSection("PublicStorage"));
+    clientBuilder.AddBlobServiceClient(builder.Configuration.GetSection("PrivateStorage"))
+        .WithName("PrivateStorage");
+});
 ```
 
 In your controller, you can access the named service clients using <xref:Microsoft.Extensions.Azure.IAzureClientFactory%601?displayProperty=nameWithType>:
@@ -196,32 +188,29 @@ At some point, you might want to change the default settings for a service clien
 You could change the retry policy depending on your needs like so:
   
 ```csharp
-public void ConfigureServices(IServiceCollection services)
+builder.Services.AddAzureClients(clientBuilder =>
 {
-    services.AddAzureClients(builder =>
-    {
-        // Establish the global defaults
-        builder.ConfigureDefaults(Configuration.GetSection("AzureDefaults"));
-        builder.UseCredential(new DefaultAzureCredential());
+    // Establish the global defaults
+    clientBuilder.ConfigureDefaults(builder.Configuration.GetSection("AzureDefaults"));
+    clientBuilder.UseCredential(new DefaultAzureCredential());
 
-        // A Key Vault Secrets client using the global defaults
-        builder.AddSecretClient(Configuration.GetSection("KeyVault"));
+    // A Key Vault Secrets client using the global defaults
+    clientBuilder.AddSecretClient(builder.Configuration.GetSection("KeyVault"));
 
-        // A Storage client with a custom retry policy
-        builder.AddBlobServiceClient(Configuration.GetSection("Storage"))
-            .ConfigureOptions(options => options.Retry.MaxRetries = 10);
+    // A Storage client with a custom retry policy
+    clientBuilder.AddBlobServiceClient(builder.Configuration.GetSection("Storage"))
+        .ConfigureOptions(options => options.Retry.MaxRetries = 10);
 
-        // A named storage client with a different custom retry policy
-        builder.AddBlobServiceClient(Configuration.GetSection("CustomStorage"))
-            .WithName("CustomStorage")
-            .ConfigureOptions(options =>
-            {
-                options.Retry.Mode = Azure.Core.RetryMode.Exponential;
-                options.Retry.MaxRetries = 5;
-                options.Retry.MaxDelay = TimeSpan.FromSections(120);
-            });
-    });
-}
+    // A named storage client with a different custom retry policy
+    clientBuilder.AddBlobServiceClient(builder.Configuration.GetSection("CustomStorage"))
+        .WithName("CustomStorage")
+        .ConfigureOptions(options =>
+        {
+            options.Retry.Mode = Azure.Core.RetryMode.Exponential;
+            options.Retry.MaxRetries = 5;
+            options.Retry.MaxDelay = TimeSpan.FromSeconds(120);
+        });
+});
 ```
 
 You can also place policy overrides in the _appsettings.json_ file:

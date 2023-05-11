@@ -1,13 +1,13 @@
 ---
-title: Create a Windows Service using BackgroundService
+title: Create Windows Service using BackgroundService
 description: Learn how to create a Windows Service using the BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/01/2022
+ms.date: 03/13/2023
 ms.topic: tutorial
 ---
 
-# Create a Windows Service using `BackgroundService`
+# Create Windows Service using `BackgroundService`
 
 .NET Framework developers are probably familiar with Windows Service apps. Before .NET Core and .NET 5+, developers who relied on .NET Framework could create Windows Services to perform background tasks or execute long-running processes. This functionality is still available and you can create Worker Services that run as a Windows Service.
 
@@ -24,6 +24,8 @@ In this tutorial, you'll learn how to:
 
 [!INCLUDE [workers-samples-browser](includes/workers-samples-browser.md)]
 
+[!INCLUDE [worker-template-workloads](includes/worker-template-workloads.md)]
+
 ## Prerequisites
 
 - The [.NET 6.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
@@ -36,7 +38,7 @@ In this tutorial, you'll learn how to:
 
 ## Install NuGet package
 
-In order to interop with native Windows Services from .NET <xref:Microsoft.Extensions.Hosting.IHostedService> implementations, you'll need to install the [`Microsoft.Extensions.Hosting.WindowsServices` NuGet package](https://nuget.org/packages/Microsoft.Extensions.Hosting.WindowsServices).
+To interop with native Windows Services from .NET <xref:Microsoft.Extensions.Hosting.IHostedService> implementations, you'll need to install the [`Microsoft.Extensions.Hosting.WindowsServices` NuGet package](https://nuget.org/packages/Microsoft.Extensions.Hosting.WindowsServices).
 
 To install this from Visual Studio, use the **Manage NuGet Packages...** dialog. Search for "Microsoft.Extensions.Hosting.WindowsServices", and install it. If you'd rather use the .NET CLI, run the `dotnet add package` command:
 
@@ -48,7 +50,7 @@ For more information on the .NET CLI add package command, see [dotnet add packag
 
 After successfully adding the packages, your project file should now contain the following package references:
 
-:::code language="xml" source="snippets/workers/windows-service/App.WindowsService.csproj" range="14-18" highlight="2-4":::
+:::code language="xml" source="snippets/workers/windows-service/App.WindowsService.csproj" range="14-17" highlight="2-3":::
 
 ## Update project file
 
@@ -78,10 +80,18 @@ In the preceding code, the `JokeService` is injected along with an `ILogger`. Bo
 > By default, the *Event Log* severity is <xref:Microsoft.Extensions.Logging.LogLevel.Warning>. This can be configured, but for demonstration purposes the `WindowsBackgroundService` logs with the <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogWarning%2A> extension method. To specifically target the `EventLog` level, add an entry in the **appsettings.{Environment}.json**, or provide an <xref:Microsoft.Extensions.Logging.EventLog.EventLogSettings.Filter?displayProperty=nameWithType> value.
 >
 > ```json
-> "Logging": {
->   "EventLog": {
+> {
+>   "Logging": {
 >     "LogLevel": {
->       "Default": "Information"
+>       "Default": "Warning"
+>     },
+>     "EventLog": {
+>       "SourceName": "The Joke Service",
+>       "LogName": "Application",
+>       "LogLevel": {
+>         "Microsoft": "Information",
+>         "Microsoft.Hosting.Lifetime": "Information"
+>       }
 >     }
 >   }
 > }
@@ -93,9 +103,9 @@ In the preceding code, the `JokeService` is injected along with an `ILogger`. Bo
 
 Replace the template *Program.cs* file contents with the following C# code:
 
-:::code source="snippets/workers/windows-service/Program.cs" highlight="4-7,10-11":::
+:::code source="snippets/workers/windows-service/Program.cs" highlight="6-9,14-15":::
 
-The <xref:Microsoft.Extensions.Hosting.WindowsServiceLifetimeHostBuilderExtensions.UseWindowsService%2A> extension method configures the app to work as a Windows Service. The service name is set to `".NET Joke Service"`. The hosted service is registered for dependency injection.
+The `AddWindowsService` extension method configures the app to work as a Windows Service. The service name is set to `".NET Joke Service"`. The hosted service is registered for dependency injection.
 
 For more information on registering services, see [Dependency injection in .NET](dependency-injection.md).
 
@@ -151,7 +161,7 @@ For more information, see [`dotnet publish`](../tools/dotnet-publish.md).
 
 ## Create the Windows Service
 
-To create the Windows Service, use the native Windows Service Control Manager's (sc.exe) create command. Run PowerShell as an Administrator.
+If you're unfamiliar with using PowerShell and you'd rather create an installer for your service, see [Create a Windows Service installer](windows-service-with-installer.md). Otherwise, to create the Windows Service, use the native Windows Service Control Manager's (_sc.exe_) create command. Run PowerShell as an Administrator.
 
 ```powershell
 sc.exe create ".NET Joke Service" binpath="C:\Path\To\App.WindowsService.exe"
@@ -328,7 +338,13 @@ For more information, see [sc.exe delete](/windows-server/administration/windows
 
 ## See also
 
+- [Create a Windows Service installer](windows-service-with-installer.md)
 - [Worker Services in .NET](workers.md)
 - [Create a Queue Service](queue-service.md)
 - [Use scoped services within a `BackgroundService`](scoped-service.md)
 - [Implement the `IHostedService` interface](timer-service.md)
+
+## Next
+
+> [!div class="nextstepaction"]
+> [Create a Windows Service installer](windows-service-with-installer.md)

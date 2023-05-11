@@ -28,7 +28,7 @@ The following guidelines are intended to provide guidance as to how to juggle so
 
 ### Use spaces not tabs
 
-When indentation is required, you must use spaces, not tabs. F# code does not use tabs and the compiler will give an error if a tab character is encountered outside
+When indentation is required, you must use spaces, not tabs. F# code doesn't use tabs, and the compiler will give an error if a tab character is encountered outside
 a string literal or comment.
 
 ### Use consistent indentation
@@ -151,7 +151,7 @@ let pair = (1, 2)
 let triples = [ (1, 2, 3); (11, 12, 13) ]
 ```
 
-It is commonly accepted to omit parentheses in pattern matching of tuples:
+It's commonly accepted to omit parentheses in pattern matching of tuples:
 
 ```fsharp
 // ✔️ OK
@@ -165,7 +165,7 @@ match x, y with
 | x, y -> 1
 ```
 
-It is also commonly accepted to omit parentheses if the tuple is the return value of a function:
+It's also commonly accepted to omit parentheses if the tuple is the return value of a function:
 
 ```fsharp
 // ✔️ OK
@@ -186,7 +186,7 @@ When formatting a function or method application, arguments are provided on the 
 someFunction1 x.IngredientName x.Quantity
 ```
 
-Parentheses should be omitted unless arguments require them:
+Omit parentheses unless arguments require them:
 
 ```fsharp
 // ✔️ OK
@@ -199,7 +199,7 @@ someFunction1 (x.IngredientName)
 someFunction1 (convertVolumeToLiter x)
 ```
 
-Spaces should not be omitted when invoking with multiple curried arguments:
+Don't omit spaces when invoking with multiple curried arguments:
 
 ```fsharp
 // ✔️ OK
@@ -478,6 +478,43 @@ let printListWithOffsetPiped list1 =
     printfn $"A very long line to format the value: %d{elem}")
 ```
 
+In case the arguments of a lambda do not fit on a single line, or are multiline themselves, put them on the next line, indented by one level.
+
+```fsharp
+// ✔️ OK
+fun
+    (aVeryLongParameterName: AnEquallyLongTypeName)
+    (anotherVeryLongParameterName: AnotherLongTypeName)
+    (yetAnotherLongParameterName: LongTypeNameAsWell)
+    (youGetTheIdeaByNow: WithLongTypeNameIncluded) ->
+    // code starts here
+    ()
+
+// ❌ Not OK, code formatters will reformat to the above to respect the maximum line length.
+fun (aVeryLongParameterName: AnEquallyLongTypeName) (anotherVeryLongParameterName: AnotherLongTypeName) (yetAnotherLongParameterName: LongTypeNameAsWell) (youGetTheIdeaByNow: WithLongTypeNameIncluded) ->
+    ()
+
+// ✔️ OK
+let useAddEntry () =
+    fun
+        (input:
+            {| name: string
+               amount: Amount
+               isIncome: bool
+               created: string |}) ->
+         // foo
+         bar ()
+
+// ❌ Not OK, code formatters will reformat to the above to avoid the vanity alignment.
+let useAddEntry () =
+    fun (input: {| name: string
+                   amount: Amount
+                   isIncome: bool
+                   created: string |}) ->
+        // foo
+        bar ()
+```
+
 ### Formatting arithmetic and binary expressions
 
 Always use white space around binary arithmetic expressions:
@@ -513,6 +550,20 @@ let function1 () =
 let function1 arg1 arg2 arg3 arg4 =
     arg1 + arg2 +
     arg3 + arg4
+```
+
+This rule also applies to units of measures in types and constant annotations:
+
+```fsharp
+// ✔️ OK
+type Test =
+    { WorkHoursPerWeek: uint<hr / (staff weeks)> }
+    static member create = { WorkHoursPerWeek = 40u<hr / (staff weeks)> }
+
+// ❌ Not OK
+type Test =
+    { WorkHoursPerWeek: uint<hr/(staff weeks)> }
+    static member create = { WorkHoursPerWeek = 40u<hr/(staff weeks)> }
 ```
 
 The following operators are defined in the F# standard library and should be used instead of defining equivalents. Using these operators is recommended as it tends to make code more readable and idiomatic. The following list summarizes the recommended F# operators.
@@ -575,22 +626,41 @@ list[..^1]
 Indentation of conditionals depends on the size and complexity of the expressions that make them up.
 Write them on one line when:
 
-- `cond`, `e1`, and `e2` are short
-- `e1` and `e2` are not `if/then/else` expressions themselves.
+* `cond`, `e1`, and `e2` are short.
+* `e1` and `e2` are not `if/then/else` expressions themselves.
 
 ```fsharp
 // ✔️ OK
 if cond then e1 else e2
 ```
 
-If any of the expressions are multi-line or `if/then/else` expressions.
+If the else expression is absent, it's recommended to never write the entire expression in one line.
+This is to differentiate the imperative code from the functional.
+
+```fsharp
+// ✔️ OK
+if a then
+    ()
+
+// ❌ Not OK, code formatters will reformat to the above by default
+if a then ()
+```
+
+If any of the expressions are multi-line, each conditional branch should be multi-line.
 
 ```fsharp
 // ✔️ OK
 if cond then
+    let e1 = something()
     e1
 else
     e2
+    
+// ❌ Not OK
+if cond then
+    let e1 = something()
+    e1
+else e2
 ```
 
 Multiple conditionals with `elif` and `else` are indented at the same scope as the `if` when they follow the rules of the one line `if/then/else` expressions.
@@ -608,6 +678,7 @@ If any of the conditions or expressions is multi-line, the entire `if/then/else`
 ```fsharp
 // ✔️ OK
 if cond1 then
+    let e1 = something()
     e1
 elif cond2 then
     e2
@@ -615,9 +686,18 @@ elif cond3 then
     e3
 else
     e4
+
+// ❌ Not OK
+if cond1 then
+    let e1 = something()
+    e1
+elif cond2 then e2
+elif cond3 then e3
+else e4
 ```
 
-If a condition is long, the `then` keyword is still placed at the end of the expression.
+If a condition is multiline or exceeds the default tolerance of the single-line, the condition expression should use one indentation and a new line.
+The `if` and `then` keyword should align when encapsulating the long condition expression.
 
 ```fsharp
 // ✔️ OK, but better to refactor, see below
@@ -626,10 +706,31 @@ if
     || someFunctionToCall
         aVeryLongParameterNameOne
         aVeryLongParameterNameTwo
-        aVeryLongParameterNameThree then
+        aVeryLongParameterNameThree 
+then
         e1
     else
         e2
+
+// ✔️The same applies to nested `elif` or `else if` expressions
+if a then
+    b
+elif
+    someLongFunctionCall
+        argumentOne
+        argumentTwo
+        argumentThree
+        argumentFour
+then
+    c
+else if
+    someOtherLongFunctionCall
+        argumentOne
+        argumentTwo
+        argumentThree
+        argumentFour
+then
+    d
 ```
 
 It is, however, better style to refactor long conditions to a let binding or separate function:
@@ -723,7 +824,90 @@ let pascalsTriangle =
        [| 1; 8; 28; 56; 70; 56; 28; 8; 1 |] |]
 ```
 
-And as with records, declaring the opening and closing brackets on their own line will make moving code around and piping into functions easier.
+As with records, declaring the opening and closing brackets on their own line will make moving code around and piping into functions easier:
+
+```fsharp
+// ✔️ OK
+let pascalsTriangle =
+    [| 
+        [| 1 |]
+        [| 1; 1 |]
+        [| 1; 2; 1 |]
+        [| 1; 3; 3; 1 |]
+        [| 1; 4; 6; 4; 1 |]
+        [| 1; 5; 10; 10; 5; 1 |]
+        [| 1; 6; 15; 20; 15; 6; 1 |]
+        [| 1; 7; 21; 35; 35; 21; 7; 1 |]
+        [| 1; 8; 28; 56; 70; 56; 28; 8; 1 |] 
+    |]
+```
+
+If a list or array expression is the right-hand side of a binding, you may prefer to use `Stroustrup` style:
+
+```fsharp
+// ✔️ OK
+let pascalsTriangle = [| 
+   [| 1 |]
+   [| 1; 1 |]
+   [| 1; 2; 1 |]
+   [| 1; 3; 3; 1 |]
+   [| 1; 4; 6; 4; 1 |]
+   [| 1; 5; 10; 10; 5; 1 |]
+   [| 1; 6; 15; 20; 15; 6; 1 |]
+   [| 1; 7; 21; 35; 35; 21; 7; 1 |]
+   [| 1; 8; 28; 56; 70; 56; 28; 8; 1 |] 
+|]
+```
+
+However, when a list or array expression is *not* the right-hand side of a binding, such as when it's inside of another list or array, if that inner expression needs to span multiple lines, the brackets should go on their own lines:
+
+```fsharp
+// ✔️ OK - The outer list follows `Stroustrup` style, while the inner lists place their brackets on separate lines
+let fn a b = [ 
+    [
+        someReallyLongValueThatWouldForceThisListToSpanMultipleLines
+        a
+    ]
+    [ 
+        b
+        someReallyLongValueThatWouldForceThisListToSpanMultipleLines 
+    ]
+]
+
+// ❌ Not okay
+let fn a b = [ [
+    someReallyLongValueThatWouldForceThisListToSpanMultipleLines
+    a
+]; [
+    b
+    someReallyLongValueThatWouldForceThisListToSpanMultipleLines
+] ]
+```
+
+The same rule applies for record types inside of arrays/lists:
+
+```fsharp
+// ✔️ OK - The outer list follows `Stroustrup` style, while the inner lists place their brackets on separate lines
+let fn a b = [ 
+    {
+        Foo = someReallyLongValueThatWouldForceThisListToSpanMultipleLines
+        Bar = a
+    }
+    { 
+        Foo = b
+        Bar = someReallyLongValueThatWouldForceThisListToSpanMultipleLines 
+    }
+]
+
+// ❌ Not okay
+let fn a b = [ {
+    Foo = someReallyLongValueThatWouldForceThisListToSpanMultipleLines
+    Bar = a
+}; {
+    Foo = b
+    Bar = someReallyLongValueThatWouldForceThisListToSpanMultipleLines
+} ]
+```
 
 When generating arrays and lists programmatically, prefer `->` over `do ... yield` when a value is always generated:
 
@@ -785,40 +969,45 @@ let rainbow =
       Lackeys = ["Zippy"; "George"; "Bungle"] }
 ```
 
-Long record field expressions should use a new line and have one indent from the opening `{`:
+#### Multiline bracket formatting styles
 
-```fsharp
-{ A = a
-  B =
-    someFunctionCall
-        arg1
-        arg2
-        // ...
-        argX
-  C = c }
-```
+For records that span multiple lines, there are three commonly used formatting styles: `Cramped`, `Aligned`, and `Stroustrup`. The `Cramped` style has been the default style for F# code, as it tends to favor styles that allow the compiler to easily parse code. Both `Aligned` and `Stroustrup` styles allow for easier reordering of members, leading to code that may be easier to refactor, with the drawback that certain situations may require slightly more verbose code.
 
-Placing the `{` and `}` on new lines with contents indented is possible, however code formatters may reformat this by default:
+* `Cramped`:
+The historical standard, and default F# record format. Opening brackets go on the same line as the first member, closing bracket on the same line as the last member.
 
-```fsharp
-// ✔️ OK
-let rainbow =
-    { Boss1 = "Jeffrey"
-      Boss2 = "Jeffrey"
-      Boss3 = "Jeffrey"
-      Lackeys = ["Zippy"; "George"; "Bungle"] }
+    ```fsharp
+    let rainbow = 
+        { Boss1 = "Jeffrey"
+          Boss2 = "Jeffrey"
+          Boss3 = "Jeffrey"
+          Lackeys = [ "Zippy"; "George"; "Bungle" ] }
+    ```
 
-// ❌ Not preferred, code formatters will reformat to the above by default
-let rainbow =
-    {
+* `Aligned`: Brackets each get their own line, aligned on the same column.
+
+    ```fsharp
+    let rainbow =
+        {
+            Boss1 = "Jeffrey"
+            Boss2 = "Jeffrey"
+            Boss3 = "Jeffrey"
+            Lackeys = ["Zippy"; "George"; "Bungle"]
+        }
+    ```
+
+* `Stroustrup`: Opening bracket goes on the same line as the binding, closing bracket gets its own line.
+
+    ```fsharp
+    let rainbow = {
         Boss1 = "Jeffrey"
         Boss2 = "Jeffrey"
         Boss3 = "Jeffrey"
-        Lackeys = ["Zippy"; "George"; "Bungle"]
+        Lackeys = [ "Zippy"; "George"; "Bungle" ]
     }
-```
+    ```
 
-The same rules apply for list and array elements.
+The same formatting style rules apply for list and array elements.
 
 ### Formatting copy-and-update record expressions
 
@@ -831,35 +1020,58 @@ Short expressions can fit on one line:
 let point2 = { point with X = 1; Y = 2 }
 ```
 
-Longer expressions should use new lines:
+Longer expressions should use new lines, and format based on one of the above-named conventions:
 
 ```fsharp
-// ✔️ OK
-let rainbow2 =
-    { rainbow with
-        Boss = "Jeffrey"
-        Lackeys = [ "Zippy"; "George"; "Bungle" ] }
-```
-
-You may want to dedicate separate lines for the braces and indent one scope to the right with the expression, however
-code formatters may reformat it. In some special cases, such as wrapping a value with an optional without parentheses, you may need to keep a brace on one line:
-
-```fsharp
-// ✔️ OK
+// ✔️ OK - Cramped
 let newState =
     { state with
-          Foo = Some { F1 = 0; F2 = "" } }
-
-// ❌ Not OK, code formatters will reformat to the above by default
-let newState =
+        Foo =
+            Some
+                { F1 = 0
+                  F2 = "" } }
+        
+// ✔️ OK - Aligned
+let newState = 
     {
         state with
             Foo =
-                Some {
-                    F1 = 0
-                    F2 = ""
-                }
+                Some
+                    {
+                        F1 = 0
+                        F2 = ""
+                    }
     }
+
+// ✔️ OK - Stroustrup
+let newState = { 
+    state with
+        Foo =
+            Some { 
+                F1 = 0
+                F2 = ""
+            }
+}
+```
+
+**Note**: If using `Stroustrup` style for copy-and-update expressions, you *must* indent members further than the copied record name:
+
+```fsharp
+// ✔️ OK
+let bilbo = {
+    hobbit with 
+        Name = "Bilbo"
+        Age = 111
+        Region = "The Shire" 
+}
+
+// ❌ Not OK - Results in compiler error: "Possible incorrect indentation: this token is offside of context started at position"
+let bilbo = {
+    hobbit with 
+    Name = "Bilbo"
+    Age = 111
+    Region = "The Shire" 
+}
 ```
 
 ### Formatting pattern matching
@@ -890,6 +1102,38 @@ match lam with
     1 + sizeLambda body
 | App(lam1, lam2) ->
     sizeLambda lam1 + sizeLambda lam2
+```
+
+Similar to large if conditions, if a match expression is multiline or exceeds the default tolerance of the single-line, the match expression should use one indentation and a new line.
+The `match` and `with` keyword should align when encapsulating the long match expression.
+
+```fsharp
+// ✔️ OK, but better to refactor, see below
+match
+    complexExpression a b && env.IsDevelopment()
+    || someFunctionToCall
+        aVeryLongParameterNameOne
+        aVeryLongParameterNameTwo
+        aVeryLongParameterNameThree 
+with
+| X y -> y
+| _ -> 0
+```
+
+It is, however, better style to refactor long match expressions to a let binding or separate function:
+
+```fsharp
+// ✔️ OK
+let performAction =
+    complexExpression a b && env.IsDevelopment()
+    || someFunctionToCall
+        aVeryLongParameterNameOne
+        aVeryLongParameterNameTwo
+        aVeryLongParameterNameThree
+
+match performAction with
+| X y -> y
+| _ -> 0
 ```
 
 Aligning the arrows of a pattern match should be avoided.
@@ -1044,9 +1288,21 @@ let comparer =
               reversed.CompareTo (rev s2) }
 ```
 
+You may also prefer to use `Stroustrup` style:
+
+```fsharp
+let comparer = { 
+    new IComparer<string> with
+        member x.Compare(s1, s2) =
+            let rev (s: String) = new String(Array.rev (s.ToCharArray()))
+            let reversed = rev s1
+            reversed.CompareTo(rev s2)
+}
+```
+
 ### Formatting index/slice expressions
 
-Index expressions should not contain any spaces around the opening and closing brackets.
+Index expressions shouldn't contain any spaces around the opening and closing brackets.
 
 ```fsharp
 // ✔️ OK
@@ -1099,6 +1355,101 @@ In single-line expressions the delimiter symbols should be placed on the same li
 @>
 ```
 
+### Formatting chained expressions
+
+When chained expressions (function applications intertwined with `.`) are long, put each application invocation on the next line.
+Indent the subsequent links in the chain by one level after the leading link.
+
+```fsharp
+// ✔️ OK
+Host
+    .CreateDefaultBuilder(args)
+    .ConfigureWebHostDefaults(fun webBuilder -> webBuilder.UseStartup<Startup>())
+
+// ✔️ OK
+Cli
+    .Wrap("git")
+    .WithArguments(arguments)
+    .WithWorkingDirectory(__SOURCE_DIRECTORY__)
+    .ExecuteBufferedAsync()
+    .Task
+```
+
+The leading link can be composed out of multiple links if they are simple identifiers.
+For example, the addition of a fully qualified namespace.
+
+```fsharp
+// ✔️ OK
+Microsoft.Extensions.Hosting.Host
+    .CreateDefaultBuilder(args)
+    .ConfigureWebHostDefaults(fun webBuilder -> webBuilder.UseStartup<Startup>())
+```
+
+Subsequent links should also contain simple identifiers.
+
+```fsharp
+// ✔️ OK
+configuration.MinimumLevel
+    .Debug()
+    // Notice how `.WriteTo` does not need its own line.
+    .WriteTo.Logger(fun loggerConfiguration ->
+        loggerConfiguration.Enrich
+            .WithProperty("host", Environment.MachineName)
+            .Enrich.WithProperty("user", Environment.UserName)
+            .Enrich.WithProperty("application", context.HostingEnvironment.ApplicationName))
+```
+
+When the arguments inside a function application don't fit on the rest of the line, put each argument on the next line.
+
+```fsharp
+// ✔️ OK
+WebHostBuilder()
+    .UseKestrel()
+    .UseUrls("http://*:5000/")
+    .UseCustomCode(
+        longArgumentOne,
+        longArgumentTwo,
+        longArgumentThree,
+        longArgumentFour
+    )
+    .UseContentRoot(Directory.GetCurrentDirectory())
+    .UseStartup<Startup>()
+    .Build()
+
+// ✔️ OK
+Cache.providedTypes
+    .GetOrAdd(cacheKey, addCache)
+    .Value
+
+// ❌ Not OK, formatting tools will reformat to the above
+Cache
+    .providedTypes
+    .GetOrAdd(
+        cacheKey,
+        addCache
+    )
+    .Value
+```
+
+Lambda arguments inside a function application should start on the same line as the opening `(`.
+
+```fsharp
+// ✔️ OK
+builder
+    .WithEnvironment()
+    .WithLogger(fun loggerConfiguration ->
+        // ...
+        ())
+
+// ❌ Not OK, formatting tools will reformat to the above
+builder
+    .WithEnvironment()
+    .WithLogger(
+        fun loggerConfiguration ->
+        // ...
+        ())
+```
+
 ## Formatting declarations
 
 This section discusses formatting declarations of different kinds.
@@ -1140,9 +1491,9 @@ let thisFunction() =
 
 ### Formatting let and member declarations
 
-When formatting `let` and `member` declarations, the right-hand side of a binding either goes on one line, or (if it's too long) goes on a new line indented one level.
+When formatting `let` and `member` declarations, typically the right-hand side of a binding either goes on one line, or (if it's too long) goes on a new line indented one level.
 
-For example, the following are compliant:
+For example, the following examples are compliant:
 
 ```fsharp
 // ✔️ OK
@@ -1171,7 +1522,7 @@ let d =
         printfn "%A" x
 ```
 
-The following are non-compliant:
+These are non-compliant:
 
 ```fsharp
 // ❌ Not OK, code formatters will reformat to the above by default
@@ -1179,20 +1530,31 @@ let a = """
 foobar, long string
 """
 
-type File =
-    member this.SaveAsync(path: string) : Async<unit> = async {
-        // IO operation
-        return ()
-    }
+let d = while f do
+    printfn "%A" x
+```
 
-let c = {
+Record type instantiations may also place the brackets on their own lines:
+
+```fsharp
+// ✔️ OK
+let bilbo =
+    { 
+        Name = "Bilbo"
+        Age = 111
+        Region = "The Shire" 
+    }
+```
+
+You may also prefer to use `Stroustrup` style, with the opening `{` on the same line as the binding name:
+
+```fsharp
+// ✔️ OK
+let bilbo = {
     Name = "Bilbo"
     Age = 111
     Region = "The Shire"
 }
-
-let d = while f do
-    printfn "%A" x
 ```
 
 Separate members with a single blank line and document and add a documentation comment:
@@ -1321,7 +1683,40 @@ For any custom operator that starts with `*` and that has more than one characte
 
 ### Formatting record declarations
 
-For record declarations, indent `{` in type definition by four spaces, start the field list on the same line and align any members with the `{` token:
+For record declarations, by default you should indent the `{` in the type definition by four spaces, start the label list on the same line, and align members, if any, with the `{` token:
+
+```fsharp
+// ✔️ OK
+type PostalAddress =
+    { Address: string
+      City: string
+      Zip: string }
+```
+
+It is also common to prefer putting brackets on their own line, with labels indented by an additional four spaces:
+
+```fsharp
+// ✔️ OK
+type PostalAddress =
+    { 
+        Address: string
+        City: string
+        Zip: string 
+    }
+```
+
+You can also put the `{` at the end of the first line of the type definition (`Stroustrup` style):
+
+```fsharp
+// ✔️ OK
+type PostalAddress = {
+    Address: string
+    City: string
+    Zip: string
+}
+```
+
+If additional members are needed, don't use `with`/`end` whenever possible:
 
 ```fsharp
 // ✔️ OK
@@ -1330,25 +1725,74 @@ type PostalAddress =
       City: string
       Zip: string }
     member x.ZipAndCity = $"{x.Zip} {x.City}"
+
+// ❌ Not OK, code formatters will reformat to the above by default
+type PostalAddress =
+    { Address: string
+      City: string
+      Zip: string }
+  with
+    member x.ZipAndCity = $"{x.Zip} {x.City}"
+  end
+  
+// ✔️ OK
+type PostalAddress =
+    { 
+        Address: string
+        City: string
+        Zip: string 
+    }
+    member x.ZipAndCity = $"{x.Zip} {x.City}"
+    
+// ❌ Not OK, code formatters will reformat to the above by default
+type PostalAddress =
+    { 
+        Address: string
+        City: string
+        Zip: string 
+    }
+    with
+        member x.ZipAndCity = $"{x.Zip} {x.City}"
+    end
 ```
 
-Do not place the `{` at the end of the type declaration line, and do not use `with`/`end` for members, which are redundant.
+The exception to this style rule is if you format records according to the `Stroustrup` style. In this situation, due to compiler rules, the `with` keyword is required if you want to implement an interface or add additional members:
 
 ```fsharp
-// ❌ Not OK, code formatters will reformat to the above by default
+// ✔️ OK
 type PostalAddress = {
     Address: string
     City: string
     Zip: string
-  }
-  with
+} with
     member x.ZipAndCity = $"{x.Zip} {x.City}"
-  end
+   
+// ❌ Not OK, this is currently invalid F# code
+type PostalAddress = {
+    Address: string
+    City: string
+    Zip: string
+} 
+member x.ZipAndCity = $"{x.Zip} {x.City}"
 ```
 
-When XML documentation is added for record fields, it becomes normal to indent and add whitespace:
+When XML documentation is added for record fields, `Aligned` or `Stroustrup` style is preferred, and additional whitespace should be added between members:
 
 ```fsharp
+// ❌ Not OK - putting { and comments on the same line should be avoided
+type PostalAddress =
+    { /// The address
+      Address: string
+
+      /// The city
+      City: string
+
+      /// The zip code
+      Zip: string }
+
+    /// Format the zip code and the city
+    member x.ZipAndCity = $"{x.Zip} {x.City}"
+
 // ✔️ OK
 type PostalAddress =
     {
@@ -1362,6 +1806,20 @@ type PostalAddress =
         Zip: string
     }
 
+    /// Format the zip code and the city
+    member x.ZipAndCity = $"{x.Zip} {x.City}"
+
+// ✔️ OK - Stroustrup Style
+type PostalAddress = {
+    /// The address
+    Address: string
+
+    /// The city
+    City: string
+
+    /// The zip code
+    Zip: string
+} with
     /// Format the zip code and the city
     member x.ZipAndCity = $"{x.Zip} {x.City}"
 ```
@@ -1385,6 +1843,7 @@ type PostalAddress =
 
     member x.ZipAndCity = $"{x.Zip} {x.City}"
 
+// ✔️ OK
 type MyRecord =
     {
         /// The record field
@@ -1392,6 +1851,8 @@ type MyRecord =
     }
     interface IMyInterface
 ```
+
+These same rules apply for anonymous record type aliases.
 
 ### Formatting discriminated union declarations
 
@@ -1500,7 +1961,7 @@ When these span multiple lines, use indentation and a new line to keep the inden
 
 ```fsharp
 // ✔️ OK
-type Foo () =
+type Foo() =
     let foo =
         fooBarBaz
         |> loremIpsumDolorSitAmet
@@ -1512,7 +1973,7 @@ type Foo () =
         |> theQuickBrownFoxJumpedOverTheLazyDog
 
 // ❌ Not OK - notice the "do" expression is indented one space less than the `let` expression
-type Foo () =
+type Foo() =
     let foo =
         fooBarBaz
         |> loremIpsumDolorSitAmet
@@ -1556,7 +2017,7 @@ When creating custom operations for [computation expressions](../language-refere
 
 ```fsharp
 // ✔️ OK
-type MathBuilder () =
+type MathBuilder() =
     member _.Yield _ = 0
 
     [<CustomOperation("addOne")>]
@@ -1589,7 +2050,32 @@ let myNumber =
 ```
 
 The domain that's being modeled should ultimately drive the naming convention.
-If it is idiomatic to use a different convention, that convention should be used instead.
+If it's idiomatic to use a different convention, that convention should be used instead.
+
+If the return value of an expression is a computation expression, prefer putting the computation expression keyword name on its own line:
+
+```fsharp
+// ✔️ OK
+let foo () = 
+    async {
+        let! value = getValue()
+        do! somethingElse()
+        return! anotherOperation value 
+    }
+```
+
+You may also prefer to put the computation expression on the same line as the binding name:
+
+```fsharp
+// ✔️ OK
+let foo () = async {
+    let! value = getValue()
+    do! somethingElse()
+    return! anotherOperation value 
+}
+```
+
+Whichever your preference, you should aim to remain consistent throughout your codebase. Formatters may allow you to specify this preference to remain consistent.
 
 ## Formatting types and type annotations
 
@@ -1640,6 +2126,66 @@ let simpleValuePoorlyAnnotated1:int = 1
 let simpleValuePoorlyAnnotated2 :int = 2
 ```
 
+### Formatting multiline type annotations
+
+When a type annotation is long or multiline, put them on the next line, indented by one level.
+
+```fsharp
+type ExprFolder<'State> =
+    { exprIntercept: 
+        ('State -> Expr -> 'State) -> ('State -> Expr -> 'State -> 'State -> Exp -> 'State }
+        
+let UpdateUI
+    (model:
+#if NETCOREAPP2_1
+        ITreeModel
+#else
+        TreeModel
+#endif
+    )
+    (info: FileInfo) =
+    // code
+    ()
+
+let f
+    (x:
+        {|
+            a: Second
+            b: Metre
+            c: Kilogram
+            d: Ampere
+            e: Kelvin
+            f: Mole
+            g: Candela
+        |})
+    =
+    x.a
+
+type Sample
+    (
+        input: 
+            LongTupleItemTypeOneThing * 
+            LongTupleItemTypeThingTwo * 
+            LongTupleItemTypeThree * 
+            LongThingFour * 
+            LongThingFiveYow
+    ) =
+    class
+    end
+```
+
+For inline anonymous record types, you may also use `Stroustrup` style:
+
+```fsharp
+let f
+    (x: {|
+        x: int
+        y: AReallyLongTypeThatIsMuchLongerThan40Characters
+     |})
+    =
+    x
+```
+
 ### Formatting return type annotations
 
 In function or member return type annotations, use white space before and after the `:` symbol:
@@ -1662,7 +2208,7 @@ type C() =
 
 ### Formatting types in signatures
 
-When writing full function types in signatures, it is sometimes necessary to split the arguments
+When writing full function types in signatures, it's sometimes necessary to split the arguments
 over multiple lines. The return type is always indented.
 
 For a tupled function, the arguments are separated by `*`,
@@ -1761,7 +2307,7 @@ If both generic type arguments/constraints and function parameters don’t fit, 
 
 ```fsharp
 // ✔️ OK
-let f<'T1, 'T2 when 'T1 : equality and 'T2 : comparison>
+let f<'T1, 'T2 when 'T1: equality and 'T2: comparison>
     param
     =
     // function body
@@ -1772,9 +2318,9 @@ If the type parameters or constraints are too long, break and align them as show
 ```fsharp
 // ✔️ OK
 let inline f< ^T1, ^T2
-    when ^T1 : (static member Foo1: unit -> ^T2)
-    and ^T2 : (member Foo2: unit -> int)
-    and ^T2 : (member Foo3: string -> ^T1 option)>
+    when ^T1: (static member Foo1: unit -> ^T2)
+    and ^T2: (member Foo2: unit -> int)
+    and ^T2: (member Foo3: string -> ^T1 option)>
     arg1
     arg2
     =
@@ -1785,10 +2331,10 @@ If the type parameters/constraints are broken up, but there are no normal functi
 
 ```f#
 // ✔️ OK
-let inline f<^T1, ^T2
-    when ^T1 : (static member Foo1: unit -> ^T2)
-    and ^T2 : (member Foo2: unit -> int)
-    and ^T2 : (member Foo3: string -> ^T1 option)>
+let inline f< ^T1, ^T2
+    when ^T1: (static member Foo1: unit -> ^T2)
+    and ^T2: (member Foo2: unit -> int)
+    and ^T2: (member Foo3: string -> ^T1 option)>
     =
     // function body
 ```
@@ -1809,6 +2355,102 @@ Json.serialize<
        newParent: {| id: string; displayName: string |}
        requiresApproval: bool |}>
     myObj
+```
+
+### Formatting inheritance
+
+The arguments for the base class constructor appear in the argument list in the `inherit` clause.
+Put the `inherit` clause on a new line, indented by one level.
+
+```fsharp
+type MyClassBase(x: int) =
+   class
+   end
+
+// ✔️ OK
+type MyClassDerived(y: int) =
+   inherit MyClassBase(y * 2)
+
+// ❌ Not OK
+type MyClassDerived(y: int) = inherit MyClassBase(y * 2)
+```
+
+When the constructor is long or multiline, put them on the next line, indented by one level.  
+Format this multiline constructor according to the rules of multiline function applications.
+
+```fsharp
+type MyClassBase(x: string) =
+   class
+   end
+
+// ✔️ OK
+type MyClassDerived(y: string) =
+    inherit 
+        MyClassBase(
+            """
+            very long
+            string example
+            """
+        )
+        
+// ❌ Not OK
+type MyClassDerived(y: string) =
+    inherit MyClassBase(
+        """
+        very long
+        string example
+        """)
+```
+
+#### Formating the primary constructor
+
+In default formatting conventions, no space is added between the type name and the parentheses for the primary constructor.
+
+```fsharp
+// ✔️ OK
+type MyClass() =
+    class
+    end
+
+type MyClassWithParams(x: int, y: int) =
+    class
+    end
+        
+// ❌ Not OK
+type MyClass () =
+    class
+    end
+
+type MyClassWithParams (x: int, y: int) =
+    class
+    end
+```
+
+#### Multiple constructors
+
+When the `inherit` clause is part of a record, put it on the same line if it is short.
+And put it on the next line, indented by one level, if it is long or multiline.
+
+```fsharp
+type BaseClass =
+    val string1: string
+    new () = { string1 = "" }
+    new (str) = { string1 = str }
+
+type DerivedClass =
+    inherit BaseClass
+
+    val string2: string
+    new (str1, str2) = { inherit BaseClass(str1); string2 = str2 }
+    new () = 
+        { inherit 
+            BaseClass(
+                """
+                very long
+                string example
+                """
+            )
+          string2 = str2 }
 ```
 
 ## Formatting attributes
@@ -1855,7 +2497,7 @@ type C() =
 
 ### Formatting multiple attributes
 
-When multiple attributes are applied to a construct that is not a parameter, they should be placed such that there is one attribute per line:
+When multiple attributes are applied to a construct that's not a parameter, place each attribute on a separate line:
 
 ```fsharp
 // ✔️ OK
@@ -1867,8 +2509,8 @@ type MyRecord =
       Label2: string }
 ```
 
-When applied to a parameter, they must be on the same line and separated by a `;` separator.
+When applied to a parameter, place attributes on the same line and separate them with a `;` separator.
 
 ### Acknowledgments
 
-These guidelines are based on [A comprehensive guide to F# Formatting Conventions](https://github.com/dungpa/fantomas/blob/master/docs/FormattingConventions.md) by [Anh-Dung Phan](https://github.com/dungpa).
+These guidelines are based on [A comprehensive guide to F# Formatting Conventions](https://github.com/dungpa/fantomas/blob/master/docs-old/FormattingConventions.md) by [Anh-Dung Phan](https://github.com/dungpa).

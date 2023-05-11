@@ -64,7 +64,7 @@ The following table describes the infrastructure services provided by each block
 | [Bindings](bindings.md) | Trigger code from events raised by external resources with bi-directional communication. |
 | [Observability](observability.md) | Monitor and measure message calls across networked services. |
 | [Secrets](secrets-management.md) | Securely access external secret stores. |
-| Actors | Encapsulate logic and data in reusable actor objects. |
+| [Actors](actors.md) | Encapsulate logic and data in reusable actor objects. |
 
 Building blocks abstract the implementation of distributed application capabilities from your services. Figure 2-3 shows this interaction.
 

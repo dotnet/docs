@@ -509,6 +509,15 @@ items:
         href: icorprofilerinfo12-eventpipestopsession-method.md
       - name: EventPipeWriteEvent Method
         href: icorprofilerinfo12-eventpipewriteevent-method.md
+    - name: ICorProfilerInfo13 Interface
+      href: icorprofilerinfo13-interface.md
+      items:
+      - name: CreateHandle Method
+        href: icorprofilerinfo13-createhandle-method.md
+      - name: DestroyHandle Method
+        href: icorprofilerinfo13-destroyhandle-method.md
+      - name: GetObjectIDFromHandle Method
+        href: icorprofilerinfo13-getobjectidfromhandle-method.md
     - name: ICorProfilerModuleEnum Interface
       href: icorprofilermoduleenum-interface.md
       items:
@@ -629,6 +638,8 @@ items:
       href: cor-prf-eventpipe-level-enumeration.md
     - name: COR_PRF_EVENTPIPE_PARAM_TYPE Enumeration
       href: cor-prf-eventpipe-param-type-enumeration.md
+    - name: COR_PRF_HANDLE_TYPE Enumeration
+      href: cor-prf-handle-type-enumeration.md
   - name: Profiling Structures
     href: profiling-structures.md
     items:

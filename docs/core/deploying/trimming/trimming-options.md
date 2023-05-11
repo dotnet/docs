@@ -5,7 +5,11 @@ author: sbomer
 ms.author: svbomer
 ms.date: 08/25/2020
 ms.topic: reference
+zone_pivot_groups: dotnet-version
 ---
+
+:::zone pivot="dotnet-7-0,dotnet-6-0,dotnet-5-0,dotnet-core-3-1"
+
 # Trimming options
 
 The following MSBuild properties and items influence the behavior of [trimmed self-contained deployments](trim-self-contained.md). Some of the options mention `ILLink`, which is the name of the underlying tool that implements trimming. For more information about the underlying tool, see the [Trimmer documentation](https://github.com/dotnet/linker/tree/main/docs).
@@ -18,15 +22,52 @@ Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other option
 
   Enable trimming during publish. This also turns off trim-incompatible features and enables [trim analysis](#roslyn-analyzer) during build.
 
+> [!NOTE]
+> If you specify trimming as enabled from the command line, your debugging experience will differ and you may encounter additional bugs in the final product.
+
 Place this setting in the project file to ensure that the setting applies during `dotnet build`, not just `dotnet publish`.
 
-This setting trims any assemblies that have been configured for trimming. With `Microsoft.NET.Sdk` in .NET 6, this includes any assemblies with `[AssemblyMetadata("IsTrimmable", "True")]`, which is the case for framework assemblies. In .NET 5, framework assemblies from the netcoreapp runtime pack are configured for trimming via `<IsTrimmable>` MSBuild metadata. Other SDKs may define different defaults.
+:::zone-end
 
-Starting in .NET 6, this setting also enables the trim-compatibility [Roslyn analyzer](#roslyn-analyzer) and disables [features that are incompatible with trimming](#framework-features-disabled-when-trimming).
+:::zone pivot="dotnet-7-0"
+
+This setting enables trimming and will trim all assemblies by default. In .NET 6, only assemblies that opted-in
+to trimming via `[AssemblyMetadata("IsTrimmable", "True")]` would be trimmed by default. You can return to the
+previous behavior by using `<TrimMode>partial</TrimMode>`.
+
+:::zone-end
+
+:::zone pivot="dotnet-6-0,dotnet-5-0"
+
+This setting trims any assemblies that have been configured for trimming. With `Microsoft.NET.Sdk` in .NET 6, this includes any assemblies with `[AssemblyMetadata("IsTrimmable", "True")]`, which is the case for the .NET runtime assemblies. In .NET 5, assemblies from the netcoreapp runtime pack are configured for trimming via `<IsTrimmable>` MSBuild metadata. Other SDKs may define different defaults.
+
+:::zone-end
+
+This setting also enables the trim-compatibility [Roslyn analyzer](#roslyn-analyzer) and disables [features that are incompatible with trimming](#framework-features-disabled-when-trimming).
 
 ## Trimming granularity
 
-The following granularity settings control how aggressively unused IL is discarded. This can be set as a property affecting all trimmer input assemblies, or as metadata on an [individual assembly](#trimmed-assemblies), which overrides the property setting.
+:::zone pivot="dotnet-7-0"
+
+The default is to trim all assemblies in the app. This can be changed using the `TrimMode` property.
+
+To only trim assemblies that have opted-in to trimming, set the property to `partial`:
+
+```csharp
+<TrimMode>partial</TrimMode>
+```
+
+The default setting is `full`:
+
+```csharp
+<TrimMode>full</TrimMode>
+```
+
+:::zone-end
+
+:::zone pivot="dotnet-6-0,dotnet-5-0"
+
+The following granularity settings control how aggressively unused IL is discarded. This can be set as a property affecting all trimmer input assemblies, or as metadata on an [individual assembly](#trimming-settings-for-individual-assemblies), which overrides the property setting.
 
 - `<TrimMode>link</TrimMode>`
 
@@ -48,15 +89,25 @@ In .NET 6+, `PublishTrimmed` trims assemblies with the following assembly-level 
 
 The framework libraries have this attribute. In .NET 6+, you can also opt in to trimming for a library without this attribute, specifying the assembly by name (without the `.dll` extension).
 
+:::zone-end
+
+:::zone pivot="dotnet-7-0"
+In .NET 7, `<TrimMode>full</TrimMode>` is the default, but if you change the trim mode to `partial`, you can
+opt-in individual assemblies to trimming.
+
 ```xml
 <ItemGroup>
   <TrimmableAssembly Include="MyAssembly" />
 </ItemGroup>
 ```
 
-This is equivalent to setting MSBuild metadata `<IsTrimmable>true</IsTrimmable>` for the assembly in `ManagedAssemblyToLink` (see below).
+This is equivalent to setting `[AssemblyMetadata("IsTrimmable", "True")]` when building the assembly.
 
-## Trimmed assemblies
+:::zone-end
+
+:::zone pivot="dotnet-6-0,dotnet-5-0"
+
+## Trimming settings for individual assemblies
 
 When publishing a trimmed app, the SDK computes an `ItemGroup` called `ManagedAssemblyToLink` that represents the set of files to be processed for trimming. `ManagedAssemblyToLink` may have metadata that controls the trimming behavior per assembly. To set this metadata, create a target that runs before the built-in `PrepareForILLink` target. The following example shows how to enable trimming of `MyAssembly`.
 
@@ -87,9 +138,11 @@ Do not add or remove items to/from `ManagedAssemblyToLink`, because the SDK comp
 
   Control whether to show [single warnings](#show-detailed-warnings) for this assembly.
 
+:::zone-end
+
 ## Root assemblies
 
-All assemblies that do not have `<IsTrimmable>true</IsTrimmable>` are considered roots for the analysis, which means that they and all of their statically understood dependencies will be kept. Additional assemblies may be "rooted" by name (without the `.dll` extension):
+If an assembly is not trimmed it is considered "rooted", which means that it and all of its statically understood dependencies will be kept. Additional assemblies may be "rooted" by name (without the `.dll` extension):
 
 ```xml
 <ItemGroup>
@@ -135,14 +188,6 @@ Setting `PublishTrimmed` in .NET 6+ also enables a Roslyn analyzer that shows a 
 
   Enable a Roslyn analyzer for a subset of trim analysis warnings.
 
-## Warning versions
-
-Trim analysis respects the [`AnalysisLevel`](../../project-sdk/msbuild-props.md#analysislevel) property that controls the version of analysis warnings across the SDK. The `ILLinkWarningLevel` property controls the version of trim analysis warnings independently (similar to `WarningLevel` for the compiler):
-
-- `<ILLinkWarningLevel>5</ILLinkWarningLevel>`
-
-  Emit only warnings of the given level or lower. To include all warning versions, set the value to `9999`.
-
 ## Suppress warnings
 
 You can suppress individual [warning codes](https://github.com/dotnet/linker/blob/main/docs/error-codes.md#warning-codes) using the usual MSBuild properties respected by the toolchain, including `NoWarn`, `WarningsAsErrors`, `WarningsNotAsErrors`, and `TreatWarningsAsErrors`. There is an additional option that controls the ILLink warn-as-error behavior independently:
@@ -158,8 +203,6 @@ In .NET 6+, trim analysis produces at most one warning for each assembly that co
 - `<TrimmerSingleWarn>false</TrimmerSingleWarn>`
 
   Show all detailed warnings, instead of collapsing them to a single warning per assembly.
-
-The defaults show detailed warnings for the project assembly and `ProjectReference` items. `<TrimmerSingleWarn>` can also be set as metadata on an [individual assembly](#trimmed-assemblies) to control the warning behavior for that assembly only.
 
 ## Remove symbols
 

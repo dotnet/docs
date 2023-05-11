@@ -53,7 +53,7 @@ namespace builtin_types
         private static void LargeTuple()
         {
             // <SnippetLargeTuple>
-            var t = 
+            var t =
             (1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
             11, 12, 13, 14, 15, 16, 17, 18,
             19, 20, 21, 22, 23, 24, 25, 26);
@@ -83,7 +83,11 @@ namespace builtin_types
                     throw new ArgumentException("Cannot find minimum and maximum of a null or empty array.");
                 }
 
+                // Initialize min to MaxValue so every value in the input
+                // is less than this initial value.
                 var min = int.MaxValue;
+                // Initialize max to MinValue so every value in the input
+                // is greater than this initial value.
                 var max = int.MinValue;
                 foreach (var i in input)
                 {
@@ -182,7 +186,7 @@ namespace builtin_types
             // <SnippetDeconstructExisting>
             var destination = string.Empty;
             var distance = 0.0;
-            
+
             var t = ("post office", 3.6);
             (destination, distance) = t;
             Console.WriteLine($"Distance to {destination} is {distance} kilometers.");

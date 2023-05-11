@@ -47,6 +47,9 @@ sgen [options]
  These generated assemblies cannot be used on the server side of a Web service. This tool is only for Web service clients and manual serialization scenarios.  
   
  If the assembly containing the type to serialize is named MyType.dll, then the associated serialization assembly will be named MyType.XmlSerializers.dll.  
+
+> [!NOTE]
+> The `sgen` tool is not compatible with [init](../../csharp/language-reference/keywords/init.md)-only setters. The tool will fail if the target assembly contains any public properties that use this feature.
   
 ## Examples  
 

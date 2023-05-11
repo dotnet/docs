@@ -16,6 +16,9 @@ items:
 - durationInMinutes: 1
   content: |
     This tutorial teaches you how to write code that examines variables and changes execution path based on those variables. You'll use your browser to write C# interactively and see the results of compiling and running your code. This tutorial contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
+
+    > [!TIP]
+    > To paste a code snippet inside the **focus mode** you should use your keyboard shortcut (<kbd>Ctrl</kbd> + <kbd>v</kbd>, or <kbd>cmd</kbd> + <kbd>v</kbd>).
 - title: Make decisions using the if statement
   durationInMinutes: 4
   content: |
@@ -198,7 +201,7 @@ items:
     `for` loop. Try this code in the interactive window:
 
     ```csharp
-    for(int counter = 0; counter < 10; counter++)
+    for (int counter = 0; counter < 10; counter++)
     {
       Console.WriteLine($"Hello World! The counter is {counter}");
     }

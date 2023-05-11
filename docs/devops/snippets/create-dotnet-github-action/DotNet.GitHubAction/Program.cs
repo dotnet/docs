@@ -1,6 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Text;
 using CommandLine;
 using DotNet.GitHubAction;
 using DotNet.GitHubAction.Extensions;
@@ -26,16 +24,17 @@ parser.WithNotParsed(
             .LogError(
                 string.Join(
                     Environment.NewLine, errors.Select(error => error.ToString())));
-        
+
         Environment.Exit(2);
     });
 
-await parser.WithParsedAsync(options => StartAnalysisAsync(options, host));
+await parser.WithParsedAsync(
+    async options => await StartAnalysisAsync(options, host));
 await host.RunAsync();
 
-static async Task StartAnalysisAsync(ActionInputs inputs, IHost host)
+static async ValueTask StartAnalysisAsync(ActionInputs inputs, IHost host)
 {
-    // Omitted for brevity, here is the preudo code:
+    // Omitted for brevity, here is the pseudo code:
     // - Read projects
     // - Calculate code metric analytics
     // - Write the CODE_METRICS.md file
@@ -47,11 +46,17 @@ static async Task StartAnalysisAsync(ActionInputs inputs, IHost host)
 
     // Do the work here...
 
-    Console.WriteLine($"::set-output name=updated-metrics::{updatedMetrics}");
-    Console.WriteLine($"::set-output name=summary-title::{title}");
-    Console.WriteLine($"::set-output name=summary-details::{summary}");
+    // Write GitHub Action workflow outputs.
+    var gitHubOutputFile = Environment.GetEnvironmentVariable("GITHUB_OUTPUT");
+    if (!string.IsNullOrWhiteSpace(gitHubOutputFile))
+    {
+        using StreamWriter textWriter = new(gitHubOutputFile, true, Encoding.UTF8);
+        textWriter.WriteLine($"updated-metrics={updatedMetrics}");
+        textWriter.WriteLine($"summary-title={title}");
+        textWriter.WriteLine($"summary-details={summary}");
+    }
 
-    await Task.CompletedTask;
+    await ValueTask.CompletedTask;
 
     Environment.Exit(0);
 }

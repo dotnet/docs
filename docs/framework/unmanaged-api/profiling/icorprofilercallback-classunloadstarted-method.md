@@ -30,7 +30,7 @@ HRESULT ClassUnloadStarted(
   
 ## Parameters
 
-`classId`
+`classId`\
 [in] Identifies the class that is being unloaded.
 
 ## Remarks  

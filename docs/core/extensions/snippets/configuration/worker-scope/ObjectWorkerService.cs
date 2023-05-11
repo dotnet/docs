@@ -7,7 +7,7 @@ internal class ObjectWorkerService :
     IObjectRelay,
     IObjectStore
 {
-    static readonly Random s_random = new((int)DateTime.Now.Ticks);
+    static readonly Random s_random = Random.Shared;
     static readonly ConcurrentDictionary<int, ObjectGraph> s_objects = new();
 
     static int NextRandomDelay => s_random.Next(250, 3000);

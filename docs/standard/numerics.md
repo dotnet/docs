@@ -17,6 +17,8 @@ ms.assetid: dfebc18e-acde-4510-9fa7-9a0f4aa3bd11
 
 .NET provides a range of numeric integer and floating-point primitives, as well as:
 
+- <xref:System.Half?displayProperty=nameWithType>, which represents a half-precision floating-point number.
+- <xref:System.Decimal?displayProperty=nameWithType>, which represents a decimal floating-point number.
 - <xref:System.Numerics.BigInteger?displayProperty=nameWithType>, which is an integral type with no theoretical upper or lower bound.
 - <xref:System.Numerics.Complex?displayProperty=nameWithType>, which represents complex numbers.
 - A set of SIMD-enabled types in the <xref:System.Numerics> namespace.
@@ -33,7 +35,7 @@ ms.assetid: dfebc18e-acde-4510-9fa7-9a0f4aa3bd11
 |<xref:System.Int32?displayProperty=nameWithType>|4|-2,147,483,648|2,147,483,647|
 |<xref:System.Int64?displayProperty=nameWithType>|8|-9,223,372,036,854,775,808|9,223,372,036,854,775,807|
 |<xref:System.SByte?displayProperty=nameWithType>|1|-128|127|
-|<xref:System.IntPtr?displayProperty=nameWithType> (in 32-bit process)|4|-2,147,483,647|2,147,483,647|
+|<xref:System.IntPtr?displayProperty=nameWithType> (in 32-bit process)|4|-2,147,483,648|2,147,483,647|
 |<xref:System.IntPtr?displayProperty=nameWithType> (in 64-bit process)|8|-9,223,372,036,854,775,808|9,223,372,036,854,775,807|
 
 **Unsigned integer types**
@@ -60,14 +62,14 @@ The <xref:System.Numerics.BigInteger?displayProperty=nameWithType> structure is 
 
 ## Floating-point types
 
-.NET includes the following primitive floating-point types:
+.NET includes the following floating-point types:
 
-|Type|Size (in bytes)|Approximate range|Notes|
-|-|-|-|-|
-|<xref:System.Half?displayProperty=nameWithType>|2|±65504|Introduced in .NET 5|
-|<xref:System.Single?displayProperty=nameWithType>|4|±3.4 x 10<sup>38</sup>||
-|<xref:System.Double?displayProperty=nameWithType>|8|±1.7 × 10<sup>308</sup>||
-|<xref:System.Decimal?displayProperty=nameWithType>|16|±7.9228 x 10<sup>28</sup>||
+| Type                                               | Size (in bytes) | Approximate range         | Primitive? | Notes                |
+|----------------------------------------------------|-----------------|---------------------------|------------|----------------------|
+| <xref:System.Half?displayProperty=nameWithType>    | 2               | ±65504                    | No         | Introduced in .NET 5 |
+| <xref:System.Single?displayProperty=nameWithType>  | 4               | ±3.4 x 10<sup>38</sup>    | Yes        |
+| <xref:System.Double?displayProperty=nameWithType>  | 8               | ±1.7 × 10<sup>308</sup>   | Yes        |
+| <xref:System.Decimal?displayProperty=nameWithType> | 16              | ±7.9228 x 10<sup>28</sup> | No         |
 
 The <xref:System.Half>, <xref:System.Single>, and <xref:System.Double> types support special values that represent not-a-number and infinity. For example, the <xref:System.Double> type provides the following values: <xref:System.Double.NaN?displayProperty=nameWithType>, <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, and <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>. You use the <xref:System.Double.IsNaN%2A?displayProperty=nameWithType>, <xref:System.Double.IsInfinity%2A?displayProperty=nameWithType>, <xref:System.Double.IsPositiveInfinity%2A?displayProperty=nameWithType>, and <xref:System.Double.IsNegativeInfinity%2A?displayProperty=nameWithType> methods to test for these special values.
 

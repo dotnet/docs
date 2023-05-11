@@ -41,7 +41,7 @@ Task support was available for F# 5 through the excellent TaskBuilder.fs and Ply
 
 Using `task {…}` is very similar to using `async {…}`. Using `task {…}` has several advantages over `async {…}`:
 
-* The performance of `task {…}` is much better.
+* The overhead of `task {...}` is lower, possibly improving performance in hot code paths where the asynchronous work executes quickly.
 * Debugging stepping and stack traces for `task {…}` is better.
 * Interoperating with .NET packages that expect or produce tasks is easier.
 
@@ -86,7 +86,7 @@ This feature implements [F# RFC FS-1039](https://github.com/fsharp/fslang-design
 
 ## Overloaded custom operations in computation expressions
 
-F# 6 lets you consume [interfaces with default implementations](../../csharp/whats-new/tutorials/default-interface-methods-versions.md).
+F# 6 lets you use [CustomOperationAttribute](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-customoperationattribute.html) on the overloaded methods.
 
 Consider the following use of a computation expression builder `content`:
 
@@ -354,10 +354,10 @@ Then after inlining and other optimizations, the code becomes:
 ```fsharp
 let arr = [| 1.. 100 |]
 let mutable sum = 0
-for j = 0 to array.Length-1 do
-    sum <- array[i] + x
-for j = 0 to array.Length-1 do
-    sum <- array[i] + x
+for j = 0 to arr.Length-1 do
+    sum <- sum + arr[j]
+for j = 0 to arr.Length-1 do
+    sum <- sum + arr[j]
 ```
 
 Unlike previous versions of F#, this optimization is applied regardless of the size of the lambda expression involved. This feature can also be used to implement loop unrolling and similar transformations more reliably.
@@ -368,7 +368,7 @@ This feature implements [F# RFC FS-1098](https://github.com/fsharp/fslang-design
 
 ## Resumable code
 
-The `task {…}` support of F# 6 is built on a foundation called *resumable code* [RFC FS-1087](https://github.com/fsharp/fslang-design/blob/main/preview/FS-1087-resumable-code.md). Resumable code is a technical feature that can be used to build many kinds of high-performance asynchronous and yielding state machines.
+The `task {…}` support of F# 6 is built on a foundation called *resumable code* [RFC FS-1087](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1087-resumable-code.md). Resumable code is a technical feature that can be used to build many kinds of high-performance asynchronous and yielding state machines.
 
 ## Additional collection functions
 
@@ -475,7 +475,7 @@ For example, consider the following F# 5 code:
 let r = ref 0
 
 let doSomething() =
-    printfn "doing something”
+    printfn "doing something"
     r := !r + 1
 ```
 
@@ -485,7 +485,7 @@ First, reference cells are rarely needed in modern F# coding, as `let mutable` c
 let mutable r = 0
 
 let doSomething() =
-    printfn "doing something”
+    printfn "doing something"
     r <- r + 1
 ```
 
@@ -495,7 +495,7 @@ If you use reference cells, F# 6 emits an informational warning asking you to ch
 let r = ref 0
 
 let doSomething() =
-    printfn "doing something”
+    printfn "doing something"
     r.Value <- r.Value + 1
 ```
 
@@ -505,7 +505,7 @@ This feature implements [F# RFC FS-1111](https://github.com/fsharp/fslang-design
 
 ## F# tooling: .NET 6 the default for scripting in Visual Studio
 
-If you open or execute an F# Script (`.fsx`) in Visual Studio, by default the script will be analyzed and executed using .NET 6 with 64-bit execution. This functionality has been in preview in the later releases of Visual Studio 2019 and is now enabled by default.
+If you open or execute an F# Script (`.fsx`) in Visual Studio, by default the script will be analyzed and executed using .NET 6 with 64-bit execution. This functionality was in preview in the later releases of Visual Studio 2019 and is now enabled by default.
 
 To enable .NET Framework scripting, select **Tools** > **Options** > **F# Tools** > **F# Interactive**. Set **Use .NET Core Scripting** to **false**, and then restart the F# Interactive window. This setting affects both script editing and script execution. To enable 32-bit execution for .NET Framework scripting, also set **64-bit F# Interactive** to **false**. There is no 32-bit option for .NET Core scripting.
 

@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # Creating and Throwing Exceptions
 
-Exceptions are used to indicate that an error has occurred while running the program. Exception objects that describe an error are created and then *thrown* with the [`throw`](../../language-reference/keywords/throw.md) keyword. The runtime then searches for the most compatible exception handler.
+Exceptions are used to indicate that an error has occurred while running the program. Exception objects that describe an error are created and then *thrown* with the [`throw` statement or expression](../../language-reference/statements/exception-handling-statements.md#the-throw-statement). The runtime then searches for the most compatible exception handler.
 
 Programmers should throw exceptions when one or more of the following conditions are true:
 
@@ -25,6 +25,9 @@ Programmers should throw exceptions when one or more of the following conditions
 - When an argument to a method causes an exception. In this case, the original exception should be caught and an <xref:System.ArgumentException> instance should be created. The original exception should be passed to the constructor of the <xref:System.ArgumentException> as the <xref:System.Exception.InnerException%2A> parameter:
 
   :::code language="csharp" source="snippets/exceptions/Program.cs" ID="InvalidArg":::
+  
+> [!NOTE]
+> The example above is for illustrative purposes. Index validating via exceptions is in most cases bad practice. Exceptions should be reserved to guard against exceptional program conditions, not for argument checking as above.
 
 Exceptions contain a property named <xref:System.Exception.StackTrace%2A>. This string contains the name of the methods on the current call stack, together with the file name and line number where the exception was thrown for each method. A <xref:System.Exception.StackTrace%2A> object is created automatically by the common language runtime (CLR) from the point of the `throw` statement, so that exceptions must be thrown from the point where the stack trace should begin.
 
@@ -43,7 +46,7 @@ The following list identifies practices to avoid when throwing exceptions:
 
 ## Defining Exception Classes
 
-Programs can throw a predefined exception class in the <xref:System> namespace (except where previously noted), or create their own exception classes by deriving from <xref:System.Exception>. The derived classes should define at least four constructors: one parameterless constructor, one that sets the message property, and one that sets both the <xref:System.Exception.Message%2A> and <xref:System.Exception.InnerException%2A> properties. The fourth constructor is used to serialize the exception. New exception classes should be serializable. For example:
+Programs can throw a predefined exception class in the <xref:System> namespace (except where previously noted), or create their own exception classes by deriving from <xref:System.Exception>. The derived classes should define at least three constructors: one parameterless constructor, one that sets the message property, and one that sets both the <xref:System.Exception.Message%2A> and <xref:System.Exception.InnerException%2A> properties. For example:
 
 :::code language="csharp" source="snippets/exceptions/InvalidDepartmentException.cs" ID="DefineExceptionClass":::
 
@@ -51,7 +54,7 @@ Add new properties to the exception class when the data they provide is useful t
 
 ## C# Language Specification
 
-For more information, see [Exceptions](~/_csharpstandard/standard/exceptions.md) and [The throw statement](~/_csharpstandard/standard/statements.md#12106-the-throw-statement) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Exceptions](~/_csharpstandard/standard/exceptions.md) and [The throw statement](~/_csharpstandard/standard/statements.md#13106-the-throw-statement) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 

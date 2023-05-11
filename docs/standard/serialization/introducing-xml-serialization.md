@@ -176,7 +176,7 @@ For a complete list of type mappings, see the **DataType** property for any of t
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.IO.FileStream>
 - [XML and SOAP Serialization](xml-and-soap-serialization.md)
-- [Binary Serialization](binary-serialization.md)
+- [Binary Serialization](/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization)
 - [Serialization](index.md)
 - <xref:System.Xml.Serialization.XmlSerializer>
 - [Examples of XML Serialization](examples-of-xml-serialization.md)

@@ -1,17 +1,17 @@
 ---
 title: Caching in .NET
-description: Learn how to use various in-memory and distributed caching mechanisms in .NET.
+description: Discover effective ways to implement in-memory and distributed caching in .NET. Boost app performance and scalability with .NET caching.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/08/2021
+ms.date: 03/13/2023
 ---
 
 # Caching in .NET
 
 In this article, you'll learn about various caching mechanisms. Caching is the act of storing data in an intermediate-layer, making subsequent data retrievals faster. Conceptually, caching is a performance optimization strategy and design consideration. Caching can significantly improve app performance by making infrequently changing (or expensive to retrieve) data more readily available. This article introduces the two primary types of caching, and provides sample source code for both:
 
-- [`Microsoft.Extensions.Caching.Memory`](/dotnet/api/microsoft.extensions.caching.memory)
-- [`Microsoft.Extensions.Caching.Distributed`](/dotnet/api/microsoft.extensions.caching.distributed)
+- [Microsoft.Extensions.Caching.Memory](/dotnet/api/microsoft.extensions.caching.memory)
+- [Microsoft.Extensions.Caching.Distributed](/dotnet/api/microsoft.extensions.caching.distributed)
 
 > [!IMPORTANT]
 > There are two `MemoryCache` classes within .NET, one in the `System.Runtime.Caching` namespace and the other in the `Microsoft.Extensions.Caching` namespace:
@@ -25,7 +25,7 @@ All of the `Microsoft.Extensions.*` packages come dependency injection (DI) read
 
 ## In-memory caching
 
-In this section, you'll learn about the [`Microsoft.Extensions.Caching.Memory`](/dotnet/api/microsoft.extensions.caching.memory) package. The current implementation of the <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache> is a wrapper around the <xref:System.Collections.Concurrent.ConcurrentDictionary%602>, exposing a feature-rich API. Entries within the cache are represented by the <xref:Microsoft.Extensions.Caching.Memory.ICacheEntry>, and can be any `object`. The in-memory cache solution is great for apps that run in a single server, where all the cached data rents memory in the app's process.
+In this section, you'll learn about the [Microsoft.Extensions.Caching.Memory](/dotnet/api/microsoft.extensions.caching.memory) package. The current implementation of the <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache> is a wrapper around the <xref:System.Collections.Concurrent.ConcurrentDictionary%602>, exposing a feature-rich API. Entries within the cache are represented by the <xref:Microsoft.Extensions.Caching.Memory.ICacheEntry>, and can be any `object`. The in-memory cache solution is great for apps that run on a single server, where all the cached data rents memory in the app's process.
 
 > [!TIP]
 > For multi-server caching scenarios, consider the [Distributed caching](#distributed-caching) approach as an alternative to in-memory caching.
@@ -200,7 +200,7 @@ In the preceding C# code:
 - The `CacheSignal<T>` class is registered with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A>.
 - The `host` is instantiated from the builder, and started asynchronously.
 
-The `PhotoService` is responsible for getting photos that match a given criteria (or `filter`):
+The `PhotoService` is responsible for getting photos that match given criteria (or `filter`):
 
 :::code source="snippets/caching/memory-worker/PhotoService.cs":::
 
@@ -212,22 +212,25 @@ In the preceding C# code:
   - Calls and waits for the `_cacheSignal.WaitAsync()` to release, this ensures that the cache is populated before accessing the cache.
   - Calls `_cache.GetOrCreateAsync()`, asynchronously getting all of the photos in the cache.
   - The `factory` argument logs a warning, and returns an empty photo array - this should never happen.
-  - Each photo in the cache is iterated, filtered and materialized with `yield return`.
+  - Each photo in the cache is iterated, filtered, and materialized with `yield return`.
   - Finally, the cache signal is reset.
 
 Consumers of this service are free to call `GetPhotosAsync` method, and handle photos accordingly. No `HttpClient` is required as the cache contains the photos.
+
+The asynchronous signal is based on an encapsulated <xref:System.Threading.SemaphoreSlim> instance, within a generic-type constrained singleton. The `CacheSignal<T>` relies on an instance of `SemaphoreSlim`:
+
+:::code source="snippets/caching/memory-worker/CacheSignal.cs":::
+
+In the preceding C# code, the decorator pattern is used to wrap an instance of the `SemaphoreSlim`. Since the `CacheSignal<T>` is registered as a singleton, it can be used across all service lifetimes with any generic type &mdash; in this case, the `Photo`. It is responsible for signaling the seeding of the cache.
 
 The `CacheWorker` is a subclass of <xref:Microsoft.Extensions.Hosting.BackgroundService>:
 
 :::code source="snippets/caching/memory-worker/CacheWorker.cs":::
 
-> [!IMPORTANT]
-> You need to `override` <xref:Microsoft.Extensions.Hosting.BackgroundService.StartAsync%2A?displayProperty=nameWithType> and call `await _cacheSignal.WaitAsync()` in order to prevent a race condition between the starting of the `CacheWorker` and a call to `PhotoService.GetPhotosAsync`.
-
 In the preceding C# code:
 
-- The constructor requires an `ILogger`, `HttpClient`, `CacheSignal<Photo>`, and `IMemoryCache`.
-- The defines an `_updateInterval` of three hours.
+- The constructor requires an `ILogger`, `HttpClient`, and `IMemoryCache`.
+- The `_updateInterval` is defined for three hours.
 - The `ExecuteAsync` method:
   - Loops while the app is running.
   - Makes an HTTP request to `"https://jsonplaceholder.typicode.com/photos"`, and maps the response as an array of `Photo` objects.
@@ -236,11 +239,7 @@ In the preceding C# code:
   - The call to <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> is awaited, given the update interval.
   - After delaying for three hours, the cache is again updated.
 
-The asynchronous signal is based on an encapsulated <xref:System.Threading.SemaphoreSlim> instance, within a generic-type constrained singleton. The `CacheSignal<T>` relies on an instance of `SemaphoreSlim`:
-
-:::code source="snippets/caching/memory-worker/CacheSignal.cs":::
-
-In the preceding C# code, the decorator pattern is used to wrap an instance of the `SemaphoreSlim`. Since the `CacheSignal<T>` is registered as a singleton, it can be used across all service lifetimes with any generic type &mdash; in this case, the `Photo`. It is responsible for signaling the seeding of the cache.
+Consumers in the same process could ask the `IMemoryCache` for the photos, but the `CacheWorker` is responsible for updating the cache.
 
 ## Distributed caching
 
@@ -301,7 +300,7 @@ There are several convenience-based extension methods for reading values, that h
 
 #### Update values
 
-There is no way to actually update the values in the distributed cache with a single API call, instead values can have their sliding expirations reset with one of the refresh APIs:
+There is no way to update the values in the distributed cache with a single API call, instead, values can have their sliding expirations reset with one of the refresh APIs:
 
 - <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.RefreshAsync%2A?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache.Refresh%2A?displayProperty=nameWithType>

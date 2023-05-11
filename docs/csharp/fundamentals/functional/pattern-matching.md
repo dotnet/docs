@@ -1,7 +1,7 @@
 ---
 title: Pattern matching overview - C# guide
 description: Learn about pattern matching expressions in C#
-ms.date: 05/14/2021
+ms.date: 06/02/2022
 ---
 
 # Pattern matching overview
@@ -40,7 +40,11 @@ The previous example demonstrates a method dispatch based on the value of an enu
 
 :::code language="csharp" source="snippets/patterns/Simulation.cs" ID="PerformStringOperation":::
 
-The preceding example shows the same algorithm, but uses string values instead of an enum. You would use this scenario if your application responds to text commands instead of a regular data format. In all these examples, the *discard pattern* ensures that you handle every input. The compiler helps you by making sure every possible input value is handled.
+The preceding example shows the same algorithm, but uses string values instead of an enum. You would use this scenario if your application responds to text commands instead of a regular data format. Starting with C# 11, you can also use a `Span<char>` or a `ReadOnlySpan<char>`to test for constant string values, as shown in the following sample:
+
+:::code language="csharp" source="snippets/patterns/Simulation.cs" ID="PerformSpanOperation":::
+
+In all these examples, the *discard pattern* ensures that you handle every input. The compiler helps you by making sure every possible input value is handled.
 
 ## Relational patterns
 
@@ -54,7 +58,7 @@ The preceding code also demonstrates another important feature the compiler prov
 
 :::code language="csharp" source="snippets/patterns/Simulation.cs" ID="RelationalPattern2":::
 
-The key lesson in this, and any other refactoring or reordering is that the compiler validates that you've covered all inputs.
+The key lesson in this, and any other refactoring or reordering, is that the compiler validates that you've covered all inputs.
 
 ## Multiple inputs
 
@@ -74,16 +78,38 @@ The first two arms examine two properties of the `Order`. The third examines onl
 
 The preceding code demonstrates the [*positional pattern*](../../language-reference/operators/patterns.md#positional-pattern) where the properties are deconstructed for the expression.
 
-This article provided a tour of the kinds of code you can write with pattern matching in C#. The following articles show more examples of using patterns in scenarios, and the full vocabulary of patterns available to use.
-
 ## List patterns
 
-You can check elements in a list or an array using a *list pattern*. A list pattern provides a means to apply a pattern to any element of a sequence. In addition, you can apply the *discard pattern* (`_`) to match any element, or apply a *slice pattern* to match zero or more elements. The following example determines if an array matches the binary digits, or the start of a Fibonacci sequence:
+You can check elements in a list or an array using a *list pattern*. A [list pattern](../../language-reference/operators/patterns.md#list-patterns) provides a means to apply a pattern to any element of a sequence. In addition, you can apply the *discard pattern* (`_`) to match any element, or apply a *slice pattern* to match zero or more elements.
 
-:::code language="csharp" source="snippets/patterns/OrderProcessor.cs" id="ListPattern":::
+List patterns are a valuable tool when data doesn't follow a regular structure. You can use pattern matching to test the shape and values of the data instead of transforming it into a set of objects.
+
+Consider the following excerpt from a text file containing bank transactions:
+
+```output
+04-01-2020, DEPOSIT,    Initial deposit,            2250.00
+04-15-2020, DEPOSIT,    Refund,                      125.65
+04-18-2020, DEPOSIT,    Paycheck,                    825.65
+04-22-2020, WITHDRAWAL, Debit,           Groceries,  255.73
+05-01-2020, WITHDRAWAL, #1102,           Rent, apt, 2100.00
+05-02-2020, INTEREST,                                  0.65
+05-07-2020, WITHDRAWAL, Debit,           Movies,      12.57
+04-15-2020, FEE,                                       5.55
+```
+
+It's a CSV format, but some of the rows have more columns than others. Even worse for processing, one column in the `WITHDRAWAL` type has user-generated text and can contain a comma in the text. A *list pattern* that includes the *discard* pattern, *constant* pattern and *var* pattern to capture the value processes data in this format:
+
+:::code language="csharp" source="snippets/patterns/ListPattern.cs" id="ListPattern":::
+
+The preceding example takes a string array, where each element is one field in the row. The `switch` expression keys on the second field, which determines the kind of transaction, and the number of remaining columns. Each row ensures the data is in the correct format. The discard pattern (`_`) skips the first field, with the date of the transaction. The second field matches the type of transaction. Remaining element matches skip to the field with the amount. The final match uses the *var* pattern to capture the string representation of the amount. The expression calculates the amount to add or subtract from the balance.
+
+*List patterns* enable you to match on the shape of a sequence of data elements. You use the *discard* and *slice* patterns to match the location of elements. You use other patterns to match characteristics about individual elements.
+
+This article provided a tour of the kinds of code you can write with pattern matching in C#. The following articles show more examples of using patterns in scenarios, and the full vocabulary of patterns available to use.
 
 ## See also
 
+- [Use pattern matching to avoid 'is' check followed by a cast (style rules IDE0020 and IDE0038)](../../../fundamentals/code-analysis/style-rules/ide0020-ide0038.md)
 - [Exploration: Use pattern matching to build your class behavior for better code](../../whats-new/tutorials/patterns-objects.md)
 - [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../tutorials/pattern-matching.md)
 - [Reference: Pattern matching](../../language-reference/operators/patterns.md)

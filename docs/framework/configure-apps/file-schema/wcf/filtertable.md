@@ -19,7 +19,7 @@ Represents a routing table that contains a list of filters to evaluate messages 
 ```xml  
 <routing>
   <filterTables>
-     name="String">
+    <filterTable name="String">
       <entries>
         <add backupList="String"
              endpointName="String"

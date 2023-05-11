@@ -97,8 +97,8 @@ type Set<'T when 'T: comparison>(elements: seq<'T>) =
     // ...
     // Further Implementation elided
     // ...
-    interface IEnumerable<‘T>
-    interface IReadOnlyCollection<‘T>
+    interface IEnumerable<'T>
+    interface IReadOnlyCollection<'T>
 
 module Set =
     let isEmpty (set: Set<'T>) = set.IsEmpty

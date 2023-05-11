@@ -15,7 +15,7 @@ The .NET Core runtime exposes a service endpoint that allows other processes to 
 - Start an [EventPipe](./eventpipe.md) trace.
 - Request the command-line used to launch the app.
 
-The diagnostic port supports different transports depending on platform. Currently both the CoreCLR and Mono runtime implementations use Named Pipes on Windows and Unix Domain Sockets on Linux and macOS. The Mono runtime implementation on Android, iOS, and tvOS uses TCP/IP. The channel uses a [custom binary protocol](https://github.com/dotnet/diagnostics/blob/main/documentation/design-docs/ipc-protocol.md). Most developers will never directly interact with the underlying channel and protocol, but rather will use GUI or CLI tools that communicate on their behalf. For example, the [dotnet-dump](./dotnet-dump.md) and [dotnet-trace](./dotnet-trace.md) tools abstract sending protocol commands to capture dumps and start traces. For developers that want to write custom tooling, the [Microsoft.Diagnsotics.NETCore.Client NuGet package](./diagnostics-client-library.md) provides a .NET API abstraction of the underlying transport and protocol.
+The diagnostic port supports different transports depending on platform. Currently both the CoreCLR and Mono runtime implementations use Named Pipes on Windows and Unix Domain Sockets on Linux and macOS. The Mono runtime implementation on Android, iOS, and tvOS uses TCP/IP. The channel uses a [custom binary protocol](https://github.com/dotnet/diagnostics/blob/main/documentation/design-docs/ipc-protocol.md). Most developers will never directly interact with the underlying channel and protocol, but rather will use GUI or CLI tools that communicate on their behalf. For example, the [dotnet-dump](./dotnet-dump.md) and [dotnet-trace](./dotnet-trace.md) tools abstract sending protocol commands to capture dumps and start traces. For developers that want to write custom tooling, the [Microsoft.Diagnostics.NETCore.Client NuGet package](./diagnostics-client-library.md) provides a .NET API abstraction of the underlying transport and protocol.
 
 ## Security considerations
 
@@ -34,7 +34,7 @@ On Windows, Linux, and macOS, the runtime has one diagnostic port open by defaul
 
 ## Suspend the runtime at startup
 
-By default the runtime executes managed code as soon as it starts, regardless whether any diagnostic tools have connected to the diagnostic port. Sometime it is useful to have the runtime wait to run managed code until after a diagnostic tool is connected, to observe the initial program behavior. Setting environment variable `DOTNET_DefaultDiagnosticPortSuspend=1` causes the runtime to wait until a tool connects to the default port. If no tool is attached after several seconds, the runtime prints a warning message to the console explaining that it is still waiting for a tool to attach.
+By default, the runtime executes managed code as soon as it starts, regardless whether any diagnostic tools have connected to the diagnostic port. Sometimes it is useful to have the runtime wait to run managed code until after a diagnostic tool is connected, to observe the initial program behavior. Setting environment variable `DOTNET_DefaultDiagnosticPortSuspend=1` causes the runtime to wait until a tool connects to the default port. If no tool is attached after several seconds, the runtime prints a warning message to the console explaining that it is still waiting for a tool to attach.
 
 ## Configure additional diagnostic ports
 

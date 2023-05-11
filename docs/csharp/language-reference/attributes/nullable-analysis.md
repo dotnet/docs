@@ -1,6 +1,6 @@
 ---
 title: "Attributes interpreted by the C# compiler: Nullable static analysis"
-ms.date: 12/16/2021
+ms.date: 05/20/2022
 description: Learn about attributes that are interpreted by the compiler to provide better static analysis for nullable and non-nullable reference types.
 ---
 # Attributes for null-state static analysis interpreted by the C# compiler
@@ -14,7 +14,7 @@ These states enable the compiler to provide warnings when you may dereference a 
 
 This article provides a brief description of each of the nullable reference type attributes and how to use them.
 
-Let's start with an example. Imagine your library has the following API to retrieve a resource string. This method was originally written before C# 8.0 and nullable annotations:
+Let's start with an example. Imagine your library has the following API to retrieve a resource string. This method was originally compiled in a *nullable oblivious* context:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="TryGetExample" :::
 
@@ -24,7 +24,7 @@ The preceding example follows the familiar `Try*` pattern in .NET. There are two
 - Callers can pass a variable whose value is `null` as the argument for `message`.
 - If the `TryGetMessage` method returns `true`, the value of `message` isn't null. If the return value is `false,` the value of `message` is null.
 
-The rule for `key` can be expressed succinctly in C# 8.0: `key` should be a non-nullable reference type. The `message` parameter is more complex. It allows a variable that is `null` as the argument, but guarantees, on success, that the `out` argument isn't `null`. For these scenarios, you need a richer vocabulary to describe the expectations. The `NotNullWhen` attribute, described below describes the *null-state* for the argument used for the `message` parameter.
+The rule for `key` can be expressed succinctly: `key` should be a non-nullable reference type. The `message` parameter is more complex. It allows a variable that is `null` as the argument, but guarantees, on success, that the `out` argument isn't `null`. For these scenarios, you need a richer vocabulary to describe the expectations. The `NotNullWhen` attribute, described below describes the *null-state* for the argument used for the `message` parameter.
 
 > [!NOTE]
 > Adding these attributes gives the compiler more information about the rules for your API. When calling code is compiled in a nullable enabled context, the compiler will warn callers when they violate those rules. These attributes don't enable more checks on your implementation.
@@ -139,6 +139,9 @@ That informs the compiler that any code where the return value is `false` doesn'
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="NullCheckExample" :::
 
+> [!NOTE]
+> The preceding example is only valid in C# 11 and later. Starting with C# 11, the `[nameof` expression](../operators/nameof.md) can reference parameter and type parameter names when used in an attribute applied to a method. In C# 10 and earlier, you need to use a string literal instead of the `nameof` expression.
+
 The <xref:System.String.IsNullOrEmpty(System.String)?DisplayProperty=nameWithType> method will be annotated as shown above for .NET Core 3.0. You may have similar methods in your codebase that check the state of objects for null values. The compiler won't recognize custom null check methods, and you'll need to add the annotations yourself. When you add the attribute, the compiler's static analysis knows when the tested variable has been null checked.
 
 Another use for these attributes is the `Try*` pattern. The postconditions for `ref` and `out` arguments are communicated through the return value. Consider this method shown earlier (in a nullable disabled context):
@@ -147,7 +150,7 @@ Another use for these attributes is the `Try*` pattern. The postconditions for `
 
 The preceding method follows a typical .NET idiom: the return value indicates if `message` was set to the found value or, if no message is found, to the default value. If the method returns `true`, the value of `message` isn't null; otherwise, the method sets `message` to null.
 
-In a nullable enabled context, You can communicate that idiom using the `NotNullWhen` attribute. When you annotate parameters for nullable reference types, make `message` a `string?` and add an attribute:
+In a nullable enabled context, you can communicate that idiom using the `NotNullWhen` attribute. When you annotate parameters for nullable reference types, make `message` a `string?` and add an attribute:
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="NotNullWhenTryGet" :::
 
@@ -167,7 +170,7 @@ That also works, but will often force callers to implement extra `null` checks. 
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="ExtractComponentIfNotNull" :::
 
-The return value and the argument have both been annotated with the `?` indicating that either could be `null`. The attribute further clarifies that the return value won't be null when the `url` argument isn't `null`.
+The previous example uses the [`nameof`](../operators/nameof.md) operator for the parameter `url`. That feature is available in C# 11. Before C# 11, you'll need to type the name of the parameter as a string. The return value and the argument have both been annotated with the `?` indicating that either could be `null`. The attribute further clarifies that the return value won't be null when the `url` argument isn't `null`.
 
 You specify conditional postconditions using these attributes:
 

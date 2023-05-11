@@ -9,7 +9,7 @@ ms.date: 01/06/2021
 
 Figure 5-1 presents an end-to-end depiction of the steps comprising the DevOps outer-loop workflow. It shows the "outer loop" of DevOps. When code is pushed to the repo, a CI pipeline is started, then begins the CD pipeline, where the application gets deployed. Metrics collected from deployed applications are fed back into the development workload, where the "inner loop" occurs, so development teams have actual data to respond to user and business needs.
 
-![Diagram showing the 6 steps of the DevOps outer-loop workflow.](./media/docker-application-outer-loop-devops-workflow/overview-dev-ops-outter-loop-workflow.png)
+![Diagram showing the 6 steps of the DevOps outer-loop workflow.](./media/docker-application-outer-loop-devops-workflow/overview-dev-ops-outer-loop-workflow.png)
 
 **Figure 5-1**. DevOps outer-loop workflow for Docker applications with Microsoft tools
 
@@ -97,7 +97,7 @@ With these Visual Studio Team Services tasks, a build Linux-Docker Host/VM provi
 >   <https://hub.docker.com/_/microsoft-azure-pipelines-vsts-agent>
 >
 > - Building .NET Linux Docker images with Azure DevOps Services: \
->   [https://docs.microsoft.com/archive/blogs/stevelasker/building-net-core-linux-docker-images-with-visual-studio-team-services](/archive/blogs/stevelasker/building-net-core-linux-docker-images-with-visual-studio-team-services)
+>   [https://learn.microsoft.com/archive/blogs/stevelasker/building-net-core-linux-docker-images-with-visual-studio-team-services](/archive/blogs/stevelasker/building-net-core-linux-docker-images-with-visual-studio-team-services)
 >
 > - Building a Linux-based Visual Studio Team Service build machine with Docker support: \
 >   <https://www.donovanbrown.com/post/Building-a-Linux-Based-Visual-Studio-Team-Service-Build-Machine-with-Docker-Support>

@@ -1,7 +1,7 @@
 ---
 title: dotnet tool install command
 description: The dotnet tool install command installs the specified .NET tool on your machine.
-ms.date: 02/14/2020
+ms.date: 06/24/2022
 ---
 # dotnet tool install
 
@@ -17,19 +17,22 @@ ms.date: 02/14/2020
 dotnet tool install <PACKAGE_NAME> -g|--global
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
-    [--no-cache] [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
+    [--no-cache] [--prerelease]
+    [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
     [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
-    [--no-cache] [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
+    [--no-cache] [--prerelease]
+    [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
     [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME> [--local]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
-    [--no-cache] [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
+    [--no-cache] [--prerelease]
+    [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
     [--version <VERSION_NUMBER>]
 
 dotnet tool install -h|--help
@@ -66,8 +69,6 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
@@ -99,6 +100,10 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 - **`--no-cache`**
 
   Do not cache packages and HTTP requests.
+
+- **`--prerelease`**
+
+  Include prerelease packages.
 
 - **`--tool-manifest <PATH>`**
 

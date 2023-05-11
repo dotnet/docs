@@ -11,6 +11,7 @@ namespace lambda_expressions
             LambdasAndTuples.Examples();
             LambdasWithQueryMethods.Examples();
             VariableScopeWithLambdas.Main();
+            GeneralExamples.DefaultParmExamples();
         }
     }
 }

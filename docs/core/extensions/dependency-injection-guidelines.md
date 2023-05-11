@@ -1,10 +1,10 @@
 ---
 title: Dependency injection guidelines
-description: Learn various dependency injection guidelines and best practices for .NET application development.
+description: Discover effective dependency injection guidelines and best practices for developing .NET apps. Deepen your understanding of inversion of control.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/12/2021
-ms.topic: guide
+ms.date: 03/13/2023
+ms.topic: conceptual
 ---
 
 # Dependency injection guidelines
@@ -39,7 +39,7 @@ The preceding disposable is intended to have a scoped lifetime.
 
 The preceding disposable is intended to have a singleton lifetime.
 
-:::code language="csharp" source="snippets/configuration/console-di-disposable/Program.cs" range="1-20,42-60":::
+:::code language="csharp" source="snippets/configuration/console-di-disposable/Program.cs" id="Program":::
 
 The debug console shows the following sample output after running:
 
@@ -138,7 +138,6 @@ The following third-party containers can be used with ASP.NET Core apps:
 - [LightInject](https://github.com/seesharper/LightInject.Microsoft.DependencyInjection)
 - [Lamar](https://jasperfx.github.io/lamar/)
 - [Stashbox](https://github.com/z4kn4fein/stashbox-extensions-dependencyinjection)
-- [Unity](https://www.nuget.org/packages/Unity.Microsoft.DependencyInjection)
 - [Simple Injector](https://docs.simpleinjector.org/en/latest/aspnetintegration.html)
 
 ## Thread safety
@@ -190,7 +189,7 @@ In the preceding code, the `implementationFactory` is given a lambda expression 
 
 :::code language="csharp" source="snippets/configuration/di-anti-patterns/Program.cs" id="AsyncDeadlockTwo":::
 
-For more information on asynchronous guidance, see [Asynchronous programming: Important info and advice](../../csharp/async.md#important-info-and-advice). For more information debugging deadlocks, see [Debug a deadlock in .NET](../diagnostics/debug-deadlock.md).
+For more information on asynchronous guidance, see [Asynchronous programming: Important info and advice](../../csharp/asynchronous-programming/async-scenarios.md#important-info-and-advice). For more information debugging deadlocks, see [Debug a deadlock in .NET](../diagnostics/debug-deadlock.md).
 
 When you're running this anti-pattern and the deadlock occurs, you can view the two threads waiting from Visual Studio's Parallel Stacks window. For more information, see [View threads and tasks in the Parallel Stacks window](/visualstudio/debugger/using-the-parallel-stacks-window).
 

@@ -1,9 +1,9 @@
 ---
-title: Options pattern in .NET
+title: Options pattern
 author: IEvangelist
-description: Learn how to use the options pattern to represent groups of related settings in .NET apps.
+description: Learn the options pattern to represent groups of related settings in .NET apps. The options pattern uses classes to provide strongly-typed access to settings.
 ms.author: dapine
-ms.date: 05/12/2022
+ms.date: 03/13/2023
 ---
 
 # Options pattern in .NET
@@ -40,9 +40,9 @@ The following code is part of the _Program.cs_ C# file and:
 
 :::code language="csharp" source="snippets/configuration/console-json/Program.cs" highlight="16-23" range="1-29":::
 
-In the preceding code, changes to the JSON configuration file after the app has started are read.
+In the preceding code, the JSON configuration file has its `"TransientFaultHandlingOptions"` section bound to the `TransientFaultHandlingOptions` instance. This hydrates the C# objects properties with those corresponding values from the configuration.
 
-[`ConfigurationBinder.Get<T>`](xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Get%2A) binds and returns the specified type. `ConfigurationBinder.Get<T>` maybe more convenient than using `ConfigurationBinder.Bind`. The following code shows how to use `ConfigurationBinder.Get<T>` with the `TransientFaultHandlingOptions` class:
+[`ConfigurationBinder.Get<T>`](xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Get%2A) binds and returns the specified type. `ConfigurationBinder.Get<T>` may be more convenient than using `ConfigurationBinder.Bind`. The following code shows how to use `ConfigurationBinder.Get<T>` with the `TransientFaultHandlingOptions` class:
 
 ```csharp
 IConfigurationRoot configurationRoot = configuration.Build();
@@ -55,7 +55,7 @@ Console.WriteLine($"TransientFaultHandlingOptions.Enabled={options.Enabled}");
 Console.WriteLine($"TransientFaultHandlingOptions.AutoRetryDelay={options.AutoRetryDelay}");
 ```
 
-In the preceding code, changes to the JSON configuration file after the app has started are read.
+In the preceding code, the `ConfigurationBinder.Get<T>` is used to acquire an instance of the `TransientFaultHandlingOptions` object with its property values populated from the underlying configuration.
 
 > [!IMPORTANT]
 > The <xref:Microsoft.Extensions.Configuration.ConfigurationBinder> class exposes several APIs, such as `.Bind(object instance)` and `.Get<T>()` that are ***not*** constrained to `class`. When using any of the [Options interfaces](#options-interfaces), you must adhere to aforementioned [options class constraints](#options-class).
@@ -87,7 +87,7 @@ Using the preceding code, the following code reads the position options:
 
 :::code language="csharp" source="snippets/configuration/console-json/ExampleService.cs":::
 
-In the preceding code, changes to the JSON configuration file after the app has started are ***not*** read. To read changes after the app has started, use [IOptionsSnapshot](#use-ioptionssnapshot-to-read-updated-data).
+In the preceding code, changes to the JSON configuration file after the app has started are ***not*** read. To read changes after the app has started, use [IOptionsSnapshot](#use-ioptionssnapshot-to-read-updated-data) or [IOptionsMonitor](#ioptionsmonitor) to monitor changes as they occur, and react accordingly.
 
 ## Options interfaces
 
@@ -118,6 +118,8 @@ In the preceding code, changes to the JSON configuration file after the app has 
 
 <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601> is used by <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> to cache `TOptions` instances. The <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601> invalidates options instances in the monitor so that the value is recomputed (<xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601.TryRemove%2A>). Values can be manually introduced with <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601.TryAdd%2A>. The <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601.Clear%2A> method is used when all named instances should be recreated on demand.
 
+<xref:Microsoft.Extensions.Options.IOptionsChangeTokenSource%601> is used to fetch the <xref:Microsoft.Extensions.Primitives.IChangeToken> that tracks changes to the underlying `TOptions` instance. For more information on change-token primitives, see [Change notifications](primitives.md).
+
 ### Options interfaces benefits
 
 Using a generic wrapper type gives you the ability to decouple the lifetime of the option from the DI container. The <xref:Microsoft.Extensions.Options.IOptions%601.Value?displayProperty=nameWithType> interface provides a layer of abstraction, including generic constraints, on your options type. This provides the following benefits:
@@ -147,7 +149,7 @@ services.Configure<TransientFaultHandlingOptions>(
         nameof(TransientFaultHandlingOptions)));
 ```
 
-In the preceding code, changes to the JSON configuration file after the app has started are read.
+In the preceding code, the `Configure<TOptions>` method is used to register a configuration instance that `TOptions` will bind against, and updates the options when the configuration changes.
 
 ## IOptionsMonitor
 

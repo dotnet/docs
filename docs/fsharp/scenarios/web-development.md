@@ -33,6 +33,10 @@ Other web development options are documented in the F# Software Foundation's [Gu
 
 [WebSharper](https://github.com/dotnet-websharper/core) is a community-driven, full-stack, functional reactive web programming technology for .NET, allowing you to develop microservices, client-server web applications, reactive SPAs, and more in F#.
 
+## Falco
+
+[Falco](https://github.com/pimbrouwers/Falco) is a community-driven toolkit for building _fast_, functional-first, and fault-tolerant web applications using F#. It's built upon the high-performance components of ASP.NET Core and is optimized for building HTTP applications quickly. Falco has a built-in view engine and seamlessly integrates with existing .NET Core middleware and frameworks.
+
 ## See also
 
 - [F# for JavaScript](../tools/javascript.md)

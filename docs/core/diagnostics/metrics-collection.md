@@ -168,7 +168,7 @@ dotnet add package OpenTelemetry.Exporter.Prometheus --version 1.2.0-beta1
 > to the application.
 
 > [!NOTE]
-> This tutorial is using a pre-release build of OpenTelemetry's Prometheus support available at the time of writing. The OpenTelemetry
+> This tutorial uses a pre-release build of OpenTelemetry's Prometheus support available at the time of writing. The OpenTelemetry
 > project maintainers might make changes prior to the official release.
 
 Modify the code of `Program.cs` so that it contains the extra code to configure OpenTelemetry at the beginning of Main():
@@ -211,12 +211,12 @@ class Program
 
 `AddMeter("HatCo.HatStore")` configures OpenTelemetry to transmit all the metrics collected by the Meter our app defined.
 `AddPrometheusExporter(...)` configures OpenTelemetry to expose Prometheus' metrics endpoint on port 9184 and to use
-the HttpListener. See the [OpenTelemetry documentation](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.Prometheus)
+the HttpListener. See the [OpenTelemetry documentation](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/docs/metrics/getting-started-prometheus-grafana#collect-metrics-using-prometheus)
 for more information about OpenTelemetry configuration options, in particular, alternative hosting options that are useful for ASP.NET applications.
 
 > [!NOTE]
-> At the time of writing OpenTelemetry only supports metrics emitted using the <xref:System.Diagnostics.Metrics?displayProperty=nameWithType>
-> APIs; however, support for [EventCounters](event-counters.md) is planned.
+> At the time of writing, OpenTelemetry only supports metrics emitted using the <xref:System.Diagnostics.Metrics?displayProperty=nameWithType>
+> APIs. However, support for [EventCounters](event-counters.md) is planned.
 
 Run the example app and leave it running in the background.
 

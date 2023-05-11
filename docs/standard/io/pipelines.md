@@ -64,8 +64,6 @@ To fix the preceding problems, the following changes are required:
 
 The previous code is complex and doesn't address all the problems identified. High-performance networking usually means writing complex code to maximize performance. `System.IO.Pipelines` was designed to make writing this type of code easier.
 
-[!INCLUDE [localized code comments](../../../includes/code-comments-loc.md)]
-
 ## Pipe
 
 The <xref:System.IO.Pipelines.Pipe> class can be used to create a `PipeWriter/PipeReader` pair. All data written into the `PipeWriter` is available in the `PipeReader`:

@@ -12,7 +12,7 @@ ms.date: 01/10/2022
 
 > DOWNLOAD available at: <https://aka.ms/blazor-ebook>
 
-**EDITION v6.0** - Updated to .NET 6
+**EDITION v7.0** - Updated to .NET 7
 
 Refer to [changelog](https://aka.ms/blazor-ebook-changelog) for the book updates and community contributions.
 
@@ -26,7 +26,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright &copy; 2022 by Microsoft Corporation
+Copyright &copy; 2023 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 
@@ -76,9 +76,7 @@ This book is an introduction to Blazor, not a comprehensive migration guide. Whi
 
 You can find the official Blazor home page and documentation at <https://blazor.net>.
 
-## Send your feedback
-
-This book and related samples are constantly evolving, so your feedback is welcomed! If you have comments about how this book can be improved, use the feedback section at the bottom of any page built on [GitHub issues](https://github.com/dotnet/docs/issues).
+[!INCLUDE [feedback](../includes/feedback.md)]
 
 >[!div class="step-by-step"]
 >[Next](introduction.md)

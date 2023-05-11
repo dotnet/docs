@@ -24,7 +24,7 @@ If you pass any other value, an <xref:System.ArgumentException> is thrown at run
 
 ## Version introduced
 
-.NET 7 Preview 1
+.NET 7
 
 ## Type of breaking change
 

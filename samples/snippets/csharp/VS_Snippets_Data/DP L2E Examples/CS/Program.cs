@@ -650,7 +650,7 @@ namespace L2E_ExamplesCS
         }
         # endregion
 
-        #region "Partioning Operators"
+        #region "Partitioning Operators"
 
         static void TakeSimple()
         {
@@ -795,7 +795,7 @@ namespace L2E_ExamplesCS
              */
         }
 
-        # endregion  //"Partioning Operators"
+        # endregion  //"Partitioning Operators"
 
         # region Ordering Operators
 
@@ -1810,7 +1810,7 @@ namespace L2E_ExamplesCS
                     Console.WriteLine("ContactID: {0}", orderGroup.Category);
                     foreach (var order in orderGroup.smallestTotalDue)
                     {
-                        Console.WriteLine("Mininum TotalDue {0} for SalesOrderID {1}: ",
+                        Console.WriteLine("Minimum TotalDue {0} for SalesOrderID {1}: ",
                             order.TotalDue,
                             order.SalesOrderID);
                     }

@@ -1,19 +1,14 @@
 ﻿// <Program>
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using AppLifetime.Example;
 
-namespace AppLifetime.Example;
+using IHost host = Host.CreateDefaultBuilder(args)
+    .ConfigureServices((_, services) =>
+        services.AddHostedService<ExampleHostedService>())
+    .Build();
 
-class Program
-{
-    static Task Main(string[] args) =>
-        CreateHostBuilder(args).Build().RunAsync();
-
-    static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureServices((_, services) =>
-                services.AddHostedService<ExampleHostedService>());
-}
+await host.RunAsync();
 // </Program>
 // <Output>
 // Sample output:

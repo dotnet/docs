@@ -3,6 +3,7 @@ using System.Security.Permissions;
 
 namespace ca2109
 {
+#pragma warning disable SYSLIB0003
     //<snippet1>
     public class HandleEvents
     {
@@ -21,4 +22,5 @@ namespace ca2109
         }
     }
     //</snippet1>
+#pragma warning restore SYSLIB0003
 }

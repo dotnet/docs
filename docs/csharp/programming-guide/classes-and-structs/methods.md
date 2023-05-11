@@ -41,7 +41,7 @@ The method definition specifies the names and types of any parameters that are r
 
 ## Passing by reference vs. passing by value
 
-By default, when an instance of a [value type](../../language-reference/builtin-types/value-types.md) is passed to a method, its copy is passed instead of the instance itself. Therefore, changes to the argument have no effect on the original instance in the calling method. To pass a value-type instance by reference, use the `ref` keyword. For more information, see [Passing Value-Type Parameters](./passing-value-type-parameters.md).
+By default, when an instance of a [value type](../../language-reference/builtin-types/value-types.md) is passed to a method, its copy is passed instead of the instance itself. Therefore, changes to the argument have no effect on the original instance in the calling method. To pass a value-type instance by reference, use the `ref` keyword. For more information, see [Passing Value-Type Parameters](../../language-reference/keywords/method-parameters.md).
 
 When an object of a reference type is passed to a method, a reference to the object is passed. That is, the method receives not the object itself but an argument that indicates the location of the object. If you change a member of the object by using this reference, the change is reflected in the argument in the calling method, even if you pass the object by value.
 
@@ -55,13 +55,13 @@ Now, if you pass an object that is based on this type to a method, a reference t
 
 The example does essentially the same thing as the previous example in that it passes an argument by value to a method. But, because a reference type is used, the result is different. The modification that is made in `ModifyObject` to the `value` field of the parameter, `obj`, also changes the `value` field of the argument, `rt`, in the `TestRefType` method. The `TestRefType` method displays 33 as the output.
 
-For more information about how to pass reference types by reference and by value, see [Passing Reference-Type Parameters](./passing-reference-type-parameters.md) and [Reference Types](../../language-reference/keywords/reference-types.md).
+For more information about how to pass reference types by reference and by value, see [Passing Reference-Type Parameters](../../language-reference/keywords/method-parameters.md) and [Reference Types](../../language-reference/keywords/reference-types.md).
 
 ## Return values
 
 Methods can return a value to the caller. If the return type (the type listed before the method name) is not `void`, the method can return the value by using the [`return` statement](../../language-reference/statements/jump-statements.md#the-return-statement). A statement with the `return` keyword followed by a value that matches the return type will return that value to the method caller.
 
-The value can be returned to the caller by value or, starting with C# 7.0, [by reference](ref-returns.md). Values are returned to the caller by reference if the `ref` keyword is used in the method signature and it follows each `return` keyword. For example, the following method signature and return statement indicate that the method returns a variable named `estDistance` by reference to the caller.
+The value can be returned to the caller by value or [by reference](../../language-reference/statements/jump-statements.md#ref-returns). Values are returned to the caller by reference if the `ref` keyword is used in the method signature and it follows each `return` keyword. For example, the following method signature and return statement indicate that the method returns a variable named `estDistance` by reference to the caller.
 
 ```csharp
 public ref double GetEstimatedDistance()
@@ -82,10 +82,10 @@ To use a value returned from a method, the calling method can use the method cal
 
 Using a local variable, in this case, `result`, to store a value is optional. It may help the readability of the code, or it may be necessary if you need to store the original value of the argument for the entire scope of the method.
 
-To use a value returned by reference from a method, you must declare a [ref local](ref-returns.md#ref-locals) variable if you intend to modify its value. For example, if the `Planet.GetEstimatedDistance` method returns a <xref:System.Double> value by reference, you can define it as a ref local variable with code like the following:
+To use a value returned by reference from a method, you must declare a [ref local](../../language-reference/statements/declarations.md#ref-locals) variable if you intend to modify its value. For example, if the `Planet.GetEstimatedDistance` method returns a <xref:System.Double> value by reference, you can define it as a ref local variable with code like the following:
 
 ```csharp
-ref int distance = Planet.GetEstimatedDistance();
+ref double distance = ref Planet.GetEstimatedDistance();
 ```
 
 Returning a multi-dimensional array from a method, `M`, that modifies the array's contents is not necessary if the calling function passed the array into `M`.  You may return the resulting array from `M` for good style or functional flow of values, but it is not necessary because C# passes all reference types by value, and the value of an array reference is the pointer to the array. In the method `M`, any changes to the array's contents are observable by any code that has a reference to the array, as shown in the following example:
@@ -119,7 +119,7 @@ If you mark a method with the [async](../../language-reference/keywords/async.md
 > [!NOTE]
 > An async method returns to the caller when either it encounters the first awaited object that's not yet complete or it gets to the end of the async method, whichever occurs first.
 
-An async method typically has a return type of <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.Task>, <xref:System.Collections.Generic.IAsyncEnumerable%601>or `void`. The `void` return type is used primarily to define event handlers, where a `void` return type is required. An async method that returns `void` can't be awaited, and the caller of a void-returning method can't catch exceptions that the method throws. Starting with C# 7.0, an async method can have [any task-like return type](../../language-reference/keywords/async.md#return-types).
+An async method typically has a return type of <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.Task>, <xref:System.Collections.Generic.IAsyncEnumerable%601>or `void`. The `void` return type is used primarily to define event handlers, where a `void` return type is required. An async method that returns `void` can't be awaited, and the caller of a void-returning method can't catch exceptions that the method throws. An async method can have [any task-like return type](../../language-reference/keywords/async.md#return-types).
 
 In the following example, `DelayAsync` is an async method that has a return type of <xref:System.Threading.Tasks.Task%601>. `DelayAsync` has a `return` statement that returns an integer. Therefore the method declaration of `DelayAsync` must have a return type of `Task<int>`. Because the return type is `Task<int>`, the evaluation of the `await` expression in `DoSomethingAsync` produces an integer as the following statement demonstrates: `int result = await delayTask`.
 
@@ -129,7 +129,7 @@ The `Main` method is an example of an async method that has a return type of <xr
 
 An async method can't declare any [ref](../../language-reference/keywords/ref.md) or [out](../../language-reference/keywords/out-parameter-modifier.md) parameters, but it can call methods that have such parameters.
 
-For more information about async methods, see [Asynchronous programming with async and await](../concepts/async/index.md) and [Async return types](../concepts/async/async-return-types.md).
+For more information about async methods, see [Asynchronous programming with async and await](../../asynchronous-programming/index.md) and [Async return types](../../asynchronous-programming/async-return-types.md).
 
 ## Expression body definitions
 
@@ -148,11 +148,11 @@ If the method returns `void` or is an async method, then the body of the method 
 
 ## Iterators
 
-An iterator performs a custom iteration over a collection, such as a list or an array. An iterator uses the [yield return](../../language-reference/keywords/yield.md) statement to return each element one at a time. When a [yield return](../../language-reference/keywords/yield.md) statement is reached, the current location in code is remembered. Execution is restarted from that location when the iterator is called the next time.
+An iterator performs a custom iteration over a collection, such as a list or an array. An iterator uses the [yield return](../../language-reference/statements/yield.md) statement to return each element one at a time. When a `yield return` statement is reached, the current location in code is remembered. Execution is restarted from that location when the iterator is called the next time.
 
 You call an iterator from client code by using a [foreach](../../language-reference/statements/iteration-statements.md#the-foreach-statement) statement.
 
-The return type of an iterator can be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator%601>.
+The return type of an iterator can be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.Generic.IAsyncEnumerable%601>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator%601>.
 
 For more information, see [Iterators](../concepts/iterators.md).
 
@@ -171,4 +171,4 @@ For more information, see [Iterators](../concepts/iterators.md).
 - [params](../../language-reference/keywords/params.md)
 - [out](../../language-reference/keywords/out.md)
 - [ref](../../language-reference/keywords/ref.md)
-- [Passing Parameters](passing-parameters.md)
+- [Method Parameters](../../language-reference/keywords/method-parameters.md)

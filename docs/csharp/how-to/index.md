@@ -14,7 +14,6 @@ In the How to section of the C# Guide, you can find quick answers to common ques
 There are several tips and tricks that are common C# developer practices:
 
 - [Initialize objects using an object initializer](../programming-guide/classes-and-structs/how-to-initialize-objects-by-using-an-object-initializer.md).
-- [Learn the differences between passing a struct and a class to a method](../programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md).
 - [Use operator overloading](../language-reference/operators/operator-overloading.md).
 - [Implement and call a custom extension method](../programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md).
 - [Create a new method for an `enum` type using extension methods](../programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md).
@@ -122,8 +121,8 @@ and work with different data sources.
 Modern programs often use asynchronous operations. These articles will help you learn
 to use these techniques.
 
-- [Improve async performance using `System.Threading.Tasks.Task.WhenAll`](../programming-guide/concepts/async/index.md).
-- [Make multiple web requests in parallel using `async` and `await`](../programming-guide/concepts/async/index.md).
+- [Improve async performance using `System.Threading.Tasks.Task.WhenAll`](../asynchronous-programming/async-scenarios.md).
+- [Make multiple web requests in parallel using `async` and `await`](../asynchronous-programming/async-scenarios.md).
 - [Use a thread pool](../../standard/threading/the-managed-thread-pool.md#using-the-thread-pool).
 
 ## Command line args to your program

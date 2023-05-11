@@ -24,7 +24,7 @@ You may have arrived on this page after trying to run an application and seeing 
 > [!div class="button"]
 > [Download .NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
 
-[.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) can be used to run applications built for the .NET Framework 4.0 through 4.7.2.
+[.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) can be used to run applications built for the .NET Framework 4.0 through 4.8.
 
 You can install [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) on:
 
@@ -43,7 +43,7 @@ The .NET Framework 4.8 is not supported on:
 - Windows 10 1507
 - Windows 10 1511
 
-If you're using Windows 10 1507 or 1511 and you want to install the .NET Framework 4.8, you first need to upgrade to a later Windows 10 version.
+If you're using Windows 10 1507 or 1511 and you want to install .NET Framework 4.8, you first need to upgrade to a later Windows 10 version.
 
 ## .NET Framework 4.6.2
 

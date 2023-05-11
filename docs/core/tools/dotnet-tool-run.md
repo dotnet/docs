@@ -31,8 +31,6 @@ The `dotnet tool run` command searches tool manifest files that are in scope for
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Example

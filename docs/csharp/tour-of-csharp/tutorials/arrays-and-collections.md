@@ -113,9 +113,9 @@ Save the file and type `dotnet run` to try this latest version.
 Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Place all the code you've written in a new method called `WorkWithStrings()`. Call that method at the top of your program. When you finish, your code should look like this:
 
 ```csharp
-WorkWithString();
+WorkWithStrings();
 
-void WorkWithString()
+void WorkWithStrings()
 {
     var names = new List<string> { "<name>", "Ana", "Felipe" };
     foreach (var name in names)
@@ -185,13 +185,15 @@ var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
 fibonacciNumbers.Add(previous + previous2);
 
 foreach (var item in fibonacciNumbers)
+{
     Console.WriteLine(item);
+}
 ```
 
 Save the file and type `dotnet run` to see the results.
 
 > [!TIP]
-> To concentrate on just this section, you can comment out the code that calls `WorkingWithStrings();`. Just put two `/` characters in front of the call like this:  `// WorkingWithStrings();`.
+> To concentrate on just this section, you can comment out the code that calls `WorkWithStrings();`. Just put two `/` characters in front of the call like this:  `// WorkWithStrings();`.
 
 ## Challenge
 

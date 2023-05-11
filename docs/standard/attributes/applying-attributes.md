@@ -52,5 +52,5 @@ Use the following process to apply an attribute to an element of your code.
 - [Attributes](index.md)
 - [Retrieving Information Stored in Attributes](retrieving-information-stored-in-attributes.md)
 - [Concepts](/cpp/windows/attributed-programming-concepts)
-- [Attributes (C#)](../../csharp/programming-guide/concepts/attributes/index.md)
+- [Attributes (C#)](/dotnet/csharp/advanced-topics/reflection-and-attributes)
 - [Attributes overview (Visual Basic)](../../visual-basic/programming-guide/concepts/attributes/index.md)

@@ -18,8 +18,10 @@ landingContent:
         links:
           - text: "What is F#?"
             url: what-is-fsharp.md
+          - text: "F# strategy"
+            url: strategy.md
           - text: "First steps in F#"
-            url: /learn/modules/fsharp-first-steps/
+            url: /training/modules/fsharp-first-steps/
           - text: "Install F#"
             url: get-started/install-fsharp.md
           - text: "Get started with F# in Visual Studio"
@@ -52,7 +54,7 @@ landingContent:
           - text: "F# library reference"
             url: https://fsharp.github.io/fsharp-core-docs
           - text: ".NET library reference"
-            url: ../../api/index.md?view=net-6.0
+            url: ../../api/index.md?view=net-7.0
 
   - title: "F# fundamentals"
     linkLists:

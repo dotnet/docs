@@ -9,6 +9,7 @@ using IHost host = Host.CreateDefaultBuilder(args)
         services.AddScoped<PhotoService>();
         services.AddSingleton(typeof(CacheSignal<>));
     })
+    .UseConsoleLifetime()
     .Build();
 
 await host.StartAsync();
@@ -26,11 +27,10 @@ for (int id = 1; id < 7; ++ id)
 
         PhotoService service =
             scope.ServiceProvider.GetRequiredService<PhotoService>();
-
-        IAsyncEnumerable<Photo> photos = service.GetPhotosAsync(p => p.AlbumId == id);
-        await foreach (Photo photo in photos)
+        
+        await foreach (Photo photo in service.GetPhotosAsync(p => p.AlbumId == id))
         {
-            logger.LogInformation(photo.ToString());
+            logger.LogInformation("{PhotoDetails}", photo.ToString());
         }
 
         logger.LogInformation("");

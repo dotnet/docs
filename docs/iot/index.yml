@@ -11,7 +11,7 @@ metadata:
   ms.collection: collection
   author: camsoper
   ms.author: casoper
-  ms.date: 03/04/2022
+  ms.date: 10/07/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -21,7 +21,7 @@ landingContent:
     linkLists:
       - linkListType: quickstart
         links:
-          - text: Sense HAT quickstart
+          - text: Raspberry Pi Sense HAT quickstart
             url: quickstarts/sensehat.md
 
   - title: Learn
@@ -40,19 +40,23 @@ landingContent:
             url: debugging.md
       - linkListType: reference
         links:
+          - text: Available device bindings (GitHub)
+            url: https://github.com/dotnet/iot/blob/main/src/devices/README.md
           - text: API Reference
-            url: ../../api/index.md?view=iot-dotnet-1.1
+            url: ../../api/index.md?view=iot-dotnet-latest&preserve-view=true
 
   - title: Build devices
     linkLists:
       - linkListType: learn
         links:
           - text: Construct Internet of Things devices using the .NET IoT Libraries
-            url: /learn/modules/create-iot-device-dotnet/ 
+            url: /training/modules/create-iot-device-dotnet/ 
       - linkListType: tutorial
         links:
           - text: Blink an LED
             url: tutorials/blink-led.md
+          - text: Read binary input using GPIO
+            url: tutorials/gpio-input.md
           - text: Read environmental conditions from a sensor
             url: tutorials/temp-sensor.md
           - text: Display text on an LCD

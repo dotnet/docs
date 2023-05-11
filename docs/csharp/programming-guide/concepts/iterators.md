@@ -8,7 +8,7 @@ ms.assetid: c93f6dd4-e72a-4a06-be1c-a98b3255b734
 
 An *iterator* can be used to step through collections such as lists and arrays.
 
-An iterator method or `get` accessor performs a custom iteration over a collection. An iterator method uses the [yield return](../../language-reference/keywords/yield.md) statement to return each element one at a time. When a `yield return` statement is reached, the current location in code is remembered. Execution is restarted from that location the next time the iterator function is called.
+An iterator method or `get` accessor performs a custom iteration over a collection. An iterator method uses the [yield return](../../language-reference/statements/yield.md) statement to return each element one at a time. When a `yield return` statement is reached, the current location in code is remembered. Execution is restarted from that location the next time the iterator function is called.
 
 You consume an iterator from client code by using a [foreach](../../language-reference/statements/iteration-statements.md#the-foreach-statement) statement or by using a LINQ query.
 
@@ -337,7 +337,7 @@ On each successive iteration of the `foreach` loop (or the direct call to `IEnum
 
 Iterators don't support the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method. To reiterate from the start, you must obtain a new iterator. Calling <xref:System.Collections.IEnumerator.Reset%2A> on the iterator returned by an iterator method throws a <xref:System.NotSupportedException>.
 
-For additional information, see the [C# Language Specification](~/_csharpstandard/standard/classes.md#1414-iterators).
+For additional information, see the [C# Language Specification](~/_csharpstandard/standard/classes.md#1514-iterators).
 
 ## Use of Iterators
 
@@ -354,6 +354,5 @@ Iterators enable you to maintain the simplicity of a `foreach` loop when you nee
 - <xref:System.Collections.Generic>
 - <xref:System.Collections.Generic.IEnumerable%601>
 - [foreach, in](../../language-reference/statements/iteration-statements.md#the-foreach-statement)
-- [yield](../../language-reference/keywords/yield.md)
 - [Using foreach with Arrays](../arrays/using-foreach-with-arrays.md)
 - [Generics](../../fundamentals/types/generics.md)

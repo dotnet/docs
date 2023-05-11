@@ -1,0 +1,26 @@
+name: No Response
+
+# Both `issue_comment` and `scheduled` event types are required for this Action
+# to work properly.
+on:
+  issue_comment:
+    types: [created]
+  schedule:
+    # Schedule for five minutes after the hour, every hour
+    - cron: '5 * * * *'
+
+jobs:
+  noResponse:
+    permissions:
+      issues: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lee-dohm/no-response@9bb0a4b5e6a45046f00353d5de7d90fb8bd773bb
+        with:
+          token: ${{ github.token }}
+          responseRequiredLabel: needs-more-info
+          daysUntilClose: 14
+          closeComment: >
+            This issue has been automatically closed due to no response from the original author.
+            Please feel free to reopen it if you have more information that can help us investigate the issue further.

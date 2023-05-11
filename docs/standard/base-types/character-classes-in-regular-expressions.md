@@ -1,7 +1,7 @@
 ---
 title: Character Classes in .NET Regular Expressions
 description: Learn how to use character classes to represent a set of characters in .NET regular expressions.
-ms.date: "03/30/2017"
+ms.date: 08/12/2022
 no-loc: ["Ll","Lu","Lt","Lo","Lm","Mn","Nd","Pc","Lu"]
 dev_langs: 
   - "csharp"
@@ -186,7 +186,10 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
   
  `\p{` *name* `}`  
   
- matches any character that belongs to a Unicode general category or named block, where *name* is the category abbreviation or named block name. For a list of category abbreviations, see the [Supported Unicode General Categories](#SupportedUnicodeGeneralCategories) section later in this topic. For a list of named blocks, see the [Supported Named Blocks](#SupportedNamedBlocks) section later in this topic.  
+ matches any character that belongs to a Unicode general category or named block, where *name* is the category abbreviation or named block name. For a list of category abbreviations, see the [Supported Unicode General Categories](#SupportedUnicodeGeneralCategories) section later in this topic. For a list of named blocks, see the [Supported Named Blocks](#SupportedNamedBlocks) section later in this topic.
+
+> [!TIP]
+> Matching may be improved if the string is first normalized by calling the <xref:System.String.Normalize%2A?displayProperty=nameWithType> method.
   
  The following example uses the `\p{`*name*`}` construct to match both a Unicode general category (in this case, the `Pd`, or Punctuation, Dash category) and a named block (the `IsGreek` and `IsBasicLatin` named blocks).  
   
@@ -218,7 +221,10 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
  `\P{` *name* `}`  
   
  matches any character that does not belong to a Unicode general category or named block, where *name* is the category abbreviation or named block name. For a list of category abbreviations, see the [Supported Unicode General Categories](#SupportedUnicodeGeneralCategories) section later in this topic. For a list of named blocks, see the [Supported Named Blocks](#SupportedNamedBlocks) section later in this topic.  
-  
+
+> [!TIP]
+> Matching may be improved if the string is first normalized by calling the <xref:System.String.Normalize%2A?displayProperty=nameWithType> method.
+
  The following example uses the `\P{`*name*`}` construct to remove any currency symbols (in this case, the `Sc`, or Symbol, Currency category) from numeric strings.  
   
  [!code-csharp[Conceptual.RegEx.Language.CharacterClasses#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.characterclasses/cs/notcategory1.cs#7)]
@@ -310,8 +316,8 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 |`\r`|The carriage return character, \u000D.|  
 |`\t`|The tab character, \u0009.|  
 |`\v`|The vertical tab character, \u000B.|  
-|`\x85`|The ellipsis or NEXT LINE (NEL) character (…), \u0085.|  
-|`\p{Z}`|Matches any separator character.|  
+|`\x85`|The NEXT LINE (NEL) character, \u0085.|  
+|`\p{Z}`|Matches all [separator characters](#supported-unicode-general-categories). This includes the `Zs`, `Zl`, and `Zp` categories.|
   
  If ECMAScript-compliant behavior is specified, `\s` is equivalent to `[ \f\n\r\t\v]`. For information on ECMAScript regular expressions, see the "ECMAScript Matching Behavior" section in [Regular Expression Options](regular-expression-options.md).  
   

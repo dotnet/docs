@@ -49,7 +49,7 @@ Console.WriteLine(Math.Round(Math.Abs(dub)));
   
  Creating a static class is therefore basically the same as creating a class that contains only static members and a private constructor. A private constructor prevents the class from being instantiated. The advantage of using a static class is that the compiler can check to make sure that no instance members are accidentally added. The compiler will guarantee that instances of this class cannot be created.  
   
- Static classes are sealed and therefore cannot be inherited. They cannot inherit from any class except <xref:System.Object>. Static classes cannot contain an instance constructor. However, they can contain a static constructor. Non-static classes should also define a static constructor if the class contains static members that require non-trivial initialization. For more information, see [Static Constructors](./static-constructors.md).  
+ Static classes are sealed and therefore cannot be inherited. They cannot inherit from any class or interface except <xref:System.Object>. Static classes cannot contain an instance constructor. However, they can contain a static constructor. Non-static classes should also define a static constructor if the class contains static members that require non-trivial initialization. For more information, see [Static Constructors](./static-constructors.md).  
   
 ## Example  
 
@@ -83,7 +83,7 @@ Console.WriteLine(Math.Round(Math.Abs(dub)));
   
 ## C# Language Specification  
 
-For more information, see [Static classes](~/_csharpstandard/standard/classes.md#14224-static-classes) and [Static and instance members](~/_csharpstandard/standard/classes.md#1438-static-and-instance-members) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Static classes](~/_csharpstandard/standard/classes.md#15224-static-classes), [Static and instance members](~/_csharpstandard/standard/classes.md#1538-static-and-instance-members) and [Static constructors](~/_csharpstandard/standard/classes.md#1512-static-constructors) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
   
 ## See also
 

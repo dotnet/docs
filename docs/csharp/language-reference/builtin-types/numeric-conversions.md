@@ -1,7 +1,7 @@
 ---
 description: Learn about the implicit and explicit conversions between the built-in numeric types in C#
 title: "Built-in numeric conversions - C# reference"
-ms.date: 03/17/2021
+ms.date: 01/30/2023
 helpviewer_keywords: 
   - "implicit numeric conversions [C#]"
   - "explicit numeric conversion [C#]"
@@ -29,8 +29,8 @@ The following table shows the predefined implicit conversions between the built-
 |[long](integral-numeric-types.md)|`float`, `double`, or `decimal`|
 |[ulong](integral-numeric-types.md)|`float`, `double`, or `decimal`|
 |[float](floating-point-numeric-types.md)|`double`|
-|[nint](nint-nuint.md)|`long`, `float`, `double`, or `decimal`|
-|[nuint](nint-nuint.md)|`ulong`, `float`, `double`, or `decimal`|
+|[nint](integral-numeric-types.md)|`long`, `float`, `double`, or `decimal`|
+|[nuint](integral-numeric-types.md)|`ulong`, `float`, `double`, or `decimal`|
 
 > [!NOTE]
 > The implicit conversions from `int`, `uint`, `long`, `ulong`, `nint`, or `nuint` to `float` and from `long`, `ulong`, `nint`, or `nuint` to `double` may cause a loss of precision, but never a loss of an order of magnitude. The other implicit numeric conversions never lose any information.
@@ -58,26 +58,26 @@ The following table shows the predefined explicit conversions between the built-
 
 |From|To|
 |----------|--------|
-|[sbyte](integral-numeric-types.md)|`byte`, `ushort`, `uint`, or `ulong`, or `nuint`|
+|[sbyte](integral-numeric-types.md)|`byte`, `ushort`, `uint`, `ulong`, or `nuint`|
 |[byte](integral-numeric-types.md)|`sbyte`|
 |[short](integral-numeric-types.md)|`sbyte`, `byte`, `ushort`, `uint`, `ulong`, or `nuint`|
 |[ushort](integral-numeric-types.md)|`sbyte`, `byte`, or `short`|
 |[int](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `uint`, `ulong`, or `nuint`|
-|[uint](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, or `int`|
+|[uint](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, or `nint`|
 |[long](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `ulong`, `nint`, or `nuint`|
 |[ulong](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `nint`, or `nuint`|
 |[float](floating-point-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `decimal`, `nint`, or `nuint`|
 |[double](floating-point-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `decimal`, `nint`, or `nuint`|
 |[decimal](floating-point-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `nint`, or `nuint`|
-|[nint](nint-nuint.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `ulong`, or `nuint`|
-|[nuint](nint-nuint.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, or `nint`|
+|[nint](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `ulong`, or `nuint`|
+|[nuint](integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, or `nint`|
 
 > [!NOTE]
 > An explicit numeric conversion might result in data loss or throw an exception, typically an <xref:System.OverflowException>.
 
-Also note that
+Also note that:
 
-- When you convert a value of an integral type to another integral type, the result depends on the overflow [checking context](../keywords/checked-and-unchecked.md). In a checked context, the conversion succeeds if the source value is within the range of the destination type. Otherwise, an <xref:System.OverflowException> is thrown. In an unchecked context, the conversion always succeeds, and proceeds as follows:
+- When you convert a value of an integral type to another integral type, the result depends on the [overflow-checking context](../statements/checked-and-unchecked.md). In a checked context, the conversion succeeds if the source value is within the range of the destination type. Otherwise, an <xref:System.OverflowException> is thrown. In an unchecked context, the conversion always succeeds, and proceeds as follows:
 
   - If the source type is larger than the destination type, then the source value is truncated by discarding its "extra" most significant bits. The result is then treated as a value of the destination type.
 
@@ -87,11 +87,11 @@ Also note that
 
 - When you convert a `decimal` value to an integral type, this value is rounded towards zero to the nearest integral value. If the resulting integral value is outside the range of the destination type, an <xref:System.OverflowException> is thrown.
 
-- When you convert a `double` or `float` value to an integral type, this value is rounded towards zero to the nearest integral value. If the resulting integral value is outside the range of the destination type, the result depends on the overflow [checking context](../keywords/checked-and-unchecked.md). In a checked context, an <xref:System.OverflowException> is thrown, while in an unchecked context, the result is an unspecified value of the destination type.
+- When you convert a `double` or `float` value to an integral type, this value is rounded towards zero to the nearest integral value. If the resulting integral value is outside the range of the destination type, the result depends on the [overflow-checking context](../statements/checked-and-unchecked.md). In a checked context, an <xref:System.OverflowException> is thrown, while in an unchecked context, the result is an unspecified value of the destination type.
 
 - When you convert `double` to `float`, the `double` value is rounded to the nearest `float` value. If the `double` value is too small or too large to fit into the `float` type, the result is zero or infinity.
 
-- When you convert `float` or `double` to `decimal`, the source value is converted to `decimal` representation and rounded to the nearest number after the 28th decimal place if required. Depending on the value of the source value, one of the following results may occur:
+- When you convert `float` or `double` to `decimal`, the source value is converted to `decimal` representation and rounded to the nearest number after the 28th decimal place if necessary. Depending on the value of the source value, one of the following results may occur:
 
   - If the source value is too small to be represented as a `decimal`, the result becomes zero.
 

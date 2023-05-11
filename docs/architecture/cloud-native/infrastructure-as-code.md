@@ -2,6 +2,7 @@
 title: Infrastructure as code
 description: Embracing Infrastructure as Code (IaC) with cloud-native applications
 ms.date: 04/06/2022
+ms.custom: devx-track-terraform, devx-track-arm-template, devx-track-azurecli
 ---
 
 # Infrastructure as code
@@ -74,7 +75,7 @@ provider "azurerm" {
   version = "=1.28.0"
 }
 
-resource "azurerm_resource_group" "test" {
+resource "azurerm_resource_group" "testrg" {
   name     = "production"
   location = "West US"
 }

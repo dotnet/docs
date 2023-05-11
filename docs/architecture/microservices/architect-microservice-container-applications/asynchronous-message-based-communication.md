@@ -56,13 +56,13 @@ An important point is that you might want to communicate to multiple microservic
 
 In asynchronous event-driven communication, one microservice publishes events to an event bus and many microservices can subscribe to it, to get notified and act on it. Your implementation will determine what protocol to use for event-driven, message-based communications. [AMQP](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol) can help achieve reliable queued communication.
 
-When you use an event bus, you might want to use an abstraction level (like an event bus interface) based on a related implementation in classes with code using the API from a message broker like [RabbitMQ](https://www.rabbitmq.com/) or a service bus like [Azure Service Bus with Topics](/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions). Alternatively, you might want to use a higher-level service bus like NServiceBus, MassTransit, or Brighter to articulate your event bus and publish/subscribe system.
+When you use an event bus, you might want to use an abstraction level (like an event bus interface) based on a related implementation in classes with code using the API from a message broker like [RabbitMQ](https://www.rabbitmq.com/) or a service bus like [Azure Service Bus with Topics](/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions). Alternatively, you might want to use a higher-level service bus like [NServiceBus](https://particular.net/nservicebus), [MassTransit](https://masstransit-project.com/), or [Brighter](https://github.com/BrighterCommand/Brighter) to articulate your event bus and publish/subscribe system.
 
 ## A note about messaging technologies for production systems
 
-The messaging technologies available for implementing your abstract event bus are at different levels. For instance, products like RabbitMQ (a messaging broker transport) and Azure Service Bus sit at a lower level than other products like, NServiceBus, MassTransit, or Brighter, which can work on top of RabbitMQ and Azure Service Bus. Your choice depends on how many rich features at the application level and out-of-the-box scalability you need for your application. For implementing just a proof-of-concept event bus for your development environment, as it was done in the eShopOnContainers sample, a simple implementation on top of RabbitMQ running on a Docker container might be enough.
+The messaging technologies available for implementing your abstract event bus are at different levels. For instance, products like RabbitMQ (a messaging broker transport) and Azure Service Bus sit at a lower level than other products like [NServiceBus](https://particular.net/nservicebus), [MassTransit](https://masstransit-project.com/), or [Brighter](https://github.com/BrighterCommand/Brighter), which can work on top of RabbitMQ and Azure Service Bus. Your choice depends on how many rich features at the application level and out-of-the-box scalability you need for your application. For implementing just a proof-of-concept event bus for your development environment, as it was done in the eShopOnContainers sample, a simple implementation on top of RabbitMQ running on a Docker container might be enough.
 
-However, for mission-critical and production systems that need hyper-scalability, you might want to evaluate Azure Service Bus. For high-level abstractions and features that make the development of distributed applications easier, we recommend that you evaluate other commercial and open-source service buses, such as NServiceBus, MassTransit, and Brighter. Of course, you can build your own service-bus features on top of lower-level technologies like RabbitMQ and Docker. But that plumbing work might cost too much for a custom enterprise application.
+However, for mission-critical and production systems that need hyper-scalability, you might want to evaluate Azure Service Bus. For high-level abstractions and features that make the development of distributed applications easier, we recommend that you evaluate other commercial and open-source service buses, such as [NServiceBus](https://particular.net/nservicebus), [MassTransit](https://masstransit-project.com/), and [Brighter](https://github.com/BrighterCommand/Brighter). Of course, you can build your own service-bus features on top of lower-level technologies like RabbitMQ and Docker. But that plumbing work might cost too much for a custom enterprise application.
 
 ## Resiliently publishing to the event bus
 
@@ -75,6 +75,8 @@ A challenge when implementing an event-driven architecture across multiple micro
 - Using full [Event Sourcing](/azure/architecture/patterns/event-sourcing) pattern.
 
 - Using the [Outbox pattern](https://www.kamilgrzybek.com/design/the-outbox-pattern/): a transactional database table as a message queue that will be the base for an event-creator component that would create the event and publish it.
+
+For a more complete description of the challenges in this space, including how messages with potentially incorrect data can end up being published, see [Data platform for mission-critical workloads on Azure: Every message must be processed](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-data-platform#every-message-must-be-processed).
 
 Additional topics to consider when using asynchronous communication are message idempotence and message deduplication. These topics are covered in the section [Implementing event-based communication between microservices (integration events)](../multi-container-microservice-net-applications/integration-event-based-microservice-communications.md) later in this guide.
 
@@ -90,10 +92,10 @@ Additional topics to consider when using asynchronous communication are message 
   <https://udidahan.com/2009/12/09/clarified-cqrs/>
 
 - **Command and Query Responsibility Segregation (CQRS)** \
-  [https://docs.microsoft.com/azure/architecture/patterns/cqrs](/azure/architecture/patterns/cqrs)
+  [https://learn.microsoft.com/azure/architecture/patterns/cqrs](/azure/architecture/patterns/cqrs)
 
 - **Communicating Between Bounded Contexts** \
-  [https://docs.microsoft.com/previous-versions/msp-n-p/jj591572(v=pandp.10)](/previous-versions/msp-n-p/jj591572(v=pandp.10))
+  [https://learn.microsoft.com/previous-versions/msp-n-p/jj591572(v=pandp.10)](/previous-versions/msp-n-p/jj591572(v=pandp.10))
 
 - **Eventual consistency** \
   <https://en.wikipedia.org/wiki/Eventual_consistency>

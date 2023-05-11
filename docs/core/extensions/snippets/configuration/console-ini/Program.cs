@@ -12,7 +12,7 @@ using IHost host = Host.CreateDefaultBuilder(args)
             .AddIniFile("appsettings.ini", optional: true, reloadOnChange: true)
             .AddIniFile($"appsettings.{env.EnvironmentName}.ini", true, true);
 
-        foreach ((string key, string value) in
+        foreach ((string key, string? value) in
             configuration.Build().AsEnumerable().Where(t => t.Value is not null))
         {
             Console.WriteLine($"{key}={value}");

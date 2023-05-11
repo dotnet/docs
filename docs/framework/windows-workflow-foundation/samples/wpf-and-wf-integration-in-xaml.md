@@ -25,9 +25,9 @@ The [WPFWFIntegration sample](https://github.com/dotnet/samples/tree/main/framew
 
 1. Using Visual Studio, open the WPFWFIntegration.sln solution file.
 
-2. To build the solution, press **Ctrl**+**Shift**+**B**.
+2. To build the solution, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>.
 
-3. To run the solution, press **F5**.
+3. To run the solution, press <kbd>F5</kbd>.
 
 4. Type your first and last name into the dialog.
 

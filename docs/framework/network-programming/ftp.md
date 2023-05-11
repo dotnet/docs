@@ -21,9 +21,3 @@ For more information, see the following topics: [How to: Download Files with FTP
 ## FTP and proxies
 
 If a proxy (specified by the <xref:System.Net.FtpWebRequest.Proxy%2A> property) is an HTTP proxy, then only the <xref:System.Net.WebRequestMethods.Ftp.DownloadFile>, <xref:System.Net.WebRequestMethods.Ftp.ListDirectory>, and <xref:System.Net.WebRequestMethods.Ftp.ListDirectoryDetails> commands are supported.
-
-## See also
-
-- [Accessing the Internet Through a Proxy](accessing-the-internet-through-a-proxy.md)
-- [Network Programming Samples](network-programming-samples.md)
-- [Using Application Protocols](using-application-protocols.md)

@@ -21,7 +21,9 @@ Another issue that developers run into is when using a shared instance of `HttpC
 
 However, the issue isn't really with `HttpClient` per se, but with the [default constructor for HttpClient](/dotnet/api/system.net.http.httpclient.-ctor#system-net-http-httpclient-ctor), because it creates a new concrete instance of <xref:System.Net.Http.HttpMessageHandler>, which is the one that has *sockets exhaustion* and DNS changes issues mentioned above.
 
-To address the issues mentioned above and to make `HttpClient` instances manageable, .NET Core 2.1 introduced the <xref:System.Net.Http.IHttpClientFactory> interface which can be used to configure and create `HttpClient` instances in an app through Dependency Injection (DI). It also provides extensions for Polly-based middleware to take advantage of delegating handlers in HttpClient.
+To address the issues mentioned above and to make `HttpClient` instances manageable, .NET Core 2.1 introduced two approaches, one of them being <xref:System.Net.Http.IHttpClientFactory>. It's an interface that's used to configure and create `HttpClient` instances in an app through Dependency Injection (DI). It also provides extensions for Polly-based middleware to take advantage of delegating handlers in HttpClient.
+
+The alternative is to use `SocketsHttpHandler` with configured `PooledConnectionLifetime`. This approach is applied to long-lived, `static` or singleton `HttpClient` instances. To learn more about different strategies, see [HttpClient guidelines for .NET](../../../fundamentals/networking/http/httpclient-guidelines.md).
 
 [Polly](https://thepollyproject.azurewebsites.net/) is a transient-fault-handling library that helps developers add resiliency to their applications, by using some pre-defined policies in a fluent and thread-safe manner.
 
@@ -35,10 +37,10 @@ The current implementation of <xref:System.Net.Http.IHttpClientFactory>, that al
 - Manage the lifetime of <xref:System.Net.Http.HttpMessageHandler> to avoid the mentioned problems/issues that can occur when managing `HttpClient` lifetimes yourself.
 
 > [!TIP]
-> The `HttpClient` instances injected by DI, can be disposed of safely, because the associated `HttpMessageHandler` is managed by the factory. As a matter of fact, injected `HttpClient` instances are *Scoped* from a DI perspective.
+> The `HttpClient` instances injected by DI can be disposed of safely, because the associated `HttpMessageHandler` is managed by the factory. Injected `HttpClient` instances are *Transient* from a DI perspective, while `HttpMessageHandler` instances can be regarded as *Scoped*. `HttpMessageHandler` instances have their own DI scopes, **separate** from the application scopes (for example, ASP.NET incoming request scopes). For more information, see [Using HttpClientFactory in .NET](../../../core/extensions/httpclient-factory.md#message-handler-scopes-in-ihttpclientfactory).
 
 > [!NOTE]
-> The implementation of `IHttpClientFactory` (`DefaultHttpClientFactory`) is tightly tied to the DI implementation in the `Microsoft.Extensions.DependencyInjection` NuGet package. For more information about using other DI containers, see this [GitHub discussion](https://github.com/dotnet/extensions/issues/1345).
+> The implementation of `IHttpClientFactory` (`DefaultHttpClientFactory`) is tightly tied to the DI implementation in the `Microsoft.Extensions.DependencyInjection` NuGet package. If you need to use `HttpClient` without DI or with other DI implementations, consider using a `static` or singleton `HttpClient` with `PooledConnectionLifetime` set up. For more information, see [HttpClient guidelines for .NET](../../../fundamentals/networking/http/httpclient-guidelines.md).
 
 ## Multiple ways to use IHttpClientFactory
 
@@ -50,6 +52,9 @@ There are several ways that you can use `IHttpClientFactory` in your application
 - Use Generated Clients
 
 For the sake of brevity, this guidance shows the most structured way to use `IHttpClientFactory`, which is to use Typed Clients (Service Agent pattern). However, all options are documented and are currently listed in this [article covering the `IHttpClientFactory` usage](/aspnet/core/fundamentals/http-requests#consumption-patterns).
+
+> [!NOTE]
+> If your app requires cookies, it might be better to avoid using <xref:System.Net.Http.IHttpClientFactory> in your app. For alternative ways of managing clients, see [Guidelines for using HTTP clients](../../../fundamentals/networking/http/httpclient-guidelines.md)
 
 ## How to use Typed Clients with IHttpClientFactory
 
@@ -65,30 +70,30 @@ In the above image, a `ClientService` (used by a controller or client code) uses
 
 To configure the above structure, add <xref:System.Net.Http.IHttpClientFactory> in your application by installing the `Microsoft.Extensions.Http` NuGet package that includes the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> extension method for <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. This extension method registers the internal `DefaultHttpClientFactory` class to be used as a singleton for the interface `IHttpClientFactory`. It defines a transient configuration for the <xref:Microsoft.Extensions.Http.HttpMessageHandlerBuilder>. This message handler (<xref:System.Net.Http.HttpMessageHandler> object), taken from a pool, is used by the `HttpClient` returned from the factory.
 
-In the next code, you can see how `AddHttpClient()` can be used to register Typed Clients (Service Agents) that need to use `HttpClient`.
+In the next snippet, you can see how `AddHttpClient()` can be used to register Typed Clients (Service Agents) that need to use `HttpClient`.
 
 ```csharp
-// Startup.cs
+// Program.cs
 //Add http client services at ConfigureServices(IServiceCollection services)
-services.AddHttpClient<ICatalogService, CatalogService>();
-services.AddHttpClient<IBasketService, BasketService>();
-services.AddHttpClient<IOrderingService, OrderingService>();
+builder.Services.AddHttpClient<ICatalogService, CatalogService>();
+builder.Services.AddHttpClient<IBasketService, BasketService>();
+builder.Services.AddHttpClient<IOrderingService, OrderingService>();
 ```
 
-Registering the client services as shown in the previous code, makes the `DefaultClientFactory` create a standard `HttpClient` for each service. The typed client is registered as transient with DI container. In the preceding code, `AddHttpClient()` registers _CatalogService_, _BasketService_, _OrderingService_ as transient services so they can be injected and consumed directly without any need for additional registrations.
+Registering the client services as shown in the previous snippet, makes the `DefaultClientFactory` create a standard `HttpClient` for each service. The typed client is registered as transient with DI container. In the preceding code, `AddHttpClient()` registers _CatalogService_, _BasketService_, _OrderingService_ as transient services so they can be injected and consumed directly without any need for additional registrations.
 
-You could also add instance-specific configuration in the registration to, for example, configure the base address, and add some resiliency policies, as shown in the following code:
+You could also add instance-specific configuration in the registration to, for example, configure the base address, and add some resiliency policies, as shown in the following:
 
 ```csharp
-services.AddHttpClient<ICatalogService, CatalogService>(client =>
+builder.Services.AddHttpClient<ICatalogService, CatalogService>(client =>
 {
-    client.BaseAddress = new Uri(Configuration["BaseUrl"]);
+    client.BaseAddress = new Uri(builder.Configuration["BaseUrl"]);
 })
     .AddPolicyHandler(GetRetryPolicy())
     .AddPolicyHandler(GetCircuitBreakerPolicy());
 ```
 
-Just for the example sake, you can see one of the above policies in the next code:
+In this next example, you can see the configuration of one of the above policies:
 
 ```csharp
 static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
@@ -112,7 +117,7 @@ The `HttpMessageHandler` objects in the pool have a lifetime that's the length o
 
 ```csharp
 //Set 5 min as the lifetime for the HttpMessageHandler objects in the pool used for the Catalog Typed Client
-services.AddHttpClient<ICatalogService, CatalogService>()
+builder.Services.AddHttpClient<ICatalogService, CatalogService>()
     .SetHandlerLifetime(TimeSpan.FromMinutes(5));
 ```
 
@@ -147,13 +152,13 @@ public class CatalogService : ICatalogService
 }
 ```
 
-The Typed Client (`CatalogService` in the example) is activated by DI (Dependency Injection), that means it can accept any registered service in its constructor, in addition to `HttpClient`.
+The Typed Client (`CatalogService` in the example) is activated by DI (Dependency Injection), which means it can accept any registered service in its constructor, in addition to `HttpClient`.
 
 A Typed Client is effectively a transient object, that means a new instance is created each time one is needed. It receives a new `HttpClient` instance each time it's constructed. However, the `HttpMessageHandler` objects in the pool are the objects that are reused by multiple `HttpClient` instances.
 
 ### Use your Typed Client classes
 
-Finally, once you have your typed classes implemented, you can have them registered and configured with `AddHttpClient()`. After that you can use them wherever have services injected by DI. For example, in a Razor page code or controller of an MVC web app, like in the following code from eShopOnContainers:
+Finally, once you have your typed classes implemented, you can have them registered and configured with `AddHttpClient()`. After that you can use them wherever services are injected by DI, such as in Razor page code or an MVC web app controller, shown in the below code from eShopOnContainers:
 
 ```csharp
 namespace Microsoft.eShopOnContainers.WebMVC.Controllers
@@ -182,21 +187,24 @@ namespace Microsoft.eShopOnContainers.WebMVC.Controllers
 }
 ```
 
-Up to this point, the above code snippet has only shown the example of performing regular HTTP requests. But the 'magic' comes in the following sections where it shows how all the HTTP requests made by `HttpClient`, can have resilient policies such as retries with exponential backoff, circuit breakers, security features using auth tokens, or even any other custom feature. And all of these can be done just by adding policies and delegating handlers to your registered Typed Clients.
+Up to this point, the above code snippet only shows the example of performing regular HTTP requests. But the 'magic' comes in the following sections where it shows how all the HTTP requests made by `HttpClient` can have resilient policies such as retries with exponential backoff, circuit breakers, security features using auth tokens, or even any other custom feature. And all of these can be done just by adding policies and delegating handlers to your registered Typed Clients.
 
 ## Additional resources
 
-- **Using HttpClientFactory in .NET**  
-  [https://docs.microsoft.com/aspnet/core/fundamentals/http-requests](/aspnet/core/fundamentals/http-requests)
+- **HttpClient guidelines for .NET**  
+  [https://learn.microsoft.com/en-us/dotnet/fundamentals/networking/http/httpclient-guidelines](../../../fundamentals/networking/http/httpclient-guidelines.md)
 
-- **HttpClientFactory source code in the `dotnet/extensions` GitHub repository**  
-  <https://github.com/dotnet/extensions/tree/v3.1.8/src/HttpClientFactory>
+- **Using HttpClientFactory in .NET**  
+  [https://learn.microsoft.com/en-us/dotnet/core/extensions/httpclient-factory](../../../core/extensions/httpclient-factory.md)
+
+- **Using HttpClientFactory in ASP.NET Core**  
+  [https://learn.microsoft.com/aspnet/core/fundamentals/http-requests](/aspnet/core/fundamentals/http-requests)
+
+- **HttpClientFactory source code in the `dotnet/runtime` GitHub repository**  
+  <https://github.com/dotnet/runtime/tree/release/7.0/src/libraries/Microsoft.Extensions.Http/>
 
 - **Polly (.NET resilience and transient-fault-handling library)**  
   <https://thepollyproject.azurewebsites.net/>
-  
-- **Using IHttpClientFactory without dependency injection (GitHub issue)**  
-  <https://github.com/dotnet/extensions/issues/1345>
 
 >[!div class="step-by-step"]
 >[Previous](implement-resilient-entity-framework-core-sql-connections.md)

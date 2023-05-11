@@ -1,13 +1,13 @@
 ---
-title: Dependency injection in .NET
-description: Learn how .NET implements dependency injection and how to use it.
+title: Dependency injection
+description: Learn how to use dependency injection within your .NET apps. Discover how to registration services, define service lifetimes, and express dependencies in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/10/2021
+ms.date: 03/13/2023
 ms.topic: overview
 ---
 
-# Dependency injection in .NET
+# .NET dependency injection
 
 .NET supports the dependency injection (DI) software design pattern, which is a technique for achieving [Inversion of Control (IoC)](../../architecture/modern-web-apps-azure/architectural-principles.md#dependency-inversion) between classes and their dependencies. Dependency injection in .NET is a built-in part of the framework, along with configuration, logging, and the options pattern.
 
@@ -63,15 +63,25 @@ This interface is implemented by a concrete type, `MessageWriter`:
 
 The sample code registers the `IMessageWriter` service with the concrete type `MessageWriter`. The <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped%2A> method registers the service with a scoped lifetime, the lifetime of a single request. [Service lifetimes](#service-lifetimes) are described later in this article.
 
-:::code language="csharp" source="snippets/configuration/dependency-injection/Program.cs" highlight="16":::
+:::code language="csharp" source="snippets/configuration/dependency-injection/Program.cs" highlight="5-8":::
 
-In the sample app, the `IMessageWriter` service is requested and used to call the `Write` method:
+In the preceding code, the sample app:
+
+- Creates a host builder instance.
+- Configures the services by registering:
+
+  - The `Worker` as a hosted service. For more information, see [Worker Services in .NET](workers.md).
+  - The `IMessageWriter` interface as a scoped service with a corresponding implementation of the `MessageWriter` class.
+
+- Builds the host and runs it.
+
+The host contains the dependency injection service provider. It also contains all the other relevant services required to automatically instantiate the `Worker` and provide the corresponding `IMessageWriter` implementation as an argument.
 
 :::code language="csharp" source="snippets/configuration/dependency-injection/Worker.cs":::
 
 By using the DI pattern, the worker service:
 
-- Doesn't use the concrete type `MessageWriter`, only the `IMessageWriter` interface that implements it. That makes it easy to change the implementation that the controller uses without modifying the controller.
+- Doesn't use the concrete type `MessageWriter`, only the `IMessageWriter` interface that implements it. That makes it easy to change the implementation that the worker service uses without modifying the worker service.
 - Doesn't create an instance of `MessageWriter`. The instance is created by the DI container.
 
 The implementation of the `IMessageWriter` interface can be improved by using the built-in logging API:
@@ -87,6 +97,8 @@ static IHostBuilder CreateHostBuilder(string[] args) =>
             services.AddHostedService<Worker>()
                     .AddScoped<IMessageWriter, LoggingMessageWriter>());
 ```
+
+The method `CreateHostBuilder` uses types `IHostBuilder` and `Host`. In order to use them, packages `Microsoft.Extensions.DependencyInjection` and `Microsoft.Extensions.Hosting` must be referenced respectively.
 
 `LoggingMessageWriter` depends on <xref:Microsoft.Extensions.Logging.ILogger%601>, which it requests in the constructor. `ILogger<TCategoryName>` is a [framework-provided service](#framework-provided-services).
 
@@ -276,7 +288,7 @@ Registering a service with only an implementation type is equivalent to register
 
 Any of the above service registration methods can be used to register multiple service instances of the same service type. In the following example, `AddSingleton` is called twice with `IMessageWriter` as the service type. The second call to `AddSingleton` overrides the previous one when resolved as `IMessageWriter` and adds to the previous one when multiple services are resolved via `IEnumerable<IMessageWriter>`. Services appear in the order they were registered when resolved via `IEnumerable<{SERVICE}>`.
 
-:::code language="csharp" source="snippets/configuration/console-di-ienumerable/Program.cs" highlight="18-23":::
+:::code language="csharp" source="snippets/configuration/console-di-ienumerable/Program.cs" highlight="11-16":::
 
 The preceding sample source code registers two implementations of the `IMessageWriter`.
 

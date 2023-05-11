@@ -8,7 +8,7 @@ ms.date: 05/11/2021
 
 If your .NET 6+ project references a package that enables source generation of code, for example, a logging solution, then the analyzers that are specific to source generation will run at compile time. This article lists the compiler diagnostics related to source-generated code.
 
-If you encounter one of these build warnings or errors, follow the specific guidance provided for the diagnostic ID listed in the [Reference](#reference) section. Warnings can also be suppressed using the specific `SYSLIB1XXX` diagnostic ID value. For more information, see [Suppress warnings](#suppress-warnings).
+If you encounter one of these build warnings or errors, follow the specific guidance provided for the diagnostic ID listed in the [Reference](#reference) section. You can also suppress warnings using the specific `SYSLIB1XXX` diagnostic ID value. For more information, see [Suppress warnings](#suppress-warnings).
 
 ## Analyzer warnings
 

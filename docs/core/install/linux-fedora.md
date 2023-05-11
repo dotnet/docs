@@ -3,7 +3,7 @@ title: Install .NET on Fedora
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Fedora.
 author: adegeo
 ms.author: adegeo
-ms.date: 03/21/2022
+ms.date: 12/21/2022
 ---
 
 # Install the .NET SDK or the .NET Runtime on Fedora
@@ -14,37 +14,27 @@ ms.date: 03/21/2022
 
 For more information on installing .NET without a package manager, see one of the following articles:
 
-- [Install the .NET SDK or the .NET Runtime with Snap.](linux-snap.md)
 - [Install the .NET SDK or the .NET Runtime with a script.](linux-scripted-manual.md#scripted-install)
 - [Install the .NET SDK or the .NET Runtime manually.](linux-scripted-manual.md#manual-install)
-
-## Install .NET 6
-
-[!INCLUDE [linux-dnf-install-60](includes/linux-install-60-dnf.md)]
-
-## Install .NET 5
-
-[!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
-
-## Install .NET Core 3.1
-
-[!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
 
 ## Supported distributions
 
 The following table is a list of currently supported .NET releases and the versions of Fedora they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Fedora reaches end-of-life](https://fedoraproject.org/wiki/End_of_life).
 
-- A ✔️ indicates that the version of Fedora or .NET is still supported.
-- A ❌ indicates that the version of Fedora or .NET isn't supported on that Fedora release.
-- When both a version of Fedora and a version of .NET have ✔️, that OS and .NET combination is supported.
-
-| .NET Version  | Fedora 35 ✔️ | 34 ✔️ | 33 ❌ | 32 ❌ | 31 ❌ | 30 ❌ | 29 ❌ | 28 ❌ | 27 ❌ |
-| ------------  | ---------:    | --:   | --:   | --:    | --:   | --:    | --:   | --:   | --:    |
-| .NET 6        | ✔️           | ✔️    | ❌    | ❌    | ❌    |❌      |❌    |❌     |❌     |
-| .NET 5        | ✔️           | ✔️    | ✔️    | ✔️    | ❌    |❌      |❌    |❌     |❌     |
-| .NET Core 3.1 | ✔️           | ✔️    | ✔️    | ✔️    | ✔️    |✔️      |✔️    |❌     |❌     |
+| Fedora | .NET      |
+|--------|-----------|
+| 37     | 7, 6      |
+| 36     | 7, 6      |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
+
+## Install .NET 7
+
+[!INCLUDE [linux-dnf-install-70](includes/linux-install-70-dnf.md)]
+
+## Install .NET 6
+
+[!INCLUDE [linux-dnf-install-60](includes/linux-install-60-dnf.md)]
 
 ## Install preview versions
 
@@ -60,7 +50,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 ## Install on older distributions
 
-Older versions of Fedora don't contain .NET Core in the default package repositories. You can install .NET with [snap](linux-snap.md), through the [_dotnet-install.sh_ script](linux-scripted-manual.md#scripted-install), or use Microsoft's repository to install .NET:
+Older versions of Fedora don't contain .NET Core in the default package repositories. You can install .NET with the [_dotnet-install.sh_ script](linux-scripted-manual.md#scripted-install), or use Microsoft's repository to install .NET:
 
 01. First, add the Microsoft signing key to your list of trusted keys.
 
@@ -72,6 +62,8 @@ Older versions of Fedora don't contain .NET Core in the default package reposito
 
     | Fedora Version | Package repository |
     | -------------- | ------- |
+    | 35             | `https://packages.microsoft.com/config/fedora/35/prod.repo` |
+    | 34             | `https://packages.microsoft.com/config/fedora/34/prod.repo` |
     | 33             | `https://packages.microsoft.com/config/fedora/33/prod.repo` |
     | 32             | `https://packages.microsoft.com/config/fedora/32/prod.repo` |
     | 31             | `https://packages.microsoft.com/config/fedora/31/prod.repo` |
@@ -84,7 +76,7 @@ Older versions of Fedora don't contain .NET Core in the default package reposito
     sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/31/prod.repo
     ```
 
-[!INCLUDE [linux-dnf-install-31](./includes/linux-install-31-dnf.md)]
+[!INCLUDE [linux-dnf-install-70](./includes/linux-install-70-dnf.md)]
 
 ## How to install other versions
 
@@ -98,7 +90,6 @@ This section provides information on common errors you may get while using the p
 
 For more information on installing .NET without a package manager, see one of the following articles:
 
-- [Install the .NET SDK or the .NET Runtime with Snap.](linux-snap.md)
 - [Install the .NET SDK or the .NET Runtime with a script.](linux-scripted-manual.md#scripted-install)
 - [Install the .NET SDK or the .NET Runtime manually.](linux-scripted-manual.md#manual-install)
 
@@ -106,7 +97,7 @@ For more information on installing .NET without a package manager, see one of th
 
 [!INCLUDE [package-manager-failed-to-fetch-rpm](includes/package-manager-failed-to-fetch-rpm.md)]
 
-### Errors related to missing `fxr`, `libhostfxr.so`, or `FrameworkList.xml`
+### Errors related to missing `fxr`, `libhostfxr.so`, `FrameworkList.xml`, or `/usr/share/dotnet`
 
 For more information about solving these problems, see [Troubleshoot `fxr`, `libhostfxr.so`, and `FrameworkList.xml` errors](linux-package-mixup.md).
 

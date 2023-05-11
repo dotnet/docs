@@ -7,7 +7,7 @@ f1_keywords:
 ---
 # Discards - C# Fundamentals
 
-Starting with C# 7.0, C# supports discards, which are placeholder variables that are intentionally unused in application code. Discards are equivalent to unassigned variables; they don't have a value. A discard communicates intent to the compiler and others that read your code: You intended to ignore the result of an expression. You may want to ignore the result of an expression, one or more members of a tuple expression, an `out` parameter to a method, or the target of a pattern matching expression.
+Discards are placeholder variables that are intentionally unused in application code. Discards are equivalent to unassigned variables; they don't have a value. A discard communicates intent to the compiler and others that read your code: You intended to ignore the result of an expression. You may want to ignore the result of an expression, one or more members of a tuple expression, an `out` parameter to a method, or the target of a pattern matching expression.
 
 Discards make the intent of your code clear. A discard indicates that our code never uses the variable. They enhance its readability and maintainability.
 
@@ -19,11 +19,11 @@ You indicate that a variable is a discard by assigning it the underscore (`_`) a
 
 Beginning with C# 9.0, you can use discards to specify unused input parameters of a lambda expression. For more information, see the [Input parameters of a lambda expression](../../language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) section of the [Lambda expressions](../../language-reference/operators/lambda-expressions.md) article.
 
-When `_` is a valid discard, attempting to retrieve its value or use it in an assignment operation generates compiler error CS0301, "The name '\_' doesn't exist in the current context". This error is because `_` isn't assigned a value, and may not even be assigned a storage location. If it were an actual variable, you couldn't discard more than one value, as the previous example did.
+When `_` is a valid discard, attempting to retrieve its value or use it in an assignment operation generates compiler error CS0103, "The name '\_' doesn't exist in the current context". This error is because `_` isn't assigned a value, and may not even be assigned a storage location. If it were an actual variable, you couldn't discard more than one value, as the previous example did.
 
 ## Tuple and object deconstruction
 
-Discards are useful in working with tuples when your application code uses some tuple elements but ignores others. For example, the following `QueryCityDataForYears` method returns a tuple with the name of a city, its area, a year, the city's population for that year, a second year, and the city's population for that second year. The example shows the change in population between those two years. Of the data available from the tuple, we're unconcerned with the city area, and we know the city name and the two dates at design-time. As a result, we're only interested in the two population values stored in the tuple, and can handle its remaining values as discards.  
+Discards are useful in working with tuples when your application code uses some tuple elements but ignores others. For example, the following `QueryCityDataForYears` method returns a tuple with the name of a city, its area, a year, the city's population for that year, a second year, and the city's population for that second year. The example shows the change in population between those two years. Of the data available from the tuple, we're unconcerned with the city area, and we know the city name and the two dates at design-time. As a result, we're only interested in the two population values stored in the tuple, and can handle its remaining values as discards.
 
 :::code language="csharp" source="snippets/discards/discard-tuple.cs" ID="DiscardTupleMember" :::
 
@@ -79,6 +79,9 @@ Without assigning the task to a discard, the following code generates a compiler
 
 ## See also
 
+- [Remove unnecessary expression value (style rule IDE0058)](../../../fundamentals/code-analysis/style-rules/ide0058.md)
+- [Remove unnecessary value assignment (style rule IDE0059)](../../../fundamentals/code-analysis/style-rules/ide0059.md)
+- [Remove unused parameter (style rule IDE0060)](../../../fundamentals/code-analysis/style-rules/ide0060.md)
 - [Deconstructing tuples and other types](deconstruct.md)
 - [`is` operator](../../language-reference/operators/is.md)
 - [`switch` expression](../../language-reference/operators/switch-expression.md)

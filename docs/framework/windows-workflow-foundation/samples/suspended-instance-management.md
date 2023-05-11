@@ -42,9 +42,9 @@ The [SuspendedInstanceManagement sample](https://github.com/dotnet/samples/tree/
 
     1. In Visual Studio, right-click the **SampleWorkflowApp** project and click **Set as Startup Project**.
 
-    2. Compile and run the SampleWorkflowApp by pressing **F5**. This will create the required queue.
+    2. Compile and run the SampleWorkflowApp by pressing <kbd>F5</kbd>. This will create the required queue.
 
-    3. Press **Enter** to stop the SampleWorkflowApp.
+    3. Press <kbd>Enter</kbd> to stop the SampleWorkflowApp.
 
     4. Open the Computer Management console by running Compmgmt.msc from a command prompt.
 
@@ -56,7 +56,7 @@ The [SuspendedInstanceManagement sample](https://github.com/dotnet/samples/tree/
 
 4. Now, run the sample.
 
-    1. In Visual Studio, run the SampleWorkflowApp project again without debugging by pressing **Ctrl+F5**. Two endpoint addresses will be printed in the console window: one for the application endpoint and then other from the <xref:System.ServiceModel.Activities.WorkflowControlEndpoint>. A workflow instance is then created, and tracking records for that instance will appear in the console window. The workflow instance will throw an exception causing the instance to be suspended and aborted.
+    1. In Visual Studio, run the SampleWorkflowApp project again without debugging by pressing <kbd>Ctrl</kbd>+<kbd>F5</kbd>. Two endpoint addresses will be printed in the console window: one for the application endpoint and then other from the <xref:System.ServiceModel.Activities.WorkflowControlEndpoint>. A workflow instance is then created, and tracking records for that instance will appear in the console window. The workflow instance will throw an exception causing the instance to be suspended and aborted.
 
     2. The command-line utility can then be used to take further action on any of these instances. The syntax for command line arguments is as follows::
 

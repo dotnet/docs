@@ -1,35 +1,35 @@
 ---
 title: "Best Practices for exceptions - .NET"
 description: Learn best practices for exceptions, such as using try/catch/finally, handling common conditions without exceptions, and using predefined .NET exception types.
-ms.date: "12/05/2018"
+ms.date: 02/15/2023
+ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
 helpviewer_keywords:
   - "exceptions, best practices"
-ms.assetid: f06da765-235b-427a-bfb6-47cd219af539
 ---
 
 # Best practices for exceptions
 
-A well-designed app handles exceptions and errors to prevent app crashes. This section describes best practices for handling and creating exceptions.
+A well-designed app handles exceptions and errors to prevent app crashes. This article describes best practices for handling and creating exceptions.
 
 ## Use try/catch/finally blocks to recover from errors or release resources
 
-Use `try`/`catch` blocks around code that can potentially generate an exception ***and*** your code can recover from that exception. In `catch` blocks, always order exceptions from the most derived to the least derived. All exceptions derive from <xref:System.Exception>. More derived exceptions are not handled by a catch clause that is preceded by a catch clause for a base exception class. When your code cannot recover from an exception, don't catch that exception. Enable methods further up the call stack to recover if possible.
+Use `try`/`catch` blocks around code that can potentially generate an exception, and your code can recover from that exception. In `catch` blocks, always order exceptions from the most derived to the least derived. All exceptions derive from the <xref:System.Exception> class. More derived exceptions aren't handled by a catch clause that's preceded by a catch clause for a base exception class. When your code can't recover from an exception, don't catch that exception. Enable methods further up the call stack to recover if possible.
 
-Clean up resources allocated with either `using` statements, or `finally` blocks. Prefer `using` statements to automatically clean up resources when exceptions are thrown. Use `finally` blocks to clean up resources that don't implement <xref:System.IDisposable>. Code in a `finally` clause is almost always executed even when exceptions are thrown.
+Clean up resources that are allocated with either `using` statements or `finally` blocks. Prefer `using` statements to automatically clean up resources when exceptions are thrown. Use `finally` blocks to clean up resources that don't implement <xref:System.IDisposable>. Code in a `finally` clause is almost always executed even when exceptions are thrown.
 
 ## Handle common conditions without throwing exceptions
 
-For conditions that are likely to occur but might trigger an exception, consider handling them in a way that will avoid the exception. For example, if you try to close a connection that is already closed, you'll get an `InvalidOperationException`. You can avoid that by using an `if` statement to check the connection state before trying to close it.
+For conditions that are likely to occur but might trigger an exception, consider handling them in a way that will avoid the exception. For example, if you try to close a connection that's already closed, you'll get an `InvalidOperationException`. You can avoid that by using an `if` statement to check the connection state before trying to close it.
 
 [!code-cpp[Conceptual.Exception.Handling#2](~/samples/snippets/cpp/VS_Snippets_CLR/conceptual.exception.handling/cpp/source.cpp#2)]
 [!code-csharp[Conceptual.Exception.Handling#2](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.exception.handling/cs/source.cs#2)]
 [!code-vb[Conceptual.Exception.Handling#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.exception.handling/vb/source.vb#2)]
 
-If you don't check connection state before closing, you can catch the `InvalidOperationException` exception.
+If you don't check the connection state before closing, you can catch the `InvalidOperationException` exception.
 
 [!code-cpp[Conceptual.Exception.Handling#3](~/samples/snippets/cpp/VS_Snippets_CLR/conceptual.exception.handling/cpp/source.cpp#3)]
 [!code-csharp[Conceptual.Exception.Handling#3](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.exception.handling/cs/source.cs#3)]
@@ -37,33 +37,32 @@ If you don't check connection state before closing, you can catch the `InvalidOp
 
 The method to choose depends on how often you expect the event to occur.
 
-- Use exception handling if the event doesn't occur very often, that is, if the event is truly exceptional and indicates an error (such as an unexpected end-of-file). When you use exception handling, less code is executed in normal conditions.
+- Use exception handling if the event doesn't occur often, that is, if the event is truly exceptional and indicates an error, such as an unexpected end-of-file. When you use exception handling, less code is executed in normal conditions.
 
 - Check for error conditions in code if the event happens routinely and could be considered part of normal execution. When you check for common error conditions, less code is executed because you avoid exceptions.
 
 ## Design classes so that exceptions can be avoided
 
-A class can provide methods or properties that enable you to avoid making a call that would trigger an exception. For example, a <xref:System.IO.FileStream> class provides methods that help determine whether the end of the file has been reached. These can be used to avoid the exception that is thrown if you read past the end of the file. The following example shows how to read to the end of a file without triggering an exception.
+A class can provide methods or properties that enable you to avoid making a call that would trigger an exception. For example, a <xref:System.IO.FileStream> class provides methods that help determine whether the end of the file has been reached. These methods can be used to avoid the exception that's thrown if you read past the end of the file. The following example shows how to read to the end of a file without triggering an exception:
 
 [!code-cpp[Conceptual.Exception.Handling#5](~/samples/snippets/cpp/VS_Snippets_CLR/conceptual.exception.handling/cpp/source.cpp#5)]
 [!code-csharp[Conceptual.Exception.Handling#5](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.exception.handling/cs/source.cs#5)]
 [!code-vb[Conceptual.Exception.Handling#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.exception.handling/vb/source.vb#5)]
 
-Another way to avoid exceptions is to return null (or default) for extremely common error cases instead of throwing an exception. An extremely common error case can be considered normal flow of control. By returning null (or default) in these cases, you minimize the performance impact to an app.
+Another way to avoid exceptions is to return null (or default) for most common error cases instead of throwing an exception. A common error case can be considered a normal flow of control. By returning null (or default) in these cases, you minimize the performance impact to an app.
 
-For value types, whether to use `Nullable<T>` or default as your error indicator is something to consider for your particular app. By using `Nullable<Guid>`, `default` becomes `null` instead of `Guid.Empty`. Some times, adding `Nullable<T>` can make it clearer when a value is present or absent. Other times, adding `Nullable<T>` can create extra cases to check that aren't necessary, and only serve to create potential sources of errors.
+For value types, whether to use `Nullable<T>` or default as your error indicator is something to consider for your app. By using `Nullable<Guid>`, `default` becomes `null` instead of `Guid.Empty`. Sometimes, adding `Nullable<T>` can make it clearer when a value is present or absent. Other times, adding `Nullable<T>` can create extra cases to check that aren't necessary and only serve to create potential sources of errors.
 
 ## Throw exceptions instead of returning an error code
 
-Exceptions ensure that failures do not go unnoticed because calling code didn't check a return code.
+Exceptions ensure that failures don't go unnoticed because the calling code didn't check a return code.
 
 ## Use the predefined .NET exception types
 
 Introduce a new exception class only when a predefined one doesn't apply. For example:
 
-- Throw an <xref:System.InvalidOperationException> exception if a property set or method call is not appropriate given the object's current state.
-
-- Throw an <xref:System.ArgumentException> exception or one of the predefined classes that derive from <xref:System.ArgumentException> if invalid parameters are passed.
+- If a property set or method call isn't appropriate given the object's current state, throw an <xref:System.InvalidOperationException> exception.
+- If invalid parameters are passed, throw an <xref:System.ArgumentException> exception or one of the predefined classes that derive from <xref:System.ArgumentException>.
 
 ## End exception class names with the word `Exception`
 
@@ -78,24 +77,19 @@ When a custom exception is necessary, name it appropriately and derive it from t
 Use at least the three common constructors when creating your own exception classes: the parameterless constructor, a constructor that takes a string message, and a constructor that takes a string message and an inner exception.
 
 - <xref:System.Exception.%23ctor>, which uses default values.
-
 - <xref:System.Exception.%23ctor%28System.String%29>, which accepts a string message.
-
 - <xref:System.Exception.%23ctor%28System.String%2CSystem.Exception%29>, which accepts a string message and an inner exception.
 
 For an example, see [How to: Create User-Defined Exceptions](how-to-create-user-defined-exceptions.md).
 
 ## Ensure that exception data is available when code executes remotely
 
-When you create user-defined exceptions, ensure that the metadata for the exceptions is available to code that is executing remotely.
+When you create user-defined exceptions, ensure that the metadata for the exceptions is available to code that's executing remotely.
 
-For example, on .NET implementations that support App Domains, exceptions may occur across App domains. Suppose App Domain A creates App Domain B, which executes code that throws an exception. For App Domain A to properly catch and handle the exception, it must be able to find the assembly that contains the exception thrown by App Domain B. If App Domain B throws an exception that is contained in an assembly under its application base, but not under App Domain A's application base, App Domain A will not be able to find the exception, and the common language runtime will throw a <xref:System.IO.FileNotFoundException> exception. To avoid this situation, you can deploy the assembly that contains the exception information in two ways:
+For example, on .NET implementations that support app domains, exceptions might occur across app domains. Suppose app domain A creates app domain B, which executes code that throws an exception. For app domain A to properly catch and handle the exception, it must be able to find the assembly that contains the exception thrown by app domain B. If app domain B throws an exception that is contained in an assembly under its application base, but not under app domain A's application base, app domain A won't be able to find the exception, and the common language runtime will throw a <xref:System.IO.FileNotFoundException> exception. To avoid this situation, you can deploy the assembly that contains the exception information in either of two ways:
 
 - Put the assembly into a common application base shared by both app domains.
-
-    \- or -
-
-- If the domains do not share a common application base, sign the assembly that contains the exception information with a strong name and deploy the assembly into the global assembly cache.
+- If the domains don't share a common application base, sign the assembly that contains the exception information with a strong name and deploy the assembly into the global assembly cache.
 
 ## Use grammatically correct error messages
 
@@ -103,12 +97,12 @@ Write clear sentences and include ending punctuation. Each sentence in the strin
 
 ## Include a localized string message in every exception
 
-The error message that the user sees is derived from the <xref:System.Exception.Message?displayProperty=nameWithType> property of the exception that was thrown, and not from the name of the exception class. Typically, you assign a value to the <xref:System.Exception.Message?displayProperty=nameWithType>  property by passing the message string to the `message` argument of an [Exception constructor](xref:System.Exception.%23ctor%2A).
+The error message the user sees is derived from the <xref:System.Exception.Message?displayProperty=nameWithType> property of the exception that was thrown, and not from the name of the exception class. Typically, you assign a value to the <xref:System.Exception.Message?displayProperty=nameWithType> property by passing the message string to the `message` argument of an [Exception constructor](xref:System.Exception.%23ctor%2A).
 
 For localized applications, you should provide a localized message string for every exception that your application can throw. You use resource files to provide localized error messages. For information on localizing applications and retrieving localized strings, see the following articles:
 
-- [How to: create user-defined exceptions with localized exception messages](how-to-create-localized-exception-messages.md)
-- [Resources in .NET Apps](../../core/extensions/resources.md)
+- [How to: Create user-defined exceptions with localized exception messages](how-to-create-localized-exception-messages.md)
+- [Resources in .NET apps](../../core/extensions/resources.md)
 - <xref:System.Resources.ResourceManager?displayProperty=nameWithType>
 
 ## In custom exceptions, provide additional properties as needed
@@ -121,7 +115,7 @@ The stack trace begins at the statement where the exception is thrown and ends a
 
 ## Use exception builder methods
 
-It is common for a class to throw the same exception from different places in its implementation. To avoid excessive code, use helper methods that create the exception and return it. For example:
+It's common for a class to throw the same exception from different places in its implementation. To avoid excessive code, use helper methods that create the exception and return it. For example:
 
 [!code-cpp[Conceptual.Exception.Handling#6](~/samples/snippets/cpp/VS_Snippets_CLR/conceptual.exception.handling/cpp/source.cpp#6)]
 [!code-csharp[Conceptual.Exception.Handling#6](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.exception.handling/cs/source.cs#6)]
@@ -150,7 +144,7 @@ Public Sub TransferFunds(from As Account, [to] As Account, amount As Decimal)
 End Sub
 ```
 
-The method above does not directly throw any exceptions, but must be written defensively so that if the deposit operation fails, the withdrawal is reversed.
+The preceding method doesn't directly throw any exceptions. However, you must write the method so that the withdrawal is reversed if the deposit operation fails.
 
 One way to handle this situation is to catch any exceptions thrown by the deposit transaction and roll back the withdrawal.
 
@@ -182,7 +176,7 @@ Private Shared Sub TransferFunds(from As Account, [to] As Account, amount As Dec
 End Sub
 ```
 
-This example illustrates the use of `throw` to re-throw the original exception, which can make it easier for callers to see the real cause of the problem without having to examine the <xref:System.Exception.InnerException> property. An alternative is to throw a new exception and include the original exception as the inner exception:
+This example illustrates the use of `throw` to rethrow the original exception, making it easier for callers to see the real cause of the problem without having to examine the <xref:System.Exception.InnerException> property. An alternative is to throw a new exception and include the original exception as the inner exception.
 
 ```csharp
 catch (Exception ex)
@@ -207,6 +201,52 @@ Catch ex As Exception
         .Amount = amount
     }
 End Try
+```
+
+## Capture exceptions to rethrow later
+
+To capture an exception and preserve its callstack to be able to rethrow it later, use the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo?displayProperty=fullName> class. This class provides the following methods and properties (among others):
+
+- Use <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Capture(System.Exception)?displayProperty=nameWithType> to capture an exception and call stack.
+- Use <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw?displayProperty=nameWithType> to restore the state that was saved when the exception was captured and rethrow the captured exception.
+- Use the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.SourceException?displayProperty=nameWithType> property to inspect the captured exception.
+
+The following example shows how the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo> class can be used, and what the output might look like.
+
+```csharp
+ExceptionDispatchInfo? edi = null;
+try
+{
+    var txt = File.ReadAllText(@"C:\temp\file.txt");
+}
+catch (FileNotFoundException e)
+{
+    edi = ExceptionDispatchInfo.Capture(e);
+}
+
+// ...
+
+Console.WriteLine("I was here.");
+
+if (edi is not null)
+    edi.Throw();
+```
+
+If the file in the example code doesn't exist, the following output is produced:
+
+```output
+I was here.
+Unhandled exception. System.IO.FileNotFoundException: Could not find file 'C:\temp\file.txt'.
+File name: 'C:\temp\file.txt'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.ReadAllText(String path, Encoding encoding)
+   at Example.ProcessFile.Main() in C:\repos\ConsoleApp1\Program.cs:line 12
+--- End of stack trace from previous location ---
+   at Example.ProcessFile.Main() in C:\repos\ConsoleApp1\Program.cs:line 24
 ```
 
 ## See also

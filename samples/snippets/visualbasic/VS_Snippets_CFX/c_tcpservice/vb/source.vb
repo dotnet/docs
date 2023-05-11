@@ -80,7 +80,7 @@ Class Test
         Dim addressTCP As String = String.Format( _
         "net.tcp://{0}:8036/Calculator", System.Net.Dns.GetHostEntry("").HostName)
 
-        ' Create an instance of the NetTcpBindng and set its security mode to Message.
+        ' Create an instance of the NetTcpBinding and set its security mode to Message.
         Dim b As New NetTcpBinding()
         b.Security.Mode = SecurityMode.Message
 

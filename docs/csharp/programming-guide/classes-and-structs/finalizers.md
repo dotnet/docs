@@ -46,7 +46,7 @@ protected override void Finalize()
 This design means that the `Finalize` method is called recursively for all instances in the inheritance chain, from the most-derived to the least-derived.
 
 > [!NOTE]
-> Empty finalizers should not be used. When a class contains a finalizer, an entry is created in the `Finalize` queue. This queue is processed the garbage collector. When the GC processes the queue, it calls each finalizer. Unnecessary finalizers, including empty finalizers, finalizers that only call the base class finalizer, or finalizers that only call conditionally emitted methods  cause a needless loss of performance.
+> Empty finalizers should not be used. When a class contains a finalizer, an entry is created in the `Finalize` queue. This queue is processed by the garbage collector. When the GC processes the queue, it calls each finalizer. Unnecessary finalizers, including empty finalizers, finalizers that only call the base class finalizer, or finalizers that only call conditionally emitted methods, cause a needless loss of performance.
 
 The programmer has no control over when the finalizer is called; the garbage collector decides when to call it. The garbage collector checks for objects that are no longer being used by the application. If it considers an object eligible for finalization, it calls the finalizer (if any) and reclaims the memory used to store the object. It's possible to force garbage collection by calling <xref:System.GC.Collect%2A>, but most of the time, this call should be avoided because it may create performance issues.
 
@@ -68,7 +68,7 @@ For more information about cleaning up resources, see the following articles:
 - [Cleaning Up Unmanaged Resources](../../../standard/garbage-collection/unmanaged.md)
 - [Implementing a Dispose Method](../../../standard/garbage-collection/implementing-dispose.md)
 - [Implementing a DisposeAsync Method](../../../standard/garbage-collection/implementing-disposeasync.md)
-- [using Statement](../../language-reference/keywords/using-statement.md)
+- [using statement](../../language-reference/statements/using.md)
 
 ## Example
 
@@ -81,7 +81,7 @@ The following example creates three classes that make a chain of inheritance. Th
   
 ## C# language specification  
 
-For more information, see the [Finalizers](~/_csharpstandard/standard/classes.md#1413-finalizers) section of the [C# Language Specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Finalizers](~/_csharpstandard/standard/classes.md#1513-finalizers) section of the [C# Language Specification](~/_csharpstandard/standard/README.md).
   
 ## See also
 

@@ -2,12 +2,12 @@
 title: "Local functions - C# Programming Guide"
 description: Local functions in C# are private methods that are nested in another member and can be called from their containing member.
 ms.date: 10/16/2020
-helpviewer_keywords: 
+helpviewer_keywords:
   - "local functions [C#]"
 ---
 # Local functions (C# Programming Guide)
 
-Starting with C# 7.0, C# supports *local functions*. Local functions are private methods of a type that are nested in another member. They can only be called from their containing member. Local functions can be declared in and called from:
+*Local functions* are methods of a type that are nested in another member. They can only be called from their containing member. Local functions can be declared in and called from:
 
 - Methods, especially iterator methods and async methods
 - Constructors
@@ -37,8 +37,8 @@ You can use the following modifiers with a local function:
 
 - [`async`](../../language-reference/keywords/async.md)
 - [`unsafe`](../../language-reference/keywords/unsafe.md)
-- [`static`](../../language-reference/keywords/static.md) (in C# 8.0 and later). A static local function can't capture local variables or instance state.
-- [`extern`](../../language-reference/keywords/extern.md) (in C# 9.0 and later). An external local function must be `static`.
+- [`static`](../../language-reference/keywords/static.md) A static local function can't capture local variables or instance state.
+- [`extern`](../../language-reference/keywords/extern.md) An external local function must be `static`.
 
 All local variables that are defined in the containing member, including its method parameters, are accessible in a non-static local function.
 
@@ -56,7 +56,7 @@ The preceding example uses a [special attribute](../../language-reference/attrib
 
 ## Local functions and exceptions
 
-One of the useful features of local functions is that they can allow exceptions to surface immediately. For method iterators, exceptions are surfaced only when the returned sequence is enumerated, and not when the iterator is retrieved. For async methods, any exceptions thrown in an async method are observed when the returned task is awaited.
+One of the useful features of local functions is that they can allow exceptions to surface immediately. For iterator methods, exceptions are surfaced only when the returned sequence is enumerated, and not when the iterator is retrieved. For async methods, any exceptions thrown in an async method are observed when the returned task is awaited.
 
 The following example defines an `OddSequence` method that enumerates odd numbers in a specified range. Because it passes a number greater than 100 to the `OddSequence` enumerator method, the method throws an <xref:System.ArgumentOutOfRangeException>. As the output from the example shows, the exception surfaces only when you iterate the numbers, and not when you retrieve the enumerator.
 
@@ -68,7 +68,7 @@ If you put iterator logic into a local function, argument validation exceptions 
 
 ## Local functions vs. lambda expressions
 
-At first glance, local functions and [lambda expressions](../../language-reference/operators/lambda-expressions.md) are very similar. In many cases, the choice between using lambda expressions and local functions is a matter of style and personal preference. However, there are real differences in where you can use one or the other that you should be aware of.
+At first glance, local functions and [lambda expressions](../../language-reference/operators/lambda-expressions.md) are very similar. In many cases, the choice between using lambda expressions and local functions is a [matter of style and personal preference](../../../fundamentals/code-analysis/style-rules/ide0039.md). However, there are real differences in where you can use one or the other that you should be aware of.
 
 Let's examine the differences between the local function and lambda expression implementations of the factorial algorithm. Here's the version using a local function:
 
@@ -133,7 +133,10 @@ The closure for this lambda expression contains the `address`, `index` and `name
 
 The instantiation necessary for lambda expressions means extra memory allocations, which may be a performance factor in time-critical code paths. Local functions do not incur this overhead. In the example above, the local functions version has two fewer allocations than the lambda expression version.
 
-If you know that your local function won't be converted to a delegate and none of the variables captured by it are captured by other lambdas or local functions that are converted to delegates, you can guarantee that your local function avoids being allocated on the heap by declaring it as a `static` local function. Note that this feature is available in C# 8.0 and newer.
+If you know that your local function won't be converted to a delegate and none of the variables captured by it are captured by other lambdas or local functions that are converted to delegates, you can guarantee that your local function avoids being allocated on the heap by declaring it as a `static` local function.
+
+> [!TIP]
+> Enable .NET code style rule [IDE0062](../../../fundamentals/code-analysis/style-rules/ide0062.md) to ensure that local functions are always marked `static`.
 
 > [!NOTE]
 > The local function equivalent of this method also uses a class for the closure. Whether the closure for a local function is implemented as a `class` or a `struct` is an implementation detail. A local function may use a `struct` whereas a lambda will always use a `class`.
@@ -146,10 +149,15 @@ One final advantage not demonstrated in this sample is that local functions can 
 
 :::code language="csharp" source="snippets/local-functions/Program.cs" id="YieldReturn" :::
 
-The `yield return` statement is not allowed in lambda expressions, see [compiler error CS1621](../../misc/cs1621.md).
+The `yield return` statement is not allowed in lambda expressions. For more information, see [compiler error CS1621](../../language-reference/compiler-messages/lambda-expression-errors.md#syntax-limitations-in-lambda-expressions).
 
 While local functions may seem redundant to lambda expressions, they actually serve different purposes and have different uses. Local functions are more efficient for the case when you want to write a function that is called only from the context of another method.
 
+## C# language specification
+
+For more information, see the [Local function declarations](~/_csharpstandard/standard/statements.md#1364-local-function-declarations) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+
 ## See also
 
+- [Use local function instead of lambda (style rule IDE0039)](../../../fundamentals/code-analysis/style-rules/ide0039.md)
 - [Methods](methods.md)

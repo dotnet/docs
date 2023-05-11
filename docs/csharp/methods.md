@@ -136,7 +136,7 @@ A method definition can specify that its parameters are required or that they're
 The parameter's default value must be assigned by one of the following kinds of expressions:
 
 - A constant, such as a literal string or number.
-- An expression of the form `default(SomeType)`, where `SomeType` can be either a value type or a reference type. If it's a reference type, it's effectively the same as specifying `null`. Beginning with C# 7.1, you can use the `default` literal, as the compiler can infer the type from the parameter's declaration.
+- An expression of the form `default(SomeType)`, where `SomeType` can be either a value type or a reference type. If it's a reference type, it's effectively the same as specifying `null`. You can use the `default` literal, as the compiler can infer the type from the parameter's declaration.
 - An expression of the form `new ValType()`, where `ValType` is a value type. This invokes the value type's implicit parameterless constructor, which isn't an actual member of the type.
 
   > [!NOTE]
@@ -182,7 +182,7 @@ To use a value returned from a method, the calling method can use the method cal
 
 Using a local variable, in this case, `result`, to store a value is optional. It may help the readability of the code, or it may be necessary if you need to store the original value of the argument for the entire scope of the method.
 
-Sometimes, you want your method to return more than a single value. Starting with C# 7.0, you can do this easily by using *tuple types* and *tuple literals*. The tuple type defines the data types of the tuple's elements. Tuple literals provide the actual values of the returned tuple. In the following example, `(string, string, string, int)` defines the tuple type that is returned by the `GetPersonalInfo` method. The expression `(per.FirstName, per.MiddleName, per.LastName, per.Age)` is the tuple literal; the method returns the first, middle, and last name, along with the age, of a `PersonInfo` object.
+Sometimes, you want your method to return more than a single value. You can do this easily by using *tuple types* and *tuple literals*. The tuple type defines the data types of the tuple's elements. Tuple literals provide the actual values of the returned tuple. In the following example, `(string, string, string, int)` defines the tuple type that is returned by the `GetPersonalInfo` method. The expression `(per.FirstName, per.MiddleName, per.LastName, per.Age)` is the tuple literal; the method returns the first, middle, and last name, along with the age, of a `PersonInfo` object.
 
 ```csharp
 public (string, string, string, int) GetPersonalInfo(string id)
@@ -195,7 +195,7 @@ public (string, string, string, int) GetPersonalInfo(string id)
 The caller can then consume the returned tuple with code like the following:
 
 ```csharp
-var person = GetPersonalInfo("111111111")
+var person = GetPersonalInfo("111111111");
 Console.WriteLine($"{person.Item1} {person.Item3}: age = {person.Item4}");
 ```
 
@@ -209,7 +209,7 @@ public (string FName, string MName, string LName, int Age) GetPersonalInfo(strin
 }
 ```
 
-The previous call to the `GetPersonInfo` method can then be modified as follows:
+The previous call to the `GetPersonalInfo` method can then be modified as follows:
 
 ```csharp
 var person = GetPersonalInfo("111111111");
@@ -244,7 +244,7 @@ If you mark a method with the [async](language-reference/keywords/async.md) modi
 > [!NOTE]
 > An async method returns to the caller when either it encounters the first awaited object that's not yet complete or it gets to the end of the async method, whichever occurs first.
 
-An async method typically has a return type of <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.Task>, <xref:System.Collections.Generic.IAsyncEnumerable%601>or `void`. The `void` return type is used primarily to define event handlers, where a `void` return type is required. An async method that returns `void` can't be awaited, and the caller of a void-returning method can't catch exceptions that the method throws. Starting with C# 7.0, an async method can have [any task-like return type](language-reference/keywords/async.md#return-types).
+An async method typically has a return type of <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.Task>, <xref:System.Collections.Generic.IAsyncEnumerable%601>or `void`. The `void` return type is used primarily to define event handlers, where a `void` return type is required. An async method that returns `void` can't be awaited, and the caller of a void-returning method can't catch exceptions that the method throws. An async method can have [any task-like return type](language-reference/keywords/async.md#return-types).
 
 In the following example, `DelayAsync` is an async method that has a return statement that returns an integer. Because it's an async method, its method declaration must have a return type of `Task<int>`. Because the return type is `Task<int>`, the evaluation of the `await` expression in `DoSomethingAsync` produces an integer, as the following `int result = await delayTask` statement demonstrates.
 
@@ -252,7 +252,7 @@ In the following example, `DelayAsync` is an async method that has a return stat
 
 An async method can't declare any [in](language-reference/keywords/in-parameter-modifier.md), [ref](language-reference/keywords/ref.md), or [out](language-reference/keywords/out-parameter-modifier.md) parameters, but it can call methods that have such parameters.
 
- For more information about async methods, see [Asynchronous programming with async and await](async.md) and [Async return types](programming-guide/concepts/async/async-return-types.md).
+ For more information about async methods, see [Asynchronous programming with async and await](asynchronous-programming/index.md) and [Async return types](asynchronous-programming/async-return-types.md).
 
 <a name="expr"></a>
 
@@ -275,9 +275,9 @@ If the method returns `void` or is an async method, the body of the method must 
 
 ## Iterators
 
-An iterator performs a custom iteration over a collection, such as a list or an array. An iterator uses the [yield return](language-reference/keywords/yield.md) statement to return each element one at a time. When a `yield return` statement is reached, the current location is remembered so that the caller can request the next element in the sequence.
+An iterator performs a custom iteration over a collection, such as a list or an array. An iterator uses the [yield return](language-reference/statements/yield.md) statement to return each element one at a time. When a `yield return` statement is reached, the current location is remembered so that the caller can request the next element in the sequence.
 
-The return type of an iterator can be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator%601>.
+The return type of an iterator can be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.Generic.IAsyncEnumerable%601>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator%601>.
 
 For more information, see [Iterators](programming-guide/concepts/iterators.md).
 
@@ -291,4 +291,4 @@ For more information, see [Iterators](programming-guide/concepts/iterators.md).
 - [out](language-reference/keywords/out-parameter-modifier.md)
 - [ref](language-reference/keywords/ref.md)
 - [in](language-reference/keywords/in-parameter-modifier.md)
-- [Passing Parameters](programming-guide/classes-and-structs/passing-parameters.md)
+- [Passing Parameters](language-reference/keywords/method-parameters.md)

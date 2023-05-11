@@ -29,7 +29,7 @@ This option causes the compiler to apply a public key but doesn't actually sign 
 <PublicSign>true</PublicSign>
 ```
 
-The **PublicSign** option requires the use of the [**KeyFile**](#keyfile) or [**KeyContainer**](#keycontainer) option. The **keyFile** and **KeyContainer** options specify the public key. The **PublicSign** and **DelaySign** options are mutually exclusive. Sometimes called "fake sign" or "OSS sign", public signing includes the public key in an output assembly and sets the "signed" flag. Public signing doesn't actually sign the assembly with a private key. Developers use public sign for open-source projects.  People build assemblies that are compatible with the released "fully signed" assemblies when they don't have access to the private key used to sign the assemblies. Since few consumers actually need to check if the assembly is fully signed, these publicly built assemblies are useable in almost every scenario where the fully signed one would be used.
+The **PublicSign** option requires the use of the [**KeyFile**](#keyfile) or [**KeyContainer**](#keycontainer) option. The **KeyFile** and **KeyContainer** options specify the public key. The **PublicSign** and **DelaySign** options are mutually exclusive. Sometimes called "fake sign" or "OSS sign", public signing includes the public key in an output assembly and sets the "signed" flag. Public signing doesn't actually sign the assembly with a private key. Developers use public sign for open-source projects.  People build assemblies that are compatible with the released "fully signed" assemblies when they don't have access to the private key used to sign the assemblies. Since few consumers actually need to check if the assembly is fully signed, these publicly built assemblies are useable in almost every scenario where the fully signed one would be used.
 
 ## DelaySign
 
@@ -71,6 +71,6 @@ The **HighEntropyVA** compiler option tells the Windows kernel whether a particu
 <HighEntropyVA>true</HighEntropyVA>
 ```
 
-This option specifies that a 64-bit executable or an executable that is marked by the [**PlatformTarget**](output.md#platformtarget) compiler option supports a high entropy virtual address space. The option is disabled by default. Use **HighEntropyVA** to enable it.
+This option specifies that a 64-bit executable or an executable that is marked by the [**PlatformTarget**](output.md#platformtarget) compiler option supports a high entropy virtual address space. The option is enabled by default for all .NET Standard and .NET Core versions, and .NET Framework versions starting with .NET Framework 4.5.
 
 The **HighEntropyVA** option enables compatible versions of the Windows kernel to use higher degrees of entropy when randomizing the address space layout of a process as part of ASLR. Using higher degrees of entropy means a larger number of addresses can be allocated to memory regions such as stacks and heaps. As a result, it's more difficult to guess the location of a particular memory region. The **HighEntropyVA** compiler option requires the target executable and any modules that it depends on can handle pointer values larger than 4 gigabytes (GB) when they're running as a 64-bit process.

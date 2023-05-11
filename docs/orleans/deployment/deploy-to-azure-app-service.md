@@ -1,8 +1,10 @@
 ---
 title: Deploy Orleans to Azure App Service
 description: Learn how to deploy an Orleans shopping cart app to Azure App Service.
-ms.date: 05/02/2022
+ms.date: 04/05/2023
 ms.topic: tutorial
+ms.custom: devx-track-bicep
+no-loc: 
 ---
 
 # Deploy Orleans to Azure App Service
@@ -29,14 +31,14 @@ In this tutorial, you learn how to:
 
 - A [GitHub account](https://github.com/join)
 - [Read an introduction to Orleans](../overview.md)
-- The [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet)
+- The [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet)
 - The [Azure CLI](/cli/azure/install-azure-cli)
 - A .NET integrated development environment (IDE)
-  - Feel free to use [Visual Studio 2022](https://visualstudio.microsoft.com) or [Visual Studio Code](https://code.visualstudio.com)
+  - Feel free to use [Visual Studio](https://visualstudio.microsoft.com) or [Visual Studio Code](https://code.visualstudio.com)
 
 ## Run the app locally
 
-To run the app locally, fork the [Azure Samples: Orleans Cluster on Azure App Service](https://github.com/Azure-Samples/Orleans-Cluster-on-Azure-App-Service) repository and clone it to your local machine. Once cloned, open the solution in an IDE of your choice. If you're using Visual Studio, right-click the **Orleans.ShoppingCart.Silo** project and select **Set As Startup Project**, then run the app. Otherwise you can run the app using the following .NET CLI command:
+To run the app locally, fork the [Azure Samples: Orleans Cluster on Azure App Service](https://github.com/Azure-Samples/Orleans-Cluster-on-Azure-App-Service) repository and clone it to your local machine. Once cloned, open the solution in an IDE of your choice. If you're using Visual Studio, right-click the **Orleans.ShoppingCart.Silo** project and select **Set As Startup Project**, then run the app. Otherwise, you can run the app using the following .NET CLI command:
 
 ```dotnetcli
 dotnet run --project Silo\Orleans.ShoppingCart.Silo.csproj
@@ -84,7 +86,7 @@ When you haven't added anything to your cart, the page renders a message that in
 
 :::image type="content" source="media/empty-shopping-cart-page.png" lightbox="media/empty-shopping-cart-page.png" alt-text="Orleans: Shopping Cart sample app, empty cart page.":::
 
-**Items added to cart while on the shop inventory page**
+**Items added to the cart while on the shop inventory page**
 
 When items are added to your cart while on the shop inventory page, the app displays a message that indicates the item was added to the cart.
 
@@ -102,7 +104,7 @@ When a user clicks the **Create new product** button, the app displays a dialog 
 
 :::image type="content" source="media/product-management-page-new.png" lightbox="media/product-management-page-new.png" alt-text="Orleans: Shopping Cart sample app, product management page - create new product dialog.":::
 
-**Items in cart page**
+**Items in the cart page**
 
 When items are in your cart, you can view them and change their quantity, and even remove them from the cart. The user is shown a summary of the items in the cart and the pretax total cost.
 
@@ -118,55 +120,15 @@ A typical Orleans application consists of a cluster of server processes (silos) 
 > [!NOTE]
 > For a reliable production deployment, you'd want more than one silo in a cluster for fault tolerance and scale.
 
-Before deploying the app to Azure App Service, you need to create an Azure Resource Group (or you could choose to use an existing one). To create a new Azure Resource Group, use one of the following articles:
+[!INCLUDE [create-azure-resources](includes/deployment/create-azure-resources.md)]
 
-- [Azure Portal](/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups)
-- [Azure CLI](/azure/azure-resource-manager/management/manage-resource-groups-cli#create-resource-groups)
-- [Azure PowerShell](/azure/azure-resource-manager/management/manage-resource-groups-powershell#create-resource-groups)
+[!INCLUDE [create-service-principal](includes/deployment/create-service-principal.md)]
 
-Make note of the resource group name you choose, you'll need it later to deploy the app.
-
-### Create a service principal
-
-To automate the deployment of the app, you'll need to create a service principal. This is a Microsoft account that has permissions to manage Azure resources on your behalf.
-
-```azurecli
-az ad sp create-for-rbac --sdk-auth --role Contributor \
-  --name "<display-name>"  --scopes /subscriptions/<your-subscription-id>
-```
-
-The JSON credentials created will look similar to the following, but with actual values for your client, subscription, and tenant:
-
-```json
-{
-  "clientId": "<your client id>",
-  "clientSecret": "<your client secret>",
-  "subscriptionId": "<your subscription id>",
-  "tenantId": "<your tenant id>",
-  "activeDirectoryEndpointUrl": "https://login.microsoftonline.com/",
-  "resourceManagerEndpointUrl": "https://brazilus.management.azure.com",
-  "activeDirectoryGraphResourceId": "https://graph.windows.net/",
-  "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
-  "galleryEndpointUrl": "https://gallery.azure.com",
-  "managementEndpointUrl": "https://management.core.windows.net"
-}
-```
-
-Copy the output of the command into your clipboard, and continue to the next step.
-
-### Create a GitHub secret
-
-GitHub provides a mechanism for creating encrypted secrets. The secrets that you create are available to use in GitHub Actions workflows. You're going to see how a GitHub Actions can be used to automate the deployment of the app, in conjunction with Azure Bicep. Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources. For more information, see [What is Bicep](/azure/azure-resource-manager/bicep/overview?tabs=bicep). Using the output from the [Create a service principal](#create-a-service-principal) step, you'll need to create a GitHub secret named `AZURE_CREDENTIALS` with the JSON-formatted credentials.
-
-Within the GitHub repository, select **Settings** > **Secrets** > **Create a new secret**. Enter the name `AZURE_CREDENTIALS` and paste the JSON credentials from the previous step into the **Value** field.
-
-:::image type="content" source="media/github-secret.png" alt-text="GitHub Repository: Settings > Secrets" lightbox="media/github-secret.png":::
-
-For more information, see [GitHub: Encrypted Secrets](https://docs.github.com/actions/security-guides/encrypted-secrets).
+[!INCLUDE [create-github-secret](includes/deployment/create-github-secret.md)]
 
 ### Prepare for Azure deployment
 
-The app will need to be packaged for deployment. In the `Orleans.ShoppingCart.Silos` project, we define a `Target` element that runs after the `Publish` step. This will zip the publish directory into a _silo.zip_ file:
+The app will need to be packaged for deployment. In the `Orleans.ShoppingCart.Silos` project we define a `Target` element that runs after the `Publish` step. This will zip the publish directory into a _silo.zip_ file:
 
 ```xml
 <Target Name="ZipPublishOutput" AfterTargets="Publish">
@@ -194,12 +156,12 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
-    - name: Setup .NET 6.0
-      uses: actions/setup-dotnet@v1
+    - name: Setup .NET 7.0
+      uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 6.0.x
+        dotnet-version: 7.0.x
 
     - name: .NET publish shopping cart app
       run: dotnet publish ./Silo/Orleans.ShoppingCart.Silo.csproj --configuration Release
@@ -224,6 +186,14 @@ jobs:
           --resource-group ${{ env.AZURE_RESOURCE_GROUP_NAME  }} \
           --clean true --restart true \
           --type zip --src-path silo.zip --debug
+
+    - name: Staging deploy
+      run: |
+        az webapp deploy --name ${{ env.UNIQUE_APP_NAME }} \
+          --slot ${{ env.UNIQUE_APP_NAME }}stg \
+          --resource-group ${{ env.AZURE_RESOURCE_GROUP_NAME  }} \
+          --clean true --restart true \
+          --type zip --src-path silo.zip --debug
 ```
 
 The preceding GitHub workflow will:
@@ -232,6 +202,7 @@ The preceding GitHub workflow will:
 - Login to Azure using the credentials from the [Create a service principal](#create-a-service-principal) step.
 - Evaluate the _main.bicep_ file and start a deployment group using [az deployment group create](/cli/azure/deployment/group#az-deployment-group-create).
 - Deploy the _silo.zip_ file to Azure App Service using [az webapp deploy](/cli/azure/webapp#az-webapp-deploy).
+  - An additional deployment to staging is also configured.
 
 The workflow is triggered by a push to the _main_ branch. For more information, see [GitHub Actions and .NET](../../devops/github-actions-overview.md).
 
@@ -292,7 +263,8 @@ resource vnet 'Microsoft.Network/virtualNetworks@2021-05-01' = {
   properties: {
     addressSpace: {
       addressPrefixes: [
-        '172.17.0.0/16'
+        '172.17.0.0/16',
+        '192.168.0.0/16'
       ]
     }
     subnets: [
@@ -300,6 +272,20 @@ resource vnet 'Microsoft.Network/virtualNetworks@2021-05-01' = {
         name: 'default'
         properties: {
           addressPrefix: '172.17.0.0/24'
+          delegations: [
+            {
+              name: 'delegation'
+              properties: {
+                serviceName: 'Microsoft.Web/serverFarms'
+              }
+            }
+          ]
+        }
+      }
+      {
+        name: 'staging'
+        properties: {
+          addressPrefix: '192.168.0.0/24'
           delegations: [
             {
               name: 'delegation'
@@ -320,6 +306,7 @@ module siloModule 'app-service.bicep' = {
     appName: appName
     location: location
     vnetSubnetId: vnet.properties.subnets[0].id
+    stagingSubnetId: vnet.properties.subnets[1].id
     appInsightsConnectionString: logsModule.outputs.appInsightsConnectionString
     appInsightsInstrumentationKey: logsModule.outputs.appInsightsInstrumentationKey
     storageConnectionString: storageModule.outputs.connectionString
@@ -362,7 +349,7 @@ output connectionString string = '${protocol};${accountBits};${endpointSuffix}'
 
 Bicep files accept parameters, which are declared using the `param` keyword. Likewise, they can also declare outputs using the `output` keyword. The storage `resource` relies on the `Microsoft.Storage/storageAccounts@2021-08-01` type and version. It will be provisioned in the resource group's location, as a `StorageV2` and `Standard_LRS` SKU. The storage bicep defines its connection string as an `output`. This `connectionString` is later used by the silo bicep to connect to the storage account.
 
-Next, the _logs-and-analytics.bicep_ file defines the Azure Log Analytics and Application Insights resources:
+Next, the _logs-and-insights.bicep_ file defines the Azure Log Analytics and Application Insights resources:
 
 ```bicep
 param operationalInsightsName string
@@ -405,6 +392,7 @@ Finally, the _app-service.bicep_ file defines the Azure App Service resource:
 param appName string
 param location string
 param vnetSubnetId string
+param stagingSubnetId string
 param appInsightsInstrumentationKey string
 param appInsightsConnectionString string
 param storageConnectionString string
@@ -444,29 +432,85 @@ resource appService 'Microsoft.Web/sites@2021-03-01' = {
           name: 'ORLEANS_AZURE_STORAGE_CONNECTION_STRING'
           value: storageConnectionString
         }
+        {
+          name: 'ORLEANS_CLUSTER_ID'
+          value: 'Default'
+        }
       ]
       alwaysOn: true
     }
   }
 }
 
+resource stagingSlot 'Microsoft.Web/sites/slots@2022-03-01' = {
+  name: '${appName}stg'
+  location: location
+  properties: {
+    serverFarmId: appServicePlan.id
+    virtualNetworkSubnetId: stagingSubnetId
+    siteConfig: {
+      http20Enabled: true
+      vnetPrivatePortsCount: 2
+      webSocketsEnabled: true
+      netFrameworkVersion: 'v7.0'
+      appSettings: [
+        {
+          name: 'APPINSIGHTS_INSTRUMENTATIONKEY'
+          value: appInsightsInstrumentationKey
+        }
+        {
+          name: 'APPLICATIONINSIGHTS_CONNECTION_STRING'
+          value: appInsightsConnectionString
+        }
+        {
+          name: 'ORLEANS_AZURE_STORAGE_CONNECTION_STRING'
+          value: storageConnectionString
+        }
+        {
+          name: 'ORLEANS_CLUSTER_ID'
+          value: 'Staging'
+        }
+      ]
+      alwaysOn: true
+    }
+  }
+}
+
+resource slotConfig 'Microsoft.Web/sites/config@2021-03-01' = {
+  name: 'slotConfigNames'
+  parent: appService
+  properties: {
+    appSettingNames: [
+      'ORLEANS_CLUSTER_ID'
+    ]
+  }
+}
+
 resource appServiceConfig 'Microsoft.Web/sites/config@2021-03-01' = {
-  name: '${appService.name}/metadata'
+  parent: appService
+  name: 'metadata'
   properties: {
     CURRENT_STACK: 'dotnet'
   }
 }
 ```
 
-This bicep file configures the Azure App Service as a .NET 6 application. Both the `appServicePlan` resource and the `appService` resource are provisioned in the resource group's location. The `appService` resource is configured to use the `S1` SKU, with a capacity of `1`. Additionally the resource is configured to use the `vnetSubnetId` subnet, and to use HTTPS. It also configures the `appInsightsInstrumentationKey` instrumentation key, the `appInsightsConnectionString` connection string, and the `storageConnectionString` connection string. These are used by the shopping cart app.
+This bicep file configures the Azure App Service as a .NET 7 application. Both the `appServicePlan` resource and the `appService` resource are provisioned in the resource group's location. The `appService` resource is configured to use the `S1` SKU, with a capacity of `1`. Additionally, the resource is configured to use the `vnetSubnetId` subnet and to use HTTPS. It also configures the `appInsightsInstrumentationKey` instrumentation key, the `appInsightsConnectionString` connection string, and the `storageConnectionString` connection string. These are used by the shopping cart app.
 
 The aforementioned Visual Studio Code extension for Bicep includes a visualizer. All of these bicep files are visualized as follows:
 
 :::image type="content" source="media/shopping-cart-flexing.png" alt-text="Orleans: Shopping cart sample app bicep provisioning visualizer rendering." lightbox="media/shopping-cart-flexing.png":::
 
+### Staging environments
+
+The deployment infrastructure can deploy to staging environments, which are short-lived, test-centric, and immutable throwaway environments. These environments are very helpful for testing deployments before promoting them to production.
+
+> [!NOTE]
+> If your App Service is running on Windows, each App Service must be on its own separate App Service Plan. Alternatively, to avoid such configuration, you could instead use App Service on Linux, and this problem would be resolved.
+
 ## Summary
 
-As you update the source code and `push` changes to the `main` branch of the repository, the _deploy.yml_ workflow will run. It will provision the resources defined in the bicep files and deploy the application. The application can be expanded upon to include new features, such as authentication, or to support multiple instances of the application. The primary objective of this workflow is to demonstrate the ability to provision and deploy resources in a single step.
+As you update the source code and `push` changes to the `main` branch of the repository, the _deploy.yml_ workflow will run. It will provide the resources defined in the bicep files and deploy the application. The application can be expanded upon to include new features, such as authentication, or to support multiple instances of the application. The primary objective of this workflow is to demonstrate the ability to provision and deploy resources in a single step.
 
 In addition to the visualizer from the bicep extension, the Azure portal resource group page would look similar to the following example after provisioning and deploying the application:
 

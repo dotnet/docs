@@ -80,7 +80,7 @@ sta follows a in the sort order.
 sta equals a in the sort order.  
 ```  
   
- However, if you add the following configuration file to the example's directory and then run the example on the .NET Framework 4, the output is identical to that produced by the example when it is run on the .NET Framework 3.5.  
+ However, if you add the following configuration file to the example's directory and then run the example on the .NET Framework 4, the output is identical to that produced by the example when it is run on .NET Framework 3.5.  
   
 ```xml  
 <?xml version ="1.0"?>  

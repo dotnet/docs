@@ -360,9 +360,6 @@ The reference app uses [MediatR](https://github.com/jbogard/MediatR) to propagat
 - **Jimmy Bogard. Strengthening your domain: Domain Events** \
   <https://lostechies.com/jimmybogard/2010/04/08/strengthening-your-domain-domain-events/>
 
-- **Tony Truong. Domain Events Pattern Example** \
-  <https://www.tonytruong.net/domain-events-pattern-example/>
-
 - **Udi Dahan. How to create fully encapsulated Domain Models** \
   <https://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/>
 
@@ -371,9 +368,6 @@ The reference app uses [MediatR](https://github.com/jbogard/MediatR) to propagat
 
 - **Udi Dahan. Domain Events – Salvation** \
   <https://udidahan.com/2009/06/14/domain-events-salvation/>
-
-- **Jan Kronquist. Don't publish Domain Events, return them!** \
-  <https://blog.jayway.com/2013/06/20/dont-publish-domain-events-return-them/>
 
 - **Cesar de la Torre. Domain Events vs. Integration Events in DDD and microservices architectures** \
   <https://devblogs.microsoft.com/cesardelatorre/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/>

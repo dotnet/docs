@@ -41,7 +41,7 @@ Dapper is an open-source project (original created by Sam Saffron), and is part 
 
 You also need to add a `using` directive so your code has access to the Dapper extension methods.
 
-When you use Dapper in your code, you directly use the <xref:System.Data.SqlClient.SqlConnection> class available in the <xref:System.Data.SqlClient> namespace. Through the QueryAsync method and other extension methods that extend the <xref:System.Data.SqlClient.SqlConnection> class, you can run queries in a straightforward and performant way.
+When you use Dapper in your code, you directly use the <xref:Microsoft.Data.SqlClient.SqlConnection> class available in the <xref:Microsoft.Data.SqlClient> namespace. Through the QueryAsync method and other extension methods that extend the <xref:Microsoft.Data.SqlClient.SqlConnection> class, you can run queries in a straightforward and performant way.
 
 ## Dynamic versus static ViewModels
 
@@ -167,6 +167,8 @@ public class OrderSummary
     public string status { get; set; }
     public double total { get; set; }
 }
+// or using C# 8 record types:
+public record OrderSummary(int ordernumber, DateTime date, string status, double total);
 ```
 
 This is another reason why explicit returned types are better than dynamic types, in the long term. When using the `ProducesResponseType` attribute, you can also specify what is the expected outcome regarding possible HTTP errors/codes, like 200, 400, etc.
@@ -185,10 +187,12 @@ The image shows some example values based on the ViewModel types and the possibl
  <https://github.com/StackExchange/dapper-dot-net>
 
 - **Julie Lerman. Data Points - Dapper, Entity Framework and Hybrid Apps (MSDN magazine article)**  
-  [https://docs.microsoft.com/archive/msdn-magazine/2016/may/data-points-dapper-entity-framework-and-hybrid-apps](/archive/msdn-magazine/2016/may/data-points-dapper-entity-framework-and-hybrid-apps)
+  [https://learn.microsoft.com/archive/msdn-magazine/2016/may/data-points-dapper-entity-framework-and-hybrid-apps](/archive/msdn-magazine/2016/may/data-points-dapper-entity-framework-and-hybrid-apps)
 
 - **ASP.NET Core Web API Help Pages using Swagger**  
-  [https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio](/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio)
+  [https://learn.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio](/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio)
+
+- **Create record types** [https://learn.microsoft.com/dotnet/csharp/whats-new/tutorials/records](../../../csharp/whats-new/tutorials/records.md)
 
 >[!div class="step-by-step"]
 >[Previous](eshoponcontainers-cqrs-ddd-microservice.md)

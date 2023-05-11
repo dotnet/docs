@@ -2,6 +2,7 @@
 title: What's new in C# 10 - C# Guide
 description: Get an overview of the new features available in C# 10.
 ms.date: 11/08/2021
+ms.custom: UpdateFrequency1
 ---
 # What's new in C# 10
 
@@ -26,6 +27,8 @@ C# 10 adds the following features and enhancements to the C# language:
 C# 10 is supported on **.NET 6**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
 You can download the latest .NET 6 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), which includes the .NET 6 SDK.
+
+[!INCLUDE [released-version-feedback](./includes/released-feedback.md)]
 
 ## Record structs
 

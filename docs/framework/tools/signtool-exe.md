@@ -186,7 +186,7 @@ signtool sign /f MyCert.pfx /t http://timestamp.digicert.com /fd SHA256 MyFile.e
 signtool sign /n "My Company Certificate" /fd SHA256 MyFile.exe
 ```  
   
- The following command signs an ActiveX control and provides information that is displayed by Internet Explorer when the user is prompted to install the control.  
+ The following command signs an ActiveX control and provides information that's displayed in the browser when the user is prompted to install the control.  
   
 ```console  
 Signtool sign /f MyCert.pfx /d: "MyControl" /du http://www.example.com/MyControl/info.html /fd SHA256 MyControl.exe

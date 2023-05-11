@@ -28,7 +28,7 @@ The .NET Framework 4.5 is a redistributable runtime. If you develop apps for thi
 
         Please replace those names with names that are unique to your setup program.
 
-    2. Read from the MMIO section. In the .NET Framework 4.5, the download and installation operations are simultaneous: One part of the .NET Framework might be installing while another part is downloading. As a result, progress is sent back (that is, written) to the MMIO section as two numbers (`m_downloadSoFar` and `m_installSoFar`) that increase from 0 to 255. When 255 is written and the .NET Framework exits, the installation is complete.
+    2. Read from the MMIO section. In .NET Framework 4.5, the download and installation operations are simultaneous: One part of the .NET Framework might be installing while another part is downloading. As a result, progress is sent back (that is, written) to the MMIO section as two numbers (`m_downloadSoFar` and `m_installSoFar`) that increase from 0 to 255. When 255 is written and the .NET Framework exits, the installation is complete.
 
 - **Exit codes**. The following exit codes from the command to call the .NET Framework 4.5 redistributable program indicate whether setup has succeeded or failed:
 

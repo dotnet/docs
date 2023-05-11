@@ -1,9 +1,8 @@
 ﻿//<snippet5555>
 using System;
-using System.Linq;
-using System.Collections;
 using System.Collections.Generic;
 //</snippet5555>
+
 namespace CsProgGuideTypes
 {
     //-------------------------------------------------------------------------
@@ -35,40 +34,6 @@ namespace CsProgGuideTypes
         // Output: 1234
         //</Snippet2>
     }
-
-    //-------------------------------------------------------------------------
-    //<Snippet3>
-    class NullableExample
-    {
-        static void Main()
-        {
-            int? num = null;
-
-            // Is the HasValue property true?
-            if (num.HasValue)
-            {
-                System.Console.WriteLine("num = " + num.Value);
-            }
-            else
-            {
-                System.Console.WriteLine("num = Null");
-            }
-
-            // y is set to zero
-            int y = num.GetValueOrDefault();
-
-            // num.Value throws an InvalidOperationException if num.HasValue is false
-            try
-            {
-                y = num.Value;
-            }
-            catch (System.InvalidOperationException e)
-            {
-                System.Console.WriteLine(e.Message);
-            }
-        }
-    }
-    //</Snippet3>
 
     //-------------------------------------------------------------------------
     class UsingNullable
@@ -112,14 +77,6 @@ namespace CsProgGuideTypes
                 System.Console.WriteLine("Undefined");
             }
             //</Snippet6>
-
-            //<Snippet7>
-            int? n = null;
-
-            //int m1 = n;      // Will not compile.
-            int m2 = (int)n;   // Compiles, but will create an exception if n is null.
-            int m3 = n.Value;  // Compiles, but will create an exception if n is null.
-            //</Snippet7>
 
             //<Snippet8>
             int? n1 = null;
@@ -491,27 +448,6 @@ namespace CsProgGuideTypes
         }
     }
 
-    //Types and Type Conversions f782d7cc-035e-4500-b1b1-36a9881130ad
-    //<snippet33>
-    class MyType
-    {
-        // An integer variable.
-        int num = 5;
-
-        // num string constant.
-        const string name = "Rocky";
-
-        // num System.DateTime variable.
-        System.DateTime startDate = new System.DateTime(2008, 2, 27);
-
-        // Method that takes a DateTime and returns a bool.
-        bool IsValidDate(System.DateTime dt)
-        {
-            return dt < System.DateTime.Today ? true : false;
-        }
-    }
-    //</snippet33>
-
     class ValueTypeConversion
     {
         static void Main()
@@ -631,7 +567,7 @@ namespace CsProgGuideTypes
 
         void UseAsOperator(object o)
         {
-            Mammal m = o as Mammal;
+            Mammal? m = o as Mammal;
             if (m != null)
             {
                 Console.WriteLine(m.ToString());

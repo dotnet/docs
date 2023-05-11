@@ -109,5 +109,4 @@ The following are the maximum number of delivery attempts made for a message:
 ## See also
 
 - [Queues Overview](queues-overview.md)
-- [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](diff-in-queue-in-vista-server-2003-windows-xp.md)
 - [Specifying and Handling Faults in Contracts and Services](../specifying-and-handling-faults-in-contracts-and-services.md)

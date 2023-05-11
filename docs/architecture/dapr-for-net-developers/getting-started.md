@@ -24,7 +24,7 @@ You'll start by installing Dapr on your development computer. Once complete, you
 
 1. [Initialize Dapr](https://docs.dapr.io/getting-started/install-dapr-selfhost/). This step sets up your development environment by installing the latest Dapr binaries and container images.
 
-1. Install the [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0).
+1. Install the [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet/7.0).
 
 Now that Dapr is installed, it's time to build your first Dapr application!
 
@@ -192,7 +192,7 @@ In the first example, you created a simple .NET console application that ran sid
 
 In the next example, you'll create a multi-container application. You'll also use the [Dapr service invocation](service-invocation.md) building block to communicate between services. The solution will consist of a web application that retrieves weather forecasts from a web API. They will each run in a Docker container. You'll use Docker Compose to run the container locally and enable debugging capabilities.
 
-Make sure you've configured your local environment for Dapr and installed the [.NET 6 Development Tools](https://dotnet.microsoft.com/download/dotnet/6.0) (instructions are available at the beginning of this chapter).
+Make sure you've configured your local environment for Dapr and installed the [.NET 7 Development Tools](https://dotnet.microsoft.com/download/dotnet/7.0) (instructions are available at the beginning of this chapter).
 
 Additionally, you'll need to complete this sample using [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the **ASP.NET and web development** workload installed.
 
@@ -308,7 +308,7 @@ Now, you'll configure communication between the services using Dapr [service inv
 
     <div class="text-center">
         <h1 class="display-4">Welcome</h1>
-        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
         @foreach (var forecast in (IEnumerable<WeatherForecast>)ViewData["WeatherForecastData"]!)
         {
             <p>The forecast for @forecast.Date is @forecast.Summary!</p>
@@ -354,12 +354,12 @@ In the final part of this example, you'll add container support and run the solu
     The *Dockerfile* contains the following commands:
 
     ```dockerfile
-    FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+    FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
     WORKDIR /app
     EXPOSE 80
     EXPOSE 443
 
-    FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+    FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
     WORKDIR /src
     COPY ["MyFrontEnd/MyFrontEnd.csproj", "MyFrontEnd/"]
     RUN dotnet restore "MyFrontEnd/MyFrontEnd.csproj"
@@ -378,10 +378,10 @@ In the final part of this example, you'll add container support and run the solu
 
     The preceding *Dockerfile* sequentially performs the following steps when invoked:
 
-    1. Pulls the `mcr.microsoft.com/dotnet/aspnet:6.0` image and names it `base`.
+    1. Pulls the `mcr.microsoft.com/dotnet/aspnet:7.0` image and names it `base`.
     2. Sets the working directory to */app*.
     3. Exposes port `80` and `443`.
-    4. Pulls the `mcr.microsoft.com/dotnet/sdk:6.0` image and names it `build`.
+    4. Pulls the `mcr.microsoft.com/dotnet/sdk:7.0` image and names it `build`.
     5. Sets the working directory to */src*.
     6. Copies the _MyFrontEnd/MyFrontEnd.csproj_ to a new directory named *MyFrontEnd/*.
     7. Calls [`dotnet restore`](../../core/tools/dotnet-restore.md) on the project.
@@ -402,11 +402,11 @@ In the final part of this example, you'll add container support and run the solu
     In the root of the _MyBackEnd_ project directory, a new *Dockerfile* was created. The *Dockerfile* contains the following commands:
 
     ```dockerfile
-    FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+    FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
     WORKDIR /app
     EXPOSE 80
 
-    FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+    FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
     WORKDIR /src
     COPY ["MyBackEnd/MyBackEnd.csproj", "MyBackEnd/"]
     RUN dotnet restore "MyBackEnd/MyBackEnd.csproj"

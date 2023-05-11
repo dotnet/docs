@@ -1,16 +1,42 @@
 ---
 title: Streaming with Orleans
 description: Learn how to work with streaming in .NET Orleans.
-ms.date: 03/21/2022
+ms.date: 05/04/2023
+zone_pivot_groups: orleans-version
 ---
 
 # Streaming with Orleans
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+
+Orleans streaming is a feature of the Orleans framework that enables developers to write reactive applications that operate on a sequence of events in a structured way. Orleans streaming provides a set of abstractions and APIs that make thinking about and working with streams simpler and more robust. A stream is a logical entity that always exists and can never fail. Streams are identified by their <xref:Orleans.Runtime.StreamId>. Streams allow the generation of data to be decoupled from its processing, both in time and space. Streams work uniformly across grains and Orleans clients, and can be compatible with and portable across a wide range of existing queuing technologies, such as Event Hubs, ServiceBus, Azure Queues, and Apache Kafka. Orleans streaming also supports dynamic stream bindings, transparent stream consumption lifecycle management, and extensible stream providers.
+
+<!-- markdownlint-enable MD044 -->
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+
 Orleans v.1.0.0 added support for streaming extensions to the programming model. Streaming extensions provide a set of abstractions and APIs that make thinking about and working with streams simpler and more robust. Streaming extensions allow developers to write reactive applications that operate on a sequence of events in a structured way. The extensibility model of stream providers makes the programming model compatible with and portable across a wide range of existing queuing technologies, such as [Event Hubs](https://azure.microsoft.com/services/event-hubs/), [ServiceBus](https://azure.microsoft.com/services/service-bus/), [Azure Queues](/azure/storage/queues/storage-dotnet-how-to-use-queues), and [Apache Kafka](https://kafka.apache.org/). There is no need to write special code or run dedicated processes to interact with such queues.
+
+<!-- markdownlint-enable MD044 -->
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
 
 ## Why should I care?
 
 If you already know all about [Stream Processing](https://confluentinc.wordpress.com/2015/01/29/making-sense-of-stream-processing/) and are familiar with technologies like [Event Hubs](https://azure.microsoft.com/services/event-hubs/), [Kafka](https://kafka.apache.org/), [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/), [Apache Storm](https://storm.apache.org/), [Apache Spark Streaming](https://spark.apache.org/streaming/), and [Reactive Extensions (Rx) in .NET](/previous-versions/dotnet/reactive-extensions/hh242985(v=vs.103)), you may be asking why should you care. **Why do we need yet another Stream Processing System and how Actors are related to Streams?** ["Why Orleans Streams?"](streams-why.md) is meant to answer that question.
+
+<!-- markdownlint-enable MD044 -->
+:::zone-end
 
 ## Programming model
 
@@ -24,71 +50,53 @@ There are several principles behind Orleans Streams Programming Model:
 1. Orleans Streaming Runtime *transparently manages the lifecycle of stream consumption*. After an application subscribes to a stream, it will then receive the stream's events, even in the presence of failures.
 1. Orleans streams *work uniformly across grains and Orleans clients*.
 
-## Programming APIs
-
-Applications interact with streams by using <xref:Orleans.Streams.IAsyncStream%601?displayProperty=fullName>, which implements the <xref:Orleans.Streams.IAsyncObserver%601?displayProperty=fullName> and <xref:Orleans.Streams.IAsyncObservable%601?displayProperty=fullName> interfaces. These APIS are similar to the well-known [Reactive Extensions (Rx) in .NET](/previous-versions/dotnet/reactive-extensions/hh242985(v=vs.103)).
-
-In a typical example below, a device generates some data, which is sent as an HTTP request to the service running in the Cloud. The Orleans client running in the front-end server receives this HTTP call and publishes the data into a matching device stream:
-
-```csharp
-public async Task OnHttpCall(DeviceEvent deviceEvent)
-{
-     // Post data directly into the device's stream.
-     IStreamProvider streamProvider =
-        GrainClient.GetStreamProvider("MyStreamProvider");
-
-    IAsyncStream<DeviceEventData> deviceStream =
-        streamProvider.GetStream<DeviceEventData>(
-            deviceEvent.DeviceId, "MyNamespace");
-
-     await deviceStream.OnNextAsync(deviceEvent.Data);
-}
-```
-
-In another example below, a chat user (implemented as Orleans Grain) joins a chat room, gets a handle to a stream of chat messages generated by all others users in this room, and subscribes to it. Notice that the chat user does not need to know about the chat room grain itself (there might not be such a grain in our system) or about other users in that group that produce messages. Needless to say, to publish to the chat stream, users don't need to know who is currently subscribed to the stream. This demonstrates how chat users can be completely decoupled in time and space.
-
-```csharp
-public class ChatUser: Grain
-{
-    public async Task JoinChat(Guid chatGroupId)
-    {
-        IStreamProvider streamProvider =
-            base.GetStreamProvider("MyStreamProvider");
-
-        IAsyncStream<string> chatStream =
-            streamProvider.GetStream<string>(chatGroupId, "MyNamespace");
-
-        await chatStream.SubscribeAsync(
-            async (message, token) => Console.WriteLine(message))
-    }
-}
-```
-
 ## Quick-start sample
 
 The [Quick Start Sample](streams-quick-start.md) is a good quick overview of the overall workflow of using streams in the application. After reading it, you should read the [Streams Programming APIs](streams-programming-apis.md) to get a deeper understanding of the concepts.
 
-## Streams programming APIs
-
-A [Streams Programming APIs](streams-programming-apis.md) provides a detailed description of the programming APIs.
-
 ## Stream providers
 
-Streams can come via physical channels of various shapes and forms and can have different semantics. Orleans Streaming is designed to support this diversity via the concept of **Stream Providers**, which is an extensibility point in the system. Orleans currently has implementations of two-stream providers: TCP-based **Simple Message Stream Provider** and Azure Queue-based **Azure Queue Stream Provider**. More details on Stream Providers can be found at [Stream Providers](stream-providers.md).
+Streams can come via physical channels of various shapes and forms and can have different semantics. Orleans Streaming is designed to support this diversity via the concept of **Stream Providers**, which is an extensibility point in the system.
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+
+Orleans provides several stream provider implementations:
+
+- [Azure Event Hub stream provider](stream-providers.md#azure-event-hub-stream-provider)
+- [Azure Queue (AQ) stream provider](stream-providers.md#azure-queue-aq-stream-provider)
+- [Queue adapters](stream-providers.md#queue-adapters)
+
+<!-- markdownlint-enable MD044 -->
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+
+Orleans currently includes several provider implementations:
+
+* **Simple Message** (SMS), which uses direct grain calls and no backing storage system,
+* **Azure Queues**, which uses Azure Storage Queues to store messages, and
+* **Azure EventHubs**, which uses Azure EventHubs
+
+<!-- markdownlint-enable MD044 -->
+:::zone-end
+
+For more information, see [Stream Providers](stream-providers.md).
 
 ## Stream semantics
 
 **Stream Subscription Semantics**:
 
-Orleans Streams guarantee Sequential Consistency for Stream Subscription operations. Specifically, when a consumer subscribes to a stream, once the `Task` representing the subscription operation was successfully resolved, the consumer will see all events that were generated after it has subscribed. In addition, Rewindable streams allow you to subscribe from an arbitrary point in time in the past by using <xref:Orleans.Streams.StreamSequenceToken>. For more information, see [Orleans stream providers](stream-providers.md).
+Orleans Streams guarantee _Sequential Consistency_ for Stream Subscription operations. Specifically, when a consumer subscribes to a stream, once the `Task` representing the subscription operation was successfully resolved, the consumer will see all events that were generated after it has subscribed. In addition, Rewindable streams allow you to subscribe from an arbitrary point in time in the past by using <xref:Orleans.Streams.StreamSequenceToken>. For more information, see [Orleans stream providers](stream-providers.md).
 
 **Individual Stream Events Delivery Guarantees**:
 
-Individual event delivery guarantees depend on individual stream providers. Some provide only best-effort at-most-once delivery (such as Simple Message Streams (SMS)), while others provide at-least-once delivery (such as Azure Queue Streams). It is even possible to build a streaming provider that will guarantee exactly-once delivery (we don't have such a provider yet, but it is possible to build one).
+Individual event delivery guarantees depend on individual stream providers. Some provide only best-effort at-most-once delivery (such as Simple Message Streams (SMS) in versions of Orleans before 7.0, thereafter known as [Broadcast Channel](broadcast-channel.md)), while others provide at-least-once delivery (such as Azure Queue Streams). It is even possible to build a streaming provider that will guarantee exactly-once delivery.
 
 **Events Delivery Order**:
 
-Event order also depends on a particular stream provider. In SMS streams, the producer explicitly controls the order of events seen by the consumer by controlling the way it publishes them. Azure Queue streams do not guarantee FIFO order, since the underlying Azure Queues do not guarantee the order in failure cases. Applications can also control their stream delivery ordering by using `StreamSequenceToken`.
+Event order also depends on a particular stream provider. In SMS streams, the producer explicitly controls the order of events seen by the consumer by controlling the way it publishes them. Azure Queue streams do not guarantee FIFO order, since the underlying Azure Queues do not guarantee the order in failure cases. Applications can also control their stream delivery ordering by using <xref:Orleans.Streams.StreamSequenceToken>.
 
 ## Streams implementation
 
@@ -100,4 +108,8 @@ More examples of how to use streaming APIs within a grain can be found [here](ht
 
 ## See also
 
-* [Orleans Virtual Meetup about Streams](https://www.youtube.com/watch?v=eSepBlfY554)
+- [Why streams in Orleans?](streams-why.md)
+- [Orleans streaming APIs](streams-programming-apis.md)
+- [Orleans stream providers](stream-providers.md)
+- [Broadcast channels in Orleans](broadcast-channel.md)
+- [Orleans Virtual Meetup about Streams](https://www.youtube.com/watch?v=eSepBlfY554)

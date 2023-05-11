@@ -19,7 +19,7 @@ dotnet help <COMMAND_NAME> [-h|--help]
 
 ## Description
 
-The `dotnet help` command opens up the reference page for more detailed information about the specified command at docs.microsoft.com.
+The `dotnet help` command opens up the reference page for more detailed information about the specified command.
 
 ## Arguments
 
@@ -28,8 +28,6 @@ The `dotnet help` command opens up the reference page for more detailed informat
   Name of the .NET CLI command. For a list of the valid CLI commands, see [CLI commands](index.md#cli-commands).
 
 ## Options
-
-<!-- markdownlint-disable MD012 -->
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 

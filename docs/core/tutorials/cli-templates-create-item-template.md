@@ -27,12 +27,14 @@ In this part of the series, you'll learn how to:
 
 ## Prerequisites
 
-* [.NET 6.0 SDK](https://dotnet.microsoft.com/download) or a later version.
+* [.NET SDK 7.0.100](https://dotnet.microsoft.com/download) or a later version.
 * Read the reference article [Custom templates for dotnet new](../tools/custom-templates.md).
 
   The reference article explains the basics about templates and how they're put together. Some of this information will be reiterated here.
 
 * Open a terminal and navigate to the _working\templates_ folder.
+
+[!INCLUDE [dotnet6-syntax-note](includes/dotnet6-syntax-note.md)]
 
 ## Create the required folders
 
@@ -121,8 +123,8 @@ The `classifications` item represents the **tags** column you see when you run `
 
 Now that you have a valid _.template.config/template.json_ file, your template is ready to be installed. In your terminal, navigate to the  _extensions_ folder and run the following command to install the template located at the current folder:
 
-* **On Windows**: `dotnet new --install .\`
-* **On Linux or macOS**: `dotnet new --install ./`
+* **On Windows**: `dotnet new install .\`
+* **On Linux or macOS**: `dotnet new install ./`
 
 This command outputs the list of templates installed, which should include yours.
 
@@ -202,10 +204,10 @@ Congratulations! You created and deployed an item template with .NET. In prepara
 
 ## Uninstall the template
 
-In your terminal, navigate to the  _extensions_ folder and run the following command to uninstall the template located at the current folder:
+In your terminal, navigate to the  _extensions_ folder and run the following command to uninstall the templates located at the current folder:
 
-* **On Windows**: `dotnet new --uninstall .\`
-* **On Linux or macOS**: `dotnet new --uninstall ./`
+* **On Windows**: `dotnet new uninstall .\`
+* **On Linux or macOS**: `dotnet new uninstall ./`
 
 This command outputs a list of the templates that were uninstalled, which should include yours.
 
@@ -213,7 +215,7 @@ This command outputs a list of the templates that were uninstalled, which should
 Success: <root path>\working\templates\extensions was uninstalled.
 ```
 
-At any time, you can use `dotnet new --uninstall` to see a list of installed template packages, including for each template package the command to uninstall it.
+At any time, you can use `dotnet new uninstall` to see a list of installed template packages, including for each template package the command to uninstall it.
 
 ## Next steps
 

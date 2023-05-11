@@ -3,7 +3,7 @@ title: Implement a DisposeAsync method
 description: Learn how to implement DisposeAsync and DisposeAsyncCore methods to perform asynchronous resource cleanup.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/10/2021
+ms.date: 01/02/2023
 dev_langs:
   - "csharp"
 helpviewer_keywords:
@@ -14,13 +14,16 @@ ms.topic: how-to
 
 # Implement a DisposeAsync method
 
-The <xref:System.IAsyncDisposable?displayProperty=nameWithType> interface was introduced as part of C# 8.0. You implement the <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> method when you need to perform resource cleanup, just as you would when [implementing a Dispose method](implementing-dispose.md). One of the key differences however, is that this implementation allows for asynchronous cleanup operations. The <xref:System.IAsyncDisposable.DisposeAsync> returns a <xref:System.Threading.Tasks.ValueTask> that represents the asynchronous dispose operation.
+The <xref:System.IAsyncDisposable?displayProperty=nameWithType> interface was introduced as part of C# 8.0. You implement the <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> method when you need to perform resource cleanup, just as you would when [implementing a Dispose method](implementing-dispose.md). One of the key differences, however, is that this implementation allows for asynchronous cleanup operations. The <xref:System.IAsyncDisposable.DisposeAsync> returns a <xref:System.Threading.Tasks.ValueTask> representing the asynchronous disposal operation.
 
-It is typical when implementing the <xref:System.IAsyncDisposable> interface that classes will also implement the <xref:System.IDisposable> interface. A good implementation pattern of the <xref:System.IAsyncDisposable> interface is to be prepared for either synchronous or asynchronous dispose. All of the guidance for implementing the dispose pattern also applies to the asynchronous implementation. This article assumes that you're already familiar with how to [implement a Dispose method](implementing-dispose.md).
+It is typical when implementing the <xref:System.IAsyncDisposable> interface that classes will also implement the <xref:System.IDisposable> interface. A good implementation pattern of the <xref:System.IAsyncDisposable> interface is to be prepared for either synchronous or asynchronous disposal, however, this isn't a requirement. If no synchronous disposable of your class is possible, having only <xref:System.IAsyncDisposable> is acceptable. All of the guidance for implementing the dispose pattern also applies to the asynchronous implementation. This article assumes that you're already familiar with how to [implement a Dispose method](implementing-dispose.md).
+
+> [!CAUTION]
+> If you implement the <xref:System.IAsyncDisposable> interface but not the <xref:System.IDisposable> interface, your app can potentially leak resources. If a class implements <xref:System.IAsyncDisposable>, but not <xref:System.IDisposable>, and a consumer only calls `Dispose`, your implementation would never call `DisposeAsync`. This would result in a resource leak.
 
 [!INCLUDE [disposables-and-dependency-injection](includes/disposables-and-dependency-injection.md)]
 
-## DisposeAsync() and DisposeAsyncCore()
+## Explore `DisposeAsync` and `DisposeAsyncCore` methods
 
 The <xref:System.IAsyncDisposable> interface declares a single parameterless method, <xref:System.IAsyncDisposable.DisposeAsync>. Any non-sealed class should have an additional `DisposeAsyncCore()` method that also returns a <xref:System.Threading.Tasks.ValueTask>.
 
@@ -33,7 +36,7 @@ The <xref:System.IAsyncDisposable> interface declares a single parameterless met
   }
   ```
 
-### The DisposeAsync() method
+### The `DisposeAsync` method
 
 The `public` parameterless `DisposeAsync()` method is called implicitly in an `await using` statement, and its purpose is to free unmanaged resources, perform general cleanup, and to indicate that the finalizer, if one is present, need not run. Freeing the memory associated with a managed object is always the domain of the [garbage collector](index.md). Because of this, it has a standard implementation:
 
@@ -46,17 +49,15 @@ public async ValueTask DisposeAsync()
     // Dispose of unmanaged resources.
     Dispose(false);
 
-#pragma warning disable CA1816 // Dispose methods should call SuppressFinalize
     // Suppress finalization.
     GC.SuppressFinalize(this);
-#pragma warning restore CA1816 // Dispose methods should call SuppressFinalize
 }
 ```
 
 > [!NOTE]
 > One primary difference in the async dispose pattern compared to the dispose pattern, is that the call from <xref:System.IAsyncDisposable.DisposeAsync> to the `Dispose(bool)` overload method is given `false` as an argument. When implementing the <xref:System.IDisposable.Dispose?displayProperty=nameWithType> method, however, `true` is passed instead. This helps ensure functional equivalence with the synchronous dispose pattern, and further ensures that finalizer code paths still get invoked. In other words, the `DisposeAsyncCore()` method will dispose of managed resources asynchronously, so you don't want to dispose of them synchronously as well. Therefore, call `Dispose(false)` instead of `Dispose(true)`.
 
-### The DisposeAsyncCore() method
+### The `DisposeAsyncCore` method
 
 The `DisposeAsyncCore()` method is intended to perform the asynchronous cleanup of managed resources or for cascading calls to `DisposeAsync()`. It encapsulates the common asynchronous cleanup operations when a subclass inherits a base class that is an implementation of <xref:System.IAsyncDisposable>. The `DisposeAsyncCore()` method is `virtual` so that derived classes can define additional cleanup in their overrides.
 
@@ -65,11 +66,33 @@ The `DisposeAsyncCore()` method is intended to perform the asynchronous cleanup 
 
 ## Implement the async dispose pattern
 
-All non-sealed classes should be considered a potential base class, because they could be inherited. If you implement the async dispose pattern for any potential base class, you must provide the `protected virtual ValueTask DisposeAsyncCore()` method. Here is an example implementation of the async dispose pattern that uses a <xref:System.Text.Json.Utf8JsonWriter?displayProperty=nameWithType>.
+All non-sealed classes should be considered a potential base class, because they could be inherited. If you implement the async dispose pattern for any potential base class, you must provide the `protected virtual ValueTask DisposeAsyncCore()` method. Some of the following examples use a `NoopAsyncDisposable` class that is defined as follows:
+
+:::code language="csharp" source="snippets/dispose-async/NoopAsyncDisposable.cs":::
+
+Here is an example implementation of the async dispose pattern that using a custom `NoopAsyncDisposable` type that implements `DisposeAsync` by returning <xref:System.Threading.Tasks.ValueTask.CompletedTask?displayProperty=nameWithType>.
 
 :::code language="csharp" source="snippets/dispose-async/ExampleAsyncDisposable.cs":::
 
-The preceding example uses the <xref:System.Text.Json.Utf8JsonWriter>. For more information about `System.Text.Json`, see [How to migrate from Newtonsoft.Json to System.Text.Json](../serialization/system-text-json-migrate-from-newtonsoft-how-to.md).
+In the preceding example:
+
+- The `ExampleAsyncDisposable` is a non-sealed class that implements the <xref:System.IAsyncDisposable> interface.
+- It contains a private `IAsyncDisposable` field, `_example`, that is initialized in the constructor.
+- The `DisposeAsync` method delegates to the `DisposeAsyncCore` method, and calls <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> to notify the garbage collector that the finalizer doesn't have to run.
+- It contains a `DisposeAsyncCore()` method that calls the `_example.DisposeAsync()` method, and sets the field to `null`.
+- The `DisposeAsyncCore()` method is `virtual` and is overridden in the `ExampleAsyncDisposable` class.
+
+### Sealed alternative async dispose pattern
+
+If your implementing class can be `sealed`, you can implement the async dispose pattern by overriding the <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> method. The following example shows how to implement the async dispose pattern for a sealed class:
+
+:::code language="csharp" source="snippets/dispose-async/SealedExampleAsyncDisposable.cs":::
+
+In the preceding example:
+
+- The `SealedExampleAsyncDisposable` is a sealed class that implements the <xref:System.IAsyncDisposable> interface.
+- The containing `_example` field is `readonly` and is initialized in the constructor.
+- The `DisposeAsync` method calls the `_example.DisposeAsync()` method, implementing the pattern through the containing field (cascading disposal).
 
 ## Implement both dispose and async dispose patterns
 
@@ -85,7 +108,7 @@ With the `DisposeAsyncCore()` method, the same logical approach is followed. If 
 
 ## Using async disposable
 
-To properly consume an object that implements the <xref:System.IAsyncDisposable> interface, you use the [await](../../csharp/language-reference/operators/await.md) and [using](../../csharp/language-reference/keywords/using-statement.md) keywords together. Consider the following example, where the `ExampleAsyncDisposable` class is instantiated and then wrapped in an `await using` statement.
+To properly consume an object that implements the <xref:System.IAsyncDisposable> interface, you use the [await](../../csharp/language-reference/operators/await.md) and [using](../../csharp/language-reference/statements/using.md) keywords together. Consider the following example, where the `ExampleAsyncDisposable` class is instantiated and then wrapped in an `await using` statement.
 
 :::code language="csharp" source="snippets/dispose-async/ExampleConfigureAwaitProgram.cs":::
 
@@ -96,7 +119,7 @@ For situations where the usage of `ConfigureAwait` is not needed, the `await usi
 
 :::code language="csharp" source="snippets/dispose-async/ExampleUsingStatementProgram.cs":::
 
-Furthermore, it could be written to use the implicit scoping of a [using declaration](../../csharp/whats-new/csharp-8.md#using-declarations).
+Furthermore, it could be written to use the implicit scoping of a [using declaration](../../csharp/language-reference/statements/using.md).
 
 :::code language="csharp" source="snippets/dispose-async/ExampleUsingDeclarationProgram.cs":::
 
@@ -138,12 +161,12 @@ In the preceding example, each asynchronous clean up operation is implicitly sco
 
 ### Unacceptable pattern
 
-The highlighted lines in the following code show what it means to have "stacked usings". If an exception is thrown from the `AnotherAsyncDisposable` constructor, neither object is properly disposed of. The variable `objTwo` is never assigned because the constructor did not complete successfully. As a result, the constructor for `AnotherAsyncDisposable` is responsible for disposing any resources allocated before it throws an exception.
+The highlighted lines in the following code show what it means to have "stacked usings". If an exception is thrown from the `AnotherAsyncDisposable` constructor, neither object is properly disposed of. The variable `objTwo` is never assigned because the constructor did not complete successfully. As a result, the constructor for `AnotherAsyncDisposable` is responsible for disposing any resources allocated before it throws an exception. If the `ExampleAsyncDisposable` type has a finalizer, it's eligible for finalization.
 
 :::code language="csharp" id="dontdothis" source="snippets/dispose-async/ExamplePatterns.cs" highlight="9-10":::
 
 > [!TIP]
-> Avoid this pattern as it could lead to unexpected behavior.
+> Avoid this pattern as it could lead to unexpected behavior. If you use one of the acceptable patterns, the problem of undisposed objects is non-existent. The clean-up operations are correctly performed when `using` statements aren't stacked.
 
 ## See also
 

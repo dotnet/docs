@@ -192,7 +192,7 @@ Make the following changes to the code:
 
     The service must be run with administrator privileges. Because you opened Visual Studio with administrator privileges, when you run **GettingStartedHost** in Visual Studio, the application is run with administrator privileges as well. As an alternative, you can open a new command prompt as an administrator (select **More** > **Run as administrator** from the shortcut menu) and run **GettingStartedHost.exe** within it.
 
-2. Open a web browser and browse to the service's page at `http://localhost:8000/GettingStarted/CalculatorService`.
+2. Open a web browser and browse to the service's page at `http://localhost:8000/GettingStarted/`.
 
    > [!NOTE]
    > Services such as this one require the proper permission to register HTTP addresses on the machine for listening. Administrator accounts have this permission, but non-administrator accounts must be granted permission for HTTP namespaces. For more information about how to configure namespace reservations, see [Configuring HTTP and HTTPS](feature-details/configuring-http-and-https.md).
@@ -212,7 +212,7 @@ The steps in the code you added to host the service are described as follows:
 
 - **Step 4**: Enable metadata exchange. Clients use metadata exchange to generate proxies for calling the service operations. To enable metadata exchange, create a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> instance, set its <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled> property to `true`, and add the `ServiceMetadataBehavior` object to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> collection of the <xref:System.ServiceModel.ServiceHost> instance.
 
-- **Step 5**: Open <xref:System.ServiceModel.ServiceHost> to listen for incoming messages. The application waits for you to press **Enter**. After the application instantiates <xref:System.ServiceModel.ServiceHost>, it executes a try/catch block. For more information about safely catching exceptions thrown by <xref:System.ServiceModel.ServiceHost>, see [Use Close and Abort to release WCF client resources](samples/use-close-abort-release-wcf-client-resources.md).
+- **Step 5**: Open <xref:System.ServiceModel.ServiceHost> to listen for incoming messages. The application waits for you to press <kbd>Enter</kbd>. After the application instantiates <xref:System.ServiceModel.ServiceHost>, it executes a try/catch block. For more information about safely catching exceptions thrown by <xref:System.ServiceModel.ServiceHost>, see [Use Close and Abort to release WCF client resources](samples/use-close-abort-release-wcf-client-resources.md).
 
 > [!IMPORTANT]
 > When you add a WCF service library, Visual Studio hosts it for you if you debug it by starting a service host. To avoid conflicts, you can prevent Visual Studio from hosting the WCF service library.

@@ -3,7 +3,7 @@ title: Connect to Remote Storage from your local machine
 description: Connect to Azure Storage Accounts using .NET for Apache Spark from your local machine.
 ms.author: nidutta
 author: Niharikadutta
-ms.date: 10/09/2020
+ms.date: 12/16/2022
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
@@ -11,6 +11,8 @@ ms.custom: mvc,how-to
 # Connect to Azure Data Lake Storage Gen 2 or WASB account
 
 In this article, you learn how to connect to an Azure Data Lake Storage (ADLS) Gen 2 or Windows Azure Storage Blob (WASB) account through an instance of [.NET for Apache Spark](https://github.com/dotnet/spark) running locally on your Windows machine.
+
+[!INCLUDE [.NET Core 3.1 Warning](../includes/net-core-31-spark.md)]
 
 ## Set up the environment
 

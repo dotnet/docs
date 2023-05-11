@@ -92,6 +92,21 @@ Type: `object`
 
 Lets you control the project SDK version in one place rather than in each individual project. For more information, see [How project SDKs are resolved](/visualstudio/msbuild/how-to-use-project-sdk#how-project-sdks-are-resolved).
 
+### Comments in global.json
+
+Comments in *global.json* files are supported using JavaScript or C# style comments. For example:
+
+```json
+{
+   // This is a comment.
+  "sdk": {
+    "version": "7.0.100" /* This is comment 2*/
+  /* This is a
+  multiline comment.*/
+  }
+}
+```
+
 ## Examples
 
 The following example shows how to not use prerelease versions:

@@ -13,7 +13,7 @@ A string is an object of type <xref:System.String> whose value is text. Internal
 
 ## string vs. System.String
 
-In C#, the `string` keyword is an alias for <xref:System.String>. Therefore, `String` and `string` are equivalent, regardless it's recommended to use the provided alias `string` as it works even without `using System;`. The `String` class provides many methods for safely creating, manipulating, and comparing strings. In addition, the C# language overloads some operators to simplify common string operations. For more information about the keyword, see [string](../../language-reference/builtin-types/reference-types.md). For more information about the type and its methods, see <xref:System.String>.
+In C#, the `string` keyword is an alias for <xref:System.String>; therefore, `String` and `string` are equivalent. It's recommended to use the provided alias `string` as it works even without `using System;`. The `String` class provides many methods for safely creating, manipulating, and comparing strings. In addition, the C# language overloads some operators to simplify common string operations. For more information about the keyword, see [string](../../language-reference/builtin-types/reference-types.md). For more information about the type and its methods, see <xref:System.String>.
 
 ## Declaring and initializing strings
 
@@ -39,7 +39,7 @@ For more information about how to create new strings that are based on modificat
 
 ## Quoted string literals
 
-*Quoted string literals* are start and end with a single double quote character (`"`) on the same line. Quoted string literals are best suited for strings that fit on a single line and don't include any [escape sequences](#string-escape-sequences). A quoted string literal must embed escape characters, as shown in the following example:
+*Quoted string literals* start and end with a single double quote character (`"`) on the same line. Quoted string literals are best suited for strings that fit on a single line and don't include any [escape sequences](#string-escape-sequences). A quoted string literal must embed escape characters, as shown in the following example:
 
 :::code language="csharp" source="./snippets/StringLiterals.cs" id="EscapeSequences":::
 
@@ -56,7 +56,9 @@ Beginning with C# 11, you can use *raw string literals* to more easily create st
 - Starts and ends with a sequence of at least three double quote characters (`"""`). You're allowed more than three consecutive characters to start and end the sequence in order to support string literals that contain three (or more) repeated quote characters.
 - Single line raw string literals require the opening and closing quote characters on the same line.
 - Multi-line raw string literals require both opening and closing quote characters on their own line.
-- In multi-line raw string literals, any whitespace to the left of the closing quotes is removed.
+- In multi-line raw string literals, any whitespace to the left of the closing quotes is removed from all lines of the raw string literal.
+- In multi-line raw string literals, whitespace following the opening quote on the same line is ignored.
+- In multi-line raw string literals, whitespace only lines following the opening quote are included in the string literal.
 
 The following examples demonstrate these rules:
 
@@ -72,7 +74,7 @@ You should consider raw string literals when you're generating text that include
 
 :::code language="csharp" source="./snippets/StringLiterals.cs" id="JSONString":::
 
-Compare that text with the equivalent text in our sample on [JSON serialization](../../../standard/serialization/system-text-json-how-to.md?pivots=dotnet-6-0#how-to-read-json-as-net-objects-deserialize), which doesn't make use of this new feature.
+Compare that text with the equivalent text in our sample on [JSON serialization](../../../standard/serialization/system-text-json/how-to.md?pivots=dotnet-6-0#how-to-read-json-as-net-objects-deserialize), which doesn't make use of this new feature.
 
 ### String escape sequences
 
@@ -97,7 +99,7 @@ Escape sequence|Character name|Unicode encoding|
 > When using the `\x` escape sequence and specifying less than 4 hex digits, if the characters that immediately follow the escape sequence are valid hex digits (i.e. 0-9, A-F, and a-f), they will be interpreted as being part of the escape sequence. For example, `\xA1` produces "&#161;", which is code point U+00A1. However, if the next character is "A" or "a", then the escape sequence will instead be interpreted as being `\xA1A` and produce "&#x0A1A;", which is code point U+0A1A. In such cases, specifying all 4 hex digits (e.g. `\x00A1` ) will prevent any possible misinterpretation.
 
 > [!NOTE]
-> At compile time, verbatim strings are converted to ordinary strings with all the same escape sequences. Therefore, if you view a verbatim string in the debugger watch window, you will see the escape characters that were added by the compiler, not the verbatim version from your source code. For example, the verbatim string `@"C:\files.txt"` will appear in the watch window as "C:\\\files.txt".
+> At compile time, verbatim and raw strings are converted to ordinary strings with all the same escape sequences. Therefore, if you view a verbatim or raw string in the debugger watch window, you will see the escape characters that were added by the compiler, not the verbatim or raw version from your source code. For example, the verbatim string `@"C:\files.txt"` will appear in the watch window as "C:\\\files.txt".
 
 ## Format strings
 
@@ -105,7 +107,7 @@ A format string is a string whose contents are determined dynamically at run tim
 
 ### String interpolation
 
-Available in C# 6.0 and later, [*interpolated strings*](../../language-reference/tokens/interpolated.md) are identified by the `$` special character and include interpolated expressions in braces. If you're new to string interpolation, see the [String interpolation - C# interactive tutorial](../../tutorials/exploration/interpolated-strings.yml) for a quick overview.
+[*Interpolated strings*](../../language-reference/tokens/interpolated.md) are identified by the `$` special character and include interpolated expressions in braces. If you're new to string interpolation, see the [String interpolation - C# interactive tutorial](../../tutorials/exploration/interpolated-strings.yml) for a quick overview.
 
 Use string interpolation to improve the readability and maintainability of your code. String interpolation achieves the same results as the `String.Format` method, but improves ease of use and inline clarity.
 
@@ -116,6 +118,14 @@ Beginning with C# 10, you can use string interpolation to initialize a constant 
 Beginning with C# 11, you can combine *raw string literals* with string interpolations. You start and end the format string with three or more successive double quotes. If your output string should contain the `{` or `}` character, you can use extra `$` characters to specify how many `{` and `}` characters start and end an interpolation. Any sequence of fewer `{` or `}` characters is included in the output.  The following example shows how you can use that feature to display the distance of a point from the origin, and place the point inside braces:
 
 :::code language="csharp" source="./snippets/StringInterpolation.cs" id="InterpolationExample":::
+
+### Verbatim String Interpolation
+
+C# also allows verbatim string interpolation, for example across multiple lines, using the `$@` or `@$` syntax.
+
+To interpret escape sequences literally, use a [verbatim](../../language-reference/tokens/verbatim.md) string literal. An interpolated verbatim string starts with the `$` character followed by the `@` character. You can use the `$` and `@` tokens in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings.
+
+:::code language="csharp" source="./snippets/VerbatimStringInterpolation.cs" id="VerbatimStringInterpolation":::
 
 ### Composite formatting
 

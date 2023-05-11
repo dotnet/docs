@@ -1,7 +1,8 @@
 ---
 title: Orleans streaming APIs
 description: Learn about the available streaming APIs for .NET Orleans.
-ms.date: 03/21/2022
+ms.date: 12/06/2022
+zone_pivot_groups: orleans-version
 ---
 
 # Orleans streaming APIs
@@ -12,10 +13,27 @@ Applications interact with streams via APIs that are very similar to the well-kn
 
 An application starts by using a *stream provider* to get a handle to a stream. You can read more about stream providers [here](stream-providers.md), but for now, you can think of it as a stream factory that allows implementers to customize streams behavior and semantics:
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+```csharp
+IStreamProvider streamProvider = base.GetStreamProvider("SimpleStreamProvider");
+StreamId streamId = StreamId.Create("MyStreamNamespace", Guid);
+IAsyncStream<T> stream = streamProvider.GetStream<T>(streamId);
+```
+
+:::zone-end
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
+
 ```csharp
 IStreamProvider streamProvider = base.GetStreamProvider("SimpleStreamProvider");
 IAsyncStream<T> stream = streamProvider.GetStream<T>(Guid, "MyStreamNamespace");
 ```
+
+:::zone-end
 
 An application can get a reference to the stream provider either by calling the <xref:Orleans.Grain.GetStreamProvider%2A?displayProperty=nameWithType> method when inside a grain, or by calling the <xref:Orleans.GrainClient.GetStreamProvider%2A?displayProperty=nameWithType> method when on the client.
 
@@ -101,9 +119,31 @@ By default, a stream consumer has to explicitly subscribe to the stream. This su
 
 In addition, Orleans streams also support *implicit subscriptions*. In this model, the grain does not explicitly subscribe to the stream. This grain is subscribed automatically, implicitly, just based on its grain identity and an <xref:Orleans.ImplicitStreamSubscriptionAttribute>. Implicit subscriptions' main value is allowing the stream activity to trigger the grain activation (hence triggering the subscription) automatically. For example, using SMS streams, if one grain wanted to produce a stream and another grain process this stream, the producer would need to know the identity of the consumer grain and make a grain call to it telling it to subscribe to the stream. Only after that can it start sending events. Instead, using implicit subscriptions, the producer can just start producing events to a stream, and the consumer grain will automatically be activated and subscribe to the stream. In that case, the producer doesn't care at all who is reading the events
 
-Grain implementation class of type `MyGrainType` can declare an attribute `[ImplicitStreamSubscription("MyStreamNamespace")]`. This tells the streaming runtime that when an event is generated on a stream whose identity is GUID XXX and `"MyStreamNamespace"` namespace, it should be delivered to the grain whose identity is XXX of type `MyGrainType`. That is, the runtime maps stream `<XXX, MyStreamNamespace>` to consumer grain `<XXX, MyGrainType>`.
+The grain implementation `MyGrainType` can declare an attribute `[ImplicitStreamSubscription("MyStreamNamespace")]`. This tells the streaming runtime that when an event is generated on a stream whose identity is GUID XXX and `"MyStreamNamespace"` namespace, it should be delivered to the grain whose identity is XXX of type `MyGrainType`. That is, the runtime maps stream `<XXX, MyStreamNamespace>` to consumer grain `<XXX, MyGrainType>`.
 
 The presence of `ImplicitStreamSubscription`causes the streaming runtime to automatically subscribe this grain to a stream and deliver the stream events to it. However, the grain code still needs to tell the runtime how it wants events to be processed. Essentially, it needs to attach the `IAsyncObserver`. Therefore, when the grain is activated, the grain code inside `OnActivateAsync` needs to call:
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+```csharp
+IStreamProvider streamProvider =
+    base.GetStreamProvider("SimpleStreamProvider");
+
+StreamId streamId =
+    StreamId.Create("MyStreamNamespace", this.GetPrimaryKey());
+IAsyncStream<T> stream =
+    streamProvider.GetStream<T>(streamId);
+
+StreamSubscriptionHandle<T> subscription =
+    await stream.SubscribeAsync(IAsyncObserver<T>);
+```
+
+:::zone-end
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
 
 ```csharp
 IStreamProvider streamProvider =
@@ -116,17 +156,39 @@ StreamSubscriptionHandle<T> subscription =
     await stream.SubscribeAsync(IAsyncObserver<T>);
 ```
 
+:::zone-end
+
 ### Writing subscription logic
 
-Below are the guidelines on how to write the subscription logic for various cases: explicit and implicit subscriptions, rewindable and non-rewindable streams. The main difference between explicit and implicit subscriptions is that for implicit the grain always has exactly one implicit subscription for every stream namespace; there is no way to create multiple subscriptions (there is no subscription multiplicity), there is no way to unsubscribe, and the grain logic always only needs to attach the processing logic. That also means that for implicit subscriptions there is never a need to Resume a subscription.
-On the other hand, for explicit subscriptions, one needs to Resume the subscription, otherwise, if the grain subscribes again it will result in the grain being subscribed multiple times.
+Below are the guidelines on how to write the subscription logic for various cases: explicit and implicit subscriptions, rewindable and non-rewindable streams. The main difference between explicit and implicit subscriptions is that for implicit the grain always has exactly one implicit subscription for every stream namespace; there is no way to create multiple subscriptions (there is no subscription multiplicity), there is no way to unsubscribe, and the grain logic always only needs to attach the processing logic. That also means that for implicit subscriptions there is never a need to resume a subscription. On the other hand, for explicit subscriptions, one needs to Resume the subscription, otherwise, if the grain subscribes again it will result in the grain being subscribed multiple times.
 
 **Implicit subscriptions:**
 
 For implicit subscriptions, the grain needs to subscribe to attach the processing logic. This should be done in the grain's `OnActivateAsync` method. The grain should simply execute `await stream.SubscribeAsync(OnNext ...)` in its `OnActivateAsync` method. That will cause this particular activation to attach the `OnNext` function to process that stream. The grain can optionally specify the `StreamSequenceToken` as an argument to `SubscribeAsync`, which will cause this implicit subscription to start consuming from that token. There is never a need for an implicit subscription to call `ResumeAsync`.
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
 ```csharp
-public async override Task OnActivateAsync()
+public override async Task OnActivateAsync(CancellationToken cancellationToken)
+{
+    var streamProvider = GetStreamProvider(PROVIDER_NAME);
+    var streamId = StreamId.Create("MyStreamNamespace", GetPrimaryKey());
+    var stream = streamProvider.GetStream<string>(streamId);
+
+    await stream.SubscribeAsync(OnNextAsync)
+}
+```
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
+
+```csharp
+public override async Task OnActivateAsync()
 {
     var streamProvider = GetStreamProvider(PROVIDER_NAME);
     var stream =
@@ -137,9 +199,36 @@ public async override Task OnActivateAsync()
 }
 ```
 
+:::zone-end
+
 **Explicit subscriptions:**
 
 For explicit subscriptions, a grain must call `SubscribeAsync` to subscribe to the stream.  This creates a subscription, as well as attaches the processing logic. The explicit subscription will exist until the grain unsubscribes, so if a grain gets deactivated and reactivated, the grain is still explicitly subscribed, but no processing logic will be attached. In this case, the grain needs to re-attach the processing logic. To do that, in its `OnActivateAsync`, the grain first needs to find out what subscriptions it has, by calling <xref:Orleans.Streams.IAsyncStream%601.GetAllSubscriptionHandles?displayProperty=nameWithType>. The grain must execute `ResumeAsync` on each handle it wishes to continue processing or UnsubscribeAsync on any handles it is done with. The grain can also optionally specify the `StreamSequenceToken` as an argument to the `ResumeAsync` calls, which will cause this explicit subscription to start consuming from that token.
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+```csharp
+public async override Task OnActivateAsync(CancellationToken cancellationToken)
+{
+    var streamProvider = GetStreamProvider(PROVIDER_NAME);
+    var streamId = StreamId.Create("MyStreamNamespace", GetPrimaryKey());
+    var stream = streamProvider.GetStream<string>(streamId);
+
+    var subscriptionHandles = await stream.GetAllSubscriptionHandles();
+    if (!subscriptionHandles.IsNullOrEmpty())
+    {
+        subscriptionHandles.ForEach(
+            async x => await x.ResumeAsync(OnNextAsync));
+    }
+}
+```
+
+:::zone-end
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
 
 ```csharp
 public async override Task OnActivateAsync()
@@ -156,6 +245,8 @@ public async override Task OnActivateAsync()
     }
 }
 ```
+
+:::zone-end
 
 ### Stream order and sequence tokens
 
@@ -198,25 +289,63 @@ Applications can choose where and how the Pub-Sub data is stored. The Pub-Sub co
 
 The following configures the Pub-Sub to store its state in Azure tables.
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
 ```csharp
 hostBuilder.AddAzureTableGrainStorage("PubSubStore",
-    options=> options.ConnectionString = "<Secret>");
+    options => options.ConfigureTableServiceClient("<Secret>"));
 ```
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
+
+```csharp
+hostBuilder.AddAzureTableGrainStorage("PubSubStore",
+    options => options.ConnectionString = "<Secret>");
+```
+
+:::zone-end
 
 That way Pub-Sub data will be durably stored in Azure Table. For initial development, you can use memory storage as well. In addition to Pub-Sub, the Orleans Streaming Runtime delivers events from producers to consumers, manages all runtime resources allocated to actively used streams, and transparently garbage collects runtime resources from unused streams.
 
 ### Configuration
 
-In order to use streams you need to enable stream providers via the silo host or cluster client builders. You can read more about stream providers [here](stream-providers.md). Sample stream provider setup:
+To use streams you need to enable stream providers via the silo host or cluster client builders. You can read more about stream providers [here](stream-providers.md). Sample stream provider setup:
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+```csharp
+hostBuilder.AddMemoryStreams("StreamProvider")
+    .AddAzureQueueStreams<AzureQueueDataAdapterV2>("AzureQueueProvider",
+        optionsBuilder => optionsBuilder.Configure(
+            options => options.ConfigureTableServiceClient("<Secret>")))
+    .AddAzureTableGrainStorage("PubSubStore",
+        options => options.ConfigureTableServiceClient("<Secret>"));
+```
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
 
 ```csharp
 hostBuilder.AddSimpleMessageStreamProvider("SMSProvider")
-  .AddAzureQueueStreams<AzureQueueDataAdapterV2>("AzureQueueProvider",
-    optionsBuilder => optionsBuilder.Configure(
-      options => options.ConnectionString = "<Secret>"))
-  .AddAzureTableGrainStorage("PubSubStore",
-    options => options.ConnectionString = "<Secret>");
+    .AddAzureQueueStreams<AzureQueueDataAdapterV2>("AzureQueueProvider",
+        optionsBuilder => optionsBuilder.Configure(
+            options => options.ConnectionString = "<Secret>"))
+    .AddAzureTableGrainStorage("PubSubStore",
+        options => options.ConnectionString = "<Secret>");
 ```
+
+:::zone-end
 
 ## See also
 

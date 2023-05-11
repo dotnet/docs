@@ -64,7 +64,7 @@ namespace LINQtoDataSetSamples
 
             /*** Set Operators ***/
             //DistinctRows(); // Messy...
-            //Distinct2(); // Lame...
+            //Distinct2(); // Pathetic...
             //Union2();
             //Intersect2();
             //Except2();
@@ -584,7 +584,7 @@ namespace LINQtoDataSetSamples
         }
         #endregion
 
-        #region "Partioning Operators"
+        #region "Partitioning Operators"
 
         /*[Category("Partitioning Operators")]
         [Title("Take - Nested")]
@@ -1829,7 +1829,7 @@ namespace LINQtoDataSetSamples
                 Console.WriteLine("ContactID: {0}", orderGroup.Category);
                 foreach (var order in orderGroup.smallestTotalDue)
                 {
-                    Console.WriteLine("Mininum TotalDue {0} for SalesOrderID {1}: ",
+                    Console.WriteLine("Minimum TotalDue {0} for SalesOrderID {1}: ",
                         order.Field<decimal>("TotalDue"),
                         order.Field<Int32>("SalesOrderID"));
                 }

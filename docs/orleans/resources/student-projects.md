@@ -32,11 +32,11 @@ We suggest two types of projects for students:
 
 ## Course projects
 
-1. **Internet of Things applications**: For example, the application could enable sensors/devices to report their state to the cloud, where each device is represented in the cloud by an Orleans actor. Users can connect to the actor that represents their device via a web browser and check its status or control it. This project involves mastering several modern cloud technologies, including [Azure](https://azure.microsoft.com), Orleans, [Minimal web API](/aspnet/core/tutorials/min-web-api), [ASP.NET Core SignalR](/learn/modules/aspnet-core-signalr) for streaming commands back from the cloud to the device, and writing a sensor/device/phone app.
+1. **Internet of Things applications**: For example, the application could enable sensors/devices to report their state to the cloud, where each device is represented in the cloud by an Orleans actor. Users can connect to the actor that represents their device via a web browser and check its status or control it. This project involves mastering several modern cloud technologies, including [Azure](https://azure.microsoft.com), Orleans, [Minimal web API](/aspnet/core/tutorials/min-web-api), [ASP.NET Core SignalR](/training/modules/aspnet-core-signalr) for streaming commands back from the cloud to the device, and writing a sensor/device/phone app.
 
 1. **Twitter-like large scalable chat service in the cloud based on Orleans**: Each user could be represented by an Orleans Actor, which contains its list of followers.
 
-1. **Faceboook-like social app based on Orleans**: Each user could be represented by an Orleans Actor, which includes a list of friends and a wall on which friends can write.
+1. **Facebook-like social app based on Orleans**: Each user could be represented by an Orleans Actor, which includes a list of friends and a wall on which friends can write.
 
 1. **Simple storage provider**: Add a storage provider for a storage system, such as a key-value store or database system. A simple one could use the [Orleans serializer](xref:Orleans.Serialization), as in the existing [Azure Table storage provider](xref:Orleans.Storage.AzureTableStorage). A more sophisticated one would map state variables of an Orleans class to fine-grained structures of the storage system. A complex one is the Entity Framework storage provider mentioned above under _Research Projects_. Compare the performance of different storage providers for different types and sizes of actor states.
 

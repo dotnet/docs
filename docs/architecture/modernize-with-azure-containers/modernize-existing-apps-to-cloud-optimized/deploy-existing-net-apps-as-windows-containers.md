@@ -96,12 +96,12 @@ For .NET (cross-platform for Linux and Windows), the tags would look like the fo
 
 > | **Tag** | **System and version**
 > |---|---|
-> | **mcr.microsoft.com/dotnet/runtime:5.0** | .NET runtime-only on Linux |
-> | **mcr.microsoft.com/dotnet/runtime:5.0-nanoserver-20H2** | .NET runtime-only on Windows Nano Server |
+> | **mcr.microsoft.com/dotnet/runtime:7.0** | .NET runtime-only on Linux |
+> | **mcr.microsoft.com/dotnet/runtime:7.0-nanoserver-ltsc2022** | .NET runtime-only on Windows Nano Server |
 
 ### Multi-arch images
 
-Since 2017, Docker has had a feature called [multi-arch](https://github.com/moby/moby/issues/15866) images. .NET Docker images can use multi-arch tags. Your Dockerfile files no longer need to define the operating system that you are targeting. The multi-arch feature allows a single tag to be used across multiple machine configurations. For instance, with multi-arch, you can use one common tag: **mcr.microsoft.com/dotnet/runtime:5.0**. If you pull that tag from a Linux container environment, you get the Debian-based image. If you pull that tag from a Windows container environment, you get the Nano Server-based image.
+Since 2017, Docker has had a feature called [multi-arch](https://github.com/moby/moby/issues/15866) images. .NET Docker images can use multi-arch tags. Your Dockerfile files no longer need to define the operating system that you are targeting. The multi-arch feature allows a single tag to be used across multiple machine configurations. For instance, with multi-arch, you can use one common tag: **mcr.microsoft.com/dotnet/runtime:7.0**. If you pull that tag from a Linux container environment, you get the Debian-based image. If you pull that tag from a Windows container environment, you get the Nano Server-based image.
 
 For .NET Framework images, because the traditional .NET Framework supports only Windows, you cannot use the multi-arch feature.
 
@@ -119,11 +119,11 @@ Running a container on Windows with or without Hyper-V isolation is a run-time d
 
 - **Windows Containers documentation**
 
-    [https://docs.microsoft.com/virtualization/windowscontainers/](/virtualization/windowscontainers/)
+    [https://learn.microsoft.com/virtualization/windowscontainers/](/virtualization/windowscontainers/)
 
 - **Windows Containers fundamentals**
 
-    [https://docs.microsoft.com/virtualization/windowscontainers/about/](/virtualization/windowscontainers/about/)
+    [https://learn.microsoft.com/virtualization/windowscontainers/about/](/virtualization/windowscontainers/about/)
 
 - **Infographic: Microsoft and containers**
 

@@ -27,7 +27,7 @@ namespace Replay
         }
 
         //<snippet1>
-        private SecurityBindingElement CreateSymetricBindingForClient()
+        private SecurityBindingElement CreateSymmetricBindingForClient()
         {
             SymmetricSecurityBindingElement b = SecurityBindingElement.CreateKerberosBindingElement();
             b.LocalClientSettings.DetectReplays = true;

@@ -257,7 +257,7 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 
 ### Binary Serialization  
 
- If a class implements the <xref:System.Runtime.Serialization.ISerializable> interface, you can serialize an object to any SQL binary field (`BINARY`, `VARBINARY`, `IMAGE`). The object is serialized and deserialized according to how the <xref:System.Runtime.Serialization.ISerializable> interface is implemented. For more information, see [Binary Serialization](../../../../../standard/serialization/binary-serialization.md).
+ If a class implements the <xref:System.Runtime.Serialization.ISerializable> interface, you can serialize an object to any SQL binary field (`BINARY`, `VARBINARY`, `IMAGE`). The object is serialized and deserialized according to how the <xref:System.Runtime.Serialization.ISerializable> interface is implemented. For more information, see [Binary Serialization](/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization).
   
 <a name="MiscMapping"></a>
 

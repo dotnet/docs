@@ -40,8 +40,8 @@ Specifies whether to disable the caching of binding failures that occur because 
   
 |Value|Description|  
 |-----------|-----------------|  
-|0|Do not disable the caching of binding failures that occur because the assembly was not found by probing. This is the default binding behavior starting with the .NET Framework version 2.0.|  
-|1|Disable the caching of binding failures that occur because the assembly was not found by probing. This setting reverts to the binding behavior of the .NET Framework version 1.1.|  
+|0|Do not disable the caching of binding failures that occur because the assembly was not found by probing. This is the default binding behavior starting with .NET Framework version 2.0.|  
+|1|Disable the caching of binding failures that occur because the assembly was not found by probing. This setting reverts to the binding behavior of .NET Framework version 1.1.|  
   
 ### Child Elements  
 
@@ -56,7 +56,7 @@ Specifies whether to disable the caching of binding failures that occur because 
   
 ## Remarks  
 
- Starting with the .NET Framework version 2.0, the default behavior for loading assemblies is to cache all binding and loading failures. That is, if an attempt to load an assembly fails, subsequent requests to load the same assembly fail immediately, without any attempt to locate the assembly. This element disables that default behavior for binding failures that occur because the assembly could not be found in the probing path. These failures throw <xref:System.IO.FileNotFoundException>.  
+ Starting with .NET Framework version 2.0, the default behavior for loading assemblies is to cache all binding and loading failures. That is, if an attempt to load an assembly fails, subsequent requests to load the same assembly fail immediately, without any attempt to locate the assembly. This element disables that default behavior for binding failures that occur because the assembly could not be found in the probing path. These failures throw <xref:System.IO.FileNotFoundException>.  
   
  Some binding and loading failures are not affected by this element, and are always cached. These failures occur because the assembly was found but could not be loaded. They throw <xref:System.BadImageFormatException> or <xref:System.IO.FileLoadException>. The following list includes some examples of such failures.  
   

@@ -5,25 +5,31 @@ summary: Welcome to what's new in .NET docs. Use this page to quickly find the l
 metadata:
   title: .NET documentation what's new?
   description: Learn about new and updated content in .NET docs.
-  ms.date: 05/01/2022
+  ms.date: 05/01/2023
   ms.topic: landing-page
 landingContent:
-- title: Find .NET updates
+- title: .NET release updates
   linkLists:
   - linkListType: whats-new
     links:
-    - text: April 2022
-      url: dotnet-docs-2022-04-01.md
-    - text: March 2022
-      url: dotnet-docs-2022-03-01.md
-    - text: February 2022
-      url: dotnet-docs-2022-02-01.md
+    - text: .NET 7 updates
+      url: dotnet-7-docs.md
+- title: Latest documentation updates
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: April 2023
+      url: dotnet-docs-mod1.md
+    - text: March 2023
+      url: dotnet-docs-mod0.md
+    - text: February 2023
+      url: dotnet-docs-mod2.md
 - title: Find language updates
   linkLists:
   - linkListType: whats-new
     links:
-    - text: What's new in C# 9
-      url: ../csharp/whats-new/csharp-9.md
+    - text: What's new in C# 11
+      url: ../csharp/whats-new/csharp-11.md
     - text: What's new in F# 6
       url: ../fsharp/whats-new/fsharp-6.md
     - text: What's new for Visual Basic

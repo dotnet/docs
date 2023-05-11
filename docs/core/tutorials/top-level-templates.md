@@ -1,10 +1,9 @@
 ---
-title: "C# console app template changes in .NET 6"
-description: The .NET 6 project template for C# console apps uses top-level statements. Understand what's changed and how to use existing learning materials with the new syntax.
-ms.custom: updateeachrelease
-ms.date: 03/14/2022
+title: "C# console app template changes in .NET 6+"
+description: The .NET 6+ project template for C# console apps uses top-level statements. Understand what changed and how to use existing learning materials with the new syntax.
+ms.date: 11/08/2022
 ---
-# .NET 6 C# console app template generates top-level statements
+# C# console app template generates top-level statements
 
 Starting with .NET 6, the project template for new C# console apps generates the following code in the *Program.cs* file:
 
@@ -71,7 +70,18 @@ If you need `using` directives that aren't implicitly included, you can add them
 
 ### Disable implicit `using` directives
 
-If you want to remove this behavior and manually control all namespaces in your project, add [`<ImplicitUsings>disable</ImplicitUsings>`](../project-sdk/msbuild-props.md#implicitusings) in the project file.
+If you want to remove this behavior and manually control all namespaces in your project, add [`<ImplicitUsings>disable</ImplicitUsings>`](../project-sdk/msbuild-props.md#implicitusings) to your project file in the `<PropertyGroup>` element, as shown in the following example:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    ...
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+
+</Project>
+```
 
 ## Global `using` directives
 
@@ -87,91 +97,46 @@ You can also add a [`<Using>`](../project-sdk/msbuild-props.md#using) item with 
 
 ## Use the old program style
 
-While a .NET 6 console app template generates the new style of top-level statements programs, using .NET 5 doesn't. By creating a .NET 5 project, you'll receive the old program style. Then, you can edit the project file to target .NET 6 but retain the old program style for the *Program.cs* file.
+Starting with .NET SDK 6.0.300, the `console` template has a `--use-program-main` option. Use it to create a console project that doesn't use top-level statements and has a `Main` method.
 
-> [!IMPORTANT]
-> Creating a project that targets .NET 5 requires the .NET 5 templates. The .NET 5 templates can be installed manually with the [`dotnet new --install` command](../tools/dotnet-new-sdk-templates.md#console) or by [installing the .NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0).
+```dotnetcli
+dotnet new console --use-program-main
+```
 
-01. Create a new project that targets .NET 5.
+The generated `Program.cs` is as follows:
 
-    ```dotnetcli
-    dotnet new console --framework net5.0
-    ```
-
-01. Open the project file in a text editor and change `<TargetFramework>net5.0</TargetFramework>` to `<TargetFramework>net6.0</TargetFramework>`.
-
-    Here's a file diff that illustrates the changes:
-
-    ```diff
-    <Project Sdk="Microsoft.NET.Sdk">
-
-      <PropertyGroup>
-        <OutputType>Exe</OutputType>
-    -   <TargetFramework>net5.0</TargetFramework>
-    +   <TargetFramework>net6.0</TargetFramework>
-      </PropertyGroup>
-
-    </Project>
-    ```
-
-01. Optional step: you can still use some of the newer .NET 6 and C# features by adding the properties for [implicit `using` directives](#implicit-using-directives) and [nullable context](../../csharp/language-reference/compiler-options/language.md#nullable) to the project file.
-
-    ```diff
-    <Project Sdk="Microsoft.NET.Sdk">
-
-      <PropertyGroup>
-        <OutputType>Exe</OutputType>
-        <TargetFramework>net6.0</TargetFramework>
-    +   <ImplicitUsings>enable</ImplicitUsings>
-    +   <Nullable>enable</Nullable>
-      </PropertyGroup>
-
-    </Project>
-    ```
+```csharp
+namespace MyProject;
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, World!");
+    }
+}
+```
 
 ### Use the old program style in Visual Studio
 
-When you create a new console project in Visual Studio, you're prompted with a dropdown box that identifies which target framework you want to use. Change that value to **5.0**. After the project is created, edit the project file to change it back to **6.0**.
+01. When you create a new project, the setup steps will navigate to the **Additional information** setup page. On this page, select the **Do not use top-level statements** check box.
 
-01. When you create a new project, the setup steps will navigate to the **Additional information** setup page. On this page, change the framework setting from **.NET 6.0 (Long-term support)** to **.NET 5.0**, and then select the **Create** button.
+    :::image type="content" source="media/top-level-templates/vs-additional-information.png" alt-text="Visual Studio do not use top-level statements check box":::
 
-    :::image type="content" source="media/top-level-templates/vs-additional-information.png" alt-text="Visual Studio select the target .NET Framework 5.0":::
+01. After your project is created, the `Program.cs` content is as follows:
 
-01. After your project is created, find the **Project Explorer** pane. Double-click on the project file and change `<TargetFramework>net5.0</TargetFramework>` to `<TargetFramework>net6.0</TargetFramework>`.
-
-    Here's a file diff that illustrates the changes:
-
-    ```diff
-    <Project Sdk="Microsoft.NET.Sdk">
-
-      <PropertyGroup>
-        <OutputType>Exe</OutputType>
-    -   <TargetFramework>net5.0</TargetFramework>
-    +   <TargetFramework>net6.0</TargetFramework>
-      </PropertyGroup>
-
-    </Project>
+    ```csharp
+    namespace MyProject;
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+        }
+    }
     ```
 
-    Alternatively, you can right-click on the project in the **Solution Explorer** pane, and select **Properties**. This opens up a settings page where you can change the **Target framework**.
-
-    :::image type="content" source="media/top-level-templates/vs-project-properties.png" alt-text="Edit the project properties for Visual Studio and set the .NET Framework version.":::
-
-01. Optional step: you can still use some of the newer .NET 6 and C# features by adding the properties for [implicit `using` directives](#implicit-using-directives) and [nullable context](../../csharp/language-reference/compiler-options/language.md#nullable) to the project file.
-
-    ```diff
-    <Project Sdk="Microsoft.NET.Sdk">
-
-      <PropertyGroup>
-        <OutputType>Exe</OutputType>
-        <TargetFramework>net6.0</TargetFramework>
-    +   <ImplicitUsings>enable</ImplicitUsings>
-    +   <Nullable>enable</Nullable>
-      </PropertyGroup>
-
-    </Project>
-    ```
-
-## Template feedback
-
-[Top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) is a new feature in .NET 6. Add an up or down vote in [GitHub issue #27420](https://github.com/dotnet/docs/issues/27420) to let us know if you support the use of this feature in project templates.
+> [!NOTE]
+> Visual Studio preserves the value for the options next time you create the project based on the same template, so by default when creating Console App project next time the "Do not use top-level statements" check box will be checked.
+> The content of the `Program.cs` file might be different to match the code style defined in the global Visual Studio text editor settings or the `EditorConfig` file.
+>
+> For more information, see [Create portable, custom editor settings with EditorConfig](/visualstudio/ide/create-portable-custom-editor-options) and [Options, Text Editor, C#, Advanced](/visualstudio/ide/reference/options-text-editor-csharp-advanced).

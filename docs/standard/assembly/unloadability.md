@@ -1,22 +1,22 @@
 ---
-title: "How to use and debug assembly unloadability in .NET Core"
+title: "How to use and debug assembly unloadability in .NET"
 description: "Learn how to use collectible AssemblyLoadContext for loading and unloading managed assemblies and how to debug issues preventing the unloading success."
 author: "janvorli"
 ms.author: "janvorli"
-ms.date: "02/05/2019"
+ms.date: 09/16/2022
 ms.topic: how-to
 ---
-# How to use and debug assembly unloadability in .NET Core
+# How to use and debug assembly unloadability in .NET
 
-Starting with .NET Core 3.0, the ability to load and later unload a set of assemblies is supported. In .NET Framework, custom app domains were used for this purpose, but .NET Core only supports a single default app domain.
+.NET Core 3.0 introduced the ability to load and later unload a set of assemblies. In .NET Framework, custom app domains were used for this purpose, but .NET \[Core] only supports a single default app domain.
 
-.NET Core 3.0 and later versions support unloadability through <xref:System.Runtime.Loader.AssemblyLoadContext>. You can load a set of assemblies into a collectible `AssemblyLoadContext`, execute methods in them or just inspect them using reflection, and finally unload the `AssemblyLoadContext`. That unloads the assemblies loaded into the `AssemblyLoadContext`.
+Unloadability is supported through <xref:System.Runtime.Loader.AssemblyLoadContext>. You can load a set of assemblies into a collectible `AssemblyLoadContext`, execute methods in them or just inspect them using reflection, and finally unload the `AssemblyLoadContext`. That unloads the assemblies loaded into the `AssemblyLoadContext`.
 
 There's one noteworthy difference between the unloading using `AssemblyLoadContext` and using AppDomains. With AppDomains, the unloading is forced. At unload time, all threads running in the target AppDomain are aborted, managed COM objects created in the target AppDomain are destroyed, and so on. With `AssemblyLoadContext`, the unload is "cooperative". Calling the <xref:System.Runtime.Loader.AssemblyLoadContext.Unload%2A?displayProperty=nameWithType> method just initiates the unloading. The unloading finishes after:
 
 - No threads have methods from the assemblies loaded into the `AssemblyLoadContext` on their call stacks.
 - None of the types from the assemblies loaded into the `AssemblyLoadContext`, instances of those types, and the assemblies themselves are referenced by:
-  - References outside of the `AssemblyLoadContext`, except of weak references (<xref:System.WeakReference> or <xref:System.WeakReference%601>).
+  - References outside of the `AssemblyLoadContext`, except for weak references (<xref:System.WeakReference> or <xref:System.WeakReference%601>).
   - Strong garbage collector (GC) handles ([GCHandleType.Normal](xref:System.Runtime.InteropServices.GCHandleType.Normal) or [GCHandleType.Pinned](xref:System.Runtime.InteropServices.GCHandleType.Pinned)) from both inside and outside of the `AssemblyLoadContext`.
 
 ## Use collectible AssemblyLoadContext
@@ -25,7 +25,7 @@ This section contains a detailed step-by-step tutorial that shows a simple way t
 
 ### Create a collectible AssemblyLoadContext
 
-You need to derive your class from the <xref:System.Runtime.Loader.AssemblyLoadContext> and override its <xref:System.Runtime.Loader.AssemblyLoadContext.Load%2A?displayProperty=nameWithType> method. That method resolves references to all assemblies that are dependencies of assemblies loaded into that `AssemblyLoadContext`.
+Derive your class from the <xref:System.Runtime.Loader.AssemblyLoadContext> and override its <xref:System.Runtime.Loader.AssemblyLoadContext.Load%2A?displayProperty=nameWithType> method. That method resolves references to all assemblies that are dependencies of assemblies loaded into that `AssemblyLoadContext`.
 
 The following code is an example of the simplest custom `AssemblyLoadContext`:
 
@@ -242,7 +242,7 @@ The following code is used in the previous debugging example.
 
 [!code-csharp[Main testing program](~/samples/snippets/standard/assembly/unloading/unloadability_issues_example_main.cs)]
 
-## Program loaded into the TestAssemblyLoadContext
+### Program loaded into the TestAssemblyLoadContext
 
 The following code represents the *test.dll* passed to the `ExecuteAndUnload` method in the main testing program.
 

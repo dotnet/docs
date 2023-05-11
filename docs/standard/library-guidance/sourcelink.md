@@ -9,7 +9,7 @@ Source Link is a technology that enables source code debugging of .NET assemblie
 
 ## Source Link demo
 
-<!--markdownlint-disable MD034 -->
+<!--markdownlint-disable-next-line MD034 -->
 > [!VIDEO https://www.youtube.com/embed/gyRGhCQPkB4?start=61]
 
 ## Using Source Link

@@ -1,7 +1,7 @@
 ---
 title: Develop a grain
 description: Learn how to develop a grain in .NET Orleans.
-ms.date: 03/16/2022
+ms.date: 05/05/2023
 ---
 
 # Develop a grain
@@ -144,7 +144,7 @@ IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
 
 ### Grain method invocation
 
-The Orleans programming model is based on [asynchronous programming](../../csharp/async.md). Using the grain reference from the previous example, here's how to perform a grain method invocation:
+The Orleans programming model is based on [asynchronous programming](../../csharp/asynchronous-programming/index.md). Using the grain reference from the previous example, here's how to perform a grain method invocation:
 
 ```csharp
 // Invoking a grain method asynchronously
@@ -184,5 +184,14 @@ await joinedTask;
 
 ### Virtual methods
 
-A grain class can optionally override <xref:Orleans.Grain.OnActivateAsync%2A> and <xref:Orleans.Grain.OnDeactivateAsync%2A> virtual methods; these are invoked by the Orleans runtime upon activation and deactivation of each grain of the class. This gives the grain code a chance to perform additional initialization and cleanup operations. An exception thrown by `OnActivateAsync` fails the activation process.
+A grain class can optionally override <xref:Orleans.Grain.OnActivateAsync%2A> and <xref:Orleans.Grain.OnDeactivateAsync%2A> virtual methods; are invoked by the Orleans runtime upon activation and deactivation of each grain of the class. This gives the grain code a chance to perform additional initialization and cleanup operations. An exception thrown by `OnActivateAsync` fails the activation process.
+
 While `OnActivateAsync`, if overridden, is always called as part of the grain activation process, `OnDeactivateAsync` is not guaranteed to get called in all situations, for example, in case of a server failure or other abnormal event. Because of that, applications should not rely on `OnDeactivateAsync` for performing critical operations such as the persistence of state changes. They should use it only for best-effort operations.
+
+## See also
+
+- [Grain extensions](grain-extensions.md)
+- [Grain identity](grain-identity.md)
+- [Grain persistence](grain-persistence/index.md)
+- [Grain lifecycle overview](grain-lifecycle.md)
+- [Grain placement](grain-placement.md)

@@ -1,13 +1,13 @@
 ---
 title: Debug a .NET console application using Visual Studio Code
 description: Learn how to debug a .NET console app using Visual Studio Code.
-ms.date: 10/22/2021
-zone_pivot_groups: dotnet-version
+ms.date: 11/11/2022
+zone_pivot_groups: dotnet-version-6-7
 recommendations: false
 ---
 # Tutorial: Debug a .NET console application using Visual Studio Code
 
-::: zone pivot="dotnet-7-0,dotnet-6-0"
+::: zone pivot="dotnet-7-0"
 
 This tutorial introduces the debugging tools available in Visual Studio Code for working with .NET apps.
 
@@ -216,7 +216,7 @@ In this tutorial, you used Visual Studio Code debugging tools. In the next tutor
 
 ::: zone-end
 
-::: zone pivot="dotnet-5-0"
+::: zone pivot="dotnet-6-0"
 
 This tutorial introduces the debugging tools available in Visual Studio Code for working with .NET apps.
 
@@ -226,7 +226,7 @@ This tutorial introduces the debugging tools available in Visual Studio Code for
 
 ## Use Debug build configuration
 
-*Debug* and *Release* are .NET Core's built-in build configurations. You use the Debug build configuration for debugging and the Release configuration for the final release distribution.
+*Debug* and *Release* are .NET's built-in build configurations. You use the Debug build configuration for debugging and the Release configuration for the final release distribution.
 
 In the Debug configuration, a program compiles with full symbolic debug information and no optimization. Optimization complicates debugging, because the relationship between source code and generated instructions is more complex. The release configuration of a program has no symbolic debug information and is fully optimized.
 
@@ -238,7 +238,7 @@ By default, Visual Studio Code launch settings use the Debug build configuration
 
 ## Set a breakpoint
 
-A *breakpoint* temporarily interrupts the execution of the application before the line with the breakpoint is executed.
+A *breakpoint* temporarily interrupts the execution of the application before the line with the breakpoint is run.
 
 1. Open the *Program.cs* file.
 
@@ -246,7 +246,7 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
    Visual Studio Code indicates the line on which the breakpoint is set by displaying a red dot in the left margin.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-set.png" alt-text="Breakpoint set":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-set-net6.png" alt-text="Breakpoint set":::
 
 ## Set up for terminal input
 
@@ -266,7 +266,7 @@ The breakpoint is located after a `Console.ReadLine` method call. The **Debug Co
 
 1. Open the Debug view by selecting the Debugging icon on the left side menu.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/select-debug-pane.png" alt-text="Open the Debug tab in Visual Studio Code":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/select-debug-pane-net6.png" alt-text="Open the Debug tab in Visual Studio Code":::
 
 1. Select the green arrow at the top of the pane, next to **.NET Core Launch (console)**. Other ways to start the program in debugging mode are by pressing <kbd>F5</kbd> or choosing **Run** > **Start Debugging** from the menu.
 
@@ -274,13 +274,13 @@ The breakpoint is located after a `Console.ReadLine` method call. The **Debug Co
 
 1. Select the **Terminal** tab to see the "What is your name?" prompt that the program displays before waiting for a response.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/select-terminal.png" alt-text="Select the Terminal tab":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/select-terminal-net6.png" alt-text="Select the Terminal tab":::
 
 1. Enter a string in the **Terminal** window in response to the prompt for a name, and then press <kbd>Enter</kbd>.
 
-   Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes. The **Locals** section of the **Variables** window displays the values of variables that are defined in the currently executing method.
+   Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method runs. The **Locals** section of the **Variables** window displays the values of variables that are defined in the currently running method.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-hit.png" alt-text="Breakpoint hit, showing Locals":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-hit-net6.png" alt-text="Breakpoint hit, showing Locals":::
 
 ## Use the Debug Console
 
@@ -290,7 +290,7 @@ The **Debug Console** window lets you interact with the application you're debug
 
 1. Enter `name = "Gracie"` at the prompt at the bottom of the **Debug Console** window and press the <kbd>Enter</kbd> key.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/change-variable-values.png" alt-text="Change variable values":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/change-variable-values-net6.png" alt-text="Change variable values":::
 
 1. Enter `currentDate = DateTime.Parse("2019-11-16T17:25:00Z").ToUniversalTime()` at the bottom of the **Debug Console** window and press the <kbd>Enter</kbd> key.
 
@@ -314,7 +314,7 @@ The program displays the string that the user enters. What happens if the user d
 
 1. Right-click (<kbd>Ctrl</kbd>-click on macOS) on the red dot that represents the breakpoint. In the context menu, select **Edit Breakpoint** to open a dialog that lets you enter a conditional expression.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-context-menu.png" alt-text="Breakpoint context menu":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-context-menu-net6.png" alt-text="Breakpoint context menu":::
 
 1. Select `Expression` in the drop-down, enter the following conditional expression, and press <kbd>Enter</kbd>.
 
@@ -322,17 +322,17 @@ The program displays the string that the user enters. What happens if the user d
    String.IsNullOrEmpty(name)
    ```
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/conditional-expression.png" alt-text="Enter a conditional expression":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/conditional-expression-net6.png" alt-text="Enter a conditional expression":::
 
    Each time the breakpoint is hit, the debugger calls the `String.IsNullOrEmpty(name)` method, and it breaks on this line only if the method call returns `true`.
 
-   Instead of a conditional expression, you can specify a *hit count*, which interrupts program execution before a statement is executed a specified number of times. Another option is to specify a *filter condition*, which interrupts program execution based on such attributes as a thread identifier, process name, or thread name.
+   Instead of a conditional expression, you can specify a *hit count*, which interrupts program execution before a statement is run a specified number of times. Another option is to specify a *filter condition*, which interrupts program execution based on such attributes as a thread identifier, process name, or thread name.
 
 1. Start the program with debugging by pressing <kbd>F5</kbd>.
 
 1. In the **Terminal** tab, press the <kbd>Enter</kbd> key when prompted to enter your name.
 
-   Because the condition you specified (`name` is either `null` or <xref:System.String.Empty?displayProperty=nameWithType>) has been satisfied, program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes.
+   Because the condition you specified (`name` is either `null` or <xref:System.String.Empty?displayProperty=nameWithType>) has been satisfied, program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method runs.
 
    The **Variables** window shows that the value of the `name` variable is `""`, or <xref:System.String.Empty?displayProperty=nameWithType>.
 
@@ -341,8 +341,6 @@ The program displays the string that the user enters. What happens if the user d
    ```csharp
    name == String.Empty
    ```
-
-   :::image type="content" source="media/debugging-with-visual-studio-code/expression-in-debug-console.png" alt-text="Debug Console returning a value of true after the statement is executed":::
 
 1. Select the **Continue** button on the toolbar to continue program execution.
 
@@ -372,7 +370,7 @@ Visual Studio Code also allows you to step line by line through a program and mo
 
 1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
 
-   Visual Studio Code executes the `Console.WriteLine` for the name prompt and highlights the next line of execution. The next line is the `Console.ReadLine` for the `name`. The **Variables** window is unchanged, and the **Terminal** tab shows the "What is your name?" prompt.
+   Visual Studio Code runs the `Console.WriteLine` for the name prompt and highlights the next line of execution. The next line is the `Console.ReadLine` for the `name`. The **Variables** window is unchanged, and the **Terminal** tab shows the "What is your name?" prompt.
 
 1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
 
@@ -424,11 +422,5 @@ In this tutorial, you used Visual Studio Code debugging tools. In the next tutor
 
 > [!div class="nextstepaction"]
 > [Publish a .NET console application using Visual Studio Code](publishing-with-visual-studio-code.md)
-
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-
-This tutorial is only available for .NET 5 and .NET 6. Select one of those options at the top of the page.
 
 ::: zone-end

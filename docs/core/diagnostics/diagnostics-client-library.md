@@ -10,7 +10,7 @@ ms.author: tommcdon
 
 **This article applies to: ✔️** .NET Core 3.0 SDK and later versions for target apps, .NET Standard 2.0 to use the library.
 
-Microsoft.Diagnostics.NETCore.Client (also known as the Diagnostics client library) is a managed library that lets you interact with .NET Core runtime (CoreCLR) for various diagnostics related tasks, such as tracing via [EventPipe](eventpipe.md), requesting a dump, or attaching an ICorProfiler. This library is the backing library behind many diagnostics tools such as [`dotnet-counters`](dotnet-counters.md), [`dotnet-trace`](dotnet-trace.md), [`dotnet-gcdump`](dotnet-gcdump.md), and [`dotnet-dump`](dotnet-dump.md). Using this library, you can write your own diagnostics tools customized for your particular scenario.
+`Microsoft.Diagnostics.NETCore.Client` (also known as the Diagnostics client library) is a managed library that lets you interact with .NET Core runtime (CoreCLR) for various diagnostics related tasks, such as tracing via [EventPipe](eventpipe.md), requesting a dump, or attaching an `ICorProfiler`. This library is the backing library behind many diagnostics tools such as [dotnet-counters](dotnet-counters.md), [dotnet-trace](dotnet-trace.md), [dotnet-gcdump](dotnet-gcdump.md), [dotnet-dump](dotnet-dump.md), and [dotnet-monitor](dotnet-monitor.md). Using this library, you can write your own diagnostics tools customized for your particular scenario.
 
 You can acquire [Microsoft.Diagnostics.NETCore.Client](https://www.nuget.org/packages/Microsoft.Diagnostics.NETCore.Client/) by adding a `PackageReference` to your project. The package is hosted on `NuGet.org`.
 
@@ -48,7 +48,7 @@ This sample shows how to use `DiagnosticsClient.GetPublishedProcesses` API to pr
 
 ## Parse events in real time
 
-This sample shows an example where we create two tasks, one that parses the events coming in live with `EventPipeEventSource` and one that reads the console input for a user input signaling the program to end. If the target app exists before the users presses enter, the app exists gracefully. Otherwise, `inputTask` will send the Stop command to the pipe and exit gracefully.
+This sample shows an example where we create two tasks, one that parses the events coming in live with `EventPipeEventSource` and one that reads the console input for a user input signaling the program to end. If the target app exits before the user presses enter, the app exits gracefully. Otherwise, `inputTask` will send the Stop command to the pipe and exit gracefully.
 
 :::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/csharp/PrintEventsLive.cs":::
 

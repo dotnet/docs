@@ -36,7 +36,7 @@ The compiler embeds the type information into the executable file as metadata. T
 
 ## Specifying types in variable declarations
 
-When you declare a variable or constant in a program, you must either specify its type or use the [`var`](../../language-reference/keywords/var.md) keyword to let the compiler infer the type. The following example shows some variable declarations that use both built-in numeric types and complex user-defined types:
+When you declare a variable or constant in a program, you must either specify its type or use the [`var`](../../language-reference/statements/declarations.md#implicitly-typed-local-variables) keyword to let the compiler infer the type. The following example shows some variable declarations that use both built-in numeric types and complex user-defined types:
 
 :::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="Declarations":::
 
@@ -150,7 +150,7 @@ The use of the type parameter makes it possible to reuse the same class to hold 
 
 ## Implicit types, anonymous types, and nullable value types
 
-You can implicitly type a local variable (but not class members) by using the [`var`](../../language-reference/keywords/var.md) keyword. The variable still receives a type at compile time, but the type is provided by the compiler. For more information, see [Implicitly Typed Local Variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
+You can implicitly type a local variable (but not class members) by using the [`var`](../../language-reference/statements/declarations.md#implicitly-typed-local-variables) keyword. The variable still receives a type at compile time, but the type is provided by the compiler. For more information, see [Implicitly Typed Local Variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
 
 It can be inconvenient to create a named type for simple sets of related values that you don't intend to store or pass outside method boundaries. You can create *anonymous types* for this purpose. For more information, see [Anonymous Types](anonymous-types.md).
 

@@ -22,7 +22,7 @@ Prior to .NET Framework 4.5, asynchronous programming with SqlClient was done wi
 This functionality remains in SqlClient in .NET Framework 4.5.
 
 > [!TIP]
-> Beginning in the .NET Framework 4.5, these legacy methods no longer require `Asynchronous Processing=true` in the connection string.
+> Beginning in .NET Framework 4.5, these legacy methods no longer require `Asynchronous Processing=true` in the connection string.
 
 ## Asynchronous Programming Features Added in .NET Framework 4.5
 
@@ -30,7 +30,7 @@ The new asynchronous programming feature provides a simple technique to make cod
 
 For more information about the asynchronous programming feature that was introduced in .NET Framework 4.5, see:
 
-- [Asynchronous programming in C#](../../../csharp/async.md)
+- [Asynchronous programming in C#](../../../csharp/asynchronous-programming/index.md)
 
 - [Asynchronous Programming with Async and Await (Visual Basic)](../../../visual-basic/programming-guide/concepts/async/index.md)
 

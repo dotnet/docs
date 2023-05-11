@@ -28,14 +28,14 @@ As when implementing retries, the recommended approach for circuit breakers is t
 
 Adding a circuit breaker policy into your `IHttpClientFactory` outgoing middleware pipeline is as simple as adding a single incremental piece of code to what you already have when using `IHttpClientFactory`.
 
-The only addition here to the code used for HTTP call retries is the code where you add the Circuit Breaker policy to the list of policies to use, as shown in the following incremental code, part of the `ConfigureServices()` method.
+The only addition here to the code used for HTTP call retries is the code where you add the Circuit Breaker policy to the list of policies to use, as shown in the following incremental code.
 
 ```csharp
-//ConfigureServices()  - Startup.cs
+// Program.cs
 var retryPolicy = GetRetryPolicy();
 var circuitBreakerPolicy = GetCircuitBreakerPolicy();
 
-services.AddHttpClient<IBasketService, BasketService>()
+builder.Services.AddHttpClient<IBasketService, BasketService>()
         .SetHandlerLifetime(TimeSpan.FromMinutes(5))  // Sample: default lifetime is 2 minutes
         .AddHttpMessageHandler<HttpClientAuthorizationDelegatingHandler>()
         .AddPolicyHandler(retryPolicy)
@@ -47,6 +47,7 @@ The `AddPolicyHandler()` method is what adds policies to the `HttpClient` object
 To have a more modular approach, the Circuit Breaker Policy is defined in a separate method called `GetCircuitBreakerPolicy()`, as shown in the following code:
 
 ```csharp
+// also in Program.cs
 static IAsyncPolicy<HttpResponseMessage> GetCircuitBreakerPolicy()
 {
     return HttpPolicyExtensions
@@ -145,7 +146,7 @@ Finally, another possibility for the `CircuitBreakerPolicy` is to use `Isolate` 
 ## Additional resources
 
 - **Circuit Breaker pattern**\
-  [https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker](/azure/architecture/patterns/circuit-breaker)
+  [https://learn.microsoft.com/azure/architecture/patterns/circuit-breaker](/azure/architecture/patterns/circuit-breaker)
 
 >[!div class="step-by-step"]
 >[Previous](implement-http-call-retries-exponential-backoff-polly.md)

@@ -1,0 +1,37 @@
+name: "bulk quest import"
+on:
+  schedule:
+    - cron: '0 10 * * *' # UTC time, that's 5:00 am EST, 2:00 am PST.
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: "The reason for running the bulk import workflow"
+        required: true
+        default: "Initial import into Quest (Azure DevOps)"
+
+jobs:
+  bulk-import:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    if: ${{ github.repository_owner == 'dotnet' }}
+    steps:
+      - name: "Print manual bulk import run reason"
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        run: |
+          echo "Reason: ${{ github.event.inputs.reason }}"
+
+      - name: bulk-sequester
+        id: bulk-sequester
+        uses: dotnet/docs-tools/actions/sequester@main
+        env:
+          ImportOptions__ApiKeys__GitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          ImportOptions__ApiKeys__OSPOKey: ${{ secrets.OSPO_KEY }}
+          ImportOptions__ApiKeys__QuestKey: ${{ secrets.QUEST_KEY }}
+          ImportOptions__ApiKeys__SequesterPrivateKey: ${{ secrets.SEQUESTER_PRIVATEKEY }}
+          ImportOptions__ApiKeys__SequesterAppID: ${{ secrets.SEQUESTER_SEQUESTER_APPID }}
+          
+        with:
+          org: ${{ github.repository_owner }}
+          repo: ${{ github.repository }}
+          issue: '-1'

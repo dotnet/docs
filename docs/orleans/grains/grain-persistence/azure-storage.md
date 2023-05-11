@@ -1,7 +1,7 @@
 ---
 title: Azure Storage grain persistence
 description: Learn about Azure Storage grain persistence in .NET Orleans.
-ms.date: 03/15/2022
+ms.date: 02/08/2023
 ---
 
 # Azure Storage grain persistence
@@ -19,7 +19,6 @@ siloBuilder.AddAzureTableGrainStorage(
     name: "profileStore",
     configureOptions: options =>
     {
-        options.UseJson = true;
         options.ConfigureTableServiceClient(
             "DefaultEndpointsProtocol=https;AccountName=data1;AccountKey=SOMETHING1");
     });
@@ -36,8 +35,7 @@ siloBuilder.AddAzureBlobGrainStorage(
     name: "profileStore",
     configureOptions: options =>
     {
-        options.UseJson = true;
-        options.ConnectionString =
-             "DefaultEndpointsProtocol=https;AccountName=data1;AccountKey=SOMETHING1";
+        options.ConfigureBlobServiceClient(
+             "DefaultEndpointsProtocol=https;AccountName=data1;AccountKey=SOMETHING1");
     });
 ```

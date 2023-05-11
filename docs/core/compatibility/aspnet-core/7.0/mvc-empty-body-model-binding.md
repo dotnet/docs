@@ -21,7 +21,7 @@ The previous behavior performed a minimal validation of `Content-Length = 0`. In
 
 ## Version introduced
 
-ASP.NET Core 7.0 Preview 3
+ASP.NET Core 7.0
 
 ## Previous behavior
 
@@ -54,7 +54,7 @@ The following example JSON shows the previous exception formatted as a <xref:Mic
 
 ## New behavior
 
-Deserialization is no longer attempted if <xref:Microsoft.AspNetCore.Http.Features.IHttpRequestBodyDetectionFeature.CanHaveBody%2A?displayProperty=nameWithType> is `true`. The following example <xref:Microsoft.AspNetCore.Mvc.ProblemDetails> response shows how the error message returned to clients indicates that the request body is empty:
+Deserialization is no longer attempted if <xref:Microsoft.AspNetCore.Http.Features.IHttpRequestBodyDetectionFeature.CanHaveBody%2A?displayProperty=nameWithType> is `false`. The following example <xref:Microsoft.AspNetCore.Mvc.ProblemDetails> response shows how the error message returned to clients indicates that the request body is empty:
 
 ```json
 {

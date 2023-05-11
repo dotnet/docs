@@ -13,7 +13,7 @@ ms.assetid: c0a9bcdf-3df8-4db3-b1b6-abbdb2af809a
 ---
 # Default Marshalling Behavior
 
-Interop marshalling operates on rules that dictate how data associated with method parameters behaves as it passes between managed and unmanaged memory. These built-in rules control such marshalling activities as data type transformations, whether a callee can change data passed to it and return those changes to the caller, and under which circumstances the m marshallerrovides performance optimizations.  
+Interop marshalling operates on rules that dictate how data associated with method parameters behaves as it passes between managed and unmanaged memory. These built-in rules control such marshalling activities as data type transformations, whether a callee can change data passed to it and return those changes to the caller, and under which circumstances the marshaller provides performance optimizations.  
   
  This section identifies the default behavioral characteristics of the interop marshalling service. It presents detailed information on marshalling arrays, Boolean types, char types, delegates, classes, objects, strings, and structures.  
   

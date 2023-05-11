@@ -21,6 +21,8 @@ A second challenge is how to implement queries that retrieve data from several m
 
 **API Gateway.** For simple data aggregation from multiple microservices that own different databases, the recommended approach is an aggregation microservice referred to as an API Gateway. However, you need to be careful about implementing this pattern, because it can be a choke point in your system, and it can violate the principle of microservice autonomy. To mitigate this possibility, you can have multiple fined-grained API Gateways each one focusing on a vertical "slice" or business area of the system. The API Gateway pattern is explained in more detail in the [API Gateway section](direct-client-to-microservice-communication-versus-the-api-gateway-pattern.md#why-consider-api-gateways-instead-of-direct-client-to-microservice-communication) later.
 
+**GraphQL Federation** One option to consider if your microservices are already using GraphQL is [GraphQL Federation](https://www.apollographql.com/docs/federation/). Federation allows you to define "subgraphs" from other services and compose them into an aggregate "supergraph" that acts as a standalone schema.
+
 **CQRS with query/reads tables.** Another solution for aggregating data from multiple microservices is the [Materialized View pattern](/azure/architecture/patterns/materialized-view). In this approach, you generate, in advance (prepare denormalized data before the actual queries happen), a read-only table with the data that's owned by multiple microservices. The table has a format suited to the client app's needs.
 
 Consider something like the screen for a mobile app. If you have a single database, you might pull together the data for that screen using a SQL query that performs a complex join involving multiple tables. However, when you have multiple databases, and each database is owned by a different microservice, you cannot query those databases and create a SQL join. Your complex query becomes a challenge. You can address the requirement using a CQRS approach—you create a denormalized table in a different database that's used just for queries. The table can be designed specifically for the data you need for the complex query, with a one-to-one relationship between fields needed by your application's screen and the columns in the query table. It could also serve for reporting purposes.
@@ -86,19 +88,19 @@ The use of asynchronous communication is explained with additional details later
   <https://en.wikipedia.org/wiki/Eventual_consistency>
 
 - **Data Consistency Primer** \
-  [https://docs.microsoft.com/previous-versions/msp-n-p/dn589800(v=pandp.10)](/previous-versions/msp-n-p/dn589800(v=pandp.10))
+  [https://learn.microsoft.com/previous-versions/msp-n-p/dn589800(v=pandp.10)](/previous-versions/msp-n-p/dn589800(v=pandp.10))
 
 - **Martin Fowler. CQRS (Command and Query Responsibility Segregation)** \
   <https://martinfowler.com/bliki/CQRS.html>
 
 - **Materialized View** \
-  [https://docs.microsoft.com/azure/architecture/patterns/materialized-view](/azure/architecture/patterns/materialized-view)
+  [https://learn.microsoft.com/azure/architecture/patterns/materialized-view](/azure/architecture/patterns/materialized-view)
 
 - **Charles Row. ACID vs. BASE: The Shifting pH of Database Transaction Processing** \
   <https://www.dataversity.net/acid-vs-base-the-shifting-ph-of-database-transaction-processing/>
 
 - **Compensating Transaction** \
-  [https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction](/azure/architecture/patterns/compensating-transaction)
+  [https://learn.microsoft.com/azure/architecture/patterns/compensating-transaction](/azure/architecture/patterns/compensating-transaction)
 
 - **Udi Dahan. Service Oriented Composition** \
   <https://udidahan.com/2014/07/30/service-oriented-composition-with-video/>

@@ -70,6 +70,7 @@ For more information on file scoped namespace declarations, see the [feature spe
 
 ## See also
 
+- [Namespace declaration preferences (IDE0160 and IDE0161)](../../../fundamentals/code-analysis/style-rules/ide0160-ide0161.md)
 - [C# reference](../index.md)
 - [C# keywords](index.md)
 - [using](using-directive.md)

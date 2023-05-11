@@ -135,7 +135,7 @@ Partial Class Vehicle
 End Class
 '</snippet4>
 
-Namespace ImporteExport4
+Namespace ImportExport4
 
     '<snippet5>
     Partial Class Vehicle

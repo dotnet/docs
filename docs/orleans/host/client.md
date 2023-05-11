@@ -1,7 +1,8 @@
 ---
 title: Orleans clients
 description: Learn how to write .NET Orleans clients.
-ms.date: 03/16/2022
+ms.date: 01/13/2023
+zone_pivot_groups: orleans-version
 ---
 
 # Orleans clients
@@ -12,7 +13,7 @@ A client allows non-grain code to interact with an Orleans cluster. Clients allo
 
 If the client code is hosted in the same process as the grain code, then the client can be directly obtained from the hosting application's dependency injection container. In this case, the client communicates directly with the silo it is attached to and can take advantage of the extra knowledge that the silo has about the cluster.
 
-This provides several benefits, including reducing network and CPU overhead as well as decreasing latency and increasing throughput and reliability. The client utilizes the silo's knowledge of the cluster topology and state and does not need to use a separate gateway. This avoids a network hop and serialization/deserialization round trip. This therefore also increases reliability, since the number of required nodes in between the client and the grain is minimized. If the grain is a [stateless worker grain](../grains/stateless-worker-grains.md) or otherwise happens to be activated on the silo which the client is hosted in, then no serialization or network communication needs to be performed at all and the client can reap the additional performance and reliability gains. Co-hosting client and grain code also simplifies deployment and application topology by eliminating the need for two distinct application binaries to be deployed and monitored.
+This provides several benefits, including reducing network and CPU overhead as well as decreasing latency and increasing throughput and reliability. The client utilizes the silo's knowledge of the cluster topology and state and does not need to use a separate gateway. This avoids a network hop and serialization/deserialization round trip. This therefore also increases reliability, since the number of required nodes in between the client and the grain is minimized. If the grain is a [stateless worker grain](../grains/stateless-worker-grains.md) or otherwise happens to be activated on the silo where the client is hosted, then no serialization or network communication needs to be performed at all and the client can reap the additional performance and reliability gains. Co-hosting client and grain code also simplifies deployment and application topology by eliminating the need for two distinct application binaries to be deployed and monitored.
 
 There are also detractors to this approach, primarily that the grain code is no longer isolated from the client process. Therefore, issues in client code, such as blocking IO or lock contention causing thread starvation can affect the performance of grain code. Even without code defects like the aforementioned, *noisy neighbor* effects can result simply by having the client code execute on the same processor as grain code, putting additional strain on CPU cache and additional contention for local resources in general. Additionally, identifying the source of these issues is now more difficult because monitoring systems cannot distinguish what is logically client code from grain code.
 
@@ -25,7 +26,19 @@ Despite these detractors, co-hosting client code with grain code is a popular op
 
 If hosting using the [.NET Generic Host](../../core/extensions/generic-host.md), the client will be available in the host's [dependency injection](../../core/extensions/dependency-injection.md) container automatically and can be injected into services such as [ASP.NET controllers](/aspnet/core/mvc/controllers/actions) or <xref:Microsoft.Extensions.Hosting.IHostedService> implementations.
 
-Alternatively, a client interface such as <xref:Orleans.IGrainFactory> or <xref:Orleans.IClusterClient> can be obtained from either <xref:Microsoft.Extensions.Hosting.IHost> or <xref:Orleans.Hosting.ISiloHost>:
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
+
+Alternatively, a client interface such as <xref:Orleans.IGrainFactory> or <xref:Orleans.IClusterClient> can be obtained from <xref:Orleans.Hosting.ISiloHost>:
+
+:::zone-end
 
 ```csharp
 var client = host.Services.GetService<IClusterClient>();
@@ -34,26 +47,54 @@ await client.GetGrain<IMyGrain>(0).Ping();
 
 ## External clients
 
-Client code can run outside of the Orleans cluster where grain code is hosted.
-Hence, an external client acts as a connector or conduit to the cluster and all grains of the application.
+Client code can run outside of the Orleans cluster where grain code is hosted. Hence, an external client acts as a connector or conduit to the cluster and all grains of the application. Usually, clients are used on the frontend web servers to connect to an Orleans cluster that serves as a middle tier with grains executing business logic.
 
-<!-- TODO:
-![](~/images/frontend_cluster.png)
--->
-
-Usually, clients are used on the frontend web servers to connect to an Orleans cluster that serves as a middle tier with grains executing business logic.
 In a typical setup, a frontend webserver:
 
-* Receives a web request
-* Performs necessary authentication and authorization validation
-* Decides which grain(s) should process the request
-* Uses <xref:Orleans.GrainClient> to make one or more method call to the grain(s)
-* Handles successful completion or failures of the grain calls and any returned values
-* Sends a response for the web request
+* Receives a web request.
+* Performs necessary authentication and authorization validation.
+* Decides which grain(s) should process the request.
+* Uses the [Microsoft.Orleans.Client](https://www.nuget.org/packages/Microsoft.Orleans.Client) NuGet package to make one or more method call to the grain(s).
+* Handles successful completion or failures of the grain calls and any returned values.
+* Sends a response to the web request.
 
 ### Initialization of grain client
 
 Before a grain client can be used for making calls to grains hosted in an Orleans cluster, it needs to be configured, initialized, and connected to the cluster.
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+Configuration is provided via <xref:Microsoft.Extensions.Hosting.OrleansClientGenericHostExtensions.UseOrleansClient%2A> and several supplemental option classes that contain a hierarchy of configuration properties for programmatically configuring a client. For more information, see [Client configuration](configuration-guide/client-configuration.md).
+
+Consider the following example of a client configuration:
+
+```csharp
+// Alternatively, call Host.CreateDefaultBuilder(args) if using the 
+// Microsoft.Extensions.Hosting NuGet package.
+using IHost host = new HostBuilder()
+    .UseOrleansClient(clientBuilder =>
+    {
+        clientBuilder.Configure<ClusterOptions>(options =>
+        {
+            options.ClusterId = "my-first-cluster";
+            options.ServiceId = "MyOrleansService";
+        });
+
+        clientBuilder.UseAzureStorageClustering(
+            options => options.ConfigureTableServiceClient(connectionString))
+    })
+    .Build();
+```
+
+When the `host` is started, the client will be configured and available through its constructed service provider instance.
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
 
 Configuration is provided via <xref:Orleans.ClientBuilder> and several supplemental option classes that contain a hierarchy of configuration properties for programmatically configuring a client. For more information, see [Client configuration](configuration-guide/client-configuration.md).
 
@@ -73,15 +114,17 @@ var client = new ClientBuilder()
     .Build();
 ```
 
-Lastly, we need to call `Connect()` method on the constructed client object to make it connect to the Orleans cluster. It's an asynchronous method that returns a `Task`. So we need to wait for its completion with an `await` or `.Wait()`.
+Lastly, you need to call `Connect()` method on the constructed client object to make it connect to the Orleans cluster. It's an asynchronous method that returns a `Task`. So you need to wait for its completion with an `await` or `.Wait()`.
 
 ```csharp
 await client.Connect();
 ```
 
+:::zone-end
+
 ### Make calls to grains
 
-Making calls to grain from a client is no different from [making such calls from within grain code](../grains/index.md). The same <xref:Orleans.IGrainFactory.GetGrain%60%601(System.Type,System.Guid)?displayProperty=nameWithType> method, where `T` is the target grain interface, is used in both cases [to obtain grain references](../grains/index.md#grain-reference). The slight difference is in through what factory object we invoke <xref:Orleans.IGrainFactory.GetGrain%2A?displayProperty=nameWithType>. In client code, we do that through the connected client object as the following example shows:
+Making calls to grain from a client is no different from [making such calls from within grain code](../grains/index.md). The same <xref:Orleans.IGrainFactory.GetGrain%60%601(System.Type,System.Guid)?displayProperty=nameWithType> method, where `T` is the target grain interface, is used in both cases [to obtain grain references](../grains/index.md#grain-reference). The difference is in what factory object is invoked <xref:Orleans.IGrainFactory.GetGrain%2A?displayProperty=nameWithType>. In client code, you do that through the connected client object as the following example shows:
 
 ```csharp
 IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
@@ -98,11 +141,30 @@ The major difference between making calls to grains from client code and from wi
 
 There are situations in which a simple request-response pattern is not enough, and the client needs to receive asynchronous notifications. For example, a user might want to be notified when a new message has been published by someone that she is following.
 
-The use of [Observers](../grains/observers.md) is one such mechanism that enables exposing client-side objects as grain-like targets to get invoked by grains. Calls to observers do not provide any indication of success or failure, as they are sent as a one-way best effort message. So it is the responsibility of the application code to build a higher level reliability mechanism on top of observers where necessary.
+The use of [Observers](../grains/observers.md) is one such mechanism that enables exposing client-side objects as grain-like targets to get invoked by grains. Calls to observers do not provide any indication of success or failure, as they are sent as a one-way best effort message. So it is the responsibility of the application code to build a higher-level reliability mechanism on top of observers where necessary.
 
 Another mechanism that can be used for delivering asynchronous messages to clients is [Streams](../streaming/index.md). Streams expose indications of success or failure of delivery of individual messages, and hence enable reliable communication back to the client.
 
 ### Client connectivity
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+There are two scenarios in which a cluster client can experience connectivity issues:
+
+* When the client attempts to connect to a silo.
+* When making calls on grain references that were obtained from a connected cluster client.
+
+In the first case, the client will attempt to connect to a silo. If the client is unable to connect to any silo, it will throw an exception to indicate what went wrong. You can register an <xref:Orleans.IClientConnectionRetryFilter> to handle the exception and decide whether to retry or not. If no retry filter is provided, or if the retry filter returns `false`, the client gives up for good.
+
+:::code source="snippets/ClientConnectRetryFilter.cs":::
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
 
 There are two scenarios in which a cluster client can experience connectivity issues:
 
@@ -122,20 +184,11 @@ var client = new ClientBuilder()
     .Build();
 ```
 
+:::zone-end
+
 In the second case, where a connection issue occurs during a grain call, a <xref:Orleans.Runtime.SiloUnavailableException> will be thrown on the client-side. This could be handled like so:
 
-```csharp
-IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
-
-try
-{
-    await player.JoinGame(game);
-}
-catch (SiloUnavailableException)
-{
-    // Lost connection to the cluster...
-}
-```
+:::code source="snippets/Program.cs" id="siloexc":::
 
 The grain reference is not invalidated in this situation; the call could be retried on the same reference later when a connection might have been re-established.
 
@@ -217,6 +270,18 @@ public class HomeController : Controller
 
 Here is an extended version of the example given above of a client application that connects to Orleans, finds the player account, subscribes for updates to the game session the player is part of with an observer, and prints out notifications until the program is manually terminated.
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+:::code source="snippets/ExampleExternalProgram.cs" id="program":::
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
+
 ```csharp
 await RunWatcherAsync();
 
@@ -295,3 +360,5 @@ class GameObserver : IGameObserver
     }
 }
 ```
+
+:::zone-end

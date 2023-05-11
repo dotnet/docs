@@ -34,7 +34,7 @@
             this.buttonEncryptFile = new System.Windows.Forms.Button();
             this._encryptOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.buttonCreateAsmKeys = new System.Windows.Forms.Button();
-            this._decryptOpeFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this._decryptOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.grpAsmKeys = new System.Windows.Forms.GroupBox();
             this.buttonGetPrivateKey = new System.Windows.Forms.Button();
             this.buttonImportPublicKey = new System.Windows.Forms.Button();
@@ -102,8 +102,8 @@
             //
             // openFileDialog2
             //
-            this._decryptOpeFileDialog.Filter = "Encrypted files (*.enc) | *.enc|All files (*.*)|*.*";
-            this._decryptOpeFileDialog.InitialDirectory = "c:\\encrypt";
+            this._decryptOpenFileDialog.Filter = "Encrypted files (*.enc) | *.enc|All files (*.*)|*.*";
+            this._decryptOpenFileDialog.InitialDirectory = "c:\\encrypt";
             //
             // grpAsmKeys
             //
@@ -116,7 +116,7 @@
             this.grpAsmKeys.Size = new System.Drawing.Size(160, 138);
             this.grpAsmKeys.TabIndex = 42;
             this.grpAsmKeys.TabStop = false;
-            this.grpAsmKeys.Text = "Asymetric Keys";
+            this.grpAsmKeys.Text = "Asymmetric Keys";
             //
             // buttonGetPrivateKey
             //
@@ -183,7 +183,7 @@
         private System.Windows.Forms.Button buttonEncryptFile;
         private System.Windows.Forms.OpenFileDialog _encryptOpenFileDialog;
         private System.Windows.Forms.Button buttonCreateAsmKeys;
-        private System.Windows.Forms.OpenFileDialog _decryptOpeFileDialog;
+        private System.Windows.Forms.OpenFileDialog _decryptOpenFileDialog;
         private System.Windows.Forms.GroupBox grpAsmKeys;
         private System.Windows.Forms.Button buttonExportPublicKey;
         private System.Windows.Forms.Button buttonImportPublicKey;

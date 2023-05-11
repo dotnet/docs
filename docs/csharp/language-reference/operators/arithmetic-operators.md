@@ -100,7 +100,7 @@ The division operator `/` divides its left-hand operand by its right-hand operan
 
 ### Integer division
 
-For the operands of integer types, the result of the `/` operator is of an integer type and equals the quotient of the two operands rounded towards zero:
+For the operands of integer types, the result of the `/` operator is of an integer type and equals the quotient of the two operands rounded down:
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="IntegerDivision":::
 

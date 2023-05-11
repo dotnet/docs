@@ -899,7 +899,7 @@ Code examples:
 int[] x = new int[] { 1, 2, 3, 4, 5 };
 
 // csharp_space_after_comma = false
-int[] x = new int[] { 1,2,3,4,5 }
+int[] x = new int[] { 1,2,3,4,5 };
 ```
 
 ### csharp_space_before_comma

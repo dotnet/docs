@@ -23,6 +23,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1001][1001] | Logging method names cannot start with `_`                                                                   |
 | [SYSLIB1002][1002] | Don't include log level parameters as templates in the logging message                                       |
 | [SYSLIB1003][1003] | `InvalidLoggingMethodParameterNameTitle`                                                                     |
+| SYSLIB1004 | Logging class cannot be in nested types.                                                                     |
 | [SYSLIB1005][1005] | Could not find a required type definition                                                                    |
 | [SYSLIB1006][1006] | Multiple logging methods cannot use the same event ID within a class                                         |
 | [SYSLIB1007][1007] | Logging methods must return `void`                                                                           |
@@ -39,13 +40,20 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1018][1018] | Don't include logger parameters as templates in the logging message                                          |
 | [SYSLIB1019][1019] | Couldn't find a field of type `Microsoft.Extensions.Logging.ILogger`                                         |
 | [SYSLIB1020][1020] | Found multiple fields of type `Microsoft.Extensions.Logging.ILogger`                                         |
-| [SYSLIB1021][1021] | Multiple message-template item names differ only by case                                              |
-| [SYSLIB1022][1022] | Can't have malformed format strings (for example, dangling curly braces)                                     |
-| [SYSLIB1023][1023] | Generating more than six arguments is not supported                                                          |
+| [SYSLIB1021][1021] | Multiple message-template item names differ only by case |
+| [SYSLIB1022][1022] | Can't have malformed format strings (for example, dangling curly braces) |
+| [SYSLIB1023][1023] | Generating more than six arguments is not supported |
+| SYSLIB1024 | Logging method argument uses unsupported `out` parameter modifier |
+| SYSLIB1025 | Multiple logging methods cannot use the same event name within a class |
+| SYSLIB1026 | (Reserved for logging.) |
+| SYSLIB1027 | (Reserved for logging.) |
+| SYSLIB1028 | (Reserved for logging.) |
+| SYSLIB1029 | (Reserved for logging.) |
 | [SYSLIB1030][1030] | The `System.Text.Json` source generator did not generate serialization metadata for type |
 | [SYSLIB1031][1031] | The `System.Text.Json` source generator encountered a duplicate `JsonTypeInfo` property name |
 | [SYSLIB1032][1032] | The `System.Text.Json` source generator encountered a context class that is not partial |
-| [SYSLIB1033][1033] | The `System.Text.Json` source generator encountered a type that has multiple `[JsonConstructor]` annotations|
+| [SYSLIB1033][1033] | The `System.Text.Json` source generator encountered a type that has multiple `[JsonConstructor]` annotations |
+| SYSLIB1034 | (Reserved for System.Text.Json.SourceGeneration.) |
 | [SYSLIB1035][1035] | The `System.Text.Json` source generator encountered a type that has multiple `[JsonExtensionData]` annotations |
 | [SYSLIB1036][1036] | The `System.Text.Json` source generator encountered an invalid `[JsonExtensionData]` annotation |
 | [SYSLIB1037][1037] | The `System.Text.Json` source generator encountered a type with init-only properties for which deserialization is not supported |
@@ -137,6 +145,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 [1001]: syslib1001.md
 [1002]: syslib1002.md
 [1003]: syslib1003.md
+[1004]: syslib1004.md
 [1005]: syslib1005.md
 [1006]: syslib1006.md
 [1007]: syslib1007.md
@@ -164,11 +173,11 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 [1036]: syslib1036.md
 [1037]: syslib1037.md
 [1038]: syslib1038.md
-[1039]: syslib1039.md
 [1040]: syslib1040.md
 [1041]: syslib1041.md
 [1042]: syslib1042.md
 [1043]: syslib1043.md
+[1044]: syslib1044.md
 [1045]: syslib1045.md
 [1046]: syslib1046.md
 [1047]: syslib1047.md
@@ -178,6 +187,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 [1051]: syslib1051.md
 [1052]: syslib1052.md
 [1053]: syslib1053.md
+[1054]: syslib1054.md
 [1055]: syslib1055.md
 [1056]: syslib1056.md
 [1057]: syslib1057.md
@@ -187,6 +197,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 [1061]: syslib1061.md
 [1062]: syslib1062.md
 [1063]: syslib1063.md
+[1064]: syslib1064.md
 [1065]: syslib1065.md
 [1066]: syslib1066.md
 [1067]: syslib1067.md
@@ -196,6 +207,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 [1071]: syslib1071.md
 [1072]: syslib1072.md
 [1073]: syslib1073.md
+[1074]: syslib1074.md
 [1075]: syslib1075.md
 [1076]: syslib1076.md
 [1077]: syslib1077.md
@@ -205,6 +217,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 [1081]: syslib1081.md
 [1082]: syslib1082.md
 [1083]: syslib1083.md
+[1084]: syslib1084.md
 [1085]: syslib1085.md
 [1086]: syslib1086.md
 [1087]: syslib1087.md
@@ -214,6 +227,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 [1091]: syslib1091.md
 [1092]: syslib1092.md
 [1093]: syslib1093.md
+[1094]: syslib1094.md
 [1095]: syslib1095.md
 [1096]: syslib1096.md
 [1097]: syslib1097.md
@@ -223,6 +237,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 [1101]: syslib1101.md
 [1102]: syslib1102.md
 [1103]: syslib1103.md
+[1104]: syslib1104.md
 [1105]: syslib1105.md
 [1106]: syslib1106.md
 [1107]: syslib1107.md
@@ -232,6 +247,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 [1111]: syslib1111.md
 [1112]: syslib1112.md
 [1113]: syslib1113.md
+[1114]: syslib1114.md
 [1115]: syslib1115.md
 [1116]: syslib1116.md
 [1117]: syslib1117.md

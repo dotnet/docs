@@ -172,82 +172,82 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 [1036]: syslib1036.md
 [1037]: syslib1037.md
 [1038]: syslib1038.md
-[1040](syslib1040-1049.md)
-[1041](syslib1040-1049.md)
-[1042](syslib1040-1049.md)
-[1043](syslib1040-1049.md)
-[1044](syslib1040-1049.md)
-[1045](syslib1040-1049.md)
-[1046](syslib1040-1049.md)
-[1047](syslib1040-1049.md)
-[1048](syslib1040-1049.md)
-[1049](syslib1040-1049.md)
-[1050](syslib1050-1069.md)
-[1051](syslib1050-1069.md)
-[1052](syslib1050-1069.md)
-[1053](syslib1050-1069.md)
-[1054](syslib1050-1069.md)
-[1055](syslib1050-1069.md)
-[1056](syslib1050-1069.md)
-[1057](syslib1050-1069.md)
-[1058](syslib1050-1069.md)
-[1059](syslib1050-1069.md)
-[1060](syslib1050-1069.md)
-[1061](syslib1050-1069.md)
-[1062](syslib1050-1069.md)
-[1063](syslib1050-1069.md)
-[1064](syslib1050-1069.md)
-[1065](syslib1050-1069.md)
-[1066](syslib1050-1069.md)
-[1067](syslib1050-1069.md)
-[1068](syslib1050-1069.md)
-[1069](syslib1050-1069.md)
-[1070](syslib1070-1089.md)
-[1071](syslib1070-1089.md)
-[1072](syslib1070-1089.md)
-[1073](syslib1070-1089.md)
-[1074](syslib1070-1089.md)
-[1075](syslib1070-1089.md)
-[1076](syslib1070-1089.md)
-[1077](syslib1070-1089.md)
-[1078](syslib1070-1089.md)
-[1079](syslib1070-1089.md)
-[1080](syslib1070-1089.md)
-[1081](syslib1070-1089.md)
-[1082](syslib1070-1089.md)
-[1083](syslib1070-1089.md)
-[1084](syslib1070-1089.md)
-[1085](syslib1070-1089.md)
-[1086](syslib1070-1089.md)
-[1087](syslib1070-1089.md)
-[1088](syslib1070-1089.md)
-[1089](syslib1070-1089.md)
-[1090](syslib1090-1099.md)
-[1091](syslib1090-1099.md)
-[1092](syslib1090-1099.md)
-[1093](syslib1090-1099.md)
-[1094](syslib1090-1099.md)
-[1095](syslib1090-1099.md)
-[1096](syslib1090-1099.md)
-[1097](syslib1090-1099.md)
-[1098](syslib1090-1099.md)
-[1099](syslib1090-1099.md)
-[1100](syslib1100-1118.md)
-[1101](syslib1100-1118.md)
-[1102](syslib1100-1118.md)
-[1103](syslib1100-1118.md)
-[1104](syslib1100-1118.md)
-[1105](syslib1100-1118.md)
-[1106](syslib1100-1118.md)
-[1107](syslib1100-1118.md)
-[1108](syslib1100-1118.md)
-[1109](syslib1100-1118.md)
-[1110](syslib1100-1118.md)
-[1111](syslib1100-1118.md)
-[1112](syslib1100-1118.md)
-[1113](syslib1100-1118.md)
-[1114](syslib1100-1118.md)
-[1115](syslib1100-1118.md)
-[1116](syslib1100-1118.md)
-[1117](syslib1100-1118.md)
-[1118](syslib1100-1118.md)
+[1040]: syslib1040-1049.md
+[1041]: syslib1040-1049.md
+[1042]: syslib1040-1049.md
+[1043]: syslib1040-1049.md
+[1044]: syslib1040-1049.md
+[1045]: syslib1040-1049.md
+[1046]: syslib1040-1049.md
+[1047]: syslib1040-1049.md
+[1048]: syslib1040-1049.md
+[1049]: syslib1040-1049.md
+[1050]: syslib1050-1069.md
+[1051]: syslib1050-1069.md
+[1052]: syslib1050-1069.md
+[1053]: syslib1050-1069.md
+[1054]: syslib1050-1069.md
+[1055]: syslib1050-1069.md
+[1056]: syslib1050-1069.md
+[1057]: syslib1050-1069.md
+[1058]: syslib1050-1069.md
+[1059]: syslib1050-1069.md
+[1060]: syslib1050-1069.md
+[1061]: syslib1050-1069.md
+[1062]: syslib1050-1069.md
+[1063]: syslib1050-1069.md
+[1064]: syslib1050-1069.md
+[1065]: syslib1050-1069.md
+[1066]: syslib1050-1069.md
+[1067]: syslib1050-1069.md
+[1068]: syslib1050-1069.md
+[1069]: syslib1050-1069.md
+[1070]: syslib1070-1089.md
+[1071]: syslib1070-1089.md
+[1072]: syslib1070-1089.md
+[1073]: syslib1070-1089.md
+[1074]: syslib1070-1089.md
+[1075]: syslib1070-1089.md
+[1076]: syslib1070-1089.md
+[1077]: syslib1070-1089.md
+[1078]: syslib1070-1089.md
+[1079]: syslib1070-1089.md
+[1080]: syslib1070-1089.md
+[1081]: syslib1070-1089.md
+[1082]: syslib1070-1089.md
+[1083]: syslib1070-1089.md
+[1084]: syslib1070-1089.md
+[1085]: syslib1070-1089.md
+[1086]: syslib1070-1089.md
+[1087]: syslib1070-1089.md
+[1088]: syslib1070-1089.md
+[1089]: syslib1070-1089.md
+[1090]: syslib1090-1099.md
+[1091]: syslib1090-1099.md
+[1092]: syslib1090-1099.md
+[1093]: syslib1090-1099.md
+[1094]: syslib1090-1099.md
+[1095]: syslib1090-1099.md
+[1096]: syslib1090-1099.md
+[1097]: syslib1090-1099.md
+[1098]: syslib1090-1099.md
+[1099]: syslib1090-1099.md
+[1100]: syslib1100-1118.md
+[1101]: syslib1100-1118.md
+[1102]: syslib1100-1118.md
+[1103]: syslib1100-1118.md
+[1104]: syslib1100-1118.md
+[1105]: syslib1100-1118.md
+[1106]: syslib1100-1118.md
+[1107]: syslib1100-1118.md
+[1108]: syslib1100-1118.md
+[1109]: syslib1100-1118.md
+[1110]: syslib1100-1118.md
+[1111]: syslib1100-1118.md
+[1112]: syslib1100-1118.md
+[1113]: syslib1100-1118.md
+[1114]: syslib1100-1118.md
+[1115]: syslib1100-1118.md
+[1116]: syslib1100-1118.md
+[1117]: syslib1100-1118.md
+[1118]: syslib1100-1118.md

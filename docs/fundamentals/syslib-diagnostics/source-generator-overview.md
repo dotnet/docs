@@ -145,7 +145,6 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 [1001]: syslib1001.md
 [1002]: syslib1002.md
 [1003]: syslib1003.md
-[1004]: syslib1004.md
 [1005]: syslib1005.md
 [1006]: syslib1006.md
 [1007]: syslib1007.md

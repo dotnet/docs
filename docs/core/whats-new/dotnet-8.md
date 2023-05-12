@@ -2,7 +2,7 @@
 title: What's new in .NET 8
 description: Learn about the new .NET features introduced in .NET 8.
 titleSuffix: ""
-ms.date: 04/10/2023
+ms.date: 05/12/2023
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
@@ -11,7 +11,7 @@ author: gewarren
 
 .NET 8 is the successor to [.NET 7](dotnet-7.md). It will be [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 8 here](https://dotnet.microsoft.com/download/dotnet).
 
-This article has been updated for .NET 8 Preview 3.
+This article has been updated for .NET 8 Preview 4.
 
 > [!IMPORTANT]
 >
@@ -22,23 +22,41 @@ This article has been updated for .NET 8 Preview 3.
 
 This section contains the following subtopics:
 
+- [Terminal build output](#terminal-build-output)
 - [Simplified output paths](#simplified-output-paths)
 - ['dotnet workload clean' command](#dotnet-workload-clean-command)
 - ['dotnet publish' and 'dotnet pack' assets](#dotnet-publish-and-dotnet-pack-assets)
 
+### Terminal build output
+
+`dotnet build` has a new option to produce more modernized build output. This *terminal logger* output groups errors with the project they came from, better differentiates the different target frameworks for multi-targeted projects, and provides real-time information about what the build is doing. To opt into the new output, use the `--tl` option. For more information about this option, see [dotnet build options](../tools/dotnet-build.md#options).
+
 ### Simplified output paths
 
-.NET 8 Preview 3 introduces an option to simplify the output path and folder structure for build outputs. Previously, .NET apps produced a deep and complex set of output paths for different build artifacts. The new, simplified output path structure gathers all build outputs into a common location, which makes it easier for tooling to anticipate.
+.NET 8 introduces an option to simplify the output path and folder structure for build outputs. Previously, .NET apps produced a deep and complex set of output paths for different build artifacts. The new, simplified output path structure gathers all build outputs into a common location, which makes it easier for tooling to anticipate.
 
-To opt into the new output path format, set the `UseArtifactsOutput` property to `true` in your *Directory.Build.props* file.
+To opt into the new output path format, use one of the following properties in your *Directory.Build.props* file:
 
-By default, the common location is a folder named *.artifacts* in the root of your repository rather than in each project folder. The folder structure under the root artifacts folder is as follows:
+- Add an `ArtifactsPath` property with a value of `$(MSBuildThisFileDirectory)artifacts` (or whatever you want the folder location to be), OR
+- To use the default location, simply set the `UseArtifactsOutput` property to `true`.
+
+Alternatively, run `dotnet new buildprops --use-artifacts` and the template will generate the *Directory.Build.props* file for you:
+
+```xml
+<Project>
+  <PropertyGroup>
+    <ArtifactsPath>$(MSBuildThisFileDirectory)artifacts</ArtifactsPath>
+  </PropertyGroup>
+</Project>
+```
+
+By default, the common location is a folder named *artifacts* in the root of your repository rather than in each project folder. The folder structure under the root *artifacts* folder is as follows:
 
 ```txt
-.artifacts
-   |_<Type of output>
-      |_<Project name>
-         |_<Pivot>
+artifacts
+  |_<Type of output>
+     |_<Project name>
+        |_<Pivot>
 ```
 
 The following table shows the default values for each level in the folder structure. The values, as well as the default location, can be overridden using properties in the *Directory.build.props* file.
@@ -46,10 +64,8 @@ The following table shows the default values for each level in the folder struct
 | Folder level | Description |
 |---------|---------|
 | Type of output | Examples: `bin`, `obj`, `publish`, or `package` |
-| Project name | Separates output by each project. This level is omitted if no *Directory.build.props* file is found. |
+| Project name | Separates output by each project. |
 | Pivot | Distinguishes between builds of a project for different configurations, target frameworks, and runtime identifiers. If multiple elements are needed, they're joined by an underscore (`_`). |
-
-For more information, see the [Simplified output paths](https://github.com/dotnet/designs/blob/simplify-output-paths-2/accepted/2023/simplify-output-paths.md) design proposal.
 
 ### 'dotnet workload clean' command
 
@@ -93,7 +109,7 @@ Various improvements have been made to <xref:System.Text.Json?displayProperty=fu
 - The [source generator](../../standard/serialization/system-text-json/source-generation.md) now supports serializing types with [`required`](../../standard/serialization/system-text-json/required-properties.md) and [`init`](../../csharp/language-reference/keywords/init.md) properties. These were both already supported in reflection-based serialization.
 - [Customize handling of members that aren't in the JSON payload.](../../standard/serialization/system-text-json/missing-members.md)
 - Support for serializing properties from interface hierarchies. The following code shows an example where the properties from both the immediately implemented interface and its base interface are serialized.
-  
+
   ```csharp
   IDerived value = new DerivedImplement { Base = 0, Derived =1 };
   JsonSerializer.Serialize(value); // {"Base":0,"Derived":1}
@@ -467,8 +483,13 @@ Building in a container is the easiest approach for most people, since the `dotn
 ## See also
 
 - [Breaking changes in .NET 8](../compatibility/8.0.md)
-- [.NET blog: Announcing .NET 8 Preview 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-1/)
-- [.NET blog: Announcing .NET 8 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-2/)
-- [.NET blog: Announcing .NET 8 Preview 3](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-3/)
-- [.NET blog: ASP.NET Core updates in .NET 8 Preview 1](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-1/)
-- [.NET blog: ASP.NET Core updates in .NET 8 Preview 2](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-2/)
+
+### .NET blog
+
+- [Announcing .NET 8 Preview 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-1/)
+- [Announcing .NET 8 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-2/)
+- [Announcing .NET 8 Preview 3](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-3/)
+- [Announcing .NET 8 Preview 4](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-4/)
+- [ASP.NET Core updates in .NET 8 Preview 1](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-1/)
+- [ASP.NET Core updates in .NET 8 Preview 2](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-2/)
+- [ASP.NET Core updates in .NET 8 Preview 3](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-3/)

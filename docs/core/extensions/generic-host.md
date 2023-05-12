@@ -191,7 +191,7 @@ to exit gracefully.
 
 ### Host shutdown in web server scenarios
 
-There are various other common scenarios in which graceful shutdown works in Kestrel for both HTTP/1.1 and HTTP/2 protocols, and how you can configure it in different environments with a load balancer to drain traffic smoothly. While web server configuration is beyond the scope of this article, you can find more information on [Configure options for the ASP.NET Core Kestrel web server](aspnet/core/fundamentals/servers/kestrel/options) documentation.
+There are various other common scenarios in which graceful shutdown works in Kestrel for both HTTP/1.1 and HTTP/2 protocols, and how you can configure it in different environments with a load balancer to drain traffic smoothly. While web server configuration is beyond the scope of this article, you can find more information on [Configure options for the ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel/options) documentation.
 
 When the Host receives a shutdown signal (for example, <kbd>CTL</kbd>+<kbd>C</kbd> or `StopAsync`), it notifies the application by signaling <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.ApplicationStopping>. You should subscribe to this event if you have any long-running operations that need to finish gracefully.
 
@@ -215,5 +215,5 @@ To ensure a smooth transition of clients to a new destination when working with 
 - [Configuration in .NET](configuration.md)
 - [Worker Services in .NET](workers.md)
 - [ASP.NET Core Web Host](/aspnet/core/fundamentals/host/web-host)
-- [ASP.NET Core Kestrel web server configuration](aspnet/core/fundamentals/servers/kestrel/options)
+- [ASP.NET Core Kestrel web server configuration](/aspnet/core/fundamentals/servers/kestrel/options)
 - Generic host bugs should be created in the [github.com/dotnet/runtime](https://github.com/dotnet/runtime/issues) repo

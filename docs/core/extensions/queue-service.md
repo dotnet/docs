@@ -3,14 +3,14 @@ title: Create a Queue Service
 description: Learn how to create a queue service subclass of BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/09/2023
+ms.date: 05/12/2023
 ms.topic: tutorial
 zone_pivot_groups: dotnet-version-6-7
 ---
 
 # Create a Queue Service
 
-A queue service is a great example of a long-running service, where work items can be queued and worked on sequentially as previous work items are completed. Relying on the Worker Service template, you'll build out new functionality on top of the <xref:Microsoft.Extensions.Hosting.BackgroundService>.
+A queue service is a great example of a long-running service, where work items can be queued and worked on sequentially as previous work items are completed. Relying on the Worker Service template, you build out new functionality on top of the <xref:Microsoft.Extensions.Hosting.BackgroundService>.
 
 In this tutorial, you learn how to:
 
@@ -44,7 +44,12 @@ In this tutorial, you learn how to:
 
 ## Create queuing services
 
-You may be familiar with the <xref:System.Web.Hosting.HostingEnvironment.QueueBackgroundWorkItem(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task})> functionality from the `System.Web.Hosting` namespace. To model a service that is inspired by this functionality, start by adding an `IBackgroundTaskQueue` interface to the project:
+You may be familiar with the <xref:System.Web.Hosting.HostingEnvironment.QueueBackgroundWorkItem(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task})> functionality from the `System.Web.Hosting` namespace.
+
+> [!TIP]
+> The functionality of the `System.Web` namespace was intentionally not ported over to .NET, and remains exclusive to .NET Framework. For more information, see [Get started with incremental ASP.NET to ASP.NET Core migration](/aspnet/core/migration/inc/start).
+
+In .NET, to model a service that is inspired by the `QueueBackgroundWorkItem` functionality, start by adding an `IBackgroundTaskQueue` interface to the project:
 
 :::zone target="docs" pivot="dotnet-7-0"
 
@@ -70,7 +75,7 @@ There are two methods, one that exposes queuing functionality, and another that 
 
 :::zone-end
 
-The preceding implementation relies on a <xref:System.Threading.Channels.Channel%601> as a queue. The <xref:System.Threading.Channels.BoundedChannelOptions.%23ctor(System.Int32)> is called with an explicit capacity. Capacity should be set based on the expected application load and number of concurrent threads accessing the queue. <xref:System.Threading.Channels.BoundedChannelFullMode.Wait?displayProperty=nameWithType> will cause calls to <xref:System.Threading.Channels.ChannelWriter%601.WriteAsync%2A?displayProperty=nameWithType> to return a task, which completes only when space becomes available. This leads to backpressure, in case too many publishers/calls start accumulating.
+The preceding implementation relies on a <xref:System.Threading.Channels.Channel%601> as a queue. The <xref:System.Threading.Channels.BoundedChannelOptions.%23ctor(System.Int32)> is called with an explicit capacity. Capacity should be set based on the expected application load and number of concurrent threads accessing the queue. <xref:System.Threading.Channels.BoundedChannelFullMode.Wait?displayProperty=nameWithType> causes calls to <xref:System.Threading.Channels.ChannelWriter%601.WriteAsync%2A?displayProperty=nameWithType> to return a task, which completes only when space becomes available. Which leads to backpressure, in case too many publishers/calls start accumulating.
 
 ## Rewrite the Worker class
 
@@ -143,7 +148,7 @@ For more information on registering services, see [Dependency injection in .NET]
 
 [!INCLUDE [run-app](includes/run-app.md)]
 
-When prompted enter the `w` (or `W`) at least once to queue an emulated work item. You will see output similar to the following:
+When prompted enter the `w` (or `W`) at least once to queue an emulated work item, as shown in the example output:
 
 ```Output
 info: App.QueueService.MonitorLoop[0]

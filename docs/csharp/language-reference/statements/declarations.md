@@ -56,7 +56,7 @@ When you work with [anonymous types](../../fundamentals/types/anonymous-types.md
 
 :::code language="csharp" source="snippets/declarations/ImplicitlyTyped.cs" id="VarExample":::
 
-In the preceding example, you cannot explicitly specify the type of the `fromPhoenix` variable. The type is <xref:System.Collections.Generic.IEnumerable%601> but in this case `T` is an anonymous type and you cannot provide its name. That's why you need to use `var`. For the same reason, you must use `var` when you declare the `customer` iteration variable in the `foreach` statement.
+In the preceding example, you can't explicitly specify the type of the `fromPhoenix` variable. The type is <xref:System.Collections.Generic.IEnumerable%601> but in this case `T` is an anonymous type and you cannot provide its name. That's why you need to use `var`. For the same reason, you must use `var` when you declare the `customer` iteration variable in the `foreach` statement.
 
 For more information about implicitly-typed local variables, see [Implicitly-typed local variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
 

@@ -309,43 +309,85 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/background-service" #App.WorkerService.csproj
+    directory: "/docs/core/extensions/snippets/workers/6.0/background-service" #App.WorkerService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/cloud-service" #App.CloudService.csproj
+    directory: "/docs/core/extensions/snippets/workers/6.0/cloud-service" #App.CloudService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/queue-service" #App.QueueService.csproj
+    directory: "/docs/core/extensions/snippets/workers/6.0/queue-service" #App.QueueService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/scoped-service" #App.ScopedService.csproj
+    directory: "/docs/core/extensions/snippets/workers/6.0/scoped-service" #App.ScopedService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/signal-completion-service/App.SignalCompletionService" #App.SignalCompletionService.csproj
+    directory: "/docs/core/extensions/snippets/workers/6.0/signal-completion-service/App.SignalCompletionService" #App.SignalCompletionService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/timer-service" #App.TimerHostedService.csproj
+    directory: "/docs/core/extensions/snippets/workers/6.0/timer-service" #App.TimerHostedService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/windows-service" #App.WindowsService.csproj
+    directory: "/docs/core/extensions/snippets/workers/6.0/windows-service" #App.WindowsService.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/workers/7.0/background-service" #App.WorkerService.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/workers/7.0/cloud-service" #App.CloudService.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/workers/7.0/queue-service" #App.QueueService.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/workers/7.0/scoped-service" #App.ScopedService.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/workers/7.0/signal-completion-service/App.SignalCompletionService" #App.SignalCompletionService.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/workers/7.0/timer-service" #App.TimerHostedService.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/workers/7.0/windows-service" #App.WindowsService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -1156,12 +1198,6 @@ updates:
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
     directory: "/samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_cancellationwinforms/vb/cancellationwinforms" #cancellationwinforms.vbproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbdynamicwalkthroughironpython/vb" #ironpythonsample.vbproj
     schedule:
       interval: "weekly"
       day: "wednesday"

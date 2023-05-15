@@ -16,7 +16,7 @@ ms.date: 05/04/2023
 
 ## Supported distributions
 
-The following table is a list of currently supported .NET releases on both CentOS Linux 7. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of CentOS Linux is no longer supported.
+The following table is a list of currently supported .NET releases on CentOS Linux 7. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of CentOS Linux is no longer supported.
 
 | CentOS Linux | .NET |
 |--------------|------|

@@ -291,7 +291,7 @@
 | Service Bus Event Processor Host | NuGet [5.0.1](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.EventProcessorHost/5.0.1) |  |  |
 | Time Series Insights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.Analytics.Purview.Sharing/1.0.0-beta.2) |  |  |
-| Unknown Display Name | NuGet [1.0.0-beta.5](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.0.0-beta.5) |  |  |
+| Unknown Display Name | NuGet [1.0.0-beta.6](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.0.0-beta.6) |  |  |
 | Unknown Display Name | NuGet [0.2.141-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Redis/0.2.141-preview) |  |  |
 | Unknown Display Name | NuGet [1.5.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.WebPubSub/1.5.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Kafka.SchemaRegistry.Avro/1.0.0-beta.1) |  |  |

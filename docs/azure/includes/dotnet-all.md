@@ -292,11 +292,13 @@
 | Time Series Insights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.Analytics.Purview.Sharing/1.0.0-beta.2) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.5](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.0.0-beta.5) |  |  |
+| Unknown Display Name | NuGet [0.2.141-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Redis/0.2.141-preview) |  |  |
 | Unknown Display Name | NuGet [1.5.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.WebPubSub/1.5.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Kafka.SchemaRegistry.Avro/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Kafka.SchemaRegistry.Json/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.ChangeProcessor/1.0.2) |  |  |
 | Unknown Display Name | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.Mongo/1.0.2) |  |  |
+| Unknown Display Name | NuGet [0.2.141-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Redis/0.2.141-preview) |  |  |
 | Active Directory Authentication Library | NuGet [1.6.2](https://www.nuget.org/packages/Microsoft.Azure.Services.AppAuthentication/1.6.2) |  |  |
 | Anomaly Detector | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.AnomalyDetector/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.AnomalyDetector_1.0.0-preview.1/sdk/cognitiveservices/AnomalyDetector) |
 | App Configuration Provider | NuGet [5.2.0](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.AzureAppConfiguration/5.2.0)<br>NuGet [5.3.0-preview](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.AzureAppConfiguration/5.3.0-preview) |  | GitHub [5.2.0](https://github.com/Azure/AppConfiguration-DotnetProvider) |

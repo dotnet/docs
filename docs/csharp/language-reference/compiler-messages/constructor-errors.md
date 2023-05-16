@@ -87,11 +87,14 @@ ms.date: 05/08/2023
 
 This article covers the following compiler errors:
 
+<!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
+That's be design. The text closely matches the text of the compiler error / warning for SEO purposes.
+ -->
 - [**CS0514**](#static-constructors) - *static constructor cannot have an explicit 'this' or 'base' constructor call.*
 - [**CS0515**](#static-constructors) - *access modifiers are not allowed on static constructors.*
 - [**CS0516**](#constructor-calls-with-base-and-this) - *Constructor 'constructor' can not call itself.*
 - [**CS0517**](#constructor-declarations) - *'class' has no base class and cannot call a base constructor.*
-- [**CS0522**](#constructor-calls-with-base-and-this) - *'constructor' : structs cannot call base class constructors.*
+- [**CS0522**](#constructor-calls-with-base-and-this) - *structs cannot call base class constructors.*
 - [**CS0526**](#constructor-declarations) - *Interfaces cannot contain constructors.*
 - [**CS0568**](#constructors-in-struct-types) - *Structs cannot contain explicit parameterless constructors.*
 - [**CS0710**](#constructor-declarations) - *Static classes cannot have instance constructors.*
@@ -167,7 +170,7 @@ When a constructor is marked `extern`, the compiler can't guarantee the construc
 - **CS8982** - *A constructor declared in a 'struct' with parameter list must have a 'this' initializer that calls the primary constructor or an explicitly declared constructor.*
 - **CS8983** - *A 'struct' with field initializers must include an explicitly declared constructor.*
 
-Recent features in C# remove earlier restrictions to `struct` types. **CS0568** is generated when you declare a parameterless constructor and you're using C# 9 or earlier. Once you're using C#10, you can declare an explicit parameterless constructor. That explicit parameterless constructor must be `public`. If your `struct` declares any [field initialzers](../../programming-guide/classes-and-structs/fields.md), you must also declare an explicit constructor. This can be a parameterless constructor with an empty body.
+Recent features in C# remove earlier restrictions to `struct` types. **CS0568** is generated when you declare a parameterless constructor and you're using C# 9 or earlier. Once you're using C#10, you can declare an explicit parameterless constructor. That explicit parameterless constructor must be `public`. If your `struct` declares any [field initializers](../../programming-guide/classes-and-structs/fields.md), you must also declare an explicit constructor. This constructor can be a parameterless constructor with an empty body.
 
 When a `struct` type declares a primary constructor, including `record struct` types, all other constructors except a parameterless constructor must call the primary constructor, or another explicitly declared constructor using `this()`.
 
@@ -178,9 +181,9 @@ When a `struct` type declares a primary constructor, including `record struct` t
 - **CS0522** - *Structs cannot call base class constructors.*
 - **CS0768** - *Constructor cannot call itself through another constructor.*
 
-You can use `base()` and `this()` to have one constructor call another in the same type or the base type. This can minimize duplicated constructor logic. You must follow these rules when calling another constructor using `this()` or `base()`:
+You can use `base()` and `this()` to have one constructor call another in the same type or the base type. Calling constructors can minimize duplicated constructor logic. You must follow these rules when calling another constructor using `this()` or `base()`:
 
-- You can't call the same constructor, either directly, or indirectly through another constructor. For example the following code is illegal:
+- You can't call the same constructor, either directly, or indirectly through another constructor. For example, the following code is illegal:
 
   ```csharp
   public class C
@@ -216,7 +219,7 @@ Adding the `record` modifier to a `struct` or `class` type creates a [record](..
 
 - Copy constructors must be `public` or `protected` unless the type is [`sealed`](../keywords/sealed.md).
 - Copy constructors must call the `base()` copy constructor unless the base class is <xref:System.Object?displayProperty=nameWithType>.
-- Futhermore, the base type must have a copy constructor. This is always true for `record` types.
+- Furthermore, the base type must have a copy constructor. `record` types always have a copy constructor.
 
 ## Primary constructor syntax
 
@@ -248,20 +251,20 @@ Primary constructor parameters are in scope in the body of that type. The compil
 - If the type isn't a `ref struct`, `ref struct` parameters can't be accessed in instance members.
 - In a `ref struct` type, primary constructor parameters with the `in`, `ref` or `out` modifiers can't be used in any instance methods, or property accessors.
 
-Struct types have the following additional restrictions on primary constructor parameters:
+Struct types have the following extra restrictions on primary constructor parameters:
 
 - Primary constructor parameters can't be captured in lambda expressions, query expressions, or local functions.
 - Primary constructor parameters can't be returned by reference (`ref` return or `readonly ref` return).
 
-Readonly only struct types have the following additional restrictions on primary constructor parameters:
+Readonly only struct types have the following extra restrictions on primary constructor parameters:
 
-- Neither primary constructor parameters or their members can't be reassigned in a `readonly` struct.
-- Neither primary constructor parameters or their members can't be `ref` returned in a `readonly` struct.
-- Neither primary constructor parameters or their members can be passed by `ref` or `out` to any method.
+- Primary constructor parameters and their members can't be reassigned in a `readonly` struct.
+- Primary constructor parameters and their members can't be `ref` returned in a `readonly` struct.
+- Primary constructor parameters and their members can't be `ref` or `out` arguments to any method.
 
 In all these cases, the restrictions on primary constructor parameters are consistent with restrictions on data fields in those types. The restrictions are because a primary constructor parameter may be transformed into a synthesized field in the type. Therefore primary constructor parameters must follow the rules that apply to that synthesized field.
 
 The two warnings provide guidance on captured primary constructor parameters.
 
-- **CS9107** - *Parameter is captured into the state of the enclosing type and its value is also passed to the base constructor. The value might be captured by the base class as well.* This warning indicates that your code may be allocated two copies of a primary constructor parameter. Because the parameter is passed to the base class, the base class likely uses it. Because the derived class access it, it may have a second copy of the same parameter. That may not be intended.
+- **CS9107** - *Parameter is captured into the state of the enclosing type and its value is also passed to the base constructor. The value might be captured by the base class as well.* This warning indicates that your code may be allocated two copies of a primary constructor parameter. Because the parameter is passed to the base class, the base class likely uses it. Because the derived class accesses it, it may have a second copy of the same parameter. That extra storage may not be intended.
 - **CS9113** - *Parameter is unread.* This warning indicates that your class never references the primary constructor, even to pass it to the base primary constructor. It likely isn't needed.

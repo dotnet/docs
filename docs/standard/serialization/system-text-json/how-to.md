@@ -210,12 +210,26 @@ To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserial
 
 The following behaviors apply when deserializing JSON:
 
-::: zone pivot="dotnet-8-0,dotnet-7-0,dotnet-6-0,dotnet-5-0"
+::: zone pivot="dotnet-8-0"
+
+* By default, property name matching is case-sensitive. You can [specify case-insensitivity](character-casing.md).
+* If the JSON contains a value for a read-only property, the value is ignored by default. You can set the <xref:System.Text.Json.JsonSerializerOptions.PreferredObjectCreationHandling> option to <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Populate?displayProperty=nameWithType> to enable deserialization to read-only properties.
+* Non-public constructors are ignored by the serializer.
+* Deserialization to immutable objects or properties that don't have public `set` accessors is supported. See [Immutable types and records](immutability.md).
+* By default, enums are supported as numbers. You can [serialize enum names as strings](customize-properties.md#enums-as-strings).
+* By default, fields are ignored. You can [include fields](#include-fields).
+* By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](invalid-json.md).
+* The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) is 64.
+
+When you use System.Text.Json indirectly in an ASP.NET Core app, some default behaviors are different. For more information, see [Web defaults for JsonSerializerOptions](configure-options.md#web-defaults-for-jsonserializeroptions).
+::: zone-end
+
+::: zone pivot="dotnet-7-0,dotnet-6-0,dotnet-5-0"
 
 * By default, property name matching is case-sensitive. You can [specify case-insensitivity](character-casing.md).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
 * Non-public constructors are ignored by the serializer.
-* Deserialization to immutable objects or properties that don't have public `set` accessors is supported. See [Immutable types and Records](immutability.md).
+* Deserialization to immutable objects or properties that don't have public `set` accessors is supported. See [Immutable types and records](immutability.md).
 * By default, enums are supported as numbers. You can [serialize enum names as strings](customize-properties.md#enums-as-strings).
 * By default, fields are ignored. You can [include fields](#include-fields).
 * By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](invalid-json.md).

@@ -1,7 +1,7 @@
 ---
 title: dotnet build command
 description: The dotnet build command builds a project and all of its dependencies.
-ms.date: 05/12/2023
+ms.date: 05/16/2023
 ---
 # dotnet build
 

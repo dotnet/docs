@@ -12,7 +12,6 @@ f1_keywords:
  - "CS710"
  - "CS0768"
  - "CS0824" # WRN_ExternCtorNoImplementation
- - "CS1729"
  - "CS8054" # ERR_EnumsCantContainDefaultConstructor
  - "CS8091" # ERR_ExternHasConstructorInitializer
  - "CS8358" # ERR_AttributeCtorInParameter
@@ -53,7 +52,6 @@ helpviewer_keywords:
  - "CS0710"
  - "CS0768"
  - "CS0824"
- - "CS1729"
  - "CS8054"
  - "CS8091"
  - "CS8358"
@@ -89,15 +87,26 @@ ms.date: 05/08/2023
 
 This article covers the following compiler errors:
 
-- [**CS0514**](#cs0514) - *'constructor' : static constructor cannot have an explicit 'this' or 'base' constructor call.*
-- [**CS0515**](#cs0515) - *access modifiers are not allowed on static constructors.*
-- [**CS0516**](#cs0516) - *Constructor 'constructor' can not call itself.*
-- [**CS0517**](#cs0517) - *'class' has no base class and cannot call a base constructor.*
-- [**CS0522**](#cs0522) - *'constructor' : structs cannot call base class constructors.*
-- [**CS0526**](#cs0526) - *Interfaces cannot contain constructors.*
-- **CS0568** - *Structs cannot contain explicit parameterless constructors.*
-- [**CS0710**](#cs0710) - *Static classes cannot have instance constructors.*
-- [**CS1729**](#cs1729) - *'type' does not contain a constructor that takes 'number' arguments.*
+- [**CS0514**](#static-constructors) - *static constructor cannot have an explicit 'this' or 'base' constructor call.*
+- [**CS0515**](#static-constructors) - *access modifiers are not allowed on static constructors.*
+- [**CS0516**](#constructor-calls-with-base-and-this) - *Constructor 'constructor' can not call itself.*
+- [**CS0517**](#constructor-declarations) - *'class' has no base class and cannot call a base constructor.*
+- [**CS0522**](#constructor-calls-with-base-and-this) - *'constructor' : structs cannot call base class constructors.*
+- [**CS0526**](#constructor-declarations) - *Interfaces cannot contain constructors.*
+- [**CS0568**](#constructors-in-struct-types) - *Structs cannot contain explicit parameterless constructors.*
+- [**CS0710**](#constructor-declarations) - *Static classes cannot have instance constructors.*
+- [**CS0768**](#constructor-calls-with-base-and-this) - *Constructor cannot call itself through another constructor.*
+- [**CS8054**](#constructor-declarations) - *Enums cannot contain explicit parameterless constructors.*
+- [**CS8091**](#constructor-declarations) - *cannot be extern and have a constructor initializer.*
+- [**CS8862**](#primary-constructor-syntax) - *A constructor declared in a type with parameter list must have 'this' constructor initializer.*
+- [**CS8358**](#constructor-declarations) - *Cannot use attribute constructor because it has 'in' parameters.*
+- [**CS8867**](#records-and-copy-constructors) - *No accessible copy constructor found in base type '{0}'.*
+- [**CS8868**](#records-and-copy-constructors) - *A copy constructor in a record must call a copy constructor of the base, or a parameterless object constructor if the record inherits from object.*
+- [**CS8878**](#records-and-copy-constructors) - *A copy constructor '{0}' must be public or protected because the record is not sealed.*
+- [**CS8910**](#records-and-copy-constructors) - *The primary constructor conflicts with the synthesized copy constructor.*
+- [**CS8958**](#constructors-in-struct-types) - *The parameterless struct constructor must be 'public'.*
+- [**CS8982**](#constructors-in-struct-types) - *A constructor declared in a 'struct' with parameter list must have a 'this' initializer that calls the primary constructor or an explicitly declared constructor.*
+- [**CS8983**](#constructors-in-struct-types) - *A 'struct' with field initializers must include an explicitly declared constructor.*
 - [**CS9105**](#primary-constructor-syntax) - *Cannot use primary constructor parameter in this context.*
 - [**CS9106**](#primary-constructor-syntax) - *Identifier is ambiguous between type and parameter in this context.*
 class as well.*
@@ -118,29 +127,102 @@ class as well.*
 
 In addition, the following warnings are covered in this article:
 
-- [**CS0824**](#cs0824) - *Constructor 'name' is marked external.*
+- [**CS0824**](#constructor-declarations) - *Constructor 'name' is marked external.*
 - [**CS9107**](#primary-constructor-syntax) - *Parameter is captured into the state of the enclosing type and its value is also passed to the base constructor. The value might be captured by the base class as well.*
 - [**CS9113**](#primary-constructor-syntax) - *Parameter is unread.*
 
-## Errors to add
+## Static constructors
 
-- **CS0768** - *Constructor '{0}' cannot call itself through another constructor.*
+- **CS0514** - *Static constructor cannot have an explicit 'this' or 'base' constructor call.*
+- **CS0515** - *Access modifiers are not allowed on static constructors.*
+
+You can write at most one static constructor for a type. The declaration of a static constructor must obey the following rules:
+
+- The static constructor has the `static` modifier, but no other modifiers such as `public`, `protected`, `private` or `internal`.
+- The static constructor must be a parameterless constructor.
+- The static constructor must not call `base()`, or `this()`. If the base class includes a static constructor, the runtime calls it automatically.
+
+## Constructor declarations
+
+- **CS0526** - *Interfaces cannot contain constructors.*
+- **CS0710** - *Static classes cannot have instance constructors.*
 - **CS8054** - *Enums cannot contain explicit parameterless constructors.*
-- **CS8091** - *'{0}' cannot be extern and have a constructor initializer.*
-- **CS8358** - *Cannot use attribute constructor '{0}' because it has 'in' parameters.*
-- **CS8862** - *A constructor declared in a type with parameter list must have 'this' constructor initializer.*
-- **CS8867** - *No accessible copy constructor found in base type '{0}'.*
-- **CS8868** - *A copy constructor in a record must call a copy constructor of the base, or a parameterless object constructor if the record inherits from object.*
-- **CS8878** - *A copy constructor '{0}' must be public or protected because the record is not sealed.*
-- **CS8910** - *The primary constructor conflicts with the synthesized copy constructor.*
+- **CS8358** - *Cannot use attribute constructor because it has 'in' parameters.*
+- **CS8091** - *A constructor cannot be extern and have a constructor initializer.*
+
+Constructors are allowed only in `class` and `struct` types, including `record class` and `record struct` types. You can't define them in `enum` or `interface` types. Furthermore, [attribute](../attributes/general.md) class types can't declare `in` parameters. Instead, pass parameters by value.
+
+You can declare `extern` constructors, however you can't use `base()`, or `this()` constructor calls to call another constructor from a constructor declared `extern`.
+
+In addition, the following warnings can be generated for constructor declarations:
+
+- **CS0824** - *Constructor is marked external.*
+
+When a constructor is marked `extern`, the compiler can't guarantee the constructor exists. Therefore, the compiler generates this warning.
+
+## Constructors in struct types
+
+- **CS0568** - *Structs cannot contain explicit parameterless constructors.*
 - **CS8958** - *The parameterless struct constructor must be 'public'.*
 - **CS8982** - *A constructor declared in a 'struct' with parameter list must have a 'this' initializer that calls the primary constructor or an explicitly declared constructor.*
 - **CS8983** - *A 'struct' with field initializers must include an explicitly declared constructor.*
+
+Recent features in C# remove earlier restrictions to `struct` types. **CS0568** is generated when you declare a parameterless constructor and you're using C# 9 or earlier. Once you're using C#10, you can declare an explicit parameterless constructor. That explicit parameterless constructor must be `public`. If your `struct` declares any [field initialzers](../../programming-guide/classes-and-structs/fields.md), you must also declare an explicit constructor. This can be a parameterless constructor with an empty body.
+
+When a `struct` type declares a primary constructor, including `record struct` types, all other constructors except a parameterless constructor must call the primary constructor, or another explicitly declared constructor using `this()`.
+
+## Constructor calls with `base` and `this`
+
+- **CS0516** - *Constructor can not call itself.*
+- **CS0517** - *Class has no base class and cannot call a base constructor.*
+- **CS0522** - *Structs cannot call base class constructors.*
+- **CS0768** - *Constructor cannot call itself through another constructor.*
+
+You can use `base()` and `this()` to have one constructor call another in the same type or the base type. This can minimize duplicated constructor logic. You must follow these rules when calling another constructor using `this()` or `base()`:
+
+- You can't call the same constructor, either directly, or indirectly through another constructor. For example the following code is illegal:
+
+  ```csharp
+  public class C
+  {
+    public C() : this() // Error!
+    {
+    }
+  }
+
+  public class C2
+  {
+    public class C2() : this(10) {}
+
+    public class C2(int capacity) : this() 
+    {
+        _capacity = capacity;
+    }
+
+    private int _capacity;
+  }
+  ``
+
+- Struct types can't call `base()`. Neither can <xref:System.Object?displayProperty=fullName>.
+
+## Records and copy constructors
+
+- **CS8867** - *No accessible copy constructor found in base type.*
+- **CS8868** - *A copy constructor in a record must call a copy constructor of the base, or a parameterless object constructor if the record inherits from object.*
+- **CS8878** - *A copy constructor must be public or protected because the record is not sealed.*
+- **CS8910** - *The primary constructor conflicts with the synthesized copy constructor.*
+
+Adding the `record` modifier to a `struct` or `class` type creates a [record](../builtin-types/record.md). Records include a compiler-synthesized [copy constructor](../builtin-types/record.md#nondestructive-mutation). You can write an explicit copy constructor yourself, but it must adhere to the following rules:
+
+- Copy constructors must be `public` or `protected` unless the type is [`sealed`](../keywords/sealed.md).
+- Copy constructors must call the `base()` copy constructor unless the base class is <xref:System.Object?displayProperty=nameWithType>.
+- Futhermore, the base type must have a copy constructor. This is always true for `record` types.
 
 ## Primary constructor syntax
 
 The compiler emits the following errors when a primary constructor violates one or more rules on primary constructors for classes and structs:
 
+- **CS8862** - *A constructor declared in a type with parameter list must have 'this' constructor initializer.*
 - **CS9105** - *Cannot use primary constructor parameter in this context.*
 - **CS9106** - *Identifier is ambiguous between type and parameter in this context.*
 - **CS9108** - *Cannot use parameter that has ref-like type inside an anonymous method, lambda expression, query expression, or local function.*
@@ -183,262 +265,3 @@ The two warnings provide guidance on captured primary constructor parameters.
 
 - **CS9107** - *Parameter is captured into the state of the enclosing type and its value is also passed to the base constructor. The value might be captured by the base class as well.* This warning indicates that your code may be allocated two copies of a primary constructor parameter. Because the parameter is passed to the base class, the base class likely uses it. Because the derived class access it, it may have a second copy of the same parameter. That may not be intended.
 - **CS9113** - *Parameter is unread.* This warning indicates that your class never references the primary constructor, even to pass it to the base primary constructor. It likely isn't needed.
-
-## Existing error codes
-
-### CS0514
-
-'constructor' : static constructor cannot have an explicit 'this' or 'base' constructor call
-
-Calling `this` in the static constructor is not allowed because the static constructor is called automatically before creating any instance of the class. Also, static constructors are not inherited, and cannot be called directly.
-
-For more information, see [this](../../language-reference/keywords/this.md) and [base](../../language-reference/keywords/base.md).
-
-The following example generates CS0514:
-
-```csharp
-// CS0514.cs
-class A
-{
-    static A() : base(0) // CS0514
-    {
-    }
-
-    public A(object o)
-    {
-    }
-}
-
-class B
-{
-    static B() : this(null) // CS0514
-    {
-    }
-
-    public B(object o)
-    {
-    }
-}
-```
-
-### CS0515
-
-'function' : access modifiers are not allowed on static constructors
-
-A static constructor cannot have an [access modifier](../../language-reference/keywords/index.md).
-
-The following sample generates CS0515:
-
-```csharp
-// CS0515.cs
-public class Clx
-{
-    public static void Main()
-    {
-    }
-}
-
-public class Clz
-{
-    public static Clz()   // CS0515, remove public keyword
-    {
-    }
-}
-```
-
-### CS0516
-
-Constructor 'constructor' can not call itself
-
-A program cannot recursively call constructors.
-
-The following sample generates CS0516:
-
-```csharp
-// CS0516.cs
-namespace x
-{
-   public class clx
-   {
-      public clx() : this()   // CS0516, delete "this()"
-      {
-      }
-
-      public static void Main()
-      {
-      }
-   }
-}
-```
-
-### CS0517
-
-'class' has no base class and cannot call a base constructor
-
-CS0517 can occur only when the .NET runtime compiles the source code for the object class, which is the only class that has no base class.
-
-### CS0522
-
-'constructor' : structs cannot call base class constructors
-
-A [struct](../../language-reference/builtin-types/struct.md) cannot call a base class constructor; remove the call to the base class constructor.
-
-The following sample generates CS0522:
-
-```csharp
-// CS0522.cs
-public class clx
-{
-   public clx(int i)
-   {
-   }
-
-   public static void Main()
-   {
-   }
-}
-
-public struct cly
-{
-   public cly(int i):base(0)   // CS0522
-   // try the following line instead
-   // public cly(int i)
-   {
-   }
-}
-```
-
-### CS0526
-
-Interfaces cannot contain constructors
-
-Constructors cannot be defined for [interfaces](../../language-reference/keywords/interface.md). A method is considered a constructor if it has the same name as the class and no return type.
-
-The following sample generates CS0526:
-
-```csharp
-// CS0526.cs
-namespace x
-{
-   public interface clx
-   {
-      public clx()   // CS0526
-      {
-      }
-   }
-
-   public class cly
-   {
-      public static void Main()
-      {
-      }
-   }
-}
-```
-
-### CS0710
-
-Static classes cannot have instance constructors
-
-A static class cannot be instantiated, hence it has no need for constructors. To avoid this error, remove any constructors from static classes, or if you really want to construct instances, make the class non-static.
-
-The following sample generates CS0710:
-
-```csharp
-// CS0710.cs
-public static class C
-{
-   public C()  // CS0710
-   {
-   }
-
-   public static void Main()
-   {
-   }
-}
-```
-
-### CS0824
-
-Warning level 1
-
-Constructor 'name' is marked external.
-
-A constructor may be marked as extern. However, the compiler cannot verify that the constructor actually exists. Therefore the warning is generated.
-
-To correct this warning:
-
-1. Use a pragma warning directive to ignore it.
-1. Move the constructor inside the type.
-
-The following code generates CS0824:
-
-```csharp
-// cs0824.cs
-public class C
-{
-    extern C(); // CS0824
-    public static int Main()
-    {
-        return 1;
-    }
-}
-```
-
-### CS1729
-
-'type' does not contain a constructor that takes 'number' arguments.
-
-This error occurs when you either directly or indirectly invoke the constructor of a class but the compiler cannot find any constructors with the same number of parameters. In the following example, the `test` class has no constructors that take any arguments. It therefore has only a parameterless constructor that takes zero arguments. Because in the second line in which the error is generated, the derived class declares no constructors of its own, the compiler provides a parameterless constructor. That constructor invokes a parameterless constructor in the base class. Because the base class has no such constructor, CS1729 is generated.
-
-To correct this error  
-  
-1. Adjust the number of parameters in the call to the constructor.
-1. Modify the class to provide a constructor with the parameters you must call.
-1. Provide a parameterless constructor in the base class.
-
-The following example generates CS1729:
-
-```csharp
-// cs1729.cs
-class Test
-{
-    static int Main()
-    {
-        // Class Test has only a parameterless constructor, which takes no arguments.
-        Test test1 = new Test(2); // CS1729
-        // The following line resolves the error.
-        Test test2 = new Test();
-
-        // Class Parent has only one constructor, which takes two int parameters.
-        Parent exampleParent1 = new Parent(10); // CS1729
-        // The following line resolves the error.
-        Parent exampleParent2 = new Parent(10, 1);
-
-        return 1;
-    }
-}
-
-public class Parent
-{
-    // The only constructor for this class has two parameters.
-    public Parent(int i, int j) { }
-}
-
-// The following declaration causes a compiler error because class Parent
-// does not have a constructor that takes no arguments. The declaration of
-// class Child2 shows how to resolve this error.
-public class Child : Parent { } // CS1729
-
-public class Child2 : Parent
-{
-    // The constructor for Child2 has only one parameter. To access the
-    // constructor in Parent, and prevent this compiler error, you must provide
-    // a value for the second parameter of Parent. The following example provides 0.
-    public Child2(int k)
-        : base(k, 0)
-    {
-        // Add the body of the constructor here.
-    }
-}
-```

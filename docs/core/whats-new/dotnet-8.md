@@ -2,7 +2,7 @@
 title: What's new in .NET 8
 description: Learn about the new .NET features introduced in .NET 8.
 titleSuffix: ""
-ms.date: 05/12/2023
+ms.date: 05/16/2023
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
@@ -26,6 +26,7 @@ This section contains the following subtopics:
 - [Simplified output paths](#simplified-output-paths)
 - ['dotnet workload clean' command](#dotnet-workload-clean-command)
 - ['dotnet publish' and 'dotnet pack' assets](#dotnet-publish-and-dotnet-pack-assets)
+- [Template engine](#template-engine)
 
 ### Terminal build output
 
@@ -101,6 +102,26 @@ The following output shows the different behavior between `dotnet build` and `do
 
 For more information, see ['dotnet pack' uses Release config](../compatibility/sdk/8.0/dotnet-pack-config.md) and ['dotnet publish' uses Release config](../compatibility/sdk/8.0/dotnet-publish-config.md).
 
+### 'dotnet restore' security auditing
+
+Starting in .NET 8, you can opt into security checks for known vulnerabilities when dependency packages are restored. This auditing produces a report of security vulnerabilities with the affected package name, the severity of the vulnerability, and a link to the advisory for more details. When you run `dotnet add` or `dotnet restore`, warnings NU1901-NU1904 will appear for any vulnerabilities that are found. For more information, see [Audit for security vulnerabilities](../tools/dotnet-restore.md#audit-for-security-vulnerabilities).
+
+### Template engine
+
+The [template engine](https://github.com/dotnet/templating) provides a more secure experience in .NET 8 by integrating some of NuGet's security-related features. The improvements include:
+
+- Prevent downloading packages from `http://` feeds by default. For example, the following command will fail to install the template package because the source URL doesn't use HTTPS.
+
+  `dotnet new install console --add-source "http://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-public/nuget/v3/index.json"`
+
+   You can override this limitation by using the `--force` flag.
+
+- For `dotnet new`, `dotnet new install`, and `dotnet new update`, check for known vulnerabilities in the template package. If vulnerabilities are found and you wish to proceed, you must use the `--force` flag.
+
+- For `dotnet new`, provide information about the template package owner. Ownership is verified by the NuGet portal and can be considered a trustworthy characteristic.
+
+- For `dotnet search` and `dotnet uninstall`, indicate whether a template is installed from a package that's "trusted"&mdash;that is, it uses a [reserved prefix](/nuget/nuget-org/id-prefix-reservation).
+
 ## Serialization
 
 Various improvements have been made to <xref:System.Text.Json?displayProperty=fullName> serialization and deserialization functionality.
@@ -140,16 +161,156 @@ Various improvements have been made to <xref:System.Text.Json?displayProperty=fu
 
 - <xref:System.Text.Json.JsonSerializerOptions.MakeReadOnly?displayProperty=nameWithType> gives you explicit control over when a `JsonSerializerOptions` instance is frozen. (You can also check it with the <xref:System.Text.Json.JsonSerializerOptions.IsReadOnly> property.)
 
+- Support for deserializing onto read-only fields or properties (that is, those that don't have a `set` accessor).
+
+  You can opt into this support globally by setting a new option, <xref:System.Text.Json.JsonSerializerOptions.PreferredObjectCreationHandling>, to <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Populate?displayProperty=nameWithType>. If compatibility is a concern, you can also enable the functionality more granularly by placing the `[JsonObjectCreationHandling(JsonObjectCreationHandling.Populate)]` attribute on types whose properties are to be populated, or on individual properties.
+
+  For example, consider the following code that deserializes into a `CustomerInfo` type that has two read-only properties.
+
+  ```csharp
+  using System.Text.Json;
+
+  CustomerInfo customer =
+      JsonSerializer.Deserialize<CustomerInfo>("""{"Name":"John Doe","Company":{"Name":"Contoso"}}""")!;
+
+  Console.WriteLine(JsonSerializer.Serialize(customer));
+
+  class CompanyInfo
+  {
+      public required string Name { get; set; }
+      public string? PhoneNumber { get; set; }
+  }
+
+  [JsonObjectCreationHandling(JsonObjectCreationHandling.Populate)]
+  class CustomerInfo
+  {
+      // Both of these properties are read-only.
+      public string Name { get; } = "Anonymous";
+      public CompanyInfo Company { get; } = new CompanyInfo() { Name = "N/A", PhoneNumber = "N/A" };
+  }
+  ```
+
+  Prior to .NET 8, the input values were ignored and the `Name` and `Company` properties retained their default values.
+
+  ```output
+  {"Name":"Anonymous","Company":{"Name":"N/A","PhoneNumber":"N/A"}}
+  ```
+
+  Now, the input values are used to populate the read-only properties during deserialization.
+
+  ```output
+  {"Name":"John Doe","Company":{"Name":"Contoso","PhoneNumber":null}}
+  ```
+
+- You can now disable using the reflection-based serializer by default. This disablement is useful to avoid accidental rooting of reflection components that aren't even in use, especially in trimmed and native AOT apps. To disable default reflection-based serialization by requiring that a <xref:System.Text.Json.JsonSerializerOptions> argument to be passed to the <xref:System.Text.Json.JsonSerializer> serialization and deserialization methods, set the `<JsonSerializerIsReflectionEnabledByDefault >` property to `false` in your project file. (If the property is set to `false` and you don't pass a configured <xref:System.Text.Json.JsonSerializerOptions> argument, the `Serialize` and `Deserialize` methods throw a <xref:System.NotSupportedException> at run time.)
+
+  Use the new <xref:System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault> property to check the value of the feature switch. If you're a library author building on top of <xref:System.Text.Json?displayProperty=fullName>, you can rely on the property to configure your defaults without accidentally rooting reflection components.
+
+  ```csharp
+  static JsonSerializerOptions GetDefaultOptions()
+  {
+      if (JsonSerializer.IsReflectionEnabledByDefault)
+      {
+          // This branch has a dependency on DefaultJsonTypeInfo,
+          // but it will get trimmed away if the feature switch is disabled.
+          return new JsonSerializerOptions
+          {
+                TypeInfoResolver = new DefaultJsonTypeInfoResolver(),
+                PropertyNamingPolicy = JsonNamingPolicy.KebabCaseLower,
+          }
+      }
+
+      return new() { PropertyNamingPolicy = JsonNamingPolicy.KebabCaseLower } ;
+  }
+  ```
+
+- The <xref:System.Text.Json.JsonSerializerOptions> class includes a new <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> property that complements the existing <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> property. These properties are used in contract customization for chaining source generators. The addition of the new property means that you don't have to specify all chained components at one call site&mdash;they can be added after the fact.
+
+  <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> also lets you introspect the chain or remove components from it. The following code snippet shows an example.
+
+  ```csharp
+  var options = new JsonSerializerOptions
+  {
+      TypeInfoResolver = JsonTypeInfoResolver.Combine(ContextA.Default, ContextB.Default, ContextC.Default);
+  };
+
+  options.TypeInfoResolverChain.Count; // 3
+  options.TypeInfoResolverChain.RemoveAt(0);
+  options.TypeInfoResolverChain.Count; // 2
+  ```
+
+- <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=nameWithType> is now obsolete. It's been superseded by the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> and <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> properties.
+
+- The new <xref:System.Text.Json.JsonSerializerOptions.TryGetTypeInfo(System.Type,System.Text.Json.Serialization.Metadata.JsonTypeInfo@)> method, a variation of the existing <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo(System.Type)> method, returns `false` if no metadata for the specified type was found.
+
+- .NET 8 adds support for compiler-generated or *unspeakable* types in weakly typed source generation scenarios. Since compiler-generated types can't be explicitly specified by the source generator, <xref:System.Text.Json?displayProperty=fullName> now performs nearest-ancestor resolution at run time. This resolution determines the most appropriate supertype with which to serialize the value.
+
 For more information about JSON serialization in general, see [JSON serialization and deserialization in .NET](../../standard/serialization/system-text-json/overview.md).
 
 ## Core .NET libraries
 
 This section contains the following subtopics:
 
+- [Time abstraction](#time-abstraction)
+- [UTF8 improvements](#utf8-improvements)
 - [Methods for working with randomness](#methods-for-working-with-randomness)
 - [Performance-focused types](#performance-focused-types)
 - [System.Numerics and System.Runtime.Intrinsics](#systemnumerics-and-systemruntimeintrinsics)
 - [Data validation](#data-validation)
+
+### Time abstraction
+
+The new <xref:System.TimeProvider> class and <xref:System.ITimer> interface add *time abstraction* functionality, which allows you to mock time in test scenarios. In addition, you can use the time abstraction to mock <xref:System.Threading.Tasks.Task> operations that rely on time progression using <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Task.WaitAsync%2A?displayProperty=nameWithType>. The time abstraction supports the following essential time operations:
+
+- Retrieve local and UTC time
+- Obtain a timestamp for measuring performance
+- Create a timer
+
+The following code snippet shows some usage examples.
+
+```csharp
+// Get system time.
+DateTimeOffset utcNow= TimeProvider.System.GetUtcNow();
+DateTimeOffset localNow = TimeProvider.System.GetLocalNow();
+
+// Create a time provider that works with a
+// time zone that's different than the local time zone.
+private class ZonedTimeProvider : TimeProvider
+{
+    private TimeZoneInfo _zoneInfo;
+    public ZonedTimeProvider(TimeZoneInfo zoneInfo) : base()
+    {
+        _zoneInfo = zoneInfo ?? TimeZoneInfo.Local;
+    }
+    public override TimeZoneInfo LocalTimeZone { get => _zoneInfo; }
+    public static TimeProvider FromLocalTimeZone(TimeZoneInfo zoneInfo) => new ZonedTimeProvider(zoneInfo);
+}
+
+// Create a timer using a time provider.
+ITimer timer = timeProvider.CreateTimer(callBack, state, delay, Timeout.InfiniteTimeSpan);
+
+// Measure a period using the system time provider.
+long providerTimestamp1 = TimeProvider.System.GetTimestamp();
+long providerTimestamp2 = TimeProvider.System.GetTimestamp();
+var period = GetElapsedTime(providerTimestamp1, providerTimestamp2);
+```
+
+### UTF8 improvements
+
+If you want to enable writing out a string-like representation of your type to a destination span, implement the new <xref:System.IUtf8SpanFormattable> interface on your type. This new interface is closely related to <xref:System.ISpanFormattable>, but targets UTF8 and `Span<byte>` instead of UTF16 and `Span<char>`.
+
+<xref:System.IUtf8SpanFormattable> has been implemented on all of the primitive types (plus others), with the exact same shared logic whether targeting `string`, `Span<char>`, or `Span<byte>`. It has full support for all formats (including the new ["B" binary specifier](../../standard/base-types/standard-numeric-format-strings.md#binary-format-specifier-b)) and all cultures. This means you can now format directly to UTF8 from `Byte`, `Complex`, `Char`, `DateOnly`, `DateTime`, `DateTimeOffset`, `Decimal`, `Double`, `Guid`, `Half`, `IPAddress`, `IPNetwork`, `Int16`, `Int32`, `Int64`, `Int128`, `IntPtr`, `NFloat`, `SByte`, `Single`, `Rune`, `TimeOnly`, `TimeSpan`, `UInt16`, `UInt32`, `UInt64`, `UInt128`, `UIntPtr`, and `Version`.
+
+New <xref:System.Text.Unicode.Utf8.TryWrite%2A?displayProperty=nameWithType> methods provide a UTF8-based counterpart to the existing <xref:System.MemoryExtensions.TryWrite%2A?displayProperty=nameWithType> methods, which are UTF16-based. You can use interpolated string syntax to format a complex expression directly into a span of UTF8 bytes, for example:
+
+```csharp
+static bool FormatHexVersion(short major, short minor, short build, short revision, Span<byte> utf8Bytes, out int bytesWritten) =>
+    Utf8.TryWrite(utf8Bytes, CultureInfo.InvariantCulture, $"{major:X4}.{minor:X4}.{build:X4}.{revision:X4}", out bytesWritten);
+```
+
+The implementation recognizes <xref:System.IUtf8SpanFormattable> on the format values and uses their implementations to write their UTF8 representations directly to the destination span.
+
+The implementation also utilizes the new <xref:System.Text.Encoding.TryGetBytes(System.ReadOnlySpan{System.Char},System.Span{System.Byte},System.Int32@)?displayProperty=nameWithType> method, which together with its <xref:System.Text.Encoding.TryGetChars(System.ReadOnlySpan{System.Char},System.Span{System.Byte},System.Int32@)?displayProperty=nameWithType> counterpart, supports encoding and decoding into a destination span. If the span isn't long enough to hold the resulting state, the methods return `false` rather than throwing an exception.
 
 ### Methods for working with randomness
 
@@ -224,9 +385,32 @@ IDataView predictions = model.Transform(split.TestSet);
 This section covers improvements to the <xref:System.Numerics?displayProperty=fullName> and <xref:System.Runtime.Intrinsics?displayProperty=fullName> namespaces.
 
 - <xref:System.Runtime.Intrinsics.Vector256%601>, <xref:System.Numerics.Matrix3x2>, and <xref:System.Numerics.Matrix4x4> have improved hardware acceleration on .NET 8. For example, <xref:System.Runtime.Intrinsics.Vector256%601> was reimplemented to internally be `2x Vector128<T>` operations, where possible. This allows partial acceleration of some functions when `Vector128.IsHardwareAccelerated == true` but `Vector256.IsHardwareAccelerated == false`, such as on Arm64.
-- .NET 8 includes the initial implementation of <xref:System.Runtime.Intrinsics.Vector512%601>.
 - Hardware intrinsics are now annotated with the `ConstExpected` attribute. This ensures that users are aware when the underlying hardware expects a constant and therefore when a non-constant value may unexpectedly hurt performance.
 - The <xref:System.Numerics.IFloatingPointIeee754%601.Lerp(%600,%600,%600)> `Lerp` API has been added to <xref:System.Numerics.IFloatingPointIeee754%601> and therefore to `float` (<xref:System.Single>), `double` (<xref:System.Double>), and <xref:System.Half>. This API allows a linear interpolation between two values to be performed efficiently and correctly.
+
+#### Vector512 and AVX-512
+
+.NET Core 3.0 expanded SIMD support to include the platform-specific hardware intrinsics APIs for x86/x64. .NET 5 added support for Arm64 and .NET 7 added the cross-platform hardware intrinsics. .NET 8 furthers SIMD support by introducing <xref:System.Runtime.Intrinsics.Vector512%601> and support for [Intel Advanced Vector Extensions 512 (AVX-512)](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-avx-512-instructions.html) instructions.
+
+Specifically, .NET 8 includes support for the following key features of AVX-512:
+
+- 512-bit vector operations
+- Additional 16 SIMD registers
+- Additional instructions available for 128-bit, 256-bit, and 512-bit vectors
+
+If you have hardware that supports the functionality, then <xref:System.Runtime.Intrinsics.Vector512.IsHardwareAccelerated?displayProperty=nameWithType> now reports `true`.
+
+.NET 8 also adds several platform-specific classes under the <xref:System.Runtime.Intrinsics.X86?displayProperty=fullName> namespace:
+
+- <xref:System.Runtime.Intrinsics.X86.Avx512F> (foundational)
+- <xref:System.Runtime.Intrinsics.X86.Avx512BW> (byte and word)
+- <xref:System.Runtime.Intrinsics.X86.Avx512CD> (conflict detection)
+- <xref:System.Runtime.Intrinsics.X86.Avx512DQ> (doubleword and quadword)
+- <xref:System.Runtime.Intrinsics.X86.Avx512Vbmi> (vector byte manipulation instructions)
+
+These classes follow the same general shape as other instruction set architectures (ISAs) in that they expose an <xref:System.Runtime.Intrinsics.X86.Avx512F.IsSupported> property and a nested <xref:System.Runtime.Intrinsics.X86.Avx512F.X64> class for instructions available only to 64-bit processes. Additionally, each class has a nested <xref:System.Runtime.Intrinsics.X86.Avx512F.VL> class that exposes the `Avx512VL` (vector length) extensions for the corresponding instruction set.
+
+Even if you don't explicitly use `Vector512`-specific or `Avx512F`-specific instructions in your code, you'll likely still benefit from the new AVX-512 support. The JIT can take advantage of the additional registers and instructions implicitly when using <xref:System.Runtime.Intrinsics.Vector128%601> or <xref:System.Runtime.Intrinsics.Vector256%601>. The base class library uses these hardware intrinsics internally in most operations exposed by <xref:System.Span%601> and <xref:System.ReadOnlySpan%601> and in many of the math APIs exposed for the primitive types.
 
 ### Data validation
 
@@ -259,6 +443,32 @@ ValidateOptionsResult result = builder.Build();
 
 // Reset the builder to allow using it in new validation operation.
 builder.Clear();
+```
+
+## Garbage collection
+
+.NET 8 adds a capability to adjust the memory limit on the fly. This is useful in a cloud-service scenario, where demand comes and goes. To be cost-effective, services should scale up and down on resource consumption as the demand fluctuates. When a service detects a decrease in demand, it can scale down resource consumption by reducing its memory limit. Previously, this would fail because the garbage collector (GC) was unaware of the change and might allocate more memory than the new limit. With this change, you can call the `_RefreshMemoryLimit` API to update the GC with the new memory limit.
+
+There are some limitations to be aware of:
+
+- For now, the `_RefreshMemoryLimit` API is private, so you'll need to call it through private reflection.
+- On 32-bit platforms (for example, Windows x86 and Linux ARM), .NET is unable to establish a new heap hard limit if there isn't already one.
+- The API might return a non-zero status code indicating the refresh failed. This can happen if the scale-down is too aggressive and leaves no room for the GC to maneuver. In this case, consider calling `GC.Collect(2, GCCollectionMode.Aggressive)` to shrink the current memory usage, and then try again.
+- If you scale up the memory limit beyond the size that the GC believes the process can handle during startup, the `_RefreshMemoryLimit` call will succeed, but it won't be able to use more memory than what it perceives as the limit.
+
+The following code snippet shows how to call the API using reflection.
+
+```csharp
+MethodInfo refreshMemoryLimitMethod = typeof(GC).GetMethod("_RefreshMemoryLimit", BindingFlags.NonPublic | BindingFlags.Static);
+refreshMemoryLimitMethod.Invoke(null, Array<object>.Empty);
+```
+
+You can also refresh some of the GC configuration settings related to the memory limit. The following code snippet sets the heap hard limit to 100 mebibytes (MiB):
+
+```csharp
+AppContext.SetData("GCHeapHardLimit", (ulong)100 * 1024 * 1024);
+MethodInfo refreshMemoryLimitMethod = typeof(GC).GetMethod("_RefreshMemoryLimit", BindingFlags.NonPublic | BindingFlags.Static);
+refreshMemoryLimitMethod.Invoke(null, Array<object>.Empty);
 ```
 
 ## Source generator for configuration binding
@@ -384,16 +594,25 @@ Required modifier for first parameter: System.Runtime.InteropServices.InAttribut
 
 ## Native AOT support
 
-The option to [publish as native AOT](../deploying/native-aot/index.md) was first introduced in .NET 7. Publishing an app with native AOT creates a fully self-contained version of your app that doesn't need a runtime&mdash;everything is included in a single file.
+The option to [publish as native AOT](../deploying/native-aot/index.md) was first introduced in .NET 7. Publishing an app with native AOT creates a fully self-contained version of your app that doesn't need a runtime&mdash;everything is included in a single file. .NET 8 brings the following improvements to native AOT publishing:
 
-.NET 8 adds support for the x64 and Arm64 architectures on *macOS*.
+- Adds support for the x64 and Arm64 architectures on *macOS*.
+- Reduces the sizes of native AOT apps on Linux by up to 50%. The following table shows the size of a "Hello World" app published with native AOT that includes the entire .NET runtime on .NET 7 vs. .NET 8:
 
-Also, the sizes of native AOT apps on Linux are now up to 50% smaller. The following table shows the size of a "Hello World" app published with native AOT that includes the entire .NET runtime on .NET 7 vs. .NET 8:
+  | Operating system                        | .NET 7  | .NET 8 Preview 1 |
+  | --------------------------------------- | ------- | ---------------- |
+  | Linux x64 (with `-p:StripSymbols=true`) | 3.76 MB | 1.84 MB          |
+  | Windows x64                             | 2.85 MB | 1.77 MB          |
 
-| Operating system                        | .NET 7  | .NET 8 Preview 1 |
-| --------------------------------------- | ------- | ---------------- |
-| Linux x64 (with `-p:StripSymbols=true`) | 3.76 MB | 1.84 MB          |
-| Windows x64                             | 2.85 MB | 1.77 MB          |
+- Lets you specify an optimization preference: size or speed. By default, the compiler chooses to generate fast code while being mindful of the size of the application. However, you can use the `<OptimizationPreference>` MSBuild property to optimize specifically for one or the other. For more information, see [Optimize AOT deployments](../deploying/native-aot/optimizing.md).
+
+### Console app template
+
+The default console app template now includes support for AOT out-of-the-box. To create a project that's configured for AOT compilation, just run `dotnet new console --aot`. The project configuration added by `--aot` has three effects:
+
+- Generates a native self-contained executable with native AOT when you publish the project, for example, with `dotnet publish` or Visual Studio.
+- Enables compatibility analyzers for trimming, AOT, and single file. These analyzers alert you to potentially problematic parts of your project (if there are any).
+- Enables debug-time emulation of AOT so that when you debug your project without AOT compilation, you get a similar experience to AOT. For example, if you use <xref:System.Reflection.Emit?displayProperty=nameWithType> in a NuGet package that wasn't annotated for AOT (and therefore was missed by the compatibility analyzer), the emulation means you won't have any surprises when you try to publish the project with AOT.
 
 ## Performance improvements
 
@@ -401,11 +620,14 @@ Also, the sizes of native AOT apps on Linux are now up to 50% smaller. The follo
 
 - Arm64 performance improvements
 - SIMD improvements
+- Support for AVX-512 ISA extensions (see [Vector512 and AVX-512](#vector512-and-avx-512))
 - Cloud-native improvements
 - Profile-guided optimization (PGO) improvements
-- Support for AVX-512 ISA extensions
 - JIT throughput improvements
 - Loop and general optimizations
+- Optimized access for fields marked with <xref:System.ThreadStaticAttribute>
+- Consecutive register allocation. Arm64 has two instructions for table vector lookup, which require that all entities in their tuple operands are present in consecutive registers.
+- JIT/NativeAOT can now unroll and auto-vectorize some memory operations with SIMD, such as comparison, copying, and zeroing, if it can determinate their sizes at compile time.
 
 ## .NET container images
 
@@ -467,10 +689,7 @@ For more information, see the [Improving multi-platform container support](https
 
 ### Minimum support baselines for Linux
 
-The minimum support baselines for Linux have been updated for .NET 8:
-
-- .NET will be built targeting Ubuntu 16.04, for all architectures. That's primarily important for defining the minimum `glibc` version for .NET 8. For example, .NET 8 will fail to even start on Ubuntu 14.04.
-- For Red Hat Enterprise Linux (RHEL), .NET supports RHEL 8+ and drops RHEL 7.
+The minimum support baselines for Linux have been updated for .NET 8. .NET is built targeting Ubuntu 16.04, for all architectures. That's primarily important for defining the minimum `glibc` version for .NET 8. .NET 8 will fail to start on distro versions that include an older glibc, such as Ubuntu 14.04 or Red Hat Enterprise Linux 7.
 
 For more information, see [Red Hat Enterprise Linux Family support](https://github.com/dotnet/core/blob/main/linux-support.md#red-hat-enterprise-linux-family-support).
 
@@ -479,6 +698,14 @@ For more information, see [Red Hat Enterprise Linux Family support](https://gith
 In previous .NET versions, you could build .NET from source, but it required you to create a "source tarball" from the [dotnet/installer](https://github.com/dotnet/installer) repo commit that corresponded to a release. In .NET 8, that's no longer necessary and you can build .NET on Linux directly from the [dotnet/dotnet](https://github.com/dotnet/dotnet) repository. That repo uses [dotnet/source-build](https://github.com/dotnet/source-build) to build .NET runtimes, tools, and SDKs. This is the same build that Red Hat and Canonical use to build .NET.
 
 Building in a container is the easiest approach for most people, since the `dotnet-buildtools/prereqs` container images contain all the required dependencies. For more information, see the [build instructions](https://github.com/dotnet/dotnet#building).
+
+## NuGet
+
+Starting in .NET 8, NuGet verifies signed packages on Linux by default. NuGet continues to verify signed packages on Windows as well.
+
+Most users shouldn't notice the verification. However, if you have an existing root certificate bundle located at */etc/pki/ca-trust/extracted/pem/objsign-ca-bundle.pem*, you may see trust failures accompanied by [warning NU3042](/nuget/reference/errors-and-warnings/nu3042).
+
+You can opt out of verification by setting the environment variable `DOTNET_NUGET_SIGNATURE_VERIFICATION` to `false`.
 
 ## See also
 

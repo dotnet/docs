@@ -28,36 +28,39 @@ When you declare a local constant, you must also initialize it.
 
 For information about ref local variables, see the [Ref locals](#ref-locals) section.
 
-## Implicitly typed local variables
+## Implicitly-typed local variables
 
-Variables that are declared at method scope can have an implicit "type" `var`. An implicitly typed local variable is strongly typed as if you had declared the type yourself, but the compiler determines the type. The following two declarations of `a` and `b` are functionally equivalent:
+When you declare a local variable, you can let the compiler infer the type of the variable from the initialization expression. To do that use the `var` keyword instead of the name of a type:
 
-```csharp
-var a = 10; // Implicitly typed.
-int b = 10; // Explicitly typed.
-```
+:::code language="csharp" source="snippets/declarations/ImplicitlyTyped.cs" id="ImplicitlyTyped":::
 
-> [!IMPORTANT]
-> When `var` is used with [nullable reference types](../builtin-types/nullable-reference-types.md) enabled, it always implies a nullable reference type even if the expression type isn't nullable. The compiler's null state analysis protects against dereferencing a potential `null` value. If the variable is never assigned to an expression that maybe null, the compiler won't emit any warnings. If you assign the variable to an expression that might be null, you must test that it isn't null before dereferencing it to avoid any warnings.
+As the preceding example shows, implicitly-typed local variables are strongly typed.
 
-A common use of the `var` keyword is with constructor invocation expressions. The use of `var` allows you to not repeat a type name in a variable declaration and object instantiation, as the following example shows:
+> [!NOTE]
+> When you use `var` in the enabled [nullable aware context](../builtin-types/nullable-reference-types.md) and the type of an initialization expression is a reference type, the compiler always infers a **nullable** reference type even if the type of an initialization expression isn't nullable.
+
+A common use of `var` is with a [constructor invocation expression](../operators/new-operator.md#constructor-invocation). The use of `var` allows you to not repeat a type name in a variable declaration and object instantiation, as the following example shows:
 
 ```csharp
 var xs = new List<int>();
 ```
 
-Beginning with C# 9.0, you can use a target-typed [`new` expression](../operators/new-operator.md) as an alternative:
+Beginning with C# 9.0, you can use a [target-typed `new` expression](../operators/new-operator.md#target-typed-new) as an alternative:
 
 ```csharp
 List<int> xs = new();
 List<int>? ys = new();
 ```
 
+When you work with [anonymous types](../../fundamentals/types/anonymous-types.md), you must use implicitly-typed local variables. The following example shows a [query expression](../keywords/query-keywords.md) that uses an anonymous type to hold a customer's name and phone number:
+
+:::code language="csharp" source="snippets/declarations/ImplicitlyTyped.cs" id="VarExample":::
+
+In the preceding example, you can't explicitly specify the type of the `fromPhoenix` variable. The type is <xref:System.Collections.Generic.IEnumerable%601> but in this case `T` is an anonymous type and you cannot provide its name. That's why you need to use `var`. For the same reason, you must use `var` when you declare the `customer` iteration variable in the `foreach` statement.
+
+For more information about implicitly-typed local variables, see [Implicitly-typed local variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
+
 In pattern matching, the `var` keyword is used in a [`var` pattern](../operators/patterns.md#var-pattern).
-
-The following example shows two query expressions. In the first expression, the use of `var` is permitted but isn't required, because the type of the query result can be stated explicitly as an `IEnumerable<string>`. However, in the second expression, `var` allows the result to be a collection of anonymous types, and the name of that type isn't accessible except to the compiler itself. Use of `var` eliminates the requirement to create a new class for the result. In Example #2, the `foreach` iteration variable `item` must also be implicitly typed.
-
-:::code language="csharp" source="./snippets/declarations/ImplicitlyTyped.cs" id="VarExample":::
 
 ## Ref locals
 

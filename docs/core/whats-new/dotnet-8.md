@@ -70,7 +70,7 @@ The following table shows the default values for each level in the folder struct
 
 ### 'dotnet workload clean' command
 
-.NET 8 Preview 3 introduces a new command to clean up workload packs that might be left over through several .NET SDK or Visual Studio updates. If you encounter issues when managing workloads, consider using `workload clean` to safely restore to a known state before trying again. The command has two modes:
+.NET 8 introduces a new command to clean up workload packs that might be left over through several .NET SDK or Visual Studio updates. If you encounter issues when managing workloads, consider using `workload clean` to safely restore to a known state before trying again. The command has two modes:
 
 - `dotnet workload clean`
 
@@ -202,7 +202,7 @@ Various improvements have been made to <xref:System.Text.Json?displayProperty=fu
   {"Name":"John Doe","Company":{"Name":"Contoso","PhoneNumber":null}}
   ```
 
-- You can now disable using the reflection-based serializer by default. This disablement is useful to avoid accidental rooting of reflection components that aren't even in use, especially in trimmed and native AOT apps. To disable default reflection-based serialization by requiring that a <xref:System.Text.Json.JsonSerializerOptions> argument to be passed to the <xref:System.Text.Json.JsonSerializer> serialization and deserialization methods, set the `<JsonSerializerIsReflectionEnabledByDefault >` property to `false` in your project file. (If the property is set to `false` and you don't pass a configured <xref:System.Text.Json.JsonSerializerOptions> argument, the `Serialize` and `Deserialize` methods throw a <xref:System.NotSupportedException> at run time.)
+- You can now disable using the reflection-based serializer by default. This disablement is useful to avoid accidental rooting of reflection components that aren't even in use, especially in trimmed and native AOT apps. To disable default reflection-based serialization by requiring that a <xref:System.Text.Json.JsonSerializerOptions> argument be passed to the <xref:System.Text.Json.JsonSerializer> serialization and deserialization methods, set the `<JsonSerializerIsReflectionEnabledByDefault >` property to `false` in your project file. (If the property is set to `false` and you don't pass a configured <xref:System.Text.Json.JsonSerializerOptions> argument, the `Serialize` and `Deserialize` methods throw a <xref:System.NotSupportedException> at run time.)
 
   Use the new <xref:System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault> property to check the value of the feature switch. If you're a library author building on top of <xref:System.Text.Json?displayProperty=fullName>, you can rely on the property to configure your defaults without accidentally rooting reflection components.
 
@@ -260,7 +260,7 @@ This section contains the following subtopics:
 
 ### Time abstraction
 
-The new <xref:System.TimeProvider> class and <xref:System.ITimer> interface add *time abstraction* functionality, which allows you to mock time in test scenarios. In addition, you can use the time abstraction to mock <xref:System.Threading.Tasks.Task> operations that rely on time progression using <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Task.WaitAsync%2A?displayProperty=nameWithType>. The time abstraction supports the following essential time operations:
+The new <xref:System.TimeProvider> class and <xref:System.Threading.ITimer> interface add *time abstraction* functionality, which allows you to mock time in test scenarios. In addition, you can use the time abstraction to mock <xref:System.Threading.Tasks.Task> operations that rely on time progression using <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Task.WaitAsync%2A?displayProperty=nameWithType>. The time abstraction supports the following essential time operations:
 
 - Retrieve local and UTC time
 - Obtain a timestamp for measuring performance
@@ -310,7 +310,7 @@ static bool FormatHexVersion(short major, short minor, short build, short revisi
 
 The implementation recognizes <xref:System.IUtf8SpanFormattable> on the format values and uses their implementations to write their UTF8 representations directly to the destination span.
 
-The implementation also utilizes the new <xref:System.Text.Encoding.TryGetBytes(System.ReadOnlySpan{System.Char},System.Span{System.Byte},System.Int32@)?displayProperty=nameWithType> method, which together with its <xref:System.Text.Encoding.TryGetChars(System.ReadOnlySpan{System.Char},System.Span{System.Byte},System.Int32@)?displayProperty=nameWithType> counterpart, supports encoding and decoding into a destination span. If the span isn't long enough to hold the resulting state, the methods return `false` rather than throwing an exception.
+The implementation also utilizes the new <xref:System.Text.Encoding.TryGetBytes(System.ReadOnlySpan{System.Char},System.Span{System.Byte},System.Int32@)?displayProperty=nameWithType> method, which together with its <xref:System.Text.Encoding.TryGetChars(System.ReadOnlySpan{System.Byte},System.Span{System.Char},System.Int32@)?displayProperty=nameWithType> counterpart, supports encoding and decoding into a destination span. If the span isn't long enough to hold the resulting state, the methods return `false` rather than throwing an exception.
 
 ### Methods for working with randomness
 
@@ -428,7 +428,7 @@ The <xref:System.ComponentModel.DataAnnotations?displayProperty=fullName> namesp
 
 ### ValidateOptionsResultBuilder type
 
-.NET 8 Preview 3 introduces the <xref:Microsoft.Extensions.Options.ValidateOptionsResultBuilder> type to facilitate the creation of a <xref:Microsoft.Extensions.Options.ValidateOptionsResult> object. Importantly, this builder allows for the accumulation of multiple errors. Previously, creating the <xref:Microsoft.Extensions.Options.ValidateOptionsResult> object that's required to implement <xref:Microsoft.Extensions.Options.IValidateOptions%601.Validate(System.String,%600)?displayProperty=nameWithType> was difficult and sometimes resulted in layered validation errors. If there were multiple errors, the validation process often stopped at the first error.
+.NET 8 introduces the <xref:Microsoft.Extensions.Options.ValidateOptionsResultBuilder> type to facilitate the creation of a <xref:Microsoft.Extensions.Options.ValidateOptionsResult> object. Importantly, this builder allows for the accumulation of multiple errors. Previously, creating the <xref:Microsoft.Extensions.Options.ValidateOptionsResult> object that's required to implement <xref:Microsoft.Extensions.Options.IValidateOptions%601.Validate(System.String,%600)?displayProperty=nameWithType> was difficult and sometimes resulted in layered validation errors. If there were multiple errors, the validation process often stopped at the first error.
 
 The following code snippet shows an example usage of <xref:Microsoft.Extensions.Options.ValidateOptionsResultBuilder>.
 
@@ -447,7 +447,7 @@ builder.Clear();
 
 ## Garbage collection
 
-.NET 8 adds a capability to adjust the memory limit on the fly. This is useful in a cloud-service scenario, where demand comes and goes. To be cost-effective, services should scale up and down on resource consumption as the demand fluctuates. When a service detects a decrease in demand, it can scale down resource consumption by reducing its memory limit. Previously, this would fail because the garbage collector (GC) was unaware of the change and might allocate more memory than the new limit. With this change, you can call the `_RefreshMemoryLimit` API to update the GC with the new memory limit.
+.NET 8 adds a capability to adjust the memory limit on the fly. This is useful in cloud-service scenarios, where demand comes and goes. To be cost-effective, services should scale up and down on resource consumption as the demand fluctuates. When a service detects a decrease in demand, it can scale down resource consumption by reducing its memory limit. Previously, this would fail because the garbage collector (GC) was unaware of the change and might allocate more memory than the new limit. With this change, you can call the `_RefreshMemoryLimit` API to update the GC with the new memory limit.
 
 There are some limitations to be aware of:
 
@@ -483,7 +483,7 @@ To opt into the source generator, set the `EnableMicrosoftExtensionsConfiguratio
 </PropertyGroup>
 ```
 
-For Preview 3, you'll also need to download the latest preview version of the [Microsoft.Extensions.Configuration.Binder NuGet package](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Binder).
+You'll also need to download the latest preview version of the [Microsoft.Extensions.Configuration.Binder NuGet package](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Binder).
 
 The following code shows an example of invoking the binder.
 
@@ -599,10 +599,10 @@ The option to [publish as native AOT](../deploying/native-aot/index.md) was firs
 - Adds support for the x64 and Arm64 architectures on *macOS*.
 - Reduces the sizes of native AOT apps on Linux by up to 50%. The following table shows the size of a "Hello World" app published with native AOT that includes the entire .NET runtime on .NET 7 vs. .NET 8:
 
-  | Operating system                        | .NET 7  | .NET 8 Preview 1 |
-  | --------------------------------------- | ------- | ---------------- |
-  | Linux x64 (with `-p:StripSymbols=true`) | 3.76 MB | 1.84 MB          |
-  | Windows x64                             | 2.85 MB | 1.77 MB          |
+  | Operating system                        | .NET 7  | .NET 8  |
+  | --------------------------------------- | ------- | ------- |
+  | Linux x64 (with `-p:StripSymbols=true`) | 3.76 MB | 1.84 MB |
+  | Windows x64                             | 2.85 MB | 1.77 MB |
 
 - Lets you specify an optimization preference: size or speed. By default, the compiler chooses to generate fast code while being mindful of the size of the application. However, you can use the `<OptimizationPreference>` MSBuild property to optimize specifically for one or the other. For more information, see [Optimize AOT deployments](../deploying/native-aot/optimizing.md).
 
@@ -651,7 +651,7 @@ Images include a `non-root` user. This user makes the images `non-root` capable.
 USER app
 ```
 
-.NET 8 Preview 3 adds an environment variable for the UID for the `non-root` user, which is 64198. This environment variable is useful for the Kubernetes `runAsNonRoot` test, which requires that the container user be set via UID and not by name. This [dockerfile](https://github.com/dotnet/dotnet-docker/blob/e5bc76bca49a1bbf9c11e74a590cf6a9fe9dbf2a/samples/aspnetapp/Dockerfile.alpine-non-root#L27) shows an example usage.
+.NET 8 adds an environment variable for the UID for the `non-root` user, which is 64198. This environment variable is useful for the Kubernetes `runAsNonRoot` test, which requires that the container user be set via UID and not by name. This [dockerfile](https://github.com/dotnet/dotnet-docker/blob/e5bc76bca49a1bbf9c11e74a590cf6a9fe9dbf2a/samples/aspnetapp/Dockerfile.alpine-non-root#L27) shows an example usage.
 
 The default port also changed from port `80` to `8080`. To support this change, a new environment variable `ASPNETCORE_HTTP_PORTS` is available to make it easier to change ports. The variable accepts a list of ports, which is simpler than the format required by `ASPNETCORE_URLS`. If you change the port back to port `80` using one of these variables, you can't run as `non-root`.
 

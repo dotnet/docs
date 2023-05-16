@@ -83,7 +83,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
   If a tool-manifest can't be found and the `--create-manifest-if-needed` option is set to true, the tool creates a manifest automatically. It chooses a folder for the manifest as follows:
 
   * Walk up the directory tree searching for a directory that has a `.git` subfolder. If one is found, create the manifest in that directory.
-  * If thte previous step doesn't find a directory, walk up the directory tree searching for a directory that has a `.sln/git` file. If one is found, create the manifest in that directory.
+  * If the previous step doesn't find a directory, walk up the directory tree searching for a directory that has a `.sln/git` file. If one is found, create the manifest in that directory.
   * If neither of the previous two steps finds a directory, create the manifest in the current working directory.
 
 - **`--disable-parallel`**
@@ -112,7 +112,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 - **`--no-cache`**
 
-  Do not cache packages and HTTP requests.
+  Don't cache packages and HTTP requests.
 
 - **`--prerelease`**
 

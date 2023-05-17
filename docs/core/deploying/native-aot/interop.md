@@ -71,7 +71,7 @@ Examples:
   <LinkerArg Include="/DEPENDENTLOADFLAG:0x800" Condition="$(RuntimeIdentifier.StartsWith('win'))" />
 
   <!-- Native AOT invokes clang/gcc as the linker, so arguments need to be prefixed with "-Wl," -->
-  <LinkerArg Include="-Wl,--build-id=sha1" Condition="$(RuntimeIdentifier.StartsWith('linux'))" />
+  <LinkerArg Include="-Wl,-rpath,'/bin/'" Condition="$(RuntimeIdentifier.StartsWith('linux'))" />
 </ItemGroup>
 ```
 

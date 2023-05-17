@@ -40,7 +40,7 @@ class Program
 
         ILogger GetLogger(BindingContext bindingContext)
         {
-            ILoggerFactory loggerFactory = LoggerFactory.Create(
+            using ILoggerFactory loggerFactory = LoggerFactory.Create(
                 builder => builder.AddConsole());
             ILogger logger = loggerFactory.CreateLogger("LoggerCategory");
             return logger;

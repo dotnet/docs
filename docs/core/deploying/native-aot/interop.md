@@ -16,6 +16,7 @@ While native code interop works similarly to non-AOT deployments, there are some
 The P/Invoke calls in AOT compiled binaries are bound lazily at runtime by default for better compatibility. The AOT compiler can be configured to generate direct calls for selected P/Invoke methods that are bound during startup by the dynamic loader that comes with the operating system. The unmanaged libraries and entry points referenced via direct calls always have to be available at runtime, otherwise the native binary fails to start.
 
 The benefits of direct PInvoke calls are:
+
 - Direct PInvoke calls have *better steady state performance*
 - Direct PInvoke calls make it possible to *link the unmanaged dependencies statically*
 

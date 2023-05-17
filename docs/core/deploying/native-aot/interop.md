@@ -7,7 +7,7 @@ ms.date: 05/17/2023
 ---
 # Native code interop
 
-Native code interop is a technology that allows you to access structs and functions in unmanaged libraries from managed code, or expose structs and functions in managed libraries to unmanaged code (the opposite direction).
+Native code interop is a technology that allows you to access unmanaged libraries from managed code, or expose managed libraries to unmanaged code (the opposite direction).
 
 While native code interop works similarly to non-AOT deployments, there are some specifics that differ when publishing as native AOT.
 

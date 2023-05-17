@@ -92,7 +92,11 @@ public static class GpsLocation
 }
 ```
 
-❌ AVOID multi-targeting as well as targeting .NET Standard, if your source code is the same for all targets.
+✔️ CONSIDER multi-targeting even if your source code is the same for all targets, when your project has any library / package dependencies.
+
+> Your project's dependent packages, either direct or downstream, may use the same code APIs while wrapped inside different versions of the dependent assembly per target framework. Adding specific targets ensures that your consumers do not need to add / update their assembly binding redirects.
+
+❌ AVOID multi-targeting as well as targeting .NET Standard, if your source code is the same for all targets and your project has no library / package dependencies.
 
 > The .NET Standard assembly will automatically be used by NuGet. Targeting individual .NET implementations increases the `*.nupkg` size for no benefit.
 

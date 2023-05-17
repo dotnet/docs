@@ -9,7 +9,7 @@ f1_keywords:
  - "CS0522"
  - "CS0526"
  - "CS0568"
- - "CS710"
+ - "CS0710"
  - "CS0768"
  - "CS0824" # WRN_ExternCtorNoImplementation
  - "CS8054" # ERR_EnumsCantContainDefaultConstructor
@@ -88,7 +88,7 @@ ms.date: 05/08/2023
 This article covers the following compiler errors:
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's be design. The text closely matches the text of the compiler error / warning for SEO purposes.
+That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
 - [**CS0514**](#static-constructors) - *static constructor cannot have an explicit 'this' or 'base' constructor call.*
 - [**CS0515**](#static-constructors) - *access modifiers are not allowed on static constructors.*
@@ -114,7 +114,7 @@ That's be design. The text closely matches the text of the compiler error / warn
 - [**CS9106**](#primary-constructor-syntax) - *Identifier is ambiguous between type and parameter in this context.*
 class as well.*
 - [**CS9108**](#primary-constructor-syntax) - *Cannot use parameter that has ref-like type inside an anonymous method, lambda expression, query expression, or local function.*
-- [**CS9109**](#primary-constructor-syntax) - *Cannot use ref, out, or in primary constructor parameter inside an instance member.*
+- [**CS9109**](#primary-constructor-syntax) - *Cannot use `ref`, `out`, or `in` primary constructor parameter inside an instance member.*
 - [**CS9110**](#primary-constructor-syntax) - *Cannot use primary constructor parameter that has ref-like type inside an instance member.*
 - [**CS9111**](#primary-constructor-syntax) - *Anonymous methods, lambda expressions, query expressions, and local functions inside an instance member of a struct cannot access primary constructor parameter.*
 - [**CS9112**](#primary-constructor-syntax) - *Anonymous methods, lambda expressions, query expressions, and local functions inside a struct cannot access primary constructor parameter also used inside an instance member.*
@@ -123,7 +123,7 @@ class as well.*
 - [**CS9116**](#primary-constructor-syntax) - *A primary constructor parameter of a readonly type cannot be used as a ref or out value (except in init-only setter of the type or a variable initializer).*
 - [**CS9117**](#primary-constructor-syntax) - *Members of primary constructor parameter of a readonly type cannot be modified (except in init-only setter of the type or a variable initializer).*
 - [**CS9118**](#primary-constructor-syntax) - *Members of primary constructor parameter of a readonly type cannot be returned by writable reference.*
-- [**CS9119**](#primary-constructor-syntax) - *Members of primary constructor parameter' of a readonly type cannot be used as a ref or out value (except in init-only setter of the type or a variable initializer).*
+- [**CS9119**](#primary-constructor-syntax) - *Members of primary constructor parameter of a readonly type cannot be used as a `ref` or `out` value (except in init-only setter of the type or a variable initializer).*
 - [**CS9120**](#primary-constructor-syntax) - *Cannot return primary constructor parameter by reference.*
 - [**CS9121**](#primary-constructor-syntax) - *Struct primary constructor parameter of type causes a cycle in the struct layout.*
 - [**CS9122**](#primary-constructor-syntax) - *Unexpected parameter list.*
@@ -141,9 +141,9 @@ In addition, the following warnings are covered in this article:
 
 You can write at most one static constructor for a type. The declaration of a static constructor must obey the following rules:
 
-- The static constructor has the `static` modifier, but no other modifiers such as `public`, `protected`, `private` or `internal`.
+- The static constructor has the `static` modifier, but no other modifiers, such as `public`, `protected`, `private`, or `internal`.
 - The static constructor must be a parameterless constructor.
-- The static constructor must not call `base()`, or `this()`. If the base class includes a static constructor, the runtime calls it automatically.
+- The static constructor must not call `base()` or `this()`. If the base class includes a static constructor, the runtime calls it automatically.
 
 ## Constructor declarations
 
@@ -155,7 +155,7 @@ You can write at most one static constructor for a type. The declaration of a st
 
 Constructors are allowed only in `class` and `struct` types, including `record class` and `record struct` types. You can't define them in `enum` or `interface` types. Furthermore, [attribute](../attributes/general.md) class types can't declare `in` parameters. Instead, pass parameters by value.
 
-You can declare `extern` constructors, however you can't use `base()`, or `this()` constructor calls to call another constructor from a constructor declared `extern`.
+You can declare `extern` constructors, however you can't use `base()` or `this()` constructor calls to call another constructor from a constructor declared `extern`.
 
 In addition, the following warnings can be generated for constructor declarations:
 
@@ -170,9 +170,9 @@ When a constructor is marked `extern`, the compiler can't guarantee the construc
 - **CS8982** - *A constructor declared in a 'struct' with parameter list must have a 'this' initializer that calls the primary constructor or an explicitly declared constructor.*
 - **CS8983** - *A 'struct' with field initializers must include an explicitly declared constructor.*
 
-Recent features in C# remove earlier restrictions to `struct` types. **CS0568** is generated when you declare a parameterless constructor and you're using C# 9 or earlier. Once you're using C#10, you can declare an explicit parameterless constructor. That explicit parameterless constructor must be `public`. If your `struct` declares any [field initializers](../../programming-guide/classes-and-structs/fields.md), you must also declare an explicit constructor. This constructor can be a parameterless constructor with an empty body.
+Recent features in C# remove earlier restrictions to `struct` types. **CS0568** is generated when you declare a parameterless constructor and you're using C# 9 or earlier. Once you're using C# 10, you can declare an explicit parameterless constructor. That explicit parameterless constructor must be `public`. If your `struct` declares any [field initializers](../../programming-guide/classes-and-structs/fields.md), you must also declare an explicit constructor. This constructor can be a parameterless constructor with an empty body.
 
-When a `struct` type declares a primary constructor, including `record struct` types, all other constructors except a parameterless constructor must call the primary constructor, or another explicitly declared constructor using `this()`.
+When a `struct` type declares a primary constructor, including `record struct` types, all other constructors except a parameterless constructor must call the primary constructor or another explicitly declared constructor using `this()`.
 
 ## Constructor calls with `base` and `this`
 
@@ -183,7 +183,7 @@ When a `struct` type declares a primary constructor, including `record struct` t
 
 You can use `base()` and `this()` to have one constructor call another in the same type or the base type. Calling constructors can minimize duplicated constructor logic. You must follow these rules when calling another constructor using `this()` or `base()`:
 
-- You can't call the same constructor, either directly, or indirectly through another constructor. For example, the following code is illegal:
+- A constructor can't call itself either directly or indirectly through another constructor. For example, the following code is illegal:
 
   ```csharp
   public class C
@@ -229,16 +229,16 @@ The compiler emits the following errors when a primary constructor violates one 
 - **CS9105** - *Cannot use primary constructor parameter in this context.*
 - **CS9106** - *Identifier is ambiguous between type and parameter in this context.*
 - **CS9108** - *Cannot use parameter that has ref-like type inside an anonymous method, lambda expression, query expression, or local function.*
-- **CS9109** - *Cannot use ref, out, or in primary constructor parameter inside an instance member.*
+- **CS9109** - *Cannot use `ref`, `out`, or `in` primary constructor parameter inside an instance member.*
 - **CS9110** - *Cannot use primary constructor parameter that has ref-like type inside an instance member.*
 - **CS9111** - *Anonymous methods, lambda expressions, query expressions, and local functions inside an instance member of a struct cannot access primary constructor parameter.*
 - **CS9112** - *Anonymous methods, lambda expressions, query expressions, and local functions inside a struct cannot access primary constructor parameter also used inside an instance member.*
 - **CS9114** - *A primary constructor parameter of a readonly type cannot be assigned to (except in init-only setter of the type or a variable initializer).*
 - **CS9115** - *A primary constructor parameter of a readonly type cannot be returned by writable reference.*
-- **CS9116** - *A primary constructor parameter of a readonly type cannot be used as a ref or out value (except in init-only setter of the type or a variable initializer).*
+- **CS9116** - *A primary constructor parameter of a readonly type cannot be used as a `ref` or `out` value (except in init-only setter of the type or a variable initializer).*
 - **CS9117** - *Members of primary constructor parameter of a readonly type cannot be modified (except in init-only setter of the type or a variable initializer).*
 - **CS9118** - *Members of primary constructor parameter of a readonly type cannot be returned by writable reference.*
-- **CS9119** - *Members of primary constructor parameter' of a readonly type cannot be used as a ref or out value (except in init-only setter of the type or a variable initializer).*
+- **CS9119** - *Members of primary constructor parameter of a readonly type cannot be used as a `ref` or `out` value (except in init-only setter of the type or a variable initializer).*
 - **CS9120** - *Cannot return primary constructor parameter by reference.*
 - **CS9121** - *Struct primary constructor parameter of type causes a cycle in the struct layout.*
 - **CS9122** - *Unexpected parameter list.*
@@ -249,7 +249,7 @@ Primary constructor parameters are in scope in the body of that type. The compil
 - Primary constructor parameters can't be used in a `base()` constructor call except as part of the primary constructor.
 - Primary constructor parameters of `ref struct` type can't be accessed in lambda expressions, query expressions, or local functions.
 - If the type isn't a `ref struct`, `ref struct` parameters can't be accessed in instance members.
-- In a `ref struct` type, primary constructor parameters with the `in`, `ref` or `out` modifiers can't be used in any instance methods, or property accessors.
+- In a `ref struct` type, primary constructor parameters with the `in`, `ref`, or `out` modifiers can't be used in any instance methods or property accessors.
 
 Struct types have the following extra restrictions on primary constructor parameters:
 

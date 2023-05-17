@@ -41,7 +41,7 @@ The `using` directive can appear:
 - At the beginning of a source code file, before any namespace or type declarations.
 - In any namespace, but before any namespaces or types declared in that namespace, unless the `global` modifier is used, in which case the directive must appear before all namespace and type declarations.
 
-Otherwise, compiler error [CS1529](../../misc/cs1529.md) is generated.
+Otherwise, compiler error [CS1529](../compiler-messages/using-directive-errors.md) is generated.
 
 Create a `using` directive to use the types in a namespace without having to specify the namespace. A `using` directive doesn't give you access to any namespaces that are nested in the namespace you specify. Namespaces come in two categories: user-defined and system-defined. User-defined namespaces are namespaces defined in your code. For a list of the system-defined namespaces, see [.NET API Browser](../../../../api/index.md).
 
@@ -158,7 +158,7 @@ The following example shows how to define a `using` directive and a `using` alia
 
 :::code language="csharp" source="./snippets/csrefKeywordsNamespace2.cs" id="Snippet9":::
 
-Beginning with C# 12, you can create aliases for types that were previously restricted, including tuple types, pointer types, and other unsafe types. For more information on the udpated rules, see the [feature spec](~/_csharplang/proposals/using-alias-types.md).
+Beginning with C# 12, you can create aliases for types that were previously restricted, including [tuple types](../builtin-types/value-tuples.md#tuple-field-names), pointer types, and other unsafe types. For more information on the updated rules, see the [feature spec](~/_csharplang/proposals/using-alias-types.md).
 
 ## How to use the Visual Basic `My` namespace
 

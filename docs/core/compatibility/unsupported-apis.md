@@ -2,11 +2,11 @@
 title: Unsupported APIs on .NET Core and .NET 5+
 titleSuffix: ""
 description: Learn which .NET APIs always throw an exception on .NET Core and .NET 5 and later versions.
-ms.date: 01/24/2023
+ms.date: 05/02/2023
 ---
 # APIs that always throw exceptions on .NET Core and .NET 5+
 
-The following APIs will always throw an exception on .NET 5 and later versions (including all versions of .NET Core) on all or a subset of platforms. In most cases, the exception that's thrown is <xref:System.PlatformNotSupportedException>.
+The following APIs will always throw an exception on .NET (Core) on all or a subset of platforms. In most cases, the exception that's thrown is <xref:System.PlatformNotSupportedException>.
 
 This article organizes the affected APIs by namespace.
 
@@ -196,7 +196,11 @@ This article organizes the affected APIs by namespace.
 
 | Member | Platforms that throw |
 | - | - |
+| <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(System.IO.Stream,System.Object)?displayProperty=fullName>* | All |
+| <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(System.IO.Stream)?displayProperty=nameWithType>* | All |
 | <xref:System.Runtime.Serialization.XsdDataContractExporter.Schemas?displayProperty=nameWithType> | All |
+
+\* .NET 8 and later versions only for all project types except Windows Forms and WPF.
 
 ## System.Security
 

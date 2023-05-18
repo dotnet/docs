@@ -47,7 +47,6 @@
             },
             {
                 "files": [
-                    "csharp-7.0/*.md",
                     "csharp-7.2/*.md",
                     "csharp-7.3/*.md",
                     "csharp-8.0/*.md",
@@ -65,17 +64,6 @@
                     "inactive/**",
                     "rejected/**",
                     "csharp-6.0/enum-base-type.md",
-                    "csharp-7.0/binary-literals.md",
-                    "csharp-7.0/digit-separators.md",
-                    "csharp-7.0/expression-bodied-everything.md",
-                    "csharp-7.0/local-functions.md",
-                    "csharp-7.0/ref-locals-returns.md",
-                    "csharp-7.0/throw-expression.md",
-                    "csharp-7.0/tuples.md",
-                    "csharp-7.0/value-task.md",
-                    "csharp-7.0/out-var.md",
-                    "csharp-7.0/pattern-matching.md",
-
                     "csharp-7.2/leading-separator.md",
                     "csharp-7.2/readonly-struct.md",
                     "csharp-7.2/ref-struct-and-span.md",
@@ -147,8 +135,6 @@
         "rules": {
             "docs-link-absolute": {
                 "exclude": [
-                    "_csharplang/proposals/csharp-7.0/local-functions.md",
-                    "_csharplang/proposals/csharp-7.0/throw-expression.md",
                     "_csharplang/proposals/csharp-7.1/target-typed-default.md",
                     "_csharplang/proposals/csharp-7.2/readonly-struct.md",
                     "_csharplang/proposals/csharp-7.2/non-trailing-named-arguments.md"
@@ -505,7 +491,6 @@
             },
             "ms.date": {
                 "_csharpstandard/standard/*.md": "01/10/2021",
-                "_csharplang/proposals/csharp-7.0/*.md": "08/13/2018",
                 "_csharplang/proposals/csharp-7.2/*.md": "01/19/2019",
                 "_csharplang/proposals/csharp-7.3/*.md": "11/25/2018",
                 "_csharplang/proposals/csharp-8.0/*.md": "09/10/2019",
@@ -653,7 +638,6 @@
                 "_csharpstandard/standard/standard-library.md": "Standard library",
                 "_csharpstandard/standard/documentation-comments.md": "Documentation comments",
                 "_csharpstandard/standard/Bibliography.md": "Bibliography",
-                "_csharplang/proposals/csharp-7.0/task-types.md": "Async task types",
                 "_csharplang/proposals/csharp-7.2/readonly-ref.md": "Readonly references",
                 "_csharplang/proposals/csharp-7.2/span-safety.md": "Compile time safety for ref-like types",
                 "_csharplang/proposals/csharp-7.2/conditional-ref.md": "Conditional ref",
@@ -769,7 +753,6 @@
                 "_csharpstandard/standard/standard-library.md": "This appendix lists requirements of the standard library. The C# language relies on these types for some of its behavior.",
                 "_csharpstandard/standard/documentation-comments.md": "This appendix describes XML comments that are used to document your program.",
                 "_csharpstandard/standard/Bibliography.md": "This appendix lists external standards referenced in this specification.",
-                "_csharplang/proposals/csharp-7.0/task-types.md": "This feature specification describes the syntax to support async return types that match a pattern, rather than restricting them to Task.",
                 "_csharplang/proposals/csharp-7.2/readonly-ref.md": "This feature specification describes how to create readonly references to variables. This includes the 'readonly' modifier on variables, and the 'in' modifier on parameters and arguments.",
                 "_csharplang/proposals/csharp-7.2/span-safety.md": "This feature specification describes the rules that govern 'ref struct' declarations and their use.",
                 "_csharplang/proposals/csharp-7.2/conditional-ref.md": "This feature specification describes the syntax enhancements for using 'ref' with '?:' expressions",
@@ -854,7 +837,6 @@
             },
             "titleSuffix": {
                 "_csharpstandard/standard/*.md": "C# language specification",
-                "_csharplang/proposals/csharp-7.0/*.md": "C# 7.0 draft feature specifications",
                 "_csharplang/proposals/csharp-7.2/*.md": "C# 7.2 draft feature specifications",
                 "_csharplang/proposals/csharp-7.3/*.md": "C# 7.3 draft feature specifications",
                 "_csharplang/proposals/csharp-8.0/*.md": "C# 8.0 draft feature specifications",

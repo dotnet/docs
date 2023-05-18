@@ -5,7 +5,7 @@ ms.date: 05/18/2023
 ---
 # System.Drawing.Common config switch removed
 
-The [System.Drawing.Common](https://www.nuget.org/packages/System.Drawing.Common/) NuGet package has been attributed as a Windows-specific library since .NET 6. On non-Windows operating systems, a <xref:System.TypeInitializationException> exception is thrown with <xref:System.PlatformNotSupportedException> as the inner exception. The runtime configuration switch to re-enable usage of the package on non-Windows operating systems has been removed in .NET 7.
+The [System.Drawing.Common](https://www.nuget.org/packages/System.Drawing.Common/) NuGet package has been attributed as a Windows-specific library since .NET 6 and using it resulted in compile-time warnings and run-time exceptions. The runtime configuration switch to re-enable usage of the package on non-Windows operating systems has been removed in .NET 7.
 
 ## Old behavior
 

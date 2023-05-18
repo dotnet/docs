@@ -85,7 +85,7 @@ Alternatively, you can enable support for non-Windows platforms in .NET 6 by set
 > [!NOTE]
 >
 > - This configuration switch was added to give cross-platform apps that depend heavily on this package time to migrate to more modern libraries. However, non-Windows bugs will not be fixed.
-> - This switch is only available in .NET 6 and was removed in .NET 7.
+> - This switch is only available in .NET 6 and was removed in .NET 7. For more information, see [System.Drawing.Common config switch removed](../7.0/system-drawing.md).
 
 ## Affected APIs
 

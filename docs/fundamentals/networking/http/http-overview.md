@@ -1,7 +1,7 @@
 ---
 title: HTTP support in .NET
 description: Learn about the comprehensive support for HTTP that .NET provides.
-ms.date: 08/24/2022
+ms.date: 05/19/2023
 helpviewer_keywords:
   - "protocols, HTTP"
   - "sending data, HTTP"
@@ -17,7 +17,7 @@ helpviewer_keywords:
 
 # HTTP support in .NET
 
-Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources from a web server. The <xref:System.Net.Http.HttpClient?displayProperty=fullName> class exposes the ability to send HTTP requests and receive HTTP responses from a resource identified by a URI. There are many types of resources that are available on the web, and HTTP defines a set of request methods for accessing these resources.
+Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources from a web server. The <xref:System.Net.Http.HttpClient?displayProperty=fullName> class exposes the ability to send HTTP requests and receive HTTP responses from a resource identified by a URI. Many types of resources are available on the web, and HTTP defines a set of request methods for accessing these resources.
 
 ## HTTP request methods
 
@@ -75,7 +75,7 @@ The successful status codes indicate that the client's request was successfully 
 
 ### Redirection status codes
 
-Redirection status codes require the user agent to take action in order to fulfill the request. Automatic redirection is turned on by default, it can be changed with <xref:System.Net.Http.HttpClientHandler.AllowAutoRedirect?displayProperty=nameWithType> or <xref:System.Net.Http.SocketsHttpHandler.AllowAutoRedirect?displayProperty=nameWithType>.
+Redirection status codes require the user agent to take action to fulfill the request. Automatic redirection is turned on by default, it can be changed with <xref:System.Net.Http.HttpClientHandler.AllowAutoRedirect?displayProperty=nameWithType> or <xref:System.Net.Http.SocketsHttpHandler.AllowAutoRedirect?displayProperty=nameWithType>.
 
 | HTTP status code | `HttpStatusCode`                                                                                                                                                  |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|

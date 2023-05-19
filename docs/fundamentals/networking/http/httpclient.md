@@ -3,7 +3,7 @@ title: Make HTTP requests with the HttpClient
 description: Learn how to make HTTP requests and handle responses with the HttpClient in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/13/2022
+ms.date: 05/19/2023
 ---
 
 # Make HTTP requests with the HttpClient class
@@ -25,7 +25,7 @@ HTTP endpoints commonly return JavaScript Object Notation (JSON) data, but not a
 
 Most of the following examples reuse the same `HttpClient` instance, and therefore only need to be configured once. To create an `HttpClient`, use the `HttpClient` class constructor. For more information, see [Guidelines for using HttpClient](httpclient-guidelines.md).
 
-:::code language="csharp" source="../snippets/httpclient/Program.cs" id="sharedclient":::
+:::code source="../snippets/httpclient/Program.cs" id="sharedclient":::
 
 The preceding code:
 
@@ -81,7 +81,7 @@ The `HttpContent` class is also used to represent the response body of the <xref
 
 A `GET` request shouldn't send a body and is used (as the method name indicates) to retrieve (or get) data from a resource. To make an HTTP `GET` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.GetAsync%2A?displayProperty=nameWithType> method:
 
-:::code language="csharp" source="../snippets/httpclient/Program.Get.cs" id="get":::
+:::code source="../snippets/httpclient/Program.Get.cs" id="get":::
 
 The preceding code:
 
@@ -91,9 +91,19 @@ The preceding code:
 - Reads the response body as a string.
 - Writes the JSON response body to the console.
 
-The `WriteRequestToConsole` is a custom extension method that isn't part of the framework, but if you're curious how it's written, consider the following C# code:
+The `WriteRequestToConsole` is a custom extension method that isn't part of the framework, but if you're curious about how it's implemented, consider the following C# code:
 
 :::code source="../snippets/httpclient/HttpResponseMessageExtensions.cs":::
+
+This functionality is used to write the request details to the console in the following form:
+
+  `<HTTP Request Method> <Request URI> <HTTP/Version>`
+
+As an example, the `GET` request to `https://jsonplaceholder.typicode.com/todos/3` outputs the following message:
+
+```Output
+GET https://jsonplaceholder.typicode.com/todos/3 HTTP/1.1
+```
 
 #### HTTP Get from JSON
 
@@ -122,7 +132,7 @@ The C# `Todo` object is defined as follows:
 
 It's a `record class` type, with optional `Id`, `Title`, `Completed`, and `UserId` properties. For more information on the `record` type, see [Introduction to record types in C#](../../../csharp/fundamentals/types/records.md). To automatically deserialize `GET` requests into strongly typed C# object, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> extension method that's part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
 
-:::code language="csharp" source="../snippets/httpclient/Program.GetFromJson.cs" id="getfromjson":::
+:::code source="../snippets/httpclient/Program.GetFromJson.cs" id="getfromjson":::
 
 In the preceding code:
 
@@ -133,9 +143,9 @@ In the preceding code:
 
 ### HTTP Post
 
-A `POST` request sends data to the server for processing. The `Content-Type` header of the request signifies what [MIME type](xref:System.Net.Mime.ContentType) the body is sending. To make an HTTP `POST` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.PostAsync%2A?displayProperty=nameWithType> method:
+A `POST` request sends data to the server for processing. The `Content-Type` header of the request signifies what [MIME type](xref:System.Net.Mime.ContentType) the body is sending. To make an HTTP `POST` request, given an `HttpClient` and a <xref:System.Uri>, use the <xref:System.Net.Http.HttpClient.PostAsync%2A?displayProperty=nameWithType> method:
 
-:::code language="csharp" source="../snippets/httpclient/Program.Post.cs" id="post":::
+:::code source="../snippets/httpclient/Program.Post.cs" id="post":::
 
 The preceding code:
 
@@ -148,7 +158,7 @@ The preceding code:
 
 To automatically serialize `POST` request arguments and deserialize responses into strongly-typed C# objects, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A> extension method that's part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
 
-:::code language="csharp" source="../snippets/httpclient/Program.PostAsJson.cs" id="postasjson":::
+:::code source="../snippets/httpclient/Program.PostAsJson.cs" id="postasjson":::
 
 The preceding code:
 
@@ -160,7 +170,7 @@ The preceding code:
 
 The `PUT` request method either replaces an existing resource or creates a new one using request body payload. To make an HTTP `PUT` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.PutAsync%2A?displayProperty=nameWithType> method:
 
-:::code language="csharp" source="../snippets/httpclient/Program.Put.cs" id="put":::
+:::code source="../snippets/httpclient/Program.Put.cs" id="put":::
 
 The preceding code:
 
@@ -172,7 +182,7 @@ The preceding code:
 
 To automatically serialize `PUT` request arguments and deserialize responses into strongly typed C# objects, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.PutAsJsonAsync%2A> extension method that's part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
 
-:::code language="csharp" source="../snippets/httpclient/Program.PutAsJson.cs" id="putasjson":::
+:::code source="../snippets/httpclient/Program.PutAsJson.cs" id="putasjson":::
 
 The preceding code:
 
@@ -184,7 +194,7 @@ The preceding code:
 
 The `PATCH` request is a partial update to an existing resource. It won't create a new resource, and it's not intended to replace an existing resource. Instead, it updates a resource only partially. To make an HTTP `PATCH` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.PatchAsync%2A?displayProperty=nameWithType> method:
 
-:::code language="csharp" source="../snippets/httpclient/Program.Patch.cs" id="patch":::
+:::code source="../snippets/httpclient/Program.Patch.cs" id="patch":::
 
 The preceding code:
 
@@ -198,7 +208,7 @@ No extension methods exist for `PATCH` requests in the `System.Net.Http.Json` Nu
 
 A `DELETE` request deletes an existing resource. A `DELETE` request is _idempotent_ but not _safe_, meaning multiple `DELETE` requests to the same resources yield the same result, but the request will affect the state of the resource. To make an HTTP `DELETE` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.DeleteAsync%2A?displayProperty=nameWithType> method:
 
-:::code language="csharp" source="../snippets/httpclient/Program.Delete.cs" id="delete":::
+:::code source="../snippets/httpclient/Program.Delete.cs" id="delete":::
 
 The preceding code:
 
@@ -212,7 +222,7 @@ The preceding code:
 
 The `HEAD` request is similar to a `GET` request. Instead of returning the resource, it only returns the headers associated with the resource. A response to the `HEAD` request doesn't return a body. To make an HTTP `HEAD` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.SendAsync%2A?displayProperty=nameWithType> method with the <xref:System.Net.Http.HttpMethod> set to `HttpMethod.Head`:
 
-:::code language="csharp" source="../snippets/httpclient/Program.Head.cs" id="head":::
+:::code source="../snippets/httpclient/Program.Head.cs" id="head":::
 
 The preceding code:
 
@@ -224,7 +234,7 @@ The preceding code:
 
 The `OPTIONS` request is used to identify which HTTP methods a server or endpoint supports. To make an HTTP `OPTIONS` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.SendAsync%2A?displayProperty=nameWithType> method with the <xref:System.Net.Http.HttpMethod> set to `HttpMethod.Options`:
 
-:::code language="csharp" source="../snippets/httpclient/Program.Options.cs" id="options":::
+:::code source="../snippets/httpclient/Program.Options.cs" id="options":::
 
 The preceding code:
 
@@ -236,7 +246,7 @@ The preceding code:
 
 The `TRACE` request can be useful for debugging as it provides application-level loop-back of the request message. To make an HTTP `TRACE` request, create an <xref:System.Net.Http.HttpRequestMessage> using the `HttpMethod.Trace`:
 
-:::code language="csharp" source="../snippets/httpclient/Program.Trace.cs" id="trace":::
+:::code source="../snippets/httpclient/Program.Trace.cs" id="trace":::
 
 > [!CAUTION]
 > The `TRACE` HTTP method is not supported by all HTTP servers. It can expose a security vulnerability if used unwisely. For more information, see [Open Web Application Security Project (OWASP): Cross Site Tracing](https://owasp.org/www-community/attacks/Cross_Site_Tracing).
@@ -245,19 +255,19 @@ The `TRACE` request can be useful for debugging as it provides application-level
 
 Whenever you're handling an HTTP response, you interact with the <xref:System.Net.Http.HttpResponseMessage> type. Several members are used when evaluating the validity of a response. The HTTP status code is available via the <xref:System.Net.Http.HttpResponseMessage.StatusCode?displayProperty=nameWithType> property. Imagine that you've sent a request given a client instance:
 
-:::code language="csharp" source="../snippets/httpclient/Program.Responses.cs" id="request":::
+:::code source="../snippets/httpclient/Program.Responses.cs" id="request":::
 
 To ensure that the `response` is `OK` (HTTP status code 200), you can evaluate it as shown in the following example:
 
-:::code language="csharp" source="../snippets/httpclient/Program.Responses.cs" id="isstatuscode":::
+:::code source="../snippets/httpclient/Program.Responses.cs" id="isstatuscode":::
 
 There are additional HTTP status codes that represent a successful response, such as `CREATED` (HTTP status code 201), `ACCEPTED` (HTTP status code 202), `NO CONTENT` (HTTP status code 204), and `RESET CONTENT` (HTTP status code 205). You can use the <xref:System.Net.Http.HttpResponseMessage.IsSuccessStatusCode?displayProperty=nameWithType> property to evaluate these codes as well, which ensures that the response status code is within the range 200-299:
 
-:::code language="csharp" source="../snippets/httpclient/Program.Responses.cs" id="issuccessstatuscode":::
+:::code source="../snippets/httpclient/Program.Responses.cs" id="issuccessstatuscode":::
 
 If you need to have the framework throw the <xref:System.Net.Http.HttpRequestException>, you can call the <xref:System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode?displayProperty=nameWithType> method:
 
-:::code language="csharp" source="../snippets/httpclient/Program.Responses.cs" id="ensurestatuscode":::
+:::code source="../snippets/httpclient/Program.Responses.cs" id="ensurestatuscode":::
 
 This code will throw an `HttpRequestException` if the response status code is not within the 200-299 range.
 
@@ -265,21 +275,21 @@ This code will throw an `HttpRequestException` if the response status code is no
 
 With a valid response, you can access the response body using the <xref:System.Net.Http.HttpResponseMessage.Content> property. The body is available as an <xref:System.Net.Http.HttpContent> instance, which you can use to access the body as a stream, byte array, or string:
 
-:::code language="csharp" source="../snippets/httpclient/Program.Responses.cs" id="stream":::
+:::code source="../snippets/httpclient/Program.Responses.cs" id="stream":::
 
 In the preceding code, the `responseStream` can be used to read the response body.
 
-:::code language="csharp" source="../snippets/httpclient/Program.Responses.cs" id="array":::
+:::code source="../snippets/httpclient/Program.Responses.cs" id="array":::
 
 In the preceding code, the `responseByteArray` can be used to read the response body.
 
-:::code language="csharp" source="../snippets/httpclient/Program.Responses.cs" id="string":::
+:::code source="../snippets/httpclient/Program.Responses.cs" id="string":::
 
 In the preceding code, the `responseString` can be used to read the response body.
 
 Finally, when you know an HTTP endpoint returns JSON, you can deserialize the response body into any valid C# object by using the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package:
 
-:::code language="csharp" source="../snippets/httpclient/Program.Responses.cs" id="json":::
+:::code source="../snippets/httpclient/Program.Responses.cs" id="json":::
 
 In the preceding code, `result` is the response body deserialized as the type `T`.
 
@@ -287,17 +297,17 @@ In the preceding code, `result` is the response body deserialized as the type `T
 
 When an HTTP request fails, the <xref:System.Net.Http.HttpRequestException> is thrown. Catching that exception alone may not be sufficient, as there are other potential exceptions thrown that you might want to consider handling. For example, the calling code may have used a cancellation token that was canceled before the request was completed. In this scenario, you'd catch the <xref:System.Threading.Tasks.TaskCanceledException>:
 
-:::code language="csharp" source="../snippets/httpclient/Program.Cancellation.cs" id="cancellation":::
+:::code source="../snippets/httpclient/Program.Cancellation.cs" id="cancellation":::
 
 Likewise, when making an HTTP request, if the server doesn't respond before the <xref:System.Net.Http.HttpClient.Timeout?displayProperty=nameWithType> is exceeded the same exception is thrown. However, in this scenario, you can distinguish that the timeout occurred by evaluating the <xref:System.Exception.InnerException?displayProperty=nameWithType> when catching the <xref:System.Threading.Tasks.TaskCanceledException>:
 
-:::code language="csharp" source="../snippets/httpclient/Program.CancellationInnerTimeout.cs" id="innertimeout":::
+:::code source="../snippets/httpclient/Program.CancellationInnerTimeout.cs" id="innertimeout":::
 
 In the preceding code, when the inner exception is a <xref:System.TimeoutException> the timeout occurred, and the request wasn't canceled by the cancellation token.
 
 To evaluate the HTTP status code when catching an <xref:System.Net.Http.HttpRequestException>, you can evaluate the <xref:System.Net.Http.HttpRequestException.StatusCode%2A?displayProperty=nameWithType> property:
 
-:::code language="csharp" source="../snippets/httpclient/Program.CancellationStatusCode.cs" id="statuscode":::
+:::code source="../snippets/httpclient/Program.CancellationStatusCode.cs" id="statuscode":::
 
 In the preceding code, the <xref:System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode> method is called to throw an exception if the response is not successful. The <xref:System.Net.Http.HttpRequestException.StatusCode%2A?displayProperty=nameWithType> property is then evaluated to determine if the response was a `404` (HTTP status code 404). There are several helper methods on `HttpClient` that implicitly call `EnsureSuccessStatusCode` on your behalf, consider the following APIs:
 
@@ -310,11 +320,11 @@ In the preceding code, the <xref:System.Net.Http.HttpResponseMessage.EnsureSucce
 
 When calling these methods, you can handle the `HttpRequestException` and evaluate the <xref:System.Net.Http.HttpRequestException.StatusCode%2A?displayProperty=nameWithType> property to determine the HTTP status code of the response:
 
-:::code language="csharp" source="../snippets/httpclient/Program.CancellationStream.cs" id="helpers":::
+:::code source="../snippets/httpclient/Program.CancellationStream.cs" id="helpers":::
 
 There might be scenarios in which you need to throw the <xref:System.Net.Http.HttpRequestException> in your code. The <xref:System.Net.Http.HttpRequestException.%23ctor> constructor is public, and you can use it to throw an exception with a custom message:
 
-:::code language="csharp" source="../snippets/httpclient/Program.ThrowHttpException.cs" id="throw":::
+:::code source="../snippets/httpclient/Program.ThrowHttpException.cs" id="throw":::
 
 ## HTTP proxy
 

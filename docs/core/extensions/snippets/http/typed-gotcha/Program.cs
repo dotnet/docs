@@ -1,11 +1,10 @@
 ﻿using Shared;
-using TypedHttp.Example;
+using TypedGotchaHttp.Example;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
 HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
-
 builder.Services.AddHttpClient<TodoService>(
     client =>
     {
@@ -16,7 +15,11 @@ builder.Services.AddHttpClient<TodoService>(
         client.DefaultRequestHeaders.UserAgent.ParseAdd("dotnet-docs");
     });
 
-using IHost host = builder.Build();
+// DON'T DO THIS!
+// The TodoService is already registered and this will cause an exception.
+// builder.Services.AddScoped<TodoService>();
+
+IHost host = builder.Build();
 
 TodoService todoService =
     host.Services.GetRequiredService<TodoService>();

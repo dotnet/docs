@@ -3,29 +3,26 @@ using System.Text.Json;
 using Microsoft.Extensions.Logging;
 using Shared;
 
-namespace BasicHttp.Example;
+namespace TypedGotchaHttp.Example;
 
-public sealed class TodoService
+public sealed class TodoService : IDisposable
 {
-    private readonly IHttpClientFactory _httpClientFactory = null!;
+    private readonly HttpClient _httpClient = null!;
     private readonly ILogger<TodoService> _logger = null!;
 
     public TodoService(
-        IHttpClientFactory httpClientFactory,
+        HttpClient httpClient,
         ILogger<TodoService> logger) =>
-        (_httpClientFactory, _logger) = (httpClientFactory, logger);
+        (_httpClient, _logger) = (httpClient, logger);
 
     public async Task<Todo[]> GetUserTodosAsync(int userId)
     {
-        // Create the client
-        using HttpClient client = _httpClientFactory.CreateClient();
-        
         try
         {
             // Make HTTP GET request
-            // Parse JSON response deserialize into Todo types
-            Todo[]? todos = await client.GetFromJsonAsync<Todo[]>(
-                $"https://jsonplaceholder.typicode.com/todos?userId={userId}",
+            // Parse JSON response deserialize into Todo type
+            Todo[]? todos = await _httpClient.GetFromJsonAsync<Todo[]>(
+                $"todos?userId={userId}",
                 new JsonSerializerOptions(JsonSerializerDefaults.Web));
 
             return todos ?? Array.Empty<Todo>();
@@ -37,4 +34,6 @@ public sealed class TodoService
 
         return Array.Empty<Todo>();
     }
+
+    public void Dispose() => _httpClient?.Dispose();
 }

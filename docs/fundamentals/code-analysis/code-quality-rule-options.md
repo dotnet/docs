@@ -85,6 +85,7 @@ This section lists some of the available options. To see the full list of availa
 - [excluded\_symbol\_names](#excluded_symbol_names)
 - [disallowed\_symbol\_names](#disallowed_symbol_names)
 - [exclude\_ordefault\_methods](#exclude_ordefault_methods)
+- [ignore_internalsvisibleto](#ignore_internalsvisibleto)
 
 ### api_surface
 

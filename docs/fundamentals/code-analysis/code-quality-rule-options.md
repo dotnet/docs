@@ -1,7 +1,7 @@
 ---
 title: Code quality rule configuration options
 description: Learn how to specify additional configuration options for code quality rules.
-ms.date: 01/10/2023
+ms.date: 05/19/2023
 no-loc: ["EditorConfig"]
 ---
 # Code quality rule configuration options
@@ -176,4 +176,10 @@ This section lists some of the available options. To see the full list of availa
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Excludes FirstOrDefault and LastOrDefault methods from analysis. | `true` or `false` | `false` | [CA1826](quality-rules/ca1826.md) |
+| Excludes `FirstOrDefault` and `LastOrDefault` methods from analysis. | `true` or `false` | `false` | [CA1826](quality-rules/ca1826.md) |
+
+### ignore_internalsvisibleto
+
+| Description | Allowable values | Default value | Configurable rules |
+| - | - | - | - |
+| Includes assemblies marked with <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> in analysis. | `true` or `false` | `true` | [CA1812](quality-rules/ca1812.md) [CA1852](quality-rules/ca1852.md) |

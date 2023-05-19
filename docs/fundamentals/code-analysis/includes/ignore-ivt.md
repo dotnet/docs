@@ -5,3 +5,5 @@ By default, this rule is disabled if the assembly being analyzed uses <xref:Syst
 ```ini
 dotnet_code_quality.CAXXXX.ignore_internalsvisibleto = false
 ```
+
+This option is available starting in .NET 8.

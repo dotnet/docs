@@ -29,13 +29,13 @@ Most of the following examples reuse the same `HttpClient` instance, and therefo
 
 The preceding code:
 
-- Instantiates a new `HttpClient` instance as a `static` variable. As per the [guidelines](httpclient-guidelines.md), it's strongly recommended to reuse `HttpClient` instances during the application's lifecycle.
+- Instantiates a new `HttpClient` instance as a `static` variable. As per the [guidelines](httpclient-guidelines.md), it's recommended to reuse `HttpClient` instances during the application's lifecycle.
 - Sets the <xref:System.Net.Http.HttpClient.BaseAddress?displayProperty=nameWithType> to `"https://jsonplaceholder.typicode.com"`.
 
-This `HttpClient` instance will always use the base address when making subsequent requests. To apply additional configuration consider:
+This `HttpClient` instance uses the base address when making subsequent requests. To apply other configuration, consider:
 
 - Setting <xref:System.Net.Http.HttpClient.DefaultRequestHeaders?displayProperty=nameWithType>.
-- Applying a non-default <xref:System.Net.Http.HttpClient.Timeout?displayProperty=nameWithType>.
+- Applying a nondefault <xref:System.Net.Http.HttpClient.Timeout?displayProperty=nameWithType>.
 - Specifying the <xref:System.Net.Http.HttpClient.DefaultRequestVersion?displayProperty=nameWithType>.
 
 > [!TIP]
@@ -64,7 +64,7 @@ To make an HTTP request, you call any of the following APIs:
 
 ### HTTP content
 
-The <xref:System.Net.Http.HttpContent> type is used to represent an HTTP entity body and corresponding content headers. For HTTP methods (or request methods) that require a body, `POST`, `PUT`, and `PATCH`, you use the <xref:System.Net.Http.HttpContent> class to specify the body of the request. Most examples show how to prepare the  <xref:System.Net.Http.StringContent> subclass with a JSON payload, but additional subclasses exist for different [content (MIME) types](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/MIME_types).
+The <xref:System.Net.Http.HttpContent> type is used to represent an HTTP entity body and corresponding content headers. For HTTP methods (or request methods) that require a body, `POST`, `PUT`, and `PATCH`, you use the <xref:System.Net.Http.HttpContent> class to specify the body of the request. Most examples show how to prepare the  <xref:System.Net.Http.StringContent> subclass with a JSON payload, but other subclasses exist for different [content (MIME) types](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/MIME_types).
 
 - <xref:System.Net.Http.ByteArrayContent>: Provides HTTP content based on a byte array.
 - <xref:System.Net.Http.FormUrlEncodedContent>: Provides HTTP content for name/value tuples encoded using `"application/x-www-form-urlencoded"` MIME type.
@@ -130,7 +130,7 @@ The C# `Todo` object is defined as follows:
 
 :::code source="../snippets/httpclient/Todo.cs":::
 
-It's a `record class` type, with optional `Id`, `Title`, `Completed`, and `UserId` properties. For more information on the `record` type, see [Introduction to record types in C#](../../../csharp/fundamentals/types/records.md). To automatically deserialize `GET` requests into strongly typed C# object, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> extension method that's part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
+It's a `record class` type, with optional `Id`, `Title`, `Completed`, and `UserId` properties. For more information on the `record` type, see [Introduction to record types in C#](../../../csharp/fundamentals/types/records.md). To automatically deserialize `GET` requests into strongly-typed C# object, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> extension method that's part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
 
 :::code source="../snippets/httpclient/Program.GetFromJson.cs" id="getfromjson":::
 
@@ -192,7 +192,7 @@ The preceding code:
 
 ### HTTP Patch
 
-The `PATCH` request is a partial update to an existing resource. It won't create a new resource, and it's not intended to replace an existing resource. Instead, it updates a resource only partially. To make an HTTP `PATCH` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.PatchAsync%2A?displayProperty=nameWithType> method:
+The `PATCH` request is a partial update to an existing resource. It doesn't create a new resource, and it's not intended to replace an existing resource. Instead, it updates a resource only partially. To make an HTTP `PATCH` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.PatchAsync%2A?displayProperty=nameWithType> method:
 
 :::code source="../snippets/httpclient/Program.Patch.cs" id="patch":::
 
@@ -206,7 +206,7 @@ No extension methods exist for `PATCH` requests in the `System.Net.Http.Json` Nu
 
 ### HTTP Delete
 
-A `DELETE` request deletes an existing resource. A `DELETE` request is _idempotent_ but not _safe_, meaning multiple `DELETE` requests to the same resources yield the same result, but the request will affect the state of the resource. To make an HTTP `DELETE` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.DeleteAsync%2A?displayProperty=nameWithType> method:
+A `DELETE` request deletes an existing resource. A `DELETE` request is _idempotent_ but not _safe_, meaning multiple `DELETE` requests to the same resources yield the same result, but the request affects the state of the resource. To make an HTTP `DELETE` request, given an `HttpClient` and a URI, use the <xref:System.Net.Http.HttpClient.DeleteAsync%2A?displayProperty=nameWithType> method:
 
 :::code source="../snippets/httpclient/Program.Delete.cs" id="delete":::
 
@@ -261,7 +261,7 @@ To ensure that the `response` is `OK` (HTTP status code 200), you can evaluate i
 
 :::code source="../snippets/httpclient/Program.Responses.cs" id="isstatuscode":::
 
-There are additional HTTP status codes that represent a successful response, such as `CREATED` (HTTP status code 201), `ACCEPTED` (HTTP status code 202), `NO CONTENT` (HTTP status code 204), and `RESET CONTENT` (HTTP status code 205). You can use the <xref:System.Net.Http.HttpResponseMessage.IsSuccessStatusCode?displayProperty=nameWithType> property to evaluate these codes as well, which ensures that the response status code is within the range 200-299:
+There are other HTTP status codes that represent a successful response, such as `CREATED` (HTTP status code 201), `ACCEPTED` (HTTP status code 202), `NO CONTENT` (HTTP status code 204), and `RESET CONTENT` (HTTP status code 205). You can use the <xref:System.Net.Http.HttpResponseMessage.IsSuccessStatusCode?displayProperty=nameWithType> property to evaluate these codes as well, which ensures that the response status code is within the range 200-299:
 
 :::code source="../snippets/httpclient/Program.Responses.cs" id="issuccessstatuscode":::
 
@@ -269,7 +269,7 @@ If you need to have the framework throw the <xref:System.Net.Http.HttpRequestExc
 
 :::code source="../snippets/httpclient/Program.Responses.cs" id="ensurestatuscode":::
 
-This code will throw an `HttpRequestException` if the response status code is not within the 200-299 range.
+This code throws an `HttpRequestException` if the response status code isn't within the 200-299 range.
 
 ### HTTP valid content responses
 
@@ -309,7 +309,7 @@ To evaluate the HTTP status code when catching an <xref:System.Net.Http.HttpRequ
 
 :::code source="../snippets/httpclient/Program.CancellationStatusCode.cs" id="statuscode":::
 
-In the preceding code, the <xref:System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode> method is called to throw an exception if the response is not successful. The <xref:System.Net.Http.HttpRequestException.StatusCode%2A?displayProperty=nameWithType> property is then evaluated to determine if the response was a `404` (HTTP status code 404). There are several helper methods on `HttpClient` that implicitly call `EnsureSuccessStatusCode` on your behalf, consider the following APIs:
+In the preceding code, the <xref:System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode> method is called to throw an exception if the response isn't successful. The <xref:System.Net.Http.HttpRequestException.StatusCode%2A?displayProperty=nameWithType> property is then evaluated to determine if the response was a `404` (HTTP status code 404). There are several helper methods on `HttpClient` that implicitly call `EnsureSuccessStatusCode` on your behalf, consider the following APIs:
 
 - <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A?displayProperty=nameWithType>
 - <xref:System.Net.Http.HttpClient.GetStreamAsync%2A?displayProperty=nameWithType>
@@ -334,30 +334,30 @@ An HTTP proxy can be configured in one of two ways. A default is specified on th
 
 The `HttpClient.DefaultProxy` is a static property that determines the default proxy that all `HttpClient` instances use if no proxy is set explicitly in the <xref:System.Net.Http.HttpClientHandler> passed through its constructor.
 
-The default instance returned by this property will initialize following a different set of rules depending on your platform:
+The default instance returned by this property initializes following a different set of rules depending on your platform:
 
-- **For Windows:** Reads proxy configuration from environment variables or, if those are not defined, from the user's proxy settings.
-- **For macOS:** Reads proxy configuration from environment variables or, if those are not defined, from the system's proxy settings.
-- **For Linux:** Reads proxy configuration from environment variables or, in case those are not defined, this property initializes a non-configured instance that bypasses all addresses.
+- **For Windows:** Reads proxy configuration from environment variables or, if those aren't defined, from the user's proxy settings.
+- **For macOS:** Reads proxy configuration from environment variables or, if those aren't defined, from the system's proxy settings.
+- **For Linux:** Reads proxy configuration from environment variables or, in case those aren't defined, this property initializes a non-configured instance that bypasses all addresses.
 
 The environment variables used for `DefaultProxy` initialization on Windows and Unix-based platforms are:
 
 - `HTTP_PROXY`: the proxy server used on HTTP requests.
 - `HTTPS_PROXY`: the proxy server used on HTTPS requests.
-- `ALL_PROXY`: the proxy server used on HTTP and/or HTTPS requests in case `HTTP_PROXY` and/or `HTTPS_PROXY` are not defined.
-- `NO_PROXY`: a comma-separated list of hostnames that should be excluded from proxying. Asterisks are not supported for wildcards; use a leading dot in case you want to match a subdomain. Examples: `NO_PROXY=.example.com` (with leading dot) will match `www.example.com`, but will not match `example.com`. `NO_PROXY=example.com` (without leading dot) will not match `www.example.com`. This behavior might be revisited in the future to match other ecosystems better.
+- `ALL_PROXY`: the proxy server used on HTTP and/or HTTPS requests in case `HTTP_PROXY` and/or `HTTPS_PROXY` aren't defined.
+- `NO_PROXY`: a comma-separated list of hostnames that should be excluded from proxying. Asterisks aren't supported for wildcards; use a leading dot in case you want to match a subdomain. Examples: `NO_PROXY=.example.com` (with leading dot) will match `www.example.com`, but won't match `example.com`. `NO_PROXY=example.com` (without leading dot) won't match `www.example.com`. This behavior might be revisited in the future to match other ecosystems better.
 
 On systems where environment variables are case-sensitive, the variable names may be all lowercase or all uppercase. The lowercase names are checked first.
 
-The proxy server may be a hostname or IP address, optionally followed by a colon and port number, or it may be an `http` URL, optionally including a username and password for proxy authentication. The URL must be start with `http`, not `https`, and cannot include any text after the hostname, IP, or port.
+The proxy server may be a hostname or IP address, optionally followed by a colon and port number, or it may be an `http` URL, optionally including a username and password for proxy authentication. The URL must be start with `http`, not `https`, and can't include any text after the hostname, IP, or port.
 
 ### Proxy per client
 
 The <xref:System.Net.Http.HttpClientHandler.Proxy?displayProperty=nameWithType> property identifies the <xref:System.Net.WebProxy> object to use to process requests to Internet resources. To specify that no proxy should be used, set the `Proxy` property to the proxy instance returned by the <xref:System.Net.GlobalProxySelection.GetEmptyWebProxy?displayProperty=nameWithType> method.
 
-The local computer or application config file may specify that a default proxy be used. If the Proxy property is specified, then the proxy settings from the Proxy property override the local computer or application config file and the handler will use the proxy settings specified. If no proxy is specified in a config file and the Proxy property is unspecified, the handler uses the proxy settings inherited from the local computer. If there are no proxy settings, the request is sent directly to the server.
+The local computer or application config file may specify that a default proxy is used. If the Proxy property is specified, then the proxy settings from the Proxy property override the local computer or application config file and the handler uses the proxy settings specified. If no proxy is specified in a config file and the Proxy property is unspecified, the handler uses the proxy settings inherited from the local computer. If there are no proxy settings, the request is sent directly to the server.
 
-The <xref:System.Net.Http.HttpClientHandler> class parses a proxy bypass list with wildcard characters inherited from local computer settings. For example, the `HttpClientHandler` class will parse a bypass list of `"nt*"` from browsers as a regular expression of `"nt.*"`. So a URL of `http://nt.com` would bypass the proxy using the `HttpClientHandler` class.
+The <xref:System.Net.Http.HttpClientHandler> class parses a proxy bypass list with wildcard characters inherited from local computer settings. For example, the `HttpClientHandler` class parses a bypass list of `"nt*"` from browsers as a regular expression of `"nt.*"`. So a URL of `http://nt.com` would bypass the proxy using the `HttpClientHandler` class.
 
 The `HttpClientHandler` class supports local proxy bypass. The class considers a destination to be local if any of the following conditions are met:
 

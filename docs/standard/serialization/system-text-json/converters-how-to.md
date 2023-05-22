@@ -15,7 +15,7 @@ ms.topic: how-to
 
 # How to write custom converters for JSON serialization (marshalling) in .NET
 
-This article shows how to create custom converters for the JSON serialization classes that are provided in the <xref:System.Text.Json> namespace. For an introduction to `System.Text.Json`, see [How to serialize and deserialize JSON in .NET](how-to.md).
+This article shows how to create custom converters for the JSON serialization classes that are provided in the <xref:System.Text.Json?displayProperty=fullName> namespace. For an introduction to `System.Text.Json`, see [How to serialize and deserialize JSON in .NET](how-to.md).
 
 A *converter* is a class that converts an object or a value to and from JSON. The `System.Text.Json` namespace has built-in converters for most primitive types that map to JavaScript primitives. You can write custom converters:
 

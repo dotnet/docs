@@ -155,7 +155,7 @@ then parsed using <xref:System.DateTimeOffset.ParseExact(System.String,System.St
 
 ### Date and time components
 
-The extended ISO 8601-1:2019 profile implemented in <xref:System.Text.Json> defines the following components for
+The extended ISO 8601-1:2019 profile implemented in <xref:System.Text.Json?displayProperty=fullName> defines the following components for
 date and time representations. These components are used to define various supported levels of granularity
 when parsing and formatting <xref:System.DateTime> and <xref:System.DateTimeOffset> representations.
 

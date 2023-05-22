@@ -42,7 +42,7 @@ The code samples in this article:
 
 ## Namespaces
 
-The <xref:System.Text.Json> namespace contains all the entry points and the main types. The <xref:System.Text.Json.Serialization> namespace contains attributes and APIs for advanced scenarios and customization specific to serialization and deserialization. The code examples shown in this article require `using` directives for one or both of these namespaces:
+The <xref:System.Text.Json?displayProperty=fullName> namespace contains all the entry points and the main types. The <xref:System.Text.Json.Serialization> namespace contains attributes and APIs for advanced scenarios and customization specific to serialization and deserialization. The code examples shown in this article require `using` directives for one or both of these namespaces:
 
 ```csharp
 using System.Text.Json;
@@ -56,8 +56,8 @@ Imports System.Text.Json.Serialization
 
 > [!IMPORTANT]
 >
-> - Attributes from the <xref:System.Runtime.Serialization> namespace aren't supported by `System.Text.Json`.
-> - <xref:System.SerializableAttribute?displayProperty=fullName> and the <xref:System.Runtime.Serialization.ISerializable> interface aren't supported by `System.Text.Json`. These types are used only for [Binary and XML serialization](/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization).
+> * Attributes from the <xref:System.Runtime.Serialization> namespace aren't supported by `System.Text.Json`.
+> * <xref:System.SerializableAttribute?displayProperty=fullName> and the <xref:System.Runtime.Serialization.ISerializable> interface aren't supported by `System.Text.Json`. These types are used only for [Binary and XML serialization](/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization).
 
 ## How to write .NET objects as JSON (serialize)
 

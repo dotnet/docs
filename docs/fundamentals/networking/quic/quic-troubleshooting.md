@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting QUIC issues in .NET
-description: Helps to diagnose and fix the most common QUIC issues in .NET.
+description: Learn how to diagnose and fix the most common QUIC issues in .NET.
 ms.date: 05/19/2023
 ---
 # Troubleshoot QUIC issues in .NET

@@ -1,28 +1,28 @@
 ---
-title: Native code interop
+title: Native code interop with native AOT
 description: Learn about native code interop with native AOT.
 author: MichalStrehovsky
 ms.author: michals
 ms.date: 05/17/2023
 ---
-# Native code interop
+# Native code interop with native AOT
 
 Native code interop is a technology that allows you to access unmanaged libraries from managed code, or expose managed libraries to unmanaged code (the opposite direction).
 
-While native code interop works similarly to non-AOT deployments, there are some specifics that differ when publishing as native AOT.
+While native code interop works similarly in native AOT and non-AOT deployments, there are some specifics that differ when publishing as native AOT.
 
 ## Direct P/Invoke calls
 
-The P/Invoke calls in AOT compiled binaries are bound lazily at runtime by default for better compatibility. The AOT compiler can be configured to generate direct calls for selected P/Invoke methods that are bound during startup by the dynamic loader that comes with the operating system. The unmanaged libraries and entry points referenced via direct calls always have to be available at runtime, otherwise the native binary fails to start.
+The P/Invoke calls in AOT-compiled binaries are bound lazily at run time by default, for better compatibility. You can configure the AOT compiler to generate direct calls for selected P/Invoke methods that are bound during startup by the dynamic loader that comes with the operating system. The unmanaged libraries and entry points referenced via direct calls must always be available at run time, otherwise the native binary fails to start.
 
-The benefits of direct PInvoke calls are:
+The benefits of direct P/Invoke calls are:
 
-- Direct PInvoke calls have *better steady state performance*
-- Direct PInvoke calls make it possible to *link the unmanaged dependencies statically*
+- They have *better steady state performance*.
+- They make it possible to *link the unmanaged dependencies statically*.
 
-The direct PInvoke generation can be configured using `<DirectPInvoke>` items in the project file. The item name can be either `modulename`, which enables direct calls for all module entry points, or `modulename!entrypointname`, which enables a direct call for the specific module and entry point only.
+You can configure the direct P/Invoke generation using `<DirectPInvoke>` items in the project file. The item name can be either *\<modulename>*, which enables direct calls for all entry points in the module, or *\<modulename!entrypointname>*, which enables a direct call for the specific module and entry point only.
 
-`<DirectPInvokeList>filename</DirectPInvokeList>` items in the project file allow specifying a list of entry points in an external file. This is useful when the specification of direct PInvoke calls is long and it is not practical to specify them using individual `<DirectPInvoke>` items. The file can contain empty lines and comments starting with `#`.
+To specify a list of entry points in an external file, use `<DirectPInvokeList>filename</DirectPInvokeList>` items in the project file. A list is useful when the number of direct P/Invoke calls is large and it's unpractical to specify them using individual `<DirectPInvoke>` items. The file can contain empty lines and comments starting with `#`.
 
 Examples:
 
@@ -43,7 +43,7 @@ Examples:
 On Windows, native AOT uses a pre-populated list of direct P/Invoke methods that are available on all supported versions of Windows.
 
 > [!WARNING]
-> Because direct P/Invoke methods are resolved by the operating system dynamic loader and not by the native AOT runtime library, direct P/Invoke methods will not respect the <xref:System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute>. The library search order will follow the dynamic loader rules as defined by the operating system. Some operating systems and loaders offer ways to control dynamic loading through linker flags (such as `/DEPENDENTLOADFLAG` on Windows or `-rpath` on Linux). See details below on how to specify linker flags.
+> Because direct P/Invoke methods are resolved by the operating system dynamic loader and not by the native AOT runtime library, direct P/Invoke methods will not respect the <xref:System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute>. The library search order will follow the dynamic loader rules as defined by the operating system. Some operating systems and loaders offer ways to control dynamic loading through linker flags (such as `/DEPENDENTLOADFLAG` on Windows or `-rpath` on Linux). For more information on how to specify linker flags, see the [Linking](#linking) section.
 
 ### Linking
 
@@ -75,8 +75,8 @@ Examples:
 </ItemGroup>
 ```
 
-## Native Exports
+## Native exports
 
 The native AOT compiler will export methods annotated with `UnmanagedCallersOnlyAttribute` and an explicitly specified name as
-public C entry points. This makes it possible to either dynamically or statically link the AOT compiled modules into external
-programs. More details can be found in [NativeLibrary Sample](https://github.com/dotnet/samples/tree/main/core/nativeaot/NativeLibrary/README.md).
+public C entry points (that is, set `EntryPoint`). This makes it possible to either dynamically or statically link the AOT compiled modules into external
+programs. For more information, see [NativeLibrary sample](https://github.com/dotnet/samples/tree/main/core/nativeaot/NativeLibrary/README.md).

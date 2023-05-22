@@ -6,6 +6,9 @@ ms.date: 09/01/2022
 ---
 # Upgrade a WCF Server-side Project to use CoreWCF on .NET 6
 
+> [!IMPORTANT]
+> This article was written before the release of the Upgrade Asstant extension for Visual Studio. The CLI version of the tool used in this article may be out of date. The article will be upgrade after the Microsoft Build 2023 conference.
+
 The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can assist with upgrading an existing WCF Server-side project on .NET Framework to use CoreWCF services on .NET 6. This article provides:
 
 - Things to know before starting.

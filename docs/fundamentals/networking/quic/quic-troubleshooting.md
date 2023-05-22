@@ -11,7 +11,7 @@ The `System.Net.Quic` library is based on the open source QUIC implementation [`
 
 ## Listener is running but doesn't receive any data
 
-This might be caused by other process listening on the same port. To verify which process is using which port run:
+If a listener is running but never receives data, it might be caused by other process listening on the same port. To verify which process is using which port run:
 
 ```bash
 $ sudo ss -tulpw

@@ -13,7 +13,7 @@ The .NET Upgrade Assistant can be installed as a Visual Studio extension or as a
 
 - Windows Operating System
 - [Visual Studio 2022 version 17.1 or later](https://visualstudio.microsoft.com/downloads/)
-- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0), for the command-line tool
+- [.NET SDK](https://dotnet.microsoft.com/download/dotnet/), for the command-line tool
 
 ## Install the Visual Studio extension
 

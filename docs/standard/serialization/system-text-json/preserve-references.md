@@ -73,10 +73,6 @@ When the sample code calls the serializer, it uses a <xref:System.Text.Json.Json
 
 ::: zone-end
 
-::: zone pivot="dotnet-core-3-1"
-System.Text.Json in .NET Core 3.1 only supports serialization by value and throws an exception for circular references.
-::: zone-end
-
 ## Ignore circular references
 
 ::: zone pivot="dotnet-7-0,dotnet-6-0"
@@ -94,11 +90,6 @@ This behavior has the following disadvantages:
 
 * Silent loss of data.
 * Data can't make a round trip from JSON back to the source object.
-
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1,dotnet-5-0"
-System.Text.Json in .NET 5 and earlier doesn't support <xref:System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles?displayProperty=nameWithType>.
 
 ::: zone-end
 

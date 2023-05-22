@@ -97,16 +97,6 @@ The following example shows a round trip from JSON and back to JSON for a class 
 
 :::zone-end
 
-::: zone pivot="dotnet-core-3-1,dotnet-5-0"
-
-If you just want to be flexible about what JSON to accept for a particular property, an alternative is to deserialize into <xref:System.Text.Json.JsonElement>. Any valid JSON property can be deserialized into <xref:System.Text.Json.JsonElement>. <xref:System.Text.Json.Nodes.JsonNode> is not supported in .NET 5 and earlier versions.
-
-The following example shows a round trip from JSON and back to JSON for a class that includes properties of type `JsonElement`.
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripJsonElement.cs" highlight="11-12":::
-
-:::zone-end
-
 ## See also
 
 * [System.Text.Json overview](overview.md)

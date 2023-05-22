@@ -45,12 +45,6 @@ Consider the following factors when choosing between `JsonDocument` and `JsonNod
 
 :::zone-end
 
-:::zone pivot="dotnet-5-0,dotnet-core-3-1"
-
-* Starting in .NET 6, <xref:System.Text.Json.Nodes.JsonNode> and the classes that derive from it in the <xref:System.Text.Json.Nodes> namespace provide the ability to create a mutable DOM. For more information, see the [.NET 6 version of this article](use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0).
-
-:::zone-end
-
 :::zone pivot="dotnet-7-0,dotnet-6-0"
 
 ## Use `JsonNode`
@@ -290,8 +284,8 @@ Here's a JSON sample that the preceding code can read. The resulting summary mes
 Starting in .NET 7, you can use the <xref:System.Text.Json.Utf8JsonReader.CopyString%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Json.Utf8JsonReader.GetString?displayProperty=nameWithType> to consume a decoded JSON string. Unlike <xref:System.Text.Json.Utf8JsonReader.GetString>, which always allocates a new string, <xref:System.Text.Json.Utf8JsonReader.CopyString%2A> lets you copy the unescaped string to a buffer that you own. The following code snippet shows an example of consuming a UTF-16 string using <xref:System.Text.Json.Utf8JsonReader.CopyString%2A>.
 
 ```csharp
-int valueLength = reader.HasReadOnlySequence 
-    ? checked((int)ValueSequence.Length) 
+int valueLength = reader.HasReadOnlySequence
+    ? checked((int)ValueSequence.Length)
     : ValueSpan.Length;
 
 char[] buffer = ArrayPool<char>.Shared.Rent(valueLength);

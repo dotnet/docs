@@ -57,10 +57,6 @@ The metadata cache of the existing `JsonSerializerOptions` instance isn't copied
 
 ::: zone-end
 
-::: zone pivot="dotnet-core-3-1"
-A `JsonSerializerOptions` constructor that takes an existing instance is not available in .NET Core 3.1.
-::: zone-end
-
 ## Web defaults for JsonSerializerOptions
 
 ::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
@@ -74,13 +70,4 @@ The [JsonSerializerOptions constructor](xref:System.Text.Json.JsonSerializerOpti
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/OptionsDefaults.cs" highlight="23":::
 :::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/OptionsDefaults.vb" :::
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-The following options have different defaults for web apps:
-
-* <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive%2A> = `true`
-* <xref:System.Text.Json.JsonNamingPolicy> = <xref:System.Text.Json.JsonNamingPolicy.CamelCase>
-
-A `JsonSerializerOptions` constructor that specifies a set of defaults is not available in .NET Core 3.1.
 ::: zone-end

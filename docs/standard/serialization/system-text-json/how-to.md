@@ -117,16 +117,6 @@ A <xref:System.Text.Json.JsonSerializer.Serialize%2A> overload that takes a <xre
 When you use System.Text.Json indirectly in an ASP.NET Core app, some default behaviors are different. For more information, see [Web defaults for JsonSerializerOptions](configure-options.md#web-defaults-for-jsonserializeroptions).
 ::: zone-end
 
-::: zone pivot="dotnet-core-3-1"
-
-* By default, all public properties are serialized. You can [specify properties to ignore](ignore-properties.md).
-* The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the RFC 8259 JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
-* By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
-* By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](customize-properties.md).
-* Circular references are detected and exceptions thrown.
-* [Fields](../../../csharp/programming-guide/classes-and-structs/fields.md) are ignored.
-::: zone-end
-
 Supported types include:
 ::: zone pivot="dotnet-8-0,dotnet-7-0,dotnet-6-0,dotnet-5-0"
 
@@ -134,21 +124,6 @@ Supported types include:
 * User-defined [plain old CLR objects (POCOs)](../../glossary.md#poco).
 * One-dimensional and jagged arrays (`T[][]`).
 * Collections and dictionaries from the following namespaces.
-  * <xref:System.Collections>
-  * <xref:System.Collections.Generic>
-  * <xref:System.Collections.Immutable>
-  * <xref:System.Collections.Concurrent>
-  * <xref:System.Collections.Specialized>
-  * <xref:System.Collections.ObjectModel>
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-
-* .NET primitives that map to JavaScript primitives, such as numeric types, strings, and Boolean.
-* User-defined [plain old CLR objects (POCOs)](../../glossary.md#poco).
-* One-dimensional and jagged arrays (`ArrayName[][]`).
-* `Dictionary<string,TValue>` where `TValue` is `object`, `JsonElement`, or a POCO.
-* Collections from the following namespaces.
   * <xref:System.Collections>
   * <xref:System.Collections.Generic>
   * <xref:System.Collections.Immutable>
@@ -238,20 +213,6 @@ When you use System.Text.Json indirectly in an ASP.NET Core app, some default be
 When you use System.Text.Json indirectly in an ASP.NET Core app, some default behaviors are different. For more information, see [Web defaults for JsonSerializerOptions](configure-options.md#web-defaults-for-jsonserializeroptions).
 ::: zone-end
 
-::: zone pivot="dotnet-core-3-1"
-
-* By default, property name matching is case-sensitive. You can [specify case-insensitivity](character-casing.md). ASP.NET Core apps [specify case-insensitivity by default](configure-options.md#web-defaults-for-jsonserializeroptions).
-* If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
-* A parameterless constructor, which can be public, internal, or private, is used for deserialization.
-* Deserialization to immutable objects or properties that don't have public `set` accessors isn't supported.
-* By default, enums are supported as numbers. You can [serialize enum names as strings](customize-properties.md#enums-as-strings).
-* Fields aren't supported.
-* By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](invalid-json.md).
-* The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) is 64.
-
-When you use System.Text.Json indirectly in an ASP.NET Core app, some default behaviors are different. For more information, see [Web defaults for JsonSerializerOptions](configure-options.md#web-defaults-for-jsonserializeroptions).
-::: zone-end
-
 You can [implement custom converters](converters-how-to.md) to provide functionality that isn't supported by the built-in converters.
 
 ## Serialize to formatted JSON
@@ -274,10 +235,6 @@ Use the <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProper
 To ignore read-only fields, use the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType> global setting.
 ::: zone-end
 
-::: zone pivot="dotnet-core-3-1"
-Fields are not supported in System.Text.Json in .NET Core 3.1. [Custom converters](converters-how-to.md) can provide this functionality.
-::: zone-end
-
 ## HttpClient and HttpContent extension methods
 
 ::: zone pivot="dotnet-8-0,dotnet-7-0,dotnet-6-0,dotnet-5-0"
@@ -290,10 +247,6 @@ The following example illustrates use of <xref:System.Net.Http.Json.HttpClientJs
 :::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/HttpClientExtensionMethods.vb" :::
 
 There are also extension methods for System.Text.Json on [HttpContent](xref:System.Net.Http.Json.HttpContentJsonExtensions).
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-Extension methods on `HttpClient` and `HttpContent` are not available in System.Text.Json in .NET Core 3.1.
 ::: zone-end
 
 ## See also

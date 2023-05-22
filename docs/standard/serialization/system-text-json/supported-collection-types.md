@@ -16,17 +16,8 @@ helpviewer_keywords:
 
 This article gives an overview of which collections are supported for serialization and deserialization. <xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> supports a collection type for serialization if it:
 
-:::zone pivot="dotnet-5-0,dotnet-core-3-1"
-
-* Derives from <xref:System.Collections.IEnumerable>.
-* Contains elements that are serializable.
-:::zone-end
-
-:::zone pivot="dotnet-7-0,dotnet-6-0"
-
 * Derives from <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IAsyncEnumerable%601>
 * Contains elements that are serializable.
-:::zone-end
 
 The serializer calls the <xref:System.Collections.IEnumerable.GetEnumerator> method, and writes the elements.
 
@@ -146,35 +137,6 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 
 ::: zone-end
 
-::: zone pivot="dotnet-core-3-1"
-
-| Type                                                                                            | Serialization | Deserialization |
-|-------------------------------------------------------------------------------------------------|---------------|-----------------|
-| [Dictionary\<string, TValue>](xref:System.Collections.Generic.Dictionary%602) \*                | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.HashSet%601>                                                   | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.IAsyncEnumerable%601>                                          | ❌           | ❌              |
-| <xref:System.Collections.Generic.ICollection%601>                                               | ✔️           | ✔️              |
-| [IDictionary\<string, TValue>](xref:System.Collections.Generic.IDictionary%602) \*              | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.IEnumerable%601>                                               | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.IList%601>                                                     | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.IReadOnlyCollection%601>                                       | ✔️           | ✔️              |
-| [IReadOnlyDictionary\<string, TValue>](xref:System.Collections.Generic.IReadOnlyDictionary%602) \* | ✔️        | ✔️              |
-| <xref:System.Collections.Generic.IReadOnlyList%601>                                             | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.ISet%601>                                                      | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.KeyValuePair%602>                                              | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.LinkedList%601>                                                | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.LinkedListNode%601>                                            | ✔️           | ❌              |
-| <xref:System.Collections.Generic.List%601>                                                      | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.Queue%601>                                                     | ✔️           | ✔️              |
-| [SortedDictionary\<string, TValue>](xref:System.Collections.Generic.SortedDictionary%602) \*    | ✔️           | ✔️              |
-| [SortedList\<string, TValue>](xref:System.Collections.Generic.SortedList%602) \*                | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.SortedSet%601>                                                 | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.Stack%601>                                                     | ✔️           | ✔️              |
-
-\* See [Supported key types](#supported-key-types).
-
-::: zone-end
-
 ## System.Collections.Immutable namespace
 
 ::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
@@ -193,26 +155,6 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 | <xref:System.Collections.Immutable.ImmutableSortedDictionary%602> \*\* | ✔️      | ✔️              |
 | <xref:System.Collections.Immutable.ImmutableSortedSet%601>        | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.ImmutableStack%601> \*         | ✔️           | ✔️              |
-
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-
-| Type                                                                                                          | Serialization | Deserialization |
-|---------------------------------------------------------------------------------------------------------------|---------------|-----------------|
-| [IImmutableDictionary\<string, TValue>](xref:System.Collections.Immutable.IImmutableDictionary%602) \*\*      | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.IImmutableList%601>                                                        | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.IImmutableQueue%601>                                                       | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.IImmutableSet%601>                                                         | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.IImmutableStack%601> \*                                                    | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableArray%601>                                                        | ✔️           | ✔️              |
-| [ImmutableDictionary\<string, TValue>](xref:System.Collections.Immutable.ImmutableDictionary%602) \*\*        | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableHashSet%601>                                                      | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.IImmutableList%601>                                                        | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableQueue%601>                                                        | ✔️           | ✔️              |
-| [ImmutableSortedDictionary\<string, TValue>](xref:System.Collections.Immutable.ImmutableSortedDictionary%602) \*\*| ✔️       | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableSortedSet%601>                                                    | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableStack%601> \*                                                     | ✔️           | ✔️              |
 
 ::: zone-end
 
@@ -248,18 +190,6 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 
 ::: zone-end
 
-::: zone pivot="dotnet-core-3-1"
-
-| Type                                                        | Serialization | Deserialization |
-|-------------------------------------------------------------|---------------|-----------------|
-| <xref:System.Collections.Concurrent.BlockingCollection%601> | ✔️           | ❌              |
-| <xref:System.Collections.Concurrent.ConcurrentBag%601>      | ✔️           | ❌              |
-| [ConcurrentDictionary\<string, TValue>](xref:System.Collections.Concurrent.ConcurrentDictionary%602) \*\* |✔️|✔️|
-| <xref:System.Collections.Concurrent.ConcurrentQueue%601>    | ✔️           | ✔️              |
-| <xref:System.Collections.Concurrent.ConcurrentStack%601> \* | ✔️           | ✔️              |
-
-::: zone-end
-
 \* See [Support round trip for Stack\<T>](converters-how-to.md#support-round-trip-for-stackt).
 
 \*\* See [Supported key types](#supported-key-types).
@@ -278,21 +208,6 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 | <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection%601> | ✔️    | ❌             |
 
 \* Non-`string` keys are not supported.
-
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-
-| Type                                                           | Serialization | Deserialization |
-|----------------------------------------------------------------|---------------|-----------------|
-| <xref:System.Collections.ObjectModel.Collection%601>           | ✔️            | ✔️             |
-| [KeyedCollection\<string, TValue>](xref:System.Collections.ObjectModel.KeyedCollection%602) \* |✔️|❌|
-| <xref:System.Collections.ObjectModel.ObservableCollection%601> | ✔️            | ✔️             |
-| <xref:System.Collections.ObjectModel.ReadOnlyCollection%601>   | ✔️            | ❌             |
-| [ReadOnlyDictionary\<string, TValue>](xref:System.Collections.ObjectModel.ReadOnlyDictionary%602) \* |✔️|❌|
-| <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection%601>| ✔️     | ❌             |
-
-\* See [Supported key types](#supported-key-types).
 
 ::: zone-end
 
@@ -317,26 +232,6 @@ A custom collection is supported for deserialization if it:
   * <xref:System.Collections.Generic.ICollection%601>
   * <xref:System.Collections.IDictionary>
   * <xref:System.Collections.Generic.IDictionary%602> \*\*
-  * <xref:System.Collections.IList>
-  * <xref:System.Collections.Generic.IList%601>
-  * <xref:System.Collections.Queue>
-  * <xref:System.Collections.Generic.Queue%601>
-  * <xref:System.Collections.Stack> \*
-  * <xref:System.Collections.Generic.Stack%601> \*
-
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-
-* Isn't an interface or abstract.
-* Has a parameterless constructor.
-* Contains element types that are supported by <xref:System.Text.Json.JsonSerializer>.
-* Implements or inherits one or more of the following interfaces or classes:
-  * <xref:System.Collections.Concurrent.ConcurrentQueue%601>
-  * <xref:System.Collections.Concurrent.ConcurrentStack%601> \*
-  * <xref:System.Collections.Generic.ICollection%601>
-  * <xref:System.Collections.IDictionary>
-  * [IDictionary\<string, TValue>](xref:System.Collections.Generic.IDictionary%602) \*\*
   * <xref:System.Collections.IList>
   * <xref:System.Collections.Generic.IList%601>
   * <xref:System.Collections.Queue>
@@ -386,12 +281,6 @@ Supported types for the keys of `Dictionary` and `SortedList` types include the 
 * `UInt16`
 * `UInt32`
 * `UInt64`
-
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-
-\*\* Non-`string` keys for `Dictionary` and `SortedList` types are not supported in .NET Core 3.1.
 
 ::: zone-end
 

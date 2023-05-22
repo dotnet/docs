@@ -34,21 +34,13 @@ You can also write custom converters to customize or extend `System.Text.Json` w
 
 ::: zone-end
 
-::: zone pivot="dotnet-5-0,dotnet-6-0"
+::: zone pivot="dotnet-6-0"
 
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
 * [Support enum string value deserialization](#support-enum-string-value-deserialization).
 
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-
-* [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
-* [Support Dictionary with non-string key](#support-dictionary-with-non-string-key).
-* [Support polymorphic deserialization](#support-polymorphic-deserialization).
-* [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
 ::: zone-end
 
 Visual Basic can't be used to write custom converters but can call converters that are implemented in C# libraries. For more information, see [Visual Basic support](visual-basic-support.md).
@@ -82,12 +74,6 @@ The following sample is a converter that overrides default serialization for an 
 The following code shows a custom converter that works with `Dictionary<Enum,TValue>`. The code follows the factory pattern because the first generic type parameter is `Enum` and the second is open. The `CanConvert` method returns `true` only for a `Dictionary` with two generic parameters, the first of which is an `Enum` type. The inner converter gets an existing converter to handle whichever type is provided at run time for `TValue`.
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/DictionaryTKeyEnumTValueConverter.cs":::
-
-::: zone pivot="dotnet-core-3-1"
-
-The preceding code is the same as what is shown in the [Support Dictionary with non-string key](#support-dictionary-with-non-string-key) later in this article.
-
-::: zone-end
 
 ## Steps to follow the basic pattern
 
@@ -249,15 +235,6 @@ The following sections provide converter samples that address some common scenar
 
 ::: zone-end
 
-::: zone pivot="dotnet-core-3-1"
-
-* [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
-* [Support Dictionary with non-string key](#support-dictionary-with-non-string-key).
-* [Support polymorphic deserialization](#support-polymorphic-deserialization).
-* [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
-
-::: zone-end
-
 For a sample <xref:System.Data.DataTable> converter, see [Supported collection types](supported-collection-types.md#systemdata-namespace).
 
 ### Deserialize inferred types to object properties
@@ -284,69 +261,6 @@ The example shows the converter code and a `WeatherForecast` class with `object`
 The [unit tests folder](https://github.com/dotnet/runtime/tree/c72b54243ade2e1118ab24476220a2eba6057466/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle deserialization to `object` properties.
 
 :::zone-end
-
-::: zone pivot="dotnet-core-3-1"
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/ObjectToInferredTypesConverter.cs":::
-
-The following code registers the converter:
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeInferredTypesToObject.cs" id="Register":::
-
-Here's an example type with `object` properties:
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithObjectProperties":::
-
-The following example of JSON to deserialize contains values that will be deserialized as `DateTime`, `long`, and `string`:
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "Hot",
-}
-```
-
-Without the custom converter, deserialization puts a `JsonElement` in each property.
-
-The [unit tests folder](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle deserialization to `object` properties.
-
-:::zone-end
-
-::: zone pivot="dotnet-core-3-1"
-
-### Support Dictionary with non-string key
-
-The built-in support for dictionary collections is for `Dictionary<string, TValue>`. That is, the key must be a string. To support a dictionary with an integer or some other type as the key, a custom converter is required.
-
-The following code shows a custom converter that works with `Dictionary<Enum,TValue>`:
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DictionaryTKeyEnumTValueConverter.cs":::
-
-The following code registers the converter:
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripDictionaryTkeyEnumTValue.cs" id="Register":::
-
-The converter can serialize and deserialize the `TemperatureRanges` property of the following class that uses the following `Enum`:
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithEnumDictionary":::
-
-The JSON output from serialization looks like the following example:
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "Hot",
-  "TemperatureRanges": {
-    "Cold": 20,
-    "Hot": 40
-  }
-}
-```
-
-The [unit tests folder](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle non-string-key dictionaries.
-::: zone-end
 
 ### Support polymorphic deserialization
 
@@ -489,11 +403,6 @@ When the sample code calls the serializer, it uses a <xref:System.Text.Json.Json
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterPreserveReferences.cs" id="CallSerializer" highlight = "4-5,12":::
 
 The preceding example only does serialization, but a similar approach can be adopted for deserialization.
-
-::: zone-end
-::: zone pivot="dotnet-core-3-1"
-
-For information about how to preserve references, see [the .NET 5 version of this page](converters-how-to.md?pivots=dotnet-5-0#preserve-references).
 
 ::: zone-end
 

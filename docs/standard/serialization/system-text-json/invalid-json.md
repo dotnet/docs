@@ -71,10 +71,6 @@ When you use `System.Text.Json` indirectly through ASP.NET Core, quoted numbers 
 To allow or write quoted numbers for specific properties, fields, or types, use the [[JsonNumberHandling]](xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute) attribute.
 ::: zone-end
 
-::: zone pivot="dotnet-core-3-1"
-`System.Text.Json` in .NET Core 3.1 doesn't support serializing or deserializing numbers surrounded by quotation marks. For more information, see [Allow or write numbers in quotes](migrate-from-newtonsoft.md#allow-or-write-numbers-in-quotes).
-::: zone-end
-
 ## See also
 
 * [System.Text.Json overview](overview.md)

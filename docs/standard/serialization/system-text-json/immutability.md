@@ -47,10 +47,6 @@ You can apply any of the attributes to the property names, using the `property:`
 For types that are immutable because all their property setters are non-public, see the following section.
 ::: zone-end
 
-::: zone pivot="dotnet-core-3-1"
-`JsonConstructorAttribute` and C# 9 Record support aren't available in .NET Core 3.1.
-::: zone-end
-
 ## Non-public property accessors
 
 ::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
@@ -58,10 +54,6 @@ For types that are immutable because all their property setters are non-public, 
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/NonPublicAccessors.cs" highlight="10,13":::
 :::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/NonPublicAccessors.vb" :::
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-Non-public property accessors aren't supported in .NET Core 3.1. For more information, see [Migrate from Newtonsoft.Json](migrate-from-newtonsoft.md#non-public-property-setters-and-getters).
 ::: zone-end
 
 ## See also

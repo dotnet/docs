@@ -22,7 +22,7 @@ The `System.Text.Json` library parses and writes <xref:System.DateTime> and <xre
 
 ## Support for the ISO 8601-1:2019 format
 
-::: zone pivot="dotnet-6-0,dotnet-7-0,dotnet-5-0,dotnet-core-3-1"
+::: zone pivot="dotnet-6-0,dotnet-7-0"
 
 The <xref:System.Text.Json.JsonSerializer>, <xref:System.Text.Json.Utf8JsonReader>, <xref:System.Text.Json.Utf8JsonWriter>,
 and <xref:System.Text.Json.JsonElement> types parse and write <xref:System.DateTime> and <xref:System.DateTimeOffset>

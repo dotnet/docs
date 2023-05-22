@@ -276,7 +276,7 @@ The Garbage Collector can now be configured with the **GCLargePages** setting as
 
 ### .NET Core SDK Windows Installer
 
-The MSI installer for Windows has changed starting with .NET Core 3.0. The SDK installers will now upgrade SDK feature-band releases in place. Feature bands are defined in the *hundreds* groups in the *patch* section of the version number. For example, **3.0.*101*** and **3.0.*201*** are versions in two different feature bands while **3.0.*101*** and **3.0.*199*** are in the same feature band. And, when .NET Core SDK **3.0.*101*** is installed, .NET Core SDK **3.0.*100*** will be removed from the machine if it exists. When .NET Core SDK **3.0.*200*** is installed on the same machine, .NET Core SDK **3.0.*101*** won't be removed.
+The MSI installer for Windows has changed starting with .NET Core 3.0. The SDK installers will now upgrade SDK feature-band releases in place. Feature bands are defined in the *hundreds* groups in the *patch* section of the version number. For example, **3.0._101_** and **3.0._201_** are versions in two different feature bands while **3.0._101_** and **3.0._199_** are in the same feature band. And, when .NET Core SDK **3.0._101_** is installed, .NET Core SDK **3.0._100_** will be removed from the machine if it exists. When .NET Core SDK **3.0._200_** is installed on the same machine, .NET Core SDK **3.0._101_** won't be removed.
 
 For more information about versioning, see [Overview of how .NET Core is versioned](../versions/index.md).
 
@@ -539,9 +539,9 @@ System.Console.WriteLine($"RuntimeInformation.FrameworkDescription: {System.Runt
 
 The new built-in JSON support is high-performance, low allocation, and works with UTF-8 encoded JSON text. For more information about the <xref:System.Text.Json?displayProperty=fullName> namespace and types, see the following articles:
 
-- [JSON serialization in .NET - overview](../../standard/serialization/system-text-json/overview.md)
-- [How to serialize and deserialize JSON in .NET](../../standard/serialization/system-text-json/how-to.md).
-- [How to migrate from Newtonsoft.Json to System.Text.Json](../../standard/serialization/system-text-json/migrate-from-newtonsoft.md)
+* [JSON serialization in .NET - overview](../../standard/serialization/system-text-json/overview.md)
+* [How to serialize and deserialize JSON in .NET](../../standard/serialization/system-text-json/how-to.md).
+* [How to migrate from Newtonsoft.Json to System.Text.Json](../../standard/serialization/system-text-json/migrate-from-newtonsoft.md)
 
 ### HTTP/2 support
 

@@ -22,7 +22,7 @@ The benefits of direct P/Invoke calls are:
 
 You can configure the direct P/Invoke generation using `<DirectPInvoke>` items in the project file. The item name can be either *\<modulename>*, which enables direct calls for all entry points in the module, or *\<modulename!entrypointname>*, which enables a direct call for the specific module and entry point only.
 
-To specify a list of entry points in an external file, use `<DirectPInvokeList>filename</DirectPInvokeList>` items in the project file. A list is useful when the number of direct P/Invoke calls is large and it's unpractical to specify them using individual `<DirectPInvoke>` items. The file can contain empty lines and comments starting with `#`.
+To specify a list of entry points in an external file, use `<DirectPInvokeList>` items in the project file. A list is useful when the number of direct P/Invoke calls is large and it's unpractical to specify them using individual `<DirectPInvoke>` items. The file can contain empty lines and comments starting with `#`.
 
 Examples:
 
@@ -47,7 +47,7 @@ On Windows, native AOT uses a pre-populated list of direct P/Invoke methods that
 
 ### Linking
 
-To statically link against an unmanaged library, you'll need to specify `<NativeLibrary Include="filename" />` pointing to a `.lib` file on Windows and a `.a` file on Unix.
+To statically link against an unmanaged library, you'll need to specify `<NativeLibrary Include="filename" />` pointing to a `.lib` file on Windows and a `.a` file on Unix-like systems.
 
 Examples:
 
@@ -61,7 +61,7 @@ Examples:
 </ItemGroup>
 ```
 
-To specify additional flags to the native linker, use the `<LinkerArg Include="-argument" />` item.
+To specify additional flags to the native linker, use the `<LinkerArg>` item.
 
 Examples:
 
@@ -77,6 +77,6 @@ Examples:
 
 ## Native exports
 
-The native AOT compiler will export methods annotated with `UnmanagedCallersOnlyAttribute` and an explicitly specified name as
-public C entry points (that is, set `EntryPoint`). This makes it possible to either dynamically or statically link the AOT compiled modules into external
+The native AOT compiler will export methods annotated with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> with a non-empty `EntryPoint` property as
+public C entry points. This makes it possible to either dynamically or statically link the AOT compiled modules into external
 programs. For more information, see [NativeLibrary sample](https://github.com/dotnet/samples/tree/main/core/nativeaot/NativeLibrary/README.md).

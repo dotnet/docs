@@ -3,7 +3,6 @@ title: How to use a JSON document, Utf8JsonReader, and Utf8JsonWriter in System.
 description: "Learn how to use a JSON document object model (DOM), Utf8JsonReader, and Utf8JsonWriter."
 ms.date: 03/29/2022
 no-loc: [System.Text.Json, Newtonsoft.Json]
-zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"
@@ -34,24 +33,12 @@ Working with a DOM is an alternative to deserialization with <xref:System.Text.J
 
 * <xref:System.Text.Json.JsonDocument> provides the ability to build a read-only DOM by using `Utf8JsonReader`. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` type provides array and object enumerators along with APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property. For more information, see [Use JsonDocument](#use-jsondocument) later in this article.
 
-:::zone pivot="dotnet-7-0,dotnet-6-0"
-
 * <xref:System.Text.Json.Nodes.JsonNode> and the classes that derive from it in the <xref:System.Text.Json.Nodes> namespace provide the ability to create a mutable DOM. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.Nodes.JsonNode>, <xref:System.Text.Json.Nodes.JsonObject>, <xref:System.Text.Json.Nodes.JsonArray>, <xref:System.Text.Json.Nodes.JsonValue>, and <xref:System.Text.Json.JsonElement> types. For more information, see [Use `JsonNode`](#use-jsonnode) later in this article.
 
 Consider the following factors when choosing between `JsonDocument` and `JsonNode`:
 
 * The `JsonNode` DOM can be changed after it's created. The `JsonDocument` DOM is immutable.
 * The `JsonDocument` DOM provides faster access to its data.
-
-:::zone-end
-
-:::zone pivot="dotnet-5-0,dotnet-core-3-1"
-
-* Starting in .NET 6, <xref:System.Text.Json.Nodes.JsonNode> and the classes that derive from it in the <xref:System.Text.Json.Nodes> namespace provide the ability to create a mutable DOM. For more information, see the [.NET 6 version of this article](use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0).
-
-:::zone-end
-
-:::zone pivot="dotnet-7-0,dotnet-6-0"
 
 ## Use `JsonNode`
 
@@ -102,8 +89,6 @@ The following example illustrates the result of using methods that take a `JsonS
 
 If you need features of `JsonSerializerOptions` other than custom converters, use `JsonSerializer` with strongly typed targets (such as the `Person` class in this example) rather than `JsonNode`.
 
-::: zone-end
-
 ## Use `JsonDocument`
 
 The following example shows how to use the <xref:System.Text.Json.JsonDocument> class for random access to data in a JSON string:
@@ -127,13 +112,11 @@ Here's an example of the JSON that this code processes:
 
 :::code language="json" source="snippets/system-text-json-how-to/csharp/GradesPrettyPrint.json":::
 
-:::zone pivot="dotnet-7-0,dotnet-6-0"
 For a similar example that uses `JsonNode` instead of `JsonDocument`, see [JsonNode average grade example](#jsonnode-average-grade-example).
-:::zone-end
 
 ### How to search a JsonDocument and JsonElement for sub-elements
 
-Searches on `JsonElement` require a sequential search of the properties and hence are relatively slow (for example when using `TryGetProperty`). <xref:System.Text.Json> is designed to minimize initial parse time rather than lookup time. Therefore, use the following approaches to optimize performance when searching through a `JsonDocument` object:
+Searches on `JsonElement` require a sequential search of the properties and hence are relatively slow (for example when using `TryGetProperty`). <xref:System.Text.Json?displayProperty=fullName> is designed to minimize initial parse time rather than lookup time. Therefore, use the following approaches to optimize performance when searching through a `JsonDocument` object:
 
 * Use the built-in enumerators (<xref:System.Text.Json.JsonElement.EnumerateArray%2A> and <xref:System.Text.Json.JsonElement.EnumerateObject%2A>) rather than doing your own indexing or loops.
 * Don't do a sequential search on the whole `JsonDocument` through every property by using `RootElement`. Instead, search on nested JSON objects based on the known structure of the JSON data. For example, the preceding code examples look for a `Grade` property in `Student` objects by looping through the `Student` objects and getting the value of `Grade` for each, rather than searching through all `JsonElement` objects looking for `Grade` properties. Doing the latter would result in unnecessary passes over the same data.
@@ -215,8 +198,6 @@ To achieve the best possible performance while using the `Utf8JsonWriter`, write
 
 This approach also works if you need to do custom escaping. `System.Text.Json` doesn't let you disable escaping while writing a string. However, you could pass in your own custom <xref:System.Text.Encodings.Web.JavaScriptEncoder> as an option to the writer, or create your own `JsonEncodedText` that uses your `JavascriptEncoder` to do the escaping, and then write the `JsonEncodedText` instead of the string. For more information, see [Customize character encoding](character-encoding.md).
 
-:::zone pivot="dotnet-7-0,dotnet-6-0"
-
 ### Write raw JSON
 
 In some scenarios, you might want to write "raw" JSON to a JSON payload that you're creating with `Utf8JsonWriter`. You can use <xref:System.Text.Json.Utf8JsonWriter.WriteRawValue%2A?displayProperty=nameWithType> to do that. Here are typical scenarios:
@@ -227,8 +208,6 @@ In some scenarios, you might want to write "raw" JSON to a JSON payload that you
   For example, you might want to customize number formatting. By default, System.Text.Json omits the decimal point for whole numbers, writing `1` rather than `1.0`, for example. The rationale is that writing fewer bytes is good for performance. But suppose the consumer of your JSON treats numbers with decimals as doubles, and numbers without decimals as integers. You might want to ensure that the numbers in an array are all recognized as doubles, by writing a decimal point and zero for whole numbers. The following example shows how to do that:
 
   :::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/WriteRawJson.cs":::
-
-:::zone-end
 
 ### Customize character escaping
 
@@ -290,8 +269,8 @@ Here's a JSON sample that the preceding code can read. The resulting summary mes
 Starting in .NET 7, you can use the <xref:System.Text.Json.Utf8JsonReader.CopyString%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Json.Utf8JsonReader.GetString?displayProperty=nameWithType> to consume a decoded JSON string. Unlike <xref:System.Text.Json.Utf8JsonReader.GetString>, which always allocates a new string, <xref:System.Text.Json.Utf8JsonReader.CopyString%2A> lets you copy the unescaped string to a buffer that you own. The following code snippet shows an example of consuming a UTF-16 string using <xref:System.Text.Json.Utf8JsonReader.CopyString%2A>.
 
 ```csharp
-int valueLength = reader.HasReadOnlySequence 
-    ? checked((int)ValueSequence.Length) 
+int valueLength = reader.HasReadOnlySequence
+    ? checked((int)ValueSequence.Length)
     : ValueSpan.Length;
 
 char[] buffer = ArrayPool<char>.Shared.Rent(valueLength);

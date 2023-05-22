@@ -29,7 +29,8 @@ Client attempts to connect, but receives `Application layer protocol negotiation
 What happens is that listener always binds to dual-mode wildcard address, regardless of what the application specified. Then it matches incoming connections by IP address and ALPN. If no match is found, it reports the above mentioned error. As a result, mismatch between listening IP address and connecting one will result in an ALPN error.
 
 To avoid this error, make sure you're connecting to the same address for which the listener was started. For example, print the listening address for your listener:
-```C#
+
+```csharp
 await using var listener = QuicListener.ListenAsync(...);
 Console.WriteLine(listener.LocalEndPoint);
 ```

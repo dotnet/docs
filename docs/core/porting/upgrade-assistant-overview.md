@@ -88,7 +88,7 @@ Once your app has been upgraded, a status screen is displayed which shows all of
 
 ### Upgrade with the CLI tool
 
-After you've [installed the .NET Upgrade Assistant CLI tool](upgrade-assistant-install.md#install-the-visual-studio-extension#install-the-net-global-tool), open a terminal window and navigate to the directory that contains the project or solution you want to upgrade.
+After you've [installed the .NET Upgrade Assistant CLI tool](upgrade-assistant-install.md#install-the-net-global-tool), open a terminal window and navigate to the directory that contains the project or solution you want to upgrade.
 
 ## .NET Framework modernization
 

@@ -65,7 +65,6 @@ netsh.exe int ip show excludedportrange protocol=udp
 
 Getting failure for attempt to bind on a port that is from excluded range is expected behavior. For that reason, there are no immediate plans to fix this. More details can be found in [dotnet/runtime#71518](https://github.com/dotnet/runtime/issues/71518).
 
-
 ## See also
 
 - [MsQuic troubleshooting guide](https://github.com/microsoft/msquic/blob/main/docs/TSG.md)

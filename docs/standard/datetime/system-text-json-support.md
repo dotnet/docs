@@ -5,7 +5,6 @@ author: layomia
 ms.author: laakinri
 ms.date: 01/11/2023
 ms.custom: devdivchpfy22
-zone_pivot_groups: dotnet-version
 helpviewer_keywords:
   - "JSON, Serializer, Utf8"
   - "JSON DateTime, JSON DateTimeOffset"
@@ -61,13 +60,9 @@ Attempting to read non-compliant formats with <xref:System.Text.Json.Utf8JsonRea
 
 :::code language="csharp" source="snippets/system-text-json-support/csharp/reading-with-utf8jsonreader-error/Program.cs":::
 
-::: zone pivot="dotnet-7-0"
-
 ## Serialize DateOnly and TimeOnly properties
 
 [!INCLUDE [dateonly-and-timeonly-serialization-cs](includes/dateonly-and-timeonly-serialization-cs.md)]
-
-::: zone-end
 
 ## Custom support for <xref:System.DateTime> and <xref:System.DateTimeOffset>
 

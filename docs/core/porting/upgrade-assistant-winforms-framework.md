@@ -356,7 +356,7 @@ There are several known problems that can occur when using the .NET Upgrade Assi
 
 - [Upgrade a WPF App to .NET 6](upgrade-assistant-wpf-framework.md)
 - [Upgrade an ASP.NET MVC App to .NET 6](upgrade-assistant-aspnetmvc.md)
-- [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md)
+- [Overview of the .NET Upgrade Assistant](/aspnet/core/migration/mvc)
 - [.NET Upgrade Assistant GitHub Repository](https://github.com/dotnet/upgrade-assistant)
 
 [winforms-sample]: https://github.com/dotnet/samples/tree/main/windowsforms/matching-game

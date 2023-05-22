@@ -319,7 +319,7 @@ If you're using Visual Basic to code your project, the Upgrade Assistant may con
 
 - [.NET Upgrade Assistant GitHub Repository](https://github.com/dotnet/upgrade-assistant)
 - [Upgrade a Windows Forms App to .NET 6](upgrade-assistant-winforms-framework.md)
-- [Upgrade an ASP.NET MVC App to .NET 6](upgrade-assistant-aspnetmvc.md)
+- [Upgrade an ASP.NET MVC App to .NET 6](/aspnet/core/migration/mvc)
 - [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md)
 
 [wpf-sample]: https://github.com/dotnet/samples/tree/main/wpf/WebSiteBrowser/

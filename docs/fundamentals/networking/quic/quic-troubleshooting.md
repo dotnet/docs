@@ -17,7 +17,7 @@ If a listener is running but never receives data, it might be caused by other pr
 sudo ss -tulpw
 ```
 
-This behavior is by design as MsQuic uses `SO_REUSEPORT` to achieve better performance. For more info see [`ListenerStart`](https://github.com/microsoft/msquic/blob/main/docs/api/ListenerStart.md) documentation and the original issue [dotnet/runtime#59382](https://github.com/dotnet/runtime/issues/59382).
+This behavior is by design as `MsQuic` uses `SO_REUSEPORT` to achieve better performance. For more information, see [ListenerStart](https://github.com/microsoft/msquic/blob/main/docs/api/ListenerStart.md) documentation and the original issue [dotnet/runtime#59382](https://github.com/dotnet/runtime/issues/59382).
 
 > [!NOTE]
 > This problem doesn't occur on Windows, where MsQuic will attempt to do a port reservation. This causes the application trying to open second listener on the same port fail to start.

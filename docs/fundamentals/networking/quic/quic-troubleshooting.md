@@ -7,7 +7,7 @@ ms.date: 05/19/2023
 
 In this article, you'll learn how to diagnose the most common issues with QUIC in .NET.
 
-The `System.Net.Quic` library is based on the open source QUIC implementation [`MsQuic`](https://github.com/microsoft/msquic). Because of this, the behavior differs from ordinary sockets, sometimes by design. Moreover, it's based on UDP protocol, and it doesn't provide the exact same experience as with TCP.
+The `System.Net.Quic` library is based on the open source QUIC implementation [MsQuic](https://github.com/microsoft/msquic). Because of this, the behavior differs from ordinary sockets, sometimes by design. Moreover, it's based on UDP protocol, and it doesn't provide the exact same experience as with TCP.
 
 ## Listener is running but doesn't receive any data
 
@@ -65,5 +65,7 @@ netsh.exe int ip show excludedportrange protocol=udp
 
 Getting failure for attempt to bind on a port that is from excluded range is expected behavior. For that reason, there are no immediate plans to fix this. More details can be found in [dotnet/runtime#71518](https://github.com/dotnet/runtime/issues/71518).
 
-> [!NOTE]
-> This is related to the Windows mitigation for the first problem in this article.
+
+## See also
+
+- [MsQuic troubleshooting guide](https://github.com/microsoft/msquic/blob/main/docs/TSG.md)

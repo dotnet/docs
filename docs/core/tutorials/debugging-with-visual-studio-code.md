@@ -2,7 +2,7 @@
 title: Debug a .NET console application using Visual Studio Code
 description: Learn how to debug a .NET console app using Visual Studio Code.
 ms.date: 11/11/2022
-zone_pivot_groups: dotnet-version-6-7
+zone_pivot_groups: dotnet-version
 recommendations: false
 ---
 # Tutorial: Debug a .NET console application using Visual Studio Code
@@ -205,7 +205,7 @@ dotnet run --configuration Release
 
 ## Additional resources
 
-* [Debugging in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging)
+- [Debugging in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging)
 
 ## Next steps
 
@@ -414,7 +414,7 @@ dotnet run --configuration Release
 
 ## Additional resources
 
-* [Debugging in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging)
+- [Debugging in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging)
 
 ## Next steps
 

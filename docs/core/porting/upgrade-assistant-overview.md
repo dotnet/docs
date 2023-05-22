@@ -1,17 +1,17 @@
 ---
 title: Overview of the .NET Upgrade Assistant
-description: Introducing the .NET Upgrade Assistant tool that helps upgrade .NET or .NET Framework apps to the latest version of .NET.
+description: Introducing the .NET Upgrade Assistant tool that helps upgrade .NET, .NET Core, or .NET Framework apps to the latest version of .NET.
 author: adegeo
 ms.date: 05/16/2023
 no-loc: ["appsettings.json", "App.config"]
 ---
 # Overview of the .NET Upgrade Assistant
 
-New versions of .NET are released throughout the year, with a major release once a year. The .NET Upgrade Assistant helps you upgrade apps from previous versions of .NET and .NET Framework to the latest version.
+New versions of .NET are released throughout the year, with a major release once a year. The .NET Upgrade Assistant helps you upgrade apps from previous versions of .NET, .NET Core, and .NET Framework to the latest version.
 
 The .NET Upgrade Assistant is a Visual Studio extension and command-line tool that's designed to assist with upgrading apps to the latest version of .NET.
 
-Issues related to the .NET Upgrade Assistant can be filed in the [.NET Upgrade Assistant GitHub Repository](https://github.com/dotnet/upgrade-assistant).
+Issues related to the .NET Upgrade Assistant can be filed within Visual Studio by selecting **Help** > **Send Feedback** > **Report a Problem...**
 
 ## Install the Upgrade Assistant
 
@@ -44,6 +44,7 @@ The following upgrade paths are supported:
 
 - .NET Framework to .NET
 - .NET Core to .NET
+- UWP to WinUI 3
 - Previous .NET version to the latest .NET version
 - Azure Functions v1-v3 to v4 isolated
 - Xamarin Forms to .NET MAUI

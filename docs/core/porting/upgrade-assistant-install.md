@@ -33,7 +33,7 @@ The .NET Upgrade Assistant can be installed as a Visul Studio extension, which l
 
 ## Install the .NET global tool
 
-The .NET Upgrade Assistant is also available as a .NET global tool. You can install install the tool with the following command:
+The .NET Upgrade Assistant is also available as a .NET global tool. You can install the tool with the following command:
 
 ```dotnetcli
 dotnet tool install -g upgrade-assistant

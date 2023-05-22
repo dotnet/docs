@@ -395,7 +395,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   [System.Runtime]
       Number of Assemblies Loaded                   24
   ```
-
+  
 - Launch `my-aspnet-server.exe` with `arg1` and `arg2` as command-line arguments and monitor its working set and GC heap size from its startup (.NET 5 or later only):
 
   > [!IMPORTANT]
@@ -431,7 +431,7 @@ Suppose you start a long-running app using the command ```dotnet run --configura
 
 ```dotnetcli
 > dotnet-counters ps
-
+  
   21932 dotnet     C:\Program Files\dotnet\dotnet.exe   run --configuration Release
   36656 dotnet     C:\Program Files\dotnet\dotnet.exe
 ```

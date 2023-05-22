@@ -5,7 +5,7 @@ ms.date: 12/15/2020
 ---
 # System.Text.Json requires single-char string to deserialize a char
 
-To successfully deserialize a <xref:System.Char> using <xref:System.Text.Json?displayProperty=fullName>, the JSON string must contain a single character.
+To successfully deserialize a <xref:System.Char> using <xref:System.Text.Json>, the JSON string must contain a single character.
 
 ## Change description
 

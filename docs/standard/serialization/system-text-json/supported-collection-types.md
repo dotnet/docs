@@ -108,38 +108,7 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 
 ::: zone-end
 
-::: zone pivot="dotnet-5-0"
-
-| Type                                                      | Serialization | Deserialization |
-|-----------------------------------------------------------|---------------|-----------------|
-| <xref:System.Collections.Generic.Dictionary%602> \*       | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.HashSet%601>             | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.IAsyncEnumerable%601>    | ❌           | ❌              |
-| <xref:System.Collections.Generic.ICollection%601>         | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.IDictionary%602> \*      | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.IEnumerable%601>         | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.IList%601>               | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.IReadOnlyCollection%601> | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.IReadOnlyDictionary%602> \* | ✔️        | ✔️              |
-| <xref:System.Collections.Generic.IReadOnlyList%601>       | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.ISet%601>                | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.KeyValuePair%602>        | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.LinkedList%601>          | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.LinkedListNode%601>      | ✔️           | ❌              |
-| <xref:System.Collections.Generic.List%601>                | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.Queue%601>               | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.SortedDictionary%602> \* | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.SortedList%602> \*       | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.SortedSet%601>           | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.Stack%601>               | ✔️           | ✔️              |
-
-\* See [Supported key types](#supported-key-types).
-
-::: zone-end
-
 ## System.Collections.Immutable namespace
-
-::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 
 | Type                                                              | Serialization | Deserialization |
 |-------------------------------------------------------------------|---------------|-----------------|
@@ -155,8 +124,6 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 | <xref:System.Collections.Immutable.ImmutableSortedDictionary%602> \*\* | ✔️      | ✔️              |
 | <xref:System.Collections.Immutable.ImmutableSortedSet%601>        | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.ImmutableStack%601> \*         | ✔️           | ✔️              |
-
-::: zone-end
 
 \* See [Support round trip for Stack\<T>](converters-how-to.md#support-round-trip-for-stackt).
 
@@ -178,8 +145,6 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 
 ## System.Collections.Concurrent namespace
 
-::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
-
 | Type                                                          | Serialization | Deserialization |
 |---------------------------------------------------------------|---------------|-----------------|
 | <xref:System.Collections.Concurrent.BlockingCollection%601>   | ✔️           | ❌              |
@@ -188,15 +153,11 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 | <xref:System.Collections.Concurrent.ConcurrentQueue%601>      | ✔️           | ✔️              |
 | <xref:System.Collections.Concurrent.ConcurrentStack%601> \*   | ✔️           | ✔️              |
 
-::: zone-end
-
 \* See [Support round trip for Stack\<T>](converters-how-to.md#support-round-trip-for-stackt).
 
 \*\* See [Supported key types](#supported-key-types).
 
 ## System.Collections.ObjectModel namespace
-
-::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 
 | Type                                                           | Serialization | Deserialization |
 |----------------------------------------------------------------|---------------|-----------------|
@@ -209,8 +170,6 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 
 \* Non-`string` keys are not supported.
 
-::: zone-end
-
 ## Custom collections
 
 Any collection type that isn't in one of the preceding namespaces is considered a custom collection. Such types include user-defined types and types defined by ASP.NET Core. For example, <xref:Microsoft.Extensions.Primitives?displayProperty=fullName> is in this group.
@@ -220,8 +179,6 @@ All custom collections (everything that derives from `IEnumerable`) are supporte
 ### Custom collections with deserialization support
 
 A custom collection is supported for deserialization if it:
-
-::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 
 * Isn't an interface or abstract.
 * Has a parameterless constructor.
@@ -238,8 +195,6 @@ A custom collection is supported for deserialization if it:
   * <xref:System.Collections.Generic.Queue%601>
   * <xref:System.Collections.Stack> \*
   * <xref:System.Collections.Generic.Stack%601> \*
-
-::: zone-end
 
   \* See [Support round trip for Stack\<T>](converters-how-to.md#support-round-trip-for-stackt).
 
@@ -258,8 +213,6 @@ There are known issues with the following custom collections:
 For more information about known issues, see the [open issues in System.Text.Json](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json).
 
 ## Supported key types
-
-::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 
 Supported types for the keys of `Dictionary` and `SortedList` types include the following:
 
@@ -281,8 +234,6 @@ Supported types for the keys of `Dictionary` and `SortedList` types include the 
 * `UInt16`
 * `UInt32`
 * `UInt64`
-
-::: zone-end
 
 ## System.Data namespace
 

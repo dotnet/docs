@@ -41,8 +41,6 @@ Here's example JSON with comments and a trailing comma:
 
 ## Allow or write numbers in quotes
 
-::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
-
 Some serializers encode numbers as JSON strings (surrounded by quotes).
 
 For example:
@@ -69,7 +67,6 @@ To serialize numbers in quotes or accept numbers in quotes across the entire inp
 When you use `System.Text.Json` indirectly through ASP.NET Core, quoted numbers are allowed when deserializing because ASP.NET Core specifies [web default options](xref:System.Text.Json.JsonSerializerDefaults.Web).
 
 To allow or write quoted numbers for specific properties, fields, or types, use the [[JsonNumberHandling]](xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute) attribute.
-::: zone-end
 
 ## See also
 

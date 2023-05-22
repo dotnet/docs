@@ -144,9 +144,7 @@ During deserialization, `Newtonsoft.Json` does case-insensitive property name ma
 
 If you're using `System.Text.Json` indirectly by using ASP.NET Core, you don't need to do anything to get behavior like `Newtonsoft.Json`. ASP.NET Core specifies the settings for [camel-casing property names](customize-properties.md#use-camel-case-for-all-json-property-names) and case-insensitive matching when it uses `System.Text.Json`.
 
-::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 ASP.NET Core also enables deserializing [quoted numbers](#allow-or-write-numbers-in-quotes) by default.
-::: zone-end
 
 ### Minimal character escaping
 
@@ -312,13 +310,10 @@ For more information, see [Preserve references and handle circular references](p
 
 ### Dictionary with non-string key
 
-::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 Both `Newtonsoft.Json` and `System.Text.Json` support collections of type `Dictionary<TKey, TValue>`. However, in `System.Text.Json`, `TKey` must be a primitive type, not a custom type. For more information, see [Supported key types](supported-collection-types.md#supported-key-types).
 
 > [!CAUTION]
 > Deserializing to a `Dictionary<TKey, TValue>` where `TKey` is typed as anything other than `string` could introduce a security vulnerability in the consuming application. For more information, see [dotnet/runtime#4761](https://github.com/dotnet/runtime/issues/4761).
-
-::: zone-end
 
 ### Types without built-in support
 
@@ -400,9 +395,7 @@ After deserialization, the `Date` property has 1/1/0001 (`default(DateTimeOffset
 
 `Newtonsoft.Json` can deserialize to immutable classes and structs because it can use constructors that have parameters.
 
-::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 In <xref:System.Text.Json>, use the [[JsonConstructor]](xref:System.Text.Json.Serialization.JsonConstructorAttribute) attribute to specify use of a parameterized constructor. Records in C# 9 are also immutable and are supported as deserialization targets. For more information, see [Immutable types and Records](immutability.md).
-::: zone-end
 
 ### Required properties
 

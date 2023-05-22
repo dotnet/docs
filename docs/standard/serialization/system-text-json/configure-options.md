@@ -47,7 +47,6 @@ If the instance of `JsonSerializerOptions` that you need to use is the default i
 
 ## Copy JsonSerializerOptions
 
-::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 There is a [JsonSerializerOptions constructor](xref:System.Text.Json.JsonSerializerOptions.%23ctor(System.Text.Json.JsonSerializerOptions)) that lets you create a new instance with the same options as an existing instance, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CopyOptions.cs" highlight="28":::
@@ -55,11 +54,8 @@ There is a [JsonSerializerOptions constructor](xref:System.Text.Json.JsonSeriali
 
 The metadata cache of the existing `JsonSerializerOptions` instance isn't copied to the new instance. So using this constructor is not the same as reusing an existing instance of `JsonSerializerOptions`.
 
-::: zone-end
-
 ## Web defaults for JsonSerializerOptions
 
-::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 The following options have different defaults for web apps:
 
 * <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive%2A> = `true`
@@ -70,4 +66,3 @@ The [JsonSerializerOptions constructor](xref:System.Text.Json.JsonSerializerOpti
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/OptionsDefaults.cs" highlight="23":::
 :::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/OptionsDefaults.vb" :::
-::: zone-end

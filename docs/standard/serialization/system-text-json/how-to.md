@@ -105,8 +105,6 @@ A <xref:System.Text.Json.JsonSerializer.Serialize%2A> overload that takes a <xre
 
 ## Serialization behavior
 
-::: zone pivot="dotnet-8-0,dotnet-7-0,dotnet-6-0,dotnet-5-0"
-
 * By default, all public properties are serialized. You can [specify properties to ignore](ignore-properties.md).
 * The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the RFC 8259 JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
 * By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
@@ -115,10 +113,8 @@ A <xref:System.Text.Json.JsonSerializer.Serialize%2A> overload that takes a <xre
 * By default, [fields](../../../csharp/programming-guide/classes-and-structs/fields.md) are ignored. You can [include fields](#include-fields).
 
 When you use System.Text.Json indirectly in an ASP.NET Core app, some default behaviors are different. For more information, see [Web defaults for JsonSerializerOptions](configure-options.md#web-defaults-for-jsonserializeroptions).
-::: zone-end
 
 Supported types include:
-::: zone pivot="dotnet-8-0,dotnet-7-0,dotnet-6-0,dotnet-5-0"
 
 * .NET primitives that map to JavaScript primitives, such as numeric types, strings, and Boolean.
 * User-defined [plain old CLR objects (POCOs)](../../glossary.md#poco).
@@ -130,7 +126,6 @@ Supported types include:
   * <xref:System.Collections.Concurrent>
   * <xref:System.Collections.Specialized>
   * <xref:System.Collections.ObjectModel>
-::: zone-end
 
 For more information, see [Supported collection types in System.Text.Json](supported-collection-types.md).
 
@@ -199,7 +194,7 @@ The following behaviors apply when deserializing JSON:
 When you use System.Text.Json indirectly in an ASP.NET Core app, some default behaviors are different. For more information, see [Web defaults for JsonSerializerOptions](configure-options.md#web-defaults-for-jsonserializeroptions).
 ::: zone-end
 
-::: zone pivot="dotnet-7-0,dotnet-6-0,dotnet-5-0"
+::: zone pivot="dotnet-7-0,dotnet-6-0"
 
 * By default, property name matching is case-sensitive. You can [specify case-insensitivity](character-casing.md).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
@@ -226,18 +221,14 @@ If you use `JsonSerializerOptions` repeatedly with the same options, don't creat
 
 ## Include fields
 
-::: zone pivot="dotnet-8-0,dotnet-7-0,dotnet-6-0,dotnet-5-0"
 Use the <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProperty=nameWithType> global setting or the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute to include fields when serializing or deserializing, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Fields.cs" highlight="15,17,19,31-34":::
 :::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/Fields.vb" :::
 
 To ignore read-only fields, use the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType> global setting.
-::: zone-end
 
 ## HttpClient and HttpContent extension methods
-
-::: zone pivot="dotnet-8-0,dotnet-7-0,dotnet-6-0,dotnet-5-0"
 
 Serializing and deserializing JSON payloads from the network are common operations. Extension methods on [HttpClient](xref:System.Net.Http.Json.HttpClientJsonExtensions) and [HttpContent](xref:System.Net.Http.Json.HttpContentJsonExtensions) let you do these operations in a single line of code. These extension methods use [web defaults for JsonSerializerOptions](configure-options.md#web-defaults-for-jsonserializeroptions).
 
@@ -247,7 +238,6 @@ The following example illustrates use of <xref:System.Net.Http.Json.HttpClientJs
 :::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/HttpClientExtensionMethods.vb" :::
 
 There are also extension methods for System.Text.Json on [HttpContent](xref:System.Net.Http.Json.HttpContentJsonExtensions).
-::: zone-end
 
 ## See also
 

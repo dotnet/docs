@@ -47,7 +47,7 @@ Despite IPv6 being disabled, `QuicListener.ListenAsync` succeeds with an IPv6 ad
 There are many ways to check if IPv6 is enable, for example on Linux check the state of IPv6 module:
 
 ```bash
-$ cat /sys/module/ipv6/parameters/disable
+cat /sys/module/ipv6/parameters/disable
 
 # 0 - IPv6 is enable
 # 1 - IPv6 is disabled

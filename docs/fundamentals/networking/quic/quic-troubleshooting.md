@@ -5,9 +5,9 @@ ms.date: 05/19/2023
 ---
 # Troubleshoot QUIC issues in .NET
 
-This article aims to help diagnose the most common issues with QUIC in .NET.
+In this article, you'll learn how to diagnose the most common issues with QUIC in .NET.
 
-`System.Net.Quic` library is based on open source QUIC implementation [`MsQuic`](https://github.com/microsoft/msquic). Because of that, the behavior differs from ordinary sockets, sometimes by design. Moreover, it is based on UDP protocol underneath, and it doesn't provide exactly the same experience as with TCP.
+The `System.Net.Quic` library is based on the open source QUIC implementation [`MsQuic`](https://github.com/microsoft/msquic). Because of this, the behavior differs from ordinary sockets, sometimes by design. Moreover, it's based on UDP protocol, and it doesn't provide the exact same experience as with TCP.
 
 ## Listener is running but doesn't receive any data
 

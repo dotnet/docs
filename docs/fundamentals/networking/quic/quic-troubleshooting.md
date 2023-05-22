@@ -45,6 +45,7 @@ This issue might happen in several different scenarios, such as in this issue [d
 Even if the machine has IPv6 disabled, `QuicListener.ListenAsync` will succeed for IPv6 address. This is related to the previous problem as MsQuic binds to wildcard address and thus succeeds in doing so. As a result, the listener is started but no connection can be made to it. This is behavioral difference from sockets, which throw in such case.
 
 There are many ways to check if IPv6 is enable, for example on Linux check the state of IPv6 module:
+
 ```bash
 $ cat /sys/module/ipv6/parameters/disable
 

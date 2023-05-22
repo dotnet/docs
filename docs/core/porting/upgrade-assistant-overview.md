@@ -3,6 +3,7 @@ title: Overview of the .NET Upgrade Assistant
 description: Introducing the .NET Upgrade Assistant tool that helps upgrade .NET or .NET Framework apps to the latest version of .NET.
 author: adegeo
 ms.date: 05/16/2023
+no-loc: ["appsettings.json", "App.config"]
 ---
 # Overview of the .NET Upgrade Assistant
 
@@ -163,7 +164,7 @@ Projects that target a Windows desktop technology, such as Windows Presentation 
 .NET Framework uses the _App.config_ file to load settings for your app, such as connection strings and log providers. Modern .NET uses the _appsettings.json_ file for app settings. The CLI version of the Upgrade Assistant handles converting _App.config_ files to _appsettings.json_, but the Visual Studio extension doesn't.
 
 > [!TIP]
-> If you don't want to use the _appsettings.json_ file, you can add the `System.Configuration.ConfigurationManager` NuGet package to your app and your code will compile and use the _app.config_ file.
+> If you don't want to use the _appsettings.json_ file, you can add the `System.Configuration.ConfigurationManager` NuGet package to your app and your code will compile and use the _App.config_ file.
 
 Even though _appsettings.json_ is the modern way to store and retrieve settings and connection strings, your app still has code that uses the _App.config_ file. When your app was migrated, the `System.Configuration.ConfigurationManager` NuGet package was added to the project so that your code using the _App.config_ file continues to compile.
 
@@ -180,13 +181,13 @@ Perform the following steps to use the _appsettings.json_ file as your configura
     > [!CAUTION]
     > Make sure that all the settings have migrated correctly.
 
-01. Create a file named `appsettings.json`
+01. Create a file named _appsettings.json_.
 
-    If your upgrade generated an _appsettings.json_ file, skip this step.
+    Skip this step if your upgrade generated an _appsettings.json_ file.
 
     01. Right-click on the project file in the **Solution Explorer** window and select **Add** > **New Item...**.
-    01. In the search box, enter `json`**.
-    01. Select the **JavaScript JSON Configuration File** template and set the **Name** to `appsettings.json`.
+    01. In the search box, enter `json`.
+    01. Select the **JavaScript JSON Configuration File** template and set the **Name** to _appsettings.json_.
     01. Press **Add** to add the new file to the project.
 
 01. Set the _appsettings.json_ file to copy to the output directory.

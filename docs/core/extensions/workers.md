@@ -5,7 +5,7 @@ author: IEvangelist
 ms.author: dapine
 ms.date: 05/09/2023
 ms.topic: overview
-zone_pivot_groups: dotnet-version-6-7
+zone_pivot_groups: dotnet-version
 ---
 
 # Worker Services in .NET
@@ -154,7 +154,7 @@ In the preceding project file, the `<DockerDefaultTargetOS>` element specifies `
 For more information on Docker with .NET, see [Tutorial: Containerize a .NET app](../docker/build-container.md). For more information on deploying to Azure, see [Tutorial: Deploy a Worker Service to Azure](cloud-service.md).
 
 > [!IMPORTANT]
-> If you want to leverage _User Secrets_ with the Worker template, you'd have to explicitly reference the `Microsoft.Extensions.Configuration.UserSecrets` NuGet package.
+> If you want to leverage *User Secrets* with the Worker template, you'd have to explicitly reference the `Microsoft.Extensions.Configuration.UserSecrets` NuGet package.
 
 ## Hosted Service extensibility
 

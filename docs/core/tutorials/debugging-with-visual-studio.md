@@ -2,7 +2,7 @@
 title: Debug a .NET console application using Visual Studio
 description: Learn how to debug a .NET console app using Visual Studio.
 ms.date: 11/30/2022
-zone_pivot_groups: dotnet-version-6-7
+zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"

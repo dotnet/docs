@@ -1,71 +1,169 @@
 ---
 title: Overview of the .NET Upgrade Assistant
-description: Introducing the .NET Upgrade Assistant tool that helps migrate from .NET Framework and upgrades your projects to .NET 6.
+description: Introducing the .NET Upgrade Assistant tool that helps migrate .NET or .NET Framework apps to the latest version of .NET.
 author: adegeo
-ms.date: 08/02/2022
+ms.date: 05/16/2023
 ---
 # Overview of the .NET Upgrade Assistant
 
-You might have apps that currently run on the .NET Framework that you're interested in porting to .NET 6. The .NET Upgrade Assistant tool can assist with this process. This article provides:
+New versions of .NET are released throughout the year, with a major release once a year. The .NET Upgrade Assistant helps you upgrade apps from previous versions of .NET and .NET Framework to the latest version.
 
-- An overview of the .NET Upgrade Assistant.
-- How to install the .NET Upgrade Assistant.
+The .NET Upgrade Assistant is a Visual Studio extension and command-line tool that's designed to assist with migrating apps to the latest version of .NET.
 
-## What is the .NET Upgrade Assistant
+Issues related to the .NET Upgrade Assistant can be filed in the [.NET Upgrade Assistant GitHub Repository](https://github.com/dotnet/upgrade-assistant).
 
-The .NET Upgrade Assistant is a command-line tool that can be run on different kinds of .NET Framework apps. It's designed to assist with upgrading .NET Framework apps to .NET 6. After running the tool, **in most cases the app will require additional effort to complete the migration**. The tool includes the installation of analyzers that can assist with completing the migration.
+## Install the Upgrade Assistant
 
-Currently the tool supports the following .NET Framework app types:
+The .NET Upgrade Assistant can be installed as a Visual Studio extension or as a .NET command-line tool. For more information, see [Install the .NET Upgrade Assistant](upgrade-assistant-install.md).
 
-- .NET Framework Windows Forms apps
-- .NET Framework WPF apps
-- .NET Framework server-side WCF apps
-- .NET Native UWP apps
-- .NET Framework ASP.NET MVC apps
-- .NET Framework console apps
-- .NET Framework class libraries
+## Supported languages
 
-The tool also supports projects that use these code languages:
+The following code languages are supported:
 
 - C#
-- Visual Basic.NET
+- Visual Basic
 
-The .NET Upgrade Assistant is currently prerelease and is receiving frequent updates. If you discover problems using the tool, report them in the tool's [GitHub repository](https://github.com/dotnet/upgrade-assistant).
+## Supported projects
 
-## Install the .NET Upgrade Assistant
+The following types of projects are supported:
 
-This section describes how to install the .NET Upgrade Assistant. You can also follow [a step-by-step guided tutorial](https://dotnet.microsoft.com/platform/upgrade-assistant/tutorial/intro).
+- ASP.NET
+- Azure Functions
+- Windows Presentation Foundation
+- Windows Forms
+- Class libraries
+- Console apps
+- .NET Native UWP
+- Xamarin Forms
+- .NET MAUI
 
-### Prerequisites
+## Upgrade paths
 
-- Windows Operating System
-- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
-- [Visual Studio 2022 version 17.0 or later](https://visualstudio.microsoft.com/downloads/)
+The following upgrade paths are supported:
 
-### Installation steps
+- .NET Framework to .NET
+- .NET Core to .NET
+- Previous .NET version to the latest .NET version
+- Azure Functions v1-v3 to v4 isolated
+- Xamarin Forms to .NET MAUI
+  - XAML file transformations only support upgrading namespaces. For more comprehensive transformations, use Visual Studio 2022 version 17.6 or later.
 
-The .NET Upgrade Assistant is a .NET tool that is installed globally with the following command:
+## Upgrade a project
 
-```dotnetcli
-dotnet tool install -g upgrade-assistant
-```
+After the Update Assistant is installed, you can upgrade a project.
 
-Similarly, because the .NET Upgrade Assistant is installed as a .NET tool, it can be easily updated by running:
+### Upgrade with the Visual Studio extension
 
-```dotnetcli
-dotnet tool update -g upgrade-assistant
-```
+After you've [installed the .NET Upgrade Assistant extension](upgrade-assistant-install.md#install-the-visual-studio-extension), right-click on the project in the **Solution Explorer** window, and select **Upgrade**.
+
+:::image type="content" source="media/upgrade-assistant-overview/visual-studio-upgrade.png" alt-text="The .NET Upgrade Assistant's Upgrade menu item in Visual Studio.":::
 
 > [!IMPORTANT]
-> Installing this tool may fail if you've configured additional NuGet feed sources. Use the `--ignore-failed-sources` parameter to treat those failures as warnings instead of errors:
->
-> ```dotnetcli
-> dotnet tool install -g --ignore-failed-sources upgrade-assistant
-> ```
+> At this time, upgrading solutions isn't supported.
 
-## See also
+A tab is opened which provides, based on your project type, different styles of upgrade:
 
-- [Upgrade an ASP.NET MVC App to .NET 6](upgrade-assistant-aspnetmvc.md)
-- [Upgrade a WPF App to .NET 6](upgrade-assistant-wpf-framework.md)
-- [Upgrade a Windows Forms App to .NET 6](upgrade-assistant-winforms-framework.md)
-- [.NET Upgrade Assistant GitHub Repository](https://github.com/dotnet/upgrade-assistant)
+- In-place project upgrade
+
+  This option upgrades your project without making a copy.
+
+- Side-by-side project upgrade
+
+  Copies your project and upgrades the copy, leaving your original project alone.
+
+- Side-by-side incremental
+
+  A good choice for complicated web apps. Upgrading from ASP.NET to ASP.NET Core requires quite a bit of work and at times manual refactoring. This mode puts a .NET project next to your existing .NET Framework project, and routes endpoints that are implemented in the .NET project, while all other calls are sent to .NET Framework application.
+
+  This mode lets you slowly upgrade your ASP.NET or Library app piece-by-piece.
+
+Once your app has been upgraded, a status screen is displayed which shows all of the artifacts related to your project that were associated with the upgrade. Each upgrade artifact can be expanded to read more information about the status. The following list describes the status icons:
+
+- **Filled green checkmark**: The artifact was upgraded and completed successfully.
+- **Unfilled green checkmark**: The tool didn't find anything about the artifact to upgrade.
+- **Yellow warning sign**: The artifact was upgraded, but there's important information you should consider.
+- **Red _X_**: The artifact was to be upgraded, but the upgrade failed.
+
+:::image type="content" source="media/upgrade-assistant-overview/visual-studio-upgrade-results.png" alt-text="The .NET Upgrade Assistant's Upgrade results tab in Visual Studio.":::
+
+### Upgrade with the CLI tool
+
+After you've [installed the .NET Upgrade Assistant CLI tool](upgrade-assistant-install.md#install-the-visual-studio-extension#install-the-net-global-tool), open a terminal window and navigate to the directory that contains the project or solution you want to upgrade.
+
+## .NET Framework modernization
+
+When migrating a .NET Framework app, you'll most likely have some incompatibilities. For example, .NET doesn't provide APIs to access the Windows Registry like .NET Framework did. Support for the Windows Registry is provided by the `Microsoft.Win32.Registry` NuGet package.
+
+Your app can also be modernized to take advantage of new APIs and libraries. The following sections describe a few of these modernization points.
+
+### Web browser control
+
+Projects that target a Windows desktop technology, such as Windows Presentation Foundation or Windows Forms, may include a web browser control. The web browser control provided was most likely designed prior to HTML5 and other modern web technologies and is considered obsolete. Microsoft publishes the [`Microsoft.Web.WebView2` NuGet package](https://www.nuget.org/packages/Microsoft.Web.WebView2) as modern web browser control replacement.
+
+### appsettings.json
+
+.NET Framework uses the _App.config_ file to load settings for your app, such as connection strings and log providers. Modern .NET uses the _appsettings.json_ file for app settings. The CLI version of the Upgrade Assistant handles converting _App.config_ files to _appsettings.json_, but the Visual Studio extension doesn't.
+
+> [!TIP]
+> If you don't want to use the _appsettings.json_ file, you can add the `System.Configuration.ConfigurationManager` NuGet package to your app and your code will compile and use the _app.config_ file.
+
+Even though _appsettings.json_ is the modern way to store and retrieve settings and connection strings, your app still has code that uses the _App.config_ file. When your app was migrated, the `System.Configuration.ConfigurationManager` NuGet package was added to the project so that your code using the _App.config_ file continues to compile.
+
+As libraries upgrade to .NET, they modernize by supporting _appsettings.json_ instead of _App.config_. For example, logging providers in .NET Framework that have been upgraded for .NET 6+ no longer use _App.config_ for settings. It's good for you to follow their direction and also move away from using _App.config_.
+
+Support for _appsettings.json_ is provided by the `Microsoft.Extensions.Configuration` NuGet package.
+
+Perform the following steps to use the _appsettings.json_ file as your configuration provider:
+
+01. Remove the `System.Configuration.ConfigurationManager` NuGet package or library if it's referenced by your upgraded app.
+01. Add the `Microsoft.Extensions.Configuration.Json` NuGet package.
+01. Delete the _App.config_ file from the project.
+
+    > [!CAUTION]
+    > Make sure that all the settings have migrated correctly.
+
+01. Create a file named `appsettings.json`
+
+    If your upgrade generated an _appsettings.json_ file, skip this step.
+
+    01. Right-click on the project file in the **Solution Explorer** window and select **Add** > **New Item...**.
+    01. In the search box, enter `json`**.
+    01. Select the **JavaScript JSON Configuration File** template and set the **Name** to `appsettings.json`.
+    01. Press **Add** to add the new file to the project.
+
+01. Set the _appsettings.json_ file to copy to the output directory.
+
+    In the **Solution Explorer** window, find the _appsettings.json_ file and set the following **Properties**:
+
+    - **Build Action**: Content
+    - **Copy to Output Directory**: Copy always
+
+01. In the startup code of your app, you need to load the settings file.
+
+    The startup code for your app varies based on your project type. For example, a WPF app uses the `App.xaml.cs` file for global setup and a Windows Forms app uses the `Program.Main` method for startup. Regardless, you need to do two things at startup:
+
+    - Create a `static` (`Shared` in Visual Basic) member that can be accessed from anywhere in your app.
+    - During startup, assign an instance to that member.
+
+    The following example creates a member named `Config`, assigns it an instance in the `Main` method, and loads a connection string:
+
+    ```csharp
+    using Microsoft.Extensions.Configuration;
+    
+    internal class Program
+    {
+        internal static IConfiguration Config { get; private set; }
+    
+        private static void Main(string[] args)
+        {
+            Config = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json")
+                .Build();
+    
+            // Use the config file to get a connection string
+            string? myConnectionString = Config.GetConnectionString("database");
+    
+            // Run the rest of your app
+        }
+    }
+    ```

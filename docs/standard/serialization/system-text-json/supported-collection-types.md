@@ -4,7 +4,6 @@ description: "Learn which collection types are supported for serialization by th
 ms.date: 02/01/2021
 no-loc: [System.Text.Json]
 ms.topic: reference
-zone_pivot_groups: dotnet-version
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
@@ -50,8 +49,6 @@ The following sections are organized by namespace and show which types are suppo
 | <xref:System.Collections.Stack>           | ✔️           | ✔️              |
 
 ## System.Collections.Generic namespace
-
-::: zone pivot="dotnet-7-0,dotnet-6-0"
 
 | Type                                                      | Serialization | Deserialization |
 |-----------------------------------------------------------|---------------|-----------------|
@@ -105,8 +102,6 @@ The <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A> method supports `
 :::code language="csharp" source="snippets/system-text-json-supported-collection-types/csharp/IAsyncEnumerableDeserializeNonStreaming.cs" highlight="16":::
 
 In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in memory before returning the deserialized object. This behavior is necessary because the deserializer needs to read the entire JSON payload before returning a result.
-
-::: zone-end
 
 ## System.Collections.Immutable namespace
 

@@ -22,8 +22,6 @@ The `System.Text.Json` library parses and writes <xref:System.DateTime> and <xre
 
 ## Support for the ISO 8601-1:2019 format
 
-::: zone pivot="dotnet-6-0,dotnet-7-0"
-
 The <xref:System.Text.Json.JsonSerializer>, <xref:System.Text.Json.Utf8JsonReader>, <xref:System.Text.Json.Utf8JsonWriter>,
 and <xref:System.Text.Json.JsonElement> types parse and write <xref:System.DateTime> and <xref:System.DateTimeOffset>
 text representations according to the extended profile of the ISO 8601-1:2019 format. For example, `2019-07-26T16:59:57-05:00`.
@@ -63,7 +61,6 @@ Attempting to read non-compliant formats with <xref:System.Text.Json.Utf8JsonRea
 
 :::code language="csharp" source="snippets/system-text-json-support/csharp/reading-with-utf8jsonreader-error/Program.cs":::
 
-::: zone-end
 ::: zone pivot="dotnet-7-0"
 
 ## Serialize DateOnly and TimeOnly properties

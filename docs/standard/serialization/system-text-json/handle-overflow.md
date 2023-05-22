@@ -87,15 +87,11 @@ The following example shows a round trip from JSON to a deserialized object and 
 
 ## Deserialize into JsonElement or JsonNode
 
-::: zone pivot="dotnet-7-0,dotnet-6-0"
-
 If you just want to be flexible about what JSON to accept for a particular property, an alternative is to deserialize into <xref:System.Text.Json.JsonElement> or <xref:System.Text.Json.Nodes.JsonNode>. Any valid JSON property can be deserialized into `JsonElement` or `JsonNode`. Choose `JsonElement` to create an immutable object or `JsonNode` to create a mutable object.
 
 The following example shows a round trip from JSON and back to JSON for a class that includes properties of type `JsonElement` and `JsonNode`.
 
 :::code language="csharp" source="snippets/system-text-json-how-to-6-0/csharp/RoundtripJsonElementAndNode.cs" highlight="11-12":::
-
-:::zone-end
 
 ## See also
 

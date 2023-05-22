@@ -259,8 +259,6 @@ The `Newtonsoft.Json` `[JsonConstructor]` attribute lets you specify which const
 * The `NullValueHandling` and `DefaultValueHandling` settings on `JsonSerializerSettings` let you specify that all null-value or default-value properties should be ignored.
 * The `NullValueHandling` and `DefaultValueHandling` settings on the `[JsonProperty]` attribute let you specify individual properties that should be ignored when set to null or the default value.
 
-::: zone pivot="dotnet-7-0,dotnet-6-0"
-
 <xref:System.Text.Json?displayProperty=fullName> provides the following ways to ignore properties or fields while serializing:
 
 * The [[JsonIgnore]](ignore-properties.md#ignore-individual-properties) attribute on a property causes the property to be omitted from the JSON during serialization.
@@ -269,8 +267,6 @@ The `Newtonsoft.Json` `[JsonConstructor]` attribute lets you specify which const
 * The `DefaultIgnoreCondition` global option lets you [ignore all value type properties that have default values](ignore-properties.md#ignore-all-default-value-properties), or [ignore all reference type properties that have null values](ignore-properties.md#ignore-all-null-value-properties).
 
 In addition, in .NET 7 and later versions, you can customize the JSON contract to ignore properties based on arbitrary criteria. For more information, see [Custom contracts](custom-contracts.md).
-
-::: zone-end
 
 ::: zone pivot="dotnet-6-0"
 
@@ -487,8 +483,6 @@ For more information, see [DateTime and DateTimeOffset support in System.Text.Js
 * OnSerializing (when beginning to serialize an object)
 * OnSerialized (when finished serializing an object)
 
-::: zone pivot="dotnet-7-0,dotnet-6-0"
-
 System.Text.Json exposes the same notifications during serialization and deserialization. To use them, implement one or more of the following interfaces from the <xref:System.Text.Json.Serialization> namespace:
 
 * <xref:System.Text.Json.Serialization.IJsonOnDeserializing>
@@ -501,8 +495,6 @@ Here's an example that checks for a null property and writes messages at start a
 :::code language="csharp" source="snippets/system-text-json-how-to-6-0/csharp/Callbacks.cs":::
 
 The `OnDeserializing` code doesn't have access to the new POCO instance. To manipulate the new POCO instance at the start of deserialization, put that code in the POCO constructor.
-
-::: zone-end
 
 ### Non-public property setters and getters
 
@@ -623,9 +615,7 @@ The decision to exclude `TypeNameHandling.All`-equivalent functionality from `Sy
 
 The `JsonDocument` DOM doesn't support querying by using [JSON Path](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm).
 
-::: zone pivot="dotnet-7-0,dotnet-6-0"
 In a <xref:System.Text.Json.Nodes.JsonNode> DOM, each `JsonNode` instance has a `GetPath` method that returns a path to that node. But there is no built-in API to handle queries based on JSON Path query strings.
-::: zone-end
 
 For more information, see the [dotnet/runtime #31068 GitHub issue](https://github.com/dotnet/runtime/issues/31068).
 

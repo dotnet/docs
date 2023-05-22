@@ -15,7 +15,7 @@
         catch (TaskCanceledException ex) when (cts.IsCancellationRequested)
         {
             // When the token has been canceled, it is not a timeout.
-            WriteLine($"Canceled: {ex.Message}");
+            Console.WriteLine($"Canceled: {ex.Message}");
         }
         // </cancellation>
     }

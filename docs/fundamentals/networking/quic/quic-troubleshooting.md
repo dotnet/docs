@@ -57,7 +57,7 @@ As stated above, MsQuic behavior here is intentional. However, this particular p
 
 This a Windows specific problem. Listener throws `QuicException` with `QUIC_STATUS_ADDRESS_IN_USE` error despite no other process running on particular address and port. The error is caused by port exclusion range defined for the same port as the listener is trying to listen on. To check for the exclusion ranges run:
 ```batch
-netsh int ip show excludedportrange protocol=udp
+netsh.exe int ip show excludedportrange protocol=udp
 ```
 
 Getting failure for attempt to bind on a port that is from excluded range is expected behavior. For that reason, there are no immediate plans to fix this. More details can be found in [dotnet/runtime#71518](https://github.com/dotnet/runtime/issues/71518).

@@ -13,7 +13,7 @@
         }
         catch (TaskCanceledException ex) when (ex.InnerException is TimeoutException tex)
         {
-            WriteLine($"Timed out: {ex.Message}, {tex.Message}");
+            Console.WriteLine($"Timed out: {ex.Message}, {tex.Message}");
         }
         // </innertimeout>
     }

@@ -14,7 +14,7 @@ The `System.Net.Quic` library is based on the open source QUIC implementation [`
 If a listener is running but never receives data, it might be caused by other process listening on the same port. To verify which process is using which port run:
 
 ```bash
-$ sudo ss -tulpw
+sudo ss -tulpw
 ```
 
 This behavior is by design as MsQuic uses `SO_REUSEPORT` to achieve better performance. For more info see [`ListenerStart`](https://github.com/microsoft/msquic/blob/main/docs/api/ListenerStart.md) documentation and the original issue [dotnet/runtime#59382](https://github.com/dotnet/runtime/issues/59382).

@@ -640,6 +640,10 @@ items:
     items:
     - name: Overview
       href: ../core/diagnostics/index.md
+    - name: Logging and tracing
+      href: ../core/diagnostics/logging-tracing.md
+    - name: ILogger logging
+      href: ../core/extensions/logging.md  
     - name: Managed debuggers
       href: ../core/diagnostics/managed-debuggers.md
     - name: Diagnostic port
@@ -653,11 +657,11 @@ items:
         href: ../core/diagnostics/debug-linux-dumps.md
       - name: SOS debugger extension
         href: ../core/diagnostics/sos-debugging-extension.md
-    - name: Logging and tracing
+    - name: Performance tracing
       items:
       - name: Overview
-        displayName: logging tracing
-        href: ../core/diagnostics/logging-tracing.md
+        displayName: Performance tracing Overview
+        href: ../core/diagnostics/performance-tracing.md
       - name: Well-known event providers
         href: ../core/diagnostics/well-known-event-providers.md
       - name: Event Source

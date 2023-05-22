@@ -31,7 +31,7 @@ What happens is that listener always binds to dual-mode wildcard address, regard
 To avoid this error, make sure you're connecting to the same address for which the listener was started. For example, print the listening address for your listener:
 
 ```csharp
-await using var listener = QuicListener.ListenAsync(...);
+await using var listener = QuicListener.ListenAsync(new() /* appropriate options */);
 Console.WriteLine(listener.LocalEndPoint);
 ```
 

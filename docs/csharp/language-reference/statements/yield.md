@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # yield statement - provide the next element
 
-You use the `yield` statement in an [iterator](../../iterators.md) to provide the next value from a sequence when iterating the sequence. The `yield` statement has the two following forms:
+You use the `yield` statement in an [iterator](../../iterators.md) to provide the next value or signal the end of an iteration. The `yield` statement has the two following forms:
 
 - `yield return`: to provide the next value in iteration, as the following example shows:
 

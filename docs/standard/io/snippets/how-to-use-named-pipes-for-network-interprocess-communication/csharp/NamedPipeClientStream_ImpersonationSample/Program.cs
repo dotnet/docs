@@ -64,7 +64,7 @@ public class PipeClient
         currentProcessName = currentProcessName.Trim('"', ' ');
 
         currentProcessName = Path.ChangeExtension(currentProcessName, ".exe");
-        Process[] plist = new Process[numClients];
+        Process?[] plist = new Process?[numClients];
 
         Console.WriteLine("Spawning client processes...\n");
 
@@ -89,9 +89,9 @@ public class PipeClient
             {
                 if (plist[j] != null)
                 {
-                    if (plist[j].HasExited)
+                    if (plist[j]!.HasExited)
                     {
-                        Console.WriteLine($"Client process[{plist[j].Id}] has exited.");
+                        Console.WriteLine($"Client process[{plist[j]?.Id}] has exited.");
                         plist[j] = null;
                         i--;    // decrement the process watch count
                     }

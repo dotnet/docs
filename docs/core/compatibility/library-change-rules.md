@@ -57,11 +57,8 @@ Changes in this category modify the public surface area of a type. Most of the c
 
   This breaks all code that uses the renamed or removed type.
 
-  .NET's policy for obsoleting APIs is as follows:
-
-  > An API that shipped in a long-term support (LTS) release must be obsoleted in the subsequent LTS release before it can be removed. In rare cases, exceptions are made to obsolete an API before the subsequent LTS release based on business needs. All obsoletions are documented and communicated to customers.
-
-  For more information about .NET's support policy, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy).
+  > [!NOTE]
+  > In rare cases, .NET may remove a public API. For more information, see [API removal in .NET](api-removal.md). For information about .NET's support policy, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy).
 
 - ❌ **DISALLOWED: Changing the underlying type of an enumeration**
 

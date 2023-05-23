@@ -16,6 +16,9 @@ items:
           - name: Overview
             href: ../../core/porting/upgrade-assistant-overview.md
             displayName: upgrade assistant
+          - name: Install
+            href: ../../core/porting/upgrade-assistant-install.md
+            displayName: upgrade assistant
           - name: Windows Communication Foundation
             href: ../../core/porting/upgrade-assistant-wcf.md
           - name: Windows Presentation Foundation
@@ -24,8 +27,8 @@ items:
             href: ../../core/porting/upgrade-assistant-winforms-framework.md
           - name: Universal Windows Platform
             href: ../../core/porting/upgrade-assistant-uwp-framework.md
-          - name: ASP.NET Core
-            href: ../../core/porting/upgrade-assistant-aspnetmvc.md
+          - name: ASP.NET
+            href: /aspnet/core/migration/mvc
           - name: Telemetry
             href: ../../core/porting/upgrade-assistant-telemetry.md
       - name: Breaking changes

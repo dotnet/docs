@@ -369,9 +369,6 @@ The reference app uses [MediatR](https://github.com/jbogard/MediatR) to propagat
 - **Udi Dahan. Domain Events – Salvation** \
   <https://udidahan.com/2009/06/14/domain-events-salvation/>
 
-- **Jan Kronquist. Don't publish Domain Events, return them!** \
-  <https://blog.jayway.com/2013/06/20/dont-publish-domain-events-return-them/>
-
 - **Cesar de la Torre. Domain Events vs. Integration Events in DDD and microservices architectures** \
   <https://devblogs.microsoft.com/cesardelatorre/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/>
 

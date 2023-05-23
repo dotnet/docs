@@ -1961,7 +1961,7 @@ When these span multiple lines, use indentation and a new line to keep the inden
 
 ```fsharp
 // ✔️ OK
-type Foo () =
+type Foo() =
     let foo =
         fooBarBaz
         |> loremIpsumDolorSitAmet
@@ -1973,7 +1973,7 @@ type Foo () =
         |> theQuickBrownFoxJumpedOverTheLazyDog
 
 // ❌ Not OK - notice the "do" expression is indented one space less than the `let` expression
-type Foo () =
+type Foo() =
     let foo =
         fooBarBaz
         |> loremIpsumDolorSitAmet
@@ -2017,7 +2017,7 @@ When creating custom operations for [computation expressions](../language-refere
 
 ```fsharp
 // ✔️ OK
-type MathBuilder () =
+type MathBuilder() =
     member _.Yield _ = 0
 
     [<CustomOperation("addOne")>]
@@ -2400,6 +2400,30 @@ type MyClassDerived(y: string) =
         very long
         string example
         """)
+```
+
+#### Formating the primary constructor
+
+In default formatting conventions, no space is added between the type name and the parentheses for the primary constructor.
+
+```fsharp
+// ✔️ OK
+type MyClass() =
+    class
+    end
+
+type MyClassWithParams(x: int, y: int) =
+    class
+    end
+        
+// ❌ Not OK
+type MyClass () =
+    class
+    end
+
+type MyClassWithParams (x: int, y: int) =
+    class
+    end
 ```
 
 #### Multiple constructors

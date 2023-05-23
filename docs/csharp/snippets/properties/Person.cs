@@ -7,7 +7,7 @@ namespace VersionOne
     // <Snippet1>
     public class Person
     {
-        public string FirstName;
+        public string? FirstName;
 
         // Omitted for brevity.
     }
@@ -19,7 +19,7 @@ namespace VersionTwo
     // <Snippet2>
     public class Person
     {
-        public string FirstName { get; set; }
+        public string? FirstName { get; set; }
 
         // Omitted for brevity.
     }
@@ -42,12 +42,12 @@ namespace VersionFour
     // <Snippet4>
     public class Person
     {
-        public string FirstName
+        public string? FirstName
         {
             get { return _firstName; }
             set { _firstName = value; }
         }
-        private string _firstName;
+        private string? _firstName;
 
         // Omitted for brevity.
     }
@@ -58,12 +58,12 @@ namespace VersionFive
     // <Snippet5>
     public class Person
     {
-        public string FirstName
+        public string? FirstName
         {
             get => _firstName;
             set => _firstName = value;
         }
-        private string _firstName;
+        private string? _firstName;
 
         // Omitted for brevity.
     }
@@ -75,7 +75,7 @@ namespace VersionSix
     // <Snippet6>
     public class Person
     {
-        public string FirstName
+        public string? FirstName
         {
             get => _firstName;
             set
@@ -85,7 +85,7 @@ namespace VersionSix
                 _firstName = value;
             }
         }
-        private string _firstName;
+        private string? _firstName;
 
         // Omitted for brevity.
     }
@@ -96,12 +96,12 @@ namespace VersionSeven
     // <Snippet7>
     public class Person
     {
-        public string FirstName
+        public string? FirstName
         {
             get => _firstName;
             set => _firstName = (!string.IsNullOrWhiteSpace(value)) ? value : throw new ArgumentException("First name must not be blank");
         }
-        private string _firstName;
+        private string? _firstName;
 
         // Omitted for brevity.
     }
@@ -112,7 +112,7 @@ namespace VersionEight
     // <Snippet8>
     public class Person
     {
-        public string FirstName { get; private set; }
+        public string? FirstName { get; private set; }
 
         // Omitted for brevity.
     }
@@ -139,7 +139,7 @@ namespace VersionNinePoint1
         public Person() { }
         public Person(string firstName) => FirstName = firstName;
 
-        public string FirstName { get; init; }
+        public string? FirstName { get; init; }
 
         // Omitted for brevity.
     }
@@ -166,9 +166,9 @@ namespace VersionTen
     // <Snippet10>
     public class Person
     {
-        public string FirstName { get; set; }
+        public string? FirstName { get; set; }
 
-        public string LastName { get; set; }
+        public string? LastName { get; set; }
 
         public string FullName { get { return $"{FirstName} {LastName}"; } }
     }
@@ -179,9 +179,9 @@ namespace VersionEleven
     // <Snippet11>
     public class Person
     {
-        public string FirstName { get; set; }
+        public string? FirstName { get; set; }
 
-        public string LastName { get; set; }
+        public string? LastName { get; set; }
 
         public string FullName => $"{FirstName} {LastName}";
     }
@@ -192,11 +192,11 @@ namespace VersionTwelve
     // <Snippet12>
     public class Person
     {
-        public string FirstName { get; set; }
+        public string? FirstName { get; set; }
 
-        public string LastName { get; set; }
+        public string? LastName { get; set; }
 
-        private string _fullName;
+        private string? _fullName;
         public string FullName
         {
             get
@@ -214,8 +214,8 @@ namespace VersionThirteen
     // <Snippet13>
     public class Person
     {
-        private string _firstName;
-        public string FirstName
+        private string? _firstName;
+        public string? FirstName
         {
             get => _firstName;
             set
@@ -225,8 +225,8 @@ namespace VersionThirteen
             }
         }
 
-        private string _lastName;
-        public string LastName
+        private string? _lastName;
+        public string? LastName
         {
             get => _lastName;
             set
@@ -236,7 +236,7 @@ namespace VersionThirteen
             }
         }
 
-        private string _fullName;
+        private string? _fullName;
         public string FullName
         {
             get
@@ -254,9 +254,9 @@ namespace VersionFourteen
     // <Snippet14>
     public class Person
     {
-        public string FirstName { get; set; }
+        public string? FirstName { get; set; }
 
-        public string LastName { get; set; }
+        public string? LastName { get; set; }
 
         [field:NonSerialized]
         public int Id { get; set; }
@@ -270,7 +270,7 @@ namespace VersionFifteen
     // <Snippet15>
     public class Person : INotifyPropertyChanged
     {
-        public string FirstName
+        public string? FirstName
         {
             get => _firstName;
             set
@@ -285,9 +285,9 @@ namespace VersionFifteen
                 }
             }
         }
-        private string _firstName;
+        private string? _firstName;
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler? PropertyChanged;
     }
     // </Snippet15>
 }

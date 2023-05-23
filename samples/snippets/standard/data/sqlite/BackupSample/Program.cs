@@ -38,7 +38,7 @@ namespace BackupSample
                 FROM data
                 LIMIT 1
             ";
-            var value = (string)selectCommand.ExecuteScalar();
+            var value = (string?)selectCommand.ExecuteScalar();
             Console.WriteLine(value);
 
             // Clean up

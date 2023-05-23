@@ -3,7 +3,7 @@ title: Use the IHttpClientFactory
 description: Learn how to use the HttpClient and IHttpClientFactory implementations with dependency injection in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/13/2023
+ms.date: 05/19/2023
 ---
 
 # IHttpClientFactory with .NET
@@ -46,7 +46,7 @@ The best approach depends upon the app's requirements.
 
 To register the `IHttpClientFactory`, call `AddHttpClient`:
 
-:::code source="snippets/http/basic/Program.cs" range="1-13" highlight="10":::
+:::code source="snippets/http/basic/Program.cs" range="1-12" highlight="9":::
 
 Consuming services can require the `IHttpClientFactory` as a constructor parameter with [DI][di]. The following code uses `IHttpClientFactory` to create an `HttpClient` instance:
 
@@ -59,11 +59,11 @@ Using `IHttpClientFactory` like in the preceding example is a good way to refact
 Named clients are a good choice when:
 
 - The app requires many distinct uses of `HttpClient`.
-- Many `HttpClient` instances have different configuration.
+- Many `HttpClient` instances have different configurations.
 
-Configuration for a named `HttpClient` can be specified during registration in `ConfigureServices`:
+Configuration for a named `HttpClient` can be specified during registration on the `IServiceCollection`:
 
-:::code source="snippets/http/named/Program.cs" range="1-23" highlight="10-20":::
+:::code source="snippets/http/named/Program.cs" range="1-21" highlight="9-21":::
 
 In the preceding code, the client is configured with:
 
@@ -112,9 +112,9 @@ In the preceding code:
 
 API-specific methods can be created that expose `HttpClient` functionality. For example, the `GetUserTodosAsync` method encapsulates code to retrieve user-specific `Todo` objects.
 
-The following code calls <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> in `ConfigureServices` to register a typed client class:
+The following code calls <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> to register a typed client class:
 
-:::code source="snippets/http/typed/Program.cs" range="1-23" highlight="10-18":::
+:::code source="snippets/http/typed/Program.cs" range="1-17" highlight="9-17":::
 
 The typed client is registered as transient with DI. In the preceding code, `AddHttpClient` registers `TodoService` as a transient service. This registration uses a factory method to:
 
@@ -122,7 +122,10 @@ The typed client is registered as transient with DI. In the preceding code, `Add
 1. Create an instance of `TodoService`, passing in the instance of `HttpClient` to its constructor.
 
 > [!IMPORTANT]
-> Using typed clients in singleton services can be dangerous. For more information, see the [Using Typed clients in singleton services](#use-typed-clients-in-singleton-services) section.
+> Using typed clients in singleton services can be dangerous. For more information, see the [Avoid Typed clients in singleton services](#avoid-typed-clients-in-singleton-services) section.
+
+> [!NOTE]
+> When registering a typed client with the `AddHttpClient<TClient>` method, the `TClient` type must have a constructor that accepts an `HttpClient` parameter. Additionally, the `TClient` type shouldn't be registered with the DI container separately.
 
 ### Generated clients
 
@@ -143,7 +146,7 @@ The preceding C# interface:
 
 A typed client can be added, using Refit to generate the implementation:
 
-:::code source="snippets/http/generated/Program.cs" range="1-21" highlight="11-19":::
+:::code source="snippets/http/generated/Program.cs" range="1-18" highlight="10-18":::
 
 The defined interface can be consumed where necessary, with the implementation provided by DI and Refit.
 
@@ -156,7 +159,7 @@ In the preceding examples, all HTTP requests use the `GET` HTTP verb. `HttpClien
 - `DELETE`
 - `PATCH`
 
-For a complete list of supported HTTP verbs, see <xref:System.Net.Http.HttpMethod>.
+For a complete list of supported HTTP verbs, see <xref:System.Net.Http.HttpMethod>. For more information on making HTTP requests, see [Send a request using HttpClient](../../fundamentals/networking/http/httpclient.md).
 
 The following example shows how to make an HTTP `POST` request:
 
@@ -256,7 +259,7 @@ services.AddHttpClient(name)
     .SetHandlerLifetime(Timeout.InfiniteTimeSpan); // Disable rotation, as it is handled by PooledConnectionLifetime
 ```
 
-## Use typed clients in singleton services
+## Avoid typed clients in singleton services
 
 When using the _named client_ approach, `IHttpClientFactory` is injected into services, and `HttpClient` instances are created by calling <xref:System.Net.Http.IHttpClientFactory.CreateClient%2A> every time an `HttpClient` is needed.
 
@@ -278,12 +281,27 @@ If you need to use `HttpClient` instances in a singleton service, consider the f
 
 Users are strongly advised **not to cache scope-related information** (such as data from `HttpContext`) inside `HttpMessageHandler` instances and use scoped dependencies with caution to avoid leaking sensitive information.
 
+If you require access to an app DI scope from your message handler, for authentication as an example, you'd encapsulate scope-aware logic in a separate transient `DelegatingHandler`, and wrap it around an `HttpMessageHandler` instance from the `IHttpClientFactory` cache. To access the handler call <xref:System.Net.Http.IHttpMessageHandlerFactory.CreateHandler%2A?displayProperty=nameWithType> for any registered _named client_. In that case, you'd create an `HttpClient` instance yourself using the constructed handler.
+
+:::image type="content" source="media/httpclientfactory-scopes-workaround.png" alt-text="Diagram showing gaining access to app DI scopes via a separate transient message handler and IHttpMessageHandlerFactory":::
+
+The following example shows creating an `HttpClient` with a scope-aware `DelegatingHandler`:
+
+:::code source="snippets/http/scopeworkaround/ScopeAwareHttpClientFactory.cs" id="CreateClient":::
+
+A further workaround can follow with an extension method for registering a scope-aware `DelegatingHandler` and overriding default `IHttpClientFactory` registration by a transient service with access to the current app scope:
+
+:::code source="snippets/http/scopeworkaround/ScopeAwareHttpClientFactory.cs" id="AddScopeAwareHttpHandler":::
+
+For more information, see the [full example](https://github.com/dotnet/docs/tree/main/docs/core/extensions/snippets/http/scopeworkaround).
+
 ## See also
 
 - [Dependency injection in .NET][di]
 - [Logging in .NET][logging]
 - [Configuration in .NET][config]
 - <xref:System.Net.Http.IHttpClientFactory>
+- <xref:System.Net.Http.IHttpMessageHandlerFactory>
 - <xref:System.Net.Http.HttpClient>
 - [Make HTTP requests with the HttpClient][httpclient]
 - [Implement HTTP retry with exponential backoff][http-retry]

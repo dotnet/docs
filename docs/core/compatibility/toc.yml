@@ -8,16 +8,26 @@ items:
     items:
     - name: Overview
       href: 8.0.md
+    - name: ASP.NET Core
+      items:
+      - name: ConcurrencyLimiterMiddleware is obsolete
+        href: aspnet-core/8.0/concurrencylimitermiddleware-obsolete.md
+      - name: Custom converters for serialization removed
+        href: aspnet-core/8.0/problemdetails-custom-converters.md
     - name: Core .NET libraries
       items:
       - name: Activity operation name when null
         href: core-libraries/8.0/activity-operation-name.md
       - name: AnonymousPipeServerStream.Dispose behavior
         href: core-libraries/8.0/anonymouspipeserverstream-dispose.md
+      - name: API obsoletions with custom diagnostic IDs
+        href: core-libraries/8.0/obsolete-apis-with-custom-diagnostics.md
       - name: Backslash mapping in Unix file paths
         href: core-libraries/8.0/file-path-backslash.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
+      - name: GC.GetGeneration might return Int32.MaxValue
+        href: core-libraries/8.0/getgeneration-return-value.md
       - name: GetFolderPath behavior on Unix
         href: core-libraries/8.0/getfolderpath-unix.md
       - name: ITypeDescriptorContext nullable annotations
@@ -30,6 +40,10 @@ items:
         href: cryptography/8.0/aesgcm-auth-tag-size.md
       - name: RSA.EncryptValue and RSA.DecryptValue are obsolete
         href: cryptography/8.0/rsa-encrypt-decrypt-value-obsolete.md
+    - name: Deployment
+      items:
+      - name: StripSymbols defaults to true
+        href: deployment/8.0/stripsymbols-default.md
     - name: Extensions
       items:
       - name: ActivatorUtilities.CreateInstance behaves consistently
@@ -42,6 +56,8 @@ items:
         href: extensions/8.0/hostapplicationbuilder-ctor.md
     - name: Globalization
       items:
+      - name: Date and time converters honor culture argument
+        href: globalization/8.0/typeconverter-cultureinfo.md
       - name: TwoDigitYearMax default is 2049
         href: globalization/8.0/twodigityearmax-default.md
     - name: Reflection
@@ -58,6 +74,10 @@ items:
         href: sdk/8.0/dotnet-pack-config.md
       - name: "'dotnet publish' uses Release configuration"
         href: sdk/8.0/dotnet-publish-config.md
+    - name: Serialization
+      items:
+      - name: BinaryFormatter disabled for most projects
+        href: serialization/8.0/binaryformatter-disabled.md
     - name: Windows Forms
       items:
       - name: Anchor layout changes
@@ -118,8 +138,6 @@ items:
         href: core-libraries/7.0/obsolete-apis-with-default-diagnostic.md
       - name: API obsoletions with non-default diagnostic IDs
         href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
-      - name: BinaryFormatter serialization APIs produce compiler errors
-        href: core-libraries/7.0/binaryformatter-apis-produce-errors.md
       - name: BrotliStream no longer allows undefined CompressionLevel values
         href: core-libraries/7.0/brotlistream-ctor.md
       - name: C++/CLI projects in Visual Studio
@@ -140,8 +158,8 @@ items:
         href: core-libraries/7.0/max-precision-numeric-format-strings.md
       - name: Reflection invoke API exceptions
         href: core-libraries/7.0/reflection-invoke-exceptions.md
-      - name: SerializationFormat.Binary is obsolete
-        href: core-libraries/7.0/serializationformat-binary.md
+      - name: System.Drawing.Common config switch removed
+        href: core-libraries/7.0/system-drawing.md
       - name: System.Runtime.CompilerServices.Unsafe NuGet package
         href: core-libraries/7.0/unsafe-package.md
       - name: Time fields on symbolic links
@@ -224,6 +242,10 @@ items:
         href: sdk/7.0/solution-level-output-no-longer-valid.md
     - name: Serialization
       items:
+      - name: BinaryFormatter serialization APIs produce compiler errors
+        href: serialization/7.0/binaryformatter-apis-produce-errors.md
+      - name: SerializationFormat.Binary is obsolete
+        href: serialization/7.0/serializationformat-binary.md
       - name: DataContractSerializer retains sign when deserializing -0
         href: serialization/7.0/datacontractserializer-negative-sign.md
       - name: Deserialize Version type with leading or trailing whitespace
@@ -475,7 +497,7 @@ items:
       - name: AzureAD.UI and AzureADB2C.UI APIs obsolete
         href: aspnet-core/5.0/authentication-aad-packages-obsolete.md
       - name: BinaryFormatter serialization methods are obsolete
-        href: core-libraries/5.0/binaryformatter-serialization-obsolete.md
+        href: serialization/5.0/binaryformatter-serialization-obsolete.md
       - name: Resource in endpoint routing is HttpContext
         href: aspnet-core/5.0/authorization-resource-in-endpoint-routing.md
       - name: Microsoft-prefixed Azure integration packages removed
@@ -564,8 +586,6 @@ items:
       items:
       - name: Assembly-related API changes for single-file publishing
         href: core-libraries/5.0/assembly-api-behavior-changes-for-single-file-publish.md
-      - name: BinaryFormatter serialization methods are obsolete
-        href: core-libraries/5.0/binaryformatter-serialization-obsolete.md
       - name: Code access security APIs are obsolete
         href: core-libraries/5.0/code-access-security-apis-obsolete.md
       - name: CreateCounterSetInstance throws InvalidOperationException
@@ -690,6 +710,8 @@ items:
         href: core-libraries/5.0/utf-7-code-paths-obsolete.md
     - name: Serialization
       items:
+      - name: BinaryFormatter serialization methods are obsolete
+        href: serialization/5.0/binaryformatter-serialization-obsolete.md
       - name: BinaryFormatter.Deserialize rewraps exceptions
         href: serialization/5.0/binaryformatter-deserialize-rewraps-exceptions.md
       - name: JsonSerializer.Deserialize requires single-character string
@@ -740,6 +762,12 @@ items:
   items:
   - name: ASP.NET Core
     items:
+    - name: .NET 8
+      items:
+      - name: ConcurrencyLimiterMiddleware is obsolete
+        href: aspnet-core/8.0/concurrencylimitermiddleware-obsolete.md
+      - name: Custom converters for serialization removed
+        href: aspnet-core/8.0/problemdetails-custom-converters.md
     - name: .NET 7
       items:
       - name: API controller actions try to infer parameters from DI
@@ -831,7 +859,7 @@ items:
       - name: AzureAD.UI and AzureADB2C.UI APIs obsolete
         href: aspnet-core/5.0/authentication-aad-packages-obsolete.md
       - name: BinaryFormatter serialization methods are obsolete
-        href: core-libraries/5.0/binaryformatter-serialization-obsolete.md
+        href: serialization/5.0/binaryformatter-serialization-obsolete.md
       - name: Resource in endpoint routing is HttpContext
         href: aspnet-core/5.0/authorization-resource-in-endpoint-routing.md
       - name: Microsoft-prefixed Azure integration packages removed
@@ -942,10 +970,14 @@ items:
         href: core-libraries/8.0/activity-operation-name.md
       - name: AnonymousPipeServerStream.Dispose behavior
         href: core-libraries/8.0/anonymouspipeserverstream-dispose.md
+      - name: API obsoletions with custom diagnostic IDs
+        href: core-libraries/8.0/obsolete-apis-with-custom-diagnostics.md
       - name: Backslash mapping in Unix file paths
         href: core-libraries/8.0/file-path-backslash.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
+      - name: GC.GetGeneration might return Int32.MaxValue
+        href: core-libraries/8.0/getgeneration-return-value.md
       - name: GetFolderPath behavior on Unix
         href: core-libraries/8.0/getfolderpath-unix.md
       - name: ITypeDescriptorContext nullable annotations
@@ -958,8 +990,6 @@ items:
         href: core-libraries/7.0/obsolete-apis-with-default-diagnostic.md
       - name: API obsoletions with non-default diagnostic IDs
         href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
-      - name: BinaryFormatter serialization APIs produce compiler errors
-        href: core-libraries/7.0/binaryformatter-apis-produce-errors.md
       - name: BrotliStream no longer allows undefined CompressionLevel values
         href: core-libraries/7.0/brotlistream-ctor.md
       - name: C++/CLI projects in Visual Studio
@@ -980,8 +1010,8 @@ items:
         href: core-libraries/7.0/max-precision-numeric-format-strings.md
       - name: Reflection invoke API exceptions
         href: core-libraries/7.0/reflection-invoke-exceptions.md
-      - name: SerializationFormat.Binary is obsolete
-        href: core-libraries/7.0/serializationformat-binary.md
+      - name: System.Drawing.Common config switch removed
+        href: core-libraries/7.0/system-drawing.md
       - name: System.Runtime.CompilerServices.Unsafe NuGet package
         href: core-libraries/7.0/unsafe-package.md
       - name: Time fields on symbolic links
@@ -1044,8 +1074,6 @@ items:
       items:
       - name: Assembly-related API changes for single-file publishing
         href: core-libraries/5.0/assembly-api-behavior-changes-for-single-file-publish.md
-      - name: BinaryFormatter serialization methods are obsolete
-        href: core-libraries/5.0/binaryformatter-serialization-obsolete.md
       - name: Code access security APIs are obsolete
         href: core-libraries/5.0/code-access-security-apis-obsolete.md
       - name: CreateCounterSetInstance throws InvalidOperationException
@@ -1136,6 +1164,10 @@ items:
         href: cryptography.md
   - name: Deployment
     items:
+    - name: .NET 8
+      items:
+      - name: StripSymbols defaults to true
+        href: deployment/8.0/stripsymbols-default.md
     - name: .NET 7
       items:
       - name: All assemblies trimmed by default
@@ -1194,6 +1226,8 @@ items:
     items:
     - name: .NET 8
       items:
+      - name: Date and time converters honor culture argument
+        href: globalization/8.0/typeconverter-cultureinfo.md
       - name: TwoDigitYearMax default is 2049
         href: globalization/8.0/twodigityearmax-default.md
     - name: .NET 7
@@ -1382,8 +1416,16 @@ items:
         href: core-libraries/5.0/utf-7-code-paths-obsolete.md
   - name: Serialization
     items:
+    - name: .NET 8
+      items:
+      - name: BinaryFormatter disabled for most projects
+        href: serialization/8.0/binaryformatter-disabled.md
     - name: .NET 7
       items:
+      - name: BinaryFormatter serialization APIs produce compiler errors
+        href: serialization/7.0/binaryformatter-apis-produce-errors.md
+      - name: SerializationFormat.Binary is obsolete
+        href: serialization/7.0/serializationformat-binary.md
       - name: DataContractSerializer retains sign when deserializing -0
         href: serialization/7.0/datacontractserializer-negative-sign.md
       - name: Deserialize Version type with leading or trailing whitespace
@@ -1410,6 +1452,8 @@ items:
         href: serialization/6.0/jsonserializer-source-generator-overloads.md
     - name: .NET 5
       items:
+      - name: BinaryFormatter serialization methods are obsolete
+        href: serialization/5.0/binaryformatter-serialization-obsolete.md
       - name: BinaryFormatter.Deserialize rewraps exceptions
         href: serialization/5.0/binaryformatter-deserialize-rewraps-exceptions.md
       - name: JsonSerializer.Deserialize requires single-character string
@@ -1529,3 +1573,5 @@ items:
     href: categories.md
   - name: Rules for .NET library changes
     href: library-change-rules.md
+  - name: API removal
+    href: api-removal.md

@@ -134,6 +134,8 @@ The operator interfaces correspond to the various operators available to the C# 
 - They explicitly don't pair operations such as multiplication and division since that isn't correct for all types. For example, `Matrix4x4 * Matrix4x4` is valid, but `Matrix4x4 / Matrix4x4` isn't valid.
 - They typically allow the input and result types to differ to support scenarios such as dividing two integers to obtain a `double`, for example, `3 / 2 = 1.5`, or calculating the average of a set of integers.
 
+<!-- These produce false positives -->
+<!-- markdownlint-disable MD038 -->
 | Interface name                                     | Defined operators                        |
 |----------------------------------------------------|------------------------------------------|
 | <xref:System.Numerics.IAdditionOperators%603>      | `x + y`                                  |
@@ -149,6 +151,7 @@ The operator interfaces correspond to the various operators available to the C# 
 | <xref:System.Numerics.ISubtractionOperators%603>   | `x - y`                                  |
 | <xref:System.Numerics.IUnaryNegationOperators%602> | `-x`                                     |
 | <xref:System.Numerics.IUnaryPlusOperators%602>     | `+x`                                     |
+<!-- markdownlint-enable MD038 -->
 
 > [!NOTE]
 > Some of the interfaces define a checked operator in addition to a regular unchecked operator. Checked operators are called in checked contexts and allow a user-defined type to define overflow behavior. If you implement a checked operator, for example, <xref:System.Numerics.ISubtractionOperators%603.op_CheckedSubtraction(%600,%601)>, you must also implement the unchecked operator, for example, <xref:System.Numerics.ISubtractionOperators%603.op_Subtraction(%600,%601)>.

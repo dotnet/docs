@@ -100,21 +100,24 @@ static async Task Main()
         Console.WriteLine("\nENTER key pressed: cancelling downloads.\n");
         s_cts.Cancel();
     });
+    
+    Task sumPageSizesTask = SumPageSizesAsync();
 
-        Task finishedTask = await Task.WhenAny(new[] { cancelTask, sumPageSizesTask });
-        if (finishedTask == cancelTask)
+    Task finishedTask = await Task.WhenAny(new[] { cancelTask, sumPageSizesTask });
+    if (finishedTask == cancelTask)
+    {
+        // wait for the cancellation to take place:
+        try
         {
-            // wait for the cancellation to take place:
-            try
-            {
-                await sumPageSizesTask;
-                Console.WriteLine("Download task completed before cancel request was processed.");
-            }
-            catch (TaskCanceledException)
-            {
-                Console.WriteLine("Download task has been cancelled.");
-            }
+            await sumPageSizesTask;
+            Console.WriteLine("Download task completed before cancel request was processed.");
         }
+        catch (TaskCanceledException)
+        {
+            Console.WriteLine("Download task has been cancelled.");
+        }
+    }
+        
     Console.WriteLine("Application ending.");
 }
 ```

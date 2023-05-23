@@ -27,6 +27,4 @@ A database connection is another good candidate for being closed in a `finally` 
 ## See also
 
 - [using statement](../../language-reference/statements/using.md)
-- [try-catch](../../language-reference/keywords/try-catch.md)
-- [try-finally](../../language-reference/keywords/try-finally.md)
-- [try-catch-finally](../../language-reference/keywords/try-catch-finally.md)
+- [Exception-handling statements](../../language-reference/statements/exception-handling-statements.md)

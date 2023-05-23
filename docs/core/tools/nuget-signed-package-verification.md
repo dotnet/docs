@@ -10,7 +10,7 @@ You can [sign a NuGet package](/nuget/create-packages/sign-a-package) to enable 
 
 NuGet package signatures are based on X.509 certificates, and a prerequisite for signed-package verification is a certificate root store that is valid for both code signing and timestamping.
 
-Starting with .NET 7, NuGet uses certificate bundles included in the .NET SDK to verify signed packages where a suitable system root store is not available. These bundles are sourced from the [Microsoft Trusted Root Program](/security/trusted-root/program-requirements) and contain the same code signing and timestamping certificates as the root store on Windows.  These certificate bundles should contain all of the root certificates necessary to verify packages from [NuGet.org](https://nuget.org).
+Starting with .NET 6.0.4xx SDK, NuGet uses certificate bundles included in the .NET SDK to verify signed packages where a suitable system root store is not available. These bundles are sourced from the [Microsoft Trusted Root Program](/security/trusted-root/program-requirements) and contain the same code signing and timestamping certificates as the root store on Windows.  These certificate bundles should contain all of the root certificates necessary to verify packages from [NuGet.org](https://nuget.org).
 
 Some NuGet commands, such as `sign` and `verify`, always perform signed package verification.
 
@@ -28,7 +28,9 @@ NuGet uses the default root store on Windows, which already supports general-pur
 
 ## Linux
 
-Verification is disabled by default during package restore operations. To opt in, set the environment variable `DOTNET_NUGET_SIGNATURE_VERIFICATION` to `true`.
+Prior to .NET 8 Preview 4 SDK, verification is disabled by default during package restore operations. To opt in, set the environment variable `DOTNET_NUGET_SIGNATURE_VERIFICATION` to `true`.
+
+Starting with .NET 8 Preview 4 SDK, verification is enabled by default. To opt out, set the environment variable `DOTNET_NUGET_SIGNATURE_VERIFICATION` to `false`.
 
 For code signing certificate verification, NuGet will first probe for a certificate bundle at the following location:
 

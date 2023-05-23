@@ -929,16 +929,6 @@ items:
       items:
       - name: Statement categories
         href: language-reference/keywords/statement-keywords.md
-      - name: Exception Handling Statements
-        items:
-        - name: throw
-          href: language-reference/keywords/throw.md
-        - name: try-catch
-          href: language-reference/keywords/try-catch.md
-        - name: try-finally
-          href: language-reference/keywords/try-finally.md
-        - name: try-catch-finally
-          href: language-reference/keywords/try-catch-finally.md
     - name: Method Parameters
       items:
       - name: Passing parameters
@@ -1132,8 +1122,11 @@ items:
   - name: Statements
     items:
     - name: Declaration statements
-      displayName: var, ref
+      displayName: var, ref, const
       href: language-reference/statements/declarations.md
+    - name: Exception-handling statements
+      displayName: throw, try, catch, finally, when, error, fault
+      href: language-reference/statements/exception-handling-statements.md
     - name: Iteration statements
       displayName: for, foreach, do, while, loop
       href: language-reference/statements/iteration-statements.md
@@ -1303,8 +1296,6 @@ items:
     items:
     - name: C# 7.n features
       items:
-      - name: Async task types
-        href: ../../_csharplang/proposals/csharp-7.0/task-types.md
       - name: Readonly references
         href: ../../_csharplang/proposals/csharp-7.2/readonly-ref.md
       - name: Compile-time safety for ref-like types

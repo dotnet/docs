@@ -4,12 +4,13 @@ using System;
 using System.Xml;
 using System.Security.Cryptography;
 using System.Security.Cryptography.Xml;
+using System.Runtime.Versioning;
 
+[SupportedOSPlatform("windows")]
 class Program
 {
 	static void Main(string[] args)
 	{
-
 		// Create an XmlDocument object.
 		// <snippet4>
 		XmlDocument xmlDoc = new XmlDocument();

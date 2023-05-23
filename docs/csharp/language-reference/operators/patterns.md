@@ -14,7 +14,7 @@ helpviewer_keywords:
 ---
 # Pattern matching - the `is` and `switch` expressions, and operators `and`, `or` and `not` in patterns
 
-You use the [`is` expression](is.md), the [switch statement](../statements/selection-statements.md#the-switch-statement) and the [switch expression](switch-expression.md) to match an input expression against any number of characteristics. C# supports multiple patterns, including declaration, type, constant, relational, property, list, var, and discard. Patterns can be combined using boolean logic keywords `and`, `or`, and `not`.
+You use the [`is` expression](is.md), the [switch statement](../statements/selection-statements.md#the-switch-statement) and the [switch expression](switch-expression.md) to match an input expression against any number of characteristics. C# supports multiple patterns, including declaration, type, constant, relational, property, list, var, and discard. Patterns can be combined using Boolean logic keywords `and`, `or`, and `not`.
 
 The following C# expressions and statements support pattern matching:
 

@@ -8,8 +8,6 @@ ms.topic: reference
 zone_pivot_groups: dotnet-version
 ---
 
-:::zone pivot="dotnet-7-0,dotnet-6-0,dotnet-5-0,dotnet-core-3-1"
-
 # Trimming options
 
 The following MSBuild properties and items influence the behavior of [trimmed self-contained deployments](trim-self-contained.md). Some of the options mention `ILLink`, which is the name of the underlying tool that implements trimming. For more information about the underlying tool, see the [Trimmer documentation](https://github.com/dotnet/linker/tree/main/docs).
@@ -27,8 +25,6 @@ Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other option
 
 Place this setting in the project file to ensure that the setting applies during `dotnet build`, not just `dotnet publish`.
 
-:::zone-end
-
 :::zone pivot="dotnet-7-0"
 
 This setting enables trimming and will trim all assemblies by default. In .NET 6, only assemblies that opted-in
@@ -37,7 +33,7 @@ previous behavior by using `<TrimMode>partial</TrimMode>`.
 
 :::zone-end
 
-:::zone pivot="dotnet-6-0,dotnet-5-0"
+:::zone pivot="dotnet-6-0"
 
 This setting trims any assemblies that have been configured for trimming. With `Microsoft.NET.Sdk` in .NET 6, this includes any assemblies with `[AssemblyMetadata("IsTrimmable", "True")]`, which is the case for the .NET runtime assemblies. In .NET 5, assemblies from the netcoreapp runtime pack are configured for trimming via `<IsTrimmable>` MSBuild metadata. Other SDKs may define different defaults.
 
@@ -65,7 +61,7 @@ The default setting is `full`:
 
 :::zone-end
 
-:::zone pivot="dotnet-6-0,dotnet-5-0"
+:::zone pivot="dotnet-6-0"
 
 The following granularity settings control how aggressively unused IL is discarded. This can be set as a property affecting all trimmer input assemblies, or as metadata on an [individual assembly](#trimming-settings-for-individual-assemblies), which overrides the property setting.
 
@@ -105,7 +101,7 @@ This is equivalent to setting `[AssemblyMetadata("IsTrimmable", "True")]` when b
 
 :::zone-end
 
-:::zone pivot="dotnet-6-0,dotnet-5-0"
+:::zone pivot="dotnet-6-0"
 
 ## Trimming settings for individual assemblies
 
@@ -228,7 +224,7 @@ Several feature areas of the framework libraries come with trimmer directives th
 
 - `<EnableUnsafeBinaryFormatterSerialization>false</EnableUnsafeBinaryFormatterSerialization>`
 
-  Remove BinaryFormatter serialization support. For more information, see [BinaryFormatter serialization methods are obsolete](../../compatibility/core-libraries/5.0/binaryformatter-serialization-obsolete.md).
+  Remove BinaryFormatter serialization support. For more information, see [BinaryFormatter serialization methods are obsolete](../../compatibility/serialization/5.0/binaryformatter-serialization-obsolete.md).
 
 - `<EnableUnsafeUTF7Encoding>false</EnableUnsafeUTF7Encoding>`
 

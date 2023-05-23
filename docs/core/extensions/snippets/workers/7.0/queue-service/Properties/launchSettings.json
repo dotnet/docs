@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "App.QueueService": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": "true"
+    }
+  }
+}

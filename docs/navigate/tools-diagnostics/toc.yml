@@ -783,8 +783,12 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca1855.md
                   - name: CA1858
                     href: ../../fundamentals/code-analysis/quality-rules/ca1858.md
+                  - name: CA1859
+                    href: ../../fundamentals/code-analysis/quality-rules/ca1859.md
                   - name: CA1860
                     href: ../../fundamentals/code-analysis/quality-rules/ca1860.md
+                  - name: CA1861
+                    href: ../../fundamentals/code-analysis/quality-rules/ca1861.md
               - name: SingleFile rules
                 items:
                   - name: Overview
@@ -1452,6 +1456,10 @@ items:
             href: ../../fundamentals/syslib-diagnostics/syslib0047.md
           - name: SYSLIB0048
             href: ../../fundamentals/syslib-diagnostics/syslib0048.md
+          - name: SYSLIB0050
+            href: ../../fundamentals/syslib-diagnostics/syslib0050.md
+          - name: SYSLIB0051
+            href: ../../fundamentals/syslib-diagnostics/syslib0051.md
       - name: Source-generated code
         items:
           - name: Overview
@@ -1517,56 +1525,21 @@ items:
             href: ../../fundamentals/syslib-diagnostics/syslib1037.md
           - name: SYSLIB1038
             href: ../../fundamentals/syslib-diagnostics/syslib1038.md
-          - name: SYSLIB1040
+          - name: SYSLIB1040-SYSLIB1049
             href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
-          - name: SYSLIB1041
-            href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
-          - name: SYSLIB1042
-            href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
-          - name: SYSLIB1043
-            href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
-          - name: SYSLIB1044
-            href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
-          - name: SYSLIB1045
-            href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
-          - name: SYSLIB1050
+            displayProperty: syslib1041, syslib1042, syslib1043, syslib1044, syslib1045, syslib1046, syslib1047, syslib1048, syslib1049
+          - name: SYSLIB1050-SYSLIB1069
             href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-          - name: SYSLIB1051
-            href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-          - name: SYSLIB1052
-            href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-          - name: SYSLIB1053
-            href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-          - name: SYSLIB1054
-            href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-          - name: SYSLIB1055
-            href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-          - name: SYSLIB1056
-            href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-          - name: SYSLIB1057
-            href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-          - name: SYSLIB1058
-            href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-          - name: SYSLIB1059
-            href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-          - name: SYSLIB1060
-            href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-          - name: SYSLIB1061
-            href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-          - name: SYSLIB1062
-            href: ../../fundamentals/syslib-diagnostics/syslib1050-1069.md
-          - name: SYSLIB1070
+            displayProperty: syslib1051, syslib1052, syslib1053, syslib1054, syslib1055, syslib1056, syslib1057, syslib1058, syslib1059, syslib1060, syslib1061, syslib1062, syslib1063, syslib1064, syslib1065, syslib1066, syslib1067, syslib1068, syslib1069
+          - name: SYSLIB1070-SYSLIB1089
             href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
-          - name: SYSLIB1071
-            href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
-          - name: SYSLIB1072
-            href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
-          - name: SYSLIB1073
-            href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
-          - name: SYSLIB1074
-            href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
-          - name: SYSLIB1075
-            href: ../../fundamentals/syslib-diagnostics/syslib1070-1089.md
+            displayProperty: syslib1071, syslib1072, syslib1073, syslib1074, syslib1075, syslib1076, syslib1077, syslib1078, syslib1079, syslib1080, syslib1081, syslib1082, syslib1083, syslib1084, syslib1085, syslib1086, syslib1087, syslib1088, syslib1089
+          - name: SYSLIB1090-SYSLIB1099
+            href: ../../fundamentals/syslib-diagnostics/syslib1090-1099.md
+            displayProperty: syslib1091, syslib1092, syslib1093, syslib1094, syslib1095, syslib1096, syslib1097, syslib1098, syslib1099
+          - name: SYSLIB1100-SYSLIB1118
+            href: ../../fundamentals/syslib-diagnostics/syslib1100-1118.md
+            displayProperty: syslib1101, syslib1102, syslib1103, syslib1104, syslib1105, syslib1106, syslib1107, syslib1108, syslib1109, syslib1110, syslib1111, syslib1112, syslib1113, syslib1114, syslib1115, syslib1116, syslib1117, syslib1118
   - name: Package validation
     items:
       - name: Get started

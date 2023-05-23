@@ -43,21 +43,21 @@ The following table lists the available values for `<RuleCategory>`.
 
 :::row:::
     :::column:::
-        Design\
-        Documentation\
-        Globalization\
-        Interoperability
+        `Design`\
+        `Documentation`\
+        `Globalization`\
+        `Interoperability`
     :::column-end:::
     :::column:::
-        Maintainability\
-        Naming\
-        Performance\
-        SingleFile
+        `Maintainability`\
+        `Naming`\
+        `Performance`\
+        `SingleFile`
     :::column-end:::
     :::column:::
-        Reliability\
-        Security\
-        Usage
+        `Reliability`\
+        `Security`\
+        `Usage`
     :::column-end:::
 :::row-end:::
 
@@ -73,23 +73,25 @@ The syntax for configuring an option for a *specific* rule is as follows:
 
 This section lists some of the available options. To see the full list of available options, see [Analyzer configuration](https://github.com/dotnet/roslyn-analyzers/blob/main/docs/Analyzer%20Configuration.md).
 
-- [api_surface](#api_surface)
-- [exclude_async_void_methods](#exclude_async_void_methods)
-- [exclude_single_letter_type_parameters](#exclude_single_letter_type_parameters)
-- [output_kind](#output_kind)
-- [required_modifiers](#required_modifiers)
-- [exclude_extension_method_this_parameter](#exclude_extension_method_this_parameter)
-- [null_check_validation_methods](#null_check_validation_methods)
-- [additional_string_formatting_methods](#additional_string_formatting_methods)
-- [excluded_type_names_with_derived_types](#excluded_type_names_with_derived_types)
-- [excluded_symbol_names](#excluded_symbol_names)
-- [disallowed_symbol_names](#disallowed_symbol_names)
+- [api\_surface](#api_surface)
+- [exclude\_async\_void\_methods](#exclude_async_void_methods)
+- [exclude\_single\_letter\_type\_parameters](#exclude_single_letter_type_parameters)
+- [output\_kind](#output_kind)
+- [required\_modifiers](#required_modifiers)
+- [exclude\_extension\_method\_this\_parameter](#exclude_extension_method_this_parameter)
+- [null\_check\_validation\_methods](#null_check_validation_methods)
+- [additional\_string\_formatting\_methods](#additional_string_formatting_methods)
+- [excluded\_type\_names\_with\_derived\_types](#excluded_type_names_with_derived_types)
+- [excluded\_symbol\_names](#excluded_symbol_names)
+- [disallowed\_symbol\_names](#disallowed_symbol_names)
+- [exclude\_ordefault\_methods](#exclude_ordefault_methods)
 
 ### api_surface
 
 | Description | Allowable values | Default value | Configurable rules |
 | - | - | - | - |
-| Which part of the API surface to analyze | `public`<br/>`internal` or `friend`<br/>`private`<br/>`all`<br/><br/>Separate multiple values with a comma (,) | `public` | [CA1000](quality-rules/ca1000.md) [CA1002](quality-rules/ca1002.md) [CA1003](quality-rules/ca1003.md) [CA1005](quality-rules/ca1005.md) [CA1008](quality-rules/ca1008.md) [CA1010](quality-rules/ca1010.md) [CA1012](quality-rules/ca1012.md) [CA1021](quality-rules/ca1021.md) [CA1024](quality-rules/ca1024.md) [CA1027](quality-rules/ca1027.md) [CA1028](quality-rules/ca1028.md) [CA1030](quality-rules/ca1030.md) [CA1036](quality-rules/ca1036.md) [CA1040](quality-rules/ca1040.md) [CA1041](quality-rules/ca1041.md) [CA1043](quality-rules/ca1043.md) [CA1044](quality-rules/ca1044.md) [CA1045](quality-rules/ca1045.md) [CA1046](quality-rules/ca1046.md) [CA1047](quality-rules/ca1047.md) [CA1051](quality-rules/ca1051.md) [CA1052](quality-rules/ca1052.md) [CA1054](quality-rules/ca1054.md) [CA1055](quality-rules/ca1055.md) [CA1056](quality-rules/ca1056.md) [CA1058](quality-rules/ca1058.md) [CA1062](quality-rules/ca1062.md) [CA1063](quality-rules/ca1063.md) [CA1068](quality-rules/ca1068.md) [CA1070](quality-rules/ca1070.md) [CA1700](quality-rules/ca1700.md) [CA1707](quality-rules/ca1707.md) [CA1708](quality-rules/ca1708.md) [CA1710](quality-rules/ca1710.md) [CA1711](quality-rules/ca1711.md) [CA1714](quality-rules/ca1714.md) [CA1715](quality-rules/ca1715.md) [CA1716](quality-rules/ca1716.md) [CA1717](quality-rules/ca1717.md) [CA1720](quality-rules/ca1720.md) [CA1721](quality-rules/ca1721.md) [CA1725](quality-rules/ca1725.md) [CA1801](quality-rules/ca1801.md) [CA1802](quality-rules/ca1802.md) [CA1815](quality-rules/ca1815.md) [CA1819](quality-rules/ca1819.md) [CA1822](quality-rules/ca1822.md) [CA2208](quality-rules/ca2208.md) [CA2217](quality-rules/ca2217.md) [CA2225](quality-rules/ca2225.md) [CA2226](quality-rules/ca2226.md) [CA2231](quality-rules/ca2231.md) [CA2234](quality-rules/ca2234.md) |
+| Which part of the API surface to analyze | `public`<br/>`internal` or `friend`<br/>`private`<br/>`all`<br/><br/>Separate multiple values with a comma (,) | `public` | [CA1000](quality-rules/ca1000.md) [CA1002](quality-rules/ca1002.md) [CA1003](quality-rules/ca1003.md) [CA1005](quality-rules/ca1005.md) [CA1008](quality-rules/ca1008.md) [CA1010](quality-rules/ca1010.md) [CA1012](quality-rules/ca1012.md) [CA1021](quality-rules/ca1021.md) [CA1024](quality-rules/ca1024.md) [CA1027](quality-rules/ca1027.md) [CA1028](quality-rules/ca1028.md) [CA1030](quality-rules/ca1030.md) [CA1036](quality-rules/ca1036.md) [CA1040](quality-rules/ca1040.md) [CA1041](quality-rules/ca1041.md) [CA1043](quality-rules/ca1043.md) [CA1044](quality-rules/ca1044.md) [CA1045](quality-rules/ca1045.md) [CA1046](quality-rules/ca1046.md) [CA1047](quality-rules/ca1047.md) [CA1051](quality-rules/ca1051.md) [CA1052](quality-rules/ca1052.md) [CA1054](quality-rules/ca1054.md) [CA1055](quality-rules/ca1055.md) [CA1056](quality-rules/ca1056.md) [CA1058](quality-rules/ca1058.md) [CA1062](quality-rules/ca1062.md) [CA1063](quality-rules/ca1063.md) [CA1068](quality-rules/ca1068.md) [CA1070](quality-rules/ca1070.md) [CA1700](quality-rules/ca1700.md) [CA1707](quality-rules/ca1707.md) [CA1708](quality-rules/ca1708.md) [CA1710](quality-rules/ca1710.md) [CA1711](quality-rules/ca1711.md) [CA1714](quality-rules/ca1714.md) [CA1715](quality-rules/ca1715.md) [CA1716](quality-rules/ca1716.md) [CA1717](quality-rules/ca1717.md) [CA1720](quality-rules/ca1720.md) [CA1721](quality-rules/ca1721.md) [CA1725](quality-rules/ca1725.md) [CA1801](quality-rules/ca1801.md) [CA1802](quality-rules/ca1802.md) [CA1815](quality-rules/ca1815.md) [CA1819](quality-rules/ca1819.md) [CA1822](quality-rules/ca1822.md) [CA1859](quality-rules/ca1859.md)
+[CA2208](quality-rules/ca2208.md) [CA2217](quality-rules/ca2217.md) [CA2225](quality-rules/ca2225.md) [CA2226](quality-rules/ca2226.md) [CA2231](quality-rules/ca2231.md) [CA2234](quality-rules/ca2234.md) |
 
 ### exclude_async_void_methods
 

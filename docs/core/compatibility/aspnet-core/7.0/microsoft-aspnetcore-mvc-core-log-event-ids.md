@@ -10,7 +10,7 @@ As part of updating the `Microsoft.AspNetcore.Mvc.Core` assembly to use <xref:Mi
 
 ## Version introduced
 
-ASP.NET Core 7.0 Preview 3
+ASP.NET Core 7.0
 
 ## Previous behavior
 

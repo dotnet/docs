@@ -5,7 +5,10 @@ ms.date: 4/29/2022
 ---
 # .NET logging and tracing
 
-Code can be instrumented to produce a log, which serves as a record of interesting events that occurred while the program was running. To understand the application's behavior, logs can be reviewed. Logging and tracing both encapsulate this technique. .NET has accumulated several different logging APIs over its history and this article will help you understand what options are available.
+Code can be instrumented to produce a log, which serves as a record of interesting events that occurred while the program was running. To understand the application's behavior, logs can be reviewed. .NET has accumulated several different logging APIs over its history and this article will help you understand what options are available.
+
+> [!NOTE]
+> The term 'tracing' has different meanings and in this article we use to it as a synonym for logging. Historically many developers tended to use 'tracing' when referring to logging that was particularly verbose, used a binary format, or was done as part of performance analysis. More recently 'tracing' has also been adopted as shorthand for [Distributed Tracing](./distributed-tracing.md) - which collects high-level activity & timing data for request based systems, and correlates the requests across services to give a view of how each request is processed  by the complete system.
 
 The terms logging and tracing are commonly synonymous, the distinction we usually take is that logging output is expected to be collected all the time, and so should have a low overhead. Tracing is typically more invasive and collects more information from deeper parts of the application and .NET runtime, so is either used when diagnosing specific problems, or automatically for short periods of time as part of deeper performance analysis systems.
 
@@ -44,7 +47,7 @@ For most cases, whether adding logging to an existing project or creating a new 
 
 ### Trace
 
-<xref:System.Diagnostics.Trace?displayProperty=nameWithType> and <xref:System.Diagnostics.Debug?displayProperty=nameWithType> are .NET's oldest logging APIs. These classes have flexible configuration APIs and a large ecosystem of sinks, but only support unstructured logging. On .NET Framework they can be configured via an app.config file, but in .NET Core, there's no built-in, file-based configuration mechanism. They are typically used to produce diagnostics output for the developer while running under the debugger. The .NET team continues to support these APIs for backward-compatibility purposes, but no new functionality will be added. These APIs are a fine choice for applications that are already using them. For newer apps that haven't already committed to a logging API, `ILogger` may offer better functionality.
+<xref:System.Diagnostics.Trace?displayProperty=nameWithType> and <xref:System.Diagnostics.Debug?displayProperty=nameWithType> are .NET's oldest logging APIs. These classes have flexible configuration APIs and a large ecosystem of sinks, but only support unstructured logging. On .NET Framework they can be configured via an app.config file, but in .NET Core, there's no built-in, file-based configuration mechanism. A common use-case is producing diagnostics output for the developer while running under the debugger. The .NET team continues to support these APIs for backward-compatibility purposes, but no new functionality will be added. These APIs are a fine choice for applications that are already using them. For newer apps that haven't already committed to a logging API, `ILogger` may offer better functionality.
 
 ## Specialized logging APIs
 

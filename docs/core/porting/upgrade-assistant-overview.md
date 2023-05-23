@@ -97,7 +97,7 @@ After you've [installed the .NET Upgrade Assistant CLI tool](upgrade-assistant-i
 > [!CAUTION]
 > Make sure you backup your projects prior to running the upgrade tool.
 
-The CLI tool provides an interactive way of choosing which project to upgrade. Use the arrow keys to select an item, and press <kdb>Enter</kbd> to run the item. Run the tool with the `upgrade-assistant upgrade` command, all of the projects from the current folder and below, are listed. You can select which project to upgrade:
+The CLI tool provides an interactive way of choosing which project to upgrade. Use the arrow keys to select an item, and press <kbd>Enter</kbd> to run the item. Run the tool with the `upgrade-assistant upgrade` command, all of the projects from the current folder and below, are listed. You can select which project to upgrade:
 
 ```
  Selected options

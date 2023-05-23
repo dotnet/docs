@@ -41,7 +41,7 @@ As a simpler analogy, assume that calling `BinaryFormatter.Deserialize` over a p
 
 `BinaryFormatter.Deserialize` may be vulnerable to other attack categories, such as information disclosure or remote code execution. Utilizing features such as a custom <xref:System.Runtime.Serialization.SerializationBinder> may be insufficient to properly mitigate these risks. The possibility exists that a novel vulnerability will be discovered for which .NET cannot practically publish a security update. Consumers should assess their individual scenarios and consider their potential exposure to these risks.
 
-We recommend that `BinaryFormatter` consumers perform individual risk assessments on their apps. It is the consumer's sole responsibility to determine whether to utilize `BinaryFormatter`. Consumers should risk assess the security, technical, reputation, legal, and regulatory consequences of using `BinaryFormatter`.
+We recommend that `BinaryFormatter` consumers perform individual risk assessments on their apps. It is the consumer's sole responsibility to determine whether to utilize `BinaryFormatter`. If you're considering using it, you should risk-assess the security, technical, reputation, legal, and regulatory consequences.
 
 ## Preferred alternatives
 

@@ -27,7 +27,10 @@ This article examines the string sorting, comparison, and casing methods in .NET
 
 ## Recommendations for string usage
 
-When you develop with .NET, follow these recommendations when you compare strings (for example, when you use <xref:System.String.Equals%2A?displayProperty=nameWithType>, <xref:System.String.Compare%2A?displayProperty=nameWithType>, <xref:System.String.IndexOf%2A?displayProperty=nameWithType> <xref:System.String.StartsWith%2A?displayProperty=nameWithType>, or related methods):
+When you develop with .NET, follow these recommendations when you compare strings.
+
+> [!TIP]
+> Various string-related methods perform comparison. Examples include <xref:System.String.Equals%2A?displayProperty=nameWithType>, <xref:System.String.Compare%2A?displayProperty=nameWithType>, <xref:System.String.IndexOf%2A?displayProperty=nameWithType>, and <xref:System.String.StartsWith%2A?displayProperty=nameWithType>.
 
 - Use overloads that explicitly specify the string comparison rules for string operations. Typically, this involves calling a method overload that has a parameter of type <xref:System.StringComparison>.
 - Use <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> for comparisons as your safe default for culture-agnostic string matching.

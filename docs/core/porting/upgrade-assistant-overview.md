@@ -50,16 +50,12 @@ The following upgrade paths are supported:
 - Xamarin Forms to .NET MAUI
   - XAML file transformations only support upgrading namespaces. For more comprehensive transformations, use Visual Studio 2022 version 17.6 or later.
 
-## Upgrade a project to the latest .NET
-
-After the Update Assistant is installed, you can upgrade a project. You should **always** back up your projects to another folder, so you can restore them if something goes wrong with the upgrade.
-
-### Upgrade with the Visual Studio extension
+## Upgrade with the Visual Studio extension
 
 After you've [installed the .NET Upgrade Assistant extension](upgrade-assistant-install.md#install-the-visual-studio-extension), right-click on the project in the **Solution Explorer** window, and select **Upgrade**.
 
 > [!CAUTION]
-> Make sure you backup your projects prior to upgrading.
+> Make sure you backup your projects prior to upgrading if you're not using source control.
 
 :::image type="content" source="media/upgrade-assistant-overview/visual-studio-upgrade.png" alt-text="The .NET Upgrade Assistant's Upgrade menu item in Visual Studio.":::
 
@@ -90,14 +86,14 @@ Once your app has been upgraded, a status screen is displayed which shows all of
 
 After upgrading your project, you'll need to test it thoroughly.
 
-### Upgrade with the CLI tool
+## Upgrade with the CLI tool
 
-After you've [installed the .NET Upgrade Assistant CLI tool](upgrade-assistant-install.md#install-the-net-global-tool), open a terminal window and navigate to the directory that contains the project you want to upgrade.
+After you've [installed the .NET Upgrade Assistant CLI tool](upgrade-assistant-install.md#install-the-net-global-tool), open a terminal window and navigate to the directory that contains the project you want to upgrade. You can use the `upgrade-assistant --help` command to see the available options the CLI provides.
 
 > [!CAUTION]
-> Make sure you backup your projects prior to running the upgrade tool.
+> Make sure you backup your projects prior to upgrading if you're not using source control.
 
-The CLI tool provides an interactive way of choosing which project to upgrade. Use the arrow keys to select an item, and press <kbd>Enter</kbd> to run the item. Run the tool with the `upgrade-assistant upgrade` command, all of the projects from the current folder and below, are listed. You can select which project to upgrade:
+Run the tool with the `upgrade-assistant upgrade` command, all of the projects from the current folder and below, are listed. The CLI tool provides an interactive way of choosing which project to upgrade. Use the arrow keys to select an item, and press <kbd>Enter</kbd> to run the item. Select the project you want to upgrade. In the example provided by this article, there are four projects under the current folder:
 
 ```
  Selected options
@@ -175,81 +171,3 @@ What is your preferred target framework?
 ```
 
 After upgrading your project, you'll need to test it thoroughly.
-
-## .NET Framework modernization
-
-When upgrading a .NET Framework app, you'll most likely have some incompatibilities. For example, .NET doesn't provide APIs to access the Windows Registry like .NET Framework did. Support for the Windows Registry is provided by the `Microsoft.Win32.Registry` NuGet package. Many the .NET Framework-specific libraries have been ported to .NET or .NET Standard, and are hosted on NuGet. If you find a missing reference in your project, search NuGet.
-
-Your app can be modernized to take advantage of new APIs and libraries. The following sections describe a few of these modernization points.
-
-### Web browser control
-
-Projects that target a Windows desktop technology, such as Windows Presentation Foundation or Windows Forms, may include a web browser control. The web browser control provided was most likely designed prior to HTML5 and other modern web technologies and is considered obsolete. Microsoft publishes the [`Microsoft.Web.WebView2` NuGet package](https://www.nuget.org/packages/Microsoft.Web.WebView2) as modern web browser control replacement.
-
-### appsettings.json
-
-.NET Framework uses the _App.config_ file to load settings for your app, such as connection strings and log providers. Modern .NET uses the _appsettings.json_ file for app settings. The CLI version of the Upgrade Assistant handles converting _App.config_ files to _appsettings.json_, but the Visual Studio extension doesn't.
-
-> [!TIP]
-> If you don't want to use the _appsettings.json_ file, you can add the `System.Configuration.ConfigurationManager` NuGet package to your app and your code will compile and use the _App.config_ file.
-
-Even though _appsettings.json_ is the modern way to store and retrieve settings and connection strings, your app still has code that uses the _App.config_ file. When your app was migrated, the `System.Configuration.ConfigurationManager` NuGet package was added to the project so that your code using the _App.config_ file continues to compile.
-
-As libraries upgrade to .NET, they modernize by supporting _appsettings.json_ instead of _App.config_. For example, logging providers in .NET Framework that have been upgraded for .NET 6+ no longer use _App.config_ for settings. It's good for you to follow their direction and also move away from using _App.config_.
-
-Support for _appsettings.json_ is provided by the `Microsoft.Extensions.Configuration` NuGet package.
-
-Perform the following steps to use the _appsettings.json_ file as your configuration provider:
-
-01. Remove the `System.Configuration.ConfigurationManager` NuGet package or library if referenced by your upgraded app.
-01. Add the `Microsoft.Extensions.Configuration.Json` NuGet package.
-01. Delete the _App.config_ file from the project.
-
-    > [!CAUTION]
-    > Make sure that all the settings have migrated correctly.
-
-01. Create a file named _appsettings.json_.
-
-    Skip this step if your upgrade generated an _appsettings.json_ file.
-
-    01. Right-click on the project file in the **Solution Explorer** window and select **Add** > **New Item...**.
-    01. In the search box, enter `json`.
-    01. Select the **JavaScript JSON Configuration File** template and set the **Name** to _appsettings.json_.
-    01. Press **Add** to add the new file to the project.
-
-01. Set the _appsettings.json_ file to copy to the output directory.
-
-    In the **Solution Explorer** window, find the _appsettings.json_ file and set the following **Properties**:
-
-    - **Build Action**: Content
-    - **Copy to Output Directory**: Copy always
-
-01. In the startup code of your app, you need to load the settings file.
-
-    The startup code for your app varies based on your project type. For example, a WPF app uses the `App.xaml.cs` file for global setup and a Windows Forms app uses the `Program.Main` method for startup. Regardless, you need to do two things at startup:
-
-    - Create a `static` (`Shared` in Visual Basic) member that can be accessed from anywhere in your app.
-    - During startup, assign an instance to that member.
-
-    The following example creates a member named `Config`, assigns it an instance in the `Main` method, and loads a connection string:
-
-    ```csharp
-    using Microsoft.Extensions.Configuration;
-    
-    internal class Program
-    {
-        internal static IConfiguration Config { get; private set; }
-    
-        private static void Main(string[] args)
-        {
-            Config = new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json")
-                .Build();
-    
-            // Use the config file to get a connection string
-            string? myConnectionString = Config.GetConnectionString("database");
-    
-            // Run the rest of your app
-        }
-    }
-    ```

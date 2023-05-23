@@ -5,7 +5,7 @@ author: IEvangelist
 ms.author: dapine
 ms.date: 03/13/2023
 ms.topic: tutorial
-zone_pivot_groups: dotnet-version-6-7
+zone_pivot_groups: dotnet-version
 ---
 
 # Use scoped services within a `BackgroundService`

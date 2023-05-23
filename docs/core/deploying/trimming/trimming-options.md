@@ -8,7 +8,7 @@ ms.topic: reference
 zone_pivot_groups: dotnet-version
 ---
 
-:::zone pivot="dotnet-7-0,dotnet-6-0,dotnet-5-0,dotnet-core-3-1"
+:::zone pivot="dotnet-7-0,dotnet-6-0"
 
 # Trimming options
 
@@ -37,7 +37,7 @@ previous behavior by using `<TrimMode>partial</TrimMode>`.
 
 :::zone-end
 
-:::zone pivot="dotnet-6-0,dotnet-5-0"
+:::zone pivot="dotnet-6-0"
 
 This setting trims any assemblies that have been configured for trimming. With `Microsoft.NET.Sdk` in .NET 6, this includes any assemblies with `[AssemblyMetadata("IsTrimmable", "True")]`, which is the case for the .NET runtime assemblies. In .NET 5, assemblies from the netcoreapp runtime pack are configured for trimming via `<IsTrimmable>` MSBuild metadata. Other SDKs may define different defaults.
 
@@ -65,7 +65,7 @@ The default setting is `full`:
 
 :::zone-end
 
-:::zone pivot="dotnet-6-0,dotnet-5-0"
+:::zone pivot="dotnet-6-0"
 
 The following granularity settings control how aggressively unused IL is discarded. This can be set as a property affecting all trimmer input assemblies, or as metadata on an [individual assembly](#trimming-settings-for-individual-assemblies), which overrides the property setting.
 
@@ -105,7 +105,7 @@ This is equivalent to setting `[AssemblyMetadata("IsTrimmable", "True")]` when b
 
 :::zone-end
 
-:::zone pivot="dotnet-6-0,dotnet-5-0"
+:::zone pivot="dotnet-6-0"
 
 ## Trimming settings for individual assemblies
 

@@ -2,7 +2,7 @@
 title: Test a .NET class library using Visual Studio
 description: Learn how to use Visual Studio to create and run a unit test project for a .NET class library.
 ms.date: 11/11/2022
-zone_pivot_groups: dotnet-version-6-7
+zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"
@@ -195,8 +195,8 @@ Visual Studio starts the test project with the debugger attached. Execution will
 
 ## Additional resources
 
-* [Unit test basics - Visual Studio](/visualstudio/test/unit-test-basics)
-* [Unit testing in .NET](../testing/index.md)
+- [Unit test basics - Visual Studio](/visualstudio/test/unit-test-basics)
+- [Unit testing in .NET](../testing/index.md)
 
 ## Next steps
 

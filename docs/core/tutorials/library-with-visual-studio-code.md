@@ -2,7 +2,7 @@
 title: Create a .NET class library using Visual Studio Code
 description: Learn how to create a .NET class library using Visual Studio Code.
 ms.date: 11/11/2022
-zone_pivot_groups: dotnet-version-6-7
+zone_pivot_groups: dotnet-version
 recommendations: false
 ---
 # Tutorial: Create a .NET class library using Visual Studio Code
@@ -140,7 +140,7 @@ Add a console application that uses the class library. The app will prompt the u
    ```output
    The template "Console Application" was created successfully.
    Processing post-creation actions...
-   Running 'dotnet restore' on ShowCase\ShowCase.csproj...  
+   Running 'dotnet restore' on ShowCase\ShowCase.csproj...
      Determining projects to restore...
      Restored C:\Projects\ClassLibraryProjects\ShowCase\ShowCase.csproj (in 210 ms).
    Restore succeeded.
@@ -355,7 +355,7 @@ Add a console application that uses the class library. The app will prompt the u
    ```output
    The template "Console Application" was created successfully.
    Processing post-creation actions...
-   Running 'dotnet restore' on ShowCase\ShowCase.csproj...  
+   Running 'dotnet restore' on ShowCase\ShowCase.csproj...
      Determining projects to restore...
      Restored C:\Projects\ClassLibraryProjects\ShowCase\ShowCase.csproj (in 210 ms).
    Restore succeeded.

@@ -4,33 +4,33 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using ConfigureHttpHandler.Example;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices((context, services) =>
-    {
-        const string name = "ConfigureHttpHandler.Example";
-        services.AddHttpClient(
-            name,
-            client =>
-            {
-                // Set the base address of the named client.
-                client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/");
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
-                // Add a user-agent default request header.
-                client.DefaultRequestHeaders.UserAgent.ParseAdd("dotnet-docs");
-            })
-        // <configurehandler>
-        .ConfigurePrimaryHttpMessageHandler(() =>
-            {
-                return new HttpClientHandler
-                {
-                    AllowAutoRedirect = false,
-                    UseDefaultCredentials = true
-                };
-            });
-        // </configurehandler>
-        services.AddTransient<TodoService>();
+const string name = "ConfigureHttpHandler.Example";
+builder.Services.AddHttpClient(
+    name,
+    client =>
+    {
+        // Set the base address of the named client.
+        client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/");
+
+        // Add a user-agent default request header.
+        client.DefaultRequestHeaders.UserAgent.ParseAdd("dotnet-docs");
     })
-    .Build();
+    // <configurehandler>
+    .ConfigurePrimaryHttpMessageHandler(() =>
+    {
+        return new HttpClientHandler
+        {
+            AllowAutoRedirect = false,
+            UseDefaultCredentials = true
+        };
+    });
+    // </configurehandler>
+
+builder.Services.AddTransient<TodoService>();
+
+using IHost host = builder.Build();
 
 TodoService todoService =
     host.Services.GetRequiredService<TodoService>();

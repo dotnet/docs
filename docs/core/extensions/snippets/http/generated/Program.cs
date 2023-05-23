@@ -5,20 +5,19 @@ using Microsoft.Extensions.Logging;
 using Refit;
 using Shared;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
-    {
-        services.AddRefitClient<ITodoService>()
-            .ConfigureHttpClient(client =>
-            {
-                // Set the base address of the named client.
-                client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/");
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
-                // Add a user-agent default request header.
-                client.DefaultRequestHeaders.UserAgent.ParseAdd("dotnet-docs");
-            });
-    })
-    .Build();
+builder.Services.AddRefitClient<ITodoService>()
+    .ConfigureHttpClient(client =>
+    {
+        // Set the base address of the named client.
+        client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/");
+
+        // Add a user-agent default request header.
+        client.DefaultRequestHeaders.UserAgent.ParseAdd("dotnet-docs");
+    });
+
+using IHost host = builder.Build();
 
 ITodoService todoService =
     host.Services.GetRequiredService<ITodoService>();

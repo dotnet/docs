@@ -45,7 +45,7 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 >
 > .1xx SDK feature band is supported throughout the lifecycle of major .NET versions. During the extended support period, support is limited to security fixes and minimal high-priority non-security fixes for Linux only. To learn more about the reasoning for this extended support, refer to this [document](https://github.com/dotnet/source-build#support).
 >
-> <sup>1</sup> Visual Studio 17.3 went out of support in Nov '22. 6.0.4xx will be in support for the life of .NET 6 as a stand-alone release.
+> <sup>1</sup> Visual Studio 17.3 went out of support in Nov 2022. 6.0.4xx will be in support for the life of .NET 6 as a stand-alone release.
 >
 > <sup>2</sup> With .NET 6, the.NET 6.0.100 SDK can be used in version 16.11 for **downlevel** targeting. This means that you're not forced to update your SDK and Visual Studio versions simultaneously. However, you won't be able to target .NET 6 because of limitations in 6.0 features and C# 10 features in version 16.11. This compatibility is specifically for targeting 5.0 and below.
 >

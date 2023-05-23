@@ -28,7 +28,7 @@ Serialization is the process of converting the state of an object into a form th
 
 ## Reference
 
-<xref:System.Text.Json>\
+<xref:System.Text.Json?displayProperty=fullName>\
 Contains classes that can be used to serialize objects into JSON format documents or streams.
 
 <xref:System.Runtime.Serialization>\

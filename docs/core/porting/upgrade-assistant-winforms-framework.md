@@ -6,6 +6,9 @@ ms.date: 01/25/2022
 ---
 # Upgrade a Windows Forms App to .NET 6 with the .NET Upgrade Assistant
 
+> [!IMPORTANT]
+> This article was written before the release of the Upgrade Assistant extension for Visual Studio. The CLI version of the tool used in this article is out of date. The article will be updated after the Microsoft Build 2023 conference.
+
 The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can assist with upgrading .NET Framework Windows Forms apps to .NET 6. This article provides:
 
 - A demonstration of how to run the tool against a .NET Framework Windows Forms app
@@ -352,7 +355,7 @@ There are several known problems that can occur when using the .NET Upgrade Assi
 ## See also
 
 - [Upgrade a WPF App to .NET 6](upgrade-assistant-wpf-framework.md)
-- [Upgrade an ASP.NET MVC App to .NET 6](upgrade-assistant-aspnetmvc.md)
+- [Upgrade an ASP.NET MVC App to .NET 6](/aspnet/core/migration/mvc)
 - [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md)
 - [.NET Upgrade Assistant GitHub Repository](https://github.com/dotnet/upgrade-assistant)
 

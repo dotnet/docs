@@ -2,7 +2,7 @@
 title: Create a .NET console application using Visual Studio Code
 description: Learn how to create a .NET console application using Visual Studio Code and the .NET CLI.
 ms.date: 11/11/2022
-zone_pivot_groups: dotnet-version-6-7
+zone_pivot_groups: dotnet-version
 recommendations: false
 ---
 # Tutorial: Create a .NET console application using Visual Studio Code
@@ -120,7 +120,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 ## Additional resources
 
-- [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
+* [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
 
 ## Next steps
 
@@ -237,7 +237,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 ## Additional resources
 
-- [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
+* [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
 
 ## Next steps
 

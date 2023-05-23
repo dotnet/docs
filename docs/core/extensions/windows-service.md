@@ -5,7 +5,7 @@ author: IEvangelist
 ms.author: dapine
 ms.date: 05/09/2023
 ms.topic: tutorial
-zone_pivot_groups: dotnet-version-6-7
+zone_pivot_groups: dotnet-version
 ---
 
 # Create Windows Service using `BackgroundService`
@@ -171,10 +171,10 @@ For more information on registering services, see [Dependency injection in .NET]
 
 ## Publish the app
 
-To create the .NET Worker Service app as a Windows Service, it's recommended that you publish the app as a single file executable. It's less error-prone to have a self-contained executable, as there aren't any dependent files lying around the file system. But you may choose a different publishing modality, which is perfectly acceptable, so long as you create an _*.exe_ file that can be targeted by the Windows Service Control Manager.
+To create the .NET Worker Service app as a Windows Service, it's recommended that you publish the app as a single file executable. It's less error-prone to have a self-contained executable, as there aren't any dependent files lying around the file system. But you may choose a different publishing modality, which is perfectly acceptable, so long as you create an **.exe* file that can be targeted by the Windows Service Control Manager.
 
 > [!IMPORTANT]
-> An alternative publishing approach is to build the _*.dll_ (instead of an _*.exe_), and when you install the published app using the Windows Service Control Manager you delegate to the .NET CLI and pass the DLL. For more information, see [.NET CLI: dotnet command](../tools/dotnet.md).
+> An alternative publishing approach is to build the **.dll* (instead of an **.exe*), and when you install the published app using the Windows Service Control Manager you delegate to the .NET CLI and pass the DLL. For more information, see [.NET CLI: dotnet command](../tools/dotnet.md).
 >
 > ```powershell
 > sc.exe create ".NET Joke Service" binpath="C:\Path\To\dotnet.exe C:\Path\To\App.WindowsService.dll"
@@ -239,7 +239,7 @@ For more information, see [`dotnet publish`](../tools/dotnet-publish.md).
 
 ## Create the Windows Service
 
-If you're unfamiliar with using PowerShell and you'd rather create an installer for your service, see [Create a Windows Service installer](windows-service-with-installer.md). Otherwise, to create the Windows Service, use the native Windows Service Control Manager's (_sc.exe_) create command. Run PowerShell as an Administrator.
+If you're unfamiliar with using PowerShell and you'd rather create an installer for your service, see [Create a Windows Service installer](windows-service-with-installer.md). Otherwise, to create the Windows Service, use the native Windows Service Control Manager's (*sc.exe*) create command. Run PowerShell as an Administrator.
 
 ```powershell
 sc.exe create ".NET Joke Service" binpath="C:\Path\To\App.WindowsService.exe"
@@ -318,7 +318,7 @@ With .NET 6, [new hosting exception-handling behaviors](../compatibility/core-li
 | <xref:Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior.Ignore> | Ignore exceptions thrown in `BackgroundService`. |
 | <xref:Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior.StopHost> | The `IHost` will be stopped when an unhandled exception is thrown. |
 
-The default behavior before .NET 6 is `Ignore`, which resulted in _zombie processes_ (a running process that didn't do anything). With .NET 6, the default behavior is `StopHost`, which results in the host being stopped when an exception is thrown. But it stops cleanly, meaning that the Windows Service management system will not restart the service. To correctly allow the service to be restarted, you can call <xref:System.Environment.Exit%2A?displayProperty=nameWithType> with a non-zero exit code. Consider the following highlighted `catch` block:
+The default behavior before .NET 6 is `Ignore`, which resulted in *zombie processes* (a running process that didn't do anything). With .NET 6, the default behavior is `StopHost`, which results in the host being stopped when an exception is thrown. But it stops cleanly, meaning that the Windows Service management system will not restart the service. To correctly allow the service to be restarted, you can call <xref:System.Environment.Exit%2A?displayProperty=nameWithType> with a non-zero exit code. Consider the following highlighted `catch` block:
 
 :::zone target="docs" pivot="dotnet-7-0"
 
@@ -344,7 +344,7 @@ To verify that the service is functioning as expected, you need to:
 - Stop the service
 
 > [!IMPORTANT]
-> To debug the application, ensure that you're _not_ attempting to debug the executable that is actively running within the Windows Services process.
+> To debug the application, ensure that you're *not* attempting to debug the executable that is actively running within the Windows Services process.
 >
 > :::image type="content" source="media/unable-to-debug-service.png" alt-text="Unable to start program.":::
 
@@ -379,7 +379,7 @@ To view logs, open the **Event Viewer**. Select the Windows key (or <kbd>Ctrl</k
 
 :::image type="content" source="media/event-properties.png" lightbox="media/event-properties.png" alt-text="The Event Properties dialog, with details logged from the service":::
 
-After seeing logs in the **Event Log**, you should stop the service. It's designed to log a random joke once per minute. This is intentional behavior but is _not_ practical for production services.
+After seeing logs in the **Event Log**, you should stop the service. It's designed to log a random joke once per minute. This is intentional behavior but is *not* practical for production services.
 
 ### Stop the Windows Service
 

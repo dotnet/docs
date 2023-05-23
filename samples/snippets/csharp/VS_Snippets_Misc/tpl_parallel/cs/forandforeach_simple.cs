@@ -1,11 +1,7 @@
-﻿
-
-
-namespace ThreadLocalFor
+﻿namespace ThreadLocalFor
 {
 //<snippet05>
  using System;
- using System.Collections.Generic;
  using System.Linq;
  using System.Threading;
  using System.Threading.Tasks;
@@ -14,7 +10,7 @@ namespace ThreadLocalFor
  {
      static void Main()
      {
-         int[] nums = Enumerable.Range(0, 1000000).ToArray();
+         int[] nums = Enumerable.Range(0, 1_000_000).ToArray();
          long total = 0;
 
          // Use type parameter to make subtotal a long, not an int
@@ -23,7 +19,7 @@ namespace ThreadLocalFor
              subtotal += nums[j];
              return subtotal;
          },
-             (x) => Interlocked.Add(ref total, x)
+             subtotal => Interlocked.Add(ref total, subtotal)
          );
 
          Console.WriteLine("The total is {0:N0}", total);

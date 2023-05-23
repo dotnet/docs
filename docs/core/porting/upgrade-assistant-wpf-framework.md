@@ -6,6 +6,9 @@ ms.date: 03/04/2023
 ---
 # Upgrade a WPF App to .NET 7 with the .NET Upgrade Assistant
 
+> [!IMPORTANT]
+> This article was written before the release of the Upgrade Assistant extension for Visual Studio. The CLI version of the tool used in this article is out of date. The article will be updated after the Microsoft Build 2023 conference.
+
 The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can assist with upgrading .NET Framework WPF apps to .NET 7. This article provides:
 
 - An overview of how the tool works with WPF projects
@@ -316,7 +319,7 @@ If you're using Visual Basic to code your project, the Upgrade Assistant may con
 
 - [.NET Upgrade Assistant GitHub Repository](https://github.com/dotnet/upgrade-assistant)
 - [Upgrade a Windows Forms App to .NET 6](upgrade-assistant-winforms-framework.md)
-- [Upgrade an ASP.NET MVC App to .NET 6](upgrade-assistant-aspnetmvc.md)
+- [Upgrade an ASP.NET MVC App to .NET 6](/aspnet/core/migration/mvc)
 - [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md)
 
 [wpf-sample]: https://github.com/dotnet/samples/tree/main/wpf/WebSiteBrowser/

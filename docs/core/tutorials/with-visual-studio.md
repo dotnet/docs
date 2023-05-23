@@ -2,7 +2,7 @@
 title: Create a .NET console application using Visual Studio
 description: Learn how to create a .NET console application with C# or Visual Basic using Visual Studio.
 ms.date: 01/28/2023
-zone_pivot_groups: dotnet-version-6-7
+zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"
@@ -43,9 +43,9 @@ Create a .NET console app project named "HelloWorld".
    :::image type="content" source="./media/with-visual-studio/configure-new-project.png" alt-text="Configure your new project window with Project name, location, and solution name fields":::
 
 1. In the **Additional information** dialog:
-   * Select **.NET 7 (Standard-term support)**.
-   * Select **Do not use top-level statements**.
-   * Select **Create**.
+   - Select **.NET 7 (Standard-term support)**.
+   - Select **Do not use top-level statements**.
+   - Select **Create**.
 
    The template creates a simple application that displays "Hello, World!" in the console window. The code is in the *Program.cs* or *Program.vb* file:
 

@@ -6,11 +6,11 @@ ms.date: 03/16/2022
 
 # Orleans code generation
 
-The Orleans runtime makes use of generated code to ensure proper serialization of types that are used across the cluster as well as for generating boilerplate, which abstracts away the implementation details of method shipping, exception propagation, and other internal runtime concepts.
+This article applies to: ✔️ Orleans 3.x and earlier versions
 
 ## Enable code generation
 
-Code generation can be performed either when your projects are being built or when your application initializes.
+The Orleans runtime makes use of generated code to ensure proper serialization of types that are used across the cluster as well as for generating boilerplate, which abstracts away the implementation details of method shipping, exception propagation, and other internal runtime concepts. Code generation can be performed either when your projects are being built or when your application initializes.
 
 ### What happens during build?
 

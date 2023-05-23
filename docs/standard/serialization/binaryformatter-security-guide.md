@@ -49,7 +49,7 @@ We recommend that `BinaryFormatter` consumers perform individual risk assessment
 
 * <xref:System.Xml.Serialization.XmlSerializer> and <xref:System.Runtime.Serialization.DataContractSerializer> to serialize object graphs into and from XML. Do not confuse `DataContractSerializer` with  <xref:System.Runtime.Serialization.NetDataContractSerializer>.
 * <xref:System.IO.BinaryReader> and <xref:System.IO.BinaryWriter> for XML and JSON.
-* The <xref:System.Text.Json> APIs to serialize object graphs into JSON.
+* The <xref:System.Text.Json?displayProperty=fullName> APIs to serialize object graphs into JSON.
 
 ## Dangerous alternatives
 

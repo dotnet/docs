@@ -2,7 +2,7 @@
 title: Create a .NET class library using Visual Studio
 description: Learn how to create a .NET class library using Visual Studio.
 ms.date: 11/11/2022
-zone_pivot_groups: dotnet-version-6-7
+zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"
@@ -125,8 +125,8 @@ Initially, the new console app project doesn't have access to the class library.
 
 ## Additional resources
 
-* [Develop libraries with the .NET CLI](libraries.md)
-* [.NET Standard versions and the platforms they support](../../standard/net-standard.md).
+- [Develop libraries with the .NET CLI](libraries.md)
+- [.NET Standard versions and the platforms they support](../../standard/net-standard.md).
 
 ## Next steps
 
@@ -261,8 +261,8 @@ Initially, the new console app project doesn't have access to the class library.
 
 ## Additional resources
 
-* [Develop libraries with the .NET CLI](libraries.md)
-* [.NET Standard versions and the platforms they support](../../standard/net-standard.md).
+- [Develop libraries with the .NET CLI](libraries.md)
+- [.NET Standard versions and the platforms they support](../../standard/net-standard.md).
 
 ## Next steps
 

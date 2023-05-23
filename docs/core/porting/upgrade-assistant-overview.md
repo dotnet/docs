@@ -128,10 +128,7 @@ Depending on the project you upgrade, you may be presented with an option to spe
 
 - Side-by-side project upgrade
 
-  Copies your project and upgrades the copy, leaving your original project alone.
-
-> [!TIP]
-> Since upgrades from .NET Core and .NET are simple, only In-place project upgrade available for those cases
+  This option is only available for .NET Framework projects. Copies your project and upgrades the copy, leaving your original project alone.
 
 ```
  Selected options

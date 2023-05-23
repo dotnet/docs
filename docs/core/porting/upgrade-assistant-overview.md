@@ -50,7 +50,7 @@ The following upgrade paths are supported:
 - Xamarin Forms to .NET MAUI
   - XAML file transformations only support upgrading namespaces. For more comprehensive transformations, use Visual Studio 2022 version 17.6 or later.
 
-## Upgrade a project
+## Upgrade a project to the latest .NET
 
 After the Update Assistant is installed, you can upgrade a project. You should **always** back up your projects to another folder, so you can restore them if something goes wrong with the upgrade.
 
@@ -130,14 +130,8 @@ Depending on the project you upgrade, you may be presented with an option to spe
 
   Copies your project and upgrades the copy, leaving your original project alone.
 
-- Side-by-side incremental
-
-  A good choice for complicated web apps. Upgrading from ASP.NET to ASP.NET Core requires quite a bit of work and at times manual refactoring. This mode puts a .NET project next to your existing .NET Framework project, and routes endpoints that are implemented in the .NET project, while all other calls are sent to .NET Framework application.
-
-  This mode lets you slowly upgrade your ASP.NET or Library app piece-by-piece.
-
 > [!TIP]
-> If an option doesn't apply, it's not listed.
+> Since upgrades from .NET Core and .NET are simple, only In-place project upgrade available for those cases
 
 ```
  Selected options

@@ -1,12 +1,14 @@
 ---
 title: Activation garbage collection
 description: Learn about activation garbage collection in .NET Orleans.
-ms.date: 03/16/2022
+ms.date: 05/22/2023
 ---
 
 # Activation garbage collection
 
-As described in the Core Concepts section, a *grain activation* is an in-memory instance of a grain class that gets automatically created by the Orleans runtime on an as-needed basis as a temporary physical embodiment of a grain.
+This article applies to: ✔️ Orleans 3.x and earlier versions
+
+A *grain activation* is an in-memory instance of a grain class that gets automatically created by the Orleans runtime on an as-needed basis as a temporary physical embodiment of a grain.
 
 Activation Garbage Collection (Activation GC) is the process of removal from memory of unused grain activations. It is conceptually similar to how garbage collection of memory works in .NET. However, Activation GC only takes into consideration how long a particular grain activation has been idle. Memory usage is not used as a factor.
 

@@ -2,7 +2,7 @@
 title: Overview of the .NET Upgrade Assistant
 description: Introducing the .NET Upgrade Assistant tool that helps upgrade .NET, .NET Core, or .NET Framework apps to the latest version of .NET.
 author: adegeo
-ms.date: 05/16/2023
+ms.date: 05/22/2023
 no-loc: ["appsettings.json", "App.config"]
 ---
 # Overview of the .NET Upgrade Assistant
@@ -50,18 +50,18 @@ The following upgrade paths are supported:
 - Xamarin Forms to .NET MAUI
   - XAML file transformations only support upgrading namespaces. For more comprehensive transformations, use Visual Studio 2022 version 17.6 or later.
 
-## Upgrade a project
+## Upgrade a project to the latest .NET
 
-After the Update Assistant is installed, you can upgrade a project.
+After the Update Assistant is installed, you can upgrade a project. You should **always** back up your projects to another folder, so you can restore them if something goes wrong with the upgrade.
 
 ### Upgrade with the Visual Studio extension
 
 After you've [installed the .NET Upgrade Assistant extension](upgrade-assistant-install.md#install-the-visual-studio-extension), right-click on the project in the **Solution Explorer** window, and select **Upgrade**.
 
-:::image type="content" source="media/upgrade-assistant-overview/visual-studio-upgrade.png" alt-text="The .NET Upgrade Assistant's Upgrade menu item in Visual Studio.":::
+> [!CAUTION]
+> Make sure you backup your projects prior to upgrading.
 
-> [!IMPORTANT]
-> At this time, upgrading solutions isn't supported.
+:::image type="content" source="media/upgrade-assistant-overview/visual-studio-upgrade.png" alt-text="The .NET Upgrade Assistant's Upgrade menu item in Visual Studio.":::
 
 A tab is opened which provides, based on your project type, different styles of upgrade:
 
@@ -88,13 +88,99 @@ Once your app has been upgraded, a status screen is displayed which shows all of
 
 :::image type="content" source="media/upgrade-assistant-overview/visual-studio-upgrade-results.png" alt-text="The .NET Upgrade Assistant's Upgrade results tab in Visual Studio.":::
 
-After upgrading your project, you'll need to test it throughout, and most likely, you'll have some compiler errors you must fix.
+After upgrading your project, you'll need to test it thoroughly.
+
+### Upgrade with the CLI tool
+
+After you've [installed the .NET Upgrade Assistant CLI tool](upgrade-assistant-install.md#install-the-net-global-tool), open a terminal window and navigate to the directory that contains the project you want to upgrade.
+
+> [!CAUTION]
+> Make sure you backup your projects prior to running the upgrade tool.
+
+The CLI tool provides an interactive way of choosing which project to upgrade. Use the arrow keys to select an item, and press <kbd>Enter</kbd> to run the item. Run the tool with the `upgrade-assistant upgrade` command, all of the projects from the current folder and below, are listed. You can select which project to upgrade:
+
+```
+ Selected options
+───────────────────────────────────────────────────────────
+ No options specified, follow steps below to continue
+
+ Steps
+─────────────────
+ Source project
+─────────────────
+
+Which project do you want to upgrade (found 9)?
+
+> MatchingGame (winforms\MatchingGame\MatchingGame.csproj)
+  MatchingGame.Logic (winforms\MatchingGame.Logic\MatchingGame.Logic.csproj)
+  StarVoteControl (csharp\StarVoteControl\StarVoteControl.csproj)
+  WebSiteRatings (csharp\WebSiteRatings\WebSiteRatings.csproj)
+
+  Navigation
+    Exit
+```
+
+Depending on the project you upgrade, you may be presented with an option to specify how the upgrade should proceed:
+
+- In-place project upgrade
+
+  This option upgrades your project without making a copy.
+
+- Side-by-side project upgrade
+
+  This option is only available for .NET Framework projects. Copies your project and upgrades the copy, leaving your original project alone.
+
+```
+ Selected options
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ Source project     C:\Code\winforms\MatchingGame\MatchingGame.csproj
+
+ Steps
+───────────────────────────────
+ Source project / Upgrade type
+───────────────────────────────
+
+How do you want to upgrade project MatchingGame?
+
+> In-place project upgrade
+  Side-by-side project upgrade
+
+  Navigation
+    Back
+    Exit
+```
+
+After this step, if there's more than one upgradable target framework, you'll choose a target:
+
+```
+ Selected options
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ Source project     C:\Code\Work\dotnet\dotnet-docs\docs\core\porting\snippets\upgrade-assistant-wpf-framework\winforms\MatchingGame\MatchingGame.csproj
+ Ugrade type        Inplace
+
+ Steps
+──────────────────────────────────────────────────
+ Source project / Ugrade type / Target framework
+──────────────────────────────────────────────────
+
+What is your preferred target framework?
+
+> .NET 6.0 (Supported until November, 2024)
+  .NET 7.0 (Supported until May, 2024)
+  .NET 8.0 (Try latest preview features)
+
+  Navigation
+    Back
+    Exit
+```
+
+After upgrading your project, you'll need to test it thoroughly.
 
 ## .NET Framework modernization
 
 When upgrading a .NET Framework app, you'll most likely have some incompatibilities. For example, .NET doesn't provide APIs to access the Windows Registry like .NET Framework did. Support for the Windows Registry is provided by the `Microsoft.Win32.Registry` NuGet package. Many the .NET Framework-specific libraries have been ported to .NET or .NET Standard, and are hosted on NuGet. If you find a missing reference in your project, search NuGet.
 
-Your app can also be modernized to take advantage of new APIs and libraries. The following sections describe a few of these modernization points.
+Your app can be modernized to take advantage of new APIs and libraries. The following sections describe a few of these modernization points.
 
 ### Web browser control
 

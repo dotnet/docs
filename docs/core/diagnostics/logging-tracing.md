@@ -9,7 +9,7 @@ Code can be instrumented to produce a log, which serves as a record of interesti
 
 The terms logging and tracing are commonly synonymous, the distinction we usually take is that logging output is expected to be collected all the time, and so should have a low overhead. Tracing is typically more invasive and collects more information from deeper parts of the application and .NET runtime, so is either used when diagnosing specific problems, or automatically for short periods of time as part of deeper performance analysis systems.
 
-Another pivot on the tracing term is [Distributed Tracing](./distributed-tracing.md) - which collects high-level activity & timing data for request based systems, and correlates the requests across services to give a view of how each request is processed  by the complete system.
+Another pivot on the tracing term is [Distributed Tracing](./distributed-tracing.md) - which collects high-level activity & timing data for request based systems, and correlates the requests across services to give a view of how each request is processed by the complete system.
 
 ## Key distinctions in logging APIs
 
@@ -36,7 +36,7 @@ Most logging APIs allow log messages to be sent to different destinations called
 
 For most cases, whether adding logging to an existing project or creating a new project, the [ILogger infrastructure](../extensions/logging.md) is a good default choice. `ILogger` supports fast structured logging, flexible configuration, and a collection of [common sinks](../extensions/logging-providers.md#built-in-logging-providers) including the console, which is what you see when running an ASP.NET app. Additionally, the `ILogger` interface can also serve as a facade over many [third party logging implementations](../extensions/logging-providers.md#third-party-logging-providers) that offer more functionality and extensibility.
 
-ILogger provides the logging story for the Open Telemetry implementation for .NET, which enables egress of logs from you application to a variety of APM systems for further analysis.
+`ILogger` provides the logging story for the Open Telemetry implementation for .NET, which enables egress of logs from you application to a variety of APM systems for further analysis.
 
 ### EventSource
 

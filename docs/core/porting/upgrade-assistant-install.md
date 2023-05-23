@@ -3,7 +3,7 @@ title: How to install the .NET Upgrade Assistant
 description: This article describes how to install the .NET Upgrade Assistant tool, which can be installed as a Visual Studio extension or a dotnet command-line tool.
 author: adegeo
 topic: how-to
-ms.date: 05/16/2023
+ms.date: 05/22/2023
 ---
 # Install the .NET Upgrade Assistant
 

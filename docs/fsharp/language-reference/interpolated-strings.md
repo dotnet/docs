@@ -14,6 +14,7 @@ Interpolated strings are [strings](strings.md) that allow you to embed F# expres
 $"string-text {expr}"
 $"string-text %format-specifier{expr}"
 $"""string-text {"embedded string literal"}"""
+$$"""string-text %%format-specifier{{expr}}"""
 ```
 
 ## Remarks
@@ -121,7 +122,29 @@ let frmtStr = $"The speed of light is {speedOfLight:N3} km/s." : FormattableStri
 
 Note that the type annotation must be on the interpolated string expression itself. F# does not implicitly convert an interpolated string into a <xref:System.FormattableString>.
 
+## Extended syntax for string interpolation
+
+When you work with text containing multiple `{`, `}` or `%` characters already, you can use extended string interpolation syntax to remove the need for escaping.
+
+Triple quote string literals can start with multiple `$` characters, which changes how many braces are required to open and close interpolation.
+In these string literals, `{` and `}` characters don't need to be escaped:
+
+```fsharp
+let str = $$"""A string containing some {curly braces} and an {{"F#" + " " + "expression"}}."""
+// "A string containing some {curly braces} and an F# expression."
+let another = $$$"""A string with pairs of {{ and }} characters and {{{ "an F# expression" }}}."""
+// "A string with pairs of {{ and }} characters and an F# expression."""
+```
+
+The number of `%` characters needed for format specifiers is affected in the same way:
+
+```fsharp
+let percent = $$"""50% of 20 is %%.1f{{20m * 0.5m}}"""
+// "50% of 20 is 10.0"
+```
+
 ## See also
 
 * [Strings](strings.md)
 * [F# RFC FS-1001 - Interpolated strings](https://github.com/fsharp/fslang-design/blob/main/FSharp-5.0/FS-1001-StringInterpolation.md)
+* [F# RFC FS-1132 - Extended syntax for interpolated strings](https://github.com/fsharp/fslang-design/blob/main/RFCs/FS-1132-better-interpolated-triple-quoted-strings.md)

@@ -3,7 +3,7 @@ title: Install .NET on Ubuntu 22.04
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu 22.04.
 author: adegeo
 ms.author: adegeo
-ms.date: 03/01/2023
+ms.date: 05/24/2023
 ---
 
 # Install .NET SDK or .NET Runtime on Ubuntu 22.04

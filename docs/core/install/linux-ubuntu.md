@@ -3,7 +3,7 @@ title: .NET and Ubuntu overview
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu.
 author: adegeo
 ms.author: adegeo
-ms.date: 05/05/2023
+ms.date: 05/24/2023
 ---
 
 # Install the .NET SDK or the .NET Runtime on Ubuntu

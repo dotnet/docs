@@ -103,6 +103,7 @@ Native AOT applications come with a few fundamental limitations and compatibilit
 - Requires trimming, which has [limitations](../trimming/incompatibilities.md).
 - Implies compilation into a single file, which has known [incompatibilities](../single-file/overview.md#api-incompatibility).
 - Apps include required runtime libraries (just like [self-contained apps](../index.md#publish-self-contained), increasing their size as compared to framework-dependent apps).
+- [System.Linq.Expressions](https://learn.microsoft.com/en-us/dotnet/api/system.linq.expressions?view=net-7.0) are interpreted, not compiled, and therefore are much slower than in CoreCLR
 
 The publish process analyzes the entire project and its dependencies and produces warnings whenever the limitations could potentially be hit by the published application at run time.
 

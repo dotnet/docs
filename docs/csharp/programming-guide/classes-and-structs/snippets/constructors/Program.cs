@@ -1,17 +1,5 @@
-﻿using System;
-
-namespace constructors
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
-}
-
-// <Snippet1>
+﻿
+// <InstanceCtor>
 public class Person
 {
    private string last;
@@ -25,9 +13,9 @@ public class Person
 
    // Remaining implementation of Person class.
 }
-// </Snippet1>
+// </InstanceCtor>
 
-// <Snippet2>
+// <StaticCtor>
 public class Adult : Person
 {
    private static int minimumAge;
@@ -42,9 +30,9 @@ public class Adult : Person
 
    // Remaining implementation of Adult class.
 }
-// </Snippet2>
+// </StaticCtor>
 
-// <Snippet3>
+// <StaticExpression>
 public class Child : Person
 {
    private static int maximumAge;
@@ -56,4 +44,19 @@ public class Child : Person
 
    // Remaining implementation of Child class.
 }
-// </Snippet3>
+// </StaticExpression>
+
+// <ExpressionBodiedCtor>
+public class Location
+{
+   private string locationName;
+
+   public Location(string name) => Name = name;
+
+   public string Name
+   {
+      get => locationName;
+      set => locationName = value;
+   }
+}
+// </ExpressionBodiedCtor>

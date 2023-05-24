@@ -22,26 +22,17 @@ The following versions of .NET are supported or available for Ubuntu 22.04:
 
 | Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------|-----------------------------------|
-| 7.0, 6.0                | 6.0                      | 7.0, 6.0, 3.1                     |
+| 7.0, 6.0                | 7.0, 6.0                 | 7.0, 6.0, 3.1                     |
+
+[!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
-## Install .NET 7
+## Install .NET
 
-.NET 7 packages aren't available in the Ubuntu package manager feeds. You must use the Microsoft package repository.
-
-> [!WARNING]
-> If you've previously installed .NET 6 from the Ubuntu feed, you'll run into issues installing .NET 7 from the Microsoft package repository. .NET is installed to different locations and is resolved differently for both package feeds. It's recommended that you uninstall .NET 6 and then install with the Microsoft package repository.
->
-> For more information about how to clean your system and install .NET 7, see [I need a version of .NET that isn't provided by my Linux distribution](linux-package-mixup.md?pivots=os-linux-ubuntu#i-need-a-version-of-net-that-isnt-provided-by-my-linux-distribution).
-
-## Install .NET 6
-
-This section describes how to install .NET 6.
-
-[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
+[!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
 
 ## How to install other versions
 

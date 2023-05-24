@@ -124,128 +124,145 @@ The [template engine](https://github.com/dotnet/templating) provides a more secu
 
 ## Serialization
 
-Various improvements have been made to <xref:System.Text.Json?displayProperty=fullName> serialization and deserialization functionality.
+Many improvements have been made to <xref:System.Text.Json?displayProperty=fullName> serialization and deserialization functionality including:
 
 - Performance and reliability enhancements of the [source generator](../../standard/serialization/system-text-json/source-generation.md) when used with ASP.NET Core in [native AOT](../../standard/glossary.md#native-aot) apps.
 - The [source generator](../../standard/serialization/system-text-json/source-generation.md) now supports serializing types with [`required`](../../standard/serialization/system-text-json/required-properties.md) and [`init`](../../csharp/language-reference/keywords/init.md) properties. These were both already supported in reflection-based serialization.
-- [Customize handling of members that aren't in the JSON payload.](../../standard/serialization/system-text-json/missing-members.md)
-- Support for serializing properties from interface hierarchies. The following code shows an example where the properties from both the immediately implemented interface and its base interface are serialized.
-
-  ```csharp
-  IDerived value = new DerivedImplement { Base = 0, Derived =1 };
-  JsonSerializer.Serialize(value); // {"Base":0,"Derived":1}
-
-  public interface IBase
-  {
-      public int Base { get; set; }
-  }
-
-  public interface IDerived : IBase
-  {
-      public int Derived { get; set; }
-  }
-
-  public class DerivedImplement : IDerived
-  {
-      public int Base { get; set; }
-      public int Derived { get; set; }
-  }
-  ```
-
-- [`JsonNamingPolicy`](/dotnet/api/system.text.json.jsonnamingpolicy?view=net-8.0&preserve-view=true#properties) includes new naming policies for `snake_case` (with an underscore) and `kebab-case` (with a hyphen) property name conversions. Use these policies similarly to the existing <xref:System.Text.Json.JsonNamingPolicy.CamelCase?displayProperty=nameWithType> policy:
-
-  ```csharp
-  var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower };
-  JsonSerializer.Serialize(new { PropertyName = "value" }, options); // { "property_name" : "value" }
-  ```
-
+- You can [customize handling of members that aren't in the JSON payload.](../../standard/serialization/system-text-json/missing-members.md)
 - <xref:System.Text.Json.JsonSerializerOptions.MakeReadOnly?displayProperty=nameWithType> gives you explicit control over when a `JsonSerializerOptions` instance is frozen. (You can also check it with the <xref:System.Text.Json.JsonSerializerOptions.IsReadOnly> property.)
-
-- Support for deserializing onto read-only fields or properties (that is, those that don't have a `set` accessor).
-
-  You can opt into this support globally by setting a new option, <xref:System.Text.Json.JsonSerializerOptions.PreferredObjectCreationHandling>, to <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Populate?displayProperty=nameWithType>. If compatibility is a concern, you can also enable the functionality more granularly by placing the `[JsonObjectCreationHandling(JsonObjectCreationHandling.Populate)]` attribute on types whose properties are to be populated, or on individual properties.
-
-  For example, consider the following code that deserializes into a `CustomerInfo` type that has two read-only properties.
-
-  ```csharp
-  using System.Text.Json;
-
-  CustomerInfo customer =
-      JsonSerializer.Deserialize<CustomerInfo>("""{"Name":"John Doe","Company":{"Name":"Contoso"}}""")!;
-
-  Console.WriteLine(JsonSerializer.Serialize(customer));
-
-  class CompanyInfo
-  {
-      public required string Name { get; set; }
-      public string? PhoneNumber { get; set; }
-  }
-
-  [JsonObjectCreationHandling(JsonObjectCreationHandling.Populate)]
-  class CustomerInfo
-  {
-      // Both of these properties are read-only.
-      public string Name { get; } = "Anonymous";
-      public CompanyInfo Company { get; } = new CompanyInfo() { Name = "N/A", PhoneNumber = "N/A" };
-  }
-  ```
-
-  Prior to .NET 8, the input values were ignored and the `Name` and `Company` properties retained their default values.
-
-  ```output
-  {"Name":"Anonymous","Company":{"Name":"N/A","PhoneNumber":"N/A"}}
-  ```
-
-  Now, the input values are used to populate the read-only properties during deserialization.
-
-  ```output
-  {"Name":"John Doe","Company":{"Name":"Contoso","PhoneNumber":null}}
-  ```
-
-- You can now disable using the reflection-based serializer by default. This disablement is useful to avoid accidental rooting of reflection components that aren't even in use, especially in trimmed and native AOT apps. To disable default reflection-based serialization by requiring that a <xref:System.Text.Json.JsonSerializerOptions> argument be passed to the <xref:System.Text.Json.JsonSerializer> serialization and deserialization methods, set the `<JsonSerializerIsReflectionEnabledByDefault >` property to `false` in your project file. (If the property is set to `false` and you don't pass a configured <xref:System.Text.Json.JsonSerializerOptions> argument, the `Serialize` and `Deserialize` methods throw a <xref:System.NotSupportedException> at run time.)
-
-  Use the new <xref:System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault> property to check the value of the feature switch. If you're a library author building on top of <xref:System.Text.Json?displayProperty=fullName>, you can rely on the property to configure your defaults without accidentally rooting reflection components.
-
-  ```csharp
-  static JsonSerializerOptions GetDefaultOptions()
-  {
-      if (JsonSerializer.IsReflectionEnabledByDefault)
-      {
-          // This branch has a dependency on DefaultJsonTypeInfo,
-          // but it will get trimmed away if the feature switch is disabled.
-          return new JsonSerializerOptions
-          {
-                TypeInfoResolver = new DefaultJsonTypeInfoResolver(),
-                PropertyNamingPolicy = JsonNamingPolicy.KebabCaseLower,
-          }
-      }
-
-      return new() { PropertyNamingPolicy = JsonNamingPolicy.KebabCaseLower } ;
-  }
-  ```
-
-- The <xref:System.Text.Json.JsonSerializerOptions> class includes a new <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> property that complements the existing <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> property. These properties are used in contract customization for chaining source generators. The addition of the new property means that you don't have to specify all chained components at one call site&mdash;they can be added after the fact.
-
-  <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> also lets you introspect the chain or remove components from it. The following code snippet shows an example.
-
-  ```csharp
-  var options = new JsonSerializerOptions
-  {
-      TypeInfoResolver = JsonTypeInfoResolver.Combine(ContextA.Default, ContextB.Default, ContextC.Default);
-  };
-
-  options.TypeInfoResolverChain.Count; // 3
-  options.TypeInfoResolverChain.RemoveAt(0);
-  options.TypeInfoResolverChain.Count; // 2
-  ```
-
 - <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=nameWithType> is now obsolete. It's been superseded by the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> and <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> properties.
-
 - The new <xref:System.Text.Json.JsonSerializerOptions.TryGetTypeInfo(System.Type,System.Text.Json.Serialization.Metadata.JsonTypeInfo@)> method, a variation of the existing <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo(System.Type)> method, returns `false` if no metadata for the specified type was found.
-
 - .NET 8 adds support for compiler-generated or *unspeakable* types in weakly typed source generation scenarios. Since compiler-generated types can't be explicitly specified by the source generator, <xref:System.Text.Json?displayProperty=fullName> now performs nearest-ancestor resolution at run time. This resolution determines the most appropriate supertype with which to serialize the value.
 
+The following sections go into more depth about other serialization improvements:
+
+- [Interface hierarchies](#interface-hierarchies)
+- [Naming policies](#naming-policies)
+- [Read-only properties](#read-only-properties)
+- [Disable reflection-based default](#disable-reflection-based-default)
+- [Chain source generators](#chain-source-generators)
+
 For more information about JSON serialization in general, see [JSON serialization and deserialization in .NET](../../standard/serialization/system-text-json/overview.md).
+
+### Interface hierarchies
+
+.NET 8 adds support for serializing properties from interface hierarchies.
+
+The following code shows an example where the properties from both the immediately implemented interface and its base interface are serialized.
+
+```csharp
+IDerived value = new DerivedImplement { Base = 0, Derived =1 };
+JsonSerializer.Serialize(value); // {"Base":0,"Derived":1}
+
+public interface IBase
+{
+    public int Base { get; set; }
+}
+
+public interface IDerived : IBase
+{
+    public int Derived { get; set; }
+}
+
+public class DerivedImplement : IDerived
+{
+    public int Base { get; set; }
+    public int Derived { get; set; }
+}
+```
+
+### Naming policies
+
+[`JsonNamingPolicy`](/dotnet/api/system.text.json.jsonnamingpolicy?view=net-8.0&preserve-view=true#properties) includes new naming policies for `snake_case` (with an underscore) and `kebab-case` (with a hyphen) property name conversions. Use these policies similarly to the existing <xref:System.Text.Json.JsonNamingPolicy.CamelCase?displayProperty=nameWithType> policy:
+
+```csharp
+var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower };
+JsonSerializer.Serialize(new { PropertyName = "value" }, options); // { "property_name" : "value" }
+```
+
+### Read-only properties
+
+You can now deserialize onto read-only fields or properties (that is, those that don't have a `set` accessor).
+
+To opt into this support globally, set a new option, <xref:System.Text.Json.JsonSerializerOptions.PreferredObjectCreationHandling>, to <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Populate?displayProperty=nameWithType>. If compatibility is a concern, you can also enable the functionality more granularly by placing the `[JsonObjectCreationHandling(JsonObjectCreationHandling.Populate)]` attribute on types whose properties are to be populated, or on individual properties.
+
+For example, consider the following code that deserializes into a `CustomerInfo` type that has two read-only properties.
+
+```csharp
+using System.Text.Json;
+
+CustomerInfo customer =
+    JsonSerializer.Deserialize<CustomerInfo>("""{"Name":"John Doe","Company":{"Name":"Contoso"}}""")!;
+
+Console.WriteLine(JsonSerializer.Serialize(customer));
+
+class CompanyInfo
+{
+    public required string Name { get; set; }
+    public string? PhoneNumber { get; set; }
+}
+
+[JsonObjectCreationHandling(JsonObjectCreationHandling.Populate)]
+class CustomerInfo
+{
+    // Both of these properties are read-only.
+    public string Name { get; } = "Anonymous";
+    public CompanyInfo Company { get; } = new CompanyInfo() { Name = "N/A", PhoneNumber = "N/A" };
+}
+```
+
+Prior to .NET 8, the input values were ignored and the `Name` and `Company` properties retained their default values.
+
+```output
+{"Name":"Anonymous","Company":{"Name":"N/A","PhoneNumber":"N/A"}}
+```
+
+Now, the input values are used to populate the read-only properties during deserialization.
+
+```output
+{"Name":"John Doe","Company":{"Name":"Contoso","PhoneNumber":null}}
+```
+
+### Disable reflection-based default
+
+You can now disable using the reflection-based serializer by default. This disablement is useful to avoid accidental rooting of reflection components that aren't even in use, especially in trimmed and native AOT apps. To disable default reflection-based serialization by requiring that a <xref:System.Text.Json.JsonSerializerOptions> argument be passed to the <xref:System.Text.Json.JsonSerializer> serialization and deserialization methods, set the `<JsonSerializerIsReflectionEnabledByDefault >` property to `false` in your project file. (If the property is set to `false` and you don't pass a configured <xref:System.Text.Json.JsonSerializerOptions> argument, the `Serialize` and `Deserialize` methods throw a <xref:System.NotSupportedException> at run time.)
+
+Use the new <xref:System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault> property to check the value of the feature switch. If you're a library author building on top of <xref:System.Text.Json?displayProperty=fullName>, you can rely on the property to configure your defaults without accidentally rooting reflection components.
+
+```csharp
+static JsonSerializerOptions GetDefaultOptions()
+{
+    if (JsonSerializer.IsReflectionEnabledByDefault)
+    {
+        // This branch has a dependency on DefaultJsonTypeInfo,
+        // but it will get trimmed away if the feature switch is disabled.
+        return new JsonSerializerOptions
+        {
+              TypeInfoResolver = new DefaultJsonTypeInfoResolver(),
+              PropertyNamingPolicy = JsonNamingPolicy.KebabCaseLower,
+        }
+    }
+
+    return new() { PropertyNamingPolicy = JsonNamingPolicy.KebabCaseLower } ;
+}
+```
+
+### Chain source generators
+
+The <xref:System.Text.Json.JsonSerializerOptions> class includes a new <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> property that complements the existing <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> property. These properties are used in contract customization for chaining source generators. The addition of the new property means that you don't have to specify all chained components at one call site&mdash;they can be added after the fact.
+
+<xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> also lets you introspect the chain or remove components from it. The following code snippet shows an example.
+
+```csharp
+var options = new JsonSerializerOptions
+{
+    TypeInfoResolver = JsonTypeInfoResolver.Combine(ContextA.Default, ContextB.Default, ContextC.Default);
+};
+
+options.TypeInfoResolverChain.Count; // 3
+options.TypeInfoResolverChain.RemoveAt(0);
+options.TypeInfoResolverChain.Count; // 2
+```
 
 ## Core .NET libraries
 

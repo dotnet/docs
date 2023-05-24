@@ -45,7 +45,7 @@ public ref int CantEscape()
 }
 ```
 
-The compiler reports an error because you can't return a reference to a local variable from a method. The caller can't access the storage being referred to. The *ref safe to escape scope* defines the scope in which a `ref` expression is safe to access or modify. The following table lists the *ref safe to escape scopes* for variable types. `ref` fields can't be declared in a `class` or a non-ref `struct`, so those those rows aren't in the table:
+The compiler reports an error because you can't return a reference to a local variable from a method. The caller can't access the storage being referred to. The *ref safe to escape scope* defines the scope in which a `ref` expression is safe to access or modify. The following table lists the *ref safe to escape scopes* for variable types. `ref` fields can't be declared in a `class` or a non-ref `struct`, so those rows aren't in the table:
 
 | Declaration                 | *ref safe to escape scope*    |
 |-----------------------------|-------------------------------|

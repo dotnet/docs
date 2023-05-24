@@ -16,13 +16,13 @@ ms.assetid: 3680171f-f522-453c-aa4a-54f755a78f88
 
 # Observer design pattern
 
-The observer design pattern enables a subscriber to register with and receive notifications from a provider. It is suitable for any scenario that requires push-based notification. The pattern defines a *provider* (also known as a *subject* or an *observable*) and zero, one, or more *observers*. Observers register with the provider, and whenever a predefined condition, event, or state change occurs, the provider automatically notifies all observers by calling one of their methods. In this method call, the provider can also provide current state information to observers. In .NET, the observer design pattern is applied by implementing the generic <xref:System.IObservable%601?displayProperty=nameWithType> and <xref:System.IObserver%601?displayProperty=nameWithType> interfaces. The generic type parameter represents the type that provides notification information.
+The observer design pattern enables a subscriber to register with and receive notifications from a provider. It's suitable for any scenario that requires push-based notification. The pattern defines a *provider* (also known as a *subject* or an *observable*) and zero, one, or more *observers*. Observers register with the provider, and whenever a predefined condition, event, or state change occurs, the provider automatically notifies all observers by calling one of their methods. In this method call, the provider can also provide current state information to observers. In .NET, the observer design pattern is applied by implementing the generic <xref:System.IObservable%601?displayProperty=nameWithType> and <xref:System.IObserver%601?displayProperty=nameWithType> interfaces. The generic type parameter represents the type that provides notification information.
 
 ## When to apply the pattern
 
 The observer design pattern is suitable for distributed push-based notifications, because it supports a clean separation between two different components or application layers, such as a data source (business logic) layer and a user interface (display) layer. The pattern can be implemented whenever a provider uses callbacks to supply its clients with current information.
 
-Implementing the pattern requires that you provide the following:
+Implementing the pattern requires that you provide the following details:
 
 - A provider or subject, which is the object that sends notifications to observers. A provider is a class or structure that implements the <xref:System.IObservable%601> interface. The provider must implement a single method, <xref:System.IObservable%601.Subscribe%2A?displayProperty=nameWithType>, which is called by observers that wish to receive notifications from the provider.
 
@@ -32,18 +32,18 @@ Implementing the pattern requires that you provide the following:
   - <xref:System.IObserver%601.OnError%2A?displayProperty=nameWithType>, which informs the observer that an error has occurred.
   - <xref:System.IObserver%601.OnCompleted%2A?displayProperty=nameWithType>, which indicates that the provider has finished sending notifications.
 
-- A mechanism that allows the provider to keep track of observers. Typically, the provider uses a container object, such as a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> object, to hold references to the <xref:System.IObserver%601> implementations that have subscribed to notifications. Using a storage container for this purpose enables the provider to handle zero to an unlimited number of observers. The order in which observers receive notifications is not defined; the provider is free to use any method to determine the order.
+- A mechanism that allows the provider to keep track of observers. Typically, the provider uses a container object, such as a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> object, to hold references to the <xref:System.IObserver%601> implementations that have subscribed to notifications. Using a storage container for this purpose enables the provider to handle zero to an unlimited number of observers. The order in which observers receive notifications isn't defined; the provider is free to use any method to determine the order.
 
 - An <xref:System.IDisposable> implementation that enables the provider to remove observers when notification is complete. Observers receive a reference to the <xref:System.IDisposable> implementation from the <xref:System.IObservable%601.Subscribe%2A> method, so they can also call the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method to unsubscribe before the provider has finished sending notifications.
 
-- An object that contains the data that the provider sends to its observers. The type of this object corresponds to the generic type parameter of the <xref:System.IObservable%601> and <xref:System.IObserver%601> interfaces. Although this object can be the same as the <xref:System.IObservable%601> implementation, most commonly it is a separate type.
+- An object that contains the data that the provider sends to its observers. The type of this object corresponds to the generic type parameter of the <xref:System.IObservable%601> and <xref:System.IObserver%601> interfaces. Although this object can be the same as the <xref:System.IObservable%601> implementation, most commonly it's a separate type.
 
 > [!NOTE]
 > In addition to implementing the observer design pattern, you may be interested in exploring libraries that are built using the <xref:System.IObservable%601> and <xref:System.IObserver%601> interfaces. For example, [Reactive Extensions for .NET (Rx)](/previous-versions/dotnet/reactive-extensions/hh242985(v=vs.103)) consist of a set of extension methods and LINQ standard sequence operators to support asynchronous programming.
 
 ## Implement the pattern
 
-The following example uses the observer design pattern to implement an airport baggage claim information system. A `BaggageInfo` class provides information about arriving flights and the carousels where baggage from each flight is available for pickup. It is shown in the following example.
+The following example uses the observer design pattern to implement an airport baggage claim information system. A `BaggageInfo` class provides information about arriving flights and the carousels where baggage from each flight is available for pickup. It's shown in the following example.
 
 :::code source="snippets/observables/BaggageInfo.cs":::
 [!code-vb[Conceptual.ObserverDesignPattern#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesignpattern/vb/provider.vb#1)]
@@ -53,35 +53,35 @@ A `BaggageHandler` class is responsible for receiving information about arriving
 - `_observers`: A collection of clients that observe updated information.
 - `_flights`: A collection of flights and their assigned carousels.
 
-Both collections are represented by generic <xref:System.Collections.Generic.List%601> objects that are instantiated in the `BaggageHandler` class constructor. The source code for the `BaggageHandler` class is shown in the following example.
+The source code for the `BaggageHandler` class is shown in the following example.
 
 :::code source="snippets/observables/BaggageHandler.cs":::
 [!code-vb[Conceptual.ObserverDesignPattern#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesignpattern/vb/provider.vb#2)]
 
-Clients that wish to receive updated information call the `BaggageHandler.Subscribe` method. If the client has not previously subscribed to notifications, a reference to the client's <xref:System.IObserver%601> implementation is added to the `_observers` collection.
+Clients that wish to receive updated information call the `BaggageHandler.Subscribe` method. If the client hasn't previously subscribed to notifications, a reference to the client's <xref:System.IObserver%601> implementation is added to the `_observers` collection.
 
-The overloaded `BaggageHandler.BaggageStatus` method can be called to indicate that baggage from a flight either is being unloaded or is no longer being unloaded. In the first case, the method is passed a flight number, the airport from which the flight originated, and the carousel where baggage is being unloaded. In the second case, the method is passed only a flight number. For baggage that is being unloaded, the method checks whether the `BaggageInfo` information passed to the method exists in the `_flights` collection. If it does not, the method adds the information and calls each observer's `OnNext` method. For flights whose baggage is no longer being unloaded, the method checks whether information on that flight is stored in the `_flights` collection. If it is, the method calls each observer's `OnNext` method and removes the `BaggageInfo` object from the `_flights` collection.
+The overloaded `BaggageHandler.BaggageStatus` method can be called to indicate that baggage from a flight either is being unloaded or is no longer being unloaded. In the first case, the method is passed a flight number, the airport from which the flight originated, and the carousel where baggage is being unloaded. In the second case, the method is passed only a flight number. For baggage that is being unloaded, the method checks whether the `BaggageInfo` information passed to the method exists in the `_flights` collection. If it doesn't, the method adds the information and calls each observer's `OnNext` method. For flights whose baggage is no longer being unloaded, the method checks whether information on that flight is stored in the `_flights` collection. If it is, the method calls each observer's `OnNext` method and removes the `BaggageInfo` object from the `_flights` collection.
 
 When the last flight of the day has landed and its baggage has been processed, the `BaggageHandler.LastBaggageClaimed` method is called. This method calls each observer's `OnCompleted` method to indicate that all notifications have completed, and then clears the `_observers` collection.
 
-The provider's <xref:System.IObservable%601.Subscribe%2A> method returns an <xref:System.IDisposable> implementation that enables observers to stop receiving notifications before the <xref:System.IObserver%601.OnCompleted%2A> method is called. The source code for this `Unsubscriber(Of BaggageInfo)` class is shown in the following example. When the class is instantiated in the `BaggageHandler.Subscribe` method, it is passed a reference to the `_observers` collection and a reference to the observer that is added to the collection. These references are assigned to local variables. When the object's `Dispose` method is called, it checks whether the observer still exists in the `_observers` collection, and, if it does, removes the observer.
+The provider's <xref:System.IObservable%601.Subscribe%2A> method returns an <xref:System.IDisposable> implementation that enables observers to stop receiving notifications before the <xref:System.IObserver%601.OnCompleted%2A> method is called. The source code for this `Unsubscriber(Of BaggageInfo)` class is shown in the following example. When the class is instantiated in the `BaggageHandler.Subscribe` method, it's passed a reference to the `_observers` collection and a reference to the observer that is added to the collection. These references are assigned to local variables. When the object's `Dispose` method is called, it checks whether the observer still exists in the `_observers` collection, and, if it does, removes the observer.
 
 :::code source="snippets/observables/Unsubscriber.cs":::
 [!code-vb[Conceptual.ObserverDesignPattern#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesignpattern/vb/provider.vb#3)]
 
-The following example provides an <xref:System.IObserver%601> implementation named `ArrivalsMonitor`, which is a base class that displays baggage claim information. The information is displayed alphabetically, by the name of the originating city. The methods of `ArrivalsMonitor` are marked as `overridable` (in Visual Basic) or `virtual` (in C#), so they can all be overridden by a derived class.
+The following example provides an <xref:System.IObserver%601> implementation named `ArrivalsMonitor`, which is a base class that displays baggage claim information. The information is displayed alphabetically, by the name of the originating city. The methods of `ArrivalsMonitor` are marked as `overridable` (in Visual Basic) or `virtual` (in C#), so they can be overridden in a derived class.
 
 :::code source="snippets/observables/ArrivalsMonitor.cs":::
 [!code-vb[Conceptual.ObserverDesignPattern#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesignpattern/vb/observer.vb#4)]
 
 The `ArrivalsMonitor` class includes the `Subscribe` and `Unsubscribe` methods. The `Subscribe` method enables the class to save the <xref:System.IDisposable> implementation returned by the call to <xref:System.IObservable%601.Subscribe%2A> to a private variable. The `Unsubscribe` method enables the class to unsubscribe from notifications by calling the provider's <xref:System.IDisposable.Dispose%2A> implementation. `ArrivalsMonitor` also provides implementations of the <xref:System.IObserver%601.OnNext%2A>, <xref:System.IObserver%601.OnError%2A>, and <xref:System.IObserver%601.OnCompleted%2A> methods. Only the <xref:System.IObserver%601.OnNext%2A> implementation contains a significant amount of code. The method works with a private, sorted, generic <xref:System.Collections.Generic.List%601> object that maintains information about the airports of origin for arriving flights and the carousels on which their baggage is available. If the `BaggageHandler` class reports a new flight arrival, the <xref:System.IObserver%601.OnNext%2A> method implementation adds information about that flight to the list. If the `BaggageHandler` class reports that the flight's baggage has been unloaded, the <xref:System.IObserver%601.OnNext%2A> method removes that flight from the list. Whenever a change is made, the list is sorted and displayed to the console.
 
-The following example contains the application entry point that instantiates the `BaggageHandler` class as well as two instances of the `ArrivalsMonitor` class, and uses the `BaggageHandler.BaggageStatus` method to add and remove information about arriving flights. In each case, the observers receive updates and correctly display baggage claim information.
+The following example contains the application entry point that instantiates the `BaggageHandler` class and two instances of the `ArrivalsMonitor` class, and uses the `BaggageHandler.BaggageStatus` method to add and remove information about arriving flights. In each case, the observers receive updates and correctly display baggage claim information.
 
 :::code source="snippets/observables/Program.cs":::
 [!code-vb[Conceptual.ObserverDesignPattern#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesignpattern/vb/module1.vb#5)]
 
-## Related Topics
+## Related articles
 
 | Title | Description |
 |--|--|

@@ -1,4 +1,6 @@
 ﻿
+Console.WriteLine("constructors snippets");
+
 // <InstanceCtor>
 public class Person
 {

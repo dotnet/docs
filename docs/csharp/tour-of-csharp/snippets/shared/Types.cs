@@ -27,7 +27,7 @@ namespace TourOfCsharp
     //<PointFactoryClass>
     public class PointFactory(int numberOfPoints)
     {
-        public IENumerable<Point> CreatePoints()
+        public IEnumerable<Point> CreatePoints()
         {
             var generator = new Random();
             for (int i = 0; i < numberOfPoints; i++)

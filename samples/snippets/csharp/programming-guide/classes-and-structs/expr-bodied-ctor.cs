@@ -1,5 +1,7 @@
 using System;
 
+namespace ExprBodied;
+
 // <Snippet1>
 public class Location
 {

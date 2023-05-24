@@ -1,5 +1,7 @@
 ﻿using System;
 
+namespace ExpressionBodiedMembers;
+
 public class Person
 {
    public Person(string firstName, string lastName)

@@ -40,7 +40,7 @@ The previous examples have all shown instance constructors, which create a new o
 
 The following example uses a static constructor to initialize a static field.
 
-:::code source="./snippets/constructors/Program.cs" id="ExpressiStaticCtoronBodiedCtor":::
+:::code source="./snippets/constructors/Program.cs" id="StaticExpression":::
 
 You can also define a static constructor with an expression body definition, as the following example shows.
 

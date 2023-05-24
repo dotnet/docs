@@ -29,7 +29,7 @@ The code samples in this article:
 
 * Use the <xref:System.Text.Json.JsonSerializer> class with custom types to serialize from and deserialize into.
 
-  For information about how to read and write JSON data without using `JsonSerializer`, see [How to use the JSON DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md).
+  For information about how to read and write JSON data without using `JsonSerializer`, see [How to use the JSON DOM](use-dom.md), [How to use Utf8JsonReader](use-utf8jsonreader.md), and [How to use Utf8JsonWriter](use-utf8jsonwriter.md).
 
 * Use the <xref:System.Text.Json.JsonSerializerOptions.WriteIndented> option to format the JSON for human readability when that is helpful.
 
@@ -155,11 +155,11 @@ To deserialize from a file by using asynchronous code, call the <xref:System.Tex
 > [!TIP]
 > If you have JSON that you want to deserialize, and you don't have the class to deserialize it into, you have options other than manually creating the class that you need:
 >
-> * Deserialize into a [JSON DOM (document object model)](use-dom-utf8jsonreader-utf8jsonwriter.md) and extract what you need from the DOM.
+> * Deserialize into a [JSON DOM (document object model)](use-dom.md) and extract what you need from the DOM.
 >
->   The DOM lets you navigate to a subsection of a JSON payload and deserialize a single value, a custom type, or an array. For information about the <xref:System.Text.Json.Nodes.JsonNode> DOM in .NET 6, see [Deserialize subsections of a JSON payload](use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#deserialize-subsections-of-a-json-payload). For information about the <xref:System.Text.Json.JsonDocument> DOM, see [How to search a JsonDocument and JsonElement for sub-elements](migrate-from-newtonsoft.md#how-to-search-a-jsondocument-and-jsonelement-for-sub-elements).
+>   The DOM lets you navigate to a subsection of a JSON payload and deserialize a single value, a custom type, or an array. For information about the <xref:System.Text.Json.Nodes.JsonNode> DOM, see [Deserialize subsections of a JSON payload](use-dom.md#deserialize-subsections-of-a-json-payload). For information about the <xref:System.Text.Json.JsonDocument> DOM, see [How to search a JsonDocument and JsonElement for sub-elements](migrate-from-newtonsoft.md#how-to-search-a-jsondocument-and-jsonelement-for-sub-elements).
 >
-> * Use the [Utf8JsonReader](use-dom-utf8jsonreader-utf8jsonwriter.md#use-utf8jsonreader) directly.
+> * Use the [Utf8JsonReader](use-utf8jsonreader.md) directly.
 > * Use Visual Studio 2022 to automatically generate the class you need:
 >   * Copy the JSON that you need to deserialize.
 >   * Create a class file and delete the template code.
@@ -242,21 +242,3 @@ There are also extension methods for System.Text.Json on [HttpContent](xref:Syst
 ## See also
 
 * [System.Text.Json overview](overview.md)
-* [Instantiate JsonSerializerOptions instances](configure-options.md)
-* [Enable case-insensitive matching](character-casing.md)
-* [Customize property names and values](customize-properties.md)
-* [Ignore properties](ignore-properties.md)
-* [Allow invalid JSON](invalid-json.md)
-* [Handle overflow JSON or use JsonElement or JsonNode](handle-overflow.md)
-* [Preserve references and handle circular references](preserve-references.md)
-* [Deserialize to immutable types and non-public accessors](immutability.md)
-* [Polymorphic serialization](polymorphism.md)
-* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft.md)
-* [Customize character encoding](character-encoding.md)
-* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
-* [Write custom converters for JSON serialization](converters-how-to.md)
-* [DateTime and DateTimeOffset support](../../datetime/system-text-json-support.md)
-* [How to use source generation](source-generation.md)
-* [Supported collection types](supported-collection-types.md)
-* [System.Text.Json API reference](xref:System.Text.Json)
-* [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

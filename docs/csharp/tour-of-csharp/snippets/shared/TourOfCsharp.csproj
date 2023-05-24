@@ -2,10 +2,11 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>true</ImplicitUsings>
     <StartupObject>TourOfCsharp.Program</StartupObject>
+    <LangVer>preview</LangVer>
   </PropertyGroup>
 
 </Project>

@@ -24,6 +24,20 @@ namespace TourOfCsharp
     }
     //</PointClass>
 
+    //<PointFactoryClass>
+    public class PointFactory(int numberOfPoints)
+    {
+        public IENumerable<Point> CreatePoints()
+        {
+            var generator = new Random();
+            for (int i = 0; i < numberOfPoints; i++)
+            {
+                yield return new Point(generator.Next(), generator.Next());
+            }
+        }
+    }
+    //</PointFactoryClass>
+
     //<DefinePairClass>
     public class Pair<TFirst, TSecond>
     {
@@ -110,6 +124,14 @@ namespace TourOfCsharp
             var p1 = new Point(0, 0);
             var p2 = new Point(10, 20);
             //</CreatePoints>
+
+            // <UseFactory>
+            var factory = new PointFactory(10);
+            foreach (var point in factory.CreatePoints())
+            {
+                Console.WriteLine($"({point.X}, {point.Y})");
+            }
+            // </UseFactory>
 
             //<CreatePairObject>
             var pair = new Pair<int, string>(1, "two");

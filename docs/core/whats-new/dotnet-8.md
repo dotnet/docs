@@ -53,22 +53,22 @@ Alternatively, run `dotnet new buildprops --use-artifacts` and the template will
 
 By default, the common location is a folder named *artifacts* in the root of your repository rather than in each project folder. The folder structure under the root *artifacts* folder is as follows:
 
-```txt
-artifacts
-  |_<Type of output>
-     |_<Project name>
-        |_<Pivot>
+```Directory
+📁 artifacts
+    └──📂 <Type of output>
+        └──📂 <Project name>
+            └──📂 <Pivot>
 ```
 
 The following table shows the default values for each level in the folder structure. The values, as well as the default location, can be overridden using properties in the *Directory.build.props* file.
 
 | Folder level | Description |
-|---------|---------|
+|--|--|
 | Type of output | Examples: `bin`, `obj`, `publish`, or `package` |
 | Project name | Separates output by each project. |
 | Pivot | Distinguishes between builds of a project for different configurations, target frameworks, and runtime identifiers. If multiple elements are needed, they're joined by an underscore (`_`). |
 
-### 'dotnet workload clean' command
+### `dotnet workload clean` command
 
 .NET 8 introduces a new command to clean up workload packs that might be left over through several .NET SDK or Visual Studio updates. If you encounter issues when managing workloads, consider using `workload clean` to safely restore to a known state before trying again. The command has two modes:
 
@@ -82,7 +82,7 @@ The following table shows the default values for each level in the folder struct
 
   This mode is more aggressive and cleans every pack on the machine that's of the current SDK workload installation type (and that's not from Visual Studio). It also removes all workload installation records for the running .NET SDK feature band and below.
 
-### 'dotnet publish' and 'dotnet pack' assets
+### `dotnet publish` and `dotnet pack` assets
 
 Since the [`dotnet publish`](../tools/dotnet-publish.md) and [`dotnet pack`](../tools/dotnet-pack.md) commands are intended to produce production assets, they now produce `Release` assets by default.
 
@@ -102,7 +102,7 @@ The following output shows the different behavior between `dotnet build` and `do
 
 For more information, see ['dotnet pack' uses Release config](../compatibility/sdk/8.0/dotnet-pack-config.md) and ['dotnet publish' uses Release config](../compatibility/sdk/8.0/dotnet-publish-config.md).
 
-### 'dotnet restore' security auditing
+### `dotnet restore` security auditing
 
 Starting in .NET 8, you can opt into security checks for known vulnerabilities when dependency packages are restored. This auditing produces a report of security vulnerabilities with the affected package name, the severity of the vulnerability, and a link to the advisory for more details. When you run `dotnet add` or `dotnet restore`, warnings NU1901-NU1904 will appear for any vulnerabilities that are found. For more information, see [Audit for security vulnerabilities](../tools/dotnet-restore.md#audit-for-security-vulnerabilities).
 
@@ -151,7 +151,7 @@ For more information about JSON serialization in general, see [JSON serializatio
 The following code shows an example where the properties from both the immediately implemented interface and its base interface are serialized.
 
 ```csharp
-IDerived value = new DerivedImplement { Base = 0, Derived =1 };
+IDerived value = new DerivedImplement { Base = 0, Derived = 1 };
 JsonSerializer.Serialize(value); // {"Base":0,"Derived":1}
 
 public interface IBase
@@ -207,7 +207,7 @@ class CustomerInfo
 {
     // Both of these properties are read-only.
     public string Name { get; } = "Anonymous";
-    public CompanyInfo Company { get; } = new CompanyInfo() { Name = "N/A", PhoneNumber = "N/A" };
+    public CompanyInfo Company { get; } = new() { Name = "N/A", PhoneNumber = "N/A" };
 }
 ```
 
@@ -225,7 +225,7 @@ Now, the input values are used to populate the read-only properties during deser
 
 ### Disable reflection-based default
 
-You can now disable using the reflection-based serializer by default. This disablement is useful to avoid accidental rooting of reflection components that aren't even in use, especially in trimmed and native AOT apps. To disable default reflection-based serialization by requiring that a <xref:System.Text.Json.JsonSerializerOptions> argument be passed to the <xref:System.Text.Json.JsonSerializer> serialization and deserialization methods, set the `<JsonSerializerIsReflectionEnabledByDefault >` property to `false` in your project file. (If the property is set to `false` and you don't pass a configured <xref:System.Text.Json.JsonSerializerOptions> argument, the `Serialize` and `Deserialize` methods throw a <xref:System.NotSupportedException> at run time.)
+You can now disable using the reflection-based serializer by default. This disablement is useful to avoid accidental rooting of reflection components that aren't even in use, especially in trimmed and native AOT apps. To disable default reflection-based serialization by requiring that a <xref:System.Text.Json.JsonSerializerOptions> argument be passed to the <xref:System.Text.Json.JsonSerializer> serialization and deserialization methods, set the `JsonSerializer.IsReflectionEnabledByDefault` property to `false` in your project file. (If the property is set to `false` and you don't pass a configured <xref:System.Text.Json.JsonSerializerOptions> argument, the `Serialize` and `Deserialize` methods throw a <xref:System.NotSupportedException> at run time.)
 
 Use the new <xref:System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault> property to check the value of the feature switch. If you're a library author building on top of <xref:System.Text.Json?displayProperty=fullName>, you can rely on the property to configure your defaults without accidentally rooting reflection components.
 
@@ -236,14 +236,14 @@ static JsonSerializerOptions GetDefaultOptions()
     {
         // This branch has a dependency on DefaultJsonTypeInfo,
         // but it will get trimmed away if the feature switch is disabled.
-        return new JsonSerializerOptions
+        return new()
         {
-              TypeInfoResolver = new DefaultJsonTypeInfoResolver(),
-              PropertyNamingPolicy = JsonNamingPolicy.KebabCaseLower,
+            TypeInfoResolver = new DefaultJsonTypeInfoResolver(),
+            PropertyNamingPolicy = JsonNamingPolicy.KebabCaseLower,
         }
     }
 
-    return new() { PropertyNamingPolicy = JsonNamingPolicy.KebabCaseLower } ;
+    return new() { PropertyNamingPolicy = JsonNamingPolicy.KebabCaseLower };
 }
 ```
 
@@ -256,7 +256,8 @@ The <xref:System.Text.Json.JsonSerializerOptions> class includes a new <xref:Sys
 ```csharp
 var options = new JsonSerializerOptions
 {
-    TypeInfoResolver = JsonTypeInfoResolver.Combine(ContextA.Default, ContextB.Default, ContextC.Default);
+    TypeInfoResolver = JsonTypeInfoResolver.Combine(
+        ContextA.Default, ContextB.Default, ContextC.Default);
 };
 
 options.TypeInfoResolverChain.Count; // 3
@@ -287,7 +288,7 @@ The following code snippet shows some usage examples.
 
 ```csharp
 // Get system time.
-DateTimeOffset utcNow= TimeProvider.System.GetUtcNow();
+DateTimeOffset utcNow = TimeProvider.System.GetUtcNow();
 DateTimeOffset localNow = TimeProvider.System.GetLocalNow();
 
 // Create a time provider that works with a
@@ -295,12 +296,16 @@ DateTimeOffset localNow = TimeProvider.System.GetLocalNow();
 private class ZonedTimeProvider : TimeProvider
 {
     private TimeZoneInfo _zoneInfo;
+
     public ZonedTimeProvider(TimeZoneInfo zoneInfo) : base()
     {
         _zoneInfo = zoneInfo ?? TimeZoneInfo.Local;
     }
-    public override TimeZoneInfo LocalTimeZone { get => _zoneInfo; }
-    public static TimeProvider FromLocalTimeZone(TimeZoneInfo zoneInfo) => new ZonedTimeProvider(zoneInfo);
+
+    public override TimeZoneInfo LocalTimeZone => _zoneInfo;
+
+    public static TimeProvider FromLocalTimeZone(TimeZoneInfo zoneInfo) =>
+        new ZonedTimeProvider(zoneInfo);
 }
 
 // Create a timer using a time provider.
@@ -309,6 +314,7 @@ ITimer timer = timeProvider.CreateTimer(callBack, state, delay, Timeout.Infinite
 // Measure a period using the system time provider.
 long providerTimestamp1 = TimeProvider.System.GetTimestamp();
 long providerTimestamp2 = TimeProvider.System.GetTimestamp();
+
 var period = GetElapsedTime(providerTimestamp1, providerTimestamp2);
 ```
 
@@ -321,8 +327,18 @@ If you want to enable writing out a string-like representation of your type to a
 New <xref:System.Text.Unicode.Utf8.TryWrite%2A?displayProperty=nameWithType> methods provide a UTF8-based counterpart to the existing <xref:System.MemoryExtensions.TryWrite%2A?displayProperty=nameWithType> methods, which are UTF16-based. You can use interpolated string syntax to format a complex expression directly into a span of UTF8 bytes, for example:
 
 ```csharp
-static bool FormatHexVersion(short major, short minor, short build, short revision, Span<byte> utf8Bytes, out int bytesWritten) =>
-    Utf8.TryWrite(utf8Bytes, CultureInfo.InvariantCulture, $"{major:X4}.{minor:X4}.{build:X4}.{revision:X4}", out bytesWritten);
+static bool FormatHexVersion(
+    short major,
+    short minor,
+    short build,
+    short revision,
+    Span<byte> utf8Bytes,
+    out int bytesWritten) =>
+    Utf8.TryWrite(
+        utf8Bytes,
+        CultureInfo.InvariantCulture,
+        $"{major:X4}.{minor:X4}.{build:X4}.{revision:X4}",
+        out bytesWritten);
 ```
 
 The implementation recognizes <xref:System.IUtf8SpanFormattable> on the format values and uses their implementations to write their UTF8 representations directly to the destination span.
@@ -346,7 +362,7 @@ private static ReadOnlySpan<Button> s_allButtons = new[]
     Button.Yellow,
 };
 
-...
+// ...
 
 Button[] thisRound = Random.Shared.GetItems(s_allButtons, 31);
 // Rest of game goes here ...
@@ -378,6 +394,7 @@ IDataView predictions = model.Transform(split.TestSet);
   ```csharp
   private static readonly FrozenDictionary<string, bool> s_configurationData =
       LoadConfigurationData().ToFrozenDictionary(optimizeForReads: true);
+
   // ...
   if (s_configurationData.TryGetValue(key, out bool setting) && setting)
   {
@@ -389,7 +406,9 @@ IDataView predictions = model.Transform(split.TestSet);
 - The new <xref:System.Text.CompositeFormat?displayProperty=fullName> type is useful for optimizing format strings that aren't known at compile time (for example, if the format string is loaded from a resource file). A little extra time is spent up front to do work such as parsing the string, but it saves the work from being done on each use.
 
   ```csharp
-  private static readonly CompositeFormat s_rangeMessage = CompositeFormat.Parse(LoadRangeMessageResource());
+  private static readonly CompositeFormat s_rangeMessage =
+      CompositeFormat.Parse(LoadRangeMessageResource());
+
   // ...
   static string GetMessage(int min, int max) =>
       string.Format(CultureInfo.InvariantCulture, s_rangeMessage, min, max);
@@ -433,8 +452,8 @@ Even if you don't explicitly use `Vector512`-specific or `Avx512F`-specific inst
 
 The <xref:System.ComponentModel.DataAnnotations?displayProperty=fullName> namespace includes new data validation attributes intended for validation scenarios in cloud-native services. While the pre-existing `DataAnnotations` validators are geared towards typical UI data-entry validation, such as fields on a form, the new attributes are designed to validate non-user-entry data, such as [configuration options](../extensions/options.md#options-validation). In addition to the new attributes, new properties were added to the <xref:System.ComponentModel.DataAnnotations.RangeAttribute> and <xref:System.ComponentModel.DataAnnotations.RequiredAttribute> types.
 
-| New API | Description|
-| - | - |
+| New API | Description |
+|--|--|
 | <xref:System.ComponentModel.DataAnnotations.RequiredAttribute.DisallowAllDefaultValues?displayProperty=nameWithType> | Validates that structs don't equal their default values. |
 | <xref:System.ComponentModel.DataAnnotations.RangeAttribute.MinimumIsExclusive?displayProperty=nameWithType><br/><xref:System.ComponentModel.DataAnnotations.RangeAttribute.MaximumIsExclusive?displayProperty=nameWithType> | Specifies whether bounds are included in the allowable range. |
 | <xref:System.ComponentModel.DataAnnotations.LengthAttribute?displayProperty=nameWithType> | Specifies both lower and upper bounds for strings or collections. For example, `[Length(10, 20)]` requires at least 10 elements and at most 20 elements in a collection. |
@@ -476,7 +495,9 @@ There are some limitations to be aware of:
 The following code snippet shows how to call the API using reflection.
 
 ```csharp
-MethodInfo refreshMemoryLimitMethod = typeof(GC).GetMethod("_RefreshMemoryLimit", BindingFlags.NonPublic | BindingFlags.Static);
+MethodInfo refreshMemoryLimitMethod = typeof(GC).GetMethod(
+    "_RefreshMemoryLimit", BindingFlags.NonPublic | BindingFlags.Static);
+
 refreshMemoryLimitMethod.Invoke(null, Array<object>.Empty);
 ```
 
@@ -484,7 +505,9 @@ You can also refresh some of the GC configuration settings related to the memory
 
 ```csharp
 AppContext.SetData("GCHeapHardLimit", (ulong)100 * 1024 * 1024);
-MethodInfo refreshMemoryLimitMethod = typeof(GC).GetMethod("_RefreshMemoryLimit", BindingFlags.NonPublic | BindingFlags.Static);
+MethodInfo refreshMemoryLimitMethod = typeof(GC).GetMethod(
+    "_RefreshMemoryLimit", BindingFlags.NonPublic | BindingFlags.Static);
+
 refreshMemoryLimitMethod.Invoke(null, Array<object>.Empty);
 ```
 
@@ -496,7 +519,9 @@ To opt into the source generator, set the `EnableMicrosoftExtensionsConfiguratio
 
 ```xml
 <PropertyGroup>
-    <EnableMicrosoftExtensionsConfigurationBinderSourceGenerator>true</EnableMicrosoftExtensionsConfigurationBinderSourceGenerator>
+    <EnableMicrosoftExtensionsConfigurationBinderSourceGenerator>
+        true
+    </EnableMicrosoftExtensionsConfigurationBinderSourceGenerator>
 </PropertyGroup>
 ```
 
@@ -599,7 +624,7 @@ foreach (Type modreq in modifiedType.GetFunctionPointerParameterTypes()[0].GetRe
 
 The previous example produces the following output:
 
-```txt
+```Output
 IsFunctionPointer: True
 IsUnmanagedFunctionPointer: True
 Return type: System.Void
@@ -617,7 +642,7 @@ The option to [publish as native AOT](../deploying/native-aot/index.md) was firs
 - Reduces the sizes of native AOT apps on Linux by up to 50%. The following table shows the size of a "Hello World" app published with native AOT that includes the entire .NET runtime on .NET 7 vs. .NET 8:
 
   | Operating system                        | .NET 7  | .NET 8  |
-  | --------------------------------------- | ------- | ------- |
+  |-----------------------------------------|---------|---------|
   | Linux x64 (with `-p:StripSymbols=true`) | 3.76 MB | 1.84 MB |
   | Windows x64                             | 2.85 MB | 1.77 MB |
 
@@ -644,7 +669,7 @@ The default console app template now includes support for AOT out-of-the-box. To
 - Loop and general optimizations
 - Optimized access for fields marked with <xref:System.ThreadStaticAttribute>
 - Consecutive register allocation. Arm64 has two instructions for table vector lookup, which require that all entities in their tuple operands are present in consecutive registers.
-- JIT/NativeAOT can now unroll and auto-vectorize some memory operations with SIMD, such as comparison, copying, and zeroing, if it can determinate their sizes at compile time.
+- JIT/NativeAOT can now unroll and auto-vectorize some memory operations with SIMD, such as comparison, copying, and zeroing, if it can determine their sizes at compile time.
 
 ## .NET container images
 

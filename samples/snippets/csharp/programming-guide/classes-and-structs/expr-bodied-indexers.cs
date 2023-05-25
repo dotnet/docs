@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 
+namespace SportsExample;
+
 public class Sports
 {
    private string[] types = { "Baseball", "Basketball", "Football",

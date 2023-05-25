@@ -11,7 +11,7 @@ ms.topic: how-to
 
 # How to use Utf8JsonWriter in System.Text.Json
 
-This article shows how to use the [`Utf8JsonWriter`](#use-utf8jsonwriter) type for building custom serializers.
+This article shows how to use the <xref:System.Text.Json.Utf8JsonWriter> type for building custom serializers.
 
 <xref:System.Text.Json.Utf8JsonWriter> is a high-performance way to write UTF-8 encoded JSON text from common .NET types like `String`, `Int32`, and `DateTime`. The writer is a low-level type that can be used to build custom serializers. The <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> method uses `Utf8JsonWriter` under the covers.
 

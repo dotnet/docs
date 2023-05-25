@@ -11,7 +11,7 @@ ms.topic: how-to
 
 # How to use Utf8JsonReader in System.Text.Json
 
-This article shows how to use the [`Utf8JsonReader`](#use-utf8jsonreader) type for building custom parsers and deserializers.
+This article shows how to use the <xref:System.Text.Json.Utf8JsonReader> type for building custom parsers and deserializers.
 
 <xref:System.Text.Json.Utf8JsonReader> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>` or `ReadOnlySequence<byte>`. The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers. The <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method uses `Utf8JsonReader` under the covers.
 
@@ -142,7 +142,7 @@ public bool ReadAsBoolean(bool defaultValue)
 
 Starting in .NET 7, you can use the <xref:System.Text.Json.Utf8JsonReader.CopyString%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Json.Utf8JsonReader.GetString?displayProperty=nameWithType> to consume a decoded JSON string. Unlike <xref:System.Text.Json.Utf8JsonReader.GetString>, which always allocates a new string, <xref:System.Text.Json.Utf8JsonReader.CopyString%2A> lets you copy the unescaped string to a buffer that you own. The following code snippet shows an example of consuming a UTF-16 string using <xref:System.Text.Json.Utf8JsonReader.CopyString%2A>.
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/Utf8ReaderFromFile.cs" id="Snippet1":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/Utf8ReaderCopyString.cs" id="Snippet1":::
 
 ## See also
 

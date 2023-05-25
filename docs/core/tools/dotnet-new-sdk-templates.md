@@ -708,7 +708,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`--aot`**
 
-  Enable publish using AOT. For more information, see [ASP.NET Core support for native AOT](/aspnet/core/fundamentals/native-aot?view=aspnetcore-8.0&preserveview=true).
+  Enable publish using AOT. For more information, see [ASP.NET Core support for native AOT](/aspnet/core/fundamentals/native-aot).
 
 - **`--exclude-launch-settings`**
 

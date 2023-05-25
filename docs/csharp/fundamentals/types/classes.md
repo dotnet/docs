@@ -71,9 +71,9 @@ Beginning with C# 12, you can define a *primary constructor* as part of the clas
 
 :::code source="./snippets/classes/Containers.cs" id="ContainerPrimaryConstructor":::
 
-Adding parameters to the class name defines the *primary constructor*. Those parameters are available in the class body. You can use the them to initialize fields, or anywhere else in members where you need that constructor parameter.
+Adding parameters to the class name defines the *primary constructor*. Those parameters are available in the class body, which includes its members. You can use them to initialize fields or anywhere else where they're needed.
 
-You can also use the `required` modifier on a property and allow callers to use an *object initializer* to set the initial value of a property:
+You can also use the `required` modifier on a property and allow callers to use an *object initializer* to set the initial value of the property:
 
 :::code source="./snippets/classes/Program.cs" id="RequiredProperties":::
 
@@ -81,22 +81,22 @@ The addition of the `required` keyword mandates that callers must set those prop
 
 ```csharp
 var p1 = new Person(); // Error! Required properties not set
-var p2 = new Person() {FirstName = "Grace", LastName = "Hopper" };
+var p2 = new Person() { FirstName = "Grace", LastName = "Hopper" };
 ```
 
 ## Class inheritance
 
-Classes fully support *inheritance*, a fundamental characteristic of object-oriented programming. When you create a class, you can inherit from any other class that isn't defined as [`sealed`](../../language-reference/keywords/sealed.md), and other classes can inherit from your class and override class virtual methods. Furthermore, you can implement one or more interfaces.
+Classes fully support *inheritance*, a fundamental characteristic of object-oriented programming. When you create a class, you can inherit from any other class that isn't defined as [`sealed`](../../language-reference/keywords/sealed.md). Other classes can inherit from your class and override class virtual methods. Furthermore, you can implement one or more interfaces.
 
 Inheritance is accomplished by using a *derivation*, which means a class is declared by using a *base class* from which it inherits data and behavior. A base class is specified by appending a colon and the name of the base class following the derived class name, like this:
 
 :::code source="./snippets/classes/Program.cs" id="DerivedClass":::
 
-When a class declares a base class, it inherits all the members of the base class except the constructors. For more information, see [Inheritance](../object-oriented/inheritance.md).
+When a class declaration includes a base class, it inherits all the members of the base class except the constructors. For more information, see [Inheritance](../object-oriented/inheritance.md).
 
-A class in C# can only directly inherit from one base class. However, because a base class may itself inherit from another class, a class may indirectly inherit multiple base classes. Furthermore, a class can directly implement one or more interfaces. For more information, see [Interfaces](interfaces.md).
+A class in C# can only directly inherit from one base class. However, because a base class may itself inherit from another class, a class might indirectly inherit multiple base classes. Furthermore, a class can directly implement one or more interfaces. For more information, see [Interfaces](interfaces.md).
 
-A class can be declared [`abstract`](../../language-reference/keywords/abstract.md). An abstract class contains abstract methods that have a signature definition but no implementation. Abstract classes can't be instantiated. They can only be used through derived classes that implement the abstract methods. By contrast, a [sealed](../../language-reference/keywords/sealed.md) class doesn't allow other classes to derive from it. For more information, see [Abstract and Sealed Classes and Class Members](../../programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).
+A class can be declared as [`abstract`](../../language-reference/keywords/abstract.md). An abstract class contains abstract methods that have a signature definition but no implementation. Abstract classes can't be instantiated. They can only be used through derived classes that implement the abstract methods. By contrast, a [sealed](../../language-reference/keywords/sealed.md) class doesn't allow other classes to derive from it. For more information, see [Abstract and Sealed Classes and Class Members](../../programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).
 
 Class definitions can be split between different source files. For more information, see [Partial Classes and Methods](../../programming-guide/classes-and-structs/partial-classes-and-methods.md).
 

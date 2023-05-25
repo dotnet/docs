@@ -8,7 +8,7 @@ helpviewer_keywords:
 ---
 # Introduction to record types in C\#
 
-A [record](../../language-reference/builtin-types/record.md) in C# is a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md) that provides special syntax and behavior for working with data models. The `record` modifier instructs the compiler to synthesize a number of members useful for types whose primary role is storing data. These include an overload of <xref:System.Object.ToString> and members that support value equality.
+A [record](../../language-reference/builtin-types/record.md) in C# is a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md) that provides special syntax and behavior for working with data models. The `record` modifier instructs the compiler to synthesize members that are useful for types whose primary role is storing data. These members include an overload of <xref:System.Object.ToString> and members that support value equality.
 
 ## When to use records
 
@@ -41,7 +41,7 @@ The same syntax that [declares](classes.md#declaring-classes) and [instantiates]
 
 Record structs differ from structs in that the compiler synthesizes the methods for equality, and `ToString`. The compiler synthesizes a `Deconstruct` method for positional record structs.
 
-The compiler synthesizes a public init-only property for each primary constructor parameter in a `record class`. In a `record struct`, the compiler synthesizes a public read-write property. The compiler doesn't create properties for primary constructors parameters in `class` and `struct` types that don't include `record` modifier.
+The compiler synthesizes a public init-only property for each primary constructor parameter in a `record class`. In a `record struct`, the compiler synthesizes a public read-write property. The compiler doesn't create properties for primary constructor parameters in `class` and `struct` types that don't include `record` modifier.
 
 ## Examples
 

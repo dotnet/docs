@@ -10,9 +10,9 @@ helpviewer_keywords:
 ---
 # Records (C# reference)
 
-Beginning with C# 9, you use the `record` modifier to define a type to define a [reference type](reference-types.md) that provides built-in functionality for encapsulating data. C# 10 allows the `record class` syntax as a synonym to clarify a reference type, and `record struct` to define a [value type](value-types.md) with similar functionality.
+Beginning with C# 9, you use the `record` modifier to define a [reference type](reference-types.md) that provides built-in functionality for encapsulating data. C# 10 allows the `record class` syntax as a synonym to clarify a reference type, and `record struct` to define a [value type](value-types.md) with similar functionality.
 
-When you declare a [primary constructor](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) on a record, the compiler generates public properties for the primary constructor parameters. The primary constructor parameters to a record are referred to as *positional parameters* to the record. The compiler creates *positional properties* that mirror primary constructor parameters. The compiler doesn't synthesize properties for primary constructor parameters without the `record` modifier.
+When you declare a [primary constructor](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) on a record, the compiler generates public properties for the primary constructor parameters. The primary constructor parameters to a record are referred to as *positional parameters*. The compiler creates *positional properties* that mirror the primary constructor or positional parameters. The compiler doesn't synthesize properties for primary constructor parameters on types that don't have the `record` modifier.
 
 The following two examples demonstrate `record` (or `record class`) reference types:
 
@@ -98,7 +98,7 @@ If you don't override or replace equality methods, the type you declare governs 
 
 - For `class` types, two objects are equal if they refer to the same object in memory.
 - For `struct` types, two objects are equal if they are of the same type and store the same values.
-- For types with the `record` modifier (`record class`, `record struct` and `readonly record struct`) two objects are equal if they are of the same type and store the same values.
+- For types with the `record` modifier (`record class`, `record struct`, and `readonly record struct`), two objects are equal if they are of the same type and store the same values.
 
 The definition of equality for a `record struct` is the same as for a `struct`. The difference is that for a `struct`, the implementation is in <xref:System.ValueType.Equals(System.Object)?displayProperty=nameWithType> and relies on reflection. For records, the implementation is compiler synthesized and uses the declared data members.
 
@@ -185,7 +185,7 @@ In the example, all variables are declared as `Person`, even when the instance i
 
 To implement this behavior, the compiler synthesizes an `EqualityContract` property that returns a <xref:System.Type> object that matches the type of the record. The `EqualityContract` enables the equality methods to compare the runtime type of objects when they're checking for equality. If the base type of a record is `object`, this property is `virtual`. If the base type is another record type, this property is an override. If the record type is `sealed`, this property is effectively `sealed` because the type is `sealed`.
 
-When code compares two instances of a derived type, the synthesized equality methods check all data members of the base and derived types for equality. The synthesized `GetHashCode` method uses the `GetHashCode` method from all data members declared in the base type and the derived record type. The data members of a `record` include all declared fields, and the compiler synthesized backing field for any autoimplemented properties.
+When code compares two instances of a derived type, the synthesized equality methods check all data members of the base and derived types for equality. The synthesized `GetHashCode` method uses the `GetHashCode` method from all data members declared in the base type and the derived record type. The data members of a `record` include all declared fields and the compiler-synthesized backing field for any autoimplemented properties.
 
 ### `with` expressions in derived records
 
@@ -221,7 +221,7 @@ The `Deconstruct` method of a derived record returns the values of all positiona
 
 ## Generic constraints
 
-The `record` keyword is a modifier for either a `class` or `struct` types. Adding the `record` modifier includes the behavior described earlier in this article. There's no generic constraint that requires a type to be a record. A `record class` satisfies the `class` constraint. A `record struct` satisfies the `struct` constraint. For more information, see [Constraints on type parameters](../../programming-guide/generics/constraints-on-type-parameters.md).
+The `record` keyword is a modifier for either a `class` or `struct` type. Adding the `record` modifier includes the behavior described earlier in this article. There's no generic constraint that requires a type to be a record. A `record class` satisfies the `class` constraint. A `record struct` satisfies the `struct` constraint. For more information, see [Constraints on type parameters](../../programming-guide/generics/constraints-on-type-parameters.md).
 
 ## C# language specification
 

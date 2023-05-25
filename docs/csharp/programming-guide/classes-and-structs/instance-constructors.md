@@ -45,7 +45,7 @@ A primary constructor indicates that these parameters are necessary for any inst
 
 :::code language="csharp" source="./snippets/instance-constructors/widgets/Program.cs" id="DerivedPrimaryConstructor":::
 
-In `class` and `struct` types, primary constructor parameters are available anywhere in the body of the type. They can be used as member fields. When a primary constructor parameter is used, the compiler captures the constructor parameter in a private field with a compiler generated name. If a primary constructor parameter isn't used in the body of the type, no private field is captured. That rule prevents accidentally allocating two copies of a primary constructor parameter that is passed to a base constructor.
+In `class` and `struct` types, primary constructor parameters are available anywhere in the body of the type. They can be used as member fields. When a primary constructor parameter is used, the compiler captures the constructor parameter in a private field with a compiler-generated name. If a primary constructor parameter isn't used in the body of the type, no private field is captured. That rule prevents accidentally allocating two copies of a primary constructor parameter that's passed to a base constructor.
 
 If the type includes the `record` modifier, the compiler instead synthesizes a public property with the same name as the primary constructor parameter.  For `record class` types, if a primary constructor parameter uses the same name as a base primary constructor, that property is a public property of the base `record class` type. It isn't duplicated in the derived `record class` type. These properties aren't generated for non-`record` types.
 

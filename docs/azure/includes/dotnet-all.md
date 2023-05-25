@@ -540,7 +540,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs | NuGet [5.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs/5.0.1)<br>NuGet [5.1.1-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs/5.1.1-preview2) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues | NuGet [5.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues/5.0.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage.Tables | NuGet [1.0.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Tables/1.0.0-preview1) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Tables | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Tables/1.0.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Tables | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Tables/1.0.0)<br>NuGet [1.2.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Tables/1.2.0-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.2.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.2.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Warmup | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Warmup/4.0.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.10.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.10.1)<br>NuGet [1.11.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.11.0-preview1) |  |  |

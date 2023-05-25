@@ -48,7 +48,7 @@ b = 33;      // Or assign it before using it.
 Console.WriteLine("{0}, {1}", a, b);
 ```
 
-Both classes and `structs` can define constructors that take parameters, including [primary constructors](./instance-constructors.md#primary-constructors). Constructors that take parameters must be called through a `new` statement or a [base](../../language-reference/keywords/base.md) statement. Classes and `structs` can also define multiple constructors, and neither is required to define a parameterless constructor. For example:
+Both classes and structs can define constructors that take parameters, including [primary constructors](./instance-constructors.md#primary-constructors). Constructors that take parameters must be called through a `new` statement or a [base](../../language-reference/keywords/base.md) statement. Classes and structs can also define multiple constructors, and neither is required to define a parameterless constructor. For example:
 
 :::code source="./snippets/using-constructors/Program.cs" id="snippet3":::
 

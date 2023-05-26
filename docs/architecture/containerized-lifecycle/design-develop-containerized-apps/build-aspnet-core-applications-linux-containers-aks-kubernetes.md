@@ -2,6 +2,7 @@
 title: Build ASP.NET Core applications deployed as Linux containers into AKS/Kubernetes clusters
 description: Learn about creating ASP.NET Core applications deployed as Linux containers into AKS/Kubernetes clusters
 ms.date: 12/08/2021
+ms.custom: devx-track-azurecli
 ---
 
 # Build ASP.NET Core applications deployed as Linux containers into an AKS/Kubernetes orchestrator

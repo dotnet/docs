@@ -161,4 +161,4 @@ Each step details first what it's going to do, then prompts you to do it. Any st
 
 After you upgrade your projects, you'll need to compile and test them. Most likely there's more work to do to finish the upgrade. It's possible that the .NET Framework version of your app contained library references that your project isn't actually using, and they were carried over. Analyze each reference and determine whether or not it's required. The tool may have also added or upgraded a NuGet package reference to wrong version.
 
-Finally, look for ways to modernize your app. For examples, see [Modernizations after upgrading to .NET from .NET Framework](modernization.md)
+Finally, look for ways to modernize your app. For examples, see [Modernizations after upgrading to .NET from .NET Framework](modernize.md)

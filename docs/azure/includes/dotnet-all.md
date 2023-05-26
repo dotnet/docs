@@ -292,7 +292,7 @@
 | Service Bus Event Processor Host | NuGet [5.0.1](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.EventProcessorHost/5.0.1) |  |  |
 | Time Series Insights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.Analytics.Purview.Sharing/1.0.0-beta.2) |  |  |
-| Unknown Display Name | NuGet [1.0.0-beta.11](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.0.0-beta.11) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.0.0) |  |  |
 | Unknown Display Name | NuGet [0.14.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Dapr.Core/0.14.0-preview01) |  |  |
 | Unknown Display Name | NuGet [0.14.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Dapr/0.14.0-preview01) |  |  |
 | Unknown Display Name | NuGet [1.0.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore/1.0.0-preview1) |  |  |

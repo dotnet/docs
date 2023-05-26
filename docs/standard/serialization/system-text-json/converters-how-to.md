@@ -22,7 +22,7 @@ A *converter* is a class that converts an object or a value to and from JSON. Th
 * To override the default behavior of a built-in converter. For example, you might want `DateTime` values to be represented by mm/dd/yyyy format. By default, ISO 8601-1:2019 is supported, including the RFC 3339 profile. For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../../datetime/system-text-json-support.md).
 * To support a custom value type. For example, a `PhoneNumber` struct.
 
-You can also write custom converters to customize or extend `System.Text.Json` with functionality not included in the current release. The following scenarios are covered later in this article:
+You can also write custom converters to customize or extend `System.Text.Json` with new functionality. The following scenarios are covered later in this article:
 
 ::: zone pivot="dotnet-7-0"
 
@@ -91,7 +91,7 @@ You can refer to the [built-in converters source code](https://github.com/dotnet
 The following steps explain how to create a converter by following the factory pattern:
 
 * Create a class that derives from <xref:System.Text.Json.Serialization.JsonConverterFactory>.
-* Override the `CanConvert` method to return true when the type to convert is one that the converter can handle. For example, if the converter is for `List<T>` it might only handle `List<int>`, `List<string>`, and `List<DateTime>`.
+* Override the `CanConvert` method to return `true` when the type to convert is one that the converter can handle. For example, if the converter is for `List<T>`, it might only handle `List<int>`, `List<string>`, and `List<DateTime>`.
 * Override the `CreateConverter` method to return an instance of a converter class that will handle the type-to-convert that is provided at run time.
 * Create the converter class that the `CreateConverter` method instantiates.
 
@@ -209,7 +209,7 @@ During serialization or deserialization, a converter is chosen for each JSON ele
 * A converter added to the `Converters` collection.
 * `[JsonConverter]` applied to a custom value type or POCO.
 
-If multiple custom converters for a type are registered in the `Converters` collection, the first converter that returns true for `CanConvert` is used.
+If multiple custom converters for a type are registered in the `Converters` collection, the first converter that returns `true` for `CanConvert` is used.
 
 A built-in converter is chosen only if no applicable custom converter is registered.
 

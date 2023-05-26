@@ -61,7 +61,7 @@ Now that <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues?displayPr
 
 ## Recommended action
 
-Provide a JSON serializer options with the correct details.
+Provide a `JsonSerializerOptions` with the correct details.
 
 ```csharp
 JsonSerializerOptions options = new()

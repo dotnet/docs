@@ -74,8 +74,8 @@ The Dockerfile has two parts: the first uses the `sdk` base image to build and p
 | `FROM ...` | Declares the base image and assigns the `builder` alias. |
 | `WORKDIR /src` | Creates the `/src` directory and sets it as the current working directory. |
 | `COPY . .` | Copies everything below the current directory on the host into the current directory on the image. |
-| `RUN dotnet restore` | Restores any external packages (ASP.NET Core 3.0 framework is pre-installed with the SDK). |
-| `RUN dotnet publish ...` | Builds and publishes a Release build. Note that the `--runtime` flag isn't required. |
+| `RUN dotnet restore` | Restores any external packages (ASP.NET Core 3.0 framework is preinstalled with the SDK). |
+| `RUN dotnet publish ...` | Builds and publishes a Release build. The `--runtime` flag isn't required. |
 
 ### The runtime image steps
 

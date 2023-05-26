@@ -31,7 +31,7 @@ Examples:
   <!-- Generate direct PInvoke calls for everything in __Internal -->
   <!-- This option replicates Mono AOT behavior that generates direct PInvoke calls for __Internal -->
   <DirectPInvoke Include="__Internal" />
-  <!-- Generate direct PInvoke calls for everything in libc (also matches libc.so on Linux or libc.dylib on macOS) --> 
+  <!-- Generate direct PInvoke calls for everything in libc (also matches libc.so on Linux or libc.dylib on macOS) -->
   <DirectPInvoke Include="libc" />
   <!-- Generate direct PInvoke calls for Sleep in kernel32 (also matches kernel32.dll on Windows) -->
   <DirectPInvoke Include="kernel32!Sleep" />
@@ -40,14 +40,14 @@ Examples:
 </ItemGroup>
 ```
 
-On Windows, native AOT uses a pre-populated list of direct P/Invoke methods that are available on all supported versions of Windows.
+On Windows, native AOT uses a prepopulated list of direct P/Invoke methods that are available on all supported versions of Windows.
 
 > [!WARNING]
 > Because direct P/Invoke methods are resolved by the operating system dynamic loader and not by the native AOT runtime library, direct P/Invoke methods will not respect the <xref:System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute>. The library search order will follow the dynamic loader rules as defined by the operating system. Some operating systems and loaders offer ways to control dynamic loading through linker flags (such as `/DEPENDENTLOADFLAG` on Windows or `-rpath` on Linux). For more information on how to specify linker flags, see the [Linking](#linking) section.
 
 ### Linking
 
-To statically link against an unmanaged library, you'll need to specify `<NativeLibrary Include="filename" />` pointing to a `.lib` file on Windows and a `.a` file on Unix-like systems.
+To statically link against an unmanaged library, you need to specify `<NativeLibrary Include="filename" />` pointing to a `.lib` file on Windows and a `.a` file on Unix-like systems.
 
 Examples:
 
@@ -77,6 +77,6 @@ Examples:
 
 ## Native exports
 
-The native AOT compiler will export methods annotated with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> with a non-empty `EntryPoint` property as
+The native AOT compiler exports methods annotated with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> with a nonempty `EntryPoint` property as
 public C entry points. This makes it possible to either dynamically or statically link the AOT compiled modules into external
 programs. For more information, see [NativeLibrary sample](https://github.com/dotnet/samples/tree/main/core/nativeaot/NativeLibrary/README.md).

@@ -3,8 +3,10 @@ title: Modernize your upgraded .NET Framework apps
 description: This article demonstrates some of the ways you can modernize your .NET Framework app after you've upgraded to .NET
 author: adegeo
 ms.date: 05/25/2023
+dev_langs: ["csharp", "vb"]
 no-loc: ["package.config", PackageReference]
 ---
+
 # Modernizations after upgrading to .NET from .NET Framework
 
 In this article, you'll learn about different ways you can modernize your .NET Framework app after it's been upgraded to .NET. Use the [.NET Upgrade Assistant](upgrade-assistant-overview.md) tool to upgrade your app to .NET.
@@ -56,7 +58,7 @@ Perform the following steps to use the _appsettings.json_ file as your configura
 
     The startup code for your app varies based on your project type. For example, a WPF app uses the `App.xaml.cs` file for global setup and a Windows Forms app uses the `Program.Main` method for startup. Regardless, you need to do two things at startup:
 
-    - Create a `static` (`Shared` in Visual Basic) member that can be accessed from anywhere in your app.
+    - Create an `internal static` (`Friend Shared` in Visual Basic) member that can be accessed from anywhere in your app.
     - During startup, assign an instance to that member.
 
     The following example creates a member named `Config`, assigns it an instance in the `Main` method, and loads a connection string:
@@ -81,7 +83,38 @@ Perform the following steps to use the _appsettings.json_ file as your configura
         }
     }
     ```
+
     ```vb
+    Imports Microsoft.Extensions.Configuration
+    
+    Module Program
+    
+        Private _config As IConfiguration
+    
+        ' Shared not required since Program is a Module
+        Friend Property Config As IConfiguration
+    
+            Get
+                Return _config
+            End Get
+            Private Set(value As IConfiguration)
+                _config = value
+            End Set
+    
+        End Property
+    
+        Sub Main(args As String())
+    
+            Config = New ConfigurationBuilder() _
+                .AddJsonFile("appsettings.json") _
+                .Build()
+    
+            ' Use the config file to get a connection string
+            Dim myConnectionString As String = Config.GetConnectionString("database")
+    
+            ' Run the rest of your app
+        End Sub
+    End Module
     ```
 
 01. Update the rest of your code to use the new configuration APIs.

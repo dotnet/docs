@@ -13,7 +13,7 @@ In this article, you'll learn about different ways you can modernize your .NET F
 
 ## Missing APIs
 
-When upgrading a .NET Framework app, you'll most likely have some incompatibilities. This is because .NET Framework is a Windows-only technology and .NET is a cross-platform technology. Some libraries aren't For example, .NET doesn't provide out-of-the-box APIs to access the Windows Registry like .NET Framework did. Support for the Windows Registry is provided by the `Microsoft.Win32.Registry` NuGet package. Many the .NET Framework-specific libraries have been ported to .NET or .NET Standard, and are hosted on NuGet. If you find a missing reference in your project, search NuGet.
+When upgrading a .NET Framework app, you'll most likely have some incompatibilities. This is because .NET Framework is a Windows-only technology and .NET is a cross-platform technology. Some libraries aren't. For example, .NET doesn't provide out-of-the-box APIs to access the Windows Registry like .NET Framework did. Support for the Windows Registry is provided by the `Microsoft.Win32.Registry` NuGet package. Many the .NET Framework-specific libraries have been ported to .NET or .NET Standard, and are hosted on NuGet. If you find a missing reference in your project, search NuGet.
 
 ### Windows Compatibility Pack
 

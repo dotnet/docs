@@ -7,7 +7,7 @@ dev_langs: ["csharp", "vb"]
 no-loc: ["package.config", PackageReference]
 ---
 
-# Modernizations after upgrading to .NET from .NET Framework
+# Modernize after upgrading to .NET from .NET Framework
 
 In this article, you'll learn about different ways you can modernize your .NET Framework app after it's been upgraded to .NET. Use the [.NET Upgrade Assistant](upgrade-assistant-overview.md) tool to upgrade your app to .NET.
 

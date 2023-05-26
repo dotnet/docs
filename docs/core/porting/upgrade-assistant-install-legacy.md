@@ -18,7 +18,7 @@ The legacy version upgrades a lot more components, depending on your project typ
 
 ## Install the legacy version
 
-The legacy version of the tool is installed the same way as the current version, except that you specify a specific version, `0.4.421302`:
+The legacy version of the tool is installed the same way as the current version, except that you specify version `0.4.421302`:
 
 ```dotnetcli
 dotnet tool install upgrade-assistant -g --version 0.4.421302

@@ -538,11 +538,11 @@ The only built-in property naming policy in System.Text.Json is for [camel case]
 
 <xref:System.Text.Json.JsonDocument?displayProperty=fullName> provides the ability to parse and build a **read-only** Document Object Model (DOM) from existing JSON payloads. The DOM provides random access to data in a JSON payload. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` type provides APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property.
 
-Starting in .NET 6, you can parse and build a **mutable** DOM from existing JSON payloads by using the <xref:System.Text.Json.Nodes.JsonNode> type and other types in the <xref:System.Text.Json.Nodes> namespace. For more information, see [Use `JsonNode`](use-dom-utf8jsonreader-utf8jsonwriter.md#use-jsonnode).
+Starting in .NET 6, you can parse and build a **mutable** DOM from existing JSON payloads by using the <xref:System.Text.Json.Nodes.JsonNode> type and other types in the <xref:System.Text.Json.Nodes> namespace. For more information, see [Use `JsonNode`](use-dom.md#use-jsonnode).
 
 ### JsonDocument is IDisposable
 
-`JsonDocument` builds an in-memory view of the data into a pooled buffer. Therefore, unlike `JObject` or `JArray` from `Newtonsoft.Json`, the `JsonDocument` type implements `IDisposable` and needs to be used inside a using block. For more information, see [JsonDocument is IDisposable](use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#jsondocument-is-idisposable).
+`JsonDocument` builds an in-memory view of the data into a pooled buffer. Therefore, unlike `JObject` or `JArray` from `Newtonsoft.Json`, the `JsonDocument` type implements `IDisposable` and needs to be used inside a using block. For more information, see [JsonDocument is IDisposable](use-dom.md#jsondocument-is-idisposable).
 
 ### JsonDocument is read-only
 
@@ -552,11 +552,11 @@ The <xref:System.Text.Json?displayProperty=fullName> DOM can't add, remove, or m
 
 `JsonDocument` exposes the `RootElement` as a property of type <xref:System.Text.Json.JsonElement>, which is a union struct type that encompasses any JSON element. `Newtonsoft.Json` uses dedicated hierarchical types like `JObject`,`JArray`, `JToken`, and so forth. `JsonElement` is what you can search and enumerate over, and you can use `JsonElement` to materialize JSON elements into .NET types.
 
-Starting in .NET 6, you can use <xref:System.Text.Json.Nodes.JsonNode> type and types in the <xref:System.Text.Json.Nodes> namespace that correspond to `JObject`,`JArray`, and `JToken`. For more information, see [Use `JsonNode`](use-dom-utf8jsonreader-utf8jsonwriter.md#use-jsonnode).
+Starting in .NET 6, you can use <xref:System.Text.Json.Nodes.JsonNode> type and types in the <xref:System.Text.Json.Nodes> namespace that correspond to `JObject`,`JArray`, and `JToken`. For more information, see [Use `JsonNode`](use-dom.md#use-jsonnode).
 
 ### How to search a JsonDocument and JsonElement for sub-elements
 
-Searches for JSON tokens using `JObject` or `JArray` from `Newtonsoft.Json` tend to be relatively fast because they're lookups in some dictionary. By comparison, searches on `JsonElement` require a sequential search of the properties and hence are relatively slow (for example when using `TryGetProperty`). <xref:System.Text.Json?displayProperty=fullName> is designed to minimize initial parse time rather than lookup time. For more information, see [How to search a JsonDocument and JsonElement for sub-elements](use-dom-utf8jsonreader-utf8jsonwriter.md#how-to-search-a-jsondocument-and-jsonelement-for-sub-elements).
+Searches for JSON tokens using `JObject` or `JArray` from `Newtonsoft.Json` tend to be relatively fast because they're lookups in some dictionary. By comparison, searches on `JsonElement` require a sequential search of the properties and hence are relatively slow (for example when using `TryGetProperty`). <xref:System.Text.Json?displayProperty=fullName> is designed to minimize initial parse time rather than lookup time. For more information, see [How to search a JsonDocument and JsonElement for sub-elements](use-dom.md#how-to-search-a-jsondocument-and-jsonelement-for-sub-elements).
 
 ## Utf8JsonReader compared to JsonTextReader
 
@@ -564,11 +564,11 @@ Searches for JSON tokens using `JObject` or `JArray` from `Newtonsoft.Json` tend
 
 ### Utf8JsonReader is a ref struct
 
-The `JsonTextReader` in `Newtonsoft.Json` is a class. The `Utf8JsonReader` type differs in that it's a *ref struct*. For more information, see [Utf8JsonReader is a ref struct](use-dom-utf8jsonreader-utf8jsonwriter.md#utf8jsonreader-is-a-ref-struct).
+The `JsonTextReader` in `Newtonsoft.Json` is a class. The `Utf8JsonReader` type differs in that it's a *ref struct*. For more information, see [Utf8JsonReader is a ref struct](use-utf8jsonreader.md#utf8jsonreader-is-a-ref-struct).
 
 ### Read null values into nullable value types
 
-`Newtonsoft.Json` provides APIs that return <xref:System.Nullable%601>, such as `ReadAsBoolean`, which handles a `Null` `TokenType` for you by returning a `bool?`. The built-in `System.Text.Json` APIs return only non-nullable value types. For more information, see [Read null values into nullable value types](use-dom-utf8jsonreader-utf8jsonwriter.md#read-null-values-into-nullable-value-types).
+`Newtonsoft.Json` provides APIs that return <xref:System.Nullable%601>, such as `ReadAsBoolean`, which handles a `Null` `TokenType` for you by returning a `bool?`. The built-in `System.Text.Json` APIs return only non-nullable value types. For more information, see [Read null values into nullable value types](use-utf8jsonreader.md#read-null-values-into-nullable-value-types).
 
 ### Multi-targeting
 
@@ -583,7 +583,7 @@ If you need to continue to use `Newtonsoft.Json` for certain target frameworks, 
 
 ### Write raw values
 
-The `Newtonsoft.Json` `WriteRawValue` method writes raw JSON where a value is expected. <xref:System.Text.Json?displayProperty=fullName> has a direct equivalent: <xref:System.Text.Json.Utf8JsonWriter.WriteRawValue%2A?displayProperty=nameWithType>. For more information, see [Write raw JSON](use-dom-utf8jsonreader-utf8jsonwriter.md#write-raw-json).
+The `Newtonsoft.Json` `WriteRawValue` method writes raw JSON where a value is expected. <xref:System.Text.Json?displayProperty=fullName> has a direct equivalent: <xref:System.Text.Json.Utf8JsonWriter.WriteRawValue%2A?displayProperty=nameWithType>. For more information, see [Write raw JSON](use-utf8jsonwriter.md#write-raw-json).
 
 ### Customize JSON format
 
@@ -631,20 +631,3 @@ Newtonsoft parses `NaN`, `Infinity`, and `-Infinity` JSON string tokens. In .NET
 
 * [System.Text.Json overview](overview.md)
 * [How to serialize and deserialize JSON](how-to.md)
-* [Instantiate JsonSerializerOptions instances](configure-options.md)
-* [Enable case-insensitive matching](character-casing.md)
-* [Customize property names and values](customize-properties.md)
-* [Ignore properties](ignore-properties.md)
-* [Allow invalid JSON](invalid-json.md)
-* [Handle overflow JSON or use JsonElement or JsonNode](handle-overflow.md)
-* [Preserve references and handle circular references](preserve-references.md)
-* [Deserialize to immutable types and non-public accessors](immutability.md)
-* [Polymorphic serialization](polymorphism.md)
-* [Customize character encoding](character-encoding.md)
-* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
-* [Write custom converters for JSON serialization](converters-how-to.md)
-* [DateTime and DateTimeOffset support](../../datetime/system-text-json-support.md)
-* [How to use source generation](source-generation.md)
-* [Supported collection types](supported-collection-types.md)
-* [System.Text.Json API reference](xref:System.Text.Json)
-* [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

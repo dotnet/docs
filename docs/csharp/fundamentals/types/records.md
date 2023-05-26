@@ -1,14 +1,14 @@
 ---
 title: "Records in C#"
 description: Learn about C# record types and how to create them. A record is a class that provides value semantics.
-ms.date: 09/30/2021
+ms.date: 05/24/2023
 helpviewer_keywords: 
   - "records [C#]"
   - "C# language, records"
 ---
 # Introduction to record types in C\#
 
-A [record](../../language-reference/builtin-types/record.md) in C# is a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md) that provides special syntax and behavior for working with data models.
+A [record](../../language-reference/builtin-types/record.md) in C# is a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md) that provides special syntax and behavior for working with data models. The `record` modifier instructs the compiler to synthesize members that are useful for types whose primary role is storing data. These members include an overload of <xref:System.Object.ToString> and members that support value equality.
 
 ## When to use records
 
@@ -33,13 +33,15 @@ Immutability isn't appropriate for all data scenarios. [Entity Framework Core](/
 
 The same syntax that [declares](classes.md#declaring-classes) and [instantiates](classes.md#creating-objects) classes or structs can be used with records. Just substitute the `class` keyword with the `record`, or use `record struct` instead of `struct`. Likewise, the same syntax for expressing inheritance relationships is supported by record classes. Records differ from classes in the following ways:
 
-* You can use [positional parameters](../../language-reference/builtin-types/record.md#positional-syntax-for-property-definition) to create and instantiate a type with immutable properties.
+* You can use [positional parameters](../../language-reference/builtin-types/record.md#positional-syntax-for-property-definition) in a [primary constructor](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) to create and instantiate a type with immutable properties.
 * The same methods and operators that indicate reference equality or inequality in classes (such as <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType> and `==`), indicate [value equality or inequality](../../language-reference/builtin-types/record.md#value-equality) in records.
 * You can use a [`with` expression](../../language-reference/builtin-types/record.md#nondestructive-mutation) to create a copy of an immutable object with new values in selected properties.
 * A record's `ToString` method creates a formatted string that shows an object's type name and the names and values of all its public properties.
 * A record can [inherit from another record](../../language-reference/builtin-types/record.md#inheritance). A record can't inherit from a class, and a class can't inherit from a record.
 
 Record structs differ from structs in that the compiler synthesizes the methods for equality, and `ToString`. The compiler synthesizes a `Deconstruct` method for positional record structs.
+
+The compiler synthesizes a public init-only property for each primary constructor parameter in a `record class`. In a `record struct`, the compiler synthesizes a public read-write property. The compiler doesn't create properties for primary constructor parameters in `class` and `struct` types that don't include `record` modifier.
 
 ## Examples
 

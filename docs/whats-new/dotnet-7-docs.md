@@ -172,7 +172,7 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [How to write custom converters for JSON serialization (marshalling) in .NET](../standard/serialization/system-text-json/converters-how-to.md)
   - Add section on Utf8JsonReader.CopyString
   - Add contract customization article
-- [How to use a JSON document, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json](../standard/serialization/system-text-json/use-dom-utf8jsonreader-utf8jsonwriter.md) - Add section on Utf8JsonReader.CopyString
+- [How to use Utf8JsonReader in System.Text.Json](../standard/serialization/system-text-json/use-utf8jsonreader.md) - Add section on Utf8JsonReader.CopyString
 - [Compare Newtonsoft.Json to System.Text.Json, and migrate to System.Text.Json](../standard/serialization/system-text-json/migrate-from-newtonsoft.md) - Add contract customization article
 - [How to preserve references and handle or ignore circular references in System.Text.Json](../standard/serialization/system-text-json/preserve-references.md) - Add contract customization article
 - [How to serialize properties of derived classes with System.Text.Json](../standard/serialization/system-text-json/polymorphism.md) - `System.Text.Json` polymorphism updates for .NET 7

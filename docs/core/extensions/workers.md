@@ -8,7 +8,7 @@ ms.topic: overview
 zone_pivot_groups: dotnet-version
 ---
 
-# Worker Services in .NET
+# Worker services in .NET
 
 There are numerous reasons for creating long-running services such as:
 
@@ -78,7 +78,7 @@ As for the `Worker`, the template provides a simple implementation.
 
 :::zone-end
 
-The preceding `Worker` class is a subclass of <xref:Microsoft.Extensions.Hosting.BackgroundService>, which implements <xref:Microsoft.Extensions.Hosting.IHostedService>. The <xref:Microsoft.Extensions.Hosting.BackgroundService> is an `abstract class` and requires the subclass to implement <xref:Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>. In the template implementation the `ExecuteAsync` loops once per second, logging the current date and time until the process is signaled to cancel.
+The preceding `Worker` class is a subclass of <xref:Microsoft.Extensions.Hosting.BackgroundService>, which implements <xref:Microsoft.Extensions.Hosting.IHostedService>. The <xref:Microsoft.Extensions.Hosting.BackgroundService> is an `abstract class` and requires the subclass to implement <xref:Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>. In the template implementation, the `ExecuteAsync` loops once per second, logging the current date and time until the process is signaled to cancel.
 
 ### The project file
 
@@ -96,7 +96,7 @@ An app based on the Worker template uses the `Microsoft.NET.Sdk.Worker` SDK and 
 
 ### Containers and cloud adaptability
 
-With most modern .NET workloads, containers are a viable option. When creating a long-running service from the Worker template in Visual Studio, you can opt-in to **Docker support**. Doing so will create a *Dockerfile* that will containerize your .NET app. A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of instructions to build an image. For .NET apps, the *Dockerfile* usually sits in the root of the directory next to a solution file.
+With most modern .NET workloads, containers are a viable option. When creating a long-running service from the Worker template in Visual Studio, you can opt in to **Docker support**. Doing so creates a *Dockerfile* that containerizes your .NET app. A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of instructions to build an image. For .NET apps, the *Dockerfile* usually sits in the root of the directory next to a solution file.
 
 :::zone target="docs" pivot="dotnet-7-0"
 
@@ -136,7 +136,7 @@ The preceding *Dockerfile* steps include:
 > [!TIP]
 > The MCR in `mcr.microsoft.com` stands for "Microsoft Container Registry", and is Microsoft's syndicated container catalog from the official Docker hub. The [Microsoft syndicates container catalog](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog) article contains additional details.
 
-When targeting Docker as a deployment strategy for your .NET Worker Service, there are a few considerations in the project file:
+When you target Docker as a deployment strategy for your .NET Worker Service, there are a few considerations in the project file:
 
 :::zone target="docs" pivot="dotnet-7-0"
 
@@ -173,7 +173,7 @@ These two methods serve as *lifecycle* methods - they're called during host star
 
 ## Signal completion
 
-In most common scenarios, you do not need to explicitly signal the completion of a hosted service. When the host starts the services, they're designed to run until the host is stopped. In some scenarios, however, you may need to signal the completion of the entire host application when the service completes. To achieve this, consider the following `Worker` class:
+In most common scenarios, you don't need to explicitly signal the completion of a hosted service. When the host starts the services, they're designed to run until the host is stopped. In some scenarios, however, you may need to signal the completion of the entire host application when the service completes. To signal the completion, consider the following `Worker` class:
 
 :::zone target="docs" pivot="dotnet-7-0"
 

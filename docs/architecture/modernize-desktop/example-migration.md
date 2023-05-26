@@ -8,21 +8,21 @@ ms.date: 10/25/2021
 
 [!INCLUDE [download-alert](includes/download-alert.md)]
 
-In this chapter, we'll show how to migrate your applications to the latest version of .NET. You can migrate to .NET 7 from .NET Framework, .NET Core, or .NET 5. We will introduce a tool that can do all the work for you in the majority of cases. If your application has special cases or complicated dependencies, we'll also show how to do the whole migration process by hand. Additionally, we'll cover the most common issues and challenges you can face when migrating an existing application from .NET Framework to .NET.
+In this chapter, we'll show how to migrate your applications to the latest version of .NET. You can migrate to .NET 7 from .NET Framework, .NET Core, or .NET 5. We'll introduce a tool that can do all the work for you in most cases. If your application has special cases or complicated dependencies, we'll also show how to do the whole migration process by hand. Additionally, we'll cover the most common issues and challenges you can face when migrating an existing application from .NET Framework to .NET.
 
 ## Migrating from .NET Core or .NET 5
 
-Updating your applications to target the latest version of .NET is easy if you already are on .NET Core or .NET 5. If this is the case, then in Visual Studio, simply right click on your project in **Solution Explorer** and choose **Properties**. Under **Application** > **General** > **Target framework**, choose .NET 7.0. Save and rebuild your application. You are done! Your app now runs on the latest version of .NET. In the future when new versions become available, you can upgrade in the same way.
+Updating your applications to target the latest version of .NET is easy if you already are on .NET Core or .NET 5. If this is the case, then in Visual Studio, simply right-click on your project in **Solution Explorer** and choose **Properties**. Under **Application** > **General** > **Target framework**, choose .NET 7.0. Save and rebuild your application. You're done! Your app now runs on the latest version of .NET. In the future when new versions become available, you can upgrade in the same way.
 
 ![Migrating to .NET 7.0 from .NET Core or .NET 5](./media/example-migration-core/migrate-in-settings.png)
 
 ## Migrating from .NET Framework
 
-Migrating from .NET Framework is a more complicated process because there are more differences between .NET Framework and other platforms that were built on top of .NET Core. But the good news is that there is a tool that will do all the work for you in most cases.
+Migrating from .NET Framework is a more complicated process because there are more differences between .NET Framework and other platforms that were built on top of .NET Core. But the good news is that there's a tool that will do all the work for you in most cases.
 
 ### Migrating with a tool
 
-The [Upgrade Assistant](https://dotnet.microsoft.com/platform/upgrade-assistant) is a migration tool. Using it is very easy and there are step-by-step instructions available on the [.NET website](https://dotnet.microsoft.com/platform/upgrade-assistant/tutorial/intro). In this chapter we will look at what is happening behind the scenes and how to port your application by hand. When the Upgrade Assistant is unable to migrate your application, you'll learn the underlying mechanics so that you might be able to migrate manually.
+The [Upgrade Assistant](https://dotnet.microsoft.com/platform/upgrade-assistant) is a migration tool. Using it is easy and there are step-by-step instructions available on the [.NET website](https://dotnet.microsoft.com/platform/upgrade-assistant/tutorial/intro). In this chapter, we'll look at what is happening behind the scenes and how to port your application by hand. When the Upgrade Assistant is unable to migrate your application, you'll learn the underlying mechanics so that you might be able to migrate manually.
 
 ### Migrating by hand
 
@@ -157,7 +157,7 @@ If you open the *.csproj* project file, you can see something like this:
 
 As previously mentioned, a .NET project has a more compact style and you need to migrate the project structure to the new .NET SDK style.
 
-In the Solution Explorer, right click on the Windows Forms project and select **Unload Project** > **Edit**.
+In Solution Explorer, right-click on the Windows Forms project and select **Unload Project** > **Edit**.
 
 Now you can update the .csproj file. You'll delete the entire contents and replace it with the following code:
 
@@ -257,7 +257,7 @@ Since you've deleted all the *.csproj* contents, you've lost a project reference
 <ItemGroup>
 ```
 
-You can also let Visual Studio help you by right-clicking on the **Dependencies** node and selecting **Add Project Reference**. Select the project from the solution and click **OK**:
+You can also let Visual Studio help you by right-clicking on the **Dependencies** node and selecting **Add Project Reference**. Select the project from the solution and select **OK**:
 
 ![Screenshot of the Reference Manager dialog with the eShop.SqlProvider project selected](./media/example-migration-core/reference-manager.png)
 

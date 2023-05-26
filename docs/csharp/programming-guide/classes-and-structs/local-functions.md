@@ -33,6 +33,10 @@ A local function is defined as a nested method inside a containing member. Its d
 <modifiers> <return-type> <method-name> <parameter-list>
 ```
 
+> [!NOTE]
+> The `<parameter-list>` shouldn't contain the parameters named with reserved keyword `value`.
+> The compiler creates the temporary variable "value", which contains the referenced outter variables, which later causes ambiguity and may also cause an unexpected behaviour.
+
 You can use the following modifiers with a local function:
 
 - [`async`](../../language-reference/keywords/async.md)

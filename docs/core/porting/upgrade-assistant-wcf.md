@@ -7,15 +7,15 @@ ms.date: 09/01/2022
 # Upgrade a WCF Server-side Project to use CoreWCF on .NET 6
 
 > [!IMPORTANT]
-> This article was written before the release of the Upgrade Assistant extension for Visual Studio. The CLI version of the tool used in this article is out of date. The article will be updated after the Microsoft Build 2023 conference.
+> This article was written before the release of the Upgrade Assistant extension for Visual Studio and it uses the legacy CLI tool. For more information, see [Install the .NET Upgrade Assistant (legacy)](upgrade-assistant-install-legacy.md).
 
-The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can assist with upgrading an existing WCF Server-side project on .NET Framework to use CoreWCF services on .NET 6. This article provides:
+The .NET Upgrade Assistant is a command-line tool that can assist with upgrading an existing WCF Server-side project on .NET Framework to use CoreWCF services on .NET 6. This article provides:
 
 - Things to know before starting.
 - A demonstration of how to run the tool against a WCF Server-side project on .NET Framework.
 - Troubleshooting tips.
 
-For more information on how to install the tool, see [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md).
+For more information on how to install the tool, see [Install the .NET Upgrade Assistant (legacy)](upgrade-assistant-install-legacy.md).
 
 ## Things to know before starting
 
@@ -42,8 +42,6 @@ You can use the [Basic Calculator Sample][wcf-sample] project to test upgrading 
 If you want to try out a more complicated sample, see the [BeanTrader sample](https://github.com/dotnet/windows-desktop/tree/main/Samples/BeanTrader) created by Mike Rousos.
 
 ## Run upgrade-assistant
-
-If you haven't installed the .NET Upgrade Assistant tool, follow the [installation instructions](https://github.com/dotnet/upgrade-assistant#installation).
 
 Open a terminal and navigate to the folder where the target project or solution is located. Run the `upgrade-assistant upgrade` command, passing in the name of the project or solution you're upgrading.
 
@@ -548,6 +546,5 @@ There are several known problems that can occur when using the .NET Upgrade Assi
 - Blog: [Upgrading a WCF service to .NET 6 with CoreWCF](https://devblogs.microsoft.com/dotnet/upgrading-a-wcf-service-to-dotnet-6/)
 - Blog: [CoreWCF 1.0 has been Released, WCF for .NET Core and .NET 5+](https://devblogs.microsoft.com/dotnet/corewcf-v1-released/)
 - Docs: [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md)
-- [.NET Upgrade Assistant GitHub Repository](https://github.com/dotnet/upgrade-assistant)
 
 [wcf-sample]: https://github.com/dotnet/samples/tree/main/core/porting/upgrade-assistant-wcf-framework/CalculatorSample

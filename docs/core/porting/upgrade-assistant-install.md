@@ -7,7 +7,7 @@ ms.date: 05/22/2023
 ---
 # Install the .NET Upgrade Assistant
 
-The .NET Upgrade Assistant can be installed as a Visual Studio extension or as a .NET command-line tool. When installed as a Visual Studio extension, loaded projects can be upgraded through the context menu. The .NET command-line tool version of the tool provides an interactive step-by-step expreience. For more information about the tool, see [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md).
+The .NET Upgrade Assistant can be installed as a Visual Studio extension or as a .NET command-line tool. When installed as a Visual Studio extension, loaded projects can be upgraded through the context menu. The .NET command-line tool version of the tool provides an interactive step-by-step experience. For more information about the tool, see [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md).
 
 ### Prerequisites
 
@@ -17,7 +17,7 @@ The .NET Upgrade Assistant can be installed as a Visual Studio extension or as a
 
 ## Install the Visual Studio extension
 
-The .NET Upgrade Assistant can be installed as a Visul Studio extension, which lets you upgrade an opened project. Use the following steps to install the .NET Upgrade Assistant from inside Visual Studio. Alternatively, you can download and install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.upgradeassistant).
+The .NET Upgrade Assistant can be installed as a Visual Studio extension, which lets you upgrade an opened project. Use the following steps to install the .NET Upgrade Assistant from inside Visual Studio. Alternatively, you can download and install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.upgradeassistant).
 
 01. With Visual Studio opened, press the **Extensions** > **Manage Extensions** menu item, which opens the **Manage Extensions** window.
 01. In the **Manage Extensions** window, enter *upgrade* into the search input box.

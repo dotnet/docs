@@ -20,7 +20,7 @@ The following steps show how you can use Http retries with Polly integrated into
 
 **Configure a client with Polly's Retry policy, in app startup**
 
-As shown in previous sections, you need to define a named or typed client HttpClient configuration in your standard _Program.cs_ app configuration. Now you add incremental code specifying the policy for the Http retries with exponential backoff, as below:
+As shown in previous sections, you need to define a named or typed client HttpClient configuration in your standard _Program.cs_ app configuration. Now you add incremental code specifying the policy for the Http retries with exponential backoff, as follows:
 
 ```csharp
 // Program.cs
@@ -61,19 +61,19 @@ var retryPolicy = Policy
 
 ## Additional resources
 
-- **Retry pattern**  
+- **Retry pattern**
   [https://learn.microsoft.com/azure/architecture/patterns/retry](/azure/architecture/patterns/retry)
 
-- **Polly and IHttpClientFactory**  
+- **Polly and IHttpClientFactory**
   <https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory>
 
-- **Polly (.NET resilience and transient-fault-handling library)**  
+- **Polly (.NET resilience and transient-fault-handling library)**
   <https://github.com/App-vNext/Polly>
 
-- **Polly: Retry with Jitter**  
+- **Polly: Retry with Jitter**
   <https://github.com/App-vNext/Polly/wiki/Retry-with-jitter>
 
-- **Marc Brooker. Jitter: Making Things Better With Randomness**  
+- **Marc Brooker. Jitter: Making Things Better With Randomness**
   <https://brooker.co.za/blog/2015/03/21/backoff.html>
 
 >[!div class="step-by-step"]

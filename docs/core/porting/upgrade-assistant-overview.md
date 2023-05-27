@@ -11,7 +11,7 @@ New versions of .NET are released throughout the year, with a major release once
 
 The .NET Upgrade Assistant is a Visual Studio extension and command-line tool that's designed to assist with upgrading apps to the latest version of .NET.
 
-Issues related to the .NET Upgrade Assistant can be filed within Visual Studio by selecting **Help** > **Send Feedback** > **Report a Problem...**
+Issues related to the .NET Upgrade Assistant can be filed within Visual Studio by selecting **Help** > **Send Feedback** > **Report a Problem**.
 
 ## Install the Upgrade Assistant
 

@@ -26,9 +26,9 @@ items:
           - name: Windows Communication Foundation
             href: ../../core/porting/upgrade-assistant-wcf.md
           - name: Windows Presentation Foundation
-            href: /dotnet/desktop/wpf/migration/?view=netdesktop-7.0
+            href: /dotnet/desktop/wpf/migration/
           - name: Windows Forms
-            href: /dotnet/desktop/winforms/migration/?view=netdesktop-7.0
+            href: /dotnet/desktop/winforms/migration/
           - name: Universal Windows Platform
             href: ../../core/porting/upgrade-assistant-uwp-framework.md
           - name: ASP.NET
@@ -73,9 +73,9 @@ items:
       - name: Application porting guides
         items:
           - name: Windows Forms
-            href: /dotnet/desktop/winforms/migration/?view=netdesktop-6.0&preserve-view=false&toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+            href: /dotnet/desktop/winforms/migration/?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Windows Presentation Foundation
-            href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0&preserve-view=false&toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+            href: /dotnet/desktop/wpf/migration/?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: C++/CLI projects
             href: ../../core/porting/cpp-cli.md
   - name: Post-migration

@@ -16,7 +16,7 @@ The XML Schema Definition tool (Xsd.exe) allows you to generate an XML schema th
 The XML Schema Definition tool (Xsd.exe) usually can be found in the following path:\
 _C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\{version}\\bin\\NETFX {version} Tools\\_
 
-### To generate classes that conform to a specific schema  
+## To generate classes that conform to a specific schema  
   
 1. Open a command prompt.  
   
@@ -26,7 +26,7 @@ _C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\{version}\\bin\\NETFX {versio
     xsd mySchema.xsd  
     ```  
   
-     The tool can only process schemas that reference the World Wide Web Consortium XML specification of March 16, 2001. In other words, the XML Schema namespace must be "http://www.w3.org/2001/XMLSchema" as shown in the following example.  
+     The tool can only process schemas that reference the World Wide Web Consortium XML specification of March 16, 2001. In other words, the XML Schema namespace must be `"http://www.w3.org/2001/XMLSchema"`, as shown in the following example.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -37,7 +37,7 @@ _C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\{version}\\bin\\NETFX {versio
   
  It is often useful to examine the schema of the XML stream that is generated when instances of a class (or classes) are serialized. For example, you might publish your schema for others to use, or you might compare it to a schema with which you are trying to achieve conformity.  
   
-#### To generate an XML Schema document from a set of classes  
+## To generate an XML Schema document from a set of classes  
   
 1. Compile the class or classes into a DLL.  
   

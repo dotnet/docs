@@ -1,6 +1,6 @@
 ---
 title: dotnet-symbol diagnostic tool - .NET CLI
-description: Learn how to install and use the dotnet-symbol CLI tool to download files required for debugging .NET dumps and minidumps. 
+description: Learn how to install and use the dotnet-symbol CLI tool to download files required for debugging .NET dumps and minidumps.
 ms.date: 11/17/2020
 ms.topic: reference
 ---
@@ -30,7 +30,7 @@ The `dotnet-symbol` global tool downloads files (symbols, DAC, modules, etc.) ne
 
 - **`--microsoft-symbol-server`**
 
-  Add 'http://msdl.microsoft.com/download/symbols' symbol server path (default).
+  Add `http://msdl.microsoft.com/download/symbols` symbol server path (default).
 
 - **`--server-path <symbol server path>`**
 

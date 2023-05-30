@@ -16,7 +16,7 @@ This article has been updated for .NET 8 Preview 4.
 > [!IMPORTANT]
 >
 > - This information relates to a pre-release product that may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-> - Much of the other .NET documentation on [https://learn.microsoft.com/dotnet](/dotnet) has not yet been updated for .NET 8.
+> - Much of the other .NET documentation on https://learn.microsoft.com has not yet been updated for .NET 8.
 
 ## .NET SDK changes
 

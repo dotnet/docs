@@ -14,6 +14,8 @@ items:
         href: aspnet-core/8.0/concurrencylimitermiddleware-obsolete.md
       - name: Custom converters for serialization removed
         href: aspnet-core/8.0/problemdetails-custom-converters.md
+      - name: ISystemClock is obsolete
+        href: aspnet-core/8.0/isystemclock-obsolete.md
     - name: Core .NET libraries
       items:
       - name: Activity operation name when null
@@ -768,6 +770,8 @@ items:
         href: aspnet-core/8.0/concurrencylimitermiddleware-obsolete.md
       - name: Custom converters for serialization removed
         href: aspnet-core/8.0/problemdetails-custom-converters.md
+      - name: ISystemClock is obsolete
+        href: aspnet-core/8.0/isystemclock-obsolete.md
     - name: .NET 7
       items:
       - name: API controller actions try to infer parameters from DI

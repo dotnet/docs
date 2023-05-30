@@ -52,6 +52,7 @@ Similarly, derived implementations that reference the `Clock` property on these 
 - var currentUtc = Clock.UtcNow;
 + var currentUtc = TimeProvider.GetUtcNow();
 ```
+
 You can set `TimeProvider` for testing on the options or via DI.
 
 ## Affected APIs

@@ -51,7 +51,7 @@ Specifies the parameters for a security token issued in a Federated security sce
 |inclusionMode|Specifies the token inclusion requirements. This attribute is of type <xref:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode>.|
 |keySize|An integer that specifies the token key size. The default value is 256.|
 |keyType|A valid value of <xref:System.IdentityModel.Tokens.SecurityKeyType> that specifies the key type. The default is `SymmetricKey`.|
-|tokenType|A string that specifies the token type. The default is `"http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1"`.1#SAML>.|
+|tokenType|A string that specifies the token type. The default is `"http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAML"`.|
 
 ### Child Elements
 

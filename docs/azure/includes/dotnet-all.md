@@ -519,7 +519,7 @@
 | Extensions - Caching Cosmos | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Cosmos/1.4.0) |  | GitHub [1.4.0](https://github.com/Azure/Microsoft.Extensions.Caching.Cosmos/tree/v1.0.0-preview4) |
 | Functions extension for Application Insights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Functions extension for Authentication Events | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AuthenticationEvents/1.0.0-beta.3) |  |  |
-| Functions extension for Azure SQL and SQL Server | NuGet [3.0.181-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/3.0.181-preview) |  |  |
+| Functions extension for Azure SQL and SQL Server | NuGet [3.0.253-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/3.0.253-preview) |  |  |
 | Functions extension for Durable Task Framework - isolated worker | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.0.2) |  |  |
 | Functions extension for Storage Timers | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Timers.Storage/1.0.0) |  |  |
 | Microsoft.Azure.Cosmos.Templates | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Templates/1.0.0) |  |  |

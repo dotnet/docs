@@ -5,7 +5,7 @@ ms.date: 05/30/2023
 ---
 # Rate-limiting middleware requires AddRateLimiter
 
-ASP.NET Core rate-limiting middleware has been updated with extra functionality. The middleware now requires services registered with <xref:Microsoft.AspNetCore.Builder.RateLimiterServiceCollectionExtensions.AddRateLimiter(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.AspNetCore.RateLimiting.RateLimiterOptions})>.
+ASP.NET Core rate-limiting middleware has been updated with extra functionality. The middleware now requires services registered with <xref:Microsoft.AspNetCore.Builder.RateLimiterServiceCollectionExtensions.AddRateLimiter%2A>.
 
 ## Version introduced
 

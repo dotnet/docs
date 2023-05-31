@@ -20,7 +20,7 @@ In F#, the access control specifiers `public`, `internal`, and `private` can be 
 > [!NOTE]
 > The access specifier `protected` is not used in F#, although it is acceptable if you are using types authored in languages that do support `protected` access. Therefore, if you override a protected method, your method remains accessible only within the class and its descendents.
 
-In general, the specifier is put in front of the name of the entity, except when a `mutable` or `inline` specifier is used, which appear after the access control specifier.
+The access specifier is put in front of the name of the entity.
 
 If no access specifier is used, the default is `public`, except for `let` bindings in a type, which are always `private` to the type.
 

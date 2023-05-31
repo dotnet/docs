@@ -13,7 +13,7 @@ ASP.NET Core 8.0 Preview 5
 
 ## Previous behavior
 
-Previously, rate limiting could be used without <xref:Microsoft.AspNetCore.Builder.RateLimiterServiceCollectionExtensions.AddRateLimiter(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.AspNetCore.RateLimiting.RateLimiterOptions})>. For example, the middleware could be configured by calling `Configure<RateLimiterOptions>(o => { })`:
+Previously, rate limiting could be used without <xref:Microsoft.AspNetCore.Builder.RateLimiterServiceCollectionExtensions.AddRateLimiter%2A>. For example, the middleware could be configured by calling `Configure<RateLimiterOptions>(o => { })`:
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
@@ -31,7 +31,7 @@ app.Run();
 
 ## New behavior
 
-If <xref:Microsoft.AspNetCore.Builder.RateLimiterServiceCollectionExtensions.AddRateLimiter(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.AspNetCore.RateLimiting.RateLimiterOptions})> is not called on app startup, ASP.NET Core throws an informative error:
+If <xref:Microsoft.AspNetCore.Builder.RateLimiterServiceCollectionExtensions.AddRateLimiter%2A> is not called on app startup, ASP.NET Core throws an informative error:
 
 > Unable to find the required services. Please add all the required services by calling 'IServiceCollection.AddRateLimiter' in the application startup code.
 
@@ -41,7 +41,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-Rate-limiting middleware requires services that are only registered by calling <xref:Microsoft.AspNetCore.Builder.RateLimiterServiceCollectionExtensions.AddRateLimiter(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.AspNetCore.RateLimiting.RateLimiterOptions})>.
+Rate-limiting middleware requires services that are only registered by calling <xref:Microsoft.AspNetCore.Builder.RateLimiterServiceCollectionExtensions.AddRateLimiter%2A>.
 
 ## Recommended action
 

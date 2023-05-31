@@ -227,7 +227,7 @@ Many other users have reported these problems. The following is a list of those 
 - Fatal error: folder _/host/fxr_ doesn't exist
 
   - [Core #5746: The folder does not exist when installing 3.1 on CentOS 8 with packages.microsoft.com repo enabled](https://github.com/dotnet/core/issues/5746)
-  - [SDK #15476: A fatal error occurred. The folder [/usr/share/dotnet/host/fxr] does not exist](https://github.com/dotnet/sdk/issues/15476):
+  - [SDK #15476: A fatal error occurred. The folder '/usr/share/dotnet/host/fxr' does not exist](https://github.com/dotnet/sdk/issues/15476):
 
 - Fatal error: folder _/host/fxr_ doesn't contain any version-numbered child folders
 

@@ -710,7 +710,6 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   Enable publish using AOT. For more information, see [Native AOT deployment](/dotnet/core/deploying/native-aot) and [The API template](/aspnet/core/fundamentals/native-aot#the-api-template).
 
-
 - **`--exclude-launch-settings`**
 
   Excludes *launchSettings.json* from the generated template.

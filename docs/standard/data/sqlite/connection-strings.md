@@ -118,10 +118,10 @@ You can use <xref:Microsoft.Data.Sqlite.SqliteConnectionStringBuilder> as a stro
 
 ### Basic
 
-A basic connection string with a shared cache for improved concurrency.
+A basic connection string.
 
 ```connectionstring
-Data Source=Application.db;Cache=Shared
+Data Source=Application.db
 ```
 
 ### Encrypted

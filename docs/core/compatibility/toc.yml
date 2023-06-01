@@ -48,6 +48,8 @@ items:
       items:
       - name: StripSymbols defaults to true
         href: deployment/8.0/stripsymbols-default.md
+    - name: Entity Framework Core
+      href: /ef/core/what-is-new/ef-core-8.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Extensions
       items:
       - name: ActivatorUtilities.CreateInstance behaves consistently
@@ -194,6 +196,8 @@ items:
         href: deployment/7.0/x86-host-path.md
       - name: Deprecation of TrimmerDefaultAction property
         href: deployment/7.0/deprecated-trimmer-default-action.md
+    - name: Entity Framework Core
+      href: /ef/core/what-is-new/ef-core-7.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Globalization
       items:
       - name: Globalization APIs use ICU libraries on Windows Server
@@ -390,8 +394,8 @@ items:
       items:
       - name: x86 host path on 64-bit Windows
         href: deployment/7.0/x86-host-path.md
-      - name: Entity Framework Core
-        href: /ef/core/what-is-new/ef-core-6.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+    - name: Entity Framework Core
+      href: /ef/core/what-is-new/ef-core-6.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Extensions
       items:
       - name: AddProvider checks for non-null provider
@@ -654,8 +658,8 @@ items:
         href: cryptography/5.0/instantiating-default-implementations-of-cryptographic-abstractions-not-supported.md
       - name: Default FeedbackSize value changed
         href: cryptography/5.0/tripledes-default-feedback-size-change.md
-      - name: Entity Framework Core
-        href: /ef/core/what-is-new/ef-core-5.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+    - name: Entity Framework Core
+      href: /ef/core/what-is-new/ef-core-5.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Globalization
       items:
       - name: Use ICU libraries on Windows
@@ -1196,6 +1200,10 @@ items:
         href: deployment/7.0/x86-host-path.md
   - name: Entity Framework Core
     items:
+    - name: EF Core 8
+      href: /ef/core/what-is-new/ef-core-8.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+    - name: EF Core 7
+      href: /ef/core/what-is-new/ef-core-7.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: EF Core 6
       href: /ef/core/what-is-new/ef-core-6.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: EF Core 5

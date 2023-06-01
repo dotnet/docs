@@ -3,7 +3,7 @@ title: Options pattern guidance for .NET library authors
 author: IEvangelist
 description: Learn how to expose the options pattern as a library author in .NET. Follow the guidance to ensure your library is correctly exposed to consumers.
 ms.author: dapine
-ms.date: 03/13/2023
+ms.date: 05/30/2023
 ---
 
 # Options pattern guidance for .NET library authors
@@ -135,7 +135,10 @@ Consumers in this pattern provide an instance of the `LibraryOptions` class, def
 
 ## Post configuration
 
-After all configuration option values are bound or specified, post configuration functionality is available. Exposing the same [`Action<TOptions>` parameter](#actiontoptions-parameter) detailed earlier, you could choose to call <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure%2A>. Post configure runs after all `.Configure` calls.
+After all configuration option values are bound or specified, post configuration functionality is available. Exposing the same [`Action<TOptions>` parameter](#actiontoptions-parameter) detailed earlier, you could choose to call <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure%2A>. Post configure runs after all `.Configure` calls. There are few reasons why you'd want to consider using `PostConfigure`:
+
+- **Execution order**: You can override any configuration values that were set in the `.Configure` calls.
+- **Validation**: You can validate the default values have been set after all other configurations have been applied.
 
 :::code language="csharp" source="snippets/configuration/options-postconfig/ServiceCollectionExtensions.cs" highlight="9,11":::
 

@@ -21,12 +21,10 @@ Claim comparison involves comparing the three parts of a claim (type, right, and
 
 Both claims have a claim type of <xref:System.IdentityModel.Claims.ClaimTypes.Name%2A>, a right of <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>, and a resource of the string "someone". As all three parts of the claim are equal, the claims themselves are equal.
 
-The built-in claim types are compared using the <xref:System.IdentityModel.Claims.Claim.Equals%2A> method. Claim-specific comparison code is used where necessary. For example, given the following two user principal name (UPN) claims:
+The built-in claim types are compared using the <xref:System.IdentityModel.Claims.Claim.Equals%2A> method. Claim-specific comparison code is used where necessary. For example, given the following two user principal name (UPN) claims, the comparison code in the <xref:System.IdentityModel.Claims.Claim.Equals%2A> method returns `true`, assuming `example\someone` identifies the same domain user as `someone@example.com`.
 
 [!code-csharp[c_CustomClaimComparison#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customclaimcomparison/cs/c_customclaimcomparison.cs#4)]
 [!code-vb[c_CustomClaimComparison#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaimcomparison/vb/source.vb#4)]
-
-the comparison code in the <xref:System.IdentityModel.Claims.Claim.Equals%2A> method returns `true`, assuming `example\someone` identifies the same domain user as "someone@example.com".
 
 Custom claim types can also be compared using the <xref:System.IdentityModel.Claims.Claim.Equals%2A> method. However, in cases where the type returned by the <xref:System.IdentityModel.Claims.Claim.Resource%2A> property of the claim is something other than a primitive type, the <xref:System.IdentityModel.Claims.Claim.Equals%2A> returns `true` only if the values returned by the `Resource` properties are equal according to the <xref:System.IdentityModel.Claims.Claim.Equals%2A> method. In cases where this is not appropriate, the custom type returned by the `Resource` property should override the <xref:System.IdentityModel.Claims.Claim.Equals%2A> and <xref:System.Object.GetHashCode%2A> methods to perform whatever custom processing is necessary.
 

@@ -1,6 +1,6 @@
 ---
 title: Async limitations
-ms.date: 09/04/2020
+ms.date: 06/01/2023
 description: Explains the limitations of the async APIs and some alternatives that you can use instead.
 ---
 # Async limitations

@@ -1,6 +1,6 @@
 ---
 title: Connection strings
-ms.date: 07/14/2021
+ms.date: 06/01/2023
 no-loc: Command Timeout,Default Timeout,Data Source,Recursive Triggers,Pooling
 description: The supported keywords and values of connection strings.
 ---

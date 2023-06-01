@@ -1,10 +1,29 @@
 ---
-title: Comparing F# with Java - Syntax Comparison
+title: Comparing F# with Java
 description: Learn about the similarities and differences between F# and Java in terms of syntax and coding examples.
-ms.date: [Date]
+ms.date: 31/05/2023
 ---
 
-# Hello world 🚀
+# Comparing F\# with Java
+
+In this section, we will compare the syntax and coding style of the F# programming language with Java. We will highlight the key language features, discuss syntax differences, and provide code examples to illustrate the variations.
+
+## Getting Started
+
+* install [latest **dotnet SDK**](https://dotnet.microsoft.com/download)
+
+* install [VScode](https://code.visualstudio.com/) and add [Ionide](http://ionide.io/) extension
+
+* As an **alternative** you can use [Rider EAP](https://www.jetbrains.com/rider/nextversion/) if you are more confortable with IntelliJ (there is no community version for rider atm). Here is how [F#](https://www.jetbrains.com/help/rider/F_Sharp.html) is supported.
+
+```console
+dotnet --version
+dotnet new console -lang f#
+```
+
+Let's now compare code in our code in `F#` with `Java`.
+
+# Hello World!
 
 Java
 
@@ -24,7 +43,7 @@ Much shorter, now C# also has top-level statements and global using, so you coul
 printfn "Hello world"
 ```
 
-# Static method 🏛
+# Static methods
 
 And here is how to define and use a static method in Java
 
@@ -36,8 +55,9 @@ public class StringUtils {
   }  
 }  
   
-//usage in some other class/method..  
-StringUtils.magic("this is magic!"); // prints \`this is wow!\`
+//usage in some other class/method..
+// prints `this is wow!`  
+StringUtils.magic("this is magic!"); 
 
 ```
 
@@ -50,10 +70,11 @@ module StringUtils
         inputString.Replace("magic", "wow")  
   
 //usage in some other class/method...  
-StringUtils.magic "this is magic!" // wrapping (...) is not required here
+// ( ) is not required here
+StringUtils.magic "this is magic!" 
 ```
 
-# Defining a DTO Class (~ POJO/Bean) 📎
+# POJO/Bean/DTO
 
 Java (with [Lombok](https://projectlombok.org/features/))
 
@@ -87,9 +108,9 @@ public class Person {
     private final String name;  
     private final String surname;  
   
-    public int getAge(){ return age; }  
-    public String getName(){ return name; }  
-    public String getSurname(){ return surname; }  
+    public int getAge() { return age; }  
+    public String getName() { return name; }  
+    public String getSurname() { return surname; }  
       
     public Person(int age, String name, String surname) {  
         this.age = age;  
@@ -99,11 +120,7 @@ public class Person {
 }
 ```
 
-ps: here using the recent Java [Record](https://medium.com/@jkone27-3876/baeldung.com/java-record-keyword) feature,
-
-[Sergiy Yevtushenko](https://medium.com/u/910badbeb75c?source=post_page-----d360d26dadbc--------------------------------)
-
-, thanks for your comments:
+ps: here using the recent Java [Record](https://medium.com/@jkone27-3876/baeldung.com/java-record-keyword) feature.
 
 ```java
 public record Person (int age, String name, String surname) {}
@@ -139,14 +156,15 @@ type Person(age,name,surname) = // class
     member val Surname = surname with set
 ```
 
-# Creating an Object 🐼
+# Creating an Object
 
 Java
 
 ```java
-Person john \= new Person(31,"john","kennedy");  
+Person john = new Person(31,"john","kennedy");  
   
-Person john \= Person.builder() // with lombok @Builder attribute  
+// with lombok @Builder attribute  
+Person john = Person.builder() 
                     .age(31)  
                     .name("john")    
                     .surname("kennedy")  
@@ -165,12 +183,12 @@ let john = {
 let mary = new Person(31, "mary", "kennedy") // when using a class type
 ```
 
-# Working with Streams 💦
+# Streams vs Sequences
 
 Java (Stream)
 
 ```java
-var x \= List.of(1,2,3)  
+var x = List.of(1,2,3)  
             .stream()  
             .filter(...)  
             .map(...);
@@ -180,7 +198,7 @@ in F#, the [**seq**](https://learn.microsoft.com/en-us/dotnet/fsharp/language-re
 
 ```fsharp
 let x =   
-   \[1;2;3\]   
+   [1;2;3]   
    |> Seq.filter (...)   
    |> Seq.map (...)
 ```
@@ -188,7 +206,7 @@ let x =
 In F# the [**pipe**](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/symbol-and-operator-reference/) **operator |>** makes working with data **elegant** and **beautiful!** plus it’s also functional and can be applied to virtually anything, e.g.  
 The **beauty** of this approach, is that code “flows” from **top** to **bottom**, and from **left** to **right**, quite easilly and without occupying much brain space.
 
-# Dependency Injection 📩
+# Dependency Injection
 
 Spring has quite smooth **registration** **annotations** that makes the process of registering a dependency quite nice and neat. One divergent note is that in spring “interfaces” are not really used that much, so registration happens direcly on the **concrete** **class** and in unit tests concrete classes are mocked by mockito framework.
 
@@ -240,14 +258,36 @@ let test = dispatchOrder orderClientMock productClientMock
 test "ORDER-001"
 ```
 
-# Service (or Component) 🚚
+# Services/Components
 
 Java
 
 Here we see an example with **Springboot DI** and **Lombok** annotations, and the **reactive** **concurrent** model of Spring **webflux**. Sadly async/await model for concurrency is not yet supported in Java, if not with some extension libraries like [EA async](https://github.com/electronicarts/ea-async), which though is not mantained anymore. The reactive model has both **benefits** and **drawbacks** for concurrency modeling in my view, it **abstracts away the concurrency at “scheduler” level**, but can also make code harder to read and compose: why? there is a pletora of non super easy abstractions for observable composition and ingestion, so the **API of the reactive model is quite wide** an not easy to learn.
 
 ```java
-@Component@RequiredArgsConstructorpublic class FulfillmentService {        private final OrderClient orderClient;    private final ProductClient productClient;    private bool isFinalizedOrder(OrderDto order) {        return order.Status == OrderStatus.Finalized;    }    public Flux<OrderDto> getFinalizedOrders() {            return orderClient                .getOrders()                .filter(isFinalizedOrder);    }    public Flux<ProductDto> getProductsForOrder(String orderNumber) {            return orderClient                .getOrder(orderNumber)                .flatMap(o -> o.productIds)                .map(id -> productClient.getProduct(id));    }}
+@Component
+@RequiredArgsConstructor
+public class FulfillmentService {    
+    
+    private final OrderClient orderClient;
+    
+    private final ProductClient productClient;
+    
+    private bool isFinalizedOrder(OrderDto order) {        
+        return order.Status == OrderStatus.Finalized;   
+    }    
+
+    public Flux<OrderDto> getFinalizedOrders() {            
+        return orderClient.getOrders().filter(isFinalizedOrder);    
+    }    
+
+    public Flux<ProductDto> getProductsForOrder(String orderNumber) {            
+        return orderClient
+                .getOrder(orderNumber)
+                .flatMap(o -> o.productIds)
+                .map(id -> productClient.getProduct(id));    
+    }
+}
 ```
 
 .NET languages support [reactive programming via RX.NET package](http://introtorx.com/Content/v1.0.10621.0/01_WhyRx.html), but this approach is **not** the most common in the .net web programming world, though maybe **could feel easier for Java devs**, or if they wanted to migrate a codebase “almost as-is”, even though async/await does seem easier for everyone I think.
@@ -255,7 +295,22 @@ Here we see an example with **Springboot DI** and **Lombok** annotations, and th
 Anyways as a nice side note [F# natively supports Observables](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-observablemodule.html) from event and other sources (even without RX library). Hereafter we see F# **Reactive** style, hipster hat on… I must admit async/await synthax is a bit terser than rx after trying both worlds.
 
 ```fsharp
-type FulfillmentService(orderClient, productClient) =    let isFinalizedOrder order =         order.Status = OrderStatus.Finalized    member this.GetFinalizedOrdersObservable(orderNumber) =         orderClient.getAllOrdersAsync          |> Observable.FromAsync          |> Observable.flatmapSeq (fun o -> o)          |> Observable.filter isFinalizedOrder    member this.GetProductsFromOrderObservable(orderNumber) =         (orderClient.getOrderAsync orderNumber)            |> Observable.FromAsync            |> Observable.flatmapSeq(fun o -> o.ProductIds)            |> Observable.flatmapTask productClient.getProductAsync
+type FulfillmentService(orderClient, productClient) =
+
+    let isFinalizedOrder order = 
+        order.Status = OrderStatus.Finalized
+
+    member this.GetFinalizedOrdersObservable(orderNumber) =
+         orderClient.getAllOrdersAsync
+          |> Observable.FromAsync
+          |> Observable.flatmapSeq (fun o -> o)
+          |> Observable.filter isFinalizedOrder
+
+    member this.GetProductsFromOrderObservable(orderNumber) =
+         (orderClient.getOrderAsync orderNumber)
+            |> Observable.FromAsync
+            |> Observable.flatmapSeq(fun o -> o.ProductIds)
+            |> Observable.flatmapTask productClient.getProductAsync
 ```
 
 F# and .NET in general can make use of **async/await as well** using [Task builder CE](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/task-expressions)… in F# a regular .NET async (Task) is expressed using the **task** computation expression and an await is expressed using the **bang operator !** within the expression (within the curly braces). It’s worth noting that **F# already had async** computatons way long before C# and many other languages, [**since** version 1.0](https://fsharp.org/history/hopl-final/hopl-fsharp.pdf) actually in **2007**.
@@ -263,33 +318,73 @@ F# and .NET in general can make use of **async/await as well** using [Task build
 **Curly braces** in F# are used only for [**CEs**](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/computation-expressions) , as opposed to indentation that is adopted for variable scoping (like python and ruby)
 
 ```fsharp
-type FulfillmentService(orderClient, productClient) =    let isFinalizedOrder order =         order.Status = OrderStatus.Finalized    member this.GetFinalizedOrdersAsync() =         task {             let! orders = orderClient.GetOrdersAsync()                           return orders |> Seq.filter isFinalizedOrder         }    member this.GetProductsFromOrder(orderNumber) =         task {             let! order = orderClient.GetOrderAsync(orderNumber)                          let! products =                   order.ProductIds                  |> Seq.map productClient.GetProductAsync                  |> Task.WhenAll             return products         }
+type FulfillmentService(orderClient, productClient) =
+
+    let isFinalizedOrder order = 
+        order.Status = OrderStatus.Finalized
+
+    member this.GetFinalizedOrdersAsync() =
+         task {
+
+             let! orders = orderClient.GetOrdersAsync() 
+             
+             return orders |> Seq.filter isFinalizedOrder
+         }
+
+    member this.GetProductsFromOrder(orderNumber) =
+         task {
+
+             let! order = orderClient.GetOrderAsync(orderNumber)
+             
+             let! products = 
+                  order.ProductIds
+                  |> Seq.map productClient.GetProductAsync
+                  |> Task.WhenAll
+
+             return products
+         }
 ```
 
 F# supports **async** **await** **as well as reactive pipelines**, so we can chose whatever we fancy the most, wheras java doesn’t have yet async/await support. In general async/await is a bit **simpler** to understand and to use with pleasure.
 
-# Inheritance VS Union types 🐲
+# Inheritance VS Union
 
 Both **Java** and **C#** (as well as Kotlin) do **not\*** support union types - except maybe recent version of Java, see later for a comment on Java sealed types - but mostly plain **inheritance**, so I will start with some Java inheritance example
 
 ```java
-//Animal
-public class Animal { 
-// abstract animal interface     
-void eat();     
-void sleep();     
-String getName(); }
-
-//Dog 
-@RequiredArgsConstructor
-public class Dog implements Animal {     
-@Override     public void eat() {...}     @Override     public void sleep() {...}      @Getter     private final String name;
+//Animal.java
+public class Animal { // abstract animal interface
+     void eat();
+     void sleep();
+     String getName(); 
 }
 
-//Cat
+//Dog.java
 @RequiredArgsConstructor
-public class Cat implements Animal {     
-@Override     public void eat() {...}     @Override     public void sleep() {...}      @Getter     private final String name;
+public class Dog implements Animal {
+
+     @Override
+     public void eat() {...}
+
+     @Override
+     public void sleep() {...} 
+
+     @Getter
+     private final String name;
+}
+
+//Cat.java
+@RequiredArgsConstructor
+public class Cat implements Animal {
+
+     @Override
+     public void eat() {...}
+
+     @Override
+     public void sleep() {...} 
+
+     @Getter
+     private final String name;
 }
 ```
 
@@ -337,7 +432,7 @@ In future versions of Java, the client code will be able to use a _switch_ state
 
 By using [type test patterns](https://openjdk.java.net/jeps/8213076), the compiler will be able to check that every permitted subclass is covered. Thus, there will be no more need for a _default_ clause/case.
 
-# Testing
+# Test
 
 **F#** unlike many other languages lets you **name things the way you like**, how so? Using **double back-ticks**, test names can actually be decent again!
 

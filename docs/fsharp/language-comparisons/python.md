@@ -3,7 +3,7 @@ title: Comparing F# with Python - Syntax Comparison
 description: Learn about the similarities and differences between F# and Python in terms of syntax and coding examples.
 ms.date: [Date]
 ---
-# Comparing F\# with Python - Syntax Comparison
+# Comparing F\# with Python
 
 In this section, we will compare the syntax and coding style of the F# programming language with Python. We will highlight the key language features, discuss syntax differences, and provide code examples to illustrate the variations.
 
@@ -19,7 +19,7 @@ touch new.fsx
 code .
 ```
 
-Let's **compare a bit of F# and Python** between the lines, as python is the de-facto **standard** for scripting in 2021.
+Let's now compare code in our code in `F#` with `python`.
 
 ## A function in Python
 

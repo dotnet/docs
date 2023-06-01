@@ -5,11 +5,9 @@ author: adegeo
 topic: how-to
 ms.date: 05/22/2023
 ---
-# Install the .NET Upgrade Assistant (legacy)
+# Use the legacy .NET Upgrade Assistant
 
-Learn how to install the old version of the .NET Upgrade Assistant command-line interface (CLI) tool.
-
-Starting with version 0.5.2, the code base for the .NET Upgrade Assistant CLI tool was rebased on the Visual Studio extension. This means that there are effectively two different CLI tools, the version prior to 0.5.2, referred to as the legacy version, and the 0.5.2+ version.
+This this article you'll learn how to install and run the old version of the .NET Upgrade Assistant command-line interface (CLI) tool. Starting with version 0.5.2, the code base for the .NET Upgrade Assistant CLI tool was rebased on the Visual Studio extension. This means that there are effectively two different CLI tools, the version prior to 0.5.2 which is referred to as the legacy version, and the 0.5.2+ version which is the current version.
 
 The legacy version has some functionality that is not yet available in the new version such as analyze command or solution-level upgrades, but also lacks new improvements available in the new (0.5.2+) version. Therefore, you may want to use it until the current version increases in capability and scope.
 

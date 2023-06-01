@@ -32,8 +32,6 @@ Welcome to what's new in the .NET docs for May 2023. This article lists some of 
 
 ### Updated articles
 
-- [Managing Claims and Authorization with the Identity Model](../framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md) - Re-enable MD034
-- [Durable Duplex Correlation](../framework/wcf/feature-details/durable-duplex-correlation.md) - Acrolinx 5/23
 - [Certmgr.exe (Certificate Manager Tool)](../framework/tools/certmgr-exe-certificate-manager-tool.md) - Clarify installation location for certmgr.exe
 
 ## .NET fundamentals
@@ -48,9 +46,7 @@ Welcome to what's new in the .NET docs for May 2023. This article lists some of 
 
 ### Updated articles
 
-- [What's new in .NET 8](../core/whats-new/dotnet-8.md)
-  - What's new and double words
-  - Update What's new in .NET 8 for Preview 4
+- [What's new in .NET 8](../core/whats-new/dotnet-8.md) - Update What's new in .NET 8 for Preview 4
 - [Grouping constructs in regular expressions](../standard/base-types/grouping-constructs-in-regular-expressions.md) - Clarify named capture group order
 
 ## .NET tools and diagnostics

@@ -3,7 +3,7 @@ title: Install .NET on Ubuntu 22.10
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu 22.10.
 author: adegeo
 ms.author: adegeo
-ms.date: 03/01/2023
+ms.date: 05/24/2023
 ---
 
 # Install .NET SDK or .NET Runtime on Ubuntu 22.10
@@ -14,7 +14,7 @@ This article discusses how to install .NET on Ubuntu 22.10; .NET 6 and .NET 7 ar
 
 [!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
 
-.NET is available in the Ubuntu package manager feeds, as well as the Microsoft repository. However, you should only one use or the other to install .NET. Review the [Decide how to install .NET](linux-ubuntu.md#decide-how-to-install-net) section to determine which feed you should use.
+.NET is available in the Ubuntu package manager feeds, as well as the Microsoft package repository. However, you should only use one or the other to install .NET. If you want to use the Microsoft package repository, see [How to register the Microsoft package repository](linux-ubuntu.md#register-the-microsoft-package-repository).
 
 > [!WARNING]
 > Don't use both repositories to manage .NET. If you've previously installed .NET from the Ubuntu feed or the Microsoft feed, you'll run into issues using the other feed. .NET is installed to different locations and is resolved differently for both package feeds. It's recommended that you uninstall previously installed versions of .NET and then install with the Microsoft package repository. For more information, see [How to register the Microsoft package repository](linux-ubuntu.md#register-the-microsoft-package-repository).
@@ -26,6 +26,8 @@ The following versions of .NET are supported or available for Ubuntu 22.10:
 | Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------|-----------------------------------|
 | 7.0, 6.0                | 7.0, 6.0                 | 7.0, 6.0, 3.1                     |
+
+[!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 

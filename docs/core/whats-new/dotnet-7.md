@@ -44,7 +44,7 @@ For information about these and other updates, see the [What's new in System.Tex
 
 .NET's [regular expression](../../standard/base-types/regular-expressions.md) library has seen significant functional and performance improvements in .NET 7:
 
-- The new option <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> enables matching using an approach that avoids backtracking and guarantees linear-time processing in the length of the input. The nonbacktracking engine can't be used in a right-to-left search and has a few other restrictions, but is fast for all regular expressions and inputs.
+- The new option <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> enables matching using an approach that avoids backtracking and guarantees linear-time processing in the length of the input. The nonbacktracking engine can't be used in a right-to-left search and has a few other restrictions, but is fast for all regular expressions and inputs. For more information, see [Nonbacktracking mode](../../standard/base-types/regular-expression-options.md#nonbacktracking-mode).
 
 - Regular expression source generators are new. Source generators build an engine that's optimized for *your* pattern at compile time, providing throughput performance benefits. The source that's emitted is part of your project, so you can view and debug it. In addition, a new source-generator diagnostic `SYSLIB1045` alerts you to places you use <xref:System.Text.RegularExpressions.Regex> that could be converted to the source generator. For more information, see [.NET regular expression source generators](../../standard/base-types/regular-expression-source-generators.md).
 
@@ -175,7 +175,7 @@ The .NET Upgrade Assistant now supports upgrading server-side WCF apps to [CoreW
 
 ### ML.NET
 
-ML.NET now includes a text classification API that that makes it easy to train custom text classification models using the latest state-of-the-art deep learning techniques. For more information, see the [What's new with AutoML and tooling](https://devblogs.microsoft.com/dotnet/whats-new-with-mldotnet-automl/) and [Introducing the ML.NET Text Classification API](https://devblogs.microsoft.com/dotnet/introducing-the-ml-dotnet-text-classification-api-preview/) blog posts.
+ML.NET now includes a text classification API that makes it easy to train custom text classification models using the latest state-of-the-art deep learning techniques. For more information, see the [What's new with AutoML and tooling](https://devblogs.microsoft.com/dotnet/whats-new-with-mldotnet-automl/) and [Introducing the ML.NET Text Classification API](https://devblogs.microsoft.com/dotnet/introducing-the-ml-dotnet-text-classification-api-preview/) blog posts.
 
 ## See also
 

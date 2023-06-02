@@ -24,7 +24,7 @@ migrate
 pack
 ```
 
-If that command doesn't work, make sure that .NET Core 2.0 SDK or above is installed. If it's installed but that command still doesn't work, make sure that the `dotnet` command resolves to a version of .NET Core 2.0 SDK and above. Use the `dotnet --version` command to see what version of `dotnet` your current path is resolving to. For more information, see [Select the .NET version to use](../versions/selection.md).
+If that command doesn't work, make sure that .NET Core 2.0 SDK or later is installed. If it's installed but that command still doesn't work, make sure that the `dotnet` command resolves to a version of .NET Core 2.0 SDK or later. Use the `dotnet --version` command to see what version of `dotnet` your current path is resolving to. For more information, see [Select the .NET version to use](../versions/selection.md).
 
 ## Examples
 
@@ -81,7 +81,7 @@ To add tab completion to your **zsh** shell for the .NET CLI, add the following 
 ```zsh
 # zsh parameter completion for the dotnet CLI
 
-_dotnet_zsh_complete() 
+_dotnet_zsh_complete()
 {
   local completions=("$(dotnet complete "$words")")
 
@@ -114,7 +114,7 @@ To add tab completion to your **nushell** for .NET CLI, add the following to the
 ```nu
 let external_completer = { |spans|
     {
-        dotnet: { || 
+        dotnet: { ||
             dotnet complete (
                 $spans | skip 1 | str join " "
             ) | lines
@@ -123,7 +123,7 @@ let external_completer = { |spans|
 }
 ```
 
-And then in the `config` record find the `completions` section and add the defined earlier `external_completer` to `external` like that:
+And then in the `config` record, find the `completions` section and add the `external_completer` that was defined earlier to `external`:
 
 ```nu
 let-env config = {

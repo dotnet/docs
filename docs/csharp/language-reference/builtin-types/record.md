@@ -1,7 +1,7 @@
 ---
 title: "Records - C# reference"
 description: Learn about the record type in C#
-ms.date: 04/05/2023
+ms.date: 05/25/2023
 f1_keywords: 
   - "record_CSharpKeyword"
 helpviewer_keywords: 
@@ -10,7 +10,9 @@ helpviewer_keywords:
 ---
 # Records (C# reference)
 
-Beginning with C# 9, you use the `record` keyword to define a [reference type](reference-types.md) that provides built-in functionality for encapsulating data. C# 10 allows the `record class` syntax as a synonym to clarify a reference type, and `record struct` to define a [value type](value-types.md) with similar functionality. You can create record types with immutable properties by using positional parameters or standard property syntax.
+Beginning with C# 9, you use the `record` modifier to define a [reference type](reference-types.md) that provides built-in functionality for encapsulating data. C# 10 allows the `record class` syntax as a synonym to clarify a reference type, and `record struct` to define a [value type](value-types.md) with similar functionality.
+
+When you declare a [primary constructor](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) on a record, the compiler generates public properties for the primary constructor parameters. The primary constructor parameters to a record are referred to as *positional parameters*. The compiler creates *positional properties* that mirror the primary constructor or positional parameters. The compiler doesn't synthesize properties for primary constructor parameters on types that don't have the `record` modifier.
 
 The following two examples demonstrate `record` (or `record class`) reference types:
 
@@ -55,7 +57,7 @@ You can use positional parameters to declare properties of a record and to initi
 
 When you use the positional syntax for property definition, the compiler creates:
 
-* A public auto-implemented property for each positional parameter provided in the record declaration.
+* A public autoimplemented property for each positional parameter provided in the record declaration.
   - For `record` types and `readonly record struct` types: An [init-only](../keywords/init.md) property.
   - For `record struct` types: A read-write property.
 * A primary constructor whose parameters match the positional parameters on the record declaration.
@@ -68,7 +70,7 @@ You may want to add attributes to any of these elements the compiler creates fro
 
 The preceding example also shows how to create XML documentation comments for the record. You can add the `<param>` tag to add documentation for the primary constructor's parameters.
 
-If the generated auto-implemented property definition isn't what you want, you can define your own property of the same name. For example, you may want to change accessibility or mutability, or provide an implementation for either the `get` or `set` accessor. If you declare the property in your source, you must initialize it from the positional parameter of the record. If your property is an auto-implemented property, you must initialize the property. If you add a backing field in your source, you must initialize the backing field. The generated deconstructor will use your property definition. For instance, the following example declares the `FirstName` and `LastName` properties of a positional record `public`, but restricts the `Id` positional parameter to `internal`. You can use this syntax for records and record struct types.
+If the generated autoimplemented property definition isn't what you want, you can define your own property of the same name. For example, you may want to change accessibility or mutability, or provide an implementation for either the `get` or `set` accessor. If you declare the property in your source, you must initialize it from the positional parameter of the record. If your property is an autoimplemented property, you must initialize the property. If you add a backing field in your source, you must initialize the backing field. The generated deconstructor uses your property definition. For instance, the following example declares the `FirstName` and `LastName` properties of a positional record `public`, but restricts the `Id` positional parameter to `internal`. You can use this syntax for records and record struct types.
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="PositionalWithManualProperty":::
 
@@ -77,8 +79,6 @@ A record type doesn't have to declare any positional properties. You can declare
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="MixedSyntax":::
 
 If you define properties by using standard property syntax but omit the access modifier, the properties are implicitly `private`.
-
-Beginning with C# 12, you can declare primary constructors in classes and structs, as well as records. The only difference is that positional parameters in records generate properties. Positional parameters in classes and structs don't. You can learn more in the article on [constructors](../../programming-guide/classes-and-structs/instance-constructors.md).
 
 ## Immutability
 
@@ -98,7 +98,7 @@ If you don't override or replace equality methods, the type you declare governs 
 
 - For `class` types, two objects are equal if they refer to the same object in memory.
 - For `struct` types, two objects are equal if they are of the same type and store the same values.
-- For `record` types, including `record struct` and `readonly record struct`, two objects are equal if they are of the same type and store the same values.
+- For types with the `record` modifier (`record class`, `record struct`, and `readonly record struct`), two objects are equal if they are of the same type and store the same values.
 
 The definition of equality for a `record struct` is the same as for a `struct`. The difference is that for a `struct`, the implementation is in <xref:System.ValueType.Equals(System.Object)?displayProperty=nameWithType> and relies on reflection. For records, the implementation is compiler synthesized and uses the declared data members.
 
@@ -110,21 +110,21 @@ The following example illustrates value equality of record types:
 
 To implement value equality, the compiler synthesizes several methods, including:
 
-* An override of <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>. It is an error if the override is declared explicitly.
+* An override of <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>. It's an error if the override is declared explicitly.
 
   This method is used as the basis for the <xref:System.Object.Equals(System.Object,System.Object)?displayProperty=nameWithType> static method when both parameters are non-null.
 
 * A `virtual`, or `sealed`, `Equals(R? other)` where `R` is the record type. This method implements <xref:System.IEquatable%601>. This method can be declared explicitly.
 
-* If the record type is derived from a base record type `Base`, `Equals(Base? other)`. It is an error if the override is declared explicitly. If you provide your own implementation of `Equals(R? other)`, provide an implementation of `GetHashCode` also.
+* If the record type is derived from a base record type `Base`, `Equals(Base? other)`. It's an error if the override is declared explicitly. If you provide your own implementation of `Equals(R? other)`, provide an implementation of `GetHashCode` also.
 
 * An override of <xref:System.Object.GetHashCode?displayProperty=nameWithType>. This method can be declared explicitly.
 
-* Overrides of operators `==` and `!=`. It is an error if the operators are declared explicitly.
+* Overrides of operators `==` and `!=`. It's an error if the operators are declared explicitly.
 
 * If the record type is derived from a base record type, `protected override Type EqualityContract { get; };`. This property can be declared explicitly. For more information, see [Equality in inheritance hierarchies](#equality-in-inheritance-hierarchies).
 
-If a record type has a method that matches the signature of a synthesized method allowed to be declared explicitly, the compiler doesn't synthesize that method.
+The compiler doesn't synthesize a method when a record type has a method that matches the signature of a synthesized method allowed to be declared explicitly.
 
 ## Nondestructive mutation
 
@@ -132,13 +132,13 @@ If you need to copy an instance with some modifications, you can use a `with` ex
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="WithExpressions":::
 
-The `with` expression can set positional properties or properties created by using standard property syntax. Non-positional properties must have an `init` or `set` accessor to be changed in a `with` expression.
+The `with` expression can set positional properties or properties created by using standard property syntax. Explicitly declared properties must have an `init` or `set` accessor to be changed in a `with` expression.
 
 The result of a `with` expression is a *shallow copy*, which means that for a reference property, only the reference to an instance is copied. Both the original record and the copy end up with a reference to the same instance.
 
 To implement this feature for `record class` types, the compiler synthesizes a clone method and a copy constructor. The virtual clone method returns a new record initialized by the copy constructor. When you use a `with` expression, the compiler creates code that calls the clone method and then sets the properties that are specified in the `with` expression.
 
-If you need different copying behavior, you can write your own copy constructor in a `record class`. If you do that, the compiler won't synthesize one. Make your constructor `private` if the record is `sealed`, otherwise make it `protected`. The compiler doesn't synthesize a copy constructor for `record struct` types. You can write one, but the compiler won't generate calls to it for `with` expressions. The values of the `record struct` are copied on assignment.
+If you need different copying behavior, you can write your own copy constructor in a `record class`. If you do that, the compiler doesn't synthesize one. Make your constructor `private` if the record is `sealed`, otherwise make it `protected`. The compiler doesn't synthesize a copy constructor for `record struct` types. You can write one, but the compiler doesn't generate calls to it for `with` expressions. The values of the `record struct` are copied on assignment.
 
 You can't override the clone method, and you can't create a member named `Clone` in any record type. The actual name of the clone method is compiler-generated.
 
@@ -159,7 +159,7 @@ The `ToString` override creates a <xref:System.Text.StringBuilder> object with t
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="ToStringOverrideDefault":::
 
-You can provide your own implementation of `PrintMembers` or the `ToString` override. Examples are provided in the [`PrintMembers` formatting in derived records](#printmembers-formatting-in-derived-records) section later in this article. In C# 10 and later, your implementation of `ToString` may include the `sealed` modifier, which prevents the compiler from synthesizing a `ToString` implementation for any derived records. You can do this to create a consistent string representation throughout a hierarchy of `record` types. (Derived records will still have a `PrintMembers` method generated for all derived properties.)
+You can provide your own implementation of `PrintMembers` or the `ToString` override. Examples are provided in the [`PrintMembers` formatting in derived records](#printmembers-formatting-in-derived-records) section later in this article. In C# 10 and later, your implementation of `ToString` may include the `sealed` modifier, which prevents the compiler from synthesizing a `ToString` implementation for any derived records. You can create a consistent string representation throughout a hierarchy of `record` types. (Derived records still have a `PrintMembers` method generated for all derived properties.)
 
 ## Inheritance
 
@@ -185,7 +185,7 @@ In the example, all variables are declared as `Person`, even when the instance i
 
 To implement this behavior, the compiler synthesizes an `EqualityContract` property that returns a <xref:System.Type> object that matches the type of the record. The `EqualityContract` enables the equality methods to compare the runtime type of objects when they're checking for equality. If the base type of a record is `object`, this property is `virtual`. If the base type is another record type, this property is an override. If the record type is `sealed`, this property is effectively `sealed` because the type is `sealed`.
 
-When comparing two instances of a derived type, the synthesized equality methods check all properties of the base and derived types for equality. The synthesized `GetHashCode` method uses the `GetHashCode` method from all properties and fields declared in the base type and the derived record type.
+When code compares two instances of a derived type, the synthesized equality methods check all data members of the base and derived types for equality. The synthesized `GetHashCode` method uses the `GetHashCode` method from all data members declared in the base type and the derived record type. The data members of a `record` include all declared fields and the compiler-synthesized backing field for any autoimplemented properties.
 
 ### `with` expressions in derived records
 
@@ -221,7 +221,7 @@ The `Deconstruct` method of a derived record returns the values of all positiona
 
 ## Generic constraints
 
-There's no generic constraint that requires a type to be a record. Records satisfy either the `class` or `struct` constraint. To make a constraint on a specific hierarchy of record types, put the constraint on the base record as you would a base class. For more information, see [Constraints on type parameters](../../programming-guide/generics/constraints-on-type-parameters.md).
+The `record` keyword is a modifier for either a `class` or `struct` type. Adding the `record` modifier includes the behavior described earlier in this article. There's no generic constraint that requires a type to be a record. A `record class` satisfies the `class` constraint. A `record struct` satisfies the `struct` constraint. For more information, see [Constraints on type parameters](../../programming-guide/generics/constraints-on-type-parameters.md).
 
 ## C# language specification
 

@@ -1,5 +1,7 @@
 ﻿using System;
 
+namespace ExprBodiedReadonlyProperties;
+
 // <Snippet1>
 public class Location
 {

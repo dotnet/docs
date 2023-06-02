@@ -1,7 +1,7 @@
 ---
 title: "Instance constructors"
 description: Instance constructors in C# create and initialize any instance member variables when you use the new expression to create an instance of a type.
-ms.date: 04/06/2023
+ms.date: 05/25/2023
 helpviewer_keywords: 
   - "constructors [C#], instance constructors"
   - "instance constructors [C#]"
@@ -45,9 +45,9 @@ A primary constructor indicates that these parameters are necessary for any inst
 
 :::code language="csharp" source="./snippets/instance-constructors/widgets/Program.cs" id="DerivedPrimaryConstructor":::
 
-For non-`record` types, if a primary constructor is read or written in the body of the type, the compiler captures the parameter in a private field. This private field has a compiler-generated name that is different from the primary constructor parameter. That ensures the private field name doesn't conflict with other variable names. It's also harder to find using reflection. If a primary constructor parameter isn't used in the body of the type, no private field is captured. This prevents accidentally allocating two copies of a primary constructor parameter that is passed to a base constructor.
+In `class` and `struct` types, primary constructor parameters are available anywhere in the body of the type. They can be used as member fields. When a primary constructor parameter is used, the compiler captures the constructor parameter in a private field with a compiler-generated name. If a primary constructor parameter isn't used in the body of the type, no private field is captured. That rule prevents accidentally allocating two copies of a primary constructor parameter that's passed to a base constructor.
 
-For `record` types (`record class` and `record struct`), the compiler generates public properties for each of the positional parameters in the primary constructor. For `record class` types, if a primary constructor parameter uses the same name as a base primary constructor, that property is a public property of the base `record class` type. It is not duplicated in the derived `record class` type. These properties aren't generated for non-`record` types.
+If the type includes the `record` modifier, the compiler instead synthesizes a public property with the same name as the primary constructor parameter.  For `record class` types, if a primary constructor parameter uses the same name as a base primary constructor, that property is a public property of the base `record class` type. It isn't duplicated in the derived `record class` type. These properties aren't generated for non-`record` types.
 
 ## See also
 

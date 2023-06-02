@@ -5,7 +5,7 @@ ms.date: 07/18/2022
 ---
 # Middleware no longer defers to endpoint with null request delegate
 
-As detailed in <https://github.com/dotnet/aspnetcore/issues/42413>, the file-serving middleware (`DefaultFilesMiddleware`, `DirectoryBrowserMiddleware`, and `StaticFileMiddleware`) have been updated to no longer no-op (that is, defer to the next middleware in the pipeline) when there is an active endpoint with a `null` request delegate.
+As detailed in <https://github.com/dotnet/aspnetcore/issues/42413>, the file-serving middleware (`DefaultFilesMiddleware`, `DirectoryBrowserMiddleware`, and `StaticFileMiddleware`) have been updated to no longer no-op (that is, defer to the next middleware in the pipeline) when there's an active endpoint with a `null` request delegate.
 
 ## Version introduced
 
@@ -17,7 +17,7 @@ Previously, if the current request had an active endpoint, that is, `HttpContext
 
 ## New behavior
 
-The file-serving middleware will now only perform no action if there is an active endpoint and its `RequestDelegate` property value is not `null`, that is, `HttpContext.GetEndpoint()?.RequestDelegate is not null`.
+The file-serving middleware will now only perform no action if there's an active endpoint and its `RequestDelegate` property value is not `null`, that is, `HttpContext.GetEndpoint()?.RequestDelegate is not null`.
 
 ## Type of breaking change
 

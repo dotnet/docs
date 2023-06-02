@@ -3,7 +3,7 @@ title: .NET and Ubuntu overview
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu.
 author: adegeo
 ms.author: adegeo
-ms.date: 03/02/2023
+ms.date: 05/24/2023
 ---
 
 # Install the .NET SDK or the .NET Runtime on Ubuntu
@@ -25,9 +25,7 @@ When your version of Ubuntu supports .NET through the built-in Ubuntu feed, supp
 
 Use the following sections to determine how you should install .NET:
 
-- [I'm using Ubuntu 22.10, and I only need .NET 6.0 or .NET 7.0](#im-using-ubuntu-2210-and-i-only-need-net-60-or-net-70)
-- [I'm using Ubuntu 22.04, and I only need .NET 6.0](#im-using-ubuntu-2204-and-i-only-need-net-60)
-- [I'm using Ubuntu 22.04, and I need .NET 7.0](#im-using-ubuntu-2204-and-i-need-net-70)
+- [I'm using Ubuntu 22.04, 22.10, or 23.04, and I only need .NET 6.0 or .NET 7.0](#im-using-ubuntu-2204-2210-or-2304-and-i-only-need-net-60-or-net-70)
 - [I'm using a version of Ubuntu prior to 22.04](#im-using-a-version-of-ubuntu-prior-to-2204)
 - [I'm using other Microsoft packages, such as `powershell`, `mdatp`, or `mssql`](#im-using-other-microsoft-packages-such-as-powershell-mdatp-or-mssql)
 - [I want to create a .NET app](#i-want-to-create-a-net-app)
@@ -37,21 +35,17 @@ Use the following sections to determine how you should install .NET:
 - [I don't want to use APT](#i-dont-want-to-use-apt)
 - [I'm using an Arm-based CPU](#im-using-an-arm-based-cpu)
 
-### I'm using Ubuntu 22.10, and I only need .NET 6.0 or .NET 7.0
+### I'm using Ubuntu 22.04, 22.10, or 23.04, and I only need .NET 6.0 or .NET 7.0
 
-Install .NET through the Ubuntu feed. For more information, see [Install .NET on Ubuntu 22.10](linux-ubuntu-2210.md).
+Install .NET through the Ubuntu feed. For more information, see the following pages:
 
-If you're going to use other Microsoft repository packages, such as `powershell`, `mdatp`, or `mssql`, you'll need to de-prioritize the .NET packages provided by the Microsoft repository. For instructions on how to de-prioritize the packages, see [My Linux distribution provides .NET packages, and I want to use them](linux-package-mixup.md?pivots=os-linux-ubuntu#my-linux-distribution-provides-net-packages-and-i-want-to-use-them).
+- [Install .NET on Ubuntu 22.04](linux-ubuntu-2204.md)
+- [Install .NET on Ubuntu 22.10](linux-ubuntu-2210.md)
+- [Install .NET on Ubuntu 23.04](linux-ubuntu-2304.md).
 
-### I'm using Ubuntu 22.04, and I only need .NET 6.0
+[!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
 
-Install .NET through the Ubuntu feed. For more information, see [Install .NET on Ubuntu 22.04](linux-ubuntu-2204.md).
-
-If you're going to use other Microsoft repository packages, such as `powershell`, `mdatp`, or `mssql`, you'll need to de-prioritize the .NET packages provided by the Microsoft repository. For instructions on how to de-prioritize the packages, see [My Linux distribution provides .NET packages, and I want to use them](linux-package-mixup.md?pivots=os-linux-ubuntu#my-linux-distribution-provides-net-packages-and-i-want-to-use-them).
-
-### I'm using Ubuntu 22.04, and I need .NET 7.0
-
-.NET 7 isn't provided in the default Ubuntu package feed. You'll need to add the Microsoft package repository and then install .NET. For more information, see the [Register and install with the Microsoft package repository](#register-the-microsoft-package-repository) section.
+If you're going to install the Microsoft repository to use other Microsoft packages, such as `powershell`, `mdatp`, or `mssql`, you'll need to de-prioritize the .NET packages provided by the Microsoft repository. For instructions on how to de-prioritize the packages, see [My Linux distribution provides .NET packages, and I want to use them](linux-package-mixup.md?pivots=os-linux-ubuntu#my-linux-distribution-provides-net-packages-and-i-want-to-use-them).
 
 ### I'm using a version of Ubuntu prior to 22.04
 
@@ -111,6 +105,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Ubuntu                              | Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](#register-the-microsoft-package-repository) |
 |-------------------------------------|-------------------------|--------------------------|-----------------------------------|
+| [23.04 (LTS)](linux-ubuntu-2210.md) | 7.0, 6.0                | 7.0, 6.0                 | 7.0, 6.0                          |
 | [22.10](linux-ubuntu-2210.md)       | 7.0, 6.0                | 7.0, 6.0                 | 7.0, 6.0, 3.1                     |
 | [22.04 (LTS)](linux-ubuntu-2204.md) | 7.0, 6.0                | 6.0                      | 7.0, 6.0, 3.1                     |
 | [20.04 (LTS)](linux-ubuntu-2004.md) | 7.0, 6.0                | None                     | 7.0. 6.0, 5.0, 3.1, 2.1           |
@@ -151,6 +146,11 @@ rm packages-microsoft-prod.deb
 # Update packages
 sudo apt update
 ```
+
+> [!TIP]
+> The previous script was written for Ubuntu and it might not work if you're using a derived distribution, such as Linux Mint. It's likely that the `$repo_version` variable won't be assigned the correct value, making the URI for the `wget` command invalid. This variable maps to the specific Ubuntu version you want to get packages for, such as 22.10 or 23.04.
+>
+> You can use a web browser and navigate to <https://packages.microsoft.com/config/ubuntu/> to see which versions of Ubuntu are available to use as the `$repo_version` value.
 
 ## Install .NET
 

@@ -21,8 +21,6 @@ This article shows how to preserve references and handle or ignore circular refe
 
 ## Preserve references and handle circular references
 
-::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
-
 To preserve references and handle circular references, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A> to <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>. This setting causes the following behavior:
 
 * On serialize:
@@ -71,12 +69,6 @@ When the sample code calls the serializer, it uses a <xref:System.Text.Json.Json
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/PreserveReferencesMultipleCalls.cs" id="CallSerializer" highlight = "3-4,14":::
 
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-System.Text.Json in .NET Core 3.1 only supports serialization by value and throws an exception for circular references.
-::: zone-end
-
 ## Ignore circular references
 
 ::: zone pivot="dotnet-7-0,dotnet-6-0"
@@ -97,29 +89,7 @@ This behavior has the following disadvantages:
 
 ::: zone-end
 
-::: zone pivot="dotnet-core-3-1,dotnet-5-0"
-System.Text.Json in .NET 5 and earlier doesn't support <xref:System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles?displayProperty=nameWithType>.
-
-::: zone-end
-
 ## See also
 
 * [System.Text.Json overview](overview.md)
 * [How to serialize and deserialize JSON](how-to.md)
-* [Instantiate JsonSerializerOptions instances](configure-options.md)
-* [Enable case-insensitive matching](character-casing.md)
-* [Customize property names and values](customize-properties.md)
-* [Ignore properties](ignore-properties.md)
-* [Allow invalid JSON](invalid-json.md)
-* [Handle overflow JSON or use JsonElement or JsonNode](handle-overflow.md)
-* [Deserialize to immutable types and non-public accessors](immutability.md)
-* [Polymorphic serialization](polymorphism.md)
-* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft.md)
-* [Customize character encoding](character-encoding.md)
-* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
-* [Write custom converters for JSON serialization](converters-how-to.md)
-* [DateTime and DateTimeOffset support](../../datetime/system-text-json-support.md)
-* [How to use source generation](source-generation.md)
-* [Supported collection types](supported-collection-types.md)
-* [System.Text.Json API reference](xref:System.Text.Json)
-* [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

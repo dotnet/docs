@@ -119,7 +119,7 @@ Beginning with C# 11, you can combine *raw string literals* with string interpol
 
 :::code language="csharp" source="./snippets/StringInterpolation.cs" id="InterpolationExample":::
 
-### Verbatim String Interpolation
+### Verbatim string interpolation
 
 C# also allows verbatim string interpolation, for example across multiple lines, using the `$@` or `@$` syntax.
 
@@ -163,7 +163,7 @@ By contrast, a null string doesn't refer to an instance of a <xref:System.String
 
 :::code language="csharp" source="./snippets/StringCharacters.cs" id="BuildString":::
 
-## Using stringBuilder for fast string creation
+## Using StringBuilder for fast string creation
 
 String operations in .NET are highly optimized and in most cases don't significantly impact performance. However, in some scenarios such as tight loops that are executing many hundreds or thousands of times, string operations can affect performance. The <xref:System.Text.StringBuilder> class creates a string buffer that offers better performance if your program performs many string manipulations. The <xref:System.Text.StringBuilder> string also enables you to reassign individual characters, something the built-in string data type doesn't support. This code, for example, changes the content of a string without creating a new string:
 

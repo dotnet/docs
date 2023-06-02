@@ -28,11 +28,11 @@ If the [static constructor](static-constructors.md) hasn't run, the static const
 
 A constructor is a method whose name is the same as the name of its type. Its method signature includes only an optional [access modifier](./access-modifiers.md), the method name and its parameter list; it does not include a return type. The following example shows the constructor for a class named `Person`.
 
-[!code-csharp[constructors](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/constructors1.cs#1)]
+:::code source="./snippets/constructors/Program.cs" id="InstanceCtor":::
 
 If a constructor can be implemented as a single statement, you can use an [expression body definition](../statements-expressions-operators/expression-bodied-members.md). The following example defines a `Location` class whose constructor has a single string parameter named *name*. The expression body definition assigns the argument to the `locationName` field.
 
-[!code-csharp[expression-bodied-constructor](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-ctor.cs#1)]
+:::code source="./snippets/constructors/Program.cs" id="ExpressionBodiedCtor":::
 
 ## Static constructors
 
@@ -40,11 +40,11 @@ The previous examples have all shown instance constructors, which create a new o
 
 The following example uses a static constructor to initialize a static field.
 
-[!code-csharp[constructors](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/constructors1.cs#2)]
+:::code source="./snippets/constructors/Program.cs" id="StaticExpression":::
 
 You can also define a static constructor with an expression body definition, as the following example shows.
 
-[!code-csharp[constructors](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/constructors1.cs#3)]
+:::code source="./snippets/constructors/Program.cs" id="StaticExpression":::
 
 For more information and examples, see [Static Constructors](./static-constructors.md).
 

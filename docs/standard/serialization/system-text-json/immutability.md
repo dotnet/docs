@@ -21,7 +21,6 @@ This article shows how to use immutable types, public parameterized constructors
 
 ## Immutable types and Records
 
-::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 `System.Text.Json` can use a public parameterized constructor, which makes it possible to deserialize an immutable class or struct. For a class, if the only constructor is a parameterized one, that constructor will be used. For a struct, or a class with multiple constructors, specify the one to use by applying the [[JsonConstructor]](xref:System.Text.Json.Serialization.JsonConstructorAttribute) attribute. When the attribute is not used, a public parameterless constructor is always used if present. The attribute can only be used with public constructors. The following example uses the `[JsonConstructor]` attribute:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/ImmutableTypes.cs" highlight="12":::
@@ -45,43 +44,15 @@ Records in C# 9 are also supported, as shown in the following example:
 You can apply any of the attributes to the property names, using the `property:` target on the attribute. For more information on positional records, see the article on [records](../../../csharp/language-reference/builtin-types/record.md#positional-syntax-for-property-definition) in the C# language reference.
 
 For types that are immutable because all their property setters are non-public, see the following section.
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-`JsonConstructorAttribute` and C# 9 Record support aren't available in .NET Core 3.1.
-::: zone-end
 
 ## Non-public property accessors
 
-::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
 `System.Text.Json` doesn't support serialization of non-public properties. However, you can enable use of a non-public property *accessor* by using the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/NonPublicAccessors.cs" highlight="10,13":::
 :::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/NonPublicAccessors.vb" :::
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-Non-public property accessors aren't supported in .NET Core 3.1. For more information, see [Migrate from Newtonsoft.Json](migrate-from-newtonsoft.md#non-public-property-setters-and-getters).
-::: zone-end
 
 ## See also
 
 * [System.Text.Json overview](overview.md)
 * [How to serialize and deserialize JSON](how-to.md)
-* [Instantiate JsonSerializerOptions instances](configure-options.md)
-* [Enable case-insensitive matching](character-casing.md)
-* [Customize property names and values](customize-properties.md)
-* [Ignore properties](ignore-properties.md)
-* [Allow invalid JSON](invalid-json.md)
-* [Handle overflow JSON or use JsonElement or JsonNode](handle-overflow.md)
-* [Preserve references and handle circular references](preserve-references.md)
-* [Polymorphic serialization](polymorphism.md)
-* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft.md)
-* [Customize character encoding](character-encoding.md)
-* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
-* [Write custom converters for JSON serialization](converters-how-to.md)
-* [DateTime and DateTimeOffset support](../../datetime/system-text-json-support.md)
-* [How to use source generation](source-generation.md)
-* [Supported collection types](supported-collection-types.md)
-* [System.Text.Json API reference](xref:System.Text.Json)
-* [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

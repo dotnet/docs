@@ -83,7 +83,7 @@ Sometimes the compiler can't infer the types of input parameters. You can specif
 
 :::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetExplicitlyTypedParameters":::
 
-Input parameter types must be all explicit or all implicit; otherwise, a [CS0748](../../misc/cs0748.md) compiler error occurs.
+Input parameter types must be all explicit or all implicit; otherwise, a [CS0748](../compiler-messages/lambda-expression-errors.md#lambda-expression-parameters-and-returns) compiler error occurs.
 
 Beginning with C# 9.0, you can use [discards](../../fundamentals/functional/discards.md) to specify two or more input parameters of a lambda expression that aren't used in the expression:
 

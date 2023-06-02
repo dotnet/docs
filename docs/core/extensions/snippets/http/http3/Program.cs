@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Net;
 
-using var client = new HttpClient()
+using var client = new HttpClient
 {
     DefaultRequestVersion =  HttpVersion.Version30,
     DefaultVersionPolicy = HttpVersionPolicy.RequestVersionExact

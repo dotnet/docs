@@ -186,6 +186,11 @@ Because of [numeric promotions](~/_csharpstandard/standard/expressions.md#1247-n
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ArithmeticOperators.cs" id="CompoundAssignmentWithCast":::
 
+In the preceding example, value `44` is the result of converting value `300` to the `byte` type.
+
+> [!NOTE]
+> In the [checked overflow-checking context](../statements/checked-and-unchecked.md), the preceding example throws an <xref:System.OverflowException>. For more information, see the [Integer arithmetic overflow](#integer-arithmetic-overflow) section.
+
 You also use the `+=` and `-=` operators to subscribe to and unsubscribe from an [event](../keywords/event.md), respectively. For more information, see [How to subscribe to and unsubscribe from events](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 
 ## Operator precedence and associativity

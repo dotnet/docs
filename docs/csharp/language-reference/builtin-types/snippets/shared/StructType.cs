@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace builtin_types
+﻿namespace builtin_types
 {
     public static class StructType
     {

@@ -42,7 +42,7 @@ You can apply the `readonly` modifier to a `ref` field in the following ways:
 - `ref readonly`: At any point, you cannot assign a value with the `=` operator to such a field. However, you can ref reassign a field with the `= ref` operator.
 - `readonly ref readonly`: You can only ref reassign such a field in a constructor or an `init` accessor. At any point, you cannot assign a value to the field.
 
-The compiler ensures that a reference stored in a `ref` field doesn't outlive the value to which it refers. For information about the scope rules, see the [Scope of reference and values](../keywords/method-parameters.md#scope-of-references-and-values) section of the [Method parameters](../keywords/method-parameters.md) article.
+The compiler ensures that a reference stored in a `ref` field doesn't outlive the value to which it refers. For information about the scope rules, see the [Scope of references and values](../keywords/method-parameters.md#scope-of-references-and-values) section of the [Method parameters](../keywords/method-parameters.md) article.
 
 ## C# language specification
 

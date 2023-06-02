@@ -8,8 +8,8 @@
         }
 
         var request = response.RequestMessage;
-        Write($"{request?.Method} ");
-        Write($"{request?.RequestUri} ");
-        WriteLine($"HTTP/{request?.Version}");        
+        Console.Write($"{request?.Method} ");
+        Console.Write($"{request?.RequestUri} ");
+        Console.WriteLine($"HTTP/{request?.Version}");        
     }
 }

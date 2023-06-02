@@ -45,4 +45,4 @@ For more information, see [Suppress warnings](obsoletions-overview.md#suppress-w
 
 ## See also
 
-- [SerializationFormat.Binary is obsolete](../../core/compatibility/core-libraries/7.0/serializationformat-binary.md)
+- [SerializationFormat.Binary is obsolete](../../core/compatibility/serialization/7.0/serializationformat-binary.md)

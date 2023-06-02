@@ -105,7 +105,7 @@ A new, writeable document object model (DOM) has been added, which supplements t
 - <xref:System.Text.Json.Nodes.JsonObject>
 - <xref:System.Text.Json.Nodes.JsonValue>
 
-For more information, see [JSON DOM choices](../../standard/serialization/system-text-json/use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#json-dom-choices).
+For more information, see [JSON DOM choices](../../standard/serialization/system-text-json/use-dom.md?pivots=dotnet-6-0#json-dom-choices).
 
 ### IAsyncEnumerable serialization
 
@@ -132,7 +132,7 @@ New method to write "raw" JSON:
 
 - <xref:System.Text.Json.Utf8JsonWriter.WriteRawValue%2A?displayProperty=nameWithType>
 
-  For more information, see [Write Raw JSON](../../standard/serialization/system-text-json/use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#write-raw-json).
+  For more information, see [Write Raw JSON](../../standard/serialization/system-text-json/use-utf8jsonwriter.md#write-raw-json).
 
 Synchronous serialization and deserialization to a stream:
 

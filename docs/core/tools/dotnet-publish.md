@@ -58,7 +58,7 @@ You can also set publish-related properties by referring to a *.pubxml* file. Fo
 dotnet publish -p:PublishProfile=FolderProfile
 ```
 
-The preceding example uses the *FolderProfile.pubxml* file that is found in the *\<project_folder>/Properties/PublishProfiles* folder. If you specify a path and file extension when setting the `PublishProfile` property, they are ignored. MSBuild by default looks in the *Properties/PublishProfiles* folder and assumes the *pubxml* file extension. To specify the path and filename including extension, set the `PublishProfileFullPath` property instead of the `PublishProfile` property.
+The preceding example uses the *FolderProfile.pubxml* file that is found in the *\<project_folder>/Properties/PublishProfiles* folder. If you specify a path and file extension when setting the `PublishProfile` property, they're ignored. MSBuild by default looks in the *Properties/PublishProfiles* folder and assumes the *pubxml* file extension. To specify the path and filename including extension, set the `PublishProfileFullPath` property instead of the `PublishProfile` property.
 
 In the *.pubxml* file:
 
@@ -67,7 +67,7 @@ In the *.pubxml* file:
 
 If you want the scenario to work in all places, you can initialize both these properties to the same value in the *.pubxml* file. When GitHub issue [dotnet/sdk#20931](https://github.com/dotnet/sdk/issues/20931) is resolved, only one of these properties will need to be set.
 
-Some properties in the *.pubxml* file are honored only by Visual Studio and have no effect on `dotnet publish`. We're working to bring the CLI more into alignment with Visual Studio's behavior. But some properties will never be used by the CLI. The CLI and Visual Studio both do the packaging aspect of publishing, and [dotnet/sdk#29817](https://github.com/dotnet/sdk/pull/29817) plans to add support for more properties related to that. But the CLI doesn't do the deployment automation aspect of publishing, and properties related to that are not supported. The most notable *.pubxml* properties that are not supported by `dotnet publish` are the following ones that impact the build:
+Some properties in the *.pubxml* file are honored only by Visual Studio and have no effect on `dotnet publish`. We're working to bring the CLI more into alignment with Visual Studio's behavior. But some properties will never be used by the CLI. The CLI and Visual Studio both do the packaging aspect of publishing, and [dotnet/sdk#29817](https://github.com/dotnet/sdk/pull/29817) plans to add support for more properties related to that. But the CLI doesn't do the deployment automation aspect of publishing, and properties related to that aren't supported. The most notable *.pubxml* properties that aren't supported by `dotnet publish` are the following ones that impact the build:
 
 * `LastUsedBuildConfiguration`
 * `Configuration`
@@ -164,7 +164,7 @@ For more information, see the following resources:
 
   If not specified, it defaults to *[project_file_folder]/bin/[configuration]/[framework]/publish/* for a framework-dependent executable and cross-platform binaries. It defaults to *[project_file_folder]/bin/[configuration]/[framework]/[runtime]/publish/* for a self-contained executable.
 
-  In a web project, if the output folder is in the project folder, successive `dotnet publish` commands result in nested output folders. For example, if the project folder is *myproject*, and the publish output folder is *myproject/publish*, and you run `dotnet publish` twice, the second run puts content files such as *.config* and *.json* files in *myproject/publish/publish*. To avoid nesting publish folders, specify a publish folder that is not **directly** under the project folder, or exclude the publish folder from the project. To exclude a publish folder named *publishoutput*, add the following element to a `PropertyGroup` element in the *.csproj* file:
+  In a web project, if the output folder is in the project folder, successive `dotnet publish` commands result in nested output folders. For example, if the project folder is *myproject*, and the publish output folder is *myproject/publish*, and you run `dotnet publish` twice, the second run puts content files such as *.config* and *.json* files in *myproject/publish/publish*. To avoid nesting publish folders, specify a publish folder that isn't **directly** under the project folder, or exclude the publish folder from the project. To exclude a publish folder named *publishoutput*, add the following element to a `PropertyGroup` element in the *.csproj* file:
 
   ```xml
   <DefaultItemExcludes>$(DefaultItemExcludes);publishoutput**</DefaultItemExcludes>

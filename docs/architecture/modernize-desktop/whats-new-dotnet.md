@@ -16,13 +16,13 @@ Let's look into the history of each implementation to understand the differences
 
 ## The motivation behind .NET Core
 
-Since its launch in 2002, .NET Framework has evolved to support many technologies, like Windows Forms, ASP.NET, Entity Framework, Windows Store, and many others. All of them are different in nature. Therefore, Microsoft approached this evolution by taking parts of .NET Framework and creating a different application stack for each technology. That way, development capabilities could be customized for the needs of the specific stack, which maximized the potential of every platform. That lead to fragmentation on the versions of .NET Framework maintained by different independent teams. All of these stacks have a common structure, containing an app model, a framework, and a runtime, but they differ in the implementation of each of the parts.
+Since its launch in 2002, .NET Framework has evolved to support many technologies, like Windows Forms, ASP.NET, Entity Framework, Windows Store, and many others. All of them are different in nature. Therefore, Microsoft approached this evolution by taking parts of .NET Framework and creating a different application stack for each technology. That way, development capabilities could be customized for the needs of the specific stack, which maximized the potential of every platform. That led to fragmentation on the versions of .NET Framework maintained by different independent teams. All of these stacks have a common structure, containing an app model, a framework, and a runtime, but they differ in the implementation of each of the parts.
 
 If you're targeting only one of these platforms, you can use this model. However, in many cases you might need more than one target platform in the same solution. For example, your application may have a desktop admin part, a customer-facing web site that shares the back-end logic running on a server, and even a mobile client. In this case, you need a unified coding experience that can span all of these .NET verticals.
 
 By the time Windows 8 was released, the concept of Portable Class Libraries (PCLs) was born. Originally, .NET Framework was designed around the assumption that it would always be deployed as a single unit, so [factoring](https://wikipedia.org/wiki/Decomposition_(computer_science)) wasn't a concern. To face the problem of code sharing between verticals, the driving force was on how to refactor the framework. The idea of contracts is to provide a well-factored API surface area. Contracts are simply assemblies that you compile against and are designed with proper factoring in mind taking care of the dependencies between them.
 
-This lead to reasoning about the API differences between verticals at the assembly level, as opposed to at the individual API level like previously. This aspect enabled a class library experience that can target multiple verticals, also known as portable class libraries.
+This led to reasoning about the API differences between verticals at the assembly level, as opposed to at the individual API level like previously. This aspect enabled a class library experience that can target multiple verticals, also known as portable class libraries.
 
 ![Release history of .NET Framework](./media/whats-new-dotnet-core/release-history.png)
 
@@ -80,13 +80,13 @@ In 2019, .NET Framework 4.8 was released. It included three major improvements f
 
 Since .NET Framework is installed on millions of machines, Microsoft will continue to support it but won't add new features.
 
-.NET (Core) is the open-source, cross-platform, and fast-moving version of .NET family. Because of its side-by-side nature, it can take changes without the fear of breaking any application. This means that .NET will get new APIs and language features over time that .NET Framework won't. Also, .NET already has features that were impossible for .NET Framework, such as:
+.NET (Core) is the open-source, cross-platform, and fast-moving version of the .NET family. Because of its side-by-side nature, it can take changes without the fear of breaking any application. This means that .NET will get new APIs and language features over time that .NET Framework won't. Also, .NET already has features that were impossible for .NET Framework, such as:
 
 - **Side-by-side versions of .NET supporting Windows Forms and WPF**: This solves the problem of side effects when updating the machine's framework version. Multiple versions of .NET can be installed on the same machine and each application specifies which version of .NET it should use. Even more, now you can develop and run Windows Forms and WPF on top of .NET.
 - **Embed .NET directly into an application**: You can deploy .NET as part of your application package. This enables you to take advantage of the latest version, features, and APIs without having to wait for a specific version to be installed on the machine.
 - **Take advantage of .NET features**: .NET is fast-moving and open-source. Its side-by-side nature enables fast introduction of new innovative APIs and Base Class Library (BCL) improvements without the risk of breaking compatibility. Now Windows Forms and WPF applications can take advantage of the latest .NET features, which also includes fundamental fixes for things like runtime performance and high-DPI support.
 
-.NET Framework will be fully supported and will always be a part of Windows. However, if you want to use the newest language features and APIs in the future, you'll need to move your applications to .NET. For brand-new desktop apps, we recommend starting directly on .NET 6 or a later version. It's lightweight and cross platform, runs side by side, has high performance, and fits perfectly on containers and microservices architectures.
+.NET Framework will be fully supported and will always be a part of Windows. However, if you want to use the newest language features and APIs in the future, you'll need to move your applications to .NET. For brand-new desktop apps, we recommend starting directly on .NET 6 or a later version. It's lightweight and cross-platform, runs side by side, has high performance, and fits perfectly on containers and microservices architectures.
 
 ![You can update your .NET Framework applications using the latest .NET Framework version or port your applications to .NET Core](./media/whats-new-dotnet-core/framework-vs-core.png)
 
@@ -110,7 +110,7 @@ Since .NET Framework is installed on millions of machines, Microsoft will contin
 
 ### Support for Windows Forms and WPF
 
-Windows Forms and WPF are part of .NET Core since version 3.0. Both presentation frameworks are for Windows only, so they aren't cross platform. You can think of WPF as a rich layer over DirectX and Windows Forms as a thinner layer over GDI+. WPF and Windows Forms do a great job of exposing and exercising much of the desktop application functionality in Windows. So Windows Forms and WPF are available for .NET Core and .NET Framework. Target your new desktop applications to .NET 6 or later, and migrate your existing apps from .NET Framework to .NET 6 or later.
+Windows Forms and WPF are part of .NET Core since version 3.0. Both presentation frameworks are for Windows only, so they aren't cross-platform. You can think of WPF as a rich layer over DirectX and Windows Forms as a thinner layer over GDI+. WPF and Windows Forms do a great job of exposing and exercising much of the desktop application functionality in Windows. So Windows Forms and WPF are available for .NET Core and .NET Framework. Target your new desktop applications to .NET 6 or later, and migrate your existing apps from .NET Framework to .NET 6 or later.
 
 A new version of .NET Standard, version 2.1, was released at the same time as .NET Core 3.0. To see which .NET implementations support which .NET Standard versions, see [Which .NET Standard version to target](../../standard/net-standard.md#net-standard-versions).
 
@@ -125,11 +125,11 @@ These XAML Islands are possible because Windows 10, version 1903 introduced a se
 To make it easier to create XAML Islands for Windows Forms and WPF developers, the Windows Community Toolkit introduces a set of .NET wrappers in several NuGet packages. Those wrappers are the wrapped and hosting controls:
 
 - The [WebView](/windows/communitytoolkit/controls/wpf-winforms/webview), [WebViewCompatible](/windows/communitytoolkit/controls/wpf-winforms/webviewcompatible), [InkCanvas](/windows/communitytoolkit/controls/wpf-winforms/inkcanvas), [MediaPlayerElement](/windows/communitytoolkit/controls/wpf-winforms/mediaplayerelement), and [MapControl](/windows/communitytoolkit/controls/wpf-winforms/mapcontrol) wrapped controls wrap some UWP XAML controls into Windows Forms or WPF controls, hiding UWP concepts for those developers.
-- The [WindowsXamlHost](/windows/communitytoolkit/controls/wpf-winforms/windowsxamlhost) control for Windows Forms and WPF allows others not-wrapped UWP XAML controls and custom controls can be loaded into a XAML Island.
+- The [WindowsXamlHost](/windows/communitytoolkit/controls/wpf-winforms/windowsxamlhost) control for Windows Forms and WPF allows other not-wrapped UWP XAML controls and custom controls to be loaded into a XAML Island.
 
-### Access to all Windows 10 APIs
+### Access to all Windows 10 and Windows 11 APIs
 
-Windows 10 has a great amount of APIs available for developers to work with. These APIs give access to a wide variety of functionality like authentication, bluetooth, appointments, and contacts. Now these APIs are exposed through .NET and give Windows developers the chance to create powerful desktops apps using the capabilities present on Windows 10.
+Windows 10 and Windows 11 have a large number of APIs available for developers to work with. These APIs give access to a wide variety of functionality like authentication, bluetooth, appointments, and contacts. Now these APIs are exposed through .NET and give Windows developers the chance to create powerful desktops apps using the capabilities present on Windows 10 and Windows 11.
 
 ### Side-by-side support and self-contained EXEs
 
@@ -137,13 +137,13 @@ The .NET deployment model is one of the biggest benefits that Windows desktop de
 
 When a new .NET version is released, you can update each app on a machine as needed without any concern of affecting other applications. New .NET versions are installed in their own directories and exist "side-by-side" with each other.
 
-If you need to deploy with isolation, you can deploy .NET with your application. .NET will bundle your app with the .NET runtime as in a single executable. The modular architecture used by .NET makes these flexible deployment options possible.
+If you need to deploy with isolation, you can deploy .NET with your application. .NET will bundle your app with the .NET runtime as a single executable. The modular architecture used by .NET makes these flexible deployment options possible.
 
 ### Performance
 
-Since its start, targeting the web and cloud workloads, .NET has had performance plugged into its DNA. Server-side code must be performant enough to fulfill high-concurrency scenarios and .NET 6 scores today as the best performance web platform in the market.
+Since its start, targeting the web and cloud workloads, .NET has had performance plugged into its DNA. Server-side code must be performant enough to fulfill high-concurrency scenarios and .NET 7 scores today as the best performance web platform in the market.
 
-Old Windows Forms code has been refactored for .NET, which reduced memory allocations for drawing Forms and Controls. By simply upgrading from .NET Framework to .NET 6 or later, your applications become much faster. You can take advantage of these performance improvements when you use .NET to build your next generation of desktop applications.
+Old Windows Forms code has been refactored for .NET, which reduced memory allocations for drawing Forms and Controls. By simply upgrading from .NET Framework to .NET  or later, your applications become much faster. You can take advantage of these performance improvements when you use .NET to build your next generation of desktop applications.
 
 >[!div class="step-by-step"]
 >[Previous](why-modern-applications.md)

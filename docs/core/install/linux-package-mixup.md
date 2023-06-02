@@ -196,7 +196,14 @@ Configure your package manager to ignore the .NET packages from the distribution
     Pin-Priority: -10
     ```
 
-    Make sure to replace `<your-package-source>` with your distribution's package source, for example, on Ubuntu you would use `archive.ubuntu.com`.
+    Make sure to replace `<your-package-source>` with your distribution's package source, for example, on Ubuntu you may use `archive.ubuntu.com` in the US.
+
+    > [!TIP]
+    > Use the `apt-cache policy` command to find the source:
+    >
+    > ```bash
+    > apt-cache policy '~ndotnet.*' | grep -v microsoft | grep '/ubuntu' | cut -d"/" -f3 | sort -u
+    > ```
 
 01. Reinstall .NET from the Microsoft package feed. For more information, see [Install .NET on Linux](linux.md). If using Ubuntu, see [My Ubuntu distribution doesn't include the .NET version I want, or I need an out-of-support .NET version](linux-ubuntu.md#my-ubuntu-distribution-doesnt-include-the-net-version-i-want-or-i-need-an-out-of-support-net-version).
 
@@ -220,7 +227,7 @@ Many other users have reported these problems. The following is a list of those 
 - Fatal error: folder _/host/fxr_ doesn't exist
 
   - [Core #5746: The folder does not exist when installing 3.1 on CentOS 8 with packages.microsoft.com repo enabled](https://github.com/dotnet/core/issues/5746)
-  - [SDK #15476: A fatal error occurred. The folder [/usr/share/dotnet/host/fxr] does not exist](https://github.com/dotnet/sdk/issues/15476):
+  - [SDK #15476: A fatal error occurred. The folder '/usr/share/dotnet/host/fxr' does not exist](https://github.com/dotnet/sdk/issues/15476):
 
 - Fatal error: folder _/host/fxr_ doesn't contain any version-numbered child folders
 

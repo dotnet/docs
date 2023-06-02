@@ -7,6 +7,11 @@ ms.date: 03/14/2022
 
 As an object-oriented language, C# supports the concepts of encapsulation, inheritance, and polymorphism. A class may inherit directly from one parent class, and it may implement any number of interfaces. Methods that override virtual methods in a parent class require the `override` keyword as a way to avoid accidental redefinition. In C#, a struct is like a lightweight class; it's a stack-allocated type that can implement interfaces but doesn't support inheritance. C# provides `record class` and `record struct` types, which are types whose purpose is primarily storing data values.
 
+All types are initialized through a *constructor*, a method responsible for initializing an instance. Two constructor declarations have unique behavior:
+
+- A *parameterless constructor*, which initializes all fields to their default value.
+- A *primary constructor*, which declares the required parameters for an instance of that type.
+
 ## Classes and objects
 
 *Classes* are the most fundamental of C#'s types. A class is a data structure that combines state (fields) and actions (methods and other function members) in a single unit. A class provides a definition for *instances* of the class, also known as *objects*. Classes support *inheritance* and *polymorphism*, mechanisms whereby *derived classes* can extend and specialize *base classes*.
@@ -29,6 +34,16 @@ Instances of classes are created using the `new` operator, which allocates memor
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="CreatePoints":::
 
 The memory occupied by an object is automatically reclaimed when the object is no longer reachable. It's not necessary or possible to explicitly deallocate objects in C#.
+
+:::code language="csharp" source="./snippets/shared/Types.cs" ID="CreatePoints":::
+
+Applications or tests for algorithms might need to create multiple `Point` objects. The following class generates a sequence of random points. The number of points is set by the *primary constructor* parameter. The primary constructor parameter `numPoints` is in scope for all members of the class:
+
+:::code language="csharp" source="./snippets/shared/Types.cs" ID="PointFactoryClass":::
+
+You can use the class as shown in the following code:
+
+:::code language="csharp" source="./snippets/shared/Types.cs" ID="UseFactory":::
 
 ### Type parameters
 

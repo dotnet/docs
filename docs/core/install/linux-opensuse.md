@@ -3,7 +3,7 @@ title: Install .NET on openSUSE
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on openSUSE.
 author: adegeo
 ms.author: adegeo
-ms.date: 12/21/2022
+ms.date: 05/04/2023
 ---
 
 # Install the .NET SDK or the .NET Runtime on openSUSE
@@ -20,7 +20,7 @@ The following table is a list of currently supported .NET releases on openSUSE 1
 
 | openSUSE   | .NET      |
 |------------|-----------|
-| 15         | 7, 6,     |
+| 15.4+      | 7, 6      |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

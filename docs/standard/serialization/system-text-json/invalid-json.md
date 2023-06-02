@@ -41,8 +41,6 @@ Here's example JSON with comments and a trailing comma:
 
 ## Allow or write numbers in quotes
 
-::: zone pivot="dotnet-5-0,dotnet-7-0,dotnet-6-0"
-
 Some serializers encode numbers as JSON strings (surrounded by quotes).
 
 For example:
@@ -69,30 +67,8 @@ To serialize numbers in quotes or accept numbers in quotes across the entire inp
 When you use `System.Text.Json` indirectly through ASP.NET Core, quoted numbers are allowed when deserializing because ASP.NET Core specifies [web default options](xref:System.Text.Json.JsonSerializerDefaults.Web).
 
 To allow or write quoted numbers for specific properties, fields, or types, use the [[JsonNumberHandling]](xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute) attribute.
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-`System.Text.Json` in .NET Core 3.1 doesn't support serializing or deserializing numbers surrounded by quotation marks. For more information, see [Allow or write numbers in quotes](migrate-from-newtonsoft.md#allow-or-write-numbers-in-quotes).
-::: zone-end
 
 ## See also
 
 * [System.Text.Json overview](overview.md)
 * [How to serialize and deserialize JSON](how-to.md)
-* [Instantiate JsonSerializerOptions instances](configure-options.md)
-* [Enable case-insensitive matching](character-casing.md)
-* [Customize property names and values](customize-properties.md)
-* [Ignore properties](ignore-properties.md)
-* [Handle overflow JSON or use JsonElement or JsonNode](handle-overflow.md)
-* [Preserve references and handle circular references](preserve-references.md)
-* [Deserialize to immutable types and non-public accessors](immutability.md)
-* [Polymorphic serialization](polymorphism.md)
-* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft.md)
-* [Customize character encoding](character-encoding.md)
-* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
-* [Write custom converters for JSON serialization](converters-how-to.md)
-* [DateTime and DateTimeOffset support](../../datetime/system-text-json-support.md)
-* [How to use source generation](source-generation.md)
-* [Supported collection types](supported-collection-types.md)
-* [System.Text.Json API reference](xref:System.Text.Json)
-* [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

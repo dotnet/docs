@@ -14,21 +14,11 @@ ms.topic: how-to
 
 # How to choose reflection or source generation in System.Text.Json
 
-:::zone pivot="dotnet-8-0,dotnet-7-0,dotnet-6-0"
 By default, `System.Text.Json` uses run-time reflection to gather the metadata it needs to access properties of objects for serialization and deserialization. As an alternative, `System.Text.Json` 6.0 and later can use the C# [source generation](../../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md), which reduces app size.
 
 You can use version 6.0+ of `System.Text.Json` in projects that target earlier frameworks. For more information, see [How to get the library](overview.md#how-to-get-the-library).
 
 This article explains the options and provides guidance on how to choose the best approach for your scenario.
-:::zone-end
-
-:::zone pivot="dotnet-5-0,dotnet-core-3-1"
-[System.Text.Json](overview.md) version 6.0 and later can use the C# [source generation](../../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and improve [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md) accuracy. You can use version 6.0 or later of System.Text.Json in projects that target earlier frameworks. For more information, see:
-
-* [How to get the library](overview.md#how-to-get-the-library)
-* [The .NET 6 version of this article](source-generation-modes.md?pivots=dotnet-6-0).
-
-:::zone-end
 
 :::zone pivot="dotnet-8-0"
 
@@ -110,7 +100,7 @@ For information about other known issues with source generation, see the [GitHub
 
 ## Serialization optimization mode
 
-`JsonSerializer` has many features that customize the output of serialization, such as [camel-casing property names](customize-properties.md#use-camel-case-for-all-json-property-names) and [preserving references](preserve-references.md#preserve-references-and-handle-circular-references). Support for all those features causes some performance overhead. Source generation can improve serialization performance by generating optimized code that uses [`Utf8JsonWriter`](use-dom-utf8jsonreader-utf8jsonwriter.md#use-utf8jsonwriter) directly.
+`JsonSerializer` has many features that customize the output of serialization, such as [camel-casing property names](customize-properties.md#use-camel-case-for-all-json-property-names) and [preserving references](preserve-references.md#preserve-references-and-handle-circular-references). Support for all those features causes some performance overhead. Source generation can improve serialization performance by generating optimized code that uses [`Utf8JsonWriter`](use-utf8jsonwriter.md) directly.
 
 The optimized code doesn't support all of the serialization features that `JsonSerializer` supports. The serializer detects whether the optimized code can be used and falls back to default serialization code if unsupported options are specified. For example, <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString?displayProperty=nameWithType> is not applicable to writing, so specifying this option doesn't cause a fall-back to default code.
 
@@ -158,20 +148,3 @@ Most of the System.Text.Json documentation shows how to write code that uses ref
 * [Try the new System.Text.Json source generator](https://devblogs.microsoft.com/dotnet/try-the-new-system-text-json-source-generator/)
 * [JSON serialization and deserialization in .NET - overview](overview.md)
 * [How to use the library](how-to.md)
-* [Instantiate JsonSerializerOptions instances](configure-options.md)
-* [Enable case-insensitive matching](character-casing.md)
-* [Customize property names and values](customize-properties.md)
-* [Ignore properties](ignore-properties.md)
-* [Allow invalid JSON](invalid-json.md)
-* [Handle overflow JSON or use JsonElement or JsonNode](handle-overflow.md)
-* [Preserve references and handle circular references](preserve-references.md)
-* [Deserialize to immutable types and non-public accessors](immutability.md)
-* [Polymorphic serialization](polymorphism.md)
-* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft.md)
-* [Customize character encoding](character-encoding.md)
-* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
-* [Write custom converters for JSON serialization](converters-how-to.md)
-* [DateTime and DateTimeOffset support](../../datetime/system-text-json-support.md)
-* [Supported collection types in System.Text.Json](supported-collection-types.md)
-* [System.Text.Json API reference](xref:System.Text.Json)
-* [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

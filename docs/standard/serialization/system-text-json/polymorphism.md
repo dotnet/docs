@@ -21,7 +21,7 @@ In this article, you will learn how to serialize properties of derived classes w
 
 ## Serialize properties of derived classes
 
-:::zone pivot="dotnet-core-3-1,dotnet-5-0,dotnet-6-0"
+:::zone pivot="dotnet-6-0"
 
 In versions prior to .NET 7, `System.Text.Json` _doesn't support_ the serialization of polymorphic type hierarchies. For example, if a property's type is an interface or an abstract class, only the properties defined on the interface or abstract class are serialized, even if the runtime type has additional properties. The exceptions to this behavior are explained in this section. For information about support in .NET 7, see [Polymorphic serialization in .NET 7](polymorphism.md?pivots=dotnet-7-0).
 
@@ -750,20 +750,3 @@ End Class
 
 * [System.Text.Json overview](overview.md)
 * [How to serialize and deserialize JSON](how-to.md)
-* [Instantiate JsonSerializerOptions instances](configure-options.md)
-* [Enable case-insensitive matching](character-casing.md)
-* [Customize property names and values](customize-properties.md)
-* [Ignore properties](ignore-properties.md)
-* [Allow invalid JSON](invalid-json.md)
-* [Handle overflow JSON or use JsonElement or JsonNode](handle-overflow.md)
-* [Preserve references and handle circular references](preserve-references.md)
-* [Deserialize to immutable types and non-public accessors](immutability.md)
-* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft.md)
-* [Customize character encoding](character-encoding.md)
-* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
-* [Write custom converters for JSON serialization](converters-how-to.md)
-* [DateTime and DateTimeOffset support](../../datetime/system-text-json-support.md)
-* [How to use source generation](source-generation.md)
-* [Supported collection types](supported-collection-types.md)
-* [System.Text.Json API reference](xref:System.Text.Json)
-* [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

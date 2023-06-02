@@ -33,6 +33,10 @@ A local function is defined as a nested method inside a containing member. Its d
 <modifiers> <return-type> <method-name> <parameter-list>
 ```
 
+> [!NOTE]
+> The `<parameter-list>` shouldn't contain the parameters named with [contextual keyword](../../language-reference/keywords/index.md#contextual-keywords) `value`.
+> The compiler creates the temporary variable "value", which contains the referenced outter variables, which later causes ambiguity and may also cause an unexpected behaviour.
+
 You can use the following modifiers with a local function:
 
 - [`async`](../../language-reference/keywords/async.md)
@@ -149,7 +153,7 @@ One final advantage not demonstrated in this sample is that local functions can 
 
 :::code language="csharp" source="snippets/local-functions/Program.cs" id="YieldReturn" :::
 
-The `yield return` statement is not allowed in lambda expressions, see [compiler error CS1621](../../misc/cs1621.md).
+The `yield return` statement is not allowed in lambda expressions. For more information, see [compiler error CS1621](../../language-reference/compiler-messages/lambda-expression-errors.md#syntax-limitations-in-lambda-expressions).
 
 While local functions may seem redundant to lambda expressions, they actually serve different purposes and have different uses. Local functions are more efficient for the case when you want to write a function that is called only from the context of another method.
 

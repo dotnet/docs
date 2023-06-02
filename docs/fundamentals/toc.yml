@@ -25,6 +25,8 @@ items:
         items:
         - name: Overview
           href: ../core/install/linux-ubuntu.md
+        - name: "23.04"
+          href: ../core/install/linux-ubuntu-2304.md
         - name: "22.10"
           href: ../core/install/linux-ubuntu-2210.md
         - name: "22.04"
@@ -565,8 +567,14 @@ items:
           href: ../standard/serialization/system-text-json/immutability.md
         - name: Polymorphic serialization
           href: ../standard/serialization/system-text-json/polymorphism.md
-      - name: Use DOM, Utf8JsonReader, Utf8JsonWriter
-        href: ../standard/serialization/system-text-json/use-dom-utf8jsonreader-utf8jsonwriter.md
+      - name: Read/write JSON without using JsonSerializer
+        items:
+        - name: Use DOM
+          href: ../standard/serialization/system-text-json/use-dom.md
+        - name: Use Utf8JsonWriter
+          href: ../standard/serialization/system-text-json/use-utf8jsonwriter.md
+        - name: Use Utf8JsonReader
+          href: ../standard/serialization/system-text-json/use-utf8jsonreader.md
       - name: Migrate from Newtonsoft.Json
         href: ../standard/serialization/system-text-json/migrate-from-newtonsoft.md
       - name: Visual Basic support
@@ -854,6 +862,8 @@ items:
       items:
       - name: QUIC support
         href: networking/quic/quic-overview.md
+      - name: QUIC troubleshooting
+        href: networking/quic/quic-troubleshooting.md
   - name: File globbing
     href: ../core/extensions/file-globbing.md
     displayName: file globbing,globbing,globbing patterns,globbing pattern,globbing

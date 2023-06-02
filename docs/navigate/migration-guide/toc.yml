@@ -4,6 +4,7 @@ items:
   - name: Overview
     href: ../../core/porting/index.md
   - name: General information
+    expanded: true
     items:
       - name: About .NET
         items:
@@ -16,16 +17,22 @@ items:
           - name: Overview
             href: ../../core/porting/upgrade-assistant-overview.md
             displayName: upgrade assistant
+          - name: Install
+            href: ../../core/porting/upgrade-assistant-install.md
+            displayName: upgrade assistant
+          - name: Install (legacy version)
+            href: ../../core/porting/upgrade-assistant-install-legacy.md
+            displayName: upgrade assistant
           - name: Windows Communication Foundation
             href: ../../core/porting/upgrade-assistant-wcf.md
           - name: Windows Presentation Foundation
-            href: ../../core/porting/upgrade-assistant-wpf-framework.md
+            href: /dotnet/desktop/wpf/migration/
           - name: Windows Forms
-            href: ../../core/porting/upgrade-assistant-winforms-framework.md
+            href: /dotnet/desktop/winforms/migration/
           - name: Universal Windows Platform
             href: ../../core/porting/upgrade-assistant-uwp-framework.md
-          - name: ASP.NET Core
-            href: ../../core/porting/upgrade-assistant-aspnetmvc.md
+          - name: ASP.NET
+            href: /aspnet/core/migration/mvc
           - name: Telemetry
             href: ../../core/porting/upgrade-assistant-telemetry.md
       - name: Breaking changes
@@ -36,6 +43,7 @@ items:
           - name: Breaking changes
             href: ../../core/compatibility/fx-core.md
   - name: Pre-migration
+    expanded: true
     items:
       - name: Assess the portability of your project
         items:
@@ -54,6 +62,7 @@ items:
       - name: Needed changes before porting code
         href: ../../core/porting/premigration-needed-changes.md
   - name: Migration
+    expanded: true
     items:
       - name: Create a porting plan
         items:
@@ -64,8 +73,13 @@ items:
       - name: Application porting guides
         items:
           - name: Windows Forms
-            href: /dotnet/desktop/winforms/migration/?view=netdesktop-6.0&preserve-view=false&toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+            href: /dotnet/desktop/winforms/migration/?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Windows Presentation Foundation
-            href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0&preserve-view=false&toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+            href: /dotnet/desktop/wpf/migration/?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: C++/CLI projects
             href: ../../core/porting/cpp-cli.md
+  - name: Post-migration
+    expanded: true
+    items:
+      - name: Modernize
+        href: ../../core/porting/modernize.md

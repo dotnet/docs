@@ -3,7 +3,7 @@ title: .NET default templates for dotnet new
 description: The information about dotnet new templates shipped with dotnet SDK.
 ms.custom: updateeachrelease
 no-loc: [Blazor, WebAssembly]
-ms.date: 05/25/2023
+ms.date: 05/31/2023
 ---
 # .NET default templates for dotnet new
 
@@ -708,7 +708,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`--aot`**
 
-  Enable publish using AOT. For more information, see [ASP.NET Core support for native AOT](/aspnet/core/fundamentals/native-aot).
+  Enable publish using AOT. For more information, see [Native AOT deployment](/dotnet/core/deploying/native-aot) and [The API template](/aspnet/core/fundamentals/native-aot#the-api-template).
 
 - **`--exclude-launch-settings`**
 

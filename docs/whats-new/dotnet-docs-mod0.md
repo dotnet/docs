@@ -91,7 +91,7 @@ Welcome to what's new in the .NET docs for March 2023. This article lists some o
 
 ### Updated articles
 
-- [Upgrade a WPF App to .NET 7 with the .NET Upgrade Assistant](../core/porting/upgrade-assistant-wpf-framework.md) - Update upgrade assistant article for WPF
+- [Upgrade a WPF App to .NET 7 with the .NET Upgrade Assistant](/dotnet/desktop/wpf/migration/) - Update upgrade assistant article for WPF
 
 ## ML.NET
 

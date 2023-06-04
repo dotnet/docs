@@ -6,7 +6,7 @@ ms.date: 31/05/2023
 
 # Comparing F\# with Java
 
-In this section, we will compare the syntax and coding style of the F# programming language with Java. We will highlight the key language features, discuss syntax differences, and provide code examples to illustrate the variations.
+In this section, we will compare the syntax and coding style of the F# programming language with Java. We will highlight the key language features, discuss syntax differences, and provide code examples to illustrate relevant differences between the two languages.
 
 ## Getting Started
 

@@ -3,6 +3,7 @@ title: Overview of the .NET Upgrade Assistant
 description: Introducing the .NET Upgrade Assistant tool that helps upgrade .NET, .NET Core, or .NET Framework apps to the latest version of .NET.
 author: adegeo
 ms.date: 05/22/2023
+topic: overview
 no-loc: ["appsettings.json", "App.config"]
 ---
 # Overview of the .NET Upgrade Assistant
@@ -83,6 +84,10 @@ Once your app has been upgraded, a status screen is displayed which shows all of
 - **Red _X_**: The artifact was to be upgraded, but the upgrade failed.
 
 :::image type="content" source="media/upgrade-assistant-overview/visual-studio-upgrade-results.png" alt-text="The .NET Upgrade Assistant's Upgrade results tab in Visual Studio.":::
+
+Additionally, the actions the Upgrade Assistant performed are logged to the **Output** window under the **Upgrade Assistant** source, as shown inthe following image:
+
+:::image type="content" source="media/upgrade-assistant-overview/visual-studio-output-window.png" alt-text="The output window in Visual Studio showing the results from the .NET Upgrade Assistant.":::
 
 After upgrading your project, you'll need to test it thoroughly.
 

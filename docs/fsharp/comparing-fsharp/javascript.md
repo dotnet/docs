@@ -100,7 +100,9 @@ In npm world, this is slightly different, but still quite easy to setup your tes
 Here is a function in JS
 
 ```js
-function myFunc(x) {   return x + 1;};
+function myFunc(x) {   
+    return x + 1;
+};
 ```
 
 Never forget the ending semicolon in Js as you might have scope resolution madness :) in quite some corner cases.
@@ -129,8 +131,12 @@ A few extra things to note in the F# code:
 
 ```fsharp
 let mutable x = 5 //this binding is now a "variable"
-x <- 6 // we are "dangerously" changing it's value in memory (side effect)
+
+x <- 6 
+// we are "dangerously" changing it's value in memory (side effect)
+
 // we loose referential transparency (and purity)
+
 // in a multi-threaded and parallel scenario, this is also not desired
 ```
 
@@ -149,7 +155,9 @@ let myFunc = fun x -> x + 1 // same... but with lambda
 Here is how you would create dnyamic objects in js old-school
 
 ```js
-var x = {}; //or let x.name = "John";x.age = 5;
+var x = {}; //or let 
+x.name = "John";
+x.age = 5;
 ```
 
 and here is how you would create it in modern (_immutable-ish\* lol_), as it is actually still mutable js, thanks to Janne Siera for the tip.
@@ -305,3 +313,17 @@ ReactDOM.render(Counter(), document.getElementById "root")
 As an extra feature, the HTML view libraries (for example Feliz views or Giraffe views) can be used also in server side projects, so also from pure .NET codebase, allowing nicely integrated F#-HTML both in FE and BE (instead of external files).
 
 Plus CSS type providers as well allow for typed F#-CSS to be used within the code. Will not write more on that here as it’s quite a lot of info already, but you can easily find more information on the topics mentioned.
+
+# TypeScript or Flow
+
+If you tried TypeScript, F# works in a similar way with type annotations, but much more like Flow.
+
+While in typescript you **add** an annotation to "augment" a "any" type to an actual "type", in F# you work the other way around.
+
+The compiler always infers the "type" for you in a automated and generalized way, and you have to touch your code - or **add** your type manually - only when it doesn't compile or the inferred type is not what you wanted.
+
+Typescript works adding types to fill in the void (being a JS superset), F# just by covering the few gaps left.
+
+# Summary
+
+As you have seen, F# is a very lightweight and productive language and is not so different from what you are already used to in Javascript. 

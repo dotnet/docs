@@ -27,13 +27,13 @@ Welcome to what's new in the .NET docs for May 2023. This article lists some of 
 ### Updated articles
 
 - [Breaking changes in .NET 8](../core/compatibility/8.0.md)
-   - Add EF Core breaking changes
-   - Document Preview 5 breaking changes for ASP.NET
-   - BinaryFormatter disabled & obsoletion of legacy serialization APIs
-   - StripSymbols default for PublishAOT
-   - ConvertTo breaking change
-   - add getgeneration breaking change
-   - Two ASP.NET breaking changes for .NET 8
+  - Add EF Core breaking changes
+  - Document Preview 5 breaking changes for ASP.NET
+  - BinaryFormatter disabled & obsoletion of legacy serialization APIs
+  - StripSymbols default for PublishAOT
+  - ConvertTo breaking change
+  - add getgeneration breaking change
+  - Two ASP.NET breaking changes for .NET 8
 - [Breaking changes in .NET 7](../core/compatibility/7.0.md) - System.Drawing.Common config switch removal
 
 ## .NET Framework

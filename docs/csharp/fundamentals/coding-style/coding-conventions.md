@@ -20,7 +20,7 @@ Coding conventions serve the following purposes:
 > - They demonstrate C# best practices.
 
 > [!IMPORTANT]
-> The guidelines in this article are used by Microsoft to develop samples and documentation. They were adopted from the [.NET Runtime, C# Coding Style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md) guidelines. You can use them, or adapt them to your needs. They are meant to be an example of common C# conventions, and not an authoritative list (see [Framework Design Guidelines](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/) for that). The primary objectives are consistency and readability within your project, team, organization, or company source code.
+> The guidelines in this article are used by Microsoft to develop samples and documentation. They were adopted from the [.NET Runtime, C# Coding Style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md) guidelines. You can use them, or adapt them to your needs. They are meant to be an example of common C# conventions, and not an authoritative list (see [Framework Design Guidelines](../../../standard/design-guidelines/) for that). The primary objectives are consistency and readability within your project, team, organization, or company source code.
 
 ## Naming conventions
 

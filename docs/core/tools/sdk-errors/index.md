@@ -154,7 +154,6 @@ f1_keywords:
 - NETSDK1190
 - NETSDK1191
 - NETSDK1192
-- NETSDK1195
 ---
 # .NET SDK error list
 

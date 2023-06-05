@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Runtime-specific apps no longer self-contained"
 description: Learn about a breaking change in the .NET 8 SDK where apps that specify a runtime identifier are no longer self-contained by default.
-ms.date: 03/09/2023
+ms.date: 06/05/2023
 ---
 # Runtime-specific apps no longer self-contained
 
@@ -22,13 +22,25 @@ This is a breaking change in the following situations:
 
 Previously, if a runtime identifier (RID) was specified (via [RuntimeIdentifier](../../../project-sdk/msbuild-props.md#runtimeidentifier)), the app was published as self-contained, even if `SelfContained` wasn't explicitly specified.
 
+In addition:
+
+- The publish properties `PublishTrimmed`, `PublishSingleFile`, and `PublishAot` implied `PublishSelfContained` and therefore `SelfContained` during operations including build, restore, and publish.
+- The `PublishTrimmed` property did not imply `SelfContained`.
+- The `PublishReadyToRun` property implied `SelfContained` if `SelfContained` wasn't specified.
+
 ## New behavior
 
 Starting in .NET 8, for apps that target .NET 8 or a later version, `RuntimeIdentifier` no longer implies `SelfContained` by default. Instead, apps that specify a runtime identifier will be dependent on the .NET runtime by default (framework-dependent). Apps that target .NET 7 or earlier versions aren't affected.
 
+In addition:
+
+- The publish properties `PublishTrimmed`, `PublishSingleFile`, and `PublishAot` now imply `SelfContained` during a publish operation only (that is, not for build or restore).
+- The `PublishTrimmed` property also now implies `SelfContained` during publish.
+- The `PublishReadyToRun` property no longer implies `SelfContained` if the project targets .NET 8 or later.
+
 ## Version introduced
 
-.NET 8 Preview 2
+.NET 8 Preview 5
 
 ## Type of breaking change
 
@@ -44,7 +56,7 @@ This change can affect [source compatibility](../../categories.md#source-compati
 
 **warning NETSDK1179: One of '--self-contained' or '--no-self-contained' options are required when '--runtime' is used.**
 
-Now that customers have had time to add `SelfContained` explicitly, we felt we could introduce the break.
+Now that customers have had time to add `SelfContained` explicitly, it's okay to introduce the break.
 
 ## Recommended action
 

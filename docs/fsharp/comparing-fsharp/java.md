@@ -35,9 +35,7 @@ public class Main {
 }
 ```
 
-F#
-
-Much shorter, now C# also has top-level statements and global using, so you could achieve a similar succinctness in C# (with some magic). But note this has always been the case for F#, nothing new or fancy.
+in F# this is quite succint and slim:
 
 ```fsharp
 printfn "Hello world"
@@ -55,7 +53,8 @@ public class StringUtils {
   }  
 }  
   
-//usage in some other class/method..
+// usage in some other class/method..
+
 // prints `this is wow!`  
 StringUtils.magic("this is magic!"); 
 
@@ -69,7 +68,8 @@ module StringUtils
     let magic inputString \=   
         inputString.Replace("magic", "wow")  
   
-//usage in some other class/method...  
+// usage in some other class/method...  
+
 // ( ) is not required here
 StringUtils.magic "this is magic!" 
 ```
@@ -441,6 +441,20 @@ open XUnit // similar to JUnit...
 
 [<Fact>]let ``GIVEN i have dotnet-sdk WHEN i try F# THEN i might give it a go!`` () =    
     Assert.True()
+```
+
+in Java you could write a similar JUnit test like this
+
+```java
+import org.junit.Test;
+import static org.junit.Assert.assertTrue;
+
+public class MyTestClass {
+    @Test
+    public void givenJdk_whenTryJava_thenMightGiveItAGo() {
+        assertTrue(true);
+    }
+}
 ```
 
 There would be much more to cover on testing, but this is not the main topic here.

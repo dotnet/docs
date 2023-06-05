@@ -17,8 +17,8 @@ try
 }
 catch (Exception e)
 {
-    Console.WriteLine($$"""
-        Exception while trying to run client: {{e.Message}}
+    Console.WriteLine($"""
+        Exception while trying to run client: {e.Message}
         Make sure the silo the client is trying to connect to is running.
         Press any key to exit.
         """);

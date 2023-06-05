@@ -5,7 +5,7 @@ ms.date: 05/26/2023
 ---
 # Tutorial: Explore primary constructors
 
-C# 12 introduces [*primary constructors*](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors), a concise syntax to declare constructors whose parameters are avaiable anywhere in the body of the type.
+C# 12 introduces [*primary constructors*](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors), a concise syntax to declare constructors whose parameters are available anywhere in the body of the type.
 
 In this tutorial, you'll learn how to:
 
@@ -29,11 +29,9 @@ Key learning experiences for this tutorial:
 1. consider when a reasonable can be used in a default ctor.
 1. Use primary ctor parameter as you would use a field.
 
-Caveats:
+## Primary constructors
 
-- Watch for double storage.
 
-## Purpose of primary constructor
 
 ## Examples
 

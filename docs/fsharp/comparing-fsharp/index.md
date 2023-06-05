@@ -5,7 +5,7 @@ ms.date: 31/05/2023
 ---
 # Language Comparisons
 
-![](static-dynamic-languages.webp)
+![languages quadrant](languages-quadrant.png)
 
 Here is a quick table comparing F# with some commonly known programming languages:
 

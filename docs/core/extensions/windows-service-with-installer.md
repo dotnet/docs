@@ -3,7 +3,7 @@ title: Create a Windows Service installer
 description: Learn how to create a Windows Service installer project.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/13/2023
+ms.date: 06/06/2023
 ms.topic: tutorial
 ---
 
@@ -61,27 +61,35 @@ const string ServiceName = ".NET Joke Service";
 
 if (args is { Length: 1 })
 {
-    string executablePath =
-        Path.Combine(AppContext.BaseDirectory, "App.WindowsService.exe");
-
-    if (args[0] is "/Install")
+    try
     {
-        await Cli.Wrap("sc")
-            .WithArguments(new[] { "create", ServiceName, $"binPath={executablePath}", "start=auto" })
-            .ExecuteAsync();
+        string executablePath =
+            Path.Combine(AppContext.BaseDirectory, "App.WindowsService.exe");
+    
+        if (args[0] is "/Install")
+        {
+            await Cli.Wrap("sc")
+                .WithArguments(new[] { "create", ServiceName, $"binPath={executablePath}", "start=auto" })
+                .ExecuteAsync();
+        }
+        else if (args[0] is "/Uninstall")
+        {
+            await Cli.Wrap("sc")
+                .WithArguments(new[] { "stop", ServiceName })
+                .ExecuteAsync();
+    
+            await Cli.Wrap("sc")
+                .WithArguments(new[] { "delete", ServiceName })
+                .ExecuteAsync();
+        }
     }
-    else if (args[0] is "/Uninstall")
+    catch (Exception ex)
     {
-        await Cli.Wrap("sc")
-            .WithArguments(new[] { "stop", ServiceName })
-            .ExecuteAsync();
-
-        await Cli.Wrap("sc")
-            .WithArguments(new[] { "delete", ServiceName })
-            .ExecuteAsync();
+        Console.WriteLine(ex);
+        return 1;
     }
 
-    return;
+    return 0;
 }
 ```
 

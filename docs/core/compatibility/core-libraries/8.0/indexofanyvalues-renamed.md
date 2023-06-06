@@ -5,15 +5,15 @@ ms.date: 06/05/2023
 ---
 # IndexOfAnyValues renamed to SearchValues
 
-.NET 8 Preview 1 introduced a new <xref:System.Buffers.IndexOfAnyValues%601> type to speed up `IndexOfAny`-like operations. In .NET 8 Preview 5, the type has been renamed to `SearchValues<T>`.
+.NET 8 Preview 1 introduced a new `System.Buffers.IndexOfAnyValues<T>` type to speed up `IndexOfAny`-like operations. In .NET 8 Preview 5, the type has been renamed to <xref:System.Buffers.SearchValues%601>.
 
 ## Previous behavior
 
-The affected types were named <xref:System.Buffers.IndexOfAnyValues> and <xref:System.Buffers.IndexOfAnyValues%601>.
+In previous preview versions of .NET 8, the affected types were named `IndexOfAnyValues` and `System.Buffers.IndexOfAnyValues<T>`.
 
 ## New behavior
 
-<xref:System.Buffers.IndexOfAnyValues> and <xref:System.Buffers.IndexOfAnyValues%601> are now named <xref:System.Buffers.SearchValues> and <xref:System.Buffers.SearchValues%601>.
+`IndexOfAnyValues` and `System.Buffers.IndexOfAnyValues<T>` are now named <xref:System.Buffers.SearchValues> and <xref:System.Buffers.SearchValues%601>.
 
 ## Version introduced
 
@@ -34,9 +34,9 @@ This should be as simple as a text-based find-and-replace of "IndexOfAnyValues" 
 
 ## Affected APIs
 
-- <xref:System.Buffers.IndexOfAnyValues%601?displayProperty=fullName>
-- <xref:System.Buffers.IndexOfAnyValues.Create%2A?displayProperty=fullName>
-- <xref:System.MemoryExtensions.IndexOfAny%60%601(System.ReadOnlySpan{%60%600},System.Buffers.IndexOfAnyValues{%60%600})?displayProperty=fullName>
-- <xref:System.MemoryExtensions.IndexOfAny%60%601(System.Span{%60%600},System.Buffers.IndexOfAnyValues{%60%600})?displayProperty=fullName>
-- <xref:System.MemoryExtensions.IndexOfAnyExcept%60%601(System.ReadOnlySpan{%60%600},System.Buffers.IndexOfAnyValues{%60%600})?displayProperty=fullName>
-- <xref:System.MemoryExtensions.IndexOfAnyExcept%60%601(System.Span{%60%600},System.Buffers.IndexOfAnyValues{%60%600})?displayProperty=fullName>
+- `System.Buffers.IndexOfAnyValues<T>`
+- `System.Buffers.IndexOfAnyValues.Create()`
+- `System.MemoryExtensions.IndexOfAny<T>(ReadOnlySpan<T>, IndexOfAnyValues<T>)`
+- `System.MemoryExtensions.IndexOfAny<T>(Span<T>, IndexOfAnyValues<T>)`
+- `System.MemoryExtensions.IndexOfAnyExcept<T>(ReadOnlySpan<T>, IndexOfAnyValues<T>)`
+- `System.MemoryExtensions.IndexOfAnyExcept<T>(Span<T>, IndexOfAnyValues<T>)`

@@ -2,7 +2,7 @@
 title: Migrate UWP to Windows App SDK with the .NET Upgrade Assistant
 description: The .NET Upgrade Assistant is a Visual Studio extension (preferred), and a command-line tool, that's designed to assist with upgrading apps to the latest version of .NET.
 author: adegeo
-ms.date: 09/02/2023
+ms.date: 06/02/2023
 ---
 
 # Migrate from UWP to the Windows App SDK with the .NET Upgrade Assistant

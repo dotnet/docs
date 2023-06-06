@@ -13,10 +13,7 @@ This is a breaking change in the following situations:
 
 - If you rely on the IL Link tool. In this case, you'll have to take the steps described under [Recommended action](#recommended-action) to use IL Link again.
 
-  > [!NOTE]
-  > Some publish properties, like `PublishTrimmed`, `PublishSingleFile`, and `PublishAot`, currently require `SelfContained` to work. If you use these properties, you'll need to add the `SelfContained` property.
-
-- For Blazor WebAssembly apps, because they relied on the previous behavior. However, the Blazor WASM team may side-step this breaking change in their SDK by adding `SelfContained` automatically for all apps, so Blazor customers shouldn't be affected.
+Blazor WebAssembly apps relied on the previous behavior. However, the Blazor SDK now adds `SelfContained` automatically for all apps, so Blazor customers shouldn't be affected.
 
 ## Previous behavior
 
@@ -24,7 +21,7 @@ Previously, if a runtime identifier (RID) was specified (via [RuntimeIdentifier]
 
 In addition:
 
-- The publish properties `PublishTrimmed`, `PublishSingleFile`, and `PublishAot` implied `PublishSelfContained` and therefore `SelfContained` during operations including build, restore, and publish.
+- If `PublishSelfContained` wasn't explicitly set to `false`, the publish properties `PublishSingleFile` and `PublishAot` implied `PublishSelfContained` and therefore `SelfContained` during operations including `dotnet build`, `dotnet restore`, and `dotnet publish`.
 - The `PublishTrimmed` property did not imply `SelfContained`.
 - The `PublishReadyToRun` property implied `SelfContained` if `SelfContained` wasn't specified.
 
@@ -34,9 +31,12 @@ Starting in .NET 8, for apps that target .NET 8 or a later version, `RuntimeIden
 
 In addition:
 
-- The publish properties `PublishTrimmed`, `PublishSingleFile`, and `PublishAot` now imply `SelfContained` during a publish operation only (that is, not for build or restore).
-- The `PublishTrimmed` property also now implies `SelfContained` during publish.
+- If `PublishSelfContained` isn't explicitly set to `false`, the publish properties `PublishTrimmed`, `PublishSingleFile`, and `PublishAot` now imply `SelfContained` during `dotnet publish` only (that is, not for `dotnet build` or `dotnet restore`).
+- The `PublishTrimmed` property also now implies `SelfContained` during `dotnet publish`.
 - The `PublishReadyToRun` property no longer implies `SelfContained` if the project targets .NET 8 or later.
+
+> [!NOTE]
+> If you publish using `msbuild t:/Publish`, the publish properties don't imply `SelfContained`.
 
 ## Version introduced
 
@@ -50,6 +50,7 @@ This change can affect [source compatibility](../../categories.md#source-compati
 
 - The new .NET SDK behavior aligns with Visual Studio behavior.
 - Framework-dependent apps are now smaller by default, since there aren't copies of .NET stored in each app.
+- When .NET is managed outside of the app (that is, for framework-dependent deployments), .NET stays more secure and up-to-date. Apps that have their own copy of the runtime don't get security updates. This change makes more apps framework-dependent by default.
 - Ideally, command-line options are orthogonal. In this case, the tooling supports both RID-specific self-contained deployment (SCD) and RID-specific framework-dependent deployment (FDD). So it didn't make sense that no RID defaulted to FDD and RID defaulted to SCD. This behavior was often confusing for users.
 
 .NET 6 alerted users to this breaking change with the following warning:

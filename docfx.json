@@ -47,8 +47,6 @@
             },
             {
                 "files": [
-                    "csharp-7.2/*.md",
-                    "csharp-7.3/*.md",
                     "csharp-8.0/*.md",
                     "csharp-9.0/*.md",
                     "csharp-10.0/*.md",
@@ -64,22 +62,6 @@
                     "inactive/**",
                     "rejected/**",
                     "csharp-6.0/enum-base-type.md",
-                    "csharp-7.2/leading-separator.md",
-                    "csharp-7.2/readonly-struct.md",
-                    "csharp-7.2/ref-struct-and-span.md",
-                    "csharp-7.2/ref-extension-methods.md",
-                    "csharp-7.2/non-trailing-named-arguments.md",
-                    "csharp-7.2/private-protected.md",
-                    "csharp-7.2/private-protected.md",
-                    "csharp-7.3/auto-prop-field-attrs.md",
-                    "csharp-7.3/enum-delegate-constraints.md",
-                    "csharp-7.3/improved-overload-candidates.md",
-                    "csharp-7.3/ref-loops.md",
-                    "csharp-7.3/blittable.md",
-                    "csharp-7.3/indexing-movable-fixed-fields.md",
-                    "csharp-7.3/pattern-based-fixed.md",
-                    "csharp-7.3/expression-variables-in-initializers.md",
-                    "csharp-7.3/tuple-equality.md",
                     "csharp-8.0/alternative-interpolated-verbatim.md",
                     "csharp-8.0/async-using.md",
                     "csharp-8.0/constraints-in-overrides.md",
@@ -132,15 +114,6 @@
             }
         ],
         "externalReference": [],
-        "rules": {
-            "docs-link-absolute": {
-                "exclude": [
-                    "_csharplang/proposals/csharp-7.1/target-typed-default.md",
-                    "_csharplang/proposals/csharp-7.2/readonly-struct.md",
-                    "_csharplang/proposals/csharp-7.2/non-trailing-named-arguments.md"
-                ]
-            }
-        },
         "globalMetadata": {
             "apiPlatform": "dotnet",
             "author": "dotnet-bot",
@@ -491,8 +464,6 @@
             },
             "ms.date": {
                 "_csharpstandard/standard/*.md": "01/10/2021",
-                "_csharplang/proposals/csharp-7.2/*.md": "01/19/2019",
-                "_csharplang/proposals/csharp-7.3/*.md": "11/25/2018",
                 "_csharplang/proposals/csharp-8.0/*.md": "09/10/2019",
                 "_csharplang/proposals/csharp-9.0/*.md": "07/29/2020",
                 "_csharplang/proposals/csharp-10.0/*.md": "08/07/2021",
@@ -638,11 +609,6 @@
                 "_csharpstandard/standard/standard-library.md": "Standard library",
                 "_csharpstandard/standard/documentation-comments.md": "Documentation comments",
                 "_csharpstandard/standard/Bibliography.md": "Bibliography",
-                "_csharplang/proposals/csharp-7.2/readonly-ref.md": "Readonly references",
-                "_csharplang/proposals/csharp-7.2/span-safety.md": "Compile time safety for ref-like types",
-                "_csharplang/proposals/csharp-7.2/conditional-ref.md": "Conditional ref",
-                "_csharplang/proposals/csharp-7.3/ref-local-reassignment.md": "Ref local reassignment",
-                "_csharplang/proposals/csharp-7.3/stackalloc-array-initializers.md": "Stackalloc array initializers",
                 "_csharplang/proposals/csharp-8.0/nullable-reference-types.md": "Null reference types - proposal",
                 "_csharplang/proposals/csharp-8.0/patterns.md": "Recursive pattern matching",
                 "_csharplang/proposals/csharp-8.0/default-interface-methods.md": "Default interface methods",
@@ -753,11 +719,6 @@
                 "_csharpstandard/standard/standard-library.md": "This appendix lists requirements of the standard library. The C# language relies on these types for some of its behavior.",
                 "_csharpstandard/standard/documentation-comments.md": "This appendix describes XML comments that are used to document your program.",
                 "_csharpstandard/standard/Bibliography.md": "This appendix lists external standards referenced in this specification.",
-                "_csharplang/proposals/csharp-7.2/readonly-ref.md": "This feature specification describes how to create readonly references to variables. This includes the 'readonly' modifier on variables, and the 'in' modifier on parameters and arguments.",
-                "_csharplang/proposals/csharp-7.2/span-safety.md": "This feature specification describes the rules that govern 'ref struct' declarations and their use.",
-                "_csharplang/proposals/csharp-7.2/conditional-ref.md": "This feature specification describes the syntax enhancements for using 'ref' with '?:' expressions",
-                "_csharplang/proposals/csharp-7.3/ref-local-reassignment.md": "This feature specification describes syntax enhancements that enable ref local variables to be assigned to refer to different storage after being initialized.",
-                "_csharplang/proposals/csharp-7.3/stackalloc-array-initializers.md": "This feature specification describes the syntax that enables arrays to be declared using the 'stackalloc' keyword.",
                 "_csharplang/proposals/csharp-8.0/nullable-reference-types.md": "This feature specification describes nullable reference types.",
                 "_csharplang/proposals/csharp-8.0/patterns.md": "This feature specification describes recursive pattern matching, where patterns can nest inside other patterns.",
                 "_csharplang/proposals/csharp-8.0/default-interface-methods.md": "This feature specification describe the syntax updates necessary to support default interface methods. This includes declaring bodies in interface declarations, and supporting modifiers on declarations.",
@@ -837,8 +798,6 @@
             },
             "titleSuffix": {
                 "_csharpstandard/standard/*.md": "C# language specification",
-                "_csharplang/proposals/csharp-7.2/*.md": "C# 7.2 draft feature specifications",
-                "_csharplang/proposals/csharp-7.3/*.md": "C# 7.3 draft feature specifications",
                 "_csharplang/proposals/csharp-8.0/*.md": "C# 8.0 draft feature specifications",
                 "_csharplang/proposals/csharp-9.0/*.md": "C# 9.0 draft feature specifications",
                 "_csharplang/proposals/csharp-10.0/*.md": "C# 10.0 draft feature specifications",

@@ -3,51 +3,28 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using GrainInterfaces;
 
-try
-{
-    using IHost host = await StartClientAsync();
-    var client = host.Services.GetRequiredService<IClusterClient>();
+IHostBuilder builder = Host.CreateDefaultBuilder(args)
+    .UseOrleansClient(client =>
+    {
+        client.UseLocalhostClustering();
+    })
+    .ConfigureLogging(logging => logging.AddConsole())
+    .UseConsoleLifetime();
 
-    await DoClientWorkAsync(client);
-    Console.ReadKey();
+using IHost host = builder.Build();
+await host.StartAsync();
 
-    await host.StopAsync();
+IClusterClient client = host.Services.GetRequiredService<IClusterClient>();
 
-    return 0;
-}
-catch (Exception e)
-{
-    Console.WriteLine($"""
-        Exception while trying to run client: {e.Message}
-        Make sure the silo the client is trying to connect to is running.
-        Press any key to exit.
-        """);
-    
-    Console.ReadKey();
-    return 1;
-}
+IHello friend = client.GetGrain<IHello>(0);
+string response = await friend.SayHello("Hi friend!");
 
-static async Task<IHost> StartClientAsync()
-{
-    var builder = new HostBuilder()
-        .UseOrleansClient(client =>
-        {
-            client.UseLocalhostClustering();
-        })
-        .ConfigureLogging(logging => logging.AddConsole());
+Console.WriteLine($"""
+    {response}
 
-    var host = builder.Build();
-    await host.StartAsync();
+    Press any key to exit...
+    """);
 
-    Console.WriteLine("Client successfully connected to silo host \n");
+Console.ReadKey();
 
-    return host;
-}
-
-static async Task DoClientWorkAsync(IClusterClient client)
-{
-    var friend = client.GetGrain<IHello>(0);
-    var response = await friend.SayHello("Good morning, HelloGrain!");
-
-    Console.WriteLine($"\n\n{response}\n\n");
-}
+await host.StopAsync();

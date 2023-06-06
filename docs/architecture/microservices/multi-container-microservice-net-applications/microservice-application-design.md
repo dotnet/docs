@@ -159,7 +159,7 @@ There are many architectural patterns used by software architects and developers
 
 - [Domain-Driven Design N-layered](https://devblogs.microsoft.com/cesardelatorre/published-first-alpha-version-of-domain-oriented-n-layered-architecture-v2-0/).
 
-- [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) (as used with [eShopOnWeb](https://aka.ms/WebAppArchitecture))
+- [Clean Architecture](https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures#clean-architecture) (as used with [eShopOnWeb](https://aka.ms/WebAppArchitecture))
 
 - [Command and Query Responsibility Segregation](https://martinfowler.com/bliki/CQRS.html) (CQRS).
 

@@ -76,6 +76,8 @@ items:
         href: reflection/8.0/function-pointer-reflection.md
     - name: SDK
       items:
+      - name: .NET tool roll-forward behavior
+        href: sdk/8.0/tool-rollforward.md
       - name: CLI console output uses UTF-8
         href: sdk/8.0/console-encoding.md
       - name: Console encoding not UTF-8 after completion
@@ -1352,6 +1354,8 @@ items:
     items:
     - name: .NET 8
       items:
+      - name: .NET tool roll-forward behavior
+        href: sdk/8.0/tool-rollforward.md
       - name: CLI console output uses UTF-8
         href: sdk/8.0/console-encoding.md
       - name: Console encoding not UTF-8 after completion

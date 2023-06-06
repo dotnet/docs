@@ -13,7 +13,7 @@ In F#, the access control specifiers `public`, `internal`, and `private` can be 
 
 - `public` indicates that the entity can be accessed by all callers.
 
-- `internal` indicates that the entity can be accessed only from the same assembly.
+- `internal` indicates that the entity can be accessed only from the same [assembly](../../standard/assembly/index.md).
 
 - `private` indicates that the entity can be accessed only from the enclosing type or module.
 

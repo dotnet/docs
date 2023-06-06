@@ -66,6 +66,10 @@ items:
         href: globalization/8.0/typeconverter-cultureinfo.md
       - name: TwoDigitYearMax default is 2049
         href: globalization/8.0/twodigityearmax-default.md
+    - name: Interop
+      items:
+      - name: SafeHandle types must have public constructor
+        href: interop/8.0/safehandle-constructor.md
     - name: Reflection
       items:
       - name: IntPtr no longer used for function pointer types
@@ -1268,6 +1272,10 @@ items:
       href: globalization.md
   - name: Interop
     items:
+    - name: .NET 8
+      items:
+      - name: SafeHandle types must have public constructor
+        href: interop/8.0/safehandle-constructor.md
     - name: .NET 7
       items:
       - name: RuntimeInformation.OSArchitecture under emulation

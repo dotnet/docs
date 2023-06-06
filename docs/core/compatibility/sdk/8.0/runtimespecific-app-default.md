@@ -13,15 +13,13 @@ This is a breaking change in the following situations:
 
 - If you rely on the IL Link tool. In this case, you'll have to take the steps described under [Recommended action](#recommended-action) to use IL Link again.
 
-Blazor WebAssembly apps relied on the previous behavior. However, the Blazor SDK now adds `SelfContained` automatically for all apps, so Blazor customers shouldn't be affected.
-
 ## Previous behavior
 
 Previously, if a runtime identifier (RID) was specified (via [RuntimeIdentifier](../../../project-sdk/msbuild-props.md#runtimeidentifier)), the app was published as self-contained, even if `SelfContained` wasn't explicitly specified.
 
 In addition:
 
-- If `PublishSelfContained` wasn't explicitly set to `false`, the publish properties `PublishSingleFile` and `PublishAot` implied `PublishSelfContained` and therefore `SelfContained` during operations including `dotnet build`, `dotnet restore`, and `dotnet publish`.
+- If `PublishSelfContained` wasn't explicitly set to `false`, the publish properties `PublishSingleFile` and `PublishAot` implied `PublishSelfContained` and therefore `SelfContained` (if it wasn't specified) during operations including `dotnet build`, `dotnet restore`, and `dotnet publish`.
 - The `PublishTrimmed` property did not imply `SelfContained`.
 - The `PublishReadyToRun` property implied `SelfContained` if `SelfContained` wasn't specified.
 
@@ -31,12 +29,12 @@ Starting in .NET 8, for apps that target .NET 8 or a later version, `RuntimeIden
 
 In addition:
 
-- If `PublishSelfContained` isn't explicitly set to `false`, the publish properties `PublishSingleFile` and `PublishAot` now imply `SelfContained` during `dotnet publish` only (that is, not for `dotnet build` or `dotnet restore`).
+- If `PublishSelfContained` isn't explicitly set to `false`, the publish properties `PublishSingleFile` and `PublishAot` now imply `SelfContained` (if it's not specified) during `dotnet publish` only (that is, not for `dotnet build` or `dotnet restore`).
 - The `PublishTrimmed` property also now implies `SelfContained` during `dotnet publish`.
 - The `PublishReadyToRun` property no longer implies `SelfContained` if the project targets .NET 8 or later.
 
 > [!NOTE]
-> If you publish using `msbuild t:/Publish`, the publish properties don't imply `SelfContained`.
+> If you publish using `msbuild t:/Publish`, the listed publish properties don't imply `SelfContained`.
 
 ## Version introduced
 
@@ -61,13 +59,13 @@ Now that customers have had time to add `SelfContained` explicitly, it's okay to
 
 ## Recommended action
 
-If you're using .NET 7 or an earlier version and relied on the previous behavior where `SelfContained` was inferred, you'll see this warning:
+- If you're using .NET 7 or an earlier version and relied on the previous behavior where `SelfContained` was inferred, you'll see this warning:
 
-**For projects with TargetFrameworks >= 8.0, RuntimeIdentifier no longer automatically gives a SelfContained app. To continue creating a .NET framework independent app after upgrading to 8.0, consider setting SelfContained explicitly.**
+  **For projects with TargetFrameworks >= 8.0, RuntimeIdentifier no longer automatically gives a SelfContained app. To continue creating a .NET framework independent app after upgrading to 8.0, consider setting SelfContained explicitly.**
 
-Follow the guidance of the warning if you want to continue to produce self-contained apps. If you want to move to the new default, set `SelfContained` to `false` in the project file (`<SelfContained>false</SelfContained>`) or as a command-line argument, for example, `dotnet publish --no-self-contained`.
+  Follow the guidance of the warning and set `SelfContained` to `true` in the project file (`<SelfContained>true</SelfContained>`) or as a command-line argument, for example, `dotnet publish --self-contained`.
 
-If you're using .NET 8, you don't need to do anything unless you want to keep the previous behavior. In that case, set `SelfContained` to `true`.
+- If you're using .NET 8 and want to keep the previous behavior, set `SelfContained` to `true`.
 
 ## See also
 

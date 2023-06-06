@@ -9,7 +9,7 @@ Runtime-specific apps, or .NET apps with a `RuntimeIdentifier`, are no longer [s
 
 This is a breaking change in the following situations:
 
-- If you deployed, distributed, or published your app and didn't explicitly add the `SelfContained` property, but also didn't require that the .NET runtime be installed on the machine for it to work. In this case, you may have relied on the previous behavior to produce a non-framework-dependent app by default.
+- If you deployed, distributed, or published your app and didn't explicitly add the `SelfContained` property, but also didn't require that the .NET runtime be installed on the machine for it to work. In this case, you may have relied on the previous behavior to produce a self-contained app by default.
 
 - If you rely on the IL Link tool. In this case, you'll have to take the steps described under [Recommended action](#recommended-action) to use IL Link again.
 
@@ -31,7 +31,7 @@ Starting in .NET 8, for apps that target .NET 8 or a later version, `RuntimeIden
 
 In addition:
 
-- If `PublishSelfContained` isn't explicitly set to `false`, the publish properties `PublishTrimmed`, `PublishSingleFile`, and `PublishAot` now imply `SelfContained` during `dotnet publish` only (that is, not for `dotnet build` or `dotnet restore`).
+- If `PublishSelfContained` isn't explicitly set to `false`, the publish properties `PublishSingleFile` and `PublishAot` now imply `SelfContained` during `dotnet publish` only (that is, not for `dotnet build` or `dotnet restore`).
 - The `PublishTrimmed` property also now implies `SelfContained` during `dotnet publish`.
 - The `PublishReadyToRun` property no longer implies `SelfContained` if the project targets .NET 8 or later.
 
@@ -49,7 +49,7 @@ This change can affect [source compatibility](../../categories.md#source-compati
 ## Reason for change
 
 - The new .NET SDK behavior aligns with Visual Studio behavior.
-- Framework-dependent apps are now smaller by default, since there aren't copies of .NET stored in each app.
+- Framework-dependent apps are smaller by default, since there aren't copies of .NET stored in each app.
 - When .NET is managed outside of the app (that is, for framework-dependent deployments), .NET stays more secure and up-to-date. Apps that have their own copy of the runtime don't get security updates. This change makes more apps framework-dependent by default.
 - Ideally, command-line options are orthogonal. In this case, the tooling supports both RID-specific self-contained deployment (SCD) and RID-specific framework-dependent deployment (FDD). So it didn't make sense that no RID defaulted to FDD and RID defaulted to SCD. This behavior was often confusing for users.
 

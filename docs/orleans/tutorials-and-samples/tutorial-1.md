@@ -8,7 +8,7 @@ ms.date: 06/06/2023
 
 In this tutorial, you follow step-by-step instructions to create foundational moving parts common to most Orleans applications. It's designed to be self-contained and minimalistic.
 
-This tutorial lacks appropriate error handling and other essential code that would be useful for a production environment. However, it should help readers get a hands-on understanding of the common app structure for Orleans and allow them to focus their continued learning on the parts most relevant to them.
+This tutorial lacks appropriate error handling and other essential code that would be useful for a production environment. However, it should help you get a hands-on understanding of the common app structure for Orleans and allow you to focus your continued learning on the parts most relevant to you.
 
 ## Prerequisites
 
@@ -53,7 +53,7 @@ Replace the default code with the code given for each project.
 | Grain Interfaces | `Microsoft.Orleans.Sdk` |
 | Grains | `Microsoft.Orleans.Sdk`<br>`Microsoft.Extensions.Logging.Abstractions` |
 
-`Microsoft.Orleans.Server`, `Microsoft.Orleans.Client` and `Microsoft.Orleans.Sdk` are meta-packages that bring dependencies that you'll most likely need on the Silo and client. For more information on adding package references, see [dotnet add package](../../core/tools/dotnet-add-package.md) or [Install and manage packages in Visual Studio using the NuGet Package Manage](/nuget/consume-packages/install-use-packages-visual-studio).
+`Microsoft.Orleans.Server`, `Microsoft.Orleans.Client` and `Microsoft.Orleans.Sdk` are metapackages that bring dependencies that you'll most likely need on the Silo and client. For more information on adding package references, see [dotnet add package](../../core/tools/dotnet-add-package.md) or [Install and manage packages in Visual Studio using the NuGet Package Manager](/nuget/consume-packages/install-use-packages-visual-studio).
 
 ## Define a grain interface
 
@@ -69,7 +69,7 @@ In the **Grains** project, add a _HelloGrain.cs_ code file and define the follow
 
 ### Create the Silo
 
-To create the Silo project, add code to initialize a server that hosts and runs the grains&mdash;a silo. You use the localhost clustering provider, which allows you to run everything locally, without a dependency on external storage systems. For more information, see [Local Development Configuration](../host/configuration-guide/local-development-configuration.md). In this example, you run a cluster with a single Silo in it.
+To create the Silo project, add code to initialize a server that hosts and runs the grains&mdash;a silo. You use the localhost clustering provider, which allows you to run everything locally, without a dependency on external storage systems. For more information, see [Local Development Configuration](../host/configuration-guide/local-development-configuration.md). In this example, you run a cluster with a single silo in it.
 
 Add the following code to _Program.cs_ of the **Silo** project:
 
@@ -77,7 +77,7 @@ Add the following code to _Program.cs_ of the **Silo** project:
 
 The preceding code:
 
-- Configures the <xref:Microsoft.Extensions.Hosting.IHost> to use Orleans with the <xref:Microsoft.Extensions.Hosting.GenericHostExtensions.UseOrleans%2A>.
+- Configures the <xref:Microsoft.Extensions.Hosting.IHost> to use Orleans with the <xref:Microsoft.Extensions.Hosting.GenericHostExtensions.UseOrleans%2A> method.
 - Specifies that the localhost clustering provider should be used with the <xref:Orleans.Hosting.CoreHostingExtensions.UseLocalhostClustering(Orleans.Hosting.ISiloBuilder,System.Int32,System.Int32,System.Net.IPEndPoint,System.String,System.String)> method.
 - Runs the `host` and waits for the process to terminate, by listening for <kbd>Ctrl</kbd>+<kbd>C</kbd> or `SIGTERM`.
 
@@ -97,7 +97,7 @@ To start the Silo from the command line, run the following command from the dire
 dotnet run
 ```
 
-You'll see numerous outputs as part of the startup of the Silo, after seeing the following message you're ready to run the client:
+You'll see numerous outputs as part of the startup of the Silo. After seeing the following message you're ready to run the client:
 
 ```Output
 Application started. Press Ctrl+C to shut down.

@@ -3,13 +3,13 @@ title: Create a Windows Service installer
 description: Learn how to create a Windows Service installer project.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/06/2023
+ms.date: 06/07/2023
 ms.topic: tutorial
 ---
 
 # Create a Windows Service installer
 
-When you create a .NET Windows Service (not to be mistaken with a .NET Framework Windows Service), you may want to create an installer for your service. Without an installer, users would have to know how to install and configure your service. An installer bundles your app's executables and exposes a customizable installation user experience.
+When you create a .NET Windows Service (not to be mistaken with a .NET Framework Windows Service), you may want to create an installer for your service. Without an installer, users would have to know how to install and configure your service. An installer bundles your app's executables and exposes a customizable installation user experience. This tutorial is a continuation of the [Create a Windows Service](windows-service.md) tutorial, and will show you how to create an installer for your .NET Windows Service.
 
 In this tutorial, you'll learn how to:
 
@@ -22,6 +22,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
+- You're expected to have completed the [Create a Windows Service](windows-service.md) tutorial, or be prepared to clone it from the sample repo.
 - The [.NET 6.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
 - A Windows OS
 - A .NET integrated development environment (IDE)
@@ -86,10 +87,9 @@ if (args is { Length: 1 })
     catch (Exception ex)
     {
         Console.WriteLine(ex);
-        return 1;
     }
 
-    return 0;
+    return;
 }
 ```
 
@@ -113,7 +113,7 @@ Select **Setup Project** from the available templates, then select **Next**. Pro
 
 ### Configure installer project
 
-To configure the install project, select the project in the **Solution Explorer**. Select <kbd>F4</kbd> to open the project properties pane. You can configure the app's "add" and "remove" icons, author, manufacturer, product name, title, target platform, and so on.
+To configure the installer project, select the project in the **Solution Explorer**. Select <kbd>F4</kbd> to open the project properties pane. You can configure the app's "add" and "remove" icons, author, manufacturer, product name, title, target platform, and so on.
 
 :::image type="content" source="media/workers/f4-installer-properties.png" alt-text="Installer project properties pane.":::
 

@@ -19,7 +19,7 @@ Previously, if a runtime identifier (RID) was specified (via [RuntimeIdentifier]
 
 In addition:
 
-- If `PublishSelfContained` wasn't explicitly set to `false`, the publish properties `PublishSingleFile` and `PublishAot` implied `PublishSelfContained` and therefore `SelfContained` (if it wasn't specified) during operations including `dotnet build`, `dotnet restore`, and `dotnet publish`.
+- If `PublishSelfContained` wasn't explicitly set to `false`, the publish properties `PublishSingleFile` and `PublishAot` implied a `RuntimeIdentifier` and therefore `SelfContained` (if it wasn't specified) during operations including `dotnet build`, `dotnet restore`, and `dotnet publish`.
 - The `PublishTrimmed` property did not imply `SelfContained`.
 - The `PublishReadyToRun` property implied `SelfContained` if `SelfContained` wasn't specified.
 

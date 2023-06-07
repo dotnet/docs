@@ -22,9 +22,13 @@
         if (disposing)
         {
             _disposableResource?.Dispose();
-            (_asyncDisposableResource as IDisposable)?.Dispose();
             _disposableResource = null;
-            _asyncDisposableResource = null;
+
+            if (_asyncDisposableResource is IDisposable disposable)
+            {
+                disposable.Dispose();
+                _asyncDisposableResource = null;
+            }
         }
     }
 

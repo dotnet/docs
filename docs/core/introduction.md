@@ -49,7 +49,7 @@ recommendations: false
 * [Garbage collection](../standard/automatic-memory-management.md)
 * [Generic types](../standard/generics.md)
 * [LINQ (Language Integrated Query)](../standard/linq/index.md).
-* [Parallel programming](../standard/parallel-programming/index.md)
+* [Parallel programming](../standard/parallel-programming/index.md) and [Managed threading](../standard/threading/managed-threading-basics.md)
 * Type inference - [C#](../csharp/fundamentals/types/index.md#specifying-types-in-variable-declarations), [F#](../fsharp/language-reference/type-inference.md), [Visual Basic](../visual-basic/programming-guide/language-features/variables/local-type-inference.md).
 * [Type system](../standard/base-types/common-type-system.md)
 * [Unsafe code](../csharp/language-reference/unsafe-code.md)

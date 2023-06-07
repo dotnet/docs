@@ -106,6 +106,8 @@ In the `Dispose(bool)` overload method, the <xref:System.IDisposable> instance i
 
 With the `DisposeAsyncCore()` method, the same logical approach is followed. If the <xref:System.IAsyncDisposable> instance isn't `null`, its call to `DisposeAsync().ConfigureAwait(false)` is awaited. If the <xref:System.IDisposable> instance is also an implementation of <xref:System.IAsyncDisposable>, it's also disposed of asynchronously. Both instances are then assigned to `null`.
 
+Each implementation strives to dispose of all possible disposable objects. This ensures that the cleanup is cascaded properly.
+
 ## Using async disposable
 
 To properly consume an object that implements the <xref:System.IAsyncDisposable> interface, you use the [await](../../csharp/language-reference/operators/await.md) and [using](../../csharp/language-reference/statements/using.md) keywords together. Consider the following example, where the `ExampleAsyncDisposable` class is instantiated and then wrapped in an `await using` statement.

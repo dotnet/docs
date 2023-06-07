@@ -117,7 +117,7 @@ For RBAC-enabled clusters, the Kubernetes service account for the pods may also 
 kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: pod-reader
+  name: orleans-hosting
 rules:
 - apiGroups: [ "" ]
   resources: ["pods"]
@@ -126,14 +126,14 @@ rules:
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: pod-reader-binding
+  name: orleans-hosting-binding
 subjects:
 - kind: ServiceAccount
   name: default
   apiGroup: ''
 roleRef:
   kind: Role
-  name: pod-reader
+  name: orleans-hosting
   apiGroup: ''
 ```
 

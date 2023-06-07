@@ -339,3 +339,4 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1190|To use '{0}' in solution projects, you must set the environment variable '{1}' (to true). This will increase the time to complete the operation.|
 |NETSDK1191|A runtime identifier for the property '{0}' couldn't be inferred. Specify a rid explicitly.|
 |NETSDK1192|Targeting .NET 7.0 or higher in Visual Studio 2022 17.3 is not supported.|
+|[NETSDK1195](netsdk1195.md)|Trimming, or code compatibility analysis for trimming, single-file deployment, or ahead-of-time compilation is not supported for the target framework. For more information, see <https://aka.ms/netsdk1195>|

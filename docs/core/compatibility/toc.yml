@@ -86,6 +86,8 @@ items:
         href: sdk/8.0/dotnet-pack-config.md
       - name: "'dotnet publish' uses Release configuration"
         href: sdk/8.0/dotnet-publish-config.md
+      - name: Runtime-specific apps not self-contained
+        href: sdk/8.0/runtimespecific-app-default.md
     - name: Serialization
       items:
       - name: BinaryFormatter disabled for most projects
@@ -1364,6 +1366,8 @@ items:
         href: sdk/8.0/dotnet-pack-config.md
       - name: "'dotnet publish' uses Release configuration"
         href: sdk/8.0/dotnet-publish-config.md
+      - name: Runtime-specific apps not self-contained
+        href: sdk/8.0/runtimespecific-app-default.md
     - name: .NET 7
       items:
       - name: Automatic RuntimeIdentifier for certain projects

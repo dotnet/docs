@@ -12,7 +12,7 @@ This tutorial lacks appropriate error handling and other essential code that wou
 
 ## Prerequisites
 
-- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Code](https://code.visualstudio.com/download) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) installed.
+- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads)
 - [.NET 7.0 SDK or later](https://dotnet.microsoft.com/download/dotnet/7.0)
 
 ## Project setup
@@ -28,7 +28,7 @@ For this tutorial you're going to create four projects as part of the same solut
 
 Replace the default code with the code given for each project.
 
-1. Start by creating a Console App project in a new solution. Call the project part `Silo` and name the solution `OrleansHelloWorld`. For more information on creating a console app, see [Tutorial: Create a .NET console application using Visual Studio](../../core/tutorials/with-visual-studio.md).
+1. Start by creating a Console App project in a new solution. Call the project part silo and name the solution `OrleansHelloWorld`. For more information on creating a console app, see [Tutorial: Create a .NET console application using Visual Studio](../../core/tutorials/with-visual-studio.md).
 1. Add another Console App project and name it `Client`.
 1. Add a Class Library and name it `GrainInterfaces`. For information on creating a class library, see [Tutorial: Create a .NET class library using Visual Studio](../../core/tutorials/library-with-visual-studio.md).
 1. Add another Class Library and name it `Grains`.

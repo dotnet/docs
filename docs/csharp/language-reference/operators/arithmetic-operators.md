@@ -286,7 +286,7 @@ For more information, see the following sections of the [C# language specificati
 - [Remainder operator](~/_csharpstandard/standard/expressions.md#12104-remainder-operator)
 - [Addition operator](~/_csharpstandard/standard/expressions.md#12105-addition-operator)
 - [Subtraction operator](~/_csharpstandard/standard/expressions.md#12106-subtraction-operator)
-- [Compound assignment](~/_csharpstandard/standard/expressions.md#12213-compound-assignment)
+- [Compound assignment](~/_csharpstandard/standard/expressions.md#12214-compound-assignment)
 - [The checked and unchecked operators](~/_csharpstandard/standard/expressions.md#12819-the-checked-and-unchecked-operators)
 - [Numeric promotions](~/_csharpstandard/standard/expressions.md#1247-numeric-promotions)
 

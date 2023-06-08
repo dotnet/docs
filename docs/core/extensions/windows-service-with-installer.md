@@ -9,7 +9,7 @@ ms.topic: tutorial
 
 # Create a Windows Service installer
 
-When you create a .NET Windows Service (not to be mistaken with a .NET Framework Windows Service), you may want to create an installer for your service. Without an installer, users would have to know how to install and configure your service. An installer bundles your app's executables and exposes a customizable installation user experience. This tutorial is a continuation of the [Create a Windows Service](windows-service.md) tutorial, and will show you how to create an installer for your .NET Windows Service.
+When you create a .NET Windows Service (not to be mistaken with a .NET Framework Windows Service), you may want to create an installer for your service. Without an installer, users would have to know how to install and configure your service. An installer bundles your app's executables and exposes a customizable installation user experience. This tutorial is a continuation of the [Create a Windows Service](windows-service.md) tutorial. It shows how to create an installer for your .NET Windows Service.
 
 In this tutorial, you'll learn how to:
 
@@ -22,7 +22,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-- You're expected to have completed the [Create a Windows Service](windows-service.md) tutorial, or be prepared to clone it from the sample repo.
+- You're expected to have completed the [Create a Windows Service](windows-service.md) tutorial, or be prepared to clone the sample repo.
 - The [.NET 6.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
 - A Windows OS
 - A .NET integrated development environment (IDE)
@@ -154,7 +154,7 @@ Select **Setup Project** from the available templates, then select **Next**. Pro
 
 To configure the setup project, you first must add a reference to the `App.WindowsService` project. Right-click the setup project in the **Solution Explorer**, and then select **Add > Project Reference**.
 
-The template includes an example component and localization files, delete these, leaving only the _Package.wxs_ file. Your project should now include a `ProjectReference` element, similar to the following:
+The template includes example component and localization files. Delete these, files leaving only the _Package.wxs_ file. Your project should now include a `ProjectReference` element, similar to the following:
 
 ```xml
 <Project Sdk="WixToolset.Sdk/4.0.0">
@@ -164,7 +164,7 @@ The template includes an example component and localization files, delete these,
 </Project>
 ```
 
-After the project reference has been added, you configure the _Package.wxs_ file. Open the file in the editor, and then replace the contents with the following:
+After the project reference has been added, configure the _Package.wxs_ file. Open the file in the editor, and then replace the contents with the following:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

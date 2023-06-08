@@ -45,7 +45,7 @@ macOS
 - unix-x64
 - unix
 
-For non-portable builds of the host/runtime, the build might also set a non-portable RID that is checked first.
+For non-portable builds of the host or runtime, the build might also set a non-portable RID that's checked first.
 
 ## Version introduced
 

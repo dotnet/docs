@@ -3,7 +3,7 @@ title: Create a Windows Service installer
 description: Learn how to create a Windows Service installer project.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/07/2023
+ms.date: 06/08/2023
 ms.topic: tutorial
 ---
 
@@ -29,15 +29,35 @@ In this tutorial, you'll learn how to:
   - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
 - An existing .NET Windows Service
 
-## Install the extension
+## Install tooling dependencies
+
+# [Wix Toolset](#tab/wix)
+
+Start by installing the Wix Toolset. The Wix Toolset is a set of tools that build Windows installation packages from XML source code.
+
+```dotnetcli
+dotnet tool install --global wix
+```
+
+Next, install the [HeatWave for VS2022 extension](https://marketplace.visualstudio.com/items?itemName=FireGiant.FireGiantHeatWaveDev17). After installing, restart Visual Studio and you'll see new project templates available.
+
+# [Microsoft installer extension](#tab/ext)
 
 Install the [Microsoft Visual Studio Installer Projects extension](https://marketplace.visualstudio.com/items?itemName=VisualStudioClient.MicrosoftVisualStudio2022InstallerProjects). After installing, restart Visual Studio and you'll see new project templates available.
 
-## Update existing project
+---
 
-This tutorial is based on the app created as part of the [Create a Windows Service using `BackgroundService`](windows-service.md) tutorial. You can either clone the sample repo or use the app you built in the previous tutorial.
+## Get existing project
+
+This tutorial is based on the app created as part of the [Create a Windows Service using BackgroundService](windows-service.md) tutorial. You can either clone the sample repo or use the app you built in the previous tutorial.
 
 [!INCLUDE [workers-samples-browser](includes/workers-samples-browser.md)]
+
+# [Wix Toolset](#tab/wix)
+
+Open the solution in Visual Studio, and select <kbd>F5</kbd> to ensure that the app builds and runs as expected. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app.
+
+# [Microsoft installer extension](#tab/ext)
 
 Open the solution in Visual Studio, and select <kbd>F5</kbd> to ensure that the app builds and runs as expected. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app.
 
@@ -103,7 +123,22 @@ The preceding code:
 
 When no installation switches are present, the app behaves as it did before, but it now includes installation functionality.
 
+> [!NOTE]
+> Defining custom actions, and manually handling installation switches is considered an anti-pattern. While this documentation demonstrates how to do it, you might want to consider using the third-party Wix Toolset instead.
+
+---
+
 ## Add new setup project
+
+# [Wix Toolset](#tab/wix)
+
+To add a new Wix setup project, right-click on the solution in the **Solution Explorer** and select **Add > New Project**:
+
+:::image type="content" source="media/workers/new-wix-setup-project.png" alt-text="Add new project dialog: New MSI Package (Wix v4) Project.":::
+
+Select **MSI Package (Wix v4)** from the available templates, then select **Next**. Provide the desired **Name** and **Location**, then select **Create**.
+
+# [Microsoft installer extension](#tab/ext)
 
 To add a new setup project, right-click on the solution in the **Solution Explorer** and select **Add > New Project**:
 
@@ -111,7 +146,105 @@ To add a new setup project, right-click on the solution in the **Solution Explor
 
 Select **Setup Project** from the available templates, then select **Next**. Provide the desired **Name** and **Location**, then select **Create**.
 
+---
+
 ### Configure installer project
+
+# [Wix Toolset](#tab/wix)
+
+To configure the setup project, you first must add a reference to the `App.WindowsService` project. Right-click the setup project in the **Solution Explorer**, and then select **Add > Project Reference**.
+
+The template includes an example component and localization files, delete these, leaving only the _Package.wxs_ file. Your project should now include a `ProjectReference` element, similar to the following:
+
+```xml
+<Project Sdk="WixToolset.Sdk/4.0.0">
+  <ItemGroup>
+    <ProjectReference Include="..\App.WindowsService.csproj" />
+  </ItemGroup>
+</Project>
+```
+
+After the project reference has been added, you configure the _Package.wxs_ file. Open the file in the editor, and then replace the contents with the following:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Define the variables in "$(var.*) expressions" -->
+<?define Name = ".NET Joke Service" ?>
+<?define Manufacturer = "Microsoft" ?>
+<?define Version = "1.0.0.0" ?>
+<?define UpgradeCode = "9ED3FF33-8718-444E-B44B-69A2344B7E98" ?>
+
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+    <Package Name="$(Name)"
+             Manufacturer="$(Manufacturer)"
+             Version="$(Version)"
+             UpgradeCode="$(var.UpgradeCode)"
+             Compressed="true">
+        
+        <!-- Allow upgrades and prevent downgrades -->
+        <MajorUpgrade DowngradeErrorMessage="A later version of [ProductName] is already installed. Setup will now exit." />
+
+        <!-- Define the directory structure -->
+        <Directory Id="TARGETDIR" Name="SourceDir">
+            <Directory Id="ProgramFilesFolder">
+
+                <!-- Create a folder inside program files -->
+                <Directory Id="ROOTDIRECTORY" Name="$(var.Manufacturer)">
+
+                    <!-- Create a folder within the parent folder given the name -->
+                    <Directory Id="INSTALLFOLDER" Name="$(Name)" />
+                </Directory>
+            </Directory>
+        </Directory>
+
+        <!-- The files inside this DirectoryRef are linked to
+             the App.WindowsService directory via INSTALLFOLDER -->
+        <DirectoryRef Id="INSTALLFOLDER">
+
+            <!-- Create a single component which is the App.WindowsService.exe file -->
+            <Component Id="ServiceExecutable" Bitness="always64">
+                
+                <!-- Copies the App.WindowsService.exe file using the
+                     project reference preprocessor variables -->
+                <File Id="App.WindowsService.exe"
+                      Source="$(var.App.WindowsService.TargetDir)publish\App.WindowsService.exe"
+                      KeyPath="true" />
+
+                <!-- Remove all files from the INSTALLFOLDER on uninstall -->
+                <RemoveFile Id="ALLFILES" Name="*.*" On="both" />
+
+                <!-- Tell WiX to install the Service -->
+                <ServiceInstall Id="ServiceInstaller"
+                                Type="ownProcess"
+                                Name="App.WindowsService"
+                                DisplayName="$(Name)"
+                                Description="A joke service that periodically logs nerdy humor."
+                                Start="auto"
+                                ErrorControl="normal" />
+
+                <!-- Tell WiX to start the Service -->
+                <ServiceControl Id="StartService"
+                                Start="install"
+                                Stop="both"
+                                Remove="uninstall"
+                                Name="App.WindowsService"
+                                Wait="true" />
+            </Component>
+        </DirectoryRef>
+
+        <!-- Tell WiX to install the files -->
+        <Feature Id="Service" Title="App.WindowsService Setup" Level="1">
+            <ComponentRef Id="ServiceExecutable" />
+        </Feature>
+
+    </Package>
+</Wix>
+```
+
+When you build the project, the output is an MSI file that can be used to install and uninstall the service.
+
+# [Microsoft installer extension](#tab/ext)
 
 To configure the installer project, select the project in the **Solution Explorer**. Select <kbd>F4</kbd> to open the project properties pane. You can configure the app's "add" and "remove" icons, author, manufacturer, product name, title, target platform, and so on.
 
@@ -125,7 +258,7 @@ From the **Custom Actions** window, select **Install > Add Custom Action**.
 
 :::image type="content" source="media/workers/select-item.png" alt-text="Custom Actions properties dialog: select item.":::
 
-Double-click the **Application Folder**, and select **Publish Items from App.WindowsService (Active)**.
+Double-click the **Application Folder** (or select **Add Output...** with **Application Folder** selected), and select **Publish Items from App.WindowsService (Active)**.
 
 :::image type="content" source="media/workers/select-item-publish.png" alt-text="Custom Actions properties dialog: select item app folder.":::
 
@@ -141,7 +274,17 @@ Once you've done both, you should see the following:
 
 With these updates, the setup project has been configured to delegate its *Install* and *Uninstall* actions to call into the Windows Service app with appropriate arguments.
 
+---
+
 ## Test installation
+
+# [Wix Toolset](#tab/wix)
+
+To test the installer, publish the _App.WindowsService_ project. Right-click the project in the **Solution Explorer**, and then select **Publish**. Once published with the profile you created in the previous tutorial, the executable will be in the publish directory. Next, you **Build** the setup project and run the installer.
+
+Once the service is installed, you can open **Services** to see the service running. To uninstall the service, use the **Windows Add or Remove Programs** feature to call the installer.
+
+# [Microsoft installer extension](#tab/ext)
 
 To test the installer, expand **Solution Configurations** in Visual Studio, and select **Release** (assuming **Debug** was selected). Build the solution and then right-click on the setup project and select **Build**. By default, setup projects are not part of the build.
 
@@ -170,6 +313,8 @@ Select **View > Output**, and ensure that the **Show output from** dropdown has 
 :::row-end:::
 
 Once the service is installed, you can open **Services** to start the service. To uninstall the service, use the **Windows Add or Remove Programs** feature to call the installer.
+
+---
 
 ## See also
 

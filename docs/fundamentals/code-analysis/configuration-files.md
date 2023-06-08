@@ -101,7 +101,7 @@ Consider the following naming recommendations:
 
 ### Distribution in NuGet packages
 
-As mentionned above, `GlobalAnalyzerConfigFiles` can be distributed with NuGet packages. To do so, [add a `.props`](https://learn.microsoft.com/en-us/nuget/concepts/msbuild-props-and-targets) file to the nuget, and include the `GlobalAnalyzerConfigFiles` directly under the `Project` node, like so:
+As mentionned above, `GlobalAnalyzerConfigFiles` can be distributed with NuGet packages. To do so, [add a `.props`](https://learn.microsoft.com/nuget/concepts/msbuild-props-and-targets) file to the nuget, and include the `GlobalAnalyzerConfigFiles` directly under the `Project` node, like so:
 ```xml
 <Project>
   <ItemGroup>

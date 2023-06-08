@@ -46,6 +46,8 @@ items:
         href: cryptography/8.0/rsa-encrypt-decrypt-value-obsolete.md
     - name: Deployment
       items:
+      - name: Host determines RID-specific assets
+        href: deployment/8.0/rid-asset-list.md
       - name: StripSymbols defaults to true
         href: deployment/8.0/stripsymbols-default.md
     - name: Entity Framework Core
@@ -1184,6 +1186,8 @@ items:
     items:
     - name: .NET 8
       items:
+      - name: Host determines RID-specific assets
+        href: deployment/8.0/rid-asset-list.md
       - name: StripSymbols defaults to true
         href: deployment/8.0/stripsymbols-default.md
     - name: .NET 7

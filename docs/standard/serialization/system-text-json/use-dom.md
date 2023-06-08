@@ -1,5 +1,5 @@
 ---
-title: How to use a JSON document in System.Text.Json
+title: How to use a JSON DOM in System.Text.Json
 description: "Learn how to use a JSON document object model (DOM)."
 ms.date: 03/29/2022
 no-loc: [System.Text.Json, Newtonsoft.Json]
@@ -14,9 +14,9 @@ helpviewer_keywords:
 ms.topic: how-to
 ---
 
-# How to use a JSON document in System.Text.Json
+# How to use a JSON document object model in System.Text.Json
 
-This article shows how to use a [JSON Document Object Model (DOM)](#json-dom-choices) for random access to data in a JSON payload.
+This article shows how to use a [JSON document object model (DOM)](#json-dom-choices) for random access to data in a JSON payload.
 
 ## JSON DOM choices
 

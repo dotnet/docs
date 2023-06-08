@@ -51,3 +51,5 @@ dotnet tool update -g upgrade-assistant
 > ```dotnetcli
 > dotnet tool install -g --ignore-failed-sources upgrade-assistant
 > ```
+
+For upgrading projects with WCF components, use the older version of the CLI tool. See (Install (legacy version))[https://learn.microsoft.com/dotnet/core/porting/upgrade-assistant-install-legacy] for more details.

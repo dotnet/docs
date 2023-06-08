@@ -304,149 +304,150 @@ items:
         href: ../../core/additional-tools/xml-serializer-generator.md
   - name: Diagnostics and instrumentation
     items:
+    - name: Overview
+      href: ../core/diagnostics/index.md
+    - name: Managed debuggers
+      href: ../core/diagnostics/managed-debuggers.md
+    - name: Logging & Tracing options
+      href: ../core/diagnostics/logging-tracing.md
+    - name: ILogger Logging
+      href: ../core/extensions/logging.md  
+    - name: Metrics
+      items:
       - name: Overview
-        href: ../../core/diagnostics/index.md
-      - name: Managed debuggers
-        href: ../../core/diagnostics/managed-debuggers.md
-      - name: Diagnostic port
-        href: ../../core/diagnostics/diagnostic-port.md
+        displayName: metrics
+        href: ../core/diagnostics/metrics.md
+      - name: Instrumentation
+        href: ../core/diagnostics/metrics-instrumentation.md
+      - name: Collection
+        href: ../core/diagnostics/metrics-collection.md
+      - name: EventCounters
+        items:
+        - name: Overview
+          displayName: eventcounter
+          href: ../core/diagnostics/event-counters.md
+        - name: Well-known counters
+          href: ../core/diagnostics/available-counters.md
+        - name: "Tutorial: Measure performance with EventCounters"
+          href: ../core/diagnostics/event-counter-perf.md
+      - name: Compare metric APIs
+        href: ../core/diagnostics/compare-metric-apis.md
+    - name: Distributed tracing
+      items:
+      - name: Overview
+        href: ../core/diagnostics/distributed-tracing.md
+      - name: Concepts
+        href: ../core/diagnostics/distributed-tracing-concepts.md
+      - name: Instrumentation
+        href: ../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
+      - name: Collection
+        href: ../core/diagnostics/distributed-tracing-collection-walkthroughs.md
+    - name: Specialized Diagnostics
+      items:
+      - name: Overview
+        href: specialized-diagnostics-overview.md    
+      - name: Event Source
+        items:
+        - name: Overview
+          href: ../core/diagnostics/eventsource.md
+        - name: Getting started
+          href: ../core/diagnostics/eventsource-getting-started.md
+        - name: Instrumentation
+          href: ../core/diagnostics/eventsource-instrumentation.md
+        - name: Collection
+          href: ../core/diagnostics/eventsource-collect-and-view-traces.md
+        - name: Activity IDs
+          href: ../core/diagnostics/eventsource-activity-ids.md
+        - name: Well-known event providers
+          href: ../core/diagnostics/well-known-event-providers.md
+        - name: Runtime event Reference
+          items:
+          - name: Overview
+            href: ../fundamentals/diagnostics/runtime-events.md
+          - name: Contention events
+            href: ../fundamentals/diagnostics/runtime-contention-events.md
+          - name: Exception events
+            href: ../fundamentals/diagnostics/runtime-exception-events.md
+          - name: Garbage collection events
+            href: ../fundamentals/diagnostics/runtime-garbage-collection-events.md
+          - name: Interop events
+            href: ../fundamentals/diagnostics/runtime-interop-events.md
+          - name: Loader and binder events
+            href: ../fundamentals/diagnostics/runtime-loader-binder-events.md
+          - name: Method events
+            href: ../fundamentals/diagnostics/runtime-method-events.md
+          - name: ThreadPool events
+            href: ../fundamentals/diagnostics/runtime-thread-events.md
+          - name: Type-system events
+            href: ../fundamentals/diagnostics/runtime-type-events.md
+      - name: Collect diagnostics in containers
+        href: ../core/diagnostics/diagnostics-in-containers.md   
       - name: Dumps
         items:
-          - name: Overview
-            displayName: dumps
-            href: ../../core/diagnostics/dumps.md
-          - name: Linux dumps
-            href: ../../core/diagnostics/debug-linux-dumps.md
-          - name: SOS debugger extension
-            href: ../../core/diagnostics/sos-debugging-extension.md
-          - name: Dumps FAQ - .NET
-            href: ../../core/diagnostics/faq-dumps.yml
-          - name: Debug Windows dumps
-            href: ../../core/diagnostics/debug-windows-dumps.md
-          - name: Collect dumps on crash
-            href: ../../core/diagnostics/collect-dumps-crash.md
-      - name: Logging and tracing
-        items:
-          - name: Overview
-            displayName: logging tracing
-            href: ../../core/diagnostics/logging-tracing.md
-          - name: Well-known event providers
-            href: ../../core/diagnostics/well-known-event-providers.md
-          - name: Event Source
-            items:
-              - name: Overview
-                href: ../../core/diagnostics/eventsource.md
-              - name: Getting started
-                href: ../../core/diagnostics/eventsource-getting-started.md
-              - name: Instrumentation
-                href: ../../core/diagnostics/eventsource-instrumentation.md
-              - name: Collection
-                href: ../../core/diagnostics/eventsource-collect-and-view-traces.md
-              - name: Activity IDs
-                href: ../../core/diagnostics/eventsource-activity-ids.md
-          - name: DiagnosticSource and DiagnosticListener
-            items:
-              - name: Getting started
-                href: ../../core/diagnostics/diagnosticsource-diagnosticlistener.md
-          - name: EventPipe
-            href: ../../core/diagnostics/eventpipe.md
-      - name: Metrics
-        items:
-          - name: Overview
-            displayName: metrics
-            href: ../../core/diagnostics/metrics.md
-          - name: Instrumentation
-            href: ../../core/diagnostics/metrics-instrumentation.md
-          - name: Collection
-            href: ../../core/diagnostics/metrics-collection.md
-          - name: EventCounters
-            items:
-              - name: Overview
-                displayName: eventcounter
-                href: ../../core/diagnostics/event-counters.md
-              - name: Well-known counters
-                href: ../../core/diagnostics/available-counters.md
-              - name: "Tutorial: Measure performance with EventCounters"
-                href: ../../core/diagnostics/event-counter-perf.md
-          - name: Compare metric APIs
-            href: ../../core/diagnostics/compare-metric-apis.md
-      - name: Distributed tracing
-        items:
-          - name: Overview
-            href: ../../core/diagnostics/distributed-tracing.md
-          - name: Concepts
-            href: ../../core/diagnostics/distributed-tracing-concepts.md
-          - name: Instrumentation
-            href: ../../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
-          - name: Collection
-            href: ../../core/diagnostics/distributed-tracing-collection-walkthroughs.md
+        - name: Overview
+          displayName: dumps
+          href: ../core/diagnostics/dumps.md
+        - name: Linux dumps
+          href: ../core/diagnostics/debug-linux-dumps.md
+        - name: SOS debugger extension
+          href: ../core/diagnostics/sos-debugging-extension.md
       - name: Symbols
-        href: ../../core/diagnostics/symbols.md
-      - name: Microsoft.Diagnostics.NETCore.Client library
+        href: ../core/diagnostics/symbols.md    
+      - name: EventPipe
+        href: ../core/diagnostics/eventpipe.md    
+      - name: Diagnostic port
         items:
+        - name: Overview
+          href: ../core/diagnostics/diagnostic-port.md
+        - name: Microsoft.Diagnostics.NETCore.Client library
+          items:
           - name: Overview and examples
             displayName: diagnostics client library
-            href: ../../core/diagnostics/diagnostics-client-library.md
+            href: ../core/diagnostics/diagnostics-client-library.md
           - name: API reference
-            href: ../../core/diagnostics/microsoft-diagnostics-netcore-client.md
-      - name: Runtime events
+            href: ../core/diagnostics/microsoft-diagnostics-netcore-client.md
+      - name: DiagnosticSource and DiagnosticListener
         items:
-          - name: Overview
-            href: ../../fundamentals/diagnostics/runtime-events.md
-          - name: Contention events
-            href: ../../fundamentals/diagnostics/runtime-contention-events.md
-          - name: Exception events
-            href: ../../fundamentals/diagnostics/runtime-exception-events.md
-          - name: Garbage collection events
-            href: ../../fundamentals/diagnostics/runtime-garbage-collection-events.md
-          - name: Interop events
-            href: ../../fundamentals/diagnostics/runtime-interop-events.md
-          - name: Loader and binder events
-            href: ../../fundamentals/diagnostics/runtime-loader-binder-events.md
-          - name: Method events
-            href: ../../fundamentals/diagnostics/runtime-method-events.md
-          - name: ThreadPool events
-            href: ../../fundamentals/diagnostics/runtime-thread-events.md
-          - name: Type-system events
-            href: ../../fundamentals/diagnostics/runtime-type-events.md
-      - name: Collect diagnostics in containers
-        href: ../../core/diagnostics/diagnostics-in-containers.md
-      - name: .NET CLI global tools
-        items:
-          - name: dotnet-counters
-            href: ../../core/diagnostics/dotnet-counters.md
-          - name: dotnet-coverage
-            href: ../../core/additional-tools/dotnet-coverage.md
-          - name: dotnet-dump
-            href: ../../core/diagnostics/dotnet-dump.md
-          - name: dotnet-gcdump
-            href: ../../core/diagnostics/dotnet-gcdump.md
-          - name: dotnet-monitor
-            href: ../../core/diagnostics/dotnet-monitor.md
-          - name: dotnet-trace
-            href: ../../core/diagnostics/dotnet-trace.md
-          - name: dotnet-stack
-            href: ../../core/diagnostics/dotnet-stack.md
-          - name: dotnet-symbol
-            href: ../../core/diagnostics/dotnet-symbol.md
-          - name: dotnet-sos
-            href: ../../core/diagnostics/dotnet-sos.md
-          - name: dotnet-dsrouter
-            href: ../../core/diagnostics/dotnet-dsrouter.md
-      - name: .NET diagnostics tutorials
-        items:
-          - name: Collect performance trace in Linux with PerfCollect
-            href: ../../core/diagnostics/trace-perfcollect-lttng.md
-          - name: Debug a memory leak
-            href: ../../core/diagnostics/debug-memory-leak.md
-          - name: Debug high CPU usage
-            href: ../../core/diagnostics/debug-highcpu.md
-          - name: Debug deadlock
-            href: ../../core/diagnostics/debug-deadlock.md
-          - name: Debug thread-pool starvation
-            href: ../../core/diagnostics/debug-threadpool-starvation.md
-          - name: Debug a stack overflow
-            href: ../../core/diagnostics/debug-stackoverflow.md
+        - name: Getting started
+          href: ../core/diagnostics/diagnosticsource-diagnosticlistener.md                
+    - name: .NET CLI global tools
+      items:
+      - name: Overview
+        href: ../core/diagnostics/tools-overview.md
+      - name: dotnet-counters
+        href: ../core/diagnostics/dotnet-counters.md
+      - name: dotnet-coverage
+        href: ../core/additional-tools/dotnet-coverage.md
+      - name: dotnet-dump
+        href: ../core/diagnostics/dotnet-dump.md
+      - name: dotnet-gcdump
+        href: ../core/diagnostics/dotnet-gcdump.md
+      - name: dotnet-monitor
+        href: ../core/diagnostics/dotnet-monitor.md
+      - name: dotnet-trace
+        href: ../core/diagnostics/dotnet-trace.md
+      - name: dotnet-stack
+        href: ../core/diagnostics/dotnet-stack.md
+      - name: dotnet-symbol
+        href: ../core/diagnostics/dotnet-symbol.md
+      - name: dotnet-sos
+        href: ../core/diagnostics/dotnet-sos.md
+      - name: dotnet-dsrouter
+        href: ../core/diagnostics/dotnet-dsrouter.md
+    - name: .NET diagnostics tutorials
+      items:
+      - name: Collect performance trace in Linux with PerfCollect
+        href: ../core/diagnostics/trace-perfcollect-lttng.md
+      - name: Debug a memory leak
+        href: ../core/diagnostics/debug-memory-leak.md
+      - name: Debug high CPU usage
+        href: ../core/diagnostics/debug-highcpu.md
+      - name: Debug deadlock
+        href: ../core/diagnostics/debug-deadlock.md
+      - name: Debug ThreadPool starvation
+        href: ../core/diagnostics/debug-threadpool-starvation.md
+      - name: Debug a StackOverflow
+        href: ../core/diagnostics/debug-stackoverflow.md
   - name: Code analysis
     items:
       - name: Overview

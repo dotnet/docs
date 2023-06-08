@@ -1292,20 +1292,8 @@ items:
       href: ../../_csharpstandard/standard/documentation-comments.md
     - name: Bibliography
       href: ../../_csharpstandard/standard/bibliography.md
-  - name: C# 7.0 - 12 features
+  - name: C# 8.0 - 12 features
     items:
-    - name: C# 7.n features
-      items:
-      - name: Readonly references
-        href: ../../_csharplang/proposals/csharp-7.2/readonly-ref.md
-      - name: Compile-time safety for ref-like types
-        href: ../../_csharplang/proposals/csharp-7.2/span-safety.md
-      - name: Conditional ref
-        href: ../../_csharplang/proposals/csharp-7.2/conditional-ref.md
-      - name: Ref local reassignment
-        href: ../../_csharplang/proposals/csharp-7.3/ref-local-reassignment.md
-      - name: Stackalloc array initializers
-        href: ../../_csharplang/proposals/csharp-7.3/stackalloc-array-initializers.md
     - name: C# 8.0 features
       items:
       - name: Nullable reference types - proposal

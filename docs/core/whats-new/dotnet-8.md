@@ -545,7 +545,7 @@ MyOptions options0 = section.Get<MyOptions>();
 
 // !! Bind call - to be replaced with source-gen'd implementation
 MyOptions options1 = new MyOptions();
-section.Bind(myOptions1);
+section.Bind(options1);
 
 WebApplication app = builder.Build();
 app.MapGet("/", () => "Hello World!");

@@ -21,7 +21,7 @@ This article helps you find the various tools you need.
 
 ## Instrumentation for observability
 
-.NET supports industry standard instrumentation techniques using metrics, logs, and distributed traces, commonly known as the *three pillars of observability*. 
+.NET supports industry standard instrumentation techniques using metrics, logs, and distributed traces, commonly known as the *three pillars of observability*.
 
 Instrumentation is code that is added to a software project to record what it is doing. This information can then be collected in files, databases, or in-memory and analyzed to understand how a software program is operating. This is often used in production environments to monitor for problems and diagnose them. The .NET runtime has built-in instrumentation that can be optionally enabled and APIs that allow you to add custom instrumentation specialized for your application.
 
@@ -42,6 +42,7 @@ For most cases, whether adding logging to an existing project or creating a new 
 ### Collecting Instrumentation
 
 There are multiple ways that the instrumentation data can be egressed from the application, including:
+
 - [Open Telemetry](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started-console/README.md) - a cross platform, vendor neutral standard for collecting and exporting telemetry
 - [.NET CLI tools](./tools-overview.md) such as [dotnet-counters](./dotnet-counters.md)
 - [dotnet-monitor](./dotnet-monitor.md) - an agent for collecting traces and telemetry

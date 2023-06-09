@@ -38,7 +38,7 @@ You can add parameters to a `struct` or `class` declaration to create a *primary
 1. Primary constructor parameters are mutable.
 1. Primary constructor parameters don't become properties, except in [`record`](../../language-reference/builtin-types/record.md) types.
 
-These rules are consistent with parameters to any method, including other constructor declarations.
+These rules are the same as parameters to any method, including other constructor declarations.
 
 The two most common uses for a primary constructor parameter are:
 

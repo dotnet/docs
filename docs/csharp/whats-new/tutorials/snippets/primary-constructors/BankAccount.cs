@@ -36,6 +36,7 @@ public class CheckAccount(string accountID, string owner, decimal overdraftLimit
         }
         CurrentBalance -= amount;
     }
+    
     public override string ToString() => $"Account ID: {AccountID}, Owner: {Owner}, Balance: {CurrentBalance}";
 }
 // </DerivedClass>
@@ -108,6 +109,7 @@ public class LineOfCreditAccount : BankAccount
         }
         CurrentBalance -= amount;
     }
+
     public override string ToString() => $"{base.ToString()}, Balance: {CurrentBalance}";
 }
 // </NoPrimaryConstructor>

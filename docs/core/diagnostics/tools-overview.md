@@ -13,9 +13,11 @@ ms.topic: overview
 ## IDE / Editors
 
 ### Visual Studio
+
 [Visual Studio](https://visualstudio.microsoft.com/#vs-section) is the most comprehensive IDE for .NET developers on Windows. It includes [debugging](https://learn.microsoft.com/visualstudio/debugger/) and [performance profiling](https://learn.microsoft.com/visualstudio/profiling) tools to aid .NET developers in diagnosing their applications.
 
 ### Visual Studio Code
+
 [Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It supports local and remote [debugging](https://code.visualstudio.com/docs/csharp/debugging) for .NET.
 
 ## CLI Tools

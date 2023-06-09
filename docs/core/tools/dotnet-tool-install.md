@@ -58,7 +58,7 @@ Global tools are installed in the following directories by default when you spec
 | Linux/macOS | `$HOME/.dotnet/tools`         |
 | Windows     | `%USERPROFILE%\.dotnet\tools` |
 
-There are executables generated in these folders for each globally-installed tool, although the actual tool binaries are nested deep into the sibling `.store` directory).
+Executables are generated in these folders for each globally installed tool, although the actual tool binaries are nested deep into the sibling `.store` directory.
 
 ### `--tool-path` tools
 
@@ -66,7 +66,7 @@ Local tools with explicit tool paths are stored wherever you specified the `--to
 
 ### Local tools
 
-Local tools are stored in the NuGet global directory, whatever you've set that to be. There are shim files in `$HOME/.dotnet/toolResolverCache` for each local tool that point to where the tools are inside that location.
+Local tools are stored in the NuGet global directory, whatever you've set that to be. There are shim files in `$HOME/.dotnet/toolResolverCache` for each local tool that point to where the tools are within that location.
 
 References to local tools are added to a *dotnet-tools.json* file in a *.config* directory under the current directory. If a manifest file doesn't exist yet, create it by using the `--create-manifest-if-needed` option or by running the following command:
 

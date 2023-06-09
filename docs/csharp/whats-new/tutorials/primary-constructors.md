@@ -103,7 +103,7 @@ There's one potential concern with class hierarchies and primary constructors: i
 
 :::code source="./snippets/primary-constructors/BankAccount.cs" id="DuplicatedPrimaryConstructorStorage" highlight="33":::
 
-The highlighted line shows that the `ToString` method uses the *primary constructor parameters* rather than the *base class property*. The result is that the derived class, `SavingsAccount` creates storage for those copies. The copy in the derived class is different than the property in the base class. If the base class property could be modified, the instance of the derived class won't see that modification. The compiler issues a warning for primary constructor parameters that are used in a derived class and passed to a base class constructor. In this instance, the fix is to use the properties in the base class interface.
+The highlighted line shows that the `ToString` method uses the *primary constructor parameters* (`owner` and `accountID`) rather than the *base class properties* (`Owner` and `AccountID`). The result is that the derived class, `SavingsAccount` creates storage for those copies. The copy in the derived class is different than the property in the base class. If the base class property could be modified, the instance of the derived class won't see that modification. The compiler issues a warning for primary constructor parameters that are used in a derived class and passed to a base class constructor. In this instance, the fix is to use the properties in the base class interface.
 
 ## Summary
 

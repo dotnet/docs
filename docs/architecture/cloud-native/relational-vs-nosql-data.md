@@ -189,7 +189,7 @@ When replatforming monolithic applications to a cloud-native architecture, devel
 
 | Provider | Description  |
 | :-------- | :-------- |
-| NoSQL API | Proprietary API that supports JSON documents and SQL-based queries |
+| NoSQL API | API for NoSQL stores data in document format |
 | Mongo DB API | Supports Mongo DB APIs and JSON documents|
 | Gremlin API | Supports Gremlin API with graph-based nodes and edge data representations |
 | Cassandra API | Supports Casandra API for wide-column data representations |  

@@ -20,32 +20,24 @@ In this tutorial, you learn how to:
 
 You need to set up your machine to run .NET 8 or later, including the C# 12 or later compiler. The C# 12 compiler is available starting with [Visual Studio 2022 version 17.7](https://visualstudio.microsoft.com/vs) or the [.NET 8 SDK](https://dotnet.microsoft.com/download).
 
-Key learning experiences for this tutorial:
-
-1. declare a primary constructor when parameters are needed in one or more members.
-    1. initialize properties (same or different type.)
-    1. as a service or dependencies.
-    1. pass to base class with primary constructor
-1. consider when a reasonable can be used in a default ctor.
-1. Use primary ctor parameter as you would use a field.
-
 ## Primary constructors
 
-You can add parameters to a `struct` or `class` declaration to create a *primary constructor*. You declare a primary constructor when a struct or class **requires** parameters to initialize an instance. Primary constructor parameters are in scope throughout the class definition. It's important to view primary constructor parameters as *parameters* even though they are in scope throughout the class definition. Several rules clarify that they're parameters:
+You can add parameters to a `struct` or `class` declaration to create a *primary constructor*. Primary constructor parameters are in scope throughout the class definition. It's important to view primary constructor parameters as *parameters* even though they are in scope throughout the class definition. Several rules clarify that they're parameters:
 
-1. Primary constructor parameters aren't stored directly as fields.
+1. Primary constructor parameters may not be stored if they aren't needed.
 1. Primary constructors aren't members of the class. For example, a primary constructor parameter named `param` can't be accessed as `this.param`.
-1. Primary constructor parameters are mutable.
+1. Primary constructor parameters can be assigned to.
 1. Primary constructor parameters don't become properties, except in [`record`](../../language-reference/builtin-types/record.md) types.
 
 These rules are the same as parameters to any method, including other constructor declarations.
 
-The two most common uses for a primary constructor parameter are:
+The most common uses for a primary constructor parameter are:
 
 1. As an argument to a `base()` constructor invocation.
 1. To initialize a member field or property.
+1. Referencing the constructor parameter in an instance member.
 
-Every constructor for a class **must** call the primary constructor, directly or indirectly, through a `this()` constructor invocation. That rule ensures that primary constructor parameters are assigned anywhere in the body of the class.
+Every other constructor for a class **must** call the primary constructor, directly or indirectly, through a `this()` constructor invocation. That rule ensures that primary constructor parameters are assigned anywhere in the body of the class.
 
 ## Initialize property
 

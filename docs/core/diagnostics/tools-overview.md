@@ -14,7 +14,7 @@ ms.topic: overview
 
 ### Visual Studio
 
-[Visual Studio](https://visualstudio.microsoft.com/#vs-section) is the most comprehensive IDE for .NET developers on Windows. It includes [debugging](https://learn.microsoft.com/visualstudio/debugger/) and [performance profiling](https://learn.microsoft.com/visualstudio/profiling) tools to aid .NET developers in diagnosing their applications.
+[Visual Studio](https://visualstudio.microsoft.com/#vs-section) is the most comprehensive IDE for .NET developers on Windows. It includes [debugging](/visualstudio/debugger/) and [performance profiling](/visualstudio/profiling) tools to aid .NET developers in diagnosing their applications.
 
 ### Visual Studio Code
 

@@ -1,7 +1,7 @@
 ---
 title: Additional class libraries and APIs
 description: Explore additional class libraries and APIs in .NET, including out-of-band (OOB) projects, platform-specific libraries, and private APIs.
-ms.date: 08/11/2020
+ms.date: 06/09/2023
 helpviewer_keywords:
   - "Additional class libraries"
   - "Additional managed libraries"
@@ -96,6 +96,7 @@ These APIs support the product infrastructure and are not intended or supported 
 * [System.Windows.Forms.ControlPaint.CalculateBackgroundImageRectangle method](system-windows-forms/calculatebackgroundimagerectangle-method.md)
 * [System.Windows.Forms.Design.DataMemberFieldEditor class](datamemberfieldeditor-class.md)
 * [System.Windows.Forms.Design.DataMemberListEditor class](datamemberlisteditor-class.md)
+* [System.Windows.Forms.Design.StringCollectionEditor class](system-windows-forms/stringcollectioneditor-class.md)
 * [System.Xml.XmlReader.CreateSqlReader method](system.xml.xmlreader.createsqlreader.md)
 * [adodb.Connection interface](adodb.connection.md)
 * [adodb.EventReason enum](adodb.eventreasonenum.md)

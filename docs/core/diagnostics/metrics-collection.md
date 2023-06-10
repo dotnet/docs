@@ -215,8 +215,11 @@ class Program
 In the preceding code:
 
 * `AddMeter("HatCo.HatStore")` configures OpenTelemetry to transmit all the metrics collected by the Meter our app defined.
-* `AddPrometheusExporter(...)` configures OpenTelemetry to expose Prometheus' metrics endpoint on port 9184 and to use the HttpListener. See the [OpenTelemetry documentation](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/docs/metrics/getting-started-prometheus-grafana#collect-metrics-using-prometheus)
-for more information about OpenTelemetry configuration options. The OpenTelemetry documentation shows hosting options for ASP.NET apps.
+* `AddPrometheusExporter` configures OpenTelemetry to:
+  * Expose Prometheus' metrics endpoint on port 9184
+  * Use the HttpListener.
+
+See the [OpenTelemetry documentation](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/docs/metrics/getting-started-prometheus-grafana#collect-metrics-using-prometheus) for more information about OpenTelemetry configuration options. The OpenTelemetry documentation shows hosting options for ASP.NET apps.
 
 > [!NOTE]
 > At the time of writing, OpenTelemetry only supports metrics emitted using the <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> APIs. However, support for [EventCounters](event-counters.md) is planned.
@@ -241,7 +244,7 @@ Modify the *prometheus.yml* configuration file so that Prometheus scrapes the me
       - targets: ['localhost:9184']
 ```
 
-If you are starting from the default configuration, `scrape_configs` is similar to the followling YAML. Replace the ports in the following with your ports:
+Using the default configuration, `scrape_configs` is similar to the following YAML. Replace the ports in the following with your ports:
 
 ```yaml
 scrape_configs:
@@ -262,18 +265,17 @@ scrape_configs:
 
 Reload the configuration or restart the Prometheus server, then confirm that OpenTelemetryTest is in the UP state in the **Status** > **Targets** page of the Prometheus web portal.
 
-On the Graph page of the Prometheus web portal, enter `hats_sold` in the expression text box. In the graph tab, Prometheus should show the steadily increasing value of the "hats-sold" Counter that is being emitted by our example application.
+On the Graph page of the Prometheus web portal, enter `hats_sold` in the expression text box. In the graph tab, Prometheus shows the steadily increasing value of the "hats-sold" Counter that is being emitted by our example app.
 
 [![Prometheus hats sold graph](media/prometheus-hat-sold-metric.png)](media/prometheus-hat-sold-metric.png)
 
-If the Prometheus server hasn't been scraping the example app for long, you may need to wait a short while for data to accumulate. You can adjust the time range control in the upper left to "1m" (1 minute) to get a better view of very recent data.
+If the Prometheus server hasn't been scraping the example app for long, you may need to wait for data to accumulate. You can adjust the time range control in the upper left to "1m" (1 minute) to get a better view of recent data.
 
 ### Show metrics on a Grafana dashboard
 
 1. Follow [the standard instructions](https://prometheus.io/docs/visualization/grafana/#creating-a-prometheus-graph) to install Grafana and connect it to a Prometheus data source.
 
-2. Create a Grafana dashboard by clicking the **+** icon on the left toolbar in the Grafana web portal, then select **Dashboard**. In the dashboard
-editor that appears, enter 'Hats Sold/Sec' as the Title and 'rate(hats_sold[5m])' in the PromQL expression field. It should look like this:
+2. Create a Grafana dashboard by clicking the **+** icon on the left toolbar in the Grafana web portal, then select **Dashboard**. In the dashboard editor that appears, enter 'Hats Sold/Sec' as the Title and 'rate(hats_sold[5m])' in the PromQL expression field. It should look like this:
 
    [![Hats sold Grafana dashboard editor](media/grafana-hats-sold-dashboard-editor.png)](media/grafana-hats-sold-dashboard-editor.png)
 
@@ -330,7 +332,7 @@ class Program
 }
 ```
 
-When run, the app now runs the custom callback on each measurement:
+The app now runs the custom callback on each measurement:
 
 ```dotnetcli
 > dotnet run

@@ -344,13 +344,13 @@ hats-sold recorded measurement 4
 ...
 ```
 
-In the preceding code, consider the following line:
+### Explaining the sample code
 
 ```csharp
 using MeterListener meterListener = new MeterListener();
 ```
 
-An instance of the <xref:System.Diagnostics.Metrics.MeterListener> is created to receive measurements.
+In the preceding code, an instance of the <xref:System.Diagnostics.Metrics.MeterListener> is created to receive measurements. The `using` keyword causes `Dispose` to be called when the `meterListener` goes out of scope.
 
 ```csharp
 meterListener.InstrumentPublished = (instrument, listener) =>
@@ -362,8 +362,7 @@ meterListener.InstrumentPublished = (instrument, listener) =>
 };
 ```
 
-The preceding code configured which instruments the listener receives measurements from.<xref:System.Diagnostics.Metrics.MeterListener.InstrumentPublished> is a delegate that is invoked when a new instrument is created within the app.  The delegate can examine the instrument to decide whether to subscribe. For example, the delegate can checking the name, the Meter, or any other public property. <!-- The previous version was way too long to MT. Is this better? --> If we do want to receive measurements from this instrument, then we invoke
-<xref:System.Diagnostics.Metrics.MeterListener.EnableMeasurementEvents%2A> to indicate that. Code that obtains a reference to an instrument with another approach:
+The preceding code configured which instruments the listener receives measurements from.<xref:System.Diagnostics.Metrics.MeterListener.InstrumentPublished> is a delegate that is invoked when a new instrument is created within the app.  The delegate can examine the instrument to decide whether to subscribe. For example, the delegate can check the name, the Meter, or any other public property. <!-- The previous version was way too long to MT. Is this better? --> <xref:System.Diagnostics.Metrics.MeterListener.EnableMeasurementEvents%2A> enables receiving measurements from the specified instrument.<!-- recommend deleting the following--> Code that obtains a reference to an instrument by another approach:
 
 * Is not typically done.
 * Can invoke `EnableMeasurementEvents()` at any time with the reference.

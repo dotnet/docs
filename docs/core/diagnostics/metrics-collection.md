@@ -15,7 +15,7 @@ Instrumented code can record numeric measurements, but the measurements usually 
 - Viewing metrics in real time with [`dotnet-counters`](/dotnet/core/diagnostics/dotnet-counters)
 - Creating a custom collection tool using the underlying .NET <xref:System.Diagnostics.Metrics.MeterListener> API.
 
-For more information about custom metric instrumentation and options, see [Compare metric APIs](compare-metric-apis.md).
+For more information on custom metric instrumentation and options, see [Compare metric APIs](compare-metric-apis.md).
 
 ## Create an example app
 

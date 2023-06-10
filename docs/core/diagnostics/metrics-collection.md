@@ -73,8 +73,8 @@ dotnet-counters ps
 Output similar to the following is displayed:
 
 ```dotnetcli
-     10180 dotnet     C:\Program Files\dotnet\dotnet.exe
-     19964 metric-instr E:\temp\metric-instr\bin\Debug\netcoreapp3.1\metric-instr.exe
+10180 dotnet     C:\Program Files\dotnet\dotnet.exe
+19964 metric-instr E:\temp\metric-instr\bin\Debug\netcoreapp3.1\metric-instr.exe
 ```
 
 Find the ID for the process name that matches the example app and have `dotnet-counters` monitor all metrics from the `HatCo.HatStore` meter. The meter name is case-sensitive.

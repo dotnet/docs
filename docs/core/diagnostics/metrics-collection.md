@@ -56,7 +56,7 @@ class Program
 
 ## View metrics with dotnet-counters
 
-[dotnet-counters](dotnet-counters.md) is a command-line tool that can view live metrics for any .NET Core app on demand. It doesn't require setup, making it useful for ad-hoc investigations or verifing that metric instrumentation is working. It works with both <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> based APIs and [EventCounters](event-counters.md).
+[dotnet-counters](dotnet-counters.md) is a command-line tool that can view live metrics for .NET Core apps on demand. It doesn't require setup, making it useful for ad-hoc investigations or verifying that metric instrumentation is working. It works with both <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> based APIs and [EventCounters](event-counters.md).
 
 If the [dotnet-counters](dotnet-counters.md) tool isn't installed, run the following command:
 

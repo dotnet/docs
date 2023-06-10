@@ -77,7 +77,7 @@ Output similar to the following is displayed:
      19964 metric-instr E:\temp\metric-instr\bin\Debug\netcoreapp3.1\metric-instr.exe
 ```
 
-Find the ID for the process name that matches the example app and have `dotnet-counters` monitor all metrics from the "HatCo.HatStore" meter. The meter name is case-sensitive.
+Find the ID for the process name that matches the example app and have `dotnet-counters` monitor all metrics from the `HatCo.HatStore` meter. The meter name is case-sensitive.
 
 ```dotnetcli
 dotnet-counters monitor -p 19964 HatCo.HatStore
@@ -127,7 +127,7 @@ Press p to pause, r to resume, q to quit.
     Working Set (MB)                                              30
 ```
 
-For more information, see the [dotnet-counters](dotnet-counters.md). To learn more about metrics in .NET, see [built-in metrics](available-counters.md).
+For more information, see [dotnet-counters](dotnet-counters.md). To learn more about metrics in .NET, see [built-in metrics](available-counters.md).
 
 ## View metrics in Grafana with OpenTelemetry and Prometheus
 
@@ -139,7 +139,7 @@ For more information, see the [dotnet-counters](dotnet-counters.md). To learn mo
 
 [OpenTelemetry](https://opentelemetry.io/) is a vendor-neutral open-source project supported by the [Cloud Native Computing Foundation](https://www.cncf.io/) that aims to standardize generating and collecting telemetry for cloud-native software. The .NET metric APIs are compatible with OpenTelemetry and make integration straightforward. [Azure Monitor](/azure/azure-monitor/app/opentelemetry-overview) and many major APM vendors have endorsed OpenTelemetry.
 
-This example shows one of the integrations available now for OpenTelemetry metrics using the popular OSS [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/) projects. The metrics data flow:
+This example shows one of the integrations available for OpenTelemetry metrics using the popular OSS [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/) projects. The metrics data flow:
 
 1. The .NET metric APIs collect measurements from the example app.
 1. The OpenTelemetry library running in the app aggregates the measurements.

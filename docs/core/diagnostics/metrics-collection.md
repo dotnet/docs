@@ -246,7 +246,7 @@ Modify the *prometheus.yml* configuration file so that Prometheus scrapes the me
       - targets: ['localhost:9184']
 ```
 
-Using the default configuration, `scrape_configs` is similar to the following YAML. Replace the ports in the following with your ports:
+Using the default configuration, `scrape_configs` is similar to the following YAML. <!-- TODO explain ports -->
 
 ```yaml
 scrape_configs:

@@ -9,7 +9,7 @@ ms.date: 10/27/2021
 
 **This article applies to: ✔️** .NET Core 3.1 and later **✔️** .NET Framework 4.6.1 and later
 
-Instrumented code can record numeric measurements, but the measurements usually need to be aggregated, transmitted, and stored to create useful metrics for monitoring. This process of aggregating, transmitting, and storing the data is called collection. This tutorial shows several examples of collecting metrics:
+Instrumented code can record numeric measurements, but the measurements usually need to be aggregated, transmitted, and stored to create useful metrics for monitoring. The process of aggregating, transmitting, and storing data is called collection. This tutorial shows several examples of collecting metrics:
 
 - Populating metrics in [Grafana](https://grafana.com/) with [OpenTelemetry](https://opentelemetry.io/) and [Prometheus](https://prometheus.io/).
 - Viewing metrics in real time with [`dotnet-counters`](/dotnet/core/diagnostics/dotnet-counters)

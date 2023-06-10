@@ -93,7 +93,7 @@ Press p to pause, r to resume, q to quit.
     hats-sold (Count / 1 sec)                          4
 ```
 
-`dotnet-counters` can be run specifying a different set of metrics to see some of the built-in instrumentation from the .NET runtime:
+`dotnet-counters` can be run with a different set of metrics to see some of the built-in instrumentation from the .NET runtime:
 
 ```dotnetcli
 dotnet-counters monitor -p 19964 System.Runtime
@@ -137,7 +137,7 @@ For more information, see [dotnet-counters](dotnet-counters.md). To learn more a
 
 ### Overview
 
-[OpenTelemetry](https://opentelemetry.io/) is a vendor-neutral open-source project supported by the [Cloud Native Computing Foundation](https://www.cncf.io/) that aims to standardize generating and collecting telemetry for cloud-native software. The .NET metric APIs are compatible with OpenTelemetry and make integration straightforward. [Azure Monitor](/azure/azure-monitor/app/opentelemetry-overview) and many major APM vendors have endorsed OpenTelemetry.
+[OpenTelemetry](https://opentelemetry.io/) is a vendor-neutral open-source project supported by the [Cloud Native Computing Foundation](https://www.cncf.io/) that seeks to standardize generating and collecting telemetry for cloud-native software. The .NET metric APIs are compatible with OpenTelemetry and make integration straightforward. [Azure Monitor](/azure/azure-monitor/app/opentelemetry-overview) and many major APM vendors have endorsed OpenTelemetry.
 
 This example shows one of the integrations available for OpenTelemetry metrics using the popular OSS [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/) projects. The metrics data flow:
 

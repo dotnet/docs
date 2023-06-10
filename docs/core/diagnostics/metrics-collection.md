@@ -147,8 +147,7 @@ This example shows one of the integrations available for OpenTelemetry metrics u
 1. A Prometheus server, potentially running on a different machine:
   * Polls the metrics endpoint
   * Reads the data
-  * Stores the data in a database for long-term persistence.
-  Prometheus refers to this as 'scraping' an endpoint.
+  * Stores the data in a database for long-term persistence. Prometheus refers to this as 'scraping' an endpoint.
 1. The Grafana server, potentially running on a different machine, queries the data stored in Prometheus and displays it on a web-based monitoring dashboard.
 
 ### Configure the example app to use OpenTelemetry's Prometheus exporter

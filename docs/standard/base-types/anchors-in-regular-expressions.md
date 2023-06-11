@@ -82,7 +82,7 @@ Anchors, or atomic zero-width assertions, specify a position in the string where
 
  The `\Z` anchor specifies that a match must occur at the end of the input string, or before `\n` at the end of the input string. It is identical to the `$` anchor, except that `\Z` ignores the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> option. Therefore, in a multiline string, it can only match the end of the last line, or the last line before `\n`.  
   
- Note that `\Z` matches `\n` but does not match `\r\n` (the CR/LF character combination). To match CR/LF, include `\r?\Z` in the regular expression pattern.  
+ Note that `\Z` matches `\n` but does not match `\r\n` (the CR/LF character combination). To match CR/LF, include `\r?\Z` in the regular expression pattern. Note that this will make the `\r` part of the match - if you are accessing the match, and do not want `\r` to be part of it, you may replace `\r?\Z` with a positive lookahead assert, `(?=\r\n\z|\z|(?<!\r)(?=\n\z))`. In this expression, `\z` asserts the end of the input string.
   
  The following example uses the `\Z` anchor in a regular expression that is similar to the example in the [Start of String or Line](#start-of-string-or-line-) section, which extracts information about the years during which some professional baseball teams existed. The subexpression `\r?\Z` in the regular expression `^((\w+(\s?)){2,}),\s(\w+\s\w+),(\s\d{4}(-(\d{4}|present))?,?)+\r?\Z` matches the end of a string, and also matches a string that ends with `\n` or `\r\n`. As a result, each element in the array matches the regular expression pattern.  
   

@@ -103,9 +103,13 @@ Backtracking occurs when a regular expression pattern contains optional [quantif
 
  Backtracking lets you create powerful, flexible regular expressions. However, as the previous section showed, these benefits may be coupled with unacceptably poor performance. To prevent excessive backtracking, you should define a time-out interval when you instantiate a <xref:System.Text.RegularExpressions.Regex> object or call a static regular expression matching method. This is discussed in the next section. In addition, .NET supports three regular expression language elements that limit or suppress backtracking and that support complex regular expressions with little or no performance penalty: [atomic groups](#atomic-groups), [lookbehind assertions](#lookbehind-assertions), and [lookahead assertions](#lookahead-assertions). For more information about each language element, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).
 
+### Using the non-backtracking regular expression engine
+
+ If you do not need to use backtracking, consider using the <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> mode. This mode is designed to execute in time proportional to the length of the input. See [NonBacktracking mode](regular-expression-options#nonbacktracking-mode) for more information. You can additionally set a time-out value.
+
 ### Defining a Time-out Interval
 
- Starting with .NET Framework 4.5, you can set a time-out value that represents the longest interval the regular expression engine will search for a single match before it abandons the attempt and throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. You specify the time-out interval by supplying a <xref:System.TimeSpan> value to the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29> constructor for instance regular expressions. In addition, each static pattern matching method has an overload with a <xref:System.TimeSpan> parameter that allows you to specify a time-out value.
+ You can set a time-out value that represents the longest interval the regular expression engine will search for a single match before it abandons the attempt and throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. You specify the time-out interval by supplying a <xref:System.TimeSpan> value to the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29> constructor for instance regular expressions. In addition, each static pattern matching method has an overload with a <xref:System.TimeSpan> parameter that allows you to specify a time-out value.
 
 If you do not set a time-out value explicitly, the default time-out value is determined as follows:
 

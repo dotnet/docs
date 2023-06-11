@@ -105,7 +105,7 @@ Backtracking occurs when a regular expression pattern contains optional [quantif
 
 ### Consider the non-backtracking regular expression engine
 
- If you do not need to use backtracking, consider using the <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> mode. This mode is designed to execute in time proportional to the length of the input. See [NonBacktracking mode](regular-expression-options#nonbacktracking-mode) for more information. You can additionally set a time-out value.
+ If you do not need to use backtracking, consider using the <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> mode. This mode is designed to execute in time proportional to the length of the input. See [NonBacktracking mode](regular-expression-options.md#nonbacktracking-mode) for more information. You can additionally set a time-out value.
 
 ### Limit the size of inputs
 

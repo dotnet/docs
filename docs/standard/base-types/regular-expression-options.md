@@ -173,7 +173,7 @@ The following example is equivalent to the previous one, except that it uses the
 
 ## Single-line mode
 
-The <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option, or the `s` inline option, causes the regular expression engine to treat the input string as if it consists of a single line. It does this by changing the behavior of the period (`.`) language element so that it matches every character, instead of matching every character except for the newline character `\n` or carriage return `\r`.
+The <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option, or the `s` inline option, causes the regular expression engine to treat the input string as if it consists of a single line. It does this by changing the behavior of the period (`.`) language element so that it matches every character, instead of matching every character except for the newline character `\n`.
 
 The following example illustrates how the behavior of the `.` language element changes when you use the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option. The regular expression `^.+` starts at the beginning of the string and matches every character. By default, the match ends at the end of the first line; the regular expression pattern matches the carriage return character, `\r` or `\u000D`, but it does not match `\n`. Because the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option interprets the entire input string as a single line, it matches every character in the input string, including `\n`.
 

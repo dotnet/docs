@@ -21,8 +21,8 @@ ms.assetid: 34df1152-0b22-4a1c-a76c-3c28c47b70d8
 
 Backtracking occurs when a regular expression pattern contains optional [quantifiers](quantifiers-in-regular-expressions.md) or [alternation constructs](alternation-constructs-in-regular-expressions.md), and the regular expression engine returns to a previous saved state to continue its search for a match. Backtracking is central to the power of regular expressions; it makes it possible for expressions to be powerful and flexible, and to match very complex patterns. At the same time, this power comes at a cost. Backtracking is often the single most important factor that affects the performance of the regular expression engine. Fortunately, the developer has control over the behavior of the regular expression engine and how it uses backtracking. This topic explains how backtracking works and how it can be controlled.
 
-> [!IMPORTANT]
-> A poorly designed regular expression can run unacceptably slowly on certain inputs. This can result in a poor user experience, and in some cases, it can even lead to a denial of service (DoS) attack. This topic describes some ways this can happen, and how to help prevent it.
+> [!WARNING]
+> A poorly designed regular expression can run unacceptably slowly on certain inputs. When using <xref:System.Text.RegularExpressions> to process untrusted input, pass a timeout. A malicious user can provide input to `RegularExpressions`, causing a [Denial-of-Service attack](https://www.cisa.gov/news-events/news/understanding-denial-service-attacks). ASP.NET Core framework APIs that use `RegularExpressions` pass a timeout. This topic describes some ways this can happen, and how to help prevent it.
 
 ## Linear Comparison Without Backtracking
 

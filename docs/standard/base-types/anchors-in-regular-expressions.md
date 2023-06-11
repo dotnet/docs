@@ -91,7 +91,7 @@ Anchors, or atomic zero-width assertions, specify a position in the string where
 
 ## End of String Only: \z  
 
- The `\z` anchor specifies that a match must occur at the end of the input string. Like the `$` language element, `\z` ignores the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> option. Unlike the `\Z` language element, `\z` is not satisfied by a `\n` character at the end of a string. Therefore, it can only match the last line of the input string.  
+ The `\z` anchor specifies that a match must occur at the end of the input string. Like the `$` language element, `\z` ignores the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> option. Unlike the `\Z` language element, `\z` is not satisfied by a `\n` character at the end of a string. Therefore, it can only match the end of the input string.
   
  The following example uses the `\z` anchor in a regular expression that is otherwise identical to the example in the previous section, which extracts information about the years during which some professional baseball teams existed. The example tries to match each of five elements in a string array with the regular expression pattern `^((\w+(\s?)){2,}),\s(\w+\s\w+),(\s\d{4}(-(\d{4}|present))?,?)+\r?\z`. Two of the strings end with carriage return and line feed characters, one ends with a line feed character, and two end with neither a carriage return nor a line feed character. As the output shows, only the strings without a carriage return or line feed character match the pattern.  
   

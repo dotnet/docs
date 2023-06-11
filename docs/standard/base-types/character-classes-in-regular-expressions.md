@@ -156,7 +156,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 
 ## Any character: .  
 
- The period character (.) matches any character except `\n` (the newline character, `\u000A`), with the following two qualifications:  
+ The period character (.) matches any character except `\n` (the newline character), with the following two qualifications:  
   
 - If a regular expression pattern is modified by the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option, or if the portion of the pattern that contains the `.` character class is modified by the `s` option, `.` matches any character. For more information, see [Regular Expression Options](regular-expression-options.md).  
   
@@ -166,7 +166,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
      [!code-vb[Conceptual.Regex.Language.CharacterClasses#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/any2.vb#5)]  
   
 > [!NOTE]
-> Because it matches any character except `\n`, the `.` character class also matches `\r` (the carriage return character, `\u000D`).  
+> Because it matches any character except `\n`, the `.` character class also matches `\r` (the carriage return character).
   
 - In a positive or negative character group, a period is treated as a literal period character, and not as a character class. For more information, see [Positive Character Group](#PositiveGroup) and [Negative Character Group](#NegativeGroup) earlier in this topic. The following example provides an illustration by defining a regular expression that includes the period character (`.`) both as a character class and as a member of a positive character group. The regular expression `\b.*[.?!;:](\s|\z)` begins at a word boundary, matches any character until it encounters one of five punctuation marks, including a period, and then matches either a white-space character or the end of the string.  
   

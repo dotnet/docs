@@ -135,7 +135,7 @@ If you do not set a time-out value explicitly, the default time-out value is det
 
 ### Atomic groups
 
- The `(?>` *subexpression*`)` language element prevents backtracking into the subexpression. Once it has successfully matched, it will not give up any part of its match to subsequent backtracking. For example, in the pattern `(?>\w*\d*)1`, if the `1` cannot be matched, the `\d*` will not give up any of its match even if that means it would allow the `1` to successfully match. Atomic groups can help prevent the performance problems associated with failed matches.
+ The `(?>` *subexpression*`)` language element is an atomic grouping. It prevents backtracking into the subexpression. Once this language element has successfully matched, it will not give up any part of its match to subsequent backtracking. For example, in the pattern `(?>\w*\d*)1`, if the `1` cannot be matched, the `\d*` will not give up any of its match even if that means it would allow the `1` to successfully match. Atomic groups can help prevent the performance problems associated with failed matches.
 
  The following example illustrates how suppressing backtracking improves performance when using nested quantifiers. It measures the time required for the regular expression engine to determine that an input string does not match two regular expressions. The first regular expression uses backtracking to attempt to match a string that contains one or more occurrences of one or more hexadecimal digits, followed by a colon, followed by one or more hexadecimal digits, followed by two colons. The second regular expression is identical to the first, except that it disables backtracking. As the output from the example shows, the performance improvement from disabling backtracking is significant.
 
@@ -205,6 +205,16 @@ If you do not set a time-out value explicitly, the default time-out value is det
 |`((?=[A-Z])\w+\.)*`|Match the pattern of one or more word characters followed by a period zero or more times. The initial word character must be alphabetical.|
 |`[A-Z]\w*`|Match an alphabetical character followed by zero or more word characters.|
 |`$`|End the match at the end of the input string.|
+
+### General Performance Considerations
+
+The following suggestions are not specifically to prevent excessive backtracking, but may help increase the performance of your regular expression:
+
+1. If a pattern will be heavily used, precompile it. The best way to do this is to use the [regular expression source generator](regular-expression-source-generators.md) to precompile it. If the source generator is not available for your app, use the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option.
+
+1. If matches are known to always start beyond a certain offset into the pattern, consider passing the offset to the regular expression engine. For example, using the overload <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%29?displayProperty=nameWithType>. This will reduce the amount of the text the engine needs to consider.
+
+1. If matches are typically found near the end of a very large input, <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType> might find it more quickly. However, use this with care. The regular expression engines are most heavily optimized for left to right operation, so you should test to ensure this is an improvement. It may be better to pass in the offset instead.
 
 ## See also
 

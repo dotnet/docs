@@ -266,7 +266,7 @@
 | Azure.Communication.Calling | NuGet [1.0.0-beta.36](https://www.nuget.org/packages/Azure.Communication.Calling/1.0.0-beta.36) |  |  |
 | Azure.Communication.CallingServer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.CallingServer/1.0.0-beta.3) |  |  |
 | Azure.Core.Expressions.DataFactory | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.Core.Expressions.DataFactory/1.0.0-beta.2) |  |  |
-| Azure.Storage.DataMovement.Blobs | NuGet [12.0.0-beta.2](https://www.nuget.org/packages/Azure.Storage.DataMovement.Blobs/12.0.0-beta.2) |  |  |
+| Data Movement - Blobs | NuGet [12.0.0-beta.2](https://www.nuget.org/packages/Azure.Storage.DataMovement.Blobs/12.0.0-beta.2) |  |  |
 | IoT Edge Function | NuGet [3.5.3](https://www.nuget.org/packages/Microsoft.Azure.IoT.Edge.Function/3.5.3) |  |  |
 | IoT Models Repository | NuGet [1.0.0-preview.5](https://www.nuget.org/packages/Azure.IoT.ModelsRepository/1.0.0-preview.5) |  |  |
 | Management - Purview | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Purview/1.0.1) |  |  |

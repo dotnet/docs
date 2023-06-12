@@ -77,7 +77,7 @@ Starting with .NET 8.0, library authors use the `IsAotCompatible` property to in
 </PropertyGroup>
 ```
 
-The preceding configuration would assign a default of `true` the following properties:
+The preceding configuration assigns a default of `true` to the following properties:
 
 - `IsTrimmable`
 - `EnableTrimAnalyzer`

@@ -163,7 +163,7 @@ The install scripts do not update the registry on Windows. They just download th
   
   The `--quality` option works only in combination with `--channel`, but is not applicable for the `STS` and `LTS` channels and will be ignored if one of those channels is used.
 
-  For an SDK installation, use a `channel` value that is in `A.B` or `A.B.Cxx` format. 
+  For an SDK installation, use a `channel` value that is in `A.B` or `A.B.Cxx` format.
   For a runtime installation, use `channel` in `A.B` format.
 
   Don't use both `version` and `quality` parameters. When `quality` is specified, the script determines the proper version on its own.

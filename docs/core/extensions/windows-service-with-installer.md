@@ -282,7 +282,7 @@ With these updates, the setup project has been configured to delegate its *Insta
 
 To test the installer, publish the _App.WindowsService_ project. Right-click the project in the **Solution Explorer**, and then select **Publish**. Once published with the profile you created in the previous tutorial, the executable will be in the publish directory. Next, you **Build** the setup project and run the installer.
 
-You need to run the installation as an Administrator. To do this, right-click the MSI file, and then select **Run as administrator**.
+You need to run the installation as an administrator. To do this, right-click the MSI file, and then select **Run as administrator**.
 
 Once the service is installed, you can open **Services** to see the service running. To uninstall the service, use the **Windows Add or Remove Programs** feature to call the installer.
 
@@ -290,9 +290,9 @@ Once the service is installed, you can open **Services** to see the service runn
 
 To test the installer, expand **Solution Configurations** in Visual Studio, and select **Release** (assuming **Debug** was selected). Build the solution and then right-click on the setup project and select **Build**. By default, setup projects are not part of the build.
 
-Select **View > Output**, and ensure that the **Show output from** dropdown has **Build** selected. The Microsoft Installer (MSI) file path is displayed. Copy the path, and open the installer. Run the installer.
+Select **View > Output**, and ensure that the **Show output from** dropdown has **Build** selected. The Microsoft Installer (MSI) file path is displayed. Copy the path and open the installer. Run the installer.
 
-You need to run the installation as an Administrator. To do this, right-click the MSI file, and then select **Run as administrator**.
+You need to run the installation as an administrator. To do this, right-click the MSI file, and then select **Run as administrator**.
 
 :::row:::
     :::column:::

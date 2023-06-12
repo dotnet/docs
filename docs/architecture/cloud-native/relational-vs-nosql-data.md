@@ -189,12 +189,12 @@ When replatforming monolithic applications to a cloud-native architecture, devel
 
 | Provider | Description  |
 | :-------- | :-------- |
-| SQL API | Proprietary API that supports JSON documents and SQL-based queries |
+| NoSQL API | API for NoSQL stores data in document format |
 | Mongo DB API | Supports Mongo DB APIs and JSON documents|
 | Gremlin API | Supports Gremlin API with graph-based nodes and edge data representations |
 | Cassandra API | Supports Casandra API for wide-column data representations |  
 | Table API  | Supports Azure Table Storage with premium enhancements |  
-| etcd API | Enables Cosmos DB as a backing store for Azure Kubernetes Service clusters |
+| PostgreSQL API | Managed service for running PostgreSQL at any scale |
 
 Development teams can migrate existing Mongo, Gremlin, or Cassandra databases into Cosmos DB with minimal changes to data or code. For new apps, development teams can choose among open-source options or the built-in SQL API model.
 

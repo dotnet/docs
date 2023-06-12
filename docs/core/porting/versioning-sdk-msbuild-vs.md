@@ -79,8 +79,8 @@ Starting with .NET SDK 7.0.100 and .NET SDK 6.0.300, a policy has been put into 
 
 > [!NOTE]
 > The table depicts how these versioning rules will be applied going forward, starting with .NET SDK 7.0.100 and .NET SDK 6.0.300. It also depicts how the policy would have applied to previously shipped versions of the .NET SDK, had it been in place then. However, the requirements for previous versions of the SDK don't change &mdash; that is, the minimum required version of Visual Studio for .NET SDK 6.0.100 or 6.0.200 remains 16.10.
-> 
-> <sup>1</sup> There was a breaking change in 7.0.300 that will block Razor and Blazor development using 7.0.300 or newer .NET SDKs with 17.5 and older Visual Studio versions. See more details [here](https://github.com/dotnet/razor/issues/8718)
+
+> <sup>1</sup> There was a breaking change in 7.0.300 for Blazor and Razor development that requires a 17.6 or newer Visual Studio. See more details [here](https://github.com/dotnet/razor/issues/8718)
 
 To ensure consistent tooling, you should use `dotnet build` rather than `msbuild` to build your application when possible.
 

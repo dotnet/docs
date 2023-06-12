@@ -7,7 +7,7 @@ ms.date: 06/12/2023
 
 Previously, if you called <xref:System.Runtime.InteropServices.ComWrappers.GetOrCreateObjectForComInstance(System.IntPtr,System.Runtime.InteropServices.CreateObjectFlags)?displayProperty=fullName?displayProperty=nameWithType> on a <xref:System.Runtime.InteropServices.ComWrappers> instance with the <xref:System.Runtime.InteropServices.CreateObjectFlags.Unwrap?displayProperty=nameWithType> flag, a <xref:Microsoft.Office.InfoPath.ManagedObjectWrapper> was unwrapped from *any* <xref:System.Runtime.InteropServices.ComWrappers> instance. Now when the flag is specified, only wrappers from the <xref:System.Runtime.InteropServices.ComWrappers> instance that `GetOrCreateObjectFromComInstance` was called on are unwrapped.
 
-The <xref:System.Runtime.InteropServices.CreateObjectFlags.Unwrap> flag was the only API that reached "across" <xref:System.Runtime.InteropServices.ComWrappers> instances, so its behavior was unintuitive. Additionally, the new <xref:System.Runtime.InteropServices.ComWrappers.TryGetObject(System.IntPtr,System.Object@)?displayProperty=nameWithType> API unwraps a COM object from any <xref:System.Runtime.InteropServices.ComWrappers> instance.
+The <xref:System.Runtime.InteropServices.CreateObjectFlags.Unwrap> flag was the only API that reached "across" <xref:System.Runtime.InteropServices.ComWrappers> instances, so its behavior was unintuitive. Additionally, the new <xref:System.Runtime.InteropServices.ComWrappers.TryGetObject(System.IntPtr,System.Object@)?displayProperty=nameWithType> API is available to unwrap a COM object from any <xref:System.Runtime.InteropServices.ComWrappers> instance.
 
 ## Previous behavior
 

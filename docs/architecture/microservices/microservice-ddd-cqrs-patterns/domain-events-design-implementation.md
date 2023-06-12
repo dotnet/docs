@@ -221,7 +221,7 @@ Vaughn Vernon says the following in [Effective Aggregate Design. Part II: Making
 
 This rationale is based on embracing fine-grained transactions instead of transactions spanning many aggregates or entities. The idea is that in the second case, the number of database locks will be substantial in large-scale applications with high scalability needs. Embracing the fact that highly scalable applications need not have instant transactional consistency between multiple aggregates helps with accepting the concept of eventual consistency. Atomic changes are often not needed by the business, and it is in any case the responsibility of the domain experts to say whether particular operations need atomic transactions or not. If an operation always needs an atomic transaction between multiple aggregates, you might ask whether your aggregate should be larger or wasn't correctly designed.
 
-However, other developers and architects like Jimmy Bogard are okay with spanning a single transaction across several aggregates—but only when those additional aggregates are related to side effects for the same original command. For instance, in [A better domain events pattern](https://lostechies.com/jimmybogard/2014/05/13/a-better-domain-events-pattern/), Bogard says this:
+However, other developers and architects like Jimmy Bogard are okay with spanning a single transaction across several aggregates—but only when those additional aggregates are related to side effects for the same original command. For instance, in [A better domain events pattern](https://lostechies.com/jimmybogard/2014/05/13/a-better-domain-events-pattern/), B ogard says this:
 
 > Typically, I want the side effects of a domain event to occur within the same logical transaction, but not necessarily in the same scope of raising the domain event \[...\] Just before we commit our transaction, we dispatch our events to their respective handlers.
 
@@ -241,41 +241,13 @@ Once you're able to dispatch or publish the events, you need some kind of artifa
 
 One approach is a real messaging system or even an event bus, possibly based on a service bus as opposed to in-memory events. However, for the first case, real messaging would be overkill for processing domain events, since you just need to process those events within the same process (that is, within the same domain and application layer).
 
-Another way to map events to multiple event handlers is by using types registration in an IoC container so you can dynamically infer where to dispatch the events. In other words, you need to know what event handlers need to get a specific event. Figure 7-16 shows a simplified approach for this approach.
-
-![Diagram showing a domain event dispatcher sending events to the appropriate handlers.](./media/domain-events-design-implementation/domain-event-dispatcher.png)
-
-**Figure 7-16**. Domain event dispatcher using IoC
-
-You can build all the plumbing and artifacts to implement that approach by yourself. However, you can also use available libraries like [MediatR](https://github.com/jbogard/MediatR) that uses your IoC container under the covers. You can therefore directly use the predefined interfaces and the mediator object's publish/dispatch methods.
-
-In code, you first need to register the event handler types in your IoC container, as shown in the following example at [eShopOnContainers Ordering microservice](https://github.com/dotnet-architecture/eShopOnContainers/blob/2c94c382696aeab97cb28743a1637ab8d31d494a/src/Services/Ordering/Ordering.API/Infrastructure/AutofacModules/MediatorModule.cs):
-
-```csharp
-public class MediatorModule : Autofac.Module
-{
-    protected override void Load(ContainerBuilder builder)
-    {
-        // Other registrations ...
-        // Register the DomainEventHandler classes (they implement IAsyncNotificationHandler<>)
-        // in assembly holding the Domain Events
-        builder.RegisterAssemblyTypes(typeof(ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler)
-                                       .GetTypeInfo().Assembly)
-                                         .AsClosedTypesOf(typeof(IAsyncNotificationHandler<>));
-        // Other registrations ...
-    }
-}
-```
-
-The code first identifies the assembly that contains the domain event handlers by locating the assembly that holds any of the handlers (using `typeof(ValidateOrAddBuyerAggregateWhenXxxx)`, but you could have chosen any other event handler to locate the assembly). Since all the event handlers implement the IAsyncNotificationHandler interface, the code then just searches for those types and registers all the event handlers.
-
 ### How to subscribe to domain events
 
-When you use MediatR, each event handler must use an event type that is provided on the generic parameter of the INotificationHandler interface, as you can see in the following code:
+When you use MediatR, each event handler must use an event type that is provided on the generic parameter of the `INotificationHandler` interface, as you can see in the following code:
 
 ```csharp
 public class ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler
-  : IAsyncNotificationHandler<OrderStartedDomainEvent>
+  : INotificationHandler<OrderStartedDomainEvent>
 ```
 
 Based on the relationship between event and event handler, which can be considered the subscription, the MediatR artifact can discover all the event handlers for each event and trigger each one of those event handlers.
@@ -286,47 +258,56 @@ Finally, the event handler usually implements application layer code that uses i
 
 ```csharp
 public class ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler
-                   : INotificationHandler<OrderStartedDomainEvent>
+    : INotificationHandler<OrderStartedDomainEvent>
 {
-    private readonly ILoggerFactory _logger;
-    private readonly IBuyerRepository<Buyer> _buyerRepository;
-    private readonly IIdentityService _identityService;
+    private readonly ILogger _logger;
+    private readonly IBuyerRepository _buyerRepository;
+    private readonly IOrderingIntegrationEventService _orderingIntegrationEventService;
 
     public ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler(
-        ILoggerFactory logger,
-        IBuyerRepository<Buyer> buyerRepository,
-        IIdentityService identityService)
+        ILogger<ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler> logger,
+        IBuyerRepository buyerRepository,
+        IOrderingIntegrationEventService orderingIntegrationEventService)
     {
-        // ...Parameter validations...
+        _buyerRepository = buyerRepository ?? throw new ArgumentNullException(nameof(buyerRepository));
+        _orderingIntegrationEventService = orderingIntegrationEventService ?? throw new ArgumentNullException(nameof(orderingIntegrationEventService));
+        _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     }
 
-    public async Task HandleAsync(OrderStartedDomainEvent orderStartedEvent)
+    public async Task Handle(
+        OrderStartedDomainEvent domainEvent, CancellationToken cancellationToken)
     {
-        var cardTypeId = (orderStartedEvent.CardTypeId != 0) ? orderStartedEvent.CardTypeId : 1;
-        var userGuid = _identityService.GetUserIdentity();
-        var buyer = await _buyerRepository.FindAsync(userGuid);
-        bool buyerOriginallyExisted = (buyer == null) ? false : true;
+        var cardTypeId = domainEvent.CardTypeId != 0 ? domainEvent.CardTypeId : 1;
+        var buyer = await _buyerRepository.FindAsync(domainEvent.UserId);
+        var buyerExisted = buyer is not null;
 
-        if (!buyerOriginallyExisted)
+        if (!buyerExisted)
         {
-            buyer = new Buyer(userGuid);
+            buyer = new Buyer(domainEvent.UserId, domainEvent.UserName);
         }
 
-        buyer.VerifyOrAddPaymentMethod(cardTypeId,
-                                       $"Payment Method on {DateTime.UtcNow}",
-                                       orderStartedEvent.CardNumber,
-                                       orderStartedEvent.CardSecurityNumber,
-                                       orderStartedEvent.CardHolderName,
-                                       orderStartedEvent.CardExpiration,
-                                       orderStartedEvent.Order.Id);
+        buyer.VerifyOrAddPaymentMethod(
+            cardTypeId,
+            $"Payment Method on {DateTime.UtcNow}",
+            domainEvent.CardNumber,
+            domainEvent.CardSecurityNumber,
+            domainEvent.CardHolderName,
+            domainEvent.CardExpiration,
+            domainEvent.Order.Id);
 
-        var buyerUpdated = buyerOriginallyExisted ? _buyerRepository.Update(buyer)
-                                                                      : _buyerRepository.Add(buyer);
+        var buyerUpdated = buyerExisted ?
+            _buyerRepository.Update(buyer) :
+            _buyerRepository.Add(buyer);
 
         await _buyerRepository.UnitOfWork
-                .SaveEntitiesAsync();
+            .SaveEntitiesAsync(cancellationToken);
 
-        // Logging code using buyerUpdated info, etc.
+        var integrationEvent = new OrderStatusChangedToSubmittedIntegrationEvent(
+            domainEvent.Order.Id, domainEvent.Order.OrderStatus.Name, buyer.Name);
+        await _orderingIntegrationEventService.AddAndSaveEventAsync(integrationEvent);
+
+        OrderingApiTrace.LogOrderBuyerAndPaymentValidatedOrUpdated(
+            _logger, buyerUpdated.Id, domainEvent.Order.Id);
     }
 }
 ```

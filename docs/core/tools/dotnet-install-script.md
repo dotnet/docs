@@ -151,13 +151,23 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-Quality|--quality <QUALITY>`**
 
-  Downloads the latest build of the specified quality in the channel. The possible values are: `daily`, `signed`, `validated`, `preview`, `GA`. Works only in combination with `channel`. Not applicable for STS and LTS channels and will be ignored if one of those channels is used.
+  Downloads the latest build of the specified quality in the channel. The possible values are: `daily`, `signed`, `validated`, `preview`, and `GA`. Most users should use `daily`, `preview`, or `GA` qualities.
 
-  For an SDK installation, use `channel` in `A.B` or `A.B.Cxx` format.
+  The different quality values signal different stages of the release process of the SDK or Runtime installed.
+
+  * `daily` - these builds are the latest builds of the SDK or Runtime. They are built every day and are not tested. They are not recommended for production use, but can often be used to test specific features or fixes immediately after they are merged into the product. Note that these builds are from the `dotnet/installer` repo, and so if you're looking for fixes from `dotnet/sdk` you must wait for code to flow and be merged from SDK to Installer before it appears in a daily build.
+  * `signed` - these builds are Microsoft-signed, but not validated or publicly released. Signed builds are candidates for validation, preview, and GA release. This quality level is not really intended for public usage.
+  * `validated` - these builds have had a level of internal testing done on them, and may be candidates for a preview or GA release, but have not yet been released under those labels. This quality level is not really intended for public usage.
+  * `preview` - these builds are the monthly public releases of the next version of .NET, and are intended for public usage. They are not recommended for production use, but are intended to allow users to experiment and test the new major version before release.
+  * `GA` - these builds are the final stable releases of the .NET SDK and Runtime, and are intended for public usage as well as production support.
+  
+  The `--quality` option works only in combination with `--channel`, but is not applicable for the `STS` and `LTS` channels and will be ignored if one of those channels is used.
+
+  For an SDK installation, use a `channel` value that is in `A.B` or `A.B.Cxx` format. 
   For a runtime installation, use `channel` in `A.B` format.
 
   Don't use both `version` and `quality` parameters. When `quality` is specified, the script determines the proper version on its own.
-  
+
   Available since the 5.0 release.
 
 - **`-Runtime|--runtime <RUNTIME>`**

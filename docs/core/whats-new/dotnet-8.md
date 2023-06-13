@@ -2,7 +2,7 @@
 title: What's new in .NET 8
 description: Learn about the new .NET features introduced in .NET 8.
 titleSuffix: ""
-ms.date: 05/16/2023
+ms.date: 06/13/2023
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
@@ -11,7 +11,7 @@ author: gewarren
 
 .NET 8 is the successor to [.NET 7](dotnet-7.md). It will be [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 8 here](https://dotnet.microsoft.com/download/dotnet).
 
-This article has been updated for .NET 8 Preview 4.
+This article has been updated for .NET 8 Preview 5.
 
 > [!IMPORTANT]
 >
@@ -27,6 +27,8 @@ This section contains the following subtopics:
 - ['dotnet workload clean' command](#dotnet-workload-clean-command)
 - ['dotnet publish' and 'dotnet pack' assets](#dotnet-publish-and-dotnet-pack-assets)
 - [Template engine](#template-engine)
+- [Source Link](#source-link)
+- [Source-build SDK](#source-build-sdk)
 
 ### Terminal build output
 
@@ -121,6 +123,14 @@ The [template engine](https://github.com/dotnet/templating) provides a more secu
 - For `dotnet new`, provide information about the template package owner. Ownership is verified by the NuGet portal and can be considered a trustworthy characteristic.
 
 - For `dotnet search` and `dotnet uninstall`, indicate whether a template is installed from a package that's "trusted"&mdash;that is, it uses a [reserved prefix](/nuget/nuget-org/id-prefix-reservation).
+
+### Source Link
+
+[Source Link](../../standard/library-guidance/sourcelink.md) is now included in the .NET SDK. The goal is that by bundling Source Link into the SDK, instead of requiring a separate `<PackageReference>` for the package, more packages will include this information by default, resulting in better IDE experiences for developers all up.
+
+### Source-build SDK
+
+The Linux distribution-built (source-build) SDK now has the capability to build self-contained applications using the source-build runtime packages. The distribution-specific runtime package is bundled with the source-build SDK. During self-contained deployment, this bundled runtime package will be referenced, thereby enabling the feature for users.
 
 ## Serialization
 
@@ -275,6 +285,7 @@ This section contains the following subtopics:
 - [Performance-focused types](#performance-focused-types)
 - [System.Numerics and System.Runtime.Intrinsics](#systemnumerics-and-systemruntimeintrinsics)
 - [Data validation](#data-validation)
+- [Metrics](#metrics)
 
 ### Time abstraction
 
@@ -460,7 +471,57 @@ The <xref:System.ComponentModel.DataAnnotations?displayProperty=fullName> namesp
 | <xref:System.ComponentModel.DataAnnotations.Base64StringAttribute?displayProperty=nameWithType> | Validates that a string is a valid Base64 representation. |
 | <xref:System.ComponentModel.DataAnnotations.AllowedValuesAttribute?displayProperty=nameWithType><br/><xref:System.ComponentModel.DataAnnotations.DeniedValuesAttribute?displayProperty=nameWithType> | Specify allow lists and deny lists, respectively. For example, `[AllowedValues("apple", "banana", "mango")]`. |
 
+### Metrics
+
+#### Meter and Instrument tags
+
+New APIs let you attach key-value pair tags to <xref:System.Diagnostics.Metrics.Meter> and <xref:System.Diagnostics.Metrics.Instrument> objects when you create them. Aggregators of published metric measurements can use the tags to differentiate the aggregated values.
+
+```csharp
+MeterOptions options = new MeterOptions("name")
+{
+    Version = "version",
+    // Attach these tags to the created meter
+    Tags = new TagList() { { "MeterKey1", "MeterValue1" }, { "MeterKey2", "MeterValue2" } }
+};
+
+Meter meter = meterFactory.Create(options);
+
+Instrument instrument = meter.CreateCounter<int>("counter", null, null, new TagList() { { "counterKey1", "counterValue1" } });
+instrument.Add(1);
+```
+
+The new APIs include:
+
+- <xref:System.Diagnostics.Metrics.MeterOptions>
+- <xref:System.Diagnostics.Metrics.Meter.%23ctor(System.Diagnostics.Metrics.MeterOptions)>
+- <xref:System.Diagnostics.Metrics.Meter.CreateCounter%601%601(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})>
+
 ## Extension libraries
+
+### Metrics
+
+You can register the new <xref:Microsoft.Extensions.Diagnostics.Metrics.IMeterFactory> interface in dependency injection (DI) containers and use it to create <xref:System.Diagnostics.Metrics.Meter> objects in an isolated manner.
+
+Register the <xref:Microsoft.Extensions.Diagnostics.Metrics.IMeterFactory> to the DI container using the default meter factory implementation:
+
+```csharp
+// 'services' is the DI IServiceCollection.
+services.AddMetrics();
+```
+
+Consumers can then obtain the meter factory and use it to create a new <xref:System.Diagnostics.Metrics.Meter> object.
+
+```csharp
+IMeterFactory meterFactory = serviceProvider.GetRequiredService<IMeterFactory>();
+
+MeterOptions options = new MeterOptions("MeterName")
+{
+    Version = "version",
+};
+
+Meter meter = meterFactory.Create(options);
+```
 
 ### ValidateOptionsResultBuilder type
 
@@ -511,7 +572,7 @@ MethodInfo refreshMemoryLimitMethod = typeof(GC).GetMethod(
 refreshMemoryLimitMethod.Invoke(null, Array<object>.Empty);
 ```
 
-## Source generator for configuration binding
+## Configuration-binding source generator
 
 [ASP.NET Core uses configuration providers](/aspnet/core/fundamentals/configuration/) to perform app configuration. The providers read key-value pair data from different sources, such as settings files, environment variables, and Azure Key Vault. <xref:Microsoft.Extensions.Configuration.ConfigurationBinder> is the type that maps configuration values to strongly typed objects. Previously, the mapping was performed using reflection, which can cause issues for trimming and Native AOT. Starting in .NET 8, you can opt into the use of a source generator to generate the binding implementations. The generator probes for <xref:Microsoft.Extensions.Options.ConfigureOptions%601.Configure(%600)>, <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind%2A>, and <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Get%2A> calls to retrieve type info from. When the generator is enabled in a project, the compiler implicitly chooses generated methods over the pre-existing reflection-based framework implementations.
 
@@ -664,12 +725,15 @@ The default console app template now includes support for AOT out-of-the-box. To
 - SIMD improvements
 - Support for AVX-512 ISA extensions (see [Vector512 and AVX-512](#vector512-and-avx-512))
 - Cloud-native improvements
-- Profile-guided optimization (PGO) improvements
 - JIT throughput improvements
 - Loop and general optimizations
 - Optimized access for fields marked with <xref:System.ThreadStaticAttribute>
 - Consecutive register allocation. Arm64 has two instructions for table vector lookup, which require that all entities in their tuple operands are present in consecutive registers.
 - JIT/NativeAOT can now unroll and auto-vectorize some memory operations with SIMD, such as comparison, copying, and zeroing, if it can determine their sizes at compile time.
+
+In addition, dynamic profile-guided optimization (PGO) has been improved and is now enabled by default. You no longer need to use a [runtime configuration option](../runtime-config/compilation.md#profile-guided-optimization) to enable it. Dynamic PGO works hand-in-hand with tiered compilation to further optimize code based on additional instrumentation that's put in place during tier 0.
+
+On average, dynamic PGO increases performance by about 15%. In a benchmark suite of ~4600 tests, 23% saw performance improvements of 20% or more.
 
 ## .NET container images
 
@@ -680,6 +744,7 @@ The following changes have been made to .NET container images for .NET 8:
 - [Preview images](#preview-images)
 - [Chiseled Ubuntu images](#chiseled-ubuntu-images)
 - [Build multi-platform container images](#build-multi-platform-container-images)
+- [Alpine ASP.NET Docker composite images](#alpine-aspnet-docker-composite-images)
 
 ### Debian 12
 
@@ -727,6 +792,12 @@ RUN dotnet publish -a $TARGETARCH --self-contained false --no-restore -o /app
 
 For more information, see the [Improving multi-platform container support](https://devblogs.microsoft.com/dotnet/improving-multiplatform-container-support/) blog post.
 
+### Alpine ASP.NET Docker composite images
+
+As part of an effort to improve containerization performance, a new ASP.NET Alpine-based Docker image with a composite version of the runtime is available. This composite is built by compiling multiple MSIL assemblies into a single ready-to-run (R2R) output binary. Because these assemblies embedded into a single image, jitting takes less time, and the startup performance of apps improves. The other big advantage of the composite over the regular ASP.NET image is that the composite images have a smaller size on disk.
+
+However, all these benefits don't come without a caveat. Since composites have multiple assemblies embedded into one, they have tighter version coupling. Apps can't use custom versions of framework or ASP.NET binaries.
+
 ## .NET on Linux
 
 ### Minimum support baselines for Linux
@@ -740,6 +811,21 @@ For more information, see [Red Hat Enterprise Linux Family support](https://gith
 In previous .NET versions, you could build .NET from source, but it required you to create a "source tarball" from the [dotnet/installer](https://github.com/dotnet/installer) repo commit that corresponded to a release. In .NET 8, that's no longer necessary and you can build .NET on Linux directly from the [dotnet/dotnet](https://github.com/dotnet/dotnet) repository. That repo uses [dotnet/source-build](https://github.com/dotnet/source-build) to build .NET runtimes, tools, and SDKs. This is the same build that Red Hat and Canonical use to build .NET.
 
 Building in a container is the easiest approach for most people, since the `dotnet-buildtools/prereqs` container images contain all the required dependencies. For more information, see the [build instructions](https://github.com/dotnet/dotnet#building).
+
+## Code analysis
+
+.NET 8 includes several new code analyzers and fixers to help verify that you're using .NET library APIs correctly and efficiently. The following table summarizes the new analyzers.
+
+| Rule ID | Category    | Description  |
+|---------|-------------|--------------|
+|CA1856   | Performance | Fires when the <xref:System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute> attribute is not applied correctly on a parameter. |
+|CA1857   | Performance | Fires when a parameter is annotated with <xref:System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute> but the provided argument isn't a constant. |
+| [CA1858](../../fundamentals/code-analysis/quality-rules/ca1858.md) | Performance | To determine whether a string starts with a given prefix, it's better to call <xref:System.String.StartsWith%2A?displayProperty=nameWithType> than to call <xref:System.String.IndexOf%2A?displayProperty=nameWithType> and then compare the result with zero. |
+| [CA1859](../../fundamentals/code-analysis/quality-rules/ca1859.md) | Performance | This rule recommends upgrading the type of specific local variables, fields, properties, method parameters, and method return types from interface or abstract types to concrete types when possible. Using concrete types leads to higher quality generated code. |
+| [CA1860](../../fundamentals/code-analysis/quality-rules/ca1860.md) | Performance | To determine whether a collection type has any elements, it's better to use `Length`, `Count`, or `IsEmpty` than to call <xref:System.Linq.Enumerable.Any%2A?displayProperty=nameWithType>. |
+| [CA1861](../../fundamentals/code-analysis/quality-rules/ca1861.md) | Performance | Constant arrays passed as arguments aren't reused when called repeatedly, which implies a new array is created each time. To improve performance, consider extracting the array to a static readonly field. |
+| CA2021 | Reliability | <xref:System.Linq.Enumerable.Cast%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.OfType%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> require compatible types to function correctly. Widening and user-defined conversions aren't supported with generic types. |
+| CA1510-CA1513 | Maintainability | Throw helpers are simpler and more efficient than an `if` block constructing a new exception instance. These four analyzers were created for the following exceptions: <xref:System.ArgumentNullException>, <xref:System.ArgumentException>, <xref:System.ArgumentOutOfRangeException> and <xref:System.ObjectDisposedException>. |
 
 ## NuGet
 

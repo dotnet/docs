@@ -78,8 +78,10 @@ items:
       items:
       - name: IntPtr no longer used for function pointer types
         href: reflection/8.0/function-pointer-reflection.md
-    - name: SDK
+    - name: SDK and MSBuild
       items:
+      - name: .NET tool roll-forward behavior
+        href: sdk/8.0/tool-rollforward.md
       - name: CLI console output uses UTF-8
         href: sdk/8.0/console-encoding.md
       - name: Console encoding not UTF-8 after completion
@@ -88,6 +90,8 @@ items:
         href: sdk/8.0/dotnet-pack-config.md
       - name: "'dotnet publish' uses Release configuration"
         href: sdk/8.0/dotnet-publish-config.md
+      - name: MSBuild respects DOTNET_CLI_UI_LANGUAGE
+        href: sdk/8.0/msbuild-language.md
       - name: Runtime-specific apps not self-contained
         href: sdk/8.0/runtimespecific-app-default.md
     - name: Serialization
@@ -1362,6 +1366,8 @@ items:
     items:
     - name: .NET 8
       items:
+      - name: .NET tool roll-forward behavior
+        href: sdk/8.0/tool-rollforward.md
       - name: CLI console output uses UTF-8
         href: sdk/8.0/console-encoding.md
       - name: Console encoding not UTF-8 after completion
@@ -1370,6 +1376,8 @@ items:
         href: sdk/8.0/dotnet-pack-config.md
       - name: "'dotnet publish' uses Release configuration"
         href: sdk/8.0/dotnet-publish-config.md
+      - name: MSBuild respects DOTNET_CLI_UI_LANGUAGE
+        href: sdk/8.0/msbuild-language.md
       - name: Runtime-specific apps not self-contained
         href: sdk/8.0/runtimespecific-app-default.md
     - name: .NET 7

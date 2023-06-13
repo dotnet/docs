@@ -1,5 +1,5 @@
 ---
-title: Reentrancy
+title: Request scheduling
 description: Learn about reentrancy in .NET Orleans.
 ms.date: 03/16/2022
 ---
@@ -155,8 +155,7 @@ In the end, the answer will depend on the specifics of the application.
 
 ### Interleaving methods
 
-Grain interface methods marked with <xref:Orleans.Concurrency.AlwaysInterleaveAttribute> will always interleave any other request and may always be interleaved by any other request, even requests for non-`[AlwaysInterleave]` methods.
-This is true regardless of whether the grain is reentrant or not. Consider the following example:
+Grain interface methods marked with <xref:Orleans.Concurrency.AlwaysInterleaveAttribute> will always interleave any other request and may always be interleaved by any other request, even requests for non-`[AlwaysInterleave]` methods. This is true regardless of whether the grain is reentrant or not. Consider the following example:
 
 ```csharp
 public interface ISlowpokeGrain : IGrainWithIntegerKey
@@ -193,7 +192,23 @@ await Task.WhenAll(slowpoke.GoSlow(), slowpoke.GoSlow());
 await Task.WhenAll(slowpoke.GoFast(), slowpoke.GoFast(), slowpoke.GoFast());
 ```
 
-Calls to `GoSlow` will not be interleaved, so the execution of the two `GoSlow()` calls will take around 20 seconds. On the other hand, because `GoFast` is marked <xref:Orleans.Concurrency.AlwaysInterleaveAttribute>, the three calls to it will be executed concurrently and will complete in approximately 10 seconds total instead of requiring at least 30 seconds to complete.
+Calls to `GoSlow` will not be interleaved, so the execution of the two `GoSlow()` calls will take around 20 seconds. On the other hand, `GoFast` is marked <xref:Orleans.Concurrency.AlwaysInterleaveAttribute>, and the three calls to it will be executed concurrently, completing in approximately 10 seconds total instead of requiring at least 30 seconds to complete.
+
+### Readonly methods
+
+When a grain method doesn't modify the grain state, it's safe to execute concurrently with other requests. The <xref:Orleans.Concurrency.ReadOnlyAttribute> indicates that a method doesn't modify the state of a grain. Marking methods as `ReadOnly` allows Orleans to perform several optimizations that may significantly improve the performance of your app. Consider the following example:
+
+```csharp
+public interface IMyGrain : IGrainWithIntegerKey
+{
+    Task<int> IncrementCount(int incrementBy);
+
+    [ReadOnly]
+    Task<int> GetCount();
+}
+```
+
+The `GetCount` method doesn't modify the grain state, as such it is marked with `ReadOnly`. Callers that await this method invocation will not be blocked by other requests to the grain.
 
 ### Reentrancy using a predicate
 

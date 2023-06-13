@@ -85,7 +85,6 @@ For more information, see the [Conditional operator](~/_csharpstandard/standard/
 
 Specifications for newer features are:
 
-- [Conditional ref expressions (C# 7.2)](~/_csharplang/proposals/csharp-7.2/conditional-ref.md)
 - [Target-typed conditional expression (C# 9.0)](~/_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md)
 
 ## See also

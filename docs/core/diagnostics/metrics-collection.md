@@ -115,9 +115,14 @@ For more information, see [dotnet-counters](dotnet-counters.md). To learn more a
 
 ### Overview
 
-[OpenTelemetry](https://opentelemetry.io/) is a vendor-neutral open-source project supported by the [Cloud Native Computing Foundation](https://www.cncf.io/) that seeks to standardize generating and collecting telemetry for cloud-native software. The .NET metric APIs are compatible with OpenTelemetry and make integration straightforward. [Azure Monitor](/azure/azure-monitor/app/opentelemetry-overview) and many major APM vendors have endorsed OpenTelemetry.
+[OpenTelemetry](https://opentelemetry.io/):
 
-This example shows one of the integrations available for OpenTelemetry metrics using the popular OSS [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/) projects. The metrics data flow:
+- Is a vendor-neutral open-source project supported by the [Cloud Native Computing Foundation](https://www.cncf.io/).
+- Standardizes generating and collecting telemetry for cloud-native software.
+- Works with .NET using the .NET metric APIs.
+- Is endorsed by [Azure Monitor](/azure/azure-monitor/app/opentelemetry-overview) and many APM vendors.
+
+This tutorial shows one of the integrations available for OpenTelemetry metrics using the OSS [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/) projects. The metrics data flow:
 
 1. The .NET metric APIs collect measurements from the example app.
 1. The OpenTelemetry library running in the app aggregates the measurements.
@@ -129,7 +134,10 @@ This example shows one of the integrations available for OpenTelemetry metrics u
    - Reads the data
    - Stores the data in a database for long-term persistence. Prometheus refers to this as *scraping* an endpoint.
 
-1. The Grafana server, potentially running on a different machine, queries the data stored in Prometheus and displays it on a web-based monitoring dashboard.
+1. The Grafana server:
+
+   - Can run on a different machine.
+   - Queries the data stored in Prometheus and displays it on a web-based monitoring dashboard.
 
 ### Configure the example app to use OpenTelemetry's Prometheus exporter
 
@@ -144,7 +152,7 @@ dotnet add package OpenTelemetry.Exporter.Prometheus --version 1.5.0-alpha.2
 ```dotnetcli
 dotnet add package OpenTelemetry.Exporter.Prometheus.AspNetCore --prerelease
 ```
-<!-- --prerelease will add the latest prerelease and tutorial won't need to be updated every month. However, maybe add a note to remove prerelease when it's released -->
+<!-- --prerelease will add the latest prerelease and tutorial won't need to be updated every month.  remove --prerelease when it's released -->
 
 <!-- It didn't add two libs for me.
 > [!NOTE]
@@ -160,9 +168,9 @@ Update `Program.cs` with OpenTelemetry configuration:
 
 In the preceding code:
 
-- `AddMeter("HatCo.HatStore")` configures OpenTelemetry to transmit all the metrics collected by the Meter the app defined.
+- `AddMeter("HatCo.HatStore")` configures OpenTelemetry to transmit all the metrics collected by the Meter defined in the app.
 - `AddPrometheusExporter` configures OpenTelemetry to:
-  - Expose Prometheus' metrics endpoint on port 9184
+  - Expose Prometheus' metrics endpoint on port `9184`
   - Use the HttpListener.
 
 See the [OpenTelemetry documentation](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/docs/metrics/getting-started-prometheus-grafana#collect-metrics-using-prometheus) for more information about OpenTelemetry configuration options. The OpenTelemetry documentation shows hosting options for ASP.NET apps.
@@ -249,8 +257,8 @@ The following highlighted code configures which instruments the listener receive
 
 The delegate can examine the instrument to decide whether to subscribe. For example, the delegate can check the name, the Meter, or any other public property. <!-- The previous version was way too long to MT. Is this better? --> <xref:System.Diagnostics.Metrics.MeterListener.EnableMeasurementEvents%2A> enables receiving measurements from the specified instrument.<!-- recommend deleting the following--> Code that obtains a reference to an instrument by another approach:
 
-* Is not typically done.
-* Can invoke `EnableMeasurementEvents()` at any time with the reference.
+- Is not typically done.
+- Can invoke `EnableMeasurementEvents()` at any time with the reference.
 
 <!--
 ```csharp
@@ -272,8 +280,8 @@ The generic parameter controls which data type of measurement is received by the
 When `MeterListener.EnableMeasurementEvents` is called, a `state` object can be provided as
 one of the parameters. That object is arbitrary. If you provide a state object in that call, then it is stored with that instrument and returned to as the `state` parameter in the callback. This is intended both as a convenience and as a performance optimization. Often listeners need to:
 
-* Create an object for each instrument that is storing measurements in memory.
-* Have code to do calculations on those measurements.
+- Create an object for each instrument that is storing measurements in memory.
+- Have code to do calculations on those measurements.
 
 <!--Why are we explaining low perf options? Metrics should be ultra low cost. Can we remove this? Folks that need this approach are smart enough to figure it out. -->
 Alternatively, create a `Dictionary` that maps from the instrument to the storage object and look it up on every measurement. Using a `Dictionary` is much slower than accessing it from `state`.
@@ -291,4 +299,7 @@ using MeterListener meterListener = new MeterListener();
 When the app is done listening, disposing the listener stops the flow of callbacks and releases any internal references to the listener object. The `using` keyword used when declaring `meterListener` causes `Dispose` to be called when the variable goes out of scope. Note that `Dispose` is only promising that it won't initiate new callbacks. Because callbacks
 occur on different threads, there may still be callbacks in progress after the call to `Dispose` returns.
 
-To guarantee that a certain region of code in your callback isn't currently executing and won't execute in the future, thread synchronization must be added. `Dispose` doesn't include the synchronization by default because it adds performance overhead in every measurement callback&mdash;and `MeterListener` is designed as a highly performance conscious API.
+To guarantee that a certain region of code in your callback isn't currently executing and won't execute in the future, thread synchronization must be added. `Dispose` doesn't include synchronization by default because:
+
+- Synchronization adds performance overhead in every measurement callback.
+- `MeterListener` is designed as a highly performance conscious API.

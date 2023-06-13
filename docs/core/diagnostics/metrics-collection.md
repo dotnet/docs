@@ -189,7 +189,13 @@ Reload the configuration or restart the Prometheus server, then confirm that Ope
 
 On the Graph page of the Prometheus web portal, enter `hats_sold` in the expression text box. In the graph tab, Prometheus shows the steadily increasing value of the "hats-sold" Counter that is being emitted by our example app.
 
-[![Prometheus hats sold graph](media/prometheus-hat-sold-metric.png)](media/prometheus-hat-sold-metric2.png)
+[![Prometheus hats sold graph](media/prometheus-hat-sold-metric2.png)
+2
+[![Prometheus hats sold graph2](~/docs/core/diagnostics/media/prometheus-hat-sold-metric2.png)
+3
+[![Prometheus hats sold graph3](~/core/diagnostics/media/prometheus-hat-sold-metric2.png)
+4
+[![Prometheus hats sold graph3](~/diagnostics/media/prometheus-hat-sold-metric2.png)
 
 If the Prometheus server hasn't been scraping the example app for long, you may need to wait for data to accumulate. You can adjust the time range control in the upper left to "1m" (1 minute) to get a better view of recent data.
 

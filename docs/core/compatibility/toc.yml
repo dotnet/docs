@@ -70,6 +70,8 @@ items:
         href: globalization/8.0/twodigityearmax-default.md
     - name: Interop
       items:
+      - name: CreateObjectFlags.Unwrap only unwraps on target instance
+        href: interop/8.0/comwrappers-unwrap.md
       - name: SafeHandle types must have public constructor
         href: interop/8.0/safehandle-constructor.md
     - name: Reflection
@@ -1280,6 +1282,8 @@ items:
     items:
     - name: .NET 8
       items:
+      - name: CreateObjectFlags.Unwrap only unwraps on target instance
+        href: interop/8.0/comwrappers-unwrap.md
       - name: SafeHandle types must have public constructor
         href: interop/8.0/safehandle-constructor.md
     - name: .NET 7

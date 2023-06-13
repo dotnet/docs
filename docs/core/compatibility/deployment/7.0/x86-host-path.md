@@ -7,6 +7,8 @@ ms.date: 06/22/2022
 
 The x86 versions of .NET installers for Windows have been modified to no longer add the x86 host location (*Program Files (x86)\dotnet*) to the `PATH` environment variable on 64-bit Windows systems.
 
+With this change, if the x86 host location was added to `PATH` by a prior version of .NET, the x86 versions of .NET installers and .NET updates will remove it on upgrade.
+
 This change affects .NET Core 3.1, .NET 6, .NET 7, and future versions.
 
 This change only affects the `dotnet` host. It doesn't affect 32-bit/x86 application hosts, like *myapp.exe*. Those hosts will continue to find the x86 runtime correctly (assuming it's installed).
@@ -17,7 +19,7 @@ The x86 host location was added to `PATH`, even on x64/Arm64 systems. Depending 
 
 ## New behavior
 
-Going forward, the x86 host location is only added to the `PATH` environment variable on x86 systems.
+Going forward, the x86 host location is only added to the `PATH` environment variable on x86 systems and will be removed on upgrade of .NET or Visual Studio on any x64 and arm64 systems.
 
 ## Version introduced
 

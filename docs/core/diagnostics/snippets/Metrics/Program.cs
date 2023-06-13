@@ -36,7 +36,7 @@ class Program
 }
 // </snippet_1>
 #elif ML
-// </snippet_ml>
+// <snippet_ml>
 using System.Diagnostics.Metrics;
 
 class Program
@@ -49,6 +49,7 @@ class Program
 
     static void Main(string[] args)
     {
+        // <snippet_uml>
         using MeterListener meterListener = new MeterListener();
         meterListener.InstrumentPublished = (instrument, listener) =>
         {
@@ -57,7 +58,10 @@ class Program
                 listener.EnableMeasurementEvents(instrument);
             }
         };
+        // </snippet_uml>
+        // <snippet_sme>
         meterListener.SetMeasurementEventCallback<int>(OnMeasurementRecorded);
+        // Start the meterListener, enabling callbacks.
         meterListener.Start();
 
         var rand = new Random();
@@ -75,6 +79,7 @@ class Program
     {
         Console.WriteLine($"{instrument.Name} recorded measurement {measurement}");
     }
+    // </snippet_sme>
 }
 // </snippet_ml>
 #endif

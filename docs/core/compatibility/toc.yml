@@ -28,6 +28,8 @@ items:
         href: core-libraries/8.0/obsolete-apis-with-custom-diagnostics.md
       - name: Backslash mapping in Unix file paths
         href: core-libraries/8.0/file-path-backslash.md
+      - name: Base64.DecodeFromUtf8 methods ignore whitespace
+        href: core-libraries/8.0/decodefromutf8-whitespace.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
       - name: GC.GetGeneration might return Int32.MaxValue
@@ -1002,6 +1004,8 @@ items:
         href: core-libraries/8.0/obsolete-apis-with-custom-diagnostics.md
       - name: Backslash mapping in Unix file paths
         href: core-libraries/8.0/file-path-backslash.md
+      - name: Base64.DecodeFromUtf8 methods ignore whitespace
+        href: core-libraries/8.0/decodefromutf8-whitespace.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
       - name: GC.GetGeneration might return Int32.MaxValue

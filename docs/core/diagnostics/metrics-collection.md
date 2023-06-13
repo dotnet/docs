@@ -178,47 +178,7 @@ dotnet add package OpenTelemetry.Exporter.Prometheus.AspNetCore --prerelease
 
 Update `Program.cs` with OpenTelemetry configuration:
 
-:::code language="csharp" source="snippets/Metrics/Program.cs":::
-
-:::code language="csharp" source="snippets/diagnosticsource/csharp/Program.cs" id="WholeProgram":::
-
-
-```csharp
-using System;
-using System.Diagnostics.Metrics;
-using System.Threading;
-using OpenTelemetry;
-using OpenTelemetry.Metrics;
-
-class Program
-{
-    static Meter s_meter = new Meter("HatCo.HatStore", "1.0.0");
-    static Counter<int> s_hatsSold =
-               s_meter.CreateCounter<int>(name: "hats-sold",
-                                          unit: "Hats",
-                                   description: "The number of ats sold in our store");
-
-    static void Main(string[] args)
-    {
-        using MeterProvider meterProvider = Sdk.CreateMeterProviderBuilder()
-                .AddMeter("HatCo.HatStore")
-                .AddPrometheusExporter(opt =>
-                {
-                    opt.StartHttpListener = true;
-                    opt.HttpListenerPrefixes = new string[] { $"http://localhost:9184/" };
-                })
-                .Build();
-
-        Console.WriteLine("Press any key to exit");
-        while(!Console.KeyAvailable)
-        {
-            // Pretend our store has a transaction each second that sells 4 hats
-            Thread.Sleep(1000);
-            s_hatsSold.Add(4);
-        }
-    }
-}
-```
+:::code language="csharp" source="snippets/Metrics/Program.cs" id="snippet_1":::
 
 In the preceding code:
 
@@ -243,41 +203,15 @@ dotnet run
 
 Follow the [Prometheus first steps](https://prometheus.io/docs/introduction/first_steps/) to set up your Prometheus server and confirm it is working.
 
-Modify the *prometheus.yml* configuration file so that Prometheus scrapes the metrics endpoint that the example app is exposing. Add this text in the `scrape_configs` section:
+Modify the *prometheus.yml* configuration file so that Prometheus scrapes the metrics endpoint that the example app is exposing. Add the following highlighted text in the `scrape_configs` section:
 
 :::code language="yaml" source="snippets/Metrics/prometheus.yml" highlight="31-99":::
-
-```yaml
-  - job_name: 'OpenTelemetryTest'
-    scrape_interval: 1s # poll very quickly for a more responsive demo
-    static_configs:
-      - targets: ['localhost:9184']
-```
-
-Using the default configuration, `scrape_configs` is similar to the following YAML. <!-- TODO explain ports -->
-
-```yaml
-scrape_configs:
-  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
-  - job_name: "prometheus"
-
-    # metrics_path defaults to '/metrics'
-    # scheme defaults to 'http'.
-
-    static_configs:
-      - targets: ["localhost:9090"]
-
-  - job_name: 'OpenTelemetryTest'
-    scrape_interval: 1s # poll very quickly for a more responsive demo
-    static_configs:
-      - targets: ['localhost:9184']
-```
 
 Reload the configuration or restart the Prometheus server, then confirm that OpenTelemetryTest is in the UP state in the **Status** > **Targets** page of the Prometheus web portal.
 
 On the Graph page of the Prometheus web portal, enter `hats_sold` in the expression text box. In the graph tab, Prometheus shows the steadily increasing value of the "hats-sold" Counter that is being emitted by our example app.
 
-[![Prometheus hats sold graph](media/prometheus-hat-sold-metric.png)](media/prometheus-hat-sold-metric.png)
+[![Prometheus hats sold graph](media/prometheus-hat-sold-metric.png)](media/prometheus-hat-sold-metric2.png)
 
 If the Prometheus server hasn't been scraping the example app for long, you may need to wait for data to accumulate. You can adjust the time range control in the upper left to "1m" (1 minute) to get a better view of recent data.
 
@@ -299,84 +233,40 @@ The .NET <xref:System.Diagnostics.Metrics.MeterListener> API allows creating cus
 
 Modify the code of `Program.cs` to use <xref:System.Diagnostics.Metrics.MeterListener>:
 
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.Metrics;
-using System.Threading;
-
-class Program
-{
-    static Meter s_meter = new Meter("HatCo.HatStore", "1.0.0");
-    static Counter<int> s_hatsSold =
-               s_meter.CreateCounter<int>(name: "hats-sold",
-                                          unit: "Hats",
-                                   description: "The number of ats sold in our store");
-
-    static void Main(string[] args)
-    {
-        using MeterListener meterListener = new MeterListener();
-        meterListener.InstrumentPublished = (instrument, listener) =>
-        {
-            if(instrument.Meter.Name == "HatCo.HatStore")
-            {
-                listener.EnableMeasurementEvents(instrument);
-            }
-        };
-        meterListener.SetMeasurementEventCallback<int>(OnMeasurementRecorded);
-        meterListener.Start();
-
-        Console.WriteLine("Press any key to exit");
-        while(!Console.KeyAvailable)
-        {
-            // Pretend our store has a transaction each second that sells 4 hats
-            Thread.Sleep(1000);
-            s_hatsSold.Add(4);
-        }
-    }
-
-    static void OnMeasurementRecorded<T>(Instrument instrument, T measurement, ReadOnlySpan<KeyValuePair<string,object>> tags, object state)
-    {
-        Console.WriteLine($"{instrument.Name} recorded measurement {measurement}");
-    }
-}
-```
+:::code language="csharp" source="snippets/Metrics/Program.cs" id="snippet_ml":::
 
 The app now runs the custom callback on each measurement:
 
 ```dotnetcli
 > dotnet run
 Press any key to exit
-hats-sold recorded measurement 4
-hats-sold recorded measurement 4
-hats-sold recorded measurement 4
-hats-sold recorded measurement 4
+hats-sold recorded measurement 978
+hats-sold recorded measurement 775
+hats-sold recorded measurement 666
+hats-sold recorded measurement 66
+hats-sold recorded measurement 914
+hats-sold recorded measurement 912
 ...
 ```
 
 ### Explaining the sample code
 
-```csharp
-using MeterListener meterListener = new MeterListener();
-```
+The code snippets in this section come from the preceding sample.
 
-In the preceding code, an instance of the <xref:System.Diagnostics.Metrics.MeterListener> is created to receive measurements. The `using` keyword causes `Dispose` to be called when the `meterListener` goes out of scope.
+In the following highlighted code, an instance of the <xref:System.Diagnostics.Metrics.MeterListener> is created to receive measurements. The `using` keyword causes `Dispose` to be called when the `meterListener` goes out of scope.
 
-```csharp
-meterListener.InstrumentPublished = (instrument, listener) =>
-{
-    if(instrument.Meter.Name == "HatCo.HatStore")
-    {
-        listener.EnableMeasurementEvents(instrument);
-    }
-};
-```
+:::code language="csharp" source="snippets/Metrics/Program.cs" id="snippet_uml" highlight="1":::
 
-The preceding code configured which instruments the listener receives measurements from.<xref:System.Diagnostics.Metrics.MeterListener.InstrumentPublished> is a delegate that is invoked when a new instrument is created within the app.  The delegate can examine the instrument to decide whether to subscribe. For example, the delegate can check the name, the Meter, or any other public property. <!-- The previous version was way too long to MT. Is this better? --> <xref:System.Diagnostics.Metrics.MeterListener.EnableMeasurementEvents%2A> enables receiving measurements from the specified instrument.<!-- recommend deleting the following--> Code that obtains a reference to an instrument by another approach:
+The following highlighted code configures which instruments the listener receives measurements from. <xref:System.Diagnostics.Metrics.MeterListener.InstrumentPublished> is a delegate that is invoked when a new instrument is created within the app. 
+
+:::code language="csharp" source="snippets/Metrics/Program.cs" id="snippet_uml" highlight="2-99":::
+
+The delegate can examine the instrument to decide whether to subscribe. For example, the delegate can check the name, the Meter, or any other public property. <!-- The previous version was way too long to MT. Is this better? --> <xref:System.Diagnostics.Metrics.MeterListener.EnableMeasurementEvents%2A> enables receiving measurements from the specified instrument.<!-- recommend deleting the following--> Code that obtains a reference to an instrument by another approach:
 
 * Is not typically done.
 * Can invoke `EnableMeasurementEvents()` at any time with the reference.
 
+<!--
 ```csharp
 meterListener.SetMeasurementEventCallback<int>(OnMeasurementRecorded);
 ...
@@ -385,8 +275,13 @@ static void OnMeasurementRecorded<T>(Instrument instrument, T measurement, ReadO
     Console.WriteLine($"{instrument.Name} recorded measurement {measurement}");
 }
 ```
+-->
 
-The delegate that is invoked when measurements are received from an instrument is configured by calling <xref:System.Diagnostics.Metrics.MeterListener.SetMeasurementEventCallback%2A>. The generic parameter controls which data type of measurement is received by the callback. For example, a `Counter<int>` generates `int` measurements, `Counter<double>` generates `double` measurements. Instruments can be created with `byte`, `short`, `int`, `long`, `float`, `double`, and `decimal` types. We recommend registering a callback for every data type unless you have scenario-specific knowledge that not all data types are needed. Making repeated calls to `SetMeasurementEventCallback` with different generic arguments may appear a little unusual. The API was designed this way to allow `MeterListeners` to receive measurements with  low performance overhead, typically just a few nanoseconds.
+The delegate that is invoked when measurements are received from an instrument is configured by calling <xref:System.Diagnostics.Metrics.MeterListener.SetMeasurementEventCallback%2A>:
+
+:::code language="csharp" source="snippets/Metrics/Program.cs" id="snippsnippet_smeet_uml" highlight="1":::
+
+The generic parameter controls which data type of measurement is received by the callback. For example, a `Counter<int>` generates `int` measurements, `Counter<double>` generates `double` measurements. Instruments can be created with `byte`, `short`, `int`, `long`, `float`, `double`, and `decimal` types. We recommend registering a callback for every data type unless you have scenario-specific knowledge that not all data types are needed. Making repeated calls to `SetMeasurementEventCallback` with different generic arguments may appear a little unusual. The API was designed this way to allow `MeterListeners` to receive measurements with  low performance overhead, typically just a few nanoseconds.
 
 When `MeterListener.EnableMeasurementEvents` is called, a `state` object can be provided as
 one of the parameters. That object is arbitrary. If you provide a state object in that call, then it is stored with that instrument and returned to as the `state` parameter in the callback. This is intended both as a convenience and as a performance optimization. Often listeners need to:
@@ -408,6 +303,6 @@ using MeterListener meterListener = new MeterListener();
 ```
 
 When the app is done listening, disposing the listener stops the flow of callbacks and releases any internal references to the listener object. The `using` keyword used when declaring `meterListener` causes `Dispose` to be called when the variable goes out of scope. Note that `Dispose` is only promising that it won't initiate new callbacks. Because callbacks
-occur on different threads, there may still be callbacks in progress after the call to `Dispose` returns. 
+occur on different threads, there may still be callbacks in progress after the call to `Dispose` returns.
 
-To guarantee that a certain region of code in your callback isn't currently executing and won't execute in the future, athread synchronization must be added. `Dispose` doesn't include the synchronization by default because it adds performance overhead in every measurement callback&mdash;and `MeterListener` is designed as a highly performance conscious API.
+To guarantee that a certain region of code in your callback isn't currently executing and won't execute in the future, thread synchronization must be added. `Dispose` doesn't include the synchronization by default because it adds performance overhead in every measurement callback&mdash;and `MeterListener` is designed as a highly performance conscious API.

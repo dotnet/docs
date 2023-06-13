@@ -140,7 +140,7 @@ For example, the following order of execution is possible:
 Line 1, line 3, line 2 and line 4.
 That is, the turns from different requests interleave.
 
-If the grain wasn't reentrant, the only possible executions would be: line 1, line 2, line 3, line 4 OR: line 3, line 4, line 1, line 2 (a new request can't start before the previous one finished).
+If the grain wasn't re-entrant, the only possible executions would be: line 1, line 2, line 3, line 4 OR: line 3, line 4, line 1, line 2 (a new request can't start before the previous one finished).
 
 The main tradeoff in choosing between reentrant and nonreentrant grains is the code complexity of making interleaving work correctly, and the difficulty to reason about it.
 

@@ -187,17 +187,19 @@ Modify the *prometheus.yml* configuration file so that Prometheus scrapes the me
 
 Reload the configuration or restart the Prometheus server, then confirm that OpenTelemetryTest is in the UP state in the **Status** > **Targets** page of the Prometheus web portal.
 
-On the Graph page of the Prometheus web portal, enter `hats_sold` in the expression text box. In the graph tab, Prometheus shows the steadily increasing value of the "hats-sold" Counter that is being emitted by our example app.
+On the Graph page of the Prometheus web portal, enter `hats_sold_Hats` in the expression text box. In the graph tab, Prometheus shows the increasing value of the "hats-sold" Counter that is being emitted by the example app.
 
-[![Prometheus hats sold graph](media/prometheus-hat-sold-metric2.png)
-2
-[![Prometheus hats sold graph2](~/docs/core/diagnostics/media/prometheus-hat-sold-metric2.png)
-3
-[![Prometheus hats sold graph3](~/core/diagnostics/media/prometheus-hat-sold-metric2.png)
-4
-[![Prometheus hats sold graph3](~/diagnostics/media/prometheus-hat-sold-metric2.png)
+[![Prometheus hats sold graph](~/docs/core/diagnostics/media/prometheus-hat-sold-metric2.png)
 
-If the Prometheus server hasn't been scraping the example app for long, you may need to wait for data to accumulate. You can adjust the time range control in the upper left to "1m" (1 minute) to get a better view of recent data.
+To find all the available metrics, select the **Open metrics explorer** icon:
+
+[![Open metrics explorer](~/docs/core/diagnostics/media/prometheus-open-metric-exp.png)
+
+The following image shows **hat** entered in the search box:
+
+[![hat](~/docs/core/diagnostics/media/prometheus-search.png)
+
+If the Prometheus server hasn't been scraping the example app for long, you may need to wait for data to accumulate. You can adjust the time range control in the upper left to "1m" to get a one minute view of recent data.
 
 ### Show metrics on a Grafana dashboard
 
@@ -205,11 +207,11 @@ If the Prometheus server hasn't been scraping the example app for long, you may 
 
 2. Create a Grafana dashboard by clicking the **+** icon on the left toolbar in the Grafana web portal, then select **Dashboard**. In the dashboard editor that appears, enter 'Hats Sold/Sec' as the Title and 'rate(hats_sold[5m])' in the PromQL expression field. It should look like this:
 
-   [![Hats sold Grafana dashboard editor](media/grafana-hats-sold-dashboard-editor.png)](media/grafana-hats-sold-dashboard-editor.png)
+   [![Hats sold Grafana dashboard editor](~/docs/core/diagnostics/media/grafana-hats-sold-dashboard-editor.png)](~/docs/core/diagnostics/media/grafana-hats-sold-dashboard-editor.png)
 
 3. Click **Apply** to save and view the new dashboard.
 
-   [![Hats sold Grafana dashboard](media/grafana-hats-sold-dashboard.png)](media/grafana-hats-sold-dashboard.png)
+   [![Hats sold Grafana dashboard](~/docs/core/diagnostics/media/grafana-hats-sold-dashboard.png)](~/docs/core/diagnostics/media/grafana-hats-sold-dashboard.png)
 
 ## Create a custom collection tool using the .NET <xref:System.Diagnostics.Metrics.MeterListener> API
 

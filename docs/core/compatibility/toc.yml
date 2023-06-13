@@ -28,12 +28,16 @@ items:
         href: core-libraries/8.0/obsolete-apis-with-custom-diagnostics.md
       - name: Backslash mapping in Unix file paths
         href: core-libraries/8.0/file-path-backslash.md
+      - name: Base64.DecodeFromUtf8 methods ignore whitespace
+        href: core-libraries/8.0/decodefromutf8-whitespace.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
       - name: GC.GetGeneration might return Int32.MaxValue
         href: core-libraries/8.0/getgeneration-return-value.md
       - name: GetFolderPath behavior on Unix
         href: core-libraries/8.0/getfolderpath-unix.md
+      - name: IndexOfAnyValues renamed to SearchValues
+        href: core-libraries/8.0/indexofanyvalues-renamed.md
       - name: ITypeDescriptorContext nullable annotations
         href: core-libraries/8.0/itypedescriptorcontext-props.md
       - name: Legacy Console.ReadKey removed
@@ -78,8 +82,10 @@ items:
       items:
       - name: IntPtr no longer used for function pointer types
         href: reflection/8.0/function-pointer-reflection.md
-    - name: SDK
+    - name: SDK and MSBuild
       items:
+      - name: .NET tool roll-forward behavior
+        href: sdk/8.0/tool-rollforward.md
       - name: CLI console output uses UTF-8
         href: sdk/8.0/console-encoding.md
       - name: Console encoding not UTF-8 after completion
@@ -88,6 +94,8 @@ items:
         href: sdk/8.0/dotnet-pack-config.md
       - name: "'dotnet publish' uses Release configuration"
         href: sdk/8.0/dotnet-publish-config.md
+      - name: MSBuild respects DOTNET_CLI_UI_LANGUAGE
+        href: sdk/8.0/msbuild-language.md
       - name: Runtime-specific apps not self-contained
         href: sdk/8.0/runtimespecific-app-default.md
     - name: Serialization
@@ -996,12 +1004,16 @@ items:
         href: core-libraries/8.0/obsolete-apis-with-custom-diagnostics.md
       - name: Backslash mapping in Unix file paths
         href: core-libraries/8.0/file-path-backslash.md
+      - name: Base64.DecodeFromUtf8 methods ignore whitespace
+        href: core-libraries/8.0/decodefromutf8-whitespace.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
       - name: GC.GetGeneration might return Int32.MaxValue
         href: core-libraries/8.0/getgeneration-return-value.md
       - name: GetFolderPath behavior on Unix
         href: core-libraries/8.0/getfolderpath-unix.md
+      - name: IndexOfAnyValues renamed to SearchValues
+        href: core-libraries/8.0/indexofanyvalues-renamed.md
       - name: ITypeDescriptorContext nullable annotations
         href: core-libraries/8.0/itypedescriptorcontext-props.md
       - name: Legacy Console.ReadKey removed
@@ -1362,6 +1374,8 @@ items:
     items:
     - name: .NET 8
       items:
+      - name: .NET tool roll-forward behavior
+        href: sdk/8.0/tool-rollforward.md
       - name: CLI console output uses UTF-8
         href: sdk/8.0/console-encoding.md
       - name: Console encoding not UTF-8 after completion
@@ -1370,6 +1384,8 @@ items:
         href: sdk/8.0/dotnet-pack-config.md
       - name: "'dotnet publish' uses Release configuration"
         href: sdk/8.0/dotnet-publish-config.md
+      - name: MSBuild respects DOTNET_CLI_UI_LANGUAGE
+        href: sdk/8.0/msbuild-language.md
       - name: Runtime-specific apps not self-contained
         href: sdk/8.0/runtimespecific-app-default.md
     - name: .NET 7

@@ -1,6 +1,6 @@
 ---
 title: Request scheduling
-description: Learn about reentrancy in .NET Orleans.
+description: Learn about request scheduling in .NET Orleans.
 ms.date: 03/16/2022
 ---
 
@@ -195,7 +195,7 @@ Calls to `GoSlow` aren't interleaved, so the total execution time of the two `Go
 
 ### Readonly methods
 
-When a grain method doesn't modify the grain state, it's safe to execute concurrently with other requests. The <xref:Orleans.Concurrency.ReadOnlyAttribute> indicates that a method doesn't modify the state of a grain. Marking methods as `ReadOnly` allows Orleans to perform several optimizations that may significantly improve the performance of your app. Consider the following example:
+When a grain method doesn't modify the grain state, it's safe to execute concurrently with other requests. The <xref:Orleans.Concurrency.ReadOnlyAttribute> indicates that a method doesn't modify the state of a grain. Marking methods as `ReadOnly` allows Orleans to process your request concurrently with other `ReadOnly` requests, which may significantly improve the performance of your app. Consider the following example:
 
 ```csharp
 public interface IMyGrain : IGrainWithIntegerKey
@@ -207,7 +207,7 @@ public interface IMyGrain : IGrainWithIntegerKey
 }
 ```
 
-The `GetCount` method doesn't modify the grain state, so it's marked with `ReadOnly`. Callers awaiting this method invocation aren't blocked by other requests to the grain, and the method returns immediately.
+The `GetCount` method doesn't modify the grain state, so it's marked with `ReadOnly`. Callers awaiting this method invocation aren't blocked by other `ReadOnly` requests to the grain, and the method returns immediately.
 
 ### Reentrancy using a predicate
 

@@ -144,11 +144,14 @@ This example shows one of the integrations available for OpenTelemetry metrics u
 1. The .NET metric APIs collect measurements from the example app.
 1. The OpenTelemetry library running in the app aggregates the measurements.
 1. The Prometheus exporter library makes the aggregated data available via an HTTP metrics endpoint. 'Exporter' is what OpenTelemetry calls the libraries that transmit telemetry to vendor-specific backends.
-1. A Prometheus server, potentially running on a different machine:
-  - Polls the metrics endpoint
-  - Reads the data
-  - Stores the data in a database for long-term persistence. Prometheus refers to this as *scraping* an endpoint.
-5. The Grafana server, potentially running on a different machine, queries the data stored in Prometheus and displays it on a web-based monitoring dashboard.
+1. A Prometheus server:
+
+- Can run on a different machine
+- Polls the metrics endpoint
+- Reads the data
+- Stores the data in a database for long-term persistence. Prometheus refers to this as *scraping* an endpoint.
+
+1. The Grafana server, potentially running on a different machine, queries the data stored in Prometheus and displays it on a web-based monitoring dashboard.
 
 ### Configure the example app to use OpenTelemetry's Prometheus exporter
 

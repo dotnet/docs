@@ -21,8 +21,7 @@ For more information on custom metric instrumentation and options, see [Compare 
 
 **Prerequisites**: [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or later
 
-Before metrics can be collected, measurements must be produced. This tutorial creates an app that has some basic metric instrumentation. The .NET runtime also has [various metrics built-in](available-counters.md). For more information about creating new metrics using the
-<xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> API, see [the instrumentation tutorial](metrics-instrumentation.md).
+Before metrics can be collected, measurements must be produced. This tutorial creates an app that has some basic metric instrumentation. The .NET runtime also has [various metrics built-in](available-counters.md). For more information about creating new metrics using the <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> API, see [the instrumentation tutorial](metrics-instrumentation.md).
 
 ```dotnetcli
 dotnet new console
@@ -31,28 +30,7 @@ dotnet add package System.Diagnostics.DiagnosticSource
 
 Replace the contents of `Program.cs` with the following code:
 
-```csharp
-using System;
-using System.Diagnostics.Metrics;
-using System.Threading;
-
-class Program
-{
-    static Meter s_meter = new Meter("HatCo.HatStore", "1.0.0");
-    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>("hats-sold");
-
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Press any key to exit");
-        while(!Console.KeyAvailable)
-        {
-            // Pretend our store has a transaction each second that sells 4 hats
-            Thread.Sleep(1000);
-            s_hatsSold.Add(4);
-        }
-    }
-}
-```
+:::code language="csharp" source="snippets/Metrics/Program.cs" id="snippet":::
 
 ## View metrics with dotnet-counters
 

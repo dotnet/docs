@@ -492,7 +492,7 @@ The new APIs include:
 
 - <xref:System.Diagnostics.Metrics.MeterOptions>
 - <xref:System.Diagnostics.Metrics.Meter.%23ctor(System.Diagnostics.Metrics.MeterOptions)>
-- <xref:System.Diagnostics.Metrics.Meter.CreateCounter%601%601(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})>
+- <xref:System.Diagnostics.Metrics.Meter.CreateCounter%60%601(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})>
 
 ## Extension libraries
 

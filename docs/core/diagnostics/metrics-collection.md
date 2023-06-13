@@ -176,7 +176,12 @@ dotnet add package OpenTelemetry.Exporter.Prometheus.AspNetCore --prerelease
 > [!NOTE]
 > This tutorial uses a pre-release build of OpenTelemetry's Prometheus support available at the time of writing.<!-- this is all noise and not needed: The OpenTelemetry project maintainers might make changes prior to the official release. -->
 
-Modify the code of `Program.cs` so that it contains the code to configure OpenTelemetry:
+Update `Program.cs` with OpenTelemetry configuration:
+
+:::code language="csharp" source="snippets/Metrics/Program.cs":::
+
+:::code language="csharp" source="snippets/diagnosticsource/csharp/Program.cs" id="WholeProgram":::
+
 
 ```csharp
 using System;
@@ -217,10 +222,10 @@ class Program
 
 In the preceding code:
 
-* `AddMeter("HatCo.HatStore")` configures OpenTelemetry to transmit all the metrics collected by the Meter our app defined.
-* `AddPrometheusExporter` configures OpenTelemetry to:
-  * Expose Prometheus' metrics endpoint on port 9184
-  * Use the HttpListener.
+- `AddMeter("HatCo.HatStore")` configures OpenTelemetry to transmit all the metrics collected by the Meter the app defined.
+- `AddPrometheusExporter` configures OpenTelemetry to:
+  - Expose Prometheus' metrics endpoint on port 9184
+  - Use the HttpListener.
 
 See the [OpenTelemetry documentation](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/docs/metrics/getting-started-prometheus-grafana#collect-metrics-using-prometheus) for more information about OpenTelemetry configuration options. The OpenTelemetry documentation shows hosting options for ASP.NET apps.
 
@@ -239,6 +244,8 @@ dotnet run
 Follow the [Prometheus first steps](https://prometheus.io/docs/introduction/first_steps/) to set up your Prometheus server and confirm it is working.
 
 Modify the *prometheus.yml* configuration file so that Prometheus scrapes the metrics endpoint that the example app is exposing. Add this text in the `scrape_configs` section:
+
+:::code language="yaml" source="snippets/Metrics/prometheus.yml" highlight="31-99":::
 
 ```yaml
   - job_name: 'OpenTelemetryTest'

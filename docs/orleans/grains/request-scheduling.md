@@ -105,7 +105,7 @@ With reentrancy, the following case becomes a valid execution and the possibilit
 
 ### Case 3: the grain or method is reentrant
 
-:::image type="content" source="grain-persistence/media/reentrancy-scheduling-diagram-03.png" alt-text="Reentrancy scheduling diagram with re-entrant grain or method." lightbox="grain-persistence/media/reentrancy-scheduling-diagram-03.png":::
+:::image type="content" source="grain-persistence/media/reentrancy-scheduling-diagram-03.png" alt-text="Re-entrancy scheduling diagram with re-entrant grain or method." lightbox="grain-persistence/media/reentrancy-scheduling-diagram-03.png":::
 
 In this example, grains *A* and *B* can call each other simultaneously without any potential for request scheduling deadlocks because both grains are *re-entrant*. The following sections provide more details on reentrancy.
 
@@ -142,7 +142,7 @@ That is, the turns from different requests interleave.
 
 If the grain wasn't reentrant, the only possible executions would be: line 1, line 2, line 3, line 4 OR: line 3, line 4, line 1, line 2 (a new request can't start before the previous one finished).
 
-The main tradeoff in choosing between reentrant and non-reentrant grains is the code complexity of making interleaving work correctly, and the difficulty to reason about it.
+The main tradeoff in choosing between reentrant and nonreentrant grains is the code complexity of making interleaving work correctly, and the difficulty to reason about it.
 
 In a trivial case when the grains are stateless and the logic is simple, fewer (but not too few, so that all the hardware threads are used) re-entrant grains should, in general, be slightly more efficient.
 
@@ -207,7 +207,7 @@ public interface IMyGrain : IGrainWithIntegerKey
 }
 ```
 
-The `GetCount` method doesn't modify the grain state, as such it's marked with `ReadOnly`. Callers awaiting this method invocation aren't blocked by other requests to the grain, and the method returns immediately.
+The `GetCount` method doesn't modify the grain state, so it's marked with `ReadOnly`. Callers awaiting this method invocation aren't blocked by other requests to the grain, and the method returns immediately.
 
 ### Reentrancy using a predicate
 

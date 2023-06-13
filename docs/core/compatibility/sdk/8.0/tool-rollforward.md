@@ -29,8 +29,8 @@ A .NET (local) tool is a specific kind of .NET application that's intended to be
 
 ## Recommended action
 
-If this change is undesirable, you can explicitly set the roll-forward policy to `latestPatch` in the [global.json](../../../tools/global-json.md) file.
+If this change is undesirable, you can explicitly set the roll-forward policy to `latestPatch` in the `RollForward` MSBuild property or the `rollForward` property of the runtime configuration file.
 
 ## See also
 
-- [rollForward](../../../tools/global-json.md#rollforward)
+- [rollForward](https://github.com/dotnet/designs/blob/main/accepted/2019/runtime-binding.md#rollforward)

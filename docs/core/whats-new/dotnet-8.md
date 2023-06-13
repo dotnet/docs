@@ -473,8 +473,6 @@ The <xref:System.ComponentModel.DataAnnotations?displayProperty=fullName> namesp
 
 ### Metrics
 
-#### Meter and Instrument tags
-
 New APIs let you attach key-value pair tags to <xref:System.Diagnostics.Metrics.Meter> and <xref:System.Diagnostics.Metrics.Instrument> objects when you create them. Aggregators of published metric measurements can use the tags to differentiate the aggregated values.
 
 ```csharp

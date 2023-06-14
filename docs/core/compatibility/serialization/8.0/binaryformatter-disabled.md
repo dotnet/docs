@@ -1,11 +1,11 @@
 ---
 title: "Breaking change: BinaryFormatter disabled across most project types"
-description: Learn about the .NET 7 breaking change in serialization where serialize and deserialize methods on BinaryFormatter now through an exception at run time.
+description: Learn about the .NET 7 breaking change in serialization where serialize and deserialize methods on BinaryFormatter now throw an exception at run time.
 ms.date: 05/01/2023
 ---
 # BinaryFormatter disabled across most project types
 
-The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(System.IO.Stream,System.Object)?displayProperty=nameWithType> and <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(System.IO.Stream)?displayProperty=nameWithType> methods now through a <xref:System.NotSupportedException> at run time across nearly all project types, including console applications.
+The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(System.IO.Stream,System.Object)?displayProperty=nameWithType> and <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(System.IO.Stream)?displayProperty=nameWithType> methods now throw a <xref:System.NotSupportedException> at run time across nearly all project types, including console applications.
 
 ## Previous behavior
 

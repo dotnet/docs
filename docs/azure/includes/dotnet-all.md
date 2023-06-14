@@ -454,10 +454,10 @@
 | Search - Service | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Service/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Service_10.1.0/sdk/search/Microsoft.Azure.Search.Service/) |
 | Service Bus | NuGet [5.2.0](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus/5.2.0) | [docs](/dotnet/api/overview/azure/Microsoft.Azure.ServiceBus-readme) | GitHub [5.2.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.ServiceBus_5.2.0/sdk/servicebus/Microsoft.Azure.ServiceBus/) |
 | Service Bus | NuGet [6.2.2](https://www.nuget.org/packages/WindowsAzure.ServiceBus/6.2.2) |  |  |
-| SignalR | NuGet [1.21.3](https://www.nuget.org/packages/Microsoft.Azure.SignalR/1.21.3) |  | GitHub [1.21.3](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR) |
-| SignalR - ASP.NET | NuGet [1.21.3](https://www.nuget.org/packages/Microsoft.Azure.SignalR.AspNet/1.21.3) |  | GitHub [1.21.3](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.AspNet) |
+| SignalR | NuGet [1.21.4](https://www.nuget.org/packages/Microsoft.Azure.SignalR/1.21.4) |  | GitHub [1.21.4](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR) |
+| SignalR - ASP.NET | NuGet [1.21.4](https://www.nuget.org/packages/Microsoft.Azure.SignalR.AspNet/1.21.4) |  | GitHub [1.21.4](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.AspNet) |
 | SignalR - Benchmark | NuGet [1.0.0-preview1-10415](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Benchmark/1.0.0-preview1-10415) |  | GitHub [1.0.0-preview1-10415](https://github.com/azure/azure-signalr-bench) |
-| SignalR - Protocols | NuGet [1.21.3](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Protocols/1.21.3) |  | GitHub [1.21.3](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Protocols) |
+| SignalR - Protocols | NuGet [1.21.4](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Protocols/1.21.4) |  | GitHub [1.21.4](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Protocols) |
 | SignalR - Serverless Protocols | NuGet [1.9.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Serverless.Protocols/1.9.0) |  | GitHub [1.9.0](https://github.com/Azure/azure-functions-signalrservice-extension/tree/v1.2.0/src/Microsoft.Azure.SignalR.Serverless.Protocols) |
 | Speech | NuGet [1.29.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.29.0) |  |  |
 | Speech Remote Conversation | NuGet [1.29.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.29.0) |  |  |
@@ -772,7 +772,7 @@
 | Resource Management - Video Analyzer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Azure.Management.VideoAnalyzer/1.0.0-beta.3) |  |  |
 | Resource Management - Workload Monitor | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.WorkloadMonitor/1.0.0-preview) |  |  |
 | Security Insights | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.SecurityInsights/2.0.0) |  | GitHub [2.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.SecurityInsights_2.0.0/sdk/securityinsights/Microsoft.Azure.Management.SecurityInsights/) |
-| SignalR Management | NuGet [1.21.3](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Management/1.21.3) |  | GitHub [1.21.3](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Management) |
+| SignalR Management | NuGet [1.21.4](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Management/1.21.4) |  | GitHub [1.21.4](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Management) |
 | SQL Server Mangement - Key Vault Provider | NuGet [2.4.0](https://www.nuget.org/packages/Microsoft.SqlServer.Management.AlwaysEncrypted.AzureKeyVaultProvider/2.4.0) |  |  |
 | WindowsAzure Management | NuGet [4.1.3](https://www.nuget.org/packages/Microsoft.WindowsAzure.Management/4.1.3) |  |  |
 | WindowsAzure Management - Automation | NuGet [1.0.3](https://www.nuget.org/packages/Microsoft.WindowsAzure.Management.Automation/1.0.3) |  |  |

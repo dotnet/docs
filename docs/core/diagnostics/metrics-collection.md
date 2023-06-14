@@ -194,6 +194,8 @@ To find all the available metrics, select the **Open metrics explorer** icon:
 
 [![Open metrics explorer](~/docs/core/diagnostics/media/prometheus-open-metric-exp.png)
 
+[![hat2](~/docs/core/diagnostics/media/prometheus-open-metric-exp.png)
+
 The following image shows **hat** entered in the search box:
 
 [![hat](~/docs/core/diagnostics/media/prometheus-search.png)

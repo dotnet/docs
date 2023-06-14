@@ -540,10 +540,8 @@
           "operator": "and",
           "operands": [
             {
-              "name": "isAction",
-              "parameters": {
-                "action": "created"
-              }
+              "name": "isPartOfProject",
+              "parameters": {}
             },
             {
               "operator": "not",

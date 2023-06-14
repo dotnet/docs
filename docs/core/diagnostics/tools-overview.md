@@ -6,11 +6,11 @@ ms.topic: overview
 #Customer intent: As a .NET Core developer I want to find the best tools to help me diagnose problems so that I can be productive.
 ---
 
-# .NET Core diagnostic tools
+# .NET diagnostic tools
 
 .NET supports a number of tools that can be used to diagnose your applications.
 
-## IDE / Editors
+## IDEs and editors
 
 ### Visual Studio
 
@@ -18,9 +18,9 @@ ms.topic: overview
 
 ### Visual Studio Code
 
-[Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It supports local and remote [debugging](https://code.visualstudio.com/docs/csharp/debugging) for .NET.
+[Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) is a lightweight but powerful source code editor that runs on your desktop and is available for Windows, macOS, and Linux. It supports local and remote [debugging](https://code.visualstudio.com/docs/csharp/debugging) for .NET.
 
-## CLI Tools
+## CLI tools
 
 ### dotnet-counters
 
@@ -32,7 +32,7 @@ The [dotnet-dump](dotnet-dump.md) tool is a way to collect and analyze Windows a
 
 ### dotnet-gcdump
 
-The [dotnet-gcdump](dotnet-gcdump.md) tool is a way to collect GC (Garbage Collector) dumps of live .NET processes.
+The [dotnet-gcdump](dotnet-gcdump.md) tool is a way to collect garbage collector (GC) dumps of live .NET processes.
 
 ### dotnet-monitor
 
@@ -40,7 +40,7 @@ The [dotnet-monitor](dotnet-monitor.md) tool is a way to monitor .NET applicatio
 
 ### dotnet-trace
 
-.NET Core includes what is called the `EventPipe` through which diagnostics data is exposed. The [dotnet-trace](dotnet-trace.md) tool allows you to consume interesting profiling data from your app that can help in scenarios where you need to root cause apps running slow.
+.NET Core includes `EventPipe`, which exposes diagnostics data. The [dotnet-trace](dotnet-trace.md) tool allows you to consume interesting profiling data from your app that can help in scenarios where you need to root-cause apps running that are running slowly.
 
 ### dotnet-stack
 
@@ -48,13 +48,13 @@ The [dotnet-stack](dotnet-stack.md) tool allows you to quickly print the managed
 
 ### dotnet-symbol
 
-[dotnet-symbol](dotnet-symbol.md) downloads files (symbols, DAC/DBI, host files, etc.) needed to open a core dump or minidump. Use this tool if you need symbols and modules to debug a dump file captured on a different machine.
+[dotnet-symbol](dotnet-symbol.md) downloads files (for example, symbols, DAC/DBI, and host files) needed to open a core dump or minidump. Use this tool if you need symbols and modules to debug a dump file captured on a different machine.
 
 ### dotnet-sos
 
 [dotnet-sos](dotnet-sos.md) installs the [SOS debugging extension](sos-debugging-extension.md) on Linux and macOS (and on Windows if you're using [Windbg/cdb](/windows-hardware/drivers/debugger/debugger-download-tools)).
 
-## Other Tools
+## Other tools
 
 ### PerfCollect
 

@@ -7,9 +7,9 @@ ms.date: 4/29/2022
 
 Code can be instrumented to produce a log, which serves as a record of interesting events that occurred while the program was running. To understand the application's behavior, logs can be reviewed. Logging and tracing both encapsulate this technique. .NET has accumulated several different logging APIs over its history and this article will help you understand what options are available.
 
-The terms logging and tracing are commonly synonymous, the distinction we usually take is that logging output is expected to be collected all the time, and so should have a low overhead. Tracing is typically more invasive and collects more information from deeper parts of the application and .NET runtime, so is either used when diagnosing specific problems, or automatically for short periods of time as part of deeper performance analysis systems.
+The terms "logging" and "tracing" are commonly synonymous. The distinction is that logging output is expected to be collected all the time, and so it should have a low overhead. Tracing is typically more invasive and collects more information from deeper parts of the application and .NET runtime. It's either used when diagnosing specific problems, or automatically for short periods of time as part of deeper performance-analysis systems.
 
-Another pivot on the tracing term is [Distributed Tracing](./distributed-tracing.md) - which collects high-level activity & timing data for request based systems, and correlates the requests across services to give a view of how each request is processed  by the complete system.
+Another pivot on the tracing term is [Distributed tracing](./distributed-tracing.md). Distributed tracing collects high-level activity and timing data for request-based systems and correlates the requests across services to give a view of how each request is processed by the complete system.
 
 ## Key distinctions in logging APIs
 
@@ -36,11 +36,11 @@ Most logging APIs allow log messages to be sent to different destinations called
 
 For most cases, whether adding logging to an existing project or creating a new project, the [ILogger infrastructure](../extensions/logging.md) is a good default choice. `ILogger` supports fast structured logging, flexible configuration, and a collection of [common sinks](../extensions/logging-providers.md#built-in-logging-providers) including the console, which is what you see when running an ASP.NET app. Additionally, the `ILogger` interface can also serve as a facade over many [third party logging implementations](../extensions/logging-providers.md#third-party-logging-providers) that offer rich functionality and extensibility.
 
-ILogger provides the logging story for the Open Telemetry implementation for .NET, which enables egress of logs from you application to a variety of APM systems for further analysis.
+ILogger provides the logging story for the Open Telemetry implementation for .NET, which enables egress of logs from your application to a variety of APM systems for further analysis.
 
 ### EventSource
 
-[EventSource](./eventsource.md) is an older high performance tracing API with structured logging. It was originally designed to integrate well with [Event Tracing for Windows (ETW)](/windows/win32/etw/event-tracing-portal), but was later extended to support [EventPipe](./eventpipe.md) cross-platform tracing and <xref:System.Diagnostics.Tracing.EventListener> for custom sinks. In comparison to `ILogger`, `EventSource` has relatively few pre-made logging sinks and there is no built-in support to configure via separate configuration files. `EventSource` is excellent if you want tighter control over [ETW](/windows/win32/etw/event-tracing-portal) or [EventPipe](./eventpipe.md) integration, but for general purpose logging, `ILogger` is more flexible and easier to use.
+[EventSource](./eventsource.md) is an older, high-performance tracing API with structured logging. It was originally designed to integrate well with [Event Tracing for Windows (ETW)](/windows/win32/etw/event-tracing-portal), but was later extended to support [EventPipe](./eventpipe.md) cross-platform tracing and <xref:System.Diagnostics.Tracing.EventListener> for custom sinks. In comparison to `ILogger`, `EventSource` has relatively few premade logging sinks and there's no built-in support to configure via separate configuration files. `EventSource` is excellent if you want tighter control over [ETW](/windows/win32/etw/event-tracing-portal) or [EventPipe](./eventpipe.md) integration, but for general purpose logging, `ILogger` is more flexible and easier to use.
 
 ### Trace
 

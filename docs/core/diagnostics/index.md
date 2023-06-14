@@ -39,20 +39,20 @@ For most cases, whether adding logging to an existing project or creating a new 
 
 [Distributed Tracing](./distributed-tracing.md) is a specialized form of logging that helps you localize failures and performance issues within applications distributed across multiple machines or processes. This technique tracks requests through an application correlating together work done by different application components and separating it from other work the application may be doing for concurrent requests. It is possible to trace every request and sampling can be optionally employed to bound the performance overhead.
 
-### Collecting Instrumentation
+### Collect instrumentation
 
 There are multiple ways that the instrumentation data can be egressed from the application, including:
 
-- [Open Telemetry](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started-console/README.md) - a cross platform, vendor neutral standard for collecting and exporting telemetry
+- [Open Telemetry](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started-console/README.md) - a cross-platform, vendor-neutral standard for collecting and exporting telemetry
 - [.NET CLI tools](./tools-overview.md) such as [dotnet-counters](./dotnet-counters.md)
 - [dotnet-monitor](./dotnet-monitor.md) - an agent for collecting traces and telemetry
-- 3rd party libraries or app code can read the information from the <xref:System.Diagnostics.Metrics?displayProperty=nameWithType>, <xref:Microsoft.Extensions.Logging.ILogger%601> and <xref:System.Diagnostics.Activity?displayProperty=nameWithType> APIs.
+- Third-party libraries or app code can read the information from the <xref:System.Diagnostics.Metrics?displayProperty=nameWithType>, <xref:Microsoft.Extensions.Logging.ILogger%601>, and <xref:System.Diagnostics.Activity?displayProperty=nameWithType> APIs.
 
-## Specialized Diagnostics
+## Specialized diagnostics
 
-If debugging or observability is not sufficient, .NET supports additional diagnostic mechanisms such as EventSource, Dumps & DiagnosticSource. The [specialized diagnostics](./specialized-diagnostics-overview.md) section provides more details.
+If debugging or observability is not sufficient, .NET supports additional diagnostic mechanisms such as EventSource, Dumps, DiagnosticSource. For more information, see the [specialized diagnostics](./specialized-diagnostics-overview.md) article.
 
-## Diagnostics Tools
+## Diagnostics tools
 
 .NET supports a number of [CLI tools](./tools-overview.md) that can be used to diagnose your applications.
 

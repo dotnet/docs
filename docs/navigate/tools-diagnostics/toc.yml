@@ -342,7 +342,7 @@ items:
         href: ../../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
       - name: Collection
         href: ../../core/diagnostics/distributed-tracing-collection-walkthroughs.md
-    - name: Specialized Diagnostics
+    - name: Specialized diagnostics
       items:
       - name: Overview
         href: ../../core/diagnostics/specialized-diagnostics-overview.md    
@@ -350,7 +350,7 @@ items:
         items:
         - name: Overview
           href: ../../core/diagnostics/eventsource.md
-        - name: Getting started
+        - name: Get started
           href: ../../core/diagnostics/eventsource-getting-started.md
         - name: Instrumentation
           href: ../../core/diagnostics/eventsource-instrumentation.md
@@ -360,7 +360,7 @@ items:
           href: ../../core/diagnostics/eventsource-activity-ids.md
         - name: Well-known event providers
           href: ../../core/diagnostics/well-known-event-providers.md
-        - name: Runtime event Reference
+        - name: Runtime event reference
           items:
           - name: Overview
             href: ../../fundamentals/diagnostics/runtime-events.md
@@ -408,7 +408,7 @@ items:
             href: ../../core/diagnostics/microsoft-diagnostics-netcore-client.md
       - name: DiagnosticSource and DiagnosticListener
         items:
-        - name: Getting started
+        - name: Get started
           href: ../../core/diagnostics/diagnosticsource-diagnosticlistener.md                
     - name: .NET CLI global tools
       items:

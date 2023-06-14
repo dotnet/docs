@@ -194,9 +194,7 @@ To find all the available metrics, select the **Open metrics explorer** icon:
 
 [![Open metrics explorer](~/docs/core/diagnostics/media/prometheus-open-metric-exp.png)
 
-[![hat2](~/docs/core/diagnostics/media/prometheus-open-metric-exp.png)
-
-The following image shows **hat** entered in the search box:
+The following image shows the matching metrics with **hat** entered in the search box:
 
 [![hat](~/docs/core/diagnostics/media/prometheus-search.png)
 
@@ -204,7 +202,7 @@ If the Prometheus server hasn't been scraping the example app for long, you may 
 
 ### Show metrics on a Grafana dashboard
 
-1. Follow [the standard instructions](https://prometheus.io/docs/visualization/grafana/#creating-a-prometheus-graph) to install Grafana and connect it to a Prometheus data source.
+1. Follow the [standard instructions](https://prometheus.io/docs/visualization/grafana/#creating-a-prometheus-graph) to install Grafana and connect it to a Prometheus data source.
 
 2. Create a Grafana dashboard by clicking the **+** icon on the left toolbar in the Grafana web portal, then select **Dashboard**. In the dashboard editor that appears, enter 'Hats Sold/Sec' as the Title and 'rate(hats_sold[5m])' in the PromQL expression field. It should look like this:
 
@@ -222,7 +220,7 @@ Modify the code of `Program.cs` to use <xref:System.Diagnostics.Metrics.MeterLis
 
 :::code language="csharp" source="snippets/Metrics/Program.cs" id="snippet_ml":::
 
-The app now runs the custom callback on each measurement:
+The following output shows the output of the app with custom callback on each measurement:
 
 ```dotnetcli
 > dotnet run
@@ -266,7 +264,7 @@ static void OnMeasurementRecorded<T>(Instrument instrument, T measurement, ReadO
 
 The delegate that is invoked when measurements are received from an instrument is configured by calling <xref:System.Diagnostics.Metrics.MeterListener.SetMeasurementEventCallback%2A>:
 
-:::code language="csharp" source="snippets/Metrics/Program.cs" id="snippsnippet_smeet_uml" highlight="1":::
+:::code language="csharp" source="snippets/Metrics/Program.cs" id="snippet_sme" highlight="1,15-99":::
 
 The generic parameter controls which data type of measurement is received by the callback. For example, a `Counter<int>` generates `int` measurements, `Counter<double>` generates `double` measurements. Instruments can be created with `byte`, `short`, `int`, `long`, `float`, `double`, and `decimal` types. We recommend registering a callback for every data type unless you have scenario-specific knowledge that not all data types are needed. Making repeated calls to `SetMeasurementEventCallback` with different generic arguments may appear a little unusual. The API was designed this way to allow `MeterListeners` to receive measurements with  low performance overhead, typically just a few nanoseconds.
 

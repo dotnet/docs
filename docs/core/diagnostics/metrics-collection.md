@@ -17,9 +17,11 @@ Instrumented code can record numeric measurements, but the measurements usually 
 
 For more information on custom metric instrumentation and options, see [Compare metric APIs](compare-metric-apis.md).
 
-## Create an example app
+## Prerequisites
 
-**Prerequisites**: [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or later
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later
+
+## Create an example app
 
 Before metrics can be collected, measurements must be produced. This tutorial creates an app that has some basic metric instrumentation. The .NET runtime also has [various metrics built-in](available-counters.md). For more information about creating new metrics using the <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> API, see [the instrumentation tutorial](metrics-instrumentation.md).
 
@@ -31,6 +33,8 @@ dotnet add package System.Diagnostics.DiagnosticSource
 Replace the contents of `Program.cs` with the following code:
 
 :::code language="csharp" source="snippets/Metrics/Program.cs" id="snippet":::
+
+The preceding code simulates selling hats at random intervals and random times.
 
 ## View metrics with dotnet-counters
 
@@ -109,10 +113,6 @@ For more information, see [dotnet-counters](dotnet-counters.md). To learn more a
 
 ## View metrics in Grafana with OpenTelemetry and Prometheus
 
-### Prerequisites
-
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later
-
 ### Overview
 
 [OpenTelemetry](https://opentelemetry.io/):
@@ -129,38 +129,26 @@ This tutorial shows one of the integrations available for OpenTelemetry metrics 
 1. The Prometheus exporter library makes the aggregated data available via an HTTP metrics endpoint. 'Exporter' is what OpenTelemetry calls the libraries that transmit telemetry to vendor-specific backends.
 1. A Prometheus server:
 
-   - Can run on a different machine
    - Polls the metrics endpoint
    - Reads the data
    - Stores the data in a database for long-term persistence. Prometheus refers to this as *scraping* an endpoint.
+   - Can run on a different machine
 
 1. The Grafana server:
 
-   - Can run on a different machine.
    - Queries the data stored in Prometheus and displays it on a web-based monitoring dashboard.
+   - Can run on a different machine.
 
 ### Configure the example app to use OpenTelemetry's Prometheus exporter
 
 Add a reference to the OpenTelemetry Prometheus exporter to the example app:
 
-<!-- This package is deprecated, use the AspNetCore package .>
-```dotnetcli
-dotnet add package OpenTelemetry.Exporter.Prometheus --version 1.5.0-alpha.2
-```
--->
-
 ```dotnetcli
 dotnet add package OpenTelemetry.Exporter.Prometheus.AspNetCore --prerelease
 ```
-<!-- --prerelease will add the latest prerelease and tutorial won't need to be updated every month.  remove --prerelease when it's released -->
-
-<!-- It didn't add two libs for me.
-> [!NOTE]
-> The Prometheus exporter library includes a reference to OpenTelemetry's shared library so this command implicitly adds both libraries to the app.
--->
 
 > [!NOTE]
-> This tutorial uses a pre-release build of OpenTelemetry's Prometheus support available at the time of writing.<!-- this is all noise and not needed: The OpenTelemetry project maintainers might make changes prior to the official release. -->
+> This tutorial uses a pre-release build of OpenTelemetry's Prometheus support available at the time of writing.
 
 Update `Program.cs` with OpenTelemetry configuration:
 
@@ -178,8 +166,7 @@ See the [OpenTelemetry documentation](https://github.com/open-telemetry/opentele
 > [!NOTE]
 > At the time of writing, OpenTelemetry only supports metrics emitted using the <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> APIs. However, support for [EventCounters](event-counters.md) is planned.
 
-<!-- EventCounters support? -->
-Run the example app and leave it running:
+Run the app and leave it running so measurements can be collected:
 
 ```dotnetcli
 dotnet run
@@ -187,17 +174,21 @@ dotnet run
 
 ### Set up and configure Prometheus
 
-Follow the [Prometheus first steps](https://prometheus.io/docs/introduction/first_steps/) to set up your Prometheus server and confirm it is working.
+Follow the [Prometheus first steps](https://prometheus.io/docs/introduction/first_steps/) to set up a Prometheus server and confirm it is working.
 
 Modify the *prometheus.yml* configuration file so that Prometheus scrapes the metrics endpoint that the example app is exposing. Add the following highlighted text in the `scrape_configs` section:
 
 :::code language="yaml" source="snippets/Metrics/prometheus.yml" highlight="31-99":::
 
-Reload the configuration or restart the Prometheus server, then confirm that OpenTelemetryTest is in the UP state in the **Status** > **Targets** page of the Prometheus web portal.
+#### Start Prometheus
 
-On the Graph page of the Prometheus web portal, enter `hats_sold_Hats` in the expression text box. In the graph tab, Prometheus shows the increasing value of the "hats-sold" Counter that is being emitted by the example app.
+1. Reload the configuration or restart the Prometheus server.
+1. Confirm that OpenTelemetryTest is in the UP state in the **Status** > **Targets** page of the Prometheus web portal.
+1. On the Graph page of the Prometheus web portal, enter `hats_sold_Hats` in the expression text box. In the graph tab, Prometheus shows the increasing value of the "hats-sold" Counter that is being emitted by the example app.
 
 [![Prometheus hats sold graph](~/docs/core/diagnostics/media/prometheus-hat-sold-metric2.png)
+
+In the preceding image, the graph time is set to **5m**, which is 5 minutes.
 
 To find all the available metrics, select the **Open metrics explorer** icon:
 
@@ -207,7 +198,7 @@ The following image shows **hat** entered in the search box:
 
 [![hat](~/docs/core/diagnostics/media/prometheus-search.png)
 
-If the Prometheus server hasn't been scraping the example app for long, you may need to wait for data to accumulate. You can adjust the time range control in the upper left to "1m" to get a one minute view of recent data.
+If the Prometheus server hasn't been scraping the example app for long, you may need to wait for data to accumulate.
 
 ### Show metrics on a Grafana dashboard
 
@@ -299,7 +290,7 @@ using MeterListener meterListener = new MeterListener();
 When the app is done listening, disposing the listener stops the flow of callbacks and releases any internal references to the listener object. The `using` keyword used when declaring `meterListener` causes `Dispose` to be called when the variable goes out of scope. Note that `Dispose` is only promising that it won't initiate new callbacks. Because callbacks
 occur on different threads, there may still be callbacks in progress after the call to `Dispose` returns.
 
-To guarantee that a certain region of code in your callback isn't currently executing and won't execute in the future, thread synchronization must be added. `Dispose` doesn't include synchronization by default because:
+To guarantee that a certain region of code in the callback isn't currently executing and won't execute in the future, thread synchronization must be added. `Dispose` doesn't include synchronization by default because:
 
 - Synchronization adds performance overhead in every measurement callback.
 - `MeterListener` is designed as a highly performance conscious API.

@@ -6,12 +6,12 @@ using System.Diagnostics.Metrics;
 
 class Program
 {
-    static Meter s_meter = new Meter("HatCo.HatStore", "1.0.0");
+    static Meter s_meter = new("HatCo.HatStore", "1.0.0");
     static Counter<int> s_hatsSold = s_meter.CreateCounter<int>("hats-sold");
 
     static void Main(string[] args)
     {
-        var rand = new Random();
+        var rand = Random.Shared;
         Console.WriteLine("Press any key to exit");
         while (!Console.KeyAvailable)
         {
@@ -30,10 +30,11 @@ using System.Diagnostics.Metrics;
 
 class Program
 {
-    static Meter s_meter = new Meter("HatCo.HatStore", "1.0.0");
-    static Counter<int> s_hatsSold =s_meter.CreateCounter<int>(name: "hats-sold",
-                                                               unit: "Hats",
-                             description: "The number of hats sold in our store");
+    static Meter s_meter = new("HatCo.HatStore", "1.0.0");
+    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>(
+        name: "hats-sold",
+        unit: "Hats",
+        description: "The number of hats sold in our store");
 
     static void Main(string[] args)
     {
@@ -46,7 +47,7 @@ class Program
                 })
                 .Build();
 
-        var rand = new Random();
+        var rand = Random.Shared;
         Console.WriteLine("Press any key to exit");
         while (!Console.KeyAvailable)
         {
@@ -63,19 +64,19 @@ using System.Diagnostics.Metrics;
 
 class Program
 {
-    static Meter s_meter = new Meter("HatCo.HatStore", "1.0.0");
-    static Counter<int> s_hatsSold =
-               s_meter.CreateCounter<int>(name: "hats-sold",
-                                          unit: "Hats",
-                                   description: "The number of ats sold in our store");
+    static Meter s_meter = new("HatCo.HatStore", "1.0.0");
+    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>(
+        name: "hats-sold",
+        unit: "Hats",
+        description: "The number of ats sold in our store");
 
     static void Main(string[] args)
     {
         // <snippet_uml>
-        using MeterListener meterListener = new MeterListener();
+        using MeterListener meterListener = new();
         meterListener.InstrumentPublished = (instrument, listener) =>
         {
-            if (instrument.Meter.Name == "HatCo.HatStore")
+            if (instrument.Meter.Name is "HatCo.HatStore")
             {
                 listener.EnableMeasurementEvents(instrument);
             }
@@ -86,7 +87,7 @@ class Program
         // Start the meterListener, enabling callbacks.
         meterListener.Start();
 
-        var rand = new Random();
+        var rand = Random.Shared;
         Console.WriteLine("Press any key to exit");
         while (!Console.KeyAvailable)
         {
@@ -96,8 +97,11 @@ class Program
         }
     }
 
-    static void OnMeasurementRecorded<T>(Instrument instrument, T measurement,
-                       ReadOnlySpan<KeyValuePair<string, object>> tags, object state)
+    static void OnMeasurementRecorded<T>(
+        Instrument instrument,
+        T measurement,
+        ReadOnlySpan<KeyValuePair<string, object>> tags,
+        object state)
     {
         Console.WriteLine($"{instrument.Name} recorded measurement {measurement}");
     }

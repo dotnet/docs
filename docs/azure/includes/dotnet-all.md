@@ -269,25 +269,9 @@
 | Data Movement - Blobs | NuGet [12.0.0-beta.2](https://www.nuget.org/packages/Azure.Storage.DataMovement.Blobs/12.0.0-beta.2) |  |  |
 | IoT Edge Function | NuGet [3.5.3](https://www.nuget.org/packages/Microsoft.Azure.IoT.Edge.Function/3.5.3) |  |  |
 | IoT Models Repository | NuGet [1.0.0-preview.5](https://www.nuget.org/packages/Azure.IoT.ModelsRepository/1.0.0-preview.5) |  |  |
-| Management - Purview | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Purview/1.0.1) |  |  |
 | Microsoft.Azure.Devices.Authentication | NuGet [2.0.0-preview001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Authentication/2.0.0-preview001) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Kusto | NuGet [1.0.7-Preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kusto/1.0.7-Preview) |  |  |
 | Microsoft.Azure.IoT.Edge.Module | NuGet [3.2.0](https://www.nuget.org/packages/Microsoft.Azure.IoT.Edge.Module/3.2.0) |  |  |
-| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Authorization | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Authorization/1.0.0) |  |  |
-| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Commerce | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Commerce/1.0.0) |  |  |
-| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Compute | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Compute/1.0.0) |  |  |
-| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.DataBoxEdge | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.DataBoxEdge/1.0.0) |  |  |
-| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Dns | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Dns/1.0.0) |  |  |
-| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.EventHubs | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.EventHubs/1.0.0) |  |  |
-| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.IotHub | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.IotHub/1.0.0) |  |  |
-| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.KeyVault | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.KeyVault/1.0.0) |  |  |
-| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Monitor | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Monitor/1.0.0) |  |  |
-| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Network | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Network/1.0.0) |  |  |
-| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.ResourceManager | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.ResourceManager/1.0.0) |  |  |
-| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Storage | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Storage/1.0.0) |  |  |
-| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Subscription | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Subscription/1.0.0) |  |  |
-| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Websites | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Websites/1.0.0) |  |  |
-| Microsoft.Azure.Management.StoragePool | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.StoragePool/1.0.0) |  |  |
 | Microsoft.Azure.WebJobs.CosmosDb.ChangeProcessor | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.ChangeProcessor/1.0.4) |  |  |
 | Microsoft.Azure.WebPubSub.AspNetCore | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.AspNetCore/1.0.0) |  |  |
 | Microsoft.Azure.WebPubSub.Common | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.Common/1.2.0) |  |  |
@@ -326,7 +310,7 @@
 | Azure Stack - Azure Consistent Storage | NuGet [0.10.8-preview](https://www.nuget.org/packages/Microsoft.AzureStack.AzureConsistentStorage/0.10.8-preview) |  |  |
 | Azure.FX | NuGet [0.0.22-alpha](https://www.nuget.org/packages/Azure.FX/0.0.22-alpha) |  |  |
 | Azure.FX.Templates | NuGet [1.2.0](https://www.nuget.org/packages/Azure.FX.Templates/1.2.0) |  |  |
-| Batch | NuGet [15.4.0](https://www.nuget.org/packages/Microsoft.Azure.Batch/15.4.0) |  | GitHub [15.4.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Batch_15.4.0/sdk/batch/Microsoft.Azure.Batch/) |
+| Batch | NuGet [16.0.0](https://www.nuget.org/packages/Microsoft.Azure.Batch/16.0.0) |  | GitHub [16.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Batch_16.0.0/sdk/batch/Microsoft.Azure.Batch/) |
 | Batch - Apps Cryptography | NuGet [1.1.1.4](https://www.nuget.org/packages/Microsoft.Azure.Batch.Apps.Cryptography/1.1.1.4) |  |  |
 | Batch - Conventions Files | NuGet [4.0.0](https://www.nuget.org/packages/Microsoft.Azure.Batch.Conventions.Files/4.0.0) |  | GitHub [4.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Batch.Conventions.Files_4.0.0/sdk/batch/Microsoft.Azure.Batch.Conventions.Files/) |
 | Batch - File Staging | NuGet [9.0.0](https://www.nuget.org/packages/Microsoft.Azure.Batch.FileStaging/9.0.0) |  | GitHub [9.0.0](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/batch/Microsoft.Azure.Batch.FileStaging) |
@@ -692,6 +676,7 @@
 | Management - Power BI Embedded | NuGet [1.1.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.PowerBIEmbedded/1.1.1-preview) |  |  |
 | Management - Private DNS | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.PrivateDns/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.PrivateDns_1.0.0/sdk/privatedns/Microsoft.Azure.Management.PrivateDns/) |
 | Management - Private DNS Fluent | NuGet [1.38.1](https://www.nuget.org/packages/Microsoft.Azure.Management.PrivateDns.Fluent/1.38.1) |  |  |
+| Management - Purview | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Purview/1.0.1) |  |  |
 | Management - Recovery Services | NuGet [4.3.3-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.RecoveryServices/4.3.3-preview) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/recovery-services) | GitHub [4.3.3-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.RecoveryServices_4.3.3-preview/sdk/recoveryservices/Microsoft.Azure.Management.RecoveryServices/) |
 | Management - Redis | NuGet [8.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Redis/8.0.0) |  |  |
 | Management - Redis Fluent | NuGet [1.38.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Redis.Fluent/1.38.1) |  |  |
@@ -732,6 +717,21 @@
 | Management - Traffic Manager Fluent | NuGet [1.38.1](https://www.nuget.org/packages/Microsoft.Azure.Management.TrafficManager.Fluent/1.38.1) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/traffic-manager) |  |
 | Management - Vault Upgrade | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.RecoveryServicesVaultUpgrade/1.0.0-preview) |  |  |
 | Management - WebSites | NuGet [4.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.WebSites/4.0.0) |  | GitHub [4.0.0](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/websites/Microsoft.Azure.Management.WebSites) |
+| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Authorization | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Authorization/1.0.0) |  |  |
+| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Commerce | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Commerce/1.0.0) |  |  |
+| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Compute | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Compute/1.0.0) |  |  |
+| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.DataBoxEdge | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.DataBoxEdge/1.0.0) |  |  |
+| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Dns | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Dns/1.0.0) |  |  |
+| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.EventHubs | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.EventHubs/1.0.0) |  |  |
+| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.IotHub | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.IotHub/1.0.0) |  |  |
+| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.KeyVault | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.KeyVault/1.0.0) |  |  |
+| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Monitor | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Monitor/1.0.0) |  |  |
+| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Network | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Network/1.0.0) |  |  |
+| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.ResourceManager | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.ResourceManager/1.0.0) |  |  |
+| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Storage | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Storage/1.0.0) |  |  |
+| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Subscription | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Subscription/1.0.0) |  |  |
+| Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Websites | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2020_09_01.Websites/1.0.0) |  |  |
+| Microsoft.Azure.Management.StoragePool | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.StoragePool/1.0.0) |  |  |
 | Profiles hybrid_2018_03_01 Management - Authorization | NuGet [0.9.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2018_03_01.Authorization/0.9.0-preview) |  |  |
 | Profiles hybrid_2018_03_01 Management - Compute | NuGet [0.9.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2018_03_01.Compute/0.9.0-preview) |  |  |
 | Profiles hybrid_2018_03_01 Management - DNS | NuGet [0.9.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2018_03_01.Dns/0.9.0-preview) |  |  |

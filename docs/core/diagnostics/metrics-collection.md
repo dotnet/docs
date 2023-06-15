@@ -48,23 +48,8 @@ dotnet tool update -g dotnet-counters
 
 While the example app is running, launch [dotnet-counters](dotnet-counters.md). The following command shows an example of `dotnet-counters` monitoring all metrics from the `HatCo.HatStore` meter. The meter name is case-sensitive. Our sample app was metric-instr.exe, substitute this with the name of your sample app.
 
-dotnet-counters monitor -n metric-instr --counters Hatco.HatStore
-
 ```dotnetcli
-dotnet-counters ps
-```
-
-Output similar to the following is displayed:
-
-```dotnetcli
-10180 dotnet     C:\Program Files\dotnet\dotnet.exe
-19964 metric-instr E:\temp\metric-instr\bin\Debug\netcoreapp3.1\metric-instr.exe
-```
-
-Record the PID of the process name that matches the example app. The following command shows an example of `dotnet-counters` monitoring all metrics from the `HatCo.HatStore` meter using the PID of the sample app. The meter name is case-sensitive.
-
-```dotnetcli
-dotnet-counters monitor -p 19964 HatCo.HatStore
+dotnet-counters monitor -n metric-instr HatCo.HatStore
 ```
 
 Output similar to the following is displayed:

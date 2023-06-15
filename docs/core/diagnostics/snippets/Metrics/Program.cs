@@ -1,4 +1,4 @@
-﻿#define ML  // FIRST // ML SECOND
+﻿#define SECOND  // FIRST // ML SECOND
 #if NEVER
 #elif FIRST
 // <snippet>

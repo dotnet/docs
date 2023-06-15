@@ -306,7 +306,7 @@ Type discriminator identifiers are valid in either `string` or `int` forms, so t
 [JsonDerivedType(typeof(WeatherForecastWithLocalNews), 2)]
 public class WeatherForecastBase { }
 
-var json = JsonSerializer.Serialize(new WeatherForecastWithTimeSeries());
+var json = JsonSerializer.Serialize<WeatherForecastBase>(new WeatherForecastWithTimeSeries());
 Console.WriteLine(json);
 // Sample output:
 //   {
@@ -322,7 +322,7 @@ Console.WriteLine(json);
 Public Class WeatherForecastBase
 End Class
 
-Dim json As String = JsonSerializer.Serialize(New WeatherForecastWithTimeSeries())
+Dim json As String = JsonSerializer.Serialize(Of WeatherForecastBase)(New WeatherForecastWithTimeSeries())
 Console.WriteLine(json)
 ' Sample output:
 '  {

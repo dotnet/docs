@@ -1,4 +1,4 @@
-﻿#define SECOND  // FIRST // ML SECOND
+﻿#define ML  // FIRST // ML SECOND
 #if NEVER
 #elif FIRST
 // <snippet>
@@ -82,6 +82,7 @@ class Program
             }
         };
         // </snippet_uml>
+
         // <snippet_sme>
         meterListener.SetMeasurementEventCallback<int>(OnMeasurementRecorded);
         // Start the meterListener, enabling callbacks.
@@ -101,7 +102,7 @@ class Program
         Instrument instrument,
         T measurement,
         ReadOnlySpan<KeyValuePair<string, object>> tags,
-        object state)
+        object? state)
     {
         Console.WriteLine($"{instrument.Name} recorded measurement {measurement}");
     }

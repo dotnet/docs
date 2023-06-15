@@ -305,10 +305,11 @@ items:
   - name: Diagnostics and instrumentation
     items:
     - name: Overview
+    - displayName: diagnostics, instrumentation
       href: ../../core/diagnostics/index.md
     - name: Managed debuggers
       href: ../../core/diagnostics/managed-debuggers.md
-    - name: Logging & Tracing options
+    - name: Logging & tracing options
       href: ../../core/diagnostics/logging-tracing.md
     - name: ILogger Logging
       href: ../../core/extensions/logging.md  
@@ -336,6 +337,7 @@ items:
       items:
       - name: Overview
         href: ../../core/diagnostics/distributed-tracing.md
+        displayName: distributed tracing
       - name: Concepts
         href: ../../core/diagnostics/distributed-tracing-concepts.md
       - name: Instrumentation
@@ -350,6 +352,7 @@ items:
         items:
         - name: Overview
           href: ../../core/diagnostics/eventsource.md
+          displayName: event source, eventsource
         - name: Get started
           href: ../../core/diagnostics/eventsource-getting-started.md
         - name: Instrumentation
@@ -450,7 +453,7 @@ items:
         href: ../../core/diagnostics/debug-deadlock.md
       - name: Debug ThreadPool starvation
         href: ../../core/diagnostics/debug-threadpool-starvation.md
-      - name: Debug a StackOverflow
+      - name: Debug a stack overflow
         href: ../../core/diagnostics/debug-stackoverflow.md
   - name: Code analysis
     items:

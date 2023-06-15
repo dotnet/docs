@@ -159,7 +159,7 @@ Test the application in the browser using the following steps:
 
     :::image type="content" source="../media/url-shortener.png" alt-text="A screenshot showing the result of the URL shortener launched from Visual Studio.":::
 
-1. Paste the shortened URL into the address bar and press enter. The page should reload and redirect you to [https://microsoft.com](https://microsoft.com).
+1. Paste the shortened URL into the address bar and press enter. The page should reload and redirect you to [https://learn.microsoft.com](https://learn.microsoft.com).
 
 # [Visual Studio Code](#tab/visual-studio-code)
 
@@ -173,6 +173,6 @@ Test the application in the browser using the following steps:
 
     :::image type="content" source="../media/url-shortener.png" alt-text="A screenshot showing the result of the URL shortener launched from Visual Studio Code.":::
 
-1. Paste the shortened URL into the address bar and press enter. The page should reload and redirect you to [https://microsoft.com](https://microsoft.com).
+1. Paste the shortened URL into the address bar and press enter. The page should reload and redirect you to [https://learn.microsoft.com](https://learn.microsoft.com).
 
 ---

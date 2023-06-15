@@ -49,7 +49,7 @@ At the end of the quickstart, you have an app that creates and handles redirects
 
 1. Inside Visual Studio Code, open the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal).
 
-1. Change directories (`cd`) to the project directory.
+1. Change directories (`cd`) directory that will contain the project.
 1. Run the following commands:
 
    ```dotnetcli

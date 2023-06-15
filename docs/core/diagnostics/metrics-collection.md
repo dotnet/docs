@@ -23,7 +23,7 @@ For more information on custom metric instrumentation and options, see [Compare 
 
 ## Create an example app
 
-Before metrics can be collected, measurements must be produced. This tutorial creates an app that has some basic metric instrumentation. The .NET runtime also has [various metrics built-in](available-counters.md). For more information about creating new metrics using the <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> API, see [the instrumentation tutorial](metrics-instrumentation.md).
+Before metrics can be collected, measurements must be produced. This tutorial creates an app that has basic metric instrumentation. The .NET runtime also has [various metrics built-in](available-counters.md). For more information about creating new metrics using the <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> API, see [the instrumentation tutorial](metrics-instrumentation.md).
 
 ```dotnetcli
 dotnet new console
@@ -46,7 +46,7 @@ If the [dotnet-counters](dotnet-counters.md) tool isn't installed, run the follo
 dotnet tool update -g dotnet-counters
 ```
 
-While the example app is running, list the running processes in a second shell to determine the process ID:
+While the example app is running, list the running processes in another console to determine the process ID:
 
 ```dotnetcli
 dotnet-counters ps
@@ -59,7 +59,7 @@ Output similar to the following is displayed:
 19964 metric-instr E:\temp\metric-instr\bin\Debug\netcoreapp3.1\metric-instr.exe
 ```
 
-Find the ID for the process name that matches the example app and have `dotnet-counters` monitor all metrics from the `HatCo.HatStore` meter. The meter name is case-sensitive.
+Record the PID of the process name that matches the example app. The following command shows an example of `dotnet-counters` monitoring all metrics from the `HatCo.HatStore` meter using the PID of the sample app. The meter name is case-sensitive.
 
 ```dotnetcli
 dotnet-counters monitor -p 19964 HatCo.HatStore
@@ -131,7 +131,7 @@ This tutorial shows one of the integrations available for OpenTelemetry metrics 
 
    - Polls the metrics endpoint
    - Reads the data
-   - Stores the data in a database for long-term persistence. Prometheus refers to this as *scraping* an endpoint.
+   - Stores the data in a database for long-term persistence. Prometheus refers to reading and storing data as *scraping* an endpoint.
    - Can run on a different machine
 
 1. The Grafana server:
@@ -184,19 +184,14 @@ Modify the *prometheus.yml* configuration file so that Prometheus scrapes the me
 
 1. Reload the configuration or restart the Prometheus server.
 1. Confirm that OpenTelemetryTest is in the UP state in the **Status** > **Targets** page of the Prometheus web portal.
-1. On the Graph page of the Prometheus web portal, enter `hats_sold_Hats` in the expression text box. In the graph tab, Prometheus shows the increasing value of the "hats-sold" Counter that is being emitted by the example app.
+ [![Prometheus status](~/docs/core/diagnostics/media/prometheus-status.png)
+1. On the Graph page of the Prometheus web portal, enter `hats` in the expression text box and select `hats_sold_Hats`
+[![hat](~/docs/core/diagnostics/media/prometheus-search.png)
+  In the graph tab, Prometheus shows the increasing value of the "hats-sold" Counter that is being emitted by the example app.
 
 [![Prometheus hats sold graph](~/docs/core/diagnostics/media/prometheus-hat-sold-metric2.png)
 
 In the preceding image, the graph time is set to **5m**, which is 5 minutes.
-
-To find all the available metrics, select the **Open metrics explorer** icon:
-
-[![Open metrics explorer](~/docs/core/diagnostics/media/prometheus-open-metric-exp.png)
-
-The following image shows the matching metrics with **hat** entered in the search box:
-
-[![hat](~/docs/core/diagnostics/media/prometheus-search.png)
 
 If the Prometheus server hasn't been scraping the example app for long, you may need to wait for data to accumulate.
 

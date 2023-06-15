@@ -1,4 +1,4 @@
-﻿#define ML  // FIRST // ML SECOND
+﻿#define SECOND  // FIRST // ML SECOND
 #if NEVER
 #elif FIRST
 // <snippet>
@@ -15,7 +15,7 @@ class Program
         Console.WriteLine("Press any key to exit");
         while (!Console.KeyAvailable)
         {
-            // Simulate selling hats.
+            //// Simulate hat selling transactions.
             Thread.Sleep(rand.Next(100, 2500));
             s_hatsSold.Add(rand.Next(0, 1000));
         }
@@ -51,7 +51,7 @@ class Program
         Console.WriteLine("Press any key to exit");
         while (!Console.KeyAvailable)
         {
-            // Simulate selling hats.
+            //// Simulate hat selling transactions.
             Thread.Sleep(rand.Next(100, 2500));
             s_hatsSold.Add(rand.Next(0,1000));
         }
@@ -92,7 +92,7 @@ class Program
         Console.WriteLine("Press any key to exit");
         while (!Console.KeyAvailable)
         {
-            // Simulate selling hats.
+            //// Simulate hat selling transactions.
             Thread.Sleep(rand.Next(100, 2500));
             s_hatsSold.Add(rand.Next(0, 1000));
         }

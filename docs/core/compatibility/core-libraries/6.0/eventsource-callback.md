@@ -38,4 +38,4 @@ It's unlikely that there's a scenario where the previous behavior is desired, an
 
 ## Affected APIs
 
--
+- <xref:System.Diagnostics.Tracing.EventCommand.Disable?displayProperty=fullName>

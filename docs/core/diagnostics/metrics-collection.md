@@ -189,8 +189,7 @@ Modify the *prometheus.yml* configuration file so that Prometheus scrapes the me
 1. On the Graph page of the Prometheus web portal, enter `hats` in the expression text box and select `hats_sold_Hats`
 ![hat](~/docs/core/diagnostics/media/prometheus-search.png)
   In the graph tab, Prometheus shows the increasing value of the "hats-sold" Counter that is being emitted by the example app.
-
-![Prometheus hats sold graph](~/docs/core/diagnostics/media/prometheus-hat-sold-metric2.png)
+  ![Prometheus hats sold graph](~/docs/core/diagnostics/media/prometheus-hat-sold-metric2.png)
 
 In the preceding image, the graph time is set to **5m**, which is 5 minutes.
 
@@ -200,7 +199,7 @@ If the Prometheus server hasn't been scraping the example app for long, you may 
 
 1. Follow the [standard instructions](https://prometheus.io/docs/visualization/grafana/#creating-a-prometheus-graph) to install Grafana and connect it to a Prometheus data source.
 
-2. Create a Grafana dashboard by clicking the **+** icon on the left toolbar in the Grafana web portal, then select **Dashboard**. In the dashboard editor that appears, enter **Hats Sold/Sec** in the **Title** input box and **rate(hats_sold[5m])**  in the PromQL expression field. It should look like this:
+2. Create a Grafana dashboard by clicking the **+** icon on the left toolbar in the Grafana web portal, then select **Dashboard**. In the dashboard editor that appears, enter **Hats Sold/Sec** in the **Title** input box and **rate(hats_sold[5m])**  in the PromQL expression field:
 
    ![Hats sold Grafana dashboard editor](~/docs/core/diagnostics/media/grafana-hats-sold-dashboard-editor.png)
 

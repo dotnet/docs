@@ -31,8 +31,8 @@ To ignore individual properties, use the [[JsonIgnore]](xref:System.Text.Json.Se
 
 The following example shows a type to serialize. It also shows the JSON output:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithIgnoreAttribute":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFWithIgnoreAttribute":::
+:::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithIgnoreAttribute":::
+:::code language="vb" source="snippets/how-to/vb/WeatherForecast.vb" id="WFWithIgnoreAttribute":::
 
 ```json
 {
@@ -50,20 +50,20 @@ You can specify conditional exclusion by setting the [[JsonIgnore]](xref:System.
 
 The following example illustrates the use of the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute's `Condition` property:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/JsonIgnoreAttributeExample.cs" highlight="8,11,14":::
-:::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/JsonIgnoreAttributeExample.vb" :::
+:::code language="csharp" source="snippets/how-to-5-0/csharp/JsonIgnoreAttributeExample.cs" highlight="8,11,14":::
+:::code language="vb" source="snippets/how-to-5-0/vb/JsonIgnoreAttributeExample.vb" :::
 
 ## Ignore all read-only properties
 
 A property is read-only if it contains a public getter but not a public setter. To ignore all read-only properties when serializing, set the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties?displayProperty=nameWithType> to `true`, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeExcludeReadOnlyProperties.cs" id="Serialize":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/SerializeExcludeReadOnlyProperties.vb" id="Serialize":::
+:::code language="csharp" source="snippets/how-to/csharp/SerializeExcludeReadOnlyProperties.cs" id="Serialize":::
+:::code language="vb" source="snippets/how-to/vb/SerializeExcludeReadOnlyProperties.vb" id="Serialize":::
 
 The following example shows a type to serialize. It also shows the JSON output:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithROProperty":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFWithROProperty":::
+:::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithROProperty":::
+:::code language="vb" source="snippets/how-to/vb/WeatherForecast.vb" id="WFWithROProperty":::
 
 ```json
 {
@@ -79,15 +79,15 @@ This option applies only to properties. To ignore read-only fields when [seriali
 
 To ignore all null-value properties, set the <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> property to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull>, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/IgnoreNullOnSerialize.cs" highlight="26":::
-:::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/IgnoreNullOnSerialize.vb" :::
+:::code language="csharp" source="snippets/how-to-5-0/csharp/IgnoreNullOnSerialize.cs" highlight="26":::
+:::code language="vb" source="snippets/how-to-5-0/vb/IgnoreNullOnSerialize.vb" :::
 
 ## Ignore all default-value properties
 
 To prevent serialization of default values in value type properties, set the <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> property to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault>, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/IgnoreValueDefaultOnSerialize.cs" highlight="26":::
-:::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/IgnoreValueDefaultOnSerialize.vb":::
+:::code language="csharp" source="snippets/how-to-5-0/csharp/IgnoreValueDefaultOnSerialize.cs" highlight="26":::
+:::code language="vb" source="snippets/how-to-5-0/vb/IgnoreValueDefaultOnSerialize.vb":::
 
 The <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault> setting also prevents serialization of null-value reference type and nullable value type properties.
 

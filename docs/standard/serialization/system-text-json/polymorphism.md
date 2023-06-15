@@ -27,16 +27,16 @@ In versions prior to .NET 7, `System.Text.Json` _doesn't support_ the serializat
 
 For example, suppose you have a `WeatherForecast` class and a derived class `WeatherForecastDerived`:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WF":::
+:::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WF":::
+:::code language="vb" source="snippets/how-to/vb/WeatherForecast.vb" id="WF":::
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFDerived":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFDerived":::
+:::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFDerived":::
+:::code language="vb" source="snippets/how-to/vb/WeatherForecast.vb" id="WFDerived":::
 
 And suppose the type argument of the `Serialize` method at compile time is `WeatherForecast`:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializePolymorphic.cs" id="SerializeDefault":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/SerializePolymorphic.vb" id="SerializeDefault":::
+:::code language="csharp" source="snippets/how-to/csharp/SerializePolymorphic.cs" id="SerializeDefault":::
+:::code language="vb" source="snippets/how-to/vb/SerializePolymorphic.vb" id="SerializeDefault":::
 
 In this scenario, the `WindSpeed` property is not serialized even if the `weatherForecast` object is a `WeatherForecastDerived` object. Only the base class properties are serialized:
 
@@ -54,13 +54,13 @@ To serialize the properties of the derived type in the preceding example, use on
 
 * Call an overload of <xref:System.Text.Json.JsonSerializer.Serialize%2A> that lets you specify the type at run time:
 
-  :::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializePolymorphic.cs" id="SerializeGetType":::
-  :::code language="vb" source="snippets/system-text-json-how-to/vb/SerializePolymorphic.vb" id="SerializeGetType":::
+  :::code language="csharp" source="snippets/how-to/csharp/SerializePolymorphic.cs" id="SerializeGetType":::
+  :::code language="vb" source="snippets/how-to/vb/SerializePolymorphic.vb" id="SerializeGetType":::
 
 * Declare the object to be serialized as `object`.
 
-  :::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializePolymorphic.cs" id="SerializeObject":::
-  :::code language="vb" source="snippets/system-text-json-how-to/vb/SerializePolymorphic.vb" id="SerializeObject":::
+  :::code language="csharp" source="snippets/how-to/csharp/SerializePolymorphic.cs" id="SerializeObject":::
+  :::code language="vb" source="snippets/how-to/vb/SerializePolymorphic.vb" id="SerializeObject":::
 
 In the preceding example scenario, both approaches cause the `WindSpeed` property to be included in the JSON output:
 
@@ -78,11 +78,11 @@ In the preceding example scenario, both approaches cause the `WindSpeed` propert
 
 You can get polymorphic serialization for lower-level objects if you define them as type `object`. For example, suppose your `WeatherForecast` class has a property named `PreviousForecast` that can be defined as type `WeatherForecast` or `object`:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithPrevious":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFWithPrevious":::
+:::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithPrevious":::
+:::code language="vb" source="snippets/how-to/vb/WeatherForecast.vb" id="WFWithPrevious":::
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithPreviousAsObject":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFWithPreviousAsObject":::
+:::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithPreviousAsObject":::
+:::code language="vb" source="snippets/how-to/vb/WeatherForecast.vb" id="WFWithPreviousAsObject":::
 
 If the `PreviousForecast` property contains an instance of `WeatherForecastDerived`:
 
@@ -91,8 +91,8 @@ If the `PreviousForecast` property contains an instance of `WeatherForecastDeriv
 
 To serialize `WeatherForecastWithPreviousAsObject`, it isn't necessary to call `Serialize<object>` or `GetType` because the root object isn't the one that may be of a derived type. The following code example doesn't call `Serialize<object>` or `GetType`:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializePolymorphic.cs" id="SerializeSecondLevel":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/SerializePolymorphic.vb" id="SerializeSecondLevel":::
+:::code language="csharp" source="snippets/how-to/csharp/SerializePolymorphic.cs" id="SerializeSecondLevel":::
+:::code language="vb" source="snippets/how-to/vb/SerializePolymorphic.vb" id="SerializeSecondLevel":::
 
 The preceding code correctly serializes `WeatherForecastWithPreviousAsObject`:
 
@@ -112,13 +112,13 @@ The preceding code correctly serializes `WeatherForecastWithPreviousAsObject`:
 
 The same approach of defining properties as `object` works with interfaces. Suppose you have the following interface and implementation, and you want to serialize a class with properties that contain implementation instances:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/IForecast.cs":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/IForecast.vb":::
+:::code language="csharp" source="snippets/how-to/csharp/IForecast.cs":::
+:::code language="vb" source="snippets/how-to/vb/IForecast.vb":::
 
 When you serialize an instance of `Forecasts`, only `Tuesday` shows the `WindSpeed` property, because `Tuesday` is defined as `object`:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializePolymorphic.cs" id="SerializeInterface":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/SerializePolymorphic.vb" id="SerializeInterface":::
+:::code language="csharp" source="snippets/how-to/csharp/SerializePolymorphic.cs" id="SerializeInterface":::
+:::code language="vb" source="snippets/how-to/vb/SerializePolymorphic.vb" id="SerializeInterface":::
 
 The following example shows the JSON that results from the preceding code:
 
@@ -153,16 +153,16 @@ Beginning with .NET 7, `System.Text.Json` supports polymorphic type hierarchy se
 
 For example, suppose you have a `WeatherForecastBase` class and a derived class `WeatherForecastWithCity`:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFB":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFB":::
+:::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFB":::
+:::code language="vb" source="snippets/how-to/vb/WeatherForecast.vb" id="WFB":::
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWC":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFWC":::
+:::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWC":::
+:::code language="vb" source="snippets/how-to/vb/WeatherForecast.vb" id="WFWC":::
 
 And suppose the type argument of the `Serialize<TValue>` method at compile time is `WeatherForecastBase`:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializePolymorphic.cs" id="SerializeWithAttributeAnnotations":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/SerializePolymorphic.vb" id="SerializeWithAttributeAnnotations":::
+:::code language="csharp" source="snippets/how-to/csharp/SerializePolymorphic.cs" id="SerializeWithAttributeAnnotations":::
+:::code language="vb" source="snippets/how-to/vb/SerializePolymorphic.vb" id="SerializeWithAttributeAnnotations":::
 
 In this scenario, the `City` property is serialized because the `weatherForecastBase` object is actually a `WeatherForecastWithCity` object. This configuration enables polymorphic serialization for `WeatherForecastBase`, specifically when the runtime type is `WeatherForecastWithCity`:
 

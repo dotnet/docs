@@ -17,8 +17,8 @@ This article shows how to use the <xref:System.Text.Json.Utf8JsonWriter> type fo
 
 The following example shows how to use the <xref:System.Text.Json.Utf8JsonWriter> class:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/Utf8WriterToStream.cs" id="Serialize":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/Utf8WriterToStream.vb" id="Serialize":::
+:::code language="csharp" source="snippets/how-to/csharp/Utf8WriterToStream.cs" id="Serialize":::
+:::code language="vb" source="snippets/how-to/vb/Utf8WriterToStream.vb" id="Serialize":::
 
 ## Write with UTF-8 text
 
@@ -35,7 +35,7 @@ In some scenarios, you might want to write "raw" JSON to a JSON payload that you
 
   For example, you might want to customize number formatting. By default, System.Text.Json omits the decimal point for whole numbers, writing `1` rather than `1.0`, for example. The rationale is that writing fewer bytes is good for performance. But suppose the consumer of your JSON treats numbers with decimals as doubles, and numbers without decimals as integers. You might want to ensure that the numbers in an array are all recognized as doubles, by writing a decimal point and zero for whole numbers. The following example shows how to do that:
 
-  :::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/WriteRawJson.cs":::
+  :::code language="csharp" source="snippets/use-dom-utf8jsonreader-utf8jsonwriter/csharp/WriteRawJson.cs":::
 
 ## Customize character escaping
 
@@ -56,4 +56,4 @@ To write `Timespan`, `Uri`, or `char` values, format them as strings (by calling
 
 ## See also
 
-- [How to use Utf8JsonReader in System.Text.Json](use-utf8jsonreader.md)
+* [How to use Utf8JsonReader in System.Text.Json](use-utf8jsonreader.md)

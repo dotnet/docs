@@ -165,9 +165,6 @@ In the preceding code:
 
 See the [OpenTelemetry documentation](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/docs/metrics/getting-started-prometheus-grafana#collect-metrics-using-prometheus) for more information about OpenTelemetry configuration options. The OpenTelemetry documentation shows hosting options for ASP.NET apps.
 
-> [!NOTE]
-> At the time of writing, OpenTelemetry only supports metrics emitted using the <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> APIs. However, support for [EventCounters](event-counters.md) is planned.
-
 Run the app and leave it running so measurements can be collected:
 
 ```dotnetcli

@@ -10,9 +10,9 @@ ms.devlang: csharp
 
 # Quickstart: Build your first Orleans app with ASP.NET Core
 
-In this quickstart, you'll use Orleans and ASP.NET Core 7.0 Minimal APIs to build a URL shortener app. Users can submit a full URL to the app, which will return a shortened version they can share with others, who will then be redirected to the original site. The app will use Orleans grains and silos to manage state in a distributed manner to allow for scalability and resiliency. These features are critical when developing apps for distributed cloud hosting services like Azure Container Apps and platforms like Kubernetes.
+In this quickstart, you use Orleans and ASP.NET Core 7.0 Minimal APIs to build a URL shortener app. Users submit a full URL to the app's `/shorten` endpoint and get a shortened version to share with others, who are redirected to the original site. The app uses Orleans grains and silos to manage state in a distributed manner to allow for scalability and resiliency. These features are critical when developing apps for distributed cloud hosting services like Azure Container Apps and platforms like Kubernetes.
 
-At the end of the quickstart, you'll have an app that creates and handles redirects using short, friendly URLs. You'll learn how to:
+At the end of the quickstart, you have an app that creates and handles redirects using short, friendly URLs. You learn how to:
 
 * Add Orleans to an ASP.NET Core app
 * Work with grains and silos
@@ -49,7 +49,7 @@ At the end of the quickstart, you'll have an app that creates and handles redire
 
 1. Inside Visual Studio Code, open the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal).
 
-1. Change to the directory (`cd`) that will contain the project.
+1. Change directories (`cd`) to the project directory.
 1. Run the following commands:
 
    ```dotnetcli
@@ -67,7 +67,7 @@ At the end of the quickstart, you'll have an app that creates and handles redire
 
 ## Add Orleans to the project
 
-Orleans is available through a collection of NuGet packages, each of which provides access to various features. For this quickstart, add the [Microsoft.Orleans.Server](https://www.nuget.org/packages/Microsoft.Orleans.Server) NuGet package to the app using the steps below:
+Orleans is available through a collection of NuGet packages, each of which provides access to various features. For this quickstart, add the [Microsoft.Orleans.Server](https://www.nuget.org/packages/Microsoft.Orleans.Server) NuGet package to the app:
 
 # [Visual Studio](#tab/visual-studio)
 
@@ -77,7 +77,7 @@ Orleans is available through a collection of NuGet packages, each of which provi
 
 # [Visual Studio Code](#tab/visual-studio-code)
 
-In the Visual Studio code terminal, run the following command:
+In the Visual Studio Code terminal, run the following command:
 
 ```dotnetcli
 dotnet add package Microsoft.Orleans.Server
@@ -109,7 +109,7 @@ At the top of the _Program.cs_ file, refactor the code to use Orleans. The follo
 
 ## Create the URL shortener grain
 
-[Grains](../overview.md) are the most essential primitives and building blocks of Orleans applications. A grain is a class that inherits from the Grain base class, which manages various internal behaviors and integration points with the Orleans framework. Grains should also implement one of the interfaces listed below to define the type of grain key identifier. Each of these interfaces defines a similar contract, but marks your class with a different data type for the identifier that Orleans uses to track the grain, such as a string or integer.
+[Grains](../overview.md) are the most essential primitives and building blocks of Orleans applications. A grain is a class that inherits from the <xref:Orleans.Grain> base class, which manages various internal behaviors and integration points with Orleans. Grains should also implement one of the following interfaces to define their grain key identifier. Each of these interfaces defines a similar contract, but marks your class with a different data type for the identifier that Orleans uses to track the grain, such as a string or integer.
 
 - `IGrainWithGuidKey`
 - `IGrainWithIntegerKey`
@@ -117,7 +117,7 @@ At the top of the _Program.cs_ file, refactor the code to use Orleans. The follo
 - `IGrainWithGuidCompoundKey`
 - `IGrainWithIntegerCompoundKey`
 
-For this quickstart, you'll use the `IGrainWithStringKey`, since strings are a logical choice for working with URL values and short codes.
+For this quickstart, you use the `IGrainWithStringKey`, since strings are a logical choice for working with URL values and short codes.
 
 Orleans grains can also use a custom interface to define their methods and properties. The URL shortener grain interface should define two methods:
 

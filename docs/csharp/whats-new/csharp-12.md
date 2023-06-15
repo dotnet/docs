@@ -17,7 +17,7 @@ You can now create primary constructors in any `class` and `struct`. Primary con
 
 The compiler generates public properties for primary constructor parameters only in `record` types, either `record class` or `record struct` types. Non-record classes and structs may not always want this behavior for primary constructor parameters.
 
-You can learn more about primary constructors in the article on [instance constructors](../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors).
+You can learn more about primary constructors in the tutorial for [exploring primary constructors](./tutorials/primary-construtors.md) and in the article on [instance constructors](../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors).
 
 ## Default lambda parameters
 

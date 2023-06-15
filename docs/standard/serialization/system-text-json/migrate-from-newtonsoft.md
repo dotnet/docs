@@ -367,13 +367,13 @@ If you own the target type, the best workaround is to make the property in quest
 
 Another workaround is to make a converter for the type, such as the following example that handles null values for `DateTimeOffset` types:
 
-:::code language="csharp" source="snippets/how-to/csharp/DateTimeOffsetNullHandlingConverter.cs":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DateTimeOffsetNullHandlingConverter.cs":::
 
 Register this custom converter by [using an attribute on the property](converters-how-to.md#registration-sample---jsonconverter-on-a-property) or by [adding the converter](converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters> collection.
 
 **Note:** The preceding converter **handles null values differently** than `Newtonsoft.Json` does for POCOs that specify default values. For example, suppose the following code represents your target object:
 
-:::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithDefault":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithDefault":::
 
 And suppose the following JSON is deserialized by using the preceding converter:
 
@@ -407,7 +407,7 @@ Starting in .NET 7, you can use the C# `required` modifier or the <xref:System.T
 
 <xref:System.Text.Json?displayProperty=fullName> doesn't throw an exception if no value is received for one of the properties of the target type. For example, if you have a `WeatherForecast` class:
 
-:::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WF":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
 
 The following JSON is deserialized without error:
 
@@ -426,7 +426,7 @@ To make deserialization fail if no `Date` property is in the JSON, choose one of
 
 The following sample converter code throws an exception if the `Date` property isn't set after deserialization is complete:
 
-:::code language="csharp" source="snippets/how-to/csharp/WeatherForecastRequiredPropertyConverter.cs":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecastRequiredPropertyConverter.cs":::
 
 Register this custom converter by [adding the converter](converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters?displayProperty=nameWithType> collection.
 
@@ -442,11 +442,11 @@ There is an alternative pattern that can use `JsonConverterAttribute` registrati
 
 Here are the `WeatherForecast*` types:
 
-:::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithReqPptyConverterAttr":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithReqPptyConverterAttr":::
 
 And here is the converter:
 
-:::code language="csharp" source="snippets/how-to/csharp/WeatherForecastRequiredPropertyConverterForAttributeRegistration.cs":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecastRequiredPropertyConverterForAttributeRegistration.cs":::
 
 The required properties converter would require additional logic if you need to handle attributes such as [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) or different options, such as custom encoders. Also, the example code doesn't handle properties for which a default value is set in the constructor. And this approach doesn't differentiate between the following scenarios:
 
@@ -468,9 +468,9 @@ The required properties converter would require additional logic if you need to 
 
 <xref:System.Text.Json?displayProperty=fullName> supports ISO 8601-1:2019, including the RFC 3339 profile. This format is widely adopted, unambiguous, and makes round trips precisely. To use any other format, create a custom converter. For example, the following converters serialize and deserialize JSON that uses Unix epoch format with or without a time zone offset (values such as `/Date(1590863400000-0700)/` or `/Date(1590863400000)/`):
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/CustomConverterUnixEpochDate.cs" id="ConverterOnly":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterUnixEpochDate.cs" id="ConverterOnly":::
 
-:::code language="csharp" source="snippets/how-to-5-0/csharp/CustomConverterUnixEpochDateNoZone.cs" id="ConverterOnly":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterUnixEpochDateNoZone.cs" id="ConverterOnly":::
 
 For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../../datetime/system-text-json-support.md).
 
@@ -492,7 +492,7 @@ System.Text.Json exposes the same notifications during serialization and deseria
 
 Here's an example that checks for a null property and writes messages at start and end of serialization and deserialization:
 
-:::code language="csharp" source="snippets/how-to-6-0/csharp/Callbacks.cs":::
+:::code language="csharp" source="snippets/system-text-json-how-to-6-0/csharp/Callbacks.cs":::
 
 The `OnDeserializing` code doesn't have access to the new POCO instance. To manipulate the new POCO instance at the start of deserialization, put that code in the POCO constructor.
 

@@ -46,7 +46,9 @@ If the [dotnet-counters](dotnet-counters.md) tool isn't installed, run the follo
 dotnet tool update -g dotnet-counters
 ```
 
-While the example app is running, list the running processes in another console to determine the process ID:
+While the example app is running, launch [dotnet-counters](dotnet-counters.md). The following command shows an example of `dotnet-counters` monitoring all metrics from the `HatCo.HatStore` meter. The meter name is case-sensitive. Our sample app was metric-instr.exe, substitute this with the name of your sample app.
+
+dotnet-counters monitor -n metric-instr --counters Hatco.HatStore
 
 ```dotnetcli
 dotnet-counters ps
@@ -124,7 +126,7 @@ For more information, see [dotnet-counters](dotnet-counters.md). To learn more a
 
 This tutorial shows one of the integrations available for OpenTelemetry metrics using the OSS [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/) projects. The metrics data flow:
 
-1. The .NET metric APIs collect measurements from the example app.
+1. The .NET metric APIs record measurements from the example app.
 1. The OpenTelemetry library running in the app aggregates the measurements.
 1. The Prometheus exporter library makes the aggregated data available via an HTTP metrics endpoint. 'Exporter' is what OpenTelemetry calls the libraries that transmit telemetry to vendor-specific backends.
 1. A Prometheus server:
@@ -261,10 +263,10 @@ The delegate that is invoked when measurements are received from an instrument i
 
 :::code language="csharp" source="snippets/Metrics/Program.cs" id="snippet_sme" highlight="1,15-99":::
 
-The generic parameter controls which data type of measurement is received by the callback. For example, a `Counter<int>` generates `int` measurements, `Counter<double>` generates `double` measurements. Instruments can be created with `byte`, `short`, `int`, `long`, `float`, `double`, and `decimal` types. We recommend registering a callback for every data type unless you have scenario-specific knowledge that not all data types are needed. Making repeated calls to `SetMeasurementEventCallback` with different generic arguments may appear a little unusual. The API was designed this way to allow `MeterListeners` to receive measurements with  low performance overhead, typically just a few nanoseconds.
+The generic parameter controls which data type of measurement is received by the callback. For example, a `Counter<int>` generates `int` measurements, `Counter<double>` generates `double` measurements. Instruments can be created with `byte`, `short`, `int`, `long`, `float`, `double`, and `decimal` types. We recommend registering a callback for every data type unless you have scenario-specific knowledge that not all data types are needed. Making repeated calls to `SetMeasurementEventCallback` with different generic arguments may appear a little unusual. The API was designed this way to allow a `MeterListener` to receive measurements with low performance overhead, typically just a few nanoseconds.
 
 When `MeterListener.EnableMeasurementEvents` is called, a `state` object can be provided as
-one of the parameters. The `state` object is arbitrary. If you provide a state object in that call, then it is stored with that instrument and returned to as the `state` parameter in the callback. This is intended both as a convenience and as a performance optimization. Often listeners need to:
+one of the parameters. The `state` object is arbitrary. If you provide a state object in that call, then it is stored with that instrument and returned to you as the `state` parameter in the callback. This is intended both as a convenience and as a performance optimization. Often listeners need to:
 
 - Create an object for each instrument that is storing measurements in memory.
 - Have code to do calculations on those measurements.

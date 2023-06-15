@@ -85,7 +85,7 @@ class Program
 
         // <snippet_sme>
         meterListener.SetMeasurementEventCallback<int>(OnMeasurementRecorded);
-        // Start the meterListener, enabling callbacks.
+        // Start the meterListener, enabling InstrumentPublished callbacks.
         meterListener.Start();
 
         var rand = Random.Shared;

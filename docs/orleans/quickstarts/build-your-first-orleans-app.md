@@ -3,7 +3,7 @@ title: 'Quickstart: Build your first Orleans app with ASP.NET Core'
 description: Learn how to use Orleans to build a scalable, distributed ASP.NET Core application
 author: alexwolfmsft
 ms.author: alexwolf
-ms.date: 12/16/2022
+ms.date: 06/15/2023
 ms.topic: quickstart
 ms.devlang: csharp
 ---
@@ -88,10 +88,9 @@ dotnet add package Microsoft.Orleans.Server
 Open the _Program.cs_ file and replace the existing content with the following code:
 
 ```csharp
-using Microsoft.AspNetCore.Http.Extensions;
 using Orleans.Runtime;
 
-var builder = WebApplication.CreateBuilder();
+var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
 
@@ -106,7 +105,7 @@ app.Run();
 
 At the top of the _Program.cs_ file, refactor the code to use Orleans. The following code uses a <xref:Orleans.Hosting.ISiloBuilder> class to create a localhost cluster with a silo that can store grains. The `ISiloBuilder` also uses the `AddMemoryGrainStorage` to configure the Orleans silos to persist grains in memory. This scenario uses local resources for development, but a production app can be configured to use highly scalable clusters and storage using services like Azure Blob Storage.
 
-:::code language="csharp" source="snippets/url-shortener/orleansurlshortener/program.cs" id="Configuration" :::
+:::code source="snippets/url-shortener/orleansurlshortener/Program.cs" id="configuration" :::
 
 ## Create the URL shortener grain
 
@@ -122,33 +121,33 @@ For this quickstart, you'll use the `IGrainWithStringKey`, since strings are a l
 
 Orleans grains can also use a custom interface to define their methods and properties. The URL shortener grain interface should define two methods:
 
-- A `SetUrl` method to persist the original and shortened URLs.
-- A `GetUrl` method to retrieve the original URL using the shortened URL.
+- A `SetUrl` method to persist the original and their corresponding shortened URLs.
+- A `GetUrl` method to retrieve the original URL given the shortened URL.
 
 1. Append the following interface definition to the bottom of the _Program.cs_ file.
 
-    :::code language="csharp" source="snippets/url-shortener/orleansurlshortener/program.cs" id="GrainInterface" :::
+    :::code source="snippets/url-shortener/orleansurlshortener/Program.cs" id="graininterface":::
 
 1. Create a `UrlShortenerGrain` class using the following code. This class inherits from the `Grain` class provided by Orleans and implements the `IUrlShortenerGrain` interface you created. The class also uses the `IPersistentState` interface of Orleans to manage reading and writing state values for the URLs to the configured silo storage.
 
-    :::code language="csharp" source="snippets/url-shortener/orleansurlshortener/program.cs" id="Grain" :::
+    :::code source="snippets/url-shortener/orleansurlshortener/Program.cs" id="grain":::
 
 ## Create the endpoints
 
 Next, create two endpoints to utilize the Orleans grain and silo configurations:
 
-- A `/shorten/{*url}` endpoint to handle creating and storing a shortened version of the URL. The original, full URL is provided as a path parameter, and the shortened URL is returned to the user for later use.
-- A `/go/{*shortenedUrl}` endpoint to handle redirecting users to the original URL using the shortened URL that is supplied as a parameter.
+- A `/shorten` endpoint to handle creating and storing a shortened version of the URL. The original, full URL is provided as a query string parameter named `url`, and the shortened URL is returned to the user for later use.
+- A `/go/{shortenedRouteSegment:required}` endpoint to handle redirecting users to the original URL using the shortened URL that is supplied as a parameter.
 
 Inject the <xref:Orleans.IGrainFactory> interface into both endpoints. Grain Factories enable you to retrieve and manage references to individual grains that are stored in silos. Append the following code to the _Program.cs_ file before the `app.Run()` method call:
 
-:::code language="csharp" source="snippets/url-shortener/orleansurlshortener/program.cs" id="Endpoints" :::
+:::code source="snippets/url-shortener/orleansurlshortener/Program.cs" id="endpoints":::
 
 ## Test the completed app
 
 The core functionality of the app is now complete and ready to be tested. The final app code should match the following example:
 
-:::code language="csharp" source="snippets/url-shortener/orleansurlshortener/program.cs" :::
+:::code source="snippets/url-shortener/orleansurlshortener/Program.cs":::
 
 Test the application in the browser using the following steps:
 
@@ -156,7 +155,7 @@ Test the application in the browser using the following steps:
 
 1. Start the app using the run button at the top of Visual Studio. The app should launch in the browser and display the familiar `Hello world!` text.
 
-1. In the browser address bar, test the `shorten` endpoint by entering a URL path such as `{localhost}/shorten/https://microsoft.com`. The page should reload and provide a shortened URL. Copy the shortened URL to your clipboard.
+1. In the browser address bar, test the `shorten` endpoint by entering a URL path such as `{localhost}/shorten?url=https://learn.microsoft.com`. The page should reload and provide a shortened URL. Copy the shortened URL to your clipboard.
 
     :::image type="content" source="../media/url-shortener.png" alt-text="A screenshot showing the result of the URL shortener launched from Visual Studio.":::
 
@@ -170,7 +169,7 @@ Test the application in the browser using the following steps:
     dotnet run
     ```
 
-1. In the browser address bar, test the `shorten` endpoint by entering a URL path such as `{localhost}/shorten/https://microsoft.com`. The page should reload and provide a shortened URL. Copy the shortened URL to your clipboard.
+1. In the browser address bar, test the `shorten` endpoint by entering a URL path such as `{localhost}/shorten?url=https://learn.microsoft.com`. The page should reload and provide a shortened URL. Copy the shortened URL to your clipboard.
 
     :::image type="content" source="../media/url-shortener.png" alt-text="A screenshot showing the result of the URL shortener launched from Visual Studio Code.":::
 

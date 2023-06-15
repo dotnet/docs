@@ -1,4 +1,4 @@
-﻿#define SECOND  // FIRST // ML SECOND
+﻿#define ML  // FIRST // ML SECOND
 #if NEVER
 #elif FIRST
 // <snippet>
@@ -101,7 +101,7 @@ class Program
     static void OnMeasurementRecorded<T>(
         Instrument instrument,
         T measurement,
-        ReadOnlySpan<KeyValuePair<string?, object?>> tags,
+        ReadOnlySpan<KeyValuePair<string, object?>> tags,
         object? state)
     {
         Console.WriteLine($"{instrument.Name} recorded measurement {measurement}");

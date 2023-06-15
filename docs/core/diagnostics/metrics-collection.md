@@ -240,21 +240,10 @@ The following highlighted code configures which instruments the listener receive
 
 :::code language="csharp" source="snippets/Metrics/Program.cs" id="snippet_uml" highlight="2-99":::
 
-The delegate can examine the instrument to decide whether to subscribe. For example, the delegate can check the name, the Meter, or any other public property. <!-- The previous version was way too long to MT. Is this better? --> <xref:System.Diagnostics.Metrics.MeterListener.EnableMeasurementEvents%2A> enables receiving measurements from the specified instrument.<!-- recommend deleting the following--> Code that obtains a reference to an instrument by another approach:
+The delegate can examine the instrument to decide whether to subscribe. For example, the delegate can check the name, the Meter, or any other public property. <xref:System.Diagnostics.Metrics.MeterListener.EnableMeasurementEvents%2A> enables receiving measurements from the specified instrument. Code that obtains a reference to an instrument by another approach:
 
 - Is not typically done.
 - Can invoke `EnableMeasurementEvents()` at any time with the reference.
-
-<!--
-```csharp
-meterListener.SetMeasurementEventCallback<int>(OnMeasurementRecorded);
-...
-static void OnMeasurementRecorded<T>(Instrument instrument, T measurement, ReadOnlySpan<KeyValuePair<string,object>> tags, object state)
-{
-    Console.WriteLine($"{instrument.Name} recorded measurement {measurement}");
-}
-```
--->
 
 The delegate that is invoked when measurements are received from an instrument is configured by calling <xref:System.Diagnostics.Metrics.MeterListener.SetMeasurementEventCallback%2A>:
 
@@ -268,7 +257,6 @@ one of the parameters. The `state` object is arbitrary. If you provide a state o
 - Create an object for each instrument that is storing measurements in memory.
 - Have code to do calculations on those measurements.
 
-<!--Why are we explaining low perf options? Metrics should be ultra low cost. Can we remove this? Folks that need this approach are smart enough to figure it out. -->
 Alternatively, create a `Dictionary` that maps from the instrument to the storage object and look it up on every measurement. Using a `Dictionary` is much slower than accessing it from `state`.
 
 ```csharp

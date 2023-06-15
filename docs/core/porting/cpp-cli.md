@@ -5,7 +5,7 @@ author: mjrousos
 ms.date: 03/29/2022
 ---
 
-# How to port a C++/CLI project to .NET Core or .NET 5
+# How to port a C++/CLI project to .NET Core or .NET 5+
 
 Beginning with .NET Core 3.1 and Visual Studio 2019, [C++/CLI projects](/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp) can target .NET Core. This support makes it possible to port Windows desktop applications with C++/CLI interop layers to .NET Core/.NET 5+. This article describes how to port C++/CLI projects from .NET Framework to .NET Core 3.1.
 

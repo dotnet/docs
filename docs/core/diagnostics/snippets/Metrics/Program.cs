@@ -101,7 +101,7 @@ class Program
     static void OnMeasurementRecorded<T>(
         Instrument instrument,
         T measurement,
-        KeyValuePair<string, object>[] tags,
+        ReadOnlySpan<KeyValuePair<string?, object?>> tags,
         object? state)
     {
         Console.WriteLine($"{instrument.Name} recorded measurement {measurement}");

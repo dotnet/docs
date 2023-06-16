@@ -26,7 +26,8 @@ For more information on custom metric instrumentation and options, see [Compare 
 Before metrics can be collected, measurements must be produced. This tutorial creates an app that has basic metric instrumentation. The .NET runtime also has [various metrics built-in](available-counters.md). For more information about creating new metrics using the <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> API, see [the instrumentation tutorial](metrics-instrumentation.md).
 
 ```dotnetcli
-dotnet new console
+dotnet new console -o metric-instr
+cd metric-instr
 dotnet add package System.Diagnostics.DiagnosticSource
 ```
 

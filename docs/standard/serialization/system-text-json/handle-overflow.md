@@ -23,8 +23,8 @@ This article shows how to handle overflow JSON with the [`System.Text.Json`](xre
 
 While deserializing, you might receive data in the JSON that is not represented by properties of the target type. For example, suppose your target type is this:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WF":::
+:::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WF":::
+:::code language="vb" source="snippets/how-to/vb/WeatherForecast.vb" id="WF":::
 
 And the JSON to be deserialized is this:
 
@@ -47,8 +47,8 @@ And the JSON to be deserialized is this:
 
 If you deserialize the JSON shown into the type shown, the `DatesAvailable` and `SummaryWords` properties have nowhere to go and are lost. To capture extra data such as these properties, apply the [[JsonExtensionData]](xref:System.Text.Json.Serialization.JsonExtensionDataAttribute) attribute to a property of type `Dictionary<string,object>` or `Dictionary<string,JsonElement>`:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithExtensionData":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFWithExtensionData":::
+:::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithExtensionData":::
+:::code language="vb" source="snippets/how-to/vb/WeatherForecast.vb" id="WFWithExtensionData":::
 
 The following table shows the result of deserializing the JSON shown earlier into this sample type. The extra data becomes key-value pairs of the `ExtensionData` property:
 
@@ -83,7 +83,7 @@ Notice that the `ExtensionData` property name doesn't appear in the JSON. This b
 
 The following example shows a round trip from JSON to a deserialized object and back to JSON:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripExtensionData.cs" highlight="13-14":::
+:::code language="csharp" source="snippets/how-to/csharp/RoundtripExtensionData.cs" highlight="13-14":::
 
 ## Deserialize into JsonElement or JsonNode
 
@@ -91,7 +91,7 @@ If you just want to be flexible about what JSON to accept for a particular prope
 
 The following example shows a round trip from JSON and back to JSON for a class that includes properties of type `JsonElement` and `JsonNode`.
 
-:::code language="csharp" source="snippets/system-text-json-how-to-6-0/csharp/RoundtripJsonElementAndNode.cs" highlight="11-12":::
+:::code language="csharp" source="snippets/how-to-6-0/csharp/RoundtripJsonElementAndNode.cs" highlight="11-12":::
 
 ## See also
 

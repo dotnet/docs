@@ -44,7 +44,7 @@ The following example shows how to use <xref:System.Text.Json.Nodes.JsonNode> an
 * Write JSON from a DOM.
 * Get a value, object, or array from a DOM.
 
-:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeFromStringExample.cs":::
+:::code language="csharp" source="snippets/use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeFromStringExample.cs":::
 
 ### Create a JsonNode DOM with object initializers and make changes
 
@@ -53,19 +53,19 @@ The following example shows how to:
 * Create a DOM by using object initializers.
 * Make changes to a DOM.
 
-:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeFromObjectExample.cs":::
+:::code language="csharp" source="snippets/use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeFromObjectExample.cs":::
 
 ### Deserialize subsections of a JSON payload
 
 The following example shows how to use [JsonNode](#json-dom-choices) to navigate to a subsection of a JSON tree and deserialize a single value, a custom type, or an array from that subsection.
 
-:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodePOCOExample.cs":::
+:::code language="csharp" source="snippets/use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodePOCOExample.cs":::
 
 ### JsonNode average grade example
 
 The following example selects a JSON array that has integer values and calculates an average value:
 
-:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeAverageGradeExample.cs":::
+:::code language="csharp" source="snippets/use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeAverageGradeExample.cs":::
 
 The preceding code:
 
@@ -81,7 +81,7 @@ The same limitation applies to the `JsonNode` methods that take a `JsonSerialize
 
 The following example illustrates the result of using methods that take a `JsonSerializerOptions` parameter and serialize a `JsonNode` instance:
 
-:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeWithJsonSerializerOptions.cs" :::
+:::code language="csharp" source="snippets/use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodeWithJsonSerializerOptions.cs" :::
 
 If you need features of `JsonSerializerOptions` other than custom converters, use `JsonSerializer` with strongly typed targets (such as the `Person` class in this example) rather than `JsonNode`.
 
@@ -89,8 +89,8 @@ If you need features of `JsonSerializerOptions` other than custom converters, us
 
 The following example shows how to use the <xref:System.Text.Json.JsonDocument> class for random access to data in a JSON string:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/JsonDocumentDataAccess.cs" id="AverageGrades1":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/JsonDocumentDataAccess.vb" id="AverageGrades1":::
+:::code language="csharp" source="snippets/how-to/csharp/JsonDocumentDataAccess.cs" id="AverageGrades1":::
+:::code language="vb" source="snippets/how-to/vb/JsonDocumentDataAccess.vb" id="AverageGrades1":::
 
 The preceding code:
 
@@ -101,12 +101,12 @@ The preceding code:
 
 The preceding example code counts students by incrementing a `count` variable with each iteration. An alternative is to call <xref:System.Text.Json.JsonElement.GetArrayLength%2A>, as shown in the following example:
 
-  :::code language="csharp" source="snippets/system-text-json-how-to/csharp/JsonDocumentDataAccess.cs" id="AverageGrades2":::
-  :::code language="vb" source="snippets/system-text-json-how-to/vb/JsonDocumentDataAccess.vb" id="AverageGrades2":::
+  :::code language="csharp" source="snippets/how-to/csharp/JsonDocumentDataAccess.cs" id="AverageGrades2":::
+  :::code language="vb" source="snippets/how-to/vb/JsonDocumentDataAccess.vb" id="AverageGrades2":::
 
 Here's an example of the JSON that this code processes:
 
-:::code language="json" source="snippets/system-text-json-how-to/csharp/GradesPrettyPrint.json":::
+:::code language="json" source="snippets/how-to/csharp/GradesPrettyPrint.json":::
 
 For a similar example that uses `JsonNode` instead of `JsonDocument`, see [JsonNode average grade example](#jsonnode-average-grade-example).
 
@@ -121,8 +121,8 @@ Searches on `JsonElement` require a sequential search of the properties and henc
 
 The following example shows how to write JSON from a <xref:System.Text.Json.JsonDocument>:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/JsonDocumentWriteJson.cs" id="Serialize":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/JsonDocumentWriteJson.vb" id="Serialize":::
+:::code language="csharp" source="snippets/how-to/csharp/JsonDocumentWriteJson.cs" id="Serialize":::
+:::code language="vb" source="snippets/how-to/vb/JsonDocumentWriteJson.vb" id="Serialize":::
 
 The preceding code:
 
@@ -132,11 +132,11 @@ The preceding code:
 
 Here's an example of JSON input to be processed by the example code:
 
-:::code language="json" source="snippets/system-text-json-how-to/csharp/Grades.json":::
+:::code language="json" source="snippets/how-to/csharp/Grades.json":::
 
 The result is the following pretty-printed JSON output:
 
-:::code language="json" source="snippets/system-text-json-how-to/csharp/GradesPrettyPrint.json":::
+:::code language="json" source="snippets/how-to/csharp/GradesPrettyPrint.json":::
 
 ### JsonDocument is IDisposable
 
@@ -175,7 +175,7 @@ You can use `JsonSerializer` to serialize and deserialize an instance of `JsonDo
 
 The following example illustrates the result of using methods that take a `JsonSerializerOptions` parameter and serialize a `JsonDocument` instance:
 
-:::code language="csharp" source="snippets/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonDocumentWithJsonSerializerOptions.cs" :::
+:::code language="csharp" source="snippets/use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonDocumentWithJsonSerializerOptions.cs" :::
 
 If you need features of `JsonSerializerOptions`, use `JsonSerializer` with strongly typed targets (such as the `Person` class in this example) rather than `JsonDocument`.
 

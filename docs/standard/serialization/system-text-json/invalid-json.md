@@ -24,8 +24,8 @@ In this article, you will learn how to allow comments, trailing commas, and quot
 By default, comments and trailing commas are not allowed in JSON. To allow comments in the JSON, set the <xref:System.Text.Json.JsonSerializerOptions.ReadCommentHandling?displayProperty=nameWithType> property to `JsonCommentHandling.Skip`.
 And to allow trailing commas, set the <xref:System.Text.Json.JsonSerializerOptions.AllowTrailingCommas?displayProperty=nameWithType> property to `true`. The following example shows how to allow both:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeCommasComments.cs" id="Deserialize":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/DeserializeCommasComments.vb" id="Deserialize":::
+:::code language="csharp" source="snippets/how-to/csharp/DeserializeCommasComments.cs" id="Deserialize":::
+:::code language="vb" source="snippets/how-to/vb/DeserializeCommasComments.vb" id="Deserialize":::
 
 Here's example JSON with comments and a trailing comma:
 
@@ -61,8 +61,8 @@ Instead of:
 
 To serialize numbers in quotes or accept numbers in quotes across the entire input object graph, set <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A?displayProperty=nameWithType> as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/QuotedNumbers.cs" highlight="26-28":::
-:::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/QuotedNumbers.vb" :::
+:::code language="csharp" source="snippets/how-to-5-0/csharp/QuotedNumbers.cs" highlight="26-28":::
+:::code language="vb" source="snippets/how-to-5-0/vb/QuotedNumbers.vb" :::
 
 When you use `System.Text.Json` indirectly through ASP.NET Core, quoted numbers are allowed when deserializing because ASP.NET Core specifies [web default options](xref:System.Text.Json.JsonSerializerDefaults.Web).
 

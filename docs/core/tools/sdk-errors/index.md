@@ -358,12 +358,12 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1196|The SDK does not support ahead-of-time compilation. Set the PublishAot property to false.|
 |NETSDK1197|Multiple solution project(s) contain conflicting '{0}' values; ensure the values match. Consider using a Directory.build.props file to set the property for all projects. Conflicting projects: {1}.|
 |NETSDK1198|A publish profile with the name '{0}' was not found in the project. Set the PublishProfile property to a valid file name.|
-|NETSDK1199|The ArtifactsPath and UseArtifactsOutput properties cannot be set in a project file, due to MSBuild ordering constraints. They must be set in a Directory.Build.props file or from the command line. See https://aka.ms/netsdk1199 for more information.|
+|NETSDK1199|The ArtifactsPath and UseArtifactsOutput properties cannot be set in a project file, due to MSBuild ordering constraints. They must be set in a Directory.Build.props file or from the command line. See <https://aka.ms/netsdk1199> for more information.|
 |NETSDK1200|If UseArtifactsPath is set to true and ArtifactsPath is not set, there must be a Directory.Build.props file in order to determine where the artifacts folder should be located.|
 |NETSDK1201|For projects targeting .NET 8.0 and higher, specifying a RuntimeIdentifier will no longer produce a self contained app by default. To continue building self-contained apps, set the SelfContained property to true or use the --self-contained argument.|
 |NETSDK1202|The workload '{0}' is out of support and will not receive security updates in the future. Please refer to {1} for more information about the support policy.|
 |NETSDK1203|Ahead-of-time compilation is not supported for the target runtime identifier '{0}'.|
 |NETSDK1204|Ahead-of-time compilation is not supported on the current platform '{0}'.|
 |NETSDK1205|The Microsoft.Net.Compilers.Toolset.Framework package should not be set directly. Set the property 'BuildWithNetFrameworkHostedCompiler' to 'true' instead if you need it.|
-|NETSDK1206|Found version-specific or distribution-specific runtime identifier(s): {0}. Affected libraries: {1}. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See https://aka.ms/dotnet/rid-usage for details.|
+|NETSDK1206|Found version-specific or distribution-specific runtime identifier(s): {0}. Affected libraries: {1}. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See <https://aka.ms/dotnet/rid-usage> for details.|
 |NETSDK1207|Ahead-of-time compilation is not supported for the target framework.|

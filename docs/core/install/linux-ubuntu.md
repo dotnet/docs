@@ -170,7 +170,7 @@ If you want to install an unsupported version of .NET, check the [Supported dist
 > [!TIP]
 > If you're not creating .NET apps, install the ASP.NET Core runtime as it includes the .NET runtime and also supports ASP.NET Core apps.
 
-Some enviornment variables affect how .NET is run after it's installed. For more information, see [.NET SDK and CLI environment variables](../tools/dotnet-environment-variables.md#net-sdk-and-cli-environment-variables).
+Some environment variables affect how .NET is run after it's installed. For more information, see [.NET SDK and CLI environment variables](../tools/dotnet-environment-variables.md#net-sdk-and-cli-environment-variables).
 
 ## Uninstall .NET
 

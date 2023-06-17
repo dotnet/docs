@@ -123,7 +123,7 @@ If you do not set a time-out value explicitly, the default time-out value is det
  By default, the time-out interval is set to <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=nameWithType> and the regular expression engine does not time out.
 
 > [!IMPORTANT]
-> We recommend that you always set a time-out interval if your regular expression relies on backtracking or operates on untrusted inputs.
+> When not using <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType>, we recommend that you always set a time-out interval if your regular expression relies on backtracking or operates on untrusted inputs.
 
  A <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception indicates that the regular expression engine was unable to find a match within the specified time-out interval but does not indicate why the exception was thrown. The reason might be excessive backtracking, but it is also possible that the time-out interval was set too low given the system load at the time the exception was thrown. When you handle the exception, you can choose to abandon further matches with the input string or increase the time-out interval and retry the matching operation.
 

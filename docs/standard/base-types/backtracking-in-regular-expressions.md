@@ -110,7 +110,7 @@ Backtracking occurs when a regular expression pattern contains optional [quantif
 
  Some regular expressions have acceptable performance unless the input is exceptionally large. If all reasonable text inputs in your scenario are known to be under a certain length, consider rejecting longer inputs before applying the regular expression to them.
 
-### Defining a Time-out Interval
+### Specify a Time-out Interval
 
  You can set a time-out value that represents the longest interval the regular expression engine will search for a single match before it abandons the attempt and throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. You specify the time-out interval by supplying a <xref:System.TimeSpan> value to the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29> constructor for instance regular expressions. In addition, each static pattern matching method has an overload with a <xref:System.TimeSpan> parameter that allows you to specify a time-out value.
 
@@ -209,7 +209,7 @@ If you do not set a time-out value explicitly, the default time-out value is det
 
 The following suggestions are not specifically to prevent excessive backtracking, but may help increase the performance of your regular expression:
 
-1. Precompile heavily used patterns. The best way to do this is to use the [regular expression source generator](regular-expression-source-generators.md) to precompile it. If the source generator is not available for your app, or the pattern is not known at compile time, use the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option. 
+1. Precompile heavily used patterns. The best way to do this is to use the [regular expression source generator](regular-expression-source-generators.md) to precompile it. If the source generator is not available for your app, or you do not know the pattern at compile time, use the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option. 
 
 1. Cache heavily used Regex objects. This implicitly occurs when you are using the source generator. Otherwise, create a Regex object and store it for reuse, rather than using the static Regex methods or creating and throwing away a Regex object.
 

@@ -209,7 +209,7 @@ If you do not set a time-out value explicitly, the default time-out value is det
 
 The following suggestions are not specifically to prevent excessive backtracking, but may help increase the performance of your regular expression:
 
-1. Precompile heavily used patterns. The best way to do this is to use the [regular expression source generator](regular-expression-source-generators.md) to precompile it. If the source generator is not available for your app, or you do not know the pattern at compile time, use the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option. 
+1. Precompile heavily used patterns. The best way to do this is to use the [regular expression source generator](regular-expression-source-generators.md) to precompile it. If the source generator is not available for your app, for example you are not targeting .NET 7 or later, or you do not know the pattern at compile time, use the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option.
 
 1. Cache heavily used Regex objects. This implicitly occurs when you are using the source generator. Otherwise, create a Regex object and store it for reuse, rather than using the static Regex methods or creating and throwing away a Regex object.
 

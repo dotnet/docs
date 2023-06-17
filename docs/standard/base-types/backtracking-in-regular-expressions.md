@@ -209,11 +209,15 @@ If you do not set a time-out value explicitly, the default time-out value is det
 
 The following suggestions are not specifically to prevent excessive backtracking, but may help increase the performance of your regular expression:
 
-1. If a pattern will be heavily used, precompile it. The best way to do this is to use the [regular expression source generator](regular-expression-source-generators.md) to precompile it. If the source generator is not available for your app, use the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option.
+1. Precompile heavily used patterns. The best way to do this is to use the [regular expression source generator](regular-expression-source-generators.md) to precompile it. If the source generator is not available for your app, or the pattern is not known at compile time, use the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option. 
 
-1. If matches are known to always start beyond a certain offset into the pattern, consider passing the offset to the regular expression engine. For example, using the overload <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%29?displayProperty=nameWithType>. This will reduce the amount of the text the engine needs to consider.
+1. Cache heavily used Regex objects. This implicitly occurs when you are using the source generator. Otherwise, create a Regex object and store it for reuse, rather than using the static Regex methods or creating and throwing away a Regex object.
 
-1. If matches are typically found near the end of a very large input, <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType> might find it more quickly. However, use this with care. The regular expression engines are most heavily optimized for left to right operation, so you should test to ensure this is an improvement. It may be better to pass in the offset instead.
+1. Start matching from an offset. If you know that matches will always start beyond a certain offset into the pattern, pass the offset in using an overload like <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%29?displayProperty=nameWithType>. This will reduce the amount of the text the engine needs to consider.
+
+1. Gather only the information you need. If you only need to know whether a match occurs but not where the match occurs, prefer <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType>. If you only need to know how many times something matches, prefer using <xref:System.Text.RegularExpressions.Regex.Count%2A?displayProperty=nameWithType>. If you only need to know the bounds of a match but not anything about a match's captures, prefer using <xref:System.Text.RegularExpressions.Regex.EnumerateMatches%2A?displayProperty=nameWithType>. The less information the engine needs to provide, the better.
+
+1. Avoid unnecessary captures. Parentheses in your pattern by default form a capturing group. If you don't need captures, If you want to use parentheses in your patterns, specify <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> or use [non-capturing groups](grouping-constructs-in-regular-expressions#noncapturing-groups) instead. This saves the engine keeping track of those captures.
 
 ## See also
 

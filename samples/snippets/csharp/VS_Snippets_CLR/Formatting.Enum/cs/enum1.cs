@@ -20,10 +20,9 @@ public class Class1
    {
       Console.WriteLine("G Specifier:");
       // <Snippet1>
-      Console.WriteLine(ConsoleColor.Red.ToString("G"));         // Displays Red
-      FileAttributes attributes = FileAttributes.Hidden |
-                                  FileAttributes.Archive;
-      Console.WriteLine(attributes.ToString("G"));   // Displays Hidden, Archive
+        DateTime date = new DateTime(2023, 6, 17);
+        string formattedValueG = date.ToString("G");
+        Console.WriteLine("Formatted value (G): " + formattedValueG);  // Result:17-06-2023 00:00:00
       // </Snippet1>
       Console.WriteLine();
    }
@@ -32,10 +31,9 @@ public class Class1
    {
       Console.WriteLine("F Specifier:");
       // <Snippet2>
-      Console.WriteLine(ConsoleColor.Blue.ToString("F"));       // Displays Blue
-      FileAttributes attributes = FileAttributes.Hidden |
-                                  FileAttributes.Archive;
-      Console.WriteLine(attributes.ToString("F"));   // Displays Hidden, Archive
+        DateTime date = new DateTime(2023, 6, 17);
+        string formattedValueF = date.ToString("F");
+        Console.WriteLine("Formatted value (F): " + formattedValueF);  // Result: 17 June 2023 00:00:00
       // </Snippet2>
       Console.WriteLine();
    }

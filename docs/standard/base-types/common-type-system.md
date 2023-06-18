@@ -35,7 +35,7 @@ The common type system defines how types are declared, used, and managed in the 
   
  Value types are data types whose objects are represented by the object's actual value. If an instance of a value type is assigned to a variable, that variable is given a fresh copy of the value.  
   
- Reference types are data types whose objects are represented by a reference (similar to a pointer) to the object's actual value. If a reference type is assigned to a variable, that variable references (points to) the original value. No copy is made.  
+ Reference types are data types whose objects are represented by a reference (similar to a pointer) to the object's actual value. If a reference type is assigned to a variable, that variable references (points to) the original value. A reference to the object is copied.
   
  The common type system in .NET supports the following five categories of types:  
   

@@ -2,7 +2,7 @@
 using System.IO;
 
 // <Snippet5>
-public enum Color {Red = 1, Blue = 2, Green = 3}
+public enum Color { Red = 1, Blue = 2, Green = 3 };
 // </Snippet5>
 
 public class Class1
@@ -20,10 +20,11 @@ public class Class1
    {
       Console.WriteLine("G Specifier:");
       // <Snippet1>
-      Console.WriteLine(ConsoleColor.Red.ToString("G"));         // Displays Red
-      FileAttributes attributes = FileAttributes.Hidden |
-                                  FileAttributes.Archive;
-      Console.WriteLine(attributes.ToString("G"));   // Displays Hidden, Archive
+      Console.WriteLine(((DayOfWeek)7).ToString("G"));      // 7
+      Console.WriteLine(ConsoleColor.Red.ToString("G"));    // Displays Red
+
+      var attributes = FileAttributes.Hidden | FileAttributes.Archive;
+      Console.WriteLine(attributes.ToString("G"));          // Displays Hidden, Archive
       // </Snippet1>
       Console.WriteLine();
    }
@@ -32,10 +33,11 @@ public class Class1
    {
       Console.WriteLine("F Specifier:");
       // <Snippet2>
-      Console.WriteLine(ConsoleColor.Blue.ToString("F"));       // Displays Blue
-      FileAttributes attributes = FileAttributes.Hidden |
-                                  FileAttributes.Archive;
-      Console.WriteLine(attributes.ToString("F"));   // Displays Hidden, Archive
+      Console.WriteLine(((DayOfWeek)7).ToString("F"));       // Monday, Saturday
+      Console.WriteLine(ConsoleColor.Blue.ToString("F"));    // Displays Blue
+
+      var attributes = FileAttributes.Hidden | FileAttributes.Archive;
+      Console.WriteLine(attributes.ToString("F"));           // Displays Hidden, Archive
       // </Snippet2>
       Console.WriteLine();
    }
@@ -44,10 +46,11 @@ public class Class1
    {
       Console.WriteLine("D Specifier:");
       // <Snippet3>
-      Console.WriteLine(ConsoleColor.Cyan.ToString("D"));         // Displays 11
-      FileAttributes attributes = FileAttributes.Hidden |
-                                  FileAttributes.Archive;
-      Console.WriteLine(attributes.ToString("D"));                // Displays 34
+      Console.WriteLine(((DayOfWeek)7).ToString("D"));       // 7
+      Console.WriteLine(ConsoleColor.Cyan.ToString("D"));    // Displays 11
+
+      var attributes = FileAttributes.Hidden | FileAttributes.Archive;
+      Console.WriteLine(attributes.ToString("D"));           // Displays 34
       // </Snippet3>
       Console.WriteLine();
    }
@@ -56,9 +59,10 @@ public class Class1
    {
       Console.WriteLine("X Specifier:");
       // <Snippet4>
-      Console.WriteLine(ConsoleColor.Cyan.ToString("X"));   // Displays 0000000B
-      FileAttributes attributes = FileAttributes.Hidden |
-                                  FileAttributes.Archive;
+      Console.WriteLine(((DayOfWeek)7).ToString("X"));       // 00000007
+      Console.WriteLine(ConsoleColor.Cyan.ToString("X"));    // Displays 0000000B
+
+      var attributes = FileAttributes.Hidden | FileAttributes.Archive;
       Console.WriteLine(attributes.ToString("X"));          // Displays 00000022
       // </Snippet4>
       Console.WriteLine();

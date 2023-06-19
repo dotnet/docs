@@ -176,7 +176,7 @@ Before you can pack and distribute the application as a tool, you need to modify
    <PackageOutputPath>./nupkg</PackageOutputPath>
    ```
 
-   `<ToolCommandName>` is an optional element that specifies the command that will invoke the tool after it's installed. If this element isn't provided, the command name for the tool is the assembly name, typically project file name without the *.csproj* extension.
+   `<ToolCommandName>` is an optional element that specifies the command that will invoke the tool after it's installed. If this element isn't provided, the command name for the tool is the assembly name, typically the project file name without the *.csproj* extension.
 
    `<PackageOutputPath>` is an optional element that determines where the NuGet package will be produced. The NuGet package is what the .NET CLI uses to install your tool.
 

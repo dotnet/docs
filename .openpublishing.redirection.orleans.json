@@ -13,6 +13,10 @@
             "redirect_url": "/dotnet/orleans/migration-guide"
         },
         {
+            "source_path_from_root": "/docs/orleans/grains/reentrancy.md",
+            "redirect_url": "/dotnet/orleans/grains/request-scheduling"
+        },
+        {
             "source_path_from_root": "/docs/orleans/migration/codegen.md",
             "redirect_url": "/dotnet/orleans/grains/code-generation"
         },

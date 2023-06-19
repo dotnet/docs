@@ -25,7 +25,7 @@ You need to set up your machine to run .NET 8 or later, including the C# 12 or l
 You can add parameters to a `struct` or `class` declaration to create a *primary constructor*. Primary constructor parameters are in scope throughout the class definition. It's important to view primary constructor parameters as *parameters* even though they are in scope throughout the class definition. Several rules clarify that they're parameters:
 
 1. Primary constructor parameters may not be stored if they aren't needed.
-1. Primary constructors aren't members of the class. For example, a primary constructor parameter named `param` can't be accessed as `this.param`.
+1. Primary constructor parameters aren't members of the class. For example, a primary constructor parameter named `param` can't be accessed as `this.param`.
 1. Primary constructor parameters can be assigned to.
 1. Primary constructor parameters don't become properties, except in [`record`](../../language-reference/builtin-types/record.md) types.
 

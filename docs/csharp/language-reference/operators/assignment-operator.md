@@ -34,7 +34,7 @@ This is called *value assignment*: the value is assigned.
 
 ## ref assignment
 
-*Ref assignment* `= ref` makes its left-hand operand an alias to the right-hand operand. The left-hand operand must be a [ref local](../keywords/ref.md#ref-locals), [ref readonly local](../keywords/ref.md#ref-readonly-locals), or a [`ref` field](../builtin-types/ref-struct.md#ref-fields) in a `ref struct`. Both operands must be of the same type.
+*Ref assignment* `= ref` makes its left-hand operand an alias to the right-hand operand. The left-hand operand must be a [local reference variable](../statements/declarations.md#reference-variables) or a [`ref` field](../builtin-types/ref-struct.md#ref-fields) in a `ref struct`. Both operands must be of the same type.
 
 The following example demonstrates the usage of the ref assignment operator:
 

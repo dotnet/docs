@@ -53,7 +53,7 @@ a ? b : (c ? d : e)
 
 ## Conditional ref expression
 
-A [ref local](../keywords/ref.md#ref-locals) or [ref readonly local](../keywords/ref.md#ref-readonly-locals) variable can be assigned conditionally with a conditional ref expression. You can also use a conditional ref expression as a [reference return value](../keywords/ref.md#reference-return-values) or as a [`ref` method argument](../keywords/ref.md#passing-an-argument-by-reference).
+A [reference variable](../statements/declarations.md#reference-variables) can be assigned conditionally with a conditional ref expression. You can also use a conditional ref expression as a [reference return value](../keywords/ref.md#reference-return-values) or as a [`ref` method argument](../keywords/ref.md#passing-an-argument-by-reference).
 
 The syntax for a conditional ref expression is as follows:
 

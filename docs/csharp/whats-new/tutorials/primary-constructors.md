@@ -37,7 +37,7 @@ The most common uses for a primary constructor parameter are:
 1. To initialize a member field or property.
 1. Referencing the constructor parameter in an instance member.
 
-Every other constructor for a class **must** call the primary constructor, directly or indirectly, through a `this()` constructor invocation. That rule ensures that primary constructor parameters are assigned anywhere in the body of the class.
+Every other constructor for a class **must** call the primary constructor, directly or indirectly, through a `this()` constructor invocation. That rule ensures that primary constructor parameters are assigned anywhere in the body of the type.
 
 ## Initialize property
 

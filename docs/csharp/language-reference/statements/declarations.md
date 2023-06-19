@@ -72,11 +72,11 @@ ref int alias = ref variable;
 
 A reference variable is a variable that refers to another variable, which is called the *referent*. That is, a reference variable is an *alias* to its referent. When you assign a value to a reference variable, that value is assigned to the referent. When you read the value of a reference variable, the referent's value is returned. The following example demonstrates that behavior:
 
-:::code language="csharp" source="snippets/declarations/ReferenceVariables.cs" id="AliasToLocalVariable":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/declarations/ReferenceVariables.cs" id="AliasToLocalVariable":::
 
 Use the [`ref` assignment operator](../operators/assignment-operator.md#ref-assignment) `= ref` to change the referent of a reference variable, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/declarations/ReferenceVariables.cs" id="RefReassign":::
+:::code language="csharp" source="snippets/declarations/ReferenceVariables.cs" id="RefReassign":::
 
 In the preceding example, the `element` reference variable is initialized as an alias to the first array element. Then it's `ref` reassigned to refer to the last array element.
 

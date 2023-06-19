@@ -28,6 +28,9 @@ var john = new Person_InitExample
 
 john.YearOfBirth = 1926; //Not allowed, as its value can only be set once in the constructor
 ```
+Do note, that this behavior does not change when nullablity is used. `init` properties do not force the values to be initialized. What `init` does is that, if the property is to be initialized, it must be done at construction time in an object initializer (or in the constructor if you have one). So the behavior is the same for this example:
+
+[!code-csharp[init#4](snippets/InitNullablityExample.cs)]
 
 The `init` accessor can be used as an expression-bodied member. Example:
 

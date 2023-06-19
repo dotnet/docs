@@ -63,7 +63,7 @@ public class Class1
       Console.WriteLine(ConsoleColor.Cyan.ToString("X"));    // Displays 0000000B
 
       var attributes = FileAttributes.Hidden | FileAttributes.Archive;
-      Console.WriteLine(attributes.ToString("X"));          // Displays 00000022
+      Console.WriteLine(attributes.ToString("X"));           // Displays 00000022
       // </Snippet4>
       Console.WriteLine();
    }

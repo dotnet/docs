@@ -27,7 +27,7 @@ If you use `JsonSerializerOptions` repeatedly with the same options, don't creat
 
 The following code demonstrates the performance penalty for using new options instances.
 
-:::code language="csharp" source="snippets/system-text-json-configure-options/csharp/ReuseOptionsInstances.cs":::
+:::code language="csharp" source="snippets/configure-options/csharp/ReuseOptionsInstances.cs":::
 
 The preceding code serializes a small object 100,000 times using the same options instance. Then it serializes the same object the same number of times and creates a new options instance each time. A typical run time difference is 190 compared to 40,140 milliseconds. The difference is even greater if you increase the number of iterations.
 
@@ -49,8 +49,8 @@ If the instance of `JsonSerializerOptions` that you need to use is the default i
 
 There is a [JsonSerializerOptions constructor](xref:System.Text.Json.JsonSerializerOptions.%23ctor(System.Text.Json.JsonSerializerOptions)) that lets you create a new instance with the same options as an existing instance, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CopyOptions.cs" highlight="28":::
-:::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/CopyOptions.vb" :::
+:::code language="csharp" source="snippets/how-to-5-0/csharp/CopyOptions.cs" highlight="28":::
+:::code language="vb" source="snippets/how-to-5-0/vb/CopyOptions.vb" :::
 
 The metadata cache of the existing `JsonSerializerOptions` instance isn't copied to the new instance. So using this constructor is not the same as reusing an existing instance of `JsonSerializerOptions`.
 
@@ -64,5 +64,5 @@ The following options have different defaults for web apps:
 
 The [JsonSerializerOptions constructor](xref:System.Text.Json.JsonSerializerOptions.%23ctor(System.Text.Json.JsonSerializerDefaults)) lets you create a new instance with the default options that ASP.NET Core uses for web apps, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/OptionsDefaults.cs" highlight="23":::
-:::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/OptionsDefaults.vb" :::
+:::code language="csharp" source="snippets/how-to-5-0/csharp/OptionsDefaults.cs" highlight="23":::
+:::code language="vb" source="snippets/how-to-5-0/vb/OptionsDefaults.vb" :::

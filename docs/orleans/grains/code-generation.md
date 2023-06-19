@@ -1,12 +1,13 @@
 ---
 title: Code generation
 description: Learn how to use code generation in .NET Orleans.
-ms.date: 03/16/2022
+ms.date: 06/19/2023
+zone_pivot_groups: orleans-version
 ---
 
 # Orleans code generation
 
-This article applies to: ✔️ Orleans 3.x and earlier versions
+Before Orleans 7.0, source generation was much more manual and required explicit developer intervention. Starting with Orleans 7.0, code generation is automatic and requires no developer intervention. However, there are still cases where developers may want to influence code generation, for example, to generate code for types that are not automatically generated or to generate code for types in another assembly.
 
 ## Enable code generation
 

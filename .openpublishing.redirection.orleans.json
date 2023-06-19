@@ -13,8 +13,20 @@
             "redirect_url": "/dotnet/orleans/migration-guide"
         },
         {
-            "source_path_from_root": "/docs/orleans/grains/reentrancy.md",
-            "redirect_url": "/dotnet/orleans/grains/request-scheduling"
+            "source_path_from_root": "/docs/orleans/migration/codegen.md",
+            "redirect_url": "/dotnet/orleans/grains/code-generation"
+        },
+        {
+            "source_path_from_root": "/docs/orleans/migration/index.md",
+            "redirect_url": "/dotnet/orleans/migration-guide"
+        },
+        {
+            "source_path_from_root": "/docs/orleans/migration/migration-1.5.md",
+            "redirect_url": "/dotnet/orleans/migration-guide"
+        },
+        {
+            "source_path_from_root": "/docs/orleans/migration/migration-azure-2.0.md",
+            "redirect_url": "/dotnet/orleans/migration-guide"
         }
     ]
 }

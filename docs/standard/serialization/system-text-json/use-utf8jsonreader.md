@@ -61,7 +61,7 @@ When using the `Utf8JsonReader` to read from a stream, the following rules apply
 
 The following code illustrates how to read from a stream. The example shows a <xref:System.IO.MemoryStream>. Similar code will work with a <xref:System.IO.FileStream>, except when the `FileStream` contains a UTF-8 BOM at the start. In that case, you need to strip those three bytes from the buffer before passing the remaining bytes to the `Utf8JsonReader`. Otherwise the reader would throw an exception, since the BOM is not considered a valid part of the JSON.
 
-The sample code starts with a 4 KB buffer and doubles the buffer size each time it finds that the size is not large enough to fit a complete JSON token, which is required for the reader to make forward progress on the JSON payload. The JSON sample provided in the snippet triggers a buffer size increase only if you set a very small initial buffer size, for example, 10 bytes. If you set the initial buffer size to 10, the `Console.WriteLine` statements illustrate the cause and effect of buffer size increases. At the 4KB initial buffer size, the entire sample JSON is shown by each `Console.WriteLine`, and the buffer size never has to be increased.
+The sample code starts with a 4 KB buffer and doubles the buffer size each time it finds that the size is not large enough to fit a complete JSON token, which is required for the reader to make forward progress on the JSON payload. The JSON sample provided in the snippet triggers a buffer size increase only if you set a very small initial buffer size, for example, 10 bytes. If you set the initial buffer size to 10, the `Console.WriteLine` statements illustrate the cause and effect of buffer size increases. At the 4 KB initial buffer size, the entire sample JSON is shown by each `Console.WriteLine`, and the buffer size never has to be increased.
 
 :::code language="csharp" source="snippets/how-to/csharp/Utf8ReaderPartialRead.cs":::
 :::code language="vb" source="snippets/how-to/vb/Utf8ReaderPartialRead.vb":::
@@ -141,6 +141,12 @@ public bool ReadAsBoolean(bool defaultValue)
     return _reader.GetBoolean();
 }
 ```
+
+## Skip children of token
+
+Use the <xref:System.Text.Json.Utf8JsonReader.Skip?displayProperty=nameWithType> method to skip the children of the current JSON token. If the token type is <xref:System.Text.Json.JsonTokenType.PropertyName?displayProperty=nameWithType>, the reader moves to the property value. The following code snippet shows an example of using <xref:System.Text.Json.Utf8JsonReader.Skip?displayProperty=nameWithType> to move the reader to the value of a property.
+
+:::code language="csharp" source="snippets/how-to/csharp/Utf8ReaderSkip.cs" id="Snippet1":::
 
 ## Consume decoded JSON strings
 

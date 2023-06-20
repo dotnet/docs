@@ -330,7 +330,7 @@
 | Container Registry | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Microsoft.Azure.ContainerRegistry/1.0.0-preview.2) |  | GitHub [1.0.0-preview.2](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.ContainerRegistry_1.0.0-preview.2/sdk/containerregistry/Microsoft.Azure.ContainerRegistry/) |
 | Content Moderator | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.ContentModerator/2.0.0) |  |  |
 | Cosmos DB | NuGet [3.35.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.35.0) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/cosmosdb) | GitHub [3.35.0](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
-| Cosmos DB | NuGet [2.19.0](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB/2.19.0) |  | GitHub [2.19.0](https://github.com/Azure/azure-cosmos-dotnet-v2) |
+| Cosmos DB | NuGet [2.20.0](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB/2.20.0) |  | GitHub [2.20.0](https://github.com/Azure/azure-cosmos-dotnet-v2) |
 | Custom Image Search | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingCustomImageSearch/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingCustomImageSearch_2.1.0-preview.1/sdk/cognitiveservices/Search.BingCustomImageSearch) |
 | Custom Image Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.CustomImageSearch/2.0.0) |  |  |
 | Custom Search | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingCustomSearch/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingCustomSearch_2.1.0-preview.1/sdk/cognitiveservices/Search.BingCustomSearch) |
@@ -342,7 +342,7 @@
 | DCAP | NuGet [1.12.0](https://www.nuget.org/packages/Microsoft.Azure.DCAP/1.12.0) |  | GitHub [1.12.0](https://github.com/microsoft/Azure-DCAP-Client/tree/1.6) |
 | Digital Twins Client | NuGet [1.0.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.DigitalTwin.Client/1.0.0-preview-001) |  |  |
 | Digital Twins Service | NuGet [1.0.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.DigitalTwin.Service/1.0.0-preview-001) |  |  |
-| Document DB - Core | NuGet [2.19.0](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core/2.19.0) |  | GitHub [2.19.0](https://github.com/Azure/azure-cosmos-dotnet-v2) |
+| Document DB - Core | NuGet [2.20.0](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core/2.20.0) |  | GitHub [2.20.0](https://github.com/Azure/azure-cosmos-dotnet-v2) |
 | Entity Search | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingEntitySearch/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingEntitySearch_2.1.0-preview.1/sdk/cognitiveservices/Search.BingEntitySearch) |
 | Entity Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.EntitySearch/2.0.0) |  |  |
 | Event Grid | NuGet [3.2.1](https://www.nuget.org/packages/Microsoft.Azure.EventGrid/3.2.1) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/eventgrid) | GitHub [3.2.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.EventGrid_3.2.1/sdk/eventgrid/Microsoft.Azure.EventGrid/) |

@@ -246,11 +246,11 @@ ts=2023-06-16T05:29:02.789Z caller=web.go:562 level=info component=web msg="Star
 
 Open this URL in your browser. In the Prometheus UI you should now be able to query for your metrics, you use the highlighted button, it will bring up the metrics explorer which will show all the metrics available.
 
-[![Prometheus Metrics Explorer](./media/prometheus-metrics-explorer.png)](./media/prometheus-metrics-explorer.png#lightbox)
+[![Prometheus Metrics Explorer](./media/prometheus-metrics-explorer.thumb.png)](./media/prometheus-metrics-explorer.png#lightbox)
 
 Select the `greetings_count` metric to see a graph of values.
 
-[![Graph of greetings_count](./media/prometheus-graph.png)](./media/prometheus-graph.png#lightbox)
+[![Graph of greetings_count](./media/prometheus-graph.thumb.png)](./media/prometheus-graph.png#lightbox)
 
 ### 8. Install Grafana and create a dashboard
 
@@ -270,7 +270,7 @@ Click the *Add a Visualization* button, and choose the Prometheus datasource you
 
 The dashboard panel designer should be shown. In the lower half of the screen, you can define the query.
 
-[![Grafana query using greetings_count](./media/grafana-greetings-count-metric.png)](./media/grafana-greetings-count-metric.png#lightbox)
+[![Grafana query using greetings_count](./media/grafana-greetings-count-metric.thumb.png)](./media/grafana-greetings-count-metric.png#lightbox)
 
 Select the `greetings_count` metric, and then Click the *Run Queries* button to see the results.
 
@@ -287,7 +287,7 @@ Each metric in .NET can have additional dimensions which are key/value pairs whi
 
 The graphs in Grafana are usually partitioned based on each unique combination of dimensions. The dimensions can be used in the Grafana queries to filter or aggregate the data. For example, if you graph the `current_requests`you will see values partitioned based on each combination of dimensions. To just filter based on the host you can add an operation of `Sum` and use `host` as the label value.
 
-[![Grafana current_requests by host](./media/grafana-request-count-by-host.png)](./media/grafana-request-count-by-host.png#lightbox)
+[![Grafana current_requests by host](./media/grafana-request-count-by-host.thumb.png)](./media/grafana-request-count-by-host.png#lightbox)
 
 ### 9 Distributed tracing with Jaeger
 
@@ -321,11 +321,11 @@ Restart the greeter process so that it can pickup the property change, and start
 
 Now we should be able to see the Jaeger UI at [`http://localhost:16686/`](http://localhost:16686/) from a web browser.
 
-[![Jaeger query for traces](./media/jaeger-search-results.png)](./media/jaeger-search-results.png#lightbox)
+[![Jaeger query for traces](./media/jaeger-search-results.thumb.png)](./media/jaeger-search-results.png#lightbox)
 
 We can select our `OTel-Prometheus-Graphana-Yaeger` from the Service dropdown and see a list of traces. Selecting a trace should show a gant chart of the activities as part of that trace. Clicking on each of the operations will show more details about the activity.
 
-[![Jaeger Operation Details](./media/jaeger-activity-details.png)](./media/jaeger-activity-details.png#lightbox)
+[![Jaeger Operation Details](./media/jaeger-activity-details.thumb.png)](./media/jaeger-activity-details.png#lightbox)
 
 In a distributed system, you want to send traces from all processes to the same jaeger installation so that it can correlate the transactions across the system.
 
@@ -345,7 +345,7 @@ We can make our application a little more interesting by having it make http cal
 
 This results in a more interesting graph with a pyramid shape for the requests as each level will wait for the response from the previous call.
 
-[![Jaeger nested dependency results](./media/jaeger-nested-activity-details.png)](./media/jaeger-nested-activity-details.png#lightbox)
+[![Jaeger nested dependency results](./media/jaeger-nested-activity-details.thumb.png)](./media/jaeger-nested-activity-details.png#lightbox)
 
 ## Example: Using Azure Monitor / Application Insights
 
@@ -367,7 +367,7 @@ If you are not already an Azure customer, you can create a free account at [http
 
 The way that Application Insights identifies which instance should be used to store and process data is through an instrumentation key and connection string which can be found at the top right of the portal UI.
 
-[![Connection String in Azure Portal](./media/portal_ui.png)](./media/portal_ui.png#lightbox)
+[![Connection String in Azure Portal](./media/portal_ui.thumb.png)](./media/portal_ui.png#lightbox)
 
 If using Azure App Service, this is automatically passed to the application as an environment variable. For other services, or running locally you need to pass it with an APPLICATIONINSIGHTS_CONNECTION_STRING environment variable or in appsettings.json. For running locally its easiest to add to appsettings.json:
 
@@ -383,17 +383,17 @@ Now when you run the application, telemetry will be sent to App Insights. You sh
    :::column span="":::
    **Logs**
 
-[![App Insights logs view](./media/azure_logs.png)](./media/azure_logs.png#lightbox)
+[![App Insights logs view](./media/azure_logs.thumb.png)](./media/azure_logs.png#lightbox)
    :::column-end:::
    :::column span="":::
    **Metrics**
 
-[![App Insights metrics view](./media/azure_metrics_graph.png)](./media/azure_metrics_graph.png#lightbox)
+[![App Insights metrics view](./media/azure_metrics_graph.thumb.png)](./media/azure_metrics_graph.png#lightbox)
    :::column-end:::
    :::column span="":::
    **Distributed Tracing**
 
-[![App Insights transaction view](./media/azure_tracing.png)](./media/azure_tracing.png#lightbox)
+[![App Insights transaction view](./media/azure_tracing.thumb.png)](./media/azure_tracing.png#lightbox)
    :::column-end:::
 :::row-end:::
 

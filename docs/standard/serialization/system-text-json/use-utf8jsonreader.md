@@ -6,7 +6,7 @@ no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
   - "vb"
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # How to use Utf8JsonReader in System.Text.Json

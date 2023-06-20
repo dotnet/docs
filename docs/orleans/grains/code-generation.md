@@ -23,6 +23,8 @@ Orleans generates C# source code for your app at build time. All projects, inclu
 
 Use the <xref:Orleans.GenerateSerializerAttribute> to specify that the type is intended to be serialized and that serialization code should be generated for the type. For more information, see [Use Orleans serialization](../host/configuration-guide/serialization.md#use-orleans-serialization).
 
+:::zone-end
+
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
 <!-- markdownlint-enable MD044 -->
@@ -45,6 +47,8 @@ If you're developing with F# or Visual Basic, you can also use code generation. 
 - [Orleans Visual Basic sample app](/samples/dotnet/samples/orleans-vb-sample)
 
 These examples demonstrate how to consume the <xref:Orleans.GenerateCodeForDeclaringAssemblyAttribute?displayProperty=nameWithType>, specifying types in the assembly which the source generator should inspect and generate source for.
+
+:::zone-end
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
@@ -70,6 +74,8 @@ Additional diagnostics can be emitted at build time by specifying a value for `O
 <!-- markdownlint-enable MD044 -->
 
 In Orleans 7+, nothing happens during initialization. Code generation is performed at build time.
+
+:::zone-end
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"
@@ -105,6 +111,8 @@ codeGenLoggerFactory.AddProvider(new ConsoleLoggerProvider());
 <!-- markdownlint-enable MD044 -->
 
 When applying <xref:Orleans.GenerateSerializerAttribute> to a type, you can also apply the <xref:Orleans.IdAttribute> to uniquely identify the member. Likewise, you may also apply an alias with the <xref:Orleans.AliasAttribute>. For more information on influencing code generation, see [Use Orleans serialization](../host/configuration-guide/serialization.md#use-orleans-serialization).
+
+:::zone-end
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-3-x"

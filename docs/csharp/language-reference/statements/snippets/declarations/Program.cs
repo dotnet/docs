@@ -1,9 +1,6 @@
-﻿using RefReturns;
-using RefReturnsVersionTwo;
+﻿using ReferenceReturns;
 using ImplicitTypes;
 
-FirstExample.Tests();
-Console.WriteLine();
-SecondExample.Tests();
-Console.WriteLine();
 VarExample.ImplicitlyTyped();
+ReferenceVariables.Examples();
+ReferenceReturnExample.Run();

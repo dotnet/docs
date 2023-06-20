@@ -19,8 +19,8 @@ This article shows how to use the <xref:System.Text.Json.Utf8JsonReader> type fo
 
 The following example shows how to use the <xref:System.Text.Json.Utf8JsonReader> class:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/Utf8ReaderFromBytes.cs" id="Deserialize":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/Utf8ReaderFromBytes.vb" id="Deserialize":::
+:::code language="csharp" source="snippets/how-to/csharp/Utf8ReaderFromBytes.cs" id="Deserialize":::
+:::code language="vb" source="snippets/how-to/vb/Utf8ReaderFromBytes.vb" id="Deserialize":::
 
 The preceding code assumes that the `jsonUtf8` variable is a byte array that contains valid JSON, encoded as UTF-8.
 
@@ -28,8 +28,8 @@ The preceding code assumes that the `jsonUtf8` variable is a byte array that con
 
 The following example shows how to synchronously read a file and search for a value.
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/Utf8ReaderFromFile.cs":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/Utf8ReaderFromFile.vb":::
+:::code language="csharp" source="snippets/how-to/csharp/Utf8ReaderFromFile.cs":::
+:::code language="vb" source="snippets/how-to/vb/Utf8ReaderFromFile.vb":::
 
 For an asynchronous version of this example, see [.NET samples JSON project](https://github.com/dotnet/samples/blob/18e31a5f1abd4f347bf96bfdc3e40e2cfb36e319/core/json/Program.cs).
 
@@ -47,7 +47,7 @@ The preceding code:
 
 Here's a JSON sample that the preceding code can read. The resulting summary message is "2 out of 4 have names that end with 'University'":
 
-:::code language="json" source="snippets/system-text-json-how-to/csharp/Universities.json":::
+:::code language="json" source="snippets/how-to/csharp/Universities.json":::
 
 ## Read from a stream using `Utf8JsonReader`
 
@@ -63,8 +63,8 @@ The following code illustrates how to read from a stream. The example shows a <x
 
 The sample code starts with a 4KB buffer and doubles the buffer size each time it finds that the size is not large enough to fit a complete JSON token, which is required for the reader to make forward progress on the JSON payload. The JSON sample provided in the snippet triggers a buffer size increase only if you set a very small initial buffer size, for example, 10 bytes. If you set the initial buffer size to 10, the `Console.WriteLine` statements illustrate the cause and effect of buffer size increases. At the 4KB initial buffer size, the entire sample JSON is shown by each `Console.WriteLine`, and the buffer size never has to be increased.
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/Utf8ReaderPartialRead.cs":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/Utf8ReaderPartialRead.vb":::
+:::code language="csharp" source="snippets/how-to/csharp/Utf8ReaderPartialRead.cs":::
+:::code language="vb" source="snippets/how-to/vb/Utf8ReaderPartialRead.vb":::
 
 The preceding example sets no limit to how large the buffer can grow. If the token size is too large, the code could fail with an <xref:System.OutOfMemoryException> exception. This can happen if the JSON contains a token that is around 1 GB or more in size, because doubling the 1 GB size results in a size that is too large to fit into an `int32` buffer.
 
@@ -98,9 +98,9 @@ while (reader.Read())
 
 Don't use <xref:System.Text.Json.Utf8JsonReader.ValueSpan%2A> to do byte-by-byte comparisons by calling <xref:System.MemoryExtensions.SequenceEqual%2A> for property name lookups. Call <xref:System.Text.Json.Utf8JsonReader.ValueTextEquals%2A> instead, because that method unescapes any characters that are escaped in the JSON. Here's an example that shows how to search for a property that is named "name":
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/ValueTextEqualsExample.cs" id="DefineUtf8Var":::
+:::code language="csharp" source="snippets/how-to/csharp/ValueTextEqualsExample.cs" id="DefineUtf8Var":::
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/ValueTextEqualsExample.cs" id="UseUtf8Var" highlight="9":::
+:::code language="csharp" source="snippets/how-to/csharp/ValueTextEqualsExample.cs" id="UseUtf8Var" highlight="9":::
 
 ## Read null values into nullable value types
 
@@ -142,8 +142,8 @@ public bool ReadAsBoolean(bool defaultValue)
 
 Starting in .NET 7, you can use the <xref:System.Text.Json.Utf8JsonReader.CopyString%2A?displayProperty=nameWithType> method instead of <xref:System.Text.Json.Utf8JsonReader.GetString?displayProperty=nameWithType> to consume a decoded JSON string. Unlike <xref:System.Text.Json.Utf8JsonReader.GetString>, which always allocates a new string, <xref:System.Text.Json.Utf8JsonReader.CopyString%2A> lets you copy the unescaped string to a buffer that you own. The following code snippet shows an example of consuming a UTF-16 string using <xref:System.Text.Json.Utf8JsonReader.CopyString%2A>.
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/Utf8ReaderCopyString.cs" id="Snippet1":::
+:::code language="csharp" source="snippets/how-to/csharp/Utf8ReaderCopyString.cs" id="Snippet1":::
 
 ## See also
 
-- [How to use Utf8JsonWriter in System.Text.Json](use-utf8jsonwriter.md)
+* [How to use Utf8JsonWriter in System.Text.Json](use-utf8jsonwriter.md)

@@ -235,7 +235,7 @@ C# version 7.0 was released with Visual Studio 2017. This version has some evolu
 - [Pattern matching](../fundamentals/functional/pattern-matching.md)
 - [Local functions](../programming-guide/classes-and-structs/local-functions.md)
 - [Expanded expression bodied members](../programming-guide/statements-expressions-operators/expression-bodied-members.md)
-- [Ref locals](../language-reference/statements/declarations.md#ref-locals)
+- [Ref locals](../language-reference/statements/declarations.md#reference-variables)
 - [Ref returns](../language-reference/statements/jump-statements.md#ref-returns)
 
 Other features included:

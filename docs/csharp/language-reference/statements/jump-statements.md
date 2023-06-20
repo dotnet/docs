@@ -65,7 +65,7 @@ By default, the `return` statement returns the value of an expression. You can r
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/jump-statements/ReturnStatement.cs" id="RefReturn":::
 
-Return values can be returned by reference (`ref` returns). A reference return value allows a method to return a reference to a variable, rather than a value, back to a caller. The caller can then choose to treat the returned variable as if it were returned by value or by reference. The caller can create a new variable that is itself a reference to the returned value, called a [ref local](declarations.md#ref-locals). A *reference return value* means that a method returns a *reference* (or an alias) to some variable. That variable's scope must include the method. That variable's lifetime must extend beyond the return of the method. Modifications to the method's return value by the caller are made to the variable that is returned by the method.
+Return values can be returned by reference (`ref` returns). A reference return value allows a method to return a reference to a variable, rather than a value, back to a caller. The caller can then choose to treat the returned variable as if it were returned by value or by reference. The caller can create a new variable that is itself a reference to the returned value, called a [ref local](declarations.md#reference-variables). A *reference return value* means that a method returns a *reference* (or an alias) to some variable. That variable's scope must include the method. That variable's lifetime must extend beyond the return of the method. Modifications to the method's return value by the caller are made to the variable that is returned by the method.
 
 Declaring that a method returns a *reference return value* indicates that the method returns an alias to a variable. The design intent is often that calling code accesses that variable through the alias, including to modify it. Methods returning by reference can't have the return type `void`.
 
@@ -75,7 +75,7 @@ The `ref` return value is an alias to another variable in the called method's sc
 - When you read its value, you're reading the value of the variable it aliases.
 - If you return it *by reference*, you're returning an alias to that same variable.
 - If you pass it to another method *by reference*, you're passing a reference to the variable it aliases.
-- When you make a [ref local](declarations.md#ref-locals) alias, you make a new alias to the same variable.
+- When you make a [ref local](declarations.md#reference-variables) alias, you make a new alias to the same variable.
 
 A ref return must be [*ref_safe_to_escape*](../keywords/method-parameters.md#scope-of-references-and-values) to the calling method. That means:
 

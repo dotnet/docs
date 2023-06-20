@@ -1,7 +1,7 @@
 ---
 title: Custom serialization and deserialization contracts
 description: "Learn how to write your own contract resolution logic to customize the JSON contract for a type."
-ms.date: 09/26/2022
+ms.date: 06/15/2023
 ---
 # Customize a JSON contract
 
@@ -13,7 +13,8 @@ Starting in .NET 7, you can customize these JSON contracts to provide more contr
 - Support multiple names for a single property (for example, if a previous library version used a different name).
 - Ignore properties with a specific name, type, or value.
 - Distinguish between explicit `null` values and the lack of a value in the JSON payload.
-<!--Add links to blog post when published.-->
+- Support <xref:System.Runtime.Serialization> attributes, such as <xref:System.Runtime.Serialization.DataContractAttribute>. For more information, see [System.Runtime.Serialization attributes](migrate-from-newtonsoft.md#systemruntimeserialization-attributes).
+- Throw an exception if the JSON includes a property that's not part of the target type. For more information, see [Handle missing members](migrate-from-newtonsoft.md#handle-missing-members).
 
 ## How to opt in
 
@@ -117,4 +118,5 @@ Contract customization is an improvement over these pre-existing customizations 
 
 ## See also
 
-- [JSON contract customization blog post](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-6/#json-contract-customization)
+- [JSON contract customization (blog post)](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-6/#json-contract-customization)
+- [What's new in System.Text.Json in .NET 7 (blog post)](https://devblogs.microsoft.com/dotnet/system-text-json-in-dotnet-7/)

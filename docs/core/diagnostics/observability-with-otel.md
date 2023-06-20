@@ -1,10 +1,10 @@
 ---
-title: .NET Observability with Open Telemetry
-description: An introduction to observing .NET apps with Open Telemetry
+title: .NET Observability with OpenTelemetry
+description: An introduction to observing .NET apps with OpenTelemetry
 ms.date: 6/14/2023
 ---
 
-# .NET Observability with Open Telemetry
+# .NET Observability with OpenTelemetry
 
 When running a distributed application, operators want to know how well the application is performing, and to try to detect potential problems when they are small, before they become larger. The way that they can do this is by monitoring specific instrumentation emitted by the application, and looking for changes in metrics and logs.
 
@@ -24,24 +24,24 @@ Each of these may include telemetry from the runtime, such as the garbage collec
 
 There are a couple of different ways that observability can be achieved in .NET applications:
 
-- Explicitly in code, referencing and using an SDK such as Open Telemetry. If you have access to the source code and can rebuild the app, then this is the most powerful and configurable mechanism.
+- Explicitly in code, referencing and using an SDK such as OpenTelemetry. If you have access to the source code and can rebuild the app, then this is the most powerful and configurable mechanism.
 - Out of process using [EventPipe](./eventpipe.md), tools such as [dotnet-monitor](./dotnet-monitor.md) can listen to logs, metrics and then process them without having to affect any code in the process.
 - [Using a startup hook](https://github.com/dotnet/runtime/blob/main/docs/design/features/host-startup-hook.md) assemblies can be injected into the process that can then collect instrumentation. This mechanism enables creating instrumentation for libraries that were not designed for it, but can be fragile to version conflicts between application and instrumentation dependencies. An example of this approach is [OpenTelemetry .NET Automatic Instrumentation](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/main/docs/README.md)
 
-## What is Open Telemetry
+## What is OpenTelemetry
 
-Open Telemetry (OTel) is a cross-platform, open standard for collecting and emitting telemetry data. Open telemetry includes:
+OpenTelemetry (OTel) is a cross-platform, open standard for collecting and emitting telemetry data. OpenTelemetry includes:
 
 - [APIs](https://opentelemetry.io/docs/concepts/instrumentation/manual/) for libraries to use to emit telemetry
 - [Semantic conventions](https://github.com/open-telemetry/semantic-conventions) for metrics & traces
 - Standard for [exporter components](https://opentelemetry.io/docs/collector/)
 - [OTLP wire protocol](https://github.com/open-telemetry/opentelemetry-proto/blob/main/docs/README.md) for transmitting telemetry data
 
-There are open telemetry implementations for most languages/platforms including .NET.
+There are OpenTelemetry implementations for most languages/platforms including .NET.
 
 ## .NET Observability architecture
 
-The .NET Open Telemetry implementation is a little different from other platforms, as .NET provides logging, metrics and activity APIs in the BCL, so OTel doesn't need to provide APIs for library authors to use. The .NET implementation uses the existing APIs for instrumentation:
+The .NET OpenTelemetry implementation is a little different from other platforms, as .NET provides logging, metrics and activity APIs in the BCL, so OTel doesn't need to provide APIs for library authors to use. The .NET implementation uses the existing APIs for instrumentation:
 
 - <xref:Microsoft.Extensions.Logging.ILogger%601?displayProperty=nameWithType> for [logging](../extensions/logging.md)
 - <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> for [metrics](./metrics-instrumentation.md)
@@ -52,11 +52,11 @@ The .NET Open Telemetry implementation is a little different from other platform
 
 Where OTel comes into play is being able to collect telemetry from those APIs and other sources (via instrumentation libraries), collect them up and then export them to an Application Performance Monitoring (APM) system. The benefit that OTel brings is a common mechanism for the collection and a common API for how APMs can integrate with OTel. APMs can either implement an APM specific exporter component, or use OTLP a new wire standard for communicating with APM systems for data collection.
 
-Using OTel enables using a wide variety of APM systems including open-source systems such as [Prometheus](https://prometheus.io/) and [Graphana](https://grafana.com/oss/grafana/), [Azure Monitor](/azure/azure-monitor/app/app-insights-overview?tabs=net) - Microsoft's APM Product in Azure, or from the many [APM vendors](https://opentelemetry.io/ecosystem/vendors/) partnering with Open Telemetry.
+Using OTel enables using a wide variety of APM systems including open-source systems such as [Prometheus](https://prometheus.io/) and [Graphana](https://grafana.com/oss/grafana/), [Azure Monitor](/azure/azure-monitor/app/app-insights-overview?tabs=net) - Microsoft's APM Product in Azure, or from the many [APM vendors](https://opentelemetry.io/ecosystem/vendors/) partnering with OpenTelemetry.
 
-## Open Telemetry Packages
+## OpenTelemetry Packages
 
-Open Telemetry in .NET is implemented as a series of Nuget packages that form a couple of categories:
+OpenTelemetry in .NET is implemented as a series of Nuget packages that form a couple of categories:
 
 - Core API
 - Instrumentation Providers - these collect instrumentation from the runtime and common libraries.
@@ -104,9 +104,9 @@ This defines a new metric `greetings.count` for the number of times the API has 
 
 :::code language="csharp" source="snippets/OTel-Prometheus-Graphana-Yaeger/csharp/Program.cs" id="Snippet_SendGreeting":::
 
-> Note: that the API definition does not use anything specific to Open Telemetry, its using the .NET APIs for observability
+> Note: that the API definition does not use anything specific to OpenTelemetry, its using the .NET APIs for observability
 
-### 4. Reference the Open Telemetry packages
+### 4. Reference the OpenTelemetry packages
 
 Use Nuget Package Manager GUI or cmd line to add the following nuget packages:
 
@@ -114,7 +114,7 @@ Use Nuget Package Manager GUI or cmd line to add the following nuget packages:
 
   > Note: Use the latest versions as the OTel APIs are constantly evolving
 
-### 5. Configure Open Telemetry with the correct providers
+### 5. Configure OpenTelemetry with the correct providers
 
 :::code language="csharp" source="snippets/OTel-Prometheus-Graphana-Yaeger/csharp/Program.cs" id="Snippet_OTEL":::
 
@@ -246,11 +246,11 @@ ts=2023-06-16T05:29:02.789Z caller=web.go:562 level=info component=web msg="Star
 
 Open this URL in your browser. In the Prometheus UI you should now be able to query for your metrics, you use the highlighted button, it will bring up the metrics explorer which will show all the metrics available.
 
-![Prometheus Metrics Explorer](./media/prometheus-metrics-explorer.png)
+[![Prometheus Metrics Explorer](./media/prometheus-metrics-explorer.png)](./media/prometheus-metrics-explorer.png#lightbox)
 
 Select the `greetings_count` metric to see a graph of values.
 
-![Graph of greetings_count](./media/prometheus-graph.png)
+[![Graph of greetings_count](./media/prometheus-graph.png)](./media/prometheus-graph.png#lightbox)
 
 ### 8. Install Grafana and create a dashboard
 
@@ -270,7 +270,7 @@ Click the *Add a Visualization* button, and choose the Prometheus datasource you
 
 The dashboard panel designer should be shown. In the lower half of the screen, you can define the query.
 
-![Grafana query using greetings_count](./media/grafana-greetings-count-metric.png)
+[![Grafana query using greetings_count](./media/grafana-greetings-count-metric.png)](./media/grafana-greetings-count-metric.png#lightbox)
 
 Select the `greetings_count` metric, and then Click the *Run Queries* button to see the results.
 
@@ -287,7 +287,7 @@ Each metric in .NET can have additional dimensions which are key/value pairs whi
 
 The graphs in Grafana are usually partitioned based on each unique combination of dimensions. The dimensions can be used in the Grafana queries to filter or aggregate the data. For example, if you graph the `current_requests`you will see values partitioned based on each combination of dimensions. To just filter based on the host you can add an operation of `Sum` and use `host` as the label value.
 
-![Grafana current_requests by host](./media/grafana-request-count-by-host.png)
+[![Grafana current_requests by host](./media/grafana-request-count-by-host.png)](./media/grafana-request-count-by-host.png#lightbox)
 
 ### 9 Distributed tracing with Jaeger
 
@@ -321,11 +321,11 @@ Restart the greeter process so that it can pickup the property change, and start
 
 Now we should be able to see the Jaeger UI at [`http://localhost:16686/`](http://localhost:16686/) from a web browser.
 
-![Jaeger query for traces](./media/jaeger-search-results.png)
+[![Jaeger query for traces](./media/jaeger-search-results.png)](./media/jaeger-search-results.png#lightbox)
 
 We can select our `OTel-Prometheus-Graphana-Yaeger` from the Service dropdown and see a list of traces. Selecting a trace should show a gant chart of the activities as part of that trace. Clicking on each of the operations will show more details about the activity.
 
-![Jaeger Operation Details](./media/jaeger-activity-details.png)
+[![Jaeger Operation Details](./media/jaeger-activity-details.png)](./media/jaeger-activity-details.png#lightbox)
 
 In a distributed system, you want to send traces from all processes to the same jaeger installation so that it can correlate the transactions across the system.
 
@@ -345,13 +345,13 @@ We can make our application a little more interesting by having it make http cal
 
 This results in a more interesting graph with a pyramid shape for the requests as each level will wait for the response from the previous call.
 
-![Jaeger nested dependency results](./media/jaeger-nested-activity-details.png)
+[![Jaeger nested dependency results](./media/jaeger-nested-activity-details.png)](./media/jaeger-nested-activity-details.png#lightbox)
 
 ## Example: Using Azure Monitor / Application Insights
 
 In the previous example, we used separate open source applications for metrics and tracing. There are many commerical APM systems available, the primary application monitoring product in Azure is Application Insights, which is part of Azure Monitor. One of the advantages of an integrated APM product, is that it can correlate the different observability data sources together.
 
-To make the ASP.NET experience with Azure Monitor easier, they have created a wrapper package that does most of the heavy lifting of configuring Open Telemetry for you.
+To make the ASP.NET experience with Azure Monitor easier, they have created a wrapper package that does most of the heavy lifting of configuring OpenTelemetry for you.
 
 We can take the same project from [Step 5](#5-configure-open-telemetry-with-the-correct-providers) and replace the nuget references with a single package:
 
@@ -367,7 +367,7 @@ If you are not already an Azure customer, you can create a free account at [http
 
 The way that Application Insights identifies which instance should be used to store and process data is through an instrumentation key and connection string which can be found at the top right of the portal UI.
 
-![Connection String in Azure Portal](./media/portal_ui.png)
+[![Connection String in Azure Portal](./media/portal_ui.png)](./media/portal_ui.png#lightbox)
 
 If using Azure App Service, this is automatically passed to the application as an environment variable. For other services, or running locally you need to pass it with an APPLICATIONINSIGHTS_CONNECTION_STRING environment variable or in appsettings.json. For running locally its easiest to add to appsettings.json:
 
@@ -379,19 +379,23 @@ Replace this value with the one from your instance.
 
 Now when you run the application, telemetry will be sent to App Insights. You should now get logs, metrics and distributed traces for your application.
 
-# [Logs](#tab/logs)
+:::row:::
+   :::column span="":::
+   **Logs**
 
-![App Insights logs view](./media/azure_logs.png)
+[![App Insights logs view](./media/azure_logs.png)](./media/azure_logs.png#lightbox)
+   :::column-end:::
+   :::column span="":::
+   **Metrics**
 
-# [Metrics](#tab/metrics)
+[![App Insights metrics view](./media/azure_metrics_graph.png)](./media/azure_metrics_graph.png#lightbox)
+   :::column-end:::
+   :::column span="":::
+   **Distributed Tracing**
 
-![App Insights metrics view](./media/azure_metrics_graph.png)
-
-# [Distributed Tracing](#tab/tracing)
-
-![App Insights transaction view](./media/azure_tracing.png)
-
----
+[![App Insights transaction view](./media/azure_tracing.png)](./media/azure_tracing.png#lightbox)
+   :::column-end:::
+:::row-end:::
 
 ## Example: Using dotnet-monitor
 

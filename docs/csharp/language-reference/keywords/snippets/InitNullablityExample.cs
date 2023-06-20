@@ -11,3 +11,5 @@ class Person_InitExampleNullability
         init => _yearOfBirth = value;
     }
 }
+// </Snippet4>
+

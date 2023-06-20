@@ -570,7 +570,7 @@ Searches for JSON tokens using `JObject` or `JArray` from `Newtonsoft.Json` tend
 
 ### Utf8JsonReader is a ref struct
 
-The `JsonTextReader` in `Newtonsoft.Json` is a class. The `Utf8JsonReader` type differs in that it's a *ref struct*. For more information, see [Utf8JsonReader is a ref struct](use-utf8jsonreader.md#utf8jsonreader-is-a-ref-struct).
+The `JsonTextReader` in `Newtonsoft.Json` is a class. The `Utf8JsonReader` type differs in that it's a *ref struct*. For more information, see [ref struct limitations for Utf8JsonReader](use-utf8jsonreader.md#ref-struct-limitations).
 
 ### Read null values into nullable value types
 

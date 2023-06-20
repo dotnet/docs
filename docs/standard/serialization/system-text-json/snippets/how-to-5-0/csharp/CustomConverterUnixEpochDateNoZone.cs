@@ -38,7 +38,6 @@ namespace CustomConverterUnixEpochDateNoZone
 
         public override DateTime Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
-
             string formatted = reader.GetString()!;
             Match match = s_regex.Match(formatted);
 

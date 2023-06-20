@@ -118,7 +118,7 @@ async Task<String> SendGreeting(ILogger<Program> logger)
 
     return "Hello World!";
 }
-//<Snippet_SendGreeting>
+//</Snippet_SendGreeting>
 
 //<Snippet_SendNestedGreeting>
 async Task SendNestedGreeting(int nestlevel, ILogger<Program> logger, HttpContext context, IHttpClientFactory clientFactory)
@@ -148,4 +148,4 @@ async Task SendNestedGreeting(int nestlevel, ILogger<Program> logger, HttpContex
         await context.Response.WriteAsync("Nest level too high, max is 5");
     }
 }
-//<Snippet_SendNestedGreeting>
+//</Snippet_SendNestedGreeting>

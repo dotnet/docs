@@ -81,6 +81,12 @@ You can invoke a base class' primary constructor from the derived class' primary
 
 All bank accounts, regardless of the type, have properties for the account number and an owner. In the completed application, other common functionality would be added to the base class.
 
+Many types require more specific validation on constructor parameters. For example, the `BankAccount` has specific requirements for the `owner` and `accountID` parameters: The `owner` must not be `null` or whitespace, and the `accountID` must be a string containing 10 digits. You can add this validation when you assign the corresponding properties:
+
+:::code source="./snippets/primary-constructors/BankAccountValidation.cs" id="BaseClassValidation":::
+
+The previous example shows how you can validate the constructor parameters before assigning them to the properties. You can use builtin methods, like <xref:System.String.IsNullOrWhiteSpace(System.String)?displayProperty=nameWithType>, or your own validation method, like `ValidAccountNumber`. In the previous example, any exceptions are thrown from the constructor, when it invokes the initializers. If a constructor parameter isn't used to assign a field, any exceptions are thrown when the constructor parameter is first accessed.
+
 One derived class would present a checking account:
 
 :::code source="./snippets/primary-constructors/BankAccount.cs" id="DerivedClass":::

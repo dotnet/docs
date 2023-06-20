@@ -407,7 +407,7 @@ We can run dotnet-monitor with the collect command. While many properties can be
 
 The [configuration file](https://github.com/dotnet/dotnet-monitor/blob/main/documentation/configuration/README.md) is in json format.
 
-:::code language="csharp" source="snippets/OTel-Prometheus-Graphana-Yaeger/csharp/dotnet-monitor-config.json" :::
+:::code language="json" source="snippets/OTel-Prometheus-Graphana-Yaeger/csharp/dotnet-monitor-config.json" :::
 
 We start dotnet monitor using collection mode and specifying the configuration file path
 

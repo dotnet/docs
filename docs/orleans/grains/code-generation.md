@@ -88,6 +88,16 @@ codeGenLoggerFactory.AddProvider(new ConsoleLoggerProvider());
 
 ## Influence code generation
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+When applying <xref:Orleans.GenerateSerializerAttribute> to a type, you can also apply the <xref:Orleans.IdAttribute> to uniquely identify the member. Likewise, you may also apply an alias with the <xref:Orleans.AliasAttribute>. For more information on influencing code generation, see [Use Orleans serialization](../host/configuration-guide/serialization.md#use-orleans-serialization).
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
+
 During code generation, you can influence generating code for a specific type. Code is automatically generated for grain interfaces, grain classes, grain state, and types passed as arguments in grain methods. If a type does not fit these criteria, the following methods can be used to further guide code generation.
 
 Adding <xref:System.SerializableAttribute> to a type instructs the code generator to generate a serializer for that type.

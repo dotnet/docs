@@ -1,7 +1,7 @@
 ---
 title: Serialization in Orleans
 description: Learn about serialization and custom serializers in .NET Orleans.
-ms.date: 4/19/2023
+ms.date: 06/20/2023
 uid: orleans-serialization
 zone_pivot_groups: orleans-version
 ---
@@ -38,7 +38,7 @@ High-fidelity representation of types is fairly uncommon for serializers, so som
 
 1. **Maintaining object identity**: If the same object is passed multiple types in the arguments of a grain call or is indirectly pointed more than once from the arguments, Orleans will serialize it only once. On the receiver side, Orleans will restore all references correctly so that two pointers to the same object still point to the same object after deserialization as well. Object identity is important to preserve in scenarios like the following. Imagine grain A is sending a dictionary with 100 entries to grain B, and 10 of the keys in the dictionary point to the same object, `obj`, on A's side. Without preserving object identity, B would receive a dictionary of 100 entries with those 10 keys pointing to 10 different clones of `obj`. With object identity-preserved, the dictionary on B's side looks exactly like on A's side with those 10 keys pointing to a single object `obj`. Note that because the default string hash code implementations in .NET are randomized per-process, ordering of values in dictionaries and hash sets (for example) may not be preserved.
 
-To support version tolerance, the serializer requires developers to be explicit about which types and members are serialized. We have tried to make this as pain-free as possible. You must mark all serializable types with <xref:Orleans.CodeGeneration.GenerateSerializerAttribute?displayProperty=nameWithType> to instruct Orleans to generate serializer code for your type. Once you have done this, you can use the included code-fix to add the required <xref:Orleans.IdAttribute?displayProperty=nameWithType> to the serializable members on your types, as demonstrated here:
+To support version tolerance, the serializer requires developers to be explicit about which types and members are serialized. We have tried to make this as pain-free as possible. You must mark all serializable types with <xref:Orleans.GenerateSerializerAttribute?displayProperty=nameWithType> to instruct Orleans to generate serializer code for your type. Once you have done this, you can use the included code-fix to add the required <xref:Orleans.IdAttribute?displayProperty=nameWithType> to the serializable members on your types, as demonstrated here:
 
 :::image type="content" source="media/generate-serializer-code-fix.gif" alt-text="An animated image of the available code fix being suggested and applied on the GenerateSerializerAttribute when the containing type doesn't contain IdAttribute's on its members." lightbox="media/generate-serializer-code-fix.gif":::
 

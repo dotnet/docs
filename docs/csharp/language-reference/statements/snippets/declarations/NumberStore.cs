@@ -1,42 +1,42 @@
-﻿namespace RefReturns
+﻿namespace ReferenceReturns
 {
-
-    // <Snippet1>
+    // <ReferenceReturns>
     using System;
 
-    class NumberStore
+    public class NumberStore
     {
-        int[] numbers = { 1, 3, 7, 15, 31, 63, 127, 255, 511, 1023 };
+        private readonly int[] numbers = { 1, 30, 7, 1557, 381, 63, 1027, 2550, 511, 1023 };
 
-        public ref int FindNumber(int target)
+        public ref int GetReferenceToMax()
         {
-            for (int ctr = 0; ctr < numbers.Length; ctr++)
+            ref int max = ref numbers[0];
+            for (int i = 1; i < numbers.Length; i++)
             {
-                if (numbers[ctr] >= target)
-                    return ref numbers[ctr];
+                if (numbers[i] > max)
+                {
+                    max = ref numbers[i];
+                }
             }
-            return ref numbers[0];
+            return ref max;
         }
 
         public override string ToString() => string.Join(" ", numbers);
     }
-    // </Snippet1>
 
-    public static class FirstExample
+    public static class ReferenceReturnExample
     {
-        public static void Tests()
+        public static void Run()
         {
-            // <Snippet2>
             var store = new NumberStore();
             Console.WriteLine($"Original sequence: {store.ToString()}");
-            int number = 16;
-            ref var value = ref store.FindNumber(number);
-            value *= 2;
-            Console.WriteLine($"New sequence:      {store.ToString()}");
-            // The example displays the following output:
-            //       Original sequence: 1 3 7 15 31 63 127 255 511 1023
-            //       New sequence:      1 3 7 15 62 63 127 255 511 1023
-            // </Snippet2>
+            
+            ref int max = ref store.GetReferenceToMax();
+            max = 0;
+            Console.WriteLine($"Updated sequence:  {store.ToString()}");
+            // Output:
+            // Original sequence: 1 30 7 1557 381 63 1027 2550 511 1023
+            // Updated sequence:  1 30 7 1557 381 63 1027 0 511 1023
         }
     }
+    // </ReferenceReturns>
 }

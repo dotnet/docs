@@ -82,7 +82,7 @@ To use a value returned from a method, the calling method can use the method cal
 
 Using a local variable, in this case, `result`, to store a value is optional. It may help the readability of the code, or it may be necessary if you need to store the original value of the argument for the entire scope of the method.
 
-To use a value returned by reference from a method, you must declare a [ref local](../../language-reference/statements/declarations.md#ref-locals) variable if you intend to modify its value. For example, if the `Planet.GetEstimatedDistance` method returns a <xref:System.Double> value by reference, you can define it as a ref local variable with code like the following:
+To use a value returned by reference from a method, you must declare a [ref local](../../language-reference/statements/declarations.md#reference-variables) variable if you intend to modify its value. For example, if the `Planet.GetEstimatedDistance` method returns a <xref:System.Double> value by reference, you can define it as a ref local variable with code like the following:
 
 ```csharp
 ref double distance = ref Planet.GetEstimatedDistance();

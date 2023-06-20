@@ -13,6 +13,7 @@ namespace RoundtripJsonElementAndNode
     {
         public static void Main()
         {
+            // <Snippet1>
             var weatherForecast = new WeatherForecast
             {
                 Date = DateTime.Parse("2019-08-01"),
@@ -44,6 +45,7 @@ namespace RoundtripJsonElementAndNode
                         continue;
                 }
             }
+            // </Snippet1>
         }
     }
 }

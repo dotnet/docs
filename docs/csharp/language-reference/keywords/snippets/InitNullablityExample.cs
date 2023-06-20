@@ -1,3 +1,6 @@
+namespace InitExample;
+
+// <Snippet4>
 class Person_InitExampleExpressionBodied
 {
     private int? _yearOfBirth;

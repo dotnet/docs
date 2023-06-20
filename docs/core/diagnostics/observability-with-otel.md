@@ -42,6 +42,7 @@ There are open telemetry implementations for most languages/platforms including 
 ## .NET Observability architecture
 
 The .NET Open Telemetry implementation is a little different from other platforms, as .NET provides logging, metrics and activity APIs in the BCL, so OTel doesn't need to provide APIs for library authors to use. The .NET implementation uses the existing APIs for instrumentation:
+
 - <xref:Microsoft.Extensions.Logging.ILogger%601?displayProperty=nameWithType> for [logging](../extensions/logging.md)
 - <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> for [metrics](./metrics-instrumentation.md)
 - <xref:System.Diagnostics.ActivitySource?displayProperty=nameWithType> and
@@ -92,7 +93,7 @@ dotnet new web
  To create a simple web API project.
 
 ### 2. Add metrics and Activity Definitions
- 
+
 This defines a new metric `greetings.count` for the number of times the API has been called and a new activity source `OtPrGrYa.Sample`.
 
 :::code language="csharp" source="snippets/OTel-Prometheus-Graphana-Yaeger/csharp/Program.cs" id="Snippet_CustomMetrics":::
@@ -209,7 +210,7 @@ The metrics data that is exposed in Prometheus format is a point in time snapsho
 
 The process doesn't store and aggregate any history of the metrics. Adding that capability to the process could be resource intensive, and in a distributed system we commonly have multiple instances or each node, so we want to be able to collect the metrics from all of them, and then aggregate and compare with historical values. This is where Prometheus comes in, you configure it with the metric endpoints and it will periodically scrape the values and store then in a time series database. They can then be analyzed and processed as needed.
 
-Download Prometheus for your platform from https://prometheus.io/download/ and extract the contents of the download.
+Download Prometheus for your platform from [https://prometheus.io/download/](https://prometheus.io/download/) and extract the contents of the download.
 
 Look at the top of the output of our running server to get the port number for the http endpoint. For example:
 
@@ -280,7 +281,7 @@ Each metric in .NET can have additional dimensions which are key/value pairs whi
 | Attribute | Type | Description | Examples | Presence |
 | --- | --- | --- | --- | --- |
 | `method` | `string` | HTTP request method. | `GET`; `POST`; `HEAD` | Always |
-| `scheme` | `string` | The URI scheme identifying the used protocol.	http; | `https` | Always |
+| `scheme` | `string` | The URI scheme identifying the used protocol. | `http`; `https` | Always |
 | `host`| `string` | Name of the local HTTP server that received the request. | `localhost` | Always |
 | `port` | `int` | Port of the local HTTP server that received the request. | `8080` | Added if not default (80 for http or 443 for https) |
 
@@ -394,7 +395,7 @@ Now when you run the application, telemetry will be sent to App Insights. You sh
 
 dotnet-monitor is an agent that can read telemetry and other diagnosic data from .NET processes using EventPipe to talk across the process boundary. Using dotnet-monitor to monitor application telemetry has the advantage that it doesn't require any changes to the application *code*.
 
-dotnet-monitor is a headless agent process that is run in parallel with your application. It then provides an endpoint exposing metrics in Prometheus format, and JSON endpoints for collecting logs and more detailed diagnostics. 
+dotnet-monitor is a headless agent process that is run in parallel with your application. It then provides an endpoint exposing metrics in Prometheus format, and JSON endpoints for collecting logs and more detailed diagnostics.
 
 Note: In container environments, the container running dotnet-monitor needs to have a mapping for the diagnostic port to be in a shared volume mount between the containers, using the [`DOTNET_DiagnosticPorts`](https://github.com/dotnet/dotnet-monitor/blob/main/documentation/kubernetes.md#example-deployment) env variable.
 
@@ -420,4 +421,4 @@ We can tell if its running using the /info endoint
 
 ### Collecting logs with dotnet-monitor
 
-We can collect logs using the /logs endpoint. 
+We can collect logs using the /logs endpoint.

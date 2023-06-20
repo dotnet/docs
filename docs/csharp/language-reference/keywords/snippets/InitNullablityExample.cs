@@ -1,7 +1,7 @@
 namespace InitExample;
 
 // <Snippet4>
-class Person_InitExampleExpressionBodied
+class Person_InitExampleNullability
 {
     private int? _yearOfBirth;
 

@@ -391,6 +391,8 @@ Now when you run the application, telemetry will be sent to App Insights. You sh
 
 ![App Insights transaction view](./media/azure_tracing.png)
 
+---
+
 ## Example: Using dotnet-monitor
 
 dotnet-monitor is an agent that can read telemetry and other diagnosic data from .NET processes using EventPipe to talk across the process boundary. Using dotnet-monitor to monitor application telemetry has the advantage that it doesn't require any changes to the application *code*.

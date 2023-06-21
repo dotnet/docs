@@ -127,6 +127,12 @@ export PATH=$PATH:$DOTNET_ROOT
 
 This approach lets you install different versions into separate locations and choose explicitly which one to use by which application.
 
+## Verify downloaded binaries
+
+[!INCLUDE [verify-download-intro](includes/verify-download-intro.md)]
+
+[!INCLUDE [verify-download-macos-linux](includes/verify-download-macos-linux.md)]
+
 ## Arm-based Macs
 
 The following sections describe things you should consider when installing .NET on an Arm-based Mac.

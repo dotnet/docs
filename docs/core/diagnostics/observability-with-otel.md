@@ -10,7 +10,7 @@ When running a distributed application, operators want to know how well the appl
 
 ## What is Observability
 
-Observability in the context of a distributed system is the ability to monitor and analyze telemetry about the state of each component in the system, to be able to observe changes in the performance, and diagnose why those changes occur. Unlike debugging which is invasive and can affect the operation of the application, observability is intended to be transparent to the primary operation and have a small enough performance impact that it can be used continuously. 
+Observability in the context of a distributed system is the ability to monitor and analyze telemetry about the state of each component in the system, to be able to observe changes in the performance, and diagnose why those changes occur. Unlike debugging which is invasive and can affect the operation of the application, observability is intended to be transparent to the primary operation and have a small enough performance impact that it can be used continuously.
 
 Observability is commonly done using a combination of:
 
@@ -21,6 +21,7 @@ Observability is commonly done using a combination of:
 Together these are known as the 3 Pillars of Observability.
 
 Each of these may include telemetry data from:
+
 - The .NET runtime, such as the garbage collector or JIT,
 - Libraries such as from Kestrel (the ASP.NET web server) and HttpClient
 - Application specific telemetry that is fired by your code.
@@ -139,10 +140,9 @@ curl -k http://localhost:7275
 
 Each time you request the page, it will increment the count for the number of greetings that have been made. You can access the metrics endpoint using the same base url, with the path `/metrics`. For example:
 
-
 #### 6.1 Log output
 
-The logging statements we used in code will be output using ILogger. By default the [Console Provider](../extensions/logging?tabs=command-line#configure-logging) is enabled so that output is directed to the console. OTel in .NET doesn't include any logging exporters in the box as logging is traditionally well handled by libraries such as [Serilog](https://serilog.net/) or [NLog](https://nlog-project.org/), and `stdout` and `stderr` output is redirected to log files by container systems such as [Kubernetes](https://kubernetes.io/docs/concepts/cluster-administration/logging/#how-nodes-handle-container-logs).
+The logging statements we used in code will be output using ILogger. By default the [Console Provider](../extensions/logging.md?tabs=command-line#configure-logging) is enabled so that output is directed to the console. OTel in .NET doesn't include any logging exporters in the box as logging is traditionally well handled by libraries such as [Serilog](https://serilog.net/) or [NLog](https://nlog-project.org/), and `stdout` and `stderr` output is redirected to log files by container systems such as [Kubernetes](https://kubernetes.io/docs/concepts/cluster-administration/logging/#how-nodes-handle-container-logs).
 
 #### 6.2 Accessing the metrics
 
@@ -165,7 +165,7 @@ current_connections{endpoint="[::1]:5212"} 1 1686894204856
 ...
 ```
 
-The metrics output is a snapshot of the metrics at the time the endpoint is requesred. The results are provided in prometheus format which is human readable, but better understood by prometheus which we will get to in the next stage. 
+The metrics output is a snapshot of the metrics at the time the endpoint is requesred. The results are provided in prometheus format which is human readable, but better understood by prometheus which we will get to in the next stage.
 
 #### 6.3 Accessing the tracing
 
@@ -278,7 +278,7 @@ Grafana is a dashboarding product that can create dashboards and alerts based on
 
 Download and install the OSS version of Grafana from [https://grafana.com/oss/grafana/](https://grafana.com/oss/grafana/) following the instructions for your platform. Once installed, Grafana is typically run on port 3000, so open [`http://localhost:3000`](http://localhost:3000) in your browser. You will need to login, the default username and password are both `admin`.
 
-From the hamburger menu choose connections, and type in `prometheus` to select our endpoint type, and the *Create a Prometheus data source* button to add a new datasource. 
+From the hamburger menu choose connections, and type in `prometheus` to select our endpoint type, and the *Create a Prometheus data source* button to add a new datasource.
 
 [![Grafana connection to prometheus](./media/grafana-connections.thumb.png)](./media/grafana-connections.png#lightbox)
 
@@ -373,7 +373,7 @@ This results in a more interesting graph with a pyramid shape for the requests a
 
 ## Example: Using Azure Monitor / Application Insights
 
-In the previous example, we used separate open source applications for metrics and tracing. There are many commerical APM systems available to choose from. In Azure, the primary application monitoring product in is Application Insights, which is part of Azure Monitor. 
+In the previous example, we used separate open source applications for metrics and tracing. There are many commerical APM systems available to choose from. In Azure, the primary application monitoring product in is Application Insights, which is part of Azure Monitor.
 
 One of the advantages of an integrated APM product, is that it can correlate the different observability data sources together. To make the ASP.NET experience with Azure Monitor easier, they have created a wrapper package that does most of the heavy lifting of configuring OpenTelemetry for you.
 

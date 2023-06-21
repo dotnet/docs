@@ -37,7 +37,7 @@ namespace SystemTextJsonSamples
                 if (!reader.Read())
                 {
                     // Not enough of the JSON is in the buffer to complete a read.
-                    GetMoreBytesFromStream(stream, buffer, ref reader);
+                    GetMoreBytesFromStream(stream, ref buffer, ref reader);
                 }
             }
 
@@ -46,14 +46,14 @@ namespace SystemTextJsonSamples
             while (!reader.Read())
             {
                 // Not enough of the JSON is in the buffer to complete a read.
-                GetMoreBytesFromStream(stream, buffer, ref reader);
+                GetMoreBytesFromStream(stream, ref buffer, ref reader);
             }
             // Display value of Summary property, that is, "Hot".
             Console.WriteLine($"Got property value: {reader.GetString()}");
         }
 
         private static void GetMoreBytesFromStream(
-            MemoryStream stream, byte[] buffer, ref Utf8JsonReader reader)
+            MemoryStream stream, ref byte[] buffer, ref Utf8JsonReader reader)
         {
             int bytesRead;
             if (reader.BytesConsumed < buffer.Length)

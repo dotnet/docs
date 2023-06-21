@@ -26,7 +26,7 @@ The main reason for including all of the app's interdependent resources in one o
 
 The host is typically configured, built, and run by code in the `Program` class. The `Main` method:
 
-- Calls a <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder> method to create and configure a builder object.
+- Calls a <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> method to create and configure a builder object.
 - Calls <xref:Microsoft.Extensions.Hosting.IHostBuilder.Build> to create an <xref:Microsoft.Extensions.Hosting.IHost> instance.
 - Calls <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run%2A> or <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync%2A> method on the host object.
 
@@ -44,7 +44,7 @@ host.Run();
 
 ## Default builder settings
 
-The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder%2A> method:
+The <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> method:
 
 - Sets the content root to the path returned by <xref:System.IO.Directory.GetCurrentDirectory>.
 - Loads [host configuration](#host-configuration) from:

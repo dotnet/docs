@@ -1,7 +1,7 @@
 ---
 description: "C# reference"
 title: "C# reference"
-ms.date: 04/24/2023
+ms.date: 06/19/2023
 ms.custom: "updateeachrelease"
 f1_keywords: 
   - _CSharpKeyword
@@ -44,6 +44,9 @@ Includes information about compiler options and how to use them.
   
 [C# compiler errors](./compiler-messages/index.md)  
 Includes code snippets that demonstrate the cause and correction of C# compiler errors and warnings.  
+
+[C# standard specification](specifications.md)
+The latest C# standard draft, as created by the ECMA committee. The feature specifications for those features implemented in newer language versions.
 
 ## Related sections  
 

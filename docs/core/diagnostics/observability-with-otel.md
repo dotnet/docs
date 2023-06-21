@@ -6,31 +6,36 @@ ms.date: 6/14/2023
 
 # .NET Observability with OpenTelemetry
 
-When running a distributed application, operators want to know how well the application is performing, and to try to detect potential problems when they are small, before they become larger. The way that they can do this is by monitoring specific instrumentation emitted by the application, and looking for changes in metrics and logs.
+When running a distributed application, operators want to know how well the application is performing, and to try to detect potential problems when they are still small, before they become larger. One way that they can do this is by monitoring specific instrumentation emitted by the application, and looking for changes in metrics and logs.
 
 ## What is Observability
 
-Observability in the context of a distributed system is the ability to monitor and analyze telemetry about the state of each component in the system, to be able to observe changes in the performance, and diagnose why those changes occur. Unlike debugging which is invasive and can affect the operation of the application, observability is intended to be transparent to the primary operation and have a small enough performance impact that it can be used continuously. Observability is commonly done using a combination of:
+Observability in the context of a distributed system is the ability to monitor and analyze telemetry about the state of each component in the system, to be able to observe changes in the performance, and diagnose why those changes occur. Unlike debugging which is invasive and can affect the operation of the application, observability is intended to be transparent to the primary operation and have a small enough performance impact that it can be used continuously. 
+
+Observability is commonly done using a combination of:
 
 - Logs - recording individual operations, such as an incoming request, a failure in a specific component, or an order having been placed.
 - Metrics - measuring counters and gauges such as count of completed requests, number of active requests, number of widgets that have been sold,  or a histogram of the request latency.
 - Distributed tracing - tracking requests and activities across components in a distributed system, so that you can see where time is spent and track down specific failures.
 
-Together these are known as the 3 pillars of Observability.
+Together these are known as the 3 Pillars of Observability.
 
-Each of these may include telemetry from the runtime, such as the garbage collector or JIT, from libraries such as from Kestrel (the ASP.NET web server) and HttpClient, or application specific telemetry that is fired by your code.
+Each of these may include telemetry data from:
+- The .NET runtime, such as the garbage collector or JIT,
+- Libraries such as from Kestrel (the ASP.NET web server) and HttpClient
+- Application specific telemetry that is fired by your code.
 
 ## Observability approaches in .NET
 
 There are a couple of different ways that observability can be achieved in .NET applications:
 
 - Explicitly in code, referencing and using an SDK such as OpenTelemetry. If you have access to the source code and can rebuild the app, then this is the most powerful and configurable mechanism.
-- Out of process using [EventPipe](./eventpipe.md), tools such as [dotnet-monitor](./dotnet-monitor.md) can listen to logs, metrics and then process them without having to affect any code in the process.
+- Out of process using [EventPipe](./eventpipe.md). Tools such as [dotnet-monitor](./dotnet-monitor.md) can listen to logs, metrics and then process them without having to affect any code in the process.
 - [Using a startup hook](https://github.com/dotnet/runtime/blob/main/docs/design/features/host-startup-hook.md) assemblies can be injected into the process that can then collect instrumentation. This mechanism enables creating instrumentation for libraries that were not designed for it, but can be fragile to version conflicts between application and instrumentation dependencies. An example of this approach is [OpenTelemetry .NET Automatic Instrumentation](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/main/docs/README.md)
 
 ## What is OpenTelemetry
 
-OpenTelemetry (OTel) is a cross-platform, open standard for collecting and emitting telemetry data. OpenTelemetry includes:
+[OpenTelemetry](https://opentelemetry.io/) (OTel) is a cross-platform, open standard for collecting and emitting telemetry data. OpenTelemetry includes:
 
 - [APIs](https://opentelemetry.io/docs/concepts/instrumentation/manual/) for libraries to use to emit telemetry
 - [Semantic conventions](https://github.com/open-telemetry/semantic-conventions) for metrics & traces
@@ -50,7 +55,7 @@ The .NET OpenTelemetry implementation is a little different from other platforms
 
 ![.NET OTel architecture](./media/layered-approach.svg)
 
-Where OTel comes into play is being able to collect telemetry from those APIs and other sources (via instrumentation libraries), collect them up and then export them to an Application Performance Monitoring (APM) system. The benefit that OTel brings is a common mechanism for the collection and a common API for how APMs can integrate with OTel. APMs can either implement an APM specific exporter component, or use OTLP a new wire standard for communicating with APM systems for data collection.
+Where OTel comes into play is being able to collect telemetry from those APIs and other sources (via instrumentation libraries), collect them up and then export them to an Application Performance Monitoring (APM) system for storage and analysis. The benefit that OTel brings as an industry standard is a common mechanism for the collection, common schemas and semantics for telemetry data, and an API for how APMs can integrate with OTel. Using OTel means that applications don't need to use APM specific APIs or data structures, you work against the OTel standard. APMs can either implement an APM specific exporter component, or use OTLP a new wire standard for exporting telemetry data to the APM systems.
 
 Using OTel enables using a wide variety of APM systems including open-source systems such as [Prometheus](https://prometheus.io/) and [Graphana](https://grafana.com/oss/grafana/), [Azure Monitor](/azure/azure-monitor/app/app-insights-overview?tabs=net) - Microsoft's APM Product in Azure, or from the many [APM vendors](https://opentelemetry.io/ecosystem/vendors/) partnering with OpenTelemetry.
 
@@ -69,7 +74,7 @@ The main packages are:
 | [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry/README.md) | Main library that provides the core OTEL functionality |
 | [OpenTelemetry.API](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Api/README.md) | APIs for exporting metrics |
 | [OpenTelemetry.Instrumentation.AspNetCore](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Instrumentation.AspNetCore/README.md) | Instrumentation for ASP.NET Core and Kestrel |
-| [OpenTelemetry.Instrumentation.GrpcNetClient](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Instrumentation.GrpcNetClient/README.md) | Instrumentation for Grpc Client for tracking outbound Grpc calls  |
+| [OpenTelemetry.Instrumentation.GrpcNetClient](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Instrumentation.GrpcNetClient/README.md) | Instrumentation for gRPC Client for tracking outbound gRPC calls  |
 | [OpenTelemetry.Instrumentation.Http](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Instrumentation.Http/README.md) | Instrumentation for HttpClient and HttpWebRequest to track outbound http calls |
 | [OpenTelemetry.Instrumentation.SqlClient](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Instrumentation.SqlClient/README.md) | Instrumentation for SqlClient used to trace database operations |
 | [OpenTelemetry.Exporter.Console](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.Console/README.md) |  Exporter for the console, commonly used to diagnose what telemetry is being exported |
@@ -132,7 +137,9 @@ If you run the project you can then access the API with the browser or curl.
 curl -k http://localhost:7275
 ```
 
-Each time you request the page, it will increment the count for the number of greetings that have been made. You can access the prometheus endpoint using the same base url, with the path `/metrics`. For example:
+Each time you request the page, it will increment the count for the number of greetings that have been made. You can access the metrics endpoint using the same base url, with the path `/metrics`. For example:
+
+#### Accessing the metrics
 
 ``` shell
 curl -k https://localhost:7275/
@@ -151,7 +158,9 @@ current_connections{endpoint="[::1]:5212"} 1 1686894204856
 ...
 ```
 
-The metrics output is presented in prometheus format which is human readable, but better understood by prometheus which we will get to in the next stage.
+The metrics output is a snapshot of the metrics at the time the endpoint is requesred. The results are provided in prometheus format which is human readable, but better understood by prometheus which we will get to in the next stage. 
+
+#### Accessing the tracing
 
 If you look at the console for the server, you'll see the output from the console trace provider. This should show two activities, one from our custom ActivitySource, and the other from ASP.NET Core:
 
@@ -200,19 +209,21 @@ Resource associated with Activity:
     telemetry.sdk.version: 1.5.0
 ```
 
-The first is the inner / custom activity we created, the second is created by ASP.NET for the request and includes tags for the http request properties. You will see that both have the same `TraceId`, this identifies a single transaction and in a distributed system can be used to correlate the traces from each service. The id's are transmitted as http headers, and ASP.NET Core will assign one if none is present when it recieves a request. HttpClient will include the headers by default on outbound requests. The Greeter activity is parented to the other activity through the `ParentSpanId` which maps to the `SpanId` of the http activity.
+The first is the inner / custom activity we created, the second is created by ASP.NET for the request and includes tags for the http request properties. You will see that both have the same `TraceId`, this identifies a single transaction and in a distributed system can be used to correlate the traces from each service involved in a transaction. The id's are transmitted as http headers, and ASP.NET Core will assign a TraceId if none is present when it recieves a request. HttpClient will include the headers by default on outbound requests. Each activity has a `SpanId`, the combination of `TraceId` and `SpanId` uniquely identify each activity. The Greeter activity is parented to the http activity through it's `ParentSpanId` which maps to the `SpanId` of the http activity.
 
 In a later stage we will feed this data into Jaeger to visualize the distributed traces.
 
-### 7. Install and use Prometheus
+### 7. Collect metrics with Prometheus
 
-The metrics data that is exposed in Prometheus format is a point in time snapshot of the processes metrics. Each time a request is made to the endpoint, it will give the current values. While current values are interesting, they become most valuable when compared to previous values, so you can see trends, and if they are anomylous. Commonly services have spikes based on the time of day, or world events such a shopping spree on black friday. Only by comparing the values can you detect if they are abnormal, or if a metric is getting progressively worse.
+The metrics data that is exposed in Prometheus format is a point in time snapshot of the process's metrics. Each time a request is made to the metrics endpoint, it will give the current values. While current values are interesting, they become most valuable when compared to previous history, so you can see trends, and detect if values are anomylous. Commonly services have spikes based on the time of day, or world events such a shopping spree on black friday. By comparing the values against historical trends, you detect if they are abnormal, or if a metric is slowly getting worse over time.
 
-The process doesn't store and aggregate any history of the metrics. Adding that capability to the process could be resource intensive, and in a distributed system we commonly have multiple instances or each node, so we want to be able to collect the metrics from all of them, and then aggregate and compare with historical values. This is where Prometheus comes in, you configure it with the metric endpoints and it will periodically scrape the values and store then in a time series database. They can then be analyzed and processed as needed.
+The process doesn't store and aggregate any history of the metrics. Adding that capability to the process could be resource intensive, and in a distributed system we commonly have multiple instances of each node, so we want to be able to collect the metrics from all of them, and then aggregate and compare with their historical values. 
+
+Prometheus is a metrics collection, aggregation and time series database system. You configure it with the metric endpoints for each service and it will periodically scrape the values and store then in it's time series database. They can then be analyzed and processed as needed.
 
 Download Prometheus for your platform from [https://prometheus.io/download/](https://prometheus.io/download/) and extract the contents of the download.
 
-Look at the top of the output of our running server to get the port number for the http endpoint. For example:
+Look at the top of the output of our running server to get the port number for the **http** endpoint. For example:
 
 ``` shell
 info: Microsoft.Hosting.Lifetime[14]
@@ -221,7 +232,7 @@ info: Microsoft.Hosting.Lifetime[14]
       Now listening on: http://localhost:5212
 ```
 
-Modify the Prometheus yaml file to specify the port for our http scraping endpoint, and set a lower scraping interval eg:
+Modify the Prometheus yaml configuration file to specify the port for our http scraping endpoint, and set a lower scraping interval eg:
 
 ``` yaml
   scrape_configs:
@@ -252,13 +263,17 @@ Select the `greetings_count` metric to see a graph of values.
 
 [![Graph of greetings_count](./media/prometheus-graph.thumb.png)](./media/prometheus-graph.png#lightbox)
 
-### 8. Install Grafana and create a dashboard
+### 8. Using Grafana to create a metrics dashboard
 
 Grafana is a dashboarding product that can create dashboards and alerts based on Prometheus or other data sources.
 
 Download and install the OSS version of Grafana from [https://grafana.com/oss/grafana/](https://grafana.com/oss/grafana/) following the instructions for your platform. Once installed, Grafana is typically run on port 3000, so open [`http://localhost:3000`](http://localhost:3000) in your browser. You will need to login, the default username and password are both `admin`.
 
-From the hamburger menu choose connections, and type in `prometheus` to select our endpoint type, and the *Create a Prometheus data source* button to add a new datasource. We need to set the following properties:
+From the hamburger menu choose connections, and type in `prometheus` to select our endpoint type, and the *Create a Prometheus data source* button to add a new datasource. 
+
+[![Grafana connection to prometheus](./media/grafana-connections.thumb.png)](./media/grafana-connections.png#lightbox)
+
+We need to set the following properties:
 
 - Prometheus server URL: `http://localhost:9090/` changing the port as applicable
 
@@ -289,7 +304,7 @@ The graphs in Grafana are usually partitioned based on each unique combination o
 
 [![Grafana current_requests by host](./media/grafana-request-count-by-host.thumb.png)](./media/grafana-request-count-by-host.png#lightbox)
 
-### 9 Distributed tracing with Jaeger
+### 9. Distributed tracing with Jaeger
 
 We saw in [step 6](#6-run-the-project) that distributed tracing information was being exposed to the console. This information is tracking units of work tracked with activites. Some will be created automatically by the platform, such as the one by ASP.NET to represent the handling of a request, and libraries and app code can also create activities. The greetings example has a Greeter activity. The actvities are correlated using the `TraceId`, `SpanId` and `ParentId` tags.
 
@@ -339,7 +354,7 @@ We can make our application a little more interesting by having it make http cal
 
 :::code language="csharp" source="snippets/OTel-Prometheus-Graphana-Yaeger/csharp/Program.cs" id="Snippet_MapNested":::
 
-- Implement the endpoint so that it makes http calls that can also be traced. In this case it calls back to itself in an artificial loop only applicable to demo scenarios.
+- Implement the endpoint so that it makes http calls that can also be traced. In this case it calls back to itself in an artificial loop (really only applicable to demo scenarios).
 
 :::code language="csharp" source="snippets/OTel-Prometheus-Graphana-Yaeger/csharp/Program.cs" id="Snippet_SendNestedGreeting":::
 
@@ -349,11 +364,11 @@ This results in a more interesting graph with a pyramid shape for the requests a
 
 ## Example: Using Azure Monitor / Application Insights
 
-In the previous example, we used separate open source applications for metrics and tracing. There are many commerical APM systems available, the primary application monitoring product in Azure is Application Insights, which is part of Azure Monitor. One of the advantages of an integrated APM product, is that it can correlate the different observability data sources together.
+In the previous example, we used separate open source applications for metrics and tracing. There are many commerical APM systems available to choose from. In Azure, the primary application monitoring product in is Application Insights, which is part of Azure Monitor. 
 
-To make the ASP.NET experience with Azure Monitor easier, they have created a wrapper package that does most of the heavy lifting of configuring OpenTelemetry for you.
+One of the advantages of an integrated APM product, is that it can correlate the different observability data sources together. To make the ASP.NET experience with Azure Monitor easier, they have created a wrapper package that does most of the heavy lifting of configuring OpenTelemetry for you.
 
-We can take the same project from [Step 5](#5-configure-open-telemetry-with-the-correct-providers) and replace the nuget references with a single package:
+We can take the same project from [Step 5](#5-configure-opentelemetry-with-the-correct-providers) and replace the nuget references with a single package:
 
 :::code language="xml" source="snippets/OTel-Prometheus-Graphana-Yaeger/csharp/OTel-Prometheus-Graphana-Yaeger.csproj" id="Snippet_AZMReferences":::
 
@@ -369,13 +384,13 @@ The way that Application Insights identifies which instance should be used to st
 
 [![Connection String in Azure Portal](./media/portal_ui.thumb.png)](./media/portal_ui.png#lightbox)
 
-If using Azure App Service, this is automatically passed to the application as an environment variable. For other services, or running locally you need to pass it with an APPLICATIONINSIGHTS_CONNECTION_STRING environment variable or in appsettings.json. For running locally its easiest to add to appsettings.json:
+If using Azure App Service, this is automatically passed to the application as an environment variable. For other services, or running locally you need to pass it with an `APPLICATIONINSIGHTS_CONNECTION_STRING` environment variable or in `appsettings.json`. For running locally its easiest to add to `appsettings.json`:
 
 ```json
 "APPLICATIONINSIGHTS_CONNECTION_STRING": "InstrumentationKey=12345678-abcd-abcd-abcd-12345678..."
 ```
 
-Replace this value with the one from your instance.
+> Note: Replace the value with the one from your instance.
 
 Now when you run the application, telemetry will be sent to App Insights. You should now get logs, metrics and distributed traces for your application.
 

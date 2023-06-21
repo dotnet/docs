@@ -137,14 +137,21 @@ async Task SendNestedGreeting(int nestlevel, ILogger<Program> logger, HttpContex
         // Add a tag to the Activity
         activity?.SetTag("nest-level", nestlevel);
 
-        var url = new Uri($"{context.Request.Scheme}://{context.Request.Host}{context.Request.Path}?nestlevel={nestlevel - 1}");
         await context.Response.WriteAsync($"Nested Greeting, level: {nestlevel}\r\n");
-        if (nestlevel > 0) await context.Response.WriteAsync(await clientFactory.CreateClient().GetStringAsync(url));
+
+        if (nestlevel > 0) {
+            var request = context.Request;
+            var url = new Uri($"{request.Scheme}://{request.Host}{request.Path}?nestlevel={nestlevel - 1}");
+
+            // Makes an http call passing the activity information as http headers
+            var nestedResult = await clientFactory.CreateClient().GetStringAsync(url);
+            await context.Response.WriteAsync(nestedResult);
+        };
     }
     else
     {
         // Log a message
-        logger.LogInformation("Greeting nest level {nestlevel} too high ", nestlevel);
+        logger.LogError("Greeting nest level {nestlevel} too high ", nestlevel);
         await context.Response.WriteAsync("Nest level too high, max is 5");
     }
 }

@@ -59,8 +59,6 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
   > [!NOTE]
   > Following NuGet's [Https Everywhere](https://devblogs.microsoft.com/nuget/https-everywhere/) initiative, `dotnet new` is phasing out `http` feeds. If an `http` feed is passed, it will not be queried for packages and a warning will be displayed. The `--force` option can be used to override this behaviour if necessary.
 
-
-
 - **`-d|--diagnostics`**
 
   Enables diagnostic output. Available since .NET SDK 7.0.100.

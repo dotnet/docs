@@ -16,8 +16,8 @@ You use the `ref` keyword in the following contexts:
 - In a method signature, to return a value to the caller by reference. For more information, see [Reference return values](#reference-return-values).
 - In a declaration of a local variable, to declare a reference variable. For more information, see the [Reference variables](../statements/declarations.md#reference-variables) section of the [Declaration statements](../statements/declarations.md) article.
 - As the part of a [conditional ref expression](../operators/conditional-operator.md#conditional-ref-expression) or a [ref assignment operator](../operators/assignment-operator.md#ref-assignment).
-- In a `struct` declaration, to declare a `ref struct`. For more information, see the [`ref struct`](../builtin-types/ref-struct.md) article.
-- In a `ref struct` declaration, to declare that a field is a reference. See the [`ref` field](../builtin-types/ref-struct.md) article.
+- In a `struct` declaration, to declare a `ref struct`. For more information, see the [`ref` structure types](../builtin-types/ref-struct.md) article.
+- In a `ref struct` definition, to declare a `ref` field. For more information, see the [`ref` fields](../builtin-types/ref-struct.md#ref-fields) section of the [`ref` structure types](../builtin-types/ref-struct.md) article.
 
 ## Passing an argument by reference
 
@@ -110,22 +110,6 @@ The following example defines a `Book` class that has two <xref:System.String> f
 When the caller stores the value returned by the `GetBookByTitle` method as a ref local, changes that the caller makes to the return value are reflected in the `BookCollection` object, as the following example shows.
 
 :::code language="csharp" source="snippets/RefParameterModifier.cs" id="Snippet5":::
-
-## ref fields
-
-In [`ref struct`](../builtin-types/ref-struct.md) types, you can declare fields that are `ref` fields. `ref` fields are valid only in `ref struct` types to ensure the reference doesn't outlive the object it refers to. This feature enables types like <xref:System.Span%601?displayProperty=fullName>:
-
-```csharp
-public readonly ref struct Span<T>
-{
-    internal readonly ref T _reference;
-    private readonly int _length;
-
-    // Omitted for brevity...
-}
-```
-
-The `Span<T>` type stores a reference through which it accesses the consecutive elements. A reference enables the `Span<T>` object to avoid making copies of the storage it refers to.
 
 ## C# language specification
 

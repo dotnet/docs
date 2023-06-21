@@ -531,51 +531,142 @@
       }
     },
     {
-      "taskType": "trigger",
-      "capabilityId": "IssueResponder",
-      "subCapability": "IssuesOnlyResponder",
-      "version": "1.0",
+      "taskType": "scheduled",
+      "capabilityId": "ScheduledSearch",
+      "subCapability": "ScheduledSearch",
+      "version": "1.1",
       "config": {
-        "conditions": {
-          "operator": "and",
-          "operands": [
-            {
-              "name": "isPartOfProject",
-              "parameters": {}
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "hasLabel",
-                  "parameters": {
-                    "label": ":pushpin: seQUESTered"
-                  }
-                }
-              ]
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "hasLabel",
-                  "parameters": {
-                    "label": ":world_map: reQUEST"
-                  }
-                }
-              ]
-            },
-            {
-              "name": "isAssignedToSomeone",
-              "parameters": {}
-            }
-          ]
-        },
-        "eventType": "issue",
-        "eventNames": [
-          "issues",
-          "project_card"
+        "frequency": [
+          {
+            "weekDay": 0,
+            "hours": [
+              1,
+              4,
+              7,
+              10,
+              13,
+              16,
+              19,
+              22
+            ],
+            "timezoneOffset": -7
+          },
+          {
+            "weekDay": 1,
+            "hours": [
+              1,
+              4,
+              7,
+              10,
+              13,
+              16,
+              19,
+              22
+            ],
+            "timezoneOffset": -7
+          },
+          {
+            "weekDay": 2,
+            "hours": [
+              1,
+              4,
+              7,
+              10,
+              13,
+              16,
+              19,
+              22
+            ],
+            "timezoneOffset": -7
+          },
+          {
+            "weekDay": 3,
+            "hours": [
+              1,
+              4,
+              7,
+              10,
+              13,
+              16,
+              19,
+              22
+            ],
+            "timezoneOffset": -7
+          },
+          {
+            "weekDay": 4,
+            "hours": [
+              1,
+              4,
+              7,
+              10,
+              13,
+              16,
+              19,
+              22
+            ],
+            "timezoneOffset": -7
+          },
+          {
+            "weekDay": 5,
+            "hours": [
+              1,
+              4,
+              7,
+              10,
+              13,
+              16,
+              19,
+              22
+            ],
+            "timezoneOffset": -7
+          },
+          {
+            "weekDay": 6,
+            "hours": [
+              1,
+              4,
+              7,
+              10,
+              13,
+              16,
+              19,
+              22
+            ],
+            "timezoneOffset": -7
+          }
         ],
+        "searchTerms": [
+          {
+            "name": "isIssue",
+            "parameters": {}
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "name": "isPartOfProject",
+            "parameters": {}
+          },          
+          {
+            "name": "isAssignedToSomeone",
+            "parameters": {}
+          },
+          {
+            "name": "noLabel",
+            "parameters": {
+              "label": ":world_map: reQUEST"
+            }
+          }
+          {
+            "name": "noLabel",
+            "parameters": {
+              "label": ":pushpin: seQUESTered"
+            }
+          }
+        ],
+        "taskName": "Label project issues with reQUEST (scheduled search)",
         "actions": [
           {
             "name": "addLabel",
@@ -583,8 +674,7 @@
               "label": ":world_map: reQUEST"
             }
           }
-        ],
-        "taskName": "Add reQUEST label to issues"
+        ]
       }
     }
   ],

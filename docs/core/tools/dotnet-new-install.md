@@ -57,7 +57,7 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
   To check the configured sources for the current directory use [`dotnet nuget list source`](dotnet-nuget-list-source.md). For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior)
 
   > [!NOTE]
-  > Following NuGet's [Https Everywhere](https://devblogs.microsoft.com/nuget/https-everywhere/) initiative, `dotnet new` is phasing out `http` feeds. If an `http` feed is passed, it will not be queried for packages and a warning will be displayed. The `--force` option can be used to override this behaviour if necessary.
+  > Following NuGet's [Https Everywhere](https://devblogs.microsoft.com/nuget/https-everywhere/) initiative, `dotnet new` is phasing out `http` feeds. If an `http` feed is passed, it isn't queried for packages and a warning is displayed. The `--force` option can be used to override this behavior if necessary.
 
 - **`-d|--diagnostics`**
 

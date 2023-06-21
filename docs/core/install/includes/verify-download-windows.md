@@ -50,7 +50,7 @@ The .NET release notes contain a link to a checksum file you can use to validate
 
     When validation passes, you see **True** printed:
 
-    ```bash
+    ```powershell
     > (Get-Content .\7.0.7-sha.txt | Select-String "dotnet-sdk-7.0.304-win-x64.exe").Line -like (Get-FileHash .\dotnet-sdk-7.0.304-win-x64.exe -Algorithm SHA512).Hash + "*"
     True
     ```

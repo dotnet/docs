@@ -89,7 +89,7 @@ Alternatively, you can also configure this using logging configuration, such as 
 
 Run the app again, with the above change, the log message is now formatted as JSON:
 
-:::code language="json" source="snippets/logging/console-formatter-json/example-output.json":::
+:::code language="json" source="snippets/logging/console-formatter-json/example-output.txt":::
 
 > [!TIP]
 > The `Json` console formatter, by default, logs each message in a single line. In order to make it more readable while configuring the formatter, set <xref:System.Text.Json.JsonWriterOptions.Indented?displayProperty=nameWithType> to `true`.

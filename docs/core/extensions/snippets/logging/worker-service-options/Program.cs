@@ -1,9 +1,10 @@
 ﻿using WorkerServiceOptions.Example;
 
-var host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices((_, services) =>
-        services.AddHostedService<Worker>()
-            .AddTransient<PriorityQueue>())
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Services.AddHostedService<Worker>();
+builder.Services.AddTransient<PriorityQueue>();
+
+using IHost host = builder.Build();
 
 host.Run();

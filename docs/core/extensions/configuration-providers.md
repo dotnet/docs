@@ -42,7 +42,7 @@ Consider the following code:
 
 The preceding code:
 
-- Clears all existing configuration providers that were added by default in the <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[])> method.
+- Clears all existing configuration providers that were added by default in the <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder(System.String[])> method.
 - Configures the JSON configuration provider to load the *appsettings.json* and  *appsettings*.`Environment`.*json* files with the following options:
   - `optional: true`: The file is optional.
   - `reloadOnChange: true`: The file is reloaded when changes are saved.
@@ -81,7 +81,7 @@ The following code demonstrates the configuration of XML files using the XML con
 
 The preceding code:
 
-- Clears all existing configuration providers that were added by default in the <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[])> method.
+- Clears all existing configuration providers that were added by default in the <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder(System.String[])> method.
 - Configures the XML configuration provider to load the *appsettings.xml* and *repeating-example.xml* files with the following options:
   - `optional: true`: The file is optional.
   - `reloadOnChange: true`: The file is reloaded when changes are saved.

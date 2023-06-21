@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Azure;
+﻿using Azure;
 using Azure.Identity;
 using Azure.Security.KeyVault.Secrets;
 using Microsoft.Extensions.Azure;
@@ -15,18 +11,15 @@ using Microsoft.Extensions.Hosting;
 //     AZURE_CLIENT_SECRET - A client secret that was generated for the App Registration.
 //     AZURE_KEY_VAULT_URI - The URI for the Azure Key Vault resource.
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
-    {
-        services.AddAzureClients(builder =>
-        {
-            Uri vaultUri = new(Environment.GetEnvironmentVariable("AZURE_KEY_VAULT_URI")!);
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+builder.Services.AddAzureClients(builder =>
+{
+    Uri vaultUri = new(Environment.GetEnvironmentVariable("AZURE_KEY_VAULT_URI")!);
 
-            builder.AddSecretClient(vaultUri);
-            builder.UseCredential(new DefaultAzureCredential());
-        });
-    })
-    .Build();
+    builder.AddSecretClient(vaultUri);
+    builder.UseCredential(new DefaultAzureCredential());
+});
+using IHost host = builder.Build();
 
 SecretClient client = host.Services.GetRequiredService<SecretClient>();
 

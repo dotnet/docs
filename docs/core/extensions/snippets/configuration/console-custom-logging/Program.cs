@@ -2,17 +2,18 @@
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureLogging(builder =>
-        builder.ClearProviders()
-            .AddColorConsoleLogger(configuration =>
-            {
-                // Replace warning value from appsettings.json of "Cyan"
-                configuration.LogLevelToColorMap[LogLevel.Warning] = ConsoleColor.DarkCyan;
-                // Replace warning value from appsettings.json of "Red"
-                configuration.LogLevelToColorMap[LogLevel.Error] = ConsoleColor.DarkRed;
-            }))
-            .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Logging.ClearProviders();
+builder.Logging.AddColorConsoleLogger(configuration =>
+{
+    // Replace warning value from appsettings.json of "Cyan"
+    configuration.LogLevelToColorMap[LogLevel.Warning] = ConsoleColor.DarkCyan;
+    // Replace warning value from appsettings.json of "Red"
+    configuration.LogLevelToColorMap[LogLevel.Error] = ConsoleColor.DarkRed;
+});
+
+using IHost host = builder.Build();
 
 var logger = host.Services.GetRequiredService<ILogger<Program>>();
 

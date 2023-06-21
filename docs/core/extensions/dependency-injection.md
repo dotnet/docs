@@ -3,7 +3,7 @@ title: Dependency injection
 description: Learn how to use dependency injection within your .NET apps. Discover how to registration services, define service lifetimes, and express dependencies in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/13/2023
+ms.date: 06/21/2023
 ms.topic: overview
 ---
 
@@ -88,17 +88,13 @@ The implementation of the `IMessageWriter` interface can be improved by using th
 
 :::code language="csharp" source="snippets/configuration/dependency-injection/LoggingMessageWriter.cs":::
 
-The updated `ConfigureServices` method registers the new `IMessageWriter` implementation:
+The updated `AddScoped` method registers the new `IMessageWriter` implementation:
 
 ```csharp
-static IHostBuilder CreateHostBuilder(string[] args) =>
-    Host.CreateDefaultBuilder(args)
-        .ConfigureServices((_, services) =>
-            services.AddHostedService<Worker>()
-                    .AddScoped<IMessageWriter, LoggingMessageWriter>());
+builder.Services.AddScoped<IMessageWriter, LoggingMessageWriter>());
 ```
 
-The method `CreateHostBuilder` uses types `IHostBuilder` and `Host`. In order to use them, packages `Microsoft.Extensions.DependencyInjection` and `Microsoft.Extensions.Hosting` must be referenced respectively.
+The <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder> (`builder`) type is part of the `Microsoft.Extensions.Hosting` NuGet package.
 
 `LoggingMessageWriter` depends on <xref:Microsoft.Extensions.Logging.ILogger%601>, which it requests in the constructor. `ILogger<TCategoryName>` is a [framework-provided service](#framework-provided-services).
 
@@ -377,7 +373,7 @@ When services are resolved by `ActivatorUtilities`, constructor injection requir
 
 ## Scope validation
 
-When the app runs in the `Development` environment and calls [CreateDefaultBuilder](generic-host.md#default-builder-settings) to build the host, the default service provider performs checks to verify that:
+When the app runs in the `Development` environment and calls [CreateApplicationBuilder](generic-host.md#default-builder-settings) to build the host, the default service provider performs checks to verify that:
 
 - Scoped services aren't resolved from the root service provider.
 - Scoped services aren't injected into singletons.

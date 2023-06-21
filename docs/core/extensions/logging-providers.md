@@ -3,7 +3,7 @@ title: Logging providers
 description: Learn how the logging provider API is used in .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/13/2023
+ms.date: 06/21/2023
 ---
 
 # Logging providers in .NET
@@ -11,9 +11,10 @@ ms.date: 03/13/2023
 Logging providers persist logs, except for the `Console` provider, which only displays logs as standard output. For example, the Azure Application Insights provider stores logs in Azure Application Insights. Multiple providers can be enabled.
 
 The default .NET Worker app templates:
+CreateApplicationBuilder
 
 - Use the [Generic Host](generic-host.md).
-- Call <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder%2A>, which adds the following logging providers:
+- Call <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A>, which adds the following logging providers:
   - [Console](#console)
   - [Debug](#debug)
   - [EventSource](#event-source)
@@ -23,19 +24,16 @@ The default .NET Worker app templates:
 
 The preceding code shows the `Program` class created with the .NET Worker app templates. The next several sections provide samples based on the .NET Worker app templates, which use the Generic Host.
 
-To override the default set of logging providers added by `Host.CreateDefaultBuilder`, call `ClearProviders` and add the logging providers you want. For example, the following code:
+To override the default set of logging providers added by `Host.CreateApplicationBuilder`, call `ClearProviders` and add the logging providers you want. For example, the following code:
 
 - Calls <xref:Microsoft.Extensions.Logging.LoggingBuilderExtensions.ClearProviders%2A> to remove all the <xref:Microsoft.Extensions.Logging.ILoggerProvider> instances from the builder.
 - Adds the [Console](#console) logging provider.
 
 ```csharp
-static IHostBuilder CreateHostBuilder(string[] args) =>
-    Host.CreateDefaultBuilder(args)
-        .ConfigureLogging(logging =>
-        {
-            logging.ClearProviders();
-            logging.AddConsole();
-        });
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
 ```
 
 For additional providers, see:
@@ -48,12 +46,13 @@ For additional providers, see:
 To configure a service that depends on `ILogger<T>`, use constructor injection or provide a factory method. The factory method approach is recommended only if there's no other option. For example, consider a service that needs an `ILogger<T>` instance provided by DI:
 
 ```csharp
-.ConfigureServices(services =>
-    services.AddSingleton<IExampleService>(container =>
-        new DefaultExampleService
-        {
-            Logger = container.GetRequiredService<ILogger<IExampleService>>()
-        }));
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Services.AddSingleton<IExampleService>(
+    container => new DefaultExampleService
+    {
+        Logger = container.GetRequiredService<ILogger<IExampleService>>()
+    });
 ```
 
 The preceding code is a [Func<IServiceProvider, IExampleService>](/dotnet/api/system.func-2) that runs the first time the DI container needs to construct an instance of `IExampleService`. You can access any of the registered services in this way.

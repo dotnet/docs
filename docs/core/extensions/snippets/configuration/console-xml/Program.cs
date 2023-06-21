@@ -1,40 +1,39 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureAppConfiguration((hostingContext, configuration) =>
-    {
-        configuration.Sources.Clear();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
-        configuration
-            .AddXmlFile("appsettings.xml", optional: true, reloadOnChange: true)
-            .AddXmlFile("repeating-example.xml", optional: true, reloadOnChange: true);
+builder.Configuration.Sources.Clear();
 
-        configuration.AddEnvironmentVariables();
+builder.Configuration
+    .AddXmlFile("appsettings.xml", optional: true, reloadOnChange: true)
+    .AddXmlFile("repeating-example.xml", optional: true, reloadOnChange: true);
 
-        if (args is { Length: > 0 })
-        {
-            configuration.AddCommandLine(args);
-        }
+builder.Configuration.AddEnvironmentVariables();
 
-        IConfigurationRoot configurationRoot = configuration.Build();
+if (args is { Length: > 0 })
+{
+    builder.Configuration.AddCommandLine(args);
+}
 
-        string key00 = "section:section0:key:key0";
-        string key01 = "section:section0:key:key1";
-        string key10 = "section:section1:key:key0";
-        string key11 = "section:section1:key:key1";
+IConfigurationRoot configurationRoot = builder.Configuration;
 
-        string? val00 = configurationRoot[key00];
-        string? val01 = configurationRoot[key01];
-        string? val10 = configurationRoot[key10];
-        string? val11 = configurationRoot[key11];
+string key00 = "section:section0:key:key0";
+string key01 = "section:section0:key:key1";
+string key10 = "section:section1:key:key0";
+string key11 = "section:section1:key:key1";
 
-        Console.WriteLine($"{key00} = {val00}");
-        Console.WriteLine($"{key01} = {val01}");
-        Console.WriteLine($"{key10} = {val10}");
-        Console.WriteLine($"{key10} = {val11}");
-    })
-    .Build();
+string? val00 = configurationRoot[key00];
+string? val01 = configurationRoot[key01];
+string? val10 = configurationRoot[key10];
+string? val11 = configurationRoot[key11];
+
+Console.WriteLine($"{key00} = {val00}");
+Console.WriteLine($"{key01} = {val01}");
+Console.WriteLine($"{key10} = {val10}");
+Console.WriteLine($"{key10} = {val11}");
+                                                                        
+using IHost host = builder.Build();
 
 // Application code should start here.
 

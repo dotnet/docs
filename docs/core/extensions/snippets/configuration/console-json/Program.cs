@@ -2,27 +2,26 @@
 using Microsoft.Extensions.Hosting;
 using ConsoleJson.Example;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureAppConfiguration((hostingContext, configuration) =>
-    {
-        configuration.Sources.Clear();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
-        IHostEnvironment env = hostingContext.HostingEnvironment;
+builder.Configuration.Sources.Clear();
 
-        configuration
-            .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-            .AddJsonFile($"appsettings.{env.EnvironmentName}.json", true, true);
+IHostEnvironment env = builder.Environment;
 
-        IConfigurationRoot configurationRoot = configuration.Build();
+builder.Configuration
+    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+    .AddJsonFile($"appsettings.{env.EnvironmentName}.json", true, true);
 
-        TransientFaultHandlingOptions options = new();
-        configurationRoot.GetSection(nameof(TransientFaultHandlingOptions))
-                         .Bind(options);
+IConfigurationRoot configurationRoot = builder.Configuration;
 
-        Console.WriteLine($"TransientFaultHandlingOptions.Enabled={options.Enabled}");
-        Console.WriteLine($"TransientFaultHandlingOptions.AutoRetryDelay={options.AutoRetryDelay}");
-    })
-    .Build();
+TransientFaultHandlingOptions options = new();
+configurationRoot.GetSection(nameof(TransientFaultHandlingOptions))
+    .Bind(options);
+
+Console.WriteLine($"TransientFaultHandlingOptions.Enabled={options.Enabled}");
+Console.WriteLine($"TransientFaultHandlingOptions.AutoRetryDelay={options.AutoRetryDelay}");
+
+using IHost host = builder.Build();
 
 // Application code should start here.
 

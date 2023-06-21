@@ -36,7 +36,7 @@ Given one or more configuration sources, the <xref:Microsoft.Extensions.Configur
 
 :::code language="csharp" source="snippets/configuration/console/Program.cs" highlight="3":::
 
-The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[])?displayProperty=nameWithType> method provides default configuration for the app in the following order, from highest to lowest priority:
+The <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder(System.String[])?displayProperty=nameWithType> method provides default configuration for the app in the following order, from highest to lowest priority:
 
 1. Command-line arguments using the [Command-line configuration provider](configuration-providers.md#command-line-configuration-provider).
 1. Environment variables using the [Environment Variables configuration provider](configuration-providers.md#environment-variable-configuration-provider).
@@ -153,7 +153,7 @@ Replace the contents of the _Program.cs_ file with the following C# code:
 
 :::code language="csharp" source="snippets/configuration/console-basic/Program.cs" highlight="5,8,11-13,16-18":::
 
-When you run this application, the `Host.CreateDefaultBuilder` defines the behavior to discover the JSON configuration and expose it through the `IConfiguration` instance. From the `host` instance, you can ask the service provider for the `IConfiguration` instance and then ask it for values.
+When you run this application, the `Host.CreateApplicationBuilder` defines the behavior to discover the JSON configuration and expose it through the `IConfiguration` instance. From the `host` instance, you can ask the service provider for the `IConfiguration` instance and then ask it for values.
 
 > [!TIP]
 > Using the raw `IConfiguration` instance in this way, while convenient, doesn't scale very well. When applications grow in complexity, and their corresponding configurations become more complex, we recommend that you use the [_options pattern_](options.md) as an alternative.

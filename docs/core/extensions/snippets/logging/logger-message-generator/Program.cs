@@ -13,7 +13,7 @@ using ILoggerFactory loggerFactory = LoggerFactory.Create(
 ILogger<SampleObject> logger = loggerFactory.CreateLogger<SampleObject>();
 logger.PlaceOfResidence(logLevel: LogLevel.Information, name: "Liana", city: "Seattle");
 
-file readonly record struct SampleObject { }
+readonly file record struct SampleObject { }
 
 public static partial class Log
 {

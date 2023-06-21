@@ -59,7 +59,7 @@ The .NET OpenTelemetry implementation is a little different from other platforms
 
 Where OTel comes into play is that it collects telemetry from those APIs and other sources (via instrumentation libraries) and then exports them to an application performance monitoring (APM) system for storage and analysis. The benefit that OTel brings as an industry standard is a common mechanism for collection, common schemas and semantics for telemetry data, and an API for how APMs can integrate with OTel. Using OTel means that applications don't need to use APM-specific APIs or data structures; they work against the OTel standard. APMs can either implement an APM specific exporter component or use OTLP, which is a new wire standard for exporting telemetry data to the APM systems.
 
-Using OTel enables the use of a wide variety of APM systems including open-source systems such as [Prometheus](https://prometheus.io/) and [Graphana](https://grafana.com/oss/grafana/), [Azure Monitor](/azure/azure-monitor/app/app-insights-overview?tabs=net) - Microsoft's APM product in Azure, or from the many [APM vendors](https://opentelemetry.io/ecosystem/vendors/) that partner with OpenTelemetry.
+Using OTel enables the use of a wide variety of APM systems including open-source systems such as [Prometheus](https://prometheus.io/) and [grafana](https://grafana.com/oss/grafana/), [Azure Monitor](/azure/azure-monitor/app/app-insights-overview?tabs=net) - Microsoft's APM product in Azure, or from the many [APM vendors](https://opentelemetry.io/ecosystem/vendors/) that partner with OpenTelemetry.
 
 ## OpenTelemetry packages
 
@@ -85,9 +85,9 @@ The following table describes the main packages.
 | [OpenTelemetry.Exporter.Prometheus.AspNetCore](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.Prometheus.AspNetCore/README.md) |  Exporter for Prometheus implemented using an ASP.NET Core endpoint |
 | [OpenTelemetry.Exporter.Zipkin](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.Zipkin/README.md) |  Exporter for Zipkin tracing |
 
-## Example: Using Prometheus, Graphana and Jaeger
+## Example: Use Prometheus, Grafana and Jaeger
 
-This example uses Prometheus for metrics collection, Graphana for creating a dashboard, and Jaeger to show distributed tracing.
+This example uses Prometheus for metrics collection, grafana for creating a dashboard, and Jaeger to show distributed tracing.
 
 ### 1. Create the project
 
@@ -102,13 +102,13 @@ dotnet new web
 
 The following code defines a new metric (`greetings.count`) for the number of times the API has been called, and a new activity source (`OtPrGrYa.Sample`).
 
-:::code language="csharp" source="snippets/OTel-Prometheus-Graphana-Yaeger/csharp/Program.cs" id="Snippet_CustomMetrics":::
+:::code language="csharp" source="snippets/OTel-Prometheus-grafana-Yaeger/csharp/Program.cs" id="Snippet_CustomMetrics":::
 
 ### 3. Create an API endpoint
 
-:::code language="csharp" source="snippets/OTel-Prometheus-Graphana-Yaeger/csharp/Program.cs" id="Snippet_MapGet":::
+:::code language="csharp" source="snippets/OTel-Prometheus-grafana-Yaeger/csharp/Program.cs" id="Snippet_MapGet":::
 
-:::code language="csharp" source="snippets/OTel-Prometheus-Graphana-Yaeger/csharp/Program.cs" id="Snippet_SendGreeting":::
+:::code language="csharp" source="snippets/OTel-Prometheus-grafana-Yaeger/csharp/Program.cs" id="Snippet_SendGreeting":::
 
 > [!Note]
 > The API definition does not use anything specific to OpenTelemetry. It uses the .NET APIs for observability.
@@ -117,20 +117,20 @@ The following code defines a new metric (`greetings.count`) for the number of ti
 
 Use the NuGet Package Manager or command line to add the following NuGet packages:
 
-:::code language="xml" source="snippets/OTel-Prometheus-Graphana-Yaeger/csharp/OTel-Prometheus-Graphana-Yaeger.csproj" id="Snippet_References":::
+:::code language="xml" source="snippets/OTel-Prometheus-grafana-Yaeger/csharp/OTel-Prometheus-grafana-Yaeger.csproj" id="Snippet_References":::
 
 > [!Note]
 > Use the latest versions, as the OTel APIs are constantly evolving.
 
 ### 5. Configure OpenTelemetry with the correct providers
 
-:::code language="csharp" source="snippets/OTel-Prometheus-Graphana-Yaeger/csharp/Program.cs" id="Snippet_OTEL":::
+:::code language="csharp" source="snippets/OTel-Prometheus-grafana-Yaeger/csharp/Program.cs" id="Snippet_OTEL":::
 
 This code uses ASP.NET Core instrumentation to get metrics and activities from ASP.NET Core. It also registers the `Metrics` and `ActivitySource` providers for metrics and tracing respectively.
 
 The code uses the Prometheus exporter for metrics, which uses ASP.NET Core to host the endpoint, so you also need to add:
 
-:::code language="csharp" source="snippets/OTel-Prometheus-Graphana-Yaeger/csharp/Program.cs" id="Snippet_Prometheus":::
+:::code language="csharp" source="snippets/OTel-Prometheus-grafana-Yaeger/csharp/Program.cs" id="Snippet_Prometheus":::
 
 ### 6. Run the project
 
@@ -186,7 +186,7 @@ Activity.Duration:           00:00:00.0023974
 Activity.Tags:
     greeting: Hello World!
 Resource associated with Activity:
-    service.name: OTel-Prometheus-Graphana-Yaeger
+    service.name: OTel-Prometheus-grafana-Yaeger
     service.instance.id: e1afb619-bc32-48d8-b71f-ee196dc2a76a
     telemetry.sdk.name: opentelemetry
     telemetry.sdk.language: dotnet
@@ -211,7 +211,7 @@ Activity.Tags:
     http.user_agent: curl/8.0.1
     http.status_code: 200
 Resource associated with Activity:
-    service.name: OTel-Prometheus-Graphana-Yaeger
+    service.name: OTel-Prometheus-grafana-Yaeger
     service.instance.id: e1afb619-bc32-48d8-b71f-ee196dc2a76a
     telemetry.sdk.name: opentelemetry
     telemetry.sdk.language: dotnet
@@ -349,7 +349,7 @@ Now, you should be able to see the Jaeger UI at [`http://localhost:16686/`](http
 
 [![Jaeger query for traces](./media/jaeger-search-results.thumb.png)](./media/jaeger-search-results.png#lightbox)
 
-To see a list of traces, select `OTel-Prometheus-Graphana-Yaeger` from the **Service** dropdown. Selecting a trace should show a gant chart of the activities as part of that trace. Clicking on each of the operations shows more details about the activity.
+To see a list of traces, select `OTel-Prometheus-grafana-Yaeger` from the **Service** dropdown. Selecting a trace should show a gant chart of the activities as part of that trace. Clicking on each of the operations shows more details about the activity.
 
 [![Jaeger Operation Details](./media/jaeger-activity-details.thumb.png)](./media/jaeger-activity-details.png#lightbox)
 
@@ -359,15 +359,15 @@ You can make your app a little more interesting by having it make HTTP calls to 
 
 - Add an `HttpClient` factory to the application
 
-   :::code language="csharp" source="snippets/OTel-Prometheus-Graphana-Yaeger/csharp/Program.cs" id="Snippet_HttpClientFactory":::
+   :::code language="csharp" source="snippets/OTel-Prometheus-grafana-Yaeger/csharp/Program.cs" id="Snippet_HttpClientFactory":::
 
 - Add a new endpoint for making nested greeting calls
 
-   :::code language="csharp" source="snippets/OTel-Prometheus-Graphana-Yaeger/csharp/Program.cs" id="Snippet_MapNested":::
+   :::code language="csharp" source="snippets/OTel-Prometheus-grafana-Yaeger/csharp/Program.cs" id="Snippet_MapNested":::
 
 - Implement the endpoint so that it makes HTTP calls that can also be traced. In this case, it calls back to itself in an artificial loop (really only applicable to demo scenarios).
 
-   :::code language="csharp" source="snippets/OTel-Prometheus-Graphana-Yaeger/csharp/Program.cs" id="Snippet_SendNestedGreeting":::
+   :::code language="csharp" source="snippets/OTel-Prometheus-grafana-Yaeger/csharp/Program.cs" id="Snippet_SendNestedGreeting":::
 
 This results in a more interesting graph with a pyramid shape for the requests, as each level waits for the response from the previous call.
 
@@ -381,11 +381,11 @@ One of the advantages of an integrated APM product is that it can correlate the 
 
 Take the same project from [Step 5](#5-configure-opentelemetry-with-the-correct-providers) and replace the NuGet references with a single package:
 
-:::code language="xml" source="snippets/OTel-Prometheus-Graphana-Yaeger/csharp/OTel-Prometheus-Graphana-Yaeger.csproj" id="Snippet_AZMReferences":::
+:::code language="xml" source="snippets/OTel-Prometheus-grafana-Yaeger/csharp/OTel-Prometheus-grafana-Yaeger.csproj" id="Snippet_AZMReferences":::
 
 Then, replace the OTel initialization code with:
 
-:::code language="csharp" source="snippets/OTel-Prometheus-Graphana-Yaeger/csharp/Program.cs" id="Snippet_AzureMonitor":::
+:::code language="csharp" source="snippets/OTel-Prometheus-grafana-Yaeger/csharp/Program.cs" id="Snippet_AzureMonitor":::
 
 [`UseAzureMonitor()`](https://github.com/Azure/azure-sdk-for-net/blob/d51f02c6ef46f2c5d9b38a9d8974ed461cde9a81/sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/src/OpenTelemetryBuilderExtensions.cs#L80) is the magic that will add the common instrumentation providers and exporters for Application Insights. You just need to add your custom `Meter` and `ActivitySource` names to the registration.
 
@@ -410,16 +410,16 @@ When you run the application, telemetry will be sent to App Insights. You should
    :::column span="":::
    **Logs**
 
-[![App Insights logs view](./media/azure_logs.thumb.png)](./media/azure_logs.png#lightbox)
+[![App Insights logs view](./media/azure-logs.thumb.png)](./media/azure-logs.png#lightbox)
    :::column-end:::
    :::column span="":::
    **Metrics**
 
-[![App Insights metrics view](./media/azure_metrics_graph.thumb.png)](./media/azure_metrics_graph.png#lightbox)
+[![App Insights metrics view](./media/azure-metrics-graph.thumb.png)](./media/azure-metrics-graph.png#lightbox)
    :::column-end:::
    :::column span="":::
    **Distributed Tracing**
 
-[![App Insights transaction view](./media/azure_tracing.thumb.png)](./media/azure_tracing.png#lightbox)
+[![App Insights transaction view](./media/azure-tracing.thumb.png)](./media/azure-tracing.png#lightbox)
    :::column-end:::
 :::row-end:::

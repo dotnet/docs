@@ -55,6 +55,11 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
   
   By default, `dotnet new install` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet source the package can be installed from. If `--nuget-source` is specified, the source will be added to the list of sources to be checked.  
   To check the configured sources for the current directory use [`dotnet nuget list source`](dotnet-nuget-list-source.md). For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior)
+  
+  > [!NOTE]
+  > Following NuGet's Https Everywhere initiative, `dotnet new` is phasing out `http` feeds. If an `http` feed is passed by the user it will not be queried for packages and a warning will be displayed. The `--force` option can be used to override this behaviour if necessary.
+
+
 
 - **`-d|--diagnostics`**
 

@@ -16,7 +16,7 @@ Observability in the context of a distributed system is the ability to monitor a
 Observability is commonly done using a combination of:
 
 - Logs - record individual operations, such as an incoming request, a failure in a specific component, or an order being placed.
-- Metrics - measuring counters and gauges such as count of completed requests, number of active requests, number of widgets that have been sold,  or a histogram of the request latency.
+- Metrics - measuring counters and gauges such as number of completed requests, active requests, widgets that have been sold; or a histogram of the request latency.
 - Distributed tracing - track requests and activities across components in a distributed system so that you can see where time is spent and track down specific failures.
 
 Together, logs, metrics, and distributed tracing are known as the *3 pillars of observability*.
@@ -80,7 +80,6 @@ The following table describes the main packages.
 | [OpenTelemetry.Instrumentation.Http](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Instrumentation.Http/README.md) | Instrumentation for `HttpClient` and `HttpWebRequest` to track outbound HTTP calls |
 | [OpenTelemetry.Instrumentation.SqlClient](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Instrumentation.SqlClient/README.md) | Instrumentation for `SqlClient` used to trace database operations |
 | [OpenTelemetry.Exporter.Console](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.Console/README.md) |  Exporter for the console, commonly used to diagnose what telemetry is being exported |
-| [OpenTelemetry.Exporter.Jaeger](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.Jaeger/README.md) |  Jaeger exporter for OpenTelemetry .NET |
 | [OpenTelemetry.Exporter.OpenTelemetryProtocol](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/README.md) |  Exporter using the OTLP protocol |
 | [OpenTelemetry.Exporter.Prometheus.AspNetCore](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.Prometheus.AspNetCore/README.md) |  Exporter for Prometheus implemented using an ASP.NET Core endpoint |
 | [OpenTelemetry.Exporter.Zipkin](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.Zipkin/README.md) |  Exporter for Zipkin tracing |

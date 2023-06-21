@@ -139,7 +139,14 @@ curl -k http://localhost:7275
 
 Each time you request the page, it will increment the count for the number of greetings that have been made. You can access the metrics endpoint using the same base url, with the path `/metrics`. For example:
 
-#### Accessing the metrics
+
+#### 6.1 Log output
+
+The logging statements we used in code will be output using ILogger. By default the [Console Provider](../extensions/logging?tabs=command-line#configure-logging) is enabled so that output is directed to the console. OTel in .NET doesn't include any logging exporters in the box as logging is traditionally well handled by libraries such as [Serilog](https://serilog.net/) or [NLog](https://nlog-project.org/), and `stdout` and `stderr` output is redirected to log files by container systems such as [Kubernetes](https://kubernetes.io/docs/concepts/cluster-administration/logging/#how-nodes-handle-container-logs).
+
+#### 6.2 Accessing the metrics
+
+The metrics can be accessed using the `/metrics` endpoint.
 
 ``` shell
 curl -k https://localhost:7275/
@@ -160,9 +167,9 @@ current_connections{endpoint="[::1]:5212"} 1 1686894204856
 
 The metrics output is a snapshot of the metrics at the time the endpoint is requesred. The results are provided in prometheus format which is human readable, but better understood by prometheus which we will get to in the next stage. 
 
-#### Accessing the tracing
+#### 6.3 Accessing the tracing
 
-If you look at the console for the server, you'll see the output from the console trace provider. This should show two activities, one from our custom ActivitySource, and the other from ASP.NET Core:
+If you look at the console for the server, you'll see the output from the console trace provider which outputs the information in a human readable format. This should show two activities, one from our custom ActivitySource, and the other from ASP.NET Core:
 
 ``` shell
 Activity.TraceId:            2e00dd5e258d33fe691b965607b91d18
@@ -215,11 +222,13 @@ In a later stage we will feed this data into Jaeger to visualize the distributed
 
 ### 7. Collect metrics with Prometheus
 
-The metrics data that is exposed in Prometheus format is a point in time snapshot of the process's metrics. Each time a request is made to the metrics endpoint, it will give the current values. While current values are interesting, they become most valuable when compared to previous history, so you can see trends, and detect if values are anomylous. Commonly services have spikes based on the time of day, or world events such a shopping spree on black friday. By comparing the values against historical trends, you detect if they are abnormal, or if a metric is slowly getting worse over time.
+The metrics data that is exposed in Prometheus format is a point in time snapshot of the process's metrics. Each time a request is made to the metrics endpoint, it will report the current values. While current values are interesting, they become more valuable when compared to previous history, so you can see trends and detect if values are anomylous. Commonly, services have usage spikes based on the time of day, or world events such a shopping spree on black friday. By comparing the values against historical trends, you can detect if they are abnormal, or if a metric is slowly getting worse over time.
 
-The process doesn't store and aggregate any history of the metrics. Adding that capability to the process could be resource intensive, and in a distributed system we commonly have multiple instances of each node, so we want to be able to collect the metrics from all of them, and then aggregate and compare with their historical values. 
+The process doesn't store and aggregate any history of the metrics. Adding that capability to the process could be resource intensive, and in a distributed system we commonly have multiple instances of each node, so we want to be able to collect the metrics from all of them, and then aggregate and compare with their historical values.
 
 Prometheus is a metrics collection, aggregation and time series database system. You configure it with the metric endpoints for each service and it will periodically scrape the values and store then in it's time series database. They can then be analyzed and processed as needed.
+
+#### 7.1 Install and setup Prometheus
 
 Download Prometheus for your platform from [https://prometheus.io/download/](https://prometheus.io/download/) and extract the contents of the download.
 
@@ -411,35 +420,3 @@ Now when you run the application, telemetry will be sent to App Insights. You sh
 [![App Insights transaction view](./media/azure_tracing.thumb.png)](./media/azure_tracing.png#lightbox)
    :::column-end:::
 :::row-end:::
-
-## Example: Using dotnet-monitor
-
-dotnet-monitor is an agent that can read telemetry and other diagnosic data from .NET processes using EventPipe to talk across the process boundary. Using dotnet-monitor to monitor application telemetry has the advantage that it doesn't require any changes to the application *code*.
-
-dotnet-monitor is a headless agent process that is run in parallel with your application. It then provides an endpoint exposing metrics in Prometheus format, and JSON endpoints for collecting logs and more detailed diagnostics.
-
-Note: In container environments, the container running dotnet-monitor needs to have a mapping for the diagnostic port to be in a shared volume mount between the containers, using the [`DOTNET_DiagnosticPorts`](https://github.com/dotnet/dotnet-monitor/blob/main/documentation/kubernetes.md#example-deployment) env variable.
-
-See [setup](https://github.com/dotnet/dotnet-monitor/blob/main/documentation/setup.md) for details on how to install dotnet-monitor based on how you want to host it.
-
-We can run dotnet-monitor with the collect command. While many properties can be specified as part of calls to its endpoints, the metrics endpoint needs to be explicitly configured.
-
-The [configuration file](https://github.com/dotnet/dotnet-monitor/blob/main/documentation/configuration/README.md) is in json format.
-
-:::code language="json" source="snippets/OTel-Prometheus-Graphana-Yaeger/csharp/dotnet-monitor-config.json" :::
-
-We start dotnet monitor using collection mode and specifying the configuration file path
-
-```shell
-dotnet-monitor collect --configuration-file-path dotnet-monitor-confg.json
-```
-
-We can tell if its running using the /info endoint
-
-```shell
-
-```
-
-### Collecting logs with dotnet-monitor
-
-We can collect logs using the /logs endpoint.

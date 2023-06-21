@@ -23,7 +23,7 @@ Compare the checksum with the value provided by the download site.
 
 ### Use PowerShell and a checksum file to validate
 
-The .NET release notes contain a link to a checksum file you can use to validate your downloaded file. For example:
+The .NET release notes contain a link to a checksum file you can use to validate your downloaded file. The following steps describe how to download the checksum file and validate a .NET install binary:
 
 01. The release notes page for .NET 7.0 on GitHub at <https://github.com/dotnet/core/tree/main/release-notes/7.0> contains a section named **Relases**. The table in this section links to the downloads and checksum files for each .NET 7 release:
 

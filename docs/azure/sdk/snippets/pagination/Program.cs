@@ -82,15 +82,19 @@ async Task IterateSecretsAsPagesAsync()
 
 async Task ToListAsync()
 {
-    AsyncPageable<SecretProperties> allSecrets = client.GetPropertiesOfSecretsAsync();
+    AsyncPageable<SecretProperties> allSecrets =
+        client.GetPropertiesOfSecretsAsync();
 
     List<SecretProperties> secretList = await allSecrets.ToListAsync();
-    secretList.ForEach(secret => Console.WriteLine($"ToListAsync: {secret.Name}"));
+
+    secretList.ForEach(secret =>
+        Console.WriteLine($"ToListAsync: {secret.Name}"));
 }
 
 async Task TakeAsync(int count = 30)
 {
-    AsyncPageable<SecretProperties> allSecrets = client.GetPropertiesOfSecretsAsync();
+    AsyncPageable<SecretProperties> allSecrets =
+        client.GetPropertiesOfSecretsAsync();
 
     await foreach (SecretProperties secret in allSecrets.Take(count))
     {
@@ -110,16 +114,23 @@ void IterateWithPageable()
 
 IDisposable UseTheToObservableMethod()
 {
-    AsyncPageable<SecretProperties> allSecrets = client.GetPropertiesOfSecretsAsync();
+    AsyncPageable<SecretProperties> allSecrets =
+        client.GetPropertiesOfSecretsAsync();
 
     IObservable<SecretProperties> observable = allSecrets.ToObservable();
 
-    return observable.Subscribe(new SecretPropertyObserver());
+    return observable.Subscribe(
+        new SecretPropertyObserver());
 }
 
-sealed class SecretPropertyObserver : IObserver<SecretProperties>
+sealed file class SecretPropertyObserver : IObserver<SecretProperties>
 {
-    public void OnCompleted() => Console.WriteLine("Done observing secrets");
-    public void OnError(Exception error) => Console.WriteLine($"Error observing secrets: {error}");
-    public void OnNext(SecretProperties secret) => Console.WriteLine($"Observable: {secret.Name}");
+    public void OnCompleted() =>
+        Console.WriteLine("Done observing secrets");
+
+    public void OnError(Exception error) =>
+        Console.WriteLine($"Error observing secrets: {error}");
+
+    public void OnNext(SecretProperties secret) =>
+        Console.WriteLine($"Observable: {secret.Name}");
 }

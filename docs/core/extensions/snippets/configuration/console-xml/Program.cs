@@ -32,7 +32,7 @@ Console.WriteLine($"{key00} = {val00}");
 Console.WriteLine($"{key01} = {val01}");
 Console.WriteLine($"{key10} = {val10}");
 Console.WriteLine($"{key10} = {val11}");
-                                                                        
+
 using IHost host = builder.Build();
 
 // Application code should start here.

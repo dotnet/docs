@@ -12,10 +12,8 @@ builder.Configuration
     .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
     .AddJsonFile($"appsettings.{env.EnvironmentName}.json", true, true);
 
-IConfigurationRoot configurationRoot = builder.Configuration;
-
 TransientFaultHandlingOptions options = new();
-configurationRoot.GetSection(nameof(TransientFaultHandlingOptions))
+builder.Configuration.GetSection(nameof(TransientFaultHandlingOptions))
     .Bind(options);
 
 Console.WriteLine($"TransientFaultHandlingOptions.Enabled={options.Enabled}");

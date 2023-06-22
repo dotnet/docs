@@ -50,7 +50,7 @@ In the preceding C# code:
 
 To iterate over an `AsyncPageable<T>` when the `await foreach` syntax isn't available, use a `while` loop.
 
-:::code source="snippets/pagination/Program.cs" range="48-45":::
+:::code source="snippets/pagination/Program.cs" range="48-65":::
 
 In the preceding C# code:
 

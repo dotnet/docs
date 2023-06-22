@@ -503,7 +503,7 @@
 | Cosmos DB - Encryption | NuGet [2.0.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption/2.0.2) |  | GitHub [2.0.2](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/encryption/1.0.0-preview4/Microsoft.Azure.Cosmos.Encryption) |
 | Cosmos DB - Encryption | NuGet [1.0.0-preview05](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption.Custom/1.0.0-preview05) |  |  |
 | Document DB - Change Feed Processor | NuGet [2.5.0](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.ChangeFeedProcessor/2.5.0) |  | GitHub [2.5.0](https://github.com/Azure/azure-documentdb-changefeedprocessor-dotnet/tree/master) |
-| Extensions - Caching Cosmos | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Cosmos/1.4.0) |  | GitHub [1.4.0](https://github.com/Azure/Microsoft.Extensions.Caching.Cosmos/tree/v1.0.0-preview4) |
+| Extensions - Caching Cosmos | NuGet [1.5.0](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Cosmos/1.5.0) |  | GitHub [1.5.0](https://github.com/Azure/Microsoft.Extensions.Caching.Cosmos/tree/v1.0.0-preview4) |
 | Functions extension for Application Insights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Functions extension for Authentication Events | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AuthenticationEvents/1.0.0-beta.3) |  |  |
 | Functions extension for Azure SQL and SQL Server | NuGet [3.0.253-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/3.0.253-preview) |  |  |
@@ -518,7 +518,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [4.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.0.1)<br>NuGet [4.3.1-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.3.1-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventGrid | NuGet [3.2.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.2.1)<br>NuGet [3.3.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.3.0-preview1) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [5.4.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/5.4.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [5.4.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/5.4.0)<br>NuGet [5.4.1-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/5.4.1-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.0.13](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.0.13) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [3.8.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/3.8.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.OpenApi | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/2.0.0-preview2) |  |  |

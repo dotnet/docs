@@ -59,9 +59,9 @@ In the preceding code, the `AddMyLibraryService`:
 
 Consumers in this pattern provide the scoped `IConfiguration` instance of the named section:
 
-:::code language="csharp" source="snippets/configuration/options-configparam/Program.cs" highlight="7-8":::
+:::code language="csharp" source="snippets/configuration/options-configparam/Program.cs" highlight="6-7":::
 
-The call to `.AddMyLibraryService` is made in the <xref:Microsoft.Extensions.Hosting.IHostBuilder.ConfigureServices%2A> method. The same is true when using a `Startup` class, the addition of services being registered occurs in `ConfigureServices`.
+The call to `.AddMyLibraryService` is made on the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> type.
 
 As the library author, specifying default values is up to you.
 

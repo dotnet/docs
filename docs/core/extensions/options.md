@@ -63,19 +63,14 @@ In the preceding code, the `ConfigurationBinder.Get<T>` is used to acquire an in
 An alternative approach when using the options pattern is to bind the `"TransientFaultHandlingOptions"` section and add it to the [dependency injection service container](dependency-injection.md). In the following code, `TransientFaultHandlingOptions` is added to the service container with <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%2A> and bound to configuration:
 
 ```csharp
-services.Configure<TransientFaultHandlingOptions>(
-    configurationRoot.GetSection(
-        key: nameof(TransientFaultHandlingOptions)));
-```
-
-To access both the `services` and the `configurationRoot` objects, you must use the <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureServices%2A> method &mdash; the <xref:Microsoft.Extensions.Configuration.IConfiguration> is available as the <xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration?displayProperty=nameWithType> property.
-
-```csharp
 HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
 builder.Services.Configure<TransientFaultHandlingOptions>(
-    builder.Configuration.GetSection(nameof(TransientFaultHandlingOptions)));
+    builder.Configuration.GetSection(
+        key: nameof(TransientFaultHandlingOptions)));
 ```
+
+The `builder` in the preceding example is an instance of <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder>.
 
 > [!TIP]
 > The `key` parameter is the name of the configuration section to search for. It does *not* have to match the name of the type that represents it. For example, you could have a section named `"FaultHandling"` and it could be represented by the `TransientFaultHandlingOptions` class. In this instance, you'd pass `"FaultHandling"` to the <xref:Microsoft.Extensions.Configuration.IConfiguration.GetSection%2A> function instead. The `nameof` operator is used as a convenience when the named section matches the type it corresponds to.
@@ -210,22 +205,23 @@ public class Features
 The following code configures the named options:
 
 ```csharp
-ConfigureServices(services =>
-{
-    services.Configure<Features>(
-        Features.Personalize,
-        Configuration.GetSection("Features:Personalize"));
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
-    services.Configure<Features>(
-        Features.WeatherStation,
-        Configuration.GetSection("Features:WeatherStation"));
-});
+// Omitted for brevity...
+
+builder.Services.Configure<Features>(
+    Features.Personalize,
+    builder.Configuration.GetSection("Features:Personalize"));
+
+builder.Services.Configure<Features>(
+    Features.WeatherStation,
+    builder.Configuration.GetSection("Features:WeatherStation"));
 ```
 
 The following code displays the named options:
 
 ```csharp
-public class Service
+public class sealed Service
 {
     private readonly Features _personalizeFeature;
     private readonly Features _weatherStationFeature;
@@ -333,13 +329,18 @@ The following class implements <xref:Microsoft.Extensions.Options.IValidateOptio
 > [!NOTE]
 > This example code relies on the [Microsoft.Extensions.Configuration.Json](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Json) NuGet package.
 
-Using the preceding code, validation is enabled in `ConfigureServices` with the following code:
+Using the preceding code, validation is enabled when configuring services with the following code:
 
 ```csharp
-services.Configure<SettingsOptions>(
-    Configuration.GetSection(
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+// Omitted for brevity...
+
+builder.Services.Configure<SettingsOptions>(
+    builder.Configuration.GetSection(
         SettingsOptions.ConfigurationSectionName));
-services.TryAddEnumerable(
+
+builder.Services.TryAddEnumerable(
     ServiceDescriptor.Singleton
         <IValidateOptions<SettingsOptions>, ValidateSettingsOptions>());
 ```

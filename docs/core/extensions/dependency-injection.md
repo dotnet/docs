@@ -3,7 +3,7 @@ title: Dependency injection
 description: Learn how to use dependency injection within your .NET apps. Discover how to registration services, define service lifetimes, and express dependencies in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/21/2023
+ms.date: 06/22/2023
 ms.topic: overview
 ---
 
@@ -205,7 +205,7 @@ Microsoft Extensions uses a convention for registering a group of related servic
 
 ## Framework-provided services
 
-When using any of the available host or app builder patterns, defaults are applied and services are registered by the framework.
+When using any of the available host or app builder patterns, defaults are applied and services are registered by the framework. Consider some of the most popular host and app builder patterns:
 
 - <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder?displayProperty=nameWithType>
@@ -214,7 +214,7 @@ When using any of the available host or app builder patterns, defaults are appli
 - <xref:Microsoft.AspNetCore.Components.WebAssembly.Hosting.WebAssemblyHostBuilder.CreateDefault%2A?displayProperty=nameWithType>
 - <xref:Microsoft.Maui.Hosting.MauiApp.CreateBuilder%2A?displayProperty=nameWithType>
 
-After creating a builder, the `IServiceCollection` has services defined by the framework depending on [how the host was configured](generic-host.md#host-configuration). For apps based on the .NET templates, the framework registers hundreds of services.
+After creating a builder from any of these APIs, the `IServiceCollection` has services defined by the framework depending on [how the host was configured](generic-host.md#host-configuration). For apps based on the .NET templates, the framework could register hundreds of services.
 
 The following table lists a small sample of these framework-registered services:
 

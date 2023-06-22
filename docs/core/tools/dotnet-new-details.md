@@ -13,26 +13,27 @@ ms.date: 04/15/2022
 
 ## Synopsis
 
-```
-add the thingS
+```dotnetcli
+dotnet new details [<PACKAGE_NAME>] [--version <VERSION>] [--interactive] [--add-source|--nuget-source <SOURCE>] 
+    [--force] [-d|--diagnostics] [-h|--help]
 ```
 
 ## Description
 
 The `dotnet new details` command displays the metdata of the template package from the package name provided. For information on a specific version specify the version in with the `--version (check if this is correct)` option. By default, the command searches for the latest available version.
-If the package is installed locally or is found on the official NuGet website, it also displays the templates that the package contains, otherwise it will only display basic package metadata.
+If the package is installed locally or is found on the official NuGet website, it also displays the templates that the package contains, otherwise it will only display basic metadata.
 
 ## Arguments
 
 - **`PACKAGE NAME`**
 
-Name of the package being searched for metadata.
-
+ The package identifier to display the details for.
 
 ## Options
 
 - **`--version <VERSION>`**
-Specific version of the package being searched. If this is not specified, the command will look for the latest version.
+ 
+ Specifies the version of the package. If none is passed, the command displays information from the latest package version.
 
 - **`--add-source|--nuget-source <SOURCE>`**
   
@@ -52,6 +53,23 @@ Specific version of the package being searched. If this is not specified, the co
 
 ## Examples
 
+- Displays package data from the latest version of SPA templates for ASP.NET Core:
+
+   ```dotnetcli
+  dotnet new details Microsoft.DotNet.Web.Spa.ProjectTemplates
+  ```
+
+- Displays package data from version 2.0 of the SPA templates for ASP.NET Core:
+
+  ```dotnetcli
+  dotnet new install Microsoft.DotNet.Web.Spa.ProjectTemplates --version 2.0.0
+  ```
+
+- Displays package data from version 2.0 of the SPA templates for ASP.NET Core from a custom NuGet source using interactive mode:
+
+  ```dotnetcli
+  dotnet new details Microsoft.DotNet.Web.Spa.ProjectTemplates --version 2.0.0 --add-source "https://api.my-custom-nuget.com/v3/index.json" --interactive
+  ```
 
 ## See also
 

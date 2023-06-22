@@ -134,7 +134,7 @@ In the preceding C# code:
 
 `Pageable<T>` is a synchronous version of `AsyncPageable<T>` that can be used with a normal `foreach` loop.
 
-:::code source="snippets/pagination/Program.cs" range="108-116":::
+:::code source="snippets/pagination/Program.cs" range="105-113":::
 
 > [!IMPORTANT]
 > While this synchronous API is available, use the asynchronous API alternatives for a better experience.

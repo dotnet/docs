@@ -143,7 +143,13 @@ Each time you request the page, it will increment the count for the number of gr
 
 #### 6.1 Log output
 
-The logging statements from the code are output using `ILogger`. By default, the [Console Provider](../extensions/logging.md?tabs=command-line#configure-logging) is enabled so that output is directed to the console. OTel in .NET doesn't include any logging exporters as logging is traditionally handled well by libraries such as [Serilog](https://serilog.net/) or [NLog](https://nlog-project.org/). Also, `stdout` and `stderr` output is redirected to log files by container systems such as [Kubernetes](https://kubernetes.io/docs/concepts/cluster-administration/logging/#how-nodes-handle-container-logs).
+The logging statements from the code are output using `ILogger`. By default, the [Console Provider](../extensions/logging.md?tabs=command-line#configure-logging) is enabled so that output is directed to the console.
+
+There are a couple of options for how logs can be egressed from .NET:
+
+- `stdout` and `stderr` output is redirected to log files by container systems such as [Kubernetes](https://kubernetes.io/docs/concepts/cluster-administration/logging/#how-nodes-handle-container-logs).
+- Using logging libraries that will integrate with ILogger, these include [Serilog](https://serilog.net/) or [NLog](https://nlog-project.org/).
+- Using logging providers for OTel such as OTLP or the Azure Monitor exporter shown further below.
 
 #### 6.2 Access the metrics
 

@@ -96,7 +96,6 @@ Create a simple web API project by using the **ASP.NET Core Empty** template in 
 dotnet new web
 ```
 
-
 ### 2. Add metrics and activity definitions
 
 The following code defines a new metric (`greetings.count`) for the number of times the API has been called, and a new activity source (`OtPrGrYa.Sample`).

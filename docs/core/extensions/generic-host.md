@@ -115,7 +115,7 @@ To add host configuration, call <xref:Microsoft.Extensions.Hosting.HostBuilder.C
 
 The following example creates host configuration:
 
-:::code language="csharp" source="snippets/configuration/console-host/Program.cs" highlight="5-11":::
+:::code language="csharp" source="snippets/configuration/console-host/Program.cs" highlight="6-9":::
 
 ## App configuration
 

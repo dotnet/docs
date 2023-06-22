@@ -3,7 +3,7 @@ title: Console log formatting
 description: Learn how to use and implement custom console log formatting in your .NET apps. Register and create new log formatters for better application logging.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/13/2023
+ms.date: 06/22/2023
 ---
 
 # Console log formatting
@@ -81,7 +81,7 @@ info: Microsoft.Hosting.Lifetime[0]
 
 By default, the `Simple` console log formatter is selected with default configuration. You change this by calling `AddJsonConsole` in the *Program.cs*:
 
-:::code language="csharp" source="snippets/logging/console-formatter-json/Program.cs" highlight="7-15":::
+:::code language="csharp" source="snippets/logging/console-formatter-json/Program.cs" highlight="5-13":::
 
 Alternatively, you can also configure this using logging configuration, such as that found in the _appsettings.json_ file:
 

@@ -1,24 +1,23 @@
 ﻿// <WholeProgram>
 using System.Diagnostics;
 using System.Diagnostics.Metrics;
+using Azure.Monitor.OpenTelemetry.AspNetCore;
+using Azure;
 using OpenTelemetry.Metrics;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 using OpenTelemetry.Exporter;
 using OpenTelemetry.Logs;
-using Azure.Monitor.OpenTelemetry.AspNetCore;
-using Azure;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 // <Snippet_CustomMetrics>
 // Custom metrics for the application
-var GreeterMeter = new Meter("GOtPrGrYa.Sample", "1.0.0");
-var CountGreetings = GreeterMeter.CreateCounter<int>("greetings.count", description: "Counts the number of greetings");
+var greeterMeter = new Meter("OtPrGrYa.Sample", "1.0.0");
+var countGreetings = greeterMeter.CreateCounter<int>("greetings.count", description: "Counts the number of greetings");
 
 // Custom ActivitySource for the application
-var GreeterActivitySource = new ActivitySource("OtPrGrYa.Sample");
+var greeterActivitySource = new ActivitySource("OtPrGrJa.Sample");
 // </Snippet_CustomMetrics>
 // <Snippet_HttpClientFactory>
 builder.Services.AddHttpClient();
@@ -27,7 +26,7 @@ builder.Services.AddHttpClient();
 
 #if !AZURE_MONITOR
 // <Snippet_OTEL>
-var TracingOtlpEndpoint = builder.Configuration["OTLP_ENDPOINT_URL"];
+var tracingOtlpEndpoint = builder.Configuration["OTLP_ENDPOINT_URL"];
 var otel = builder.Services.AddOpenTelemetry();
 
 // Configure OpenTelemetry Resources with the application name
@@ -38,10 +37,9 @@ otel.ConfigureResource(resource => resource
 otel.WithMetrics(metrics => metrics
     // Metrics provider from OpenTelemetry
     .AddAspNetCoreInstrumentation()
-    .AddMeter(GreeterMeter.Name)
-    // Metrics provides by ASP.NET in .NET 8
+    .AddMeter(greeterMeter.Name)
+    // Metrics provides by ASP.NET Core in .NET 8
     .AddMeter("Microsoft.AspNetCore.Hosting")
-    .AddMeter("Microsoft.AspNetCore.Http.Connections")
     .AddMeter("Microsoft.AspNetCore.Server.Kestrel")
     .AddPrometheusExporter());
 
@@ -50,12 +48,12 @@ otel.WithTracing(tracing =>
 {
     tracing.AddAspNetCoreInstrumentation();
     tracing.AddHttpClientInstrumentation();
-    tracing.AddSource(GreeterActivitySource.Name);
-    if (TracingOtlpEndpoint != null)
+    tracing.AddSource(greeterActivitySource.Name);
+    if (tracingOtlpEndpoint != null)
     {
         tracing.AddOtlpExporter(otlpOptions =>
          {
-             otlpOptions.Endpoint = new Uri(TracingOtlpEndpoint);
+             otlpOptions.Endpoint = new Uri(tracingOtlpEndpoint);
          });
     }
     else
@@ -70,13 +68,12 @@ otel.WithTracing(tracing =>
 var otel = builder.Services.AddOpenTelemetry();
 otel.UseAzureMonitor();
 otel.WithMetrics(metrics => metrics
-       .AddMeter(GreeterMeter.Name)
-       .AddMeter("Microsoft.AspNetCore.Hosting")
-       .AddMeter("Microsoft.AspNetCore.Http.Connections")
-       .AddMeter("Microsoft.AspNetCore.Server.Kestrel"));
+    .AddMeter(greeterMeter.Name)
+    .AddMeter("Microsoft.AspNetCore.Hosting")
+    .AddMeter("Microsoft.AspNetCore.Server.Kestrel"));
 otel.WithTracing(tracing =>
 {
-    tracing.AddSource(GreeterActivitySource.Name);
+    tracing.AddSource(greeterActivitySource.Name);
 });
 //</Snippet_AzureMonitor>
 #endif
@@ -95,7 +92,7 @@ app.MapGet("/NestedGreeting", SendNestedGreeting);
 #if !AZURE_MONITOR
 //<Snippet_Prometheus>
 // Configure the Prometheus scraping endpoint
-app.UseOpenTelemetryPrometheusScrapingEndpoint();
+app.MapPrometheusScrapingEndpoint();
 //</Snippet_Prometheus>
 #endif
 
@@ -105,13 +102,13 @@ app.Run();
 async Task<String> SendGreeting(ILogger<Program> logger)
 {
     // Create a new Activity scoped to the method
-    using var activity = GreeterActivitySource.StartActivity("GreeterActivity");
+    using var activity = greeterActivitySource.StartActivity("GreeterActivity");
 
     // Log a message
     logger.LogInformation("Sending greeting");
 
     // Increment the custom counter
-    CountGreetings.Add(1);
+    countGreetings.Add(1);
 
     // Add a tag to the Activity
     activity?.SetTag("greeting", "Hello World!");
@@ -124,7 +121,7 @@ async Task<String> SendGreeting(ILogger<Program> logger)
 async Task SendNestedGreeting(int nestlevel, ILogger<Program> logger, HttpContext context, IHttpClientFactory clientFactory)
 {
     // Create a new Activity scoped to the method
-    using var activity = GreeterActivitySource.StartActivity("GreeterActivity");
+    using var activity = greeterActivitySource.StartActivity("GreeterActivity");
 
     if (nestlevel <= 5)
     {
@@ -132,7 +129,7 @@ async Task SendNestedGreeting(int nestlevel, ILogger<Program> logger, HttpContex
         logger.LogInformation("Sending greeting, level {nestlevel}", nestlevel);
 
         // Increment the custom counter
-        CountGreetings.Add(1);
+        countGreetings.Add(1);
 
         // Add a tag to the Activity
         activity?.SetTag("nest-level", nestlevel);
@@ -151,7 +148,7 @@ async Task SendNestedGreeting(int nestlevel, ILogger<Program> logger, HttpContex
     else
     {
         // Log a message
-        logger.LogError("Greeting nest level {nestlevel} too high ", nestlevel);
+        logger.LogError("Greeting nest level {nestlevel} too high", nestlevel);
         await context.Response.WriteAsync("Nest level too high, max is 5");
     }
 }

@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DefineConstants>$(DefineConstants);AZURE_MONITOR</DefineConstants>
+    <!--<DefineConstants>$(DefineConstants);AZURE_MONITOR</DefineConstants>-->
   </PropertyGroup>
 
   <!--<Snippet_References>-->

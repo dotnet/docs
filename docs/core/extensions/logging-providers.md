@@ -114,23 +114,14 @@ To log events lower than <xref:Microsoft.Extensions.Logging.LogLevel.Warning?dis
 The following code changes the `SourceName` from the default value of `".NET Runtime"` to `CustomLogs`:
 
 ```csharp
-public class Program
-{
-    static async Task Main(string[] args)
-    {
-        using IHost host = CreateHostBuilder(args).Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
-        // Application code should start here.
+builder.Logging.AddEventLog(
+    config => config.SourceName = "CustomLogs");
 
-        await host.RunAsync();
-    }
+using IHost host = builder.Build();
 
-    static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureLogging(logging =>
-                logging.AddEventLog(configuration =>
-                    configuration.SourceName = "CustomLogs"));
-}
+host.Run();
 ```
 
 ### Azure App Service
@@ -144,20 +135,21 @@ To configure provider settings, use <xref:Microsoft.Extensions.Logging.AzureAppS
 ```csharp
 using Microsoft.Extensions.Logging.AzureAppServices;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureLogging(logging =>
-        logging.AddAzureWebAppDiagnostics())
-    .ConfigureServices(services =>
-        services.Configure<AzureFileLoggerOptions>(options =>
-        {
-            options.FileName = "azure-diagnostics-";
-            options.FileSizeLimit = 50 * 1024;
-            options.RetainedFileCountLimit = 5;
-        })
-        .Configure<AzureBlobLoggerOptions>(options =>
-        {
-            options.BlobName = "log.txt";
-        })).Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args)
+
+builder.Logging.AddAzureWebAppDiagnostics();
+builder.Services.Configure<AzureFileLoggerOptions>(options =>
+{
+    options.FileName = "azure-diagnostics-";
+    options.FileSizeLimit = 50 * 1024;
+    options.RetainedFileCountLimit = 5;
+});
+builder.ServicesConfigure<AzureBlobLoggerOptions>(options =>
+{
+    options.BlobName = "log.txt";
+});
+
+using IHost host = builder.Build();
 
 // Application code should start here.
 

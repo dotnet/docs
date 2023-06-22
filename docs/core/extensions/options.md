@@ -71,13 +71,10 @@ services.Configure<TransientFaultHandlingOptions>(
 To access both the `services` and the `configurationRoot` objects, you must use the <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureServices%2A> method &mdash; the <xref:Microsoft.Extensions.Configuration.IConfiguration> is available as the <xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration?displayProperty=nameWithType> property.
 
 ```csharp
-Host.CreateDefaultBuilder(args)
-    .ConfigureServices((context, services) =>
-    {
-        var configurationRoot = context.Configuration;
-        services.Configure<TransientFaultHandlingOptions>(
-            configurationRoot.GetSection(nameof(TransientFaultHandlingOptions)));
-    });
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Services.Configure<TransientFaultHandlingOptions>(
+    builder.Configuration.GetSection(nameof(TransientFaultHandlingOptions)));
 ```
 
 > [!TIP]

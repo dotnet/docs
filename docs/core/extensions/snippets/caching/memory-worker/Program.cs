@@ -1,16 +1,14 @@
 ﻿using CachingExamples.Memory;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
-    {
-        services.AddMemoryCache();
-        services.AddHttpClient<CacheWorker>();
-        services.AddHostedService<CacheWorker>();
-        services.AddScoped<PhotoService>();
-        services.AddSingleton(typeof(CacheSignal<>));
-    })
-    .UseConsoleLifetime()
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Services.AddMemoryCache();
+builder.Services.AddHttpClient<CacheWorker>();
+builder.Services.AddHostedService<CacheWorker>();
+builder.Services.AddScoped<PhotoService>();
+builder.Services.AddSingleton(typeof(CacheSignal<>));
+
+using IHost host = builder.Build();
 
 await host.StartAsync();
 

@@ -74,7 +74,6 @@ make substantial new investments on this API going forward, but as with `Perform
 current and future users.
 
 
-
 ## Third-party APIs
 
 Most application performance monitoring (APM) vendors such as [AppDynamics](https://www.appdynamics.com/),

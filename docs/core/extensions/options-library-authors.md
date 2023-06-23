@@ -3,7 +3,7 @@ title: Options pattern guidance for .NET library authors
 author: IEvangelist
 description: Learn how to expose the options pattern as a library author in .NET. Follow the guidance to ensure your library is correctly exposed to consumers.
 ms.author: dapine
-ms.date: 05/30/2023
+ms.date: 06/23/2023
 ---
 
 # Options pattern guidance for .NET library authors
@@ -115,7 +115,7 @@ In the preceding code, the `AddMyLibraryService`:
 
 Consumers in this pattern provide a lambda expression (or a delegate that satisfies the `Action<LibraryOptions>` parameter):
 
-:::code language="csharp" source="snippets/configuration/options-action/Program.cs" highlight="7-11":::
+:::code language="csharp" source="snippets/configuration/options-action/Program.cs" highlight="6-10":::
 
 ## Options instance parameter
 
@@ -131,7 +131,7 @@ In the preceding code, the `AddMyLibraryService`:
 
 Consumers in this pattern provide an instance of the `LibraryOptions` class, defining desired property values inline:
 
-:::code language="csharp" source="snippets/configuration/options-object/Program.cs" highlight="7-11":::
+:::code language="csharp" source="snippets/configuration/options-object/Program.cs" highlight="6-10":::
 
 ## Post configuration
 
@@ -150,7 +150,7 @@ In the preceding code, the `AddMyLibraryService`:
 
 Consumers in this pattern provide a lambda expression (or a delegate that satisfies the `Action<LibraryOptions>` parameter), just as they would with the [`Action<TOptions>` parameter](#actiontoptions-parameter) in a non-post configuration scenario:
 
-:::code language="csharp" source="snippets/configuration/options-postconfig/Program.cs" highlight="7-11":::
+:::code language="csharp" source="snippets/configuration/options-postconfig/Program.cs" highlight="6-10":::
 
 ## See also
 

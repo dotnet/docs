@@ -3,7 +3,7 @@ title: .NET Generic Host
 author: IEvangelist
 description: Learn about the .NET Generic Host, which is responsible for app startup and lifetime management.
 ms.author: dapine
-ms.date: 05/12/2023
+ms.date: 06/23/2023
 ---
 
 # .NET Generic Host

@@ -3,7 +3,7 @@ title: Logging in C#
 author: IEvangelist
 description: Learn about app logging provided by the Microsoft.Extensions.Logging NuGet package in C#.
 ms.author: dapine
-ms.date: 03/13/2023
+ms.date: 06/23/2023
 ---
 
 # Logging in C# and .NET

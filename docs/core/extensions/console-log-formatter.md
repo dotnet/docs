@@ -3,7 +3,7 @@ title: Console log formatting
 description: Learn how to use and implement custom console log formatting in your .NET apps. Register and create new log formatters for better application logging.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/22/2023
+ms.date: 06/23/2023
 ---
 
 # Console log formatting

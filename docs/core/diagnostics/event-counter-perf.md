@@ -1,7 +1,7 @@
 ---
 title: Measure performance using EventCounters in .NET Core
 description: In this tutorial, you'll learn how to measure performance using EventCounters.
-ms.date: 08/07/2020
+ms.date: 06/23/2023
 ms.topic: tutorial
 recommendations: false
 ---

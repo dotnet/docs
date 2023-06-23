@@ -134,9 +134,10 @@ The following code uses <xref:Microsoft.Extensions.Options.IOptionsSnapshot%601>
 The following code registers a configuration instance which `TransientFaultHandlingOptions` binds against:
 
 ```csharp
-services.Configure<TransientFaultHandlingOptions>(
-    configurationRoot.GetSection(
-        nameof(TransientFaultHandlingOptions)));
+builder.Services
+    .Configure<TransientFaultHandlingOptions>(
+        configurationRoot.GetSection(
+            nameof(TransientFaultHandlingOptions)));
 ```
 
 In the preceding code, the `Configure<TOptions>` method is used to register a configuration instance that `TOptions` will bind against, and updates the options when the configuration changes.
@@ -146,9 +147,10 @@ In the preceding code, the `Configure<TOptions>` method is used to register a co
 To use the options monitor, options objects are configured in the same way from a configuration section.
 
 ```csharp
-services.Configure<TransientFaultHandlingOptions>(
-    configurationRoot.GetSection(
-        nameof(TransientFaultHandlingOptions)));
+builder.Services
+    .Configure<TransientFaultHandlingOptions>(
+        configurationRoot.GetSection(
+            nameof(TransientFaultHandlingOptions)));
 ```
 
 The following example uses <xref:Microsoft.Extensions.Options.IOptionsMonitor%601>:

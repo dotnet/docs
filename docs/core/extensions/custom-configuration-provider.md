@@ -67,7 +67,7 @@ To consume the custom configuration provider, you can use the [options pattern](
 
 :::code language="csharp" source="snippets/configuration/custom-provider/WidgetOptions.cs":::
 
-A call to <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%2A> registers a configuration instance which `TOptions` will bind against.
+A call to <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%2A> registers a configuration instance, which `TOptions` binds against.
 
 :::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="14,16-19":::
 

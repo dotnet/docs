@@ -11,7 +11,6 @@ ms.date: 06/23/2023
 Logging providers persist logs, except for the `Console` provider, which only displays logs as standard output. For example, the Azure Application Insights provider stores logs in Azure Application Insights. Multiple providers can be enabled.
 
 The default .NET Worker app templates:
-CreateApplicationBuilder
 
 - Use the [Generic Host](generic-host.md).
 - Call <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A>, which adds the following logging providers:

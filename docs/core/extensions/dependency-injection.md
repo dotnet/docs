@@ -128,7 +128,7 @@ public class Worker : BackgroundService
 }
 ```
 
-Using the preceding code, there is no need to update `Program`, because logging is provided by the framework.
+Using the preceding code, there is no need to update `Program.cs`, because logging is provided by the framework.
 
 ## Multiple constructor discovery rules
 
@@ -214,7 +214,7 @@ When using any of the available host or app builder patterns, defaults are appli
 - <xref:Microsoft.AspNetCore.Components.WebAssembly.Hosting.WebAssemblyHostBuilder.CreateDefault%2A?displayProperty=nameWithType>
 - <xref:Microsoft.Maui.Hosting.MauiApp.CreateBuilder%2A?displayProperty=nameWithType>
 
-After creating a builder from any of these APIs, the `IServiceCollection` has services defined by the framework depending on [how the host was configured](generic-host.md#host-configuration). For apps based on the .NET templates, the framework could register hundreds of services.
+After creating a builder from any of these APIs, the `IServiceCollection` has services defined by the framework, depending on [how the host was configured](generic-host.md#host-configuration). For apps based on the .NET templates, the framework could register hundreds of services.
 
 The following table lists a small sample of these framework-registered services:
 

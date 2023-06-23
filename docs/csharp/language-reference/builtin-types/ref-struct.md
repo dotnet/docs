@@ -42,16 +42,30 @@ You can apply the `readonly` modifier to a `ref` field in the following ways:
 - `ref readonly`: At any point, you cannot assign a value with the `=` operator to such a field. However, you can ref reassign a field with the `= ref` operator.
 - `readonly ref readonly`: You can only ref reassign such a field in a constructor or an `init` accessor. At any point, you cannot assign a value to the field.
 
-The compiler ensures that a reference stored in a `ref` field doesn't outlive the value to which it refers. For information about the scope rules, see the [Scope of references and values](../keywords/method-parameters.md#scope-of-references-and-values) section of the [Method parameters](../keywords/method-parameters.md) article.
+The compiler ensures that a reference stored in a `ref` field doesn't outlive its referent.
+
+The `ref` fields feature enables a safe implementation of types like <xref:System.Span%601?displayProperty=fullName>:
+
+```csharp
+public readonly ref struct Span<T>
+{
+    internal readonly ref T _reference;
+    private readonly int _length;
+
+    // Omitted for brevity...
+}
+```
+
+The `Span<T>` type stores a reference through which it accesses the contiguous elements in memory. The use of a reference enables a `Span<T>` instance to avoid copying the storage it refers to.
 
 ## C# language specification
 
-For more information, see the [Structs](~/_csharpstandard/standard/structs.md) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-For more information about features introduced in C# 7.2 and later, see the following feature proposal notes:
+- [Structs: Ref modifier](~/_csharpstandard/standard/structs.md#1623-ref-modifier)
+- [Safe context constraint for ref struct types](~/_csharpstandard/standard/structs.md#16412-safe-context-constraint-for-ref-struct-types)
 
-- [C# 7.2 - Compile-time safety for ref-like types](~/_csharplang/proposals/csharp-7.2/span-safety.md)
-- [C# 11 - ref fields and scoped](~/_csharplang/proposals/csharp-11.0/low-level-struct-improvements.md)
+For more information about `ref` fields, see the [Low-level struct improvements](~/_csharplang/proposals/csharp-11.0/low-level-struct-improvements.md) proposal note.
 
 ## See also
 

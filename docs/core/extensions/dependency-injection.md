@@ -3,7 +3,7 @@ title: Dependency injection
 description: Learn how to use dependency injection within your .NET apps. Discover how to registration services, define service lifetimes, and express dependencies in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/13/2023
+ms.date: 06/23/2023
 ms.topic: overview
 ---
 
@@ -67,7 +67,7 @@ The sample code registers the `IMessageWriter` service with the concrete type `M
 
 In the preceding code, the sample app:
 
-- Creates a host builder instance.
+- Creates a host app builder instance.
 - Configures the services by registering:
 
   - The `Worker` as a hosted service. For more information, see [Worker Services in .NET](workers.md).
@@ -88,17 +88,13 @@ The implementation of the `IMessageWriter` interface can be improved by using th
 
 :::code language="csharp" source="snippets/configuration/dependency-injection/LoggingMessageWriter.cs":::
 
-The updated `ConfigureServices` method registers the new `IMessageWriter` implementation:
+The updated `AddScoped` method registers the new `IMessageWriter` implementation:
 
 ```csharp
-static IHostBuilder CreateHostBuilder(string[] args) =>
-    Host.CreateDefaultBuilder(args)
-        .ConfigureServices((_, services) =>
-            services.AddHostedService<Worker>()
-                    .AddScoped<IMessageWriter, LoggingMessageWriter>());
+builder.Services.AddScoped<IMessageWriter, LoggingMessageWriter>());
 ```
 
-The method `CreateHostBuilder` uses types `IHostBuilder` and `Host`. In order to use them, packages `Microsoft.Extensions.DependencyInjection` and `Microsoft.Extensions.Hosting` must be referenced respectively.
+The <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder> (`builder`) type is part of the `Microsoft.Extensions.Hosting` NuGet package.
 
 `LoggingMessageWriter` depends on <xref:Microsoft.Extensions.Logging.ILogger%601>, which it requests in the constructor. `ILogger<TCategoryName>` is a [framework-provided service](#framework-provided-services).
 
@@ -111,7 +107,7 @@ With dependency injection terminology, a service:
 - Is typically an object that provides a service to other objects, such as the `IMessageWriter` service.
 - Is not related to a web service, although the service may use a web service.
 
-The framework provides a robust logging system. The `IMessageWriter` implementations shown in the preceding examples were written to demonstrate basic DI, not to implement logging. Most apps shouldn't need to write loggers. The following code demonstrates using the default logging, which only requires the `Worker` to be registered in `ConfigureServices` as a hosted service <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A>:
+The framework provides a robust logging system. The `IMessageWriter` implementations shown in the preceding examples were written to demonstrate basic DI, not to implement logging. Most apps shouldn't need to write loggers. The following code demonstrates using the default logging, which only requires the `Worker` to be registered as a hosted service <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A>:
 
 ```csharp
 public class Worker : BackgroundService
@@ -132,7 +128,7 @@ public class Worker : BackgroundService
 }
 ```
 
-Using the preceding code, there is no need to update `ConfigureServices`, because logging is provided by the framework.
+Using the preceding code, there is no need to update `Program.cs`, because logging is provided by the framework.
 
 ## Multiple constructor discovery rules
 
@@ -209,21 +205,30 @@ Microsoft Extensions uses a convention for registering a group of related servic
 
 ## Framework-provided services
 
-The `ConfigureServices` method registers services that the app uses, including platform features. Initially, the `IServiceCollection` provided to `ConfigureServices` has services defined by the framework depending on [how the host was configured](generic-host.md#host-configuration). For apps based on the .NET templates, the framework registers hundreds of services.
+When using any of the available host or app builder patterns, defaults are applied and services are registered by the framework. Consider some of the most popular host and app builder patterns:
+
+- <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.WebHost.CreateDefaultBuilder?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Builder.WebApplication.CreateBuilder?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Components.WebAssembly.Hosting.WebAssemblyHostBuilder.CreateDefault%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Maui.Hosting.MauiApp.CreateBuilder%2A?displayProperty=nameWithType>
+
+After creating a builder from any of these APIs, the `IServiceCollection` has services defined by the framework, depending on [how the host was configured](generic-host.md#host-configuration). For apps based on the .NET templates, the framework could register hundreds of services.
 
 The following table lists a small sample of these framework-registered services:
 
-| Service Type                                                                                  | Lifetime  |
-|-----------------------------------------------------------------------------------------------|-----------|
+| Service Type | Lifetime |
+|--|--|
 | <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory?displayProperty=fullName> | Singleton |
-| <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime>                                  | Singleton |
-| <xref:Microsoft.Extensions.Logging.ILogger%601?displayProperty=fullName>                      | Singleton |
-| <xref:Microsoft.Extensions.Logging.ILoggerFactory?displayProperty=fullName>                   | Singleton |
-| <xref:Microsoft.Extensions.ObjectPool.ObjectPoolProvider?displayProperty=fullName>            | Singleton |
-| <xref:Microsoft.Extensions.Options.IConfigureOptions%601?displayProperty=fullName>            | Transient |
-| <xref:Microsoft.Extensions.Options.IOptions%601?displayProperty=fullName>                     | Singleton |
-| <xref:System.Diagnostics.DiagnosticListener?displayProperty=fullName>                         | Singleton |
-| <xref:System.Diagnostics.DiagnosticSource?displayProperty=fullName>                           | Singleton |
+| <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime> | Singleton |
+| <xref:Microsoft.Extensions.Logging.ILogger%601?displayProperty=fullName> | Singleton |
+| <xref:Microsoft.Extensions.Logging.ILoggerFactory?displayProperty=fullName> | Singleton |
+| <xref:Microsoft.Extensions.ObjectPool.ObjectPoolProvider?displayProperty=fullName> | Singleton |
+| <xref:Microsoft.Extensions.Options.IConfigureOptions%601?displayProperty=fullName> | Transient |
+| <xref:Microsoft.Extensions.Options.IOptions%601?displayProperty=fullName> | Singleton |
+| <xref:System.Diagnostics.DiagnosticListener?displayProperty=fullName> | Singleton |
+| <xref:System.Diagnostics.DiagnosticSource?displayProperty=fullName> | Singleton |
 
 ## Service lifetimes
 
@@ -377,7 +382,7 @@ When services are resolved by `ActivatorUtilities`, constructor injection requir
 
 ## Scope validation
 
-When the app runs in the `Development` environment and calls [CreateDefaultBuilder](generic-host.md#default-builder-settings) to build the host, the default service provider performs checks to verify that:
+When the app runs in the `Development` environment and calls [CreateApplicationBuilder](generic-host.md#default-builder-settings) to build the host, the default service provider performs checks to verify that:
 
 - Scoped services aren't resolved from the root service provider.
 - Scoped services aren't injected into singletons.

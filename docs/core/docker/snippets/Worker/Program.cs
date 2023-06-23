@@ -1,10 +1,8 @@
-using DotNet.ContainerImage;
+﻿using DotNet.ContainerImage;
 
-IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
-    {
-        services.AddHostedService<Worker>();
-    })
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+builder.Services.AddHostedService<Worker>();
+
+using IHost host = builder.Build();
 
 host.Run();

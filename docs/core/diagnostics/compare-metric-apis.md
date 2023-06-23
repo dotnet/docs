@@ -73,7 +73,6 @@ overtaken soon by growing support for [System.Diagnostics.Metrics](metrics-instr
 make substantial new investments on this API going forward, but as with `PerformanceCounters`, the API remains actively supported for all
 current and future users.
 
-
 ## Third-party APIs
 
 Most application performance monitoring (APM) vendors such as [AppDynamics](https://www.appdynamics.com/),

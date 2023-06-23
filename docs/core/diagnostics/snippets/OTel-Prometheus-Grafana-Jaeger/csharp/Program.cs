@@ -13,11 +13,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 // <Snippet_CustomMetrics>
 // Custom metrics for the application
-var greeterMeter = new Meter("OtPrGrYa.Sample", "1.0.0");
+var greeterMeter = new Meter("OtPrGrYa.Example", "1.0.0");
 var countGreetings = greeterMeter.CreateCounter<int>("greetings.count", description: "Counts the number of greetings");
 
 // Custom ActivitySource for the application
-var greeterActivitySource = new ActivitySource("OtPrGrJa.Sample");
+var greeterActivitySource = new ActivitySource("OtPrGrJa.Example");
 // </Snippet_CustomMetrics>
 // <Snippet_HttpClientFactory>
 builder.Services.AddHttpClient();

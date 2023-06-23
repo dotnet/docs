@@ -33,7 +33,7 @@ There are a few different ways to achieve observability in .NET applications:
 
 - Explicitly in code, by referencing and using a library such as OpenTelemetry. If you have access to the source code and can rebuild the app, then this is the most powerful and configurable mechanism.
 - Out-of-process using [EventPipe](./eventpipe.md). Tools such as [dotnet-monitor](./dotnet-monitor.md) can listen to logs and metrics and then process them without affecting any code.
-- [Using a startup hook](https://github.com/dotnet/runtime/blob/main/docs/design/features/host-startup-hook.md), assemblies can be injected into the process that can then collect instrumentation. This mechanism enables creating instrumentation for libraries that weren't designed for it but can be fragile to version conflicts between application and instrumentation dependencies. An example of this approach is [OpenTelemetry .NET Automatic Instrumentation](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/main/docs/README.md).
+- [Using a startup hook](https://github.com/dotnet/runtime/blob/main/docs/design/features/host-startup-hook.md), assemblies can be injected into the process that can then collect instrumentation. An example of this approach is [OpenTelemetry .NET Automatic Instrumentation](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/main/docs/README.md).
 
 ## What is OpenTelemetry
 
@@ -98,7 +98,7 @@ dotnet new web
 
 ### 2. Add metrics and activity definitions
 
-The following code defines a new metric (`greetings.count`) for the number of times the API has been called, and a new activity source (`OtPrGrYa.Sample`).
+The following code defines a new metric (`greetings.count`) for the number of times the API has been called, and a new activity source (`OtPrGrYa.Example`).
 
 :::code language="csharp" source="snippets/OTel-Prometheus-Grafana-Jaeger/csharp/Program.cs" id="Snippet_CustomMetrics":::
 
@@ -182,7 +182,7 @@ Activity.TraceId:            2e00dd5e258d33fe691b965607b91d18
 Activity.SpanId:             3b7a891f55b97f1a
 Activity.TraceFlags:         Recorded
 Activity.ParentSpanId:       645071fd0011faac
-Activity.ActivitySourceName: OtPrGrYa.Sample
+Activity.ActivitySourceName: OtPrGrYa.Example
 Activity.DisplayName:        GreeterActivity
 Activity.Kind:               Internal
 Activity.StartTime:          2023-06-16T04:50:26.7675469Z

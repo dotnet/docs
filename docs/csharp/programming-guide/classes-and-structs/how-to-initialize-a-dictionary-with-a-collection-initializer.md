@@ -18,7 +18,7 @@ A <xref:System.Collections.Generic.Dictionary%602> contains a collection of key/
 > { 111, new StudentName { FirstName="Dina", LastName="Salimzianova", ID=317 } }, 
 >  ```
 > <xref:System.Collections.Generic.Dictionary%602.Add%2A> method will throw <xref:System.ArgumentException>: `'An item with the same key has already been added. Key: 111'`,
-> while the public read / write indexer method will quietly overwrite the already existing entry with the same key.
+> while the second part of example, the public read / write indexer method, will quietly overwrite the already existing entry with the same key.
 
 ## Example
 

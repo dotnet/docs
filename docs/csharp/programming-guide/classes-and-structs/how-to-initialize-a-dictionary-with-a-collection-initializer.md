@@ -13,10 +13,12 @@ ms.assetid: 25283922-f8ee-40dc-a639-fac30804ec71
 A <xref:System.Collections.Generic.Dictionary%602> contains a collection of key/value pairs. Its <xref:System.Collections.Generic.Dictionary%602.Add%2A> method takes two parameters, one for the key and one for the value. One way to initialize a <xref:System.Collections.Generic.Dictionary%602>, or any collection whose `Add` method takes multiple parameters, is to enclose each set of parameters in braces as shown in the following example. Another option is to use an index initializer, also shown in the following example.
 
 > NOTE: The major difference between these two ways of initializing the collection is that in case of having multiplied keys, for example:
+>
 > ```csharp  
 > { 111, new StudentName { FirstName="Sachin", LastName="Karnik", ID=211 } },
 > { 111, new StudentName { FirstName="Dina", LastName="Salimzianova", ID=317 } }, 
 >  ```
+>
 > <xref:System.Collections.Generic.Dictionary%602.Add%2A> method will throw <xref:System.ArgumentException>: `'An item with the same key has already been added. Key: 111'`,
 > while the second part of example, the public read / write indexer method, will quietly overwrite the already existing entry with the same key.
 

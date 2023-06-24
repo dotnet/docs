@@ -2,9 +2,9 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services => services.AddMemoryCache())
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+builder.Services.AddMemoryCache();
+using IHost host = builder.Build();
 
 IMemoryCache cache =
     host.Services.GetRequiredService<IMemoryCache>();
@@ -24,7 +24,7 @@ static void OnPostEviction(
 static async ValueTask IterateAlphabetAsync(
     Func<char, Task> asyncFunc)
 {
-    for (char letter = 'A'; letter <= 'Z'; ++ letter)
+    for (char letter = 'A'; letter <= 'Z'; ++letter)
     {
         await asyncFunc(letter);
     }

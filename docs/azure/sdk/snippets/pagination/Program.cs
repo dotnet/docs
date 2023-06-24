@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Azure;
+﻿using Azure;
 using Azure.Identity;
 using Azure.Security.KeyVault.Secrets;
 using Microsoft.Extensions.Azure;
@@ -15,18 +11,15 @@ using Microsoft.Extensions.Hosting;
 //     AZURE_CLIENT_SECRET - A client secret that was generated for the App Registration.
 //     AZURE_KEY_VAULT_URI - The URI for the Azure Key Vault resource.
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
-    {
-        services.AddAzureClients(builder =>
-        {
-            Uri vaultUri = new(Environment.GetEnvironmentVariable("AZURE_KEY_VAULT_URI")!);
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+builder.Services.AddAzureClients(builder =>
+{
+    Uri vaultUri = new(Environment.GetEnvironmentVariable("AZURE_KEY_VAULT_URI")!);
 
-            builder.AddSecretClient(vaultUri);
-            builder.UseCredential(new DefaultAzureCredential());
-        });
-    })
-    .Build();
+    builder.AddSecretClient(vaultUri);
+    builder.UseCredential(new DefaultAzureCredential());
+});
+using IHost host = builder.Build();
 
 SecretClient client = host.Services.GetRequiredService<SecretClient>();
 
@@ -89,15 +82,19 @@ async Task IterateSecretsAsPagesAsync()
 
 async Task ToListAsync()
 {
-    AsyncPageable<SecretProperties> allSecrets = client.GetPropertiesOfSecretsAsync();
+    AsyncPageable<SecretProperties> allSecrets =
+        client.GetPropertiesOfSecretsAsync();
 
     List<SecretProperties> secretList = await allSecrets.ToListAsync();
-    secretList.ForEach(secret => Console.WriteLine($"ToListAsync: {secret.Name}"));
+
+    secretList.ForEach(secret =>
+        Console.WriteLine($"ToListAsync: {secret.Name}"));
 }
 
 async Task TakeAsync(int count = 30)
 {
-    AsyncPageable<SecretProperties> allSecrets = client.GetPropertiesOfSecretsAsync();
+    AsyncPageable<SecretProperties> allSecrets =
+        client.GetPropertiesOfSecretsAsync();
 
     await foreach (SecretProperties secret in allSecrets.Take(count))
     {
@@ -117,16 +114,23 @@ void IterateWithPageable()
 
 IDisposable UseTheToObservableMethod()
 {
-    AsyncPageable<SecretProperties> allSecrets = client.GetPropertiesOfSecretsAsync();
+    AsyncPageable<SecretProperties> allSecrets =
+        client.GetPropertiesOfSecretsAsync();
 
     IObservable<SecretProperties> observable = allSecrets.ToObservable();
 
-    return observable.Subscribe(new SecretPropertyObserver());
+    return observable.Subscribe(
+        new SecretPropertyObserver());
 }
 
-sealed class SecretPropertyObserver : IObserver<SecretProperties>
+sealed file class SecretPropertyObserver : IObserver<SecretProperties>
 {
-    public void OnCompleted() => Console.WriteLine("Done observing secrets");
-    public void OnError(Exception error) => Console.WriteLine($"Error observing secrets: {error}");
-    public void OnNext(SecretProperties secret) => Console.WriteLine($"Observable: {secret.Name}");
+    public void OnCompleted() =>
+        Console.WriteLine("Done observing secrets");
+
+    public void OnError(Exception error) =>
+        Console.WriteLine($"Error observing secrets: {error}");
+
+    public void OnNext(SecretProperties secret) =>
+        Console.WriteLine($"Observable: {secret.Name}");
 }

@@ -7,29 +7,28 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using static CommandLine.Parser;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices((_, services) => services.AddGitHubActionServices())
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
-static TService Get<TService>(IHost host)
-    where TService : notnull =>
-    host.Services.GetRequiredService<TService>();
+builder.Services.AddGitHubActionServices();
 
-var parser = Default.ParseArguments<ActionInputs>(() => new(), args);
+using IHost host = builder.Build();
+
+ParserResult<ActionInputs> parser = Default.ParseArguments<ActionInputs>(() => new(), args);
 parser.WithNotParsed(
     errors =>
     {
-        Get<ILoggerFactory>(host)
+        host.Services
+            .GetRequiredService<ILoggerFactory>()
             .CreateLogger("DotNet.GitHubAction.Program")
-            .LogError(
-                string.Join(
-                    Environment.NewLine, errors.Select(error => error.ToString())));
+            .LogError("{Errors}", string.Join(
+                Environment.NewLine, errors.Select(error => error.ToString())));
 
         Environment.Exit(2);
     });
 
 await parser.WithParsedAsync(
     async options => await StartAnalysisAsync(options, host));
+
 await host.RunAsync();
 
 static async ValueTask StartAnalysisAsync(ActionInputs inputs, IHost host)

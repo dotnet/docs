@@ -3,7 +3,7 @@ title: Configuration providers
 description: Discover how to configure .NET apps using the configuration provider API and the available configuration providers.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/13/2023
+ms.date: 06/23/2023
 ms.topic: reference
 ---
 
@@ -38,11 +38,11 @@ Overloads can specify:
 
 Consider the following code:
 
-:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="1-29" highlight="8-14":::
+:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="1-26" highlight="9-13":::
 
 The preceding code:
 
-- Clears all existing configuration providers that were added by default in the <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[])> method.
+- Clears all existing configuration providers that were added by default in the <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder(System.String[])> method.
 - Configures the JSON configuration provider to load the *appsettings.json* and  *appsettings*.`Environment`.*json* files with the following options:
   - `optional: true`: The file is optional.
   - `reloadOnChange: true`: The file is reloaded when changes are saved.
@@ -65,7 +65,7 @@ Consider the `TransientFaultHandlingOptions` class defined as follows:
 
 The following code builds the configuration root, binds a section to the `TransientFaultHandlingOptions` class type, and prints the bound values to the console window:
 
-:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="16-23":::
+:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="15-20":::
 
 The application writes the following sample output:
 
@@ -77,11 +77,11 @@ The <xref:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider> class
 
 The following code demonstrates the configuration of XML files using the XML configuration provider.
 
-:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="1-18,36-41" highlight="7-18":::
+:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="1-18,36-40" highlight="6-17":::
 
 The preceding code:
 
-- Clears all existing configuration providers that were added by default in the <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[])> method.
+- Clears all existing configuration providers that were added by default in the <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder(System.String[])> method.
 - Configures the XML configuration provider to load the *appsettings.xml* and *repeating-example.xml* files with the following options:
   - `optional: true`: The file is optional.
   - `reloadOnChange: true`: The file is reloaded when changes are saved.
@@ -103,7 +103,7 @@ In .NET 5 and earlier versions, add the `name` attribute to distinguish repeatin
 
 The following code reads the previous configuration file and displays the keys and values:
 
-:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="20-35":::
+:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="19-34":::
 
 The application would write the following sample output:
 
@@ -132,7 +132,7 @@ The <xref:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider> class
 
 The following code clears all the configuration providers and adds the `IniConfigurationProvider` with two INI files as the source:
 
-:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="1-13,20-25" highlight="7-13":::
+:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="1-12,19-23" highlight="7-11":::
 
 An example *appsettings.ini* file with various configuration settings follows:
 
@@ -140,7 +140,7 @@ An example *appsettings.ini* file with various configuration settings follows:
 
 The following code displays the preceding configuration settings by writing them to the console window:
 
-:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="15-19":::
+:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="13-17":::
 
 The application would write the following sample output:
 

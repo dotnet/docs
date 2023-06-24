@@ -1,24 +1,23 @@
 ﻿using System.Text.Json;
-using Console.ExampleFormatters.Json;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureWebHostDefaults(builder => builder.UseStartup<Startup>())
-    .ConfigureLogging(builder =>
-        builder.AddJsonConsole(options =>
-        {
-            options.IncludeScopes = false;
-            options.TimestampFormat = "HH:mm:ss ";
-            options.JsonWriterOptions = new JsonWriterOptions
-            {
-                Indented = true
-            };
-        }))
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Logging.AddJsonConsole(options =>
+{
+    options.IncludeScopes = false;
+    options.TimestampFormat = "HH:mm:ss ";
+    options.JsonWriterOptions = new JsonWriterOptions
+    {
+        Indented = true
+    };
+});
+
+using IHost host = builder.Build();
 
 var logger =
     host.Services
         .GetRequiredService<ILoggerFactory>()
-        .CreateLogger<Startup>();
+        .CreateLogger<Program>();
 
 logger.LogInformation("Hello .NET friends!");
 

@@ -3,7 +3,7 @@ title: .NET Generic Host
 author: IEvangelist
 description: Learn about the .NET Generic Host, which is responsible for app startup and lifetime management.
 ms.author: dapine
-ms.date: 05/12/2023
+ms.date: 06/23/2023
 ---
 
 # .NET Generic Host
@@ -63,7 +63,7 @@ The <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> method:
   - EventLog (only when running on Windows)
 - Enables scope validation and [dependency validation](xref:Microsoft.Extensions.DependencyInjection.ServiceProviderOptions.ValidateOnBuild) when the environment is `Development`.
 
-The `ConfigureServices` method exposes the ability to add services to the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection?displayProperty=nameWithType> instance. Later, these services can be made available from dependency injection.
+The <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Services?displayProperty=nameWithType> is an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection?displayProperty=nameWithType> instance. These services are used to build an <xref:System.IServiceProvider> that's used with dependency injection to resolve the registered services.
 
 ## Framework-provided services
 
@@ -115,7 +115,7 @@ To add host configuration, call <xref:Microsoft.Extensions.Hosting.HostBuilder.C
 
 The following example creates host configuration:
 
-:::code language="csharp" source="snippets/configuration/console-host/Program.cs" highlight="5-11":::
+:::code language="csharp" source="snippets/configuration/console-host/Program.cs" highlight="6-9":::
 
 ## App configuration
 

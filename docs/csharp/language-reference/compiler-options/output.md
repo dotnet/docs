@@ -21,7 +21,7 @@ The following options control compiler output generation.
 | **OutputAssembly** | `-out:` | Specify the output assembly file. |
 | **PlatformTarget** | `-platform:` | Specify the target platform CPU. |
 | **ProduceReferenceAssembly** | `-refout:` | Generate a reference assembly. |
-| **TargetType** | `-target:` | Specify the type of the output assembly. |
+| **OutputType** | `-target:` | Specify the type of the output assembly. |
 
 ## DocumentationFile
 
@@ -100,9 +100,9 @@ You generally don't need to work directly with reference assembly files. By defa
 
 .NET SDK 6.0.200 made a [change](../../../core/compatibility/sdk/6.0/write-reference-assemblies-to-obj.md) that moved reference assemblies from the output directory to the intermediate directory by default.
 
-## TargetType
+## OutputType
 
-The **TargetType** compiler option can be specified in one of the following forms:  
+The **OutputType** compiler option can be specified in one of the following forms:  
   
 - **library**: to create a code library. **library** is the default value.
 - **exe**: to create an .exe file.  

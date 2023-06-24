@@ -217,7 +217,7 @@ The following suggestions are not specifically to prevent excessive backtracking
 
 1. Gather only the information you need. If you only need to know whether a match occurs but not where the match occurs, prefer <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType>. If you only need to know how many times something matches, prefer using <xref:System.Text.RegularExpressions.Regex.Count%2A?displayProperty=nameWithType>. If you only need to know the bounds of a match but not anything about a match's captures, prefer using <xref:System.Text.RegularExpressions.Regex.EnumerateMatches%2A?displayProperty=nameWithType>. The less information the engine needs to provide, the better.
 
-1. Avoid unnecessary captures. Parentheses in your pattern by default form a capturing group. If you don't need captures, either specify <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> or use [non-capturing groups](grouping-constructs-in-regular-expressions#noncapturing-groups) instead. This saves the engine keeping track of those captures.
+1. Avoid unnecessary captures. Parentheses in your pattern by default form a capturing group. If you don't need captures, either specify <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> or use [non-capturing groups](grouping-constructs-in-regular-expressions.md#noncapturing-groups) instead. This saves the engine keeping track of those captures.
 
 ## See also
 

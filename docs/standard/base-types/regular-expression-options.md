@@ -21,7 +21,7 @@ By default, the comparison of an input string with any literal characters in a r
 |-|-|-|-|
 | <xref:System.Text.RegularExpressions.RegexOptions.None> | Not available | Use default behavior. | [Default options](#default-options) |
 | <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase> | `i` | Use case-insensitive matching. | [Case-insensitive matching](#case-insensitive-matching) |
-| <xref:System.Text.RegularExpressions.RegexOptions.Multiline> | `m` | Use multiline mode, where `^` and `$` match the beginning and end of each line (instead of the beginning and end of the input string). | [Multiline mode](#multiline-mode) |
+| <xref:System.Text.RegularExpressions.RegexOptions.Multiline> | `m` | Use multiline mode, where `^` and `$` indicate the beginning and end of each line (instead of the beginning and end of the input string). | [Multiline mode](#multiline-mode) |
 | <xref:System.Text.RegularExpressions.RegexOptions.Singleline> | `s` | Use single-line mode, where the period (.) matches every character (instead of every character except `\n`). | [Single-line mode](#single-line-mode) |
 | <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture> | `n` | Do not capture unnamed groups. The only valid captures are explicitly named or numbered groups of the form `(?<`*name*`>` *subexpression*`)`. | [Explicit captures only](#explicit-captures-only) |
 | <xref:System.Text.RegularExpressions.RegexOptions.Compiled> | Not available | Compile the regular expression to an assembly. | [Compiled regular expressions](#compiled-regular-expressions) |
@@ -113,7 +113,7 @@ The <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameW
 
 - Comparisons are case-sensitive.
 
-- The `^` and `$` language elements match the beginning and end of the input string. The end of the input string can be a trailing newline `\n` character.
+- The `^` and `$` language elements indicate the beginning and end of the input string. The end of the input string can be a trailing newline `\n` character.
 
 - The `.` language element matches every character except `\n`.
 
@@ -144,9 +144,11 @@ The following example modifies the regular expression pattern from the previous 
 
 ## Multiline mode
 
-The <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> option, or the `m` inline option, enables the regular expression engine to handle an input string that consists of multiple lines. It changes the interpretation of the `^` and `$` language elements so that they match the beginning and end of a line, instead of the beginning and end of the input string.
+The <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> option, or the `m` inline option, enables the regular expression engine to handle an input string that consists of multiple lines. It changes the interpretation of the `^` and `$` language elements so that they indicate the beginning and end of a line, instead of the beginning and end of the input string.
 
-By default, `$` matches only the end of the input string. If you specify the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> option, it matches either the newline character (`\n`) or the end of the input string. It does not, however, match the carriage return/line feed character combination. To successfully match them, use the subexpression `\r?$` instead of just `$`.
+By default, `$` will be satisfied only at the end of the input string. If you specify the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> option, it will be satisfied by either the newline character (`\n`) or the end of the input string.
+
+In neither case does `$` recognize the carriage return/line feed character combination (`\r\n`). `$` always ignores any carriage return (`\r`). To end your match with either `\r\n` or `\n`, use the subexpression `\r?$` instead of just `$`. Note that this will make the `\r` part of the match.
 
 The following example extracts bowlers' names and scores and adds them to a <xref:System.Collections.Generic.SortedList%602> collection that sorts them in descending order. The <xref:System.Text.RegularExpressions.Regex.Matches%2A> method is called twice. In the first method call, the regular expression is `^(\w+)\s(\d+)$` and no options are set. As the output shows, because the regular expression engine cannot match the input pattern along with the beginning and end of the input string, no matches are found. In the second method call, the regular expression is changed to `^(\w+)\s(\d+)\r?$` and the options are set to <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType>. As the output shows, the names and scores are successfully matched, and the scores are displayed in descending order.
 
@@ -171,11 +173,9 @@ The following example is equivalent to the previous one, except that it uses the
 
 ## Single-line mode
 
-The <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option, or the `s` inline option, causes the regular expression engine to treat the input string as if it consists of a single line. It does this by changing the behavior of the period (`.`) language element so that it matches every character, instead of matching every character except for the newline character `\n` or `\u000A`.
+The <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option, or the `s` inline option, causes the regular expression engine to treat the input string as if it consists of a single line. It does this by changing the behavior of the period (`.`) language element so that it matches every character, instead of matching every character except for the newline character `\n`.
 
-The `$` language element will match the end of the string or a trailing newline character `\n`.
-
-The following example illustrates how the behavior of the `.` language element changes when you use the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option. The regular expression `^.+` starts at the beginning of the string and matches every character. By default, the match ends at the end of the first line; the regular expression pattern matches the carriage return character, `\r` or \u000D, but it does not match `\n`. Because the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option interprets the entire input string as a single line, it matches every character in the input string, including `\n`.
+The following example illustrates how the behavior of the `.` language element changes when you use the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option. The regular expression `^.+` starts at the beginning of the string and matches every character. By default, the match ends at the end of the first line; the regular expression pattern matches the carriage return character `\r`, but it does not match `\n`. Because the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option interprets the entire input string as a single line, it matches every character in the input string, including `\n`.
 
 [!code-csharp[Conceptual.Regex.Language.CharacterClasses#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.characterclasses/cs/any2.cs#5)]
 [!code-vb[Conceptual.Regex.Language.CharacterClasses#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/any2.vb#5)]
@@ -224,6 +224,9 @@ Finally, you can use the inline group element `(?n:)` to suppress automatic capt
 [!code-vb[Conceptual.Regex.Language.Options#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/explicit3.vb#11)]
 
 ## Compiled regular expressions
+
+> [!NOTE]
+> Where possible, use [source generated regular expressions](regular-expression-source-generators.md) instead of compiling regular expressions using the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option. Source generation can help your app start faster, run more quickly and be more trimmable. To learn when source generation is possible, see [When to use it](regular-expression-source-generators.md#when-to-use-it).
 
 By default, regular expressions in .NET are interpreted. When a <xref:System.Text.RegularExpressions.Regex> object is instantiated or a static <xref:System.Text.RegularExpressions.Regex> method is called, the regular expression pattern is parsed into a set of custom opcodes, and an interpreter uses these opcodes to run the regular expression. This involves a tradeoff: The cost of initializing the regular expression engine is minimized at the expense of run-time performance.
 

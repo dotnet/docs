@@ -21,8 +21,7 @@ ms.assetid: 34df1152-0b22-4a1c-a76c-3c28c47b70d8
 
 Backtracking occurs when a regular expression pattern contains optional [quantifiers](quantifiers-in-regular-expressions.md) or [alternation constructs](alternation-constructs-in-regular-expressions.md), and the regular expression engine returns to a previous saved state to continue its search for a match. Backtracking is central to the power of regular expressions; it makes it possible for expressions to be powerful and flexible, and to match very complex patterns. At the same time, this power comes at a cost. Backtracking is often the single most important factor that affects the performance of the regular expression engine. Fortunately, the developer has control over the behavior of the regular expression engine and how it uses backtracking. This topic explains how backtracking works and how it can be controlled.
 
-> [!NOTE]
-> In general, a Nondeterministic Finite Automaton (NFA) engine like .NET regular expression engine places the responsibility for crafting efficient, fast regular expressions on the developer.
+[!INCLUDE [regex](../../../includes/regex.md)]
 
 ## Linear Comparison Without Backtracking
 
@@ -61,7 +60,7 @@ Backtracking occurs when a regular expression pattern contains optional [quantif
 
 ## Backtracking with Optional Quantifiers or Alternation Constructs
 
- When a regular expression includes optional quantifiers or alternation constructs, the evaluation of the input string is no longer linear. Pattern matching with an NFA engine is driven by the language elements in the regular expression and not by the characters to be matched in the input string. Therefore, the regular expression engine tries to fully match optional or alternative subexpressions. When it advances to the next language element in the subexpression and the match is unsuccessful, the regular expression engine can abandon a portion of its successful match and return to an earlier saved state in the interest of matching the regular expression as a whole with the input string. This process of returning to a previous saved state to find a match is known as backtracking.
+ When a regular expression includes optional quantifiers or alternation constructs, the evaluation of the input string is no longer linear. Pattern matching with an Nondeterministic Finite Automaton (NFA) engine is driven by the language elements in the regular expression and not by the characters to be matched in the input string. Therefore, the regular expression engine tries to fully match optional or alternative subexpressions. When it advances to the next language element in the subexpression and the match is unsuccessful, the regular expression engine can abandon a portion of its successful match and return to an earlier saved state in the interest of matching the regular expression as a whole with the input string. This process of returning to a previous saved state to find a match is known as backtracking.
 
  For example, consider the regular expression pattern `.*(es)`, which matches the characters "es" and all the characters that precede it. As the following example shows, if the input string is "Essential services are provided by regular expressions.", the pattern matches the whole string up to and including the "es" in "expressions".
 
@@ -103,9 +102,17 @@ Backtracking occurs when a regular expression pattern contains optional [quantif
 
  Backtracking lets you create powerful, flexible regular expressions. However, as the previous section showed, these benefits may be coupled with unacceptably poor performance. To prevent excessive backtracking, you should define a time-out interval when you instantiate a <xref:System.Text.RegularExpressions.Regex> object or call a static regular expression matching method. This is discussed in the next section. In addition, .NET supports three regular expression language elements that limit or suppress backtracking and that support complex regular expressions with little or no performance penalty: [atomic groups](#atomic-groups), [lookbehind assertions](#lookbehind-assertions), and [lookahead assertions](#lookahead-assertions). For more information about each language element, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).
 
-### Defining a Time-out Interval
+### Consider the non-backtracking regular expression engine
 
- Starting with .NET Framework 4.5, you can set a time-out value that represents the longest interval the regular expression engine will search for a single match before it abandons the attempt and throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. You specify the time-out interval by supplying a <xref:System.TimeSpan> value to the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29> constructor for instance regular expressions. In addition, each static pattern matching method has an overload with a <xref:System.TimeSpan> parameter that allows you to specify a time-out value.
+ If you do not need to use any constructs that require backtracking (e.g. lookarounds, backreferences, atomic groups), consider using the <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> mode. This mode is designed to execute in time proportional to the length of the input. See [NonBacktracking mode](regular-expression-options.md#nonbacktracking-mode) for more information. You can additionally set a time-out value.
+
+### Limit the size of inputs
+
+ Some regular expressions have acceptable performance unless the input is exceptionally large. If all reasonable text inputs in your scenario are known to be under a certain length, consider rejecting longer inputs before applying the regular expression to them.
+
+### Specify a Time-out Interval
+
+ You can set a time-out value that represents the longest interval the regular expression engine will search for a single match before it abandons the attempt and throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. You specify the time-out interval by supplying a <xref:System.TimeSpan> value to the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29> constructor for instance regular expressions. In addition, each static pattern matching method has an overload with a <xref:System.TimeSpan> parameter that allows you to specify a time-out value.
 
 If you do not set a time-out value explicitly, the default time-out value is determined as follows:
 
@@ -116,7 +123,7 @@ If you do not set a time-out value explicitly, the default time-out value is det
  By default, the time-out interval is set to <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=nameWithType> and the regular expression engine does not time out.
 
 > [!IMPORTANT]
-> We recommend that you always set a time-out interval if your regular expression relies on backtracking.
+> When not using <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType>, we recommend that you always set a time-out interval if your regular expression relies on backtracking or operates on untrusted inputs.
 
  A <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception indicates that the regular expression engine was unable to find a match within the specified time-out interval but does not indicate why the exception was thrown. The reason might be excessive backtracking, but it is also possible that the time-out interval was set too low given the system load at the time the exception was thrown. When you handle the exception, you can choose to abandon further matches with the input string or increase the time-out interval and retry the matching operation.
 
@@ -127,7 +134,7 @@ If you do not set a time-out value explicitly, the default time-out value is det
 
 ### Atomic groups
 
- The `(?>` *subexpression*`)` language element suppresses backtracking into the subexpression. Once it has successfully matched, it will not give up any part of its match to subsequent backtracking. For example, in the pattern `(?>\w*\d*)1`, if the `1` cannot be matched, the `\d*` will not give up any of its match even if that means it would allow the `1` to successfully match. Atomic groups can help prevent the performance problems associated with failed matches.
+ The `(?>` *subexpression*`)` language element is an atomic grouping. It prevents backtracking into the subexpression. Once this language element has successfully matched, it will not give up any part of its match to subsequent backtracking. For example, in the pattern `(?>\w*\d*)1`, if the `1` cannot be matched, the `\d*` will not give up any of its match even if that means it would allow the `1` to successfully match. Atomic groups can help prevent the performance problems associated with failed matches.
 
  The following example illustrates how suppressing backtracking improves performance when using nested quantifiers. It measures the time required for the regular expression engine to determine that an input string does not match two regular expressions. The first regular expression uses backtracking to attempt to match a string that contains one or more occurrences of one or more hexadecimal digits, followed by a colon, followed by one or more hexadecimal digits, followed by two colons. The second regular expression is identical to the first, except that it disables backtracking. As the output from the example shows, the performance improvement from disabling backtracking is significant.
 
@@ -197,6 +204,20 @@ If you do not set a time-out value explicitly, the default time-out value is det
 |`((?=[A-Z])\w+\.)*`|Match the pattern of one or more word characters followed by a period zero or more times. The initial word character must be alphabetical.|
 |`[A-Z]\w*`|Match an alphabetical character followed by zero or more word characters.|
 |`$`|End the match at the end of the input string.|
+
+### General Performance Considerations
+
+The following suggestions are not specifically to prevent excessive backtracking, but may help increase the performance of your regular expression:
+
+1. Precompile heavily used patterns. The best way to do this is to use the [regular expression source generator](regular-expression-source-generators.md) to precompile it. If the source generator is not available for your app, for example you are not targeting .NET 7 or later, or you do not know the pattern at compile time, use the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option.
+
+1. Cache heavily used Regex objects. This implicitly occurs when you are using the source generator. Otherwise, create a Regex object and store it for reuse, rather than using the static Regex methods or creating and throwing away a Regex object.
+
+1. Start matching from an offset. If you know that matches will always start beyond a certain offset into the pattern, pass the offset in using an overload like <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%29?displayProperty=nameWithType>. This will reduce the amount of the text the engine needs to consider.
+
+1. Gather only the information you need. If you only need to know whether a match occurs but not where the match occurs, prefer <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType>. If you only need to know how many times something matches, prefer using <xref:System.Text.RegularExpressions.Regex.Count%2A?displayProperty=nameWithType>. If you only need to know the bounds of a match but not anything about a match's captures, prefer using <xref:System.Text.RegularExpressions.Regex.EnumerateMatches%2A?displayProperty=nameWithType>. The less information the engine needs to provide, the better.
+
+1. Avoid unnecessary captures. Parentheses in your pattern by default form a capturing group. If you don't need captures, either specify <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> or use [non-capturing groups](grouping-constructs-in-regular-expressions.md#noncapturing-groups) instead. This saves the engine keeping track of those captures.
 
 ## See also
 

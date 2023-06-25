@@ -11,6 +11,9 @@ ms.author: dapine
 
 A regular expression, or regex, is a string that enables a developer to express a pattern being searched for, making it a very common way to search text and extract results as a subset from the searched string. In .NET, the `System.Text.RegularExpressions` namespace is used to define <xref:System.Text.RegularExpressions.Regex> instances and static methods, and match on user-defined patterns. In this article, you'll learn how to use source generation to generate `Regex` instances to optimize performance.
 
+> [!NOTE]
+> Where possible, use source generated regular expressions instead of compiling regular expressions using the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option. Source generation can help your app start faster, run more quickly and be more trimmable. To learn when source generation is possible, see [When to use it](#when-to-use-it).
+
 ## Compiled regular expressions
 
 When you write `new Regex("somepattern")`, a few things happen. The specified pattern is parsed, both to ensure the validity of the pattern and to transform it into an internal tree that represents the parsed regex. The tree is then optimized in various ways, transforming the pattern into a functionally equivalent variation that can be more efficiently executed. The tree is written into a form that can be interpreted as a series of opcodes and operands that provide instructions to the regex interpreter engine on how to match. When a match is performed, the interpreter simply walks through those instructions, processing them against the input text. When instantiating a new `Regex` instance or calling one of the static methods on `Regex`, the interpreter is the default engine employed.

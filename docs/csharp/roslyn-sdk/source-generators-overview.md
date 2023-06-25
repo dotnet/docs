@@ -89,7 +89,7 @@ In this guide, you'll explore the creation of a source generator using the <xref
 
             context.RegisterSourceOutput(compilationProvider, static (context, compilation)
             {
-            // Code generation goes here
+                // Code generation goes here
             });       
         }
     }

@@ -1,7 +1,7 @@
 ---
 title: Source Generators
 description: Source Generators is a C# compiler feature that lets C# developers inspect user code as it is being compiled. Source generators create new C# source files on the fly that are added to the user's compilation.
-ms.date: 03/02/2022
+ms.date: 25/06/2023
 ms.topic: tutorial
 ms.custom: mvc, vs-dotnet, source-generators
 ---

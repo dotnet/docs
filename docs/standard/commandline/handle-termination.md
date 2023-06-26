@@ -22,7 +22,7 @@ The preceding code uses a `SetHandler` overload that gets an [InvocationContext]
 To test the sample code, run the command with a URL that will take a moment to load, and before it finishes loading, press <kbd>Ctrl</kbd>+<kbd>C</kbd>. On macOS press <kbd>Command</kbd>+<kbd>Period(.)</kbd>. For example:
 
 ```dotnetcli
-testapp --url https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis
+testapp --url https://learn.microsoft.com/aspnet/core/fundamentals/minimal-apis
 ```
 
 ```output

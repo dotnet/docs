@@ -16,37 +16,43 @@ This article teaches you how to build your .NET for Apache Spark applications on
 
 If you already have all of the following prerequisites, skip to the [build](#build) steps.
 
-  1. Download and install the **[.NET Core SDK](https://dotnet.microsoft.com/download/dotnet/3.1)** - installing the SDK will add the `dotnet` toolchain to your path. .NET Core 2.1, 2.2 and 3.1 are supported.
-  2. Install **[Visual Studio 2019](https://www.visualstudio.com/downloads/)** (Version 16.3 or later). The Community version is completely free. When configuring your installation, include these components at minimum:
-     * .NET desktop development
-       * All Required Components
-         * .NET Framework 4.6.1 Development Tools
-     * .NET Core cross-platform development
-       * All Required Components
-  3. Install **[Java 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)**.
-     - Select the appropriate version for your operating system. For example, *jdk-8u201-windows-x64.exe* for Windows x64 machine.
-     - Install using the installer and verify you are able to run `java` from your command line.
-  4. Install **[Apache Maven 3.6.0+](https://maven.apache.org/download.cgi)**.
-     - Download [Apache Maven 3.6.0](http://mirror.metrocast.net/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.zip).
-     - Extract to a local directory. For example, *C:\bin\apache-maven-3.6.0\*.
-     - Add Apache Maven to your [PATH environment variable](https://www.java.com/en/download/help/path.xml). For example, *C:\bin\apache-maven-3.6.0\bin*.
-     - Verify you are able to run `mvn` from your command-line.
-  5. Install **[Apache Spark 2.3+](https://spark.apache.org/downloads.html)**.
-     - Download [Apache Spark 2.3+](https://spark.apache.org/downloads.html) and extract it into a local folder (for example, *C:\bin\spark-3.0.1-bin-hadoop2.7\*) using [7-zip](https://www.7-zip.org/). (The supported spark versions are 2.3.*, 2.4.0, 2.4.1, 2.4.3, 2.4.4, 2.4.5, 2.4.6, 2.4.7, 3.0.0 and 3.0.1)
-     - Add a [new environment variable](https://www.java.com/en/download/help/path.xml) `SPARK_HOME`. For example, *C:\bin\spark-3.0.1-bin-hadoop2.7\*.
+1. Download and install the **[.NET Core SDK](https://dotnet.microsoft.com/download/dotnet/3.1)** - installing the SDK adds the `dotnet` toolchain to your path.
+1. Install **[Visual Studio 2019](https://www.visualstudio.com/downloads/)** (Version 16.3 or later). The Community version is free. When configuring your installation, include these components:
+  
+   * .NET desktop development
+     * All Required Components
+       * .NET Framework 4.6.1 Development Tools
+   * .NET Core cross-platform development
+     * All Required Components
 
-       ```powershell
-       set SPARK_HOME=C:\bin\spark-3.0.1-bin-hadoop2.7\
-       ```
+1. Install **[Java 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)**.
+  
+   Select the appropriate version for your operating system. For example, *jdk-8u201-windows-x64.exe* for Windows x64 machine. Install using the installer and verify that you're able to run `java` from your command line.
 
-     - Add Apache Spark to your [PATH environment variable](https://www.java.com/en/download/help/path.xml). For example, *C:\bin\spark-3.0.1-bin-hadoop2.7\bin*.
+1. Install **[Apache Maven 3.6.0+](https://maven.apache.org/download.cgi)**.
 
-       ```powershell
-       set PATH=%SPARK_HOME%\bin;%PATH%
-       ```
+   - Download [Apache Maven](http://mirror.metrocast.net/apache/maven/maven-3/3.9.3/binaries/apache-maven-3.9.3-bin.zip) and extract to a local directory. For example, *C:\bin\apache-maven\*.
+   - Add Apache Maven to your [PATH environment variable](https://www.java.com/en/download/help/path.xml). For example, *C:\bin\apache-maven\bin*.
+   - Verify that you're able to run `mvn` from your command line.
 
-     - Verify you are able to run `spark-shell` from your command-line.
-        Sample console output:
+1. Install **[Apache Spark 2.3+](https://spark.apache.org/downloads.html)**.
+
+   - Download [Apache Spark 2.3+](https://spark.apache.org/downloads.html) and extract it into a local folder (for example, *C:\bin\spark-3.0.1-bin-hadoop2.7\*) using [7-zip](https://www.7-zip.org/). (The supported spark versions are 2.3.*, 2.4.0, 2.4.1, 2.4.3, 2.4.4, 2.4.5, 2.4.6, 2.4.7, 3.0.0, and 3.0.1)
+   - Add a [new environment variable](https://www.java.com/en/download/help/path.xml) `SPARK_HOME`. For example, *C:\bin\spark-3.0.1-bin-hadoop2.7\*.
+
+     ```powershell
+     set SPARK_HOME=C:\bin\spark-3.0.1-bin-hadoop2.7\
+     ```
+
+   - Add Apache Spark to your [PATH environment variable](https://www.java.com/en/download/help/path.xml). For example, *C:\bin\spark-3.0.1-bin-hadoop2.7\bin*.
+
+     ```powershell
+     set PATH=%SPARK_HOME%\bin;%PATH%
+     ```
+
+   - Verify you are able to run `spark-shell` from your command-line.
+     
+     Sample console output:
 
         ```output
         Welcome to
@@ -66,29 +72,30 @@ If you already have all of the following prerequisites, skip to the [build](#bui
 
         </details>
 
-  6. Install **[WinUtils](https://github.com/steveloughran/winutils)**.
-     - Download `winutils.exe` binary from [WinUtils repository](https://github.com/steveloughran/winutils). You should select the version of Hadoop the Spark distribution was compiled with. For example, use hadoop-2.7.1 for Spark 3.0.1.
-     - Save `winutils.exe` binary to a directory of your choice. For example, *C:\hadoop\bin*.
-     - Set `HADOOP_HOME` to reflect the directory with winutils.exe (without bin). For instance, using command-line:
+1. Install **[WinUtils](https://github.com/steveloughran/winutils)**.
 
-       ```powershell
-       set HADOOP_HOME=C:\hadoop
-       ```
+   - Download `winutils.exe` binary from [WinUtils repository](https://github.com/steveloughran/winutils). You should select the version of Hadoop the Spark distribution was compiled with. For example, use hadoop-2.7.1 for Spark 3.0.1.
+   - Save `winutils.exe` binary to a directory of your choice. For example, *C:\hadoop\bin*.
+   - Set `HADOOP_HOME` to reflect the directory with winutils.exe (without bin). For instance, using command-line:
 
-     - Set PATH environment variable to include `%HADOOP_HOME%\bin`. For instance, using command line:
+     ```powershell
+     set HADOOP_HOME=C:\hadoop
+     ```
 
-       ```powershell
-       set PATH=%HADOOP_HOME%\bin;%PATH%
-       ```
+   - Set PATH environment variable to include `%HADOOP_HOME%\bin`. For instance, using command line:
 
-Make sure you are able to run `dotnet`, `java`, `mvn`, `spark-shell` from your command line before you move to the next section. Feel there is a better way? [Open an issue](https://github.com/dotnet/spark/issues) and feel free to contribute.
+     ```powershell
+     set PATH=%HADOOP_HOME%\bin;%PATH%
+     ```
+
+   Make sure you're able to run `dotnet`, `java`, `mvn`, and `spark-shell` from your command line before you move to the next section.
 
 > [!NOTE]
-> A new instance of the command line may be required if any environment variables were updated.
+> A new instance of the command line may be required if you updated any environment variables.
 
 ## Build
 
-For the remainder of this guide, you will need to have cloned the .NET for Apache Spark repository into your machine. You can choose any location for the cloned repository. For example, *C:\github\dotnet-spark\*.
+For the remainder of this guide, you will need to have cloned the .NET for Apache Spark repository into your machine. You can choose any location for the cloned repository. For example, *C:\github\dotnet-spark\\*.
 
 ```bash
 git clone https://github.com/dotnet/spark.git C:\github\dotnet-spark
@@ -115,7 +122,7 @@ You should see JARs created for the supported Spark versions:
 
 This section explains how to build the [sample applications](https://github.com/dotnet/spark/tree/main/examples) for .NET for Apache Spark. These steps will help in understanding the overall building process for any .NET for Spark application.
 
-#### Using Visual Studio for .NET Framework
+#### Use Visual Studio for .NET Framework
 
   1. Open `src\csharp\Microsoft.Spark.sln` in Visual Studio and build the `Microsoft.Spark.CSharp.Examples` project under the `examples` folder (this will in turn build the .NET bindings project as well). If you want, you can write your own code in the `Microsoft.Spark.Examples` project (the 'input_file.json' in this example is a json file with the data you want to create the dataframe with):
   
@@ -159,10 +166,7 @@ This section explains how to build the [sample applications](https://github.com/
         ------------------------------------------- More framework files -------------------------------------
       ```
 
-#### Using .NET Core CLI for .NET Core
-
-> [!NOTE]
-> We are currently working on automating .NET Core builds for Spark .NET. Until then, we appreciate your patience in performing some of the steps manually.
+#### Use .NET Core CLI for .NET Core
 
   1. Build the worker:
 

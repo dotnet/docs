@@ -529,63 +529,6 @@
           }
         ]
       }
-    },
-    {
-      "taskType": "trigger",
-      "capabilityId": "IssueResponder",
-      "subCapability": "IssuesOnlyResponder",
-      "version": "1.0",
-      "config": {
-        "conditions": {
-          "operator": "and",
-          "operands": [
-            {
-              "name": "isPartOfProject",
-              "parameters": {}
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "hasLabel",
-                  "parameters": {
-                    "label": ":pushpin: seQUESTered"
-                  }
-                }
-              ]
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "hasLabel",
-                  "parameters": {
-                    "label": ":world_map: reQUEST"
-                  }
-                }
-              ]
-            },
-            {
-              "name": "isAssignedToSomeone",
-              "parameters": {}
-            }
-          ]
-        },
-        "eventType": "issue",
-        "eventNames": [
-          "issues",
-          "project_card"
-        ],
-        "actions": [
-          {
-            "name": "addLabel",
-            "parameters": {
-              "label": ":world_map: reQUEST"
-            }
-          }
-        ],
-        "taskName": "Add reQUEST label to issues"
-      }
     }
   ],
   "userGroups": []

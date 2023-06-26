@@ -42,8 +42,8 @@ In parsing operations, custom date and time format strings can be used with the 
 
 | Format specifier | Description | Examples |
 |--|--|--|
-| "d" | The day of the month, from 1 through 31.<br /><br /> More information: [The "d" Custom Format Specifier](#dSpecifier). | 2009-06-01T13:45:30 -> 1<br /><br /> 2009-06-15T13:45:30 -> 15 |
-| "dd" | The day of the month, from 01 through 31.<br /><br /> More information: [The "dd" Custom Format Specifier](#ddSpecifier). | 2009-06-01T13:45:30 -> 01<br /><br /> 2009-06-15T13:45:30 -> 15 |
+| "d" | The day of the month, from 1 to 31.<br /><br /> More information: [The "d" Custom Format Specifier](#dSpecifier). | 2009-06-01T13:45:30 -> 1<br /><br /> 2009-06-15T13:45:30 -> 15 |
+| "dd" | The day of the month, from 01 to 31.<br /><br /> More information: [The "dd" Custom Format Specifier](#ddSpecifier). | 2009-06-01T13:45:30 -> 01<br /><br /> 2009-06-15T13:45:30 -> 15 |
 | "ddd" | The abbreviated name of the day of the week.<br /><br /> More information: [The "ddd" Custom Format Specifier](#dddSpecifier). | 2009-06-15T13:45:30 -> Mon (en-US)<br /><br /> 2009-06-15T13:45:30 -> Пн (ru-RU)<br /><br /> 2009-06-15T13:45:30 -> lun. (fr-FR) |
 | "dddd" | The full name of the day of the week.<br /><br /> More information: [The "dddd" Custom Format Specifier](#ddddSpecifier). | 2009-06-15T13:45:30 -> Monday (en-US)<br /><br /> 2009-06-15T13:45:30 -> понедельник (ru-RU)<br /><br /> 2009-06-15T13:45:30 -> lundi (fr-FR) |
 | "f" | The tenths of a second in a date and time value.<br /><br /> More information: [The "f" Custom Format Specifier](#fSpecifier). | 2009-06-15T13:45:30.6170000 -> 6<br /><br /> 2009-06-15T13:45:30.05 -> 0 |
@@ -66,14 +66,14 @@ In parsing operations, custom date and time format strings can be used with the 
 | "H" | The hour, using a 24-hour clock from 0 to 23.<br /><br /> More information: [The "H" Custom Format Specifier](#H_Specifier). | 2009-06-15T01:45:30 -> 1<br /><br /> 2009-06-15T13:45:30 -> 13 |
 | "HH" | The hour, using a 24-hour clock from 00 to 23.<br /><br /> More information: [The "HH" Custom Format Specifier](#HH_Specifier). | 2009-06-15T01:45:30 -> 01<br /><br /> 2009-06-15T13:45:30 -> 13 |
 | "K" | Time zone information.<br /><br /> More information: [The "K" Custom Format Specifier](#KSpecifier). | With <xref:System.DateTime> values:<br /><br /> 2009-06-15T13:45:30, Kind Unspecified -><br /><br /> 2009-06-15T13:45:30, Kind Utc -> Z<br /><br /> 2009-06-15T13:45:30, Kind Local -> -07:00 (depends on local computer settings)<br /><br /> With <xref:System.DateTimeOffset> values:<br /><br /> 2009-06-15T01:45:30-07:00 --> -07:00<br /><br /> 2009-06-15T08:45:30+00:00 --> +00:00 |
-| "m" | The minute, from 0 through 59.<br /><br /> More information: [The "m" Custom Format Specifier](#mSpecifier). | 2009-06-15T01:09:30 -> 9<br /><br /> 2009-06-15T13:29:30 -> 29 |
-| "mm" | The minute, from 00 through 59.<br /><br /> More information: [The "mm" Custom Format Specifier](#mmSpecifier). | 2009-06-15T01:09:30 -> 09<br /><br /> 2009-06-15T01:45:30 -> 45 |
-| "M" | The month, from 1 through 12.<br /><br /> More information: [The "M" Custom Format Specifier](#M_Specifier). | 2009-06-15T13:45:30 -> 6 |
-| "MM" | The month, from 01 through 12.<br /><br /> More information: [The "MM" Custom Format Specifier](#MM_Specifier). | 2009-06-15T13:45:30 -> 06 |
+| "m" | The minute, from 0 to 59.<br /><br /> More information: [The "m" Custom Format Specifier](#mSpecifier). | 2009-06-15T01:09:30 -> 9<br /><br /> 2009-06-15T13:29:30 -> 29 |
+| "mm" | The minute, from 00 to 59.<br /><br /> More information: [The "mm" Custom Format Specifier](#mmSpecifier). | 2009-06-15T01:09:30 -> 09<br /><br /> 2009-06-15T01:45:30 -> 45 |
+| "M" | The month, from 1 to 12.<br /><br /> More information: [The "M" Custom Format Specifier](#M_Specifier). | 2009-06-15T13:45:30 -> 6 |
+| "MM" | The month, from 01 to 12.<br /><br /> More information: [The "MM" Custom Format Specifier](#MM_Specifier). | 2009-06-15T13:45:30 -> 06 |
 | "MMM" | The abbreviated name of the month.<br /><br /> More information: [The "MMM" Custom Format Specifier](#MMM_Specifier). | 2009-06-15T13:45:30 -> Jun (en-US)<br /><br /> 2009-06-15T13:45:30 -> juin (fr-FR)<br /><br /> 2009-06-15T13:45:30 -> Jun (zu-ZA) |
 | "MMMM" | The full name of the month.<br /><br /> More information: [The "MMMM" Custom Format Specifier](#MMMM_Specifier). | 2009-06-15T13:45:30 -> June (en-US)<br /><br /> 2009-06-15T13:45:30 -> juni (da-DK)<br /><br /> 2009-06-15T13:45:30 -> uJuni (zu-ZA) |
-| "s" | The second, from 0 through 59.<br /><br /> More information: [The "s" Custom Format Specifier](#sSpecifier). | 2009-06-15T13:45:09 -> 9 |
-| "ss" | The second, from 00 through 59.<br /><br /> More information: [The "ss" Custom Format Specifier](#ssSpecifier). | 2009-06-15T13:45:09 -> 09 |
+| "s" | The second, from 0 to 59.<br /><br /> More information: [The "s" Custom Format Specifier](#sSpecifier). | 2009-06-15T13:45:09 -> 9 |
+| "ss" | The second, from 00 to 59.<br /><br /> More information: [The "ss" Custom Format Specifier](#ssSpecifier). | 2009-06-15T13:45:09 -> 09 |
 | "t" | The first character of the AM/PM designator.<br /><br /> More information: [The "t" Custom Format Specifier](#tSpecifier). | 2009-06-15T13:45:30 -> P (en-US)<br /><br /> 2009-06-15T13:45:30 -> 午 (ja-JP)<br /><br /> 2009-06-15T13:45:30 ->  (fr-FR) |
 | "tt" | The AM/PM designator.<br /><br /> More information: [The "tt" Custom Format Specifier](#ttSpecifier). | 2009-06-15T13:45:30 -> PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 午後 (ja-JP)<br /><br /> 2009-06-15T13:45:30 ->  (fr-FR) |
 | "y" | The year, from 0 to 99.<br /><br /> More information: [The "y" Custom Format Specifier](#ySpecifier). | 0001-01-01T00:00:00 -> 1<br /><br /> 0900-01-01T00:00:00 -> 0<br /><br /> 1900-01-01T00:00:00 -> 0<br /><br /> 2009-06-15T13:45:30 -> 9<br /><br /> 2019-06-15T13:45:30 -> 19 |
@@ -97,7 +97,7 @@ The following sections provide additional information about each custom date and
 
 ### <a name="dSpecifier"></a> The "d" custom format specifier
 
-The "d" custom format specifier represents the day of the month as a number from 1 through 31. A single-digit day is formatted without a leading zero.
+The "d" custom format specifier represents the day of the month as a number from 1 to 31. A single-digit day is formatted without a leading zero.
 
 If the "d" format specifier is used without other custom format specifiers, it's interpreted as the "d" standard date and time format specifier. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#UsingSingleSpecifiers) later in this article.
 
@@ -110,7 +110,7 @@ The following example includes the "d" custom format specifier in several format
 
 ### <a name="ddSpecifier"></a> The "dd" custom format specifier
 
-The "dd" custom format string represents the day of the month as a number from 01 through 31. A single-digit day is formatted with a leading zero.
+The "dd" custom format string represents the day of the month as a number from 01 to 31. A single-digit day is formatted with a leading zero.
 
 The following example includes the "dd" custom format specifier in a custom format string.
 
@@ -302,7 +302,7 @@ The following example includes the "g" custom format specifier in a custom forma
 
 ### <a name="hSpecifier"></a> The "h" custom format specifier
 
-The "h" custom format specifier represents the hour as a number from 1 through 12; that is, the hour is represented by a 12-hour clock that counts the whole hours since midnight or noon. A particular hour after midnight is indistinguishable from the same hour after noon. The hour is not rounded, and a single-digit hour is formatted without a leading zero. For example, given a time of 5:43 in the morning or afternoon, this custom format specifier displays "5".
+The "h" custom format specifier represents the hour as a number from 1 to 12; that is, the hour is represented by a 12-hour clock that counts the whole hours since midnight or noon. A particular hour after midnight is indistinguishable from the same hour after noon. The hour is not rounded, and a single-digit hour is formatted without a leading zero. For example, given a time of 5:43 in the morning or afternoon, this custom format specifier displays "5".
 
 If the "h" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and throws a <xref:System.FormatException>. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#UsingSingleSpecifiers) later in this article.
 
@@ -315,7 +315,7 @@ The following example includes the "h" custom format specifier in a custom forma
 
 ### <a name="hhSpecifier"></a> The "hh" custom format specifier
 
-The "hh" custom format specifier (plus any number of additional "h" specifiers) represents the hour as a number from 01 through 12; that is, the hour is represented by a 12-hour clock that counts the whole hours since midnight or noon. A particular hour after midnight is indistinguishable from the same hour after noon. The hour is not rounded, and a single-digit hour is formatted with a leading zero. For example, given a time of 5:43 in the morning or afternoon, this format specifier displays "05".
+The "hh" custom format specifier (plus any number of additional "h" specifiers) represents the hour as a number from 01 to 12; that is, the hour is represented by a 12-hour clock that counts the whole hours since midnight or noon. A particular hour after midnight is indistinguishable from the same hour after noon. The hour is not rounded, and a single-digit hour is formatted with a leading zero. For example, given a time of 5:43 in the morning or afternoon, this format specifier displays "05".
 
 The following example includes the "hh" custom format specifier in a custom format string.
 
@@ -328,7 +328,7 @@ The following example includes the "hh" custom format specifier in a custom form
 
 ### <a name="H_Specifier"></a> The "H" custom format specifier
 
-The "H" custom format specifier represents the hour as a number from 0 through 23; that is, the hour is represented by a zero-based 24-hour clock that counts the hours since midnight. A single-digit hour is formatted without a leading zero.
+The "H" custom format specifier represents the hour as a number from 0 to 23; that is, the hour is represented by a zero-based 24-hour clock that counts the hours since midnight. A single-digit hour is formatted without a leading zero.
 
 If the "H" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and throws a <xref:System.FormatException>. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#UsingSingleSpecifiers) later in this article.
 
@@ -341,7 +341,7 @@ The following example includes the "H" custom format specifier in a custom forma
 
 ### <a name="HH_Specifier"></a> The "HH" custom format specifier
 
-The "HH" custom format specifier (plus any number of additional "H" specifiers) represents the hour as a number from 00 through 23; that is, the hour is represented by a zero-based 24-hour clock that counts the hours since midnight. A single-digit hour is formatted with a leading zero.
+The "HH" custom format specifier (plus any number of additional "H" specifiers) represents the hour as a number from 00 to 23; that is, the hour is represented by a zero-based 24-hour clock that counts the hours since midnight. A single-digit hour is formatted with a leading zero.
 
 The following example includes the "HH" custom format specifier in a custom format string.
 
@@ -377,7 +377,7 @@ The following example displays the string that results from using the "K" custom
 
 ### <a name="mSpecifier"></a> The "m" custom format specifier
 
-The "m" custom format specifier represents the minute as a number from 0 through 59. The minute represents whole minutes that have passed since the last hour. A single-digit minute is formatted without a leading zero.
+The "m" custom format specifier represents the minute as a number from 0 to 59. The minute represents whole minutes that have passed since the last hour. A single-digit minute is formatted without a leading zero.
 
 If the "m" format specifier is used without other custom format specifiers, it's interpreted as the "m" standard date and time format specifier. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#UsingSingleSpecifiers) later in this article.
 
@@ -390,7 +390,7 @@ The following example includes the "m" custom format specifier in a custom forma
 
 ### <a name="mmSpecifier"></a> The "mm" custom format specifier
 
-The "mm" custom format specifier (plus any number of additional "m" specifiers) represents the minute as a number from 00 through 59. The minute represents whole minutes that have passed since the last hour. A single-digit minute is formatted with a leading zero.
+The "mm" custom format specifier (plus any number of additional "m" specifiers) represents the minute as a number from 00 to 59. The minute represents whole minutes that have passed since the last hour. A single-digit minute is formatted with a leading zero.
 
 The following example includes the "mm" custom format specifier in a custom format string.
 
@@ -403,7 +403,7 @@ The following example includes the "mm" custom format specifier in a custom form
 
 ### <a name="M_Specifier"></a> The "M" custom format specifier
 
-The "M" custom format specifier represents the month as a number from 1 through 12 (or from 1 through 13 for calendars that have 13 months). A single-digit month is formatted without a leading zero.
+The "M" custom format specifier represents the month as a number from 1 to 12 (or from 1 to 13 for calendars that have 13 months). A single-digit month is formatted without a leading zero.
 
 If the "M" format specifier is used without other custom format specifiers, it's interpreted as the "M" standard date and time format specifier. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#UsingSingleSpecifiers) later in this article.
 
@@ -416,7 +416,7 @@ The following example includes the "M" custom format specifier in a custom forma
 
 ### <a name="MM_Specifier"></a> The "MM" custom format specifier
 
-The "MM" custom format specifier represents the month as a number from 01 through 12 (or from 1 through 13 for calendars that have 13 months). A single-digit month is formatted with a leading zero.
+The "MM" custom format specifier represents the month as a number from 01 to 12 (or from 1 to 13 for calendars that have 13 months). A single-digit month is formatted with a leading zero.
 
 The following example includes the "MM" custom format specifier in a custom format string.
 
@@ -451,7 +451,7 @@ The following example includes the "MMMM" custom format specifier in a custom fo
 
 ### <a name="sSpecifier"></a> The "s" custom format specifier
 
-The "s" custom format specifier represents the seconds as a number from 0 through 59. The result represents whole seconds that have passed since the last minute. A single-digit second is formatted without a leading zero.
+The "s" custom format specifier represents the seconds as a number from 0 to 59. The result represents whole seconds that have passed since the last minute. A single-digit second is formatted without a leading zero.
 
 If the "s" format specifier is used without other custom format specifiers, it's interpreted as the "s" standard date and time format specifier. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#UsingSingleSpecifiers) later in this article.
 
@@ -464,7 +464,7 @@ The following example includes the "s" custom format specifier in a custom forma
 
 ### <a name="ssSpecifier"></a> The "ss" custom format specifier
 
-The "ss" custom format specifier (plus any number of additional "s" specifiers) represents the seconds as a number from 00 through 59. The result represents whole seconds that have passed since the last minute. A single-digit second is formatted with a leading zero.
+The "ss" custom format specifier (plus any number of additional "s" specifiers) represents the seconds as a number from 00 to 59. The result represents whole seconds that have passed since the last minute. A single-digit second is formatted with a leading zero.
 
 The following example includes the "ss" custom format specifier in a custom format string.
 

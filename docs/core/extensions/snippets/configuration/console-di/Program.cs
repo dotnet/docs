@@ -3,15 +3,14 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ConsoleDI.Example;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
-    {
-        services.AddTransient<IExampleTransientService, ExampleTransientService>();
-        services.AddScoped<IExampleScopedService, ExampleScopedService>();
-        services.AddSingleton<IExampleSingletonService, ExampleSingletonService>();
-        services.AddTransient<ServiceLifetimeReporter>();
-    })
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Services.AddTransient<IExampleTransientService, ExampleTransientService>();
+builder.Services.AddScoped<IExampleScopedService, ExampleScopedService>();
+builder.Services.AddSingleton<IExampleSingletonService, ExampleSingletonService>();
+builder.Services.AddTransient<ServiceLifetimeReporter>();
+
+using IHost host = builder.Build();
 
 ExemplifyServiceLifetime(host.Services, "Lifetime 1");
 ExemplifyServiceLifetime(host.Services, "Lifetime 2");

@@ -1,18 +1,58 @@
 ---
 title: Code generation
 description: Learn how to use code generation in .NET Orleans.
-ms.date: 03/16/2022
+ms.date: 06/20/2023
+zone_pivot_groups: orleans-version
 ---
 
 # Orleans code generation
 
-This article applies to: ✔️ Orleans 3.x and earlier versions
+Before Orleans 7.0, source generation was much more manual and required explicit developer intervention. Starting with Orleans 7.0, code generation is automatic and requires no developer intervention. However, there are still cases where developers may want to influence code generation, for example, to generate code for types that are not automatically generated or to generate code for types in another assembly.
 
 ## Enable code generation
 
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+Orleans generates C# source code for your app at build time. All projects, including your host, need to have the appropriate NuGet packages installed to enable code generation. The following packages are available:
+
+- All clients should reference [Microsoft.Orleans.Client](https://nuget.org/packages/Microsoft.Orleans.Client).
+- All silos (servers) should reference [Microsoft.Orleans.Server](https://nuget.org/packages/Microsoft.Orleans.Server).
+- All other packages should reference [Microsoft.Orleans.Sdk](https://nuget.org/packages/Microsoft.Orleans.Sdk).
+
+Use the <xref:Orleans.GenerateSerializerAttribute> to specify that the type is intended to be serialized and that serialization code should be generated for the type. For more information, see [Use Orleans serialization](../host/configuration-guide/serialization.md#use-orleans-serialization).
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
+
 The Orleans runtime makes use of generated code to ensure proper serialization of types that are used across the cluster as well as for generating boilerplate, which abstracts away the implementation details of method shipping, exception propagation, and other internal runtime concepts. Code generation can be performed either when your projects are being built or when your application initializes.
 
+:::zone-end
+
 ### What happens during build?
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+At build time, Orleans generates code for all types that are marked with <xref:Orleans.GenerateSerializerAttribute>. If a type isn't marked with `GenerateSerializer`, it will not be serialized by Orleans.
+
+If you're developing with F# or Visual Basic, you can also use code generation. For more information, see the following samples:
+
+- [Orleans F# sample app](/samples/dotnet/samples/orleans-fsharp-sample)
+- [Orleans Visual Basic sample app](/samples/dotnet/samples/orleans-vb-sample)
+
+These examples demonstrate how to consume the <xref:Orleans.GenerateCodeForDeclaringAssemblyAttribute?displayProperty=nameWithType>, specifying types in the assembly which the source generator should inspect and generate source for.
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
 
 The preferred method for performing code generation is at build time. Build time code generation could be enabled by using one of the following packages:
 
@@ -25,7 +65,21 @@ Both packages (`Microsoft.Orleans.CodeGenerator.MSBuild` and `Microsoft.Orleans.
 
 Additional diagnostics can be emitted at build time by specifying a value for `OrleansCodeGenLogLevel` in the target project's *.csproj* file. For example, `<OrleansCodeGenLogLevel>Trace</OrleansCodeGenLogLevel>`.
 
+:::zone-end
+
 ### What happens during initialization?
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+In Orleans 7+, nothing happens during initialization. Code generation is performed at build time.
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
 
 Code generation can be performed during initialization on the client and silo by installing the `Microsoft.Orleans.OrleansCodeGenerator` package and using the <xref:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration%2A?displayProperty=nameWithType> extension method:
 
@@ -48,7 +102,21 @@ codeGenLoggerFactory.AddProvider(new ConsoleLoggerProvider());
             .WithCodeGeneration(codeGenLoggerFactory));
 ```
 
+:::zone-end
+
 ## Influence code generation
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-7-0"
+<!-- markdownlint-enable MD044 -->
+
+When applying <xref:Orleans.GenerateSerializerAttribute> to a type, you can also apply the <xref:Orleans.IdAttribute> to uniquely identify the member. Likewise, you may also apply an alias with the <xref:Orleans.AliasAttribute>. For more information on influencing code generation, see [Use Orleans serialization](../host/configuration-guide/serialization.md#use-orleans-serialization).
+
+:::zone-end
+
+<!-- markdownlint-disable MD044 -->
+:::zone target="docs" pivot="orleans-3-x"
+<!-- markdownlint-enable MD044 -->
 
 During code generation, you can influence generating code for a specific type. Code is automatically generated for grain interfaces, grain classes, grain state, and types passed as arguments in grain methods. If a type does not fit these criteria, the following methods can be used to further guide code generation.
 
@@ -85,3 +153,5 @@ builder.ConfigureApplicationParts(
 In the foregoing example, `builder` may be an instance of either <xref:Orleans.Hosting.ISiloHostBuilder> or <xref:Orleans.IClientBuilder>.
 
 `KnownAssemblyAttribute` has an optional property, <xref:Orleans.CodeGeneration.KnownAssemblyAttribute.TreatTypesAsSerializable>, which can be set to `true` to instruct the code generator to act as though all types within that assembly are marked as serializable.
+
+:::zone-end

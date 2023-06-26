@@ -1,7 +1,9 @@
 ﻿using WorkerService.Example;
 
-await Host.CreateDefaultBuilder(args)
-    .ConfigureServices((_, services) =>
-        services.AddHostedService<Worker>())
-    .Build()
-    .RunAsync();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Services.AddHostedService<Worker>();
+
+using IHost host = builder.Build();
+
+await host.RunAsync();

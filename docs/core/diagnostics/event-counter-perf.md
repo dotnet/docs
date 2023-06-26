@@ -1,7 +1,7 @@
 ---
 title: Measure performance using EventCounters in .NET Core
 description: In this tutorial, you'll learn how to measure performance using EventCounters.
-ms.date: 08/07/2020
+ms.date: 06/23/2023
 ms.topic: tutorial
 recommendations: false
 ---
@@ -71,7 +71,7 @@ namespace DiagnosticScenarios
 }
 ```
 
-The action filter starts a <xref:System.Diagnostics.Stopwatch> as the request begins, and stops after it has completed, capturing the elapsed time. The total milliseconds is logged to the `MinimalEventCounterSource` singleton instance. In order for this filter to be applied, you need to add it to the filters collection. In the *Startup.cs* file, update the `ConfigureServices` method in include this filter.
+The action filter starts a <xref:System.Diagnostics.Stopwatch> as the request begins, and stops after it has been completed, capturing the elapsed time. The total milliseconds are logged to the `MinimalEventCounterSource` singleton instance. For this filter to be applied, you need to add it to the filter collection. In the *Startup.cs* file, update the `ConfigureServices` method in include this filter.
 
 ```csharp
 public void ConfigureServices(IServiceCollection services) =>

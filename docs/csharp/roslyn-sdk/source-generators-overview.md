@@ -75,26 +75,26 @@ In this guide, you'll explore the creation of a source generator using the <xref
 
 1. Create a new C# file named _HelloSourceGenerator.cs_ that specifies your own Source Generator like so:
 
-    ```csharp
-    using Microsoft.CodeAnalysis;
+```csharp   
+using Microsoft.CodeAnalysis;
 
-    namespace SourceGenerator;
+namespace SourceGenerator;
 
-    [Generator]
-    public class HelloSourceGenerator : IIncrementalGenerator
+public sealed class HelloSourceGenerator : IIncrementalGenerator
+{
+    public void Initialize(IncrementalGeneratorInitializationContext context)
     {
-        public void Initialize(IncrementalGeneratorInitializationContext context) 
+        var compilationProvider = context.CompilationProvider;
+
+        context.RegisterSourceOutput(
+            compilationProvider, 
+            static (context, compilation) =>
         {
-            var compilationProvider = context.CompilationProvider;
-
-            context.RegisterSourceOutput(compilationProvider, static (context, compilation)
-            {
-                // Code generation goes here
-            });       
-        }
+            // Code generation goes here
+        });
     }
-    ```
-
+}
+```
     A source generator needs to both implement the <xref:Microsoft.CodeAnalysis.IIncrementalGenerator?displayProperty=nameWithType> interface, and have the <xref:Microsoft.CodeAnalysis.GeneratorAttribute?displayProperty=nameWithType>. 
 
 1. Replace the contents of the <xref:Microsoft.CodeAnalysis.IIncrementalGenerator.Initialize%2A?displayProperty=nameWithType> method, with the following implementation:

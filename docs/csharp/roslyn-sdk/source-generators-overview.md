@@ -136,7 +136,7 @@ A source generator needs to both implement the <xref:Microsoft.CodeAnalysis.IInc
 
     :::image type="content" source="media/source-generators/source-generated-program.png" lightbox="media/source-generators/source-generated-program.png" alt-text="Visual Studio: Auto-generated Program.g.cs file.":::
 
-1. You can also set build properties to save the generated file and control where the generated files are stored. In the console application's project file, add the `<EmitCompilerGeneratedFiles>` element to a `<PropertyGroup>`, and set its value to `true`. Build your project again. Now, the generated files are created under *obj/Debug/net6.0/generated/SourceGenerator/SourceGenerator.HelloSourceGenerator*. The components of the path map to the build configuration, target framework, source generator project name, and fully qualified type name of the generator. You can choose a more convenient output folder by adding the `<CompilerGeneratedFilesOutputPath>` element to the application's project file.
+1. You can also set build properties to save the generated file and control where the generated files are stored. In the console application's project file, add the `<EmitCompilerGeneratedFiles>` element to a `<PropertyGroup>`, and set its value to `true`. Build your project again. Now, the generated files are created under *obj/Debug/net7.0/generated/SourceGenerator/SourceGenerator.HelloSourceGenerator*. The components of the path map to the build configuration, target framework, source generator project name, and fully qualified type name of the generator. You can choose a more convenient output folder by adding the `<CompilerGeneratedFilesOutputPath>` element to the application's project file.
 
 ## Next steps
 

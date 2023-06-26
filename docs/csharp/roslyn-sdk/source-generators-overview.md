@@ -75,7 +75,7 @@ In this guide, you'll explore the creation of a source generator using the <xref
 
 1. Create a new C# file named _HelloSourceGenerator.cs_ that specifies your own Source Generator like so:
 
-```csharp   
+```csharp
 using Microsoft.CodeAnalysis;
 
 namespace SourceGenerator;

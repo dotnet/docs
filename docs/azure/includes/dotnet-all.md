@@ -281,7 +281,7 @@
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.0.0) |  |  |
 | Unknown Display Name | NuGet [0.14.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Dapr.Core/0.14.0-preview01) |  |  |
 | Unknown Display Name | NuGet [0.14.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Dapr/0.14.0-preview01) |  |  |
-| Unknown Display Name | NuGet [1.0.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore/1.0.0-preview1) |  |  |
+| Unknown Display Name | NuGet [1.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore/1.0.0-preview2) |  |  |
 | Unknown Display Name | NuGet [0.3.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Redis/0.3.1-preview) |  |  |
 | Unknown Display Name | NuGet [1.5.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.WebPubSub/1.5.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Kafka.SchemaRegistry.Avro/1.0.0-beta.1) |  |  |
@@ -415,7 +415,7 @@
 | Microsoft.Azure.Devices.Provisioning.Transport.Http | NuGet [1.15.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Http/1.15.1)<br>NuGet [1.16.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Http/1.16.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.Provisioning.Transport.Mqtt | NuGet [1.17.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.17.1)<br>NuGet [1.18.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.18.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.Shared | NuGet [1.30.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.30.1)<br>NuGet [1.31.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.31.0-preview-001) |  |  |
-| Microsoft.Azure.Functions.Worker | NuGet [1.14.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.14.1)<br>NuGet [1.15.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.15.0-preview1) |  |  |
+| Microsoft.Azure.Functions.Worker | NuGet [1.15.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.15.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk | NuGet [1.10.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.10.0)<br>NuGet [1.11.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.11.0-preview1) |  |  |
 | Microsoft.Azure.uamqp | NuGet [1.2.11](https://www.nuget.org/packages/Microsoft.Azure.uamqp/1.2.11) |  |  |
 | Microsoft.Azure.umqtt | NuGet [1.1.11](https://www.nuget.org/packages/Microsoft.Azure.umqtt/1.1.11) |  |  |
@@ -514,7 +514,7 @@
 | Microsoft.Azure.Functions.Analyzers | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Analyzers/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Authentication.WebAssembly | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.0)<br>NuGet [1.0.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.1-preview) |  |  |
 | Microsoft.Azure.Functions.Worker.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ApplicationInsights/1.0.0-preview4) |  |  |
-| Microsoft.Azure.Functions.Worker.Core | NuGet [1.12.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/1.12.1)<br>NuGet [1.13.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/1.13.0-preview1) |  |  |
+| Microsoft.Azure.Functions.Worker.Core | NuGet [1.13.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/1.13.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Abstractions | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.2.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [4.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.0.1)<br>NuGet [4.3.1-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.3.1-preview1) |  |  |

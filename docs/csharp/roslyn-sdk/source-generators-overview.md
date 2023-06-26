@@ -95,6 +95,7 @@ public sealed class HelloSourceGenerator : IIncrementalGenerator
     }
 }
 ```
+
 A source generator needs to both implement the <xref:Microsoft.CodeAnalysis.IIncrementalGenerator?displayProperty=nameWithType> interface, and have the <xref:Microsoft.CodeAnalysis.GeneratorAttribute?displayProperty=nameWithType>.
 
 1. Replace the contents of the <xref:Microsoft.CodeAnalysis.IIncrementalGenerator.Initialize%2A?displayProperty=nameWithType> method, with the following implementation:

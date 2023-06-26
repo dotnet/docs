@@ -19,6 +19,16 @@ To handle termination, inject a <xref:System.Threading.CancellationToken> instan
 
 The preceding code uses a `SetHandler` overload that gets an [InvocationContext](model-binding.md#invocationcontext) instance rather than one or more `IValueDescriptor<T>` objects. The `InvocationContext` is used to get the `CancellationToken` and [ParseResult](model-binding.md#parseresult) objects. `ParseResult` can provide argument or option values.
 
+To test the sample code, run the command with a URL that will take a moment to load, and before it finishes loading, press <kbd>Ctrl</kbd>-<kbd>C</kbd>. For example:
+
+```dotnetcli
+testapp --url https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis
+```
+
+```output
+The operation was aborted
+```
+
 Cancellation actions can also be added directly using the <xref:System.Threading.CancellationToken.Register%2A?displayProperty=nameWithType> method.
 
 For information about an alternative way to set the process exit code, see [Set exit codes](model-binding.md#set-exit-codes).

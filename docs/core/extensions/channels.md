@@ -51,7 +51,7 @@ When using a bounded channel, you can specify the behavior the channel adheres t
 
 | Value | Behavior |
 |--|--|
-| <xref:System.Threading.Channels.BoundedChannelFullMode.Wait?displayProperty=nameWithType> | This is the default value. Calls to `WriteAsync`, wait for space to be available in order to complete the write operation. Calls to `TryWrite`, return `false` immediately. |
+| <xref:System.Threading.Channels.BoundedChannelFullMode.Wait?displayProperty=nameWithType> | This is the default value. Calls to `WriteAsync`, wait for space to be available in order to complete the write operation. Calls to `TryWrite` return `false` immediately. |
 | <xref:System.Threading.Channels.BoundedChannelFullMode.DropNewest?displayProperty=nameWithType> | Removes and ignores the newest item in the channel in order to make room for the item being written. |
 | <xref:System.Threading.Channels.BoundedChannelFullMode.DropOldest?displayProperty=nameWithType> | Removes and ignores the oldest item in the channel in order to make room for the item being written. |
 | <xref:System.Threading.Channels.BoundedChannelFullMode.DropWrite?displayProperty=nameWithType> | Drops the item being written. |

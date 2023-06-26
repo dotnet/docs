@@ -10,7 +10,7 @@ ms.date: 06/26/2023
 
 The <xref:System.Threading.Channels?displayProperty=fullName> namespace provides a set of synchronization data structures for passing data between producers and consumers asynchronously. The library targets .NET Standard and works on all .NET implementations.
 
-This library is available in the [System.Threading.Channels](https://www.nuget.org/packages/System.Threading.Channels) NuGet package, however; if you're using .NET Core 3.0 or later, the package is included as part of the framework.
+This library is available in the [System.Threading.Channels](https://www.nuget.org/packages/System.Threading.Channels) NuGet package. However, if you're using .NET Core 3.0 or later, the package is included as part of the framework.
 
 ## Producer/consumer conceptual programming model
 
@@ -51,7 +51,7 @@ When using a bounded channel, you can specify the behavior the channel adheres t
 
 | Value | Behavior |
 |--|--|
-| <xref:System.Threading.Channels.BoundedChannelFullMode.Wait?displayProperty=nameWithType> | This is the default value. Calls to `WriteAsync`, wait for space to be available in order to complete the write operation. Calls to `TryWrite` return `false` immediately. |
+| <xref:System.Threading.Channels.BoundedChannelFullMode.Wait?displayProperty=nameWithType> | This is the default value. Calls to `WriteAsync` wait for space to be available in order to complete the write operation. Calls to `TryWrite` return `false` immediately. |
 | <xref:System.Threading.Channels.BoundedChannelFullMode.DropNewest?displayProperty=nameWithType> | Removes and ignores the newest item in the channel in order to make room for the item being written. |
 | <xref:System.Threading.Channels.BoundedChannelFullMode.DropOldest?displayProperty=nameWithType> | Removes and ignores the oldest item in the channel in order to make room for the item being written. |
 | <xref:System.Threading.Channels.BoundedChannelFullMode.DropWrite?displayProperty=nameWithType> | Drops the item being written. |
@@ -119,7 +119,7 @@ The preceding code creates a bounded channel with a max capacity of `1`. Other o
 
 In the preceding code, the channel is created as a bounded channel that's limited to 1,000 items, with a single writer but many readers. Its full mode behavior is defined as `DropWrite`, which means that it drops the item being written if the channel is full.
 
-To observe items that are dropped when using bounded channels register an `itemDropped` callback:
+To observe items that are dropped when using bounded channels, register an `itemDropped` callback:
 
 :::code language="csharp" source="snippets/channels/Program.Bounded.cs" id="boundedcallback":::
 

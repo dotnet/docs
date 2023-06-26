@@ -46,7 +46,7 @@ There are a few different ways to achieve observability in .NET applications:
 
 There are OpenTelemetry implementations for most languages and platforms, including .NET.
 
-## .NET Observability architecture
+## .NET implementation of OpenTelemetry
 
 The .NET OpenTelemetry implementation is a little different from other platforms, as .NET provides logging, metrics, and activity APIs in the framework. That means OTel doesn't need to provide APIs for library authors to use. The .NET OTel implementation uses these platform APIs for instrumentation:
 

@@ -18,7 +18,7 @@ env:
   DOTNET_INSTALLER_CHANNEL: '8.0'
   DOTNET_DO_INSTALL: 'true' # True to install preview versions, False to use the pre-installed (released) SDK
   EnableNuGetPackageRestore: 'True'
-  repo: 'docs'
+  repo: 'docs-desktop'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:

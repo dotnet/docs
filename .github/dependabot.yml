@@ -507,6 +507,12 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
+    directory: "/docs/csharp/whats-new/tutorials/snippets/primary-constructors" #primary-constructors.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
     directory: "/docs/devops/snippets/create-dotnet-github-action/DotNet.GitHubAction" #DotNet.GitHubAction.csproj
     schedule:
       interval: "weekly"
@@ -1197,7 +1203,7 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_cancellationwinforms/vb/cancellationwinforms" #cancellationwinforms.vbproj
+    directory: "/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbdynamicwalkthroughironpython/vb" #ironpythonsample.vbproj
     schedule:
       interval: "weekly"
       day: "wednesday"

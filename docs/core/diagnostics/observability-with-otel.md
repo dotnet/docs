@@ -39,10 +39,13 @@ There are a few different ways to achieve observability in .NET applications:
 
 [OpenTelemetry](https://opentelemetry.io/) (OTel) is a cross-platform, open standard for collecting and emitting telemetry data. OpenTelemetry includes:
 
-- [APIs](https://opentelemetry.io/docs/concepts/instrumentation/manual/) for libraries to use to emit telemetry
-- [Semantic conventions](https://github.com/open-telemetry/semantic-conventions) for metrics & traces
-- Standard for [exporter components](https://opentelemetry.io/docs/collector/)
-- [OTLP wire protocol](https://github.com/open-telemetry/opentelemetry-proto/blob/main/docs/README.md) for transmitting telemetry data
+- [APIs](https://opentelemetry.io/docs/concepts/instrumentation/manual/) for libraries to use to record telemetry data as code is running.
+- [APIs](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Api/README.md) that app developers use to configure what portion of the recorded data will be sent across the network, where it will be sent to, and how it may be filtered, buffered, enriched, and transformed.
+- [Semantic conventions](https://github.com/open-telemetry/semantic-conventions) provide guidance on naming and content of telemetry data. It is important for the apps that produce telemetry data and the tools that receive the data to agree on what different kinds of data means and what sorts of data are useful so that the tools can provide effective analysis.
+- An interface for [exporters](https://opentelemetry.io/docs/concepts/components/#exporters). Exporters are plugins that allow telemetry data to be transmitted in specific formats to different telemetry backends.
+- [OTLP wire protocol](https://github.com/open-telemetry/opentelemetry-proto/blob/main/docs/README.md) is a vendor neutral network protocol option for transmitting telemetry data. Some tools and vendors support this protocol in addition to pre-existing proprietary protocols they may have.
+
+Using OTel enables the use of a wide variety of APM systems including open-source systems such as [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/oss/grafana/), [Azure Monitor](/azure/azure-monitor/app/app-insights-overview?tabs=net) - Microsoft's APM product in Azure, or from the many [APM vendors](https://opentelemetry.io/ecosystem/vendors/) that partner with OpenTelemetry.
 
 There are OpenTelemetry implementations for most languages and platforms, including .NET.
 
@@ -59,14 +62,12 @@ The .NET OpenTelemetry implementation is a little different from other platforms
 
 Where OTel comes into play is that it collects telemetry from those APIs and other sources (via instrumentation libraries) and then exports them to an application performance monitoring (APM) system for storage and analysis. The benefit that OTel brings as an industry standard is a common mechanism for collection, common schemas and semantics for telemetry data, and an API for how APMs can integrate with OTel. Using OTel means that applications don't need to use APM-specific APIs or data structures; they work against the OTel standard. APMs can either implement an APM specific exporter component or use OTLP, which is a new wire standard for exporting telemetry data to the APM systems.
 
-Using OTel enables the use of a wide variety of APM systems including open-source systems such as [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/oss/grafana/), [Azure Monitor](/azure/azure-monitor/app/app-insights-overview?tabs=net) - Microsoft's APM product in Azure, or from the many [APM vendors](https://opentelemetry.io/ecosystem/vendors/) that partner with OpenTelemetry.
-
 ## OpenTelemetry packages
 
 OpenTelemetry in .NET is implemented as a series of NuGet packages that form a couple of categories:
 
 - Core API
-- Instrumentation libraries - these collect instrumentation from the runtime and common libraries.
+- Instrumentation - these packages collect instrumentation from the runtime and common libraries.
 - Exporters - these interface with APM systems such as Prometheus, Jaeger, and OTLP.
 
 The following table describes the main packages.
@@ -74,7 +75,6 @@ The following table describes the main packages.
 | Package Name | Description |
 | --- |  ---|
 | [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry/README.md) | Main library that provides the core OTEL functionality |
-| [OpenTelemetry.API](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Api/README.md) | APIs for exporting metrics |
 | [OpenTelemetry.Instrumentation.AspNetCore](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Instrumentation.AspNetCore/README.md) | Instrumentation for ASP.NET Core and Kestrel |
 | [OpenTelemetry.Instrumentation.GrpcNetClient](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Instrumentation.GrpcNetClient/README.md) | Instrumentation for gRPC Client for tracking outbound gRPC calls  |
 | [OpenTelemetry.Instrumentation.Http](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Instrumentation.Http/README.md) | Instrumentation for `HttpClient` and `HttpWebRequest` to track outbound HTTP calls |
@@ -138,7 +138,7 @@ Run the project and then access the API with the browser or curl.
 curl -k http://localhost:7275
 ```
 
-Each time you request the page, it will increment the count for the number of greetings that have been made. You can access the metrics endpoint using the same base url, with the path `/metrics`. For example:
+Each time you request the page, it will increment the count for the number of greetings that have been made. You can access the metrics endpoint using the same base url, with the path `/metrics`. 
 
 #### 6.1 Log output
 
@@ -232,7 +232,7 @@ Prometheus is a metrics collection, aggregation, and time-series database system
 
 The metrics data that's exposed in Prometheus format is a point-in-time snapshot of the process's metrics. Each time a request is made to the metrics endpoint, it will report the current values. While current values are interesting, they become more valuable when compared to historical values to see trends and detect if values are anomalous. Commonly, services have usage spikes based on the time of day or world events, such a shopping spree on Black Friday. By comparing the values against historical trends, you can detect if they are abnormal, or if a metric is slowly getting worse over time.
 
-The process doesn't store and aggregate any history of the metrics. Adding that capability to the process could be resource intensive. Also, in a distributed system you commonly have multiple instances of each node, so you want to be able to collect the metrics from all of them and then aggregate and compare with their historical values.
+The process doesn't store any history of these metric snapshots. Adding that capability to the process could be resource intensive. Also, in a distributed system you commonly have multiple instances of each node, so you want to be able to collect the metrics from all of them and then aggregate and compare with their historical values.
 
 #### 7.1 Install and configure Prometheus
 

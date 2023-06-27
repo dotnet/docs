@@ -139,6 +139,12 @@ export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 
 The preceding install script approach allows installing different versions into separate locations so you can choose explicitly which one to use by which app.
 
+## Verify downloaded binaries
+
+[!INCLUDE [verify-download-intro](includes/verify-download-intro.md)]
+
+[!INCLUDE [verify-download-macos-linux](includes/verify-download-macos-linux.md)]
+
 ## Set environment variables system-wide
 
 If you used the previous install script, the variables set only apply to your current terminal session. Add them to your shell profile. There are a number of different shells available for Linux and each has a different profile. For example:

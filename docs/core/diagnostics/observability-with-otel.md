@@ -138,7 +138,7 @@ Run the project and then access the API with the browser or curl.
 curl -k http://localhost:7275
 ```
 
-Each time you request the page, it will increment the count for the number of greetings that have been made. You can access the metrics endpoint using the same base url, with the path `/metrics`. 
+Each time you request the page, it will increment the count for the number of greetings that have been made. You can access the metrics endpoint using the same base url, with the path `/metrics`.
 
 #### 6.1 Log output
 

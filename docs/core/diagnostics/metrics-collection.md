@@ -63,7 +63,7 @@ Press p to pause, r to resume, q to quit.
     hats-sold (Count / 1 sec)                          4
 ```
 
-`dotnet-counters` can be run with a different set of metrics to see some of the built-in instrumentation from the .NET `System.Runtime`:
+`dotnet-counters` can be run with a different set of metrics to see some of the built-in instrumentation from the .NET runtime:
 
 ```dotnetcli
 dotnet-counters monitor -n metric-instr

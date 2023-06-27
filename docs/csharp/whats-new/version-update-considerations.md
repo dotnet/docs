@@ -13,10 +13,10 @@ The language version used to compile your app typically matches the runtime targ
 
 When *breaking changes* are introduced, they're classified as:
 
-- *Binary breaking change*: A binary breaking change means that your application or library has different behavior when launched using a new runtime. You must recompile your app to incorporate these changes. The existing binary may not function correctly.
-- *Source breaking change*: A source breaking change means that the meaning of your source code has changed. You need to make source code edits before compiling your application with the latest language version.
+- *Binary breaking change*: A binary breaking change means that your application or library has different behavior, including possibly crashing, when launched using a new runtime. You must recompile your app to incorporate these changes. The existing binary won't function correctly.
+- *Source breaking change*: A source breaking change means that the meaning of your source code has changed. You need to make source code edits before compiling your application with the latest language version. Your existing binary will run correctly with the newer host and runtime.
 
-When a binary breaking change affects your app, you don't need to edit any source code. Recompiling is all that is necessary. When a source breaking change affects by a source breaking change, the existing binary still runs correctly in environments with the updated runtime and libraries. If a change is both source breaking and binary breaking, you must recompile your application, and you need to make source updates to recompile with the latest version.
+When a binary breaking change affects your app, you must recompile your app, but you don't need to edit any source code. When a source breaking change affects your app, the existing binary still runs correctly in environments with the updated runtime and libraries. However, you must make source changes to recompile with the new language version and runtime. If a change is both source breaking and binary breaking, you must recompile your application, and you need to make source updates to recompile with the latest version.
 
 Because of the goal to avoid breaking changes by the C# language team and runtime team, updating your application is typically a matter of updating the TFM and rebuilding the app. However, for libraries that are distributed publicly, you should carefully evaluate your policy for supported TFMs and supported language versions. You may be creating a new library with features found in the latest version and need to ensure apps built using previous versions of the compiler can use it. Or you may be upgrading an existing library and many of your users may not have upgraded versions yet.
 

@@ -25,11 +25,11 @@ Compare the checksum with the value provided by the download site.
 
 The .NET release notes contain a link to a checksum file you can use to validate your downloaded file. The following steps describe how to download the checksum file and validate a .NET install binary:
 
-01. The release notes page for .NET 7.0 on GitHub at <https://github.com/dotnet/core/tree/main/release-notes/7.0> contains a section named **Releases**. The table in this section links to the downloads and checksum files for each .NET 7 release:
+01. The release notes page for .NET 7 on GitHub at <https://github.com/dotnet/core/tree/main/release-notes/7.0> contains a section named **Releases**. The table in that section links to the downloads and checksum files for each .NET 7 release:
 
     :::image type="content" source="../media/install-sdk/release-notes-root.png" alt-text="The github release notes version table for .NET":::
 
-01. Select the link to your version of .NET that you downloaded. The previous section used .NET SDK 7.0.304, which is in the .NET 7.0.7 release.
+01. Select the link for the version of .NET that you downloaded. The previous section used .NET SDK 7.0.304, which is in the .NET 7.0.7 release.
 
     > [!TIP]
     > If you're not sure which .NET release contains your checksum file, explore the links until you find it.
@@ -40,7 +40,7 @@ The .NET release notes contain a link to a checksum file you can use to validate
 
 01. Copy the link to the checksum file.
 
-01. Use the following script, pasting in the link to download the appropriate checksum file:
+01. Use the following script, but replace the link to download the appropriate checksum file:
 
     ```powershell
     Invoke-WebRequest https://dotnetcli.blob.core.windows.net/dotnet/checksums/7.0.7-sha.txt -OutFile 7.0.7-sha.txt

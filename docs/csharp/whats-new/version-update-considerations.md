@@ -9,7 +9,7 @@ ms.date: 06/26/2023
 
 Compatibility is an important goal as new features are added to the C# language. In almost all cases, existing code can be recompiled with a new compiler version without any issue. The .NET runtime team also has a goal to ensure compatibility for updated libraries. In almost all cases, when your app is launched from an updated runtime with updated libraries, the behavior is exactly the same as with previous versions.
 
-The language version used to compile your app typically matches the runtime TFM referenced in your project. For more information on changing the default language version, see the article on [configure your language version](../language-reference/configure-language-version.md). This default behavior ensures maximum compatibility.
+The language version used to compile your app typically matches the runtime target framework moniker (TFM) referenced in your project. For more information on changing the default language version, see the article titled [configure your language version](../language-reference/configure-language-version.md). This default behavior ensures maximum compatibility.
 
 When *breaking changes* are introduced, they're classified as:
 

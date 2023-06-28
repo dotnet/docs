@@ -190,6 +190,7 @@ Congratulations! You've installed and uninstalled a template package.
 ## Next steps
 
 To learn more about templates, most of which you've already learned, see the [Custom templates for dotnet new](../tools/custom-templates.md) article.
+
 * [Template Authoring Tools](https://github.com/dotnet/templating/tree/main/tools)
 * [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)
 * [dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)

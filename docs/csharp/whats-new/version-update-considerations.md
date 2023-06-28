@@ -22,7 +22,10 @@ Because of the goal to avoid breaking changes by the C# language team and runtim
 
 ## Introducing breaking changes in your libraries
 
-When you adopt new language features in your library's public API, you should evaluate if adopting the feature introduces either a binary or source breaking change for the users of your library. Any changes to your internal implementation that don't appear in the `public` or `protected` interfaces are always compatible.
+When you adopt new language features in your library's public API, you should evaluate if adopting the feature introduces either a binary or source breaking change for the users of your library. Any changes to your internal implementation that don't appear in the `public` or `protected` interfaces are compatible.
+
+> [!NOTE]
+> If you use the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=nameWithType> to enable types to see internal members, the internal members can introduce breaking changes.
 
 A *binary breaking change* requires your users to recompile their code in order to use the new version.  For example, consider this public method:
 

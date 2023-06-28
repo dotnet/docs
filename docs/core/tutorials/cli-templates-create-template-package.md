@@ -17,8 +17,7 @@ In this part of the series you'll learn how to:
 
 > [!div class="checklist"]
 >
-> * Create a \*.csproj project to build a template package
-> * Configure the project file for packing
+> * Create template package using  [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/packages/Microsoft.TemplateEngine.Authoring.Templates)
 > * Install a template package from a NuGet package file
 > * Uninstall a template package by package ID
 
@@ -28,96 +27,94 @@ In this part of the series you'll learn how to:
 
   This tutorial uses the two templates created in the first two parts of this tutorial. You can use a different template as long as you copy the template, as a folder, into the _working\templates\\_ folder.
 
-* Open a terminal and navigate to the _working\\_ folder.
+* Open a terminal.
 
 [!INCLUDE [dotnet6-syntax-note](includes/dotnet6-syntax-note.md)]
 
 ## Create a template package project
 
-A template package is one or more templates packaged into a NuGet package. When you install or uninstall a template package, all templates contained in the package are added or removed, respectively. The previous parts of this tutorial series only worked with individual templates. To share a non-packed template, you have to copy the template folder and install via that folder. Because a template package can have more than one template in it, and is a single file, sharing is easier.
+A template package is one or more templates packed into a NuGet package. When you install or uninstall a template package, all templates contained in the package are added or removed, respectively.
 
 Template packages are represented by a NuGet package (_.nupkg_) file. And, like any NuGet package, you can upload the template package to a NuGet feed. The `dotnet new install` command supports installing template package from a NuGet package feed. Additionally, you can install a template package from a _.nupkg_ file directly.
 
 Normally you use a C# project file to compile code and produce a binary. However, the project can also be used to generate a template package. By changing the settings of the _.csproj_, you can prevent it from compiling any code and instead include all the assets of your templates as resources. When this project is built, it produces a template package NuGet package.
 
-The package you'll create will include the [item template](cli-templates-create-item-template.md) and [package template](cli-templates-create-project-template.md) previously created. Because we grouped the two templates into the _working\templates\\_ folder, we can use the _working_ folder for the _.csproj_ file.
+The package you are going to generate will include the [item template](cli-templates-create-item-template.md) and [package template](cli-templates-create-project-template.md) previously created.
 
-In your terminal, navigate to the _working_ folder. Create a new project and set the name to `templatepack` and the output folder to the current folder.
-
+In your terminal, run the command:
 ```dotnetcli
-dotnet new console -n templatepack -o .
+dotnet new install Microsoft.TemplateEngine.Authoring.Templates
 ```
+This [template package](https://github.com/dotnet/templating/tree/main/template_feed/Microsoft.TemplateEngine.Authoring.Templates) contains templates useful for the template authoring.
 
-The `-n` parameter sets the _.csproj_ filename to _templatepack.csproj_. The `-o` parameter creates the files in the current directory. You should see a result similar to the following output.
+Navigate to the _working_ folder and run:
+```dotnetcli
+dotnet new templatepack --name "templatepack"
+```
+The `--name` parameter sets the _.csproj_ filename to _templatepack.csproj_. You should see a result similar to the following output.
 
 ```console
-The template "Console Application" was created successfully.
+The template "Template Package" was created successfully.
 
 Processing post-creation actions...
-Running 'dotnet restore' on .\templatepack.csproj...
-  Restore completed in 52.38 ms for C:\working\templatepack.csproj.
-
-Restore succeeded.
+Description: Manual actions required
+Manual instructions: Open *.csproj in the editor and complete the package metadata configuration. Copy the templates to 'content' folder. Fill in README.md.
 ```
-
-The new project template generates a _Program.cs_ file. You can safely delete this file as it's not used by the templates.
-
-Next, open the _templatepack.csproj_ file in your favorite editor and replace the content with the following XML:
-
+Next, open the _templatepack.csproj_ file in a code editor and populate it according to the hints in the template:
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageType>Template</PackageType>
-    <PackageVersion>1.0</PackageVersion>
+    <!-- The package metadata. Fill in the properties marked as TODO below -->
+    <!-- Follow the instructions on https://learn.microsoft.com/en-us/nuget/create-packages/package-authoring-best-practices -->
     <PackageId>AdatumCorporation.Utility.Templates</PackageId>
+    <PackageVersion>1.0</PackageVersion>
     <Title>AdatumCorporation Templates</Title>
     <Authors>Me</Authors>
     <Description>Templates to use when creating an application for Adatum Corporation.</Description>
     <PackageTags>dotnet-new;templates;contoso</PackageTags>
+    <PackageProjectUrl>https://github.com/dotnet/samples/tree/main/core/tutorials/cli-templates-create-item-template</PackageProjectUrl>
 
-    <TargetFramework>netstandard2.0</TargetFramework>
-
+    <!-- Keep package type as 'Template' to show the package as template package on nuget.org and make you template available in dotnet new search.-->
+    <PackageType>Template</PackageType>
+    <TargetFramework>net8.0</TargetFramework>
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
     <NoWarn>$(NoWarn);NU5128</NoWarn>
     <NoDefaultExcludes>true</NoDefaultExcludes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <LocalizeTemplates>false</LocalizeTemplates>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+    <PackageReference Include="Microsoft.TemplateEngine.Tasks" Version="*" PrivateAssets="all" IsImplicitlyDefined="true"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="content\**\*" Exclude="content\**\bin\**;content\**\obj\**" />
     <Compile Remove="**\*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="" />
   </ItemGroup>
 
 </Project>
 ```
-
-The settings under `<PropertyGroup>` in the XML snippet are broken into three groups.
-
-The first group deals with properties required for a NuGet package. The three `<Package*>` settings have to do with the NuGet package properties to identify your package on a NuGet feed. Specifically the `<PackageId>` value is used to uninstall the template package with a single name instead of a directory path. It can also be used to install the template package from a NuGet feed. The remaining settings, such as `<Title>` and `<PackageTags>`, have to do with metadata displayed on the NuGet feed. For more information about NuGet settings, see [NuGet and MSBuild properties](/nuget/reference/msbuild-targets).
-
-> [!NOTE]
-> To ensure that the template package appears in `dotnet new search` results, set `<PackageType>` to `Template`.
-
-In the second group, the `<TargetFramework>` setting ensures that MSBuild executes properly when you run the pack command to compile and pack the project.
-
-The third group includes settings that have to do with configuring the project to include the templates in the appropriate folder in the NuGet pack when it's created:
-
-* The `<NoWarn>` setting suppresses a warning message that doesn't apply to template package projects.
-
-* The `<NoDefaultExcludes>` setting ensures that files and folders that start with a `.` (like `.gitignore`) are part of the template. The *default* behavior of NuGet packages is to ignore those files and folders.
-
-`<ItemGroup>` contains two items. First, the `<Content>` item includes everything in the _templates_ folder as content. It's also set to exclude any _bin_ folder or _obj_ folder to prevent any compiled code (if you tested and compiled your templates) from being included. Second, the `<Compile>` item excludes all code files from compiling no matter where they're located. This setting prevents the project that's used to create the template package from trying to compile the code in the _templates_ folder hierarchy.
+For getting more information about content of _templatepack.csproj_ file, navigate to [Create a NuGet package using MSBuild](https://learn.microsoft.com/en-us/nuget/create-packages/creating-a-package-msbuild).
 
 ## Build and install
 
-Save the project file. Before building the template package, verify that your folder structure is correct. Any template you want to pack should be placed in the _templates_ folder, in its own folder. The folder structure should look similar to the following hierarchy:
+Save changes in _templatepack.csproj_ file. Before building the template package, verify that your folder structure is correct. Any custom template should be placed in the _content_ folder, in its own folder. The hierarchy should look similar to:
 
 ```console
 working
 │   templatepack.csproj
-└───templates
+└───content
     ├───extensions
     │   └───.template.config
     │           template.json
@@ -126,7 +123,7 @@ working
                 template.json
 ```
 
-The _templates_ folder has two folders: _extensions_ and _consoleasync_.
+The _content_ folder has two folders: _extensions_ and _consoleasync_. By default, _content_ also contains _SampleTemplate_, that can safely deleted as it was added to authoring template for demonstration purposes.
 
 In your terminal, from the _working_ folder, run the `dotnet pack` command. This command builds your project and creates a NuGet package in the _working\bin\Debug_ folder, as indicated by the following output:
 
@@ -138,7 +135,7 @@ Copyright (C) Microsoft Corporation. All rights reserved.
 
   Restore completed in 123.86 ms for C:\working\templatepack.csproj.
 
-  templatepack -> C:\working\bin\Debug\netstandard2.0\templatepack.dll
+  templatepack -> C:\working\bin\Debug\net8.0\templatepack.dll
   Successfully created package 'C:\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg'.
 ```
 
@@ -155,7 +152,6 @@ Templates                                         Short Name               Langu
 Example templates: string extensions              stringext                [C#]              Common/Code
 Example templates: async project                  consoleasync             [C#]              Common/Console/C#9
 ```
-
 If you uploaded the NuGet package to a NuGet feed, you can use the `dotnet new install <PACKAGE_ID>` command where `<PACKAGE_ID>` is the same as the `<PackageId>` setting from the _.csproj_ file. This package ID is the same as the NuGet package identifier.
 
 ## Uninstall the template package
@@ -186,7 +182,7 @@ Congratulations! You've installed and uninstalled a template package.
 ## Next steps
 
 To learn more about templates, most of which you've already learned, see the [Custom templates for dotnet new](../tools/custom-templates.md) article.
-
+* [Template Authoring Tools](https://github.com/dotnet/templating/tree/main/tools)
 * [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)
 * [dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)
 * [*template.json* schema at the JSON Schema Store](http://json.schemastore.org/template)

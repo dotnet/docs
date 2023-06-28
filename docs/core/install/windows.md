@@ -203,6 +203,12 @@ For more information about .NET 7 supported operating systems, distributions, an
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
+## Verify downloaded binaries
+
+[!INCLUDE [verify-download-intro](includes/verify-download-intro.md)]
+
+[!INCLUDE [verify-download-windows](includes/verify-download-windows.md)]
+
 ## Runtime information
 
 The runtime is used to run apps created with .NET. When an app author publishes an app, they can include the runtime with their app. If they don't include the runtime, it's up to the user to install the runtime.

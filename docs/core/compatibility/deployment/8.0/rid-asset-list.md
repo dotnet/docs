@@ -49,7 +49,7 @@ For non-portable builds of the host or runtime, the build might also set a non-p
 
 ## Version introduced
 
-.NET 8 Preview 6
+.NET 8 Preview 5
 
 ## Type of breaking change
 

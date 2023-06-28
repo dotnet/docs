@@ -35,22 +35,26 @@ In this part of the series you'll learn how to:
 
 A template package is one or more templates packed into a NuGet package. When you install or uninstall a template package, all templates contained in the package are added or removed, respectively.
 
-Template packages are represented by a NuGet package (_.nupkg_) file. And, like any NuGet package, you can upload the template package to a NuGet feed. The `dotnet new install` command supports installing template package from a NuGet package feed. Additionally, you can install a template package from a _.nupkg_ file directly.
+Template packages are represented by a NuGet package (_.nupkg_) file. And, like any NuGet package, you can upload the template package to a NuGet feed. The `dotnet new install` command supports installing template packages from a NuGet package feed. Additionally, you can install a template package from a _.nupkg_ file directly.
 
 Normally you use a C# project file to compile code and produce a binary. However, the project can also be used to generate a template package. By changing the settings of the _.csproj_, you can prevent it from compiling any code and instead include all the assets of your templates as resources. When this project is built, it produces a template package NuGet package.
 
 The package you are going to generate will include the [item template](cli-templates-create-item-template.md) and [package template](cli-templates-create-project-template.md) previously created.
 
 In your terminal, run the command:
+
 ```dotnetcli
 dotnet new install Microsoft.TemplateEngine.Authoring.Templates
 ```
+
 This [template package](https://github.com/dotnet/templating/tree/main/template_feed/Microsoft.TemplateEngine.Authoring.Templates) contains templates useful for the template authoring.
 
 Navigate to the _working_ folder and run:
+
 ```dotnetcli
 dotnet new templatepack --name "templatepack"
 ```
+
 The `--name` parameter sets the _.csproj_ filename to _templatepack.csproj_. You should see a result similar to the following output.
 
 ```console
@@ -60,7 +64,9 @@ Processing post-creation actions...
 Description: Manual actions required
 Manual instructions: Open *.csproj in the editor and complete the package metadata configuration. Copy the templates to 'content' folder. Fill in README.md.
 ```
+
 Next, open the _templatepack.csproj_ file in a code editor and populate it according to the hints in the template:
+
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
 
@@ -105,6 +111,7 @@ Next, open the _templatepack.csproj_ file in a code editor and populate it accor
 
 </Project>
 ```
+
 For getting more information about content of _templatepack.csproj_ file, navigate to [Create a NuGet package using MSBuild](https://learn.microsoft.com/en-us/nuget/create-packages/creating-a-package-msbuild).
 
 ## Build and install
@@ -152,6 +159,7 @@ Templates                                         Short Name               Langu
 Example templates: string extensions              stringext                [C#]              Common/Code
 Example templates: async project                  consoleasync             [C#]              Common/Console/C#9
 ```
+
 If you uploaded the NuGet package to a NuGet feed, you can use the `dotnet new install <PACKAGE_ID>` command where `<PACKAGE_ID>` is the same as the `<PackageId>` setting from the _.csproj_ file. This package ID is the same as the NuGet package identifier.
 
 ## Uninstall the template package

@@ -32,7 +32,7 @@ If the package is installed locally or is found on the official NuGet website, i
 ## Options
 
 - **`--version <VERSION>`**
- 
+
  Specifies the version of the package. If none is passed, the command displays information from the latest package version.
 
 - **`--add-source|--nuget-source <SOURCE>`**
@@ -49,7 +49,6 @@ If the package is installed locally or is found on the official NuGet website, i
 - **`-h|--help`**
 
   Prints out help for the search command. Available since .NET SDK 7.0.100.
-
 
 ## Examples
 

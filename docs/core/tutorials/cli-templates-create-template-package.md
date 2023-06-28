@@ -47,7 +47,7 @@ In your terminal, run the command:
 dotnet new install Microsoft.TemplateEngine.Authoring.Templates
 ```
 
-This [template package](https://github.com/dotnet/templating/tree/main/template_feed/Microsoft.TemplateEngine.Authoring.Templates) contains templates useful for the template authoring.
+This [template package](https://github.com/dotnet/templating/tree/main/template_feed/Microsoft.TemplateEngine.Authoring.Templates) contains templates useful for template authoring.
 
 Navigate to the _working_ folder and run:
 
@@ -112,7 +112,7 @@ Next, open the _templatepack.csproj_ file in a code editor and populate it accor
 </Project>
 ```
 
-For getting more information about content of _templatepack.csproj_ file, navigate to [Create a NuGet package using MSBuild](https://learn.microsoft.com/en-us/nuget/create-packages/creating-a-package-msbuild).
+For getting more information about content of _templatepack.csproj_ file, navigate to [Pack a template into a NuGet package (nupkg file)](https://learn.microsoft.com/en-us/dotnet/core/tools/custom-templates#pack-a-template-into-a-nuget-package-nupkg-file).
 
 ## Build and install
 

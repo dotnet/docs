@@ -13,8 +13,8 @@ The language version used to compile your app typically matches the runtime targ
 
 When *breaking changes* are introduced, they're classified as:
 
-- *Binary breaking change*: A binary breaking change means that your application or library has different behavior, including possibly crashing, when launched using a new runtime. You must recompile your app to incorporate these changes. The existing binary won't function correctly.
-- *Source breaking change*: A source breaking change means that the meaning of your source code has changed. You need to make source code edits before compiling your application with the latest language version. Your existing binary will run correctly with the newer host and runtime.
+- *Binary breaking change*: A binary breaking change causes different behavior, including possibly crashing, in your application or library when launched using a new runtime. You must recompile your app to incorporate these changes. The existing binary won't function correctly.
+- *Source breaking change*: A source breaking change changes the meaning of your source code. You need to make source code edits before compiling your application with the latest language version. Your existing binary will run correctly with the newer host and runtime. Note that for language syntax, a *source breaking change* is also a *behavioral change*, as defined in the [runtime breaking changes](../../core/compatibility/8.0.md).
 
 When a binary breaking change affects your app, you must recompile your app, but you don't need to edit any source code. When a source breaking change affects your app, the existing binary still runs correctly in environments with the updated runtime and libraries. However, you must make source changes to recompile with the new language version and runtime. If a change is both source breaking and binary breaking, you must recompile your application with the latest version and make source updates.
 
@@ -36,7 +36,7 @@ If you add the `in` modifier to the method, that's a binary breaking change:
 public double CalculateSquare(in double value) => value * value;
 ```
 
-Users must recompile any application that uses your library for the new library to work correctly.
+Users must recompile any application that uses the `CalculateSquare` method for the new library to work correctly.
 
 A *source breaking change* requires your users to change their code before they recompile. For example, consider this type:
 

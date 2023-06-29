@@ -87,7 +87,7 @@ wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
 Before running this script, you'll need to grant permission for this script to run as an executable:
 
 ```bash
-sudo chmod +x ./dotnet-install.sh
+chmod +x ./dotnet-install.sh
 ```
 
 The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) SDK version, which is .NET 6. To install the latest release, which may not be an (LTS) version, use the `--version latest` parameter.

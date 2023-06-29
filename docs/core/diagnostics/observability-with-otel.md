@@ -15,9 +15,9 @@ Observability in the context of a distributed system is the ability to monitor a
 
 Observability is commonly done using a combination of:
 
-- Logs - record individual operations, such as an incoming request, a failure in a specific component, or an order being placed.
-- Metrics - measuring counters and gauges such as number of completed requests, active requests, widgets that have been sold; or a histogram of the request latency.
-- Distributed tracing - track requests and activities across components in a distributed system so that you can see where time is spent and track down specific failures.
+- Logs, which record individual operations, such as an incoming request, a failure in a specific component, or an order being placed.
+- Metrics, which are measuring counters and gauges such as number of completed requests, active requests, widgets that have been sold; or a histogram of the request latency.
+- Distributed tracing, which tracks requests and activities across components in a distributed system so that you can see where time is spent and track down specific failures.
 
 Together, logs, metrics, and distributed tracing are known as the *3 pillars of observability*.
 
@@ -291,7 +291,7 @@ Select the `greetings_count` metric to see a graph of values.
 
 Grafana is a dashboarding product that can create dashboards and alerts based on Prometheus or other data sources.
 
-Download and install the OSS version of Grafana from [https://grafana.com/oss/grafana/](https://grafana.com/oss/grafana/) following the instructions for your platform. Once installed, Grafana is typically run on port 3000, so open [`http://localhost:3000`](http://localhost:3000) in your browser. You will need to log in; the default username and password are both `admin`.
+Download and install the OSS version of Grafana from [https://grafana.com/oss/grafana/](https://grafana.com/oss/grafana/) following the instructions for your platform. Once installed, Grafana is typically run on port 3000, so open `http://localhost:3000` in your browser. You will need to log in; the default username and password are both `admin`.
 
 From the hamburger menu choose connections, and then enter the text `prometheus` to select your endpoint type. Select **Create a Prometheus data source** to add a new data source.
 
@@ -358,7 +358,7 @@ Open the `AppSettings.json` file for our project, and add the following line, ch
 
 Restart the greeter process so that it can pick up the property change and start directing tracing information to Jaeger.
 
-Now, you should be able to see the Jaeger UI at [`http://localhost:16686/`](http://localhost:16686/) from a web browser.
+Now, you should be able to see the Jaeger UI at `http://localhost:16686/` from a web browser.
 
 [![Jaeger query for traces](./media/jaeger-search-results.thumb.png)](./media/jaeger-search-results.png#lightbox)
 

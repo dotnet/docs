@@ -73,12 +73,14 @@ Starting with .NET SDK 7.0.100 and .NET SDK 6.0.300, a policy has been put into 
 | 6.0.400 | 17.3 | 17.0 | Net6.0 | Net6.0 |
 | 7.0.100 | 17.4 | 17.3 | Net6.0 | Net7.0 |
 | 7.0.200 | 17.5 | 17.4 | Net7.0 | Net7.0 |
-| 7.0.300 | 17.6 | 17.4 | Net7.0 | Net7.0 |
+| 7.0.300 | 17.6 | 17.4<sup>1</sup>  | Net7.0 | Net7.0 |
 | 7.0.400 | 17.7 | 17.4 | Net7.0 | Net7.0 |
 | 8.0.100 | 17.8 | 17.7 | Net7.0 | Net8.0 |
 
 > [!NOTE]
 > The table depicts how these versioning rules will be applied going forward, starting with .NET SDK 7.0.100 and .NET SDK 6.0.300. It also depicts how the policy would have applied to previously shipped versions of the .NET SDK, had it been in place then. However, the requirements for previous versions of the SDK don't change &mdash; that is, the minimum required version of Visual Studio for .NET SDK 6.0.100 or 6.0.200 remains 16.10.
+
+> <sup>1</sup> A breaking change in 7.0.300 for Blazor and Razor development requires Visual Studio version 17.6 or newer. For more information, see [dotnet/razor issue 8718](https://github.com/dotnet/razor/issues/8718).
 
 To ensure consistent tooling, you should use `dotnet build` rather than `msbuild` to build your application when possible.
 

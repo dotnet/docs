@@ -35,7 +35,7 @@ You can use the `using` alias directive to alias any type, not just named types.
 > [!WARNING]
 > Interceptors are an experimental feature, available in preview mode with C# 12. The feature may be subject to breaking changes or removal in a future release. Therefore, it is not recommended for production or released applications.
 >
-> In order to use interceptors, you'll need to set the `<LangVersion>` element in your project file to `preview`.
+> In order to use interceptors, you'll need to set the `<Features>InterceptorsPreview<Features>` element in your project file. Without this flag, interceptors are disabled, even when other C# 12 features are enabled.
 
 An *interceptor* is a method which can declaratively substitute a call to an *interceptable* method with a call to itself at compile time. This substitution occurs by having the interceptor declare the source locations of the calls that it intercepts. This provides a limited facility to change the semantics of existing code by adding new code to a compilation, for example in a source generator.
 

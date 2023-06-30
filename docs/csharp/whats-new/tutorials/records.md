@@ -21,7 +21,7 @@ You'll need to set up your machine to run .NET 6 or later, including the C# 10 o
 
 ## Characteristics of records
 
-You define a *record* by declaring a type with the `record` keyword, modifying a `class` or `struct` declaration. Optionally, you can omit the `class` keyword to created a `record class`. A record follows value-based equality semantics. To enforce value semantics, the compiler generates several methods for your record type (both for `record class` types and `record struct` types):
+You define a *record* by declaring a type with the `record` keyword, modifying a `class` or `struct` declaration. Optionally, you can omit the `class` keyword to create a `record class`. A record follows value-based equality semantics. To enforce value semantics, the compiler generates several methods for your record type (both for `record class` types and `record struct` types):
 
 - An override of <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>.
 - A virtual `Equals` method whose parameter is the record type.

@@ -312,7 +312,9 @@ items:
     - name: Logging & tracing options
       href: ../../core/diagnostics/logging-tracing.md
     - name: ILogger Logging
-      href: ../../core/extensions/logging.md  
+      href: ../../core/extensions/logging.md
+    - name: Observability with OpenTelemetry
+      href: ../../core/diagnostics/observability-with-otel.md
     - name: Metrics
       items:
       - name: Overview

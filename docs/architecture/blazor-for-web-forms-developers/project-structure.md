@@ -4,9 +4,11 @@ description: Learn how the project structures of ASP.NET Web Forms and Blazor pr
 author: danroth27
 ms.author: daroth
 no-loc: [Blazor, WebAssembly]
-ms.date: 12/2/2021
+ms.date: 04/11/2022
 ---
 # Project structure for Blazor apps
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Despite their significant project structure differences, ASP.NET Web Forms and Blazor share many similar concepts. Here, we'll look at the structure of a Blazor project and compare it to an ASP.NET Web Forms project.
 
@@ -20,7 +22,7 @@ Blazor Server apps are .NET projects. The project file for the Blazor Server app
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
   </PropertyGroup>
 
 </Project>
@@ -32,16 +34,13 @@ The project file for a Blazor WebAssembly app looks slightly more involved (exac
 <Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.0" PrivateAssets="all" />
   </ItemGroup>
 
 </Project>
@@ -55,7 +54,7 @@ Although they're supported, individual assembly references are less common in .N
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
 </ItemGroup>
 ```
 
@@ -104,7 +103,6 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
@@ -169,11 +167,12 @@ The *_Imports.razor* files aren't Razor component files. Instead, they define a 
 
 ```razor
 @using System.Net.Http
-@using Microsoft.AspNetCore.Authorization
-@using Microsoft.AspNetCore.Components.Authorization
+@using System.Net.Http.Json
 @using Microsoft.AspNetCore.Components.Forms
 @using Microsoft.AspNetCore.Components.Routing
 @using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.Web.Virtualization
+@using Microsoft.AspNetCore.Components.WebAssembly.Http
 @using Microsoft.JSInterop
 @using BlazorApp1
 @using BlazorApp1.Shared
@@ -330,7 +329,7 @@ You can also access additional configuration options. The configuration dialog l
 
 ![Visual Studio 2022: Hot Reload configuration options from the "Tools > Options > Debugging > .NET/C++ Hot Reload" dialog.](media/project-structure/hot-reload-3.png)
 
-The "developer inner loop" has been greatly streamlined with Hot Reload. Using Hot Reload, a Blazor developer would typically need to restart and rerun the app after every change, navigating to the appropriate part of the app as required. With Hot Reload, changes can be made to the running app without the need to restart in most cases. Hot Reload even retains the state of pages, so there's no need to have to re-enter form values or otherwise get the app back where you need it.
+The "developer inner loop" has been greatly streamlined with Hot Reload. Without Hot Reload, a Blazor developer would typically need to restart and rerun the app after every change, navigating to the appropriate part of the app as required. With Hot Reload, changes can be made to the running app without the need to restart in most cases. Hot Reload even retains the state of pages, so there's no need to have to re-enter form values or otherwise get the app back where you need it.
 
 >[!div class="step-by-step"]
 >[Previous](hosting-models.md)

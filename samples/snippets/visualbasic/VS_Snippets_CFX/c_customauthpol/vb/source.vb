@@ -8,7 +8,6 @@ Imports System.Security.Permissions
 
 '</snippet1>
 
-<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 
 '<snippet2>
 
@@ -88,7 +87,7 @@ Public Class MyAuthorizationPolicy
                         Console.WriteLine("Claim added {0}", s)
                     Next s
                 Next c
-            Next cs ' Add claims to the evaluation context.    
+            Next cs ' Add claims to the evaluation context.
             evaluationContext.AddClaimSet(Me, New DefaultClaimSet(Me.Issuer, claims))
 
             ' Record that claims were added.
@@ -118,7 +117,7 @@ Public Class MyAuthorizationPolicy
             Return id_Value
         End Get
     End Property
-    ' This method returns a collection of action strings thet indicate the 
+    ' This method returns a collection of action strings that indicate the
     ' operations the specified username is allowed to call.
 
     ' Operations the specified username is allowed to call.

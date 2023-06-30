@@ -2,10 +2,12 @@
 title: Elasticsearch in cloud-native applications
 description: Learn about adding Elastic Search capabilities to cloud-native applications.
 author: robvet
-ms.date: 05/13/2020
+ms.date: 04/06/2022
 ---
 
 # Elasticsearch in a cloud-native app
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Elasticsearch is a distributed search and analytics system that enables complex search capabilities across diverse types of data. It's open source and widely popular. Consider how the following companies integrate Elasticsearch into their application:
 
@@ -52,8 +54,6 @@ This chapter presented a detailed look at data in cloud-native systems. We start
 - [Compensating Transaction pattern](/azure/architecture/patterns/compensating-transaction)
 
 - [Getting Behind the 9-Ball: Cosmos DB Consistency Levels Explained](https://blog.jeremylikness.com/blog/2018-03-23_getting-behind-the-9ball-cosmosdb-consistency-levels/)
-
-- [Exploring the different types of NoSQL Databases Part II](https://www.3pillarglobal.com/insights/exploring-the-different-types-of-nosql-databases)
 
 - [On RDBMS, NoSQL and NewSQL databases. Interview with John Ryan](http://www.odbms.org/blog/2018/03/on-rdbms-nosql-and-newsql-databases-interview-with-john-ryan/)
   

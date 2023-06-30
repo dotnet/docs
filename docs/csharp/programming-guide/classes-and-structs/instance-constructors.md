@@ -1,15 +1,14 @@
 ---
-title: "Instance constructors - C# programming guide"
+title: "Instance constructors"
 description: Instance constructors in C# create and initialize any instance member variables when you use the new expression to create an instance of a type.
-ms.date: 09/27/2021
+ms.date: 05/25/2023
 helpviewer_keywords: 
   - "constructors [C#], instance constructors"
   - "instance constructors [C#]"
-ms.assetid: 24663779-c1e5-4af4-a942-ca554e4c542d
 ---
 # Instance constructors (C# programming guide)
 
-You declare an instance constructor to specify the code that is executed when you create a new instance of a type with the [`new` expression](../../language-reference/operators/new-operator.md). To initialize a [static](../../language-reference/keywords/static.md) class or static variables in a non-static class, you can define a [static constructor](static-constructors.md).
+You declare an instance constructor to specify the code that is executed when you create a new instance of a type with the [`new` expression](../../language-reference/operators/new-operator.md). To initialize a [static](../../language-reference/keywords/static.md) class or static variables in a nonstatic class, you can define a [static constructor](static-constructors.md).
 
 As the following example shows, you can declare several instance constructors in one type:
 
@@ -32,7 +31,23 @@ That constructor initializes instance fields and properties according to the cor
 A *structure* type always provides a parameterless constructor as follows:
 
 - In C# 9.0 and earlier, that is an implicit parameterless constructor that produces the [default value](../../language-reference/builtin-types/default-values.md) of a type.
-- In C# 10 and later, that is either an implicit parameterless constructor that produces the default value of a type or an explicitly declared parameterless constructor. For more information, see the [Parameterless constructors and field initializers](../../language-reference/builtin-types/struct.md#parameterless-constructors-and-field-initializers) section of the [Structure types](../../language-reference/builtin-types/struct.md) article.
+- In C# 10 and later, that is either an implicit parameterless constructor that produces the default value of a type or an explicitly declared parameterless constructor. For more information, see the [Struct initialization and default values](../../language-reference/builtin-types/struct.md#struct-initialization-and-default-values) section of the [Structure types](../../language-reference/builtin-types/struct.md) article.
+
+## Primary constructors
+
+Beginning in C# 12, you can declare a *primary constructor* in classes and structs. You place any parameters in parentheses following the type name:
+
+:::code language="csharp" source="./snippets/instance-constructors/widgets/Program.cs" id="BasePrimaryConstructor":::
+
+The parameters to a primary constructor are in scope in the entire body of the declaring type. They can initialize properties or fields. They can be used as variables in methods or local functions. They can be passed to a base constructor.
+
+A primary constructor indicates that these parameters are necessary for any instance of a type. Any explicitly written constructor must use the `this(...)` initializer syntax to invoke the primary constructor. That ensures that the primary constructor parameters are definitely assigned by all constructors. For any `class` type, including `record class` types, the implicit parameterless constructor isn't emitted when a primary constructor is present. For any `struct` type, including `record struct` types, the implicit parameterless constructor is always emitted, and always initializes all fields, including primary constructor parameters, to the 0-bit pattern. If you write an explicit parameterless constructor, it must invoke the primary constructor. In that case, you can specify a different value for the primary constructor parameters. The following code shows examples of primary constructors.
+
+:::code language="csharp" source="./snippets/instance-constructors/widgets/Program.cs" id="DerivedPrimaryConstructor":::
+
+In `class` and `struct` types, primary constructor parameters are available anywhere in the body of the type. They can be used as member fields. When a primary constructor parameter is used, the compiler captures the constructor parameter in a private field with a compiler-generated name. If a primary constructor parameter isn't used in the body of the type, no private field is captured. That rule prevents accidentally allocating two copies of a primary constructor parameter that's passed to a base constructor.
+
+If the type includes the `record` modifier, the compiler instead synthesizes a public property with the same name as the primary constructor parameter.  For `record class` types, if a primary constructor parameter uses the same name as a base primary constructor, that property is a public property of the base `record class` type. It isn't duplicated in the derived `record class` type. These properties aren't generated for non-`record` types.
 
 ## See also
 
@@ -42,3 +57,4 @@ A *structure* type always provides a parameterless constructor as follows:
 - [Finalizers](finalizers.md)
 - [base](../../language-reference/keywords/base.md)
 - [this](../../language-reference/keywords/this.md)
+- [Primary constructors feature spec](~/_csharplang/proposals/primary-constructors.md)

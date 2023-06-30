@@ -7,12 +7,14 @@ ms.date: 11/17/2021
 
 # Traffic Control sample application
 
-In the first chapters, you've learned about basic Dapr concepts. You saw how Dapr can help you and your team construct distributed applications while reducing architectural and operational complexity. This chapter introduces the sample application that you'll use to explore the Dapr building blocks. The application targets .NET 6 and uses the latest C# 10 language features.
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
+In the first chapters, you've learned about basic Dapr concepts. You saw how Dapr can help you and your team construct distributed applications while reducing architectural and operational complexity. This chapter introduces the sample application that you'll use to explore the Dapr building blocks. The application targets .NET 7 and uses the latest C# 11 language features.
 
 > [!NOTE]
 > Download the sample application code from the [Dapr Traffic Control GitHub repo](https://github.com/EdwinVW/dapr-traffic-control). This repository contains a detailed description on how you can run the sample application on your machine.
 
-The Traffic Control sample application simulates a highway traffic control system. Its purpose is to detect speeding vehicles and send the offending driver a fine notice. These systems actually exist in real life and here's how they work. A set of cameras (one above each lane) is placed at the beginning and  end of highway stretch (say 10 kilometers) without on- or off-ramps. As a vehicle passes underneath a camera, it takes a photograph of the vehicle. Using Optical Character Recognition (OCR) software, it extracts the license number of the vehicle from the photo. Using the entry- and exit-timestamp of each vehicle, the system calculates the average speed of that vehicle. If the average speed is above the maximum speed limit for highway stretch, the system retrieves the driver information and automatically sends a fine notice.
+The Traffic Control sample application simulates a highway traffic control system. Its purpose is to detect speeding vehicles and send the offending driver a fine notice. These systems actually exist in real life and here's how they work. A set of cameras (one above each lane) is placed at the beginning and end of a highway stretch (say 10 kilometers) without on- or off-ramps. As a vehicle passes underneath a camera, it takes a photograph of the vehicle. Using Optical Character Recognition (OCR) software, it extracts the license number of the vehicle from the photo. Using the entry- and exit-timestamp of each vehicle, the system calculates the average speed of that vehicle. If the average speed is above the maximum speed limit for that highway stretch, the system retrieves the driver information and automatically sends a fine notice.
 
 Although the simulation is simple, responsibilities within the system are separated into several microservices. Figure 4.1 shows an overview of the services that are part of the application:
 

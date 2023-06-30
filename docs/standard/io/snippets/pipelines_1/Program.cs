@@ -1,52 +1,53 @@
-﻿using System;
-using System.Collections.Concurrent;
+﻿using System.Collections.Concurrent;
 using System.IO.Pipelines;
-using System.Threading;
 
-namespace Pipes
+namespace Pipes;
+
+class Program
 {
-    class Program
+    // Reverted   - Recommend formatting code for Tables -no Horizontal bar end code here
+    #region snippet
+    public static void Main(string[] args)
     {
-        // Reverted   - Recommend formatting code for Tables -no Horizontal bar end code here
-        #region snippet
-        public static void Main(string[] args)
-        {
-            var writeScheduler = new SingleThreadPipeScheduler();
-            var readScheduler = new SingleThreadPipeScheduler();
+        var writeScheduler = new SingleThreadPipeScheduler();
+        var readScheduler = new SingleThreadPipeScheduler();
 
-            // Tell the Pipe what schedulers to use and disable the SynchronizationContext.
-            var options = new PipeOptions(readerScheduler: readScheduler,
-                                          writerScheduler: writeScheduler,
-                                          useSynchronizationContext: false);
-            var pipe = new Pipe(options);
+        // Tell the Pipe what schedulers to use and disable the SynchronizationContext.
+        var options = new PipeOptions(readerScheduler: readScheduler,
+                                      writerScheduler: writeScheduler,
+                                      useSynchronizationContext: false);
+        var pipe = new Pipe(options);
+    }
+
+    // This is a sample scheduler that async callbacks on a single dedicated thread.
+    public class SingleThreadPipeScheduler : PipeScheduler
+    {
+        private readonly BlockingCollection<(Action<object> Action, object State)> _queue =
+         new BlockingCollection<(Action<object> Action, object State)>();
+        private readonly Thread _thread;
+
+        public SingleThreadPipeScheduler()
+        {
+            _thread = new Thread(DoWork);
+            _thread.Start();
         }
 
-        // This is a sample scheduler that async callbacks on a single dedicated thread.
-        public class SingleThreadPipeScheduler : PipeScheduler
+        private void DoWork()
         {
-            private readonly BlockingCollection<(Action<object> Action, object State)> _queue =
-             new BlockingCollection<(Action<object> Action, object State)>();
-            private readonly Thread _thread;
-
-            public SingleThreadPipeScheduler()
+            foreach (var item in _queue.GetConsumingEnumerable())
             {
-                _thread = new Thread(DoWork);
-                _thread.Start();
+                item.Action(item.State);
             }
+        }
 
-            private void DoWork()
-            {
-                foreach (var item in _queue.GetConsumingEnumerable())
-                {
-                    item.Action(item.State);
-                }
-            }
-
-            public override void Schedule(Action<object> action, object state)
+        public override void Schedule(Action<object?> action, object? state)
+        {
+            if (state is not null)
             {
                 _queue.Add((action, state));
             }
+            // else log the fact that _queue.Add was not called.
         }
-        #endregion
     }
+    #endregion
 }

@@ -8,7 +8,7 @@ ms.assetid: 58850b64-cb97-4136-be50-1f3bc7fc1da9
 ---
 # new constraint (C# Reference)
 
-The `new` constraint specifies that a type argument in a generic class declaration must have a public parameterless constructor. To use the `new` constraint, the type cannot be abstract.
+The `new` constraint specifies that a type argument in a generic class or method declaration must have a public parameterless constructor. To use the `new` constraint, the type cannot be abstract.
 
 Apply the `new` constraint to a type parameter when a generic class creates new instances of the type, as shown in the following example:
 
@@ -24,7 +24,7 @@ You can also use the `new` keyword to [create an instance of a type](../operator
 
 ## C# language specification
 
-For more information, see the [Type parameter constraints](~/_csharpstandard/standard/classes.md#1425-type-parameter-constraints) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Type parameter constraints](~/_csharpstandard/standard/classes.md#1525-type-parameter-constraints) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

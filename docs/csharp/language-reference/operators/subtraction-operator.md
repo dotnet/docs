@@ -1,7 +1,7 @@
 ---
-title: "- and -= operators - C# reference"
-description: "Learn about the C# subtraction operator and how it works with operands of numeric or delegate types."
-ms.date: 05/27/2019
+title: "- and -= operators - subtraction (minus) operators"
+description: "Learn about the C# subtraction (minus) operator and how it works with operands of numeric or delegate types."
+ms.date: 11/28/2022
 f1_keywords: 
   - "-_CSharpKeyword"
   - "-=_CSharpKeyword"
@@ -12,9 +12,8 @@ helpviewer_keywords:
   - "subtraction assignment operator [C#]"
   - "event unsubscription [C#]"
   - "-= operator [C#]"
-ms.assetid: 4de7a4fa-c69d-48e6-aff1-3130af970b2d
 ---
-# - and -= operators (C# reference)
+# - and -= operators - subtraction (minus)
 
 The `-` and `-=` operators are supported by the built-in [integral](../builtin-types/integral-numeric-types.md) and [floating-point](../builtin-types/floating-point-numeric-types.md) numeric types and [delegate](../builtin-types/reference-types.md#the-delegate-type) types.
 
@@ -28,11 +27,11 @@ For operands of the same [delegate](../builtin-types/reference-types.md#the-dele
 
   [!code-csharp-interactive[delegate removal](snippets/shared/SubtractionOperator.cs#DelegateRemoval)]
 
-- If the invocation list of the right-hand operand is not a proper contiguous sublist of the invocation list of the left-hand operand, the result of the operation is the left-hand operand. For example, removing a delegate that is not part of the multicast delegate does nothing and results in the unchanged multicast delegate.
+- If the invocation list of the right-hand operand isn't a proper contiguous sublist of the invocation list of the left-hand operand, the result of the operation is the left-hand operand. For example, removing a delegate that isn't part of the multicast delegate does nothing and results in the unchanged multicast delegate.
 
   [!code-csharp-interactive[delegate removal with no effect](snippets/shared/SubtractionOperator.cs#DelegateRemovalNoChange)]
 
-  The preceding example also demonstrates that during delegate removal delegate instances are compared. For example, delegates that are produced from evaluation of identical [lambda expressions](lambda-expressions.md) are not equal. For more information about delegate equality, see the [Delegate equality operators](~/_csharpstandard/standard/expressions.md#11119-delegate-equality-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+  The preceding example also demonstrates that during delegate removal delegate instances are compared. For example, delegates that are produced from evaluation of identical [lambda expressions](lambda-expressions.md) aren't equal. For more information about delegate equality, see the [Delegate equality operators](~/_csharpstandard/standard/expressions.md#12129-delegate-equality-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 - If the left-hand operand is `null`, the result of the operation is `null`. If the right-hand operand is `null`, the result of the operation is the left-hand operand.
 
@@ -66,11 +65,11 @@ You also use the `-=` operator to specify an event handler method to remove when
 
 ## Operator overloadability
 
-A user-defined type can [overload](operator-overloading.md) the `-` operator. When a binary `-` operator is overloaded, the `-=` operator is also implicitly overloaded. A user-defined type cannot explicitly overload the `-=` operator.
+A user-defined type can [overload](operator-overloading.md) the `-` operator. When a binary `-` operator is overloaded, the `-=` operator is also implicitly overloaded. A user-defined type can't explicitly overload the `-=` operator.
 
 ## C# language specification
 
-For more information, see the [Unary minus operator](~/_csharpstandard/standard/expressions.md#1183-unary-minus-operator) and [Subtraction operator](~/_csharpstandard/standard/expressions.md#1196-subtraction-operator) sections of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Unary minus operator](~/_csharpstandard/standard/expressions.md#1293-unary-minus-operator) and [Subtraction operator](~/_csharpstandard/standard/expressions.md#12106-subtraction-operator) sections of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

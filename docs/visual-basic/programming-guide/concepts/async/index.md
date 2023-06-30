@@ -24,7 +24,6 @@ The following table shows typical areas where asynchronous programming improves 
 |Working with files|<xref:Windows.Storage.StorageFile>, <xref:System.IO.StreamWriter>, <xref:System.IO.StreamReader>, <xref:System.Xml.XmlReader>|
 |Working with images|<xref:Windows.Media.Capture.MediaCapture>, <xref:Windows.Graphics.Imaging.BitmapEncoder>, <xref:Windows.Graphics.Imaging.BitmapDecoder>|
 |WCF programming|[Synchronous and Asynchronous Operations](../../../../framework/wcf/synchronous-and-asynchronous-operations.md)|
-|||
 
 Asynchrony proves especially valuable for applications that access the UI thread because all UI-related activity usually shares one thread. If any process is blocked in a synchronous application, all are blocked. Your application stops responding, and you might conclude that it has failed when instead it's just waiting.
 
@@ -52,7 +51,7 @@ Async Function AccessTheWebAsync() As Task(Of Integer)
         '  - getStringTask stores the task we get from the call to GetStringAsync.
         '  - Task(Of String) means it is a task which returns a String when it is done.
         Dim getStringTask As Task(Of String) =
-            client.GetStringAsync("https://docs.microsoft.com/dotnet")
+            client.GetStringAsync("https://learn.microsoft.com/dotnet")
         ' You can do other work here that doesn't rely on the string from GetStringAsync.
         DoIndependentWork()
         ' The Await operator suspends AccessTheWebAsync.
@@ -242,7 +241,6 @@ You can ignore the convention where an event, base class, or interface contract 
 |Async Cancellation: Bridging between the .NET Framework and the Windows Runtime|Shows how to bridge between Task types in the .NET Framework and IAsyncOperations in the Windows Runtime so that you can use <xref:System.Threading.CancellationTokenSource> with a Windows Runtime method.|[Async Sample: Bridging between .NET and Windows Runtime (AsTask & Cancellation)](https://code.msdn.microsoft.com/Async-Sample-Bridging-9479eca3)|
 |[Using Async for File Access (Visual Basic)](using-async-for-file-access.md)|Lists and demonstrates the benefits of using async and await to access files.||
 |[Task-based Asynchronous Pattern (TAP)](../../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md)|Describes a new pattern for asynchrony in the .NET Framework. The pattern is based on the <xref:System.Threading.Tasks.Task> and [Task(Of TResult)](xref:System.Threading.Tasks.Task%601) types.||
-|[Async Videos on Channel 9](https://channel9.msdn.com/search?term=async+&type=All)|Provides links to a variety of videos about async programming.||
 
 ## <a name="BKMK_CompleteExample"></a> Complete Example
 

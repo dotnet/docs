@@ -1,9 +1,11 @@
 ---
-title: A Tour of C# - Major language areas
+title: A tour of C# - Major language areas
 description: New to C#? Learn the basics of the language. This article contains a survey of major language features.
-ms.date: 08/23/2021
+ms.date: 03/14/2022
 ---
-# Major language areas
+# C# major language areas
+
+This article introduces the main features of the C# language.
 
 ## Arrays, collections, and LINQ
 
@@ -46,7 +48,7 @@ The `foreach` statement can be used to enumerate the elements of any collection.
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="EnumerateArray":::
 
-The `foreach` statement uses the <xref:System.Collections.Generic.IEnumerable%601> interface, so can work with any collection.
+The `foreach` statement uses the <xref:System.Collections.Generic.IEnumerable%601> interface, so it can work with any collection.
 
 ## String interpolation
 
@@ -54,11 +56,11 @@ C# [***string interpolation***](../language-reference/tokens/interpolated.md) en
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="StringInterpolation":::
 
-An interpolated string is declared using the `$` token. String interpolation evaluates the expressions between `{` and `}`, then converts the result to a `string`, and replaces the text between the brackets with the string result of the expression. The `:` in the first expression, `{weatherData.Date:MM-DD-YYYY}` specifies the *format string*. In the preceding example, it specifies that the date should be printed in "MM-DD-YYYY" format.
+An interpolated string is declared using the `$` token. String interpolation evaluates the expressions between `{` and `}`, then converts the result to a `string`, and replaces the text between the brackets with the string result of the expression. The `:` in the first expression, `{weatherData.Date:MM-dd-yyyy}` specifies the *format string*. In the preceding example, it specifies that the date should be printed in "MM-dd-yyyy" format.
 
 ## Pattern matching
 
-The C# language provides [***pattern matching***](../fundamentals/functional/pattern-matching.md) expressions to query the state of an object and execute code based on that state. You can inspect types and the values of properties and fields to determine which action to take. The `switch` expression is the primary expression for pattern matching.
+The C# language provides [***pattern matching***](../fundamentals/functional/pattern-matching.md) expressions to query the state of an object and execute code based on that state. You can inspect types and the values of properties and fields to determine which action to take. You can inspect the elements of a list or array as well. The `switch` expression is the primary expression for pattern matching.
 
 ## Delegates and lambda expressions
 
@@ -70,7 +72,7 @@ The following example declares and uses a delegate type named `Function`.
 
 An instance of the `Function` delegate type can reference any method that takes a `double` argument and returns a `double` value. The `Apply` method applies a given `Function` to the elements of a `double[]`, returning a `double[]` with the results. In the `Main` method, `Apply` is used to apply three different functions to a `double[]`.
 
-A delegate can reference either a static method (such as `Square` or `Math.Sin` in the previous example) or an instance method (such as `m.Multiply` in the previous example). A delegate that references an instance method also references a particular object, and when the instance method is invoked through the delegate, that object becomes `this` in the invocation.
+A delegate can reference either a lambda expression to create an anonymous function (such as `(x) => x * x` in the previous example), a static method (such as `Math.Sin` in the previous example) or an instance method (such as `m.Multiply` in the previous example). A delegate that references an instance method also references a particular object, and when the instance method is invoked through the delegate, that object becomes `this` in the invocation.
 
 Delegates can also be created using anonymous functions or lambda expressions, which are "inline methods" that are created when declared. Anonymous functions can see the local variables of the surrounding methods. The following example doesn't create a class:
 
@@ -92,13 +94,13 @@ This small sample shows the major features for asynchronous programming:
 
 ## Attributes
 
-Types, members, and other entities in a C# program support modifiers that control certain aspects of their behavior. For example, the accessibility of a method is controlled using the `public`, `protected`, `internal`, and `private` modifiers. C# generalizes this capability such that user-defined types of declarative information can be attached to program entities and retrieved at run-time. Programs specify this declarative information by defining and using [***attributes***](../programming-guide/concepts/attributes/index.md).
+Types, members, and other entities in a C# program support modifiers that control certain aspects of their behavior. For example, the accessibility of a method is controlled using the `public`, `protected`, `internal`, and `private` modifiers. C# generalizes this capability such that user-defined types of declarative information can be attached to program entities and retrieved at run-time. Programs specify this declarative information by defining and using [***attributes***](/dotnet/csharp/advanced-topics/reflection-and-attributes).
 
 The following example declares a `HelpAttribute` attribute that can be placed on program entities to provide links to their associated documentation.
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="DefineAttribute":::
 
-All attribute classes derive from the <xref:System.Attribute> base class provided by the .NET library. Attributes can be applied by giving their name, along with any arguments, inside square brackets just before the associated declaration. If an attribute’s name ends in `Attribute`, that part of the name can be omitted when the attribute is referenced. For example, the `HelpAttribute` can be used as follows.
+All attribute classes derive from the <xref:System.Attribute> base class provided by the .NET library. Attributes can be applied by giving their name, along with any arguments, inside square brackets just before the associated declaration. If an attribute's name ends in `Attribute`, that part of the name can be omitted when the attribute is referenced. For example, the `HelpAttribute` can be used as follows.
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="UseAttributes":::
 

@@ -104,7 +104,7 @@ During execution a workflow in [!INCLUDE[netfx_current_short](../../../includes/
 |[2028 - CacheRootMetadataStop](2028-cacherootmetadatastop.md)|Verbose|CacheRootMetadata stopped on activity %1.|WFRuntime|  
 |[2029 - CompileVbExpressionStop](2029-compilevbexpressionstop.md)|Verbose|Finished compiling VB expression.|WFRuntime|  
 |[2576 - TryCatchExceptionFromTry](2576-trycatchexceptionfromtry.md)|Information|The TryCatch activity '%1' has caught an exception of type '%2'.|WFActivities|  
-|[2577 - TryCatchExceptionDuringCancelation](2577-trycatchexceptionduringcancelation.md)|Warning|A child activity of the TryCatch activity '%1' has thrown an exception during cancelation.|WFActivities|  
+|[2577 - TryCatchExceptionDuringCancelation](2577-trycatchexceptionduringcancelation.md)|Warning|A child activity of the TryCatch activity '%1' has thrown an exception during cancellation.|WFActivities|  
 |[2578 - TryCatchExceptionFromCatchOrFinally](2578-trycatchexceptionfromcatchorfinally.md)|Warning|A Catch or Finally activity that is associated with the TryCatch activity '%1' has thrown an exception.|WFActivities|  
 |[3501 - InferredContractDescription](3501-inferredcontractdescription.md)|Information|ContractDescription with Name='%1' and Namespace='%2' has been inferred from WorkflowService.|WFServices|  
 |[3502 - InferredOperationDescription](3502-inferredoperationdescription.md)|Information|OperationDescription with Name='%1' in contract '%2' has been inferred from WorkflowService. IsOneWay=%3.|WFServices|  

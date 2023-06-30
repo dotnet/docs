@@ -558,7 +558,7 @@ public class Color
 
 ## Iterators
 
-An *iterator* is used to perform a custom iteration over a collection. An iterator can be a method or a `get` accessor. An iterator uses a [yield return](../../language-reference/keywords/yield.md) statement to return each element of the collection one at a time.
+An *iterator* is used to perform a custom iteration over a collection. An iterator can be a method or a `get` accessor. An iterator uses a [yield return](../../language-reference/statements/yield.md) statement to return each element of the collection one at a time.
 
 You call an iterator by using a [foreach](../../language-reference/statements/iteration-statements.md#the-foreach-statement) statement. Each iteration of the `foreach` loop calls the iterator. When a `yield return` statement is reached in the iterator, an expression is returned, and the current location in code is retained. Execution is restarted from that location the next time that the iterator is called.
 

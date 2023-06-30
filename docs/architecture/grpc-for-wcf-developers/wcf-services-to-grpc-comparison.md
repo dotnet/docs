@@ -6,6 +6,8 @@ ms.date: 12/14/2021
 
 # Comparing WCF to gRPC
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 The previous chapter gave you a good look at Protobuf and how gRPC handles messages. Before you work through a detailed conversion from Windows Communication Foundation (WCF) to gRPC, it's important to know how the features available in WCF are handled in gRPC and what workarounds you can use when there's no gRPC equivalent. In particular, this chapter will cover the following subjects:
 
 - Operations and methods
@@ -17,7 +19,7 @@ The previous chapter gave you a good look at Protobuf and how gRPC handles messa
 
 ## gRPC example
 
-When you create a new ASP.NET Core 6.0 gRPC project from Visual Studio 2022 or the command line, the gRPC equivalent of "Hello World" is generated for you. It consists of a `greeter.proto` file that defines the service and its messages, and a `GreeterService.cs` file with an implementation of the service.
+When you create a new ASP.NET Core 7.0 gRPC project from Visual Studio 2022 or the command line, the gRPC equivalent of "Hello World" is generated for you. It consists of a `greeter.proto` file that defines the service and its messages, and a `GreeterService.cs` file with an implementation of the service.
 
 ```protobuf
 syntax = "proto3";

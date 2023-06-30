@@ -62,7 +62,7 @@ This topic outlines the basic steps required to create a Windows Communication F
   
      This example explicitly specifies endpoints in the configuration file. If you do not add any endpoints to the service, the runtime adds default endpoints for you. For more information about default endpoints, bindings, and behaviors see [Simplified Configuration](../simplified-configuration.md) and [Simplified Configuration for WCF Services](../samples/simplified-configuration-for-wcf-services.md).  
   
-11. To make sure the service is hosted correctly, open an instance of Internet Explorer and browse to the service's URL: `http://localhost/IISHostedCalc/Service.svc`  
+11. To make sure the service is hosted correctly, open a browser and browse to the service's URL: `http://localhost/IISHostedCalc/Service.svc`  
   
 ## Example  
 

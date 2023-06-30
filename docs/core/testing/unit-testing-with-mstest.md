@@ -98,7 +98,7 @@ The following outline shows the final solution layout:
 Change to the *unit-testing-using-mstest* directory, and run [`dotnet sln add`](../tools/dotnet-sln.md):
 
 ```dotnetcli
-dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj
+dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
 ```
 
 ## Create the first test

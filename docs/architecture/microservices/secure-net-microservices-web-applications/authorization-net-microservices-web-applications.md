@@ -6,6 +6,8 @@ ms.date: 01/30/2020
 ---
 # About authorization in .NET microservices and web applications
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 After authentication, ASP.NET Core Web APIs need to authorize access. This process allows a service to make APIs available to some authenticated users, but not to all. [Authorization](/aspnet/core/security/authorization/introduction) can be done based on users' roles or based on custom policy, which might include inspecting claims or other heuristics.
 
 Restricting access to an ASP.NET Core MVC route is as easy as applying an Authorize attribute to the action method (or to the controller's class if all the controller's actions require authorization), as shown in following example:
@@ -106,19 +108,39 @@ In addition to registering custom policy requirements with `AddPolicy` calls, yo
 
 An example of a custom authorization requirement and handler for checking a user's age (based on a `DateOfBirth` claim) is available in the ASP.NET Core [authorization documentation](https://docs.asp.net/en/latest/security/authorization/policies.html).
 
+## Authorization and minimal apis
+
+ASP.NET supports minimal APIs as an alternative to controller-based APIs. Authorization policies are the recommended way to configure authorization for minimal APIs, as this example demonstrates:
+
+```csharp
+// Program.cs
+builder.Services.AddAuthorizationBuilder()
+  .AddPolicy("admin_greetings", policy =>
+        policy
+            .RequireRole("admin")
+            .RequireScope("greetings_api"));
+
+// build the app
+
+app.MapGet("/hello", () => "Hello world!")
+  .RequireAuthorization("admin_greetings");
+```
+
 ## Additional resources
 
 - **ASP.NET Core Authentication** \
-  [https://docs.microsoft.com/aspnet/core/security/authentication/identity](/aspnet/core/security/authentication/identity)
+  [https://learn.microsoft.com/aspnet/core/security/authentication/identity](/aspnet/core/security/authentication/identity)
 
 - **ASP.NET Core Authorization** \
-  [https://docs.microsoft.com/aspnet/core/security/authorization/introduction](/aspnet/core/security/authorization/introduction)
+  [https://learn.microsoft.com/aspnet/core/security/authorization/introduction](/aspnet/core/security/authorization/introduction)
 
 - **Role-based Authorization** \
-  [https://docs.microsoft.com/aspnet/core/security/authorization/roles](/aspnet/core/security/authorization/roles)
+  [https://learn.microsoft.com/aspnet/core/security/authorization/roles](/aspnet/core/security/authorization/roles)
 
 - **Custom Policy-Based Authorization** \
-  [https://docs.microsoft.com/aspnet/core/security/authorization/policies](/aspnet/core/security/authorization/policies)
+  [https://learn.microsoft.com/aspnet/core/security/authorization/policies](/aspnet/core/security/authorization/policies)
+
+- **Authentication and authorization in minimal APIs** \ [https://learn.microsoft.com/aspnet/core/fundamentals/minimal-apis/security](/aspnet/core/fundamentals/minimal-apis/security)
 
 >[!div class="step-by-step"]
 >[Previous](index.md)

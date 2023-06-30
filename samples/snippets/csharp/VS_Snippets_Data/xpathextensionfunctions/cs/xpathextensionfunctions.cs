@@ -42,7 +42,7 @@ namespace XPathExtensionFunctions
                     context.AddNamespace("Extensions", "http://xpathExtensions");
 
                     // Create the XPath expression using extension function to select nodes
-                    // that contain 2 occurences of the character entered by user.
+                    // that contain 2 occurrences of the character entered by user.
                     XPathExpression xpath = XPathExpression.Compile(
                         "/Tasks/Name[Extensions:CountChar(., $charToCount) = 2]");
 

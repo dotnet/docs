@@ -1,11 +1,11 @@
 ---
 title: Create an Azure account
 description: To use Azure, you need an Azure account.  This article covers the three most common ways to sign up for an Azure account.
-ms.date: 11/30/2020
 ms.topic: conceptual
-ms.custom: devx-track-dotnet
-ms.author: daberry
-author: daberry
+ms.custom: devx-track-dotnet, engagement-fy23
+ms.date: 3/23/2023
+author: alexwolfmsft
+ms.author: alexwolf
 recommendations: false
 ---
 
@@ -21,7 +21,11 @@ If you have a Visual Studio subscription, your subscription includes credits for
 
 You can create an [Azure account for free](https://azure.microsoft.com/free/dotnet/) and receive 12 months of popular services for free and a $200 credit to explore Azure for 30 days.
 
-## Option 3: Use a corporate account
+## Option 3: Sign up for a pay-as-you-go account
+
+You can also create a [pay-as-you-go Azure account](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/). This option includes monthly amounts of select services for free, and charges you for what you use beyond the free limits. There is no upfront commitment and you can cancel anytime.
+
+## Option 4: Use a corporate account
 
 If you are using Azure at work, talk to your company's cloud administrator to get your Azure credentials and then sign in to your account with the [Azure Portal](https://portal.azure.com).
 

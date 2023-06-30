@@ -6,7 +6,7 @@ ms.date: 02/04/2022
 
 # Tutorial: Hello world
 
-This overview ties into the [Hello World sample application](https://github.com/dotnet/orleans/tree/main/samples/HelloWorld).
+This overview ties into the [Hello World sample application](https://github.com/dotnet/samples/tree/main/orleans/HelloWorld).
 
 The main concepts of Orleans involve a silo, a client, and one or more grains.
 Creating an Orleans app involves configuring the silo, configuring the client, and writing the grains.
@@ -19,18 +19,21 @@ A list of all of the options can be found [here.](../host/configuration-guide/li
 ```csharp
 static async Task<ISiloHost> StartSilo()
 {
-    var builder = new SiloHostBuilder()
-        .UseLocalhostClustering()
-        .Configure<ClusterOptions>(options =>
+    var builder = new HostBuilder()
+        UseOrleans(c =>
         {
-            options.ClusterId = "dev";
-            options.ServiceId = "HelloWorldApp";
-        })
-        .Configure<EndpointOptions>(
-            options => options.AdvertisedIPAddress = IPAddress.Loopback)
-        .ConfigureApplicationParts(
-            parts => parts.AddApplicationPart(typeof(HelloGrain).Assembly).WithReferences())
-        .ConfigureLogging(logging => logging.AddConsole());
+            c.UseLocalhostClustering()
+                .Configure<ClusterOptions>(options =>
+                {
+                    options.ClusterId = "dev";
+                    options.ServiceId = "HelloWorldApp";
+                })
+                .Configure<EndpointOptions>(
+                    options => options.AdvertisedIPAddress = IPAddress.Loopback)
+                .ConfigureApplicationParts(
+                    parts => parts.AddApplicationPart(typeof(HelloGrain).Assembly).WithReferences())
+                .ConfigureLogging(logging => logging.AddConsole());
+        });
 
     var host = builder.Build();
     await host.StartAsync();
@@ -129,4 +132,4 @@ At this point, `OrleansClient` creates a reference to the `IHello` grain and cal
 
 ## Running the sample app
 
-To run the sample app, refer to the [Readme](https://github.com/dotnet/orleans/tree/main/samples/HelloWorld).
+To run the sample app, refer to the [Readme](https://github.com/dotnet/samples/tree/main/orleans/HelloWorld).

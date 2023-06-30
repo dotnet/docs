@@ -92,6 +92,8 @@ HRESULT OpenVirtualProcess(
  **Library:** CorGuids.lib  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+
+ **.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]
   
 ## See also
 

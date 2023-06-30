@@ -1,18 +1,18 @@
 # This is a basic workflow to help you get started with Actions
 
-name: 'target supported version'
+name: "target supported version"
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the default branch
   schedule:
-  - cron: '0 0 1 * *'
+    - cron: "0 0 1 * *"
   workflow_dispatch:
     inputs:
       reason:
-        description: 'The reason for running the workflow'
+        description: "The reason for running the workflow"
         required: true
-        default: 'Manual run'
+        default: "Manual run"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -27,10 +27,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3
 
       # Runs a single command using the runners shell
-      - name: 'Print manual run reason'
+      - name: "Print manual run reason"
         if: ${{ github.event_name == 'workflow_dispatch' }}
         run: |
           echo 'Reason: ${{ github.event.inputs.reason }}'

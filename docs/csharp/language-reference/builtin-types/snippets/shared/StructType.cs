@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace builtin_types
+﻿namespace builtin_types
 {
     public static class StructType
     {
@@ -9,7 +7,6 @@ namespace builtin_types
             without_new.StructWithoutNew.Main();
             parameterless_constructor.Example.Main();
             field_initializer.Example.Main();
-            field_initializer_no_constructor.Example.Main();
             with_expression.Example.Main();
         }
 
@@ -126,6 +123,23 @@ namespace builtin_types
             public ReadOnlySpan<double> Values { get; }
         }
         // </SnippetReadonlyRef>
+
+        // <SnippetRefField>
+        public ref struct RefFieldExample
+        {
+            private ref int number;
+
+            public int GetNumber()
+            {
+                if (System.Runtime.CompilerServices.Unsafe.IsNullRef(ref number))
+                {
+                    throw new InvalidOperationException("The number ref field is not initialized.");
+                }
+
+                return number;
+            }
+        }
+        // </SnippetRefField>
     }
 
     namespace parameterless_constructor
@@ -185,6 +199,11 @@ namespace builtin_types
                     Value = value;
                     Description = description;
                 }
+
+                public Measurement(string description)
+                {
+                    Description = description;
+                }
             
                 public double Value { get; init; }
                 public string Description { get; init; } = "Ordinary measurement";
@@ -202,36 +221,8 @@ namespace builtin_types
 
                 var m3 = default(Measurement);
                 Console.WriteLine(m3);  // output: 0 ()
-}
+            }
             // </FieldInitializer>
-        }
-    }
-
-    namespace field_initializer_no_constructor
-    {
-        public static class Example
-        {
-            // <FieldInitializerNoConstructor>
-            public struct Coords
-            {
-                public double X = double.NaN;
-                public double Y = double.NaN;
-            
-                public override string ToString() => $"({X}, {Y})";
-            }
-
-            public static void Main()
-            {
-                var p1 = new Coords();
-                Console.WriteLine(p1);  // output: (NaN, NaN)
-
-                var p2 = default(Coords);
-                Console.WriteLine(p2);  // output: (0, 0)
-
-                var ps = new Coords[3];
-                Console.WriteLine(string.Join(", ", ps));  // output: (0, 0), (0, 0), (0, 0)
-            }
-            // </FieldInitializerNoConstructor>
         }
     }
 

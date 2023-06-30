@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: System.Drawing.Common only supported on Windows"
-description: Learn about the .NET 6 breaking change where the System.Drawing.Common package is no longer support on non-Windows operating systems.
-ms.date: 07/27/2021
+description: Learn about the .NET 6 breaking change where the System.Drawing.Common package is no longer supported on non-Windows operating systems.
+ms.date: 11/08/2022
 ---
 # System.Drawing.Common only supported on Windows
 
@@ -54,11 +54,13 @@ From analysis of NuGet packages, we've observed that `System.Drawing.Common` is 
 
 To use these APIs for cross-platform apps, migrate to one of the following libraries:
 
-- [ImageSharp](https://github.com/SixLabors/ImageSharp)
+- [ImageSharp](https://sixlabors.com/products/imagesharp)
 - [SkiaSharp](https://github.com/mono/SkiaSharp)
-- [Microsoft.Maui.Graphics](https://github.com/dotnet/Microsoft.Maui.Graphics)
+- [Microsoft.Maui.Graphics](/dotnet/maui/user-interface/graphics/)
 
-Alternatively, you can enable support for non-Windows platforms in .NET 6 by setting the `System.Drawing.EnableUnixSupport` [runtime configuration switch](../../../runtime-config/index.md) to `true` in the *runtimeconfig.json* file:
+Alternatively, you can enable support for non-Windows platforms in .NET 6 by setting the `System.Drawing.EnableUnixSupport` [runtime configuration switch](../../../runtime-config/index.md) to `true` in the *runtimeconfig.json* file.
+
+*runtimeconfig.template.json* template file:
 
 ```json
 {
@@ -68,7 +70,22 @@ Alternatively, you can enable support for non-Windows platforms in .NET 6 by set
 }
 ```
 
-This configuration switch was added to give cross-platform apps that depend heavily on this package time to migrate to more modern libraries. However, non-Windows bugs will not be fixed. In addition, this switch has been removed in .NET 7.
+*[appname].runtimeconfig.json* output file:
+
+```json
+{
+   "runtimeOptions": {
+      "configProperties": {
+         "System.Drawing.EnableUnixSupport": true
+      }
+   }
+}
+```
+
+> [!NOTE]
+>
+> - This configuration switch was added to give cross-platform apps that depend heavily on this package time to migrate to more modern libraries. However, non-Windows bugs will not be fixed.
+> - This switch is only available in .NET 6 and was removed in .NET 7. For more information, see [System.Drawing.Common config switch removed](../7.0/system-drawing.md).
 
 ## Affected APIs
 

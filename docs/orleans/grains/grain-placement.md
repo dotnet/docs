@@ -1,12 +1,12 @@
 ---
 title: Grain placement
 description: Learn about grain placements in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 02/23/2023
 ---
 
 # Grain placement
 
-Orleans ensures that when a grain call is made there is an instance of that grain available in memory on some server in the cluster to handle the request. If the grain is not currently active in the cluster, Orleans picks one of the servers to activate the grain on. This is called grain placement. Placement is also one way that load is balanced: even placement of busy grains helps to even the workload across the cluster.
+Orleans ensures that when a grain call is made there is an instance of that grain available in memory on some server in the cluster to handle the request. If the grain is not currently active in the cluster, Orleans picks one of the servers to activate the grain on. This is called _grain placement_. Placement is also one way that load is balanced: even placement of busy grains helps to even the workload across the cluster.
 
 The placement process in Orleans is fully configurable: developers can choose from a set of out-of-the-box placement policies such as random, prefer-local, and load-based, or custom logic can be configured. This allows for full flexibility in deciding where grains are created. For example, grains can be placed on a server close to resources which they need to operate on or close to other grains with which they communicate. By default, Orleans will pick a random compatible server.
 
@@ -14,51 +14,70 @@ The placement strategy which Orleans uses can be configured globally or per-grai
 
 ## Random placement
 
-A server is randomly selected from the set of compatible servers. This placement strategy is configured by adding the `[RandomPlacement]` attribute to a grain.
+A server is randomly selected from the compatible servers in the cluster. This placement strategy is configured by adding the <xref:Orleans.Placement.RandomPlacementAttribute> to a grain.
 
 ## Local placement
 
-If the local server is compatible, select the local server, otherwise select a random server. This placement strategy is configured by adding the `[PreferLocalPlacement]` attribute to a grain.
+If the local server is compatible, select the local server, otherwise select a random server. This placement strategy is configured by adding the <xref:Orleans.Placement.PreferLocalPlacementAttribute> to a grain.
 
 ## Hash-based placement
 
 Hash the grain id to a non-negative integer and modulo it with the number of compatible servers. Select the corresponding server from the list of compatible servers ordered by server address. Note that this is not guaranteed to remain stable as the cluster membership changes. Specifically, adding, removing, or restarting servers can alter the server selected for a given grain id. Because grains placed using this strategy are registered in the grain directory, this change in placement decision as membership changes typically doesn't have a noticeable effect.
 
-This placement strategy is configured by adding the `[HashBasedPlacement]` attribute to a grain.
+This placement strategy is configured by adding the <xref:Orleans.Placement.HashBasedPlacementAttribute> to a grain.
 
 ## Activation-count-based placement
 
-This placement strategy intends to place new grain activations on the least heavily loaded server based on the number of recently busy grains. It includes a mechanism in which all servers periodically publish their total activation count to all other servers. The placement director then selects a server that is predicted to have the fewest activations by examining the most recently reported activation count and a making prediction of the current activation count based upon the recent activation count made by the placement director on the current server. The director selects several servers at random when making this prediction, in an attempt to avoid multiple separate servers overloading the same server. By default, two servers are selected at random, but this value is configurable via `ActivationCountBasedPlacementOptions`.
+This placement strategy intends to place new grain activations on the least heavily loaded server based on the number of recently busy grains. It includes a mechanism in which all servers periodically publish their total activation count to all other servers. The placement director then selects a server that is predicted to have the fewest activations by examining the most recently reported activation count and a making prediction of the current activation count based upon the recent activation count made by the placement director on the current server. The director selects several servers at random when making this prediction, in an attempt to avoid multiple separate servers overloading the same server. By default, two servers are selected at random, but this value is configurable via <xref:Orleans.Configuration.ActivationCountBasedPlacementOptions>.
 
 This algorithm is based on the thesis [*The Power of Two Choices in Randomized Load Balancing* by Michael David Mitzenmacher](https://www.eecs.harvard.edu/~michaelm/postscripts/mythesis.pdf), and is also used in Nginx for distributed load balancing, as described in the article [*NGINX and the "Power of Two Choices" Load-Balancing Algorithm*](https://www.nginx.com/blog/nginx-power-of-two-choices-load-balancing-algorithm/).
 
-This placement strategy is configured by adding the `[ActivationCountBasedPlacement]` attribute to a grain.
+This placement strategy is configured by adding the <xref:Orleans.Placement.ActivationCountBasedPlacementAttribute> to a grain.
 
 ## Stateless worker placement
 
-This is a special placement strategy used by [*stateless worker* grains](../grains/stateless-worker-grains.md).
-This operates almost identically to `PreferLocalPlacement` except that each server can have multiple activations of the same grain and the grain is not registered in the grain directory since there is no need.
+Stateless worker placement is a special placement strategy used by [*stateless worker* grains](../grains/stateless-worker-grains.md). This placement operates almost identically to <xref:Orleans.Runtime.PreferLocalPlacement> except that each server can have multiple activations of the same grain and the grain is not registered in the grain directory since there's no need.
 
-This placement strategy is configured by adding the `[StatelessWorker]` attribute to a grain.
+This placement strategy is configured by adding the <xref:Orleans.Concurrency.StatelessWorkerAttribute> to a grain.
+
+## Silo-role based placement
+
+A deterministic placement strategy that places grains on silos with a specific role. This placement strategy is configured by adding the <xref:Orleans.Placement.SiloRoleBasedPlacementAttribute> to a grain.
+
+## Choose a placement strategy
+
+Choosing the appropriate grain placement strategy, beyond the defaults that Orleans provides, requires monitoring and developer evaluation. The choice of placement strategy should be based on the size and complexity of the app, workload characteristics, and deployment environment.
+
+Random placement relies on the [Law of Large Numbers](https://en.wikipedia.org/wiki/Law_of_large_numbers), so it's usually a good default when there is an unpredictable load spread across a large number of grains (10,000 plus).
+
+Activation-count-based placement also has a random element to it, relying on the Power of Two Choices principle, which is a commonly used algorithm for distributed load balancing and is used in popular load balancers. Silos frequently publish run-time statistics to other silos in the cluster, including:
+
+- Available memory, total physical memory, and memory usage.
+- CPU usage.
+- Total activation count and recent active activation count.
+  - A sliding window of activations that were active in the last few seconds, sometimes referred to as the activation working set.
+
+From these statistics, only the activation counts are currently used to determine the load on a given silo.
+
+Ultimately, you should experiment with different strategies and monitor performance metrics to determine the best fit. By selecting the right grain placement strategy, you can optimize the performance, scalability, and cost-effectiveness of your Orleans apps.
 
 ## Configure the default placement strategy
 
-Orleans will use random placement unless the default is overridden.
-The default placement strategy can be overridden by registering an implementation of `PlacementStrategy` during configuration:
+Orleans will use random placement unless the default is overridden. The default placement strategy can be overridden by registering an implementation of <xref:Orleans.Runtime.PlacementStrategy> during configuration:
 
 ```csharp
 siloBuilder.ConfigureServices(services =>
     services.AddSingleton<PlacementStrategy, MyPlacementStrategy>());
 ```
 
-## Configuring the placement strategy for a grain
+## Configure the placement strategy for a grain
 
 The placement strategy for a grain type is configured by adding the appropriate attribute on the grain class.
 The relevant attributes are specified in the [placement strategies](#random-placement) sections.
 
 ## Sample custom placement strategy
 
-First define a class that implements `IPlacementDirector` interface, requiring a single method. In this example, we assume you have a function `GetSiloNumber` defined which will return a silo number given the `Guid` of the grain about to be created.
+First define a class that implements <xref:Orleans.Runtime.Placement.IPlacementDirector> interface, requiring a single method. In this example, we assume you have a function `GetSiloNumber` defined which will return a silo number given the <xref:System.Guid> of the grain about to be created.
 
 ```csharp
 public class SamplePlacementStrategyFixedSiloDirector : IPlacementDirector
@@ -89,8 +108,8 @@ public sealed class SamplePlacementStrategyAttribute : PlacementAttribute
 {
     public SamplePlacementStrategyAttribute() :
         base(new SamplePlacementStrategy())
-        {
-        }
+    {
+    }
 }
 ```
 
@@ -100,25 +119,26 @@ Then just tag any grain classes you want to use this strategy with the attribute
 [SamplePlacementStrategy]
 public class MyGrain : Grain, IMyGrain
 {
-    ...
+    // ...
 }
 ```
 
-And finally, register the strategy when you build the `SiloHost`:
+And finally, register the strategy when you build the <xref:Orleans.Runtime.Host.SiloHost>:
 
 ```csharp
 private static async Task<ISiloHost> StartSilo()
 {
-    ISiloHostBuilder builder = new SiloHostBuilder()
+    var builder = new HostBuilder(c =>
+    {
         // normal configuration methods omitted for brevity
-        .ConfigureServices(ConfigureServices);
+        c.ConfigureServices(ConfigureServices);
+    });
 
     var host = builder.Build();
     await host.StartAsync();
 
     return host;
 }
-
 
 private static void ConfigureServices(IServiceCollection services)
 {

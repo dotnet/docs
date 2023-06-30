@@ -86,15 +86,19 @@ The behavior of **anycpu** has some additional nuances on .NET Core and .NET 5 a
 
 ## ProduceReferenceAssembly
 
-The **ProduceReferenceAssembly** option specifies a file path where the reference assembly should be output. It translates to `metadataPeStream` in the Emit API. The `filepath` specifies the path for the reference assembly. It should generally match that of the primary assembly. The recommended convention (used by MSBuild) is to place the reference assembly in a "ref/" subfolder relative to the primary assembly.
+The **ProduceReferenceAssembly** option controls whether the compiler produces reference assemblies.
 
 ```xml
-<ProduceReferenceAssembly>filepath</ProduceReferenceAssembly>
+<ProduceReferenceAssembly>true</ProduceReferenceAssembly>
 ```
 
-Reference assemblies are a special type of assembly that contains only the minimum amount of metadata required to represent the library's public API surface. They include declarations for all members that are significant when referencing an assembly in build tools. Reference assemblies exclude all member implementations and declarations of private members. Those members have no observable impact on their API contract. For more information, see [Reference assemblies](../../../standard/assembly/reference-assemblies.md) in the .NET Guide.
+Reference assemblies are a special type of assembly that contain only the minimum amount of metadata required to represent the library's public API surface. They include declarations for all members that are significant when referencing an assembly in build tools. Reference assemblies exclude all member implementations and declarations of private members. Those members have no observable impact on their API contract. For more information, see [Reference assemblies](../../../standard/assembly/reference-assemblies.md) in the .NET Guide.
 
 The **ProduceReferenceAssembly** and [**ProduceOnlyReferenceAssembly**](./code-generation.md#produceonlyreferenceassembly) options are mutually exclusive.
+
+You generally don't need to work directly with reference assembly files. By default, reference assemblies are generated in a `ref` subfolder of the intermediate path (i.e. `obj/ref/`). To generate them under the output directory instead (i.e. `bin/ref/`) set `ProduceReferenceAssemblyInOutDir` to `true` in your project.
+
+.NET SDK 6.0.200 made a [change](../../../core/compatibility/sdk/6.0/write-reference-assemblies-to-obj.md) that moved reference assemblies from the output directory to the intermediate directory by default.
 
 ## TargetType
 

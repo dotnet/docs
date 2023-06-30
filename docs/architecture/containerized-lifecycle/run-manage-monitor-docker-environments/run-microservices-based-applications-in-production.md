@@ -5,6 +5,8 @@ ms.date: 08/06/2020
 ---
 # Run composed and microservices-based applications in production environments
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 Applications composed by multiple microservices do need to be deployed into orchestrator clusters in order to simplify the complexity of deployment and make it viable from an IT point of view. Without an orchestrator cluster, it would be difficult to deploy and scale out a complex microservices application.
 
 ## Introduction to orchestrators, schedulers, and container clusters

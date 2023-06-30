@@ -16,7 +16,7 @@ void main()
     // Create the delegate.
     AsyncMethodCaller^ caller = gcnew AsyncMethodCaller(ad, &AsyncDemo::TestMethod);
        
-    // Initiate the asychronous call.
+    // Initiate the asynchronous call.
     IAsyncResult^ result = caller->BeginInvoke(3000, 
         threadId, nullptr, nullptr);
 

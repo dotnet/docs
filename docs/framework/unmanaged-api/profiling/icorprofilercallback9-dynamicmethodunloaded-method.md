@@ -26,7 +26,7 @@ HRESULT DynamicMethodUnloaded(
   
 ## Parameters  
 
-`functionId`
+`functionId`\
 [in] The identifier of the in-memory function that has been garbage collected and unloaded.
 
 ## Requirements  

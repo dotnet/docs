@@ -5,17 +5,23 @@ ms.date: 05/16/2016
 ---
 # Statically Resolved Type Parameters
 
-A *statically resolved type parameter* is a type parameter that is replaced with an actual type at compile time instead of at run time. They are preceded by a caret (^) symbol.
+A *statically resolved type parameter* is a type parameter that is replaced with an actual type at compile time instead of at run time.
 
 ## Syntax
 
 ```fsharp
-ˆtype-parameter
+'type-parameter
+```
+
+Up to version 7.0 of F#, one had to use the following syntax
+
+```fsharp
+^type-parameter
 ```
 
 ## Remarks
 
-In F#, there are two distinct kinds of type parameters. The first kind is the standard generic type parameter. These are indicated by an apostrophe ('), as in `'T` and `'U`. They are equivalent to generic type parameters in other .NET Framework languages. The other kind is statically resolved and is indicated by a caret symbol, as in `^T` and `^U`.
+In F#, there are two distinct kinds of type parameters. The first kind is the standard generic type parameter. They are equivalent to generic type parameters in other .Net languages. The other kind is statically resolved and can only be used in inlined functions.
 
 Statically resolved type parameters are primarily useful in conjunction with member constraints, which are constraints that allow you to specify that a type argument must have a particular member or members in order to be used. There is no way to create this kind of constraint by using a regular generic type parameter.
 
@@ -23,7 +29,6 @@ The following table summarizes the similarities and differences between the two 
 
 |Feature|Generic|Statically resolved|
 |-------|-------|-------------------|
-|Syntax|`'T`, `'U`|`^T`, `^U`|
 |Resolution time|Run time|Compile time|
 |Member constraints|Cannot be used with member constraints.|Can be used with member constraints.|
 |Code generation|A type (or method) with standard generic type parameters results in the generation of a single generic type or method.|Multiple instantiations of types and methods are generated, one for each type that is needed.|
@@ -39,9 +44,9 @@ Inline methods and functions that use operators, or use other functions that hav
 The resolved type of `(+@)` is based on the use of both `(+)` and `(*)`, both of which cause type inference to infer member constraints on the statically resolved type parameters. The resolved type, as shown in the F# interpreter, is as follows.
 
 ```fsharp
-^a -> ^c -> ^d
-when (^a or ^b) : (static member ( + ) : ^a * ^b -> ^d) and
-(^a or ^c) : (static member ( * ) : ^a * ^c -> ^b)
+'a -> 'c -> 'd
+when ('a or 'b) : (static member ( + ) : 'a * 'b -> 'd) and
+('a or 'c) : (static member ( * ) : 'a * 'c -> 'b)
 ```
 
 The output is as follows.
@@ -51,7 +56,24 @@ The output is as follows.
 1.500000
 ```
 
-Starting with F# 4.1, you can also specify concrete type names in statically resolved type parameter signatures.  In previous versions of the language, the type name could actually be inferred by the compiler, but could not actually be specified in the signature.  As of F# 4.1, you may also specify concrete type names in statically resolved type parameter signatures. Here's an example:
+The following example illustrates the usage of SRTPs with methods and static methods:
+
+```fsharp
+type Record =
+    { Number: int }
+    member this.Double() = { Number = this.Number * 2 }
+    static member Zero() = { Number = 0 }
+    
+let inline double<'a when 'a:(member Double: unit -> 'a)> (x: 'a) = x.Double()    
+let inline zero<'a when 'a:(static member Zero: unit -> 'a)> () = 'a.Zero()
+
+let r: Record = zero ()
+let doubleR = double r
+```
+
+Starting with F# 7.0, you can use `'a.Zero()` instead of having to repeat the constraint as in the example below.
+
+Starting with F# 4.1, you can also specify concrete type names in statically resolved type parameter signatures. In previous versions of the language, the type name was inferred by the compiler, but could not be specified in the signature. As of F# 4.1, you may also specify concrete type names in statically resolved type parameter signatures. Here's an example (please not that in this example, `^` must still be used because the simplification to use `'` is not supported):
 
 ```fsharp
 let inline konst x _ = x

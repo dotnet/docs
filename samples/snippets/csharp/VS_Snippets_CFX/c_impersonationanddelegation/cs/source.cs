@@ -5,8 +5,6 @@ using System.ServiceModel;
 using System.Security.Principal;
 using System.Security.Permissions;
 
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
 namespace SnippetsPart1
 {
     interface IHelloService
@@ -84,9 +82,9 @@ namespace SnippetsPart2
 
             //<snippet3>
             // Code to create a ServiceHost not shown.
-            ServiceAuthorizationBehavior MyServiceAuthoriationBehavior =
+            ServiceAuthorizationBehavior MyServiceAuthorizationBehavior =
                 serviceHost.Description.Behaviors.Find<ServiceAuthorizationBehavior>();
-            MyServiceAuthoriationBehavior.ImpersonateCallerForAllOperations = true;
+            MyServiceAuthorizationBehavior.ImpersonateCallerForAllOperations = true;
             //</snippet3>
 
             //<snippet4>

@@ -5,8 +5,6 @@ using System.Security.Cryptography.X509Certificates;
 using System.Security.Permissions;
 using System.ServiceModel.Description;
 
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
 namespace Windows.Communication.Foundation.Samples
 {
 

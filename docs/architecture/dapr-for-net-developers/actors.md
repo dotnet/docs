@@ -7,6 +7,8 @@ ms.date: 11/17/2021
 
 # The Dapr actors building block
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 The actor model originated in 1973. It was proposed by Carl Hewitt as a conceptual model of concurrent computation, a form of computing in which several computations are executed at the same time. Highly parallel computers weren't yet available at that time, but the more recent advancements of multi-core CPUs and distributed systems have made the actor model popular.
 
 In the actor model, the *actor* is an independent unit of compute and state. Actors are completely isolated from each other and they will never share memory. Actors communicate with each other using messages. When an actor receives a message, it can change its internal state, and send messages to other (possibly new) actors.
@@ -130,7 +132,7 @@ public async Task<int> IncrementAsync()
 
 Actors can use timers and reminders to schedule calls to themselves. Both concepts support the configuration of a due time. The difference lies in the lifetime of the callback registrations:
 
-- Timers will only stay active as long as the the actor is activated. Timers *will not* reset the idle-timer, so they cannot keep an actor active on their own.
+- Timers will only stay active as long as the actor is activated. Timers *will not* reset the idle-timer, so they cannot keep an actor active on their own.
 - Reminders outlive actor activations. If an actor is deactivated, a reminder will re-activate the actor. Reminders *will* reset the idle-timer.
 
 Timers are registered by making a call to the actor API. In the following example, a timer is registered with a due time of 0 and a period of 10 seconds.
@@ -282,7 +284,7 @@ app.MapActorsHandlers();
 The actors endpoints are necessary because the Dapr sidecar calls the application to host and interact with actor instances.
 
 > [!IMPORTANT]
-> Make sure your `Startup` class does not contain an `app.UseHttpsRedirection` call to redirect clients to the HTTPS endpoint. This will not work with actors. By design, a Dapr sidecar sends requests over unencrypted HTTP by default. The HTTPS middleware will block these requests when enabled.
+> Make sure your `Program` (or `Startup`) class does not contain an `app.UseHttpsRedirection` call to redirect clients to the HTTPS endpoint. This will not work with actors. By design, a Dapr sidecar sends requests over unencrypted HTTP by default. The HTTPS middleware will block these requests when enabled.
 
 The `Program` file is also the place to register the specific actor types. The following example registers the `ScoreActor` using the `AddActors` extension method:
 
@@ -582,7 +584,7 @@ if (violation > 0)
 
 The code above uses two external dependencies. The `_speedingViolationCalculator` encapsulates the business logic for determining whether or not a vehicle has driven too fast. The `_daprClient` allows the actor to publish messages using the Dapr pub/sub building block.
 
-Both dependencies are registered in the `Startup` class and injected into the actor using constructor dependency injection:
+Both dependencies are registered in the _Program.cs_ class and injected into the actor using constructor dependency injection:
 
 ```csharp
 private readonly DaprClient _daprClient;

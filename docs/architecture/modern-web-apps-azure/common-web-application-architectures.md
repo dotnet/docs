@@ -7,6 +7,8 @@ ms.date: 12/12/2021
 ---
 # Common web application architectures
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 > "If you think good architecture is expensive, try bad architecture."
 > _- Brian Foote and Joseph Yoder_
 
@@ -91,7 +93,7 @@ The simplest approach to scaling a web application in Azure is to configure scal
 
 ## Clean architecture
 
-Applications that follow the Dependency Inversion Principle as well as the Domain-Driven Design (DDD) principles tend to arrive at a similar architecture. This architecture has gone by many names over the years. One of the first names was Hexagonal Architecture, followed by Ports-and-Adapters. More recently, it's been cited as the [Onion Architecture](https://jeffreypalermo.com/blog/the-onion-architecture-part-1/) or [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html). The latter name, Clean Architecture, is used as the name for this architecture in this e-book.
+Applications that follow the Dependency Inversion Principle as well as the Domain-Driven Design (DDD) principles tend to arrive at a similar architecture. This architecture has gone by many names over the years. One of the first names was Hexagonal Architecture, followed by Ports-and-Adapters. More recently, it's been cited as the [Onion Architecture](https://jeffreypalermo.com/blog/the-onion-architecture-part-1/) or [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html). The latter name, Clean Architecture, is used as the name for this architecture in this e-book.
 
 The eShopOnWeb reference application uses the Clean Architecture approach in organizing its code into projects. You can find a solution template you can use as a starting point for your own ASP.NET Core solutions in the [ardalis/cleanarchitecture](https://github.com/ardalis/cleanarchitecture) GitHub repository or by [installing the template from NuGet](https://www.nuget.org/packages/Ardalis.CleanArchitecture.Template/).
 
@@ -268,7 +270,7 @@ networks:
 The `docker-compose.yml` file references the `Dockerfile` in the `Web` project. The `Dockerfile` is used to specify which base container will be used and how the application will be configured on it. The `Web`' `Dockerfile`:
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /app
 
 COPY *.sln .
@@ -278,7 +280,7 @@ RUN dotnet restore
 
 RUN dotnet publish -c Release -o out
 
-FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS runtime
 WORKDIR /app
 COPY --from=build /app/src/Web/out ./
 
@@ -293,10 +295,16 @@ Note that running Docker containers may be bound to ports you might otherwise tr
 
 If you want to add Docker support to your application using Visual Studio, make sure Docker Desktop is running when you do so. The wizard won't run correctly if Docker Desktop isn't running when you start the wizard. In addition, the wizard examines your current container choice to add the correct Docker support. If you want to add, support for Windows Containers, you need to run the wizard while you have Docker Desktop running with Windows Containers configured. If you want to add, support for Linux containers, run the wizard while you have Docker running with Linux containers configured.
 
+### Other web application architectural styles
+
+- [Web-Queue-Worker](/azure/architecture/guide/architecture-styles/web-queue-worker): The core components of this architecture are a web front end that serves client requests, and a worker that performs resource-intensive tasks, long-running workflows, or batch jobs. The web front end communicates with the worker through a message queue.
+- [N-tier](/azure/architecture/guide/architecture-styles/n-tier): An N-tier architecture divides an application into logical layers and physical tiers.
+- [Microservice](/azure/architecture/guide/architecture-styles/microservices): A microservices architecture consists of a collection of small, autonomous services. Each service is self-contained and should implement a single business capability within a bounded context.
+
 ### References – Common web architectures
 
 - **The Clean Architecture**  
-  <https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html>
+  <https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html>
 - **The Onion Architecture**  
   <https://jeffreypalermo.com/blog/the-onion-architecture-part-1/>
 - **The Repository Pattern**  
@@ -306,7 +314,7 @@ If you want to add Docker support to your application using Visual Studio, make 
 - **Architecting Microservices e-book**  
   <https://aka.ms/MicroservicesEbook>
 - **DDD (Domain-Driven Design)**  
-  [https://docs.microsoft.com/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/](../microservices/microservice-ddd-cqrs-patterns/index.md)
+  [https://learn.microsoft.com/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/](../microservices/microservice-ddd-cqrs-patterns/index.md)
 
 >[!div class="step-by-step"]
 >[Previous](architectural-principles.md)

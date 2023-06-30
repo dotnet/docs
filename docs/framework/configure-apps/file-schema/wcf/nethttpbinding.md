@@ -77,7 +77,6 @@ Represents a binding that a Windows Communication Foundation (WCF) service can u
 |`textEncoding`|Sets the character set encoding to be used for emitting messages on the binding. Valid values include the following:<br /><br /> -   BigEndianUnicode: Unicode BigEndian encoding.<br />-   Unicode: 16-bit encoding.<br />-   UTF8: 8-bit encoding<br /><br /> The default is UTF8. This attribute is of type <xref:System.Text.Encoding>.|
 |`transferMode`|A valid <xref:System.ServiceModel.TransferMode> value that specifies whether messages are buffered or streamed on a request or response.|
 |`useDefaultWebProxy`|A Boolean value that specifies whether the auto-configured HTTP proxy of the system should be used, if available. The default is `true`.|
-|||
 
 ### Child Elements
 

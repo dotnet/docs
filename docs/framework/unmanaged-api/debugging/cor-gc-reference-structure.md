@@ -52,11 +52,11 @@ typedef struct _COR_GC_REFERENCE {
   
  The `extraData` field contains extra data depending on the source (or type) of the reference. Possible values are:  
   
-- `DependentSource`. If the `type` is `CorGCREferenceType.CorHandleStrongDependent`, this field is the object that, if alive, roots the object to be garbage-collected at `COR_GC_REFERENCE.Location`.  
+- `DependentSource`. If the `type` is `CorGCReferenceType.CorHandleStrongDependent`, this field is the object that, if alive, roots the object to be garbage-collected at `COR_GC_REFERENCE.Location`.  
   
-- `RefCount`. If the `type` is `CorGCREferenceType.CorHandleStrongRefCount`, this field is the reference count of the handle.  
+- `RefCount`. If the `type` is `CorGCReferenceType.CorHandleStrongRefCount`, this field is the reference count of the handle.  
   
-- `Size`. If the `type` is `CorGCREferenceType.CorHandleStrongSizedByref`, this field is the last size of the object tree for which the garbage collector calculated the object roots. Note that this calculation is not necessarily up to date.  
+- `Size`. If the `type` is `CorGCReferenceType.CorHandleStrongSizedByref`, this field is the last size of the object tree for which the garbage collector calculated the object roots. Note that this calculation is not necessarily up to date.  
   
 ## Requirements  
 

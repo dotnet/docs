@@ -7,7 +7,9 @@ ms.date: 12/10/2021
 
 # Strategies for migrating while running in production
 
-Many teams have .NET Framework apps they plan to migrate to .NET Core/.NET 5+, but the app is so large that the migration requires a significant amount of time to complete. The original app needs to live on while the migration is done piece by piece. There needs to be a way for the old and new versions of the app to work together side-by-side, or for the old version to be migrated in-place, at least some of the way, without breaking it. Teams can employ many different strategies to support these goals.
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
+Many teams have .NET Framework apps they plan to migrate to .NET Core/.NET 7, but the app is so large that the migration requires a significant amount of time to complete. The original app needs to live on while the migration is done piece by piece. There needs to be a way for the old and new versions of the app to work together side-by-side, or for the old version to be migrated in-place, at least some of the way, without breaking it. Teams can employ many different strategies to support these goals.
 
 ## Refactor the .NET Framework solution
 
@@ -39,7 +41,7 @@ Once the facade is in place, you can route part of it to a new ASP.NET Core app.
 
 **Figure 3-5.** The Strangler pattern over time.
 
-Eventually, the entire facade layer corresponds to the new, modern implementation. At this point, both the legacy system and the face layer can be retired.
+Eventually, the entire facade layer corresponds to the new, modern implementation. At this point, both the legacy system and the face layer can be retired. Microsoft has guidance on how to achieve [incremental ASP.NET to ASP.NET Core migration using the YARP reverse proxy](https://devblogs.microsoft.com/dotnet/incremental-asp-net-to-asp-net-core-migration/).
 
 ## Multi-targeting approaches
 
@@ -61,6 +63,7 @@ Frequently, large ASP.NET MVC and Web API apps won't be ported to ASP.NET Core a
 - [eShopOnContainers Reference Microservices Application](https://github.com/dotnet-architecture/eShopOnContainers)
 - [Host ASP.NET Core on Windows with IIS](/aspnet/core/host-and-deploy/iis/)
 - [Strangler pattern](/azure/architecture/patterns/strangler)
+- [Incremental ASP.NET to ASP.NET Core Migration](https://devblogs.microsoft.com/dotnet/incremental-asp-net-to-asp-net-core-migration/)
 
 >[!div class="step-by-step"]
 >[Previous](understand-update-dependencies.md)

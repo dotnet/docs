@@ -6,6 +6,8 @@ ms.date: 09/09/2019
 
 # Protobuf Any and Oneof fields for variant types
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Handling dynamic property types (that is, properties of type `object`) in Windows Communication Foundation (WCF) is complicated. For example, you must specify serializers and provide [KnownType](xref:System.Runtime.Serialization.KnownTypeAttribute) attributes.
 
 Protocol Buffer (Protobuf) provides two simpler options for dealing with values that might be of more than one type. The `Any` type can represent any known Protobuf message type. And you can use the `oneof` keyword to specify that only one of a range of fields can be set in any message.

@@ -1,14 +1,14 @@
 ---
 title: "Quantifier Operations (C#)"
-description: Learn about quantifier operations. These operations return a Boolean value indicating whether some or all elements in a sequence satisfy a condition.
-ms.date: 07/20/2015
-ms.assetid: 84ac2ac2-7a63-4581-bc4c-14e34be1493b
+titleSuffix: LINQ
+description: Learn about quantifier operations in LINQ. These methods, 'All', 'Any', and 'Contains', return a Boolean value indicating whether some or all elements in a sequence satisfy a condition.
+ms.date: 03/30/2022
 ---
-# Quantifier Operations (C#)
+# Quantifier operations in LINQ (C#)
 
 Quantifier operations return a <xref:System.Boolean> value that indicates whether some or all of the elements in a sequence satisfy a condition.  
   
- The following illustration depicts two different quantifier operations on two different source sequences. The first operation asks if one or more of the elements are the character 'A', and the result is `true`. The second operation asks if all the elements are the character 'A', and the result is `true`.  
+ The following illustration depicts two different quantifier operations on two different source sequences. The first operation asks if any of the elements are the character 'A'. The second operation asks if all the elements are the character 'A'. Both methods return `true` in this example.  
   
  ![LINQ Quantifier Operations](./media/quantifier-operations/linq-quantifier-operations.png)  
   
@@ -18,9 +18,9 @@ Quantifier operations return a <xref:System.Boolean> value that indicates whethe
   
 |Method Name|Description|C# Query Expression Syntax|More Information|  
 |-----------------|-----------------|---------------------------------|----------------------|  
-|All|Determines whether all the elements in a sequence satisfy a condition.|Not applicable.|<xref:System.Linq.Enumerable.All%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.All%2A?displayProperty=nameWithType>|  
-|Any|Determines whether any elements in a sequence satisfy a condition.|Not applicable.|<xref:System.Linq.Enumerable.Any%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Any%2A?displayProperty=nameWithType>|  
-|Contains|Determines whether a sequence contains a specified element.|Not applicable.|<xref:System.Linq.Enumerable.Contains%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Contains%2A?displayProperty=nameWithType>|  
+|All|Determines whether all the elements in a sequence satisfy a condition.|Not applicable.|<xref:System.Linq.Enumerable.All%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.All%2A?displayProperty=nameWithType>|  
+|Any|Determines whether any elements in a sequence satisfy a condition.|Not applicable.|<xref:System.Linq.Enumerable.Any%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Any%2A?displayProperty=nameWithType>|  
+|Contains|Determines whether a sequence contains a specified element.|Not applicable.|<xref:System.Linq.Enumerable.Contains%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Contains%2A?displayProperty=nameWithType>|  
 
 ## Query Expression Syntax Examples  
   

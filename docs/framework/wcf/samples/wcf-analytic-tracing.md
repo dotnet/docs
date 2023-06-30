@@ -44,9 +44,9 @@ WCF's ETW Event Provider manifest defines three events that are designed to be e
 
 1. Using Visual Studio, open the WCFAnalyticTracingExtensibility.sln solution file.
 
-2. To build the solution, press **Ctrl**+**Shift**+**B**.
+2. To build the solution, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>.
 
-3. To run the solution, press **Ctrl**+**F5**.
+3. To run the solution, press <kbd>Ctrl</kbd>+<kbd>F5</kbd>.
 
      In the Web browser, click **Calculator.svc**. The URI of the WSDL document for the service should appear in the browser. Copy that URI.
 

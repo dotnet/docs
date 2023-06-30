@@ -17,7 +17,7 @@ In the following example, the `Square` class must provide an overridden implemen
 
 [!code-csharp[csrefKeywordsModifiers#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#1)]
 
-An `override` method provides a new implementation of the method inherited from a base class. The method that is overridden by an `override` declaration is known as the overridden base method. An `override` method must have the same signature as the overridden base method. Beginning with C# 9.0, `override` methods support covariant return types. In particular, the return type of an `override` method can derive from the return type of the corresponding base method. In C# 8.0 and earlier, the return types of an `override` method and the overridden base method must be the same.
+An `override` method provides a new implementation of the method inherited from a base class. The method that is overridden by an `override` declaration is known as the overridden base method. An `override` method must have the same signature as the overridden base method. `override` methods support covariant return types. In particular, the return type of an `override` method can derive from the return type of the corresponding base method.
 
 You cannot override a non-virtual or static method. The overridden base method must be `virtual`, `abstract`, or `override`.
 
@@ -37,7 +37,7 @@ This example defines a base class named `Employee`, and a derived class named `S
 
 ## C# language specification
 
-For more information, see the [Override methods](~/_csharpstandard/standard/classes.md#1465-override-methods) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Override methods](~/_csharpstandard/standard/classes.md#1565-override-methods) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For more information about covariant return types, see the [feature proposal note](~/_csharplang/proposals/csharp-9.0/covariant-returns.md).
 

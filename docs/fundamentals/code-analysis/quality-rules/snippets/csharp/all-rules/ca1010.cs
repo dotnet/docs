@@ -33,9 +33,9 @@ namespace ca1010
             InnerList.Insert(index, value);
         }
 
-        public Book this[int index]
+        public Book? this[int index]
         {
-            get { return (Book)InnerList[index]; }
+            get { return (Book?)InnerList[index]; }
             set { InnerList[index] = value; }
         }
 
@@ -86,46 +86,46 @@ namespace ca1010_fix_2
         }
     }
 
-    public class BookCollection : CollectionBase, IList<Book>
+    public class BookCollection : CollectionBase, IList<Book?>
     {
         public BookCollection()
         {
         }
 
-        int IList<Book>.IndexOf(Book item)
+        int IList<Book?>.IndexOf(Book? item)
         {
             return this.List.IndexOf(item);
         }
 
-        void IList<Book>.Insert(int location, Book item)
+        void IList<Book?>.Insert(int location, Book? item)
         {
         }
 
-        Book IList<Book>.this[int index]
+        Book? IList<Book?>.this[int index]
         {
-            get { return (Book)this.List[index]; }
+            get => (Book?)this.List[index];
             set { }
         }
 
-        void ICollection<Book>.Add(Book item)
+        void ICollection<Book?>.Add(Book? item)
         {
         }
 
-        bool ICollection<Book>.Contains(Book item)
+        bool ICollection<Book?>.Contains(Book? item)
         {
             return true;
         }
 
-        void ICollection<Book>.CopyTo(Book[] array, int arrayIndex)
+        void ICollection<Book?>.CopyTo(Book?[] array, int arrayIndex)
         {
         }
 
-        bool ICollection<Book>.IsReadOnly
+        bool ICollection<Book?>.IsReadOnly
         {
             get { return false; }
         }
 
-        bool ICollection<Book>.Remove(Book item)
+        bool ICollection<Book?>.Remove(Book? item)
         {
             if (InnerList.Contains(item))
             {
@@ -135,7 +135,7 @@ namespace ca1010_fix_2
             return false;
         }
 
-        IEnumerator<Book> IEnumerable<Book>.GetEnumerator()
+        IEnumerator<Book> IEnumerable<Book?>.GetEnumerator()
         {
             return new BookCollectionEnumerator(InnerList.GetEnumerator());
         }

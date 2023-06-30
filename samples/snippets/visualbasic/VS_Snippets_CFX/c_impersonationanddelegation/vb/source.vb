@@ -4,7 +4,6 @@ Imports System.ServiceModel
 Imports System.Security.Principal
 Imports System.Security.Permissions
 
-<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace SnippetsPart1
 
     Interface IHelloService
@@ -83,10 +82,10 @@ Namespace SnippetsPart2
 
             '<snippet3>
             ' Code to create a ServiceHost not shown.
-            Dim MyServiceAuthoriationBehavior As ServiceAuthorizationBehavior
-            MyServiceAuthoriationBehavior = serviceHost.Description.Behaviors.Find _
+            Dim MyServiceAuthorizationBehavior As ServiceAuthorizationBehavior
+            MyServiceAuthorizationBehavior = serviceHost.Description.Behaviors.Find _
             (Of ServiceAuthorizationBehavior)()
-            MyServiceAuthoriationBehavior.ImpersonateCallerForAllOperations = True
+            MyServiceAuthorizationBehavior.ImpersonateCallerForAllOperations = True
             '</snippet3>
 
             '<snippet4>

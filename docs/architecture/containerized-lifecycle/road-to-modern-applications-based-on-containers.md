@@ -5,6 +5,8 @@ ms.date: 08/06/2020
 ---
 # Road to modern applications based on containers
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 You're probably reading this book because you're planning the development of new applications or you're assessing the impact of using Docker, Containers, and new approaches like Microservices in your company.
 
 The adoption of new development paradigms must be taken with caution before starting a project, to assess the impact on your dev teams, your budget, or your infrastructure.
@@ -16,10 +18,10 @@ This book belongs to a Microsoft suite of guides that cover many of the needs an
 You can find additional Microsoft e-books related to Docker containers in the list below:
 
 - **.NET Microservices: Architecture for Containerized .NET Applications** \
-  [https://docs.microsoft.com/dotnet/architecture/microservices/](../microservices/index.md)
+  [https://learn.microsoft.com/dotnet/architecture/microservices/](../microservices/index.md)
 
 - **Modernize existing .NET applications with Azure cloud and Windows Containers** \
-  [https://docs.microsoft.com/dotnet/architecture/modernize-with-azure-containers/](../modernize-with-azure-containers/index.md)
+  [https://learn.microsoft.com/dotnet/architecture/modernize-with-azure-containers/](../modernize-with-azure-containers/index.md)
 
 >[!div class="step-by-step"]
 >[Previous](docker-containers-images-and-registries.md)

@@ -3,9 +3,11 @@ title: App startup
 description: Learn how to define the startup logic for your app.
 author: csharpfritz
 ms.author: jefritz
-ms.date: 12/2/2021
+ms.date: 04/11/2022
 ---
 # App startup
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Applications that are written for ASP.NET typically have a `global.asax.cs` file that defines the `Application_Start` event that controls which services are configured and made available for both HTML rendering and .NET processing. This chapter looks at how things are slightly different with ASP.NET Core and Blazor Server.
 

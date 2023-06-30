@@ -1,18 +1,18 @@
 ---
 description: "Learn more about: CreateVersionStringFromModule Function"
 title: "CreateVersionStringFromModule Function"
-ms.date: "03/30/2017"
+ms.date: "03/21/2022"
 api_name: 
   - "CreateVersionStringFromModule"
 api_location: 
   - "dbgshim.dll"
-api_type: 
-  - "COM"
+  - "libdbgshim.so"
+  - "libdbgshim.dylib"
 f1_keywords: 
   - "CreateVersionStringFromModule"
 helpviewer_keywords: 
-  - "debugging API [Silverlight]"
-  - "Silverlight, debugging"
+  - "debugging API [.NET Core]"
+  - ".NET Core, debugging"
   - "CreateVersionStringFromModule function"
 ms.assetid: 3d2fe9bd-75ef-4364-84a6-da1e1994ac1a
 topic_type: 
@@ -29,7 +29,7 @@ HRESULT CreateVersionStringFromModule (
     [in]  DWORD      pidDebuggee,  
     [in]  LPCWSTR    szModuleName,  
     [out, size_is(cchBuffer),  
-          length_is(*pdwLength)] LPWSTR Buffer,  
+    length_is(*pdwLength)] LPWSTR Buffer,  
     [in]  DWORD      cchBuffer,  
     [out] DWORD*     pdwLength  
 );  
@@ -37,19 +37,19 @@ HRESULT CreateVersionStringFromModule (
   
 ## Parameters  
 
- `pidDebuggee`  
+ `pidDebuggee`\
  [in] Identifier of the process in which the target CLR is loaded.  
   
- `szModuleName`  
+ `szModuleName`\
  [in] Full or relative path to the target CLR that is loaded in the process.  
   
- `pBuffer`  
+ `pBuffer`\
  [out] Return buffer for storing the version string for the target CLR.  
   
- `cchBuffer`  
+ `cchBuffer`\
  [in] Size of `pBuffer`.  
   
- `pdwLength`  
+ `pdwLength`\
  [out] Length of the version string returned by `pBuffer`.  
   
 ## Return Value  
@@ -71,16 +71,16 @@ HRESULT CreateVersionStringFromModule (
   
 ## Remarks  
 
- This function accepts a CLR process that is identified by `pidDebuggee` and a string path that is specified by `szModuleName`. The version string is returned in the buffer that `pBuffer` points to. This string is opaque to the function user; that is, there is no intrinsic meaning in the version string itself. It is used solely in the context of this function and the [CreateDebuggingInterfaceFromVersion function](createdebugginginterfacefromversion-function-for-silverlight.md).  
+ This function accepts a CLR process that is identified by `pidDebuggee` and a string path that is specified by `szModuleName`. The version string is returned in the buffer that `pBuffer` points to. This string is opaque to the function user; that is, there is no intrinsic meaning in the version string itself. It is used solely in the context of this function and the [CreateDebuggingInterfaceFromVersion function](createdebugginginterfacefromversion-function.md).  
   
  This function should be called twice. When you call it the first time, pass null for both `pBuffer` and `cchBuffer`. When you do this, the size of the buffer necessary for `pBuffer` will be returned in `pdwLength`. You can then call the function a second time, and pass the buffer in `pBuffer` and its size in `cchBuffer`.  
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
+ **Platforms:** See [.NET Core supported operating systems](../../../core/install/windows.md?pivots=os-windows).  
   
  **Header:** dbgshim.h  
   
- **Library:** dbgshim.dll  
+ **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
   
- **.NET Framework Versions:** 3.5 SP1
+ **.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]

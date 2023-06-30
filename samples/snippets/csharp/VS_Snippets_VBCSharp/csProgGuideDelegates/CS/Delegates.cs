@@ -428,11 +428,11 @@ namespace WrapContravariance
                 // want to and use Action<string> instead.
                 //Action<string> hiDel, byeDel, multiDel, multiMinusHiDel;
 
-                // Create the delegate object hiDel that references the
+                // Initialize the delegate object hiDel that references the
                 // method Hello.
                 hiDel = Hello;
 
-                // Create the delegate object byeDel that references the
+                // Initialize the delegate object byeDel that references the
                 // method Goodbye.
                 byeDel = Goodbye;
 

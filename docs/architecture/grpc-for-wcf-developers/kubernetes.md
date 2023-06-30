@@ -6,6 +6,8 @@ ms.date: 12/14/2021
 
 # Kubernetes
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Although it's possible to run containers manually on Docker hosts, for reliable production systems it's better to use a container orchestration engine to manage multiple instances running across several servers in a cluster. There are various container orchestration engines available, including Kubernetes, Docker Swarm, and Apache Mesos. But of these engines, Kubernetes is far and away the most widely used, so it will be the focus of this chapter.
 
 Kubernetes includes the following functionality:
@@ -77,7 +79,7 @@ In this example, both the `kubectl` CLI and the Kubernetes server are running ve
 
 ## Run services on Kubernetes
 
-The sample application has a `kube` directory that contains three YAML files. The `namespace.yml` file declares a custom namespace: `stocks`. The `stockdata.yml` file declares the Deployment and the Service for the gRPC application, and the `stockweb.yml` file declares the Deployment and Service for an ASP.NET Core 6.0 MVC web application that consumes the gRPC service.
+The sample application has a `kube` directory that contains three YAML files. The `namespace.yml` file declares a custom namespace: `stocks`. The `stockdata.yml` file declares the Deployment and the Service for the gRPC application, and the `stockweb.yml` file declares the Deployment and Service for an ASP.NET Core 7.0 MVC web application that consumes the gRPC service.
 
 To use a `YAML` file with `kubectl`, run the `apply -f` command:
 
@@ -157,7 +159,7 @@ The `ports` property specifies which container ports should be published on the 
 The `resources` section applies resource limits to the container running within the Pod. This is a good practice because it prevents an individual Pod from consuming all the available CPU or memory on a node.
 
 > [!NOTE]
-> ASP.NET Core 6.0 has been optimized and tuned to run in resource-limited containers. The `dotnet/core/aspnet` Docker image sets an environment variable to tell the `dotnet` runtime that it's in a container.
+> ASP.NET Core 7.0 has been optimized and tuned to run in resource-limited containers. The `dotnet/core/aspnet` Docker image sets an environment variable to tell the `dotnet` runtime that it's in a container.
 
 #### The StockData Service
 

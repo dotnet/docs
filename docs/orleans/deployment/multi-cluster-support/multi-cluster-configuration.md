@@ -1,7 +1,7 @@
 ---
 title: Multi-cluster configuration
 description: Learn about multi-cluster configuration in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 03/09/2022
 ---
 
 # Multi-cluster configuration
@@ -13,7 +13,7 @@ We use the following terminology for the clusters in a service:
 - A cluster is *active* if it has at least one active silo, and *inactive* otherwise.
 - A cluster is *joined* if it is part of the current multi-cluster configuration, and *non-joined* otherwise.
 
-Being active/inactive is independent from being joined/non-joined: all four combinations are possible.
+Being active/inactive is independent of being joined/non-joined: all four combinations are possible.
 
 All the clusters for a particular service are connected by a [gossip network](gossip-channels.md). The gossip network propagates configuration and status information.
 
@@ -41,20 +41,24 @@ var mgtGrain = client.GetGrain<IManagementGrain>(0);
 mgtGrain.InjectMultiClusterConfiguration(clusters, "my comment here"));
 ```
 
-The first argument to `InjectMultiClusterConfiguration` is a collection of cluster ids, which is going to define the new multi-cluster configuration. The second argument is an (optional) comment string that can be used to tag configurations with arbitrary information, such as who injected them and why.
+The first argument to <xref:Orleans.Runtime.IManagementGrain.InjectMultiClusterConfiguration(System.Collections.Generic.IEnumerable{System.String},System.String,System.Boolean)> is a collection of cluster ids, which is going to define the new multi-cluster configuration. The second argument is an (optional) comment string that can be used to tag configurations with arbitrary information, such as who injected them and why.
 
 There is an optional third argument, a boolean called `checkForLaggingSilosFirst`, which defaults to true. It means that the system performs a best-effort check to see if there are any silos anywhere that have not caught up to the current configuration yet, and rejects the change if it finds such a silo. This helps to detect violations of the restriction that only one configuration change should be pending at a time (though it cannot guarantee it under all circumstances).
 
 ### Default configuration
 
-In situations where the multi-cluster configuration is known in advance and the deployment is fresh every time (for testing), we may want to supply a default configuration. The global configuration supports an optional attribute `DefaultMultiCluster` which takes a comma-separated list of cluster ids:
+In situations where the multi-cluster configuration is known in advance and the deployment is fresh every time (for testing), we may want to supply a default configuration. The global configuration supports an optional attribute <xref:Orleans.Runtime.Configuration.GlobalConfiguration.DefaultMultiCluster> which takes a comma-separated list of cluster ids:
 
 ```csharp
-var silo = new SiloHostBuilder()
-    .Configure<MultiClusterOptions>(options =>
+var silo = new HostBuilder()
+    .UseOrleans(builder =>
     {
-        options.DefaultMultiCluster = new[] { "us1", "eu1", "us2" };
+        builder.Configure<MultiClusterOptions>(options =>
+        {
+            options.DefaultMultiCluster = new[] { "us1", "eu1", "us2" };
+        })
     })
+    .Build();
 ```
 
 After a silo is started with this setting, it checks to see if the current multi-cluster configuration is null, and if so, injects the given configuration with the current UTC timestamp.
@@ -77,7 +81,7 @@ If using the Azure table-based gossip channel, operators can inject a new config
 | GossipTimestamp | DateTime | UTC timestamp for the configuration                     |
 
 > [!NOTE]
-> When editing this record in storage, the GossipTimestamp must also be set to a newer value than it has currently (otherwise the change is ignored). The most convenient and recommended way to do this is to *delete the GossipTimestamp field* - our gossip channel implementation then automatically replaces it with a correct, current Timestamp (it uses the Azure Table Timestamp).
+> When editing this record in storage, the `GossipTimestamp` must also be set to a newer value than it has currently (otherwise the change is ignored). The most convenient and recommended way to do this is to *delete the `GossipTimestamp` field* - our gossip channel implementation then automatically replaces it with a correct, current Timestamp (it uses the Azure Table Timestamp).
 
 ## Cluster procedures
 

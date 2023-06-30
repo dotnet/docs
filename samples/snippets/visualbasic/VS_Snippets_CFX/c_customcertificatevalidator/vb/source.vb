@@ -6,7 +6,6 @@ Imports System.ServiceModel.Security
 Imports System.IdentityModel.Tokens
 Imports System.Security.Permissions
 
-<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 <ServiceContract([Namespace]:="http://Microsoft.ServiceModel.Samples")> _
 Public Interface ICalculator
     <OperationContract()> _

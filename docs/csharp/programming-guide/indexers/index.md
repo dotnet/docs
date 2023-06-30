@@ -22,13 +22,13 @@ Indexers allow instances of a class or struct to be indexed just like arrays. Th
   
 ## Expression Body Definitions  
 
-It is common for an indexer's get or set accessor to consist of a single statement that either returns or sets a value. Expression-bodied members provide a simplified syntax to support this scenario. Starting with C# 6, a read-only indexer can be implemented as an expression-bodied member, as the following example shows.
+It is common for an indexer's get or set accessor to consist of a single statement that either returns or sets a value. Expression-bodied members provide a simplified syntax to support this scenario. A read-only indexer can be implemented as an expression-bodied member, as the following example shows.
 
 [!code-csharp[indexers#2](../../../../samples/snippets/csharp/programming-guide/indexers/indexer-2.cs)]  
 
 Note that `=>` introduces the expression body, and that the `get` keyword is not used.
 
-Starting with C# 7.0, both the get and set accessor can be an implemented as expression-bodied members. In this case, both `get` and `set` keywords must be used. For example:
+Both the get and set accessor can be implemented as expression-bodied members. In this case, both `get` and `set` keywords must be used. For example:
 
 [!code-csharp[indexers#3](../../../../samples/snippets/csharp/programming-guide/indexers/indexer-3.cs)]  
   
@@ -60,7 +60,7 @@ Starting with C# 7.0, both the get and set accessor can be an implemented as exp
   
 ## C# Language Specification  
 
-For more information, see [Indexers](~/_csharpstandard/standard/classes.md#149-indexers) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Indexers](~/_csharpstandard/standard/classes.md#159-indexers) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
   
 ## See also
 

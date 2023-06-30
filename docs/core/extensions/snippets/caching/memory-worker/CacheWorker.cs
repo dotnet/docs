@@ -3,13 +3,15 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace CachingExamples.Memory;
 
-public class CacheWorker : BackgroundService
+public sealed class CacheWorker : BackgroundService
 {
     private readonly ILogger<CacheWorker> _logger;
     private readonly HttpClient _httpClient;
     private readonly CacheSignal<Photo> _cacheSignal;
     private readonly IMemoryCache _cache;
     private readonly TimeSpan _updateInterval = TimeSpan.FromHours(3);
+
+    private bool _isCacheInitialized = false;
 
     private const string Url = "https://jsonplaceholder.typicode.com/photos";
 
@@ -52,7 +54,11 @@ public class CacheWorker : BackgroundService
             }
             finally
             {
-                _cacheSignal.Release();
+                if (!_isCacheInitialized)
+                {
+                    _cacheSignal.Release();
+                    _isCacheInitialized = true;
+                }
             }
 
             try

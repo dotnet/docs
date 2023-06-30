@@ -7,6 +7,8 @@ ms.date: 12/10/2021
 
 # Dependency injection differences between ASP.NET MVC and ASP.NET Core
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Although dependency injection (DI) isn't built into ASP.NET MVC or Web API, many apps enable it by adding a NuGet package with an inversion of control (IOC) container. These are sometimes referred to as DI containers, for dependency injection (or inversion). Some of the most popular containers used in ASP.NET MVC apps include:
 
 - [Autofac](https://www.autofac.org/)
@@ -23,7 +25,7 @@ Either way, you should consider using the built-in support for DI that ships wit
 
 ## Dependency injection in ASP.NET Core
 
-ASP.NET Core assumes apps will use DI. It's not just built into the framework, but is required in order to bring support for framework features into your ASP.NET Core apps. In app startup, a call is made to `ConfigureServices` which is responsible for registering all of the types that the DI container (service collection/service provider) can create and inject in the app. Built-in ASP.NET Core features like Entity Framework Core, Identity, and even MVC are brought into the app by configuring them as services in the `ConfigureServices` method.
+ASP.NET Core assumes apps will use DI. It's not just built into the framework, but is required in order to bring support for framework features into your ASP.NET Core apps. In app startup, calls are made to configure services using the `builder.Services` property of the web host builder. This property works with the application's DI container (service collection/service provider) and is used to create and inject service dependencies within the app. Built-in ASP.NET Core features like Entity Framework Core, Identity, and even MVC are brought into the app by configuring them as services during application startup.
 
 In addition to using the default implementation, apps can still use custom containers. The [documentation covers how to replace the default service container](../../core/extensions/dependency-injection-guidelines.md#default-service-container-replacement).
 

@@ -1,7 +1,7 @@
 ---
 title: Amazon DynamoDB grain persistence
 description: Learn about Azure DynamoDB grain persistence in .NET Orleans.
-ms.date: 03/09/2022
+ms.date: 03/15/2022
 ---
 
 # Amazon DynamoDB grain persistence
@@ -14,7 +14,7 @@ Install the [`Microsoft.Orleans.Persistence.DynamoDB`](https://www.nuget.org/pac
 
 ## Configuration
 
-Configure the DynamoDB grain persistence provider using the `ISiloBuilder.AddDynamoDBGrainStorage` extension methods.
+Configure the DynamoDB grain persistence provider using the <xref:Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage%2A?displayProperty=nameWithType> extension methods.
 
 ```csharp
 siloBuilder.AddDynamoDBGrainStorage(
@@ -64,4 +64,4 @@ siloBuilder.AddDynamoDBGrainStorage(
   });
 ```
 
-For more information on AWS credentials and named profiles, see [AWS Credentials](https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/net-dg-config-creds.html#creds-locate) and [Named profiles](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html) in the AWS SDK for .NET Developer Guide.
+For more information on AWS credentials and named profiles, see [AWS Credentials](https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/net-dg-config-creds.html#creds-locate) and [Named profiles](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html#cli-configure-files-using-profiles) in the AWS documentation.

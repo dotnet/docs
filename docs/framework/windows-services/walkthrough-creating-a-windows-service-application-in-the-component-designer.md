@@ -21,7 +21,7 @@ This article demonstrates how to create a Windows service app in Visual Studio t
 
 To begin, create the project and set the values that are required for the service to function correctly.
 
-1. From the Visual Studio **File** menu, select **New** > **Project** (or press **Ctrl**+**Shift**+**N**) to open the **New Project** window.
+1. From the Visual Studio **File** menu, select **New** > **Project** (or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd>) to open the **New Project** window.
 
 2. Find and select the **Windows Service (.NET Framework)** project template.
 
@@ -38,7 +38,7 @@ To begin, create the project and set the values that are required for the servic
 
 Rename the service from **Service1** to **MyNewService**.
 
-1. In **Solution Explorer**, select **Service1.cs** or **Service1.vb**, and choose **Rename** from the shortcut menu. Rename the file to **MyNewService.cs** or **MyNewService.vb**, and then press **Enter**
+1. In **Solution Explorer**, select **Service1.cs** or **Service1.vb**, and choose **Rename** from the shortcut menu. Rename the file to **MyNewService.cs** or **MyNewService.vb**, and then press <kbd>Enter</kbd>
 
     A pop-up window appears asking whether you would like to rename all references to the code element *Service1*.
 
@@ -101,7 +101,17 @@ To set up a simple polling mechanism, use the <xref:System.Timers.Timer?displayP
 
 ##### Set up the polling mechanism
 
-1. Add the following code in the `MyNewService.OnStart` event to set up the polling mechanism:
+1. Add a `using` statement to **MyNewService.cs**, or an `Imports` statement to **MyNewService.vb**, for the <xref:System.Timers?displayProperty=nameWithType> namespace:
+
+   ```csharp
+   using System.Timers;
+   ```
+
+   ```vb
+   Imports System.Timers
+   ```
+
+2. Add the following code in the `MyNewService.OnStart` event to set up the polling mechanism:
 
    ```csharp
    // Set up a timer that triggers every minute.
@@ -119,17 +129,17 @@ To set up a simple polling mechanism, use the <xref:System.Timers.Timer?displayP
    timer.Start()
    ```
 
-2. Add a `using` statement to **MyNewService.cs**, or an `Imports` statement to **MyNewService.vb**, for the <xref:System.Timers?displayProperty=nameWithType> namespace:
+3. In the `MyNewService` class, add a member variable. It contains the identifier of the next event to write into the event log:
 
    ```csharp
-   using System.Timers;
+   private int eventId = 1;
    ```
 
    ```vb
-   Imports System.Timers
+   Private eventId As Integer = 1
    ```
 
-3. In the `MyNewService` class, add the `OnTimer` method to handle the <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event:
+4. In the `MyNewService` class, add the `OnTimer` method to handle the <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event:
 
    ```csharp
    public void OnTimer(object sender, ElapsedEventArgs args)
@@ -147,16 +157,6 @@ To set up a simple polling mechanism, use the <xref:System.Timers.Timer?displayP
    End Sub
    ```
 
-4. In the `MyNewService` class, add a member variable. It contains the identifier of the next event to write into the event log:
-
-   ```csharp
-   private int eventId = 1;
-   ```
-
-   ```vb
-   Private eventId As Integer = 1
-   ```
-
 Instead of running all your work on the main thread, you can run tasks by using background worker threads. For more information, see <xref:System.ComponentModel.BackgroundWorker?displayProperty=fullName>.
 
 ### Define what occurs when the service is stopped
@@ -170,7 +170,7 @@ Insert a line of code in the <xref:System.ServiceProcess.ServiceBase.OnStop%2A> 
 
 You can override the <xref:System.ServiceProcess.ServiceBase.OnPause%2A>, <xref:System.ServiceProcess.ServiceBase.OnContinue%2A>, and <xref:System.ServiceProcess.ServiceBase.OnShutdown%2A> methods to define additional processing for your component.
 
-The following code shows how you to override the <xref:System.ServiceProcess.ServiceBase.OnContinue%2A> method in the `MyNewService` class:
+The following code shows how you can override the <xref:System.ServiceProcess.ServiceBase.OnContinue%2A> method in the `MyNewService` class:
 
 [!code-csharp[VbRadconService#5](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#5)]
 [!code-vb[VbRadconService#5](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#5)]
@@ -459,7 +459,7 @@ Each Windows service has a registry entry under the **HKEY_LOCAL_MACHINE\SYSTEM\
 
 2. On the **Application** tab, in the **Startup object** list, choose **MyNewService.Program**, or **Sub Main** for Visual Basic projects.
 
-3. To build the project, in **Solution Explorer**, choose **Build** from the shortcut menu for your project (or press **Ctrl**+**Shift**+**B**).
+3. To build the project, in **Solution Explorer**, choose **Build** from the shortcut menu for your project (or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>).
 
 ## Install the service
 
@@ -488,7 +488,7 @@ For more information, see [How to: Install and uninstall services](how-to-instal
 
 ## Start and run the service
 
-1. In Windows, open the **Services** desktop app. Press **Windows**+**R** to open the **Run** box, enter *services.msc*, and then press **Enter** or select **OK**.
+1. In Windows, open the **Services** desktop app. Press **Windows**+**R** to open the **Run** box, enter *services.msc*, and then press <kbd>Enter</kbd> or select **OK**.
 
      You should see your service listed in **Services**, displayed alphabetically by the display name that you set for it.
 
@@ -505,7 +505,7 @@ For more information, see [How to: Install and uninstall services](how-to-instal
 1. In Windows, open the **Event Viewer** desktop app. Enter *Event Viewer* in the Windows search bar, and then select **Event Viewer** from the search results.
 
    > [!TIP]
-   > In Visual Studio, you can access event logs by opening **Server Explorer** from the **View** menu (or press **Ctrl**+**Alt**+**S**) and expanding the **Event Logs** node for the local computer.
+   > In Visual Studio, you can access event logs by opening **Server Explorer** from the **View** menu (or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd>) and expanding the **Event Logs** node for the local computer.
 
 2. In **Event Viewer**, expand **Applications and Services Logs**.
 

@@ -4,9 +4,11 @@ description: An introduction to Blazor and writing full-stack web apps with .NET
 author: danroth27
 ms.author: daroth
 no-loc: [Blazor, WebAssembly]
-ms.date: 12/2/2021
+ms.date: 04/11/2022
 ---
 # An introduction to Blazor for ASP.NET Web Forms developers
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 The ASP.NET Web Forms framework has been a staple of .NET web development since the .NET Framework first shipped in 2002. Back when the Web was still largely in its infancy, ASP.NET Web Forms made building web apps simple and productive by adopting many of the patterns that were used for desktop development. In ASP.NET Web Forms, web pages can be quickly composed from reusable UI controls. User interactions are handled naturally as events. There's a rich ecosystem of Web Forms UI controls provided by Microsoft and control vendors. The controls ease the efforts of connecting to data sources and displaying rich data visualizations. For the visually inclined, the Web Forms designer provides a simple drag-and-drop interface for managing controls.
 
@@ -27,11 +29,11 @@ Most modern web frameworks are now also open-source, which has a number of benef
 
 The .NET community has embraced both cross-platform support and open-source. .NET Core is an open-source and cross-platform implementation of .NET that runs on a plethora of platforms, including Windows, macOS, and various Linux distributions. Xamarin provides Mono, an open-source version of .NET. Mono runs on Android, iOS, and a variety of other form factors, including watches and smart TVs. In 2020, Microsoft released [.NET 5](https://devblogs.microsoft.com/dotnet/announcing-net-5-0/) that reconciled .NET Core and Mono into "a single .NET runtime and framework that can be used everywhere and that has uniform runtime behaviors and developer experiences."
 
-Will ASP.NET Web Forms benefit from the move to open-source and cross-platform support? The answer, unfortunately, is no, or at least not to the same extent as the rest of the platform. The .NET team [made it clear](https://devblogs.microsoft.com/dotnet/net-core-is-the-future-of-net/) that ASP.NET Web Forms won't be ported to .NET Core or .NET 6. Why is that?
+Will ASP.NET Web Forms benefit from the move to open-source and cross-platform support? The answer, unfortunately, is no, or at least not to the same extent as the rest of the platform. The .NET team [made it clear](https://devblogs.microsoft.com/dotnet/net-core-is-the-future-of-net/) that ASP.NET Web Forms won't be ported to .NET Core or .NET 7. Why is that?
 
 There were efforts in the early days of .NET Core to port ASP.NET Web Forms. The number of breaking changes required were found to be too drastic. There's also an admission here that even for Microsoft, there's a limit to the number of web frameworks that it can support simultaneously. Perhaps someone in the community will take up the cause of creating an open-source and cross-platform version of ASP.NET Web Forms. The [source code for ASP.NET Web Forms](https://github.com/microsoft/referencesource) has been made available publicly in reference form. But for the time being, it seems ASP.NET Web Forms will remain Windows-only and without an open-source contribution model. If cross-platform support or open-source become important for your scenarios, then you'll need to look for something new.
 
-Does this mean ASP.NET Web Forms is *dead* and should no longer be used? Of course not! As long as the .NET Framework ships as part of Windows, ASP.NET Web Forms will be a supported framework. For many Web Forms developers, the lack of cross-platform and open-source support is a non-issue. If you don't have a requirement for cross-platform support, open-source, or any of the other new features in .NET Core or .NET 6, then sticking with ASP.NET Web Forms on Windows is fine. ASP.NET Web Forms will continue to be a productive way to write web apps for many years to come.
+Does this mean ASP.NET Web Forms is *dead* and should no longer be used? Of course not! As long as the .NET Framework ships as part of Windows, ASP.NET Web Forms will be a supported framework. For many Web Forms developers, the lack of cross-platform and open-source support is a non-issue. If you don't have a requirement for cross-platform support, open-source, or any of the other new features in .NET Core or .NET 7, then sticking with ASP.NET Web Forms on Windows is fine. ASP.NET Web Forms will continue to be a productive way to write web apps for many years to come.
 
 But there's another trend worth considering, and that's the shift to the client.
 

@@ -1,43 +1,40 @@
 ---
 description: "Learn more about: GetStartupNotificationEvent Function"
 title: "GetStartupNotificationEvent Function"
-ms.date: "03/30/2017"
+ms.date: "03/21/2022"
 api_name: 
   - "GetStartupNotificationEvent"
 api_location: 
   - "dbgshim.dll"
-api_type: 
-  - "COM"
 f1_keywords: 
   - "GetStartupNotificationEvent"
 helpviewer_keywords: 
   - "GetStartupNotificationEvent function"
-  - "debugging API [Silverlight]"
-  - "Silverlight, debugging"
+  - "debugging API [.NET Core]"
+  - ".NET Core, debugging"
 ms.assetid: c94b1b61-045a-4695-bacd-0f18c5acc246
 topic_type: 
   - "apiref"
 ---
 # GetStartupNotificationEvent Function
 
-Creates or opens an event handle that will be signaled upon by any common language runtime (CLR) that is loading in the specified target process.  
+Creates or opens an event handle that will be signaled upon by any common language runtime (CLR) that is loading in the specified target process. This API is Windows only.
   
 ## Syntax  
   
 ```cpp  
-HRESULT GetStartupNotificationEvent  
-    (  
+HRESULT GetStartupNotificationEvent (  
     [in]  DWORD     debuggeePID,  
     [out]  HANDLE*  phStartupEvent  
-    );  
+);  
 ```  
   
 ## Parameters  
 
- `debuggeePID`  
+ `debuggeePID`\
  [in] Process identifier of the target process from which to receive CLR startup notifications.  
   
- `phStartupEvent`  
+ `phStartupEvent`\
  [out] A pointer to a handle that will be signaled by a CLR on startup.  
   
 ## Return Value  
@@ -59,10 +56,10 @@ HRESULT GetStartupNotificationEvent
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
+ **Platforms:** See [.NET Core supported operating systems](../../../core/install/windows.md?pivots=os-windows).  
   
  **Header:** dbgshim.h  
   
  **Library:** dbgshim.dll  
   
- **.NET Framework Versions:** 3.5 SP1
+ **.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]

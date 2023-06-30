@@ -21,7 +21,7 @@ SQLite also supports **read uncommitted** when using a shared cache. This level 
 
 - A *dirty read* occurs when changes pending in one transaction are returned by a query outside of the transaction, but the changes in the transaction are rolled back. The results contain data that was never actually committed to the database.
 
-- A *nonrepeatable read* occurs when a transaction queries same row twice, but the results are different because it was changed between the two queries by another transaction.
+- A *nonrepeatable read* occurs when a transaction queries the same row twice, but the results are different because it was changed between the two queries by another transaction.
 
 - *Phantoms* are rows that get changed or added to meet the where clause of a query during a transaction. If allowed, the same query could return different rows when executed twice in the same transaction.
 

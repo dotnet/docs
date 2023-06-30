@@ -66,8 +66,6 @@ The `dotnet workload update` command also downloads advertising manifests. The d
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 
 [!INCLUDE [disable-parallel](../../../includes/cli-disable-parallel.md)]

@@ -1,6 +1,6 @@
 ---
-title: "C# Coding Conventions"
-description: Learn about coding conventions in C#. Coding conventions create a consistent look to the code and facilitate copying, changing, and maintaining the code.
+title: "Common C# Coding Conventions"
+description: Learn about commonly used coding conventions in C#. Coding conventions create a consistent look to the code and facilitate copying, changing, and maintaining the code.
 ms.date: 07/16/2021
 helpviewer_keywords:
   - "coding conventions, C#"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "C# language, coding conventions"
 ---
 
-# C# Coding Conventions
+# Common C# Coding Conventions
 
 Coding conventions serve the following purposes:
 
@@ -20,7 +20,7 @@ Coding conventions serve the following purposes:
 > - They demonstrate C# best practices.
 
 > [!IMPORTANT]
-> The guidelines in this article are used by Microsoft to develop samples and documentation. They were adopted from the [.NET Runtime, C# Coding Style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md) guidelines. You can use them, or adapt them to your needs. The primary objectives are consistency and readability within your project, team, organization, or company source code.
+> The guidelines in this article are used by Microsoft to develop samples and documentation. They were adopted from the [.NET Runtime, C# Coding Style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md) guidelines. You can use them, or adapt them to your needs. They are meant to be an example of common C# conventions, and not an authoritative list (see [Framework Design Guidelines](../../../standard/design-guidelines/index.md) for that). The primary objectives are consistency and readability within your project, team, organization, or company source code.
 
 ## Naming conventions
 
@@ -153,6 +153,89 @@ Good layout uses formatting to emphasize the structure of your code and to make 
 - Use parentheses to make clauses in an expression apparent, as shown in the following code.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet2":::
+  
+## Place the using directives outside the namespace declaration
+
+When a `using` directive is outside a namespace declaration, that imported namespace is its fully qualified name. That's more clear. When the `using` directive is inside the namespace, it could be either relative to that namespace or it's fully qualified name. That's ambiguous.
+
+```csharp
+using Azure;
+
+namespace CoolStuff.AwesomeFeature
+{
+    public class Awesome
+    {
+        public void Stuff()
+        {
+            WaitUntil wait = WaitUntil.Completed;
+            …
+        }
+    }
+}
+```
+
+Assuming there is a reference (direct, or indirect) to the <xref:Azure.WaitUntil> class.
+
+Now, let's change it slightly:
+
+```csharp
+namespace CoolStuff.AwesomeFeature
+{
+    using Azure;
+    
+    public class Awesome
+    {
+        public void Stuff()
+        {
+            WaitUntil wait = WaitUntil.Completed;
+            …
+        }
+    }
+}
+```
+
+And it compiles today. And tomorrow. But then sometime next week this (untouched) code fails with two errors:
+
+```console
+- error CS0246: The type or namespace name 'WaitUntil' could not be found (are you missing a using directive or an assembly reference?)
+- error CS0103: The name 'WaitUntil' does not exist in the current context
+```
+
+One of the dependencies has introduced this class in a namespace then ends with `.Azure`:
+
+```csharp
+namespace CoolStuff.Azure
+{
+    public class SecretsManagement
+    {
+        public string FetchFromKeyVault(string vaultId, string secretId) { return null; }
+    }
+}
+```
+
+A `using` directive placed inside a namespace is context-sensitive and complicates name resolution. In this example, it's the first namespace that it finds.
+
+- `CoolStuff.AwesomeFeature.Azure`
+- `CoolStuff.Azure`
+- `Azure`
+
+Adding a new namespace that matches either `CoolStuff.Azure` or `CoolStuff.AwesomeFeature.Azure` would match before the global `Azure` namespace. You could resolve it by adding the `global::` modifier to the `using` declaration. However, it's easier to place `using` declarations outside the namespace instead.
+
+```csharp
+namespace CoolStuff.AwesomeFeature
+{
+    using global::Azure;
+    
+    public class Awesome
+    {
+        public void Stuff()
+        {
+            WaitUntil wait = WaitUntil.Completed;
+            …
+        }
+    }
+}
+```
 
 ## Commenting conventions
 
@@ -186,7 +269,7 @@ The following sections describe practices that the C# team follows to prepare co
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet8":::
 
-- Don't use [var](../../language-reference/keywords/var.md) when the type is not apparent from the right side of the assignment. Don't assume the type is clear from a method name. A variable type is considered clear if it's a `new` operator or an explicit cast.
+- Don't use [var](../../language-reference/statements/declarations.md#implicitly-typed-local-variables) when the type is not apparent from the right side of the assignment. Don't assume the type is clear from a method name. A variable type is considered clear if it's a `new` operator or an explicit cast.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet9":::
 
@@ -194,7 +277,7 @@ The following sections describe practices that the C# team follows to prepare co
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet10":::
 
-- Avoid the use of `var` in place of [dynamic](../../language-reference/builtin-types/reference-types.md). Use `dynamic` when you want run-time type inference. For more information, see [Using type dynamic (C# Programming Guide)](../../programming-guide/types/using-type-dynamic.md).
+- Avoid the use of `var` in place of [dynamic](../../language-reference/builtin-types/reference-types.md). Use `dynamic` when you want run-time type inference. For more information, see [Using type dynamic (C# Programming Guide)](../../advanced-topics/interop/using-type-dynamic.md).
 
 - Use implicit typing to determine the type of the loop variable in [`for`](../../language-reference/statements/iteration-statements.md#the-for-statement) loops.
 
@@ -202,7 +285,7 @@ The following sections describe practices that the C# team follows to prepare co
 
     :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet7":::
 
-- Don't use implicit typing to determine the type of the loop variable in [`foreach`](../../language-reference/statements/iteration-statements.md#the-foreach-statement) loops.
+- Don't use implicit typing to determine the type of the loop variable in [`foreach`](../../language-reference/statements/iteration-statements.md#the-foreach-statement) loops. In most cases, the type of elements in the collection isn't immediately obvious. The collection's name shouldn't be solely relied upon for inferring the type of its elements.
 
   The following example uses explicit typing in a `foreach` statement.
 
@@ -224,10 +307,6 @@ Use the concise syntax when you initialize arrays on the declaration line. In th
 If you use explicit instantiation, you can use `var`.
 
 :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet13b":::
-
-If you specify an array size, you have to initialize the elements one at a time.
-
-:::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet13c":::
 
 ### Delegates
 
@@ -251,15 +330,15 @@ The following declaration uses the full syntax.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet15c":::
 
-### `try`-`catch` and `using` statements in exception handling
+### `try-catch` and `using` statements in exception handling
 
-- Use a [try-catch](../../language-reference/keywords/try-catch.md) statement for most exception handling.
+- Use a [try-catch](../../language-reference/statements/exception-handling-statements.md#the-try-catch-statement) statement for most exception handling.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet16":::
 
-- Simplify your code by using the C# [using statement](../../language-reference/keywords/using-statement.md). If you have a [try-finally](../../language-reference/keywords/try-finally.md) statement in which the only code in the `finally` block is a call to the <xref:System.IDisposable.Dispose%2A> method, use a `using` statement instead.
+- Simplify your code by using the C# [using statement](../../language-reference/statements/using.md). If you have a [try-finally](../../language-reference/statements/exception-handling-statements.md#the-try-finally-statement) statement in which the only code in the `finally` block is a call to the <xref:System.IDisposable.Dispose%2A> method, use a `using` statement instead.
 
-  In the following example, the `try`-`finally` statement only calls `Dispose` in the `finally` block.
+  In the following example, the `try-finally` statement only calls `Dispose` in the `finally` block.
 
    :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet17a":::
 
@@ -267,7 +346,7 @@ The following declaration uses the full syntax.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet17b":::
 
-  In C# 8 and later versions, use the new [`using` syntax](../../language-reference/keywords/using-statement.md) that doesn't require braces:
+  Use the new [`using` syntax](../../language-reference/statements/using.md) that doesn't require braces:
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet17c":::
 

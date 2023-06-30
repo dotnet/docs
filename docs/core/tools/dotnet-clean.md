@@ -5,7 +5,7 @@ ms.date: 02/14/2020
 ---
 # dotnet clean
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -34,8 +34,6 @@ The MSBuild project or solution to clean. If a project or solution file is not s
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [configuration](../../../includes/cli-configuration-clean.md)]
 
 * **`-f|--framework <FRAMEWORK>`**
@@ -48,11 +46,15 @@ The MSBuild project or solution to clean. If a project or solution file is not s
 
 * **`--nologo`**
 
-  Doesn't display the startup banner or the copyright message. Available since .NET Core 3.0 SDK.
+  Doesn't display the startup banner or the copyright message.
 
 * **`-o|--output <OUTPUT_DIRECTORY>`**
 
   The directory that contains the build artifacts to clean. Specify the `-f|--framework <FRAMEWORK>` switch with the output directory switch if you specified the framework when the project was built.
+
+  - .NET 7.0.200 SDK and later
+
+    If you specify the `--output` option when running this command on a solution, the CLI will emit a warning (an error in 7.0.200) due to the unclear semantics of the output path. The `--output` option is disallowed because all outputs of all built projects would be copied into the specified directory, which isn't compatible with multi-targeted projects, as well as projects that have different versions of direct and transitive dependencies. For more information, see [Solution-level `--output` option no longer valid for build-related commands](../compatibility/sdk/7.0/solution-level-output-no-longer-valid.md).
 
 * **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 

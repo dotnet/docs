@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Define the variables in "$(var.*) expressions" -->
+<?define Name = ".NET Joke Service" ?>
+<?define Manufacturer = "Microsoft" ?>
+<?define Version = "1.0.0.0" ?>
+<?define UpgradeCode = "94B949C1-89A0-4A5B-AE3B-E4A65F7967C9" ?>
+
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+    <Package Name="$(Name)"
+             Manufacturer="$(Manufacturer)"
+             Version="$(Version)"
+             UpgradeCode="$(var.UpgradeCode)"
+             Compressed="true">
+        
+        <!-- Allow upgrades and prevent downgrades -->
+        <MajorUpgrade DowngradeErrorMessage="A later version of [ProductName] is already installed. Setup will now exit." />
+
+        <!-- Define the directory structure -->
+        <Directory Id="TARGETDIR" Name="SourceDir">
+            <Directory Id="ProgramFilesFolder">
+
+                <!-- Create a folder inside program files -->
+                <Directory Id="ROOTDIRECTORY" Name="$(var.Manufacturer)">
+
+                    <!-- Create a folder within the parent folder given the name -->
+                    <Directory Id="INSTALLFOLDER" Name="$(Name)" />
+                </Directory>
+            </Directory>
+        </Directory>
+
+        <!-- The files inside this DirectoryRef are linked to
+             the App.WindowsService directory via INSTALLFOLDER -->
+        <DirectoryRef Id="INSTALLFOLDER">
+
+            <!-- Create a single component which is the App.WindowsService.exe file -->
+            <Component Id="ServiceExecutable" Bitness="always64">
+                
+                <!-- Copies the App.WindowsService.exe file using the
+                     project reference preprocessor variables -->
+                <File Id="App.WindowsService.exe"
+                      Source="$(var.App.WindowsService.TargetDir)publish\App.WindowsService.exe"
+                      KeyPath="true" />
+
+                <!-- Remove all files from the INSTALLFOLDER on uninstall -->
+                <RemoveFile Id="ALLFILES" Name="*.*" On="both" />
+
+                <!-- Tell WiX to install the Service -->
+                <ServiceInstall Id="ServiceInstaller"
+                                Type="ownProcess"
+                                Name="App.WindowsService"
+                                DisplayName="$(Name)"
+                                Description="A joke service that periodically logs nerdy humor."
+                                Start="auto"
+                                ErrorControl="normal" />
+
+                <!-- Tell WiX to start the Service -->
+                <ServiceControl Id="StartService"
+                                Start="install"
+                                Stop="both"
+                                Remove="uninstall"
+                                Name="App.WindowsService"
+                                Wait="true" />
+            </Component>
+        </DirectoryRef>
+
+        <!-- Tell WiX to install the files -->
+        <Feature Id="Service" Title="App.WindowsService Setup" Level="1">
+            <ComponentRef Id="ServiceExecutable" />
+        </Feature>
+
+    </Package>
+</Wix>

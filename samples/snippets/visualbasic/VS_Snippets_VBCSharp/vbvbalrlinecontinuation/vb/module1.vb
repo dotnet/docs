@@ -1,6 +1,5 @@
 ﻿Imports System.Diagnostics
 Imports System.Collections.Generic
-Imports System.Security.Permissions
 
 Public Module Module1
 
@@ -17,7 +16,6 @@ Public Module Module1
     End Function
     '</Snippet1>
 
-    <SecurityPermission(SecurityAction.LinkDemand)>
     Private Sub RunAll()
         '<Snippet2>
         Dim username = GetUsername(

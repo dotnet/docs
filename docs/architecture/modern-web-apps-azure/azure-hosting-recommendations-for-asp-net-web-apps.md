@@ -8,6 +8,8 @@ ms.date: 12/12/2021
 
 # Azure hosting recommendations for ASP.NET Core web apps
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 > "Line-of-business leaders everywhere are bypassing IT departments to get applications from the cloud (also known as SaaS) and paying for them like they would a magazine subscription. And when the service is no longer required, they can cancel the subscription with no equipment left unused in the corner."  
 > _\- Daryl Plummer, Gartner analyst_
 
@@ -131,22 +133,22 @@ Figure 11-1 shows an example reference architecture. This diagram describes a re
   <https://azure.microsoft.com/solutions/architecture/>
 
 - Azure Basic Web Application Architecture\
-  [https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app](/azure/architecture/reference-architectures/app-service-web-app/basic-web-app)
+  [https://learn.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app](/azure/architecture/reference-architectures/app-service-web-app/basic-web-app)
 
 - Design Patterns for Microservices\
-  [https://docs.microsoft.com/azure/architecture/microservices/design/patterns](/azure/architecture/microservices/design/patterns)
+  [https://learn.microsoft.com/azure/architecture/microservices/design/patterns](/azure/architecture/microservices/design/patterns)
 
 - Azure Developer Guide\
   <https://azure.microsoft.com/campaigns/developer-guide/>
 
 - Web Apps overview\
-  [https://docs.microsoft.com/azure/app-service/app-service-web-overview](/azure/app-service/app-service-web-overview)
+  [https://learn.microsoft.com/azure/app-service/app-service-web-overview](/azure/app-service/app-service-web-overview)
 
 - Web App for Containers\
   <https://azure.microsoft.com/services/app-service/containers/>
 
 - Introduction to Azure Kubernetes Service (AKS)\
-  [https://docs.microsoft.com/azure/aks/intro-kubernetes](/azure/aks/intro-kubernetes)
+  [https://learn.microsoft.com/azure/aks/intro-kubernetes](/azure/aks/intro-kubernetes)
 
 >[!div class="step-by-step"]
 >[Previous](development-process-for-azure.md)

@@ -54,4 +54,5 @@ Clears all `namedCache` entries in the `namedCaches` collection for a memory cac
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [\<namedCaches> Element (Cache Settings)](namedcaches-element-cache-settings.md)

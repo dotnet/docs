@@ -47,7 +47,7 @@ The .NET Core resource fallback process involves the following steps:
 
 3. If a satellite assembly is loaded:
    - The <xref:System.AppDomain.AssemblyLoad?displayProperty=nameWithType> event is raised.
-   - The assembly is searched it for the requested resource. If the runtime finds the resource in the assembly, it uses it. If it doesn't find the resource, it continues the search.
+   - The assembly is searched for the requested resource. If the runtime finds the resource in the assembly, it uses it. If it doesn't find the resource, it continues the search.
 
     > [!NOTE]
     > To find a resource within the satellite assembly, the runtime searches for the resource file requested by the <xref:System.Resources.ResourceManager> for the current <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType>. Within the resource file, it searches for the requested resource name. If either is not found, the resource is treated as not found.

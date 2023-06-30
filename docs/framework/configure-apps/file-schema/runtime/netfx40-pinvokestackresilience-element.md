@@ -77,6 +77,7 @@ The following example shows how to opt into increased resilience against incorre
 
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
 - [pInvokeStackImbalance](../../../debug-trace-profile/pinvokestackimbalance-mda.md)

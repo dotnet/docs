@@ -1,7 +1,7 @@
 ---
 title: Grain directory
 description: Learn about the grain directory in .NET Orleans.
-ms.date: 02/01/2022
+ms.date: 03/16/2022
 ---
 
 # Orleans grain directory
@@ -31,7 +31,7 @@ By default, you don't have to do anything; the in-memory grain directory will be
 
 ### Grain configuration
 
-Specifying the grain directory plugin name with the `GrainDirectory` attribute:
+Specifying the grain directory plugin name with the <xref:Orleans.GrainDirectory.GrainDirectoryAttribute>:
 
 ```csharp
 [GrainDirectory(GrainDirectoryName = "my-grain-directory")]
@@ -56,7 +56,7 @@ The Azure grain directory is configured like this:
 ```csharp
 siloBuilder.AddAzureTableGrainDirectory(
     "my-grain-directory",
-    options => options.ConnectionString =  = azureConnectionString);
+    options => options.ConnectionString = azureConnectionString);
 ```
 
 You can configure multiple directories with different names to use for different grain classes:
@@ -71,5 +71,5 @@ siloBuilder
         options => options.ConfigurationOptions = redisConfiguration2)
     .AddAzureTableGrainDirectory(
         "azure-directory",
-        options => options.ConnectionString =  = azureConnectionString);
+        options => options.ConnectionString = azureConnectionString);
 ```

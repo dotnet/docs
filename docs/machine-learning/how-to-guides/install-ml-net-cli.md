@@ -1,7 +1,7 @@
 ---
 title: How to install the ML.NET Command-Line Interface (CLI) tool
 description: Learn how to install, upgrade, downgrade, and uninstall the ML.NET Command-Line Interface (CLI) tool.
-ms.date: 02/22/2022
+ms.date: 03/08/2023
 ms.custom: mlnet-tooling
 ms.topic: how-to
 ---
@@ -21,7 +21,7 @@ The ML.NET CLI generates good quality ML.NET models and source code using automa
 
 - (Optional) [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
 
-You can run the generated C# code projects with Visual Studio by pressing the `F5` key or with `dotnet run` (.NET CLI).
+You can run the generated C# code projects with Visual Studio by pressing the <kbd>F5</kbd> key or with `dotnet run` (.NET CLI).
 
 Note: If after installing .NET SDK the `dotnet tool` command is not working, sign out from Windows and sign in again.
 
@@ -98,7 +98,13 @@ mlnet
 You should see the help for available commands for the mlnet tool such as the 'classification' command.
 
 > [!IMPORTANT]
-> If you are running Linux or macOS, note that if you're using a console other than Bash (for example, zsh, which is the new default for macOS), then you'll need to give `mlnet` executable permissions and include `mlnet` to the system path. Instructions on how to do this should appear in the terminal when you install `mlnet` (or any global tool).
+> If you're running Linux or macOS and using a console other than Bash (for example, zsh, which is the new default for macOS), then you'll need to give `mlnet` executable permissions and include `mlnet` to the system path. In general, you can do so with the following command:  
+>
+> ```console
+> chmod +x <PATH-TO-MLNET-CLI-EXECUTABLE>
+> ```
+>
+> More detailed instructions on how to do this should appear in the terminal when you install `mlnet` (or any global tool).
 >
 > Alternatively, you can try using the following command to run the mlnet tool:
 >

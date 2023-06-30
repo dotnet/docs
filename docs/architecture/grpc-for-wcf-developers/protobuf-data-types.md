@@ -6,6 +6,8 @@ ms.date: 09/09/2019
 
 # Protobuf scalar data types
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Protocol Buffer (Protobuf) supports a range of native scalar value types. The following table lists them all with their equivalent C# type:
 
 | Protobuf type | C# type      | Notes |
@@ -97,7 +99,7 @@ For values that require explicit null, such as using `int?` in your C# code, Pro
 ```protobuf  
 syntax = "proto3"
 
-import "google/protobuf/wrappers.proto"
+import "google/protobuf/wrappers.proto";
 
 message Person {
 

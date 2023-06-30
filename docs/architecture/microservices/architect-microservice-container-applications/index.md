@@ -5,6 +5,8 @@ ms.date: 01/13/2021
 ---
 # Architecting container and microservice-based applications
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 *Microservices offer great benefits but also raise huge new challenges. Microservice architecture patterns are fundamental pillars when creating a microservice-based application.*
 
 Earlier in this guide, you learned basic concepts about containers and Docker. That information was the minimum you needed to get started with containers. Even though containers are enablers of, and a great fit for microservices, they aren't mandatory for a microservice architecture. Many architectural concepts in this architecture section could be applied without containers. However, this guide focuses on the intersection of both due to the already introduced importance of containers.

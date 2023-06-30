@@ -2,7 +2,7 @@
 description: "using directive - C# Reference"
 title: "using directive - C# Reference"
 ms.date: 08/19/2021
-f1_keywords: 
+f1_keywords:
   - "using_CSharpKeyword"
 helpviewer_keywords:
   - "using directive [C#]"
@@ -19,7 +19,7 @@ using System.Text;
 You can apply two modifiers to a `using` directive:
 
 - The `global` modifier has the same effect as adding the same `using` directive to every source file in your project. This modifier was introduced in C# 10.
-- The `static` modifier imports the `static` members and nested types from a single type rather than importing all the types in a namespace. This modifier was introduced in C# 6.0.
+- The `static` modifier imports the `static` members and nested types from a single type rather than importing all the types in a namespace.
 
 You can combine both modifiers to import the static members from a type in all source files in your project.
 
@@ -32,7 +32,7 @@ using Project = PC.MyCompany.Project;
 You can use the `global` modifier on a *using alias directive*.
 
 > [!NOTE]
-> The `using` keyword is also used to create *using statements*, which help ensure that <xref:System.IDisposable> objects such as files and fonts are handled correctly. For more information about the *using statement*, see [using Statement](using-statement.md).
+> The `using` keyword is also used to create *using statements*, which help ensure that <xref:System.IDisposable> objects such as files and fonts are handled correctly. For more information about the *using statement*, see [using statement](../statements/using.md).
 
 The scope of a `using` directive without the `global` modifier is the file in which it appears.
 
@@ -41,7 +41,7 @@ The `using` directive can appear:
 - At the beginning of a source code file, before any namespace or type declarations.
 - In any namespace, but before any namespaces or types declared in that namespace, unless the `global` modifier is used, in which case the directive must appear before all namespace and type declarations.
 
-Otherwise, compiler error [CS1529](../../misc/cs1529.md) is generated.
+Otherwise, compiler error [CS1529](../compiler-messages/using-directive-errors.md) is generated.
 
 Create a `using` directive to use the types in a namespace without having to specify the namespace. A `using` directive doesn't give you access to any namespaces that are nested in the namespace you specify. Namespaces come in two categories: user-defined and system-defined. User-defined namespaces are namespaces defined in your code. For a list of the system-defined namespaces, see [.NET API Browser](../../../../api/index.md).
 
@@ -74,7 +74,7 @@ You can also globally include a namespace by adding a `<Using>` item to your pro
 
 ## static modifier
 
-The `using static` directive names a type whose static members and nested types you can access without specifying a type name. The `using static` directive was introduced in C# 6. Its syntax is:
+The `using static` directive names a type whose static members and nested types you can access without specifying a type name. Its syntax is:
 
 ```csharp
 using static <fully-qualified-type-name>;
@@ -158,6 +158,8 @@ The following example shows how to define a `using` directive and a `using` alia
 
 :::code language="csharp" source="./snippets/csrefKeywordsNamespace2.cs" id="Snippet9":::
 
+Beginning with C# 12, you can create aliases for types that were previously restricted, including [tuple types](../builtin-types/value-tuples.md#tuple-field-names), pointer types, and other unsafe types. For more information on the updated rules, see the [feature spec](~/_csharplang/proposals/using-alias-types.md).
+
 ## How to use the Visual Basic `My` namespace
 
 The <xref:Microsoft.VisualBasic.MyServices> namespace (`My` in Visual Basic) provides easy and intuitive access to a number of .NET classes, enabling you to write code that interacts with the computer, application, settings, resources, and so on. Although originally designed for use with Visual Basic, the `MyServices` namespace can be used in C# applications.
@@ -170,14 +172,15 @@ You need to add a reference to the *Microsoft.VisualBasic.dll* assembly in your 
 
 ## C# language specification
 
-For more information, see [Using directives](~/_csharpstandard/standard/namespaces.md#135-using-directives) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Using directives](~/_csharpstandard/standard/namespaces.md#145-using-directives) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
 
 For more information on the *global using* modifier, see the [global usings feature specification - C# 10](~/_csharplang/proposals/csharp-10.0/GlobalUsingDirective.md).
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Keywords](index.md)
+- [C# reference](../index.md)
+- [C# keywords](index.md)
 - [Namespaces](../../fundamentals/types/namespaces.md)
-- [using Statement](using-statement.md)
+- [Style rule IDE0005 - Remove unnecessary 'using' directives](../../../fundamentals/code-analysis/style-rules/ide0005.md)
+- [Style rule IDE0065 - 'using' directive placement](../../../fundamentals/code-analysis/style-rules/ide0065.md)
+- [`using` statement](../statements/using.md)

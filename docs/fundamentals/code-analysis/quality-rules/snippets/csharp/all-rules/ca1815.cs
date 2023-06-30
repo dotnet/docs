@@ -39,7 +39,7 @@ namespace ca1815_2
             return X ^ Y;
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (!(obj is Point))
                 return false;

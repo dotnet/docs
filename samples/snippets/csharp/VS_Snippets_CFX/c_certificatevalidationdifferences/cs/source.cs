@@ -4,14 +4,11 @@ using System.Collections;
 using System.ServiceModel;
 using System.Security.Cryptography.X509Certificates;
 using System.ServiceModel.Security;
-using System.Security.Permissions;
 using System.Net;
 using System.Net.Security;
 using System.Runtime.Serialization;
 using System.Xml.Schema;
 
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
 public class Test
 {
     public static void Main()

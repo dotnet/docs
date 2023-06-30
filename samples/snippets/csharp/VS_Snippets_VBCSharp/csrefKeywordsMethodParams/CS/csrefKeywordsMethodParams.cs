@@ -19,7 +19,7 @@ namespace KeywordsMethodParams
     }
     //</snippet1>
 
-    /* Commented out because this delibarately produces a compile error.
+    /* Commented out because this deliberately produces a compile error.
     //<snippet2>
     class CS0663_Example
     {

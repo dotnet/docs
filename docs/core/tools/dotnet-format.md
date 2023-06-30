@@ -85,7 +85,7 @@ None of the options below are required for the `dotnet format` command to succee
 
 #### Description
 
-The `dotnet format whitespace` subcommand will only run formatting rules associated with whitespace formatting. For a complete list of possible formatting options that you can specify in your *.editorconfig* file, see the [C# formatting rules](../../fundamentals/code-analysis/style-rules/formatting-rules.md#c-formatting-rules).
+The `dotnet format whitespace` subcommand will only run formatting rules associated with whitespace formatting. For a complete list of possible formatting options that you can specify in your *.editorconfig* file, see the [C# formatting options](../../fundamentals/code-analysis/style-rules/csharp-formatting-options.md).
 
 #### Options
 

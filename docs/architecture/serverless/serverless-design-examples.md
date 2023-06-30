@@ -9,6 +9,8 @@ ms.contributors: jeliknes-10172019
 ---
 # Serverless design examples
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 There are many design patterns that exist for serverless. This section captures some common scenarios that use serverless. What all of the examples have in common is the fundamental combination of an event trigger and business logic.
 
 ## Scheduling

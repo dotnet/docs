@@ -3,7 +3,7 @@ Option Strict On
 
 Imports System.Text.RegularExpressions
 
-Module Example
+Module ShowOptionsExamples
     Public Sub Main()
         ShowOptionsArgument()
         Console.WriteLine("-----")

@@ -1,7 +1,7 @@
 ---
 title: Character Classes in .NET Regular Expressions
 description: Learn how to use character classes to represent a set of characters in .NET regular expressions.
-ms.date: "03/30/2017"
+ms.date: 08/12/2022
 no-loc: ["Ll","Lu","Lt","Lo","Lm","Mn","Nd","Pc","Lu"]
 dev_langs: 
   - "csharp"
@@ -156,17 +156,17 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 
 ## Any character: .  
 
- The period character (.) matches any character except `\n` (the newline character, \u000A), with the following two qualifications:  
+ The period character (.) matches any character except `\n` (the newline character), with the following two qualifications:  
   
 - If a regular expression pattern is modified by the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option, or if the portion of the pattern that contains the `.` character class is modified by the `s` option, `.` matches any character. For more information, see [Regular Expression Options](regular-expression-options.md).  
   
-     The following example illustrates the different behavior of the `.` character class by default and with the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option. The regular expression `^.+` starts at the beginning of the string and matches every character. By default, the match ends at the end of the first line; the regular expression pattern matches the carriage return character, `\r` or \u000D, but it does not match `\n`. Because the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option interprets the entire input string as a single line, it matches every character in the input string, including `\n`.  
+     The following example illustrates the different behavior of the `.` character class by default and with the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option. The regular expression `^.+` starts at the beginning of the string and matches every character. By default, the match ends at the end of the first line; the regular expression pattern matches the carriage return character, `\r`, but it does not match `\n`. Because the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option interprets the entire input string as a single line, it matches every character in the input string, including `\n`.  
   
      [!code-csharp[Conceptual.Regex.Language.CharacterClasses#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.characterclasses/cs/any2.cs#5)]
      [!code-vb[Conceptual.Regex.Language.CharacterClasses#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/any2.vb#5)]  
   
 > [!NOTE]
-> Because it matches any character except `\n`, the `.` character class also matches `\r` (the carriage return character, \u000D).  
+> Because it matches any character except `\n`, the `.` character class also matches `\r` (the carriage return character).
   
 - In a positive or negative character group, a period is treated as a literal period character, and not as a character class. For more information, see [Positive Character Group](#PositiveGroup) and [Negative Character Group](#NegativeGroup) earlier in this topic. The following example provides an illustration by defining a regular expression that includes the period character (`.`) both as a character class and as a member of a positive character group. The regular expression `\b.*[.?!;:](\s|\z)` begins at a word boundary, matches any character until it encounters one of five punctuation marks, including a period, and then matches either a white-space character or the end of the string.  
   
@@ -186,7 +186,10 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
   
  `\p{` *name* `}`  
   
- matches any character that belongs to a Unicode general category or named block, where *name* is the category abbreviation or named block name. For a list of category abbreviations, see the [Supported Unicode General Categories](#SupportedUnicodeGeneralCategories) section later in this topic. For a list of named blocks, see the [Supported Named Blocks](#SupportedNamedBlocks) section later in this topic.  
+ matches any character that belongs to a Unicode general category or named block, where *name* is the category abbreviation or named block name. For a list of category abbreviations, see the [Supported Unicode General Categories](#SupportedUnicodeGeneralCategories) section later in this topic. For a list of named blocks, see the [Supported Named Blocks](#SupportedNamedBlocks) section later in this topic.
+
+> [!TIP]
+> Matching may be improved if the string is first normalized by calling the <xref:System.String.Normalize%2A?displayProperty=nameWithType> method.
   
  The following example uses the `\p{`*name*`}` construct to match both a Unicode general category (in this case, the `Pd`, or Punctuation, Dash category) and a named block (the `IsGreek` and `IsBasicLatin` named blocks).  
   
@@ -218,7 +221,10 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
  `\P{` *name* `}`  
   
  matches any character that does not belong to a Unicode general category or named block, where *name* is the category abbreviation or named block name. For a list of category abbreviations, see the [Supported Unicode General Categories](#SupportedUnicodeGeneralCategories) section later in this topic. For a list of named blocks, see the [Supported Named Blocks](#SupportedNamedBlocks) section later in this topic.  
-  
+
+> [!TIP]
+> Matching may be improved if the string is first normalized by calling the <xref:System.String.Normalize%2A?displayProperty=nameWithType> method.
+
  The following example uses the `\P{`*name*`}` construct to remove any currency symbols (in this case, the `Sc`, or Symbol, Currency category) from numeric strings.  
   
  [!code-csharp[Conceptual.RegEx.Language.CharacterClasses#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.characterclasses/cs/notcategory1.cs#7)]
@@ -310,8 +316,8 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 |`\r`|The carriage return character, \u000D.|  
 |`\t`|The tab character, \u0009.|  
 |`\v`|The vertical tab character, \u000B.|  
-|`\x85`|The ellipsis or NEXT LINE (NEL) character (…), \u0085.|  
-|`\p{Z}`|Matches any separator character.|  
+|`\x85`|The NEXT LINE (NEL) character, \u0085.|  
+|`\p{Z}`|Matches all [separator characters](#supported-unicode-general-categories). This includes the `Zs`, `Zl`, and `Zp` categories.|
   
  If ECMAScript-compliant behavior is specified, `\s` is equivalent to `[ \f\n\r\t\v]`. For information on ECMAScript regular expressions, see the "ECMAScript Matching Behavior" section in [Regular Expression Options](regular-expression-options.md).  
   
@@ -396,7 +402,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 
 ## Supported Unicode general categories  
 
- Unicode defines the general categories listed in the following table. For more information, see the "UCD File Format" and "General Category Values" subtopics at the [Unicode Character Database](https://www.unicode.org/reports/tr44/).  
+ Unicode defines the general categories listed in the following table. For more information, see the "UCD File Format" and "General Category Values" subtopics at the [Unicode Character Database](https://www.unicode.org/reports/tr44/), Sec. 5.7.1, Table 12.  
   
 |Category|Description|  
 |--------------|-----------------|  
@@ -409,7 +415,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 |`Mn`|Mark, Nonspacing|  
 |`Mc`|Mark, Spacing Combining|  
 |`Me`|Mark, Enclosing|  
-|`M`|All diacritic marks. This includes the `Mn`, `Mc`, and `Me` categories.|  
+|`M`|All combining marks. This includes the `Mn`, `Mc`, and `Me` categories.|  
 |`Nd`|Number, Decimal Digit|  
 |`Nl`|Number, Letter|  
 |`No`|Number, Other|  
@@ -435,8 +441,8 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 |`Cf`|Other, Format|  
 |`Cs`|Other, Surrogate|  
 |`Co`|Other, Private Use|  
-|`Cn`|Other, Not Assigned (no characters have this property)|  
-|`C`|All control characters. This includes the `Cc`, `Cf`, `Cs`, `Co`, and `Cn` categories.|  
+|`Cn`|Other, Not Assigned or Noncharacter|  
+|`C`|All other characters. This includes the `Cc`, `Cf`, `Cs`, `Co`, and `Cn` categories.|  
   
  You can determine the Unicode category of any particular character by passing that character to the <xref:System.Char.GetUnicodeCategory%2A> method. The following example uses the <xref:System.Char.GetUnicodeCategory%2A> method to determine the category of each element in an array that contains selected Latin characters.  
   

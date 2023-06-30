@@ -10,16 +10,10 @@ namespace CsCsrefProgrammingGenerics
             // T used in non-generic constructor.
             public Node(T t)
             {
-                next = null;
                 data = t;
             }
 
-            private Node next;
-            public Node Next
-            {
-                get { return next; }
-                set { next = value; }
-            }
+            public Node? Next { get; set; }
 
             // T as private member data type.
             private T data;
@@ -32,7 +26,7 @@ namespace CsCsrefProgrammingGenerics
             }
         }
 
-        private Node head;
+        private Node? head;
 
         // constructor
         public GenericList()
@@ -50,7 +44,7 @@ namespace CsCsrefProgrammingGenerics
 
         public IEnumerator<T> GetEnumerator()
         {
-            Node current = head;
+            Node? current = head;
 
             while (current != null)
             {
@@ -59,7 +53,6 @@ namespace CsCsrefProgrammingGenerics
             }
         }
     }
-    //</Snippet2>
 
     class TestGenericList2
     {
@@ -183,7 +176,7 @@ namespace CsCsrefProgrammingGenerics
         {
             private class Node
             {
-                private Node next;
+                private Node? next;
                 private T data;
 
                 public Node(T t)
@@ -192,7 +185,7 @@ namespace CsCsrefProgrammingGenerics
                     data = t;
                 }
 
-                public Node Next
+                public Node? Next
                 {
                     get { return next; }
                     set { next = value; }
@@ -205,7 +198,7 @@ namespace CsCsrefProgrammingGenerics
                 }
             }
 
-            private Node head;
+            private Node? head;
 
             public GenericList() //constructor
             {
@@ -221,7 +214,7 @@ namespace CsCsrefProgrammingGenerics
 
             public IEnumerator<T> GetEnumerator()
             {
-                Node current = head;
+                Node? current = head;
 
                 while (current != null)
                 {
@@ -230,14 +223,14 @@ namespace CsCsrefProgrammingGenerics
                 }
             }
 
-            public T FindFirstOccurrence(string s)
+            public T? FindFirstOccurrence(string s)
             {
-                Node current = head;
-                T t = null;
+                Node? current = head;
+                T? t = null;
 
                 while (current != null)
                 {
-                    //The constraint enables access to the Name property.
+                    // The constraint enables access to the Name property.
                     if (current.Data.Name == s)
                     {
                         t = current.Data;
@@ -359,45 +352,6 @@ namespace CsCsrefProgrammingGenerics
     }
 
     //---------------------------------------------------------------------------
-    class WrapInterfaces
-    {
-        //<Snippet30>
-        class Stack<T> where T : System.IComparable<T>, IEnumerable<T>
-        {
-        }
-        //</Snippet30>
-
-        //<Snippet31>
-        interface IDictionary<K, V>
-        {
-        }
-        //</Snippet31>
-
-        //<Snippet32>
-        interface IMonth<T> { }
-
-        interface IJanuary     : IMonth<int> { }  //No error
-        interface IFebruary<T> : IMonth<int> { }  //No error
-        interface IMarch<T>    : IMonth<T> { }    //No error
-        //interface IApril<T>  : IMonth<T, U> {}  //Error
-        //</Snippet32>
-
-        //<Snippet33>
-        interface IBaseInterface<T> { }
-
-        class SampleClass : IBaseInterface<string> { }
-        //</Snippet33>
-
-        //<Snippet34>
-        interface IBaseInterface1<T> { }
-        interface IBaseInterface2<T, U> { }
-
-        class SampleClass1<T> : IBaseInterface1<T> { }          //No error
-        class SampleClass2<T> : IBaseInterface2<T, string> { }  //No error
-        //</Snippet34>
-    }
-
-    //---------------------------------------------------------------------------
     namespace WrapMethods
     {
         public class Test
@@ -441,20 +395,6 @@ namespace CsCsrefProgrammingGenerics
             void Swap(ref T lhs, ref T rhs) { }
         }
         //</Snippet25>
-
-        //<Snippet26>
-        class GenericList<T>
-        {
-            // CS0693
-            void SampleMethod<T>() { }
-        }
-
-        class GenericList2<T>
-        {
-            //No warning
-            void SampleMethod<U>() { }
-        }
-        //</Snippet26>
 
         class Test2
         {
@@ -512,7 +452,7 @@ namespace CsCsrefProgrammingGenerics
 
                 foreach (T item in coll)
                 {
-                    System.Console.Write(item.ToString() + " ");
+                    System.Console.Write(item?.ToString() + " ");
                 }
                 System.Console.WriteLine();
             }
@@ -537,9 +477,6 @@ namespace CsCsrefProgrammingGenerics
         //<Snippet38>
         class Stack<T>
         {
-            T[] items;
-            int index;
-
             public delegate void StackDelegate(T[] items);
         }
         //</Snippet38>
@@ -564,11 +501,12 @@ namespace CsCsrefProgrammingGenerics
         class Stack<T>
         {
             public class StackEventArgs : System.EventArgs { }
-            public event StackEventHandler<Stack<T>, StackEventArgs> StackEvent;
+            public event StackEventHandler<Stack<T>, StackEventArgs>? StackEvent;
 
             protected virtual void OnStackChanged(StackEventArgs a)
             {
-                StackEvent(this, a);
+                if (StackEvent is not null)
+                    StackEvent(this, a);
             }
         }
 
@@ -587,97 +525,8 @@ namespace CsCsrefProgrammingGenerics
     }
 
     //---------------------------------------------------------------------------
-    //<Snippet41>
-    namespace ConsoleApplication1
-    {
-        public class Program
-        {
-            public static void Main(string[] args)
-            {
-                // Test with a non-empty list of integers.
-                GenericList<int> gll = new GenericList<int>();
-                gll.AddNode(5);
-                gll.AddNode(4);
-                gll.AddNode(3);
-                int intVal = gll.GetLast();
-                // The following line displays 5.
-                System.Console.WriteLine(intVal);
-
-                // Test with an empty list of integers.
-                GenericList<int> gll2 = new GenericList<int>();
-                intVal = gll2.GetLast();
-                // The following line displays 0.
-                System.Console.WriteLine(intVal);
-
-                // Test with a non-empty list of strings.
-                GenericList<string> gll3 = new GenericList<string>();
-                gll3.AddNode("five");
-                gll3.AddNode("four");
-                string sVal = gll3.GetLast();
-                // The following line displays five.
-                System.Console.WriteLine(sVal);
-
-                // Test with an empty list of strings.
-                GenericList<string> gll4 = new GenericList<string>();
-                sVal = gll4.GetLast();
-                // The following line displays a blank line.
-                System.Console.WriteLine(sVal);
-            }
-        }
-
-        // T is the type of data stored in a particular instance of GenericList.
-        public class GenericList<T>
-        {
-            private class Node
-            {
-                // Each node has a reference to the next node in the list.
-                public Node Next;
-                // Each node holds a value of type T.
-                public T Data;
-            }
-
-            // The list is initially empty.
-            private Node head = null;
-
-            // Add a node at the beginning of the list with t as its data value.
-            public void AddNode(T t)
-            {
-                Node newNode = new Node();
-                newNode.Next = head;
-                newNode.Data = t;
-                head = newNode;
-            }
-
-            // The following method returns the data value stored in the last node in
-            // the list. If the list is empty, the default value for type T is
-            // returned.
-            public T GetLast()
-            {
-                // The value of temp is returned as the value of the method.
-                // The following declaration initializes temp to the appropriate
-                // default value for type T. The default value is returned if the
-                // list is empty.
-                T temp = default(T);
-
-                Node current = head;
-                while (current != null)
-                {
-                    temp = current.Data;
-                    current = current.Next;
-                }
-                return temp;
-            }
-        }
-    }
-    //</Snippet41>
-
-    //---------------------------------------------------------------------------
     class WrapRuntime
     {
-        //<Snippet42>
-        Stack<int> stack;
-        //</Snippet42>
-
         //<Snippet43>
         Stack<int> stackOne = new Stack<int>();
         Stack<int> stackTwo = new Stack<int>();
@@ -702,52 +551,5 @@ namespace CsCsrefProgrammingGenerics
             customers = new Stack<Customer>();
             //</Snippet46>
         }
-    }
-
-    //---------------------------------------------------------------------------
-    class WrapAttributes
-    {
-        //-----------------------------------------------------
-        //<Snippet48>
-        class CustomAttribute : System.Attribute
-        {
-            public System.Object info;
-        }
-        //</Snippet48>
-
-        //-----------------------------------------------------
-        //<Snippet49>
-        public class GenericClass1<T> { }
-
-        [CustomAttribute(info = typeof(GenericClass1<>))]
-        class ClassA { }
-        //</Snippet49>
-
-        //-----------------------------------------------------
-        //<Snippet50>
-        public class GenericClass2<T, U> { }
-
-        [CustomAttribute(info = typeof(GenericClass2<,>))]
-        class ClassB { }
-        //</Snippet50>
-
-        //-----------------------------------------------------
-        //<Snippet51>
-        public class GenericClass3<T, U, V> { }
-
-        [CustomAttribute(info = typeof(GenericClass3<int, double, string>))]
-        class ClassC { }
-        //</Snippet51>
-
-        //-----------------------------------------------------
-        //<Snippet52>
-        //[CustomAttribute(info = typeof(GenericClass3<int, T, string>))]  //Error
-        class ClassD<T> { }
-        //</Snippet52>
-
-        //-----------------------------------------------------
-        //<Snippet53>
-        //public class CustomAtt<T> : System.Attribute {}  //Error
-        //</Snippet53>
     }
 }

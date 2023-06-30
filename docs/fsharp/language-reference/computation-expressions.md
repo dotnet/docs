@@ -49,6 +49,7 @@ There is a special, additional syntax available within a computation expression,
 
 ```fsharp
 expr { let! ... }
+expr { and! ... }
 expr { do! ... }
 expr { yield ... }
 expr { yield! ... }
@@ -76,6 +77,26 @@ let doThingsAsync url =
 If you bind the call to a computation expression with `let`, you will not get the result of the computation expression. Instead, you will have bound the value of the *unrealized* call to that computation expression. Use `let!` to bind to the result.
 
 `let!` is defined by the `Bind(x, f)` member on the builder type.
+
+### `and!`
+
+The `and!` keyword allows you to bind the results of multiple computation expression calls in a performant manner.
+
+```fsharp
+let doThingsAsync url =
+    async {
+        let! data = getDataAsync url
+        and! moreData = getMoreDataAsync anotherUrl
+        and! evenMoreData = getEvenMoreDataAsync someUrl
+        ...
+    }
+```
+
+Using a series of `let! ... let! ...` forces re-execution of expensive binds, so using `let! ... and! ...` should be used when binding the results of numerous computation expressions.
+
+`and!` is defined primarily by the `MergeSources(x1, x2)` member on the builder type.
+
+Optionally, `MergeSourcesN(x1, x2 ..., xN)` can be defined to reduce the number of tupling nodes, and `BindN(x1, x2 ..., xN, f)`, or `BindNReturn(x1, x2, ..., xN, f)` can be defined to bind computation expression results efficiently without tupling nodes.
 
 ### `do!`
 
@@ -136,7 +157,7 @@ let weekdays includeWeekend =
     }
 ```
 
-As with the [yield keyword in C#](../../csharp/language-reference/keywords/yield.md), each element in the computation expression is yielded back as it is iterated.
+As with the [yield keyword in C#](../../csharp/language-reference/statements/yield.md), each element in the computation expression is yielded back as it is iterated.
 
 `yield` is defined by the `Yield(x)` member on the builder type, where `x` is the item to yield back.
 
@@ -185,7 +206,7 @@ let req = // 'req' is of type 'Async<data>'
 let result = Async.RunSynchronously req
 ```
 
-`return` is defined by the `Return(x)` member on the builder type, where `x` is the item to wrap.
+`return` is defined by the `Return(x)` member on the builder type, where `x` is the item to wrap. For `let! ... return` usage, `BindReturn(x, f)` can be used for improved performance.
 
 ### `return!`
 
@@ -231,9 +252,14 @@ The following table describes methods that can be used in a workflow builder cla
 |**Method**|**Typical signature(s)**|**Description**|
 |----|----|----|
 |`Bind`|`M<'T> * ('T -> M<'U>) -> M<'U>`|Called for `let!` and `do!` in computation expressions.|
+|`BindN`|`(M<'T1> * M<'T2> * ... * M<'TN> * ('T1 * 'T2 ... * 'TN -> M<'U>)) -> M<'U>`|Called for efficient `let!` and `and!` in computation expressions without merging inputs.<br /><br />e.g. `Bind3`, `Bind4`.|
 |`Delay`|`(unit -> M<'T>) -> Delayed<'T>`|Wraps a computation expression as a function. `Delayed<'T>` can be any type, commonly `M<'T>` or `unit -> M<'T>` are used. The default implementation returns a `M<'T>`.|
 |`Return`|`'T -> M<'T>`|Called for `return` in computation expressions.|
 |`ReturnFrom`|`M<'T> -> M<'T>`|Called for `return!` in computation expressions.|
+|`BindReturn`|`(M<'T1> * ('T1 -> 'T2)) -> M<'T2>`|Called for an efficient `let! ... return` in computation expressions.|
+|`BindNReturn`|`(M<'T1> * M<'T2> * ... * M<'TN> * ('T1 * 'T2 ... * 'TN -> M<'U>)) -> M<'U>`|Called for efficient `let! ... and! ... return` in computation expressions without merging inputs.<br /><br />e.g. `Bind3Return`, `Bind4Return`.|
+|`MergeSources`|`(M<'T1> * M<'T2>) -> M<'T1 * 'T2>`|Called for `and!` in computation expressions.|
+|`MergeSourcesN`|`(M<'T1> * M<'T2> * ... * M<'TN>) -> M<'T1 * 'T2 * ... * 'TN>`|Called for `and!` in computation expressions, but improves efficiency by reducing the number of tupling nodes.<br /><br />e.g. `MergeSources3`, `MergeSources4`.|
 |`Run`|`Delayed<'T> -> M<'T>` or<br /><br />`M<'T> -> 'T`|Executes a computation expression.|
 |`Combine`|`M<'T> * Delayed<'T> -> M<'T>` or<br /><br />`M<unit> * M<'T> -> M<'T>`|Called for sequencing in computation expressions.|
 |`For`|`seq<'T> * ('T -> M<'U>) -> M<'U>` or<br /><br />`seq<'T> * ('T -> M<'U>) -> seq<M<'U>>`|Called for `for...do` expressions in computation expressions.|
@@ -309,7 +335,7 @@ module Eventually =
         | Done value -> result (Ok value)
         | NotYetDone work ->
             NotYetDone (fun () ->
-                let res = try Ok(work()) with | exn -> Exception exn
+                let res = try Ok(work()) with | exn -> Error exn
                 match res with
                 | Ok cont -> catch cont // note, a tailcall
                 | Error exn -> result (Error exn))

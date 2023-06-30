@@ -2,7 +2,7 @@
 
 namespace ConsoleDI.IEnumerableExample;
 
-public class ExampleService
+public sealed class ExampleService
 {
     public ExampleService(
         IMessageWriter messageWriter,

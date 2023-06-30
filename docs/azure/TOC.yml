@@ -36,7 +36,23 @@
     - name: What is the Azure SDK for .NET?
       href: ./sdk/azure-sdk-for-dotnet.md
     - name: Authentication
-      href: ./sdk/authentication.md
+      items:
+      - name: Overview
+        href: sdk/authentication.md
+      - name: Auth during local development
+        items:
+        - name: Auth using developer service principals
+          href: sdk/authentication-local-development-service-principal.md
+        - name: Auth using developer accounts
+          href: sdk/authentication-local-development-dev-accounts.md
+      - name: Auth from Azure-hosted apps
+        href: sdk/authentication-azure-hosted-apps.md
+      - name: Auth from on-premises apps
+        href: sdk/authentication-on-premises-apps.md
+      - name: Additional auth methods
+        href: sdk/authentication-additional-methods.md
+    - name: Resource management
+      href: ./sdk/resource-management.md
     - name: Dependency injection
       href: ./sdk/dependency-injection.md
     - name: Thread safety
@@ -47,8 +63,6 @@
       href: ./sdk/pagination.md
     - name: Configure a proxy server
       href: ./sdk/azure-sdk-configure-proxy.md
-    - name: Resource management
-      href: ./sdk/resource-management.md
     - name: Packages list
       href: ./sdk/packages.md
     - name: SDK example
@@ -84,4 +98,4 @@
   - name: All samples
     href: /samples/browse/?languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb
 - name: API reference
-  href: /dotnet/api/overview/azure/?view=azure-dotnet
+  href: /dotnet/api/overview/azure/?view=azure-dotnet&preserve-view=true

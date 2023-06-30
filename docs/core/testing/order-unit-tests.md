@@ -3,7 +3,7 @@ title: Order unit tests
 description: Learn how to order unit tests with .NET Core.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/18/2020
+ms.date: 03/17/2023
 zone_pivot_groups: unit-testing-framework-set-one
 recommendations: false
 ---
@@ -24,7 +24,7 @@ If you prefer to browse the source code, see the [order .NET Core unit tests](/s
 With MSTest, tests are automatically ordered by their test name.
 
 > [!NOTE]
-> A test named `Test14` will run before `Test2` even though the number  `2` is less than `14`. This is because, test name ordering uses the text name of the test.
+> A test named `Test14` will run before `Test2` even though the number  `2` is less than `14`. This is because test name ordering uses the text name of the test.
 
 :::code language="csharp" source="snippets/order-unit-tests/csharp/MSTest.Project/ByAlphabeticalOrder.cs":::
 

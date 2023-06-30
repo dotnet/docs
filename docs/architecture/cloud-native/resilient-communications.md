@@ -2,10 +2,12 @@
 title: Resilient communication
 description: Architecting Cloud Native .NET Apps for Azure | Resilient Communication
 author: robvet
-ms.date: 05/13/2020
+ms.date: 04/06/2022
 ---
 
 # Resilient communications
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Throughout this book, we've embraced a microservice-based architectural approach. While such an architecture provides important benefits, it presents many challenges:
 
@@ -74,7 +76,7 @@ The Azure cloud embraces Istio and provides direct support for it within Azure K
 
 ### References
 
-- [Polly](https://dotnetfoundation.org/projects/polly)
+- [Polly](https://old.dotnetfoundation.org/projects/polly)
 
 - [Retry pattern](/azure/architecture/patterns/retry)
 

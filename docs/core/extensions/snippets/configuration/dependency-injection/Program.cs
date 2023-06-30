@@ -1,13 +1,10 @@
-﻿namespace DependencyInjection.Example;
+﻿using DependencyInjection.Example;
 
-class Program
-{
-    static Task Main(string[] args) =>
-        CreateHostBuilder(args).Build().RunAsync();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
-    static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureServices((_, services) =>
-                services.AddHostedService<Worker>()
-                        .AddScoped<IMessageWriter, MessageWriter>());
-}
+builder.Services.AddHostedService<Worker>();
+builder.Services.AddScoped<IMessageWriter, MessageWriter>();
+
+using IHost host = builder.Build();
+
+host.Run();

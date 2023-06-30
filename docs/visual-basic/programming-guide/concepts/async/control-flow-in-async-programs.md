@@ -45,7 +45,7 @@ Class MainWindow
         ' TWO
         Dim client As HttpClient = New HttpClient()
         Dim getStringTask As Task(Of String) =
-            client.GetStringAsync("https://msdn.microsoft.com")
+            client.GetStringAsync("https://learn.microsoft.com")
 
         ' THREE
         Dim urlContents As String = Await getStringTask
@@ -189,7 +189,7 @@ To run the project, perform the following steps:
             ResultsTextBox.Text &= vbCrLf & "           Calling HttpClient.GetStringAsync." & vbCrLf
 
             ' GetStringAsync returns a Task(Of String).
-            Dim getStringTask As Task(Of String) = client.GetStringAsync("https://msdn.microsoft.com")
+            Dim getStringTask As Task(Of String) = client.GetStringAsync("https://learn.microsoft.com")
 
             ResultsTextBox.Text &= vbCrLf & "THREE: Back in AccessTheWebAsync." & vbCrLf &
                 "           Task getStringTask is started."
@@ -251,7 +251,7 @@ To run the project, perform the following steps:
 
 The first two display lines trace the path as `startButton_Click` calls `AccessTheWebAsync`, and `AccessTheWebAsync` calls the asynchronous <xref:System.Net.Http.HttpClient> method <xref:System.Net.Http.HttpClient.GetStringAsync%28System.String%29>. The following image outlines the calls from method to method.
 
-![Steps ONE and TWO](../../../../csharp/programming-guide/concepts/async/media/asynctrace-onetwo.png "AsyncTrace-ONETWO")
+![Steps ONE and TWO](./media/control-flow-in-async-programs/asynctrace-onetwo.png "AsyncTrace-ONETWO")
 
 The return type of both `AccessTheWebAsync` and `client.GetStringAsync` is <xref:System.Threading.Tasks.Task%601>. For `AccessTheWebAsync`, TResult is an integer. For `GetStringAsync`, TResult is a string. For more information about async method return types, see [Async Return Types (Visual Basic)](async-return-types.md).
 
@@ -264,7 +264,7 @@ In `AccessTheWebAsync`, the asynchronous method <xref:System.Net.Http.HttpClient
 The `client.GetStringAsync` method returns a task of string that’s assigned to the `getStringTask` variable in `AccessTheWebAsync`. The following line in the example program shows the call to `client.GetStringAsync` and the assignment.
 
 ```vb
-Dim getStringTask As Task(Of String) = client.GetStringAsync("https://msdn.microsoft.com")
+Dim getStringTask As Task(Of String) = client.GetStringAsync("https://learn.microsoft.com")
 ```
 
 You can think of the task as a promise by `client.GetStringAsync` to produce an actual string eventually. In the meantime, if `AccessTheWebAsync` has work to do that doesn't depend on the promised string from `client.GetStringAsync`, that work can continue while  `client.GetStringAsync` waits. In the example, the following lines of output, which are labeled "THREE," represent the opportunity to do independent work
@@ -283,12 +283,12 @@ Dim urlContents As String = Await getStringTask
 
 The following image shows the flow of control from `client.GetStringAsync` to the assignment to `getStringTask` and from the creation of `getStringTask` to the application of an Await operator.
 
-![Step THREE](../../../../csharp/programming-guide/concepts/async/media/asynctrace-three.png "AsyncTrace-Three")
+![Step THREE](./media/control-flow-in-async-programs/asynctrace-three.png "AsyncTrace-Three")
 
 The await expression suspends `AccessTheWebAsync` until `client.GetStringAsync` returns. In the meantime, control returns to the caller of `AccessTheWebAsync`, `startButton_Click`.
 
 > [!NOTE]
-> Typically, you await the call to an asynchronous method immediately. For example, the following assignment could replace the previous code that creates and then awaits `getStringTask`: `Dim urlContents As String = Await client.GetStringAsync("https://msdn.microsoft.com")`
+> Typically, you await the call to an asynchronous method immediately. For example, the following assignment could replace the previous code that creates and then awaits `getStringTask`: `Dim urlContents As String = Await client.GetStringAsync("https://learn.microsoft.com")`
 >
 > In this topic, the await operator is applied later to accommodate the output lines that mark the flow of control through the program.
 
@@ -318,7 +318,7 @@ Dim contentLength As Integer = Await getLengthTask
 
 In the following illustration, the arrows show the flow of control from the await expression in `AccessTheWebAsync` to the assignment of a value to `getLengthTask`, followed by normal processing in `startButton_Click` until `getLengthTask` is awaited.
 
-![Step FOUR](../../../../csharp/programming-guide/concepts/async/media/asynctrace-four.png "AsyncTrace-FOUR")
+![Step FOUR](./media/control-flow-in-async-programs/asynctrace-four.png "AsyncTrace-FOUR")
 
 ### Step FIVE
 
@@ -335,7 +335,7 @@ The operand of the return statement, `urlContents.Length`, is stored in the task
 
 The following image shows the transfer of control after `client.GetStringAsync` (and `getStringTask`) are complete.
 
-![Step FIVE](../../../../csharp/programming-guide/concepts/async/media/asynctrace-five.png "AsyncTrace-FIVE")
+![Step FIVE](./media/control-flow-in-async-programs/asynctrace-five.png "AsyncTrace-FIVE")
 
 `AccessTheWebAsync` runs to completion, and control returns to `startButton_Click`, which is awaiting the completion.
 
@@ -360,7 +360,7 @@ Dim contentLength As Integer = Await getLengthTask
 
 The following image shows the return of control from `AccessTheWebAsync` to `startButton_Click`.
 
-![Step SIX](../../../../csharp/programming-guide/concepts/async/media/asynctrace-six.png "AsyncTrace-SIX")
+![Step SIX](./media/control-flow-in-async-programs/asynctrace-six.png "AsyncTrace-SIX")
 
 ## See also
 

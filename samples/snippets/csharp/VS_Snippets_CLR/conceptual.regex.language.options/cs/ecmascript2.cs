@@ -2,47 +2,47 @@
 using System;
 using System.Text.RegularExpressions;
 
-public class Example
+public class EcmaScript2Example
 {
-   static string pattern;
+    static string pattern;
 
-   public static void Main()
-   {
-      string input = "aa aaaa aaaaaa ";
-      pattern = @"((a+)(\1) ?)+";
+    public static void Main()
+    {
+        string input = "aa aaaa aaaaaa ";
+        pattern = @"((a+)(\1) ?)+";
 
-      // Match input using canonical matching.
-      AnalyzeMatch(Regex.Match(input, pattern));
+        // Match input using canonical matching.
+        AnalyzeMatch(Regex.Match(input, pattern));
 
-      // Match input using ECMAScript.
-      AnalyzeMatch(Regex.Match(input, pattern, RegexOptions.ECMAScript));
-   }
+        // Match input using ECMAScript.
+        AnalyzeMatch(Regex.Match(input, pattern, RegexOptions.ECMAScript));
+    }
 
-   private static void AnalyzeMatch(Match m)
-   {
-      if (m.Success)
-      {
-         Console.WriteLine("'{0}' matches {1} at position {2}.",
-                           pattern, m.Value, m.Index);
-         int grpCtr = 0;
-         foreach (Group grp in m.Groups)
-         {
-            Console.WriteLine("   {0}: '{1}'", grpCtr, grp.Value);
-            grpCtr++;
-            int capCtr = 0;
-            foreach (Capture cap in grp.Captures)
+    private static void AnalyzeMatch(Match m)
+    {
+        if (m.Success)
+        {
+            Console.WriteLine("'{0}' matches {1} at position {2}.",
+                              pattern, m.Value, m.Index);
+            int grpCtr = 0;
+            foreach (Group grp in m.Groups)
             {
-               Console.WriteLine("      {0}: '{1}'", capCtr, cap.Value);
-               capCtr++;
+                Console.WriteLine("   {0}: '{1}'", grpCtr, grp.Value);
+                grpCtr++;
+                int capCtr = 0;
+                foreach (Capture cap in grp.Captures)
+                {
+                    Console.WriteLine("      {0}: '{1}'", capCtr, cap.Value);
+                    capCtr++;
+                }
             }
-         }
-      }
-      else
-      {
-         Console.WriteLine("No match found.");
-      }
-      Console.WriteLine();
-   }
+        }
+        else
+        {
+            Console.WriteLine("No match found.");
+        }
+        Console.WriteLine();
+    }
 }
 // The example displays the following output:
 //    No match found.

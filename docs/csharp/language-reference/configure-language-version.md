@@ -9,24 +9,15 @@ ms.date: 02/25/2022
 
 The latest C# compiler determines a default language version based on your project's target framework or frameworks. Visual Studio doesn't provide a UI to change the value, but you can change it by editing the *csproj* file. The choice of default ensures that you use the latest language version compatible with your target framework. You benefit from access to the latest language features compatible with your project's target. This default choice also ensures you don't use a language that requires types or runtime behavior not available in your target framework. Choosing a language version newer than the default can cause hard to diagnose compile-time and runtime errors.
 
-[C# 10](../whats-new/csharp-10.md) is supported only on .NET 6 and newer versions. [C# 9](../whats-new/csharp-9.md) is supported only on .NET 5 and newer versions. [C# 8.0](../whats-new/csharp-8.md) is supported only on .NET Core 3.x and newer versions.
+[C# 11](../whats-new/csharp-11.md) is supported only on .NET 7 and newer versions. [C# 10](../whats-new/csharp-10.md) is supported only on .NET 6 and newer versions. [C# 9](../whats-new/csharp-9.md) is supported only on .NET 5 and newer versions.
 
-Check the [Visual Studio platform compatibility](/visualstudio/releases/2022/compatibility#-visual-studio-2022-support-for-net-development) page for details on which .NET versions are supported by versions of Visual Studio. Check the [Visual Studio for Mac platform compatibility](/visualstudio/mac/supported-versions-net) page for details on which .NET versions are support by versions of Visual Studio for Mac. Check the [Mono page for C#](https://www.mono-project.com/docs/about-mono/languages/csharp/) for Mono compatibility with C# versions.
+Check the [Visual Studio platform compatibility](/visualstudio/releases/2022/compatibility#-visual-studio-2022-support-for-net-development) page for details on which .NET versions are supported by versions of Visual Studio. Check the [Visual Studio for Mac platform compatibility](/visualstudio/mac/supported-versions-net) page for details on which .NET versions are supported by versions of Visual Studio for Mac. Check the [Mono page for C#](https://www.mono-project.com/docs/about-mono/languages/csharp/) for Mono compatibility with C# versions.
 
 ## Defaults
 
 The compiler determines a default based on these rules:
 
-| Target framework | version | C# language version default |
-|------------------|---------|-----------------------------|
-| .NET             | 6.x     | C# 10                     |
-| .NET             | 5.x     | C#  9.0                     |
-| .NET Core        | 3.x     | C#  8.0                     |
-| .NET Core        | 2.x     | C#  7.3                     |
-| .NET Standard    | 2.1     | C#  8.0                     |
-| .NET Standard    | 2.0     | C#  7.3                     |
-| .NET Standard    | 1.x     | C#  7.3                     |
-| .NET Framework   | all     | C#  7.3                     |
+[!INCLUDE [langversion-table](includes/default-langversion-table.md)]
 
 When your project targets a preview framework that has a corresponding preview language version, the language version used is the preview language version. You use the latest features with that preview in any environment, without affecting projects that target a released .NET Core version.
 

@@ -15,7 +15,7 @@ Marshalling is needed because the types in the managed and unmanaged code are di
 static extern int MethodA([MarshalAs(UnmanagedType.LPStr)] string parameter);
 ```
 
-If the [`System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute`](xref:System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute) attribute is applied to the assembly, the below rules do not apply. See the documentation on [disabled runtime marshalling](disabled-marshalling.md) for information on how .NET values are exposed to native code when this attribute is applied.
+If you apply the [`System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute`](xref:System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute) attribute to the assembly, the rules in the following section don't apply. For information on how .NET values are exposed to native code when this attribute is applied, see [disabled runtime marshalling](disabled-marshalling.md).
 
 ## Default rules for marshalling common types
 
@@ -40,7 +40,7 @@ This first table describes the mappings for various types for whom the marshalli
 |             | .NET Pointer types (ex. `void*`)  | `void*` |
 |             | Type derived from `System.Runtime.InteropServices.SafeHandle` | `void*` |
 |             | Type derived from `System.Runtime.InteropServices.CriticalHandle` | `void*`          |
-|             | `System.Boolean` | Win32 `BOOL` type       |
+| `bool`      | `System.Boolean` | Win32 `BOOL` type       |
 | `decimal`   | `System.Decimal` | COM `DECIMAL` struct |
 |             | .NET Delegate | Native function pointer |
 |             | `System.DateTime` | Win32 `DATE` type |
@@ -106,7 +106,7 @@ class SystemTime {
     public ushort Hour;
     public ushort Minute;
     public ushort Second;
-    public ushort Milsecond;
+    public ushort Millisecond;
 }
 
 public static void Main(string[] args) {

@@ -209,7 +209,7 @@ End Module
 
 The C# version of this example produces the following output:
 
-```conssole
+```console
 StyleName:Heading1 >Parsing WordprocessingML with LINQ to XML<
 StyleName:Normal ><
 StyleName:Normal >The following example prints to the console.<

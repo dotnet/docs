@@ -4,9 +4,11 @@ description: Learn how to approach migrating an existing ASP.NET Web Forms app t
 author: twsouthwick
 ms.author: tasou
 no-loc: [Blazor, WebAssembly]
-ms.date: 12/2/2021
+ms.date: 04/11/2022
 ---
 # Migrate from ASP.NET Web Forms to Blazor
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Migrating a code base from ASP.NET Web Forms to Blazor is a time-consuming task that requires planning. This chapter outlines the process. Something that can ease the transition is to ensure the app adheres to an *N-tier* architecture, wherein the app model (in this case, Web Forms) is separate from the business logic. This logical separation of layers makes it clear what needs to move to .NET Core and Blazor.
 

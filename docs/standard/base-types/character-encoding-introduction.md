@@ -281,7 +281,7 @@ A better approach is to break the string by counting grapheme clusters, or text 
 
 :::code language="csharp" source="snippets/character-encoding-introduction/csharp/InsertNewlines.cs" id="SnippetGoodExample":::
 
-As noted earlier, however, in implementations of .NET other than .NET 5, the `StringInfo` class might handle some grapheme clusters incorrectly.
+As noted earlier, prior to .NET 5, the `StringInfo` class had a bug causing some grapheme clusters to be handled incorrectly.
 
 ## UTF-8 and UTF-32
 
@@ -314,6 +314,9 @@ UTF-32: [ 000104CC ]     (1x 32-bit code unit  = 32 bits total)
 ```
 
 As noted earlier, a single UTF-16 code unit from a [surrogate pair](#surrogate-pairs) is meaningless by itself. In the same way, a single UTF-8 code unit is meaningless by itself if it's in a sequence of two, three, or four used to calculate a scalar value.
+
+> [!NOTE]
+> Beginning with C# 11, you can represent UTF-8 string literals using the "u8" suffix on a literal string. For more information on UTF-8 string literals, see the "string literals" section of the article on [built in reference types](../../csharp/language-reference/builtin-types/reference-types.md#utf-8-string-literals) in the C# Guide.
 
 ### Endianness
 

@@ -1,7 +1,7 @@
 ---
 title: Multi-cluster communication
 description: Learn about multi-cluster communication in .NET Orleans.
-ms.date: 02/02/2022
+ms.date: 03/09/2022
 ---
 
 # Multi-cluster communication
@@ -21,7 +21,7 @@ We recommend using very short strings for the cluster ids, because cluster ids a
 
 ## Cluster gateways
 
-Each cluster automatically designates a subset of its active silos to serve as *cluster gateways*. Cluster gateways directly advertise their IP addresses to other clusters, and can thus serve as  "points of first contact". By default, at most 10 silos (or whatever number is configured as `MaxMultiClusterGateways`) are designated as cluster gateways.
+Each cluster automatically designates a subset of its active silos to serve as *cluster gateways*. Cluster gateways directly advertise their IP addresses to other clusters, and can thus serve as  "points of first contact". By default, at most 10 silos (or whatever number is configured as <xref:Orleans.Configuration.MultiClusterOptions.MaxMultiClusterGateways>) are designated as cluster gateways.
 
 Communication between silos in different clusters does *not* always pass through a gateway. Once a silo has learned and cached the location of a grain activation (no matter in what cluster), it sends messages to that silo directly, even if the silo is not a cluster gateway.
 
@@ -40,7 +40,7 @@ All gossip data is timestamped, which ensures that newer information replaces ol
 
 ## Gossip channels
 
-When a silo is first started, or when it is restarted after a failure, it needs to have a way to **bootstrap the gossip**. This is the role of the *gossip channel*, which can be configured in the [Silo Configuration](silo-configuration.md). On startup, a silo fetches all the information from the gossip channels. After startup, a silo keeps gossiping periodically, every 30 seconds or whatever is configured as `BackgroundGossipInterval`. Each time it synchronizes its gossip information with a partner randomly selected from all cluster gateways and gossip channels.
+When a silo is first started, or when it is restarted after a failure, it needs to have a way to **bootstrap the gossip**. This is the role of the *gossip channel*, which can be configured in the [Silo Configuration](silo-configuration.md). On startup, a silo fetches all the information from the gossip channels. After startup, a silo keeps gossiping periodically, every 30 seconds, or whatever is configured as `BackgroundGossipInterval`. Each time it synchronizes its gossip information with a partner randomly selected from all cluster gateways and gossip channels.
 
 - Though not strictly required, we recommend always configuring at least two gossip channels, in distinct regions, for better availability.
 - Latency of communication with gossip channels is not critical.
@@ -52,16 +52,19 @@ When a silo is first started, or when it is restarted after a failure, it needs 
 We have already implemented a gossip channel based on Azure Tables. The configuration specifies standard connection strings used for Azure accounts. For example, a configuration could specify two gossip channels with separate Azure storage accounts `usa` and `europe` as follows:
 
 ```csharp
-var silo = new SiloHostBuilder()
-    .Configure<MultiClusterOptions>(options =>
+var silo = new HostBuilder()
+    .UseOrleans(builder =>
     {
-        options.GossipChannels.Add(
-            "AzureTable",
-            "DefaultEndpointsProtocol=https;AccountName=usa;AccountKey=...");
-        options.GossipChannels.Add(
-            "AzureTable",
-            "DefaultEndpointsProtocol=https;AccountName=europe;AccountKey=...")
+        builder.Configure<MultiClusterOptions>(options =>
+        {
+            options.GossipChannels.Add(
+                "AzureTable",
+                "DefaultEndpointsProtocol=https;AccountName=usa;AccountKey=...");
+            options.GossipChannels.Add(
+                "AzureTable",
+                "DefaultEndpointsProtocol=https;AccountName=europe;AccountKey=...")
+        });
     })
 ```
 
-Multiple different services can use the same gossip channel without interference, as long as the ServiceId guid specified by their respective configuration is distinct.
+Multiple different services can use the same gossip channel without interference, as long as the ServiceId `Guid` specified by their respective configuration is distinct.

@@ -1,11 +1,11 @@
 ---
 title: dotnet restore command
 description: Learn how to restore dependencies and project-specific tools with the dotnet restore command.
-ms.date: 02/27/2020
+ms.date: 05/16/2023
 ---
 # dotnet restore
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -19,14 +19,17 @@ dotnet restore [<ROOT>] [--configfile <FILE>] [--disable-parallel]
     [--interactive] [--lock-file-path <LOCK_FILE_PATH>] [--locked-mode]
     [--no-cache] [--no-dependencies] [--packages <PACKAGES_DIRECTORY>]
     [-r|--runtime <RUNTIME_IDENTIFIER>] [-s|--source <SOURCE>]
-    [--use-lock-file] [-v|--verbosity <LEVEL>]
+    [--use-current-runtime, --ucr [true|false]] [--use-lock-file]
+    [-v|--verbosity <LEVEL>]
 
 dotnet restore -h|--help
 ```
 
 ## Description
 
-The `dotnet restore` command uses NuGet to restore dependencies as well as project-specific tools that are specified in the project file.  In most cases, you don't need to explicitly use the `dotnet restore` command, since a NuGet restore is run implicitly if necessary when you run the following commands:
+A .NET project typically references external libraries in [NuGet](https://www.nuget.org) packages that provide additional functionality. These external dependencies are referenced in the project file (*.csproj* or *.vbproj*). When you run the `dotnet restore` command, the .NET CLI uses NuGet to look for these dependencies and download them if necessary. It also ensures that all the dependencies required by the project are compatible with each other and that there are no conflicts between them. Once the command is completed, all the dependencies required by the project are available in a local cache and can be used by the .NET CLI to build and run the application.
+
+In most cases, you don't need to explicitly use the `dotnet restore` command, since if a NuGet restore is necessary, the following commands run it implicitly:
 
 - [`dotnet new`](dotnet-new.md)
 - [`dotnet build`](dotnet-build.md)
@@ -36,7 +39,10 @@ The `dotnet restore` command uses NuGet to restore dependencies as well as proje
 - [`dotnet publish`](dotnet-publish.md)
 - [`dotnet pack`](dotnet-pack.md)
 
-Sometimes, it might be inconvenient to run the implicit NuGet restore with these commands. For example, some automated systems, such as build systems, need to call `dotnet restore` explicitly to control when the restore occurs so that they can control network usage. To prevent the implicit NuGet restore, you can use the `--no-restore` flag with any of these commands to disable implicit restore.
+Sometimes, it might be inconvenient to run the implicit NuGet restore with these commands. For example, some automated systems, such as build systems, need to call `dotnet restore` explicitly to control when the restore occurs so that they can control network usage. To prevent the implicit NuGet restore, you can use the `--no-restore` flag with any of these commands.
+
+  > [!NOTE]
+  > Signed package verification during restore operations requires a certificate root store that is valid for both code signing and timestamping. For more inforomation, see [NuGet signed package verification](nuget-signed-package-verification.md).
 
 ### Specify feeds
 
@@ -85,8 +91,6 @@ There are three specific settings that `dotnet restore` ignores:
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 - **`--disable-parallel`**
@@ -131,11 +135,15 @@ There are three specific settings that `dotnet restore` ignores:
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  Specifies a runtime for the package restore. This is used to restore packages for runtimes not explicitly listed in the `<RuntimeIdentifiers>` tag in the *.csproj* file. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Provide multiple RIDs by specifying this option multiple times.
+  Specifies a runtime for the package restore. This is used to restore packages for runtimes not explicitly listed in the `<RuntimeIdentifiers>` tag in the *.csproj* file. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
 
 - **`-s|--source <SOURCE>`**
 
   Specifies the URI of the NuGet package source to use during the restore operation. This setting overrides all of the sources specified in the *nuget.config* files. Multiple sources can be provided by specifying this option multiple times.
+
+- **`--use-current-runtime, --ucr [true|false]`**
+
+  Sets the `RuntimeIdentifier` to a platform portable `RuntimeIdentifier` based on the one of your machine. This happens implicitly with properties that require a `RuntimeIdentifier`, such as `SelfContained`, `PublishAot`, `PublishSelfContained`, `PublishSingleFile`, and `PublishReadyToRun`. If the property is set to false, that implicit resolution will no longer occur.
 
 - **`--use-lock-file`**
 
@@ -174,3 +182,17 @@ There are three specific settings that `dotnet restore` ignores:
   ```dotnetcli
   dotnet restore --verbosity detailed
   ```
+
+## Audit for security vulnerabilities
+
+Starting in .NET 8, you can opt into NuGet security auditing for `dotnet restore`. This auditing produces a report of security vulnerabilities with the affected package name, the severity of the vulnerability, and a link to the advisory for more details.
+
+To opt into security auditing, set the `<NuGetAudit>` MSBuild property to `true` in your project file. Additionally, to retrieve the known vulnerability dataset, ensure that you have the NuGet.org central registry defined as one of your package sources:
+
+```xml
+<packageSources>
+    <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
+</packageSources>
+```
+
+You can configure the level at which auditing will fail by setting the `<NuGetAuditLevel>` MSBuild property. Possible values are `low`, `moderate`, `high`, and `critical`. For example if you only want to see moderate, high, and critical advisories, you can set the property to `moderate`.

@@ -1,7 +1,7 @@
 ---
 title: ADO.NET grain persistence
 description: Learn about ADO.NET grain persistence in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 03/15/2022
 ---
 
 # ADO.NET grain persistence
@@ -30,22 +30,25 @@ Install-Package Microsoft.Orleans.Persistence.AdoNet
 
 Read the [ADO.NET configuration](../../host/configuration-guide/adonet-configuration.md) article for information on configuring your database, including the corresponding ADO.NET Invariant and the setup scripts.
 
-The following is an example of how to configure an ADO.NET storage provider via `ISiloHostBuilder`:
+The following is an example of how to configure an ADO.NET storage provider via <xref:Orleans.Hosting.ISiloHostBuilder>:
 
 ```csharp
-var siloHostBuilder = new SiloHostBuilder()
-    .AddAdoNetGrainStorage("OrleansStorage", options =>
+var siloHostBuilder = new HostBuilder()
+    .UseOrleans(c =>
     {
-        options.Invariant = "<Invariant>";
-        options.ConnectionString = "<ConnectionString>";
-        options.UseJsonFormat = true;
+        c.AddAdoNetGrainStorage("OrleansStorage", options =>
+        {
+            options.Invariant = "<Invariant>";
+            options.ConnectionString = "<ConnectionString>";
+            options.UseJsonFormat = true;
+        });
     });
 ```
 
 Essentially, you only need to set the database-vendor-specific connection string and an
 `Invariant` (see [ADO.NET Configuration](../../host/configuration-guide/adonet-configuration.md)) that identifies the vendor. You may also choose the format in which the data is saved, which may be either binary (default), JSON, or XML. While binary is the most compact option, it is opaque, and you will not be able to read or work with the data. JSON is the recommended option.
 
-You can set the following properties via `AdoNetGrainStorageOptions`:
+You can set the following properties via <xref:Orleans.Configuration.AdoNetGrainStorageOptions>:
 
 ```csharp
 /// <summary>
@@ -103,7 +106,7 @@ public class AdoNetGrainStorageOptions
 }
 ```
 
-The ADO.NET persistence has functionality to version data and define arbitrary (de)serializers with arbitrary application rules and streaming, but currently there is no method to expose it to application code.
+The ADO.NET persistence has the functionality to version data and define arbitrary (de)serializers with arbitrary application rules and streaming, but currently, there is no method to expose it to application code.
 
 ## ADO.NET persistence rationale
 
@@ -122,16 +125,18 @@ In addition to the usual storage provider capabilities, the ADO.NET provider has
 
 Both `1.` and `2.` can be applied based on arbitrary decision parameters, such as *grain ID*, *grain type*, *payload data*.
 
-This is teh case so that you can choose a serialization format, e.g. [Simple Binary Encoding (SBE)](https://github.com/real-logic/simple-binary-encoding) and implements
-[IStorageDeserializer](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageDeserializer.cs) and [IStorageSerializer](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializer.cs).
-The built-in serializers have been built using this method. The [OrleansStorageDefault(De)Serializer](https://github.com/dotnet/orleans/tree/main/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider) can be used as examples of how to implement other formats.
+This is the case so that you can choose a serialization format, e.g. [Simple Binary Encoding (SBE)](https://github.com/real-logic/simple-binary-encoding) and implements <xref:Orleans.Storage.IStorageDeserializer> and <xref:Orleans.Storage.IStorageSerializer>. The built-in serializers have been built using this method:
 
-When the serializers have been implemented, they need to be added to the `StorageSerializationPicker` property in [AdoNetGrainStorage](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs).
-Here is an implementation of [IStorageSerializationPicker](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs). By default,
-[StorageSerializationPicker](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/StorageSerializationPicker.cs) will be used. An example of changing the data storage format
-or using serializers can be seen at [RelationalStorageTests](https://github.com/dotnet/orleans/blob/main/test/Extensions/TesterAdoNet/StorageTests/Relational/RelationalStorageTests.cs).
+- <xref:Orleans.Storage.OrleansStorageDefaultXmlSerializer>
+- <xref:Orleans.Storage.OrleansStorageDefaultXmlDeserializer>
+- <xref:Orleans.Storage.OrleansStorageDefaultJsonSerializer>
+- <xref:Orleans.Storage.OrleansStorageDefaultJsonDeserializer>
+- <xref:Orleans.Storage.OrleansStorageDefaultBinarySerializer>
+- <xref:Orleans.Storage.OrleansStorageDefaultBinaryDeserializer>
 
-Currently, there is no method to expose the serialization picker to the Orleans application as there is no method to access the framework-created [AdoNetGrainStorage](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs).
+When the serializers have been implemented, they need to be added to the <xref:Orleans.Storage.AdoNetGrainStorage.StorageSerializationPicker%2A> property in <xref:Orleans.Storage.AdoNetGrainStorage>. Here is an implementation of `IStorageSerializationPicker`. By default, `StorageSerializationPicker` will be used. An example of changing the data storage format or using serializers can be seen at [RelationalStorageTests](https://github.com/dotnet/orleans/blob/main/test/Extensions/TesterAdoNet/StorageTests/Relational/RelationalStorageTests.cs).
+
+Currently, there is no method to expose the serialization picker to the Orleans application as there is no method to access the framework-created `AdoNetGrainStorage`.
 
 ## Goals of the design
 
@@ -142,9 +147,7 @@ This should cover the broadest possible set of backends available for .NET, whic
 ### 2. Maintain the potential to tune queries and database structure as appropriate, even while a deployment is running
 
 In many cases, the servers and databases are hosted by a third party in contractual relation with the client. It is not an unusual
-situation to find a hosting environment that is virtualized, and where performance fluctuates due to unforeseen factors, such as noisy neighbors or faulty hardware. It may
-not be possible to alter and re-deploy either Orleans binaries (for contractual reasons) or even application binaries, but it is usually possible to tweak the
-database deployment parameters. Altering *standard components*, such as Orleans binaries, requires a lengthier procedure for optimizing in a given situation.
+situation to find a hosting environment that is virtualized, and where performance fluctuates due to unforeseen factors, such as noisy neighbors or faulty hardware. It may not be possible to alter and re-deploy either Orleans binaries (for contractual reasons) or even application binaries, but it is usually possible to tweak the database deployment parameters. Altering *standard components*, such as Orleans binaries, requires a lengthier procedure for optimizing in a given situation.
 
 ### 3. Allow you to make use of vendor- and version-specific abilities
 
@@ -160,8 +163,7 @@ These principles apply throughout the application life-cycle. Considering that o
 
 ### 5. No assumptions on what tools, libraries, or deployment processes are used in organizations
 
-Many organizations have familiarity with a certain set of database tools, examples being [Dacpac](/sql/relational-databases/data-tier-applications/data-tier-applications) or [Red Gate](https://www.red-gate.com/). It may be that deploying a database requires either permission or a person, such as to someone
-in a DBA role, to do it. Usually, this means also having the target database layout and a rough sketch of the queries the application will produce for use in estimating the load. There might be processes, perhaps influenced by industry standards, which mandate script-based deployment. Having the queries and database structures in an external script makes this possible.
+Many organizations have familiarity with a certain set of database tools, examples being [Dacpac](/sql/relational-databases/data-tier-applications/data-tier-applications) or [Red Gate](https://www.red-gate.com/). It may be that deploying a database requires either permission or a person, such as someone in a DBA role, to do it. Usually, this means also having the target database layout and a rough sketch of the queries the application will produce for use in estimating the load. There might be processes, perhaps influenced by industry standards, which mandate script-based deployment. Having the queries and database structures in an external script makes this possible.
 
 ### 6. Use the minimum set of interface functionality needed to load the ADO.NET libraries and functionality
 
@@ -193,8 +195,8 @@ The Orleans framework does not know about deployment-specific hardware (which ha
 5. For the sake of being explicit and removing ambiguity, Orleans expects some queries to return either **TRUE as > 0** value
    or **FALSE as = 0** value. That is, the number of affected or returned rows does not matter. If an error is raised or an exception is thrown,
    the query **must** ensure the entire transaction is rolled back and may either return FALSE or propagate the exception.
-6. Currently, all but one query are single-row inserts or updates (note, one could replace ``UPDATE`` queries with ``INSERT``, provided the associated
-   ``SELECT`` queries performed the last write).
+6. Currently, all but one query are single-row inserts or updates (note, one could replace `UPDATE` queries with `INSERT`, provided the associated
+   `SELECT` queries performed the last write).
 
 Database engines support in-database programming. This is similar to the idea of loading an executable script and invoking it to execute database operations. In pseudocode it could be depicted as:
 
@@ -225,5 +227,5 @@ The altered scripts can be tested by running the Orleans test suite, or straight
 ## Guidelines for adding new ADO.NET providers
 
 1. Add a new database setup script according to the [Realization of the goals](#realization-of-the-goals) section above.
-2. Add the vendor ADO invariant name to [AdoNetInvariants](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Shared/Storage/AdoNetInvariants.cs#L34) and ADO.NET provider-specific data to [DbConstantsStore](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Shared/Storage/DbConstantsStore.cs). These are (potentially) used in some query operations. e.g. to select the correct statistics insert mode (i.e. the ``UNION ALL`` with or without ``FROM DUAL``).
+2. Add the vendor ADO invariant name to <xref:Orleans.SqlUtils.AdoNetInvariants> and ADO.NET provider-specific data to [DbConstantsStore](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Shared/Storage/DbConstantsStore.cs). These are (potentially) used in some query operations. e.g. to select the correct statistics insert mode (i.e. the `UNION ALL` with or without `FROM DUAL`).
 3. Orleans has comprehensive tests for all system stores: membership, reminders and statistics. Adding tests for the new database script is done by copy-pasting existing test classes and changing the ADO invariant name. Also, derive from [RelationalStorageForTesting](https://github.com/dotnet/orleans/blob/main/test/Extensions/TesterAdoNet/RelationalUtilities/RelationalStorageForTesting.cs) in order to define test functionality for the ADO invariant.

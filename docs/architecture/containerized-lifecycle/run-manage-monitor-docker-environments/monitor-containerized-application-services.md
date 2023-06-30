@@ -5,6 +5,8 @@ ms.date: 08/06/2020
 ---
 # Monitor containerized application services
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 It's critical for applications split into multiple containers and microservices to have a way to monitor and analyze the behavior of the whole application.
 
 ## Azure Monitor
@@ -14,16 +16,16 @@ It's critical for applications split into multiple containers and microservices 
 ### Additional resources
 
 - **Overview of Azure Monitor** \
-  [https://docs.microsoft.com/azure/azure-monitor/overview](/azure/azure-monitor/overview)
+  [https://learn.microsoft.com/azure/azure-monitor/overview](/azure/azure-monitor/overview)
 
 - **What is Application Insights?** \
-  [https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview](/azure/azure-monitor/app/app-insights-overview)
+  [https://learn.microsoft.com/azure/azure-monitor/app/app-insights-overview](/azure/azure-monitor/app/app-insights-overview)
 
 - **What is Azure Monitor Metrics?** \
-  [https://docs.microsoft.com/azure/azure-monitor/platform/data-platform-metrics](/azure/azure-monitor/platform/data-platform-metrics)
+  [https://learn.microsoft.com/azure/azure-monitor/platform/data-platform-metrics](/azure/azure-monitor/platform/data-platform-metrics)
 
 - **Container Monitoring solution in Azure Monitor** \
-  [https://docs.microsoft.com/azure/azure-monitor/insights/containers](/azure/azure-monitor/insights/containers)
+  [https://learn.microsoft.com/azure/azure-monitor/insights/containers](/azure/azure-monitor/insights/containers)
 
 ## Security and backup services
 

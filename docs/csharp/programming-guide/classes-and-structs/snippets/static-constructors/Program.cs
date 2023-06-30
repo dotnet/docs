@@ -1,6 +1,4 @@
-﻿using System;
-
-//<Snippet1>
+﻿//<Snippet1>
 class SimpleClass
 {
     // Static variable that must be initialized at run time.

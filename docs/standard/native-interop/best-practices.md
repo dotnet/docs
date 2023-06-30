@@ -14,6 +14,7 @@ The guidance in this section applies to all interop scenarios.
 - ✔️ DO use the same naming and capitalization for your methods and parameters as the native method you want to call.
 - ✔️ CONSIDER using the same naming and capitalization for constant values.
 - ✔️ DO use .NET types that map closest to the native type. For example, in C#, use `uint` when the native type is `unsigned int`.
+- ✔️ DO prefer expressing higher level native types using .NET structs rather than classes.
 - ✔️ DO only use `[In]` and `[Out]` attributes when the behavior you want differs from the default behavior.
 - ✔️ CONSIDER using <xref:System.Buffers.ArrayPool%601?displayProperty=nameWithType> to pool your native array buffers.
 - ✔️ CONSIDER wrapping your P/Invoke declarations in a class with the same name and capitalization as your native library.
@@ -23,20 +24,22 @@ The guidance in this section applies to all interop scenarios.
 
 | Setting | Default | Recommendation | Details |
 |---------|---------|----------------|---------|
-| <xref:System.Runtime.InteropServices.DllImportAttribute.PreserveSig>   | `true` |  keep default  | When this is explicitly set to false, failed HRESULT return values will be turned into exceptions (and the return value in the definition becomes null as a result).|
-| <xref:System.Runtime.InteropServices.DllImportAttribute.SetLastError> | `false`  | depends on the API  | Set this to true if the API uses GetLastError and use Marshal.GetLastWin32Error to get the value. If the API sets a condition that says it has an error, get the error before making other calls to avoid inadvertently having it overwritten.|
+| <xref:System.Runtime.InteropServices.DllImportAttribute.PreserveSig>   | `true` |  Keep default  | When this is explicitly set to false, failed HRESULT return values will be turned into exceptions (and the return value in the definition becomes null as a result).|
+| <xref:System.Runtime.InteropServices.DllImportAttribute.SetLastError> | `false`  | Depends on the API  | Set this to true if the API uses GetLastError and use Marshal.GetLastWin32Error to get the value. If the API sets a condition that says it has an error, get the error before making other calls to avoid inadvertently having it overwritten.|
 | <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> | Compiler-defined (specified in the [charset documentation](./charset.md))  | Explicitly  use `CharSet.Unicode` or `CharSet.Ansi` when strings or characters are present in the definition | This specifies marshalling behavior of strings and what `ExactSpelling` does when `false`. Note that `CharSet.Ansi` is actually UTF8 on Unix. _Most_ of the time Windows uses Unicode while Unix uses UTF8. See more information on the [documentation on charsets](./charset.md). |
-| <xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling> | `false` | `true`             | Set this to true and gain a slight perf benefit as the runtime will not look for alternate function names with either an "A" or "W" suffix depending on the value of the `CharSet` setting ("A" for `CharSet.Ansi` and "W" for `CharSet.Unicode`). |
+| <xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling> | `false` | `true` | Set this to true and gain a slight perf benefit as the runtime will not look for alternate function names with either an "A" or "W" suffix depending on the value of the `CharSet` setting ("A" for `CharSet.Ansi` and "W" for `CharSet.Unicode`). |
 
 ## String parameters
 
 When the CharSet is Unicode or the argument is explicitly marked as `[MarshalAs(UnmanagedType.LPWSTR)]` _and_ the string is passed by value (not `ref` or `out`), the string will be pinned and used directly by native code (rather than copied).
 
-Remember to mark the `[DllImport]` as `Charset.Unicode` unless you explicitly want ANSI treatment of your strings.
-
 ❌ DO NOT use `[Out] string` parameters. String parameters passed by value with the `[Out]` attribute can destabilize the runtime if the string is an interned string. See more information about string interning in the documentation for <xref:System.String.Intern%2A?displayProperty=nameWithType>.
 
-❌ AVOID `StringBuilder` parameters. `StringBuilder` marshalling *always* creates a native buffer copy. As such, it can be extremely inefficient. Take the typical scenario of calling a Windows API that takes a string:
+✔️ CONSIDER setting the `CharSet` property in `[DllImport]` so the runtime knows the expected string encoding.
+
+✔️ CONSIDER `char[]` or `byte[]` arrays from an `ArrayPool` when native code is expected to fill a character buffer. This requires passing the argument as `[Out]`.
+
+✔️ CONSIDER avoiding `StringBuilder` parameters. `StringBuilder` marshalling *always* creates a native buffer copy. As such, it can be extremely inefficient. Take the typical scenario of calling a Windows API that takes a string:
 
 1. Create a `StringBuilder` of the desired capacity (allocates managed capacity) **{1}**.
 2. Invoke:
@@ -45,18 +48,16 @@ Remember to mark the `[DllImport]` as `Charset.Unicode` unless you explicitly wa
    3. Copies the native buffer into a newly allocated managed array if `[Out]` **{3}** _(also the default for `StringBuilder`)_.
 3. `ToString()` allocates yet another managed array **{4}**.
 
-That is *{4}* allocations to get a string out of native code. The best you can do to limit this is to reuse the `StringBuilder`
-in another call, but this still only saves *1* allocation. It's much better to use and cache a character buffer from `ArrayPool`. You can then get down to just the allocation for the `ToString()` on subsequent calls.
+That's **{4}** allocations to get a string out of native code. The best you can do to limit this is to reuse the `StringBuilder`
+in another call, but this still only saves one allocation. It's much better to use and cache a character buffer from `ArrayPool`. You can then get down to just the allocation for the `ToString()` on subsequent calls.
 
 The other issue with `StringBuilder` is that it always copies the return buffer back up to the first null. If the passed back string isn't terminated or is a double-null-terminated string, your P/Invoke is incorrect at best.
 
 If you *do* use `StringBuilder`, one last gotcha is that the capacity does **not** include a hidden null, which is always accounted for in interop. It's common for people to get this wrong as most APIs want the size of the buffer *including* the null. This can result in wasted/unnecessary allocations. Additionally, this gotcha prevents the runtime from optimizing `StringBuilder` marshalling to minimize copies.
 
-✔️ CONSIDER using `char[]`s from an `ArrayPool`.
-
 For more information on string marshalling, see [Default Marshalling for Strings](../../framework/interop/default-marshalling-for-strings.md) and [Customizing string marshalling](customize-parameter-marshalling.md#customizing-string-parameters).
 
-> __Windows Specific__
+> **Windows Specific**
 > For `[Out]` strings the CLR will use `CoTaskMemFree` by default to free strings or `SysStringFree` for strings that are marked
 as `UnmanagedType.BSTR`.
 > **For most APIs with an output string buffer:**
@@ -130,7 +131,7 @@ You can see if a type is blittable or contains blittable contents by attempting 
 
 ### Blittable types when runtime marshalling is disabled
 
-When [runtime marshalling is disabled](disabled-marshalling.md), the rules for which types are blittable are significantly simpler. All types that are [C# `unmanaged`](../../csharp/language-reference/builtin-types/unmanaged-types.md) types and do not have any fields that are marked with `[StructLayout(LayoutKind.Auto)]` are blittable. All types that are not C# `unmanaged` types are not blittable. The concept of types with blittable contents, such as arrays or strings, does not apply when runtime marshalling is disabled. Any type that is not considered blittable by the aforementioned rule is unsupported when runtime marshalling is disabled.
+When [runtime marshalling is disabled](disabled-marshalling.md), the rules for which types are blittable are significantly simpler. All types that are [C# `unmanaged`](../../csharp/language-reference/builtin-types/unmanaged-types.md) types and don't have any fields that are marked with `[StructLayout(LayoutKind.Auto)]` are blittable. All types that are not C# `unmanaged` types are not blittable. The concept of types with blittable contents, such as arrays or strings, does not apply when runtime marshalling is disabled. Any type that is not considered blittable by the aforementioned rule is unsupported when runtime marshalling is disabled.
 
 These rules differ from the built-in system primarily in situations where `bool` and `char` are used. When marshalling is disabled, `bool` is passed as a 1-byte value and not normalized and `char` is always passed as a 2-byte value. When runtime marshalling is enabled, `bool` can map to a 1, 2, or 4-byte value and is always normalized, and `char` maps to either a 1 or 2-byte value depending on the [`CharSet`](charset.md).
 
@@ -182,20 +183,38 @@ The following types are the same size on 32-bit and 64-bit Windows, despite thei
 | 32    | `BOOL`           | `int`    | `bool`                               |
 | 8     | `BOOLEAN`        | `byte`   | `[MarshalAs(UnmanagedType.U1)] bool` |
 | 8     | `BYTE`           | `byte`   |                                      |
-| 8     | `CHAR`           | `sbyte`  |                                      |
 | 8     | `UCHAR`          | `byte`   |                                      |
-| 16    | `SHORT`          | `short`  |                                      |
+| 8     | `UINT8`          | `byte`   |                                      |
+| 8     | `CCHAR`          | `byte`   |                                      |
+| 8     | `CHAR`           | `sbyte`  |                                      |
+| 8     | `CHAR`           | `sbyte`  |                                      |
+| 8     | `INT8`           | `sbyte`  |                                      |
 | 16    | `CSHORT`         | `short`  |                                      |
+| 16    | `INT16`          | `short`  |                                      |
+| 16    | `SHORT`          | `short`  |                                      |
+| 16    | `ATOM`           | `ushort` |                                      |
+| 16    | `UINT16`         | `ushort` |                                      |
 | 16    | `USHORT`         | `ushort` |                                      |
 | 16    | `WORD`           | `ushort` |                                      |
-| 16    | `ATOM`           | `ushort` |                                      |
 | 32    | `INT`            | `int`    |                                      |
+| 32    | `INT32`          | `int`    |                                      |
 | 32    | `LONG`           | `int`    |  See [`CLong` and `CULong`](#cc-long). |
+| 32    | `LONG32`         | `int`    |                                        |
+| 32    | `CLONG`          | `uint`   |  See [`CLong` and `CULong`](#cc-long). |
+| 32    | `DWORD`          | `uint`   |  See [`CLong` and `CULong`](#cc-long). |
+| 32    | `DWORD32`        | `uint`   |                                      |
+| 32    | `UINT`           | `uint`   |                                      |
+| 32    | `UINT32`         | `uint`   |                                      |
 | 32    | `ULONG`          | `uint`   |  See [`CLong` and `CULong`](#cc-long). |
-| 32    | `DWORD`          | `uint`   |                                      |
-| 64    | `QWORD`          | `long`   |                                      |
+| 32    | `ULONG32`        | `uint`   |                                      |
+| 64    | `INT64`          | `long`   |                                      |
 | 64    | `LARGE_INTEGER`  | `long`   |                                      |
+| 64    | `LONG64`         | `long`   |                                      |
 | 64    | `LONGLONG`       | `long`   |                                      |
+| 64    | `QWORD`          | `long`   |                                      |
+| 64    | `DWORD64`        | `ulong`  |                                      |
+| 64    | `UINT64`         | `ulong`  |                                      |
+| 64    | `ULONG64`        | `ulong`  |                                      |
 | 64    | `ULONGLONG`      | `ulong`  |                                      |
 | 64    | `ULARGE_INTEGER` | `ulong`  |                                      |
 | 32    | `HRESULT`        | `int`    |                                      |
@@ -215,7 +234,7 @@ The following types, being pointers, do follow the width of the platform. Use `I
 
 A Windows `PVOID`, which is a C `void*`, can be marshalled as either `IntPtr` or `UIntPtr`, but prefer `void*` when possible.
 
-[Windows Data Types](/windows/desktop/WinProg/windows-data-types)
+[Windows Data Types](/windows/win32/winprog/windows-data-types)
 
 [Data Type Ranges](/cpp/cpp/data-type-ranges)
 
@@ -223,40 +242,71 @@ A Windows `PVOID`, which is a C `void*`, can be marshalled as either `IntPtr` or
 
 There are rare instances when built-in support for a type is removed.
 
-The [`UnmanagedType.HString`](xref:System.Runtime.InteropServices.UnmanagedType) built-in marshal support was removed in the .NET 5 release. You must recompile binaries that use this marshalling type and that target a previous framework. It's still possible to marshal this type, but you must marshal it manually, as the following code example shows. This code will work moving forward and is also compatible with previous frameworks.
+The [`UnmanagedType.HString`](xref:System.Runtime.InteropServices.UnmanagedType) and [`UnmanagedType.IInspectable`](xref:System.Runtime.InteropServices.UnmanagedType) built-in marshal support was removed in the .NET 5 release. You must recompile binaries that use this marshalling type and that target a previous framework. It's still possible to marshal this type, but you must marshal it manually, as the following code example shows. This code will work moving forward and is also compatible with previous frameworks.
 
 ```csharp
-static class HSTRING
+public sealed class HStringMarshaler : ICustomMarshaler
 {
-    public static IntPtr FromString(string s)
+    public static readonly HStringMarshaler Instance = new HStringMarshaler();
+
+    public static ICustomMarshaler GetInstance(string _) => Instance;
+
+    public void CleanUpManagedData(object ManagedObj) { }
+
+    public void CleanUpNativeData(IntPtr pNativeData)
     {
-        Marshal.ThrowExceptionForHR(WindowsCreateString(s, s.Length, out IntPtr h));
-        return h;
+        if (pNativeData != IntPtr.Zero)
+        {
+            Marshal.ThrowExceptionForHR(WindowsDeleteString(pNativeData));
+        }
     }
 
-    public static void Delete(IntPtr s)
+    public int GetNativeDataSize() => -1;
+
+    public IntPtr MarshalManagedToNative(object ManagedObj)
     {
-        Marshal.ThrowExceptionForHR(WindowsDeleteString(s));
+        if (ManagedObj is null)
+            return IntPtr.Zero;
+
+        var str = (string)ManagedObj;
+        Marshal.ThrowExceptionForHR(WindowsCreateString(str, str.Length, out var ptr));
+        return ptr;
     }
 
-    [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll", CallingConvention = CallingConvention.StdCall, ExactSpelling = true)]
-    private static extern int WindowsCreateString(
-        [MarshalAs(UnmanagedType.LPWStr)] string sourceString, int length, out IntPtr hstring);
+    public object MarshalNativeToManaged(IntPtr pNativeData)
+    {
+        if (pNativeData == IntPtr.Zero)
+            return null;
 
-    [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll", CallingConvention = CallingConvention.StdCall, ExactSpelling = true)]
+        var ptr = WindowsGetStringRawBuffer(pNativeData, out var length);
+        if (ptr == IntPtr.Zero)
+            return null;
+
+        if (length == 0)
+            return string.Empty;
+
+        return Marshal.PtrToStringUni(ptr, length);
+    }
+
+    [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll")]
+    [DefaultDllImportSearchPaths(DllImportSearchPath.System32)]
+    private static extern int WindowsCreateString([MarshalAs(UnmanagedType.LPWStr)] string sourceString, int length, out IntPtr hstring);
+
+    [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll")]
+    [DefaultDllImportSearchPaths(DllImportSearchPath.System32)]
     private static extern int WindowsDeleteString(IntPtr hstring);
+
+    [DllImport("api-ms-win-core-winrt-string-l1-1-0.dll")]
+    [DefaultDllImportSearchPaths(DllImportSearchPath.System32)]
+    private static extern IntPtr WindowsGetStringRawBuffer(IntPtr hstring, out int length);
 }
 
-// Usage example
-IntPtr hstring = HSTRING.FromString("HSTRING from .NET to WinRT API");
-try
-{
-    // Pass hstring to WinRT or Win32 API.
-}
-finally
-{
-    HSTRING.Delete(hstring);
-}
+// Example usage:
+[DllImport("api-ms-win-core-winrt-l1-1-0.dll", PreserveSig = true)]
+internal static extern int RoGetActivationFactory(
+    /*[MarshalAs(UnmanagedType.HString)]*/[MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef = typeof(HStringMarshaler))] string activatableClassId,
+    [In] ref Guid iid,
+    [Out, MarshalAs(UnmanagedType.IUnknown)] out object factory);
 ```
 
 ## Cross-platform data type considerations
@@ -265,7 +315,7 @@ There are types in the C/C++ language that have latitude in how they are defined
 
 ### C/C++ `long`
 
-C/C++ `long` and C# `long` are not the same types. Using C# `long` to interop with C/C++ `long` is almost never correct.
+C/C++ `long` and C# `long` are not necessarily the same size.
 
 The `long` type in C/C++ is defined to have ["at least 32"](https://en.cppreference.com/w/c/language/arithmetic_types) bits. This means there is a minimum number of required bits, but platforms can choose to use more bits if desired. The following table illustrates the differences in provided bits for the C/C++ `long` data type between platforms.
 
@@ -274,7 +324,9 @@ The `long` type in C/C++ is defined to have ["at least 32"](https://en.cpprefere
 | Windows     | 32     | 32     |
 | macOS/\*nix | 32     | 64     |
 
-These differences can make authoring cross-platform P/Invokes difficult when the native function is defined to use `long` on all platforms.
+In contrast, C# `long` is always 64 bit. For this reason, it's best to avoid using C# `long` to interop with C/C++ `long`.
+
+(This problem with C/C++ `long` does not exist for C/C++ `char`, `short`, `int`, and `long long` as they are 8, 16, 32, and 64 bits respectively on all of these platforms.)
 
 In .NET 6 and later versions, use the [`CLong`](xref:System.Runtime.InteropServices.CLong) and [`CULong`](xref:System.Runtime.InteropServices.CULong) types for interop with C/C++ `long` and `unsigned long` data types. The following example is for `CLong`, but you can use `CULong` to abstract `unsigned long` in a similar way.
 
@@ -327,6 +379,8 @@ Pointers to structs in definitions must either be passed by `ref` or use `unsafe
 ✔️ DO match the managed struct as closely as possible to the shape and names that are used in the official platform documentation or header.
 
 ✔️ DO use the C# `sizeof()` instead of `Marshal.SizeOf<MyStruct>()` for blittable structures to improve performance.
+
+❌ AVOID using classes to express complex native types through inheritance.
 
 ❌ AVOID using `System.Delegate` or `System.MulticastDelegate` fields to represent function pointer fields in structures.
 

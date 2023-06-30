@@ -1,9 +1,9 @@
 ---
-title: Implement a custom logging provider in .NET
-description: Learn how to implement a custom logging provider in your .NET applications.
+title: Implement a custom logging provider
+description: Discover how to implement a custom logging provider with colorized logs, writing custom C# ILogger and ILoggerProvider implementations.
 author: IEvangelist
 ms.author: dapine
-ms.date: 01/04/2022
+ms.date: 03/13/2023
 ms.topic: how-to
 ---
 
@@ -11,7 +11,8 @@ ms.topic: how-to
 
 There are many [logging providers](logging-providers.md) available for common logging needs. You may need to implement a custom <xref:Microsoft.Extensions.Logging.ILoggerProvider> when one of the available providers doesn't suit your application needs. In this article, you'll learn how to implement a custom logging provider that can be used to colorize logs in the console.
 
-[!INCLUDE [logging-samples-browser](includes/logging-samples-browser.md)]
+> [!TIP]
+> The custom logging provider example source code is available in the **Docs Github repo**. For more information, see [GitHub: .NET Docs - Console Custom Logging](https://github.com/dotnet/docs/tree/main/docs/core/extensions/snippets/configuration/console-custom-logging).
 
 ### Sample custom logger configuration
 
@@ -30,7 +31,9 @@ The `ILogger` implementation category name is typically the logging source. For 
 The preceding code:
 
 - Creates a logger instance per category name.
-- Checks `_getCurrentConfig().LogLevels.ContainsKey(logLevel)` in `IsEnabled`, so each `logLevel` has a unique logger. Loggers should also be enabled for all higher log levels:
+- Checks `_getCurrentConfig().LogLevelToColorMap.ContainsKey(logLevel)` in `IsEnabled`, so each `logLevel` has a unique logger. In this implementation, each log level requires an explicit configuration entry to log.
+
+It's a good practice to call <xref:Microsoft.Extensions.Logging.ILogger.IsEnabled%2A?displayProperty=nameWithType> within <xref:Microsoft.Extensions.Logging.ILogger.Log%2A?displayProperty=nameWithType> implementations since `Log` can be called by any consumer, and there are no guarantees that it was previously checked. The `IsEnabled` method should be very fast in most implementations.
 
 :::code language="csharp" source="snippets/configuration/console-custom-logging/ColorConsoleLogger.cs" range="15-16":::
 

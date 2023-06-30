@@ -1,7 +1,8 @@
 ---
 title: "Examples of XML Serialization"
 description: These code examples show advanced scenarios, including how to use XML serialization to generate an XML stream that conforms to an XML Schema document.
-ms.date: "03/30/2017"
+ms.date: "07/20/2022"
+ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
   - "vb"
@@ -22,7 +23,7 @@ XML serialization can take more than one form, from simple to complex. For examp
 
 ## Serializing a DataSet
 
-Besides serializing an instance of a public class, an instance of a <xref:System.Data.DataSet> can also be serialized, as shown in the following code example.
+Besides serializing an instance of a public class, you can also serialize an instance of a <xref:System.Data.DataSet>, as shown in the following code example:
 
 ```vb
 Private Sub SerializeDataSet(filename As String)
@@ -47,7 +48,8 @@ End Sub
 ```
 
 ```csharp
-private void SerializeDataSet(string filename){
+private void SerializeDataSet(string filename)
+{
     XmlSerializer ser = new XmlSerializer(typeof(DataSet));
 
     // Creates a DataSet; adds a table, column, and ten rows.
@@ -57,11 +59,13 @@ private void SerializeDataSet(string filename){
     t.Columns.Add(c);
     ds.Tables.Add(t);
     DataRow r;
-    for(int i = 0; i<10;i++){
+
+    for (int i = 0; i < 10; i++) {
         r = t.NewRow();
         r[0] = "Thing " + i;
         t.Rows.Add(r);
     }
+
     TextWriter writer = new StreamWriter(filename);
     ser.Serialize(writer, ds);
     writer.Close();
@@ -70,7 +74,7 @@ private void SerializeDataSet(string filename){
 
 ## Serializing an XmlElement and XmlNode
 
-You can also serialize instances of an <xref:System.Xml.XmlElement> or <xref:System.Xml.XmlNode> class, as shown in the following code example.
+You can also serialize instances of an <xref:System.Xml.XmlElement> or <xref:System.Xml.XmlNode> class, as shown in the following code example:
 
 ```vb
 private Sub SerializeElement(filename As String)
@@ -96,19 +100,20 @@ End Sub
 ```
 
 ```csharp
-private void SerializeElement(string filename){
+private void SerializeElement(string filename)
+{
     XmlSerializer ser = new XmlSerializer(typeof(XmlElement));
-    XmlElement myElement=
-    new XmlDocument().CreateElement("MyElement", "ns");
+    XmlElement myElement = new XmlDocument().CreateElement("MyElement", "ns");
     myElement.InnerText = "Hello World";
     TextWriter writer = new StreamWriter(filename);
     ser.Serialize(writer, myElement);
     writer.Close();
 }
 
-private void SerializeNode(string filename){
+private void SerializeNode(string filename)
+{
     XmlSerializer ser = new XmlSerializer(typeof(XmlNode));
-    XmlNode myNode= new XmlDocument().
+    XmlNode myNode = new XmlDocument().
     CreateNode(XmlNodeType.Element, "MyNode", "ns");
     myNode.InnerText = "Hello Node";
     TextWriter writer = new StreamWriter(filename);
@@ -117,9 +122,9 @@ private void SerializeNode(string filename){
 }
 ```
 
-## Serializing a Class that Contains a Field Returning a Complex Object
+## Serializing a class that contains a field returning a complex object
 
-If a property or field returns a complex object (such as an array or a class instance), the <xref:System.Xml.Serialization.XmlSerializer> converts it to an element nested within the main XML document. For example, the first class in the following code example returns an instance of the second class.
+If a property or field returns a complex object (such as an array or a class instance), the <xref:System.Xml.Serialization.XmlSerializer> converts it to an element nested within the main XML document. For example, the first class in the following code example returns an instance of the second class:
 
 ```vb
 Public Class PurchaseOrder
@@ -136,13 +141,14 @@ public class PurchaseOrder
 {
     public Address MyAddress;
 }
-public class Address
+
+public record Address
 {
     public string FirstName;
 }
 ```
 
-The serialized XML output might resemble the following.
+The serialized XML output might look like this:
 
 ```xml
 <PurchaseOrder>
@@ -152,9 +158,9 @@ The serialized XML output might resemble the following.
 </PurchaseOrder>
 ```
 
-## Serializing an Array of Objects
+## Serializing an array of objects
 
-You can also serialize a field that returns an array of objects, as shown in the following code example.
+You can also serialize a field that returns an array of objects, as shown in the following code example:
 
 ```vb
 Public Class PurchaseOrder
@@ -180,7 +186,7 @@ public class Item
 }
 ```
 
-The serialized class instance might resemble the following, if two items are ordered.
+If two items are ordered, the serialized class instance might look like the following code:
 
 ```xml
 <PurchaseOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
@@ -197,9 +203,12 @@ The serialized class instance might resemble the following, if two items are ord
 </PurchaseOrder>
 ```
 
-## Serializing a Class that Implements the ICollection Interface
+## Serializing a class that implements the ICollection interface
 
-You can create your own collection classes by implementing the <xref:System.Collections.ICollection> interface, and use the <xref:System.Xml.Serialization.XmlSerializer> to serialize instances of these classes. Note that when a class implements the <xref:System.Collections.ICollection> interface, only the collection contained by the class is serialized. Any public properties or fields added to the class will not be serialized. The class must include an **Add** method and an **Item** property (C# indexer) to be serialized.
+You can create your own collection classes by implementing the <xref:System.Collections.ICollection> interface and using the <xref:System.Xml.Serialization.XmlSerializer> to serialize instances of these classes.
+
+> [!NOTE]
+> When a class implements the <xref:System.Collections.ICollection> interface, only the collection contained by the class is serialized. Any public properties or fields added to the class won't be serialized. To be serialized, the class must include an **Add** method and an **Item** property (C# indexer).
 
 ```vb
 Imports System.Collections
@@ -297,13 +306,16 @@ using System.Collections;
 using System.IO;
 using System.Xml.Serialization;
 
-public class Test {
-    static void Main(){
+public class Test
+{
+    static void Main()
+    {
         Test t = new Test();
         t.SerializeCollection("coll.xml");
     }
 
-    private void SerializeCollection(string filename){
+    private void SerializeCollection(string filename)
+    {
         Employees Emps = new Employees();
         // Note that only the collection is serialized -- not the
         // CollectionName or any other public property of the class.
@@ -315,57 +327,65 @@ public class Test {
         x.Serialize(writer, Emps);
     }
 }
-public class Employees:ICollection {
+
+public class Employees : ICollection
+{
     public string CollectionName;
     private ArrayList empArray = new ArrayList();
 
-    public Employee this[int index]{
-        get{return (Employee) empArray[index];}
-    }
+    public Employee this[int index] => (Employee) empArray[index];
 
-    public void CopyTo(Array a, int index){
+    public void CopyTo(Array a, int index)
+    {
         empArray.CopyTo(a, index);
     }
-    public int Count{
-        get{return empArray.Count;}
-    }
-    public object SyncRoot{
-        get{return this;}
-    }
-    public bool IsSynchronized{
-        get{return false;}
-    }
-    public IEnumerator GetEnumerator(){
-        return empArray.GetEnumerator();
-    }
+    
+    public int Count => empArray.Count;
+    
+    public object SyncRoot => this;
+    
+    public bool IsSynchronized => false;
+    
+    public IEnumerator GetEnumerator() => empArray.GetEnumerator();
 
-    public void Add(Employee newEmployee){
+    public void Add(Employee newEmployee)
+    {
         empArray.Add(newEmployee);
     }
 }
 
-public class Employee {
+public class Employee
+{
     public string EmpName;
     public string EmpID;
-    public Employee(){}
-    public Employee(string empName, string empID){
+    
+    public Employee() {}
+    
+    public Employee(string empName, string empID)
+    {
         EmpName = empName;
         EmpID = empID;
     }
 }
 ```
 
-## Purchase Order Example
+## Purchase Order example
 
-You can cut and paste the following example code into a text file renamed with a .cs or .vb file name extension. Use the C# or Visual Basic compiler to compile the file. Then run it using the name of the executable.
+You can cut and paste the following example code into a text file and rename it with a .cs or .vb file name extension. Use the C# or Visual Basic compiler to compile the file. Then run it using the name of the executable.
 
-This example uses a simple scenario to demonstrate how an instance of an object is created and serialized into a file stream using the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> method. The XML stream is saved to a file, and the same file is then read back and reconstructed into a copy of the original object using the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method.
+This example uses a simple scenario to demonstrate how an instance of an object is created and serialized into a file stream using the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> method. The XML stream is saved to a file. The same file is then read and reconstructed into a copy of the original object using the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method.
 
 In this example, a class named `PurchaseOrder` is serialized and then deserialized. A second class named `Address` is also included because the public field named `ShipTo` must be set to an `Address`. Similarly, an `OrderedItem` class is included because an array of `OrderedItem` objects must be set to the `OrderedItems` field. Finally, a class named `Test` contains the code that serializes and deserializes the classes.
 
-The `CreatePO` method creates the `PurchaseOrder`, `Address`, and `OrderedItem` class objects, and sets the public field values. The method also constructs an instance of the <xref:System.Xml.Serialization.XmlSerializer> class that is used to serialize and deserialize the `PurchaseOrder`. Note that the code passes the type of the class that will be serialized to the constructor. The code also creates a `FileStream` that is used to write the XML stream to an XML document.
+The `CreatePO` method creates the `PurchaseOrder`, `Address`, and `OrderedItem` class objects and sets the public field values. The method also constructs an instance of the <xref:System.Xml.Serialization.XmlSerializer> class that's used to serialize and deserialize the `PurchaseOrder`.
 
-The `ReadPo` method is a little simpler. It just creates objects to deserialize and reads out their values. As with the `CreatePo` method, you must first construct an <xref:System.Xml.Serialization.XmlSerializer>, passing the type of the class to be deserialized to the constructor. Also, a <xref:System.IO.FileStream> is required to read the XML document. To deserialize the objects, call the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method with the <xref:System.IO.FileStream> as an argument. The deserialized object must be cast to an object variable of type `PurchaseOrder`. The code then reads the values of the deserialized `PurchaseOrder`. Note that you can also read the PO.xml file that is created to see the actual XML output.
+> [!NOTE]
+> The code passes the type of class that will be serialized to the constructor. The code also creates a `FileStream` that's used to write the XML stream to an XML document.
+
+The `ReadPo` method is a little simpler. It just creates objects to deserialize and reads out their values. As with the `CreatePo` method, you must first construct an <xref:System.Xml.Serialization.XmlSerializer>, passing the type of class to be deserialized to the constructor. Also, a <xref:System.IO.FileStream> is required to read the XML document. To deserialize the objects, call the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method with the <xref:System.IO.FileStream> as an argument. The deserialized object must be cast to an object variable of type `PurchaseOrder`. The code then reads the values of the deserialized `PurchaseOrder`.
+
+> [!NOTE]
+> You can read the *PO.xml* file that's created to see the actual XML output.
 
 ```vb
 Imports System.IO
@@ -621,10 +641,9 @@ public class Test
     {
         // Creates an instance of the XmlSerializer class;
         // specifies the type of object to serialize.
-        XmlSerializer serializer =
-        new XmlSerializer(typeof(PurchaseOrder));
+        XmlSerializer serializer = new XmlSerializer(typeof(PurchaseOrder));
         TextWriter writer = new StreamWriter(filename);
-        PurchaseOrder po=new PurchaseOrder();
+        PurchaseOrder po =new PurchaseOrder();
 
         // Creates an address to ship and bill to.
         Address billAddress = new Address();
@@ -736,7 +755,7 @@ public class Test
 }
 ```
 
-The XML output might resemble the following.
+The XML output might look like this:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -765,9 +784,9 @@ The XML output might resemble the following.
 
 ## See also
 
-- [Introducing XML Serialization](introducing-xml-serialization.md)
-- [Controlling XML Serialization Using Attributes](controlling-xml-serialization-using-attributes.md)
-- [Attributes That Control XML Serialization](attributes-that-control-xml-serialization.md)
-- [XmlSerializer Class](xref:System.Xml.Serialization.XmlSerializer)
-- [How to: Serialize an Object](how-to-serialize-an-object.md)
-- [How to: Deserialize an Object](how-to-deserialize-an-object.md)
+- [Introducing XML serialization](introducing-xml-serialization.md)
+- [Controlling XML serialization using attributes](controlling-xml-serialization-using-attributes.md)
+- [Attributes that control XML serialization](attributes-that-control-xml-serialization.md)
+- [XmlSerializer class](xref:System.Xml.Serialization.XmlSerializer)
+- [How to: Serialize an object](how-to-serialize-an-object.md)
+- [How to: Deserialize an object](how-to-deserialize-an-object.md)

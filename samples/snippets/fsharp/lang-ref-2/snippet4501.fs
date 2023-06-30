@@ -12,5 +12,5 @@ printfn "What is your age? "
 let ageString = System.Console.ReadLine()
 let age = System.Int32.Parse(ageString)
 
-if age < 10
-then printfn "You are only %d years old and already learning F#? Wow!" age
+if age < 10 then
+    printfn "You are only %d years old and already learning F#? Wow!" age

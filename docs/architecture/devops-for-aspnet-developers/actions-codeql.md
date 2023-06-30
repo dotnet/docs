@@ -7,6 +7,8 @@ ms.date: 03/04/2021
 
 # Secure .NET Code with CodeQL and GitHub Actions
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 [CodeQL](https://codeql.github.com/docs/codeql-overview/about-codeql/) is a static code analysis engine that can automate security and quality checks. With CodeQL, you can perform *variant analysis*, which uses known vulnerabilities as seeds to find similar issues. CodeQL is part of [GitHub Advanced Security](https://docs.github.com/github/getting-started-with-github/about-github-advanced-security) that includes:
 
 > [!div class="checklist"]
@@ -86,7 +88,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v1
@@ -125,7 +127,7 @@ Notice the following things:
 The CodeQL scan isn't reporting any security issues. That's expected with this basic sample. CodeQL can also scan for *quality* issues. The current workflow is using the default `security-extended` suite. You can add quality scanning in by adding a configuration file to customize the scanning suites. In this step, you'll configure CodeQL to use the `security-and-quality` suites.
 
 > [!INFORMATION]
-> For other CodeQL configuration options, see [Configuring CodeQL code scanning in your CI system](https://docs.github.com/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-codeql-code-scanning-in-your-ci-system).
+> For other CodeQL configuration options, see [Configuring CodeQL code scanning in your CI system](https://docs.github.com/code-security/code-scanning/using-codeql-code-scanning-with-your-existing-ci-system/configuring-codeql-cli-in-your-ci-system).
 
 1. Navigate to the *.github* folder in the **Code** tab and select **Add File**:
 

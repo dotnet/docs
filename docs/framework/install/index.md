@@ -13,8 +13,8 @@ If you need to install .NET Framework 2.0 through 3.5, see [Install .NET Framewo
 
 ## Supported Windows versions
 
-- Windows 11 (.NET Framework 4.8 included)
-- Windows Server 2022 (.NET Framework 4.8 included)
+- [Windows 11](on-windows-11.md) (.NET Framework 4.8 included)
+- [Windows Server 2022](on-server-2022.md) (.NET Framework 4.8 included)
 - [Windows 10 and Windows Server 2016](on-windows-10.md)
 - [Windows 8.1 and Windows Server 2012 R2](on-windows-8-1.md)
 - [Windows 8 and Windows Server 2012](on-windows-8.md)

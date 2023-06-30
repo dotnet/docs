@@ -8,11 +8,9 @@ jobs:
   validate:
     name: MSDocs build verifier
     runs-on: ubuntu-latest
-    permissions:
-        statuses: write
     steps:
-    - name: Checkout the repository
-      uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675 #@v2
+      - name: Checkout the repository
+        uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3
 
-    - name: Validate
-      uses: dotnet/docs-actions/actions/docs-verifier@main
+      - name: Validate
+        uses: dotnet/docs-actions/actions/docs-verifier@main

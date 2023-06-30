@@ -10,7 +10,7 @@ public static class ServiceCollectionExtensions
         services.AddOptions<LibraryOptions>()
             .Configure(options =>
             {
-                    // Specify default option values
+                // Specify default option values
             });
 
         // Register lib services here...

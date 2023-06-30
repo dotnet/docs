@@ -1,7 +1,7 @@
 ---
 title: Grain identity
 description: Learn about grain identities in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 03/16/2022
 ---
 
 # Grain identity
@@ -27,9 +27,7 @@ Situations that require a singleton grain instance, such as a dictionary or regi
 
 ## Using globally unique identifiers (GUIDs)
 
-GUIDs are useful when there are several processes that could request a grain, such as a number of web servers in a web farm.
-You don't need to coordinate the allocation of keys, which could introduce a single point of failure in the system, or a system-side lock on a resource which could present a bottleneck.
-There is a very low chance of GUIDs colliding, so they would probably be the default choice when architecting an Orleans system.
+GUIDs are useful when several processes could request a grain, such as several web servers in a web farm. You don't need to coordinate the allocation of keys, which could introduce a single point of failure in the system, or a system-side lock on a resource that could present a bottleneck. There is a very low chance of GUIDs colliding, so they would probably be the default choice when architecting an Orleans system.
 
 Referencing a grain by GUID in client code:
 
@@ -51,7 +49,7 @@ public override Task OnActivateAsync()
 
 A long integer is also available, which would make sense if the grain is persisted to a relational database, where numerical indexes are preferred over GUIDs.
 
-Referencing a grain by long integer in client code:
+Referencing a grain by a long integer in client code:
 
 ```csharp
 var grain = grainFactory.GetGrain<IExample>(1);
@@ -62,7 +60,7 @@ Retrieving the primary key from grain code:
 ```csharp
 public override Task OnActivateAsync()
 {
-    long primaryKey = GetPrimaryKeyLong();
+    long primaryKey = this.GetPrimaryKeyLong();
     return base.OnActivateAsync();
 }
 ```
@@ -91,7 +89,7 @@ public override Task OnActivateAsync()
 
 If you have a system that doesn't fit well with either GUIDs or longs, you can opt for a compound primary key, which allows you to use a combination of a GUID or long and a string to reference a grain.
 
-You can inherit your interface from 'IGrainWithGuidCompoundKey' or 'IGrainWithIntegerCompoundKey" interface like this:
+You can inherit your interface from <xref:Orleans.IGrainWithGuidCompoundKey> or <xref:Orleans.IGrainWithIntegerCompoundKey> interface like this:
 
 ```csharp
 public interface IExampleGrain : Orleans.IGrainWithIntegerCompoundKey
@@ -100,20 +98,20 @@ public interface IExampleGrain : Orleans.IGrainWithIntegerCompoundKey
 }
 ```
 
-In client code, this adds a second argument to the `GetGrain` method on the grain factory:
+In client code, this adds a second argument to the <xref:Orleans.IGrainFactory.GetGrain%2A?displayProperty=nameWithType> method on the grain factory:
 
 ```csharp
 var grain = grainFactory.GetGrain<IExample>(0, "a string!", null);
 ```
 
-To access the compound key in the grain, we can call an overload on the `GetPrimaryKey` method:
+To access the compound key in the grain, we can call an overload on the <xref:Orleans.GrainExtensions.GetPrimaryKey%2A?displayProperty=nameWithType> method (the <xref:Orleans.GrainExtensions.GetPrimaryKeyLong%2A?displayProperty=nameWithType>):
 
 ```csharp
 public class ExampleGrain : Orleans.Grain, IExampleGrain
 {
     public Task Hello()
     {
-        long primaryKey = GetPrimaryKeyLong(out string keyExtension);
+        long primaryKey = this.GetPrimaryKeyLong(out string keyExtension);
         Console.WriteLine($"Hello from {keyExtension}");
 
         Task.CompletedTask;

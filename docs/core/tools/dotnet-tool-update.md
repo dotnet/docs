@@ -5,7 +5,7 @@ ms.date: 07/08/2020
 ---
 # dotnet tool update
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -17,19 +17,22 @@ ms.date: 07/08/2020
 dotnet tool update <PACKAGE_ID> -g|--global
     [--add-source <SOURCE>] [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
-    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [--ignore-failed-sources] [--interactive]
+    [--no-cache] [--prerelease]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID> --tool-path <PATH>
     [--add-source <SOURCE>] [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
-    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [--ignore-failed-sources] [--interactive] 
+    [--no-cache] [--prerelease]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID> --local
     [--add-source <SOURCE>] [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
-    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [--ignore-failed-sources] [--interactive]
+    [--no-cache] [--prerelease]
     [--tool-manifest <PATH>]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
@@ -44,8 +47,6 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 * To update a global tool that was installed in a custom location, use the `--tool-path` option.
 * To update a local tool, use the `--local` option.
 
-**Local tools are available starting with .NET Core SDK 3.0.**
-
 ## Arguments
 
 - **`PACKAGE_ID`**
@@ -53,8 +54,6 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
   Name/ID of the NuGet package that contains the .NET global tool to update. You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.
 
 ## Options
-
-<!-- markdownlint-disable MD012 -->
 
 [!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
@@ -87,6 +86,10 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 - **`--no-cache`**
 
   Do not cache packages and HTTP requests.
+
+- **`--prerelease`**
+
+  Include prerelease versions.
 
 - **`--tool-manifest <PATH>`**
 

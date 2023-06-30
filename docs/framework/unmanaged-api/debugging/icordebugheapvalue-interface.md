@@ -25,7 +25,7 @@ A subclass of "ICorDebugValue" that represents an object that has been collected
 |Method|Description|  
 |------------|-----------------|  
 |[CreateRelocBreakpoint Method](icordebugheapvalue-createrelocbreakpoint-method.md)|Not implemented.|  
-|[IsValid Method](icordebugheapvalue-isvalid-method.md)|Gets a value that indicates whether the object represented by this `ICorDebugHeapValue` is valid, or has been reclaimed by the garbage collector. This method has been deprecated in the .NET Framework version 2.0.|  
+|[IsValid Method](icordebugheapvalue-isvalid-method.md)|Gets a value that indicates whether the object represented by this `ICorDebugHeapValue` is valid, or has been reclaimed by the garbage collector. This method has been deprecated in .NET Framework version 2.0.|  
   
 ## Remarks  
   

@@ -2,10 +2,12 @@
 title: What is Cloud Native?
 description: Learn about the foundational pillars that provide the bedrock for cloud-native systems
 author: robvet
-ms.date: 10/15/2021
+ms.date: 04/06/2022
 ---
 
 # What is Cloud Native?
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Stop what you're doing and ask your colleagues to define the term "Cloud Native". There's a good chance you'll get several different answers.
 
@@ -13,7 +15,7 @@ Let's start with a simple definition:
 
 > *Cloud-native architecture and technologies are an approach to designing, constructing, and operating workloads that are built in the cloud and take full advantage of the cloud computing model.*
 
-The [Cloud Native Computing Foundation](https://www.cncf.io/) provides the [official definition](https://github.com/cncf/foundation/blob/master/charter.md):
+The [Cloud Native Computing Foundation](https://www.cncf.io/) provides the [official definition](https://github.com/cncf/toc/blob/main/DEFINITION.md):
 
 > *Cloud-native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach.*
 
@@ -102,7 +104,7 @@ Designing and deploying cloud-based workloads can be challenging, especially whe
 
 The [Microsoft Well-Architected Framework](/azure/architecture/framework/) provides a set of guiding tenets that can be used to improve the quality of a cloud-native workload. The framework consists of five pillars of architecture excellence:
 
-|    Tenant | Description  |
+|    Tenets | Description  |
 | :-------- | :-------- |
 | [Cost management](/azure/architecture/framework/#cost-optimization) | Focus on generating incremental value early. Apply *Build-Measure-Learn* principles to accelerate time to market while avoiding capital-intensive solutions. Using a pay-as-you-go strategy, invest as you scale out, rather than delivering a large investment up front. |
 | [Operational excellence](/azure/architecture/framework/#operational-excellence) | Automate the environment and operations to increase speed and reduce human error. Roll problem updates back or forward quickly. Implement monitoring and diagnostics from the start. |

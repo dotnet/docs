@@ -6,13 +6,10 @@ using System.IdentityModel.Claims;
 using System.IdentityModel.Policy;
 using System.IdentityModel.Selectors;
 using System.IdentityModel.Tokens;
-using System.Security.Permissions;
 using System.ServiceModel.Description;
 using System.ServiceModel.Security;
 using System.ServiceModel.Security.Tokens;
 
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
 namespace CustomTokenAuthenticator
 {
     //<snippet1>

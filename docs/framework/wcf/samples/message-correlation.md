@@ -39,7 +39,7 @@ public class OrderProcessorService : IOrderProcessor
        po.Status = PurchaseOrder.OrderStates[statusIndexer.Next(3)];
        Console.WriteLine("Processing {0} ", po);
        //Send a response to the client that the order has been received
-         and is pending fullfillment.
+       // and is pending fulfillment.
        SendResponse(ordermsg);
     }
 
@@ -48,11 +48,11 @@ public class OrderProcessorService : IOrderProcessor
         OrderResponseClient client = new OrderResponseClient("OrderResponseEndpoint");
 
         //Set the correlation ID such that the client can correlate the response to the order.
-        MsmqMessage<PurchaseOrder> orderResponsemsg = new MsmqMessage<PurchaseOrder>(ordermsg.Body);
-        orderResponsemsg.CorrelationId = ordermsg.Id;
+        MsmqMessage<PurchaseOrder> orderResponseMsg = new MsmqMessage<PurchaseOrder>(ordermsg.Body);
+        orderResponseMsg.CorrelationId = ordermsg.Id;
         using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Required))
         {
-            client.SendOrderResponse(orderResponsemsg);
+            client.SendOrderResponse(orderResponseMsg);
             scope.Complete();
         }
 
@@ -121,7 +121,7 @@ public static void Main()
 }
 ```
 
-The MSMQ queue to which the order requests are sent is specified in the appSettings section of the configuration file. The client and service endpoints are defined in the system.serviceModel section of the configuration file. Both specify the `msmqIntegrationbinding` binding.
+The MSMQ queue to which the order requests are sent is specified in the appSettings section of the configuration file. The client and service endpoints are defined in the system.serviceModel section of the configuration file. Both specify the `msmqIntegrationBinding` binding.
 
 ```xml
 <appSettings>

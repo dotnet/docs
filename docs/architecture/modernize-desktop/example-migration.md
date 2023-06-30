@@ -1,26 +1,28 @@
 ---
 title: Example of migrating to the latest .NET
-description: Learn how to migrate your applications from .NET 5, .NET Core, and .NET Framework to .NET 6.
+description: Learn how to migrate your applications from .NET 5, .NET Core, and .NET Framework to .NET 7.
 ms.date: 10/25/2021
 ---
 
 # Example of migrating to the latest .NET
 
-In this chapter, we'll show how to migrate your applications to the latest version of .NET. You can migrate to .NET 6 from .NET Framework, .NET Core, or .NET 5. We will introduce a tool that can do all the work for you in the majority of cases. If your application has special cases or complicated dependencies, we'll also show how to do the whole migration process by hand. Additionally, we'll cover the most common issues and challenges you can face when migrating an existing application from .NET Framework to .NET.
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
+In this chapter, we'll show how to migrate your applications to the latest version of .NET. You can migrate to .NET 7 from .NET Framework, .NET Core, or .NET 5. We'll introduce a tool that can do all the work for you in most cases. If your application has special cases or complicated dependencies, we'll also show how to do the whole migration process by hand. Additionally, we'll cover the most common issues and challenges you can face when migrating an existing application from .NET Framework to .NET.
 
 ## Migrating from .NET Core or .NET 5
 
-Updating your applications to target the latest version of .NET is easy if you already are on .NET Core or .NET 5. In Visual Studio, simply right click on your project in **Solution Explorer** and choose **Properties**. Under **Application** > **General** > **Target framework**, choose .NET 6.0. Save and rebuild your application. You are done! Your app now runs on the latest version of .NET. In the future when new version become available, you can upgrade in the same way.
+Updating your applications to target the latest version of .NET is easy if you already are on .NET Core or .NET 5. If this is the case, then in Visual Studio, simply right-click on your project in **Solution Explorer** and choose **Properties**. Under **Application** > **General** > **Target framework**, choose .NET 7.0. Save and rebuild your application. You're done! Your app now runs on the latest version of .NET. In the future when new versions become available, you can upgrade in the same way.
 
-![Migrating to .NET 6.0 from .NET Core or .NET 5](./media/example-migration-core/migrate-in-settings.png)
+![Migrating to .NET 7.0 from .NET Core or .NET 5](./media/example-migration-core/migrate-in-settings.png)
 
 ## Migrating from .NET Framework
 
-Migrating from .NET Framework is a more complicated process because there are more differences between .NET Framework and other platforms that were built on top of .NET Core. But the good news is that there is a tool that will do all the work for you in most cases.
+Migrating from .NET Framework is a more complicated process because there are more differences between .NET Framework and other platforms that were built on top of .NET Core. But the good news is that there's a tool that will do all the work for you in most cases.
 
 ### Migrating with a tool
 
-The [Upgrade Assistant](https://dotnet.microsoft.com/platform/upgrade-assistant) is a migration tool. Using it is very easy and there are step-by-step instructions available on the [.NET website](https://dotnet.microsoft.com/platform/upgrade-assistant/tutorial/intro). In this chapter we will look at what is happening behind the scenes and how to port your application by hand. When the Upgrade Assistant is unable to migrate your application, you'll learn the underlying mechanics so that you might be able to migrate manually.
+The [Upgrade Assistant](https://dotnet.microsoft.com/platform/upgrade-assistant) is a migration tool. Using it is easy and there are step-by-step instructions available on the [.NET website](https://dotnet.microsoft.com/platform/upgrade-assistant/tutorial/intro). In this chapter, we'll look at what is happening behind the scenes and how to port your application by hand. When the Upgrade Assistant is unable to migrate your application, you'll learn the underlying mechanics so that you might be able to migrate manually.
 
 ### Migrating by hand
 
@@ -44,7 +46,7 @@ So, you need to transition from one format to another. You can do the update man
 
 #### Verify every dependency compatibility in .NET
 
-Once you've migrated the package references, you must check each reference for compatibility. You can explore the dependencies of each NuGet package your application is using on [nuget.org](https://www.nuget.org/). If the package has .NET Standard dependencies, then it's going to work on .NET 5 because .NET [supports](../../standard/net-standard.md#net-implementation-support) all versions of .NET Standard. The following image shows the dependencies for the `Castle.Windsor` package:
+Once you've migrated the package references, you must check each reference for compatibility. You can explore the dependencies of each NuGet package your application is using on [nuget.org](https://www.nuget.org/). If the package has .NET Standard dependencies, then it's going to work on .NET 7 because .NET [supports](../../standard/net-standard.md#net-implementation-support) all versions of .NET Standard. The following image shows the dependencies for the `Castle.Windsor` package:
 
 ![Screenshot of the NuGet dependencies for the Castle.Windsor package](./media/example-migration-core/nuget-dependencies.png)
 
@@ -52,15 +54,15 @@ To check the package compatibility, you can use the tool <https://fuget.org> tha
 
 Maybe the project is referencing older package versions that don't support .NET, but you might find newer versions that do support it. So, updating packages to newer versions is generally a good recommendation. However, you should consider that updating the package version can introduce some breaking changes that would force you to update your code.
 
-What happens if you don't find a compatible version? What if you just don't want to update the version of a package because of these breaking changes? Don't worry because it's possible to depend on .NET Framework packages from a .NET application. Don't forget to test it extensively because it can cause run-time errors if the external package calls an API that isn't available on .NET. This is great for when you're using an old package that isn't going to be updated and you can just retarget to work on the .NET.
+What happens if you don't find a compatible version? What if you just don't want to update the version of a package because of these breaking changes? Don't worry because it's possible to depend on .NET Framework packages from a .NET application. Don't forget to test it extensively because it can cause run-time errors if the external package calls an API that isn't available on .NET. This is great for when you're using an old package that isn't going to be updated and you can just retarget to work on .NET.
 
 #### Check for API compatibility
 
-Since the API surface in .NET Framework and .NET is similar but not identical, you must check which APIs are available on .NET and which aren't. You can use the .NET Portability Analyzer tool to surface APIs used that aren't present on .NET. It looks at the binary level of your app, extracts all the APIs that are called, and then lists which APIs aren't available on your target framework (.NET 6 in this case).
+Since the API surface in .NET Framework and .NET is similar but not identical, you must check which APIs are available on .NET and which aren't. You can use the .NET Portability Analyzer tool to surface APIs used that aren't present on .NET. It looks at the binary level of your app, extracts all the APIs that are called, and then lists which APIs aren't available on your target framework (.NET 7 in this case).
 
 You can find more information about this tool at:
 
-[https://docs.microsoft.com/dotnet/standard/analyzers/portability-analyzer](../../standard/analyzers/portability-analyzer.md)
+[https://learn.microsoft.com/dotnet/standard/analyzers/portability-analyzer](../../standard/analyzers/portability-analyzer.md)
 
 An interesting aspect of this tool is that it only surfaces the differences from your own code and not code from external packages, which you can't change. Remember you should have updated most of these packages to make them work with .NET.
 
@@ -100,13 +102,13 @@ Update the versions of the packages you've found to be compatible, as shown in t
 
 #### Microsoft.Windows.Compatibility
 
-If your application depends on APIs that aren't available on .NET, such as Registry, ACLs, or WCF, you have to include a reference to the `Microsoft.Windows.Compatibility` package to add these Windows-specific APIs. They work on .NET but aren't included as they aren't cross-platform.
+If your application depends on APIs that aren't available on .NET, such as Registry or ACLs, you have to include a reference to the `Microsoft.Windows.Compatibility` package to add these Windows-specific APIs. They work on .NET but aren't included as they aren't cross-platform.
 
-There's a tool called Platform compatibility analyzer ([https://docs.microsoft.com/dotnet/standard/analyzers/platform-compat-analyzer](../../standard/analyzers/platform-compat-analyzer.md)) that helps you identify APIs that aren't compatible with your code.
+There's a tool called Platform compatibility analyzer ([https://learn.microsoft.com/dotnet/standard/analyzers/platform-compat-analyzer](../../standard/analyzers/platform-compat-analyzer.md)) that helps you identify APIs that aren't compatible with your code.
 
 #### Use \#if directives
 
-If you need different execution paths when targeting .NET Framework and .NET, you should use compilation constants. Add some \#if directives to your code to keep the same code base for both targets.
+If you need different execution paths when targeting .NET Framework and .NET, you should use compilation constants. Add some \#if directives to your code to keep the same codebase for both targets.
 
 #### Technologies not available on .NET
 
@@ -115,7 +117,6 @@ Some technologies aren't available on .NET, such as:
 * AppDomains
 * Remoting
 * Code Access Security
-* WCF Server
 * Windows Workflow
 
 That's why you need to find a replacement for these technologies if you're using them in your application. For more information, see the [.NET Framework technologies unavailable on .NET Core and .NET 5+](../../core/porting/net-framework-tech-unavailable.md) article.
@@ -154,24 +155,24 @@ If you open the *.csproj* project file, you can see something like this:
 
 ![Screenshot of the csproj file contents](./media/example-migration-core/csproj-file.png)
 
-As previously mentioned, .NET project has a more compact style and you need to migrate the project structure to the new .NET SDK style.
+As previously mentioned, a .NET project has a more compact style and you need to migrate the project structure to the new .NET SDK style.
 
-In the Solution Explorer, right click on the Windows Forms project and select **Unload Project** > **Edit**.
+In Solution Explorer, right-click on the Windows Forms project and select **Unload Project** > **Edit**.
 
-Now you can update the .csproj file. You'll delete the entire content and replace it with the following code:
+Now you can update the .csproj file. You'll delete the entire contents and replace it with the following code:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net7.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 </Project>
 ```
 
-Save and reload the project. You're now done updating the project file and the project is targeting the .NET.
+Save and reload the project. You're now done updating the project file and the project is targeting .NET 7.
 
 If you compile the project at this point, you'll find some errors related to the WCF client reference. Since this code is autogenerated, you must regenerate it to target .NET.
 
@@ -219,7 +220,7 @@ to
 string image_name = Environment.CurrentDirectory + "\\..\\..\\..\\Assets\\Images\\Catalog\\" + catalogItems.Picturefilename;
 ```
 
-After this change, you can check that the application launches and runs as expected on .NET Core.
+After this change, you can check that the application launches and runs as expected on .NET 7.
 
 ## Migrating a WPF application
 
@@ -237,7 +238,7 @@ In this case, delete all the content of the *.csproj* file and replace it with t
  <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net7.0-windows</TargetFramework>
     <UseWpf>true</UseWpf>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
@@ -256,7 +257,7 @@ Since you've deleted all the *.csproj* contents, you've lost a project reference
 <ItemGroup>
 ```
 
-You can also let Visual Studio help you by right-clicking on the **Dependencies** node and selecting **Add Project Reference**. Select the project from the solution and click **OK**:
+You can also let Visual Studio help you by right-clicking on the **Dependencies** node and selecting **Add Project Reference**. Select the project from the solution and select **OK**:
 
 ![Screenshot of the Reference Manager dialog with the eShop.SqlProvider project selected](./media/example-migration-core/reference-manager.png)
 

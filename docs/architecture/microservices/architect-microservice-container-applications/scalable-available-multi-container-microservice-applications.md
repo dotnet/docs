@@ -5,6 +5,8 @@ ms.date: 11/19/2021
 ---
 # Orchestrate microservices and multi-container applications for high scalability and availability
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 Using orchestrators for production-ready applications is essential if your application is based on microservices or simply split across multiple containers. As introduced previously, in a microservice-based approach, each microservice owns its model and data so that it will be autonomous from a development and deployment point of view. But even if you have a more traditional application that's composed of multiple services (like SOA), you'll also have multiple containers or services comprising a single business application that need to be deployed as a distributed system. These kinds of systems are complex to scale out and manage; therefore, you absolutely need an orchestrator if you want to have a production-ready and scalable multi-container application.
 
 Figure 4-23 illustrates deployment into a cluster of an application composed of multiple microservices (containers).
@@ -55,7 +57,7 @@ In figure 4-24, you can see the structure of a Kubernetes cluster where a master
 
 ## Development environment for Kubernetes
 
-In the development environment, [Docker announced in July 2018](https://blog.docker.com/2018/07/kubernetes-is-now-available-in-docker-desktop-stable-channel/) that Kubernetes can also run in a single development machine (Windows 10 or macOS) by installing [Docker Desktop](https://docs.docker.com/install/). You can later deploy to the cloud (AKS) for further integration tests, as shown in figure 4-25.
+In the development environment, Docker announced in July 2018 that Kubernetes can also run in a single development machine (Windows 10 or macOS) by installing [Docker Desktop](https://docs.docker.com/install/). You can later deploy to the cloud (AKS) for further integration tests, as shown in figure 4-25.
 
 ![Diagram showing Kubernetes on a dev machine then deployed to AKS](./media/scalable-available-multi-container-microservice-applications/kubernetes-development-environment.png)
 
@@ -84,10 +86,10 @@ For more implementation information on Helm charts and Kubernetes, see the [Usin
 ## Additional resources
 
 - **Getting started with Azure Kubernetes Service (AKS)** \
-  [https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal](/azure/aks/kubernetes-walkthrough-portal)
+  [https://learn.microsoft.com/azure/aks/kubernetes-walkthrough-portal](/azure/aks/kubernetes-walkthrough-portal)
 
 - **Azure Dev Spaces** \
-  [https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces](/azure/dev-spaces/azure-dev-spaces)
+  [https://learn.microsoft.com/azure/dev-spaces/azure-dev-spaces](/azure/dev-spaces/azure-dev-spaces)
 
 - **Kubernetes** The official site. \
   <https://kubernetes.io/>

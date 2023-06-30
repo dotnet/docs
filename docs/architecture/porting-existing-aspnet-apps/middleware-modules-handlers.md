@@ -7,6 +7,8 @@ ms.date: 12/10/2021
 
 # Compare middleware to modules and handlers
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 If your existing ASP.NET MVC or Web API app uses OWIN/Katana, you're most likely already familiar with the concept of middleware and porting it to ASP.NET Core should be fairly straightforward. However, most ASP.NET apps rely on HTTP modules and HTTP handlers instead of middleware. Migrating these to ASP.NET Core requires extra effort.
 
 ## ASP.NET modules and handlers

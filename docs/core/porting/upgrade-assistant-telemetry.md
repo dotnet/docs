@@ -2,7 +2,7 @@
 title: Upgrade Assistant Telemetry
 description: Learn about telemetry collected by the Upgrade Assistant.
 author: tasou
-ms.date: 11/08/2021
+ms.date: 05/22/2023
 ---
 # Upgrade Assistant telemetry
 
@@ -71,11 +71,8 @@ The Upgrade Assistant displays text similar to the following when you first run 
 
 ```console
 Telemetry
----------
-The .NET tools collect usage data in order to help us improve your experience.
-It is collected by Microsoft and shared with the community. You can opt-out of
-telemetry by setting the DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT environment
-variable to '1' or 'true' using your favorite shell.
+
+Upgrade Assistant collects usage data in order to help us improve your experience. The data is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
 ```
 
 To suppress the "first run" experience text, set the `DOTNET_UPGRADEASSISTANT_SKIP_FIRST_TIME_EXPERIENCE` environment variable to `1` or `true`.

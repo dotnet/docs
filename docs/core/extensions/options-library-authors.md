@@ -1,20 +1,20 @@
 ---
 title: Options pattern guidance for .NET library authors
 author: IEvangelist
-description: Learn how to expose the options pattern as a library author in .NET.
+description: Learn how to expose the options pattern as a library author in .NET. Follow the guidance to ensure your library is correctly exposed to consumers.
 ms.author: dapine
-ms.date: 11/12/2021
+ms.date: 06/23/2023
 ---
 
 # Options pattern guidance for .NET library authors
 
-With the help of dependency injection, registering your services and their corresponding configurations can make use of the *options pattern*. The options pattern enables consumers of your library (and your services) to require instances of [options interfaces](options.md#options-interfaces) where `TOptions` is your options class. Consuming configuration options through strongly-typed objects helps to ensure consistent value representation, and removes the burden of manually parsing string values. There are many [configuration providers](configuration-providers.md) for consumers of your library to use. With these providers, consumers can configure your library in many ways.
+With the help of dependency injection, registering your services and their corresponding configurations can make use of the *options pattern*. The options pattern enables consumers of your library (and your services) to require instances of [options interfaces](options.md#options-interfaces) where `TOptions` is your options class. Consuming configuration options through strongly-typed objects helps to ensure consistent value representation, enables validation with data annotations, and removes the burden of manually parsing string values. There are many [configuration providers](configuration-providers.md) for consumers of your library to use. With these providers, consumers can configure your library in many ways.
 
 As a .NET library author, you'll learn general guidance on how to correctly expose the options pattern to consumers of your library. There are various ways to achieve the same thing, and several considerations to make.
 
 ## Naming conventions
 
-By convention, extension methods responsible for registering services are named `Add{Service}`, where `{Service}` is a meaningful and descriptive name. Depending on the package, the registration of services may be accompanied by `Use{Service}` extension methods. The `Use{Service}` extension methods are commonplace in [ASP.NET Core](/aspnet).
+By convention, extension methods responsible for registering services are named `Add{Service}`, where `{Service}` is a meaningful and descriptive name. `Add{Service}` extension methods are commonplace in [ASP.NET Core](/aspnet) and .NET alike.
 
 ✔️ CONSIDER names that disambiguate your service from other offerings.
 
@@ -59,9 +59,9 @@ In the preceding code, the `AddMyLibraryService`:
 
 Consumers in this pattern provide the scoped `IConfiguration` instance of the named section:
 
-:::code language="csharp" source="snippets/configuration/options-configparam/Program.cs" highlight="21-22":::
+:::code language="csharp" source="snippets/configuration/options-configparam/Program.cs" highlight="6-7":::
 
-The call to `.AddMyLibraryService` is made in the <xref:Microsoft.Extensions.Hosting.IHostBuilder.ConfigureServices%2A> method. The same is true when using a `Startup` class, the addition of services being registered occurs in `ConfigureServices`.
+The call to `.AddMyLibraryService` is made on the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> type.
 
 As the library author, specifying default values is up to you.
 
@@ -74,6 +74,32 @@ As the library author, specifying default values is up to you.
 >         (options, configuration) =>
 >             configuration.GetSection("LibraryOptions").Bind(options));
 > ```
+>
+> Instead, you should use the <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderConfigurationExtensions.BindConfiguration%2A> extension method. This extension method binds the configuration to the options instance, and also registers a change token source for the configuration section. This allows consumers to use the [IOptionsMonitor](options.md#ioptionsmonitor) interface.
+
+## Configuration section path parameter
+
+Consumers of your library may want to specify the configuration section path to bind your underlying `TOptions` type. In this scenario, you define a `string` parameter in your extension method.
+
+:::code source="snippets/configuration/options-validation-onstart/ServiceCollectionExtensions.cs" highlight="9":::
+
+In the preceding code, the `AddMyLibraryService`:
+
+- Extends an instance of <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>
+- Defines a `string` parameter `configSectionPath`
+- Calls:
+  - <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions%2A> with the generic type parameter of `SupportOptions`
+  - <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderConfigurationExtensions.BindConfiguration%2A> with the given `configSectionPath` parameter
+  - <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderDataAnnotationsExtensions.ValidateDataAnnotations%2A> to enable data annotation validation
+  - <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderExtensions.ValidateOnStart%2A> to enforce validation on start rather than in runtime
+
+In the next example, the [Microsoft.Extensions.Options.DataAnnotations](https://www.nuget.org/packages/Microsoft.Extensions.Options.DataAnnotations) NuGet package is used to enable data annotation validation. The `SupportOptions` class is defined as follows:
+
+:::code source="snippets/configuration/options-validation-onstart/SupportOptions.cs":::
+
+Imagine that the following JSON _appsettings.json_ file is used:
+
+:::code source="snippets/configuration/options-validation-onstart/appsettings.json":::
 
 ## `Action<TOptions>` parameter
 
@@ -89,7 +115,7 @@ In the preceding code, the `AddMyLibraryService`:
 
 Consumers in this pattern provide a lambda expression (or a delegate that satisfies the `Action<LibraryOptions>` parameter):
 
-:::code language="csharp" source="snippets/configuration/options-action/Program.cs" highlight="21-25":::
+:::code language="csharp" source="snippets/configuration/options-action/Program.cs" highlight="6-10":::
 
 ## Options instance parameter
 
@@ -105,11 +131,14 @@ In the preceding code, the `AddMyLibraryService`:
 
 Consumers in this pattern provide an instance of the `LibraryOptions` class, defining desired property values inline:
 
-:::code language="csharp" source="snippets/configuration/options-object/Program.cs" highlight="21-25":::
+:::code language="csharp" source="snippets/configuration/options-object/Program.cs" highlight="6-10":::
 
 ## Post configuration
 
-After all configuration option values are bound or specified, post configuration functionality is available. Exposing the same [`Action<TOptions>` parameter](#actiontoptions-parameter) detailed earlier, you could choose to call <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure%2A>. Post configure runs after all `.Configure` calls.
+After all configuration option values are bound or specified, post configuration functionality is available. Exposing the same [`Action<TOptions>` parameter](#actiontoptions-parameter) detailed earlier, you could choose to call <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure%2A>. Post configure runs after all `.Configure` calls. There are few reasons why you'd want to consider using `PostConfigure`:
+
+- **Execution order**: You can override any configuration values that were set in the `.Configure` calls.
+- **Validation**: You can validate the default values have been set after all other configurations have been applied.
 
 :::code language="csharp" source="snippets/configuration/options-postconfig/ServiceCollectionExtensions.cs" highlight="9,11":::
 
@@ -121,7 +150,7 @@ In the preceding code, the `AddMyLibraryService`:
 
 Consumers in this pattern provide a lambda expression (or a delegate that satisfies the `Action<LibraryOptions>` parameter), just as they would with the [`Action<TOptions>` parameter](#actiontoptions-parameter) in a non-post configuration scenario:
 
-:::code language="csharp" source="snippets/configuration/options-postconfig/Program.cs" highlight="21-25":::
+:::code language="csharp" source="snippets/configuration/options-postconfig/Program.cs" highlight="6-10":::
 
 ## See also
 

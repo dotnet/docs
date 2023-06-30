@@ -5,6 +5,8 @@ ms.date: 12/12/2021
 ---
 # Conclusions
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 - Container-based solutions ultimately provide cost savings benefits. Containers are a solution to deployment problems because they remove the friction caused by an absence of dependencies in production environments. By removing those issues, it improves Dev/Test, DevOps, and production operations significantly.
 
 - A Docker container is becoming the standard unit of deployment for any server-based application or service.

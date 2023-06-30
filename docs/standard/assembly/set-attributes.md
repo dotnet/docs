@@ -15,7 +15,7 @@ dev_langs:
 
 # Set assembly attributes
 
-Assembly attributes are values that provide information about an assembly. The attributes are divided into the following sets of information:
+Assembly attributes are values that provide information about an assembly. They're usually set in an _AssemblyInfo.cs_ file. The attributes are divided into the following sets of information:
 
 - Assembly identity attributes
 - Informational attributes

@@ -1,14 +1,14 @@
 ---
-title: "Primitives: the extensions library for .NET"
+title: "Use the Microsoft.Extensions.Primitives library"
 description: Learn about the various primitive types from the Microsoft.Extensions.Primitives library.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/12/2021
+ms.date: 03/13/2023
 ---
 
 # Primitives: The extensions library for .NET
 
-In this article, you'll learn about the [Microsoft.Extensions.Primitives](/dotnet/api/microsoft.extensions.primitives) library. The primitives in this article are *not* to be confused with .NET primitive types from the BCL, or that of the C# language. Instead, the types within the primitives library serve as building blocks for some of the peripheral .NET NuGet packages, such as:
+In this article, you'll learn about the [Microsoft.Extensions.Primitives](/dotnet/api/microsoft.extensions.primitives) library. The primitives in this article are *not* to be confused with .NET primitive types from the BCL, or that of the C# language. Instead, the types within the primitive's library serve as building blocks for some of the peripheral .NET NuGet packages, such as:
 
 - [`Microsoft.Extensions.Configuration`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration)
 - [`Microsoft.Extensions.Configuration.FileExtensions`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.FileExtensions)
@@ -92,10 +92,10 @@ With the various ways of slicing and dicing strings, it feels appropriate to com
 
 Both methods look similar on the API surface area, and they're both capable of splitting a large string into chunks. The benchmark results below show that the `StringTokenizer` approach is nearly three times faster, but *results may vary*. As with all performance considerations, you should evaluate your specific use case.
 
-| Method      | Mean      | Error     | Standard deviation | Median    | Ratio | Ratio standard deviation |
-|-------------|----------:|----------:|-------------------:|----------:|------:|-------------------------:|
-| `Tokenizer` | 6.306 ms  | 0.1481 ms | 0.4179 ms          | 6.175 ms  | 0.37  | 0.04                     |
-| `Split`     | 16.966 ms | 0.6164 ms | 1.8079 ms          | 16.862 ms | 1.00  | 0.00                     |
+| Method    | Mean      | Error     | StdDev    | Ratio |
+|-----------|----------:|----------:|----------:|------:|
+| Tokenizer | 3.315 ms  | 0.0659 ms | 0.0705 ms | 0.32  |
+| Split     | 10.257 ms | 0.2018 ms | 0.2552 ms | 1.00  |
 
 ***Legend***
 
@@ -107,7 +107,7 @@ Both methods look similar on the API surface area, and they're both capable of s
 - Ratio standard deviation: Standard deviation of the ratio distribution (Current/Baseline)
 - 1 ms: 1 Millisecond (0.001 sec)
 
-For more information on benchmarking with .NET, see [BenchmarkDotNet](https://dotnetfoundation.org/projects/benchmarkdotnet).
+For more information on benchmarking with .NET, see [BenchmarkDotNet](https://old.dotnetfoundation.org/projects/benchmarkdotnet).
 
 ### The `StringValues` type
 
@@ -115,7 +115,7 @@ The <xref:Microsoft.Extensions.Primitives.StringValues> object is a `struct` typ
 
 :::code source="./snippets/primitives/string/Example.StringValues.cs" id="StringValues":::
 
-The preceding code instantiates a `StringValues` object given an array of string values. The <xref:Microsoft.Extensions.Primitives.StringValues.Count?displayProperty=nameWithType> is written the console.
+The preceding code instantiates a `StringValues` object given an array of string values. The <xref:Microsoft.Extensions.Primitives.StringValues.Count?displayProperty=nameWithType> is written to the console.
 
 The `StringValues` type is an implementation of the following collection types:
 

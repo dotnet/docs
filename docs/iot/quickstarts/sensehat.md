@@ -3,7 +3,7 @@ title: Quickstart - Use .NET to drive a Raspberry Pi Sense HAT
 description: Get started with .NET IoT Libraries in 5 minutes using a Sense HAT, an add-on board for Raspberry Pi.
 author: camsoper
 ms.author: casoper
-ms.date: 03/03/2022
+ms.date: 12/05/2022
 ms.topic: quickstart
 ms.prod: dotnet
 recommendations: false
@@ -27,11 +27,22 @@ This quickstart uses .NET to retrieve sensor values from the Sense HAT, respond 
 - [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
 - Sense HAT
 
-[!INCLUDE [prepare-pi-i2c](../includes/prepare-pi-i2c.md)]
+## Prepare the Raspberry Pi
+
+Use the `raspi-config` command to ensure your SBC is configured to support the following services:
+
+- SSH
+- I2C
+
+For more information on `raspi-config`, refer to the [Raspberry Pi documentation](https://www.raspberrypi.com/documentation/computers/configuration.html).
+
+## Attach the Sense HAT
+
+With the Raspberry Pi device powered off, attach the Sense HAT. Power on the Raspberry Pi and launch the Bash shell once it boots. You may use SSH or connect the Raspberry Pi to a display.
 
 ## Install Git
 
-Ensure the latest version of Git is installed on your Raspberry Pi. Run the following commands:
+From the shell, ensure the latest version of Git is installed on your Raspberry Pi. Run the following commands:
 
 ```bash
 sudo apt update
@@ -45,7 +56,7 @@ The commands use the Advanced Package Tool command to:
 
 ## Run the quickstart
 
-Attach the Sense HAT to your Raspberry Pi. From a Bash prompt on the Raspberry Pi (local or remote), run the following command:
+From the shell, run the following command:
 
 ```bash
 . <(wget -q -O - https://aka.ms/dotnet-iot-sensehat-quickstart)

@@ -6,6 +6,8 @@ ms.date: 01/13/2021
 
 # Testing ASP.NET Core services and web apps
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 Controllers are a central part of any ASP.NET Core API service and ASP.NET MVC Web application. As such, you should have confidence they behave as intended for your application. Automated tests can provide you with this confidence and can detect errors before they reach production.
 
 You need to test how the controller behaves based on valid or invalid inputs, and test controller responses based on the result of the business operation it performs. However, you should have these types of tests for your microservices:
@@ -97,19 +99,19 @@ public class PrimeWebDefaultRequestShould
 #### Additional resources
 
 - **Steve Smith. Testing controllers** (ASP.NET Core) \
-    [https://docs.microsoft.com/aspnet/core/mvc/controllers/testing](/aspnet/core/mvc/controllers/testing)
+    [https://learn.microsoft.com/aspnet/core/mvc/controllers/testing](/aspnet/core/mvc/controllers/testing)
 
 - **Steve Smith. Integration testing** (ASP.NET Core) \
-    [https://docs.microsoft.com/aspnet/core/test/integration-tests](/aspnet/core/test/integration-tests)
+    [https://learn.microsoft.com/aspnet/core/test/integration-tests](/aspnet/core/test/integration-tests)
 
 - **Unit testing in .NET using dotnet test** \
-    [https://docs.microsoft.com/dotnet/core/testing/unit-testing-with-dotnet-test](../../../core/testing/unit-testing-with-dotnet-test.md)
+    [https://learn.microsoft.com/dotnet/core/testing/unit-testing-with-dotnet-test](../../../core/testing/unit-testing-with-dotnet-test.md)
 
 - **xUnit.net**. Official site. \
     <https://xunit.net/>
 
 - **Unit Test Basics.** \
-    [https://docs.microsoft.com/visualstudio/test/unit-test-basics](/visualstudio/test/unit-test-basics)
+    [https://learn.microsoft.com/visualstudio/test/unit-test-basics](/visualstudio/test/unit-test-basics)
 
 - **Moq**. GitHub repo. \
     <https://github.com/moq/moq>

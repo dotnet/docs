@@ -4,10 +4,10 @@ Option Strict On
 ' <Snippet18>
 Imports System.Text.RegularExpressions
 
-Module Example
+Module RTL2Example
     Public Sub Main()
-        Dim inputs() As String = {"1 May 1917", "June 16, 2003"}
-        Dim pattern As String = "(?<=\d{1,2}\s)\w+,?\s\d{4}"
+        Dim inputs() As String = {"1 May, 1917", "June 16, 2003"}
+        Dim pattern As String = "(?<=\d{1,2}\s)\w+,\s\d{4}"
 
         For Each input As String In inputs
             Dim match As Match = Regex.Match(input, pattern, RegexOptions.RightToLeft)
@@ -19,7 +19,8 @@ Module Example
         Next
     End Sub
 End Module
+
 ' The example displays the following output:
-'       The date occurs in May 1917.
+'       The date occurs in May, 1917.
 '       June 16, 2003 does not match.
 ' </Snippet18>

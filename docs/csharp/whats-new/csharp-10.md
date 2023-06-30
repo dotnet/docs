@@ -2,6 +2,7 @@
 title: What's new in C# 10 - C# Guide
 description: Get an overview of the new features available in C# 10.
 ms.date: 11/08/2021
+ms.custom: UpdateFrequency1
 ---
 # What's new in C# 10
 
@@ -21,10 +22,13 @@ C# 10 adds the following features and enhancements to the C# language:
 - [Allow `AsyncMethodBuilder` attribute on methods](#allow-asyncmethodbuilder-attribute-on-methods)
 - [CallerArgumentExpression attribute](#callerargumentexpression-attribute-diagnostics)
 - [Enhanced `#line` pragma](#enhanced-line-pragma)
+- [Warning wave 6](../language-reference/compiler-messages/warning-waves.md#cs8826---partial-method-declarations-have-signature-differences)
 
 C# 10 is supported on **.NET 6**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
 You can download the latest .NET 6 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), which includes the .NET 6 SDK.
+
+[!INCLUDE [released-version-feedback](./includes/released-feedback.md)]
 
 ## Record structs
 
@@ -34,7 +38,7 @@ You can declare value type records using the [`record struct` or `readonly recor
 
 C# 10 introduces the following improvements related to structure types:
 
-- You can declare an instance parameterless constructor in a structure type and initialize an instance field or property at its declaration. For more information, see the [Parameterless constructors and field initializers](../language-reference/builtin-types/struct.md#parameterless-constructors-and-field-initializers) section of the [Structure types](../language-reference/builtin-types/struct.md) article.
+- You can declare an instance parameterless constructor in a structure type and initialize an instance field or property at its declaration. For more information, see the [Struct initialization and default values](../language-reference/builtin-types/struct.md#struct-initialization-and-default-values) section of the [Structure types](../language-reference/builtin-types/struct.md) article.
 - A left-hand operand of the [`with` expression](../language-reference/operators/with-expression.md) can be of any structure type or an anonymous (reference) type.
 
 ## Interpolated string handler

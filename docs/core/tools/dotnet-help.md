@@ -5,7 +5,7 @@ ms.date: 02/14/2020
 ---
 # dotnet help reference
 
-**This article applies to:** ✔️ .NET Core 2.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -19,7 +19,7 @@ dotnet help <COMMAND_NAME> [-h|--help]
 
 ## Description
 
-The `dotnet help` command opens up the reference page for more detailed information about the specified command at docs.microsoft.com.
+The `dotnet help` command opens up the reference page for more detailed information about the specified command.
 
 ## Arguments
 
@@ -28,8 +28,6 @@ The `dotnet help` command opens up the reference page for more detailed informat
   Name of the .NET CLI command. For a list of the valid CLI commands, see [CLI commands](index.md#cli-commands).
 
 ## Options
-
-<!-- markdownlint-disable MD012 -->
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 

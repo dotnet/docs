@@ -1,6 +1,6 @@
 ﻿Option Strict On
 
-Public Module Example
+Public Module ConvertExample
     Public Sub Main()
         PerformConversions()
         Console.WriteLine("-----")

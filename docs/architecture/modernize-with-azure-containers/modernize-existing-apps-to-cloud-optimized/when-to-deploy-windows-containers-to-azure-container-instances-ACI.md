@@ -6,6 +6,8 @@ ms.date: 12/12/2021
 
 # When to deploy Windows Containers to Azure Container Instances (ACI)
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 The main value proposition of Azure Container Instances is that you can right away deploy containers to it and you don't need to maintain that environment, you don't need to upgrade/patch the underlying operating system or VMs, all that is transparent and you just deploy containers into a ready-to-use environment.
 
 The reasons and scenarios when you would want to use ACI are similar to the main scenarios when you use Azure VMs with containers, so basically, the main scenarios for using Azure Container Instances are:

@@ -6,7 +6,7 @@ metadata:
   audience: Developer
   ms.custom: mvc
   ms.topic: interactive-tutorial
-  ms.date: 10/23/2018
+  ms.date: 03/23/2022
   level: Beginner
   displayType: two-column
   interactive: csharp
@@ -14,6 +14,9 @@ items:
 - durationInMinutes: 1
   content: |
     This tutorial teaches you C# interactively, using your browser to write C# code and see the results of compiling and running your code. It contains a series of lessons that create, modify, and explore collections and arrays.
+    
+    > [!TIP]
+    > To paste a code snippet inside the **focus mode** you should use your keyboard shortcut (<kbd>Ctrl</kbd> + <kbd>v</kbd>, or <kbd>cmd</kbd> + <kbd>v</kbd>).
 - title: Create lists
   durationInMinutes: 2
   content: |
@@ -79,8 +82,9 @@ items:
     ```csharp
     var index = names.IndexOf("Felipe");
     if (index != -1)
+    {
       Console.WriteLine($"The name {names[index]} is at index {index}");
-
+    }
     var notFound = names.IndexOf("Not Found");
     Console.WriteLine($"When an item is not found, IndexOf returns {notFound}");
     ```
@@ -115,7 +119,9 @@ items:
     fibonacciNumbers.Add(previous + previous2);
 
     foreach(var item in fibonacciNumbers)
+    {
         Console.WriteLine(item);
+    }
     ```
 
     Press **Run** to see the results;
@@ -141,7 +147,9 @@ items:
         fibonacciNumbers.Add(previous + previous2);
     }
     foreach(var item in fibonacciNumbers)
+    {
         Console.WriteLine(item);
+    }
     ```
 
     With each iteration of the loop, you're taking the last two integers in the list, summing them, and adding that value to the list. The loop repeats until you've added 20 items to the list.

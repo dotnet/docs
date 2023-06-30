@@ -1,10 +1,12 @@
 ---
 title: Logging with Elastic Stack
 description: Logging using Elastic Stack, Logstash, and Kibana
-ms.date: 01/19/2021
+ms.date: 04/06/2022
 ---
 
 # Logging with Elastic Stack
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 There are many good centralized logging tools and they vary in cost from being free, open-source tools, to more expensive options. In many cases, the free tools are as good as or better than the paid offerings. One such tool is a combination of three open-source components: Elasticsearch, Logstash, and Kibana.
 
@@ -12,7 +14,7 @@ Collectively these tools are known as the Elastic Stack or ELK stack.
 
 ## Elastic Stack
 
-The Elastic Stack is a powerful option for gathering information from a Kubernetes cluster. Kubernetes supports sending logs to an Elasticsearch endpoint, and for the [most part](https://v1-19.docs.kubernetes.io/docs/tasks/debug-application-cluster/logging-elasticsearch-kibana/), all you need to get started is to set the environment variables as shown in Figure 7-5:
+The Elastic Stack is a powerful option for gathering information from a Kubernetes cluster. Kubernetes supports sending logs to an Elasticsearch endpoint, and for the [most part](https://www.elastic.co/guide/en/kibana/master/logging-configuration.html), all you need to get started is to set the environment variables as shown in Figure 7-5:
 
 ```kubernetes
 KUBE_LOGGING_DESTINATION=elasticsearch
@@ -32,7 +34,7 @@ Elastic Stack provides centralized logging in a low-cost, scalable, cloud-friend
 
 ## Logstash
 
-The first component is [Logstash](https://www.elastic.co/products/logstash). This tool is used to gather log information from a large variety of different sources. For instance, Logstash can read logs from disk and also receive messages from logging libraries like [Serilog](https://serilog.net/). Logstash can do some basic filtering and expansion on the logs as they arrive. For instance, if your logs contain IP addresses then Logstash may be configured to do a geographical lookup and obtain a country or even city of origin for that message.
+The first component is [Logstash](https://www.elastic.co/products/logstash). This tool is used to gather log information from a large variety of different sources. For instance, Logstash can read logs from disk and also receive messages from logging libraries like [Serilog](https://serilog.net/). Logstash can do some basic filtering and expansion on the logs as they arrive. For instance, if your logs contain IP addresses then Logstash may be configured to do a geographical lookup and obtain a country/region or even city of origin for that message.
 
 Serilog is a logging library for .NET languages, which allows for parameterized logging. Instead of generating a textual log message that embeds fields, parameters are kept separate. This library allows for more intelligent filtering and searching. A sample Serilog configuration for writing to Logstash appears in Figure 7-7.
 

@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot deployments
 description: Learn how to troubleshoot an Orleans app deployment.
-ms.date: 01/31/2022
+ms.date: 03/09/2022
 ---
 
 # Troubleshoot deployments
@@ -12,9 +12,7 @@ Be sure to check the logs for more information.
 
 ## The `SiloUnavailableException`
 
-First, check to make sure that you are actually starting the silos before attempting to initialize the client.
-Sometimes the silos take a long time to start so it can be beneficial to try to initialize the client multiple times.
-If it still throws an exception, then there might be another issue with the silos.
+First, check to make sure that you are starting the silos before attempting to initialize the client. Sometimes the silos take a long time to start so it can be beneficial to try to initialize the client multiple times. If it still throws an exception, then there might be another issue with the silos.
 
 Check the silo configuration and make sure that the silos are starting up properly.
 
@@ -35,7 +33,7 @@ It will give errors saying that it cannot get the endpoint information.
 
 Make sure that the connection strings are set up properly.
 
-It is likely that the Web.config file in the web role or the app.config file in the worker role were modified improperly. Incorrect versions in these files can cause issues with the deployment. Be careful when dealing with updates.
+Likely, the _Web.config_ file in the web role or the _app.config_ file in the worker role was modified improperly. Incorrect versions in these files can cause issues with the deployment. Be careful when dealing with updates.
 
 ## Version issues
 
@@ -58,12 +56,12 @@ The WADLogsTable is a good starting point for looking at the logs.
 
 Programmatic configuration:
 
-- When creating a `ClusterConfiguration` object, set `config.Defaults.DefaultTraceLevel = Severity.Info`.
-- When creating a `ClientConfiguration` object, set `config.DefaultTraceLevel = Severity.Info`.
+- When creating a <xref:Orleans.Runtime.Configuration.ClusterConfiguration> object, set `config.Defaults.DefaultTraceLevel = Severity.Info`.
+- When creating a <xref:Orleans.Runtime.Configuration.ClientConfiguration> object, set `config.DefaultTraceLevel = Severity.Info`.
 
 Declarative configuration:
 
-- Add `<Tracing DefaultTraceLevel="Info" />` to the `OrleansConfiguration.xml` and/or the `ClientConfiguration.xml` files.
+- Add `<Tracing DefaultTraceLevel="Info" />` to the _OrleansConfiguration.xml_ and/or the _ClientConfiguration.xml_ files.
 
 In the _diagnostics.wadcfgx_ file for the web and worker roles, make sure to set the `scheduledTransferLogLevelFilter` attribute in the `Logs` element to `Information`, as this is an additional layer of trace filtering that defines which traces are sent to the `WADLogsTable` in Azure Storage.
 

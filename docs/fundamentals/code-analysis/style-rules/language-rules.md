@@ -1,7 +1,7 @@
 ---
 title: Code style language rules
 description: Learn about the different code style rules for using C# and Visual Basic language constructs.
-ms.date: 09/25/2020
+ms.date: 06/22/2022
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -15,17 +15,17 @@ helpviewer_keywords:
 ---
 # Language rules
 
-Code style language rules affect how various constructs of .NET programming languages, for example, modifiers and parentheses, are used. The rules fall into the following categories:
+Code-style language rules affect how various constructs of .NET programming languages, for example, modifiers, and parentheses, are used. The rules fall into the following categories:
 
-- [.NET style rules](#net-style-rules): Rules that apply to both C# and Visual Basic. The EditorConfig option names for these rules start with `dotnet_style_` prefix.
-- [C# style rules](#c-style-rules): Rules that are specific to C# language only. The EditorConfig option names for these rules start with `csharp_style_` prefix.
-- [Visual Basic style rules](#visual-basic-style-rules): Rules that are specific to Visual Bsic language only. The EditorConfig option names for these rules start with `visual_basic_style_` prefix.
+- [.NET style rules](#net-style-rules): Rules that apply to both C# and Visual Basic. The option names for these rules start with the prefix `dotnet_style_`.
+- [C# style rules](#c-style-rules): Rules that are specific to C# code. The option names for these rules start with the prefix `csharp_style_`.
+- [Visual Basic style rules](#visual-basic-style-rules): Rules that are specific to Visual Basic code. The option names for these rules start with the prefix `visual_basic_style_`.
 
 ## Option format
 
-Options for language rules can be specified in an EditorConfig file with the following format:
+Options for language rules can be specified in a [configuration file](../configuration-files.md) with the following format:
 
-`option_name = value` (Visual Studio 2019 version 16.9 Preview 2 and later)
+`option_name = value` (Visual Studio 2019 version 16.9 and later)
 
 or
 
@@ -35,11 +35,11 @@ or
 
   For each language rule, you specify a value that defines if or when to prefer the style. Many rules accept a value of `true` (prefer this style) or `false` (do not prefer this style). Other rules accept values such as `when_on_single_line` or `never`.
 
-- **Severity** (optional in Visual Studio 2019 version 16.9 Preview 2 and later versions)
+- **Severity** (optional in Visual Studio 2019 version 16.9 and later versions)
 
-  The second part of the rule specifies the [severity level](../configuration-options.md#severity-level) for the rule. When specified in this way, the severity setting is only respected inside development IDEs, such as Visual Studio. It is *not* respected during build.
+  The second part of the rule specifies the [severity level](../configuration-options.md#severity-level) for the rule. When specified in this way, *the severity setting is only respected inside development IDEs, such as Visual Studio*. It is *not* respected during build.
 
-  To enforce code style rules at build time, set the severity by using the rule ID-based severity configuration syntax for analyzers instead. The syntax takes the form `dotnet_diagnostic.<rule ID>.severity = <severity>`, for example, `dotnet_diagnostic.IDE0040.severity = silent`. For more information, see [severity level](../configuration-options.md#severity-level).
+  To enforce code style rules at build time, set the severity by using the rule ID-based severity configuration syntax for analyzers instead. The syntax takes the form `dotnet_diagnostic.<rule ID>.severity = <severity>`, for example, `dotnet_diagnostic.IDE0040.severity = none`. For more information, see [severity level](../configuration-options.md#severity-level).
 
 > [!TIP]
 >
@@ -50,100 +50,88 @@ or
 The style rules in this section are applicable to both C# and Visual Basic.
 
 - ['this.' and 'Me.' qualifiers](ide0003-ide0009.md)
-  - [dotnet_style_qualification_for_field](ide0003-ide0009.md#dotnet_style_qualification_for_field)
-  - [dotnet_style_qualification_for_property](ide0003-ide0009.md#dotnet_style_qualification_for_property)
-  - [dotnet_style_qualification_for_method](ide0003-ide0009.md#dotnet_style_qualification_for_method)
-  - [dotnet_style_qualification_for_event](ide0003-ide0009.md#dotnet_style_qualification_for_event)
 - [Language keywords instead of framework type names for type references](ide0049.md)
-  - [dotnet_style_predefined_type_for_locals_parameters_members](ide0049.md#dotnet_style_predefined_type_for_locals_parameters_members)
-  - [dotnet_style_predefined_type_for_member_access](ide0049.md#dotnet_style_predefined_type_for_member_access)
 - [Modifier preferences](modifier-preferences.md#net-modifier-preferences)
-  - [csharp_preferred_modifier_order](ide0036.md#csharp_preferred_modifier_order)
-  - [visual_basic_preferred_modifier_order](ide0036.md#visual_basic_preferred_modifier_order)
-  - [dotnet_style_require_accessibility_modifiers](ide0040.md#dotnet_style_require_accessibility_modifiers)
-  - [dotnet_style_readonly_field](ide0044.md#dotnet_style_readonly_field)
+  - [Order modifiers (IDE0036)](ide0036.md)
+  - [Add accessibility modifiers (IDE0040)](ide0040.md)
+  - [Add readonly modifier (IDE0044)](ide0044.md)
 - [Parentheses preferences](ide0047-ide0048.md)
-  - [dotnet_style_parentheses_in_arithmetic_binary_operators](ide0047-ide0048.md#dotnet_style_parentheses_in_arithmetic_binary_operators)
-  - [dotnet_style_parentheses_in_relational_binary_operators](ide0047-ide0048.md#dotnet_style_parentheses_in_relational_binary_operators)
-  - [dotnet_style_parentheses_in_other_binary_operators](ide0047-ide0048.md#dotnet_style_parentheses_in_other_binary_operators)
-  - [dotnet_style_parentheses_in_other_operators](ide0047-ide0048.md#dotnet_style_parentheses_in_other_operators)
 - [Expression-level preferences](expression-level-preferences.md#net-expression-level-preferences)
-  - [dotnet_style_object_initializer](ide0017.md#dotnet_style_object_initializer)
-  - [dotnet_style_collection_initializer](ide0028.md#dotnet_style_collection_initializer)
-  - [dotnet_style_prefer_auto_properties](ide0032.md#dotnet_style_prefer_auto_properties)
-  - [dotnet_style_explicit_tuple_names](ide0033.md#dotnet_style_explicit_tuple_names)
-  - [dotnet_style_prefer_inferred_tuple_names](ide0037.md#dotnet_style_prefer_inferred_tuple_names)
-  - [dotnet_style_prefer_inferred_anonymous_type_member_names](ide0037.md#dotnet_style_prefer_inferred_anonymous_type_member_names)
-  - [dotnet_style_prefer_conditional_expression_over_assignment](ide0045.md#dotnet_style_prefer_conditional_expression_over_assignment)
-  - [dotnet_style_prefer_conditional_expression_over_return](ide0046.md#dotnet_style_prefer_conditional_expression_over_return)
-  - [dotnet_style_prefer_compound_assignment](ide0054-ide0074.md#dotnet_style_prefer_compound_assignment)
-  - [dotnet_style_prefer_simplified_interpolation](ide0071.md#dotnet_style_prefer_simplified_interpolation)
-  - [dotnet_style_prefer_simplified_boolean_expressions](ide0075.md#dotnet_style_prefer_simplified_boolean_expressions)
-  - [Add missing cases to switch statement](ide0010.md) - This rule has no code style option.
-  - [Convert anonymous type to tuple](ide0050.md) - This rule has no code style option.
-  - [Use 'System.HashCode.Combine'](ide0070.md) - This rule has no code style option.
-  - [Convert 'typeof' to 'nameof'](ide0082.md) - This rule has no code style option.
+  - [Use object initializers (IDE0017)](ide0017.md)
+  - [Use collection initializers (IDE0028)](ide0028.md)
+  - [Use auto-implemented property (IDE0032)](ide0032.md)
+  - [Use explicitly provided tuple name (IDE0033)](ide0033.md)
+  - [Use inferred member names (IDE0037)](ide0037.md)
+  - [Use conditional expression for assignment (IDE0045)](ide0045.md)
+  - [Use conditional expression for return (IDE0046)](ide0046.md)
+  - [Use compound assignment (IDE0054 and IDE0074)](ide0054-ide0074.md)
+  - [Simplify interpolation (IDE0071)](ide0071.md)
+  - [Simplify conditional expression (IDE0075)](ide0075.md)
+  - [Add missing cases to switch statement (IDE0010)](ide0010.md)
+  - [Convert anonymous type to tuple (IDE0050)](ide0050.md)
+  - [Use 'System.HashCode.Combine' (IDE0070)](ide0070.md)
+  - [Convert `typeof` to `nameof` (IDE0082)](ide0082.md)
 - [Null-checking preferences](null-checking-preferences.md#net-null-checking-preferences)
-  - [dotnet_style_coalesce_expression](ide0029-ide0030.md#dotnet_style_coalesce_expression)
-  - [dotnet_style_null_propagation](ide0031.md#dotnet_style_null_propagation)
-  - [dotnet_style_prefer_is_null_check_over_reference_equality_method](ide0041.md#dotnet_style_prefer_is_null_check_over_reference_equality_method)
+  - [Use coalesce expression (IDE0029 and IDE0030)](ide0029-ide0030.md)
+  - [Use null propagation (IDE0031)](ide0031.md)
+  - [Use 'is null' check (IDE0041)](ide0041.md)
 - [File header preferences](ide0073.md)
-  - [file_header_template](ide0073.md#file_header_template)
+- [Namespace naming preferences (IDE0130)](ide0130.md)
 
 ## C# style rules
 
 The style rules in this section are applicable to C# language only.
 
-- ['var' preferences](ide0007-ide0008.md)
-  - [csharp_style_var_for_built_in_types](ide0007-ide0008.md#csharp_style_var_for_built_in_types)
-  - [csharp_style_var_when_type_is_apparent](ide0007-ide0008.md#csharp_style_var_when_type_is_apparent)
-  - [csharp_style_var_elsewhere](ide0007-ide0008.md#csharp_style_var_elsewhere)
+- ['var' preferences (IDE0007 and IDE0008)](ide0007-ide0008.md)
 - [Expression-bodied members](expression-bodied-members.md)
-  - [csharp_style_expression_bodied_constructors](ide0021.md#csharp_style_expression_bodied_constructors)
-  - [csharp_style_expression_bodied_methods](ide0022.md#csharp_style_expression_bodied_methods)
-  - [csharp_style_expression_bodied_operators](ide0023-ide0024.md#csharp_style_expression_bodied_operators)
-  - [csharp_style_expression_bodied_properties](ide0025.md#csharp_style_expression_bodied_properties)
-  - [csharp_style_expression_bodied_indexers](ide0026.md#csharp_style_expression_bodied_indexers)
-  - [csharp_style_expression_bodied_accessors](ide0027.md#csharp_style_expression_bodied_accessors)
-  - [csharp_style_expression_bodied_lambdas](ide0053.md#csharp_style_expression_bodied_lambdas)
-  - [csharp_style_expression_bodied_local_functions](ide0061.md#csharp_style_expression_bodied_local_functions)
+  - [Use expression body for constructors (IDE0021)](ide0021.md)
+  - [Use expression body for methods (IDE0022)](ide0022.md)
+  - [Use expression body for operators (IDE0023 and IDE0024)](ide0023-ide0024.md)
+  - [Use expression body for properties (IDE0025)](ide0025.md)
+  - [Use expression body for indexers (IDE0026)](ide0026.md)
+  - [Use expression body for accessors (IDE0027)](ide0027.md)
+  - [Use expression body for lambdas (IDE0053)](ide0053.md)
+  - [Use expression body for local functions (IDE0061)](ide0061.md)
 - [Pattern matching preferences](pattern-matching-preferences.md)
-  - [csharp_style_pattern_matching_over_as_with_null_check](ide0019.md#csharp_style_pattern_matching_over_as_with_null_check)
-  - [csharp_style_pattern_matching_over_is_with_cast_check](ide0020-ide0038.md#csharp_style_pattern_matching_over_is_with_cast_check)
-  - [csharp_style_prefer_switch_expression](ide0066.md#csharp_style_prefer_switch_expression)
-  - [csharp_style_prefer_pattern_matching](ide0078.md#csharp_style_prefer_pattern_matching)
-  - [csharp_style_prefer_not_pattern](ide0083.md#csharp_style_prefer_not_pattern)
+  - [Use pattern matching to avoid 'as' followed by a 'null' check (IDE0019)](ide0019.md)
+  - [Use pattern matching to avoid 'is' check followed by a cast (IDE0020 and IDE0038)](ide0020-ide0038.md)
+  - [Use switch expression (IDE0066)](ide0066.md)
+  - [Use pattern matching (IDE0078)](ide0078.md)
+  - [Use pattern matching (`not` operator) (IDE0083)](ide0083.md)
+  - [Simplify property pattern (IDE0170)](ide0170.md)
 - [Expression-level preferences](expression-level-preferences.md#c-expression-level-preferences)
-  - [csharp_style_inlined_variable_declaration](ide0018.md#csharp_style_inlined_variable_declaration)
-  - [csharp_prefer_simple_default_expression](ide0034.md#csharp_prefer_simple_default_expression)
-  - [csharp_style_pattern_local_over_anonymous_function](ide0039.md#csharp_style_pattern_local_over_anonymous_function)
-  - [csharp_style_deconstructed_variable_declaration](ide0042.md#csharp_style_deconstructed_variable_declaration)
-  - [csharp_style_prefer_index_operator](ide0056.md#csharp_style_prefer_index_operator)
-  - [csharp_style_prefer_range_operator](ide0057.md#csharp_style_prefer_range_operator)
-  - [csharp_style_implicit_object_creation_when_type_is_apparent](ide0090.md#csharp_style_implicit_object_creation_when_type_is_apparent)
-  - [Add missing cases to switch expression](ide0072.md) - This rule has no code style option.
+  - [Inline variable declaration (IDE0018)](ide0018.md)
+  - [Simplify 'default' expression (IDE0034)](ide0034.md)
+  - [Use local function instead of lambda (IDE0039)](ide0039.md)
+  - [Deconstruct variable declaration (IDE0042)](ide0042.md)
+  - [Use index operator (IDE0056)](ide0056.md)
+  - [Use range operator (IDE0057)](ide0057.md)
+  - [Simplify `new` expression (IDE0090)](ide0090.md)
+  - [Add missing cases to switch expression (IDE0072)](ide0072.md)
+  - [Use tuple to swap values (IDE0180)](ide0180.md)
 - ["Null" checking preferences](null-checking-preferences.md#c-null-checking-preferences)
-  - [csharp_style_throw_expression](ide0016.md#csharp_style_throw_expression)
-  - [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call)
+  - [Use throw expression (IDE0016)](ide0016.md)
+  - [Use conditional delegate call (IDE1005)](ide1005.md)
+  - [Prefer 'null' check over type check (IDE0150)](ide0150.md)
 - [Code block preferences](code-block-preferences.md)
-  - [csharp_prefer_braces](ide0011.md#csharp_prefer_braces)
-  - [csharp_prefer_simple_using_statement](ide0063.md#csharp_prefer_simple_using_statement)
-- ['using' directive preferences](ide0065.md)
-  - [csharp_using_directive_placement](ide0065.md#csharp_using_directive_placement)
+  - [Add braces (IDE0011)](ide0011.md)
+  - [Use simple 'using' statement (IDE0063)](ide0063.md)
+- ['using' directive preferences (IDE0065)](ide0065.md)
 - [Modifier preferences](modifier-preferences.md#c-modifier-preferences)
-  - [csharp_prefer_static_local_function](ide0062.md#csharp_prefer_static_local_function)
-  - [Make struct fields writable](ide0064.md) - This rule has no code style option.
+  - [Make local function static (IDE0062)](ide0062.md)
+  - [Make struct fields writable (IDE0064)](ide0064.md)
+- [Namespace declaration preferences (IDE0160 and IDE0161)](ide0160-ide0161.md)
 
 ## Visual Basic style rules
 
 The style rules in this section are applicable to Visual Basic language only.
 
 - [Pattern matching preferences](pattern-matching-preferences.md)
-  - [visual_basic_style_prefer_isnot_expression](ide0084.md#visual_basic_style_prefer_isnot_expression)
+  - [Use pattern matching (`IsNot` operator) (IDE0084)](ide0084.md)
 
 ## See also
 
 - [Unnecessary code rules](unnecessary-code-rules.md)
-- [Formatting rules](formatting-rules.md)
+- [Formatting rules](ide0055.md)
 - [Naming rules](naming-rules.md)
 - [.NET code style rules reference](index.md)

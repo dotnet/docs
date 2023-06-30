@@ -70,6 +70,7 @@ Specifies whether to enable event tracing for Windows (ETW) for common language 
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
 - [Controlling .NET Framework Logging](../../../performance/controlling-logging.md)

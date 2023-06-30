@@ -32,6 +32,7 @@ The tables that follow summarize .NET Framework version history and correlate ea
 
 Jump to:
 
+- [.NET Framework 4.8.1](#net-framework-481)
 - [.NET Framework 4.8](#net-framework-48)
 - [.NET Framework 4.7.2](#net-framework-472)
 - [.NET Framework 4.7.1](#net-framework-471)
@@ -49,6 +50,24 @@ Jump to:
 - [.NET Framework 1.1](#net-framework-11)
 - [.NET Framework 1.0](#net-framework-10)
 
+### .NET Framework 4.8.1
+
+- [New features](../whats-new/index.md#whats-new-in-net-framework-481)
+- New accessibility features
+- [Release notes](https://github.com/Microsoft/dotnet/tree/master/releases/net481/README.md)
+
+| | Versions |
+|-|-|
+|**CLR**|4|
+|**Windows**|✔️ September 2022 Release (Version 22621)<br/> ➕ 11 October 2021 Release (Version 22000)<br/>➕ 10 November 2021 Update<br/>➕ 10 May 2021 Update<br/>➕ 10 October 2020 Update<br/>|
+|**Windows Server**|➕ Windows Server 2022<br/>|
+
+To determine the installed .NET version, use the following `Release` DWORD:
+
+- 533325 (all OS versions)
+
+For more information, see [instructions](how-to-determine-which-versions-are-installed.md).
+
 ### .NET Framework 4.8
 
 - [New features](../whats-new/index.md#whats-new-in-net-framework-48)
@@ -58,7 +77,7 @@ Jump to:
 | | Versions |
 |-|-|
 |**CLR**|4|
-|**Windows**|✔️ 11<br/>✔️ 10 May 2021 Update<br/>✔️ 10 October 2020 Update<br/>✔️ 10 May 2020 Update<br/>✔️ 10 November 2019 Update<br/>✔️ 10 May 2019 Update<br/>➕ 10 October 2018 Update (Version 1809)<br/>➕ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
+|**Windows**|✔️ 11 October 2021 Release (Version 22000)<br/>✔️ 10 November 2021 Update<br/>✔️ 10 May 2021 Update<br/>✔️ 10 October 2020 Update<br/>✔️ 10 May 2020 Update<br/>✔️ 10 November 2019 Update<br/>✔️ 10 May 2019 Update<br/>➕ 10 October 2018 Update (Version 1809)<br/>➕ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
 |**Windows Server**|✔️ Windows Server 2022<br/>➕ Windows Server 2019<br/>➕ Windows Server, version 1809<br/>➕ Windows Server, version 1803<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
 
 To determine the installed .NET version, use the following `Release` DWORD:
@@ -139,7 +158,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 |--------------------|------------------------------------------------------------------------------------------------------------|
 | **CLR**            | 4                                                                                                          |
 | **Windows**        | ✔️ 10 Anniversary Update (Version 1607)<br/>➕ 10 November Update (Version 1511)<br/>➕ 10<br/>➕ 8.1<br />➕ 7 |
-| **Windows Server** | ✔️ 2016<br /><br/>➕ 2012 R2<br />➕ 2012<br />➕ 2008 R2 SP1                                                |
+| **Windows Server** | ✔️ 2016<br /><br/>➕ 2012 R2<br />➕ 2012<br />➕ 2008 R2 SP1<br />➕ 2008 SP2                           |
 
 To determine the installed .NET version, use the following `Release` DWORD:
 
@@ -351,7 +370,7 @@ To determine the installed .NET version, use `Release` DWORD 378389. For more in
 
 The following guidelines apply:
 
-- In Visual Studio, you can choose .NET Framework 4.5 as the target framework for a project (this sets the <xref:Microsoft.Build.Tasks.GetReferenceAssemblyPaths.TargetFrameworkMoniker%2A?displayProperty=nameWithType> property) to compile the project as a .NET Framework 4.5 assembly or executable. This assembly or executable can then be used on any computer that has the .NET Framework 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, or 4.8 installed.
+- In Visual Studio, you can choose .NET Framework 4.5 as the target framework for a project (this sets the <xref:Microsoft.Build.Tasks.GetReferenceAssemblyPaths.TargetFrameworkMoniker%2A?displayProperty=nameWithType> property) to compile the project as a .NET Framework 4.5 assembly or executable. This assembly or executable can then be used on any computer that has .NET Framework 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, or 4.8 installed.
 
 - In Visual Studio, you can choose .NET Framework 4.5.1 as the target framework for a project to compile it as a .NET Framework 4.5.1 assembly or executable. Only run this assembly or executable on computers that have .NET Framework 4.5.1 or later installed. An executable that targets .NET Framework 4.5.1 will be blocked from running on a computer that only has an earlier version of .NET Framework, such as .NET Framework 4.5, installed. The user will be prompted to install .NET Framework 4.5.1. In addition, .NET Framework 4.5.1 assemblies should not be called from an app that targets an earlier version of .NET Framework, such as .NET Framework 4.5.
 

@@ -7,7 +7,7 @@ metadata:
   title: "C# docs - get started, tutorials, reference."
   description: "Learn C# programming - for beginning developers, developers new to C#, and experienced C# / .NET developers"
   ms.topic: landing-page # Required
-  ms.date: 11/19/2019
+  ms.date: 04/05/2023
 
 landingContent:
   - title: "Learn to program in C#"
@@ -27,7 +27,7 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: "Self-guided tutorials"
-            url: https://docs.microsoft.com/en-us/users/dotnet/collections/yz26f8y64n7k07?WT.mc_id=dotnet-35129-website 
+            url: https://learn.microsoft.com/users/dotnet/collections/yz26f8y64n7k07?WT.mc_id=dotnet-35129-website 
           - text: "In-browser tutorial"
             url: ./tour-of-csharp/tutorials/hello-world.yml
       - linkListType: reference
@@ -81,6 +81,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
+          - text: C# language strategy
+            url: ./tour-of-csharp/strategy.md
           - text: "Programming concepts"
             url: ./programming-guide/concepts/index.md
       - linkListType: quickstart
@@ -103,8 +105,6 @@ landingContent:
             url: ./nullable-references.md
           - text: "Nullable reference migrations"
             url: ./nullable-migration-strategies.md
-          - text: "Resolve nullable warnings"
-            url: ./nullable-warnings.md
           - text: "Language Integrated Query (LINQ)"
             url: linq/index.md
           - text: "Versioning"
@@ -114,12 +114,14 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
+          - text: "What's new in C# 12"
+            url: whats-new/csharp-12.md
+          - text: "What's new in C# 11"
+            url: whats-new/csharp-11.md
           - text: "What's new in C# 10"
             url: whats-new/csharp-10.md
           - text: "What's new in C# 9.0"
             url: whats-new/csharp-9.md
-          - text: "What's new in C# 8.0"
-            url: whats-new/csharp-8.md
       - linkListType: tutorial
         links:
           - text: Explore record types
@@ -128,16 +130,6 @@ landingContent:
             url: whats-new/tutorials/top-level-statements.md
           - text: Explore new patterns
             url: whats-new/tutorials/patterns-objects.md
-          - text: Safely update interfaces
-            url: whats-new/tutorials/default-interface-methods-versions.md
-          - text: Create mixins with interfaces
-            url: whats-new/tutorials/mixins-with-default-interface-methods.md
-          - text: Explore indexes and ranges
-            url: whats-new/tutorials/ranges-indexes.md
-          - text: Nullable reference types
-            url: whats-new/tutorials/nullable-reference-types.md
-          - text: Explore async streams
-            url: whats-new/tutorials/generate-consume-asynchronous-stream.md
           - text: Write a custom string interpolation handler
             url: whats-new/tutorials/interpolated-string-handler.md
       - linkListType: reference
@@ -155,11 +147,11 @@ landingContent:
             url: language-reference/index.md
           - text: "C# keywords"
             url: language-reference/keywords/index.md
-          - text: "C# operators"
+          - text: "C# operators and expressions"
             url: language-reference/operators/index.md
           - text: Configure language version
             url: language-reference/configure-language-version.md
-          - text: "C# language specification"
+          - text: "C# language specification - C# 7 draft in progress"
             url: ../../_csharpstandard/standard/README.md
 
   - title: "Stay in touch"

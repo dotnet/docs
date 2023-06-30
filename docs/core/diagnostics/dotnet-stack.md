@@ -5,7 +5,7 @@ ms.date: 04/21/2021
 ---
 # Inspect managed stack traces (dotnet-stack)
 
-**This article applies to:** ✔️ .NET Core 3.0 and later versions
+**This article applies to:** ✔️ `dotnet-stack` version 5.0.221401 and later versions
 
 ## Install
 
@@ -25,9 +25,8 @@ There are two ways to download and install `dotnet-stack`:
 
   | OS  | Platform |
   | --- | -------- |
-  | Windows | [x86](https://aka.ms/dotnet-stack/win-x86) \| [x64](https://aka.ms/dotnet-stack/win-x64) \| [arm](https://aka.ms/dotnet-stack/win-arm) \| [arm-x64](https://aka.ms/dotnet-stack/win-arm64) |
-  | macOS   | [x64](https://aka.ms/dotnet-stack/osx-x64) |
-  | Linux   | [x64](https://aka.ms/dotnet-stack/linux-x64) \| [arm](https://aka.ms/dotnet-stack/linux-arm) \| [arm64](https://aka.ms/dotnet-stack/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-stack/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-stack/linux-musl-arm64) |
+  | Windows | [x86](https://aka.ms/dotnet-stack/win-x86) \| [x64](https://aka.ms/dotnet-stack/win-x64) \| [Arm](https://aka.ms/dotnet-stack/win-arm) \| [Arm-x64](https://aka.ms/dotnet-stack/win-arm64) |
+  | Linux   | [x64](https://aka.ms/dotnet-stack/linux-x64) \| [Arm](https://aka.ms/dotnet-stack/linux-arm) \| [Arm64](https://aka.ms/dotnet-stack/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-stack/linux-musl-x64) \| [musl-Arm64](https://aka.ms/dotnet-stack/linux-musl-arm64) |
 
 ## Synopsis
 
@@ -55,10 +54,11 @@ The `dotnet-stack` tool:
 
 ## Commands
 
-| Command                                     | Description                                                   |
-|---------------------------------------------|---------------------------------------------------------------|
-| [dotnet-stack report](#dotnet-stack-report) | Prints the stack trace for each thread in the target process. |
-| [dotnet-stack ps](#dotnet-stack-ps)         | Lists the dotnet processes that traces can be collected from. |
+| Command                                               | Description                                                             |
+|-------------------------------------------------------|-------------------------------------------------------------------------|
+| [dotnet-stack report](#dotnet-stack-report)           | Prints the stack trace for each thread in the target process.           |
+| [dotnet-stack ps](#dotnet-stack-ps)                   | Lists the dotnet processes that stack traces can be collected from.     |
+| [dotnet-stack symbolicate](#dotnet-stack-symbolicate) | Get the line number from the Method Token and IL Offset in a stacktrace.|
 
 ## dotnet-stack report
 
@@ -76,20 +76,78 @@ dotnet-stack report -p|--process-id <pid>
 
 - **`-n, --name <name>`**
 
-  The name of the process to collect the trace from.
+  The name of the process to report the stack from.
 
 - **`-p|--process-id <PID>`**
 
-  The process ID to collect the trace from.
+  The process ID to report the stack from.
 
 ## dotnet-stack ps
 
- Lists the dotnet processes that traces can be collected from.
+ Lists the dotnet processes that stack traces can be collected from.
+ `dotnet-stack` version 6.0.320703 and later versions also display the command-line arguments that each process was started with, if available.
 
 ### Synopsis
 
 ```console
 dotnet-stack ps [-h|--help]
+```
+
+### Example
+
+Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-stack ps``` command. The output you'll see is as follows. The command-line arguments, if any, are shown in `dotnet-stack` version 6.0.320703 and later.
+
+```console
+> dotnet-stack ps
+  
+  21932 dotnet     C:\Program Files\dotnet\dotnet.exe   run --configuration Release
+  36656 dotnet     C:\Program Files\dotnet\dotnet.exe
+```
+
+## dotnet-stack symbolicate
+
+Get the line number from the Method Token and IL Offset in a stacktrace.
+
+### Synopsis
+
+```console
+dotnet-stack symbolicate <input-path> [-d|--search-dir] [-o|--output] [-c|--stdout] [-h|--help]
+```
+
+### Options
+
+- **`-d, --search-dir <directory1 directory2 ...>`**
+
+  Path of multiple directories with assembly and pdb.
+
+- **`-o, --output <output-path>`**
+
+  Output directly to a file.
+
+- **`-c, --stdout`**
+
+  Output directly to a console.
+
+### Example
+
+```console
+> cat stack.trace
+
+Unhandled exception. System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotnetStackSymbolicate.App.MethodA() in DotnetStackSymbolicate.dll:token 0x6000002+0x6
+   at DotnetStackSymbolicate.App..ctor() in DotnetStackSymbolicate.dll:token 0x6000003+0x51
+   at DotnetStackSymbolicate.Program.OnCreate() in DotnetStackSymbolicate.Tizen.dll:token 0x6000001+0x8
+onSigabrt called
+>
+> dotnet-stack symbolicate stack.trace --stdout
+
+Unhandled exception. System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotnetStackSymbolicate.App.MethodA() in C:\DotnetStackSymbolicate\DotnetStackSymbolicate.cs:line 19
+   at DotnetStackSymbolicate.App..ctor() in C:\DotnetStackSymbolicate\DotnetStackSymbolicate.cs:line 38
+   at DotnetStackSymbolicate.Program.OnCreate() in C:\DotnetStackSymbolicate.Tizen\DotnetStackSymbolicate.Tizen.cs:line 12
+onSigabrt called
+
+Output: stack.trace.symbolicated
 ```
 
 ## Report managed stacks with dotnet-stack
@@ -138,6 +196,9 @@ To report managed stacks using `dotnet-stack`:
     Module!Method
     Module!Method
   ```
+  
+> [!NOTE]
+> Stopping the process can take a long time (up to several minutes) for very large applications. The runtime needs to send over the type and method information for all managed code that was captured to resolve function names.
   
 ## Next steps
   

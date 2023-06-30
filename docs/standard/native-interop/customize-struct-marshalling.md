@@ -19,11 +19,13 @@ Sometimes the default marshalling rules for structures aren't exactly what you n
 
 ✔️ DO only use `LayoutKind.Explicit` in marshalling when your native struct also has an explicit layout, such as a union.
 
+❌ AVOID using classes to express complex native types through inheritance.
+
 ❌ AVOID using `LayoutKind.Explicit` when marshalling structures on non-Windows platforms if you need to target runtimes before .NET Core 3.0. The .NET Core runtime before 3.0 doesn't support passing explicit structures by value to native functions on Intel or AMD 64-bit non-Windows systems. However, the runtime supports passing explicit structures by reference on all platforms.
 
-## Customizing boolean field marshalling
+## Customizing Boolean field marshalling
 
-Native code has many different boolean representations. On Windows alone, there are three ways to represent boolean values. The runtime doesn't know the native definition of your structure, so the best it can do is make a guess on how to marshal your boolean values. The .NET runtime provides a way to indicate how to marshal your boolean field. The following examples show how to marshal .NET `bool` to different native boolean types.
+Native code has many different Boolean representations. On Windows alone, there are three ways to represent Boolean values. The runtime doesn't know the native definition of your structure, so the best it can do is make a guess on how to marshal your Boolean values. The .NET runtime provides a way to indicate how to marshal your Boolean field. The following examples show how to marshal .NET `bool` to different native Boolean types.
 
 Boolean values default to marshalling as a native 4-byte Win32 [`BOOL`](/windows/desktop/winprog/windows-data-types#BOOL) value as shown in the following example:
 
@@ -75,7 +77,7 @@ struct CBool
 };
 ```
 
-On Windows, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.VariantBool?displayProperty=nameWithType> value to tell the runtime to marshal your boolean value to a 2-byte `VARIANT_BOOL` value:
+On Windows, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.VariantBool?displayProperty=nameWithType> value to tell the runtime to marshal your Boolean value to a 2-byte `VARIANT_BOOL` value:
 
 ```csharp
 public struct VariantBool
@@ -111,7 +113,7 @@ public struct DefaultArray
 ```cpp
 struct DefaultArray
 {
-    int* values;
+    int32_t* values;
 };
 ```
 
@@ -327,6 +329,66 @@ struct Currency
 {
     CY dec;
 };
+```
+
+### Unions
+
+A union is a data type that can contain different types of data atop the same memory. It's a common form of data in the C language. A union can be expressed in .NET using `LayoutKind.Explicit`. It's recommended to use structs when defining a union in .NET. Using classes can cause layout issues and produce unpredictable behavior.
+
+```cpp
+struct device1_config
+{
+    void* a;
+    void* b;
+    void* c;
+};
+struct device2_config
+{
+    int32_t a;
+    int32_t b;
+};
+struct config
+{
+    int32_t type;
+
+    union
+    {
+        device1_config dev1;
+        device2_config dev2;
+    };
+};
+```
+
+```csharp
+public unsafe struct Device1Config
+{
+    void* a;
+    void* b;
+    void* c;
+}
+
+public struct Device2Config
+{
+    int a;
+    int b;
+}
+
+public struct Config
+{
+    public int Type;
+
+    public _Union Anonymous;
+
+    [StructLayout(LayoutKind.Explicit)]
+    public struct _Union
+    {
+        [FieldOffset(0)]
+        public Device1Config Dev1;
+
+        [FieldOffset(0)]
+        public Device2Config Dev2;
+    }
+}
 ```
 
 ## Marshal `System.Object`

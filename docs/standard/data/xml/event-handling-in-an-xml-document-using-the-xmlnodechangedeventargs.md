@@ -93,9 +93,9 @@ Public Class Sample
   
         ' Create the event handlers.  
         Dim XmlNodeChgEHdlr As XmlNodeChangedEventHandler = New XmlNodeChangedEventHandler(AddressOf MyNodeChangedEvent)  
-        Dim XmlNodeInsrtEHdlr As XmlNodeChangedEventHandler = New XmlNodeChangedEventHandler(AddressOf MyNodeInsertedEvent)  
+        Dim XmlNodeInsertEHdlr As XmlNodeChangedEventHandler = New XmlNodeChangedEventHandler(AddressOf MyNodeInsertedEvent)  
         AddHandler doc.NodeChanged, XmlNodeChgEHdlr  
-        AddHandler doc.NodeInserted, XmlNodeInsrtEHdlr  
+        AddHandler doc.NodeInserted, XmlNodeInsertEHdlr  
   
         ' Change the book price.  
         doc.DocumentElement.LastChild.InnerText = "5.95"  

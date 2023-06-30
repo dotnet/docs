@@ -1,6 +1,4 @@
-﻿using System;
-
-// Using a string as an indexer value
+﻿// Using a string as an indexer value
 class DayCollection
 {
     string[] days = { "Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat" };

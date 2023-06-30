@@ -183,9 +183,10 @@ namespace Exceptions
             {
                 return array[index];
             }
-            catch (IndexOutOfRangeException ex)
+            catch (IndexOutOfRangeException e)
             {
-                throw new ArgumentException("Index is out of range", nameof(index), ex);
+                throw new ArgumentOutOfRangeException(
+                    "Parameter index is out of range.", e);
             }
         }
         // </InvalidArg>

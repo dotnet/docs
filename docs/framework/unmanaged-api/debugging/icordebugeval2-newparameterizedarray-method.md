@@ -38,7 +38,7 @@ HRESULT NewParameterizedArray(
  [in] A pointer to an ICorDebugType object that represents the type of element stored in the array.  
   
  `rank`  
- [in] The number of dimensions of the array. In the .NET Framework version 2.0, this value must be 1.  
+ [in] The number of dimensions of the array. In .NET Framework version 2.0, this value must be 1.  
   
  `dims`  
  [in] The size, in bytes, of each dimension of the array.  
@@ -48,7 +48,7 @@ HRESULT NewParameterizedArray(
   
 ## Remarks  
 
- The elements of the array may be instances of a generic type. The array is always created in the application domain in which the thread is currently running. In the .NET Framework 2.0, the value of `rank` must be 1.  
+ The elements of the array may be instances of a generic type. The array is always created in the application domain in which the thread is currently running. In .NET Framework 2.0, the value of `rank` must be 1.  
   
 ## Requirements  
 

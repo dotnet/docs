@@ -1,10 +1,12 @@
 ---
 title: Azure Monitor
 description: Using Azure Monitor to gain visibility into your system is running.
-ms.date: 01/19/2021
+ms.date: 04/06/2022
 ---
 
 # Azure Monitor
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 No other cloud provider has as mature of a cloud application monitoring solution than that found in Azure. Azure Monitor is an umbrella name for a collection of tools designed to provide visibility into the state of your system. It helps you understand how your cloud-native services are performing and proactively identifies issues affecting them. Figure 7-12 presents a high level of view of Azure Monitor.
 

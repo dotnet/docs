@@ -2,9 +2,12 @@
 title: Build ASP.NET Core applications deployed as Linux containers into AKS/Kubernetes clusters
 description: Learn about creating ASP.NET Core applications deployed as Linux containers into AKS/Kubernetes clusters
 ms.date: 12/08/2021
+ms.custon: devx-track-azurecli
 ---
 
 # Build ASP.NET Core applications deployed as Linux containers into an AKS/Kubernetes orchestrator
+
+[!INCLUDE [download-alert](../includes/download-alert.md)]
 
 Azure Kubernetes Services (AKS) is Azure's managed Kubernetes orchestrations services that simplify container deployment and management.
 
@@ -24,11 +27,13 @@ ASP.NET Core is a general-purpose development platform maintained by Microsoft a
 
 This example uses a couple of simple projects based on Visual Studio templates, so you don't need much additional knowledge to create the sample. You only have to create the project using a standard template that includes all the elements to run a small project with a REST API and a Web App with Razor pages, using ASP.NET Core 6.0 technology.
 
+For reference, you can download the sample from .NET Application Architecture's repo [explore-docker](https://github.com/dotnet-architecture/explore-docker).
+
 ![Add new project window in Visual Studio, selecting ASP.NET Core Web Application.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/create-aspnet-core-application.png)
 
 **Figure 4-35**. Creating an ASP.NET Core Web Application in Visual Studio 2022.
 
-To create the sample project in Visual Studio, select **File** > **New** > **Project**, select the **Web** project type and then the **ASP.NET Core Web Application** template. You can also search for the template if you need it.
+To create the sample project in Visual Studio, select **File** > **New** > **Project**, select the **Web** project type and then the **ASP.NET Core Web Api** template. You can also search for the template if you need it.
 
 Then enter the application name and location as shown in the next image.
 
@@ -58,7 +63,7 @@ To complete adding Docker support, you can choose Windows or Linux. In this case
 
 With these simple steps, you have your ASP.NET Core 6.0 application running on a Linux container.
 
-In a similar way, you can also add a very simple **WebApp** project (Figure 4-40) to consume the web API endpoint, although the details are not discussed here.
+In a similar way, you can also add a very simple **WebApp** project (Figure 4-40) to consume the web API endpoint, although the details can be seen in the code [repo](https://github.com/dotnet-architecture/explore-docker).
 
 After that, you add orchestrator support for your **WebApi** project as shown next, in image 4-40.
 
@@ -141,7 +146,7 @@ services:
     #...
 ```
 
-Now you can run your application with the **F5** key, or by using the **Play** button, or the **Ctrl+F5** key, selecting the docker-compose project, as shown in image 4-42.
+Now you can run your application with the <kbd>F5</kbd> key, or by using the **Play** button, or the <kbd>Ctrl</kbd>+<kbd>F5</kbd> key, selecting the docker-compose project, as shown in image 4-42.
 
 ![Running docker-compose project with Visual Studio](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/running-docker-compose-with-visual-studio.png)
 

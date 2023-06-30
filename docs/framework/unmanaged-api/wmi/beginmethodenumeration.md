@@ -53,7 +53,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
-|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | `lEnnumFlags` is non-zero and is not one of the specified flags. |
+|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | `lEnumFlags` is non-zero and is not one of the specified flags. |
 |`WBEM_S_NO_ERROR` | 0 | The function call was successful.  |
   
 ## Remarks

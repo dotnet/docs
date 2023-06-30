@@ -27,26 +27,26 @@ Provides methods for use by code profilers to communicate with the common langua
   
 |Method|Description|  
 |------------|-----------------|  
-|[BeginInprocDebugging Method](icorprofilerinfo-begininprocdebugging-method.md)|Initializes in-process debugging support. This method is obsolete in the .NET Framework version 2.0.|  
-|[EndInprocDebugging Method](icorprofilerinfo-endinprocdebugging-method.md)|Shuts down an in-process debugging session. This method is obsolete in the .NET Framework version 2.0.|  
+|[BeginInprocDebugging Method](icorprofilerinfo-begininprocdebugging-method.md)|Initializes in-process debugging support. This method is obsolete in .NET Framework version 2.0.|  
+|[EndInprocDebugging Method](icorprofilerinfo-endinprocdebugging-method.md)|Shuts down an in-process debugging session. This method is obsolete in .NET Framework version 2.0.|  
 |[ForceGC Method](icorprofilerinfo-forcegc-method.md)|Forces garbage collection to occur within the runtime.|  
 |[GetAppDomainInfo Method](icorprofilerinfo-getappdomaininfo-method.md)|Gets information about the specified application domain.|  
 |[GetAssemblyInfo Method](icorprofilerinfo-getassemblyinfo-method.md)|Gets information about the specified assembly.|  
 |[GetClassFromObject Method](icorprofilerinfo-getclassfromobject-method.md)|Gets the `ClassID` of an<br /><br /> object, given its `ObjectID`.|  
-|[GetClassFromToken Method](icorprofilerinfo-getclassfromtoken-method.md)|Gets the ID of the class, given the metadata token. This method is obsolete in the .NET Framework version 2.0. Use the [ICorProfilerInfo2::GetClassFromTokenAndTypeArgs](icorprofilerinfo2-getclassfromtokenandtypeargs-method.md) method instead.|  
+|[GetClassFromToken Method](icorprofilerinfo-getclassfromtoken-method.md)|Gets the ID of the class, given the metadata token. This method is obsolete in .NET Framework version 2.0. Use the [ICorProfilerInfo2::GetClassFromTokenAndTypeArgs](icorprofilerinfo2-getclassfromtokenandtypeargs-method.md) method instead.|  
 |[GetClassIDInfo Method](icorprofilerinfo-getclassidinfo-method.md)|Gets the parent module and the metadata token for the specified class.|  
 |[GetCodeInfo Method](icorprofilerinfo-getcodeinfo-method.md)|Gets the extent of native code associated with the specified function ID. This method is obsolete. Use the [ICorProfilerInfo2::GetCodeInfo2](icorprofilerinfo2-getcodeinfo2-method.md) method instead.|  
 |[GetCurrentThreadID Method](icorprofilerinfo-getcurrentthreadid-method.md)|Gets the ID of the current thread, if it is a managed thread.|  
 |[GetEventMask Method](icorprofilerinfo-geteventmask-method.md)|Gets the current event categories for which the profiler wants to receive event notifications from the CLR.|  
 |[GetFunctionFromIP Method](icorprofilerinfo-getfunctionfromip-method.md)|Maps a managed code instruction pointer to a `FunctionID`.|  
-|[GetFunctionFromToken Method](icorprofilerinfo-getfunctionfromtoken-method.md)|Gets the ID of a function. This method is obsolete in the .NET Framework version 2.0. Use the [ICorProfilerInfo2::GetFunctionFromTokenAndTypeArgs](icorprofilerinfo2-getfunctionfromtokenandtypeargs-method.md) method instead.|  
+|[GetFunctionFromToken Method](icorprofilerinfo-getfunctionfromtoken-method.md)|Gets the ID of a function. This method is obsolete in .NET Framework version 2.0. Use the [ICorProfilerInfo2::GetFunctionFromTokenAndTypeArgs](icorprofilerinfo2-getfunctionfromtokenandtypeargs-method.md) method instead.|  
 |[GetFunctionInfo Method](icorprofilerinfo-getfunctioninfo-method.md)|Gets the parent class and metadata token for the specified function.|  
 |[GetHandleFromThread Method](icorprofilerinfo-gethandlefromthread-method.md)|Maps the ID of a thread to a Win32 thread handle.|  
 |[GetILFunctionBody Method](icorprofilerinfo-getilfunctionbody-method.md)|Gets a pointer to the body of a method in Microsoft intermediate language (MSIL) code, starting at its header.|  
 |[GetILFunctionBodyAllocator Method](icorprofilerinfo-getilfunctionbodyallocator-method.md)|Gets an interface that provides a method to allocate memory to be used for swapping out the body of a method in MSIL code.|  
 |[GetILToNativeMapping Method](icorprofilerinfo-getiltonativemapping-method.md)|Gets a map from MSIL offsets to native offsets for the code contained in the specified function.|  
-|[GetInprocInspectionInterface Method](icorprofilerinfo-getinprocinspectioninterface-method.md)|Gets an object that can be queried for an ICorDebugProcess interface. This method is obsolete in the .NET Framework version 2.0.|  
-|[GetInprocInspectionIThisThread Method](icorprofilerinfo-getinprocinspectionithisthread-method.md)|Gets an object that can be queried for the ICorDebugThread interface. This method is obsolete in the .NET Framework version 2.0.|  
+|[GetInprocInspectionInterface Method](icorprofilerinfo-getinprocinspectioninterface-method.md)|Gets an object that can be queried for an ICorDebugProcess interface. This method is obsolete in .NET Framework version 2.0.|  
+|[GetInprocInspectionIThisThread Method](icorprofilerinfo-getinprocinspectionithisthread-method.md)|Gets an object that can be queried for the ICorDebugThread interface. This method is obsolete in .NET Framework version 2.0.|  
 |[GetModuleInfo Method](icorprofilerinfo-getmoduleinfo-method.md)|Given a module ID, returns the file name of the module and the ID of the module's parent assembly.|  
 |[GetModuleMetaData Method](icorprofilerinfo-getmodulemetadata-method.md)|Gets a metadata interface instance that maps to the specified module.|  
 |[GetObjectSize Method](icorprofilerinfo-getobjectsize-method.md)|Gets the size of a specified object.|  

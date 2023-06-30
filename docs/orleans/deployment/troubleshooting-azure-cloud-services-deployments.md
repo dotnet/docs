@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot Azure Cloud Service deployments
 description: Learn how to troubleshoot an Orleans app with Azure Cloud Service deployment.
-ms.date: 01/31/2022
+ms.date: 03/09/2022
 ---
 
 # Troubleshoot Azure Cloud Service deployments
@@ -11,7 +11,7 @@ These are very common issues to watch out for. Be sure to check the logs for mor
 
 ## The `SiloUnavailableException`
 
-First check to make sure that you are actually starting the silos before attempting to initialize the client. Sometimes the
+First, check to make sure that you are starting the silos before attempting to initialize the client. Sometimes the
 silos take a long time to start so it can be beneficial to try to initialize the client multiple times. If it still throws an
 exception, then there might be another issue with the silos.
 
@@ -34,8 +34,7 @@ Make sure that the proper endpoints are configured in the _ServiceDefinition.csd
 
 Make sure that the connection strings are set up properly.
 
-It is likely that the _Web.config_ file in the web role or the app.config file in the worker role were modified improperly.
-Incorrect versions in these files can cause issues with the deployment. Be careful when dealing with updates.
+It is likely that the _Web.config_ file in the web role or the _app.config_ file in the worker role was modified improperly. Incorrect versions in these files can cause issues with the deployment. Be careful when dealing with updates.
 
 ## Version issues
 
@@ -51,17 +50,17 @@ role recycling. Check the logs for more information. Visual Studio provides some
 
 ## How to check logs
 
-- Use the cloud explorer in Visual Studio to navigate to the appropriate storage table or blob in the storage account. The WADLogsTable is a good starting point for looking at the logs.
+- Use the Cloud Explorer in Visual Studio to navigate to the appropriate storage table or blob in the storage account. The WADLogsTable is a good starting point for looking at the logs.
 - You might only be logging errors. If you want informational logs as well, you will need to modify the configuration to set the logging severity level.
 
 Programmatic configuration:
 
-- When creating a `ClusterConfiguration` object, set `config.Defaults.DefaultTraceLevel = Severity.Info`.
-- When creating a `ClientConfiguration` object, set `config.DefaultTraceLevel = Severity.Info`.
+- When creating a <xref:Orleans.Runtime.Configuration.ClusterConfiguration> object, set `config.Defaults.DefaultTraceLevel = Severity.Info`.
+- When creating a <xref:Orleans.Runtime.Configuration.ClientConfiguration> object, set `config.DefaultTraceLevel = Severity.Info`.
 
 Declarative configuration:
 
-- Add `<Tracing DefaultTraceLevel="Info" />` to the `OrleansConfiguration.xml` and/or the `ClientConfiguration.xml` files.
+- Add `<Tracing DefaultTraceLevel="Info" />` to the _OrleansConfiguration.xml_ and/or the _ClientConfiguration.xml_ files.
 
 In the _diagnostics.wadcfgx_ file for the web and worker roles, make sure to set the `scheduledTransferLogLevelFilter` attribute in the `Logs` element to `Information`, as this is an additional layer of trace filtering that defines which traces are sent to the `WADLogsTable` in Azure Storage.
 

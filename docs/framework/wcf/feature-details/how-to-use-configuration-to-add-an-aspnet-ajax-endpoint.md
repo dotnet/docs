@@ -47,7 +47,7 @@ Windows Communication Foundation (WCF) allows you to create a service that makes
     ```csharp
     namespace Microsoft.Ajax.Samples
     {  
-        //Include the code for ICalculator and Caculator here.  
+        //Include the code for ICalculator and Calculator here.  
     }  
     ```  
   

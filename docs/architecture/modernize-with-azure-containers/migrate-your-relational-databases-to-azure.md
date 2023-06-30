@@ -6,6 +6,8 @@ ms.date: 12/12/2021
 
 # Migrate your relational databases to Azure
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Vision: Azure offers the most comprehensive database migration.
 
 In Azure, you can migrate your database servers directly to IaaS VMs (pure lift and shift), or you can migrate to Azure SQL Database, for additional benefits. Azure SQL Database offers the managed instance and full database-as-a-service (DBaaS) options. Figure 3-1 shows the multiple relational database migration paths available in Azure.
@@ -87,7 +89,7 @@ There might be a few cases where you still need to migrate to SQL Server as a re
 
 ## Use Azure Database Migration Service to migrate your relational databases to Azure
 
-You can use Azure Database Migration Service to migrate relational databases like SQL Server, Oracle, and MySQL to Azure, whether your target database is Azure SQL Database, Azure SQL Database Managed Instance, or SQL Server on an Azure VM.
+You can use Azure Database Migration Service to migrate relational databases like SQL Server, and MySQL to Azure, whether your target database is Azure SQL Database, Azure SQL Database Managed Instance, or SQL Server on an Azure VM.
 
 The automated workflow, with assessment reporting, guides you through the changes you need to make before you migrate the database. When you are ready, the service migrates the source database to Azure.
 
@@ -95,21 +97,15 @@ Whenever you change an original RDBMS, you might need to retest. You also might 
 
 If you have any other database (for example, IBM DB2) and you opt for a lift and shift approach, you might want to continue using those databases as IaaS VMs in Azure, unless you are willing to perform a more complex data migration. A more complex data migration will require additional effort because you'd be migrating to a different database type with the new schema and different programming libraries.
 
-To learn how to migrate databases by using Azure Database Migration Service, see [Get to the cloud faster with Azure SQL Database Managed Instance and Azure Database Migration Service](https://channel9.msdn.com/Events/Build/2017/P4008).
-
 ## Additional resources
 
 - **Choose a cloud SQL Server option: Azure SQL Database (PaaS) or SQL Server on Azure VM (IaaS)**
 
-    [https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas](/azure/sql-database/sql-database-paas-vs-sql-server-iaas)
-
-- **Get to the cloud faster with Azure SQL DB Managed Instance and Database Migration Service**
-
-    <https://channel9.msdn.com/Events/Build/2017/P4008>
+    [https://learn.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas](/azure/sql-database/sql-database-paas-vs-sql-server-iaas)
 
 - **SQL Server database migration to SQL Database in the cloud**
 
-    [https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate](/azure/sql-database/sql-database-cloud-migrate)
+    [https://learn.microsoft.com/azure/sql-database/sql-database-cloud-migrate](/azure/sql-database/sql-database-cloud-migrate)
 
 - **Azure SQL Database**
 

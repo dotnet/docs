@@ -1,9 +1,9 @@
 ---
-title: Implement a custom configuration provider in .NET
-description: Learn how to implement a custom configuration provider in .NET applications.
+title: Implement a custom configuration provider
+description: Learn how to implement a custom configuration provider in .NET apps. Explore a database configuration provider that uses Entity Framework Core.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/17/2021
+ms.date: 06/23/2023
 ms.topic: how-to
 ---
 
@@ -59,7 +59,7 @@ An `AddEntityConfiguration` extension method permits adding the configuration so
 
 The following code shows how to use the custom `EntityConfigurationProvider` in *Program.cs*:
 
-:::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="11":::
+:::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="10":::
 
 ## Consume provider
 
@@ -67,9 +67,9 @@ To consume the custom configuration provider, you can use the [options pattern](
 
 :::code language="csharp" source="snippets/configuration/custom-provider/WidgetOptions.cs":::
 
-A call to <xref:Microsoft.Extensions.Hosting.IHostBuilder.ConfigureServices%2A> configures the mapping of the options.
+A call to <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%2A> registers a configuration instance, which `TOptions` binds against.
 
-:::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="15-15,18-21":::
+:::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="14,16-19":::
 
 The preceding code configures the `WidgetOptions` object from the `"WidgetOptions"` section of the configuration. This enables the options pattern, exposing a dependency injection-ready `IOptions<WidgetOptions>` representation of the EF settings. The options are ultimately provided from the custom configuration provider.
 

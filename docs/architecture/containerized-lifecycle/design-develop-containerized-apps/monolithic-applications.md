@@ -5,6 +5,8 @@ ms.date: 01/06/2021
 ---
 # Monolithic applications
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 In this scenario, you're building a single and monolithic web application or service and deploying it as a container. Within the application, the structure might not be monolithic; it might comprise several libraries, components, or even layers (application layer, domain layer, data access layer, etc.). Externally, it's a single container, like a single process, single web application, or single service.
 
 To manage this model, you deploy a single container to represent the application. To scale it, just add a few more copies with a load balancer in front. The simplicity comes from managing a single deployment in a single container or virtual machine (VM).

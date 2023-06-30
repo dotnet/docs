@@ -2,7 +2,7 @@
 title: .NET project SDK overview
 titleSuffix: ""
 description: Learn about the .NET project SDKs.
-ms.date: 11/03/2021
+ms.date: 06/30/2022
 ms.topic: conceptual
 no-loc: ["EmbeddedResource", "Compile", "None", "Blazor"]
 ---
@@ -20,7 +20,7 @@ The following SDKs are available:
 | `Microsoft.NET.Sdk.Web` | The .NET [Web SDK](/aspnet/core/razor-pages/web-sdk) | <https://github.com/dotnet/sdk> |
 | `Microsoft.NET.Sdk.BlazorWebAssembly` | The .NET [Blazor WebAssembly](/aspnet/core/blazor#blazor-webassembly) SDK |
 | `Microsoft.NET.Sdk.Razor` | The .NET [Razor SDK](/aspnet/core/razor-pages/sdk) |
-| `Microsoft.NET.Sdk.Worker` | The .NET Worker Service SDK |
+| `Microsoft.NET.Sdk.Worker` | The .NET [Worker Service](../extensions/workers.md) SDK |
 | `Microsoft.NET.Sdk.WindowsDesktop` | The .NET [Desktop SDK](msbuild-props-desktop.md), which includes Windows Forms (WinForms) and Windows Presentation Foundation (WPF).\* | <https://github.com/dotnet/winforms> and <https://github.com/dotnet/wpf> |
 
 The .NET SDK is the base SDK for .NET. The other SDKs reference the .NET SDK, and projects that are associated with the other SDKs have all the .NET SDK properties available to them. The Web SDK, for example, depends on both the .NET SDK and the Razor SDK.
@@ -136,12 +136,12 @@ Starting in .NET 6, implicit [`global using` directives](../../csharp/language-r
 
 Implicit `global using` directives are added for projects that use one of the following SDKs:
 
-- Microsoft.NET.Sdk
-- Microsoft.NET.Sdk.Web
-- Microsoft.NET.Sdk.Worker
-- Microsoft.NET.Sdk.WindowsDesktop
+- `Microsoft.NET.Sdk`
+- `Microsoft.NET.Sdk.Web`
+- `Microsoft.NET.Sdk.Worker`
+- `Microsoft.NET.Sdk.WindowsDesktop`
 
-A `global using` directive is added for each namespaces in a set of default namespaces that's based on the project's SDK. These default namespaces are shown in the following table.
+A `global using` directive is added for each namespace in a set of default namespaces that are based on the project's SDK. These default namespaces are shown in the following table.
 
 | SDK | Default namespaces |
 | - | - |
@@ -212,7 +212,10 @@ In SDK-style projects, use an MSBuild target named `PreBuild` or `PostBuild` and
 
 ## Customize the build
 
-There are various ways to [customize a build](/visualstudio/msbuild/customize-your-build). You may want to override a property by passing it as an argument to an [msbuild](/visualstudio/msbuild/msbuild-command-line-reference) or [dotnet](../tools/index.md) command. You can also add the property to the project file or to a *Directory.Build.props* file. For a list of useful properties for .NET projects, see [MSBuild reference for .NET SDK projects](msbuild-props.md).
+There are various ways to [customize a build](/visualstudio/msbuild/customize-your-build). You may want to override a property by passing it as an argument to an [msbuild](/visualstudio/msbuild/msbuild-command-line-reference) or [dotnet](../tools/index.md) command. You can also add the property to the project file or to a [*Directory.Build.props* file](/visualstudio/msbuild/customize-by-directory#directorybuildprops-and-directorybuildtargets). For a list of useful properties for .NET projects, see [MSBuild reference for .NET SDK projects](msbuild-props.md).
+
+> [!TIP]
+> An easy way to create a new *Directory.Build.props* file from the command line is by using the command `dotnet new buildprops` at the root of your repository.
 
 ### Custom targets
 
@@ -256,6 +259,6 @@ You can configure how to use the custom target. Since it's an MSBuild target, it
 
 ## See also
 
-- [Install .NET Core](../install/index.yml)
+- [Customize your build (MSBuild)](/visualstudio/msbuild/customize-your-build)
 - [How to use MSBuild project SDKs](/visualstudio/msbuild/how-to-use-project-sdk)
 - [Package custom MSBuild targets and props with NuGet](/nuget/create-packages/creating-a-package#include-msbuild-props-and-targets-in-a-package)

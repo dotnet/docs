@@ -9,7 +9,6 @@ Imports System.Xml
 Imports System.IO
 Imports System.Text
 
-<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Public Class Test
 
     '<snippet1>

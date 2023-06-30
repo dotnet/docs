@@ -63,7 +63,7 @@ This is the first in a series of three tutorials. In this tutorial, you create a
    ```csharp
    using System.Reflection;
 
-   namespace TeleprompterConsole;
+   namespace microsoft.botsay;
 
    internal class Program
    {
@@ -73,6 +73,8 @@ This is the first in a series of three tutorials. In this tutorial, you create a
        }
    }
    ```
+
+   The `using System.Reflection;` directive is needed by code that you add in the next step.
 
 1. Replace the `Main` method with the following code to process the command-line arguments for the application.
 
@@ -174,7 +176,7 @@ Before you can pack and distribute the application as a tool, you need to modify
    <PackageOutputPath>./nupkg</PackageOutputPath>
    ```
 
-   `<ToolCommandName>` is an optional element that specifies the command that will invoke the tool after it's installed. If this element isn't provided, the command name for the tool is the project file name without the *.csproj* extension.
+   `<ToolCommandName>` is an optional element that specifies the command that will invoke the tool after it's installed. If this element isn't provided, the command name for the tool is the assembly name, which is typically the project file name without the *.csproj* extension.
 
    `<PackageOutputPath>` is an optional element that determines where the NuGet package will be produced. The NuGet package is what the .NET CLI uses to install your tool.
 

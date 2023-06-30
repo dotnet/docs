@@ -1,7 +1,7 @@
 ---
 title: Source Generators
 description: Source Generators is a C# compiler feature that lets C# developers inspect user code as it is being compiled. Source generators create new C# source files on the fly that are added to the user's compilation.
-ms.date: 03/02/2022
+ms.date: 06/25/2023
 ms.topic: tutorial
 ms.custom: mvc, vs-dotnet, source-generators
 ---
@@ -53,9 +53,9 @@ Another capability Source Generators can offer is obviating the use of some "str
 
 ## Get started with source generators
 
-In this guide, you'll explore the creation of a source generator using the <xref:Microsoft.CodeAnalysis.ISourceGenerator> API.
+In this guide, you'll explore the creation of a source generator using the <xref:Microsoft.CodeAnalysis.IIncrementalGenerator> API.
 
-1. Create a .NET console application. This example uses .NET 6.
+1. Create a .NET console application. This example uses .NET 7.
 
 1. Replace the `Program` class with the following code. The following code doesn't use top level statements. The classic form is required because this first source generator writes a partial method in that `Program` class:
 
@@ -75,37 +75,37 @@ In this guide, you'll explore the creation of a source generator using the <xref
 
 1. Create a new C# file named _HelloSourceGenerator.cs_ that specifies your own Source Generator like so:
 
-    ```csharp
-    using Microsoft.CodeAnalysis;
+```csharp
+using Microsoft.CodeAnalysis;
 
-    namespace SourceGenerator
+namespace SourceGenerator;
+
+public sealed class HelloSourceGenerator : IIncrementalGenerator
+{
+    public void Initialize(IncrementalGeneratorInitializationContext context)
     {
-        [Generator]
-        public class HelloSourceGenerator : ISourceGenerator
+        var compilationProvider = context.CompilationProvider;
+
+        context.RegisterSourceOutput(
+            compilationProvider, 
+            static (context, compilation) =>
         {
-            public void Execute(GeneratorExecutionContext context)
-            {
-                // Code generation goes here
-            }
-
-            public void Initialize(GeneratorInitializationContext context)
-            {
-                // No initialization required for this one
-            }
-        }
+            // Code generation goes here
+        });
     }
-    ```
+}
+```
 
-    A source generator needs to both implement the <xref:Microsoft.CodeAnalysis.ISourceGenerator?displayProperty=nameWithType> interface, and have the <xref:Microsoft.CodeAnalysis.GeneratorAttribute?displayProperty=nameWithType>. Not all source generators require initialization, and that is the case with this example implementation—where <xref:Microsoft.CodeAnalysis.ISourceGenerator.Initialize%2A?displayProperty=nameWithType> is empty.
+A source generator needs to both implement the <xref:Microsoft.CodeAnalysis.IIncrementalGenerator?displayProperty=nameWithType> interface, and have the <xref:Microsoft.CodeAnalysis.GeneratorAttribute?displayProperty=nameWithType>.
 
-1. Replace the contents of the <xref:Microsoft.CodeAnalysis.ISourceGenerator.Execute%2A?displayProperty=nameWithType> method, with the following implementation:
+1. Replace the contents of the <xref:Microsoft.CodeAnalysis.IIncrementalGenerator.Initialize%2A?displayProperty=nameWithType> method, with the following implementation:
 
     :::code source="snippets/source-generators/SourceGenerator/HelloSourceGenerator.cs":::
 
-    From the `context` object we can access the compilations' entry point, or `Main` method. The `mainMethod` instance is an <xref:Microsoft.CodeAnalysis.IMethodSymbol>, and it represents a method or method-like symbol (including constructor, destructor, operator, or property/event accessor). The <xref:Microsoft.CodeAnalysis.Compilation.GetEntryPoint%2A?displayProperty=fullName> method returns the <xref:Microsoft.CodeAnalysis.IMethodSymbol> for the program's entry point. Other methods enable you to find any method symbol in a project. From this object, we can reason about the containing namespace (if one is present) and the type. The `source` in this example is an interpolated string that templates the source code to be generated, where the interpolated wholes are filled with the containing namespace and type information. The `source` is added to the `context` with a hint name. For this example, the generator creates a new generated source file that contains an implementation of the `partial` method in the console application. You can write source generators to add any source you'd like.
+    `compilationIncrementalValue` variable is used to store the incremental model value of compilation that is passed to the `RegisterSourceOutput` method of `context`. From the `compilation` parameter we can access the compilations' entry point, or `Main` method. The `mainMethod` instance is an <xref:Microsoft.CodeAnalysis.IMethodSymbol>, and it represents a method or method-like symbol (including constructor, destructor, operator, or property/event accessor). The <xref:Microsoft.CodeAnalysis.Compilation.GetEntryPoint%2A?displayProperty=fullName> method returns the <xref:Microsoft.CodeAnalysis.IMethodSymbol> for the program's entry point. Other methods enable you to find any method symbol in a project. From this object, we can reason about the containing namespace (if one is present) and the type. The `source` in this example is an interpolated string that templates the source code to be generated, where the interpolated holes are filled with the containing namespace and type information. The `source` is added to the `context` with a hint name. For this example, the generator creates a new generated source file that contains an implementation of the `partial` method in the console application. You can write source generators to add any source you'd like.
 
     > [!TIP]
-    > The `hintName` parameter from the <xref:Microsoft.CodeAnalysis.GeneratorExecutionContext.AddSource%2A?displayProperty=nameWithType> method can be any unique name. It's common to provide an explicit C# file extension such as `".g.cs"` or `".generated.cs"` for the name. The file name helps identify the file as being source generated.
+    > The `hintName` parameter from the <xref:Microsoft.CodeAnalysis.SourceProductionContext.AddSource%2A?displayProperty=nameWithType> method can be any unique name. It's common to provide an explicit C# file extension such as `".g.cs"` or `".generated.cs"` for the name. The file name helps identify the file as being source generated.
 
 1. We now have a functioning generator, but need to connect it to our console application. Edit the original console application project and add the following, replacing the project path with the one from the .NET Standard project you created above:
 
@@ -137,7 +137,7 @@ In this guide, you'll explore the creation of a source generator using the <xref
 
     :::image type="content" source="media/source-generators/source-generated-program.png" lightbox="media/source-generators/source-generated-program.png" alt-text="Visual Studio: Auto-generated Program.g.cs file.":::
 
-1. You can also set build properties to save the generated file and control where the generated files are stored. In the console application's project file, add the `<EmitCompilerGeneratedFiles>` element to an `<ItemGroup>`, and set its value to `true`. Build your project again. Now, the generated files are created under *obj/Debug/net6.0/generated/SourceGenerator/SourceGenerator.HelloSourceGenerator*. The components of the path map to the build configuration, target framework, source generator project name, and fully qualified type name of the generator. You can choose a more convenient output folder by adding the `<CompilerGeneratedFilesOutputPath>` element to the application's project file.
+1. You can also set build properties to save the generated file and control where the generated files are stored. In the console application's project file, add the `<EmitCompilerGeneratedFiles>` element to a `<PropertyGroup>`, and set its value to `true`. Build your project again. Now, the generated files are created under *obj/Debug/net7.0/generated/SourceGenerator/SourceGenerator.HelloSourceGenerator*. The components of the path map to the build configuration, target framework, source generator project name, and fully qualified type name of the generator. You can choose a more convenient output folder by adding the `<CompilerGeneratedFilesOutputPath>` element to the application's project file.
 
 ## Next steps
 

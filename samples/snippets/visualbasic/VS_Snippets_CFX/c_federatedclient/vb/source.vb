@@ -9,7 +9,6 @@ Imports System.ServiceModel.Channels
 Imports System.ServiceModel.Security
 Imports System.ServiceModel.Security.Tokens
 Imports System.Security.Permissions
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Samples
     '</snippet1>
 
@@ -35,7 +34,7 @@ Namespace Samples
                 ' Set the IssuedTokenRenewalThresholdPercentage property
                 .IssuedTokenRenewalThresholdPercentage = renewalPercentage
 
-                ' Set the DefaulyKeyEntropyMode property
+                ' Set the DefaultKeyEntropyMode property
                 .DefaultKeyEntropyMode = entropyMode
             End With
         End Sub

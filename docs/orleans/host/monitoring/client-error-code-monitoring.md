@@ -1,7 +1,7 @@
 ---
 title: Client error code monitoring
 description: Explore the various client error code monitoring values in .NET Orleans.
-ms.date: 02/01/2022
+ms.date: 02/21/2023
 ms.topic: reference
 ---
 

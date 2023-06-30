@@ -1,32 +1,37 @@
-﻿using TypedHttp.Example;
+﻿using Shared;
+using TypedHttp.Example;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Services.AddHttpClient<TodoService>(
+    client =>
     {
-        services.AddHttpClient<JokeService>(
-            client =>
-            {
-                // Set the base address of the named client.
-                client.BaseAddress = new Uri("https://api.icndb.com/");
+        // Set the base address of the typed client.
+        client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/");
 
-                // Add a user-agent default request header.
-                client.DefaultRequestHeaders.UserAgent.ParseAdd("dotnet-docs");
-            });
-        services.AddTransient<JokeService>();
-    })
-    .Build();
+        // Add a user-agent default request header.
+        client.DefaultRequestHeaders.UserAgent.ParseAdd("dotnet-docs");
+    });
 
-JokeService jokeService =
-    host.Services.GetRequiredService<JokeService>();
+using IHost host = builder.Build();
 
-string jokeText = await jokeService.GetRandomJokeAsync();
+TodoService todoService =
+    host.Services.GetRequiredService<TodoService>();
+
+Todo[] todos = await todoService.GetUserTodosAsync(4);
 
 ILogger logger =
-    host.Services.GetRequiredService<ILogger<JokeService>>();
+    host.Services.GetRequiredService<ILogger<TodoService>>();
 
-logger.LogInformation("Joke: {Text}", jokeText);
+foreach (Todo? todo in todos)
+{
+    logger.LogInformation("Todo: {Details}", $"""
+        Id: {todo?.Id} (Is completed: {todo?.Completed})
+        Title: {todo?.Title}
+        """);
+}
 
 await host.RunAsync();

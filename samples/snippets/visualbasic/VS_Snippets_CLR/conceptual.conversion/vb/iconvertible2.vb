@@ -208,7 +208,7 @@ Public Class TemperatureFahrenheit : Inherits Temperature : Implements IConverti
     End Function
 
     Public Overrides Function ToType(conversionType As Type, provider As IFormatProvider) As Object
-        ' For non-objects, call base methood.
+        ' For non-objects, call base method.
         If Type.GetTypeCode(conversionType) <> TypeCode.Object Then
             Return MyBase.ToType(conversionType, provider)
         Else
@@ -227,7 +227,7 @@ Public Class TemperatureFahrenheit : Inherits Temperature : Implements IConverti
 End Class
 ' </Snippet10>
 
-Module Example
+Module ConvertibleExampleTwo
     Public Sub Main()
         ' <Snippet11>
         Dim tempC1 As New TemperatureCelsius(0)
@@ -244,7 +244,7 @@ Module Example
         '       0°C equals 32°F.
         '       0°C equals 0°C.
         '       212°F equals 100°C.
-        '       212°F equals 212°F.      
+        '       212°F equals 212°F.
         ' </Snippet11>
     End Sub
 End Module

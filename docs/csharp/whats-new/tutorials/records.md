@@ -11,7 +11,7 @@ In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
 >
-> - Decide if you should declare a `class` or a `record`.
+> - Decide if you add the `record` modifier to a `class` type.
 > - Declare record types and positional record types.
 > - Substitute your methods for compiler generated methods in records.
 
@@ -21,7 +21,7 @@ You'll need to set up your machine to run .NET 6 or later, including the C# 10 o
 
 ## Characteristics of records
 
-You define a *record* by declaring a type with the `record` keyword, instead of the `class` or `struct` keyword. Optionally, you can declare a `record class` to clarify that it's a reference type. A record is a reference type and follows value-based equality semantics. You can define a `record struct` to create a record that is a value type. To enforce value semantics, the compiler generates several methods for your record type (both for `record class` types and `record struct` types):
+You define a *record* by declaring a type with the `record` keyword, modifying a `class` or `struct` declaration. Optionally, you can omit the `class` keyword to create a `record class`. A record follows value-based equality semantics. To enforce value semantics, the compiler generates several methods for your record type (both for `record class` types and `record struct` types):
 
 - An override of <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>.
 - A virtual `Equals` method whose parameter is the record type.
@@ -125,7 +125,7 @@ You declare a `PrintMembers` method in the `DegreeDays` record that doesn't prin
 
 The signature declares a `virtual protected` method to match the compiler's version. Don't worry if you get the accessors wrong; the language enforces the correct signature. If you forget the correct modifiers for any synthesized method, the compiler issues warnings or errors that help you get the right signature.
 
-In C# 10 and later, you can declare the `ToString` method as `sealed` in a record type. That prevents derived records from providing a new implementation. Derived records will still contain the `PrintMembers` override. You would do seal `ToString` if you didn't want it to display the runtime type of the record. In the preceding example, you'd lose the information on where the record was measuring heating or cooling degree days.
+In C# 10 and later, you can declare the `ToString` method as `sealed` in a record type. That prevents derived records from providing a new implementation. Derived records will still contain the `PrintMembers` override. You would seal `ToString` if you didn't want it to display the runtime type of the record. In the preceding example, you'd lose the information on where the record was measuring heating or cooling degree days.
 
 ## Non-destructive mutation
 

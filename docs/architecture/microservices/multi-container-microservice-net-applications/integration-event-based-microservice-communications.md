@@ -6,6 +6,8 @@ ms.date: 01/13/2021
 
 # Implementing event-based communication between microservices (integration events)
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 As described earlier, when you use event-based communication, a microservice publishes an event when something notable happens, such as when it updates a business entity. Other microservices subscribe to those events. When a microservice receives an event, it can update its own business entities, which might lead to more events being published. This is the essence of the eventual consistency concept. This publish/subscribe system is usually performed by using an implementation of an event bus. The event bus can be designed as an interface with the API needed to subscribe and unsubscribe to events and to publish events. It can also have one or more implementations based on any inter-process or messaging communication, such as a messaging queue or a service bus that supports asynchronous communication and a publish/subscribe model.
 
 You can use events to implement business transactions that span multiple services, which give you eventual consistency between those services. An eventually consistent transaction consists of a series of distributed actions. At each action, the microservice updates a business entity and publishes an event that triggers the next action. Figure 6-18 below, shows a PriceUpdated event published through an event bus, so the price update is propagated to the Basket and other microservices.
@@ -51,7 +53,7 @@ public class ProductPriceChangedIntegrationEvent : IntegrationEvent
 }
 ```
 
-The integration events can be defined at the application level of each microservice, so they are decoupled from other microservices, in a way comparable to how ViewModels are defined in the server and client. What is not recommended is sharing a common integration events library across multiple microservices; doing that would be coupling those microservices with a single event definition data library. You do not want to do that for the same reasons that you do not want to share a common domain model across multiple microservices: microservices must be completely autonomous.
+The integration events can be defined at the application level of each microservice, so they are decoupled from other microservices, in a way comparable to how ViewModels are defined in the server and client. What is not recommended is sharing a common integration events library across multiple microservices; doing that would be coupling those microservices with a single event definition data library. You do not want to do that for the same reasons that you do not want to share a common domain model across multiple microservices: microservices must be completely autonomous. For more information, see this blog post on [the amount of data to put in events](https://particular.net/blog/putting-your-events-on-a-diet). Be careful not to take this too far, as this other blog post describes [the problem data deficient messages can produce](https://ardalis.com/data-deficient-messages/). Your design of your events should aim to be "just right" for the needs of their consumers.
 
 There are only a few kinds of libraries you should share across microservices. One is libraries that are final application blocks, like the [Event Bus client API](https://github.com/dotnet-architecture/eShopOnContainers/tree/main/src/BuildingBlocks/EventBus), as in eShopOnContainers. Another is libraries that constitute tools that could also be shared as NuGet components, like JSON serializers.
 
@@ -127,7 +129,7 @@ The `Subscribe` methods (you can have several implementations depending on the a
 Some production-ready messaging solutions:
 
 - **Azure Service Bus** \
-  [https://docs.microsoft.com/azure/service-bus-messaging/](/azure/service-bus-messaging/)
+  [https://learn.microsoft.com/azure/service-bus-messaging/](/azure/service-bus-messaging/)
   
 - **NServiceBus** \
   <https://particular.net/nservicebus>

@@ -1,10 +1,10 @@
-class InitExample
+class Person_InitExample
 {
-     private double _seconds;
+     private int _yearOfBirth;
 
-     public double Seconds
+     public int YearOfBirth
      {
-         get { return _seconds; }
-         init { _seconds = value; }
+         get { return _yearOfBirth; }
+         init { _yearOfBirth = value; }
      }
 }

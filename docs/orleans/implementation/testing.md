@@ -1,7 +1,7 @@
 ---
 title: Unit testing
 description: Learn how to unit test with .NET Orleans.
-ms.date: 02/01/2022
+ms.date: 03/17/2022
 ---
 
 # Unit testing with Orleans
@@ -10,7 +10,7 @@ This tutorial shows how to unit test your grains to make sure they behave correc
 
 ## Use the `TestCluster`
 
-The `Microsoft.Orleans.TestingHost` NuGet package contains `TestCluster` which can be used to create an in-memory cluster, comprised of two silos by default, which can be used to test grains.
+The `Microsoft.Orleans.TestingHost` NuGet package contains <xref:Orleans.TestingHost.TestCluster> which can be used to create an in-memory cluster, comprised of two silos by default, which can be used to test grains.
 
 ```csharp
 using System;
@@ -96,7 +96,7 @@ namespace Tests
         public async Task SaysHelloCorrectly()
         {
             var hello = _cluster.GrainFactory.GetGrain<IHelloGrain>(Guid.NewGuid());
-            var greeting = await hello.SayHell();
+            var greeting = await hello.SayHello();
 
             Assert.Equal("Hello, World", greeting);
         }
@@ -104,8 +104,7 @@ namespace Tests
 }
 ```
 
-xUnit will call the `Dispose` method of the `ClusterFixture` type when all tests have been completed and the in-memory cluster silos will be stopped.
-`TestCluster` also has a constructor which accepts `TestClusterOptions` that can be used to configure the silos in the cluster.
+xUnit will call the <xref:System.IDisposable.Dispose> method of the `ClusterFixture` type when all tests have been completed and the in-memory cluster silos will be stopped. `TestCluster` also has a constructor which accepts <xref:Orleans.TestingHost.TestClusterOptions> that can be used to configure the silos in the cluster.
 
 If you are using Dependency Injection in your Silo to make services available to Grains, you can use this pattern as well:
 
@@ -144,7 +143,7 @@ public class TestSiloConfigurations : ISiloConfigurator
 
 Orleans also makes it possible to mock many parts of the system, and for many scenarios, this is the easiest way to unit test grains. This approach does have limitations (e.g. around scheduling reentrancy and serialization) and may require that grains include code used only by your unit tests. The [Orleans TestKit](https://github.com/OrleansContrib/OrleansTestKit) provides an alternative approach which side-steps many of these limitations.
 
-For example, let us imagine that the grain we are testing interacts with other grains. To be able to mock those other grains we also need to mock the `GrainFactory` member of the grain under test. By default `GrainFactory` is a normal `protected` property, but most mocking frameworks require properties to be `public` and `virtual` to be able to mock them. So the first thing we need to do is make `GrainFactory` both `public` and `virtual` property:
+For example, let us imagine that the grain we are testing interacts with other grains. To be able to mock those other grains we also need to mock the <xref:Orleans.Grain.GrainFactory> member of the grain under test. By default `GrainFactory` is a normal `protected` property, but most mocking frameworks require properties to be `public` and `virtual` to be able to mock them. So the first thing we need to do is make `GrainFactory` both `public` and `virtual` property:
 
 ```csharp
 public new virtual IGrainFactory GrainFactory

@@ -97,7 +97,7 @@ Now that you have a general understanding of what ONNX is and how Tiny YOLOv2 wo
     - Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**.
     - Select the **Install** button.
     - Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
-    - Repeat these steps for **Microsoft.ML.ImageAnalytics**, **Microsoft.ML.OnnxTransformer** and **Microsoft.ML.OnnxRuntime**.
+    - Repeat these steps for **Microsoft.Windows.Compatibility**, **Microsoft.ML.ImageAnalytics**, **Microsoft.ML.OnnxTransformer** and **Microsoft.ML.OnnxRuntime**.
 
 ### Prepare your data and pre-trained model
 
@@ -166,7 +166,7 @@ Create your prediction class in the *DataStructures* directory.
 
     `ImageNetPrediction` is the prediction data class and has the following `float[]` field:
 
-    - `PredictedLabel` contains the dimensions, objectness score, and class probabilities for each of the bounding boxes detected in an image.
+    - `PredictedLabels` contains the dimensions, objectness score, and class probabilities for each of the bounding boxes detected in an image.
 
 ### Initialize variables
 

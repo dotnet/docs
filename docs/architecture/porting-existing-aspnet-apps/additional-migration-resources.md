@@ -7,11 +7,13 @@ ms.date: 12/10/2021
 
 # Additional migration resources
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 As you're planning and executing your migration from ASP.NET MVC and/or Web API to ASP.NET Core, there are a number of resources available to help beyond this book. Make a note of these and leverage them where appropriate to help you overcome obstacles you encounter on your migration journey.
 
 ## Official documentation
 
-The official documentation website, [docs.microsoft.com](/), has the most up-to-date information available about versions, frameworks, breaking changes, and support options. You'll find many links in this book to docs articles, but for any problem you're facing it's often worth at least doing a quick search of the docs to see if there is already information covering the issue and offering a solution or workaround.
+The official documentation website, [learn.microsoft.com](/), has the most up-to-date information available about versions, frameworks, breaking changes, and support options. You'll find many links in this book to docs articles, but for any problem you're facing it's often worth at least doing a quick search of the docs to see if there is already information covering the issue and offering a solution or workaround.
 
 ## GitHub
 

@@ -118,7 +118,7 @@ Support has been added to allow for WCF services with Internationalized Domain N
 
 ## HttpClient
 
-A new class called <xref:System.Net.Http.HttpClient> has been added to make working with HTTP requests much easier. For more info, see [Making apps social and connected with HTTP services](https://channel9.msdn.com/Events/BUILD/BUILD2011/PLAT-581T).
+A new class called <xref:System.Net.Http.HttpClient> has been added to make working with HTTP requests much easier. For more info, see <xref:System.Net.Http.HttpClient> and [Guidelines for using HttpClient](../../fundamentals/networking/http/httpclient-guidelines.md).
 
 ## Configuration IntelliSense
 

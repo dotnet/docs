@@ -58,9 +58,9 @@ The first step is to create the type equivalence interface assembly.
 
 1. Select **Build** on the left pane of the **Properties** screen, and set the **Output path** to a location on your computer, such as *C:\TypeEquivalenceSample*. You use the same location throughout this walkthrough.
 
-1. Select **Signing** on the left pane of the **Properties** screen, and then select the **Sign the assembly** check box. In the dropdown for **Choose a strong name key file**, select **New**.
+1. Select **Build** > **Strong naming** on the left pane of the **Properties** screen, and then select the **Sign the assembly** check box. In the **Strong name key file**, select **Browse**.
 
-1. In the **Create Strong Name Key** dialog, under **Key file name**, type *key.snk*. Deselect the **Protect my key file with a password** check box, and then select **OK**.
+1. Navigate to and select the *key.snk* file you created in the *TypeEquivalenceInterface* project, and then select **OK**. For more information, see [Create a public-private key pair](create-public-private-key-pair.md).
 
 1. Open the *ISampleInterface* class file in the code editor, and replace its contents with the following code to create the `ISampleInterface` interface:
 
@@ -105,7 +105,7 @@ The first step is to create the type equivalence interface assembly.
    <Assembly: ImportedFromTypeLib("")>
    ```
 
-1. Select **File** > **Save All** or press **Ctrl**+**Shift**+**S** to save the files and project.
+1. Select **File** > **Save All** or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> to save the files and project.
 
 1. In **Solution Explorer**, right-click the **TypeEquivalenceInterface** project and select **Build**. The class library DLL file is compiled and saved to the specified build output path, for example *C:\TypeEquivalenceSample*.
 
@@ -123,11 +123,11 @@ Next, create the type equivalence runtime class.
 
 1. In **Solution Explorer**, right-click the **TypeEquivalenceInterface** project and select **Properties**.
 
-1. Select **Build** on the left pane of the **Properties** screen, and then set the **Output path** to the same location you used for the TypeEquivalenceInterface project, for example, *C:\TypeEquivalenceSample*.
+1. Select **Build** on the left pane of the **Properties** screen, and then set the **Output path** to the same location you used for the *TypeEquivalenceInterface* project, for example, *C:\TypeEquivalenceSample*.
 
-1. Select **Signing** on the left pane of the **Properties** screen, and then select the **Sign the assembly** check box. In the dropdown for **Choose a strong name key file**, select **New**.
+1. Select **Build** > **Strong naming** on the left pane of the **Properties** screen, and then select the **Sign the assembly** check box. In the **Strong name key file**, select **Browse**.
 
-1. In the **Create Strong Name Key** dialog, under **Key file name**, type *key.snk*. Deselect the **Protect my key file with a password** check box, and then select **OK**.
+1. Navigate to and select the *key.snk* file you created in the *TypeEquivalenceInterface* project, and then select **OK**. For more information, see [Create a public-private key pair](create-public-private-key-pair.md).
 
 1. In **Solution Explorer**, right-click the **TypeEquivalenceRuntime** project and select **Add** > **Reference**.
 
@@ -177,7 +177,7 @@ Next, create the type equivalence runtime class.
    End Class
    ```
 
-1. Select **File** > **Save All** or press **Ctrl**+**Shift**+**S** to save the files and project.
+1. Select **File** > **Save All** or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> to save the files and project.
 
 1. In **Solution Explorer**, right-click the **TypeEquivalenceRuntime** project and select **Build**. The class library DLL file is compiled and saved to the specified build output path.
 
@@ -245,9 +245,9 @@ Finally, create a type equivalence client program that references the interface 
    End Module
    ```
 
-1. Select **File** > **Save All** or press **Ctrl**+**Shift**+**S** to save the files and project.
+1. Select **File** > **Save All** or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> to save the files and project.
 
-1. Press **Ctrl**+**F5** to build and run the program. Note that the console output returns the assembly version **1.0.0.0**.
+1. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to build and run the program. Note that the console output returns the assembly version **1.0.0.0**.
 
 ## Modify the interface
 
@@ -271,7 +271,7 @@ Now, modify the interface assembly, and change its version.
    Function GetDate() As Date
    ```
 
-1. Select **File** > **Save All** or press **Ctrl**+**Shift**+**S** to save the files and project.
+1. Select **File** > **Save All** or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> to save the files and project.
 
 1. In **Solution Explorer**, right-click the **TypeEquivalenceInterface** project and select **Build**. A new version of the class library DLL file is compiled and saved to the build output path.
 
@@ -302,7 +302,7 @@ Also modify the runtime class and update its version.
    End Function
    ```
 
-1. Select **File** > **Save All** or press **Ctrl**+**Shift**+**S** to save the files and project.
+1. Select **File** > **Save All** or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> to save the files and project.
 
 1. In **Solution Explorer**, right-click the **TypeEquivalenceRuntime** project and select **Build**. A new version of the class library DLL file is compiled and saved to the build output path.
 

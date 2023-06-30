@@ -1,11 +1,15 @@
 ---
-title: The building blocks of C# programs
-description: Learn about C# members, expressions, and statements. Types contain members you write. Those members are built from statements and expressions.
-ms.date: 08/23/2021
+title: A tour of C# - The building blocks of C# programs
+description: Learn about C# members, expressions, and statements. Members include properties, fields, methods, events, operators, nested types, and more.
+ms.date: 03/14/2022
 ---
-# Program building blocks
+# C# program building blocks
 
-The types described in the previous article are built using these building blocks: [***members***](../programming-guide/classes-and-structs/members.md), [***expressions***, and ***statements***](../programming-guide/statements-expressions-operators/index.md).
+The types described in [the previous article in this Tour of C# series](types.md) are built by using these building blocks:
+
+* [Members](#members), such as properties, fields, methods, and events.
+* [Expressions](#expressions)
+* [Statements](#statements)
 
 ## Members
 
@@ -24,7 +28,7 @@ The following list provides an overview of the kinds of members a class can cont
 - **Finalizers**: Actions done before instances of the class are permanently discarded
 - **Types**: Nested types declared by the class
 
-## Accessibility
+### Accessibility
 
 Each member of a class has an associated accessibility, which controls the regions of program text that can access the member. There are six possible forms of accessibility. The access modifiers are summarized below.
 
@@ -47,13 +51,13 @@ In the following example, each instance of the `Color` class has a separate copy
 
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="ColorClassDefinition":::
 
-As shown in the previous example, *read-only fields* may be declared with a `readonly` modifier. Assignment to a read-only field can only occur as part of the field’s declaration or in a constructor in the same class.
+As shown in the previous example, *read-only fields* may be declared with a `readonly` modifier. Assignment to a read-only field can only occur as part of the field's declaration or in a constructor in the same class.
 
 ## Methods
 
 A *method* is a member that implements a computation or action that can be performed by an object or class. *Static methods* are accessed through the class. *Instance methods* are accessed through instances of the class.
 
-Methods may have a list of *parameters*, which represent values or variable references passed to the method. Methods have a *return type*, which specifies the type of the value computed and returned by the method. A method’s return type is `void` if it doesn't return a value.
+Methods may have a list of *parameters*, which represent values or variable references passed to the method. Methods have a *return type*, which specifies the type of the value computed and returned by the method. A method's return type is `void` if it doesn't return a value.
 
 Like types, methods may also have a set of type parameters, for which type arguments must be specified when the method is called. Unlike types, the type arguments can often be inferred from the arguments of a method call and need not be explicitly given.
 
@@ -77,7 +81,7 @@ A *reference parameter* is used for passing arguments by reference. The argument
 
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="RefExample":::
 
-An *output parameter* is used for passing arguments by reference. It's similar to a reference parameter, except that it doesn't require that you explicitly assign a value to the caller-provided argument. An output parameter is declared with the `out` modifier. The following example shows the use of `out` parameters using the syntax introduced in C# 7.
+An *output parameter* is used for passing arguments by reference. It's similar to a reference parameter, except that it doesn't require that you explicitly assign a value to the caller-provided argument. An output parameter is declared with the `out` modifier. The following example shows the use of `out` parameters.
 
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="OutExample":::
 
@@ -95,7 +99,7 @@ is equivalent to writing the following.
 
 ### Method body and local variables
 
-A method’s body specifies the statements to execute when the method is invoked.
+A method's body specifies the statements to execute when the method is invoked.
 
 A method body can declare variables that are specific to the invocation of the method. Such variables are called *local variables*. A local variable declaration specifies a type name, a variable name, and possibly an initial value. The following example declares a local variable `i` with an initial value of zero and a local variable `j` with no initial value.
 
@@ -127,7 +131,7 @@ The `SetNextSerialNo` and `GetNextSerialNo` static methods are invoked on the cl
 
 ### Virtual, override, and abstract methods
 
-You use virtual, override, and abstract methods to define the behavior for a hierarchy of class types. Because a class can derive from a base class, those derived class may need to modify the behavior implemented in the base class. A ***virtual*** method is one declared and implemented in a base class where any derived class may provide a more specific implementation. An ***override*** method is a method implemented in a derived class that modifies the behavior of the base class' implementation. An ***abstract*** method is a method declared in a base class that *must* be overridden in all derived classes. In fact, abstract methods don't define an implementation in the base class.
+You use virtual, override, and abstract methods to define the behavior for a hierarchy of class types. Because a class can derive from a base class, those derived classes may need to modify the behavior implemented in the base class. A ***virtual*** method is one declared and implemented in a base class where any derived class may provide a more specific implementation. An ***override*** method is a method implemented in a derived class that modifies the behavior of the base class' implementation. An ***abstract*** method is a method declared in a base class that *must* be overridden in all derived classes. In fact, abstract methods don't define an implementation in the base class.
 
 Method calls to instance methods may resolve to either base class or derived class implementations. The type of a variable determines its *compile-time type*. The *compile-time type* is the type the compiler uses to determine its members. However, a variable may be assigned to an instance of any type derived from its *compile-time type*. The *run-time type* is the type of the actual instance a variable refers to.
 
@@ -213,7 +217,7 @@ An *event* is a member that enables a class or object to provide notifications. 
 
 Within a class that declares an event member, the event behaves just like a field of a delegate type (provided the event isn't abstract and doesn't declare accessors). The field stores a reference to a delegate that represents the event handlers that have been added to the event. If no event handlers are present, the field is `null`.
 
-The `MyList<T>` class declares a single event member called `Changed`, which indicates that a new item has been added to the list. The Changed event is raised by the `OnChanged` virtual method, which first checks whether the event is `null` (meaning that no handlers are present). The notion of raising an event is precisely equivalent to invoking the delegate represented by the event. There are no special language constructs for raising events.
+The `MyList<T>` class declares a single event member called `Changed`, which indicates that a new item has been added to the list or a list item has been changed using the indexer set accessor. The Changed event is raised by the `OnChanged` virtual method, which first checks whether the event is `null` (meaning that no handlers are present). The notion of raising an event is precisely equivalent to invoking the delegate represented by the event. There are no special language constructs for raising events.
 
 Clients react to events through *event handlers*. Event handlers are attached using the `+=` operator and removed using the `-=` operator. The following example attaches an event handler to the `Changed` event of a `MyList<string>`.
 

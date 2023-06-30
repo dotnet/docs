@@ -6,30 +6,32 @@ ms.date: 01/13/2021
 
 # Implement HTTP call retries with exponential backoff with IHttpClientFactory and Polly policies
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 The recommended approach for retries with exponential backoff is to take advantage of more advanced .NET libraries like the open-source [Polly library](https://github.com/App-vNext/Polly).
 
 Polly is a .NET library that provides resilience and transient-fault handling capabilities. You can implement those capabilities by applying Polly policies such as Retry, Circuit Breaker, Bulkhead Isolation, Timeout, and Fallback. Polly targets .NET Framework 4.x and .NET Standard 1.0, 1.1, and 2.0 (which supports .NET Core and later).
 
 The following steps show how you can use Http retries with Polly integrated into `IHttpClientFactory`, which is explained in the previous section.
 
-**Reference the .NET 6 packages**
+**Reference the .NET 7 packages**
 
-`IHttpClientFactory` is available since .NET Core 2.1 however we recommend you to use the latest .NET 6 packages from NuGet in your project. You typically also need to reference the extension package `Microsoft.Extensions.Http.Polly`.
+`IHttpClientFactory` is available since .NET Core 2.1, however, we recommend you use the latest .NET 7 packages from NuGet in your project. You typically also need to reference the extension package `Microsoft.Extensions.Http.Polly`.
 
-**Configure a client with Polly's Retry policy, in Startup**
+**Configure a client with Polly's Retry policy, in app startup**
 
-As shown in previous sections, you need to define a named or typed client HttpClient configuration in your standard Startup.ConfigureServices(...) method, but now, you add incremental code specifying the policy for the Http retries with exponential backoff, as below:
+As shown in previous sections, you need to define a named or typed client HttpClient configuration in your standard _Program.cs_ app configuration. Now you add incremental code specifying the policy for the Http retries with exponential backoff, as follows:
 
 ```csharp
-//ConfigureServices()  - Startup.cs
-services.AddHttpClient<IBasketService, BasketService>()
+// Program.cs
+builder.Services.AddHttpClient<IBasketService, BasketService>()
         .SetHandlerLifetime(TimeSpan.FromMinutes(5))  //Set lifetime to five minutes
         .AddPolicyHandler(GetRetryPolicy());
 ```
 
 The **AddPolicyHandler()** method is what adds policies to the `HttpClient` objects you'll use. In this case, it's adding a Polly's policy for Http Retries with exponential backoff.
 
-To have a more modular approach, the Http Retry Policy can be defined in a separate method within the `Startup.cs` file, as shown in the following code:
+To have a more modular approach, the Http Retry Policy can be defined in a separate method within the _Program.cs_ file, as shown in the following code:
 
 ```csharp
 static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
@@ -59,19 +61,19 @@ var retryPolicy = Policy
 
 ## Additional resources
 
-- **Retry pattern**  
-  [https://docs.microsoft.com/azure/architecture/patterns/retry](/azure/architecture/patterns/retry)
+- **Retry pattern**
+  [https://learn.microsoft.com/azure/architecture/patterns/retry](/azure/architecture/patterns/retry)
 
-- **Polly and IHttpClientFactory**  
+- **Polly and IHttpClientFactory**
   <https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory>
 
-- **Polly (.NET resilience and transient-fault-handling library)**  
+- **Polly (.NET resilience and transient-fault-handling library)**
   <https://github.com/App-vNext/Polly>
 
-- **Polly: Retry with Jitter**  
+- **Polly: Retry with Jitter**
   <https://github.com/App-vNext/Polly/wiki/Retry-with-jitter>
 
-- **Marc Brooker. Jitter: Making Things Better With Randomness**  
+- **Marc Brooker. Jitter: Making Things Better With Randomness**
   <https://brooker.co.za/blog/2015/03/21/backoff.html>
 
 >[!div class="step-by-step"]

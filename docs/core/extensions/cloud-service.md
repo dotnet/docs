@@ -1,9 +1,9 @@
 ---
 title: Deploy a Worker Service to Azure
-description: Learn how to deploy a .NET Worker Service to Azure.
+description: Deploy your .NET Worker Service to Azure with ease, learning from a step-by-step process to optimize your workflow, including Docker and Azure Container Registry.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/10/2021
+ms.date: 03/13/2023
 ms.topic: tutorial
 zone_pivot_groups: development-environment-one
 ---
@@ -66,7 +66,7 @@ With the CLI, the *Dockerfile* is **not** created for you. You'll need to copy i
 
 :::zone-end
 
-:::code language="dockerfile" source="snippets/workers/cloud-service/Dockerfile":::
+:::code language="dockerfile" source="snippets/workers/7.0/cloud-service/Dockerfile":::
 
 :::zone target="docs" pivot="cli"
 
@@ -257,7 +257,7 @@ From Visual Studio Code, select **Docker** from the **Activity Bar**. Expand the
 
 :::image type="content" source="media/vs-code-connect-registry.png" alt-text="Visual Studio Code - Docker: Connect registry":::
 
-Expand the **REGISTRIES** node, select **Azure**, your  subscription > the container registry > the image, and then right-click the tag. Select **Deploy Image to Azure Container Instances**.
+Expand the **REGISTRIES** node, select **Azure**, your subscription > the container registry > the image, and then right-click the tag. Select **Deploy Image to Azure Container Instances**.
 
 :::image type="content" source="media/vs-code-deploy-to-aci.png" alt-text="Visual Studio Code - Docker: Deploy image to Azure Container Instances":::
 

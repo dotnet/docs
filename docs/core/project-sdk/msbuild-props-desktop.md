@@ -136,7 +136,7 @@ The `EnableDefaultApplicationDefinition` property controls whether `ApplicationD
 </PropertyGroup>
 ```
 
-This property requires that the [`EnableDefaultItems` property](msbuild-props.md#enabledefaultitems) property is set to `true`, which is the default setting.
+This property requires that the [`EnableDefaultItems` property](msbuild-props.md#enabledefaultitems) is set to `true`, which is the default setting.
 
 ### EnableDefaultPageItems
 
@@ -148,7 +148,7 @@ The `EnableDefaultPageItems` property controls whether `Page` items, which are _
 </PropertyGroup>
 ```
 
-This property requires that the [`EnableDefaultItems` property](msbuild-props.md#enabledefaultitems) property is set to `true`, which is the default setting.
+This property requires that the [`EnableDefaultItems` property](msbuild-props.md#enabledefaultitems) is set to `true`, which is the default setting.
 
 ## Windows Forms settings
 

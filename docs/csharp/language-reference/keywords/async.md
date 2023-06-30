@@ -22,7 +22,7 @@ public async Task<int> ExampleMethodAsync()
 }
 ```
 
-If you're new to asynchronous programming or do not understand how an async method uses the [`await` operator](../operators/await.md) to do potentially long-running work without blocking the caller's thread, read the introduction in [Asynchronous programming with async and await](../../programming-guide/concepts/async/index.md). The following code is found inside an async method and calls the <xref:System.Net.Http.HttpClient.GetStringAsync%2a?displayProperty=nameWithType> method:
+If you're new to asynchronous programming or do not understand how an async method uses the [`await` operator](../operators/await.md) to do potentially long-running work without blocking the caller's thread, read the introduction in [Asynchronous programming with async and await](../../asynchronous-programming/index.md). The following code is found inside an async method and calls the <xref:System.Net.Http.HttpClient.GetStringAsync%2a?displayProperty=nameWithType> method:
 
 ```csharp
 string contents = await httpClient.GetStringAsync(requestUrl);
@@ -61,7 +61,7 @@ To run the code as a Windows Store app:
 [!code-csharp[wpf-async](../../../../samples/snippets/csharp/language-reference/keywords/async/wpf/MainWindow.xaml.cs#1)]
 
 > [!IMPORTANT]
-> For more information about tasks and the code that executes while waiting for a task, see [Asynchronous programming with async and await](../../programming-guide/concepts/async/index.md). For a full console example that uses similar elements, see [Process asynchronous tasks as they complete (C#)](../../programming-guide/concepts/async/start-multiple-async-tasks-and-process-them-as-they-complete.md).
+> For more information about tasks and the code that executes while waiting for a task, see [Asynchronous programming with async and await](../../asynchronous-programming/index.md). For a full console example that uses similar elements, see [Process asynchronous tasks as they complete (C#)](../../asynchronous-programming/start-multiple-async-tasks-and-process-them-as-they-complete.md).
 
 ## Return Types
 
@@ -70,21 +70,22 @@ An async method can have the following return types:
 - <xref:System.Threading.Tasks.Task>
 - <xref:System.Threading.Tasks.Task%601>
 - [void](../builtin-types/void.md). `async void` methods are generally discouraged for code other than event handlers because callers cannot `await` those methods and must implement a different mechanism to report successful completion or error conditions.
-- Starting with C# 7.0, any type that has an accessible `GetAwaiter` method. The `System.Threading.Tasks.ValueTask<TResult>` type is one such implementation. It is available by adding the NuGet package `System.Threading.Tasks.Extensions`.
+- Any type that has an accessible `GetAwaiter` method. The `System.Threading.Tasks.ValueTask<TResult>` type is one such implementation. It is available by adding the NuGet package `System.Threading.Tasks.Extensions`.
 
-The async method can't declare any [in](./in-parameter-modifier.md), [ref](./ref.md) or [out](./out-parameter-modifier.md) parameters, nor can it have a [reference return value](../../programming-guide/classes-and-structs/ref-returns.md), but it can call methods that have such parameters.
+The async method can't declare any [in](./in-parameter-modifier.md), [ref](./ref.md) or [out](./out-parameter-modifier.md) parameters, nor can it have a [reference return value](../statements/jump-statements.md#ref-returns), but it can call methods that have such parameters.
 
 You specify `Task<TResult>` as the return type of an async method if the [return](../statements/jump-statements.md#the-return-statement) statement of the method specifies an operand of type `TResult`. You use `Task` if no meaningful value is returned when the method is completed. That is, a call to the method returns a `Task`, but when the `Task` is completed, any `await` expression that's awaiting the `Task` evaluates to `void`.
 
 You use the `void` return type primarily to define event handlers, which require that return type. The caller of a `void`-returning async method can't await it and can't catch exceptions that the method throws.
 
-Starting with C# 7.0, you return another type, typically a value type, that has a `GetAwaiter` method to minimize memory allocations in performance-critical sections of code.
+You return another type, typically a value type, that has a `GetAwaiter` method to minimize memory allocations in performance-critical sections of code.
 
-For more information and examples, see [Async Return Types](../../programming-guide/concepts/async/async-return-types.md).
+For more information and examples, see [Async Return Types](../../asynchronous-programming/async-return-types.md).
 
 ## See also
 
 - <xref:System.Runtime.CompilerServices.AsyncStateMachineAttribute>
 - [await](../operators/await.md)
-- [Asynchronous programming with async and await](../../programming-guide/concepts/async/index.md)
-- [Process asynchronous tasks as they complete](../../programming-guide/concepts/async/start-multiple-async-tasks-and-process-them-as-they-complete.md)
+- [Asynchronous programming with async and await](../../asynchronous-programming/index.md)
+- [Process asynchronous tasks as they complete](../../asynchronous-programming/start-multiple-async-tasks-and-process-them-as-they-complete.md)
+- [.NET blog: How async/await really works in C#](https://devblogs.microsoft.com/dotnet/how-async-await-really-works/)

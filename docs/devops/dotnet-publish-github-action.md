@@ -59,14 +59,14 @@ In the preceding workflow composition:
 
   - The environment variable `AZURE_WEBAPP_NAME` is assigned the value `DotNetWeb`.
   - The environment variable `AZURE_WEBAPP_PACKAGE_PATH` is assigned the value `'.'`.
-  - The environment variable `DOTNET_VERSION` is assigned the value `'5.0.301'`. The environment variable is later referenced to specify the `dotnet-version` of the `actions/setup-dotnet@v1` GitHub Action.
+  - The environment variable `DOTNET_VERSION` is assigned the value `'6.0.401'`. The environment variable is later referenced to specify the `dotnet-version` of the `actions/setup-dotnet@v3` GitHub Action.
 
 - The `jobs` node builds out the steps for the workflow to take.
 
   :::code language="yml" source="snippets/dotnet-publish-github-action/publish-app.yml" range="12-42" highlight="2,4,9-11,14,19-20,24,26-31":::
 
   - There is a single job, named `publish` that will run on the latest version of Ubuntu.
-  - The `actions/setup-dotnet@v1` GitHub Action is used to set up the .NET SDK with the specified version from the `DOTNET_VERSION` environment variable.
+  - The `actions/setup-dotnet@v3` GitHub Action is used to set up the .NET SDK with the specified version from the `DOTNET_VERSION` environment variable.
   - The [`dotnet restore`](../core/tools/dotnet-restore.md) command is called.
   - The [`dotnet build`](../core/tools/dotnet-build.md) command is called.
   - The [`dotnet publish`](../core/tools/dotnet-publish.md) command is called.

@@ -5,7 +5,9 @@ ms.date: 02/21/2022
 ---
 # When to deploy Windows Containers to Azure Kubernetes Service (AKS)
 
-Azure Kubernetes Service (AKS) simplifies deploying a managed Kubernetes cluster in Azure by offloading the operational overhead to Azure. You get an open solution that offers portability both for your containers and for your application configuration. You select the size, the number of hosts, and the orchestrator tools. Azure Kubernetes Service handles the infrastructure for you. It also supports Windows Server containers alongside Linux containers. For more details on Windows OS support and the feature differences between Windows and Linux, read the [FAQ](https://docs.microsoft.com/azure/aks/windows-faq).
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
+Azure Kubernetes Service (AKS) simplifies deploying a managed Kubernetes cluster in Azure by offloading the operational overhead to Azure. You get an open solution that offers portability both for your containers and for your application configuration. You select the size, the number of hosts, and the orchestrator tools. Azure Kubernetes Service handles the infrastructure for you. It also supports Windows Server containers alongside Linux containers. For more details on Windows OS support and the feature differences between Windows and Linux, read the [FAQ](/azure/aks/windows-faq).
 
 The main benefits of Azure Kubernetes Service (AKS) are:
 

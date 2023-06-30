@@ -10,6 +10,8 @@ uid: azure/devops/monitor
 ---
 # Monitor and debug
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Having deployed the app and built a DevOps pipeline, it's important to understand how to monitor and troubleshoot the app.
 
 In this section, you'll complete the following tasks:

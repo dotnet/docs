@@ -91,4 +91,5 @@ Specifies a collection of configuration settings for the named <xref:System.Runt
   
 ## See also
 
+- [Configure apps by using configuration files](../../index.md)
 - [\<memoryCache> Element (Cache Settings)](memorycache-element-cache-settings.md)

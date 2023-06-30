@@ -6,6 +6,8 @@ ms.date: 06/28/2021
 
 # Channel credentials
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 As the name implies, channel credentials are attached to the underlying gRPC channel. The standard form of channel credentials uses client certificate authentication. In this process, the client provides a TLS certificate when it's making the connection, and then the server verifies this certificate before allowing any calls to be made.
 
 You can combine channel credentials with call credentials to provide comprehensive security for a gRPC service. The channel credentials prove that the client application is allowed to access the service, and the call credentials provide information about the person who is using the client application.
@@ -164,6 +166,7 @@ var httpClient = new HttpClient(handler);
 var callCredentials = CallCredentials.FromInterceptor(((context, metadata) =>
     {
         metadata.Add("Authorization", $"Bearer {_token}");
+        return Task.CompletedTask;
     }));
 
 var channelCredentials = ChannelCredentials.Create(new SslCredentials(), callCredentials);

@@ -1,9 +1,8 @@
 ---
 title: Thread safety with the Azure SDK for .NET
 description: Learn about thread safety in Azure SDK client objects and how this design impacts client lifetime management.
-ms.date: 05/24/2021
-ms.author: pakrym
-author: pakrym
+ms.custom: devx-track-dotnet, engagement-fy23
+ms.date: 06/23/2023
 ---
 
 # Thread safety and client lifetime management for Azure SDK objects
@@ -62,19 +61,16 @@ client.UpdateSecretProperties(newSecret.Properties);
 
 ## Client lifetime
 
-Because Azure SDK clients are thread-safe, there's no reason to construct multiple SDK client objects for a given set of constructor parameters. Treat Azure SDK client objects as singletons once constructed. This recommendation is commonly implemented by registering Azure SDK client objects as singletons in the app's Inversion of Control (IoC) container. Dependency injection (DI) is used to obtain references to the SDK client object. The following example shows a singleton client object registration in an ASP.NET Core app's `Startup.ConfigureServices` method:
+Because Azure SDK clients are thread-safe, there's no reason to construct multiple SDK client objects for a given set of constructor parameters. Treat Azure SDK client objects as singletons once constructed. This recommendation is commonly implemented by registering Azure SDK client objects as singletons in the app's Inversion of Control (IoC) container. Dependency injection (DI) is used to obtain references to the SDK client object. The following example shows a singleton client object registration:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
-{
-    services.AddControllersWithViews();
+var builder = Host.CreateApplicationBuilder(args);
 
-    var blobServiceClient = new BlobServiceClient(
-        new Uri("<secrets_endpoint>"), new DefaultAzureCredential());
-    services.AddSingleton(blobServiceClient);
+var endpoint = builder.Configuration["SecretsEndpoint"];
+var blobServiceClient = new BlobServiceClient(
+    new Uri(endpoint), new DefaultAzureCredential());
 
-    // Code omitted for brevity
-}
+builder.Services.AddSingleton(blobServiceClient);
 ```
 
 For more information about implementing DI with the Azure SDK, see [Dependency injection with the Azure SDK for .NET](./dependency-injection.md).

@@ -7,6 +7,8 @@ ms.date: 02/17/2021
 
 # Compare and contrast GitHub Actions and Azure Pipelines
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 [GitHub Actions](https://docs.github.com/actions) and [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines) have a common history. In fact, the Actions agent is a fork of the Pipelines agent. There are many similarities between GitHub Actions and Azure Pipelines and it's worth comparing and contrasting them.
 
 ## Pipelines as code
@@ -37,7 +39,7 @@ GitHub Workflows execute on *runners*. The runner code is essentially a fork of 
 Hosted agents (Azure Pipelines) and hosted runners (GitHub) are agents that are spun up and managed by Azure DevOps or GitHub respectively. You don't need to maintain any build infrastructure. When a pipeline triggers that targets a hosted agent, an instance of the specified agent image is created. The job is run by the agent on the instance, and once the job completes, the instance is destroyed. The same applies for hosted runners running GitHub workflows.
 
 > [!NOTE]
-> The list of software installed on Azure Pipeline images is listed in [this repository](https://github.com/actions/virtual-environments/tree/main/images). You can select the platform folder and examine the *README.md* files. You can find information on [GitHub hosted runners](https://docs.github.com/actions/reference/specifications-for-github-hosted-runners).
+> The list of software installed on Azure Pipelines images is listed in [this repository](https://github.com/actions/virtual-environments/tree/main/images). You can select the platform folder and examine the *README.md* files. You can find information on [GitHub hosted runners](https://docs.github.com/actions/reference/specifications-for-github-hosted-runners).
 
 ### Private agents and self-hosted runners
 
@@ -61,7 +63,7 @@ Every Azure DevOps account has a hosted pool with a single agent that can run on
 
 |Feature|GitHub|Azure Pipelines|Links|
 |-------|------|---------------|-----|
-|Hosted agents for public repos/projects|Free|[No free minutes](https://devblogs.microsoft.com/devops/change-in-azure-pipelines-grant-for-public-projects/) for public projects|[Azure Pipelines](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml&preserve-view=true#capabilities-and-limitations) [GitHub](https://github.com/features/actions)|
+|Hosted agents for public repos/projects|Free|Up to 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time with no overall time limit per month. You aren't given this free grant by default, you have to [submit a request](https://aka.ms/azpipelines-parallelism-request)|[Azure Pipelines](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml&preserve-view=true#capabilities-and-limitations) [GitHub](https://github.com/features/actions)|
 |Hosted agents for private repos/projects|2,000 minutes free per month, 3,000 minutes for Pro and Team licenses, 50,000 minutes for Enterprise license. Additional minutes may be purchased.|One free parallel job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month. You can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours).||
 |Cross-platform|Yes|Yes||
 |Scale set agents|No|Yes| [Azure virtual machine scale set agents](/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops&preserve-view=true)|
@@ -86,7 +88,7 @@ GitHub Actions are evolving rapidly and provide features such as triggers for al
 
 ### Feature comparison
 
-The following table is current as of November 2021.
+The following table is current as of January 2023 and is not an exhaustive list of features.
 
 |Feature|Description|GitHub Actions|Azure Pipelines|
 |-------|-----------|--------------|---------------|
@@ -100,7 +102,7 @@ The following table is current as of November 2021.
 |Deployment Groups|A logical set of target machines for deployments|No|Yes|
 |Deployment Jobs|Job that targets a deployment group|No|Yes|
 |Environments|A collection of resources to target or a logical environment|Yes|Yes|
-|Gates|Automatic collection and evaluation of signals to control continuation|No|Yes|
+|Gates/Checks|Automatic collection and evaluation of signals to control continuation|Yes|Yes|
 |Jobs|Sequence of steps that are executed on an agent|Yes|Yes|
 |Service Containers|Manage the lifecycle of a containerized service instance available during a job|Yes|Yes|
 |Service Connections|Abstract credentials to external systems|No|Yes|
@@ -113,25 +115,7 @@ The following table is current as of November 2021.
 |Variable Groups|Store values for use across multiple pipelines|No|Yes|
 
 > [!IMPORTANT]
-> GitHub Actions is rapidly evolving. Since the first version of the above table, GitHub Actions has release Composite Actions and Reusable Workflows, both of which significantly improve reusability of GitHub Actions. Passwordless deployment via OpenID Connect (OIDC) support for Azure, AWS and Hashi have also been released to beta. Be sure to check documentation carefully before deciding which platform is right for you.
-
-## Recommendation table for common scenarios
-
-The following table shows some common scenarios and platform recommendations for each. As always, there will be exceptions. Consider your exact scenario carefully.
-
-|Requirement|Platform|
-|-----------|--------|
-|I need to create reusable templates to standardize how jobs are executed across multiple teams|Both|
-|I need to have automated gates control pipeline progress|Azure Pipelines|
-|I need to define multiple stages|Azure Pipelines|
-|I need multiple jobs to target the same environment|Both|
-|I need to model multiple, complex environments|Both|
-|I need to use the same environments across multiple projects/repos|Azure Pipelines|
-|I have repos that aren't in GitHub|Azure Pipelines|
-|I need to create custom tasks that aren't open-source|Both|
-|I need a simple workflow for building and deploying open-source repositories to a small set of environments|GitHub Actions|
-|I need to model workflows for scenarios other than CI/CD. For example, custom alerts on pull requests|GitHub Actions|
-|I need to create custom tasks that are open-source|Both|
+> GitHub Actions is rapidly evolving. Be sure to check documentation carefully before deciding which platform is right for you.
 
 >[!div class="step-by-step"]
 >[Previous](actions-index.md)

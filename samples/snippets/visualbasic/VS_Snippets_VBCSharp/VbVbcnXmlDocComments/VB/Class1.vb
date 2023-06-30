@@ -5,7 +5,7 @@ Option Strict On
 ''' This class provides a simple counter.
 ''' </summary>
 ''' <remarks>
-''' The <c>Counter</c> property gets incemented by one every
+''' The <c>Counter</c> property gets incremented by one every
 ''' time the property is accessed.
 ''' <para>To reset the counter, use the <c>ResetCounter</c> method.</para>
 ''' </remarks>
@@ -23,10 +23,10 @@ Public Class CounterSample
     Private counterValue As Integer = 0
 
     ''' <summary>
-    ''' Resets the value the <c>Counter</c> field.
+    ''' Resets the value of the <c>Counter</c> field.
     ''' </summary>
     ''' <remarks>
-    ''' This method sets the value of 
+    ''' This method sets the value of
     ''' the <see cref="Counter"/> property to zero.
     ''' <seealso cref="Counter"/>
     ''' </remarks>
@@ -76,7 +76,7 @@ Public Class Test
 
     ' <snippet1>
     ''' <summary>
-    ''' Resets the value the <c>Counter</c> field.
+    ''' Resets the value of the <c>Counter</c> field.
     ''' </summary>
     Public Sub ResetCounter()
         counterValue = 0
@@ -98,9 +98,9 @@ Public Class Test
     ''' <exception cref="System.OverflowException">
     ''' Thrown when <paramref name="denominator"/><c> = 0</c>.
     ''' </exception>
-    Public Function IntDivide( 
-            ByVal numerator As Integer, 
-            ByVal denominator As Integer 
+    Public Function IntDivide(
+            ByVal numerator As Integer,
+            ByVal denominator As Integer
     ) As Integer
         Return numerator \ denominator
     End Function
@@ -108,12 +108,12 @@ Public Class Test
 
     ' <include>	    ba8e9173-82cd-460b-8938-a075a2dfb36d.xml
     '<snippet4>
-    ''' <include file="commentFile.xml" 
+    ''' <include file="commentFile.xml"
     ''' path="Docs/Members[@name='Open']/*" />
     Public Sub Open(ByVal filename As String)
         ' Code goes here.
     End Sub
-    ''' <include file="commentFile.xml" 
+    ''' <include file="commentFile.xml"
     ''' path="Docs/Members[@name='Close']/*" />
     Public Sub Close(ByVal filename As String)
         ' Code goes here.
@@ -203,61 +203,61 @@ End Class
 ' <snippet10>
 Namespace SampleNamespace
 
-  ''' <summary>Signature is 
+  ''' <summary>Signature is
   ''' "T:SampleNamespace.SampleClass"
   ''' </summary>
   Public Class SampleClass
 
-    ''' <summary>Signature is 
+    ''' <summary>Signature is
     ''' "M:SampleNamespace.SampleClass.#ctor"
     ''' </summary>
     Public Sub New()
     End Sub
 
-    ''' <summary>Signature is 
+    ''' <summary>Signature is
     ''' "M:SampleNamespace.SampleClass.#ctor(System.Int32)"
     ''' </summary>
     Public Sub New(ByVal i As Integer)
     End Sub
 
-    ''' <summary>Signature is 
+    ''' <summary>Signature is
     ''' "F:SampleNamespace.SampleClass.SampleField"
     ''' </summary>
     Public SampleField As String
 
-    ''' <summary>Signature is 
+    ''' <summary>Signature is
     ''' "F:SampleNamespace.SampleClass.SampleConstant"
     ''' </summary>
     Public Const SampleConstant As Integer = 42
 
-    ''' <summary>Signature is 
+    ''' <summary>Signature is
     ''' "M:SampleNamespace.SampleClass.SampleFunction"
     ''' </summary>
     Public Function SampleFunction() As Integer
     End Function
 
-    ''' <summary>Signature is 
+    ''' <summary>Signature is
     ''' "M:SampleNamespace.SampleClass.
     ''' SampleFunction(System.Int16[],System.Int32[0:,0:])"
     ''' </summary>
-    Public Function SampleFunction( 
-        ByVal array1D() As Short, 
+    Public Function SampleFunction(
+        ByVal array1D() As Short,
         ByVal array2D(,) As Integer) As Integer
     End Function
 
-    ''' <summary>Signature is 
-    ''' "M:SampleNamespace.SampleClass. 
+    ''' <summary>Signature is
+    ''' "M:SampleNamespace.SampleClass.
     ''' op_Addition(SampleNamespace.SampleClass,
     '''             SampleNamespace.SampleClass)"
     ''' </summary>
-    Public Shared Operator +( 
-        ByVal operand1 As SampleClass, 
+    Public Shared Operator +(
+        ByVal operand1 As SampleClass,
         ByVal operand2 As SampleClass) As SampleClass
 
       Return Nothing
     End Operator
 
-    ''' <summary>Signature is 
+    ''' <summary>Signature is
     ''' "P:SampleNamespace.SampleClass.SampleProperty"
     ''' </summary>
     Public Property SampleProperty() As Integer
@@ -270,25 +270,25 @@ Namespace SampleNamespace
     ''' <summary>Signature is
     ''' "P:SampleNamespace.SampleClass.Item(System.String)"
     ''' </summary>
-    Default Public ReadOnly Property Item( 
+    Default Public ReadOnly Property Item(
         ByVal s As String) As Integer
 
       Get
       End Get
     End Property
 
-    ''' <summary>Signature is 
+    ''' <summary>Signature is
     ''' "T:SampleNamespace.SampleClass.NestedClass"
     ''' </summary>
     Public Class NestedClass
     End Class
 
-    ''' <summary>Signature is 
+    ''' <summary>Signature is
     ''' "E:SampleNamespace.SampleClass.SampleEvent(System.Int32)"
     ''' </summary>
     Public Event SampleEvent As SampleDelegate
 
-    ''' <summary>Signature is 
+    ''' <summary>Signature is
     ''' "T:SampleNamespace.SampleClass.SampleDelegate"
     ''' </summary>
     Public Delegate Sub SampleDelegate(ByVal i As Integer)

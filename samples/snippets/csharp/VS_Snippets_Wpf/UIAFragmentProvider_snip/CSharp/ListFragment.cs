@@ -224,7 +224,7 @@ namespace ElementProvider
         {
             const int WM_GETOBJECT = 0x003D;
 
-            if ((m.Msg == WM_GETOBJECT) && (m.LParam.ToInt32() ==
+            if ((m.Msg == WM_GETOBJECT) && ((int)(long)m.LParam ==
                 AutomationInteropProvider.RootObjectId))
             {
                 m.Result = AutomationInteropProvider.ReturnRawElementProvider(
@@ -500,7 +500,7 @@ namespace ElementProvider
         /// <summary>
         /// Gets the runtime identifier of the UI Automation element.
         /// </summary>
-        /// <returns>Fragement roots return null.</returns>
+        /// <returns>Fragment roots return null.</returns>
         int[] IRawElementProviderFragment.GetRuntimeId()
         {
             return null;

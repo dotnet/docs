@@ -24,7 +24,7 @@ Namespace Microsoft.ServiceModel.Samples
             Dim arAdd As IAsyncResult = channelClient.BeginAdd(value1, value2, AddressOf AddCallback, channelClient)
             Console.WriteLine("Add({0},{1})", value1, value2)
             '</snippet3>
-            ' BeginSubstract
+            ' BeginSubtract
             value1 = 145.00R
             value2 = 76.54R
             Dim arSubtract As IAsyncResult = channelClient.BeginSubtract(value1, value2, AddressOf SubtractCallback, channelClient)

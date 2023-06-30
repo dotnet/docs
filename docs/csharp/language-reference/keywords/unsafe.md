@@ -49,9 +49,8 @@ For more information, see [Unsafe code](~/_csharpstandard/standard/unsafe-code.m
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Keywords](index.md)
-- [fixed Statement](fixed-statement.md)
-- [Unsafe Code and Pointers](../unsafe-code.md)
-- [Fixed Size Buffers](../unsafe-code.md#fixed-size-buffers)
+- [C# reference](../index.md)
+- [C# keywords](index.md)
+- [`fixed` statement](../statements/fixed.md)
+- [Unsafe code, pointer types, and function pointers](../unsafe-code.md)
+- [Pointer related operators](../operators/pointer-related-operators.md)

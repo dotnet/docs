@@ -1,10 +1,13 @@
 ---
 title: Infrastructure as code
 description: Embracing Infrastructure as Code (IaC) with cloud-native applications
-ms.date: 05/13/2020
+ms.date: 04/06/2022
+ms.custom: devx-track-terraform, devx-track-arm-template, devx-track-azurecli
 ---
 
 # Infrastructure as code
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Cloud-native systems embrace microservices, containers, and modern system design to achieve speed and agility. They provide automated build and release stages to ensure consistent and quality code. But, that's only part of the story. How do you provision the cloud environments upon which these systems run?
 
@@ -72,7 +75,7 @@ provider "azurerm" {
   version = "=1.28.0"
 }
 
-resource "azurerm_resource_group" "test" {
+resource "azurerm_resource_group" "testrg" {
   name     = "production"
   location = "West US"
 }

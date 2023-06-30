@@ -1,11 +1,13 @@
 ---
 title: The Dapr observability building block
-description: A description of the observability building block, its features, benefits, and how to apply it
+description: A description of the observability building block, its features and benefits, and how to apply it.
 author: edwinvw
 ms.date: 06/16/2021
 ---
 
 # The Dapr observability building block
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Modern distributed systems are complex. You start with small, loosely coupled, independently deployable services. These services cross process and server boundaries. They then consume different kinds of infrastructure backing services (databases, message brokers, key vaults). Finally, these disparate pieces compose together to form an application.
 
@@ -34,7 +36,7 @@ As Dapr abstracts away the plumbing, the application is unaware of how observabi
 
 Dapr's [sidecar architecture](dapr-at-20000-feet.md#sidecar-architecture) enables built-in observability features. As services communicate, Dapr sidecars intercept the traffic and extract tracing, metrics, and logging information. Telemetry is published in an open standards format. By default, Dapr supports [OpenTelemetry](https://opentelemetry.io/) and [Zipkin](https://zipkin.io/).
 
-Dapr provides [collectors](https://docs.dapr.io/operations/monitoring/tracing/open-telemetry-collector/) that can publish telemetry to different back-end monitoring tools. These tools present Dapr telemetry for analysis and querying. Figure 10-1 shows the Dapr observability architecture:
+Dapr provides [collectors](https://docs.dapr.io/operations/monitoring/tracing/otel-collector/) that can publish telemetry to different back-end monitoring tools. These tools present Dapr telemetry for analysis and querying. Figure 10-1 shows the Dapr observability architecture:
 
 :::image type="content" source="./media/observability/observability-architecture.png" alt-text="Dapr observability architecture":::
 

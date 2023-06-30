@@ -5,14 +5,14 @@ ms.date: 02/27/2020
 ---
 # dotnet vstest
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 > [!IMPORTANT]
 > The `dotnet vstest` command is superseded by `dotnet test`, which can now be used to run assemblies. See [dotnet test](dotnet-test.md).
 
 ## Name
 
-`dotnet-vstest` - Runs tests from the specified assemblies.
+`dotnet vstest` - Runs tests from the specified assemblies.
 
 ## Synopsis
 
@@ -30,7 +30,7 @@ dotnet vstest -?|--Help
 
 ## Description
 
-The `dotnet-vstest` command runs the `VSTest.Console` command-line application to run automated unit tests.
+The `dotnet vstest` command runs the `VSTest.Console` command-line application to run automated unit tests.
 
 ## Arguments
 

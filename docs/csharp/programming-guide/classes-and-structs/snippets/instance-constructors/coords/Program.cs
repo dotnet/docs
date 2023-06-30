@@ -1,6 +1,4 @@
-﻿using System;
-
-class Coords
+﻿class Coords
 {
     public Coords()
         : this(0, 0)

@@ -1,7 +1,7 @@
 ---
 title: Data transformations
 description: Explore the feature engineering components supported in ML.NET.
-ms.date: 06/30/2021
+ms.date: 09/14/2022
 ---
 
 # Data transformations
@@ -61,13 +61,13 @@ Other data transformations don't require training data. For example: the <xref:M
 | <xref:Microsoft.ML.TextCatalog.TokenizeIntoCharactersAsKeys%2A> | Split one or more text columns into individual characters floats over a set of topics | Yes |
 | <xref:Microsoft.ML.TextCatalog.NormalizeText%2A> | Change case, remove diacritical marks, punctuation marks, and numbers | Yes |
 | <xref:Microsoft.ML.TextCatalog.ProduceNgrams%2A> | Transform text column into a bag of counts of ngrams (sequences of consecutive words)| Yes |
-| <xref:Microsoft.ML.TextCatalog.ProduceWordBags%2A> | Transform text column into a bag of counts of ngrams vector | No |
+| <xref:Microsoft.ML.TextCatalog.ProduceWordBags%2A> | Transform text column into a bag of counts of ngrams vector | Yes |
 | <xref:Microsoft.ML.TextCatalog.ProduceHashedNgrams%2A> | Transform text column into a vector of hashed ngram counts | No |
 | <xref:Microsoft.ML.TextCatalog.ProduceHashedWordBags%2A> | Transform text column into a bag of hashed ngram counts | Yes |
 | <xref:Microsoft.ML.TextCatalog.RemoveDefaultStopWords%2A>  | Remove default stop words for the specified language from input columns | Yes |
 | <xref:Microsoft.ML.TextCatalog.RemoveStopWords%2A> | Removes specified stop words from input columns | Yes |
 | <xref:Microsoft.ML.TextCatalog.LatentDirichletAllocation%2A> | Transform a document (represented as a vector of floats) into a vector of floats over a set of topics | Yes |
-| <xref:Microsoft.ML.TextCatalog.ApplyWordEmbedding%2A> | Convert vectors of text tokens into sentence vectors using a pre-trained model | No |
+| <xref:Microsoft.ML.TextCatalog.ApplyWordEmbedding%2A> | Convert vectors of text tokens into sentence vectors using a pre-trained model | Yes |
 
 ## Image transformations
 

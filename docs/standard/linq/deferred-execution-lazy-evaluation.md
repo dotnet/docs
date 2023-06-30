@@ -15,7 +15,7 @@ Deferred execution means that the evaluation of an expression is delayed until i
 
 The LINQ technologies make extensive use of deferred execution in both the members of core <xref:System.Linq?displayProperty=nameWithType> classes and in the extension methods in the various LINQ namespaces, such as <xref:System.Xml.Linq.Extensions?displayProperty=nameWithType>.
 
-Deferred execution is supported directly in the C# language by the [yield (C# Reference)](../../csharp/language-reference/keywords/yield.md) keyword (in the form of the `yield-return` statement) when used within an iterator block. Such an iterator must return a collection of type <xref:System.Collections.IEnumerator> or <xref:System.Collections.Generic.IEnumerator%601> (or a derived type).
+Deferred execution is supported directly in the C# language by the [yield (C# Reference)](../../csharp/language-reference/statements/yield.md) keyword (in the form of the `yield-return` statement) when used within an iterator block. Such an iterator must return a collection of type <xref:System.Collections.IEnumerator> or <xref:System.Collections.Generic.IEnumerator%601> (or a derived type).
 
 ## Eager vs. lazy evaluation
 
@@ -34,4 +34,4 @@ See [Deferred execution example](deferred-execution-example.md) for an example o
 - [Concepts and terminology (functional transformation)](concepts-terminology-functional-transformation.md)
 - [Aggregation Operations (C#)](../../csharp/programming-guide/concepts/linq/aggregation-operations.md)
 - [Aggregation Operations (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/aggregation-operations.md)
-- [yield (C# Reference)](../../csharp/language-reference/keywords/yield.md)
+- [yield (C# Reference)](../../csharp/language-reference/statements/yield.md)

@@ -7,7 +7,7 @@ ms.date: 12/06/2021
 
 # Generate self-signed certificates with the .NET CLI
 
-When using self-signed certificates, there are different ways to create and use them for development and testing scenarios.  In this guide, you'll cover using self-signed certificates with `dotnet dev-certs`, and other options like `PowerShell` and `OpenSSL`.
+There are different ways to create and use self-signed certificates for development and testing scenarios. This article covers using self-signed certificates with `dotnet dev-certs`, and other options like `PowerShell` and `OpenSSL`.
 
 You can then validate that the certificate will load using an example such as an [ASP.NET Core app](https://github.com/dotnet/dotnet-docker/blob/main/samples/run-aspnetcore-https-development.md) hosted in a container.
 
@@ -196,7 +196,7 @@ Once the application starts, navigate to `https://localhost:8001` in your web br
 
 #### Clean up
 
-If the secrets and certificates are not in use, be sure to clean them up.
+If the secrets and certificates aren't in use, be sure to clean them up.
 
 ```console
 dotnet user-secrets remove "Kestrel:Certificates:Development:Password" -p aspnetapp\aspnetapp.csproj
@@ -239,13 +239,13 @@ docker run --rm -it -p 8000:80 -p 8001:443 -e ASPNETCORE_URLS="https://+;http://
 
 Once the application is up, navigate to contoso.com:8001 in a browser.
 
-Be sure that the host entries are updated for `contoso.com` to answer on  the appropriate ip address (for example 127.0.0.1). If the certificate isn't recognized, make sure that the certificate that is loaded with the container is also trusted on the host, and that there's appropriate SAN / DNS entries for `contoso.com`.
+Be sure that the host entries are updated for `contoso.com` to answer on the appropriate IP address (for example 127.0.0.1). If the certificate isn't recognized, make sure that the certificate that is loaded with the container is also trusted on the host, and that there's appropriate SAN / DNS entries for `contoso.com`.
 
 #### Clean up
 
 ```powershell
 $cert | Remove-Item
-Get-ChildItem $certFilePath | Remove-Item
+Get-ChildItem $certKeyPath | Remove-Item
 $rootCert | Remove-item
 ```
 
@@ -305,7 +305,7 @@ Depending on the host os, the certificate will need to be trusted. On a Linux ho
 For the purposes of this guide, here's an example in Windows using PowerShell:
 
 ```powershell
-Import-Certificate -FilePath $certFilePath -CertStoreLocation 'Cert:\LocalMachine\Root'
+Import-Certificate -FilePath $certKeyPath -CertStoreLocation 'Cert:\LocalMachine\Root'
 ```
 
 For .NET Core 3.1, run the following command in WSL:
@@ -337,12 +337,16 @@ docker run --rm -it -p 8000:80 -p 8001:443 -e ASPNETCORE_URLS="https://+;http://
 
 Once the application is up, navigate to contoso.com:8001 in a browser.
 
-Be sure that the host entries are updated for `contoso.com` to answer on  the appropriate ip address (for example 127.0.0.1). If the certificate isn't recognized, make sure that the certificate that is loaded with the container is also trusted on the host, and that there's appropriate SAN / DNS entries for `contoso.com`.
+Be sure that the host entries are updated for `contoso.com` to answer on the appropriate IP address (for example 127.0.0.1). If the certificate isn't recognized, make sure that the certificate that is loaded with the container is also trusted on the host, and that there's appropriate SAN / DNS entries for `contoso.com`.
 
 #### Clean up
 
 Be sure to clean up the self-signed certificates once done testing.
 
 ```powershell
-Get-ChildItem $certFilePath | Remove-Item
+Get-ChildItem $certKeyPath | Remove-Item
 ```
+
+## See also
+
+- [dotnet dev-certs](../tools/dotnet-dev-certs.md)

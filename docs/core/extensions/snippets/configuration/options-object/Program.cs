@@ -1,27 +1,16 @@
 ﻿using ExampleLibrary.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Options.Object;
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
-class Program
+builder.Services.AddMyLibraryService(new LibraryOptions
 {
-    static async Task Main(string[] args)
-    {
-        using IHost host = CreateHostBuilder(args).Build();
+    // Specify option values
+    // SomePropertyValue = ...
+});
 
-        // Application code should start here.
+using IHost host = builder.Build();
 
-        await host.RunAsync();
-    }
+// Application code should start here.
 
-    static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureServices(services =>
-            {
-                services.AddMyLibraryService(new LibraryOptions
-                {
-                        // Specify option values
-                        // SomePropertyValue = ...
-                });
-            });
-}
+await host.RunAsync();

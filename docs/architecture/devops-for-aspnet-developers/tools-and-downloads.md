@@ -10,6 +10,8 @@ uid: azure/devops/tools-and-downloads
 ---
 # Tools and downloads
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Azure has several interfaces for provisioning and managing resources, such as the [Azure portal](https://portal.azure.com), [Azure CLI](/cli/azure/), [Azure PowerShell](/powershell/azure/overview), [Azure Cloud Shell](https://shell.azure.com/bash), and Visual Studio. This guide takes a minimalist approach and uses the Azure Cloud Shell whenever possible to reduce the steps required. However, the Azure portal must be used for some portions.
 
 ## Prerequisites

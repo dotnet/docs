@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: How to: Read from fext files with multiple formats in Visual Basic"
+description: "Learn more about: How to: Read from text files with multiple formats in Visual Basic"
 title: "How to: Read from text files with multiple formats"
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "text files [Visual Basic], reading"
 ms.assetid: 8d185eb2-79ca-42cd-95a7-d3ff44a5a0f8
 ---
-# How to: Read from fext files with multiple formats in Visual Basic
+# How to: Read from text files with multiple formats in Visual Basic
 
 The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser> object provides a way to easily and efficiently parse structured text files, such as logs. You can process a file with multiple formats by using the `PeekChars` method to determine the format of each line as you parse through the file.
   

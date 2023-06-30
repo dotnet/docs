@@ -6,6 +6,8 @@ ms.date: 12/14/2021
 
 # Call credentials
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Call credentials are all based on a token passed in metadata with each request.
 
 ## WS-Federation
@@ -18,11 +20,11 @@ For more information on how to get started with this authentication method, see 
 
 The [JSON Web Token](https://jwt.io) (JWT) standard provides a way to encode information about a user and their claims in an encoded string. It also provides a way to sign that token, so that the consumer can verify the integrity of the token by using public key cryptography. You can use various services, such as IdentityServer4, to authenticate users and generate OpenID Connect (OIDC) tokens to use with gRPC and HTTP APIs.
 
-ASP.NET Core 6.0 can handle JWTs by using the JWT Bearer package. The configuration is exactly the same for a gRPC application as it is for an ASP.NET Core MVC application. Here, we'll focus on JWT Bearer tokens, because they're easier to develop with than WS-Federation.
+ASP.NET Core 7.0 can handle JWTs by using the JWT Bearer package. The configuration is exactly the same for a gRPC application as it is for an ASP.NET Core MVC application. Here, we'll focus on JWT Bearer tokens, because they're easier to develop with than WS-Federation.
 
 ## Add authentication and authorization to the server
 
-The JWT Bearer package isn't included in ASP.NET Core 6.0 by default. Install the [Microsoft.AspNetCore.Authentication.JwtBearer](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer) NuGet package in your app.
+The JWT Bearer package isn't included in ASP.NET Core 7.0 by default. Install the [Microsoft.AspNetCore.Authentication.JwtBearer](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer) NuGet package in your app.
 
 Add the Authentication service in the _Program.cs_ class, and configure the JWT Bearer handler:
 

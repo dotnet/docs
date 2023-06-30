@@ -1,7 +1,7 @@
 ---
 title: dotnet-install scripts
 description: Learn about the dotnet-install scripts to install the .NET SDK and the shared runtime.
-ms.date: 10/26/2021
+ms.date: 11/08/2021
 ---
 # dotnet-install scripts reference
 
@@ -90,7 +90,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-Architecture|--architecture <ARCHITECTURE>`**
 
-  Architecture of the .NET binaries to install. Possible values are `<auto>`, `amd64`, `x64`, `x86`, `arm64`, and `arm`. The default value is `<auto>`, which represents the currently running OS architecture.
+  Architecture of the .NET binaries to install. Possible values are `<auto>`, `amd64`, `x64`, `x86`, `arm64`, `arm`, `s390x`, and `ppc64le`. The default value is `<auto>`, which represents the currently running OS architecture.
 
 - **`-AzureFeed|--azure-feed`**
 
@@ -100,10 +100,10 @@ The install scripts do not update the registry on Windows. They just download th
 
   Specifies the source channel for the installation. The possible values are:
 
-  - `Current` - Most current release.
-  - `LTS` - Long-Term Support channel (most current supported release).
-  - Two-part version in A.B format, representing a specific release (for example, `2.1` or `3.0`).
-  - Three-part version in A.B.Cxx format, representing a specific SDK release (for example, 5.0.1xx or 5.0.2xx). Available since the 5.0 release.
+  - `STS` - the most recent Standard Term Support release
+  - `LTS` - the most recent Long Term Support release
+  - Two-part version in A.B format, representing a specific release (for example, `3.1` or `6.0`).
+  - Three-part version in A.B.Cxx format, representing a specific SDK release (for example, 6.0.1xx or 6.0.2xx). Available since the 5.0 release.
 
   The `version` parameter overrides the `channel` parameter when any version other than `latest` is used.
 
@@ -145,20 +145,30 @@ The install scripts do not update the registry on Windows. They just download th
 
   If set with `ProxyAddress`, provides a list of comma-separated urls that will bypass the proxy. (Only valid for Windows.)
 
-- **`ProxyUseDefaultCredentials`**
+- **`-ProxyUseDefaultCredentials`**
 
   If set, the installer uses the credentials of the current user when using proxy address. (Only valid for Windows.)
 
 - **`-Quality|--quality <QUALITY>`**
 
-  Downloads the latest build of the specified quality in the channel. The possible values are: `daily`, `signed`, `validated`, `preview`, `GA`. Works only in combination with `channel`. Not applicable for current and LTS channels and will be ignored if one of those channels is used.
+  Downloads the latest build of the specified quality in the channel. The possible values are: `daily`, `signed`, `validated`, `preview`, and `GA`. Most users should use `daily`, `preview`, or `GA` qualities.
 
-  For an SDK installation, use `channel` in `A.B` or `A.B.Cxx` format.
+  The different quality values signal different stages of the release process of the SDK or Runtime installed.
+
+  * `daily` - these builds are the latest builds of the SDK or Runtime. They are built every day and are not tested. They are not recommended for production use, but can often be used to test specific features or fixes immediately after they are merged into the product. Note that these builds are from the `dotnet/installer` repo, and so if you're looking for fixes from `dotnet/sdk` you must wait for code to flow and be merged from SDK to Installer before it appears in a daily build.
+  * `signed` - these builds are Microsoft-signed, but not validated or publicly released. Signed builds are candidates for validation, preview, and GA release. This quality level is not really intended for public usage.
+  * `validated` - these builds have had a level of internal testing done on them, and may be candidates for a preview or GA release, but have not yet been released under those labels. This quality level is not really intended for public usage.
+  * `preview` - these builds are the monthly public releases of the next version of .NET, and are intended for public usage. They are not recommended for production use, but are intended to allow users to experiment and test the new major version before release.
+  * `GA` - these builds are the final stable releases of the .NET SDK and Runtime, and are intended for public usage as well as production support.
+  
+  The `--quality` option works only in combination with `--channel`, but is not applicable for the `STS` and `LTS` channels and will be ignored if one of those channels is used.
+
+  For an SDK installation, use a `channel` value that is in `A.B` or `A.B.Cxx` format.
   For a runtime installation, use `channel` in `A.B` format.
 
-  The `version` parameter overrides the `channel` and `quality` parameters when any `version` other than `latest` is used.
+  Don't use both `version` and `quality` parameters. When `quality` is specified, the script determines the proper version on its own.
 
-  Available since since the 5.0 release.
+  Available since the 5.0 release.
 
 - **`-Runtime|--runtime <RUNTIME>`**
 
@@ -168,13 +178,9 @@ The install scripts do not update the registry on Windows. They just download th
   - `aspnetcore` - the `Microsoft.AspNetCore.App` shared runtime.
   - `windowsdesktop` - the `Microsoft.WindowsDesktop.App` shared runtime.
 
-- **`--runtime-id <RID>` [Deprecated]**
+- **`--os <OPERATING_SYSTEM>`**
 
-  Specifies the [runtime identifier](../rid-catalog.md) for which the tools are being installed. Use `linux-x64` for portable Linux. (Only valid for Linux/macOS and for versions earlier than .NET Core 2.1.)
-
-  **`--os <OPERATING_SYSTEM>`**
-
-  Specifies the operating system for which the tools are being installed. Possible values are: `osx`, `linux`, `linux-musl`, `freebsd`, `rhel.6`. (Valid for .NET Core 2.1 and later.)
+  Specifies the operating system for which the tools are being installed. Possible values are: `osx`, `linux`, `linux-musl`, `freebsd`.
 
   The parameter is optional and should only be used when it's required to override the operating system that is detected by the script.
 
@@ -236,25 +242,25 @@ The install scripts do not update the registry on Windows. They just download th
   ./dotnet-install.sh --channel 6.0.1xx --quality preview --install-dir ~/cli
   ```
 
-- Install the 3.0.0 version of the shared runtime:
+- Install the 6.0.0 version of the shared runtime:
 
   Windows:
 
   ```powershell
-  ./dotnet-install.ps1 -Runtime dotnet -Version 3.0.0
+  ./dotnet-install.ps1 -Runtime dotnet -Version 6.0.0
   ```
 
   macOS/Linux:
 
   ```bash
-  ./dotnet-install.sh --runtime dotnet --version 3.0.0
+  ./dotnet-install.sh --runtime dotnet --version 6.0.0
   ```
 
-- Obtain script and install the 2.1.2 version behind a corporate proxy (Windows only):
+- Obtain script and install the 6.0.2 version behind a corporate proxy (Windows only):
 
   ```powershell
   Invoke-WebRequest 'https://dot.net/v1/dotnet-install.ps1' -Proxy $env:HTTP_PROXY -ProxyUseDefaultCredentials -OutFile 'dotnet-install.ps1';
-  ./dotnet-install.ps1 -InstallDir '~/.dotnet' -Version '2.1.2' -ProxyAddress $env:HTTP_PROXY -ProxyUseDefaultCredentials;
+  ./dotnet-install.ps1 -InstallDir '~/.dotnet' -Version '6.0.2' -Runtime 'dotnet' -ProxyAddress $env:HTTP_PROXY -ProxyUseDefaultCredentials;
   ```
 
 - Obtain script and install .NET CLI one-liner examples:
@@ -271,6 +277,30 @@ The install scripts do not update the registry on Windows. They just download th
   ```bash
   curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin <additional install-script args>
   ```
+
+## Set environment variables
+
+Manually installing .NET doesn't add the environment variables system-wide, and generally only works for the session in which .NET was installed. There are two environment variables you should set for your operating system:
+
+- `DOTNET_ROOT`
+
+  This variable is set to the folder .NET was installed to, such as `$HOME/.dotnet` for Linux and macOS, and `$HOME\.dotnet` in PowerShell for Windows.
+
+- `PATH`
+
+  This variable should include both the `DOTNET_ROOT` folder and the user's _.dotnet/tools_ folder. Generally this is `$HOME/.dotnet/tools` on Linux and macOS, and `$HOME\.dotnet\tools` in PowerShell on Windows.
+
+> [!TIP]
+> For Linux and macOS, use the `echo` command to set the variables in your shell profile, such as _.bashrc_:
+>
+> ```bash
+> echo 'export DOTNET_ROOT=$HOME/.dotnet' >> ~/.bashrc
+> echo 'export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools' >> ~/.bashrc
+> ```
+
+## Uninstall
+
+There is no uninstall script. For more information about manually uninstalling .NET, see [How to remove the .NET Runtime and SDK](../install/remove-runtime-sdk-versions.md#scripted-or-manual).
 
 ## See also
 

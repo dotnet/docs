@@ -5,6 +5,8 @@ ms.date: 08/06/2020
 ---
 # Learn Docker
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 [Docker](https://www.docker.com/) is an [open-source project](https://github.com/docker/docker) for automating the deployment of applications as portable, self-sufficient containers that can run on the cloud or on-premises. Docker is also a [company](https://www.docker.com/) that promotes and evolves this technology, working in collaboration with cloud, Linux, and Windows vendors, including Microsoft.
 
 ![Diagram showing the places Docker containers can run.](./media/what-is-docker/docker-containers-run-anywhere.png)
@@ -29,7 +31,7 @@ The images for these containers are created and work just the same way. The diff
 
 Figure 1-3 shows a comparison between VMs and Docker containers.
 
-![Diagram showing a comparison of VM and container environments.](./media/what-is-docker/comparison-vms-docker-conatiners.png)
+![Diagram showing a comparison of VM and container environments.](./media/what-is-docker/comparison-vms-docker-containers.png)
 
 **Figure 1-3**. Comparison of traditional virtual machines to Docker containers
 

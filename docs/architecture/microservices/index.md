@@ -7,7 +7,7 @@ ms.date: 01/10/2022
 
 ![Book cover](./media/cover-large.png)
 
-**EDITION v6.0** - Updated to ASP.NET Core 6.0
+**EDITION v7.0** - Updated to ASP.NET Core 7.0
 
 Refer [changelog](https://aka.ms/MicroservicesEbookChangelog) for the book updates and community contributions.
 
@@ -21,7 +21,7 @@ To make it easier to get started, the guide focuses on a reference containerized
 
 - Clone/Fork the reference application [eShopOnContainers on GitHub](https://github.com/dotnet-architecture/eShopOnContainers)
 
-- Watch the [introductory video on Channel 9](https://aka.ms/microservices-video)
+- Watch the [introductory video](https://aka.ms/microservices-video)
 
 - Get to know the [Microservices Architecture](https://aka.ms/MicroservicesArchitecture) right away
 
@@ -43,7 +43,7 @@ After you have studied this guide, your next step would be to learn about produc
 
 ## Version
 
-This guide has been revised to cover **.NET 6** version along with many additional updates related to the same "wave" of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 6 release. That’s why the book version has also been updated to version **6.0**.
+This guide has been revised to cover **.NET 7** version along with many additional updates related to the same "wave" of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 7 release. That’s why the book version has also been updated to version **7.0**.
 
 ## What this guide does not cover
 
@@ -62,7 +62,7 @@ You will also find this guide useful if you are a technical decision maker, such
 
 ### How to use this guide
 
-The first part of this guide introduces Docker containers, discusses how to choose between .NET 6 and the .NET Framework as a development framework, and provides an overview of microservices. This content is for architects and technical decision makers who want an overview but don't need to focus on code implementation details.
+The first part of this guide introduces Docker containers, discusses how to choose between .NET 7 and the .NET Framework as a development framework, and provides an overview of microservices. This content is for architects and technical decision makers who want an overview but don't need to focus on code implementation details.
 
 The second part of the guide starts with the [Development process for Docker based applications](./docker-application-development-process/index.md) section. It focuses on the development and microservice patterns for implementing applications using .NET and Docker. This section will be of most interest to developers and architects who want to focus on code and on patterns and implementation details.
 
@@ -72,9 +72,7 @@ The eShopOnContainers application is an open-source reference app for .NET and m
 
 The purpose of the application is to showcase architectural patterns. **IT IS NOT A PRODUCTION-READY TEMPLATE** to start real-world applications. In fact, the application is in a permanent beta state, as it's also used to test new potentially interesting technologies as they show up.
 
-## Send us your feedback!
-
-We wrote this guide to help you understand the architecture of containerized applications and microservices in .NET. The guide and related reference application will be evolving, so we welcome your feedback! If you have comments about how this guide can be improved, submit feedback at <https://aka.ms/ebookfeedback>.
+[!INCLUDE [feedback](../includes/feedback.md)]
 
 ## Credits
 
@@ -156,7 +154,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright © 2022 by Microsoft Corporation
+Copyright © 2023 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 

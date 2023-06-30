@@ -5,7 +5,7 @@ metadata:
   description: In this tutorial about numeric types, you'll use your browser to learn C# interactively. You're going to write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
   ms.custom: mvc
-  ms.date: 08/24/2018
+  ms.date: 03/23/2022
   ms.topic: interactive-tutorial
   level: Beginner
   nextTutorialHref: branches-and-loops.yml
@@ -16,6 +16,9 @@ items:
 - durationInMinutes: 1
   content: |
     This tutorial teaches you about the numeric types in C# interactively, using your browser. You'll write C# and see the results of compiling and running your code. It contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
+    
+    > [!TIP]
+    > To paste a code snippet inside the **focus mode** you should use your keyboard shortcut (<kbd>Ctrl</kbd> + <kbd>v</kbd>, or <kbd>cmd</kbd> + <kbd>v</kbd>).
 - title: Explore integer math
   durationInMinutes: 4
   content: |
@@ -173,7 +176,7 @@ items:
     useful to represent non-integral numbers that may be very large or small
     in magnitude. **Double-precision** is a relative term that describes the 
     numbers of binary digits used to store the value. **Double precision**
-    number have twice the number of binary digits as **single-precision**. On modern computers,
+    numbers have twice the number of binary digits as **single-precision**. On modern computers,
     it is more common to use double precision than single precision numbers. **Single precision** numbers are declared using the `float` keyword.
     Let's explore. Try the following code in the interactive window and see the result:
 

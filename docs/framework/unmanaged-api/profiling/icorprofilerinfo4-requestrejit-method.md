@@ -50,8 +50,7 @@ HRESULT RequestReJIT (
 |S_OK|An attempt was made to mark all the methods for JIT recompilation. The profiler must implement the [ICorProfilerCallback4::ReJITError](icorprofilercallback4-rejiterror-method.md) method to determine which methods were successfully marked for JIT recompilation.|  
 |CORPROF_E_CALLBACK4_REQUIRED|The profiler must implement the [ICorProfilerCallback4](icorprofilercallback4-interface.md) interface for this call to be supported.|  
 |CORPROF_E_REJIT_NOT_ENABLED|JIT recompilation has not been enabled. You must enable JIT recompilation during initialization by using the [ICorProfilerInfo::SetEventMask](icorprofilerinfo-seteventmask-method.md) method to set the `COR_PRF_ENABLE_REJIT` flag.|  
-|E_INVALIDARG|`cFunctions` is 0, or `moduleIds` or `methodIds` is `NULL`.|  
-|||  
+|E_INVALIDARG|`cFunctions` is 0, or `moduleIds` or `methodIds` is `NULL`.|
 |E_OUTOFMEMORY|The CLR was unable to complete the request because it ran out of memory.|  
   
 ## Remarks  

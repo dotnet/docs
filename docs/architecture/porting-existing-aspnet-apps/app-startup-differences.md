@@ -7,6 +7,8 @@ ms.date: 12/10/2021
 
 # App startup differences between ASP.NET MVC and ASP.NET Core
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 ASP.NET MVC apps lived entirely within Internet Information Server (IIS), the primary web server available on Windows operating systems. Unlike ASP.NET MVC, ASP.NET Core apps are executable apps. You can run them from the command line, using `dotnet run`. They have an entry point method like all C# programs, typically `public static void Main()` or a similar variation (perhaps with arguments or `async` support). This is perhaps the biggest architectural difference between ASP.NET Core and ASP.NET MVC, and is one of several differences that allows ASP.NET Core to run on non-Windows systems.
 
 ## ASP.NET MVC Startup
@@ -21,7 +23,7 @@ If you need to run code when your ASP.NET MVC app starts up, it will typically u
 
 ## ASP.NET Core Startup
 
-As noted previously, ASP.NET Core apps are standalone programs. As such, they typically include a *Program.cs* file containing the entry point for the app. A typical example of this file is shown in Figure 2-1. Notice that in .NET 6, this file is streamlined by the use of implicit using statements and top-level statements, eliminating the need for a lot of "boiler plate" code.
+As noted previously, ASP.NET Core apps are standalone programs. As such, they typically include a *Program.cs* file containing the entry point for the app. A typical example of this file is shown in Figure 2-1. Notice that in .NET 7, this file is streamlined by the use of implicit using statements and top-level statements, eliminating the need for a lot of "boiler plate" code.
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
@@ -56,7 +58,7 @@ app.Run();
 
 The code shown in Figure 2-1 uses a builder to configure the host and its services. Then, it creates the request pipeline for the app, which controls how every request to the app is handled.
 
-Previous versions of .NET would use a separate *Startup.cs* file, referenced by *Program.cs*. This approach is still supported in .NET 6, but is no longer the default approach.
+Previous versions of .NET would use a separate *Startup.cs* file, referenced by *Program.cs*. This approach is still supported in .NET 7, but is no longer the default approach.
 
 In addition to code related to configuring the app's services and request pipeline, apps may have other code that must run when the app begins. Such code is typically placed in *Program.cs* or registered as an `IHostedService`, which will be started by the [generic host](/aspnet/core/fundamentals/host/generic-host) when the app starts.
 

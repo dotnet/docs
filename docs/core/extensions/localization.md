@@ -1,9 +1,9 @@
 ---
-title: Localization in .NET
+title: Localization
 description: Learn the concepts of localization while learning how to use the IStringLocalizer and IStringLocalizerFactory implementations in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/12/2021
+ms.date: 06/23/2023
 helpviewer_keywords:
   - "culture, localization"
   - "application development [.NET], localization"
@@ -40,7 +40,7 @@ Where:
 
 ### Specifying locales
 
-The locale should define the language, at a bare minimum, but it can also define the culture (dialect), and even the country. These segments are commonly delimited by the `-` character. With the added specificity of a culture, the "culture fallback" rules are applied where best matches are prioritized. The locale should map to a well-known language tag. For more information, see <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType>.
+The locale should define the language, at a bare minimum, but it can also define the culture (dialect), and even the country or region. These segments are commonly delimited by the `-` character. With the added specificity of a culture, the "culture fallback" rules are applied where best matches are prioritized. The locale should map to a well-known language tag. For more information, see <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType>.
 
 ### Culture fallback scenarios
 
@@ -95,23 +95,20 @@ To register localization services, call one of the <xref:Microsoft.Extensions.De
 The <xref:Microsoft.Extensions.DependencyInjection.LocalizationServiceCollectionExtensions.AddLocalization(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Localization.LocalizationOptions})> overload accepts a `setupAction` parameter of type `Action<LocalizationOptions>`. This allows you to configure localization options.
 
 ```csharp
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
-    {
-        services.AddLocalization(options =>
-        {
-            options.ResourcesPath = "Resources";
-        });
-    });
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Services.AddLocalization(options =>
+{
+    options.ResourcesPath = "Resources";
+});
 
 // Omitted for brevity.
 ```
 
 Resource files can live anywhere in a project, but there are common practices in place that have proven to be successful. More often than not, the path of least resistance is followed. The preceding C# code:
 
-- Creates the default host builder.
-- Calls <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureServices%2A?displayProperty=nameWithType> with the `IServiceCollection` overload.
-- Calls `AddLocalization` to the service collection, specifying <xref:Microsoft.Extensions.Localization.LocalizationOptions.ResourcesPath?displayProperty=nameWithType> as `"Resources"`.
+- Creates the default host app builder.
+- Calls `AddLocalization` on the service collection, specifying <xref:Microsoft.Extensions.Localization.LocalizationOptions.ResourcesPath?displayProperty=nameWithType> as `"Resources"`.
 
 This would cause the localization services to look in the *Resources* directory for resource files.
 

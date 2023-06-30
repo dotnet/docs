@@ -1,11 +1,11 @@
 ---
 title: dotnet build command
 description: The dotnet build command builds a project and all of its dependencies.
-ms.date: 08/12/2021
+ms.date: 05/16/2023
 ---
 # dotnet build
 
-**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -19,8 +19,9 @@ dotnet build [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
     [--force] [--interactive] [--no-dependencies] [--no-incremental]
     [--no-restore] [--nologo] [--no-self-contained] [--os <OS>]
     [-o|--output <OUTPUT_DIRECTORY>] [-r|--runtime <RUNTIME_IDENTIFIER>]
-    [--self-contained [true|false]] [--source <SOURCE>]
-    [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
+    [--self-contained [true|false]] [--source <SOURCE>] [--tl [auto|on|off]]
+    [--use-current-runtime, --ucr [true|false]] [-v|--verbosity <LEVEL>]
+    [--version-suffix <VERSION_SUFFIX>]
 
 dotnet build -h|--help
 ```
@@ -78,15 +79,13 @@ The project or solution file to build. If a project or solution file isn't speci
 
 ## Options
 
-<!-- markdownlint-disable MD012 -->
-
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
 
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Compiles for a specific [framework](../../standard/frameworks.md). The framework must be defined in the [project file](../project-sdk/overview.md).
+  Compiles for a specific [framework](../../standard/frameworks.md). The framework must be defined in the [project file](../project-sdk/overview.md). Examples: `net7.0`, `net462`.
 
 - **`--force`**
 
@@ -110,7 +109,7 @@ The project or solution file to build. If a project or solution file isn't speci
 
 - **`--nologo`**
 
-  Doesn't display the startup banner or the copyright message. Available since .NET Core 3.0 SDK.
+  Doesn't display the startup banner or the copyright message.
 
 - **`--no-self-contained`**
 
@@ -120,21 +119,45 @@ The project or solution file to build. If a project or solution file isn't speci
 
   Directory in which to place the built binaries. If not specified, the default path is `./bin/<configuration>/<framework>/`.  For projects with multiple target frameworks (via the `TargetFrameworks` property), you also need to define `--framework` when you specify this option.
 
+  - .NET 7.0.200 SDK and later
+
+    If you specify the `--output` option when running this command on a solution, the CLI will emit a warning (an error in 7.0.200) due to the unclear semantics of the output path. The `--output` option is disallowed because all outputs of all built projects would be copied into the specified directory, which isn't compatible with multi-targeted projects, as well as projects that have different versions of direct and transitive dependencies. For more information, see [Solution-level `--output` option no longer valid for build-related commands](../compatibility/sdk/7.0/solution-level-output-no-longer-valid.md).
+
 [!INCLUDE [os](../../../includes/cli-os.md)]
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  Specifies the target runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). If you use this option with .NET 6 SDK, use `--self-contained` or `--no-self-contained` also.
+  Specifies the target runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). If you use this option with .NET 6 SDK, use `--self-contained` or `--no-self-contained` also. If not specified, the default is to build for the current OS and architecture.
 
 - **`--self-contained [true|false]`**
 
-  Publishes the .NET runtime with the application so the runtime doesn't need to be installed on the target machine. The default is `true` if a runtime identifier is specified.  Available since .NET 6 SDK.
+  Publishes the .NET runtime with the application so the runtime doesn't need to be installed on the target machine. The default is `true` if a runtime identifier is specified. Available since .NET 6.
 
 - **`--source <SOURCE>`**
 
   The URI of the NuGet package source to use during the restore operation.
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+- **`--tl [auto|on|off]`**
+
+  Specifies whether the *terminal logger* should be used for the build output. The default is `auto`, which first verifies the environment before enabling terminal logging. The environment check verifies that the terminal is capable of using modern output features and isn't using a redirected standard output before enabling the new logger. `on` skips the environment check and enables terminal logging. `off` skips the environment check and uses the default console logger.
+
+  The terminal logger shows you the restore phase followed by the build phase. During each phase, the currently building projects appear at the bottom of the terminal. Each project that's building outputs both the MSBuild target currently being built and the amount of time spent on that target. You can search this information to learn more about the build. When a project is finished building, a single "build completed" section is written for that captures:
+
+  - The name of the built project
+  - The target framework (if multi-targeted)
+  - The status of that build
+  - The primary output of that build (which is hyperlinked)
+  - Any diagnostics generated for that project
+
+  This option is available starting in .NET 8.
+
+- **`-v|--verbosity <LEVEL>`**
+
+  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`. By default, MSBuild displays warnings and errors at all verbosity levels. To exclude warnings, use `/property:WarningLevel=0`. For more information, see <xref:Microsoft.Build.Framework.LoggerVerbosity> and [WarningLevel](../../csharp/language-reference/compiler-options/errors-warnings.md#warninglevel).
+
+- **`--use-current-runtime, --ucr [true|false]`**
+
+  Sets the `RuntimeIdentifier` to a platform portable `RuntimeIdentifier` based on the one of your machine. This happens implicitly with properties that require a `RuntimeIdentifier`, such as `SelfContained`, `PublishAot`, `PublishSelfContained`, `PublishSingleFile`, and `PublishReadyToRun`. If the property is set to false, that implicit resolution will no longer occur.
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 

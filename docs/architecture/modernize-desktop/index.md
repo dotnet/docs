@@ -1,15 +1,15 @@
 ---
-title: Modernizing Desktop Apps on Windows with .NET 6
-description: Learn how to modernize existing desktop apps with .NET 6
+title: Modernizing Desktop Apps on Windows with .NET 7
+description: Learn how to modernize existing desktop apps with .NET 7
 ms.date: 01/10/2022
 ---
-# Modernizing Desktop Apps on Windows with .NET 6
+# Modernizing Desktop Apps on Windows with .NET 7
 
 ![Screenshot that shows the modernize desktop apps e-book cover.](./media/modernizing-existing-desktop-apps-ebook-cover.png)
 
-**EDITION v1.0.2** - Updated to .NET 6
+**EDITION v1.0.3** - Updated to .NET 7
 
-Refer [changelog](https://aka.ms/desktop-ebook-changelog) for the book updates and community contributions.
+Refer to the [changelog](https://aka.ms/desktop-ebook-changelog) for the book updates and community contributions.
 
 PUBLISHED BY
 
@@ -95,9 +95,7 @@ To highlight the necessary steps to perform a modernization, we'll be using a sa
 
 Also, on the GitHub repository for this book, you'll find the results of the process, which you can consult with if you decide to follow the step-by-step tutorial.
 
-## Send your feedback
-
-This book and related samples are constantly evolving, so your feedback is welcomed! If you have comments about how this book can be improved, use the feedback section at the bottom of any page built on [GitHub issues](https://github.com/dotnet/docs/issues).
+[!INCLUDE [feedback](../includes/feedback.md)]
 
 >[!div class="step-by-step"]
 >[Next](why-modern-applications.md)

@@ -1,10 +1,12 @@
 ---
 title: Mapping eShopOnContainers to Azure Services
 description: Mapping eShopOnContainers to Azure Services like Azure Kubernetes Service, API Gateway, and Azure Service Bus.
-ms.date: 12/22/2021
+ms.date: 04/06/2022
 ---
 
 # Mapping eShopOnContainers to Azure Services
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Although not required, Azure is well-suited to supporting the eShopOnContainers because the project was built to be a cloud-native application. The application is built with .NET, so it can run on Linux or Windows containers depending on the Docker host. The application is made up of multiple autonomous microservices, each with its own data. The different microservices showcase different approaches, ranging from simple CRUD operations to more complex DDD and CQRS patterns. Microservices communicate with clients over HTTP and with one another via message-based communication. The application supports multiple platforms for clients as well, since it adopts HTTP as a standard communication protocol and includes ASP.NET Core and Xamarin mobile apps that run on Android, iOS, and Windows platforms.
 

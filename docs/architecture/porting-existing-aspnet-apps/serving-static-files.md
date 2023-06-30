@@ -7,6 +7,8 @@ ms.date: 12/10/2021
 
 # Serve static files in ASP.NET MVC and ASP.NET Core
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Most web apps involve a combination of server-side logic and static files that must be sent to the client as-is. How should your migration from ASP.NET MVC to ASP.NET Core handle serving static files?
 
 ## Host static files in ASP.NET MVC

@@ -200,7 +200,7 @@ As you can see, this is a very simple test that just allocates large objects fro
 If all you have is a memory dump and you need to look at what objects are actually on the LOH, you can use the [SoS debugger extension](../../framework/tools/sos-dll-sos-debugging-extension.md) provided by .NET.
 
 > [!NOTE]
-> The debugging commands mentioned in this section are applicable to the [Windows Debuggers](https://www.microsoft.com/whdc/devtools/debugging/default.mspx).
+> The debugging commands mentioned in this section are applicable to the [Windows debuggers](/windows-hardware/drivers/debugger/).
 
 The following shows sample output from analyzing the LOH:
 

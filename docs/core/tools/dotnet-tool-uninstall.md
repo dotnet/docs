@@ -5,7 +5,7 @@ ms.date: 02/14/2020
 ---
 # dotnet tool uninstall
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
@@ -31,8 +31,6 @@ The `dotnet tool uninstall` command provides a way for you to uninstall .NET too
 * To uninstall a global tool that was installed in a custom location,  use the `--tool-path` option.
 * To uninstall a local tool, omit the `--global` and `--tool-path` options.
 
-**Local tools are available starting with .NET Core SDK 3.0.**
-
 ## Arguments
 
 - **`PACKAGE_NAME`**
@@ -40,8 +38,6 @@ The `dotnet tool uninstall` command provides a way for you to uninstall .NET too
   Name/ID of the NuGet package that contains the .NET tool to uninstall. You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.
 
 ## Options
-
-<!-- markdownlint-disable MD012 -->
 
 - **`-g|--global`**
 

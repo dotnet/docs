@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.topic: how-to
 ms.custom: contperf-fy21q3
 ms.assetid: 467b9979-86ee-4afd-b734-30299cda91e3
+adobe-target: true
 ---
 # How to convert a string to a number (C# Programming Guide)
 

@@ -5,12 +5,9 @@ ms.date: 02/02/2021
 ---
 # Set up your local environment
 
-The first step in running a tutorial on your machine is to set up a development environment. Choose one of the following alternatives:
+The first step in running a tutorial on your machine is to set up a development environment.
 
-* To use the .NET CLI and your choice of text or code editor, see the .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro). The tutorial has instructions for setting up a development environment on Windows, Linux, or macOS.
-* To use the .NET CLI and Visual Studio Code, install the [.NET SDK](https://dotnet.microsoft.com/download) and
-[Visual Studio Code](https://code.visualstudio.com/).
-* To use Visual Studio 2019, see [Tutorial: Create a simple C# console app in Visual Studio](/visualstudio/get-started/csharp/tutorial-console).
+[!INCLUDE [Prerequisites](../../includes/prerequisites.md)]
 
 ## Basic application development flow
 

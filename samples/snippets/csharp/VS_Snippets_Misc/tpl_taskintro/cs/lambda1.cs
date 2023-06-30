@@ -3,7 +3,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-public class Example
+public class Lambda
 {
    public static void Main()
    {

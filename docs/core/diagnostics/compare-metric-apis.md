@@ -26,6 +26,23 @@ mechanism.
 
 Over .NET's 20+ year history, we've iterated a few times on the design for metric APIs, all of which are supported and vendor-neutral:
 
+### System.Diagnostics.Metrics
+
+[System.Diagnostics.Metrics](metrics-instrumentation.md) APIs are the newest cross-platform APIs, and were designed in close collaboration with the
+[OpenTelemetry](https://opentelemetry.io/) project. The OpenTelemetry effort is an industry-wide collaboration across telemetry tooling vendors,
+programming languages, and application developers to create a broadly compatible standard for telemetry APIs. To eliminate any friction associated with adding third-party dependencies, .NET embeds the metrics API directly into the base class libraries.
+It's available by targeting .NET 6, or in older .NET Core and .NET Framework apps by adding a reference to the .NET
+[System.Diagnostics.DiagnosticsSource](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource) 6.0 NuGet package. In addition to
+aiming at broad compatibility, this API adds support for many things that were lacking from EventCounters, such as:
+
+- Histograms and percentiles
+- Multi-dimensional metrics
+- Strongly typed high-performance listener API
+- Multiple simultaneous listeners
+- Listener access to unaggregated measurements
+
+Although this API was designed to work well with OpenTelemetry and its growing ecosystem of pluggable vendor integration libraries, applications also have the option to use the .NET built-in listener APIs directly. With this option, you can create custom metric tooling without taking any external library dependencies. At the time of writing, the [System.Diagnostics.Metrics](xref:System.Diagnostics.Metrics) support is limited to [dotnet-counters](dotnet-counters.md) and [OpenTelemetry.NET](https://opentelemetry.io/docs/net/). However, we expect support for these APIs will grow  given the active nature of the OpenTelemetry project.
+
 ### PerformanceCounter
 
 <xref:System.Diagnostics.PerformanceCounter?displayProperty=nameWithType> APIs are the oldest metric APIs. They're only supported on Windows and provide
@@ -55,23 +72,6 @@ At the time of writing, this is the cross-platform .NET runtime API that has the
 overtaken soon by growing support for [System.Diagnostics.Metrics](metrics-instrumentation.md). The .NET team doesn't expect to
 make substantial new investments on this API going forward, but as with `PerformanceCounters`, the API remains actively supported for all
 current and future users.
-
-### System.Diagnostics.Metrics
-
-[System.Diagnostics.Metrics](metrics-instrumentation.md) APIs are the newest cross-platform APIs, and were designed in close collaboration with the
-[OpenTelemetry](https://opentelemetry.io/) project. The OpenTelemetry effort is an industry-wide collaboration across telemetry tooling vendors,
-programming languages, and application developers to create a broadly compatible standard for telemetry APIs. To eliminate any friction associated with adding third-party dependencies, .NET embeds the metrics API directly into the base class libraries.
-It's available by targeting .NET 6, or in older .NET Core and .NET Framework apps by adding a reference to the .NET
-[System.Diagnostics.DiagnosticsSource](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource) 6.0 NuGet package. In addition to
-aiming at broad compatibility, this API adds support for many things that were lacking from EventCounters, such as:
-
-- Histograms and percentiles
-- Multi-dimensional metrics
-- Strongly typed high-performance listener API
-- Multiple simultaneous listeners
-- Listener access to unaggregated measurements
-
-Although this API was designed to work well with OpenTelemetry and its growing ecosystem of pluggable vendor integration libraries, applications also have the option to use the .NET built-in listener APIs directly. With this option, you can create custom metric tooling without taking any external library dependencies. At the time of writing, the System.Diagnostics.Metrics APIs are brand new and support is limited to [dotnet-counters](dotnet-counters.md) and preview versions of [OpenTelemetry.NET](https://opentelemetry.io/docs/net/). However, we expect support for these APIs will grow quickly given the active nature of the OpenTelemetry project.
 
 ## Third-party APIs
 

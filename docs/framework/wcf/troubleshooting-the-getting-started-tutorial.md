@@ -52,7 +52,7 @@ The entry point is incorrect for the Visual Basic application. Make the followin
 
 **'CalculatorClient', does not contain a definition for '\<method name>' and no extension method '\<method name>' accepting a first argument of type 'CalculatorClient' could be found (are you missing a using directive or an assembly reference?)**  
 
-Only those methods that you mark with the `ServiceOperationAttribute` attribute are publically exposed. If you omit the `ServiceOperationAttribute` attribute from a method in the `ICalculator` interface, you receive this error message during compilation.  
+Only those methods that you mark with the `ServiceOperationAttribute` attribute are publicly exposed. If you omit the `ServiceOperationAttribute` attribute from a method in the `ICalculator` interface, you receive this error message during compilation.  
 
 **The type or namespace name 'CalculatorClient' could not be found (are you missing a using directive or an assembly reference?)**
 
@@ -90,7 +90,7 @@ To turn off security:
     ```xml
     <binding name="WSHttpBinding_ICalculator">
       <security mode="None" />
-    </binding
+    </binding>
     ```  
 
 ## See also  

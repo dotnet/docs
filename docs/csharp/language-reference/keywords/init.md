@@ -10,17 +10,34 @@ helpviewer_keywords:
 ---
 # init (C# Reference)
 
-In C# 9 and later, the `init` keyword defines an *accessor* method in a property or indexer. An init-only setter assigns a value to the property or the indexer element only during object construction. For more information and examples, see [Properties](../../programming-guide/classes-and-structs/properties.md), [Auto-Implemented Properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md), and [Indexers](../../programming-guide/indexers/index.md).
+In C# 9 and later, the `init` keyword defines an *accessor* method in a property or indexer. An init-only setter assigns a value to the property or the indexer element **only** during object construction. This enforces immutability, so  that once the object is initialized, it can't be changed again.
 
-The following example defines both a `get` and an `init` accessor for a property named `Seconds`. It uses a private field named `_seconds` to back the property value.
+For more information and examples, see [Properties](../../programming-guide/classes-and-structs/properties.md), [Auto-Implemented Properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md), and [Indexers](../../programming-guide/indexers/index.md).
+
+The following example defines both a `get` and an `init` accessor for a property named `YearOfBirth`. It uses a private field named `_yearOfBirth` to back the property value.
 
 [!code-csharp[init#1](snippets/InitExample1.cs)]
 
-Often, the `init` accessor consists of a single statement that assigns a value, as it did in the previous example. You can implement the `init` accessor as an expression-bodied member. The following example implements both the `get` and the `init` accessors as expression-bodied members.
+Often, the `init` accessor consists of a single statement that assigns a value, as it did in the previous example. Note that, because of `init`, the following will **not** work:
+
+```csharp
+var john = new Person_InitExample
+{
+    YearOfBirth = 1984
+};
+
+john.YearOfBirth = 1926; //Not allowed, as its value can only be set once in the constructor
+```
+
+An `init` accessor doesn't force callers to set the property. Instead, it allows an object initializer to set the initial value while prohibiting later modification. You can add the `required` modifier to force callers to set a property. The following example shows the same behavior:
+
+:::code language="csharp" source="./snippets/InitNullablityExample.cs" id="Snippet4":::
+
+The `init` accessor can be used as an expression-bodied member. Example:
 
 [!code-csharp[init#3](snippets/InitExample3.cs)]
   
-For simple cases in which a property's `get` and `init` accessors perform no other operation than setting or retrieving a value in a private backing field, you can take advantage of the C# compiler's support for auto-implemented properties. The following example implements `Hours` as an auto-implemented property.
+The `init` accessor can also be used in auto-implemented properties as the following example code demonstrates:
 
 [!code-csharp[init#2](snippets/InitExample2.cs)]
   

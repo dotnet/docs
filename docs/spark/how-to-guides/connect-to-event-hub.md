@@ -3,7 +3,7 @@ title: Connect .NET for Apache Spark to Azure Event Hubs
 description: Learn how to connect to Azure Event Hub from local .NET for Apache Spark instance.
 ms.author: nidutta
 author: Niharikadutta
-ms.date: 10/09/2020
+ms.date: 12/16/2022
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
@@ -11,6 +11,8 @@ ms.custom: mvc,how-to
 # Connect .NET for Apache Spark to Azure Event Hubs
 
 In this article, you will learn how to connect your [.NET for Apache Spark](https://github.com/dotnet/spark) application with Azure Event Hubs to read and write Apache Kafka streams.
+
+[!INCLUDE [.NET Core 3.1 Warning](../includes/net-core-31-spark.md)]
 
 ## Prerequisites
 
@@ -27,7 +29,7 @@ Have an Event Hubs Namespace ready with an event hub. For a step-by-step guide, 
     1. Update **BOOTSTRAP_SERVERS** and **EH_SASL** in your application like so:
 
     ```csharp
-    string BOOTSTRAP_SERVERS = "hostname:9093"; // 9093 is the port used to communicate with Event Hubs, see [troubleshooting guide](https://docs.microsoft.com/azure/event-hubs/troubleshooting-guide)
+    string BOOTSTRAP_SERVERS = "hostname:9093"; // 9093 is the port used to communicate with Event Hubs, see [troubleshooting guide](https://learn.microsoft.com/azure/event-hubs/troubleshooting-guide)
     string EH_SASL = "org.apache.kafka.common.security.plain.PlainLoginModule required username=\"$ConnectionString\" password=\"<CONNECTION_STRING>\";"; // Connection string obtained from Step 1
     ```
 

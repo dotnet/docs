@@ -58,6 +58,10 @@
             "redirect_url": "/dotnet/core/compatibility/6.0"
         },
         {
+            "source_path_from_root": "/docs/core/compatibility/aspnet-core/7.0/iendpointmetadataprovider-changes.md",
+            "redirect_url": "/dotnet/core/compatibility/7.0"
+        },
+        {
             "source_path_from_root": "/docs/core/compatibility/code-analysis.md",
             "redirect_url": "/dotnet/core/compatibility/code-analysis/5.0/ca1416-platform-compatibility-analyzer"
         },
@@ -67,12 +71,36 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/core/compatibility/core-libraries/7.0/filesystemeventargs-fullpath.md",
+            "redirect_url": "/dotnet/core/compatibility/7.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/core-libraries/5.0/binaryformatter-serialization-obsolete.md",
+            "redirect_url": "/dotnet/core/compatibility/serialization/5.0/binaryformatter-serialization-obsolete",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/core-libraries/7.0/binaryformatter-apis-produce-errors.md",
+            "redirect_url": "/dotnet/core/compatibility/serialization/7.0/binaryformatter-apis-produce-errors",
+            "redirect_document_id": true    
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/core-libraries/7.0/serializationformat-binary.md",
+            "redirect_url": "/dotnet/core/compatibility/serialization/7.0/serializationformat-binary",
+            "redirect_document_id": true    
+        },
+        {
             "source_path_from_root": "/docs/core/compatibility/extensions/6.0/bind-single-elements-to-array.md",
             "redirect_url": "/dotnet/core/compatibility/6.0"
         },
         {
             "source_path_from_root": "/docs/core/compatibility/framework-core.md",
             "redirect_url": "/dotnet/core/compatibility/fx-core"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/index.md",
+            "redirect_url": "/dotnet/core/compatibility/library-change-rules",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/compatibility/interop.md",
@@ -102,6 +130,10 @@
             "source_path_from_root": "/docs/core/compatibility/msbuild/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md",
             "redirect_url": "/dotnet/core/compatibility/sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed",
             "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/networking/7.0/connectasync-argumentexception.md",
+            "redirect_url": "/dotnet/core/compatibility/7.0"
         },
         {
             "source_path_from_root": "/docs/core/compatibility/sdk/6.0/implicit-namespaces.md",
@@ -293,6 +325,11 @@
         {
             "source_path_from_root": "/docs/core/deploying/fixing-warnings.md",
             "redirect_url": "/dotnet/core/deploying/trimming/fixing-warnings",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/deploying/native-aot.md",
+            "redirect_url": "/dotnet/core/deploying/native-aot/index",
             "redirect_document_id": true
         },
         {
@@ -777,6 +814,18 @@
             "redirect_url": "/dotnet/core/porting/#tools-to-assist-porting"
         },
         {
+            "source_path_from_root": "/docs/core/porting/upgrade-assistant-aspnetmvc.md",
+            "redirect_url": "/aspnet/core/migration/mvc"
+        },
+        {
+            "source_path_from_root": "/docs/core/porting/upgrade-assistant-winforms-framework.md",
+            "redirect_url": "/dotnet/desktop/winforms/migration/?view=netdesktop-7.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/porting/upgrade-assistant-wpf-framework.md",
+            "redirect_url": "/dotnet/desktop/wpf/migration/?view=netdesktop-7.0"
+        },
+        {
             "source_path_from_root": "/docs/core/porting/winforms-breaking-changes.md",
             "redirect_url": "/dotnet/core/compatibility/fx-core"
         },
@@ -921,7 +970,7 @@
         },
         {
             "source_path_from_root": "/docs/core/preview3/tools/using-ci-with-cli.md",
-            "redirect_url": "/dotnet/core/tools/using-ci-with-cli"
+            "redirect_url": "/dotnet/devops/dotnet-cli-and-continuous-integration"
         },
         {
             "source_path_from_root": "/docs/core/preview3/tutorials/index.md",
@@ -1096,7 +1145,7 @@
         },
         {
             "source_path_from_root": "/docs/core/whats-new/index.md",
-            "redirect_url": "/dotnet/core/whats-new/dotnet-core-3-1",
+            "redirect_url": "/dotnet/core/whats-new/dotnet-7",
             "ms.custom": "updateeachrelease"
         },
         {
@@ -1106,6 +1155,22 @@
         {
             "source_path_from_root": "/docs/core/windows-prerequisites.md",
             "redirect_url": "/dotnet/core/install/windows#dependencies"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/using-ci-with-cli.md",
+            "redirect_url": "/dotnet/devops/dotnet-cli-and-continuous-integration"
+        },
+        {
+            "source_path_from_root": "/docs/core/extensions/http-client.md",
+            "redirect_url": "/dotnet/core/extensions/http-client-factory"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/networking/tcp/tcp-services.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/tcp-classes"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/networking/tcp/tcp-overview.md",
+            "redirect_url": "/dotnet/fundamentals/networking/sockets/tcp-classes"
         }
     ]
 }

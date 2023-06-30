@@ -1,10 +1,12 @@
 ---
 title: Other container deployment options
 description: Other Container Deployment Options using Azure
-ms.date: 11/28/2021
+ms.date: 04/06/2022
 ---
 
 # Other container deployment options
+
+[!INCLUDE [download-alert](includes/download-alert.md)]
 
 Aside from Azure Kubernetes Service (AKS), you can also deploy containers to Azure App Service for Containers and Azure Container Instances.
 

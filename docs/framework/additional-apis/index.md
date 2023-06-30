@@ -1,7 +1,7 @@
 ---
 title: Additional class libraries and APIs
 description: Explore additional class libraries and APIs in .NET, including out-of-band (OOB) projects, platform-specific libraries, and private APIs.
-ms.date: 08/11/2020
+ms.date: 06/09/2023
 helpviewer_keywords:
   - "Additional class libraries"
   - "Additional managed libraries"
@@ -32,6 +32,7 @@ Some libraries target specific platforms. For example, the <xref:System.Text.Cod
 | Project | Description |
 | ------- | ----------- |
 | <xref:System.Text.CodePagesEncodingProvider> | Extends the <xref:System.Text.EncodingProvider> class to make code page encodings available to apps that target the Universal Windows Platform. |
+| [Point of Service for .NET](pos-for-net/index.md) | Provides a set of classes that enable you to develop applications that interact with POS devices. |
 
 ## Private APIs
 
@@ -39,7 +40,11 @@ These APIs support the product infrastructure and are not intended or supported 
 
 * [Microsoft.SqlServer.Server.SmiOrderProperty.Item property](microsoft.sqlserver.server.smiorderproperty.item.md)
 * [System.Exception.PrepForRemoting method](system.exception.prepforremoting.md)
+* [System.Data.SqlTypes.SqlBinary Constructor](system.data.sqltypes.sqlbinary.-ctor.md)
 * [System.Data.SqlTypes.SqlChars.Stream property](system.data.sqltypes.sqlchars.stream.md)
+* [System.Data.SqlTypes.SqlGuid Constructor](system.data.sqltypes.sqlguid.-ctor.md)
+* [System.Data.SqlTypes.SqlMoney Constructor](system.data.sqltypes.sqlmoney.-ctor.md)
+* [System.Data.SqlTypes.SqlMoney.ToSqlInternalRepresentation Method](system.data.sqltypes.sqlmoney.tosqlinternalrepresentation.md)
 * [System.Data.SqlTypes.SqlStreamChars Constructor](system.data.sqltypes.sqlstreamchars.-ctor.md)
 * [System.Data.SqlTypes.SqlStreamChars.CanSeek property](system.data.sqltypes.sqlstreamchars.canseek.md)
 * [System.Data.SqlTypes.SqlStreamChars.IsNull property](system.data.sqltypes.sqlstreamchars.isnull.md)
@@ -91,6 +96,7 @@ These APIs support the product infrastructure and are not intended or supported 
 * [System.Windows.Forms.ControlPaint.CalculateBackgroundImageRectangle method](system-windows-forms/calculatebackgroundimagerectangle-method.md)
 * [System.Windows.Forms.Design.DataMemberFieldEditor class](datamemberfieldeditor-class.md)
 * [System.Windows.Forms.Design.DataMemberListEditor class](datamemberlisteditor-class.md)
+* [System.Windows.Forms.Design.StringCollectionEditor class](system-windows-forms/stringcollectioneditor-class.md)
 * [System.Xml.XmlReader.CreateSqlReader method](system.xml.xmlreader.createsqlreader.md)
 * [adodb.Connection interface](adodb.connection.md)
 * [adodb.EventReason enum](adodb.eventreasonenum.md)

@@ -1,15 +1,13 @@
 ---
 title: Pagination with the Azure SDK for .NET
 description: Learn how to use pagination with the Azure SDK for .NET.
-ms.date: 07/15/2021
+ms.date: 06/23/2023
 ms.custom: devx-track-dotnet
-ms.author: dapine
-author: IEvangelist
 ---
 
 # Pagination with the Azure SDK for .NET
 
-In this article, you'll learn how to use the Azure SDK for .NET pagination functionality to work efficiently and productively with large data sets. Pagination is the act of dividing large data sets into pages, making it easier for the consumer to iterate through smaller amounts of data. Starting with C# 8, you can create and consume streams asynchronously using [Asynchronous (async) streams](../../csharp/whats-new/csharp-8.md#asynchronous-streams). Async streams are based on the <xref:System.Collections.Generic.IAsyncEnumerable%601> interface. The Azure SDK for .NET exposes an implementation of `IAsyncEnumerable<T>` with its `AsyncPageable<T>` class.
+In this article, you'll learn how to use the Azure SDK for .NET pagination functionality to work efficiently and productively with large data sets. Pagination is the act of dividing large data sets into pages, making it easier for the consumer to iterate through smaller amounts of data. Starting with C# 8, you can create and consume streams asynchronously using [Asynchronous (async) streams](../../csharp/language-reference/statements/iteration-statements.md#await-foreach). Async streams are based on the <xref:System.Collections.Generic.IAsyncEnumerable%601> interface. The Azure SDK for .NET exposes an implementation of `IAsyncEnumerable<T>` with its `AsyncPageable<T>` class.
 
 All of the samples in this article rely on the following NuGet packages:
 
@@ -29,9 +27,9 @@ For the latest directory of Azure SDK for .NET packages, see [Azure SDK latest r
 
 Clients instantiated from the Azure SDK for .NET can return the following pageable types.
 
-| Type                                               | Description                                              |
-|----------------------------------------------------|----------------------------------------------------------|
-| [`Pageable<T>`](xref:Azure.Pageable%601)           | A collection of values retrieved in pages                |
+| Type | Description |
+|--|--|
+| [`Pageable<T>`](xref:Azure.Pageable%601) | A collection of values retrieved in pages |
 | [`AsyncPageable<T>`](xref:Azure.AsyncPageable%601) | A collection of values asynchronously retrieved in pages |
 
 Most of the samples in this article are asynchronous, using variations of the `AsyncPageable<T>` type. Using asynchronous programming for I/O-bound operations is ideal. A perfect use case is using the async APIs from the Azure SDK for .NET as these operations represent HTTP/S network calls.
@@ -40,7 +38,7 @@ Most of the samples in this article are asynchronous, using variations of the `A
 
 To iterate over an `AsyncPageable<T>` using the [`await foreach`](/dotnet/csharp/language-reference/proposals/csharp-8.0/async-streams#foreach) syntax, consider the following example:
 
-:::code source="snippets/pagination/Program.cs" range="45-53":::
+:::code source="snippets/pagination/Program.cs" range="38-46":::
 
 In the preceding C# code:
 
@@ -52,7 +50,7 @@ In the preceding C# code:
 
 To iterate over an `AsyncPageable<T>` when the `await foreach` syntax isn't available, use a `while` loop.
 
-:::code source="snippets/pagination/Program.cs" range="55-72":::
+:::code source="snippets/pagination/Program.cs" range="48-65":::
 
 In the preceding C# code:
 
@@ -64,7 +62,7 @@ In the preceding C# code:
 
 If you want control over receiving pages of values from the service, use the [`AsyncPageable<T>.AsPages`](xref:Azure.AsyncPageable%601.AsPages%2A) method:
 
-:::code source="snippets/pagination/Program.cs" range="74-88":::
+:::code source="snippets/pagination/Program.cs" range="67-81":::
 
 In the preceding C# code:
 
@@ -82,7 +80,7 @@ The [`System.Linq.Async`](https://www.nuget.org/packages/System.Linq.Async) pack
 
 Use `ToListAsync` to convert an `AsyncPageable<T>` to a `List<T>`. This method might make several service calls if the data isn't returned in a single page.
 
-:::code source="snippets/pagination/Program.cs" range="90-96":::
+:::code source="snippets/pagination/Program.cs" range="83-92":::
 
 In the preceding C# code:
 
@@ -93,7 +91,7 @@ In the preceding C# code:
 
 `Take` can be used to get only the first `N` elements of the `AsyncPageable`. Using `Take` will make the fewest service calls required to get `N` items.
 
-:::code source="snippets/pagination/Program.cs" range="98-105":::
+:::code source="snippets/pagination/Program.cs" range="94-103":::
 
 ### More methods
 
@@ -104,8 +102,10 @@ In the preceding C# code:
 When using the `System.Linq.Async` package, beware that LINQ operations are executed on the client. The following query would fetch *all* the items just to count them:
 
 ```csharp
-// DO NOT DO THIS! 😲
-int expensiveSecretCount = await client.GetPropertiesOfSecretsAsync().CountAsync();
+// ⚠️ DON'T DO THIS! 😲
+int expensiveSecretCount =
+    await client.GetPropertiesOfSecretsAsync()
+        .CountAsync();
 ```
 
 > [!WARNING]
@@ -117,11 +117,11 @@ The [`System.Linq.Async`](https://www.nuget.org/packages/System.Linq.Async) pack
 
 Imagine an `IObserver<SecretProperties>` implementation:
 
-:::code source="snippets/pagination/Program.cs" range="127-133":::
+:::code source="snippets/pagination/Program.cs" range="126-136":::
 
 You could consume the `ToObservable` extension method as follows:
 
-:::code source="snippets/pagination/Program.cs" range="118-125":::
+:::code source="snippets/pagination/Program.cs" range="115-124":::
 
 In the preceding C# code:
 
@@ -134,7 +134,7 @@ In the preceding C# code:
 
 `Pageable<T>` is a synchronous version of `AsyncPageable<T>` that can be used with a normal `foreach` loop.
 
-:::code source="snippets/pagination/Program.cs" range="108-116":::
+:::code source="snippets/pagination/Program.cs" range="105-113":::
 
 > [!IMPORTANT]
 > While this synchronous API is available, use the asynchronous API alternatives for a better experience.

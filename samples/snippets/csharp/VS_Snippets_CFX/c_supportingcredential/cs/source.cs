@@ -12,8 +12,6 @@ using System.IdentityModel.Tokens;
 using System.IdentityModel.Selectors;
 //</snippet0>
 
-[assembly: SecurityPermission(
-   SecurityAction.RequestMinimum, Execution = true)]
 namespace Samples
 {
     public class Test

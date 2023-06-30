@@ -12,7 +12,7 @@ ms.date: 01/27/2020
 
 This article describes what is new in .NET Core 3.0. One of the biggest enhancements is support for Windows desktop applications (Windows only). By using the .NET Core 3.0 SDK component Windows Desktop, you can port your Windows Forms and Windows Presentation Foundation (WPF) applications. To be clear, the Windows Desktop component is only supported and included on Windows. For more information, see the [Windows desktop](#windows-desktop) section later in this article.
 
-.NET Core 3.0 adds support for C# 8.0. It's highly recommended that you use [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or newer, [Visual Studio for Mac 8.3](/visualstudio/mac/install-preview) or newer, or [Visual Studio Code](https://code.visualstudio.com/) with the latest **C# extension**.
+.NET Core 3.0 adds support for C# 8.0. It's highly recommended that you use [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or newer, [Visual Studio for Mac 8.3](/visualstudio/mac/install-preview) or newer, or [Visual Studio Code](https://code.visualstudio.com/) with the latest **C# extension**.
 
 [Download and get started with .NET Core 3.0](https://aka.ms/netcore3download) right now on Windows, macOS, or Linux.
 
@@ -22,12 +22,12 @@ For more information about the release, see the [.NET Core 3.0 announcement](htt
 
 ## Language improvements C# 8.0
 
-C# 8.0 is also part of this release, which includes the [nullable reference types](../../csharp/language-reference/builtin-types/nullable-reference-types.md) feature, async streams, and more patterns. For more information about C# 8.0 features, see [What's new in C# 8.0](../../csharp/whats-new/csharp-8.md).
+C# 8.0 is also part of this release, which includes the [nullable reference types](../../csharp/language-reference/builtin-types/nullable-reference-types.md) feature, async streams, and more patterns. For more information about C# 8.0 features, see [What's new in C# 8.0](../../csharp/whats-new/csharp-version-history.md#c-version-80).
 
 Tutorials related to C# 8.0 language features:
 
-- [Tutorial: Express your design intent more clearly with nullable and non-nullable reference types](../../csharp/whats-new/tutorials/nullable-reference-types.md)
-- [Tutorial: Generate and consume async streams using C# 8.0 and .NET Core 3.0](../../csharp/whats-new/tutorials/generate-consume-asynchronous-stream.md)
+- [Tutorial: Express your design intent more clearly with nullable and non-nullable reference types](../../csharp/tutorials/nullable-reference-types.md)
+- [Tutorial: Generate and consume async streams using C# 8.0 and .NET Core 3.0](../../csharp/asynchronous-programming/generate-consume-asynchronous-stream.md)
 - [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../csharp/fundamentals/tutorials/pattern-matching.md)
 
 Language enhancements were added to support the following API features detailed below:
@@ -49,7 +49,7 @@ Language enhancements were added to support the following API features detailed 
 </Project>
 ```
 
-If you're using Visual Studio, you need [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), as Visual Studio 2017 doesn't support **.NET Standard 2.1** or **.NET Core 3.0**.
+If you're using Visual Studio, you need [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), as Visual Studio 2017 doesn't support **.NET Standard 2.1** or **.NET Core 3.0**.
 
 ## Compile/Deploy
 
@@ -137,7 +137,7 @@ It's important to consider that applications or frameworks (including ASP.NET Co
 
 Above all else, be sure to test your app after trimming.
 
-For more information about the IL Trimmer tool, see the [documentation](../deploying/trimming/trim-self-contained.md) or visit the [mono/linker]( https://github.com/mono/linker) repo.
+For more information about the IL Trimmer tool, see the [documentation](../deploying/trimming/trim-self-contained.md) or visit the [mono/linker](https://github.com/mono/linker) repo.
 
 ### Tiered compilation
 
@@ -203,9 +203,9 @@ The ReadyToRun compiler doesn't currently support cross-targeting. You must comp
 
 Exceptions to cross-targeting:
 
-- Windows x64 can be used to compile Windows ARM32, ARM64, and x86 images.
-- Windows x86 can be used to compile Windows ARM32 images.
-- Linux x64 can be used to compile Linux ARM32 and ARM64 images.
+- Windows x64 can be used to compile Windows Arm32, Arm64, and x86 images.
+- Windows x86 can be used to compile Windows Arm32 images.
+- Linux x64 can be used to compile Linux Arm32 and Arm64 images.
 
 For more information, see [Ready to Run](../deploying/ready-to-run.md).
 
@@ -362,14 +362,14 @@ Two packages have been released to NuGet that you can use for GPIO programming:
 
 The GPIO packages include APIs for *GPIO*, *SPI*, *I2C*, and *PWM* devices. The IoT bindings package includes device bindings. For more information, see the [devices GitHub repo](https://github.com/dotnet/iot/blob/main/src/devices/).
 
-### ARM64 Linux support
+### Arm64 Linux support
 
-.NET Core 3.0 adds support for ARM64 for Linux. The primary use case for ARM64 is currently with IoT scenarios. For more information, see [.NET Core ARM64 Status](https://github.com/dotnet/announcements/issues/82).
+.NET Core 3.0 adds support for Arm64 for Linux. The primary use case for Arm64 is currently with IoT scenarios. For more information, see [.NET Core Arm64 Status](https://github.com/dotnet/announcements/issues/82).
 
-[Docker images for .NET Core on ARM64](https://hub.docker.com/r/microsoft/dotnet/) are available for Alpine, Debian, and Ubuntu.
+[Docker images for .NET Core on Arm64](https://hub.docker.com/r/microsoft/dotnet/) are available for Alpine, Debian, and Ubuntu.
 
 > [!NOTE]
-> **ARM64** Windows support isn't yet available.
+> Support for the macOS Arm64 (or "Apple Silicon") and Windows Arm64 operating systems was later added in .NET 6.
 
 ## Security
 
@@ -443,7 +443,7 @@ There's also the <xref:System.Range?displayProperty=nameWithType> type, which co
 var slice = a[i1..i2]; // { 3, 4, 5 }
 ```
 
-For more information, see the [ranges and indices tutorial](../../csharp/whats-new/tutorials/ranges-indexes.md).
+For more information, see the [ranges and indices tutorial](../../csharp/tutorials/ranges-indexes.md).
 
 ### Async streams
 
@@ -463,7 +463,7 @@ async IAsyncEnumerable<int> GetBigResultsAsync()
 
 In addition to being able to `await foreach`, you can also create async iterators, for example, an iterator that returns an `IAsyncEnumerable/IAsyncEnumerator` that you can both `await` and `yield` in. For objects that need to be disposed, you can use `IAsyncDisposable`, which various BCL types implement, such as `Stream` and `Timer`.
 
-For more information, see the [async streams tutorial](../../csharp/whats-new/tutorials/generate-consume-asynchronous-stream.md).
+For more information, see the [async streams tutorial](../../csharp/asynchronous-programming/generate-consume-asynchronous-stream.md).
 
 ### IEEE Floating-point
 
@@ -539,9 +539,9 @@ System.Console.WriteLine($"RuntimeInformation.FrameworkDescription: {System.Runt
 
 The new built-in JSON support is high-performance, low allocation, and works with UTF-8 encoded JSON text. For more information about the <xref:System.Text.Json> namespace and types, see the following articles:
 
-* [JSON serialization in .NET - overview](../../standard/serialization/system-text-json-overview.md)
-* [How to serialize and deserialize JSON in .NET](../../standard/serialization/system-text-json-how-to.md).
-* [How to migrate from Newtonsoft.Json to System.Text.Json](../../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md)
+* [JSON serialization in .NET - overview](../../standard/serialization/system-text-json/overview.md)
+* [How to serialize and deserialize JSON in .NET](../../standard/serialization/system-text-json/how-to.md).
+* [How to migrate from Newtonsoft.Json to System.Text.Json](../../standard/serialization/system-text-json/migrate-from-newtonsoft.md)
 
 ### HTTP/2 support
 

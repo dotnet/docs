@@ -5,7 +5,7 @@ ms.date: 01/18/2019
 ms.topic: how-to
 ---
 
-# Customizing parameter marshalling
+# Customize parameter marshalling
 
 When the .NET runtime's default parameter marshalling behavior doesn't do what you want, use can use the <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=nameWithType> attribute to customize how your parameters are marshalled. These customization features do not apply when [runtime marshalling is disabled](disabled-marshalling.md).
 
@@ -13,7 +13,7 @@ When the .NET runtime's default parameter marshalling behavior doesn't do what y
 
 .NET has a variety of formats for marshalling strings. These methods are split into distinct sections on C-style strings and Windows-centric string formats.
 
-### C-Style strings
+### C-style strings
 
 Each of these formats passes a null-terminated string to native code. They differ by the encoding of the native string.
 
@@ -38,9 +38,9 @@ If you're interacting with WinRT APIs, you can use the <xref:System.Runtime.Inte
 
 If you're using COM APIs, you'll likely have to marshal your array parameters as `SAFEARRAY*`s. To do so, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.SafeArray?displayProperty=nameWithType> unmanaged type. The default type of the elements of the `SAFEARRAY` can be seen in the table on [customizing `object` fields](customize-struct-marshalling.md#marshal-systemobject). You can use the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArraySubType?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArrayUserDefinedSubType?displayProperty=nameWithType> fields to customize the exact element type of the `SAFEARRAY`.
 
-## Customizing boolean or decimal parameters
+## Customizing Boolean or decimal parameters
 
-For information on marshalling boolean or decimal parameters, see [Customizing structure marshalling](customize-struct-marshalling.md).
+For information on marshalling Boolean or decimal parameters, see [Customizing structure marshalling](customize-struct-marshalling.md).
 
 ## Customizing object parameters (Windows-only)
 

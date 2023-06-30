@@ -7,6 +7,8 @@ ms.date: 11/17/2021
 
 # Dapr reference application
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 Over the course of this book, you've learned about the foundational benefits of Dapr. You saw how Dapr can help you and your team construct distributed applications while reducing architectural and operational complexity. Along the way, you've had the opportunity to build some small Dapr apps. Now, it's time to explore how a more complex application can benefit from Dapr.
 
 But, first a little history.
@@ -117,7 +119,7 @@ public class RedisBasketRepository : IBasketRepository
 
 This code uses the third party `StackExchange.Redis` NuGet package. The following steps are required to load the shopping basket for a given customer:
 
-1. Inject a Redis `ConnectionMultiplexer` into the constructor. The `ConnectionMultiplexer` is registered with the dependency injection framework in the `Startup.cs` file:
+1. Inject a Redis `ConnectionMultiplexer` into the constructor. The `ConnectionMultiplexer` is registered with the dependency injection framework in the _Program.cs_ file:
 
     ```csharp
     services.AddSingleton<ConnectionMultiplexer>(sp =>
@@ -160,7 +162,7 @@ public class DaprBasketRepository : IBasketRepository
 
 The updated code uses the Dapr .NET SDK to read and write data using the state management building block. The new steps to load the basket for a customer are dramatically simplified:
 
-1. Inject a `DaprClient` into the constructor. The `DaprClient` is registered with the dependency injection framework in the `Startup.cs` file.
+1. Inject a `DaprClient` into the constructor. The `DaprClient` is registered with the dependency injection framework in the _Program.cs_`_ file.
 1. Use the `DaprClient.GetStateAsync` method to load the customer's shopping basket items from the configured state store and return the result.
 
 The updated implementation still uses Redis as the underlying data store. But, note how Dapr abstracts the `StackExchange.Redis` references and complexity from the application. The application no longer requires a direct dependency on Redis. A Dapr configuration file is all that's needed:
@@ -379,7 +381,7 @@ public class CatalogService : ICatalogService
 }
 ```
 
-Notice how no Dapr specific code is required to make the service invocation call. All communication is done using the standard HttpClient object.
+Notice how no Dapr-specific code is required to make the service invocation call. All communication is done using the standard HttpClient object.
 
 The Dapr HttpClient is configured for the `CatalogService` class on program startup:
 
@@ -485,7 +487,7 @@ public class DaprEventBus : IEventBus
 As you can see in the code snippet, the topic name is derived from event type's name. Because all eShop services use the `IEventBus` abstraction, retrofitting Dapr required *absolutely no change* to the mainline application code.
 
 > [!IMPORTANT]
-> The Dapr SDK uses `System.Text.Json` to serialize/deserialize messages. However, `System.Text.Json` doesn't serialize properties of derived classes by default. In the eShop code, an event is sometimes explicitly declared as an `IntegrationEvent`, the base class for integration events. This construct allows the concrete event type to be determined dynamically at run time based on business logic. As a result, the event is serialized using the type information of the base class and not the derived class. To force `System.Text.Json` to serialize the properties of both the base and derived class, the code uses `object` as the generic type parameter. For more information, see the [.NET documentation](../../standard/serialization/system-text-json-polymorphism.md).
+> The Dapr SDK uses `System.Text.Json` to serialize/deserialize messages. However, `System.Text.Json` doesn't serialize properties of derived classes by default. In the eShop code, an event is sometimes explicitly declared as an `IntegrationEvent`, the base class for integration events. This construct allows the concrete event type to be determined dynamically at run time based on business logic. As a result, the event is serialized using the type information of the base class and not the derived class. To force `System.Text.Json` to serialize the properties of both the base and derived class, the code uses `object` as the generic type parameter. For more information, see the [.NET documentation](../../standard/serialization/system-text-json/polymorphism.md).
 
 With Dapr, pub/sub infrastructure code is **dramatically simplified**. The application doesn't need to distinguish between message brokers. Dapr provides this abstraction for you. If needed, you can easily swap out message brokers or configure multiple message broker components with no code changes.
 

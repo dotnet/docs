@@ -7,6 +7,8 @@ ms.date: 02/17/2021
 
 # Dapr at 20,000 feet
 
+[!INCLUDE [download-alert](includes/download-alert.md)]
+
 In chapter 1, we discussed the appeal of distributed microservice applications. But, we also pointed out that they dramatically increase architectural and operational complexity. With that in mind, the question becomes, how can you "have your cake" and "eat it too?". That is, how can you take advantage of the agility of distributed architecture, and minimize its complexity?
 
 Dapr, or *Distributed Application Runtime*, is a new way to build modern distributed applications.
@@ -62,7 +64,7 @@ The following table describes the infrastructure services provided by each block
 | [Bindings](bindings.md) | Trigger code from events raised by external resources with bi-directional communication. |
 | [Observability](observability.md) | Monitor and measure message calls across networked services. |
 | [Secrets](secrets-management.md) | Securely access external secret stores. |
-| Actors | Encapsulate logic and data in reusable actor objects. |
+| [Actors](actors.md) | Encapsulate logic and data in reusable actor objects. |
 
 Building blocks abstract the implementation of distributed application capabilities from your services. Figure 2-3 shows this interaction.
 
@@ -169,7 +171,7 @@ This pattern is named Sidecar because it resembles a sidecar attached to a motor
 
 Dapr has cross-platform support and can run in many different environments. These environments include Kubernetes, a group of VMs, or edge environments such as Azure IoT Edge.
 
-For local development, the easiest way to get started is with [self-hosted mode](https://docs.dapr.io/concepts/overview/#self-hosted). In self-hosted mode, the microservices and Dapr sidecars run in separate local processes without a container orchestrator such as Kubernetes. For more information, see [download and install the Dapr CLI](https://docs.dapr.io/getting-started/install-dapr/).
+For local development, the easiest way to get started is with [self-hosted mode](https://docs.dapr.io/concepts/overview/#self-hosted). In self-hosted mode, the microservices and Dapr sidecars run in separate local processes without a container orchestrator such as Kubernetes. For more information, see [download and install the Dapr CLI](https://docs.dapr.io/getting-started/install-dapr-cli/).
 
 Figure 2-5 shows an application and Dapr hosted in two separate memory processes communicating via HTTP or gRPC.
 

@@ -30,7 +30,7 @@ HRESULT Initialize(
   
 ## Parameters
 
-`pICorProfilerInfoUnk`
+`pICorProfilerInfoUnk`\
 [in] Pointer to an [IUnknown](/cpp/atl/iunknown) interface that the profiler must query for an [ICorProfilerInfo](icorprofilerinfo-interface.md) interface pointer.  
 
 ## Remarks  

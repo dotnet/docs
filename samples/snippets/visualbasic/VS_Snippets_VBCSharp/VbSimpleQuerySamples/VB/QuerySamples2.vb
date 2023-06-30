@@ -1,10 +1,8 @@
 ﻿'<Snippet12>
 Imports System.Diagnostics
-Imports System.Security.Permissions
 
 Public Class JoinSample
 
-    <SecurityPermission(SecurityAction.Demand)>
     Public Sub ListProcesses()
         Dim processDescriptions As New List(Of ProcessDescription)
         processDescriptions.Add(New ProcessDescription With {

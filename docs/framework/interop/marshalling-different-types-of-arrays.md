@@ -12,7 +12,7 @@ ms.assetid: c5ac9920-5b6e-4dc9-bf2d-1f6f8ad3b0bf
 ---
 # Marshalling Different Types of Arrays
 
-An array is a reference type in managed code that contains one or more elements of the same type. Although arrays are reference types, they are passed as In parameters to unmanaged functions. This behavior is inconsistent with way managed arrays are passed to managed objects, which is as In/Out parameters. For additional details, see [Copying and Pinning](copying-and-pinning.md).  
+An array is a reference type in managed code that contains one or more elements of the same type. Although arrays are reference types, they are passed as In parameters to unmanaged functions. This behavior is inconsistent with the way managed arrays are passed to managed objects, which is as In/Out parameters. For additional details, see [Copying and Pinning](copying-and-pinning.md).  
   
  The following table lists marshalling options for arrays and describes their usage.  
   

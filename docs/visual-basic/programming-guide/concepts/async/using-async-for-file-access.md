@@ -121,7 +121,7 @@ End Function
 
  The following example demonstrates parallel processing by writing 10 text files. For each file, the <xref:System.IO.Stream.WriteAsync%2A> method returns a task that is then added to a list of tasks. The `Await Task.WhenAll(tasks)` statement exits the method and resumes within the method when file processing is complete for all of the tasks.  
   
- The example closes all <xref:System.IO.FileStream> instances in a `Finally` block after the tasks are complete. If each `FileStream` was instead created in a `Imports` statement, the `FileStream` might be disposed of before the task was complete.  
+ The example closes all <xref:System.IO.FileStream> instances in a `Finally` block after the tasks are complete. If each `FileStream` was instead created in an `Imports` statement, the `FileStream` might be disposed of before the task was complete.  
   
  Note that any performance boost is almost entirely from the parallel processing and not the asynchronous processing. The advantages of asynchrony are that it doesn’t tie up multiple threads, and that it doesn’t tie up the user interface thread.  
   

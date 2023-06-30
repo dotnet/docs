@@ -1,32 +1,34 @@
 ---
 title: Activation garbage collection
 description: Learn about activation garbage collection in .NET Orleans.
-ms.date: 01/31/2022
+ms.date: 05/22/2023
 ---
 
 # Activation garbage collection
 
-As described in the Core Concepts section, a *grain activation* is an in-memory instance of a grain class that gets automatically created by the Orleans runtime on an as-needed basis as a temporary physical embodiment of a grain.
+This article applies to: ✔️ Orleans 3.x and earlier versions
+
+A *grain activation* is an in-memory instance of a grain class that gets automatically created by the Orleans runtime on an as-needed basis as a temporary physical embodiment of a grain.
 
 Activation Garbage Collection (Activation GC) is the process of removal from memory of unused grain activations. It is conceptually similar to how garbage collection of memory works in .NET. However, Activation GC only takes into consideration how long a particular grain activation has been idle. Memory usage is not used as a factor.
 
 ## How activation GC works
 
-The general process of Activation GC involves Orleans runtime in a silo periodically scanning for grain activations that have not been used at all for the configured period of time (Collection Age Limit). Once a grain activation has been idle for that long, it gets deactivated. The deactivation process begins by the runtime calling the grain's `OnDeactivateAsync()` method, and completes by removing references to the grain activation object from all data structures of the silo, so that the memory is reclaimed by the .NET GC.
+The general process of Activation GC involves Orleans runtime in a silo periodically scanning for grain activations that have not been used at all for the configured period (Collection Age Limit). Once a grain activation has been idle for that long, it gets deactivated. The deactivation process begins by the runtime calling the grain's <xref:Orleans.Grain.OnDeactivateAsync> method, and completes by removing references to the grain activation object from all data structures of the silo, so that the memory is reclaimed by the .NET GC.
 
 As a result, with no burden put on the application code, only recently used grain activations stay in memory while activations that aren't used anymore get automatically removed, and system resources used by them get reclaimed by the runtime.
 
 **What counts as "being active" for grain activation collection**
 
-* receiving a method call
-* receiving a reminder
-* receiving an event via streaming
+* Receiving a method call.
+* Receiving a reminder.
+* Receiving an event via streaming.
 
 **What does NOT count as "being active" for grain activation collection**
 
-* performing a call (to another grain or an Orleans client)
-* timer events
-* arbitrary IO operations or external calls not involving Orleans framework
+* Performing a call (to another grain or an Orleans client).
+* Timer events.
+* Arbitrary IO operations or external calls not involving Orleans framework.
 
 **Collection Age Limit**
 
@@ -36,14 +38,13 @@ This time after which an idle grain activation becomes subject to Activation GC 
 
 ### Delay activation GC
 
-A grain activation can delay its own Activation GC, by calling `this.DelayDeactivation()` method:
+A grain activation can delay its own Activation GC, by calling <xref:Orleans.Grain.DelayDeactivation%2A> method:
 
 ```csharp
 protected void DelayDeactivation(TimeSpan timeSpan)
 ```
 
-This call will ensure that this activation is not deactivated for at least the specified time duration. It takes priority over Activation Garbage Collection settings specified in the config, but does not cancel them.
-Therefore, this call provides an additional hook to **delay the deactivation beyond what is specified in the Activation Garbage Collection settings**. This call can not be used to expedite Activation Garbage Collection.
+This call will ensure that this activation is not deactivated for at least the specified time duration. It takes priority over Activation Garbage Collection settings specified in the config, but does not cancel them. Therefore, this call provides an additional hook to **delay the deactivation beyond what is specified in the Activation Garbage Collection settings**. This call can not be used to expedite Activation Garbage Collection.
 
 A positive `timeSpan` value means "prevent GC of this activation for that time".
 
@@ -63,7 +64,7 @@ Note that `DelayDeactivation` does not 100% guarantee that the grain activation 
 
 ### Expedite activation GC
 
-A grain activation can also instruct the runtime to deactivate it next time it becomes idle by calling `this.DeactivateOnIdle()` method:
+A grain activation can also instruct the runtime to deactivate it next time it becomes idle by calling <xref:Orleans.Grain.DeactivateOnIdle> method:
 
 ```csharp
 protected void DeactivateOnIdle()
@@ -78,7 +79,7 @@ A grain activation is considered idle if it is not processing any message at the
 
 ## Configuration
 
-Grain garbage collection can be configured using the `GrainCollectionOptions` options:
+Grain garbage collection can be configured using the <xref:Orleans.Configuration.GrainCollectionOptions>:
 
 ```csharp
 mySiloHostBuilder.Configure<GrainCollectionOptions>(options =>

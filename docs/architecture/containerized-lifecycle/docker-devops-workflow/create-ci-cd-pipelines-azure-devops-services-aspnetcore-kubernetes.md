@@ -5,6 +5,8 @@ ms.date: 01/06/2021
 ---
 # Create CI/CD pipelines in Azure DevOps Services for a .NET application on Containers and deploying to a Kubernetes cluster
 
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
 In Figure 5-12 you can see the end-to-end DevOps scenario covering the code management, code compilation, Docker images build, Docker images push to a Docker registry and finally the deployment to a Kubernetes cluster in Azure.
 
 ![Workflow: Starts in development machine. Pushing to a repo begins the build/CI task using a custom image that gets pushed to a Docker registry, and then is used by the CD/deploy task to, finally, pushing to AKS.](media/docker-workflow-ci-cd-aks.png)

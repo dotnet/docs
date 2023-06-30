@@ -9,7 +9,7 @@ metadata:
     description: Samples, tutorials, and education for .NET Orleans. Microsoft's cloud native and distributed systems platform.
     ms.topic: hub-page
     ms.prod: dotnet-orleans
-    ms.date: 02/08/2022
+    ms.date: 03/06/2023
 
 highlightedContent:
     # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
@@ -20,9 +20,9 @@ highlightedContent:
         - itemType: deploy
           title: Deploy Orleans apps
           url: deployment/index.md
-        - itemType: overview
-          title: Orleans videos
-          url: /search/?terms=orleans&category=Show
+        - itemType: whats-new
+          title: "Migrate from Orleans 3.x to 7.0"
+          url: migration-guide.md
         - itemType: concept
           title: Why Orleans?
           url: benefits.md
@@ -90,8 +90,11 @@ conceptualContent:
                 text: Consul deployment
                 url: deployment/consul-deployment.md
               - itemType: concept
-                text: Azure deployment
-                url: deployment/azure-web-apps-with-azure-cloud-services.md
+                text: Azure App Service
+                url: deployment/deploy-to-azure-app-service.md
+              - itemType: concept
+                text: Azure Container Apps
+                url: deployment/deploy-to-azure-container-apps.md
               - itemType: concept
                 text: Multi-cluster deployment
                 url: deployment/multi-cluster-support/overview.md
@@ -101,7 +104,7 @@ conceptualContent:
                 text: Host configuration
                 url: host/configuration-guide/index.md
               - itemType: get-started
-                text: Host monitoring
+                text: Observability
                 url: host/monitoring/index.md
               - itemType: how-to-guide
                 text: Orleans clients
@@ -180,14 +183,14 @@ additionalContent:
                       url: /Shows/On-NET
                     - text: .NET Community Standup
                       url: https://dotnet.microsoft.com/platform/community/standup
-                    - text: The .NET Docs Show
-                      url: https://dotnetdocs.dev
+                    - text: On .NET Live
+                      url: https://dotnet.microsoft.com/live/on-dotnet-live
               - title: Open source
                 links:
                     - text: Orleans on GitHub
                       url: https://github.com/dotnet/orleans
                     - text: Orleans samples on GitHub
-                      url: https://github.com/dotnet/orleans/tree/main/samples
+                      url: https://github.com/dotnet/samples/tree/main/orleans
                     - text: .NET samples
                       url: https://github.com/dotnet/samples
                     - text: .NET Platform

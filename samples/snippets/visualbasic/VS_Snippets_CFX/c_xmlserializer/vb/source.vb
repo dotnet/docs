@@ -5,7 +5,6 @@ Imports System.ServiceModel.Description
 Imports System.Xml.Serialization
 Imports UsingXml1
 
-<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace UsingXml1
 
     Public Class Test

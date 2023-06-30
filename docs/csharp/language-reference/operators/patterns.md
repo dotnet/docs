@@ -145,7 +145,9 @@ As the preceding example shows, you can repeatedly use the pattern combinators i
 
 ### Precedence and order of checking
 
-The following list orders pattern combinators starting from the highest precedence to the lowest:
+A pattern that is part of an `is` expression has *relational* precedence. It's the same precedence as the `is` operator. Pattern expressions in the `case` arms of a `switch` statement have the same precedence as the *conditional logical* operators (`||` and `&&`). Pattern expressions inside a `switch` expression have the same precedence as the coalescing operators (`??` and `throw` expressions).
+
+The individual pattern expressions are evaluated in order, except as noted for the pattern combinators. The pattern combinators are ordered from the highest precedence to the lowest as shown in the following list:
 
 - `not`
 - `and`
@@ -247,7 +249,7 @@ You use a *discard pattern* `_` to match any expression, including `null`, as th
 
 In the preceding example, a discard pattern is used to handle `null` and any integer value that doesn't have the corresponding member of the <xref:System.DayOfWeek> enumeration. That guarantees that a `switch` expression in the example handles all possible input values. If you don't use a discard pattern in a `switch` expression and none of the expression's patterns matches an input, the runtime [throws an exception](switch-expression.md#non-exhaustive-switch-expressions). The compiler generates a warning if a `switch` expression doesn't handle all possible input values.
 
-A discard pattern can't be a pattern in an `is` expression or a `switch` statement. In those cases, to match any expression, use a [`var` pattern](#var-pattern) with a discard: `var _`.
+A discard pattern can't be a pattern in an `is` expression or a `switch` statement. In those cases, to match any expression, use a [`var` pattern](#var-pattern) with a discard: `var _`. The discard pattern can be used in a `switch` expression.
 
 For more information, see the [Discard pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#discard-pattern) section of the feature proposal note.
 

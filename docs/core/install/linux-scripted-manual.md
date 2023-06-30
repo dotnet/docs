@@ -168,7 +168,7 @@ Set the following two environment variables in your shell profile:
   This variable should include both the `DOTNET_ROOT` folder and the user's _.dotnet/tools_ folder:
 
   ```bash
-  export PATH=$PATH:$HOME/.dotnet:$HOME/.dotnet/tools
+  export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
   ```
 
 ## Next steps

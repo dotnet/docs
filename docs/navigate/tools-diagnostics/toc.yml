@@ -349,7 +349,7 @@ items:
     - name: Specialized diagnostics
       items:
       - name: Overview
-        href: ../../core/diagnostics/specialized-diagnostics-overview.md    
+        href: ../../core/diagnostics/specialized-diagnostics-overview.md
       - name: Event Source
         items:
         - name: Overview
@@ -386,7 +386,7 @@ items:
           - name: Type-system events
             href: ../../fundamentals/diagnostics/runtime-type-events.md
       - name: Collect diagnostics in containers
-        href: ../../core/diagnostics/diagnostics-in-containers.md   
+        href: ../../core/diagnostics/diagnostics-in-containers.md
       - name: Dumps
         items:
         - name: Overview
@@ -401,9 +401,9 @@ items:
         - name: Collect dumps on crash
           href: ../../core/diagnostics/collect-dumps-crash.md
       - name: Symbols
-        href: ../../core/diagnostics/symbols.md    
+        href: ../../core/diagnostics/symbols.md
       - name: EventPipe
-        href: ../../core/diagnostics/eventpipe.md    
+        href: ../../core/diagnostics/eventpipe.md
       - name: Diagnostic port
         items:
         - name: Overview
@@ -418,7 +418,7 @@ items:
       - name: DiagnosticSource and DiagnosticListener
         items:
         - name: Get started
-          href: ../../core/diagnostics/diagnosticsource-diagnosticlistener.md                
+          href: ../../core/diagnostics/diagnosticsource-diagnosticlistener.md
     - name: .NET CLI global tools
       items:
       - name: Overview
@@ -801,6 +801,8 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca1860.md
                   - name: CA1861
                     href: ../../fundamentals/code-analysis/quality-rules/ca1861.md
+                  - name: CA1864
+                    href: ../../fundamentals/code-analysis/quality-rules/ca1864.md
               - name: SingleFile rules
                 items:
                   - name: Overview

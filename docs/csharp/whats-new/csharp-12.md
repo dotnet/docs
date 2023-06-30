@@ -10,6 +10,7 @@ Some C# 12 features have been introduced in previews. You can try these features
 - [Primary constructors](#primary-constructors) - Introduced in Visual Studio 17.6 preview 2.
 - [Optional parameters in lambda expressions](#default-lambda-parameters) - Introduced in Visual Studio 17.5 preview 2.
 - [Alias any type](#alias-any-type) - Introduced in Visual Studio 17.6 preview 3.
+- [Interceptors](#interceptors) - *Preview feature* Introduced in Visual Studio 17.7, preview 3.
 
 ## Primary constructors
 
@@ -28,6 +29,19 @@ You can learn more about default parameters on lambda expressions in the article
 ## Alias any type
 
 You can use the `using` alias directive to alias any type, not just named types. That means you can create semantic aliases for tuple types, array types, pointer types, or other unsafe types. For more information, see the [feature specification](~/_csharplang/proposals/using-alias-types.md)
+
+## Interceptors
+
+> [!WARNING]
+> Interceptors are an experimental feature, available in preview mode with C# 12. The feature may be subject to breaking changes or removal in a future release. Therefore, it is not recommended for production or released applications.
+>
+> In order to use interceptors, you'll need to set the `<Features>InterceptorsPreview<Features>` element in your project file. Without this flag, interceptors are disabled, even when other C# 12 features are enabled.
+
+An *interceptor* is a method which can declaratively substitute a call to an *interceptable* method with a call to itself at compile time. This substitution occurs by having the interceptor declare the source locations of the calls that it intercepts. This provides a limited facility to change the semantics of existing code by adding new code to a compilation, for example in a source generator.
+
+You use an *interceptor* as part of a source generator to modify, rather than add code to an existing soruce compilation. The source generator substitutes calls to an interceptable method with a call to the *interceptor* method.
+
+If you are interested in experimenting with interceptors, you can learn more by reading the [feature specification](https://github.com/dotnet/roslyn/blob/main/docs/features/interceptors.md). If you use the feature, make sure to stay current with any changes in the feature specification for this preview feature. Once the feature is finalized, we'll add more guidance on this site.
 
 ## See also
 

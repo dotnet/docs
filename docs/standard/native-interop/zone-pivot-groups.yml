@@ -1,0 +1,14 @@
+### YamlMime:ZonePivotGroups
+groups:
+- id: interop-types
+  title: Interop types
+  prompt: Choose a type that is passed across an interop boundary
+  pivots:
+  - id: int
+    title: int
+  - id: float
+    title: float
+  - id: struct
+    title: Struct
+  - id: object
+    title: Object (or any C# class)

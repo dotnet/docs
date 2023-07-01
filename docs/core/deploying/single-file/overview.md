@@ -13,6 +13,9 @@ Bundling all application-dependent files into a single binary provides an applic
 
 The size of the single file in a self-contained application is large since it includes the runtime and the framework libraries. In .NET 6, you can [publish trimmed](../trimming/trim-self-contained.md) to reduce the total size of trim-compatible applications. The single file deployment option can be combined with [ReadyToRun](../ready-to-run.md) and [Trim](../trimming/trim-self-contained.md) publish options.
 
+> [IMPORTANT]
+> To run a single file app on Windows 7, you must use .NET Runtime 6.0.3 or later.
+
 ## Sample project file
 
 Here's a sample project file that specifies single file publishing:

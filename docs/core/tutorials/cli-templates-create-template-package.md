@@ -68,11 +68,9 @@ Manual instructions: Open *.csproj in the editor and complete the package metada
 Next, open the _templatepack.csproj_ file in a code editor and populate it according to the hints in the template:
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
+ <PropertyGroup>
     <!-- The package metadata. Fill in the properties marked as TODO below -->
-    <!-- Follow the instructions on https://learn.microsoft.com/en-us/nuget/create-packages/package-authoring-best-practices -->
+    <!-- Follow the instructions on https://learn.microsoft.com/nuget/create-packages/package-authoring-best-practices -->
     <PackageId>AdatumCorporation.Utility.Templates</PackageId>
     <PackageVersion>1.0</PackageVersion>
     <Title>AdatumCorporation Templates</Title>
@@ -80,39 +78,10 @@ Next, open the _templatepack.csproj_ file in a code editor and populate it accor
     <Description>Templates to use when creating an application for Adatum Corporation.</Description>
     <PackageTags>dotnet-new;templates;contoso</PackageTags>
     <PackageProjectUrl>https://github.com/dotnet/samples/tree/main/core/tutorials/cli-templates-create-item-template</PackageProjectUrl>
-
-    <!-- Keep package type as 'Template' to show the package as template package on nuget.org and make you template available in dotnet new search.-->
-    <PackageType>Template</PackageType>
-    <TargetFramework>net8.0</TargetFramework>
-    <IncludeContentInPack>true</IncludeContentInPack>
-    <IncludeBuildOutput>false</IncludeBuildOutput>
-    <ContentTargetFolders>content</ContentTargetFolders>
-    <NoWarn>$(NoWarn);NU5128</NoWarn>
-    <NoDefaultExcludes>true</NoDefaultExcludes>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
-
-  <PropertyGroup>
-    <LocalizeTemplates>false</LocalizeTemplates>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.TemplateEngine.Tasks" Version="*" PrivateAssets="all" IsImplicitlyDefined="true"/>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="content\**\*" Exclude="content\**\bin\**;content\**\obj\**" />
-    <Compile Remove="**\*" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="README.md" Pack="true" PackagePath="" />
-  </ItemGroup>
-
-</Project>
 ```
 
-For getting more information about content of _templatepack.csproj_ file, navigate to [Pack a template into a NuGet package (nupkg file)](https://learn.microsoft.com/en-us/dotnet/core/tools/custom-templates#pack-a-template-into-a-nuget-package-nupkg-file).
+For getting more information about content of _templatepack.csproj_ file, navigate to [Pack a template into a NuGet package (nupkg file)](https://learn.microsoft.com/dotnet/core/tools/custom-templates#pack-a-template-into-a-nuget-package-nupkg-file).
 
 ## Build and install
 

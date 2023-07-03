@@ -31,7 +31,6 @@ struct PrimitiveStruct
 }
 ```
 
-Primitives and structs with only primitive fields are all By Value and contain no references, so there is no ownership transfer in COM.
 
 ## References to primitives and references struct of primitives
 
@@ -61,7 +60,6 @@ struct PrimitiveStruct
 }
 ```
 
-References to primitives and references to structs with only primitive fields are both Single Indirection and contain no references, so there is no ownership transfer in COM.
 
 ## Structs with references to blittable values
 
@@ -94,7 +92,6 @@ struct PrimitiveStruct
 }
 ```
 
-Ownership in the case is identical to references to primitives. There is no transfer of ownership in this case.
 
 ## Reference to struct with reference to blittable struct
 
@@ -126,7 +123,6 @@ struct PrimitiveStruct
 }
 ```
 
-In this case, ownership transfer may occur. When the callee method returns a successful return value, ownership of the references within the memory that `param` pointed to at the start of the method to is transfered to the callee, and then ownership of the references within the memory that `param` points to at the
 
 ## Reference to struct with recursive reference
 

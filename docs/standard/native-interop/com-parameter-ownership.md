@@ -37,7 +37,7 @@ Primitives and structs are passed by value.
 
 ##### By Reference
 
-References to a value are passed by reference. <More information on how `ref` and reference types relate to by reference parameters.>
+All other values are references to an interface, array, or another value, and are passed by reference. <More information on how `ref` and reference types relate to by reference parameters.>
 
 ## Mutability
 

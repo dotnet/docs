@@ -11,9 +11,9 @@ This document outlines how the rules outlined in [Ownership and Lifetimes of COM
 ## Primitives and blittable structs
 
 ```csharp
-void Method1(int x);
-void Method2(float y);
-void Method3(PrimitiveStruct s);
+int Method1(int x);
+int Method2(float y);
+int Method3(PrimitiveStruct s);
 struct PrimitiveStruct
 {
     int a;
@@ -21,9 +21,9 @@ struct PrimitiveStruct
 }
 ```
 ```cpp
-void Method1(int x);
-void Method2(float y);
-void Method3(PrimitiveStruct s);
+int Method1(int x);
+int Method2(float y);
+int Method3(PrimitiveStruct s);
 struct PrimitiveStruct
 {
     int a;
@@ -36,9 +36,9 @@ Primitives and structs with only primitive fields are all By Value and contain n
 ## References to primitives and references struct of primitives
 
 ```csharp
-void Method1(ref int x);
-void Method2(ref float y);
-void Method3(ref PrimitiveStruct s);
+int Method1(ref int x);
+int Method2(ref float y);
+int Method3(ref PrimitiveStruct s);
 struct PrimitiveStruct
 {
     int a;
@@ -51,9 +51,9 @@ class PrimitiveClass
 }
 ```
 ```cpp
-void Method1(int* x);
-void Method2(float* y);
-void Method3(PrimitiveStruct* s);
+int Method1(int* x);
+int Method2(float* y);
+int Method3(PrimitiveStruct* s);
 struct PrimitiveStruct
 {
     int a;
@@ -65,7 +65,68 @@ References to primitives and references to structs with only primitive fields ar
 
 ## Structs with references to blittable values
 
+```csharp
+int Method(StructWithReference s);
+
+struct StructWithReference
+{
+    PrimitiveClass a;
+    float b;
+}
+class PrimitiveClass
+{
+    int a;
+    float b;
+}
+```
+```cpp
+int Method(PrimitiveStruct s);
+
+struct StructWithReference
+{
+    PrimitiveStruct* a;
+    float b;
+}
+struct PrimitiveStruct
+{
+    int a;
+    float b;
+}
+```
+
+Ownership in the case is identical to references to primitives. There is no transfer of ownership in this case.
+
 ## Reference to struct with reference to blittable struct
+
+```csharp
+int Method(ref StructWithReference param);
+
+struct StructWithReference
+{
+    PrimitiveClass a;
+    float b;
+}
+class PrimitiveClass
+{
+    int a;
+    float b;
+}
+```
+```cpp
+int Method(StructWithReference* param);
+struct StructWithReference
+{
+    PrimitiveStruct* a;
+    float b;
+}
+struct PrimitiveStruct
+{
+    int a;
+    float b;
+}
+```
+
+In this case, ownership transfer may occur. When the callee method returns a successful return value, ownership of the references within the memory that `param` pointed to at the start of the method to is transfered to the callee, and then ownership of the references within the memory that `param` points to at the
 
 ## Reference to struct with recursive reference
 

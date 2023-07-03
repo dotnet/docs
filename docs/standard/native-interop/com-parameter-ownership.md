@@ -57,7 +57,7 @@ Mutable parameters contain valid values when the method is called and the callee
 
 For parameters passed by value, the callee is expected to take ownership of the value when it knows it will return a successful return value. For parameters passed by reference, the callee takes ownership of the referenced value when it knows it will return a successful return value. When the callee returns the successful return value to the caller, the caller takes back ownership of value referenced.
 
-No transfer of ownership is expected to have taken place if the callee returns a failure return value. The callee is expected to maintain ownership of the value and is responsible for cleanup.
+No transfer of ownership is expected to have taken place if the callee returns a failure return value. The caller is expected to maintain ownership of the value and is responsible for cleanup.
 
 ### Examples
 

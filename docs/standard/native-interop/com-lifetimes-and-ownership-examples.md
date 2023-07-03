@@ -6,7 +6,7 @@ ms.date: 06/30/2023
 
 # Examples of COM Interface ownership rules
 
-This document outlines how the rules outlined in [Ownership and Lifetimes of COM parameters](./com-lifetimes-and-ownership.md) are applied to values and method signatures.
+This document outlines how the rules outlined in [Ownership and Lifetimes of COM parameters](./com-parameter-ownership.md) are applied to values and method signatures.
 
 ## Primitives and blittable structs
 

@@ -37,7 +37,11 @@ Primitives and structs are passed by value.
 
 ##### By Reference
 
-All other values are references to an interface, array, or another value, and are passed by reference. <More information on how `ref` and reference types relate to by reference parameters.>
+All other values are references to an interface, array, or another value, and are considered passed by reference. When the parameter type is a reference to a reference to a struct, the parameter is considered to be a reference to the value of the reference to the struct. In this case ownership of the referenced value means ownership of the reference to the struct (and the struct and all the references in the struct), not just the struct.
+
+In C#, value types act like primitives and structs, and reference types (types that derive from object) act like references to structs. Adding the `ref`, `in`, or `out` keyword add another reference level to the parameter type (`ref StructType` is a reference to a struct, `ref ClassType` is a reference to a reference to a struct). In unsafe C#, pointers (`*`) also act as references.
+
+In C++, references appear as pointers (`*`) or references (`&`).
 
 ## Mutability
 

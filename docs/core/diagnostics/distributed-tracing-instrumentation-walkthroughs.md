@@ -250,7 +250,7 @@ if(activity != null)
 ```
 
 - OpenTelemetry provides a set of recommended
-[conventions](https://github.com/open-telemetry/opentelemetry-specification/tree/main/specification/trace/semantic_conventions)
+[conventions](https://github.com/open-telemetry/semantic-conventions/blob/main/specification/README.md)
 for setting Tags on Activities that represent common types of application work.
 
 - If you are instrumenting functions with high-performance requirements,

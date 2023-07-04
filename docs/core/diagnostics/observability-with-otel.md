@@ -115,16 +115,7 @@ The following code defines a new metric (`greetings.count`) for the number of ti
 
 Use the NuGet Package Manager or command line to add the following NuGet packages:
 
-``` xml
-<ItemGroup>
-   <PackageReference Include="OpenTelemetry.Exporter.Console" Version="1.5.0" />
-   <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.5.0" />
-   <PackageReference Include="OpenTelemetry.Exporter.Prometheus.AspNetCore" Version="1.5.0-rc.1" />
-   <PackageReference Include="OpenTelemetry.Exporter.Zipkin" Version="1.5.0" />
-   <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.5.0" />
-   <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.5.0-beta.1" />
-</ItemGroup>
-```
+:::code language="xml" source="snippets/OTel-Prometheus-grafana-Jaeger/csharp/OTel-Prometheus-Grafana-Jaeger.csproj" id="Snippet_References":::
 
 > [!Note]
 > Use the latest versions, as the OTel APIs are constantly evolving.
@@ -394,11 +385,7 @@ One of the advantages of an integrated APM product is that it can correlate the 
 
 Take the same project from [Step 5](#5-configure-opentelemetry-with-the-correct-providers) and replace the NuGet references with a single package:
 
-``` xml
-<ItemGroup>
-  <PackageReference Include="Azure.Monitor.OpenTelemetry.AspNetCore" Version="1.0.0-beta.4" />
-</ItemGroup>
-```
+:::code language="xml" source="snippets/OTel-Prometheus-grafana-Jaeger/csharp/OTel-Prometheus-Grafana-Jaeger.csproj" id="Snippet_AZMReferences":::
 
 Then, replace the OTel initialization code with:
 

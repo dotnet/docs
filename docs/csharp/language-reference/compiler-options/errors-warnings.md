@@ -44,7 +44,7 @@ The element value is the warning level you want displayed for the compilation: L
 | 1 | Displays severe warning messages. |
 | 2 | Displays level 1 warnings plus certain, less-severe warnings, such as warnings about hiding class members. |
 | 3 | Displays level 2 warnings plus certain, less-severe warnings, such as warnings about expressions that always evaluate to `true` or `false`. |
-| 4   (the default)|Displays all level 3 warnings plus informational warnings. |
+| 4 (default) | Displays all level 3 warnings plus informational warnings. |
 
 > [!WARNING]
 > The compiler command line accepts values greater than 4 to enable [warning wave warnings](../compiler-messages/warning-waves.md). However, the .NET SDK sets the *WarningLevel* to match the *AnalysisLevel* in your project file.
@@ -52,6 +52,10 @@ The element value is the warning level you want displayed for the compilation: L
 To get information about an error or warning, you can look up the error code in the [Help Index](/visualstudio/help-viewer/install-manage-local-content). For other ways to get information about an error or warning, see [C# Compiler Errors](../compiler-messages/index.md). Use [**TreatWarningsAsErrors**](#treatwarningsaserrors) to treat all warnings as errors. Use [**DisabledWarnings**](#nowarn) to disable certain warnings.  
 
 ## Analysis level
+
+```xml
+<AnalysisLevel>preview</AnalysisLevel>
+```
 
 | Analysis level   | Meaning |
 |------------------|---------|

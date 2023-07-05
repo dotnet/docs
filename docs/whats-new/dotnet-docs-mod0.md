@@ -41,7 +41,6 @@ Welcome to what's new in the .NET docs for June 2023. This article lists some of
 ### New articles
 
 - [.NET observability with OpenTelemetry](../core/diagnostics/observability-with-otel.md)
-- [Title not found in: #35747](../core/diagnostics/snippets/metrics/prometheus.yml)
 - [SYSLIB0053: AesGcm should indicate the required tag size](../fundamentals/syslib-diagnostics/syslib0053.md)
 - [Specialized diagnostics](../core/diagnostics/specialized-diagnostics-overview.md)
 - [.NET diagnostic tools](../core/diagnostics/tools-overview.md)

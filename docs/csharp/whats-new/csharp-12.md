@@ -39,7 +39,7 @@ You can use the `using` alias directive to alias any type, not just named types.
 
 An *interceptor* is a method which can declaratively substitute a call to an *interceptable* method with a call to itself at compile time. This substitution occurs by having the interceptor declare the source locations of the calls that it intercepts. This provides a limited facility to change the semantics of existing code by adding new code to a compilation, for example in a source generator.
 
-You use an *interceptor* as part of a source generator to modify, rather than add code to an existing soruce compilation. The source generator substitutes calls to an interceptable method with a call to the *interceptor* method.
+You use an *interceptor* as part of a source generator to modify, rather than add code to an existing source compilation. The source generator substitutes calls to an interceptable method with a call to the *interceptor* method.
 
 If you are interested in experimenting with interceptors, you can learn more by reading the [feature specification](https://github.com/dotnet/roslyn/blob/main/docs/features/interceptors.md). If you use the feature, make sure to stay current with any changes in the feature specification for this preview feature. Once the feature is finalized, we'll add more guidance on this site.
 

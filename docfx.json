@@ -467,7 +467,7 @@
                 "_csharplang/proposals/csharp-9.0/*.md": "07/29/2020",
                 "_csharplang/proposals/csharp-10.0/*.md": "08/07/2021",
                 "_csharplang/proposals/csharp-11.0/*.md": "09/30/2022",
-                "_csharplang/proposals/*.md": "04/03/2023",
+                "_csharplang/proposals/*.md": "07/06/2023",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "11/08/2022",
                 "_vblang/spec/*.md": "07/21/2017"
             },
@@ -669,6 +669,8 @@
                 "_csharplang/proposals/primary-constructors.md": "Primary constructors",
                 "_csharplang/proposals/using-alias-types.md": "Alias any type",
                 "_csharplang/proposals/lambda-method-group-defaults.md": "Optional and parameter array parameters for lambdas and method groups",
+                "_csharplang/proposals/inline-arrays.md": "Inline arrays, or fixed sized buffers",
+                
 
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "C# compiler breaking changes since C# 10",
                 "_vblang/spec/introduction.md": "Introduction",
@@ -778,8 +780,9 @@
 
                 "_csharplang/proposals/primary-constructors.md": "Primary constructors put the parameters of one constructor in scope for the whole class or struct to be used for initialization or directly as object state. The trade-off is that any other constructors must call through the primary constructor.",
                 "_csharplang/proposals/using-alias-types.md": "Using directives can alias any type, not just named types. You can create aliases for tuple types, generics and more.",
-                "_csharplang/proposals/lambda-method-group-defaults.md": "Lambda expressions can now declare default parameters and params arrays parameters.",
-
+                "_csharplang/proposals/lambda-method-group-defaults.md": "Optional and parameter array parameters for lambdas and method groups",
+                "_csharplang/proposals/inline-arrays.md": "Inline arrays provide a general-purpose and safe mechanism for declaring inline arrays within C# classes, structs, and interfaces.",
+                
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "Learn about any breaking changes since the initial release of C# 10",
                 "_vblang/spec/introduction.md": "This chapter provides and introduction to the Visual Basic language.",
                 "_vblang/spec/lexical-grammar.md": "This chapter defines the lexical grammar for Visual Basic.",

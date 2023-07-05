@@ -10,6 +10,7 @@ Some C# 12 features have been introduced in previews. You can try these features
 - [Primary constructors](#primary-constructors) - Introduced in Visual Studio 17.6 preview 2.
 - [Optional parameters in lambda expressions](#default-lambda-parameters) - Introduced in Visual Studio 17.5 preview 2.
 - [Alias any type](#alias-any-type) - Introduced in Visual Studio 17.6 preview 3.
+- [Inline arrays](#inline-arrays) - 
 - [Interceptors](#interceptors) - *Preview feature* Introduced in Visual Studio 17.7, preview 3.
 
 ## Primary constructors
@@ -29,6 +30,10 @@ You can learn more about default parameters on lambda expressions in the article
 ## Alias any type
 
 You can use the `using` alias directive to alias any type, not just named types. That means you can create semantic aliases for tuple types, array types, pointer types, or other unsafe types. For more information, see the [feature specification](~/_csharplang/proposals/using-alias-types.md)
+
+## Inline arrays
+
+Inline arrays are used by the runtime team and other library authors to improve performance in your application. Inline arrays enable a developer to create an array of fixed size in a `struct` type. A struct with an inline buffer should provide performance characteristics similar to an unsafe fixed size buffer. You likely won't eclare your own inline arrays, but you'll use them transparently when they are exposes as <xref:System.Span%601?displayProperty=nameWithType> or <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> objects from runtime APIs.
 
 ## Interceptors
 

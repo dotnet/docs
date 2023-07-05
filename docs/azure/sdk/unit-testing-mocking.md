@@ -13,7 +13,7 @@ In this article, you'll learn how to write unit tests for the Azure SDK that iso
 
 ## Understand service clients
 
-A service client class is the main entry point for developers in an Azure SDK library and implements most of the logic to communicate with the Azure service. When unit testing service client classes, it’s important to be able to create an instance of the client that behaves as expected without making any network calls.
+A service client class is the main entry point for developers in an Azure SDK library and implements most of the logic to communicate with the Azure service. When unit testing service client classes, it's important to be able to create an instance of the client that behaves as expected without making any network calls.
 
 Each of the Azure SDK clients follows mocking guidelines that allow their behavior to be overridden:
 
@@ -27,34 +27,50 @@ To create a test client instance, inherit from the client type and override meth
 
 ```csharp
 public class MockSecretClient : SecretClient 
-{ 
-    public MockSecretClient() {}
-
-    public override Response<KeyVaultSecret> GetSecret(string name, string version = null, CancellationToken cancellationToken = default) => ...;
-    public override Task<Response<KeyVaultSecret>> GetSecretAsync(string name, string version = null, CancellationToken cancellationToken = default) => ...;
-
+{
+    public override Response<KeyVaultSecret> GetSecret(
+        string name,
+        string version = null, 
+        CancellationToken cancellationToken = default)
+        => throw new NotImplementedException();
+        
+    public override Task<Response<KeyVaultSecret>> GetSecretAsync(
+        string name, 
+        string version = null, 
+        CancellationToken cancellationToken = default)
+        => throw new NotImplementedException();
 }
 
 SecretClient secretClient = new MockSecretClient();
 ```
 
-It can be cumbersome to define a test instance of the class, especially if you need to customize behavior differently for each test. Mocking frameworks allow you to simplify the code that you must write to override member behavior (as well as other useful features that are beyond the scope of this article). We’ll illustrate this set of examples using a popular .NET mocking framework, Moq.
+It's cumbersome to define a test instance of the class, especially if you need to customize behavior differently for each test. Mocking frameworks allow you to simplify the code that you must write to override member behavior (as well as other useful features that are beyond the scope of this article). The examples in this article use a popular .NET mocking framework, Moq.
 
 To create a test client instance using Moq:
 
 ```csharp
+KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
+    new SecretProperties("secret"), "secretValue");
 Mock<SecretClient> clientMock = new Mock<SecretClient>();
-clientMock.Setup(c => c.GetSecret(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<CancellationToken>()))
-        .Returns(...);
+clientMock.Setup(c => c.GetSecret(
+        It.IsAny<string>(),
+        It.IsAny<string>(),
+        It.IsAny<CancellationToken>())
+    )
+    .Returns(Response.FromValue(keyVaultSecret, Mock.Of<Response>()));
 
-clientMock.Setup(c => c.GetSecretAsync(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<CancellationToken>()))
-        .ReturnsAsync(...);
+clientMock.Setup(c => c.GetSecretAsync(
+        It.IsAny<string>(), 
+        It.IsAny<string>(), 
+        It.IsAny<CancellationToken>())
+    )
+    .ReturnsAsync(Response.FromValue(keyVaultSecret, Mock.Of<Response>()));
 
 SecretClient secretClient = clientMock.Object;
 ```
 
 > [!NOTE]
-> When created using a parameterless constructor, the client is not fully initialized leaving client behavior undefined. In practice, this means that most will throw an exception if called without an overridden implementation.
+> When created using a parameterless constructor, the client isn't fully initialized leaving client behavior undefined. In practice, this means that most will throw an exception if called without an overridden implementation.
 
 ### Service input and output models
 
@@ -66,21 +82,27 @@ Model types hold the data being sent and received from Azure services. There are
 To create a test instance of an input model use one of the available public constructors and set additional properties you need.
 
 ```csharp
-SecretProperties secretProperties = new SecretProperties("secret"); secretProperties.NotBefore = DateTimeOffset.Now;
+SecretProperties secretProperties = new("secret")
+{
+    NotBefore = DateTimeOffset.Now
+};
 ```
 
 To create instances of output models, a model factory is used. For most Azure SDK client libraries, the model factory is a static class that ends in `ModelFactory` and contains a set of static methods to create and initialize the library’s output model types.
 
 ```C#
-KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(new SecretProperties("secret"), "secretValue");
+KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
+    new SecretProperties("secret"), "secretValue");
 ```
 
 > [!NOTE]
-> Some input models have read-only properties that are only populated when the model is returned by the service. In this case, a model factory method will be available that allows setting these properties.
+> Some input models have read-only properties that are only populated when the model is returned by the service. In this case, a model factory method will be available that allows setting these properties. See <xref:Azure.Security.KeyVault.Secrets.SecretModelFactory>.
 
 ```csharp
-// CreatedOn is a read-only property and can only be set via a model factory SecretProperties        
-secretPropertiesWithCreatedOn = SecretModelFactory.SecretProperties(name: "secret", createdOn: DateTimeOffset.Now);
+// CreatedOn is a read-only property and can only be 
+// set via a model factory SecretProperties.
+secretPropertiesWithCreatedOn = SecretModelFactory.SecretProperties(
+    name: "secret", createdOn: DateTimeOffset.Now);
 ```
 
 ## Explore response types
@@ -111,17 +133,21 @@ The Response class is abstract, which means there are a lot of members to overri
 ```csharp
 public class TestResponse : Response
 {
-    protected override bool TryGetHeader(string name, out string value) => ...;
-    protected override bool TryGetHeaderValues(string name, out IEnumerable<string> values) => ...;
-    protected override bool ContainsHeader(string name) => ...;
-    protected override IEnumerable<HttpHeader> EnumerateHeaders() => ...;
+    protected override bool TryGetHeader(string name, out string value)
+        => throw new NotImplementedException();
+    protected override bool TryGetHeaderValues(string name, out IEnumerable<string> values)
+        => throw new NotImplementedException();
+         
+    protected override bool ContainsHeader(string name) => throw new NotImplementedException();
+    protected override IEnumerable<HttpHeader> EnumerateHeaders() 
+        => throw new NotImplementedException();
 
-    public override int Status => ...;
-    public override string ReasonPhrase => ...;
-    public override Stream ContentStream => ...;
-    public override string ClientRequestId => ...;
+    public override int Status => throw new NotImplementedException();
+    public override string ReasonPhrase => throw new NotImplementedException();
+    public override Stream ContentStream => throw new NotImplementedException();
+    public override string ClientRequestId => throw new NotImplementedException();
 
-    public override void Dispose() => ...;
+    public override void Dispose() => throw new NotImplementedException();
 }
 ```
 
@@ -132,7 +158,8 @@ Some services also support using the `Response<T>` type, which is a class that c
 ## [Moq](#tab/moq)
 
 ```csharp
-KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(new SecretProperties("secret"), "secretValue");
+KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
+    new SecretProperties("secret"), "secretValue");
 Response response = Response.FromValue(keyVaultSecret, new TestResponse());
 ```
 
@@ -256,13 +283,11 @@ When unit testing you only want the unit tests to verify the application logic a
 
 ```csharp
 public class AboutToExpireSecretFinderTests
-{ 
-
+{
     [Fact] 
     public async Task DoesNotReturnNonExpiringSecrets() 
-    { 
+    {
         // Arrange
-    
         // Create a page of enumeration results
         Page<SecretProperties> page = Page<SecretProperties>.FromValues(new[]
         {
@@ -331,6 +356,10 @@ public class AboutToExpireSecretFinder
 {
     public AboutToExpireSecretFinder(TimeSpan threshold)
     {
+<<<<<<< HEAD
+=======
+        _threshold = threshold;
+>>>>>>> 38156325c33d9943fd87459ff7507f4005ae87b8
         _client = new SecretClient(
             new Uri(Environment.GetEnvironmentVariable("KeyVaultUri")),
             new DefaultAzureCredential());
@@ -345,7 +374,11 @@ public class AboutToExpireSecretFinder
 {
     public AboutToExpireSecretFinder(TimeSpan threshold, SecretClient client = null) 
     { 
+<<<<<<< HEAD
          _threshold = threshold; 
+=======
+        _threshold = threshold; 
+>>>>>>> 38156325c33d9943fd87459ff7507f4005ae87b8
         _client = client ?? new SecretClient(
             new Uri(Environment.GetEnvironmentVariable("KeyVaultUri")),
             new DefaultAzureCredential());

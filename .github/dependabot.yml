@@ -33,6 +33,12 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
+    directory: "/docs/core/diagnostics/snippets/OTel-Prometheus-Grafana-Jaeger/csharp" #OTel-Prometheus-Grafana-Jaeger.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
     directory: "/docs/core/docker/snippets/Worker" #DotNet.ContainerImage.csproj
     schedule:
       interval: "weekly"
@@ -1197,7 +1203,7 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToVerifyXMLDocumentRSA/vb" #verifyxml.vbproj
+    directory: "/samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_cancellationwinforms/vb/cancellationwinforms" #cancellationwinforms.vbproj
     schedule:
       interval: "weekly"
       day: "wednesday"

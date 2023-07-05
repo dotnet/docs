@@ -145,9 +145,9 @@ As the preceding example shows, you can repeatedly use the pattern combinators i
 
 ### Precedence and order of checking
 
-A pattern that is part of an `is` expression has *relational* precedence. It's the same precedence as the `is` operator. Pattern expressions in the `case` arms of a `switch` statement have the same precedence as the *conditional logical* operators (`||` and `&&`). Pattern expressions inside a `switch` expression have the same precedence as the coalescing operators (`??` and `throw` expressions).
+When a logical pattern is a pattern of an `is` expression, the precedence of logical pattern combinators is **higher** than the precedence of logical operators. Otherwise, the precedence of logical pattern combinators is **lower** than the precedence of logical and conditional logical operators.
 
-The individual pattern expressions are evaluated in order, except as noted for the pattern combinators. The pattern combinators are ordered from the highest precedence to the lowest as shown in the following list:
+The pattern combinators are ordered from the highest precedence to the lowest as shown in the following list:
 
 - `not`
 - `and`

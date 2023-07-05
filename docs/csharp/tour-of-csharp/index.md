@@ -40,7 +40,7 @@ The `Hello` class declared by the "Hello, World" program has a single member, th
 
 The line starting with `//` is a *single line comment*. C# single line comments start with  `//` continue to the end of the current line. C# also supports *multi-line comments*. Multi-line comments start with `/*` and end with `*/`. The output of the program is produced by the `WriteLine` method of the `Console` class in the `System` namespace. This class is provided by the standard class libraries, which, by default, are automatically referenced by the compiler.
 
-You use the [.NET SDK](https://dotnet.microsoft.com/download) to build your own "Hello, World" program. Once you install the SDK, you run `dotnet new console` to create a basic "Hello, World" program that you can modify. For more information, see the [Hello, World tutorial](../..//core/get-started.md) in the .NET Get started section.
+You use the [.NET SDK](https://dotnet.microsoft.com/download) to build your own "Hello, World" program. Once you install the SDK, you run `dotnet new console` to create a basic "Hello, World" program that you can modify. For more information, see the [Hello, World tutorial](../../core/get-started.md) in the .NET Get started section.
 
 ## Types and variables
 

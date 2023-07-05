@@ -87,7 +87,7 @@ wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
 Before running this script, you'll need to grant permission for this script to run as an executable:
 
 ```bash
-sudo chmod +x ./dotnet-install.sh
+chmod +x ./dotnet-install.sh
 ```
 
 The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) SDK version, which is .NET 6. To install the latest release, which may not be an (LTS) version, use the `--version latest` parameter.
@@ -168,7 +168,7 @@ Set the following two environment variables in your shell profile:
   This variable should include both the `DOTNET_ROOT` folder and the user's _.dotnet/tools_ folder:
 
   ```bash
-  export PATH=$PATH:$HOME/.dotnet:$HOME/.dotnet/tools
+  export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
   ```
 
 ## Next steps

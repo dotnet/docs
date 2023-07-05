@@ -11,9 +11,9 @@ Unit testing is an important part of a sustainable development process that can 
 
 In this article, we’ll show you how to use the Azure SDK to write great unit tests that isolate your dependencies to make your tests more reliable. First, we’ll show you how many of the Azure SDK building blocks have been designed to be replaced with an in-memory test implementation. Then, we’ll show you how the pieces come together into a fast and reliable unit test. Finally, we’ll provide some design tips to help you design your own classes to better support unit testing.
 
-## Understanding service clients
+## Understand service clients
 
-A service client class is the main entry point for developers in an Azure SDK library and implements most of the logic to communicate with the Azure service. When unit testing service client classes, it’s important to be able to create an instance of the client that behaves as expected without making any network calls.
+A service client class is the main entry point for developers in an Azure SDK library and implements most of the logic to communicate with the Azure service. When unit testing service client classes, it's important to be able to create an instance of the client that behaves as expected without making any network calls.
 
 Each of the Azure SDK clients follows mocking guidelines that allow their behavior to be overridden:
 
@@ -27,36 +27,52 @@ To create a test client instance, inherit from the client type and override meth
 
 ```csharp
 public class MockSecretClient : SecretClient 
-{ 
-    public MockSecretClient() {}
-
-    public override Response<KeyVaultSecret> GetSecret(string name, string version = null, CancellationToken cancellationToken = default) => ...;
-    public override Task<Response<KeyVaultSecret>> GetSecretAsync(string name, string version = null, CancellationToken cancellationToken = default) => ...;
-
+{
+    public override Response<KeyVaultSecret> GetSecret(
+        string name,
+        string version = null, 
+        CancellationToken cancellationToken = default)
+        => throw new NotImplementedException();
+        
+    public override Task<Response<KeyVaultSecret>> GetSecretAsync(
+        string name, 
+        string version = null, 
+        CancellationToken cancellationToken = default)
+        => throw new NotImplementedException();
 }
 
 SecretClient secretClient = new MockSecretClient();
 ```
 
-It can be cumbersome to define a test instance of the class, especially if you need to customize behavior differently for each test. Mocking frameworks allow you to simplify the code that you must write to override member behavior (as well as other useful features that are beyond the scope of this article). We’ll illustrate this set of examples using a popular .NET mocking framework, Moq.
+It's cumbersome to define a test instance of the class, especially if you need to customize behavior differently for each test. Mocking frameworks allow you to simplify the code that you must write to override member behavior (as well as other useful features that are beyond the scope of this article). The examples in this article use a popular .NET mocking framework, Moq.
 
 To create a test client instance using Moq:
 
 ```csharp
+KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
+    new SecretProperties("secret"), "secretValue");
 Mock<SecretClient> clientMock = new Mock<SecretClient>();
-clientMock.Setup(c => c.GetSecret(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<CancellationToken>()))
-        .Returns(...);
+clientMock.Setup(c => c.GetSecret(
+        It.IsAny<string>(),
+        It.IsAny<string>(),
+        It.IsAny<CancellationToken>())
+    )
+    .Returns(Response.FromValue(keyVaultSecret, Mock.Of<Response>()));
 
-clientMock.Setup(c => c.GetSecretAsync(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<CancellationToken>()))
-        .ReturnsAsync(...);
+clientMock.Setup(c => c.GetSecretAsync(
+        It.IsAny<string>(), 
+        It.IsAny<string>(), 
+        It.IsAny<CancellationToken>())
+    )
+    .ReturnsAsync(Response.FromValue(keyVaultSecret, Mock.Of<Response>()));
 
 SecretClient secretClient = clientMock.Object;
 ```
 
 > [!NOTE]
-> When created using a parameterless constructor, the client is not fully initialized leaving client behavior undefined. In practice, this means that most will throw an exception if called without an overridden implementation.
+> When created using a parameterless constructor, the client isn't fully initialized leaving client behavior undefined. In practice, this means that most will throw an exception if called without an overridden implementation.
 
-## Working with input and output models
+## Work with input and output models
 
 Model types hold the data being sent and received from Azure services. There are two main kinds of models.
 
@@ -66,24 +82,30 @@ Model types hold the data being sent and received from Azure services. There are
 To create a test instance of an input model use one of the available public constructors and set additional properties you need.
 
 ```csharp
-SecretProperties secretProperties = new SecretProperties("secret"); secretProperties.NotBefore = DateTimeOffset.Now;
+SecretProperties secretProperties = new("secret")
+{
+    NotBefore = DateTimeOffset.Now
+};
 ```
 
-To create instances of output models, a model factory is used. For most Azure SDK client libraries, the model factory is a static class that ends in ModelFactory and contains a set of static methods to create and initialize the library’s output model types.
+To create instances of output models, a model factory is used. For most Azure SDK client libraries, the model factory is a static class that ends in `ModelFactory` and contains a set of static methods to create and initialize the library's output model types.
 
 ```C#
-KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(new SecretProperties("secret"), "secretValue");
+KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
+    new SecretProperties("secret"), "secretValue");
 ```
 
 > [!NOTE]
-> Some input models have read-only properties that are only populated when the model is returned by the service. In this case, a model factory method will be available that allows setting these properties.
+> Some input models have read-only properties that are only populated when the model is returned by the service. In this case, a model factory method will be available that allows setting these properties. See <xref:Azure.Security.KeyVault.Secrets.SecretModelFactory>.
 
 ```csharp
-// CreatedOn is a read-only property and can only be set via a model factory SecretProperties        
-secretPropertiesWithCreatedOn = SecretModelFactory.SecretProperties(name: "secret", createdOn: DateTimeOffset.Now);
+// CreatedOn is a read-only property and can only be 
+// set via a model factory SecretProperties.
+secretPropertiesWithCreatedOn = SecretModelFactory.SecretProperties(
+    name: "secret", createdOn: DateTimeOffset.Now);
 ```
 
-## Working with response types
+## Work with response types
 
 The `Response` class is an abstract class that represents an HTTP response and is a part of almost all types returned by client methods. There are several different variations of the `Response` type you will encounter when testing Azure services. You can create test `Response` instances using either the Moq library or standard C# inheritence.
 
@@ -111,47 +133,54 @@ The Response class is abstract, which means there are a lot of members to overri
 ```csharp
 public class TestResponse : Response
 {
-    protected override bool TryGetHeader(string name, out string value) => ...;
-    protected override bool TryGetHeaderValues(string name, out IEnumerable<string> values) => ...;
-    protected override bool ContainsHeader(string name) => ...;
-    protected override IEnumerable<HttpHeader> EnumerateHeaders() => ...;
+    protected override bool TryGetHeader(string name, out string value)
+        => throw new NotImplementedException();
+    protected override bool TryGetHeaderValues(string name, out IEnumerable<string> values)
+        => throw new NotImplementedException();
+         
+    protected override bool ContainsHeader(string name) => throw new NotImplementedException();
+    protected override IEnumerable<HttpHeader> EnumerateHeaders() 
+        => throw new NotImplementedException();
 
-    public override int Status => ...;
-    public override string ReasonPhrase => ...;
-    public override Stream ContentStream => ...;
-    public override string ClientRequestId => ...;
+    public override int Status => throw new NotImplementedException();
+    public override string ReasonPhrase => throw new NotImplementedException();
+    public override Stream ContentStream => throw new NotImplementedException();
+    public override string ClientRequestId => throw new NotImplementedException();
 
-    public override void Dispose() => ...;
+    public override void Dispose() => throw new NotImplementedException();
 }
 ```
 
 ---
 
-### Response<T>
+### Response\<T\>
 
 The `Response<T>` is a class that contains a model and the HTTP response that returned it. To create a test instance of `Response<T>` use the static Response.FromValue method:
 
 ## [Moq](#tab/moq)
 
 ```csharp
-KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(new SecretProperties("secret"), "secretValue");
+KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
+    new SecretProperties("secret"), "secretValue");
 Response response = Response.FromValue(keyVaultSecret, new TestResponse());
 ```
 
 ## [C#](#tab/csharp)
 
 ```csharp
-KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(new SecretProperties("secret"), "secretValue");
-Response<KeyVaultSecret> response = Response.FromValue(keyVaultSecret, Mock.Of<Response>());
+KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
+    new SecretProperties("secret"), "secretValue");
+Response<KeyVaultSecret> response = Response.FromValue(
+    keyVaultSecret, Mock.Of<Response>());
 ```
 
 ---
 
-### Page<T>
+### Page\<T\>
 
-The Page<T> is used as a building block in service methods that invoke operations returning results in multiple pages. The Page<T> is rarely returned from APIs directly but is useful to create the AsyncPageable<T> and Pageable<T> instances we’ll discuss in the next section. To create a Page<T> instance, use the Page<T>.FromValues method, passing a list of items, a continuation token, and the Response.
+The `Page<T>` is used as a building block in service methods that invoke operations returning results in multiple pages. The `Page<T>` is rarely returned from APIs directly but is useful to create the `AsyncPageable<T>` and `Pageable<T>` instances we’ll discuss in the next section. To create a `Page<T>` instance, use the `Page<T>.FromValues` method, passing a list of items, a continuation token, and the `Response`.
 
-The continuationToken parameter is used to retrieve the next page from the service. For unit testing purposes, it should be set to null for the last page and should be non-empty for other pages.
+The `continuationToken` parameter is used to retrieve the next page from the service. For unit testing purposes, it should be set to null for the last page and should be non-empty for other pages.
 
 ## [Moq](#tab/moq)
 
@@ -168,30 +197,58 @@ Page<SecretProperties> responsePage = Page<SecretProperties>.FromValues(
 ## [C#](#tab/csharp)
 
 ```csharp
-Page responsePage = Page.FromValues( new[] { new SecretProperties("secret1"), new SecretProperties("secret2") }, continuationToken: null, new TestResponse());
+Page responsePage = Page.FromValues(
+    new[]
+    {
+        new SecretProperties("secret1"),
+        new SecretProperties("secret2")
+    }, 
+    continuationToken: null,
+    new TestResponse());
 ```
 
 ---
 
-### AsyncPageable<T> and Pageable<T>
+### AsyncPageable\<T\> and Pageable\<T\>
 
-AsyncPageable<T> and Pageable<T> are classes that represent collections of models returned by the service in pages. The only difference between them is that one is used with synchronous methods while the other is used with asynchronous methods.
+`AsyncPageable<T>` and `Pageable<T>` are classes that represent collections of models returned by the service in pages. The only difference between them is that one is used with synchronous methods while the other is used with asynchronous methods.
 
 To create a test instance of Pageable or AsyncPageable, use the FromPages static method:
 
 ```csharp
-Page page1 = Page.FromValues(new[] { new SecretProperties("secret1"), new SecretProperties("secret2") }, "continuationToken", Mock.Of<Response>());
+Page page1 = Page.FromValues(
+    new[]
+    {
+        new SecretProperties("secret1"),
+        new SecretProperties("secret2")
+    },
+    "continuationToken",
+    Mock.Of<Response>());
 
-Page page2 = Page.FromValues(new[] { new SecretProperties("secret3"), new SecretProperties("secret4") }, "continuationToken2", Mock.Of<Response>());
+Page page2 = Page.FromValues(
+    new[]
+    {
+        new SecretProperties("secret3"),
+        new SecretProperties("secret4")
+    },
+    "continuationToken2",
+    Mock.Of<Response>());
 
-Page lastPage = Page.FromValues(new[] { new SecretProperties("secret5"), new SecretProperties("secret6") }, continuationToken: null, Mock.Of<Response>());
+Page lastPage = Page.FromValues(
+    new[]
+    {
+        new SecretProperties("secret5"),
+        new SecretProperties("secret6")
+    },
+    continuationToken: null,
+    Mock.Of<Response>());
 
 Pageable pageable = Pageable.FromPages(new[] { page1, page2, lastPage });
 
 AsyncPageable asyncPageable = AsyncPageable.FromPages(new[] { page1, page2, lastPage }); )
 ```
 
-## Writing a mocked unit test
+## Write a mocked unit test
 
 Suppose your class contains a class that finds the names of keys that will expire within a given amount of time.
 
@@ -209,11 +266,11 @@ public class AboutToExpireSecretFinder
 
     public async Task<string[]> GetAboutToExpireSecrets()
     {
-        List<string> secretsAboutToExpire = new List<string>();
+        List<string> secretsAboutToExpire = new();
 
         await foreach (var secret in _client.GetPropertiesOfSecretsAsync())
         {
-            if (secret.ExpiresOn != null &&
+            if (secret.ExpiresOn.HasValue &&
                 secret.ExpiresOn.Value - DateTimeOffset.Now <= _threshold)
             {
                 secretsAboutToExpire.Add(secret.Name);
@@ -233,12 +290,13 @@ You want to test the following behaviors of the `AboutToExpireSecretFinder` to e
 When unit testing you only want the unit tests to verify the application logic and not whether the Azure service or SDK works correctly. The following example tests the key behaviors using the popular xUnit framework for C#:
 
 ```csharp
-public class AboutToExpireSecretFinderTests { 
+public class AboutToExpireSecretFinderTests
+{
 
     [Fact] 
     public async Task DoesNotReturnNonExpiringSecrets() 
-    { // Arrange
-    
+    {
+        // Arrange
         // Create a page of enumeration results
         Page<SecretProperties> page = Page<SecretProperties>.FromValues(new[]
         {
@@ -308,7 +366,9 @@ public class AboutToExpireSecretFinder
     public AboutToExpireSecretFinder(TimeSpan threshold)
     {
         _threshold = threshold;
-        _client = new SecretClient(new Uri(Environment.GetEnvironmentVariable("KeyVaultUri")), new DefaultAzureCredential());
+        _client = new SecretClient(
+            new Uri(Environment.GetEnvironmentVariable("KeyVaultUri")),
+            new DefaultAzureCredential());
     }
 }
 ```
@@ -320,8 +380,10 @@ public class AboutToExpireSecretFinder
 {
     public AboutToExpireSecretFinder(TimeSpan threshold, SecretClient client = null) 
     { 
-        \_threshold = threshold; 
-        \_client = client ?? new SecretClient(new Uri(Environment.GetEnvironmentVariable("KeyVaultUri")), new DefaultAzureCredential());
+        _threshold = threshold; 
+        _client = client ?? new SecretClient(
+            new Uri(Environment.GetEnvironmentVariable("KeyVaultUri")),
+            new DefaultAzureCredential());
     }
 }
 ```
@@ -338,7 +400,9 @@ public class AboutToExpireSecretFinder
     }
 }
 
-var secretClient = new SecretClient(new Uri(Environment.GetEnvironmentVariable("KeyVaultUri")), new DefaultAzureCredential());
+var secretClient = new SecretClient(
+    new Uri(Environment.GetEnvironmentVariable("KeyVaultUri")), 
+    new DefaultAzureCredential());
 var finder = new AboutToExpireSecretFinder(TimeSpan.FromDays(2), secretClient);
 ```
 

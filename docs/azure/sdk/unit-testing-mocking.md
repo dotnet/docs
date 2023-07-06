@@ -7,9 +7,9 @@ ms.date: 07/05/2023
 
 # Unit testing and mocking with the Azure SDK .NET
 
-Unit testing is an important development process that can improve code quality and prevent regressions or bugs in your app. However, unit testing presents challenges when the code you are testing communicates with an Azure service over a network. Tests that run against live services can experience issues such as latency that slows down test execution, dependencies on code outside of the isolated test, and issues with managing service state and costs every time the test is run. Instead of testing against live Azure services, replace the service clients with mocked or in-memory implementations. This practice helps developers focus on testing their application logic, independent from the network and service.
+Unit testing is an important part of a sustainable development process that can improve code quality and prevent regressions or bugs in your apps. However, unit testing presents challenges when the code you're testing performs network calls to Azure resources. Tests that run against live services can experience issues, such as, latency that slows down test execution, dependencies on code outside of the isolated test, and issues with managing service state and costs every time the test is run. Instead of testing against live Azure services, replace the service clients with mocked or in-memory implementations. This avoids the above issues and lets developers focus on testing their application logic, independent from the network and service.
 
-In this article, you'll learn how to write unit tests for the Azure SDK that isolate your dependencies to make your tests more reliable. You'll also learn how to replace key components with in-memory test implementations to create fast and reliable unit tests, and see how to design your own classes to better support unit testing.
+In this article, you'll learn how to write unit tests for the Azure SDK that isolate your dependencies to make your tests more reliable. You'll also learn how to replace key components with in-memory test implementations to create fast and reliable unit tests, and see how to design your own classes to better support unit testing. This article includes examples that use [Moq](https://www.nuget.org/packages/moq/), which is a popular mocking and testing library for .NET
 
 ## Understand service clients
 
@@ -44,9 +44,7 @@ public class MockSecretClient : SecretClient
 SecretClient secretClient = new MockSecretClient();
 ```
 
-It's cumbersome to define a test instance of the class, especially if you need to customize behavior differently for each test. Mocking frameworks allow you to simplify the code that you must write to override member behavior (as well as other useful features that are beyond the scope of this article). The examples in this article use a popular .NET mocking framework, Moq.
-
-To create a test client instance using Moq:
+It's cumbersome to define a test instance of the class, especially if you need to customize behavior differently for each test. Mocking frameworks allow you to simplify the code that you must write to override member behavior (as well as other useful features that are beyond the scope of this article). To create a test client instance using Moq:
 
 ```csharp
 KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(

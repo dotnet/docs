@@ -11,7 +11,7 @@ Metrics are numerical measurements reported over time. They are typically used t
 
 * Requests it received per second.
 * Milliseconds it took to respond.
-* Responses sent an error.
+* Error responses sent.
 
 These metrics can be reported to a monitoring system at regular intervals. If the web service is intended to respond to requests within 400 ms and starts responding in 600 ms, the monitoring system can notify engineers that the app response is slower than normal.
 
@@ -23,7 +23,6 @@ There are two parts to using metrics in a .NET app:
 * **Collection:** A .NET app configures named metrics to be transmitted from the app for external storage and analysis. Some tools may perform configuration outside the app using configuration files or a UI tool.
 
 .NET library developers are primarily interested in the instrumentation step. App developers or operational engineers usually focus on the collection step, leveraging the pre-existing instrumentation within libraries they are using. However, if you're an app developer and none of the existing metrics meet your needs, you can create new metrics.
-
 
 ## Next steps
 

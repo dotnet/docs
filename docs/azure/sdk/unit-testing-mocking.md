@@ -21,7 +21,7 @@ Each of the Azure SDK clients follows mocking guidelines that allow their behavi
 * All public client members are virtual to allow overriding.
 
 > [!NOTE]
-> The code examples in this article use types from the `Azure.Security.KeyVault.Secrets` library for the Azure Key Vault service. The concepts demonstrated in this article also apply to service clients from many other Azure services, such as Azure Storage or Azure Service Bus.
+> The code examples in this article use types from the [`Azure.Security.KeyVault.Secrets`](https://www.nuget.org/packages/Azure.Security.KeyVault.Secrets/) library for the Azure Key Vault service. The concepts demonstrated in this article also apply to service clients from many other Azure services, such as Azure Storage or Azure Service Bus.
 
 To create a test client instance, inherit from the client type and override methods you are calling in your code with an implementation that returns a set of test objects. Most clients contain both synchronous and asynchronous methods for operations; override only the one your application code is calling.
 
@@ -107,7 +107,7 @@ secretPropertiesWithCreatedOn = SecretModelFactory.SecretProperties(
 
 ## Explore response types
 
-The `Response` class is an abstract class that represents an HTTP response and is a part of almost all types returned by client methods. You can create test `Response` instances using either the Moq library or standard C# inheritence.
+The <xref:Azure.Response> class is an abstract class that represents an HTTP response and is a part of almost all types returned by client methods. You can create test `Response` instances using either the Moq library or standard C# inheritence.
 
 ## [Moq](#tab/moq)
 
@@ -153,7 +153,7 @@ public class TestResponse : Response
 
 ---
 
-Some services also support using the `Response<T>` type, which is a class that contains a model and the HTTP response that returned it. To create a test instance of `Response<T>` use the static Response.FromValue method:
+Some services also support using the <xref:Azure.Response\<T\>> type, which is a class that contains a model and the HTTP response that returned it. To create a test instance of `Response<T>` use the static Response.FromValue method:
 
 ## [Moq](#tab/moq)
 
@@ -176,7 +176,7 @@ Response<KeyVaultSecret> response = Response.FromValue(
 
 ### Explore Paging
 
-The `Page<T>` is used as a building block in service methods that invoke operations returning results in multiple pages. The `Page<T>` is rarely returned from APIs directly but is useful to create the `AsyncPageable<T>` and `Pageable<T>` instances we’ll discuss in the next section. To create a `Page<T>` instance, use the `Page<T>.FromValues` method, passing a list of items, a continuation token, and the Response.
+The <xref:Azure.Page\<T\>> is used as a building block in service methods that invoke operations returning results in multiple pages. The `Page<T>` is rarely returned from APIs directly but is useful to create the `AsyncPageable<T>` and `Pageable<T>` instances we’ll discuss in the next section. To create a `Page<T>` instance, use the `Page<T>.FromValues` method, passing a list of items, a continuation token, and the Response.
 
 The `continuationToken` parameter is used to retrieve the next page from the service. For unit testing purposes, it should be set to null for the last page and should be non-empty for other pages.
 
@@ -207,7 +207,7 @@ Page responsePage = Page.FromValues(
 
 ---
 
-`AsyncPageable<T>` and `Pageable<T>` are classes that represent collections of models returned by the service in pages. The only difference between them is that one is used with synchronous methods while the other is used with asynchronous methods.
+<xref:Azure.AsyncPageable\<T\>> and <xref:Azure.Pageable\<T\>>  are classes that represent collections of models returned by the service in pages. The only difference between them is that one is used with synchronous methods while the other is used with asynchronous methods.
 
 To create a test instance of `Pageable` or `AsyncPageable`, use the `FromPages` static method:
 
@@ -220,6 +220,7 @@ Page page1 = Page.FromValues(
     },
     "continuationToken",
     Mock.Of<Response>());
+
 Page page2 = Page.FromValues(
     new[]
     {
@@ -228,6 +229,7 @@ Page page2 = Page.FromValues(
     },
     "continuationToken2",
     Mock.Of<Response>());
+
 Page lastPage = Page.FromValues(
     new[]
     {
@@ -236,6 +238,7 @@ Page lastPage = Page.FromValues(
     },
     continuationToken: null,
     Mock.Of<Response>());
+
 Pageable pageable = Pageable.FromPages(new[] { page1, page2, lastPage });
 AsyncPageable asyncPageable = AsyncPageable.FromPages(new[] { page1, page2, lastPage }); )
 ```
@@ -349,17 +352,14 @@ public class AboutToExpireSecretFinderTests
 
 ## Refactoring your types for testability
 
-Classes that need to be tested should be designed with the ability to replace their dependency implementations. It was a seamless process to replace the `SecretClient` implementation in the example from the previous section because it was one of the constructor parameters. However, there may be classes in your code that create their own dependencies and are not easily testable, such as the following:
+Classes that need to be tested should be designed for [dependency injection](https://learn.microsoft.com/en-us/dotnet/azure/sdk/dependency-injection), which allows the class to receive its dependencies instead of creating them internally. It was a seamless process to replace the `SecretClient` implementation in the example from the previous section because it was one of the constructor parameters. However, there may be classes in your code that create their own dependencies and are not easily testable, such as the following:
 
 ```csharp
 public class AboutToExpireSecretFinder
 {
     public AboutToExpireSecretFinder(TimeSpan threshold)
     {
-<<<<<<< HEAD
-=======
         _threshold = threshold;
->>>>>>> 38156325c33d9943fd87459ff7507f4005ae87b8
         _client = new SecretClient(
             new Uri(Environment.GetEnvironmentVariable("KeyVaultUri")),
             new DefaultAzureCredential());
@@ -374,11 +374,7 @@ public class AboutToExpireSecretFinder
 {
     public AboutToExpireSecretFinder(TimeSpan threshold, SecretClient client = null) 
     { 
-<<<<<<< HEAD
-         _threshold = threshold; 
-=======
         _threshold = threshold; 
->>>>>>> 38156325c33d9943fd87459ff7507f4005ae87b8
         _client = client ?? new SecretClient(
             new Uri(Environment.GetEnvironmentVariable("KeyVaultUri")),
             new DefaultAzureCredential());
@@ -406,5 +402,8 @@ var finder = new AboutToExpireSecretFinder(TimeSpan.FromDays(2), secretClient);
 
 This approach is useful when you would like to consolidate the dependency creation and share the client between multiple consuming classes.
 
-> [!NOTE]
-> This technique where the class receives its dependencies instead of creating them internally is called dependency injection.
+## See also
+
+* [Dependency injection in .NET](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection)
+* [Unit testing best practices](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)
+* [Unit testing C# in .NET Core using dotnet test and xUnit](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test)

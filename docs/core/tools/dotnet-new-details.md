@@ -1,11 +1,11 @@
 ---
 title: dotnet new details
 description: The dotnet new details command displays template package metadata.
-ms.date: 04/15/2022
+ms.date: 06/07/2023
 ---
 # dotnet new details
 
-**This article applies to:** ✔️ .NET Core ??? SDK and later versions
+**This article applies to:** ✔️ .NET 8 preview 6
 
 ## Name
 
@@ -14,7 +14,7 @@ ms.date: 04/15/2022
 ## Synopsis
 
 ```dotnetcli
-dotnet new details [<PACKAGE_NAME>] [--version <VERSION>] [--interactive] [--add-source|--nuget-source <SOURCE>] 
+dotnet new details [<PACKAGE_NAME>] [--interactive] [--add-source|--nuget-source <SOURCE>] 
     [--force] [-d|--diagnostics] [-h|--help]
 ```
 
@@ -30,10 +30,6 @@ If the package is installed locally or is found on the official NuGet website, i
  The package identifier to display the details for.
 
 ## Options
-
-- **`--version <VERSION>`**
-
- Specifies the version of the package. If none is passed, the command displays information from the latest package version.
 
 - **`--add-source|--nuget-source <SOURCE>`**
   

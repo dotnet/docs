@@ -176,7 +176,7 @@ Response<KeyVaultSecret> response = Response.FromValue(
 
 ### Explore Paging
 
-The <xref:Azure.Page> class is used as a building block in service methods that invoke operations returning results in multiple pages. The `Page<T>` is rarely returned from APIs directly but is useful to create the `AsyncPageable<T>` and `Pageable<T>` instances we'll discuss in the next section. To create a `Page<T>` instance, use the `Page<T>.FromValues` method, passing a list of items, a continuation token, and the Response.
+The <xref:Azure.Page%601> class is used as a building block in service methods that invoke operations returning results in multiple pages. The `Page<T>` is rarely returned from APIs directly but is useful to create the `AsyncPageable<T>` and `Pageable<T>` instances in the next section. To create a `Page<T>` instance, use the `Page<T>.FromValues` method, passing a list of items, a continuation token, and the Response.
 
 The `continuationToken` parameter is used to retrieve the next page from the service. For unit testing purposes, it should be set to null for the last page and should be non-empty for other pages.
 
@@ -207,7 +207,7 @@ Page responsePage = Page.FromValues(
 
 ---
 
-<xref:Azure.AsyncPageable> and <xref:Azure.Pageable> are classes that represent collections of models returned by the service in pages. The only difference between them is that one is used with synchronous methods while the other is used with asynchronous methods.
+<xref:Azure.AsyncPageable%601> and <xref:Azure.Pageable%601> are classes that represent collections of models returned by the service in pages. The only difference between them is that one is used with synchronous methods while the other is used with asynchronous methods.
 
 To create a test instance of `Pageable` or `AsyncPageable`, use the `FromPages` static method:
 
@@ -352,7 +352,7 @@ public class AboutToExpireSecretFinderTests
 
 ## Refactoring your types for testability
 
-Classes that need to be tested should be designed for [dependency injection](https://learn.microsoft.com/en-us/dotnet/azure/sdk/dependency-injection), which allows the class to receive its dependencies instead of creating them internally. It was a seamless process to replace the `SecretClient` implementation in the example from the previous section because it was one of the constructor parameters. However, there may be classes in your code that create their own dependencies and are not easily testable, such as the following:
+Classes that need to be tested should be designed for [dependency injection](/dotnet/azure/sdk/dependency-injection), which allows the class to receive its dependencies instead of creating them internally. It was a seamless process to replace the `SecretClient` implementation in the example from the previous section because it was one of the constructor parameters. However, there may be classes in your code that create their own dependencies and are not easily testable, such as the following:
 
 ```csharp
 public class AboutToExpireSecretFinder

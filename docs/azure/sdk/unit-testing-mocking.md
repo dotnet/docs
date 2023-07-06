@@ -5,11 +5,11 @@ ms.custom: devx-track-dotnet, engagement-fy23
 ms.date: 07/05/2023
 ---
 
-# Unit testing and mocking with the Azure SDK .NET
+# Unit testing and mocking with the Azure SDK for .NET
 
 Unit testing is an important part of a sustainable development process that can improve code quality and prevent regressions or bugs in your apps. However, unit testing presents challenges when the code you're testing performs network calls to Azure resources. Tests that run against live services can experience issues, such as, latency that slows down test execution, dependencies on code outside of the isolated test, and issues with managing service state and costs every time the test is run. Instead of testing against live Azure services, replace the service clients with mocked or in-memory implementations. This avoids the above issues and lets developers focus on testing their application logic, independent from the network and service.
 
-In this article, you'll learn how to write unit tests for the Azure SDK that isolate your dependencies to make your tests more reliable. You'll also learn how to replace key components with in-memory test implementations to create fast and reliable unit tests, and see how to design your own classes to better support unit testing. This article includes examples that use [Moq](https://www.nuget.org/packages/moq/), which is a popular mocking and testing library for .NET
+In this article, you'll learn how to write unit tests for the Azure SDK for .NET that isolate your dependencies to make your tests more reliable. You'll also learn how to replace key components with in-memory test implementations to create fast and reliable unit tests, and see how to design your own classes to better support unit testing. This article includes examples that use [Moq](https://www.nuget.org/packages/moq/), which is a popular mocking and testing library for .NET.
 
 ## Understand service clients
 
@@ -23,28 +23,9 @@ Each of the Azure SDK clients follows mocking guidelines that allow their behavi
 > [!NOTE]
 > The code examples in this article use types from the [`Azure.Security.KeyVault.Secrets`](https://www.nuget.org/packages/Azure.Security.KeyVault.Secrets/) library for the Azure Key Vault service. The concepts demonstrated in this article also apply to service clients from many other Azure services, such as Azure Storage or Azure Service Bus.
 
-To create a test client instance, inherit from the client type and override methods you are calling in your code with an implementation that returns a set of test objects. Most clients contain both synchronous and asynchronous methods for operations; override only the one your application code is calling.
+To create a test service client, you can either use a mocking library such as [Moq](https://www.nuget.org/packages/moq/) or standard C# features such as inheritance. Mocking frameworks allow you to simplify the code that you must write to override member behavior (as well as other useful features that are beyond the scope of this article).
 
-```csharp
-public class MockSecretClient : SecretClient 
-{
-    public override Response<KeyVaultSecret> GetSecret(
-        string name,
-        string version = null, 
-        CancellationToken cancellationToken = default)
-        => throw new NotImplementedException();
-        
-    public override Task<Response<KeyVaultSecret>> GetSecretAsync(
-        string name, 
-        string version = null, 
-        CancellationToken cancellationToken = default)
-        => throw new NotImplementedException();
-}
-
-SecretClient secretClient = new MockSecretClient();
-```
-
-It's cumbersome to define a test instance of the class, especially if you need to customize behavior differently for each test. Mocking frameworks allow you to simplify the code that you must write to override member behavior (as well as other useful features that are beyond the scope of this article). To create a test client instance using Moq:
+# [Moq](#tab/moq)
 
 ```csharp
 KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
@@ -67,12 +48,40 @@ clientMock.Setup(c => c.GetSecretAsync(
 SecretClient secretClient = clientMock.Object;
 ```
 
+# [C#](#tab/csharp)
+
+To create a test client instance using C# without a library, inherit from the client type and override methods you are calling in your code with an implementation that returns a set of test objects. Most clients contain both synchronous and asynchronous methods for operations; override only the one your application code is calling.
+
+> [!NOTE]
+> It can be cumbersome to manually define test classes, especially if you need to customize behavior differently for each test. Consider using a library like Moq to streamline your testing.
+
+```csharp
+public class MockSecretClient : SecretClient 
+{
+    public override Response<KeyVaultSecret> GetSecret(
+        string name,
+        string version = null, 
+        CancellationToken cancellationToken = default)
+        => throw new NotImplementedException();
+        
+    public override Task<Response<KeyVaultSecret>> GetSecretAsync(
+        string name, 
+        string version = null, 
+        CancellationToken cancellationToken = default)
+        => throw new NotImplementedException();
+}
+
+SecretClient secretClient = new MockSecretClient();
+```
+
+---
+
 > [!NOTE]
 > When created using a parameterless constructor, the client isn't fully initialized leaving client behavior undefined. In practice, this means that most will throw an exception if called without an overridden implementation.
 
-### Service input and output models
+### Service client input and output models
 
-Model types hold the data being sent and received from Azure services. There are two main kinds of models.
+Model types hold the data being sent and received from Azure services. There are two main kinds of models:
 
 * **Input models** are intended to be created and passed as parameters to service methods by developers. They have one or more public constructors and writeable properties.
 * **Output models** are only returned by the service and have neither public constructors nor writeable properties.
@@ -86,7 +95,7 @@ SecretProperties secretProperties = new("secret")
 };
 ```
 
-To create instances of output models, a model factory is used. For most Azure SDK client libraries, the model factory is a static class that ends in `ModelFactory` and contains a set of static methods to create and initialize the library's output model types.
+To create instances of output models, a model factory is used. Most Azure SDK client libraries provide a static model factory class that ends in `ModelFactory` and contains a set of static methods to initialize the library's output model types.
 
 ```C#
 KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
@@ -151,7 +160,7 @@ public class TestResponse : Response
 
 ---
 
-Some services also support using the `Response<T>` type, which is a class that contains a model and the HTTP response that returned it. To create a test instance of `Response<T>` use the static Response.FromValue method:
+Some services also support using the  <xref:Azure.Rsponse%601> type, which is a class that contains a model and the HTTP response that returned it. To create a test instance of `Response<T>` use the static Response.FromValue method:
 
 ## [Moq](#tab/moq)
 

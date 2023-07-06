@@ -43,7 +43,7 @@ The following code defines a `readonly` struct with init-only property setters, 
 
 You can also use the `readonly` modifier to declare that an instance member doesn't modify the state of a struct. If you can't declare the whole structure type as `readonly`, use the `readonly` modifier to mark the instance members that don't modify the state of the struct.
 
-Within a `readonly` instance member, you can't assign to structure's instance fields. However, a `readonly` member can call a non-`readonly` member. In that case the compiler creates a copy of the structure instance and calls the non-`readonly` member on that copy. As a result, the original structure instance isn't modified.
+Within a `readonly` instance member, you can't assign to structure's instance fields. However, a `readonly` member can call a non-`readonly` member. In that case, the compiler creates a copy of the structure instance and calls the non-`readonly` member on that copy. As a result, the original structure instance isn't modified.
 
 Typically, you apply the `readonly` modifier to the following kinds of instance members:
 
@@ -82,6 +82,26 @@ Beginning with C# 10, you can use the [`with` expression](../operators/with-expr
 
 Beginning with C# 10, you can define record structure types. Record types provide built-in functionality for encapsulating data. You can define both `record struct` and `readonly record struct` types. A record struct can't be a [`ref struct`](ref-struct.md). For more information and examples, see [Records](record.md).
 
+## Inline arrays
+
+Beginning with C# 12, you can declare *inline arrays* as a `struct` type:
+
+:::code language="csharp" source="snippets/shared/StructType.cs" id="DeclareInlineArray":::
+
+An inline array is a structure that contains a contiguous block of N elements of the same type. It's a safe-code equivalent of the [fixed buffer](../unsafe-code.md#fixed-size-buffers) declaration available only in unsafe code. An inline array is a `struct` with the following characteristics:
+
+- It contains a single field.
+- The struct doesn't specify an explicit layout.
+
+In addition, the compiler validates the <xref:System.Runtime.CompilerServices.InlineArrayAttribute?displayProperty=fullName> attribute:
+
+- The length must be > 0
+- The target type must be a struct.
+
+In most cases, and inline array can be accessed like an array, both to read and write values. In addition, you can use the [range](../operators/member-access-operators.md#range-operator) and [index](../operators/member-access-operators.md#indexer-access) operators.
+
+Inline arrays are an advanced language feature. They're intended for high-performance scenarios where an inline, contiguous block of elements is faster than other alternative data structures. You can learn more about inline arrays from the [feature speclet](~/_csharplang/proposals/inline-arrays.md)
+
 ## Struct initialization and default values
 
 A variable of a `struct` type directly contains the data for that `struct`. That creates a distinction between an uninitialized `struct`, which has its default value and an initialized `struct`, which stores values set by constructing it. For example consider the following code:
@@ -108,7 +128,7 @@ Beginning with C# 11, if you don't initialize all fields in a struct, the compil
 
 Every `struct` has a `public` parameterless constructor. If you write a parameterless constructor, it must be public. If a struct declares any field initializers, it must explicitly declare a constructor. That constructor need not be parameterless. If a struct declares a field initializer but no constructors, the compiler reports an error. Any explicitly declared constructor (with parameters, or parameterless) executes all field initializers for that struct. All fields without a field initializer or an assignment in a constructor are set to the [default value](default-values.md). For more information, see the [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md) feature proposal note.
 
-Beginning with C# 12, `struct` types can define a [primary constructor](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) as part of its declaration. This provides a concise syntax for constructor parameters that can be used throughout the `struct` body, in any member declaration for that struct.
+Beginning with C# 12, `struct` types can define a [primary constructor](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) as part of its declaration. Primary constructors provides a concise syntax for constructor parameters that can be used throughout the `struct` body, in any member declaration for that struct.
 
 If all instance fields of a structure type are accessible, you can also instantiate it without the `new` operator. In that case you must initialize all instance fields before the first use of the instance. The following example shows how to do that:
 

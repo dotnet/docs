@@ -13,6 +13,10 @@ on:
         description: "The reason for running the workflow"
         required: true
         default: "Manual run"
+      support:
+        description: "The support level to target (STS, LTS, or Preview)."
+        required: true
+        default: "STS"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -27,7 +31,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3
+      - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
       - name: "Print manual run reason"
@@ -45,3 +49,36 @@ jobs:
           owner: ${{ github.repository_owner }}
           name: ${{ github.repository }}
           branch: ${{ github.ref }}
+      
+      - name: Create pull requests
+        if: steps.dotnet-version-sweeper.outputs.has-remaining-work == 'true'
+        run: |
+          upgradeProjects: ${{ steps.dotnet-version-sweeper.outputs.upgradeProjects }}
+
+          # Install .NET Upgrade Assistant global tool
+          dotnet tool install --global upgrade-assistant
+
+          # Iterate all upgrade projects
+          for projectDir in "${upgradeProjects[@]}"; do
+            echo "Project Directory: $projectDir"
+
+            # Create a new branch
+            git checkout -b upgrade/$projectDir
+
+            # Perform the upgrade using upgrade-assistant
+            upgrade-assistant upgrade "$projectDir" --non-interactive -t ${{ inputs.support }}
+
+            # Commit the changes
+            git add .
+            git commit -m ".NET Version Sweeper: Upgraded $projectDir"
+
+            # Push the branch to the repository
+            git push origin upgrade/$projectDir
+
+            # Create a pull request
+            gh pr create \
+              --base main \
+              --head upgrade/$projectDir \
+              --title "Upgraded $projectDir" \
+              --body "Proposed upgrade for $projectDir"
+          done

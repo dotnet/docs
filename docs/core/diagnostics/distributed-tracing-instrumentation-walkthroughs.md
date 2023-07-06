@@ -445,7 +445,7 @@ void DoBatchWork(ActivityContext[] requestContexts)
     // Assume each context in requestContexts encodes the trace-id that was sent with a request
     using(Activity activity = s_source.StartActivity(name: "BigBatchOfWork",
                                                      kind: ActivityKind.Internal,
-                                                     parentContext: null,
+                                                     parentContext: default,
                                                      links: requestContexts.Select(ctx => new ActivityLink(ctx))
     {
         // do the batch of work here

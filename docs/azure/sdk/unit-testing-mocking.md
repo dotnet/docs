@@ -9,7 +9,7 @@ ms.date: 07/05/2023
 
 Unit testing is an important development process that can improve code quality and prevent regressions or bugs in your app. However, unit testing presents challenges when the code you are testing communicates with an Azure service over a network. Tests that run against live services can experience issues such as latency that slows down test execution, dependencies on code outside of the isolated test, and issues with managing service state and costs every time the test is run. Instead of testing against live Azure services, replace the service clients with mocked or in-memory implementations. This practice helps developers focus on testing their application logic, independent from the network and service.
 
-In this article, you'll learn how to write unit tests for the Azure SDK that isolate your dependencies to make your tests more reliable. You'll learn how to replace key components with in-memory test implementations to create fast and reliable unit tests. Finally, we’ll provide some design tips to help you design your own classes to better support unit testing.
+In this article, you'll learn how to write unit tests for the Azure SDK that isolate your dependencies to make your tests more reliable. You'll also learn how to replace key components with in-memory test implementations to create fast and reliable unit tests, and see how to design your own classes to better support unit testing.
 
 ## Understand service clients
 
@@ -88,7 +88,7 @@ SecretProperties secretProperties = new("secret")
 };
 ```
 
-To create instances of output models, a model factory is used. For most Azure SDK client libraries, the model factory is a static class that ends in `ModelFactory` and contains a set of static methods to create and initialize the library’s output model types.
+To create instances of output models, a model factory is used. For most Azure SDK client libraries, the model factory is a static class that ends in `ModelFactory` and contains a set of static methods to create and initialize the library's output model types.
 
 ```C#
 KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
@@ -153,7 +153,7 @@ public class TestResponse : Response
 
 ---
 
-Some services also support using the <xref:Azure.Response\<T\>> type, which is a class that contains a model and the HTTP response that returned it. To create a test instance of `Response<T>` use the static Response.FromValue method:
+Some services also support using the `Response<T>` type, which is a class that contains a model and the HTTP response that returned it. To create a test instance of `Response<T>` use the static Response.FromValue method:
 
 ## [Moq](#tab/moq)
 
@@ -176,7 +176,7 @@ Response<KeyVaultSecret> response = Response.FromValue(
 
 ### Explore Paging
 
-The <xref:Azure.Page\<T\>> is used as a building block in service methods that invoke operations returning results in multiple pages. The `Page<T>` is rarely returned from APIs directly but is useful to create the `AsyncPageable<T>` and `Pageable<T>` instances we’ll discuss in the next section. To create a `Page<T>` instance, use the `Page<T>.FromValues` method, passing a list of items, a continuation token, and the Response.
+The <xref:Azure.Page> class is used as a building block in service methods that invoke operations returning results in multiple pages. The `Page<T>` is rarely returned from APIs directly but is useful to create the `AsyncPageable<T>` and `Pageable<T>` instances we'll discuss in the next section. To create a `Page<T>` instance, use the `Page<T>.FromValues` method, passing a list of items, a continuation token, and the Response.
 
 The `continuationToken` parameter is used to retrieve the next page from the service. For unit testing purposes, it should be set to null for the last page and should be non-empty for other pages.
 
@@ -207,7 +207,7 @@ Page responsePage = Page.FromValues(
 
 ---
 
-<xref:Azure.AsyncPageable\<T\>> and <xref:Azure.Pageable\<T\>>  are classes that represent collections of models returned by the service in pages. The only difference between them is that one is used with synchronous methods while the other is used with asynchronous methods.
+<xref:Azure.AsyncPageable> and <xref:Azure.Pageable> are classes that represent collections of models returned by the service in pages. The only difference between them is that one is used with synchronous methods while the other is used with asynchronous methods.
 
 To create a test instance of `Pageable` or `AsyncPageable`, use the `FromPages` static method:
 
@@ -279,7 +279,7 @@ public class AboutToExpireSecretFinder
 
 You want to test the following behaviors of the `AboutToExpireSecretFinder` to ensure they continue working as expected:
 
-* Secrets that don’t have an expiry date set are not returned.
+* Secrets that don't have an expiry date set are not returned.
 * Secrets with an expiry date closer to the current date than the threshold are returned.
 
 When unit testing you only want the unit tests to verify the application logic and not whether the Azure service or SDK works correctly. The following example tests the key behaviors using the popular xUnit framework for C#:
@@ -404,6 +404,6 @@ This approach is useful when you would like to consolidate the dependency creati
 
 ## See also
 
-* [Dependency injection in .NET](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection)
-* [Unit testing best practices](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)
-* [Unit testing C# in .NET Core using dotnet test and xUnit](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test)
+* [Dependency injection in .NET](/dotnet/core/extensions/dependency-injection)
+* [Unit testing best practices](/dotnet/core/testing/unit-testing-best-practices)
+* [Unit testing C# in .NET Core using dotnet test and xUnit](/dotnet/core/testing/unit-testing-with-dotnet-test)

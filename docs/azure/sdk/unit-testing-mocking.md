@@ -160,7 +160,7 @@ public class TestResponse : Response
 
 ---
 
-Some services also support using the  <xref:Azure.Rsponse%601> type, which is a class that contains a model and the HTTP response that returned it. To create a test instance of `Response<T>` use the static Response.FromValue method:
+Some services also support using the  <xref:Azure.Response%601> type, which is a class that contains a model and the HTTP response that returned it. To create a test instance of `Response<T>` use the static Response.FromValue method:
 
 ## [Moq](#tab/moq)
 

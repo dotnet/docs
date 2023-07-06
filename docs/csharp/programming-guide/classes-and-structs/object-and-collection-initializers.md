@@ -31,7 +31,8 @@ You could initialize the identity matrix with the following code:
 Any accessible indexer that contains an accessible setter can be used as one of the expressions in an object initializer, regardless of the number or types of arguments. The index arguments form the left side of the assignment, and the value is the right side of the expression.  For example, these are all valid if `IndexersExample` has the appropriate indexers:
 
 ```csharp
-var thing = new IndexersExample {
+var thing = new IndexersExample
+{
     name = "object one",
     [1] = '1',
     [2] = '4',

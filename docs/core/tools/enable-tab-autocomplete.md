@@ -4,7 +4,7 @@ description: This article teaches you how to enable tab completion for the .NET 
 author: adegeo
 ms.author: adegeo
 ms.topic: how-to
-ms.date: 10/13/2022
+ms.date: 07/06/2023
 ---
 
 # How to enable tab completion for the .NET CLI
@@ -63,7 +63,7 @@ To add tab completion to your **bash** shell for the .NET CLI, add the following
 
 function _dotnet_bash_complete()
 {
-  local cur="${COMP_WORDS[COMP_CWORD]}" IFS=$'\n'
+  local cur="${COMP_WORDS[COMP_CWORD]}" IFS=$'\n' # On Windows you may need to use use IFS=$'\r\n'
   local candidates
 
   read -d '' -ra candidates < <(dotnet complete --position "${COMP_POINT}" "${COMP_LINE}" 2>/dev/null)

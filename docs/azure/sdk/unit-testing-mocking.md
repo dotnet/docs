@@ -76,9 +76,6 @@ SecretClient secretClient = new MockSecretClient();
 
 ---
 
-> [!NOTE]
-> When created using a parameterless constructor, the client isn't fully initialized leaving client behavior undefined. In practice, this means that most will throw an exception if called without an overridden implementation.
-
 ### Service client input and output models
 
 Model types hold the data being sent and received from Azure services. There are two main kinds of models:
@@ -86,7 +83,7 @@ Model types hold the data being sent and received from Azure services. There are
 * **Input models** are intended to be created and passed as parameters to service methods by developers. They have one or more public constructors and writeable properties.
 * **Output models** are only returned by the service and have neither public constructors nor writeable properties.
 
-To create a test instance of an input model use one of the available public constructors and set additional properties you need.
+To create a test instance of an input model use one of the available public constructors and set the additional properties you need.
 
 ```csharp
 SecretProperties secretProperties = new("secret")
@@ -114,7 +111,7 @@ secretPropertiesWithCreatedOn = SecretModelFactory.SecretProperties(
 
 ## Explore response types
 
-The <xref:Azure.Response> class is an abstract class that represents an HTTP response and is a part of almost all types returned by client methods. You can create test `Response` instances using either the Moq library or standard C# inheritence.
+The <xref:Azure.Response> class is an abstract class that represents an HTTP response and is a part of almost all types returned by service client methods. You can create test `Response` instances using either the Moq library or standard C# inheritence.
 
 ## [Moq](#tab/moq)
 
@@ -160,7 +157,7 @@ public class TestResponse : Response
 
 ---
 
-Some services also support using the  <xref:Azure.Response%601> type, which is a class that contains a model and the HTTP response that returned it. To create a test instance of `Response<T>` use the static Response.FromValue method:
+Some services also support using the  <xref:Azure.Response%601> type, which is a class that contains a model and the HTTP response that returned it. To create a test instance of `Response<T>` use the static `Response.FromValue` method:
 
 ## [Moq](#tab/moq)
 

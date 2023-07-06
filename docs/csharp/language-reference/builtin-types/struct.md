@@ -98,7 +98,9 @@ In addition, the compiler validates the <xref:System.Runtime.CompilerServices.In
 - The length must be > 0
 - The target type must be a struct.
 
-In most cases, and inline array can be accessed like an array, both to read and write values. In addition, you can use the [range](../operators/member-access-operators.md#range-operator) and [index](../operators/member-access-operators.md#indexer-access) operators.
+In most cases, and inline array can be accessed like an array, both to read and write values. In addition, you can use the [range](../operators/member-access-operators.md#range-operator-) and [index](../operators/member-access-operators.md#indexer-access) operators.
+
+There are minimal restrictions on the type of the single field. It can't be a pointer type, but it can be any reference type, or any value type. You can use inline arrays with almost any C# data structure.
 
 Inline arrays are an advanced language feature. They're intended for high-performance scenarios where an inline, contiguous block of elements is faster than other alternative data structures. You can learn more about inline arrays from the [feature speclet](~/_csharplang/proposals/inline-arrays.md)
 

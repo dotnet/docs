@@ -39,7 +39,7 @@ On Linux, install the compiler toolchain and developer packages for libraries th
   sudo apk add clang build-base zlib-dev
   ```
 
-On macOS, install the latest [Command Line Tools for XCode](https://developer.apple.com/xcode/download/). Supported on .NET 8 and later versions.
+On macOS, install the latest [Command Line Tools for XCode](https://developer.apple.com/download/). Supported on .NET 8 and later versions.
 
 ## Publish native AOT using the CLI
 

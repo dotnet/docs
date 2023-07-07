@@ -53,6 +53,8 @@ To get information about an error or warning, you can look up the error code in 
 
 ## Analysis level
 
+The **AnalysisLevel** option specifies additional [warning waves](../compiler-messages/warning-waves.md) and analyzers to enable. Warning wave warnings are additional checks that improve your code, or ensure it will be compatible with upcoming releases. Analyzers provide lint-like capability to improve your code.
+
 ```xml
 <AnalysisLevel>preview</AnalysisLevel>
 ```

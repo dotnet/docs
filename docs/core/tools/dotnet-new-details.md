@@ -54,16 +54,10 @@ If the package is installed locally or is found on the official NuGet website, i
   dotnet new details Microsoft.DotNet.Web.Spa.ProjectTemplates
   ```
 
-- Displays package data from version 2.0 of the SPA templates for ASP.NET Core:
+- Displays package data of the SPA templates for ASP.NET Core from a custom NuGet source using interactive mode:
 
   ```dotnetcli
-  dotnet new install Microsoft.DotNet.Web.Spa.ProjectTemplates --version 2.0.0
-  ```
-
-- Displays package data from version 2.0 of the SPA templates for ASP.NET Core from a custom NuGet source using interactive mode:
-
-  ```dotnetcli
-  dotnet new details Microsoft.DotNet.Web.Spa.ProjectTemplates --version 2.0.0 --add-source "https://api.my-custom-nuget.com/v3/index.json" --interactive
+  dotnet new details Microsoft.DotNet.Web.Spa.ProjectTemplates --add-source "https://api.my-custom-nuget.com/v3/index.json" --interactive
   ```
 
 ## See also

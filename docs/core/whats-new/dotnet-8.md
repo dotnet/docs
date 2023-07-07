@@ -2,7 +2,7 @@
 title: What's new in .NET 8
 description: Learn about the new .NET features introduced in .NET 8.
 titleSuffix: ""
-ms.date: 06/13/2023
+ms.date: 07/11/2023
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
@@ -11,12 +11,18 @@ author: gewarren
 
 .NET 8 is the successor to [.NET 7](dotnet-7.md). It will be [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 8 here](https://dotnet.microsoft.com/download/dotnet).
 
-This article has been updated for .NET 8 Preview 5.
+This article has been updated for .NET 8 Preview 6.
 
 > [!IMPORTANT]
 >
 > - This information relates to a pre-release product that may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 > - Much of the other .NET documentation on [https://learn.microsoft.com/dotnet](/dotnet) has not yet been updated for .NET 8.
+
+
+Target iOS-like platforms with NativeAOT - https://github.com/dotnet/core/issues/8437#issuecomment-1623774031
+HTTPS proxy support - https://github.com/dotnet/core/issues/8437#issuecomment-1624217579
+STJ - https://github.com/dotnet/core/issues/8437#issuecomment-1625545648
+SDK - containers performance and compatibility - https://github.com/dotnet/core/issues/8437#issuecomment-1626223181
 
 ## .NET SDK changes
 
@@ -286,6 +292,8 @@ This section contains the following subtopics:
 - [System.Numerics and System.Runtime.Intrinsics](#systemnumerics-and-systemruntimeintrinsics)
 - [Data validation](#data-validation)
 - [Metrics](#metrics)
+- [Cryptography](#cryptography)
+- [Stream-based ZipFile methods](#stream-based-zipfile-methods)
 
 ### Time abstraction
 
@@ -494,9 +502,146 @@ The new APIs include:
 - <xref:System.Diagnostics.Metrics.Meter.%23ctor(System.Diagnostics.Metrics.MeterOptions)>
 - <xref:System.Diagnostics.Metrics.Meter.CreateCounter%60%601(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})>
 
+### Cryptography
+
+.NET 8 adds support for the SHA-3 hashing primitives. (SHA-3 is currently supported by Linux with OpenSSL 1.1.1 or later and Windows 11 Build 25324 or later.) APIs where SHA-2 is available now offer a SHA-3 compliment. This includes `SHA3_256`, `SHA3_384`, and `SHA3_512` for hashing; `HMACSHA3_256`, `HMACSHA3_384`, and `HMACSHA3_512` for HMAC; `HashAlgorithmName.SHA3_256`, `HashAlgorithmName.SHA3_384`, and `HashAlgorithmName.SHA3_512` for hashing where the algorithm is configurable; and `RSAEncryptionPadding.OaepSHA3_256`, `RSAEncryptionPadding.OaepSHA3_384`, and `RSAEncryptionPadding.OaepSHA3_512` for RSA OAEP encryption.
+
+The following example shows how to use the APIs, including the `SHA3_256.IsSupported` property to determine if the platform supports SHA-3.
+
+```csharp
+// Hashing example
+if (SHA3_256.IsSupported)
+{
+    byte[] hash = SHA3_256.HashData(dataToHash);
+}
+else
+{
+    // ...
+}
+
+// Signing example
+if (SHA3_256.IsSupported)
+{
+     using ECDsa ec = ECDsa.Create(ECCurve.NamedCurves.nistP256);
+     byte[] signature = ec.SignData(dataToBeSigned, HashAlgorithmName.SHA3_256);
+}
+else
+{
+    // ...
+}
+```
+
+SHA-3 support is currently aimed at supporting cryptographic primitives. Higher-level constructions and protocols aren't expected to fully support SHA-3 initially. These protocols include X.509 certificates, <xref:System.Security.Cryptography.Xml.SignedXml>, and COSE.
+
+### Stream-based ZipFile methods
+
+.NET 8 includes new overloads of <xref:System.IO.Compression.ZipFile.CreateFromDirectory%2A?displayProperty=nameWithType> that allow you to collect all the files included in a directory and zip them, then store the resulting zip file into the provided stream. Similarly, new <xref:System.IO.Compression.ZipFile.ExtractToDirectory%2A?displayProperty=nameWithType> overloads let you provide a stream containing a zipped file and extract its contents into the filesystem. These are the new overloads:
+
+```csharp
+namespace System.IO.Compression;
+
+public static partial class ZipFile
+{
+    public static void CreateFromDirectory(string sourceDirectoryName, Stream destination);
+    public static void CreateFromDirectory(string sourceDirectoryName, Stream destination, CompressionLevel compressionLevel, bool includeBaseDirectory);
+    public static void CreateFromDirectory(string sourceDirectoryName, Stream destination, CompressionLevel compressionLevel, bool includeBaseDirectory, Encoding? entryNameEncoding);
+
+    public static void ExtractToDirectory(Stream source, string destinationDirectoryName) { }
+    public static void ExtractToDirectory(Stream source, string destinationDirectoryName, bool overwriteFiles) { }
+    public static void ExtractToDirectory(Stream source, string destinationDirectoryName, Encoding? entryNameEncoding) { }
+    public static void ExtractToDirectory(Stream source, string destinationDirectoryName, Encoding? entryNameEncoding, bool overwriteFiles) { }
+}
+```
+
+These new APIs can be useful when disk space is constrained, because they avoid having to use the disk as an intermediate step.
+
 ## Extension libraries
 
-### Metrics
+This section contains the following subtopics:
+
+- [Options validation](#options-validation)
+- [LoggerMessageAttribute constructors](#loggermessageattribute-constructors)
+- [Extensions metrics](#extensions-metrics)
+
+### Options validation
+
+#### Source generator
+
+To reduce startup overhead and improve validation feature set, we've introduced a source code generator that implements the validation logic. The following code shows example models and validator classes.
+
+```csharp
+public class FirstModelNoNamespace
+{
+    [Required]
+    [MinLength(5)]
+    public string P1 { get; set; } = string.Empty;
+
+    [Microsoft.Extensions.Options.ValidateObjectMembers(typeof(SecondValidatorNoNamespace))]
+    public SecondModelNoNamespace? P2 { get; set; }
+}
+
+public class SecondModelNoNamespace
+{
+    [Required]
+    [MinLength(5)]
+    public string P4 { get; set; } = string. Empty;
+}
+
+[OptionsValidator]
+public partial class FirstValidatorNoNamespace : IValidateOptions<FirstModelNoNamespace>
+{
+}
+
+[OptionsValidator]
+public partial class SecondValidatorNoNamespace : IValidateOptions<SecondModelNoNamespace>
+{
+}
+```
+
+If your app uses dependency injection, you can inject the validation as shown in the following example code.
+
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddControllersWithViews();
+builder.Services.Configure<FirstModelNoNamespace>(builder.Configuration.GetSection(...));
+
+builder.Services.AddSingleton<IValidateOptions<FirstModelNoNamespace>, FirstValidatorNoNamespace>();
+builder.Services.AddSingleton<IValidateOptions<SecondModelNoNamespace>, SecondValidatorNoNamespace>();
+```
+
+#### ValidateOptionsResultBuilder type
+
+.NET 8 introduces the <xref:Microsoft.Extensions.Options.ValidateOptionsResultBuilder> type to facilitate the creation of a <xref:Microsoft.Extensions.Options.ValidateOptionsResult> object. Importantly, this builder allows for the accumulation of multiple errors. Previously, creating the <xref:Microsoft.Extensions.Options.ValidateOptionsResult> object that's required to implement <xref:Microsoft.Extensions.Options.IValidateOptions%601.Validate(System.String,%600)?displayProperty=nameWithType> was difficult and sometimes resulted in layered validation errors. If there were multiple errors, the validation process often stopped at the first error.
+
+The following code snippet shows an example usage of <xref:Microsoft.Extensions.Options.ValidateOptionsResultBuilder>.
+
+```csharp
+ValidateOptionsResultBuilder builder = new();
+builder.AddError("Error: invalid operation code");
+builder.AddResult(ValidateOptionsResult.Fail("Invalid request parameters"));
+builder.AddError("Malformed link", "Url");
+
+// Build ValidateOptionsResult object has accumulating multiple errors.
+ValidateOptionsResult result = builder.Build();
+
+// Reset the builder to allow using it in new validation operation.
+builder.Clear();
+```
+
+
+### LoggerMessageAttribute constructors
+
+<xref:Microsoft.Extensions.Logging.LoggerMessageAttribute> now offers additional constructor overloads. Previously, you had to choose either the parameterless constructor or the constructor that required all of the parameters (event ID, log level, and message). The new overloads offer greater flexibility in specifying the required parameters with reduced code. If you don't supply an event ID, the system generates one automatically.
+
+```csharp
+public LoggerMessageAttribute(LogLevel level, string message);
+public LoggerMessageAttribute(LogLevel level);
+public LoggerMessageAttribute(string message);
+```
+
+### Extensions metrics
+
+#### IMeterFactory interface
 
 You can register the new <xref:Microsoft.Extensions.Diagnostics.Metrics.IMeterFactory> interface in dependency injection (DI) containers and use it to create <xref:System.Diagnostics.Metrics.Meter> objects in an isolated manner.
 
@@ -520,23 +665,34 @@ MeterOptions options = new MeterOptions("MeterName")
 Meter meter = meterFactory.Create(options);
 ```
 
-### ValidateOptionsResultBuilder type
+#### MetricCollector\<T> class
 
-.NET 8 introduces the <xref:Microsoft.Extensions.Options.ValidateOptionsResultBuilder> type to facilitate the creation of a <xref:Microsoft.Extensions.Options.ValidateOptionsResult> object. Importantly, this builder allows for the accumulation of multiple errors. Previously, creating the <xref:Microsoft.Extensions.Options.ValidateOptionsResult> object that's required to implement <xref:Microsoft.Extensions.Options.IValidateOptions%601.Validate(System.String,%600)?displayProperty=nameWithType> was difficult and sometimes resulted in layered validation errors. If there were multiple errors, the validation process often stopped at the first error.
-
-The following code snippet shows an example usage of <xref:Microsoft.Extensions.Options.ValidateOptionsResultBuilder>.
+The new <xref:Microsoft.Extensions.Telemetry.Testing.Metering.MetricCollector%601> class lets you record metric measurements along with timestamps. Additionally, the class offers the flexibility to use a time provider of your choice for accurate timestamp generation.
 
 ```csharp
-ValidateOptionsResultBuilder builder = new();
-builder.AddError("Error: invalid operation code");
-builder.AddResult(ValidateOptionsResult.Fail("Invalid request parameters"));
-builder.AddError("Malformed link", "Url");
+const string CounterName = "MyCounter";
 
-// Build ValidateOptionsResult object has accumulating multiple errors.
-ValidateOptionsResult result = builder.Build();
+var now = DateTimeOffset.Now;
 
-// Reset the builder to allow using it in new validation operation.
-builder.Clear();
+var timeProvider = new FakeTimeProvider(now);
+using var meter = new Meter(Guid.NewGuid().ToString());
+var counter = meter.CreateCounter<long>(CounterName);
+using var collector = new MetricCollector<long>(counter, timeProvider);
+
+Assert.Empty(collector.GetMeasurementSnapshot());
+Assert.Null(collector.LastMeasurement);
+
+counter. Add(3);
+
+// Verify the update was recorded.
+Assert.Equal(counter, collector.Instrument);
+Assert.NotNull(collector.LastMeasurement);
+
+Assert.Single(collector.GetMeasurementSnapshot());
+Assert.Same(collector.GetMeasurementSnapshot().Last(), collector.LastMeasurement);
+Assert.Equal(3, collector.LastMeasurement.Value);
+Assert.Empty(collector.LastMeasurement.Tags);
+Assert.Equal(now, collector.LastMeasurement.Timestamp);
 ```
 
 ## Garbage collection
@@ -571,19 +727,17 @@ refreshMemoryLimitMethod.Invoke(null, Array<object>.Empty);
 
 ## Configuration-binding source generator
 
-[ASP.NET Core uses configuration providers](/aspnet/core/fundamentals/configuration/) to perform app configuration. The providers read key-value pair data from different sources, such as settings files, environment variables, and Azure Key Vault. <xref:Microsoft.Extensions.Configuration.ConfigurationBinder> is the type that maps configuration values to strongly typed objects. Previously, the mapping was performed using reflection, which can cause issues for trimming and Native AOT. Starting in .NET 8, you can opt into the use of a source generator to generate the binding implementations. The generator probes for <xref:Microsoft.Extensions.Options.ConfigureOptions%601.Configure(%600)>, <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind%2A>, and <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Get%2A> calls to retrieve type info from. When the generator is enabled in a project, the compiler implicitly chooses generated methods over the pre-existing reflection-based framework implementations.
+.NET 8 introduces a source generator to provide AOT and trim-friendly [configuration](/aspnet/core/fundamentals/configuration/) in ASP.NET Core. The generator is an alternative to the pre-existing reflection-based implementation.
 
-To opt into the source generator, set the `EnableMicrosoftExtensionsConfigurationBinderSourceGenerator` property to `true` in your project file:
+The source generator probes for <xref:Microsoft.Extensions.Options.ConfigureOptions%601.Configure(%600)>, <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind%2A>, and <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Get%2A> calls to retrieve type info from. When the generator is enabled in a project, the compiler implicitly chooses generated methods over the pre-existing reflection-based framework implementations.
+
+No source code changes are needed to use the generator. It's enabled by default in AOT'd web apps. For other project types, the source generator is off by default, but you can opt in by setting the `EnableConfigurationBindingGenerator` property to `true` in your project file:
 
 ```xml
 <PropertyGroup>
-    <EnableMicrosoftExtensionsConfigurationBinderSourceGenerator>
-        true
-    </EnableMicrosoftExtensionsConfigurationBinderSourceGenerator>
+    <EnableConfigurationBindingGenerator>true</EnableConfigurationBindingGenerator>
 </PropertyGroup>
 ```
-
-You'll also need to download the latest preview version of the [Microsoft.Extensions.Configuration.Binder NuGet package](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Binder).
 
 The following code shows an example of invoking the binder.
 
@@ -732,6 +886,46 @@ In addition, dynamic profile-guided optimization (PGO) has been improved and is 
 
 On average, dynamic PGO increases performance by about 15%. In a benchmark suite of ~4600 tests, 23% saw performance improvements of 20% or more.
 
+## Source-generated COM interop
+
+.NET 8 includes a new source generator that supports interoperating with COM interfaces. You can use the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> to mark an interface as a COM interface for the source generator. The source generator will then generate code to enable calling from C# code to unmanaged code. It also generates code to enable calling from unmanaged code into C#. This source generator integrates with <xref:System.Runtime.InteropServices.LibraryImportAttribute>, and you can use types with the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> as parameters and return types in `LibraryImport`-attributed methods.
+
+```csharp
+using System.Runtime.InteropServices;
+using System.Runtime.InteropServices.Marshalling;
+
+[GeneratedComInterface]
+[Guid("5401c312-ab23-4dd3-aa40-3cb4b3a4683e")]
+interface IComInterface
+{
+    void DoWork();
+}
+
+internal class MyNativeLib
+{
+    [LibraryImport(nameof(MyNativeLib))]
+    public static partial void GetComInterface(out IComInterface comInterface);
+}
+```
+
+The source generator also supports the new <xref:System.Runtime.InteropServices.Marshalling.GeneratedComClassAttribute> attribute to enable you to pass types that implement interfaces with the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> attribute to unmanaged code. The source generator will generate the code necessary to expose a COM object that implements the interfaces and forwards calls to the managed implementation.
+
+Methods on interfaces with the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> attribute support all the same types as `LibraryImportAttribute`, and `LibraryImportAttribute` now supports `GeneratedComInterface`-attributed types and `GeneratedComClass`-attributed types.
+
+If your C# code only uses a `GeneratedComInterface`-attributed interface to either wrap a COM object from unmanaged code or wrap a managed object from C# to expose to unmanaged code, you can use the options in the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.Options> property to customize which code will be generated. These options means you don't need to write marshallers for scenarios that you know won't be used.
+
+The source generator uses the new <xref:System.Runtime.InteropServices.Marshalling.StrategyBasedComWrappers> type to create and manage the COM object wrappers and the managed object wrappers. This new type handles providing the expected .NET user experience for COM interop, while providing customization points for advanced users. If your application has its own mechanism for defining types from COM or if you need to support scenarios that source-generated COM doesn't currently support, consider using the new <xref:System.Runtime.InteropServices.Marshalling.StrategyBasedComWrappers> type to add the missing features for your scenario and get the same .NET user experience for your COM types.
+
+If you're using Visual Studio, new analyzers and code fixes make it easy to convert your existing COM interop code to use source-generated interop. Next to each interface that has the <xref:System.Runtime.InteropServices.ComImportAttribute>, a lightbulb offers an option to convert to source-generated interop. The fix changes the interface to use the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> attribute. And next to every class that implements an interface with `GeneratedComInterfaceAttribute`, a lightbulb offers an option to add the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComClassAttribute> attribute to the type. Once your types are converted, you can move your `DllImport` methods to use `LibraryImportAttribute`.
+
+### Limitations
+
+The COM source generator doesn't support apartment affinity, using the `new` keyword to activate a COM CoClass, and the following APIs:
+
+- <xref:System.Runtime.InteropServices.UnmanagedType.IDispatch>-based interfaces.
+- <xref:System.Runtime.InteropServices.UnmanagedType.IInspectable>-based interfaces.
+- COM properties and events.
+
 ## .NET container images
 
 The following changes have been made to .NET container images for .NET 8:
@@ -838,10 +1032,16 @@ You can opt out of verification by setting the environment variable `DOTNET_NUGE
 
 ### .NET blog
 
+- [Announcing .NET 8 Preview 6](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-6/)
+- [Announcing .NET 8 Preview 5](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-5/)
 - [Announcing .NET 8 Preview 4](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-4/)
 - [Announcing .NET 8 Preview 3](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-3/)
 - [Announcing .NET 8 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-2/)
 - [Announcing .NET 8 Preview 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-1/)
+
+- [ASP.NET Core updates in .NET 8 Preview 6](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-6/)
+- [ASP.NET Core updates in .NET 8 Preview 5](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-5/)
+- [ASP.NET Core updates in .NET 8 Preview 4](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-4/)
 - [ASP.NET Core updates in .NET 8 Preview 3](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-3/)
 - [ASP.NET Core updates in .NET 8 Preview 2](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-2/)
 - [ASP.NET Core updates in .NET 8 Preview 1](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-1/)

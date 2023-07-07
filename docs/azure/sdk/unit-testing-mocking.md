@@ -361,7 +361,7 @@ public class AboutToExpireSecretFinderTests
 }
 ```
 
-## Refactoring your types for testability
+## Refactor your types for testability
 
 Classes that need to be tested should be designed for [dependency injection](/dotnet/azure/sdk/dependency-injection), which allows the class to receive its dependencies instead of creating them internally. It was a seamless process to replace the `SecretClient` implementation in the example from the previous section because it was one of the constructor parameters. However, there may be classes in your code that create their own dependencies and are not easily testable, such as the following:
 

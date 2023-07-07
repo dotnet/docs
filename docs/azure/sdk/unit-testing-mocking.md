@@ -249,7 +249,7 @@ AsyncPageable asyncPageable = AsyncPageable.FromPages(new[] { page1, page2, last
 
 ## Write a mocked unit test
 
-Suppose your class contains a class that finds the names of keys that will expire within a given amount of time.
+Suppose your app contains a class that finds the names of keys that will expire within a given amount of time.
 
 ```csharp
 using Azure.Security.KeyVault.Secrets;

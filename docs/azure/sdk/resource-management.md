@@ -222,15 +222,19 @@ using System.Threading.Tasks;
 
 // Code omitted for brevity
 
-ResourceIdentifier resourceId = 
+ResourceIdentifier subscriptionId =
+    SubscriptionResource.CreateResourceIdentifier("aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee");
+
+ResourceIdentifier resourceId =
     AvailabilitySetResource.CreateResourceIdentifier(
-        "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-        "resourceGroupName", 
-        "resourceName"); 
+        subscriptionId.SubscriptionId,
+        "resourceGroupName",
+        "resourceName");
+
 // We construct a new armClient to work with
 ArmClient client = new ArmClient(new DefaultAzureCredential());
 // Next we get the specific subscription this resource belongs to
-SubscriptionResource subscription = await client.GetSubscriptionAsync(resourceId.SubscriptionId);
+SubscriptionResource subscription = client.GetSubscriptionResource(subscriptionId);
 // Next we get the specific resource group this resource belongs to
 ResourceGroupResource resourceGroup = await subscription.GetResourceGroupAsync(resourceId.ResourceGroupName);
 // Finally we get the resource itself

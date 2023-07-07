@@ -244,7 +244,7 @@ Page lastPage = Page.FromValues(
     Mock.Of<Response>());
 
 Pageable pageable = Pageable.FromPages(new[] { page1, page2, lastPage });
-AsyncPageable asyncPageable = AsyncPageable.FromPages(new[] { page1, page2, lastPage }); )
+AsyncPageable asyncPageable = AsyncPageable.FromPages(new[] { page1, page2, lastPage });
 ```
 
 ## Write a mocked unit test

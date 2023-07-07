@@ -145,7 +145,9 @@ As the preceding example shows, you can repeatedly use the pattern combinators i
 
 ### Precedence and order of checking
 
-The following list orders pattern combinators starting from the highest precedence to the lowest:
+When a logical pattern is a pattern of an `is` expression, the precedence of logical pattern combinators is **higher** than the precedence of logical operators. Otherwise, the precedence of logical pattern combinators is **lower** than the precedence of logical and conditional logical operators.
+
+The pattern combinators are ordered from the highest precedence to the lowest as shown in the following list:
 
 - `not`
 - `and`
@@ -247,7 +249,7 @@ You use a *discard pattern* `_` to match any expression, including `null`, as th
 
 In the preceding example, a discard pattern is used to handle `null` and any integer value that doesn't have the corresponding member of the <xref:System.DayOfWeek> enumeration. That guarantees that a `switch` expression in the example handles all possible input values. If you don't use a discard pattern in a `switch` expression and none of the expression's patterns matches an input, the runtime [throws an exception](switch-expression.md#non-exhaustive-switch-expressions). The compiler generates a warning if a `switch` expression doesn't handle all possible input values.
 
-A discard pattern can't be a pattern in an `is` expression or a `switch` statement. In those cases, to match any expression, use a [`var` pattern](#var-pattern) with a discard: `var _`.
+A discard pattern can't be a pattern in an `is` expression or a `switch` statement. In those cases, to match any expression, use a [`var` pattern](#var-pattern) with a discard: `var _`. A discard pattern can be a pattern in a `switch` expression.
 
 For more information, see the [Discard pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#discard-pattern) section of the feature proposal note.
 

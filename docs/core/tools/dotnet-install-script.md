@@ -81,7 +81,7 @@ By default, the installation scripts download the SDK and install it. If you wis
 By default, the script adds the install location to the $PATH for the current session. Override this default behavior by specifying the `-NoPath|--no-path` argument. The script doesn't set the `DOTNET_ROOT` environment variable.
 
 > [!IMPORTANT]
-> The script never adds the install location to the user's `PATH` environment variable, you must manually add it.
+> The script doesn't add the install location to the user's `PATH` environment variable, you must manually add it.
 
 Before running the script, install the required [dependencies](../install/windows.md#dependencies).
 

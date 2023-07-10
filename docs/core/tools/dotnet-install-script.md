@@ -1,7 +1,7 @@
 ---
 title: dotnet-install scripts
 description: Learn about the dotnet-install scripts to install the .NET SDK and the shared runtime.
-ms.date: 11/08/2021
+ms.date: 07/10/2023
 ---
 # dotnet-install scripts reference
 
@@ -45,8 +45,8 @@ The bash script also reads PowerShell switches, so you can use PowerShell switch
 
 The `dotnet-install` scripts perform a non-admin installation of the .NET SDK, which includes the .NET CLI and the shared runtime. There are two scripts:
 
-* A PowerShell script that works on Windows.
-* A bash script that works on Linux/macOS.
+* A PowerShell script that works on Windows. For installation instructions, see [Install on Windows](../install/windows.md#install-with-powershell-automation).
+* A bash script that works on Linux/macOS. For installation instructions, see [Install on Linux](../install/linux-scripted-manual.md#scripted-install) and [Install on macOS](../install/macos.md#install-with-bash-automation).
 
 > [!NOTE]
 > .NET collects telemetry data. To learn more and how to opt out, see [.NET SDK telemetry](telemetry.md).
@@ -79,6 +79,9 @@ Both scripts have the same behavior. They download the ZIP/tarball file from the
 By default, the installation scripts download the SDK and install it. If you wish to only obtain the shared runtime, specify the `-Runtime|--runtime` argument.
 
 By default, the script adds the install location to the $PATH for the current session. Override this default behavior by specifying the `-NoPath|--no-path` argument. The script doesn't set the `DOTNET_ROOT` environment variable.
+
+> [!IMPORTANT]
+> The script never adds the install location to the user's `PATH` environment variable, you must manually add it.
 
 Before running the script, install the required [dependencies](../install/windows.md#dependencies).
 

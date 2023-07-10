@@ -10,6 +10,7 @@ Some C# 12 features have been introduced in previews. You can try these features
 - [Primary constructors](#primary-constructors) - Introduced in Visual Studio 17.6 preview 2.
 - [Optional parameters in lambda expressions](#default-lambda-parameters) - Introduced in Visual Studio 17.5 preview 2.
 - [Alias any type](#alias-any-type) - Introduced in Visual Studio 17.6 preview 3.
+- [Inline arrays](#inline-arrays) - Introduced in Visual Studio 17.7 preview 3.
 - [Interceptors](#interceptors) - *Preview feature* Introduced in Visual Studio 17.7, preview 3.
 
 ## Primary constructors
@@ -28,7 +29,38 @@ You can learn more about default parameters on lambda expressions in the article
 
 ## Alias any type
 
-You can use the `using` alias directive to alias any type, not just named types. That means you can create semantic aliases for tuple types, array types, pointer types, or other unsafe types. For more information, see the [feature specification](~/_csharplang/proposals/using-alias-types.md)
+You can use the `using` alias directive to alias any type, not just named types. That means you can create semantic aliases for tuple types, array types, pointer types, or other unsafe types. For more information, see the [feature specification](~/_csharplang/proposals/using-alias-types.md).
+
+## Inline arrays
+
+Inline arrays are used by the runtime team and other library authors to improve performance in your apps. Inline arrays enable a developer to create an array of fixed size in a `struct` type. A struct with an inline buffer should provide performance characteristics similar to an unsafe fixed size buffer. You likely won't declare your own inline arrays, but you'll use them transparently when they're exposed as <xref:System.Span%601?displayProperty=nameWithType> or <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> objects from runtime APIs.
+
+An *inline array* is declared similar to the following `struct`:
+
+```csharp
+[System.Runtime.CompilerServices.InlineArray(10)]
+public struct Buffer
+{
+    private int _element0;
+}
+```
+
+You use them like any other array:
+
+```csharp
+var buffer = new Buffer();
+for (int i = 0; i < 10; i++)
+{
+    buffer[i] = i;
+}
+
+foreach (var i in buffer)
+{
+    Console.WriteLine(i);
+}
+```
+
+The difference is that the compiler can take advantage of known information about an inline array. You'll likely consume inline arrays as you would any other array. For more information on how to declare inline arrays, see the language reference on [`struct` types](../language-reference/builtin-types/struct.md#inline-arrays).
 
 ## Interceptors
 
@@ -37,11 +69,11 @@ You can use the `using` alias directive to alias any type, not just named types.
 >
 > In order to use interceptors, you'll need to set the `<Features>InterceptorsPreview<Features>` element in your project file. Without this flag, interceptors are disabled, even when other C# 12 features are enabled.
 
-An *interceptor* is a method which can declaratively substitute a call to an *interceptable* method with a call to itself at compile time. This substitution occurs by having the interceptor declare the source locations of the calls that it intercepts. This provides a limited facility to change the semantics of existing code by adding new code to a compilation, for example in a source generator.
+An *interceptor* is a method that can declaratively substitute a call to an *interceptable* method with a call to itself at compile time. This substitution occurs by having the interceptor declare the source locations of the calls that it intercepts. Interceptors provides a limited facility to change the semantics of existing code by adding new code to a compilation, for example in a source generator.
 
 You use an *interceptor* as part of a source generator to modify, rather than add code to an existing source compilation. The source generator substitutes calls to an interceptable method with a call to the *interceptor* method.
 
-If you are interested in experimenting with interceptors, you can learn more by reading the [feature specification](https://github.com/dotnet/roslyn/blob/main/docs/features/interceptors.md). If you use the feature, make sure to stay current with any changes in the feature specification for this preview feature. Once the feature is finalized, we'll add more guidance on this site.
+If you're interested in experimenting with interceptors, you can learn more by reading the [feature specification](https://github.com/dotnet/roslyn/blob/main/docs/features/interceptors.md). If you use the feature, make sure to stay current with any changes in the feature specification for this preview feature. Once the feature is finalized, we'll add more guidance on this site.
 
 ## See also
 

@@ -534,7 +534,6 @@ ValidateOptionsResult result = builder.Build();
 builder.Clear();
 ```
 
-
 ### LoggerMessageAttribute constructors
 
 <xref:Microsoft.Extensions.Logging.LoggerMessageAttribute> now offers additional constructor overloads. Previously, you had to choose either the parameterless constructor or the constructor that required all of the parameters (event ID, log level, and message). The new overloads offer greater flexibility in specifying the required parameters with reduced code. If you don't supply an event ID, the system generates one automatically.

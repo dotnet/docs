@@ -95,10 +95,10 @@ An inline array is a structure that contains a contiguous block of N elements of
 
 In addition, the compiler validates the <xref:System.Runtime.CompilerServices.InlineArrayAttribute?displayProperty=fullName> attribute:
 
-- The length must be > 0
+- The length must be greater than zero (`> 0`).
 - The target type must be a struct.
 
-In most cases, and inline array can be accessed like an array, both to read and write values. In addition, you can use the [range](../operators/member-access-operators.md#range-operator-) and [index](../operators/member-access-operators.md#indexer-access) operators.
+In most cases, an inline array can be accessed like an array, both to read and write values. In addition, you can use the [range](../operators/member-access-operators.md#range-operator-) and [index](../operators/member-access-operators.md#indexer-access) operators.
 
 There are minimal restrictions on the type of the single field. It can't be a pointer type, but it can be any reference type, or any value type. You can use inline arrays with almost any C# data structure.
 

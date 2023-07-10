@@ -107,9 +107,12 @@ As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime 
 
 ## CentOS Stream 8 ✔️
 
-.NET is included in the AppStream repositories for CentOS Stream 8.
+Use the Microsoft repository to install .NET:
 
-[!INCLUDE [linux-dnf-install-70](includes/linux-install-70-dnf.md)]
+```bash
+sudo rpm -Uvh https://packages.microsoft.com/config/centos/8/packages-microsoft-prod.rpm
+sudo yum install dotnet-sdk-7.0
+```
 
 ## Dependencies
 

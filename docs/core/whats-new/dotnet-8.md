@@ -840,7 +840,7 @@ This section contains the following subtopics:
 - [Source Link](#source-link)
 - [Source-build SDK](#source-build-sdk)
 - [Container images](#container-images)
-- [Containers performance and compatibility](#containers-performance-and-compatibility)
+- [Containers performance and compatibility](#container-performance-and-compatibility)
 
 ### Terminal build output
 

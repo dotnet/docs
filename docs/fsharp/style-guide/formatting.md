@@ -505,7 +505,7 @@ let useAddEntry () =
          // foo
          bar ()
 
-// ❌ Not OK, code formatters will reformat to the above to avoid the vanity alignment.
+// ❌ Not OK, code formatters will reformat to the above to avoid reliance on whitespace alignment that is contingent to length of an identifier.
 let useAddEntry () =
     fun (input: {| name: string
                    amount: Amount

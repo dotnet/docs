@@ -35,27 +35,28 @@ In this part of the series you'll learn how to:
 
 A template package is one or more templates packed into a NuGet package. When you install or uninstall a template package, all templates contained in the package are added or removed, respectively.
 
-Template packages are represented by a NuGet package (_.nupkg_) file. And, like any NuGet package, you can upload the template package to a NuGet feed. The `dotnet new install` command supports installing template packages from a NuGet package feed. Additionally, you can install a template package from a _.nupkg_ file directly.
+Template packages are represented by a NuGet package (_.nupkg_) file. And, like any NuGet package, you can upload the template package to a NuGet feed. The `dotnet new install` [command](../tools/dotnet-new-install.md) supports installing template packages from a NuGet package feed. Additionally, you can install a template package from a _.nupkg_ file directly.
 
 Normally you use a C# project file to compile code and produce a binary. However, the project can also be used to generate a template package. By changing the settings of the _.csproj_, you can prevent it from compiling any code and instead include all the assets of your templates as resources. When this project is built, it produces a template package NuGet package.
 
 The package you are going to generate will include the [item template](cli-templates-create-item-template.md) and [package template](cli-templates-create-project-template.md) previously created.
 
+In order to create the template package, we will use the template for the template package provided by [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/packages/Microsoft.TemplateEngine.Authoring.Templates).
 In your terminal, run the command:
 
 ```dotnetcli
 dotnet new install Microsoft.TemplateEngine.Authoring.Templates
 ```
 
-This [template package](https://github.com/dotnet/templating/tree/main/template_feed/Microsoft.TemplateEngine.Authoring.Templates) contains templates useful for template authoring.
+This [template package](https://www.nuget.org/packages/Microsoft.TemplateEngine.Authoring.Templates) contains templates useful for template authoring. Note: nuget.org should be available as NuGet feed inside the working directory to install this template package.
 
 Navigate to the _working_ folder and run:
 
 ```dotnetcli
-dotnet new templatepack --name "templatepack"
+dotnet new templatepack --name "AdatumCorporation.Utility.Templates"
 ```
 
-The `--name` parameter sets the _.csproj_ filename to _templatepack.csproj_. You should see a result similar to the following output.
+The `--name` parameter sets the _.csproj_ filename to _AdatumCorporation.Utility.Templates.csproj_. You should see a result similar to the following output.
 
 ```console
 The template "Template Package" was created successfully.
@@ -65,7 +66,7 @@ Description: Manual actions required
 Manual instructions: Open *.csproj in the editor and complete the package metadata configuration. Copy the templates to 'content' folder. Fill in README.md.
 ```
 
-Next, open the _templatepack.csproj_ file in a code editor and populate it according to the hints in the template:
+Next, open the _AdatumCorporation.Utility.Templates.csproj_ file in a code editor and populate it according to the hints in the template:
 
 ```xml
  <PropertyGroup>
@@ -81,15 +82,29 @@ Next, open the _templatepack.csproj_ file in a code editor and populate it accor
   </PropertyGroup>
 ```
 
-For getting more information about content of _templatepack.csproj_ file, navigate to [Pack a template into a NuGet package (nupkg file)](https://learn.microsoft.com/dotnet/core/tools/custom-templates#pack-a-template-into-a-nuget-package-nupkg-file).
+For getting more information about NuGet package metadata available in _AdatumCorporation.Utility.Templates.csproj_ file, navigate to [Pack a template into a NuGet package (nupkg file)](https://learn.microsoft.com/dotnet/core/tools/custom-templates#pack-a-template-into-a-nuget-package-nupkg-file).
+
+By default, the created project file includes [template authoring MSBuild tasks](https://aka.ms/templating-authoring-tools).
+
+```xml
+  <PropertyGroup>
+    <LocalizeTemplates>false</LocalizeTemplates>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.TemplateEngine.Tasks" Version="*" PrivateAssets="all" IsImplicitlyDefined="true"/>
+  </ItemGroup>
+```
+
+Those MSBuild tasks provide template validation and [localization of the templates](https://aka.ms/templating-localization) capabilities. The localization is disabled by default, to enable creation of localization files, set `LocalizeTemplates` to `true`.
 
 ## Build and install
 
-Save changes in _templatepack.csproj_ file. Before building the template package, verify that your folder structure is correct. Any custom template should be placed in the _content_ folder, in its own folder. The hierarchy should look similar to:
+Save changes in _AdatumCorporation.Utility.Templates.csproj_ file. Before building the template package, verify that your folder structure is correct. Any custom template should be placed in the _content_ folder, in its own folder. The hierarchy should look similar to:
 
 ```console
 working
-│   templatepack.csproj
+│   AdatumCorporation.Utility.Templates.csproj
 └───content
     ├───extensions
     │   └───.template.config
@@ -109,9 +124,9 @@ C:\working> dotnet pack
 Microsoft (R) Build Engine version 16.8.0+126527ff1 for .NET
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-  Restore completed in 123.86 ms for C:\working\templatepack.csproj.
+  Restore completed in 123.86 ms for C:\working\AdatumCorporation.Utility.Templates.csproj.
 
-  templatepack -> C:\working\bin\Debug\net8.0\templatepack.dll
+  AdatumCorporation.Utility.Templates -> C:\working\bin\Debug\net8.0\AdatumCorporation.Utility.Templates.dll
   Successfully created package 'C:\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg'.
 ```
 

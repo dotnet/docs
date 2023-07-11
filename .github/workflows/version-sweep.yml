@@ -49,14 +49,16 @@ jobs:
 
             - name: Create pull requests
               if: steps.dotnet-version-sweeper.outputs.has-remaining-work == 'true'
+              env:
+                DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT: 1 # opt-out of upgrade-assistant telemetry
               run: |
-                  upgradeProjects: ${{ steps.dotnet-version-sweeper.outputs.upgrade-projects }}
+                  projects: ${{ steps.dotnet-version-sweeper.outputs.upgrade-projects }}
 
                   # Install .NET Upgrade Assistant global tool
                   dotnet tool install --global upgrade-assistant
 
                   # Iterate all upgrade projects
-                  for projectDir in "${upgradeProjects[@]}"; do
+                  for projectDir in "${projects[@]}"; do
                     echo "Upgrading project: $projectDir"
 
                     # Create a new branch
@@ -74,12 +76,12 @@ jobs:
                       git commit -m ".NET Version Sweeper: Upgraded $projectDir"
 
                       # Push the branch to the repository
-                      git push origin upgrade/$projectDir
+                      git push origin upgrade/$branchName
 
                       # Create a pull request
                       gh pr create \
                         --base main \
-                        --head upgrade/$projectDir \
+                        --head upgrade/$branchName \
                         --title "Upgraded $projectDir" \
                         --body "Proposed upgrade for $projectDir"
 

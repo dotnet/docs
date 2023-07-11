@@ -101,13 +101,13 @@ Did you notice that the account number is blank? It's time to fix that. The acco
 Add a member declaration to the `BankAccount` class. Place the following line of code after the opening brace `{` at the beginning of the `BankAccount` class:
 
 ```csharp
-private static int accountNumberSeed = 1234567890;
+private static int s_accountNumberSeed = 1234567890;
 ```
 
-The `accountNumberSeed` is a data member. It's `private`, which means it can only be accessed by code inside the `BankAccount` class. It's a way of separating the public responsibilities (like having an account number) from the private implementation (how account numbers are generated). It's also `static`, which means it's shared by all of the `BankAccount` objects. The value of a non-static variable is unique to each instance of the `BankAccount` object. Add the following two lines to the constructor to assign the account number. Place them after the line that says `this.Balance = initialBalance`:
+The `accountNumberSeed` is a data member. It's `private`, which means it can only be accessed by code inside the `BankAccount` class. It's a way of separating the public responsibilities (like having an account number) from the private implementation (how account numbers are generated). It's also `static`, which means it's shared by all of the `BankAccount` objects. The value of a non-static variable is unique to each instance of the `BankAccount` object. The `accountNumberSeed` is a `private static` field and thus has the `s_` prefix as per C# naming conventions. The `s` denoting `static` and `_` denoting `private` field. Add the following two lines to the constructor to assign the account number. Place them after the line that says `this.Balance = initialBalance`:
 
 ```csharp
-this.Number = accountNumberSeed.ToString();
+this.Number = s_accountNumberSeed.ToString();
 accountNumberSeed++;
 ```
 
@@ -133,7 +133,7 @@ This example shows an important aspect of ***properties***. You're now computing
 
 Next, implement the `MakeDeposit` and `MakeWithdrawal` methods. These methods will enforce the final two rules: the initial balance must be positive, and any withdrawal must not create a negative balance.
 
-These rules introduce the concept of ***exceptions***. The standard way of indicating that a method can't complete its work successfully is to throw an exception. The type of exception and the message associated with it describe the error. Here, the `MakeDeposit` method throws an exception if the amount of the deposit isn't greater than 0. The `MakeWithdrawal` method throws an exception if the withdrawal amount isn't greater than 0, or if applying the withdrawal results in a negative balance. Add the following code after the declaration of the `allTransactions` list:
+These rules introduce the concept of ***exceptions***. The standard way of indicating that a method can't complete its work successfully is to throw an exception. The type of exception and the message associated with it describe the error. Here, the `MakeDeposit` method throws an exception if the amount of the deposit isn't greater than 0. The `MakeWithdrawal` method throws an exception if the withdrawal amount isn't greater than 0, or if applying the withdrawal results in a negative balance. Add the following code after the declaration of the `_allTransactions` list:
 
 :::code language="csharp" source="./snippets/introduction-to-classes/BankAccount.cs" id="DepositAndWithdrawal":::
 

@@ -50,6 +50,8 @@ items:
         href: cryptography/8.0/rsa-encrypt-decrypt-value-obsolete.md
     - name: Deployment
       items:
+      - name: Container images upgraded to Debian 12
+        href: deployment/8.0/debian-container-image.md
       - name: Host determines RID-specific assets
         href: deployment/8.0/rid-asset-list.md
       - name: StripSymbols defaults to true
@@ -1208,6 +1210,8 @@ items:
     items:
     - name: .NET 8
       items:
+      - name: Container images upgraded to Debian 12
+        href: deployment/8.0/debian-container-image.md
       - name: Host determines RID-specific assets
         href: deployment/8.0/rid-asset-list.md
       - name: StripSymbols defaults to true

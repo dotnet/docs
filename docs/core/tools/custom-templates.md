@@ -14,7 +14,7 @@ You can install custom templates from a NuGet package on any NuGet feed, by refe
 The template engine is open source, and the online code repository is at [dotnet/templating](https://github.com/dotnet/templating/) on GitHub. More templates, including templates from third parties, can be found using [`dotnet new search`](dotnet-new-search.md). For more information about creating and using custom templates, see [How to create your own templates for dotnet new](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/) and the [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki).
 
 > [!NOTE]
-> Template examples are available at the [dotnet/dotnet-template-samples](https://github.com/dotnet/dotnet-template-samples) GitHub repository. However, while these examples are good resource for learning how the templates work, the repository is archived and no longer maintained. The examples may be out of date and no longer working.
+> Template examples are available at the [dotnet/templating](https://aka.ms/template-samples) GitHub repository.
 
 To follow a walkthrough and create a template, see the [Create a custom template for dotnet new](../tutorials/cli-templates-create-item-template.md) tutorial.
 
@@ -115,7 +115,7 @@ The localization JSON consists of key value pairs:
 - The key is the reference to an element of `template.json` to be localized. If the element is a child, use the full path with a `/` delimiter.
 - The value is the localization string of the element given by the key.
 
-For more information about localizing templates, see the [dotnet templating wiki's localization page](https://github.com/dotnet/templating/wiki/Localization).
+For more information about localizing templates, see the [dotnet templating wiki's localization page](https://aka.ms/templating-localization).
 
 ### Example
 
@@ -317,6 +317,6 @@ dotnet new <TEMPLATE>
 
 - [Create a custom template for dotnet new (tutorial)](../tutorials/cli-templates-create-item-template.md)
 - [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)
-- [dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)
+- [Template samples](https://aka.ms/template-samples)
 - [How to create your own templates for dotnet new](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/)
 - [*template.json* schema at the JSON Schema Store](http://json.schemastore.org/template)

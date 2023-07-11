@@ -838,8 +838,6 @@ This section contains the following subtopics:
 - [Template engine](#template-engine)
 - [Source Link](#source-link)
 - [Source-build SDK](#source-build-sdk)
-- [Container images](#container-images)
-- [Containers performance and compatibility](#container-performance-and-compatibility)
 
 ### Terminal build output
 
@@ -942,6 +940,11 @@ The [template engine](https://github.com/dotnet/templating) provides a more secu
 ### Source-build SDK
 
 The Linux distribution-built (source-build) SDK now has the capability to build self-contained applications using the source-build runtime packages. The distribution-specific runtime package is bundled with the source-build SDK. During self-contained deployment, this bundled runtime package will be referenced, thereby enabling the feature for users.
+
+## Containers
+
+- [Container images](#container-images)
+- [Containers performance and compatibility](#container-performance-and-compatibility)
 
 ### Container images
 

@@ -61,7 +61,7 @@ Figure 3: The LOH after a generation 2 GC
 
 In general, a GC occurs under one of the following three conditions:
 
-- Allocation exceeds the generation 0 or large object threshold.
+- Allocation exceeds the generation 2 or large object threshold.
 
   The threshold is a property of a generation. A threshold for a generation is set when the garbage collector allocates objects into it. When the threshold is exceeded, a GC is triggered on that generation. When you allocate small or large objects, you consume generation 0 and the LOH's thresholds, respectively. When the garbage collector allocates into generation 1 and 2, it consumes their thresholds. These thresholds are dynamically tuned as the program runs.
 

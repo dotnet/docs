@@ -20,44 +20,44 @@ dotnet new details [<PACKAGE_NAME>] [--interactive] [--add-source|--nuget-source
 
 ## Description
 
-The `dotnet new details` command displays the metdata of the template package from the package name provided. For information on a specific version specify the version in with the `--version (check if this is correct)` option. By default, the command searches for the latest available version.
-If the package is installed locally or is found on the official NuGet website, it also displays the templates that the package contains, otherwise it will only display basic metadata.
+The `dotnet new details` command displays the metdata of the template package from the package name provided. By default, the command searches for the latest available version.
+If the package is installed locally or is found on the official NuGet website, it also displays the templates that the package contains, otherwise it only displays basic metadata.
 
 ## Arguments
 
-- **`PACKAGE NAME`**
+- **`PACKAGE_NAME`**
 
- The package identifier to display the details for.
+  The package identifier to display the details for.
 
 ## Options
 
 - **`--add-source|--nuget-source <SOURCE>`**
   
-  By default, `dotnet new details` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet source the package can be installed from. If `--nuget-source` is specified, the source will be added to the list of sources to be checked.  
+  By default, `dotnet new details` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet source the package can be installed from. If `--nuget-source` is specified, the source is added to the list of sources to be checked.  
   To check the configured sources for the current directory use [`dotnet nuget list source`](dotnet-nuget-list-source.md). For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior)
 
-[!INCLUDE [interactive](../../../includes/cli-interactive-5-0.md)]
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 - **`-d|--diagnostics`**
 
-  Enables diagnostic output. Available since .NET SDK 7.0.100.
+  Enables diagnostic output.
 
 - **`-h|--help`**
 
-  Prints out help for the search command. Available since .NET SDK 7.0.100.
+  Prints out help for the search command.
 
 ## Examples
 
-- Displays package data from the latest version of SPA templates for ASP.NET Core:
+- Display package data from the latest version of NUnit templates:
 
    ```dotnetcli
-  dotnet new details Microsoft.DotNet.Web.Spa.ProjectTemplates
+  dotnet new details NUnit3.DotNetNew.Template
   ```
 
-- Displays package data of the SPA templates for ASP.NET Core from a custom NuGet source using interactive mode:
+- Display package data of the NUnit templates from a custom NuGet source using interactive mode:
 
   ```dotnetcli
-  dotnet new details Microsoft.DotNet.Web.Spa.ProjectTemplates --add-source "https://api.my-custom-nuget.com/v3/index.json" --interactive
+  dotnet new details NUnit3.DotNetNew.Template --add-source "https://api.my-custom-nuget.com/v3/index.json" --interactive
   ```
 
 ## See also

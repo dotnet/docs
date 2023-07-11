@@ -31,7 +31,7 @@ Notable package versions:
 
 ## Type of change
 
-This change can affect [binary compatibility](../../categories.md#binary-compatibility) and is also a behavioral change.
+This change can affect [binary compatibility](../../categories.md#binary-compatibility) and is also a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 

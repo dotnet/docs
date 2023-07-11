@@ -94,7 +94,7 @@ SecretProperties secretProperties = new("secret")
 
 To create instances of output models, a model factory is used. Most Azure SDK client libraries provide a static model factory class that ends in `ModelFactory` and contains a set of static methods to initialize the library's output model types.
 
-```C#
+```csharp
 KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
     new SecretProperties("secret"), "secretValue");
 ```
@@ -124,7 +124,7 @@ responseMock.SetupGet(r => r.Status).Returns(200);
 Response response = responseMock.Object;
 ```
 
-To create an instance of Response without defining any behaviors:
+To create an instance of `Response` without defining any behaviors:
 
 ```csharp
 Response response = Mock.Of<Response>();
@@ -132,7 +132,7 @@ Response response = Mock.Of<Response>();
 
 ## [C#](#tab/csharp)
 
-The Response class is abstract, which means there are a lot of members to override. Consider using the Moq library to streamline your approach.
+The `Response` class is abstract, which means there are a lot of members to override. Consider using the Moq library to streamline your approach.
 
 ```csharp
 public class TestResponse : Response
@@ -157,7 +157,7 @@ public class TestResponse : Response
 
 ---
 
-Some services also support using the <xref:Azure.Response%601> type, which is a class that contains a model and the HTTP response that returned it. To create a test instance of `Response<T>` use the static `Response.FromValue` method:
+Some services also support using the <xref:Azure.Response%601> type, which is a class that contains a model and the HTTP response that returned it. To create a test instance of `Response<T>`, use the static `Response.FromValue` method:
 
 ## [Moq](#tab/moq)
 
@@ -417,4 +417,4 @@ This approach is useful when you would like to consolidate the dependency creati
 
 * [Dependency injection in .NET](/dotnet/core/extensions/dependency-injection)
 * [Unit testing best practices](/dotnet/core/testing/unit-testing-best-practices)
-* [Unit testing C# in .NET Core using dotnet test and xUnit](/dotnet/core/testing/unit-testing-with-dotnet-test)
+* [Unit testing C# in .NET using dotnet test and xUnit](/dotnet/core/testing/unit-testing-with-dotnet-test)

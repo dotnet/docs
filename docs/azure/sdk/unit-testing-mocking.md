@@ -15,7 +15,7 @@ In this article, you'll learn how to write unit tests for the Azure SDK for .NET
 
 A service client class is the main entry point for developers in an Azure SDK library and implements most of the logic to communicate with the Azure service. When unit testing service client classes, it's important to be able to create an instance of the client that behaves as expected without making any network calls.
 
-Each of the Azure SDK clients follows mocking guidelines that allow their behavior to be overridden:
+Each of the Azure SDK clients follows [mocking guidelines](https://azure.github.io/azure-sdk/dotnet_introduction.html#dotnet-mocking) that allow their behavior to be overridden:
 
 * Each client offers at least one protected constructor to allow inheritance for testing.
 * All public client members are virtual to allow overriding.
@@ -111,7 +111,7 @@ secretPropertiesWithCreatedOn = SecretModelFactory.SecretProperties(
 
 ## Explore response types
 
-The <xref:Azure.Response> class is an abstract class that represents an HTTP response and is a part of almost all types returned by service client methods. You can create test `Response` instances using either the Moq library or standard C# inheritence.
+The <xref:Azure.Response> class is an abstract class that represents an HTTP response and is returned by most service client methods. You can create test `Response` instances using either the Moq library or standard C# inheritance.
 
 ## [Moq](#tab/moq)
 
@@ -180,7 +180,7 @@ Response<KeyVaultSecret> response = Response.FromValue(
 
 ### Explore paging
 
-The <xref:Azure.Page%601> class is used as a building block in service methods that invoke operations returning results in multiple pages. The `Page<T>` is rarely returned from APIs directly but is useful to create the `AsyncPageable<T>` and `Pageable<T>` instances in the next section. To create a `Page<T>` instance, use the `Page<T>.FromValues` method, passing a list of items, a continuation token, and the Response.
+The <xref:Azure.Page%601> class is used as a building block in service methods that invoke operations returning results in multiple pages. The `Page<T>` is rarely returned from APIs directly but is useful to create the `AsyncPageable<T>` and `Pageable<T>` instances in the next section. To create a `Page<T>` instance, use the `Page<T>.FromValues` method, passing a list of items, a continuation token, and the `Response`.
 
 The `continuationToken` parameter is used to retrieve the next page from the service. For unit testing purposes, it should be set to null for the last page and should be non-empty for other pages.
 
@@ -288,7 +288,7 @@ You want to test the following behaviors of the `AboutToExpireSecretFinder` to e
 * Secrets that don't have an expiry date set are not returned.
 * Secrets with an expiry date closer to the current date than the threshold are returned.
 
-When unit testing you only want the unit tests to verify the application logic and not whether the Azure service or SDK works correctly. The following example tests the key behaviors using the popular xUnit framework for C#:
+When unit testing you only want the unit tests to verify the application logic and not whether the Azure service or library works correctly. The following example tests the key behaviors using the popular xUnit framework for C#:
 
 ```csharp
 using Azure;

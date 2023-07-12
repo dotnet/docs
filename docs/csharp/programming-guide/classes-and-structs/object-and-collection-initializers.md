@@ -91,7 +91,7 @@ public class Pet
 var pet = new Pet() { Age = 10};
 
 // Compiler error:
-// Error CS9035	Required member 'Pet.Age' must be set in the object initializer or attribute constructor.
+// Error CS9035 Required member 'Pet.Age' must be set in the object initializer or attribute constructor.
 // var pet = new Pet();
 ```
 

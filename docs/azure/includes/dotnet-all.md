@@ -290,9 +290,9 @@
 | Unknown Display Name | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.Mongo/1.0.2) |  |  |
 | Unknown Display Name | NuGet [0.14.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Dapr/0.14.0-preview01) |  |  |
 | Unknown Display Name | NuGet [0.3.1-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Redis/0.3.1-preview) |  |  |
-| Unknown Display Name | NuGet [0.15.0](https://www.nuget.org/packages/Microsoft.TypeSpec.MSBuild/0.15.0) |  |  |
-| Unknown Display Name | NuGet [0.2.3](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Controller/0.2.3) |  |  |
-| Unknown Display Name | NuGet [0.3.4](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Templates/0.3.4) |  |  |
+| Unknown Display Name | NuGet [0.16.0](https://www.nuget.org/packages/Microsoft.TypeSpec.MSBuild/0.16.0) |  |  |
+| Unknown Display Name | NuGet [0.3.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Controller/0.3.0) |  |  |
+| Unknown Display Name | NuGet [0.4.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Templates/0.4.0) |  |  |
 | Anomaly Detector | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.AnomalyDetector/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.AnomalyDetector_1.0.0-preview.1/sdk/cognitiveservices/AnomalyDetector) |
 | App Configuration Provider | NuGet [5.2.0](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.AzureAppConfiguration/5.2.0)<br>NuGet [5.3.0-preview](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.AzureAppConfiguration/5.3.0-preview) |  | GitHub [5.2.0](https://github.com/Azure/AppConfiguration-DotnetProvider) |
 | App Service | NuGet [0.2.2-alpha](https://www.nuget.org/packages/Microsoft.Azure.AppService/0.2.2-alpha) |  |  |

@@ -285,7 +285,7 @@ public class AboutToExpireSecretFinder
 
 You want to test the following behaviors of the `AboutToExpireSecretFinder` to ensure they continue working as expected:
 
-* Secrets that don't have an expiry date set are not returned.
+* Secrets without an expiry date set aren't returned.
 * Secrets with an expiry date closer to the current date than the threshold are returned.
 
 When unit testing you only want the unit tests to verify the application logic and not whether the Azure service or library works correctly. The following example tests the key behaviors using the popular xUnit framework for C#:

@@ -34,13 +34,13 @@ This is called *value assignment*: the value is assigned.
 
 ## ref assignment
 
-*Ref assignment* `= ref` makes its left-hand operand an alias to the right-hand operand. The left-hand operand must be a [local reference variable](../statements/declarations.md#reference-variables) or a [`ref` field](../builtin-types/ref-struct.md#ref-fields) in a `ref struct`. Both operands must be of the same type.
-
-The following example demonstrates the usage of the ref assignment operator:
+*Ref assignment* `= ref` makes its left-hand operand an alias to the right-hand operand, as the following example demonstrates:
 
 :::code language="csharp" source="snippets/shared/AssignmentOperator.cs" id="SnippetRefAssignment":::
 
-In the preceding example, the ref local `arrayElement` variable is initialized as an alias to the first array element. Then, it's reassigned to become an alias to the last array element. As it's an alias, when you update its value with an ordinary assignment operator `=`, the corresponding array element is also updated.
+In the preceding example, the [local reference variable](../statements/declarations.md#reference-variables) `arrayElement` is initialized as an alias to the first array element. Then, it's `ref` reassigned to refer to the last array element. As it's an alias, when you update its value with an ordinary assignment operator `=`, the corresponding array element is also updated.
+
+The left-hand operand of `ref` assignment can be a [local reference variable](../statements/declarations.md#reference-variables), a [`ref` field](../builtin-types/ref-struct.md#ref-fields), and a [`ref`](../keywords/ref.md), [`out`](../keywords/out-parameter-modifier.md), or [`in`](../keywords/in-parameter-modifier.md) method parameter. Both operands must be of the same type.
 
 ## Compound assignment
 

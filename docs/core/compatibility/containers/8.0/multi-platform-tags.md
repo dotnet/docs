@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Multi-platform container tags are Linux-only"
-description: Learn about the breaking change in deployment where multi-platform container tags are now Linux-only.
+description: Learn about the breaking change in containers where multi-platform container tags are now Linux-only.
 ms.date: 07/11/2023
 ---
 # Multi-platform container tags are Linux-only

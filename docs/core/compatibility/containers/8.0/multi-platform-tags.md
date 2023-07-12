@@ -15,7 +15,7 @@ Previously, you could reference a tag like `7.0` and be able to retrieve a Windo
 
 ## New behavior
 
-Starting in .NET 8, the `8.0`` tag will only retrieve a Linux-based image.
+Starting in .NET 8, the `8.0` tag will only retrieve a Linux-based image.
 
 ## Version introduced
 

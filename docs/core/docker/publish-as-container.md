@@ -74,9 +74,9 @@ The worker template loops indefinitely. Use the cancel command <kbd>Ctrl+C</kbd>
 ## Add NuGet package
 
 > [!IMPORTANT]
-> If you are building a Web application and using .NET SDK 7.0.300 or greater then the package isn't required - the SDK contains the same functionality out of the box! All non-web projects should continue to use this package for now. We hope to remove this limitation [in the future](https://github.com/dotnet/sdk-container-builds/issues/402).
+> If you are building a Web application and using .NET SDK 7.0.300 or greater than the package isn't required—the SDK contains the same functionality out of the box! All non-web projects should continue to use this package for now. We hope to remove this limitation [in the future](https://github.com/dotnet/sdk-container-builds/issues/402).
 
-The [Microsoft.NET.Build.Containers NuGet package](https://libraries.io/nuget/Microsoft.NET.Build.Containers) package is currently required to publish non-Web projects as a container. To add the `Microsoft.NET.Build.Containers` NuGet package to the worker template, run the following [dotnet add package](../tools/dotnet-add-package.md) command:
+The [Microsoft.NET.Build.Containers](https://www.nuget.org/packages/Microsoft.NET.Build.Containers) NuGet package is currently required to publish non-Web projects as a container. To add the `Microsoft.NET.Build.Containers` NuGet package to the worker template, run the following [dotnet add package](../tools/dotnet-add-package.md) command:
 
 ```dotnetcli
 dotnet add package Microsoft.NET.Build.Containers

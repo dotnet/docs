@@ -18,6 +18,18 @@ items:
         href: aspnet-core/8.0/isystemclock-obsolete.md
       - name: Rate-limiting middleware requires AddRateLimiter
         href: aspnet-core/8.0/addratelimiter-requirement.md
+    - name: Containers
+      items:
+      - name: Container images upgraded to Debian 12
+        href: containers/8.0/debian-version.md
+      - name: Default ASP.NET Core port changed to 8080
+        href: containers/8.0/aspnet-port.md
+      - name: libintl package removed from Alpine images
+        href: containers/8.0/libintl-package.md
+      - name: Multi-platform container tags are Linux-only
+        href: containers/8.0/multi-platform-tags.md
+      - name: New 'app' user in Linux images
+        href: containers/8.0/app-user.md
     - name: Core .NET libraries
       items:
       - name: Activity operation name when null
@@ -996,6 +1008,18 @@ items:
         href: containers/6.0/console-formatter-default.md
       - name: Other breaking changes
         href: https://github.com/dotnet/dotnet-docker/discussions/3699
+    - name: .NET 8
+      items:
+      - name: Container images upgraded to Debian 12
+        href: containers/8.0/debian-version.md
+      - name: Default ASP.NET Core port changed to 8080
+        href: containers/8.0/aspnet-port.md
+      - name: libintl package removed from Alpine images
+        href: containers/8.0/libintl-package.md
+      - name: Multi-platform container tags are Linux-only
+        href: containers/8.0/multi-platform-tags.md
+      - name: New 'app' user in Linux images
+        href: containers/8.0/app-user.md
   - name: Core .NET libraries
     items:
     - name: .NET 8

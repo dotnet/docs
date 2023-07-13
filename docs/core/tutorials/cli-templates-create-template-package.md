@@ -54,10 +54,10 @@ This [template package](https://www.nuget.org/packages/Microsoft.TemplateEngine.
 Navigate to the _working_ folder and run:
 
 ```dotnetcli
-dotnet new templatepack --name "AdatumCorporation.Utility.Templates"
+dotnet new templatepack --output "AdatumCorporation.Utility.Templates"
 ```
 
-The `--name` parameter sets the _.csproj_ filename to _AdatumCorporation.Utility.Templates.csproj_. You should see a result similar to the following output.
+The `--output` parameter creates the template for template package in _AdatumCorporation.Utility.Templates_ subfolder and sets the _.csproj_ filename to _AdatumCorporation.Utility.Templates.csproj_. You should see a result similar to the following output.
 
 ```output
 The template "Template Package" was created successfully.
@@ -67,7 +67,7 @@ Description: Manual actions required
 Manual instructions: Open *.csproj in the editor and complete the package metadata configuration. Copy the templates to 'content' folder. Fill in README.md.
 ```
 
-Next, open the _AdatumCorporation.Utility.Templates.csproj_ file in a code editor and populate it according to the hints in the template:
+Next, navigate to _AdatumCorporation.Utility.Templates_ folder, open the _AdatumCorporation.Utility.Templates.csproj_ file in a code editor and populate it according to the hints in the template:
 
 ```xml
  <PropertyGroup>
@@ -101,10 +101,12 @@ These MSBuild tasks provide template validation and [localization of the templat
 
 ## Build and install
 
-Save changes in _AdatumCorporation.Utility.Templates.csproj_ file. Before building the template package, verify that your folder structure is correct. Any custom template should be placed in the _content_ folder, in its own folder. The hierarchy should look similar to:
+Save changes in _AdatumCorporation.Utility.Templates.csproj_ file.
+Copy _extensions_ and _consoleasync_ folders with templates created in previous parts of tutorial to _content_ folder.
+Before building the template package, verify that your folder structure is correct. Custom templates should be placed in the _content_ folder, in its own folder. The hierarchy should look similar to:
 
 ```console
-working
+AdatumCorporation.Utility.Templates
 │   AdatumCorporation.Utility.Templates.csproj
 └───content
     ├───extensions
@@ -117,26 +119,21 @@ working
 
 The _content_ folder has two folders: _extensions_ and _consoleasync_. By default, _content_ also contains _SampleTemplate_, which can safely be deleted. It was added to the authoring template for demonstration purposes.
 
-In your terminal, from the _working_ folder, run the `dotnet pack` command. This command builds your project and creates a NuGet package in the _working\bin\Debug_ folder, as indicated by the following output:
+In your terminal, from the _AdatumCorporation.Utility.Templates_ folder, run the `dotnet pack` command. This command builds your project and creates a NuGet package in the _working\bin\Debug_ folder, as indicated by the following output:
 
 ```output
-C:\working> dotnet pack
-
-Microsoft (R) Build Engine version 16.8.0+126527ff1 for .NET
-Copyright (C) Microsoft Corporation. All rights reserved.
-
-  Restore completed in 123.86 ms for C:\working\AdatumCorporation.Utility.Templates.csproj.
-
-  AdatumCorporation.Utility.Templates -> C:\working\bin\Debug\net8.0\AdatumCorporation.Utility.Templates.dll
-  Successfully created package 'C:\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg'.
+C:\working\AdatumCorporation.Utility.Templates> dotnet pack
+... cut to save space ...
+  AdatumCorporation.Utility.Templates -> C:\\working\AdatumCorporation.Utility.Templates\bin\Release\net8.0\AdatumCorporation.Utility.Templates.dll
+  Successfully created package 'C:\working\AdatumCorporation.Utility.Templates\bin\Release\AdatumCorporation.Utility.Templates.1.0.0.nupkg'.
 ```
 
 Next, install the template package with the `dotnet new install` command.
 
 ```output
-C:\working> dotnet new install C:\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg
+C:\working\AdatumCorporation.Utility.Templates> dotnet new install bin\Release\AdatumCorporation.Utility.Templates.1.0.0.nupkg
 The following template packages will be installed:
-   C:\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg
+   C:\working\AdatumCorporation.Utility.Templates\bin\Release\AdatumCorporation.Utility.Templates.1.0.0.nupkg
 
 Success: AdatumCorporation.Utility.Templates::1.0.0 installed the following templates:
 Templates                                         Short Name               Language          Tags

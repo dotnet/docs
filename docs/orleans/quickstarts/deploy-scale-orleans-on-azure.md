@@ -140,7 +140,7 @@ When the deployment finishes, Visual Studio will launch the application in the b
 
 ## Test and verify the app behavior
 
-1. In the browser address bar, test the `shorten` endpoint by adding a URL path such as `/shorten/www.microsoft.com`. The page should reload and provide a new URL with a shortened path at the end. Copy the new URL to your clipboard.
+1. In the browser address bar, test the `shorten` endpoint by adding a URL path such as `/shorten?url=https://www.microsoft.com`. The page should reload and provide a new URL with a shortened path at the end. Copy the new URL to your clipboard.
 
 1. Paste the shortened URL into the address bar and press enter. The page should reload and redirect you to [https://microsoft.com](https://microsoft.com).
 

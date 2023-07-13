@@ -18,7 +18,7 @@ This article gives an overview of which collections are supported for serializat
 * Derives from <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IAsyncEnumerable%601>
 * Contains elements that are serializable.
 
-The serializer calls the <xref:System.Collections.IEnumerable.GetEnumerator> method, and writes the elements.
+The serializer calls the <xref:System.Collections.IEnumerable.GetEnumerator> method and writes the elements.
 
 Deserialization is more complicated and is not supported for some collection types.
 

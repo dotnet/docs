@@ -15,6 +15,8 @@ One of the most common scenarios for IoT devices is detection of environmental c
 
 In this topic, you will use .NET to read environmental conditions from a sensor.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?show=dotnet-iot-for-beginners&ep=iot-sensors-and-displays-with-i²c-and-dotnet-dotnet-iot-for-beginners]
+
 ## Prerequisites
 
 - [!INCLUDE [prereq-sbc](../includes/prereq-sbc.md)]

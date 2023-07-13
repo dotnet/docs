@@ -13,6 +13,8 @@ recommendations: false
 
 General-purpose I/O (GPIO) pins can be controlled individually. This is useful for controlling LEDs, relays, and other stateful devices. In this topic, you will use .NET and your Raspberry Pi's GPIO pins to power an LED and blink it repeatedly.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?show=dotnet-iot-for-beginners&ep=general-purpose-inputoutput-use-gpio-output-to-control-devices-with-dotnet-dotnet-iot-for-beginners]
+
 ## Prerequisites
 
 - [!INCLUDE [prereq-sbc](../includes/prereq-sbc.md)]

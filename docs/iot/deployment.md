@@ -12,6 +12,8 @@ ms.prod: dotnet
 
 Deployment of .NET apps to single-board computers is identical to that of any other platform. Your app can run as *self-contained* or *framework-dependent* deployment modes. There are advantages to each strategy. For more information, see [.NET application publishing overview](../core/deploying/index.md).
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?show=dotnet-iot-for-beginners&ep=deploy-dotnet-apps-to-single-board-computers-and-debug-remotely-dotnet-iot-for-beginners]
+
 ## Deploying a framework-dependent app
 
 :::image type="content" source="media/framework-dependent-animation.gif" alt-text="Animated GIF showing a diagram of framework-dependent deployment. The SDK creates the assemblies, which require the .NET runtime on the target device.":::

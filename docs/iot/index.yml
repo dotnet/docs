@@ -32,11 +32,11 @@ landingContent:
             url: intro.md
       - linkListType: deploy
         links:
-          - text: Deploy .NET apps to Raspberry Pi
+          - text: Deploy .NET apps to Single Board Computers
             url: deployment.md
       - linkListType: concept
         links:
-          - text: Debug .NET apps on Raspberry Pi
+          - text: Debug .NET apps on Single Board Computers
             url: debugging.md
       - linkListType: reference
         links:
@@ -81,10 +81,10 @@ landingContent:
     linkLists:
       - linkListType: video
         links:
+          - text: .NET IoT for Beginners
+            url: https://aka.ms/dotnet-iot-for-beginners
           - text: "Let's Learn .NET: IoT"
             url: https://www.youtube.com/watch?v=sKaSBh1M4M4
-          - text: .NET IoT 101 (series)
-            url: https://aka.ms/IoTNet101
           - text: BBQ, Bots, and .NET Core
             url: /Shows/On-NET/BBQ-Bots-and-NET-Core
 

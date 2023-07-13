@@ -32,6 +32,7 @@ The rest of this article describes how to debug .NET apps on single-board comput
 
 Debugging .NET on single-board computers from Visual Studio Code requires configuration steps on the SBC and in the project's *launch.json* file.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?show=dotnet-iot-for-beginners&ep=deploy-dotnet-apps-to-single-board-computers-and-debug-remotely-dotnet-iot-for-beginners#time=7m30s]
 ### Enable SSH on the SBC
 
 SSH is required for remote debugging. To enable SSH on Raspberry Pi, [refer to *Enable SSH* in the Raspberry Pi documentation](https://www.raspberrypi.com/documentation/computers/remote-access.html#setting-up-an-ssh-server). Ensure that you have configured [passwordless SSH](https://www.raspberrypi.com/documentation/computers/remote-access.html#passwordless-ssh-access).
@@ -135,5 +136,7 @@ In Visual Studio Code, on the **Run and Debug** tab, select the configuration yo
 Visual Studio can debug .NET apps on remote devices via SSH. No specialized configuration is required on the device. For details on using Visual Studio to debug .NET remotely, see [Remote debug .NET on Linux using SSH](/visualstudio/debugger/remote-debugging-dotnet-core-linux-with-ssh).
 
 Be sure to select the `dotnet` process if you're debugging a framework-dependent deployment. Otherwise, the process will be named the same as the app's executable.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?show=dotnet-iot-for-beginners&ep=deploy-dotnet-apps-to-single-board-computers-and-debug-remotely-dotnet-iot-for-beginners#time=9m14s]
 
 ::: zone-end

@@ -17,6 +17,8 @@ Many manufacturers sell 20x4 LCD character displays with an integrated GPIO expa
 
 In this topic, you will use .NET to display text on an LCD character display using an I<sup>2</sup>C GPIO expander.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?show=dotnet-iot-for-beginners&ep=iot-sensors-and-displays-with-i²c-and-dotnet-dotnet-iot-for-beginners#time=5m6s]
+
 ## Prerequisites
 
 - [!INCLUDE [prereq-sbc](../includes/prereq-sbc.md)]

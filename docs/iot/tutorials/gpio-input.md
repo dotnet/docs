@@ -15,6 +15,8 @@ General-purpose I/O (GPIO) pins can be configured to receive electrical signals 
 
 In this tutorial, you'll use .NET and your Raspberry Pi's GPIO pins to detect the opening and closing of a circuit.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?show=dotnet-iot-for-beginners&ep=general-purpose-inputoutput-read-input-with-gpio-and-dotnet-dotnet-iot-for-beginners]
+
 ## Prerequisites
 
 - [!INCLUDE [prereq-sbc](../includes/prereq-sbc.md)]

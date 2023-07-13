@@ -15,6 +15,8 @@ An analog-to-digital converter (ADC) is a device that can read an analog input v
 
 In this topic, you will use .NET to read values from an ADC as you modulate the input voltage with a potentiometer.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?show=dotnet-iot-for-beginners&ep=convert-analog-signals-to-digital-data-with-dotnet-dotnet-iot-for-beginners]
+
 ## Prerequisites
 
 - [!INCLUDE [prereq-sbc](../includes/prereq-sbc.md)]

@@ -267,7 +267,7 @@
 | Azure.Communication.Administration | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Administration/1.0.0-beta.3) |  |  |
 | Azure.Communication.Calling | NuGet [1.0.0-beta.36](https://www.nuget.org/packages/Azure.Communication.Calling/1.0.0-beta.36) |  |  |
 | Azure.Communication.CallingServer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.CallingServer/1.0.0-beta.3) |  |  |
-| Azure.Core.Expressions.DataFactory | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Core.Expressions.DataFactory/1.0.0-beta.3) |  |  |
+| Azure.Core.Expressions.DataFactory | NuGet [1.0.0-beta.4](https://www.nuget.org/packages/Azure.Core.Expressions.DataFactory/1.0.0-beta.4) |  |  |
 | Data Movement - Blobs | NuGet [12.0.0-beta.3](https://www.nuget.org/packages/Azure.Storage.DataMovement.Blobs/12.0.0-beta.3) |  |  |
 | IoT Edge Function | NuGet [3.5.3](https://www.nuget.org/packages/Microsoft.Azure.IoT.Edge.Function/3.5.3) |  |  |
 | IoT Models Repository | NuGet [1.0.0-preview.5](https://www.nuget.org/packages/Azure.IoT.ModelsRepository/1.0.0-preview.5) |  |  |
@@ -345,7 +345,7 @@
 | Functions extension for Blob Storage | NuGet [5.1.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs/5.1.3) | [docs](/dotnet/api/overview/azure/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs-readme) |  |
 | Functions extension for Cosmos DB | NuGet [4.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDB/4.3.0) |  | GitHub [4.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/cosmos-v3.0.7/src/WebJobs.Extensions.CosmosDB) |
 | Functions extension for DocumentDB | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DocumentDB/1.3.0) |  | GitHub [1.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions) |
-| Functions extension for Durable Task Framework | NuGet [2.9.6](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask/2.9.6) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/functions) | GitHub [2.9.6](https://github.com/Azure/azure-functions-durable-extension/tree/v2.2.2/src/WebJobs.Extensions.DurableTask) |
+| Functions extension for Durable Task Framework | NuGet [2.10.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask/2.10.0) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/functions) | GitHub [2.10.0](https://github.com/Azure/azure-functions-durable-extension/tree/v2.2.2/src/WebJobs.Extensions.DurableTask) |
 | Functions extension for HTTP | NuGet [3.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Http/3.2.0) |  | GitHub [3.2.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.2/src/WebJobs.Extensions.Http) |
 | Functions extension for IoT Edge | NuGet [1.0.7](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.EdgeHub/1.0.7) |  | GitHub [1.0.7](https://github.com/Azure/iotedge/tree/1.0.7/edge-hub) |
 | Functions extension for Kafka | NuGet [3.8.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kafka/3.8.0) |  | GitHub [3.8.0](https://github.com/Azure/azure-functions-kafka-extension/tree/3.0.0/src/Microsoft.Azure.WebJobs.Extensions.Kafka) |

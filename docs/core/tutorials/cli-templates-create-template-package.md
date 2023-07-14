@@ -51,7 +51,7 @@ dotnet new install Microsoft.TemplateEngine.Authoring.Templates
 
 This [template package](https://www.nuget.org/packages/Microsoft.TemplateEngine.Authoring.Templates) contains templates useful for template authoring. To install this package, nuget.org should be available as NuGet feed in the working directory.
 
-Run the following command to create the template for template package:
+Run the following command to create the template for the template package:
 
 ```dotnetcli
 dotnet new templatepack --output "AdatumCorporation.Utility.Templates"

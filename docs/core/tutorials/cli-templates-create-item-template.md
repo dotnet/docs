@@ -167,7 +167,7 @@ dotnet run
 You get the following output.
 
 ```console
-Hello World!
+Hello, World!
 ```
 
 Next, run `dotnet new stringext` to generate the _CommonExtensions.cs_ from the template.
@@ -182,10 +182,10 @@ You get the following output.
 The template "Example templates: string extensions" was created successfully.
 ```
 
-Change the code in _Program.cs_ to reverse the `"Hello World"` string with the extension method provided by the template.
+Change the code in _Program.cs_ to reverse the `"Hello, World!"` string with the extension method provided by the template.
 
 ```csharp
-Console.WriteLine("Hello World!".Reverse());
+Console.WriteLine("Hello, World!".Reverse());
 ```
 
 Run the program again and you'll see that the result is reversed.
@@ -197,7 +197,7 @@ dotnet run
 You get the following output.
 
 ```console
-!dlroW olleH
+!dlroW ,olleH
 ```
 
 Congratulations! You created and deployed an item template with .NET. In preparation for the next part of this tutorial series, you must uninstall the template you created. Make sure to delete all files from the _test_ folder too. This will get you back to a clean state ready for the next major section of this tutorial.

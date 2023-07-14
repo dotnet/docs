@@ -121,7 +121,7 @@ pet.FirstName = "Jane";
 // pet.LastName = "Kowalski";
 ```
 
-It's highly valuable good coding practice to ensure our code is immutable.
+Required init-only properties support immutable structures while allowing natural syntax for users of the type.
 
 ## Collection initializers
 

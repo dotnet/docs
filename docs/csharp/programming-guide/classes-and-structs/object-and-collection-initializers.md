@@ -77,7 +77,7 @@ select new {p.ProductName, Price = p.UnitPrice};
 
 ## Object Initializers with the `required` modifier
 
-When all fields and properties require initialization but not necessarily in the constructor, adding the `required` modifier to the property or field can make it possible. This allows proper object initialization without any concerns about the consequences of leaving the object uninitialized.
+You use the `required` keyword to force callers to set the value of a property or field using an object initializer. Required properties don't need to be set as constructor parameters. The compiler ensures all callers initialize those values.
 
 ```csharp
 public class Pet

@@ -109,7 +109,7 @@ public class Person
 }
 
 // Last name property is necessary to be initialized.
-// We don't need to initialize the `FirstName` property
+// The `FirstName` property can be modified after initialization.
 var pet = new Person() { FirstName = "Joe", LastName = "Doe"};
 
 // We can override the FirstName property

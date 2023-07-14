@@ -112,7 +112,7 @@ public class Person
 // The `FirstName` property can be modified after initialization.
 var pet = new Person() { FirstName = "Joe", LastName = "Doe"};
 
-// We can override the FirstName property
+// You can assign the FirstName property to a different value.
 pet.FirstName = "Jane";
 
 // Compiler error:

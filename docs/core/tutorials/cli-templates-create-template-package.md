@@ -30,7 +30,7 @@ In this part of the series you'll learn how to:
 
   This tutorial uses the two templates created in the first two parts of this tutorial. You can use a different template as long as you copy the template, as a folder, into the _working\templates\\_ folder.
 
-* Open a terminal.
+* Open a terminal and navigate to the _working\\_ folder.
 
 ## Create a template package project
 
@@ -51,7 +51,7 @@ dotnet new install Microsoft.TemplateEngine.Authoring.Templates
 
 This [template package](https://www.nuget.org/packages/Microsoft.TemplateEngine.Authoring.Templates) contains templates useful for template authoring. To install this package, nuget.org should be available as NuGet feed in the working directory.
 
-Navigate to the _working_ folder and run:
+Run the following command to create the template for template package:
 
 ```dotnetcli
 dotnet new templatepack --output "AdatumCorporation.Utility.Templates"

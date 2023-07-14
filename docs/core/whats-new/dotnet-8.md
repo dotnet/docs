@@ -386,8 +386,6 @@ The <xref:System.ComponentModel.DataAnnotations?displayProperty=fullName> namesp
 
 ### Metrics
 
-#### Meter and Instrument tags
-
 New APIs let you attach key-value pair tags to <xref:System.Diagnostics.Metrics.Meter> and <xref:System.Diagnostics.Metrics.Instrument> objects when you create them. Aggregators of published metric measurements can use the tags to differentiate the aggregated values.
 
 ```csharp
@@ -409,30 +407,6 @@ The new APIs include:
 - <xref:System.Diagnostics.Metrics.MeterOptions>
 - <xref:System.Diagnostics.Metrics.Meter.%23ctor(System.Diagnostics.Metrics.MeterOptions)>
 - <xref:System.Diagnostics.Metrics.Meter.CreateCounter%60%601(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})>
-
-#### IMeterFactory interface
-
-You can register the new <xref:System.Diagnostics.Metrics.IMeterFactory> interface in dependency injection (DI) containers and use it to create <xref:System.Diagnostics.Metrics.Meter> objects in an isolated manner.
-
-Register the <xref:System.Diagnostics.Metrics.IMeterFactory> to the DI container using the default meter factory implementation:
-
-```csharp
-// 'services' is the DI IServiceCollection.
-services.AddMetrics();
-```
-
-Consumers can then obtain the meter factory and use it to create a new <xref:System.Diagnostics.Metrics.Meter> object.
-
-```csharp
-IMeterFactory meterFactory = serviceProvider.GetRequiredService<IMeterFactory>();
-
-MeterOptions options = new MeterOptions("MeterName")
-{
-    Version = "version",
-};
-
-Meter meter = meterFactory.Create(options);
-```
 
 ### Cryptography
 
@@ -571,6 +545,30 @@ public LoggerMessageAttribute(string message);
 ```
 
 ### Extensions metrics
+
+#### IMeterFactory interface
+
+You can register the new <xref:Microsoft.Extensions.Diagnostics.Metrics.IMeterFactory> interface in dependency injection (DI) containers and use it to create <xref:System.Diagnostics.Metrics.Meter> objects in an isolated manner.
+
+Register the <xref:Microsoft.Extensions.Diagnostics.Metrics.IMeterFactory> to the DI container using the default meter factory implementation:
+
+```csharp
+// 'services' is the DI IServiceCollection.
+services.AddMetrics();
+```
+
+Consumers can then obtain the meter factory and use it to create a new <xref:System.Diagnostics.Metrics.Meter> object.
+
+```csharp
+IMeterFactory meterFactory = serviceProvider.GetRequiredService<IMeterFactory>();
+
+MeterOptions options = new MeterOptions("MeterName")
+{
+    Version = "version",
+};
+
+Meter meter = meterFactory.Create(options);
+```
 
 #### MetricCollector\<T> class
 

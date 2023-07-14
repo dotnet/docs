@@ -21,7 +21,7 @@ An existing .NET SDK target was called to get information on packages that were 
 
 ## New behavior
 
-Package information is added from `PreprocessPackageDependenciesDesignTime` into the design-time build cache. If you depended on `PackageDependencies` and `PackageDefinitions` in your build, you'll see build errors.
+Package information is added from `PreprocessPackageDependenciesDesignTime` into the design-time build cache. If you depended on `PackageDependencies` and `PackageDefinitions` in your build, you'll see build errors such as **No dependencies found**.
 
 ## Reason for change
 

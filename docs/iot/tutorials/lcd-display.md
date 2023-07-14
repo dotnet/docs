@@ -31,7 +31,7 @@ In this topic, you will use .NET to display text on an LCD character display usi
 [!INCLUDE [rpi-note](../includes/rpi-note.md)]
 
 > [!NOTE]
-> There are many manufacturers of LCD character displays. Most designs are identical, and the manufacturer shouldn't make any difference to the functionality. For reference, this tutorial was developed with the [SunFounder LCD2004](https://www.sunfounder.com/products/i2c-lcd2004-module?_pos=1&_sid=21560efa0&_ss=r).
+> There are many manufacturers of LCD character displays. Most designs are identical, and the manufacturer shouldn't make any difference to the functionality. For reference, this tutorial was developed with the [SunFounder LCD2004](https://www.sunfounder.com/products/i2c-lcd2004-module).
 
 [!INCLUDE [prepare-pi-i2c](../includes/prepare-pi-i2c.md)]
 

@@ -75,6 +75,54 @@ Each object in the new anonymous type has two public properties that receive the
 select new {p.ProductName, Price = p.UnitPrice};  
 ```
 
+## Object Initializers with the `required` modifier
+
+You use the `required` keyword to force callers to set the value of a property or field using an object initializer. Required properties don't need to be set as constructor parameters. The compiler ensures all callers initialize those values.
+
+```csharp
+public class Pet
+{
+    public required int Age;
+    public string Name;
+}
+
+// `Age` field is necessary to be initialized.
+// You don't need to initialize `Name` property
+var pet = new Pet() { Age = 10};
+
+// Compiler error:
+// Error CS9035 Required member 'Pet.Age' must be set in the object initializer or attribute constructor.
+// var pet = new Pet();
+```
+
+It's a typical practice to guarantee that your object is properly initialized, especially when you have multiple fields or properties to manage and don't want to include them all in the constructor.
+
+## Object Initializers with the `init` accessor
+
+Making sure no one changes the designed object could be limited by using an `init` accessor. It helps to restrict the setting of the property value.
+
+```csharp
+public class Person
+{
+    public string FirstName { get; set; }
+    public string LastName { get; init; }
+}
+
+// Last name property is necessary to be initialized.
+// The `FirstName` property can be modified after initialization.
+var pet = new Person() { FirstName = "Joe", LastName = "Doe"};
+
+// You can assign the FirstName property to a different value.
+pet.FirstName = "Jane";
+
+// Compiler error:
+// Error CS8852  Init - only property or indexer 'Person.LastName' can only be assigned in an object initializer,
+//               or on 'this' or 'base' in an instance constructor or an 'init' accessor.
+// pet.LastName = "Kowalski";
+```
+
+Required init-only properties support immutable structures while allowing natural syntax for users of the type.
+
 ## Collection initializers
 
 Collection initializers let you specify one or more element initializers when you initialize a collection type that implements <xref:System.Collections.IEnumerable> and has `Add` with the appropriate signature as an instance method or an extension method. The element initializers can be a simple value, an expression, or an object initializer. By using a collection initializer, you do not have to specify multiple calls; the compiler adds the calls automatically.  

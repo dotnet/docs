@@ -22,6 +22,8 @@ The Raspberry Pi [Sense HAT](https://www.raspberrypi.com/products/sense-hat/) (*
 
 This quickstart uses .NET to retrieve sensor values from the Sense HAT, respond to joystick input, and drive the LED matrix.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?show=dotnet-iot-for-beginners&ep=intro-to-dotnet-iot-with-single-board-computers-and-raspberry-pi-dotnet-iot-for-beginners#time=4m45s]
+
 ## Prerequisites
 
 - [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]

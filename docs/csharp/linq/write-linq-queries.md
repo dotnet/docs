@@ -19,7 +19,7 @@ Most queries in the introductory Language Integrated Query (LINQ) documentation 
 
  To understand the method-based query, let's examine it more closely. On the right side of the expression, notice that the `where` clause is now expressed as an instance method on the `numbers` object, which as you will recall has a type of `IEnumerable<int>`. If you are familiar with the generic <xref:System.Collections.Generic.IEnumerable%601> interface, you know that it does not have a `Where` method. However, if you invoke the IntelliSense completion list in the Visual Studio IDE, you will see not only a `Where` method, but many other methods such as `Select`, `SelectMany`, `Join`, and `Orderby`. These are all the standard query operators.
 
- ![Screenshot showing all the standard query operators in Intellisense.](./media/query-syntax-and-method-syntax-in-linq/standard-query-operators.png)
+ ![Screenshot showing all the standard query operators in Intellisense.](./media/write-linq-queries/standard-query-operators.png)
 
  Although it looks as if <xref:System.Collections.Generic.IEnumerable%601> has been redefined to include these additional methods, in fact this is not the case. The standard query operators are implemented as a new kind of method called *extension methods*. Extensions methods "extend" an existing type; they can be called as if they were instance methods on the type. The standard query operators extend <xref:System.Collections.Generic.IEnumerable%601> and that is why you can write `numbers.Where(...)`.
 

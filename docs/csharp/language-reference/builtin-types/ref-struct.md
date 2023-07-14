@@ -63,7 +63,7 @@ The `Span<T>` type stores a reference through which it accesses the contiguous e
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
 - [Structs: Ref modifier](~/_csharpstandard/standard/structs.md#1623-ref-modifier)
-- [Safe context constraint for ref struct types](~/_csharpstandard/standard/structs.md#16412-safe-context-constraint-for-ref-struct-types)
+- [Safe context constraint for ref struct types](~/_csharpstandard/standard/structs.md#16412-safe-context-constraint)
 
 For more information about `ref` fields, see the [Low-level struct improvements](~/_csharplang/proposals/csharp-11.0/low-level-struct-improvements.md) proposal note.
 

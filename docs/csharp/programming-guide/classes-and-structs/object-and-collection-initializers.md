@@ -87,7 +87,7 @@ public class Pet
 }
 
 // `Age` field is necessary to be initialized.
-// We don't need to initialize `Name` property
+// You don't need to initialize `Name` property
 var pet = new Pet() { Age = 10};
 
 // Compiler error:

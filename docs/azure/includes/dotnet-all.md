@@ -279,7 +279,7 @@
 | Microsoft.Azure.WebPubSub.Common | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.Common/1.2.0) |  |  |
 | Quantum Jobs | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Quantum.Jobs/1.0.0-beta.3) |  |  |
 | Time Series Insights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |
-| Unknown Display Name | NuGet [1.1.0](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.1.0) |  |  |
+| Unknown Display Name | NuGet [1.1.0](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.1.0)<br>NuGet [1.2.0-beta.1](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.2.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [0.14.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Dapr.Core/0.14.0-preview01) |  |  |
 | Unknown Display Name | NuGet [0.14.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Dapr/0.14.0-preview01) |  |  |
 | Unknown Display Name | NuGet [1.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore/1.0.0-preview2) |  |  |

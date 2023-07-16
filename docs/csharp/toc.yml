@@ -222,42 +222,22 @@ items:
     items:
     - name: Overview
       href: programming-guide/concepts/linq/standard-query-operators-overview.md
-    - name: Sorting Data
-      href: programming-guide/concepts/linq/sorting-data.md
-    - name: Set Operations
-      href: programming-guide/concepts/linq/set-operations.md
+    - name: Data Transformations with LINQ (consider combining)
+      href: programming-guide/concepts/linq/data-transformations-with-linq.md
+    - name: Store the results of a query in memory
+      href: linq/store-the-results-of-a-query-in-memory.md
     - name: Filtering Data
       href: programming-guide/concepts/linq/filtering-data.md
-    - name: Quantifier Operations
-      href: programming-guide/concepts/linq/quantifier-operations.md
     - name: Projection Operations
       href: programming-guide/concepts/linq/projection-operations.md
+    - name: Set Operations
+      href: programming-guide/concepts/linq/set-operations.md
+    - name: Sorting Data
+      href: programming-guide/concepts/linq/sorting-data.md
+    - name: Quantifier Operations
+      href: programming-guide/concepts/linq/quantifier-operations.md
     - name: Partitioning Data
       href: programming-guide/concepts/linq/partitioning-data.md
-    - name: Perform inner joins
-      href: linq/perform-inner-joins.md
-    - name: Perform grouped joins
-      href: linq/perform-grouped-joins.md
-    - name: Perform left outer joins
-      href: linq/perform-left-outer-joins.md
-    - name: Order the results of a join clause
-      href: linq/order-the-results-of-a-join-clause.md
-    - name: Join by using composite keys
-      href: linq/join-by-using-composite-keys.md
-    - name: Perform custom join operations
-      href: linq/perform-custom-join-operations.md
-    - name: Join Operations
-      href: programming-guide/concepts/linq/join-operations.md
-    - name: Group query results
-      href: linq/group-query-results.md
-    - name: Create a nested group
-      href: linq/create-a-nested-group.md
-    - name: Perform a subquery on a grouping operation
-      href: linq/perform-a-subquery-on-a-grouping-operation.md
-    - name: Group results by contiguous keys
-      href: linq/group-results-by-contiguous-keys.md
-    - name: Grouping Data
-      href: programming-guide/concepts/linq/grouping-data.md
     - name: Generation Operations
       href: programming-guide/concepts/linq/generation-operations.md
     - name: Equality Operations
@@ -270,14 +250,38 @@ items:
       href: programming-guide/concepts/linq/concatenation-operations.md
     - name: Aggregation Operations
       href: programming-guide/concepts/linq/aggregation-operations.md
-    - name: Data Transformations with LINQ
-      href: programming-guide/concepts/linq/data-transformations-with-linq.md
-    - name: Store the results of a query in memory
-      href: linq/store-the-results-of-a-query-in-memory.md
-    - name: "Walkthrough: Writing Queries in C# (LINQ)"
-      href: programming-guide/concepts/linq/walkthrough-writing-queries-linq.md
-  - name: LINQ to objects
+    - name: Join Operations
+      items:
+      - name: Overview
+        href: programming-guide/concepts/linq/join-operations.md
+      - name: Perform inner joins
+        href: linq/perform-inner-joins.md
+      - name: Perform grouped joins
+        href: linq/perform-grouped-joins.md
+      - name: Perform left outer joins
+        href: linq/perform-left-outer-joins.md
+      - name: Order the results of a join clause
+        href: linq/order-the-results-of-a-join-clause.md
+      - name: Join by using composite keys
+        href: linq/join-by-using-composite-keys.md
+      - name: Perform custom join operations
+        href: linq/perform-custom-join-operations.md
+    - name: Grouping Data
+      items:
+      - name: Overview
+        href: programming-guide/concepts/linq/grouping-data.md
+      - name: Group query results
+        href: linq/group-query-results.md
+      - name: Create a nested group
+        href: linq/create-a-nested-group.md
+      - name: Perform a subquery on a grouping operation
+        href: linq/perform-a-subquery-on-a-grouping-operation.md
+      - name: Group results by contiguous keys
+        href: linq/group-results-by-contiguous-keys.md
+  - name: LINQ to objects (This is really the newer walkthrough)
     href: linq/query-a-collection-of-objects.md
+  - name: "Walkthrough: Writing Queries in C# (LINQ)"
+    href: programming-guide/concepts/linq/walkthrough-writing-queries-linq.md
   - name: LINQ and File Directories
     items:
     - name: Overview

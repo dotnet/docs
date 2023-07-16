@@ -65,7 +65,7 @@ For more information, see:
 
 - [Object and Collection Initializers](../../classes-and-structs/object-and-collection-initializers.md)
 
-- [Query Expression Syntax for Standard Query Operators](/dotnet/csharp/linq/standard-query-operators-overview)
+- [Query Expression Syntax for Standard Query Operators](/dotnet/csharp/programming-guide/concepts/linq/standard-query-operators-overview)
 
 ## Anonymous Types
 

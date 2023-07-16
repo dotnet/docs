@@ -346,7 +346,7 @@ Aside from LINQ, you learned a bit about a technique magicians use for card tric
 For more information on LINQ, see:
 
 - [Introduction to LINQ](/dotnet/csharp/linq/)
-- [Basic LINQ Query Operations (C#)](/dotnet/csharp/linq/standard-query-operators-overview)
+- [Basic LINQ Query Operations (C#)](/dotnet/csharp/programming-guide/concepts/linq/standard-query-operators-overview)
 - [Data Transformations With LINQ (C#)](../programming-guide/concepts/linq/data-transformations-with-linq.md)
 - [Query Syntax and Method Syntax in LINQ (C#)](/dotnet/csharp/linq/write-linq-queries)
 - [C# Features That Support LINQ](../programming-guide/concepts/linq/features-that-support-linq.md)

@@ -68,7 +68,7 @@ On the other hand, the following two examples show variables that are not query 
 
 :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/Basics.cs" id="basics7a":::
 
-For more information about the different ways to express queries, see [Query syntax and method syntax in LINQ](../programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md).
+For more information about the different ways to express queries, see [Query syntax and method syntax in LINQ](/dotnet/csharp/linq/write-linq-queries).
 
 #### Explicit and implicit typing of query variables
 

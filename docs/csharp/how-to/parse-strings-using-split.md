@@ -34,7 +34,7 @@ files representing tabular data. Consecutive commas represent a blank column.
 
 You can pass an optional <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=nameWithType> parameter to
 exclude any empty strings in the returned array. For more complicated processing of the returned
-collection, you can use [LINQ](../programming-guide/concepts/linq/index.md) to manipulate
+collection, you can use [LINQ](/dotnet/csharp/linq/) to manipulate
 the result sequence.
 
 <xref:System.String.Split%2A?displayProperty=nameWithType> can use multiple separator characters.

@@ -11,10 +11,10 @@ ms.assetid: eaa720d8-8999-4eb7-8df5-3c19ca61cad0
 ---
 # Introduction to PLINQ
 
-Parallel LINQ (PLINQ) is a parallel implementation of the [Language-Integrated Query (LINQ)](../../csharp/programming-guide/concepts/linq/index.md) pattern. PLINQ implements the full set of LINQ standard query operators as extension methods for the <xref:System.Linq> namespace and has additional operators for parallel operations. PLINQ combines the simplicity and readability of LINQ syntax with the power of parallel programming.
+Parallel LINQ (PLINQ) is a parallel implementation of the [Language-Integrated Query (LINQ)](/dotnet/csharp/linq/) pattern. PLINQ implements the full set of LINQ standard query operators as extension methods for the <xref:System.Linq> namespace and has additional operators for parallel operations. PLINQ combines the simplicity and readability of LINQ syntax with the power of parallel programming.
 
 > [!TIP]
-> If you're not familiar with LINQ, it features a unified model for querying any enumerable data source in a type-safe manner. LINQ to Objects is the name for LINQ queries that are run against in-memory collections such as <xref:System.Collections.Generic.List%601> and arrays. This article assumes that you have a basic understanding of LINQ. For more information, see [Language-Integrated Query (LINQ)](../../csharp/programming-guide/concepts/linq/index.md).
+> If you're not familiar with LINQ, it features a unified model for querying any enumerable data source in a type-safe manner. LINQ to Objects is the name for LINQ queries that are run against in-memory collections such as <xref:System.Collections.Generic.List%601> and arrays. This article assumes that you have a basic understanding of LINQ. For more information, see [Language-Integrated Query (LINQ)](/dotnet/csharp/linq/).
 
 ## What is a Parallel query?
 
@@ -31,7 +31,7 @@ The remainder of this article gives an overview of the main PLINQ classes and di
 
 The <xref:System.Linq.ParallelEnumerable?displayProperty=nameWithType> class exposes almost all of PLINQ's functionality. It and the rest of the <xref:System.Linq?displayProperty=nameWithType> namespace types are compiled into the System.Core.dll assembly. The default C# and Visual Basic projects in Visual Studio both reference the assembly and import the namespace.
 
-<xref:System.Linq.ParallelEnumerable> includes implementations of all the standard query operators that LINQ to Objects supports, although it does not attempt to parallelize each one. If you are not familiar with LINQ, see [Introduction to LINQ (C#)](../../csharp/programming-guide/concepts/linq/index.md) and [Introduction to LINQ (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/introduction-to-linq.md).
+<xref:System.Linq.ParallelEnumerable> includes implementations of all the standard query operators that LINQ to Objects supports, although it does not attempt to parallelize each one. If you are not familiar with LINQ, see [Introduction to LINQ (C#)](/dotnet/csharp/linq/) and [Introduction to LINQ (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/introduction-to-linq.md).
 
 In addition to the standard query operators, the <xref:System.Linq.ParallelEnumerable> class contains a set of methods that enable behaviors specific to parallel execution. These PLINQ-specific methods are listed in the following table.
 

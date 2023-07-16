@@ -63,7 +63,7 @@ IQueryable<Customer> custQuery =
  The query in the previous example returns all the even numbers from the integer array. The query expression contains three clauses: `from`, `where` and `select`. (If you are familiar with SQL, you will have noticed that the ordering of the clauses is reversed from the order in SQL.) The `from` clause specifies the data source, the `where` clause applies the filter, and the `select` clause specifies the type of the returned elements. These and the other query clauses are discussed in detail in the [Language Integrated Query (LINQ)](../../../linq/index.md) section. For now, the important point is that in LINQ, the query variable itself takes no action and returns no data. It just stores the information that is required to produce the results when the query is executed at some later point. For more information about how queries are constructed behind the scenes, see [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md).
 
 > [!NOTE]
-> Queries can also be expressed by using method syntax. For more information, see [Query Syntax and Method Syntax in LINQ](./query-syntax-and-method-syntax-in-linq.md).
+> Queries can also be expressed by using method syntax. For more information, see [Query Syntax and Method Syntax in LINQ](/dotnet/csharp/linq/write-linq-queries).
 
 ## Query Execution
 
@@ -91,7 +91,7 @@ IQueryable<Customer> custQuery =
 
 ## See also
 
-- [Getting Started with LINQ in C#](index.md)
+- [Getting Started with LINQ in C#](/dotnet/csharp/linq/)
 - [Walkthrough: Writing Queries in C#](./walkthrough-writing-queries-linq.md)
 - [Language Integrated Query (LINQ)](../../../linq/index.md)
 - [foreach, in](../../../language-reference/statements/iteration-statements.md#the-foreach-statement)

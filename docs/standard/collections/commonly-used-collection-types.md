@@ -70,7 +70,7 @@ The LINQ to Objects feature provides a common pattern for accessing in-memory ob
 - They can filter, order, and group data.
 - They can improve performance.
   
-For more information, see [LINQ to Objects (C#)](../../csharp/programming-guide/concepts/linq/linq-to-objects.md), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md), and [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md).  
+For more information, see [LINQ to Objects (C#)](/dotnet/csharp/linq/query-a-collection-of-objects), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md), and [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md).  
   
 ## Related topics  
   

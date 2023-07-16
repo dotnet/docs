@@ -55,7 +55,7 @@ The `Builder` object can be created by calling the nongeneric `CreateBuilder()` 
 
 ## LINQ to Objects
 
-The LINQ to Objects feature enables you to use LINQ queries to access in-memory objects as long as the object type implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface. LINQ queries provide a common pattern for accessing data; are typically more concise and readable than standard `foreach` loops; and provide filtering, ordering, and grouping capabilities. LINQ queries can also improve performance. For more information, see [LINQ to Objects (C#)](../../csharp/programming-guide/concepts/linq/linq-to-objects.md), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md), and [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md).
+The LINQ to Objects feature enables you to use LINQ queries to access in-memory objects as long as the object type implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface. LINQ queries provide a common pattern for accessing data; are typically more concise and readable than standard `foreach` loops; and provide filtering, ordering, and grouping capabilities. LINQ queries can also improve performance. For more information, see [LINQ to Objects (C#)](/dotnet/csharp/linq/query-a-collection-of-objects), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md), and [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md).
 
 ## Additional Functionality
 

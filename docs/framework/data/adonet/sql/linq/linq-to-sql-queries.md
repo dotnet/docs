@@ -30,6 +30,6 @@ You define [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] q
 ## See also
 
 - [Introduction to LINQ Queries (C#)](../../../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)
-- [Basic LINQ Query Operations](../../../../../csharp/programming-guide/concepts/linq/basic-linq-query-operations.md)
+- [Basic LINQ Query Operations](/dotnet/csharp/linq/standard-query-operators-overview)
 - [Type Relationships in LINQ Query Operations](../../../../../csharp/programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md)
 - [Query Concepts](query-concepts.md)

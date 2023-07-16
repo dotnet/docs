@@ -152,6 +152,5 @@ For instance, the previous example could be rewritten as follows:
 
 ## See also
 
-- [Expression Trees (C#)](./index.md)
 - [Execute expression trees](../../../advanced-topics/expression-trees/expression-trees-execution.md)
 - [Dynamically specify predicate filters at run time](../../../linq/dynamically-specify-predicate-filters-at-runtime.md)

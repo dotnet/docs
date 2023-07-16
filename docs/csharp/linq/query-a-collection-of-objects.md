@@ -1,7 +1,7 @@
 ---
 title: Query a collection of objects (LINQ in C#)
 description: Learn how query collections using LINQ in C#.
-ms.date: 07-16-2023
+ms.date: 07/16/2023
 ---
 # Query a collection of objects
 

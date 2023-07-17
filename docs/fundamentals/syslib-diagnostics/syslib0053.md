@@ -12,6 +12,16 @@ The <xref:System.Security.Cryptography.AesGcm> constructors that don't accept a 
 
 Calling them in code generates warning `SYSLIB0053` at compile time.
 
+## Reason for obsoletion
+
+AES-GCM supports tags of various lengths, from 12 to 16 bytes, depending on the platform. Previously, the <xref:System.Security.Cryptography.AesGcm> class would determine the desired tag size based on the size of the tag itself. For example, if <xref:System.Security.Cryptography.AesGcm.Decrypt%2A> was called with a 14 byte tag, it was assumed the tag was supposed to be 14 bytes.
+
+However, AES-GCM supports these various lengths by truncation. AES-GCM natively produces 16 byte tags, and shorter tags are produced by truncating the tag.
+
+If callers of `Decrypt()` get the tag from input and pass the tag as-is, it effectively allows `Decrypt()` to be used with the shortest possible tag, which reduces the effective size of the tag.
+
+To help consumers ensure they're using tags of the correct size, new constructors for <xref:System.Security.Cryptography.AesGcm> were introduced that require declaring the size of the expected tag up front. During `Encrypt()` or `Decrypt()`, the supplied tag parameter must match the size declared in the constructor.
+
 ## Workaround
 
 New constructors that accept a tag size have been added in .NET 8. Use one of these constructors instead:

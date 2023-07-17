@@ -143,7 +143,7 @@ from order in Customer.Orders...
 
  The following table lists the standard query operators that have equivalent query expression clauses.  
   
-|Method|C# Query Expression Syntax|  
+| Method | C# query expression syntax |
 |------------|---------------------------------|  
 |<xref:System.Linq.Enumerable.Cast%2A>|Use an explicitly typed range variable, for example:<br /><br /> `from int i in numbers`<br /><br /> (For more information, see [from clause](../../../language-reference/keywords/from-clause.md).)|  
 |<xref:System.Linq.Enumerable.GroupBy%2A>|`group … by`<br /><br /> -or-<br /><br /> `group … by … into …`<br /><br /> (For more information, see [group clause](../../../language-reference/keywords/group-clause.md).)|  

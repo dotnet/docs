@@ -15,7 +15,7 @@ This article provides an example that shows how to use C# and Visual Basic to ge
 
 This example generates a CSV file from XML document [Sample XML file: Customers and orders](sample-xml-file-customers-orders.md).
 
-The C# version uses method syntax and the `Aggregate` operator to generate the file in a single expression. For more information, see [Query Syntax and Method Syntax in LINQ (C#)](/dotnet/csharp/linq/write-linq-queries).
+The C# version uses method syntax and the `Aggregate` operator to generate the file in a single expression. For more information, see [Query Syntax and Method Syntax in LINQ (C#)](../../csharp/linq/write-linq-queries.md).
 
 The Visual Basic version uses procedural code to aggregate the collection of strings into a single string.
 
@@ -82,4 +82,4 @@ LETSS,Let's Stop N Shop,Jaime Yorres,Owner,(415) 555-5938,87 Polk St. Suite 5,Sa
 
 ## See also
 
-- [Query Syntax and Method Syntax in LINQ (C#)](/dotnet/csharp/linq/write-linq-queries)
+- [Query Syntax and Method Syntax in LINQ (C#)](../../csharp/linq/write-linq-queries.md)

@@ -64,7 +64,7 @@ foreach (var obj in query)
   
 ## Query Expression Syntax  
 
- Some of the more frequently used standard query operators have dedicated C# and Visual Basic language keyword syntax that enables them to be called as part of a *query* *expression*. For more information about standard query operators that have dedicated keywords and their corresponding syntaxes, see [Query Expression Syntax for Standard Query Operators (C#)](/dotnet/csharp/programming-guide/concepts/linq/standard-query-operators-overview).  
+ Some of the more frequently used standard query operators have dedicated C# and Visual Basic language keyword syntax that enables them to be called as part of a *query* *expression*. For more information about standard query operators that have dedicated keywords and their corresponding syntaxes, see [Query Expression Syntax for Standard Query Operators (C#)](standard-query-operators-overview.md).  
   
 ## Extending the Standard Query Operators  
 

@@ -64,7 +64,7 @@ To write queries effectively, you should understand how types of the variables i
   
  For more information about `var`, see [Implicitly Typed Local Variables](../../classes-and-structs/implicitly-typed-local-variables.md).  
 
-## LINQ and Generic Types (C#)
+## LINQ and generic types (C#)
 
 LINQ queries are based on generic types. You do not need an in-depth knowledge of generics before you can start writing queries. However, you may want to understand two basic concepts:  
   
@@ -74,7 +74,7 @@ LINQ queries are based on generic types. You do not need an in-depth knowledge o
   
  For more information about generics, see [Generics](../../../fundamentals/types/generics.md).  
   
-## IEnumerable<T\> variables in LINQ Queries  
+## IEnumerable<T\> variables in LINQ queries  
 
  LINQ query variables are typed as <xref:System.Collections.Generic.IEnumerable%601> or a derived type such as <xref:System.Linq.IQueryable%601>. When you see a query variable that is typed as `IEnumerable<Customer>`, it just means that the query, when it is executed, will produce a sequence of zero or more `Customer` objects.  
   
@@ -82,7 +82,7 @@ LINQ queries are based on generic types. You do not need an in-depth knowledge o
   
  For more information, see [Type Relationships in LINQ Query Operations](./type-relationships-in-linq-query-operations.md).  
   
-## Letting the Compiler Handle Generic Type Declarations  
+## Letting the compiler handle generic type declarations  
 
  If you prefer, you can avoid generic syntax by using the [var](../../../language-reference/statements/declarations.md#implicitly-typed-local-variables) keyword. The `var` keyword instructs the compiler to infer the type of a query variable by looking at the data source specified in the `from` clause. The following example produces the same compiled code as the previous example:  
   

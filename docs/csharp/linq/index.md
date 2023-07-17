@@ -33,17 +33,17 @@ The following example shows the complete query operation. The complete operation
 
 - Query expressions can be compiled to expression trees or to delegates, depending on the type that the query is applied to. <xref:System.Collections.Generic.IEnumerable%601> queries are compiled to delegates. <xref:System.Linq.IQueryable> and <xref:System.Linq.IQueryable%601> queries are compiled to expression trees. For more information, see [Expression trees](/dotnet/csharp/advanced-topics/expression-trees).
 
-## How to Enable LINQ Querying of Your Data Source  
+## How to enable LINQ querying of your data source  
   
-### In-Memory Data  
+### In-memory data
 
  There are two ways you can enable LINQ querying of in-memory data. If the data is of a type that implements <xref:System.Collections.Generic.IEnumerable%601>, you can query the data by using LINQ to Objects. If it does not make sense to enable enumeration of your type by implementing the <xref:System.Collections.Generic.IEnumerable%601> interface, you can define LINQ standard query operator methods in that type or create LINQ standard query operator methods that extend the type. Custom implementations of the standard query operators should use deferred execution to return the results.  
   
-### Remote Data  
+### Remote data
 
  The best option for enabling LINQ querying of a remote data source is to implement the <xref:System.Linq.IQueryable%601> interface. However, this differs from extending a provider such as [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] for a data source.
   
-## IQueryable LINQ Providers  
+## IQueryable LINQ providers
 
  LINQ providers that implement <xref:System.Linq.IQueryable%601> can vary widely in their complexity.
   

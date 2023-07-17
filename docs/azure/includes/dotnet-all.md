@@ -481,8 +481,8 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.2.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.2.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Warmup | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Warmup/4.0.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.13.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.13.0) |  |  |
-| Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.2529](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.2529) |  |  |
-| Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.2529](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.2529) |  |  |
+| Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.2678](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.2678) |  |  |
+| Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.2678](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.2678) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.1.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.1.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Generators | NuGet [1.1.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Generators/1.1.0-preview4) |  |  |
 | Microsoft.Azure.WebJobs.CosmosDb.Mongo | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.Mongo/1.0.4) |  |  |

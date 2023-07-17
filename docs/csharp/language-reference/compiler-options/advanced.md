@@ -21,8 +21,7 @@ helpviewer_keywords:
   - "AdditionalLibPaths compiler option [C#]"
   - "ApplicationConfiguration compiler option [C#]"
   - "ModuleAssemblyName compiler option [C#]"
-  - "ReportIVTs" compiler option [C#]"
-
+  - "ReportIVTs compiler option [C#]"
 ---
 # Advanced C# compiler options
 

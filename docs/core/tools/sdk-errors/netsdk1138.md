@@ -12,9 +12,9 @@ NETSDK1138 indicates that your project targets a version of the framework that i
 
 > The target framework '\<framework>' is out of support and will not receive security updates in the future. Please refer to <https://aka.ms/dotnet-core-support> for more information about the support policy.
 
-Out-of-support versions include 1.0, 1.1, 2.0, 2.1, 2.2, and 3.0. In November 2022, .NET 5 will be added to this list.
+Out-of-support versions include 1.0, 1.1, 2.0, 2.1, 2.2, 3.0, 3.1, and 5.0.
 
-To resolve this error, change your project to target a supported version of .NET Core or .NET 5+.
+To resolve this error, change your project to target a supported version of .NET.
 
 If you want to suppress the message without targeting a later framework, set the MSBuild property `CheckEolTargetFramework` to false. You can set it in the project file or by passing `/p:CheckEolTargetFramework=false` to a .NET CLI command, such as `dotnet build`. Here's an example project file:
 

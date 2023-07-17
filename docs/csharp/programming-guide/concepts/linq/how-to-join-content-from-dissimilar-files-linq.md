@@ -119,8 +119,3 @@ Tucker, 94, 92, 91, 91
 12 total names in list
  */  
 ```
-
-## See also
-
-- [LINQ and Strings (C#)](./linq-and-strings.md)
-- [LINQ and File Directories (C#)](./linq-and-file-directories.md)

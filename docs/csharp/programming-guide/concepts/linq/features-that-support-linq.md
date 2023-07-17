@@ -65,7 +65,7 @@ For more information, see:
 
 - [Object and Collection Initializers](../../classes-and-structs/object-and-collection-initializers.md)
 
-- [Query Expression Syntax for Standard Query Operators](./query-expression-syntax-for-standard-query-operators.md)
+- [Query Expression Syntax for Standard Query Operators](standard-query-operators-overview.md)
 
 ## Anonymous Types
 
@@ -95,4 +95,4 @@ For more information, see:
 
 ## See also
 
-- [Language-Integrated Query (LINQ) (C#)](./index.md)
+- [Language-Integrated Query (LINQ) (C#)](/dotnet/csharp/linq/)

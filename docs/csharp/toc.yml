@@ -202,6 +202,144 @@ items:
     href: tutorials/console-webapiclient.md
   - name: Work with LINQ
     href: tutorials/working-with-linq.md
+- name: Language-Integrated Query (LINQ)
+  items:
+  - name: Overview of LINQ
+    href: linq/index.md
+  - name: Getting Started with LINQ in C#
+    items:
+    - name: Introduction to LINQ queries
+      href: programming-guide/concepts/linq/introduction-to-linq-queries.md
+    - name: Query expression basics
+      href: linq/query-expression-basics.md
+    - name: Write LINQ queries in C#
+      href: linq/write-linq-queries.md
+    - name: Type relationships in LINQ query operations
+      href: programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md
+    - name: C# features that support LINQ
+      href: programming-guide/concepts/linq/features-that-support-linq.md
+  - name: Standard query operators
+    items:
+    - name: Overview
+      href: programming-guide/concepts/linq/standard-query-operators-overview.md
+    - name: Data Transformations with LINQ
+      href: programming-guide/concepts/linq/data-transformations-with-linq.md
+    - name: Store the results of a query in memory
+      href: linq/store-the-results-of-a-query-in-memory.md
+    - name: Filtering Data
+      href: programming-guide/concepts/linq/filtering-data.md
+    - name: Projection Operations
+      href: programming-guide/concepts/linq/projection-operations.md
+    - name: Set Operations
+      href: programming-guide/concepts/linq/set-operations.md
+    - name: Sorting Data
+      href: programming-guide/concepts/linq/sorting-data.md
+    - name: Quantifier Operations
+      href: programming-guide/concepts/linq/quantifier-operations.md
+    - name: Partitioning Data
+      href: programming-guide/concepts/linq/partitioning-data.md
+    - name: Generation Operations
+      href: programming-guide/concepts/linq/generation-operations.md
+    - name: Equality Operations
+      href: programming-guide/concepts/linq/equality-operations.md
+    - name: Element Operations
+      href: programming-guide/concepts/linq/element-operations.md
+    - name: Converting Data Types
+      href: programming-guide/concepts/linq/converting-data-types.md
+    - name: Concatenation Operations
+      href: programming-guide/concepts/linq/concatenation-operations.md
+    - name: Aggregation Operations
+      href: programming-guide/concepts/linq/aggregation-operations.md
+    - name: Join Operations
+      items:
+      - name: Overview
+        href: programming-guide/concepts/linq/join-operations.md
+      - name: Perform inner joins
+        href: linq/perform-inner-joins.md
+      - name: Perform grouped joins
+        href: linq/perform-grouped-joins.md
+      - name: Perform left outer joins
+        href: linq/perform-left-outer-joins.md
+      - name: Order the results of a join clause
+        href: linq/order-the-results-of-a-join-clause.md
+      - name: Join by using composite keys
+        href: linq/join-by-using-composite-keys.md
+      - name: Perform custom join operations
+        href: linq/perform-custom-join-operations.md
+    - name: Grouping Data
+      items:
+      - name: Overview
+        href: programming-guide/concepts/linq/grouping-data.md
+      - name: Group query results
+        href: linq/group-query-results.md
+      - name: Create a nested group
+        href: linq/create-a-nested-group.md
+      - name: Perform a subquery on a grouping operation
+        href: linq/perform-a-subquery-on-a-grouping-operation.md
+      - name: Group results by contiguous keys
+        href: linq/group-results-by-contiguous-keys.md
+  - name: LINQ to objects
+    href: linq/query-a-collection-of-objects.md
+  - name: "Walkthrough: Writing Queries in C# (LINQ)"
+    href: programming-guide/concepts/linq/walkthrough-writing-queries-linq.md
+  - name: LINQ and File Directories
+    items:
+    - name: Overview
+      href: programming-guide/concepts/linq/linq-and-file-directories.md
+    - name: "How to query for files with a specified attribute or name"
+      href: programming-guide/concepts/linq/how-to-query-for-files-with-a-specified-attribute-or-name.md
+    - name: "How to group files by extension (LINQ)"
+      href: programming-guide/concepts/linq/how-to-group-files-by-extension-linq.md
+    - name: "How to query for the total number of bytes in a set of folders (LINQ)"
+      href: programming-guide/concepts/linq/how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders-linq.md
+    - name: "How to compare the contents of two folders (LINQ)"
+      href: programming-guide/concepts/linq/how-to-compare-the-contents-of-two-folders-linq.md
+    - name: "How to query for the largest file or files in a directory tree (LINQ)"
+      href: programming-guide/concepts/linq/how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq.md
+    - name: "How to query for duplicate files in a directory tree (LINQ)"
+      href: programming-guide/concepts/linq/how-to-query-for-duplicate-files-in-a-directory-tree-linq.md
+    - name: "How to query the contents of files in a folder (LINQ)"
+      href: programming-guide/concepts/linq/how-to-query-the-contents-of-files-in-a-folder-lin.md
+  - name: How to articles
+    items:
+    - name: How to return a query from a method
+      href: linq/return-a-query-from-a-method.md
+    - name: Dynamically specify predicate filters at runtime
+      href: linq/dynamically-specify-predicate-filters-at-runtime.md
+    - name: Handle null values in query expressions
+      href: linq/handle-null-values-in-query-expressions.md
+    - name: Handle exceptions in query expressions
+      href: linq/handle-exceptions-in-query-expressions.md
+    - name: "How to count occurrences of a word in a string (LINQ)"
+      href: programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md
+    - name: "How to query for sentences that contain a specified set of words (LINQ)"
+      href: programming-guide/concepts/linq/how-to-query-for-sentences-that-contain-a-specified-set-of-words-linq.md
+    - name: "How to query for characters in a string (LINQ)"
+      href: programming-guide/concepts/linq/how-to-query-for-characters-in-a-string-linq.md
+    - name: "How to combine LINQ queries with regular expressions"
+      href: programming-guide/concepts/linq/how-to-combine-linq-queries-with-regular-expressions.md
+    - name: "How to find the set difference between two lists (LINQ)"
+      href: programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md
+    - name: "How to sort or filter text data by any word or field (LINQ)"
+      href: programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md
+    - name: "How to reorder the fields of a delimited file (LINQ)"
+      href: programming-guide/concepts/linq/how-to-reorder-the-fields-of-a-delimited-file-linq.md
+    - name: "How to combine and compare string collections (LINQ)"
+      href: programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md
+    - name: "How to populate object collections from multiple sources (LINQ)"
+      href: programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md
+    - name: "How to split a file into many files by using groups (LINQ)"
+      href: programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md
+    - name: "How to join content from dissimilar files (LINQ)"
+      href: programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md
+    - name: "How to compute column values in a CSV text file (LINQ)"
+      href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
+    - name: "How to use expression trees to build dynamic queries"
+      href: programming-guide/concepts/linq/how-to-use-expression-trees-to-build-dynamic-queries.md
+    - name: "How to query an ArrayList with LINQ"
+      href: programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md
+    - name: "How to add custom methods for LINQ queries"
+      href: programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md
 - name: Asynchronous programming
   items:
   - name: Overview
@@ -256,48 +394,6 @@ items:
       href: modern-events.md
     - name: Distinguishing Delegates and Events
       href: distinguish-delegates-events.md
-  - name: Language-Integrated Query (LINQ)
-    items:
-    - name: Overview of LINQ
-      href: linq/index.md
-    - name: Query expression basics
-      href: linq/query-expression-basics.md
-    - name: LINQ in C#
-      href: linq/linq-in-csharp.md
-    - name: Write LINQ queries in C#
-      href: linq/write-linq-queries.md
-    - name: Query a collection of objects
-      href: linq/query-a-collection-of-objects.md
-    - name: Return a query from a method
-      href: linq/return-a-query-from-a-method.md
-    - name: Store the results of a query in memory
-      href: linq/store-the-results-of-a-query-in-memory.md
-    - name: Group query results
-      href: linq/group-query-results.md
-    - name: Create a nested group
-      href: linq/create-a-nested-group.md
-    - name: Perform a subquery on a grouping operation
-      href: linq/perform-a-subquery-on-a-grouping-operation.md
-    - name: Group results by contiguous keys
-      href: linq/group-results-by-contiguous-keys.md
-    - name: Dynamically specify predicate filters at runtime
-      href: linq/dynamically-specify-predicate-filters-at-runtime.md
-    - name: Perform inner joins
-      href: linq/perform-inner-joins.md
-    - name: Perform grouped joins
-      href: linq/perform-grouped-joins.md
-    - name: Perform left outer joins
-      href: linq/perform-left-outer-joins.md
-    - name: Order the results of a join clause
-      href: linq/order-the-results-of-a-join-clause.md
-    - name: Join by using composite keys
-      href: linq/join-by-using-composite-keys.md
-    - name: Perform custom join operations
-      href: linq/perform-custom-join-operations.md
-    - name: Handle null values in query expressions
-      href: linq/handle-null-values-in-query-expressions.md
-    - name: Handle exceptions in query expressions
-      href: linq/handle-exceptions-in-query-expressions.md
   - name: Versioning
     href: versioning.md
 - name: How-to C# articles
@@ -471,127 +567,6 @@ items:
           href: programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md
     - name: Iterators
       href: programming-guide/concepts/iterators.md
-    - name: Language-Integrated Query (LINQ)
-      items:
-      - name: Overview
-        displayName: LINQ overview
-        href: programming-guide/concepts/linq/index.md
-      - name: Getting Started with LINQ in C#
-        items:
-        - name: Introduction to LINQ Queries
-          href: programming-guide/concepts/linq/introduction-to-linq-queries.md
-        - name: LINQ and Generic Types
-          href: programming-guide/concepts/linq/linq-and-generic-types.md
-        - name: Basic LINQ Query Operations
-          href: programming-guide/concepts/linq/basic-linq-query-operations.md
-        - name: Data Transformations with LINQ
-          href: programming-guide/concepts/linq/data-transformations-with-linq.md
-        - name: Type Relationships in LINQ Query Operations
-          href: programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md
-        - name: Query Syntax and Method Syntax in LINQ
-          href: programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md
-        - name: C# Features That Support LINQ
-          href: programming-guide/concepts/linq/features-that-support-linq.md
-        - name: "Walkthrough: Writing Queries in C# (LINQ)"
-          href: programming-guide/concepts/linq/walkthrough-writing-queries-linq.md
-      - name: Standard Query Operators Overview
-        items:
-        - name: Overview
-          href: programming-guide/concepts/linq/standard-query-operators-overview.md
-        - name: Query Expression Syntax for Standard Query Operators
-          href: programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md
-        - name: Classification of Standard Query Operators by Manner of Execution
-          href: programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md
-        - name: Sorting Data
-          href: programming-guide/concepts/linq/sorting-data.md
-        - name: Set Operations
-          href: programming-guide/concepts/linq/set-operations.md
-        - name: Filtering Data
-          href: programming-guide/concepts/linq/filtering-data.md
-        - name: Quantifier Operations
-          href: programming-guide/concepts/linq/quantifier-operations.md
-        - name: Projection Operations
-          href: programming-guide/concepts/linq/projection-operations.md
-        - name: Partitioning Data
-          href: programming-guide/concepts/linq/partitioning-data.md
-        - name: Join Operations
-          href: programming-guide/concepts/linq/join-operations.md
-        - name: Grouping Data
-          href: programming-guide/concepts/linq/grouping-data.md
-        - name: Generation Operations
-          href: programming-guide/concepts/linq/generation-operations.md
-        - name: Equality Operations
-          href: programming-guide/concepts/linq/equality-operations.md
-        - name: Element Operations
-          href: programming-guide/concepts/linq/element-operations.md
-        - name: Converting Data Types
-          href: programming-guide/concepts/linq/converting-data-types.md
-        - name: Concatenation Operations
-          href: programming-guide/concepts/linq/concatenation-operations.md
-        - name: Aggregation Operations
-          href: programming-guide/concepts/linq/aggregation-operations.md
-      - name: LINQ to Objects
-        items:
-        - name: Overview
-          href: programming-guide/concepts/linq/linq-to-objects.md
-        - name: LINQ and Strings
-          href: programming-guide/concepts/linq/linq-and-strings.md
-        - name: How to articles
-          items:
-          - name: "How to count occurrences of a word in a string (LINQ)"
-            href: programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md
-          - name: "How to query for sentences that contain a specified set of words (LINQ)"
-            href: programming-guide/concepts/linq/how-to-query-for-sentences-that-contain-a-specified-set-of-words-linq.md
-          - name: "How to query for characters in a string (LINQ)"
-            href: programming-guide/concepts/linq/how-to-query-for-characters-in-a-string-linq.md
-          - name: "How to combine LINQ queries with regular expressions"
-            href: programming-guide/concepts/linq/how-to-combine-linq-queries-with-regular-expressions.md
-          - name: "How to find the set difference between two lists (LINQ)"
-            href: programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md
-          - name: "How to sort or filter text data by any word or field (LINQ)"
-            href: programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md
-          - name: "How to reorder the fields of a delimited file (LINQ)"
-            href: programming-guide/concepts/linq/how-to-reorder-the-fields-of-a-delimited-file-linq.md
-          - name: "How to combine and compare string collections (LINQ)"
-            href: programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md
-          - name: "How to populate object collections from multiple sources (LINQ)"
-            href: programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md
-          - name: "How to split a file into many files by using groups (LINQ)"
-            href: programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md
-          - name: "How to join content from dissimilar files (LINQ)"
-            href: programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md
-          - name: "How to compute column values in a CSV text file (LINQ)"
-            href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
-          - name: "How to use expression trees to build dynamic queries"
-            href: programming-guide/concepts/linq/how-to-use-expression-trees-to-build-dynamic-queries.md
-        - name: LINQ and File Directories
-          items:
-          - name: Overview
-            href: programming-guide/concepts/linq/linq-and-file-directories.md
-          - name: "How to query for files with a specified attribute or name"
-            href: programming-guide/concepts/linq/how-to-query-for-files-with-a-specified-attribute-or-name.md
-          - name: "How to group files by extension (LINQ)"
-            href: programming-guide/concepts/linq/how-to-group-files-by-extension-linq.md
-          - name: "How to query for the total number of bytes in a set of folders (LINQ)"
-            href: programming-guide/concepts/linq/how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders-linq.md
-          - name: "How to compare the contents of two folders (LINQ)"
-            href: programming-guide/concepts/linq/how-to-compare-the-contents-of-two-folders-linq.md
-          - name: "How to query for the largest file or files in a directory tree (LINQ)"
-            href: programming-guide/concepts/linq/how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq.md
-          - name: "How to query for duplicate files in a directory tree (LINQ)"
-            href: programming-guide/concepts/linq/how-to-query-for-duplicate-files-in-a-directory-tree-linq.md
-          - name: "How to query the contents of files in a folder (LINQ)"
-            href: programming-guide/concepts/linq/how-to-query-the-contents-of-files-in-a-folder-lin.md
-        - name: "How to query an ArrayList with LINQ"
-          href: programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md
-        - name: "How to add custom methods for LINQ queries"
-          href: programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md
-      - name: LINQ to ADO.NET (Portal Page)
-        href: programming-guide/concepts/linq/linq-to-adonet-portal-page.md
-      - name: Enabling a Data Source for LINQ Querying
-        href: programming-guide/concepts/linq/enabling-a-data-source-for-linq-querying1.md
-      - name: Visual Studio IDE and Tools Support for LINQ
-        href: programming-guide/concepts/linq/visual-studio-ide-and-tools-support-for-linq.md
   - name: Statements, expressions, and equality
     items:
     - name: Statements

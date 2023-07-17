@@ -336,7 +336,7 @@ For more information about features added in C# 9.0 and later, see the following
 - [Use local function instead of lambda (style rule IDE0039)](../../../fundamentals/code-analysis/style-rules/ide0039.md)
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
-- [LINQ (Language-Integrated Query)](../../programming-guide/concepts/linq/index.md)
+- [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)
 - [Expression trees](../../advanced-topics/expression-trees/index.md)
 - [Local functions vs. lambda expressions](../../programming-guide/classes-and-structs/local-functions.md#local-functions-vs-lambda-expressions)
 - [LINQ sample queries](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Visual%20Studio%20Product%20Team/Official%20Visual%20Studio%202008%20C%23%20Samples/%5BC%23%5D-Official%20Visual%20Studio%202008%20C%23%20Samples/LINQ%20-%20Sample%20Queries/C%23)

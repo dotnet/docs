@@ -55,6 +55,3 @@ class CountWords
 
  Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.  
   
-## See also
-
-- [LINQ and Strings (C#)](./linq-and-strings.md)

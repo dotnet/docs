@@ -8,7 +8,7 @@ ms.custom: updateeachrelease
 
 *Expression trees* represent code in a tree-like data structure, where each node is an expression, for example, a method call or a binary operation such as `x < y`.
 
-If you have used LINQ, you have experience with a rich library where the `Func` types are part of the API set. (If you aren't familiar with LINQ, you probably want to read [the LINQ tutorial](../../programming-guide/concepts/linq/index.md) and the article about [lambda expressions](../../language-reference/operators/lambda-expressions.md) before this one.) Expression Trees provide richer interaction with the arguments that are functions.
+If you have used LINQ, you have experience with a rich library where the `Func` types are part of the API set. (If you aren't familiar with LINQ, you probably want to read [the LINQ tutorial](/dotnet/csharp/linq/) and the article about [lambda expressions](../../language-reference/operators/lambda-expressions.md) before this one.) Expression Trees provide richer interaction with the arguments that are functions.
 
 You write function arguments, typically using Lambda Expressions, when you create LINQ queries. In a typical LINQ query, those function arguments are transformed into a delegate the compiler creates.
 

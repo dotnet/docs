@@ -12,7 +12,7 @@ ms.date: 10/27/2021
 Instrumented code can record numeric measurements, but the measurements usually need to be aggregated, transmitted, and stored to create useful metrics for monitoring. The process of aggregating, transmitting, and storing data is called collection. This tutorial shows several examples of collecting metrics:
 
 - Populating metrics in [Grafana](https://grafana.com/) with [OpenTelemetry](https://opentelemetry.io/) and [Prometheus](https://prometheus.io/).
-- Viewing metrics in real time with [`dotnet-counters`](/dotnet/core/diagnostics/dotnet-counters)
+- Viewing metrics in real time with [`dotnet-counters`](dotnet-counters.md)
 - Creating a custom collection tool using the underlying .NET <xref:System.Diagnostics.Metrics.MeterListener> API.
 
 For more information on custom metric instrumentation and options, see [Compare metric APIs](compare-metric-apis.md).

@@ -45,7 +45,7 @@ The breakpoint is located after a `Console.ReadLine` method call. The **Debug Co
 
 1. The project folder contains a *.vscode* folder. Open the *launch.json* file that is in the *.vscode* folder.
 
-1. Change the `console` setting from `internalConsole` to `integratedTerminal`:
+1. In *launch.settings*, change the `console` setting from `internalConsole` to `integratedTerminal`:
 
    ```json
    "console": "integratedTerminal",

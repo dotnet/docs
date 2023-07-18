@@ -297,7 +297,7 @@ The diagnostics are enabled if the element content is `true`, disabled if `false
 **ReportIVTs** reports the following information when enabled:
 
 1. Any inaccessible member diagnostics include their source assembly, if different than the current assembly.
-1. The compiler prints the assembly identity of the project being compiled, its assembly name, and public key.
+1. The compiler prints the assembly identity of the project being compiled, its assembly name and public key.
 1. For every reference passed to the compiler, it prints;
    1. The assembly identity of the reference
    1. Whether the reference grants the current project `InternalsVisibleTo`

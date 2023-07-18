@@ -45,6 +45,15 @@ The following options support advanced scenarios. The new MSBuild syntax is show
 - **ModuleAssemblyName** / `-moduleassemblyname`: Name of the assembly that this module will be a part of.
 - **ReportIVTs** / `-reportivts`: Produce additional information on <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=nameWithType> information.
 
+You add any of these options in a `<PropertyGroup>` element in your `*.csproj` file:
+
+```xml
+<PropertyGroup>
+    <StartupObject>...</StartupObject>
+    ...
+</PropertyGroup>
+``````
+
 ## MainEntryPoint or StartupObject
 
 This option specifies the class that contains the entry point to the program, if more than one class contains a `Main` method.

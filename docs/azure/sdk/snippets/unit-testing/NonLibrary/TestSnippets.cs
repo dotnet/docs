@@ -18,7 +18,7 @@ public class TestSnippets
             new SecretProperties("secret"), "secretValue");
 
         Response<KeyVaultSecret> response = Response.FromValue(keyVaultSecret, new MockResponse());
-        // <MockResponseT>
+        // </MockResponseT>
     }
 
     public void PagingSnippets()
@@ -63,6 +63,6 @@ public class TestSnippets
 
         Pageable<SecretProperties> pageable = Pageable<SecretProperties>.FromPages(new[] { page1, page2, lastPage });
         AsyncPageable<SecretProperties> asyncPageable = AsyncPageable<SecretProperties>.FromPages(new[] { page1, page2, lastPage });
-        // <MultipleResponsePage>
+        // </MultipleResponsePage>
     }
 }

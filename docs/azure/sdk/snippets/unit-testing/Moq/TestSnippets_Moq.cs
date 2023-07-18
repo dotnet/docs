@@ -33,21 +33,21 @@ public class TestSnippets_Moq
 
     public void ResponseTypeSnippets()
     {
-        // <MockResponseType>
+        // <MockResponse>
         Mock<Response> responseMock = new Mock<Response>();
         responseMock.SetupGet(r => r.Status).Returns(200);
 
         Response response = responseMock.Object;
-        // </MockResponseType>
+        // </MockResponse>
     }
 
     public void ResponseTypeTSnippets()
     {
-        // <MockResponseTypeT>
+        // <MockResponseT>
         KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
             new SecretProperties("secret"), "secretValue");
         Response<KeyVaultSecret> response = Response.FromValue(keyVaultSecret, Mock.Of<Response>());
-        // </MockResponseTypeT>
+        // </MockResponseT>
     }
 
 
@@ -93,7 +93,7 @@ public class TestSnippets_Moq
 
         Pageable<SecretProperties> pageable = Pageable<SecretProperties>.FromPages(new[] { page1, page2, lastPage });
         AsyncPageable<SecretProperties> asyncPageable = AsyncPageable<SecretProperties>.FromPages(new[] { page1, page2, lastPage });
-        // <MultipleResponsePage>
+        // </MultipleResponsePage>
     }
 
 }

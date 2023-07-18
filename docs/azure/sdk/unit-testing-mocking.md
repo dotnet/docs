@@ -25,7 +25,7 @@ Each of the Azure SDK clients follows [mocking guidelines](https://azure.github.
 
 To create a test service client, you can either use a mocking library such as [Moq](https://www.nuget.org/packages/moq/) or standard C# features such as inheritance. Mocking frameworks allow you to simplify the code that you must write to override member behavior (as well as other useful features that are beyond the scope of this article).
 
-# [C#](#tab/csharp)
+# [Non-library](#tab/csharp)
 
 To create a test client instance using C# without a mocking library, inherit from the client type and override methods you are calling in your code with an implementation that returns a set of test objects. Most clients contain both synchronous and asynchronous methods for operations; override only the one your application code is calling.
 
@@ -88,7 +88,7 @@ The `Response` class is abstract, which means there are a lot of members to over
 
 The Moq library provides concise functionality for setting up mock responses:
 
-:::code language="csharp" source="snippets/unit-testing/Moq/TestSnippets_Moq.cs" id="MockResponseType" :::
+:::code language="csharp" source="snippets/unit-testing/Moq/TestSnippets_Moq.cs" id="MockResponse" :::
 
 ---
 
@@ -96,11 +96,11 @@ Some services also support using the <xref:Azure.Response%601> type, which is a 
 
 ## [Non-library](#tab/csharp)
 
-:::code language="csharp" source="snippets/unit-testing/NonLibrary/TestSnippets.cs" id="MockResponseTypeT" :::
+:::code language="csharp" source="snippets/unit-testing/NonLibrary/TestSnippets.cs" id="MockResponseT" :::
 
 ## [Moq](#tab/moq)
 
-:::code language="csharp" source="snippets/unit-testing/Moq/TestSnippets_Moq.cs" id="MockResponseTypeT" :::
+:::code language="csharp" source="snippets/unit-testing/Moq/TestSnippets_Moq.cs" id="MockResponseT" :::
 
 ---
 

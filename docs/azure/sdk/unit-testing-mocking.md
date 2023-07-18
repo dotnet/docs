@@ -25,29 +25,6 @@ Each of the Azure SDK clients follows [mocking guidelines](https://azure.github.
 
 To create a test service client, you can either use a mocking library such as [Moq](https://www.nuget.org/packages/moq/) or standard C# features such as inheritance. Mocking frameworks allow you to simplify the code that you must write to override member behavior (as well as other useful features that are beyond the scope of this article).
 
-# [Moq](#tab/moq)
-
-```csharp
-KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
-    new SecretProperties("secret"), "secretValue");
-Mock<SecretClient> clientMock = new Mock<SecretClient>();
-clientMock.Setup(c => c.GetSecret(
-        It.IsAny<string>(),
-        It.IsAny<string>(),
-        It.IsAny<CancellationToken>())
-    )
-    .Returns(Response.FromValue(keyVaultSecret, Mock.Of<Response>()));
-
-clientMock.Setup(c => c.GetSecretAsync(
-        It.IsAny<string>(), 
-        It.IsAny<string>(), 
-        It.IsAny<CancellationToken>())
-    )
-    .ReturnsAsync(Response.FromValue(keyVaultSecret, Mock.Of<Response>()));
-
-SecretClient secretClient = clientMock.Object;
-```
-
 # [C#](#tab/csharp)
 
 To create a test client instance using C# without a library, inherit from the client type and override methods you are calling in your code with an implementation that returns a set of test objects. Most clients contain both synchronous and asynchronous methods for operations; override only the one your application code is calling.
@@ -72,6 +49,29 @@ public class MockSecretClient : SecretClient
 }
 
 SecretClient secretClient = new MockSecretClient();
+```
+
+# [Moq](#tab/moq)
+
+```csharp
+KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
+    new SecretProperties("secret"), "secretValue");
+Mock<SecretClient> clientMock = new Mock<SecretClient>();
+clientMock.Setup(c => c.GetSecret(
+        It.IsAny<string>(),
+        It.IsAny<string>(),
+        It.IsAny<CancellationToken>())
+    )
+    .Returns(Response.FromValue(keyVaultSecret, Mock.Of<Response>()));
+
+clientMock.Setup(c => c.GetSecretAsync(
+        It.IsAny<string>(), 
+        It.IsAny<string>(), 
+        It.IsAny<CancellationToken>())
+    )
+    .ReturnsAsync(Response.FromValue(keyVaultSecret, Mock.Of<Response>()));
+
+SecretClient secretClient = clientMock.Object;
 ```
 
 ---
@@ -113,24 +113,7 @@ secretPropertiesWithCreatedOn = SecretModelFactory.SecretProperties(
 
 The <xref:Azure.Response> class is an abstract class that represents an HTTP response and is returned by most service client methods. You can create test `Response` instances using either the Moq library or standard C# inheritance.
 
-## [Moq](#tab/moq)
-
-The Moq library provides concise functionality for setting up mock responses:
-
-```csharp
-Mock responseMock = new Mock();
-responseMock.SetupGet(r => r.Status).Returns(200);
-
-Response response = responseMock.Object;
-```
-
-To create an instance of `Response` without defining any behaviors:
-
-```csharp
-Response response = Mock.Of<Response>();
-```
-
-## [C#](#tab/csharp)
+## [Non-library](#tab/csharp)
 
 The `Response` class is abstract, which means there are a lot of members to override. Consider using the Moq library to streamline your approach.
 
@@ -155,9 +138,37 @@ public class TestResponse : Response
 }
 ```
 
+## [Moq](#tab/moq)
+
+The Moq library provides concise functionality for setting up mock responses:
+
+```csharp
+Mock responseMock = new Mock();
+responseMock.SetupGet(r => r.Status).Returns(200);
+
+Response response = responseMock.Object;
+```
+
+To create an instance of `Response` without defining any behaviors:
+
+```csharp
+Response response = Mock.Of<Response>();
+```
+
+
+
 ---
 
 Some services also support using the <xref:Azure.Response%601> type, which is a class that contains a model and the HTTP response that returned it. To create a test instance of `Response<T>`, use the static `Response.FromValue` method:
+
+## [Non-library](#tab/csharp)
+
+```csharp
+KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
+    new SecretProperties("secret"), "secretValue");
+Response<KeyVaultSecret> response = Response.FromValue(
+    keyVaultSecret, Mock.Of<Response>());
+```
 
 ## [Moq](#tab/moq)
 
@@ -167,15 +178,6 @@ KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
 Response response = Response.FromValue(keyVaultSecret, new TestResponse());
 ```
 
-## [C#](#tab/csharp)
-
-```csharp
-KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
-    new SecretProperties("secret"), "secretValue");
-Response<KeyVaultSecret> response = Response.FromValue(
-    keyVaultSecret, Mock.Of<Response>());
-```
-
 ---
 
 ### Explore paging
@@ -183,6 +185,19 @@ Response<KeyVaultSecret> response = Response.FromValue(
 The <xref:Azure.Page%601> class is used as a building block in service methods that invoke operations returning results in multiple pages. The `Page<T>` is rarely returned from APIs directly but is useful to create the `AsyncPageable<T>` and `Pageable<T>` instances in the next section. To create a `Page<T>` instance, use the `Page<T>.FromValues` method, passing a list of items, a continuation token, and the `Response`.
 
 The `continuationToken` parameter is used to retrieve the next page from the service. For unit testing purposes, it should be set to null for the last page and should be non-empty for other pages.
+
+## [Non-library](#tab/csharp)
+
+```csharp
+Page responsePage = Page.FromValues(
+    new[]
+    {
+        new SecretProperties("secret1"),
+        new SecretProperties("secret2")
+    }, 
+    continuationToken: null,
+    new TestResponse());
+```
 
 ## [Moq](#tab/moq)
 
@@ -194,19 +209,6 @@ Page<SecretProperties> responsePage = Page<SecretProperties>.FromValues(
     },
     continuationToken: null,
     Mock.Of<Response>());
-```
-
-## [C#](#tab/csharp)
-
-```csharp
-Page responsePage = Page.FromValues(
-    new[]
-    {
-        new SecretProperties("secret1"),
-        new SecretProperties("secret2")
-    }, 
-    continuationToken: null,
-    new TestResponse());
 ```
 
 ---

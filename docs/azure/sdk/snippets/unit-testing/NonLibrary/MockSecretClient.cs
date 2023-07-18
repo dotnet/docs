@@ -6,6 +6,7 @@ public class MockSecretClient : SecretClient
 {
     AsyncPageable<SecretProperties> pageable;
 
+    // Allow a pageable to be passed in for mocking different responses
     public MockSecretClient(AsyncPageable<SecretProperties> pageable)
     {
         this.pageable = pageable;
@@ -23,9 +24,10 @@ public class MockSecretClient : SecretClient
         CancellationToken cancellationToken = default)
         => throw new NotImplementedException();
 
-    public override AsyncPageable<SecretProperties> GetPropertiesOfSecretsAsync(CancellationToken cancellationToken = default)
+    public override AsyncPageable<SecretProperties> GetPropertiesOfSecretsAsync
+        (CancellationToken cancellationToken = default)
     {
-        // Create a pageable that consists of a single page
+        // Return the pageable that was passed in
         return pageable;
-    }   
+    }
 }

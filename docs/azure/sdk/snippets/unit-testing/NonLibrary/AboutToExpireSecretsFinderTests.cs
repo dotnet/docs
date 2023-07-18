@@ -16,7 +16,8 @@ public class AboutToExpireSecretFinderTests
         }, null, Mock.Of<Response>());
 
         // Create a pageable that consists of a single page
-        AsyncPageable<SecretProperties> pageable = AsyncPageable<SecretProperties>.FromPages(new[] { page });
+        AsyncPageable<SecretProperties> pageable =
+            AsyncPageable<SecretProperties>.FromPages(new[] { page });
 
         var clientMock = new MockSecretClient(pageable);
 
@@ -45,7 +46,8 @@ public class AboutToExpireSecretFinderTests
         }, null, Mock.Of<Response>());
 
         // Create a pageable that consists of a single page
-        AsyncPageable<SecretProperties> pageable = AsyncPageable<SecretProperties>.FromPages(new[] { page });
+        AsyncPageable<SecretProperties> pageable =
+            AsyncPageable<SecretProperties>.FromPages(new[] { page });
 
         // Create a client mock object
         var clientMock = new MockSecretClient(pageable);

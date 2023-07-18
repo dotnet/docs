@@ -61,8 +61,11 @@ public class TestSnippets
             continuationToken: null,
             new MockResponse());
 
-        Pageable<SecretProperties> pageable = Pageable<SecretProperties>.FromPages(new[] { page1, page2, lastPage });
-        AsyncPageable<SecretProperties> asyncPageable = AsyncPageable<SecretProperties>.FromPages(new[] { page1, page2, lastPage });
+        Pageable<SecretProperties> pageable = Pageable<SecretProperties>
+            .FromPages(new[] { page1, page2, lastPage });
+
+        AsyncPageable<SecretProperties> asyncPageable = AsyncPageable<SecretProperties>
+            .FromPages(new[] { page1, page2, lastPage });
         // </MultipleResponsePage>
     }
 }

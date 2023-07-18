@@ -277,7 +277,7 @@ For more information on building a .netmodule, see [**TargetType**](output.md#ta
 
 ## ReportIVTs
 
-Enable or disable additional diagnostic information about <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=nameWithType> attributes found during the compilation:
+Enable or disable additional diagnostic information about <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=nameWithType> found during the compilation:
 
 ```xml
 <ReportIVTs>true</ReportIVTs>

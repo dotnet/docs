@@ -50,7 +50,7 @@ SecretClient secretClient = clientMock.Object;
 
 # [C#](#tab/csharp)
 
-To create a test client instance using C# without a library, inherit from the client type and override methods you are calling in your code with an implementation that returns a set of test objects. Most clients contain both synchronous and asynchronous methods for operations; override only the one your application code is calling.
+To create a test client instance using C# without a mocking library, inherit from the client type and override methods you are calling in your code with an implementation that returns a set of test objects. Most clients contain both synchronous and asynchronous methods for operations; override only the one your application code is calling.
 
 > [!NOTE]
 > It can be cumbersome to manually define test classes, especially if you need to customize behavior differently for each test. Consider using a library like Moq to streamline your testing.
@@ -100,11 +100,11 @@ KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
 ```
 
 > [!NOTE]
-> Some input models have read-only properties that are only populated when the model is returned by the service. In this case, a model factory method will be available that allows setting these properties. See <xref:Azure.Security.KeyVault.Secrets.SecretModelFactory>.
+> Some input models have read-only properties that are only populated when the model is returned by the service. In this case, a model factory method will be available that allows setting these properties. For example, <xref:Azure.Security.KeyVault.Secrets.SecretModelFactory.SecretProperties%2A>.
 
 ```csharp
 // CreatedOn is a read-only property and can only be 
-// set via a model factory SecretProperties.
+// set via the model factory's SecretProperties method.
 secretPropertiesWithCreatedOn = SecretModelFactory.SecretProperties(
     name: "secret", createdOn: DateTimeOffset.Now);
 ```
@@ -118,7 +118,7 @@ The <xref:Azure.Response> class is an abstract class that represents an HTTP res
 The Moq library provides concise functionality for setting up mock responses:
 
 ```csharp
-Mock responseMock = new Mock();
+Mock<Response> responseMock = new Mock<Response>();
 responseMock.SetupGet(r => r.Status).Returns(200);
 
 Response response = responseMock.Object;

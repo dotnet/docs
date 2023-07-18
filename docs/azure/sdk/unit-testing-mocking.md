@@ -112,7 +112,7 @@ The `continuationToken` parameter is used to retrieve the next page from the ser
 
 ## [Non-library](#tab/csharp)
 
-:::code language="csharp" source="snippets/unit-testing/Non_Library/TestSnippets.cs" id="SingleResponsePage" :::
+:::code language="csharp" source="snippets/unit-testing/NonLibrary/TestSnippets.cs" id="SingleResponsePage" :::
 
 ## [Moq](#tab/moq)
 
@@ -126,7 +126,7 @@ To create a test instance of `Pageable` or `AsyncPageable`, use the `FromPages` 
 
 ## [Non-library](#tab/csharp)
 
-:::code language="csharp" source="snippets/unit-testing/Non_Library/TestSnippets.cs" id="MultipleResponsePage" :::
+:::code language="csharp" source="snippets/unit-testing/NonLibrary/TestSnippets.cs" id="MultipleResponsePage" :::
 
 ## [Moq](#tab/moq)
 

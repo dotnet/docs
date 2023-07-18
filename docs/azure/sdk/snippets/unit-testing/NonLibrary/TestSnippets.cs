@@ -14,12 +14,12 @@ public class TestSnippets
     [Fact]
     public async Task ResponseTypeTSnippets()
     {
-        // <MockResponseTypeT>
+        // <MockResponseT>
         KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
             new SecretProperties("secret"), "secretValue");
 
         Response<KeyVaultSecret> response = Response.FromValue(keyVaultSecret, new MockResponse());
-        // <MockResponseTypeT>
+        // <MockResponseT>
     }
 
     [Fact]

@@ -11,6 +11,8 @@ F# Interactive (dotnet fsi) is used to run F# code interactively at the console,
 
 To run F# Interactive from the console, run `dotnet fsi`. You will find `dotnet fsi` in any .NET SDK.
 
+Remark: if you intend to use F# interactive under .NET Framework runtime, you'll need the [Visual Studio Build Tools](https://visualstudio.microsoft.com/downloads/?q=build+tools) or an edition of Visual Studio installed, and invoke the `FsiAnyCPU.exe` command from a "Developer Command Prompt" or simply make `FsiAnyCPU.exe` available in the `PATH` environment variable.
+
 For information about available command-line options, see [F# Interactive Options](../../language-reference/fsharp-interactive-options.md).
 
 ## Executing code directly in F# Interactive

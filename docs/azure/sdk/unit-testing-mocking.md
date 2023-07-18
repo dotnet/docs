@@ -32,56 +32,21 @@ To create a test client instance using C# without a mocking library, inherit fro
 > [!NOTE]
 > It can be cumbersome to manually define test classes, especially if you need to customize behavior differently for each test. Consider using a library like Moq to streamline your testing.
 
-```csharp
-public class MockSecretClient : SecretClient 
-{
-    public override Response<KeyVaultSecret> GetSecret(
-        string name,
-        string version = null, 
-        CancellationToken cancellationToken = default)
-        => throw new NotImplementedException();
-        
-    public override Task<Response<KeyVaultSecret>> GetSecretAsync(
-        string name, 
-        string version = null, 
-        CancellationToken cancellationToken = default)
-        => throw new NotImplementedException();
-}
-
-SecretClient secretClient = new MockSecretClient();
-```
+:::code language="csharp" source="snippets/unit-testing/NonLibrary/MockSecretClient.cs" :::
 
 # [Moq](#tab/moq)
 
-```csharp
-KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
-    new SecretProperties("secret"), "secretValue");
-Mock<SecretClient> clientMock = new Mock<SecretClient>();
-clientMock.Setup(c => c.GetSecret(
-        It.IsAny<string>(),
-        It.IsAny<string>(),
-        It.IsAny<CancellationToken>())
-    )
-    .Returns(Response.FromValue(keyVaultSecret, Mock.Of<Response>()));
-
-clientMock.Setup(c => c.GetSecretAsync(
-        It.IsAny<string>(), 
-        It.IsAny<string>(), 
-        It.IsAny<CancellationToken>())
-    )
-    .ReturnsAsync(Response.FromValue(keyVaultSecret, Mock.Of<Response>()));
-
-SecretClient secretClient = clientMock.Object;
-```
+:::code language="csharp" source="snippets/unit-testing/Moq/TestSnippets_Moq.cs" id="MockSecretClient" :::
 
 ---
 
 ### Service client input and output models
 
-Model types hold the data being sent and received from Azure services. There are two main kinds of models:
+Model types hold the data being sent and received from Azure services. There are three types of models:
 
 * **Input models** are intended to be created and passed as parameters to service methods by developers. They have one or more public constructors and writeable properties.
 * **Output models** are only returned by the service and have neither public constructors nor writeable properties.
+* **Round-trip** models are less common, but are returned by the service, modified, and used as an input.
 
 To create a test instance of an input model use one of the available public constructors and set the additional properties you need.
 
@@ -117,43 +82,13 @@ The <xref:Azure.Response> class is an abstract class that represents an HTTP res
 
 The `Response` class is abstract, which means there are a lot of members to override. Consider using the Moq library to streamline your approach.
 
-```csharp
-public class TestResponse : Response
-{
-    protected override bool TryGetHeader(string name, out string value)
-        => throw new NotImplementedException();
-    protected override bool TryGetHeaderValues(string name, out IEnumerable<string> values)
-        => throw new NotImplementedException();
-         
-    protected override bool ContainsHeader(string name) => throw new NotImplementedException();
-    protected override IEnumerable<HttpHeader> EnumerateHeaders() 
-        => throw new NotImplementedException();
-
-    public override int Status => throw new NotImplementedException();
-    public override string ReasonPhrase => throw new NotImplementedException();
-    public override Stream ContentStream => throw new NotImplementedException();
-    public override string ClientRequestId => throw new NotImplementedException();
-
-    public override void Dispose() => throw new NotImplementedException();
-}
-```
+:::code language="csharp" source="snippets/unit-testing/NonLibrary/MockResponse.cs" :::
 
 ## [Moq](#tab/moq)
 
 The Moq library provides concise functionality for setting up mock responses:
 
-```csharp
-Mock responseMock = new Mock();
-responseMock.SetupGet(r => r.Status).Returns(200);
-
-Response response = responseMock.Object;
-```
-
-To create an instance of `Response` without defining any behaviors:
-
-```csharp
-Response response = Mock.Of<Response>();
-```
+:::code language="csharp" source="snippets/unit-testing/Moq/TestSnippets_Moq.cs" id="MockResponseType" :::
 
 ---
 
@@ -161,20 +96,11 @@ Some services also support using the <xref:Azure.Response%601> type, which is a 
 
 ## [Non-library](#tab/csharp)
 
-```csharp
-KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
-    new SecretProperties("secret"), "secretValue");
-Response<KeyVaultSecret> response = Response.FromValue(
-    keyVaultSecret, Mock.Of<Response>());
-```
+:::code language="csharp" source="snippets/unit-testing/NonLibrary/TestSnippets.cs" id="MockResponseTypeT" :::
 
 ## [Moq](#tab/moq)
 
-```csharp
-KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
-    new SecretProperties("secret"), "secretValue");
-Response response = Response.FromValue(keyVaultSecret, new TestResponse());
-```
+:::code language="csharp" source="snippets/unit-testing/Moq/TestSnippets_Moq.cs" id="MockResponseTypeT" :::
 
 ---
 
@@ -186,28 +112,11 @@ The `continuationToken` parameter is used to retrieve the next page from the ser
 
 ## [Non-library](#tab/csharp)
 
-```csharp
-Page responsePage = Page.FromValues(
-    new[]
-    {
-        new SecretProperties("secret1"),
-        new SecretProperties("secret2")
-    }, 
-    continuationToken: null,
-    new TestResponse());
-```
+:::code language="csharp" source="snippets/unit-testing/Non_Library/TestSnippets.cs" id="SingleResponsePage" :::
 
 ## [Moq](#tab/moq)
 
-```csharp
-Page<SecretProperties> responsePage = Page<SecretProperties>.FromValues(
-    new[] {
-        new SecretProperties("secret1"),
-        new SecretProperties("secret2")
-    },
-    continuationToken: null,
-    Mock.Of<Response>());
-```
+:::code language="csharp" source="snippets/unit-testing/Moq/TestSnippets_Moq.cs" id="SingleResponsePage" :::
 
 ---
 
@@ -215,73 +124,21 @@ Page<SecretProperties> responsePage = Page<SecretProperties>.FromValues(
 
 To create a test instance of `Pageable` or `AsyncPageable`, use the `FromPages` static method:
 
-```csharp
-Page page1 = Page.FromValues(
-    new[]
-    {
-        new SecretProperties("secret1"),
-        new SecretProperties("secret2")
-    },
-    "continuationToken",
-    Mock.Of<Response>());
+## [Non-library](#tab/csharp)
 
-Page page2 = Page.FromValues(
-    new[]
-    {
-        new SecretProperties("secret3"),
-        new SecretProperties("secret4")
-    },
-    "continuationToken2",
-    Mock.Of<Response>());
+:::code language="csharp" source="snippets/unit-testing/Non_Library/TestSnippets.cs" id="MultipleResponsePage" :::
 
-Page lastPage = Page.FromValues(
-    new[]
-    {
-        new SecretProperties("secret5"),
-        new SecretProperties("secret6")
-    },
-    continuationToken: null,
-    Mock.Of<Response>());
+## [Moq](#tab/moq)
 
-Pageable pageable = Pageable.FromPages(new[] { page1, page2, lastPage });
-AsyncPageable asyncPageable = AsyncPageable.FromPages(new[] { page1, page2, lastPage });
-```
+:::code language="csharp" source="snippets/unit-testing/Moq/TestSnippets_Moq.cs" id="MultipleResponsePage" :::
+
+---
 
 ## Write a mocked unit test
 
 Suppose your app contains a class that finds the names of keys that will expire within a given amount of time.
 
-```csharp
-using Azure.Security.KeyVault.Secrets;
-
-public class AboutToExpireSecretFinder
-{
-    private readonly TimeSpan _threshold;
-    private readonly SecretClient _client;
-
-    public AboutToExpireSecretFinder(TimeSpan threshold, SecretClient client)
-    {
-        _threshold = threshold;
-        _client = client;
-    }
-
-    public async Task<string[]> GetAboutToExpireSecrets()
-    {
-        List<string> secretsAboutToExpire = new();
-
-        await foreach (var secret in _client.GetPropertiesOfSecretsAsync())
-        {
-            if (secret.ExpiresOn.HasValue &&
-                secret.ExpiresOn.Value - DateTimeOffset.Now <= _threshold)
-            {
-                secretsAboutToExpire.Add(secret.Name);
-            }
-        }
-
-        return secretsAboutToExpire.ToArray();
-    }
-}
-```
+:::code language="csharp" source="snippets/unit-testing/AboutToExpireSecretsFinder.cs" :::
 
 You want to test the following behaviors of the `AboutToExpireSecretFinder` to ensure they continue working as expected:
 
@@ -290,76 +147,15 @@ You want to test the following behaviors of the `AboutToExpireSecretFinder` to e
 
 When unit testing you only want the unit tests to verify the application logic and not whether the Azure service or library works correctly. The following example tests the key behaviors using the popular xUnit framework for C#:
 
-```csharp
-using Azure;
-using Azure.Security.KeyVault.Secrets;
-using Moq;
-using Xunit;
+## [Non-library](#tab/csharp)
 
-public class AboutToExpireSecretFinderTests
-{
-    [Fact]
-    public async Task DoesNotReturnNonExpiringSecrets()
-    {
-        // Arrange
-        // Create a page of enumeration results
-        Page<SecretProperties> page = Page<SecretProperties>.FromValues(new[]
-        {
-            new SecretProperties("secret1") { ExpiresOn = null },
-            new SecretProperties("secret2") { ExpiresOn = null }
-        }, null, Mock.Of<Response>());
+:::code language="csharp" source="snippets/unit-testing/NonLibrary/AboutToExpireSecretsFinderTests.cs" :::
 
-        // Create a pageable that consists of a single page
-        AsyncPageable<SecretProperties> pageable = AsyncPageable<SecretProperties>.FromPages(new[] { page });
+## [Moq](#tab/moq)
 
-        // Setup a client mock object to return the pageable when GetPropertiesOfSecretsAsync is called
-        var clientMock = new Mock<SecretClient>();
-        clientMock.Setup(c => c.GetPropertiesOfSecretsAsync(It.IsAny<CancellationToken>()))
-            .Returns(pageable);
+:::code language="csharp" source="snippets/unit-testing/Moq/AboutToExpireSecretsFinderTests_Moq.cs" :::
 
-        // Create an instance of a class to test passing in the mock client
-        var finder = new AboutToExpireSecretFinder(TimeSpan.FromDays(2), clientMock.Object);
-
-        // Act
-        var soonToExpire = await finder.GetAboutToExpireSecrets();
-
-        // Assert
-        Assert.Empty(soonToExpire);
-    }
-
-    [Fact]
-    public async Task ReturnsSecretsThatExpireSoon()
-    {
-        // Arrange
-
-        // Create a page of enumeration results
-        DateTimeOffset now = DateTimeOffset.Now;
-        Page<SecretProperties> page = Page<SecretProperties>.FromValues(new[]
-        {
-            new SecretProperties("secret1") { ExpiresOn = now.AddDays(1) },
-            new SecretProperties("secret2") { ExpiresOn = now.AddDays(2) },
-            new SecretProperties("secret3") { ExpiresOn = now.AddDays(3) }
-        }, null, Mock.Of<Response>());
-
-        // Create a pageable that consists of a single page
-        AsyncPageable<SecretProperties> pageable = AsyncPageable<SecretProperties>.FromPages(new[] { page });
-
-        // Setup a client mock object to return the pageable when GetPropertiesOfSecretsAsync is called
-        var clientMock = new Mock<SecretClient>();
-        clientMock.Setup(c => c.GetPropertiesOfSecretsAsync(It.IsAny<CancellationToken>()))
-            .Returns(pageable);
-
-        // Create an instance of a class to test passing in the mock client
-        var finder = new AboutToExpireSecretFinder(TimeSpan.FromDays(2), clientMock.Object);
-
-        // Act
-        var soonToExpire = await finder.GetAboutToExpireSecrets();
-
-        // Assert
-        Assert.Equal(new[] { "secret1", "secret2" }, soonToExpire);
-    }
-}
-```
+---
 
 ## Refactor your types for testability
 

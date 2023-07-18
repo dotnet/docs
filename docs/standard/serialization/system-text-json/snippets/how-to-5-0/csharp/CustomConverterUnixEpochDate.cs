@@ -61,7 +61,8 @@ namespace CustomConverterUnixEpochDate
             long unixTime = Convert.ToInt64((value - s_epoch).TotalMilliseconds);
             TimeSpan utcOffset = value.Offset;
 
-            string formatted = FormattableString.Invariant($"/Date({unixTime}{(utcOffset >= TimeSpan.Zero ? "+" : "-")}{utcOffset:hhmm})/");
+            string formatted = string.Create(CultureInfo.InvariantCulture, $"/Date({unixTime}{(utcOffset >= TimeSpan.Zero ? "+" : "-")}{utcOffset:hhmm})/");
+
             writer.WriteStringValue(formatted);
         }
     }

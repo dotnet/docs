@@ -55,7 +55,7 @@ namespace CustomConverterUnixEpochDateNoZone
         {
             long unixTime = Convert.ToInt64((value - s_epoch).TotalMilliseconds);
 
-            string formatted = FormattableString.Invariant($"/Date({unixTime})/");
+            string formatted = string.Create(CultureInfo.InvariantCulture, $"/Date({unixTime})/");
             writer.WriteStringValue(formatted);
         }
     }

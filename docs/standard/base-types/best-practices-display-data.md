@@ -36,10 +36,15 @@ To explicitly specify that a string should be formatted by using the conventions
   [!code-csharp[Explicit String Conversion](./snippets/best-practices-display-data/csharp/tostring/Program.cs#2)]
   [!code-vb[Implicit String Conversion](./snippets/best-practices-display-data/vb/tostring/Program.vb#2)]
 
-- For string interpolation, rather than assigning an interpolated string to a <xref:System.String> instance, assign it to a <xref:System.FormattableString>. You can then call its <xref:System.FormattableString.ToString?displayProperty=nameWithType> method produce a result string that reflects the conventions of the current culture, or you can call the <xref:System.FormattableString.ToString(System.IFormatProvider)?displayProperty=nameWithType> method to produce a result string that reflects the conventions of a specified culture. You can also pass the formattable string to the static <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> method to produce a result string that reflects the conventions of the invariant culture. The following example illustrates this approach. (The output from the example reflects a current culture of en-US.)
+- For string interpolation, rather than assigning an interpolated string to a <xref:System.String> instance, assign it to a <xref:System.FormattableString>. You can then call its <xref:System.FormattableString.ToString?displayProperty=nameWithType> method to produce a result string that reflects the conventions of the current culture, or you can call the <xref:System.FormattableString.ToString(System.IFormatProvider)?displayProperty=nameWithType> method to produce a result string that reflects the conventions of a specified culture.
+
+  You can also pass the formattable string to the static <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> method to produce a result string that reflects the conventions of the invariant culture. The following example illustrates this approach. (The output from the example reflects a current culture of `en-US`.)
 
   [!code-csharp[String interpolation](./snippets/best-practices-display-data/csharp/formattable/Program.cs)]
   [!code-vb[String interpolation](./snippets/best-practices-display-data/vb/formattable/Program.vb)]
+
+  > [!NOTE]
+  > If you're using C# and formatting using the invariant culture, it's more performant to call <xref:System.String.Create(System.IFormatProvider,System.Runtime.CompilerServices.DefaultInterpolatedStringHandler@)?displayProperty=nameWithType> and pass <xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType> for the first parameter. For more information, see [String interpolation in C# 10 and .NET 6](https://devblogs.microsoft.com/dotnet/string-interpolation-in-c-10-and-net-6/).
 
 ## Persist formatted data
 

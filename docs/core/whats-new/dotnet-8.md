@@ -1100,6 +1100,7 @@ You can opt out of verification by setting the environment variable `DOTNET_NUGE
 ## See also
 
 - [Breaking changes in .NET 8](../compatibility/8.0.md)
+- [What's new in ASP.NET Core 8.0](/aspnet/core/release-notes/aspnetcore-8.0)
 
 ### .NET blog
 

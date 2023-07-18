@@ -283,11 +283,14 @@ items:
                   - name: Tutorials
                     tocHref: /dotnet/csharp/whats-new/tutorials/
                     topicHref: /dotnet/csharp/whats-new/tutorials/records
+              - name: LINQ
+                tocHref: /dotnet/csharp/linq/
+                topicHref: /dotnet/csharp/linq/index
               - name: Asynchronous programming
-                tocHref: /dotnet/csharp/asynchronous-programming
+                tocHref: /dotnet/csharp/asynchronous-programming/
                 topicHref: /dotnet/csharp/asynchronous-programming/index
               - name: Advanced concepts
-                tocHref: /dotnet/csharp/advanced-topics
+                tocHref: /dotnet/csharp/advanced-topics/
                 topicHref: /dotnet/csharp/advanced-topics/reflection-and-attributes/index
                
               - name: Tutorials
@@ -337,9 +340,6 @@ items:
                       - name: Expression trees
                         tocHref: /dotnet/csharp/programming-guide/concepts/expression-trees/
                         topicHref: /dotnet/csharp/programming-guide/concepts/expression-trees/index
-                      - name: LINQ
-                        tocHref: /dotnet/csharp/programming-guide/concepts/linq/
-                        topicHref: /dotnet/csharp/programming-guide/concepts/linq/index
                       - name: Serialization
                         tocHref: /dotnet/csharp/programming-guide/concepts/serialization/
                         topicHref: /dotnet/csharp/programming-guide/concepts/serialization/index

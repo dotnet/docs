@@ -234,7 +234,7 @@ Anonymous records are useful for sending lightweight data over a network without
 
 ### Anonymous records interoperate with C# anonymous types
 
-It is possible to use a .NET API that requires the use of [C# anonymous types](../../csharp/fundamentals/types/anonymous-types.md). C# anonymous types are trivial to interoperate with by using anonymous records. The following example shows how to use anonymous records to call a [LINQ](../../csharp/programming-guide/concepts/linq/index.md) overload that requires an anonymous type:
+It is possible to use a .NET API that requires the use of [C# anonymous types](../../csharp/fundamentals/types/anonymous-types.md). C# anonymous types are trivial to interoperate with by using anonymous records. The following example shows how to use anonymous records to call a [LINQ](/dotnet/csharp/linq/) overload that requires an anonymous type:
 
 ```fsharp
 open System.Linq

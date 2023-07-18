@@ -1,7 +1,7 @@
 ---
 title: "Standard Query Operators Overview (C#)"
 description: The LINQ standard query operators provide query capabilities including filtering, projection, aggregation, and sorting in C#.
-ms.date: 07/20/2015
+ms.date: 07/15/2023
 ms.assetid: 812fa119-5f65-4139-b4fa-55dccd8dc3ac
 ---
 # Standard Query Operators Overview (C#)
@@ -62,51 +62,105 @@ foreach (var obj in query)
 // JUMPS
 ```  
   
-## Query Expression Syntax  
+## Query expression syntax  
 
- Some of the more frequently used standard query operators have dedicated C# and Visual Basic language keyword syntax that enables them to be called as part of a *query* *expression*. For more information about standard query operators that have dedicated keywords and their corresponding syntaxes, see [Query Expression Syntax for Standard Query Operators (C#)](./query-expression-syntax-for-standard-query-operators.md).  
+ Some of the more frequently used standard query operators have dedicated C# and Visual Basic language keyword syntax that enables them to be called as part of a *query* *expression*. For more information about standard query operators that have dedicated keywords and their corresponding syntaxes, see [Query Expression Syntax for Standard Query Operators (C#)](standard-query-operators-overview.md).  
   
-## Extending the Standard Query Operators  
+## Extending the standard query operators
 
  You can augment the set of standard query operators by creating domain-specific methods that are appropriate for your target domain or technology. You can also replace the standard query operators with your own implementations that provide additional services such as remote evaluation, query translation, and optimization. See <xref:System.Linq.Enumerable.AsEnumerable%2A> for an example.  
   
-## Related Sections  
+## Obtain a data source  
 
- The following links take you to articles that provide additional information about the various standard query operators based on functionality.  
+ In a LINQ query, the first step is to specify the data source. In C# as in most programming languages a variable must be declared before it can be used. In a LINQ query, the `from` clause comes first in order to introduce the data source (`customers`) and the *range variable* (`cust`).  
   
- [Sorting Data (C#)](./sorting-data.md)  
+ [!code-csharp[csLINQGettingStarted#23](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#23)]  
   
- [Set Operations (C#)](./set-operations.md)  
+ The range variable is like the iteration variable in a `foreach` loop except that no actual iteration occurs in a query expression. When the query is executed, the range variable will serve as a reference to each successive element in `customers`. Because the compiler can infer the type of `cust`, you do not have to specify it explicitly. Additional range variables can be introduced by a `let` clause. For more information, see [let clause](../../../language-reference/keywords/let-clause.md).  
   
- [Filtering Data (C#)](./filtering-data.md)  
+> [!NOTE]
+> For non-generic data sources such as <xref:System.Collections.ArrayList>, the range variable must be explicitly typed. For more information, see [How to query an ArrayList with LINQ (C#)](./how-to-query-an-arraylist-with-linq.md) and [from clause](../../../language-reference/keywords/from-clause.md).  
   
- [Quantifier Operations (C#)](./quantifier-operations.md)  
+## Filtering  
+
+ Probably the most common query operation is to apply a filter in the form of a Boolean expression. The filter causes the query to return only those elements for which the expression is true. The result is produced by using the `where` clause. The filter in effect specifies which elements to exclude from the source sequence. In the following example, only those `customers` who have an address in London are returned.  
   
- [Projection Operations (C#)](./projection-operations.md)  
+ [!code-csharp[csLINQGettingStarted#24](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#24)]  
   
- [Partitioning Data (C#)](./partitioning-data.md)  
+ You can use the familiar C# logical `AND` and `OR` operators to apply as many filter expressions as necessary in the `where` clause. For example, to return only customers from "London" `AND` whose name is "Devon" you would write the following code:  
   
- [Join Operations (C#)](./join-operations.md)  
+ [!code-csharp[csLINQGettingStarted#25](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#25)]  
   
- [Grouping Data (C#)](./grouping-data.md)  
+ To return customers from London or Paris, you would write the following code:  
   
- [Generation Operations (C#)](./generation-operations.md)  
+ [!code-csharp[csLINQGettingStarted#26](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#26)]  
   
- [Equality Operations (C#)](./equality-operations.md)  
+ For more information, see [where clause](../../../language-reference/keywords/where-clause.md).  
   
- [Element Operations (C#)](./element-operations.md)  
+## Ordering  
+
+ Often it is convenient to sort the returned data. The `orderby` clause will cause the elements in the returned sequence to be sorted according to the default comparer for the type being sorted. For example, the following query can be extended to sort the results based on the `Name` property. Because `Name` is a string, the default comparer performs an alphabetical sort from A to Z.  
   
- [Converting Data Types (C#)](./converting-data-types.md)  
+ [!code-csharp[csLINQGettingStarted#27](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#27)]  
   
- [Concatenation Operations (C#)](./concatenation-operations.md)  
+ To order the results in reverse order, from Z to A, use the `orderby…descending` clause.  
   
- [Aggregation Operations (C#)](./aggregation-operations.md)  
+ For more information, see [orderby clause](../../../language-reference/keywords/orderby-clause.md).  
+  
+## Grouping  
+
+ The `group` clause enables you to group your results based on a key that you specify. For example you could specify that the results should be grouped by the `City` so that all customers from London or Paris are in individual groups. In this case, `cust.City` is the key.  
+  
+ [!code-csharp[csLINQGettingStarted#28](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#28)]  
+  
+ When you end a query with a `group` clause, your results take the form of a list of lists. Each element in the list is an object that has a `Key` member and a list of elements that are grouped under that key. When you iterate over a query that produces a sequence of groups, you must use a nested `foreach` loop. The outer loop iterates over each group, and the inner loop iterates over each group's members.  
+  
+ If you must refer to the results of a group operation, you can use the `into` keyword to create an identifier that can be queried further. The following query returns only those groups that contain more than two customers:  
+  
+ [!code-csharp[csLINQGettingStarted#29](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#29)]  
+  
+ For more information, see [group clause](../../../language-reference/keywords/group-clause.md).  
+  
+## Joining  
+
+ Join operations create associations between sequences that are not explicitly modeled in the data sources. For example you can perform a join to find all the customers and distributors who have the same location. In LINQ the `join` clause always works against object collections instead of database tables directly.  
+  
+ [!code-csharp[csLINQGettingStarted#36](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#36)]  
+  
+ In LINQ, you do not have to use `join` as often as you do in SQL, because foreign keys in LINQ are represented in the object model as properties that hold a collection of items. For example, a `Customer` object contains a collection of `Order` objects. Rather than performing a join, you access the orders by using dot notation:  
+  
+```csharp
+from order in Customer.Orders...  
+```  
+  
+ For more information, see [join clause](../../../language-reference/keywords/join-clause.md).  
+  
+## Selecting (Projections)  
+
+ The `select` clause produces the results of the query and specifies the "shape" or type of each returned element. For example, you can specify whether your results will consist of complete `Customer` objects, just one member, a subset of members, or some completely different result type based on a computation or new object creation. When the `select` clause produces something other than a copy of the source element, the operation is called a *projection*. The use of projections to transform data is a powerful capability of LINQ query expressions. For more information, see [Data Transformations with LINQ (C#)](./data-transformations-with-linq.md) and [select clause](../../../language-reference/keywords/select-clause.md).  
+  
+## Query Expression Syntax Table  
+
+ The following table lists the standard query operators that have equivalent query expression clauses.  
+  
+| Method | C# query expression syntax |
+|------------|---------------------------------|  
+|<xref:System.Linq.Enumerable.Cast%2A>|Use an explicitly typed range variable, for example:<br /><br /> `from int i in numbers`<br /><br /> (For more information, see [from clause](../../../language-reference/keywords/from-clause.md).)|  
+|<xref:System.Linq.Enumerable.GroupBy%2A>|`group … by`<br /><br /> -or-<br /><br /> `group … by … into …`<br /><br /> (For more information, see [group clause](../../../language-reference/keywords/group-clause.md).)|  
+|<xref:System.Linq.Enumerable.GroupJoin%60%604%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%2CSystem.Func%7B%60%601%2C%60%602%7D%2CSystem.Func%7B%60%600%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%2C%60%603%7D%29>|`join … in … on … equals … into …`<br /><br /> (For more information, see [join clause](../../../language-reference/keywords/join-clause.md).)|  
+|<xref:System.Linq.Enumerable.Join%60%604%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%2CSystem.Func%7B%60%601%2C%60%602%7D%2CSystem.Func%7B%60%600%2C%60%601%2C%60%603%7D%29>|`join … in … on … equals …`<br /><br /> (For more information, see [join clause](../../../language-reference/keywords/join-clause.md).)|  
+|<xref:System.Linq.Enumerable.OrderBy%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29>|`orderby`<br /><br /> (For more information, see [orderby clause](../../../language-reference/keywords/orderby-clause.md).)|  
+|<xref:System.Linq.Enumerable.OrderByDescending%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29>|`orderby … descending`<br /><br /> (For more information, see [orderby clause](../../../language-reference/keywords/orderby-clause.md).)|  
+|<xref:System.Linq.Enumerable.Select%2A>|`select`<br /><br /> (For more information, see [select clause](../../../language-reference/keywords/select-clause.md).)|  
+|<xref:System.Linq.Enumerable.SelectMany%2A>|Multiple `from` clauses.<br /><br /> (For more information, see [from clause](../../../language-reference/keywords/from-clause.md).)|  
+|<xref:System.Linq.Enumerable.ThenBy%60%602%28System.Linq.IOrderedEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29>|`orderby …, …`<br /><br /> (For more information, see [orderby clause](../../../language-reference/keywords/orderby-clause.md).)|  
+|<xref:System.Linq.Enumerable.ThenByDescending%60%602%28System.Linq.IOrderedEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29>|`orderby …, … descending`<br /><br /> (For more information, see [orderby clause](../../../language-reference/keywords/orderby-clause.md).)|  
+|<xref:System.Linq.Enumerable.Where%2A>|`where`<br /><br /> (For more information, see [where clause](../../../language-reference/keywords/where-clause.md).)|  
   
 ## See also
 
 - <xref:System.Linq.Enumerable>
 - <xref:System.Linq.Queryable>
-- [Introduction to LINQ Queries (C#)](./introduction-to-linq-queries.md)
-- [Query Expression Syntax for Standard Query Operators (C#)](./query-expression-syntax-for-standard-query-operators.md)
-- [Classification of Standard Query Operators by Manner of Execution (C#)](./classification-of-standard-query-operators-by-manner-of-execution.md)
 - [Extension Methods](../../classes-and-structs/extension-methods.md)
+- [Query Keywords (LINQ)](../../../language-reference/keywords/query-keywords.md)
+- [Anonymous Types](../../../fundamentals/types/anonymous-types.md)

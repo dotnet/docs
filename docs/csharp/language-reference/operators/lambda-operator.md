@@ -17,7 +17,7 @@ The `=>` token is supported in two forms: as the [lambda operator](#lambda-opera
 
 In [lambda expressions](lambda-expressions.md), the lambda operator `=>` separates the input parameters on the left side from the lambda body on the right side.
 
-The following example uses the [LINQ](../../programming-guide/concepts/linq/index.md) feature with method syntax to demonstrate the usage of lambda expressions:
+The following example uses the [LINQ](/dotnet/csharp/linq/) feature with method syntax to demonstrate the usage of lambda expressions:
 
 [!code-csharp-interactive[infer types of input variables](snippets/shared/LambdaOperator.cs#InferredTypes)]
 

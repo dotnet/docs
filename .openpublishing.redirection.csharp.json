@@ -1209,6 +1209,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-11.0/static-abstracts-in-interfaces"
         },
         {
+            "source_path_from_root": "/docs/csharp/linq/linq-in-csharp.md",
+            "redirect_url": "/dotnet/csharp/linq/"
+        },
+        {
             "source_path_from_root": "/docs/csharp/local-functions-vs-lambdas.md",
             "redirect_url": "/dotnet/csharp/programming-guide/classes-and-structs/local-functions"
         },
@@ -1611,6 +1615,18 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/basic-linq-query-operations.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/concepts/linq/standard-query-operators-overview"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md",
+            "redirect_url": "/dotnet/csharp/linq/query-a-collection-of-objects"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/concepts/linq/standard-query-operators-overview"
+        },
+        {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md",
             "redirect_url": "/dotnet/standard/linq/basic-queries-linq-to-xml",
             "redirect_document_id": true
@@ -1707,7 +1723,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/getting-started-with-linq.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/concepts/linq/"
+            "redirect_url": "/dotnet/csharp/linq/"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/how-to-build-linq-to-xml-examples.md",
@@ -2085,6 +2101,10 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/index.md",
+            "redirect_url": "/dotnet/csharp/linq/"
+        },
+        {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/introduction-to-linq.md",
             "redirect_url": "/dotnet/csharp/programming-guide/concepts/linq"
         },
@@ -2094,8 +2114,20 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/linq-and-generic-types.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/concepts/linq/type-relationships-in-linq-query-operations"
+        },
+        {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/linq-and-reflection.md",
             "redirect_url": "/dotnet/csharp/advanced-topics/reflection-and-attributes/how-to-query-assembly-metadata-with-reflection-linq"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/linq-and-strings.md",
+            "redirect_url": "/dotnet/csharp/linq"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/linq-to-objects.md",
+            "redirect_url": "/dotnet/csharp/linq/query-a-collection-of-objects"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/linq-to-xml-annotations.md",
@@ -2231,6 +2263,11 @@
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md",
             "redirect_url": "/dotnet/standard/linq/introduction-pure-functional-transformations",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md",
+            "redirect_url": "/dotnet/csharp/linq/write-linq-queries",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/querying-an-xdocument-vs-querying-an-xelement.md",
@@ -2431,6 +2468,19 @@
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/xelement-class-overview.md",
             "redirect_url": "/dotnet/standard/linq/xelement-class-overview",
             "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/linq-to-adonet-portal-page.md",
+            "redirect_url": "/dotnet/csharp/linq/"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/enabling-a-data-source-for-linq-querying1.md",
+            "redirect_url": "/dotnet/csharp/linq/"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/visual-studio-ide-and-tools-support-for-linq.md",
+            "redirect_url": "/dotnet/csharp/linq/"
+
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/object-oriented-programming.md",

@@ -18,13 +18,10 @@ public class AboutToExpireSecretFinderTests
         // Create a pageable that consists of a single page
         AsyncPageable<SecretProperties> pageable = AsyncPageable<SecretProperties>.FromPages(new[] { page });
 
-        // Setup a client mock object to return the pageable when GetPropertiesOfSecretsAsync is called
-        var clientMock = new Mock<SecretClient>();
-        clientMock.Setup(c => c.GetPropertiesOfSecretsAsync(It.IsAny<CancellationToken>()))
-            .Returns(pageable);
+        var clientMock = new MockSecretClient(pageable);
 
         // Create an instance of a class to test passing in the mock client
-        var finder = new AboutToExpireSecretFinder(TimeSpan.FromDays(2), clientMock.Object);
+        var finder = new AboutToExpireSecretFinder(TimeSpan.FromDays(2), clientMock);
 
         // Act
         var soonToExpire = await finder.GetAboutToExpireSecrets();
@@ -50,13 +47,11 @@ public class AboutToExpireSecretFinderTests
         // Create a pageable that consists of a single page
         AsyncPageable<SecretProperties> pageable = AsyncPageable<SecretProperties>.FromPages(new[] { page });
 
-        // Setup a client mock object to return the pageable when GetPropertiesOfSecretsAsync is called
-        var clientMock = new Mock<SecretClient>();
-        clientMock.Setup(c => c.GetPropertiesOfSecretsAsync(It.IsAny<CancellationToken>()))
-            .Returns(pageable);
+        // Create a client mock object
+        var clientMock = new MockSecretClient(pageable);
 
         // Create an instance of a class to test passing in the mock client
-        var finder = new AboutToExpireSecretFinder(TimeSpan.FromDays(2), clientMock.Object);
+        var finder = new AboutToExpireSecretFinder(TimeSpan.FromDays(2), clientMock);
 
         // Act
         var soonToExpire = await finder.GetAboutToExpireSecrets();

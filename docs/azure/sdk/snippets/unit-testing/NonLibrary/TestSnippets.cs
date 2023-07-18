@@ -11,8 +11,7 @@ namespace UnitTestingSampleApp.NonLibrary;
 
 public class TestSnippets
 {
-    [Fact]
-    public async Task ResponseTypeTSnippets()
+    public void ResponseTypeTSnippets()
     {
         // <MockResponseT>
         KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
@@ -22,8 +21,7 @@ public class TestSnippets
         // <MockResponseT>
     }
 
-    [Fact]
-    public async Task PagingSnippets()
+    public void PagingSnippets()
     {
         // <SingleResponsePage>
         Page<SecretProperties> responsePage = Page<SecretProperties>.FromValues(

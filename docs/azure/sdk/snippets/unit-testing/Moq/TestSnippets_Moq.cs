@@ -6,8 +6,7 @@ namespace UnitTestingSampleApp.Moq;
 
 public class TestSnippets_Moq
 {
-    [Fact]
-    public async Task ServiceClientSnippets()
+    public void ServiceClientSnippets()
     {
         // <MockSecretClient>
         KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
@@ -32,8 +31,7 @@ public class TestSnippets_Moq
         // </MockSecretClient>
     }
 
-    [Fact]
-    public async Task ResponseTypeSnippets()
+    public void ResponseTypeSnippets()
     {
         // <MockResponseType>
         Mock<Response> responseMock = new Mock<Response>();
@@ -43,8 +41,7 @@ public class TestSnippets_Moq
         // </MockResponseType>
     }
 
-    [Fact]
-    public async Task ResponseTypeTSnippets()
+    public void ResponseTypeTSnippets()
     {
         // <MockResponseTypeT>
         KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
@@ -54,8 +51,7 @@ public class TestSnippets_Moq
     }
 
 
-    [Fact]
-    public async Task PaggingSnippets()
+    public void PaggingSnippets()
     {
         // <SingleResponsePage>
         Page<SecretProperties> responsePage = Page<SecretProperties>.FromValues(

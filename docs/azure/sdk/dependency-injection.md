@@ -43,26 +43,6 @@ In the *Program.cs* file, invoke the <xref:Microsoft.Extensions.Azure.AzureClien
 
 :::code language="csharp" source="snippets/dependency-injection/WebApplicationBuilder/Program.cs" id="snippet_WebApplicationBuilder" highlight="8-13":::
 
-```csharp
-using Azure.Identity;
-using Microsoft.Extensions.Azure;
-
-WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddAzureClients(clientBuilder =>
-{
-    clientBuilder.AddSecretClient(keyVaultUrl);
-    clientBuilder.AddBlobServiceClient(storageUrl);
-    clientBuilder.UseCredential(new DefaultAzureCredential());
-});
-
-WebApplication app = builder.Build();
-
-// code omitted for brevity
-
-app.Run();
-```
-
 ### [HostApplicationBuilder](#tab/host-app-builder)
 
 ```csharp
@@ -84,6 +64,8 @@ builder.Services.AddAzureClients(clientBuilder =>
 using IHost host = builder.Build();
 await host.RunAsync();
 ```
+
+---
 
 In the preceding code:
 

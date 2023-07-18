@@ -2,8 +2,8 @@
 using Azure.Identity;
 using Microsoft.Extensions.Azure;
 
-var keyVaultUrl = new Uri("");
-var storageUrl = new Uri("");
+var keyVaultUrl = new Uri("<key_vault_url>");
+var storageUrl = new Uri("<storage_url>");
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddAzureClients(clientBuilder =>

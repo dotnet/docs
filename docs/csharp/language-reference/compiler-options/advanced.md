@@ -21,7 +21,7 @@ helpviewer_keywords:
   - "AdditionalLibPaths compiler option [C#]"
   - "ApplicationConfiguration compiler option [C#]"
   - "ModuleAssemblyName compiler option [C#]"
-
+  - "ReportIVTs compiler option [C#]"
 ---
 # Advanced C# compiler options
 
@@ -43,6 +43,16 @@ The following options support advanced scenarios. The new MSBuild syntax is show
 - **NoStandardLib** / `-nostdlib`: Don't reference standard library *mscorlib.dll*.
 - **SubsystemVersion** / `-subsystemversion`: Specify subsystem version of this assembly.
 - **ModuleAssemblyName** / `-moduleassemblyname`: Name of the assembly that this module will be a part of.
+- **ReportIVTs** / `-reportivts`: Produce additional information on <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=nameWithType> information.
+
+You add any of these options in a `<PropertyGroup>` element in your `*.csproj` file:
+
+```xml
+<PropertyGroup>
+    <StartupObject>...</StartupObject>
+    ...
+</PropertyGroup>
+``````
 
 ## MainEntryPoint or StartupObject
 
@@ -273,3 +283,22 @@ Specifies the name of an assembly whose non-public types a *.netmodule* can acce
 - The existing assembly has granted friend assembly access to the assembly into which the .*netmodule* will be built.
 
 For more information on building a .netmodule, see [**TargetType**](output.md#targettype) option of **module**. For more information on friend assemblies, see [Friend Assemblies](../../../standard/assembly/friend.md).
+
+## ReportIVTs
+
+Enable or disable additional diagnostic information about <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=nameWithType> found during the compilation:
+
+```xml
+<ReportIVTs>true</ReportIVTs>
+```
+
+The diagnostics are enabled if the element content is `true`, disabled if `false`, or not present.
+
+**ReportIVTs** reports the following information when enabled:
+
+1. Any inaccessible member diagnostics include their source assembly, if if different than the current assembly.
+1. The compiler prints the assembly identity of the project being compiled, its assembly name and public key.
+1. For every reference passed to the compiler, it prints;
+   1. The assembly identity of the reference
+   1. Whether the reference grants the current project `InternalsVisibleTo`
+   1. The name and all public keys of any assemblies granted `InternalsVisibleTo` from this assembly

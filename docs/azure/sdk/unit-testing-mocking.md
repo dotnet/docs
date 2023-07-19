@@ -50,12 +50,12 @@ Model types hold the data being sent and received from Azure services. There are
 
 * **Input models** are intended to be created and passed as parameters to service methods by developers. They have one or more public constructors and writeable properties.
 * **Output models** are only returned by the service and have neither public constructors nor writeable properties.
-* **Round-trip** models are less common, but are returned by the service, modified, and used as an input.
+* **Round-trip models** are less common, but are returned by the service, modified, and used as an input.
 
 To create a test instance of an input model use one of the available public constructors and set the additional properties you need.
 
 ```csharp
-SecretProperties secretProperties = new("secret")
+var secretProperties = new SecretProperties("secret")
 {
     NotBefore = DateTimeOffset.Now
 };
@@ -118,7 +118,7 @@ Some services also support using the <xref:Azure.Response%601> type, which is a 
 
 The <xref:Azure.Page%601> class is used as a building block in service methods that invoke operations returning results in multiple pages. The `Page<T>` is rarely returned from APIs directly but is useful to create the `AsyncPageable<T>` and `Pageable<T>` instances in the next section. To create a `Page<T>` instance, use the `Page<T>.FromValues` method, passing a list of items, a continuation token, and the `Response`.
 
-The `continuationToken` parameter is used to retrieve the next page from the service. For unit testing purposes, it should be set to null for the last page and should be non-empty for other pages.
+The `continuationToken` parameter is used to retrieve the next page from the service. For unit testing purposes, it should be set to `null` for the last page and should be non-empty for other pages.
 
 ## [Non-library](#tab/csharp)
 
@@ -163,7 +163,7 @@ You want to test the following behaviors of the `AboutToExpireSecretFinder` to e
 * Secrets without an expiry date set aren't returned.
 * Secrets with an expiry date closer to the current date than the threshold are returned.
 
-When unit testing you only want the unit tests to verify the application logic and not whether the Azure service or library works correctly. The following example tests the key behaviors using the popular xUnit framework for C#:
+When unit testing you only want the unit tests to verify the application logic and not whether the Azure service or library works correctly. The following example tests the key behaviors using the popular [xUnit](https://www.nuget.org/packages/xunit) library:
 
 ## [Non-library](#tab/csharp)
 

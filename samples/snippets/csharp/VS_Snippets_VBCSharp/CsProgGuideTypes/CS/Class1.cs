@@ -228,7 +228,7 @@ namespace CsProgGuideTypes
                 // The following statement causes a compiler error: Operator
                 // '*' cannot be applied to operands of type 'object' and
                 // 'object'.
-                //sum += mixedList[j] * mixedList[j]);
+                //sum += mixedList[j] * mixedList[j];
 
                 // After the list elements are unboxed, the computation does
                 // not cause a compiler error.

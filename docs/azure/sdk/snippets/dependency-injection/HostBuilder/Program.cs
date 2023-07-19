@@ -9,7 +9,7 @@ IHost host = Host.CreateDefaultBuilder(args)
         services.AddHostedService<Worker>();
         services.AddAzureClients(clientBuilder =>
         {
-            clientBuilder.AddSecretClient(new Uri("<key_vault_url"));
+            clientBuilder.AddSecretClient(new Uri("<key_vault_url>"));
             clientBuilder.AddBlobServiceClient(new Uri("<storage_url>"));
             clientBuilder.UseCredential(new DefaultAzureCredential());
         });

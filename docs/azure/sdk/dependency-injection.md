@@ -37,7 +37,7 @@ dotnet add package Azure.Storage.Blobs
 
 ## Register clients
 
-In the *Program.cs* file, invoke the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method to register a client for each service. See the following application builder-specific code samples for guidance.
+In the *Program.cs* file, invoke the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method to register a client for each service. The following code samples provide guidance on application builders from the `Microsoft.AspNetCore.Builder` and `Microsoft.Extensions.Hosting` namespaces.
 
 ### [WebApplicationBuilder](#tab/web-app-builder)
 
@@ -104,7 +104,9 @@ You can add any properties from the <xref:Azure.Core.ClientOptions> class into t
 
 For more information, see [Configure a new retry policy](#configure-a-new-retry-policy).
 
-Since the `Configuration` object is a member of the `builder` instance, you can configure secrets:
+The settings in the JSON configuration file can be retrieved using <xref:Microsoft.Extensions.Configuration.IConfiguration>.
+
+### [WebApplicationBuilder](#tab/web-app-builder)
 
 ```csharp
 builder.Services.AddAzureClients(clientBuilder =>
@@ -117,6 +119,45 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.ConfigureDefaults(builder.Configuration.GetSection("AzureDefaults"));
 });
 ```
+
+### [HostApplicationBuilder](#tab/host-app-builder)
+
+```csharp
+builder.Services.AddAzureClients(clientBuilder =>
+{
+    clientBuilder.AddSecretClient(builder.Configuration.GetSection("KeyVault"));
+    clientBuilder.AddBlobServiceClient(builder.Configuration.GetSection("Storage"));
+    clientBuilder.UseCredential(new DefaultAzureCredential());
+
+    // Set up any default settings
+    clientBuilder.ConfigureDefaults(builder.Configuration.GetSection("AzureDefaults"));
+});
+```
+
+### [HostBuilder](#tab/host-builder)
+
+```csharp
+IHost host = Host.CreateDefaultBuilder(args)
+    .ConfigureServices((hostContext, services) =>
+    {
+        services.AddHostedService<Worker>();
+        services.AddAzureClients(clientBuilder =>
+        {
+            clientBuilder.AddSecretClient(
+                hostContext.Configuration.GetSection("KeyVault"));
+            clientBuilder.AddBlobServiceClient(
+                hostContext.Configuration.GetSection("Storage"));
+            clientBuilder.UseCredential(new DefaultAzureCredential());
+
+            // Set up any default settings
+            clientBuilder.ConfigureDefaults(
+                hostContext.Configuration.GetSection("AzureDefaults"));
+        });
+    })
+    .Build();
+```
+
+---
 
 ## Configure multiple service clients with different names
 

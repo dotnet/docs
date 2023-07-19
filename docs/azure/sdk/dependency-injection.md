@@ -60,7 +60,7 @@ In the preceding code:
 
 ## Use the registered clients
 
-With the clients registered via the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> method, you can now use them. In the following example, [constructor injection](/dotnet/core/extensions/dependency-injection#constructor-injection-behavior) is used to obtain the Blob Storage client in an ASP.NET Core API controller:
+With the clients registered, as described in the [Register clients](#register-clients) section, you can now use them. In the following example, [constructor injection](/dotnet/core/extensions/dependency-injection#constructor-injection-behavior) is used to obtain the Blob Storage client in an ASP.NET Core API controller:
 
 ```csharp
 [ApiController]

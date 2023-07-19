@@ -2,6 +2,8 @@
 using Azure.Security.KeyVault.Secrets;
 using Moq;
 
+namespace UnitTestingSampleApp.Moq;
+
 public class AboutToExpireSecretFinderTests_Moq
 {
     [Fact]

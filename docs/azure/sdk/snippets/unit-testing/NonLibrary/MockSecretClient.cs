@@ -1,6 +1,7 @@
 ﻿using Azure.Security.KeyVault.Secrets;
 using Azure;
-using Moq;
+
+namespace UnitTestingSampleApp.NonLibrary;
 
 public sealed class MockSecretClient : SecretClient
 {

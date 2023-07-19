@@ -2,6 +2,8 @@
 using Azure;
 using System.Diagnostics.CodeAnalysis;
 
+namespace UnitTestingSampleApp.NonLibrary;
+
 public sealed class MockResponse : Response
 {
     public override int Status => throw new NotImplementedException();

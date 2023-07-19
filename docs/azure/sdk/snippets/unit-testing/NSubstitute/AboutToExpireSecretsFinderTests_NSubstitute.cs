@@ -2,6 +2,8 @@
 using Azure.Security.KeyVault.Secrets;
 using NSubstitute;
 
+namespace UnitTestingSampleApp.NSubstitute;
+
 public class AboutToExpireSecretFinderTests_NSubstitute
 {
     [Fact]

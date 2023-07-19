@@ -1,6 +1,7 @@
 ﻿using Azure;
 using Azure.Security.KeyVault.Secrets;
-using Moq;
+
+namespace UnitTestingSampleApp.NonLibrary;
 
 public class AboutToExpireSecretFinderTests
 {
@@ -13,7 +14,7 @@ public class AboutToExpireSecretFinderTests
         {
             new SecretProperties("secret1") { ExpiresOn = null },
             new SecretProperties("secret2") { ExpiresOn = null }
-        }, null, Mock.Of<Response>());
+        }, null, new MockResponse());
 
         // Create a pageable that consists of a single page
         AsyncPageable<SecretProperties> pageable =
@@ -44,7 +45,7 @@ public class AboutToExpireSecretFinderTests
             new SecretProperties("secret2") { ExpiresOn = now.AddDays(2) },
             new SecretProperties("secret3") { ExpiresOn = now.AddDays(3) }
         },
-        null, Mock.Of<Response>());
+        null, new MockResponse());
 
         // Create a pageable that consists of a single page
         AsyncPageable<SecretProperties> pageable =

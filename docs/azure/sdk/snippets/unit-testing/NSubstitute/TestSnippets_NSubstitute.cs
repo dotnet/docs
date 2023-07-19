@@ -2,7 +2,7 @@
 using Azure;
 using NSubstitute;
 
-namespace UnitTestingSampleApp.Moq;
+namespace UnitTestingSampleApp.NSubstitute;
 
 public class TestSnippets_NSubstitute
 {

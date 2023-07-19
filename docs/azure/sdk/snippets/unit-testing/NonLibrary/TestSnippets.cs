@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Azure;
 using Azure.Security.KeyVault.Secrets;
-using Azure;
-using Moq;
 
 namespace UnitTestingSampleApp.NonLibrary;
 

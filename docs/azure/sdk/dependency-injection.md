@@ -130,8 +130,12 @@ The settings in the JSON configuration file can be retrieved using <xref:Microso
 ```csharp
 builder.Services.AddAzureClients(clientBuilder =>
 {
-    clientBuilder.AddSecretClient(builder.Configuration.GetSection("KeyVault"));
-    clientBuilder.AddBlobServiceClient(builder.Configuration.GetSection("Storage"));
+    clientBuilder.AddSecretClient(
+        builder.Configuration.GetSection("KeyVault"));
+
+    clientBuilder.AddBlobServiceClient(
+        builder.Configuration.GetSection("Storage"));
+
     clientBuilder.UseCredential(new DefaultAzureCredential());
 
     // Set up any default settings
@@ -144,8 +148,12 @@ builder.Services.AddAzureClients(clientBuilder =>
 ```csharp
 builder.Services.AddAzureClients(clientBuilder =>
 {
-    clientBuilder.AddSecretClient(builder.Configuration.GetSection("KeyVault"));
-    clientBuilder.AddBlobServiceClient(builder.Configuration.GetSection("Storage"));
+    clientBuilder.AddSecretClient(
+        builder.Configuration.GetSection("KeyVault"));
+
+    clientBuilder.AddBlobServiceClient(
+        builder.Configuration.GetSection("Storage"));
+
     clientBuilder.UseCredential(new DefaultAzureCredential());
 
     // Set up any default settings
@@ -164,8 +172,10 @@ IHost host = Host.CreateDefaultBuilder(args)
         {
             clientBuilder.AddSecretClient(
                 hostContext.Configuration.GetSection("KeyVault"));
+
             clientBuilder.AddBlobServiceClient(
                 hostContext.Configuration.GetSection("Storage"));
+
             clientBuilder.UseCredential(new DefaultAzureCredential());
 
             // Set up any default settings
@@ -185,8 +195,11 @@ Imagine you have two storage accounts: one for private information and another f
 ```csharp
 builder.Services.AddAzureClients(clientBuilder =>
 {
-    clientBuilder.AddBlobServiceClient(builder.Configuration.GetSection("PublicStorage"));
-    clientBuilder.AddBlobServiceClient(builder.Configuration.GetSection("PrivateStorage"))
+    clientBuilder.AddBlobServiceClient(
+        builder.Configuration.GetSection("PublicStorage"));
+
+    clientBuilder.AddBlobServiceClient(
+            builder.Configuration.GetSection("PrivateStorage"))
         .WithName("PrivateStorage");
 });
 ```
@@ -240,18 +253,22 @@ You can change the retry policy depending on your needs like so:
 builder.Services.AddAzureClients(clientBuilder =>
 {
     // Establish the global defaults
-    clientBuilder.ConfigureDefaults(builder.Configuration.GetSection("AzureDefaults"));
+    clientBuilder.ConfigureDefaults(
+        builder.Configuration.GetSection("AzureDefaults"));
     clientBuilder.UseCredential(new DefaultAzureCredential());
 
     // A Key Vault Secrets client using the global defaults
-    clientBuilder.AddSecretClient(builder.Configuration.GetSection("KeyVault"));
+    clientBuilder.AddSecretClient(
+        builder.Configuration.GetSection("KeyVault"));
 
     // A Storage client with a custom retry policy
-    clientBuilder.AddBlobServiceClient(builder.Configuration.GetSection("Storage"))
+    clientBuilder.AddBlobServiceClient(
+            builder.Configuration.GetSection("Storage"))
         .ConfigureOptions(options => options.Retry.MaxRetries = 10);
 
     // A named storage client with a different custom retry policy
-    clientBuilder.AddBlobServiceClient(builder.Configuration.GetSection("CustomStorage"))
+    clientBuilder.AddBlobServiceClient(
+            builder.Configuration.GetSection("CustomStorage"))
         .WithName("CustomStorage")
         .ConfigureOptions(options =>
         {

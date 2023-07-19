@@ -136,7 +136,7 @@ These versions of the WCF framework are hardcoded to use values SSL 3.0 and TLS 
 
 If you must explicitly set a security protocol instead of letting .NET or the OS pick the security protocol, add `SecurityProtocolTypeExtensions` and `SslProtocolsExtension` enumerations to your code. `SecurityProtocolTypeExtensions` and `SslProtocolsExtension` include values for `Tls12`, `Tls11`, and the `SystemDefault` value. For more information, see [Support for TLS System Default Versions included in .NET Framework 3.5 on Windows 8.1 and Windows Server 2012 R2](https://support.microsoft.com/help/3154520/support-for-tls-system-default-versions-included-in-the--net-framework).
 
-<a name="configuring-security-via-appcontext-switches"></a>
+<a name="configure-security-via-appcontext-switches"></a>
 
 ## Configure security via AppContext switches (for .NET Framework 4.6 or later versions)
 

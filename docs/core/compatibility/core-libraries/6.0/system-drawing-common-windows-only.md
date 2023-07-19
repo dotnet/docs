@@ -54,8 +54,8 @@ From analysis of NuGet packages, we've observed that `System.Drawing.Common` is 
 
 To use these APIs for cross-platform apps, migrate to one of the following libraries:
 
-- [ImageSharp](https://sixlabors.com/products/imagesharp)
 - [SkiaSharp](https://github.com/mono/SkiaSharp)
+- [ImageSharp](https://sixlabors.com/products/imagesharp) (tiered license)
 - [Microsoft.Maui.Graphics](/dotnet/maui/user-interface/graphics/)
 
 Alternatively, you can enable support for non-Windows platforms in .NET 6 by setting the `System.Drawing.EnableUnixSupport` [runtime configuration switch](../../../runtime-config/index.md) to `true` in the *runtimeconfig.json* file.

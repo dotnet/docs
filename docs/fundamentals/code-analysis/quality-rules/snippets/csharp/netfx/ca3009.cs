@@ -16,11 +16,6 @@ public partial class WebForm1 : System.Web.UI.Page
 
         string input = Request.Form["in"];
         root.InnerXml = input;
-
-        // If an attacker uses this for input:
-        //     some text<allowedUser>oscar</allowedUser>
-        // Then the XML document will be:
-        //     <root>some text<allowedUser>oscar</allowedUser></root>
     }
     // </violation>
 }
@@ -40,11 +35,6 @@ public partial class WebForm2 : System.Web.UI.Page
 
         string input = Request.Form["in"];
         root.InnerText = input;
-
-        // If an attacker uses this for input:
-        //     some text<allowedUser>oscar</allowedUser>
-        // Then the XML document will be:
-        //     <root>&lt;allowedUser&gt;oscar&lt;/allowedUser&gt;some text<allowedUser>alice</allowedUser></root>
     }
     // </fix>
 }

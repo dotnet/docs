@@ -17,11 +17,6 @@ Public Partial Class WebForm1
 
         Dim input As String = Request.Form("in")
         root.InnerXml = input
-
-        ' If an attacker uses this for input:
-        '     some text<allowedUser>oscar</allowedUser>
-        ' Then the XML document will be:
-        '     <root>some text<allowedUser>oscar</allowedUser></root>
     End Sub
     ' </violation>
 End Class
@@ -41,11 +36,6 @@ Public Partial Class WebForm2
 
         Dim input As String = Request.Form("in")
         root.InnerText = input
-
-        ' If an attacker uses this for input:
-        '     some text<allowedUser>oscar</allowedUser>
-        ' Then the XML document will be:
-        '     <root>&lt;allowedUser&gt;oscar&lt;/allowedUser&gt;some text<allowedUser>alice</allowedUser></root>
     End Sub
     ' </fix>
 End Class

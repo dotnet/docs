@@ -1,8 +1,8 @@
 ﻿using Azure;
 using Azure.Security.KeyVault.Secrets;
-using Moq;
+using NSubstitute;
 
-public class AboutToExpireSecretFinderTests
+public class AboutToExpireSecretFinderTests_NSubstitute
 {
     [Fact]
     public async Task DoesNotReturnNonExpiringSecrets()
@@ -13,13 +13,16 @@ public class AboutToExpireSecretFinderTests
         {
             new SecretProperties("secret1") { ExpiresOn = null },
             new SecretProperties("secret2") { ExpiresOn = null }
-        }, null, Mock.Of<Response>());
+        }, null, Substitute.For<Response>());
 
         // Create a pageable that consists of a single page
         AsyncPageable<SecretProperties> pageable =
             AsyncPageable<SecretProperties>.FromPages(new[] { page });
 
-        var clientMock = new MockSecretClient(pageable);
+        // Setup a client mock object to return the pageable
+        SecretClient clientMock = Substitute.For<SecretClient>();
+        clientMock.GetPropertiesOfSecretsAsync(Arg.Any<CancellationToken>())
+            .Returns(pageable);
 
         // Create an instance of a class to test passing in the mock client
         var finder = new AboutToExpireSecretFinder(TimeSpan.FromDays(2), clientMock);
@@ -43,15 +46,16 @@ public class AboutToExpireSecretFinderTests
             new SecretProperties("secret1") { ExpiresOn = now.AddDays(1) },
             new SecretProperties("secret2") { ExpiresOn = now.AddDays(2) },
             new SecretProperties("secret3") { ExpiresOn = now.AddDays(3) }
-        },
-        null, Mock.Of<Response>());
+        }, null,Substitute.For<Response>());
 
         // Create a pageable that consists of a single page
         AsyncPageable<SecretProperties> pageable =
             AsyncPageable<SecretProperties>.FromPages(new[] { page });
 
-        // Create a client mock object
-        var clientMock = new MockSecretClient(pageable);
+        // Setup a client mock object to return the pageable
+        SecretClient clientMock = Substitute.For<SecretClient>();
+        clientMock.GetPropertiesOfSecretsAsync(Arg.Any<CancellationToken>())
+            .Returns(pageable);
 
         // Create an instance of a class to test passing in the mock client
         var finder = new AboutToExpireSecretFinder(TimeSpan.FromDays(2), clientMock);

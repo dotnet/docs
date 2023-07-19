@@ -206,7 +206,7 @@ builder.Services.AddAzureClients(clientBuilder =>
 });
 ```
 
-Using an ASP.NET Core controller as an example, access the named service client using the <xref:Microsoft.Extensions.Azure.IAzureClientFactory%601?displayProperty=nameWithType> interface:
+Using an ASP.NET Core controller as an example, access the named service client using the <xref:Microsoft.Extensions.Azure.IAzureClientFactory%601> interface:
 
 ```csharp
 public class HomeController : Controller
@@ -249,7 +249,7 @@ At some point, you may want to change the default settings for a service client.
 }
 ```
 
-You can change the retry policy depending on your needs like so:
+You can change the retry policy to suit your needs like so:
   
 ```csharp
 builder.Services.AddAzureClients(clientBuilder =>
@@ -263,7 +263,7 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.AddSecretClient(
         builder.Configuration.GetSection("KeyVault"));
 
-    // A Storage client with a custom retry policy
+    // A Blob Storage client with a custom retry policy
     clientBuilder.AddBlobServiceClient(
             builder.Configuration.GetSection("Storage"))
         .ConfigureOptions(options => options.Retry.MaxRetries = 10);
@@ -281,7 +281,7 @@ builder.Services.AddAzureClients(clientBuilder =>
 });
 ```
 
-You can also place policy overrides in the *appsettings.json* file:
+You can also place retry policy overrides in the *appsettings.json* file:
 
 ```json
 {

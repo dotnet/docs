@@ -1,5 +1,6 @@
 ﻿using Azure.Security.KeyVault.Secrets;
 using Azure;
+using NSubstitute.Routing.Handlers;
 
 namespace UnitTestingSampleApp.NonLibrary;
 
@@ -25,10 +26,8 @@ public sealed class MockSecretClient : SecretClient
         CancellationToken cancellationToken = default)
         => throw new NotImplementedException();
 
+    // Return the pageable that was passed in
     public override AsyncPageable<SecretProperties> GetPropertiesOfSecretsAsync
         (CancellationToken cancellationToken = default)
-    {
-        // Return the pageable that was passed in
-        return _pageable;
-    }
+        => _pageable;
 }

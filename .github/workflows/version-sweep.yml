@@ -27,65 +27,11 @@ jobs:
 
         # Steps represent a sequence of tasks that will be executed as part of the job
         steps:
-            # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-            - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9
 
-            # Runs a single command using the runners shell
-            - name: "Print manual run reason"
-              if: ${{ github.event_name == 'workflow_dispatch' }}
-              run: |
-                  echo 'Reason: ${{ github.event.inputs.reason }}'
-
-            # Start the .NET version sweeper, scan projects/slns for non-LTS (or currrent) versions
-            - name: .NET version sweeper
-              id: dotnet-version-sweeper
-              uses: dotnet/versionsweeper@main
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            # Start the .NET version updater action
+            # A composite of the .NET Version Sweeper and the .NET Upgrade Assistant
+            - name: .NET version updater
+              id: dotnet-version-updater
+              uses: dotnet/docs-tools/actions/dotnet-version-updater@main
               with:
-                  owner: ${{ github.repository_owner }}
-                  name: ${{ github.repository }}
-                  branch: ${{ github.ref }}
-
-            - name: Create pull requests
-              if: steps.dotnet-version-sweeper.outputs.has-remaining-work == 'true'
-              env:
-                DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT: 1 # opt-out of upgrade-assistant telemetry
-              run: |
-                  projects: ${{ steps.dotnet-version-sweeper.outputs.upgrade-projects }}
-
-                  # Install .NET Upgrade Assistant global tool
-                  dotnet tool install --global upgrade-assistant
-
-                  # Iterate all upgrade projects
-                  for projectDir in "${projects[@]}"; do
-                    echo "Upgrading project: $projectDir"
-
-                    # Create a new branch
-                    branchName = $(echo "$projectDir" | sed -e 's/[^A-Za-z0-9._-]/-/g')
-                    git checkout -b upgrade/$branchName
-
-                    # Perform the upgrade using upgrade-assistant
-                    if upgrade-assistant upgrade "$projectDir" \
-                      --non-interactive \
-                      --operation Inplace \
-                      -t ${{ inputs.support }}; then
-
-                      # Commit the changes
-                      git add .
-                      git commit -m ".NET Version Sweeper: Upgraded $projectDir"
-
-                      # Push the branch to the repository
-                      git push origin upgrade/$branchName
-
-                      # Create a pull request
-                      gh pr create \
-                        --base main \
-                        --head upgrade/$branchName \
-                        --title "Upgraded $projectDir" \
-                        --body "Proposed upgrade for $projectDir"
-
-                    else
-                      echo "Upgrade failed for $projectDir"
-                    fi
-                  done
+                  support: ${{ github.event.inputs.support }}

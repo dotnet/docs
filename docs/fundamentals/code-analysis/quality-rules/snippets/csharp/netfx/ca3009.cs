@@ -6,7 +6,6 @@ public partial class WebForm1 : System.Web.UI.Page
     // <violation>
     protected void Page_Load(object sender, EventArgs e)
     {
-
         XmlDocument d = new XmlDocument();
         XmlElement root = d.CreateElement("root");
         d.AppendChild(root);

@@ -35,6 +35,7 @@ The rules in this section concern the following unnecessary code rules:
 - [Remove 'ByVal' (IDE0081)](ide0081.md) - Visual Basic only.
 - [Remove unnecessary equality operator (IDE0100)](ide0100.md)
 - [Remove unnecessary discard (IDE0110)](ide0110.md) - C# only.
+- [Simplify LINQ expression (IDE0120)](ide0120.md)
 - [Simplify object creation (IDE0140)](ide0140.md) - Visual Basic only.
 
 Some of these rules have options to configure the rule behavior.

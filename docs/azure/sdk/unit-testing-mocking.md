@@ -177,7 +177,7 @@ When unit testing you only want the unit tests to verify the application logic a
 
 # [NSubstitute](#tab/nsubstitute)
 
-:::code language="csharp" source="snippets/unit-testing/NSubstitute/AboutToExpireSecretsFinderTests_Moq.cs" :::
+:::code language="csharp" source="snippets/unit-testing/NSubstitute/AboutToExpireSecretsFinderTests_NSubstitute.cs" :::
 
 ---
 

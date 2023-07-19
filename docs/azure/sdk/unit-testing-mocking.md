@@ -38,6 +38,10 @@ To create a test client instance using C# without a mocking library, inherit fro
 
 :::code language="csharp" source="snippets/unit-testing/Moq/TestSnippets_Moq.cs" id="MockSecretClient" :::
 
+# [NSubstitute](#tab/nsubstitute)
+
+:::code language="csharp" source="snippets/unit-testing/NSubstitute/TestSnippets_NSubstitute.cs" id="MockSecretClient" :::
+
 ---
 
 ### Service client input and output models
@@ -90,6 +94,10 @@ The Moq library provides concise functionality for setting up mock responses:
 
 :::code language="csharp" source="snippets/unit-testing/Moq/TestSnippets_Moq.cs" id="MockResponse" :::
 
+# [NSubstitute](#tab/nsubstitute)
+
+:::code language="csharp" source="snippets/unit-testing/NSubstitute/TestSnippets_NSubstitute.cs" id="MockResponse" :::
+
 ---
 
 Some services also support using the <xref:Azure.Response%601> type, which is a class that contains a model and the HTTP response that returned it. To create a test instance of `Response<T>`, use the static `Response.FromValue` method:
@@ -101,6 +109,10 @@ Some services also support using the <xref:Azure.Response%601> type, which is a 
 ## [Moq](#tab/moq)
 
 :::code language="csharp" source="snippets/unit-testing/Moq/TestSnippets_Moq.cs" id="MockResponseT" :::
+
+# [NSubstitute](#tab/nsubstitute)
+
+:::code language="csharp" source="snippets/unit-testing/NSubstitute/TestSnippets_NSubstitute.cs" id="MockResponseT" :::
 
 ---
 
@@ -118,6 +130,10 @@ The `continuationToken` parameter is used to retrieve the next page from the ser
 
 :::code language="csharp" source="snippets/unit-testing/Moq/TestSnippets_Moq.cs" id="SingleResponsePage" :::
 
+# [NSubstitute](#tab/nsubstitute)
+
+:::code language="csharp" source="snippets/unit-testing/NSubstitute/TestSnippets_NSubstitute.cs" id="SingleResponsePage" :::
+
 ---
 
 <xref:Azure.AsyncPageable%601> and <xref:Azure.Pageable%601> are classes that represent collections of models returned by the service in pages. The only difference between them is that one is used with synchronous methods while the other is used with asynchronous methods.
@@ -131,6 +147,10 @@ To create a test instance of `Pageable` or `AsyncPageable`, use the `FromPages` 
 ## [Moq](#tab/moq)
 
 :::code language="csharp" source="snippets/unit-testing/Moq/TestSnippets_Moq.cs" id="MultipleResponsePage" :::
+
+# [NSubstitute](#tab/nsubstitute)
+
+:::code language="csharp" source="snippets/unit-testing/NSubstitute/TestSnippets_NSubstitute.cs" id="MultipleResponsePage" :::
 
 ---
 
@@ -154,6 +174,10 @@ When unit testing you only want the unit tests to verify the application logic a
 ## [Moq](#tab/moq)
 
 :::code language="csharp" source="snippets/unit-testing/Moq/AboutToExpireSecretsFinderTests_Moq.cs" :::
+
+# [NSubstitute](#tab/nsubstitute)
+
+:::code language="csharp" source="snippets/unit-testing/NSubstitute/AboutToExpireSecretsFinderTests_Moq.cs" :::
 
 ---
 

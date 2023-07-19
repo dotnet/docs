@@ -106,7 +106,7 @@ Audit your code to verify you're not setting a specific TLS or SSL version using
 
 ### For .NET Framework 4.6 - 4.6.2 and not WCF
 
-Set the `DontEnableSystemDefaultTlsVersions` `AppContext` switch to `false`. See [Configuring security via AppContext switches](#configuring-security-via-appcontext-switches).
+Set the `DontEnableSystemDefaultTlsVersions` `AppContext` switch to `false`. See [Configuring security via AppContext switches](#configure-security-via-appcontext-switches).
 
 ### For WCF using .NET Framework 4.6 - 4.6.2 using TCP transport security with Certificate Credentials
 
@@ -118,7 +118,7 @@ The WCF framework automatically chooses the highest protocol available up to TLS
 
 We recommend you upgrade your app to .NET Framework 4.7 or a later version. If you cannot upgrade, take the following steps:
 
-- Set the [SchUseStrongCrypto](#schusestrongcrypto) and [SystemDefaultTlsVersions](#systemdefaulttlsversions) registry keys to 1. See [Configuring security via the Windows Registry](#configuring-security-via-the-windows-registry). .NET Framework 3.5 supports the `SchUseStrongCrypto` flag only when an explicit TLS value is passed.
+- Set the [SchUseStrongCrypto](#schusestrongcrypto) and [SystemDefaultTlsVersions](#systemdefaulttlsversions) registry keys to 1. See [Configuring security via the Windows Registry](#configure-security-via-the-windows-registry). .NET Framework 3.5 supports the `SchUseStrongCrypto` flag only when an explicit TLS value is passed.
 
 - If you're running on .NET Framework 3.5, you need to install a hot patch so that TLS 1.2 can be specified by your program:
 
@@ -138,7 +138,7 @@ If you must explicitly set a security protocol instead of letting .NET or the OS
 
 <a name="configuring-security-via-appcontext-switches"></a>
 
-## Configuring security via AppContext switches (for .NET Framework 4.6 or later versions)
+## Configure security via AppContext switches (for .NET Framework 4.6 or later versions)
 
 The [AppContext](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) switches described in this section are relevant if your app targets, or runs on, .NET Framework 4.6 or later versions. Whether by default, or by setting them explicitly, the switches should be `false` if possible. If you want to configure security via one or both switches, then don't specify a security protocol value in your code; doing so would override the switch(es).
 

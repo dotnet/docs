@@ -95,7 +95,26 @@ public class MyApiController : ControllerBase
 
 In the [Register clients](#register-clients) section, you explicitly passed the `Uri`-typed variables to the client constructors. This approach could cause problems when you run code against different environments during development and production. The .NET team suggests [storing such configurations in environment-dependent JSON files](../../core/extensions/configuration-providers.md#json-configuration-provider). For example, you can have an *appsettings.Development.json* file containing development environment settings. Another *appsettings.Production.json* file would contain production environment settings, and so on. The file format is:
 
-:::code language="json" source="snippets/dependency-injection/WebApplicationBuilder/appsettings.json":::
+```json
+{
+  "AzureDefaults": {
+    "Diagnostics": {
+      "IsTelemetryDisabled": false,
+      "IsLoggingContentEnabled": true
+    },
+    "Retry": {
+      "MaxRetries": 3,
+      "Mode": "Exponential"
+    }
+  },
+  "KeyVault": {
+    "VaultUri": "https://mykeyvault.vault.azure.net"
+  },
+  "Storage": {
+    "ServiceUri": "https://mydemoaccount.storage.windows.net"
+  }
+}
+```
 
 You can add any properties from the <xref:Azure.Core.ClientOptions> class into the JSON file's `AzureDefaults` section. In the preceding JSON sample, the `AzureDefaults.Retry` object literal:
 

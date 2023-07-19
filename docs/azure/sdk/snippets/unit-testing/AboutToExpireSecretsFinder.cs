@@ -11,7 +11,7 @@ public class AboutToExpireSecretFinder
         _client = client;
     }
 
-    public async Task<string[]> GetAboutToExpireSecrets()
+    public async Task<string[]> GetAboutToExpireSecretsAsync()
     {
         List<string> secretsAboutToExpire = new();
 

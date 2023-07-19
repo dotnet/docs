@@ -45,31 +45,13 @@ In the *Program.cs* file, invoke the <xref:Microsoft.Extensions.Azure.AzureClien
 
 ### [HostApplicationBuilder](#tab/host-app-builder)
 
-```csharp
-using Azure.Identity;
-using Microsoft.Extensions.Azure;
-using Microsoft.Extensions.Hosting;
-
-HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
-
-builder.Services.AddAzureClients(clientBuilder =>
-{
-    clientBuilder.AddSecretClient(keyVaultUrl);
-    clientBuilder.AddBlobServiceClient(storageUrl);
-    clientBuilder.UseCredential(new DefaultAzureCredential());
-});
-
-// code omitted for brevity
-
-using IHost host = builder.Build();
-await host.RunAsync();
-```
+:::code language="csharp" source="snippets/dependency-injection/HostApplicationBuilder/Program.cs" highlight="7-12":::
 
 ---
 
 In the preceding code:
 
-* Key Vault Secrets and Blob Storage clients are registered using <xref:Microsoft.Extensions.Azure.SecretClientBuilderExtensions.AddSecretClient%2A> and <xref:Microsoft.Extensions.Azure.BlobClientBuilderExtensions.AddBlobServiceClient%2A>, respectively. The `Uri`-typed `keyVaultUrl` and `storageUrl` arguments are passed. To avoid specifying the URLs explicitly, see the [Store configuration separately from code](#store-configuration-separately-from-code) section.
+* Key Vault Secrets and Blob Storage clients are registered using <xref:Microsoft.Extensions.Azure.SecretClientBuilderExtensions.AddSecretClient%2A> and <xref:Microsoft.Extensions.Azure.BlobClientBuilderExtensions.AddBlobServiceClient%2A>, respectively. The `Uri`-typed arguments are passed. To avoid specifying these URLs explicitly, see the [Store configuration separately from code](#store-configuration-separately-from-code) section.
 * <xref:Azure.Identity.DefaultAzureCredential> is used to satisfy the `TokenCredential` argument requirement for each registered client. When one of the clients is created, `DefaultAzureCredential` is used to authenticate.
 
 ## Use the registered clients
@@ -107,28 +89,9 @@ public class MyApiController : ControllerBase
 
 ## Store configuration separately from code
 
-In the [Register clients](#register-clients) section, you explicitly specify the `keyVaultUrl` and `storageUrl` variables. This approach could cause problems when you run code against different environments during development and production. The .NET team suggests [storing such configurations in environment-dependent JSON files](../../core/extensions/configuration-providers.md#json-configuration-provider). For example, you can have an *appsettings.Development.json* file containing development environment settings. Another *appsettings.Production.json* file would contain production environment settings, and so on. The file format is:
+In the [Register clients](#register-clients) section, you explicitly passed the `Uri`-typed variables to the client constructors. This approach could cause problems when you run code against different environments during development and production. The .NET team suggests [storing such configurations in environment-dependent JSON files](../../core/extensions/configuration-providers.md#json-configuration-provider). For example, you can have an *appsettings.Development.json* file containing development environment settings. Another *appsettings.Production.json* file would contain production environment settings, and so on. The file format is:
 
-```json
-{
-  "AzureDefaults": {
-    "Diagnostics": {
-      "IsTelemetryDisabled": false,
-      "IsLoggingContentEnabled": true
-    },
-    "Retry": {
-      "MaxRetries": 3,
-      "Mode": "Exponential"
-    }
-  },
-  "KeyVault": {
-    "VaultUri": "https://mykeyvault.vault.azure.net"
-  },
-  "Storage": {
-    "ServiceUri": "https://mydemoaccount.storage.windows.net"
-  }
-}
-```
+:::code language="json" source="snippets/dependency-injection/WebApplicationBuilder/appsettings.json":::
 
 You can add any properties from the <xref:Azure.Core.ClientOptions> class into the JSON file's `AzureDefaults` section. In the preceding JSON sample, the `AzureDefaults.Retry` object literal:
 

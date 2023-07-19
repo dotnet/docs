@@ -24,7 +24,7 @@ Gets a map from Microsoft intermediate language (MSIL) offsets to native offsets
 ## Syntax  
   
 ```cpp  
-HRESULT GetILToNativeMapping(  
+HRESULT GetILToNativeMapping2(  
     [in] FunctionID functionId,  
     [in] ReJITID reJitId,  
     [in] ULONG32 cMap,  

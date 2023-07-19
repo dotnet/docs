@@ -2,14 +2,14 @@
 using Azure;
 using Moq;
 
-public class MockSecretClient : SecretClient
+public sealed class MockSecretClient : SecretClient
 {
-    AsyncPageable<SecretProperties> pageable;
+    AsyncPageable<SecretProperties> _pageable;
 
     // Allow a pageable to be passed in for mocking different responses
     public MockSecretClient(AsyncPageable<SecretProperties> pageable)
     {
-        this.pageable = pageable;
+        _pageable = pageable;
     }
 
     public override Response<KeyVaultSecret> GetSecret(
@@ -28,6 +28,6 @@ public class MockSecretClient : SecretClient
         (CancellationToken cancellationToken = default)
     {
         // Return the pageable that was passed in
-        return pageable;
+        return _pageable;
     }
 }

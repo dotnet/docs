@@ -50,7 +50,6 @@ public class TestSnippets_Moq
         // </MockResponseT>
     }
 
-
     public void PaggingSnippets()
     {
         // <SingleResponsePage>
@@ -98,5 +97,4 @@ public class TestSnippets_Moq
             .FromPages(new[] { page1, page2, lastPage });
         // </MultipleResponsePage>
     }
-
 }

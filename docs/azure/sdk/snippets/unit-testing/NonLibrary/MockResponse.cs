@@ -2,7 +2,7 @@
 using Azure;
 using System.Diagnostics.CodeAnalysis;
 
-public class MockResponse : Response
+public sealed class MockResponse : Response
 {
     public override int Status => throw new NotImplementedException();
 

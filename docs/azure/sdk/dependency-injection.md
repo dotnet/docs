@@ -41,7 +41,7 @@ In the *Program.cs* file, invoke the <xref:Microsoft.Extensions.Azure.AzureClien
 
 ### [WebApplicationBuilder](#tab/web-app-builder)
 
-:::code language="csharp" source="snippets/dependency-injection/WebApplicationBuilder/Program.cs" id="snippet_WebApplicationBuilder" highlight="8-13":::
+:::code language="csharp" source="snippets/dependency-injection/WebApplicationBuilder/Program.cs" id="snippet_WebApplicationBuilder" highlight="6-11":::
 
 ### [HostApplicationBuilder](#tab/host-app-builder)
 

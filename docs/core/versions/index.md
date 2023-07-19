@@ -26,7 +26,7 @@ The third position of the SDK version number communicates both the minor and pat
 | SDK patch             | 5.0.0             | 5.0.101           | Runtime didn't change with this SDK patch. SDK patch bumps last digit in SDK patch. |
 | Runtime and SDK patch | 5.0.1             | 5.0.102           | Runtime patch bumps Runtime patch number. SDK patch bumps last digit in SDK patch.  |
 | SDK feature change    | 5.0.1             | 5.0.200           | Runtime patch didn't change. New SDK feature bumps first digit in SDK patch.        |
-| Runtime patch         | 5.0.2             | 5.0.102           | Runtime patch bumps Runtime patch number. SDK doesn't change.                       |
+| Runtime patch         | 5.0.2             | 5.0.200           | Runtime patch bumps Runtime patch number. SDK doesn't change.                       |
 
 From the preceding table you can see several policies:
 

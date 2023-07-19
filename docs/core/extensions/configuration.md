@@ -3,7 +3,7 @@ title: Configuration
 description: Learn how to use the Configuration API to configure .NET applications. Explore various inbuilt configuration providers.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/23/2023
+ms.date: 07/19/2023
 ms.topic: overview
 ---
 
@@ -32,7 +32,36 @@ Given one or more configuration sources, the <xref:Microsoft.Extensions.Configur
 
 ## Configure console apps
 
-.NET console applications created using the [dotnet new](../tools/dotnet-new.md) command template or Visual Studio by default *do not* expose configuration capabilities. To add configuration in a new .NET console application, [add a package reference](../tools/dotnet-add-package.md) to [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting). Modify the *Program.cs* file to match the following code:
+.NET console applications created using the [dotnet new](../tools/dotnet-new.md) command template or Visual Studio by default *don't* expose configuration capabilities. To add configuration in a new .NET console application, [add a reference](../tools/dotnet-add-package.md) to [Microsoft.Extensions.Configuration](https://www.nuget.org/packages/Microsoft.Extensions.Configuration). This package is the foundation for configuration in .NET apps. It provides the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> and related types.
+
+```csharp
+using Microsoft.Extensions.Configuration;
+
+var configuration = new ConfigurationBuilder()
+    .AddInMemoryCollection(new Dictionary<string, string?>()
+    {
+        ["SomeKey"] = "SomeValue"
+    })
+    .Build();
+
+Console.WriteLine(configuration["SomeKey"]);
+
+// Outputs:
+//   SomeValue
+```
+
+The preceding code:
+
+- Creates a new <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> instance.
+- Adds an in-memory collection of key-value pairs to the configuration builder.
+- Calls the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder.Build> method to create an <xref:Microsoft.Extensions.Configuration.IConfiguration> instance.
+- Writes the value of the `SomeKey` key to the console.
+
+There are many configuration providers available, exposing functionality for file-based configuration, environment variables, command line arguments, and so on. For more information, see [Configuration providers in .NET](configuration-providers.md).
+
+### Alternative hosting approach
+
+Commonly, your apps will do more than just read configuration. They'll likely use dependency injection, logging, and other services. The [.NET Generic Host](generic-host.md) approach is recommended for apps that use these services. Instead, consider [adding a package reference](../tools/dotnet-add-package.md) to [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting). Modify the *Program.cs* file to match the following code:
 
 :::code language="csharp" source="snippets/configuration/console/Program.cs" highlight="3":::
 

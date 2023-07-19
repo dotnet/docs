@@ -139,7 +139,8 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.UseCredential(new DefaultAzureCredential());
 
     // Set up any default settings
-    clientBuilder.ConfigureDefaults(builder.Configuration.GetSection("AzureDefaults"));
+    clientBuilder.ConfigureDefaults(
+        builder.Configuration.GetSection("AzureDefaults"));
 });
 ```
 
@@ -157,7 +158,8 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.UseCredential(new DefaultAzureCredential());
 
     // Set up any default settings
-    clientBuilder.ConfigureDefaults(builder.Configuration.GetSection("AzureDefaults"));
+    clientBuilder.ConfigureDefaults(
+        builder.Configuration.GetSection("AzureDefaults"));
 });
 ```
 

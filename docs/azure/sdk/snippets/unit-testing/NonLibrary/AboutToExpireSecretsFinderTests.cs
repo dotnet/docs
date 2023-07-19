@@ -25,7 +25,7 @@ public class AboutToExpireSecretFinderTests
         var finder = new AboutToExpireSecretFinder(TimeSpan.FromDays(2), clientMock);
 
         // Act
-        var soonToExpire = await finder.GetAboutToExpireSecretsAsync();
+        string[] soonToExpire = await finder.GetAboutToExpireSecretsAsync();
 
         // Assert
         Assert.Empty(soonToExpire);
@@ -57,7 +57,7 @@ public class AboutToExpireSecretFinderTests
         var finder = new AboutToExpireSecretFinder(TimeSpan.FromDays(2), clientMock);
 
         // Act
-        var soonToExpire = await finder.GetAboutToExpireSecretsAsync();
+        string[] soonToExpire = await finder.GetAboutToExpireSecretsAsync();
 
         // Assert
         Assert.Equal(new[] { "secret1", "secret2" }, soonToExpire);

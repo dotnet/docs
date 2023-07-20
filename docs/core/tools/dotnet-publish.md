@@ -1,7 +1,7 @@
 ---
 title: dotnet publish command
 description: The dotnet publish command publishes a .NET project or solution to a directory.
-ms.date: 07/20/2023
+ms.date: 07/19/2023
 ---
 # dotnet publish
 

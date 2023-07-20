@@ -1,7 +1,7 @@
 ---
 title: dotnet tool install command
 description: The dotnet tool install command installs the specified .NET tool on your machine.
-ms.date: 05/16/2023
+ms.date: 07/19/2023
 ---
 # dotnet tool install
 
@@ -15,6 +15,8 @@ ms.date: 05/16/2023
 
 ```dotnetcli
 dotnet tool install <PACKAGE_NAME> -g|--global
+    [-a|--arch <ARCHITECTURE>]
+    [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
     [--no-cache] [--prerelease]
@@ -22,6 +24,7 @@ dotnet tool install <PACKAGE_NAME> -g|--global
     [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
+    [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
     [--no-cache] [--prerelease]
@@ -29,6 +32,7 @@ dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
     [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME> [--local]
+    [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>]
     [--create-manifest-if-needed] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
@@ -87,6 +91,10 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 [!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+
+- **`-a|--arch <ARCHITECTURE>`**
+
+Architecture of the .NET binaries to install. Possible values are <auto>, amd64, x64, x86, arm64, arm, s390x, and ppc64le. The default value is <auto>, which represents the currently running OS architecture.
 
 - **`--create-manifest-if-needed`**
 

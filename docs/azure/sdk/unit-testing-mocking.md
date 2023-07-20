@@ -116,7 +116,7 @@ Some services also support using the <xref:Azure.Response%601> type, which is a 
 
 ### Explore paging
 
-The <xref:Azure.Page%601> class is used as a building block in service methods that invoke operations returning results in multiple pages. The `Page<T>` is rarely returned from APIs directly but is useful to create the `AsyncPageable<T>` and `Pageable<T>` instances in the next section. To create a `Page<T>` instance, use the `Page<T>.FromValues` method, passing a list of items, a continuation token, and the `Response`.
+The <xref:Azure.Page%601> class is used as a building block in service methods that invoke operations returning results in multiple pages. The `Page<T>` is rarely returned from APIs directly but is useful to create the `AsyncPageable<T>` and `Pageable<T>` instances in the next section. To create a `Page<T>` instance, use the <xref:Azure.Page%601.FromValues%2A?displayProperty=nameWithType> method, passing a list of items, a continuation token, and the `Response`.
 
 The `continuationToken` parameter is used to retrieve the next page from the service. For unit testing purposes, it should be set to `null` for the last page and should be non-empty for other pages.
 
@@ -136,7 +136,7 @@ The `continuationToken` parameter is used to retrieve the next page from the ser
 
 <xref:Azure.AsyncPageable%601> and <xref:Azure.Pageable%601> are classes that represent collections of models returned by the service in pages. The only difference between them is that one is used with synchronous methods while the other is used with asynchronous methods.
 
-To create a test instance of `Pageable` or `AsyncPageable`, use the `FromPages` static method:
+To create a test instance of `Pageable` or `AsyncPageable`, use the <xref:Azure.Pageable%601.FromPages%2A> static method:
 
 ## [Non-library](#tab/csharp)
 

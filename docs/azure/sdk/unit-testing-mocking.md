@@ -61,7 +61,7 @@ var secretProperties = new SecretProperties("secret")
 };
 ```
 
-To create instances of output models, a model factory is used. Azure SDK client libraries provide a static model factory class that ends in `ModelFactory` and contains a set of static methods to initialize the library's output model types.
+To create instances of output models, a model factory is used. Azure SDK client libraries provide a static model factory class with a `ModelFactory` suffix in its name. The class contains a set of static methods to initialize the library's output model types. For example, the model factory for `SecretClient` is `SecretModelFactory`:
 
 ```csharp
 KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(

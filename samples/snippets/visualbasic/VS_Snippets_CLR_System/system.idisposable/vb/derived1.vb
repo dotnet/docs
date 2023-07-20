@@ -13,8 +13,8 @@ Public Class DerivedClassWithSafeHandle
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If Not _disposedValue Then
 
-            If disposing AndAlso _safeHandle IsNot Nothing Then
-                _safeHandle.Dispose()
+            If disposing Then
+                _safeHandle?.Dispose()
                 _safeHandle = Nothing
             End If
 

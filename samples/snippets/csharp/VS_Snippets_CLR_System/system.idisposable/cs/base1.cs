@@ -22,9 +22,9 @@ public class BaseClassWithSafeHandle : IDisposable
     {
         if (!_disposedValue)
         {
-            if (disposing && _safeHandle is not null)
+            if (disposing)
             {
-                _safeHandle.Dispose();
+                _safeHandle?.Dispose();
                 _safeHandle = null;
             }
 

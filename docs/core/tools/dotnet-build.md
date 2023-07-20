@@ -1,7 +1,7 @@
 ---
 title: dotnet build command
 description: The dotnet build command builds a project and all of its dependencies.
-ms.date: 06/23/2023
+ms.date: 07/19/2023
 ---
 # dotnet build
 
@@ -16,6 +16,7 @@ ms.date: 06/23/2023
 ```dotnetcli
 dotnet build [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
     [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>]
+    [--disable-build-servers]
     [--force] [--interactive] [--no-dependencies] [--no-incremental]
     [--no-restore] [--nologo] [--no-self-contained] [--os <OS>]
     [-o|--output <OUTPUT_DIRECTORY>]
@@ -84,6 +85,8 @@ The project or solution file to build. If a project or solution file isn't speci
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
 
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+
+[!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
 
 - **`-f|--framework <FRAMEWORK>`**
 

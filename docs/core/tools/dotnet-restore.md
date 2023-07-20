@@ -1,7 +1,7 @@
 ---
 title: dotnet restore command
 description: Learn how to restore dependencies and project-specific tools with the dotnet restore command.
-ms.date: 05/16/2023
+ms.date: 07/20/2023
 ---
 # dotnet restore
 
@@ -14,7 +14,8 @@ ms.date: 05/16/2023
 ## Synopsis
 
 ```dotnetcli
-dotnet restore [<ROOT>] [--configfile <FILE>] [--disable-parallel]
+dotnet restore [<ROOT>] [--configfile <FILE>] [--disable-build-servers]
+    [--disable-parallel]
     [-f|--force] [--force-evaluate] [--ignore-failed-sources]
     [--interactive] [--lock-file-path <LOCK_FILE_PATH>] [--locked-mode]
     [--no-cache] [--no-dependencies] [--packages <PACKAGES_DIRECTORY>]
@@ -92,6 +93,8 @@ There are three specific settings that `dotnet restore` ignores:
 ## Options
 
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+
+[!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
 
 - **`--disable-parallel`**
 

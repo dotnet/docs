@@ -4,10 +4,12 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+    <RootNamespace>Console.Example</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="IronPython" Version="3.4.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
   </ItemGroup>
 
 </Project>

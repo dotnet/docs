@@ -1,7 +1,7 @@
 ﻿Imports Microsoft.Win32.SafeHandles
 Imports System.Runtime.InteropServices
 
-Class BaseClassWithSafeHandle : Implements IDisposable
+NotInheritable Class BaseClassWithSafeHandle : Implements IDisposable
     ' Flag: Has Dispose already been called?
     Dim disposed As Boolean = False
     ' Instantiate a SafeHandle instance.

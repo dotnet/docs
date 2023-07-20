@@ -2,7 +2,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-class BaseClassWithSafeHandle : IDisposable
+sealed class BaseClassWithSafeHandle : IDisposable
 {
     // To detect redundant calls
     private bool _disposedValue;

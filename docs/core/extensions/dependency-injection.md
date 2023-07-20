@@ -3,7 +3,7 @@ title: Dependency injection
 description: Learn how to use dependency injection within your .NET apps. Discover how to registration services, define service lifetimes, and express dependencies in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/23/2023
+ms.date: 07/19/2023
 ms.topic: overview
 ---
 
@@ -61,7 +61,7 @@ This interface is implemented by a concrete type, `MessageWriter`:
 
 :::code language="csharp" source="snippets/configuration/dependency-injection/MessageWriter.cs":::
 
-The sample code registers the `IMessageWriter` service with the concrete type `MessageWriter`. The <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped%2A> method registers the service with a scoped lifetime, the lifetime of a single request. [Service lifetimes](#service-lifetimes) are described later in this article.
+The sample code registers the `IMessageWriter` service with the concrete type `MessageWriter`. The <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A> method registers the service with a singleton lifetime, the lifetime of a single request. [Service lifetimes](#service-lifetimes) are described later in this article.
 
 :::code language="csharp" source="snippets/configuration/dependency-injection/Program.cs" highlight="5-8":::
 
@@ -71,7 +71,7 @@ In the preceding code, the sample app:
 - Configures the services by registering:
 
   - The `Worker` as a hosted service. For more information, see [Worker Services in .NET](workers.md).
-  - The `IMessageWriter` interface as a scoped service with a corresponding implementation of the `MessageWriter` class.
+  - The `IMessageWriter` interface as a singleton service with a corresponding implementation of the `MessageWriter` class.
 
 - Builds the host and runs it.
 
@@ -88,10 +88,10 @@ The implementation of the `IMessageWriter` interface can be improved by using th
 
 :::code language="csharp" source="snippets/configuration/dependency-injection/LoggingMessageWriter.cs":::
 
-The updated `AddScoped` method registers the new `IMessageWriter` implementation:
+The updated `AddSingleton` method registers the new `IMessageWriter` implementation:
 
 ```csharp
-builder.Services.AddScoped<IMessageWriter, LoggingMessageWriter>());
+builder.Services.AddSingleton<IMessageWriter, LoggingMessageWriter>());
 ```
 
 The <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder> (`builder`) type is part of the `Microsoft.Extensions.Hosting` NuGet package.
@@ -122,7 +122,7 @@ public class Worker : BackgroundService
         while (!stoppingToken.IsCancellationRequested)
         {
             _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-            await Task.Delay(1000, stoppingToken);
+            await Task.Delay(1_000, stoppingToken);
         }
     }
 }

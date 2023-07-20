@@ -17,7 +17,6 @@ ms.date: 07/19/2023
 dotnet tool install <PACKAGE_NAME> -g|--global
     [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
-    [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
     [--no-cache] [--prerelease]
     [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]

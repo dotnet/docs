@@ -2,25 +2,30 @@
 using System;
 using System.Runtime.InteropServices;
 
-sealed class BaseClassWithSafeHandle : IDisposable
+public class BaseClassWithSafeHandle : IDisposable
 {
     // To detect redundant calls
     private bool _disposedValue;
 
     // Instantiate a SafeHandle instance.
-    private SafeHandle _safeHandle = new SafeFileHandle(IntPtr.Zero, true);
+    private SafeHandle? _safeHandle = new SafeFileHandle(IntPtr.Zero, true);
 
     // Public implementation of Dispose pattern callable by consumers.
-    public void Dispose() => Dispose(true);
+    public void Dispose()
+    {
+        Dispose(true);
+        GC.SuppressFinalize(this);
+    }
 
     // Protected implementation of Dispose pattern.
     protected virtual void Dispose(bool disposing)
     {
         if (!_disposedValue)
         {
-            if (disposing)
+            if (disposing && _safeHandle is not null)
             {
                 _safeHandle.Dispose();
+                _safeHandle = null;
             }
 
             _disposedValue = true;

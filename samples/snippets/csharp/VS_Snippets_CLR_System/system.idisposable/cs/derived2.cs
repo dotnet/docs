@@ -1,9 +1,9 @@
-﻿class DerivedClassWithFinalizer : BaseClassWithFinalizer
+﻿public class DerivedClassWithFinalizer : BaseClassWithFinalizer
 {
     // To detect redundant calls
     private bool _disposedValue;
 
-    ~DerivedClassWithFinalizer() => this.Dispose(false);
+    ~DerivedClassWithFinalizer() => Dispose(false);
 
     // Protected implementation of Dispose pattern.
     protected override void Dispose(bool disposing)

@@ -104,7 +104,7 @@ All non-sealed classes (or Visual Basic classes not modified as `NotInheritable`
 > [!IMPORTANT]
 > It's possible for a base class to only reference managed objects and implement the dispose pattern. In these cases, a finalizer is unnecessary. A finalizer is only required if you directly reference unmanaged resources.
 
-Here's an example of the general pattern for implementing the dispose pattern for a base class that uses a safe handle.
+Here's a general example of implementing the dispose pattern for a base class that uses a safe handle.
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs/base1.cs":::
 :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/base1.vb":::

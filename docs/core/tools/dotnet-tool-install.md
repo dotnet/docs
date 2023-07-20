@@ -87,13 +87,13 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 ## Options
 
-[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
-
-[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
-
 - **`-a|--arch <ARCHITECTURE>`**
 
   Architecture of the .NET binaries to install. Possible values are `<auto>`, `amd64`, `x64`, `x86`, `arm64`, `arm`, `s390x`, and `ppc64le`. The default value is `<auto>`, which represents the currently running OS architecture.
+
+[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
+
+[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 - **`--create-manifest-if-needed`**
 

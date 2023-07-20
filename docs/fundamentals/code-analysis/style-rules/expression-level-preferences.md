@@ -44,6 +44,7 @@ The style rules in this section concern the following expression-level preferenc
 - [Simplify 'new' expression (IDE0090)](ide0090.md)
 - [Use tuple to swap values (IDE0180)](ide0180.md)
 - [Add explicit cast (IDE0220)](ide0220.md)
+- [Use UTF-8 string literal (IDE0230)](ide0230.md)
 
 ## See also
 

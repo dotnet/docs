@@ -128,6 +128,8 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0170](ide0170.md) | Simplify property pattern | [csharp_style_prefer_extended_property_pattern](ide0170.md#csharp_style_prefer_extended_property_pattern) |
 > | [IDE0180](ide0180.md) | Use tuple to swap values | [csharp_style_prefer_tuple_swap](ide0180.md#csharp_style_prefer_tuple_swap) |
 > | [IDE0200](ide0200.md) | Remove unnecessary lambda expression | [csharp_style_prefer_method_group_conversion](ide0200.md#csharp_style_prefer_method_group_conversion) |
+> | [IDE0210](ide0210.md) | Convert to top-level statements | [csharp_style_prefer_top_level_statements](ide0210.md#csharp_style_prefer_top_level_statements) |
+> | [IDE0211](ide0211.md) |  |  |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
 

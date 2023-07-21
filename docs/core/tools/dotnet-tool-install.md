@@ -89,7 +89,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 - **`-a|--arch <ARCHITECTURE>`**
 
-  Architecture of the .NET binaries to install. Possible values are `<auto>`, `amd64`, `x64`, `x86`, `arm64`, `arm`, `s390x`, and `ppc64le`. The default value is `<auto>`, which represents the currently running OS architecture.
+ Specifies the target architecture. This is a shorthand syntax for setting the [Runtime Identifier (RID)](../docs/core/rid-catalog.md), where the provided value is combined with the default RID. For example, on a `win-x64` machine, specifying `--arch x86` sets the RID to `win-x86`.
 
 [!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 

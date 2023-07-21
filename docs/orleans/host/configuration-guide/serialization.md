@@ -74,6 +74,7 @@ public class Book : Publication
 In the preceding code, note that both `Publication` and `Book` have members with `[Id(0)]` even though `Book` derives from `Publication`. This is the recommended practice in Orleans because members identifiers are scoped to the inheritance level, not the type as a whole. Members can be added and removed from `Publication` and `Book` independently, but a new base class cannot be inserted into the hierarchy once the application has been deployed without special consideration.
 
 Orleans also supports serializing types with `internal`, `private`, and `readonly` members, such as in this example type:
+
 ```csharp
 [GenerateSerializer]
 public struct MyCustomStruct

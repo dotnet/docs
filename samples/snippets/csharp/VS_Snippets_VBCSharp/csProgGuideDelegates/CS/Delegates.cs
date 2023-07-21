@@ -48,13 +48,13 @@ class TestStuff
 
         //<Snippet1>
         // Declare a delegate.
-        delegate void Del(int x);
+        delegate void WorkCallback(int x);
 
         // Define a named method.
         void DoWork(int k) { /* ... */ }
 
         // Instantiate the delegate using the method as a parameter.
-        Del d = obj.DoWork;
+        WorkCallback d = obj.DoWork;
         //</Snippet1>
     }
 }
@@ -64,7 +64,7 @@ class TestStuffAgain
 {
     //<Snippet13>
     // Declare a delegate.
-    delegate void Del(string str);
+    delegate void NotifyCallback(string str);
 
     // Declare a method with the same signature as the delegate.
     static void Notify(string name)
@@ -77,23 +77,23 @@ class TestStuffAgain
     {
         //<Snippet14>
         // Create an instance of the delegate.
-        Del del1 = new Del(Notify);
+        NotifyCallback del1 = new NotifyCallback(Notify);
         //</Snippet14>
 
         //<Snippet32>
-        // C# 2.0 provides a simpler way to declare an instance of Del.
-        Del del2 = Notify;
+        // C# 2.0 provides a simpler way to declare an instance of NotifyCallback.
+        NotifyCallback del2 = Notify;
         //</Snippet32>
 
         //<Snippet15>
-        // Instantiate Del by using an anonymous method.
-        Del del3 = delegate(string name)
+        // Instantiate NotifyCallback by using an anonymous method.
+        NotifyCallback del3 = delegate(string name)
             { Console.WriteLine($"Notification received for: {name}"); };
         //</Snippet15>
 
         //<Snippet31>
-        // Instantiate Del by using a lambda expression.
-        Del del4 = name =>  { Console.WriteLine($"Notification received for: {name}"); };
+        // Instantiate NotifyCallback by using a lambda expression.
+        NotifyCallback del4 = name =>  { Console.WriteLine($"Notification received for: {name}"); };
         //</Snippet31>
     }
 
@@ -104,7 +104,7 @@ class TestStuffAgain
     class DelegateExamples
     {
         //<Snippet21>
-        public delegate void Del(string message);
+        public delegate void Callback(string message);
         //</Snippet21>
 
         //<Snippet22>
@@ -116,7 +116,7 @@ class TestStuffAgain
         //</Snippet22>
 
         //<Snippet24>
-        public static void MethodWithCallback(int param1, int param2, Del callback)
+        public static void MethodWithCallback(int param1, int param2, Callback callback)
         {
             callback("The number is: " + (param1 + param2).ToString());
         }
@@ -129,7 +129,7 @@ class TestStuffAgain
         {
             //<Snippet23>
             // Instantiate the delegate.
-            Del handler = DelegateMethod;
+            Callback handler = DelegateMethod;
 
             // Call the delegate.
             handler("Hello World");
@@ -141,12 +141,12 @@ class TestStuffAgain
 
             //<Snippet27>
             var obj = new MethodClass();
-            Del d1 = obj.Method1;
-            Del d2 = obj.Method2;
-            Del d3 = DelegateMethod;
+            Callback d1 = obj.Method1;
+            Callback d2 = obj.Method2;
+            Callback d3 = DelegateMethod;
 
             //Both types of assignment are valid.
-            Del allMethodsDelegate = d1 + d2;
+            Callback allMethodsDelegate = d1 + d2;
             allMethodsDelegate += d3;
             //</Snippet27>
 
@@ -155,7 +155,7 @@ class TestStuffAgain
             allMethodsDelegate -= d1;
 
             // copy AllMethodsDelegate while removing d2
-            Del oneMethodDelegate = allMethodsDelegate - d2;
+            Callback oneMethodDelegate = allMethodsDelegate - d2;
             //</Snippet28>
 
             //<Snippet29>
@@ -173,10 +173,10 @@ class TestStuffAgain
     //</Snippet26>
 
     //<Snippet30>
-    delegate void Delegate1();
-    delegate void Delegate2();
+    delegate void Callback1();
+    delegate void Callback2();
 
-    static void method(Delegate1 d, Delegate2 e, System.Delegate f)
+    static void method(Callback1 d, Callback2 e, System.Delegate f)
     {
         // Compile-time error.
         //Console.WriteLine(d == e);
@@ -193,7 +193,7 @@ namespace WrapNamedMethods1
 {
     //<Snippet2>
     // Declare a delegate
-    delegate void Del(int i, double j);
+    delegate void MultiplyCallback(int i, double j);
 
     class MathClass
     {
@@ -202,7 +202,7 @@ namespace WrapNamedMethods1
             MathClass m = new MathClass();
 
             // Delegate instantiation using "MultiplyNumbers"
-            Del d = m.MultiplyNumbers;
+            MultiplyCallback d = m.MultiplyNumbers;
 
             // Invoke the delegate object.
             Console.WriteLine("Invoking the delegate using 'MultiplyNumbers':");
@@ -234,7 +234,7 @@ namespace WrapNamedMethods2
 {
     //<Snippet3>
     // Declare a delegate
-    delegate void Del();
+    delegate void Callback();
 
     class SampleClass
     {
@@ -256,7 +256,7 @@ namespace WrapNamedMethods2
             var sc = new SampleClass();
 
             // Map the delegate to the instance method:
-            Del d = sc.InstanceMethod;
+            Callback d = sc.InstanceMethod;
             d();
 
             // Map to the static method:
@@ -404,11 +404,11 @@ namespace WrapContravariance
         using System;
 
         // Define a custom delegate that has a string parameter and returns void.
-        delegate void CustomDel(string s);
+        delegate void CustomCallback(string s);
 
         class TestClass
         {
-            // Define two methods that have the same signature as CustomDel.
+            // Define two methods that have the same signature as CustomCallback.
             static void Hello(string s)
             {
                 Console.WriteLine($"  Hello, {s}!");
@@ -422,7 +422,7 @@ namespace WrapContravariance
             static void Main()
             {
                 // Declare instances of the custom delegate.
-                CustomDel hiDel, byeDel, multiDel, multiMinusHiDel;
+                CustomCallback hiDel, byeDel, multiDel, multiMinusHiDel;
 
                 // In this example, you can omit the custom delegate if you
                 // want to and use Action<string> instead.

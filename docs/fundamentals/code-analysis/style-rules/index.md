@@ -130,7 +130,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0200](ide0200.md) | Remove unnecessary lambda expression | [csharp_style_prefer_method_group_conversion](ide0200.md#csharp_style_prefer_method_group_conversion) |
 > | [IDE0210](ide0210.md) | Convert to top-level statements | [csharp_style_prefer_top_level_statements](ide0210.md#csharp_style_prefer_top_level_statements) |
 > | [IDE0211](ide0211.md) | Convert to 'Program.Main' style program | [csharp_style_prefer_top_level_statements](ide0211.md#csharp_style_prefer_top_level_statements) |
-> | [IDE0220](ide0220.md) | Add explicit cast | [dotnet_style_prefer_foreach_explicit_cast_in_source](ide0220.md#dotnet_style_prefer_foreach_explicit_cast_in_source) |
+> | [IDE0220](ide0220.md) | Add explicit cast in foreach loop | [dotnet_style_prefer_foreach_explicit_cast_in_source](ide0220.md#dotnet_style_prefer_foreach_explicit_cast_in_source) |
 > | [IDE0230](ide0230.md) | Use UTF-8 string literal | [csharp_style_prefer_utf8_string_literals](ide0230.md#csharp_style_prefer_utf8_string_literals) |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |

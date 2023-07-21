@@ -3,7 +3,7 @@ title: Dependency injection with the Azure SDK for .NET
 description: Learn how to use dependency injection with the Azure SDK for .NET client libraries.
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23
-ms.date: 07/18/2023
+ms.date: 07/21/2023
 ---
 
 # Dependency injection with the Azure SDK for .NET
@@ -29,8 +29,6 @@ To register and configure service clients from an [`Azure.`-prefixed package](/d
 For demonstration purposes, the sample code in this article uses the Key Vault Secrets and Blob Storage libraries. Install the following packages to follow along:
 
 ```dotnetcli
-dotnet add package Microsoft.Extensions.Azure
-dotnet add package Azure.Identity
 dotnet add package Azure.Security.KeyVault.Secrets
 dotnet add package Azure.Storage.Blobs
 ```

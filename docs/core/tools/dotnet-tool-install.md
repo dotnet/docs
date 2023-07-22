@@ -1,7 +1,7 @@
 ---
 title: dotnet tool install command
 description: The dotnet tool install command installs the specified .NET tool on your machine.
-ms.date: 05/16/2023
+ms.date: 07/19/2023
 ---
 # dotnet tool install
 
@@ -15,6 +15,7 @@ ms.date: 05/16/2023
 
 ```dotnetcli
 dotnet tool install <PACKAGE_NAME> -g|--global
+    [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
     [--no-cache] [--prerelease]
@@ -22,6 +23,7 @@ dotnet tool install <PACKAGE_NAME> -g|--global
     [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
+    [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
     [--no-cache] [--prerelease]
@@ -29,6 +31,7 @@ dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
     [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME> [--local]
+    [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>]
     [--create-manifest-if-needed] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
@@ -83,6 +86,10 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
   Name/ID of the NuGet package that contains the .NET tool to install.
 
 ## Options
+
+- **`-a|--arch <ARCHITECTURE>`**
+
+  Specifies the target architecture. This is a shorthand syntax for setting the [Runtime Identifier (RID)](../../../docs/core/rid-catalog.md), where the provided value is combined with the default RID. For example, on a `win-x64` machine, specifying `--arch x86` sets the RID to `win-x86`.
 
 [!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 

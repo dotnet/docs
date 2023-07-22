@@ -1,7 +1,7 @@
 ---
 title: Code-style rules overview
 description: Learn about the different .NET code-style rules and categories.
-ms.date: 09/25/2020
+ms.date: 07/22/2023
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -10,17 +10,11 @@ ms.author: gewarren
 
 .NET code-style analysis provides rules that aim to maintain consistent *style* in your codebase. These rules have an "IDE" prefix in the rule ID.
 
-Most of the rules have one or more associated options to customize the preferred style. For example, [Use simple 'using' statement (IDE0063)](ide0063.md) has the associated option `csharp_prefer_simple_using_statement` that lets you define whether you prefer a `using` declaration or a `using` statement. The rule enforces whichever options you choose at a specified level (for example, warning or error).
-
 The code-style rules are organized into the following subcategories:
 
-- [Language rules](language-rules.md)
+- [Language and unnecessary code rules](language-rules.md)
 
-  Rules that pertain to the C# or Visual Basic language. For example, you can specify rules that regard the use of `var` when defining variables, or whether expression-bodied members are preferred.
-
-- [Unnecessary code rules](unnecessary-code-rules.md)
-
-  Rules that pertain to unnecessary code that indicates a potential readability, maintainability, performance, or functional problem. For example, unreachable code within methods or unused private fields, properties, or methods is unnecessary code.
+  Rules that pertain to the C# or Visual Basic language. For example, you can specify rules that regard the use of `var` when defining variables, or whether expression-bodied members are preferred. This category also includes rules that find unnecessary code, for example, unreachable code within methods or unused private fields, properties, or methods.
 
 - [Formatting rules](ide0055.md)
 

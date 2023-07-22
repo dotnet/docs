@@ -19,8 +19,6 @@ Code style rules are divided into following subcategories:
 
 - [Language rules](style-rules/language-rules.md)
 
-- [Unnecessary code rules](style-rules/unnecessary-code-rules.md)
-
 - [Formatting rules](style-rules/ide0055.md)
 
 - [Naming rules](style-rules/naming-rules.md)

@@ -1143,219 +1143,175 @@ items:
             items:
               - name: Overview
                 href: ../../fundamentals/code-analysis/style-rules/index.md
-              - name: Language rules
+              - name: Language and unnecessary code rules
                 items:
                   - name: Overview
-                    displayName: "language rules"
+                    displayName: "language rules", "unnecessary code rules"
                     href: ../../fundamentals/code-analysis/style-rules/language-rules.md
-                  - name: this and Me preferences
-                    items:
-                      - name: IDE0003 and IDE0009
-                        href: ../../fundamentals/code-analysis/style-rules/ide0003-ide0009.md
-                  - name: Use language keywords for types
-                    items:
-                      - name: IDE0049
-                        href: ../../fundamentals/code-analysis/style-rules/ide0049.md
-                  - name: Modifier preferences
-                    items:
-                      - name: Overview
-                        href: ../../fundamentals/code-analysis/style-rules/modifier-preferences.md
-                      - name: IDE0036
-                        href: ../../fundamentals/code-analysis/style-rules/ide0036.md
-                      - name: IDE0040
-                        href: ../../fundamentals/code-analysis/style-rules/ide0040.md
-                      - name: IDE0044
-                        href: ../../fundamentals/code-analysis/style-rules/ide0044.md
-                      - name: IDE0062
-                        href: ../../fundamentals/code-analysis/style-rules/ide0062.md
-                      - name: IDE0064
-                        href: ../../fundamentals/code-analysis/style-rules/ide0064.md
-                  - name: Parentheses preferences
-                    items:
-                      - name: IDE0047 and IDE0048
-                        href: ../../fundamentals/code-analysis/style-rules/ide0047-ide0048.md
-                  - name: Expression-level preferences
-                    items:
-                      - name: Overview
-                        href: ../../fundamentals/code-analysis/style-rules/expression-level-preferences.md
-                      - name: IDE0010
-                        href: ../../fundamentals/code-analysis/style-rules/ide0010.md
-                      - name: IDE0017
-                        href: ../../fundamentals/code-analysis/style-rules/ide0017.md
-                      - name: IDE0018
-                        href: ../../fundamentals/code-analysis/style-rules/ide0018.md
-                      - name: IDE0028
-                        href: ../../fundamentals/code-analysis/style-rules/ide0028.md
-                      - name: IDE0032
-                        href: ../../fundamentals/code-analysis/style-rules/ide0032.md
-                      - name: IDE0033
-                        href: ../../fundamentals/code-analysis/style-rules/ide0033.md
-                      - name: IDE0034
-                        href: ../../fundamentals/code-analysis/style-rules/ide0034.md
-                      - name: IDE0037
-                        href: ../../fundamentals/code-analysis/style-rules/ide0037.md
-                      - name: IDE0039
-                        href: ../../fundamentals/code-analysis/style-rules/ide0039.md
-                      - name: IDE0042
-                        href: ../../fundamentals/code-analysis/style-rules/ide0042.md
-                      - name: IDE0045
-                        href: ../../fundamentals/code-analysis/style-rules/ide0045.md
-                      - name: IDE0046
-                        href: ../../fundamentals/code-analysis/style-rules/ide0046.md
-                      - name: IDE0050
-                        href: ../../fundamentals/code-analysis/style-rules/ide0050.md
-                      - name: IDE0054
-                        href: ../../fundamentals/code-analysis/style-rules/ide0054-ide0074.md
-                      - name: IDE0056
-                        href: ../../fundamentals/code-analysis/style-rules/ide0056.md
-                      - name: IDE0057
-                        href: ../../fundamentals/code-analysis/style-rules/ide0057.md
-                      - name: IDE0070
-                        href: ../../fundamentals/code-analysis/style-rules/ide0070.md
-                      - name: IDE0071
-                        href: ../../fundamentals/code-analysis/style-rules/ide0071.md
-                      - name: IDE0072
-                        href: ../../fundamentals/code-analysis/style-rules/ide0072.md
-                      - name: IDE0074
-                        href: ../../fundamentals/code-analysis/style-rules/ide0054-ide0074.md
-                      - name: IDE0075
-                        href: ../../fundamentals/code-analysis/style-rules/ide0075.md
-                      - name: IDE0082
-                        href: ../../fundamentals/code-analysis/style-rules/ide0082.md
-                      - name: IDE0090
-                        href: ../../fundamentals/code-analysis/style-rules/ide0090.md
-                      - name: IDE0180
-                        href: ../../fundamentals/code-analysis/style-rules/ide0180.md
-                      - name: IDE0220
-                        href: ../../fundamentals/code-analysis/style-rules/ide0220.md
-                      - name: IDE0230
-                        href: ../../fundamentals/code-analysis/style-rules/ide0230.md
-                  - name: Namespace declaration preferences
-                    items:
-                      - name: IDE0160 and IDE0161
-                        href: ../../fundamentals/code-analysis/style-rules/ide0160-ide0161.md
-                  - name: Null-checking preferences
-                    items:
-                      - name: Overview
-                        href: ../../fundamentals/code-analysis/style-rules/null-checking-preferences.md
-                      - name: IDE0016
-                        href: ../../fundamentals/code-analysis/style-rules/ide0016.md
-                      - name: IDE0029 and IDE0030
-                        href: ../../fundamentals/code-analysis/style-rules/ide0029-ide0030.md
-                      - name: IDE0031
-                        href: ../../fundamentals/code-analysis/style-rules/ide0031.md
-                      - name: IDE0041
-                        href: ../../fundamentals/code-analysis/style-rules/ide0041.md
-                      - name: IDE0150
-                        href: ../../fundamentals/code-analysis/style-rules/ide0150.md
-                      - name: IDE1005
-                        href: ../../fundamentals/code-analysis/style-rules/ide1005.md
-                  - name: var preferences
-                    items:
-                      - name: IDE0007 and IDE0008
-                        href: ../../fundamentals/code-analysis/style-rules/ide0007-ide0008.md
-                  - name: Expression-bodied members
-                    items:
-                      - name: Overview
-                        href: ../../fundamentals/code-analysis/style-rules/expression-bodied-members.md
-                      - name: IDE0021
-                        href: ../../fundamentals/code-analysis/style-rules/ide0021.md
-                      - name: IDE0022
-                        href: ../../fundamentals/code-analysis/style-rules/ide0022.md
-                      - name: IDE0023 and IDE0024
-                        href: ../../fundamentals/code-analysis/style-rules/ide0023-ide0024.md
-                      - name: IDE0025
-                        href: ../../fundamentals/code-analysis/style-rules/ide0025.md
-                      - name: IDE0026
-                        href: ../../fundamentals/code-analysis/style-rules/ide0026.md
-                      - name: IDE0027
-                        href: ../../fundamentals/code-analysis/style-rules/ide0027.md
-                      - name: IDE0053
-                        href: ../../fundamentals/code-analysis/style-rules/ide0053.md
-                      - name: IDE0061
-                        href: ../../fundamentals/code-analysis/style-rules/ide0061.md
-                  - name: Pattern matching preferences
-                    items:
-                      - name: Overview
-                        href: ../../fundamentals/code-analysis/style-rules/pattern-matching-preferences.md
-                      - name: IDE0019
-                        href: ../../fundamentals/code-analysis/style-rules/ide0019.md
-                      - name: IDE0020 and IDE0038
-                        href: ../../fundamentals/code-analysis/style-rules/ide0020-ide0038.md
-                      - name: IDE0066
-                        href: ../../fundamentals/code-analysis/style-rules/ide0066.md
-                      - name: IDE0078
-                        href: ../../fundamentals/code-analysis/style-rules/ide0078.md
-                      - name: IDE0083
-                        href: ../../fundamentals/code-analysis/style-rules/ide0083.md
-                      - name: IDE0084
-                        href: ../../fundamentals/code-analysis/style-rules/ide0084.md
-                      - name: IDE0170
-                        href: ../../fundamentals/code-analysis/style-rules/ide0170.md
-                  - name: Code-block preferences
-                    items:
-                      - name: Overview
-                        href: ../../fundamentals/code-analysis/style-rules/code-block-preferences.md
-                      - name: IDE0011
-                        href: ../../fundamentals/code-analysis/style-rules/ide0011.md
-                      - name: IDE0063
-                        href: ../../fundamentals/code-analysis/style-rules/ide0063.md
-                      - name: IDE0210
-                        href: ../../fundamentals/code-analysis/style-rules/ide0210.md
-                      - name: IDE0211
-                        href: ../../fundamentals/code-analysis/style-rules/ide0211.md
-                  - name: using directive preferences
-                    items:
-                      - name: IDE0065
-                        href: ../../fundamentals/code-analysis/style-rules/ide0065.md
-                  - name: File header preferences
-                    items:
-                      - name: IDE0073
-                        href: ../../fundamentals/code-analysis/style-rules/ide0073.md
-                  - name: Namespace naming preferences
-                    items:
-                      - name: IDE0130
-                        href: ../../fundamentals/code-analysis/style-rules/ide0130.md
-              - name: Unnecessary code rules
-                items:
-                  - name: Overview
-                    href: ../../fundamentals/code-analysis/style-rules/unnecessary-code-rules.md
                   - name: IDE0001
                     href: ../../fundamentals/code-analysis/style-rules/ide0001.md
                   - name: IDE0002
                     href: ../../fundamentals/code-analysis/style-rules/ide0002.md
+                  - name: IDE0003 and IDE0009
+                    href: ../../fundamentals/code-analysis/style-rules/ide0003-ide0009.md
                   - name: IDE0004
                     href: ../../fundamentals/code-analysis/style-rules/ide0004.md
                   - name: IDE0005
                     href: ../../fundamentals/code-analysis/style-rules/ide0005.md
+                  - name: IDE0007 and IDE0008
+                    href: ../../fundamentals/code-analysis/style-rules/ide0007-ide0008.md
+                  - name: IDE0010
+                    href: ../../fundamentals/code-analysis/style-rules/ide0010.md
+                  - name: IDE0011
+                    href: ../../fundamentals/code-analysis/style-rules/ide0011.md
+                  - name: IDE0016
+                    href: ../../fundamentals/code-analysis/style-rules/ide0016.md
+                  - name: IDE0017
+                    href: ../../fundamentals/code-analysis/style-rules/ide0017.md
+                  - name: IDE0018
+                    href: ../../fundamentals/code-analysis/style-rules/ide0018.md
+                  - name: IDE0019
+                    href: ../../fundamentals/code-analysis/style-rules/ide0019.md
+                  - name: IDE0020 and IDE0038
+                    href: ../../fundamentals/code-analysis/style-rules/ide0020-ide0038.md
+                  - name: IDE0021
+                    href: ../../fundamentals/code-analysis/style-rules/ide0021.md
+                  - name: IDE0022
+                    href: ../../fundamentals/code-analysis/style-rules/ide0022.md
+                  - name: IDE0023 and IDE0024
+                    href: ../../fundamentals/code-analysis/style-rules/ide0023-ide0024.md
+                  - name: IDE0025
+                    href: ../../fundamentals/code-analysis/style-rules/ide0025.md
+                  - name: IDE0026
+                    href: ../../fundamentals/code-analysis/style-rules/ide0026.md
+                  - name: IDE0027
+                    href: ../../fundamentals/code-analysis/style-rules/ide0027.md
+                  - name: IDE0028
+                    href: ../../fundamentals/code-analysis/style-rules/ide0028.md
+                  - name: IDE0029 and IDE0030
+                    href: ../../fundamentals/code-analysis/style-rules/ide0029-ide0030.md
+                  - name: IDE0031
+                    href: ../../fundamentals/code-analysis/style-rules/ide0031.md
+                  - name: IDE0032
+                    href: ../../fundamentals/code-analysis/style-rules/ide0032.md
+                  - name: IDE0033
+                    href: ../../fundamentals/code-analysis/style-rules/ide0033.md
+                  - name: IDE0034
+                    href: ../../fundamentals/code-analysis/style-rules/ide0034.md
                   - name: IDE0035
                     href: ../../fundamentals/code-analysis/style-rules/ide0035.md
+                  - name: IDE0036
+                    href: ../../fundamentals/code-analysis/style-rules/ide0036.md
+                  - name: IDE0037
+                    href: ../../fundamentals/code-analysis/style-rules/ide0037.md
+                  - name: IDE0039
+                    href: ../../fundamentals/code-analysis/style-rules/ide0039.md
+                  - name: IDE0040
+                    href: ../../fundamentals/code-analysis/style-rules/ide0040.md
+                  - name: IDE0041
+                    href: ../../fundamentals/code-analysis/style-rules/ide0041.md
+                  - name: IDE0042
+                    href: ../../fundamentals/code-analysis/style-rules/ide0042.md
+                  - name: IDE0044
+                    href: ../../fundamentals/code-analysis/style-rules/ide0044.md
+                  - name: IDE0045
+                    href: ../../fundamentals/code-analysis/style-rules/ide0045.md
+                  - name: IDE0046
+                    href: ../../fundamentals/code-analysis/style-rules/ide0046.md
+                  - name: IDE0047 and IDE0048
+                    href: ../../fundamentals/code-analysis/style-rules/ide0047-ide0048.md
+                  - name: IDE0049
+                    href: ../../fundamentals/code-analysis/style-rules/ide0049.md
+                  - name: IDE0050
+                    href: ../../fundamentals/code-analysis/style-rules/ide0050.md
                   - name: IDE0051
                     href: ../../fundamentals/code-analysis/style-rules/ide0051.md
                   - name: IDE0052
                     href: ../../fundamentals/code-analysis/style-rules/ide0052.md
+                  - name: IDE0053
+                    href: ../../fundamentals/code-analysis/style-rules/ide0053.md
+                  - name: IDE0054
+                    href: ../../fundamentals/code-analysis/style-rules/ide0054-ide0074.md
+                  - name: IDE0056
+                    href: ../../fundamentals/code-analysis/style-rules/ide0056.md
+                  - name: IDE0057
+                    href: ../../fundamentals/code-analysis/style-rules/ide0057.md
                   - name: IDE0058
                     href: ../../fundamentals/code-analysis/style-rules/ide0058.md
                   - name: IDE0059
                     href: ../../fundamentals/code-analysis/style-rules/ide0059.md
                   - name: IDE0060
                     href: ../../fundamentals/code-analysis/style-rules/ide0060.md
+                  - name: IDE0061
+                    href: ../../fundamentals/code-analysis/style-rules/ide0061.md
+                  - name: IDE0062
+                    href: ../../fundamentals/code-analysis/style-rules/ide0062.md
+                  - name: IDE0063
+                    href: ../../fundamentals/code-analysis/style-rules/ide0063.md
+                  - name: IDE0064
+                    href: ../../fundamentals/code-analysis/style-rules/ide0064.md
+                  - name: IDE0065
+                    href: ../../fundamentals/code-analysis/style-rules/ide0065.md
+                  - name: IDE0066
+                    href: ../../fundamentals/code-analysis/style-rules/ide0066.md
+                  - name: IDE0070
+                    href: ../../fundamentals/code-analysis/style-rules/ide0070.md
+                  - name: IDE0071
+                    href: ../../fundamentals/code-analysis/style-rules/ide0071.md
+                  - name: IDE0072
+                    href: ../../fundamentals/code-analysis/style-rules/ide0072.md
+                  - name: IDE0073
+                    href: ../../fundamentals/code-analysis/style-rules/ide0073.md
+                  - name: IDE0074
+                    href: ../../fundamentals/code-analysis/style-rules/ide0054-ide0074.md
+                  - name: IDE0075
+                    href: ../../fundamentals/code-analysis/style-rules/ide0075.md
+                  - name: IDE0078
+                    href: ../../fundamentals/code-analysis/style-rules/ide0078.md
                   - name: IDE0079
                     href: ../../fundamentals/code-analysis/style-rules/ide0079.md
                   - name: IDE0080
                     href: ../../fundamentals/code-analysis/style-rules/ide0080.md
                   - name: IDE0081
                     href: ../../fundamentals/code-analysis/style-rules/ide0081.md
+                  - name: IDE0082
+                    href: ../../fundamentals/code-analysis/style-rules/ide0082.md
+                  - name: IDE0083
+                    href: ../../fundamentals/code-analysis/style-rules/ide0083.md
+                  - name: IDE0084
+                    href: ../../fundamentals/code-analysis/style-rules/ide0084.md
+                  - name: IDE0090
+                    href: ../../fundamentals/code-analysis/style-rules/ide0090.md
                   - name: IDE0100
                     href: ../../fundamentals/code-analysis/style-rules/ide0100.md
                   - name: IDE0110
                     href: ../../fundamentals/code-analysis/style-rules/ide0110.md
                   - name: IDE0120
                     href: ../../fundamentals/code-analysis/style-rules/ide0120.md
+                  - name: IDE0130
+                    href: ../../fundamentals/code-analysis/style-rules/ide0130.md
                   - name: IDE0140
                     href: ../../fundamentals/code-analysis/style-rules/ide0140.md
+                  - name: IDE0150
+                    href: ../../fundamentals/code-analysis/style-rules/ide0150.md
+                  - name: IDE0160 and IDE0161
+                    href: ../../fundamentals/code-analysis/style-rules/ide0160-ide0161.md
+                  - name: IDE0170
+                    href: ../../fundamentals/code-analysis/style-rules/ide0170.md
+                  - name: IDE0180
+                    href: ../../fundamentals/code-analysis/style-rules/ide0180.md
                   - name: IDE0200
                     href: ../../fundamentals/code-analysis/style-rules/ide0200.md
+                  - name: IDE0210
+                    href: ../../fundamentals/code-analysis/style-rules/ide0210.md
+                  - name: IDE0211
+                    href: ../../fundamentals/code-analysis/style-rules/ide0211.md
+                  - name: IDE0220
+                    href: ../../fundamentals/code-analysis/style-rules/ide0220.md
+                  - name: IDE0230
+                    href: ../../fundamentals/code-analysis/style-rules/ide0230.md
+                  - name: IDE1005
+                    href: ../../fundamentals/code-analysis/style-rules/ide1005.md
               - name: Miscellaneous rules
                 items:
                   - name: Overview

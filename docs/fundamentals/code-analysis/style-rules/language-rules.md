@@ -21,9 +21,9 @@ This category also includes rules that identify parts of the code base that are 
 
 The language rules fall into the following categories:
 
-- [.NET style rules](#net-style-rules): Rules that apply to both C# and Visual Basic. The option names for these rules start with the prefix `dotnet_style_`.
-- [C# style rules](#c-style-rules): Rules that are specific to C# code. The option names for these rules start with the prefix `csharp_style_`.
-- [Visual Basic style rules](#visual-basic-style-rules): Rules that are specific to Visual Basic code. The option names for these rules start with the prefix `visual_basic_style_`.
+- .NET style rules: Rules that apply to both C# and Visual Basic. The option names for these rules start with the prefix `dotnet_style_`.
+- C# style rules: Rules that are specific to C# code. The option names for these rules start with the prefix `csharp_style_`.
+- Visual Basic style rules: Rules that are specific to Visual Basic code. The option names for these rules start with the prefix `visual_basic_style_`.
 
 ## Option format
 
@@ -73,18 +73,18 @@ Language and unnecessary code rules are further categorized into subcategories, 
 
 ### `using` directive preferences
 
-C# and Visual Basic:
+.NET style rules (C# and Visual Basic):
 
 - [Require file header (IDE0073)](ide0073.md)
 
-C# only:
+C# style rules:
 
 - [Remove unnecessary using directives (IDE0005)](ide0005.md)
 - ['using' directive placement (IDE0065)](ide0065.md)
 
 ### Code-block preferences
 
-C# only:
+C# style rules:
 
 - [Add braces (IDE0011)](ide0011.md)
 - [Use simple 'using' statement (IDE0063)](ide0063.md)
@@ -96,7 +96,7 @@ C# only:
 
 ### Expression-bodied members
 
-C# only:
+C# style rules:
 
 - [Use expression body for constructors (IDE0021)](ide0021.md)
 - [Use expression body for methods (IDE0022)](ide0022.md)
@@ -110,7 +110,7 @@ C# only:
 
 ### Expression-level preferences
 
-C# and Visual Basic:
+.NET style rules (C# and Visual Basic):
 
 - [Simplify name (IDE0001)](ide0001.md)
 - [Simplify member access (IDE0002)](ide0002.md)
@@ -143,7 +143,7 @@ C# and Visual Basic:
 - [Simplify LINQ expression (IDE0120)](ide0120.md)
 - [Namespace does not match folder structure (IDE0130)](ide0130.md)
 
-C# only:
+C# style rules:
 
 - [Use throw expression (IDE0016)](ide0016.md)
 - [Inline variable declaration (IDE0018)](ide0018.md)
@@ -161,7 +161,7 @@ C# only:
 - [Add explicit cast in foreach loop (IDE0220)](ide0220.md)
 - [Use UTF-8 string literal (IDE0230)](ide0230.md)
 
-Visual Basic only:
+Visual Basic style rules:
 
 - [Remove `ByVal` (IDE0081)](ide0081.md)
 - [Use pattern matching (`IsNot` operator) (IDE0084)](ide0084.md)
@@ -169,24 +169,24 @@ Visual Basic only:
 
 ### Field preferences
 
-C# and Visual Basic:
+.NET style rules (C# and Visual Basic):
 
 - [Add readonly modifier (IDE0044)](ide0044.md)
 
 ### Language keyword vs. framework types preferences
 
-C# and Visual Basic:
+.NET style rules (C# and Visual Basic):
 
 - [Use language keywords instead of framework type names for type references (IDE0049)](ide0049.md)
 
 ### Modifier preferences
 
-C# and Visual Basic:
+.NET style rules (C# and Visual Basic):
 
 - [Order modifiers (IDE0036)](ide0036.md)
 - [Add accessibility modifiers (IDE0040)](ide0040.md)
 
-C# only:
+C# style rules:
 
 - [Make local function static (IDE0062)](ide0062.md)
 - [Make struct fields writable (IDE0064)](ide0064.md)
@@ -203,26 +203,26 @@ C# only:
 
 ### Null-checking preferences
 
-C# only:
+C# style rules:
 
 - [Use conditional delegate call (IDE1005)](ide1005.md)
 
 ### Parameter preferences
 
-C# and Visual Basic:
+.NET style rules (C# and Visual Basic):
 
 - [Remove unused parameter (IDE0060)](ide0060.md)
 
 ### Parentheses preferences
 
-C# and Visual Basic:
+.NET style rules (C# and Visual Basic):
 
 - [Parentheses preferences (IDE0047)](ide0047-ide0048.md)
 - [Parentheses preferences (IDE0048)](ide0047-ide0048.md)
 
 ### Pattern-matching preferences
 
-C# only:
+C# style rules:
 
 - [Use pattern matching to avoid 'as' followed by 'null' check (IDE0019)](ide0019.md)
 - [Use pattern matching to avoid 'is' check followed by a cast (IDE0020)](ide0020-ide0038.md)
@@ -234,20 +234,20 @@ C# only:
 
 ### Suppression preferences
 
-C# and Visual Basic:
+.NET style rules (C# and Visual Basic):
 
 - [Remove unnecessary suppression (IDE0079)](ide0079.md)
 
 ### `This.` and `me.` preferences
 
-C# and Visual Basic:
+.NET style rules (C# and Visual Basic):
 
 - [this and Me preferences (IDE0003)](ide0003-ide0009.md)
 - [this and Me preferences (IDE0009)](ide0003-ide0009.md)
 
 ### `var` preferences
 
-C# only:
+C# style rules:
 
 - ['var' preferences (IDE0007)](ide0007-ide0008.md)
 - ['var' preferences (IDE0008)](ide0007-ide0008.md)

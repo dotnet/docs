@@ -160,6 +160,8 @@ C# style rules:
 - [Use tuple to swap values (IDE0180)](ide0180.md)
 - [Add explicit cast in foreach loop (IDE0220)](ide0220.md)
 - [Use UTF-8 string literal (IDE0230)](ide0230.md)
+- [Nullable directive is redundant (IDE0240)](ide0240.md)
+- [Nullable directive is unnecessary (IDE0241)](ide0241.md)
 
 Visual Basic style rules:
 

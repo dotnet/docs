@@ -1,253 +1,17 @@
 ---
-title: "Common C# Coding Conventions"
-description: Learn about commonly used coding conventions in C#. Coding conventions create a consistent look to the code and facilitate copying, changing, and maintaining the code.
-ms.date: 07/16/2021
-helpviewer_keywords:
+title: ".NET documentation C# Coding Conventions"
+description: Learn about commonly used coding conventions in C#. Coding conventions create a consistent look to the code and facilitate copying, changing, and maintaining the code. This article also includes the docs repo coding guidelines
+ms.date: 07/24/2023
+helpviewer_keyword:
   - "coding conventions, C#"
   - "Visual C#, coding conventions"
   - "C# language, coding conventions"
 ---
 
-# Common C# Coding Conventions
-
-Coding conventions serve the following purposes:
-
-> [!div class="checklist"]
->
-> - They create a consistent look to the code, so that readers can focus on content, not layout.
-> - They enable readers to understand the code more quickly by making assumptions based on previous experience.
-> - They facilitate copying, changing, and maintaining the code.
-> - They demonstrate C# best practices.
+# Common C# coding conventions
 
 > [!IMPORTANT]
 > The guidelines in this article are used by Microsoft to develop samples and documentation. They were adopted from the [.NET Runtime, C# Coding Style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md) guidelines. You can use them, or adapt them to your needs. They are meant to be an example of common C# conventions, and not an authoritative list (see [Framework Design Guidelines](../../../standard/design-guidelines/index.md) for that). The primary objectives are consistency and readability within your project, team, organization, or company source code.
-
-## Naming conventions
-
-There are several naming conventions to consider when writing C# code.
-
-In the following examples, any of the guidance pertaining to elements marked `public` is also applicable when working with `protected` and `protected internal` elements, all of which are  intended to be visible to external callers.
-
-### Pascal case
-
-Use pascal casing ("PascalCasing") when naming a `class`, `record`, or `struct`.
-
-```csharp
-public class DataService
-{
-}
-```
-
-```csharp
-public record PhysicalAddress(
-    string Street,
-    string City,
-    string StateOrProvince,
-    string ZipCode);
-```
-
-```csharp
-public struct ValueCoordinate
-{
-}
-```
-
-When naming an `interface`, use pascal casing in addition to prefixing the name with an `I`. This clearly indicates to consumers that it's an `interface`.
-
-```csharp
-public interface IWorkerQueue
-{
-}
-```
-
-When naming `public` members of types, such as fields, properties, events, methods, and local functions, use pascal casing.
-
-```csharp
-public class ExampleEvents
-{
-    // A public field, these should be used sparingly
-    public bool IsValid;
-
-    // An init-only property
-    public IWorkerQueue WorkerQueue { get; init; }
-
-    // An event
-    public event Action EventProcessing;
-
-    // Method
-    public void StartEventProcessing()
-    {
-        // Local function
-        static int CountQueueItems() => WorkerQueue.Count;
-        // ...
-    }
-}
-```
-
-When writing positional records, use pascal casing for parameters as they're the public properties of the record.
-
-```csharp
-public record PhysicalAddress(
-    string Street,
-    string City,
-    string StateOrProvince,
-    string ZipCode);
-```
-
-For more information on positional records, see [Positional syntax for property definition](../../language-reference/builtin-types/record.md#positional-syntax-for-property-definition).
-
-### Camel case
-
-Use camel casing ("camelCasing") when naming `private` or `internal` fields, and prefix them with `_`.
-
-```csharp
-public class DataService
-{
-    private IWorkerQueue _workerQueue;
-}
-```
-
-> [!TIP]
-> When editing C# code that follows these naming conventions in an IDE that supports statement completion, typing `_` will show all of the object-scoped members.
-
-When working with `static` fields that are `private` or `internal`, use the `s_` prefix and for thread static use `t_`.
-
-```csharp
-public class DataService
-{
-    private static IWorkerQueue s_workerQueue;
-
-    [ThreadStatic]
-    private static TimeSpan t_timeSpan;
-}
-```
-
-When writing method parameters, use camel casing.
-
-```csharp
-public T SomeMethod<T>(int someNumber, bool isValid)
-{
-}
-```
-
-For more information on C# naming conventions, see [C# Coding Style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md).
-
-### Additional naming conventions
-
-- Examples that don't include [using directives](../../language-reference/keywords/using-directive.md), use namespace qualifications. If you know that a namespace is imported by default in a project, you don't have to fully qualify the names from that namespace. Qualified names can be broken after a dot (.) if they are too long for a single line, as shown in the following example.
-
-  :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet1":::
-
-- You don't have to change the names of objects that were created by using the Visual Studio designer tools to make them fit other guidelines.
-
-## Layout conventions
-
-Good layout uses formatting to emphasize the structure of your code and to make the code easier to read. Microsoft examples and samples conform to the following conventions:
-
-- Use the default Code Editor settings (smart indenting, four-character indents, tabs saved as spaces). For more information, see [Options, Text Editor, C#, Formatting](/visualstudio/ide/reference/options-text-editor-csharp-formatting).
-
-- Write only one statement per line.
-- Write only one declaration per line.
-- If continuation lines are not indented automatically, indent them one tab stop (four spaces).
-- Add at least one blank line between method definitions and property definitions.
-- Use parentheses to make clauses in an expression apparent, as shown in the following code.
-
-  :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet2":::
-  
-## Place the using directives outside the namespace declaration
-
-When a `using` directive is outside a namespace declaration, that imported namespace is its fully qualified name. That's more clear. When the `using` directive is inside the namespace, it could be either relative to that namespace or it's fully qualified name. That's ambiguous.
-
-```csharp
-using Azure;
-
-namespace CoolStuff.AwesomeFeature
-{
-    public class Awesome
-    {
-        public void Stuff()
-        {
-            WaitUntil wait = WaitUntil.Completed;
-            …
-        }
-    }
-}
-```
-
-Assuming there is a reference (direct, or indirect) to the <xref:Azure.WaitUntil> class.
-
-Now, let's change it slightly:
-
-```csharp
-namespace CoolStuff.AwesomeFeature
-{
-    using Azure;
-    
-    public class Awesome
-    {
-        public void Stuff()
-        {
-            WaitUntil wait = WaitUntil.Completed;
-            …
-        }
-    }
-}
-```
-
-And it compiles today. And tomorrow. But then sometime next week this (untouched) code fails with two errors:
-
-```console
-- error CS0246: The type or namespace name 'WaitUntil' could not be found (are you missing a using directive or an assembly reference?)
-- error CS0103: The name 'WaitUntil' does not exist in the current context
-```
-
-One of the dependencies has introduced this class in a namespace then ends with `.Azure`:
-
-```csharp
-namespace CoolStuff.Azure
-{
-    public class SecretsManagement
-    {
-        public string FetchFromKeyVault(string vaultId, string secretId) { return null; }
-    }
-}
-```
-
-A `using` directive placed inside a namespace is context-sensitive and complicates name resolution. In this example, it's the first namespace that it finds.
-
-- `CoolStuff.AwesomeFeature.Azure`
-- `CoolStuff.Azure`
-- `Azure`
-
-Adding a new namespace that matches either `CoolStuff.Azure` or `CoolStuff.AwesomeFeature.Azure` would match before the global `Azure` namespace. You could resolve it by adding the `global::` modifier to the `using` declaration. However, it's easier to place `using` declarations outside the namespace instead.
-
-```csharp
-namespace CoolStuff.AwesomeFeature
-{
-    using global::Azure;
-    
-    public class Awesome
-    {
-        public void Stuff()
-        {
-            WaitUntil wait = WaitUntil.Completed;
-            …
-        }
-    }
-}
-```
-
-## Commenting conventions
-
-- Place the comment on a separate line, not at the end of a line of code.
-- Begin comment text with an uppercase letter.
-- End comment text with a period.
-- Insert one space between the comment delimiter (//) and the comment text, as shown in the following example.
-
-  :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet3":::
-
-- Don't create formatted blocks of asterisks around comments.
-- Ensure all public members have the necessary XML comments providing appropriate descriptions about their behavior.
 
 ## Language guidelines
 
@@ -264,6 +28,8 @@ The following sections describe practices that the C# team follows to prepare co
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet7":::
 
 ### Implicitly typed local variables
+
+
 
 - Use [implicit typing](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md) for local variables when the type of the variable is obvious from the right side of the assignment, or when the precise type is not important.
 
@@ -426,6 +192,115 @@ Call [static](../../language-reference/keywords/static.md) members by using the 
 
 Follow the guidelines in [Secure Coding Guidelines](../../../standard/security/secure-coding-guidelines.md).
 
+## Place the using directives outside the namespace declaration
+
+When a `using` directive is outside a namespace declaration, that imported namespace is its fully qualified name. That's more clear. When the `using` directive is inside the namespace, it could be either relative to that namespace or it's fully qualified name. That's ambiguous.
+
+```csharp
+using Azure;
+
+namespace CoolStuff.AwesomeFeature
+{
+    public class Awesome
+    {
+        public void Stuff()
+        {
+            WaitUntil wait = WaitUntil.Completed;
+            …
+        }
+    }
+}
+```
+
+Assuming there is a reference (direct, or indirect) to the <xref:Azure.WaitUntil> class.
+
+Now, let's change it slightly:
+
+```csharp
+namespace CoolStuff.AwesomeFeature
+{
+    using Azure;
+    
+    public class Awesome
+    {
+        public void Stuff()
+        {
+            WaitUntil wait = WaitUntil.Completed;
+            …
+        }
+    }
+}
+```
+
+And it compiles today. And tomorrow. But then sometime next week this (untouched) code fails with two errors:
+
+```console
+- error CS0246: The type or namespace name 'WaitUntil' could not be found (are you missing a using directive or an assembly reference?)
+- error CS0103: The name 'WaitUntil' does not exist in the current context
+```
+
+One of the dependencies has introduced this class in a namespace then ends with `.Azure`:
+
+```csharp
+namespace CoolStuff.Azure
+{
+    public class SecretsManagement
+    {
+        public string FetchFromKeyVault(string vaultId, string secretId) { return null; }
+    }
+}
+```
+
+A `using` directive placed inside a namespace is context-sensitive and complicates name resolution. In this example, it's the first namespace that it finds.
+
+- `CoolStuff.AwesomeFeature.Azure`
+- `CoolStuff.Azure`
+- `Azure`
+
+Adding a new namespace that matches either `CoolStuff.Azure` or `CoolStuff.AwesomeFeature.Azure` would match before the global `Azure` namespace. You could resolve it by adding the `global::` modifier to the `using` declaration. However, it's easier to place `using` declarations outside the namespace instead.
+
+```csharp
+namespace CoolStuff.AwesomeFeature
+{
+    using global::Azure;
+    
+    public class Awesome
+    {
+        public void Stuff()
+        {
+            WaitUntil wait = WaitUntil.Completed;
+            …
+        }
+    }
+}
+```
+
+## Commenting conventions
+
+- Place the comment on a separate line, not at the end of a line of code.
+- Begin comment text with an uppercase letter.
+- End comment text with a period.
+- Insert one space between the comment delimiter (//) and the comment text, as shown in the following example.
+
+  :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet3":::
+
+- Don't create formatted blocks of asterisks around comments.
+- Ensure all public members have the necessary XML comments providing appropriate descriptions about their behavior.
+
+## Layout conventions
+
+Good layout uses formatting to emphasize the structure of your code and to make the code easier to read. Microsoft examples and samples conform to the following conventions:
+
+- Use the default Code Editor settings (smart indenting, four-character indents, tabs saved as spaces). For more information, see [Options, Text Editor, C#, Formatting](/visualstudio/ide/reference/options-text-editor-csharp-formatting).
+
+- Write only one statement per line.
+- Write only one declaration per line.
+- If continuation lines are not indented automatically, indent them one tab stop (four spaces).
+- Add at least one blank line between method definitions and property definitions.
+- Use parentheses to make clauses in an expression apparent, as shown in the following code.
+
+  :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet2":::
+  
 ## See also
 
 - [.NET runtime coding guidelines](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md)

@@ -65,7 +65,7 @@ ICU provides the flexibility to create <xref:System.TimeZoneInfo> instances usin
 
 .NET introduced APIs that are dependent on ICU. These APIs can succeed only when using ICU. Here are some examples:
 
-- <xref:System.TimeZoneInfo.TryConvertIanaIdToWindowsId(System.String,System.String)>
+- <xref:System.TimeZoneInfo.TryConvertIanaIdToWindowsId(System.String,System.String@)>
 - <xref:System.TimeZoneInfo.TryConvertWindowsIdToIanaId%2A>
 
 On Windows 10 May 2019 Update or any later versions, the mentioned APIs will consistently succeed. However, on older versions of Windows, these APIs will consistently fail. In such cases, you can enable the [app-local ICU](#app-local-icu) feature to ensure the success of these APIs. On non-Windows platforms, these APIs will always succeed regardless of the version.

@@ -64,8 +64,9 @@ ICU provides the flexibility to create TimeZoneInfo instances using [IANA](https
 #### ICU dependent APIs
 
 .NET introduced APIs that are dependent on ICU. These APIs can succeed only when using ICU. Here are some examples:
-- (TryConvertIanaIdToWindowsId)(https://learn.microsoft.com//dotnet/api/system.timezoneinfo.tryconvertianaidtowindowsid)
-- (TryConvertWindowsIdToIanaId)(https://learn.microsoft.com//dotnet/api/system.timezoneinfo.tryconvertwindowsidtoianaid)
+
+- [TryConvertIanaIdToWindowsId](https://learn.microsoft.com//dotnet/api/system.timezoneinfo.tryconvertianaidtowindowsid)
+- [TryConvertWindowsIdToIanaId](https://learn.microsoft.com//dotnet/api/system.timezoneinfo.tryconvertwindowsidtoianaid)
 
 If the application is running on Windows 10 May 2019 Update or any newer versions, the mentioned APIs will consistently succeed. However, on older versions of Windows, these APIs will consistently fail. In such cases, users have the option to enable the [App-local ICU](https://learn.microsoft.com/en-us/dotnet/core/extensions/globalization-icu#app-local-icu) feature to ensure the success of these APIs. On non-Windows platforms, these APIs will always succeed regardless of the version.
 

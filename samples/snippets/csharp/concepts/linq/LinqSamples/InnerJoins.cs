@@ -70,12 +70,14 @@ public static class InnerJoins
             new("Daisy", magnus),
         };
 
+        // <inner_joins_method_syntax_1>
         var query =
             people.Join(pets,
                         person => person,
                         pet => pet.Owner,
                         (person, pet) =>
                             new { OwnerName = person.FirstName, PetName = pet.Name });
+        // </inner_joins_method_syntax_1>
 
         string result = "";
         foreach (var ownerAndPet in query)
@@ -153,12 +155,14 @@ public static class InnerJoins
             new("Terry", "Adams", 9913)
         };
 
+        // <inner_joins_method_syntax_2>
         var query = employees.Join(
              students,
              employee => new {FirstName = employee.FirstName, LastName = employee.LastName },
              student => new { FirstName = student.FirstName, student.LastName },
              (employee, student) => $"{employee.FirstName} {employee.LastName}"
          );
+        // </inner_joins_method_syntax_2>
 
         string result = "";
         result += "The following people are both employees and students:\r\n";
@@ -267,6 +271,7 @@ public static class InnerJoins
             new("Snickers", arlene),
         };
 
+        // <inner_joins_method_syntax_3>
         var query = people.Join(cats,
                 person => person,
                 cat => cat.Owner,
@@ -275,6 +280,7 @@ public static class InnerJoins
                 commonOwner => new { Owner = commonOwner.person, Letter = commonOwner.cat.Name.Substring(0, 1) },
                 dog => new { dog.Owner, Letter = dog.Name.Substring(0, 1) },
                 (commonOwner, dog) => new { CatName = commonOwner.cat.Name, DogName = dog.Name });
+        // </inner_joins_method_syntax_3>
 
         string result = "";
         foreach (var obj in query)
@@ -374,12 +380,14 @@ public static class InnerJoins
             new("Daisy", magnus),
         };
 
+        // <inner_joins_method_syntax_4>
         var query1 = people.GroupJoin(pets,
                 person => person,
                 pet => pet.Owner,
                 (person, gj) => new { person, gj })
             .SelectMany(pet => pet.gj,
                 (groupJoinPet, subpet) => new { OwnerName = groupJoinPet.person.FirstName, PetName = subpet.Name });
+        // </inner_joins_method_syntax_4>
 
         string result = "";
         result += "Inner join using GroupJoin():\r\n";
@@ -388,10 +396,12 @@ public static class InnerJoins
             result += $"{v.OwnerName} - {v.PetName}\r\n";
         }
 
+        // <inner_joins_method_syntax_5>
         var query2 = people.Join(pets,
             person => person,
             pet => pet.Owner,
             (person, pet) => new { OwnerName = person.FirstName, PetName = pet.Name });
+        // </inner_joins_method_syntax_5>
 
         result += "\r\nThe equivalent operation using Join():\r\n";
         foreach (var v in query2)

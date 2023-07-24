@@ -192,6 +192,8 @@ C# style rules:
 
 - [Make local function static (IDE0062)](ide0062.md)
 - [Make struct fields writable (IDE0064)](ide0064.md)
+- [Struct can be made 'readonly' (IDE0250)](ide0250.md)
+- [Member can be made 'readonly' (IDE0251)](ide0251.md)
 
 ### New-line preferences
 

@@ -36,7 +36,7 @@ dotnet_separate_import_directive_groups = true
 |--------------------------|-------------------------------------|--------------------------------------------------------------------------------------------------|
 | **Option name**          | dotnet_sort_system_directives_first |                                                                                                  |
 | **Applicable languages** | C# and Visual Basic                 |                                                                                                  |
-| **Introduced version**   | Visual Studio 2017 version 15.3     |                                                                                                  |
+| **Introduced version**   | Visual Studio 2017     |                                                                                                  |
 | **Option values**        | `true`                              | Sort `System.*` `using` directives alphabetically, and place them before other using directives. |
 |                          | `false`                             | Do not place `System.*` `using` directives before other `using` directives.                      |
 | **Default value**        | `true`                              |                                                                                                  |
@@ -61,7 +61,7 @@ using System.Threading.Tasks;
 |--------------------------|-----------------------------------------|-------------------------------------------------------------|
 | **Option name**          | dotnet_separate_import_directive_groups |                                                             |
 | **Applicable languages** | C# and Visual Basic                     |                                                             |
-| **Introduced version**   | Visual Studio 2017 version 15.5         |                                                             |
+| **Introduced version**   | Visual Studio 2017         |                                                             |
 | **Option values**        | `true`                                  | Place a blank line between `using` directive groups.        |
 |                          | `false`                                 | Do not place a blank line between `using` directive groups. |
 | **Default value**        | `false`                                 |                                                             |

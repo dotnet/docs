@@ -67,7 +67,7 @@ dotnet_diagnostic.CA1000.severity = warning
 
 ## Global AnalyzerConfig
 
-Starting with the .NET 5 SDK (which is supported in Visual Studio 2019 version 16.8 and later), you can also configure analyzer options with global _AnalyzerConfig_ files. These files are used to provide **options that apply to all the source files in a project**, regardless of their file names or file paths.
+Starting with the .NET 5 SDK (which is supported in Visual Studio 2019 and later), you can also configure analyzer options with global _AnalyzerConfig_ files. These files are used to provide **options that apply to all the source files in a project**, regardless of their file names or file paths.
 
 Unlike [EditorConfig](#editorconfig) files, global configuration files can't be used to configure editor style settings for IDEs, such as indent size or whether to trim trailing whitespace. Instead, they are designed purely for specifying project-level analyzer configuration options.
 

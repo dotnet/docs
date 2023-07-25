@@ -26,11 +26,11 @@ The `condition` expression must evaluate to `true` or `false`. If `condition` ev
 
 Beginning with C# 9.0, conditional expressions are target-typed. That is, if a target type of a conditional expression is known, the types of `consequent` and `alternative` must be implicitly convertible to the target type, as the following example shows:
 
-[!code-csharp[target-typed conditional](snippets/shared/ConditionalOperator.cs#TargetTyped)]
+:::code language="csharp" source="snippets/shared/ConditionalOperator.cs" id="TargetTyped":::
 
 If a target type of a conditional expression is unknown (for example, when you use the [`var`](../statements/declarations.md#implicitly-typed-local-variables) keyword) or the type of `consequent` and `alternative` must be the same or there must be an implicit conversion from one type to the other:
 
-[!code-csharp[not target-typed conditional](snippets/shared/ConditionalOperator.cs#NotTargetTyped)]
+:::code language="csharp" source="snippets/shared/ConditionalOperator.cs" id="NotTargetTyped":::
 
 The conditional operator is right-associative, that is, an expression of the form
 
@@ -53,7 +53,11 @@ a ? b : (c ? d : e)
 
 ## Conditional ref expression
 
-A [reference variable](../statements/declarations.md#reference-variables) can be assigned conditionally with a conditional ref expression. You can also use a conditional ref expression as a [reference return value](../keywords/ref.md#reference-return-values) or as a [`ref` method argument](../keywords/ref.md#passing-an-argument-by-reference).
+A conditional ref expression conditionally returns a variable reference, as the following example shows:
+
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ConditionalOperator.cs" id="ConditionalRef":::
+
+You can [`ref` assign](assignment-operator.md#ref-assignment) the result of a conditional ref expression, use it as a [reference return](../statements/jump-statements.md#ref-returns) or pass it as a [`ref`](../keywords/ref.md#passing-an-argument-by-reference), [`out`](../keywords/out-parameter-modifier.md), or [`in`](../keywords/in-parameter-modifier.md) method parameter. You can also assign to the result of a conditional ref expression, as the preceding example shows.
 
 The syntax for a conditional ref expression is as follows:
 
@@ -61,19 +65,15 @@ The syntax for a conditional ref expression is as follows:
 condition ? ref consequent : ref alternative
 ```
 
-Like the original conditional operator, a conditional ref expression evaluates only one of the two expressions: either `consequent` or `alternative`.
+Like the conditional operator, a conditional ref expression evaluates only one of the two expressions: either `consequent` or `alternative`.
 
 In a conditional ref expression, the type of `consequent` and `alternative` must be the same. Conditional ref expressions aren't target-typed.
-
-The following example demonstrates the usage of a conditional ref expression:
-
-[!code-csharp-interactive[conditional ref](snippets/shared/ConditionalOperator.cs#ConditionalRef)]
 
 ## Conditional operator and an `if` statement
 
 Use of the conditional operator instead of an [`if` statement](../statements/selection-statements.md#the-if-statement) might result in more concise code in cases when you need conditionally to compute a value. The following example demonstrates two ways to classify an integer as negative or nonnegative:
 
-[!code-csharp[conditional and if-else](snippets/shared/ConditionalOperator.cs#CompareWithIf)]
+:::code language="csharp" source="snippets/shared/ConditionalOperator.cs" id="CompareWithIf":::
 
 ## Operator overloadability
 

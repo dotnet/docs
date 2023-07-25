@@ -29,7 +29,7 @@ Smaller, less impactful line-of-business applications might fare well with a sim
 
 Then there are legacy systems. While we'd all like to build new applications, we're often responsible for modernizing legacy workloads that are critical to the business.
 
-### Modernizing legacy apps
+## Modernizing legacy apps
 
 The free Microsoft e-book [Modernize existing .NET applications with Azure cloud and Windows Containers](https://dotnet.microsoft.com/download/thank-you/modernizing-existing-net-apps-ebook) provides guidance about migrating on-premises workloads into cloud. Figure 1-10 shows that there isn't a single, one-size-fits-all strategy for modernizing legacy applications.
 
@@ -89,7 +89,7 @@ With the introduction behind, we now dive into a much more detailed look at clou
 
 - [What is Infrastructure as Code](/devops/deliver/what-is-infrastructure-as-code)
 
-- [Uber Engineering's Micro Deploy: Deploying Daily with Confidence](https://eng.uber.com/micro-deploy/)
+- [Uber Engineering's Micro Deploy: Deploying Daily with Confidence](https://www.uber.com/blog/micro-deploy-code/)
 
 - [How Netflix Deploys Code](https://www.infoq.com/news/2013/06/netflix/)
 

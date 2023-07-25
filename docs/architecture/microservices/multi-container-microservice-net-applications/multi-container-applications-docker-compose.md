@@ -427,7 +427,7 @@ The values set in the run-time environment always override the values defined in
     <https://docs.docker.com/compose/overview/>
 
 - **Multiple Compose files** \
-    [https://docs.docker.com/compose/extends/\#multiple-compose-files](https://docs.docker.com/compose/extends/#multiple-compose-files)
+    [https://docs.docker.com/compose/multiple-compose-files/](https://docs.docker.com/compose/multiple-compose-files/)
 
 ### Building optimized ASP.NET Core Docker images
 

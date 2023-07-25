@@ -114,10 +114,12 @@ In the [Register clients](#register-clients) section, you explicitly passed the 
 }
 ```
 
-You can add any properties from the <xref:Azure.Core.ClientOptions> class into the JSON file's `AzureDefaults` section. In the preceding JSON sample, the `AzureDefaults.Retry` object literal:
+You can add any properties from the <xref:Azure.Core.ClientOptions> class into the JSON file. In the preceding JSON sample:
 
-* Represents the retry policy configuration settings.
-* Corresponds to the <xref:Azure.Core.ClientOptions.Retry> property. Within that object literal, you find the `MaxRetries` key, which corresponds to the <xref:Azure.Core.RetryOptions.MaxRetries> property.
+* The `AzureDefaults` section name is used; however, that name is arbitrary.
+* The `AzureDefaults.Retry` object literal:
+  * Represents the retry policy configuration settings.
+  * Corresponds to the <xref:Azure.Core.ClientOptions.Retry> property. Within that object literal, you find the `MaxRetries` key, which corresponds to the <xref:Azure.Core.RetryOptions.MaxRetries> property.
 
 For more information, see [Configure a new retry policy](#configure-a-new-retry-policy).
 

@@ -183,6 +183,21 @@ See [EventPipe environment variables](../diagnostics/eventpipe.md#trace-using-en
 
 Specifies the location of the .NET runtimes, if they are not installed in the default location. The default location on Windows is `C:\Program Files\dotnet`. The default location on Linux and macOS is `/usr/local/share/dotnet`. This environment variable is used only when running apps via generated executables (apphosts). `DOTNET_ROOT(x86)` is used instead when running a 32-bit executable on a 64-bit OS.
 
+### `DOTNET_HOST_PATH`
+
+Specifies the absolute path to a `dotnet` binary (`dotnet.exe` on Windows, `dotnet` on non-Windows) that was used to launch this session. This is typically used by a hosting application that wants to ensure that the exact same version of the host binary is used for all child processes.
+
+Without this environment variable, if a `dotnet` binary was used from a location not on the `PATH`, child processes of that `dotnet` that wished to invoke `dotnet` would invoke a different `dotnet` binary than the one that was used to spawn them - this can result in confusing behavior for end users.
+
+As a tool author, if you want to locate the correct `dotnet` binary to use to spawn a .NET binary, you should use the following algorithm:
+
+* if `DOTNET_HOST_PATH` is set, use that value directly
+* otherwise, probe `PATH` according to the rules of your operating system to find the first `dotnet` binary on the `PATH`
+
+> [!NOTE]
+> Setting this environment variable can result in invoking a `dotnet` binary that is outside of your [`DOTNET_ROOT`](#dotnet_root-dotnet_rootx86) - consider setting both variables to ensure consistency of behavior.
+
+
 ### `NUGET_PACKAGES`
 
 The global packages folder. If not set, it defaults to `~/.nuget/packages` on Unix or `%userprofile%\.nuget\packages` on Windows.

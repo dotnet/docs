@@ -194,9 +194,10 @@ As a tool author, if you want to locate the correct `dotnet` binary to use to sp
 * if `DOTNET_HOST_PATH` is set, use that value directly
 * otherwise, probe `PATH` according to the rules of your operating system to find the first `dotnet` binary on the `PATH`
 
-> [!NOTE]
-> Setting this environment variable can result in invoking a `dotnet` binary that is outside of your [`DOTNET_ROOT`](#dotnet_root-dotnet_rootx86) - consider setting both variables to ensure consistency of behavior.
+This environment variable is set by default when the .NET SDK is invoked (typically by using `dotnet build`, `dotnet publish`, and so on). If your application needs to communicate the location of the `dotnet` binary that ran it in a similar way to the SDK, you should also set this environment variable.
 
+> [!NOTE]
+> This environment variable will not be set for apphost-based execution (applications that are directly launched via a binary like `myapp.exe` or `myapp`) instead of through the `dotnet` binary (like `dotnet myapp.dll`). In such cases, the spawned applications should locate `dotnet` via the `PATH` as described above.
 
 ### `NUGET_PACKAGES`
 

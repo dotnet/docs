@@ -11,9 +11,6 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.UseCredential(new DefaultAzureCredential());
 });
 
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
 WebApplication app = builder.Build();
 #endregion snippet_WebApplicationBuilder
 

@@ -232,7 +232,7 @@ C# style rules:
 - [Use pattern matching to avoid 'is' check followed by a cast (IDE0020)](ide0020-ide0038.md)
 - [Use pattern matching to avoid 'is' check followed by a cast (IDE0038)](ide0020-ide0038.md)
 - [Use switch expression (IDE0066)](ide0066.md)
-- [Use pattern matching (IDE0078)](ide0078.md)
+- [Use pattern matching (IDE0078 and IDE0260)](ide0078-ide0260.md)
 - [Use pattern matching (`not` operator) (IDE0083)](ide0083.md)
 - [Simplify property pattern (IDE0170)](ide0170.md)
 

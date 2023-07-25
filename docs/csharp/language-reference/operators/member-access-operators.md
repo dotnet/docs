@@ -103,7 +103,7 @@ void TraceMethod() {}
 
 ## Null-conditional operators `?.` and `?[]`
 
-A null-conditional operator applies a [member access](#member-access-expression-), `?.`, or [element access](#indexer-operator-), `?[]`, operation to its operand only if that operand evaluates to non-null; otherwise, it returns `null`. That is,
+A null-conditional operator applies a [member access](#member-access-expression-) (`?.`) or [element access](#indexer-operator-) (`?[]`) operation to its operand only if that operand evaluates to non-null; otherwise, it returns `null`. That is:
 
 - If `a` evaluates to `null`, the result of `a?.x` or `a?[x]` is `null`.
 - If `a` evaluates to non-null, the result of `a?.x` or `a?[x]` is the same as the result of `a.x` or `a[x]`, respectively.

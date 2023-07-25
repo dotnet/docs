@@ -114,15 +114,7 @@ In the [Register clients](#register-clients) section, you explicitly passed the 
 }
 ```
 
-You can add any properties from the <xref:Azure.Core.ClientOptions> class into the JSON file. In the preceding JSON sample:
-
-* The top-level key names, `AzureDefaults`, `KeyVault`, and `Storage`, are arbitrary. All other key names hold significance, and JSON serialization is performed in a case-insensitive manner.
-* The `AzureDefaults.Retry` object literal:
-  * Represents the [retry policy configuration settings](#configure-a-new-retry-policy).
-  * Corresponds to the <xref:Azure.Core.ClientOptions.Retry> property. Within that object literal, you find the `MaxRetries` key, which corresponds to the <xref:Azure.Core.RetryOptions.MaxRetries> property.
-* The `KeyVault:VaultUri` and `Storage:ServiceUri` key values map to the `Uri`-typed arguments of the <xref:Azure.Security.KeyVault.Secrets.SecretClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Security.KeyVault.Secrets.SecretClientOptions)?displayProperty=fullName> and <xref:Azure.Storage.Blobs.BlobServiceClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)?displayProperty=fullName> constructor overloads, respectively.
-
-The settings in the JSON configuration file can be retrieved using <xref:Microsoft.Extensions.Configuration.IConfiguration>.
+You can add any properties from the <xref:Azure.Core.ClientOptions> class into the JSON file. The settings in the JSON configuration file can be retrieved using <xref:Microsoft.Extensions.Configuration.IConfiguration>.
 
 ### [WebApplicationBuilder](#tab/web-app-builder)
 
@@ -188,6 +180,14 @@ IHost host = Host.CreateDefaultBuilder(args)
 ```
 
 ---
+
+In the preceding JSON sample:
+
+* The top-level key names, `AzureDefaults`, `KeyVault`, and `Storage`, are arbitrary. All other key names hold significance, and JSON serialization is performed in a case-insensitive manner.
+* The `AzureDefaults.Retry` object literal:
+  * Represents the [retry policy configuration settings](#configure-a-new-retry-policy).
+  * Corresponds to the <xref:Azure.Core.ClientOptions.Retry> property. Within that object literal, you find the `MaxRetries` key, which corresponds to the <xref:Azure.Core.RetryOptions.MaxRetries> property.
+* The `KeyVault:VaultUri` and `Storage:ServiceUri` key values map to the `Uri`-typed arguments of the <xref:Azure.Security.KeyVault.Secrets.SecretClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Security.KeyVault.Secrets.SecretClientOptions)?displayProperty=fullName> and <xref:Azure.Storage.Blobs.BlobServiceClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)?displayProperty=fullName> constructor overloads, respectively. The `TokenCredential` variants of the constructors are used because a default `TokenCredential` is set via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(Azure.Core.TokenCredential)?displayProperty=fullName> method call.
 
 ## Configure multiple service clients with different names
 

@@ -14,7 +14,7 @@ ms.assetid: 088b1f0d-c1af-4fe1-b4b8-196fd5ea9132
 ---
 # ?? and ??= operators - the null-coalescing operators
 
-<!-- 
+<!--
   Note: All the remaining acrolinx issues in this article are because of the `??` and `??=` operator. Acrolinx believes it's a misspelling of the ? mark.
 -->
 
@@ -89,7 +89,7 @@ For more information about the `??=` operator, see the [feature proposal note](~
 
 ## See also
 
-- [Use coalesce expression (style rules IDE0029 and IDE0030)](../../../fundamentals/code-analysis/style-rules/ide0029-ide0030.md)
+- [Null check can be simplified (IDE0029, IDE0030, and IDE0270)](../../../fundamentals/code-analysis/style-rules/ide0029-ide0030-ide0270.md)
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [?. and ?[] operators](member-access-operators.md#null-conditional-operators--and-)

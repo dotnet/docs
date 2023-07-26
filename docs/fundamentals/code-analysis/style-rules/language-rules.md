@@ -117,7 +117,7 @@ C# style rules:
 - [Add missing cases to switch statement (IDE0010)](ide0010.md)
 - [Use object initializers (IDE0017)](ide0017.md)
 - [Use collection initializers (IDE0028)](ide0028.md)
-- [Null check can be simplified (IDE0029, IDE0030, IDE0270)](ide0029-ide0030.md)
+- [Null check can be simplified (IDE0029, IDE0030, IDE0270)](ide0029-ide0030-ide0270.md)
 - [Use null propagation (IDE0031)](ide0031.md)
 - [Use auto-implemented property (IDE0032)](ide0032.md)
 - [Use explicitly provided tuple name (IDE0033)](ide0033.md)

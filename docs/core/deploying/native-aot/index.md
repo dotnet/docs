@@ -140,10 +140,7 @@ Native AOT apps have the following limitations:
 - <xref:System.Linq.Expressions> always use their interpreted form, which is slower than run-time generated compiled code.
 - Not all the runtime libraries are fully annotated to be native AOT compatible. That is, some warnings in the runtime libraries aren't actionable by end developers.
 
-Part of the publish process:
-
-- Analyzes the entire project and its dependencies.
-- Produces warnings whenever the limitations of the published app might be encountered at run time.
+The publish process detects if the running the app may encounter some of the limitations. If publishing detects potential limitations, warnings are displayed.
 
 ### OS specific limitations
 

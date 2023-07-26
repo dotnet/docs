@@ -81,7 +81,7 @@ The same results can be achieved using <xref:System.Linq.Enumerable.GroupJoin%2A
 
 :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/InnerJoins.cs" id="inner_joins_method_syntax_4":::
 
-note that this approach requires chaining the query results with <xref:System.Linq.Enumerable.SelectMany%2A> which creates the final list of Owner - Pet relation based on the results of group join. To avoid chaining, the single <xref:System.Linq.Enumerable.Join%2A> method can be used as presented below:
+Note that this approach requires chaining the query results with <xref:System.Linq.Enumerable.SelectMany%2A> to create the final list of Owner - Pet relation based on the results of group join. To avoid chaining, the single <xref:System.Linq.Enumerable.Join%2A> method can be used as presented below:
 
 :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/InnerJoins.cs" id="inner_joins_method_syntax_5":::
 

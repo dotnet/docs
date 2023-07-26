@@ -145,13 +145,13 @@ As the preceding example shows, you can repeatedly use the pattern combinators i
 
 ### Precedence and order of checking
 
-When a logical pattern is a pattern of an `is` expression, the precedence of logical pattern combinators is **higher** than the precedence of logical operators. Otherwise, the precedence of logical pattern combinators is **lower** than the precedence of logical and conditional logical operators.
-
-The pattern combinators are ordered from the highest precedence to the lowest as shown in the following list:
+The pattern combinators are ordered from the highest precedence to the lowest as follows:
 
 - `not`
 - `and`
 - `or`
+
+When a logical pattern is a pattern of an `is` expression, the precedence of logical pattern combinators is **higher** than the precedence of logical operators (both [bitwise logical](bitwise-and-shift-operators.md) and [Boolean logical](boolean-logical-operators.md) operators). Otherwise, the precedence of logical pattern combinators is **lower** than the precedence of logical and conditional logical operators. For the complete list of C# operators ordered by precedence level, see the [Operator precedence](index.md#operator-precedence) section of the [C# operators](index.md) article.
 
 To explicitly specify the precedence, use parentheses, as the following example shows:
 

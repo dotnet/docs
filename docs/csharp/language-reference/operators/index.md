@@ -88,6 +88,8 @@ The following table lists the C# operators starting with the highest precedence 
 | [c ? t : f](conditional-operator.md) | Conditional operator |
 | [x = y](assignment-operator.md), [x += y](arithmetic-operators.md#compound-assignment), [x -= y](arithmetic-operators.md#compound-assignment), [x *= y](arithmetic-operators.md#compound-assignment), [x /= y](arithmetic-operators.md#compound-assignment), [x %= y](arithmetic-operators.md#compound-assignment), [x &= y](boolean-logical-operators.md#compound-assignment), [x &#124;= y](boolean-logical-operators.md#compound-assignment), [x ^= y](boolean-logical-operators.md#compound-assignment), [x <<= y](bitwise-and-shift-operators.md#compound-assignment), [x >>= y](bitwise-and-shift-operators.md#compound-assignment), [x >>>= y](bitwise-and-shift-operators.md#compound-assignment), [x ??= y](null-coalescing-operator.md), [=>](lambda-operator.md) | Assignment and lambda declaration |
 
+For information about the precedence of [logical pattern combinators](patterns.md#logical-patterns), see the [Precedence and order of checking of logical patterns](patterns.md#precedence-and-order-of-checking) section of the [Patterns](patterns.md) article.
+
 ## Operator associativity
 
 When operators have the same precedence, associativity of the operators determines the order in which the operations are performed:

@@ -138,7 +138,7 @@ Native AOT apps have limitations and compatibility issues:
 - Not all the runtime libraries are fully annotated to be native AOT compatible. That is, some warnings in the runtime libraries aren't actionable by end developers.
 - Limited diagnostic support for debugging and profiling.
 
-The publish process:
+Part of the publish process:
 
 - Analyzes the entire project and its dependencies.
 - Produces warnings whenever the limitations of the published app might be encountered at run time.

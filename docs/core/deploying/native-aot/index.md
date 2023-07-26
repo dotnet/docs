@@ -122,9 +122,7 @@ By default, native AOT publishing produces debug information in a separate file 
 
 ## Limitations of native AOT deployment
 
-### [.NET 7](#tab/net7)
-
-Native AOT apps have limitations and compatibility issues:
+Native AOT apps have the following limitations:
 
 - No dynamic loading, for example, `Assembly.LoadFile`.
 - No run-time code generation, for example, `System.Reflection.Emit`.
@@ -143,25 +141,15 @@ Part of the publish process:
 - Analyzes the entire project and its dependencies.
 - Produces warnings whenever the limitations of the published app might be encountered at run time.
 
+### OS specific limitations
+
+### [.NET 7](#tab/net7)
+
+Should be targeted for console type apps. ASP.NET Core is ***not*** supported.
+
 ### [.NET 8+](#tab/net8plus)
 
-Native AOT apps have limitations and compatibility issues:
-
-- No dynamic loading, for example, `Assembly.LoadFile`.
-- No run-time code generation, for example, `System.Reflection.Emit`.
-- No C++/CLI.
-- Windows: No built-in COM.
-- Requires trimming, which has [limitations](../trimming/incompatibilities.md).
-- Implies compilation into a single file, which has known [incompatibilities](../single-file/overview.md#api-incompatibility).
-- Apps include required runtime libraries (just like [self-contained apps](../index.md#publish-self-contained), increasing their size as compared to framework-dependent apps).
-- <xref:System.Linq.Expressions> always use their interpreted form, which is slower than run-time generated compiled code.
-- Not all the runtime libraries are fully annotated to be native AOT compatible. That is, some warnings in the runtime libraries aren't actionable by end developers.
-- Limited diagnostic support for debugging and profiling.
-
-The publish process:
-
-- Analyzes the entire project and its dependencies.
-- Produces warnings whenever the limitations of the published app might be encountered at run time.
+Support for some ASP.NET Core features. For more information, see [ASP.NET Core support for native AOT](/aspnet/core/fundamentals/native-aot/?view=aspnetcore-8.0&preserve-view=true).
 
 ---
 
@@ -179,6 +167,4 @@ The following table shows supported compilation targets.
 |----------|------------------------|
 | Windows  | x64, Arm64             |
 | Linux    | x64, Arm64             |
-| macOS*   | x64, Arm64             |
-
-\* Supported starting in .NET 8.
+| macOS in .NET 8 | x64, Arm64      |

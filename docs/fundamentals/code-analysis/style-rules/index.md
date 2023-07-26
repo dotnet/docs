@@ -126,6 +126,10 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0211](ide0211.md) | Convert to 'Program.Main' style program | [csharp_style_prefer_top_level_statements](ide0211.md#csharp_style_prefer_top_level_statements) |
 > | [IDE0220](ide0220.md) | Add explicit cast in foreach loop | [dotnet_style_prefer_foreach_explicit_cast_in_source](ide0220.md#dotnet_style_prefer_foreach_explicit_cast_in_source) |
 > | [IDE0230](ide0230.md) | Use UTF-8 string literal | [csharp_style_prefer_utf8_string_literals](ide0230.md#csharp_style_prefer_utf8_string_literals) |
+> | [IDE0240](ide0240.md) | Nullable directive is redundant | |
+> | [IDE0241](ide0241.md) | Nullable directive is unnecessary | |
+> | [IDE0250](ide0250.md) | Struct can be made 'readonly' | [csharp_style_prefer_readonly_struct](ide0250.md#csharp_style_prefer_readonly_struct) |
+> | [IDE0251](ide0251.md) | Member can be made 'readonly' | [csharp_style_prefer_readonly_struct_member](ide0251.md#csharp_style_prefer_readonly_struct_member) |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
 

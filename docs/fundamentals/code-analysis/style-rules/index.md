@@ -103,7 +103,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0075](ide0075.md) | Simplify conditional expression | [dotnet_style_prefer_simplified_boolean_expressions](ide0075.md#dotnet_style_prefer_simplified_boolean_expressions) |
 > | [IDE0076](ide0076.md) | Remove invalid global `SuppressMessageAttribute` | |
 > | [IDE0077](ide0077.md) | Avoid legacy format target in global `SuppressMessageAttribute` | |
-> | [IDE0078](ide0078-ide0260.md) | Use pattern matching | [csharp_style_prefer_pattern_matching](ide0078.md#csharp_style_prefer_pattern_matching-ide0078) |
+> | [IDE0078](ide0078-ide0260.md) | Use pattern matching | [csharp_style_prefer_pattern_matching](ide0078-ide0260.md#csharp_style_prefer_pattern_matching-ide0078) |
 > | [IDE0079](ide0079.md) | Remove unnecessary suppression | [dotnet_remove_unnecessary_suppression_exclusions](ide0079.md#dotnet_remove_unnecessary_suppression_exclusions) |
 > | [IDE0080](ide0080.md) | Remove unnecessary suppression operator | |
 > | [IDE0081](ide0081.md) | Remove `ByVal` | |
@@ -130,7 +130,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0241](ide0241.md) | Nullable directive is unnecessary | |
 > | [IDE0250](ide0250.md) | Struct can be made 'readonly' | [csharp_style_prefer_readonly_struct](ide0250.md#csharp_style_prefer_readonly_struct) |
 > | [IDE0251](ide0251.md) | Member can be made 'readonly' | [csharp_style_prefer_readonly_struct_member](ide0251.md#csharp_style_prefer_readonly_struct_member) |
-> | [IDE0260](ide0078-ide0260.md) | Use pattern matching | [csharp_style_pattern_matching_over_as_with_null_check (IDE0260)](ide0078-ide0260.md#csharp_style_pattern_matching_over_as_with_null_check-ide0260) |
+> | [IDE0260](ide0078-ide0260.md) | Use pattern matching | [csharp_style_pattern_matching_over_as_with_null_check](ide0078-ide0260.md#csharp_style_pattern_matching_over_as_with_null_check-ide0260) |
 > | [IDE0270](ide0029-ide0030.md) | Null check can be simplified | [dotnet_style_coalesce_expression](ide0029-ide0030.md#dotnet_style_coalesce_expression) |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |

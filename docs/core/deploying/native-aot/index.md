@@ -16,8 +16,16 @@ The native AOT deployment model uses an ahead-of-time compiler to compile IL to 
 
 There are some limitations in the .NET native AOT deployment model, with the main one being that run-time code generation isn't possible. For more information, see [Limitations of Native AOT deployment](#limitations-of-native-aot-deployment). The support in the .NET 7 release is targeted towards console-type applications.
 
+### [.NET 7](#tab/net7)
+
 > [!WARNING]
 > In .NET 7, only a limited number of libraries are fully compatible with native AOT.
+
+### [.NET 8+](#tab/net8plus)
+
+AOT support in .NET 8 is more comprehensive than in .NET 7. However, there are still some limitations. For more information, see [Limitations of Native AOT deployment](#limitations-of-native-aot-deployment).
+
+---
 
 ## Prerequisites
 
@@ -114,24 +122,48 @@ By default, native AOT publishing produces debug information in a separate file 
 
 ## Limitations of native AOT deployment
 
-Native AOT applications come with a few fundamental limitations and compatibility issues. The key limitations include:
+### [.NET 7](#tab/net7)
 
-- No dynamic loading (for example, `Assembly.LoadFile`).
-- No run-time code generation (for example, `System.Reflection.Emit`).
+Native AOT apps have limitations and compatibility issues:
+
+- No dynamic loading, for example, `Assembly.LoadFile`.
+- No run-time code generation, for example, `System.Reflection.Emit`.
 - No C++/CLI.
-- No built-in COM (only applies to Windows).
+- Windows: No built-in COM.
 - Requires trimming, which has [limitations](../trimming/incompatibilities.md).
 - Implies compilation into a single file, which has known [incompatibilities](../single-file/overview.md#api-incompatibility).
 - Apps include required runtime libraries (just like [self-contained apps](../index.md#publish-self-contained), increasing their size as compared to framework-dependent apps).
 - <xref:System.Linq.Expressions> always use their interpreted form, which is slower than run-time generated compiled code.
+- Should be targeted for console type apps, ASP.NET Core is not supported.
+- Not all the runtime libraries are fully annotated to be native AOT compatible. That is, some warnings in the runtime libraries aren't actionable by end developers.
+- Limited diagnostic support for debugging and profiling.
 
-The publish process analyzes the entire project and its dependencies and produces warnings whenever the limitations of the published application might be encountered at run time.
+The publish process:
 
-The first release of native AOT in .NET 7 has some more limitations:
+- Analyzes the entire project and its dependencies.
+- Produces warnings whenever the limitations of the published app might be encountered at run time.
 
-- Should be targeted for console type applications (not ASP.NET Core).
-- Not all the runtime libraries are fully annotated to be native AOT compatible (that is, some warnings in the runtime libraries aren't actionable by end developers).
-- Limited diagnostic support (debugging and profiling).
+### [.NET 8+](#tab/net8plus)
+
+Native AOT apps have limitations and compatibility issues:
+
+- No dynamic loading, for example, `Assembly.LoadFile`.
+- No run-time code generation, for example, `System.Reflection.Emit`.
+- No C++/CLI.
+- Windows: No built-in COM.
+- Requires trimming, which has [limitations](../trimming/incompatibilities.md).
+- Implies compilation into a single file, which has known [incompatibilities](../single-file/overview.md#api-incompatibility).
+- Apps include required runtime libraries (just like [self-contained apps](../index.md#publish-self-contained), increasing their size as compared to framework-dependent apps).
+- <xref:System.Linq.Expressions> always use their interpreted form, which is slower than run-time generated compiled code.
+- Not all the runtime libraries are fully annotated to be native AOT compatible. That is, some warnings in the runtime libraries aren't actionable by end developers.
+- Limited diagnostic support for debugging and profiling.
+
+The publish process:
+
+- Analyzes the entire project and its dependencies.
+- Produces warnings whenever the limitations of the published app might be encountered at run time.
+
+---
 
 ## Build native libraries
 

@@ -28,14 +28,14 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
 
    The `--add-source` parameter tells the .NET CLI to temporarily use the *./nupkg* directory as an additional source feed for NuGet packages. You gave your package a unique name to make sure that it will only be found in the *./nupkg* directory, not on the Nuget.org site.
 
-   [!INCLUDE[](~/includes/dotnet-tool-install-arch-options.md)]
-
    The output shows the command used to call the tool and the version installed:
 
    ```console
    You can invoke the tool using the following command: botsay
    Tool 'microsoft.botsay' (version '1.0.0') was successfully installed.
    ```
+
+   [!INCLUDE[](~/includes/dotnet-tool-install-arch-options.md)]
 
 1. Invoke the tool:
 

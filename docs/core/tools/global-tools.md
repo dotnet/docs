@@ -54,14 +54,14 @@ To install a tool as a global tool, use the `-g` or `--global` option of [dotnet
 dotnet tool install -g dotnetsay
 ```
 
-[!INCLUDE[](~/includes/dotnet-tool-install-arch-options.md)]
-
 The output shows the command used to invoke the tool and the version installed, similar to the following example:
 
 ```output
 You can invoke the tool using the following command: dotnetsay
 Tool 'dotnetsay' (version '2.1.4') was successfully installed.
 ```
+
+[!INCLUDE[](~/includes/dotnet-tool-install-arch-options.md)]
 
 The default location for a tool's binaries depends on the operating system:
 

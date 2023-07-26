@@ -143,8 +143,8 @@ Part of the publish process:
 
 ### [.NET 7](#tab/net7)
 
-Should be targeted for console type apps. ASP.NET Core is ***not*** supported.
-+ Limited diagnostic support for debugging and profiling.
+- Should be targeted for console type apps. ASP.NET Core is ***not*** supported.
+- Limited diagnostic support for debugging and profiling.
 ### [.NET 8+](#tab/net8plus)
 
 Support for some ASP.NET Core features. For more information, see [ASP.NET Core support for native AOT](/aspnet/core/fundamentals/native-aot/?view=aspnetcore-8.0&preserve-view=true).

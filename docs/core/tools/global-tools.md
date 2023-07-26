@@ -3,7 +3,7 @@ title: .NET tools
 description: How to install, use, update, and remove .NET tools. Covers global tools, tool-path tools, and local tools. 
 author: KathleenDollard
 ms.topic: how-to
-ms.date: 08/10/2022
+ms.date: 07/25/2023
 ms.custom: devdivchpfy22
 ---
 # How to manage .NET tools
@@ -53,6 +53,8 @@ To install a tool as a global tool, use the `-g` or `--global` option of [dotnet
 ```dotnetcli
 dotnet tool install -g dotnetsay
 ```
+
+[!INCLUDE[](~/includes/dotnet-tool-install-arch-options.md)]
 
 The output shows the command used to invoke the tool and the version installed, similar to the following example:
 

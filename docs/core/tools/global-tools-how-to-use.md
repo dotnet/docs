@@ -2,7 +2,7 @@
 title: "Tutorial: Install and use a .NET global tool"
 description: Learn how to install and use a .NET tool as a global tool.
 ms.topic: tutorial
-ms.date: 02/12/2020
+ms.date: 07/25/2023
 recommendations: false
 ---
 
@@ -27,6 +27,8 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
    The `--global` parameter tells the .NET CLI to install the tool binaries in a default location that is automatically added to the PATH environment variable.
 
    The `--add-source` parameter tells the .NET CLI to temporarily use the *./nupkg* directory as an additional source feed for NuGet packages. You gave your package a unique name to make sure that it will only be found in the *./nupkg* directory, not on the Nuget.org site.
+
+   [!INCLUDE[](~/includes/dotnet-tool-install-arch-options.md)]
 
    The output shows the command used to call the tool and the version installed:
 

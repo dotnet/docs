@@ -132,7 +132,6 @@ Native AOT apps have the following limitations:
 - Implies compilation into a single file, which has known [incompatibilities](../single-file/overview.md#api-incompatibility).
 - Apps include required runtime libraries (just like [self-contained apps](../index.md#publish-self-contained), increasing their size as compared to framework-dependent apps).
 - <xref:System.Linq.Expressions> always use their interpreted form, which is slower than run-time generated compiled code.
-- Should be targeted for console type apps, ASP.NET Core is not supported.
 - Not all the runtime libraries are fully annotated to be native AOT compatible. That is, some warnings in the runtime libraries aren't actionable by end developers.
 - Limited diagnostic support for debugging and profiling.
 

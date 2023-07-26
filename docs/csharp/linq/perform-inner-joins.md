@@ -31,7 +31,7 @@ The following example creates two collections that contain objects of two user-d
 
 :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/InnerJoins.cs" id="inner_joins_1":::
 
-The same results can be achieved using the <xref:System.Linq.Enumerable.Join%2A> method syntax:
+You achieve the same results using the <xref:System.Linq.Enumerable.Join%2A> method syntax:
 
 :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/InnerJoins.cs" id="inner_joins_method_syntax_1":::
 
@@ -45,7 +45,7 @@ The following example uses a list of `Employee` objects and a list of `Student` 
 
 :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/InnerJoins.cs" id="inner_joins_2":::
 
-And when using the <xref:System.Linq.Enumerable.Join%2A> method, solution would be:
+You can use the <xref:System.Linq.Enumerable.Join%2A> method, as shown in the following example:
 
 :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/InnerJoins.cs" id="inner_joins_method_syntax_2":::
 

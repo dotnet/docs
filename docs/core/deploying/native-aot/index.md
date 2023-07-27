@@ -85,7 +85,7 @@ AOT-compatibility analyzers are available only in .NET 8 and later versions.
 
 ### [.NET 8+](#tab/net8plus)
 
-Starting with .NET 8.0, library authors use the `IsAotCompatible` property to indicate whether a library is compatible with native AOT. Consider when a library sets the `IsAotCompatible` property to `true`, for example:
+The `IsAotCompatible` property is used to indicate whether a library is compatible with native AOT. Consider when a library sets the `IsAotCompatible` property to `true`, for example:
 
 ```xml
 <PropertyGroup>

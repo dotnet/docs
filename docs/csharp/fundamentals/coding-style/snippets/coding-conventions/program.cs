@@ -276,15 +276,15 @@ namespace Coding_Conventions_Examples
         }
 
         //<snippet16>
-        static string GetValueFromArray(string[] array, int index)
+        static double ComputeDistance(double x1, double y1, double x2, double y2)
         {
             try
             {
-                return array[index];
+                return Math.SquareRoot((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
             }
-            catch (System.IndexOutOfRangeException ex)
+            catch (System.ArithmeticException ex)
             {
-                Console.WriteLine("Index is out of range: {0}", index);
+                Console.WriteLine($"Arithmetic overflow or underflow: {ex}");
                 throw;
             }
         }

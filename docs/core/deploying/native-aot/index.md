@@ -79,6 +79,12 @@ Check out the [native AOT samples](https://github.com/dotnet/samples/tree/main/c
 
 ## AOT-compatibility analyzers
 
+### [.NET 7](#tab/net7)
+
+AOT-compatibility analyzers are available only in .NET 8 and later versions.
+
+### [.NET 8+](#tab/net8plus)
+
 Starting with .NET 8.0, library authors use the `IsAotCompatible` property to indicate whether a library is compatible with native AOT. Consider when a library sets the `IsAotCompatible` property to `true`, for example:
 
 ```xml
@@ -95,6 +101,8 @@ The preceding configuration assigns a default of `true` to the following propert
 - `EnableAotAnalyzer`
 
 These analyzers help to ensure that a library is compatible with native AOT.
+
+---
 
 ## Native debug information
 

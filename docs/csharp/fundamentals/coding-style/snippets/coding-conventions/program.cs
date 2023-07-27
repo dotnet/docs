@@ -31,11 +31,11 @@ namespace Coding_Conventions_Examples
                 PerformanceCounterCategory();
             //</snippet1>
 
-            int val1 = 1;
-            int val2 = 2;
-            int val3 = 3;
+            int startX = 1;
+            int endX = 2;
+            int previousX = 3;
             //<snippet2>
-            if ((val1 > val2) && (val1 > val3))
+            if ((startX > endX) && (startX > previousX))
             {
                 // Take appropriate action.
             }
@@ -71,13 +71,13 @@ namespace Coding_Conventions_Examples
             //</snippet7>
 
             //<snippet8>
-            var var1 = "This is clearly a string.";
-            var var2 = 27;
+            var message = "This is clearly a string.";
+            var currentTemperature = 27;
             //</snippet8>
 
             //<snippet9>
-            int var3 = Convert.ToInt32(Console.ReadLine());
-            int var4 = ExampleClass.ResultSoFar();
+            int numberOfIterations = Convert.ToInt32(Console.ReadLine());
+            int currentMaximum = ExampleClass.ResultSoFar();
             //</snippet9>
 
             //<snippet10>
@@ -137,28 +137,28 @@ namespace Coding_Conventions_Examples
 
             // 17 requires System.Drawing
             //<snippet17a>
-            Font font1 = new Font("Arial", 10.0f);
+            Font bodyStyle = new Font("Arial", 10.0f);
             try
             {
-                byte charset = font1.GdiCharSet;
+                byte charset = bodyStyle.GdiCharSet;
             }
             finally
             {
-                if (font1 != null)
+                if (bodyStyle != null)
                 {
-                    ((IDisposable)font1).Dispose();
+                    ((IDisposable)arialFont).Dispose();
                 }
             }
             //</snippet17a>
             //<snippet17b>
-            using (Font font2 = new Font("Arial", 10.0f))
+            using (Font arial = new Font("Arial", 10.0f))
             {
-                byte charset2 = font2.GdiCharSet;
+                byte charset2 = arial.GdiCharSet;
             }
             //</snippet17b>
             //<snippet17c>
-            using Font font3 = new Font("Arial", 10.0f);
-            byte charset3 = font3.GdiCharSet;
+            using Font normalStyle = new Font("Arial", 10.0f);
+            byte charset3 = normalStyle.GdiCharSet;
             //</snippet17c>
 
             //<snippet18>
@@ -180,24 +180,24 @@ namespace Coding_Conventions_Examples
 
 
             //<snippet19>
-            var instance1 = new ExampleClass();
+            var firstExample = new ExampleClass();
             //</snippet19>
             // Can't show `ExampleClass instance1 = new()` because this project targets net48.
 
             //<snippet20>
-            ExampleClass instance2 = new ExampleClass();
+            ExampleClass secondExample = new ExampleClass();
             //</snippet20>
 
             //<snippet21a>
-            var instance3 = new ExampleClass { Name = "Desktop", ID = 37414,
+            var thirdExample = new ExampleClass { Name = "Desktop", ID = 37414,
                 Location = "Redmond", Age = 2.3 };
             //</snippet21a>
             //<snippet21b>
-            var instance4 = new ExampleClass();
-            instance4.Name = "Desktop";
-            instance4.ID = 37414;
-            instance4.Location = "Redmond";
-            instance4.Age = 2.3;
+            var fourthExample = new ExampleClass();
+            fourthExample.Name = "Desktop";
+            fourthExample.ID = 37414;
+            fourthExample.Location = "Redmond";
+            fourthExample.Age = 2.3;
             //</snippet21b>
 
             // #22 and #23 are in Coding_Conventions_WF, below.

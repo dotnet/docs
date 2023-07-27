@@ -172,7 +172,7 @@ Call [static](../../language-reference/keywords/static.md) members by using the 
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet27":::
 
-- Use implicit typing in the declaration of query variables and range variables.
+- Use implicit typing in the declaration of query variables and range variables. This guidance on implicit typing in LINQ queries overrides the general rules for [implicitly typed local variables](#implicitly-typed-local-variables). LINQ queries often use projections that create anonymous types. Other query expressions create results with nested generic types. Implicit typed variables are often more readable.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet25":::
 
@@ -196,13 +196,13 @@ Call [static](../../language-reference/keywords/static.md) members by using the 
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet9":::
 
-- Don't use variable names to specify the type of the variable. It might not be correct. In the following example, the variable name `inputInt` is misleading. It's a string.
+- Don't use variable names to specify the type of the variable. It might not be correct. Instead, use the type to specify the type, and use the variable name to indicate the semantic information of the variable. The following example should use `string` for the type and something like `iterations` to indicate the meaning of the information read from the console.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet10":::
 
 - Avoid the use of `var` in place of [dynamic](../../language-reference/builtin-types/reference-types.md). Use `dynamic` when you want run-time type inference. For more information, see [Using type dynamic (C# Programming Guide)](../../advanced-topics/interop/using-type-dynamic.md).
 
-- Use implicit typing to determine the type of the loop variable in [`for`](../../language-reference/statements/iteration-statements.md#the-for-statement) loops.
+- Use implicit typing for the loop variable in [`for`](../../language-reference/statements/iteration-statements.md#the-for-statement) loops.
 
   The following example uses implicit typing in a `for` statement.
 
@@ -213,6 +213,8 @@ Call [static](../../language-reference/keywords/static.md) members by using the 
   The following example uses explicit typing in a `foreach` statement.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet12":::
+
+- use implicit type for the result sequences in LINQ queries. The section on [LINQ](#linq-queries) explains that many LINQ queries result in anonymous types where implicit types must be used. Other queries result in nested generic types where `var` is more readable.
 
   > [!NOTE]
   > Be careful not to accidentally change a type of an element of the iterable collection. For example, it is easy to switch from <xref:System.Linq.IQueryable?displayProperty=nameWithType> to <xref:System.Collections.IEnumerable?displayProperty=nameWithType> in a `foreach` statement, which changes the execution of a query.

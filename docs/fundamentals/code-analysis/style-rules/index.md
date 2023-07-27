@@ -58,8 +58,8 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0026](ide0026.md) | Use expression body for indexers | [csharp_style_expression_bodied_indexers](ide0026.md#csharp_style_expression_bodied_indexers) |
 > | [IDE0027](ide0027.md) | Use expression body for accessors | [csharp_style_expression_bodied_accessors](ide0027.md#csharp_style_expression_bodied_accessors) |
 > | [IDE0028](ide0028.md) | Use collection initializers | [dotnet_style_collection_initializer](ide0028.md#dotnet_style_collection_initializer) |
-> | [IDE0029](ide0029-ide0030.md) | Use coalesce expression (non-nullable types) | [dotnet_style_coalesce_expression](ide0029-ide0030.md#dotnet_style_coalesce_expression) |
-> | [IDE0030](ide0029-ide0030.md) | Use coalesce expression (nullable types) | [dotnet_style_coalesce_expression](ide0029-ide0030.md#dotnet_style_coalesce_expression) |
+> | [IDE0029](ide0029-ide0030-ide0270.md) | Null check can be simplified | [dotnet_style_coalesce_expression](ide0029-ide0030-ide0270.md#dotnet_style_coalesce_expression) |
+> | [IDE0030](ide0029-ide0030-ide0270.md) | Null check can be simplified | [dotnet_style_coalesce_expression](ide0029-ide0030-ide0270.md#dotnet_style_coalesce_expression) |
 > | [IDE0031](ide0031.md) | Use null propagation | [dotnet_style_null_propagation](ide0031.md#dotnet_style_null_propagation) |
 > | [IDE0032](ide0032.md) | Use auto property | [dotnet_style_prefer_auto_properties](ide0032.md#dotnet_style_prefer_auto_properties) |
 > | [IDE0033](ide0033.md) | Use explicitly provided tuple name | [dotnet_style_explicit_tuple_names](ide0033.md#dotnet_style_explicit_tuple_names) |
@@ -103,7 +103,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0075](ide0075.md) | Simplify conditional expression | [dotnet_style_prefer_simplified_boolean_expressions](ide0075.md#dotnet_style_prefer_simplified_boolean_expressions) |
 > | [IDE0076](ide0076.md) | Remove invalid global `SuppressMessageAttribute` | |
 > | [IDE0077](ide0077.md) | Avoid legacy format target in global `SuppressMessageAttribute` | |
-> | [IDE0078](ide0078.md) | Use pattern matching | [csharp_style_prefer_pattern_matching](ide0078.md#csharp_style_prefer_pattern_matching) |
+> | [IDE0078](ide0078-ide0260.md) | Use pattern matching | [csharp_style_prefer_pattern_matching](ide0078-ide0260.md#csharp_style_prefer_pattern_matching-ide0078) |
 > | [IDE0079](ide0079.md) | Remove unnecessary suppression | [dotnet_remove_unnecessary_suppression_exclusions](ide0079.md#dotnet_remove_unnecessary_suppression_exclusions) |
 > | [IDE0080](ide0080.md) | Remove unnecessary suppression operator | |
 > | [IDE0081](ide0081.md) | Remove `ByVal` | |
@@ -130,6 +130,8 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0241](ide0241.md) | Nullable directive is unnecessary | |
 > | [IDE0250](ide0250.md) | Struct can be made 'readonly' | [csharp_style_prefer_readonly_struct](ide0250.md#csharp_style_prefer_readonly_struct) |
 > | [IDE0251](ide0251.md) | Member can be made 'readonly' | [csharp_style_prefer_readonly_struct_member](ide0251.md#csharp_style_prefer_readonly_struct_member) |
+> | [IDE0260](ide0078-ide0260.md) | Use pattern matching | [csharp_style_pattern_matching_over_as_with_null_check](ide0078-ide0260.md#csharp_style_pattern_matching_over_as_with_null_check-ide0260) |
+> | [IDE0270](ide0029-ide0030-ide0270.md) | Null check can be simplified | [dotnet_style_coalesce_expression](ide0029-ide0030-ide0270.md#dotnet_style_coalesce_expression) |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
 

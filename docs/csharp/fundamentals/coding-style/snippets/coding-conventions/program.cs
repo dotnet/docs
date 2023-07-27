@@ -439,3 +439,31 @@ namespace Coding_Conventions_WF2
         }
     }
 }
+
+namespace GenericTypeParameters
+{
+    public class WrapParameters
+    {
+        //<TypeParametersOne>
+        public interface ISessionChannel<TSession> { /*...*/ }
+        public delegate TOutput Converter<TInput, TOutput>(TInput from);
+        public class List<T> { /*...*/ }
+        //</TypeParametersOne>
+
+        //<TypeParametersTwo>
+        public int IComparer<T>() { return 0; }
+        public delegate bool Predicate<T>(T item);
+        public struct Nullable<T> where T : struct { /*...*/ }
+        //</TypeParametersTwo>
+
+        class wrap
+        {
+            //<TypeParametersThree>
+            public interface ISessionChannel<TSession>
+            {
+                TSession Session { get; }
+            }
+            //</TypeParametersThree>
+        }
+    }//WrapParameters
+}

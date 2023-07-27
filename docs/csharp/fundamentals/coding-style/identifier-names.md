@@ -157,6 +157,26 @@ public T SomeMethod<T>(int someNumber, bool isValid)
 
 For more information on C# naming conventions, see [C# Coding Style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md).
 
+### Type parameter naming guidelines
+
+The following guidelines apply to type parameters on generic type parameters. These are the placeholders for arguments in a generic type or a generic method. You can read more about [generic type parameters](../../programming-guide/generics/generic-type-parameters.md) in the C# programming guide.
+
+- **Do** name generic type parameters with descriptive names, unless a single letter name is completely self explanatory and a descriptive name would not add value.
+
+   :::code language="./snippets/coding-conventions" source="Program.cs" id="TypeParametersOne":::
+
+- **Consider** using T as the type parameter name for types with one single letter type parameter.
+
+   :::code language="./snippets/coding-conventions" source="Program.cs" id="TypeParametersTwo":::
+
+- **Do** prefix descriptive type parameter names with "T".
+
+   :::code language="./snippets/coding-conventions" source="Program.cs" id="TypeParametersThree":::
+
+- **Consider** indicating constraints placed on a type parameter in the name of parameter. For example, a parameter constrained to `ISession` may be called `TSession`.
+
+The code analysis rule [CA1715](/visualstudio/code-quality/ca1715) can be used to ensure that type parameters are named appropriately.
+
 ### Extra naming conventions
 
 - Examples that don't include [using directives](../../language-reference/keywords/using-directive.md), use namespace qualifications. If you know that a namespace is imported by default in a project, you don't have to fully qualify the names from that namespace. Qualified names can be broken after a dot (.) if they're too long for a single line, as shown in the following example.

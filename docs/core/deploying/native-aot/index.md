@@ -180,6 +180,6 @@ The following table shows supported compilation targets.
 |----------|------------------------|----------------------|
 | Windows  | x64, Arm64             |                      |
 | Linux    | x64, Arm64             |                      |
-| ma
+| macOS    | x64, Arm64             | Experimental support |
 
 ---

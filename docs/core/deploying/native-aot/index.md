@@ -165,8 +165,19 @@ Publishing a class library as native AOT creates a native library that exposes m
 
 The following table shows supported compilation targets.
 
+### [.NET 7](#tab/net7)
+
 | Platform | Supported architecture |
 |----------|------------------------|
 | Windows  | x64, Arm64             |
 | Linux    | x64, Arm64             |
-| macOS in .NET 8 | x64, Arm64      |
+
+### [.NET 8+](#tab/net8plus)
+
+| Platform | Supported architecture |
+|----------|------------------------|
+| Windows  | x64, Arm64             |
+| Linux    | x64, Arm64             |
+| macOS in | x64, Arm64      |
+
+---

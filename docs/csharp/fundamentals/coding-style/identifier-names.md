@@ -31,7 +31,9 @@ In addition to the rules, there are many identifier [naming conventions](../../.
 - Prefer clarity over brevity.
 - Use PascalCase for class names and method names.
 - Use camelCase for method arguments, local variables, and private fields.
-- Use ALL_CAPS for constant names.
+- Use PascalCase for constant names, both fields and local constants.
+- Instance fields start with an underscore (`_`).
+- Static fields start with `s_`. Note that this isn't the default Visual Studio behavior, nor part of the [Framework design guidelines](../../../standard/design-guidelines/names-of-type-members.md#names-of-fields), but is configurable in editorconfig.
 - Avoid using abbreviations or acronyms in names, except for widely known and accepted abbreviations.
 - Use meaningful and descriptive namespaces that follow the reverse domain name notation.
 - Choose assembly names that represent the primary purpose of the assembly.
@@ -49,7 +51,7 @@ In the following examples, guidance pertaining to elements marked `public` is ap
 
 ### Pascal case
 
-Use pascal casing ("PascalCasing") when naming a `class`, `Interface` or `struct`.
+Use pascal casing ("PascalCasing") when naming a `class`, `Interface`, `struct`, or `delegate` type.
 
 ```csharp
 public class DataService
@@ -69,6 +71,10 @@ public record PhysicalAddress(
 public struct ValueCoordinate
 {
 }
+```
+
+```csharp
+public delegate void DelegateType(string message);
 ```
 
 When naming an `interface`, use pascal casing in addition to prefixing the name with an `I`. This prefix clearly indicates to consumers that it's an `interface`.
@@ -117,7 +123,7 @@ For more information on positional records, see [Positional syntax for property 
 
 ### Camel case
 
-Use camel casing ("camelCasing") when naming `private` or `internal` fields, and prefix them with `_`.
+Use camel casing ("camelCasing") when naming `private` or `internal` fields and prefix them with `_`. Use camel casing when naming local variables, including instances of a delegate type.
 
 ```csharp
 public class DataService

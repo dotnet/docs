@@ -116,7 +116,7 @@ By default, native AOT publishing produces debug information in a separate file:
 - Windows: *.pdb*
 - macOS: *.dwarf*
 
-The debug is necessary for running the app under the debugger or inspecting crash dumps. On Unix-like platforms, set the `StripSymbols` property to `false` to include the debug information in the native binary. Including debug information makes the native binary larger.
+The debug file is necessary for running the app under the debugger or inspecting crash dumps. On Unix-like platforms, set the `StripSymbols` property to `false` to include the debug information in the native binary. Including debug information makes the native binary larger.
 
 ```xml
 <PropertyGroup>

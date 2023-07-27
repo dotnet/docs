@@ -178,8 +178,10 @@ public class MyLibrary
     static void UseMethods(Type type)
     {
         // warning IL2070: MyLibrary.UseMethods(Type): 'this' argument does not satisfy
-        // 'DynamicallyAccessedMemberTypes.PublicMethods' in call to 'System.Type.GetMethods()'.
-        // The parameter 't' of method 'MyLibrary.UseMethods(Type)' does not have matching annotations.
+        // 'DynamicallyAccessedMemberTypes.PublicMethods' in call to
+        // 'System.Type.GetMethods()'.
+        // The parameter 't' of method 'MyLibrary.UseMethods(Type)' doesn't have
+        // matching annotations.
         foreach (var method in type.GetMethods())
         {
             // ...
@@ -210,7 +212,8 @@ static Type type;
 static void UseMethodsHelper()
 {
     // warning IL2077: MyLibrary.UseMethodsHelper(Type): 'type' argument does not satisfy
-    // 'DynamicallyAccessedMemberTypes.PublicMethods' in call to 'MyLibrary.UseMethods(Type)'.
+    // 'DynamicallyAccessedMemberTypes.PublicMethods' in call to
+    // 'MyLibrary.UseMethods(Type)'.
     // The field 'System.Type MyLibrary::type' does not have matching annotations.
     UseMethods(type);
 }

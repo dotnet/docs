@@ -50,9 +50,9 @@ To create your sample app, first create a separate console application project w
 - If your app targets .NET 7, [the new default behavior](../../../core/compatibility/deployment/7.0/trim-all-assemblies.md) is what you want, but you can enforce the behavior by adding `<TrimMode>full</TrimMode>` in a `<PropertyGroup>` tag.
   - This ensures that the trimmer only analyzes the parts of the library's dependencies that are used. It tells the trimmer that any code that isn't part of a "root" can be trimmed if it's unused. Without this option, you would see warnings originating from _any_ part of a dependency that doesn't set `[AssemblyMetadata("IsTrimmable", "True")]`, including parts that are unused by your library.
 
-### [.NET 6](#tab/net6)
+##### .csproj file
 
-##### .NET 6 .csproj
+### [.NET 6](#tab/net6)
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -76,8 +76,6 @@ To create your sample app, first create a separate console application project w
 ```
 
 ### [.NET 7](#tab/net7)
-
-##### .NET 7 .csproj
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

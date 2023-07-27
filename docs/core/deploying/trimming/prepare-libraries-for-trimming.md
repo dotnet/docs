@@ -141,8 +141,8 @@ public class MyLibrary
 {
     public static void Method()
     {
-        // warning IL2026 : MyLibrary.Method: Using method 'MyLibrary.DynamicBehavior' which has
-        // 'RequiresUnreferencedCodeAttribute' can break functionality
+        // warning IL2026 : MyLibrary.Method: Using method 'MyLibrary.DynamicBehavior'
+        //  which has 'RequiresUnreferencedCodeAttribute' can break functionality
         // when trimming application code.
         DynamicBehavior();
     }

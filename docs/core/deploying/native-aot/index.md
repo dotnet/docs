@@ -176,10 +176,10 @@ The following table shows supported compilation targets.
 
 ### [.NET 8+](#tab/net8plus)
 
-| Platform | Supported architecture |
-|----------|------------------------|
-| Windows  | x64, Arm64             |
-| Linux    | x64, Arm64             |
-| macOS    | x64, Arm64             |
+| Platform | Supported architecture |  Notes               |
+|----------|------------------------|----------------------|
+| Windows  | x64, Arm64             |                      |
+| Linux    | x64, Arm64             |                      |
+| ma
 
 ---

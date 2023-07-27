@@ -9,7 +9,7 @@ helpviewer_keyword:
 ---
 # Common C# code conventions
 
-A code standard is essential for maintaining code readability, consistency, and collaboration within a development team. Following industry practices and established guidelines helps ensure that code is easier to understand, maintain, and extend. Most projects enforce a consistent style through code conventions. The [`dotnet/docs`](https//github.com/dotnet/docs) and [`dotnet/samples`](https://github.com/dotnet/samples) projects are no exception. In this series of articles, you learn our coding conventions and the tools we use to enforce them. You can take our conventions as-is, or modify them to suit your team.
+A code standard is essential for maintaining code readability, consistency, and collaboration within a development team. Following industry practices and established guidelines helps ensure that code is easier to understand, maintain, and extend. Most projects enforce a consistent style through code conventions. The [`dotnet/docs`](https://github.com/dotnet/docs) and [`dotnet/samples`](https://github.com/dotnet/samples) projects are no exception. In this series of articles, you learn our coding conventions and the tools we use to enforce them. You can take our conventions as-is, or modify them to suit your team.
 
 We chose our conventions based on the following goals:
 
@@ -27,7 +27,7 @@ This article explains our guidelines. The guidelines have evolved over time, and
 
 ## Tools and analyzers
 
-Tools can help your team enforce your standards. You can enable any of the [Code analysis tools](../../../fundamentals/code-analysis/overview.md) to enforce the rules you prefer. You can also create an [editorconfig](~/visualstudio/ide/create-portable-custom-editor-options.md) so that Visual Studio automatically enforces your style guidelines. You can start by using [the dotnet/docs](https://github.com/dotnet/docs/blob/main/.editorconfig) to use our style as a starting point.
+Tools can help your team enforce your standards. You can enable any of the [Code analysis tools](../../../fundamentals/code-analysis/overview.md) to enforce the rules you prefer. You can also create an [editorconfig](/visualstudio/ide/create-portable-custom-editor-options) so that Visual Studio automatically enforces your style guidelines. You can start by using [the dotnet/docs](https://github.com/dotnet/docs/blob/main/.editorconfig) to use our style as a starting point.
 
 These tools make it easier for your team to adopt your preferred guidelines. Visual Studio applies the rules in all `.editorconfig` files in scope to format your code. You can use multiple rule sets to enforce corporate-wide standards, team standards, and even granular project standards.
 

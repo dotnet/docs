@@ -114,13 +114,13 @@ namespace Coding_Conventions_Examples
             //</snippet13b>
 
             //<snippet15a>
-            ActionExample1("string for x");
+            actionExample1("string for x");
 
-            ActionExample2("string for x", "string for y");
+            actionExample2("string for x", "string for y");
 
-            Console.WriteLine($"The value is {FuncExample1("1")}");
+            Console.WriteLine($"The value is {funcExample1("1")}");
 
-            Console.WriteLine($"The sum is {FuncExample2(1, 2)}");
+            Console.WriteLine($"The sum is {funcExample2(1, 2)}");
             //</snippet15a>
             //<snippet15b>
             Del exampleDel2 = DelMethod;
@@ -133,7 +133,7 @@ namespace Coding_Conventions_Examples
 
 
             // #16 is below Main.
-            Console.WriteLine(GetValueFromArray(vowels1, 1));
+            Console.WriteLine(ComputeDistance(1,2,3,4));
 
             // 17 requires System.Drawing
             //<snippet17a>
@@ -146,7 +146,7 @@ namespace Coding_Conventions_Examples
             {
                 if (bodyStyle != null)
                 {
-                    ((IDisposable)arialFont).Dispose();
+                    ((IDisposable)bodyStyle).Dispose();
                 }
             }
             //</snippet17a>
@@ -280,7 +280,7 @@ namespace Coding_Conventions_Examples
         {
             try
             {
-                return Math.SquareRoot((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
+                return Math.Sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
             }
             catch (System.ArithmeticException ex)
             {

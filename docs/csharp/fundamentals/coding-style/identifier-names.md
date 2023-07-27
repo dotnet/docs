@@ -163,15 +163,15 @@ The following guidelines apply to type parameters on generic type parameters. Th
 
 - **Do** name generic type parameters with descriptive names, unless a single letter name is completely self explanatory and a descriptive name would not add value.
 
-   :::code language="./snippets/coding-conventions" source="Program.cs" id="TypeParametersOne":::
+   :::code language="./snippets/coding-conventions" source="./snippets/coding-conventions/Program.cs" id="TypeParametersOne":::
 
 - **Consider** using T as the type parameter name for types with one single letter type parameter.
 
-   :::code language="./snippets/coding-conventions" source="Program.cs" id="TypeParametersTwo":::
+   :::code language="./snippets/coding-conventions" source="./snippets/coding-conventions/Program.cs" id="TypeParametersTwo":::
 
 - **Do** prefix descriptive type parameter names with "T".
 
-   :::code language="./snippets/coding-conventions" source="Program.cs" id="TypeParametersThree":::
+   :::code language="./snippets/coding-conventions" source="./snippets/coding-conventions/Program.cs" id="TypeParametersThree":::
 
 - **Consider** indicating constraints placed on a type parameter in the name of parameter. For example, a parameter constrained to `ISession` may be called `TSession`.
 

@@ -5,14 +5,14 @@ namespace Coding_Conventions_Examples
     class Program
     {
         //<snippet14a>
-        public static Action<string> actionExample1 = x => Console.WriteLine($"x is: {x}");
+        public static Action<string> ActionExample1 = x => Console.WriteLine($"x is: {x}");
 
-        public static Action<string, string> actionExample2 = (x, y) =>
+        public static Action<string, string> ActionExample2 = (x, y) =>
             Console.WriteLine($"x is: {x}, y is {y}");
 
-        public static Func<string, int> funcExample1 = x => Convert.ToInt32(x);
+        public static Func<string, int> FuncExample1 = x => Convert.ToInt32(x);
 
-        public static Func<int, int, int> funcExample2 = (x, y) => x + y;
+        public static Func<int, int, int> FuncExample2 = (x, y) => x + y;
         //</snippet14a>
         //<snippet14b>
         public delegate void Del(string message);
@@ -114,13 +114,13 @@ namespace Coding_Conventions_Examples
             //</snippet13b>
 
             //<snippet15a>
-            actionExample1("string for x");
+            ActionExample1("string for x");
 
-            actionExample2("string for x", "string for y");
+            ActionExample2("string for x", "string for y");
 
-            Console.WriteLine($"The value is {funcExample1("1")}");
+            Console.WriteLine($"The value is {FuncExample1("1")}");
 
-            Console.WriteLine($"The sum is {funcExample2(1, 2)}");
+            Console.WriteLine($"The sum is {FuncExample2(1, 2)}");
             //</snippet15a>
             //<snippet15b>
             Del exampleDel2 = DelMethod;

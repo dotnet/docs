@@ -165,7 +165,7 @@ The following guidelines apply to type parameters on generic type parameters. Th
 
    :::code language="./snippets/coding-conventions" source="./snippets/coding-conventions/Program.cs" id="TypeParametersOne":::
 
-- **Consider** using T as the type parameter name for types with one single letter type parameter.
+- **Consider** using `T` as the type parameter name for types with one single letter type parameter.
 
    :::code language="./snippets/coding-conventions" source="./snippets/coding-conventions/Program.cs" id="TypeParametersTwo":::
 

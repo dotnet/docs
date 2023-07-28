@@ -9,7 +9,7 @@ helpviewer_keyword:
 ---
 # Common C# code conventions
 
-A code standard is essential for maintaining code readability, consistency, and collaboration within a development team. Following industry practices and established guidelines helps ensure that code is easier to understand, maintain, and extend. Most projects enforce a consistent style through code conventions. The [`dotnet/docs`](https://github.com/dotnet/docs) and [`dotnet/samples`](https://github.com/dotnet/samples) projects are no exception. In this series of articles, you learn our coding conventions and the tools we use to enforce them. You can take our conventions as-is, or modify them to suit your team.
+A code standard is essential for maintaining code readability, consistency, and collaboration within a development team. Following industry practices and established guidelines helps ensure that code is easier to understand, maintain, and extend. Most projects enforce a consistent style through code conventions. The [`dotnet/docs`](https://github.com/dotnet/docs) and [`dotnet/samples`](https://github.com/dotnet/samples) projects are no exception. In this series of articles, you learn our coding conventions and the tools we use to enforce them. You can take our conventions as-is, or modify them to suit your team's needs.
 
 We chose our conventions based on the following goals:
 
@@ -235,7 +235,7 @@ namespace CoolStuff.AwesomeFeature
         public void Stuff()
         {
             WaitUntil wait = WaitUntil.Completed;
-            …
+            // ...
         }
     }
 }
@@ -255,7 +255,7 @@ namespace CoolStuff.AwesomeFeature
         public void Stuff()
         {
             WaitUntil wait = WaitUntil.Completed;
-            …
+            // ...
         }
     }
 }
@@ -298,7 +298,7 @@ namespace CoolStuff.AwesomeFeature
         public void Stuff()
         {
             WaitUntil wait = WaitUntil.Completed;
-            …
+            // ...
         }
     }
 }

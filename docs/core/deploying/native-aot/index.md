@@ -188,6 +188,8 @@ The following table shows supported compilation targets.
 |----------|------------------------|----------------------|
 | Windows  | x64, Arm64             |                      |
 | Linux    | x64, Arm64             |                      |
-| macOS    | x64, Arm64             | Experimental support |
+| macOS   | x64, Arm64 |                                        |
+| iOS     | x64, Arm64 | Experimental support                   |
+| Android | x64, Arm64 | Experimental, no built-in Java interop |
 
 ---

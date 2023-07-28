@@ -76,6 +76,8 @@ items:
         href: extensions/8.0/activatorutilities-createinstance-null-provider.md
       - name: ConfigurationBinder throws for mismatched value
         href: extensions/8.0/configurationbinder-exceptions.md
+      - name: Empty keys added to dictionary by configuration binder
+        href: extensions/8.0/dictionary-configuration-binding.md
       - name: HostApplicationBuilderSettings.Args respected by constructor
         href: extensions/8.0/hostapplicationbuilder-ctor.md
     - name: Globalization
@@ -436,8 +438,6 @@ items:
       items:
       - name: AddProvider checks for non-null provider
         href: extensions/6.0/addprovider-null-check.md
-      - name: Empty keys added to dictionary by configuration binder
-        href: extensions/8.0/dictionary-configuration-binding.md
       - name: FileConfigurationProvider.Load throws InvalidDataException
         href: extensions/6.0/filename-in-load-exception.md
       - name: Repeated XML elements include index

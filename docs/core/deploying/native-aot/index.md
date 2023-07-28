@@ -189,7 +189,11 @@ The following table shows supported compilation targets.
 | Windows  | x64, Arm64             |                      |
 | Linux    | x64, Arm64             |                      |
 | macOS   | x64, Arm64 |                                        |
-| iOS     | x64, Arm64 | Experimental support                   |
+| iOS     | Arm64 | Experimental support                   |
+| iOSSimulator     | x64, Arm64 | Experimental support                   |
+| tvOS     | Arm64 | Experimental support                   |
+| tvOSSimulator     | x64, Arm64 | Experimental support                   |
+| MacCatalyst     | x64, Arm64 | Experimental support                   |
 | Android | x64, Arm64 | Experimental, no built-in Java interop |
 
 ---

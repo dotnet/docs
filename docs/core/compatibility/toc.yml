@@ -20,8 +20,6 @@ items:
         href: aspnet-core/8.0/addratelimiter-requirement.md
     - name: Containers
       items:
-      - name: Containers default to use the 'latest' tag
-        href: containers/8.0/default-image-tag.md
       - name: Container images upgraded to Debian 12
         href: containers/8.0/debian-version.md
       - name: Default ASP.NET Core port changed to 8080
@@ -104,6 +102,8 @@ items:
         href: sdk/8.0/console-encoding.md
       - name: Console encoding not UTF-8 after completion
         href: sdk/8.0/console-encoding-fix.md
+      - name: Containers default to use the 'latest' tag
+        href: sdk/8.0/default-image-tag.md
       - name: "'dotnet pack' uses Release configuration"
         href: sdk/8.0/dotnet-pack-config.md
       - name: "'dotnet publish' uses Release configuration"
@@ -1014,8 +1014,6 @@ items:
         href: https://github.com/dotnet/dotnet-docker/discussions/3699
     - name: .NET 8
       items:
-      - name: Containers default to use the 'latest' tag
-        href: containers/8.0/default-image-tag.md
       - name: Container images upgraded to Debian 12
         href: containers/8.0/debian-version.md
       - name: Default ASP.NET Core port changed to 8080
@@ -1418,6 +1416,8 @@ items:
         href: sdk/8.0/console-encoding.md
       - name: Console encoding not UTF-8 after completion
         href: sdk/8.0/console-encoding-fix.md
+      - name: Containers default to use the 'latest' tag
+        href: sdk/8.0/default-image-tag.md
       - name: "'dotnet pack' uses Release configuration"
         href: sdk/8.0/dotnet-pack-config.md
       - name: "'dotnet publish' uses Release configuration"

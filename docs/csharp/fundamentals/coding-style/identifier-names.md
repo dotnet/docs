@@ -20,7 +20,7 @@ For a complete definition of valid identifiers, see the [Identifiers article in 
 
 ## Naming conventions
 
-In addition to the rules, there are many identifier [naming conventions](../../../standard/design-guidelines/naming-guidelines.md) used throughout the .NET APIs. By convention, C# programs use `PascalCase` for type names, namespaces, and all public members. In addition, the following conventions are common:
+In addition to the rules, there are many identifier [naming conventions](../../../standard/design-guidelines/naming-guidelines.md) used throughout the .NET APIs. By convention, C# programs use `PascalCase` for type names, namespaces, and all public members. In addition, the `dotnet/docs` team uses the following conventions, adopted from the [.NET Runtime team coding style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md):
 
 - Interface names start with a capital `I`.
 - Attribute types end with the word `Attribute`.

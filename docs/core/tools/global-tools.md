@@ -3,7 +3,7 @@ title: .NET tools
 description: How to install, use, update, and remove .NET tools. Covers global tools, tool-path tools, and local tools. 
 author: KathleenDollard
 ms.topic: how-to
-ms.date: 08/10/2022
+ms.date: 07/25/2023
 ms.custom: devdivchpfy22
 ---
 # How to manage .NET tools
@@ -60,6 +60,8 @@ The output shows the command used to invoke the tool and the version installed, 
 You can invoke the tool using the following command: dotnetsay
 Tool 'dotnetsay' (version '2.1.4') was successfully installed.
 ```
+
+[!INCLUDE[](~/includes/dotnet-tool-install-arch-options.md)]
 
 The default location for a tool's binaries depends on the operating system:
 

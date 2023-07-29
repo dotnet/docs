@@ -88,8 +88,7 @@ C# style rules:
 
 - [Add braces (IDE0011)](ide0011.md)
 - [Use simple 'using' statement (IDE0063)](ide0063.md)
-- [Namespace declaration preferences (IDE0160)](ide0160-ide0161.md)
-- [Namespace declaration preferences (IDE0161)](ide0160-ide0161.md)
+- [Namespace declaration preferences (IDE0160, IDE0161)](ide0160-ide0161.md)
 - [Remove unnecessary lambda expression (IDE0200)](ide0200.md)
 - [Convert to top-level statements (IDE0210)](ide0210.md)
 - [Convert to 'Program.Main' style program (IDE0211)](ide0211.md)
@@ -118,8 +117,7 @@ C# style rules:
 - [Add missing cases to switch statement (IDE0010)](ide0010.md)
 - [Use object initializers (IDE0017)](ide0017.md)
 - [Use collection initializers (IDE0028)](ide0028.md)
-- [Use coalesce expression (IDE0029)](ide0029-ide0030.md)
-- [Use coalesce expression (IDE0030)](ide0029-ide0030.md)
+- [Null check can be simplified (IDE0029, IDE0030, IDE0270)](ide0029-ide0030-ide0270.md)
 - [Use null propagation (IDE0031)](ide0031.md)
 - [Use auto-implemented property (IDE0032)](ide0032.md)
 - [Use explicitly provided tuple name (IDE0033)](ide0033.md)
@@ -131,8 +129,7 @@ C# style rules:
 - [Convert anonymous type to tuple (IDE0050)](ide0050.md)
 - [Remove unused private member (IDE0051)](ide0051.md)
 - [Remove unread private member (IDE0052)](ide0052.md)
-- [Use compound assignment (IDE0054)](ide0054-ide0074.md)
-- [Use compound assignment (IDE0074)](ide0054-ide0074.md)
+- [Use compound assignment (IDE0054, IDE0074)](ide0054-ide0074.md)
 - [Remove unnecessary expression value (IDE0058)](ide0058.md)
 - [Remove unnecessary value assignment (IDE0059)](ide0059.md)
 - [Use 'System.HashCode.Combine' (IDE0070)](ide0070.md)
@@ -160,6 +157,8 @@ C# style rules:
 - [Use tuple to swap values (IDE0180)](ide0180.md)
 - [Add explicit cast in foreach loop (IDE0220)](ide0220.md)
 - [Use UTF-8 string literal (IDE0230)](ide0230.md)
+- [Nullable directive is redundant (IDE0240)](ide0240.md)
+- [Nullable directive is unnecessary (IDE0241)](ide0241.md)
 
 Visual Basic style rules:
 
@@ -190,6 +189,8 @@ C# style rules:
 
 - [Make local function static (IDE0062)](ide0062.md)
 - [Make struct fields writable (IDE0064)](ide0064.md)
+- [Struct can be made 'readonly' (IDE0250)](ide0250.md)
+- [Member can be made 'readonly' (IDE0251)](ide0251.md)
 
 ### New-line preferences
 
@@ -217,18 +218,16 @@ C# style rules:
 
 .NET style rules (C# and Visual Basic):
 
-- [Parentheses preferences (IDE0047)](ide0047-ide0048.md)
-- [Parentheses preferences (IDE0048)](ide0047-ide0048.md)
+- [Parentheses preferences (IDE0047, IDE0048)](ide0047-ide0048.md)
 
 ### Pattern-matching preferences
 
 C# style rules:
 
 - [Use pattern matching to avoid 'as' followed by 'null' check (IDE0019)](ide0019.md)
-- [Use pattern matching to avoid 'is' check followed by a cast (IDE0020)](ide0020-ide0038.md)
-- [Use pattern matching to avoid 'is' check followed by a cast (IDE0038)](ide0020-ide0038.md)
+- [Use pattern matching to avoid 'is' check followed by a cast (IDE0020, IDE0038)](ide0020-ide0038.md)
 - [Use switch expression (IDE0066)](ide0066.md)
-- [Use pattern matching (IDE0078)](ide0078.md)
+- [Use pattern matching (IDE0078 and IDE0260)](ide0078-ide0260.md)
 - [Use pattern matching (`not` operator) (IDE0083)](ide0083.md)
 - [Simplify property pattern (IDE0170)](ide0170.md)
 
@@ -242,15 +241,13 @@ C# style rules:
 
 .NET style rules (C# and Visual Basic):
 
-- [this and Me preferences (IDE0003)](ide0003-ide0009.md)
-- [this and Me preferences (IDE0009)](ide0003-ide0009.md)
+- [this and Me preferences (IDE0003, IDE0009)](ide0003-ide0009.md)
 
 ### `var` preferences
 
 C# style rules:
 
-- ['var' preferences (IDE0007)](ide0007-ide0008.md)
-- ['var' preferences (IDE0008)](ide0007-ide0008.md)
+- ['var' preferences (IDE0007, IDE0008)](ide0007-ide0008.md)
 
 ## See also
 

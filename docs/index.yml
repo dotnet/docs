@@ -323,8 +323,6 @@ additionalContent:
             text: Azure Cognitive Services
           - url: /azure/machine-learning
             text: Azure machine learning
-          - url: spark/index.yml
-            text: .NET for Apache Spark
           - url: fsharp/scenarios/machine-learning.md
             text: F# for Machine Leaning
       # Card
@@ -370,9 +368,9 @@ additionalContent:
         summary: API reference documentation for ML.NET
         url: ../api/index.md?view=ml-dotnet&preserve-view=true
       # Card
-      - title: ".NET for Apache Spark API reference"
-        summary: API reference documentation for .NET for Apache Spark
-        url: ../api/index.md?view=spark-dotnet&preserve-view=true
+      - title: ".NET Platform Extensions API reference"
+        summary: API reference documentation for .NET Platform Extensions
+        url: ../api/index.md?view=dotnet-plat-ext-8.0
       # Card
       - title: "C# language reference"
         summary: C# language reference and specification

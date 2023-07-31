@@ -135,9 +135,6 @@ You can control many aspects of the generated container through MSBuild properti
 > [!NOTE]
 > The only exceptions to this are `RUN` commands. Due to the way containers are built, those cannot be emulated. If you need this functionality, you'll need to use a _Dockerfile_ to build your container images.
 
-> [!IMPORTANT]
-> Currently, only Linux containers are supported.
-
 ### `ContainerBaseImage`
 
 The container base image property controls the image used as the basis for your image. By default, the following values are inferred based on the properties of your project:

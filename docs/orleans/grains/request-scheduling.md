@@ -1,7 +1,7 @@
 ---
 title: Request scheduling
 description: Learn about request scheduling in .NET Orleans.
-ms.date: 03/16/2022
+ms.date: 07/28/2023
 ---
 
 # Request scheduling
@@ -223,7 +223,7 @@ public sealed class InterleaveAttribute : Attribute { }
 [MayInterleave(nameof(ArgHasInterleaveAttribute))]
 public class MyGrain : Grain, IMyGrain
 {
-    public static bool ArgHasInterleaveAttribute(InvokeMethodRequest req)
+    public static bool ArgHasInterleaveAttribute(IInvokable req)
     {
         // Returning true indicates that this call should be interleaved with other calls.
         // Returning false indicates the opposite.

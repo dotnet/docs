@@ -185,19 +185,15 @@ Specifies the location of the .NET runtimes, if they are not installed in the de
 
 ### `DOTNET_HOST_PATH`
 
-Specifies the absolute path to a `dotnet` binary (`dotnet.exe` on Windows, `dotnet` on non-Windows) that was used to launch this session. This is typically used by a hosting application that wants to ensure that the exact same version of the host binary is used for all child processes.
+Specifies the absolute path to a `dotnet` host (`dotnet.exe` on Windows, `dotnet` on non-Windows) that was used to launch the currently-running `dotnet` process. This is used by the .NET SDK to help tools that run during .NET SDK commands ensure they use the same `dotnet` runtime for any child `dotnet` processes they create for the duration of the command. Tools and MSBuild Tasks within the SDK that invoke binaries via the `dotnet` host are expected to honor this environment variable to ensure a consistent experience.
 
-Without this environment variable, if a `dotnet` binary was used from a location not on the `PATH`, child processes of that `dotnet` that wished to invoke `dotnet` would invoke a different `dotnet` binary than the one that was used to spawn them - this can result in confusing behavior for end users.
-
-As a tool author, if you want to locate the correct `dotnet` binary to use to spawn a .NET binary, you should use the following algorithm:
+Tools that invoke `dotnet` during an SDK command should use the following algorithm to locate it:
 
 * if `DOTNET_HOST_PATH` is set, use that value directly
-* otherwise, probe `PATH` according to the rules of your operating system to find the first `dotnet` binary on the `PATH`
-
-This environment variable is set by default when the .NET SDK is invoked (typically by using `dotnet build`, `dotnet publish`, and so on). If your application needs to communicate the location of the `dotnet` binary that ran it in a similar way to the SDK, you should also set this environment variable.
+* otherwise, locate `dotnet` on the system's `PATH`
 
 > [!NOTE]
-> This environment variable will *not* be set for apphost-based execution (applications that are directly launched via a binary like `myapp.exe` or `myapp`) or through applications that are run via the `dotnet` binary (like `dotnet myapp.dll`). In such cases, the spawned applications should locate `dotnet` via the `PATH` as described above.
+> `DOTNET_HOST_PATH` is not a general solution for locating the `dotnet` host. It is only intended to be used by tools that are invoked by the .NET SDK during .NET SDK commands.
 
 ### `NUGET_PACKAGES`
 

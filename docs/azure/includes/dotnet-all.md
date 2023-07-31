@@ -269,7 +269,7 @@
 | Azure.Communication.Calling | NuGet [1.0.0-beta.36](https://www.nuget.org/packages/Azure.Communication.Calling/1.0.0-beta.36) |  |  |
 | Azure.Communication.CallingServer | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.CallingServer/1.0.0-beta.3) |  |  |
 | Azure.Core.Expressions.DataFactory | NuGet [1.0.0-beta.4](https://www.nuget.org/packages/Azure.Core.Expressions.DataFactory/1.0.0-beta.4) |  |  |
-| Communication Calling Windows Client | NuGet [1.1.0](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.1.0)<br>NuGet [1.2.0-beta.1](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.2.0-beta.1) |  |  |
+| Communication Calling Windows Client | NuGet [1.1.0](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.1.0)<br>NuGet [1.2.0-beta.2](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.2.0-beta.2) |  |  |
 | Data Movement - Blobs | NuGet [12.0.0-beta.3](https://www.nuget.org/packages/Azure.Storage.DataMovement.Blobs/12.0.0-beta.3) |  |  |
 | IoT Edge Function | NuGet [3.5.3](https://www.nuget.org/packages/Microsoft.Azure.IoT.Edge.Function/3.5.3) |  |  |
 | IoT Models Repository | NuGet [1.0.0-preview.5](https://www.nuget.org/packages/Azure.IoT.ModelsRepository/1.0.0-preview.5) |  |  |

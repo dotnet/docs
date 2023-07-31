@@ -50,7 +50,9 @@ To create your sample app, first create a separate console application project w
 - If your app targets .NET 7, [the new default behavior](../../../core/compatibility/deployment/7.0/trim-all-assemblies.md) is what you want, but you can enforce the behavior by adding `<TrimMode>full</TrimMode>` in a `<PropertyGroup>` tag.
   - This ensures that the trimmer only analyzes the parts of the library's dependencies that are used. It tells the trimmer that any code that isn't part of a "root" can be trimmed if it's unused. Without this option, you would see warnings originating from _any_ part of a dependency that doesn't set `[AssemblyMetadata("IsTrimmable", "True")]`, including parts that are unused by your library.
 
-##### .NET 6 .csproj
+##### .csproj file
+
+### [.NET 6](#tab/net6)
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -73,7 +75,7 @@ To create your sample app, first create a separate console application project w
 </Project>
 ```
 
-##### .NET 7 .csproj
+### [.NET 7](#tab/net7)
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -92,6 +94,28 @@ To create your sample app, first create a separate console application project w
 
 </Project>
 ```
+
+### [.NET 8+](#tab/net8plus)
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <PublishTrimmed>true</PublishTrimmed>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="path/to/MyLibrary.csproj" />
+    <!-- Analyze the whole library -->
+    <TrimmerRootAssembly Include="MyLibrary" />
+  </ItemGroup>
+
+</Project>
+```
+
+---
 
 Once your project file is updated, run `dotnet publish` with the [runtime identifier (RID)](../../rid-catalog.md) you want to target.
 
@@ -117,8 +141,8 @@ public class MyLibrary
 {
     public static void Method()
     {
-        // warning IL2026 : MyLibrary.Method: Using method 'MyLibrary.DynamicBehavior' which has
-        // 'RequiresUnreferencedCodeAttribute' can break functionality
+        // warning IL2026 : MyLibrary.Method: Using method 'MyLibrary.DynamicBehavior'
+        //  which has 'RequiresUnreferencedCodeAttribute' can break functionality
         // when trimming application code.
         DynamicBehavior();
     }
@@ -154,8 +178,10 @@ public class MyLibrary
     static void UseMethods(Type type)
     {
         // warning IL2070: MyLibrary.UseMethods(Type): 'this' argument does not satisfy
-        // 'DynamicallyAccessedMemberTypes.PublicMethods' in call to 'System.Type.GetMethods()'.
-        // The parameter 't' of method 'MyLibrary.UseMethods(Type)' does not have matching annotations.
+        // 'DynamicallyAccessedMemberTypes.PublicMethods' in call to
+        // 'System.Type.GetMethods()'.
+        // The parameter 't' of method 'MyLibrary.UseMethods(Type)' doesn't have
+        // matching annotations.
         foreach (var method in type.GetMethods())
         {
             // ...
@@ -186,7 +212,8 @@ static Type type;
 static void UseMethodsHelper()
 {
     // warning IL2077: MyLibrary.UseMethodsHelper(Type): 'type' argument does not satisfy
-    // 'DynamicallyAccessedMemberTypes.PublicMethods' in call to 'MyLibrary.UseMethods(Type)'.
+    // 'DynamicallyAccessedMemberTypes.PublicMethods' in call to
+    // 'MyLibrary.UseMethods(Type)'.
     // The field 'System.Type MyLibrary::type' does not have matching annotations.
     UseMethods(type);
 }

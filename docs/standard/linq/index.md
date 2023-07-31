@@ -177,7 +177,7 @@ var queryCats = from dog in dogs
 
 // Summing the lengths of a set of strings.
 int seed = 0;
-int sumOfStrings = strings.Aggregate(seed, (s1, s2) => s1.Length + s2.Length);
+int sumOfStrings = strings.Aggregate(seed, (partialSum, nextString) => partialSum + nextString.Length);
 ```
 
 ```vb
@@ -198,7 +198,7 @@ Dim queryCats = From dog In dogs
 
 ' Summing the lengths of a set of strings.
 Dim seed As Integer = 0
-Dim sumOfStrings As Integer = strings.Aggregate(seed, Function(s1, s2) s1.Length + s2.Length)
+Dim sumOfStrings As Integer = strings.Aggregate(seed, Function(partialSum, nextString) partialSum + nextString.Length)
 ```
 
 ### Flattening a list of lists

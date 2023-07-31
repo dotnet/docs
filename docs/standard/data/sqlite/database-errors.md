@@ -22,7 +22,7 @@ SQLite is aggressive when it comes to locking tables and database files. If your
 
 Whenever Microsoft.Data.Sqlite encounters a busy or locked error, it will automatically retry until it succeeds or the command timeout is reached.
 
-You can increase the timeout of command by setting <xref:Microsoft.Data.Sqlite.SqliteCommand.CommandTimeout%2A>. The default timeout is 30 seconds. A value of `0` means no timeout.
+You can increase the timeout of a command by setting <xref:Microsoft.Data.Sqlite.SqliteCommand.CommandTimeout%2A>. The default timeout is 30 seconds. A value of `0` means no timeout.
 
 ```csharp
 // Retry for 60 seconds while locked

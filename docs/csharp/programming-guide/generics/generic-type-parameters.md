@@ -15,23 +15,7 @@ In a generic type or method definition, a type parameter is a placeholder for a 
 
 In each of these instances of `GenericList<T>`, every occurrence of `T` in the class is substituted at run time with the type argument. By means of this substitution, we have created three separate type-safe and efficient objects using a single class definition. For more information on how this substitution is performed by the CLR, see [Generics in the Runtime](./generics-in-the-run-time.md).
 
-## Type parameter naming guidelines
-
-- **Do** name generic type parameters with descriptive names, unless a single letter name is completely self explanatory and a descriptive name would not add value.
-
-   [!code-csharp[csProgGuideGenerics#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#8)]
-
-- **Consider** using T as the type parameter name for types with one single letter type parameter.
-
-   [!code-csharp[csProgGuideGenerics#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#9)]
-
-- **Do** prefix descriptive type parameter names with "T".
-
-   [!code-csharp[csProgGuideGenerics#10](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#10)]
-
-- **Consider** indicating constraints placed on a type parameter in the name of parameter. For example, a parameter constrained to `ISession` may be called `TSession`.
-
-The code analysis rule [CA1715](/visualstudio/code-quality/ca1715) can be used to ensure that type parameters are named appropriately.
+You can learn the naming conventions for generic type parameters in the article on [naming conventions](../../fundamentals/coding-style/identifier-names.md#type-parameter-naming-guidelines).
 
 ## See also
 

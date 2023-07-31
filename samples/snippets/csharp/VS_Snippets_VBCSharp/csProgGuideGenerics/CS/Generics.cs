@@ -118,31 +118,6 @@ namespace CsCsrefProgrammingGenerics
         }
     }
 
-    //---------------------------------------------------------------------------
-    public class WrapParameters
-    {
-        //<Snippet8>
-        public interface ISessionChannel<TSession> { /*...*/ }
-        public delegate TOutput Converter<TInput, TOutput>(TInput from);
-        public class List<T> { /*...*/ }
-        //</Snippet8>
-
-        //<Snippet9>
-        public int IComparer<T>() { return 0; }
-        public delegate bool Predicate<T>(T item);
-        public struct Nullable<T> where T : struct { /*...*/ }
-        //</Snippet9>
-
-        class wrap
-        {
-            //<Snippet10>
-            public interface ISessionChannel<TSession>
-            {
-                TSession Session { get; }
-            }
-            //</Snippet10>
-        }
-    }//WrapParameters
 
     //---------------------------------------------------------------------------
     public class WrapConstraints

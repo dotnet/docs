@@ -45,8 +45,8 @@ When hosting in a server environment, each application should be assigned a uniq
 
 | Authentication method | Description |
 |-----------------------|-------------|
-| Apps hosted in Azure  | [!INCLUDE [sdk-auth-overview-managed-identity](./includes/sdk-auth-overview-managed-identity.md)]            |
-| Apps hosted outside of Azure<br>(for example on-premises apps) | [!INCLUDE [sdk-auth-overview-service-principal](./includes/sdk-auth-overview-service-principal.md)] |
+| Apps hosted in Azure  | [!INCLUDE [sdk-auth-overview-managed-identity](../includes/sdk-auth-overview-managed-identity.md)]            |
+| Apps hosted outside of Azure<br>(for example on-premises apps) | [!INCLUDE [sdk-auth-overview-service-principal](../includes/sdk-auth-overview-service-principal.md)] |
 
 ## Authentication during local development
 
@@ -54,12 +54,12 @@ When an application is run on a developer's workstation during local development
 
 | Authentication method | Description |
 |-----------------------|-------------|
-| Create dedicated application service principal objects to be used during local development | [!INCLUDE [sdk-auth-overview-dev-service-principals](./includes/sdk-auth-overview-dev-service-principals.md)] |
-| Authenticate the app to Azure using the developer's credentials during local development | [!INCLUDE [sdk-auth-overview-dev-accounts](./includes/sdk-auth-overview-dev-accounts.md)] |
+| Create dedicated application service principal objects to be used during local development | [!INCLUDE [sdk-auth-overview-dev-service-principals](../includes/sdk-auth-overview-dev-service-principals.md)] |
+| Authenticate the app to Azure using the developer's credentials during local development | [!INCLUDE [sdk-auth-overview-dev-accounts](../includes/sdk-auth-overview-dev-accounts.md)] |
 
 ## Use DefaultAzureCredential in an application
 
-[!INCLUDE [Implement Default Azure Credentials](<./includes/implement-defaultazurecredential.md>)]
+[!INCLUDE [Implement Default Azure Credentials](<../includes/implement-defaultazurecredential.md>)]
 
 ### Exploring the sequence of DefaultAzureCredential authentication methods
 

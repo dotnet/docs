@@ -10,7 +10,7 @@ ms.date: 2/28/2023
 
 When creating cloud applications, developers need to debug and test applications on their local workstation. When an application is run on a developer's workstation during local development, it still must authenticate to any Azure services used by the app.  This article covers how to set up dedicated application service principal objects to be used during local development.
 
-:::image type="content" source="media/local-dev-service-principal-overview.png" alt-text="A diagram showing how a .NET app during local development will use the developer's credentials to connect to Azure by obtaining those credentials locally installed development tools.":::
+:::image type="content" source="../media/local-dev-service-principal-overview.png" alt-text="A diagram showing how a .NET app during local development will use the developer's credentials to connect to Azure by obtaining those credentials locally installed development tools.":::
 
 Dedicated application service principals for local development allow you to follow the principle of least privilege during app development. Since permissions are scoped to exactly what is needed for the app during development, app code is prevented from accidentally accessing an Azure resource intended for use by a different app. This also prevents bugs from occurring when the app is moved to production because the app was overprivileged in the dev environment.
 

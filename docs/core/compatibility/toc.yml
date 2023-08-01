@@ -20,6 +20,8 @@ items:
         href: aspnet-core/8.0/addratelimiter-requirement.md
     - name: Containers
       items:
+      - name: "'ca-certificates' and 'krb5-libs' removed from Alpine images"
+        href: containers/8.0/krb5-libs-package.md
       - name: Container images upgraded to Debian 12
         href: containers/8.0/debian-version.md
       - name: Default ASP.NET Core port changed to 8080
@@ -1020,6 +1022,8 @@ items:
         href: https://github.com/dotnet/dotnet-docker/discussions/3699
     - name: .NET 8
       items:
+      - name: "'ca-certificates' and 'krb5-libs' removed from Alpine images"
+        href: containers/8.0/krb5-libs-package.md
       - name: Container images upgraded to Debian 12
         href: containers/8.0/debian-version.md
       - name: Default ASP.NET Core port changed to 8080

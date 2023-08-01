@@ -8,7 +8,7 @@ ms.date: 2/28/2023
 
 # Additional methods to authenticate to Azure resources from .NET apps
 
-This article lists additional methods apps may use to authenticate to Azure resources. The methods on this page are less commonly used and when possible, it is encouraged to use one of the methods outlined in the [authenticating .NET apps to Azure using the Azure SDK overview](./authentication.md) article.
+This article lists additional methods apps may use to authenticate to Azure resources. The methods on this page are less commonly used and when possible, it is encouraged to use one of the methods outlined in the [authenticating .NET apps to Azure using the Azure SDK overview](./index.md) article.
 
 ## Interactive browser authentication
 
@@ -74,5 +74,4 @@ foreach (var blobItem in client.GetBlobContainers())
 {
     Console.WriteLine(blobItem.Name);
 }
-
 ```

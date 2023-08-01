@@ -18,6 +18,8 @@ items:
         href: aspnet-core/8.0/isystemclock-obsolete.md
       - name: Rate-limiting middleware requires AddRateLimiter
         href: aspnet-core/8.0/addratelimiter-requirement.md
+      - name: TrimMode defaults to full for Web SDK projects
+        href: aspnet-core/8.0/trimmode-full.md
     - name: Containers
       items:
       - name: Container images upgraded to Debian 12
@@ -824,6 +826,8 @@ items:
         href: aspnet-core/8.0/isystemclock-obsolete.md
       - name: Rate-limiting middleware requires AddRateLimiter
         href: aspnet-core/8.0/addratelimiter-requirement.md
+      - name: TrimMode defaults to full for Web SDK projects
+        href: aspnet-core/8.0/trimmode-full.md
     - name: .NET 7
       items:
       - name: API controller actions try to infer parameters from DI

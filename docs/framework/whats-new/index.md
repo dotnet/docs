@@ -88,7 +88,7 @@ The highlights of Windows Forms improvements in .NET Framework 4.8.1 are:
 - [Text pattern support](/windows/win32/winauto/uiauto-implementingtextandtextrange)– Windows Forms added support for the UIA Text Pattern. This pattern enables assistive technology to traverse the content of a TextBox or similar text-based control letter by letter. It enables text to be selected within the control and changed, and new text to be inserted at the cursor. Windows Forms added this support for TextBox, DataGridView cells, ComboBox controls, and more.
 - Address contrast issues– In several controls, Windows Forms has changed the contrast ratio of selection rectangles to be darker and more visible.
 - Fixed several DataGridView issues:
-  
+
   - The scrollbar names have been updated to be consistent.
   - Narrator is now able to focus on empty DataGridView cells.
   - Developers are able to set the localized control type property for Custom DataGridView cells.
@@ -138,7 +138,7 @@ By default in applications that target .NET Framework 4.8, the following managed
 - <xref:System.Security.Cryptography.RIPEMD160Managed>
 - <xref:System.Security.Cryptography.SHA256Managed>
 
-Instead, these classes redirect cryptographic operations to a system cryptography library. This change effectively removes a potentially confusing difference between developer environments and production environments and makes native components and managed components operate under the same cryptographic policy. Applications that depend on these exceptions can restore the previous behavior by setting the AppContext switch `Switch.System.Security.Cryptography.UseLegacyFipsThrow` to `true`. For more information, see [Managed cryptography classes do not throw a CryptographyException in FIPS mode](../migration-guide/retargeting/4.7.2-4.8.md#managed-cryptography-classes-do-not-throw-a-cryptographyexception-in-fips-mode).
+Instead, these classes redirect cryptographic operations to a system cryptography library. This change effectively removes a potentially confusing difference between developer environments and production environments and makes native components and managed components operate under the same cryptographic policy. Applications that depend on these exceptions can restore the previous behavior by setting the AppContext switch `Switch.System.Security.Cryptography.UseLegacyFipsThrow` to `true`. For more information, see [Managed cryptography classes do not throw a CryptographyException in FIPS mode](../migration-guide/retargeting/4.8.x.md#managed-cryptography-classes-do-not-throw-a-cryptographyexception-in-fips-mode).
 
 **Use of updated version of ZLib**
 

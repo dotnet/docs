@@ -104,6 +104,8 @@ items:
         href: sdk/8.0/console-encoding.md
       - name: Console encoding not UTF-8 after completion
         href: sdk/8.0/console-encoding-fix.md
+      - name: Containers default to use the 'latest' tag
+        href: sdk/8.0/default-image-tag.md
       - name: "'dotnet pack' uses Release configuration"
         href: sdk/8.0/dotnet-pack-config.md
       - name: "'dotnet publish' uses Release configuration"
@@ -274,16 +276,18 @@ items:
         href: sdk/7.0/automatic-rid-publish-only.md
       - name: CLI console output uses UTF-8
         href: sdk/8.0/console-encoding.md
-      - name: Version requirements for .NET 7 SDK
+      - name: Version requirements
         href: sdk/7.0/vs-msbuild-version.md
       - name: SDK no longer calls ResolvePackageDependencies
         href: sdk/7.0/resolvepackagedependencies.md
-      - name: Serialization of custom types in .NET 7
+      - name: Serialization of custom types
         href: sdk/7.0/custom-serialization.md
       - name: Side-by-side SDK installations
         href: sdk/7.0/side-by-side-install.md
       - name: --output option no longer is valid for solution-level commands
         href: sdk/7.0/solution-level-output-no-longer-valid.md
+      - name: Tool manifests in root folder
+        href: sdk/7.0/manifest-search.md
     - name: Serialization
       items:
       - name: BinaryFormatter serialization APIs produce compiler errors
@@ -488,6 +492,8 @@ items:
         href: sdk/6.0/runtimeconfigdev-file.md
       - name: RuntimeIdentifier warning if self-contained is unspecified
         href: sdk/6.0/runtimeidentifier-self-contained.md
+      - name: Tool manifests in root folder
+        href: sdk/7.0/manifest-search.md
       - name: Version requirements for .NET 6 SDK
         href: sdk/6.0/vs-msbuild-version.md
       - name: .version file includes build version
@@ -1418,6 +1424,8 @@ items:
         href: sdk/8.0/console-encoding.md
       - name: Console encoding not UTF-8 after completion
         href: sdk/8.0/console-encoding-fix.md
+      - name: Containers default to use the 'latest' tag
+        href: sdk/8.0/default-image-tag.md
       - name: "'dotnet pack' uses Release configuration"
         href: sdk/8.0/dotnet-pack-config.md
       - name: "'dotnet publish' uses Release configuration"
@@ -1444,6 +1452,8 @@ items:
         href: sdk/7.0/side-by-side-install.md
       - name: --output option no longer is valid for solution-level commands
         href: sdk/7.0/solution-level-output-no-longer-valid.md
+      - name: Tool manifests in root folder
+        href: sdk/7.0/manifest-search.md
     - name: .NET 6
       items:
       - name: -p option for `dotnet run` is deprecated
@@ -1470,6 +1480,8 @@ items:
         href: sdk/6.0/runtimeconfigdev-file.md
       - name: RuntimeIdentifier warning if self-contained is unspecified
         href: sdk/6.0/runtimeidentifier-self-contained.md
+      - name: Tool manifests in root folder
+        href: sdk/7.0/manifest-search.md
       - name: Version requirements for .NET 6 SDK
         href: sdk/6.0/vs-msbuild-version.md
       - name: .version file includes build version

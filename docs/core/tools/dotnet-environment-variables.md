@@ -8,7 +8,7 @@ ms.date: 04/04/2023
 
 **This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
-In this article, you'll learn about the environment variables used by .NET SDK, .NET CLI, and .NET runtime. Some environment variables are used by the .NET runtime, while others are only used by the .NET SDK and .NET CLI. Some environment variables are used by all.
+In this article, you'll learn about the environment variables used by .NET. Some environment variables are used by the .NET runtime, while others are only used by the .NET SDK and .NET CLI. Some environment variables are used by all three components.
 
 ## .NET runtime environment variables
 
@@ -287,7 +287,11 @@ Disables background download of advertising manifests for workloads. Default is 
 
 ### `DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_INTERVAL_HOURS`
 
-Specifies the minimum number of hours between background downloads of advertising manifests for workloads. Default is `24` - no more frequently than once a day. For more information, see [Advertising manifests](dotnet-workload-install.md#advertising-manifests).
+Specifies the minimum number of hours between background downloads of advertising manifests for workloads. The default is `24`, which is no more frequently than once a day. For more information, see [Advertising manifests](dotnet-workload-install.md#advertising-manifests).
+
+### `DOTNET_TOOLS_ALLOW_MANIFEST_IN_ROOT`
+
+Specifies whether .NET SDK local tools search for tool manifest files in the root folder on Windows. The default is `false`.
 
 ### `COREHOST_TRACE`
 

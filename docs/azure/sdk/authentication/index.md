@@ -16,7 +16,7 @@ It is recommended that apps use token-based authentication rather than connectio
 
 The specific type of token-based authentication an app should use to authenticate to Azure resources depends on where the app is being run and is shown in the following diagram.
 
-:::image type="content" source="./media/dotnet-sdk-auth-strategy.png" alt-text="A diagram showing the recommended token-based authentication strategies for an app depending on where it's running." :::
+:::image type="content" source="../media/dotnet-sdk-auth-strategy.png" alt-text="A diagram showing the recommended token-based authentication strategies for an app depending on where it's running." :::
 
 - **When a developer is running an app during local development -** The app can authenticate to Azure using either an application service principal for local development or by using the developer's Azure credentials.  Each of these options is discussed in more detail in the section [authentication during local development](#authentication-during-local-development).
 - **When an app is hosted on Azure -** The app should authenticate to Azure resources using a managed identity. This option is discussed in more detail below in the section [authentication in server environments](#authentication-in-server-environments).

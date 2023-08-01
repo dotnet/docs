@@ -1,7 +1,7 @@
 ---
 title: dotnet-install scripts
 description: Learn about the dotnet-install scripts to install the .NET SDK and the shared runtime.
-ms.date: 07/10/2023
+ms.date: 08/01/2023
 ---
 # dotnet-install scripts reference
 
@@ -103,8 +103,8 @@ The install scripts do not update the registry on Windows. They just download th
 
   Specifies the source channel for the installation. The possible values are:
 
-  - `STS` - the most recent Standard Term Support release
-  - `LTS` - the most recent Long Term Support release
+  - `STS`: The most recent Standard Term Support release.
+  - `LTS`: The most recent Long Term Support release.
   - Two-part version in A.B format, representing a specific release (for example, `3.1` or `6.0`).
   - Three-part version in A.B.Cxx format, representing a specific SDK release (for example, 6.0.1xx or 6.0.2xx). Available since the 5.0 release.
 
@@ -158,11 +158,11 @@ The install scripts do not update the registry on Windows. They just download th
 
   The different quality values signal different stages of the release process of the SDK or Runtime installed.
 
-  * `daily` - these builds are the latest builds of the SDK or Runtime. They are built every day and are not tested. They are not recommended for production use, but can often be used to test specific features or fixes immediately after they are merged into the product. Note that these builds are from the `dotnet/installer` repo, and so if you're looking for fixes from `dotnet/sdk` you must wait for code to flow and be merged from SDK to Installer before it appears in a daily build.
-  * `signed` - these builds are Microsoft-signed, but not validated or publicly released. Signed builds are candidates for validation, preview, and GA release. This quality level is not really intended for public usage.
-  * `validated` - these builds have had a level of internal testing done on them, and may be candidates for a preview or GA release, but have not yet been released under those labels. This quality level is not really intended for public usage.
-  * `preview` - these builds are the monthly public releases of the next version of .NET, and are intended for public usage. They are not recommended for production use, but are intended to allow users to experiment and test the new major version before release.
-  * `GA` - these builds are the final stable releases of the .NET SDK and Runtime, and are intended for public usage as well as production support.
+  * `daily`: The latest builds of the SDK or Runtime. They're built every day and aren't tested. They aren't recommended for production use but can often be used to test specific features or fixes immediately after they are merged into the product. These builds are from the `dotnet/installer` repo, and so if you're looking for fixes from `dotnet/sdk` you must wait for code to flow and be merged from SDK to Installer before it appears in a daily build.
+  * `signed`: Microsoft-signed builds that aren't validated or publicly released. Signed builds are candidates for validation, preview, and GA release. This quality level is not intended for public use.
+  * `validated`: Builds that have had some internal testing done on them but are not yet released as preview or GA. This quality level is not intended for public use.
+  * `preview`: The monthly public releases of the next version of .NET, intended for public use. Not recommended for production use. Intended to allow users to experiment and test the new major version before release.
+  * `GA`: The final stable releases of the .NET SDK and Runtime. Intended for public use as well as production support.
   
   The `--quality` option works only in combination with `--channel`, but is not applicable for the `STS` and `LTS` channels and will be ignored if one of those channels is used.
 
@@ -177,9 +177,9 @@ The install scripts do not update the registry on Windows. They just download th
 
   Installs just the shared runtime, not the entire SDK. The possible values are:
 
-  - `dotnet` - the `Microsoft.NETCore.App` shared runtime.
-  - `aspnetcore` - the `Microsoft.AspNetCore.App` shared runtime.
-  - `windowsdesktop` - the `Microsoft.WindowsDesktop.App` shared runtime.
+  - `dotnet`: The `Microsoft.NETCore.App` shared runtime.
+  - `aspnetcore`: The `Microsoft.AspNetCore.App` shared runtime.
+  - `windowsdesktop` The `Microsoft.WindowsDesktop.App` shared runtime.
 
 - **`--os <OPERATING_SYSTEM>`**
 
@@ -210,7 +210,7 @@ The install scripts do not update the registry on Windows. They just download th
 
   Represents a specific build version. The possible values are:
 
-  - `latest` - Latest build on the channel (used with the `-Channel` option).
+  - `latest`: Latest build on the channel (used with the `-Channel` option).
   - Three-part version in X.Y.Z format representing a specific build version; supersedes the `-Channel` option. For example: `2.0.0-preview2-006120`.
 
   If not specified, `-Version` defaults to `latest`.
@@ -303,7 +303,7 @@ Manually installing .NET doesn't add the environment variables system-wide, and 
 
 ## Uninstall
 
-There is no uninstall script. For more information about manually uninstalling .NET, see [How to remove the .NET Runtime and SDK](../install/remove-runtime-sdk-versions.md#scripted-or-manual).
+There is no uninstall script. For information about manually uninstalling .NET, see [How to remove the .NET Runtime and SDK](../install/remove-runtime-sdk-versions.md#scripted-or-manual).
 
 ## See also
 

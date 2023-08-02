@@ -10,22 +10,45 @@ ms.date: 06/12/2023
 
 The .NET SDK makes it possible to reduce the size of self-contained apps by [trimming](trim-self-contained.md), which removes unused code from the app and its dependencies. Not all code is compatible with trimming, so .NET 6 provides trim analysis warnings to detect patterns that may break trimmed apps. To resolve warnings originating from the app code, see [resolving trim warnings](#resolve-trim-warnings). This article describes how to prepare libraries for trimming with the aid of these warnings, including recommendations for fixing some common cases.
 
+## Prerequisites
+
+### [.NET 6](#tab/net6)
+
+[.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet)
+
+### [.NET 7](#tab/net7)
+
+[.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet)
+
+### [.NET 8+](#tab/net8plus)
+
+[.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet)
+
+---
+
 ## Enable library trim warnings
 
-> [!TIP]
-> Ensure you're using the .NET 6 SDK or later for these steps. They will not work correctly in previous versions.
+There are two ways to find trim warnings in a library:
 
-There are two ways to find trim warnings in your library:
-
-  1. Enable project-specific trimming using the `IsTrimmable` property.
-  2. Add your library as a reference to a sample app, and trim the sample app.
+* Enable project-specific trimming using the `IsTrimmable` property.
+* Add the library as a reference to a sample app, and trim the sample app.
 
 Consider doing both. Project-specific trimming is convenient and shows trim warnings for one project, but relies on the references being marked trim-compatible to see all warnings. Trimming a sample app is more work, but will always show all warnings.
 
 ### Enable project-specific trimming
 
-> [!TIP]
-> To get the latest version of the analyzer with the most coverage, use the [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet). Note this will only update the tooling used to build your app and doesn't require you to target the .NET 7 runtime.
+### [.NET 6](#tab/net6)
+
+To get the latest version of the analyzer with the most coverage, install the [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet) or later. Installing the .NET 7 SDK or later:  <!-- Can I replace .NET 7 SDK with .NET 8 SDK before .NET 8 releases? -->
+
+* Updates the tooling used to build an app or library and enable trim warnings.
+* Doesn't require targeting the .NET 7 or later runtime.
+
+### [.NET 7](#tab/net7)
+
+### [.NET 8+](#tab/net8plus)
+
+---
 
 Set `<IsTrimmable>true</IsTrimmable>` in a `<PropertyGroup>` tag in your library project file. This marks your assembly as "trimmable" and enable trim warnings for that project. Being "trimmable" means your library is considered compatible with trimming and should have no trim warnings when building the library. When used in a trimmed application, the assembly has its unused members trimmed in the final output.
 

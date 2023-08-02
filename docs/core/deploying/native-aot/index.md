@@ -19,7 +19,7 @@ The native AOT deployment model uses an ahead-of-time compiler to compile IL to 
 ### [.NET 7](#tab/net7)
 
 > [!WARNING]
-> 
+>
 > - Native AOT is targeted towards console-type apps.
 > - Only a limited number of libraries are fully compatible with native AOT.
 >

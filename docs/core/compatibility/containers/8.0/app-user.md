@@ -13,7 +13,7 @@ Prior to .NET 8, the Linux container images did not include any additional users
 
 ## New behavior
 
-Starting in .NET 8, Linux container images define a user named `app`` that can be opted-into for additional security benefits. However, the name of this user may conflict with an existing user that was defined by the application's Dockerfile. If the application's Dockerfile attempts to create a user with the same name, an error might occur saying that the user already exists.
+Starting in .NET 8, Linux container images define a user named `app` that can be opted-into for additional security benefits. However, the name of this user may conflict with an existing user that was defined by the application's Dockerfile. If the application's Dockerfile attempts to create a user with the same name, an error might occur saying that the user already exists.
 
 ## Version introduced
 

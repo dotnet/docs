@@ -54,4 +54,6 @@ None.
 
 ## See also
 
-- [Port switch blog post](https://devblogs.microsoft.com/dotnet/securing-containers-with-rootless/#switching-to-port-8080)
+- [New 'app' user in Linux images](app-user.md)
+- [Port switch (blog post)](https://devblogs.microsoft.com/dotnet/securing-containers-with-rootless/#switching-to-port-8080)
+- [Hardening an ASP.NET container running on Kubernetes (blog post)](https://techcommunity.microsoft.com/t5/azure-developer-community-blog/hardening-an-asp-net-container-running-on-kubernetes/ba-p/2542224)

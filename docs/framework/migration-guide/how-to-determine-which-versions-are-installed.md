@@ -8,7 +8,6 @@ dev_langs:
 helpviewer_keywords:
   - "versions, determining for .NET Framework"
   - ".NET Framework, determining installed versions"
-ms.assetid: 40a67826-e4df-4f59-a651-d9eb0fdc755d
 ---
 # How to: Determine which .NET Framework versions are installed
 
@@ -63,17 +62,17 @@ The **Release** REG_DWORD value in the registry represents the version of .NET F
 
 | .NET Framework version | Value of **Release** |
 | ---------------------- | -------------------------- |
-| .NET Framework 4.5     | All Windows operating systems: 378389 |
-| .NET Framework 4.5.1   | On Windows 8.1 and Windows Server 2012 R2: 378675<br />On all other Windows operating systems: 378758 |
-| .NET Framework 4.5.2   | All Windows operating systems: 379893 |
-| .NET Framework 4.6     | On Windows 10: 393295<br />On all other Windows operating systems: 393297 |
-| .NET Framework 4.6.1   | On Windows 10 November Update systems: 394254<br />On all other Windows operating systems (including Windows 10): 394271 |
-| .NET Framework 4.6.2   | On Windows 10 Anniversary Update and Windows Server 2016: 394802<br />On all other Windows operating systems (including other Windows 10 operating systems): 394806 |
-| .NET Framework 4.7     | On Windows 10 Creators Update: 460798<br />On all other Windows operating systems (including other Windows 10 operating systems): 460805 |
-| .NET Framework 4.7.1   | On Windows 10 Fall Creators Update and Windows Server, version 1709: 461308<br/>On all other Windows operating systems (including other Windows 10 operating systems): 461310 |
-| .NET Framework 4.7.2   | On Windows 10 April 2018 Update and Windows Server, version 1803: 461808<br/>On all Windows operating systems other than Windows 10 April 2018 Update and Windows Server, version 1803: 461814 |
-| .NET Framework 4.8     | On Windows 10 May 2019 Update and Windows 10 November 2019 Update: 528040<br/>On Windows 10 May 2020 Update, October 2020 Update, May 2021 Update, November 2021 Update, and 2022 Update: 528372<br/>On Windows 11 and Windows Server 2022: 528449<br/>On all other Windows operating systems (including other Windows 10 operating systems): 528049 |
-| .NET Framework 4.8.1   | On Windows 11 2022 Update: 533320<br/>All other Windows operating systems: 533325 |
+| .NET Framework 4.5     | All Windows operating systems: **378389** |
+| .NET Framework 4.5.1   | On Windows 8.1 and Windows Server 2012 R2: **378675**<br />On all other Windows operating systems: **378758** |
+| .NET Framework 4.5.2   | All Windows operating systems: **379893** |
+| .NET Framework 4.6     | On Windows 10: **393295**<br />On all other Windows operating systems: **393297** |
+| .NET Framework 4.6.1   | On Windows 10 November Update systems: **394254**<br />On all other Windows operating systems (including Windows 10): **394271** |
+| .NET Framework 4.6.2   | On Windows 10 Anniversary Update and Windows Server 2016: **394802**<br />On all other Windows operating systems (including other Windows 10 operating systems): **394806** |
+| .NET Framework 4.7     | On Windows 10 Creators Update: **460798**<br />On all other Windows operating systems (including other Windows 10 operating systems): **460805** |
+| .NET Framework 4.7.1   | On Windows 10 Fall Creators Update and Windows Server, version 1709: **461308**<br/>On all other Windows operating systems (including other Windows 10 operating systems): **461310** |
+| .NET Framework 4.7.2   | On Windows 10 April 2018 Update and Windows Server, version 1803: **461808**<br/>On all Windows operating systems other than Windows 10 April 2018 Update and Windows Server, version 1803: **461814** |
+| .NET Framework 4.8     | On Windows 10 May 2019 Update and Windows 10 November 2019 Update: **528040**<br/>On Windows 10 May 2020 Update, October 2020 Update, May 2021 Update, November 2021 Update, and 2022 Update: **528372**<br/>On Windows 11 and Windows Server 2022: **528449**<br/>On all other Windows operating systems (including other Windows 10 operating systems): **528049** |
+| .NET Framework 4.8.1   | On Windows 11 2022 Update: **533320**<br/>All other Windows operating systems: **533325** |
 
 ### Minimum version
 

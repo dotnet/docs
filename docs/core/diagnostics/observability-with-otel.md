@@ -262,13 +262,13 @@ Modify the Prometheus YAML configuration file to specify the port for your HTTP 
   scrape_configs:
   # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
   - job_name: "prometheus"
+    - scrape_interval: 1s # poll very quickly for a more responsive demo
 
     # metrics_path defaults to '/metrics'
     # scheme defaults to 'http'.
 
     static_configs:
       - targets: ["localhost:5212"]
-      - scrape_interval: 1s # poll very quickly for a more responsive demo
 ```
 
 Start Prometheus, and look in the output for the port it's running on, typically 9090:

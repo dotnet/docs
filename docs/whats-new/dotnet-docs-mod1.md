@@ -95,7 +95,7 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [mrahhal](https://github.com/mrahhal) - Mohammad Rahhal ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [ousiax](https://github.com/ousiax) - John Hsu ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [Sljcom](https://github.com/Sljcom) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [softwaretirol](https://github.com/softwaretirol) - www.software.tirol ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [softwaretirol](https://github.com/softwaretirol) - <www.software.tirol> ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [Varorbc](https://github.com/Varorbc) - Varorbc ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [Youssef1313](https://github.com/Youssef1313) - Youssef Victor ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [zacharylayne](https://github.com/zacharylayne) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)

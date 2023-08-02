@@ -248,6 +248,8 @@ items:
         href: globalization/7.0/icu-globalization-api.md
     - name: Extensions
       items:
+      - name: Binding config to dictionary extends values
+        href: extensions/7.0/config-bind-dictionary.md
       - name: ContentRootPath for apps launched by Windows Shell
         href: extensions/7.0/contentrootpath-hosted-app.md
       - name: Environment variable prefixes
@@ -1308,6 +1310,8 @@ items:
         href: extensions/8.0/hostapplicationbuilder-ctor.md
     - name: .NET 7
       items:
+      - name: Binding config to dictionary extends values
+        href: extensions/7.0/config-bind-dictionary.md
       - name: ContentRootPath for apps launched by Windows Shell
         href: extensions/7.0/contentrootpath-hosted-app.md
       - name: Environment variable prefixes

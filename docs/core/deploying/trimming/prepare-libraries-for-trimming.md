@@ -44,17 +44,26 @@ To get the latest version of the analyzer with the most coverage, install the [.
 * Updates the tooling used to build an app or library and enable trim warnings.
 * Doesn't require targeting the .NET 7 or later runtime.
 
+Set `<IsTrimmable>true</IsTrimmable>` in the project file.
+
 ### [.NET 7](#tab/net7)
+
+Set `<IsTrimmable>true</IsTrimmable>` in the project file.
 
 ### [.NET 8+](#tab/net8plus)
 
+Set `<IsTrimmable>true</IsTrimmable>` in the project file.
+
 ---
 
-Set `<IsTrimmable>true</IsTrimmable>` in a `<PropertyGroup>` tag in your library project file. This marks your assembly as "trimmable" and enable trim warnings for that project. Being "trimmable" means your library is considered compatible with trimming and should have no trim warnings when building the library. When used in a trimmed application, the assembly has its unused members trimmed in the final output.
+Setting `<IsTrimmable>true</IsTrimmable>` marks the assembly as "trimmable" and enables trim warnings. "trimmable" means the project:
 
-The `IsTrimmable` property defaults to `true` when configuring a library as AOT-compatible (`<IsAotCompatible>true</IsAotCompatible>`). For more information, see [AOT-compatibility analyzers](../native-aot/index.md#aot-compatibility-analyzers).
+* Is considered compatible with trimming.
+* Shouldn't trim warnings when building. When used in a trimmed app, the assembly has its unused members trimmed in the final output.
 
-If you want to see trim warnings, but don't want to mark your library as trim-compatible, you can add `<EnableTrimAnalyzer>true</EnableTrimAnalyzer>` instead.
+The `IsTrimmable` property defaults to `true` when configuring a project as AOT-compatible with `<IsAotCompatible>true</IsAotCompatible>`. For more information, see [AOT-compatibility analyzers](../native-aot/index.md#aot-compatibility-analyzers).
+
+To generate trim warnings without marking the project as trim-compatible, use `<EnableTrimAnalyzer>true</EnableTrimAnalyzer>` rather than `<IsTrimmable>true</IsTrimmable>`.
 
 ### Show all warnings with sample application
 

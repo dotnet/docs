@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "worker-service-options", "w
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "logger-message-generator", "logger-message-generator\logger-message-generator.csproj", "{93C2255D-2CED-4C0A-8B2A-3191B0B85C7B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "library-authors", "library-authors\library-authors.csproj", "{C0C79D16-5ECB-4B52-9303-15DCF6B0B639}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{93C2255D-2CED-4C0A-8B2A-3191B0B85C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93C2255D-2CED-4C0A-8B2A-3191B0B85C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93C2255D-2CED-4C0A-8B2A-3191B0B85C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0C79D16-5ECB-4B52-9303-15DCF6B0B639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C79D16-5ECB-4B52-9303-15DCF6B0B639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0C79D16-5ECB-4B52-9303-15DCF6B0B639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0C79D16-5ECB-4B52-9303-15DCF6B0B639}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

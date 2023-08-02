@@ -42,7 +42,7 @@ Bind again: NewValue
 
 ## New behavior
 
-Consider the same code from the [Previous behavior](#previous-behavior) section. Starting in .NET 7, the dictionary value is extended each time the same key is bound, adding the new value but also keeping any existing values in the array. The code produces the following output:
+Starting in .NET 7, the dictionary value is extended each time the same key is bound, adding the new value but also keeping any existing values in the array. The same code from the [Previous behavior](#previous-behavior) section produces the following output:
 
 ```output
 Initially: InitialValue

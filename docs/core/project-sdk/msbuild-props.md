@@ -470,6 +470,8 @@ The following MSBuild properties are documented in this section:
 - [GenerateDocumentationFile](#generatedocumentationfile)
 - [GenerateRequiresPreviewFeaturesAttribute](#generaterequirespreviewfeaturesattribute)
 - [OptimizeImplicitlyTriggeredBuild](#optimizeimplicitlytriggeredbuild)
+- [DisableRuntimeMarshalling](#disableruntimemarshalling)
+- [GenerateDisableRuntimeMarshallingAttribute](#generatedisableruntimemarshallingattribute)
 
 C# compiler options, such as `LangVersion` and `Nullable`, can also be specified as MSBuild properties in your project file. For more information, see [C# compiler options](../../csharp/language-reference/compiler-options/index.md).
 
@@ -618,6 +620,23 @@ To speed up the build time, builds that are implicitly triggered by Visual Studi
 ```xml
 <PropertyGroup>
     <OptimizeImplicitlyTriggeredBuild>True</OptimizeImplicitlyTriggeredBuild>
+</PropertyGroup>
+```
+
+### DisableRuntimeMarshalling
+
+TODO
+
+### GenerateDisableRuntimeMarshallingAttribute
+
+The `GenerateDisableRuntimeMarshallingAttribute` property is closely related to the [DisableRuntimeMarshalling](#disableruntimemarshalling) property. 
+
+TODO
+
+```xml
+<PropertyGroup>
+    <DisableRuntimeMarshalling>True</DisableRuntimeMarshalling>
+    <GenerateDisableRuntimeMarshallingAttribute>False</GenerateDisableRuntimeMarshallingAttribute>
 </PropertyGroup>
 ```
 

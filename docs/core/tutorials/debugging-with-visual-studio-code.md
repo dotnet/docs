@@ -374,15 +374,17 @@ Visual Studio Code also allows you to step line by line through a program and mo
 
 1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
 
-   Visual Studio highlights the `name` variable assignment. The **Variables** window shows that `name` is still `null`.
+   Visual Studio highlights the `name` variable assignment. The **Variables** window is cleared.
 
 1. Respond to the prompt by entering a string in the Terminal tab and pressing <kbd>Enter</kbd>.
 
    The **Terminal** tab might not display the string you enter while you're entering it, but the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method will capture your input.
 
+   The **Variables** window shows the value returned by the call to the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method.
+
 1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
 
-   Visual Studio Code highlights the `currentDate` variable assignment. The **Variables** window shows the value returned by the call to the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method. The **Terminal** tab displays the string you entered at the prompt.
+   Visual Studio Code highlights the `currentDate` variable assignment. The **Terminal** tab displays the string you entered at the prompt.
 
 1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
 

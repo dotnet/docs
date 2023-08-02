@@ -38,6 +38,7 @@ If you require the affected packages for your scenario, install them yourself us
 
 ```dockerfile
 RUN apk add --upgrade krb5-libs
+RUN apk add --upgrade ca-certificates
 ```
 
 ## Affected APIs

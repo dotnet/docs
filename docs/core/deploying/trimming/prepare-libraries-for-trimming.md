@@ -40,20 +40,12 @@ Set `<IsTrimmable>true</IsTrimmable>` in the project file.
 
 ---
 
-source="~/docs/docs/
-
-:::code language="xml" source="~/docs/docs/core/deploying/trimming/snippets/MyLibrary/MyLibrary.csproj" id="snippet" highlight="2":::
-
-source="~/docs/core/
 :::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyLibrary/MyLibrary.csproj" id="snippet" highlight="2":::
-
-source="~/core/deployi
-:::code language="xml" source="~/core/deploying/trimming/snippets/MyLibrary/MyLibrary.csproj" id="snippet" highlight="2":::
 
 Setting `<IsTrimmable>true</IsTrimmable>` marks the assembly as "trimmable" and enables trim warnings. "trimmable" means the project:
 
 * Is considered compatible with trimming.
-* Shouldn't generate trim warnings when building. When used in a trimmed app, the assembly has its unused members trimmed in the final output.
+* Shouldn't generate trim related warnings when building. When used in a trimmed app, the assembly has its unused members trimmed in the final output.
 
 The `IsTrimmable` property defaults to `true` when configuring a project as AOT-compatible with `<IsAotCompatible>true</IsAotCompatible>`. For more information, see [AOT-compatibility analyzers](../native-aot/index.md#aot-compatibility-analyzers).
 

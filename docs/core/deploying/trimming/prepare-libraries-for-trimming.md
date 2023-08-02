@@ -16,24 +16,26 @@ The .NET SDK makes it possible to reduce the size of self-contained apps by [tri
 
 [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet)
 
-### [.NET 7](#tab/net7)
+### [.NET 7](#tab/net7plus)
 
 [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet)
 
+<!-->
 ### [.NET 8+](#tab/net8plus)
 
 [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet)
+-->
 
 ---
 
 ## Enable library trim warnings
 
-There are two ways to find trim warnings in a library:
+Trim warnings in a library can be found with either of the following methods:
 
-* Enable project-specific trimming using the `IsTrimmable` property.
-* Add the library as a reference to a sample app, and trim the sample app.
+* Enabling project-specific trimming using the `IsTrimmable` property.
+* Added the library as a reference to a sample app, and trim the sample app.
 
-Consider doing both. Project-specific trimming is convenient and shows trim warnings for one project, but relies on the references being marked trim-compatible to see all warnings. Trimming a sample app is more work, but will always show all warnings.
+We recommend using both approaches. Project-specific trimming is convenient and shows trim warnings for one project, but relies on the references being marked trim-compatible to see all warnings. Trimming a sample app is more work, but shows all warnings.
 
 ### Enable project-specific trimming
 

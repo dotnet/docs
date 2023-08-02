@@ -12,21 +12,7 @@ The .NET SDK makes it possible to reduce the size of self-contained apps by [tri
 
 ## Prerequisites
 
-### [.NET 6](#tab/net6)
-
-[.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet)
-
-### [.NET 7](#tab/net7plus)
-
-[.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet)
-
-<!-->
-### [.NET 8+](#tab/net8plus)
-
-[.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet)
--->
-
----
+[.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet) or later.
 
 ## Enable library trim warnings
 
@@ -41,18 +27,14 @@ We recommend using both approaches. Project-specific trimming is convenient and 
 
 ### [.NET 6](#tab/net6)
 
-To get the latest version of the analyzer with the most coverage, install the [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet) or later. Installing the .NET 7 SDK or later:  <!-- Can I replace .NET 7 SDK with .NET 8 SDK before .NET 8 releases? -->
+To get the latest version of the analyzer with the most coverage, install the [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet) or later. Installing the .NET 8 SDK or later:
 
 * Updates the tooling used to build an app or library and enable trim warnings.
 * Doesn't require targeting the .NET 7 or later runtime.
 
 Set `<IsTrimmable>true</IsTrimmable>` in the project file.
 
-### [.NET 7](#tab/net7)
-
-Set `<IsTrimmable>true</IsTrimmable>` in the project file.
-
-### [.NET 8+](#tab/net8plus)
+### [.NET 7+](#tab/net7plus)
 
 Set `<IsTrimmable>true</IsTrimmable>` in the project file.
 

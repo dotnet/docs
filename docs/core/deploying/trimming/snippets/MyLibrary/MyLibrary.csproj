@@ -1,15 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <PublishTrimmed>true</PublishTrimmed>
+    <TrimMode>full</TrimMode>
   </PropertyGroup>
 
-  <!-- <snippet> -->
-	<PropertyGroup>
-		<IsTrimmable>true</IsTrimmable>
-	</PropertyGroup>
-<!-- </snippet> -->
-	
+  <ItemGroup>
+    <ProjectReference Include="path/to/MyLibrary.csproj" />
+    <!-- Analyze the whole library -->
+    <TrimmerRootAssembly Include="MyLibrary" />
+  </ItemGroup>
+
 </Project>

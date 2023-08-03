@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<!-- Replace with net5.0, or netcoreapp3.1 if testing for those frameworks -->
+		<TargetFramework>net6.0</TargetFramework>
+		<PublishTrimmed>true</PublishTrimmed>
+		<!-- Prevent warnings from unused code in dependencies -->
+		<TrimmerDefaultAction>link</TrimmerDefaultAction>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="path/to/MyLibrary.csproj" />
+		<!-- Analyze the whole library, even if attributed with "IsTrimmable" -->
+		<TrimmerRootAssembly Include="MyLibrary" />
+	</ItemGroup>
+
+</Project>

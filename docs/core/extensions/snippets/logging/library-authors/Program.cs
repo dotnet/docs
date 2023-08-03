@@ -1,5 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.Abstractions;
+﻿using Microsoft.Extensions.Logging.Abstractions;
 
-using ILoggerFactory loggerFactory = NullLoggerFactory.Instance;
-
+// The available null logger types
+_ = NullLogger<Program>.Instance;
+_ = NullLoggerFactory.Instance;
+_ = NullLoggerProvider.Instance;

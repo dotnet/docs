@@ -32,7 +32,7 @@ In addition to the rules, there are many identifier [naming conventions](../../.
 - Use PascalCase for class names and method names.
 - Use camelCase for method arguments, local variables, and private fields.
 - Use PascalCase for constant names, both fields and local constants.
-- Instance fields start with an underscore (`_`).
+- Private instance fields start with an underscore (`_`).
 - Static fields start with `s_`. Note that this isn't the default Visual Studio behavior, nor part of the [Framework design guidelines](../../../standard/design-guidelines/names-of-type-members.md#names-of-fields), but is configurable in editorconfig.
 - Avoid using abbreviations or acronyms in names, except for widely known and accepted abbreviations.
 - Use meaningful and descriptive namespaces that follow the reverse domain name notation.

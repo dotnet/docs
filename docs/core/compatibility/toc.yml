@@ -18,8 +18,14 @@ items:
         href: aspnet-core/8.0/isystemclock-obsolete.md
       - name: Rate-limiting middleware requires AddRateLimiter
         href: aspnet-core/8.0/addratelimiter-requirement.md
+      - name: Security token events return a JSonWebToken
+        href: aspnet-core/8.0/securitytoken-events.md
+      - name: TrimMode defaults to full for Web SDK projects
+        href: aspnet-core/8.0/trimmode-full.md
     - name: Containers
       items:
+      - name: "'ca-certificates' and 'krb5-libs' removed from Alpine images"
+        href: containers/8.0/krb5-libs-package.md
       - name: Container images upgraded to Debian 12
         href: containers/8.0/debian-version.md
       - name: Default ASP.NET Core port changed to 8080
@@ -42,6 +48,8 @@ items:
         href: core-libraries/8.0/file-path-backslash.md
       - name: Base64.DecodeFromUtf8 methods ignore whitespace
         href: core-libraries/8.0/decodefromutf8-whitespace.md
+      - name: Boolean-backed enum type support removed
+        href: core-libraries/8.0/bool-backed-enum.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
       - name: GC.GetGeneration might return Int32.MaxValue
@@ -54,6 +62,8 @@ items:
         href: core-libraries/8.0/itypedescriptorcontext-props.md
       - name: Legacy Console.ReadKey removed
         href: core-libraries/8.0/console-readkey-legacy.md
+      - name: Removed overloads of ToFrozenDictionary/ToFrozenSet
+        href: core-libraries/8.0/optimizeforreading-arg.md
     - name: Cryptography
       items:
       - name: AesGcm authentication tag size on macOS
@@ -240,6 +250,8 @@ items:
         href: globalization/7.0/icu-globalization-api.md
     - name: Extensions
       items:
+      - name: Binding config to dictionary extends values
+        href: extensions/7.0/config-bind-dictionary.md
       - name: ContentRootPath for apps launched by Windows Shell
         href: extensions/7.0/contentrootpath-hosted-app.md
       - name: Environment variable prefixes
@@ -824,6 +836,10 @@ items:
         href: aspnet-core/8.0/isystemclock-obsolete.md
       - name: Rate-limiting middleware requires AddRateLimiter
         href: aspnet-core/8.0/addratelimiter-requirement.md
+      - name: Security token events return a JSonWebToken
+        href: aspnet-core/8.0/securitytoken-events.md
+      - name: TrimMode defaults to full for Web SDK projects
+        href: aspnet-core/8.0/trimmode-full.md
     - name: .NET 7
       items:
       - name: API controller actions try to infer parameters from DI
@@ -1020,6 +1036,8 @@ items:
         href: https://github.com/dotnet/dotnet-docker/discussions/3699
     - name: .NET 8
       items:
+      - name: "'ca-certificates' and 'krb5-libs' removed from Alpine images"
+        href: containers/8.0/krb5-libs-package.md
       - name: Container images upgraded to Debian 12
         href: containers/8.0/debian-version.md
       - name: Default ASP.NET Core port changed to 8080
@@ -1044,6 +1062,8 @@ items:
         href: core-libraries/8.0/file-path-backslash.md
       - name: Base64.DecodeFromUtf8 methods ignore whitespace
         href: core-libraries/8.0/decodefromutf8-whitespace.md
+      - name: Boolean-backed enum type support removed
+        href: core-libraries/8.0/bool-backed-enum.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
       - name: GC.GetGeneration might return Int32.MaxValue
@@ -1056,6 +1076,8 @@ items:
         href: core-libraries/8.0/itypedescriptorcontext-props.md
       - name: Legacy Console.ReadKey removed
         href: core-libraries/8.0/console-readkey-legacy.md
+      - name: Removed overloads of ToFrozenDictionary/ToFrozenSet
+        href: core-libraries/8.0/optimizeforreading-arg.md
     - name: .NET 7
       items:
       - name: API obsoletions with default diagnostic ID
@@ -1292,6 +1314,8 @@ items:
         href: extensions/8.0/hostapplicationbuilder-ctor.md
     - name: .NET 7
       items:
+      - name: Binding config to dictionary extends values
+        href: extensions/7.0/config-bind-dictionary.md
       - name: ContentRootPath for apps launched by Windows Shell
         href: extensions/7.0/contentrootpath-hosted-app.md
       - name: Environment variable prefixes

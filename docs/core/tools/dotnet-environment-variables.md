@@ -193,7 +193,7 @@ Tools that invoke `dotnet` during an SDK command should use the following algori
 * otherwise, rely on `dotnet` via the system's `PATH`
 
 > [!NOTE]
-> `DOTNET_HOST_PATH` is not a general solution for locating the `dotnet` host. It is only intended to be used by tools that are invoked by the .NET SDK during .NET SDK commands.
+> `DOTNET_HOST_PATH` is not a general solution for locating the `dotnet` host. It is only intended to be used by tools that are invoked by the .NET SDK.
 
 ### `NUGET_PACKAGES`
 

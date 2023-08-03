@@ -1,4 +1,4 @@
-﻿#define  DAA2// FIRST RequiresUnreferencedCode DAA1 DAA2
+﻿#define  UMH2 // FIRST RequiresUnreferencedCode DAA1 DAA2 UMH UMH2
 #if NEVER
 #elif FIRST
 // <snippet_1>
@@ -76,5 +76,43 @@ public class MyLibrary
     }
 }
 // </snippet_DAA2>
+#elif UMH
+using System;
+using System.Diagnostics.CodeAnalysis;
+
+public class MyLibrary
+{
+    private static void UseMethods(object type) => throw new NotImplementedException();
+
+    // <snippet_UMH>
+
+    static Type type;
+    static void UseMethodsHelper()
+    {
+        // warning IL2077: MyLibrary.UseMethodsHelper(Type): 'type' argument does not satisfy
+        // 'DynamicallyAccessedMemberTypes.PublicMethods' in call to
+        // 'MyLibrary.UseMethods(Type)'.
+        // The field 'System.Type MyLibrary::type' does not have matching annotations.
+        UseMethods(type);
+    }
+    // </snippet_UMH>
+}
+
+#elif UMH2
+using System;
+using System.Diagnostics.CodeAnalysis;
+
+public class MyLibrary
+{
+    // <snippet_UMH2>
+    [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]
+    static Type type;
+
+    static void InitializeTypeField()
+    {
+        MyLibrary.type = typeof(System.Tuple);
+    }
+    // </snippet_UMH2>
+}
 
 #endif

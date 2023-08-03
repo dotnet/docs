@@ -161,32 +161,13 @@ In the preceding code, `UseMethods` is calling a reflection method that has a <x
 
 Now any calls to `UseMethods` produce warnings if they pass in values that don't satisfy the `PublicMethods` requirement. Like with `RequiresUnreferencedCode`, once you have bubbled up such warnings to public APIs, you're done.
 
-Here's another example where an unknown `Type` flows into the annotated method parameter, this time from a field:
+In the following example, an unknown `Type` flows into the annotated method parameter. The unknown `Type` is from a field:
 
-```csharp
-static Type type;
-
-static void UseMethodsHelper()
-{
-    // warning IL2077: MyLibrary.UseMethodsHelper(Type): 'type' argument does not satisfy
-    // 'DynamicallyAccessedMemberTypes.PublicMethods' in call to
-    // 'MyLibrary.UseMethods(Type)'.
-    // The field 'System.Type MyLibrary::type' does not have matching annotations.
-    UseMethods(type);
-}
-```
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_UMH":::
 
 Similarly, here the problem is that the field `type` is passed into a parameter with these requirements. You can fix it by adding `DynamicallyAccessedMembers` to the field. This warns about code that assigns incompatible values to the field instead. Sometimes this process continues until a public API is annotated, and other times it ends when a concrete type flows into a location with these requirements. For example:
 
-```csharp
-[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]
-static Type type;
-
-static void InitializeTypeField()
-{
-    MyLibrary.type = typeof(System.Tuple);
-}
-```
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_UMH2" highlight="7":::
 
 In this case, the trim analysis keeps public methods of <xref:System.Tuple>, and produces further warnings.
 

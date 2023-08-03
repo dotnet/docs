@@ -78,33 +78,13 @@ To create the sample app, create a separate console application project with `do
   * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root,". A "root," assembly means the trimmer analyzes every call in the library, and traverses all code paths that originate from that assembly. `TrimmerRootAssembly` is necessary in case the library has `[AssemblyMetadata("IsTrimmable", "True")]`.  A project using `[AssemblyMetadata("IsTrimmable", "True")]` without  `TrimmerRootAssembly` would remove the unused library without analyzing it.
 * If your app targets .NET 6, set the `TrimmerDefaultAction` property to `link` with `<TrimmerDefaultAction>link</TrimmerDefaultAction>` in a `<PropertyGroup>` element.
 
-
 ##### .csproj file
 
 ### [.NET 6](#tab/net6)
 
 Set the `TrimmerDefaultAction` property to `link` with `<TrimmerDefaultAction>link</TrimmerDefaultAction>` in a `<PropertyGroup>` element.
 
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <!-- Replace with net5.0, or netcoreapp3.1 if testing for those frameworks -->
-    <TargetFramework>net6.0</TargetFramework>
-    <PublishTrimmed>true</PublishTrimmed>
-    <!-- Prevent warnings from unused code in dependencies -->
-    <TrimmerDefaultAction>link</TrimmerDefaultAction>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="path/to/MyLibrary.csproj" />
-    <!-- Analyze the whole library, even if attributed with "IsTrimmable" -->
-    <TrimmerRootAssembly Include="MyLibrary" />
-  </ItemGroup>
-
-</Project>
-```
+:::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyTestLib6app/MyTestLib6app.csproj":::
 
 ### [.NET 7+](#tab/net7plus)
 

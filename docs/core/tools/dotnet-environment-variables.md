@@ -185,7 +185,7 @@ Specifies the location of the .NET runtimes, if they are not installed in the de
 
 ### `DOTNET_HOST_PATH`
 
-Specifies the absolute path to a `dotnet` host (`dotnet.exe` on Windows, `dotnet` on non-Windows) that was used to launch the currently-running `dotnet` process. This is used by the .NET SDK to help tools that run during .NET SDK commands ensure they use the same `dotnet` runtime for any child `dotnet` processes they create for the duration of the command. Tools and MSBuild Tasks within the SDK that invoke binaries via the `dotnet` host are expected to honor this environment variable to ensure a consistent experience.
+Specifies the absolute path to a `dotnet` host (`dotnet.exe` on Windows, `dotnet` on Linux and macOS) that was used to launch the currently-running `dotnet` process. This is used by the .NET SDK to help tools that run during .NET SDK commands ensure they use the same `dotnet` runtime for any child `dotnet` processes they create for the duration of the command. Tools and MSBuild Tasks within the SDK that invoke binaries via the `dotnet` host are expected to honor this environment variable to ensure a consistent experience.
 
 Tools that invoke `dotnet` during an SDK command should use the following algorithm to locate it:
 

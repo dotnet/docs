@@ -13,11 +13,11 @@ You can no longer change the installation path of .NET with the Windows Installe
 
 ## Old behavior
 
-Previously, you could set `DOTNET_HOME` prior to running the windows MSI installer to install to a location other than *Program Files\dotnet*.
+Previously, you could set `DOTNET_HOME` prior to running the Windows MSI installer to install to a location other than *Program Files\dotnet*.
 
 ## New behavior
 
-Starting in .NET 6, `DOTNET_HOME` is ignored and the SDK and runtime will always install under *Program Files\dotnet*. This impacts all .NET installers, including all three runtimes, the hosting bundle, and the SDK installer. It also impacts all architectures, even though the driver of the change was ARM64 support.
+Starting in .NET 6, `DOTNET_HOME` is ignored and the SDK and runtime will always install under *Program Files\dotnet* on Windows. This impacts all .NET installers, including all three runtimes, the hosting bundle, and the SDK installer. It also impacts all architectures, even though the driver of the change was ARM64 support.
 
 ## Reason for change
 

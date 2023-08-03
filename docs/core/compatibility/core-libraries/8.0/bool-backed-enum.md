@@ -5,7 +5,7 @@ ms.date: 08/02/2023
 ---
 # Boolean-backed enum type support removed
 
-Support for formatting, parsing, and conversions of Boolean-backed enumeration types has been removed.
+Support for formatting, parsing, and conversions of Boolean-backed [enumeration types](../../../../csharp/language-reference/builtin-types/enum.md) has been removed.
 
 ## Previous behavior
 

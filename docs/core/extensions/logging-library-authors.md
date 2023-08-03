@@ -12,7 +12,7 @@ As a library author, exposing logging is a great way to provide consumers with i
 
 ## Use the `ILoggerFactory` interface
 
-When your library exposes configuration functionality for logging, it may be tempting to accept an <xref:Microsoft.Extensions.Logging.ILogger>, but that isn't recommended as it represents a single category. An <xref:Microsoft.Extensions.Logging.ILogger%601> represents a one-to-one relationship between a category and a type. If your library allows consumers to provide one of these interfaces, it means that you're limiting the consumer to a single category, which may not be appropriate for their use case.
+When your library exposes configuration functionality for logging, it might be tempting to accept an <xref:Microsoft.Extensions.Logging.ILogger>, but that isn't recommended as it represents a single category. An <xref:Microsoft.Extensions.Logging.ILogger%601> represents a one-to-one relationship between a category and a type. If your library allows consumers to provide one of these interfaces, it means that you're limiting the consumer to a single category, which may not be appropriate for their use case.
 
 Instead, you should accept an <xref:Microsoft.Extensions.Logging.ILoggerFactory> and use it to create <xref:Microsoft.Extensions.Logging.ILogger%601> instances. Using an `ILoggerFactory` ensures that the logging configuration is consistent with the rest of the app and is more flexible. For more information, see [Log category](logging.md#log-category).
 
@@ -63,7 +63,7 @@ In this way, the `ExampleService` class uses an `ILogger<TCategoryName>` instanc
 
 ## Prefer source-generated logging
 
-Wherever your library code relies on logging APIs, for example, the `ILogger` interface, consider using source-generated logging where possible. As a general rule, when calling any of the following extension methods you should ensure that the corresponding `LogLevel` is enabled:
+Wherever your library code relies on logging APIs, for example, the `ILogger` interface, consider using source-generated logging where possible. As a general rule, when calling any of the following extension methods, you should ensure that the corresponding `LogLevel` is enabled:
 
 - <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogCritical%2A>
 - <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogDebug%2A>
@@ -74,12 +74,12 @@ Wherever your library code relies on logging APIs, for example, the `ILogger` in
 
 Use the <xref:Microsoft.Extensions.Logging.LoggerMessageAttribute> to automatically apply the appropriate guards, calling <xref:Microsoft.Extensions.Logging.ILogger.IsEnabled%2A?displayProperty=nameWithType> with the correct <xref:Microsoft.Extensions.Logging.LogLevel>. When you use the `LoggerMessage` attribute, it ensures that the logging code is only executed if the corresponding `LogLevel` is enabled.
 
-Additionally, the `LoggerMessage` attribute avoids the need to use reflection at runtime, which can be a significant performance improvement.
+Additionally, the `LoggerMessage` attribute avoids the need to use reflection at run time, which can be a significant performance improvement.
 
 For more information, see [Compile-time logging source generation](logger-message-generator.md) and [High-performance logging in .NET](high-performance-logging.md).
 
 ## Avoid string interpolation
 
-A common mistake is to use [string interpolation](../../csharp/tutorials/string-interpolation.md) to build log messages. String interpolation in logging is problematic as it's evaluated even if the corresponding `LogLevel` isn't enabled. Doing so leads to unnecessary allocations and performance issues.
+A common mistake is to use [string interpolation](../../csharp/tutorials/string-interpolation.md) to build log messages. String interpolation in logging is problematic for performance, as the string is evaluated even if the corresponding `LogLevel` isn't enabled.
 
-Instead, developers should use the log message template, formatting, and argument list. For more information, see [Logging in .NET: Log message template](logging.md#log-message-template).
+Instead of string interpolation, use the log message template, formatting, and argument list. For more information, see [Logging in .NET: Log message template](logging.md#log-message-template).

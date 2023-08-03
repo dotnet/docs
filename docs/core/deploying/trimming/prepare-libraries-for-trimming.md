@@ -173,133 +173,65 @@ In this case, the trim analysis keeps public methods of <xref:System.Tuple>, and
 
 ## Recommendations
 
-In general, try to avoid reflection if possible. When using reflection, limit it in scope so that it's reachable only from a small part of the library.
+Avoid reflection when possible. When using reflection, minimized reflection scope so that it's reachable only from a small part of the library.
 
-- Avoid using non-understood patterns in places like static constructors that result in the warning propagating to all members of the class.
-- Avoid annotating virtual methods or interface methods, which will require all overrides to have matching annotations.
-- In some cases, you're able to mechanically propagate warnings through your code without issues. Sometimes this results in much of your public API being annotated with `RequiresUnreferencedCode`, which is the right thing to do if the library indeed behaves in ways that can't be understood statically by the trim analysis.
-- In other cases, you might discover that your code uses patterns that can't be expressed in terms of the `DynamicallyAccessedMembers` attributes, even if it only uses reflection to operate on statically known types. In these cases, you may need to reorganize some of your code to make it follow an analyzable pattern.
-- Sometimes the existing design of an API renders it mostly trim-incompatible, and you may need to find other ways to accomplish what it's doing. A common example is reflection-based serializers. In these cases, consider adopting other technology like source generators to produce code that is more easily statically analyzed.
+* Avoid using non-understood patterns in places like static constructors. Static constructors result in the warning propagating to all members of the class.
+* Avoid annotating virtual methods or interface methods, which requires all overrides to have matching annotations.
+* In some cases, you're able to mechanically propagate warnings through your code without issues. <!--Review: What doesn't mechanically propagate mean? For sure it won't MT (Machine Translate) --> Sometimes this results in much of your public API being annotated with `RequiresUnreferencedCode`. Annotating with `RequiresUnreferencedCode` is the right thing to do if the library behaves in ways that can't be understood statically by the trim analysis.
+<!-- Original run on, way too long for MT 
+* In other cases, you might discover that your code uses patterns that can't be expressed in terms of the `DynamicallyAccessedMembers` attributes, even if it only uses reflection to operate on statically known types. In these cases, you may need to reorganize some of your code to make it follow an analyzable pattern. -->
+* Code that uses patterns that can't be expressed in terms of the `DynamicallyAccessedMembers` attributes:
+  * Consider reorganizing that code to make it follow an analyzable pattern. This also applies to code that only uses reflection to operate on statically known types. <!-- Dreaded one bullet -->
+* If an API is mostly trim-incompatible, you may need to find other ways to write the API. A common example is reflection-based serializers. In these cases, consider adopting other technology like source generators to produce code that is more easily statically analyzed. For example, see [How to use source generation in System.Text.Json](/dotnet/standard/serialization/system-text-json/source-generation)
 
 ## Resolve warnings for non-analyzable patterns
 
 It's better to resolve warnings by expressing the intent of your code using `RequiresUnreferencedCode` and `DynamicallyAccessedMembers` when possible. However, in some cases, you may be interested in enabling trimming of a library that uses patterns that can't be expressed with those attributes, or without refactoring existing code. This section describes some advanced ways to resolve trim analysis warnings.
 
 > [!WARNING]
-> These techniques might break your code if used incorrectly.
+> These techniques might change the behavior or your code or result in run time exceptions if used incorrectly.
 
 ### UnconditionalSuppressMessage
 
-If the intent of your code can't be expressed with the annotations, but you know that the warning doesn't represent a real issue at run time, you can suppress the warnings using <xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute>. This is similar to `SuppressMessageAttribute`, but it's persisted in IL and respected during trim analysis.
+Consider code that:
+
+* The intent can't be expressed with the annotations.
+* Generates a warning but doesn't represent a real issue at run time.
+
+The warnings can be suppressed <xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute>. This is similar to `SuppressMessageAttribute`, but it's persisted in IL and respected during trim analysis.
 
 > [!WARNING]
-> When suppressing warnings, you are responsible for guaranteeing the trim compatibility of your code based on invariants that you know to be true by inspection. Be careful with these annotations, because if they are incorrect, or if invariants of your code change, they might end up hiding real issues.
+> When suppressing warnings, you are responsible for guaranteeing the trim compatibility of the code based on invariants that you know to be true by inspection and testing. Use caution with these annotations, because if they are incorrect, or if invariants of your code change, they might end up hiding incorrect code.
 
 For example:
 
-```csharp
-class TypeCollection
-{
-    Type[] types;
-
-    // Ensure that only types with preserved constructors are stored in the array
-    [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicParameterlessConstructor)]
-    public Type this[int i]
-    {
-        // warning IL2063: TypeCollection.Item.get: Value returned from method 'TypeCollection.Item.get'
-        // can not be statically determined and may not meet 'DynamicallyAccessedMembersAttribute' requirements.
-        get => types[i];
-        set => types[i] = value;
-    }
-}
-
-class TypeCreator
-{
-    TypeCollection types;
-
-    public void CreateType(int i)
-    {
-        types[i] = typeof(TypeWithConstructor);
-        Activator.CreateInstance(types[i]); // No warning!
-    }
-}
-
-class TypeWithConstructor
-{
-}
-```
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_AD1" highlight="7":::
 
 Here, the indexer property has been annotated so that the returned `Type` meets the requirements of `CreateInstance`. This already ensures that the `TypeWithConstructor` constructor is kept, and that the call to `CreateInstance` doesn't warn. Furthermore, the indexer setter annotation ensures that any types stored in the `Type[]` have a constructor. However, the analysis isn't able to see this, and still produces a warning for the getter, because it doesn't know that the returned type has its constructor preserved.
 
 If you're sure that the requirements are met, you can silence this warning by adding `UnconditionalSuppressMessage` to the getter:
 
-```csharp
-[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicParameterlessConstructor)]
-public Type this[int i]
-{
-    [UnconditionalSuppressMessage("ReflectionAnalysis", "IL2063",
-        Justification = "The list only contains types stored through the annotated setter.")]
-    get => types[i];
-    set => types[i] = value;
-}
-```
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_AD2" highlight="9-10":::
 
-It's important to underline that it's only valid to suppress a warning if there are annotations or code that ensure the reflected-on members are visible targets of reflection. It isn't sufficient that the member was simply a target of a call, field or property access. It may appear to be the case sometimes but such code is bound to break eventually as more trimming optimizations are added. Properties, fields, and methods that aren't visible targets of reflection could be inlined, have their names removed, get moved to different types, or otherwise optimized in ways that break reflecting on them. When suppressing a warning, it's only permissible to reflect on targets that were visible targets of reflection to the trimming analyzer elsewhere.
+It's important to underline that it's only valid to suppress a warning if there are annotations or code that ensure the reflected-on members are visible targets of reflection. It isn't sufficient that the member was a target of a call, field or property access. It may appear to be the case sometimes but such code is bound to break eventually as more trimming optimizations are added. Properties, fields, and methods that aren't visible targets of reflection could be inlined, have their names removed, get moved to different types, or otherwise optimized in ways that break reflecting on them. When suppressing a warning, it's only permissible to reflect on targets that were visible targets of reflection to the trimming analyzer elsewhere.
 
-```csharp
-[UnconditionalSuppressMessage("ReflectionAnalysis", "IL2063",
-    // Invalid justification and suppression: property being non-reflectively
-    // used by the app doesn't guarantee that the property will be available
-    // for reflection. Properties that are not visible targets of reflection
-    // are already optimized away with Native AOT trimming and may be
-    // optimized away for non-native deployment in the future as well.
-    Justification = "*INVALID* Only need to serialize properties that are used by the app. *INVALID*")]
-public string Serialize(object o)
-{
-    StringBuilder sb = new StringBuilder();
-    foreach (var property in o.GetType().GetProperties())
-    {
-        AppendProperty(sb, property, o);
-    }
-    return sb.ToString();
-}
-```
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_AD3" highlight="9-10":::
 
 ### DynamicDependency
 
-This attribute can be used to indicate that a member has a dynamic dependency on other members. This results in the referenced members being kept whenever the member with the attribute is kept, but doesn't silence warnings on its own. Unlike the other attributes, which inform the trim analysis about the reflection behavior of your code, `DynamicDependency` only keeps other members. This can be used together with `UnconditionalSuppressMessageAttribute` to fix some analysis warnings.
+The [`[DynamicDependency]`](xref:System.Diagnostics.CodeAnalysis.DynamicDependencyAttribute) attribute can be used to indicate that a member has a dynamic dependency on other members. This results in the referenced members being kept whenever the member with the attribute is kept, but doesn't silence warnings on its own. Unlike the other attributes, which inform the trim analysis about the reflection behavior of the code, `[DynamicDependency]` only keeps other members. This can be used together with [`[UnconditionalSuppressMessage]`](xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute) to fix some analysis warnings.
 
 > [!WARNING]
-> Use `DynamicDependencyAttribute` only as a last resort when the other approaches aren't viable. It is preferable to express the reflection behavior of your code using `RequiresUnreferencedCodeAttribute` or `DynamicallyAccessedMembersAttribute`.
+> Use `[DynamicDependency]` attribute only as a last resort when the other approaches aren't viable. It is preferable to express the reflection behavior using [`[RequiresUnreferencedCode]`](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute) or [`[DynamicallyAccessedMembers]`](xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute):
 
-```csharp
-[DynamicDependency("Helper", "MyType", "MyAssembly")]
-static void RunHelper()
-{
-    var helper = Assembly.Load("MyAssembly").GetType("MyType").GetMethod("Helper");
-    helper.Invoke(null, null);
-}
-```
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_AD4" highlight="1":::
 
 Without `DynamicDependency`, trimming might remove `Helper` from `MyAssembly` or remove `MyAssembly` completely if it's not referenced elsewhere, producing a warning that indicates a possible failure at run time. The attribute ensures that `Helper` is kept.
 
 The attribute specifies the members to keep via a `string` or via `DynamicallyAccessedMemberTypes`. The type and assembly are either implicit in the attribute context, or explicitly specified in the attribute (by `Type`, or by `string`s for the type and assembly name).
 
-The type and member strings use a variation of the C# documentation comment ID string [format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format), without the member prefix. The member string shouldn't include the name of the declaring type, and may omit parameters to keep all members of the specified name. Some examples of the format follow:
+The type and member strings use a variation of the C# documentation comment ID string [format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format), without the member prefix. The member string shouldn't include the name of the declaring type, and may omit parameters to keep all members of the specified name. Some examples of the format are shown in the following code:
 
-```csharp
-[DynamicDependency("Method()")]
-[DynamicDependency("Method(System,Boolean,System.String)")]
-[DynamicDependency("MethodOnDifferentType()", typeof(ContainingType))]
-[DynamicDependency("MemberName")]
-[DynamicDependency("MemberOnUnreferencedAssembly", "ContainingType", "UnreferencedAssembly")]
-[DynamicDependency("MemberName", "Namespace.ContainingType.NestedType", "Assembly")]
-// generics
-[DynamicDependency("GenericMethodName``1")]
-[DynamicDependency("GenericMethod``2(``0,``1)")]
-[DynamicDependency("MethodWithGenericParameterTypes(System.Collections.Generic.List{System.String})")]
-[DynamicDependency("MethodOnGenericType(`0)", "GenericType`1", "UnreferencedAssembly")]
-[DynamicDependency("MethodOnGenericType(`0)", typeof(GenericType<>))]
-```
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_AD5":::
 
-This attribute is designed to be used in cases where a method contains reflection patterns that can't be analyzed even with the help of `DynamicallyAccessedMembersAttribute`.
+The `[DynamicDependency]` attribute is designed to be used in cases where a method contains reflection patterns that can't be analyzed even with the help of `DynamicallyAccessedMembersAttribute`.

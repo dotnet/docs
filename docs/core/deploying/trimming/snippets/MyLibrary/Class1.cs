@@ -1,4 +1,4 @@
-﻿#define  UMH2 // FIRST RequiresUnreferencedCode DAA1 DAA2 UMH UMH2
+﻿#define  AD5 // FIRST RequiresUnreferencedCode DAA1 DAA2 UMH UMH2 AD1 AD2 AD3 AD4 AD5
 #if NEVER
 #elif FIRST
 // <snippet_1>
@@ -113,6 +113,155 @@ public class MyLibrary
         MyLibrary.type = typeof(System.Tuple);
     }
     // </snippet_UMH2>
+}
+
+#elif AD1
+using System;
+using System.Diagnostics.CodeAnalysis;
+
+public class MyLibrary
+{
+    // <snippet_AD1>
+    class TypeCollection
+    {
+        Type[] types;
+
+        // Ensure that only types with preserved constructors are stored in the array
+        [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicParameterlessConstructor)]
+        public Type this[int i]
+        {
+            // warning IL2063: TypeCollection.Item.get: Value returned from method
+            // 'TypeCollection.Item.get' can't be statically determined and may not meet
+            // 'DynamicallyAccessedMembersAttribute' requirements.
+            get => types[i];
+            set => types[i] = value;
+        }
+    }
+
+    class TypeCreator
+    {
+        TypeCollection types;
+
+        public void CreateType(int i)
+        {
+            types[i] = typeof(TypeWithConstructor);
+            Activator.CreateInstance(types[i]); // No warning!
+        }
+    }
+
+    class TypeWithConstructor
+    {
+    }
+    // </snippet_AD1>
+}
+
+#elif AD2
+using System;
+using System.Diagnostics.CodeAnalysis;
+
+public class MyLibrary
+{
+    // <snippet_AD2>
+    class TypeCollection
+    {
+        Type[] types;
+
+        // Ensure that only types with preserved constructors are stored in the array
+        [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicParameterlessConstructor)]
+        public Type this[int i]
+        {
+            [UnconditionalSuppressMessage("ReflectionAnalysis", "IL2063",
+                Justification = "The list only contains types stored through the annotated setter.")]
+            get => types[i];
+            set => types[i] = value;
+        }
+    }
+
+    class TypeCreator
+    {
+        TypeCollection types;
+
+        public void CreateType(int i)
+        {
+            types[i] = typeof(TypeWithConstructor);
+            Activator.CreateInstance(types[i]); // No warning!
+        }
+    }
+
+    class TypeWithConstructor
+    {
+    }
+    // </snippet_AD2>
+}
+#elif AD3
+using System;
+using System.Diagnostics.CodeAnalysis;
+using System.Reflection;
+using System.Text;
+
+public class MyLibrary
+{
+    // <snippet_AD3>
+    [UnconditionalSuppressMessage("ReflectionAnalysis", "IL2063",
+        // Invalid justification and suppression: property being non-reflectively
+        // used by the app doesn't guarantee that the property will be available
+        // for reflection. Properties that are not visible targets of reflection
+        // are already optimized away with Native AOT trimming and may be
+        // optimized away for non-native deployment in the future as well.
+        Justification = "*INVALID* Only need to serialize properties that are used by"
+           + "the app. *INVALID*")]
+    public string Serialize(object o)
+    {
+        StringBuilder sb = new StringBuilder();
+        foreach (var property in o.GetType().GetProperties())
+        {
+            AppendProperty(sb, property, o);
+        }
+        return sb.ToString();
+    }
+    // </snippet_AD3>
+    private void AppendProperty(StringBuilder sb, PropertyInfo property, object o) => throw new NotImplementedException();
+    }
+#elif AD4
+using System.Diagnostics.CodeAnalysis;
+using System.Reflection;
+
+public class MyLibrary
+{
+    // <snippet_AD4>
+    [DynamicDependency("Helper", "MyType", "MyAssembly")]
+    static void RunHelper()
+    {
+        var helper = Assembly.Load("MyAssembly").GetType("MyType").GetMethod("Helper");
+        helper.Invoke(null, null);
+    }
+}
+// </snippet_AD4>
+#elif AD5
+using System.Diagnostics.CodeAnalysis;
+using System.Reflection;
+
+public class MyLibrary
+{
+    // <snippet_AD5>
+    [DynamicDependency("Method()")]
+    [DynamicDependency("Method(System,Boolean,System.String)")]
+    [DynamicDependency("MethodOnDifferentType()", typeof(ContainingType))]
+    [DynamicDependency("MemberName")]
+    [DynamicDependency("MemberOnUnreferencedAssembly", "ContainingType", "UnreferencedAssembly")]
+    [DynamicDependency("MemberName", "Namespace.ContainingType.NestedType", "Assembly")]
+    // generics
+    [DynamicDependency("GenericMethodName``1")]
+    [DynamicDependency("GenericMethod``2(``0,``1)")]
+    [DynamicDependency("MethodWithGenericParameterTypes(System.Collections.Generic.List{System.String})")]
+    [DynamicDependency("MethodOnGenericType(`0)", "GenericType`1", "UnreferencedAssembly")]
+    [DynamicDependency("MethodOnGenericType(`0)", typeof(GenericType<>))]
+    // </snippet_AD5>
+    static void RunHelper()
+    {
+        var helper = Assembly.Load("MyAssembly").GetType("MyType").GetMethod("Helper");
+        helper.Invoke(null, null);
+    }
 }
 
 #endif

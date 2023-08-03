@@ -44,20 +44,7 @@ Libraries can default to _null logging_ if no `ILoggerFactory` is provided. The 
 
 If your library is dependency injection-aware, classes that require logging may accept an <xref:Microsoft.Extensions.Logging.ILogger%601> in the constructor.
 
-```csharp
-public class ExampleService
-{
-    private readonly ILogger<ExampleService> _logger;
-
-    public ExampleService(ILogger<ExampleService> logger) => _logger = logger;
-
-    public void DoSomething()
-    {
-        // Use the logger.
-        _logger.LogInformation("Doing something.");
-    }
-}
-```
+:::code source="./snippets/logging/library-authors/DiExampleService.cs":::
 
 For more information, see [.NET dependency injection](dependency-injection.md).
 
@@ -65,26 +52,12 @@ For more information, see [.NET dependency injection](dependency-injection.md).
 
 If your library is dependency injection-oblivious, classes that require logging should use the configured <xref:Microsoft.Extensions.Logging.ILoggerFactory> to resolve <xref:Microsoft.Extensions.Logging.ILogger%601> instances on demand.
 
-```csharp
-public class ExampleService
-{
-    private readonly ILogger<ExampleService> _logger;
-
-    public ExampleService() =>
-        _logger = AppConfiguration.LoggerFactory.CreateLogger<ExampleService>();
-
-    public void DoSomething()
-    {
-        // Use the logger.
-        _logger.LogInformation("Doing something.");
-    }
-}
-```
+:::code source="./snippets/logging/library-authors/NonDiExampleService.cs":::
 
 The preceding code:
 
-- Assigns the `_logger` field in the constructor, using a <xref:Microsoft.Extensions.Logging.ILoggerFactory> instance that is statically available from the `AppConfiguration` class.
-- The `AppConfiguration` class is imaginary and is used to demonstrate how the `ILoggerFactory` instance is obtained. In this example, the configuration class has a `static` property to access the `ILoggerFactory` instance.
+- Assigns the `_logger` field in the constructor, using the <xref:Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory>.
+- Demonstrates how to statically access the `ILoggerFactory` instance to create an `ILogger<TCategoryName>`.
 
 In this way, the `ExampleService` class uses an `ILogger<TCategoryName>` instance with the correct `TCategoryName`, which is `"ExampleService"`.
 

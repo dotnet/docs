@@ -1,4 +1,4 @@
-﻿#define RequiresUnreferencedCode // FIRST RequiresUnreferencedCode
+﻿#define  DAA2// FIRST RequiresUnreferencedCode DAA1 DAA2
 #if NEVER
 #elif FIRST
 // <snippet_1>
@@ -40,4 +40,41 @@ public class MyLibrary
     }
 }
 // </snippet_RequiresUnreferencedCode>
+#elif DAA1
+// <snippet_DAA1>
+using System;
+
+public class MyLibrary
+{
+    static void UseMethods(Type type)
+    {
+        // warning IL2070: MyLibrary.UseMethods(Type): 'this' argument does not satisfy
+        // 'DynamicallyAccessedMemberTypes.PublicMethods' in call to
+        // 'System.Type.GetMethods()'.
+        // The parameter 't' of method 'MyLibrary.UseMethods(Type)' doesn't have
+        // matching annotations.
+        foreach (var method in type.GetMethods())
+        {
+            // ...
+        }
+    }
+}
+// </snippet_DAA1>
+#elif DAA2
+// <snippet_DAA2>
+using System;
+using System.Diagnostics.CodeAnalysis;
+
+public class MyLibrary
+{
+    static void UseMethods(
+        // State the requirement in the UseMethods parameter.
+        [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]
+    Type type)
+    {
+        // ...
+    }
+}
+// </snippet_DAA2>
+
 #endif

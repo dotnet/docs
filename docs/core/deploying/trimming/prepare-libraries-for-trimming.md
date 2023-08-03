@@ -153,37 +153,11 @@ Once you have "bubbled up" the attribute all the way to public APIs (so that the
 
 ### DynamicallyAccessedMembers
 
-```csharp
-using System.Diagnostics.CodeAnalysis;
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_DAA1" highlight="5":::
 
-public class MyLibrary
-{
-    static void UseMethods(Type type)
-    {
-        // warning IL2070: MyLibrary.UseMethods(Type): 'this' argument does not satisfy
-        // 'DynamicallyAccessedMemberTypes.PublicMethods' in call to
-        // 'System.Type.GetMethods()'.
-        // The parameter 't' of method 'MyLibrary.UseMethods(Type)' doesn't have
-        // matching annotations.
-        foreach (var method in type.GetMethods())
-        {
-            // ...
-        }
-    }
-}
-```
+In the preceding code, `UseMethods` is calling a reflection method that has a <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute> requirement. The requirement states that the type's public methods are available. Satisfy the requirement by adding the same requirement to the parameter of `UseMethods`.
 
-Here, `UseMethods` is calling a reflection method that has a <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute> requirement. The requirement states that the type's public methods are available. In this case, you can satisfy the requirement by adding the same requirement to the parameter of `UseMethods`.
-
-```csharp
-static void UseMethods(
-    // State the requirement in the UseMethods parameter.
-    [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]
-    Type type)
-{
-    // ...
-}
-```
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_DAA2" highlight="8":::
 
 Now any calls to `UseMethods` produce warnings if they pass in values that don't satisfy the `PublicMethods` requirement. Like with `RequiresUnreferencedCode`, once you have bubbled up such warnings to public APIs, you're done.
 

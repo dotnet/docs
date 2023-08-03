@@ -1,8 +1,8 @@
-﻿#define  AD5 // FIRST RequiresUnreferencedCode DAA1 DAA2 UMH UMH2 AD1 AD2 AD3 AD4 AD5
-#if NEVER
-#elif FIRST
-// <snippet_1>
+﻿// <snippet_1>
 using System.Diagnostics.CodeAnalysis;
+using System;
+using System.Text;
+using System.Reflection;
 
 public class MyLibrary
 {
@@ -21,11 +21,9 @@ public class MyLibrary
     }
 }
 // </snippet_1>
-#elif RequiresUnreferencedCode
-// <snippet_RequiresUnreferencedCode>
-using System.Diagnostics.CodeAnalysis;
 
-public class MyLibrary
+// <snippet_RequiresUnreferencedCode>
+public class MyLibrary2
 {
     [RequiresUnreferencedCode("Calls DynamicBehavior.")]
     public static void Method()
@@ -40,11 +38,9 @@ public class MyLibrary
     }
 }
 // </snippet_RequiresUnreferencedCode>
-#elif DAA1
-// <snippet_DAA1>
-using System;
 
-public class MyLibrary
+// <snippet_DAA1>
+public class MyLibrary3
 {
     static void UseMethods(Type type)
     {
@@ -59,13 +55,8 @@ public class MyLibrary
         }
     }
 }
-// </snippet_DAA1>
-#elif DAA2
-// <snippet_DAA2>
-using System;
-using System.Diagnostics.CodeAnalysis;
 
-public class MyLibrary
+public class MyLibrary4
 {
     static void UseMethods(
         // State the requirement in the UseMethods parameter.
@@ -75,17 +66,12 @@ public class MyLibrary
         // ...
     }
 }
-// </snippet_DAA2>
-#elif UMH
-using System;
-using System.Diagnostics.CodeAnalysis;
 
-public class MyLibrary
+public class MyLibrary5
 {
     private static void UseMethods(object type) => throw new NotImplementedException();
 
     // <snippet_UMH>
-
     static Type type;
     static void UseMethodsHelper()
     {
@@ -98,11 +84,7 @@ public class MyLibrary
     // </snippet_UMH>
 }
 
-#elif UMH2
-using System;
-using System.Diagnostics.CodeAnalysis;
-
-public class MyLibrary
+public class MyLibrary6
 {
     // <snippet_UMH2>
     [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]
@@ -115,11 +97,7 @@ public class MyLibrary
     // </snippet_UMH2>
 }
 
-#elif AD1
-using System;
-using System.Diagnostics.CodeAnalysis;
-
-public class MyLibrary
+public class MyLibrary7
 {
     // <snippet_AD1>
     class TypeCollection
@@ -155,11 +133,7 @@ public class MyLibrary
     // </snippet_AD1>
 }
 
-#elif AD2
-using System;
-using System.Diagnostics.CodeAnalysis;
-
-public class MyLibrary
+public class MyLibrary8
 {
     // <snippet_AD2>
     class TypeCollection
@@ -193,13 +167,8 @@ public class MyLibrary
     }
     // </snippet_AD2>
 }
-#elif AD3
-using System;
-using System.Diagnostics.CodeAnalysis;
-using System.Reflection;
-using System.Text;
 
-public class MyLibrary
+public class MyLibrary11
 {
     // <snippet_AD3>
     [UnconditionalSuppressMessage("ReflectionAnalysis", "IL2063",
@@ -209,7 +178,7 @@ public class MyLibrary
         // are already optimized away with Native AOT trimming and may be
         // optimized away for non-native deployment in the future as well.
         Justification = "*INVALID* Only need to serialize properties that are used by"
-           + "the app. *INVALID*")]
+                        + "the app. *INVALID*")]
     public string Serialize(object o)
     {
         StringBuilder sb = new StringBuilder();
@@ -221,12 +190,9 @@ public class MyLibrary
     }
     // </snippet_AD3>
     private void AppendProperty(StringBuilder sb, PropertyInfo property, object o) => throw new NotImplementedException();
-    }
-#elif AD4
-using System.Diagnostics.CodeAnalysis;
-using System.Reflection;
+}
 
-public class MyLibrary
+public class MyLibrary12
 {
     // <snippet_AD4>
     [DynamicDependency("Helper", "MyType", "MyAssembly")]
@@ -237,11 +203,7 @@ public class MyLibrary
     }
 }
 // </snippet_AD4>
-#elif AD5
-using System.Diagnostics.CodeAnalysis;
-using System.Reflection;
-
-public class MyLibrary
+public class MyLibrary22
 {
     // <snippet_AD5>
     [DynamicDependency("Method()")]

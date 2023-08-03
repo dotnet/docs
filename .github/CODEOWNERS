@@ -63,6 +63,9 @@
 # Azure SDK package list
 /docs/azure/includes/ @dotnet/docs
 
+# Azure SDK catch-all entry
+/docs/azure/sdk/ @jsquire @pallavit
+
 # Azure SDK authentication topics
 /docs/azure/sdk/authentication/ @schaabs
 

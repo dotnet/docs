@@ -8,7 +8,7 @@ ms.date: 06/12/2023
 
 # Prepare .NET libraries for trimming
 
-The .NET SDK makes it possible to reduce the size of self-contained apps by [trimming](trim-self-contained.md), which removes unused code from the app and its dependencies. Not all code is compatible with trimming, so .NET 6 provides trim analysis warnings to detect patterns that may break trimmed apps. To resolve warnings originating from the app code, see [resolving trim warnings](#resolve-trim-warnings). This article describes how to prepare libraries for trimming with the aid of these warnings, including recommendations for fixing some common cases.
+The .NET SDK makes it possible to reduce the size of self-contained apps by [trimming](trim-self-contained.md). Trimming removes unused code from the app and its dependencies. Not all code is compatible with trimming, so .NET provides trim analysis warnings to detect patterns that may break trimmed apps. To resolve warnings originating from the app code, see [resolving trim warnings](#resolve-trim-warnings). This article describes how to prepare libraries for trimming and provides recommendations for fixing some common cases.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ The .NET SDK makes it possible to reduce the size of self-contained apps by [tri
 Trim warnings in a library can be found with either of the following methods:
 
 * Enabling project-specific trimming using the `IsTrimmable` property.
-* Added the library as a reference to a sample app, and trim the sample app.
+* Creating a sample app that uses the library, and enabling trimming for the sample app.
 
 We recommend using both approaches. Project-specific trimming is convenient and shows trim warnings for one project, but relies on the references being marked trim-compatible to see all warnings. Trimming a sample app is more work, but shows all warnings.
 
@@ -63,14 +63,14 @@ When building and publishing a library:
 * The implementations of the dependencies aren't available.
 * The available reference assemblies don't have enough information for the trimmer to determine if they're compatible with trimming.
 
-Because the dependency limitations, a self-contained sample app which uses the libary and it's dependencies must be created. The sample app executable includes all the information the trimmer requires to issue warning on trim incompatibilities in:
+Because of the dependency limitations, a self-contained sample app which uses the library and its dependencies must be created. The sample app executable includes all the information the trimmer requires to issue warning on trim incompatibilities in:
 
 * The library code.
 * The code that the library references from its dependencies.
 
-***Note:*** If the library has significantly different behavior depending on the target framework, create a  sample app for each of the target frameworks. For example, if the library uses [conditional compilation](/dotnet/csharp/language-reference/preprocessor-directives#conditional-compilation) such as `#if NET7_0` to change behavior.
+***Note:*** If the library has different behavior depending on the target framework, create a  sample app for each of the target frameworks. For example, if the library uses [conditional compilation](/dotnet/csharp/language-reference/preprocessor-directives#conditional-compilation) such as `#if NET7_0` to change behavior.
 
-To create the sample app, create a separate console application project with `dotnet new console` and modify the project file to look like the following. You need to do the following in your project file:
+To create the sample app, create a separate console application project with `dotnet new console` and modify the project similar to project shown below. You need to do the following in the project file:
 
 * Add `<PublishTrimmed>true</PublishTrimmed>`.
 * Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
@@ -78,7 +78,6 @@ To create the sample app, create a separate console application project with `do
   * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root,". A "root," assembly means the trimmer analyzes every call in the library, and traverses all code paths that originate from that assembly. `TrimmerRootAssembly` is necessary in case the library has `[AssemblyMetadata("IsTrimmable", "True")]`.  A project using `[AssemblyMetadata("IsTrimmable", "True")]` without  `TrimmerRootAssembly` would remove the unused library without analyzing it.
 * If your app targets .NET 6, set the `TrimmerDefaultAction` property to `link` with `<TrimmerDefaultAction>link</TrimmerDefaultAction>` in a `<PropertyGroup>` element.
 
-  * 
 
 ##### .csproj file
 
@@ -167,7 +166,7 @@ In the following example, an unknown `Type` flows into the annotated method para
 
 Similarly, here the problem is that the field `type` is passed into a parameter with these requirements. You can fix it by adding `DynamicallyAccessedMembers` to the field. This warns about code that assigns incompatible values to the field instead. Sometimes this process continues until a public API is annotated, and other times it ends when a concrete type flows into a location with these requirements. For example:
 
-:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_UMH2" highlight="7":::
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_UMH2" highlight="1":::
 
 In this case, the trim analysis keeps public methods of <xref:System.Tuple>, and produces further warnings.
 
@@ -205,13 +204,13 @@ The warnings can be suppressed <xref:System.Diagnostics.CodeAnalysis.Uncondition
 
 For example:
 
-:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_AD1" highlight="7":::
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_AD1":::
 
-Here, the indexer property has been annotated so that the returned `Type` meets the requirements of `CreateInstance`. This already ensures that the `TypeWithConstructor` constructor is kept, and that the call to `CreateInstance` doesn't warn. Furthermore, the indexer setter annotation ensures that any types stored in the `Type[]` have a constructor. However, the analysis isn't able to see this, and still produces a warning for the getter, because it doesn't know that the returned type has its constructor preserved.
+In the preceding code, the indexer property has been annotated so that the returned `Type` meets the requirements of `CreateInstance`. This ensures that the `TypeWithConstructor` constructor is kept, and that the call to `CreateInstance` doesn't warn. The indexer setter annotation ensures that any types stored in the `Type[]` have a constructor. However, the analysis isn't able to see this and produces a warning for the getter, because it doesn't know that the returned type has its constructor preserved.
 
-If you're sure that the requirements are met, you can silence this warning by adding `UnconditionalSuppressMessage` to the getter:
+If you're sure that the requirements are met, you can silence this warning by adding [`[UnconditionalSuppressMessage]`](xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute) to the getter:
 
-:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_AD2" highlight="9-10":::
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_AD2" highlight="1-9":::
 
 It's important to underline that it's only valid to suppress a warning if there are annotations or code that ensure the reflected-on members are visible targets of reflection. It isn't sufficient that the member was a target of a call, field or property access. It may appear to be the case sometimes but such code is bound to break eventually as more trimming optimizations are added. Properties, fields, and methods that aren't visible targets of reflection could be inlined, have their names removed, get moved to different types, or otherwise optimized in ways that break reflecting on them. When suppressing a warning, it's only permissible to reflect on targets that were visible targets of reflection to the trimming analyzer elsewhere.
 

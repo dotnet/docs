@@ -225,5 +225,3 @@ public class MyLibrary22
         helper.Invoke(null, null);
     }
 }
-
-#endif

@@ -6,6 +6,8 @@ using System.Reflection;
 
 public class MyLibrary
 {
+    internal static Type type;
+
     public static void Method()
     {
         // warning IL2026 : MyLibrary.Method: Using method 'MyLibrary.DynamicBehavior'
@@ -87,8 +89,8 @@ public class MyLibrary5
 public class MyLibrary6
 {
     // <snippet_UMH2>
-    [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]
     static Type type;
+    [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]
 
     static void InitializeTypeField()
     {

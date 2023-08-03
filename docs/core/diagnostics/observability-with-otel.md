@@ -334,7 +334,7 @@ In [step 6](#6-run-the-project), you saw that distributed tracing information wa
 
 Each process in a distributed system produces its own stream of activity information, and like metrics, you need a system to collect, store, and correlate the activities to be able to visualize the work done for each transaction. Jaeger is an open-source project to enable this collection and visualization.
 
-Download the latest binary distribution archive of Jaeger.
+Download the latest binary distribution archive of Jaeger for your platform from [https://www.jaegertracing.io/download/](https://www.jaegertracing.io/download/).
 
 Then, extract the download to a local location that's easy to access. Run the *jaeger-all-in-one(.exe)* executable:
 

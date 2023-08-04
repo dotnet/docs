@@ -1,8 +1,7 @@
 ﻿// <snippet_1>
 using System.Diagnostics.CodeAnalysis;
-using System;
-using System.Text;
 using System.Reflection;
+using System.Text;
 
 public class MyLibrary
 {
@@ -11,8 +10,8 @@ public class MyLibrary
     public static void Method()
     {
         // warning IL2026 : MyLibrary.Method: Using method 'MyLibrary.DynamicBehavior'
-        //  which has 'RequiresUnreferencedCodeAttribute' can break functionality
-        // when trimming application code.
+        // which has [RequiresUnreferencedCode] can break functionality
+        // when trimming app code.
         DynamicBehavior();
     }
 
@@ -64,8 +63,7 @@ public class MyLibrary4
     // <snippet_DAA2>
     static void UseMethods(
         // State the requirement in the UseMethods parameter.
-        [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]
-    Type type)
+        [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]   Type type)
     {
         // ...
     }

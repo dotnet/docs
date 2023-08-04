@@ -8,7 +8,10 @@ ms.date: 06/12/2023
 
 # Prepare .NET libraries for trimming
 
-The .NET SDK makes it possible to reduce the size of self-contained apps by [trimming](trim-self-contained.md). Trimming removes unused code from the app and its dependencies. Not all code is compatible with trimming, so .NET provides trim analysis warnings to detect patterns that may break trimmed apps. To resolve warnings originating from the app code, see [resolving trim warnings](#resolve-trim-warnings). This article describes how to prepare libraries for trimming and provides recommendations for fixing some common cases.
+The .NET SDK makes it possible to reduce the size of self-contained apps by [trimming](trim-self-contained.md). Trimming removes unused code from the app and its dependencies. Not all code is compatible with trimming. .NET provides trim analysis warnings to detect patterns that may break trimmed apps. This article:
+
+* Describes how to prepare libraries for trimming.
+* Provides recommendations for fixing  [common trimming warnings](#resolve-trim-warnings).
 
 ## Prerequisites
 
@@ -19,9 +22,9 @@ The .NET SDK makes it possible to reduce the size of self-contained apps by [tri
 Trim warnings in a library can be found with either of the following methods:
 
 * Enabling project-specific trimming using the `IsTrimmable` property.
-* Creating a sample app that uses the library, and enabling trimming for the sample app.
+* Creating a trimming test app that uses all the APIs in the library, and enabling trimming for the test app.
 
-We recommend using both approaches. Project-specific trimming is convenient and shows trim warnings for one project, but relies on the references being marked trim-compatible to see all warnings. Trimming a sample app is more work, but shows all warnings.
+We recommend using both approaches. Project-specific trimming is convenient and shows trim warnings for one project, but relies on the references being marked trim-compatible to see all warnings. Trimming a test app is more work, but shows all warnings.
 
 ### Enable project-specific trimming
 
@@ -51,7 +54,7 @@ The `IsTrimmable` property defaults to `true` when configuring a project as AOT-
 
 To generate trim warnings without marking the project as trim-compatible, use `<EnableTrimAnalyzer>true</EnableTrimAnalyzer>` rather than `<IsTrimmable>true</IsTrimmable>`.
 
-### Show all warnings with sample app
+### Show all warnings with test app
 
 To show all analysis warnings for a library, the trimmer must analyze the implementation:
 
@@ -63,20 +66,24 @@ When building and publishing a library:
 * The implementations of the dependencies aren't available.
 * The available reference assemblies don't have enough information for the trimmer to determine if they're compatible with trimming.
 
-Because of the dependency limitations, a self-contained sample app which uses the library and its dependencies must be created. The sample app executable includes all the information the trimmer requires to issue warning on trim incompatibilities in:
+Because of the dependency limitations, a self-contained test app which uses the library and its dependencies must be created. The test app executable includes all the information the trimmer requires to issue warning on trim incompatibilities in:
 
 * The library code.
 * The code that the library references from its dependencies.
 
-***Note:*** If the library has different behavior depending on the target framework, create a  sample app for each of the target frameworks. For example, if the library uses [conditional compilation](/dotnet/csharp/language-reference/preprocessor-directives#conditional-compilation) such as `#if NET7_0` to change behavior.
+***Note:*** If the library has different behavior depending on the target framework, create a trimming test app for each of the target frameworks. For example, if the library uses [conditional compilation](/dotnet/csharp/language-reference/preprocessor-directives#conditional-compilation) such as `#if NET7_0` to change behavior.
 
-To create the sample app, create a separate console application project with `dotnet new console` and modify the project similar to project shown below. You need to do the following in the project file:
+To create the trimming test app:
 
-* Add `<PublishTrimmed>true</PublishTrimmed>`.
-* Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
-* Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
-  * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root,". A "root," assembly means the trimmer analyzes every call in the library, and traverses all code paths that originate from that assembly. `TrimmerRootAssembly` is necessary in case the library has `[AssemblyMetadata("IsTrimmable", "True")]`.  A project using `[AssemblyMetadata("IsTrimmable", "True")]` without  `TrimmerRootAssembly` would remove the unused library without analyzing it.
-* If your app targets .NET 6, set the `TrimmerDefaultAction` property to `link` with `<TrimmerDefaultAction>link</TrimmerDefaultAction>` in a `<PropertyGroup>` element.
+* Create a separate console application project with `dotnet new console`.
+* Add a reference to the library.
+* Add calls to each API in the library.
+* Modify the project similar to project shown below using the following list:
+
+  * Add `<PublishTrimmed>true</PublishTrimmed>`.
+  * Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
+  * Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
+    * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root,  ". A "root," assembly means the trimmer analyzes every call in the library, and traverses all code paths that originate from   that assembly. `TrimmerRootAssembly` is necessary in case the library has `[AssemblyMetadata("IsTrimmable", "True")]`.  A   project using `[AssemblyMetadata("IsTrimmable", "True")]` without  `TrimmerRootAssembly` would remove the unused library   without analyzing it.
 
 ##### .csproj file
 
@@ -88,12 +95,13 @@ Set the `TrimmerDefaultAction` property to `link` with `<TrimmerDefaultAction>li
 
 ### [.NET 7+](#tab/net7plus)
 
-Use the [.NET 7 and higher default behavior](../../../core/compatibility/deployment/7.0/trim-all-assemblies.md), which can enforce the behavior by adding `<TrimMode>full</TrimMode>`.
+The `<TrimMode>full</TrimMode>` setting:
 
-`<TrimMode>full</TrimMode>`:
-
+* Is the [default for .NET 7 and higher](../../../core/compatibility/deployment/7.0/trim-all-assemblies.md).
 * Ensures that the trimmer only analyzes the parts of the library's dependencies that are used.
-* Tells the trimmer that any code that isn't part of a "root" can be trimmed if it's unused. Without this option,  warnings are issued originating from ***any*** part of a dependency that doesn't set `[AssemblyMetadata("IsTrimmable", "Tue")]`, including parts that are unused by the library.
+* Tells the trimmer that any code that isn't part of a "root" can be trimmed if it's unused. Without this option:
+  * Warnings are issued originating from ***any*** part of a dependency that doesn't set `[AssemblyMetadata("IsTrimmable", "Tue")]`
+  * The preceding warnings can be issued by parts that are unused by the library. <!-- REVIEW: What are parts? -->
 
 :::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyLibrary/MyLibrary.csproj.xml":::
 
@@ -107,7 +115,7 @@ Once the project file is updated, run `dotnet publish` with the target [runtime 
 dotnet publish -c Release -r <RID>
 ```
 
-Follow the same pattern for multiple libraries. To see trim analysis warnings for more than one library at a time, add them all to the same project as `ProjectReference` and `TrimmerRootAssembly` items. Adding all the libraries to the same project with `ProjectReference` and `TrimmerRootAssembly` items warns about dependencies if ***any*** of the root libraries use a trim-unfriendly API in a dependency. To see warnings that have to do with only a particular library, reference that library only.
+Follow the preceding pattern for multiple libraries. To see trim analysis warnings for more than one library at a time, add them all to the same project as `ProjectReference` and `TrimmerRootAssembly` items. Adding all the libraries to the same project with `ProjectReference` and `TrimmerRootAssembly` items warns about dependencies if ***any*** of the root libraries use a trim-unfriendly API in a dependency. To see warnings that have to do with only a particular library, reference that library only.
 
 ***Note:*** The analysis results depend on the implementation details of the dependencies. Updating to a new version of a dependency may introduce analysis warnings:
 
@@ -122,23 +130,26 @@ The preceding steps produce warnings about code that may cause problems when use
 
 ### RequiresUnreferencedCode
 
-:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_1" highlight="5-11":::
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_1" highlight="17-18":::
 
-This means the library calls a method that has explicitly been annotated as incompatible with trimming, using <xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute>. To get rid of the warning, consider whether `Method` needs to call `DynamicBehavior` to do its job. If so, annotate the caller `Method` with `RequiresUnreferencedCode` as well; this will "bubble up" the warning so that callers of `Method` get a warning instead:
+This means the library calls a method that has explicitly been annotated as incompatible with trimming, using [`[RequiresUnreferencedCode]`](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute). To get rid of the warning, consider whether `Method` needs to call `DynamicBehavior` to do its job. If so, annotate the caller `Method` with `RequiresUnreferencedCode` which propagates up the call stack the warning so that callers of `Method` get a warning instead:
 
-:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_RequiresUnreferencedCode" highlight="5":::
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_RequiresUnreferencedCode":::
 
-Once you have "bubbled up" the attribute all the way to public APIs (so that these warnings are produced only for public methods, if at all), you're done. Apps that call your library will now get warnings if they call those public APIs, but these will no longer produce warnings like `IL2104: Assembly 'MyLibrary' produced trim warnings`.
+Once you have propagated up the attribute all the way to public API, apps calling the library:
+
+* Get warnings only for public methods that aren't trimmable.
+* Don't get warnings like `IL2104: Assembly 'MyLibrary' produced trim warnings`.
 
 ### DynamicallyAccessedMembers
 
-:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_DAA1" highlight="5":::
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_DAA1":::
 
-In the preceding code, `UseMethods` is calling a reflection method that has a <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute> requirement. The requirement states that the type's public methods are available. Satisfy the requirement by adding the same requirement to the parameter of `UseMethods`.
+In the preceding code, `UseMethods` is calling a reflection method that has a [`[DynamicallyAccessedMembers]`](xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute) requirement. The requirement states that the type's public methods are available. Satisfy the requirement by adding the same requirement to the parameter of `UseMethods`.
 
-:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_DAA2" highlight="8":::
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_DAA2" highlight="3":::
 
-Now any calls to `UseMethods` produce warnings if they pass in values that don't satisfy the `PublicMethods` requirement. Like with `RequiresUnreferencedCode`, once you have bubbled up such warnings to public APIs, you're done.
+Now any calls to `UseMethods` produce warnings if they pass in values that don't satisfy the <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicMethods> requirement. Similar to `RequiresUnreferencedCode`, once you have propagated up such warnings to public APIs, you're done.
 
 In the following example, an unknown `Type` flows into the annotated method parameter. The unknown `Type` is from a field:
 

@@ -415,7 +415,9 @@ Application Insights identifies which instance to use to store and process data 
 If you're using Azure App Service, this connection string is automatically passed to the application as an environment variable. For other services or when running locally, you need to pass it using the `APPLICATIONINSIGHTS_CONNECTION_STRING` environment variable or in `appsettings.json`. For running locally, it's easiest to add the value to `appsettings.json`:
 
 ```json
-"APPLICATIONINSIGHTS_CONNECTION_STRING": "InstrumentationKey=12345678-abcd-abcd-abcd-12345678..."
+"AzureMonitor": {
+    "ConnectionString": "InstrumentationKey=12345678-abcd-abcd-abcd-12345678..."
+}
 ```
 
 > [!Note]

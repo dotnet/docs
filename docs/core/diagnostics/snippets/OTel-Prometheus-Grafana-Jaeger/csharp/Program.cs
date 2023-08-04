@@ -136,14 +136,15 @@ async Task SendNestedGreeting(int nestlevel, ILogger<Program> logger, HttpContex
 
         await context.Response.WriteAsync($"Nested Greeting, level: {nestlevel}\r\n");
 
-        if (nestlevel > 0) {
+        if (nestlevel > 0)
+        {
             var request = context.Request;
             var url = new Uri($"{request.Scheme}://{request.Host}{request.Path}?nestlevel={nestlevel - 1}");
 
             // Makes an http call passing the activity information as http headers
             var nestedResult = await clientFactory.CreateClient().GetStringAsync(url);
             await context.Response.WriteAsync(nestedResult);
-        };
+        }
     }
     else
     {

@@ -75,12 +75,12 @@ Because of the dependency limitations, a self-contained test app which uses the 
 
 To create the trimming test app:
 
-### [.NET 6](#tab/net6)
-
 * Create a separate console application project.
 * Add a reference to the library.
 * Add calls to each API in the library.
 * Modify the project similar to the project shown below using the following list:
+
+### [.NET 6](#tab/net6)
 
   * Set the `TrimmerDefaultAction` property to `link` with `<TrimmerDefaultAction>link</TrimmerDefaultAction>` in a `<PropertyGroup>` element.  <!-- only diff with .NET7+ -->
   * Add `<PublishTrimmed>true</PublishTrimmed>`.
@@ -91,11 +91,6 @@ To create the trimming test app:
 :::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyTestLib6app/MyTestLib6app.csproj":::
 
 ### [.NET 7+](#tab/net7plus)
-
-* Create a separate console application project.
-* Add a reference to the library.
-* Add calls to each API in the library.
-* Modify the project similar to the project shown below using the following list:
 
   * Add `<PublishTrimmed>true</PublishTrimmed>`.
   * Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.

@@ -14,10 +14,21 @@ The benefit of native AOT is most significant for workloads with a high number o
 
 The native AOT deployment model uses an ahead-of-time compiler to compile IL to native code at the time of publish. Native AOT apps don't use a just-in-time (JIT) compiler when the application runs. Native AOT apps can run in restricted environments where a JIT isn't allowed. Native AOT applications target a specific runtime environment, such as Linux x64 or Windows x64, just like publishing a [self-contained app](../index.md#publish-self-contained).
 
-There are some limitations in the .NET native AOT deployment model, with the main one being that run-time code generation isn't possible. For more information, see [Limitations of Native AOT deployment](#limitations-of-native-aot-deployment). The support in the .NET 7 release is targeted towards console-type applications.
+## Limitations in the .NET native AOT deployment model
+
+### [.NET 7](#tab/net7)
 
 > [!WARNING]
-> In .NET 7, only a limited number of libraries are fully compatible with native AOT.
+>
+> - Native AOT is targeted towards console-type apps.
+> - Only a limited number of libraries are fully compatible with native AOT.
+>
+
+### [.NET 8+](#tab/net8plus)
+
+AOT support in .NET 8 is more comprehensive than in .NET 7. However, there are still some limitations. For more information, see [Limitations of Native AOT deployment](#limitations-of-native-aot-deployment).
+
+---
 
 ## Prerequisites
 
@@ -69,7 +80,13 @@ Check out the [native AOT samples](https://github.com/dotnet/samples/tree/main/c
 
 ## AOT-compatibility analyzers
 
-Starting with .NET 8.0, library authors use the `IsAotCompatible` property to indicate whether a library is compatible with native AOT. Consider when a library sets the `IsAotCompatible` property to `true`, for example:
+### [.NET 7](#tab/net7)
+
+AOT-compatibility analyzers are available only in .NET 8 and later versions.
+
+### [.NET 8+](#tab/net8plus)
+
+The `IsAotCompatible` property is used to indicate whether a library is compatible with native AOT. Consider when a library sets the `IsAotCompatible` property to `true`, for example:
 
 ```xml
 <PropertyGroup>
@@ -85,6 +102,8 @@ The preceding configuration assigns a default of `true` to the following propert
 - `EnableAotAnalyzer`
 
 These analyzers help to ensure that a library is compatible with native AOT.
+
+---
 
 ## Native debug information
 
@@ -102,7 +121,13 @@ Set the `StripSymbols` property to `true` to produce the debug information in a 
 
 ### [.NET 8+](#tab/net8plus)
 
-By default, native AOT publishing produces debug information in a separate file on all supported platforms (*.dbg* on Linux, *.pdb* on Windows, and *.dwarf* on macOS). This file is necessary for running the app under the debugger or inspecting crash dumps. On Unix-like platforms, you can set the `StripSymbols` property to `false` to include the debug information in the native binary. (Including the debug information makes the native binary larger.)
+By default, native AOT publishing produces debug information in a separate file:
+
+- Linux: *.dbg*
+- Windows: *.pdb*
+- macOS: *.dwarf*
+
+The debug file is necessary for running the app under the debugger or inspecting crash dumps. On Unix-like platforms, set the `StripSymbols` property to `false` to include the debug information in the native binary. Including debug information makes the native binary larger.
 
 ```xml
 <PropertyGroup>
@@ -114,24 +139,32 @@ By default, native AOT publishing produces debug information in a separate file 
 
 ## Limitations of native AOT deployment
 
-Native AOT applications come with a few fundamental limitations and compatibility issues. The key limitations include:
+Native AOT apps have the following limitations:
 
-- No dynamic loading (for example, `Assembly.LoadFile`).
-- No run-time code generation (for example, `System.Reflection.Emit`).
+- No dynamic loading, for example, `Assembly.LoadFile`.
+- No run-time code generation, for example, `System.Reflection.Emit`.
 - No C++/CLI.
-- No built-in COM (only applies to Windows).
+- Windows: No built-in COM.
 - Requires trimming, which has [limitations](../trimming/incompatibilities.md).
 - Implies compilation into a single file, which has known [incompatibilities](../single-file/overview.md#api-incompatibility).
 - Apps include required runtime libraries (just like [self-contained apps](../index.md#publish-self-contained), increasing their size as compared to framework-dependent apps).
 - <xref:System.Linq.Expressions> always use their interpreted form, which is slower than run-time generated compiled code.
+- Not all the runtime libraries are fully annotated to be native AOT compatible. That is, some warnings in the runtime libraries aren't actionable by end developers.
 
-The publish process analyzes the entire project and its dependencies and produces warnings whenever the limitations of the published application might be encountered at run time.
+The publish process analyzes the entire project and its dependencies for possible limitations. Warnings are issued for each limitation the published app may encounter at run time.
 
-The first release of native AOT in .NET 7 has some more limitations:
+### OS specific limitations
 
-- Should be targeted for console type applications (not ASP.NET Core).
-- Not all the runtime libraries are fully annotated to be native AOT compatible (that is, some warnings in the runtime libraries aren't actionable by end developers).
-- Limited diagnostic support (debugging and profiling).
+### [.NET 7](#tab/net7)
+
+- Should be targeted for console type apps. ASP.NET Core is ***not*** supported.
+- Limited diagnostic support for debugging and profiling.
+
+### [.NET 8+](#tab/net8plus)
+
+Support for some ASP.NET Core features. For more information, see [ASP.NET Core support for native AOT](/aspnet/core/fundamentals/native-aot/?view=aspnetcore-8.0&preserve-view=true).
+
+---
 
 ## Build native libraries
 
@@ -143,10 +176,25 @@ Publishing a class library as native AOT creates a native library that exposes m
 
 The following table shows supported compilation targets.
 
+### [.NET 7](#tab/net7)
+
 | Platform | Supported architecture |
 |----------|------------------------|
 | Windows  | x64, Arm64             |
 | Linux    | x64, Arm64             |
-| macOS*   | x64, Arm64             |
 
-\* Supported starting in .NET 8.
+### [.NET 8+](#tab/net8plus)
+
+| Platform | Supported architecture |  Notes               |
+|----------|------------------------|----------------------|
+| Windows  | x64, Arm64             |                      |
+| Linux    | x64, Arm64             |                      |
+| macOS   | x64, Arm64 |                                        |
+| iOS     | Arm64 | Experimental support                   |
+| iOSSimulator     | x64, Arm64 | Experimental support                   |
+| tvOS     | Arm64 | Experimental support                   |
+| tvOSSimulator     | x64, Arm64 | Experimental support                   |
+| MacCatalyst     | x64, Arm64 | Experimental support                   |
+| Android | x64, Arm64 | Experimental, no built-in Java interop |
+
+---

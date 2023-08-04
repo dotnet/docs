@@ -63,7 +63,7 @@ public class MyLibrary4
     // <snippet_DAA2>
     static void UseMethods(
         // State the requirement in the UseMethods parameter.
-        [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]   Type type)
+        [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)] Type type)
     {
         // ...
     }
@@ -90,8 +90,8 @@ public class MyLibrary5
 public class MyLibrary6
 {
     // <snippet_UMH2>
-    static Type type;
     [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]
+    static Type type;
 
     static void InitializeTypeField()
     {

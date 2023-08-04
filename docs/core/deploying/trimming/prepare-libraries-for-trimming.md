@@ -132,7 +132,7 @@ The preceding steps produce warnings about code that may cause problems when use
 
 :::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_1" highlight="17-18":::
 
-This means the library calls a method that has explicitly been annotated as incompatible with trimming, using [`[RequiresUnreferencedCode]`](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute). To get rid of the warning, consider whether `Method` needs to call `DynamicBehavior` to do its job. If so, annotate the caller `Method` with `RequiresUnreferencedCode` which propagates up the call stack the warning so that callers of `Method` get a warning instead:
+This means the library calls a method that has explicitly been annotated as incompatible with trimming, using [`[RequiresUnreferencedCode]`](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute). To get rid of the warning, consider whether `Method` needs to call `DynamicBehavior` to do its job. If so, annotate the caller `Method` with `[RequiresUnreferencedCode]` which propagates up the call stack the warning so that callers of `Method` get a warning instead:
 
 :::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_RequiresUnreferencedCode":::
 
@@ -149,13 +149,13 @@ In the preceding code, `UseMethods` is calling a reflection method that has a [`
 
 :::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_DAA2" highlight="3":::
 
-Now any calls to `UseMethods` produce warnings if they pass in values that don't satisfy the <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicMethods> requirement. Similar to `RequiresUnreferencedCode`, once you have propagated up such warnings to public APIs, you're done.
+Now any calls to `UseMethods` produce warnings if they pass in values that don't satisfy the <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicMethods> requirement. Similar to `[RequiresUnreferencedCode]`, once you have propagated up such warnings to public APIs, you're done.
 
 In the following example, an unknown `Type` flows into the annotated method parameter. The unknown `Type` is from a field:
 
 :::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_UMH":::
 
-Similarly, here the problem is that the field `type` is passed into a parameter with these requirements. You can fix it by adding `DynamicallyAccessedMembers` to the field. This warns about code that assigns incompatible values to the field instead. Sometimes this process continues until a public API is annotated, and other times it ends when a concrete type flows into a location with these requirements. For example:
+Similarly, here the problem is that the field `type` is passed into a parameter with these requirements. It's fixed by adding  [`[DynamicallyAccessedMembers]`](xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute) to the field. `[DynamicallyAccessedMembers]` warns about code that assigns incompatible values to the field. Sometimes this process continues until a public API is annotated, and other times it ends when a concrete type flows into a location with these requirements. For example:
 
 :::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_UMH2" highlight="1":::
 
@@ -163,11 +163,12 @@ In this case, the trim analysis keeps public methods of <xref:System.Tuple>, and
 
 ## Recommendations
 
-Avoid reflection when possible. When using reflection, minimized reflection scope so that it's reachable only from a small part of the library.
+***Avoid*** reflection when possible.
 
-* Avoid using non-understood patterns in places like static constructors. Static constructors result in the warning propagating to all members of the class.
-* Avoid annotating virtual methods or interface methods, which requires all overrides to have matching annotations.
-* In some cases, you're able to mechanically propagate warnings through your code without issues. <!--Review: What doesn't mechanically propagate mean? For sure it won't MT (Machine Translate) --> Sometimes this results in much of your public API being annotated with `RequiresUnreferencedCode`. Annotating with `RequiresUnreferencedCode` is the right thing to do if the library behaves in ways that can't be understood statically by the trim analysis.
+* When using reflection, minimize reflection scope so that it's reachable only from a small part of the library.
+* Avoid using <!-- Review change: non-understood--> non-trimmable patterns in places like static constructors. Static constructors result in the warning propagating to all members of the class.
+* Avoid annotating virtual methods or interface methods. Annotating virtual or interface methods requires all overrides to have matching annotations.
+* In some cases, you're able to mechanically propagate warnings through the library code without issues. <!--Review: What does mechanically propagate mean? For sure it won't MT (Machine Translate) --> Sometimes this results in much of your public API being annotated with [`[RequiresUnreferencedCode]`](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute). Annotating with `[RequiresUnreferencedCode]` is the right thing to do if the library behaves in ways that can't be understood statically by the trim analysis.
 <!-- Original run on, way too long for MT 
 * In other cases, you might discover that your code uses patterns that can't be expressed in terms of the `DynamicallyAccessedMembers` attributes, even if it only uses reflection to operate on statically known types. In these cases, you may need to reorganize some of your code to make it follow an analyzable pattern. -->
 * Code that uses patterns that can't be expressed in terms of the `DynamicallyAccessedMembers` attributes:
@@ -176,7 +177,7 @@ Avoid reflection when possible. When using reflection, minimized reflection scop
 
 ## Resolve warnings for non-analyzable patterns
 
-It's better to resolve warnings by expressing the intent of your code using `RequiresUnreferencedCode` and `DynamicallyAccessedMembers` when possible. However, in some cases, you may be interested in enabling trimming of a library that uses patterns that can't be expressed with those attributes, or without refactoring existing code. This section describes some advanced ways to resolve trim analysis warnings.
+It's better to resolve warnings by expressing the intent of your code using `[RequiresUnreferencedCode]` and `DynamicallyAccessedMembers` when possible. However, in some cases, you may be interested in enabling trimming of a library that uses patterns that can't be expressed with those attributes, or without refactoring existing code. This section describes some advanced ways to resolve trim analysis warnings.
 
 > [!WARNING]
 > These techniques might change the behavior or your code or result in run time exceptions if used incorrectly.

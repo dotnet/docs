@@ -155,7 +155,7 @@ The publish process analyzes the entire project and its dependencies for possibl
 
 ### OS specific limitations
 
-### [.NET 7+](#tab/net7plus)
+### [.NET 7](#tab/net7)
 
 - Should be targeted for console type apps. ASP.NET Core is ***not*** supported.
 - Limited diagnostic support for debugging and profiling.

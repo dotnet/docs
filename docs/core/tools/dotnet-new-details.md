@@ -14,13 +14,13 @@ ms.date: 06/07/2023
 ## Synopsis
 
 ```dotnetcli
-dotnet new details [<PACKAGE_NAME>] [--interactive] [--add-source|--nuget-source <SOURCE>] 
+dotnet new details [<PACKAGE_NAME>] [--interactive] [--add-source|--nuget-source <SOURCE>]
     [--force] [-d|--diagnostics] [-h|--help]
 ```
 
 ## Description
 
-The `dotnet new details` command displays the metdata of the template package from the package name provided. By default, the command searches for the latest available version.
+The `dotnet new details` command displays the metadata of the template package from the package name provided. By default, the command searches for the latest available version.
 If the package is installed locally or is found on the official NuGet website, it also displays the templates that the package contains, otherwise it only displays basic metadata.
 
 ## Arguments
@@ -32,8 +32,8 @@ If the package is installed locally or is found on the official NuGet website, i
 ## Options
 
 - **`--add-source|--nuget-source <SOURCE>`**
-  
-  By default, `dotnet new details` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet source the package can be installed from. If `--nuget-source` is specified, the source is added to the list of sources to be checked.  
+
+  By default, `dotnet new details` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet source the package can be installed from. If `--nuget-source` is specified, the source is added to the list of sources to be checked.
   To check the configured sources for the current directory use [`dotnet nuget list source`](dotnet-nuget-list-source.md). For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior)
 
 [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
@@ -44,7 +44,7 @@ If the package is installed locally or is found on the official NuGet website, i
 
 - **`-h|--help`**
 
-  Prints out help for the search command.
+  Prints help for the search command.
 
 ## Examples
 

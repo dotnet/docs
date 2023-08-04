@@ -2,7 +2,7 @@
 title: What's new in .NET 8
 description: Learn about the new .NET features introduced in .NET 8.
 titleSuffix: ""
-ms.date: 07/11/2023
+ms.date: 08/08/2023
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
@@ -11,14 +11,32 @@ author: gewarren
 
 .NET 8 is the successor to [.NET 7](dotnet-7.md). It will be [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 8 here](https://dotnet.microsoft.com/download/dotnet).
 
-This article has been updated for .NET 8 Preview 6.
+This article has been updated for .NET 8 Preview 7.
 
 > [!IMPORTANT]
 >
 > - This information relates to a pre-release product that may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 > - Much of the other .NET documentation on [https://learn.microsoft.com/dotnet](/dotnet) has not yet been updated for .NET 8.
 
-## Serialization
+## Core .NET libraries
+
+This section contains the following subtopics:
+
+- [Serialization](#serialization)
+- [Time abstraction](#time-abstraction)
+- [UTF8 improvements](#utf8-improvements)
+- [Methods for working with randomness](#methods-for-working-with-randomness)
+- [Performance-focused types](#performance-focused-types)
+- [System.Numerics and System.Runtime.Intrinsics](#systemnumerics-and-systemruntimeintrinsics)
+- [Data validation](#data-validation)
+- [Metrics](#metrics)
+- [Cryptography](#cryptography)
+- [Networking](#networking)
+- [Stream-based ZipFile methods](#stream-based-zipfile-methods)
+
+### Serialization
+
+https://github.com/dotnet/core/issues/8438#issuecomment-1660454507
 
 Many improvements have been made to <xref:System.Text.Json?displayProperty=fullName> serialization and deserialization functionality including:
 
@@ -38,7 +56,7 @@ The following sections go into more depth about other serialization improvements
 
 For more information about JSON serialization in general, see [JSON serialization and deserialization in .NET](../../standard/serialization/system-text-json/overview.md).
 
-### Source generator
+#### Source generator
 
 .NET 8 includes performance and reliability enhancements of the System.Text.Json [source generator](../../standard/serialization/system-text-json/source-generation.md) that are aimed at making the [native AOT](../../standard/glossary.md#native-aot) experience on par with the [reflection-based serializer](../../standard/serialization/system-text-json/source-generation-modes.md#overview). For example:
 
@@ -66,7 +84,7 @@ For more information about JSON serialization in general, see [JSON serializatio
 
   The property is nullable since it returns `null` for `JsonConverterFactory` instances and `typeof(T)` for `JsonConverter<T>` instances.
 
-#### Chain source generators
+##### Chain source generators
 
 The <xref:System.Text.Json.JsonSerializerOptions> class includes a new <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> property that complements the existing <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> property. These properties are used in contract customization for chaining source generators. The addition of the new property means that you don't have to specify all chained components at one call site&mdash;they can be added after the fact.
 
@@ -84,7 +102,7 @@ options.TypeInfoResolverChain.RemoveAt(0);
 options.TypeInfoResolverChain.Count; // 2
 ```
 
-### Interface hierarchies
+#### Interface hierarchies
 
 .NET 8 adds support for serializing properties from interface hierarchies.
 
@@ -111,7 +129,7 @@ public class DerivedImplement : IDerived
 }
 ```
 
-### Naming policies
+#### Naming policies
 
 [`JsonNamingPolicy`](/dotnet/api/system.text.json.jsonnamingpolicy?view=net-8.0&preserve-view=true#properties) includes new naming policies for `snake_case` (with an underscore) and `kebab-case` (with a hyphen) property name conversions. Use these policies similarly to the existing <xref:System.Text.Json.JsonNamingPolicy.CamelCase?displayProperty=nameWithType> policy:
 
@@ -120,7 +138,7 @@ var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolic
 JsonSerializer.Serialize(new { PropertyName = "value" }, options); // { "property_name" : "value" }
 ```
 
-### Read-only properties
+#### Read-only properties
 
 You can now deserialize onto read-only fields or properties (that is, those that don't have a `set` accessor).
 
@@ -163,7 +181,7 @@ Now, the input values are used to populate the read-only properties during deser
 {"Name":"John Doe","Company":{"Name":"Contoso","PhoneNumber":null}}
 ```
 
-### Disable reflection-based default
+#### Disable reflection-based default
 
 You can now disable using the reflection-based serializer by default. This disablement is useful to avoid accidental rooting of reflection components that aren't even in use, especially in trimmed and native AOT apps. To disable default reflection-based serialization by requiring that a <xref:System.Text.Json.JsonSerializerOptions> argument be passed to the <xref:System.Text.Json.JsonSerializer> serialization and deserialization methods, set the `JsonSerializer.IsReflectionEnabledByDefault` property to `false` in your project file. (If the property is set to `false` and you don't pass a configured <xref:System.Text.Json.JsonSerializerOptions> argument, the `Serialize` and `Deserialize` methods throw a <xref:System.NotSupportedException> at run time.)
 
@@ -186,20 +204,6 @@ static JsonSerializerOptions GetDefaultOptions()
     return new() { PropertyNamingPolicy = JsonNamingPolicy.KebabCaseLower };
 }
 ```
-
-## Core .NET libraries
-
-This section contains the following subtopics:
-
-- [Time abstraction](#time-abstraction)
-- [UTF8 improvements](#utf8-improvements)
-- [Methods for working with randomness](#methods-for-working-with-randomness)
-- [Performance-focused types](#performance-focused-types)
-- [System.Numerics and System.Runtime.Intrinsics](#systemnumerics-and-systemruntimeintrinsics)
-- [Data validation](#data-validation)
-- [Metrics](#metrics)
-- [Cryptography](#cryptography)
-- [Stream-based ZipFile methods](#stream-based-zipfile-methods)
 
 ### Time abstraction
 
@@ -439,6 +443,10 @@ else
 
 SHA-3 support is currently aimed at supporting cryptographic primitives. Higher-level constructions and protocols aren't expected to fully support SHA-3 initially. These protocols include X.509 certificates, <xref:System.Security.Cryptography.Xml.SignedXml>, and COSE.
 
+### Networking
+
+https://github.com/dotnet/core/issues/8437#issuecomment-1624217579
+
 ### Stream-based ZipFile methods
 
 .NET 8 includes new overloads of <xref:System.IO.Compression.ZipFile.CreateFromDirectory%2A?displayProperty=nameWithType> that allow you to collect all the files included in a directory and zip them, then store the resulting zip file into the provided stream. Similarly, new <xref:System.IO.Compression.ZipFile.ExtractToDirectory%2A?displayProperty=nameWithType> overloads let you provide a stream containing a zipped file and extract its contents into the filesystem. These are the new overloads:
@@ -468,6 +476,16 @@ This section contains the following subtopics:
 - [Options validation](#options-validation)
 - [LoggerMessageAttribute constructors](#loggermessageattribute-constructors)
 - [Extensions metrics](#extensions-metrics)
+- [Hosted lifecycle services](#hosted-lifecycle-services)
+- [Keyed DI services](#keyed-di-services)
+
+### Keyed DI services
+
+https://github.com/dotnet/core/issues/8438#issuecomment-1665919008
+
+### Hosted lifecycle services
+
+https://github.com/dotnet/core/issues/8438#issuecomment-1665886977
 
 ### Options validation
 
@@ -827,6 +845,10 @@ In addition, dynamic profile-guided optimization (PGO) has been improved and is 
 
 On average, dynamic PGO increases performance by about 15%. In a benchmark suite of ~4600 tests, 23% saw performance improvements of 20% or more.
 
+### Struct promotion
+
+https://github.com/dotnet/core/issues/8438#issuecomment-1662813017
+
 ## .NET SDK changes
 
 This section contains the following subtopics:
@@ -941,6 +963,10 @@ The [template engine](https://github.com/dotnet/templating) provides a more secu
 
 The Linux distribution-built (source-build) SDK now has the capability to build self-contained applications using the source-build runtime packages. The distribution-specific runtime package is bundled with the source-build SDK. During self-contained deployment, this bundled runtime package will be referenced, thereby enabling the feature for users.
 
+## Globalization
+
+https://github.com/dotnet/core/issues/8438#issuecomment-1643527400
+
 ## Containers
 
 - [Container images](#container-images)
@@ -955,7 +981,7 @@ The following changes have been made to .NET container images for .NET 8:
 - [Preview images](#preview-images)
 - [Chiseled Ubuntu images](#chiseled-ubuntu-images)
 - [Build multi-platform container images](#build-multi-platform-container-images)
-- [Alpine ASP.NET Docker composite images](#alpine-aspnet-docker-composite-images)
+- [ASP.NET composite images](#aspnet-composite-images)
 
 #### Debian 12
 
@@ -1003,7 +1029,9 @@ RUN dotnet publish -a $TARGETARCH --self-contained false --no-restore -o /app
 
 For more information, see the [Improving multi-platform container support](https://devblogs.microsoft.com/dotnet/improving-multiplatform-container-support/) blog post.
 
-#### Alpine ASP.NET Docker composite images
+#### ASP.NET composite images
+
+https://github.com/dotnet/core/issues/8438#issuecomment-1665921577
 
 As part of an effort to improve containerization performance, a new ASP.NET Alpine-based Docker image with a composite version of the runtime is available. This composite is built by compiling multiple MSIL assemblies into a single ready-to-run (R2R) output binary. Because these assemblies are embedded into a single image, jitting takes less time, and the startup performance of apps improves. The other big advantage of the composite over the regular ASP.NET image is that the composite images have a smaller size on disk.
 
@@ -1089,6 +1117,10 @@ Building in a container is the easiest approach for most people, since the `dotn
 | [CA1865-CA1867](../../fundamentals/code-analysis/quality-rules/ca1865-ca1867.md) | Performance | The char overload is a better performing overload for a string with a single char. |
 | CA2021 | Reliability | <xref:System.Linq.Enumerable.Cast%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.OfType%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> require compatible types to function correctly. Widening and user-defined conversions aren't supported with generic types. |
 | CA1510-CA1513 | Maintainability | Throw helpers are simpler and more efficient than an `if` block constructing a new exception instance. These four analyzers were created for the following exceptions: <xref:System.ArgumentNullException>, <xref:System.ArgumentException>, <xref:System.ArgumentOutOfRangeException> and <xref:System.ObjectDisposedException>. |
+
+## Windows Presentation Foundation
+
+https://github.com/dotnet/core/issues/8438#issuecomment-1664175065
 
 ## NuGet
 

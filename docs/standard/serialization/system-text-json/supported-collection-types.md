@@ -46,7 +46,9 @@ The following sections are organized by namespace and show which types are suppo
 | <xref:System.Collections.IList>           | ✔️           | ✔️              |
 | <xref:System.Collections.Queue>           | ✔️           | ✔️              |
 | <xref:System.Collections.SortedList>      | ✔️           | ✔️              |
-| <xref:System.Collections.Stack>           | ✔️           | ✔️              |
+| <xref:System.Collections.Stack> \*        | ✔️           | ✔️              |
+
+\* See [Support round trip for Stack](converters-how-to.md#support-round-trip-for-stackt).
 
 ## System.Collections.Generic namespace
 
@@ -71,11 +73,13 @@ The following sections are organized by namespace and show which types are suppo
 | <xref:System.Collections.Generic.SortedDictionary%602> \* | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.SortedList%602> \*       | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.SortedSet%601>           | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.Stack%601>               | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.Stack%601> \*\*\*        | ✔️           | ✔️              |
 
 \* See [Supported key types](#supported-key-types).
 
 \*\* See the following section on `IAsyncEnumerable<T>`.
+
+\*\*\* See [Support round trip for Stack\<T>](converters-how-to.md#support-round-trip-for-stackt).
 
 ### IAsyncEnumerable\<T>
 

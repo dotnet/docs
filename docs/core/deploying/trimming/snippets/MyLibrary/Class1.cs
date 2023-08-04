@@ -57,9 +57,11 @@ public class MyLibrary3
         }
     }
 }
+// </snippet_DAA1>
 
 public class MyLibrary4
 {
+    // <snippet_DAA2>
     static void UseMethods(
         // State the requirement in the UseMethods parameter.
         [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]
@@ -67,6 +69,7 @@ public class MyLibrary4
     {
         // ...
     }
+    // </snippet_DAA2>
 }
 
 public class MyLibrary5

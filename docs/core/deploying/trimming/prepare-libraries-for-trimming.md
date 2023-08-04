@@ -40,7 +40,7 @@ Set `<IsTrimmable>true</IsTrimmable>` in the project file.
 
 ---
 
-:::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyLibrary/MyLibrary.csproj.txt" id="snippet" highlight="2":::
+:::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyLibrary/MyLibrary.csproj.xml" id="snippet" highlight="2":::
 
 Setting `<IsTrimmable>true</IsTrimmable>` marks the assembly as "trimmable" and enables trim warnings. "trimmable" means the project:
 

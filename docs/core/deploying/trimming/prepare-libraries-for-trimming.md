@@ -11,7 +11,7 @@ ms.date: 06/12/2023
 The .NET SDK makes it possible to reduce the size of self-contained apps by [trimming](trim-self-contained.md). Trimming removes unused code from the app and its dependencies. Not all code is compatible with trimming. .NET provides trim analysis warnings to detect patterns that may break trimmed apps. This article:
 
 * Describes how to prepare libraries for trimming.
-* Provides recommendations for fixing  [common trimming warnings](#resolve-trim-warnings).
+* Provides recommendations for [resolving common trimming warnings](#resolve-trim-warnings).
 
 ## Prerequisites
 
@@ -75,37 +75,45 @@ Because of the dependency limitations, a self-contained test app which uses the 
 
 To create the trimming test app:
 
-* Create a separate console application project with `dotnet new console`.
+### [.NET 6](#tab/net6)
+
+* Create a separate console application project.
 * Add a reference to the library.
 * Add calls to each API in the library.
-* Modify the project similar to project shown below using the following list:
+* Modify the project similar to the project shown below using the following list:
+
+  * Set the `TrimmerDefaultAction` property to `link` with `<TrimmerDefaultAction>link</TrimmerDefaultAction>` in a `<PropertyGroup>` element.  <!-- only diff with .NET7+ -->
+  * Add `<PublishTrimmed>true</PublishTrimmed>`.
+  * Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
+  * Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
+    * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root,  ". A "root," assembly means the trimmer analyzes every call in the library, and traverses all code paths that originate from   that assembly. `TrimmerRootAssembly` is necessary in case the library has `[AssemblyMetadata("IsTrimmable", "True")]`.  A   project using `[AssemblyMetadata("IsTrimmable", "True")]` without  `TrimmerRootAssembly` would remove the unused library   without analyzing it.
+
+:::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyTestLib6app/MyTestLib6app.csproj":::
+
+### [.NET 7+](#tab/net7plus)
+
+* Create a separate console application project.
+* Add a reference to the library.
+* Add calls to each API in the library.
+* Modify the project similar to the project shown below using the following list:
 
   * Add `<PublishTrimmed>true</PublishTrimmed>`.
   * Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
   * Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
     * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root,  ". A "root," assembly means the trimmer analyzes every call in the library, and traverses all code paths that originate from   that assembly. `TrimmerRootAssembly` is necessary in case the library has `[AssemblyMetadata("IsTrimmable", "True")]`.  A   project using `[AssemblyMetadata("IsTrimmable", "True")]` without  `TrimmerRootAssembly` would remove the unused library   without analyzing it.
 
-##### .csproj file
-
-### [.NET 6](#tab/net6)
-
-Set the `TrimmerDefaultAction` property to `link` with `<TrimmerDefaultAction>link</TrimmerDefaultAction>` in a `<PropertyGroup>` element.
-
-:::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyTestLib6app/MyTestLib6app.csproj":::
-
-### [.NET 7+](#tab/net7plus)
-
-The `<TrimMode>full</TrimMode>` setting:
-
-* Is the [default for .NET 7 and higher](../../../core/compatibility/deployment/7.0/trim-all-assemblies.md).
-* Ensures that the trimmer only analyzes the parts of the library's dependencies that are used.
-* Tells the trimmer that any code that isn't part of a "root" can be trimmed if it's unused. Without this option:
-  * Warnings are issued originating from ***any*** part of a dependency that doesn't set `[AssemblyMetadata("IsTrimmable", "Tue")]`
-  * The preceding warnings can be issued by parts that are unused by the library. <!-- REVIEW: What are parts? -->
-
 :::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyLibrary/MyLibrary.csproj.xml":::
 
-Note: In the preceding project file, when using .NET 8, replace `<TargetFramework>net7.0</TargetFramework>` with `<TargetFramework>net8.0</TargetFramework>`.
+**Notes:**
+
+* In the preceding project file, when using .NET 8, replace `<TargetFramework>net7.0</TargetFramework>` with `<TargetFramework>net8.0</TargetFramework>`.
+* The `<TrimMode>full</TrimMode>` setting:
+
+  * Is the [default for .NET 7 and higher](../../../core/compatibility/deployment/7.0/trim-all-assemblies.md).
+  * Ensures that the trimmer only analyzes the parts of the library's dependencies that are used.
+  * Tells the trimmer that any code that isn't part of a "root" can be trimmed if it's unused. Without this   option:
+    * Warnings are issued originating from ***any*** part of a dependency that doesn't set `[AssemblyMetadata  ("IsTrimmable", "Tue")]`
+    * The preceding warnings can be issued by parts that are unused by the library. <!-- REVIEW: What are parts? -->
 
 ---
 

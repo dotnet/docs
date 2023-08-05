@@ -1,13 +1,13 @@
 ---
 title: Introduction to Docker
-description: This article provides an introduction and overview to Docker in the context of a .NET Core application.
+description: This article provides an introduction and overview to Docker in the context of a .NET application.
 ms.date: 03/20/2019
 ms.custom: "mvc"
 ---
 
 # Introduction to .NET and Docker
 
-.NET Core can easily run in a Docker container. Containers provide a lightweight way to isolate your application from the rest of the host system, sharing just the kernel, and using resources given to your application. If you're unfamiliar with Docker, it's highly recommended that you read through Docker's [overview documentation](https://docs.docker.com/engine/docker-overview/).
+.NET can easily run in a Docker container. Containers provide a lightweight way to isolate your application from the rest of the host system, sharing just the kernel, and using resources given to your application. If you're unfamiliar with Docker, it's highly recommended that you read through Docker's [overview documentation](https://docs.docker.com/engine/docker-overview/).
 
 For more information about how to install Docker, see the download page for [Docker Desktop: Community Edition](https://www.docker.com/products/docker-desktop).
 
@@ -17,7 +17,7 @@ There are a few concepts you should be familiar with. The Docker client has a CL
 
 ### Images
 
-An image is an ordered collection of filesystem changes that form the basis of a container. The image doesn't have a state and is read-only. Much the time an image is based on another image, but with some customization. For example, when you create a new image for your application, you would base it on an existing image that already contains the .NET Core runtime.
+An image is an ordered collection of filesystem changes that form the basis of a container. The image doesn't have a state and is read-only. An image is commonly based on another image, but with some customization. For example, when you create a new image for your application, you would base it on an existing image that already contains the .NET runtime.
 
 Because containers are created from images, images have a set of run parameters (such as a starting executable) that run when the container starts.
 
@@ -29,17 +29,17 @@ A container is a runnable instance of an image. As you build your image, you dep
 
 Container registries are a collection of image repositories. You can base your images on a registry image. You can create containers directly from an image in a registry. The [relationship between Docker containers, images, and registries](../../architecture/microservices/container-docker-introduction/docker-containers-images-registries.md) is an important concept when [architecting and building containerized applications or microservices](../../architecture/microservices/architect-microservice-container-applications/index.md). This approach greatly shortens the time between development and deployment.
 
-Docker has a public registry hosted at the [Docker Hub](https://hub.docker.com/) that you can use. [.NET Core related images](https://hub.docker.com/_/microsoft-dotnet/) are listed at the Docker Hub.
+Docker has a public registry hosted at the [Docker Hub](https://hub.docker.com/) that you can use. [.NET-related images](https://hub.docker.com/_/microsoft-dotnet/) are listed at the Docker Hub.
 
-The [Microsoft Container Registry (MCR)](/azure/container-registry) is the official source of Microsoft-provided container images. The MCR is built on Azure CDN to provide globally-replicated images. However, the MCR does not have a public-facing website and the primary way to learn about Microsoft-provided container images is through the [Microsoft Docker Hub pages](https://hub.docker.com/_/microsoft-dotnet/).
+The [Microsoft Container Registry (MCR)](/azure/container-registry) is the official source of Microsoft-provided container images. The MCR is built on Azure CDN to provide globally replicated images. However, the MCR doesn't have a public-facing website, and the primary way to learn about Microsoft-provided container images is through the [Microsoft Docker Hub pages](https://hub.docker.com/_/microsoft-dotnet/).
 
 ### Dockerfile
 
-A **Dockerfile** is a file that defines a set of instructions that creates an image. Each instruction in the **Dockerfile** creates a layer in the image. For the most part, when you rebuild the image, only the layers that have changed are rebuilt. The **Dockerfile** can be distributed to others and allows them to recreate a new image in the same manner you created it. While this allows you to distribute the *instructions* on how to create the image, the main way to distribute your image is to publish it to a registry.
+A **Dockerfile** is a file that defines a set of instructions that creates an image. Each instruction in the **Dockerfile** creates a layer in the image. Usually, when you rebuild the image, only the layers that have changed are rebuilt. The **Dockerfile** can be distributed to others and allows them to recreate a new image in the same manner you created it. While this allows you to distribute the *instructions* on how to create the image, the main way to distribute your image is to publish it to a registry.
 
 ## .NET images
 
-Official .NET Docker images are published to the Microsoft Container Registry (MCR) and are discoverable at the [Microsoft .NET Docker Hub repository](https://hub.docker.com/_/microsoft-dotnet/). Each repository contains images for different combinations of the .NET (SDK or Runtime) and OS that you can use.
+Official .NET Docker images are published to the Microsoft Container Registry (MCR) and are discoverable at the [Microsoft .NET Docker Hub repository](https://hub.docker.com/_/microsoft-dotnet/). Each repository contains images for different combinations of the .NET SDK or .NET runtime and operating system that you can use.
 
 Microsoft provides images that are tailored for specific scenarios. For example, the [ASP.NET Core repository](https://hub.docker.com/_/microsoft-dotnet-aspnet/) provides images that are built for running ASP.NET Core apps in production.
 

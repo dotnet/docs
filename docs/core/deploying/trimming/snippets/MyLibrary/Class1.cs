@@ -62,8 +62,8 @@ public class MyLibrary4
 {
     // <snippet_DAA2>
     static void UseMethods(
-        // State the requirement in the UseMethods parameter.
-        [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)] Type type)
+       // State the requirement in the UseMethods parameter.
+       [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)] Type type)
     {
         // ...
     }

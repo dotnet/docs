@@ -77,7 +77,7 @@ To create the trimming test app:
 
 * Create a separate console application project.
 * Add a reference to the library.
-* Add calls to each API in the library.
+* Add calls to each API in the library. <!--Review required, I added this -->
 * Modify the project similar to the project shown below using the following list:
 
 ### [.NET 6](#tab/net6)
@@ -86,7 +86,9 @@ To create the trimming test app:
   * Add `<PublishTrimmed>true</PublishTrimmed>`.
   * Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
   * Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
-    * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root,  ". A "root," assembly means the trimmer analyzes every call in the library, and traverses all code paths that originate from   that assembly. `TrimmerRootAssembly` is necessary in case the library has `[AssemblyMetadata("IsTrimmable", "True")]`.  A   project using `[AssemblyMetadata("IsTrimmable", "True")]` without  `TrimmerRootAssembly` would remove the unused library   without analyzing it.
+    * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root,  ". A "root," assembly means the trimmer analyzes every call in the library, and traverses all code paths that originate from   that assembly. `TrimmerRootAssembly` is necessary in case the library has `[AssemblyMetadata("IsTrimmable", "True")]`.  A   project using `[AssemblyMetadata("IsTrimmable", "True")]` without  `TrimmerRootAssembly` removes the unused library without analyzing it.
+
+### .csproj file
 
 :::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyTestLib6app/MyTestLib6app.csproj":::
 
@@ -95,7 +97,9 @@ To create the trimming test app:
   * Add `<PublishTrimmed>true</PublishTrimmed>`.
   * Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
   * Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
-    * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root,  ". A "root," assembly means the trimmer analyzes every call in the library, and traverses all code paths that originate from   that assembly. `TrimmerRootAssembly` is necessary in case the library has `[AssemblyMetadata("IsTrimmable", "True")]`.  A   project using `[AssemblyMetadata("IsTrimmable", "True")]` without  `TrimmerRootAssembly` would remove the unused library   without analyzing it.
+    * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root,  ". A "root," assembly means the trimmer analyzes every call in the library, and traverses all code paths that originate from   that assembly. `TrimmerRootAssembly` is necessary in case the library has `[AssemblyMetadata("IsTrimmable", "True")]`.  A   project using `[AssemblyMetadata("IsTrimmable", "True")]` without  `TrimmerRootAssembly` removes the unused library   without analyzing it.
+
+### .csproj file
 
 :::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyLibrary/MyLibrary.csproj.xml":::
 
@@ -108,7 +112,7 @@ To create the trimming test app:
   * Ensures that the trimmer only analyzes the parts of the library's dependencies that are used.
   * Tells the trimmer that any code that isn't part of a "root" can be trimmed if it's unused. Without this   option:
     * Warnings are issued originating from ***any*** part of a dependency that doesn't set `[AssemblyMetadata  ("IsTrimmable", "Tue")]`
-    * The preceding warnings can be issued by parts that are unused by the library. <!-- REVIEW: What are parts? -->
+    * The preceding warnings can be issued by parts that are unused by the library. <!-- REVIEW: What are parts? APIs? -->
 
 ---
 
@@ -126,16 +130,18 @@ Follow the preceding pattern for multiple libraries. To see trim analysis warnin
 * Even if there were no API changes.
 
 Introducing trim analysis warnings to a library is a breaking change when the library is used with `PublishTrimmed`.
-
+`
 ## Resolve trim warnings
 
 The preceding steps produce warnings about code that may cause problems when used in a trimmed app. The following examples show the most common warnings with recommendations for fixing them.
 
 ### RequiresUnreferencedCode
 
+Consider the following code that uses [`[RequiresUnreferencedCode]`](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute) to indicate that the member references code that may be removed by the trimmer.
+
 :::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_1" highlight="17-18":::
 
-This means the library calls a method that has explicitly been annotated as incompatible with trimming, using [`[RequiresUnreferencedCode]`](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute). To get rid of the warning, consider whether `Method` needs to call `DynamicBehavior` to do its job. If so, annotate the caller `Method` with `[RequiresUnreferencedCode]` which propagates up the call stack the warning so that callers of `Method` get a warning instead:
+The preceding highlighted code indicates the library calls a method that has explicitly been annotated as incompatible with trimming. To get rid of the warning, consider whether `MyMethod` needs to call `DynamicBehavior`. If so, annotate the caller `MyMethod` with `[RequiresUnreferencedCode]` which propagates up the call stack the warning so that callers of `MyMethod` get a warning instead:
 
 :::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_RequiresUnreferencedCode":::
 

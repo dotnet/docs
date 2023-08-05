@@ -1,15 +1,15 @@
-﻿// <snippet_1>
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 using System.Text;
 
+// <snippet_1>
 public class MyLibrary
 {
     internal static Type type;
 
-    public static void Method()
+    public static void MyMethod()
     {
-        // warning IL2026 : MyLibrary.Method: Using method 'MyLibrary.DynamicBehavior'
+        // warning IL2026 : MyLibrary.MyMethod: Using 'MyLibrary.DynamicBehavior'
         // which has [RequiresUnreferencedCode] can break functionality
         // when trimming app code.
         DynamicBehavior();
@@ -27,7 +27,7 @@ public class MyLibrary
 public class MyLibrary2
 {
     [RequiresUnreferencedCode("Calls DynamicBehavior.")]
-    public static void Method()
+    public static void MyMethod()
     {
         DynamicBehavior();
     }
@@ -43,7 +43,7 @@ public class MyLibrary2
 // <snippet_DAA1>
 public class MyLibrary3
 {
-    static void UseMethods(Type type)
+    static void UseMyMethods(Type type)
     {
         // warning IL2070: MyLibrary.UseMethods(Type): 'this' argument does not satisfy
         // 'DynamicallyAccessedMemberTypes.PublicMethods' in call to
@@ -209,8 +209,8 @@ public class MyLibrary12
 public class MyLibrary22
 {
     // <snippet_AD5>
-    [DynamicDependency("Method()")]
-    [DynamicDependency("Method(System,Boolean,System.String)")]
+    [DynamicDependency("MyMethod()")]
+    [DynamicDependency("MyMethod(System,Boolean,System.String)")]
     [DynamicDependency("MethodOnDifferentType()", typeof(ContainingType))]
     [DynamicDependency("MemberName")]
     [DynamicDependency("MemberOnUnreferencedAssembly", "ContainingType", "UnreferencedAssembly")]

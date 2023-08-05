@@ -181,17 +181,31 @@ Project file:
 
 Use the following settings to manage the garbage collector's memory and processor usage:
 
-- [Affinitize](#affinitize)
-- [Affinitize mask](#affinitize-mask)
-- [Affinitize ranges](#affinitize-ranges)
-- [CPU groups](#cpu-groups)
-- [Heap count](#heap-count)
-- [Heap limit](#heap-limit)
-- [Heap limit percent](#heap-limit-percent)
-- [High memory percent](#high-memory-percent)
-- [Per-object-heap limits](#per-object-heap-limits)
-- [Per-object-heap limit percents](#per-object-heap-limit-percents)
-- [Retain VM](#retain-vm)
+- [Runtime configuration options for garbage collection](#runtime-configuration-options-for-garbage-collection)
+  - [Ways to specify the configuration](#ways-to-specify-the-configuration)
+  - [Flavors of garbage collection](#flavors-of-garbage-collection)
+    - [Workstation vs. server](#workstation-vs-server)
+      - [Examples](#examples)
+    - [Background GC](#background-gc)
+      - [Examples](#examples-1)
+  - [Manage resource usage](#manage-resource-usage)
+    - [Heap count](#heap-count)
+    - [Affinitize mask](#affinitize-mask)
+    - [Affinitize ranges](#affinitize-ranges)
+    - [CPU groups](#cpu-groups)
+    - [Affinitize](#affinitize)
+    - [Heap limit](#heap-limit)
+    - [Heap limit percent](#heap-limit-percent)
+    - [Per-object-heap limits](#per-object-heap-limits)
+    - [Per-object-heap limit percents](#per-object-heap-limit-percents)
+    - [High memory percent](#high-memory-percent)
+    - [Retain VM](#retain-vm)
+      - [Examples](#examples-2)
+  - [Large pages](#large-pages)
+  - [Allow large objects](#allow-large-objects)
+  - [Large object heap threshold](#large-object-heap-threshold)
+  - [Standalone GC](#standalone-gc)
+  - [Conserve memory](#conserve-memory)
 
 For more information about some of these settings, see the [Middle ground between workstation and server GC](https://devblogs.microsoft.com/dotnet/middle-ground-between-server-and-workstation-gc/) blog entry.
 
@@ -573,7 +587,7 @@ Example:
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | N/A | N/A | N/A |
+| **runtimeconfig.json** | `System.GC.ConserveMemory` | `0` - `9` | .NET 6 |
 | **Environment variable** | `COMPlus_GCConserveMemory` | `0` -`9` | .NET Framework 4.8 |
 | **Environment variable** | `DOTNET_GCConserveMemory` | `0` -`9` | .NET 6 |
 | **app.config for .NET Framework** | [GCConserveMemory](../../framework/configure-apps/file-schema/runtime/gcconservememory-element.md) | `0` -`9` | .NET Framework 4.8 |

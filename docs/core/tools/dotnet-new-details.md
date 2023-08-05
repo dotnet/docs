@@ -44,7 +44,7 @@ If the package is installed locally or is found on the official NuGet website, i
 
 - **`-h|--help`**
 
-  Prints help for the search command.
+  Displays help for the search command.
 
 ## Examples
 

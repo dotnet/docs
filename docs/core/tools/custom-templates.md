@@ -174,7 +174,7 @@ An easy way to exclude all code files from being compiled by your template proje
 
 An easy way to structure your template pack is to put all templates in individual folders, and then each template folder inside of a *templates* folder that is located in the same directory as your *.csproj* file. This way, you can use a single project item to include all files and folders in the *templates* as **content**. Inside of an `<ItemGroup>` element, create a `<Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />` item.
 
-Here's an example *.csproj* file that follows all of the previous guidelines. It packs the *templates* child folder to the *content* package folder and excludes any code file from being compiled.
+Here's an example *.csproj* file that follows all of these guidelines. It packs the *templates* child folder to the *content* package folder and excludes any code file from being compiled.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

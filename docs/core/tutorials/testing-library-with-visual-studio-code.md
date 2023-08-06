@@ -210,8 +210,12 @@ Unit tests provide automated software testing during your development and publis
 1. Create a unit test project named "StringLibraryTest".
 
    ```dotnetcli
-   dotnet new mstest -o StringLibraryTest
+   dotnet new mstest -f net6.0 -o StringLibraryTest
    ```
+
+   The `-f net6.0` command changes the default target framework to `net6.0` version.
+
+   The `-o` or `--output` command specifies the location to place the generated output.
 
    The project template creates a UnitTest1.cs file with the following code:
 

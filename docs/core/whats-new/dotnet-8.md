@@ -445,7 +445,16 @@ SHA-3 support is currently aimed at supporting cryptographic primitives. Higher-
 
 ### Networking
 
-https://github.com/dotnet/core/issues/8437#issuecomment-1624217579
+#### Support for HTTPS proxy
+
+Until now, the proxy types that <xref:System.Net.Http.HttpClient> supported all allowed a "man-in-the-middle" to see which site the client is connecting to, even for HTTPS URIs. <xref:System.Net.Http.HttpClient> now supports *HTTPS proxy*, which creates an encrypted channel between the client and the proxy so all requests can be handled with full privacy.
+
+To enable HTTPS proxy, set the `all_proxy` environment variable, or use the <xref:System.Net.WebProxy> class to control the proxy programmatically.
+
+Unix: `export all_proxy=https://x.x.x.x:3218`
+Windows: `set all_proxy=https://x.x.x.x:3218`
+
+You can also use the <xref:System.Net.WebProxy> class to control the proxy programmatically.
 
 ### Stream-based ZipFile methods
 
@@ -845,9 +854,16 @@ In addition, dynamic profile-guided optimization (PGO) has been improved and is 
 
 On average, dynamic PGO increases performance by about 15%. In a benchmark suite of ~4600 tests, 23% saw performance improvements of 20% or more.
 
-### Struct promotion
+### Codegen struct promotion
 
-https://github.com/dotnet/core/issues/8438#issuecomment-1662813017
+.NET 8 includes a new physical promotion optimization pass for codegen that generalizes the JIT's ability to promote struct variables. This optimization (also called *scalar replacement of aggregates*) replaces the fields of struct variables by primitive variables that the JIT is then able to reason about and optimize more precisely.
+
+The JIT already supported this optimization but with several large limitations including:
+
+- It was only supported for structs with four or fewer fields.
+- It was only supported if each field was a primitive type, or a simple struct wrapping a primitive type.
+
+Physical promotion removes these limitations, which fixes a number of long-standing JIT issues.
 
 ## .NET SDK changes
 
@@ -965,7 +981,26 @@ The Linux distribution-built (source-build) SDK now has the capability to build 
 
 ## Globalization
 
-https://github.com/dotnet/core/issues/8438#issuecomment-1643527400
+### HybridGlobalization mode on iOS/tvOS/MacCatalyst
+
+Mobile apps can now use a new *hybrid* globalization mode that uses a lighter ICU bundle. In hybrid mode, globalization data is partially pulled from the ICU bundle and partially from calls into Native API. It serves all the [locales supported by mobile](https://github.com/dotnet/icu/blob/dotnet/main/icu-filters/icudt_mobile.json).
+
+`HybridGlobalization` is most suitable for apps that can't work in `InvariantGlobalization` mode and that use cultures that where trimmed from ICU data on mobile. You can also use it when you want to load a smaller ICU data file. (The *icudt_hybrid.dat* file is 34.5 % smaller than the default ICU data file *icudt.dat*.)
+
+To use `HybridGlobalization` mode, set the MSBuild property to true:
+
+```xml
+<PropertyGroup>
+  <HybridGlobalization>true</HybridGlobalization>
+</PropertyGroup>
+```
+
+There are some limitations to be aware of:
+
+- Due to limitations of Native API, not all globalization APIs are supported in hybrid mode.
+- Some of the supported APIs have different behavior.
+
+To make sure your application isn't affected, see [Behavioral differences](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-hybrid-mode.md#behavioral-differences).
 
 ## Containers
 
@@ -1031,11 +1066,11 @@ For more information, see the [Improving multi-platform container support](https
 
 #### ASP.NET composite images
 
-https://github.com/dotnet/core/issues/8438#issuecomment-1665921577
-
-As part of an effort to improve containerization performance, a new ASP.NET Alpine-based Docker image with a composite version of the runtime is available. This composite is built by compiling multiple MSIL assemblies into a single ready-to-run (R2R) output binary. Because these assemblies are embedded into a single image, jitting takes less time, and the startup performance of apps improves. The other big advantage of the composite over the regular ASP.NET image is that the composite images have a smaller size on disk.
+As part of an effort to improve containerization performance, new ASP.NET Docker images are available that have a composite version of the runtime. This composite is built by compiling multiple MSIL assemblies into a single ready-to-run (R2R) output binary. Because these assemblies are embedded into a single image, jitting takes less time, and the startup performance of apps improves. The other big advantage of the composite over the regular ASP.NET image is that the composite images have a smaller size on disk.
 
 There is a caveat to be aware of. Since composites have multiple assemblies embedded into one, they have tighter version coupling. Apps can't use custom versions of framework or ASP.NET binaries.
+
+Composite images are available for the Alpine Linux, Jammy Chiseled, and Mariner Distroless platforms from the `mcr.microsoft.com/dotnet/nightly/aspnet` repo. The tags are listed with the `-composite` suffix on the [ASP.NET Docker page](https://hub.docker.com/_/microsoft-dotnet-nightly-aspnet).
 
 ### Container performance and compatibility
 
@@ -1120,7 +1155,21 @@ Building in a container is the easiest approach for most people, since the `dotn
 
 ## Windows Presentation Foundation
 
-https://github.com/dotnet/core/issues/8438#issuecomment-1664175065
+WPF includes a new dialog box control called `OpenFolderDialog`. This control lets app users browse and select folders. Previously, app developers relied on third-party software to achieve this functionality.
+
+```csharp
+var openFolderDialog = new OpenFolderDialog()
+{
+    Title = "Select folder to open ...",
+    InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
+};
+
+string folderName = "";
+if (openFolderDialog.ShowDialog())
+{
+    folderName = openFolderDialog.FolderName;
+}
+```
 
 ## NuGet
 

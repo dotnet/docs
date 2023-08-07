@@ -32,25 +32,33 @@ AOT support in .NET 8 is more comprehensive than in .NET 7. However, there are s
 
 ## Prerequisites
 
-The following prerequisites need to be installed before publishing .NET projects with native AOT.
+# [Windows](#tab/windows)
 
-On Windows, install [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), including the **Desktop development with C++** workload with all default components.
+[Visual Studio 2022](https://visualstudio.microsoft.com/vs/), including the **Desktop development with C++** workload with all default components.
 
-On Linux, install the compiler toolchain and developer packages for libraries that the .NET runtime depends on.
+# [Ubuntu](#tab/linux-ubuntu)
 
+- The compiler toolchain and developer packages for libraries that the .NET runtime depends on.
 - Ubuntu (18.04+)
 
   ```sh
   sudo apt-get install clang zlib1g-dev
   ```
 
+# [Alpine](#tab/linux-alpine)
+
+- The compiler toolchain and developer packages for libraries that the .NET runtime depends on.
 - Alpine (3.15+)
 
   ```sh
   sudo apk add clang build-base zlib-dev
   ```
 
-On macOS, install the latest [Command Line Tools for XCode](https://developer.apple.com/download/). Supported on .NET 8 and later versions.
+# [macOS](#tab/macOS)
+
+The latest [Command Line Tools for XCode](https://developer.apple.com/download/). Supported on .NET 8 and later versions.
+
+---
 
 ## Publish native AOT using the CLI
 

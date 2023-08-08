@@ -1,6 +1,10 @@
-﻿using Microsoft.Extensions.Logging.Abstractions;
+﻿using Logging.LibraryAuthors;
+using Microsoft.Extensions.Logging;
 
-// The available null logger types
-_ = NullLogger<Program>.Instance;
-_ = NullLoggerFactory.Instance;
-_ = NullLoggerProvider.Instance;
+LibraryConfiguration.SetLoggerFactory(
+    LoggerFactory.Create(
+        builder => builder.AddConsole()));
+
+var service = new NonDiExampleService();
+
+service.ProcessProductSale(new(), 7);

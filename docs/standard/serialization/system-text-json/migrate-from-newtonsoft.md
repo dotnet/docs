@@ -280,7 +280,7 @@ These options **don't** let you ignore selected properties based on arbitrary cr
 
 `Newtonsoft.Json` can serialize and deserialize fields as well as properties.
 
-In <xref:System.Text.Json?displayProperty=fullName>, use the <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProperty=nameWithType> global setting or the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute to include public fields when serializing or deserializing. For an example, see [Include fields](how-to.md#include-fields).
+In <xref:System.Text.Json>, use the <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProperty=nameWithType> global setting or the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute to include public fields when serializing or deserializing. For an example, see [Include fields](how-to.md#include-fields).
 
 ### Preserve object references and handle loops
 

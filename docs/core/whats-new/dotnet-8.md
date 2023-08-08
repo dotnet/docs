@@ -36,14 +36,60 @@ This section contains the following subtopics:
 
 ### Serialization
 
-https://github.com/dotnet/core/issues/8438#issuecomment-1660454507
-
 Many improvements have been made to <xref:System.Text.Json?displayProperty=fullName> serialization and deserialization functionality including:
+
+- The serializer has built-in support for the following additional types. Previously, code that attempted to serialize these types threw an <xref:System.InvalidOperationException> at run time.
+
+  - <xref:System.Half>, <xref:System.Int128>, and <xref:System.UInt128> numeric types.
+
+    ```csharp
+    Console.WriteLine(JsonSerializer.Serialize(new object[] { Half.MaxValue, Int128.MaxValue, UInt128.MaxValue }));
+    // [65500,170141183460469231731687303715884105727,340282366920938463463374607431768211455]
+    ```
+
+  - <xref:System.Memory%601> and <xref:System.ReadOnlyMemory%601> values. `byte` values are serialized to Base64 strings, and other types to JSON arrays.
+
+    ```csharp
+    JsonSerializer.Serialize<ReadOnlyMemory<byte>>(new byte[] { 1, 2, 3 }); // "AQID"
+    JsonSerializer.Serialize<Memory<int>>(new int[] { 1, 2, 3 }); // [1,2,3]
+    ```
+
+- You can opt non-public members into the serialization contract for a given type using <xref:System.Text.Json.Serialization.JsonIncludeAttribute> and <xref:System.Text.Json.Serialization.JsonConstructorAttribute> attribute annotations.
+
+  ```csharp
+  string json = JsonSerializer.Serialize(new MyPoco(42)); // {"X":42}
+  JsonSerializer.Deserialize<MyPoco>(json);
+
+  public class MyPoco
+  {
+      [JsonConstructor]
+      internal MyPoco(int x) => X = x;
+
+      [JsonInclude]
+      internal int X { get; }
+  }
+  ```
+
+  For more information, see [How to use immutable types and non-public accessors with System.Text.Json](../../standard/serialization/system-text-json/immutability.md).
 
 - You can [customize handling of members that aren't in the JSON payload.](../../standard/serialization/system-text-json/missing-members.md)
 - <xref:System.Text.Json.JsonSerializerOptions.MakeReadOnly?displayProperty=nameWithType> gives you explicit control over when a `JsonSerializerOptions` instance is frozen. (You can also check it with the <xref:System.Text.Json.JsonSerializerOptions.IsReadOnly> property.)
 - <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=nameWithType> is now obsolete. It's been superseded by the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> and <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> properties. For more information, see [Chain source generators](#chain-source-generators).
 - The new <xref:System.Text.Json.JsonSerializerOptions.TryGetTypeInfo(System.Type,System.Text.Json.Serialization.Metadata.JsonTypeInfo@)> method, a variation of the existing <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo(System.Type)> method, returns `false` if no metadata for the specified type was found.
+- The new <xref:System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver.WithAddedModifier(System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver,System.Action{System.Text.Json.Serialization.Metadata.JsonTypeInfo})> extension method lets you easily introduce modifications to the serialization contracts of arbitrary `IJsonTypeInfoResolver` instances.
+
+  ```csharp
+  var options = new JsonSerializerOptions
+  {
+      TypeInfoResolver = MyContext.Default
+          .WithAddedModifier(static typeInfo =>
+          {
+              foreach (JsonPropertyInfo prop in typeInfo.Properties)
+                  prop.Name = prop.Name.ToUpperInvariant();
+          })
+  };
+  ```
+
 - Support for compiler-generated or *unspeakable* types in weakly typed source generation scenarios. Since compiler-generated types can't be explicitly specified by the source generator, <xref:System.Text.Json?displayProperty=fullName> now performs nearest-ancestor resolution at run time. This resolution determines the most appropriate supertype with which to serialize the value.
 
 The following sections go into more depth about other serialization improvements:
@@ -53,6 +99,7 @@ The following sections go into more depth about other serialization improvements
 - [Naming policies](#naming-policies)
 - [Read-only properties](#read-only-properties)
 - [Disable reflection-based default](#disable-reflection-based-default)
+- [New JsonNode API methods](#new-jsonnode-api-methods)
 
 For more information about JSON serialization in general, see [JSON serialization and deserialization in .NET](../../standard/serialization/system-text-json/overview.md).
 
@@ -62,6 +109,7 @@ For more information about JSON serialization in general, see [JSON serializatio
 
 - The [source generator](../../standard/serialization/system-text-json/source-generation.md) now supports serializing types with [`required`](../../standard/serialization/system-text-json/required-properties.md) and [`init`](../../csharp/language-reference/keywords/init.md) properties. These were both already supported in reflection-based serialization.
 - Improved formatting of source-generated code.
+- <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> feature parity with <xref:System.Text.Json.JsonSerializerOptions>. This parity lets you specify serialization configuration at compile time, which ensures that the generated `MyContext.Default` property is preconfigured with all the relevant options set. For more information, see [Specify options for serialization optimization mode](../../standard/serialization/system-text-json/source-generation.md#specify-options-for-serialization-optimization-mode).
 - Additional diagnostics (such as `SYSLIB1034` and `SYSLIB1039`).
 - Don't include types of ignored or inaccessible properties.
 - Support for nesting `JsonSerializerContext` declarations within arbitrary type kinds.
@@ -202,6 +250,46 @@ static JsonSerializerOptions GetDefaultOptions()
     }
 
     return new() { PropertyNamingPolicy = JsonNamingPolicy.KebabCaseLower };
+}
+```
+
+#### New JsonNode API methods
+
+The `JsonNode`` APIs include the following new methods.
+
+```csharp
+namespace System.Text.Json.Nodes;
+
+public partial class JsonNode
+{
+    // Creates a deep clone of the current node and all its descendants.
+    public JsonNode DeepClone();
+
+    // Returns true if the two nodes are equivalent JSON representations.
+    public static bool DeepEquals(JsonNode? node1, JsonNode? node2);
+
+    // Determines the JsonValueKind of the current node.
+    public JsonValueKind GetValueKind(JsonSerializerOptions options = null);
+
+    // If node is the value of a property in the parent
+    // object, returns its name.
+    // Throws InvalidOperationException otherwise.
+    public string GetPropertyName();
+
+    // If node is the element of a parent JsonArray,
+    // returns its index.
+    // Throws InvalidOperationException otherwise.
+    public int GetElementIndex();
+
+    // Replaces this instance with a new value,
+    // updating the parent object/array accordingly.
+    public void ReplaceWith<T>(T value);
+}
+
+public partial class JsonArray
+{
+    // Returns an IEnumerable<T> view of the current array.
+    public IEnumerable<T> GetValues<T>();
 }
 ```
 
@@ -490,11 +578,87 @@ This section contains the following subtopics:
 
 ### Keyed DI services
 
-https://github.com/dotnet/core/issues/8438#issuecomment-1665919008
+Keyed dependency injection (DI) services provides a means for registering and retrieving DI services using keys. By using keys, you can scope how your register and consume services. These are some of the new APIs:
+
+- The <xref:Microsoft.Extensions.DependencyInjection.IKeyedServiceProvider> interface.
+- The <xref:Microsoft.Extensions.DependencyInjection.ServiceKeyAttribute> attribute, which can be used to inject the key that was used for registration/resolution in the constructor.
+- The <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute> attribute, which can be used on service constructor parameters to specify which keyed service to use.
+- Various new extension methods for <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> to support keyed services, for example, <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddKeyedScoped%2A?displayProperty=nameWithType>.
+- The <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider> implementation of <xref:Microsoft.Extensions.DependencyInjection.Abstractions.IKeyedServiceProvider>.
+
+The following example shows you to use keyed DI services.
+
+```csharp
+using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Options;
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddSingleton<BigCacheConsumer>();
+builder.Services.Addsingleton<SmallCacheConsumer>();
+
+builder.Services.AddKeyedsingleton<IMemoryCache, BigCache>("big");
+builder.Services.AddKeyedSingleton<IMemoryCache, SmallCache>("small");
+
+var app = builder.Build();
+
+app.MapGet("/big", (BigCacheConsumer data) => data.GetData());
+app.MapGet("/small", (SmallCacheConsumer data) => data.GetData());
+
+app.Run();
+
+class BigCacheConsumer([FromKeyedServices("big")] IMemoryCache cache)
+{
+    public object? GetData() => cache.Get("data");
+}
+
+class SmallCacheConsumer(IKeyedServiceProvider keyedServiceProvider)
+{
+    public object? GetData() => keyedServiceProvider.GetRequiredKeyedService<IMemoryCache>("small");
+}
+```
+
+For more information, see [dotnet/runtime#64427](https://github.com/dotnet/runtime/issues/64427).
 
 ### Hosted lifecycle services
 
-https://github.com/dotnet/core/issues/8438#issuecomment-1665886977
+Hosted services now have more options for execution during the application lifecycle. <xref:Microsoft.Extensions.Hosting.IHostedService> provided `StartAsync` and `StopAsync`, and now <xref:Microsoft.Extensions.Hosting.IHostedLifeCycleService> provides these additional methods:
+
+- <xref:Microsoft.Extensions.Hosting.IHostedLifeCycleService.StartingAsync(System.Threading.CancellationToken)>
+- <xref:Microsoft.Extensions.Hosting.IHostedLifeCycleService.StartedAsync(System.Threading.CancellationToken)>
+- <xref:Microsoft.Extensions.Hosting.IHostedLifeCycleService.StoppingAsync(System.Threading.CancellationToken)>
+- <xref:Microsoft.Extensions.Hosting.IHostedLifeCycleService.StoppedAsync(System.Threading.CancellationToken)>
+
+These methods run before and after the existing points respectively.
+
+The following example shows how to use the new APIs.
+
+```csharp
+using Microsoft.Extensions.Hosting;
+
+IHostBuilder hostBuilder = new HostBuilder();
+hostBuilder.ConfigureServices(services =>
+{
+    services.AddHostedService<MyService>();
+});
+
+using (IHost host = hostBuilder.Build())
+{
+    await host.StartAsync();
+}
+
+public class MyService : IHostedLifecycleService
+{
+    public Task StartingAsync(CancellationToken cancellationToken) => /* add logic here */ Task.CompletedTask;
+    public Task StartAsync(CancellationToken cancellationToken) => /* add logic here */ Task.CompletedTask;
+    public Task StartedAsync(CancellationToken cancellationToken) => /* add logic here */ Task.CompletedTask;
+    public Task StopAsync(CancellationToken cancellationToken) => /* add logic here */ Task.CompletedTask;
+    public Task StoppedAsync(CancellationToken cancellationToken) => /* add logic here */ Task.CompletedTask;
+    public Task StoppingAsync(CancellationToken cancellationToken) => /* add logic here */ Task.CompletedTask;
+}
+```
+
+For more information, see [dotnet/runtime#86511](https://github.com/dotnet/runtime/issues/86511).
 
 ### Options validation
 
@@ -1186,6 +1350,7 @@ You can opt out of verification by setting the environment variable `DOTNET_NUGE
 
 ### .NET blog
 
+- [Announcing .NET 8 Preview 7](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-7/)
 - [Announcing .NET 8 Preview 6](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-6/)
 - [Announcing .NET 8 Preview 5](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-5/)
 - [Announcing .NET 8 Preview 4](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-4/)
@@ -1193,6 +1358,7 @@ You can opt out of verification by setting the environment variable `DOTNET_NUGE
 - [Announcing .NET 8 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-2/)
 - [Announcing .NET 8 Preview 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-1/)
 
+- [ASP.NET Core updates in .NET 8 Preview 7](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-7/)
 - [ASP.NET Core updates in .NET 8 Preview 6](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-6/)
 - [ASP.NET Core updates in .NET 8 Preview 5](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-5/)
 - [ASP.NET Core updates in .NET 8 Preview 4](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-4/)

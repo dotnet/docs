@@ -70,7 +70,7 @@ Many improvements have been made to <xref:System.Text.Json?displayProperty=fullN
   }
   ```
 
-  For more information, see [How to use immutable types and non-public accessors with System.Text.Json](../../standard/serialization/system-text-json/immutability.md).
+  For more information, see [Use immutable types and non-public members and accessors](../../standard/serialization/system-text-json/immutability.md).
 
 - You can [customize handling of members that aren't in the JSON payload.](../../standard/serialization/system-text-json/missing-members.md)
 - <xref:System.Text.Json.JsonSerializerOptions.MakeReadOnly?displayProperty=nameWithType> gives you explicit control over when a `JsonSerializerOptions` instance is frozen. (You can also check it with the <xref:System.Text.Json.JsonSerializerOptions.IsReadOnly> property.)

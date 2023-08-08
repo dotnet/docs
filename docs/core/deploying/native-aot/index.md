@@ -18,11 +18,7 @@ The native AOT deployment model uses an ahead-of-time compiler to compile IL to 
 
 ### [.NET 7](#tab/net7)
 
-> [!WARNING]
->
-> - Native AOT is targeted towards console-type apps.
-> - Only a limited number of libraries are fully compatible with native AOT.
->
+Native AOT is targeted towards console-type apps. Only a limited number of libraries are fully compatible with native AOT.
 
 ### [.NET 8+](#tab/net8plus)
 
@@ -32,25 +28,33 @@ AOT support in .NET 8 is more comprehensive than in .NET 7. However, there are s
 
 ## Prerequisites
 
-The following prerequisites need to be installed before publishing .NET projects with native AOT.
+# [Windows](#tab/windows)
 
-On Windows, install [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), including the **Desktop development with C++** workload with all default components.
+[Visual Studio 2022](https://visualstudio.microsoft.com/vs/), including the **Desktop development with C++** workload with all default components.
 
-On Linux, install the compiler toolchain and developer packages for libraries that the .NET runtime depends on.
+# [Ubuntu](#tab/linux-ubuntu)
 
+- The compiler toolchain and developer packages for libraries that the .NET runtime depends on.
 - Ubuntu (18.04+)
 
   ```sh
   sudo apt-get install clang zlib1g-dev
   ```
 
+# [Alpine](#tab/linux-alpine)
+
+- The compiler toolchain and developer packages for libraries that the .NET runtime depends on.
 - Alpine (3.15+)
 
   ```sh
   sudo apk add clang build-base zlib-dev
   ```
 
-On macOS, install the latest [Command Line Tools for XCode](https://developer.apple.com/download/). Supported on .NET 8 and later versions.
+# [macOS](#tab/macOS)
+
+The latest [Command Line Tools for XCode](https://developer.apple.com/download/). Supported on .NET 8 and later versions.
+
+---
 
 ## Publish native AOT using the CLI
 
@@ -153,7 +157,7 @@ Native AOT apps have the following limitations:
 
 The publish process analyzes the entire project and its dependencies for possible limitations. Warnings are issued for each limitation the published app may encounter at run time.
 
-### OS specific limitations
+### Version specific limitations
 
 ### [.NET 7](#tab/net7)
 
@@ -162,7 +166,8 @@ The publish process analyzes the entire project and its dependencies for possibl
 
 ### [.NET 8+](#tab/net8plus)
 
-Support for some ASP.NET Core features. For more information, see [ASP.NET Core support for native AOT](/aspnet/core/fundamentals/native-aot/?view=aspnetcore-8.0&preserve-view=true).
+- Some limitations on diagnostic support for debugging and profiling.
+- Support for some ASP.NET Core features. For more information, see [ASP.NET Core support for native AOT](/aspnet/core/fundamentals/native-aot/?view=aspnetcore-8.0&preserve-view=true).
 
 ---
 

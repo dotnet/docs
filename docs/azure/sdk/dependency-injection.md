@@ -23,11 +23,19 @@ dotnet add package Microsoft.Extensions.Azure
 dotnet add package Azure.Identity
 dotnet add package Azure.Security.KeyVault.Secrets
 dotnet add package Azure.Storage.Blobs
+dotnet add package Azure.Storage.ServiceBus
 ```
 
+<<<<<<< Updated upstream
 ## Register client
 
 In the _Program.cs_ file, register a client for each service:
+=======
+## Register clients and subclients
+
+A service client is the entry point to the API for an Azure service – from it, library users can invoke all operations the service provides and can easily implement the most common scenarios. In the *Program.cs* file, invoke the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method to register a client for each service.
+Where it will simplify an API's design, groups of service calls can be organized around smaller subclient types. The following code samples provide guidance on application builders from the `Microsoft.AspNetCore.Builder` and `Microsoft.Extensions.Hosting` namespaces.
+>>>>>>> Stashed changes
 
 ```csharp
 builder.Services.AddAzureClients(clientBuilder =>
@@ -47,8 +55,14 @@ builder.Services.AddControllers();
 
 In the preceding code:
 
+<<<<<<< Updated upstream
 * You specify the `Uri`-typed `keyVaultUrl` and `storageUrl` variables. The [Store configuration separately from code](#store-configuration-separately-from-code) section shows how you can avoid specifying the URLs explicitly.
 * <xref:Azure.Identity.DefaultAzureCredential> is used for authentication. `DefaultAzureCredential` chooses the best authentication mechanism based on your environment, allowing you to move your app seamlessly from development to production with no code changes.
+=======
+* Key Vault Secrets and Blob Storage clients are registered using <xref:Microsoft.Extensions.Azure.SecretClientBuilderExtensions.AddSecretClient%2A> and <xref:Microsoft.Extensions.Azure.BlobClientBuilderExtensions.AddBlobServiceClient%2A>, respectively. The `Uri`-typed arguments are passed. To avoid specifying these URLs explicitly, see the [Store configuration separately from code](#store-configuration-separately-from-code) section.
+* <xref:Azure.Identity.DefaultAzureCredential> is used to satisfy the `TokenCredential` argument requirement for each registered client. When one of the clients is created, `DefaultAzureCredential` is used to authenticate.
+* Service Bus subclients are registered for each queue on the service using the subclient type and a corresponding options type.
+>>>>>>> Stashed changes
 
 ## Use the registered clients
 

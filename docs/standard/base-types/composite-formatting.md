@@ -23,7 +23,7 @@ The .NET composite formatting feature takes a list of objects and a composite fo
 > [!IMPORTANT]
 > Instead of using composite format strings, you can use *interpolated strings* if the language and its version that you're using support them. An interpolated string contains *interpolated expressions*. Each interpolated expression is resolved with the expression's value and included in the result string when the string is assigned. For more information, see [String interpolation (C# Reference)](../../csharp/language-reference/tokens/interpolated.md) and [Interpolated strings (Visual Basic Reference)](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md).
 
-The composite formatting feature is supported by the following methods:
+The following methods support the composite formatting feature:
 
 - <xref:System.String.Format%2A?displayProperty=nameWithType>, which returns a formatted result string.
 - <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>, which appends a formatted result string to a <xref:System.Text.StringBuilder> object.
@@ -35,12 +35,12 @@ The composite formatting feature is supported by the following methods:
 
 ## Composite format string
 
-A composite format string and object list are used as arguments of methods that support the composite formatting feature. A composite format string consists of zero or more runs of fixed text intermixed with one or more format items. The fixed text is any string that you choose, and each format item corresponds to an object or boxed structure in the list. The composite formatting feature returns a new result string where each format item is replaced by the string representation of the corresponding object in the list.
+A composite format string and object list are used as arguments of methods that support the composite formatting feature. A composite format string consists of zero or more runs of fixed text intermixed with one or more format items. The fixed text is any string that you choose, and each format item corresponds to an object or boxed structure in the list. The string representation of each object replaces the corresponding format item.
 
 Consider the following <xref:System.String.Format%2A> code fragment:
 
 :::code language="csharp" source="./snippets/composite-formatting/net/csharp/Program.cs" id="basic":::
-:::code language="csharp" source="./snippets/composite-formatting/net/vb/Program.vb" id="basic":::
+:::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="basic":::
 
 <!-- markdownlint-disable-next-line no-space-in-code -->
 The fixed text is `Name = `&nbsp;and `, hours = `. The format items are `{0}`, whose index of 0 corresponds to the object `name`, and `{1:hh}`, whose index of 1 corresponds to the object `DateTime.Now`.
@@ -55,15 +55,15 @@ The matching braces (`{` and `}`) are required.
 
 ### Index component
 
-The mandatory *index* component, also called a parameter specifier, is a number starting from 0 that identifies a corresponding item in the list of objects. That is, the format item whose parameter specifier is 0 formats the first object in the list. The format item whose parameter specifier is 1 formats the second object in the list, and so on. The following example includes four parameter specifiers, numbered zero through three,  to represent prime numbers less than 10:
+The mandatory *index* component, which is also called a parameter specifier, is a number starting from 0 that identifies a corresponding item in the list of objects. That is, the format item whose parameter specifier is `0` formats the first object in the list. The format item whose parameter specifier is `1` formats the second object in the list, and so on. The following example includes four parameter specifiers, numbered zero through three,  to represent prime numbers less than 10:
 
 :::code language="csharp" source="./snippets/composite-formatting/net/csharp/Program.cs" id="basic":::
-:::code language="csharp" source="./snippets/composite-formatting/net/vb/Program.vb" id="basic":::
+:::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="basic":::
 
-Multiple format items can refer to the same element in the list of objects by specifying the same parameter specifier. For example, you can format the same numeric value in hexadecimal, scientific, and number format by specifying a composite format string such as "`0x{0:X} {0:E} {0:N}`", as the following example shows:
+Multiple format items can refer to the same element in the list of objects by specifying the same parameter specifier. For example, you can format the same numeric value in hexadecimal, scientific, and number format by specifying a composite format string such as `"0x{0:X} {0:E} {0:N}"`, as the following example shows:
 
 :::code language="csharp" source="./snippets/composite-formatting/net/csharp/Program.cs" id="multiple":::
-:::code language="csharp" source="./snippets/composite-formatting/net/vb/Program.vb" id="multiple":::
+:::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="multiple":::
 
 Each format item can refer to any object in the list. For example, if there are three objects, you can format the second, first, and third object by specifying a composite format string such as `{1} {0} {2}`. An object that isn't referenced by a format item is ignored. A <xref:System.FormatException> is thrown at run time if a parameter specifier designates an item outside the bounds of the list of objects.
 
@@ -74,7 +74,7 @@ The optional *alignment* component is a signed integer indicating the preferred 
 The following example defines two arrays, one containing the names of employees and the other containing the hours they worked over two weeks. The composite format string left-aligns the names in a 20-character field and right-aligns their hours in a 5-character field. The "N1" standard format string formats the hours with one fractional digit.
 
 :::code language="csharp" source="./snippets/composite-formatting/net/csharp/Program.cs" id="alignment":::
-:::code language="csharp" source="./snippets/composite-formatting/net/vb/Program.vb" id="alignment":::
+:::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="alignment":::
 
 ### Format string component
 
@@ -104,7 +104,7 @@ Opening and closing braces are interpreted as starting and ending a format item.
 
 #### .NET
 
-Starting with .NET Core 3.0, escaped braces around a format item is supported. For example, consider the format item `{{{0:D}}}`, which is intended to display an opening brace, a numeric value formatted as a decimal number, and a closing brace. The format item is interpreted in the following manner:
+Braces can be escaped around a format item. For example, consider the format item `{{{0:D}}}`, which is intended to display an opening brace, a numeric value formatted as a decimal number, and a closing brace. The format item is interpreted in the following manner:
 
 1. The first two opening braces (`{{`) are escaped and yield one opening brace.
 1. The next three characters (`{0:`) are interpreted as the start of a format item.
@@ -114,7 +114,7 @@ Starting with .NET Core 3.0, escaped braces around a format item is supported. F
 1. The final result that's displayed is the literal string, `{6324}`.
 
 :::code language="csharp" source="./snippets/composite-formatting/net/csharp/Program.cs" id="now_good":::
-:::code language="csharp" source="./snippets/composite-formatting/net/vb/Program.vb" id="now_good":::
+:::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="now_good":::
 
 #### .NET Framework
 
@@ -129,16 +129,16 @@ The way escaped braces are interpreted can lead to unexpected results. For examp
 1. The final result that's displayed is the literal string, `{D}`. The numeric value that was to be formatted isn't displayed.
 
 :::code language="csharp" source="./snippets/composite-formatting/framework/csharp/Program.cs" id="bad":::
-:::code language="csharp" source="./snippets/composite-formatting/framework/vb/Program.vb" id="bad":::
+:::code language="vb" source="./snippets/composite-formatting/framework/vb/Program.vb" id="bad":::
 
 One way to write your code to avoid misinterpreting escaped braces and format items is to format the braces and format items separately. That is, in the first format operation, display a literal opening brace. In the next operation, display the result of the format item, and in the final operation, display a literal closing brace. The following example illustrates this approach:
 
 :::code language="csharp" source="./snippets/composite-formatting/framework/csharp/Program.cs" id="good":::
-:::code language="csharp" source="./snippets/composite-formatting/framework/vb/Program.vb" id="good":::
+:::code language="vb" source="./snippets/composite-formatting/framework/vb/Program.vb" id="good":::
 
 ### Processing order
 
-If the call to the composite formatting method includes an <xref:System.IFormatProvider> argument whose value isn't `null`, the runtime calls its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method to request an <xref:System.ICustomFormatter> implementation. If the method can return an <xref:System.ICustomFormatter> implementation, it's cached for the duration of the call of the composite formatting method.
+If the call to the composite formatting method includes an <xref:System.IFormatProvider> argument whose value isn't `null`, the runtime calls its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method to request an <xref:System.ICustomFormatter> implementation. If the method can return an <xref:System.ICustomFormatter> implementation, it's cached during the call of the composite formatting method.
 
 Each value in the parameter list that corresponds to a format item is converted to a string as follows:
 
@@ -164,24 +164,24 @@ Alignment is applied after the preceding steps have been performed.
 The following example shows one string created using composite formatting and another created using an object's `ToString` method. Both types of formatting produce equivalent results.
 
 :::code language="csharp" source="./snippets/composite-formatting/net/csharp/Program.cs" id="example_tostring":::
-:::code language="csharp" source="./snippets/composite-formatting/net/vb/Program.vb" id="example_tostring":::
+:::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="example_tostring":::
 
 Assuming that the current day is a Thursday in May, the value of both strings in the preceding example is `Thursday May` in the U.S. English culture.
 
 <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> exposes the same functionality as <xref:System.String.Format%2A?displayProperty=nameWithType>. The only difference between the two methods is that <xref:System.String.Format%2A?displayProperty=nameWithType> returns its result as a string, while <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> writes the result to the output stream associated with the <xref:System.Console> object. The following example uses the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method to format the value of `myNumber` to a currency value:
 
 :::code language="csharp" source="./snippets/composite-formatting/net/csharp/Program.cs" id="example_currency":::
-:::code language="csharp" source="./snippets/composite-formatting/net/vb/Program.vb" id="example_currency":::
+:::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="example_currency":::
 
 The following example demonstrates formatting multiple objects, including formatting one object in two different ways:
 
 :::code language="csharp" source="./snippets/composite-formatting/net/csharp/Program.cs" id="example_multiple":::
-:::code language="csharp" source="./snippets/composite-formatting/net/vb/Program.vb" id="example_multiple":::
+:::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="example_multiple":::
 
 The following example demonstrates the use of alignment in formatting. The arguments that are formatted are placed between vertical bar characters (`|`) to highlight the resulting alignment.
 
 :::code language="csharp" source="./snippets/composite-formatting/net/csharp/Program.cs" id="example_bar":::
-:::code language="csharp" source="./snippets/composite-formatting/net/vb/Program.vb" id="example_bar":::
+:::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="example_bar":::
 
 ## See also
 

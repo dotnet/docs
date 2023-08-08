@@ -77,7 +77,6 @@ To create the trimming test app:
 
 * Create a separate console application project.
 * Add a reference to the library.
-* Add calls to each API in the library. <!--Review required, I added this -->
 * Modify the project similar to the project shown below using the following list:
 
 ### [.NET 6](#tab/net6)
@@ -101,11 +100,11 @@ To create the trimming test app:
 
 ### .csproj file
 
-:::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyLibrary/MyLibrary.csproj.xml":::
+:::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyLibrary/MyLibrary.csproj.xml" id="snippet_full":::
 
 **Notes:**
 
-* In the preceding project file, when using .NET 8, replace `<TargetFramework>net7.0</TargetFramework>` with `<TargetFramework>net8.0</TargetFramework>`.
+* In the preceding project file, when using .NET 7, replace `<TargetFramework>net8.0</TargetFramework>` with `<TargetFramework>net7.0</TargetFramework>`.
 * The `<TrimMode>full</TrimMode>` setting:
 
   * Is the [default for .NET 7 and higher](../../../core/compatibility/deployment/7.0/trim-all-assemblies.md).
@@ -140,11 +139,11 @@ The preceding steps produce warnings about code that may cause problems when use
 
 Consider the following code that uses [`[RequiresUnreferencedCode]`](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute) to indicate that the member references code that may be removed by the trimmer.
 
-:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_1" highlight="17-18":::
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_1":::
 
 The preceding highlighted code indicates the library calls a method that has explicitly been annotated as incompatible with trimming. To get rid of the warning, consider whether `MyMethod` needs to call `DynamicBehavior`. If so, annotate the caller `MyMethod` with `[RequiresUnreferencedCode]` which propagates up the call stack the warning so that callers of `MyMethod` get a warning instead:
 
-:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class2.cs" id="snippet_RequiresUnreferencedCode" highlight="3,9-10":::
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class2.cs" id="snippet_RequiresUnreferencedCode" highlight="9-10":::
 
 Once you have propagated up the attribute all the way to public API, apps calling the library:
 
@@ -173,17 +172,23 @@ In this case, the trim analysis keeps public methods of <xref:System.Tuple>, and
 
 ## Recommendations
 
-***Avoid*** reflection when possible.
-
-* When using reflection, minimize reflection scope so that it's reachable only from a small part of the library.
-* Avoid using <!-- Review change: non-understood--> non-trimmable patterns in places like static constructors. Static constructors result in the warning propagating to all members of the class.
+* ***Avoid*** reflection when possible. When using reflection, minimize reflection scope so that it's reachable only from a small part of the library.
+* Annotate code with `DynamicallyAccessedMembers` to statically express the trimming requirements statically when possible.
+* Consider reorganizing code to make it follow an analyzable pattern that can be annotated with `DynamicallyAccessedMembers`
+* When code is incompatible with trimming, annotate it with `RequiresUnreferencedCode` and propagate this annotation to callers until the relevant public APIs are annotated.
+* Avoid using code that uses reflection in a way not understood by the static analysis. For example, reflection in static constructors should be avoided. Using reflection in static constructors result in the warning propagating to all members of the class.
 * Avoid annotating virtual methods or interface methods. Annotating virtual or interface methods requires all overrides to have matching annotations.
-* In some cases, you're able to mechanically propagate warnings through the library code without issues. <!--Review: What does mechanically propagate mean? For sure it won't MT (Machine Translate) --> Sometimes this results in much of your public API being annotated with [`[RequiresUnreferencedCode]`](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute). Annotating with `[RequiresUnreferencedCode]` is the right thing to do if the library behaves in ways that can't be understood statically by the trim analysis.
-<!-- Original run on, way too long for MT 
-* In other cases, you might discover that your code uses patterns that can't be expressed in terms of the `DynamicallyAccessedMembers` attributes, even if it only uses reflection to operate on statically known types. In these cases, you may need to reorganize some of your code to make it follow an analyzable pattern. -->
+* If an API is mostly trim-incompatible, alternative coding approaches to the API may need to be considered. A common example is reflection-based serializers. In these cases, consider adopting other technology like source generators to produce code that is more easily statically analyzed. For example, see [How to use source generation in System.Text.Json](/dotnet/standard/serialization/system-text-json/source-generation)
+
+<!--
+* When using reflection, minimize reflection scope so that it's reachable only from a small part of the library.
+* Avoid using code that uses reflection in a way not understood by the static analysis. For example, reflection in static constructors should be avoided. Using reflection in static constructors result in the warning propagating to all members of the class.
+* Avoid annotating virtual methods or interface methods. Annotating virtual or interface methods requires all overrides to have matching annotations.
+* When code is incompatible with trimming, propagate `RequiresUnreferencedCode` annotations up the call chain until the relevant public API is annotated. In some cases, adding attributes up the call chain resolves the warnings. Sometimes this results in much of the public API being annotated with [`[RequiresUnreferencedCode]`](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute). Annotating with `[RequiresUnreferencedCode]` is the best approach if the library behaves in ways that can't be understood statically by the trim analysis.
 * Code that uses patterns that can't be expressed in terms of the `DynamicallyAccessedMembers` attributes:
-  * Consider reorganizing that code to make it follow an analyzable pattern. This also applies to code that only uses reflection to operate on statically known types. <!-- Dreaded one bullet -->
-* If an API is mostly trim-incompatible, you may need to find other ways to write the API. A common example is reflection-based serializers. In these cases, consider adopting other technology like source generators to produce code that is more easily statically analyzed. For example, see [How to use source generation in System.Text.Json](/dotnet/standard/serialization/system-text-json/source-generation)
+  * Consider reorganizing that code to make it follow an analyzable pattern. This also applies to code that only uses reflection to operate on statically known types.  For example, consider using a factory pattern instead of reflection.
+* If an API is mostly trim-incompatible, alternative coding approaches to the API may need to be considered. A common example is reflection-based serializers. In these cases, consider adopting other technology like source generators to produce code that is more easily statically analyzed. For example, see [How to use source generation in System.Text.Json](/dotnet/standard/serialization/system-text-json/source-generation)
+-->
 
 ## Resolve warnings for non-analyzable patterns
 
@@ -212,7 +217,7 @@ In the preceding code, the indexer property has been annotated so that the retur
 
 If you're sure that the requirements are met, you can silence this warning by adding [`[UnconditionalSuppressMessage]`](xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute) to the getter:
 
-:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_AD2" highlight="1-9":::
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_AD2" highlight="9-10":::
 
 It's important to underline that it's only valid to suppress a warning if there are annotations or code that ensure the reflected-on members are visible targets of reflection. It isn't sufficient that the member was a target of a call, field or property access. It may appear to be the case sometimes but such code is bound to break eventually as more trimming optimizations are added. Properties, fields, and methods that aren't visible targets of reflection could be inlined, have their names removed, get moved to different types, or otherwise optimized in ways that break reflecting on them. When suppressing a warning, it's only permissible to reflect on targets that were visible targets of reflection to the trimming analyzer elsewhere.
 

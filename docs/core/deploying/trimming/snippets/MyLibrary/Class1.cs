@@ -5,7 +5,6 @@ using System.Text;
 // <snippet_1>
 public class MyLibrary
 {
-    internal static Type type;
 
     public static void MyMethod()
     {
@@ -78,7 +77,7 @@ public class MyLibrary6
 
     static void InitializeTypeField()
     {
-        MyLibrary.type = typeof(System.Tuple);
+        MyLibrary99.type = typeof(System.Tuple);
     }
     // </snippet_UMH2>
 }
@@ -188,6 +187,12 @@ public class MyLibrary12
         helper.Invoke(null, null);
     }
 }
+
+public class MyLibrary99
+{
+    internal static Type type;
+}
+
 // </snippet_AD4>
 public class MyLibrary22
 {

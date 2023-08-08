@@ -144,7 +144,7 @@ Consider the following code that uses [`[RequiresUnreferencedCode]`](xref:System
 
 The preceding highlighted code indicates the library calls a method that has explicitly been annotated as incompatible with trimming. To get rid of the warning, consider whether `MyMethod` needs to call `DynamicBehavior`. If so, annotate the caller `MyMethod` with `[RequiresUnreferencedCode]` which propagates up the call stack the warning so that callers of `MyMethod` get a warning instead:
 
-:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_RequiresUnreferencedCode" highlight="3,9-10":::
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class2.cs" id="snippet_RequiresUnreferencedCode" highlight="3,9-10":::
 
 Once you have propagated up the attribute all the way to public API, apps calling the library:
 

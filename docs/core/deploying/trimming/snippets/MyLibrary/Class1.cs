@@ -23,23 +23,6 @@ public class MyLibrary
 }
 // </snippet_1>
 
-// <snippet_RequiresUnreferencedCode>
-public class MyLibrary
-{
-    [RequiresUnreferencedCode("Calls DynamicBehavior.")]
-    public static void MyMethod()
-    {
-        DynamicBehavior();
-    }
-
-    [RequiresUnreferencedCode(
-        "DynamicBehavior is incompatible with trimming.")]
-    static void DynamicBehavior()
-    {
-    }
-}
-// </snippet_RequiresUnreferencedCode>
-
 // <snippet_DAA1>
 public class MyLibrary3
 {

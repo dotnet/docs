@@ -131,6 +131,7 @@ Follow the preceding pattern for multiple libraries. To see trim analysis warnin
 
 Introducing trim analysis warnings to a library is a breaking change when the library is used with `PublishTrimmed`.
 `
+
 ## Resolve trim warnings
 
 The preceding steps produce warnings about code that may cause problems when used in a trimmed app. The following examples show the most common warnings with recommendations for fixing them.

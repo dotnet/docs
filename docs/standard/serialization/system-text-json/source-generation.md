@@ -1,7 +1,7 @@
 ---
 title: How to use source generation in System.Text.Json
 description: "Learn how to use source generation in System.Text.Json."
-ms.date: 08/07/2023
+ms.date: 10/21/2022
 no-loc: [System.Text.Json]
 dev_langs:
   - "csharp"
@@ -44,7 +44,7 @@ The types of `WeatherForecast` members don't need to be explicitly specified wit
 
 :::code language="csharp" source="snippets/source-generation/csharp/ObjectProperties.cs" id="WF":::
 
-And you know that at run time it may have `boolean` and `int` objects:
+And you know that at runtime it may have `boolean` and `int` objects:
 
 :::code language="csharp" source="snippets/source-generation/csharp/ObjectProperties.cs" id="WFInit":::
 
@@ -52,9 +52,7 @@ Then `boolean` and `int` have to be declared as `[JsonSerializable]`:
 
 :::code language="csharp" source="snippets/source-generation/csharp/ObjectProperties.cs" id="JsonSerializable":::
 
-To specify source generation for a collection, use `[JsonSerializable]` with the collection type. For example:
-
-`[JsonSerializable(typeof(List<WeatherForecast>))]`
+To specify source generation for a collection, use `[JsonSerializable]` with the collection type. For example: `[JsonSerializable(typeof(List<WeatherForecast>))]`.
 
 ### `JsonSerializer` methods that use source generation
 
@@ -163,7 +161,7 @@ Here are the preceding examples in a complete program:
 
 ## Specify options by using `JsonSerializerOptions`
 
-Some options of <xref:System.Text.Json.JsonSerializerOptions> aren't supported by serialization optimization mode, especially in .NET 7 and earlier versions. Such options cause a fallback to the non-source-generated `JsonSerializer` code. For more information, see [Serialization optimization](source-generation-modes.md#serialization-optimization-mode).
+Some options of <xref:System.Text.Json.JsonSerializerOptions> aren't supported by serialization optimization mode. Such options cause a fallback to the non-source-generated `JsonSerializer` code. For more information, see [Serialization optimization](source-generation-modes.md#serialization-optimization-mode).
 
 To specify options by using <xref:System.Text.Json.JsonSerializerOptions>:
 

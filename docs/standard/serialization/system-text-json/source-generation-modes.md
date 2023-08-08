@@ -1,7 +1,7 @@
 ---
 title: How to choose reflection or source generation in System.Text.Json
 description: "Learn how to choose reflection or source generation in System.Text.Json."
-ms.date: 08/07/2023
+ms.date: 02/21/2023
 no-loc: [System.Text.Json]
 zone_pivot_groups: dotnet-preview-version
 helpviewer_keywords:
@@ -94,67 +94,33 @@ In both reflection and source generation modes:
 * Only `public` properties and `public` fields are supported<sup>\*</sup>.
 * Only `public` constructors can be used for deserialization.
 
-<sup>\*</sup>Starting in .NET 7, you can use custom JSON contracts to include `private` properties and fields in serialization. Starting in .NET 8, you can use the [JsonInclude attribute](xref:System.Text.Json.Serialization.JsonIncludeAttribute) to opt non-public members into the serialization contract for a type.
+<sup>\*</sup>Starting in .NET 7, you can use custom JSON contracts to include `private` properties and fields in serialization.
 
 For information about other known issues with source generation, see the [GitHub issues that are labeled "source-generator"](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json+label%3Asource-generator) in the *dotnet/runtime* repository.
 
 ## Serialization optimization mode
 
-`JsonSerializer` has features that customize the output of serialization, such as [camel-casing property names](customize-properties.md#use-camel-case-for-all-json-property-names) and [preserving references](preserve-references.md#preserve-references-and-handle-circular-references). However, support for these features adds a performance overhead. Source generation can improve serialization performance by generating optimized code that uses [`Utf8JsonWriter`](use-utf8jsonwriter.md) directly.
+`JsonSerializer` has many features that customize the output of serialization, such as [camel-casing property names](customize-properties.md#use-camel-case-for-all-json-property-names) and [preserving references](preserve-references.md#preserve-references-and-handle-circular-references). Support for all those features causes some performance overhead. Source generation can improve serialization performance by generating optimized code that uses [`Utf8JsonWriter`](use-utf8jsonwriter.md) directly.
 
-The optimized code doesn't support all of the serialization features that `JsonSerializer` supports, although in .NET 8 and later versions, most features are supported. The serializer detects whether the optimized code can be used and falls back to default serialization code if unsupported options are specified. For example, <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString?displayProperty=nameWithType> is not applicable to writing, so specifying this option doesn't cause a fall-back to default code.
+The optimized code doesn't support all of the serialization features that `JsonSerializer` supports. The serializer detects whether the optimized code can be used and falls back to default serialization code if unsupported options are specified. For example, <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString?displayProperty=nameWithType> is not applicable to writing, so specifying this option doesn't cause a fall-back to default code.
 
 The following table shows which options in `JsonSerializerOptions` are supported by the optimized serialization code:
 
-:::zone pivot="dotnet-7-0,dotnet-6-0"
-
 | Serialization option                                                   | Supported by optimized code |
 |------------------------------------------------------------------------|-----------------------------|
-| <xref:System.Text.Json.JsonSerializerOptions.AllowTrailingCommas>      | ❌                         |
-| <xref:System.Text.Json.JsonSerializerOptions.Converters>               | ❌                         |
-| <xref:System.Text.Json.JsonSerializerOptions.DefaultBufferSize>        | ❌                         |
+| <xref:System.Text.Json.JsonSerializerOptions.Converters>               | ❌                          |
 | <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition>   | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy>      | ❌                         |
-| <xref:System.Text.Json.JsonSerializerOptions.Encoder>                  | ❌                         |
+| <xref:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy>      | ❌                          |
+| <xref:System.Text.Json.JsonSerializerOptions.Encoder>                  | ❌                          |
+| <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues>         | ❌                          |
 | <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields>     | ✔️                         |
 | <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties> | ✔️                         |
 | <xref:System.Text.Json.JsonSerializerOptions.IncludeFields>            | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.MaxDepth>                 | ❌                         |
-| <xref:System.Text.Json.JsonSerializerOptions.NumberHandling>           | ❌                         |
-| <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive> | ❌                      |
+| <xref:System.Text.Json.JsonSerializerOptions.NumberHandling>           | ❌                          |
 | <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy>     | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.ReadCommentHandling>      | ❌                         |
-| <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler>         | ❌                         |
-| <xref:System.Text.Json.JsonSerializerOptions.UnknownTypeHandling>      | ❌                         |
+| <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler>         | ❌                          |
+| <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver>         | ✔️                         |
 | <xref:System.Text.Json.JsonSerializerOptions.WriteIndented>            | ✔️                         |
-
-:::zone-end
-
-:::zone pivot="dotnet-8-0"
-
-| Serialization option                                                   | Supported by optimized code |
-|------------------------------------------------------------------------|-----------------------------|
-| <xref:System.Text.Json.JsonSerializerOptions.AllowTrailingCommas>      | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.Converters>               | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.DefaultBufferSize>        | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition>   | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy>      | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.Encoder>                  | ❌                         |
-| <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields>     | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties> | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.IncludeFields>            | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.MaxDepth>                 | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.NumberHandling>           | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.PreferredObjectCreationHandling> | ✔️                  |
-| <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive> | ✔️                      |
-| <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy>     | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.ReadCommentHandling>      | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler>         | ❌                         |
-| <xref:System.Text.Json.JsonSerializerOptions.UnknownTypeHandling>      | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.UnmappedMemberHandling>   | ✔️                         |
-| <xref:System.Text.Json.JsonSerializerOptions.WriteIndented>            | ✔️                         |
-
-:::zone-end
 
 The following table shows which attributes are supported by the optimized serialization code:
 
@@ -170,7 +136,7 @@ The following table shows which attributes are supported by the optimized serial
 | <xref:System.Text.Json.Serialization.JsonPropertyNameAttribute>   | ✔️                         |
 | <xref:System.Text.Json.Serialization.JsonRequiredAttribute>       | ✔️                         |
 
-If an unsupported option or attribute is specified for a type, the serializer falls back to the default `JsonSerializer` code. In that case, the optimized code isn't used when serializing that type but may be used for other types. Therefore it's important to do performance testing with your options and workloads to determine how much benefit you can actually get from serialization optimization mode. Also, the ability to fall back to `JsonSerializer` code requires metadata collection mode. If you select only serialization optimization mode, serialization might fail for types or options that need to fall back to `JsonSerializer` code.
+If a non-supported option or attribute is specified for a type, the serializer falls back to the default `JsonSerializer` code. In that case, the optimized code isn't used when serializing that type but may be used for other types. Therefore it's important to do performance testing with your options and workloads to determine how much benefit you can actually get from serialization optimization mode. Also, the ability to fall back to `JsonSerializer` code requires metadata collection mode. If you select only serialization optimization mode, serialization might fail for types or options that need to fall back to `JsonSerializer` code.
 
 ## How to use source generation modes
 

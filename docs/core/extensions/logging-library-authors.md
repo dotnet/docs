@@ -16,7 +16,7 @@ When writing a library that emits logs, you need an <xref:Microsoft.Extensions.L
 
 - When you need a logging object that can be passed along to multiple classes so that all of them can emit logs, use `ILoggerFactory`. It's recommended that each class creates logs with a separate category, named the same as the class. To do this, you need the factory to create unique `ILogger<T>` objects for each class that is emitting logs. Common examples include public entry point APIs for a library or public constructors of types that internally may create helper classes.
 
-- When you need a logging object that will only be used inside one class and never shared, use `ILogger<T>` where `T` is the type that will be producing the logs. A common example of this is a constructor for a class created by dependency injection.
+- When you need a logging object that will only be used inside one class and never shared, use `ILogger<T>` where `T` is the type that is producing the logs. A common example of this is a constructor for a class created by dependency injection.
 
 If you're designing a public API that must remain stable over time, keep in mind that you might desire to refactor your internal implementation in the future. Even if a class doesn't create any internal helper types initially, that might change as the code evolves. Using `ILoggerFactory` accommodates creating new `ILogger<T>` objects for any new classes without changing the public API.
 

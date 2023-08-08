@@ -38,7 +38,7 @@ This section contains the following subtopics:
 
 Many improvements have been made to <xref:System.Text.Json?displayProperty=fullName> serialization and deserialization functionality including:
 
-- The serializer has built-in support for the following additional types. Previously, code that attempted to serialize these types threw an <xref:System.InvalidOperationException> at run time.
+- The serializer has built-in support for the following additional types.
 
   - <xref:System.Half>, <xref:System.Int128>, and <xref:System.UInt128> numeric types.
 
@@ -109,7 +109,7 @@ For more information about JSON serialization in general, see [JSON serializatio
 
 - The [source generator](../../standard/serialization/system-text-json/source-generation.md) now supports serializing types with [`required`](../../standard/serialization/system-text-json/required-properties.md) and [`init`](../../csharp/language-reference/keywords/init.md) properties. These were both already supported in reflection-based serialization.
 - Improved formatting of source-generated code.
-- <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> feature parity with <xref:System.Text.Json.JsonSerializerOptions>. This parity lets you specify serialization configuration at compile time, which ensures that the generated `MyContext.Default` property is preconfigured with all the relevant options set. For more information, see [Specify options for serialization optimization mode](../../standard/serialization/system-text-json/source-generation.md#specify-options-for-serialization-optimization-mode).
+- <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> feature parity with <xref:System.Text.Json.JsonSerializerOptions>. This parity lets you specify serialization configuration at compile time, which ensures that the generated `MyContext.Default` property is preconfigured with all the relevant options set.
 - Additional diagnostics (such as `SYSLIB1034` and `SYSLIB1039`).
 - Don't include types of ignored or inaccessible properties.
 - Support for nesting `JsonSerializerContext` declarations within arbitrary type kinds.
@@ -255,7 +255,7 @@ static JsonSerializerOptions GetDefaultOptions()
 
 #### New JsonNode API methods
 
-The `JsonNode`` APIs include the following new methods.
+The `JsonNode` APIs include the following new methods.
 
 ```csharp
 namespace System.Text.Json.Nodes;

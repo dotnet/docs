@@ -624,7 +624,7 @@ To speed up the build time, builds that are implicitly triggered by Visual Studi
 
 ### DisableRuntimeMarshalling
 
-The `DisableRuntimeMarshalling` property enables you to specify that you would like to disable runtime marshalling support for your project. If this property is set to `true`, then the <xref:System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute> will be added to the assembly and any P/Invokes or delegate-based interop will follow the rules for [disabled runtime marshalling](../../standard/native-interop/disabled-marshalling.md).
+The `DisableRuntimeMarshalling` property enables you to specify that you would like to disable runtime marshalling support for your project. If this property is set to `true`, then the <xref:System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute> is added to the assembly and any P/Invokes or delegate-based interop will follow the rules for [disabled runtime marshalling](../../standard/native-interop/disabled-marshalling.md).
 
 ```xml
 <PropertyGroup>

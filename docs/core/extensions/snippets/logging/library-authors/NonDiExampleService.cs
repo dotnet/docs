@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.Abstractions;
 
 namespace Logging.LibraryAuthors;
 
@@ -7,14 +6,18 @@ public class NonDiExampleService
 {
     private readonly ILogger<NonDiExampleService> _logger;
 
-    public NonDiExampleService() =>
-        _logger = NullLoggerFactory.Instance.CreateLogger<NonDiExampleService>();
-
-    public void DoSomething()
+    public NonDiExampleService()
     {
-        if (_logger.IsEnabled(LogLevel.Information))
-        {
-            _logger.LogInformation("Doing work...");
-        }
+        _logger = LibraryConfiguration.LoggerFactory.CreateLogger<NonDiExampleService>();
+    }
+
+    public void ProcessProductSale(Product product, int sold)
+    {
+        // Product sale processing logic.
+        // Log results...
+
+        _logger.LogProductSaleDetails(
+            quantity: sold,
+            description: product.GetFriendlyProductDescription());
     }
 }

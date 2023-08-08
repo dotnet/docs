@@ -9,11 +9,13 @@ public class DiExampleService
     public DiExampleService(ILogger<DiExampleService> logger) =>
         _logger = logger;
 
-    public void DoSomething()
+    public void ProcessProductSale(Product product, int sold)
     {
-        if (_logger.IsEnabled(LogLevel.Information))
-        {
-            _logger.LogInformation("Doing work...");
-        }
+        // Product sale processing logic.
+        // Log results...
+
+        _logger.LogProductSaleDetails(
+            quantity: sold,
+            description: product.GetFriendlyProductDescription());
     }
 }

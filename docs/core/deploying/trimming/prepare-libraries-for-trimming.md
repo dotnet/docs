@@ -97,7 +97,7 @@ To create the trimming test app:
 * Add `<PublishTrimmed>true</PublishTrimmed>`.
 * Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
 * Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
-  * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root,  ". A "root," assembly means the trimmer analyzes every call in the library, and traverses all code paths that originate from   that assembly. `TrimmerRootAssembly` is necessary in case the library has `[AssemblyMetadata("IsTrimmable", "True")]`.  A   project using `[AssemblyMetadata("IsTrimmable", "True")]` without  `TrimmerRootAssembly` removes the unused library   without analyzing it.
+  * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root". A "root" assembly means the trimmer analyzes every call in the library, and traverses all code paths that originate from that assembly. `TrimmerRootAssembly` is necessary in case the library has `[AssemblyMetadata("IsTrimmable", "True")]`.  A project using `[AssemblyMetadata("IsTrimmable", "True")]` without `TrimmerRootAssembly` removes the unused library without analyzing it.
 
 ### .csproj file
 
@@ -112,7 +112,7 @@ To create the trimming test app:
   * Ensures that the trimmer only analyzes the parts of the library's dependencies that are used.
   * Tells the trimmer that any code that isn't part of a "root" can be trimmed if it's unused. Without this   option:
     * Warnings are issued originating from ***any*** part of a dependency that doesn't set `[AssemblyMetadata  ("IsTrimmable", "Tue")]`
-    * The preceding warnings can be issued by parts that are unused by the library. <!-- REVIEW: What are parts? APIs? -->
+    * The preceding warnings can be issued for code that is unused by the library.
 
 ---
 

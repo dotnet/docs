@@ -24,7 +24,7 @@ public class MyLibrary
 // </snippet_1>
 
 // <snippet_RequiresUnreferencedCode>
-public class MyLibrary2
+public class MyLibrary
 {
     [RequiresUnreferencedCode("Calls DynamicBehavior.")]
     public static void MyMethod()

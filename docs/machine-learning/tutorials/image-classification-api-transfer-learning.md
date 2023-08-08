@@ -83,7 +83,7 @@ Now that you have a general understanding of transfer learning and the Image Cla
 
 1. Choose .NET 6 as the framework to use. Click the **Create** button.
 
-1. Install the **Microsoft.ML** NuGet Package:
+1. Install the **Microsoft.ML**, **SciSharp.TensorFlow.Redist**, and **Microsoft.ML.ImageAnalytics** NuGet Packages:
 
     [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 

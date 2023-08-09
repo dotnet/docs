@@ -56,7 +56,7 @@ In the *Program.cs* file, invoke the <xref:Microsoft.Extensions.Azure.AzureClien
 
 In the preceding code:
 
-* Key Vault Secrets, Blob Storage and Service Bus clients are registered using <xref:Microsoft.Extensions.Azure.SecretClientBuilderExtensions.AddSecretClient%2A> and <xref:Microsoft.Extensions.Azure.BlobClientBuilderExtensions.AddBlobServiceClient%2A>, respectively. The `Uri`-typed arguments are passed. To avoid specifying these URLs explicitly, see the [Store configuration separately from code](#store-configuration-separately-from-code) section.
+* Key Vault Secrets, Blob Storage and Service Bus clients are registered using the <xref:Microsoft.Extensions.Azure.SecretClientBuilderExtensions.AddSecretClient%2A>, <xref:Microsoft.Extensions.Azure.BlobClientBuilderExtensions.AddBlobServiceClient%2A> and <xref:Microsoft.Extensions.Azure.ServiceBusClientBuilderExtensions.AddServiceBusClientWithNamespace%2A>, respectively. The `Uri` and `string`-typed arguments are passed. To avoid specifying these URLs explicitly, see the [Store configuration separately from code](#store-configuration-separately-from-code) section.
 * <xref:Azure.Identity.DefaultAzureCredential> is used to satisfy the `TokenCredential` argument requirement for each registered client. When one of the clients is created, `DefaultAzureCredential` is used to authenticate.
 * Service Bus subclients are registered for each queue on the service using the subclient and corresponding options types.
 
@@ -116,7 +116,7 @@ In the [Register clients](#register-clients-and-subclients) section, you explici
     "ServiceUri": "https://mydemoaccount.storage.windows.net"
   },
   "ServiceBus": {
-    "ServiceUri": "https://<your-namespace>.servicebus.windows.net"
+    "NamespaceUri": "https://<your-namespace>.servicebus.windows.net"
   }
 }
 ```
@@ -135,7 +135,7 @@ builder.Services.AddAzureClients(clientBuilder =>
         builder.Configuration.GetSection("Storage"));
 
     clientBuilder.AddServiceBusClientWithNamespace(
-        builder.Configuration.GetSection("ServiceBus"));
+        builder.Configuration["ServiceBus:NamespaceUri"]);
 
     clientBuilder.UseCredential(new DefaultAzureCredential());
 
@@ -157,7 +157,7 @@ builder.Services.AddAzureClients(clientBuilder =>
         builder.Configuration.GetSection("Storage"));
 
     clientBuilder.AddServiceBusClientWithNamespace(
-        builder.Configuration.GetSection("ServiceBus"));
+        builder.Configuration["ServiceBus:NamespaceUri"]);
 
     clientBuilder.UseCredential(new DefaultAzureCredential());
 
@@ -183,7 +183,7 @@ IHost host = Host.CreateDefaultBuilder(args)
                 hostContext.Configuration.GetSection("Storage"));
 
             clientBuilder.AddServiceBusClientWithNamespace(
-                hostContext.Configuration.GetSection("ServiceBus"));
+                hostContext.Configuration["ServiceBus:NamespaceUri"]);
 
             clientBuilder.UseCredential(new DefaultAzureCredential());
 
@@ -259,7 +259,7 @@ At some point, you may want to change the default settings for a service client.
     "ServiceUri": "https://store1.storage.windows.net"
   },
   "ServiceBus": {
-    "ServiceUri": "https://<your-namespace>.servicebus.windows.net"
+    "NamespaceUri": "https://<your-namespace>.servicebus.windows.net"
   },
   "CustomStorage": {
     "ServiceUri": "https://store2.storage.windows.net"
@@ -285,6 +285,10 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.AddBlobServiceClient(
             builder.Configuration.GetSection("Storage"))
         .ConfigureOptions(options => options.Retry.MaxRetries = 10);
+
+    clientBuilder.AddServiceBusClientWithNamespace(
+            builder.Configuration["ServiceBus:NamespaceUri"])
+        .ConfigureOptions(options => options.RetryOptions.MaxRetries = 10);
 
     // A named storage client with a different custom retry policy
     clientBuilder.AddBlobServiceClient(

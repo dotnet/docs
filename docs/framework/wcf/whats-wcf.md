@@ -24,11 +24,21 @@ Windows Communication Foundation (WCF) is a framework for building service-orien
 
 While creating such applications was possible prior to the existence of WCF, WCF makes the development of endpoints easier than ever. In summary, WCF is designed to offer a manageable approach to creating Web services and Web service clients.
 
+`Not using ## header`
+ultra root
+
+[!INCLUDE[](~/includes/wcf_grpc.md)]
+
+framework root
+
+[!INCLUDE[](~/docs/framework/wcf/includes/wcf_grpc.md)
+
+drop docs
+
+[!INCLUDE[](~/framework/wcf/includes/wcf_grpc.md)
+
 `[!INCLUDE[](~/includes/wcf_grpc_heading.md)]`
 [!INCLUDE[](~/includes/wcf_grpc_heading.md)]
-
-`[!INCLUDE[](~/docs/includes/wcf_grpc_heading.md)]`
-[!INCLUDE[](~/docs/includes/wcf_grpc_heading.md)]
 
 ## Features of WCF
 

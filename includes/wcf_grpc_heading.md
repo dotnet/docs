@@ -1,7 +1,13 @@
 ## gRPC as an alternative to WCF
 
-[!INCLUDE[](~/docs/includes/wcf_grpc.md)]
-
-no docs
+ultra root
 
 [!INCLUDE[](~/includes/wcf_grpc.md)]
+
+framework root
+
+[!INCLUDE[](~/docs/framework/wcf/includes/wcf_grpc.md)
+
+drop docs
+
+[!INCLUDE[](~/framework/wcf/includes/wcf_grpc.md)

@@ -20,11 +20,11 @@ You can use version 6.0+ of `System.Text.Json` in projects that target earlier f
 
 This article explains the options and provides guidance on how to choose the best approach for your scenario.
 
-:::zone pivot="dotnet-8-0"
-
 ## Overview
 
 Choose reflection or source generation modes based on the following benefits that each one offers:
+
+:::zone pivot="dotnet-8-0"
 
 | Benefit                                              | Reflection | Source generation:<br/>Metadata collection | Source generation:<br/>Serialization optimization |
 |------------------------------------------------------|------------|---------------------|----------------------------|
@@ -43,10 +43,6 @@ Choose reflection or source generation modes based on the following benefits tha
 
 :::zone pivot="dotnet-7-0,dotnet-6-0"
 
-## Overview
-
-Choose reflection or source generation modes based on the following benefits that each one offers:
-
 | Benefit                                              | Reflection | Source generation:<br/>Metadata collection | Source generation:<br/>Serialization optimization |
 |------------------------------------------------------|------------|---------------------|----------------------------|
 | Simpler to code and debug.                           | ✔️        | ❌                  | ❌                        |
@@ -61,8 +57,6 @@ Choose reflection or source generation modes based on the following benefits tha
 | Increases serialization throughput.                  | ❌        | ❌                  | ✔️                        |
 
 :::zone-end
-
-:::zone pivot="dotnet-8-0,dotnet-7-0,dotnet-6-0"
 
 The following sections explain these options and their relative benefits.
 
@@ -144,7 +138,6 @@ If a non-supported option or attribute is specified for a type, the serializer f
 ## How to use source generation modes
 
 Most of the System.Text.Json documentation shows how to write code that uses reflection mode. For information about how to use source generation modes, see [How to use source generation in System.Text.Json](source-generation.md).
-:::zone-end
 
 ## See also
 

@@ -502,7 +502,7 @@ The `OnDeserializing` code doesn't have access to the new POCO instance. To mani
 
 `Newtonsoft.Json` can use private and internal property setters and getters via the `JsonProperty` attribute.
 
-<xref:System.Text.Json?displayProperty=fullName> supports private and internal property setters and getters via the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute. For sample code, see [Non-public property accessors](immutability.md#non-public-property-accessors).
+<xref:System.Text.Json?displayProperty=fullName> supports private and internal property setters and getters via the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute. For sample code, see [Non-public property accessors](immutability.md#non-public-members-and-property-accessors).
 
 ### Populate existing objects
 

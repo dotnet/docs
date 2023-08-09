@@ -14,7 +14,7 @@ IHost host = Host.CreateDefaultBuilder(args)
             // Register clients for each service
             clientBuilder.AddSecretClient(new Uri("<key_vault_url>"));
             clientBuilder.AddBlobServiceClient(new Uri("<storage_url>"));
-            clientBuilder.AddServiceBusClient("<NAMESPACE CONNECTION STRING>");
+            clientBuilder.AddServiceBusClientWithNamespace("<your-namespace>.servicebus.windows.net");
             clientBuilder.UseCredential(new DefaultAzureCredential());
 
             // Register a subclient for each Service Bus Queue
@@ -33,7 +33,7 @@ async Task<List<string>> GetQueueNames()
 {
     // Query the available queues for the Service Bus namespace.
     var adminClient = new ServiceBusAdministrationClient
-        ("<NAMESPACE-NAME>.servicebus.windows.net", new DefaultAzureCredential());
+        ("<your-namespace>.servicebus.windows.net", new DefaultAzureCredential());
     var queueNames = new List<string>();
 
     // Because the result is async, they need to be captured to a standard list to avoid async

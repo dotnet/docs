@@ -114,6 +114,9 @@ In the [Register clients](#register-clients-and-subclients) section, you explici
   },
   "Storage": {
     "ServiceUri": "https://mydemoaccount.storage.windows.net"
+  },
+  "ServiceBus": {
+    "ServiceUri": "https://<your-namespace>.servicebus.windows.net"
   }
 }
 ```
@@ -130,6 +133,9 @@ builder.Services.AddAzureClients(clientBuilder =>
 
     clientBuilder.AddBlobServiceClient(
         builder.Configuration.GetSection("Storage"));
+
+    clientBuilder.AddServiceBusClientWithNamespace(
+        builder.Configuration.GetSection("ServiceBus"));
 
     clientBuilder.UseCredential(new DefaultAzureCredential());
 
@@ -149,6 +155,9 @@ builder.Services.AddAzureClients(clientBuilder =>
 
     clientBuilder.AddBlobServiceClient(
         builder.Configuration.GetSection("Storage"));
+
+    clientBuilder.AddServiceBusClientWithNamespace(
+        builder.Configuration.GetSection("ServiceBus"));
 
     clientBuilder.UseCredential(new DefaultAzureCredential());
 
@@ -172,6 +181,9 @@ IHost host = Host.CreateDefaultBuilder(args)
 
             clientBuilder.AddBlobServiceClient(
                 hostContext.Configuration.GetSection("Storage"));
+
+            clientBuilder.AddServiceBusClientWithNamespace(
+                hostContext.Configuration.GetSection("ServiceBus"));
 
             clientBuilder.UseCredential(new DefaultAzureCredential());
 
@@ -245,6 +257,9 @@ At some point, you may want to change the default settings for a service client.
   },
   "Storage": {
     "ServiceUri": "https://store1.storage.windows.net"
+  },
+  "ServiceBus": {
+    "ServiceUri": "https://<your-namespace>.servicebus.windows.net"
   },
   "CustomStorage": {
     "ServiceUri": "https://store2.storage.windows.net"

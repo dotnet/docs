@@ -189,7 +189,7 @@ When training and validation data do not change often, it is good practice to ca
 The images are stored in two subdirectories. Before loading the data, it needs to be formatted into a list of `ImageData` objects. To do so, create the `LoadImagesFromDirectory` method.
 
 ```csharp
-IEnumerable<ImageData> LoadImagesFromDirectory(string folder, bool useFolderNameAsLabel = true)
+public static IEnumerable<ImageData> LoadImagesFromDirectory(string folder, bool useFolderNameAsLabel = true)
 {
 
 }
@@ -295,7 +295,7 @@ Create a new utility method called `OutputPrediction` to display prediction info
 1. Create a new method called `ClassifySingleImage` to make and output a single image prediction.
 
     ```csharp
-    void ClassifySingleImage(MLContext mlContext, IDataView data, ITransformer trainedModel)
+    public static void ClassifySingleImage(MLContext mlContext, IDataView data, ITransformer trainedModel)
     {
 
     }
@@ -326,7 +326,7 @@ Create a new utility method called `OutputPrediction` to display prediction info
 1. Add a new method called `ClassifyImages` below the `ClassifySingleImage` method to make and output multiple image predictions.
 
     ```csharp
-    void ClassifyImages(MLContext mlContext, IDataView data, ITransformer trainedModel)
+    public static void ClassifyImages(MLContext mlContext, IDataView data, ITransformer trainedModel)
     {
 
     }

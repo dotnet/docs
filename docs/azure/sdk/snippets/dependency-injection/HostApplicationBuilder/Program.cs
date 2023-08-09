@@ -17,8 +17,6 @@ IHost host = Host.CreateDefaultBuilder(args)
             clientBuilder.AddServiceBusClientWithNamespace("<your-namespace>.servicebus.windows.net");
             clientBuilder.UseCredential(new DefaultAzureCredential());
 
-
-
             // Register subclients for Service Bus
             foreach (var queueName in queueNames)
             {

@@ -1,39 +1,48 @@
-﻿using HostBuilder;
-#region snippet_HostBuilder
+﻿#region snippet_HostBuilder
 using Azure.Identity;
-using Microsoft.Extensions.Azure;
 using Azure.Messaging.ServiceBus;
 using Azure.Messaging.ServiceBus.Administration;
-using Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos;
+using Microsoft.Extensions.Azure;
+
+var queueNames = await GetQueueNames();
 
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
     {
-        services.AddHostedService<Worker>();
-        services.AddAzureClients(async clientBuilder =>
+        services.AddAzureClients(clientBuilder =>
         {
             // Register clients for each service
-            var credential = new DefaultAzureCredential();
-
             clientBuilder.AddSecretClient(new Uri("<key_vault_url>"));
             clientBuilder.AddBlobServiceClient(new Uri("<storage_url>"));
             clientBuilder.AddServiceBusClient("<NAMESPACE-NAME>.servicebus.windows.net");
             clientBuilder.UseCredential(new DefaultAzureCredential());
 
             // Register a subclient for each Service Bus Queue
-            var admin = new ServiceBusAdministrationClient(
-            "<NAMESPACE-NAME>.servicebus.windows.net", credential);
-
-            await foreach (var queue in admin.GetQueuesAsync())
+            foreach (var queue in queueNames)
             {
                 clientBuilder.AddClient<ServiceBusSender, ServiceBusClientOptions>((_, _, provider) =>
-                    provider.GetService<ServiceBusClient>()!
-                            .CreateSender(queue.Name)
-                ).WithName(queue.Name);
+                    provider.GetService<ServiceBusClient>()!.CreateSender(queue)
+                ).WithName(queue);
             }
         });
-    })
-    .Build();
+    }).Build();
 
 await host.RunAsync();
+
+async Task<List<string>> GetQueueNames()
+{
+    // Query the available queues for the Service Bus namespace.
+    var adminClient = new ServiceBusAdministrationClient
+        ("<NAMESPACE-NAME>.servicebus.windows.net", new DefaultAzureCredential());
+    var queueNames = new List<string>();
+
+    // Because the result is async, they need to be captured to a standard list to avoid async
+    // calls when registering. Failure to do so results in an error with the services collection.
+    await foreach (var queue in adminClient.GetQueuesAsync())
+    {
+        queueNames.Add(queue.Name);
+    }
+
+    return queueNames;
+}
 #endregion snippet_HostBuilder

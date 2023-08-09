@@ -127,9 +127,7 @@ Follow the preceding pattern for multiple libraries. To see trim analysis warnin
 
 * If the new version added non-understood reflection patterns.
 * Even if there were no API changes.
-
-Introducing trim analysis warnings to a library is a breaking change when the library is used with `PublishTrimmed`.
-`
+* Introducing trim analysis warnings is a breaking change when the library is used with `PublishTrimmed`.
 
 ## Resolve trim warnings
 
@@ -137,9 +135,9 @@ The preceding steps produce warnings about code that may cause problems when use
 
 ### RequiresUnreferencedCode
 
-Consider the following code that uses [`[RequiresUnreferencedCode]`](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute) to indicate that the member references code that may be removed by the trimmer.
+Consider the following code that uses [`[RequiresUnreferencedCode]`](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute) to indicate that the specified method requires dynamic access to code that is not referenced statically, for example, through <xref:System.Reflection?displayProperty=fullName>.
 
-:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_1":::
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_1" highlight="12-13":::
 
 The preceding highlighted code indicates the library calls a method that has explicitly been annotated as incompatible with trimming. To get rid of the warning, consider whether `MyMethod` needs to call `DynamicBehavior`. If so, annotate the caller `MyMethod` with `[RequiresUnreferencedCode]` which propagates up the call stack the warning so that callers of `MyMethod` get a warning instead:
 

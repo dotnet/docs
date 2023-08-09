@@ -36,11 +36,9 @@ dotnet add package Azure.Storage.ServiceBus
 
 ## Register clients and subclients
 
-A service client is the entry point to the API for an Azure service – from it, library users can invoke all operations the service provides and can easily implement the most common scenarios. In the *Program.cs* file, invoke the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method to register a client for each service.
+A service client is the entry point to the API for an Azure service – from it, library users can invoke all operations the service provides and can easily implement the most common scenarios. Where it will simplify an API's design, groups of service calls can be organized around smaller subclient types. For example, `ServiceBusClient` can register additional `ServiceBusSender` clients to simplify working with queues.
 
-Where it will simplify an API's design, groups of service calls can be organized around smaller subclient types. For example, `ServiceBusClient` can register additional `ServiceBusSender` clients to simplify working with queues.
-
-The following code samples provide guidance on application builders from the `Microsoft.AspNetCore.Builder` and `Microsoft.Extensions.Hosting` namespaces.
+In the *Program.cs* file, invoke the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method to register a client for each service. The following code samples provide guidance on application builders from the `Microsoft.AspNetCore.Builder` and `Microsoft.Extensions.Hosting` namespaces.
 
 ### [WebApplicationBuilder](#tab/web-app-builder)
 
@@ -116,9 +114,6 @@ In the [Register clients](#register-clients-and-subclients) section, you explici
   },
   "Storage": {
     "ServiceUri": "https://mydemoaccount.storage.windows.net"
-  },
-  "ServiceBus": {
-    "ServiceUri": "https://mydemoaccount.storage.windows.net"
   }
 }
 ```
@@ -135,12 +130,6 @@ builder.Services.AddAzureClients(clientBuilder =>
 
     clientBuilder.AddBlobServiceClient(
         builder.Configuration.GetSection("Storage"));
-<<<<<<< HEAD
-
-    clientBuilder.AddServiceBusClient(
-        builder.Configuration.GetSection("ServiceBus"));
-=======
->>>>>>> main
 
     clientBuilder.UseCredential(new DefaultAzureCredential());
 
@@ -161,12 +150,6 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.AddBlobServiceClient(
         builder.Configuration.GetSection("Storage"));
 
-<<<<<<< HEAD
-    clientBuilder.AddServiceBusClient(
-        builder.Configuration.GetSection("ServiceBus"));
-
-=======
->>>>>>> main
     clientBuilder.UseCredential(new DefaultAzureCredential());
 
     // Set up any default settings
@@ -189,9 +172,6 @@ IHost host = Host.CreateDefaultBuilder(args)
 
             clientBuilder.AddBlobServiceClient(
                 hostContext.Configuration.GetSection("Storage"));
-
-            clientBuilder.AddServiceBusClient(
-                hostContext.Configuration.GetSection("ServiceBus"));
 
             clientBuilder.UseCredential(new DefaultAzureCredential());
 

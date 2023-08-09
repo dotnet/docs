@@ -13,7 +13,7 @@ builder.Services.AddAzureClients(clientBuilder =>
     // Register clients for each service
     clientBuilder.AddSecretClient(new Uri("<key_vault_url>"));
     clientBuilder.AddBlobServiceClient(new Uri("<storage_url>"));
-    clientBuilder.AddServiceBusClient("<NAMESPACE-NAME>.servicebus.windows.net");
+    clientBuilder.AddServiceBusClient("<NAMESPACE CONNECTION STRING>");
     clientBuilder.UseCredential(new DefaultAzureCredential());
 
     // Register a subclient for each Service Bus Queue

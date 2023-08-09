@@ -5,7 +5,7 @@ namespace Logging.LibraryAuthors;
 
 public sealed class LibraryConfiguration
 {
-    public static ILoggerFactory LoggerFactory { get; private set; } = NullLoggerFactory.Instance;
+    internal static ILoggerFactory LoggerFactory { get; private set; } = NullLoggerFactory.Instance;
 
     public static void SetLoggerFactory(ILoggerFactory loggerFactory) =>
         LoggerFactory = loggerFactory;

@@ -24,41 +24,7 @@ For more information, see [How filtering rules are applied](logging.md#how-filte
 
 ## Prefer source-generated logging
 
-Depending on your library's performance requirements, you may consider using the built-in source generator to generate [high-performance logging code](high-performance-logging.md). Imagine that your library logs informational messages about fictitious products being sold, you might write the following code:
-
-```csharp
-_logger.LogInformation(
-    "Sold {quantity} units of {description}",
-    7, "Widgets");
-```
-
-This code seems like a natural way to log this information. However, it has a few drawbacks:
-
-- The `LogInformation` extension method is called even if the `Information` log level isn't enabled.
-- The quantity value `7` is boxed into an `object`.
-- The boxed quantity and description are allocated into an `object[]` to satisfy the `params` keyword.
-
-These allocations can be avoided when logging is disabled, but that requires a guard to check if the `Information` log level is enabled:
-
-```csharp
-if (_logger.IsEnabled(LogLevel.Information))
-{
-    _logger.LogInformation(
-        "Sold {quantity} units of {description}",
-        7, "Widgets");
-}
-```
-
-In situations like these, the guard prevents the allocations. All of the following extension methods have similar concerns:
-
-- <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogCritical%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogDebug%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogError%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogTrace%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogWarning%2A?displayProperty=nameWithType>
-
-It's easy to forget to add the `IsEnabled` guard and it becomes repetitive. Instead, use the <xref:Microsoft.Extensions.Logging.LoggerMessageAttribute> to automatically apply the appropriate guards, calling <xref:Microsoft.Extensions.Logging.ILogger.IsEnabled%2A?displayProperty=nameWithType> with the correct <xref:Microsoft.Extensions.Logging.LogLevel>. When you use the `LoggerMessage` attribute, it ensures that the logging code is only executed if the corresponding `LogLevel` is enabled. Consider the following code:
+The `ILogger` API supports two approaches to using the API. You can either call methods such as <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogError%2A?displayProperty=nameWithType> and <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation%2A?displayProperty=nameWithType>, or you can use the logging source generator to define strongly typed logging methods. For most situations, the source generator is recommended because it offers superior performance and stronger typing. It also isolates logging-specific concerns such as message templates, IDs, and log levels from the calling code. The non-source-generated approach is primarily useful for scenarios where you are willing to give up those advantages to make the code more concise.
 
 :::code source="snippets/logging/library-authors/LogMessages.cs":::
 
@@ -66,12 +32,12 @@ The preceding code:
 
 - Defines a `partial class` named `LogMessages`, which is `static` so that it can be used to define extension methods on the `ILogger` type.
 - Decorates a `LogProductSaleDetails` extension method with the `LoggerMessage` attribute and `Message` template.
-- The `LogProductSaleDetails` accepts an `ILogger`, the `quantity`, `description`, and `logLevel` values.
+- The `LogProductSaleDetails` extends the `ILogger` and accepts a `quantity` and `description`.
 
 > [!TIP]
 > The source generated code can be stepped into during debugging, as it's part of the same assembly as the code that calls it.
 
-### Expensive parameter evaluation considerations
+### Use `IsEnabled` to avoid expensive parameter evaluation
 
 There may be situations where evaluating parameters is expensive. Expanding upon the previous example, imagine the `description` parameter is a `string` that is expensive to compute. Perhaps the product being sold gets a friendly product description and relies on a database query, or reading from a file. In these situations, you can instruct the source generator to skip the `IsEnabled` guard and manually add the `IsEnabled` guard at the call site. This allows the user to determine where the guard is called and ensures that parameters that might be expensive to compute are only evaluated when truly needed. Consider the following code:
 
@@ -84,12 +50,12 @@ internal static partial class LogMessages
 {
     [LoggerMessage(
         Message = "Sold {quantity} of {description}",
+        LogLevel = LogLevel.Information,
         SkipEnabledCheck = true)]
     internal static partial void LogProductSaleDetails(
         this ILogger logger,
         int quantity,
-        string description,
-        LogLevel logLevel = LogLevel.Information);
+        string description);
 }
 ```
 

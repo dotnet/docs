@@ -6,7 +6,7 @@ internal static partial class LogMessages
 {
     [LoggerMessage(
         Message = "Sold {quantity} of {description}",
-        LogLevel = LogLevel.Information)]
+        Level = LogLevel.Information)]
     internal static partial void LogProductSaleDetails(
         this ILogger logger,
         int quantity,

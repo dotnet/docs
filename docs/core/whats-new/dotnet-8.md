@@ -234,7 +234,7 @@ private class ZonedTimeProvider : TimeProvider
 }
 
 // Create a timer using a time provider.
-ITimer timer = timeProvider.CreateTimer(callBack, state, delay, Timeout.InfiniteTimeSpan);
+ITimer timer = TimeProvider.CreateTimer(callBack, state, delay, Timeout.InfiniteTimeSpan);
 
 // Measure a period using the system time provider.
 long providerTimestamp1 = TimeProvider.System.GetTimestamp();

@@ -5,7 +5,7 @@ gRPC is a modern RPC framework that is a popular alternative to WCF. gRPC is bui
 * Security: gRPC supports a variety of security mechanisms, including TLS and authentication.
 * Cross-platform: gRPC is platform-neutral and can be used with a variety of programming languages.
 
-For more information about migrating WCF apps to gRPC, see:
+For more information on developing or migrating WCF apps to gRPC, see:
 
 * [Why we recommend gRPC for WCF developers](/dotnet/architecture/grpc-for-wcf-developers/why-grpc)
 * [Comparing WCF to gRPC](/dotnet/architecture/grpc-for-wcf-developers/wcf-services-to-grpc-comparison)

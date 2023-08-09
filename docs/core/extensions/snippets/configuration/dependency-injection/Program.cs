@@ -3,7 +3,7 @@
 HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
 builder.Services.AddHostedService<Worker>();
-builder.Services.AddScoped<IMessageWriter, MessageWriter>();
+builder.Services.AddSingleton<IMessageWriter, MessageWriter>();
 
 using IHost host = builder.Build();
 

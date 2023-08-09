@@ -1,6 +1,146 @@
 {
     "redirections": [
     {
+      "source_path": "docs/spark/what-is-apache-spark-dotnet.md",
+      "redirect_url": "/previous-versions/dotnet/spark/what-is-apache-spark-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/what-is-spark.md",
+      "redirect_url": "/previous-versions/dotnet/spark/what-is-spark",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/how-to-guides/broadcast-guide.md",
+      "redirect_url": "/previous-versions/dotnet/spark/how-to-guides/broadcast-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/how-to-guides/connect-to-azure-storage.md",
+      "redirect_url": "/previous-versions/dotnet/spark/how-to-guides/connect-to-azure-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/how-to-guides/connect-to-event-hub.md",
+      "redirect_url": "/previous-versions/dotnet/spark/how-to-guides/connect-to-event-hub",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/how-to-guides/connect-to-mongo-db.md",
+      "redirect_url": "/previous-versions/dotnet/spark/how-to-guides/connect-to-mongo-db",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/how-to-guides/connect-to-sql-server.md",
+      "redirect_url": "/previous-versions/dotnet/spark/how-to-guides/connect-to-sql-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/how-to-guides/databricks-deploy-methods.md",
+      "redirect_url": "/previous-versions/dotnet/spark/how-to-guides/databricks-deploy-methods",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/how-to-guides/debug.md",
+      "redirect_url": "/previous-versions/dotnet/spark/how-to-guides/debug",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/how-to-guides/deploy-worker-udf-binaries.md",
+      "redirect_url": "/previous-versions/dotnet/spark/how-to-guides/deploy-worker-udf-binaries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/how-to-guides/dotnet-interactive-udf-issue.md",
+      "redirect_url": "/previous-versions/dotnet/spark/how-to-guides/dotnet-interactive-udf-issue",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/how-to-guides/dotnet-spark-jupyter-notebooks.md",
+      "redirect_url": "/previous-versions/dotnet/spark/how-to-guides/dotnet-spark-jupyter-notebooks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/how-to-guides/hdinsight-deploy-methods.md",
+      "redirect_url": "/previous-versions/dotnet/spark/how-to-guides/hdinsight-deploy-methods",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/how-to-guides/hdinsight-notebook-installation.md",
+      "redirect_url": "/previous-versions/dotnet/spark/how-to-guides/hdinsight-notebook-installation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/how-to-guides/java-udf-from-dotnet.md",
+      "redirect_url": "/previous-versions/dotnet/spark/how-to-guides/java-udf-from-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/how-to-guides/ubuntu-instructions.md",
+      "redirect_url": "/previous-versions/dotnet/spark/how-to-guides/ubuntu-instructions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/how-to-guides/udf-guide.md",
+      "redirect_url": "/previous-versions/dotnet/spark/how-to-guides/udf-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/how-to-guides/windows-instructions.md",
+      "redirect_url": "/previous-versions/dotnet/spark/how-to-guides/windows-instructions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/resources/index.md",
+      "redirect_url": "/previous-versions/dotnet/spark/resources/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/tutorials/amazon-emr-spark-deployment.md",
+      "redirect_url": "/previous-versions/dotnet/spark/tutorials/amazon-emr-spark-deployment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/tutorials/batch-processing.md",
+      "redirect_url": "/previous-versions/dotnet/spark/tutorials/batch-processing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/tutorials/databricks-deployment.md",
+      "redirect_url": "/previous-versions/dotnet/spark/tutorials/databricks-deployment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/tutorials/get-started.md",
+      "redirect_url": "/previous-versions/dotnet/spark/tutorials/get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/tutorials/hdinsight-deployment.md",
+      "redirect_url": "/previous-versions/dotnet/spark/tutorials/hdinsight-deployment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/tutorials/index.md",
+      "redirect_url": "/previous-versions/dotnet/spark/tutorials/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/tutorials/ml-sentiment-analysis.md",
+      "redirect_url": "/previous-versions/dotnet/spark/tutorials/ml-sentiment-analysis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/tutorials/streaming.md",
+      "redirect_url": "/previous-versions/dotnet/spark/tutorials/streaming",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/spark/index.yml",
+      "redirect_url": "/previous-versions/dotnet/spark",
+      "redirect_document_id": false
+    },
+    {
         "source_path_from_root": "/docs/about/index.md",
         "redirect_url": "/dotnet/fundamentals/"
     },
@@ -62,7 +202,7 @@
     },
     {
         "source_path_from_root": "/docs/spark/tutorials/ml-sentment-analysis.md",
-        "redirect_url": "/dotnet/spark/tutorials/ml-sentiment-analysis"
+        "redirect_url": "/previous-versions/dotnet/spark/tutorials/ml-sentiment-analysis"
     },
     {
         "source_path_from_root": "/docs/standard/about.md",

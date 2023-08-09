@@ -44,14 +44,14 @@ For example, to specify 12 heaps for `GCHeapCount` for a .NET Framework app name
 
 For both .NET Core and .NET Framework, you can use environment variables.
 
-On Windows using .NET 5 or a later version:
+On Windows using .NET 6 or a later version:
 
 ```cmd
 SET DOTNET_gcServer=1
 SET DOTNET_GCHeapCount=c
 ```
 
-On Windows using .NET Core 3.1 or earlier:
+On Windows using .NET 5 or earlier:
 
 ```cmd
 SET COMPlus_gcServer=1
@@ -60,21 +60,21 @@ SET COMPlus_GCHeapCount=c
 
 On other operating systems:
 
-For .NET 5 or later versions:
+For .NET 6 or later versions:
 
 ```bash
 export DOTNET_gcServer=1
 export DOTNET_GCHeapCount=c
 ```
 
-For .NET Core 3.1 and earlier versions:
+For .NET 5 and earlier versions:
 
 ```bash
 export COMPlus_gcServer=1
 export COMPlus_GCHeapCount=c
 ```
 
-For .NET Core only, you can set the value in the *runtimeconfig.json* file.
+If you're not using .NET Framework, you can also set the value in the *runtimeconfig.json* file.
 
 ```json
 {
@@ -573,7 +573,7 @@ Example:
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | N/A | N/A | N/A |
+| **runtimeconfig.json** | `System.GC.ConserveMemory` | `0` - `9` | .NET 6 |
 | **Environment variable** | `COMPlus_GCConserveMemory` | `0` -`9` | .NET Framework 4.8 |
 | **Environment variable** | `DOTNET_GCConserveMemory` | `0` -`9` | .NET 6 |
 | **app.config for .NET Framework** | [GCConserveMemory](../../framework/configure-apps/file-schema/runtime/gcconservememory-element.md) | `0` -`9` | .NET Framework 4.8 |

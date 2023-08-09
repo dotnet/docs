@@ -8,7 +8,7 @@ ms.date: 04/04/2023
 
 **This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
-In this article, you'll learn about the environment variables used by .NET SDK, .NET CLI, and .NET runtime. Some environment variables are used by the .NET runtime, while others are only used by the .NET SDK and .NET CLI. Some environment variables are used by all.
+In this article, you'll learn about the environment variables used by .NET. Some environment variables are used by the .NET runtime, while others are only used by the .NET SDK and .NET CLI. Some environment variables are used by all three components.
 
 ## .NET runtime environment variables
 
@@ -189,6 +189,18 @@ Specifies the location of the .NET runtimes, if they are not installed in the de
 
 This environment variable is used only when running apps via generated executables (apphosts). `DOTNET_ROOT(x86)` is used instead when running a 32-bit executable on a 64-bit OS.
 
+### `DOTNET_HOST_PATH`
+
+Specifies the absolute path to a `dotnet` host (`dotnet.exe` on Windows, `dotnet` on Linux and macOS) that was used to launch the currently-running `dotnet` process. This is used by the .NET SDK to help tools that run during .NET SDK commands ensure they use the same `dotnet` runtime for any child `dotnet` processes they create for the duration of the command. Tools and MSBuild Tasks within the SDK that invoke binaries via the `dotnet` host are expected to honor this environment variable to ensure a consistent experience.
+
+Tools that invoke `dotnet` during an SDK command should use the following algorithm to locate it:
+
+* if `DOTNET_HOST_PATH` is set, use that value directly
+* otherwise, rely on `dotnet` via the system's `PATH`
+
+> [!NOTE]
+> `DOTNET_HOST_PATH` is not a general solution for locating the `dotnet` host. It is only intended to be used by tools that are invoked by the .NET SDK.
+
 ### `NUGET_PACKAGES`
 
 The global packages folder. If not set, it defaults to `~/.nuget/packages` on Unix or `%userprofile%\.nuget\packages` on Windows.
@@ -287,7 +299,11 @@ Disables background download of advertising manifests for workloads. Default is 
 
 ### `DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_INTERVAL_HOURS`
 
-Specifies the minimum number of hours between background downloads of advertising manifests for workloads. Default is `24` - no more frequently than once a day. For more information, see [Advertising manifests](dotnet-workload-install.md#advertising-manifests).
+Specifies the minimum number of hours between background downloads of advertising manifests for workloads. The default is `24`, which is no more frequently than once a day. For more information, see [Advertising manifests](dotnet-workload-install.md#advertising-manifests).
+
+### `DOTNET_TOOLS_ALLOW_MANIFEST_IN_ROOT`
+
+Specifies whether .NET SDK local tools search for tool manifest files in the root folder on Windows. The default is `false`.
 
 ### `COREHOST_TRACE`
 

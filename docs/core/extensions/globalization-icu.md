@@ -57,6 +57,21 @@ You can run code analysis rules [CA1307: Specify StringComparison for clarity](.
 
 For more information, see [Behavior changes when comparing strings on .NET 5+](../../standard/base-types/string-comparison-net-5-plus.md).
 
+#### TimeZoneInfo.FindSystemTimeZoneById
+
+ICU provides the flexibility to create <xref:System.TimeZoneInfo> instances using [IANA](https://www.iana.org/time-zones) time zone IDs, even when the application is running on Windows. Similarly, you can create <xref:System.TimeZoneInfo> instances with Windows time zone IDs, even when running on non-Windows platforms. However, it's important to note that this functionality isn't available when using [NLS mode](#use-nls-instead-of-icu) or [globalization invariant mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).
+
+#### ICU dependent APIs
+
+.NET introduced APIs that are dependent on ICU. These APIs can succeed only when using ICU. Here are some examples:
+
+- <xref:System.TimeZoneInfo.TryConvertIanaIdToWindowsId(System.String,System.String@)>
+- <xref:System.TimeZoneInfo.TryConvertWindowsIdToIanaId%2A>
+
+On Windows 10 May 2019 Update or any later versions, the mentioned APIs will consistently succeed. However, on older versions of Windows, these APIs will consistently fail. In such cases, you can enable the [app-local ICU](#app-local-icu) feature to ensure the success of these APIs. On non-Windows platforms, these APIs will always succeed regardless of the version.
+
+In addition, it's crucial for apps to ensure that they're not running in [globalization invariant mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md) or [NLS mode](#use-nls-instead-of-icu) to guarantee the success of these APIs.
+
 ### Use NLS instead of ICU
 
 Using ICU instead of NLS may result in behavioral differences with some globalization-related operations. To revert back to using NLS, a developer can opt out of the ICU implementation. Applications can enable NLS mode in any of the following ways:
@@ -149,8 +164,8 @@ For framework-dependent apps (not self-contained) where ICU is consumed from a l
 ```xml
 <ItemGroup>
   <IcuAssemblies Include="icu\*.so*" />
-  <RuntimeTargetsCopyLocalItems Include="@(IcuAssemblies)" AssetType="native" CopyLocal="true" 
-    DestinationSubDirectory="runtimes/linux-x64/native/" DestinationSubPath="%(FileName)%(Extension)" 
+  <RuntimeTargetsCopyLocalItems Include="@(IcuAssemblies)" AssetType="native" CopyLocal="true"
+    DestinationSubDirectory="runtimes/linux-x64/native/" DestinationSubPath="%(FileName)%(Extension)"
     RuntimeIdentifier="linux-x64" NuGetPackageId="System.Private.Runtime.UnicodeData" />
 </ItemGroup>
 ```

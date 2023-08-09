@@ -1,7 +1,7 @@
 ---
 title: Code-style rules overview
 description: Learn about the different .NET code-style rules and categories.
-ms.date: 09/25/2020
+ms.date: 07/22/2023
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -10,17 +10,11 @@ ms.author: gewarren
 
 .NET code-style analysis provides rules that aim to maintain consistent *style* in your codebase. These rules have an "IDE" prefix in the rule ID.
 
-Most of the rules have one or more associated options to customize the preferred style. For example, [Use simple 'using' statement (IDE0063)](ide0063.md) has the associated option `csharp_prefer_simple_using_statement` that lets you define whether you prefer a `using` declaration or a `using` statement. The rule enforces whichever options you choose at a specified level (for example, warning or error).
-
 The code-style rules are organized into the following subcategories:
 
-- [Language rules](language-rules.md)
+- [Language and unnecessary code rules](language-rules.md)
 
-  Rules that pertain to the C# or Visual Basic language. For example, you can specify rules that regard the use of `var` when defining variables, or whether expression-bodied members are preferred.
-
-- [Unnecessary code rules](unnecessary-code-rules.md)
-
-  Rules that pertain to unnecessary code that indicates a potential readability, maintainability, performance, or functional problem. For example, unreachable code within methods or unused private fields, properties, or methods is unnecessary code.
+  Rules that pertain to the C# or Visual Basic language. For example, you can specify rules that regard the use of `var` when defining variables, or whether expression-bodied members are preferred. This category also includes rules that find unnecessary code, for example, unreachable code within methods or unused private fields, properties, or methods.
 
 - [Formatting rules](ide0055.md)
 
@@ -64,8 +58,8 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0026](ide0026.md) | Use expression body for indexers | [csharp_style_expression_bodied_indexers](ide0026.md#csharp_style_expression_bodied_indexers) |
 > | [IDE0027](ide0027.md) | Use expression body for accessors | [csharp_style_expression_bodied_accessors](ide0027.md#csharp_style_expression_bodied_accessors) |
 > | [IDE0028](ide0028.md) | Use collection initializers | [dotnet_style_collection_initializer](ide0028.md#dotnet_style_collection_initializer) |
-> | [IDE0029](ide0029-ide0030.md) | Use coalesce expression (non-nullable types) | [dotnet_style_coalesce_expression](ide0029-ide0030.md#dotnet_style_coalesce_expression) |
-> | [IDE0030](ide0029-ide0030.md) | Use coalesce expression (nullable types) | [dotnet_style_coalesce_expression](ide0029-ide0030.md#dotnet_style_coalesce_expression) |
+> | [IDE0029](ide0029-ide0030-ide0270.md) | Null check can be simplified | [dotnet_style_coalesce_expression](ide0029-ide0030-ide0270.md#dotnet_style_coalesce_expression) |
+> | [IDE0030](ide0029-ide0030-ide0270.md) | Null check can be simplified | [dotnet_style_coalesce_expression](ide0029-ide0030-ide0270.md#dotnet_style_coalesce_expression) |
 > | [IDE0031](ide0031.md) | Use null propagation | [dotnet_style_null_propagation](ide0031.md#dotnet_style_null_propagation) |
 > | [IDE0032](ide0032.md) | Use auto property | [dotnet_style_prefer_auto_properties](ide0032.md#dotnet_style_prefer_auto_properties) |
 > | [IDE0033](ide0033.md) | Use explicitly provided tuple name | [dotnet_style_explicit_tuple_names](ide0033.md#dotnet_style_explicit_tuple_names) |
@@ -109,7 +103,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0075](ide0075.md) | Simplify conditional expression | [dotnet_style_prefer_simplified_boolean_expressions](ide0075.md#dotnet_style_prefer_simplified_boolean_expressions) |
 > | [IDE0076](ide0076.md) | Remove invalid global `SuppressMessageAttribute` | |
 > | [IDE0077](ide0077.md) | Avoid legacy format target in global `SuppressMessageAttribute` | |
-> | [IDE0078](ide0078.md) | Use pattern matching | [csharp_style_prefer_pattern_matching](ide0078.md#csharp_style_prefer_pattern_matching) |
+> | [IDE0078](ide0078-ide0260.md) | Use pattern matching | [csharp_style_prefer_pattern_matching](ide0078-ide0260.md#csharp_style_prefer_pattern_matching-ide0078) |
 > | [IDE0079](ide0079.md) | Remove unnecessary suppression | [dotnet_remove_unnecessary_suppression_exclusions](ide0079.md#dotnet_remove_unnecessary_suppression_exclusions) |
 > | [IDE0080](ide0080.md) | Remove unnecessary suppression operator | |
 > | [IDE0081](ide0081.md) | Remove `ByVal` | |
@@ -119,6 +113,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0090](ide0090.md) | Simplify `new` expression | [csharp_style_implicit_object_creation_when_type_is_apparent](ide0090.md#csharp_style_implicit_object_creation_when_type_is_apparent) |
 > | [IDE0100](ide0100.md) | Remove unnecessary equality operator | |
 > | [IDE0110](ide0110.md) | Remove unnecessary discard | |
+> | [IDE0120](ide0120.md) | Simplify LINQ expression | |
 > | [IDE0130](ide0130.md) | Namespace does not match folder structure | [dotnet_style_namespace_match_folder](ide0130.md#dotnet_style_namespace_match_folder) |
 > | [IDE0140](ide0140.md) | Simplify object creation | [visual_basic_style_prefer_simplified_object_creation](ide0140.md#visual_basic_style_prefer_simplified_object_creation) |
 > | [IDE0150](ide0150.md) | Prefer `null` check over type check | [csharp_style_prefer_null_check_over_type_check](ide0150.md#csharp_style_prefer_null_check_over_type_check) |
@@ -126,6 +121,17 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0161](ide0160-ide0161.md) | Use file-scoped namespace | [csharp_style_namespace_declarations](ide0160-ide0161.md#csharp_style_namespace_declarations) |
 > | [IDE0170](ide0170.md) | Simplify property pattern | [csharp_style_prefer_extended_property_pattern](ide0170.md#csharp_style_prefer_extended_property_pattern) |
 > | [IDE0180](ide0180.md) | Use tuple to swap values | [csharp_style_prefer_tuple_swap](ide0180.md#csharp_style_prefer_tuple_swap) |
+> | [IDE0200](ide0200.md) | Remove unnecessary lambda expression | [csharp_style_prefer_method_group_conversion](ide0200.md#csharp_style_prefer_method_group_conversion) |
+> | [IDE0210](ide0210.md) | Convert to top-level statements | [csharp_style_prefer_top_level_statements](ide0210.md#csharp_style_prefer_top_level_statements) |
+> | [IDE0211](ide0211.md) | Convert to 'Program.Main' style program | [csharp_style_prefer_top_level_statements](ide0211.md#csharp_style_prefer_top_level_statements) |
+> | [IDE0220](ide0220.md) | Add explicit cast in foreach loop | [dotnet_style_prefer_foreach_explicit_cast_in_source](ide0220.md#dotnet_style_prefer_foreach_explicit_cast_in_source) |
+> | [IDE0230](ide0230.md) | Use UTF-8 string literal | [csharp_style_prefer_utf8_string_literals](ide0230.md#csharp_style_prefer_utf8_string_literals) |
+> | [IDE0240](ide0240.md) | Nullable directive is redundant | |
+> | [IDE0241](ide0241.md) | Nullable directive is unnecessary | |
+> | [IDE0250](ide0250.md) | Struct can be made 'readonly' | [csharp_style_prefer_readonly_struct](ide0250.md#csharp_style_prefer_readonly_struct) |
+> | [IDE0251](ide0251.md) | Member can be made 'readonly' | [csharp_style_prefer_readonly_struct_member](ide0251.md#csharp_style_prefer_readonly_struct_member) |
+> | [IDE0260](ide0078-ide0260.md) | Use pattern matching | [csharp_style_pattern_matching_over_as_with_null_check](ide0078-ide0260.md#csharp_style_pattern_matching_over_as_with_null_check-ide0260) |
+> | [IDE0270](ide0029-ide0030-ide0270.md) | Null check can be simplified | [dotnet_style_coalesce_expression](ide0029-ide0030-ide0270.md#dotnet_style_coalesce_expression) |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
 

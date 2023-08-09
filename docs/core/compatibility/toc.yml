@@ -18,8 +18,14 @@ items:
         href: aspnet-core/8.0/isystemclock-obsolete.md
       - name: Rate-limiting middleware requires AddRateLimiter
         href: aspnet-core/8.0/addratelimiter-requirement.md
+      - name: Security token events return a JSonWebToken
+        href: aspnet-core/8.0/securitytoken-events.md
+      - name: TrimMode defaults to full for Web SDK projects
+        href: aspnet-core/8.0/trimmode-full.md
     - name: Containers
       items:
+      - name: "'ca-certificates' and 'krb5-libs' removed from Alpine images"
+        href: containers/8.0/krb5-libs-package.md
       - name: Container images upgraded to Debian 12
         href: containers/8.0/debian-version.md
       - name: Default ASP.NET Core port changed to 8080
@@ -42,6 +48,8 @@ items:
         href: core-libraries/8.0/file-path-backslash.md
       - name: Base64.DecodeFromUtf8 methods ignore whitespace
         href: core-libraries/8.0/decodefromutf8-whitespace.md
+      - name: Boolean-backed enum type support removed
+        href: core-libraries/8.0/bool-backed-enum.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
       - name: GC.GetGeneration might return Int32.MaxValue
@@ -54,6 +62,8 @@ items:
         href: core-libraries/8.0/itypedescriptorcontext-props.md
       - name: Legacy Console.ReadKey removed
         href: core-libraries/8.0/console-readkey-legacy.md
+      - name: Removed overloads of ToFrozenDictionary/ToFrozenSet
+        href: core-libraries/8.0/optimizeforreading-arg.md
     - name: Cryptography
       items:
       - name: AesGcm authentication tag size on macOS
@@ -76,6 +86,8 @@ items:
         href: extensions/8.0/activatorutilities-createinstance-null-provider.md
       - name: ConfigurationBinder throws for mismatched value
         href: extensions/8.0/configurationbinder-exceptions.md
+      - name: Empty keys added to dictionary by configuration binder
+        href: extensions/8.0/dictionary-configuration-binding.md
       - name: HostApplicationBuilderSettings.Args respected by constructor
         href: extensions/8.0/hostapplicationbuilder-ctor.md
     - name: Globalization
@@ -102,6 +114,8 @@ items:
         href: sdk/8.0/console-encoding.md
       - name: Console encoding not UTF-8 after completion
         href: sdk/8.0/console-encoding-fix.md
+      - name: Containers default to use the 'latest' tag
+        href: sdk/8.0/default-image-tag.md
       - name: "'dotnet pack' uses Release configuration"
         href: sdk/8.0/dotnet-pack-config.md
       - name: "'dotnet publish' uses Release configuration"
@@ -236,6 +250,8 @@ items:
         href: globalization/7.0/icu-globalization-api.md
     - name: Extensions
       items:
+      - name: Binding config to dictionary extends values
+        href: extensions/7.0/config-bind-dictionary.md
       - name: ContentRootPath for apps launched by Windows Shell
         href: extensions/7.0/contentrootpath-hosted-app.md
       - name: Environment variable prefixes
@@ -272,16 +288,18 @@ items:
         href: sdk/7.0/automatic-rid-publish-only.md
       - name: CLI console output uses UTF-8
         href: sdk/8.0/console-encoding.md
-      - name: Version requirements for .NET 7 SDK
+      - name: Version requirements
         href: sdk/7.0/vs-msbuild-version.md
       - name: SDK no longer calls ResolvePackageDependencies
         href: sdk/7.0/resolvepackagedependencies.md
-      - name: Serialization of custom types in .NET 7
+      - name: Serialization of custom types
         href: sdk/7.0/custom-serialization.md
       - name: Side-by-side SDK installations
         href: sdk/7.0/side-by-side-install.md
       - name: --output option no longer is valid for solution-level commands
         href: sdk/7.0/solution-level-output-no-longer-valid.md
+      - name: Tool manifests in root folder
+        href: sdk/7.0/manifest-search.md
     - name: Serialization
       items:
       - name: BinaryFormatter serialization APIs produce compiler errors
@@ -478,6 +496,8 @@ items:
         href: sdk/6.0/path-x64-emulated.md
       - name: MSBuild no longer supports calling GetType()
         href: sdk/6.0/calling-gettype-property-functions.md
+      - name: .NET can't be installed to custom location
+        href: sdk/6.0/install-location.md
       - name: OutputType not automatically set to WinExe
         href: sdk/6.0/outputtype-not-set-automatically.md
       - name: Publish ReadyToRun with --no-restore requires changes
@@ -486,6 +506,8 @@ items:
         href: sdk/6.0/runtimeconfigdev-file.md
       - name: RuntimeIdentifier warning if self-contained is unspecified
         href: sdk/6.0/runtimeidentifier-self-contained.md
+      - name: Tool manifests in root folder
+        href: sdk/7.0/manifest-search.md
       - name: Version requirements for .NET 6 SDK
         href: sdk/6.0/vs-msbuild-version.md
       - name: .version file includes build version
@@ -816,6 +838,10 @@ items:
         href: aspnet-core/8.0/isystemclock-obsolete.md
       - name: Rate-limiting middleware requires AddRateLimiter
         href: aspnet-core/8.0/addratelimiter-requirement.md
+      - name: Security token events return a JSonWebToken
+        href: aspnet-core/8.0/securitytoken-events.md
+      - name: TrimMode defaults to full for Web SDK projects
+        href: aspnet-core/8.0/trimmode-full.md
     - name: .NET 7
       items:
       - name: API controller actions try to infer parameters from DI
@@ -1012,6 +1038,8 @@ items:
         href: https://github.com/dotnet/dotnet-docker/discussions/3699
     - name: .NET 8
       items:
+      - name: "'ca-certificates' and 'krb5-libs' removed from Alpine images"
+        href: containers/8.0/krb5-libs-package.md
       - name: Container images upgraded to Debian 12
         href: containers/8.0/debian-version.md
       - name: Default ASP.NET Core port changed to 8080
@@ -1036,6 +1064,8 @@ items:
         href: core-libraries/8.0/file-path-backslash.md
       - name: Base64.DecodeFromUtf8 methods ignore whitespace
         href: core-libraries/8.0/decodefromutf8-whitespace.md
+      - name: Boolean-backed enum type support removed
+        href: core-libraries/8.0/bool-backed-enum.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
       - name: GC.GetGeneration might return Int32.MaxValue
@@ -1048,6 +1078,8 @@ items:
         href: core-libraries/8.0/itypedescriptorcontext-props.md
       - name: Legacy Console.ReadKey removed
         href: core-libraries/8.0/console-readkey-legacy.md
+      - name: Removed overloads of ToFrozenDictionary/ToFrozenSet
+        href: core-libraries/8.0/optimizeforreading-arg.md
     - name: .NET 7
       items:
       - name: API obsoletions with default diagnostic ID
@@ -1278,10 +1310,14 @@ items:
         href: extensions/8.0/activatorutilities-createinstance-null-provider.md
       - name: ConfigurationBinder throws for mismatched value
         href: extensions/8.0/configurationbinder-exceptions.md
+      - name: Empty keys added to dictionary by configuration binder
+        href: extensions/8.0/dictionary-configuration-binding.md
       - name: HostApplicationBuilderSettings.Args respected by constructor
         href: extensions/8.0/hostapplicationbuilder-ctor.md
     - name: .NET 7
       items:
+      - name: Binding config to dictionary extends values
+        href: extensions/7.0/config-bind-dictionary.md
       - name: ContentRootPath for apps launched by Windows Shell
         href: extensions/7.0/contentrootpath-hosted-app.md
       - name: Environment variable prefixes
@@ -1414,6 +1450,8 @@ items:
         href: sdk/8.0/console-encoding.md
       - name: Console encoding not UTF-8 after completion
         href: sdk/8.0/console-encoding-fix.md
+      - name: Containers default to use the 'latest' tag
+        href: sdk/8.0/default-image-tag.md
       - name: "'dotnet pack' uses Release configuration"
         href: sdk/8.0/dotnet-pack-config.md
       - name: "'dotnet publish' uses Release configuration"
@@ -1440,6 +1478,8 @@ items:
         href: sdk/7.0/side-by-side-install.md
       - name: --output option no longer is valid for solution-level commands
         href: sdk/7.0/solution-level-output-no-longer-valid.md
+      - name: Tool manifests in root folder
+        href: sdk/7.0/manifest-search.md
     - name: .NET 6
       items:
       - name: -p option for `dotnet run` is deprecated
@@ -1458,6 +1498,8 @@ items:
         href: sdk/6.0/path-x64-emulated.md
       - name: MSBuild no longer supports calling GetType()
         href: sdk/6.0/calling-gettype-property-functions.md
+      - name: .NET can't be installed to custom location
+        href: sdk/6.0/install-location.md
       - name: OutputType not automatically set to WinExe
         href: sdk/6.0/outputtype-not-set-automatically.md
       - name: Publish ReadyToRun with --no-restore requires changes
@@ -1466,6 +1508,8 @@ items:
         href: sdk/6.0/runtimeconfigdev-file.md
       - name: RuntimeIdentifier warning if self-contained is unspecified
         href: sdk/6.0/runtimeidentifier-self-contained.md
+      - name: Tool manifests in root folder
+        href: sdk/7.0/manifest-search.md
       - name: Version requirements for .NET 6 SDK
         href: sdk/6.0/vs-msbuild-version.md
       - name: .version file includes build version

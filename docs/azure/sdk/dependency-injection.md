@@ -135,9 +135,12 @@ builder.Services.AddAzureClients(clientBuilder =>
 
     clientBuilder.AddBlobServiceClient(
         builder.Configuration.GetSection("Storage"));
+<<<<<<< HEAD
 
     clientBuilder.AddServiceBusClient(
         builder.Configuration.GetSection("ServiceBus"));
+=======
+>>>>>>> main
 
     clientBuilder.UseCredential(new DefaultAzureCredential());
 
@@ -158,9 +161,12 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.AddBlobServiceClient(
         builder.Configuration.GetSection("Storage"));
 
+<<<<<<< HEAD
     clientBuilder.AddServiceBusClient(
         builder.Configuration.GetSection("ServiceBus"));
 
+=======
+>>>>>>> main
     clientBuilder.UseCredential(new DefaultAzureCredential());
 
     // Set up any default settings

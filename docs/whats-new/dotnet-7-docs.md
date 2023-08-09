@@ -137,7 +137,6 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [CA1418: Validate platform compatibility](../fundamentals/code-analysis/quality-rules/ca1418.md) - Add docs for CA1420 and CA1422
 - [Portability and interoperability rules](../fundamentals/code-analysis/quality-rules/interoperability-warnings.md) - Add docs for CA1420 and CA1422
 - [Code-style rule options](../fundamentals/code-analysis/code-style-rule-options.md) - Add missing code-style rules
-- [Expression-level preferences](../fundamentals/code-analysis/style-rules/expression-level-preferences.md) - Add missing code-style rules
 - [Use local function instead of lambda (IDE0039)](../fundamentals/code-analysis/style-rules/ide0039.md) - Add missing code-style rules
 - [Code-style rules](../fundamentals/code-analysis/style-rules/index.md)
   - Add missing code-style rules
@@ -148,8 +147,6 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [Language rules](../fundamentals/code-analysis/style-rules/language-rules.md)
   - Add missing code-style rules
   - Add IDE0160 and IDE0161.
-- [Null-checking preferences](../fundamentals/code-analysis/style-rules/null-checking-preferences.md) - Add missing code-style rules
-- [Pattern matching preferences](../fundamentals/code-analysis/style-rules/pattern-matching-preferences.md) - Add missing code-style rules
 - [.NET runtime contention events](../fundamentals/diagnostics/runtime-contention-events.md) - Update the doc with the new version of ContentionStart
 - [Error codes returned by package validation](../fundamentals/package-validation/diagnostic-ids.md)
   - add docs for diagnostics CP0012 and CP0013

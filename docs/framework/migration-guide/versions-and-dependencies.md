@@ -1,10 +1,9 @@
 ---
 title: .NET Framework & Windows OS versions
 description: Learn about key features in each version of .NET Framework, including underlying CLR versions and versions installed by the Windows operating system.
-ms.date: 05/11/2021
+ms.date: 07/31/2023
 helpviewer_keywords:
   - "versions, .NET Framework"
-ms.assetid: f75a72de-e2f2-4a7a-9574-3f278684ea90
 ---
 # .NET Framework versions and dependencies
 
@@ -64,7 +63,8 @@ Jump to:
 
 To determine the installed .NET version, use the following `Release` DWORD:
 
-- 533325 (all OS versions)
+- 533320 (Windows 11 September 2022 Release)
+- 533325 (all other OS versions)
 
 For more information, see [instructions](how-to-determine-which-versions-are-installed.md).
 

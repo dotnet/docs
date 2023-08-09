@@ -1,7 +1,6 @@
 - name: ML.NET
   href: index.yml
 - name: Overview
-  expanded: true
   items:
   - name: Model Builder & CLI
     items:
@@ -15,6 +14,7 @@
       href: how-does-mldotnet-work.md
     - name: What is Automated Machine Learning (AutoML)?
       href: automated-machine-learning-mlnet.md
+  expanded: true
 - name: Tutorials
   items:
   - name: Model Builder & CLI
@@ -48,7 +48,7 @@
     - name: Recommend movies (matrix factorization)
       href: tutorials/movie-recommendation.md
     - name: Image Classification (transfer learning)
-      href: tutorials/image-classification-api-transfer-learning.md      
+      href: tutorials/image-classification-api-transfer-learning.md
     - name: Classify images (model composition)
       href: tutorials/image-classification.md
     - name: Forecast bike rental demand (time series)
@@ -108,7 +108,7 @@
       - name: Train and evaluate a model
         href: how-to-guides/train-machine-learning-model-ml-net.md
       - name: Use the automated ML API
-        href: how-to-guides/how-to-use-the-automl-api.md        
+        href: how-to-guides/how-to-use-the-automl-api.md
       - name: Train a model using cross-validation
         href: how-to-guides/train-machine-learning-model-cross-validation-ml-net.md
       - name: Inspect intermediate pipeline data values
@@ -129,8 +129,6 @@
         href: how-to-guides/serve-model-web-api-ml-net.md
       - name: Consume Azure Machine Learning ONNX model
         href: /azure/machine-learning/how-to-use-automl-onnx-model-dotnet?toc=/dotnet/machine-learning/how-to-guides/toc.json&bc=/dotnet/machine-learning/how-to-guides/toc.json
-      - name: Make batch predictions using .NET for Apache Spark
-        href: ../spark/tutorials/ml-sentiment-analysis.md
 - name: Reference
   items:
   - name: ML.NET API Reference

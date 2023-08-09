@@ -14,8 +14,8 @@ public class WordCountCleanup
 
         FullName = filename;
 
-        var txt = string.Empty;
-        StreamReader streamReader = null;
+        string txt = string.Empty;
+        StreamReader? streamReader = null;
         try
         {
             streamReader = new StreamReader(filename);

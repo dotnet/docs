@@ -73,6 +73,28 @@ public class Book : Publication
 
 In the preceding code, note that both `Publication` and `Book` have members with `[Id(0)]` even though `Book` derives from `Publication`. This is the recommended practice in Orleans because members identifiers are scoped to the inheritance level, not the type as a whole. Members can be added and removed from `Publication` and `Book` independently, but a new base class cannot be inserted into the hierarchy once the application has been deployed without special consideration.
 
+Orleans also supports serializing types with `internal`, `private`, and `readonly` members, such as in this example type:
+
+```csharp
+[GenerateSerializer]
+public struct MyCustomStruct
+{
+    public MyCustom(int intProperty, int intField)
+    {
+        IntProperty = intProperty;
+        _intField = intField;
+    }
+
+    [Id(0)]
+    public int IntProperty { get; }
+
+    [Id(1)] private readonly int _intField;
+    public int GetIntField() => _intField;
+
+    public override string ToString() => $"{nameof(_intField)}: {_intField}, {nameof(IntProperty)}: {IntProperty}";
+}
+```
+
 By default, Orleans will serialize your type by encoding its full name. You can override this by adding an <xref:Orleans.AliasAttribute?displayProperty=nameWithType>. Doing so will result in your type being serialized using a name that is resilient to renaming the underlying class or moving it between assemblies. Type aliases are globally scoped, and you cannot have two aliases with the same value in an application. For generic types, the alias value must include the number of generic parameters preceded by a backtick, for example, `MyGenericType<T, U>` could have the alias <code>[Alias("mytype\`2")]</code>.
 
 ## Serializing `record` types

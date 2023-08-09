@@ -31,7 +31,7 @@ For demonstration purposes, the sample code in this article uses the Key Vault S
 ```dotnetcli
 dotnet add package Azure.Security.KeyVault.Secrets
 dotnet add package Azure.Storage.Blobs
-dotnet add package Azure.Storage.ServiceBus
+dotnet add package Azure.Messaging.ServiceBus
 ```
 
 ## Register clients and subclients

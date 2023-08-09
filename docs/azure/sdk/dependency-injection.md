@@ -64,7 +64,7 @@ In the preceding code:
 
 ## Use the registered clients
 
-With the clients registered, as described in the [Register clients](#register-clients) section, you can now use them. In the following example, [constructor injection](/dotnet/core/extensions/dependency-injection#constructor-injection-behavior) is used to obtain the Blob Storage client in an ASP.NET Core API controller:
+With the clients registered, as described in the [Register clients](#register-clients-and-subclients) section, you can now use them. In the following example, [constructor injection](/dotnet/core/extensions/dependency-injection#constructor-injection-behavior) is used to obtain the Blob Storage client in an ASP.NET Core API controller:
 
 ```csharp
 [ApiController]
@@ -97,7 +97,7 @@ public class MyApiController : ControllerBase
 
 ## Store configuration separately from code
 
-In the [Register clients](#register-clients) section, you explicitly passed the `Uri`-typed variables to the client constructors. This approach could cause problems when you run code against different environments during development and production. The .NET team suggests [storing such configurations in environment-dependent JSON files](../../core/extensions/configuration-providers.md#json-configuration-provider). For example, you can have an *appsettings.Development.json* file containing development environment settings. Another *appsettings.Production.json* file would contain production environment settings, and so on. The file format is:
+In the [Register clients](#register-clients-and-subclients) section, you explicitly passed the `Uri`-typed variables to the client constructors. This approach could cause problems when you run code against different environments during development and production. The .NET team suggests [storing such configurations in environment-dependent JSON files](../../core/extensions/configuration-providers.md#json-configuration-provider). For example, you can have an *appsettings.Development.json* file containing development environment settings. Another *appsettings.Production.json* file would contain production environment settings, and so on. The file format is:
 
 ```json
 {

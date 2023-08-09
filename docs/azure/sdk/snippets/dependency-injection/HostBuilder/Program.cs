@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿#region snippet_HostBuilder
 using Azure.Identity;
 using Azure.Messaging.ServiceBus;
@@ -46,25 +45,4 @@ async Task<List<string>> GetQueueNames()
 
     return queueNames;
 }
-=======
-﻿using HostBuilder;
-#region snippet_HostBuilder
-using Azure.Identity;
-using Microsoft.Extensions.Azure;
-
-IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
-    {
-        services.AddHostedService<Worker>();
-        services.AddAzureClients(clientBuilder =>
-        {
-            clientBuilder.AddSecretClient(new Uri("<key_vault_url>"));
-            clientBuilder.AddBlobServiceClient(new Uri("<storage_url>"));
-            clientBuilder.UseCredential(new DefaultAzureCredential());
-        });
-    })
-    .Build();
-
-await host.RunAsync();
->>>>>>> main
 #endregion snippet_HostBuilder

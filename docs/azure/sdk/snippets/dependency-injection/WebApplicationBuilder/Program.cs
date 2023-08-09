@@ -1,15 +1,11 @@
 ﻿#region snippet_WebApplicationBuilder
 using Azure.Identity;
-<<<<<<< HEAD
 using Azure.Messaging.ServiceBus;
 using Azure.Messaging.ServiceBus.Administration;
-=======
->>>>>>> main
 using Microsoft.Extensions.Azure;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
-<<<<<<< HEAD
 var queueNames = await GetQueueNames();
 
 builder.Services.AddAzureClients(clientBuilder =>
@@ -48,17 +44,6 @@ async Task<List<string>> GetQueueNames()
     return queueNames;
 }
 #endregion
-=======
-builder.Services.AddAzureClients(clientBuilder =>
-{
-    clientBuilder.AddSecretClient(new Uri("<key_vault_url>"));
-    clientBuilder.AddBlobServiceClient(new Uri("<storage_url>"));
-    clientBuilder.UseCredential(new DefaultAzureCredential());
-});
-
-WebApplication app = builder.Build();
-#endregion snippet_WebApplicationBuilder
->>>>>>> main
 
 if (app.Environment.IsDevelopment())
 {

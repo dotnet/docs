@@ -201,8 +201,8 @@ public class MyLibrary22
     [DynamicDependency("MyMethod(System,Boolean,System.String)")]
     [DynamicDependency("MethodOnDifferentType()", typeof(ContainingType))]
     [DynamicDependency("MemberName")]
-    [DynamicDependency("MemberOnUnreferencedAssembly", "ContainingType",
-                                                      "UnreferencedAssembly")]
+    [DynamicDependency("MemberOnUnreferencedAssembly", "ContainingType"
+                                                     , "UnreferencedAssembly")]
     [DynamicDependency("MemberName", "Namespace.ContainingType.NestedType", "Assembly")]
     // generics
     [DynamicDependency("GenericMethodName``1")]

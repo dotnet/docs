@@ -26,7 +26,7 @@ To register and configure service clients from an [`Azure.`-prefixed package](pa
     dotnet add package Azure.Identity
     ```
 
-For demonstration purposes, the sample code in this article uses the Key Vault Secrets and Blob Storage libraries. Install the following packages to follow along:
+For demonstration purposes, the sample code in this article uses the Key Vault Secrets, Blob Storage and Service Bus libraries. Install the following packages to follow along:
 
 ```dotnetcli
 dotnet add package Azure.Security.KeyVault.Secrets
@@ -58,7 +58,7 @@ In the preceding code:
 
 * Key Vault Secrets, Blob Storage and Service Bus clients are registered using the <xref:Microsoft.Extensions.Azure.SecretClientBuilderExtensions.AddSecretClient%2A>, <xref:Microsoft.Extensions.Azure.BlobClientBuilderExtensions.AddBlobServiceClient%2A> and <xref:Microsoft.Extensions.Azure.ServiceBusClientBuilderExtensions.AddServiceBusClientWithNamespace%2A>, respectively. The `Uri` and `string`-typed arguments are passed. To avoid specifying these URLs explicitly, see the [Store configuration separately from code](#store-configuration-separately-from-code) section.
 * <xref:Azure.Identity.DefaultAzureCredential> is used to satisfy the `TokenCredential` argument requirement for each registered client. When one of the clients is created, `DefaultAzureCredential` is used to authenticate.
-* Service Bus subclients are registered for each queue on the service using the subclient and corresponding options types.
+* Service Bus subclients are registered for each queue on the service using the subclient and corresponding options types. The queue names for the subclients are retrieved using a separate method outside of the service registration because the `GetQueuesAsync` method must be run asynchronously.
 
 ## Use the registered clients
 
@@ -199,7 +199,7 @@ IHost host = Host.CreateDefaultBuilder(args)
 
 In the preceding JSON sample:
 
-* The top-level key names, `AzureDefaults`, `KeyVault`, and `Storage`, are arbitrary. All other key names hold significance, and JSON serialization is performed in a case-insensitive manner.
+* The top-level key names, `AzureDefaults`, `KeyVault`, `Storage` and `ServiceBus`, are arbitrary. All other key names hold significance, and JSON serialization is performed in a case-insensitive manner.
 * The `AzureDefaults.Retry` object literal:
   * Represents the [retry policy configuration settings](#configure-a-new-retry-policy).
   * Corresponds to the <xref:Azure.Core.ClientOptions.Retry> property. Within that object literal, you find the `MaxRetries` key, which corresponds to the <xref:Azure.Core.RetryOptions.MaxRetries> property.

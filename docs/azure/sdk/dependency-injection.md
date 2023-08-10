@@ -36,7 +36,7 @@ dotnet add package Azure.Messaging.ServiceBus
 
 ## Register clients and subclients
 
-A service client is the entry point to the API for an Azure service – from it, library users can invoke all operations the service provides and can easily implement the most common scenarios. Where it will simplify an API's design, groups of service calls can be organized around smaller subclient types. For example, `ServiceBusClient` can register additional `ServiceBusSender` subclients to simplify working with queues.
+A service client is the entry point to the API for an Azure service – from it, library users can invoke all operations the service provides and can easily implement the most common scenarios. Where it will simplify an API's design, groups of service calls can be organized around smaller subclient types. For example, `ServiceBusClient` can register additional `ServiceBusSender` subclients for publishing messages or `ServiceBusReceiver` subclients for consuming messages.
 
 In the *Program.cs* file, invoke the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method to register a client for each service. The following code samples provide guidance on application builders from the `Microsoft.AspNetCore.Builder` and `Microsoft.Extensions.Hosting` namespaces.
 

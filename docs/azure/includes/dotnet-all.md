@@ -383,8 +383,8 @@
 | Microsoft.Azure.Devices.Provisioning.Transport.Http | NuGet [1.15.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Http/1.15.1)<br>NuGet [1.16.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Http/1.16.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.Provisioning.Transport.Mqtt | NuGet [1.17.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.17.1)<br>NuGet [1.18.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.18.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.Shared | NuGet [1.30.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.30.1)<br>NuGet [1.31.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.31.0-preview-001) |  |  |
-| Microsoft.Azure.Functions.Worker | NuGet [1.18.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.18.0) |  |  |
-| Microsoft.Azure.Functions.Worker.Sdk | NuGet [1.13.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.13.1) |  |  |
+| Microsoft.Azure.Functions.Worker | NuGet [1.19.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.19.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Sdk | NuGet [1.14.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.14.0) |  |  |
 | Microsoft.Azure.uamqp | NuGet [1.2.11](https://www.nuget.org/packages/Microsoft.Azure.uamqp/1.2.11) |  |  |
 | Microsoft.Azure.umqtt | NuGet [1.1.11](https://www.nuget.org/packages/Microsoft.Azure.umqtt/1.1.11) |  |  |
 | Mobile Apps | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Server/2.0.3) |  |  |
@@ -446,7 +446,7 @@
 | Microsoft.Azure.Functions.Analyzers | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Analyzers/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Authentication.WebAssembly | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.0)<br>NuGet [1.0.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.1-preview) |  |  |
 | Microsoft.Azure.Functions.Worker.ApplicationInsights | NuGet [1.0.0-preview5](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ApplicationInsights/1.0.0-preview5) |  |  |
-| Microsoft.Azure.Functions.Worker.Core | NuGet [1.14.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/1.14.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Core | NuGet [1.15.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/1.15.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Abstractions | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.3.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [4.4.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.4.1) |  |  |
@@ -467,11 +467,11 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Tables | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Tables/1.0.0)<br>NuGet [1.2.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Tables/1.2.0-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.2.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.2.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Warmup | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Warmup/4.0.2) |  |  |
-| Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.13.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.13.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.14.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.14.0) |  |  |
 | Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.2727](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.2727) |  |  |
 | Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.2727](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.2727) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.2.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.2.1) |  |  |
-| Microsoft.Azure.Functions.Worker.Sdk.Generators | NuGet [1.1.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Generators/1.1.0-preview4) |  |  |
+| Microsoft.Azure.Functions.Worker.Sdk.Generators | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Generators/1.1.0) |  |  |
 | Microsoft.Azure.WebJobs.CosmosDb.Mongo | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.Mongo/1.0.4) |  |  |
 | Microsoft.Azure.WebJobs.Extensions.Kusto | NuGet [1.0.7-Preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kusto/1.0.7-Preview) |  |  |
 | Service Bus - Message ID plugin | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.MessageIdPlugin/2.0.0) |  |  |

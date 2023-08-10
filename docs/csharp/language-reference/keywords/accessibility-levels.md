@@ -38,7 +38,11 @@ Use the access modifiers, `public`, `protected`, `internal`, or `private`, to sp
 |`struct`|`private`|`public`<br /><br /> `internal`<br /><br /> `private`|  
 
 \* An `interface` member with `private` accessibility must have a default implementation.
-
+  
+> [!NOTE]  
+> If a class or struct is modified with the [`record`](../builtin-types/record.md) keyword modifier, then the same access modifiers are allowed.  
+> However, with the [`record`](../builtin-types/record.md) modifier the default member accessibility is `internal` both for class and the struct.  
+  
 The accessibility of a nested type depends on its [accessibility domain](./accessibility-domain.md), which is determined by both the declared accessibility of the member and the accessibility domain of the immediately containing type. However, the accessibility domain of a nested type cannot exceed that of the containing type.  
   
 ## C# Language Specification  

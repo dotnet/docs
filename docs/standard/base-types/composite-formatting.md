@@ -102,6 +102,8 @@ For more information, see the <xref:System.IFormattable> and <xref:System.ICusto
 
 Opening and closing braces are interpreted as starting and ending a format item. To display a literal opening brace or closing brace, you must use an escape sequence. Specify two opening braces (`{{`) in the fixed text to display one opening brace (`{`), or two closing braces (`}}`) to display one closing brace (`}`).
 
+Escaped braces with a format item are parsed differently between .NET and .NET Framework.
+
 #### .NET
 
 Braces can be escaped around a format item. For example, consider the format item `{{{0:D}}}`, which is intended to display an opening brace, a numeric value formatted as a decimal number, and a closing brace. The format item is interpreted in the following manner:

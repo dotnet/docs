@@ -1,5 +1,5 @@
 ---
-title: AOT Diagnostics
+title: AOT diagnostics
 description: Learn about diagnostics in native AOT applications
 author: lakshanf
 ms.author: lakshanf
@@ -7,15 +7,15 @@ ms.date: 08/07/2023
 ---
 # Diagnostics in native AOT applications
 
-The long term goal for native AOT application diagnostics is to provide the rich diagnostic experience that developers expect out of a .NET application. .NET diagnostic experience was built over multiple releases and getting customer feedback on diagnostic was a critical part of that journey. native AOT wants to follow a similar path where the right diagnostic experience is built from prioritized customer feedback in multiple releases.
+The long-term goal for native AOT application diagnostics is to provide the rich diagnostic experience that developers expect out of a .NET application. The .NET diagnostic experience was built over multiple releases, and a critical part of that journey was customer feedback. Native AOT diagnostics will follow a similar path where the right diagnostic experience is built from prioritized customer feedback in multiple releases.
 
 ## Native AOT application features
 
-Native AOT applications have the following characteristics that are important to keep in mind in diagnostic scenarios
+Native AOT applications have the following characteristics that are important to keep in mind in diagnostic scenarios.
 
 ### Trimming as a first-class feature
 
-Unused code in a native AOT application is stripped out of the final binary. Any unbounded reflection used by the application including its dependent libraries will be trimmed. native AOT compiler will generate warnings in such cases, and it is critical that these warnings are fixed. For example, suppressing any such warnings without careful analysis can lead to hard to debug production failures.
+Unused code in a NativeAOT application is stripped out of the final binary. Any unbounded reflection used by the application, including its dependent libraries, is trimmed. The NativeAOT compiler will generate warnings in such cases, and it's critical that these warnings are fixed. For example, if you suppress any warnings without careful analysis, it can lead to hard to debug production failures.
 
 ### Importance of the symbol file
 
@@ -23,7 +23,7 @@ In native AOT, symbol-file-dependent diagnostics (such as debugging, PerfView ca
 
 ### Application type
 
-Native AOT application is neither a typical managed application (for example, no JIT) nor a typical native application (for example, has full GC support). The intent is to meet the reasonable diagnostics expectation of a product that is coming out of the .NET family and also the experience should feel familiar to someone who does production diagnostics on a C++ application.
+Native AOT apps aren't typical managed applications (for example, no JIT). They also aren't typical native applications (for example, they have full GC support). The intent is to meet the reasonable diagnostics expectation of a product in the .NET family, but the experience should also feel familiar to those using production diagnostics on C++ apps.
 
 ## .NET 8 native AOT diagnostic support
 
@@ -39,26 +39,26 @@ The following table summarizes diagnostic features supported for native AOT depl
 
 ### Build (Inner dev loop) diagnostics
 
-Publishing your app as native AOT produces an app that has been ahead-of-time (AOT) compiled to native code. However, all .NET diagnostic tools are available for developers during the application building stage. We recommend developing, debugging and testing the applications as usual and publish the working app with native AOT as one of the last steps.
+Publishing your app as native AOT produces an app that has been ahead-of-time (AOT) compiled to native code. As mentioned above, this means that not all diagnostic tools will work seamlessly with published native AOT applications in .NET 8. However, all .NET diagnostic tools are available for developers during the application building stage. We recommend developing, debugging, and testing the applications as usual and publish the working app with native AOT as one of the last steps.
 
 ### Observability
 
-Native AOT runtime supports [EventPipe](../../diagnostics/eventpipe.md) which will allow native AOT applications to easily trace their applications. EventPipe support will also allow most .NET diagnostic tools like [dotnet-trace](../../diagnostics/dotnet-trace.md), [dotnet-counter](../../diagnostics/dotnet-counters.md), and [dotnet-monitor](../../diagnostics/dotnet-monitor.md) to work seamlessly with native AOT applications.
+The native AOT runtime supports [EventPipe](../../diagnostics/eventpipe.md), which allows native AOT apps to easily trace their applications. EventPipe support also allows most .NET diagnostic tools, like [dotnet-trace](../../diagnostics/dotnet-trace.md), [dotnet-counter](../../diagnostics/dotnet-counters.md), and [dotnet-monitor](../../diagnostics/dotnet-monitor.md), to work seamlessly with native AOT applications.
 
-native AOT also provides partial support for [OpenTelemetry](../../diagnostics/observability-with-otel.md) and some [well-known event providers](../../diagnostics/well-known-event-providers.md). Not all [runtime events](../../../fundamentals/diagnostics/runtime-events.md) are supported in native AOT.
+[OpenTelemetry](../../diagnostics/observability-with-otel.md) is expected to support native AOT in the key three pillars of observability: logging, tracing, and metrics in .NET 8. Native AOT provides partial support for and some [well-known event providers](../../diagnostics/well-known-event-providers.md). Not all [runtime events](../../../fundamentals/diagnostics/runtime-events.md) are supported in native AOT.
 
-### CPU Profiling
+### CPU profiling
 
-"Microsoft-DotNETCore-SampleProfiler" provider is not currently supported in native AOT. Platform specific tools like [PerfView](https://github.com/microsoft/perfview), and [Perf](https://perf.wiki.kernel.org/index.php/Main_Page) can be used to collect CPU samples of a native AOT application.
+The "Microsoft-DotNETCore-SampleProfiler" provider is not currently supported in native AOT. However, platform-specific tools like [PerfView](https://github.com/microsoft/perfview), and [Perf](https://perf.wiki.kernel.org/index.php/Main_Page) can be used to collect CPU samples of a native AOT application.
 
 ### Production debugging
 
-A native AOT application in production environment is a native application with full GC support and can be debugged by native platform debuggers  (e.g. WinDbg or Visual Studio on Windows, and gdb or lldb on Unix-like systems). It is critical that the corresponding symbol file for the application is available to do production debugging.
+Typical production debugging scenarios are done through logging and tracing, and will be [supported](#observability) in native AOT. Low-level debugging, using platform debuggers like WinDbg or Visual Studio on Windows, and gdb or lldb on Unix-like systems, can be used in native AOT. For this case, it is critical that the corresponding symbol file for the application is available to do production debugging.
 
-The native AOT compiler generates information about line numbers, types, locals and parameters. The native debugger will allow inspecting stack trace and variables, stepping into/over source lines, or setting line breakpoints. Additional feature support like debugging around Exceptions, fixing some name mangling, step into virtual calls, stepping into runtime library code, property and expression evaluation are planned in future releases.
+The native AOT compiler generates information about line numbers, types, locals, and parameters. The native debugger will allow inspecting stack trace and variables, stepping into/over source lines, or setting line breakpoints. Additional feature support like debugging around Exceptions, fixing some name mangling, step into virtual calls, stepping into runtime library code, property and expression evaluation are planned in future releases.
 
 Collecting a [dump](../../diagnostics/dumps.md) file for a native AOT application would involve some manual steps in .NET8 release.
 
 ### Heap analysis
 
-Heap analysis tool, [dotnet-gcdump](../../diagnostics/dotnet-gcdump.md), is not currently supported in native AOT.
+Managed heap analysis is not currently supported in native AOT. Heap analysis tools like, [dotnet-gcdump](../../diagnostics/dotnet-gcdump.md), [PerfView](https://github.com/microsoft/perfview) and Visual Studio heap analysis tools will not work in native AOT in .NET 8.

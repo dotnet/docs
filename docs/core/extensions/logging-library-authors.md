@@ -12,11 +12,11 @@ As a library author, exposing logging is a great way to provide consumers with i
 
 ## When to use the `ILoggerFactory` interface
 
-When writing a library that emits logs, you need an <xref:Microsoft.Extensions.Logging.ILogger> object to record the logs. To get that object your API can either accept an <xref:Microsoft.Extensions.Logging.ILogger%601> parameter, or it can accept an <xref:Microsoft.Extensions.Logging.ILoggerFactory> after which you call <xref:Microsoft.Extensions.Logging.ILoggerFactory.CreateLogger%2A?displayProperty=nameWithType>. Which approach should be preferred?
+When writing a library that emits logs, you need an <xref:Microsoft.Extensions.Logging.ILogger> object to record the logs. To get that object, your API can either accept an <xref:Microsoft.Extensions.Logging.ILogger%601> parameter, or it can accept an <xref:Microsoft.Extensions.Logging.ILoggerFactory> after which you call <xref:Microsoft.Extensions.Logging.ILoggerFactory.CreateLogger%2A?displayProperty=nameWithType>. Which approach should be preferred?
 
-- When you need a logging object that can be passed along to multiple classes so that all of them can emit logs, use `ILoggerFactory`. It's recommended that each class creates logs with a separate category, named the same as the class. To do this, you need the factory to create unique `ILogger<TCategoryName>` objects for each class that is emitting logs. Common examples include public entry point APIs for a library or public constructors of types that internally may create helper classes.
+- When you need a logging object that can be passed along to multiple classes so that all of them can emit logs, use `ILoggerFactory`. It's recommended that each class creates logs with a separate category, named the same as the class. To do this, you need the factory to create unique `ILogger<TCategoryName>` objects for each class that emits logs. Common examples include public entry point APIs for a library or public constructors of types that might create helper classes internally.
 
-- When you need a logging object that's only used inside one class and never shared, use `ILogger<TCategoryName>` where `TCategoryName` is the type that is producing the logs. A common example of this is a constructor for a class created by dependency injection.
+- When you need a logging object that's only used inside one class and never shared, use `ILogger<TCategoryName>`, where `TCategoryName` is the type that produces the logs. A common example of this is a constructor for a class created by dependency injection.
 
 If you're designing a public API that must remain stable over time, keep in mind that you might desire to refactor your internal implementation in the future. Even if a class doesn't create any internal helper types initially, that might change as the code evolves. Using `ILoggerFactory` accommodates creating new `ILogger<TCategoryName>` objects for any new classes without changing the public API.
 
@@ -32,10 +32,10 @@ The preceding code:
 
 - Defines a `partial class` named `LogMessages`, which is `static` so that it can be used to define extension methods on the `ILogger` type.
 - Decorates a `LogProductSaleDetails` extension method with the `LoggerMessage` attribute and `Message` template.
-- The `LogProductSaleDetails` extends the `ILogger` and accepts a `quantity` and `description`.
+- Declares `LogProductSaleDetails`, which extends the `ILogger` and accepts a `quantity` and `description`.
 
 > [!TIP]
-> The source generated code can be stepped into during debugging, as it's part of the same assembly as the code that calls it.
+> You can step into the source-generated code during debugging, because it's part of the same assembly as the code that calls it.
 
 ### Use `IsEnabled` to avoid expensive parameter evaluation
 

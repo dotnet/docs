@@ -33,7 +33,7 @@ If you called the overloads that had a Boolean parameter, remove the Boolean arg
 
 ## Affected APIs
 
-- <xref:System.Collections.Frozen.FrozenDictionary.ToFrozenDictionary%60%602(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{%60%600,%60%601}},System.Boolean)?displayProperty=fullName>
-- <xref:System.Collections.Frozen.FrozenDictionary.ToFrozenDictionary%60%602(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{%60%600,%60%601}},System.Collections.Generic.IEqualityComparer{%60%600},System.Boolean)?displayProperty=fullName>
-- <xref:System.Collections.Frozen.FrozenSet.ToFrozenSet%60%601(System.Collections.Generic.IEnumerable{%60%600},System.Boolean)?displayProperty=fullName>
-- <xref:System.Collections.Frozen.FrozenSet.ToFrozenSet%60%601(System.Collections.Generic.IEnumerable{%60%600},System.Collections.Generic.IEqualityComparer{%60%600},System.Boolean)?displayProperty=fullName>
+- `System.Collections.Frozen.FrozenDictionary.ToFrozenDictionary<TKey,TValue>(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>,System.Boolean)`
+- `System.Collections.Frozen.FrozenDictionary.ToFrozenDictionary<TKey,TValue>(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>,System.Collections.Generic.IEqualityComparer<TKey,TValue>,System.Boolean)`
+- `System.Collections.Frozen.FrozenSet.ToFrozenSet<TKey,TValue>(System.Collections.Generic.IEnumerable<TKey,TValue>,System.Boolean)`
+- `System.Collections.Frozen.FrozenSet.ToFrozenSet<TKey,TValue>(System.Collections.Generic.IEnumerable<TKey,TValue>,System.Collections.Generic.IEqualityComparer<TKey,TValue>,System.Boolean)`

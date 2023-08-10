@@ -2,9 +2,9 @@
 title: "Structure types - C# reference"
 description: Learn about the struct type in C#
 ms.date: 04/05/2023
-f1_keywords: 
+f1_keywords:
   - "struct_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "struct keyword [C#]"
   - "struct type [C#]"
   - "structure type [C#]"
@@ -102,7 +102,7 @@ In most cases, an inline array can be accessed like an array, both to read and w
 
 There are minimal restrictions on the type of the single field. It can't be a pointer type, but it can be any reference type, or any value type. You can use inline arrays with almost any C# data structure.
 
-Inline arrays are an advanced language feature. They're intended for high-performance scenarios where an inline, contiguous block of elements is faster than other alternative data structures. You can learn more about inline arrays from the [feature speclet](~/_csharplang/proposals/inline-arrays.md)
+Inline arrays are an advanced language feature. They're intended for high-performance scenarios where an inline, contiguous block of elements is faster than other alternative data structures. You can learn more about inline arrays from the [feature speclet](~/_csharplang/proposals/csharp-12.0/inline-arrays.md)
 
 ## Struct initialization and default values
 

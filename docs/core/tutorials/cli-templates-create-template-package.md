@@ -83,7 +83,7 @@ Next, navigate to _AdatumCorporation.Utility.Templates_ folder, open the _Adatum
   </PropertyGroup>
 ```
 
-To get more information about NuGet package metadata available in the _AdatumCorporation.Utility.Templates.csproj_ file, navigate to [Pack a template into a NuGet package (nupkg file)](/dotnet/core/tools/custom-templates#pack-a-template-into-a-nuget-package-nupkg-file).
+To get more information about NuGet package metadata available in the _AdatumCorporation.Utility.Templates.csproj_ file, navigate to [Pack a template into a NuGet package (nupkg file)](../tools/custom-templates.md#pack-a-template-into-a-nuget-package-nupkg-file).
 
 By default, the created project file includes [template authoring MSBuild tasks](https://aka.ms/templating-authoring-tools).
 

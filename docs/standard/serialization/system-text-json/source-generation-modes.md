@@ -20,11 +20,11 @@ You can use version 6.0+ of `System.Text.Json` in projects that target earlier f
 
 This article explains the options and provides guidance on how to choose the best approach for your scenario.
 
-:::zone pivot="dotnet-8-0"
-
 ## Overview
 
 Choose reflection or source generation modes based on the following benefits that each one offers:
+
+:::zone pivot="dotnet-8-0"
 
 | Benefit                                              | Reflection | Source generation:<br/>Metadata collection | Source generation:<br/>Serialization optimization |
 |------------------------------------------------------|------------|---------------------|----------------------------|
@@ -43,10 +43,6 @@ Choose reflection or source generation modes based on the following benefits tha
 
 :::zone pivot="dotnet-7-0,dotnet-6-0"
 
-## Overview
-
-Choose reflection or source generation modes based on the following benefits that each one offers:
-
 | Benefit                                              | Reflection | Source generation:<br/>Metadata collection | Source generation:<br/>Serialization optimization |
 |------------------------------------------------------|------------|---------------------|----------------------------|
 | Simpler to code and debug.                           | ✔️        | ❌                  | ❌                        |
@@ -61,8 +57,6 @@ Choose reflection or source generation modes based on the following benefits tha
 | Increases serialization throughput.                  | ❌        | ❌                  | ✔️                        |
 
 :::zone-end
-
-:::zone pivot="dotnet-8-0,dotnet-7-0,dotnet-6-0"
 
 The following sections explain these options and their relative benefits.
 
@@ -87,14 +81,17 @@ The performance improvements provided by source generation can be substantial. F
 
 ### Known issues
 
-Only `public` properties and fields are supported by default<sup>\*</sup> in either serialization mode. However, reflection mode supports the use of `private` *accessors* while source-generation mode does not. For example, you can apply the [JsonInclude attribute](xref:System.Text.Json.Serialization.JsonIncludeAttribute) to a property that has a `private` setter or getter and it will be serialized in reflection mode. Source-generation mode supports only `public` or `internal` accessors of `public` properties. If you set `[JsonInclude]` on non-public accessors and choose source-generation mode, a `NotSupportedException` will be thrown at run time.
+:::zone pivot="dotnet-7-0,dotnet-6-0"
 
-In both reflection and source generation modes:
+Only `public` properties and fields are supported by default<sup>\*</sup> in either serialization mode. However, reflection mode supports the use of `private` *accessors*, while source-generation mode doesn't. For example, you can apply the [JsonInclude attribute](xref:System.Text.Json.Serialization.JsonIncludeAttribute) to a property that has a `private` setter or getter and it will be serialized in reflection mode. Source-generation mode supports only `public` or `internal` accessors of `public` properties. If you set `[JsonInclude]` on non-public accessors and choose source-generation mode, a `NotSupportedException` will be thrown at run time.
 
-* Only `public` properties and `public` fields are supported<sup>\*</sup>.
-* Only `public` constructors can be used for deserialization.
+:::zone-end
 
-<sup>\*</sup>Starting in .NET 7, you can use custom JSON contracts to include `private` properties and fields in serialization.
+:::zone pivot="dotnet-8-0"
+
+Only `public` properties and fields are supported by default<sup>\*</sup> in either serialization mode. However, reflection mode supports the use of `private` members and `private` *accessors*, while source-generation mode doesn't. For example, if you apply the [JsonInclude attribute](xref:System.Text.Json.Serialization.JsonIncludeAttribute) to a `private` property or a property that has a `private` setter or getter, it will be serialized in reflection mode. Source-generation mode supports only `public` or `internal` members and `public` or `internal` accessors of `public` properties. If you set `[JsonInclude]` on `private` members or accessors and choose source-generation mode, a `NotSupportedException` will be thrown at run time.
+
+:::zone-end
 
 For information about other known issues with source generation, see the [GitHub issues that are labeled "source-generator"](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json+label%3Asource-generator) in the *dotnet/runtime* repository.
 
@@ -141,7 +138,6 @@ If a non-supported option or attribute is specified for a type, the serializer f
 ## How to use source generation modes
 
 Most of the System.Text.Json documentation shows how to write code that uses reflection mode. For information about how to use source generation modes, see [How to use source generation in System.Text.Json](source-generation.md).
-:::zone-end
 
 ## See also
 

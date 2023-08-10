@@ -2,7 +2,7 @@
 title: What's new in .NET 8
 description: Learn about the new .NET features introduced in .NET 8.
 titleSuffix: ""
-ms.date: 07/11/2023
+ms.date: 08/08/2023
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
@@ -11,21 +11,85 @@ author: gewarren
 
 .NET 8 is the successor to [.NET 7](dotnet-7.md). It will be [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 8 here](https://dotnet.microsoft.com/download/dotnet).
 
-This article has been updated for .NET 8 Preview 6.
+This article has been updated for .NET 8 Preview 7.
 
 > [!IMPORTANT]
 >
 > - This information relates to a pre-release product that may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 > - Much of the other .NET documentation on [https://learn.microsoft.com/dotnet](/dotnet) has not yet been updated for .NET 8.
 
-## Serialization
+## Core .NET libraries
+
+This section contains the following subtopics:
+
+- [Serialization](#serialization)
+- [Time abstraction](#time-abstraction)
+- [UTF8 improvements](#utf8-improvements)
+- [Methods for working with randomness](#methods-for-working-with-randomness)
+- [Performance-focused types](#performance-focused-types)
+- [System.Numerics and System.Runtime.Intrinsics](#systemnumerics-and-systemruntimeintrinsics)
+- [Data validation](#data-validation)
+- [Metrics](#metrics)
+- [Cryptography](#cryptography)
+- [Networking](#networking)
+- [Stream-based ZipFile methods](#stream-based-zipfile-methods)
+
+### Serialization
 
 Many improvements have been made to <xref:System.Text.Json?displayProperty=fullName> serialization and deserialization functionality including:
+
+- The serializer has built-in support for the following additional types.
+
+  - <xref:System.Half>, <xref:System.Int128>, and <xref:System.UInt128> numeric types.
+
+    ```csharp
+    Console.WriteLine(JsonSerializer.Serialize(new object[] { Half.MaxValue, Int128.MaxValue, UInt128.MaxValue }));
+    // [65500,170141183460469231731687303715884105727,340282366920938463463374607431768211455]
+    ```
+
+  - <xref:System.Memory%601> and <xref:System.ReadOnlyMemory%601> values. `byte` values are serialized to Base64 strings, and other types to JSON arrays.
+
+    ```csharp
+    JsonSerializer.Serialize<ReadOnlyMemory<byte>>(new byte[] { 1, 2, 3 }); // "AQID"
+    JsonSerializer.Serialize<Memory<int>>(new int[] { 1, 2, 3 }); // [1,2,3]
+    ```
+
+- You can opt non-public members into the serialization contract for a given type using <xref:System.Text.Json.Serialization.JsonIncludeAttribute> and <xref:System.Text.Json.Serialization.JsonConstructorAttribute> attribute annotations.
+
+  ```csharp
+  string json = JsonSerializer.Serialize(new MyPoco(42)); // {"X":42}
+  JsonSerializer.Deserialize<MyPoco>(json);
+
+  public class MyPoco
+  {
+      [JsonConstructor]
+      internal MyPoco(int x) => X = x;
+
+      [JsonInclude]
+      internal int X { get; }
+  }
+  ```
+
+  For more information, see [Use immutable types and non-public members and accessors](../../standard/serialization/system-text-json/immutability.md).
 
 - You can [customize handling of members that aren't in the JSON payload.](../../standard/serialization/system-text-json/missing-members.md)
 - <xref:System.Text.Json.JsonSerializerOptions.MakeReadOnly?displayProperty=nameWithType> gives you explicit control over when a `JsonSerializerOptions` instance is frozen. (You can also check it with the <xref:System.Text.Json.JsonSerializerOptions.IsReadOnly> property.)
 - <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=nameWithType> is now obsolete. It's been superseded by the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> and <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> properties. For more information, see [Chain source generators](#chain-source-generators).
 - The new <xref:System.Text.Json.JsonSerializerOptions.TryGetTypeInfo(System.Type,System.Text.Json.Serialization.Metadata.JsonTypeInfo@)> method, a variation of the existing <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo(System.Type)> method, returns `false` if no metadata for the specified type was found.
+- The new <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfoResolver.WithAddedModifier(System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver,System.Action{System.Text.Json.Serialization.Metadata.JsonTypeInfo})> extension method lets you easily introduce modifications to the serialization contracts of arbitrary `IJsonTypeInfoResolver` instances.
+
+  ```csharp
+  var options = new JsonSerializerOptions
+  {
+      TypeInfoResolver = MyContext.Default
+          .WithAddedModifier(static typeInfo =>
+          {
+              foreach (JsonPropertyInfo prop in typeInfo.Properties)
+                  prop.Name = prop.Name.ToUpperInvariant();
+          })
+  };
+  ```
+
 - Support for compiler-generated or *unspeakable* types in weakly typed source generation scenarios. Since compiler-generated types can't be explicitly specified by the source generator, <xref:System.Text.Json?displayProperty=fullName> now performs nearest-ancestor resolution at run time. This resolution determines the most appropriate supertype with which to serialize the value.
 
 The following sections go into more depth about other serialization improvements:
@@ -35,15 +99,17 @@ The following sections go into more depth about other serialization improvements
 - [Naming policies](#naming-policies)
 - [Read-only properties](#read-only-properties)
 - [Disable reflection-based default](#disable-reflection-based-default)
+- [New JsonNode API methods](#new-jsonnode-api-methods)
 
 For more information about JSON serialization in general, see [JSON serialization and deserialization in .NET](../../standard/serialization/system-text-json/overview.md).
 
-### Source generator
+#### Source generator
 
 .NET 8 includes performance and reliability enhancements of the System.Text.Json [source generator](../../standard/serialization/system-text-json/source-generation.md) that are aimed at making the [native AOT](../../standard/glossary.md#native-aot) experience on par with the [reflection-based serializer](../../standard/serialization/system-text-json/source-generation-modes.md#overview). For example:
 
 - The [source generator](../../standard/serialization/system-text-json/source-generation.md) now supports serializing types with [`required`](../../standard/serialization/system-text-json/required-properties.md) and [`init`](../../csharp/language-reference/keywords/init.md) properties. These were both already supported in reflection-based serialization.
 - Improved formatting of source-generated code.
+- <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> feature parity with <xref:System.Text.Json.JsonSerializerOptions>. This parity lets you specify serialization configuration at compile time, which ensures that the generated `MyContext.Default` property is preconfigured with all the relevant options set.
 - Additional diagnostics (such as `SYSLIB1034` and `SYSLIB1039`).
 - Don't include types of ignored or inaccessible properties.
 - Support for nesting `JsonSerializerContext` declarations within arbitrary type kinds.
@@ -66,7 +132,7 @@ For more information about JSON serialization in general, see [JSON serializatio
 
   The property is nullable since it returns `null` for `JsonConverterFactory` instances and `typeof(T)` for `JsonConverter<T>` instances.
 
-#### Chain source generators
+##### Chain source generators
 
 The <xref:System.Text.Json.JsonSerializerOptions> class includes a new <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> property that complements the existing <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> property. These properties are used in contract customization for chaining source generators. The addition of the new property means that you don't have to specify all chained components at one call site&mdash;they can be added after the fact.
 
@@ -84,7 +150,7 @@ options.TypeInfoResolverChain.RemoveAt(0);
 options.TypeInfoResolverChain.Count; // 2
 ```
 
-### Interface hierarchies
+#### Interface hierarchies
 
 .NET 8 adds support for serializing properties from interface hierarchies.
 
@@ -111,7 +177,7 @@ public class DerivedImplement : IDerived
 }
 ```
 
-### Naming policies
+#### Naming policies
 
 [`JsonNamingPolicy`](/dotnet/api/system.text.json.jsonnamingpolicy?view=net-8.0&preserve-view=true#properties) includes new naming policies for `snake_case` (with an underscore) and `kebab-case` (with a hyphen) property name conversions. Use these policies similarly to the existing <xref:System.Text.Json.JsonNamingPolicy.CamelCase?displayProperty=nameWithType> policy:
 
@@ -120,7 +186,7 @@ var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolic
 JsonSerializer.Serialize(new { PropertyName = "value" }, options); // { "property_name" : "value" }
 ```
 
-### Read-only properties
+#### Read-only properties
 
 You can now deserialize onto read-only fields or properties (that is, those that don't have a `set` accessor).
 
@@ -163,7 +229,7 @@ Now, the input values are used to populate the read-only properties during deser
 {"Name":"John Doe","Company":{"Name":"Contoso","PhoneNumber":null}}
 ```
 
-### Disable reflection-based default
+#### Disable reflection-based default
 
 You can now disable using the reflection-based serializer by default. This disablement is useful to avoid accidental rooting of reflection components that aren't even in use, especially in trimmed and native AOT apps. To disable default reflection-based serialization by requiring that a <xref:System.Text.Json.JsonSerializerOptions> argument be passed to the <xref:System.Text.Json.JsonSerializer> serialization and deserialization methods, set the `JsonSerializer.IsReflectionEnabledByDefault` property to `false` in your project file. (If the property is set to `false` and you don't pass a configured <xref:System.Text.Json.JsonSerializerOptions> argument, the `Serialize` and `Deserialize` methods throw a <xref:System.NotSupportedException> at run time.)
 
@@ -187,19 +253,45 @@ static JsonSerializerOptions GetDefaultOptions()
 }
 ```
 
-## Core .NET libraries
+#### New JsonNode API methods
 
-This section contains the following subtopics:
+The `JsonNode` APIs include the following new methods.
 
-- [Time abstraction](#time-abstraction)
-- [UTF8 improvements](#utf8-improvements)
-- [Methods for working with randomness](#methods-for-working-with-randomness)
-- [Performance-focused types](#performance-focused-types)
-- [System.Numerics and System.Runtime.Intrinsics](#systemnumerics-and-systemruntimeintrinsics)
-- [Data validation](#data-validation)
-- [Metrics](#metrics)
-- [Cryptography](#cryptography)
-- [Stream-based ZipFile methods](#stream-based-zipfile-methods)
+```csharp
+namespace System.Text.Json.Nodes;
+
+public partial class JsonNode
+{
+    // Creates a deep clone of the current node and all its descendants.
+    public JsonNode DeepClone();
+
+    // Returns true if the two nodes are equivalent JSON representations.
+    public static bool DeepEquals(JsonNode? node1, JsonNode? node2);
+
+    // Determines the JsonValueKind of the current node.
+    public JsonValueKind GetValueKind(JsonSerializerOptions options = null);
+
+    // If node is the value of a property in the parent
+    // object, returns its name.
+    // Throws InvalidOperationException otherwise.
+    public string GetPropertyName();
+
+    // If node is the element of a parent JsonArray,
+    // returns its index.
+    // Throws InvalidOperationException otherwise.
+    public int GetElementIndex();
+
+    // Replaces this instance with a new value,
+    // updating the parent object/array accordingly.
+    public void ReplaceWith<T>(T value);
+}
+
+public partial class JsonArray
+{
+    // Returns an IEnumerable<T> view of the current array.
+    public IEnumerable<T> GetValues<T>();
+}
+```
 
 ### Time abstraction
 
@@ -439,6 +531,19 @@ else
 
 SHA-3 support is currently aimed at supporting cryptographic primitives. Higher-level constructions and protocols aren't expected to fully support SHA-3 initially. These protocols include X.509 certificates, <xref:System.Security.Cryptography.Xml.SignedXml>, and COSE.
 
+### Networking
+
+#### Support for HTTPS proxy
+
+Until now, the proxy types that <xref:System.Net.Http.HttpClient> supported all allowed a "man-in-the-middle" to see which site the client is connecting to, even for HTTPS URIs. <xref:System.Net.Http.HttpClient> now supports *HTTPS proxy*, which creates an encrypted channel between the client and the proxy so all requests can be handled with full privacy.
+
+To enable HTTPS proxy, set the `all_proxy` environment variable, or use the <xref:System.Net.WebProxy> class to control the proxy programmatically.
+
+Unix: `export all_proxy=https://x.x.x.x:3218`
+Windows: `set all_proxy=https://x.x.x.x:3218`
+
+You can also use the <xref:System.Net.WebProxy> class to control the proxy programmatically.
+
 ### Stream-based ZipFile methods
 
 .NET 8 includes new overloads of <xref:System.IO.Compression.ZipFile.CreateFromDirectory%2A?displayProperty=nameWithType> that allow you to collect all the files included in a directory and zip them, then store the resulting zip file into the provided stream. Similarly, new <xref:System.IO.Compression.ZipFile.ExtractToDirectory%2A?displayProperty=nameWithType> overloads let you provide a stream containing a zipped file and extract its contents into the filesystem. These are the new overloads:
@@ -468,6 +573,92 @@ This section contains the following subtopics:
 - [Options validation](#options-validation)
 - [LoggerMessageAttribute constructors](#loggermessageattribute-constructors)
 - [Extensions metrics](#extensions-metrics)
+- [Hosted lifecycle services](#hosted-lifecycle-services)
+- [Keyed DI services](#keyed-di-services)
+
+### Keyed DI services
+
+Keyed dependency injection (DI) services provides a means for registering and retrieving DI services using keys. By using keys, you can scope how your register and consume services. These are some of the new APIs:
+
+- The <xref:Microsoft.Extensions.DependencyInjection.IKeyedServiceProvider> interface.
+- The <xref:Microsoft.Extensions.DependencyInjection.ServiceKeyAttribute> attribute, which can be used to inject the key that was used for registration/resolution in the constructor.
+- The <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute> attribute, which can be used on service constructor parameters to specify which keyed service to use.
+- Various new extension methods for <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> to support keyed services, for example, <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddKeyedScoped%2A?displayProperty=nameWithType>.
+- The <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider> implementation of <xref:Microsoft.Extensions.DependencyInjection.IKeyedServiceProvider>.
+
+The following example shows you to use keyed DI services.
+
+```csharp
+using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Options;
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddSingleton<BigCacheConsumer>();
+builder.Services.Addsingleton<SmallCacheConsumer>();
+
+builder.Services.AddKeyedsingleton<IMemoryCache, BigCache>("big");
+builder.Services.AddKeyedSingleton<IMemoryCache, SmallCache>("small");
+
+var app = builder.Build();
+
+app.MapGet("/big", (BigCacheConsumer data) => data.GetData());
+app.MapGet("/small", (SmallCacheConsumer data) => data.GetData());
+
+app.Run();
+
+class BigCacheConsumer([FromKeyedServices("big")] IMemoryCache cache)
+{
+    public object? GetData() => cache.Get("data");
+}
+
+class SmallCacheConsumer(IKeyedServiceProvider keyedServiceProvider)
+{
+    public object? GetData() => keyedServiceProvider.GetRequiredKeyedService<IMemoryCache>("small");
+}
+```
+
+For more information, see [dotnet/runtime#64427](https://github.com/dotnet/runtime/issues/64427).
+
+### Hosted lifecycle services
+
+Hosted services now have more options for execution during the application lifecycle. <xref:Microsoft.Extensions.Hosting.IHostedService> provided `StartAsync` and `StopAsync`, and now <xref:Microsoft.Extensions.Hosting.IHostedLifecycleService> provides these additional methods:
+
+- <xref:Microsoft.Extensions.Hosting.IHostedLifecycleService.StartingAsync(System.Threading.CancellationToken)>
+- <xref:Microsoft.Extensions.Hosting.IHostedLifecycleService.StartedAsync(System.Threading.CancellationToken)>
+- <xref:Microsoft.Extensions.Hosting.IHostedLifecycleService.StoppingAsync(System.Threading.CancellationToken)>
+- <xref:Microsoft.Extensions.Hosting.IHostedLifecycleService.StoppedAsync(System.Threading.CancellationToken)>
+
+These methods run before and after the existing points respectively.
+
+The following example shows how to use the new APIs.
+
+```csharp
+using Microsoft.Extensions.Hosting;
+
+IHostBuilder hostBuilder = new HostBuilder();
+hostBuilder.ConfigureServices(services =>
+{
+    services.AddHostedService<MyService>();
+});
+
+using (IHost host = hostBuilder.Build())
+{
+    await host.StartAsync();
+}
+
+public class MyService : IHostedLifecycleService
+{
+    public Task StartingAsync(CancellationToken cancellationToken) => /* add logic here */ Task.CompletedTask;
+    public Task StartAsync(CancellationToken cancellationToken) => /* add logic here */ Task.CompletedTask;
+    public Task StartedAsync(CancellationToken cancellationToken) => /* add logic here */ Task.CompletedTask;
+    public Task StopAsync(CancellationToken cancellationToken) => /* add logic here */ Task.CompletedTask;
+    public Task StoppedAsync(CancellationToken cancellationToken) => /* add logic here */ Task.CompletedTask;
+    public Task StoppingAsync(CancellationToken cancellationToken) => /* add logic here */ Task.CompletedTask;
+}
+```
+
+For more information, see [dotnet/runtime#86511](https://github.com/dotnet/runtime/issues/86511).
 
 ### Options validation
 
@@ -548,9 +739,9 @@ public LoggerMessageAttribute(string message);
 
 #### IMeterFactory interface
 
-You can register the new <xref:Microsoft.Extensions.Diagnostics.Metrics.IMeterFactory> interface in dependency injection (DI) containers and use it to create <xref:System.Diagnostics.Metrics.Meter> objects in an isolated manner.
+You can register the new <xref:System.Diagnostics.Metrics.IMeterFactory> interface in dependency injection (DI) containers and use it to create <xref:System.Diagnostics.Metrics.Meter> objects in an isolated manner.
 
-Register the <xref:Microsoft.Extensions.Diagnostics.Metrics.IMeterFactory> to the DI container using the default meter factory implementation:
+Register the <xref:System.Diagnostics.Metrics.IMeterFactory> to the DI container using the default meter factory implementation:
 
 ```csharp
 // 'services' is the DI IServiceCollection.
@@ -827,6 +1018,17 @@ In addition, dynamic profile-guided optimization (PGO) has been improved and is 
 
 On average, dynamic PGO increases performance by about 15%. In a benchmark suite of ~4600 tests, 23% saw performance improvements of 20% or more.
 
+### Codegen struct promotion
+
+.NET 8 includes a new physical promotion optimization pass for codegen that generalizes the JIT's ability to promote struct variables. This optimization (also called *scalar replacement of aggregates*) replaces the fields of struct variables by primitive variables that the JIT is then able to reason about and optimize more precisely.
+
+The JIT already supported this optimization but with several large limitations including:
+
+- It was only supported for structs with four or fewer fields.
+- It was only supported if each field was a primitive type, or a simple struct wrapping a primitive type.
+
+Physical promotion removes these limitations, which fixes a number of long-standing JIT issues.
+
 ## .NET SDK changes
 
 This section contains the following subtopics:
@@ -941,6 +1143,29 @@ The [template engine](https://github.com/dotnet/templating) provides a more secu
 
 The Linux distribution-built (source-build) SDK now has the capability to build self-contained applications using the source-build runtime packages. The distribution-specific runtime package is bundled with the source-build SDK. During self-contained deployment, this bundled runtime package will be referenced, thereby enabling the feature for users.
 
+## Globalization
+
+### HybridGlobalization mode on iOS/tvOS/MacCatalyst
+
+Mobile apps can now use a new *hybrid* globalization mode that uses a lighter ICU bundle. In hybrid mode, globalization data is partially pulled from the ICU bundle and partially from calls into Native API. It serves all the [locales supported by mobile](https://github.com/dotnet/icu/blob/dotnet/main/icu-filters/icudt_mobile.json).
+
+`HybridGlobalization` is most suitable for apps that can't work in `InvariantGlobalization` mode and that use cultures that where trimmed from ICU data on mobile. You can also use it when you want to load a smaller ICU data file. (The *icudt_hybrid.dat* file is 34.5 % smaller than the default ICU data file *icudt.dat*.)
+
+To use `HybridGlobalization` mode, set the MSBuild property to true:
+
+```xml
+<PropertyGroup>
+  <HybridGlobalization>true</HybridGlobalization>
+</PropertyGroup>
+```
+
+There are some limitations to be aware of:
+
+- Due to limitations of Native API, not all globalization APIs are supported in hybrid mode.
+- Some of the supported APIs have different behavior.
+
+To make sure your application isn't affected, see [Behavioral differences](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-hybrid-mode.md#behavioral-differences).
+
 ## Containers
 
 - [Container images](#container-images)
@@ -955,7 +1180,7 @@ The following changes have been made to .NET container images for .NET 8:
 - [Preview images](#preview-images)
 - [Chiseled Ubuntu images](#chiseled-ubuntu-images)
 - [Build multi-platform container images](#build-multi-platform-container-images)
-- [Alpine ASP.NET Docker composite images](#alpine-aspnet-docker-composite-images)
+- [ASP.NET composite images](#aspnet-composite-images)
 
 #### Debian 12
 
@@ -1003,11 +1228,13 @@ RUN dotnet publish -a $TARGETARCH --self-contained false --no-restore -o /app
 
 For more information, see the [Improving multi-platform container support](https://devblogs.microsoft.com/dotnet/improving-multiplatform-container-support/) blog post.
 
-#### Alpine ASP.NET Docker composite images
+#### ASP.NET composite images
 
-As part of an effort to improve containerization performance, a new ASP.NET Alpine-based Docker image with a composite version of the runtime is available. This composite is built by compiling multiple MSIL assemblies into a single ready-to-run (R2R) output binary. Because these assemblies are embedded into a single image, jitting takes less time, and the startup performance of apps improves. The other big advantage of the composite over the regular ASP.NET image is that the composite images have a smaller size on disk.
+As part of an effort to improve containerization performance, new ASP.NET Docker images are available that have a composite version of the runtime. This composite is built by compiling multiple MSIL assemblies into a single ready-to-run (R2R) output binary. Because these assemblies are embedded into a single image, jitting takes less time, and the startup performance of apps improves. The other big advantage of the composite over the regular ASP.NET image is that the composite images have a smaller size on disk.
 
 There is a caveat to be aware of. Since composites have multiple assemblies embedded into one, they have tighter version coupling. Apps can't use custom versions of framework or ASP.NET binaries.
+
+Composite images are available for the Alpine Linux, Jammy Chiseled, and Mariner Distroless platforms from the `mcr.microsoft.com/dotnet/nightly/aspnet` repo. The tags are listed with the `-composite` suffix on the [ASP.NET Docker page](https://hub.docker.com/_/microsoft-dotnet-nightly-aspnet).
 
 ### Container performance and compatibility
 
@@ -1090,6 +1317,24 @@ Building in a container is the easiest approach for most people, since the `dotn
 | CA2021 | Reliability | <xref:System.Linq.Enumerable.Cast%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.OfType%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> require compatible types to function correctly. Widening and user-defined conversions aren't supported with generic types. |
 | CA1510-CA1513 | Maintainability | Throw helpers are simpler and more efficient than an `if` block constructing a new exception instance. These four analyzers were created for the following exceptions: <xref:System.ArgumentNullException>, <xref:System.ArgumentException>, <xref:System.ArgumentOutOfRangeException> and <xref:System.ObjectDisposedException>. |
 
+## Windows Presentation Foundation
+
+WPF includes a new dialog box control called `OpenFolderDialog`. This control lets app users browse and select folders. Previously, app developers relied on third-party software to achieve this functionality.
+
+```csharp
+var openFolderDialog = new OpenFolderDialog()
+{
+    Title = "Select folder to open ...",
+    InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
+};
+
+string folderName = "";
+if (openFolderDialog.ShowDialog())
+{
+    folderName = openFolderDialog.FolderName;
+}
+```
+
 ## NuGet
 
 Starting in .NET 8, NuGet verifies signed packages on Linux by default. NuGet continues to verify signed packages on Windows as well.
@@ -1105,6 +1350,7 @@ You can opt out of verification by setting the environment variable `DOTNET_NUGE
 
 ### .NET blog
 
+- [Announcing .NET 8 Preview 7](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-7/)
 - [Announcing .NET 8 Preview 6](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-6/)
 - [Announcing .NET 8 Preview 5](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-5/)
 - [Announcing .NET 8 Preview 4](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-4/)
@@ -1112,6 +1358,7 @@ You can opt out of verification by setting the environment variable `DOTNET_NUGE
 - [Announcing .NET 8 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-2/)
 - [Announcing .NET 8 Preview 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-1/)
 
+- [ASP.NET Core updates in .NET 8 Preview 7](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-7/)
 - [ASP.NET Core updates in .NET 8 Preview 6](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-6/)
 - [ASP.NET Core updates in .NET 8 Preview 5](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-5/)
 - [ASP.NET Core updates in .NET 8 Preview 4](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-4/)

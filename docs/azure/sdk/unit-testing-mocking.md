@@ -233,6 +233,6 @@ This approach is useful when you would like to consolidate the dependency creati
 
 ## See also
 
-* [Dependency injection in .NET](/dotnet/core/extensions/dependency-injection)
-* [Unit testing best practices](/dotnet/core/testing/unit-testing-best-practices)
-* [Unit testing C# in .NET using dotnet test and xUnit](/dotnet/core/testing/unit-testing-with-dotnet-test)
+* [Dependency injection in .NET](../../core/extensions/dependency-injection.md)
+* [Unit testing best practices](../../core/testing/unit-testing-best-practices.md)
+* [Unit testing C# in .NET using dotnet test and xUnit](../../core/testing/unit-testing-with-dotnet-test.md)

@@ -280,7 +280,7 @@ These options **don't** let you ignore selected properties based on arbitrary cr
 
 `Newtonsoft.Json` can serialize and deserialize fields as well as properties.
 
-In <xref:System.Text.Json?displayProperty=fullName>, use the <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProperty=nameWithType> global setting or the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute to include public fields when serializing or deserializing. For an example, see [Include fields](how-to.md#include-fields).
+In <xref:System.Text.Json>, use the <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProperty=nameWithType> global setting or the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute to include public fields when serializing or deserializing. For an example, see [Include fields](how-to.md#include-fields).
 
 ### Preserve object references and handle loops
 
@@ -502,7 +502,7 @@ The `OnDeserializing` code doesn't have access to the new POCO instance. To mani
 
 `Newtonsoft.Json` can use private and internal property setters and getters via the `JsonProperty` attribute.
 
-<xref:System.Text.Json?displayProperty=fullName> supports private and internal property setters and getters via the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute. For sample code, see [Non-public property accessors](immutability.md#non-public-property-accessors).
+<xref:System.Text.Json?displayProperty=fullName> supports private and internal property setters and getters via the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute. For sample code, see [Non-public property accessors](immutability.md#non-public-members-and-property-accessors).
 
 ### Populate existing objects
 

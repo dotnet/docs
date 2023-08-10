@@ -213,6 +213,7 @@ C# style rules:
 .NET style rules (C# and Visual Basic):
 
 - [Remove unused parameter (IDE0060)](ide0060.md)
+- [Use 'nameof' (IDE0280)](ide0280.md)
 
 ### Parentheses preferences
 

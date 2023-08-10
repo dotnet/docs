@@ -1,7 +1,7 @@
 ---
 title: Testing ASP.NET Core services and web apps
 description: .NET Microservices Architecture for Containerized .NET Applications | Explore an architecture for testing ASP.NET Core services and web apps in containers.
-ms.date: 01/13/2021
+ms.date: 08/10/2023
 ---
 
 # Testing ASP.NET Core services and web apps
@@ -27,6 +27,8 @@ Unit testing involves testing a part of an application in isolation from its inf
 As you unit test your controller actions, make sure you focus only on their behavior. A controller unit test avoids things like filters, routing, or model binding (the mapping of request data to a ViewModel or DTO). Because they focus on testing just one thing, unit tests are generally simple to write and quick to run. A well-written set of unit tests can be run frequently without much overhead.
 
 Unit tests are implemented based on test frameworks like xUnit.net, MSTest, Moq, or NUnit. For the eShopOnContainers sample application, we are using xUnit.
+
+[!INCLUDE [moq-warning](../../../../includes/moq-warning.md)]
 
 When you write a unit test for a Web API controller, you instantiate the controller class directly using the new keyword in C\#, so that the test will run as fast as possible. The following example shows how to do this when using [xUnit](https://xunit.net/) as the Test framework.
 

@@ -1,7 +1,7 @@
 ---
 title: Runtime package store
 description: Learn how to use the runtime package store to target manifests used by .NET Core.
-ms.date: 08/12/2017
+ms.date: 08/10/2023
 ---
 # Runtime package store
 
@@ -43,13 +43,12 @@ The first step is to create a *package store manifest* that lists the packages t
 
 **Example**
 
-The following example package store manifest (*packages.csproj*) is used to add [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) and [`Moq`](https://www.nuget.org/packages/moq/) to a runtime package store:
+The following example package store manifest (*packages.csproj*) is used to add [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) to a runtime package store:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
-    <PackageReference Include="Moq" Version="4.7.63" />
   </ItemGroup>
 </Project>
 ```
@@ -72,13 +71,11 @@ By default, the output of the command is a package store under the *.dotnet/stor
 
 **Example**
 
-The following *artifact.xml* file is produced after running the previous example. Note that [`Castle.Core`](https://www.nuget.org/packages/Castle.Core/) is a dependency of `Moq`, so it's included automatically and appears in the *artifacts.xml* manifest file.
+The following *artifact.xml* file is produced after running the previous example.
 
 ```xml
 <StoreArtifacts>
   <Package Id="Newtonsoft.Json" Version="10.0.3" />
-  <Package Id="Castle.Core" Version="4.1.0" />
-  <Package Id="Moq" Version="4.7.63" />
 </StoreArtifacts>
 ```
 

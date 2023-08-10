@@ -1,12 +1,12 @@
 ---
 title: Unit testing
 description: Learn how to unit test with .NET Orleans.
-ms.date: 03/17/2022
+ms.date: 08/10/2023
 ---
 
 # Unit testing with Orleans
 
-This tutorial shows how to unit test your grains to make sure they behave correctly. There are two main ways to unit test your grains, and the method you choose will depend on the type of functionality you are testing. The `Microsoft.Orleans.TestingHost` NuGet package can be used to create test silos for your grains, or you can use a mocking framework like [Moq](https://github.com/moq/moq) to mock parts of the Orleans runtime that your grain interacts with.
+This tutorial shows how to unit test your grains to make sure they behave correctly. There are two main ways to unit test your grains, and the method you choose will depend on the type of functionality you are testing. The `Microsoft.Orleans.TestingHost` NuGet package can be used to create test silos for your grains, or you can use a mocking framework like [NSubstitute](https://github.com/nsubstitute/NSubstitute) to mock parts of the Orleans runtime that your grain interacts with.
 
 ## Use the `TestCluster`
 
@@ -140,6 +140,8 @@ public class TestSiloConfigurations : ISiloConfigurator
 ```
 
 ## Use mocks
+
+[!INCLUDE [moq-warning](../../../includes/moq-warning.md)]
 
 Orleans also makes it possible to mock many parts of the system, and for many scenarios, this is the easiest way to unit test grains. This approach does have limitations (e.g. around scheduling reentrancy and serialization) and may require that grains include code used only by your unit tests. The [Orleans TestKit](https://github.com/OrleansContrib/OrleansTestKit) provides an alternative approach which side-steps many of these limitations.
 

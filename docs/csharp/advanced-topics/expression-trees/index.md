@@ -1,7 +1,7 @@
 ---
 title: "Expression Trees"
 description: Learn about expression trees. See how to compile and run code represented by these data structures, where each node is an expression.
-ms.date: 03/07/2023
+ms.date: 08/10/2023
 ms.custom: updateeachrelease
 ---
 # Expression Trees
@@ -13,6 +13,8 @@ If you have used LINQ, you have experience with a rich library where the `Func` 
 You write function arguments, typically using Lambda Expressions, when you create LINQ queries. In a typical LINQ query, those function arguments are transformed into a delegate the compiler creates.
 
 You've likely already written code that uses Expression trees. Entity Framework's LINQ APIs accept Expression trees as the arguments for the LINQ Query Expression Pattern. That enables [Entity Framework](/ef/) to translate the query you wrote in C# into SQL that executes in the database engine. Another example is [Moq](https://github.com/Moq/moq), which is a popular mocking framework for .NET.
+
+[!INCLUDE [moq-warning](../../../../includes/moq-warning.md)]
 
 When you want to have a richer interaction, you need to use *Expression Trees*. Expression Trees represent code as a structure that you examine, modify, or execute. These tools give you the power to manipulate code during run time. You write code that examines running algorithms, or injects new capabilities. In more advanced scenarios, you modify running algorithms and even translate C# expressions into another form for execution in another environment.
 

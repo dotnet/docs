@@ -45,7 +45,7 @@ The following table shows the templates that come pre-installed with the .NET SD
 | ASP.NET Core with React.js                   | [`react`](#spa)                       | [C#]         | Web/MVC/SPA                           | 2.0              |
 | Razor Class Library                          | [`razorclasslib`](#razorclasslib)     | [C#]         | Web/Razor/Library/Razor Class Library | 2.1              |
 | ASP.NET Core Web API                         | [`webapi`](#webapi)                   | [C#], F#     | Web/WebAPI                            | 1.0              |
-| ASP.NET Core API                             | [`api`](#api)                         | [C#]         | Web/API                               | 8.0              |
+| ASP.NET Core API                             | [`webapiaot`](#webapiaot)             | [C#]         | Web/WebAPI AOT                        | 8.0              |
 | ASP.NET Core gRPC Service                    | [`grpc`](#web-others)                 | [C#]         | Web/gRPC                              | 3.0              |
 | dotnet gitignore file                        | `gitignore`                           |              | Config                                | 3.0              |
 | global.json file                             | [`globaljson`](#globaljson)           |              | Config                                | 2.0              |

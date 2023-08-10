@@ -18,6 +18,8 @@ For sample WCF applications that you can download and run, see [Windows Communic
 
 For more in-depth information about creating services and clients, see [Basic WCF programming](basic-wcf-programming.md).
 
+[!INCLUDE[](~/includes/wcf_grpc_heading.md)]
+
 ## WCF tutorials
 
 The first three tutorials describe how to define a WCF service contract, how to implement it, and how to host it. The service that you create is self-hosted within a console application. You can also host services under Microsoft Internet Information Services (IIS). For more information, see [How to: Host a WCF Service in IIS](feature-details/how-to-host-a-wcf-service-in-iis.md). Although you use code to configure the service in the tutorial, you can also [configure services within a configuration file](configuring-services-using-configuration-files.md).

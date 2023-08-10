@@ -573,7 +573,7 @@ Example:
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | N/A | N/A | N/A |
+| **runtimeconfig.json** | `System.GC.ConserveMemory` | `0` - `9` | .NET 6 |
 | **Environment variable** | `COMPlus_GCConserveMemory` | `0` -`9` | .NET Framework 4.8 |
 | **Environment variable** | `DOTNET_GCConserveMemory` | `0` -`9` | .NET 6 |
 | **app.config for .NET Framework** | [GCConserveMemory](../../framework/configure-apps/file-schema/runtime/gcconservememory-element.md) | `0` -`9` | .NET Framework 4.8 |

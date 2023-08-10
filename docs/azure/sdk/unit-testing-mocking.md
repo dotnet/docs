@@ -27,7 +27,7 @@ To create a test service client, you can either use a mocking library or standar
 
 # [Non-library](#tab/csharp)
 
-To create a test client instance using C# without a mocking library, inherit from the client type and override methods you are calling in your code with an implementation that returns a set of test objects. Most clients contain both synchronous and asynchronous methods for operations; override only the one your application code is calling.
+To create a test client instance using C# without a mocking library, inherit from the client type and override methods you're calling in your code with an implementation that returns a set of test objects. Most clients contain both synchronous and asynchronous methods for operations; override only the one your application code is calling.
 
 > [!NOTE]
 > It can be cumbersome to manually define test classes, especially if you need to customize behavior differently for each test. Consider using a library like Moq or NSubstitute to streamline your testing.
@@ -49,10 +49,10 @@ To create a test client instance using C# without a mocking library, inherit fro
 Model types hold the data being sent and received from Azure services. There are three types of models:
 
 * **Input models** are intended to be created and passed as parameters to service methods by developers. They have one or more public constructors and writeable properties.
-* **Output models** are only returned by the service and have neither public constructors nor writeable properties.
+* **Output models** are only returned by the service and have no public constructors or writeable properties.
 * **Round-trip models** are less common, but are returned by the service, modified, and used as an input.
 
-To create a test instance of an input model use one of the available public constructors and set the additional properties you need.
+To create a test instance of an input model, use one of the available public constructors and set the additional properties you need.
 
 ```csharp
 var secretProperties = new SecretProperties("secret")
@@ -72,7 +72,7 @@ KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
 > Some input models have read-only properties that are only populated when the model is returned by the service. In this case, a model factory method will be available that allows setting these properties. For example, <xref:Azure.Security.KeyVault.Secrets.SecretModelFactory.SecretProperties%2A>.
 
 ```csharp
-// CreatedOn is a read-only property and can only be 
+// CreatedOn is a read-only property and can only be
 // set via the model factory's SecretProperties method.
 secretPropertiesWithCreatedOn = SecretModelFactory.SecretProperties(
     name: "secret", createdOn: DateTimeOffset.Now);
@@ -84,7 +84,7 @@ The <xref:Azure.Response> class is an abstract class that represents an HTTP res
 
 ## [Non-library](#tab/csharp)
 
-The `Response` class is abstract, which means there are a lot of members to override. Consider using a library to streamline your approach.
+The `Response` class is abstract, which means there are many members to override. Consider using a library to streamline your approach.
 
 :::code language="csharp" source="snippets/unit-testing/NonLibrary/MockResponse.cs" :::
 
@@ -118,7 +118,7 @@ Some services also support using the <xref:Azure.Response%601> type, which is a 
 
 The <xref:Azure.Page%601> class is used as a building block in service methods that invoke operations returning results in multiple pages. The `Page<T>` is rarely returned from APIs directly but is useful to create the `AsyncPageable<T>` and `Pageable<T>` instances in the next section. To create a `Page<T>` instance, use the <xref:Azure.Page%601.FromValues%2A?displayProperty=nameWithType> method, passing a list of items, a continuation token, and the `Response`.
 
-The `continuationToken` parameter is used to retrieve the next page from the service. For unit testing purposes, it should be set to `null` for the last page and should be non-empty for other pages.
+The `continuationToken` parameter is used to retrieve the next page from the service. For unit testing purposes, it should be set to `null` for the last page and should be nonempty for other pages.
 
 ## [Non-library](#tab/csharp)
 
@@ -181,7 +181,7 @@ When unit testing you only want the unit tests to verify the application logic a
 
 ## Refactor your types for testability
 
-Classes that need to be tested should be designed for [dependency injection](/dotnet/azure/sdk/dependency-injection), which allows the class to receive its dependencies instead of creating them internally. It was a seamless process to replace the `SecretClient` implementation in the example from the previous section because it was one of the constructor parameters. However, there may be classes in your code that create their own dependencies and are not easily testable, such as the following:
+Classes that need to be tested should be designed for [dependency injection](/dotnet/azure/sdk/dependency-injection), which allows the class to receive its dependencies instead of creating them internally. It was a seamless process to replace the `SecretClient` implementation in the example from the previous section because it was one of the constructor parameters. However, there may be classes in your code that create their own dependencies and aren't easily testable, such as the following:
 
 ```csharp
 public class AboutToExpireSecretFinder
@@ -201,9 +201,9 @@ The simplest refactoring you can do to enable testing with dependency injection 
 ```csharp
 public class AboutToExpireSecretFinder
 {
-    public AboutToExpireSecretFinder(TimeSpan threshold, SecretClient client = null) 
-    { 
-        _threshold = threshold; 
+    public AboutToExpireSecretFinder(TimeSpan threshold, SecretClient client = null)
+    {
+        _threshold = threshold;
         _client = client ?? new SecretClient(
             new Uri(Environment.GetEnvironmentVariable("KeyVaultUri")),
             new DefaultAzureCredential());
@@ -224,7 +224,7 @@ public class AboutToExpireSecretFinder
 }
 
 var secretClient = new SecretClient(
-    new Uri(Environment.GetEnvironmentVariable("KeyVaultUri")), 
+    new Uri(Environment.GetEnvironmentVariable("KeyVaultUri")),
     new DefaultAzureCredential());
 var finder = new AboutToExpireSecretFinder(TimeSpan.FromDays(2), secretClient);
 ```

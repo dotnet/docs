@@ -739,9 +739,9 @@ public LoggerMessageAttribute(string message);
 
 #### IMeterFactory interface
 
-You can register the new <xref:Microsoft.Extensions.Diagnostics.Metrics.IMeterFactory> interface in dependency injection (DI) containers and use it to create <xref:System.Diagnostics.Metrics.Meter> objects in an isolated manner.
+You can register the new <xref:System.Diagnostics.Metrics.IMeterFactory> interface in dependency injection (DI) containers and use it to create <xref:System.Diagnostics.Metrics.Meter> objects in an isolated manner.
 
-Register the <xref:Microsoft.Extensions.Diagnostics.Metrics.IMeterFactory> to the DI container using the default meter factory implementation:
+Register the <xref:System.Diagnostics.Metrics.IMeterFactory> to the DI container using the default meter factory implementation:
 
 ```csharp
 // 'services' is the DI IServiceCollection.

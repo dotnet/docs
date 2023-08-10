@@ -17,7 +17,7 @@ Previously, `TrimMode=partial` was set by default for all projects that targeted
 
 ## New behavior
 
-Starting in .NET 8, all the assemblies in the app are trimmed, by default. Apps that previously worked with `PublishTrimmed=true` and `TrimMode=partial` might not work in .NET 8 Preview 7 and later versions. However, only apps with trim warnings are affected. If your app has no trim warnings, the change in behavior should not cause any adverse effects.
+Starting in .NET 8, all the assemblies in the app are trimmed, by default. Apps that previously worked with `PublishTrimmed=true` and `TrimMode=partial` might not work in .NET 8 Preview 7 and later versions. However, only apps with trim warnings are affected. If your app has no trim warnings, the change in behavior shouldn't cause any adverse effects.
 
 ## Type of breaking change
 

@@ -21,7 +21,7 @@ IHost host = Host.CreateDefaultBuilder(args)
             foreach (string queue in queueNames)
             {
                 clientBuilder.AddClient<ServiceBusSender, ServiceBusClientOptions>((_, _, provider) =>
-                    provider.GetService<ServiceBusClient>()!.CreateSender(queue)
+                    provider.GetService<ServiceBusClient>().CreateSender(queue)
                 ).WithName(queue);
             }
         });

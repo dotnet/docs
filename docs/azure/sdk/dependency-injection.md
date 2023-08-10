@@ -135,7 +135,7 @@ builder.Services.AddAzureClients(clientBuilder =>
         builder.Configuration.GetSection("Storage"));
 
     clientBuilder.AddServiceBusClientWithNamespace(
-        builder.Configuration["ServiceBus:NamespaceUri"]);
+        builder.Configuration["ServiceBus:Namespace"]);
 
     clientBuilder.UseCredential(new DefaultAzureCredential());
 
@@ -157,7 +157,7 @@ builder.Services.AddAzureClients(clientBuilder =>
         builder.Configuration.GetSection("Storage"));
 
     clientBuilder.AddServiceBusClientWithNamespace(
-        builder.Configuration["ServiceBus:NamespaceUri"]);
+        builder.Configuration["ServiceBus:Namespace"]);
 
     clientBuilder.UseCredential(new DefaultAzureCredential());
 
@@ -183,7 +183,7 @@ IHost host = Host.CreateDefaultBuilder(args)
                 hostContext.Configuration.GetSection("Storage"));
 
             clientBuilder.AddServiceBusClientWithNamespace(
-                hostContext.Configuration["ServiceBus:NamespaceUri"]);
+                hostContext.Configuration["ServiceBus:Namespace"]);
 
             clientBuilder.UseCredential(new DefaultAzureCredential());
 
@@ -203,7 +203,7 @@ In the preceding JSON sample:
 * The `AzureDefaults.Retry` object literal:
   * Represents the [retry policy configuration settings](#configure-a-new-retry-policy).
   * Corresponds to the <xref:Azure.Core.ClientOptions.Retry> property. Within that object literal, you find the `MaxRetries` key, which corresponds to the <xref:Azure.Core.RetryOptions.MaxRetries> property.
-* The `KeyVault:VaultUri`, `ServiceBus:NamespaceUri`, and `Storage:ServiceUri` key values map to the `Uri`- and `string`-typed arguments of the <xref:Azure.Security.KeyVault.Secrets.SecretClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Security.KeyVault.Secrets.SecretClientOptions)?displayProperty=fullName>, <xref:Azure.Messaging.ServiceBus.ServiceBusClient.%23ctor(System.String)?displayProperty=fullName>, and <xref:Azure.Storage.Blobs.BlobServiceClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)?displayProperty=fullName> constructor overloads, respectively. The `TokenCredential` variants of the constructors are used because a default `TokenCredential` is set via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(Azure.Core.TokenCredential)?displayProperty=fullName> method call.
+* The `KeyVault:VaultUri`, `ServiceBus:Namespace`, and `Storage:ServiceUri` key values map to the `Uri`- and `string`-typed arguments of the <xref:Azure.Security.KeyVault.Secrets.SecretClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Security.KeyVault.Secrets.SecretClientOptions)?displayProperty=fullName>, <xref:Azure.Messaging.ServiceBus.ServiceBusClient.%23ctor(System.String)?displayProperty=fullName>, and <xref:Azure.Storage.Blobs.BlobServiceClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)?displayProperty=fullName> constructor overloads, respectively. The `TokenCredential` variants of the constructors are used because a default `TokenCredential` is set via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(Azure.Core.TokenCredential)?displayProperty=fullName> method call.
 
 ## Configure multiple service clients with different names
 
@@ -256,7 +256,7 @@ At some point, you may want to change the default settings for a service client.
     "VaultUri": "https://mykeyvault.vault.azure.net"
   },
   "ServiceBus": {
-    "NamespaceUri": "https://<your-namespace>.servicebus.windows.net"
+    "Namespace": "<your-namespace>.servicebus.windows.net"
   },
   "Storage": {
     "ServiceUri": "https://store1.storage.windows.net"
@@ -287,7 +287,7 @@ builder.Services.AddAzureClients(clientBuilder =>
         .ConfigureOptions(options => options.Retry.MaxRetries = 10);
 
     clientBuilder.AddServiceBusClientWithNamespace(
-            builder.Configuration["ServiceBus:NamespaceUri"])
+            builder.Configuration["ServiceBus:Namespace"])
         .ConfigureOptions(options => options.RetryOptions.MaxRetries = 10);
 
     // A named storage client with a different custom retry policy

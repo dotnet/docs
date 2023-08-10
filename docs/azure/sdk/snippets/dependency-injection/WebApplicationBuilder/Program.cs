@@ -20,7 +20,7 @@ builder.Services.AddAzureClients(clientBuilder =>
     foreach (string queue in queueNames)
     {
         clientBuilder.AddClient<ServiceBusSender, ServiceBusClientOptions>(
-            (_, _, provider) => provider.GetService<ServiceBusClient>()!
+            (_, _, provider) => provider.GetService<ServiceBusClient>()
                     .CreateSender(queue)).WithName(queue);
     }
 });

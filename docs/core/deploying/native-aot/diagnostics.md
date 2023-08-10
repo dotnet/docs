@@ -17,7 +17,7 @@ NativeAOT applications have the following characteristics that are important to 
 
 ## Current NativeAOT diagnostic support
 
-Not all diagnostic features in NativeAOT are currently at parity with .NET. The following table summarizes NativeAOT diagnostic feature parity with .NET:
+The following table summarizes diagnostic features supported for native AOT deployments:
 
 | Feature | Fully Supported | Partially Supported | Not Supported |
 | - | - | - | - |
@@ -37,7 +37,7 @@ NativeAOT runtime supports [EventPipe](../../diagnostics/eventpipe.md) which wil
 
 NativeAOT also provides partial support for [OpenTelemetry](../../diagnostics/observability-with-otel.md) and some [well-known event providers](../../diagnostics/well-known-event-providers.md). Not all [runtime events](../../../fundamentals/diagnostics/runtime-events.md) are supported in NativeAOT.
 
-### Profiling support
+### CPU Profiling support
 
 "Microsoft-DotNETCore-SampleProfiler" provider is not currently supported in NativeAOT. Platform specific tools like [PerfView](https://github.com/microsoft/perfview), and [Perf](https://perf.wiki.kernel.org/index.php/Main_Page) can be used to collect CPU samples of a NativeAOT application.
 

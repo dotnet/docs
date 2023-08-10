@@ -76,7 +76,7 @@ Many improvements have been made to <xref:System.Text.Json?displayProperty=fullN
 - <xref:System.Text.Json.JsonSerializerOptions.MakeReadOnly?displayProperty=nameWithType> gives you explicit control over when a `JsonSerializerOptions` instance is frozen. (You can also check it with the <xref:System.Text.Json.JsonSerializerOptions.IsReadOnly> property.)
 - <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=nameWithType> is now obsolete. It's been superseded by the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> and <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> properties. For more information, see [Chain source generators](#chain-source-generators).
 - The new <xref:System.Text.Json.JsonSerializerOptions.TryGetTypeInfo(System.Type,System.Text.Json.Serialization.Metadata.JsonTypeInfo@)> method, a variation of the existing <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo(System.Type)> method, returns `false` if no metadata for the specified type was found.
-- The new <xref:System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver.WithAddedModifier(System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver,System.Action{System.Text.Json.Serialization.Metadata.JsonTypeInfo})> extension method lets you easily introduce modifications to the serialization contracts of arbitrary `IJsonTypeInfoResolver` instances.
+- The new <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfoResolver.WithAddedModifier(System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver,System.Action{System.Text.Json.Serialization.Metadata.JsonTypeInfo})> extension method lets you easily introduce modifications to the serialization contracts of arbitrary `IJsonTypeInfoResolver` instances.
 
   ```csharp
   var options = new JsonSerializerOptions
@@ -584,7 +584,7 @@ Keyed dependency injection (DI) services provides a means for registering and re
 - The <xref:Microsoft.Extensions.DependencyInjection.ServiceKeyAttribute> attribute, which can be used to inject the key that was used for registration/resolution in the constructor.
 - The <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute> attribute, which can be used on service constructor parameters to specify which keyed service to use.
 - Various new extension methods for <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> to support keyed services, for example, <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddKeyedScoped%2A?displayProperty=nameWithType>.
-- The <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider> implementation of <xref:Microsoft.Extensions.DependencyInjection.Abstractions.IKeyedServiceProvider>.
+- The <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider> implementation of <xref:Microsoft.Extensions.DependencyInjection.IKeyedServiceProvider>.
 
 The following example shows you to use keyed DI services.
 
@@ -622,12 +622,12 @@ For more information, see [dotnet/runtime#64427](https://github.com/dotnet/runti
 
 ### Hosted lifecycle services
 
-Hosted services now have more options for execution during the application lifecycle. <xref:Microsoft.Extensions.Hosting.IHostedService> provided `StartAsync` and `StopAsync`, and now <xref:Microsoft.Extensions.Hosting.IHostedLifeCycleService> provides these additional methods:
+Hosted services now have more options for execution during the application lifecycle. <xref:Microsoft.Extensions.Hosting.IHostedService> provided `StartAsync` and `StopAsync`, and now <xref:Microsoft.Extensions.Hosting.IHostedLifecycleService> provides these additional methods:
 
-- <xref:Microsoft.Extensions.Hosting.IHostedLifeCycleService.StartingAsync(System.Threading.CancellationToken)>
-- <xref:Microsoft.Extensions.Hosting.IHostedLifeCycleService.StartedAsync(System.Threading.CancellationToken)>
-- <xref:Microsoft.Extensions.Hosting.IHostedLifeCycleService.StoppingAsync(System.Threading.CancellationToken)>
-- <xref:Microsoft.Extensions.Hosting.IHostedLifeCycleService.StoppedAsync(System.Threading.CancellationToken)>
+- <xref:Microsoft.Extensions.Hosting.IHostedLifecycleService.StartingAsync(System.Threading.CancellationToken)>
+- <xref:Microsoft.Extensions.Hosting.IHostedLifecycleService.StartedAsync(System.Threading.CancellationToken)>
+- <xref:Microsoft.Extensions.Hosting.IHostedLifecycleService.StoppingAsync(System.Threading.CancellationToken)>
+- <xref:Microsoft.Extensions.Hosting.IHostedLifecycleService.StoppedAsync(System.Threading.CancellationToken)>
 
 These methods run before and after the existing points respectively.
 

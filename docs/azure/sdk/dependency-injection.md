@@ -8,11 +8,11 @@ ms.date: 07/21/2023
 
 # Dependency injection with the Azure SDK for .NET
 
-This article demonstrates how to register Azure service clients from the [latest Azure client libraries for .NET](https://azure.github.io/azure-sdk/releases/latest/index.html#net) for [dependency injection in a .NET app](/dotnet/core/extensions/dependency-injection). Every modern .NET app starts up by using the instructions provided in a *Program.cs* file.
+This article demonstrates how to register Azure service clients from the [latest Azure client libraries for .NET](https://azure.github.io/azure-sdk/releases/latest/index.html#net) for [dependency injection in a .NET app](../../core/extensions/dependency-injection.md). Every modern .NET app starts up by using the instructions provided in a *Program.cs* file.
 
 ## Install packages
 
-To register and configure service clients from an [`Azure.`-prefixed package](/dotnet/azure/sdk/packages#libraries-using-azurecore):
+To register and configure service clients from an [`Azure.`-prefixed package](packages.md#libraries-using-azurecore):
 
 1. Install the [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) package in your project:
 
@@ -319,5 +319,5 @@ You can also place retry policy overrides in the *appsettings.json* file:
 ## See also
 
 * [Dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection)
-* [Configuration in .NET](/dotnet/core/extensions/configuration)
+* [Configuration in .NET](../../core/extensions/configuration.md)
 * [Configuration in ASP.NET Core](/aspnet/core/fundamentals/configuration)

@@ -2,7 +2,7 @@
 title: "Instance constructors"
 description: Instance constructors in C# create and initialize any instance member variables when you use the new expression to create an instance of a type.
 ms.date: 05/25/2023
-helpviewer_keywords: 
+helpviewer_keywords:
   - "constructors [C#], instance constructors"
   - "instance constructors [C#]"
 ---
@@ -57,4 +57,4 @@ If the type includes the `record` modifier, the compiler instead synthesizes a p
 - [Finalizers](finalizers.md)
 - [base](../../language-reference/keywords/base.md)
 - [this](../../language-reference/keywords/this.md)
-- [Primary constructors feature spec](~/_csharplang/proposals/primary-constructors.md)
+- [Primary constructors feature spec](~/_csharplang/proposals/csharp-12.0/primary-constructors.md)

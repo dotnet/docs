@@ -29,7 +29,7 @@ You can learn more about default parameters on lambda expressions in the article
 
 ## Alias any type
 
-You can use the `using` alias directive to alias any type, not just named types. That means you can create semantic aliases for tuple types, array types, pointer types, or other unsafe types. For more information, see the [feature specification](~/_csharplang/proposals/using-alias-types.md).
+You can use the `using` alias directive to alias any type, not just named types. That means you can create semantic aliases for tuple types, array types, pointer types, or other unsafe types. For more information, see the [feature specification](~/_csharplang/proposals/csharp-12.0/using-alias-types.md).
 
 ## Inline arrays
 

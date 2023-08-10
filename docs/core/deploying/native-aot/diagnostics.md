@@ -29,7 +29,7 @@ Native AOT application is neither a typical managed application (for example, no
 
 The following table summarizes diagnostic features supported for native AOT deployments:
 
-| Feature | Fully Supported | Partially Supported | Not Supported |
+| Feature | Fully supported | Partially supported | Not supported |
 | - | - | - | - |
 | Build (Inner dev loop) diagnostics | <span aria-hidden="true">✔️</span><span class="visually-hidden">Fully supported</span> | | |
 | Observability | | <span aria-hidden="true">✔️</span><span class="visually-hidden">Partially supported</span> | |

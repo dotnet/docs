@@ -618,7 +618,7 @@ Starting with .NET Framework 4.7.1, improvements in high contrast have been made
 
   ![Screenshot of a link saying Click Me! in yellow.](./media/whats-new-in-accessibility/default-link-style-after.png)
 
-For more information on WPF accessibility improvements in .NET Framework 4.7.1, see [Accessibility improvements in WPF](../migration-guide/retargeting/4.7-4.7.1.md#accessibility-improvements-in-wpf).
+For more information on WPF accessibility improvements in .NET Framework 4.7.1, see [Accessibility improvements in WPF](../migration-guide/retargeting/4.7.x.md#accessibility-improvements-in-wpf).
 
 <a name="winforms471"></a>
 

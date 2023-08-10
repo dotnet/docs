@@ -1,7 +1,7 @@
 ---
 title: Best practices in Orleans
 description: Learn some of the best practices in Orleans for .NET Orleans app development.
-ms.date: 03/21/2022
+ms.date: 08/10/2023
 ---
 
 # Best practices in Orleans
@@ -214,7 +214,7 @@ Scaling out and in:
 Testing:
 
 - `Microsoft.Orleans.TestingHost` NuGet package contains <xref:Orleans.TestingHost.TestCluster> which can be used to create an in-memory cluster, comprised of two silos by default, which can be used to test grains.
-- Additional information can be found [here](../tutorials-and-samples/testing.md).
+- For more information, see [Unit testing with Orleans](../implementation/testing.md).
 
 Troubleshooting:
 

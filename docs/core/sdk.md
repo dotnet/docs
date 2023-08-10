@@ -37,7 +37,7 @@ can coexist at any given time on a single machine. For information about how the
 ## Security guide
 
 > [!IMPORTANT]
-> The .NET SDK locates and executes various tools that ship as separate executable binaries in the SDK. In most cases, the SDK is able to determine the full path to the executable. However, there are exceptions where the SDK cannot determine the path and relies on user input. It's possible that a user can provide input that causes the .NET SDK to execute malicious software. For this reason, you shouldn't trust any repos with binaries that match specific names in the root folder, for example, *msbuild.exe*.
+> The .NET SDK locates and executes various tools that ship as separate executable binaries in the SDK. In most cases, the SDK is able to determine the full path to the executable. However, there are exceptions where the SDK cannot determine the path and relies on user input. It's possible that a user can provide input that causes the .NET SDK to execute malicious software. For this reason, you shouldn't trust any repos with binaries that match specific file names in the SDK install location, for example, *msbuild.exe*. The SDK installs to a versioned folder such as *C:\Program Files\dotnet\sdk\7.0.400\\* on Windows or */usr/bin/share/dotnet/sdk/7.0.400* on Linux.
 
 ## See also
 

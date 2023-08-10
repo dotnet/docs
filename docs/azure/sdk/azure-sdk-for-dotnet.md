@@ -22,7 +22,7 @@ To use an Azure SDK package in one of your .NET applications, you want to follow
 
 1. **Locate the appropriate SDK package -** Use the [package list](packages.md) to find the appropriate package for the Azure service you are working with.  Be advised that most services have a client package for working with the service and a management package for creating and managing instances of the service.  In most cases, you will want the client package.  Install this package in your application using NuGet.
 
-2. **Set up authentication for your application -** To access Azure resources, your application will need to have the appropriate credentials and access rights assigned in Azure.  Learn how to configure authentication in [Authenticating .NET applications to Azure](authentication.md).
+2. **Set up authentication for your application -** To access Azure resources, your application will need to have the appropriate credentials and access rights assigned in Azure.  Learn how to configure authentication in [Authenticating .NET applications to Azure](authentication/index.md).
 
 3. **Write code using the SDK in your application -** When working with Azure services, your code will first create a client object to work with the service and then call methods on that client object to interact with the service.  Both synchronous and asynchronous methods are provided.  Examples of using each individual SDK package are provided throughout the Azure documentation.
 

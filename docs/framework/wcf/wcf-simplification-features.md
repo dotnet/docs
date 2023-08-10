@@ -9,6 +9,8 @@ ms.assetid: 4535a511-6064-4da0-b361-80262a891663
 
 This topic discusses new features that make writing WCF applications simpler.
 
+[!INCLUDE[](~/includes/wcf_grpc_heading.md)]
+
 ## Simplified Generated Configuration Files
 
 When you add a service reference in Visual Studio or use the SvcUtil.exe tool a client configuration file is generated. In previous versions of WCF these configuration files contained the value of every binding property even if its value is the default value. In WCF 4.5 the generated configuration files contain only those binding properties that are set to a non-default value.

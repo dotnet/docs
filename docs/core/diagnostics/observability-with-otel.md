@@ -120,7 +120,6 @@ Use the NuGet Package Manager or command line to add the following NuGet package
    <PackageReference Include="OpenTelemetry.Exporter.Console" Version="1.5.0" />
    <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.5.0" />
    <PackageReference Include="OpenTelemetry.Exporter.Prometheus.AspNetCore" Version="1.5.0-rc.1" />
-   <PackageReference Include="OpenTelemetry.Exporter.Zipkin" Version="1.5.0" />
    <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.5.0" />
    <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.5.0-beta.1" />
    <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.5.0-beta.1" />
@@ -335,7 +334,7 @@ In [step 6](#6-run-the-project), you saw that distributed tracing information wa
 
 Each process in a distributed system produces its own stream of activity information, and like metrics, you need a system to collect, store, and correlate the activities to be able to visualize the work done for each transaction. Jaeger is an open-source project to enable this collection and visualization.
 
-Download the latest binary distribution archive of Jaeger.
+Download the latest binary distribution archive of Jaeger for your platform from [https://www.jaegertracing.io/download/](https://www.jaegertracing.io/download/).
 
 Then, extract the download to a local location that's easy to access. Run the *jaeger-all-in-one(.exe)* executable:
 

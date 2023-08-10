@@ -155,7 +155,7 @@ Create a file named *Dockerfile* in the directory containing the *.csproj* and o
 > [!TIP]
 > This _Dockerfile_ uses multi-stage builds, which optimizes the final size of the image by layering the build and leaving only required artifacts. For more information, see [Docker Docs: multi-stage builds](https://docs.docker.com/build/building/multi-stage/).
 
-The `FROM` keyword requires a fully qualified Docker container image name. The Microsoft Container Registry (MCR, mcr.microsoft.com) is a syndicate of Docker Hub &mdash; which hosts publicly accessible containers. The `dotnet` segment is the container repository, whereas the `sdk` or `aspnet` segment is the container image name. The image is tagged with `7.0`, which is used for versioning. Thus, `mcr.microsoft.com/dotnet/aspnet:7.0` is the .NET 7.0 runtime. Make sure that you pull the runtime version that matches the runtime targeted by your SDK. For example, the app created in the previous section used the .NET 7.0 SDK and the base image referred to in the *Dockerfile* is tagged with **7.0**.
+The `FROM` keyword requires a fully qualified Docker container image name. The Microsoft Container Registry (MCR, mcr.microsoft.com) is a syndicate of Docker Hub—which hosts publicly accessible containers. The `dotnet` segment is the container repository, whereas the `sdk` or `aspnet` segment is the container image name. The image is tagged with `7.0`, which is used for versioning. Thus, `mcr.microsoft.com/dotnet/aspnet:7.0` is the .NET 7.0 runtime. Make sure that you pull the runtime version that matches the runtime targeted by your SDK. For example, the app created in the previous section used the .NET 7.0 SDK and the base image referred to in the *Dockerfile* is tagged with **7.0**.
 
 Save the *Dockerfile* file. The directory structure of the working folder should look like the following. Some of the deeper-level files and folders have been omitted to save space in the article:
 
@@ -259,7 +259,7 @@ Now that you have an image that contains your app, you can create a container. Y
 docker create --name core-counter counter-image
 ```
 
-The `docker create` command from above will create a container based on the **counter-image** image. The output of that command shows you the **CONTAINER ID** (yours will be different) of the created container:
+This `docker create` command will create a container based on the **counter-image** image. The output of that command shows you the **CONTAINER ID** (yours will be different) of the created container:
 
 ```console
 d0be06126f7db6dd1cee369d911262a353c9b7fb4829a0c11b4b2eb7b2d429cf
@@ -355,7 +355,7 @@ Counter: 5
 ^C
 ```
 
-The container also passes parameters into the execution of the .NET app. To instruct the .NET app to count only to 3 pass in 3.
+The container also passes parameters into the execution of the .NET app. To instruct the .NET app to count only to three, pass in 3.
 
 ```console
 docker run -it --rm counter-image 3

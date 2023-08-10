@@ -115,7 +115,7 @@ The preceding .NET CLI command publishes the app as a container:
 > [!TIP]
 > Depending on the type of app you're containerizing, the command-line switches (options) might vary. For example, the `/t:PublishContainer` argument is only required for non-web .NET apps, such as `console` and `worker` templates. For web templates, replace the `/t:PublishContainer` argument with `-p:PublishProfile=DefaultContainer`. For more information, see [.NET SDK container builds, issue #141](https://github.com/dotnet/sdk-container-builds/issues/141).
 
-The command will produce output similar to the following:
+The command produces output similar to the following:
 
 ```dotnetcli
 Determining projects to restore...
@@ -155,7 +155,7 @@ If you set a value here, you should set the fully qualified name of the image to
 
 ### `ContainerRuntimeIdentifier`
 
-The container runtime identifier property controls the operating system and architecture used by your container if your [`ContainerBaseImage`](#containerbaseimage) supports more than one platform. For example, the `mcr.microsoft.com/dotnet/runtime` image currently supports `linux-x64`, `linux-arm`, `linux-arm64` and `win10-x64` images all behind the same tag, so the tooling needs a way to be told which of these versions you intend to use.  By default, this will be set to the value of the `RuntimeIdentifier` that you chose when you published the container.  This property rarely needs to be set explicitly - instead use the `-r` option to the `dotnet publish` command.  If the image you've chosen doesn't support the `RuntimeIdentifier` you've chosen, you'll get an error that describes the RuntimeIdentifiers the image does support.
+The container runtime identifier property controls the operating system and architecture used by your container if your [`ContainerBaseImage`](#containerbaseimage) supports more than one platform. For example, the `mcr.microsoft.com/dotnet/runtime` image currently supports `linux-x64`, `linux-arm`, `linux-arm64` and `win10-x64` images all behind the same tag, so the tooling needs a way to be told which of these versions you intend to use.  By default, this is set to the value of the `RuntimeIdentifier` that you chose when you published the container.  This property rarely needs to be set explicitly - instead use the `-r` option to the `dotnet publish` command.  If the image you've chosen doesn't support the `RuntimeIdentifier` you've chosen, you'll get an error that describes the RuntimeIdentifiers the image does support.
 
 You can always set the `ContainerBaseImage` property to a fully qualified image name, including the tag, to avoid needing to use this property at all.
 
@@ -314,8 +314,8 @@ Consider the following example .NET project item group:
 
 ```xml
 <ItemGroup>
-  <!-- Assuming the ContainerEntrypoint defined above, 
-       this would be the way to update the database by 
+  <!-- Assuming the ContainerEntrypoint defined above,
+       this would be the way to update the database by
        default, but let the user run a different EF command. -->
   <ContainerEntrypointArgs Include="database" />
   <ContainerEntrypointArgs Include="update" />
@@ -351,7 +351,7 @@ dotnet-worker-image   1.0.0     25aeb97a2e21   12 seconds ago   191MB
 > [!TIP]
 > Image files can be large. Typically, you would remove temporary containers you created while testing and developing your app. You usually keep the base images with the runtime installed if you plan on building other images based on that runtime.
 
-To delete the image, copy the image id and run the `docker image rm` command:
+To delete the image, copy the image ID and run the `docker image rm` command:
 
 ```console
 docker image rm 25aeb97a2e21

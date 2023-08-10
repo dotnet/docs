@@ -787,6 +787,9 @@ items:
     - name: Compile-time logging source generation
       href: ../core/extensions/logger-message-generator.md
       displayName: LoggerMessage,LoggerMessageAttribute,source generator,compile-time generation
+    - name: Logging guidance for library authors
+      href: ../core/extensions/logging-library-authors.md
+      displayName: logging guidance,logger guidance,log guidance
     - name: Implement a custom logging provider
       href: ../core/extensions/custom-logging-provider.md
       displayName: custom logging,custom log,custom logging provider,custom log provider

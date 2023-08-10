@@ -113,7 +113,7 @@ In the [Register clients and subclients](#register-clients-and-subclients) secti
     "VaultUri": "https://mykeyvault.vault.azure.net"
   },
   "ServiceBus": {
-    "NamespaceUri": "https://<your-namespace>.servicebus.windows.net"
+    "Namespace": "<your-namespace>.servicebus.windows.net"
   },
   "Storage": {
     "ServiceUri": "https://mydemoaccount.storage.windows.net"

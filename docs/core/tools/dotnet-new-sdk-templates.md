@@ -765,7 +765,7 @@ Creates a web API project with AOT publish enabled. For more information, see [N
 
 - **`--controllers`**, **`--use-controllers`**
 
-  Whether to use controllers instead of minimal APIs. This option overrides the value specified by `--minimal`. Default is `false`.
+  Whether to use controllers instead of minimal APIs. This option overrides the value specified by `-minimal`. Default is `false`.
   
 - **`--domain <DOMAIN>`**
 

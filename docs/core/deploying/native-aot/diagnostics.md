@@ -15,11 +15,11 @@ Native AOT applications have the following characteristics that are important to
 
 ### Trimming as a first-class feature
 
-Unused code in a NativeAOT application is stripped out of the final binary. Any unbounded reflection used by the application, including its dependent libraries, is trimmed. The NativeAOT compiler will generate warnings in such cases, and it's critical that these warnings are fixed. For example, if you suppress any warnings without careful analysis, it can lead to hard to debug production failures.
+Unused code in a native AOT application is stripped out of the final binary. Any unbounded reflection used by the application, including its dependent libraries, is trimmed. The native AOT compiler will generate warnings in such cases, and it's critical that these warnings are fixed. For example, if you suppress any warnings without careful analysis, it can lead to hard to debug production failures.
 
 ### Importance of the symbol file
 
-In native AOT, symbol-file-dependent diagnostics (such as debugging, PerfView callstacks) don't work at all unless the diagnostic tool has access to the monolithic PDB that was generated when the application was compiled. In .NET, symbol-file-dependent diagnostics generally work just fine (or even work great) even if the diagnostic tool has no access to any PDBs that were generated when the application was compiled (that is, symbols for the .NET runtime and the .NET libraries can be pulled from symbol servers, diagnostic tools can still show function names and accurate callstacks even without access to the PDBs generated at application compile time)
+In native AOT, symbol-file-dependent diagnostics (such as debugging, [PerfView](https://github.com/microsoft/perfview) callstacks) don't work at all unless the diagnostic tool has access to the monolithic PDB that was generated when the application was compiled. In .NET, symbol-file-dependent diagnostics generally work just fine (or even work great) even if the diagnostic tool has no access to any PDBs that were generated when the application was compiled (that is, symbols for the .NET runtime and the .NET libraries can be pulled from symbol servers, diagnostic tools can still show function names and accurate callstacks even without access to the PDBs generated at application compile time)
 
 ### Application type
 
@@ -51,7 +51,7 @@ The native AOT runtime supports [EventPipe](../../diagnostics/eventpipe.md), whi
 </PropertyGroup>
 ```
 
-[OpenTelemetry](../../diagnostics/observability-with-otel.md) is expected to support native AOT in the key three pillars of observability: logging, tracing, and metrics in .NET 8. Native AOT provides partial support for and some [well-known event providers](../../diagnostics/well-known-event-providers.md). Not all [runtime events](../../../fundamentals/diagnostics/runtime-events.md) are supported in native AOT.
+[OpenTelemetry](../../diagnostics/observability-with-otel.md) is expected to support native AOT in the key three pillars of observability: logging, tracing, and metrics in .NET 8. Native AOT provides partial support for some [well-known event providers](../../diagnostics/well-known-event-providers.md). Not all [runtime events](../../../fundamentals/diagnostics/runtime-events.md) are supported in native AOT.
 
 ### CPU profiling
 

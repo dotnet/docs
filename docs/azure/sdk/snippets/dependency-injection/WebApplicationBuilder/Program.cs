@@ -13,7 +13,8 @@ builder.Services.AddAzureClients(clientBuilder =>
     // Register clients for each service
     clientBuilder.AddSecretClient(new Uri("<key_vault_url>"));
     clientBuilder.AddBlobServiceClient(new Uri("<storage_url>"));
-    clientBuilder.AddServiceBusClientWithNamespace("<your_namespace>.servicebus.windows.net");
+    clientBuilder.AddServiceBusClientWithNamespace(
+        "<your_namespace>.servicebus.windows.net");
     clientBuilder.UseCredential(new DefaultAzureCredential());
 
     // Register a subclient for each Service Bus Queue
@@ -34,8 +35,9 @@ async Task<List<string>> GetQueueNames()
         ("<your_namespace>.servicebus.windows.net", new DefaultAzureCredential());
     var queueNames = new List<string>();
 
-    // Because the result is async, the queue names need to be captured to a standard list to avoid async
-    // calls when registering. Failure to do so results in an error with the services collection.
+    // Because the result is async, the queue names need to be captured
+    // to a standard list to avoid async calls when registering. Failure to
+    // do so results in an error with the services collection.
     await foreach (QueueProperties queue in adminClient.GetQueuesAsync())
     {
         queueNames.Add(queue.Name);

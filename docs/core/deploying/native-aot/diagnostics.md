@@ -55,7 +55,7 @@ The native AOT runtime supports [EventPipe](../../diagnostics/eventpipe.md), whi
 
 ### CPU profiling
 
-The "Microsoft-DotNETCore-SampleProfiler" provider is not currently supported in native AOT. However, platform-specific tools like [PerfView](https://github.com/microsoft/perfview) and [Perf](https://perf.wiki.kernel.org/index.php/Main_Page) can be used to collect CPU samples of a native AOT application.
+Platform-specific tools like [PerfView](https://github.com/microsoft/perfview) and [Perf](https://perf.wiki.kernel.org/index.php/Main_Page) can be used to collect CPU samples of a native AOT application.
 
 ### Production debugging
 

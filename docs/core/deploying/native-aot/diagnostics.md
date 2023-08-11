@@ -43,7 +43,13 @@ Publishing your app as native AOT produces an app that has been ahead-of-time (A
 
 ### Observability
 
-The native AOT runtime supports [EventPipe](../../diagnostics/eventpipe.md), which allows native AOT apps to easily trace their applications. EventPipe support also allows most .NET diagnostic tools, like [dotnet-trace](../../diagnostics/dotnet-trace.md), [dotnet-counter](../../diagnostics/dotnet-counters.md), and [dotnet-monitor](../../diagnostics/dotnet-monitor.md), to work seamlessly with native AOT applications.
+The native AOT runtime supports [EventPipe](../../diagnostics/eventpipe.md), which allows native AOT apps to easily trace their applications. EventPipe support also allows most .NET diagnostic tools, like [dotnet-trace](../../diagnostics/dotnet-trace.md), [dotnet-counter](../../diagnostics/dotnet-counters.md), and [dotnet-monitor](../../diagnostics/dotnet-monitor.md), to work seamlessly with native AOT applications. EventPipe is an optional component in native AOT and require the `EventSourceSupport` property to be set to `true` to include EventPipe support.
+
+```xml
+<PropertyGroup>
+    <EventSourceSupport>true</EventSourceSupport>
+</PropertyGroup>
+```
 
 [OpenTelemetry](../../diagnostics/observability-with-otel.md) is expected to support native AOT in the key three pillars of observability: logging, tracing, and metrics in .NET 8. Native AOT provides partial support for and some [well-known event providers](../../diagnostics/well-known-event-providers.md). Not all [runtime events](../../../fundamentals/diagnostics/runtime-events.md) are supported in native AOT.
 

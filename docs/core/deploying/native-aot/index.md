@@ -166,7 +166,7 @@ The publish process analyzes the entire project and its dependencies for possibl
 
 ### [.NET 8+](#tab/net8plus)
 
-- Some limitations on [diagnostic support for debugging and profiling](./diagnostics.md).
+- [Diagnostic support for debugging and profiling](./diagnostics.md) with some limitations.
 - Support for some ASP.NET Core features. For more information, see [ASP.NET Core support for native AOT](/aspnet/core/fundamentals/native-aot/?view=aspnetcore-8.0&preserve-view=true).
 
 ---

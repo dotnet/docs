@@ -1,7 +1,7 @@
 ---
-title: Backtracking in .NET Regular Expressions
+title: Backtracking in .NET regular expressions
 description: Learn how to control backtracking in regular expression pattern matching.
-ms.date: "11/12/2018"
+ms.date: 08/11/2023
 dev_langs:
   - "csharp"
   - "vb"
@@ -15,15 +15,14 @@ helpviewer_keywords:
   - "regular expressions [.NET], backtracking"
   - "strings [.NET], regular expressions"
   - "parsing text with regular expressions, backtracking"
-ms.assetid: 34df1152-0b22-4a1c-a76c-3c28c47b70d8
 ---
-# Backtracking in Regular Expressions
+# Backtracking in regular expressions
 
 Backtracking occurs when a regular expression pattern contains optional [quantifiers](quantifiers-in-regular-expressions.md) or [alternation constructs](alternation-constructs-in-regular-expressions.md), and the regular expression engine returns to a previous saved state to continue its search for a match. Backtracking is central to the power of regular expressions; it makes it possible for expressions to be powerful and flexible, and to match very complex patterns. At the same time, this power comes at a cost. Backtracking is often the single most important factor that affects the performance of the regular expression engine. Fortunately, the developer has control over the behavior of the regular expression engine and how it uses backtracking. This topic explains how backtracking works and how it can be controlled.
 
 [!INCLUDE [regex](../../../includes/regex.md)]
 
-## Linear Comparison Without Backtracking
+## Linear comparison without backtracking
 
  If a regular expression pattern has no optional quantifiers or alternation constructs, the regular expression engine executes in linear time. That is, after the regular expression engine matches the first language element in the pattern with text in the input string, it tries to match the next language element in the pattern with the next character or group of characters in the input string. This continues until the match either succeeds or fails. In either case, the regular expression engine advances by one character at a time in the input string.
 
@@ -58,7 +57,7 @@ Backtracking occurs when a regular expression pattern contains optional [quantif
 
  If a regular expression pattern includes no optional quantifiers or alternation constructs, the maximum number of comparisons required to match the regular expression pattern with the input string is roughly equivalent to the number of characters in the input string. In this case, the regular expression engine uses 19 comparisons to identify possible matches in this 13-character string.  In other words, the regular expression engine runs in near-linear time if it contains no optional quantifiers or alternation constructs.
 
-## Backtracking with Optional Quantifiers or Alternation Constructs
+## Backtracking with optional quantifiers or alternation constructs
 
  When a regular expression includes optional quantifiers or alternation constructs, the evaluation of the input string is no longer linear. Pattern matching with an Nondeterministic Finite Automaton (NFA) engine is driven by the language elements in the regular expression and not by the characters to be matched in the input string. Therefore, the regular expression engine tries to fully match optional or alternative subexpressions. When it advances to the next language element in the subexpression and the match is unsuccessful, the regular expression engine can abandon a portion of its successful match and return to an earlier saved state in the interest of matching the regular expression as a whole with the input string. This process of returning to a previous saved state to find a match is known as backtracking.
 
@@ -81,43 +80,42 @@ Backtracking occurs when a regular expression pattern contains optional [quantif
 
  When you use backtracking, matching the regular expression pattern with the input string, which is 55 characters long, requires 67 comparison operations. Generally, if a regular expression pattern has a single alternation construct or a single optional quantifier, the number of comparison operations required to match the pattern is more than twice the number of characters in the input string.
 
-## Backtracking with Nested Optional Quantifiers
+## Backtracking with nested optional quantifiers
 
  The number of comparison operations required to match a regular expression pattern can increase exponentially if the pattern includes a large number of alternation constructs, if it includes nested alternation constructs, or, most commonly, if it includes nested optional quantifiers. For example, the regular expression pattern `^(a+)+$` is designed to match a complete string that contains one or more "a" characters. The example provides two input strings of identical length, but only the first string matches the pattern. The <xref:System.Diagnostics.Stopwatch?displayProperty=nameWithType> class is used to determine how long the match operation takes.
 
  [!code-csharp[Conceptual.RegularExpressions.Backtracking#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/cs/backtracking3.cs#3)]
  [!code-vb[Conceptual.RegularExpressions.Backtracking#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/vb/backtracking3.vb#3)]
 
- As the output from the example shows, the regular expression engine took significantly longer to find that an input string did not match the pattern as it did to identify a matching string. This is because an unsuccessful match always represents a worst-case scenario. The regular expression engine must use the regular expression to follow all possible paths through the data before it can conclude that the match is unsuccessful, and the nested parentheses create many additional paths through the data. The regular expression engine concludes that the second string did not match the pattern by doing the following:
+ As the output from the example shows, the regular expression engine took significantly longer to find that an input string *did not match* the pattern as it did to identify a matching string. This is because an unsuccessful match always represents a worst-case scenario. The regular expression engine must use the regular expression to follow all possible paths through the data before it can conclude that the match is unsuccessful, and the nested parentheses create many additional paths through the data. The regular expression engine concludes that the second string did not match the pattern by doing the following:
 
-- It checks that it was at the beginning of the string, and then matches the first five characters in the string with the pattern `a+`. It then determines that there are no additional groups of "a" characters in the string. Finally, it tests for the end of the string. Because one additional character remains in the string, the match fails. This failed match requires 9 comparisons. The regular expression engine also saves state information from its matches of "a" (which we will call match 1), "aa" (match 2), "aaa" (match 3), and "aaaa" (match 4).
+- It checks that it was at the beginning of the string, and then matches the first five characters in the string with the pattern `a+`. It then determines that there are no additional groups of "a" characters in the string. Finally, it tests for the end of the string. Because one additional character remains in the string, the match fails. This failed match requires 9 comparisons. The regular expression engine also saves state information from its matches of "a" (which we'll call match 1), "aa" (match 2), "aaa" (match 3), and "aaaa" (match 4).
 
 - It returns to the previously saved match 4. It determines that there is one additional "a" character to assign to an additional captured group. Finally, it tests for the end of the string. Because one additional character remains in the string, the match fails. This failed match requires 4 comparisons. So far, a total of 13 comparisons have been performed.
 
-- It returns to the previously saved match 3. It determines that there are two additional "a" characters to assign to an additional captured group. However, the end-of-string test fails. It then returns to match3 and tries to match the two additional "a" characters in two additional captured groups. The end-of-string test still fails. These failed matches require 12 comparisons. So far, a total of 25 comparisons have been performed.
+- It returns to the previously saved match 3. It determines that there are two additional "a" characters to assign to an additional captured group. However, the end-of-string test fails. It then returns to match 3 and tries to match the two additional "a" characters in two additional captured groups. The end-of-string test still fails. These failed matches require 12 comparisons. So far, a total of 25 comparisons have been performed.
 
  Comparison of the input string with the regular expression continues in this way until the regular expression engine has tried all possible combinations of matches, and then concludes that there is no match. Because of the nested quantifiers, this comparison is an O(2<sup>n</sup>) or an exponential operation, where *n* is the number of characters in the input string. This means that in the worst case, an input string of 30 characters requires approximately 1,073,741,824 comparisons, and an input string of 40 characters requires approximately 1,099,511,627,776 comparisons. If you use strings of these or even greater lengths, regular expression methods can take an extremely long time to complete when they process input that does not match the regular expression pattern.
 
-## Controlling Backtracking
+## Control backtracking
 
- Backtracking lets you create powerful, flexible regular expressions. However, as the previous section showed, these benefits may be coupled with unacceptably poor performance. To prevent excessive backtracking, you should define a time-out interval when you instantiate a <xref:System.Text.RegularExpressions.Regex> object or call a static regular expression matching method. This is discussed in the next section. In addition, .NET supports three regular expression language elements that limit or suppress backtracking and that support complex regular expressions with little or no performance penalty: [atomic groups](#atomic-groups), [lookbehind assertions](#lookbehind-assertions), and [lookahead assertions](#lookahead-assertions). For more information about each language element, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).
+ Backtracking lets you create powerful, flexible regular expressions. However, as the previous section showed, these benefits may be coupled with unacceptably poor performance. To prevent excessive backtracking, you should define a time-out interval when you instantiate a <xref:System.Text.RegularExpressions.Regex> object or call a static regular expression matching method. This is discussed in the next section. In addition, .NET supports three regular expression language elements that limit or suppress backtracking and that support complex regular expressions with little or no performance penalty: [atomic groups](#atomic-groups), [lookbehind assertions](#lookbehind-assertions), and [lookahead assertions](#lookahead-assertions). For more information about each language element, see [Grouping constructs](grouping-constructs-in-regular-expressions.md).
 
-### Consider the non-backtracking regular expression engine
+### Non-backtracking regular expression engine
 
- If you do not need to use any constructs that require backtracking (e.g. lookarounds, backreferences, atomic groups), consider using the <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> mode. This mode is designed to execute in time proportional to the length of the input. See [NonBacktracking mode](regular-expression-options.md#nonbacktracking-mode) for more information. You can additionally set a time-out value.
+If you don't need to use any constructs that require backtracking (for example, lookarounds, backreferences, or atomic groups), consider using the <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> mode. This mode is designed to execute in time proportional to the length of the input. For more information, see [NonBacktracking mode](regular-expression-options.md#nonbacktracking-mode). You can also set a time-out value.
 
 ### Limit the size of inputs
 
  Some regular expressions have acceptable performance unless the input is exceptionally large. If all reasonable text inputs in your scenario are known to be under a certain length, consider rejecting longer inputs before applying the regular expression to them.
 
-### Specify a Time-out Interval
+### Specify a time-out interval
 
  You can set a time-out value that represents the longest interval the regular expression engine will search for a single match before it abandons the attempt and throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. You specify the time-out interval by supplying a <xref:System.TimeSpan> value to the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29> constructor for instance regular expressions. In addition, each static pattern matching method has an overload with a <xref:System.TimeSpan> parameter that allows you to specify a time-out value.
 
-If you do not set a time-out value explicitly, the default time-out value is determined as follows:
+If you don't set a time-out value explicitly, the default time-out value is determined as follows:
 
 - By using the application-wide time-out value, if one exists. This can be any time-out value that applies to the application domain in which the <xref:System.Text.RegularExpressions.Regex> object is instantiated or the static method call is made. You can set the application-wide time-out value by calling the <xref:System.AppDomain.SetData%2A?displayProperty=nameWithType> method to assign the string representation of a <xref:System.TimeSpan> value to the "REGEX_DEFAULT_MATCH_TIMEOUT" property.
-
 - By using the value <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout>, if no application-wide time-out value has been set.
 
  By default, the time-out interval is set to <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=nameWithType> and the regular expression engine does not time out.
@@ -125,27 +123,27 @@ If you do not set a time-out value explicitly, the default time-out value is det
 > [!IMPORTANT]
 > When not using <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType>, we recommend that you always set a time-out interval if your regular expression relies on backtracking or operates on untrusted inputs.
 
- A <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception indicates that the regular expression engine was unable to find a match within the specified time-out interval but does not indicate why the exception was thrown. The reason might be excessive backtracking, but it is also possible that the time-out interval was set too low given the system load at the time the exception was thrown. When you handle the exception, you can choose to abandon further matches with the input string or increase the time-out interval and retry the matching operation.
+ A <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception indicates that the regular expression engine was unable to find a match within the specified time-out interval but does not indicate why the exception was thrown. The reason might be excessive backtracking, but it's also possible that the time-out interval was set too low given the system load at the time the exception was thrown. When you handle the exception, you can choose to abandon further matches with the input string or increase the time-out interval and retry the matching operation.
 
- For example, the following code calls the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29> constructor to instantiate a <xref:System.Text.RegularExpressions.Regex> object with a time-out value of one second. The regular expression pattern `(a+)+$`, which matches one or more sequences of one or more "a" characters at the end of a line, is subject to excessive backtracking. If a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> is thrown, the example increases the time-out value up to a maximum interval of three seconds. After that, it abandons the attempt to match the pattern.
+ For example, the following code calls the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29> constructor to instantiate a <xref:System.Text.RegularExpressions.Regex> object with a time-out value of 1 second. The regular expression pattern `(a+)+$`, which matches one or more sequences of one or more "a" characters at the end of a line, is subject to excessive backtracking. If a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> is thrown, the example increases the time-out value up to a maximum interval of 3 seconds. After that, it abandons the attempt to match the pattern.
 
  [!code-csharp[System.Text.RegularExpressions.Regex.ctor#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.regex.ctor/cs/ctor1.cs#1)]
  [!code-vb[System.Text.RegularExpressions.Regex.ctor#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.regex.ctor/vb/ctor1.vb#1)]
 
 ### Atomic groups
 
- The `(?>` *subexpression*`)` language element is an atomic grouping. It prevents backtracking into the subexpression. Once this language element has successfully matched, it will not give up any part of its match to subsequent backtracking. For example, in the pattern `(?>\w*\d*)1`, if the `1` cannot be matched, the `\d*` will not give up any of its match even if that means it would allow the `1` to successfully match. Atomic groups can help prevent the performance problems associated with failed matches.
+ The `(?>`*subexpression*`)` language element is an atomic grouping. It prevents backtracking into the subexpression. Once this language element has successfully matched, it will not give up any part of its match to subsequent backtracking. For example, in the pattern `(?>\w*\d*)1`, if the `1` cannot be matched, the `\d*` will not give up any of its match even if that means it would allow the `1` to successfully match. Atomic groups can help prevent the performance problems associated with failed matches.
 
  The following example illustrates how suppressing backtracking improves performance when using nested quantifiers. It measures the time required for the regular expression engine to determine that an input string does not match two regular expressions. The first regular expression uses backtracking to attempt to match a string that contains one or more occurrences of one or more hexadecimal digits, followed by a colon, followed by one or more hexadecimal digits, followed by two colons. The second regular expression is identical to the first, except that it disables backtracking. As the output from the example shows, the performance improvement from disabling backtracking is significant.
 
  [!code-csharp[Conceptual.RegularExpressions.Backtracking#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/cs/backtracking4.cs#4)]
  [!code-vb[Conceptual.RegularExpressions.Backtracking#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/vb/backtracking4.vb#4)]
 
-### Lookbehind Assertions
+### Lookbehind assertions
 
  .NET includes two language elements, `(?<=`*subexpression*`)` and `(?<!`*subexpression*`)`, that match the previous character or characters in the input string. Both language elements are zero-width assertions; that is, they determine whether the character or characters that immediately precede the current character can be matched by *subexpression*, without advancing or backtracking.
 
- `(?<=` *subexpression* `)` is a positive lookbehind assertion; that is, the character or characters before the current position must match *subexpression*. `(?<!`*subexpression*`)` is a negative lookbehind assertion; that is, the character or characters before the current position must not match *subexpression*. Both positive and negative lookbehind assertions are most useful when *subexpression* is a subset of the previous subexpression.
+ `(?<=`*subexpression*`)` is a positive lookbehind assertion; that is, the character or characters before the current position must match *subexpression*. `(?<!`*subexpression*`)` is a negative lookbehind assertion; that is, the character or characters before the current position must not match *subexpression*. Both positive and negative lookbehind assertions are most useful when *subexpression* is a subset of the previous subexpression.
 
  The following example uses two equivalent regular expression patterns that validate the user name in an email address. The first pattern is subject to poor performance because of excessive backtracking. The second pattern modifies the first regular expression by replacing a nested quantifier with a positive lookbehind assertion. The output from the example displays the execution time of the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method.
 
@@ -173,11 +171,11 @@ If you do not set a time-out value explicitly, the default time-out value is det
 |`(?<=[0-9A-Z])`|Look back at the last matched character and continue the match if it is alphanumeric. Note that alphanumeric characters are a subset of the set that consists of periods, hyphens, and all word characters.|
 |`@`|Match an at sign ("\@").|
 
-### Lookahead Assertions
+### Lookahead assertions
 
  .NET includes two language elements, `(?=`*subexpression*`)` and `(?!`*subexpression*`)`, that match the next character or characters in the input string. Both language elements are zero-width assertions; that is, they determine whether the character or characters that immediately follow the current character can be matched by *subexpression*, without advancing or backtracking.
 
- `(?=` *subexpression* `)` is a positive lookahead assertion; that is, the character or characters after the current position must match *subexpression*. `(?!`*subexpression*`)` is a negative lookahead assertion; that is, the character or characters after the current position must not match *subexpression*. Both positive and negative lookahead assertions are most useful when *subexpression* is a subset of the next subexpression.
+ `(?=`*subexpression*`)` is a positive lookahead assertion; that is, the character or characters after the current position must match *subexpression*. `(?!`*subexpression*`)` is a negative lookahead assertion; that is, the character or characters after the current position must not match *subexpression*. Both positive and negative lookahead assertions are most useful when *subexpression* is a subset of the next subexpression.
 
  The following example uses two equivalent regular expression patterns that validate a fully qualified type name. The first pattern is subject to poor performance because of excessive backtracking. The second modifies the first regular expression by replacing a nested quantifier with a positive lookahead assertion. The output from the example displays the execution time of the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method.
 
@@ -205,7 +203,7 @@ If you do not set a time-out value explicitly, the default time-out value is det
 |`[A-Z]\w*`|Match an alphabetical character followed by zero or more word characters.|
 |`$`|End the match at the end of the input string.|
 
-### General Performance Considerations
+### General performance considerations
 
 The following suggestions are not specifically to prevent excessive backtracking, but may help increase the performance of your regular expression:
 
@@ -217,7 +215,7 @@ The following suggestions are not specifically to prevent excessive backtracking
 
 1. Gather only the information you need. If you only need to know whether a match occurs but not where the match occurs, prefer <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType>. If you only need to know how many times something matches, prefer using <xref:System.Text.RegularExpressions.Regex.Count%2A?displayProperty=nameWithType>. If you only need to know the bounds of a match but not anything about a match's captures, prefer using <xref:System.Text.RegularExpressions.Regex.EnumerateMatches%2A?displayProperty=nameWithType>. The less information the engine needs to provide, the better.
 
-1. Avoid unnecessary captures. Parentheses in your pattern by default form a capturing group. If you don't need captures, either specify <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> or use [non-capturing groups](grouping-constructs-in-regular-expressions.md#noncapturing-groups) instead. This saves the engine keeping track of those captures.
+1. Avoid unnecessary captures. Parentheses in your pattern form a capturing group by default. If you don't need captures, either specify <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> or use [non-capturing groups](grouping-constructs-in-regular-expressions.md#noncapturing-groups) instead. This saves the engine keeping track of those captures.
 
 ## See also
 

@@ -8,7 +8,7 @@ Imports System.Text.RegularExpressions
 Module Example
     Public Sub Main()
         Dim pattern As String = "^(a+)+$"
-        Dim inputs() As String = {"aaaaaa", "aaaaa!"}
+        Dim inputs() As String = {"aaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaaa!"}
         Dim rgx As New Regex(pattern)
         Dim sw As Stopwatch
 
@@ -24,4 +24,6 @@ Module Example
         Next
     End Sub
 End Module
+'    Matched aaaaaaaaaaaaaaaaaaaaaaaaaaa in 00:00:00.0018281
+'    No match found in 00:00:05.1882144
 ' </Snippet3>

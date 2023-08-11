@@ -5,24 +5,25 @@ using System.Text.RegularExpressions;
 
 public class Example
 {
-   public static void Main()
-   {
-      string pattern = "^(a+)+$";
-      string[] inputs = { "aaaaaa", "aaaaa!" };
-      Regex rgx = new Regex(pattern);
-      Stopwatch sw;
+    public static void Main()
+    {
+        string pattern = "^(a+)+$";
+        string[] inputs = { "aaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaaa!" };
+        Regex rgx = new Regex(pattern);
+        Stopwatch sw;
 
-      foreach (string input in inputs) {
-         sw = Stopwatch.StartNew();
-         Match match = rgx.Match(input);
-         sw.Stop();
-         if (match.Success)
-            Console.WriteLine("Matched {0} in {1}", match.Value, sw.Elapsed);
-         else
-            Console.WriteLine("No match found in {0}", sw.Elapsed);
-      }
-   }
+        foreach (string input in inputs)
+        {
+            sw = Stopwatch.StartNew();
+            Match match = rgx.Match(input);
+            sw.Stop();
+            if (match.Success)
+                Console.WriteLine($"Matched {match.Value} in {sw.Elapsed}");
+            else
+                Console.WriteLine($"No match found in {sw.Elapsed}");
+        }
+    }
 }
-//    Matched aaaaaa in 00:00:00.0007086
-//    No match found in 00:00:00.0000829
+//    Matched aaaaaaaaaaaaaaaaaaaaaaaaaaa in 00:00:00.0018281
+//    No match found in 00:00:05.1882144
 // </Snippet3>

@@ -1,18 +1,51 @@
 ﻿#region snippet_WebApplicationBuilder
 using Azure.Identity;
+using Azure.Messaging.ServiceBus;
+using Azure.Messaging.ServiceBus.Administration;
 using Microsoft.Extensions.Azure;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
+List<string> queueNames = await GetQueueNames();
+
 builder.Services.AddAzureClients(clientBuilder =>
 {
+    // Register clients for each service
     clientBuilder.AddSecretClient(new Uri("<key_vault_url>"));
     clientBuilder.AddBlobServiceClient(new Uri("<storage_url>"));
+    clientBuilder.AddServiceBusClientWithNamespace(
+        "<your_namespace>.servicebus.windows.net");
     clientBuilder.UseCredential(new DefaultAzureCredential());
+
+    // Register a subclient for each Service Bus Queue
+    foreach (string queue in queueNames)
+    {
+        clientBuilder.AddClient<ServiceBusSender, ServiceBusClientOptions>(
+            (_, _, provider) => provider.GetService<ServiceBusClient>()
+                    .CreateSender(queue)).WithName(queue);
+    }
 });
 
 WebApplication app = builder.Build();
-#endregion snippet_WebApplicationBuilder
+
+async Task<List<string>> GetQueueNames()
+{
+    // Query the available queues for the Service Bus namespace.
+    var adminClient = new ServiceBusAdministrationClient
+        ("<your_namespace>.servicebus.windows.net", new DefaultAzureCredential());
+    var queueNames = new List<string>();
+
+    // Because the result is async, the queue names need to be captured
+    // to a standard list to avoid async calls when registering. Failure to
+    // do so results in an error with the services collection.
+    await foreach (QueueProperties queue in adminClient.GetQueuesAsync())
+    {
+        queueNames.Add(queue.Name);
+    }
+
+    return queueNames;
+}
+#endregion
 
 if (app.Environment.IsDevelopment())
 {

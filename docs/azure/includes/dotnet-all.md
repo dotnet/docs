@@ -452,7 +452,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [4.4.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.4.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventGrid | NuGet [3.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.3.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [5.5.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/5.5.0) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.0.13](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.0.13) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [3.9.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/3.9.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.OpenApi | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/2.0.0-preview2) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ/2.0.3) |  |  |
@@ -484,7 +484,7 @@
 | Functions Extensions - Cosmos DB Mongo | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.Mongo/1.0.2) |  |  |
 | Functions Extensions - Dapr | NuGet [0.15.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Dapr/0.15.0-preview01) |  |  |
 | Functions Extensions - Dapr Core | NuGet [0.15.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Dapr.Core/0.15.0-preview01) |  |  |
-| Functions Extensions - HTTP AspNet Core | NuGet [1.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore/1.0.0-preview2) |  |  |
+| Functions Extensions - HTTP AspNet Core | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore/1.0.0-preview4) |  |  |
 | Functions Extensions - Redis | NuGet [0.3.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Redis/0.3.1-preview) |  |  |
 | Functions Extensions - Redis | NuGet [0.3.1-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Redis/0.3.1-preview) |  |  |
 | Functions Extensions - WebPubSub | NuGet [1.5.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.WebPubSub/1.5.0-beta.1) |  |  |

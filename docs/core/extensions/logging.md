@@ -621,4 +621,5 @@ await host.RunAsync();
 - [Implement a custom logging provider in .NET](custom-logging-provider.md)
 - [Console log formatting](console-log-formatter.md)
 - [High-performance logging in .NET](high-performance-logging.md)
+- [Logging guidance for .NET library authors](logging-library-authors.md)
 - Logging bugs should be created in the [github.com/dotnet/runtime](https://github.com/dotnet/runtime//issues) repo

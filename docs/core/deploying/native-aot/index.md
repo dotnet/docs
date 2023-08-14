@@ -131,7 +131,7 @@ By default, native AOT publishing produces debug information in a separate file:
 - Windows: *.pdb*
 - macOS: *.dwarf*
 
-The debug file is necessary for running the app under the debugger or inspecting crash dumps. On Unix-like platforms, set the `StripSymbols` property to `false` to include the debug information in the native binary. Including debug information makes the native binary larger.
+The debug file is necessary for running the app under the [debugger or inspecting crash dumps](./diagnostics.md#importance-of-the-symbol-file). On Unix-like platforms, set the `StripSymbols` property to `false` to include the debug information in the native binary. Including debug information makes the native binary larger.
 
 ```xml
 <PropertyGroup>
@@ -166,7 +166,7 @@ The publish process analyzes the entire project and its dependencies for possibl
 
 ### [.NET 8+](#tab/net8plus)
 
-- Some limitations on diagnostic support for debugging and profiling.
+- [Diagnostic support for debugging and profiling](./diagnostics.md) with some limitations.
 - Support for some ASP.NET Core features. For more information, see [ASP.NET Core support for native AOT](/aspnet/core/fundamentals/native-aot/?view=aspnetcore-8.0&preserve-view=true).
 
 ---

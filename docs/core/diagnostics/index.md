@@ -9,6 +9,8 @@ ms.topic: overview
 
 Software doesn't always behave as you would expect, but .NET Core has tools and APIs that will help you diagnose these issues quickly and effectively.
 
+[Native AOT deployment](../../core/deploying/native-aot/index.md) is an application model that's been available since .NET 7. For information about .NET 8 diagnostic support for native AOT apps, see [Native AOT diagnostics](../../core/deploying/native-aot/diagnostics.md).
+
 This article helps you find the various tools you need.
 
 ## Debuggers

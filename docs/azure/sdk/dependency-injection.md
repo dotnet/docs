@@ -26,39 +26,43 @@ To register and configure service clients from an [`Azure.`-prefixed package](pa
     dotnet add package Azure.Identity
     ```
 
-For demonstration purposes, the sample code in this article uses the Key Vault Secrets and Blob Storage libraries. Install the following packages to follow along:
+For demonstration purposes, the sample code in this article uses the Key Vault Secrets, Blob Storage, and Service Bus libraries. Install the following packages to follow along:
 
 ```dotnetcli
 dotnet add package Azure.Security.KeyVault.Secrets
 dotnet add package Azure.Storage.Blobs
+dotnet add package Azure.Messaging.ServiceBus
 ```
 
-## Register clients
+## Register clients and subclients
+
+A service client is the entry point to the API for an Azure service – from it, library users can invoke all operations the service provides and can easily implement the most common scenarios. Where it will simplify an API's design, groups of service calls can be organized around smaller subclient types. For example, `ServiceBusClient` can register additional `ServiceBusSender` subclients for publishing messages or `ServiceBusReceiver` subclients for consuming messages.
 
 In the *Program.cs* file, invoke the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method to register a client for each service. The following code samples provide guidance on application builders from the `Microsoft.AspNetCore.Builder` and `Microsoft.Extensions.Hosting` namespaces.
 
 ### [WebApplicationBuilder](#tab/web-app-builder)
 
-:::code language="csharp" source="snippets/dependency-injection/WebApplicationBuilder/Program.cs" id="snippet_WebApplicationBuilder" highlight="6-11":::
+:::code language="csharp" source="snippets/dependency-injection/WebApplicationBuilder/Program.cs" id="snippet_WebApplicationBuilder" highlight="10-26":::
 
 ### [HostApplicationBuilder](#tab/host-app-builder)
 
-:::code language="csharp" source="snippets/dependency-injection/HostApplicationBuilder/Program.cs" highlight="7-12":::
+:::code language="csharp" source="snippets/dependency-injection/HostApplicationBuilder/Program.cs" highlight="12-30":::
 
 ### [HostBuilder](#tab/host-builder)
 
-:::code language="csharp" source="snippets/dependency-injection/HostBuilder/Program.cs" id="snippet_HostBuilder" highlight="8-13":::
+:::code language="csharp" source="snippets/dependency-injection/HostBuilder/Program.cs" id="snippet_HostBuilder" highlight="11-27":::
 
 ---
 
 In the preceding code:
 
-* Key Vault Secrets and Blob Storage clients are registered using <xref:Microsoft.Extensions.Azure.SecretClientBuilderExtensions.AddSecretClient%2A> and <xref:Microsoft.Extensions.Azure.BlobClientBuilderExtensions.AddBlobServiceClient%2A>, respectively. The `Uri`-typed arguments are passed. To avoid specifying these URLs explicitly, see the [Store configuration separately from code](#store-configuration-separately-from-code) section.
+* Key Vault Secrets, Blob Storage, and Service Bus clients are registered using the <xref:Microsoft.Extensions.Azure.SecretClientBuilderExtensions.AddSecretClient%2A>, <xref:Microsoft.Extensions.Azure.BlobClientBuilderExtensions.AddBlobServiceClient%2A> and <xref:Microsoft.Extensions.Azure.ServiceBusClientBuilderExtensions.AddServiceBusClientWithNamespace%2A>, respectively. The `Uri`- and `string`-typed arguments are passed. To avoid specifying these URLs explicitly, see the [Store configuration separately from code](#store-configuration-separately-from-code) section.
 * <xref:Azure.Identity.DefaultAzureCredential> is used to satisfy the `TokenCredential` argument requirement for each registered client. When one of the clients is created, `DefaultAzureCredential` is used to authenticate.
+* Service Bus subclients are registered for each queue on the service using the subclient and corresponding options types. The queue names for the subclients are retrieved using a separate method outside of the service registration because the `GetQueuesAsync` method must be run asynchronously.
 
 ## Use the registered clients
 
-With the clients registered, as described in the [Register clients](#register-clients) section, you can now use them. In the following example, [constructor injection](../../core/extensions/dependency-injection.md#constructor-injection-behavior) is used to obtain the Blob Storage client in an ASP.NET Core API controller:
+With the clients registered, as described in the [Register clients and subclients](#register-clients-and-subclients) section, you can now use them. In the following example, [constructor injection](/dotnet/core/extensions/dependency-injection#constructor-injection-behavior) is used to obtain the Blob Storage client in an ASP.NET Core API controller:
 
 ```csharp
 [ApiController]
@@ -91,7 +95,7 @@ public class MyApiController : ControllerBase
 
 ## Store configuration separately from code
 
-In the [Register clients](#register-clients) section, you explicitly passed the `Uri`-typed variables to the client constructors. This approach could cause problems when you run code against different environments during development and production. The .NET team suggests [storing such configurations in environment-dependent JSON files](../../core/extensions/configuration-providers.md#json-configuration-provider). For example, you can have an *appsettings.Development.json* file containing development environment settings. Another *appsettings.Production.json* file would contain production environment settings, and so on. The file format is:
+In the [Register clients and subclients](#register-clients-and-subclients) section, you explicitly passed the `Uri`-typed variables to the client constructors. This approach could cause problems when you run code against different environments during development and production. The .NET team suggests [storing such configurations in environment-dependent JSON files](../../core/extensions/configuration-providers.md#json-configuration-provider). For example, you can have an *appsettings.Development.json* file containing development environment settings. Another *appsettings.Production.json* file would contain production environment settings, and so on. The file format is:
 
 ```json
 {
@@ -107,6 +111,9 @@ In the [Register clients](#register-clients) section, you explicitly passed the 
   },
   "KeyVault": {
     "VaultUri": "https://mykeyvault.vault.azure.net"
+  },
+  "ServiceBus": {
+    "Namespace": "<your_namespace>.servicebus.windows.net"
   },
   "Storage": {
     "ServiceUri": "https://mydemoaccount.storage.windows.net"
@@ -127,6 +134,9 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.AddBlobServiceClient(
         builder.Configuration.GetSection("Storage"));
 
+    clientBuilder.AddServiceBusClientWithNamespace(
+        builder.Configuration["ServiceBus:Namespace"]);
+
     clientBuilder.UseCredential(new DefaultAzureCredential());
 
     // Set up any default settings
@@ -145,6 +155,9 @@ builder.Services.AddAzureClients(clientBuilder =>
 
     clientBuilder.AddBlobServiceClient(
         builder.Configuration.GetSection("Storage"));
+
+    clientBuilder.AddServiceBusClientWithNamespace(
+        builder.Configuration["ServiceBus:Namespace"]);
 
     clientBuilder.UseCredential(new DefaultAzureCredential());
 
@@ -169,6 +182,9 @@ IHost host = Host.CreateDefaultBuilder(args)
             clientBuilder.AddBlobServiceClient(
                 hostContext.Configuration.GetSection("Storage"));
 
+            clientBuilder.AddServiceBusClientWithNamespace(
+                hostContext.Configuration["ServiceBus:Namespace"]);
+
             clientBuilder.UseCredential(new DefaultAzureCredential());
 
             // Set up any default settings
@@ -183,11 +199,11 @@ IHost host = Host.CreateDefaultBuilder(args)
 
 In the preceding JSON sample:
 
-* The top-level key names, `AzureDefaults`, `KeyVault`, and `Storage`, are arbitrary. All other key names hold significance, and JSON serialization is performed in a case-insensitive manner.
+* The top-level key names, `AzureDefaults`, `KeyVault`, `ServiceBus`, and `Storage`, are arbitrary. All other key names hold significance, and JSON serialization is performed in a case-insensitive manner.
 * The `AzureDefaults.Retry` object literal:
   * Represents the [retry policy configuration settings](#configure-a-new-retry-policy).
   * Corresponds to the <xref:Azure.Core.ClientOptions.Retry> property. Within that object literal, you find the `MaxRetries` key, which corresponds to the <xref:Azure.Core.RetryOptions.MaxRetries> property.
-* The `KeyVault:VaultUri` and `Storage:ServiceUri` key values map to the `Uri`-typed arguments of the <xref:Azure.Security.KeyVault.Secrets.SecretClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Security.KeyVault.Secrets.SecretClientOptions)?displayProperty=fullName> and <xref:Azure.Storage.Blobs.BlobServiceClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)?displayProperty=fullName> constructor overloads, respectively. The `TokenCredential` variants of the constructors are used because a default `TokenCredential` is set via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(Azure.Core.TokenCredential)?displayProperty=fullName> method call.
+* The `KeyVault:VaultUri`, `ServiceBus:Namespace`, and `Storage:ServiceUri` key values map to the `Uri`- and `string`-typed arguments of the <xref:Azure.Security.KeyVault.Secrets.SecretClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Security.KeyVault.Secrets.SecretClientOptions)?displayProperty=fullName>, <xref:Azure.Messaging.ServiceBus.ServiceBusClient.%23ctor(System.String)?displayProperty=fullName>, and <xref:Azure.Storage.Blobs.BlobServiceClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)?displayProperty=fullName> constructor overloads, respectively. The `TokenCredential` variants of the constructors are used because a default `TokenCredential` is set via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(Azure.Core.TokenCredential)?displayProperty=fullName> method call.
 
 ## Configure multiple service clients with different names
 
@@ -239,6 +255,9 @@ At some point, you may want to change the default settings for a service client.
   "KeyVault": {
     "VaultUri": "https://mykeyvault.vault.azure.net"
   },
+  "ServiceBus": {
+    "Namespace": "<your_namespace>.servicebus.windows.net"
+  },
   "Storage": {
     "ServiceUri": "https://store1.storage.windows.net"
   },
@@ -266,6 +285,10 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.AddBlobServiceClient(
             builder.Configuration.GetSection("Storage"))
         .ConfigureOptions(options => options.Retry.MaxRetries = 10);
+
+    clientBuilder.AddServiceBusClientWithNamespace(
+            builder.Configuration["ServiceBus:Namespace"])
+        .ConfigureOptions(options => options.RetryOptions.MaxRetries = 10);
 
     // A named storage client with a different custom retry policy
     clientBuilder.AddBlobServiceClient(

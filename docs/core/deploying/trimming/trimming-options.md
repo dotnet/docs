@@ -3,7 +3,7 @@ title: Trimming options
 description: Learn how to control trimming of self-contained apps.
 author: sbomer
 ms.author: svbomer
-ms.date: 08/25/2020
+ms.date: 08/10/2023
 ms.topic: reference
 zone_pivot_groups: dotnet-version
 ---
@@ -45,7 +45,11 @@ This setting also enables the trim-compatibility [Roslyn analyzer](#roslyn-analy
 
 :::zone pivot="dotnet-7-0"
 
-The default is to trim all assemblies in the app. This can be changed using the `TrimMode` property.
+Use the `TrimMode` property to set the trimming granularity to either `partial` or `full`. The default setting for console apps (and, starting in .NET 8, Web SDK apps) is `full`:
+
+```csharp
+<TrimMode>full</TrimMode>
+```
 
 To only trim assemblies that have opted-in to trimming, set the property to `partial`:
 
@@ -53,11 +57,15 @@ To only trim assemblies that have opted-in to trimming, set the property to `par
 <TrimMode>partial</TrimMode>
 ```
 
-The default setting is `full`:
+If you change the trim mode to `partial`, you can opt-in individual assemblies to trimming by using a `<TrimmableAssembly>` MSBuild item.
 
-```csharp
-<TrimMode>full</TrimMode>
+```xml
+<ItemGroup>
+  <TrimmableAssembly Include="MyAssembly" />
+</ItemGroup>
 ```
+
+This is equivalent to setting `[AssemblyMetadata("IsTrimmable", "True")]` when building the assembly.
 
 :::zone-end
 
@@ -84,20 +92,6 @@ In .NET 6+, `PublishTrimmed` trims assemblies with the following assembly-level 
 ```
 
 The framework libraries have this attribute. In .NET 6+, you can also opt in to trimming for a library without this attribute, specifying the assembly by name (without the `.dll` extension).
-
-:::zone-end
-
-:::zone pivot="dotnet-7-0"
-In .NET 7, `<TrimMode>full</TrimMode>` is the default, but if you change the trim mode to `partial`, you can
-opt-in individual assemblies to trimming.
-
-```xml
-<ItemGroup>
-  <TrimmableAssembly Include="MyAssembly" />
-</ItemGroup>
-```
-
-This is equivalent to setting `[AssemblyMetadata("IsTrimmable", "True")]` when building the assembly.
 
 :::zone-end
 

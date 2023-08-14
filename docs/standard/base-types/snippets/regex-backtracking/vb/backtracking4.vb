@@ -2,11 +2,10 @@
 Option Strict On
 
 ' <Snippet4>
-Imports System.Diagnostics
 Imports System.Text.RegularExpressions
 
-Module Example
-    Public Sub Main()
+Module Example4
+    Public Sub Run()
         Dim input As String = "b51:4:1DB:9EE1:5:27d60:f44:D4:cd:E:5:0A5:4a:D24:41Ad:"
         Dim matched As Boolean
         Dim sw As Stopwatch

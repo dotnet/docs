@@ -2,11 +2,10 @@
 Option Strict On
 
 ' <Snippet3>
-Imports System.Diagnostics
 Imports System.Text.RegularExpressions
 
-Module Example
-    Public Sub Main()
+Module Example3
+    Public Sub Run()
         Dim pattern As String = "^(a+)+$"
         Dim inputs() As String = {"aaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaaa!"}
         Dim rgx As New Regex(pattern)

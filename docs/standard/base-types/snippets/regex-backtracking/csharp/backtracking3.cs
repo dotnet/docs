@@ -3,9 +3,9 @@ using System;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 
-public class Example
+public class Example3
 {
-    public static void Main()
+    public static void Run()
     {
         string pattern = "^(a+)+$";
         string[] inputs = { "aaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaaa!" };

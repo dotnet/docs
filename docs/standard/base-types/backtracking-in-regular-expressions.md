@@ -28,8 +28,8 @@ Backtracking occurs when a regular expression pattern contains optional [quantif
 
  The following example provides an illustration. The regular expression `e{2}\w\b` looks for two occurrences of the letter "e" followed by any word character followed by a word boundary.
 
- [!code-csharp[Conceptual.RegularExpressions.Backtracking#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/cs/backtracking1.cs#1)]
- [!code-vb[Conceptual.RegularExpressions.Backtracking#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/vb/backtracking1.vb#1)]
+:::code language="csharp" source="../snippets/regex-backtracking/csharp/backtracking1.cs" ID="1":::
+:::code language="vb" source="../snippets/regex-backtracking/vb/backtracking1.vb" ID="1":::
 
  Although this regular expression includes the quantifier `{2}`, it is evaluated in a linear manner. The regular expression engine does not backtrack because `{2}` is not an optional quantifier; it specifies an exact number and not a variable number of times that the previous subexpression must match. As a result, the regular expression engine tries to match the regular expression pattern with the input string as shown in the following table.
 
@@ -63,8 +63,8 @@ Backtracking occurs when a regular expression pattern contains optional [quantif
 
  For example, consider the regular expression pattern `.*(es)`, which matches the characters "es" and all the characters that precede it. As the following example shows, if the input string is "Essential services are provided by regular expressions.", the pattern matches the whole string up to and including the "es" in "expressions".
 
- [!code-csharp[Conceptual.RegularExpressions.Backtracking#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/cs/backtracking2.cs#2)]
- [!code-vb[Conceptual.RegularExpressions.Backtracking#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/vb/backtracking2.vb#2)]
+:::code language="csharp" source="../snippets/regex-backtracking/csharp/backtracking2.cs" ID="2":::
+:::code language="vb" source="../snippets/regex-backtracking/vb/backtracking2.vb" ID="2":::
 
  To do this, the regular expression engine uses backtracking as follows:
 
@@ -84,8 +84,8 @@ Backtracking occurs when a regular expression pattern contains optional [quantif
 
  The number of comparison operations required to match a regular expression pattern can increase exponentially if the pattern includes a large number of alternation constructs, if it includes nested alternation constructs, or, most commonly, if it includes nested optional quantifiers. For example, the regular expression pattern `^(a+)+$` is designed to match a complete string that contains one or more "a" characters. The example provides two input strings of identical length, but only the first string matches the pattern. The <xref:System.Diagnostics.Stopwatch?displayProperty=nameWithType> class is used to determine how long the match operation takes.
 
- [!code-csharp[Conceptual.RegularExpressions.Backtracking#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/cs/backtracking3.cs#3)]
- [!code-vb[Conceptual.RegularExpressions.Backtracking#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/vb/backtracking3.vb#3)]
+:::code language="csharp" source="../snippets/regex-backtracking/csharp/backtracking3.cs" ID="3":::
+:::code language="vb" source="../snippets/regex-backtracking/vb/backtracking3.vb" ID="3":::
 
  As the output from the example shows, the regular expression engine took significantly longer to find that an input string *did not match* the pattern as it did to identify a matching string. This is because an unsuccessful match always represents a worst-case scenario. The regular expression engine must use the regular expression to follow all possible paths through the data before it can conclude that the match is unsuccessful, and the nested parentheses create many additional paths through the data. The regular expression engine concludes that the second string did not match the pattern by doing the following:
 
@@ -136,8 +136,8 @@ If you don't set a time-out value explicitly, the default time-out value is dete
 
  The following example illustrates how suppressing backtracking improves performance when using nested quantifiers. It measures the time required for the regular expression engine to determine that an input string does not match two regular expressions. The first regular expression uses backtracking to attempt to match a string that contains one or more occurrences of one or more hexadecimal digits, followed by a colon, followed by one or more hexadecimal digits, followed by two colons. The second regular expression is identical to the first, except that it disables backtracking. As the output from the example shows, the performance improvement from disabling backtracking is significant.
 
- [!code-csharp[Conceptual.RegularExpressions.Backtracking#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/cs/backtracking4.cs#4)]
- [!code-vb[Conceptual.RegularExpressions.Backtracking#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/vb/backtracking4.vb#4)]
+:::code language="csharp" source="../snippets/regex-backtracking/csharp/backtracking4.cs" ID="4":::
+:::code language="vb" source="../snippets/regex-backtracking/vb/backtracking4.vb" ID="4":::
 
 ### Lookbehind assertions
 
@@ -147,8 +147,8 @@ If you don't set a time-out value explicitly, the default time-out value is dete
 
  The following example uses two equivalent regular expression patterns that validate the user name in an email address. The first pattern is subject to poor performance because of excessive backtracking. The second pattern modifies the first regular expression by replacing a nested quantifier with a positive lookbehind assertion. The output from the example displays the execution time of the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method.
 
- [!code-csharp[Conceptual.RegularExpressions.Backtracking#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/cs/backtracking5.cs#5)]
- [!code-vb[Conceptual.RegularExpressions.Backtracking#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/vb/backtracking5.vb#5)]
+:::code language="csharp" source="../snippets/regex-backtracking/csharp/backtracking5.cs" ID="5":::
+[!code-vb[Conceptual.RegularExpressions.Backtracking#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/vb/backtracking5.vb#5)]
 
  The first regular expression pattern, `^[0-9A-Z]([-.\w]*[0-9A-Z])*@`, is defined as shown in the following table.
 
@@ -179,8 +179,8 @@ If you don't set a time-out value explicitly, the default time-out value is dete
 
  The following example uses two equivalent regular expression patterns that validate a fully qualified type name. The first pattern is subject to poor performance because of excessive backtracking. The second modifies the first regular expression by replacing a nested quantifier with a positive lookahead assertion. The output from the example displays the execution time of the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method.
 
- [!code-csharp[Conceptual.RegularExpressions.Backtracking#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/cs/backtracking6.cs#6)]
- [!code-vb[Conceptual.RegularExpressions.Backtracking#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.backtracking/vb/backtracking6.vb#6)]
+:::code language="csharp" source="../snippets/regex-backtracking/csharp/backtracking6.cs" ID="6":::
+:::code language="vb" source="../snippets/regex-backtracking/vb/backtracking6.vb" ID="6":::
 
  The first regular expression pattern, `^(([A-Z]\w*)+\.)*[A-Z]\w*$`, is defined as shown in the following table.
 

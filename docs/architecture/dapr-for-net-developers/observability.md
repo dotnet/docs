@@ -36,7 +36,7 @@ As Dapr abstracts away the plumbing, the application is unaware of how observabi
 
 Dapr's [sidecar architecture](dapr-at-20000-feet.md#sidecar-architecture) enables built-in observability features. As services communicate, Dapr sidecars intercept the traffic and extract tracing, metrics, and logging information. Telemetry is published in an open standards format. By default, Dapr supports [OpenTelemetry](https://opentelemetry.io/) and [Zipkin](https://zipkin.io/).
 
-Dapr provides [collectors](https://docs.dapr.io/operations/monitoring/tracing/otel-collector/) that can publish telemetry to different back-end monitoring tools. These tools present Dapr telemetry for analysis and querying. Figure 10-1 shows the Dapr observability architecture:
+Dapr provides [collectors](https://docs.dapr.io/operations/observability/tracing/otel-collector/) that can publish telemetry to different back-end monitoring tools. These tools present Dapr telemetry for analysis and querying. Figure 10-1 shows the Dapr observability architecture:
 
 :::image type="content" source="./media/observability/observability-architecture.png" alt-text="Dapr observability architecture":::
 
@@ -294,7 +294,7 @@ Dapr generates a large set of metrics for Dapr system services and its runtime. 
 | dapr_http_server_request_count     | Runtime | Number of HTTP requests started in an HTTP server.           |
 | dapr_http/client/sent_bytes        | Runtime | Total bytes sent in request body (not including headers) by an HTTP client. |
 
-For more information on available metrics, see the [Dapr metrics documentation](https://docs.dapr.io/operations/monitoring/metrics/).
+For more information on available metrics, see the [Dapr metrics documentation](https://docs.dapr.io/operations/observability/metrics/).
 
 #### Configure Dapr metrics
 
@@ -323,7 +323,7 @@ With the Prometheus scraper collecting and publishing metrics into the monitorin
 
 **Figure 10-9.** Grafana dashboard.
 
-The Dapr documentation includes a [tutorial for installing Prometheus and Grafana](https://docs.dapr.io/operations/monitoring/metrics/grafana/).
+The Dapr documentation includes a [tutorial for installing Prometheus and Grafana](https://docs.dapr.io/operations/observability/metrics/grafana/).
 
 ### Logging
 
@@ -392,7 +392,7 @@ helm install dapr dapr/dapr --namespace dapr-system --set global.logAsJson=true
 
 #### Collect logs
 
-The logs emitted by Dapr can be fed into a monitoring back end for analysis. A log collector is a component that collects logs from a system and sends them to a monitoring back end. A popular log collector is [Fluentd](https://www.fluentd.org/). Check out the [How-To: Set up Fluentd, Elastic search and Kibana in Kubernetes](https://docs.dapr.io/operations/monitoring/logging/fluentd/) in the Dapr documentation. This article contains instructions for setting up Fluentd as log collector and the [ELK Stack](https://www.elastic.co/elastic-stack) (Elastic Search and Kibana) as a monitoring back end.
+The logs emitted by Dapr can be fed into a monitoring back end for analysis. A log collector is a component that collects logs from a system and sends them to a monitoring back end. A popular log collector is [Fluentd](https://www.fluentd.org/). Check out the [How-To: Set up Fluentd, Elastic search and Kibana in Kubernetes](https://docs.dapr.io/operations/observability/logging/fluentd/) in the Dapr documentation. This article contains instructions for setting up Fluentd as log collector and the [ELK Stack](https://www.elastic.co/elastic-stack) (Elastic Search and Kibana) as a monitoring back end.
 
 ### Health status
 
@@ -515,7 +515,7 @@ Dapr provides different types of telemetry, including distributed tracing, loggi
 
 Dapr only produces telemetry for the Dapr system services and sidecars. Telemetry from your application code isn't automatically included. You can however use a specific SDK like the OpenTelemetry SDK for .NET to emit telemetry from your application code.
 
-Dapr telemetry is produced in an open-standards based format so that it can be ingested by a large set of available monitoring tools. Examples include Zipkin, Azure Application Insights, the ELK Stack, New Relic, and Grafana. See [Monitor your application with Dapr](https://docs.dapr.io/operations/monitoring/) in the Dapr documentation for tutorials on how to monitor your Dapr applications with specific monitoring back ends.
+Dapr telemetry is produced in an open-standards based format so that it can be ingested by a large set of available monitoring tools. Examples include Zipkin, Azure Application Insights, the ELK Stack, New Relic, and Grafana. See [Monitor your application with Dapr](https://docs.dapr.io/operations/observability/) in the Dapr documentation for tutorials on how to monitor your Dapr applications with specific monitoring back ends.
 
 You'll need a telemetry scraper that ingests telemetry and publishes it to the monitoring back end.
 

@@ -286,8 +286,6 @@
 | Anomaly Detector | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.AnomalyDetector/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.AnomalyDetector_1.0.0-preview.1/sdk/cognitiveservices/AnomalyDetector) |
 | App Configuration Provider | NuGet [5.2.0](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.AzureAppConfiguration/5.2.0)<br>NuGet [5.3.0-preview](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.AzureAppConfiguration/5.3.0-preview) |  | GitHub [5.2.0](https://github.com/Azure/AppConfiguration-DotnetProvider) |
 | App Service | NuGet [0.2.2-alpha](https://www.nuget.org/packages/Microsoft.Azure.AppService/0.2.2-alpha) |  |  |
-| App Service - API Apps Common | NuGet [0.9.36](https://www.nuget.org/packages/Microsoft.Azure.AppService.ApiApps.Common/0.9.36) |  |  |
-| App Service - API Apps Service | NuGet [0.9.64](https://www.nuget.org/packages/Microsoft.Azure.AppService.ApiApps.Service/0.9.64) |  |  |
 | Application Insights | NuGet [0.9.0-preview](https://www.nuget.org/packages/Microsoft.Azure.ApplicationInsights/0.9.0-preview) |  |  |
 | Auto Suggest | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.AutoSuggest/2.0.0) |  |  |
 | Auto Suggest | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingAutoSuggest/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingAutoSuggest_2.1.0-preview.1/sdk/cognitiveservices/Search.BingAutoSuggest) |
@@ -431,6 +429,8 @@
 | WindowsAzure Common - Tracing ETW | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.WindowsAzure.Common.Tracing.Etw/1.0.0) |  |  |
 | WindowsAzure Common - Tracing Log4Net | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.WindowsAzure.Common.Tracing.Log4Net/1.0.0) |  |  |
 | WindowsAzure Media Services | NuGet [4.2.0](https://www.nuget.org/packages/windowsazure.mediaservices/4.2.0) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/media-services) | GitHub [4.2.0](https://github.com/Azure/azure-sdk-for-media-services) |
+| App Service - API Apps Common | NuGet [0.9.36](https://www.nuget.org/packages/Microsoft.Azure.AppService.ApiApps.Common/0.9.36) |  |  |
+| App Service - API Apps Service | NuGet [0.9.64](https://www.nuget.org/packages/Microsoft.Azure.AppService.ApiApps.Service/0.9.64) |  |  |
 | Core - Client - Newtonsoft Json | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Core.NewtonsoftJson/1.0.0) |  |  |
 | Cosmos DB - BulkExecutor | NuGet [2.5.1-preview](https://www.nuget.org/packages/Microsoft.Azure.CosmosDB.BulkExecutor/2.5.1-preview) |  | GitHub [2.5.1-preview](https://github.com/Azure/azure-cosmosdb-bulkexecutor-dotnet-getting-started) |
 | Cosmos DB - Direct | NuGet [3.31.4](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Direct/3.31.4) |  | GitHub [3.31.4](https://github.com/Azure/azure-cosmos-dotnet-v3) |

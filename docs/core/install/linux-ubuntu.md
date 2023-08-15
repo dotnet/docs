@@ -250,6 +250,7 @@ When you install with a package manager, these libraries are installed for you. 
 - libicu66 (for 20.x)
 - libicu70 (for 22.04)
 - libicu71 (for 22.10)
+- libicu72 (for 23.04)
 - liblttng-ust1 (for 22.x)
 - libssl1.0.0 (for 16.x)
 - libssl1.1 (for 18.x, 20.x)
@@ -257,6 +258,8 @@ When you install with a package manager, these libraries are installed for you. 
 - libstdc++6
 - libunwind8 (for 22.x)
 - zlib1g
+
+[!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
 
 [!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 

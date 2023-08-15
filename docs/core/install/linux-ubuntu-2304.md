@@ -52,12 +52,14 @@ When you install with a package manager, these libraries are installed for you. 
 - libgcc1
 - libgcc-s1
 - libgssapi-krb5-2
-- libicu70
+- libicu72
 - liblttng-ust1
 - libssl3
 - libstdc++6
 - libunwind8
 - zlib1g
+
+[!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
 
 [!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 

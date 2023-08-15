@@ -390,7 +390,7 @@ The following example is identical to the previous example, except that the stat
 
 ## Nonbacktracking mode
 
-By default, .NET's regex engine uses *backtracking* to try to find pattern matches. A backtracking engine is one that tries to match one pattern, and if that fails, goes backs and tries to match an alternate pattern, and so on. A backtracking engine is very fast for typical cases, but slows down as the number of pattern alternations increases, which can lead to *catastrophic backtracking*. The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option doesn't use backtracking and avoids that worst-case scenario. Its goal is to provide consistently good behavior, regardless of the input being searched.
+By default, .NET's regex engine uses *backtracking* to try to find pattern matches. A backtracking engine is one that tries to match one pattern, and if that fails, goes backs and tries to match an alternate pattern, and so on. A backtracking engine is very fast for typical cases, but slows down as the number of pattern alternations increases, which can lead to *catastrophic backtracking*. The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option, which was introduced in .NET 7, doesn't use backtracking and avoids that worst-case scenario. Its goal is to provide consistently good behavior, regardless of the input being searched.
 
 The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option doesn't support everything the other built-in engines support. In particular, the option can't be used in conjunction with <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=nameWithType>. It also doesn't allow for the following constructs in the pattern:
 
@@ -402,6 +402,8 @@ The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayPro
 - Start anchors (`\G`)
 
 <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> also has a subtle difference with regards to execution. If a capture group is in a loop, most (non-.NET) regex engines only provide the last matched value for that capture. However, .NET's regex engine tracks all values that are captured inside a loop and provides access to them. The <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option is like most other regex implementations and only supports providing the final capture.
+
+For more information about backtracking, see [Backtracking in regular expressions](backtracking-in-regular-expressions.md).
 
 ## See also
 

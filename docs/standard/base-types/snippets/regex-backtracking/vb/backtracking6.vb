@@ -2,11 +2,10 @@
 Option Strict On
 
 ' <Snippet6>
-Imports System.Diagnostics
 Imports System.Text.RegularExpressions
 
-Module Example
-    Public Sub Main()
+Module Example6
+    Public Sub Run()
         Dim input As String = "aaaaaaaaaaaaaaaaaaaaaa."
         Dim result As Boolean
         Dim sw As Stopwatch

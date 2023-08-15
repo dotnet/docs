@@ -1,12 +1,10 @@
 ﻿' Visual Basic .NET Document
 Option Strict On
-
-Imports System.Diagnostics
 Imports System.Text.RegularExpressions
 
 ' <Snippet5>
-Module Example
-    Public Sub Main()
+Module Example5
+    Public Sub Run()
         Dim sw As Stopwatch
         Dim input As String = "test@contoso.com"
         Dim result As Boolean

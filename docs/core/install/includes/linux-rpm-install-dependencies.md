@@ -11,8 +11,7 @@ If the target runtime environment's OpenSSL version is 1.1 or newer, you'll need
 Dependencies can be installed with the `yum install` command. The following snippet demonstrates installing the `libicu` library:
 
 ```bash
-sudo yum install libc6
-```
+sudo yum install libicu
 
 For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/main/Documentation/self-contained-linux-apps.md).
 

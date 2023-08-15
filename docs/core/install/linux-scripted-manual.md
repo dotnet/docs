@@ -130,7 +130,7 @@ Different versions of .NET can be extracted to the same folder, which coexist si
 
 ### Example
 
-The following commands set the environment variable `DOTNET_ROOT` to the current working directory followed by `.dotnet`. It then creates the directory if it doesn't exist and extracts the contents of the file specified by the `DOTNET_FILE` environment variable to the `.dotnet` directory. Both the `.dotnet` directory and its `tools` subdirectory are added to the `PATH` environment variable.
+The following commands set the environment variable `DOTNET_ROOT` to the current working directory followed by `.dotnet`. They then create the directory if it doesn't exist and extract the contents of the file specified by the `DOTNET_FILE` environment variable to the `.dotnet` directory. Both the `.dotnet` directory and its `tools` subdirectory are added to the `PATH` environment variable.
 
 > [!IMPORTANT]
 > If you run these commands, remember to change the `DOTNET_FILE` value to the name of the .NET binary you downloaded.

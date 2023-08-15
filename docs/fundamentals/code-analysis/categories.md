@@ -15,7 +15,7 @@ The following table shows the different code analysis rule categories and provid
 > [!TIP]
 > Setting the severity for a category of rules using the `dotnet_analyzer_diagnostic.category-<category>.severity` syntax doesn't apply to rules that are disabled by default. However, starting in .NET 6, you can use the [AnalysisMode\<Category>](../../core/project-sdk/msbuild-props.md#analysismodecategory) project property to enable all the rules in a category.
 
-| Category | Description | EditorConfig value | MSBuild property value |
+| Category | Description | EditorConfig value | [MSBuild property value](../../core/project-sdk/msbuild-props.md#analysismodecategory) |
 | - | - | - | - |
 | [Design rules](quality-rules/design-warnings.md) | Design rules support adherence to the [.NET Framework Design Guidelines](../../standard/design-guidelines/index.md). | `dotnet_analyzer_diagnostic.category-Design.severity` | `<AnalysisModeDesign>` |
 | [Documentation rules](quality-rules/documentation-warnings.md) | Documentation rules support writing well-documented libraries through the correct use of XML documentation comments for externally visible APIs. | `dotnet_analyzer_diagnostic.category-Documentation.severity` | `<AnalysisModeDocumentation>` |

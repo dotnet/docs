@@ -23,11 +23,15 @@ The following table shows the different code analysis rule categories and provid
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Design.severity` |
 | [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeDesign>` |
 
+## Documentation rules
+
 | - | - |
 | **Link to rules** | [Documentation rules](quality-rules/documentation-warnings.md)  |
 | **Description** | Documentation rules support writing well-documented libraries through the correct use of XML documentation comments for externally visible APIs. |
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Documentation.severity` |
 | [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeDocumentation>` |
+
+## Globalization rules
 
 | - | - |
 | **Link to rules** | [Globalization rules](quality-rules/globalization-warnings.md) |
@@ -35,11 +39,15 @@ The following table shows the different code analysis rule categories and provid
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Globalization.severity` |
 | [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeGlobalization>` |
 
+## Portability and interoperability rules
+
 | - | - |
 | **Link to rules** | [Portability and interoperability rules](quality-rules/interoperability-warnings.md)  |
 | **Description** | Portability rules support portability across different platforms. Interoperability rules support interaction with COM clients. |
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Interoperability.severity` |
 | [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeInteroperability>` |
+
+## Maintainability rules
 
 | - | - |
 | **Link to rules** | [Maintainability rules](quality-rules/maintainability-warnings.md) |
@@ -47,11 +55,15 @@ The following table shows the different code analysis rule categories and provid
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Maintainability.severity` |
 | [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeMaintainability>` |
 
+## Naming rules
+
 | - | - |
 | **Link to rules** | [Naming rules](quality-rules/naming-warnings.md) |
 | **Description** | Naming rules support adherence to the naming conventions of the .NET design guidelines. |
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Naming.severity` |
 | [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeNaming>` |
+
+## Performance rules
 
 | - | - |
 | **Link to rules** | [Performance rules](quality-rules/performance-warnings.md)  |
@@ -59,11 +71,15 @@ The following table shows the different code analysis rule categories and provid
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Performance.severity` |
 | [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModePerformance>` |
 
+## SingleFile rules
+
 | - | - |
 | **Link to rules** | [SingleFile rules](../../core/deploying/single-file/warnings/overview.md) |
 | **Description** | Single-file rules support single-file applications. |
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-SingleFile.severity` |
 | [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeSingleFile>` |
+
+## Reliability rules
 
 | - | - |
 | **Link to rules** | [Reliability rules](quality-rules/reliability-warnings.md) |
@@ -71,11 +87,15 @@ The following table shows the different code analysis rule categories and provid
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Reliability.severity` |
 | [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeReliability>` |
 
+## Security rules
+
 | - | - |
 | **Link to rules** | [Security rules](quality-rules/security-warnings.md) |
 | **Description** | Security rules support safer libraries and applications. These rules help prevent security flaws in your program. |
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Security.severity` |
 | [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeSecurity>` |
+
+## Style rules
 
 | - | - |
 | **Link to rules** | [Style rules](style-rules/index.md) |
@@ -84,6 +104,8 @@ The following table shows the different code analysis rule categories and provid
 | [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeStyle>` |
 
 \* Use the EditorConfig value `dotnet_analyzer_diagnostic.category-CodeQuality.severity` to enable the following rules: [IDE0051](style-rules/ide0051.md), [IDE0064](style-rules/ide0064.md), and [IDE0076](style-rules/ide0076.md). While these rules start with "IDE", they aren't technically part of the `Style` category.
+
+## Usage rules
 
 | - | - |
 | **Link to rules** | [Usage rules](quality-rules/usage-warnings.md) |

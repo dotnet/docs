@@ -17,6 +17,8 @@ The following table shows the different code analysis rule categories and provid
 
 ## Design rules
 
+|  | Value |
+|--|-------|
 | **Link to rules** | [Design rules](quality-rules/design-warnings.md) |
 | **Description** | Design rules support adherence to the [.Framework design guidelines](../../standard/design-guidelines/index.md). |
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Design.severity` |
@@ -24,6 +26,8 @@ The following table shows the different code analysis rule categories and provid
 
 ## Documentation rules
 
+|  | Value |
+|--|-------|
 | **Link to rules** | [Documentation rules](quality-rules/documentation-warnings.md)  |
 | **Description** | Documentation rules support writing well-documented libraries through the correct use of XML documentation comments for externally visible APIs. |
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Documentation.severity` |
@@ -31,6 +35,8 @@ The following table shows the different code analysis rule categories and provid
 
 ## Globalization rules
 
+|  | Value |
+|--|-------|
 | **Link to rules** | [Globalization rules](quality-rules/globalization-warnings.md) |
 | **Description** | Globalization rules support world-ready libraries and applications. |
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Globalization.severity` |
@@ -38,6 +44,8 @@ The following table shows the different code analysis rule categories and provid
 
 ## Portability and interoperability rules
 
+|  | Value |
+|--|-------|
 | **Link to rules** | [Portability and interoperability rules](quality-rules/interoperability-warnings.md)  |
 | **Description** | Portability rules support portability across different platforms. Interoperability rules support interaction with COM clients. |
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Interoperability.severity` |
@@ -45,6 +53,8 @@ The following table shows the different code analysis rule categories and provid
 
 ## Maintainability rules
 
+|  | Value |
+|--|-------|
 | **Link to rules** | [Maintainability rules](quality-rules/maintainability-warnings.md) |
 | **Description** | Maintainability rules support library and application maintenance. |
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Maintainability.severity` |
@@ -52,6 +62,8 @@ The following table shows the different code analysis rule categories and provid
 
 ## Naming rules
 
+|  | Value |
+|--|-------|
 | **Link to rules** | [Naming rules](quality-rules/naming-warnings.md) |
 | **Description** | Naming rules support adherence to the naming conventions of the .NET design guidelines. |
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Naming.severity` |
@@ -59,6 +71,8 @@ The following table shows the different code analysis rule categories and provid
 
 ## Performance rules
 
+|  | Value |
+|--|-------|
 | **Link to rules** | [Performance rules](quality-rules/performance-warnings.md)  |
 | **Description** | Performance rules support high-performance libraries and applications. |
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Performance.severity` |
@@ -66,6 +80,8 @@ The following table shows the different code analysis rule categories and provid
 
 ## SingleFile rules
 
+|  | Value |
+|--|-------|
 | **Link to rules** | [SingleFile rules](../../core/deploying/single-file/warnings/overview.md) |
 | **Description** | Single-file rules support single-file applications. |
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-SingleFile.severity` |
@@ -73,6 +89,8 @@ The following table shows the different code analysis rule categories and provid
 
 ## Reliability rules
 
+|  | Value |
+|--|-------|
 | **Link to rules** | [Reliability rules](quality-rules/reliability-warnings.md) |
 | **Description** | Reliability rules support library and application reliability, such as correct memory and thread usage. |
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Reliability.severity` |
@@ -80,6 +98,8 @@ The following table shows the different code analysis rule categories and provid
 
 ## Security rules
 
+|  | Value |
+|--|-------|
 | **Link to rules** | [Security rules](quality-rules/security-warnings.md) |
 | **Description** | Security rules support safer libraries and applications. These rules help prevent security flaws in your program. |
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Security.severity` |
@@ -87,6 +107,8 @@ The following table shows the different code analysis rule categories and provid
 
 ## Style rules
 
+|  | Value |
+|--|-------|
 | **Link to rules** | [Style rules](style-rules/index.md) |
 | **Description** | Style rules support consistent code style in your codebase. These rules start with the "IDE" prefix.<sup>*</sup> |
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Style.severity` |
@@ -96,6 +118,8 @@ The following table shows the different code analysis rule categories and provid
 
 ## Usage rules
 
+|  | Value |
+|--|-------|
 | **Link to rules** | [Usage rules](quality-rules/usage-warnings.md) |
 | **Description** | Usage rules support proper usage of .NET. |
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Usage.severity` |

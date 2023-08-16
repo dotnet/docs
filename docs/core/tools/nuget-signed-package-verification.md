@@ -22,7 +22,7 @@ The following sections for each operating system describe:
 
 ## Windows
 
-Verification is enabled by default during package restore operations.
+Verification is always enabled during package restore operations.
 
 NuGet uses the default root store on Windows, which already supports general-purpose code signing and timestamping. .NET SDK certificate bundles aren't used.  All signed-package verification functionality is supported on Windows in the .NET SDK version in which it was introduced.
 

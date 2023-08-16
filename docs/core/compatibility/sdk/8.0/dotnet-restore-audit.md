@@ -13,7 +13,7 @@ Previously, `dotnet restore` did not emit any security vulnerability warnings by
 
 ## New behavior
 
-If you're developing with the .NET 8 SDK or a later version, `dotnet restore` produces security vulnerability warnings by default for *all* restored projects. When you load a solution, project, or run a CI/CD script, this change may break your workflow if you have `<TreatWarningsAsErrors>` enabled.
+If you're developing with the .NET 8 SDK or a later version, `dotnet restore` produces security vulnerability warnings by default for *all* restored projects. When you load a solution or project, or run a CI/CD script, this change may break your workflow if you have `<TreatWarningsAsErrors>` enabled.
 
 ## Version introduced
 

@@ -39,4 +39,4 @@ In most cases when you restore a package, you want to know whether the restored 
 
 ## See also
 
-- [Auditing package dependencies for security vulnerabilities](https://learn.microsoft.com/nuget/concepts/auditing-packages)
+- [Auditing package dependencies for security vulnerabilities](/nuget/concepts/auditing-packages)

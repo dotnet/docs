@@ -66,7 +66,7 @@ When building and publishing a library:
 * The implementations of the dependencies aren't available.
 * The available reference assemblies don't have enough information for the trimmer to determine if they're compatible with trimming.
 
-Because of the dependency limitations, a self-contained test app which uses the library and its dependencies must be created. The test app executable includes all the information the trimmer requires to issue warning on trim incompatibilities in:
+Because of the dependency limitations, a self-contained test app which uses the library and its dependencies must be created. The test app includes all the information the trimmer requires to issue warning on trim incompatibilities in:
 
 * The library code.
 * The code that the library references from its dependencies.
@@ -81,11 +81,11 @@ To create the trimming test app:
 
 ### [.NET 6](#tab/net6)
 
-* Set the `TrimmerDefaultAction` property to `link` with `<TrimmerDefaultAction>link</TrimmerDefaultAction>` n a `<PropertyGroup>` element.  <!-- only diff with .NET7+ -->
+* Set the `TrimmerDefaultAction` property to `link` with `<TrimmerDefaultAction>link</TrimmerDefaultAction>` in a `<PropertyGroup>` element.  <!-- only diff with .NET7+ -->
 * Add `<PublishTrimmed>true</PublishTrimmed>`.
 * Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
 * Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
-  * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root,  ". A "root," assembly means the trimmer analyzes every call in the library, and traverses all code paths that originate from   that assembly. `TrimmerRootAssembly` is necessary in case the library has `[AssemblyMetadata("IsTrimmable", "True")]`.  A   project using `[AssemblyMetadata("IsTrimmable", "True")]` without  `TrimmerRootAssembly` removes the unused library without analyzing it.
+  * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root". A "root" assembly means the trimmer analyzes every call in the library and traverses all code paths that originate from that assembly.
 
 ### .csproj file
 

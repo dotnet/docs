@@ -12,6 +12,7 @@ Dependencies can be installed with the `yum install` command. The following snip
 
 ```bash
 sudo yum install libicu
+```
 
 For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/main/Documentation/self-contained-linux-apps.md).
 

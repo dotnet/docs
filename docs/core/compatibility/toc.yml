@@ -124,6 +124,8 @@ items:
         href: sdk/8.0/msbuild-language.md
       - name: Runtime-specific apps not self-contained
         href: sdk/8.0/runtimespecific-app-default.md
+      - name: "'dotnet restore'" produces security vulnerability warnings
+        href: sdk/8.0/dotnet-restore-audit.md
     - name: Serialization
       items:
       - name: BinaryFormatter disabled for most projects

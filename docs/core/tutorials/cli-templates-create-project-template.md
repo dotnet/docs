@@ -112,6 +112,7 @@ Open the _template.json_ with your favorite text editor and paste in the followi
   "identity": "ExampleTemplate.AsyncProject",
   "name": "Example templates: async project",
   "shortName": "consoleasync",
+  "sourceName":"ExampleTemplate.AsyncProject",
   "tags": {
     "language": "C#",
     "type": "project"
@@ -120,6 +121,8 @@ Open the _template.json_ with your favorite text editor and paste in the followi
 ```
 
 This config file contains all of the settings for your template. You can see the basic settings such as `name` and `shortName` but also there's a `tags/type` value that's set to `project`. This designates your template as a project template. There's no restriction on the type of template you create. The `item` and `project` values are common names that .NET recommends so that users can easily filter the type of template they're searching for.
+
+The `sourceName` item is what is replaced when the user creates a new item from the template. In this case, the user will run `dotnet new stringext -n test` and the `sourceName` will be replaced with the name the user sets on item creation. The `sourceName` must match the csproj file and the namespace. In this case test will replace `ExampleTemplate.StringExtensions` in the csproj file and the namespace.
 
 The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the json file with the `classifications` tags list. They're two different things unfortunately named similarly. The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
 

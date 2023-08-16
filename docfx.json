@@ -68,7 +68,6 @@
                     "csharp-8.0/shadowing-in-nested-functions.md",
                     "csharp-8.0/unconstrained-null-coalescing.md",
                     "csharp-8.0/nullable-reference-types-specification.md",
-                    "csharp-12.0/collection-expressions.md",
                     "csharp-12.0/ref-readonly-parameters.md"
                 ]
             },
@@ -666,6 +665,8 @@
                 "_csharplang/proposals/csharp-12.0/using-alias-types.md": "Alias any type",
                 "_csharplang/proposals/csharp-12.0/lambda-method-group-defaults.md": "Optional and parameter array parameters for lambdas and method groups",
                 "_csharplang/proposals/csharp-12.0/inline-arrays.md": "Inline arrays, or fixed sized buffers",
+                "_csharplang/proposals/csharp-12.0/collection-expressions.md": "Collection expressions",
+
                 
 
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "C# compiler breaking changes since C# 10",
@@ -778,6 +779,7 @@
                 "_csharplang/proposals/csharp-12.0/using-alias-types.md": "Using directives can alias any type, not just named types. You can create aliases for tuple types, generics and more.",
                 "_csharplang/proposals/csharp-12.0/lambda-method-group-defaults.md": "Optional and parameter array parameters for lambdas and method groups",
                 "_csharplang/proposals/csharp-12.0/inline-arrays.md": "Inline arrays provide a general-purpose and safe mechanism for declaring inline arrays within C# classes, structs, and interfaces.",
+                "_csharplang/proposals/csharp-12.0/collection-expressions.md": "Collection expressions provide a concise syntax to initialize collections by defining elements or embedded collections as the source of the new collection's elements.",
                 
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "Learn about any breaking changes since the initial release of C# 10",
                 "_vblang/spec/introduction.md": "This chapter provides and introduction to the Visual Basic language.",

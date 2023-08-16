@@ -51,10 +51,7 @@
                     "csharp-9.0/*.md",
                     "csharp-10.0/*.md",
                     "csharp-11.0/*.md",
-                    "primary-constructors.md",
-                    "using-alias-types.md",
-                    "lambda-method-group-defaults.md",
-                    "inline-arrays.md"
+                    "csharp-12.0/*.md"
                 ],
                 "src": "_csharplang/proposals",
                 "dest": "csharp/language-reference/proposals",
@@ -70,7 +67,9 @@
                     "csharp-8.0/obsolete-accessor.md",
                     "csharp-8.0/shadowing-in-nested-functions.md",
                     "csharp-8.0/unconstrained-null-coalescing.md",
-                    "csharp-8.0/nullable-reference-types-specification.md"
+                    "csharp-8.0/nullable-reference-types-specification.md",
+                    "csharp-12.0/collection-expressions.md",
+                    "csharp-12.0/ref-readonly-parameters.md"
                 ]
             },
             {
@@ -464,7 +463,7 @@
                 "_csharplang/proposals/csharp-9.0/*.md": "07/29/2020",
                 "_csharplang/proposals/csharp-10.0/*.md": "08/07/2021",
                 "_csharplang/proposals/csharp-11.0/*.md": "09/30/2022",
-                "_csharplang/proposals/*.md": "07/06/2023",
+                "_csharplang/proposals/csharp-12.0/*.md": "08/15/2023",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "11/08/2022",
                 "_vblang/spec/*.md": "07/21/2017"
             },
@@ -663,10 +662,10 @@
                 "_csharplang/proposals/csharp-11.0/unsigned-right-shift-operator.md": "Unsigned right shift operator",
                 "_csharplang/proposals/csharp-11.0/utf8-string-literals.md": "UTF-8 string literals",
 
-                "_csharplang/proposals/primary-constructors.md": "Primary constructors",
-                "_csharplang/proposals/using-alias-types.md": "Alias any type",
-                "_csharplang/proposals/lambda-method-group-defaults.md": "Optional and parameter array parameters for lambdas and method groups",
-                "_csharplang/proposals/inline-arrays.md": "Inline arrays, or fixed sized buffers",
+                "_csharplang/proposals/csharp-12.0/primary-constructors.md": "Primary constructors",
+                "_csharplang/proposals/csharp-12.0/using-alias-types.md": "Alias any type",
+                "_csharplang/proposals/csharp-12.0/lambda-method-group-defaults.md": "Optional and parameter array parameters for lambdas and method groups",
+                "_csharplang/proposals/csharp-12.0/inline-arrays.md": "Inline arrays, or fixed sized buffers",
                 
 
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "C# compiler breaking changes since C# 10",
@@ -775,10 +774,10 @@
                 "_csharplang/proposals/csharp-11.0/unsigned-right-shift-operator.md": "This feature defines a logical right-shift operator, `>>>`. The logical right shift operator always shifts in 0 values in the left-most bits during a shift.",
                 "_csharplang/proposals/csharp-11.0/utf8-string-literals.md": "This feature enables the `u8` suffix on a string literal. The `u8` suffix instructs the compiler to convert the UTF-8 string literal to a `ReadOnlySpan<byte>`.",
 
-                "_csharplang/proposals/primary-constructors.md": "Primary constructors put the parameters of one constructor in scope for the whole class or struct to be used for initialization or directly as object state. The trade-off is that any other constructors must call through the primary constructor.",
-                "_csharplang/proposals/using-alias-types.md": "Using directives can alias any type, not just named types. You can create aliases for tuple types, generics and more.",
-                "_csharplang/proposals/lambda-method-group-defaults.md": "Optional and parameter array parameters for lambdas and method groups",
-                "_csharplang/proposals/inline-arrays.md": "Inline arrays provide a general-purpose and safe mechanism for declaring inline arrays within C# classes, structs, and interfaces.",
+                "_csharplang/proposals/csharp-12.0/primary-constructors.md": "Primary constructors put the parameters of one constructor in scope for the whole class or struct to be used for initialization or directly as object state. The trade-off is that any other constructors must call through the primary constructor.",
+                "_csharplang/proposals/csharp-12.0/using-alias-types.md": "Using directives can alias any type, not just named types. You can create aliases for tuple types, generics and more.",
+                "_csharplang/proposals/csharp-12.0/lambda-method-group-defaults.md": "Optional and parameter array parameters for lambdas and method groups",
+                "_csharplang/proposals/csharp-12.0/inline-arrays.md": "Inline arrays provide a general-purpose and safe mechanism for declaring inline arrays within C# classes, structs, and interfaces.",
                 
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "Learn about any breaking changes since the initial release of C# 10",
                 "_vblang/spec/introduction.md": "This chapter provides and introduction to the Visual Basic language.",
@@ -801,6 +800,7 @@
                 "_csharplang/proposals/csharp-9.0/*.md": "C# 9.0 draft feature specifications",
                 "_csharplang/proposals/csharp-10.0/*.md": "C# 10.0 draft feature specifications",
                 "_csharplang/proposals/csharp-11.0/*.md": "C# 11.0 draft feature specifications",
+                "_csharplang/proposals/csharp-12.0/*.md": "C# 12.0 draft feature specifications",
                 "_csharplang/proposals/*.md": "C# preview feature specifications",
                 "docs/framework/**/**.md": ".NET Framework",
                 "docs/framework/data/adonet/**/**.md": "ADO.NET",

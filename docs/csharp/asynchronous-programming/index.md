@@ -253,7 +253,7 @@ After all those changes, the final version of the code looks like this:
 
 :::image type="content" source="media/whenany-async-breakfast.png" alt-text="when any async breakfast":::
 
-The final version of the asynchronously prepared breakfast took roughly 15 minutes because some tasks ran concurrently, and the code monitored multiple tasks at once and only took action when it was needed.
+The final version of the asynchronously prepared breakfast took roughly 6 minutes because some tasks ran concurrently, and the code monitored multiple tasks at once and only took action when it was needed.
 
 This final code is asynchronous. It more accurately reflects how a person would cook a breakfast. Compare the preceding code with the first code sample in this article. The core actions are still clear from reading the code. You can read this code the same way you'd read those instructions for making a breakfast at the beginning of this article. The language features for `async` and `await` provide the translation every person makes to follow those written instructions: start tasks as you can and don't block waiting for tasks to complete.
 

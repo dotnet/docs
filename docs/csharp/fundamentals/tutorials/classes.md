@@ -108,7 +108,7 @@ The `accountNumberSeed` is a data member. It's `private`, which means it can onl
 
 ```csharp
 this.Number = s_accountNumberSeed.ToString();
-accountNumberSeed++;
+s_accountNumberSeed++;
 ```
 
 Type `dotnet run` to see the results.

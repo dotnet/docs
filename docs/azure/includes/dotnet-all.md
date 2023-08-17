@@ -458,7 +458,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ/2.0.3) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.SendGrid | NuGet [3.0.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SendGrid/3.0.3) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ServiceBus | NuGet [5.12.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ServiceBus/5.12.0) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.SignalRService | NuGet [1.10.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SignalRService/1.10.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.SignalRService | NuGet [1.7.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SignalRService/1.7.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Sql | NuGet [3.0.343-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Sql/3.0.343-preview) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage | NuGet [6.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage/6.0.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs | NuGet [6.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs/6.0.1) |  |  |

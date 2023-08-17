@@ -51,7 +51,7 @@ If your distribution wasn't previously listed, and is RPM-based, you may need th
 - libicu
 - openssl-libs
 
-If the target runtime environment's OpenSSL version is 1.1 or newer, you'll need to install **compat-openssl10**.
+If the target runtime environment's OpenSSL version is 1.1 or newer, install `compat-openssl10`.
 
 ### DEB dependencies
 
@@ -73,7 +73,7 @@ You can usually install a recent version of *libgdiplus* by [adding the Mono rep
 
 ## Scripted install
 
-The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the **SDK** and **Runtime**. You can download the script from <https://dot.net/v1/dotnet-install.sh>. When .NET is installed in this way, you'll need to install dependencies required by your Linux distribution. Use the links in the [Install .NET on Linux](linux.md) article for your specific Linux distribution.
+The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the **SDK** and **Runtime**. You can download the script from <https://dot.net/v1/dotnet-install.sh>. When .NET is installed in this way, you must install the dependencies required by your Linux distribution. Use the links in the [Install .NET on Linux](linux.md) article for your specific Linux distribution.
 
 > [!IMPORTANT]
 > Bash is required to run the script.
@@ -84,7 +84,7 @@ You can download the script with `wget`:
 wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
 ```
 
-Before running this script, you'll need to grant permission for this script to run as an executable:
+Before running this script, make sure you grant permission for this script to run as an executable:
 
 ```bash
 chmod +x ./dotnet-install.sh
@@ -126,7 +126,14 @@ Download a **binary** release for either the SDK or the runtime from one of the 
 
 Extract the downloaded file and use the `export` command to set `DOTNET_ROOT` to the extracted folder's location and then ensure .NET is in PATH. Exporting `DOTNET_ROOT` makes the .NET CLI commands available in the terminal. For more information about .NET environment variables, see [.NET SDK and CLI environment variables](../tools/dotnet-environment-variables.md#net-sdk-and-cli-environment-variables).
 
-Alternatively, after downloading the .NET binary, the following commands may be run from the directory where the file is saved to extract the runtime. Running the following commands makes the .NET CLI commands available at the terminal and sets the required environment variables. **Remember to change the `DOTNET_FILE` value to the name of the downloaded binary**:
+Different versions of .NET can be extracted to the same folder, which coexist side-by-side.
+
+### Example
+
+The following commands set the environment variable `DOTNET_ROOT` to the current working directory followed by `.dotnet`. They then create the directory if it doesn't exist and extract the contents of the file specified by the `DOTNET_FILE` environment variable to the `.dotnet` directory. Both the `.dotnet` directory and its `tools` subdirectory are added to the `PATH` environment variable.
+
+> [!IMPORTANT]
+> If you run these commands, remember to change the `DOTNET_FILE` value to the name of the .NET binary you downloaded.
 
 ```bash
 DOTNET_FILE=dotnet-sdk-7.0.100-linux-x64.tar.gz
@@ -137,7 +144,7 @@ mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 ```
 
-The preceding install script approach allows installing different versions into separate locations so you can choose explicitly which one to use by which app.
+The preceding install script approach allows installing different versions into separate locations so you can choose explicitly which one to use by which app. However, you can still install multiple versions of .NET to the same folder.
 
 ## Verify downloaded binaries
 
@@ -147,7 +154,7 @@ The preceding install script approach allows installing different versions into 
 
 ## Set environment variables system-wide
 
-If you used the previous install script, the variables set only apply to your current terminal session. Add them to your shell profile. There are a number of different shells available for Linux and each has a different profile. For example:
+If you used the previous install script, the variables set only apply to your current terminal session. Add them to your shell profile. There are many different shells available for Linux and each has a different profile. For example:
 
 - **Bash Shell**: *~/.bash_profile*, *~/.bashrc*
 - **Korn Shell**: *~/.kshrc* or *.profile*

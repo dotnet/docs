@@ -122,9 +122,16 @@ When you install with a package manager, these libraries are installed for you. 
 - libgssapi-krb5-2
 - libicu63 (for 10.x)
 - libicu67 (for 11.x)
+- libicu72 (for 12.x)
 - libssl1.1
 - libstdc++6
 - zlib1g
+
+Dependencies can be installed with the `apt install` command. The following snippet demonstrates installing the `libc6` library:
+
+```bash
+sudo apt install libc6
+```
 
 [!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 

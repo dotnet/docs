@@ -66,15 +66,6 @@ foreach (var element in single)
 }
 // output:
 // 1, 2, 3, 4, 5, 6, 7, 8, 9,
-
-int[] vector = [..a[0..^2]];
-foreach (var element in vector)
-{
-    Console.Write($"{element}, ");
-}
-// output:
-// 1, 2, 3, 4, 5, 6,
-
 ```
 
 The operand of a spread operator is an expression that can be enumerated. The spread operator evaluates each element of the enumerations expression.

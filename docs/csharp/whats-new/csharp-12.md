@@ -25,7 +25,7 @@ You can learn more about primary constructors in the tutorial for [exploring pri
 
 ## Collection expressions
 
-Collection expressions introduce a new terse syntax, to create common collection values. Inlining other collections into these values is possible using a spread operator `..`.
+Collection expressions introduce a new terse syntax to create common collection values. Inlining other collections into these values is possible using a spread operator `..`.
 
 Several collection-like types can be created without requiring external BCL support.  These types are:
 
@@ -70,7 +70,7 @@ foreach (var element in single)
 
 The operand of a spread operator is an expression that can be enumerated. The spread operator evaluates each element of the enumerations expression.
 
-You can use collection expressions anywhere you need a collection of elements. They can specify the initial value for a collection, or be passed as arguments to methods that take collection types. You can learn more about collection expressions in the [feature specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md).
+You can use collection expressions anywhere you need a collection of elements. They can specify the initial value for a collection or be passed as arguments to methods that take collection types. You can learn more about collection expressions in the [feature specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md).
 
 ## Default lambda parameters
 

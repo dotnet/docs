@@ -61,7 +61,7 @@ Platform-specific tools like [PerfView](https://github.com/microsoft/perfview) a
 
 Typical production debugging scenarios are done through logging and tracing and are [supported](#observability) in native AOT. Low-level debugging, using platform debuggers like WinDbg or Visual Studio on Windows, and gdb or lldb on Unix-like systems, can be used in native AOT. For this case, it's critical that the corresponding symbol file for the application is available.
 
-The native AOT compiler generates information about line numbers, types, locals, and parameters. The native debugger allows inspecting stack trace and variables, stepping into or over source lines, or setting line breakpoints. Additional feature support like debugging around exceptions, fixing some name mangling, stepping into virtual calls, stepping into runtime library code, and property and expression evaluation are planned in future releases.
+The native AOT compiler generates information about line numbers, types, locals, and parameters. The native debugger allows inspecting stack trace and variables, stepping into or over source lines, or setting line breakpoints.
 
 Collecting a [dump](../../diagnostics/dumps.md) file for a native AOT application involves some manual steps in .NET 8.
 

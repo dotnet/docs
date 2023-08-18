@@ -20,7 +20,7 @@ The following table shows the different code analysis rule categories and provid
 |  | Value |
 |--|-------|
 | **Link to rules** | [Design rules](quality-rules/design-warnings.md) |
-| **Description** | Design rules support adherence to the [.Framework design guidelines](../../standard/design-guidelines/index.md). |
+| **Description** | Design rules support adherence to the [Framework design guidelines](../../standard/design-guidelines/index.md). |
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Design.severity` |
 | [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeDesign>` |
 

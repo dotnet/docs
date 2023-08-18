@@ -3,7 +3,7 @@ title: Deploy a Worker Service to Azure
 description: Deploy your .NET Worker Service to Azure with ease, learning from a step-by-step process to optimize your workflow, including Docker and Azure Container Registry.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/13/2023
+ms.date: 08/18/2023
 ms.topic: tutorial
 zone_pivot_groups: development-environment-one
 ---
@@ -254,6 +254,9 @@ To verify that the image was successfully pushed to the container registry, navi
 :::zone target="docs" pivot="vscode"
 
 From Visual Studio Code, select **Docker** from the **Activity Bar**. Expand the **REGISTRIES** node, and select **Connect Registry**. Select **Azure** when prompted, and sign in if necessary.
+
+> [!IMPORTANT]
+> This no longer works on Mac. For more information, see [GitHub: About Docker Extension for Visual Studio Code](https://github.com/microsoft/vscode-docker/issues/3655).
 
 :::image type="content" source="media/vs-code-connect-registry.png" alt-text="Visual Studio Code - Docker: Connect registry":::
 

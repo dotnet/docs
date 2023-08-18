@@ -15,18 +15,112 @@ The following table shows the different code analysis rule categories and provid
 > [!TIP]
 > Setting the severity for a category of rules using the `dotnet_analyzer_diagnostic.category-<category>.severity` syntax doesn't apply to rules that are disabled by default. However, starting in .NET 6, you can use the [AnalysisMode\<Category>](../../core/project-sdk/msbuild-props.md#analysismodecategory) project property to enable all the rules in a category.
 
-| Category | Description | EditorConfig value |
-| - | - | - |
-| [Design rules](quality-rules/design-warnings.md) | Design rules support adherence to the [.NET Framework Design Guidelines](../../standard/design-guidelines/index.md). | `dotnet_analyzer_diagnostic.category-Design.severity` |
-| [Documentation rules](quality-rules/documentation-warnings.md) | Documentation rules support writing well-documented libraries through the correct use of XML documentation comments for externally visible APIs. | `dotnet_analyzer_diagnostic.category-Documentation.severity` |
-| [Globalization rules](quality-rules/globalization-warnings.md) | Globalization rules support world-ready libraries and applications. | `dotnet_analyzer_diagnostic.category-Globalization.severity` |
-| [Portability and interoperability rules](quality-rules/interoperability-warnings.md) | Portability rules support portability across different platforms. Interoperability rules support interaction with COM clients. | `dotnet_analyzer_diagnostic.category-Interoperability.severity` |
-| [Maintainability rules](quality-rules/maintainability-warnings.md) | Maintainability rules support library and application maintenance. | `dotnet_analyzer_diagnostic.category-Maintainability.severity` |
-| [Naming rules](quality-rules/naming-warnings.md) | Naming rules support adherence to the naming conventions of the .NET design guidelines. | `dotnet_analyzer_diagnostic.category-Naming.severity` |
-| [Performance rules](quality-rules/performance-warnings.md) | Performance rules support high-performance libraries and applications. | `dotnet_analyzer_diagnostic.category-Performance.severity` |
-| [SingleFile rules](../../core/deploying/single-file/warnings/overview.md) | Single-file rules support single-file applications. | `dotnet_analyzer_diagnostic.category-SingleFile.severity` |
-| [Reliability rules](quality-rules/reliability-warnings.md) | Reliability rules support library and application reliability, such as correct memory and thread usage. | `dotnet_analyzer_diagnostic.category-Reliability.severity` |
-| [Security rules](quality-rules/security-warnings.md) | Security rules support safer libraries and applications. These rules help prevent security flaws in your program. | `dotnet_analyzer_diagnostic.category-Security.severity` |
-| [Style rules](style-rules/index.md) | Style rules support consistent code style in your codebase. These rules start with the "IDE" prefix. | `dotnet_analyzer_diagnostic.category-Style.severity` |
-| [Usage rules](quality-rules/usage-warnings.md) | Usage rules support proper usage of .NET. | `dotnet_analyzer_diagnostic.category-Usage.severity` |
-| N/A | You can use this EditorConfig value to enable the following rules: [IDE0051](style-rules/ide0051.md), [IDE0064](style-rules/ide0064.md), [IDE0076](style-rules/ide0076.md). While these rules start with "IDE", they are not technically part of the `Style` category. | `dotnet_analyzer_diagnostic.category-CodeQuality.severity` |
+## Design rules
+
+|  | Value |
+|--|-------|
+| **Link to rules** | [Design rules](quality-rules/design-warnings.md) |
+| **Description** | Design rules support adherence to the [Framework design guidelines](../../standard/design-guidelines/index.md). |
+| **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Design.severity` |
+| [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeDesign>` |
+
+## Documentation rules
+
+|  | Value |
+|--|-------|
+| **Link to rules** | [Documentation rules](quality-rules/documentation-warnings.md)  |
+| **Description** | Documentation rules support writing well-documented libraries through the correct use of XML documentation comments for externally visible APIs. |
+| **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Documentation.severity` |
+| [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeDocumentation>` |
+
+## Globalization rules
+
+|  | Value |
+|--|-------|
+| **Link to rules** | [Globalization rules](quality-rules/globalization-warnings.md) |
+| **Description** | Globalization rules support world-ready libraries and applications. |
+| **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Globalization.severity` |
+| [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeGlobalization>` |
+
+## Portability and interoperability rules
+
+|  | Value |
+|--|-------|
+| **Link to rules** | [Portability and interoperability rules](quality-rules/interoperability-warnings.md)  |
+| **Description** | Portability rules support portability across different platforms. Interoperability rules support interaction with COM clients. |
+| **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Interoperability.severity` |
+| [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeInteroperability>` |
+
+## Maintainability rules
+
+|  | Value |
+|--|-------|
+| **Link to rules** | [Maintainability rules](quality-rules/maintainability-warnings.md) |
+| **Description** | Maintainability rules support library and application maintenance. |
+| **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Maintainability.severity` |
+| [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeMaintainability>` |
+
+## Naming rules
+
+|  | Value |
+|--|-------|
+| **Link to rules** | [Naming rules](quality-rules/naming-warnings.md) |
+| **Description** | Naming rules support adherence to the naming conventions of the .NET design guidelines. |
+| **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Naming.severity` |
+| [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeNaming>` |
+
+## Performance rules
+
+|  | Value |
+|--|-------|
+| **Link to rules** | [Performance rules](quality-rules/performance-warnings.md)  |
+| **Description** | Performance rules support high-performance libraries and applications. |
+| **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Performance.severity` |
+| [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModePerformance>` |
+
+## SingleFile rules
+
+|  | Value |
+|--|-------|
+| **Link to rules** | [SingleFile rules](../../core/deploying/single-file/warnings/overview.md) |
+| **Description** | Single-file rules support single-file applications. |
+| **EditorConfig value** | `dotnet_analyzer_diagnostic.category-SingleFile.severity` |
+| [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeSingleFile>` |
+
+## Reliability rules
+
+|  | Value |
+|--|-------|
+| **Link to rules** | [Reliability rules](quality-rules/reliability-warnings.md) |
+| **Description** | Reliability rules support library and application reliability, such as correct memory and thread usage. |
+| **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Reliability.severity` |
+| [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeReliability>` |
+
+## Security rules
+
+|  | Value |
+|--|-------|
+| **Link to rules** | [Security rules](quality-rules/security-warnings.md) |
+| **Description** | Security rules support safer libraries and applications. These rules help prevent security flaws in your program. |
+| **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Security.severity` |
+| [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeSecurity>` |
+
+## Style rules
+
+|  | Value |
+|--|-------|
+| **Link to rules** | [Style rules](style-rules/index.md) |
+| **Description** | Style rules support consistent code style in your codebase. These rules start with the "IDE" prefix.<sup>*</sup> |
+| **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Style.severity` |
+| [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeStyle>` |
+
+\* Use the EditorConfig value `dotnet_analyzer_diagnostic.category-CodeQuality.severity` to enable the following rules: [IDE0051](style-rules/ide0051.md), [IDE0064](style-rules/ide0064.md), and [IDE0076](style-rules/ide0076.md). While these rules start with "IDE", they aren't technically part of the `Style` category.
+
+## Usage rules
+
+|  | Value |
+|--|-------|
+| **Link to rules** | [Usage rules](quality-rules/usage-warnings.md) |
+| **Description** | Usage rules support proper usage of .NET. |
+| **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Usage.severity` |
+| [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeUsage>` |

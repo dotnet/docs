@@ -11,6 +11,8 @@ Some C# 12 features have been introduced in previews. You can try these features
 - [Optional parameters in lambda expressions](#default-lambda-parameters) - Introduced in Visual Studio 17.5 preview 2.
 - [Alias any type](#alias-any-type) - Introduced in Visual Studio 17.6 preview 3.
 - [Inline arrays](#inline-arrays) - Introduced in Visual Studio 17.7 preview 3.
+- [Collection expressions](#collection-expressions) - Introduced in Visual Studio 17.7, preview 5.
+
 - [Interceptors](#interceptors) - *Preview feature* Introduced in Visual Studio 17.7, preview 3.
 
 ## Primary constructors
@@ -20,6 +22,55 @@ You can now create primary constructors in any `class` and `struct`. Primary con
 The compiler generates public properties for primary constructor parameters only in `record` types, either `record class` or `record struct` types. Non-record classes and structs may not always want this behavior for primary constructor parameters.
 
 You can learn more about primary constructors in the tutorial for [exploring primary constructors](./tutorials/primary-constructors.md) and in the article on [instance constructors](../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors).
+
+## Collection expressions
+
+Collection expressions introduce a new terse syntax to create common collection values. Inlining other collections into these values is possible using a spread operator `..`.
+
+Several collection-like types can be created without requiring external BCL support.  These types are:
+
+* Array types, such as `int[]`.
+* <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>.
+* Types that support collection initializers, such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>.
+
+The following examples show uses of collection expressions:
+
+```csharp
+// Create an array:
+int[] a = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// Create a span
+Span<int> b  = ['a', 'b', 'c', 'd', 'e', 'f', 'h', 'i'];
+
+// Create a 2 D array:
+int[][] twoD = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+// create a 2 D array from variables:
+int[] row0 = [1, 2, 3];
+int[] row1 = [4, 5, 6];
+int[] row2 = [7, 8, 9];
+int[][] twoDFromVariables = [row0, row1, row2];
+
+```
+
+The *spread operator*, `..` in a collection expression replaces its argument with the elements from that collection. The argument must be a collection type. The following examples show how the spread operator works:
+
+```csharp
+int[] row0 = [1, 2, 3];
+int[] row1 = [4, 5, 6];
+int[] row2 = [7, 8, 9];
+int[] single = [..row0, ..row1, ..row2];
+foreach (var element in single)
+{
+    Console.Write($"{element}, ");
+}
+// output:
+// 1, 2, 3, 4, 5, 6, 7, 8, 9,
+```
+
+The operand of a spread operator is an expression that can be enumerated. The spread operator evaluates each element of the enumerations expression.
+
+You can use collection expressions anywhere you need a collection of elements. They can specify the initial value for a collection or be passed as arguments to methods that take collection types. You can learn more about collection expressions in the [feature specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md).
 
 ## Default lambda parameters
 

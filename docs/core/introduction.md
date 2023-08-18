@@ -5,9 +5,10 @@ ms.date: 03/24/2023
 ms.custom: "updateeachrelease"
 recommendations: false
 ---
+
 # What is .NET? Introduction and overview
 
-[.NET is a free](https://dotnet.microsoft.com/download/), cross-platform, [open-source developer platform](https://github.com/dotnet/core) for building many kinds of applications. .NET is built on a [high-performance runtime](https://devblogs.microsoft.com/dotnet/category/performance/) that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/).
+[.NET is a free](https://dotnet.microsoft.com/download/), cross-platform , [open-source developer platform](https://github.com/dotnet/core) for building many kinds of applications. .NET is built on a [high-performance runtime](https://devblogs.microsoft.com/dotnet/category/performance/) that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/).
 
 **Cloud apps**
 
@@ -240,3 +241,4 @@ There are multiple variants of .NET, each supporting a different type of app. Th
 * [Try .NET in your browser](../csharp/tour-of-csharp/tutorials/numbers-in-csharp.yml)
 * [Take a tour of C#](../csharp/tour-of-csharp/index.md)
 * [Take a tour of F#](../fsharp/tour.md)
+

@@ -193,6 +193,18 @@ public class MyLibrary99
     internal static Type type;
 }
 
+public class MyLib
+{
+    public static class MyClass
+    {
+        public static int getMax(int a, int b)
+        {
+            return a > b ? a : b;
+        }
+    }
+    
+}
+
 // </snippet_AD4>
 public class MyLibrary22
 {

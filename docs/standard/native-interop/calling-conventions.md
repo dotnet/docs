@@ -27,7 +27,7 @@ For non-x86 architectures, both Stdcall and Cdecl calling conventions are treate
 
 ## Specifying calling conventions in managed P/Invoke declarations
 
-The calling conventions are specific by types in the System.Runtime.CompilerServices namespace or their combinations:
+The calling conventions are specific by types in the `System.Runtime.CompilerServices` namespace or their combinations:
 
 - [CallConvCdecl](xref:System.Runtime.CompilerServices.CallConvCdecl)
 - [CallConvFastcall](xref:System.Runtime.CompilerServices.CallConvFastcall)
@@ -54,12 +54,6 @@ static unsafe int NativeCallback(void* context);
 // Method returning function pointer with combination of Cdecl and MemberFunction calling conventions.
 static unsafe delegate* unmanaged[Cdecl, MemberFunction]<int> GetHandler();
 ```
-
-## Specifying calling conventions in unmanaged C/C++ code
-
-The default calling convention in unmanaged code is typically specified project-wide via C/C++ compiler options. For individual methods,
-the calling conventions can be specified using the `__stdcall` and `__cdecl` compiler intrinsics under Microsoft Visual C++, and by using
-the `__attribute__((stdcall))` and `__attribute__((cdecl))` compiler intrinsics under GCC and Clang.
 
 ## Specifying calling conventions in earlier .NET versions
 

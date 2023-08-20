@@ -20,7 +20,7 @@ Most platforms use one canonical calling convention and an explicitly specified 
 
 For the x86 architecture, the default calling convention is platform-specific. Stdcall ("standard call") is the default calling convention on Windows x86
 and it is used by most Win32 APIs. Cdecl is the default calling convention on Linux x86. Windows ports of open source libraries that
-originated on Unix often use Cdecl calling convention even on Windows x86 and it is necessary to explicitly specifify the Cdecl calling
+originated on Unix often use the Cdecl calling convention even on Windows x86 and it is necessary to explicitly specify the Cdecl calling
 convention in P/Invoke declarations for interop with these libraries.
 
 For non-x86 architectures, both Stdcall and Cdecl calling conventions are treated as the canonical platform default calling convention.

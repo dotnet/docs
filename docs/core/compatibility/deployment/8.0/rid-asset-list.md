@@ -69,6 +69,7 @@ If you need to revert to the previous behavior, set the backwards compatibility 
 <ItemGroup>
   <RuntimeHostConfigurationOption Include="System.Runtime.Loader.UseRidGraph" Value="true" />
 </ItemGroup>
+```
 
 ## Affected APIs
 

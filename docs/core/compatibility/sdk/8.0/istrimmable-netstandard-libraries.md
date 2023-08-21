@@ -28,7 +28,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-Allowing the use of `<IsTrimmable>` or `<EnableTrimAnalyzer>` with netstandard meant that it was easy for library authors to opt into trimming, without being alerted about trim incompatibilities. Because the netstandard reference assemblies were not annotated for trimming, there would be no warnings about uses of framework APIs that are incompatible with trimming. 
+Allowing the use of `<IsTrimmable>` or `<EnableTrimAnalyzer>` with netstandard meant that it was easy for library authors to opt into trimming, without being alerted about trim incompatibilities. Because the netstandard reference assemblies were not annotated for trimming, there would be no warnings about uses of framework APIs that are incompatible with trimming.
 
 ## Recommended action
 

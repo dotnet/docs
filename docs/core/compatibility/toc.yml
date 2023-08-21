@@ -126,6 +126,8 @@ items:
         href: sdk/8.0/msbuild-language.md
       - name: Runtime-specific apps not self-contained
         href: sdk/8.0/runtimespecific-app-default.md
+      - name: "Warning for IsTrimmable with netstandard libraries"
+        href: sdk/8.0/istrimmable-netstandard-libraries.md
     - name: Serialization
       items:
       - name: BinaryFormatter disabled for most projects

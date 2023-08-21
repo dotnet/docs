@@ -63,7 +63,12 @@ The RID graph was costly to maintain and understand, requiring .NET itself to be
 
 Use portable RIDs, for example, `linux`, `linux-musl`, `osx`, and `win`. For specialized use cases, you can use APIs like <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver(System.Reflection.Assembly,System.Runtime.InteropServices.DllImportResolver)?displayProperty=nameWithType> or <xref:System.Runtime.Loader.AssemblyLoadContext.ResolvingUnmanagedDll?displayProperty=nameWithType> for custom loading logic.
 
-If you need to revert to the previous behavior, set the backwards compatibility switch `System.Runtime.Loader.UseRidGraph` to `true` in your *runtimeconfig.json* file. Setting the switch to `true` instructs the host to use the previous behavior of reading the RID graph. Alternatively, you can add a `RuntimeHostConfigurationOption` MSBuild item in your project file.
+If you need to revert to the previous behavior, set the backwards compatibility switch `System.Runtime.Loader.UseRidGraph` to `true` in your *runtimeconfig.json* file. Setting the switch to `true` instructs the host to use the previous behavior of reading the RID graph. Alternatively, you can add a `RuntimeHostConfigurationOption` MSBuild item in your project file. For example:
+
+```xml
+<ItemGroup>
+  <RuntimeHostConfigurationOption Include="System.Runtime.Loader.UseRidGraph" Value="true" />
+</ItemGroup>
 
 ## Affected APIs
 

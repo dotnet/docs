@@ -68,7 +68,7 @@ public static class GpsLocation
     public static async Task<(double latitude, double longitude)> GetCoordinatesAsync()
     {
 #if NET461
-        return CallDotNetFramworkApi();
+        return CallDotNetFrameworkApi();
 #elif WINDOWS_UWP
         return CallUwpApi();
 #else

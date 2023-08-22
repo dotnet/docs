@@ -21,7 +21,7 @@ When you create a class library, you can distribute it as a NuGet package or as 
 
 ## Prerequisites
 
-- [Visual Studio 2022 version 17.4](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 7 SDK is automatically installed when you select this workload.
+- [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 8 SDK is automatically installed when you select this workload.
 
   For more information, see [Install the .NET SDK with Visual Studio](../install/windows.md#install-with-visual-studio).
 
@@ -51,7 +51,7 @@ To create the blank solution:
 
    1. On the **Configure your new project** page, enter **StringLibrary** in the **Project name** box, and then choose **Next**.
 
-   1. On the **Additional information** page, select **.NET 7 (Standard-term support)**, and then choose **Create**.
+   1. On the **Additional information** page, select **.NET 8 (Preview)**, and then choose **Create**.
 
 1. Check to make sure that the library targets the correct version of .NET. Right-click on the library project in **Solution Explorer**, and then select **Properties**. The **Target Framework** text box shows that the project targets .NET 7.0.
 
@@ -86,7 +86,7 @@ Add a console application that uses the class library. The app will prompt the u
 
    1. On the **Configure your new project** page, enter **ShowCase** in the **Project name** box. Then choose **Next**.
 
-   1. On the **Additional information** page, select **.NET 7 (Standard-term support)** in the **Framework** box. Then choose **Create**.
+   1. On the **Additional information** page, select **.NET 8 (Preview)** in the **Framework** box. Then choose **Create**.
 
 1. In the code window for the *Program.cs* or *Program.vb* file, replace all of the code with the following code.
 

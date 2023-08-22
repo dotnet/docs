@@ -1,21 +1,21 @@
 ---
-title: Cross Platform P/Invoke
+title: Native library loading
 description: Learn which paths the runtime will search when loading native libraries via P/Invoke. Also learn how to use SetDllImportResolver.
 author: saul
 ms.date: 03/14/2022
 ---
 
-# Writing cross platform P/Invoke code
+# Native library loading
 
 This article explains which paths the runtime searches when loading native libraries via P/Invoke. It also shows how to use
 <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver%2A>.
 
 ## Library name variations
 
-To facilitate simpler cross platform P/Invoke code, the runtime adds the canonical shared library extension (`.dll`, `.so` or `.dylib`) to native library names. On Linux and macOS, the runtime will also try prepending `lib`. These library names variations are automatically searched when you use APIs that load unmanaged libraries, such as <xref:System.Runtime.InteropServices.DllImportAttribute>.
+To facilitate simpler cross platform P/Invoke code, the runtime adds the canonical shared library extension (`.dll`, `.so` or `.dylib`) to native library names. On Unix-based platforms, the runtime will also try prepending `lib`. These library names variations are automatically searched when you use APIs that load native libraries, such as <xref:System.Runtime.InteropServices.DllImportAttribute>.
 
 > [!NOTE]
-> Absolute paths in library names (e.g., `/usr/lib/libc`) are treated as-is and no variations will be searched.
+> Absolute paths in library names (e.g., `/usr/lib/libc.so`) are treated as-is and no variations will be searched.
 
 Consider the following example of using P/Invoke:
 
@@ -57,7 +57,7 @@ In this case, the library name variations are tried in the following order:
 In more complex scenarios, you can use <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver%2A> to resolve DLL imports at run time. In the following example, `nativedep` is resolved to `nativedep_avx2` if the CPU supports it.
 
 > [!TIP]
-> This functionality is only available in .NET 5 and .NET Core 3.1 or later.
+> This functionality is only available in .NET Core 3.1 and .NET 5+.
 
 [!code-csharp[import resolver](~/samples/snippets/standard/interop/pinvoke/import-resolver/Program.cs)]
 

@@ -18,6 +18,7 @@ Previously, when used in a .NET Standard or .NET Framework project, these settin
 ## New behavior
 
 Starting in the .NET 8 SDK, in a project targeting .NET Standard or .NET Framework:
+
 - `<PublishTrimmed>` produces an error indicating that this setting is unsupported for the target framework.
 - `<IsTrimmable>` or `<EnableTrimAnalyzer>` produce a warning indicating that `<IsTrimmable>` is unsupported for the target framework. These settings otherwise have no effect on the build output.
 

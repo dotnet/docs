@@ -1,8 +1,8 @@
 ---
 title: Debug a .NET console application using Visual Studio
 description: Learn how to debug a .NET console app using Visual Studio.
-ms.date: 11/30/2022
-zone_pivot_groups: dotnet-version
+ms.date: 08/21/2023
+zone_pivot_groups: dotnet-version-7-8
 dev_langs:
   - "csharp"
   - "vb"
@@ -11,7 +11,7 @@ recommendations: false
 ---
 # Tutorial: Debug a .NET console application using Visual Studio
 
-::: zone pivot="dotnet-7-0"
+::: zone pivot="dotnet-8-0"
 
 This tutorial introduces the debugging tools available in Visual Studio.
 
@@ -193,9 +193,12 @@ In this tutorial, you used Visual Studio debugging tools. In the next tutorial, 
 
 ::: zone-end
 
-::: zone pivot="dotnet-6-0"
+::: zone pivot="dotnet-7-0"
 
 This tutorial introduces the debugging tools available in Visual Studio.
+
+> [!IMPORTANT]
+> All of the keyboard shortcuts are based on the defaults from Visual Studio. Your keyboard shortcuts may vary, for more information see [Keyboard shortcuts in Visual Studio](/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio).
 
 ## Prerequisites
 
@@ -268,7 +271,7 @@ The program displays the string that the user enters. What happens if the user d
 1. For the **Conditional Expression**, enter the following code in the field that shows example code that tests if `x` is 5.
 
    ```csharp
-   String.IsNullOrEmpty(name)
+   string.IsNullOrEmpty(name)
    ```
 
    ```vb
@@ -311,7 +314,7 @@ The program displays the string that the user enters. What happens if the user d
 
 ## Step through a program
 
-Visual Studio also allows you to step line by line through a program and monitor its execution. Ordinarily, you'd set a breakpoint and follow program flow through a small part of your program code. Since this program is small, you can step through the entire program. While not currently debugging, and focus is on Visual Studio:
+Visual Studio also allows you to step line by line through a program and monitor its execution. Ordinarily, you'd set a breakpoint and follow program flow through a small part of your program code. Since this program is small, you can step through the entire program.
 
 1. Choose **Debug** > **Step Into**. Another way to debug one statement at a time is by pressing <kbd>F11</kbd>.
 

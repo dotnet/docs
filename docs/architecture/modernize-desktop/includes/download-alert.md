@@ -8,7 +8,7 @@ ms.topic: include
 > [!TIP]
 > :::row:::
 > :::column span="3":::
-> This content is an excerpt from the eBook, Modernizing Desktop Apps on Windows with .NET 6, available on [.NET Docs](/dotnet/architecture/modernize-desktop) or as a free downloadable PDF that can be read offline.
+> This content is an excerpt from the eBook, Modernizing Desktop Apps on Windows with .NET 7, available on [.NET Docs](/dotnet/architecture/modernize-desktop) or as a free downloadable PDF that can be read offline.
 >
 > > [!div class="nextstepaction"]
 > > [Download PDF](https://dotnet.microsoft.com/en-us/download/e-book/modernizing-existing-desktop-apps/pdf)

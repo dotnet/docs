@@ -29,7 +29,7 @@ While there are plenty of GitHub Actions available in the [Marketplace](https://
 
 ## Workflow file
 
-GitHub Actions are utilized through a workflow file. The workflow file must be located in the *.github/workflows* directory of the repository, and is expected to be YAML (either **.yml* or **.yaml*). Workflow files define the *workflow composition*. A workflow is a configurable automated process made up of one or more jobs. For more information, see [Workflow syntax for GitHub Actions](https://docs.github.com/actions/reference/workflow-syntax-for-github-actions).
+GitHub Actions are utilized through a workflow file. The workflow file must be located in the *.github/workflows* directory of the repository, and is expected to be YAML (either *\*.yml* or *\*.yaml*). Workflow files define the *workflow composition*. A workflow is a configurable automated process made up of one or more jobs. For more information, see [Workflow syntax for GitHub Actions](https://docs.github.com/actions/reference/workflow-syntax-for-github-actions).
 
 ### Example workflow files
 

@@ -2,7 +2,7 @@
 title: Create a .NET console application using Visual Studio
 description: Learn how to create a .NET console application with C# or Visual Basic using Visual Studio.
 ms.date: 01/28/2023
-zone_pivot_groups: dotnet-version
+zone_pivot_groups: dotnet-version-7-8
 dev_langs:
   - "csharp"
   - "vb"
@@ -11,7 +11,7 @@ recommendations: false
 ---
 # Tutorial: Create a .NET console application using Visual Studio
 
-::: zone pivot="dotnet-7-0"
+::: zone pivot="dotnet-8-0"
 
 This tutorial shows how to create and run a .NET console application in Visual Studio 2022.
 
@@ -123,13 +123,13 @@ In this tutorial, you created a .NET console application. In the next tutorial, 
 
 ::: zone-end
 
-::: zone pivot="dotnet-6-0"
+::: zone pivot="dotnet-7-0"
 
 This tutorial shows how to create and run a .NET console application in Visual Studio 2022.
 
 ## Prerequisites
 
-- [Visual Studio 2022 version 17.1 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 6 SDK is automatically installed when you select this workload.
+- [Visual Studio 2022 version 17.4 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 7 SDK is automatically installed when you select this workload.
 
   For more information, see [Install the .NET SDK with Visual Studio](../install/windows.md#install-with-visual-studio).
 
@@ -143,7 +143,7 @@ Create a .NET console app project named "HelloWorld".
 
    :::image type="content" source="./media/with-visual-studio/start-window-2022.png" alt-text="Create a new project button selected on the Visual Studio start page":::
 
-1. On the **Create a new project** page, enter **console** in the search box. Next, choose **C#** or **Visual Basic** from the language list, and then choose **All platforms** from the platform list. Choose the **Console Application** template, and then choose **Next**.
+1. On the **Create a new project** page, enter **console** in the search box. Next, choose **C#** or **Visual Basic** from the language list, and then choose **All platforms** from the platform list. Choose the **Console App** template, and then choose **Next**.
 
    :::image type="content" source="./media/with-visual-studio/create-new-project.png" alt-text="Create a new project window with filters selected":::
 
@@ -154,12 +154,23 @@ Create a .NET console app project named "HelloWorld".
 
    :::image type="content" source="./media/with-visual-studio/configure-new-project.png" alt-text="Configure your new project window with Project name, location, and solution name fields":::
 
-1. In the **Additional information** dialog, select **.NET 6 (Long-term support)**, and then select **Create**.
+1. In the **Additional information** dialog:
+   - Select **.NET 7 (Standard-term support)**.
+   - Select **Do not use top-level statements**.
+   - Select **Create**.
 
-   The template creates a simple application that displays "Hello World" in the console window. The code is in the *Program.cs* or *Program.vb* file:
+   The template creates a simple application that displays "Hello, World!" in the console window. The code is in the *Program.cs* or *Program.vb* file:
 
    ```csharp
-   Console.WriteLine("Hello, World!");
+   namespace HelloWorld;
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+        }
+    }
    ```
 
    ```vb
@@ -174,25 +185,6 @@ Create a .NET console app project named "HelloWorld".
 
    If the language you want to use is not shown, change the language selector at the top of the page.
 
-1. For C#, the code is just a line that calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display "Hello World!" in the console window. Replace the contents of *Program.cs* with the following code:
-
-   ```csharp
-   namespace HelloWorld
-   {
-       class Program
-       {
-           static void Main(string[] args)
-           {
-               Console.WriteLine("Hello World!");
-           }
-       }
-   }
-   ```
-
-   ```vb
-   ' This step of the tutorial applies only to C#.
-   ```
-
    The code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
 
    In the latest version of C#, a new feature named [top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) lets you omit the `Program` class and the `Main` method. Most existing C# programs don't use top-level statements, so this tutorial doesn't use this new feature. But it's available in C# 10, and whether you use it in your programs is a matter of style preference.
@@ -201,7 +193,7 @@ Create a .NET console app project named "HelloWorld".
 
 1. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the program without debugging.
 
-   A console window opens with the text "Hello World!" printed on the screen.
+   A console window opens with the text "Hello, World!" printed on the screen. (Or "Hello World!" without a comma in the Visual Basic project template.)
 
    :::image type="content" source="./media/with-visual-studio/hello-world-console-net6.png" alt-text="Console window showing Hello World Press any key to continue":::
 
@@ -232,7 +224,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 ## Additional resources
 
-- [Releases and support for .NET](../releases-and-support.md)
+- [Standard-term support (STS) releases and long-term support (LTS) releases](../releases-and-support.md)
 
 ## Next steps
 

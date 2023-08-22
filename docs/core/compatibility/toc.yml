@@ -100,6 +100,8 @@ items:
       items:
       - name: CreateObjectFlags.Unwrap only unwraps on target instance
         href: interop/8.0/comwrappers-unwrap.md
+      - name: IDispatchImplAttribute API is removed
+        href: interop/8.0/idispatchimplattribute-removed.md
       - name: SafeHandle types must have public constructor
         href: interop/8.0/safehandle-constructor.md
     - name: Reflection
@@ -1368,6 +1370,8 @@ items:
       items:
       - name: CreateObjectFlags.Unwrap only unwraps on target instance
         href: interop/8.0/comwrappers-unwrap.md
+      - name: IDispatchImplAttribute API is removed
+        href: interop/8.0/idispatchimplattribute-removed.md
       - name: SafeHandle types must have public constructor
         href: interop/8.0/safehandle-constructor.md
     - name: .NET 7

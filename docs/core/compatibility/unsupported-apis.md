@@ -2,7 +2,7 @@
 title: Unsupported APIs on .NET Core and .NET 5+
 titleSuffix: ""
 description: Learn which .NET APIs always throw an exception on .NET Core and .NET 5 and later versions.
-ms.date: 05/02/2023
+ms.date: 08/22/2023
 ---
 # APIs that always throw exceptions on .NET Core and .NET 5+
 
@@ -184,6 +184,7 @@ This article organizes the affected APIs by namespace.
 
 | Member | Platforms that throw |
 | - | - |
+| <xref:System.Runtime.InteropServices.IDispatchImplAttribute> | All |
 | <xref:System.Runtime.InteropServices.Marshal.GetIDispatchForObject(System.Object)?displayProperty=nameWithType> | All |
 | <xref:System.Runtime.InteropServices.RuntimeEnvironment.SystemConfigurationFile?displayProperty=nameWithType> | All |
 | <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsIntPtr(System.Guid,System.Guid)?displayProperty=nameWithType> | All |

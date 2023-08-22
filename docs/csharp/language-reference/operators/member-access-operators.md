@@ -78,7 +78,7 @@ If an array index is outside the bounds of the corresponding dimension of an arr
 
 As the preceding example shows, you also use square brackets when you declare an array type or instantiate an array instance.
 
-For more information about arrays, see [Arrays](../../programming-guide/arrays/index.md).
+For more information about arrays, see [Arrays](../builtin-types/arrays.md).
 
 ### Indexer access
 

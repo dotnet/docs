@@ -42,7 +42,7 @@ Use array initialization syntax to create an array instance and populate it with
 
 [!code-csharp-interactive[initialize array](snippets/shared/NewOperator.cs#ArrayInitialization)]
 
-For more information about arrays, see [Arrays](../../programming-guide/arrays/index.md).
+For more information about arrays, see [Arrays](../builtin-types/arrays.md).
 
 ## Instantiation of anonymous types
 

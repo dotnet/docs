@@ -354,5 +354,5 @@ Iterators enable you to maintain the simplicity of a `foreach` loop when you nee
 - <xref:System.Collections.Generic>
 - <xref:System.Collections.Generic.IEnumerable%601>
 - [foreach, in](../../language-reference/statements/iteration-statements.md#the-foreach-statement)
-- [Using foreach with Arrays](../arrays/using-foreach-with-arrays.md)
+- [Using foreach with Arrays](../../language-reference/builtin-types/arrays.md#using-foreach-with-arrays)
 - [Generics](../../fundamentals/types/generics.md)

@@ -13,6 +13,8 @@ items:
     items:
     - name: Overview
       href: ../core/install/index.yml
+        - name: burger
+          href: ../core/burger.md
     - name: Install on Windows
       href: ../core/install/windows.md
     - name: Install on macOS

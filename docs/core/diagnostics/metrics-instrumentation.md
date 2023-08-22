@@ -22,7 +22,7 @@ your applications and libraries. In this tutorial, you will add new metrics and 
 **Prerequisites**: [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
 
 Create a new console application that references the [System.Diagnostics.DiagnosticSource NuGet package](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/)
-version 6 or greater. Applications that target .NET 6+ include this reference by default. Then, update the code in `Program.cs` to match:
+version 8 or greater. Applications that target .NET 8+ include this reference by default. Then, update the code in `Program.cs` to match:
 
 ```dotnetcli
 > dotnet new console
@@ -36,8 +36,8 @@ using System.Threading;
 
 class Program
 {
-    static Meter s_meter = new Meter("HatCo.HatStore", "1.0.0");
-    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>("hats-sold");
+    static Meter s_meter = new Meter("HatCo.Store");
+    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>("hatco.store.hats_sold");
 
     static void Main(string[] args)
     {
@@ -54,8 +54,8 @@ class Program
 
 The <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> type is the entry point for a library to create a named group of instruments. Instruments
 record the numeric measurements that are needed to calculate metrics. Here we used <xref:System.Diagnostics.Metrics.Meter.CreateCounter%2A> to create a Counter
-instrument named "hats-sold". During each pretend transaction, the code calls <xref:System.Diagnostics.Metrics.Counter`1.Add%2A> to record the measurement of hats
-that were sold, 4 in this case. The "hats-sold" instrument implicitly defines some metrics that could be computed from these measurements, such as the total number
+instrument named "hatco.store.hats_sold". During each pretend transaction, the code calls <xref:System.Diagnostics.Metrics.Counter`1.Add%2A> to record the measurement of hats
+that were sold, 4 in this case. The "hatco.store.hats_sold" instrument implicitly defines some metrics that could be computed from these measurements, such as the total number
 of hats sold or hats sold/sec. Ultimately it is up to metric collection tools to determine which metrics to compute and how to perform those computations, but each
 instrument has some default conventions that convey the developer's intent. For Counter instruments, the convention is that collection tools show the total count and/or
 the rate at which the count is increasing.
@@ -72,20 +72,20 @@ Press any key to exit
 
 ### Best practices
 
-- Create the Meter once, store it in a static variable or DI container, and use that instance as long as needed. Each library or library subcomponent can
+- For code that is not designed for use in a Dependency Injection (DI) container, create the Meter once and store it in a static variable. For usage in DI-aware libraries static variables are
+considered an anti-pattern and the [DI example](#getting-a-meter-via-dependency-injection) below shows a more idiomatic approach. Each library or library subcomponent can
 (and often should) create its own <xref:System.Diagnostics.Metrics.Meter>. Consider creating a new Meter rather than reusing an existing one if you anticipate
-app developers would appreciate being able to enable and disable the groups of metrics separately.
+app developers would appreciate being able to easily enable and disable the groups of metrics separately.
 
-- The name passed to the <xref:System.Diagnostics.Metrics.Meter> constructor has to be unique to avoid conflicts with any other Meters. Use a dotted hierarchical
-name that contains the assembly name and optionally a subcomponent name. If an assembly is adding instrumentation for code in a second, independent assembly, the name
-should be based on the assembly that defines the Meter, not the assembly whose code is being instrumented.
+- The name passed to the <xref:System.Diagnostics.Metrics.Meter> constructor should be unique to distinguish it from other Meters. We recommend
+[OpenTelemetry naming guidelines](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/general/metrics.md#general-guidelines)
+which use dotted hierarchical names. Assembly names or namespace names for code being instrumented are usually a good choice. If an assembly is adding instrumentation
+for code in a second, independent assembly, the name should be based on the assembly that defines the Meter, not the assembly whose code is being instrumented.
 
-- The <xref:System.Diagnostics.Metrics.Meter> constructor version parameter is optional. We recommend that you provide a version in case you release multiple versions
-of the library and make changes to the instruments.
-
-- .NET doesn't enforce any naming scheme for metrics, but by convention all the .NET runtime libraries have metric names using '-' if a separator is needed. Other metric
-ecosystems have encouraged using '.' or '_' as the separator. Microsoft's suggestion is to use '-' in code and let the metric consumer such as OpenTelemetry or
-Prometheus convert to an alternate separator if needed.
+- .NET doesn't enforce any naming scheme for Instruments, but we recommend following
+[OpenTelemetry naming guidelines](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/general/metrics.md#general-guidelines) which use dotted hierarchical names
+and an '_' as the separator between multiple words in the same element. Beware that not all metric tools preserve the Meter name as part of the final metric name so it is beneficial
+to make the instrument name globally unique on its own.
 
 - The APIs to create instruments and record measurements are thread-safe. In .NET libraries, most instance methods require synchronization when
 invoked on the same object from multiple threads, but that's not needed in this case.
@@ -103,33 +103,89 @@ to install it:
 ```dotnetcli
 > dotnet tool update -g dotnet-counters
 You can invoke the tool using the following command: dotnet-counters
-Tool 'dotnet-counters' (version '5.0.251802') was successfully installed.
+Tool 'dotnet-counters' (version '7.0.430602') was successfully installed.
 ```
 
-While the example app is still running, list the running processes in a second shell to determine the process ID:
+While the example app is still running, use dotnet-counters to monitor the new counter:
 
 ```dotnetcli
-> dotnet-counters ps
-     10180 dotnet     C:\Program Files\dotnet\dotnet.exe
-     19964 metric-instr E:\temp\metric-instr\bin\Debug\netcoreapp3.1\metric-instr.exe
-```
-
-Find the ID for the process name that matches the example app and have dotnet-counters monitor the new counter:
-
-```dotnetcli
-> dotnet-counters monitor -p 19964 HatCo.HatStore
+> dotnet-counters monitor -n metric-demo.exe --counters HatCo.Store
 Press p to pause, r to resume, q to quit.
     Status: Running
 
-[HatCo.HatStore]
-    hats-sold (Count / 1 sec)                          4
+[HatCo.Store]
+    hatco.store.hats_sold (Count / 1 sec)                          4
 ```
 
 As expected, you can see that HatCo store is steadily selling 4 hats each second.
 
+## Getting a Meter via Dependency Injection
+
+In the example above we obtained the Meter by constructing it with `new` and assigning it to a static field. Using statics this way is not a good approach when using Dependency
+Injection (DI). In code that uses DI such as ASP.NET Core, or apps with [Generic Host](../extensions/generic-host.md) create the Meter object using
+<xref:System.Diagnostics.Metrics.IMeterFactory>. Starting in .NET 8 hosts will automatically register <xref:System.Diagnostics.Metrics.IMeterFactory> in the service container
+or you can manually register the type in any <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> by calling <xref:Microsoft.Extensions.DependencyInjection.MetricsServiceExtensions.AddMetrics%2A>.
+The meter factory integrates metrics with DI, keeping Meters in different service collections isolated from each other even if they are using an identical name. This is
+especially useful for testing so that multiple tests running in parallel will only observe measurements produced from within the same test case.
+
+To obtain a Meter in a type designed for DI, add an <xref:System.Diagnostics.Metrics.IMeterFactory> parameter to the constructor, then call
+<xref:System.Diagnostics.Metrics.MeterFactoryExtensions.Create%2A>. This example shows adding IMeterFactory to an ASP.NET Core MVC controller type:
+
+```cs
+public class HatStoreController : Controller
+{
+    private readonly Counter<int> _hatsSold;
+
+    public HatStoreController(IMeterFactory meterFactory)
+    {
+        var meter = meterFactory.Create("HatCo.Store");
+        _hatsSold = meter.CreateCounter<int>("hatco.store.hats_sold");
+        // Other methods in this class can now use the _hatsSold counter to increment the count.
+    }
+```
+
+Instead of adding the `IMeterFactory` to an existing type, you could also create a new type dedicated to managing some metrics. This pattern has a better separation of concerns
+in exchange for being a bit more verbose.
+
+```cs
+public class HatCoMetrics
+{
+    private readonly Counter<int> _hatsSold;
+
+    public HatCoMetrics(IMeterFactory meterFactory)
+    {
+        var meter = meterFactory.Create("HatCo.Store");
+        _hatsSold = meter.CreateCounter<int>("hatco.store.hats_sold");
+    }
+
+    public void HatsSold(int quantity)
+    {
+        _hatsSold.Add(quantity);
+    }
+}
+```
+
+Register the type with DI container in `Program.cs`.
+
+```cs
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddSingleton<HatCoMetrics>();
+```
+
+Inject the metrics type and record values where needed. Because the metrics type is registered in DI it can be used with MVC controllers, minimal APIs, or any other type that is created by DI:
+
+```cs
+app.MapPost("/complete-sale", ([FromBody] SaleModel model, HatCoMetrics metrics) =>
+{
+    // ... business logic such as saving the sale to a database ...
+
+    metrics.HatsSold(model.QuantitySold);
+});
+```
+
 ## Types of instruments
 
-In the previous example, we've only demonstrated a <xref:System.Diagnostics.Metrics.Counter`1> instrument, but there are more instrument types available. Instruments differ
+So far we've only demonstrated a <xref:System.Diagnostics.Metrics.Counter`1> instrument, but there are more instrument types available. Instruments differ
 in two ways:
 
 - **Default metric computations** - Tools that collect and analyze the instrument measurements will compute different default metrics depending on the instrument.
@@ -198,9 +254,9 @@ using System.Threading;
 
 class Program
 {
-    static Meter s_meter = new Meter("HatCo.HatStore", "1.0.0");
-    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>("hats-sold");
-    static Histogram<int> s_orderProcessingTimeMs = s_meter.CreateHistogram<int>("order-processing-time");
+    static Meter s_meter = new Meter("HatCo.Store");
+    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>("hatco.store.hats_sold");
+    static Histogram<int> s_orderProcessingTimeMs = s_meter.CreateHistogram<int>("hatco.store.order_processing_time");
     static int s_coatsSold;
     static int s_ordersPending;
 
@@ -208,8 +264,8 @@ class Program
 
     static void Main(string[] args)
     {
-        s_meter.CreateObservableCounter<int>("coats-sold", () => s_coatsSold);
-        s_meter.CreateObservableGauge<int>("orders-pending", () => s_ordersPending);
+        s_meter.CreateObservableCounter<int>("hatco.store.coats_sold", () => s_coatsSold);
+        s_meter.CreateObservableGauge<int>("hatco.store.orders_pending", () => s_ordersPending);
 
         Console.WriteLine("Press any key to exit");
         while(!Console.KeyAvailable)
@@ -222,7 +278,7 @@ class Program
             // on demand in the callback
             s_coatsSold += 3;
 
-            // Pretend we have some queue of orders that varies over time. The callback for the "orders-pending" gauge will report
+            // Pretend we have some queue of orders that varies over time. The callback for the orders_pending gauge will report
             // this value on-demand.
             s_ordersPending = s_rand.Next(0, 20);
 
@@ -236,25 +292,22 @@ class Program
 Run the new process and use dotnet-counters as before in a second shell to view the metrics:
 
 ```dotnetcli
-> dotnet-counters ps
-      2992 dotnet     C:\Program Files\dotnet\dotnet.exe
-     20508 metric-instr E:\temp\metric-instr\bin\Debug\netcoreapp3.1\metric-instr.exe
-> dotnet-counters monitor -p 20508 HatCo.HatStore
+> dotnet-counters monitor -n metric-demo.exe --counters HatCo.Store
 Press p to pause, r to resume, q to quit.
     Status: Running
 
-[HatCo.HatStore]
-    coats-sold (Count / 1 sec)                        30
-    hats-sold (Count / 1 sec)                         40
-    order-processing-time
+[HatCo.Store]
+    hatco.store.coats_sold (Count / 1 sec)            30
+    hatco.store.hats_sold (Count / 1 sec)             40
+    hatco.store.order_processing_time
         Percentile=50                                125
         Percentile=95                                146
         Percentile=99                                146
-    orders-pending                                     3
+    hatco.store.orders_pending                         3
 ```
 
-This example uses some randomly generated numbers so your values will vary a bit. You can see that `hats-sold` (the Counter) and
-`coats-sold` (the ObservableCounter) both show up as a rate. The ObservableGauge, `orders-pending`, appears
+This example uses some randomly generated numbers so your values will vary a bit. You can see that `hatco.store.hats_sold` (the Counter) and
+`hatco.store.coats_sold` (the ObservableCounter) both show up as a rate. The ObservableGauge, `hatco.store.orders_pending`, appears
 as an absolute value. Dotnet-counters renders Histogram instruments as three percentile statistics (50th, 95th, and 99th) but other tools may
 summarize the distribution differently or offer more configuration options.
 
@@ -281,8 +334,8 @@ class Program
     // BEWARE! Static initializers only run when code in a running method refers to a static variable.
     // These statics will never be initialized because none of them were referenced in Main().
     //
-    static Meter s_meter = new Meter("HatCo.HatStore", "1.0.0");
-    static ObservableCounter<int> s_coatsSold = s_meter.CreateObservableCounter<int>("coats-sold", () => s_rand.Next(1,10));
+    static Meter s_meter = new Meter("HatCo.Store");
+    static ObservableCounter<int> s_coatsSold = s_meter.CreateObservableCounter<int>("hatco.store.coats_sold", () => s_rand.Next(1,10));
     static Random s_rand = new Random();
 
     static void Main(string[] args)
@@ -304,8 +357,8 @@ using System.Threading;
 
 class Program
 {
-    static Meter s_meter = new Meter("HatCo.HatStore", "1.0.0");
-    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>(name: "hats-sold",
+    static Meter s_meter = new Meter("HatCo.Store");
+    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>(name: "hatco.store.hats_sold",
                                                                 unit: "Hats",
                                                                 description: "The number of hats sold in our store");
 
@@ -328,8 +381,8 @@ Run the new process and use dotnet-counters as before in a second shell to view 
 Press p to pause, r to resume, q to quit.
     Status: Running
 
-[HatCo.HatStore]
-    hats-sold (Hats / 1 sec)                           40
+[HatCo.Store]
+    hatco.store.hats_sold (Hats / 1 sec)           40
 ```
 
 dotnet-counters doesn't currently use the description text in the UI, but it does show the unit when it is provided. In this case, you see "Hats"
@@ -365,8 +418,8 @@ using System.Threading;
 
 class Program
 {
-    static Meter s_meter = new Meter("HatCo.HatStore", "1.0.0");
-    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>("hats-sold");
+    static Meter s_meter = new Meter("HatCo.Store");
+    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>("hatco.store.hats_sold");
 
     static void Main(string[] args)
     {
@@ -392,8 +445,8 @@ Dotnet-counters now shows a basic categorization:
 Press p to pause, r to resume, q to quit.
     Status: Running
 
-[HatCo.HatStore]
-    hats-sold (Count / 1 sec)
+[HatCo.Store]
+    hatco.store.hats_sold (Count / 1 sec)
         Color=Blue,Size=19                             9
         Color=Red,Size=12                             18
 
@@ -409,11 +462,11 @@ using System.Threading;
 
 class Program
 {
-    static Meter s_meter = new Meter("HatCo.HatStore", "1.0.0");
+    static Meter s_meter = new Meter("HatCo.Store");
 
     static void Main(string[] args)
     {
-        s_meter.CreateObservableGauge<int>("orders-pending", GetOrdersPending);
+        s_meter.CreateObservableGauge<int>("hatco.store.orders_pending", GetOrdersPending);
         Console.WriteLine("Press any key to exit");
         Console.ReadLine();
     }
@@ -437,8 +490,8 @@ When run with dotnet-counters as before, the result is:
 Press p to pause, r to resume, q to quit.
     Status: Running
 
-[HatCo.HatStore]
-    orders-pending
+[HatCo.Store]
+    hatco.store.orders_pending
         Country=Italy                                  6
         Country=Mexico                                 1
         Country=Spain                                  3
@@ -471,3 +524,86 @@ Press p to pause, r to resume, q to quit.
 
 > [!NOTE]
 > OpenTelemetry refers to tags as 'attributes'. These are two different names for the same functionality.
+
+## Testing custom metrics
+
+Its possible to test any custom metrics you add using <xref:Microsoft.Extensions.Telemetry.Testing.Metering.MetricCollector%601>. This type makes it easy to record the measurements
+from specific instruments and assert the values were correct.
+
+### Testing with Dependency Injection
+
+An example test case for code components that use Dependency Injection and IMeterFactory:
+
+```csharp
+public class MetricTests
+{
+    [Fact]
+    public void SaleIncrementsHatsSoldCounter()
+    {
+        // Arrange
+        var services = CreateServiceProvider();
+        var metrics = services.GetRequiredService<HatCoMetrics>();
+        var meterFactory = services.GetRequiredService<IMeterFactory>();
+        var collector = new MetricCollector<int>(meterFactory, "HatCo.Store", "hatco.store.hats_sold");
+
+        // Act
+        metrics.HatsSold(15);
+
+        // Assert
+        var measurements = collector.GetMeasurementSnapshot();
+        Assert.Equal(1, measurements.Count);
+        Assert.Equal(15, measurements[0].Value);
+    }
+
+    // Setup a new service provider. This example creates the collection explicitly but you might leverage
+    // a host or some other application setup code to do this as well.
+    private static IServiceProvider CreateServiceProvider()
+    {
+        ServiceCollection collection = new ServiceCollection();
+        collection.AddMetrics();
+        collection.AddSingleton<HatCoMetrics>();
+        return collection.BuildServiceProvider();
+    }
+}
+```
+
+Each MetricCollector object records all measurements for one Instrument. If you need to verify measurements from multiple instruments, create one MetricCollector for each one.
+
+### Testing without Dependency Injection
+
+It is also possible to test code that uses a shared global Meter object in a static field, but make sure such tests are configured not to run in parallel. Because the
+Meter object is being shared, MetricCollector in one test will observe the measurements created from any other tests running in parallel.
+
+```csharp
+class HatCoMetricsWithGlobalMeter
+{
+    static Meter s_meter = new Meter("HatCo.Store");
+    static Counter<int> s_hatsSold = s_meter.CreateCounter<int>("hatco.store.hats_sold");
+
+    public void HatsSold(int quantity)
+    {
+        s_hatsSold.Add(quantity);
+    }
+}
+
+public class MetricTests
+{
+    [Fact]
+    public void SaleIncrementsHatsSoldCounter()
+    {
+        // Arrange
+        var metrics = new HatCoMetricsWithGlobalMeter();
+        // Be careful specifying scope=null. This binds the collector to a global Meter and tests
+        // that use global state should not be configured to run in parallel.
+        var collector = new MetricCollector<int>(null, "HatCo.Store", "hatco.store.hats_sold");
+
+        // Act
+        metrics.HatsSold(15);
+
+        // Assert
+        var measurements = collector.GetMeasurementSnapshot();
+        Assert.Equal(1, measurements.Count);
+        Assert.Equal(15, measurements[0].Value);
+    }
+}
+```

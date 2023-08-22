@@ -177,7 +177,7 @@ In the following example, an unknown [Type](/dotnet/api/system.type) flows into 
 
 Similarly, here the problem is that the field `type` is passed into a parameter with these requirements. It's fixed by adding  [`[DynamicallyAccessedMembers]`](xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute) to the field. `[DynamicallyAccessedMembers]` warns about code that assigns incompatible values to the field. Sometimes this process continues until a public API is annotated, and other times it ends when a concrete type flows into a location with these requirements. For example:
 
-:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_UMH2" highlight="1":::
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class3.cs" id="snippet_UMH2" highlight="1":::
 
 In this case, the trim analysis keeps public methods of <xref:System.Tuple>, and produces further warnings.
 

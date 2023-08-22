@@ -2,6 +2,8 @@
 using System.Reflection;
 using System.Text;
 
+namespace MyLibrary1;
+
 // <snippet_1>
 public class MyLibrary
 {
@@ -69,18 +71,6 @@ public class MyLibrary5
     // </snippet_UMH>
 }
 
-public class MyLibrary6
-{
-    // <snippet_UMH2>
-    [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]
-    static Type type;
-
-    static void UseMethodsHelper()
-    {
-        MyLibrary.type = typeof(System.Tuple);
-    }
-    // </snippet_UMH2>
-}
 
 public class MyLibrary7
 {

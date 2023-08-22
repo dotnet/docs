@@ -17,7 +17,7 @@ This tutorial shows how to create and run a .NET console application in Visual S
 
 ## Prerequisites
 
-- [Visual Studio 2022 version 17.4 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 7 SDK is automatically installed when you select this workload.
+- [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed. The .NET 8 SDK is automatically installed when you select this workload.
 
   For more information, see [Install the .NET SDK with Visual Studio](../install/windows.md#install-with-visual-studio).
 
@@ -43,7 +43,7 @@ Create a .NET console app project named "HelloWorld".
    :::image type="content" source="./media/with-visual-studio/configure-new-project.png" alt-text="Configure your new project window with Project name, location, and solution name fields":::
 
 1. In the **Additional information** dialog:
-   - Select **.NET 7 (Standard-term support)**.
+   - Select **.NET 8 (Preview)**.
    - Select **Do not use top-level statements**.
    - Select **Create**.
 
@@ -75,7 +75,7 @@ Create a .NET console app project named "HelloWorld".
 
    The code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
 
-   In the latest version of C#, a new feature named [top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) lets you omit the `Program` class and the `Main` method. Most existing C# programs don't use top-level statements, so this tutorial doesn't use this new feature. But it's available in C# 10, and whether you use it in your programs is a matter of style preference.
+   C# has a feature named [top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) that lets you omit the `Program` class and the `Main` method. This tutorial doesn't use this feature. Whether you use it in your programs is a matter of style preference.
 
 ## Run the app
 
@@ -112,7 +112,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 ## Additional resources
 
-- [Standard-term support (STS) releases and long-term support (LTS) releases](../releases-and-support.md)
+- [Standard-term support (STS) releases and long-term support (LTS) releases](../releases-and-support.md#release-tracks).
 
 ## Next steps
 

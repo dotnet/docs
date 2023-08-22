@@ -7,10 +7,10 @@ namespace MyLibrary1;
 // <snippet_1>
 public class MyLibrary
 {
-
     public static void MyMethod()
     {
-        // warning IL2026 : MyLibrary.MyMethod: Using 'MyLibrary.DynamicBehavior'
+        // warning IL2026 :
+        // MyLibrary.MyMethod: Using 'MyLibrary.DynamicBehavior'
         // which has [RequiresUnreferencedCode] can break functionality
         // when trimming app code.
         DynamicBehavior();

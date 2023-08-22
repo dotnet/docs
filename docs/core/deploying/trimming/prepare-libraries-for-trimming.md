@@ -102,10 +102,18 @@ If library targets a TFM that is not trimmable, for example `net472` or `netstan
 
 ### .csproj file
 
-:::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyTestLib6app/MyTestLib6app.csproj":::
+:::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyTestLib6app/XMLFile1.xml:::
 
-### [.NET 7+](#tab/net7plus)
+### [.NET 7](#tab/net7)
 
+* Add `<PublishTrimmed>true</PublishTrimmed>`.
+* Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
+* Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
+  * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root". A "root" assembly means the trimmer analyzes every call in the library and traverses all code paths that originate from that assembly.
+
+### [.NET 8+](#tab/net8plus)
+
+<!-- exact duplicate of tab7 but forced by builder to have identical tabs -->
 * Add `<PublishTrimmed>true</PublishTrimmed>`.
 * Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
 * Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.

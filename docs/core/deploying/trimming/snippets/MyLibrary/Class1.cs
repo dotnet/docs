@@ -25,7 +25,7 @@ public class MyLibrary
 // <snippet_DAA1>
 public class MyLibrary3
 {
-    static void UseMyMethods(Type type)
+    static void UseMethods(Type type)
     {
         // warning IL2070: MyLibrary.UseMethods(Type): 'this' argument does not satisfy
         // 'DynamicallyAccessedMemberTypes.PublicMethods' in call to
@@ -75,9 +75,9 @@ public class MyLibrary6
     [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]
     static Type type;
 
-    static void InitializeTypeField()
+    static void UseMethodsHelper()
     {
-        MyLibrary99.type = typeof(System.Tuple);
+        MyLibrary.type = typeof(System.Tuple);
     }
     // </snippet_UMH2>
 }

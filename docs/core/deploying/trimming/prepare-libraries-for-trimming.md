@@ -239,7 +239,7 @@ It's important to underline that it's only valid to suppress a warning if there 
 The [`[DynamicDependency]`](xref:System.Diagnostics.CodeAnalysis.DynamicDependencyAttribute) attribute can be used to indicate that a member has a dynamic dependency on other members. This results in the referenced members being kept whenever the member with the attribute is kept, but doesn't silence warnings on its own. Unlike the other attributes, which inform the trim analysis about the reflection behavior of the code, `[DynamicDependency]` only keeps other members. This can be used together with [`[UnconditionalSuppressMessage]`](xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute) to fix some analysis warnings.
 
 > [!WARNING]
-> Use `[DynamicDependency]` attribute only as a last resort when the other approaches aren't viable. It is preferable to express the reflection behavior using [`[RequiresUnreferencedCode]`](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute) or [`[DynamicallyAccessedMembers]`](xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute):
+> Use `[DynamicDependency]` attribute only as a last resort when the other approaches aren't viable. It is preferable to express the reflection behavior using [`[RequiresUnreferencedCode]`](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute) or [`[DynamicallyAccessedMembers]`](xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute).
 
 :::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_AD4" highlight="1":::
 

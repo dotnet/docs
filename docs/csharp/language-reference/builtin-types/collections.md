@@ -40,129 +40,31 @@ The examples in this section use the generic <xref:System.Collections.Generic.Li
 
 The following example creates a list of strings and then iterates through the strings by using a [foreach](../statements/iteration-statements.md#the-foreach-statement) statement.
 
-```csharp
-// Create a list of strings.
-var salmons = new List<string>();
-salmons.Add("chinook");
-salmons.Add("coho");
-salmons.Add("pink");
-salmons.Add("sockeye");
-
-// Iterate through the list.
-foreach (var salmon in salmons)
-{
-    Console.Write(salmon + " ");
-}
-// Output: chinook coho pink sockeye
-```
+:::code language="csharp" source="./snippets/shared/Collections.cs" id="SnippetCreateList":::
 
 If the contents of a collection are known in advance, you can use a *collection initializer* to initialize the collection. For more information, see [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md).
 
 The following example is the same as the previous example, except a collection initializer is used to add elements to the collection.
 
-```csharp
-// Create a list of strings by using a
-// collection initializer.
-var salmons = new List<string> { "chinook", "coho", "pink", "sockeye" };
-
-// Iterate through the list.
-foreach (var salmon in salmons)
-{
-    Console.Write(salmon + " ");
-}
-// Output: chinook coho pink sockeye
-```
+:::code language="csharp" source="./snippets/shared/Collections.cs" id="SnippetCreateListInitializer":::
 
 You can use a [for](../statements/iteration-statements.md#the-for-statement) statement instead of a `foreach` statement to iterate through a collection. You accomplish this by accessing the collection elements by the index position. The index of the elements starts at 0 and ends at the element count minus 1.
 
 The following example iterates through the elements of a collection by using `for` instead of `foreach`.
 
-```csharp
-// Create a list of strings by using a
-// collection initializer.
-var salmons = new List<string> { "chinook", "coho", "pink", "sockeye" };
-
-for (var index = 0; index < salmons.Count; index++)
-{
-    Console.Write(salmons[index] + " ");
-}
-// Output: chinook coho pink sockeye
-```
+:::code language="csharp" source="./snippets/shared/Collections.cs" id="SnippetForLoop":::
 
 The following example removes an element from the collection by specifying the object to remove.
 
-```csharp
-// Create a list of strings by using a
-// collection initializer.
-var salmons = new List<string> { "chinook", "coho", "pink", "sockeye" };
-
-// Remove an element from the list by specifying
-// the object.
-salmons.Remove("coho");
-
-// Iterate through the list.
-foreach (var salmon in salmons)
-{
-    Console.Write(salmon + " ");
-}
-// Output: chinook pink sockeye
-```
+:::code language="csharp" source="./snippets/shared/Collections.cs" id="SnippetRemoveItemByContent":::
 
 The following example removes elements from a generic list. Instead of a `foreach` statement, a `for` statement that iterates in descending order is used. This is because the <xref:System.Collections.Generic.List%601.RemoveAt%2A> method causes elements after a removed element to have a lower index value.
 
-```csharp
-var numbers = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-
-// Remove odd numbers.
-for (var index = numbers.Count - 1; index >= 0; index--)
-{
-    if (numbers[index] % 2 == 1)
-    {
-        // Remove the element by specifying
-        // the zero-based index in the list.
-        numbers.RemoveAt(index);
-    }
-}
-
-// Iterate through the list.
-// A lambda expression is placed in the ForEach method
-// of the List(T) object.
-numbers.ForEach(
-    number => Console.Write(number + " "));
-// Output: 0 2 4 6 8
-```
+:::code language="csharp" source="./snippets/shared/Collections.cs" id="SnippetRemoveItemByIndex":::
 
 For the type of elements in the <xref:System.Collections.Generic.List%601>, you can also define your own class. In the following example, the `Galaxy` class that is used by the <xref:System.Collections.Generic.List%601> is defined in the code.
 
-```csharp
-private static void IterateThroughList()
-{
-    var theGalaxies = new List<Galaxy>
-        {
-            new Galaxy() { Name="Tadpole", MegaLightYears=400},
-            new Galaxy() { Name="Pinwheel", MegaLightYears=25},
-            new Galaxy() { Name="Milky Way", MegaLightYears=0},
-            new Galaxy() { Name="Andromeda", MegaLightYears=3}
-        };
-
-    foreach (Galaxy theGalaxy in theGalaxies)
-    {
-        Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears);
-    }
-
-    // Output:
-    //  Tadpole  400
-    //  Pinwheel  25
-    //  Milky Way  0
-    //  Andromeda  3
-}
-
-public class Galaxy
-{
-    public string Name { get; set; }
-    public int MegaLightYears { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/shared/Collections.cs" id="SnippetCustomList":::
 
 ## Kinds of Collections
 
@@ -221,105 +123,19 @@ The <xref:System.Collections.Generic.Dictionary%602> generic collection enables 
 
 The following example creates a `Dictionary` collection and iterates through the dictionary by using a `foreach` statement.
 
-```csharp
-private static void IterateThruDictionary()
-{
-    Dictionary<string, Element> elements = BuildDictionary();
-
-    foreach (KeyValuePair<string, Element> kvp in elements)
-    {
-        Element theElement = kvp.Value;
-
-        Console.WriteLine("key: " + kvp.Key);
-        Console.WriteLine("values: " + theElement.Symbol + " " +
-            theElement.Name + " " + theElement.AtomicNumber);
-    }
-}
-
-private static Dictionary<string, Element> BuildDictionary()
-{
-    var elements = new Dictionary<string, Element>();
-
-    AddToDictionary(elements, "K", "Potassium", 19);
-    AddToDictionary(elements, "Ca", "Calcium", 20);
-    AddToDictionary(elements, "Sc", "Scandium", 21);
-    AddToDictionary(elements, "Ti", "Titanium", 22);
-
-    return elements;
-}
-
-private static void AddToDictionary(Dictionary<string, Element> elements,
-    string symbol, string name, int atomicNumber)
-{
-    Element theElement = new Element();
-
-    theElement.Symbol = symbol;
-    theElement.Name = name;
-    theElement.AtomicNumber = atomicNumber;
-
-    elements.Add(key: theElement.Symbol, value: theElement);
-}
-
-public class Element
-{
-    public string Symbol { get; set; }
-    public string Name { get; set; }
-    public int AtomicNumber { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/shared/Collections.cs" id="SnippetDictionaryOldStyle":::
 
 To instead use a collection initializer to build the `Dictionary` collection, you can replace the `BuildDictionary` and `AddToDictionary` methods with the following method.
 
-```csharp
-private static Dictionary<string, Element> BuildDictionary2()
-{
-    return new Dictionary<string, Element>
-    {
-        {"K",
-            new Element() { Symbol="K", Name="Potassium", AtomicNumber=19}},
-        {"Ca",
-            new Element() { Symbol="Ca", Name="Calcium", AtomicNumber=20}},
-        {"Sc",
-            new Element() { Symbol="Sc", Name="Scandium", AtomicNumber=21}},
-        {"Ti",
-            new Element() { Symbol="Ti", Name="Titanium", AtomicNumber=22}}
-    };
-}
-```
+:::code language="csharp" source="./snippets/shared/Collections.cs" id="SnippetDictionaryBetter":::
 
 The following example uses the <xref:System.Collections.Generic.Dictionary%602.ContainsKey%2A> method and the <xref:System.Collections.Generic.Dictionary%602.Item%2A> property of `Dictionary` to quickly find an item by key. The `Item` property enables you to access an item in the `elements` collection by using the `elements[symbol]` in C#.
 
-```csharp
-private static void FindInDictionary(string symbol)
-{
-    Dictionary<string, Element> elements = BuildDictionary();
-
-    if (elements.ContainsKey(symbol) == false)
-    {
-        Console.WriteLine(symbol + " not found");
-    }
-    else
-    {
-        Element theElement = elements[symbol];
-        Console.WriteLine("found: " + theElement.Name);
-    }
-}
-```
+:::code language="csharp" source="./snippets/shared/Collections.cs" id="SnippetFindInDictionary":::
 
 The following example instead uses the <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A> method quickly find an item by key.
 
-```csharp
-private static void FindInDictionary2(string symbol)
-{
-    Dictionary<string, Element> elements = BuildDictionary();
-
-    Element theElement = null;
-    if (elements.TryGetValue(symbol, out theElement) == false)
-        Console.WriteLine(symbol + " not found");
-    else
-        Console.WriteLine("found: " + theElement.Name);
-}
-```
+:::code language="csharp" source="./snippets/shared/Collections.cs" id="SnippetFindInDictionary2":::
 
 ## Using LINQ to Access a Collection
 
@@ -327,46 +143,7 @@ LINQ (Language-Integrated Query) can be used to access collections. LINQ queries
 
 The following example runs a LINQ query against a generic `List`. The LINQ query returns a different collection that contains the results.
 
-```csharp
-private static void ShowLINQ()
-{
-    List<Element> elements = BuildList();
-
-    // LINQ Query.
-    var subset = from theElement in elements
-                 where theElement.AtomicNumber < 22
-                 orderby theElement.Name
-                 select theElement;
-
-    foreach (Element theElement in subset)
-    {
-        Console.WriteLine(theElement.Name + " " + theElement.AtomicNumber);
-    }
-
-    // Output:
-    //  Calcium 20
-    //  Potassium 19
-    //  Scandium 21
-}
-
-private static List<Element> BuildList()
-{
-    return new List<Element>
-    {
-        { new Element() { Symbol="K", Name="Potassium", AtomicNumber=19}},
-        { new Element() { Symbol="Ca", Name="Calcium", AtomicNumber=20}},
-        { new Element() { Symbol="Sc", Name="Scandium", AtomicNumber=21}},
-        { new Element() { Symbol="Ti", Name="Titanium", AtomicNumber=22}}
-    };
-}
-
-public class Element
-{
-    public string Symbol { get; set; }
-    public string Name { get; set; }
-    public int AtomicNumber { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/shared/Collections.cs" id="ShowLINQ":::
 
 ## Sorting a Collection
 
@@ -376,75 +153,7 @@ Each call to the <xref:System.IComparable%601.CompareTo%2A> method makes a singl
 
 In the `ListCars` method, the `cars.Sort()` statement sorts the list. This call to the <xref:System.Collections.Generic.List%601.Sort%2A> method of the <xref:System.Collections.Generic.List%601> causes the `CompareTo` method to be called automatically for the `Car` objects in the `List`.
 
-```csharp
-private static void ListCars()
-{
-    var cars = new List<Car>
-    {
-        { new Car() { Name = "car1", Color = "blue", Speed = 20}},
-        { new Car() { Name = "car2", Color = "red", Speed = 50}},
-        { new Car() { Name = "car3", Color = "green", Speed = 10}},
-        { new Car() { Name = "car4", Color = "blue", Speed = 50}},
-        { new Car() { Name = "car5", Color = "blue", Speed = 30}},
-        { new Car() { Name = "car6", Color = "red", Speed = 60}},
-        { new Car() { Name = "car7", Color = "green", Speed = 50}}
-    };
-
-    // Sort the cars by color alphabetically, and then by speed
-    // in descending order.
-    cars.Sort();
-
-    // View all of the cars.
-    foreach (Car thisCar in cars)
-    {
-        Console.Write(thisCar.Color.PadRight(5) + " ");
-        Console.Write(thisCar.Speed.ToString() + " ");
-        Console.Write(thisCar.Name);
-        Console.WriteLine();
-    }
-
-    // Output:
-    //  blue  50 car4
-    //  blue  30 car5
-    //  blue  20 car1
-    //  green 50 car7
-    //  green 10 car3
-    //  red   60 car6
-    //  red   50 car2
-}
-
-public class Car : IComparable<Car>
-{
-    public string Name { get; set; }
-    public int Speed { get; set; }
-    public string Color { get; set; }
-
-    public int CompareTo(Car other)
-    {
-        // A call to this method makes a single comparison that is
-        // used for sorting.
-
-        // Determine the relative order of the objects being compared.
-        // Sort by color alphabetically, and then by speed in
-        // descending order.
-
-        // Compare the colors.
-        int compare;
-        compare = String.Compare(this.Color, other.Color, true);
-
-        // If the colors are the same, compare the speeds.
-        if (compare == 0)
-        {
-            compare = this.Speed.CompareTo(other.Speed);
-
-            // Use descending order for speed.
-            compare = -compare;
-        }
-
-        return compare;
-    }
-}
-```
+:::code language="csharp" source="./snippets/shared/Collections.cs" id="SnippetSortList":::
 
 ## Defining a Custom Collection
 
@@ -456,76 +165,7 @@ The following example defines a custom collection class named `AllColors`. This 
 
 The `GetEnumerator` method returns an instance of the `ColorEnumerator` class. `ColorEnumerator` implements the <xref:System.Collections.IEnumerator> interface, which requires that the <xref:System.Collections.IEnumerator.Current%2A> property, <xref:System.Collections.IEnumerator.MoveNext%2A> method, and <xref:System.Collections.IEnumerator.Reset%2A> method be implemented.
 
-```csharp
-private static void ListColors()
-{
-    var colors = new AllColors();
-
-    foreach (Color theColor in colors)
-    {
-        Console.Write(theColor.Name + " ");
-    }
-    Console.WriteLine();
-    // Output: red blue green
-}
-
-// Collection class.
-public class AllColors : System.Collections.IEnumerable
-{
-    Color[] _colors =
-    {
-        new Color() { Name = "red" },
-        new Color() { Name = "blue" },
-        new Color() { Name = "green" }
-    };
-
-    public System.Collections.IEnumerator GetEnumerator()
-    {
-        return new ColorEnumerator(_colors);
-
-        // Instead of creating a custom enumerator, you could
-        // use the GetEnumerator of the array.
-        //return _colors.GetEnumerator();
-    }
-
-    // Custom enumerator.
-    private class ColorEnumerator : System.Collections.IEnumerator
-    {
-        private Color[] _colors;
-        private int _position = -1;
-
-        public ColorEnumerator(Color[] colors)
-        {
-            _colors = colors;
-        }
-
-        object System.Collections.IEnumerator.Current
-        {
-            get
-            {
-                return _colors[_position];
-            }
-        }
-
-        bool System.Collections.IEnumerator.MoveNext()
-        {
-            _position++;
-            return (_position < _colors.Length);
-        }
-
-        void System.Collections.IEnumerator.Reset()
-        {
-            _position = -1;
-        }
-    }
-}
-
-// Element class.
-public class Color
-{
-    public string Name { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/shared/Collections.cs" id="SnippetEnumeration":::
 
 ## Iterators
 
@@ -537,27 +177,4 @@ For more information, see [Iterators (C#)](../../programming-guide/concepts/iter
 
 The following example uses an iterator method. The iterator method has a `yield return` statement that is inside a `for` loop. In the `ListEvenNumbers` method, each iteration of the `foreach` statement body creates a call to the iterator method, which proceeds to the next `yield return` statement.
 
-```csharp
-private static void ListEvenNumbers()
-{
-    foreach (int number in EvenSequence(5, 18))
-    {
-        Console.Write(number.ToString() + " ");
-    }
-    Console.WriteLine();
-    // Output: 6 8 10 12 14 16 18
-}
-
-private static IEnumerable<int> EvenSequence(
-    int firstNumber, int lastNumber)
-{
-    // Yield even numbers in the range.
-    for (var number = firstNumber; number <= lastNumber; number++)
-    {
-        if (number % 2 == 0)
-        {
-            yield return number;
-        }
-    }
-}
-```
+:::code language="csharp" source="./snippets/shared/Collections.cs" id="SnippetIteratorMethod":::

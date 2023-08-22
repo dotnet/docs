@@ -126,8 +126,8 @@ items:
         href: sdk/8.0/msbuild-language.md
       - name: Runtime-specific apps not self-contained
         href: sdk/8.0/runtimespecific-app-default.md
-      - name: "Warning for IsTrimmable with netstandard libraries"
-        href: sdk/8.0/istrimmable-netstandard-libraries.md
+      - name: Trimming may not be used with .NET Standard or .NET Framework
+        href: sdk/8.0/trimming-unsupported-targetframework.md
     - name: Serialization
       items:
       - name: BinaryFormatter disabled for most projects
@@ -1466,6 +1466,8 @@ items:
         href: sdk/8.0/msbuild-language.md
       - name: Runtime-specific apps not self-contained
         href: sdk/8.0/runtimespecific-app-default.md
+      - name: Trimming may not be usedwith .NET Standard or .NET Framework
+        href: sdk/8.0/trimming-unsupported-targetframework.md
     - name: .NET 7
       items:
       - name: Automatic RuntimeIdentifier for certain projects

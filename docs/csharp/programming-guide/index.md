@@ -37,8 +37,6 @@ This section provides detailed information on key C# language features and featu
 
  [Delegates](./delegates/index.md)  
 
- [Arrays](./arrays/index.md)  
-  
  [Strings](./strings/index.md)  
   
  [Properties](./classes-and-structs/properties.md)  
@@ -56,8 +54,6 @@ This section provides detailed information on key C# language features and featu
  [Application Domains](../../framework/app-domains/application-domains.md)  
   
  [Assemblies in .NET](../../standard/assembly/index.md)  
-  
- [Collections](./concepts/collections.md)  
   
  [Exceptions and Exception Handling](../fundamentals/exceptions/index.md)  
   

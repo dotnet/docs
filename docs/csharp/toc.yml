@@ -813,25 +813,12 @@ items:
       - name: Nullable reference types
         href: language-reference/builtin-types/nullable-reference-types.md
         displayName: "? token, ? symbol"
-      - name: Arrays
+      - name: Collections and arrays
         items:
-        - name: Overview
-          displayName: arrays
-          href: programming-guide/arrays/index.md
-        - name: Single-Dimensional Arrays
-          href: programming-guide/arrays/single-dimensional-arrays.md
-        - name: Multidimensional Arrays
-          href: programming-guide/arrays/multidimensional-arrays.md
-        - name: Jagged Arrays
-          href: programming-guide/arrays/jagged-arrays.md
-        - name: Using foreach with Arrays
-          href: programming-guide/arrays/using-foreach-with-arrays.md
-        - name: Passing Arrays as Arguments
-          href: programming-guide/arrays/passing-arrays-as-arguments.md
-        - name: Implicitly Typed Arrays
-          href: programming-guide/arrays/implicitly-typed-arrays.md
-      - name: Collections
-        href: programming-guide/concepts/collections.md
+        - name: Collections
+          href: language-reference/builtin-types/collections.md
+        - name: Arrays
+          href: language-reference/builtin-types/arrays.md
     - name: void
       href: language-reference/builtin-types/void.md
     - name: Built-in types

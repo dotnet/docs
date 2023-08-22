@@ -15,7 +15,7 @@ recommendations: false
 
 In this tutorial, you create a simple class library that contains a single string-handling method.
 
-A *class library* defines types and methods that are called by an application. If the library targets .NET Standard 2.0, it can be called by any .NET implementation (including .NET Framework) that supports .NET Standard 2.0. If the library targets .NET 7, it can be called by any application that targets .NET 7. This tutorial shows how to target .NET 7.
+A *class library* defines types and methods that are called by an application. If the library targets .NET Standard 2.0, it can be called by any .NET implementation (including .NET Framework) that supports .NET Standard 2.0. If the library targets .NET 8, it can be called by any application that targets .NET 8. This tutorial shows how to target .NET 8.
 
 When you create a class library, you can distribute it as a NuGet package or as a component bundled with the application that uses it.
 
@@ -57,7 +57,7 @@ To create the blank solution:
 
 1. If you're using Visual Basic, clear the text in the **Root namespace** text box.
 
-   :::image type="content" source="./media/library-with-visual-studio/vb/library-project-properties-net7.png" alt-text="Project properties for the class library":::
+   :::image type="content" source="./media/library-with-visual-studio/vb/library-project-properties-net8.png" alt-text="Project properties for the class library":::
 
    For each project, Visual Basic automatically creates a namespace that corresponds to the project name. In this tutorial, you define a top-level namespace by using the [`namespace`](../../visual-basic/language-reference/statements/namespace-statement.md) keyword in the code file.
 

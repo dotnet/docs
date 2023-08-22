@@ -117,8 +117,6 @@ Initially, the new console app project doesn't have access to the class library.
 
 1. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to compile and run the program without debugging.
 
-   :::image type="content" source="media/library-with-visual-studio/visual-studio-project-toolbar.png" alt-text="Visual Studio project toolbar showing Debug button":::
-
 1. Try out the program by entering strings and pressing <kbd>Enter</kbd>, then press <kbd>Enter</kbd> to exit.
 
    :::image type="content" source="media/library-with-visual-studio/run-showcase-net6.png" alt-text="Console window with ShowCase running":::
@@ -253,8 +251,6 @@ Initially, the new console app project doesn't have access to the class library.
 
 1. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to compile and run the program without debugging.
 
-   :::image type="content" source="media/library-with-visual-studio/visual-studio-project-toolbar.png" alt-text="Visual Studio project toolbar showing Debug button":::
-
 1. Try out the program by entering strings and pressing <kbd>Enter</kbd>, then press <kbd>Enter</kbd> to exit.
 
    :::image type="content" source="media/library-with-visual-studio/run-showcase-net6.png" alt-text="Console window with ShowCase running":::
@@ -388,8 +384,6 @@ Initially, the new console app project doesn't have access to the class library.
    :::image type="content" source="media/library-with-visual-studio/set-startup-project-context-menu.png" alt-text="Visual Studio project context menu to set startup project":::
 
 1. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to compile and run the program without debugging.
-
-   :::image type="content" source="media/library-with-visual-studio/visual-studio-project-toolbar.png" alt-text="Visual Studio project toolbar showing Debug button":::
 
 1. Try out the program by entering strings and pressing <kbd>Enter</kbd>, then press <kbd>Enter</kbd> to exit.
 

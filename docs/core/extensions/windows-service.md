@@ -174,7 +174,7 @@ For more information on registering services, see [Dependency injection in .NET]
 To create the .NET Worker Service app as a Windows Service, it's recommended that you publish the app as a single file executable. It's less error-prone to have a self-contained executable, as there aren't any dependent files lying around the file system. But you may choose a different publishing modality, which is perfectly acceptable, so long as you create an **.exe* file that can be targeted by the Windows Service Control Manager.
 
 > [!IMPORTANT]
-> An alternative publishing approach is to build the **.dll* (instead of an **.exe*), and when you install the published app using the Windows Service Control Manager you delegate to the .NET CLI and pass the DLL. For more information, see [.NET CLI: dotnet command](../tools/dotnet.md).
+> An alternative publishing approach is to build the *\*.dll* (instead of an *\*.exe*), and when you install the published app using the Windows Service Control Manager you delegate to the .NET CLI and pass the DLL. For more information, see [.NET CLI: dotnet command](../tools/dotnet.md).
 >
 > ```powershell
 > sc.exe create ".NET Joke Service" binpath="C:\Path\To\dotnet.exe C:\Path\To\App.WindowsService.dll"

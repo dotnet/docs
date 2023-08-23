@@ -2,28 +2,9 @@
 
 public class Collections
 {
-    public static void CreateList()
+    public static void ListExample()
     {
         // <SnippetCreateList>
-        // Create a list of strings.
-        var salmons = new List<string>();
-        salmons.Add("chinook");
-        salmons.Add("coho");
-        salmons.Add("pink");
-        salmons.Add("sockeye");
-
-        // Iterate through the list.
-        foreach (var salmon in salmons)
-        {
-            Console.Write(salmon + " ");
-        }
-        // Output: chinook coho pink sockeye
-        // </SnippetCreateList>
-    }
-
-    public static void CreateListInitializer()
-    {
-        // <SnippetCreateListInitializer>
         // Create a list of strings by using a
         // collection initializer.
         var salmons = new List<string> { "chinook", "coho", "pink", "sockeye" };
@@ -34,28 +15,28 @@ public class Collections
             Console.Write(salmon + " ");
         }
         // Output: chinook coho pink sockeye
-        // </SnippetCreateListInitializer>
 
-        // <SnippetForLoop>
-        for (var index = 0; index < salmons.Count; index++)
-        {
-            Console.Write(salmons[index] + " ");
-        }
-        // Output: chinook coho pink sockeye
-        // </SnippetForLoop>
-
-        // <SnippetRemoveItemByContent>
         // Remove an element from the list by specifying
         // the object.
         salmons.Remove("coho");
 
+
+        // Iterate using the index:
+        for (var index = 0; index < salmons.Count; index++)
+        {
+            Console.Write(salmons[index] + " ");
+        }
+        // Output: chinook pink sockeye
+
+        // Add the removed element
+        salmons.Add("coho");
         // Iterate through the list.
         foreach (var salmon in salmons)
         {
             Console.Write(salmon + " ");
         }
-        // Output: chinook pink sockeye
-        // </SnippetRemoveItemByContent>
+        // Output: chinook pink sockeye coho
+        // </SnippetCreateList>
     }
 
     public static void RemoveByIndex()
@@ -114,7 +95,7 @@ public class Collections
     }
     // </SnippetCustomList>
 
-    // <SnippetDictionaryOldStyle>
+    // <SnippetDictionary>
     private static void IterateThruDictionary()
     {
         Dictionary<string, Element> elements = BuildDictionary();
@@ -129,40 +110,14 @@ public class Collections
         }
     }
 
-    private static Dictionary<string, Element> BuildDictionary()
-    {
-        var elements = new Dictionary<string, Element>();
-
-        AddToDictionary(elements, "K", "Potassium", 19);
-        AddToDictionary(elements, "Ca", "Calcium", 20);
-        AddToDictionary(elements, "Sc", "Scandium", 21);
-        AddToDictionary(elements, "Ti", "Titanium", 22);
-
-        return elements;
-    }
-
-    private static void AddToDictionary(Dictionary<string, Element> elements,
-        string symbol, string name, int atomicNumber)
-    {
-        Element theElement = new Element();
-
-        theElement.Symbol = symbol;
-        theElement.Name = name;
-        theElement.AtomicNumber = atomicNumber;
-
-        elements.Add(key: theElement.Symbol, value: theElement);
-    }
-
     public class Element
     {
-        public string Symbol { get; set; }
-        public string Name { get; set; }
-        public int AtomicNumber { get; set; }
+        public required string Symbol { get; init; }
+        public required string Name { get; init; }
+        public required int AtomicNumber { get; init; }
     }
-    // </SnippetDictionaryOldStyle>
 
-    // <SnippetDictionaryBetter>
-    private static Dictionary<string, Element> BuildDictionary2() =>
+    private static Dictionary<string, Element> BuildDictionary() =>
         new ()
         {
             {"K",
@@ -174,13 +129,13 @@ public class Collections
             {"Ti",
                 new (){ Symbol="Ti", Name="Titanium", AtomicNumber=22}}
         };
-    // </SnippetDictionaryBetter>
+    // </SnippetDictionary>
 
-    // <SnippetFindInDictionary>
     private static void FindInDictionary(string symbol)
     {
         Dictionary<string, Element> elements = BuildDictionary();
 
+        // <SnippetFindInDictionary>
         if (elements.ContainsKey(symbol) == false)
         {
             Console.WriteLine(symbol + " not found");
@@ -190,20 +145,20 @@ public class Collections
             Element theElement = elements[symbol];
             Console.WriteLine("found: " + theElement.Name);
         }
+        // </SnippetFindInDictionary>
     }
-    // </SnippetFindInDictionary>
 
-    // <SnippetFindInDictionary2>
     private static void FindInDictionary2(string symbol)
     {
         Dictionary<string, Element> elements = BuildDictionary();
 
+        // <SnippetFindInDictionary2>
         if (elements.TryGetValue(symbol, out Element? theElement) == false)
             Console.WriteLine(symbol + " not found");
         else
             Console.WriteLine("found: " + theElement.Name);
+        // </SnippetFindInDictionary2>
     }
-    // </SnippetFindInDictionary2>
 
     // <ShowLINQ>
     private static void ShowLINQ()
@@ -235,144 +190,6 @@ public class Collections
             { new(){ Symbol="Ti", Name="Titanium", AtomicNumber=22}}
         };
     // </ShowLINQ>
-
-    // <SnippetSortList>
-    private static void ListCars()
-    {
-        var cars = new List<Car>
-        {
-            { new (){ Name = "car1", Color = "blue", Speed = 20}},
-            { new (){ Name = "car2", Color = "red", Speed = 50}},
-            { new (){ Name = "car3", Color = "green", Speed = 10}},
-            { new (){ Name = "car4", Color = "blue", Speed = 50}},
-            { new (){ Name = "car5", Color = "blue", Speed = 30}},
-            { new (){ Name = "car6", Color = "red", Speed = 60}},
-            { new (){ Name = "car7", Color = "green", Speed = 50}}
-        };
-
-        // Sort the cars by color alphabetically, and then by speed
-        // in descending order.
-        cars.Sort();
-
-        // View all of the cars.
-        foreach (Car thisCar in cars)
-        {
-            Console.WriteLine($"{thisCar.Color.PadRight(5)} {thisCar.Speed} {thisCar.Name}");
-        }
-
-        // Output:
-        //  blue  50 car4
-        //  blue  30 car5
-        //  blue  20 car1
-        //  green 50 car7
-        //  green 10 car3
-        //  red   60 car6
-        //  red   50 car2
-    }
-
-    public class Car : IComparable<Car>
-    {
-        public string Name { get; init; }
-        public int Speed { get; init; }
-        public string Color { get; init; }
-
-        public int CompareTo(Car other)
-        {
-            // A call to this method makes a single comparison that is
-            // used for sorting.
-
-            // Determine the relative order of the objects being compared.
-            // Sort by color alphabetically, and then by speed in
-            // descending order.
-
-            // Compare the colors.
-            int compare;
-            compare = String.Compare(this.Color, other.Color, true);
-
-            // If the colors are the same, compare the speeds.
-            if (compare == 0)
-            {
-                compare = this.Speed.CompareTo(other.Speed);
-
-                // Use descending order for speed.
-                compare = -compare;
-            }
-
-            return compare;
-        }
-    }
-    // </SnippetSortList>
-
-    // <SnippetEnumeration>
-    private static void ListColors()
-    {
-        var colors = new AllColors();
-
-        foreach (Color theColor in colors)
-        {
-            Console.Write(theColor.Name + " ");
-        }
-        Console.WriteLine();
-        // Output: red blue green
-    }
-
-    // Collection class.
-    public class AllColors : System.Collections.IEnumerable
-    {
-        Color[] _colors =
-        {
-            new (){ Name = "red" },
-            new (){ Name = "blue" },
-            new (){ Name = "green" }
-        };
-
-        public System.Collections.IEnumerator GetEnumerator()
-        {
-            return new ColorEnumerator(_colors);
-
-            // Instead of creating a custom enumerator, you could
-            // use the GetEnumerator of the array.
-            //return _colors.GetEnumerator();
-        }
-
-        // Custom enumerator.
-        private class ColorEnumerator : System.Collections.IEnumerator
-        {
-            private Color[] _colors;
-            private int _position = -1;
-
-            public ColorEnumerator(Color[] colors)
-            {
-                _colors = colors;
-            }
-
-            object System.Collections.IEnumerator.Current
-            {
-                get
-                {
-                    return _colors[_position];
-                }
-            }
-
-            bool System.Collections.IEnumerator.MoveNext()
-            {
-                _position++;
-                return (_position < _colors.Length);
-            }
-
-            void System.Collections.IEnumerator.Reset()
-            {
-                _position = -1;
-            }
-        }
-    }
-
-    // Element class.
-    public class Color
-    {
-        public required string Name { get; init; }
-    }
-    // </SnippetEnumeration>
 
     // <SnippetIteratorMethod>
     private static void ListEvenNumbers()

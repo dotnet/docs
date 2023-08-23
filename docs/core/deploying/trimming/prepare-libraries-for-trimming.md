@@ -120,6 +120,17 @@ If library targets a TFM that is not trimmable, for example `net472` or `netstan
 
 :::code language="xml" source="~/docs/core/deploying/trimming/snippets/ConsoleApp1/ConsoleApp1.csproj":::
 
+**Notes:**
+
+* In the preceding project file, when using .NET 7, replace `<TargetFramework>net8.0</TargetFramework>` with `<TargetFramework>net7.0</TargetFramework>`.
+* The `<TrimMode>full</TrimMode>` setting:
+
+  * Is the [default for .NET 7 and higher](../../../core/compatibility/deployment/7.0/trim-all-assemblies.md).
+  * Ensures that the trimmer only analyzes the parts of the library's dependencies that are used.
+  * Tells the trimmer that any code that isn't part of a "root" can be trimmed if it's unused. Without this   option:
+    * Warnings are issued originating from ***any*** part of a dependency that doesn't set `[AssemblyMetadata  ("IsTrimmable", "Tue")]`
+    * The preceding warnings can be issued for code that is unused by the library.
+
 ### [.NET 8+](#tab/net8plus)
 
 <!-- exact duplicate of tab7 but forced by builder to have identical tabs -->
@@ -134,7 +145,6 @@ If library targets a TFM that is not trimmable, for example `net472` or `netstan
 
 **Notes:**
 
-* In the preceding project file, when using .NET 7, replace `<TargetFramework>net8.0</TargetFramework>` with `<TargetFramework>net7.0</TargetFramework>`.
 * The `<TrimMode>full</TrimMode>` setting:
 
   * Is the [default for .NET 7 and higher](../../../core/compatibility/deployment/7.0/trim-all-assemblies.md).

@@ -15,7 +15,7 @@ The .NET SDK makes it possible to reduce the size of self-contained apps by [tri
 
 ## Prerequisites
 
-[.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet) or later.
+[.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet) or later. We recommend installing the latest version of the .NET SDK to get the most up-to-date trimming warnings and analyzer coverage when targeting .NET 6 or NET 7.
 
 ---
 

@@ -626,4 +626,3 @@ A library doesn't have to be distributed as a package. It can be bundled with a 
 > [Publish a .NET console application using Visual Studio](publishing-with-visual-studio.md)
 
 ::: zone-end
-

@@ -123,7 +123,7 @@ If library targets a TFM that is not trimmable, for example `net472` or `netstan
 **Notes:**
 
 * In the preceding project file, when using .NET 7, replace `<TargetFramework>net8.0</TargetFramework>` with `<TargetFramework>net7.0</TargetFramework>`.
-* `<TrimMode>full</TrimMode>` in the `<PropertyGroup> tag:
+* [`<TrimMode>full</TrimMode>`](/dotnet/core/compatibility/deployment/7.0/trim-all-assemblies#recommended-action) in the `<PropertyGroup>` tag:
 
   * Is the [default for .NET 7 and higher](../../../core/compatibility/deployment/7.0/trim-all-assemblies.md).
   * Is not shown in the preceding project file.
@@ -146,7 +146,7 @@ If library targets a TFM that is not trimmable, for example `net472` or `netstan
 
 **Notes:**
 
-* `<TrimMode>full</TrimMode>` in the `<PropertyGroup> tag:
+* [`<TrimMode>full</TrimMode>`](/dotnet/core/compatibility/deployment/7.0/trim-all-assemblies#recommended-action) in the `<PropertyGroup>` tag:
 
   * Is the [default for .NET 7 and higher](../../../core/compatibility/deployment/7.0/trim-all-assemblies.md).
   * Is not shown in the preceding project file.

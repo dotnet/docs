@@ -130,7 +130,7 @@ If library targets a TFM that is not trimmable, for example `net472` or `netstan
 
 ### .csproj file
 
-:::code language="xml" source="~/docs/core/deploying/trimming/snippets/ConsoleApp1/ConsoleApp1.csproj"::: 
+:::code language="xml" source="~/docs/core/deploying/trimming/snippets/ConsoleApp1/ConsoleApp1.csproj":::
 
 **Notes:**
 

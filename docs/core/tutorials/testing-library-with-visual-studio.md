@@ -1,7 +1,7 @@
 ---
 title: Test a .NET class library using Visual Studio
 description: Learn how to use Visual Studio to create and run a unit test project for a .NET class library.
-ms.date: 11/11/2022
+ms.date: 08/23/2023
 zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
@@ -11,7 +11,7 @@ recommendations: false
 ---
 # Tutorial: Test a .NET class library with .NET using Visual Studio
 
-::: zone pivot="dotnet-7-0,dotnet-6-0"
+::: zone pivot="dotnet-8-0"
 
 This tutorial shows how to automate unit testing by adding a test project to a solution.
 
@@ -37,13 +37,11 @@ Unit tests provide automated software testing during your development and publis
 
    1. On the **Configure your new project** page, enter **StringLibraryTest** in the **Project name** box. Then choose **Next**.
 
-   1. On the **Additional information** page, select **.NET 7 (Standard-term support)** in the **Framework** box. Then choose **Create**.
+   1. On the **Additional information** page, select **.NET 8 (Preview)** in the **Framework** box. Then choose **Create**.
 
 1. Visual Studio creates the project and opens the class file in the code window with the following code. If the language you want to use is not shown, change the language selector at the top of the page.
 
    ```csharp
-   using Microsoft.VisualStudio.TestTools.UnitTesting;
-
    namespace StringLibraryTest
    {
        [TestClass]
@@ -73,7 +71,7 @@ Unit tests provide automated software testing during your development and publis
 
    The source code created by the unit test template does the following:
 
-   - It imports the <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=nameWithType> namespace, which contains the types used for unit testing.
+   - It imports the <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=nameWithType> namespace, which contains the types used for unit testing. In C#, the namespace is imported via a `global using` directive in *GlobalUsings.cs*.
    - It applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> attribute to the `UnitTest1` class.
    - It applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attribute to define `TestMethod1` in C# or `TestSub` in Visual Basic.
 
@@ -114,7 +112,7 @@ To create the test methods:
 
 1. In the *UnitTest1.cs* or *UnitTest1.vb* code window, replace the code with the following code:
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibraryTest/UnitTest1.cs":::
+   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibraryTestNet8/UnitTest1.cs":::
    :::code language="vb" source="./snippets/library-with-visual-studio/vb/StringLibraryTest/UnitTest1.vb":::
 
    The test of uppercase characters in the `TestStartsWithUpper` method includes the Greek capital letter alpha (U+0391) and the Cyrillic capital letter EM (U+041C). The test of lowercase characters in the `TestDoesNotStartWithUpper` method includes the Greek small letter alpha (U+03B1) and the Cyrillic small letter Ghe (U+0433).

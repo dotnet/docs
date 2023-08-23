@@ -95,11 +95,11 @@ To create the trimming test app:
 * Add a reference to the library.
 * Modify the project similar to the project shown below using the following list:
 
-If library targets a TFM that is not trimmable, for example `net472` or `netstandard2.0`, there's no benefit to creating a trimming test app. Trimming only works for .NET 6 and later.
+If library targets a TFM that is not trimmable, for example `net472` or `netstandard2.0`, there's no benefit to creating a trimming test app. Trimming is only supported for .NET 6 and later.
 
 ### [.NET 6](#tab/net6)
 
-* Set the `TrimmerDefaultAction` property to `link` with `<TrimmerDefaultAction>link</TrimmerDefaultAction>` in a `<PropertyGroup>` element.  <!-- only diff with .NET7+ -->
+* Set `<TrimmerDefaultAction>` to `link`. <!-- only diff with .NET7+ -->
 * Add `<PublishTrimmed>true</PublishTrimmed>`.
 * Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
 * Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
@@ -165,7 +165,7 @@ Consider the following code that uses [`[RequiresUnreferencedCode]`](xref:System
 
 :::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_1" highlight="12-13":::
 
-The preceding highlighted code indicates the library calls a method that has explicitly been annotated as incompatible with trimming. To get rid of the warning, consider whether `MyMethod` needs to call `DynamicBehavior`. If so, annotate the caller `MyMethod` with `[RequiresUnreferencedCode]` which propagates up the call stack the warning so that callers of `MyMethod` get a warning instead:
+The preceding highlighted code indicates the library calls a method that has explicitly been annotated as incompatible with trimming. To get rid of the warning, consider whether `MyMethod` needs to call `DynamicBehavior`. If so, annotate the caller `MyMethod` with `[RequiresUnreferencedCode]` which propagates the warning so that callers of `MyMethod` get a warning instead:
 
 :::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class2.cs" id="snippet_RequiresUnreferencedCode" highlight="3":::
 

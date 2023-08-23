@@ -116,6 +116,10 @@ If library targets a TFM that is not trimmable, for example `net472` or `netstan
 * Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
   * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root". A "root" assembly means the trimmer analyzes every call in the library and traverses all code paths that originate from that assembly.
 
+### .csproj file
+
+:::code language="xml" source="~/docs/core/deploying/trimming/snippets/ConsoleApp1/ConsoleApp1.csproj":::
+
 ### [.NET 8+](#tab/net8plus)
 
 <!-- exact duplicate of tab7 but forced by builder to have identical tabs -->
@@ -126,7 +130,7 @@ If library targets a TFM that is not trimmable, for example `net472` or `netstan
 
 ### .csproj file
 
-:::code language="xml" source="~/docs/core/deploying/trimming/snippets/ConsoleApp1/ConsoleApp1.csproj" highlight="3"::: <!--Review fix highlight line -->
+:::code language="xml" source="~/docs/core/deploying/trimming/snippets/ConsoleApp1/ConsoleApp1.csproj"::: <!--Review fix highlight line -->
 
 **Notes:**
 

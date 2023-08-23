@@ -15,9 +15,12 @@ The .NET SDK makes it possible to reduce the size of self-contained apps by [tri
 
 ## Prerequisites
 
-[.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet) or later. We recommend installing the latest version of the .NET SDK to get the most up-to-date trimming warnings and analyzer coverage when targeting .NET 6 or NET 7.
+[.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet) or later.
 
----
+To get the most up-to-date trimming warnings and analyzer coverage:
+
+* Install and target the .NET 8 SDK or later.
+* When targeting .NET 6 or NET 7, install the .NET 8 SDK or later.
 
 ## Enable library trim warnings
 
@@ -47,6 +50,8 @@ To get the latest version of the analyzer with the most coverage, install the [.
 * Updates the tooling used to build an app or library and enable trim warnings.
 * Provides significant trimming and analyzer improvements over previous .NET SDKs.
 * Does ***not*** require targeting the .NET 8 runtime. Libary authors can continue to target the .NET 7 runtime.
+
+Set `<IsTrimmable>true</IsTrimmable>` in the project file.
 
 ### [.NET 8+](#tab/net8plus)
 

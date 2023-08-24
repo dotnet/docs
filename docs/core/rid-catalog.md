@@ -7,7 +7,7 @@ ms.topic: reference
 # .NET RID Catalog
 
 RID is short for *runtime identifier*. RID values are used to identify target platforms where the application runs.
-They're used by .NET packages to represent platform-specific assets in NuGet packages. The following values are examples of RIDs: `linux-x64`, `ubuntu.14.04-x64`, `win7-x64`, or `osx.10.12-x64`.
+They're used by .NET packages to represent platform-specific assets in NuGet packages. The following values are examples of RIDs: `linux-x64`, `win-x64`, or `osx-x64`.
 For the packages with native dependencies, the RID designates on which platforms the package can be restored.
 
 A single RID can be set in the [`<RuntimeIdentifier>`](project-sdk/msbuild-props.md#runtimeidentifier) element of your project file. Multiple RIDs can be defined as a semicolon-delimited list in the project file's [`<RuntimeIdentifiers>`](project-sdk/msbuild-props.md#runtimeidentifiers) element. They're also used via the `--runtime` option with the following [.NET CLI commands](./tools/index.md):
@@ -34,33 +34,37 @@ RIDs that represent concrete operating systems usually follow this pattern: `[os
 
 ## RID graph
 
-The RID graph or runtime fallback graph is a list of RIDs that are compatible with each other. The RIDs are defined in the [Microsoft.NETCore.Platforms](https://www.nuget.org/packages/Microsoft.NETCore.Platforms/) package. You can see the list of supported RIDs and the RID graph in the [*runtime.json*](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file, which is located in the `dotnet/runtime` repository. In this file, you can see that all RIDs, except for the base one, contain an `"#import"` statement. These statements indicate compatible RIDs.
+The RID graph or runtime fallback graph is a list of RIDs that are compatible with each other.
+
+These RIDs are defined in [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository. In this file, you can see that all RIDs, except for the base one, contain an `"#import"` statement. These statements indicate compatible RIDs.
+
+Before .NET 8, version-specific and distro-specific RIDs were regularly added to the [Microsoft.NETCore.Platforms](https://www.nuget.org/packages/Microsoft.NETCore.Platforms/) package and the RID graph in the [*runtime.json*](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file, which is located in the `dotnet/runtime` repository. This graph is no longer updated and exists as a backwards compatibility option. Developers should [use RIDs that are non-version-specific and non-distro-specific](#using-rids).
 
 When NuGet restores packages, it tries to find an exact match for the specified runtime.
 If an exact match is not found, NuGet walks back the graph until it finds the closest compatible system according to the RID graph.
 
-The following example is the actual entry for the `osx.10.12-x64` RID:
+The following example is the actual entry for the `osx-x64` RID:
 
 ```json
-"osx.10.12-x64": {
-    "#import": [ "osx.10.12", "osx.10.11-x64" ]
+"osx-x64": {
+    "#import": [ "osx", "unix-x64" ]
 }
 ```
 
-The above RID specifies that `osx.10.12-x64` imports `osx.10.11-x64`. So, when NuGet restores packages, it tries to find an exact match for  `osx.10.12-x64` in the package. If NuGet can't find the specific runtime, it can restore packages that specify `osx.10.11-x64` runtimes, for example.
+The above RID specifies that `osx-x64` imports `unix-x64`. So, when NuGet restores packages, it tries to find an exact match for  `osx-x64` in the package. If NuGet can't find the specific runtime, it can restore packages that specify `unix-x64` runtimes, for example.
 
 The following example shows a slightly bigger RID graph also defined in the *runtime.json*  file:
 
 ```
-    win7-x64    win7-x86
-       |   \   /    |
-       |   win7     |
-       |     |      |
-    win-x64  |  win-x86
-          \  |  /
-            win
-             |
-            any
+    linux-arm64     linux-arm32
+         |     \   /     |
+         |     linux     |
+         |       |       |
+    unix-arm64   |    unix-x64
+             \   |   /
+               unix
+                 |
+                any
 ```
 
 All RIDs eventually map back to the root `any` RID.
@@ -76,16 +80,28 @@ There are some considerations about RIDs that you have to keep in mind when work
 
 ## Using RIDs
 
-To be able to use RIDs, you have to know which RIDs exist. New values are added regularly to the platform.
-For the latest and complete version, see the [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file in the `dotnet/runtime` repository.
+To be able to use RIDs, you have to know which RIDs exist. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository.
 
-RIDs that aren't tied to a specific version or OS distribution are the preferred choice, especially when dealing with multiple Linux distros since most distribution RIDs are mapped to the not-distribution-specific RIDs.
+RIDs that are considered 'portable' - that is, aren't tied to a specific version or OS distribution - are the recommended choice. This means that portable RIDs should be used for both [building a platform-specific application](./deploying/index.md#platform-specific-and-framework-dependent) and [creating a NuGet package with RID-specific assets](/nuget/create-packages/supporting-multiple-target-frameworks#architecture-specific-folders).
 
-The following list shows a small subset of the most common RIDs used for each OS.
+Starting with .NET 8, the default behaviour of the .NET SDK and runtime is to only consider non-version-specific and non-distro-specific RIDs. When restoring and building, the SDK [uses a smaller, portable RID graph](https://github.com/dotnet/docs/issues/36527). The <xref:System.Runtime.InteropServices.RuntimeIdentifier?displayProperty=nameWithType> [returns the platform for which the runtime was build](https://github.com/dotnet/docs/issues/36466). At run time, .NET will find [RID-specific assets using a known set of portable RIDs](./compatibility/deployment/8.0/rid-asset-list.md). When building an application with RID-specific assets that may be ignored at runtime, the SDK will emit a warning: [NETSDK1206](./tools/sdk-errors/netsdk1206.md).
 
-## Windows RIDs
+### Loading assets for a specific OS version or distribution
 
-Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file in the `dotnet/runtime` repository.
+.NET no longer attempts to provide first-class support for resolving dependencies that are specific to an OS version or distribution. If your application or package needs to load different assets based on OS version or distribution, it should implement the logic to conditionally load assets.
+
+To get information about the platform, use <xref:System.Environment.OperatingSystem?displayProperty=nameWithType> APIs. On Windows and macOS, <xref:System.Environment.OSVersion?displayProperty=nameWithType> will [return the operating system version](./compatibility/core-libraries/5.0/environment-osversion-returns-correct-version.md). On Linux, it may be the kernel version &mdash; to get the Linux distro name and version information, the recommended approach is to read the */etc/os-release* file.
+
+.NET provides various extension points for customizing loading logic &mdash; for example, <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver(System.Reflection.Assembly,System.Runtime.InteropServices.DllImportResolver)?displayProperty=nameWithType> and <xref:System.Runtime.Loader.AssemblyLoadContext.ResolvingUnmanagedDll?displayProperty=nameWithType>. These can be used to load the asset corresponding to the current platform.
+
+
+## Known RIDs
+
+The following list shows a small subset of the most common RIDs used for each OS. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository.
+
+### Windows RIDs
+
+Only common values are listed. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository.
 
 - Windows, not version-specific
   - `win-x64`
@@ -104,9 +120,9 @@ Only common values are listed. For the latest and complete version, see the [run
 
 There are no `win11` RIDs; use `win10` RIDs for Windows 11. For more information, see [.NET dependencies and requirements](./install/windows.md#dependencies).
 
-## Linux RIDs
+### Linux RIDs
 
-Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file in the `dotnet/runtime` repository. Devices running a distribution not listed below may work with one of the not-distribution-specific RIDs. For example, Raspberry Pi devices running a Linux distribution not listed can be targeted with `linux-arm`.
+Only common values are listed. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository. Devices running a distribution not listed below may work with one of the not-distribution-specific RIDs. For example, Raspberry Pi devices running a Linux distribution not listed can be targeted with `linux-arm`.
 
 - Linux, not distribution-specific
   - `linux-x64` (Most desktop distributions like CentOS, Debian, Fedora, Ubuntu, and derivatives)
@@ -128,9 +144,9 @@ Only common values are listed. For the latest and complete version, see the [run
 
 For more information, see [.NET dependencies and requirements](./install/linux.md).
 
-## macOS RIDs
+### macOS RIDs
 
-macOS RIDs use the older "OSX" branding. Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file in the `dotnet/runtime` repository.
+macOS RIDs use the older "OSX" branding. Only common values are listed. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository.
 
 - macOS, not version-specific
   - `osx-x64` (Minimum OS version is macOS 10.12 Sierra)
@@ -158,9 +174,9 @@ macOS RIDs use the older "OSX" branding. Only common values are listed. For the 
 
 For more information, see [.NET dependencies and requirements](./install/macos.md).
 
-## iOS RIDs
+### iOS RIDs
 
-Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file in the `dotnet/runtime` repository.
+Only common values are listed. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository.
 
 - iOS, not version-specific
   - `ios-arm64`
@@ -177,9 +193,9 @@ Only common values are listed. For the latest and complete version, see the [run
 - iOS 15
   - `ios.15-arm64`
 
-## Android RIDs
+### Android RIDs
 
-Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.NETCore.Platforms/src/runtime.json) file in the `dotnet/runtime` repository.
+Only common values are listed. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository.
 
 - Android, not version-specific
   - `android-arm64`

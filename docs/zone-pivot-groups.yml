@@ -66,6 +66,16 @@ groups:
       title: .NET 7
     - id: dotnet-6-0
       title: .NET 6
+- id: dotnet-version-6-8
+  title: .NET version
+  prompt: Choose a .NET version
+  pivots:
+    - id: dotnet-8-0
+      title: .NET 8 Preview
+    - id: dotnet-7-0
+      title: .NET 7
+    - id: dotnet-6-0
+      title: .NET 6
 - id: orleans-version
   title: Orleans version
   prompt: Choose an Orleans version

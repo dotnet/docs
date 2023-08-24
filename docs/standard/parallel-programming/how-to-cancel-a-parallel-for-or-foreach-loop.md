@@ -1,7 +1,7 @@
 ---
 title: "How to: Cancel a Parallel.For or ForEach Loop"
 description: Cancel a Parallel.For or Parallel.ForEach loop in .NET by supplying a cancellation token object to the method in the ParallelOptions parameter.
-ms.date: 12/08/2021
+ms.date: 08/18/2023
 dev_langs:
  - "csharp"
  - "vb"
@@ -22,7 +22,7 @@ The following example shows how to cancel a call to <xref:System.Threading.Tasks
 [!code-csharp[TPL_Parallel#29](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_parallel/cs/parallel_cancel.cs#29)]
 [!code-vb[TPL_Parallel#29](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_parallel/vb/cancelloop.vb#29)]
 
-If the token that signals the cancellation is the same token that is specified in the <xref:System.Threading.Tasks.ParallelOptions> instance, then the parallel loop will throw a single <xref:System.OperationCanceledException> on cancellation. If some other token causes cancellation, the loop will throw an <xref:System.AggregateException> with an <xref:System.OperationCanceledException> as an InnerException.
+If the token that signals the cancellation is the same token that is specified in the <xref:System.Threading.Tasks.ParallelOptions> instance, then the parallel loop will throw a single <xref:System.OperationCanceledException> on cancellation. This immediately stops all iterations from executing as the exception is thrown. If some other token causes cancellation, the loop will throw an <xref:System.AggregateException> with an <xref:System.OperationCanceledException> as an `InnerException`.
 
 ## See also
 

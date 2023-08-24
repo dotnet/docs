@@ -381,7 +381,7 @@
 | Microsoft.Azure.Devices.Provisioning.Transport.Mqtt | NuGet [1.17.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.17.1)<br>NuGet [1.18.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.18.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.Shared | NuGet [1.30.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.30.1)<br>NuGet [1.31.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.31.0-preview-001) |  |  |
 | Microsoft.Azure.Functions.Worker | NuGet [1.19.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.19.0) |  |  |
-| Microsoft.Azure.Functions.Worker.Sdk | NuGet [1.14.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.14.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Sdk | NuGet [1.14.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.14.1) |  |  |
 | Microsoft.Azure.uamqp | NuGet [1.2.11](https://www.nuget.org/packages/Microsoft.Azure.uamqp/1.2.11) |  |  |
 | Microsoft.Azure.umqtt | NuGet [1.1.11](https://www.nuget.org/packages/Microsoft.Azure.umqtt/1.1.11) |  |  |
 | Mobile Apps | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Server/2.0.3) |  |  |
@@ -470,7 +470,7 @@
 | Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.2738](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.2738) |  |  |
 | Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.2738](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.2738) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.2.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.2.1) |  |  |
-| Microsoft.Azure.Functions.Worker.Sdk.Generators | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Generators/1.1.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Sdk.Generators | NuGet [1.1.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Generators/1.1.1) |  |  |
 | Microsoft.Azure.WebJobs.CosmosDb.Mongo | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.Mongo/1.0.4) |  |  |
 | Microsoft.Azure.WebJobs.Extensions.Kusto | NuGet [1.0.7-Preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kusto/1.0.7-Preview) |  |  |
 | Service Bus - Message ID plugin | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.MessageIdPlugin/2.0.0) |  |  |

@@ -119,22 +119,19 @@ To create the test methods:
 
 1. On the menu bar, select **File** > **Save UnitTest1.cs As** or **File** > **Save UnitTest1.vb As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and select **Save with Encoding**.
 
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/testing-library-with-visual-studio/save-file-as-dialog.png" alt-text="Visual Studio Save File As dialog":::
+   :::image type="content" source="./media/testing-library-with-visual-studio/save-file-as-dialog.png" alt-text="Visual Studio Save File As dialog":::
 
 1. In the **Confirm Save As** dialog, select the **Yes** button to save the file.
 
 1. In the **Advanced Save Options** dialog, select **Unicode (UTF-8 with signature) - Codepage 65001** from the **Encoding** drop-down list and select **OK**.
 
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/testing-library-with-visual-studio/advanced-save-options.png" alt-text="Visual Studio Advanced Save Options dialog":::
+   :::image type="content" source="./media/testing-library-with-visual-studio/advanced-save-options.png" alt-text="Visual Studio Advanced Save Options dialog":::
 
    If you fail to save your source code as a UTF8-encoded file, Visual Studio may save it as an ASCII file. When that happens, the runtime doesn't accurately decode the UTF8 characters outside of the ASCII range, and the test results won't be correct.
 
 1. On the menu bar, select **Test** > **Run All Tests**. If the **Test Explorer** window doesn't open, open it by choosing **Test** > **Test Explorer**. The three tests are listed in the **Passed Tests** section, and the **Summary** section reports the result of the test run.
 
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/testing-library-with-visual-studio/test-explorer-window.png" alt-text="Test Explorer window with passing tests":::
+   :::image type="content" source="./media/testing-library-with-visual-studio/test-explorer-window.png" alt-text="Test Explorer window with passing tests":::
 
 ## Handle test failures
 
@@ -155,15 +152,13 @@ If you're doing test-driven development (TDD), you write tests first and they fa
 
 1. Run the test by selecting **Test** > **Run All Tests** from the menu bar. The **Test Explorer** window indicates that two tests succeeded and one failed.
 
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/testing-library-with-visual-studio/failed-test-window.png" alt-text="Test Explorer window with failing tests":::
+   :::image type="content" source="./media/testing-library-with-visual-studio/failed-test-window.png" alt-text="Test Explorer window with failing tests":::
 
 1. Select the failed test, `TestDoesNotStartWith`.
 
    The **Test Explorer** window displays the message produced by the assert: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, no strings in the array after "Error" were tested.
 
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/testing-library-with-visual-studio/failed-test-detail.png" alt-text="Test Explorer window showing the IsFalse assertion failure":::
+   :::image type="content" source="./media/testing-library-with-visual-studio/failed-test-detail.png" alt-text="Test Explorer window showing the IsFalse assertion failure":::
 
 1. Remove the string "Error" that you added in step 1. Rerun the test and the tests pass.
 
@@ -175,13 +170,11 @@ To test the Release build:
 
 1. In the Visual Studio toolbar, change the build configuration from **Debug** to **Release**.
 
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/testing-library-with-visual-studio/visual-studio-toolbar-release.png" alt-text="Visual Studio toolbar with release build highlighted":::
+   :::image type="content" source="./media/testing-library-with-visual-studio/visual-studio-toolbar-release.png" alt-text="Visual Studio toolbar with release build highlighted":::
 
 1. In **Solution Explorer**, right-click the **StringLibrary** project and select **Build** from the context menu to recompile the library.
 
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/testing-library-with-visual-studio/build-library-context-menu.png" alt-text="StringLibrary context menu with build command":::
+   :::image type="content" source="./media/testing-library-with-visual-studio/build-library-context-menu.png" alt-text="StringLibrary context menu with build command":::
 
 1. Run the unit tests by choosing **Test** > **Run All Tests** from the menu bar. The tests pass.
 
@@ -325,22 +318,19 @@ To create the test methods:
 
 1. On the menu bar, select **File** > **Save UnitTest1.cs As** or **File** > **Save UnitTest1.vb As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and select **Save with Encoding**.
 
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/testing-library-with-visual-studio/save-file-as-dialog.png" alt-text="Visual Studio Save File As dialog":::
+   :::image type="content" source="./media/testing-library-with-visual-studio/save-file-as-dialog.png" alt-text="Visual Studio Save File As dialog":::
 
 1. In the **Confirm Save As** dialog, select the **Yes** button to save the file.
 
 1. In the **Advanced Save Options** dialog, select **Unicode (UTF-8 with signature) - Codepage 65001** from the **Encoding** drop-down list and select **OK**.
 
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/testing-library-with-visual-studio/advanced-save-options.png" alt-text="Visual Studio Advanced Save Options dialog":::
+   :::image type="content" source="./media/testing-library-with-visual-studio/advanced-save-options.png" alt-text="Visual Studio Advanced Save Options dialog":::
 
    If you fail to save your source code as a UTF8-encoded file, Visual Studio may save it as an ASCII file. When that happens, the runtime doesn't accurately decode the UTF8 characters outside of the ASCII range, and the test results won't be correct.
 
 1. On the menu bar, select **Test** > **Run All Tests**. If the **Test Explorer** window doesn't open, open it by choosing **Test** > **Test Explorer**. The three tests are listed in the **Passed Tests** section, and the **Summary** section reports the result of the test run.
 
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/testing-library-with-visual-studio/test-explorer-window.png" alt-text="Test Explorer window with passing tests":::
+   :::image type="content" source="./media/testing-library-with-visual-studio/test-explorer-window.png" alt-text="Test Explorer window with passing tests":::
 
 ## Handle test failures
 
@@ -361,15 +351,13 @@ If you're doing test-driven development (TDD), you write tests first and they fa
 
 1. Run the test by selecting **Test** > **Run All Tests** from the menu bar. The **Test Explorer** window indicates that two tests succeeded and one failed.
 
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/testing-library-with-visual-studio/failed-test-window.png" alt-text="Test Explorer window with failing tests":::
+   :::image type="content" source="./media/testing-library-with-visual-studio/failed-test-window.png" alt-text="Test Explorer window with failing tests":::
 
 1. Select the failed test, `TestDoesNotStartWith`.
 
    The **Test Explorer** window displays the message produced by the assert: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, no strings in the array after "Error" were tested.
 
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/testing-library-with-visual-studio/failed-test-detail.png" alt-text="Test Explorer window showing the IsFalse assertion failure":::
+   :::image type="content" source="./media/testing-library-with-visual-studio/failed-test-detail.png" alt-text="Test Explorer window showing the IsFalse assertion failure":::
 
 1. Remove the string "Error" that you added in step 1. Rerun the test and the tests pass.
 
@@ -381,13 +369,11 @@ To test the Release build:
 
 1. In the Visual Studio toolbar, change the build configuration from **Debug** to **Release**.
 
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/testing-library-with-visual-studio/visual-studio-toolbar-release.png" alt-text="Visual Studio toolbar with release build highlighted":::
+   :::image type="content" source="./media/testing-library-with-visual-studio/visual-studio-toolbar-release.png" alt-text="Visual Studio toolbar with release build highlighted":::
 
 1. In **Solution Explorer**, right-click the **StringLibrary** project and select **Build** from the context menu to recompile the library.
 
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/testing-library-with-visual-studio/build-library-context-menu.png" alt-text="StringLibrary context menu with build command":::
+   :::image type="content" source="./media/testing-library-with-visual-studio/build-library-context-menu.png" alt-text="StringLibrary context menu with build command":::
 
 1. Run the unit tests by choosing **Test** > **Run All Tests** from the menu bar. The tests pass.
 
@@ -531,22 +517,19 @@ To create the test methods:
 
 1. On the menu bar, select **File** > **Save UnitTest1.cs As** or **File** > **Save UnitTest1.vb As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and select **Save with Encoding**.
 
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/testing-library-with-visual-studio/save-file-as-dialog.png" alt-text="Visual Studio Save File As dialog":::
+   :::image type="content" source="./media/testing-library-with-visual-studio/save-file-as-dialog.png" alt-text="Visual Studio Save File As dialog":::
 
 1. In the **Confirm Save As** dialog, select the **Yes** button to save the file.
 
 1. In the **Advanced Save Options** dialog, select **Unicode (UTF-8 with signature) - Codepage 65001** from the **Encoding** drop-down list and select **OK**.
 
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/testing-library-with-visual-studio/advanced-save-options.png" alt-text="Visual Studio Advanced Save Options dialog":::
+   :::image type="content" source="./media/testing-library-with-visual-studio/advanced-save-options.png" alt-text="Visual Studio Advanced Save Options dialog":::
 
    If you fail to save your source code as a UTF8-encoded file, Visual Studio may save it as an ASCII file. When that happens, the runtime doesn't accurately decode the UTF8 characters outside of the ASCII range, and the test results won't be correct.
 
 1. On the menu bar, select **Test** > **Run All Tests**. If the **Test Explorer** window doesn't open, open it by choosing **Test** > **Test Explorer**. The three tests are listed in the **Passed Tests** section, and the **Summary** section reports the result of the test run.
 
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/testing-library-with-visual-studio/test-explorer-window.png" alt-text="Test Explorer window with passing tests":::
+   :::image type="content" source="./media/testing-library-with-visual-studio/test-explorer-window.png" alt-text="Test Explorer window with passing tests":::
 
 ## Handle test failures
 
@@ -567,15 +550,13 @@ If you're doing test-driven development (TDD), you write tests first and they fa
 
 1. Run the test by selecting **Test** > **Run All Tests** from the menu bar. The **Test Explorer** window indicates that two tests succeeded and one failed.
 
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/testing-library-with-visual-studio/failed-test-window.png" alt-text="Test Explorer window with failing tests":::
+   :::image type="content" source="./media/testing-library-with-visual-studio/failed-test-window.png" alt-text="Test Explorer window with failing tests":::
 
 1. Select the failed test, `TestDoesNotStartWith`.
 
    The **Test Explorer** window displays the message produced by the assert: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, no strings in the array after "Error" were tested.
 
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/testing-library-with-visual-studio/failed-test-detail.png" alt-text="Test Explorer window showing the IsFalse assertion failure":::
+   :::image type="content" source="./media/testing-library-with-visual-studio/failed-test-detail.png" alt-text="Test Explorer window showing the IsFalse assertion failure":::
 
 1. Remove the string "Error" that you added in step 1. Rerun the test and the tests pass.
 
@@ -587,13 +568,11 @@ To test the Release build:
 
 1. In the Visual Studio toolbar, change the build configuration from **Debug** to **Release**.
 
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/testing-library-with-visual-studio/visual-studio-toolbar-release.png" alt-text="Visual Studio toolbar with release build highlighted":::
+   :::image type="content" source="./media/testing-library-with-visual-studio/visual-studio-toolbar-release.png" alt-text="Visual Studio toolbar with release build highlighted":::
 
 1. In **Solution Explorer**, right-click the **StringLibrary** project and select **Build** from the context menu to recompile the library.
 
-   > [!div class="mx-imgBorder"]
-   > :::image type="content" source="./media/testing-library-with-visual-studio/build-library-context-menu.png" alt-text="StringLibrary context menu with build command":::
+   :::image type="content" source="./media/testing-library-with-visual-studio/build-library-context-menu.png" alt-text="StringLibrary context menu with build command":::
 
 1. Run the unit tests by choosing **Test** > **Run All Tests** from the menu bar. The tests pass.
 

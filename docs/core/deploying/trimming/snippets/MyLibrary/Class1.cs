@@ -176,8 +176,8 @@ public class MyLibrary12
         var helper = Assembly.Load("MyAssembly").GetType("MyType").GetMethod("Helper");
         helper.Invoke(null, null);
     }
+    // </snippet_AD4>
 }
-
 
 public class MyLib
 {
@@ -190,7 +190,6 @@ public class MyLib
     }
     
 }
-// </snippet_AD4>
 public class MyLibrary99
 {
     internal static Type type;

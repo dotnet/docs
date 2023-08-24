@@ -178,10 +178,6 @@ public class MyLibrary12
     }
 }
 
-public class MyLibrary99
-{
-    internal static Type type;
-}
 
 public class MyLib
 {
@@ -194,8 +190,11 @@ public class MyLib
     }
     
 }
-
 // </snippet_AD4>
+public class MyLibrary99
+{
+    internal static Type type;
+}
 public class MyLibrary22
 {
     // <snippet_AD5>

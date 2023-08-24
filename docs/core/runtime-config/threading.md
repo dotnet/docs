@@ -104,7 +104,7 @@ Project file:
 | - | - | - |
 | **runtimeconfig.json** | `System.Threading.ThreadPool.UseWindowsThreadPool` | `true` - enabled<br/>`false` - disabled |
 | **MSBuild property** | `UseWindowsThreadPool` | `true` - enabled<br/>`false` - disabled |
-| **Environment variable** | `DOTNET_ThreadPool_UseWindowsThreadPool` | `0` - disabled<br/>`1` - enabled |
+| **Environment variable** | `DOTNET_ThreadPool_UseWindowsThreadPool` | `1` - enabled<br/>`0` - disabled |
 
 ### Examples
 

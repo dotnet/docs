@@ -120,17 +120,7 @@ If library targets a TFM that is not trimmable, for example `net472` or `netstan
 
 :::code language="xml" source="~/docs/core/deploying/trimming/snippets/ConsoleApp1/ConsoleApp1.csproj":::
 
-**Notes:**
-
-* In the preceding project file, when using .NET 7, replace `<TargetFramework>net8.0</TargetFramework>` with `<TargetFramework>net7.0</TargetFramework>`.
-* [`<TrimMode>full</TrimMode>`](/dotnet/core/compatibility/deployment/7.0/trim-all-assemblies#recommended-action) in the `<PropertyGroup>` tag:
-
-  * Is the [default for .NET 7 and higher](../../../core/compatibility/deployment/7.0/trim-all-assemblies.md).
-  * Is not shown in the preceding project file.
-  * Ensures that the trimmer only analyzes the parts of the library's dependencies that are used.
-  * Tells the trimmer that any code that isn't part of a "root" can be trimmed if it's unused. Without this   option:
-    * Warnings are issued originating from ***any*** part of a dependency that doesn't set `[AssemblyMetadata  ("IsTrimmable", "Tue")]`
-    * The preceding warnings can be issued for code that is unused by the library.
+**Note:** In the preceding project file, when using .NET 7, replace `<TargetFramework>net8.0</TargetFramework>` with `<TargetFramework>net7.0</TargetFramework>`.
 
 ### [.NET 8+](#tab/net8plus)
 
@@ -144,6 +134,7 @@ If library targets a TFM that is not trimmable, for example `net472` or `netstan
 
 :::code language="xml" source="~/docs/core/deploying/trimming/snippets/ConsoleApp1/ConsoleApp1.csproj":::
 
+<!-- removed due to https://github.com/dotnet/docs/pull/36487#discussion_r1304207024 
 **Notes:**
 
 * [`<TrimMode>full</TrimMode>`](/dotnet/core/compatibility/deployment/7.0/trim-all-assemblies#recommended-action) in the `<PropertyGroup>` tag:
@@ -154,6 +145,7 @@ If library targets a TFM that is not trimmable, for example `net472` or `netstan
   * Tells the trimmer that any code that isn't part of a "root" can be trimmed if it's unused. Without this   option:
     * Warnings are issued originating from ***any*** part of a dependency that doesn't set `[AssemblyMetadata  ("IsTrimmable", "Tue")]`
     * The preceding warnings can be issued for code that is unused by the library.
+-->
 
 ---
 
@@ -219,16 +211,6 @@ In this case, the trim analysis keeps public methods of <xref:System.Tuple>, and
 * Avoid using code that uses reflection in a way not understood by the static analysis. For example, reflection in static constructors should be avoided. Using statically unanalyzable reflection in static constructors result in the warning propagating to all members of the class.
 * Avoid annotating virtual methods or interface methods. Annotating virtual or interface methods requires all overrides to have matching annotations.
 * If an API is mostly trim-incompatible, alternative coding approaches to the API may need to be considered. A common example is reflection-based serializers. In these cases, consider adopting other technology like source generators to produce code that is more easily statically analyzed. For example, see [How to use source generation in System.Text.Json](/dotnet/standard/serialization/system-text-json/source-generation)
-
-<!--
-* When using reflection, minimize reflection scope so that it's reachable only from a small part of the library.
-* Avoid using code that uses reflection in a way not understood by the static analysis. For example, reflection in static constructors should be avoided. Using reflection in static constructors result in the warning propagating to all members of the class.
-* Avoid annotating virtual methods or interface methods. Annotating virtual or interface methods requires all overrides to have matching annotations.
-* When code is incompatible with trimming, propagate `RequiresUnreferencedCode` annotations up the call chain until the relevant public API is annotated. In some cases, adding attributes up the call chain resolves the warnings. Sometimes this results in much of the public API being annotated with [`[RequiresUnreferencedCode]`](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute). Annotating with `[RequiresUnreferencedCode]` is the best approach if the library behaves in ways that can't be understood statically by the trim analysis.
-* Code that uses patterns that can't be expressed in terms of the `DynamicallyAccessedMembers` attributes:
-  * Consider reorganizing that code to make it follow an analyzable pattern. This also applies to code that only uses reflection to operate on statically known types.  For example, consider using a factory pattern instead of reflection.
-* If an API is mostly trim-incompatible, alternative coding approaches to the API may need to be considered. A common example is reflection-based serializers. In these cases, consider adopting other technology like source generators to produce code that is more easily statically analyzed. For example, see [How to use source generation in System.Text.Json](/dotnet/standard/serialization/system-text-json/source-generation)
--->
 
 ## Resolve warnings for non-analyzable patterns
 

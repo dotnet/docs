@@ -94,6 +94,44 @@ Project file:
 </Project>
 ```
 
+## Windows thread pool
+
+- For projects on Windows, configures whether the thread management is delegated to the Windows thread pool.
+- If you omit this setting or the platform is not Windows, the managed (portable) thread pool is used instead.
+- Only applications published with Native AOT on Windows use the Windows thread pool by default, for which you can opt to use the managed thread pool instead by disabling the config setting.
+
+| | Setting name | Values |
+| - | - | - |
+| **runtimeconfig.json** | `System.Threading.ThreadPool.UseWindowsThreadPool` | `true` - enabled<br/>`false` - disabled |
+| **MSBuild property** | `UseWindowsThreadPool` | `true` - enabled<br/>`false` - disabled |
+| **Environment variable** | `DOTNET_ThreadPool_UseWindowsThreadPool` | `0` - disabled<br/>`1` - enabled |
+
+### Examples
+
+*runtimeconfig.json* file:
+
+```json
+{
+   "runtimeOptions": {
+      "configProperties": {
+         "System.Threading.ThreadPool.UseWindowsThreadPool": true
+      }
+   }
+}
+```
+
+Project file:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <UseWindowsThreadPool>true</UseWindowsThreadPool>
+  </PropertyGroup>
+
+</Project>
+```
+
 ## Thread injection in response to blocking work items
 
 In some cases, the thread pool detects work items that block its threads. To compensate, it injects more threads. In .NET 6+, you can use the following [runtime configuration](https://github.com/dotnet/docs/blob/main/docs/core/runtime-config/index.md) settings to configure thread injection in response to blocking work items. Currently, these settings take effect only for work items that wait for another task to complete, such as in typical [sync-over-async](https://devblogs.microsoft.com/pfxteam/should-i-expose-synchronous-wrappers-for-asynchronous-methods/) cases.

@@ -94,7 +94,6 @@ To get information about the platform, use <xref:System.Environment.OperatingSys
 
 .NET provides various extension points for customizing loading logic &mdash; for example, <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver(System.Reflection.Assembly,System.Runtime.InteropServices.DllImportResolver)?displayProperty=nameWithType> and <xref:System.Runtime.Loader.AssemblyLoadContext.ResolvingUnmanagedDll?displayProperty=nameWithType>. These can be used to load the asset corresponding to the current platform.
 
-
 ## Known RIDs
 
 The following list shows a small subset of the most common RIDs used for each OS. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository.
@@ -103,44 +102,21 @@ The following list shows a small subset of the most common RIDs used for each OS
 
 Only common values are listed. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository.
 
-- Windows, not version-specific
-  - `win-x64`
-  - `win-x86`
-  - `win-arm64`
-- Windows 7 / Windows Server 2008 R2
-  - `win7-x64`
-  - `win7-x86`
-- Windows 8.1 / Windows Server 2012 R2
-  - `win81-x64`
-  - `win81-x86`
-- Windows 11 / Windows Server 2022 / Windows 10 / Windows Server 2016
-  - `win10-x64`
-  - `win10-x86`
-  - `win10-arm64`
+- `win-x64`
+- `win-x86`
+- `win-arm64`
 
-There are no `win11` RIDs; use `win10` RIDs for Windows 11. For more information, see [.NET dependencies and requirements](./install/windows.md#dependencies).
+For more information, see [.NET dependencies and requirements](./install/windows.md#dependencies).
 
 ### Linux RIDs
 
-Only common values are listed. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository. Devices running a distribution not listed below may work with one of the not-distribution-specific RIDs. For example, Raspberry Pi devices running a Linux distribution not listed can be targeted with `linux-arm`.
+Only common values are listed. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository.
 
-- Linux, not distribution-specific
-  - `linux-x64` (Most desktop distributions like CentOS, Debian, Fedora, Ubuntu, and derivatives)
-  - `linux-musl-x64` (Lightweight distributions using [musl](https://wiki.musl-libc.org/projects-using-musl.html) like Alpine Linux)
-  - `linux-arm` (Linux distributions running on Arm like Raspbian on Raspberry Pi Model 2+)
-  - `linux-arm64` (Linux distributions running on 64-bit Arm like Ubuntu Server 64-bit on Raspberry Pi Model 3+)
-  - `linux-bionic-arm64` (Distributions using Android's bionic libc, for example, Termux)
-- Red Hat Enterprise Linux
-  - `rhel-x64` (Superseded by `linux-x64` for RHEL above version 6)
-  - `rhel.6-x64`
-- Tizen
-  - `tizen`
-  - `tizen.4.0.0`
-  - `tizen.5.0.0`
-  - `tizen.5.5.0`
-  - `tizen.6.0.0`
-  - `tizen.6.5.0`
-  - `tizen.7.0.0`
+- `linux-x64` (Most desktop distributions like CentOS, Debian, Fedora, Ubuntu, and derivatives)
+- `linux-musl-x64` (Lightweight distributions using [musl](https://wiki.musl-libc.org/projects-using-musl.html) like Alpine Linux)
+- `linux-arm` (Linux distributions running on Arm like Raspbian on Raspberry Pi Model 2+)
+- `linux-arm64` (Linux distributions running on 64-bit Arm like Ubuntu Server 64-bit on Raspberry Pi Model 3+)
+- `linux-bionic-arm64` (Distributions using Android's bionic libc, for example, Termux)
 
 For more information, see [.NET dependencies and requirements](./install/linux.md).
 
@@ -148,29 +124,8 @@ For more information, see [.NET dependencies and requirements](./install/linux.m
 
 macOS RIDs use the older "OSX" branding. Only common values are listed. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository.
 
-- macOS, not version-specific
-  - `osx-x64` (Minimum OS version is macOS 10.12 Sierra)
-- macOS 10.10  Yosemite
-  - `osx.10.10-x64`
-- macOS 10.11 El Capitan
-  - `osx.10.11-x64`
-- macOS 10.12 Sierra
-  - `osx.10.12-x64`
-- macOS 10.13 High Sierra
-  - `osx.10.13-x64`
-- macOS 10.14 Mojave
-  - `osx.10.14-x64`
-- macOS 10.15 Catalina
-  - `osx.10.15-x64`
-- macOS 11.0 Big Sur
-  - `osx.11.0-x64`
-  - `osx.11.0-arm64`
-- macOS 12 Monterey
-  - `osx.12-x64`
-  - `osx.12-arm64`
-- macOS 13 Ventura
-  - `osx.13-x64`
-  - `osx.13-arm64`
+- `osx-x64` (Minimum OS version is macOS 10.12 Sierra)
+- `osx-arm64`
 
 For more information, see [.NET dependencies and requirements](./install/macos.md).
 
@@ -178,51 +133,13 @@ For more information, see [.NET dependencies and requirements](./install/macos.m
 
 Only common values are listed. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository.
 
-- iOS, not version-specific
-  - `ios-arm64`
-- iOS 10
-  - `ios.10-arm64`
-- iOS 11
-  - `ios.11-arm64`
-- iOS 12
-  - `ios.12-arm64`
-- iOS 13
-  - `ios.13-arm64`
-- iOS 14
-  - `ios.14-arm64`
-- iOS 15
-  - `ios.15-arm64`
+- `ios-arm64`
 
 ### Android RIDs
 
 Only common values are listed. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository.
 
-- Android, not version-specific
-  - `android-arm64`
-- Android 21
-  - `android.21-arm64`
-- Android 22
-  - `android.22-arm64`
-- Android 23
-  - `android.23-arm64`
-- Android 24
-  - `android.24-arm64`
-- Android 25
-  - `android.25-arm64`
-- Android 26
-  - `android.26-arm64`
-- Android 27
-  - `android.27-arm64`
-- Android 28
-  - `android.28-arm64`
-- Android 29
-  - `android.29-arm64`
-- Android 30
-  - `android.30-arm64`
-- Android 31
-  - `android.31-arm64`
-- Android 32
-  - `android.32-arm64`
+- `android-arm64`
 
 ## See also
 

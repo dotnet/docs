@@ -39,7 +39,7 @@ To get the latest version of the analyzer with the most coverage, install the [.
 
 * Updates the tooling used to build an app or library and enable trim warnings.
 * Provides significant trimming and analyzer improvements over previous .NET SDKs.
-* Does ***not*** require targeting the .NET 8 runtime. Libary authors can continue to target the .NET 6 runtime.
+* Does ***not*** require targeting the .NET 8 runtime. Library authors can continue to target the .NET 6 runtime.
 
 Set `<IsTrimmable>true</IsTrimmable>` in the project file.
 
@@ -213,10 +213,10 @@ In this case, the trim analysis keeps public methods of <xref:System.Tuple>, and
 ## Recommendations
 
 * ***Avoid*** reflection when possible. When using reflection, minimize reflection scope so that it's reachable only from a small part of the library.
-* Annotate code with `DynamicallyAccessedMembers` to statically express the trimming requirements statically when possible.
+* Annotate code with `DynamicallyAccessedMembers` to statically express the trimming requirements when possible.
 * Consider reorganizing code to make it follow an analyzable pattern that can be annotated with `DynamicallyAccessedMembers`
 * When code is incompatible with trimming, annotate it with `RequiresUnreferencedCode` and propagate this annotation to callers until the relevant public APIs are annotated.
-* Avoid using code that uses reflection in a way not understood by the static analysis. For example, reflection in static constructors should be avoided. Using reflection in static constructors result in the warning propagating to all members of the class.
+* Avoid using code that uses reflection in a way not understood by the static analysis. For example, reflection in static constructors should be avoided. Using statically unanalyzable reflection in static constructors result in the warning propagating to all members of the class.
 * Avoid annotating virtual methods or interface methods. Annotating virtual or interface methods requires all overrides to have matching annotations.
 * If an API is mostly trim-incompatible, alternative coding approaches to the API may need to be considered. A common example is reflection-based serializers. In these cases, consider adopting other technology like source generators to produce code that is more easily statically analyzed. For example, see [How to use source generation in System.Text.Json](/dotnet/standard/serialization/system-text-json/source-generation)
 

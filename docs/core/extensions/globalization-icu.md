@@ -33,6 +33,33 @@ Windows 10 May 2019 Update and later versions include [icu.dll](/windows/win32/i
 > [!NOTE]
 > Even when using ICU, the `CurrentCulture`, `CurrentUICulture`, and `CurrentRegion` members still use Windows operating system APIs to honor user settings.
 
+Users will encounter differences in Globalization behavior when .NET transitions from using NLS APIs to employing the ICU library on Windows systems. This difference will become evident in two situations:
+
+- When they upgrade to .NET 5.0 or later while running on a Windows version that includes a supported ICU library that .NET can utilize.
+- When they upgrade their Windows operating system from a version that lacks a supported ICU library to a version that includes one.
+
+The following tables outline when users will observe these variations:
+
+**Table 1: Instances of Behavior Differences When Upgrading .NET Version**
+
+.NET Version|Upgraded .NET Version|Windows version
+---|---|---
+.NET Core 3.1 or earlier|.NET 5.0 or later|Windows 10 version 1903 or later
+.NET Core 3.1 or earlier|.NET 5.0 or later|Windows Server 2022 or later
+.NET Core 6.0 or earlier|.NET 7.0 or later|Windows 10 version 1703
+.NET Core 6.0 or earlier|.NET 7.0 or later|Windows 10 version 1709
+.NET Core 3.1 or earlier|.NET 7.0 or later|Windows Server 2019 or later
+.NET Core 5.0 or 6.0|.NET 7.0 or later|Windows Server 2019
+
+**Table 2: Instances of Behavior Differences When Upgrading Windows Version**
+
+.NET Version|Windows version|Upgraded Windows Version
+---|---|---
+.NET 5.0 or .NET 6.0|Windows 10 version 1709 or earlier|Windows 10 version 1903 or later
+.NET 5.0 or .NET 6.0|Windows Server 2019 or earlier|Windows Server 2022 or later
+.NET 7 or later|Windows 10 version 1607 or earlier|Windows 10 version 1703 or later
+.NET 7 or later|Windows Server 2016 or earlier|Windows Server 2019 or later
+
 ### Behavioral differences
 
 If you upgrade your app to target .NET 5, you might see changes in your app even if you don't realize you're using globalization facilities. This section lists one of the behavioral changes you might see, but there are others too.

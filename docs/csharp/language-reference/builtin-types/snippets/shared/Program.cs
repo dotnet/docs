@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.WriteLine("============ Array type =========");
+        TestArraysClass.ForMultiDimension();
         Console.WriteLine("======== Unmanaged types =========");
         UnmanagedTypes.Main();
         Console.WriteLine();

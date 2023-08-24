@@ -146,12 +146,12 @@ public class MyLibrary8
 public class MyLibrary11
 {
     // <snippet_AD3>
+    // Invalid justification and suppression: property being non-reflectively
+    // used by the app doesn't guarantee that the property will be available
+    // for reflection. Properties that are not visible targets of reflection
+    // are already optimized away with Native AOT trimming and may be
+    // optimized away for non-native deployment in the future as well.
     [UnconditionalSuppressMessage("ReflectionAnalysis", "IL2063",
-        // Invalid justification and suppression: property being non-reflectively
-        // used by the app doesn't guarantee that the property will be available
-        // for reflection. Properties that are not visible targets of reflection
-        // are already optimized away with Native AOT trimming and may be
-        // optimized away for non-native deployment in the future as well.
         Justification = "*INVALID* Only need to serialize properties that are used by"
                         + "the app. *INVALID*")]
     public string Serialize(object o)

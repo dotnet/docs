@@ -97,7 +97,7 @@ Project file:
 ## Windows thread pool
 
 - For projects on Windows, configures whether thread pool thread management is delegated to the Windows thread pool.
-- If you omit this setting or the platform is not Windows, the managed (portable) thread pool is used instead.
+- If you omit this setting or the platform is not Windows, the .NET thread pool is used instead.
 - Only applications published with Native AOT on Windows use the Windows thread pool by default, for which you can opt to use the managed thread pool instead by disabling the config setting.
 
 | | Setting name | Values |

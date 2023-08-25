@@ -45,7 +45,6 @@ The following table furnishes details regarding which versions of .NET are capab
 > [!NOTE]
 > Even when using ICU, the `CurrentCulture`, `CurrentUICulture`, and `CurrentRegion` members still use Windows operating system APIs to honor user settings.
 
-
 ### Behavioral differences
 
 If you upgrade your app to target .NET 5 or later, you might see changes in your app even if you don't realize you're using globalization facilities. This section lists one of the behavioral changes you might see, but there are others too.

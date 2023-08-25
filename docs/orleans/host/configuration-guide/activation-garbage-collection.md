@@ -60,7 +60,7 @@ A negative `timeSpan` value means "cancel the previous setting of the `DelayDeac
 
 1. Activation Garbage Collection settings specify an age limit of 10 minutes and the grain is making a call to `DelayDeactivation(TimeSpan.FromMinutes(20))`, and after 7 minutes there's another call on this grain, the activation will be collected after 20 min from time zero if no extra calls were made.
 
-Note that `DelayDeactivation` doesn't 100% guarantee that the grain activation won't be deactivated before the specified time expires. Certain failure cases may cause 'premature' deactivation of grains. That means that `DelayDeactivation` **can not be used as a means to 'pin' a grain activation in memory forever or to a specific silo**. `DelayDeactivation` is merely an optimization mechanism that can help reduce the aggregate cost of a grain getting deactivated and reactivated over time. In most cases, there should be no need to use `DelayDeactivation` at all.
+The `DelayDeactivation` doesn't 100% guarantee that the grain activation won't be deactivated before the specified time expires. Certain failure cases may cause 'premature' deactivation of grains. That means that `DelayDeactivation` **can not be used as a means to 'pin' a grain activation in memory forever or to a specific silo**. `DelayDeactivation` is merely an optimization mechanism that can help reduce the aggregate cost of a grain getting deactivated and reactivated over time. In most cases, there should be no need to use `DelayDeactivation` at all.
 
 ### Expedite activation GC
 
@@ -95,7 +95,7 @@ mySiloHostBuilder.Configure<GrainCollectionOptions>(options =>
 
 ## Keep alive
 
-To keep a grain alive, you apply the <xref:Orleans.KeepAliveAttribute?displayProperty=fullName> to the grain implementation. This instructs the Orleans runtime to not be collected by the idle activation collector. This is useful for grains that are used infrequently, but you want to keep them alive to avoid any potential creation overhead.
+To keep a grain alive, you apply the <xref:Orleans.KeepAliveAttribute?displayProperty=fullName> to the grain implementation. The `KeepAlive` attribute instructs the Orleans runtime to avoid collecting the grain by the idle activation collector. For grains that are used infrequently but you want to keep them alive to avoid any potential creation overhead, this can be useful.
 
 ```csharp
 public interface IPlayerGrain : IGrainWithGuidKey
@@ -131,6 +131,4 @@ public class PlayerGrain : Grain, IPlayerGrain
 }
 ```
 
-The preceding code will:
-
-- Prevent the `PlayerGrain` from being collected by the idle activation collector.
+The preceding code prevents the idle activation collector from collecting the `PlayerGrain`.

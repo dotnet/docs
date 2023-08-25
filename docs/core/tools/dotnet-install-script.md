@@ -305,7 +305,7 @@ Manually installing .NET doesn't add the environment variables system-wide, and 
 
 There is no uninstall script. For information about manually uninstalling .NET, see [How to remove the .NET Runtime and SDK](../install/remove-runtime-sdk-versions.md#scripted-or-manual).
 
-# Signature validation of dotnet-install.sh
+## Signature validation of dotnet-install.sh
 
 Signature validation is an important security measure that helps ensure the authenticity and integrity of a script. By verifying the signature of a script, you can be sure that it has not been tampered with and that it comes from a trusted source.
 

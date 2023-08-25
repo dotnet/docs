@@ -20,7 +20,7 @@ If you know your application does not actually need the specified RID &mdash; fo
 </PropertyGroup>
 ```
 
-If your application does need the specified RID and the affected package does not have a version that uses portable RIDs, the runtime can be configured to perform asset resolution via the old RID graph with version-specific and distro-specific RIDs. Note that the old RID graph is no longer updated and exists only as a backwards compatibility option.
+If your application does need the specified RID and the affected package doesn't have a version that uses portable RIDs, the runtime can be configured to perform asset resolution via the old RID graph with version-specific and distro-specific RIDs. Note that the old RID graph is no longer updated and exists only as a backwards compatibility option.
 
 ```xml
 <ItemGroup>

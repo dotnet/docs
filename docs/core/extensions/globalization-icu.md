@@ -28,41 +28,27 @@ Starting with .NET 5, developers have more control over which underlying library
 
 ## ICU on Windows
 
-Windows 10 May 2019 Update and later versions include [icu.dll](/windows/win32/intl/international-components-for-unicode--icu-) as part of the OS, and .NET 5 and later versions use ICU by default. When running on Windows, .NET 5 and later versions try to load `icu.dll` and, if it's available, use it for the globalization implementation. If the ICU library can't be found or loaded, such as when running on older versions of Windows, .NET 5 and later versions fall back to the NLS-based implementation.
+Windows now incorporates a pre-installed [icu.dll](/windows/win32/intl/international-components-for-unicode--icu-) version as part of its features which is automatically employed for globalization tasks. This modification allows .NET to leverage this ICU library for its globalization support. In cases where the ICU library is unavailable or cannot be loaded, as is the case with older Windows versions, .NET 5 and subsequent versions revert to using the NLS-based implementation.
+
+The following table furnishes details regarding which versions of .NET are capable of loading the ICU library across different Windows client and server versions:
+
+.NET Version| Windows Version
+---|---
+.NET 5.0 or .NET 6.0|Windows client 10 version 1903 or later
+.NET 5.0 or .NET 6.0|Windows Server 2022 or later
+.NET 7 or later|Windows client 10 version 1703 or later
+.NET 7 or later|Windows Server 2019 or later
+
+> [!NOTE]
+> .NET 7.0 and later versions have the capability to load ICU on older Windows versions in contrast to .NET 6.0 and .NET 5.0.
 
 > [!NOTE]
 > Even when using ICU, the `CurrentCulture`, `CurrentUICulture`, and `CurrentRegion` members still use Windows operating system APIs to honor user settings.
 
-Users will encounter differences in Globalization behavior when .NET transitions from using NLS APIs to employing the ICU library on Windows systems. This difference will become evident in two situations:
-
-- When they upgrade to .NET 5.0 or later while running on a Windows version that includes a supported ICU library that .NET can utilize.
-- When they upgrade their Windows operating system from a version that lacks a supported ICU library to a version that includes one.
-
-The following tables outline when users will observe these variations:
-
-**Table 1: Instances of Behavior Differences When Upgrading .NET Version**
-
-.NET Version|Upgraded .NET Version|Windows version
----|---|---
-.NET Core 3.1 or earlier|.NET 5.0 or later|Windows 10 version 1903 or later
-.NET Core 3.1 or earlier|.NET 5.0 or later|Windows Server 2022 or later
-.NET Core 6.0 or earlier|.NET 7.0 or later|Windows 10 version 1703
-.NET Core 6.0 or earlier|.NET 7.0 or later|Windows 10 version 1709
-.NET Core 3.1 or earlier|.NET 7.0 or later|Windows Server 2019 or later
-.NET Core 5.0 or 6.0|.NET 7.0 or later|Windows Server 2019
-
-**Table 2: Instances of Behavior Differences When Upgrading Windows Version**
-
-.NET Version|Windows version|Upgraded Windows Version
----|---|---
-.NET 5.0 or .NET 6.0|Windows 10 version 1709 or earlier|Windows 10 version 1903 or later
-.NET 5.0 or .NET 6.0|Windows Server 2019 or earlier|Windows Server 2022 or later
-.NET 7 or later|Windows 10 version 1607 or earlier|Windows 10 version 1703 or later
-.NET 7 or later|Windows Server 2016 or earlier|Windows Server 2019 or later
 
 ### Behavioral differences
 
-If you upgrade your app to target .NET 5, you might see changes in your app even if you don't realize you're using globalization facilities. This section lists one of the behavioral changes you might see, but there are others too.
+If you upgrade your app to target .NET 5 or later, you might see changes in your app even if you don't realize you're using globalization facilities. This section lists one of the behavioral changes you might see, but there are others too.
 
 #### String.IndexOf
 
@@ -76,7 +62,7 @@ Console.WriteLine($"{greeting.IndexOf("\0", StringComparison.Ordinal)}");
 ```
 
 - In .NET Core 3.1 and earlier versions on Windows, the snippet prints `3` on each of the three lines.
-- In .NET 5 and later versions on Windows 19H1 and later versions, the snippet prints `0`, `0`, and `3` (for the ordinal search).
+- For .NET 5 and subsequent versions running on Windows versions mentioned in the [ICU on Windows](#icu-on-windows) section table, the snippet prints `0`, `0`, and `3` (for the ordinal search).
 
 By default, <xref:System.String.IndexOf(System.String)?displayProperty=nameWithType> performs a culture-aware linguistic search. ICU considers the null character `\0` to be a *zero-weight character*, and thus the character isn't found in the string when using a linguistic search on .NET 5 and later. However, NLS doesn't consider the null character `\0` to be a zero-weight character, and a linguistic search on .NET Core 3.1 and earlier locates the character at position 3. An ordinal search finds the character at position 3 on all .NET versions.
 
@@ -95,7 +81,7 @@ ICU provides the flexibility to create <xref:System.TimeZoneInfo> instances usin
 - <xref:System.TimeZoneInfo.TryConvertIanaIdToWindowsId(System.String,System.String@)>
 - <xref:System.TimeZoneInfo.TryConvertWindowsIdToIanaId%2A>
 
-On Windows 10 May 2019 Update or any later versions, the mentioned APIs will consistently succeed. However, on older versions of Windows, these APIs will consistently fail. In such cases, you can enable the [app-local ICU](#app-local-icu) feature to ensure the success of these APIs. On non-Windows platforms, these APIs will always succeed regardless of the version.
+On Windows versions mentioned in the [ICU on Windows](#icu-on-windows) section table, the mentioned APIs will consistently succeed. However, on older versions of Windows, these APIs will consistently fail. In such cases, you can enable the [app-local ICU](#app-local-icu) feature to ensure the success of these APIs. On non-Windows platforms, these APIs will always succeed regardless of the version.
 
 In addition, it's crucial for apps to ensure that they're not running in [globalization invariant mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md) or [NLS mode](#use-nls-instead-of-icu) to guarantee the success of these APIs.
 

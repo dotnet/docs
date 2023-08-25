@@ -73,7 +73,7 @@ Press any key to exit
 ### Best practices
 
 - For code that is not designed for use in a Dependency Injection (DI) container, create the Meter once and store it in a static variable. For usage in DI-aware libraries static variables are
-considered an anti-pattern and the [DI example](#getting-a-meter-via-dependency-injection) below shows a more idiomatic approach. Each library or library subcomponent can
+considered an anti-pattern and the [DI example](#get-a-meter-via-dependency-injection) below shows a more idiomatic approach. Each library or library subcomponent can
 (and often should) create its own <xref:System.Diagnostics.Metrics.Meter>. Consider creating a new Meter rather than reusing an existing one if you anticipate
 app developers would appreciate being able to easily enable and disable the groups of metrics separately.
 

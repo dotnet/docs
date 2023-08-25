@@ -376,11 +376,12 @@ has replaced the generic term "Count" that is visible in previous descriptions.
 
 ### Best practices
 
-- .NET APIs allow any string to be used as the unit, but we recommend using [UCUM](https://ucum.org/), an international standard for unit names. This is also what
-[OpenTelemetry naming guidelines](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/general/metrics.md#instrument-units) recommend. The curly
+- .NET APIs allow any string to be used as the unit, but we recommend using [UCUM](https://ucum.org/), an international standard for unit names. The curly
 braces around "{hats}" is part of the UCUM standard indicating that it is a descriptive annotation rather than a unit name with a standardized meaning like seconds or meters.
 
 - The unit specified in the constructor should describe the units appropriate for an individual measurement. This will sometimes differ from the units on the final metric. In this example, each measurement is a number of hats, so "{hats}" is the appropriate unit to pass in the constructor. The collection tool calculated a rate and derived on its own that the appropriate unit for the calculated metric is {hats}/sec.
+
+- When recording measurements of time, prefer units of seconds recorded as a floating point or double value.
 
 ## Multi-dimensional metrics
 

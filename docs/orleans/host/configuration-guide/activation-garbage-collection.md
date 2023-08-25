@@ -1,7 +1,7 @@
 ---
 title: Activation garbage collection
 description: Learn about activation garbage collection in .NET Orleans.
-ms.date: 05/22/2023
+ms.date: 08/25/2023
 ---
 
 # Activation garbage collection

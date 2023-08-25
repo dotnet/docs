@@ -92,15 +92,13 @@ Starting with .NET 8, the default behavior of the .NET SDK and runtime is to onl
 
 To get information about the platform, use <xref:System.OperatingSystem?displayProperty=nameWithType> APIs. On Windows and macOS, <xref:System.Environment.OSVersion?displayProperty=nameWithType> will [return the operating system version](./compatibility/core-libraries/5.0/environment-osversion-returns-correct-version.md). On Linux, it may be the kernel version &mdash; to get the Linux distro name and version information, the recommended approach is to read the */etc/os-release* file.
 
-.NET provides various extension points for customizing loading logic &mdash; for example, <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver(System.Reflection.Assembly,System.Runtime.InteropServices.DllImportResolver)?displayProperty=nameWithType> and <xref:System.Runtime.Loader.AssemblyLoadContext.ResolvingUnmanagedDll?displayProperty=nameWithType>. These can be used to load the asset corresponding to the current platform.
+.NET provides various extension points for customizing loading logic &mdash; for example, <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver(System.Reflection.Assembly,System.Runtime.InteropServices.DllImportResolver)?displayProperty=nameWithType>, <xref:System.Runtime.Loader.AssemblyLoadContext.ResolvingUnmanagedDll?displayProperty=nameWithType>, <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType>, and <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType>. These can be used to load the asset corresponding to the current platform.
 
 ## Known RIDs
 
 The following list shows a small subset of the most common RIDs used for each OS. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository.
 
 ### Windows RIDs
-
-Only common values are listed. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository.
 
 - `win-x64`
 - `win-x86`
@@ -109,8 +107,6 @@ Only common values are listed. For the latest and complete version, see the [Por
 For more information, see [.NET dependencies and requirements](./install/windows.md#dependencies).
 
 ### Linux RIDs
-
-Only common values are listed. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository.
 
 - `linux-x64` (Most desktop distributions like CentOS, Debian, Fedora, Ubuntu, and derivatives)
 - `linux-musl-x64` (Lightweight distributions using [musl](https://wiki.musl-libc.org/projects-using-musl.html) like Alpine Linux)
@@ -122,7 +118,7 @@ For more information, see [.NET dependencies and requirements](./install/linux.m
 
 ### macOS RIDs
 
-macOS RIDs use the older "OSX" branding. Only common values are listed. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository.
+macOS RIDs use the older "OSX" branding.
 
 - `osx-x64` (Minimum OS version is macOS 10.12 Sierra)
 - `osx-arm64`
@@ -131,13 +127,9 @@ For more information, see [.NET dependencies and requirements](./install/macos.m
 
 ### iOS RIDs
 
-Only common values are listed. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository.
-
 - `ios-arm64`
 
 ### Android RIDs
-
-Only common values are listed. For the latest and complete version, see the [PortableRuntimeIdentifierGraph.json](https://github.com/dotnet/sdk/blob/main/src/Layout/redist/PortableRuntimeIdentifierGraph.json) in the [`dotnet/sdk`](https://github.com/dotnet/sdk) repository.
 
 - `android-arm64`
 

@@ -559,10 +559,10 @@ public class MetricTests
     // a host or some other application setup code to do this as well.
     private static IServiceProvider CreateServiceProvider()
     {
-        ServiceCollection collection = new ServiceCollection();
-        collection.AddMetrics();
-        collection.AddSingleton<HatCoMetrics>();
-        return collection.BuildServiceProvider();
+        var serviceCollection = new ServiceCollection();
+        serviceCollection.AddMetrics();
+        serviceCollection.AddSingleton<HatCoMetrics>();
+        return serviceCollection.BuildServiceProvider();
     }
 }
 ```

@@ -52,7 +52,7 @@ A negative `timeSpan` value means "cancel the previous setting of the `DelayDeac
 
 **Scenarios:**
 
-1. Activation Garbage Collection settings specify an age limit of 10 minutes and the grain is making a call to `DelayDeactivation(TimeSpan.FromMinutes(20)`)`, which causes this activation to not be collected for at least 20 min.
+1. Activation Garbage Collection settings specify an age limit of 10 minutes and the grain is making a call to `DelayDeactivation(TimeSpan.FromMinutes(20))`, which causes this activation to not be collected for at least 20 min.
 
 1. Activation Garbage Collection settings specify an age limit of 10 minutes and the grain is making a call to `DelayDeactivation(TimeSpan.FromMinutes(5))`, the activation will be collected after 10 min, if no extra calls were made.
 

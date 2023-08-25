@@ -92,3 +92,45 @@ mySiloHostBuilder.Configure<GrainCollectionOptions>(options =>
         TimeSpan.FromMinutes(5);
 })
 ```
+
+## Keep alive
+
+To keep a grain alive, you apply the <xref:Orleans.KeepAliveAttribute?displayProperty=fullName> to the grain implementation. This instructs the Orleans runtime to not be collected by the idle activation collector. This is useful for grains that are used infrequently, but you want to keep them alive to avoid any potential creation overhead.
+
+```csharp
+public interface IPlayerGrain : IGrainWithGuidKey
+{
+    Task<IGameGrain> GetCurrentGame();
+    Task JoinGame(IGameGrain game);
+    Task LeaveGame(IGameGrain game);
+}
+
+[KeepAlive]
+public class PlayerGrain : Grain, IPlayerGrain
+{
+    private IGameGrain _currentGame;
+
+    public Task<IGameGrain> GetCurrentGame()
+    {
+       return Task.FromResult(_currentGame);
+    }
+
+    public Task JoinGame(IGameGrain game)
+    {
+       // Omitted for brevity.
+
+       return Task.CompletedTask;
+    }
+
+   public Task LeaveGame(IGameGrain game)
+   {
+       // Omitted for brevity.
+
+       return Task.CompletedTask;
+   }
+}
+```
+
+The preceding code will:
+
+- Prevent the `PlayerGrain` from being collected by the idle activation collector.

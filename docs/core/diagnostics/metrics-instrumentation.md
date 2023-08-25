@@ -78,13 +78,13 @@ considered an anti-pattern and the [DI example](#getting-a-meter-via-dependency-
 app developers would appreciate being able to easily enable and disable the groups of metrics separately.
 
 - The name passed to the <xref:System.Diagnostics.Metrics.Meter> constructor should be unique to distinguish it from other Meters. We recommend
-[OpenTelemetry naming guidelines](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/general/metrics.md#general-guidelines)
-which use dotted hierarchical names. Assembly names or namespace names for code being instrumented are usually a good choice. If an assembly is adding instrumentation
+[OpenTelemetry naming guidelines](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/general/metrics.md#general-guidelines),
+which use dotted hierarchical names. Assembly names or namespace names for code being instrumented are usually a good choice. If an assembly adds instrumentation
 for code in a second, independent assembly, the name should be based on the assembly that defines the Meter, not the assembly whose code is being instrumented.
 
 - .NET doesn't enforce any naming scheme for Instruments, but we recommend following
-[OpenTelemetry naming guidelines](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/general/metrics.md#general-guidelines) which use dotted hierarchical names
-and an '_' as the separator between multiple words in the same element. Beware that not all metric tools preserve the Meter name as part of the final metric name so it is beneficial
+[OpenTelemetry naming guidelines](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/general/metrics.md#general-guidelines), which use dotted hierarchical names
+and an underscore ('_') as the separator between multiple words in the same element. Not all metric tools preserve the Meter name as part of the final metric name, so it's beneficial
 to make the instrument name globally unique on its own.
 
 - The APIs to create instruments and record measurements are thread-safe. In .NET libraries, most instance methods require synchronization when
@@ -119,14 +119,14 @@ Press p to pause, r to resume, q to quit.
 
 As expected, you can see that HatCo store is steadily selling 4 hats each second.
 
-## Getting a Meter via Dependency Injection
+## Get a Meter via dependency injection
 
-In the example above we obtained the Meter by constructing it with `new` and assigning it to a static field. Using statics this way is not a good approach when using Dependency
-Injection (DI). In code that uses DI such as ASP.NET Core, or apps with [Generic Host](../extensions/generic-host.md) create the Meter object using
-<xref:System.Diagnostics.Metrics.IMeterFactory>. Starting in .NET 8 hosts will automatically register <xref:System.Diagnostics.Metrics.IMeterFactory> in the service container
+In the previous example, the Meter was obtained by constructing it with `new` and assigning it to a static field. Using statics this way is not a good approach when using dependency
+injection (DI). In code that uses DI, such as ASP.NET Core or apps with [Generic Host](../extensions/generic-host.md), create the Meter object using
+<xref:System.Diagnostics.Metrics.IMeterFactory>. Starting in .NET 8, hosts will automatically register <xref:System.Diagnostics.Metrics.IMeterFactory> in the service container
 or you can manually register the type in any <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> by calling <xref:Microsoft.Extensions.DependencyInjection.MetricsServiceExtensions.AddMetrics%2A>.
-The meter factory integrates metrics with DI, keeping Meters in different service collections isolated from each other even if they are using an identical name. This is
-especially useful for testing so that multiple tests running in parallel will only observe measurements produced from within the same test case.
+The meter factory integrates metrics with DI, keeping Meters in different service collections isolated from each other even if they use an identical name. This is
+especially useful for testing so that multiple tests running in parallel only observe measurements produced from within the same test case.
 
 To obtain a Meter in a type designed for DI, add an <xref:System.Diagnostics.Metrics.IMeterFactory> parameter to the constructor, then call
 <xref:System.Diagnostics.Metrics.MeterFactoryExtensions.Create%2A>. This example shows adding IMeterFactory to an ASP.NET Core MVC controller type:
@@ -172,7 +172,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSingleton<HatCoMetrics>();
 ```
 
-Inject the metrics type and record values where needed. Because the metrics type is registered in DI it can be used with MVC controllers, minimal APIs, or any other type that is created by DI:
+Inject the metrics type and record values where needed. Because the metrics type is registered in DI, it can be used with MVC controllers, minimal APIs, or any other type that is created by DI:
 
 ```cs
 app.MapPost("/complete-sale", ([FromBody] SaleModel model, HatCoMetrics metrics) =>
@@ -525,14 +525,14 @@ Press p to pause, r to resume, q to quit.
 > [!NOTE]
 > OpenTelemetry refers to tags as 'attributes'. These are two different names for the same functionality.
 
-## Testing custom metrics
+## Test custom metrics
 
 Its possible to test any custom metrics you add using <xref:Microsoft.Extensions.Telemetry.Testing.Metering.MetricCollector%601>. This type makes it easy to record the measurements
 from specific instruments and assert the values were correct.
 
-### Testing with Dependency Injection
+### Test with dependency injection
 
-An example test case for code components that use Dependency Injection and IMeterFactory:
+The following code shows an example test case for code components that use dependency injection and IMeterFactory.
 
 ```csharp
 public class MetricTests
@@ -569,7 +569,7 @@ public class MetricTests
 
 Each MetricCollector object records all measurements for one Instrument. If you need to verify measurements from multiple instruments, create one MetricCollector for each one.
 
-### Testing without Dependency Injection
+### Test without dependency injection
 
 It is also possible to test code that uses a shared global Meter object in a static field, but make sure such tests are configured not to run in parallel. Because the
 Meter object is being shared, MetricCollector in one test will observe the measurements created from any other tests running in parallel.

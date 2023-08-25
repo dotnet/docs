@@ -129,23 +129,9 @@ The meter factory integrates metrics with DI, keeping Meters in different servic
 especially useful for testing so that multiple tests running in parallel only observe measurements produced from within the same test case.
 
 To obtain a Meter in a type designed for DI, add an <xref:System.Diagnostics.Metrics.IMeterFactory> parameter to the constructor, then call
-<xref:System.Diagnostics.Metrics.MeterFactoryExtensions.Create%2A>. This example shows adding IMeterFactory to an ASP.NET Core MVC controller type:
+<xref:System.Diagnostics.Metrics.MeterFactoryExtensions.Create%2A>. This example shows using IMeterFactory in an ASP.NET Core app.
 
-```cs
-public class HatStoreController : Controller
-{
-    private readonly Counter<int> _hatsSold;
-
-    public HatStoreController(IMeterFactory meterFactory)
-    {
-        var meter = meterFactory.Create("HatCo.Store");
-        _hatsSold = meter.CreateCounter<int>("hatco.store.hats_sold");
-        // Other methods in this class can now use the _hatsSold counter to increment the count.
-    }
-```
-
-Instead of adding the `IMeterFactory` to an existing type, you could also create a new type dedicated to managing some metrics. This pattern has a better separation of concerns
-in exchange for being a bit more verbose.
+Define a type to hold the instruments:
 
 ```cs
 public class HatCoMetrics
@@ -256,7 +242,7 @@ class Program
 {
     static Meter s_meter = new Meter("HatCo.Store");
     static Counter<int> s_hatsSold = s_meter.CreateCounter<int>("hatco.store.hats_sold");
-    static Histogram<int> s_orderProcessingTimeMs = s_meter.CreateHistogram<int>("hatco.store.order_processing_time");
+    static Histogram<double> s_orderProcessingTime = s_meter.CreateHistogram<double>("hatco.store.order_processing_time");
     static int s_coatsSold;
     static int s_ordersPending;
 
@@ -283,7 +269,7 @@ class Program
             s_ordersPending = s_rand.Next(0, 20);
 
             // Last we pretend that we measured how long it took to do the transaction (for example we could time it with Stopwatch)
-            s_orderProcessingTimeMs.Record(s_rand.Next(5, 15));
+            s_orderProcessingTime.Record(s_rand.Next(0.005, 0.015));
         }
     }
 }
@@ -297,13 +283,13 @@ Press p to pause, r to resume, q to quit.
     Status: Running
 
 [HatCo.Store]
-    hatco.store.coats_sold (Count / 1 sec)            30
-    hatco.store.hats_sold (Count / 1 sec)             40
+    hatco.store.coats_sold (Count / 1 sec)                                27
+    hatco.store.hats_sold (Count / 1 sec)                                 36
     hatco.store.order_processing_time
-        Percentile=50                                125
-        Percentile=95                                146
-        Percentile=99                                146
-    hatco.store.orders_pending                         3
+        Percentile=50                                                      0.012
+        Percentile=95                                                      0.014
+        Percentile=99                                                      0.014
+    hatco.store.orders_pending                                             5
 ```
 
 This example uses some randomly generated numbers so your values will vary a bit. You can see that `hatco.store.hats_sold` (the Counter) and
@@ -359,7 +345,7 @@ class Program
 {
     static Meter s_meter = new Meter("HatCo.Store");
     static Counter<int> s_hatsSold = s_meter.CreateCounter<int>(name: "hatco.store.hats_sold",
-                                                                unit: "Hats",
+                                                                unit: "{hats}",
                                                                 description: "The number of hats sold in our store");
 
     static void Main(string[] args)
@@ -382,15 +368,19 @@ Press p to pause, r to resume, q to quit.
     Status: Running
 
 [HatCo.Store]
-    hatco.store.hats_sold (Hats / 1 sec)           40
+    hatco.store.hats_sold ({hats} / 1 sec)                                40
 ```
 
-dotnet-counters doesn't currently use the description text in the UI, but it does show the unit when it is provided. In this case, you see "Hats"
+dotnet-counters doesn't currently use the description text in the UI, but it does show the unit when it is provided. In this case, you see "{hats}"
 has replaced the generic term "Count" that is visible in previous descriptions.
 
 ### Best practices
 
-The unit specified in the constructor should describe the units appropriate for an individual measurement. This will sometimes differ from the units on the final metric. In this example, each measurement is a number of hats, so "Hats" is the appropriate unit to pass in the constructor. The collection tool calculated a rate and derived on its own that the appropriate unit for the calculated metric is Hats/sec.
+- .NET APIs allow any string to be used as the unit, but we recommend using [UCUM](https://ucum.org/), an international standard for unit names. This is also what
+[OpenTelemetry naming guidelines](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/general/metrics.md#instrument-units) recommend. The curly
+braces around "{hats}" is part of the UCUM standard indicating that it is a descriptive annotation rather than a unit name with a standardized meaning like seconds or meters.
+
+- The unit specified in the constructor should describe the units appropriate for an individual measurement. This will sometimes differ from the units on the final metric. In this example, each measurement is a number of hats, so "{hats}" is the appropriate unit to pass in the constructor. The collection tool calculated a rate and derived on its own that the appropriate unit for the calculated metric is {hats}/sec.
 
 ## Multi-dimensional metrics
 
@@ -403,8 +393,8 @@ Counter and Histogram tags can be specified in overloads of the <xref:System.Dia
 
 ```csharp
 s_hatsSold.Add(2,
-               new KeyValuePair<string, object>("Color", "Red"),
-               new KeyValuePair<string, object>("Size", 12));
+               new KeyValuePair<string, object>("product.color", "red"),
+               new KeyValuePair<string, object>("product.size", 12));
 
 ```
 
@@ -426,14 +416,14 @@ class Program
         Console.WriteLine("Press any key to exit");
         while(!Console.KeyAvailable)
         {
-            // Pretend our store has a transaction, every 100ms, that sells 2 (size 12) red hats, and 1 (size 19) blue hat.
+            // Pretend our store has a transaction, every 100ms, that sells two size 12 red hats, and one size 19 blue hat.
             Thread.Sleep(100);
             s_hatsSold.Add(2,
-                           new KeyValuePair<string,object>("Color", "Red"),
-                           new KeyValuePair<string,object>("Size", 12));
+                           new KeyValuePair<string,object>("product.color", "red"),
+                           new KeyValuePair<string,object>("product.size", 12));
             s_hatsSold.Add(1,
-                           new KeyValuePair<string,object>("Color", "Blue"),
-                           new KeyValuePair<string,object>("Size", 19));
+                           new KeyValuePair<string,object>("product.color", "blue"),
+                           new KeyValuePair<string,object>("product.size", 19));
         }
     }
 }
@@ -447,8 +437,8 @@ Press p to pause, r to resume, q to quit.
 
 [HatCo.Store]
     hatco.store.hats_sold (Count / 1 sec)
-        Color=Blue,Size=19                             9
-        Color=Red,Size=12                             18
+        product.color=blue,product.size=19                                 9
+        product.color=red,product.size=12                                 18
 
 ```
 
@@ -476,9 +466,9 @@ class Program
         return new Measurement<int>[]
         {
             // pretend these measurements were read from a real queue somewhere
-            new Measurement<int>(6, new KeyValuePair<string,object>("Country", "Italy")),
-            new Measurement<int>(3, new KeyValuePair<string,object>("Country", "Spain")),
-            new Measurement<int>(1, new KeyValuePair<string,object>("Country", "Mexico")),
+            new Measurement<int>(6, new KeyValuePair<string,object>("customer.country", "Italy")),
+            new Measurement<int>(3, new KeyValuePair<string,object>("customer.country", "Spain")),
+            new Measurement<int>(1, new KeyValuePair<string,object>("customer.country", "Mexico")),
         };
     }
 }
@@ -492,15 +482,18 @@ Press p to pause, r to resume, q to quit.
 
 [HatCo.Store]
     hatco.store.orders_pending
-        Country=Italy                                  6
-        Country=Mexico                                 1
-        Country=Spain                                  3
+        customer.country=Italy                                             6
+        customer.country=Mexico                                            1
+        customer.country=Spain                                             3
 ```
 
 ### Best practices
 
 - Although the API allows any object to be used as the tag value, numeric types and strings are anticipated by collection tools. Other types may or may not be
   supported by a given collection tool.
+
+- We recommend tag names use lowercase dotted hierarichal names with '_' characters to separate multiple words in the same element. If tag names are
+  reused in different metrics or other telemetry records then they should have the same meaning and set of legal values everywhere they are used.
 
 - Beware of having very large or unbounded combinations of tag values being recorded in practice. Although the .NET API implementation can handle it, collection tools will
   likely allocate storage for metric data associated with each tag combination and this could become very large. For example, it's fine if HatCo has 10 different

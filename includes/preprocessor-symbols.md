@@ -12,4 +12,5 @@ ms.custom: "updateeachrelease"
 > * Versionless symbols are defined regardless of the version you're targeting.
 > * Version-specific symbols are only defined for the version you're targeting.
 > * The `<framework>_OR_GREATER` symbols are defined for the version you're targeting and all earlier versions. For example, if you're targeting .NET Framework 2.0, the following symbols are defined: `NET20`, `NET20_OR_GREATER`, `NET11_OR_GREATER`, and `NET10_OR_GREATER`.
+> * The `NETSTANDARD<x>_<y>_OR_GREATER` symbols are only defined for .NET Standard targets, and not for targets that implement .NET Standard, such as .NET Core and .NET Framework.
 > * These are different from the target framework monikers (TFMs) used by [the MSBuild `TargetFramework` property](../docs/standard/frameworks.md#supported-target-frameworks) and [NuGet](/nuget/reference/target-frameworks).

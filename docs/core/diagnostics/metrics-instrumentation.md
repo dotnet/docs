@@ -7,7 +7,7 @@ ms.date: 11/04/2021
 
 # Creating Metrics
 
-**This article applies to: ✔️** .NET Core 3.1 and later versions **✔️** .NET Framework 4.6.1 and later versions
+**This article applies to: ✔️** .NET Core 6 and later versions **✔️** .NET Framework 4.6.1 and later versions
 
 .NET applications can be instrumented using the <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> APIs to track
 important metrics. Some metrics are included in standard .NET libraries, but you may want to add new custom metrics that are relevant for
@@ -19,7 +19,7 @@ your applications and libraries. In this tutorial, you will add new metrics and 
 
 ## Create a custom metric
 
-**Prerequisites**: [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
+**Prerequisites**: [.NET Core 6 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
 
 Create a new console application that references the [System.Diagnostics.DiagnosticSource NuGet package](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/)
 version 8 or greater. Applications that target .NET 8+ include this reference by default. Then, update the code in `Program.cs` to match:

@@ -46,16 +46,22 @@ Names can be added to delegate parameters like so:
 type WinEventDelegate = delegate of hWinEventHook:nativeint * eventType:uint32 * hWnd:nativeint * idObject:int * idChild:int * dwEventThread:uint32 * dwmsEventTime:uint32 -> unit
 ```
 
-Delegate parameter names are optional and will be shown in the `Invoke` method. They are only allowed for the curried form but not the tupled form.
+Delegate parameter names are optional and will be shown in the `Invoke` method. They are not required to match the implementation names. They are only allowed for the curried form but not the tupled form.
 
 ```fs
 type D1 = delegate of item1: int * item2: string -> unit
-let a = D1(fun item1 item2 -> ())
+let a = D1(fun a b -> printf "%s" b)
 a.Invoke(item2 = "a", item1 = 1) // Calling with named arguments
 
 type D2 = delegate of int * item2: string -> unit // Omitting one name
-let b = D2(fun item1 item2 -> ())
+let b = D2(fun a b -> printf "%s" b)
 b.Invoke(1, item2 = "a")
+```
+
+The output of the previous code example is as follows.
+
+```console
+aa
 ```
 
 ## See also

@@ -46,7 +46,7 @@ Names can be added to delegate parameters like so:
 type WinEventDelegate = delegate of hWinEventHook:nativeint * eventType:uint32 * hWnd:nativeint * idObject:int * idChild:int * dwEventThread:uint32 * dwmsEventTime:uint32 -> unit
 ```
 
-Names are optional and will be shown in the `Invoke` method. They are only allowed for the curried form but not the tupled form.
+Delegate parameter names are optional and will be shown in the `Invoke` method. They are only allowed for the curried form but not the tupled form.
 
 ```fs
 type D1 = delegate of item1: int * item2: string -> unit

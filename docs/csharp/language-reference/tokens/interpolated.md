@@ -1,7 +1,7 @@
 ---
 title: "$ - string interpolation - format string output"
 description: String interpolation using the `$` token provides a more readable and convenient syntax to format string output than traditional string composite formatting.
-ms.date: 11/29/2022
+ms.date: 08/28/2023
 f1_keywords:
     - "$_CSharpKeyword"
     - "$"

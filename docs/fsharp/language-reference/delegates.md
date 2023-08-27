@@ -2,7 +2,7 @@
 title: Delegates in F#
 titleSuffix: ""
 description: Learn how to work with delegates in F#.
-ms.date: 05/16/2016
+ms.date: 08/27/2023
 ---
 # Delegates (F#)
 
@@ -37,6 +37,25 @@ aaaaa
 bbbbb
 ccccc
 [|"aaa"; "bbb"|]
+```
+
+Names can be added to delegate parameters like so:
+
+```fs
+// http://www.pinvoke.net/default.aspx/user32/WinEventDelegate.html
+type WinEventDelegate = delegate of hWinEventHook:nativeint * eventType:uint32 * hWnd:nativeint * idObject:int * idChild:int * dwEventThread:uint32 * dwmsEventTime:uint32 -> unit
+```
+
+Names are optional and will be shown in the `Invoke` method. They are only allowed for the curried form but not the tupled form.
+
+```fs
+type D1 = delegate of item1: int * item2: string -> unit
+let a = D1(fun item1 item2 -> ())
+a.Invoke(item2 = "a", item1 = 1) // Calling with named arguments
+
+type D2 = delegate of int * item2: string -> unit // Omitting one name
+let b = D2(fun item1 item2 -> ())
+b.Invoke(1, item2 = "a")
 ```
 
 ## See also

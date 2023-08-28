@@ -459,6 +459,12 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
+    directory: "/docs/core/tutorials/snippets/library-with-visual-studio/csharp/StringLibraryTestNet8" #StringLibraryTest.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
     directory: "/docs/core/tutorials/snippets/library-with-visual-studio/vb/StringLibraryTest" #StringLibraryTest.vbproj
     schedule:
       interval: "weekly"
@@ -1197,7 +1203,7 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/vb" #encryptxml.vbproj
+    directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementSymmetric/vb" #encryptxml.vbproj
     schedule:
       interval: "weekly"
       day: "wednesday"

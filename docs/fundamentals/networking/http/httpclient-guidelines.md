@@ -54,7 +54,7 @@ For more information about managing `HttpClient` lifetime with `IHttpClientFacto
 
 ## Resilience policies with static clients
 
-It is possible to configure a `static` or *singleton* client to use any number of resilience policies using the following pattern:
+It's possible to configure a `static` or *singleton* client to use any number of resilience policies using the following pattern:
 
 ```csharp
 var retryPolicy = HttpPolicyExtensions

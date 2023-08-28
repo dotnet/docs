@@ -17,7 +17,7 @@ The `System.Configuration.ConfigurationManager` package referenced the `System.S
 
 ## New behavior
 
-Starting in .NET 8, the `System.Configuration.ConfigurationManager` package *does not reference* the `System.Security.Permissions` package.
+Starting in .NET 8, the `System.Configuration.ConfigurationManager` package *does not* reference the `System.Security.Permissions` package.
 
 ## Type of breaking change
 
@@ -30,10 +30,10 @@ This change avoids a dependency on `System.Drawing.Common` when `System.Configur
 The dependency on `System.Drawing.Common` was caused by the following package dependencies:
 
 ```txt
-System.Configuration.ConfigurationManager ->
-System.Security.Permissions ->
-System.Windows.Extensions ->
-System.Drawing.Common
+System.Configuration.ConfigurationManager
+└──System.Security.Permissions
+    └──System.Windows.Extensions
+        └──System.Drawing.Common
 ```
 
 ## Recommended action

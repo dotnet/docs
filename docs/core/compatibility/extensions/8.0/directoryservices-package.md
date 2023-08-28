@@ -17,7 +17,7 @@ The `System.DirectoryServices` package referenced the `System.Security.Permissio
 
 ## New behavior
 
-Starting in .NET 8, the `System.DirectoryServices` package *does not reference* the `System.Security.Permissions` package.
+Starting in .NET 8, the `System.DirectoryServices` package *does not* reference the `System.Security.Permissions` package.
 
 ## Type of breaking change
 
@@ -30,10 +30,10 @@ This change avoids a dependency on `System.Drawing.Common` when `System.Director
 The dependency on `System.Drawing.Common` was caused by the following package dependencies:
 
 ```txt
-System.DirectoryServices ->
-System.Security.Permissions ->
-System.Windows.Extensions ->
-System.Drawing.Common
+System.DirectoryServices
+ └──System.Security.Permissions
+      └──System.Windows.Extensions
+           └──System.Drawing.Common
 ```
 
 ## Recommended action

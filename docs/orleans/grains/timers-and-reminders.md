@@ -76,7 +76,7 @@ var silo = new HostBuilder()
     {
         builder.UseAdoNetReminderService(options =>
         {
-            options.ConnectionString = connectionString;
+            options.ConnectionString = connectionString; // Redacted
             options.Invariant = invariant;
         });
     })
@@ -109,7 +109,10 @@ Task IRemindable.ReceiveReminder(string reminderName, TickStatus status)
  To start a reminder, use the <xref:Orleans.Grain.RegisterOrUpdateReminder%2A?displayProperty=nameWithType> method, which returns an <xref:Orleans.Runtime.IGrainReminder> object:
 
 ```csharp
-protected Task<IGrainReminder> RegisterOrUpdateReminder(string reminderName, TimeSpan dueTime, TimeSpan period)
+protected Task<IGrainReminder> RegisterOrUpdateReminder(
+    string reminderName,
+    TimeSpan dueTime,
+    TimeSpan period)
 ```
 
 * `reminderName`: is a string that must uniquely identify the reminder within the scope of the contextual grain.
@@ -148,3 +151,23 @@ We recommend that you use reminders in the following circumstances:
 ## Combine timers and reminders
 
 You might consider using a combination of reminders and timers to accomplish your goal. For example, if you need a timer with a small resolution that needs to survive across activations, you can use a reminder that runs every five minutes, whose purpose is to wake up a grain that restarts a local timer that may have been lost due to deactivation.
+
+## POCO grain registrations
+
+To register a timer or reminder with [a POCO grain](../migration-guide.md#poco-grains-and-igrainbase), you implement the <xref:Orleans.IGrainBase> interface and inject the <xref:Orleans.Timers.ITimerRegistry> or <xref:Orleans.Timers.IReminderRegistry> into the grain's constructor.
+
+```csharp
+public sealed class PingGrain : IGrainBase, IPingGrain
+{
+    private readonly ITimerRegistry _timerRegistry;
+    private readonly IReminderRegistry _reminderRegistry;
+
+    public PingGrain(ITimerRegistry timerRegistry, IReminderRegistry reminderRegistry)
+    {
+        _timerRegistry = timerRegistry;
+        _reminderRegistry = reminderRegistry;
+    }
+
+    // Omitted for brevity...
+}
+```

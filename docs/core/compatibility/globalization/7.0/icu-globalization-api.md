@@ -5,11 +5,11 @@ ms.date: 09/01/2022
 ---
 # Globalization APIs use ICU libraries on Windows Server 2019
 
-.NET 7 and later versions use [International Components for Unicode (ICU)](https://icu.unicode.org/) libraries for globalization functionality when running on Windows Server 2019. Non-server editions of Windows have been [using ICU since .NET 5](../5.0/icu-globalization-api.md). However, .NET 7.0 will introduce support for loading ICU in earlier Windows client versions, specifically Windows 10 versions 1703, 1709, 1803, and 1809.
+.NET 7 and later versions use [International Components for Unicode (ICU)](https://icu.unicode.org/) libraries for globalization functionality when running on Windows Server 2019. Non-server editions of Windows have been [using ICU since .NET 5](../5.0/icu-globalization-api.md). However, .NET 7 introduced support for loading ICU in earlier Windows client versions, specifically Windows 10 versions 1703, 1709, 1803, and 1809.
 
 ## Previous behavior
 
-In .NET 5 and .NET 6, the .NET libraries used [National Language Support (NLS)](/windows/win32/intl/national-language-support) APIs for globalization functionality on Windows Server 2019. For example, NLS functions were used to compare strings, get culture information, and perform string casing in the appropriate culture. This identical behavior is also applicable to Windows 10 client versions such as versions 1703, 1709, 1803, and 1809.
+In .NET 5 and .NET 6, the .NET libraries used [National Language Support (NLS)](/windows/win32/intl/national-language-support) APIs for globalization functionality on Windows Server 2019. For example, NLS functions were used to compare strings, get culture information, and perform string casing in the appropriate culture. This behavior also applied to Windows 10 client versions, such as 1703, 1709, 1803, and 1809.
 
 ## New behavior
 
@@ -43,7 +43,7 @@ string text = string.Format("{0:C}", 100);
 
 ## Recommended action
 
-If you're using .NET 7.0 on Windows Server 2019 or Windows 10 client versions 1703, 1709, 1803, and 1809, we recommend testing your app or service before shipping it to ensure the behavior is as expected and doesn't break any users.
+If you're using .NET 7 on Windows Server 2019 or Windows 10 client versions 1703, 1709, 1803, or 1809, we recommend testing your app or service before shipping it to ensure the behavior is as expected and doesn't break any users.
 
 If you wish to continue using NLS globalization APIs, you can set a [run-time switch](../../../runtime-config/globalization.md#nls) to revert to that behavior. For more information about the available switches, see the [.NET globalization and ICU](../../../../core/extensions/globalization-icu.md) article.
 

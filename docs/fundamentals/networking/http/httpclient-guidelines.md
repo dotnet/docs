@@ -52,6 +52,22 @@ To summarize recommended `HttpClient` use in terms of lifetime management, you s
 
 For more information about managing `HttpClient` lifetime with `IHttpClientFactory`, see [`IHttpClientFactory` guidelines](../../../core/extensions/httpclient-factory.md#httpclient-lifetime-management).
 
+## Resilience policies with static clients
+
+It is possible to configure a `static` or *singleton* client to use any number of resilience policies using the following pattern:
+
+```csharp
+var retryPolicy = HttpPolicyExtensions
+    .HandleTransientHttpError()
+    .WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)));
+
+var socketHandler = new SocketsHttpHandler { PooledConnectionLifetime = TimeSpan.FromMinutes(15) };
+var pollyHandler = new PolicyHttpMessageHandler(retryPolicy);
+pollyHandler.InnerHandler = socketHandler;
+
+var httpClient = new HttpClient(pollyHandler);
+```
+
 ## See also
 
 - [HTTP support in .NET](http-overview.md)

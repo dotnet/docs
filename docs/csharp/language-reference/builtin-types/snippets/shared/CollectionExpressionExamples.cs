@@ -25,7 +25,7 @@ public class LineBuffer : IEnumerable<char>
 
     // etc
 }
-// <BufferDeclaration>
+// </BufferDeclaration>
 
 // <BuilderClass>
 internal static class LineBufferBuilder
@@ -40,7 +40,7 @@ public class CollectionExpressionExamples
     {
         // <CustomBuilderUsage>
         LineBuffer line = [ 'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!' ];
-        // <CustomBuilderUsage>
+        // </CustomBuilderUsage>
         IEnumerator<char> iter = line.GetEnumerator();
         while (iter.MoveNext())
         {

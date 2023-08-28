@@ -1,5 +1,5 @@
 ---
-title: "Collection expressions"
+title: "Collection expressions (Collection literals)"
 description: Collection expressions are expressions that convert to many different collection types. They enable you to write literal values for collection elements, or import other collection elements into a new collection.
 ms.date: 08/25/2023
 helpviewer_keywords:
@@ -11,7 +11,7 @@ You can use a *collection expression* to create common collection values. A *col
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="FirstCollectionExpression":::
 
-A *collection expression* can be converted to many different collection types. You can use collection expressions in a variety of locations in your code. The first example demonstrated how to initialize a variable using a collection expression. The following code shows many of the other locations where you can use a collection expression:
+A *collection expression* can be converted to many different collection types. The first example demonstrated how to initialize a variable using a collection expression. The following code shows many of the other locations where you can use a collection expression:
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="CompileTimeExpressions":::
 
@@ -36,19 +36,19 @@ A *collection expression* can be converted to different collection types, includ
 - <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>
 - [inline arrays](struct.md#inline-arrays)
 - [arrays](arrays.md)
-- Any type with a *create* method whose parameter type is `ReadOnlySpan<T>` where there is an implicit conversion from the collection expression type to `T`.
-- Any type that supports a [collection initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers#collection-initializers), such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. In general, this means the type supports <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> and there is an accessible `Add` method to add items to the collection. The must be an implicit conversion from the collection expression elements' type to the collection's element type. For spread elements, there must be an implicit conversion from the spread element's element type to the collection's element type.
+- Any type with a *create* method whose parameter type is `ReadOnlySpan<T>` where there's an implicit conversion from the collection expression type to `T`.
+- Any type that supports a [collection initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md#collection-initializers), such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. Usually, this requirement means the type supports <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> and there's an accessible `Add` method to add items to the collection. There must be an implicit conversion from the collection expression elements' type to the collection's element type. For spread elements, there must be an implicit conversion from the spread element's element type to the collection's element type.
 
 Many APIs are overloaded with multiple collection types as parameters. Because a collection expression can be converted to many different expression types, these APIs may require casts on the collection expression to specify the correct conversion. The following conversion rules resolve some of the ambiguities:
 
 - Conversion to <xref:System.Span%601>, <xref:System.ReadOnlySpan%601> or another [`ref struct`](./ref-struct.md) type is better than a conversion to a non-ref struct type.
-- Conversion to a non-interface type is better than a conversion to an interface type.
+- Conversion to a noninterface type is better than a conversion to an interface type.
 
 When a collection expression is converted to a `Span` or `ReadOnlySpan`, the span object's *safe context* is taken from the *safe context* of all elements included in the span. For detailed rules, see the [Collection expression specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md#ref-safety).
 
 ## Collection builder
 
-A type opts in to collection expression support by writing a `Create()` method and applying the <xref:System.Runtime.CompilerServices.CollectionBuilderAttribute?displayProperty=fullName> on the collection type to indicate the builder method. For example, consider an application that uses fixed length buffers of 80 characters. That class might look something like the following:
+A type opts in to collection expression support by writing a `Create()` method and applying the <xref:System.Runtime.CompilerServices.CollectionBuilderAttribute?displayProperty=fullName> on the collection type to indicate the builder method. For example, consider an application that uses fixed length buffers of 80 characters. That class might look something like the following code:
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="BufferDeclaration":::
 

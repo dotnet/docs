@@ -62,8 +62,10 @@ var retryPolicy = HttpPolicyExtensions
     .WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)));
 
 var socketHandler = new SocketsHttpHandler { PooledConnectionLifetime = TimeSpan.FromMinutes(15) };
-var pollyHandler = new PolicyHttpMessageHandler(retryPolicy);
-pollyHandler.InnerHandler = socketHandler;
+var pollyHandler = new PolicyHttpMessageHandler(retryPolicy)
+{
+    InnerHandler = socketHandler;
+};
 
 var httpClient = new HttpClient(pollyHandler);
 ```

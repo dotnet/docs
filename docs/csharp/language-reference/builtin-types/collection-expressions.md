@@ -5,7 +5,7 @@ ms.date: 08/25/2023
 helpviewer_keywords:
   - "Collection expressions"
 ---
-# Collection expressions
+# Collection expressions - C# language reference
 
 You can use a *collection expression* to create common collection values. A *collection expression* is a terse syntax that, when evaluated, can be assigned to many different collection types. A collection expression contains a sequence of elements between `[` and `]` brackets. The following example declares a <xref:System.Span%601?displayProperty=nameWithType> of `string` elements and initializes them to the days of the week:
 

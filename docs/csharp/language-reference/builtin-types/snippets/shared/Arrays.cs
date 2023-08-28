@@ -238,7 +238,7 @@
         // </TrulyJagged>
     }
 
-    static void ArraysWithLINQ()
+    public static void ArraysWithLINQ()
     {
         //<LINQAndArrays>
         var a = new[] { 1, 10, 100, 1000 }; // int[]

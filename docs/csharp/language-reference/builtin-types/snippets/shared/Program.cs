@@ -5,7 +5,14 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("============ Array type =========");
+        TestArraysClass.SingleDimensionalArrays();
+        TestArraysClass.MultiDimensionalArrays();
+        TestArraysClass.ForEachMultiDim();
         TestArraysClass.ForMultiDimension();
+        TestArraysClass.JaggedArrayDeclaration();
+        TestArraysClass.DifferentSizeJagged();
+        TestArraysClass.ArraysWithLINQ();
+
         Console.WriteLine("======== Unmanaged types =========");
         UnmanagedTypes.Main();
         Console.WriteLine();
@@ -52,6 +59,10 @@ class Program
 
         Console.WriteLine("====== Native integer types ======");
         NativeIntegerTypes.Examples();
+        Console.WriteLine();
+
+        Console.WriteLine("============ Collection expressions =================");
+        CollectionExpressionExamples.Examples();
         Console.WriteLine();
     }
 }

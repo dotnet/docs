@@ -228,6 +228,8 @@ The following example demonstrates the effect of using all the ranges presented 
 
 For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
 
+The `..` token is also used as the [spread operator](../builtin-types/collection-expressions.md#spread-element) in a collection expression.
+
 ## Operator overloadability
 
 The `.`, `()`, `^`, and `..` operators can't be overloaded. The `[]` operator is also considered a non-overloadable operator. Use [indexers](../../programming-guide/indexers/index.md) to support indexing with user-defined types.

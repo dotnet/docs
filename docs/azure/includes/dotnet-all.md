@@ -274,7 +274,7 @@
 | IoT Edge Function | NuGet [3.5.3](https://www.nuget.org/packages/Microsoft.Azure.IoT.Edge.Function/3.5.3) |  |  |
 | IoT Models Repository | NuGet [1.0.0-preview.5](https://www.nuget.org/packages/Azure.IoT.ModelsRepository/1.0.0-preview.5) |  |  |
 | Microsoft.Azure.Devices.Authentication | NuGet [2.0.0-preview001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Authentication/2.0.0-preview001) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Kusto | NuGet [1.0.7-Preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kusto/1.0.7-Preview) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Kusto | NuGet [1.0.8-Preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kusto/1.0.8-Preview) |  |  |
 | Microsoft.Azure.IoT.Edge.Module | NuGet [3.2.0](https://www.nuget.org/packages/Microsoft.Azure.IoT.Edge.Module/3.2.0) |  |  |
 | Microsoft.Azure.WebJobs.CosmosDb.ChangeProcessor | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.ChangeProcessor/1.0.4) |  |  |
 | Microsoft.Azure.WebPubSub.AspNetCore | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.AspNetCore/1.1.0) |  |  |
@@ -473,7 +473,7 @@
 | Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.2.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.2.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Generators | NuGet [1.1.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Generators/1.1.1) |  |  |
 | Microsoft.Azure.WebJobs.CosmosDb.Mongo | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.Mongo/1.0.4) |  |  |
-| Microsoft.Azure.WebJobs.Extensions.Kusto | NuGet [1.0.7-Preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kusto/1.0.7-Preview) |  |  |
+| Microsoft.Azure.WebJobs.Extensions.Kusto | NuGet [1.0.8-Preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kusto/1.0.8-Preview) |  |  |
 | Service Bus - Message ID plugin | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.MessageIdPlugin/2.0.0) |  |  |
 | SQL Database Elastic Scale Client | NuGet [2.3.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/2.3.0)<br>NuGet [2.4.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/2.4.0-preview1) |  | GitHub [2.3.0](https://github.com/Azure/elastic-db-tools/tree/v2.3.0/Src/ElasticScale.Client) |
 | SQL Database Elastic Scale Service SplitMerge | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Service.SplitMerge/1.2.0) |  |  |

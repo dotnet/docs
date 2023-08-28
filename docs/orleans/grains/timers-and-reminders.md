@@ -156,18 +156,11 @@ You might consider using a combination of reminders and timers to accomplish you
 
 To register a timer or reminder with [a POCO grain](../migration-guide.md#poco-grains-and-igrainbase), you implement the <xref:Orleans.IGrainBase> interface and inject the <xref:Orleans.Timers.ITimerRegistry> or <xref:Orleans.Timers.IReminderRegistry> into the grain's constructor.
 
-```csharp
-public sealed class PingGrain : IGrainBase, IPingGrain
-{
-    private readonly ITimerRegistry _timerRegistry;
-    private readonly IReminderRegistry _reminderRegistry;
+:::code source="./snippets/timers/PingGrain.cs":::
 
-    public PingGrain(ITimerRegistry timerRegistry, IReminderRegistry reminderRegistry)
-    {
-        _timerRegistry = timerRegistry;
-        _reminderRegistry = reminderRegistry;
-    }
+The preceding code:
 
-    // Omitted for brevity...
-}
-```
+- Defines a POCO grain that implements <xref:Orleans.IGrainBase>, `IPingGrain`, and <xref:System.IDisposable>.
+- Registers a timer that is invoked every ten seconds, and starts three seconds after registration.
+- When `Ping` is called, registers a reminder that is invoked hour, and starts immediately following registration.
+- The `Dispose` method cancels the reminder if it's registered.

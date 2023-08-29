@@ -10,7 +10,7 @@ The Orleans runtime provides two mechanisms, called timers and reminders, that e
 
 ## Timers
 
-**Timers** are used to create periodic grain behavior that isn't required to span multiple activations (instantiations of the grain). A timer is identical to the standard .NET <xref:System.Threading.Timer?displayProperty=fullName> class. In addition, timers are subject to single-threaded execution guarantees within the grain activation that it operates on, and their executions are interleaved with other requests, as though the timer callback was a grain method marked with <xref:Orleans.Concurrency.AlwaysInterleaveAttribute>.
+**Timers** are used to create periodic grain behavior that isn't required to span multiple activations (instantiations of the grain). A timer is identical to the standard .NET <xref:System.Threading.Timer?displayProperty=fullName> class. In addition, timers are subject to single-threaded execution guarantees within the grain activation that they operate on, and their executions are interleaved with other requests, as though the timer callback was a grain method marked with <xref:Orleans.Concurrency.AlwaysInterleaveAttribute>.
 
 Each activation may have zero or more timers associated with it. The runtime executes each timer routine within the runtime context of the activation that it's associated with.
 
@@ -161,6 +161,6 @@ To register a timer or reminder with [a POCO grain](../migration-guide.md#poco-g
 The preceding code:
 
 - Defines a POCO grain that implements <xref:Orleans.IGrainBase>, `IPingGrain`, and <xref:System.IDisposable>.
-- Registers a timer that is invoked every ten seconds, and starts three seconds after registration.
-- When `Ping` is called, registers a reminder that is invoked hour, and starts immediately following registration.
+- Registers a timer that is invoked every 10 seconds, and starts 3 seconds after registration.
+- When `Ping` is called, registers a reminder that is invoked every hour, and starts immediately following registration.
 - The `Dispose` method cancels the reminder if it's registered.

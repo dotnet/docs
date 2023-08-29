@@ -61,7 +61,7 @@ Collecting a [dump](../../diagnostics/dumps.md) file for a native AOT applicatio
 
 You can launch a NativeAOT-compiled executable under the VS debugger by opening it in the Visual Studio IDE. In the `File` menu, choose `Open Project/Solution...` and navigate to the native executable. You can set breakpoints as needed. To start debugging the EXE, choose the `Start Debugging` option from the Debug menu.
 
-To set a breakpoint that breaks whenever an exception is thrown, choose the Breakpoints option from the `Debug -> Windows` menu. In the new window, select `New -> Function` breakpoint. Specify `RhThrowEx`` as the Function Name and leave the Language option at "All Languages" (do not select C#).
+To set a breakpoint that breaks whenever an exception is thrown, choose the Breakpoints option from the `Debug -> Windows` menu. In the new window, select `New -> Function` breakpoint. Specify `RhThrowEx` as the Function Name and leave the Language option at "All Languages" (do not select C#).
 
 To see what exception was thrown, start debugging (`Debug -> Start Debugging` or `F5`), open the Watch window (`Debug -> Windows -> Watch`) and add following expression as one of the watches: `(S_P_CoreLib_System_Exception*)@rcx`. This leverages the fact that at the time `RhThrowEx` is called, the x64 CPU register RCX contains the thrown exception. You can also paste the expression into the Immediate Window; the syntax is the same as for watches.
 

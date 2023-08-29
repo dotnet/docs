@@ -62,6 +62,8 @@ items:
         href: core-libraries/8.0/itypedescriptorcontext-props.md
       - name: Legacy Console.ReadKey removed
         href: core-libraries/8.0/console-readkey-legacy.md
+      - name: Method builders generate parameters with HasDefaultValue=false
+        href: core-libraries/8.0/parameterinfo-hasdefaultvalue.md
       - name: Removed overloads of ToFrozenDictionary/ToFrozenSet
         href: core-libraries/8.0/optimizeforreading-arg.md
     - name: Cryptography
@@ -86,6 +88,10 @@ items:
         href: extensions/8.0/activatorutilities-createinstance-null-provider.md
       - name: ConfigurationBinder throws for mismatched value
         href: extensions/8.0/configurationbinder-exceptions.md
+      - name: ConfigurationManager package no longer references System.Security.Permissions
+        href: extensions/8.0/configurationmanager-package.md
+      - name: DirectoryServices package no longer references System.Security.Permissions
+        href: extensions/8.0/configurationmanager-package.md
       - name: Empty keys added to dictionary by configuration binder
         href: extensions/8.0/dictionary-configuration-binding.md
       - name: HostApplicationBuilderSettings.Args respected by constructor
@@ -1084,6 +1090,8 @@ items:
         href: core-libraries/8.0/itypedescriptorcontext-props.md
       - name: Legacy Console.ReadKey removed
         href: core-libraries/8.0/console-readkey-legacy.md
+      - name: Method builders generate parameters with HasDefaultValue=false
+        href: core-libraries/8.0/parameterinfo-hasdefaultvalue.md
       - name: Removed overloads of ToFrozenDictionary/ToFrozenSet
         href: core-libraries/8.0/optimizeforreading-arg.md
     - name: .NET 7
@@ -1316,6 +1324,10 @@ items:
         href: extensions/8.0/activatorutilities-createinstance-null-provider.md
       - name: ConfigurationBinder throws for mismatched value
         href: extensions/8.0/configurationbinder-exceptions.md
+      - name: ConfigurationManager package no longer references System.Security.Permissions
+        href: extensions/8.0/configurationmanager-package.md
+      - name: DirectoryServices package no longer references System.Security.Permissions
+        href: extensions/8.0/configurationmanager-package.md
       - name: Empty keys added to dictionary by configuration binder
         href: extensions/8.0/dictionary-configuration-binding.md
       - name: HostApplicationBuilderSettings.Args respected by constructor

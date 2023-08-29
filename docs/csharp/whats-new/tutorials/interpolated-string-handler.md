@@ -46,7 +46,7 @@ This `Logger` supports six different levels. When a message won't pass the log l
 This step is to build an *interpolated string handler* that recreates the current behavior. An interpolated string handler is a type that must have the following characteristics:
 
 - The <xref:System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute?displayProperty=fullName> applied to the type.
-- A constructor that has two `int` parameters, `literalLength` and `formatCount`. (More parameters are allowed).
+- A constructor that has two `int` parameters, `literalLength` and `formattedCount`. (More parameters are allowed).
 - A public `AppendLiteral` method with the signature: `public void AppendLiteral(string s)`.
 - A generic public `AppendFormatted` method with the signature: `public void AppendFormatted<T>(T t)`.
 

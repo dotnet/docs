@@ -209,7 +209,7 @@ public interface IMyGrain : IGrainWithIntegerKey
 
 ### Call chain reentrancy
 
-If a grain calls a method which on another grain which then calls back into the original grain, the call will result in a deadlock unless the call is reentrant. Reentrancy can be enabled on a per-call-site basis by using *call chain reentrancy*. To enable call chain reentrancy, call the <xref:Orleans.Runtime.RequestContext.AllowCallChainReentrancy()> method, which returns a value that allows reentrance from any caller further down the call chain until it is disposed. This includes reentrance from the grain calling the method itself. Consider the following example:
+If a grain calls a method which on another grain which then calls back into the original grain, the call will result in a deadlock unless the call is reentrant. Reentrancy can be enabled on a per-call-site basis by using *call chain reentrancy*. To enable call chain reentrancy, call the <xref:Orleans.Runtime.RequestContext.AllowCallChainReentrancy> method, which returns a value that allows reentrance from any caller further down the call chain until it is disposed. This includes reentrance from the grain calling the method itself. Consider the following example:
 
 ```csharp
 public interface IChatRoomGrain : IGrainWithStringKey

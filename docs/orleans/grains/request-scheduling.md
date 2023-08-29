@@ -246,7 +246,7 @@ public class UserGrain : Grain, IUserGrain
 }
 ```
 
-In the above example, `UserGrain.JoinRoom(roomName)` calls into `ChatRoomGrain.OnJoinRoom(user)`, which tries to call back into `UserGrain.GetDisplayName()` to get the user's display name. Since this call chain involves a cycle, this will result in a deadlock if the `UserGrain` does not allow reentrance using any of the supported mechanisms discussed in this article. In this instance, we are using <xref:Orleans.Runtime.RequestContext.AllowCallChainReentrancy()>, which will allow only `roomGrain` to call back into the `UserGrain`. This grants you fine grained control over where and how reentrancy is enabled.
+In the preceding example, `UserGrain.JoinRoom(roomName)` calls into `ChatRoomGrain.OnJoinRoom(user)`, which tries to call back into `UserGrain.GetDisplayName()` to get the user's display name. Since this call chain involves a cycle, this will result in a deadlock if the `UserGrain` doesn't allow reentrance using any of the supported mechanisms discussed in this article. In this instance, we are using <xref:Orleans.Runtime.RequestContext.AllowCallChainReentrancy>, which allows only `roomGrain` to call back into the `UserGrain`. This grants you fine grained control over where and how reentrancy is enabled.
 
 If we were to instead prevent the deadlock by annotating the `GetDisplayName()` method declaration on `IUserGrain` with `[AlwaysInterleave]` (discussed below), we would allow any grain to interleave a `GetDisplayName` call with any other method. Instead, we are allowing *only* `roomGrain` to call methods on our grain and only until `scope` is disposed.
 

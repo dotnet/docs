@@ -256,7 +256,7 @@ To verify that the image was successfully pushed to the container registry, navi
 From Visual Studio Code, select **Docker** from the **Activity Bar**. Expand the **REGISTRIES** node, and select **Connect Registry**. Select **Azure** when prompted, and sign in if necessary.
 
 > [!IMPORTANT]
-> This no longer works on Mac. For more information, see [GitHub: About Docker Extension for Visual Studio Code](https://github.com/microsoft/vscode-docker/issues/3655).
+> Deploying as a container instance from Visual Studio Code no longer works on Mac. For more information, see [GitHub: About Docker Extension for Visual Studio Code](https://github.com/microsoft/vscode-docker/issues/3655).
 
 :::image type="content" source="media/vs-code-connect-registry.png" alt-text="Visual Studio Code - Docker: Connect registry":::
 

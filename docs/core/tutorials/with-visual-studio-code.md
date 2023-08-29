@@ -1,7 +1,7 @@
 ---
 title: Create a .NET console application using Visual Studio Code
 description: Learn how to create a .NET console application using Visual Studio Code and the .NET CLI.
-ms.date: 08/25/2023
+ms.date: 08/29/2023
 zone_pivot_groups: dotnet-version-6-8
 recommendations: false
 ---
@@ -13,8 +13,8 @@ This tutorial shows how to create and run a .NET console application by using Vi
 
 ## Prerequisites
 
-* [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) installed. For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
-* The [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet/7.0).
+* [Visual Studio Code](https://code.visualstudio.com/) with the [C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) installed. For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
+* The [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0).
 
 ## Create the app
 
@@ -37,16 +37,10 @@ Create a .NET console app project named "HelloWorld".
 1. In the **Terminal**, enter the following command:
 
    ```dotnetcli
-   dotnet new console --framework net7.0
+   dotnet new console --framework net8.0 --use-program-main
    ```
 
    The project template creates a simple application that displays "Hello, World" in the console window by calling the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method in *Program.cs*.
-
-   ```csharp
-   Console.WriteLine("Hello, World!");
-   ```
-
-1. Replace the contents of *Program.cs* with the following code:
 
    ```csharp
    namespace HelloWorld
@@ -61,17 +55,17 @@ Create a .NET console app project named "HelloWorld".
    }
    ```
 
-   The first time you edit a *.cs* file, Visual Studio Code prompts you to add the missing assets to build and debug your app. Select **Yes**, and Visual Studio Code creates a *.vscode* folder with *launch.json* and *tasks.json* files.
-
-   > [!NOTE]
-   > If you don't get the prompt, or if you accidentally dismiss it without selecting **Yes**, do the following steps to create *launch.json* and *tasks.json*:
-   >
-   >* Select **Run** > **Add Configuration** from the menu.
-   >* Select **.NET 5+ and .NET Core** at the **Select environment** prompt.
-
    The code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
 
-   In the latest version of C#, a new feature named [top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) lets you omit the `Program` class and the `Main` method. Most existing C# programs don't use top-level statements, so this tutorial doesn't use this new feature. But it's available in C# 10, and whether you use it in your programs is a matter of style preference.
+   C# has a feature named [top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) that lets you omit the Program class and the Main method. This tutorial doesn't use this feature. Whether you use it in your programs is a matter of style preference. In the `dotnet new` command that created the project, the `--use-program-main` option prevented top-level statements from being used.
+
+## Create the .vscode folder
+
+The *.vscode* folder with *launch.json* and *tasks.json* files will be used to facilitate debugging in the next tutorial in this series.
+
+1. Select **Run** > **Add Configuration** from the menu.
+
+1. Select **.NET 5+ and .NET Core** at the **Select debugger** prompt.
 
 ## Run the app
 

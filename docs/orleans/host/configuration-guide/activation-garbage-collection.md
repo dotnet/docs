@@ -95,7 +95,7 @@ mySiloHostBuilder.Configure<GrainCollectionOptions>(options =>
 
 ## Keep alive
 
-To keep a grain alive, you apply the <xref:Orleans.KeepAliveAttribute?displayProperty=fullName> to the grain implementation. The `KeepAlive` attribute instructs the Orleans runtime to avoid collecting the grain by the idle activation collector. For grains that are used infrequently but you want to keep them alive to avoid any potential creation overhead, this can be useful.
+To keep a grain alive, you apply the <xref:Orleans.KeepAliveAttribute?displayProperty=fullName> to the grain implementation. The `KeepAlive` attribute instructs the Orleans runtime to avoid collecting the grain by the idle activation collector. Avoiding collection is useful for grains that are used infrequently but that you want to keep alive to avoid any potential creation overhead.
 
 ```csharp
 public interface IPlayerGrain : IGrainWithGuidKey

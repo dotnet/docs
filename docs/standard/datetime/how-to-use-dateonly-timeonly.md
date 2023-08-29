@@ -2,10 +2,10 @@
 title: How to use DateOnly and TimeOnly
 description: Learn about the DateOnly and TimeOnly structures in .NET.
 ms.date: 01/11/2023
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DateOnly structure"
   - "TimeOnly structure"
   - "date and time classes [.NET]"
@@ -129,7 +129,7 @@ Because `TimeOnly` only represents a 24-hour period, it rolls over forwards or b
 
 [!INCLUDE [dateonly-and-timeonly-serialization](includes/dateonly-and-timeonly-serialization.md)]
 
-For more information, see [How to serialize and deserialize (marshal and unmarshal) JSON in .NET](../serialization/system-text-json/how-to.md#how-to-serialize-and-deserialize-marshal-and-unmarshal-json-in-net).
+For more information, see [How to serialize and deserialize JSON in .NET](../serialization/system-text-json/how-to.md).
 
 ### Work with TimeSpan and DateTime
 

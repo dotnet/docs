@@ -46,30 +46,31 @@ This article covers the following compiler errors:
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
-- [**CS0022**](#compiler-error-cs0022) - *Wrong number of indices inside [], expected 'number'*
-- [**CS0178**](#compiler-error-cs0178) - *Invalid rank specifier: expected '`,`' or '`]`'*
-- [**CS0248**](#compiler-error-cs0248) - *Cannot create an array with a negative size*
-- [**CS0270**](#compiler-error-cs0270) - *Array size cannot be specified in a variable declaration (try initializing with a '`new`' expression)*
-- [**CS0611**](#compiler-error-cs0611) - *Array elements cannot be of type*
-- [**CS0623**](#compiler-error-cs0623) - *Array initializers can only be used in a variable or field initializer. Try using a new expression instead.*
-- [**CS0650**](#compiler-error-cs0650) - *Bad array declarator: To declare a managed array the rank specifier precedes the variable's identifier. To declare a fixed size buffer field, use the fixed keyword before the field type.*
-- [**CS0719**](#compiler-error-cs0719) - *Array elements cannot be of static type*
-- [**CS0820**](#compiler-error-cs0820) - *Cannot assign array initializer to an implicitly typed local*
-- [**CS0826**](#compiler-error-cs0826) - *No best type found for implicitly typed array.*
-- [**CS0846**](#compiler-error-cs0846) - *A nested array initializer is expected*
-- [**CS1552**](#compiler-error-cs1552) - *Array type specifier, `[]`, must appear before parameter name*
-- [**CS1586**](#compiler-error-cs1586) - *Array creation must have array size or array initializer*
-- [**CS1925**](#compiler-error-cs1925) - *Cannot initialize object of type 'type' with a collection initializer.*
+- [**CS0022**](#invalid-array-element-access) - *Wrong number of indices inside [], expected 'number'*
+- [**CS0178**](#invalid-array-rank) - *Invalid rank specifier: expected '`,`' or '`]`'*
+- [**CS0248**](#invalid-array-length) - *Cannot create an array with a negative size*
+- [**CS0270**](#invalid-array-length) - *Array size cannot be specified in a variable declaration (try initializing with a '`new`' expression)*
+- [**CS0611**](#invalid-element-type) - *Array elements cannot be of type*
+- [**CS0623**](#invalid-initializer) - *Array initializers can only be used in a variable or field initializer. Try using a new expression instead.*
+- [**CS0650**](#invalid-array-rank) - *Bad array declarator: To declare a managed array the rank specifier precedes the variable's identifier. To declare a fixed size buffer field, use the fixed keyword before the field type.*
+- [**CS0719**](#invalid-element-type) - *Array elements cannot be of static type*
+- [**CS0820**](#invalid-element-type) - *Cannot assign array initializer to an implicitly typed local*
+- [**CS0826**](#invalid-element-type) - *No best type found for implicitly typed array.*
+- [**CS0846**](#invalid-initializer) - *A nested array initializer is expected*
+- [**CS1552**](#invalid-array-rank) - *Array type specifier, `[]`, must appear before parameter name*
+- [**CS1586**](#invalid-array-length) - *Array creation must have array size or array initializer*
+- [**CS1925**](#invalid-initializer) - *Cannot initialize object of type 'type' with a collection initializer.*
 
 In addition, the following warnings are covered in this article:
 
-- [**CS0251**](#compiler-warning-level-2-cs0251) - *Indexing an array with a negative index (array indices always start at zero)*
-- [**CS3007**](#compiler-warning-level-1-cs3007) - *Overloaded method 'method' differing only by unnamed array types is not CLS-compliant*
-- [**CS3016**](#compiler-warning-level-1-cs3016) - *Arrays as attribute arguments is not CLS-compliant*
+- [**CS3007**](#common-language-specification-warnings) - *Overloaded method 'method' differing only by unnamed array types is not CLS-compliant*
+- [**CS3016**](#common-language-specification-warnings) - *Arrays as attribute arguments is not CLS-compliant*
+- [**CS0251**](#invalid-array-element-access) - *Indexing an array with a negative index (array indices always start at zero)*
 
-## Compiler Error CS0022
+## Invalid array element access
 
-Wrong number of indices inside [], expected 'number'
+- **CS0022** - *Wrong number of indices inside [], expected 'number'*
+- **CS0251** - *Indexing an array with a negative index (array indices always start at zero)*
 
 An array-access operation specified the incorrect number of dimensions within the square brackets. For more information, see [Arrays](../../programming-guide/arrays/index.md). The following sample generates CS0022:
 
@@ -86,9 +87,37 @@ public class MyClass
 }
 ```
 
-## Compiler Error CS0178
+Warning CS0251 tells you do not use a negative number to index into an array.
 
-Invalid rank specifier: expected ',' or ']'
+The following sample generates CS0251:
+
+```csharp
+// CS0251.cs
+// compile with: /W:2
+class MyClass
+{
+   public static void Main()
+   {
+      int[] myarray = new int[] {1,2,3};
+      try
+      {
+         myarray[-1]++;   // CS0251
+         // try the following line instead
+         // myarray[1]++;
+      }
+      catch (System.IndexOutOfRangeException e)
+      {
+         System.Console.WriteLine("{0}", e);
+      }
+   }
+}
+```
+
+## Invalid array rank
+
+- **CS0178** - *Invalid rank specifier: expected '`,`' or '`]`'*
+- **CS0650** - *Bad array declarator: To declare a managed array the rank specifier precedes the variable's identifier. To declare a fixed size buffer field, use the fixed keyword before the field type.*
+- **CS1552** - *Array type specifier, [], must appear before parameter name*
 
 An array initialization was ill-formed. For example, when specifying the array dimensions, you can specify the following:
 
@@ -117,89 +146,7 @@ class MyClass
 }
 ```
 
-## Compiler Error CS0248
-
-Cannot create an array with a negative size
-
-An array size was specified with a negative number. For more information, see [Arrays](../../programming-guide/arrays/index.md).
-
-The following sample generates CS0248:
-
-```csharp
-// CS0248.cs
-class MyClass
-{
-    public static void Main()
-    {
-        int[] myArray = new int[-3] {1,2,3};   // CS0248, pass a nonnegative number
-    }
-}
-```
-
-## Compiler Error CS0270
-
-Array size cannot be specified in a variable declaration (try initializing with a 'new' expression
-
-This error occurs when a size is specified as part of an array declaration. To resolve, use the [new operator](../operators/new-operator.md) expression.
-
-The following example generates CS0270:
-
-```csharp
-// CS0270.cs
-// compile with: /t:module
-
-public class Test
-{
-   int[10] a;   // CS0270
-   // To resolve, use the following line instead:
-   // int[] a = new int[10];
-}
-```
-
-## Compiler Error CS0611
-
-Array elements cannot be of type 'type'
-
-There are some types that cannot be used as the type of an array. These types include <xref:System.TypedReference?displayProperty=fullName> and <xref:System.ArgIterator?displayProperty=fullName>.
-
-The following sample generates CS0611 as a result of using <xref:System.TypedReference> as an array element:
-
-```csharp
-// CS0611.cs
-public class a
-{
-   public static void Main()
-   {
-      System.TypedReference[] ao = new System.TypedReference [10];   // CS0611
-      // try the following line instead
-      // int[] ao = new int[10];
-   }
-}
-```
-
-## Compiler Error CS0623
-
-Array initializers can only be used in a variable or field initializer. Try using a new expression instead.
-
-An attempt was made to initialize an array by using an array initializer in a context where it is not allowed.
-
-The following example produces CS0623 because the compiler interprets the {4} as embedded array initializer inside the outer array initializer:
-
-```csharp
-//cs0632.cs
-using System;
-
-class X
-{
-    public int[] x = { 2, 3, {4}}; //CS0623
-}
-```
-
-## Compiler Error CS0650
-
-Bad array declarator: To declare a managed array the rank specifier precedes the variable's identifier. To declare a fixed size buffer field, use the fixed keyword before the field type.
-
-An array was declared incorrectly. In C#, unlike in C and C++, the square brackets follow the type, not the variable name. Also, realize that the syntax for a fixed size buffer differs from that of an array. The following example code generates CS0650.
+CS0650 indicates that the array was declared incorrectly. In C#, unlike in C and C++, the square brackets follow the type, not the variable name. Also, realize that the syntax for a fixed size buffer differs from that of an array. The following example code generates CS0650.
 
 ```csharp
 // CS0650.cs
@@ -232,11 +179,102 @@ public struct MyArray
 }
 ```
 
-## Compiler Error CS0719
+CS1552 indicates the position of the array type specifier is after the variable name in the array declaration.
 
-'type': array elements cannot be of static type
+The following sample generates CS1552:
 
-An array of static type does not make sense since array elements are instances, but it is not possible to create instances of static types.
+```csharp
+// CS1552.cs
+public class C
+{
+    public static void Main(string args[])   // CS1552
+    // try the following line instead
+    // public static void Main(string [] args)
+    {
+    }
+}
+```
+
+## Invalid array length
+
+- **CS0248** - *Cannot create an array with a negative size*
+- **CS0270** - *Array size cannot be specified in a variable declaration (try initializing with a 'new' expression*
+- **CS1586** - *Array creation must have array size or array initializer*
+
+An array size was specified with a negative number. For more information, see [Arrays](../../programming-guide/arrays/index.md).
+
+The following sample generates CS0248:
+
+```csharp
+// CS0248.cs
+class MyClass
+{
+    public static void Main()
+    {
+        int[] myArray = new int[-3] {1,2,3};   // CS0248, pass a nonnegative number
+    }
+}
+```
+
+CS0270 error occurs when a size is specified as part of an array declaration. To resolve, use the [new operator](../operators/new-operator.md) expression.
+
+The following example generates CS0270:
+
+```csharp
+// CS0270.cs
+// compile with: /t:module
+
+public class Test
+{
+   int[10] a;   // CS0270
+   // To resolve, use the following line instead:
+   // int[] a = new int[10];
+}
+```
+
+CS1586 indicates the array size is incorrect.
+
+An array was declared incorrectly. The following sample generates CS1586:
+
+```csharp
+// CS1586.cs
+using System;
+class MyClass
+{
+   public static void Main()
+   {
+      int[] a = new int[];   // CS1586
+      // try the following line instead
+      int[] b = new int[5];
+   }
+}
+```
+
+## Invalid element type
+
+- **CS0611** - *Array elements cannot be of type 'type'*
+- **CS0719** - *Array elements cannot be of static type*
+- **CS0820** - *Cannot assign array initializer to an implicitly typed local*
+- **CS0826** - *No best type found for implicitly typed array.*
+
+There are some types that cannot be used as the type of an array. These types include <xref:System.TypedReference?displayProperty=fullName> and <xref:System.ArgIterator?displayProperty=fullName>.
+
+The following sample generates CS0611 as a result of using <xref:System.TypedReference> as an array element:
+
+```csharp
+// CS0611.cs
+public class a
+{
+   public static void Main()
+   {
+      System.TypedReference[] ao = new System.TypedReference [10];   // CS0611
+      // try the following line instead
+      // int[] ao = new int[10];
+   }
+}
+```
+
+CS0719 indicates that an array of static type does not make sense since array elements are instances, but it is not possible to create instances of static types.
 
 The following sample generates CS0719:
 
@@ -256,11 +294,7 @@ public static class SC
 }
 ```
 
-## Compiler Error CS0820
-
-Cannot assign array initializer to an implicitly typed local
-
-An implicitly typed array is an array whose element type is inferred by the compiler. It must be initialized by using the `new`[] modifier as shown in the example code.
+CS0820 indicates an implicitly typed array is an array whose element type is inferred by the compiler. It must be initialized by using the `new`[] modifier as shown in the example code.
 
 To correct this error
 
@@ -285,11 +319,7 @@ class G
 }
 ```
 
-## Compiler Error CS0826
-
-No best type found for implicitly typed array.
-
-Array elements must all be the same type or implicitly convertible to the same type according to the type inference rules used by the compiler. The best type must be one of the types present in the array expression. Elements will not be converted to a new type such as `object`. For an implicitly typed array, the compiler must infer the array type based on the type of elements assigned to it.
+CS0826 indicates No best type found for implicitly typed array. Array elements must all be the same type or implicitly convertible to the same type according to the type inference rules used by the compiler. The best type must be one of the types present in the array expression. Elements will not be converted to a new type such as `object`. For an implicitly typed array, the compiler must infer the array type based on the type of elements assigned to it.
 
 To correct this error
 
@@ -319,11 +349,27 @@ public class C
 }
 ```
 
-## Compiler Error CS0846
+## Invalid initializer
 
-A nested array initializer is expected
+- **CS0623** - *Array initializers can only be used in a variable or field initializer. Try using a new expression instead.*
+- **CS0846** - *A nested array initializer is expected*
+- **CS1925** - *Cannot initialize object of type 'type' with a collection initializer.*
 
-This error occurs when something other than an array initializer is used when creating an array.
+An attempt was made to initialize an array by using an array initializer in a context where it is not allowed.
+
+The following example produces CS0623 because the compiler interprets the {4} as embedded array initializer inside the outer array initializer:
+
+```csharp
+//cs0632.cs
+using System;
+
+class X
+{
+    public int[] x = { 2, 3, {4}}; //CS0623
+}
+```
+
+CS0846 indicates that a nested array initializer is expected. This error occurs when something other than an array initializer is used when creating an array.
 
 The following sample generates CS0846:
 
@@ -350,51 +396,7 @@ This example contains a 3-dimensional array.  The initializer does not represent
         var a3 = new[, ,] { { { 3, 4 } }, { { 3, 4 } } };
 ```
 
-## Compiler Error CS1552
-
-Array type specifier, [], must appear before parameter name
-
-The position of the array type specifier is after the variable name in the array declaration.
-
-The following sample generates CS1552:
-
-```csharp
-// CS1552.cs
-public class C
-{
-    public static void Main(string args[])   // CS1552
-    // try the following line instead
-    // public static void Main(string [] args)
-    {
-    }
-}
-```
-
-## Compiler Error CS1586
-
-Array creation must have array size or array initializer
-
-An array was declared incorrectly. The following sample generates CS1586:
-
-```csharp
-// CS1586.cs
-using System;
-class MyClass
-{
-   public static void Main()
-   {
-      int[] a = new int[];   // CS1586
-      // try the following line instead
-      int[] b = new int[5];
-   }
-}
-```
-
-## Compiler Error CS1925
-
-Cannot initialize object of type 'type' with a collection initializer.
-
-Collection initializers are only allowed for collection classes that meet certain criteria. For more information, see [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md). This error is also produced when you try to use the short form of an array initializer nested inside a collection initializer.
+CS1925 indicates that Collection initializers are only allowed for collection classes that meet certain criteria. For more information, see [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md). This error is also produced when you try to use the short form of an array initializer nested inside a collection initializer.
 
 To correct this error initialize the object by calling its constructors and methods.
 
@@ -416,9 +418,10 @@ class Test
 }
 ```
 
-## Compiler Warning (level 1) CS3007
+## Common language specification warnings
 
-Overloaded method 'method' differing only by unnamed array types is not CLS-compliant
+- **CS3007** - *Overloaded method 'method' differing only by unnamed array types is not CLS-compliant*
+- **CS3016** - *Arrays as attribute arguments is not CLS-compliant*
 
 This error occurs if you have an overloaded method that takes a jagged array and the only difference between the method signatures is the element type of the array. To avoid this error, consider using a rectangular array rather than a jagged array; use an additional parameter to disambiguate the function call; rename one or more of the overloaded methods; or, if CLS Compliance is not needed, remove the <xref:System.CLSCompliantAttribute> attribute. For more information on CLS Compliance, see [Language independence and language-independent components](../../../standard/language-independence.md).
 
@@ -440,11 +443,7 @@ public struct S
 }
 ```
 
-## Compiler Warning (level 1) CS3016
-
-Arrays as attribute arguments is not CLS-compliant
-
-It is not compliant with the Common Language Specification (CLS) to pass an array to an attribute. For more information on CLS compliance, see [Language independence and language-independent components](../../../standard/language-independence.md).
+CS3016 indicates that not compliant with the Common Language Specification (CLS) to pass an array to an attribute. For more information on CLS compliance, see [Language independence and language-independent components](../../../standard/language-independence.md).
 
 The following example generates CS3016:
 
@@ -470,35 +469,5 @@ class C : Attribute
     public static void Main ()
     {
     }
-}
-```
-
-## Compiler Warning (level 2) CS0251
-
-Indexing an array with a negative index (array indices always start at zero)
-
-Do not use a negative number to index into an array.
-
-The following sample generates CS0251:
-
-```csharp
-// CS0251.cs
-// compile with: /W:2
-class MyClass
-{
-   public static void Main()
-   {
-      int[] myarray = new int[] {1,2,3};
-      try
-      {
-         myarray[-1]++;   // CS0251
-         // try the following line instead
-         // myarray[1]++;
-      }
-      catch (System.IndexOutOfRangeException e)
-      {
-         System.Console.WriteLine("{0}", e);
-      }
-   }
 }
 ```

@@ -250,7 +250,7 @@ In the preceding example, `UserGrain.JoinRoom(roomName)` calls into `ChatRoomGra
 
 If we were to instead prevent the deadlock by annotating the `GetDisplayName()` method declaration on `IUserGrain` with `[AlwaysInterleave]` (discussed below), we would allow any grain to interleave a `GetDisplayName` call with any other method. Instead, we are allowing *only* `roomGrain` to call methods on our grain and only until `scope` is disposed.
 
-#### Suppressing call chain reentrancy
+#### Suppress call chain reentrancy
 
 Call chain reentrance can also be *suppressed* using the <xref:Orleans.Runtime.RequestContext.SuppressCallChainReentrancy()> method. This has limited usefulness to end developers, but it is important for internal use by libraries which extend Orleans grain functionality, such as [streaming](../streaming/index.md) and [broadcast channels](../streaming/broadcast-channel.md) to ensure that developers retain full control over when call chain reentrancy is enabled.
 

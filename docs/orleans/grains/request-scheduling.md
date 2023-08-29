@@ -252,7 +252,7 @@ If you were to instead prevent the deadlock by annotating the `GetDisplayName()`
 
 #### Suppress call chain reentrancy
 
-Call chain reentrance can also be *suppressed* using the <xref:Orleans.Runtime.RequestContext.SuppressCallChainReentrancy()> method. This has limited usefulness to end developers, but it is important for internal use by libraries which extend Orleans grain functionality, such as [streaming](../streaming/index.md) and [broadcast channels](../streaming/broadcast-channel.md) to ensure that developers retain full control over when call chain reentrancy is enabled.
+Call chain reentrance can also be *suppressed* using the <xref:Orleans.Runtime.RequestContext.SuppressCallChainReentrancy> method. This has limited usefulness to end developers, but it is important for internal use by libraries which extend Orleans grain functionality, such as [streaming](../streaming/index.md) and [broadcast channels](../streaming/broadcast-channel.md) to ensure that developers retain full control over when call chain reentrancy is enabled.
 
 The `GetCount` method doesn't modify the grain state, so it's marked with `ReadOnly`. Callers awaiting this method invocation aren't blocked by other `ReadOnly` requests to the grain, and the method returns immediately.
 

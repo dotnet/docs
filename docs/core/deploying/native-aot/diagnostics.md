@@ -59,7 +59,7 @@ Collecting a [dump](../../diagnostics/dumps.md) file for a native AOT applicatio
 
 ### Visual Studio-specific notes
 
-You can launch a NativeAOT-compiled executable under the VS debugger by opening it in the Visual Studio IDE. In the `File`` menu, choose `Open Project/Solution...`` and navigate to the native executable. You can set breakpoints as needed. To start debugging the EXE, choose the `Start Debugging`` option from the Debug menu.
+You can launch a NativeAOT-compiled executable under the VS debugger by opening it in the Visual Studio IDE. In the `File` menu, choose `Open Project/Solution...` and navigate to the native executable. You can set breakpoints as needed. To start debugging the EXE, choose the `Start Debugging` option from the Debug menu.
 
 To set a breakpoint that breaks whenever an exception is thrown, choose the Breakpoints option from the `Debug -> Windows` menu. In the new window, select `New -> Function` breakpoint. Specify `RhThrowEx`` as the Function Name and leave the Language option at "All Languages" (do not select C#).
 

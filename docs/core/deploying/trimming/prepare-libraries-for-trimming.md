@@ -53,9 +53,7 @@ We recommend using both approaches. Project-specific trimming is convenient and 
 
 ### Enable project-specific trimming
 
-
 Set `<IsTrimmable>true</IsTrimmable>` in the project file.
-
 
 :::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyLibrary/MyLibrary.csproj.xml" id="snippet" highlight="2":::
 

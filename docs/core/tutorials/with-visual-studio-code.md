@@ -1,7 +1,7 @@
 ---
 title: Create a .NET console application using Visual Studio Code
 description: Learn how to create a .NET console application using Visual Studio Code and the .NET CLI.
-ms.date: 08/29/2023
+ms.date: 08/30/2023
 zone_pivot_groups: dotnet-version-6-8
 recommendations: false
 ---
@@ -13,7 +13,12 @@ This tutorial shows how to create and run a .NET console application by using Vi
 
 ## Prerequisites
 
-* [Visual Studio Code](https://code.visualstudio.com/) with the [C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) installed. For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
+* [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) installed.
+
+  If you have the [C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) installed, uninstall or disable it. It offers advanced features for C# development, but it isn't used by this getting-started tutorial series.
+
+  For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
+
 * The [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0).
 
 ## Create the app
@@ -40,32 +45,31 @@ Create a .NET console app project named "HelloWorld".
    dotnet new console --framework net8.0 --use-program-main
    ```
 
-   The project template creates a simple application that displays "Hello, World" in the console window by calling the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method in *Program.cs*.
+   Open the *Program.cs* file to see the simple application created by the template:
 
    ```csharp
-   namespace HelloWorld
+   namespace HelloWorld;
+
+   class Program
    {
-       class Program
+       static void Main(string[] args)
        {
-           static void Main(string[] args)
-           {
-               Console.WriteLine("Hello, World!");
-           }
+           Console.WriteLine("Hello, World!");
        }
    }
    ```
 
-   The code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
+   The first time you open a *.cs* file, Visual Studio Code prompts you to add assets to build and debug your app. Select **Yes**, and Visual Studio Code creates a *.vscode* folder with *launch.json* and *tasks.json* files.
+
+   > [!NOTE]
+   > If you don't get the prompt, or if you accidentally dismiss it without selecting **Yes**, do the following steps to create *launch.json* and *tasks.json*:
+   >
+   >* Select **Run** > **Add Configuration** from the menu.
+   >* Select **.NET 5+ and .NET Core** at the **Select environment** prompt.
+
+   The code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array. The code in `Main` calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display a message in the console window.
 
    C# has a feature named [top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) that lets you omit the Program class and the Main method. This tutorial doesn't use this feature. Whether you use it in your programs is a matter of style preference. In the `dotnet new` command that created the project, the `--use-program-main` option prevented top-level statements from being used.
-
-## Create the .vscode folder
-
-The *.vscode* folder with *launch.json* and *tasks.json* files will be used to facilitate debugging in the next tutorial in this series.
-
-1. Select **Run** > **Add Configuration** from the menu.
-
-1. Select **.NET 5+ and .NET Core** at the **Select debugger** prompt.
 
 ## Run the app
 
@@ -91,7 +95,7 @@ Enhance the application to prompt the user for their name and display it along w
 
    This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `currentDate`. And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> method to wait for user input.
 
-   <xref:System.Environment.NewLine> is a platform-independent and language-independent way to represent a line break. Alternatives are `\n` in C# and `vbCrLf` in Visual Basic.
+   <xref:System.Environment.NewLine> is a platform-independent and language-independent way to represent a line break. It's the same as `\n` in C#.
 
    The dollar sign (`$`) in front of a string lets you put expressions such as variable names in curly braces in the string. The expression value is inserted into the string in place of the expression. This syntax is referred to as [interpolated strings](../../csharp/language-reference/tokens/interpolated.md).
 

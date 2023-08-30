@@ -1,7 +1,7 @@
 ---
 title: Publish a .NET console application using Visual Studio Code
 description: Learn how to use Visual Studio Code and the .NET CLI to create the set of files that are needed to run a .NET application.
-ms.date: 08/25/2023
+ms.date: 08/30/2023
 zone_pivot_groups: dotnet-version-6-8
 recommendations: false
 ---
@@ -38,7 +38,7 @@ The .NET CLI is used to publish the app, so you can follow this tutorial with a 
    The command output is similar to the following example:
 
    ```output
-   Microsoft (R) Build Engine version 16.7.4+b89cb5fde for .NET
+   Microsoft (R) Build Engine version 17.8.0+b89cb5fde for .NET
    Copyright (C) Microsoft Corporation. All rights reserved.
      Determining projects to restore...
      All projects are up-to-date for restore.

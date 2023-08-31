@@ -130,7 +130,7 @@ All arrays are reference types, even if their elements are value types. Arrays i
 
 :::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="ArrayDeclaration":::
 
-Reference types fully support inheritance. When you create a class, you can inherit from any other interface or class that isn't defined as [sealed](../../language-reference/keywords/sealed.md). Other classes can inherit from your class and override your virtual methods. For more information about how to create your own classes, see [Classes, structs, and records](../types/index.md). For more information about inheritance and virtual methods, see [Inheritance](../object-oriented/inheritance.md).
+Reference types fully support inheritance. When you create a class, you can inherit from any other interface or class that isn't defined as [sealed](../../language-reference/keywords/sealed.md). Other classes can inherit from your class and override your virtual methods. For more information about how to create your own classes, see [Classes, structs, and records](../object-oriented/index.md). For more information about inheritance and virtual methods, see [Inheritance](../object-oriented/inheritance.md).
 
 ## Types of literal values
 

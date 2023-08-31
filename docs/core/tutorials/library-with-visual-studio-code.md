@@ -11,7 +11,7 @@ recommendations: false
 
 In this tutorial, you create a simple utility library that contains a single string-handling method.
 
-A *class library* defines types and methods that are called by an application. If the library targets .NET Standard 2.0, it can be called by any .NET implementation (including .NET Framework) that supports .NET Standard 2.0. If the library targets .NET 7, it can be called by any application that targets .NET 7. This tutorial shows how to target .NET 7.
+A *class library* defines types and methods that are called by an application. If the library targets .NET Standard 2.0, it can be called by any .NET implementation (including .NET Framework) that supports .NET Standard 2.0. If the library targets .NET 8, it can be called by any application that targets .NET 8. This tutorial shows how to target .NET 8.
 
 When you create a class library, you can distribute it as a third-party component or as a bundled component with one or more applications.
 
@@ -119,11 +119,11 @@ Add a new .NET class library project named "StringLibrary" to the solution.
    The terminal output looks like the following example:
 
    ```output
-   Microsoft (R) Build Engine version 16.7.4+b89cb5fde for .NET
+   Microsoft (R) Build Engine version 17.8.0+b89cb5fde for .NET
    Copyright (C) Microsoft Corporation. All rights reserved.
      Determining projects to restore...
      All projects are up-to-date for restore.
-     StringLibrary -> C:\Projects\ClassLibraryProjects\StringLibrary\bin\Debug\net7.0\StringLibrary.dll
+     StringLibrary -> C:\Projects\ClassLibraryProjects\StringLibrary\bin\Debug\net8.0\StringLibrary.dll
    Build succeeded.
        0 Warning(s)
        0 Error(s)

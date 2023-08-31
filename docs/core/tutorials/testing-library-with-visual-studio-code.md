@@ -1,7 +1,7 @@
 ---
 title: Test a .NET class library using Visual Studio Code
 description: Learn how to use Visual Studio Code and the .NET CLI to create and run a unit test project for a .NET class library.
-ms.date: 08/25/2023
+ms.date: 08/31/2023
 zone_pivot_groups: dotnet-version-6-8
 recommendations: false
 ---
@@ -32,26 +32,23 @@ Unit tests provide automated software testing during your development and publis
    The project template creates a UnitTest1.cs file with the following code:
 
    ```csharp
-   using Microsoft.VisualStudio.TestTools.UnitTesting;
+     namespace StringLibraryTest;
 
-   namespace StringLibraryTest
-   {
-       [TestClass]
-       public class UnitTest1
-       {
-           [TestMethod]
-           public void TestMethod1()
-           {
-           }
-       }
+     [TestClass]
+     public class UnitTest1
+     {
+          [TestMethod]
+          public void TestMethod1()
+          {
+          }
    }
    ```
 
    The source code created by the unit test template does the following:
 
-   - It imports the <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=nameWithType> namespace, which contains the types used for unit testing.
    - It applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> attribute to the `UnitTest1` class.
    - It applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attribute to define `TestMethod1`.
+   - It imports the <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=nameWithType> namespace, which contains the types used for unit testing. The namespace is imported via a `global using` directive in *GlobalUsings.cs*.
 
    Each method tagged with [[TestMethod]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) in a test class tagged with [[TestClass]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute) is run automatically when the unit test is invoked.
 
@@ -114,7 +111,7 @@ To create the test methods:
    Starting test execution, please wait...
    A total of 1 test files matched the specified pattern.
 
-   Passed!  - Failed:     0, Passed:     3, Skipped:     0, Total:     3, Duration: 3 ms - StringLibraryTest.dll (net7.0)
+   Passed!  - Failed:     0, Passed:     3, Skipped:     0, Total:     3, Duration: 3 ms - StringLibraryTest.dll (net8.0)
    ```
 
 ## Handle test failures
@@ -188,6 +185,11 @@ A library doesn't have to be distributed as a package. It can be bundled with a 
 
 > [!div class="nextstepaction"]
 > [Publish a .NET console application using Visual Studio Code](publishing-with-visual-studio-code.md)
+
+The Visual Studio Code extension C# Dev Kit provides more tools for developing C# apps and libraries:
+
+> [!div class="nextstepaction"]
+> [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp-dev-kit)
 
 ::: zone-end
 

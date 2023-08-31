@@ -42,8 +42,8 @@ The .NET CLI is used to publish the app, so you can follow this tutorial with a 
    Copyright (C) Microsoft Corporation. All rights reserved.
      Determining projects to restore...
      All projects are up-to-date for restore.
-     HelloWorld -> C:\Projects\HelloWorld\bin\Release\net7.0\HelloWorld.dll
-     HelloWorld -> C:\Projects\HelloWorld\bin\Release\net7.0\publish\
+     HelloWorld -> C:\Projects\HelloWorld\bin\Release\net8.0\HelloWorld.dll
+     HelloWorld -> C:\Projects\HelloWorld\bin\Release\net8.0\publish\
    ```
 
 ## Inspect the files
@@ -56,7 +56,7 @@ In the following steps, you'll look at the files created by the publish process.
 
 1. Expand *bin/Release/net7.0/publish*.
 
-   :::image type="content" source="media/publishing-with-visual-studio-code/published-files-output-net7.png" alt-text="Explorer showing published files":::
+   :::image type="content" source="media/publishing-with-visual-studio-code/published-files-output-net8.png" alt-text="Explorer showing published files":::
 
    As the image shows, the published output includes the following files:
 
@@ -82,7 +82,7 @@ In the following steps, you'll look at the files created by the publish process.
 
 ## Run the published app
 
-1. In **Explorer**, right-click the *publish* folder (<kbd>Ctrl</kbd>-click on macOS), and select **Open in Terminal**.
+1. In **Explorer**, right-click the *publish* folder (<kbd>Ctrl</kbd>-click on macOS), and select **Open in Integrated Terminal**.
 
    :::image type="content" source="media/publishing-with-visual-studio-code/open-in-terminal.png" alt-text="Context menu showing Open in Terminal":::
 

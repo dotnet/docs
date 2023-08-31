@@ -15,7 +15,7 @@ This tutorial shows how to create and run a .NET console application by using Vi
 
 * [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) installed.
 
-  If you have the [C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) installed, uninstall or disable it. It offers advanced features for C# development, but it isn't used by this getting-started tutorial series.
+  If you have the [C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) installed, uninstall or disable it. It isn't used by this tutorial series.
 
   For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
 

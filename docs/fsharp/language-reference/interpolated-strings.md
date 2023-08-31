@@ -124,7 +124,7 @@ Note that the type annotation must be on the interpolated string expression itse
 
 ## Extended syntax for string interpolation
 
-When you work with text containing multiple `{`, `}` or `%` characters already, you can use extended string interpolation syntax to remove the need for escaping.
+Beginning with F# 8, when you work with text containing multiple `{`, `}` or `%` characters already, you can use extended string interpolation syntax to remove the need for escaping.
 
 Triple quote string literals can start with multiple `$` characters, which changes how many braces are required to open and close interpolation.
 In these string literals, `{` and `}` characters don't need to be escaped:

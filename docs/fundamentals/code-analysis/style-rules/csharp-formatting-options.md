@@ -36,7 +36,7 @@ csharp_new_line_before_members_in_anonymous_types = true
 csharp_new_line_between_query_expression_clauses = true
 ```
 
-### csharp\_new\_line\_before\_open_brace
+### csharp_new_line_before_open_brace
 
 This option concerns whether an open brace `{` should be placed on the same line as the preceding code, or on a new line. For this rule, you specify **all**, **none**, or one or more code elements such as **methods** or **properties**, to define when this rule should be applied. To specify multiple code elements, separate them with a comma (,).
 
@@ -44,11 +44,11 @@ This option concerns whether an open brace `{` should be placed on the same line
 |--------------------------|-----------------------------------|--------------------------------------------------------------------------|
 | **Option name**          | csharp_new_line_before_open_brace |                                                                          |
 | **Applicable languages** | C#                                |                                                                          |
-| **Introduced version**   | Visual Studio 2017   |                                                                          |
+| **Introduced version**   | Visual Studio 2017                |                                                                          |
 | **Option values**        | `all`                             | Require braces to be on a new line for all expressions ("Allman" style). |
 |                          | `none`                            | Require braces to be on the same line for all expressions ("K&R").       |
 |                          | `accessors`, `anonymous_methods`, `anonymous_types`, `control_blocks`, `events`, `indexers`,</br>`lambdas`, `local_functions`, `methods`, `object_collection_array_initializers`, `properties`, `types` | Require braces to be on a new line for the specified code element ("Allman" style). |
-| **Default value**        | `all`                             |                                                                          |
+| **Default option value** | `all`                             |                                                                          |
 
 Code examples:
 
@@ -70,16 +70,16 @@ void MyMethod() {
 }
 ```
 
-### csharp\_new\_line\_before_else
+### csharp_new_line_before_else
 
 | Property                 | Value                           | Description                               |
 | ------------------------ | ------------------------------- | ----------------------------------------- |
 | **Option name**          | csharp_new_line_before_else     |                                           |
 | **Applicable languages** | C#                              |                                           |
-| **Introduced version**   | Visual Studio 2017 |                                           |
+| **Introduced version**   | Visual Studio 2017              |                                           |
 | **Option values**        | `true`                          | Place `else` statements on a new line.    |
 |                          | `false`                         | Place `else` statements on the same line. |
-| **Default value**        | `true`                          |                                           |
+| **Default option value** | `true`                          |                                           |
 
 Code examples:
 
@@ -100,7 +100,7 @@ if (...) {
 }
 ```
 
-### csharp\_new\_line\_before_catch
+### csharp_new_line_before_catch
 
 | Property                 | Value                           | Description                                |
 | ------------------------ | ------------------------------- | ------------------------------------------ |
@@ -109,7 +109,7 @@ if (...) {
 | **Introduced version**   | Visual Studio 2017 |                                            |
 | **Option values**        | `true`                          | Place `catch` statements on a new line.    |
 |                          | `false`                         | Place `catch` statements on the same line. |
-| **Default value**        | `true`                          |                                            |
+| **Default option value** | `true`                          |                                            |
 
 Code examples:
 
@@ -130,7 +130,7 @@ try {
 }
 ```
 
-### csharp\_new\_line\_before_finally
+### csharp_new_line_before_finally
 
 | Property                 | Value                           | Description                                                               |
 | ------------------------ | ------------------------------- | ------------------------------------------------------------------------- |
@@ -139,7 +139,7 @@ try {
 | **Introduced version**   | Visual Studio 2017 |                                                                           |
 | **Option values**        | `true`                          | Require `finally` statements to be on a new line after the closing brace. |
 |                          | `false`                         | Require `finally` statements to be on the same line as the closing brace. |
-| **Default value**        | `true`                          |                                                                           |
+| **Default option value** | `true`                          |                                                                           |
 
 Code examples:
 
@@ -165,16 +165,16 @@ try {
 }
 ```
 
-### csharp\_new\_line\_before\_members\_in\_object_initializers
+### csharp_new_line_before_members_in_object_initializers
 
 | Property                 | Value                                                 | Description                                                    |
 | ------------------------ | ----------------------------------------------------- | -------------------------------------------------------------- |
 | **Option name**          | csharp_new_line_before_members_in_object_initializers |                                                                |
 | **Applicable languages** | C#                                                    |                                                                |
-| **Introduced version**   | Visual Studio 2017                       |                                                                |
+| **Introduced version**   | Visual Studio 2017                                    |                                                                |
 | **Option values**        | `true`                                                | Require members of object initializers to be on separate lines |
 |                          | `false`                                               | Require members of object initializers to be on the same line  |
-| **Default value**        | `true`                                                |                                                                |
+| **Default option value** | `true`                                                |                                                                |
 
 Code examples:
 
@@ -193,16 +193,16 @@ var z = new B()
 }
 ```
 
-### csharp\_new\_line\_before\_members\_in\_anonymous_types
+### csharp_new_line_before_members_in_anonymous_types
 
 | Property                 | Value                                             | Description                                                |
 | ------------------------ | ------------------------------------------------- | ---------------------------------------------------------- |
 | **Option name**          | csharp_new_line_before_members_in_anonymous_types |                                                            |
 | **Applicable languages** | C#                                                |                                                            |
-| **Introduced version**   | Visual Studio 2017                   |                                                            |
+| **Introduced version**   | Visual Studio 2017                                |                                                            |
 | **Option values**        | `true`                                            | Require members of anonymous types to be on separate lines |
 |                          | `false`                                           | Require members of anonymous types to be on the same line  |
-| **Default value**        | `true`                                            |                                                            |
+| **Default option value** | `true`                                            |                                                            |
 
 Code examples:
 
@@ -227,10 +227,10 @@ var z = new
 | ------------------------ | ------------------------------------------------ | -------------------------------------------------------------------- |
 | **Option name**          | csharp_new_line_between_query_expression_clauses |                                                                      |
 | **Applicable languages** | C#                                               |                                                                      |
-| **Introduced version**   | Visual Studio 2017                  |                                                                      |
+| **Introduced version**   | Visual Studio 2017                               |                                                                      |
 | **Option values**        | `true`                                           | Require elements of query expression clauses to be on separate lines |
 |                          | `false`                                          | Require elements of query expression clauses to be on the same line  |
-| **Default value**        | `true`                                           |                                                                      |
+| **Default option value** | `true`                                           |                                                                      |
 
 Code examples:
 
@@ -269,16 +269,16 @@ csharp_indent_braces = false
 csharp_indent_case_contents_when_block = true
 ```
 
-### csharp\_indent\_case_contents
+### csharp_indent_case_contents
 
 | Property                 | Value                           | Description                          |
 | ------------------------ | ------------------------------- | ------------------------------------ |
 | **Option name**          | csharp_indent_case_contents     |                                      |
 | **Applicable languages** | C#                              |                                      |
-| **Introduced version**   | Visual Studio 2017 |                                      |
+| **Introduced version**   | Visual Studio 2017              |                                      |
 | **Option values**        | `true`                          | Indent `switch` case contents        |
 |                          | `false`                         | Do not indent `switch` case contents |
-| **Default value**        | `true`                          |                                      |
+| **Default option value** | `true`                          |                                      |
 
 Code examples:
 
@@ -310,16 +310,16 @@ switch(c) {
 }
 ```
 
-### csharp\_indent\_switch_labels
+### csharp_indent_switch_labels
 
 | Property                 | Value                           | Description                   |
 | ------------------------ | ------------------------------- | ----------------------------- |
 | **Option name**          | csharp_indent_switch_labels     |                               |
 | **Applicable languages** | C#                              |                               |
-| **Introduced version**   | Visual Studio 2017 |                               |
+| **Introduced version**   | Visual Studio 2017              |                               |
 | **Option values**        | `true`                          | Indent `switch` labels        |
 |                          | `false`                         | Do not indent `switch` labels |
-| **Default value**        | `true`                          |                               |
+| **Default option value** | `true`                          |                               |
 
 Code examples:
 
@@ -351,17 +351,17 @@ default:
 }
 ```
 
-### csharp\_indent_labels
+### csharp_indent_labels
 
 | Property                 | Value                           | Description                                                 |
 | ------------------------ | ------------------------------- | ----------------------------------------------------------- |
 | **Option name**          | csharp_indent_labels            |                                                             |
 | **Applicable languages** | C#                              |                                                             |
-| **Introduced version**   | Visual Studio 2017 |                                                             |
+| **Introduced version**   | Visual Studio 2017              |                                                             |
 | **Option values**        | `flush_left`                    | Labels are placed at the leftmost column                    |
 |                          | `one_less_than_current`         | Labels are placed at one less indent to the current context |
 |                          | `no_change`                     | Labels are placed at the same indent as the current context |
-| **Default value**        | `one_less_than_current`         |                                                             |
+| **Default option value** | `one_less_than_current`         |                                                             |
 
 Code examples:
 
@@ -414,7 +414,7 @@ class C
 | **Applicable languages** | C#                           |                              |
 | **Option values**        | `true`                       | Indent block contents.       |
 |                          | `false`                      | Don't indent block contents. |
-| **Default value**        | `true`                       |                              |
+| **Default option value** | `true`                       |                              |
 
 Code examples:
 
@@ -440,7 +440,7 @@ Console.WriteLine("Hello");
 | **Applicable languages** | C#                   |                            |
 | **Option values**        | `true`               | Indent curly braces.       |
 |                          | `false`              | Don't indent curly braces. |
-| **Default value**        | `false`              |                            |
+| **Default option value** | `false`              |                            |
 
 Code examples:
 
@@ -466,7 +466,7 @@ static void Hello()
 | **Applicable languages** | C#                                     |                                                                                                       |
 | **Option values**        | `true`                                 | When it's a block, indent the statement list and curly braces for a case in a switch statement.       |
 |                          | `false`                                | When it's a block, don't indent the statement list and curly braces for a case in a switch statement. |
-| **Default value**        | `true`                                 |                                                                                                       |
+| **Default option value** | `true`                                 |                                                                                                       |
 
 Code examples:
 
@@ -542,16 +542,16 @@ csharp_space_between_empty_square_brackets = false
 csharp_space_between_square_brackets = false
 ```
 
-### csharp\_space\_after_cast
+### csharp_space_after_cast
 
 | Property                 | Value                           | Description                                          |
 | ------------------------ | ------------------------------- | ---------------------------------------------------- |
 | **Option name**          | csharp_space_after_cast         |                                                      |
 | **Applicable languages** | C#                              |                                                      |
-| **Introduced version**   | Visual Studio 2017 |                                                      |
+| **Introduced version**   | Visual Studio 2017              |                                                      |
 | **Option values**        | `true`                          | Place a space character between a cast and the value |
 |                          | `false`                         | Remove space between the cast and the value          |
-| **Default value**        | `false`                         |                                                      |
+| **Default option value** | `false`                         |                                                      |
 
 Code examples:
 
@@ -569,10 +569,10 @@ int y = (int)x;
 | ------------------------ | ------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
 | **Option name**          | csharp_space_after_keywords_in_control_flow_statements |                                                                                          |
 | **Applicable languages** | C#                                                     |                                                                                          |
-| **Introduced version**   | Visual Studio 2017                        |                                                                                          |
+| **Introduced version**   | Visual Studio 2017                                     |                                                                                          |
 | **Option values**        | `true`                                                 | Place a space character after a keyword in a control flow statement such as a `for` loop |
 |                          | `false`                                                | Remove space after a keyword in a control flow statement such as a `for` loop            |
-| **Default value**        | `true`                                                 |                                                                                          |
+| **Default option value** | `true`                                                 |                                                                                          |
 
 Code examples:
 
@@ -590,7 +590,7 @@ for(int i;i<x;i++) { ... }
 | ------------------------ | -------------------------------- | ---------------------------------------------------------- |
 | **Option name**          | csharp_space_between_parentheses |                                                            |
 | **Applicable languages** | C#                               |                                                            |
-| **Introduced version**   | Visual Studio 2017  |                                                            |
+| **Introduced version**   | Visual Studio 2017               |                                                            |
 | **Option values**        | `control_flow_statements`        | Place space between parentheses of control flow statements |
 |                          | `expressions`                    | Place space between parentheses of expressions             |
 |                          | `type_casts`                     | Place space between parentheses in type casts              |
@@ -610,16 +610,16 @@ var z = ( x * y ) - ( ( y - x ) * 3 );
 int y = ( int )x;
 ```
 
-### csharp\_space\_before\_colon\_in\_inheritance_clause
+### csharp_space_before_colon_in_inheritance_clause
 
 | Property                 | Value                                           | Description                                                                            |
 | ------------------------ | ----------------------------------------------- | -------------------------------------------------------------------------------------- |
 | **Option name**          | csharp_space_before_colon_in_inheritance_clause |                                                                                        |
 | **Applicable languages** | C#                                              |                                                                                        |
-| **Introduced version**   | Visual Studio 2017                 |                                                                                        |
+| **Introduced version**   | Visual Studio 2017                              |                                                                                        |
 | **Option values**        | `true`                                          | Place a space character before the colon for bases or interfaces in a type declaration |
 |                          | `false`                                         | Remove space before the colon for bases or interfaces in a type declaration            |
-| **Default value**        | `true`                                          |                                                                                        |
+| **Default option value** | `true`                                          |                                                                                        |
 
 Code examples:
 
@@ -647,16 +647,16 @@ class C: I
 }
 ```
 
-### csharp\_space\_after\_colon\_in\_inheritance_clause
+### csharp_space_after_colon_in_inheritance_clause
 
 | Property                 | Value                                          | Description                                                                           |
 | ------------------------ | ---------------------------------------------- | ------------------------------------------------------------------------------------- |
 | **Option name**          | csharp_space_after_colon_in_inheritance_clause |                                                                                       |
 | **Applicable languages** | C#                                             |                                                                                       |
-| **Introduced version**   | Visual Studio 2017                |                                                                                       |
+| **Introduced version**   | Visual Studio 2017                             |                                                                                       |
 | **Option values**        | `true`                                         | Place a space character after the colon for bases or interfaces in a type declaration |
 |                          | `false`                                        | Remove space after the colon for bases or interfaces in a type declaration            |
-| **Default value**        | `true`                                         |                                                                                       |
+| **Default option value** | `true`                                         |                                                                                       |
 
 Code examples:
 
@@ -684,17 +684,17 @@ class C :I
 }
 ```
 
-### csharp\_space\_around\_binary_operators
+### csharp_space_around_binary_operators
 
 | Property                 | Value                                | Description                                        |
 | ------------------------ | ------------------------------------ | -------------------------------------------------- |
 | **Option name**          | csharp_space_around_binary_operators |                                                    |
 | **Applicable languages** | C#                                   |                                                    |
-| **Introduced version**   | Visual Studio 2017      |                                                    |
+| **Introduced version**   | Visual Studio 2017                   |                                                    |
 | **Option values**        | `before_and_after`                   | Insert space before and after the binary operator  |
 |                          | `none`                               | Remove spaces before and after the binary operator |
 |                          | `ignore`                             | Ignore spaces around binary operators              |
-| **Default value**        | `before_and_after`                   |                                                    |
+| **Default option value** | `before_and_after`                   |                                                    |
 
 Code examples:
 
@@ -715,10 +715,10 @@ return x  *  (x-y);
 |--------------------------|--------------------------------------------------------------------|-------------|
 | **Option name**          | csharp_space_between_method_declaration_parameter_list_parentheses |             |
 | **Applicable languages** | C#                                                                 |             |
-| **Introduced version**   | Visual Studio 2017                                    |             |
+| **Introduced version**   | Visual Studio 2017                                                 |             |
 | **Option values**        | `true` | Place a space character after the opening parenthesis and before the closing parenthesis of a method declaration parameter list |
 |                          | `false` | Remove space characters after the opening parenthesis and before the closing parenthesis of a method declaration parameter list |
-| **Default value**        | `false`                                                            |             |
+| **Default option value** | `false`                                                            |             |
 
 Code examples:
 
@@ -736,10 +736,10 @@ void Bark(int x) { ... }
 |--------------------------|--------------------------------------------------------------------------|--------------|
 | **Option name**          | csharp_space_between_method_declaration_empty_parameter_list_parentheses |              |
 | **Applicable languages** | C#                                                                       |              |
-| **Introduced version**   | Visual Studio 2017                                          |              |
+| **Introduced version**   | Visual Studio 2017                                                       |              |
 | **Option values**        | `true` | Insert space within empty parameter list parentheses for a method declaration  |
 |                          | `false` | Remove space within empty parameter list parentheses for a method declaration |
-| **Default value**        | `false`                                                                  |              |
+| **Default option value** | `false`                                                                  |              |
 
 Code examples:
 
@@ -775,7 +775,7 @@ void Goo(int x)
 | **Applicable languages** | C#                                                                |             |
 | **Option values**        | `true` | Place a space character between the method name and opening parenthesis in the method declaration |
 |                          | `false` | Remove space characters between the method name and opening parenthesis in the method declaration |
-| **Default value**        | `false` |                                                                                                   |
+| **Default option value** | `false` |                                                                                                   |
 
 Code examples:
 
@@ -793,10 +793,10 @@ void M() { }
 |--------------------------|-------------------------------------------------------------|-------------|
 | **Option name**          | csharp_space_between_method_call_parameter_list_parentheses |             |
 | **Applicable languages** | C#                                                          |             |
-| **Introduced version**   | Visual Studio 2017                             |             |
+| **Introduced version**   | Visual Studio 2017                                          |             |
 | **Option values**        | `true` | Place a space character after the opening parenthesis and before the closing parenthesis of a method call |
 |                          | `false` | Remove space characters after the opening parenthesis and before the closing parenthesis of a method call |
-| **Default value**        | `false` |                                                                                                           |
+| **Default option value** | `false` |                                                                                                           |
 
 Code examples:
 
@@ -814,10 +814,10 @@ MyMethod(argument);
 | ------------------------ | ----------------------------------------------------------------- | --------------------------------------------------- |
 | **Option name**          | csharp_space_between_method_call_empty_parameter_list_parentheses |                                                     |
 | **Applicable languages** | C#                                                                |                                                     |
-| **Introduced version**   | Visual Studio 2017                                   |                                                     |
+| **Introduced version**   | Visual Studio 2017                                                |                                                     |
 | **Option values**        | `true`                                                            | Insert space within empty argument list parentheses |
 |                          | `false`                                                           | Remove space within empty argument list parentheses |
-| **Default value**        | `false`                                                           |                                                     |
+| **Default option value** | `false`                                                           |                                                     |
 
 Code examples:
 
@@ -851,10 +851,10 @@ void Goo(int x)
 | ------------------------ | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | **Option name**          | csharp_space_between_method_call_name_and_opening_parenthesis |                                                               |
 | **Applicable languages** | C#                                                            |                                                               |
-| **Introduced version**   | Visual Studio 2017                               |                                                               |
+| **Introduced version**   | Visual Studio 2017                                            |                                                               |
 | **Option values**        | `true`                                                        | Insert space between method call name and opening parenthesis |
 |                          | `false`                                                       | Remove space between method call name and opening parenthesis |
-| **Default value**        | `false`                                                       |                                                               |
+| **Default option value** | `false`                                                       |                                                               |
 
 Code examples:
 
@@ -890,7 +890,7 @@ void Goo(int x)
 | **Applicable languages** | C#                       |                            |
 | **Option values**        | `true`                   | Insert space after a comma |
 |                          | `false`                  | Remove space after a comma |
-| **Default value**        | `true`                   |                            |
+| **Default option value** | `true`                   |                            |
 
 Code examples:
 
@@ -910,7 +910,7 @@ int[] x = new int[] { 1,2,3,4,5 };
 | **Applicable languages** | C#                        |                             |
 | **Option values**        | `true`                    | Insert space before a comma |
 |                          | `false`                   | Remove space before a comma |
-| **Default value**        | `false`                   |                             |
+| **Default option value** | `false`                   |                             |
 
 Code examples:
 
@@ -930,7 +930,7 @@ int[] x = new int[] { 1, 2, 3, 4, 5 };
 | **Applicable languages** | C#                     |                          |
 | **Option values**        | `true`                 | Insert space after a dot |
 |                          | `false`                | Remove space after a dot |
-| **Default value**        | `false`                |                          |
+| **Default option value** | `false`                |                          |
 
 Code examples:
 
@@ -950,7 +950,7 @@ this.Goo();
 | **Applicable languages** | C#                      |                           |
 | **Option values**        | `true`                  | Insert space before a dot |
 |                          | `false`                 | Remove space before a dot |
-| **Default value**        | `false`                 |                           |
+| **Default option value** | `false`                 |                           |
 
 Code examples:
 
@@ -970,7 +970,7 @@ this.Goo();
 | **Applicable languages** | C#                                            |                                                        |
 | **Option values**        | `true`                                        | Insert space after each semicolon in a `for` statement |
 |                          | `false`                                       | Remove space after each semicolon in a `for` statement |
-| **Default value**        | `true`                                        |                                                        |
+| **Default option value** | `true`                                        |                                                        |
 
 Code examples:
 
@@ -990,7 +990,7 @@ for (int i = 0;i < x.Length;i++)
 | **Applicable languages** | C#                                             |                                                         |
 | **Option values**        | `true`                                         | Insert space before each semicolon in a `for` statement |
 |                          | `false`                                        | Remove space before each semicolon in a `for` statement |
-| **Default value**        | `false`                                        |                                                         |
+| **Default option value** | `false`                                        |                                                         |
 
 Code examples:
 
@@ -1010,7 +1010,7 @@ for (int i = 0; i < x.Length; i++)
 | **Applicable languages** | C#                                         |                                                               |
 | **Option values**        | `ignore`                                   | Don't remove extra space characters in declaration statements |
 |                          | `false`                                    | Remove extra space characters in declaration statements       |
-| **Default value**        | `false`                                    |                                                               |
+| **Default option value** | `false`                                    |                                                               |
 
 Code examples:
 
@@ -1030,7 +1030,7 @@ int x = 0;
 | **Applicable languages** | C#                                       |                                                 |
 | **Option values**        | `true`                                   | Insert space before opening square brackets `[` |
 |                          | `false`                                  | Remove space before opening square brackets `[` |
-| **Default value**        | `false`                                  |                                                 |
+| **Default option value** | `false`                                  |                                                 |
 
 Code examples:
 
@@ -1050,7 +1050,7 @@ int[] numbers = new int[] { 1, 2, 3, 4, 5 };
 | **Applicable languages** | C#                                         |                                                  |
 | **Option values**        | `true`                                     | Insert space between empty square brackets `[ ]` |
 |                          | `false`                                    | Remove space between empty square brackets `[]`  |
-| **Default value**        | `false`                                    |                                                  |
+| **Default option value** | `false`                                    |                                                  |
 
 Code examples:
 
@@ -1070,7 +1070,7 @@ int[] numbers = new int[] { 1, 2, 3, 4, 5 };
 | **Applicable languages** | C#                                   |                                                              |
 | **Option values**        | `true`                               | Insert space characters in non-empty square brackets `[ 0 ]` |
 |                          | `false`                              | Remove space characters in non-empty square brackets `[0]`   |
-| **Default value**        | `false`                              |                                                              |
+| **Default option value** | `false`                              |                                                              |
 
 Code examples:
 
@@ -1104,10 +1104,10 @@ csharp_preserve_single_line_blocks = true
 | ------------------------ | -------------------------------------- | ----------------------------------------------------------- |
 | **Option name**          | csharp_preserve_single_line_statements |                                                             |
 | **Applicable languages** | C#                                     |                                                             |
-| **Introduced version**   | Visual Studio 2017        |                                                             |
+| **Introduced version**   | Visual Studio 2017                     |                                                             |
 | **Option values**        | `true`                                 | Leave statements and member declarations on the same line   |
 |                          | `false`                                | Leave statements and member declarations on different lines |
-| **Default value**        | `true`                                 |                                                             |
+| **Default option value** | `true`                                 |                                                             |
 
 Code examples:
 
@@ -1126,10 +1126,10 @@ string name = "John";
 | ------------------------ | ---------------------------------- | ---------------------------------- |
 | **Option name**          | csharp_preserve_single_line_blocks |                                    |
 | **Applicable languages** | C#                                 |                                    |
-| **Introduced version**   | Visual Studio 2017    |                                    |
+| **Introduced version**   | Visual Studio 2017                 |                                    |
 | **Option values**        | `true`                             | Leave code block on single line    |
 |                          | `false`                            | Leave code block on separate lines |
-| **Default value**        | `true`                             |                                    |
+| **Default option value** | `true`                             |                                    |
 
 Code examples:
 

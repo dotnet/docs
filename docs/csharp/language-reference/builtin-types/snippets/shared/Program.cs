@@ -61,8 +61,5 @@ class Program
         NativeIntegerTypes.Examples();
         Console.WriteLine();
 
-        Console.WriteLine("============ Collection expressions =================");
-        CollectionExpressionExamples.Examples();
-        Console.WriteLine();
     }
 }

@@ -34,14 +34,14 @@ The spread element `..vowels`, when evaluated, produces five elements: `"a"`, `"
 A *collection expression* can be converted to different collection types, including:
 
 - <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>
-- [Inline arrays](struct.md#inline-arrays)
-- [Arrays](arrays.md)
+- [Inline arrays](../builtin-types/struct.md#inline-arrays)
+- [Arrays](../builtin-types/arrays.md)
 - Any type with a *create* method whose parameter type is `ReadOnlySpan<T>` where there's an implicit conversion from the collection expression type to `T`.
 - Any type that supports a [collection initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md#collection-initializers), such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. Usually, this requirement means the type supports <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> and there's an accessible `Add` method to add items to the collection. There must be an implicit conversion from the collection expression elements' type to the collection's element type. For spread elements, there must be an implicit conversion from the spread element's type to the collection's element type.
 
 Many APIs are overloaded with multiple collection types as parameters. Because a collection expression can be converted to many different expression types, these APIs may require casts on the collection expression to specify the correct conversion. The following conversion rules resolve some of the ambiguities:
 
-- Conversion to <xref:System.Span%601>, <xref:System.ReadOnlySpan%601>, or another [`ref struct`](./ref-struct.md) type is better than a conversion to a non-ref struct type.
+- Conversion to <xref:System.Span%601>, <xref:System.ReadOnlySpan%601>, or another [`ref struct`](../builtin-types/ref-struct.md) type is better than a conversion to a non-ref struct type.
 - Conversion to a noninterface type is better than a conversion to an interface type.
 
 When a collection expression is converted to a `Span` or `ReadOnlySpan`, the span object's *safe context* is taken from the *safe context* of all elements included in the span. For detailed rules, see the [Collection expression specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md#ref-safety).

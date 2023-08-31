@@ -36,6 +36,8 @@ To get the most up-to-date trimming warnings and analyzer coverage:
 * Install and use the .NET 8 SDK or later
 * Target `net8.0` or later.
 
+:::zone-end
+
 :::zone pivot="dotnet-8-0"
 
 [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet) or later.

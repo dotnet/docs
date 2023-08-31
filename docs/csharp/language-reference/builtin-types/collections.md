@@ -24,9 +24,11 @@ You can find all the collection types in the [.NET API reference](/dotnet/api/?t
 
 <xref:System.Span%601?displayProperty=nameWithType> is a [`ref struct`](./ref-struct.md) type that provides a snapshot over a sequence of elements without copying those elements. The compiler enforces safety rules to ensure the `Span` can't be accessed after the sequence it references is no longer in scope. It's used in many .NET APIs to improve performance. <xref:System.Memory%601> provides similar behavior when you can't use a `ref struct` type.
 
+Beginning with C# 12, all of the collection types can be initialized using a [Collection expression](../operators/collection-expressions.md).
+
 ## Indexable collections
 
-These examples use the <xref:System.Collections.Generic.List%601> class. It's the most common indexable collection.
+An *indexable collection* is one where you can access each element using its index. Its *index* is the number of elements before it in the sequence. Therefore, the element reference by index `0` is the first element, index `1` is the second, and so on. These examples use the <xref:System.Collections.Generic.List%601> class. It's the most common indexable collection.
 
 The following example creates and initializes a list of strings, removes an element, and adds an element to the end of the list. After each modification, it iterates through the strings by using a [foreach](../statements/iteration-statements.md#the-foreach-statement) statement or a `for` loop:
 

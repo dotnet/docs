@@ -819,9 +819,6 @@ items:
           href: language-reference/builtin-types/collections.md
         - name: Arrays
           href: language-reference/builtin-types/arrays.md
-        - name: Collection expressions
-          displayName: Collection literal, ".. token", ".. symbol"
-          href: language-reference/builtin-types/collection-expressions.md 
     - name: void
       href: language-reference/builtin-types/void.md
     - name: Built-in types
@@ -1005,6 +1002,9 @@ items:
     - name: Bitwise and shift operators
       href: language-reference/operators/bitwise-and-shift-operators.md
       displayName: "~, &, |, ^, <<, >>, &=, |=, ^=, <<=, >>=, AND, XOR, OR"
+    - name: Collection expressions
+      displayName: Collection literal, ".. token", ".. symbol", "[] token", "[] symbol"
+      href: language-reference/operators/collection-expressions.md 
     - name: Equality operators
       href: language-reference/operators/equality-operators.md
       displayName: ==, !=

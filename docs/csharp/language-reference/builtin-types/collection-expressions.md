@@ -17,7 +17,7 @@ A *collection expression* can be converted to many different collection types. T
 
 You can't use a collection expression where a compile-time constant is expected, such as initializing a constant, or as the default value for a method argument.
 
-All the previous examples have used constants as the elements of a collection expression. You can also use variables for the elements as shown in the following example:
+Both of the previous examples used constants as the elements of a collection expression. You can also use variables for the elements as shown in the following example:
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="UseVariables":::
 
@@ -34,14 +34,14 @@ The spread element `..vowels`, when evaluated, produces five elements: `"a"`, `"
 A *collection expression* can be converted to different collection types, including:
 
 - <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>
-- [inline arrays](struct.md#inline-arrays)
-- [arrays](arrays.md)
+- [Inline arrays](struct.md#inline-arrays)
+- [Arrays](arrays.md)
 - Any type with a *create* method whose parameter type is `ReadOnlySpan<T>` where there's an implicit conversion from the collection expression type to `T`.
-- Any type that supports a [collection initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md#collection-initializers), such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. Usually, this requirement means the type supports <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> and there's an accessible `Add` method to add items to the collection. There must be an implicit conversion from the collection expression elements' type to the collection's element type. For spread elements, there must be an implicit conversion from the spread element's element type to the collection's element type.
+- Any type that supports a [collection initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md#collection-initializers), such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. Usually, this requirement means the type supports <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> and there's an accessible `Add` method to add items to the collection. There must be an implicit conversion from the collection expression elements' type to the collection's element type. For spread elements, there must be an implicit conversion from the spread element's type to the collection's element type.
 
 Many APIs are overloaded with multiple collection types as parameters. Because a collection expression can be converted to many different expression types, these APIs may require casts on the collection expression to specify the correct conversion. The following conversion rules resolve some of the ambiguities:
 
-- Conversion to <xref:System.Span%601>, <xref:System.ReadOnlySpan%601> or another [`ref struct`](./ref-struct.md) type is better than a conversion to a non-ref struct type.
+- Conversion to <xref:System.Span%601>, <xref:System.ReadOnlySpan%601>, or another [`ref struct`](./ref-struct.md) type is better than a conversion to a non-ref struct type.
 - Conversion to a noninterface type is better than a conversion to an interface type.
 
 When a collection expression is converted to a `Span` or `ReadOnlySpan`, the span object's *safe context* is taken from the *safe context* of all elements included in the span. For detailed rules, see the [Collection expression specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md#ref-safety).
@@ -56,7 +56,7 @@ You'd like to use it with collection expressions as shown in the following sampl
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="CustomBuilderUsage":::
 
-The `LineBuffer` type implements `IEnumerable<char>`, so the compiler recognizes it as a collection of `char` items. The type parameter of the implemented <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface indicates the element type. You need to make two additions to your application for you to be able to assign collection expressions to a `LineBuffer` object. First, you need to create a class that contains a `Create` method:
+The `LineBuffer` type implements `IEnumerable<char>`, so the compiler recognizes it as a collection of `char` items. The type parameter of the implemented <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface indicates the element type. You need to make two additions to your application to be able to assign collection expressions to a `LineBuffer` object. First, you need to create a class that contains a `Create` method:
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="BuilderClass":::
 

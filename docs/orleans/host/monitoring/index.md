@@ -79,6 +79,140 @@ Press p to pause, r to resume, q to quit.
 
 For more information, see [Investigate performance counters (dotnet-counters)](../../../core/diagnostics/dotnet-counters.md).
 
+### Orleans meters
+
+Orleans uses the [System.Diagnostics.Metrics](../../../core/diagnostics/compare-metric-apis.md#systemdiagnosticsmetrics) APIs to collect metrics. The following table represents the Orleans meters that are available for you to monitor:
+
+| Meter name | Discriminator | Description |
+|--|--|--|
+| `orleans-networking-sockets-closed` | Networking | ... |
+| `orleans-networking-sockets-opened` | Networking | ... |
+| `orleans-messaging-sent-messages-size` | Messaging | ... |
+| `orleans-messaging-received-messages-size` | Messaging | ... |
+| `orleans-messaging-sent-header-size` | Messaging | ... |
+| `orleans-messaging-sent-failed` | Messaging | ... |
+| `orleans-messaging-sent-dropped` | Messaging | ... |
+| `orleans-messaging-received-header-size` | Messaging | ... |
+| `orleans-messaging-processing-dispatcher-received` | Messaging | ... |
+| `orleans-messaging-processing-dispatcher-processed` | Messaging | ... |
+| `orleans-messaging-processing-dispatcher-forwarded` | Messaging | ... |
+| `orleans-messaging-processing-ima-received` | Messaging | ... |
+| `orleans-messaging-processing-ima-enqueued` | Messaging | ... |
+| `orleans-messaging-processing-activation-data` | Messaging | ... |
+| `orleans-messaging-pings-sent` | Messaging | ... |
+| `orleans-messaging-pings-received` | Messaging | ... |
+| `orleans-messaging-pings-reply-received` | Messaging | ... |
+| `orleans-messaging-pings-reply-missed` | Messaging | ... |
+| `orleans-messaging-expired"` | Messaging | ... |
+| `orleans-messaging-rejected` | Messaging | ... |
+| `orleans-messaging-rerouted` | Messaging | ... |
+| `orleans-messaging-sent-local` | Messaging | ... |
+| `orleans-gateway-connected-clients` | Gateway | ... |
+| `orleans-gateway-sent` | Gateway | ... |
+| `orleans-gateway-received` | Gateway | ... |
+| `orleans-gateway-load-shedding` | Gateway | ... |
+| `orleans-scheduler-long-running-turns` | Runtime | ... |
+| `orleans-runtime-total-physical-memory` | Runtime | ... |
+| `orleans-runtime-available-memory` | Runtime | ... |
+| `orleans-catalog-activations` | Catalog | ... |
+| `orleans-catalog-activation-working-set` | Catalog | ... |
+| `orleans-catalog-activation-created` | Catalog | ... |
+| `orleans-catalog-activation-destroyed` | Catalog | ... |
+| `orleans-catalog-activation-failed-to-activate` | Catalog | ... |
+| `orleans-catalog-activation-collections` | Catalog | ... |
+| `orleans-catalog-activation-shutdown` | Catalog | ... |
+| `orleans-catalog-activation-non-existent` | Catalog | ... |
+| `orleans-catalog-activation-concurrent-registration-attempts` | Catalog | ... |
+| `orleans-directory-lookups-local-issued` | Directory | ... |
+| `orleans-directory-lookups-local-successes` | Directory | ... |
+| `orleans-directory-lookups-full-issued` | Directory | ... |
+| `orleans-directory-lookups-remote-sent` | Directory | ... |
+| `orleans-directory-lookups-remote-received` | Directory | ... |
+| `orleans-directory-lookups-local-directory-issued` | Directory | ... |
+| `orleans-directory-lookups-local-directory-successes` | Directory | ... |
+| `orleans-directory-lookups-cache-issued` | Directory | ... |
+| `orleans-directory-lookups-cache-successes` | Directory | ... |
+| `orleans-directory-validations-cache-sent` | Directory | ... |
+| `orleans-directory-validations-cache-received` | Directory | ... |
+| `orleans-directory-partition-size` | Directory | ... |
+| `orleans-directory-cache-size` | Directory | ... |
+| `orleans-directory-ring-size` | Directory | ... |
+| `orleans-directory-ring-local-portion-distance` | Directory | ... |
+| `orleans-directory-ring-local-portion-percentage` | Directory | ... |
+| `orleans-directory-ring-local-portion-average-percentage` | Directory | ... |
+| `orleans-directory-registrations-single-act-issued` | Directory | ... |
+| `orleans-directory-registrations-single-act-local` | Directory | ... |
+| `orleans-directory-registrations-single-act-remote-sent` | Directory | ... |
+| `orleans-directory-registrations-single-act-remote-received` | Directory | ... |
+| `orleans-directory-unregistrations-issued` | Directory | ... |
+| `orleans-directory-unregistrations-local` | Directory | ... |
+| `orleans-directory-unregistrations-remote-sent` | Directory | ... |
+| `orleans-directory-unregistrations-remote-received` | Directory | ... |
+| `orleans-directory-unregistrations-many-issued` | Directory | ... |
+| `orleans-directory-unregistrations-many-remote-sent` | Directory | ... |
+| `orleans-directory-unregistrations-many-remote-received` | Directory | ... |
+| `orleans-consistent-ring-size` | Consistent ring | ... |
+| `orleans-consistent-ring-range-percentage-local` | Consistent ring | ... |
+| `orleans-consistent-ring-range-percentage-average` | Consistent ring | ... |
+| `orleans-watchdog-health-checks` | Watchdog | ... |
+| `orleans-watchdog-health-checks-failed` | Watchdog | ... |
+| `orleans-client-connected-gateways` | Client | ... |
+| `orleans-grains` | Miscellaneous | ... |
+| `orleans-system-targets` | Miscellaneous | ... |
+| `orleans-app-requests-latency` | App requests | ... |
+| `orleans-app-requests-timedout` | App requests | ... |
+| `orleans-reminders-tardiness` | Reminders | ... |
+| `orleans-reminders-active` | Reminders | ... |
+| `orleans-reminders-ticks-delivered` | Reminders | ... |
+| `orleans-storage-read-errors` | Storage | ... |
+| `orleans-storage-write-errors` | Storage | ... |
+| `orleans-storage-clear-errors` | Storage | ... |
+| `orleans-storage-read-latency` | Storage | ... |
+| `orleans-storage-write-latency` | Storage | ... |
+| `orleans-storage-clear-latency` | Storage | ... |
+| `orleans-streams-pubsub-producers-added` | Streams | ... |
+| `orleans-streams-pubsub-producers-removed` | Streams | ... |
+| `orleans-streams-pubsub-producers` | Streams | ... |
+| `orleans-streams-pubsub-consumers-added` | Streams | ... |
+| `orleans-streams-pubsub-consumers-removed` | Streams | ... |
+| `orleans-streams-pubsub-consumers` | Streams | ... |
+| `orleans-streams-persistent-stream-pulling-agents` | Streams | ... |
+| `orleans-streams-persistent-stream-messages-read` | Streams | ... |
+| `orleans-streams-persistent-stream-messages-sent` | Streams | ... |
+| `orleans-streams-persistent-stream-pubsub-cache-size` | Streams | ... |
+| `orleans-streams-queue-initialization-failures` | Streams | ... |
+| `orleans-streams-queue-initialization-duration` | Streams | ... |
+| `orleans-streams-queue-initialization-exceptions` | Streams | ... |
+| `orleans-streams-queue-read-failures` | Streams | ... |
+| `orleans-streams-queue-read-duration` | Streams | ... |
+| `orleans-streams-queue-read-exceptions` | Streams | ... |
+| `orleans-streams-queue-shutdown-failures` | Streams | ... |
+| `orleans-streams-queue-shutdown-duration` | Streams | ... |
+| `orleans-streams-queue-shutdown-exceptions` | Streams | ... |
+| `orleans-streams-queue-messages-received` | Streams | ... |
+| `orleans-streams-queue-oldest-message-enqueue-age` | Streams | ... |
+| `orleans-streams-queue-newest-message-enqueue-age` | Streams | ... |
+| `orleans-streams-block-pool-total-memory` | Streams | ... |
+| `orleans-streams-block-pool-available-memory` | Streams | ... |
+| `orleans-streams-block-pool-claimed-memory` | Streams | ... |
+| `orleans-streams-block-pool-released-memory` | Streams | ... |
+| `orleans-streams-block-pool-allocated-memory` | Streams | ... |
+| `orleans-streams-queue-cache-size` | Streams | ... |
+| `orleans-streams-queue-cache-length` | Streams | ... |
+| `orleans-streams-queue-cache-messages-added` | Streams | ... |
+| `orleans-streams-queue-cache-messages-purged` | Streams | ... |
+| `orleans-streams-queue-cache-memory-allocated` | Streams | ... |
+| `orleans-streams-queue-cache-memory-released` | Streams | ... |
+| `orleans-streams-queue-cache-oldest-to-newest-duration` | Streams | ... |
+| `orleans-streams-queue-cache-oldest-age` | Streams | ... |
+| `orleans-streams-queue-cache-pressure` | Streams | ... |
+| `orleans-streams-queue-cache-under-pressure` | Streams | ... |
+| `orleans-streams-queue-cache-pressure-contribution-count` | Streams | ... |
+| `orleans-transactions-started` | Transactions | ... |
+| `orleans-transactions-successful` | Transactions | ... |
+| `orleans-transactions-failed` | Transactions | ... |
+| `orleans-transactions-throttled` | Transactions | ... |
+
 ### Prometheus
 
 There are various third-party metrics providers that you can use with Orleans. One popular example is [Prometheus](https://prometheus.io), which can be used to collect metrics from your app with OpenTelemetry.

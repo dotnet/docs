@@ -57,6 +57,12 @@ For more information about managing `HttpClient` lifetime with `IHttpClientFacto
 It's possible to configure a `static` or *singleton* client to use any number of resilience policies using the following pattern:
 
 ```csharp
+using System;
+using System.Net.Http;
+using Microsoft.Extensions.Http;
+using Polly;
+using Polly.Extensions.Http;
+
 var retryPolicy = HttpPolicyExtensions
     .HandleTransientHttpError()
     .WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)));
@@ -69,6 +75,14 @@ var pollyHandler = new PolicyHttpMessageHandler(retryPolicy)
 
 var httpClient = new HttpClient(pollyHandler);
 ```
+
+The preceding code:
+
+- Relies on [Microsoft.Extensions.Http.Polly](https://www.nuget.org/packages/Microsoft.Extensions.Http.Polly) NuGet package, transitively the [Polly.Extensions.Http](https://www.nuget.org/packages/Polly.Extensions.Http) NuGet package for the `HttpPolicyExtensions` type.
+- Specifies a transient HTTP error handler, configured with retry policy that with each attempt will exponentially backoff delay intervals.
+- Defines a pooled connection lifetime of fifteen minutes for the `socketHandler`.
+- Passes the `socketHandler` to the `policyHandler` with the retry logic.
+- Instantiates an `HttpClient` given the `policyHandler`.
 
 ## See also
 

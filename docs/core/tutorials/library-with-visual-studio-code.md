@@ -1,7 +1,7 @@
 ---
 title: Create a .NET class library using Visual Studio Code
 description: Learn how to create a .NET class library using Visual Studio Code.
-ms.date: 08/25/2023
+ms.date: 08/30/2023
 zone_pivot_groups: dotnet-version-6-8
 recommendations: false
 ---
@@ -17,8 +17,13 @@ When you create a class library, you can distribute it as a third-party componen
 
 ## Prerequisites
 
-* [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) installed. For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
-* The [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet/7.0).
+* [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) installed.
+
+  If you have the [C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) installed, uninstall or disable it. It isn't used by this tutorial series.
+
+  For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
+
+* The [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0).
 
 ## Create a solution
 
@@ -81,15 +86,15 @@ Add a new .NET class library project named "StringLibrary" to the solution.
    Project `StringLibrary\StringLibrary.csproj` added to the solution.
    ```
 
-1. Check to make sure that the library targets .NET 7. In **Explorer**, open *StringLibrary/StringLibrary.csproj*.
+1. Check to make sure that the library targets .NET 8. In **Explorer**, open *StringLibrary/StringLibrary.csproj*.
 
-   The `TargetFramework` element shows that the project targets .NET 7.0.
+   The `TargetFramework` element shows that the project targets .NET 8.0.
 
    ```xml
    <Project Sdk="Microsoft.NET.Sdk">
 
      <PropertyGroup>
-       <TargetFramework>net7.0</TargetFramework>
+       <TargetFramework>net8.0</TargetFramework>
      </PropertyGroup>
 
    </Project>

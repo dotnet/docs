@@ -1,6 +1,6 @@
 ---
 title: Diagnostics and instrumentation
-description: Learn about diagnostics in native AOT applications
+description: Learn about diagnostics in Native AOT applications
 author: lakshanf
 ms.author: lakshanf
 ms.date: 08/07/2023
@@ -10,9 +10,9 @@ ms.date: 08/07/2023
 
 Native AOT shares some, but not all, diagnostics and instrumentation capabilities with CoreCLR. Because of CoreCLR's rich selection of diagnostic utilities, it will sometimes be appropriate to diagnose and debug problems in CoreCLR. Apps which are trim-compatible should not have behavioral differences, so investigations often apply to both runtimes. Nonetheless, some information can only be gathered after publishing, so Native AOT also provides post-publish diagnostic tooling.
 
-## .NET 8 native AOT diagnostic support
+## .NET 8 Native AOT diagnostic support
 
-The following table summarizes diagnostic features supported for native AOT deployments:
+The following table summarizes diagnostic features supported for Native AOT deployments:
 
 | Feature | Fully supported | Partially supported | Not supported |
 | - | - | - | - |
@@ -24,7 +24,7 @@ The following table summarizes diagnostic features supported for native AOT depl
 
 ## Observability and telemetry
 
-As of .NET 8, the Native AOT runtime supports [EventPipe](../../diagnostics/eventpipe.md), which is the base layer used by many logging and tracing libraries. You can interface with EventPipe directly through APIs like `EventSource.WriteEvent` or you can use libraries built on top, like [OpenTelemetry](../../diagnostics/observability-with-otel.md). EventPipe support also allows .NET diagnostic tools like [dotnet-trace](../../diagnostics/dotnet-trace.md), [dotnet-counter](../../diagnostics/dotnet-counters.md), and [dotnet-monitor](../../diagnostics/dotnet-monitor.md), to work seamlessly with Native AOT or CoreCLR applications. EventPipe is an optional component in native AOT. To include EventPipe support, set the `EventSourceSupport` MSBuild property to `true`.
+As of .NET 8, the Native AOT runtime supports [EventPipe](../../diagnostics/eventpipe.md), which is the base layer used by many logging and tracing libraries. You can interface with EventPipe directly through APIs like `EventSource.WriteEvent` or you can use libraries built on top, like [OpenTelemetry](../../diagnostics/observability-with-otel.md). EventPipe support also allows .NET diagnostic tools like [dotnet-trace](../../diagnostics/dotnet-trace.md), [dotnet-counter](../../diagnostics/dotnet-counters.md), and [dotnet-monitor](../../diagnostics/dotnet-monitor.md), to work seamlessly with Native AOT or CoreCLR applications. EventPipe is an optional component in Native AOT. To include EventPipe support, set the `EventSourceSupport` MSBuild property to `true`.
 
 ```xml
 <PropertyGroup>
@@ -32,15 +32,15 @@ As of .NET 8, the Native AOT runtime supports [EventPipe](../../diagnostics/even
 </PropertyGroup>
 ```
 
-Native AOT provides partial support for some [well-known event providers](../../diagnostics/well-known-event-providers.md). Not all [runtime events](../../../fundamentals/diagnostics/runtime-events.md) are supported in native AOT.
+Native AOT provides partial support for some [well-known event providers](../../diagnostics/well-known-event-providers.md). Not all [runtime events](../../../fundamentals/diagnostics/runtime-events.md) are supported in Native AOT.
 
 ## Build-time diagnostics
 
 The .NET CLI tooling (`dotnet` SDK) and Visual studio offer separate commands for `build` and
 `publish`. `build` (or `Start` in Visual Studio) will use CoreCLR. Only `publish` will create a
-Native AOT application.  Publishing your app as native AOT produces an app that has been
+Native AOT application.  Publishing your app as Native AOT produces an app that has been
 ahead-of-time (AOT) compiled to native code. As mentioned above, this means that not all diagnostic
-tools will work seamlessly with published native AOT applications in .NET 8. However, all .NET
+tools will work seamlessly with published Native AOT applications in .NET 8. However, all .NET
 diagnostic tools are available for developers during the application building stage. We recommend
 developing, debugging, and testing the applications as usual and publish the working app with native
 AOT as one of the last steps.
@@ -55,7 +55,7 @@ The NativeAOT compiler generates information about line numbers, types, locals a
 
 To debug managed exceptions, set a breakpoint on the `RhThrowEx` method -- this method is called whenever a managed exception is thrown.
 
-Collecting a [dump](../../diagnostics/dumps.md) file for a native AOT application involves some manual steps in .NET 8.
+Collecting a [dump](../../diagnostics/dumps.md) file for a Native AOT application involves some manual steps in .NET 8.
 
 ### Visual Studio-specific notes
 
@@ -67,12 +67,12 @@ To see what exception was thrown, start debugging (`Debug -> Start Debugging` or
 
 ### Importance of the symbol file
 
-In native AOT, symbol-file-dependent diagnostics (such as debugging [PerfView](https://github.com/microsoft/perfview) callstacks) don't work at all unless the diagnostic tool has access to the monolithic PDB that was generated when the application was compiled. In .NET, symbol-file-dependent diagnostics generally work just fine, or even great, even if the diagnostic tool has no access to any PDBs that were generated when the application was compiled. That is, symbols for the .NET runtime and the .NET libraries can be pulled from symbol servers, and diagnostic tools can still show function names and accurate call stacks even without access to the compile-time PDBs.
+In Native AOT, symbol-file-dependent diagnostics (such as debugging [PerfView](https://github.com/microsoft/perfview) callstacks) don't work at all unless the diagnostic tool has access to the monolithic PDB that was generated when the application was compiled. In .NET, symbol-file-dependent diagnostics generally work just fine, or even great, even if the diagnostic tool has no access to any PDBs that were generated when the application was compiled. That is, symbols for the .NET runtime and the .NET libraries can be pulled from symbol servers, and diagnostic tools can still show function names and accurate call stacks even without access to the compile-time PDBs.
 
 ## CPU profiling
 
-Platform-specific tools like [PerfView](https://github.com/microsoft/perfview) and [Perf](https://perf.wiki.kernel.org/index.php/Main_Page) can be used to collect CPU samples of a native AOT application.
+Platform-specific tools like [PerfView](https://github.com/microsoft/perfview) and [Perf](https://perf.wiki.kernel.org/index.php/Main_Page) can be used to collect CPU samples of a Native AOT application.
 
 ## Heap analysis
 
-Managed heap analysis is not currently supported in native AOT. Heap analysis tools like [dotnet-gcdump](../../diagnostics/dotnet-gcdump.md), [PerfView](https://github.com/microsoft/perfview), and Visual Studio heap analysis tools don't work in native AOT in .NET 8.
+Managed heap analysis is not currently supported in Native AOT. Heap analysis tools like [dotnet-gcdump](../../diagnostics/dotnet-gcdump.md), [PerfView](https://github.com/microsoft/perfview), and Visual Studio heap analysis tools don't work in Native AOT in .NET 8.

@@ -1,7 +1,7 @@
 ---
 title: Orleans observability
 description: Explore the various runtime monitoring, logging, distributed tracing, and metrics options available in .NET Orleans.
-ms.date: 02/22/2023
+ms.date: 08/31/2023
 zone_pivot_groups: orleans-version
 ---
 

@@ -51,7 +51,11 @@
                     "csharp-9.0/*.md",
                     "csharp-10.0/*.md",
                     "csharp-11.0/*.md",
-                    "csharp-12.0/*.md"
+                    "csharp-12.0/primary-constructors.md",
+                    "csharp-12.0/collection-expressions.md",
+                    "csharp-12.0/using-alias-types.md",
+                    "csharp-12.0/lambda-method-group-defaults.md",
+                    "csharp-12.0/inline-arrays.md"
                 ],
                 "src": "_csharplang/proposals",
                 "dest": "csharp/language-reference/proposals",
@@ -67,8 +71,7 @@
                     "csharp-8.0/obsolete-accessor.md",
                     "csharp-8.0/shadowing-in-nested-functions.md",
                     "csharp-8.0/unconstrained-null-coalescing.md",
-                    "csharp-8.0/nullable-reference-types-specification.md",
-                    "csharp-12.0/ref-readonly-parameters.md"
+                    "csharp-8.0/nullable-reference-types-specification.md"
                 ]
             },
             {

@@ -1,6 +1,4 @@
-﻿using System;
-
-class ArrayExample
+﻿class ArrayExample
 {
     static void DisplayArray(string[] arr) => Console.WriteLine(string.Join(" ", arr));
 

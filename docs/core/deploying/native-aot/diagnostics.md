@@ -49,7 +49,7 @@ AOT as one of the last steps.
 
 When running your app during development, like inside Visual Studio, or with `dotnet run`, `dotnet build`, or `dotnet test`, applications will run on CoreCLR by default. However, as long as `PublishAot` is present in the project file the behavior should be the same between CoreCLR and Native AOT. This allows you to use the standard Visual Studio managed debugging engine for development and testing.
 
-After publishing, Native AOT applications are true native binaries. The managed debugger will not work on them. However, the Native AOT compiler generates fully native executable files that can be debugged by native debuggers on your platform of choice (e.g. WinDbg or Visual Studio on Windows, and gdb or lldb on Unix-like systems).
+After publishing, Native AOT applications are true native binaries. The managed debugger will not work on them. However, the Native AOT compiler generates fully native executable files that can be debugged by native debuggers on your platform of choice (for example, WinDbg or Visual Studio on Windows and gdb or lldb on Unix-like systems).
 
 The NativeAOT compiler generates information about line numbers, types, locals and parameters. The native debugger will let you inspect stack trace and variables, step into/over source lines, or set line breakpoints.
 

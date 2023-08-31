@@ -16,11 +16,11 @@ The following table summarizes diagnostic features supported for Native AOT depl
 
 | Feature | Fully supported | Partially supported | Not supported |
 | - | - | - | - |
-| Observability | | <span aria-hidden="true">✔️</span><span class="visually-hidden">Partially supported</span> | |
-| Build-time diagnostics | <span aria-hidden="true">✔️</span><span class="visually-hidden">Fully supported</span> | | |
-| Production debugging | | <span aria-hidden="true">✔️</span><span class="visually-hidden">Partially supported</span> | |
-| CPU Profiling | | <span aria-hidden="true">✔️</span><span class="visually-hidden">Partially supported</span> | |
-| Heap analysis | | | <span aria-hidden="true">❌</span><span class="visually-hidden">Not supported</span> |
+| [Observability](#observability-and-telemetry) | | <span aria-hidden="true">✔️</span><span class="visually-hidden">Partially supported</span> | |
+| [Development-time diagnostics](#development-time-diagnostics) | <span aria-hidden="true">✔️</span><span class="visually-hidden">Fully supported</span> | | |
+| [Native debugging](#native-debugging) | | <span aria-hidden="true">✔️</span><span class="visually-hidden">Partially supported</span> | |
+| [CPU Profiling](#cpu-profiling) | | <span aria-hidden="true">✔️</span><span class="visually-hidden">Partially supported</span> | |
+| [Heap analysis](#heap-analysis) | | | <span aria-hidden="true">❌</span><span class="visually-hidden">Not supported</span> |
 
 ## Observability and telemetry
 
@@ -34,7 +34,7 @@ As of .NET 8, the Native AOT runtime supports [EventPipe](../../diagnostics/even
 
 Native AOT provides partial support for some [well-known event providers](../../diagnostics/well-known-event-providers.md). Not all [runtime events](../../../fundamentals/diagnostics/runtime-events.md) are supported in Native AOT.
 
-## Build-time diagnostics
+## Development-time diagnostics
 
 The .NET CLI tooling (`dotnet` SDK) and Visual studio offer separate commands for `build` and
 `publish`. `build` (or `Start` in Visual Studio) will use CoreCLR. Only `publish` will create a
@@ -45,7 +45,7 @@ diagnostic tools are available for developers during the application building st
 developing, debugging, and testing the applications as usual and publish the working app with native
 AOT as one of the last steps.
 
-## Debugging
+## Native debugging
 
 When running your app during development, like inside Visual Studio, or with `dotnet run`, `dotnet build`, or `dotnet test`, applications will run on CoreCLR by default. However, as long as `PublishAot` is present in the project file the behavior should be the same between CoreCLR and Native AOT. This allows you to use the standard Visual Studio managed debugging engine for development and testing.
 
@@ -59,7 +59,7 @@ Collecting a [dump](../../diagnostics/dumps.md) file for a Native AOT applicatio
 
 ### Visual Studio-specific notes
 
-You can launch a NativeAOT-compiled executable under the VS debugger by opening it in the Visual Studio IDE. In the `File` menu, choose `Open Project/Solution...` and navigate to the native executable. You can set breakpoints as needed. To start debugging the EXE, choose the `Start Debugging` option from the Debug menu.
+You can launch a NativeAOT-compiled executable under the VS debugger by opening it in the Visual Studio IDE. You will need to [open the executable itself in Visual Studio](https://learn.microsoft.com/visualstudio/debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution).
 
 To set a breakpoint that breaks whenever an exception is thrown, choose the Breakpoints option from the `Debug -> Windows` menu. In the new window, select `New -> Function` breakpoint. Specify `RhThrowEx` as the Function Name and leave the Language option at "All Languages" (do not select C#).
 
@@ -67,7 +67,7 @@ To see what exception was thrown, start debugging (`Debug -> Start Debugging` or
 
 ### Importance of the symbol file
 
-In Native AOT, symbol-file-dependent diagnostics (such as debugging [PerfView](https://github.com/microsoft/perfview) callstacks) don't work at all unless the diagnostic tool has access to the monolithic PDB that was generated when the application was compiled. In .NET, symbol-file-dependent diagnostics generally work just fine, or even great, even if the diagnostic tool has no access to any PDBs that were generated when the application was compiled. That is, symbols for the .NET runtime and the .NET libraries can be pulled from symbol servers, and diagnostic tools can still show function names and accurate call stacks even without access to the compile-time PDBs.
+When publishing, the Native AOT compiler produces both an executable and a symbol file. Native debugging, and related activities like profiling, require access to the native symbol file. If this file is not present, you may have degraded or broken results.
 
 ## CPU profiling
 

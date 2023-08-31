@@ -186,8 +186,7 @@
                 "docs/fundamentals/code-analysis/quality-rules/**/il*.md": "https://github.com/mono/linker/issues",
                 "docs/fundamentals/code-analysis/style-rules/**/*.md": "https://github.com/dotnet/roslyn/issues",
                 "docs/machine-learning/**/**.md": "https://github.com/dotnet/machinelearning",
-                "docs/standard/data/sqlite/**/*.md": "https://github.com/dotnet/efcore",
-                "docs/spark/**/**.md": "https://github.com/dotnet/spark"
+                "docs/standard/data/sqlite/**/*.md": "https://github.com/dotnet/efcore"
             },
             "ms.prod": {
                 "_csharplang/**/*.md": "dotnet-csharp",
@@ -208,7 +207,6 @@
                 "docs/standard/design-guidelines/*.md": "dotnet",
                 "docs/standard/security/*.md": "dotnet",
                 "docs/visual-basic/**/**.md": "dotnet-visualbasic",
-                "docs/spark/**/**.md": "dotnet-spark",
                 "docs/orleans/**/**.md": "dotnet-orleans"
             },
             "ms.topic": {
@@ -338,7 +336,6 @@
                 "docs/fundamentals/syslib-diagnostics/**/**.md": "gewarren",
                 "docs/iot/**/*.*": "camsoper",
                 "docs/machine-learning/**/**.md": "luisquintanilla",
-                "docs/spark/**/**.md": "luisquintanilla",
                 "docs/standard/**/**.md": "gewarren",
                 "docs/standard/analyzers/**/**.md": "IEvangelist",
                 "docs/standard/assembly/**/**.md": "IEvangelist",
@@ -425,7 +422,6 @@
                 "docs/fundamentals/syslib-diagnostics/**/**.md": "gewarren",
                 "docs/iot/**/*.*": "casoper",
                 "docs/machine-learning/**/**.md": "luquinta",
-                "docs/spark/**/**.md": "luquinta",
                 "docs/standard/**/**.md": "gewarren",
                 "docs/standard/analyzers/**/**.md": "dapine",
                 "docs/standard/assembly/**/**.md": "dapine",
@@ -798,6 +794,7 @@
                 "_vblang/spec/overload-resolution.md": "This chapter describes the rules that govern overload resolution when multiple members have the same name."
             },
             "titleSuffix": {
+                "docs/**/**.md": ".NET",
                 "_csharpstandard/standard/*.md": "C# language specification",
                 "_csharplang/proposals/csharp-8.0/*.md": "C# 8.0 draft feature specifications",
                 "_csharplang/proposals/csharp-9.0/*.md": "C# 9.0 draft feature specifications",

@@ -1,5 +1,5 @@
 ---
-title: "How to serialize and deserialize JSON in .NET"
+title: "How to serialize and deserialize JSON in C#"
 description: "Learn how to use the System.Text.Json namespace to serialize to and deserialize from JSON in .NET. Includes sample code."
 ms.date: 01/04/2023
 ms.custom: contperf-fy21q2

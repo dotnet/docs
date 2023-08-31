@@ -8,7 +8,7 @@ ms.date: 08/07/2023
 
 # Diagnostics and instrumentation
 
-Native AOT shares some, but not all, diagnostics and instrumentation capabilities with CoreCLR. Because of CoreCLR's rich selection of diagnostic utilities, it will sometimes be appropriate to diagnose and debug problems in CoreCLR. Apps which are trim-compatible should not have behavioral differences, so investigations often apply to both runtimes. Nonetheless, some information can only be gathered after publishing, so Native AOT also provides post-publish diagnostic tooling.
+Native AOT shares some, but not all, diagnostics and instrumentation capabilities with CoreCLR. Because of CoreCLR's rich selection of diagnostic utilities, it will sometimes be appropriate to diagnose and debug problems in CoreCLR. Apps which are [trim-compatible](../trimming/prepare-libraries-for-trimming.md) should not have behavioral differences, so investigations often apply to both runtimes. Nonetheless, some information can only be gathered after publishing, so Native AOT also provides post-publish diagnostic tooling.
 
 ## .NET 8 Native AOT diagnostic support
 

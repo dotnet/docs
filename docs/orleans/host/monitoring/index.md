@@ -179,10 +179,10 @@ A collection of directory meters that are used to monitor the directory layer.
 | `orleans-directory-ring-local-portion-distance` |<xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the ring range owned by the local directory partition. |
 | `orleans-directory-ring-local-portion-percentage` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the ring range owned by the local directory, represented as a percentage of the total range. |
 | `orleans-directory-ring-local-portion-average-percentage` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the average percentage of the directory ring range owned by each silo, giving a representation of how balanced directory ownership. |
-| `orleans-directory-registrations-single-act-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory single act registrations issued. |
-| `orleans-directory-registrations-single-act-local` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory single act registrations local. |
-| `orleans-directory-registrations-single-act-remote-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory single act registrations sent remotely. |
-| `orleans-directory-registrations-single-act-remote-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory single act registrations received remotely. |
+| `orleans-directory-registrations-single-act-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory single activation registrations issued. |
+| `orleans-directory-registrations-single-act-local` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory single activation registrations handled by the local directory partition. |
+| `orleans-directory-registrations-single-act-remote-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory single activation registrations sent to a remote directory partition. |
+| `orleans-directory-registrations-single-act-remote-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory single activation registrations received from remote hosts. |
 | `orleans-directory-unregistrations-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory un-registrations issued. |
 | `orleans-directory-unregistrations-local` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory un-registrations locally. |
 | `orleans-directory-unregistrations-remote-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory un-registrations sent remotely. |

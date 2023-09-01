@@ -38,19 +38,19 @@
     - name: Authentication
       items:
       - name: Overview
-        href: /dotnet/azure/sdk/authentication/index
+        href: ./sdk/authentication/index.md
       - name: Auth during local development
         items:
         - name: Auth using developer service principals
-          href: /dotnet/azure/sdk/authentication/local-development-service-principal
+          href: ./sdk/authentication/local-development-service-principal.md
         - name: Auth using developer accounts
-          href: /dotnet/azure/sdk/authentication/local-development-dev-accounts
+          href: ./sdk/authentication/local-development-dev-accounts.md
       - name: Auth from Azure-hosted apps
-        href: /dotnet/azure/sdk/authentication/azure-hosted-apps
+        href: ./sdk/authentication/azure-hosted-apps.md
       - name: Auth from on-premises apps
-        href: /dotnet/azure/sdk/authentication/on-premises-apps
+        href: ./sdk/authentication/on-premises-apps.md
       - name: Additional auth methods
-        href: /dotnet/azure/sdk/authentication/additional-methods
+        href: ./sdk/authentication/additional-methods.md
     - name: Resource management
       href: ./sdk/resource-management.md
     - name: Dependency injection

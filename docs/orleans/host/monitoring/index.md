@@ -128,7 +128,7 @@ A collection of gateway meters that are used to monitor the gateway layer.
 | `orleans-gateway-connected-clients` | <xref:System.Diagnostics.Metrics.UpDownCounter%601> | An up/down counter representing the number of connected clients. |
 | `orleans-gateway-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of gateway messages sent. |
 | `orleans-gateway-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of gateway messages received. |
-| `orleans-gateway-load-shedding` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of gateway load shedding. |
+| `orleans-gateway-load-shedding` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of gateway (load shedding) messages that have been rejected due to the gateway being overloaded. |
 
 #### Runtime
 
@@ -136,9 +136,9 @@ A collection of runtime meters that are used to monitor the runtime layer.
 
 | Meter name | Type | Description |
 |--|--|--|
-| `orleans-scheduler-long-running-turns` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-runtime-total-physical-memory` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-runtime-available-memory` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-scheduler-long-running-turns` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of long running turns within the scheduler. |
+| `orleans-runtime-total-physical-memory` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the total number of memory (in MB) of the Orleans runtime. |
+| `orleans-runtime-available-memory` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the available memory (in MB) for the Orleans runtime. |
 
 #### Catalog
 
@@ -146,15 +146,15 @@ A collection of catalog meters that are used to monitor the catalog layer.
 
 | Meter name | Type | Description |
 |--|--|--|
-| `orleans-catalog-activations` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-catalog-activation-working-set` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-catalog-activation-created` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-catalog-activation-destroyed` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-catalog-activation-failed-to-activate` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-catalog-activation-collections` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-catalog-activation-shutdown` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-catalog-activation-non-existent` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-catalog-activation-concurrent-registration-attempts` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-catalog-activations` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the number of catalog activations. |
+| `orleans-catalog-activation-working-set` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the number of activations within the working set. |
+| `orleans-catalog-activation-created` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of created activations. |
+| `orleans-catalog-activation-destroyed` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of destroyed activations. |
+| `orleans-catalog-activation-failed-to-activate` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of activations that failed to activate. |
+| `orleans-catalog-activation-collections` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of activation collections. |
+| `orleans-catalog-activation-shutdown` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of shutdown activations. |
+| `orleans-catalog-activation-non-existent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of non-existent activations. |
+| `orleans-catalog-activation-concurrent-registration-attempts` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of concurrent activation registration attempts. |
 
 #### Directory
 

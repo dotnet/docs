@@ -176,9 +176,9 @@ A collection of directory meters that are used to monitor the directory layer.
 | `orleans-directory-partition-size` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the directory partition size. |
 | `orleans-directory-cache-size` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the directory cache size. |
 | `orleans-directory-ring-size` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the directory ring size. |
-| `orleans-directory-ring-local-portion-distance` |<xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the directories local portion distance. |
-| `orleans-directory-ring-local-portion-percentage` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the directories local portion percentage. |
-| `orleans-directory-ring-local-portion-average-percentage` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the directories local average percentage. |
+| `orleans-directory-ring-local-portion-distance` |<xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the ring range owned by the local directory partition. |
+| `orleans-directory-ring-local-portion-percentage` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the ring range owned by the local directory, represented as a percentage of the total range. |
+| `orleans-directory-ring-local-portion-average-percentage` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the average percentage of the directory ring range owned by each silo, giving a representation of how balanced directory ownership. |
 | `orleans-directory-registrations-single-act-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory single act registrations issued. |
 | `orleans-directory-registrations-single-act-local` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory single act registrations local. |
 | `orleans-directory-registrations-single-act-remote-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory single act registrations sent remotely. |

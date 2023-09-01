@@ -81,137 +81,239 @@ For more information, see [Investigate performance counters (dotnet-counters)](.
 
 ### Orleans meters
 
-Orleans uses the [System.Diagnostics.Metrics](../../../core/diagnostics/compare-metric-apis.md#systemdiagnosticsmetrics) APIs to collect metrics. The following table represents the Orleans meters that are available for you to monitor:
+Orleans uses the [System.Diagnostics.Metrics](../../../core/diagnostics/compare-metric-apis.md#systemdiagnosticsmetrics) APIs to collect metrics. Orleans categorizes each meter into domain-centric concerns, such as networking, messaging, gateway, and so on. The following subsections describe the meters that Orleans uses.
 
-| Meter name | Discriminator | Description |
+#### Networking
+
+A collection of networking meters that are used to monitor the networking layer.
+
+| Meter name | Type | Description |
 |--|--|--|
-| `orleans-networking-sockets-closed` | Networking | ... |
-| `orleans-networking-sockets-opened` | Networking | ... |
-| `orleans-messaging-sent-messages-size` | Messaging | ... |
-| `orleans-messaging-received-messages-size` | Messaging | ... |
-| `orleans-messaging-sent-header-size` | Messaging | ... |
-| `orleans-messaging-sent-failed` | Messaging | ... |
-| `orleans-messaging-sent-dropped` | Messaging | ... |
-| `orleans-messaging-received-header-size` | Messaging | ... |
-| `orleans-messaging-processing-dispatcher-received` | Messaging | ... |
-| `orleans-messaging-processing-dispatcher-processed` | Messaging | ... |
-| `orleans-messaging-processing-dispatcher-forwarded` | Messaging | ... |
-| `orleans-messaging-processing-ima-received` | Messaging | ... |
-| `orleans-messaging-processing-ima-enqueued` | Messaging | ... |
-| `orleans-messaging-processing-activation-data` | Messaging | ... |
-| `orleans-messaging-pings-sent` | Messaging | ... |
-| `orleans-messaging-pings-received` | Messaging | ... |
-| `orleans-messaging-pings-reply-received` | Messaging | ... |
-| `orleans-messaging-pings-reply-missed` | Messaging | ... |
-| `orleans-messaging-expired"` | Messaging | ... |
-| `orleans-messaging-rejected` | Messaging | ... |
-| `orleans-messaging-rerouted` | Messaging | ... |
-| `orleans-messaging-sent-local` | Messaging | ... |
-| `orleans-gateway-connected-clients` | Gateway | ... |
-| `orleans-gateway-sent` | Gateway | ... |
-| `orleans-gateway-received` | Gateway | ... |
-| `orleans-gateway-load-shedding` | Gateway | ... |
-| `orleans-scheduler-long-running-turns` | Runtime | ... |
-| `orleans-runtime-total-physical-memory` | Runtime | ... |
-| `orleans-runtime-available-memory` | Runtime | ... |
-| `orleans-catalog-activations` | Catalog | ... |
-| `orleans-catalog-activation-working-set` | Catalog | ... |
-| `orleans-catalog-activation-created` | Catalog | ... |
-| `orleans-catalog-activation-destroyed` | Catalog | ... |
-| `orleans-catalog-activation-failed-to-activate` | Catalog | ... |
-| `orleans-catalog-activation-collections` | Catalog | ... |
-| `orleans-catalog-activation-shutdown` | Catalog | ... |
-| `orleans-catalog-activation-non-existent` | Catalog | ... |
-| `orleans-catalog-activation-concurrent-registration-attempts` | Catalog | ... |
-| `orleans-directory-lookups-local-issued` | Directory | ... |
-| `orleans-directory-lookups-local-successes` | Directory | ... |
-| `orleans-directory-lookups-full-issued` | Directory | ... |
-| `orleans-directory-lookups-remote-sent` | Directory | ... |
-| `orleans-directory-lookups-remote-received` | Directory | ... |
-| `orleans-directory-lookups-local-directory-issued` | Directory | ... |
-| `orleans-directory-lookups-local-directory-successes` | Directory | ... |
-| `orleans-directory-lookups-cache-issued` | Directory | ... |
-| `orleans-directory-lookups-cache-successes` | Directory | ... |
-| `orleans-directory-validations-cache-sent` | Directory | ... |
-| `orleans-directory-validations-cache-received` | Directory | ... |
-| `orleans-directory-partition-size` | Directory | ... |
-| `orleans-directory-cache-size` | Directory | ... |
-| `orleans-directory-ring-size` | Directory | ... |
-| `orleans-directory-ring-local-portion-distance` | Directory | ... |
-| `orleans-directory-ring-local-portion-percentage` | Directory | ... |
-| `orleans-directory-ring-local-portion-average-percentage` | Directory | ... |
-| `orleans-directory-registrations-single-act-issued` | Directory | ... |
-| `orleans-directory-registrations-single-act-local` | Directory | ... |
-| `orleans-directory-registrations-single-act-remote-sent` | Directory | ... |
-| `orleans-directory-registrations-single-act-remote-received` | Directory | ... |
-| `orleans-directory-unregistrations-issued` | Directory | ... |
-| `orleans-directory-unregistrations-local` | Directory | ... |
-| `orleans-directory-unregistrations-remote-sent` | Directory | ... |
-| `orleans-directory-unregistrations-remote-received` | Directory | ... |
-| `orleans-directory-unregistrations-many-issued` | Directory | ... |
-| `orleans-directory-unregistrations-many-remote-sent` | Directory | ... |
-| `orleans-directory-unregistrations-many-remote-received` | Directory | ... |
-| `orleans-consistent-ring-size` | Consistent ring | ... |
-| `orleans-consistent-ring-range-percentage-local` | Consistent ring | ... |
-| `orleans-consistent-ring-range-percentage-average` | Consistent ring | ... |
-| `orleans-watchdog-health-checks` | Watchdog | ... |
-| `orleans-watchdog-health-checks-failed` | Watchdog | ... |
-| `orleans-client-connected-gateways` | Client | ... |
-| `orleans-grains` | Miscellaneous | ... |
-| `orleans-system-targets` | Miscellaneous | ... |
-| `orleans-app-requests-latency` | App requests | ... |
-| `orleans-app-requests-timedout` | App requests | ... |
-| `orleans-reminders-tardiness` | Reminders | ... |
-| `orleans-reminders-active` | Reminders | ... |
-| `orleans-reminders-ticks-delivered` | Reminders | ... |
-| `orleans-storage-read-errors` | Storage | ... |
-| `orleans-storage-write-errors` | Storage | ... |
-| `orleans-storage-clear-errors` | Storage | ... |
-| `orleans-storage-read-latency` | Storage | ... |
-| `orleans-storage-write-latency` | Storage | ... |
-| `orleans-storage-clear-latency` | Storage | ... |
-| `orleans-streams-pubsub-producers-added` | Streams | ... |
-| `orleans-streams-pubsub-producers-removed` | Streams | ... |
-| `orleans-streams-pubsub-producers` | Streams | ... |
-| `orleans-streams-pubsub-consumers-added` | Streams | ... |
-| `orleans-streams-pubsub-consumers-removed` | Streams | ... |
-| `orleans-streams-pubsub-consumers` | Streams | ... |
-| `orleans-streams-persistent-stream-pulling-agents` | Streams | ... |
-| `orleans-streams-persistent-stream-messages-read` | Streams | ... |
-| `orleans-streams-persistent-stream-messages-sent` | Streams | ... |
-| `orleans-streams-persistent-stream-pubsub-cache-size` | Streams | ... |
-| `orleans-streams-queue-initialization-failures` | Streams | ... |
-| `orleans-streams-queue-initialization-duration` | Streams | ... |
-| `orleans-streams-queue-initialization-exceptions` | Streams | ... |
-| `orleans-streams-queue-read-failures` | Streams | ... |
-| `orleans-streams-queue-read-duration` | Streams | ... |
-| `orleans-streams-queue-read-exceptions` | Streams | ... |
-| `orleans-streams-queue-shutdown-failures` | Streams | ... |
-| `orleans-streams-queue-shutdown-duration` | Streams | ... |
-| `orleans-streams-queue-shutdown-exceptions` | Streams | ... |
-| `orleans-streams-queue-messages-received` | Streams | ... |
-| `orleans-streams-queue-oldest-message-enqueue-age` | Streams | ... |
-| `orleans-streams-queue-newest-message-enqueue-age` | Streams | ... |
-| `orleans-streams-block-pool-total-memory` | Streams | ... |
-| `orleans-streams-block-pool-available-memory` | Streams | ... |
-| `orleans-streams-block-pool-claimed-memory` | Streams | ... |
-| `orleans-streams-block-pool-released-memory` | Streams | ... |
-| `orleans-streams-block-pool-allocated-memory` | Streams | ... |
-| `orleans-streams-queue-cache-size` | Streams | ... |
-| `orleans-streams-queue-cache-length` | Streams | ... |
-| `orleans-streams-queue-cache-messages-added` | Streams | ... |
-| `orleans-streams-queue-cache-messages-purged` | Streams | ... |
-| `orleans-streams-queue-cache-memory-allocated` | Streams | ... |
-| `orleans-streams-queue-cache-memory-released` | Streams | ... |
-| `orleans-streams-queue-cache-oldest-to-newest-duration` | Streams | ... |
-| `orleans-streams-queue-cache-oldest-age` | Streams | ... |
-| `orleans-streams-queue-cache-pressure` | Streams | ... |
-| `orleans-streams-queue-cache-under-pressure` | Streams | ... |
-| `orleans-streams-queue-cache-pressure-contribution-count` | Streams | ... |
-| `orleans-transactions-started` | Transactions | ... |
-| `orleans-transactions-successful` | Transactions | ... |
-| `orleans-transactions-failed` | Transactions | ... |
-| `orleans-transactions-throttled` | Transactions | ... |
+| `orleans-networking-sockets-closed` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of sockets that have closed. |
+| `orleans-networking-sockets-opened` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of sockets that have opened. |
+
+#### Messaging
+
+A collection of messaging meters that are used to monitor the messaging layer.
+
+| Meter name | Type | Description |
+|--|--|--|
+| `orleans-messaging-sent-messages-size` | <xref:System.Diagnostics.Metrics.Histogram%601> | A histogram representing the size of messages in bytes that have been sent. |
+| `orleans-messaging-received-messages-size` | <xref:System.Diagnostics.Metrics.Histogram%601> | A histogram representing the size of messages in bytes that have been received. |
+| `orleans-messaging-sent-header-size` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number of header bytes sent. |
+| `orleans-messaging-received-header-size` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number of header bytes received. |
+| `orleans-messaging-sent-failed` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of failed sent messages. |
+| `orleans-messaging-sent-dropped` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of dropped sent messages. |
+| `orleans-messaging-processing-dispatcher-received` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number dispatcher received messages. |
+| `orleans-messaging-processing-dispatcher-processed` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number dispatcher processed messages. |
+| `orleans-messaging-processing-dispatcher-forwarded` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number dispatcher forwarded messages. |
+| `orleans-messaging-processing-ima-received` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number of incoming messages received. |
+| `orleans-messaging-processing-ima-enqueued` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number of incoming messages enqueued. |
+| `orleans-messaging-processing-activation-data` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing all of the processing activation data. |
+| `orleans-messaging-pings-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of pings sent. |
+| `orleans-messaging-pings-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of pings received. |
+| `orleans-messaging-pings-reply-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of ping replies received. |
+| `orleans-messaging-pings-reply-missed` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of ping replies missed. |
+| `orleans-messaging-expired"` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of messages that have expired. |
+| `orleans-messaging-rejected` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of messages that have been rejected. |
+| `orleans-messaging-rerouted` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of messages that have been rerouted. |
+| `orleans-messaging-sent-local` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number of local messages sent. |
+
+#### Gateway
+
+A collection of gateway meters that are used to monitor the gateway layer.
+
+| Meter name | Type | Description |
+|--|--|--|
+| `orleans-gateway-connected-clients` | <xref:System.Diagnostics.Metrics.UpDownCounter%601> | An up/down counter representing the number of connected clients. |
+| `orleans-gateway-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of gateway messages sent. |
+| `orleans-gateway-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of gateway messages received. |
+| `orleans-gateway-load-shedding` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of gateway load shedding. |
+
+#### Runtime
+
+A collection of runtime meters that are used to monitor the runtime layer.
+
+| Meter name | Type | Description |
+|--|--|--|
+| `orleans-scheduler-long-running-turns` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-runtime-total-physical-memory` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-runtime-available-memory` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+
+#### Catalog
+
+A collection of catalog meters that are used to monitor the catalog layer.
+
+| Meter name | Type | Description |
+|--|--|--|
+| `orleans-catalog-activations` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-catalog-activation-working-set` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-catalog-activation-created` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-catalog-activation-destroyed` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-catalog-activation-failed-to-activate` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-catalog-activation-collections` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-catalog-activation-shutdown` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-catalog-activation-non-existent` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-catalog-activation-concurrent-registration-attempts` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+
+#### Directory
+
+A collection of directory meters that are used to monitor the directory layer.
+
+| Meter name | Type | Description |
+|--|--|--|
+| `orleans-directory-lookups-local-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-lookups-local-successes` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-lookups-full-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-lookups-remote-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-lookups-remote-received` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-lookups-local-directory-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-lookups-local-directory-successes` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-lookups-cache-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-lookups-cache-successes` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-validations-cache-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-validations-cache-received` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-partition-size` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-cache-size` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-ring-size` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-ring-local-portion-distance` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-ring-local-portion-percentage` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-ring-local-portion-average-percentage` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-registrations-single-act-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-registrations-single-act-local` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-registrations-single-act-remote-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-registrations-single-act-remote-received` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-unregistrations-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-unregistrations-local` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-unregistrations-remote-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-unregistrations-remote-received` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-unregistrations-many-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-unregistrations-many-remote-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-unregistrations-many-remote-received` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+
+#### Consistent ring
+
+A collection of consistent ring meters that are used to monitor the consistent ring layer.
+
+| Meter name | Type | Description |
+|--|--|--|
+| `orleans-consistent-ring-size` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-consistent-ring-range-percentage-local` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-consistent-ring-range-percentage-average` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+
+#### Watchdog
+
+A collection of watchdog meters that are used to monitor the watchdog layer.
+
+| Meter name | Type | Description |
+|--|--|--|
+| `orleans-watchdog-health-checks` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-watchdog-health-checks-failed` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+
+#### Client
+
+A collection of client meters that are used to monitor the client layer.
+
+| Meter name | Type | Description |
+|--|--|--|
+| `orleans-client-connected-gateways` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+
+#### Miscellaneous
+
+A collection of miscellaneous meters that are used to monitor various layers.
+
+| Meter name | Type | Description |
+|--|--|--|
+| `orleans-grains` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-system-targets` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+
+#### App requests
+
+A collection of app request meters that are used to monitor the app request layer.
+
+| Meter name | Type | Description |
+|--|--|--|
+| `orleans-app-requests-latency` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-app-requests-timedout` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+
+#### Reminders
+
+A collection of reminder meters that are used to monitor the reminder layer.
+
+| Meter name | Type | Description |
+|--|--|--|
+| `orleans-reminders-tardiness` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-reminders-active` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-reminders-ticks-delivered` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+
+#### Storage
+
+A collection of storage meters that are used to monitor the storage layer.
+
+| Meter name | Type | Description |
+|--|--|--|
+| `orleans-storage-read-errors` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-storage-write-errors` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-storage-clear-errors` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-storage-read-latency` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-storage-write-latency` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-storage-clear-latency` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+
+#### Streams
+
+A collection of stream meters that are used to monitor the stream layer.
+
+| Meter name | Type | Description |
+|--|--|--|
+| `orleans-streams-pubsub-producers-added` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-pubsub-producers-removed` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-pubsub-producers` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-pubsub-consumers-added` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-pubsub-consumers-removed` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-pubsub-consumers` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-persistent-stream-pulling-agents` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-persistent-stream-messages-read` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-persistent-stream-messages-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-persistent-stream-pubsub-cache-size` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-initialization-failures` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-initialization-duration` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-initialization-exceptions` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-read-failures` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-read-duration` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-read-exceptions` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-shutdown-failures` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-shutdown-duration` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-shutdown-exceptions` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-messages-received` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-oldest-message-enqueue-age` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-newest-message-enqueue-age` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-block-pool-total-memory` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-block-pool-available-memory` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-block-pool-claimed-memory` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-block-pool-released-memory` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-block-pool-allocated-memory` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-cache-size` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-cache-length` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-cache-messages-added` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-cache-messages-purged` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-cache-memory-allocated` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-cache-memory-released` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-cache-oldest-to-newest-duration` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-cache-oldest-age` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-cache-pressure` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-cache-under-pressure` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-cache-pressure-contribution-count` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+
+#### Transactions
+
+A collection of transaction meters that are used to monitor the transaction layer.
+
+| Meter name | Type | Description |
+|--|--|--|
+| `orleans-transactions-started` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-transactions-successful` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-transactions-failed` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-transactions-throttled` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
 
 ### Prometheus
 

@@ -33,7 +33,7 @@ To get the most up-to-date trimming warnings and analyzer coverage:
 
 To get the most up-to-date trimming warnings and analyzer coverage:
 
-* Install and use the .NET 8 SDK or later
+* Install and use the .NET 8 SDK or later.
 * Target `net8.0` or later.
 
 :::zone-end
@@ -98,9 +98,7 @@ If library targets a TFM that is not trimmable, for example `net472` or `netstan
 :::zone pivot="dotnet-6-0"
 
 * Set `<TrimmerDefaultAction>` to `link`. <!-- only diff with .NET7+ -->
-
 :::zone-end
-
 * Add `<PublishTrimmed>true</PublishTrimmed>`.
 * Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
 * Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.

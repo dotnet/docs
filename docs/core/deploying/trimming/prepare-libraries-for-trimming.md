@@ -4,7 +4,7 @@ description: Learn how to prepare .NET libraries for trimming.
 author: sbomer
 ms.author: svbomer
 ms.date: 06/12/2023
-zone_pivot_groups: dotnet-version
+zone_pivot_groups: dotnet-preview-version
 ---
 
 # Prepare .NET libraries for trimming
@@ -98,12 +98,30 @@ If library targets a TFM that is not trimmable, for example `net472` or `netstan
 :::zone pivot="dotnet-6-0"
 
 * Set `<TrimmerDefaultAction>` to `link`. <!-- only diff with .NET7+ -->
-:::zone-end
 * Add `<PublishTrimmed>true</PublishTrimmed>`.
 * Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
 * Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
   * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root". A "root" assembly means the trimmer analyzes every call in the library and traverses all code paths that originate from that assembly.
 
+:::zone-end
+
+:::zone pivot="dotnet-7-0"
+
+* Add `<PublishTrimmed>true</PublishTrimmed>`.
+* Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
+* Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
+  * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root". A "root" assembly means the trimmer analyzes every call in the library and traverses all code paths that originate from that assembly.
+
+:::zone-end
+
+:::zone pivot="dotnet-8-0"
+
+* Add `<PublishTrimmed>true</PublishTrimmed>`.
+* Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
+* Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
+  * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root". A "root" assembly means the trimmer analyzes every call in the library and traverses all code paths that originate from that assembly.
+
+:::zone-end
 ### .csproj file
 
 :::zone pivot="dotnet-6-0"

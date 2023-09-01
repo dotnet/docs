@@ -122,6 +122,7 @@ If library targets a TFM that is not trimmable, for example `net472` or `netstan
   * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root". A "root" assembly means the trimmer analyzes every call in the library and traverses all code paths that originate from that assembly.
 
 :::zone-end
+
 ### .csproj file
 
 :::zone pivot="dotnet-6-0"

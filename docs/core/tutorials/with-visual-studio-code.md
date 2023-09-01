@@ -69,7 +69,7 @@ Create a .NET console app project named "HelloWorld".
 
    The code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array. The code in `Main` calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display a message in the console window.
 
-   C# has a feature named [top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) that lets you omit the Program class and the Main method. This tutorial doesn't use this feature. Whether you use it in your programs is a matter of style preference. In the `dotnet new` command that created the project, the `--use-program-main` option prevented top-level statements from being used.
+   C# has a feature named [top-level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) that lets you omit the `Program` class and the `Main` method. This tutorial doesn't use this feature. Whether you use it in your programs is a matter of style preference. In the `dotnet new` command that created the project, the `--use-program-main` option prevented top-level statements from being used.
 
 ## Run the app
 

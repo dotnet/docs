@@ -1,7 +1,7 @@
 ---
 title: Test a .NET class library using Visual Studio Code
 description: Learn how to use Visual Studio Code and the .NET CLI to create and run a unit test project for a .NET class library.
-ms.date: 08/31/2023
+ms.date: 09/01/2023
 zone_pivot_groups: dotnet-version-6-8
 recommendations: false
 ---
@@ -29,18 +29,18 @@ Unit tests provide automated software testing during your development and publis
    dotnet new mstest -o StringLibraryTest
    ```
 
-   The project template creates a UnitTest1.cs file with the following code:
+   The project template creates a *UnitTest1.cs* file with the following code:
 
    ```csharp
-     namespace StringLibraryTest;
+   namespace StringLibraryTest;
 
-     [TestClass]
-     public class UnitTest1
-     {
-          [TestMethod]
-          public void TestMethod1()
-          {
-          }
+   [TestClass]
+   public class UnitTest1
+   {
+       [TestMethod]
+       public void TestMethod1()
+       {
+       }
    }
    ```
 

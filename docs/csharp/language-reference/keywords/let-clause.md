@@ -12,8 +12,7 @@ ms.assetid: 13c9c1a4-ce57-48ef-8e1b-4c2a59b99fb4
 ---
 # let clause (C# Reference)
 
-In a query expression, it's sometimes useful to store the result of a subexpression in order to use it in subsequent clauses. You can do this
- with the `let` keyword, which creates a new range variable and initializes it with the result of the expression you supply. Once initialized with a value, the range variable can't be used to store another value. However, if the range variable holds a queryable type, it can be queried.
+In a query expression, it's sometimes useful to store the result of a subexpression in order to use it in subsequent clauses. You can do this with the `let` keyword, which creates a new range variable and initializes it with the result of the expression you supply. Once initialized with a value, the range variable can't be used to store another value. However, if the range variable holds a queryable type, it can be queried.
 
 ## Example
 

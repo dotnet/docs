@@ -64,7 +64,7 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
 
 - **`--certificate-subject-name <SUBJECTNAME>`**
 
-  Specifies the subject name of the certificate used to search a local certificate store for the certificate. The search is a case-insensitive string comparison using the supplied value, which will find all certificates with the subject name containing that string, regardless of other subject values. The certificate store can be specified by `--certificate-store-name` and `--certificate-store-location` options.
+  Specifies the subject name of the certificate used to search a local certificate store for the certificate. The search is a case-insensitive string comparison using the supplied value, which finds all certificates with the subject name containing that string, regardless of other subject values. The certificate store can be specified by `--certificate-store-name` and `--certificate-store-location` options.
 
   > [!NOTE]
   > This option currently supports only a single matching certificate in the result. If there are multiple matching certificates in the result, or no matching certificate in the result, the sign command will fail.
@@ -86,7 +86,7 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
 
 - **`-o|--output`**
 
-  Specifies the directory where the signed package should be saved. If this option is not specified, by default the original package is overwritten by the signed package.
+  Specifies the directory where the signed package should be saved. If this option isn't specified, by default the original package is overwritten by the signed package.
 
 - **`--overwrite`**
 

@@ -1,6 +1,6 @@
 ---
 title: Create a template package for dotnet new
-description: Learn how to create a csproj file that will build a template package for the dotnet new command.
+description: Learn how to create a csproj file that builds a template package for the dotnet new command.
 author: adegeo
 ms.date: 02/03/2022
 zone_pivot_groups: dotnet-preview-version
@@ -16,7 +16,7 @@ With .NET, you can create and deploy templates that generate projects, files, an
 
 You can view the completed template in the [.NET Samples GitHub repository](https://github.com/dotnet/samples/tree/main/core/tutorials/cli-templates-create-item-template).
 
-In this part of the series you'll learn how to:
+In this part of the series you learn how to:
 
 > [!div class="checklist"]
 >
@@ -40,9 +40,9 @@ Template packages are represented by a NuGet package (_.nupkg_) file. And, like 
 
 Normally you use a C# project file to compile code and produce a binary. However, the project can also be used to generate a template package. By changing the settings of the _.csproj_, you can prevent it from compiling any code and instead include all the assets of your templates as resources. When this project is built, it produces a template package NuGet package.
 
-The package you are going to generate will include the [item template](cli-templates-create-item-template.md) and [package template](cli-templates-create-project-template.md) previously created.
+The package you're going to generate will include the [item template](cli-templates-create-item-template.md) and [package template](cli-templates-create-project-template.md) previously created.
 
-In order to create the template package, you will use the template for the template package provided by [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/packages/Microsoft.TemplateEngine.Authoring.Templates).
+To create the template package, you'll use the template for the template package provided by [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/packages/Microsoft.TemplateEngine.Authoring.Templates).
 In your terminal, run the command:
 
 ```dotnetcli
@@ -165,7 +165,7 @@ Currently installed items:
       dotnet new uninstall AdatumCorporation.Utility.Templates
 ```
 
-Run `dotnet new uninstall AdatumCorporation.Utility.Templates` to uninstall the template package. The command will output information about what template packages were uninstalled.
+Run `dotnet new uninstall AdatumCorporation.Utility.Templates` to uninstall the template package. The command outputs information about what template packages were uninstalled.
 
 Congratulations! You've installed and uninstalled a template package.
 
@@ -186,7 +186,7 @@ With .NET, you can create and deploy templates that generate projects, files, an
 
 You can view the completed template in the [.NET Samples GitHub repository](https://github.com/dotnet/samples/tree/main/core/tutorials/cli-templates-create-item-template).
 
-In this part of the series you'll learn how to:
+In this part of the series you learn how to:
 
 > [!div class="checklist"]
 >
@@ -213,7 +213,7 @@ Template packages are represented by a NuGet package (_.nupkg_) file. And, like 
 
 Normally you use a C# project file to compile code and produce a binary. However, the project can also be used to generate a template package. By changing the settings of the _.csproj_, you can prevent it from compiling any code and instead include all the assets of your templates as resources. When this project is built, it produces a template package NuGet package.
 
-The package you'll create will include the [item template](cli-templates-create-item-template.md) and [package template](cli-templates-create-project-template.md) previously created. Because we grouped the two templates into the _working\templates\\_ folder, we can use the _working_ folder for the _.csproj_ file.
+The package you create will include the [item template](cli-templates-create-item-template.md) and [package template](cli-templates-create-project-template.md) previously created. Because we grouped the two templates into the _working\templates\\_ folder, we can use the _working_ folder for the _.csproj_ file.
 
 In your terminal, navigate to the _working_ folder. Create a new project and set the name to `templatepack` and the output folder to the current folder.
 
@@ -352,7 +352,7 @@ Currently installed items:
       dotnet new uninstall AdatumCorporation.Utility.Templates
 ```
 
-Run `dotnet new uninstall AdatumCorporation.Utility.Templates` to uninstall the template package. The command will output information about what template packages were uninstalled.
+Run `dotnet new uninstall AdatumCorporation.Utility.Templates` to uninstall the template package. The command outputs information about what template packages were uninstalled.
 
 Congratulations! You've installed and uninstalled a template package.
 

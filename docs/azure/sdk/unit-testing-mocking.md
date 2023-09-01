@@ -23,7 +23,7 @@ Each of the Azure SDK clients follows [mocking guidelines](https://azure.github.
 > [!NOTE]
 > The code examples in this article use types from the [Azure.Security.KeyVault.Secrets](https://www.nuget.org/packages/Azure.Security.KeyVault.Secrets/) library for the Azure Key Vault service. The concepts demonstrated in this article also apply to service clients from many other Azure services, such as Azure Storage or Azure Service Bus.
 
-To create a test service client, you can either use a mocking library or standard C# features such as inheritance. Mocking frameworks allow you to simplify the code that you must write to override member behavior (as well as other useful features that are beyond the scope of this article).
+To create a test service client, you can either use a mocking library or standard C# features such as inheritance. Mocking frameworks allow you to simplify the code that you must write to override member behavior. (These frameworks also have other useful features that are beyond the scope of this article.)
 
 # [Non-library](#tab/csharp)
 

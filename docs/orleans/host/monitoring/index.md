@@ -183,13 +183,13 @@ A collection of directory meters that are used to monitor the directory layer.
 | `orleans-directory-registrations-single-act-local` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory single activation registrations handled by the local directory partition. |
 | `orleans-directory-registrations-single-act-remote-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory single activation registrations sent to a remote directory partition. |
 | `orleans-directory-registrations-single-act-remote-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory single activation registrations received from remote hosts. |
-| `orleans-directory-unregistrations-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory un-registrations issued. |
-| `orleans-directory-unregistrations-local` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory un-registrations locally. |
-| `orleans-directory-unregistrations-remote-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory un-registrations sent remotely. |
-| `orleans-directory-unregistrations-remote-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory un-registrations received remotely. |
-| `orleans-directory-unregistrations-many-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory un-registrations many issued. |
-| `orleans-directory-unregistrations-many-remote-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory un-registrations many sent remotely. |
-| `orleans-directory-unregistrations-many-remote-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory un-registrations many received remotely. |
+| `orleans-directory-unregistrations-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory deregistrations issued. |
+| `orleans-directory-unregistrations-local` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory deregistrations handled by the local directory partition. |
+| `orleans-directory-unregistrations-remote-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory deregistrations sent to remote directory partitions. |
+| `orleans-directory-unregistrations-remote-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory deregistrations received from remote hosts. |
+| `orleans-directory-unregistrations-many-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory multi-activation deregistrations issued. |
+| `orleans-directory-unregistrations-many-remote-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory multi-activations deregistrations sent to remote directory partitions. |
+| `orleans-directory-unregistrations-many-remote-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory multi-activation deregistrations received from remote hosts. |
 
 #### Consistent ring
 

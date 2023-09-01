@@ -15,7 +15,8 @@ The guidance in this section applies to all interop scenarios.
 - ✔️ CONSIDER using the same naming and capitalization for constant values.
 - ✔️ DO use .NET types that map closest to the native type. For example, in C#, use `uint` when the native type is `unsigned int`.
 - ✔️ DO prefer expressing higher level native types using .NET structs rather than classes.
-- ✔️ DO only use `[In]` and `[Out]` attributes when the behavior you want differs from the default behavior.
+- ✔️ DO use `[In]` and `[Out]` attributes on array parameters.
+- ✔️ DO only use `[In]` and `[Out]` attributes on other types when the behavior you want differs from the default behavior.
 - ✔️ CONSIDER using <xref:System.Buffers.ArrayPool%601?displayProperty=nameWithType> to pool your native array buffers.
 - ✔️ CONSIDER wrapping your P/Invoke declarations in a class with the same name and capitalization as your native library.
   - This allows your `[DllImport]` attributes to use the C# `nameof` language feature to pass in the name of the native library and ensure that you didn't misspell the name of the native library.

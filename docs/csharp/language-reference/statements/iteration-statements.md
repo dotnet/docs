@@ -159,5 +159,4 @@ For more information about features added in C# 8.0 and later, see the following
 ## See also
 
 - [C# reference](../index.md)
-- [Using foreach with arrays](../../programming-guide/arrays/using-foreach-with-arrays.md)
 - [Iterators](../../iterators.md)

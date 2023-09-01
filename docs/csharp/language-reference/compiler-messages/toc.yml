@@ -41,8 +41,6 @@ items:
     href: ../../misc/cs0020.md
   - name: CS0021
     href: ../../misc/cs0021.md
-  - name: CS0022
-    href: ../../misc/cs0022.md
   - name: CS0023
     href: ../../misc/cs0023.md
   - name: CS0025
@@ -251,8 +249,6 @@ items:
     href: ../../misc/cs0176.md
   - name: CS0177
     href: ../../misc/cs0177.md
-  - name: CS0178
-    href: cs0178.md
   - name: CS0179
     href: ../../misc/cs0179.md
   - name: CS0180
@@ -353,8 +349,6 @@ items:
     href: cs0246.md
   - name: CS0247
     href: ../../misc/cs0247.md
-  - name: CS0248
-    href: ../../misc/cs0248.md
   - name: CS0249
     href: ../../misc/cs0249.md
   - name: CS0250
@@ -383,8 +377,6 @@ items:
     href: ../../misc/cs0268.md
   - name: CS0269
     href: cs0269.md
-  - name: CS0270
-    href: cs0270.md
   - name: CS0271
     href: ../../misc/cs0271.md
   - name: CS0272
@@ -683,8 +675,6 @@ items:
     href: ../../misc/cs0609.md
   - name: CS0610
     href: ../../misc/cs0610.md
-  - name: CS0611
-    href: ../../misc/cs0611.md
   - name: CS0616
     href: cs0616.md
   - name: CS0617
@@ -697,8 +687,6 @@ items:
     href: ../../misc/cs0621.md
   - name: CS0622
     href: ../../misc/cs0622.md
-  - name: CS0623
-    href: ../../misc/cs0623.md
   - name: CS0625
     href: ../../misc/cs0625.md
   - name: CS0629
@@ -727,8 +715,6 @@ items:
     href: ../../misc/cs0647.md
   - name: CS0648
     href: ../../misc/cs0648.md
-  - name: CS0650
-    href: cs0650.md
   - name: CS0653
     href: ../../misc/cs0653.md
   - name: CS0655
@@ -813,8 +799,6 @@ items:
     href: ../../misc/cs0717.md
   - name: CS0718
     href: ../../misc/cs0718.md
-  - name: CS0719
-    href: ../../misc/cs0719.md
   - name: CS0720
     href: ../../misc/cs0720.md
   - name: CS0721
@@ -903,16 +887,12 @@ items:
     href: ../../misc/cs0818.md
   - name: CS0819
     href: ../../misc/cs0819.md
-  - name: CS0820
-    href: ../../misc/cs0820.md
   - name: CS0821
     href: ../../misc/cs0821.md
   - name: CS0822
     href: ../../misc/cs0822.md
   - name: CS0825
     href: ../../misc/cs0825.md
-  - name: CS0826
-    href: cs0826.md
   - name: CS0828
     href: ../../misc/cs0828.md
   - name: CS0831
@@ -939,8 +919,6 @@ items:
     href: ../../misc/cs0844.md
   - name: CS0845
     href: cs0845.md
-  - name: CS0846
-    href: cs0846.md
   - name: CS0854
     href: cs0854.md
   - name: CS1001
@@ -1133,8 +1111,6 @@ items:
     href: cs1548.md
   - name: CS1551
     href: ../../misc/cs1551.md
-  - name: CS1552
-    href: ../../misc/cs1552.md
   - name: CS1553
     href: ../../misc/cs1553.md
   - name: CS1554
@@ -1181,8 +1157,6 @@ items:
     href: ../../misc/cs1583.md
   - name: CS1585
     href: ../../misc/cs1585.md
-  - name: CS1586
-    href: ../../misc/cs1586.md
   - name: CS1588
     href: ../../misc/cs1588.md
   - name: CS1593
@@ -1411,8 +1385,6 @@ items:
     href: cs1921.md
   - name: CS1922
     href: ../../misc/cs1922.md
-  - name: CS1925
-    href: ../../misc/cs1925.md
   - name: CS1926
     href: cs1926.md
   - name: CS1928
@@ -1791,8 +1763,6 @@ items:
     href: ../../misc/cs3005.md
   - name: CS3006
     href: ../../misc/cs3006.md
-  - name: CS3007
-    href: cs3007.md
   - name: CS3008
     href: ../../misc/cs3008.md
   - name: CS3009
@@ -1809,8 +1779,6 @@ items:
     href: ../../misc/cs3014.md
   - name: CS3015
     href: ../../misc/cs3015.md
-  - name: CS3016
-    href: ../../misc/cs3016.md
   - name: CS3017
     href: ../../misc/cs3017.md
   - name: CS3018
@@ -1839,8 +1807,6 @@ items:
     href: ../../misc/cs0162.md
   - name: CS0164
     href: ../../misc/cs0164.md
-  - name: CS0251
-    href: ../../misc/cs0251.md
   - name: CS0252
     href: ../../misc/cs0252.md
   - name: CS0253
@@ -1967,6 +1933,8 @@ items:
 - name: Constructor declarations
   href: constructor-errors.md
   displayName: Primary constructors, CS0514, CS0515, CS0516, CS0517, CS0522, CS0526, CS0568, CS0710, CS0768, CS0824, CS8054, CS8091, CS8358, CS8862, CS8867, CS8868, CS8878, CS8910, CS8958, CS8982, CS8983, CS9105, CS9106, CS9107, CS9108, CS9109, CS9110, CS9111, CS9112, CS9113, CS9114, CS9115, CS9116, CS9117, CS9118, CS9119, CS9120, CS9121, CS9122
+- name: Array declarations
+  displayName: CS0022, CS0178, CS0248, CS0251, CS0270, CS0611, CS0623, CS0650, CS0719, CS0820, CS0826, CS0846, CS1552, CS1586, CS1925, CS3007, CS3016
 - name: Lambda expressions
   href: lambda-expression-errors.md
   displayName: CS0748, CS0834, CS0835, CS1621, CS1628, CS1632, CS1673, CS1686, CS1706, CS1951, CS1952, CS1989, CS2037, CS8030, CS8072, CS8074, CS8075, CS8153, CS8155, CS8175, CS8916, CS8971, CS8972, CS8975, CS9098, CS9099, CS9100

@@ -1,5 +1,5 @@
 ---
-title: "How to serialize and deserialize JSON using C# - .NET"
+title: "How to serialize and deserialize JSON in C#"
 description: "Learn how to use the System.Text.Json namespace to serialize to and deserialize from JSON in .NET. Includes sample code."
 ms.date: 01/04/2023
 ms.custom: contperf-fy21q2
@@ -17,7 +17,7 @@ ms.topic: how-to
 adobe-target: true
 ---
 
-# How to serialize and deserialize (marshal and unmarshal) JSON in .NET
+# How to serialize and deserialize JSON in .NET
 
 This article shows how to use the <xref:System.Text.Json?displayProperty=fullName> namespace to serialize to and deserialize from JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](migrate-from-newtonsoft.md).
 

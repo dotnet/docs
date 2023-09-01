@@ -70,7 +70,7 @@ foreach (var element in single)
 
 The operand of a spread operator is an expression that can be enumerated. The spread operator evaluates each element of the enumerations expression.
 
-You can use collection expressions anywhere you need a collection of elements. They can specify the initial value for a collection or be passed as arguments to methods that take collection types. You can learn more about collection expressions in the [feature specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md).
+You can use collection expressions anywhere you need a collection of elements. They can specify the initial value for a collection or be passed as arguments to methods that take collection types. You can learn more about collection expressions in the [language reference article on collection expressions](../language-reference/operators/collection-expressions.md) or the [feature specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md).
 
 ## Default lambda parameters
 

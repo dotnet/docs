@@ -51,7 +51,12 @@
                     "csharp-9.0/*.md",
                     "csharp-10.0/*.md",
                     "csharp-11.0/*.md",
-                    "csharp-12.0/*.md"
+                    "csharp-12.0/primary-constructors.md",
+                    "csharp-12.0/collection-expressions.md",
+                    "csharp-12.0/using-alias-types.md",
+                    "csharp-12.0/lambda-method-group-defaults.md",
+                    "csharp-12.0/inline-arrays.md",
+                    "csharp-12.0/experimental-attribute.md"
                 ],
                 "src": "_csharplang/proposals",
                 "dest": "csharp/language-reference/proposals",
@@ -67,8 +72,7 @@
                     "csharp-8.0/obsolete-accessor.md",
                     "csharp-8.0/shadowing-in-nested-functions.md",
                     "csharp-8.0/unconstrained-null-coalescing.md",
-                    "csharp-8.0/nullable-reference-types-specification.md",
-                    "csharp-12.0/ref-readonly-parameters.md"
+                    "csharp-8.0/nullable-reference-types-specification.md"
                 ]
             },
             {
@@ -186,8 +190,7 @@
                 "docs/fundamentals/code-analysis/quality-rules/**/il*.md": "https://github.com/mono/linker/issues",
                 "docs/fundamentals/code-analysis/style-rules/**/*.md": "https://github.com/dotnet/roslyn/issues",
                 "docs/machine-learning/**/**.md": "https://github.com/dotnet/machinelearning",
-                "docs/standard/data/sqlite/**/*.md": "https://github.com/dotnet/efcore",
-                "docs/spark/**/**.md": "https://github.com/dotnet/spark"
+                "docs/standard/data/sqlite/**/*.md": "https://github.com/dotnet/efcore"
             },
             "ms.prod": {
                 "_csharplang/**/*.md": "dotnet-csharp",
@@ -208,7 +211,6 @@
                 "docs/standard/design-guidelines/*.md": "dotnet",
                 "docs/standard/security/*.md": "dotnet",
                 "docs/visual-basic/**/**.md": "dotnet-visualbasic",
-                "docs/spark/**/**.md": "dotnet-spark",
                 "docs/orleans/**/**.md": "dotnet-orleans"
             },
             "ms.topic": {
@@ -338,7 +340,6 @@
                 "docs/fundamentals/syslib-diagnostics/**/**.md": "gewarren",
                 "docs/iot/**/*.*": "camsoper",
                 "docs/machine-learning/**/**.md": "luisquintanilla",
-                "docs/spark/**/**.md": "luisquintanilla",
                 "docs/standard/**/**.md": "gewarren",
                 "docs/standard/analyzers/**/**.md": "IEvangelist",
                 "docs/standard/assembly/**/**.md": "IEvangelist",
@@ -425,7 +426,6 @@
                 "docs/fundamentals/syslib-diagnostics/**/**.md": "gewarren",
                 "docs/iot/**/*.*": "casoper",
                 "docs/machine-learning/**/**.md": "luquinta",
-                "docs/spark/**/**.md": "luquinta",
                 "docs/standard/**/**.md": "gewarren",
                 "docs/standard/analyzers/**/**.md": "dapine",
                 "docs/standard/assembly/**/**.md": "dapine",
@@ -666,8 +666,8 @@
                 "_csharplang/proposals/csharp-12.0/lambda-method-group-defaults.md": "Optional and parameter array parameters for lambdas and method groups",
                 "_csharplang/proposals/csharp-12.0/inline-arrays.md": "Inline arrays, or fixed sized buffers",
                 "_csharplang/proposals/csharp-12.0/collection-expressions.md": "Collection expressions",
+                "_csharplang/proposals/csharp-12.0/experimental-attribute.md": "Experimental attribute",
 
-                
 
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "C# compiler breaking changes since C# 10",
                 "_vblang/spec/introduction.md": "Introduction",
@@ -780,7 +780,8 @@
                 "_csharplang/proposals/csharp-12.0/lambda-method-group-defaults.md": "Optional and parameter array parameters for lambdas and method groups",
                 "_csharplang/proposals/csharp-12.0/inline-arrays.md": "Inline arrays provide a general-purpose and safe mechanism for declaring inline arrays within C# classes, structs, and interfaces.",
                 "_csharplang/proposals/csharp-12.0/collection-expressions.md": "Collection expressions provide a concise syntax to initialize collections by defining elements or embedded collections as the source of the new collection's elements.",
-                
+                "_csharplang/proposals/csharp-12.0/experimental-attribute.md": "Use the ExperimentalAttribute attribute to indicate APIs that aren't stable.",
+
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "Learn about any breaking changes since the initial release of C# 10",
                 "_vblang/spec/introduction.md": "This chapter provides and introduction to the Visual Basic language.",
                 "_vblang/spec/lexical-grammar.md": "This chapter defines the lexical grammar for Visual Basic.",
@@ -797,6 +798,7 @@
                 "_vblang/spec/overload-resolution.md": "This chapter describes the rules that govern overload resolution when multiple members have the same name."
             },
             "titleSuffix": {
+                "docs/**/**.md": ".NET",
                 "_csharpstandard/standard/*.md": "C# language specification",
                 "_csharplang/proposals/csharp-8.0/*.md": "C# 8.0 draft feature specifications",
                 "_csharplang/proposals/csharp-9.0/*.md": "C# 9.0 draft feature specifications",
@@ -827,6 +829,7 @@
                 "docs/core/tools/**.md": ".NET CLI",
                 "docs/core/tutorials/**.md": ".NET",
                 "docs/core/versions/**.md": ".NET",
+                "docs/csharp/**/**.md": "C#",
                 "docs/machine-learning/**/**.md": "ML.NET",
                 "docs/standard/data/sqlite/**/**.md": "Microsoft.Data.Sqlite",
                 "docs/standard/design-guidelines/**/**.md": "Framework Design Guidelines",

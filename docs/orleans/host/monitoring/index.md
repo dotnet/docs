@@ -89,8 +89,8 @@ A collection of networking meters that are used to monitor the networking layer.
 
 | Meter name | Type | Description |
 |--|--|--|
-| `orleans-networking-sockets-closed` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of sockets that have closed. |
-| `orleans-networking-sockets-opened` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of sockets that have opened. |
+| `orleans-networking-sockets-closed` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of sockets that have closed. |
+| `orleans-networking-sockets-opened` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of sockets that have opened. |
 
 #### Messaging
 
@@ -102,21 +102,21 @@ A collection of messaging meters that are used to monitor the messaging layer.
 | `orleans-messaging-received-messages-size` | <xref:System.Diagnostics.Metrics.Histogram%601> | A histogram representing the size of messages in bytes that have been received. |
 | `orleans-messaging-sent-header-size` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number of header bytes sent. |
 | `orleans-messaging-received-header-size` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number of header bytes received. |
-| `orleans-messaging-sent-failed` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of failed sent messages. |
-| `orleans-messaging-sent-dropped` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of dropped sent messages. |
+| `orleans-messaging-sent-failed` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of failed sent messages. |
+| `orleans-messaging-sent-dropped` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of dropped sent messages. |
 | `orleans-messaging-processing-dispatcher-received` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number dispatcher received messages. |
 | `orleans-messaging-processing-dispatcher-processed` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number dispatcher processed messages. |
 | `orleans-messaging-processing-dispatcher-forwarded` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number dispatcher forwarded messages. |
 | `orleans-messaging-processing-ima-received` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number of incoming messages received. |
 | `orleans-messaging-processing-ima-enqueued` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number of incoming messages enqueued. |
 | `orleans-messaging-processing-activation-data` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing all of the processing activation data. |
-| `orleans-messaging-pings-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of pings sent. |
-| `orleans-messaging-pings-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of pings received. |
-| `orleans-messaging-pings-reply-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of ping replies received. |
-| `orleans-messaging-pings-reply-missed` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of ping replies missed. |
-| `orleans-messaging-expired"` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of messages that have expired. |
-| `orleans-messaging-rejected` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of messages that have been rejected. |
-| `orleans-messaging-rerouted` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of messages that have been rerouted. |
+| `orleans-messaging-pings-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of pings sent. |
+| `orleans-messaging-pings-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of pings received. |
+| `orleans-messaging-pings-reply-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of ping replies received. |
+| `orleans-messaging-pings-reply-missed` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of ping replies missed. |
+| `orleans-messaging-expired"` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of messages that have expired. |
+| `orleans-messaging-rejected` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of messages that have been rejected. |
+| `orleans-messaging-rerouted` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of messages that have been rerouted. |
 | `orleans-messaging-sent-local` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number of local messages sent. |
 
 #### Gateway
@@ -126,9 +126,9 @@ A collection of gateway meters that are used to monitor the gateway layer.
 | Meter name | Type | Description |
 |--|--|--|
 | `orleans-gateway-connected-clients` | <xref:System.Diagnostics.Metrics.UpDownCounter%601> | An up/down counter representing the number of connected clients. |
-| `orleans-gateway-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of gateway messages sent. |
-| `orleans-gateway-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of gateway messages received. |
-| `orleans-gateway-load-shedding` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of gateway (load shedding) messages that have been rejected due to the gateway being overloaded. |
+| `orleans-gateway-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of gateway messages sent. |
+| `orleans-gateway-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of gateway messages received. |
+| `orleans-gateway-load-shedding` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of gateway (load shedding) messages that have been rejected due to the gateway being overloaded. |
 
 #### Runtime
 
@@ -136,7 +136,7 @@ A collection of runtime meters that are used to monitor the runtime layer.
 
 | Meter name | Type | Description |
 |--|--|--|
-| `orleans-scheduler-long-running-turns` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of long running turns within the scheduler. |
+| `orleans-scheduler-long-running-turns` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of long running turns within the scheduler. |
 | `orleans-runtime-total-physical-memory` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the total number of memory (in MB) of the Orleans runtime. |
 | `orleans-runtime-available-memory` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the available memory (in MB) for the Orleans runtime. |
 
@@ -148,13 +148,13 @@ A collection of catalog meters that are used to monitor the catalog layer.
 |--|--|--|
 | `orleans-catalog-activations` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the number of catalog activations. |
 | `orleans-catalog-activation-working-set` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the number of activations within the working set. |
-| `orleans-catalog-activation-created` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of created activations. |
-| `orleans-catalog-activation-destroyed` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of destroyed activations. |
-| `orleans-catalog-activation-failed-to-activate` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of activations that failed to activate. |
-| `orleans-catalog-activation-collections` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of activation collections. |
-| `orleans-catalog-activation-shutdown` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of shutdown activations. |
-| `orleans-catalog-activation-non-existent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of non-existent activations. |
-| `orleans-catalog-activation-concurrent-registration-attempts` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of the number of concurrent activation registration attempts. |
+| `orleans-catalog-activation-created` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of created activations. |
+| `orleans-catalog-activation-destroyed` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of destroyed activations. |
+| `orleans-catalog-activation-failed-to-activate` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of activations that failed to activate. |
+| `orleans-catalog-activation-collections` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of activation collections. |
+| `orleans-catalog-activation-shutdown` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of shutdown activations. |
+| `orleans-catalog-activation-non-existent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of non-existent activations. |
+| `orleans-catalog-activation-concurrent-registration-attempts` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of concurrent activation registration attempts. |
 
 #### Directory
 
@@ -162,34 +162,34 @@ A collection of directory meters that are used to monitor the directory layer.
 
 | Meter name | Type | Description |
 |--|--|--|
-| `orleans-directory-lookups-local-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-lookups-local-successes` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-lookups-full-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-lookups-remote-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-lookups-remote-received` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-lookups-local-directory-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-lookups-local-directory-successes` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-lookups-cache-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-lookups-cache-successes` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-validations-cache-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-validations-cache-received` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-partition-size` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-cache-size` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-ring-size` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-ring-local-portion-distance` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-ring-local-portion-percentage` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-ring-local-portion-average-percentage` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-registrations-single-act-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-registrations-single-act-local` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-registrations-single-act-remote-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-registrations-single-act-remote-received` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-unregistrations-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-unregistrations-local` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-unregistrations-remote-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-unregistrations-remote-received` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-unregistrations-many-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-unregistrations-many-remote-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-directory-unregistrations-many-remote-received` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-directory-lookups-local-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of local lookups issued. |
+| `orleans-directory-lookups-local-successes` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of local successful lookups. |
+| `orleans-directory-lookups-full-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of full directory lookups issued. |
+| `orleans-directory-lookups-remote-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of remote directory lookups sent. |
+| `orleans-directory-lookups-remote-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of remote directory lookups received. |
+| `orleans-directory-lookups-local-directory-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of local directory lookups issued. |
+| `orleans-directory-lookups-local-directory-successes` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of local directory successful lookups. |
+| `orleans-directory-lookups-cache-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | A count cached lookups issued. |
+| `orleans-directory-lookups-cache-successes` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of cached successful lookups. |
+| `orleans-directory-validations-cache-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory cache validations sent.  |
+| `orleans-directory-validations-cache-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory cache validations received. |
+| `orleans-directory-partition-size` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the directory partition size. |
+| `orleans-directory-cache-size` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the directory cache size. |
+| `orleans-directory-ring-size` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the directory ring size. |
+| `orleans-directory-ring-local-portion-distance` |<xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the directories local portion distance. |
+| `orleans-directory-ring-local-portion-percentage` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the directories local portion percentage. |
+| `orleans-directory-ring-local-portion-average-percentage` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the directories local average percentage. |
+| `orleans-directory-registrations-single-act-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory single act registrations issued. |
+| `orleans-directory-registrations-single-act-local` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory single act registrations local. |
+| `orleans-directory-registrations-single-act-remote-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory single act registrations sent remotely. |
+| `orleans-directory-registrations-single-act-remote-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory single act registrations received remotely. |
+| `orleans-directory-unregistrations-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory un-registrations issued. |
+| `orleans-directory-unregistrations-local` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory un-registrations locally. |
+| `orleans-directory-unregistrations-remote-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory un-registrations sent remotely. |
+| `orleans-directory-unregistrations-remote-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory un-registrations received remotely. |
+| `orleans-directory-unregistrations-many-issued` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory un-registrations many issued. |
+| `orleans-directory-unregistrations-many-remote-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory un-registrations many sent remotely. |
+| `orleans-directory-unregistrations-many-remote-received` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of directory un-registrations many received remotely. |
 
 #### Consistent ring
 
@@ -197,9 +197,9 @@ A collection of consistent ring meters that are used to monitor the consistent r
 
 | Meter name | Type | Description |
 |--|--|--|
-| `orleans-consistent-ring-size` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-consistent-ring-range-percentage-local` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-consistent-ring-range-percentage-average` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-consistent-ring-size` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the consistent ring size. |
+| `orleans-consistent-ring-range-percentage-local` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the consistent ring local percentage. |
+| `orleans-consistent-ring-range-percentage-average` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the consistent ring average percentage. |
 
 #### Watchdog
 
@@ -207,8 +207,8 @@ A collection of watchdog meters that are used to monitor the watchdog layer.
 
 | Meter name | Type | Description |
 |--|--|--|
-| `orleans-watchdog-health-checks` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-watchdog-health-checks-failed` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-watchdog-health-checks` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of watchdog health checks. |
+| `orleans-watchdog-health-checks-failed` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of failed watchdog health checks. |
 
 #### Client
 
@@ -216,7 +216,7 @@ A collection of client meters that are used to monitor the client layer.
 
 | Meter name | Type | Description |
 |--|--|--|
-| `orleans-client-connected-gateways` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-client-connected-gateways` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the number of connected gateway clients. |
 
 #### Miscellaneous
 
@@ -224,8 +224,8 @@ A collection of miscellaneous meters that are used to monitor various layers.
 
 | Meter name | Type | Description |
 |--|--|--|
-| `orleans-grains` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-system-targets` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-grains` | <xref:System.Diagnostics.Metrics.Counter%601> | A count representing the number of grains. |
+| `orleans-system-targets` | <xref:System.Diagnostics.Metrics.Counter%601> | A count representing the number of system targets. |
 
 #### App requests
 
@@ -233,8 +233,8 @@ A collection of app request meters that are used to monitor the app request laye
 
 | Meter name | Type | Description |
 |--|--|--|
-| `orleans-app-requests-latency` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-app-requests-timedout` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-app-requests-latency` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing app request latency. |
+| `orleans-app-requests-timedout` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> |  An observable counter representing app requests that have timed out. |
 
 #### Reminders
 
@@ -242,9 +242,9 @@ A collection of reminder meters that are used to monitor the reminder layer.
 
 | Meter name | Type | Description |
 |--|--|--|
-| `orleans-reminders-tardiness` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-reminders-active` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-reminders-ticks-delivered` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-reminders-tardiness` | <xref:System.Diagnostics.Metrics.Histogram%601> | A histogram representing the number of seconds a reminder is tardy. |
+| `orleans-reminders-active` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the number active reminders. |
+| `orleans-reminders-ticks-delivered` | <xref:System.Diagnostics.Metrics.Counter%601> | A count representing the number of reminder ticks that have been delivered. |
 
 #### Storage
 
@@ -252,12 +252,12 @@ A collection of storage meters that are used to monitor the storage layer.
 
 | Meter name | Type | Description |
 |--|--|--|
-| `orleans-storage-read-errors` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-storage-write-errors` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-storage-clear-errors` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-storage-read-latency` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-storage-write-latency` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-storage-clear-latency` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-storage-read-errors` | <xref:System.Diagnostics.Metrics.Counter%601> |  A count representing the number of storage read errors. |
+| `orleans-storage-write-errors` | <xref:System.Diagnostics.Metrics.Counter%601> |  A count representing the number of storage write errors. |
+| `orleans-storage-clear-errors` | <xref:System.Diagnostics.Metrics.Counter%601> |  A count representing the number of storage clear errors. |
+| `orleans-storage-read-latency` | <xref:System.Diagnostics.Metrics.Histogram%601> | A histogram representing the storage read latency in milliseconds. |
+| `orleans-storage-write-latency` | <xref:System.Diagnostics.Metrics.Histogram%601> | A histogram representing the storage write latency in milliseconds. |
+| `orleans-storage-clear-latency` | <xref:System.Diagnostics.Metrics.Histogram%601> | A histogram representing the storage clear latency in milliseconds. |
 
 #### Streams
 
@@ -265,16 +265,16 @@ A collection of stream meters that are used to monitor the stream layer.
 
 | Meter name | Type | Description |
 |--|--|--|
-| `orleans-streams-pubsub-producers-added` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-pubsub-producers-removed` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-pubsub-producers` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-pubsub-consumers-added` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-pubsub-consumers-removed` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-pubsub-consumers` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-persistent-stream-pulling-agents` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-persistent-stream-messages-read` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-persistent-stream-messages-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-persistent-stream-pubsub-cache-size` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-pubsub-producers-added` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of streaming pubsub producers added. |
+| `orleans-streams-pubsub-producers-removed` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of streaming pubsub producers removed. |
+| `orleans-streams-pubsub-producers` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of streaming pubsub producers. |
+| `orleans-streams-pubsub-consumers-added` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of streaming pubsub consumers added. |
+| `orleans-streams-pubsub-consumers-removed` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of streaming pubsub consumers removed. |
+| `orleans-streams-pubsub-consumers` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of streaming pubsub consumers. |
+| `orleans-streams-persistent-stream-pulling-agents` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the number of persistent stream pulling agents. |
+| `orleans-streams-persistent-stream-messages-read` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of persistent stream messages read. |
+| `orleans-streams-persistent-stream-messages-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of persistent stream messages sent. |
+| `orleans-streams-persistent-stream-pubsub-cache-size` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the persistent stream pubsub cache size. |
 | `orleans-streams-queue-initialization-failures` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
 | `orleans-streams-queue-initialization-duration` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
 | `orleans-streams-queue-initialization-exceptions` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |

@@ -292,7 +292,6 @@ A collection of stream meters that are used to monitor the stream layer.
 | `orleans-streams-block-pool-claimed-memory` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the stream block pool claimed memory in bytes. |
 | `orleans-streams-block-pool-released-memory` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the stream block pool released memory in bytes. |
 | `orleans-streams-block-pool-allocated-memory` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the stream block pool allocated memory in bytes. |
-
 | `orleans-streams-queue-cache-size` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the stream queue cache size in bytes. |
 | `orleans-streams-queue-cache-length` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the stream queue length. |
 | `orleans-streams-queue-cache-messages-added` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the stream queue messages added. |

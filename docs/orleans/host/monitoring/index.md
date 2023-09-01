@@ -151,7 +151,7 @@ A collection of catalog meters that are used to monitor the catalog layer.
 | `orleans-catalog-activation-created` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of created activations. |
 | `orleans-catalog-activation-destroyed` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of destroyed activations. |
 | `orleans-catalog-activation-failed-to-activate` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of activations that failed to activate. |
-| `orleans-catalog-activation-collections` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of activation collections. |
+| `orleans-catalog-activation-collections` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of idle activation collections. |
 | `orleans-catalog-activation-shutdown` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of shutdown activations. |
 | `orleans-catalog-activation-non-existent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of non-existent activations. |
 | `orleans-catalog-activation-concurrent-registration-attempts` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of concurrent activation registration attempts. |

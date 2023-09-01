@@ -275,34 +275,35 @@ A collection of stream meters that are used to monitor the stream layer.
 | `orleans-streams-persistent-stream-messages-read` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of persistent stream messages read. |
 | `orleans-streams-persistent-stream-messages-sent` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of persistent stream messages sent. |
 | `orleans-streams-persistent-stream-pubsub-cache-size` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the persistent stream pubsub cache size. |
-| `orleans-streams-queue-initialization-failures` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-initialization-duration` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-initialization-exceptions` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-read-failures` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-read-duration` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-read-exceptions` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-shutdown-failures` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-shutdown-duration` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-shutdown-exceptions` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-messages-received` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-oldest-message-enqueue-age` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-newest-message-enqueue-age` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-block-pool-total-memory` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-block-pool-available-memory` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-block-pool-claimed-memory` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-block-pool-released-memory` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-block-pool-allocated-memory` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-cache-size` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-cache-length` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-cache-messages-added` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-cache-messages-purged` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-cache-memory-allocated` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-cache-memory-released` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-cache-oldest-to-newest-duration` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-cache-oldest-age` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-cache-pressure` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-cache-under-pressure` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-streams-queue-cache-pressure-contribution-count` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-streams-queue-initialization-failures` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of steam queue initialization failures. |
+| `orleans-streams-queue-initialization-duration` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of steam queue initialization occurrences. |
+| `orleans-streams-queue-initialization-exceptions` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of steam queue initialization exceptions. |
+| `orleans-streams-queue-read-failures` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of steam queue read failures. |
+| `orleans-streams-queue-read-duration` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of steam queue read occurrences. |
+| `orleans-streams-queue-read-exceptions` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of steam queue read exceptions. |
+| `orleans-streams-queue-shutdown-failures` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of steam queue shutdown failures. |
+| `orleans-streams-queue-shutdown-duration` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of steam queue shutdown occurrences. |
+| `orleans-streams-queue-shutdown-exceptions` | <xref:System.Diagnostics.Metrics.Counter%601> | A count of steam queue shutdown exceptions. |
+| `orleans-streams-queue-messages-received` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number of stream queue messages received. |
+| `orleans-streams-queue-oldest-message-enqueue-age` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the age of the oldest enqueued message. |
+| `orleans-streams-queue-newest-message-enqueue-age` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the age of the newest enqueued message. |
+| `orleans-streams-block-pool-total-memory` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the stream block pool total memory in bytes. |
+| `orleans-streams-block-pool-available-memory` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the stream block pool available memory in bytes. |
+| `orleans-streams-block-pool-claimed-memory` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the stream block pool claimed memory in bytes. |
+| `orleans-streams-block-pool-released-memory` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the stream block pool released memory in bytes. |
+| `orleans-streams-block-pool-allocated-memory` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the stream block pool allocated memory in bytes. |
+
+| `orleans-streams-queue-cache-size` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the stream queue cache size in bytes. |
+| `orleans-streams-queue-cache-length` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the stream queue length. |
+| `orleans-streams-queue-cache-messages-added` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the stream queue messages added. |
+| `orleans-streams-queue-cache-messages-purged` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the stream queue messages purged. |
+| `orleans-streams-queue-cache-memory-allocated` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the stream queue memory allocated. |
+| `orleans-streams-queue-cache-memory-released` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the stream queue memory released. |
+| `orleans-streams-queue-cache-oldest-to-newest-duration` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the duration from the oldest to the newest stream queue cache. |
+| `orleans-streams-queue-cache-oldest-age` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the age of the oldest cached message. |
+| `orleans-streams-queue-cache-pressure` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing the pressure on the stream queue cache. |
+| `orleans-streams-queue-cache-under-pressure` | <xref:System.Diagnostics.Metrics.ObservableGauge%601> | An observable gauge representing whether the stream queue cache is under pressure. |
+| `orleans-streams-queue-cache-pressure-contribution-count` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the stream queue cache pressure contributions. |
 
 #### Transactions
 
@@ -310,10 +311,10 @@ A collection of transaction meters that are used to monitor the transaction laye
 
 | Meter name | Type | Description |
 |--|--|--|
-| `orleans-transactions-started` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-transactions-successful` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-transactions-failed` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
-| `orleans-transactions-throttled` | <xref:System.Diagnostics.Metrics.Counter%601> | ... |
+| `orleans-transactions-started` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number of started transactions. |
+| `orleans-transactions-successful` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number of successful transactions. |
+| `orleans-transactions-failed` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number of failed transactions. |
+| `orleans-transactions-throttled` | <xref:System.Diagnostics.Metrics.ObservableCounter%601> | An observable counter representing the number of throttled transactions. |
 
 ### Prometheus
 

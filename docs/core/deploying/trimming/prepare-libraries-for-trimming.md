@@ -4,6 +4,7 @@ description: Learn how to prepare .NET libraries for trimming.
 author: sbomer
 ms.author: svbomer
 ms.date: 06/12/2023
+zone_pivot_groups: dotnet-preview-version
 ---
 
 # Prepare .NET libraries for trimming
@@ -15,12 +16,33 @@ The .NET SDK makes it possible to reduce the size of self-contained apps by [tri
 
 ## Prerequisites
 
+:::zone pivot="dotnet-6-0"
+
 [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet) or later.
 
 To get the most up-to-date trimming warnings and analyzer coverage:
 
-* Install and target the .NET 8 SDK or later.
-* When targeting .NET 6 or NET 7, install the .NET 8 SDK or later.
+* Install and use the .NET 8 SDK or later.
+* Target `net8.0` or later.
+
+:::zone-end
+
+:::zone pivot="dotnet-7-0"
+
+[.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet) or later.
+
+To get the most up-to-date trimming warnings and analyzer coverage:
+
+* Install and use the .NET 8 SDK or later.
+* Target `net8.0` or later.
+
+:::zone-end
+
+:::zone pivot="dotnet-8-0"
+
+[.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet) or later.
+
+:::zone-end
 
 ## Enable library trim warnings
 
@@ -33,31 +55,7 @@ We recommend using both approaches. Project-specific trimming is convenient and 
 
 ### Enable project-specific trimming
 
-### [.NET 6](#tab/net6)
-
-To get the latest version of the analyzer with the most coverage, install the [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet) or later. Installing the .NET 8 SDK or later:
-
-* Updates the tooling used to build an app or library and enable trim warnings.
-* Provides significant trimming and analyzer improvements over previous .NET SDKs.
-* Does ***not*** require targeting the .NET 8 runtime. Library authors can continue to target the .NET 6 runtime.
-
 Set `<IsTrimmable>true</IsTrimmable>` in the project file.
-
-### [.NET 7](#tab/net7)
-
-To get the latest version of the analyzer with the most coverage, install the [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet) or later. Installing the .NET 8 SDK or later:
-
-* Updates the tooling used to build an app or library and enable trim warnings.
-* Provides significant trimming and analyzer improvements over previous .NET SDKs.
-* Does ***not*** require targeting the .NET 8 runtime. Libary authors can continue to target the .NET 7 runtime.
-
-Set `<IsTrimmable>true</IsTrimmable>` in the project file.
-
-### [.NET 8+](#tab/net8plus)
-
-Set `<IsTrimmable>true</IsTrimmable>` in the project file.
-
----
 
 :::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyLibrary/MyLibrary.csproj.xml" id="snippet" highlight="2":::
 
@@ -97,7 +95,7 @@ To create the trimming test app:
 
 If library targets a TFM that is not trimmable, for example `net472` or `netstandard2.0`, there's no benefit to creating a trimming test app. Trimming is only supported for .NET 6 and later.
 
-### [.NET 6](#tab/net6)
+:::zone pivot="dotnet-6-0"
 
 * Set `<TrimmerDefaultAction>` to `link`. <!-- only diff with .NET7+ -->
 * Add `<PublishTrimmed>true</PublishTrimmed>`.
@@ -105,49 +103,47 @@ If library targets a TFM that is not trimmable, for example `net472` or `netstan
 * Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
   * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root". A "root" assembly means the trimmer analyzes every call in the library and traverses all code paths that originate from that assembly.
 
-### .csproj file
+:::zone-end
 
-:::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyTestLib6app/XMLFile1.xml":::
-
-### [.NET 7](#tab/net7)
+:::zone pivot="dotnet-7-0"
 
 * Add `<PublishTrimmed>true</PublishTrimmed>`.
 * Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
 * Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
   * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root". A "root" assembly means the trimmer analyzes every call in the library and traverses all code paths that originate from that assembly.
 
+:::zone-end
+
+:::zone pivot="dotnet-8-0"
+
+* Add `<PublishTrimmed>true</PublishTrimmed>`.
+* Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
+* Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
+  * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root". A "root" assembly means the trimmer analyzes every call in the library and traverses all code paths that originate from that assembly.
+
+:::zone-end
+
 ### .csproj file
+
+:::zone pivot="dotnet-6-0"
+
+:::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyTestLib6app/XMLFile1.xml":::
+
+:::zone-end
+
+:::zone pivot="dotnet-7-0"
 
 :::code language="xml" source="~/docs/core/deploying/trimming/snippets/ConsoleApp1/ConsoleApp1.csproj":::
 
 **Note:** In the preceding project file, when using .NET 7, replace `<TargetFramework>net8.0</TargetFramework>` with `<TargetFramework>net7.0</TargetFramework>`.
 
-### [.NET 8+](#tab/net8plus)
+:::zone-end
 
-<!-- exact duplicate of tab7 but forced by builder to have identical tabs -->
-* Add `<PublishTrimmed>true</PublishTrimmed>`.
-* Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
-* Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
-  * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root". A "root" assembly means the trimmer analyzes every call in the library and traverses all code paths that originate from that assembly.
-
-### .csproj file
+:::zone pivot="dotnet-8-0"
 
 :::code language="xml" source="~/docs/core/deploying/trimming/snippets/ConsoleApp1/ConsoleApp1.csproj":::
 
-<!-- removed due to https://github.com/dotnet/docs/pull/36487#discussion_r1304207024 
-**Notes:**
-
-* [`<TrimMode>full</TrimMode>`](/dotnet/core/compatibility/deployment/7.0/trim-all-assemblies#recommended-action) in the `<PropertyGroup>` tag:
-
-  * Is the [default for .NET 7 and higher](../../../core/compatibility/deployment/7.0/trim-all-assemblies.md).
-  * Is not shown in the preceding project file.
-  * Ensures that the trimmer only analyzes the parts of the library's dependencies that are used.
-  * Tells the trimmer that any code that isn't part of a "root" can be trimmed if it's unused. Without this   option:
-    * Warnings are issued originating from ***any*** part of a dependency that doesn't set `[AssemblyMetadata  ("IsTrimmable", "Tue")]`
-    * The preceding warnings can be issued for code that is unused by the library.
--->
-
----
+:::zone-end
 
 Once the project file is updated, run `dotnet publish` with the target [runtime identifier (RID)](../../rid-catalog.md).
 

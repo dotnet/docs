@@ -101,28 +101,28 @@ public static HttpClient Connect(string url, TimeSpan timeout)
 }
 ```
 
-To suppress the `CP0002` error for this intentional breaking change, you can add a `CompatibilitySuppressions.xml` file to your project.
-The easiest way to add it is by adding the `GenerateCompatibilitySuppressionFile` property to your project (see also [Suppress compatibility errors](overview.md#suppress-compatibility-errors)).
+To suppress the `CP0002` error for this intentional breaking change, you can add a *CompatibilitySuppressions.xml* file to your project.
+By calling `dotnet pack /p:GenerateCompatibilitySuppressionFile=true` once, this file can be generated automatically.  
+It will contain a suppression for each validation error that occurred during pack (see also [Suppress compatibility errors](overview.md#suppress-compatibility-errors)).
+
+In our case *CompatibilitySuppressions.xml* will contain the suppression for the `CP0002` error:
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <PackageVersion>2.0.0</PackageVersion>
-    <EnablePackageValidation>true</EnablePackageValidation>
-    <PackageValidationBaselineVersion>1.1.0</PackageValidationBaselineVersion>
-    <GenerateCompatibilitySuppressionFile>true</GenerateCompatibilitySuppressionFile>  
-  </PropertyGroup>
-
-</Project>
+<?xml version="1.0" encoding="utf-8"?>
+<Suppressions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Suppression>
+    <DiagnosticId>CP0002</DiagnosticId>
+    <Target>M:A.B.Connect(System.String)</Target>
+    <Left>lib/net6.0/AdventureWorks.Client.dll</Left>
+    <Right>lib/net6.0/AdventureWorks.Client.dll</Right>
+    <IsBaselineSuppression>true</IsBaselineSuppression>
+  </Suppression>
+</Suppressions>
 ```
-
-If `GenerateCompatibilitySuppressionFile` is set to `true`, all validation errors that occur during pack will be added as a suppression to the generated `CompatibilitySuppressions.xml` file.
 
 This file could be checked into source control to document and review the breaking changes made in a PR and the upcoming release.
 
-After you have released version 2.0.0 of the package, you would remove the `GenerateCompatibilitySuppressionFile` property and start working on the next version of the package.
+After you have released version 2.0.0 of the package, you would delete the *CompatibilitySuppressions.xml* file and update the `PackageValidationBaselineVersion` property to validate future changes against the new release.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

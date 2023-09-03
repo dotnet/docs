@@ -45,7 +45,7 @@ public static HttpClient Connect(string url, TimeSpan timeout = default)
 
 However, when you try to pack, it throws an error.
 
-```text
+```dotnetcli
 D:\demo>dotnet pack
 MSBuild version 17.3.2+561848881 for .NET
   Determining projects to restore...
@@ -101,11 +101,9 @@ public static HttpClient Connect(string url, TimeSpan timeout)
 }
 ```
 
-To suppress the `CP0002` error for this intentional breaking change, you can add a *CompatibilitySuppressions.xml* file to your project.
-By calling `dotnet pack /p:GenerateCompatibilitySuppressionFile=true` once, this file can be generated automatically.  
-It will contain a suppression for each validation error that occurred during pack (see also [Suppress compatibility errors](overview.md#suppress-compatibility-errors)).
+To suppress the `CP0002` error for this intentional breaking change, you can add a *CompatibilitySuppressions.xml* file to your project. By calling `dotnet pack /p:GenerateCompatibilitySuppressionFile=true` once, this file can be generated automatically. It contains a suppression for each validation error that occurred during pack. For more information, see [Suppress compatibility errors](overview.md#suppress-compatibility-errors).
 
-In our case *CompatibilitySuppressions.xml* will contain the suppression for the `CP0002` error:
+In this example, the *CompatibilitySuppressions.xml* contains the suppression for the `CP0002` error:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -120,7 +118,7 @@ In our case *CompatibilitySuppressions.xml* will contain the suppression for the
 </Suppressions>
 ```
 
-This file could be checked into source control to document and review the breaking changes made in a PR and the upcoming release.
+This file should be checked into source control to document and review the breaking changes made in a PR and the upcoming release.
 
 After you have released version 2.0.0 of the package, you would delete the *CompatibilitySuppressions.xml* file and update the `PackageValidationBaselineVersion` property to validate future changes against the new release.
 

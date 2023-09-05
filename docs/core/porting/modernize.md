@@ -13,7 +13,7 @@ In this article, you'll learn about different ways you can modernize your app af
 
 ## Missing APIs
 
-When upgrading a .NET Framework app, you'll most likely have some incompatibilities. This is because .NET Framework is a Windows-only technology and .NET is a cross-platform technology. Some libraries aren't. For example, .NET doesn't provide out-of-the-box APIs to access the Windows Registry like .NET Framework did. Support for the Windows Registry is provided by the `Microsoft.Win32.Registry` NuGet package. Many the .NET Framework-specific libraries have been ported to .NET or .NET Standard, and are hosted on NuGet. If you find a missing reference in your project, search NuGet.
+When upgrading a .NET Framework app, you'll most likely have some incompatibilities. This is because .NET Framework is a Windows-only technology and .NET is a cross-platform technology. Some libraries aren't. For example, .NET doesn't provide out-of-the-box APIs to access the Windows Registry like .NET Framework did. Support for the Windows Registry is provided by the `Microsoft.Win32.Registry` NuGet package. Many .NET Framework-specific libraries have been ported to .NET or .NET Standard, and are hosted on NuGet. If you find a missing reference in your project, search NuGet.
 
 ### Windows Compatibility Pack
 
@@ -121,4 +121,4 @@ Perform the following steps to use the _appsettings.json_ file as your configura
 01. Delete the _App.config_ file from the project.
 
     > [!CAUTION]
-    > Make sure that your app runs correctly without the _App.config_ file. Back up the _App.config_ file through source control or by copying the file elsewhere. After you've thohroughly tested your app, delete the _App.config_file.
+    > Make sure that your app runs correctly without the _App.config_ file. Back up the _App.config_ file through source control or by copying the file elsewhere. After you've thoroughly tested your app, delete the _App.config_file.

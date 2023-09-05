@@ -23,7 +23,7 @@ public interface IProductClient
 }
 ```
 
-The interface name must start with an `I`. It's used as the <xref:Microsoft.Extensions.Http.Telemetry.RequestMetadata.DependencyName?displayProperty=nameWithType> for the source-generated telemetry's <xref:Microsoft.Extensions.Telemetry.RequestMetadata>. If the name ends in `Api` or `Client`, those are excluded. For example, if the interface is named `IProductClient`, the dependency name is `Product`.
+The interface name must start with an `I`. It's used as the <xref:Microsoft.Extensions.Http.Telemetry.RequestMetadata.DependencyName?displayProperty=nameWithType> for the source-generated telemetry's <xref:Microsoft.Extensions.Http.Telemetry.RequestMetadata>. If the name ends in `Api` or `Client`, those are excluded. For example, if the interface is named `IProductClient`, the dependency name is `Product`.
 
 To override the calculated dependency name, use the `customDependencyName` parameter of the <xref:Microsoft.Extensions.Http.AutoClient.AutoClientAttribute>.
 

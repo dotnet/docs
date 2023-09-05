@@ -833,6 +833,9 @@ items:
       - name: Rate limit an HTTP handler
         href: ../core/extensions/http-ratelimiter.md
         displayName: networking,http,rate limit,rate limiting,rate limit http,rate limiting http,rate limit http handler,rate limiting http handler
+      - name: Customize SNI in HTTP requests
+        href: ../core/extensions/httpclient-sni.md
+        displayName: networking,http,httpclient,sni,server name indication,server name indication http,server name indication httpclient,server name indication http client
     - name: Sockets
       items:
       - name: Sockets support

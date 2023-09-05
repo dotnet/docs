@@ -29,7 +29,7 @@ NuGet uses the default root store on Windows, which already supports general-pur
 ## Linux
 
 > [!IMPORTANT]
-> Although signed-package verification functionality was added in .NET 5 SDK's, the functionality isn't supported on Linux until .NET 6.0.400 SDK. We strongly recommend that signed-package verification not be used with .NET SDK's below 6.0.400.
+> Although signed-package verification functionality was added in .NET 5 SDK's, the functionality isn't supported on Linux until .NET 6.0.400 SDK. Don't use signed-package verification with .NET SDK versions earlier than 6.0.400.
 
 Prior to .NET 8 Preview 4 SDK, verification is disabled by default during package restore operations. To opt in, set the environment variable `DOTNET_NUGET_SIGNATURE_VERIFICATION` to `true`.
 
@@ -54,7 +54,7 @@ Verification is disabled by default during package restore operations. To opt in
 NuGet uses only the .NET SDK's certificate bundles.
 
 > [!IMPORTANT]
-> Although signed-package verification functionality was added in .NET 5 SDK's, the functionality isn't currently supported on macOS. We strongly recommend that signed-package verification not be used with .NET SDK's below 6.0.400 and that it remains disabled by default.
+> Although signed-package verification functionality was added in .NET 5 SDK's, the functionality isn't currently supported on macOS. Don't use signed-package verification with .NET SDK versions earlier than 6.0.400. Leave it disabled by default.
 
 ## See also
 

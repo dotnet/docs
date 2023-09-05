@@ -18,7 +18,6 @@ Welcome to what's new in the .NET docs for June 2023. This article lists some of
 - [Base64.DecodeFromUtf8 methods ignore whitespace](../core/compatibility/core-libraries/8.0/decodefromutf8-whitespace.md)
 - [Host determines RID-specific assets](../core/compatibility/deployment/8.0/rid-asset-list.md)
 - [MSBuild respects DOTNET_CLI_UI_LANGUAGE](../core/compatibility/sdk/8.0/msbuild-language.md)
-- [.NET tool roll-forward behavior](../core/compatibility/sdk/8.0/tool-rollforward.md)
 - [SafeHandle types must have public constructor](../core/compatibility/interop/8.0/safehandle-constructor.md)
 - [IndexOfAnyValues renamed to SearchValues](../core/compatibility/core-libraries/8.0/indexofanyvalues-renamed.md)
 - [Runtime-specific apps no longer self-contained](../core/compatibility/sdk/8.0/runtimespecific-app-default.md)

@@ -8,7 +8,7 @@ ms.date: 09/05/2023
 
 # Use AutoClient to generate HTTP client dependencies
 
-In this article, you'll learn how to use the [Microsoft.Extensions.Http.AutoClient](https://www.nuget.org/packages/Microsoft.Extensions.Http.AutoClient) NuGet package to decorate an interface and generate a strongly typed HTTP client dependency. This is a great way to reduce the amount of boilerplate code you need to write when using the <xref:Microsoft.Extensions.Http.IHttpClientFactory> to create named HTTP clients. Relying on a source generator, the .NET AutoClient package generates the implementation of your interface, along with extension methods to register it into the dependency injection container. The source-generated code is written in a highly performant way, using the <xref:System.Net.Http.HttpClient> directly, without any reflection or dynamic code.
+In this article, you'll learn how to use the [Microsoft.Extensions.Http.AutoClient](https://www.nuget.org/packages/Microsoft.Extensions.Http.AutoClient) NuGet package to decorate an interface and generate a strongly typed HTTP client dependency. This is a great way to reduce the amount of boilerplate code you need to write when using the <xref:System.Net.Http.IHttpClientFactory> to create named HTTP clients. Relying on a source generator, the .NET AutoClient package generates the implementation of your interface, along with extension methods to register it into the dependency injection container. The source-generated code is written in a highly performant way, using the <xref:System.Net.Http.HttpClient> directly, without any reflection or dynamic code.
 
 ## The HTTP Auto Client interface
 
@@ -50,15 +50,15 @@ When the content type of the response isn't `application/json` and the method's 
 
 ### HTTP verb attributes
 
-The HTTP method is defined from the attribute you use. These include:
+The HTTP method is defined using one of the following attributes:
 
-* <xref:Microsoft.Extensions.Http.AutoClient.GetAttribute>
-* <xref:Microsoft.Extensions.Http.AutoClient.PostAttribute>
-* <xref:Microsoft.Extensions.Http.AutoClient.PutAttribute>
-* <xref:Microsoft.Extensions.Http.AutoClient.PatchAttribute>
-* <xref:Microsoft.Extensions.Http.AutoClient.DeleteAttribute>
-* <xref:Microsoft.Extensions.Http.AutoClient.HeadAttribute>
-* <xref:Microsoft.Extensions.Http.AutoClient.OptionsAttribute>
+- <xref:Microsoft.Extensions.Http.AutoClient.GetAttribute?displayProperty=fullName>
+- <xref:Microsoft.Extensions.Http.AutoClient.PostAttribute?displayProperty=fullName>
+- <xref:Microsoft.Extensions.Http.AutoClient.PutAttribute?displayProperty=fullName>
+- <xref:Microsoft.Extensions.Http.AutoClient.PatchAttribute?displayProperty=fullName>
+- <xref:Microsoft.Extensions.Http.AutoClient.DeleteAttribute?displayProperty=fullName>
+- <xref:Microsoft.Extensions.Http.AutoClient.HeadAttribute?displayProperty=fullName>
+- <xref:Microsoft.Extensions.Http.AutoClient.OptionsAttribute?displayProperty=fullName>
 
 The attribute must receive the path to call the API. This path must not contain query parameters. The path is used as the <xref:Microsoft.Extensions.Http.Telemetry.RequestMetadata.RequestRoute?displayProperty=nameWithType> for telemetry. The path must be relative, to be used along with the base address of the <xref:System.Net.Http.HttpClient>.
 

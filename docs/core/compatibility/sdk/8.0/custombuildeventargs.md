@@ -15,7 +15,7 @@ Previously, you could derive from any subclass of <xref:Microsoft.Build.Framewor
 
 Starting in .NET 8, a build error is issued if your code uses any type derived from <xref:Microsoft.Build.Framework.BuildEventArgs> and you build using the .NET 8 version of MSBuild, that is, from the command line:
 
-> Usage of unsecure BinaryFormatter during serialization of custom event type 'MyCustomBuildEventArgs'. This will be deprecated soon. Please use Extended*EventArgs instead. More info: https://aka.ms/msbuild/eventargs
+> Usage of unsecure BinaryFormatter during serialization of custom event type 'MyCustomBuildEventArgs'. This will be deprecated soon. Please use Extended*EventArgs instead. More info: <https://aka.ms/msbuild/eventargs>
 
 If you build from Visual Studio, there is no change in behavior unless you opt in by setting the `MSBUILDCUSTOMBUILDEVENTWARNING` environment variable to 1 (available in Visual Studio version 17.8 and later).
 

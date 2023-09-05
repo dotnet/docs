@@ -81,7 +81,7 @@ The **PdbFile** compiler option specifies the name and location of the debug sym
 <PdbFile>filename</PdbFile>
 ```
 
-When you specify [**DebugType**](code-generation.md#debugtype), the compiler will create a *.pdb* file in the same directory where the compiler will create the output file (.exe or .dll). The *.pdb* file has the same base file name as the name of the output file. **PdbFile** allows you to specify a nondefault file name and location for the .pdb file. This compiler option can't be set in the Visual Studio development environment, nor can it be changed programmatically.
+When you specify [**DebugType**](code-generation.md#debugtype), the compiler creates a *.pdb* file in the same directory where the compiler creates the output file (.exe or .dll). The *.pdb* file has the same base file name as the name of the output file. **PdbFile** allows you to specify a nondefault file name and location for the .pdb file. This compiler option can't be set in the Visual Studio development environment, nor can it be changed programmatically.
 
 ## PathMap
 
@@ -174,7 +174,7 @@ The **BaseAddress** option lets you specify the preferred base address at which 
 <BaseAddress>address</BaseAddress>
 ```
 
-Where `address` is the base address for the DLL. This address can be specified as a decimal, hexadecimal, or octal number. The default base address for a DLL is set by the .NET common language runtime. The lower-order word in this address will be rounded. For example, if you specify `0x11110001`, it will be rounded to `0x11110000`. To complete the signing process for a DLL, use SN.EXE with the -R option.
+Where `address` is the base address for the DLL. This address can be specified as a decimal, hexadecimal, or octal number. The default base address for a DLL is set by the .NET common language runtime. The lower-order word in this address will be rounded. For example, if you specify `0x11110001`, it is rounded to `0x11110000`. To complete the signing process for a DLL, use SN.EXE with the -R option.
 
 ## ChecksumAlgorithm
 
@@ -194,7 +194,7 @@ This option specifies which codepage to use during compilation if the required p
 <CodePage>id</CodePage>
 ```
 
-Where `id` is the ID of the code page to use for all source code files in the compilation. The compiler will first attempt to interpret all source files as UTF-8. If your source code files are in an encoding other than UTF-8 and use characters other than 7-bit ASCII characters, use the **CodePage** option to specify which code page should be used. **CodePage** applies to all source code files in your compilation. See [GetCPInfo](/windows/desktop/api/winnls/nf-winnls-getcpinfo) for information on how to find which code pages are supported on your system.
+Where `id` is the ID of the code page to use for all source code files in the compilation. The compiler first attempts to interpret all source files as UTF-8. If your source code files are in an encoding other than UTF-8 and use characters other than 7-bit ASCII characters, use the **CodePage** option to specify which code page should be used. **CodePage** applies to all source code files in your compilation. See [GetCPInfo](/windows/desktop/api/winnls/nf-winnls-getcpinfo) for information on how to find which code pages are supported on your system.
 
 ## Utf8Output
 
@@ -214,7 +214,7 @@ The **FileAlignment** option lets you specify the size of sections in your outpu
 <FileAlignment>number</FileAlignment>
 ```
 
-You set the **FileAlignment** option from the **Advanced** page of the **Build** properties for your project in Visual Studio. Each section will be aligned on a boundary that is a multiple of the **FileAlignment** value. There's no fixed default. If **FileAlignment** isn't specified, the common language runtime picks a default at compile time. By specifying the section size, you affect the size of the output file. Modifying section size may be useful for programs that run on smaller devices. Use [DUMPBIN](/cpp/build/reference/dumpbin-options) to see information about sections in your output file.
+You set the **FileAlignment** option from the **Advanced** page of the **Build** properties for your project in Visual Studio. Each section is aligned on a boundary that is a multiple of the **FileAlignment** value. There's no fixed default. If **FileAlignment** isn't specified, the common language runtime picks a default at compile time. By specifying the section size, you affect the size of the output file. Modifying section size may be useful for programs that run on smaller devices. Use [DUMPBIN](/cpp/build/reference/dumpbin-options) to see information about sections in your output file.
 
 ## ErrorEndLocation
 

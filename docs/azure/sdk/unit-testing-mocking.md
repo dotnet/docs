@@ -231,6 +231,50 @@ var finder = new AboutToExpireSecretFinder(TimeSpan.FromDays(2), secretClient);
 
 This approach is useful when you would like to consolidate the dependency creation and share the client between multiple consuming classes.
 
+## Explore the extension methods in Azure Resource Manager SDKs
+
+For fundamental concepts of Azure Resource Manager SDKs, see [Key Concepts of Azure Resource Manager SDKs](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/resourcemanager/Azure.ResourceManager#key-concepts).
+
+In Azure Resource Manager SDKs, we design the clients (resources and collections) to have their hierarchical structures to emphasize their relationship between each other. To achieve that, extension methods are widely used because the parent resource of one resource might not exist in the same SDK library.
+
+For instance, in `Azure.ResourceManager.Compute` namespace, there is a resource `VirtualMachineResource` which stands for a virtual machine resource on Azure, and its parent is `ResourceGroupResource` in `Azure.ResourceManager` namespace, and we could get the `VirtualMachineCollection` on the `ResourceGroupResource` in this way:
+
+:::code language="csharp" source="snippets/unit-testing/ResourceManager/ResourceManagerCodeStructure.cs" id="ParentOfVMIsRG" :::
+
+To make sure these extension methods are able to be mocked or unit tested, these methods are always implemented in this way:
+
+:::code language="csharp" source="snippets/unit-testing/ResourceManager/ComputeExtensions.cs" id="HowExtensionMethodsAreImplemented" :::
+
+All the extension methods in Azure Resource Manager SDKs are implemented in the same pattern:
+
+1. There is a class holding the actual implementation of the method, we call it the "Mocking Extension" class. It is named in this pattern "{RP Name}{Resource Name}MockingExtension". In the above example, it is `ComputeResourceGroupMockingExtension`.
+1. The extension method has a private method constructing an instance of the "Mocking Extension" class by calling its `GetCachedClient` method.
+
+Both of the methods above are instance methods, therefore they are mockable and unit-testable. In this extension methods scenario, to create a test service client, you need to create two of them, one for the "Mocking Extension", and the other is the client that this extension method is extending.
+
+## [Non-library](#tab/csharp)
+
+:::code language="csharp" source="snippets/unit-testing/ResourceManager/NonLibrary/MockComputeResourceGroupMockingExtension.cs" :::
+
+## [Moq](#tab/moq)
+
+:::code language="csharp" source="snippets/unit-testing/ResourceManager/Moq/MockComputeResourceGroupMockingExtension_TestSnippets_Moq.cs" id="Moq_GetVirtualMachines" :::
+
+# [NSubstitute](#tab/nsubstitute)
+
+:::code language="csharp" source="snippets/unit-testing/ResourceManager/NSubstitute/MockComputeResourceGroupMockingExtension_TestSnippets_NSubstitute.cs" id="NSubstitute_GetVirtualMachines" :::
+
+---
+
+There is a universal naming pattern across all the Azure Resource Manager SDKs for the "mocking extension" type:
+
+1. Find the extended type of the extension method, in the above example, it is `ResourceGroupResource`.
+2. Trim the `Resource` suffix off it and get the "Resource Name", in the above example, it becomes `ResourceGroup`.
+3. Find the namespace of the extension method, in the above example, it is `Azure.ResourceManager.Compute`.
+4. Remove the `Azure.ResourceManager` from the namespace above, and concatenate the left segments together to get the "RP Name", in the above example, it is `Compute`.
+5. Now we get the name of the mocking extension type using this pattern: `{RP Name}{Resource Name}MockingExtension`. In the above extension, the name of the mocking extension type is: `ComputeResourceGroupMockingExtension`.
+6. The mocking extension type is always in the `Mocking` sub-namespace of the extension method. In the above example, the mocking extension type is in the `Azure.ResourceManager.Compute.Mocking` namespace.
+
 ## See also
 
 * [Dependency injection in .NET](../../core/extensions/dependency-injection.md)

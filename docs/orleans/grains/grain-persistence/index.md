@@ -1,7 +1,7 @@
 ---
 title: Grain persistence
 description: Learn about persistence in .NET Orleans.
-ms.date: 02/13/2023
+ms.date: 09/05/2023
 zone_pivot_groups: orleans-version
 ---
 
@@ -26,6 +26,7 @@ Orleans grain storage providers can be found on [NuGet](https://www.nuget.org/pa
 
 - [Microsoft.Orleans.Persistence.AdoNet](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.AdoNet) is for SQL databases and other storage systems supported by ADO.NET. For more information, see [ADO.NET Grain Persistence](relational-storage.md).
 - [Microsoft.Orleans.Persistence.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.AzureStorage) is for Azure Storage, including Azure Blob Storage, Azure Table Storage, and Azure CosmosDB, via the Azure Table Storage API. For more information, see [Azure Storage Grain Persistence](azure-storage.md).
+- [Microsoft.Orleans.Persistence.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.Cosmos) is the Azure Cosmos DB provider.
 - [Microsoft.Orleans.Persistence.DynamoDB](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.DynamoDB) is for Amazon DynamoDB. For more information, see [Amazon DynamoDB Grain Persistence](dynamodb-storage.md).
 
 ## API

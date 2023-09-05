@@ -10,7 +10,7 @@ ms.date: 09/05/2023
 
 In this article, you'll learn how to use the [Microsoft.Extensions.Http.AutoClient](https://www.nuget.org/packages/Microsoft.Extensions.Http.AutoClient) NuGet package to decorate an interface and generate a strongly typed HTTP client dependency. This is a great way to reduce the amount of boilerplate code you need to write when using the <xref:System.Net.Http.IHttpClientFactory> to create named HTTP clients. Relying on a source generator, the .NET AutoClient package generates the implementation of your interface, along with extension methods to register it into the dependency injection container. The source-generated code is written in a highly performant way, using the <xref:System.Net.Http.HttpClient> directly, without any reflection or dynamic code.
 
-## The HTTP Auto Client interface
+## Use the AutoClient attribute
 
 The <xref:Microsoft.Extensions.Http.AutoClient.AutoClientAttribute> is a required attribute of HTTP auto clients. It receives the name of the <xref:System.Net.Http.HttpClient> to be retrieved from the <xref:System.Net.Http.IHttpClientFactory>, consider the following interface definition:
 

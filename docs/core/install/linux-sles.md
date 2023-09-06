@@ -19,7 +19,7 @@ The following table is a list of currently supported .NET releases on both SLES 
 | SLES   | .NET |
 |--------|------|
 | 15     | 7, 6 |
-| 12 SP2 | 7, 6 |
+| 12 SP5 | 7, 6 |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

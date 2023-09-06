@@ -275,15 +275,11 @@ services.AddUserClient();
 Then services would consume the client through its constructor:
 
 ```csharp
-public sealed class UserService
+public sealed class UserService(IUserClient userClient)
 {
-    private readonly IUserClient _userClient;
-
-    public MyService(IUserClient userClient) => _userClient = userClient;
-
     public async Task ProcessUsersAsync()
     {
-        var users = await _myClient.GetUsersAsync();
+        var users = await userClient.GetUsersAsync();
         // ...
     }
 }

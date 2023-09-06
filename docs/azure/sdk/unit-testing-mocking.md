@@ -231,13 +231,11 @@ var finder = new AboutToExpireSecretFinder(TimeSpan.FromDays(2), secretClient);
 
 This approach is useful when you would like to consolidate the dependency creation and share the client between multiple consuming classes.
 
-## Explore the extension methods in Azure Resource Manager SDKs
+## Understand Azure Resource Manager clients
 
-For fundamental concepts of Azure Resource Manager SDKs, see [Key Concepts of Azure Resource Manager SDKs](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/resourcemanager/Azure.ResourceManager#key-concepts).
+In Azure Resource Manager libraries, the clients were designed to emphasize their relationship to one another, mirroring the service hierarchy. To achieve that goal, extension methods are widely used to add additional features to clients.
 
-In Azure Resource Manager SDKs, we design the clients (resources and collections) to have their hierarchical structures to emphasize their relationship between each other. To achieve that, extension methods are widely used because the parent resource of one resource might not exist in the same SDK library.
-
-For instance, in `Azure.ResourceManager.Compute` namespace, there is a resource `VirtualMachineResource` which stands for a virtual machine resource on Azure, and its parent is `ResourceGroupResource` in `Azure.ResourceManager` namespace, and we could get the `VirtualMachineCollection` on the `ResourceGroupResource` in this way:
+For example, an Azure virtual machine resizes in an Azure resource group. The `Azure.ResourceManager.Compute` namespace models Azure virtual machine as `VirtualMachineResource` and `Azure.ResourceManager` namespace models Azure resource group as `ResourceGroupResource`.  To query the virtual machines for a resource group, you would write:
 
 :::code language="csharp" source="snippets/unit-testing/ResourceManager/ResourceManagerCodeStructure.cs" id="ParentOfVMIsRG" :::
 
@@ -245,12 +243,12 @@ To make sure these extension methods are able to be mocked or unit tested, these
 
 :::code language="csharp" source="snippets/unit-testing/ResourceManager/ComputeExtensions.cs" id="HowExtensionMethodsAreImplemented" :::
 
-All the extension methods in Azure Resource Manager SDKs are implemented in the same pattern:
+All the extension methods in Azure Resource Manager libraries are implemented in the same pattern:
 
 1. There is a class holding the actual implementation of the method, we call it the "Mocking Extension" class. It is named in this pattern "{RP Name}{Resource Name}MockingExtension". In the above example, it is `ComputeResourceGroupMockingExtension`.
 1. The extension method has a private method constructing an instance of the "Mocking Extension" class by calling its `GetCachedClient` method.
 
-Both of the methods above are instance methods, therefore they are mockable and unit-testable. In this extension methods scenario, to create a test service client, you need to create two of them, one for the "Mocking Extension", and the other is the client that this extension method is extending.
+Because the virtual machine-related functionality on `ResourceGroupResource` are implemented as extension methods, it is not possible to just create a mock of the type and override the method.  Instead, you'll also have to create a mock class for the extension method and wire them together.
 
 ## [Non-library](#tab/csharp)
 
@@ -266,7 +264,7 @@ Both of the methods above are instance methods, therefore they are mockable and 
 
 ---
 
-There is a universal naming pattern across all the Azure Resource Manager SDKs for the "mocking extension" type:
+There is a universal naming pattern across all the Azure Resource Manager libraries for the "mocking extension" type:
 
 1. Find the extended type of the extension method, in the above example, it is `ResourceGroupResource`.
 2. Trim the `Resource` suffix off it and get the "Resource Name", in the above example, it becomes `ResourceGroup`.

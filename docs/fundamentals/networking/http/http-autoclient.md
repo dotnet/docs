@@ -125,7 +125,7 @@ If you need to change the query key, you may call the `key` parameter-based cons
 
 The `GetUsersAsync` method generates an HTTP request with a URL formatted like `/api/users?customQueryKey={customQueryKey}`, as the key name was overridden to `customQueryKey`.
 
-## Auto client's dependency injection hooks
+## Dependency injection hooks
 
 Along with the interface's implementation, extension methods are generated to register the client in the dependency injection container. The name of the generated extension method is the same as your interface name, replacing the leading `I` with `Add`.
 

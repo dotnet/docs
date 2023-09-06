@@ -3,7 +3,6 @@ title: Lambda expression warnings
 description: This article helps you diagnose and correct compiler errors and warnings for lambda expression declarations and usage.
 f1_keywords:
   - "CS0748"
-  - "CS0834"
   - "CS0835"
   - "CS1621"
   - "CS1628"
@@ -11,20 +10,10 @@ f1_keywords:
   - "CS1673"
   - "CS1686"
   - "CS1706"
-  - "CS1951"
-  - "CS1952"
-  - "CS1989"
-  - "CS2037"
   - "CS8030"
-  - "CS8072"
-  - "CS8074"
-  - "CS8075"
-  - "CS8153"
-  - "CS8155"
   - "CS8175"
   - "CS8916"
   - "CS8971"
-  - "CS8972"
   - "CS8975"
   - "CS9098" # ERR_ImplicitlyTypedDefaultParameter: Implicitly typed lambda parameter '{0}' cannot have a default value.
   - "CS9099" # WRN_OptionalParamValueMismatch: The default parameter value does not match in the target delegate type.
@@ -32,7 +21,6 @@ f1_keywords:
   - "CS9170"
 helpviewer_keywords:
   - "CS0748"
-  - "CS0834"
   - "CS0835"
   - "CS1621"
   - "CS1628"
@@ -40,20 +28,10 @@ helpviewer_keywords:
   - "CS1673"
   - "CS1686"
   - "CS1706"
-  - "CS1951"
-  - "CS1952"
-  - "CS1989"
-  - "CS2037"
   - "CS8030"
-  - "CS8072"
-  - "CS8074"
-  - "CS8075"
-  - "CS8153"
-  - "CS8155"
   - "CS8175"
   - "CS8916"
   - "CS8971"
-  - "CS8972"
   - "CS8975"
   - "CS9098"
   - "CS9099"
@@ -69,28 +47,16 @@ There are several *errors* related to declaring and using lambda expressions:
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
 - [**CS0748**](#lambda-expression-parameters-and-returns) - *Inconsistent lambda parameter usage; parameter types must be all explicit or all implicit.*
-- [**CS0834**](#conversion-to-expression-trees) - *A lambda expression must have an expression body to be converted to an expression tree.*
-- [**CS0835**](#conversion-to-expression-trees) - *Cannot convert lambda to an expression tree whose type argument 'type' is not a delegate type.*
 - [**CS1621**](#syntax-limitations-in-lambda-expressions) - *The yield statement cannot be used inside an anonymous method or lambda expression.*
 - [**CS1628**](#syntax-limitations-in-lambda-expressions) - *Cannot use `in` `ref` or `out` parameter inside an anonymous method, lambda expression, or query expression.*
 - [**CS1632**](#syntax-limitations-in-lambda-expressions) - *Control cannot leave the body of an anonymous method or lambda expression.*
 - [**CS1673**](#syntax-limitations-in-lambda-expressions) - *Anonymous methods, lambda expressions, and query expressions inside structs cannot access instance members of 'this'.*
 - [**CS1686**](#syntax-limitations-in-lambda-expressions) - *Local variable or its members cannot have their address taken and be used inside an anonymous method or lambda expression.*
 - [**CS1706**](#syntax-limitations-in-lambda-expressions) - *Expression cannot contain anonymous methods or lambda expressions.*
-- [**CS1951**](#conversion-to-expression-trees) - *An expression tree lambda may not contain an `in`, `out`, or `ref` parameter.*
-- [**CS1952)**](#conversion-to-expression-trees) - *An expression tree lambda may not contain a method with variable arguments.*
-- [**CS1989**](#conversion-to-expression-trees) - *Async lambda expressions cannot be converted to expression trees.*
-- [**CS2037**](#conversion-to-expression-trees) - *An expression tree lambda may not contain a COM call with ref omitted on arguments.*
 - [**CS8030**](#syntax-limitations-in-lambda-expressions) - *Anonymous function converted to a void returning delegate cannot return a value.*
-- [**CS8072**](#conversion-to-expression-trees) - *An expression tree lambda may not contain a null propagating operator.*
-- [**CS8074**](#conversion-to-expression-trees) - *An expression tree lambda may not contain a dictionary initializer.*
-- [**CS8075**](#conversion-to-expression-trees) - *An extension Add method is not supported for a collection initializer in an expression lambda.*
-- [**CS8153**](#conversion-to-expression-trees) - *An expression tree lambda may not contain a call to a method, property, or indexer that returns by reference.*
 - [**CS8175**](#syntax-limitations-in-lambda-expressions) - *Cannot use ref local inside an anonymous method, lambda expression, or query expression.*
-- [**CS8155**](#conversion-to-expression-trees) - *Lambda expressions that return by reference cannot be converted to expression trees.*
 - [**CS8916**](#lambda-expression-parameters-and-returns) - *Attributes on lambda expressions require a parenthesized parameter list.*
 - [**CS8971**](#syntax-limitations-in-lambda-expressions) - *InterpolatedStringHandlerArgument has no effect when applied to lambda parameters and will be ignored at the call site.*
-- [**CS8972**](#conversion-to-expression-trees) - *A lambda expression with attributes cannot be converted to an expression tree.*
 - [**CS8975**](#lambda-expression-parameters-and-returns) - *The contextual keyword `var` cannot be used as an explicit lambda return type.*
 - [**CS9098**](#lambda-expression-parameters-and-returns) - *Implicitly typed lambda parameter '...' cannot have a default value.*
 - [**CS9170**](#syntax-limitations-in-lambda-expressions) - *An expression tree may not contain an inline array access or conversion*
@@ -169,36 +135,3 @@ var a2 = (int i = 2) => { };
 Action<string[]> a3 = (string[] s) => { };
 var a4 = (params string[] s) => { };
 ```
-
-## Conversion to expression trees
-
-Many legal lambda expressions can't be converted into the data structures supported by an expression tree. Attempting to use any of the constructs not supported by expression trees causes one of the following errors:
-
-- **CS0834** - *A lambda expression must have an expression body to be converted to an expression tree.*
-- **CS0835** - *Cannot convert lambda to an expression tree whose type argument 'type' is not a delegate type.*
-- **CS1951** - *An expression tree lambda may not contain an `in`, `out`, or `ref` parameter.*
-- **CS1952** - *An expression tree lambda may not contain a method with variable arguments.*
-- **CS1989** - *Async lambda expressions cannot be converted to expression trees.*
-- **CS2037** - *An expression tree lambda may not contain a COM call with `ref` omitted on arguments.*
-- **CS8072** - *An expression tree lambda may not contain a null propagating operator.*
-- **CS8074** - *An expression tree lambda may not contain a dictionary initializer.*
-- **CS8075** - *An extension `Add` method is not supported for a collection initializer in an expression lambda.*
-- **CS8153** - *An expression tree lambda may not contain a call to a method, property, or indexer that returns by reference.*
-- **CS8155** - *Lambda expressions that return by reference cannot be converted to expression trees.*
-- **CS8972** - *A lambda expression with attributes cannot be converted to an expression tree.*
-
-The general limitations on expressions tree are:
-
-- Attributes can't be applied to the lambda expression, its parameters or return.
-- Statement lambdas aren't allowed. It must be an expression lambda.
-- The [null propagating operator](../operators/member-access-operators.md#null-conditional-operators--and-) isn't allowed.
-- [Dictionary initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md#collection-initializers) aren't allowed. Neither are extension `Add` methods.
-- `async` lambda expressions aren't allowed.
-- `in`, `out`, and `ref` parameters aren't allowed.
-- `ref` returns aren't allowed.
-- Calls to methods that return by `ref` aren't allowed.
-- The target expression must be a lambda expression. Constants and variables aren't allowed, but a lambda expression that returns a constant or variable is.
-- COM calls must include `ref` on arguments; it can't be implied.
-- The unsupported `__arglist` keyword is not allowed.
-
-If you're using any of these constructs in a lambda expression, it can't be converted to an expression tree.

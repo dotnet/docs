@@ -3,7 +3,7 @@ title: Use AutoClient to generate HTTP client dependencies
 description: Learn how to source generate HttpClient dependent code implementations of AutoClient decorated interfaces.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/05/2023
+ms.date: 09/06/2023
 ---
 
 # Use AutoClient to generate HTTP client dependencies

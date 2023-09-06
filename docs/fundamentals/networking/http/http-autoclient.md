@@ -1,18 +1,18 @@
 ---
-title: Use AutoClient to generate HTTP client dependencies
-description: Learn how to source generate HttpClient dependent code implementations of AutoClient decorated interfaces.
+title: Use the REST API HTTP client generator
+description: Learn how to generate HttpClient-dependent code implementations of AutoClient decorated interfaces.
 author: IEvangelist
 ms.author: dapine
 ms.date: 09/06/2023
 ---
 
-# Use AutoClient to generate HTTP client dependencies
+# Use the REST API HTTP client generator
 
-In this article, you'll learn how to use the [Microsoft.Extensions.Http.AutoClient](https://www.nuget.org/packages/Microsoft.Extensions.Http.AutoClient) NuGet package to decorate an interface and generate a strongly typed HTTP client dependency. This is a great way to reduce the amount of boilerplate code you need to write when using the <xref:System.Net.Http.IHttpClientFactory> to create named HTTP clients. Relying on a source generator, the .NET AutoClient package generates the implementation of your interface, along with extension methods to register it into the dependency injection container. The source-generated code is written in a highly performant way, using the <xref:System.Net.Http.HttpClient> directly, without any reflection or dynamic code.
+The <xref:System.Net.Http.HttpClient> is a great way to consume REST APIs, but it's not without its challenges. One of the challenges is the amount of boilerplate code you need to write to consume the API. In this article, you'll learn how to use the [Microsoft.Extensions.Http.AutoClient](https://www.nuget.org/packages/Microsoft.Extensions.Http.AutoClient) NuGet package to decorate an interface and generate an HTTP client dependency. Relying on the auto-client's underlying source generator, the .NET AutoClient package generates the implementation of your interface, along with extension methods to register it into the dependency injection container.
 
-## Use the AutoClient attribute
+## Use the `AutoClientAttribute`
 
-The <xref:Microsoft.Extensions.Http.AutoClient.AutoClientAttribute> is a required attribute of HTTP auto clients. It receives the name of the <xref:System.Net.Http.HttpClient> to be retrieved from the <xref:System.Net.Http.IHttpClientFactory>, consider the following interface definition:
+The <xref:Microsoft.Extensions.Http.AutoClient.AutoClientAttribute> is a required attribute of HTTP auto-clients. It accepts the `httpClientName` of the <xref:System.Net.Http.HttpClient> to be retrieved from the <xref:System.Net.Http.IHttpClientFactory>. Consider the following interface definition:
 
 ```csharp
 using Microsoft.Extensions.Http.AutoClient;
@@ -23,14 +23,17 @@ public interface IProductClient
 }
 ```
 
-The interface name must start with an `I`. It's used as the <xref:Microsoft.Extensions.Http.Telemetry.RequestMetadata.DependencyName?displayProperty=nameWithType> for the source-generated telemetry's <xref:Microsoft.Extensions.Http.Telemetry.RequestMetadata>. If the name ends in `Api` or `Client`, those are excluded. For example, if the interface is named `IProductClient`, the dependency name is `Product`.
+> [!TIP]
+> The interface name must start with an `I`. The name is stripped of the leading `I`, and used as the <xref:Microsoft.Extensions.Http.Telemetry.RequestMetadata.DependencyName?displayProperty=nameWithType> for telemetry's <xref:Microsoft.Extensions.Http.Telemetry.RequestMetadata>. If the name ends in `Api` or `Client`, those are excluded. For example, if the interface is named `IProductClient`, the dependency name is `Product`.
 
 To override the calculated dependency name, use the `customDependencyName` parameter of the <xref:Microsoft.Extensions.Http.AutoClient.AutoClientAttribute>.
 
 ```csharp
 using Microsoft.Extensions.Http.AutoClient;
 
-[AutoClient(httpClientName: "GeneratedClient", customDependencyName: "Product Service")]
+[AutoClient(
+    httpClientName: "GeneratedClient",
+    customDependencyName: "Product Service")]
 public interface IProductClient
 {
 }
@@ -38,7 +41,7 @@ public interface IProductClient
 
 ## Define HTTP methods with verb attributes
 
-An empty interface isn't a useful abstraction. To define HTTP methods, you must use the HTTP verb attributes. Each HTTP method must return a <xref:System.Threading.Tasks.Task%601> where `T` is any of the following types:
+An empty interface isn't a useful abstraction. To define HTTP methods, you must use the HTTP verb attributes. Each HTTP method returns a <xref:System.Threading.Tasks.Task%601> where `T` is any of the following types:
 
 | Return type | Description |
 |--|--|
@@ -46,11 +49,11 @@ An empty interface isn't a useful abstraction. To define HTTP methods, you must 
 | `Task<T>` | When `T` is any serializable type, the response content is deserialized from JSON and returned. |
 | `Task<HttpResponseMessage>` | If you need the <xref:System.Net.Http.HttpResponseMessage> itself, as returned from <xref:System.Net.Http.HttpClient.SendAsync%2A?displayProperty=nameWithType>, use this type. |
 
-When the content type of the response isn't `application/json` and the method's return type isn't `Task<string>`, an exception is thrown.
+When the content type of the HTTP response isn't `application/json` and the method's return type isn't `Task<string>`, an exception is thrown.
 
 ### HTTP verb attributes
 
-The HTTP method is defined using one of the following attributes:
+An HTTP method is defined using one of the following attributes:
 
 - <xref:Microsoft.Extensions.Http.AutoClient.GetAttribute?displayProperty=fullName>
 - <xref:Microsoft.Extensions.Http.AutoClient.PostAttribute?displayProperty=fullName>
@@ -60,9 +63,9 @@ The HTTP method is defined using one of the following attributes:
 - <xref:Microsoft.Extensions.Http.AutoClient.HeadAttribute?displayProperty=fullName>
 - <xref:Microsoft.Extensions.Http.AutoClient.OptionsAttribute?displayProperty=fullName>
 
-The attribute must receive the path to call the API. This path must not contain query parameters. The path is used as the <xref:Microsoft.Extensions.Http.Telemetry.RequestMetadata.RequestRoute?displayProperty=nameWithType> for telemetry. The path must be relative, to be used along with the base address of the <xref:System.Net.Http.HttpClient>.
+Each attribute requires a `path` argument that routes to the underlying REST API, and it should be relative to the <xref:System.Net.Http.HttpClient.BaseAddress?displayProperty=nameWithType>. The `path` cannot contain query string parameters, instead the <xref:Microsoft.Extensions.Http.AutoClient.QueryAttribute> is used. From the perspective of telemetry, the `path` is used as the <xref:Microsoft.Extensions.Http.Telemetry.RequestMetadata.RequestRoute?displayProperty=nameWithType>.
 
-HTTP methods decorated with any of the verb attributes must have a <xref:System.Threading.CancellationToken> parameter and it should be the last parameter defined. It can be defined as optional with `default`.
+HTTP methods decorated with any of the verb attributes must have a <xref:System.Threading.CancellationToken> parameter and it should be the last parameter defined. The `CancellationToken` parameter is used to cancel the HTTP request.
 
 ```csharp
 using System.Collections.Generic;
@@ -78,9 +81,16 @@ public interface IProductClient
 }
 ```
 
+The preceding code:
+
+- Defines an HTTP method using the <xref:Microsoft.Extensions.Http.AutoClient.GetAttribute>.
+- The `path` is `/api/users`.
+- The method returns a <xref:System.Threading.Tasks.Task%601> where `T` is `User[]`.
+- The method accepts an optional <xref:System.Threading.CancellationToken> parameter that is assigned to `default`.
+
 ### Route parameters
 
-The URL may contain route parameters, for example, `/api/users/{userId}`. To define a route parameter the method must accept a parameter with the same name:
+The URL may contain route parameters, for example, `"/api/users/{userId}"`. To define a route parameter the method must accept a parameter with the same name:
 
 ```csharp
 using System.Threading.Tasks;
@@ -99,11 +109,11 @@ public interface IUserClient
 In the preceding code:
 
 - The `GetUserAsync` method has a route parameter named `userId`.
-- The `userId` parameter is used in the path of the request, replacing the `{userId}` placeholder.
+- The `userId` parameter is used in the `path` of the request, replacing the `{userId}` placeholder.
 
 ### Telemetry request name
 
-The method name is used as the <xref:Microsoft.Extensions.Http.Telemetry.RequestMetadata.RequestName?displayProperty=nameWithType>. If the method name ends in `Async`, that part is removed. For example, if a method is named `GetUsersAsync`, the request name is `GetUsers`.
+The method name is used as the <xref:Microsoft.Extensions.Http.Telemetry.RequestMetadata.RequestName?displayProperty=nameWithType>. If the method name includes the `Async` suffix, it's removed. For example, a method named `GetUsersAsync` is calculated as `"GetUsers"`.
 
 To override the name, use the `RequestName` property of each attribute of the [HTTP verb attributes](#http-verb-attributes).
 
@@ -123,7 +133,7 @@ public interface IUserClient
 
 ## HTTP payloads
 
-To send a payload with your request, you must use the <xref:Microsoft.Extensions.Http.AutoClient.BodyAttribute> on a method parameter. If you don't pass any parameter to it, it treats the content type as JSON, serializing your parameter before sending. Otherwise, you define an explicit
+To send an HTTP payload with your request, use the <xref:Microsoft.Extensions.Http.AutoClient.BodyAttribute> on a method's parameter. If you don't pass any parameter to it, it treats the content type as JSON, serializing your parameter before sending. Otherwise, you define an explicit
 <xref:Microsoft.Extensions.Http.AutoClient.BodyContentType> and use it within the <xref:Microsoft.Extensions.Http.AutoClient.BodyAttribute>.
 
 ```csharp
@@ -135,11 +145,15 @@ public interface IUserClient
 {
     [Post("/api/users")]
     public Task<User> CreateUserAsync(
+        // The content type is JSON
+        // The parameter is serialized before sending
         [Body] User user);
 
     [Put("/api/users/{userId}/displayName")]
     public Task<User> UpdateDisplayNameAsync(
         string userId,
+        // The content type is text/plain
+        // The parameter is sent as is
         [Body(BodyContentType.TextPlain)] string displayName,
         CancellationToken cancellationToken = default);
 }
@@ -151,10 +165,9 @@ There are two ways of sending headers with your HTTP request. One of them is bes
 
 ### Static headers
 
-To define a static header, you must use the <xref:Microsoft.Extensions.Http.AutoClient.StaticHeaderAttribute> on your interface. You must pass the header name and value to its constructor.
+To define a static header, use the <xref:Microsoft.Extensions.Http.AutoClient.StaticHeaderAttribute> on your interface definition. Pass the header name and value to its constructor.
 
-You can also use more than one <xref:Microsoft.Extensions.Http.AutoClient.StaticHeaderAttribute> together and in methods as well. If used in a method, that static
-header is sent for that method only.
+You can also use more than one <xref:Microsoft.Extensions.Http.AutoClient.StaticHeaderAttribute> together and in methods as well. When the `StaticHeader` attribute is used on a method, that HTTP header is sent for that method only, whereas the interface-level `StaticHeader` attribute is sent for all methods.
 
 ```csharp
 using System.Collections.Generic;
@@ -162,11 +175,11 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Http.AutoClient;
 
 [AutoClient(nameof(IUserClient), "User Service")]
-[StaticHeader("X-MyHeader", "HeaderValue")]
+[StaticHeader("X-ForAllRequests", "GlobalHeaderValue")]
 public interface IUserClient
 {
     [Get("/api/users")]
-    [StaticHeader("X-MethodHeader", "HeaderValue")]
+    [StaticHeader("X-ForJustThisRequest", "RequestHeaderValue")]
     public Task<List<User>> GetUsersAsync(
         CancellationToken cancellationToken = default);
 }
@@ -174,7 +187,7 @@ public interface IUserClient
 
 ### Parameter headers
 
-Use the <xref:Microsoft.Extensions.Http.AutoClient.HeaderAttribute> to define parameter-based headers, where you can receive the value for a header from the attributes of your method. You must pass the header name to its constructor.
+Use the <xref:Microsoft.Extensions.Http.AutoClient.HeaderAttribute> to define parameter-based headers, where you can receive the value for a header from the attributes of your method. Pass the header name to its constructor.
 
 The parameter may be of any type. When the header type is anything other than a `string`, the `.ToString()` method is called on the value of the parameter.
 
@@ -195,9 +208,9 @@ public interface IUserClient
 
 ## Query parameters
 
-Query parameters are defined using the <xref:Microsoft.Extensions.Http.AutoClient.QueryAttribute> on a method's attribute. The parameter may be of any type. To set the query value, the `.ToString()` method is called on the value of the parameter.
+Query parameters are defined using the <xref:Microsoft.Extensions.Http.AutoClient.QueryAttribute> on a method's parameter. All types are valid, and the query value relies on the `.ToString()` method to get the value of the parameter when not a `string` type.
 
-The query key is the name of the parameter.
+The <xref:Microsoft.Extensions.Http.AutoClient.QueryAttribute.Key?displayProperty=nameWithType> is assigned from the name of the parameter.
 
 ```csharp
 using System.Collections.Generic;
@@ -214,9 +227,9 @@ public interface IUserClient
 }
 ```
 
-The `GetUsersAsync` method generates an HTTP request with a URL formatted like `/api/users?search={search}`. This format is used as the <xref:Microsoft.Extensions.Http.Telemetry.RequestMetadata.RequestRoute?displayProperty=nameWithType> for telemetry.
+The `GetUsersAsync` method generates an HTTP request with a URL formatted as `/api/users?search={search}`. This format is used as the <xref:Microsoft.Extensions.Http.Telemetry.RequestMetadata.RequestRoute?displayProperty=nameWithType> for telemetry.
 
-If you need to change the query key, you may pass a string parameter to the <xref:Microsoft.Extensions.Http.AutoClient.QueryAttribute>.
+If you need to change the query key, you may call the `key` parameter-based constructor, <xref:Microsoft.Extensions.Http.AutoClient.QueryAttribute.%23ctor(System.String)>.
 
 ```csharp
 using System.Collections.Generic;
@@ -233,11 +246,11 @@ public interface IUserClient
 }
 ```
 
-This time, the `GetUsersAsync` method generates an HTTP request with a URL formatted like `/api/users?customQueryKey={customQueryKey}`.
+The `GetUsersAsync` method generates an HTTP request with a URL formatted like `/api/users?customQueryKey={customQueryKey}`, as the key name was overridden to `customQueryKey`.
 
 ## Auto client's dependency injection hooks
 
-Along with the interface's implementation, extension methods are generated to register it into the dependency injection container. The name of the generated extension method is the same as your interface name, replacing the leading `I` with `Add`.
+Along with the interface's implementation, extension methods are generated to register the client in the dependency injection container. The name of the generated extension method is the same as your interface name, replacing the leading `I` with `Add`.
 
 For example, consider the following interface definition:
 
@@ -255,31 +268,35 @@ public interface IUserClient
 }
 ```
 
-You'd have registration code similar to the following:
+You might end up with some registration code similar to the following:
 
 ```csharp
 var builder = Host.CreateApplicationBuilder(args);
 
-builder.Services
-    .AddHttpClient(
+// Add the named HttpClient to the service collection
+builder.Services.AddHttpClient(
         nameof(IUserClient),
-        client => client.BaseAddress = new Uri("<The REST API base address>"))
-    .AddHttpClientMetering()
-    .AddHttpClientLogging()
-    .AddStandardResilienceHandler()
-    .AddSocketsHttpHandler();
+        client =>
+        {
+            client.BaseAddress = new Uri("<The REST API base address>");
+        });
 
-services.AddUserClient();
+// Add the IUserClient/UserClient to the service collection
+builder.Services.AddUserClient();
 ```
 
-Then services would consume the client through its constructor:
+Consuming the client is as simple as injecting it into your service's constructor:
 
 ```csharp
-public sealed class UserService(IUserClient userClient)
+public sealed class UserService
 {
+    private readonly IUserClient _userClient;
+
+    public MyService(IUserClient userClient) => _userClient = userClient;
+
     public async Task ProcessUsersAsync()
     {
-        var users = await userClient.GetUsersAsync();
+        var users = await _myClient.GetUsersAsync();
         // ...
     }
 }

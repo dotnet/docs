@@ -377,5 +377,5 @@ For more information about configuring a proxy, see:
 - [Guidelines for using HttpClient](httpclient-guidelines.md)
 - [IHttpClientFactory with .NET](../../../core/extensions/httpclient-factory.md)
 - [Use HTTP/3 with HttpClient](../../../core/extensions/httpclient-http3.md)
-- [Use AutoClient to generate HTTP client dependencies](http-autoclient.md)
+- [REST API HTTP client generator](http-autoclient.md)
 - [Test web APIs with the HttpRepl](/aspnet/core/web-api/http-repl)

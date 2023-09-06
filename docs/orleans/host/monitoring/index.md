@@ -85,7 +85,7 @@ Orleans uses the [System.Diagnostics.Metrics](../../../core/diagnostics/compare-
 
 #### Networking
 
-A collection of networking meters that are used to monitor the networking layer.
+The following table represents a collection of networking meters that are used to monitor the Orleans networking layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -94,7 +94,7 @@ A collection of networking meters that are used to monitor the networking layer.
 
 #### Messaging
 
-A collection of messaging meters that are used to monitor the messaging layer.
+The following table represents a collection of messaging meters that are used to monitor the Orleans messaging layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -121,7 +121,7 @@ A collection of messaging meters that are used to monitor the messaging layer.
 
 #### Gateway
 
-A collection of gateway meters that are used to monitor the gateway layer.
+The following table represents a collection of gateway meters that are used to monitor the Orleans gateway layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -132,7 +132,7 @@ A collection of gateway meters that are used to monitor the gateway layer.
 
 #### Runtime
 
-A collection of runtime meters that are used to monitor the runtime layer.
+The following table represents a collection of runtime meters that are used to monitor the Orleans runtime layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -142,7 +142,7 @@ A collection of runtime meters that are used to monitor the runtime layer.
 
 #### Catalog
 
-A collection of catalog meters that are used to monitor the catalog layer.
+The following table represents a collection of catalog meters that are used to monitor the Orleans catalog layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -158,7 +158,7 @@ A collection of catalog meters that are used to monitor the catalog layer.
 
 #### Directory
 
-A collection of directory meters that are used to monitor the directory layer.
+The following table represents a collection of directory meters that are used to monitor the Orleans directory layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -193,7 +193,7 @@ A collection of directory meters that are used to monitor the directory layer.
 
 #### Consistent ring
 
-A collection of consistent ring meters that are used to monitor the consistent ring layer.
+The following table represents a collection of consistent ring meters that are used to monitor the Orleans consistent ring layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -203,7 +203,7 @@ A collection of consistent ring meters that are used to monitor the consistent r
 
 #### Watchdog
 
-A collection of watchdog meters that are used to monitor the watchdog layer.
+The following table represents a collection of watchdog meters that are used to monitor the Orleans watchdog layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -212,7 +212,7 @@ A collection of watchdog meters that are used to monitor the watchdog layer.
 
 #### Client
 
-A collection of client meters that are used to monitor the client layer.
+The following table represents a collection of client meters that are used to monitor the Orleans client layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -220,7 +220,7 @@ A collection of client meters that are used to monitor the client layer.
 
 #### Miscellaneous
 
-A collection of miscellaneous meters that are used to monitor various layers.
+The following table represents a collection of miscellaneous meters that are used to monitor various layers.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -229,7 +229,7 @@ A collection of miscellaneous meters that are used to monitor various layers.
 
 #### App requests
 
-A collection of app request meters that are used to monitor the app request layer.
+The following table represents a collection of app request meters that are used to monitor the Orleans app request layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -238,7 +238,7 @@ A collection of app request meters that are used to monitor the app request laye
 
 #### Reminders
 
-A collection of reminder meters that are used to monitor the reminder layer.
+The following table represents a collection of reminder meters that are used to monitor the Orleans reminder layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -248,7 +248,7 @@ A collection of reminder meters that are used to monitor the reminder layer.
 
 #### Storage
 
-A collection of storage meters that are used to monitor the storage layer.
+The following table represents a collection of storage meters that are used to monitor the Orleans storage layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -261,7 +261,7 @@ A collection of storage meters that are used to monitor the storage layer.
 
 #### Streams
 
-A collection of stream meters that are used to monitor the stream layer.
+The following table represents a collection of stream meters that are used to monitor the Orleans stream layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -306,7 +306,7 @@ A collection of stream meters that are used to monitor the stream layer.
 
 #### Transactions
 
-A collection of transaction meters that are used to monitor the transaction layer.
+The following table represents a collection of transaction meters that are used to monitor the Orleans transaction layer.
 
 | Meter name | Type | Description |
 |--|--|--|

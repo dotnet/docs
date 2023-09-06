@@ -86,7 +86,7 @@ The preceding code:
 - Defines an HTTP method using the <xref:Microsoft.Extensions.Http.AutoClient.GetAttribute>.
 - The `path` is `/api/users`.
 - The method returns a <xref:System.Threading.Tasks.Task%601> where `T` is `User[]`.
-- The method accepts an optional <xref:System.Threading.CancellationToken> parameter that is assigned to `default`.
+- The method accepts an optional <xref:System.Threading.CancellationToken> parameter that is assigned to `default` when an argument isn't provided.
 
 ### Route parameters
 
@@ -292,7 +292,7 @@ In the preceding example code:
   - The `AddHttpClient` extension method is called with the name of the <xref:System.Net.Http.HttpClient> to be registered, and a delegate to configure the <xref:System.Net.Http.HttpClient> instance.
 - The `AddUserClient` extension method is called to register the <xref:IUserClient> interface and its implementation.
 
-Consuming the client is as simple as injecting it into your service's constructor:
+You can consume the client by injecting it into your service's constructor:
 
 ```csharp
 public sealed class UserService(IUserClient userClient)

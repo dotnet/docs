@@ -10,9 +10,6 @@ ms.date: 09/06/2023
 
 The <xref:System.Net.Http.HttpClient> is a great way to consume REST APIs, but it's not without its challenges. One of the challenges is the amount of boilerplate code you need to write to consume the API. In this article, you learn how to use the [Microsoft.Extensions.Http.AutoClient](https://www.nuget.org/packages/Microsoft.Extensions.Http.AutoClient) NuGet package to decorate an interface and generate an HTTP client dependency. The AutoClient's underlying source generator generates the implementation of your interface, along with extension methods to register it into the dependency injection container. Additionally, the AutoClient generates telemetry for each HTTP request, which is sent with <xref:Microsoft.Extensions.Http.Telemetry>.
 
-> [!IMPORTANT]
-> To use the [Microsoft.Extensions.Http.AutoClient](https://www.nuget.org/packages/Microsoft.Extensions.Http.AutoClient) NuGet package, you must also reference the [Microsoft.Extensions.Http.Telemetry](https://www.nuget.org/packages/Microsoft.Extensions.Http.Telemetry) NuGet package.
-
 ## Use the `AutoClientAttribute`
 
 The <xref:Microsoft.Extensions.Http.AutoClient.AutoClientAttribute> is responsible for triggering the AutoClient generator to emit the corresponding implementation of the decorated interface. It accepts the `httpClientName` of the <xref:System.Net.Http.HttpClient> to be retrieved from the <xref:System.Net.Http.IHttpClientFactory>. Consider the following interface definition:

@@ -116,8 +116,6 @@ items:
         href: reflection/8.0/function-pointer-reflection.md
     - name: SDK and MSBuild
       items:
-      - name: .NET tool roll-forward behavior
-        href: sdk/8.0/tool-rollforward.md
       - name: CLI console output uses UTF-8
         href: sdk/8.0/console-encoding.md
       - name: Console encoding not UTF-8 after completion
@@ -130,12 +128,18 @@ items:
         href: sdk/8.0/dotnet-publish-config.md
       - name: "'dotnet restore' produces security vulnerability warnings"
         href: sdk/8.0/dotnet-restore-audit.md
+      - name: MSBuild custom derived build events deprecated
+        href: sdk/8.0/custombuildeventargs.md
       - name: MSBuild respects DOTNET_CLI_UI_LANGUAGE
         href: sdk/8.0/msbuild-language.md
       - name: Runtime-specific apps not self-contained
         href: sdk/8.0/runtimespecific-app-default.md
+      - name: SDK uses a smaller RID graph
+        href: sdk/8.0/rid-graph.md
       - name: Trimming may not be used with .NET Standard or .NET Framework
         href: sdk/8.0/trimming-unsupported-targetframework.md
+      - name: Version requirements for .NET 8 SDK
+        href: sdk/8.0/version-requirements.md
     - name: Serialization
       items:
       - name: BinaryFormatter disabled for most projects
@@ -1464,8 +1468,6 @@ items:
     items:
     - name: .NET 8
       items:
-      - name: .NET tool roll-forward behavior
-        href: sdk/8.0/tool-rollforward.md
       - name: CLI console output uses UTF-8
         href: sdk/8.0/console-encoding.md
       - name: Console encoding not UTF-8 after completion
@@ -1478,12 +1480,18 @@ items:
         href: sdk/8.0/dotnet-publish-config.md
       - name: "'dotnet restore' produces security vulnerability warnings"
         href: sdk/8.0/dotnet-restore-audit.md
+      - name: MSBuild custom derived build events deprecated
+        href: sdk/8.0/custombuildeventargs.md
       - name: MSBuild respects DOTNET_CLI_UI_LANGUAGE
         href: sdk/8.0/msbuild-language.md
       - name: Runtime-specific apps not self-contained
         href: sdk/8.0/runtimespecific-app-default.md
+      - name: SDK uses a smaller RID graph
+        href: sdk/8.0/rid-graph.md
       - name: Trimming may not be usedwith .NET Standard or .NET Framework
         href: sdk/8.0/trimming-unsupported-targetframework.md
+      - name: Version requirements for .NET 8 SDK
+        href: sdk/8.0/version-requirements.md
     - name: .NET 7
       items:
       - name: Automatic RuntimeIdentifier for certain projects

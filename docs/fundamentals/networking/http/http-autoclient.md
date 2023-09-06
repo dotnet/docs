@@ -8,11 +8,11 @@ ms.date: 09/06/2023
 
 # Use the REST API HTTP client generator
 
-The <xref:System.Net.Http.HttpClient> is a great way to consume REST APIs, but it's not without its challenges. One of the challenges is the amount of boilerplate code you need to write to consume the API. In this article, you'll learn how to use the [Microsoft.Extensions.Http.AutoClient](https://www.nuget.org/packages/Microsoft.Extensions.Http.AutoClient) NuGet package to decorate an interface and generate an HTTP client dependency. Relying on the auto-client's underlying source generator, the .NET AutoClient package generates the implementation of your interface, along with extension methods to register it into the dependency injection container.
+The <xref:System.Net.Http.HttpClient> is a great way to consume REST APIs, but it's not without its challenges. One of the challenges is the amount of boilerplate code you need to write to consume the API. In this article, you learn how to use the [Microsoft.Extensions.Http.AutoClient](https://www.nuget.org/packages/Microsoft.Extensions.Http.AutoClient) NuGet package to decorate an interface and generate an HTTP client dependency. The AutoClient's underlying source generator generates the implementation of your interface, along with extension methods to register it into the dependency injection container. Additionally, the AutoClient generates telemetry for each HTTP request, which is sent to the <xref:Microsoft.Extensions.Http.Telemetry.IHttpTelemetrySink>.
 
 ## Use the `AutoClientAttribute`
 
-The <xref:Microsoft.Extensions.Http.AutoClient.AutoClientAttribute> is a required attribute of HTTP auto-clients. It accepts the `httpClientName` of the <xref:System.Net.Http.HttpClient> to be retrieved from the <xref:System.Net.Http.IHttpClientFactory>. Consider the following interface definition:
+The <xref:Microsoft.Extensions.Http.AutoClient.AutoClientAttribute> is responsible for triggering the AutoClient generator to emit the corresponding implementation of the decorated interface. It accepts the `httpClientName` of the <xref:System.Net.Http.HttpClient> to be retrieved from the <xref:System.Net.Http.IHttpClientFactory>. Consider the following interface definition:
 
 ```csharp
 using Microsoft.Extensions.Http.AutoClient;
@@ -45,7 +45,7 @@ An empty interface isn't a useful abstraction. To define HTTP methods, you must 
 
 | Return type | Description |
 |--|--|
-| `Task<string>` | The raw content of the response, as a string, will be returned. |
+| `Task<string>` | The raw content of the response is returned as a string. |
 | `Task<T>` | When `T` is any serializable type, the response content is deserialized from JSON and returned. |
 | `Task<HttpResponseMessage>` | If you need the <xref:System.Net.Http.HttpResponseMessage> itself, as returned from <xref:System.Net.Http.HttpClient.SendAsync%2A?displayProperty=nameWithType>, use this type. |
 
@@ -63,7 +63,7 @@ An HTTP method is defined using one of the following attributes:
 - <xref:Microsoft.Extensions.Http.AutoClient.HeadAttribute?displayProperty=fullName>
 - <xref:Microsoft.Extensions.Http.AutoClient.OptionsAttribute?displayProperty=fullName>
 
-Each attribute requires a `path` argument that routes to the underlying REST API, and it should be relative to the <xref:System.Net.Http.HttpClient.BaseAddress?displayProperty=nameWithType>. The `path` cannot contain query string parameters, instead the <xref:Microsoft.Extensions.Http.AutoClient.QueryAttribute> is used. From the perspective of telemetry, the `path` is used as the <xref:Microsoft.Extensions.Http.Telemetry.RequestMetadata.RequestRoute?displayProperty=nameWithType>.
+Each attribute requires a `path` argument that routes to the underlying REST API, and it should be relative to the <xref:System.Net.Http.HttpClient.BaseAddress?displayProperty=nameWithType>. The `path` can't contain query string parameters, instead the <xref:Microsoft.Extensions.Http.AutoClient.QueryAttribute> is used. From the perspective of telemetry, the `path` is used as the <xref:Microsoft.Extensions.Http.Telemetry.RequestMetadata.RequestRoute?displayProperty=nameWithType>.
 
 HTTP methods decorated with any of the verb attributes must have a <xref:System.Threading.CancellationToken> parameter and it should be the last parameter defined. The `CancellationToken` parameter is used to cancel the HTTP request.
 
@@ -90,7 +90,7 @@ The preceding code:
 
 ### Route parameters
 
-The URL may contain route parameters, for example, `"/api/users/{userId}"`. To define a route parameter the method must accept a parameter with the same name:
+The URL may contain route parameters, for example, `"/api/users/{userId}"`. To define a route parameter the method must also accept a parameter with the same name, in this case, `userId`:
 
 ```csharp
 using System.Threading.Tasks;
@@ -268,36 +268,41 @@ public interface IUserClient
 }
 ```
 
-You might end up with some registration code similar to the following:
+While the generator emits the implementation of the `IUserClient` interface, it also generates the `AddUserClient` extension method on the `IServiceCollection`. Consider the following registration code:
 
 ```csharp
 var builder = Host.CreateApplicationBuilder(args);
 
 // Add the named HttpClient to the service collection
 builder.Services.AddHttpClient(
-        nameof(IUserClient),
-        client =>
-        {
-            client.BaseAddress = new Uri("<The REST API base address>");
-        });
+    nameof(IUserClient),
+    client =>
+    {
+        client.BaseAddress = new Uri("<The REST API base address>");
+    });
 
 // Add the IUserClient/UserClient to the service collection
 builder.Services.AddUserClient();
 ```
 
+In the preceding example code:
+
+- The <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder(System.String[])?displayProperty=fullName> is used to create a <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder>.
+- The <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> is retrieved from the <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Services?displayProperty=nameWithType> property, to call the `AddHttpClient` extension method.
+  - The `AddHttpClient` extension method is called with the name of the <xref:System.Net.Http.HttpClient> to be registered, and a delegate to configure the <xref:System.Net.Http.HttpClient> instance.
+- The `AddUserClient` extension method is called to register the <xref:IUserClient> interface and its implementation.
+
 Consuming the client is as simple as injecting it into your service's constructor:
 
 ```csharp
-public sealed class UserService
+public sealed class UserService(IUserClient userClient)
 {
-    private readonly IUserClient _userClient;
-
-    public MyService(IUserClient userClient) => _userClient = userClient;
-
     public async Task ProcessUsersAsync()
     {
-        var users = await _myClient.GetUsersAsync();
+        var users = await userClient.GetUsersAsync();
         // ...
     }
 }
 ```
+
+For more information, see [.NET dependency injection](../../../core/extensions/dependency-injection.md).

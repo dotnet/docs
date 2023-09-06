@@ -42,15 +42,14 @@ Unit tests provide automated software testing during your development and publis
 1. Visual Studio creates the project and opens the class file in the code window with the following code. If the language you want to use is not shown, change the language selector at the top of the page.
 
    ```csharp
-   namespace StringLibraryTest
+   namespace StringLibraryTest;
+
+   [TestClass]
+   public class UnitTest1
    {
-       [TestClass]
-       public class UnitTest1
+       [TestMethod]
+       public void TestMethod1()
        {
-           [TestMethod]
-           public void TestMethod1()
-           {
-           }
        }
    }
    ```

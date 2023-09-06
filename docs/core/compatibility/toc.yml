@@ -66,6 +66,8 @@ items:
         href: core-libraries/8.0/parameterinfo-hasdefaultvalue.md
       - name: Removed overloads of ToFrozenDictionary/ToFrozenSet
         href: core-libraries/8.0/optimizeforreading-arg.md
+      - name: RuntimeIdentifier returns platform for which runtime was built
+        href: core-libraries/8.0/runtimeidentifier.md
     - name: Cryptography
       items:
       - name: AesGcm authentication tag size on macOS
@@ -1098,6 +1100,8 @@ items:
         href: core-libraries/8.0/parameterinfo-hasdefaultvalue.md
       - name: Removed overloads of ToFrozenDictionary/ToFrozenSet
         href: core-libraries/8.0/optimizeforreading-arg.md
+      - name: RuntimeIdentifier returns platform for which runtime was built
+        href: core-libraries/8.0/runtimeidentifier.md
     - name: .NET 7
       items:
       - name: API obsoletions with default diagnostic ID

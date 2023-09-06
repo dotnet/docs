@@ -129,7 +129,7 @@ By default, Native AOT publishing produces debug information in a separate file:
 
 - Linux: *.dbg*
 - Windows: *.pdb*
-- macOS: *.dwarf*
+- macOS: *.dSYM* folder
 
 The debug file is necessary for running the app under the [debugger or inspecting crash dumps](./diagnostics.md#importance-of-the-symbol-file). On Unix-like platforms, set the `StripSymbols` property to `false` to include the debug information in the native binary. Including debug information makes the native binary larger.
 

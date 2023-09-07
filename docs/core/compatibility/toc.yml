@@ -106,6 +106,8 @@ items:
       items:
       - name: CreateObjectFlags.Unwrap only unwraps on target instance
         href: interop/8.0/comwrappers-unwrap.md
+      - name: Custom marshallers require additional members
+        href: interop/8.0/marshal-modes.md
       - name: IDispatchImplAttribute API is removed
         href: interop/8.0/idispatchimplattribute-removed.md
       - name: SafeHandle types must have public constructor
@@ -1388,6 +1390,8 @@ items:
       items:
       - name: CreateObjectFlags.Unwrap only unwraps on target instance
         href: interop/8.0/comwrappers-unwrap.md
+      - name: Custom marshallers require additional members
+        href: interop/8.0/marshal-modes.md
       - name: IDispatchImplAttribute API is removed
         href: interop/8.0/idispatchimplattribute-removed.md
       - name: SafeHandle types must have public constructor

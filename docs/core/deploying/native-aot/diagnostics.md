@@ -39,7 +39,7 @@ Native AOT provides partial support for some [well-known event providers](../../
 The .NET CLI tooling (`dotnet` SDK) and Visual Studio offer separate commands for `build` and
 `publish`. `build` (or `Start` in Visual Studio) uses CoreCLR. Only `publish` creates a
 Native AOT application.  Publishing your app as Native AOT produces an app that has been
-ahead-of-time (AOT) compiled to native code. As mentioned above, this means that not all diagnostic
+ahead-of-time (AOT) compiled to native code. As mentioned previously, this means that not all diagnostic
 tools will work seamlessly with published Native AOT applications in .NET 8. However, all .NET
 diagnostic tools are available for developers during the application building stage. We recommend
 developing, debugging, and testing the applications as usual and publish the working app with native

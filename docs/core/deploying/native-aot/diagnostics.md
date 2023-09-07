@@ -42,7 +42,7 @@ Native AOT application.  Publishing your app as Native AOT produces an app that 
 ahead-of-time (AOT) compiled to native code. As mentioned previously, this means that not all diagnostic
 tools will work seamlessly with published Native AOT applications in .NET 8. However, all .NET
 diagnostic tools are available for developers during the application building stage. We recommend
-developing, debugging, and testing the applications as usual and publish the working app with native
+developing, debugging, and testing the applications as usual and publishing the working app with Native
 AOT as one of the last steps.
 
 ## Native debugging

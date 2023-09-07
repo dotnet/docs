@@ -6,7 +6,7 @@ recommendations: false
 ---
 # Tutorial: Debug a .NET console application using Visual Studio for Mac
 
-[!INCLUDE [](../../../includes/vs-mac-eol.md)]
+[!INCLUDE [](~/includes/vs-mac-eol.md)]
 
 This tutorial introduces the debugging tools available in Visual Studio for Mac.
 

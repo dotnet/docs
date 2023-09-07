@@ -6,7 +6,7 @@ recommendations: false
 ---
 # Test a .NET class library using Visual Studio
 
-[!INCLUDE [](../../../includes/vs-mac-eol.md)]
+[!INCLUDE [](~/includes/vs-mac-eol.md)]
 
 This tutorial shows how to automate unit testing by adding a test project to a solution.
 

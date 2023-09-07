@@ -8,7 +8,7 @@ recommendations: false
 
 This tutorial shows how to create and run a .NET console application using Visual Studio for Mac.
 
-[!INCLUDE [](../../../includes/vs-mac-eol.md)]
+[!INCLUDE [](~/includes/vs-mac-eol.md)]
 
 ## Prerequisites
 

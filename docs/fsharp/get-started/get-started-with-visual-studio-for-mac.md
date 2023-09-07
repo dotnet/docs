@@ -5,7 +5,7 @@ ms.date: 10/29/2021
 ---
 # Get started with F# in Visual Studio for Mac
 
-[!INCLUDE [](../../../includes/vs-mac-eol.md)]
+[!INCLUDE [](~/includes/vs-mac-eol.md)]
 
 F# is supported in the Visual Studio for Mac IDE. Ensure that you have [Visual Studio for Mac installed](install-fsharp.md#install-f-with-visual-studio-for-mac).
 

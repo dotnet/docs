@@ -6,7 +6,7 @@ recommendations: false
 ---
 # Tutorial: Create a .NET class library using Visual Studio for Mac
 
-[!INCLUDE [](../../../includes/vs-mac-eol.md)]
+[!INCLUDE [](~/includes/vs-mac-eol.md)]
 
 In this tutorial, you create a class library that contains a single string-handling method.
 

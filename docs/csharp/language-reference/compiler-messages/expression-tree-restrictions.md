@@ -1,6 +1,6 @@
 ---
 title: Some C# expressions are prohibited in expression trees. Learn which expressions aren't allowed
-description: These compiler errors and warnings indicate that an expression would include an expression that isn't allowed in an expression tree. You'll need to refactor your code to remove the prohibited expression.
+description: These compiler errors and warnings indicate that an expression would include an expression that isn't allowed in an expression tree. You need to refactor your code to remove the prohibited expression.
 f1_keywords:
  - "CS0765"
  - "CS0831"

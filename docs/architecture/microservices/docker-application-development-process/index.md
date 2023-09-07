@@ -19,7 +19,7 @@ Whether you prefer a full and powerful IDE or a lightweight and agile editor, Mi
 
 **Visual Studio for Mac.** It's an IDE, evolution of Xamarin Studio, running in macOS. This tool should be the preferred choice for developers working in macOS machines who also want to use a powerful IDE.
 
-[!INCLUDE [](../../../includes/vs-mac-eol.md)]
+[!INCLUDE [](~/includes/vs-mac-eol.md)]
 
 **Visual Studio Code and Docker CLI**. If you prefer a lightweight and cross-platform editor that supports any development language, you can use Visual Studio Code and the Docker CLI. This IDE is a cross-platform development approach for macOS, Linux, and Windows. Additionally, Visual Studio Code supports extensions for Docker such as IntelliSense for Dockerfiles and shortcut tasks to run Docker commands from the editor.
 

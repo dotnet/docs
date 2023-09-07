@@ -169,7 +169,7 @@ The following expressions are prohibited:
 - The [index and range](../operators/member-access-operators.md#indexer-access) operators aren't allowed.
 - Non-destructive mutation using [`with`](../operators/with-expression.md) expressions aren't allowed.
 - You can't declare or access [inline arrays](../builtin-types/struct.md#inline-arrays).
-- You can't include [Collection expressions](../operators/collection-expressions.md).
+- You can't include [collection expressions](../operators/collection-expressions.md).
 - The [null propagating](../operators/member-access-operators.md#null-conditional-operators--and-) and [null coalescing](../operators/assignment-operator.md#null-coalescing-assignment) operators aren't allowed.
 - [`ref struct`](../builtin-types/ref-struct.md) types, such as <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> aren't allowed.
 - `in`, `out`, and `ref` parameters, including `out` variable declarations, aren't allowed.
@@ -186,4 +186,4 @@ Other restrictions are:
 - The target expression must be a lambda expression. Constants and variables aren't allowed, but a lambda expression that returns a constant or variable is.
 - Unsafe pointer operations aren't allowed.
 - COM calls must include `ref` on arguments; it can't be implied.
-- The unsupported `__arglist` keyword is not allowed.
+- The unsupported `__arglist` keyword isn't allowed.

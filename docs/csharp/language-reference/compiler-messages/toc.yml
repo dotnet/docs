@@ -871,8 +871,6 @@ items:
     href: ../../misc/cs0763.md
   - name: CS0764
     href: ../../misc/cs0764.md
-  - name: CS0765
-    href: ../../misc/cs0765.md
   - name: CS0766
     href: ../../misc/cs0766.md
   - name: CS0767
@@ -893,18 +891,12 @@ items:
     href: ../../misc/cs0825.md
   - name: CS0828
     href: ../../misc/cs0828.md
-  - name: CS0831
-    href: ../../misc/cs0831.md
-  - name: CS0832
-    href: ../../misc/cs0832.md
   - name: CS0833
     href: ../../misc/cs0833.md
   - name: CS0836
     href: ../../misc/cs0836.md
   - name: CS0837
     href: ../../misc/cs0837.md
-  - name: CS0838
-    href: ../../misc/cs0838.md
   - name: CS0839
     href: ../../misc/cs0839.md
   - name: CS0840
@@ -915,10 +907,6 @@ items:
     href: ../../misc/cs0842.md
   - name: CS0844
     href: ../../misc/cs0844.md
-  - name: CS0845
-    href: cs0845.md
-  - name: CS0854
-    href: cs0854.md
   - name: CS1001
     href: cs1001.md
   - name: CS1002
@@ -1413,12 +1401,6 @@ items:
     href: cs1942.md
   - name: CS1943
     href: cs1943.md
-  - name: CS1944
-    href: ../../misc/cs1944.md
-  - name: CS1945
-    href: ../../misc/cs1945.md
-  - name: CS1946
-    href: cs1946.md
   - name: CS1947
     href: ../../misc/cs1947.md
   - name: CS1948
@@ -1930,7 +1912,10 @@ items:
   displayName: CS0022, CS0178, CS0248, CS0251, CS0270, CS0611, CS0623, CS0650, CS0719, CS0747, CS0820, CS0826, CS0846, CS1552, CS1586, CS1920, CS1921, CS1925, CS1954, CS3007, CS3016, CS9174, CS9176
 - name: Lambda expressions
   href: lambda-expression-errors.md
-  displayName: CS0748, CS0834, CS0835, CS1621, CS1628, CS1632, CS1673, CS1686, CS1706, CS1951, CS1952, CS1989, CS2037, CS8030, CS8072, CS8074, CS8075, CS8153, CS8155, CS8175, CS8916, CS8971, CS8972, CS8975, CS9098, CS9099, CS9100
+  displayName: CS0748, CS1621, CS1628, CS1632, CS1673, CS1686, CS1706, CS1989, CS8030, CS8175, CS8916, CS8971, CS8972, CS8975, CS9098, CS9099, CS9100
+- name: Restrictions on expression trees
+  href: expression-tree-restrictions.md
+  displayName: CS0765, CS0831, CS0832, CS0834, CS0835, CS0838, CS0845, CS0853, CS0854, CS0855, CS1944, CS1945, CS1946, CS1951, CS1952, CS1963, CS2037, CS7053, CS8072, CS8074, CS8075, CS8110, CS8122, CS8143, CS8144, CS8153, CS8155, CS8198, CS8207, CS8382, CS8514, CS8640, CS8642, CS8790, CS8791, CS8792, CS8810, CS8849, CS8927, CS8952, CS9170, CS9175
 - name: Using directive and aliases
   href: using-directive-errors.md
   displayName: CS0105, CS0138, CS0431, CS0432, CS0440, CS0576, CS0687, CS1529, CS1537, CS7000, CS7007, CS8019, CS8083, CS8085, CS8914, CS8915, CS8933, CS9055, CS9130, CS9131, CS9132, CS9133

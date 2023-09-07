@@ -41,17 +41,27 @@ var handler = new SocketsHttpHandler
 {
     ConnectCallback = async (context, cancellationToken) =>
     {
-        var socket = new Socket(SocketType.Stream, ProtocolType.Tcp);
-        await socket.ConnectAsync(context.DnsEndPoint, cancellationToken);
-
-        var sslStream = new SslStream(new NetworkStream(socket));
-        await sslStream.AuthenticateAsClientAsync(new SslClientAuthenticationOptions
+        var socket = new Socket(SocketType.Stream, ProtocolType.Tcp) { NoDelay = true };
+        try
         {
-            TargetHost = context.DnsEndPoint.Host,
+            await socket.ConnectAsync(context.DnsEndPoint, cancellationToken);
 
-        }, cancellationToken);
+            var sslStream = new SslStream(new NetworkStream(socket, ownsSocket: true));
 
-        return sslStream;
+            // When using HTTP/2, you must also keep in mind to set options like ApplicationProtocols
+            await sslStream.AuthenticateAsClientAsync(new SslClientAuthenticationOptions
+            {
+                TargetHost = context.DnsEndPoint.Host,
+
+            }, cancellationToken);
+
+            return sslStream;
+        }
+        catch
+        {
+            socket.Dispose();
+            throw;
+        }
     }
 };
 

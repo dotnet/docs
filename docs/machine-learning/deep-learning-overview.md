@@ -10,7 +10,7 @@ ms.custom: mvc
 
 Deep learning is an umbrella term for machine learning techniques that make use of "deep" neural networks. Today, deep learning is one of the most visible areas of machine learning because of its success in areas like Computer Vision, Natural Language Processing, and when applied to reinforcement learning, scenarios like game playing, decision making and simulation.
 
-A crucial element to the success of deep learning has been the availability of data, compute, software frameworks, and runtimes that facilitate the creation of neural network models and their execution for inference.  Examples of such frameworks include Tensorflow, (Py)Torch and ONNX.  
+A crucial element to the success of deep learning has been the availability of data, compute, software frameworks, and runtimes that facilitate the creation of neural network models and their execution for inference.  Examples of such frameworks include TensorFlow, (Py)Torch and ONNX.  
 
 ML.NET provides access to some of these frameworks. As a result, ML.NET users can take advantage of deep learning models without having to start from scratch.
 
@@ -144,7 +144,7 @@ These APIs are powered by [TensorFlow.NET](https://github.com/SciSharp/TensorFlo
 
 #### TensorFlow  
 
-[TensorFlow](https://www.tensorflow.org/) is a deep learning framework with a rich ecosystem and a variety of pre-trained models available in the [Tensorflow Hub](https://www.tensorflow.org/hub).  
+[TensorFlow](https://www.tensorflow.org/) is a deep learning framework with a rich ecosystem and a variety of pre-trained models available in the [TensorFlow Hub](https://www.tensorflow.org/hub).  
 
 With ML.NET, you can take these pretrained TensorFlow models and use them for inferencing inside your .NET applications.
 

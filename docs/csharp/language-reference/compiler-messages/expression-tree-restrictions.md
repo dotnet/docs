@@ -149,7 +149,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 
 ## Expression tree restrictions
 
-All of the errors in the preceding list indicate you've used a C# expression type that isn't allowed in an expression tree. In most cases, the prohibited expressions represent syntax introduced after C# 3.0. These expressions are prohibited because allowing them would create a breaking change in all libraries that parse expression trees. Without updates, those libraries would all require updates before supporting any new expression trees.
+All of the errors in the preceding list indicate you've used a C# expression type that isn't allowed in an expression tree. In most cases, the prohibited expressions represent syntax introduced after C# 3.0. These expressions are prohibited because allowing them would create a breaking change in all libraries that parse expression trees. All libraries would need to be enhanced to parse new C# expressions if newer constructs were allowed.
 
 The following expressions are prohibited:
 

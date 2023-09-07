@@ -1,7 +1,7 @@
 ---
 title: Development environment for Docker apps
 description: Get to know the most important development tool options that support the Docker development life-cycle.
-ms.date: 12/08/2021
+ms.date: 09/07/2023
 ---
 # Development environment for Docker apps
 
@@ -27,6 +27,8 @@ It's recommended that you use Visual Studio 2022 or later with the built-in Dock
 ### Visual Studio for Mac (Mac development machine)
 
 You can use [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link) when developing Docker-based applications. Visual Studio for Mac offers a richer IDE when compared to Visual Studio Code for Mac.
+
+[!INCLUDE [](../../../includes/vs-mac-eol.md)]
 
 ## Language and framework choices
 

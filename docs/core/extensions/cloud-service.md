@@ -30,7 +30,7 @@ In this tutorial, you learn how to:
 - Docker Desktop ([Windows](https://docs.docker.com/docker-for-windows/install) or [Mac](https://docs.docker.com/docker-for-mac/install)).
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/dotnet).
 - Depending on your developer environment of choice:
-  - [Visual Studio, Visual Studio Code, or Visual Studio for Mac](https://visualstudio.microsoft.com).
+  - [Visual Studio or Visual Studio Code](https://visualstudio.microsoft.com).
   - [.NET CLI](../tools/index.md)
   - [Azure CLI](/cli/azure/install-azure-cli).
 

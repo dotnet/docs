@@ -118,7 +118,7 @@ And with the [Windows Compatibility Pack](../porting/windows-compat-pack.md) por
 
 ## Visual Studio integration
 
-Visual Studio 2017 version 15.3 and in some cases Visual Studio for Mac offer a number of significant enhancements for .NET Core developers.
+Visual Studio 2017 version 15.3 offers a number of significant enhancements for .NET Core developers.
 
 ### Retargeting .NET Core apps and .NET Standard libraries
 

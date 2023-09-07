@@ -83,7 +83,7 @@ dotnet fsi Script.fsx
 [1; 9; 25; 49; 81]
 ```
 
-F# scripting is natively supported in [Visual Studio](../../get-started/get-started-visual-studio.md), [Visual Studio Code](../../get-started/get-started-vscode.md), and [Visual Studio for Mac](../../get-started/get-started-with-visual-studio-for-mac.md).
+F# scripting is natively supported in [Visual Studio](../../get-started/get-started-visual-studio.md) and [Visual Studio Code](../../get-started/get-started-vscode.md).
 
 ## Referencing packages in F# Interactive
 

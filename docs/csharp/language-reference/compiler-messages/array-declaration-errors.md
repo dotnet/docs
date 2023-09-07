@@ -1,6 +1,6 @@
 ---
-title: Resolve errors and warnings related to array declarations and initializations
-description: These compiler errors and warnings indicate errors in the syntax for declaring and initializing array variables. There are multiple valid expressions to declare an array. Combining them incorrectly leads to errors.
+title: Resolve errors and warnings related to array and collection declarations and initializations
+description: These compiler errors and warnings indicate errors in the syntax for declaring and initializing array and collection variables. There are multiple valid expressions to declare an array. Combining them incorrectly leads to errors. Collection initializers and collection expressions provide initial values for an array or collection.
 f1_keywords:
  - "CS0022"
  - "CS0178"
@@ -11,14 +11,20 @@ f1_keywords:
  - "CS0623"
  - "CS0650"
  - "CS0719"
+ - "CS0747"
  - "CS0820"
  - "CS0826"
  - "CS0846"
  - "CS1552"
  - "CS1586"
+ - "CS1920"
+ - "CS1921"
  - "CS1925"
+ - "CS1954"
  - "CS3007"
  - "CS3016"
+ - "CS9174"
+ - "CS9176"
 helpviewer_keywords:
  - "CS0022"
  - "CS0178"
@@ -29,17 +35,23 @@ helpviewer_keywords:
  - "CS0623"
  - "CS0650"
  - "CS0719"
+ - "CS0747"
  - "CS0820"
  - "CS0826"
  - "CS0846"
  - "CS1552"
  - "CS1586"
+ - "CS1920"
+ - "CS1921"
  - "CS1925"
+ - "CS1954"
  - "CS3007"
  - "CS3016"
+ - "CS9174"
+ - "CS9176"
 ms.date: 08/29/2023
 ---
-# Resolve errors and warnings in array declarations and initialization expressions
+# Resolve errors and warnings in array and collection declarations and initialization expressions
 
 This article covers the following compiler errors:
 
@@ -51,21 +63,58 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0248**](#invalid-array-length) - *Cannot create an array with a negative size*
 - [**CS0270**](#invalid-array-length) - *Array size cannot be specified in a variable declaration (try initializing with a '`new`' expression)*
 - [**CS0611**](#invalid-element-type) - *Array elements cannot be of type*
-- [**CS0623**](#invalid-initializer) - *Array initializers can only be used in a variable or field initializer. Try using a new expression instead.*
+- [**CS0623**](#invalid-array-initializer) - *Array initializers can only be used in a variable or field initializer. Try using a new expression instead.*
 - [**CS0650**](#invalid-array-rank) - *Bad array declarator: To declare a managed array the rank specifier precedes the variable's identifier. To declare a fixed size buffer field, use the fixed keyword before the field type.*
 - [**CS0719**](#invalid-element-type) - *Array elements cannot be of static type*
+- [**CS0747**](#invalid-collection-initializer) - *Invalid initializer member declarator.*
 - [**CS0820**](#invalid-element-type) - *Cannot assign array initializer to an implicitly typed local*
 - [**CS0826**](#invalid-element-type) - *No best type found for implicitly typed array.*
-- [**CS0846**](#invalid-initializer) - *A nested array initializer is expected*
+- [**CS0846**](#invalid-array-initializer) - *A nested array initializer is expected*
 - [**CS1552**](#invalid-array-rank) - *Array type specifier, `[]`, must appear before parameter name*
 - [**CS1586**](#invalid-array-length) - *Array creation must have array size or array initializer*
-- [**CS1925**](#invalid-initializer) - *Cannot initialize object of type 'type' with a collection initializer.*
+- [**CS1920**](#invalid-collection-initializer) - *Element initializer cannot be empty.*
+- [**CS1921**](#invalid-collection-initializer) - *The best overloaded method match has wrong signature for the initializer element. The initializable `Add` must be an accessible instance method.*
+- [**CS1925**](#invalid-array-initializer) - *Cannot initialize object of type 'type' with a collection initializer.*
+- [**CS1954**](#invalid-collection-initializer) - *The best overloaded method match for the collection initializer element cannot be used. Collection initializer '`Add`' methods cannot have `ref` or `out` parameters.*
+- [**CS9174**](#invalid-collection-initializer) - *Cannot initialize type with a collection literal because the type is not constructible.*
+- [**CS9176**](#invalid-collection-initializer) - *There is no target type for the collection literal.*
 
 In addition, the following warnings are covered in this article:
 
 - [**CS3007**](#common-language-specification-warnings) - *Overloaded method 'method' differing only by unnamed array types is not CLS-compliant*
 - [**CS3016**](#common-language-specification-warnings) - *Arrays as attribute arguments is not CLS-compliant*
 - [**CS0251**](#invalid-array-element-access) - *Indexing an array with a negative index (array indices always start at zero)*
+
+You can learn more about arrays, collection initializers and collection expressions in the following articles:
+
+- [Arrays](../builtin-types/arrays.md)
+- [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)
+- [Collection expressions](../operators/collection-expressions.md).
+
+## Invalid collection initializer
+
+- **CS0747** - *Invalid initializer member declarator.*
+- **CS1920** - *Element initializer cannot be empty.*
+- **CS1921** - *The best overloaded method match has wrong signature for the initializer element. The initializable `Add` must be an accessible instance method.*
+- **CS1954** - *The best overloaded method match for the collection initializer element cannot be used. Collection initializer '`Add`' methods cannot have `ref` or `out` parameters.*
+- **CS9174** - *Cannot initialize type with a collection literal because the type is not constructible.*
+- **CS9176** - *There is no target type for the collection literal.*
+
+These errors all indicate that the code generated by the compiler for a collection initializer is invalid. Check the following:
+
+- A collection initializer contains a sequence of elements. You can't mix setting properties on the collection instance with adding elements in the same initializer.
+- A collection initializer that includes braces (`{` and `}`) can't be empty.
+- A conforming `Add` method must be accessible and take one parameter that is the same type as the collection elements. The parameter can't include the `ref` or `out` modifier.
+- Overload resolution must pick one `Add` method as a better match. There can't be multiple matching methods that are equally good.
+- Collection expressions can initialize explicitly typed variables of a collection type. If the variable isn't a collection or array type, or is implicitly typed (using `var`), a collection initializer can't be used.
+
+## Invalid array initializer
+
+- **CS0623** - *Array initializers can only be used in a variable or field initializer. Try using a new expression instead.*
+- **CS0846** - *A nested array initializer is expected*
+- **CS1925** - *Cannot initialize object of type 'type' with a collection initializer.*
+
+These errors indicate that you've created an invalid initializer. The likely cause is unbalanced braces `{` and `}` around one or more elements or child arrays. Ensure that the initializing expression matches the number of arrays in a jagged array initialization, and that the braces are balanced.
 
 ## Invalid array element access
 
@@ -81,7 +130,7 @@ You access an element of an array by specifying the index for each axis declared
 
 - **CS0178** - *Invalid rank specifier: expected '`,`' or '`]`'*
 - **CS0650** - *Bad array declarator: To declare a managed array the rank specifier precedes the variable's identifier. To declare a fixed size buffer field, use the fixed keyword before the field type.*
-- **CS1552** - *Array type specifier, [], must appear before parameter name*
+- **CS1552** - *Array type specifier, `[]`, must appear before parameter name*
 
 An array declaration consists of the following tokens, in order:
 
@@ -129,14 +178,6 @@ You can ensure the best common type using any of the following techniques:
 - Give the array an explicit type.
 - Give all array elements the same type.
 - Provide explicit casts on those elements that might be causing the problem.
-
-## Invalid initializer
-
-- **CS0623** - *Array initializers can only be used in a variable or field initializer. Try using a new expression instead.*
-- **CS0846** - *A nested array initializer is expected*
-- **CS1925** - *Cannot initialize object of type 'type' with a collection initializer.*
-
-These errors indicate that you've created an invalid initializer. The likely cause is unbalanced braces `{` and `}` around one or more elements or child arrays. Ensure that the initializing expression matches the number of arrays in a jagged array initialization, and that the braces are balanced.
 
 ## Common language specification warnings
 

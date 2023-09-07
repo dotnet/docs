@@ -70,7 +70,7 @@ var retryPolicy = HttpPolicyExtensions
 var socketHandler = new SocketsHttpHandler { PooledConnectionLifetime = TimeSpan.FromMinutes(15) };
 var pollyHandler = new PolicyHttpMessageHandler(retryPolicy)
 {
-    InnerHandler = socketHandler;
+    InnerHandler = socketHandler,
 };
 
 var httpClient = new HttpClient(pollyHandler);

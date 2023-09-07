@@ -85,7 +85,7 @@ In addition, the following warnings are covered in this article:
 - [**CS3016**](#common-language-specification-warnings) - *Arrays as attribute arguments is not CLS-compliant*
 - [**CS0251**](#invalid-array-element-access) - *Indexing an array with a negative index (array indices always start at zero)*
 
-- [Object and Collection Initializers](../programming-guide/classes-and-structs/object-and-collection-initializers.md)
+- [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)
 - [Collection expressions](../operators/collection-expressions.md).
 
 ## Invalid array element access

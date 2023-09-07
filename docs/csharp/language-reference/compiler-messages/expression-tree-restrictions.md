@@ -149,43 +149,41 @@ That's by design. The text closely matches the text of the compiler error / warn
 
 ## Expression tree restrictions
 
-All of the errors in the preceding list indicate you've used a C# expression type that isn't allowed in an expression tree. In almost all cases, the prohibited expressions represent syntax introduced after C# 3.0. These expressions are prohibited because allowing them would create a breaking change in all libraries that parse expression trees. Without updates, those libraries would all require updates before supporting any new expression trees. The general limitations on expressions tree are:
+All of the errors in the preceding list indicate you've used a C# expression type that isn't allowed in an expression tree. In most cases, the prohibited expressions represent syntax introduced after C# 3.0. These expressions are prohibited because allowing them would create a breaking change in all libraries that parse expression trees. Without updates, those libraries would all require updates before supporting any new expression trees.
 
-- Attributes can't be applied to the lambda expression, its parameters or return.
-- Statement lambdas, including anonymous method expressions, aren't allowed. It must be an expression lambda.
-- The lambda expression must be convertible to a type derived from <xref:System.Linq.Expressions.Expression?displayProperty=fullName> whose type parameter is a delegate type.
-- [dynamic](../builtin-types/reference-types.md#the-dynamic-type) operations aren't allowed.
-- [named and optional parameters](../../programming-guide/classes-and-structs/named-and-optional-arguments.md) are restricted. The expression can't call a method specifying named arguments, and it can't use the default value of an optional parameter.
-- The [null propagating](../operators/member-access-operators.md#null-conditional-operators--and-) and [null coalescing](../operators/assignment-operator.md#null-coalescing-assignment) operators aren't allowed.
-- [Dictionary initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md#collection-initializers) aren't allowed. Neither are extension `Add` methods.
+The following expressions are prohibited:
+
+- Invocations of [partial methods](../keywords/partial-method.md) that don't have an implementing declaration.
+- Invocations of [conditional methods](../preprocessor-directives.md#conditional-compilation) that have been removed.
+- Invocations of [local functions](../../programming-guide/classes-and-structs/local-functions.md).
 - `async` lambda expressions aren't allowed.
+- Using [`base`](../keywords/base.md) access to directly call a virtual method declared in a base class.
+- [assignment](../operators/assignment-operator.md) operations.
+- [statement lambdas](../operators/lambda-expressions.md#statement-lambdas) aren't allowed.
+- [multi-dimensional array](../builtin-types/arrays.md#multidimensional-arrays) initializers. Instead, you must create and initialize a multi-dimensional array outside of the expression tree.
+- [`dynamic`](../builtin-types/reference-types.md#the-dynamic-type) operations aren't allowed.
+- [pattern matching](../operators/patterns.md) expressions aren't allowed.
+- [Tuple literals](../builtin-types/value-tuples.md) and many tuple operations, such as equality comparisons aren't allowed.
+- [`throw` expressions](../statements/exception-handling-statements.md#the-throw-expression) aren't allowed.
+- [discard](../../fundamentals/functional/discards.md) (`_`) declarations.
+- The [index and range](../operators/member-access-operators.md#indexer-access) operators aren't allowed.
+- Non-destructive mutation using [`with`](../operators/with-expression.md) expressions aren't allowed.
+- You can't declare or access [inline arrays](../builtin-types/struct.md#inline-arrays).
+- You can't include [Collection expressions](../operators/collection-expressions.md).
+- The [null propagating](../operators/member-access-operators.md#null-conditional-operators--and-) and [null coalescing](../operators/assignment-operator.md#null-coalescing-assignment) operators aren't allowed.
 - [`ref struct`](../builtin-types/ref-struct.md) types, such as <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> aren't allowed.
 - `in`, `out`, and `ref` parameters, including `out` variable declarations, aren't allowed.
 - `ref` returns aren't allowed.
 - Calls to methods that return by `ref` aren't allowed.
-- Calls to local functions.
-- The pattern matching `is` and `switch` expressions aren't allowed.
+- [static abstract interface members](../keywords/interface.md#static-abstract-and-virtual-members) can't be accessed.
+
+Other restrictions are:
+
+- Attributes can't be applied to the lambda expression, its parameters or return.
+- The lambda expression must be convertible to a type derived from <xref:System.Linq.Expressions.Expression?displayProperty=fullName> whose type parameter is a delegate type.
+- [named and optional parameters](../../programming-guide/classes-and-structs/named-and-optional-arguments.md) are restricted. The expression can't call a method specifying named arguments, and it can't use the default value of an optional parameter.
+- [Dictionary initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md#collection-initializers) aren't allowed. Neither are extension `Add` methods.
 - The target expression must be a lambda expression. Constants and variables aren't allowed, but a lambda expression that returns a constant or variable is.
 - Unsafe pointer operations aren't allowed.
 - COM calls must include `ref` on arguments; it can't be implied.
 - The unsupported `__arglist` keyword is not allowed.
-- [static abstract interface members](../keywords/interface.md#static-abstract-and-virtual-members) can't be accessed.
-
-The prohibited expressions are:
-
-- [Partial methods](../keywords/partial-method.md) that don't have an implementing declaration.
-- [Conditional methods](../preprocessor-directives.md#conditional-compilation) that have been removed.
-- [`base`](../keywords/base.md) access to directly call a virtual method declared in a base class.
-- [assignment](../operators/assignment-operator.md) operations.
-- [statement lambda](../operators/lambda-expressions.md#statement-lambdas) aren't allowed.
-- [multi-dimensional array](../builtin-types/arrays.md#multidimensional-arrays) initializers. Instead, you must create and initialize a multi-dimensional array outside of the expression tree.
-- [`dynamic`](../builtin-types/reference-types.md#the-dynamic-type) operations aren't allowed.
-- Calls to [local functions](../../programming-guide/classes-and-structs/local-functions.md).
-- Usage of [pattern matching](../operators/patterns.md) aren't allowed.
-- [Tuple literals](../builtin-types/value-tuples.md) and many tuple operations aren't allowed.
-- [`throw` expressions](../statements/exception-handling-statements.md#the-throw-expression) aren't allowed.
-- [discard](../../fundamentals/functional/discards.md) declarations.
-- The [index and range](../operators/member-access-operators.md#indexer-access) operators.
-- [`with`](../operators/with-expression.md) expressions.
-- [inline arrays](../builtin-types/struct.md#inline-arrays) can't be accessed or declared.
-- [Collection expressions](../operators/collection-expressions.md) can't be declared.

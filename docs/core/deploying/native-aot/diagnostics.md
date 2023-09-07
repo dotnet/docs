@@ -51,26 +51,26 @@ When your run your app during development, like inside Visual Studio, or with `d
 
 After publishing, Native AOT applications are true native binaries. The managed debugger will not work on them. However, the Native AOT compiler generates fully native executable files that can be debugged by native debuggers on your platform of choice (for example, WinDbg or Visual Studio on Windows and gdb or lldb on Unix-like systems).
 
-The NativeAOT compiler generates information about line numbers, types, locals and parameters. The native debugger will let you inspect stack trace and variables, step into/over source lines, or set line breakpoints.
+The Native AOT compiler generates information about line numbers, types, locals, and parameters. The native debugger lets you inspect stack trace and variables, step into or over source lines, or set line breakpoints.
 
-To debug managed exceptions, set a breakpoint on the `RhThrowEx` method -- this method is called whenever a managed exception is thrown. The exception is stored in the `rcx` or `x0` register. If your debugger supports viewing C++ objects, you can cast
+To debug managed exceptions, set a breakpoint on the `RhThrowEx` method, which is called whenever a managed exception is thrown. The exception is stored in the `rcx` or `x0` register. If your debugger supports viewing C++ objects, you can cast
 the register to `S_P_CoreLib_System_Exception*` to see more information about the exception.
 
 Collecting a [dump](../../diagnostics/dumps.md) file for a Native AOT application involves some manual steps in .NET 8.
 
 ### Visual Studio-specific notes
 
-You can launch a NativeAOT-compiled executable under the VS debugger by opening it in the Visual Studio IDE. You will need to [open the executable itself in Visual Studio](https://learn.microsoft.com/visualstudio/debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution).
+You can launch a Native AOT-compiled executable under the Visual Studio debugger by opening it in the Visual Studio IDE. You will need to [open the executable itself in Visual Studio](/visualstudio/debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution).
 
-To set a breakpoint that breaks whenever an exception is thrown, choose the Breakpoints option from the `Debug -> Windows` menu. In the new window, select `New -> Function` breakpoint. Specify `RhThrowEx` as the Function Name and leave the Language option at "All Languages" (do not select C#).
+To set a breakpoint that breaks whenever an exception is thrown, choose the **Breakpoints** option from the **Debug > Windows** menu. In the new window, select **New > Function** breakpoint. Specify `RhThrowEx` as the Function Name and leave the Language option at **All Languages** (don't select C#).
 
-To see what exception was thrown, start debugging (`Debug -> Start Debugging` or `F5`), open the Watch window (`Debug -> Windows -> Watch`) and add following expression as one of the watches: `(S_P_CoreLib_System_Exception*)@rcx`. This leverages the fact that at the time `RhThrowEx` is called, the x64 CPU register RCX contains the thrown exception. You can also paste the expression into the Immediate Window; the syntax is the same as for watches.
+To see what exception was thrown, start debugging (**Debug > Start Debugging** or <kbd>F5</kbd>), open the Watch window (**Debug > Windows > Watch**), and add following expression as one of the watches: `(S_P_CoreLib_System_Exception*)@rcx`. This mechanism leverages the fact that at the time `RhThrowEx` is called, the x64 CPU register RCX contains the thrown exception. You can also paste the expression into the Immediate window; the syntax is the same as for watches.
 
 ### Importance of the symbol file
 
 When publishing, the Native AOT compiler produces both an executable and a symbol file. Native debugging, and related activities like profiling, require access to the native symbol file. If this file is not present, you may have degraded or broken results.
 
-See [Native debug information](index.md#native-aot-deployment) for details about the name and location of the symbol file.
+For information about the name and location of the symbol file, see [Native debug information](index.md#native-aot-deployment).
 
 ## CPU profiling
 

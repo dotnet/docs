@@ -488,8 +488,10 @@ Add a new .NET class library project named "StringLibrary" to the solution.
 1. In the terminal, run the following command to create the library project:
 
    ```dotnetcli
-   dotnet new classlib -o StringLibrary
+   dotnet new classlib -f net6.0 -o StringLibrary
    ```
+
+   The `-f` or `--framework` command changes the default target framework to `net6.0` version.
 
    The `-o` or `--output` command specifies the location to place the generated output.
 
@@ -567,7 +569,7 @@ Add a console application that uses the class library. The app will prompt the u
 1. In the terminal, run the following command to create the console app project:
 
    ```dotnetcli
-   dotnet new console -o ShowCase
+   dotnet new console -f net6.0 -o ShowCase
    ```
 
    The terminal output looks like the following example:

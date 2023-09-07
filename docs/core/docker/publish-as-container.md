@@ -73,14 +73,14 @@ The worker template loops indefinitely. Use the cancel command <kbd>Ctrl+C</kbd>
 
 ## Add NuGet package
 
-> [!IMPORTANT]
-> If you are building a Web application and using .NET SDK 7.0.300 or greater than the package isn't required—the SDK contains the same functionality out of the box! All non-web projects should continue to use this package for now. We hope to remove this limitation [in the future](https://github.com/dotnet/sdk-container-builds/issues/402).
-
-The [Microsoft.NET.Build.Containers](https://www.nuget.org/packages/Microsoft.NET.Build.Containers) NuGet package is currently required to publish non-Web projects as a container. To add the `Microsoft.NET.Build.Containers` NuGet package to the worker template, run the following [dotnet add package](../tools/dotnet-add-package.md) command:
+The [Microsoft.NET.Build.Containers](https://www.nuget.org/packages/Microsoft.NET.Build.Containers) NuGet package is currently required to publish non-web projects as a container. To add the `Microsoft.NET.Build.Containers` NuGet package to the worker template, run the following [dotnet add package](../tools/dotnet-add-package.md) command:
 
 ```dotnetcli
 dotnet add package Microsoft.NET.Build.Containers
 ```
+
+> [!TIP]
+> If you're building a web app and using .NET SDK 7.0.300 or later, then the package isn't required&mdash;the SDK contains the same functionality out of the box.
 
 ## Set the container image name
 
@@ -130,7 +130,7 @@ This command compiles your worker app to the *publish* folder and pushes the con
 
 ## Configure container image
 
-You can control many aspects of the generated container through MSBuild properties. In general, if you could use a command in a _Dockerfile_ to set some configuration, you can do the same via MSBuild.
+You can control many aspects of the generated container through MSBuild properties. In general, if you can use a command in a _Dockerfile_ to set some configuration, you can do the same via MSBuild.
 
 > [!NOTE]
 > The only exceptions to this are `RUN` commands. Due to the way containers are built, those cannot be emulated. If you need this functionality, you'll need to use a _Dockerfile_ to build your container images.
@@ -189,7 +189,7 @@ For notes on working with these registries, see the [registry-specific notes](ht
 
 ### `ContainerImageName`
 
-The container image name controls the name of the image itself, e.g `dotnet/runtime` or `my-app`. By default, the `AssemblyName` of the project is used.
+The container image name controls the name of the image itself, for example, `dotnet/runtime` or `my-app`. By default, the `AssemblyName` of the project is used.
 
 ```xml
 <PropertyGroup>
@@ -335,9 +335,9 @@ For more information, see [Implement conventional labels on top of existing labe
 
 ## Clean up resources
 
-In this article, you published a .NET worker as a container image. If you want, delete this resource. Use the `docker images` command to see a list of images installed.
+In this article, you published a .NET worker as a container image. If you want, delete this resource. Use the `docker images` command to see a list of installed images.
 
-```dockerfile
+```console
 docker images
 ```
 

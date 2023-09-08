@@ -14,9 +14,5 @@ LoggerProviderOptions.RegisterProviderOptions<
 builder.Services.AddSingleton<JokeService>();
 builder.Services.AddHostedService<WindowsBackgroundService>();
 
-// See: https://github.com/dotnet/runtime/issues/47303
-builder.Logging.AddConfiguration(
-    builder.Configuration.GetSection("Logging"));
-
 IHost host = builder.Build();
 host.Run();

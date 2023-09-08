@@ -56,6 +56,8 @@ items:
         href: core-libraries/8.0/getgeneration-return-value.md
       - name: GetFolderPath behavior on Unix
         href: core-libraries/8.0/getfolderpath-unix.md
+      - name: GetSystemVersion no longer returns ImageRuntimeVersion
+        href: core-libraries/8.0/getsystemversion.md
       - name: IndexOfAnyValues renamed to SearchValues
         href: core-libraries/8.0/indexofanyvalues-renamed.md
       - name: ITypeDescriptorContext nullable annotations
@@ -66,6 +68,8 @@ items:
         href: core-libraries/8.0/parameterinfo-hasdefaultvalue.md
       - name: Removed overloads of ToFrozenDictionary/ToFrozenSet
         href: core-libraries/8.0/optimizeforreading-arg.md
+      - name: RuntimeIdentifier returns platform for which runtime was built
+        href: core-libraries/8.0/runtimeidentifier.md
     - name: Cryptography
       items:
       - name: AesGcm authentication tag size on macOS
@@ -1090,6 +1094,8 @@ items:
         href: core-libraries/8.0/getgeneration-return-value.md
       - name: GetFolderPath behavior on Unix
         href: core-libraries/8.0/getfolderpath-unix.md
+      - name: GetSystemVersion no longer returns ImageRuntimeVersion
+        href: core-libraries/8.0/getsystemversion.md
       - name: IndexOfAnyValues renamed to SearchValues
         href: core-libraries/8.0/indexofanyvalues-renamed.md
       - name: ITypeDescriptorContext nullable annotations
@@ -1100,6 +1106,8 @@ items:
         href: core-libraries/8.0/parameterinfo-hasdefaultvalue.md
       - name: Removed overloads of ToFrozenDictionary/ToFrozenSet
         href: core-libraries/8.0/optimizeforreading-arg.md
+      - name: RuntimeIdentifier returns platform for which runtime was built
+        href: core-libraries/8.0/runtimeidentifier.md
     - name: .NET 7
       items:
       - name: API obsoletions with default diagnostic ID

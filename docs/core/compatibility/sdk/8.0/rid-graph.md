@@ -36,3 +36,4 @@ If you need to revert to the previous behavior of using the old, full RID graph,
 ## See also
 
 - [Host determines RID-specific assets](../../deployment/8.0/rid-asset-list.md)
+- [RuntimeIdentifier returns platform for which the runtime was built](../../core-libraries/8.0/runtimeidentifier.md)

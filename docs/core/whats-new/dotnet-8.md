@@ -36,7 +36,7 @@ This section contains the following subtopics:
 
 ### Serialization
 
-Many improvements have been made to <xref:System.Text.Json?displayProperty=fullName> serialization and deserialization functionality in .NET 8. For example, you can [customize handling of members that aren't in the JSON payload.](../../standard/serialization/system-text-json/missing-members.md). Many new APIs have been added, including <xref:System.Text.Json.JsonSerializerOptions.MakeReadOnly?displayProperty=nameWithType> and <xref:System.Text.Json.JsonSerializerOptions.IsReadOnly>, which let you control when a `JsonSerializerOptions` instance is frozen or check if it's frozen. The new <xref:System.Text.Json.JsonSerializerOptions.TryGetTypeInfo(System.Type,System.Text.Json.Serialization.Metadata.JsonTypeInfo@)> method, a variation of <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo(System.Type)>, returns `false` if no metadata was found for the specified type.
+Many improvements have been made to <xref:System.Text.Json?displayProperty=fullName> serialization and deserialization functionality in .NET 8. For example, you can [customize handling of members that aren't in the JSON payload.](../../standard/serialization/system-text-json/missing-members.md).
 
 The following sections describe other serialization improvements:
 
@@ -51,6 +51,7 @@ The following sections describe other serialization improvements:
 - [Streaming deserialization APIs](#streaming-deserialization-apis)
 - [WithAddedModifier extension method](#withaddedmodifier-extension-method)
 - [New JsonContent.Create overloads](#new-jsoncontentcreate-overloads)
+- [Freeze a JsonSerializerOptions instance](#freeze-a-jsonserializeroptions-instance)
 
 For more information about JSON serialization in general, see [JSON serialization and deserialization in .NET](../../standard/serialization/system-text-json/overview.md).
 
@@ -1385,6 +1386,25 @@ Building in a container is the easiest approach for most people, since the `dotn
 When you build apps that Windows on non-Windows platforms, the resulting executable is now updated with any specified Win32 resources&mdash;for example, application icon, manifest, version information.
 
 Previously, applications had to be built on Windows in order to have such resources. Fixing this gap in cross-building support has been a popular request, as it was a significant pain point affecting both infrastructure complexity and resource usage.
+
+## AOT compilation for Android apps
+
+To decrease app size, .NET and .NET MAUI apps that target Android use *profiled* ahead-of-time (AOT) compilation mode when they're built in Release mode. Profiled AOT compilation affects fewer methods than regular AOT compilation. .NET 8 introduces the `<AndroidStripILAfterAOT>` property that lets you opt into further AOT compilation for Android apps to decrease app size even more.
+
+```xml
+<PropertyGroup>
+  <AndroidStripILAfterAOT>true</AndroidStripILAfterAOT>
+</PropertyGroup>
+```
+
+By default, setting `AndroidStripILAfterAOT` to `true` overrides the default `AndroidEnableProfiledAot` setting, allowing (nearly) all methods that were AOT-compiled to be trimmed. You can also use profiled AOT and IL stripping together by explicitly setting both properties to `true`:
+
+```xml
+<PropertyGroup>
+  <AndroidStripILAfterAOT>true</AndroidStripILAfterAOT>
+  <AndroidEnableProfiledAot>true</AndroidEnableProfiledAot>
+</PropertyGroup>
+```
 
 ## Code analysis
 

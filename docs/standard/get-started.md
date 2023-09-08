@@ -12,7 +12,6 @@ The following step-by-step tutorials run on Windows, Linux, or macOS, except as 
 * Create a console app
   * [using Visual Studio Code](../core/tutorials/with-visual-studio-code.md)
   * [using Visual Studio](../core/tutorials/with-visual-studio.md) (Windows)
-  * [using Visual Studio for Mac](../core/tutorials/with-visual-studio-mac.md) (macOS)
 * Create a web app
   * [with server-side web UI](/aspnet/core/tutorials/razor-pages/razor-pages-start)
   * [with client-side web UI](https://dotnet.microsoft.com/learn/aspnet/blazor-tutorial/intro)
@@ -33,7 +32,6 @@ The following step-by-step tutorials run on Windows, Linux, or macOS, except as 
 * Create a class library
   * [using Visual Studio Code](../core/tutorials/library-with-visual-studio-code.md)
   * [using Visual Studio](../core/tutorials/library-with-visual-studio.md) (Windows)
-  * [using Visual Studio for Mac](../core/tutorials/library-with-visual-studio-mac.md) (macOS)
 
 ## Resources for learning .NET languages
 

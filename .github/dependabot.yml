@@ -639,6 +639,12 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
+    directory: "/docs/orleans/grains/snippets/timers" #Timers.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
     directory: "/docs/orleans/grains/snippets/transactions/Abstractions" #Abstractions.csproj
     schedule:
       interval: "weekly"
@@ -1197,7 +1203,7 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToDecryptXMLElementX509/vb" #decryptxml.vbproj
+    directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/vb" #encryptxml.vbproj
     schedule:
       interval: "weekly"
       day: "wednesday"

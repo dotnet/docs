@@ -40,13 +40,13 @@ Where:
 
 ### Specifying locales
 
-The locale should define the language, at a bare minimum, but it can also define the culture (dialect), and even the country or region. These segments are commonly delimited by the `-` character. With the added specificity of a culture, the "culture fallback" rules are applied where best matches are prioritized. The locale should map to a well-known language tag. For more information, see <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType>.
+The locale should define the language, at a bare minimum, but it can also define the culture (regional language), and even the country or region. These segments are commonly delimited by the `-` character. With the added specificity of a culture, the "culture fallback" rules are applied where best matches are prioritized. The locale should map to a well-known language tag. For more information, see <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType>.
 
 ### Culture fallback scenarios
 
 Imagine that your localized app supports various Serbian locales, and has the following resource files for its `MessageService`:
 
-| File                             | Dialect                       | Country Code |
+| File                             | Regional language             | Country Code |
 |----------------------------------|-------------------------------|--------------|
 | *MessageService.sr-Cyrl-RS.resx* | (Cyrillic, Serbia)            | RS           |
 | *MessageService.sr-Cyrl.resx*    | Cyrillic                      |              |
@@ -57,7 +57,7 @@ Imagine that your localized app supports various Serbian locales, and has the fo
 | *MessageService.sr.resx*         | <sup>†</sup> Latin            |              |
 | *MessageService.resx*            |                               |              |
 
-_<sup>†</sup>  The default dialect for the language._
+_<sup>†</sup>  The default regional language for the language._
 
 When your app is running with the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> set to a culture of `"sr-Cyrl-RS"` localization attempts to resolve files in the following order:
 

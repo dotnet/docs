@@ -41,7 +41,7 @@ aiming at broad compatibility, this API adds support for many things that were l
 - Multiple simultaneous listeners
 - Listener access to unaggregated measurements
 
-Although this API was designed to work well with OpenTelemetry and its growing ecosystem of pluggable vendor integration libraries, applications also have the option to use the .NET built-in listener APIs directly. With this option, you can create custom metric tooling without taking any external library dependencies. At the time of writing, the [System.Diagnostics.Metrics](xref:System.Diagnostics.Metrics) support is limited to [dotnet-counters](dotnet-counters.md) and [OpenTelemetry.NET](https://opentelemetry.io/docs/net/). However, we expect support for these APIs will grow  given the active nature of the OpenTelemetry project.
+Although this API was designed to work well with OpenTelemetry and its growing ecosystem of pluggable vendor integration libraries, applications also have the option to use the .NET built-in listener APIs directly. With this option, you can create custom metric tooling without taking any external library dependencies. At the time of writing, the [System.Diagnostics.Metrics](xref:System.Diagnostics.Metrics) support is limited to [dotnet-counters](dotnet-counters.md) and [OpenTelemetry.NET](https://opentelemetry.io/docs/net/). However, we expect support for these APIs will grow given the active nature of the OpenTelemetry project.
 
 ### PerformanceCounter
 

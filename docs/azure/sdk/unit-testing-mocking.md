@@ -181,7 +181,7 @@ When unit testing you only want the unit tests to verify the application logic a
 
 ## Refactor your types for testability
 
-Classes that need to be tested should be designed for [dependency injection](/dotnet/azure/sdk/dependency-injection), which allows the class to receive its dependencies instead of creating them internally. It was a seamless process to replace the `SecretClient` implementation in the example from the previous section because it was one of the constructor parameters. However, there may be classes in your code that create their own dependencies and aren't easily testable, such as the following:
+Classes that need to be tested should be designed for [dependency injection](dependency-injection.md), which allows the class to receive its dependencies instead of creating them internally. It was a seamless process to replace the `SecretClient` implementation in the example from the previous section because it was one of the constructor parameters. However, there may be classes in your code that create their own dependencies and aren't easily testable, such as the following:
 
 ```csharp
 public class AboutToExpireSecretFinder

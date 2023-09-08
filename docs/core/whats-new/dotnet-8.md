@@ -36,13 +36,7 @@ This section contains the following subtopics:
 
 ### Serialization
 
-Many improvements have been made to <xref:System.Text.Json?displayProperty=fullName> serialization and deserialization functionality, including:
-
-- You can [customize handling of members that aren't in the JSON payload.](../../standard/serialization/system-text-json/missing-members.md)
-- <xref:System.Text.Json.JsonSerializerOptions.MakeReadOnly?displayProperty=nameWithType> gives you explicit control over when a `JsonSerializerOptions` instance is frozen. (You can also check it with the <xref:System.Text.Json.JsonSerializerOptions.IsReadOnly> property.)
-- <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=nameWithType> is now obsolete. It's been superseded by the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> and <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> properties. For more information, see [Chain source generators](#chain-source-generators).
-- The new <xref:System.Text.Json.JsonSerializerOptions.TryGetTypeInfo(System.Type,System.Text.Json.Serialization.Metadata.JsonTypeInfo@)> method, a variation of the existing <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo(System.Type)> method, returns `false` if no metadata for the specified type was found.
-- Support for compiler-generated or *unspeakable* types in weakly typed source generation scenarios. Since compiler-generated types can't be explicitly specified by the source generator, <xref:System.Text.Json?displayProperty=fullName> now performs nearest-ancestor resolution at run time. This resolution determines the most appropriate supertype with which to serialize the value.
+Many improvements have been made to <xref:System.Text.Json?displayProperty=fullName> serialization and deserialization functionality in .NET 8. For example, you can [customize handling of members that aren't in the JSON payload.](../../standard/serialization/system-text-json/missing-members.md). Many new APIs have been added, including <xref:System.Text.Json.JsonSerializerOptions.MakeReadOnly?displayProperty=nameWithType> and <xref:System.Text.Json.JsonSerializerOptions.IsReadOnly>, which let you control when a `JsonSerializerOptions` instance is frozen or check if it's frozen. The new <xref:System.Text.Json.JsonSerializerOptions.TryGetTypeInfo(System.Type,System.Text.Json.Serialization.Metadata.JsonTypeInfo@)> method, a variation of <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo(System.Type)>, returns `false` if no metadata was found for the specified type.
 
 The following sections describe other serialization improvements:
 
@@ -56,6 +50,7 @@ The following sections describe other serialization improvements:
 - [Non-public members](#non-public-members)
 - [Streaming deserialization APIs](#streaming-deserialization-apis)
 - [WithAddedModifier extension method](#withaddedmodifier-extension-method)
+- [New JsonContent.Create overloads](#new-jsoncontentcreate-overloads)
 
 For more information about JSON serialization in general, see [JSON serialization and deserialization in .NET](../../standard/serialization/system-text-json/overview.md).
 
@@ -79,14 +74,15 @@ The serializer has built-in support for the following additional types.
 
 #### Source generator
 
-.NET 8 includes performance and reliability enhancements of the System.Text.Json [source generator](../../standard/serialization/system-text-json/source-generation.md) that are aimed at making the [native AOT](../../standard/glossary.md#native-aot) experience on par with the [reflection-based serializer](../../standard/serialization/system-text-json/source-generation-modes.md#overview). For example:
+.NET 8 includes enhancements of the System.Text.Json [source generator](../../standard/serialization/system-text-json/source-generation.md) that are aimed at making the [native AOT](../../standard/glossary.md#native-aot) experience on par with the [reflection-based serializer](../../standard/serialization/system-text-json/source-generation-modes.md#overview). For example:
 
-- The [source generator](../../standard/serialization/system-text-json/source-generation.md) now supports serializing types with [`required`](../../standard/serialization/system-text-json/required-properties.md) and [`init`](../../csharp/language-reference/keywords/init.md) properties. These were both already supported in reflection-based serialization.
+- The source generator now supports serializing types with [`required`](../../standard/serialization/system-text-json/required-properties.md) and [`init`](../../csharp/language-reference/keywords/init.md) properties. These were both already supported in reflection-based serialization.
 - Improved formatting of source-generated code.
 - <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> feature parity with <xref:System.Text.Json.JsonSerializerOptions>. This parity lets you specify serialization configuration at compile time, which ensures that the generated `MyContext.Default` property is preconfigured with all the relevant options set.
 - Additional diagnostics (such as `SYSLIB1034` and `SYSLIB1039`).
 - Don't include types of ignored or inaccessible properties.
 - Support for nesting `JsonSerializerContext` declarations within arbitrary type kinds.
+- Support for compiler-generated or *unspeakable* types in weakly typed source generation scenarios. Since compiler-generated types can't be explicitly specified by the source generator, <xref:System.Text.Json?displayProperty=fullName> now performs nearest-ancestor resolution at run time. This resolution determines the most appropriate supertype with which to serialize the value.
 - New converter type `JsonStringEnumConverter<TEnum>`. The existing <xref:System.Text.Json.Serialization.JsonStringEnumConverter> class isn't supported in native AOT. You can annotate your enum types as follows:
 
   ```csharp
@@ -123,6 +119,8 @@ options.TypeInfoResolverChain.Count; // 3
 options.TypeInfoResolverChain.RemoveAt(0);
 options.TypeInfoResolverChain.Count; // 2
 ```
+
+In addition, <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=nameWithType> is now obsolete. It's been superseded by the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> and <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> properties.
 
 #### Interface hierarchies
 
@@ -229,11 +227,9 @@ static JsonSerializerOptions GetDefaultOptions()
 
 #### New JsonNode API methods
 
-The `JsonNode` APIs include the following new methods.
+The <xref:System.Text.Json.Nodes.JsonNode> and <xref:System.Text.Json.Nodes.JsonArray?displayProperty=fullName> types include the following new methods.
 
 ```csharp
-namespace System.Text.Json.Nodes;
-
 public partial class JsonNode
 {
     // Creates a deep clone of the current node and all its descendants.
@@ -258,6 +254,14 @@ public partial class JsonNode
     // Replaces this instance with a new value,
     // updating the parent object/array accordingly.
     public void ReplaceWith<T>(T value);
+
+    // Asynchronously parses a stream as UTF-8 encoded data
+    // representing a single JSON value into a JsonNode.
+    public static Task<JsonNode?> ParseAsync(
+        Stream utf8Json,
+        JsonNodeOptions? nodeOptions = null,
+        JsonDocumentOptions documentOptions = default,
+        CancellationToken cancellationToken = default);
 }
 
 public partial class JsonArray
@@ -321,6 +325,38 @@ var options = new JsonSerializerOptions
         })
 };
 ```
+
+#### New JsonContent.Create overloads
+
+You can now create <xref:System.Net.Http.Json.JsonContent> instances using trim-safe or source-generated contracts. The new methods are:
+
+- <xref:System.Net.Http.Json.JsonContent.Create(%60%600,System.Text.Json.Serialization.Metadata.JsonTypeInfo%601,System.Net.Http.Headers.MediaTypeHeaderValue@)?displayProperty=nameWithType>
+- <xref:System.Net.Http.Json.JsonContent.Create(System.Object@,System.Text.Json.Serialization.Metadata.JsonTypeInfo,System.Net.Http.Headers.MediaTypeHeaderValue@)?displayProperty=nameWithType>
+
+```csharp
+var book = new Book(id: 42, "Title", "Author", publishedYear: 2023);
+HttpContent content = JsonContent.Create(book, MyContext.Default.Book);
+
+public record Book(int id, string title, string author, int publishedYear);
+
+[JsonSerializable(typeof(Book))]
+public partial class MyContext : JsonSerializerContext
+{ }
+```
+
+#### Freeze a JsonSerializerOptions instance
+
+The following new methods let you control when a <xref:System.Text.Json.JsonSerializerOptions> instance is frozen:
+
+- <xref:System.Text.Json.JsonSerializerOptions.MakeReadOnly?displayProperty=nameWithType>
+
+  This overload is designed to be trim-safe and will therefore throw an exception in cases where the options instance hasn't been configured with a resolver.
+
+- <xref:System.Text.Json.JsonSerializerOptions.MakeReadOnly(System.Boolean)?displayProperty=nameWithType>
+
+  If you pass `true` to this overload, it populates the options instance with the default reflection resolver if one is missing. This method is marked `RequiresUnreferenceCode`/`RequiresDynamicCode` and is therefore unsuitable for Native AOT applications.
+
+The new <xref:System.Text.Json.JsonSerializerOptions.IsReadOnly> property lets you check if the options instance is frozen.
 
 ### Time abstraction
 

@@ -176,6 +176,8 @@ Visual Studio for Mac installs the .NET SDK when the **.NET** workload is select
 
 :::image type="content" source="media/install-sdk/mac-install-selection.png" alt-text="macOS Visual Studio 2019 for Mac with the .NET workload selected." lightbox="media/install-sdk/mac-install-selection.png":::
 
+[!INCLUDE [](~/includes/vs-mac-eol.md)]
+
 ## Install alongside Visual Studio Code
 
 Visual Studio Code is a powerful and lightweight source code editor that runs on your desktop. Visual Studio Code is available for Windows, macOS, and Linux.

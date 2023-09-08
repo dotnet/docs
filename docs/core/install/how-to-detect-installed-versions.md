@@ -10,7 +10,7 @@ zone_pivot_groups: operating-systems-set-one
 
 # How to check that .NET is already installed
 
-This article teaches you how to check which versions of the .NET runtime and SDK are installed on your computer. If you have an integrated development environment, such as Visual Studio or Visual Studio for Mac, .NET may have already been installed.
+This article teaches you how to check which versions of the .NET runtime and SDK are installed on your computer. If you have an integrated development environment, such as Visual Studio, .NET may have already been installed.
 
 Installing an SDK installs the corresponding runtime.
 

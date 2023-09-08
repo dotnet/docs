@@ -188,7 +188,7 @@ Behaviors also allow controls to be declaratively connected to a command. Howeve
 View models typically expose public properties, for binding from the view, which implement the `ICommand` interface. Many .NET MAUI controls and gestures provide a `Command` property, which can be data bound to an `ICommand` object provided by the view model. The button control is one of the most commonly used controls, providing a command property that executes when the button is clicked.
 
 > [!NOTE]
-> While it is possible to expose the actual implementation of the `ICommand` interface that your view model uses (e.g. `Command<T>` or `RelayCommand`), it is recommended to expose your commands publicly as `ICommand`. This way, if you ever need to change the implementation at a later date, it can easily be swapped out.
+> While it's possible to expose the actual implementation of the `ICommand` interface that your view model uses (for example, `Command<T>` or `RelayCommand`), it is recommended to expose your commands publicly as `ICommand`. This way, if you ever need to change the implementation at a later date, it can easily be swapped out.
 
 The `ICommand` interface defines an `Execute` method, which encapsulates the operation itself, a `CanExecute` method, which indicates whether the command can be invoked, and a `CanExecuteChanged` event that occurs when changes occur that affect whether the command should execute. In most cases, we will only supply the `Execute` method for our commands. For a more detailed overview of `ICommand`, refer to the [Commanding](/dotnet/maui/fundamentals/data-binding/commanding) documentation for .NET MAUI.
 
@@ -276,43 +276,43 @@ public class EventToCommandBehavior : BaseBehavior<VisualElement>
         UnregisterEvent();
         base.OnDetachingFrom(bindable);
     }
-    
+
     static void OnEventNamePropertyChanged(BindableObject bindable, object oldValue, object newValue)
         => ((EventToCommandBehavior)bindable).RegisterEvent();
-    
+
     void RegisterEvent()
     {
         UnregisterEvent();
-    
+
         var eventName = EventName;
         if (View is null || string.IsNullOrWhiteSpace(eventName))
         {
             return;
         }
-    
+
         eventInfo = View.GetType()?.GetRuntimeEvent(eventName) ??
             throw new ArgumentException($"{nameof(EventToCommandBehavior)}: Couldn't resolve the event.", nameof(EventName));
-    
+
         ArgumentNullException.ThrowIfNull(eventInfo.EventHandlerType);
         ArgumentNullException.ThrowIfNull(eventHandlerMethodInfo);
-    
+
         eventHandler = eventHandlerMethodInfo.CreateDelegate(eventInfo.EventHandlerType, this) ??
             throw new ArgumentException($"{nameof(EventToCommandBehavior)}: Couldn't create event handler.", nameof(EventName));
-    
+
         eventInfo.AddEventHandler(View, eventHandler);
     }
-    
+
     void UnregisterEvent()
     {
         if (eventInfo is not null && eventHandler is not null)
         {
             eventInfo.RemoveEventHandler(View, eventHandler);
         }
-    
+
         eventInfo = null;
         eventHandler = null;
     }
-    
+
     /// <summary>
     /// Virtual method that executes when a Command is invoked
     /// </summary>
@@ -323,7 +323,7 @@ public class EventToCommandBehavior : BaseBehavior<VisualElement>
     {
         var parameter = CommandParameter
             ?? EventArgsConverter?.Convert(eventArgs, typeof(object), null, null);
-    
+
         var command = Command;
         if (command?.CanExecute(parameter) ?? false)
         {

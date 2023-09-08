@@ -187,7 +187,7 @@ Replace placeholders with your own appropriate values:
 The preceding command:
 
 - Creates an Azure Container Registry, given a registry name, in the specified resource group.
-- Enabled an Admin user—this is required for Azure container instances.
+- Enabled an Admin user—this is required for Azure Container Instances.
 
 :::zone-end
 

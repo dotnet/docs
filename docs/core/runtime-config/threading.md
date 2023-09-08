@@ -1,6 +1,6 @@
 ---
 title: Threading config settings
-description: Learn about the settings that configure threading for .NET Core apps.
+description: Learn about the settings that configure threading for .NET apps.
 ms.date: 11/04/2021
 ms.topic: reference
 ---
@@ -99,7 +99,7 @@ Project file:
 - For projects on Windows, configures whether thread pool thread management is delegated to the Windows thread pool.
 - If you omit this setting or the platform is not Windows, the .NET thread pool is used instead.
 - Only applications published with Native AOT on Windows use the Windows thread pool by default, for which you can opt to use the .NET thread pool instead by disabling the config setting.
-- The Windows thread pool may perform better in some cases, such as in cases where the minimum number of threads is configured to a high value, or when the Windows thread pool is already being heavily used by the app. There may also be cases where the .NET thread pool performs better, such as in heavy I/O handling on larger machines. It is advisable to check performance metrics when changing this config setting.
+- The Windows thread pool may perform better in some cases, such as in cases where the minimum number of threads is configured to a high value, or when the Windows thread pool is already being heavily used by the app. There may also be cases where the .NET thread pool performs better, such as in heavy I/O handling on larger machines. It's advisable to check performance metrics when changing this config setting.
 - Some APIs are not supported when using the Windows thread pool, such as <xref:System.Threading.ThreadPool.SetMinThreads%2A?displayProperty=nameWithType>, <xref:System.Threading.ThreadPool.SetMaxThreads%2A?displayProperty=nameWithType>, and <xref:System.Threading.ThreadPool.BindHandle%28System.Runtime.InteropServices.SafeHandle%29?displayProperty=nameWithType>. Thread pool config settings for minimum and maximum threads are also not effective. An alternative to <xref:System.Threading.ThreadPool.BindHandle%28System.Runtime.InteropServices.SafeHandle%29?displayProperty=nameWithType> is the <xref:System.Threading.ThreadPoolBoundHandle> class.
 
 | | Setting name | Values | Version introduced |

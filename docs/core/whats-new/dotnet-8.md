@@ -1424,6 +1424,19 @@ By default, setting `AndroidStripILAfterAOT` to `true` overrides the default `An
 
 ## Windows Presentation Foundation
 
+- [Hardware acceleration](#hardware-acceleration)
+- [OpenFolderDialog](#openfolderdialog)
+
+### Hardware acceleration
+
+Previously, all WPF applications that were accessed remotely had to use software rendering, even if the system had hardware rendering capabilities. .NET 8 adds an option that lets you opt into hardware acceleration for Remote Desktop Protocol (RDP).
+
+Hardware acceleration refers to the use of a computer's graphics processing unit (GPU) to speed up the rendering of graphics and visual effects in an application. This can result in improved performance and more seamless, responsive graphics. In contrast, software rendering relies solely on the computer's central processing unit (CPU) to render graphics, which can be slower and less effective.
+
+To opt in, set the `Switch.System.Windows.Media.EnableHardwareAccelerationInRdp` configuration property to `true` in a *runtimeconfig.json* file. For more information, see [Hardware acceleration in RDP](../runtime-config/wpf.md#hardware-acceleration-in-rdp).
+
+### OpenFolderDialog
+
 WPF includes a new dialog box control called `OpenFolderDialog`. This control lets app users browse and select folders. Previously, app developers relied on third-party software to achieve this functionality.
 
 ```csharp

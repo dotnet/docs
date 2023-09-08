@@ -1,6 +1,6 @@
 ---
 title: Debugging profiling config settings
-description: Learn about run-time settings that configure debugging and profiling for .NET Core apps.
+description: Learn about run-time settings that configure debugging and profiling for .NET apps.
 ms.date: 11/27/2019
 ms.topic: reference
 ---

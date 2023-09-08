@@ -1,21 +1,29 @@
 ---
 title: Introduction to resiliency in .NET
-description: Learn about resiliency in .NET programming, including fault tolerance, fault injection.
+description: Learn about resiliency in .NET programming, including chaos engineering, fault tolerance, fault injection, and various resilience-based policies.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/07/2023
+ms.date: 09/08/2023
 ---
 
 # Introduction to resiliency in .NET
 
-Resiliency is the ability of an app to recover from failures and continue to function. In the context of .NET programming, resiliency is achieved by designing apps that can handle failures gracefully and recover quickly. Two primary libraries can help you build resilient apps in .NET:
+Resiliency is the ability of an app to recover from failures and continue to function. In the context of .NET programming, resiliency is achieved by designing apps that can handle failures gracefully and recover quickly. To help you build resilient apps in .NET, the following two libraries are available:
 
 - [Microsoft.Extensions.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Resilience): This NuGet package provides mechanisms to harden apps against transient failures.
 - [Microsoft.Extensions.Http.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience): This NuGet package provides resiliency mechanisms specifically for the <xref:System.Net.Http.HttpClient>.
 
-## Chaos Engineering
+## Resilience-based policies
+
+### Policy pipeline
+
+
+
+## A word on Chaos Engineering
 
 Chaos Engineering is a practice that involves conducting experiments on a distributed system by exposing it to real-world failures. The goal of these experiments is to build confidence in the system's ability to withstand turbulent conditions in production. By subjecting the system to controlled chaos, engineers can identify and address weaknesses in the system's design and architecture, ultimately improving its overall resiliency.
+
+As such, and in the context of .NET programming, various resilience-based policies are centered around the practice of Chaos Engineering. These policies are designed to help you build resilient apps by allowing you to inject faults into your app's services and test its ability to handle them.
 
 ## Fault tolerance
 
@@ -33,7 +41,7 @@ A Simmy chaos policy is a special type of resilience policy that allows you to d
 
 To inject faults, use any of the default policies available in the [Microsoft.Extensions.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Resilience) library. The following faults can be injected into a resilience policy.
 
-##### Latency
+##### Latency faults
 
 <xref:Microsoft.Extensions.Resilience.FaultInjection.LatencyPolicyOptions?displayProperty=fullName>
 
@@ -43,7 +51,7 @@ To inject faults, use any of the default policies available in the [Microsoft.Ex
 | `FaultInjectionRate` | `0.1` | A decimal between 0 and 1 inclusive. Indicates the rate at which a chaos policy should inject faults. |
 | `Latency` | 30 seconds | The latency to be injected. The upper bound is 10 minutes. |
 
-##### Exception
+##### Exception faults
 
 <xref:Microsoft.Extensions.Resilience.FaultInjection.ExceptionPolicyOptions?displayProperty=fullName>
 
@@ -53,7 +61,7 @@ To inject faults, use any of the default policies available in the [Microsoft.Ex
 | `FaultInjectionRate` | `0.1` | A decimal between 0 and 1 inclusive. Indicates the rate at which a chaos policy should inject faults. |
 | `ExceptionKey` | `"DefaultException"` | This key is used for fetching a registered exception instance. |
 
-##### Custom defined objects
+##### Custom defined object faults
 
 <xref:Microsoft.Extensions.Resilience.FaultInjection.CustomResultPolicyOptions?displayProperty=fullName>
 
@@ -63,7 +71,7 @@ To inject faults, use any of the default policies available in the [Microsoft.Ex
 | `FaultInjectionRate` | `0.1` | A decimal between 0 and 1 inclusive. Indicates the rate at which a chaos policy should inject faults. |
 | `CustomResultKey` | `string.Empty` | This key is used for fetching a registered custom defined result object. |
 
-##### Custom defined `HttpResponseMessage`
+##### Custom defined `HttpResponseMessage` faults
 
 <xref:Microsoft.Extensions.Resilience.FaultInjection.HttpResponseInjectionPolicyOptions?displayProperty=fullName>
 
@@ -71,5 +79,5 @@ To inject faults, use any of the default policies available in the [Microsoft.Ex
 |--|--|--|
 | `Enabled` | `false` | Determines if the created policy should be enabled. |
 | `FaultInjectionRate` | `0.1` | A decimal between 0 and 1 inclusive. Indicates the rate at which a chaos policy should inject faults. |
-| `StatusCode` | `502` | The status code to be injected into a `http` response. |
+| `StatusCode` | `502` | The status code to be injected into a <xref:System.Net.Http.HttpResponseMessage>. |
 | `HttpContentKey` | `null` | This key is used to retrieve a registered `HttpContent` instance. |

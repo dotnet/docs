@@ -541,8 +541,6 @@ The `SYSLIB0051` API obsoletions are organized here by namespace.
 - <xref:System.Xml.Xsl.XsltException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.Xml.Xsl.XsltException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 
-
-
 ### SYSLIB0052
 
 - <xref:System.Text.RegularExpressions.Regex.InitializeReferences?displayProperty=fullName>

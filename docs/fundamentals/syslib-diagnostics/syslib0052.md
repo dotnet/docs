@@ -5,7 +5,7 @@ ms.date: 09/08/2023
 ---
 # SYSLIB0052: APIs that support obsolete mechanisms for Regex extensibility are obsolete
 
-The following kinds of APIs are obsolete, starting in .NET 8. Calling them in code generates warning `SYSLIB0052` at compile time. These <xref:System.Text.RegularExpressions.Regex> and <xref:System.Text.RegularExpressions.RegexRunner> APIs supported the now obsolete <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A>.
+The following <xref:System.Text.RegularExpressions.Regex> and <xref:System.Text.RegularExpressions.RegexRunner> APIs are obsolete, starting in .NET 8. Calling them in code generates warning `SYSLIB0052` at compile time. These APIs supported the now obsolete <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A>.
 
 - <xref:System.Text.RegularExpressions.Regex.InitializeReferences?displayProperty=nameWithType>
 - <xref:System.Text.RegularExpressions.Regex.UseOptionC?displayProperty=nameWithType>

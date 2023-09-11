@@ -126,6 +126,14 @@
             "featureFlags": [
                 "enable_uhf_ppe"
             ],
+            "open_source_feedback": {
+				"contributorGuideUrl": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute",
+				"issueTemplateName": "customer-feedback",
+				"productName": ".NET",
+				"productDescription": "Free. Cross platform. Open source. A developer platform for building all your apps: web, mobile, desktop, gaming, IoT, and more. Supported on Windows, Linux, and macOS.",
+				"productLogoLightUrl": "https://learn.microsoft.com/media/logos/logo_net.svg",
+				"productLogoDarkUrl": "https://learn.microsoft.com/media/logos/logo_net.svg"
+			},            
             "feedback_system": "GitHub",
             "feedback_github_repo": "dotnet/docs",
             "feedback_product_url": "https://aka.ms/feedback/report?space=61",

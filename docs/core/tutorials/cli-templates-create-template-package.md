@@ -41,7 +41,7 @@ In this part of the series you learn how to:
 
 * Complete [part 1](cli-templates-create-item-template.md) and [part 2](cli-templates-create-project-template.md) of this tutorial series.
 
-  This tutorial uses the two templates created in the first two parts of this tutorial. You can use a different template as long as you copy the template, as a folder, into the _working\templates\\_ folder.
+  This tutorial uses the two templates created in the first two parts of this tutorial. You can use a different template as long as you copy the template, as a folder, into the _working\content\\_ folder.
 
 * Open a terminal and navigate to the _working\\_ folder.
 
@@ -68,107 +68,106 @@ The package you're going to generate will include the [item] and(cli-templates-c
 
 The [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/packages/Microsoft.TemplateEngine.Authoring.Templates) package contains templates useful for template authoring. To install this package, nuget.org should be available as NuGet feed in the working directory.
 
-In the _working_ folder, run the following command to create the template package:
+01. In the _working_ folder, run the following command to create the template package:
 
-```dotnetcli
-dotnet new templatepack -n "AdatumCorporation.Utility.Templates"
-```
+    ```dotnetcli
+    dotnet new templatepack -n "AdatumCorporation.Utility.Templates"
+    ```
 
-The `-n` parameter sets the project filename to _AdatumCorporation.Utility.Templates.csproj_. You should see a result similar to the following output.
+    The `-n` parameter sets the project filename to _AdatumCorporation.Utility.Templates.csproj_. You should see a result similar to the following output.
 
-```output
-The template "Template Package" was created successfully.
+    ```output
+    The template "Template Package" was created successfully.
+    
+    Processing post-creation actions...
+    Description: Manual actions required
+    Manual instructions: Open *.csproj in the editor and complete the package metadata configuration. Copy the templates to _content_ folder. Fill in README.md.
+    ```
 
-Processing post-creation actions...
-Description: Manual actions required
-Manual instructions: Open *.csproj in the editor and complete the package metadata configuration. Copy the templates to 'content' folder. Fill in README.md.
-```
+01. Next, open the _AdatumCorporation.Utility.Templates.csproj_ file in a code editor and populate it according to the hints in the template:
 
-Next, open the _AdatumCorporation.Utility.Templates.csproj_ file in a code editor and populate it according to the hints in the template:
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk">
+    
+      <PropertyGroup>
+        <!-- The package metadata. Fill in the properties marked as TODO below -->
+        <!-- Follow the instructions on https://learn.microsoft.com/nuget/create-packages/package-authoring-best-practices -->
+        <PackageId>AdatumCorporation.Utility.Templates</PackageId>
+        <PackageVersion>1.0</PackageVersion>
+        <Title>AdatumCorporation Templates</Title>
+        <Authors>Me</Authors>
+        <Description>Templates to use when creating an application for Adatum Corporation.</Description>
+        <PackageTags>dotnet-new;templates;contoso</PackageTags>
+        <PackageProjectUrl>https://your-url</PackageProjectUrl>
 
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <!-- The package metadata. Fill in the properties marked as TODO below -->
-    <!-- Follow the instructions on https://learn.microsoft.com/nuget/create-packages/package-authoring-best-practices -->
-    <PackageId>AdatumCorporation.Utility.Templates</PackageId>
-    <PackageVersion>1.0</PackageVersion>
-    <Title>AdatumCorporation Templates</Title>
-    <Authors>Me</Authors>
-    <Description>Templates to use when creating an application for Adatum Corporation.</Description>
-    <PackageTags>dotnet-new;templates;contoso</PackageTags>
-    <PackageProjectUrl>https://your-url</PackageProjectUrl>
-
-    <PackageType>Template</PackageType>
-    <TargetFramework>net8.0</TargetFramework>
-    <IncludeContentInPack>true</IncludeContentInPack>
-    <IncludeBuildOutput>false</IncludeBuildOutput>
-    <ContentTargetFolders>content</ContentTargetFolders>
-    <NoWarn>$(NoWarn);NU5128</NoWarn>
-    <NoDefaultExcludes>true</NoDefaultExcludes>
-    ... cut for brevity ...
-```
+        <PackageType>Template</PackageType>
+        <TargetFramework>net8.0</TargetFramework>
+        <IncludeContentInPack>true</IncludeContentInPack>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <ContentTargetFolders>content</ContentTargetFolders>
+        <NoWarn>$(NoWarn);NU5128</NoWarn>
+        <NoDefaultExcludes>true</NoDefaultExcludes>
+        ... cut for brevity ...
+    ```
 
 ::: zone-end
 
 ::: zone pivot="dotnet-7-0,dotnet-6-0"
 
-In the _working_ folder, run the following command to create the template package:
+01. In the _working_ folder, run the following command to create the template package:
 
-```dotnetcli
-dotnet new console -n AdatumCorporation.Utility.Templates
-```
+    ```dotnetcli
+    dotnet new console -n AdatumCorporation.Utility.Templates
+    ```
 
-The `-n` parameter sets the project filename to _AdatumCorporation.Utility.Templates.csproj_. You should see a result similar to the following output.
+    The `-n` parameter sets the project filename to _AdatumCorporation.Utility.Templates.csproj_. You should see a result similar to the following output.
 
-```output
-The template "Console Application" was created successfully.
+    ```output
+    The template "Console Application" was created successfully.
+    
+    Processing post-creation actions...
+    Running 'dotnet restore' on .\AdatumCorporation.Utility.Templates.csproj...
+      Restore completed in 52.38 ms for C:\code\working\AdatumCorporation.Utility.Templates.csproj.
+    
+    Restore succeeded.
+    ```
 
-Processing post-creation actions...
-Running 'dotnet restore' on .\AdatumCorporation.Utility.Templates.csproj...
-  Restore completed in 52.38 ms for C:\code\working\AdatumCorporation.Utility.Templates.csproj.
+01. Delete the _Program.cs_ file. The new project template generates this file but it's not used by the templates engine.
 
-Restore succeeded.
-```
+01. Next, open the _AdatumCorporation.Utility.Templates.csproj_ file in your favorite editor and replace the content with the following XML:
 
-The new project template generates a _Program.cs_ file. You can safely delete this file as it's not used by the templates.
-
-Next, open the _AdatumCorporation.Utility.Templates.csproj_ file in your favorite editor and replace the content with the following XML:
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>    
-    <PackageId>AdatumCorporation.Utility.Templates</PackageId>
-    <PackageVersion>1.0</PackageVersion>
-    <Title>AdatumCorporation Templates</Title>
-    <Authors>Me</Authors>
-    <Description>Templates to use when creating an application for Adatum Corporation.</Description>
-    <PackageTags>dotnet-new;templates;adatum</PackageTags>
-    <PackageProjectUrl>https://your-url</PackageProjectUrl>
-
-    <PackageType>Template</PackageType>
-    <TargetFramework>netstandard2.0</TargetFramework>    
-    <IncludeContentInPack>true</IncludeContentInPack>
-    <IncludeBuildOutput>false</IncludeBuildOutput>
-    <ContentTargetFolders>content</ContentTargetFolders>
-    <NoWarn>$(NoWarn);NU5128</NoWarn>
-    <NoDefaultExcludes>true</NoDefaultExcludes>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <Content Include="content\**\*" Exclude="content\**\bin\**;content\**\obj\**" />
-    <Compile Remove="**\*" />
-  </ItemGroup>
-
-</Project>
-```
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk">
+    
+      <PropertyGroup>    
+        <PackageId>AdatumCorporation.Utility.Templates</PackageId>
+        <PackageVersion>1.0</PackageVersion>
+        <Title>AdatumCorporation Templates</Title>
+        <Authors>Me</Authors>
+        <Description>Templates to use when creating an application for Adatum Corporation.</Description>
+        <PackageTags>dotnet-new;templates;adatum</PackageTags>
+        <PackageProjectUrl>https://your-url</PackageProjectUrl>
+    
+        <PackageType>Template</PackageType>
+        <TargetFramework>netstandard2.0</TargetFramework>    
+        <IncludeContentInPack>true</IncludeContentInPack>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <ContentTargetFolders>content</ContentTargetFolders>
+        <NoWarn>$(NoWarn);NU5128</NoWarn>
+        <NoDefaultExcludes>true</NoDefaultExcludes>
+      </PropertyGroup>
+    
+      <ItemGroup>
+        <Content Include="content\**\*" Exclude="content\**\bin\**;content\**\obj\**" />
+        <Compile Remove="**\*" />
+      </ItemGroup>
+    
+    </Project>
+    ```
 
 ::: zone-end
 
-> [!TIP]
-> For more information about NuGet metadat, see [Pack a template into a NuGet package (nupkg file)](../tools/custom-templates.md#pack-a-template-into-a-nuget-package-nupkg-file).
+### Description of the project XML
 
 The settings under `<PropertyGroup>` in the XML snippet are broken into two groups.
 
@@ -184,6 +183,9 @@ In the second group, the `<TargetFramework>` setting ensures that MSBuild runs p
 * The `<NoDefaultExcludes>` setting ensures that files and folders that start with a `.` (like `.gitignore`) are part of the template. The *default* behavior of NuGet packages is to ignore those files and folders.
 
 `<ItemGroup>` contains two items. First, the `<Content>` item includes everything in the _templates_ folder as content. It's also set to exclude any _bin_ folder or _obj_ folder to prevent any compiled code (if you tested and compiled your templates) from being included. Second, the `<Compile>` item excludes all code files from compiling no matter where they're located. This setting prevents the project that's used to create the template package from trying to compile the code in the _templates_ folder hierarchy.
+
+> [!TIP]
+> For more information about NuGet metadata settings, see [Pack a template into a NuGet package (nupkg file)](../tools/custom-templates.md#pack-a-template-into-a-nuget-package-nupkg-file).
 
 ::: zone pivot="dotnet-8-0"
 
@@ -206,7 +208,7 @@ These MSBuild tasks provide template validation and [localization of the templat
 
 ::: zone-end
 
-## Build and install
+## Pack and install
 
 Save the project file. Before building the template package, verify that your folder structure is correct. Any template you want to pack should be placed in the _templates_ folder, in its own folder. The folder structure should look similar to the following hierarchy:
 
@@ -224,7 +226,7 @@ working
 
 The _content_ folder has two folders: _extensions_ and _consoleasync_.
 
-In your terminal, from the _working_ folder, run the `dotnet pack` command. This command builds your project and creates a NuGet package in the _working\bin\Debug_ folder, as indicated by the following output:
+In your terminal, from the _working_ folder, run the `dotnet pack` command. This command builds the project and creates a NuGet package in the _working\bin\Debug_ folder, as indicated by the following output:
 
 ```output
 MSBuild version 17.8.0-preview-23367-03+0ff2a83e9 for .NET

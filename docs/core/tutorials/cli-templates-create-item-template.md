@@ -28,7 +28,6 @@ In this part of the series, you learn how to:
 ## Prerequisites
 
 * [.NET SDK 7.0.100](https://dotnet.microsoft.com/download) or a later version.
-* Read the reference article [Custom templates for dotnet new](../tools/custom-templates.md).
 
   The reference article explains the basics about templates and how they're put together. Some of this information is reiterated here.
 
@@ -40,7 +39,7 @@ In this part of the series, you learn how to:
 
 This series uses a "working folder" where your template source is contained and a "testing folder" used to test your templates. The working folder and testing folder should be under the same parent folder.
 
-First, create the parent folder, the name doesn't matter. Then, create two subfolders named _working_ and _test_. Inside of the _working_ folder, create a subfolder named _templates_.
+First, create the parent folder, the name doesn't matter. Then, create two subfolders named _working_ and _test_. Inside of the _working_ folder, create a subfolder named _content_.
 
 The folder structure should look like the following.
 
@@ -48,18 +47,18 @@ The folder structure should look like the following.
 parent_folder
 ├───test
 └───working
-    └───templates
+    └───content
 ```
 
 ## Create an item template
 
 An item template is a specific type of template that contains one or more files. These types of templates are useful when you already have a project and you want to generate another file, like a config file or code file. In this example, you'll create a class that adds an extension method to the string type.
 
-In your terminal, navigate to the _working\templates_ folder and create a new subfolder named _extensions_.
+In your terminal, navigate to the _working\content_ folder and create a new subfolder named _extensions_.
 
 ```console
 working
-└───templates
+└───content
     └───extensions
 ```
 
@@ -83,7 +82,7 @@ Now that the content of the template is finished, the next step is to create the
 
 ## Create the template config
 
-In this part of the tutorial, your template folder is located at _working\templates\extensions_.
+In this part of the tutorial, your template folder is located at _working\content\extensions_.
 
 Templates are recognized by **dotnet** because they have a special folder and config file that exist at the root of your template folder.
 
@@ -91,7 +90,7 @@ First, create a new subfolder named _.template.config_, and enter it. Then, crea
 
 ```console
 working
-└───templates
+└───content
     └───extensions
         └───.template.config
                 template.json
@@ -179,9 +178,9 @@ This command outputs the list of templates installed, which should include yours
 
 ```console
 The following template packages will be installed:
-   <root path>\working\templates\extensions
+   <root path>\working\content\extensions
 
-Success: <root path>\working\templates\extensions installed the following templates:
+Success: <root path>\working\content\extensions installed the following templates:
 Templates                                         Short Name               Language          Tags
 --------------------------------------------      -------------------      ------------      ----------------------
 Example templates: string extensions              stringext                [C#]              Common/Code
@@ -264,7 +263,7 @@ In your terminal, navigate to the  _extensions_ folder and run the following com
 This command outputs a list of the templates that were uninstalled, which should include yours.
 
 ```console
-Success: <root path>\working\templates\extensions was uninstalled.
+Success: <root path>\working\content\extensions was uninstalled.
 ```
 
 At any time, you can use `dotnet new uninstall` to see a list of installed template packages, including for each template package the command to uninstall it.

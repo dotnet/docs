@@ -40,7 +40,7 @@ In this part of the series you learn how to:
 ## Prerequisites
 
 * Complete [part 1](cli-templates-create-item-template.md) of this tutorial series.
-* Open a terminal and navigate to the _working\templates_ folder.
+* Open a terminal and navigate to the _working\content_ folder.
 
 [!INCLUDE [dotnet6-syntax-note](includes/dotnet6-syntax-note.md)]
 
@@ -48,11 +48,11 @@ In this part of the series you learn how to:
 
 Project templates produce ready-to-run projects that make it easy for users to start with a working set of code. .NET includes a few project templates such as a console application or a class library. In this example, you create a new console project that replaces the standard "Hello World" console output with one that runs asynchronously.
 
-In your terminal, navigate to the _working\templates_ folder and create a new subfolder named _consoleasync_. Enter the subfolder and run `dotnet new console` to generate the standard console application. You'll edit the files produced by this template to create a new template.
+In your terminal, navigate to the _working\content_ folder and create a new subfolder named _consoleasync_. Enter the subfolder and run `dotnet new console` to generate the standard console application. You'll edit the files produced by this template to create a new template.
 
 ```console
 working
-└───templates
+└───content
     └───consoleasync
             consoleasync.csproj
             Program.cs
@@ -71,7 +71,7 @@ Now that you have the content of the template created, you need to create the te
 
 ## Create the template config
 
-In this tutorial, your template folder is located at _working\templates\consoleasync_.
+In this tutorial, your template folder is located at _working\content\consoleasync_.
 
 Templates are recognized by **dotnet** because they have a special folder and config file that exist at the root of your template folder.
 
@@ -79,7 +79,7 @@ First, create a new subfolder named _.template.config_, and enter it. Then, crea
 
 ```console
 working
-└───templates
+└───content
     └───consoleasync
         └───.template.config
                 template.json
@@ -119,9 +119,9 @@ This command outputs a list of the installed templates, which should include you
 
 ```console
 The following template packages will be installed:
-   <root path>\working\templates\consoleasync
+   <root path>\working\content\consoleasync
 
-Success: <root path>\working\templates\consoleasync installed the following templates:
+Success: <root path>\working\content\consoleasync installed the following templates:
 Templates                                         Short Name               Language          Tags
 --------------------------------------------      -------------------      ------------      ----------------------
 Example templates: async project                  consoleasync             [C#]              Common/Console
@@ -169,7 +169,7 @@ In your terminal, navigate to the  _consoleasync_ folder and run the following c
 This command outputs a list of the templates that were uninstalled, which should include yours.
 
 ```console
-Success: <root path>\working\templates\consoleasync was uninstalled.
+Success: <root path>\working\content\consoleasync was uninstalled.
 ```
 
 At any time, you can use `dotnet new uninstall` to see a list of installed template packages, including for each template package the command to uninstall it.

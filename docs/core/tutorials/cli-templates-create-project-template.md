@@ -2,7 +2,7 @@
 title: Create a project template for dotnet new
 description: Learn how to create a project template for the dotnet new command.
 author: adegeo
-ms.date: 09/30/2022
+ms.date: 09/08/2023
 ms.topic: tutorial
 ms.author: adegeo
 recommendations: false
@@ -48,7 +48,7 @@ In this part of the series you learn how to:
 
 Project templates produce ready-to-run projects that make it easy for users to start with a working set of code. .NET includes a few project templates such as a console application or a class library. In this example, you create a new console project that replaces the standard "Hello World" console output with one that runs asynchronously.
 
-In your terminal, navigate to the _working\templates_ folder and create a new subfolder named _consoleasync_. Enter the subfolder and run `dotnet new console` to generate the standard console application. You'll be editing the files produced by this template to create a new template.
+In your terminal, navigate to the _working\templates_ folder and create a new subfolder named _consoleasync_. Enter the subfolder and run `dotnet new console` to generate the standard console application. You'll edit the files produced by this template to create a new template.
 
 ```console
 working
@@ -66,24 +66,6 @@ Open up the _Program.cs_ file. The standard console project doesn't asynchronous
 // See https://aka.ms/new-console-template for more information
 await Console.Out.WriteAsync("Hello World with C#");
 ```
-
-## Build the project
-
-Before you complete a project template, you should test it to make sure it compiles and runs correctly.
-
-In your terminal, run the following command.
-
-```dotnetcli
-dotnet run
-```
-
-You get the following output.
-
-```console
-Hello World with C#
-```
-
-You can delete the _obj_ and _bin_ folders created by using `dotnet run`. Deleting these files ensures your template only includes the files related to your template and not any files that result from a build action.
 
 Now that you have the content of the template created, you need to create the template config at the root folder of the template.
 
@@ -123,7 +105,7 @@ Open the _template.json_ with your favorite text editor and paste in the followi
 
 This config file contains all the settings for your template. You can see the basic settings, such as `name` and `shortName`, but there's also a `tags/type` value that's set to `item`. This categorizes your template as an "item" template. There's no restriction on the type of template you create. The `item` and `project` values are common names that .NET recommends so that users can easily filter the type of template they're searching for.
 
-The `sourceName` item is what is replaced when the user uses the template. The value of `sourceName` in the config file, is searched for in any file name and file content. In this case test will replace `consoleasync` in the name of the .csproj file. By default, this value uses the name of the current folder. When the `-n` or `--name` parameter is passed with the `dotnet new` command, the value provided is used instead of the current folder.
+The `sourceName` item is what is replaced when the user uses the template. The value of `sourceName` in the config file is searched for in every file name and file content, and by default, is replaced with the name of the current folder. When the `-n` or `--name` parameter is passed with the `dotnet new` command, the value provided is used instead of the current folder. In the case of this template, `consoleasync` is replaced in the name of the _.csproj_ file.
 
 The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the \*.json file with the `classifications` tags list. They're two different things unfortunately named similarly. The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template) and is described at [Reference for template.json](https://github.com/dotnet/templating/wiki/Reference-for-template.json). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
 
@@ -145,13 +127,13 @@ Templates                                         Short Name               Langu
 Example templates: async project                  consoleasync             [C#]              Common/Console
 ```
 
-### Test the project template
+## Test the project template
 
 Now that you have a project template installed, test it.
 
-1. Navigate to the _test_ folder
+01. Navigate to the _test_ folder.
 
-1. Create a new console application with the following command, which generates a working project you can easily test with the `dotnet run` command.
+01. Create a new console application with the following command, which generates a working project you can easily test with the `dotnet run` command.
 
     ```dotnetcli
     dotnet new consoleasync -n MyProject
@@ -163,7 +145,7 @@ Now that you have a project template installed, test it.
     The template "Example templates: async project" was created successfully.
     ```
 
-1. Run the project using the following command.
+01. Run the project using the following command.
 
     ```dotnetcli
     dotnet run
@@ -177,7 +159,7 @@ Now that you have a project template installed, test it.
 
 Congratulations! You created and deployed a project template with .NET. In preparation for the next part of this tutorial series, you must uninstall the template you created. Make sure to delete all files from the _test_ folder too. This gets you back to a clean state ready for the next major section of this tutorial.
 
-### Uninstall the template
+## Uninstall the template
 
 In your terminal, navigate to the  _consoleasync_ folder and run the following command to uninstall the template located in the current folder:
 

@@ -209,7 +209,7 @@ The ability to create a project for an earlier TFM depends on having that versio
   | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
-  
+
 The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only the .NET 6 SDK installed, then the only value available for `--framework` is `net6.0`. If you install the .NET 5 SDK, the value `net5.0` becomes available for `--framework`. If you install the .NET Core 3.1 SDK, `netcoreapp3.1` becomes available, and so on. So by specifying `--framework netcoreapp3.1` you can target .NET Core 3.1 even while running `dotnet new` in the .NET 6 SDK.
 
 - **`-p|--enable-pack`**
@@ -706,7 +706,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 ## `webapiaot`
 
-Creates a web API project with AOT publish enabled. For more information, see [Native AOT deployment](/dotnet/core/deploying/native-aot) and [The Web API (native AOT) template](/aspnet/core/fundamentals/native-aot#the-web-api-native-aot-template).
+Creates a web API project with AOT publish enabled. For more information, see [Native AOT deployment](/dotnet/core/deploying/native-aot) and [The Web API (Native AOT) template](/aspnet/core/fundamentals/native-aot#the-web-api-native-aot-template).
 
 - **`--exclude-launch-settings`**
 
@@ -766,7 +766,7 @@ Creates a web API project with AOT publish enabled. For more information, see [N
 - **`--controllers`**, **`--use-controllers`**
 
   Whether to use controllers instead of minimal APIs. If both this option and `-minimal` are specified, this option overrides the value specified by `-minimal`. Default is `false`.
-  
+
 - **`--domain <DOMAIN>`**
 
   The domain for the directory tenant. Use with `IndividualB2C` or `SingleOrg` authentication. The default value is `qualified.domain.name`.

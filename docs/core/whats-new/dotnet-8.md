@@ -105,7 +105,7 @@ For more information about JSON serialization in general, see [JSON serializatio
 
 #### Source generator
 
-.NET 8 includes performance and reliability enhancements of the System.Text.Json [source generator](../../standard/serialization/system-text-json/source-generation.md) that are aimed at making the [native AOT](../../standard/glossary.md#native-aot) experience on par with the [reflection-based serializer](../../standard/serialization/system-text-json/source-generation-modes.md#overview). For example:
+.NET 8 includes performance and reliability enhancements of the System.Text.Json [source generator](../../standard/serialization/system-text-json/source-generation.md) that are aimed at making the [Native AOT](../../standard/glossary.md#native-aot) experience on par with the [reflection-based serializer](../../standard/serialization/system-text-json/source-generation-modes.md#overview). For example:
 
 - The [source generator](../../standard/serialization/system-text-json/source-generation.md) now supports serializing types with [`required`](../../standard/serialization/system-text-json/required-properties.md) and [`init`](../../csharp/language-reference/keywords/init.md) properties. These were both already supported in reflection-based serialization.
 - Improved formatting of source-generated code.
@@ -113,7 +113,7 @@ For more information about JSON serialization in general, see [JSON serializatio
 - Additional diagnostics (such as `SYSLIB1034` and `SYSLIB1039`).
 - Don't include types of ignored or inaccessible properties.
 - Support for nesting `JsonSerializerContext` declarations within arbitrary type kinds.
-- New converter type `JsonStringEnumConverter<TEnum>`. The existing <xref:System.Text.Json.Serialization.JsonStringEnumConverter> class isn't supported in native AOT. You can annotate your enum types as follows:
+- New converter type `JsonStringEnumConverter<TEnum>`. The existing <xref:System.Text.Json.Serialization.JsonStringEnumConverter> class isn't supported in Native AOT. You can annotate your enum types as follows:
 
   ```csharp
   [JsonConverter(typeof(JsonStringEnumConverter<MyEnum>))]
@@ -231,7 +231,7 @@ Now, the input values are used to populate the read-only properties during deser
 
 #### Disable reflection-based default
 
-You can now disable using the reflection-based serializer by default. This disablement is useful to avoid accidental rooting of reflection components that aren't even in use, especially in trimmed and native AOT apps. To disable default reflection-based serialization by requiring that a <xref:System.Text.Json.JsonSerializerOptions> argument be passed to the <xref:System.Text.Json.JsonSerializer> serialization and deserialization methods, set the `JsonSerializer.IsReflectionEnabledByDefault` property to `false` in your project file. (If the property is set to `false` and you don't pass a configured <xref:System.Text.Json.JsonSerializerOptions> argument, the `Serialize` and `Deserialize` methods throw a <xref:System.NotSupportedException> at run time.)
+You can now disable using the reflection-based serializer by default. This disablement is useful to avoid accidental rooting of reflection components that aren't even in use, especially in trimmed and Native AOT apps. To disable default reflection-based serialization by requiring that a <xref:System.Text.Json.JsonSerializerOptions> argument be passed to the <xref:System.Text.Json.JsonSerializer> serialization and deserialization methods, set the `JsonSerializer.IsReflectionEnabledByDefault` property to `false` in your project file. (If the property is set to `false` and you don't pass a configured <xref:System.Text.Json.JsonSerializerOptions> argument, the `Serialize` and `Deserialize` methods throw a <xref:System.NotSupportedException> at run time.)
 
 Use the new <xref:System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault> property to check the value of the feature switch. If you're a library author building on top of <xref:System.Text.Json?displayProperty=fullName>, you can rely on the property to configure your defaults without accidentally rooting reflection components.
 
@@ -944,10 +944,10 @@ Required modifier for first parameter: System.Runtime.InteropServices.InAttribut
 
 ## Native AOT support
 
-The option to [publish as native AOT](../deploying/native-aot/index.md) was first introduced in .NET 7. Publishing an app with native AOT creates a fully self-contained version of your app that doesn't need a runtime&mdash;everything is included in a single file. .NET 8 brings the following improvements to native AOT publishing:
+The option to [publish as Native AOT](../deploying/native-aot/index.md) was first introduced in .NET 7. Publishing an app with Native AOT creates a fully self-contained version of your app that doesn't need a runtime&mdash;everything is included in a single file. .NET 8 brings the following improvements to Native AOT publishing:
 
 - Adds support for the x64 and Arm64 architectures on *macOS*.
-- Reduces the sizes of native AOT apps on Linux by up to 50%. The following table shows the size of a "Hello World" app published with native AOT that includes the entire .NET runtime on .NET 7 vs. .NET 8:
+- Reduces the sizes of Native AOT apps on Linux by up to 50%. The following table shows the size of a "Hello World" app published with Native AOT that includes the entire .NET runtime on .NET 7 vs. .NET 8:
 
   | Operating system                        | .NET 7  | .NET 8  |
   |-----------------------------------------|---------|---------|
@@ -960,13 +960,13 @@ The option to [publish as native AOT](../deploying/native-aot/index.md) was firs
 
 The default console app template now includes support for AOT out-of-the-box. To create a project that's configured for AOT compilation, just run `dotnet new console --aot`. The project configuration added by `--aot` has three effects:
 
-- Generates a native self-contained executable with native AOT when you publish the project, for example, with `dotnet publish` or Visual Studio.
+- Generates a native self-contained executable with Native AOT when you publish the project, for example, with `dotnet publish` or Visual Studio.
 - Enables compatibility analyzers for trimming, AOT, and single file. These analyzers alert you to potentially problematic parts of your project (if there are any).
 - Enables debug-time emulation of AOT so that when you debug your project without AOT compilation, you get a similar experience to AOT. For example, if you use <xref:System.Reflection.Emit?displayProperty=nameWithType> in a NuGet package that wasn't annotated for AOT (and therefore was missed by the compatibility analyzer), the emulation means you won't have any surprises when you try to publish the project with AOT.
 
-### Target iOS-like platforms with native AOT
+### Target iOS-like platforms with Native AOT
 
-.NET 8 starts the work to enable native AOT support for iOS-like platforms. You can now build and run .NET iOS and .NET MAUI applications with native AOT on the following platforms:
+.NET 8 starts the work to enable Native AOT support for iOS-like platforms. You can now build and run .NET iOS and .NET MAUI applications with Native AOT on the following platforms:
 
 - `ios`
 - `iossimulator`
@@ -974,9 +974,9 @@ The default console app template now includes support for AOT out-of-the-box. To
 - `tvos`
 - `tvossimulator`
 
-Preliminary testing shows that app size on disk decreases by about 40% for .NET iOS apps that use native AOT instead of Mono. App size on disk for .NET MAUI iOS apps *increases* by about 25%. However, since the .NET 8 support is only the first step for the feature as a whole, we urge you not to draw conclusions about performance at this point.
+Preliminary testing shows that app size on disk decreases by about 40% for .NET iOS apps that use Native AOT instead of Mono. App size on disk for .NET MAUI iOS apps *increases* by about 25%. However, since the .NET 8 support is only the first step for the feature as a whole, we urge you not to draw conclusions about performance at this point.
 
-Native AOT support is available as an opt-in feature intended for app deployment; Mono is still the default runtime for app development and deployment. To build and run a .NET MAUI application with native AOT on an iOS device, use `dotnet workload install maui` to install the .NET MAUI workload and `dotnet new maui -n HelloMaui` to create the app. Then, set the MSBuild properties `PublishAot` and `PublishAotUsingRuntimePack` to `true` in the project file.
+Native AOT support is available as an opt-in feature intended for app deployment; Mono is still the default runtime for app development and deployment. To build and run a .NET MAUI application with Native AOT on an iOS device, use `dotnet workload install maui` to install the .NET MAUI workload and `dotnet new maui -n HelloMaui` to create the app. Then, set the MSBuild properties `PublishAot` and `PublishAotUsingRuntimePack` to `true` in the project file.
 
 ```xml
 <PropertyGroup>
@@ -985,7 +985,7 @@ Native AOT support is available as an opt-in feature intended for app deployment
 </PropertyGroup>
 ```
 
-When you set these properties and run `dotnet publish` as shown in the following example, the app will be deployed by using native AOT.
+When you set these properties and run `dotnet publish` as shown in the following example, the app will be deployed by using Native AOT.
 
 ```dotnetcli
 dotnet publish -f net8.0-ios -c Release -r ios-arm64  /t:Run
@@ -993,10 +993,10 @@ dotnet publish -f net8.0-ios -c Release -r ios-arm64  /t:Run
 
 #### Limitations
 
-Not all iOS features are compatible with native AOT. Similarly, not all libraries commonly used in iOS are compatible with NativeAOT. And in addition to the existing [limitations of native AOT deployment](../deploying/native-aot/index.md#limitations-of-native-aot-deployment), the following list shows some of the other limitations when targeting iOS-like platforms:
+Not all iOS features are compatible with Native AOT. Similarly, not all libraries commonly used in iOS are compatible with NativeAOT. And in addition to the existing [limitations of Native AOT deployment](../deploying/native-aot/index.md#limitations-of-native-aot-deployment), the following list shows some of the other limitations when targeting iOS-like platforms:
 
 - Installation and app deployment using Visual Studio is untested.
-- Using native AOT is only enabled during app deployment (`dotnet publish`).
+- Using Native AOT is only enabled during app deployment (`dotnet publish`).
 - <xref:System.Linq.Expressions> library functionality isn't fully supported.
 - Managed code debugging is only supported with Mono.
 

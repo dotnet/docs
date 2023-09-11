@@ -8,7 +8,7 @@ body:
   - type: textarea
     id: details
     validations:
-      required: false
+      required: true
     attributes:
       label: Details
       description: >-

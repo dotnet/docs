@@ -1,18 +1,18 @@
 ---
 title: Debug a memory leak tutorial
-description: Learn how to debug a memory leak in .NET Core.
+description: Learn how to debug a memory leak in .NET.
 ms.topic: tutorial
 ms.date: 09/11/2023
 recommendations: false
 ---
 
-# Debug a memory leak in .NET Core
+# Debug a memory leak in .NET
 
 **This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
-A memory leak might happen when your app references objects that it no longer needs to perform the desired task. Referencing these objects prevents the garbage collector from reclaiming the memory used. That can result in performance degradation and an <xref:System.OutOfMemoryException> exception being thrown.
+Memory can leak when your app references objects that it no longer needs to perform the desired task. Referencing these objects prevents the garbage collector from reclaiming the memory used. That can result in performance degradation and an <xref:System.OutOfMemoryException> exception being thrown.
 
-This tutorial demonstrates the tools to analyze a memory leak in a .NET Core app using the .NET diagnostics CLI tools. If you're on Windows, you may be able to [use Visual Studio's Memory Diagnostic tools](/visualstudio/profiling/memory-usage) to debug the memory leak.
+This tutorial demonstrates the tools to analyze a memory leak in a .NET app using the .NET diagnostics CLI tools. If you're on Windows, you may be able to [use Visual Studio's Memory Diagnostic tools](/visualstudio/profiling/memory-usage) to debug the memory leak.
 
 This tutorial uses a sample app that intentionally leaks memory, as an exercise. You can also analyze apps that unintentionally leak memory.
 
@@ -111,7 +111,7 @@ By watching the memory usage, you can safely say that memory is growing or leaki
 
 ### Generate memory dump
 
-When analyzing possible memory leaks, you need access to the app's memory heap to analyze the memory contents. Looking at relationships between objects, you create theories as to why memory isn't being freed. A common diagnostic data source is a memory dump on Windows or the equivalent core dump on Linux. To generate a dump of a .NET Core application, you can use the [dotnet-dump](dotnet-dump.md) tool.
+When analyzing possible memory leaks, you need access to the app's memory heap to analyze the memory contents. Looking at relationships between objects, you create theories as to why memory isn't being freed. A common diagnostic data source is a memory dump on Windows or the equivalent core dump on Linux. To generate a dump of a .NET application, you can use the [dotnet-dump](dotnet-dump.md) tool.
 
 Using the [sample debug target](/samples/dotnet/samples/diagnostic-scenarios/) previously started, run the following command to generate a Linux core dump:
 

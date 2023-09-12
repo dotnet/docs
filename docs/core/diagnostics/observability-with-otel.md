@@ -266,9 +266,9 @@ Modify the Prometheus YAML configuration file to specify the port for your HTTP 
     # metrics_path defaults to '/metrics'
     # scheme defaults to 'http'.
 
+    scrape_interval: 1s # poll very quickly for a more responsive demo
     static_configs:
       - targets: ["localhost:5212"]
-      - scrape_interval: 1s # poll very quickly for a more responsive demo
 ```
 
 Start Prometheus, and look in the output for the port it's running on, typically 9090:

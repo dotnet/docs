@@ -19,9 +19,7 @@ body:
         - "17.8p1"
         - "17.8p2"
         - "17.8p3"
-        - Other (please put exact version in description textbox)
-    validations:
-      required: true
+        - "Other (please put exact version in description textbox)"
   - type: input
     id: Speclet
     attributes:

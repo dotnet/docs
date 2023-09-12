@@ -154,8 +154,6 @@ For ASP.NET Core applications, the `TestServer` class makes functional tests fai
 
 You can create simple functional tests by creating a test class that implements `IClassFixture<WebApplicationFactory<TEntryPoint>>`, where `TEntryPoint` is your web application's `Startup` class. With this interface in place, your test fixture can create a client using the factory's `CreateClient` method:
 
-With this interface in place, your test fixture can create a client using the factory's `CreateClient` method:
-
 ```csharp
 public class BasicWebTests : IClassFixture<WebApplicationFactory<Program>>
 {

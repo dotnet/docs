@@ -173,7 +173,7 @@ Here you can see that most objects are either `String` or `Customer` objects.
 You can use the `dumpheap` command again with the method table (MT) to get a list of all the `String` instances:
 
 ```console
-> dumpheap -mt 00007faddaa50f90
+> dumpheap -mt 00007f6c1dc00f90
 
          Address               MT     Size
 ...

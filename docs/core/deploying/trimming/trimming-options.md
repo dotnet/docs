@@ -10,7 +10,7 @@ zone_pivot_groups: dotnet-version
 
 # Trimming options
 
-The following MSBuild properties and items influence the behavior of [trimmed self-contained deployments](trim-self-contained.md). Some of the options mention `ILLink`, which is the name of the underlying tool that implements trimming. For more information about the underlying tool, see the [Trimmer documentation](https://github.com/dotnet/linker/tree/main/docs).
+The following MSBuild properties and items influence the behavior of [trimmed self-contained deployments](trim-self-contained.md). Some of the options mention `ILLink`, which is the name of the underlying tool that implements trimming. For more information about the underlying tool, see the [Trimmer documentation](https://github.com/dotnet/runtime/tree/main/docs/tools/illink).
 
 Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other options are available only in .NET 5 and later versions.
 
@@ -142,7 +142,7 @@ If an assembly is not trimmed it is considered "rooted", which means that it and
 
 ## Root descriptors
 
-Another way to specify roots for analysis is using an XML file that uses the trimmer [descriptor format](https://github.com/dotnet/linker/blob/main/docs/data-formats.md#descriptor-format). This lets you root specific members instead of a whole assembly.
+Another way to specify roots for analysis is using an XML file that uses the trimmer [descriptor format](https://github.com/dotnet/runtime/blob/main/docs/tools/illink/data-formats.md#descriptor-format). This lets you root specific members instead of a whole assembly.
 
 ```xml
 <ItemGroup>
@@ -180,7 +180,7 @@ Setting `PublishTrimmed` in .NET 6+ also enables a Roslyn analyzer that shows a 
 
 ## Suppress warnings
 
-You can suppress individual [warning codes](https://github.com/dotnet/linker/blob/main/docs/error-codes.md#warning-codes) using the usual MSBuild properties respected by the toolchain, including `NoWarn`, `WarningsAsErrors`, `WarningsNotAsErrors`, and `TreatWarningsAsErrors`. There is an additional option that controls the ILLink warn-as-error behavior independently:
+You can suppress individual [warning codes](https://github.com/dotnet/runtime/blob/main/docs/tools/illink/error-codes.md#warning-codes) using the usual MSBuild properties respected by the toolchain, including `NoWarn`, `WarningsAsErrors`, `WarningsNotAsErrors`, and `TreatWarningsAsErrors`. There is an additional option that controls the ILLink warn-as-error behavior independently:
 
 - `<ILLinkTreatWarningsAsErrors>false</ILLinkTreatWarningsAsErrors>`
 

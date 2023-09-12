@@ -35,7 +35,7 @@ Feel free to review the code, but it's important to understand that there's noth
 From a command shell, download the code, build the project, and run it as follows.
 
 > [!Note]
-> Linux/macOS users should make appropriate changes for paths, e.g., using forward slash (`/`) rather than back slash (`\`).*
+> Linux and macOS users should make appropriate changes for paths, for example, using forward slash (`/`) rather than back slash (`\`).*
 
 1. Clone the code to a folder on your local machine.
 

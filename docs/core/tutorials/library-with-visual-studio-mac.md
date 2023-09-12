@@ -6,6 +6,8 @@ recommendations: false
 ---
 # Tutorial: Create a .NET class library using Visual Studio for Mac
 
+[!INCLUDE [](~/includes/vs-mac-eol.md)]
+
 In this tutorial, you create a class library that contains a single string-handling method.
 
 A *class library* defines types and methods that are called by an application. If the library targets .NET Standard 2.0, it can be called by any .NET implementation (including .NET Framework) that supports .NET Standard 2.0. If the library targets .NET 5, it can be called by any application that targets .NET 5. This tutorial shows how to target .NET 5.

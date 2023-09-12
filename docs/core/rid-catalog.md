@@ -67,6 +67,8 @@ The following example shows a slightly bigger RID graph also defined in the *run
                 any
 ```
 
+Alternatively, you can use the [RidGraph](https://github.com/0xced/RidGraph) tool to easily visualize the RID graph (or any subset of the graph).
+
 All RIDs eventually map back to the root `any` RID.
 
 There are some considerations about RIDs that you have to keep in mind when working with them:

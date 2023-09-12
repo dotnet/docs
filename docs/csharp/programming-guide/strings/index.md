@@ -2,7 +2,7 @@
 title: "Strings - C# Programming Guide"
 description: Learn about strings in C# programming. See information on declaring and initializing strings, the immutability of string objects, and string escape sequences.
 ms.date: 04/15/2022
-helpviewer_keywords: 
+helpviewer_keywords:
   - "C# language, strings"
   - "strings [C#]"
 ms.assetid: 21580405-cb25-4541-89d5-037846a38b07
@@ -96,7 +96,7 @@ Escape sequence|Character name|Unicode encoding|
 |\x|Unicode escape sequence similar to "\u" except with variable length|`\xH[H][H][H]` (range: 0 - FFFF; example: `\x00E7` or `\x0E7` or `\xE7` = "ç")|
 
 > [!WARNING]
-> When using the `\x` escape sequence and specifying less than 4 hex digits, if the characters that immediately follow the escape sequence are valid hex digits (i.e. 0-9, A-F, and a-f), they will be interpreted as being part of the escape sequence. For example, `\xA1` produces "&#161;", which is code point U+00A1. However, if the next character is "A" or "a", then the escape sequence will instead be interpreted as being `\xA1A` and produce "&#x0A1A;", which is code point U+0A1A. In such cases, specifying all 4 hex digits (e.g. `\x00A1` ) will prevent any possible misinterpretation.
+> When using the `\x` escape sequence and specifying less than 4 hex digits, if the characters that immediately follow the escape sequence are valid hex digits (i.e. 0-9, A-F, and a-f), they will be interpreted as being part of the escape sequence. For example, `\xA1` produces "&#161;", which is code point U+00A1. However, if the next character is "A" or "a", then the escape sequence will instead be interpreted as being `\xA1A` and produce "&#x0A1A;", which is code point U+0A1A. In such cases, specifying all 4 hex digits (for example, `\x00A1`) prevents any possible misinterpretation.
 
 > [!NOTE]
 > At compile time, verbatim and raw strings are converted to ordinary strings with all the same escape sequences. Therefore, if you view a verbatim or raw string in the debugger watch window, you will see the escape characters that were added by the compiler, not the verbatim or raw version from your source code. For example, the verbatim string `@"C:\files.txt"` will appear in the watch window as "C:\\\files.txt".

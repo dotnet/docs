@@ -87,7 +87,7 @@ for code in a second, independent assembly, the name should be based on the asse
 and an underscore ('_') as the separator between multiple words in the same element. Not all metric tools preserve the Meter name as part of the final metric name, so it's beneficial
 to make the instrument name globally unique on its own.
 
-  Example instruments names:
+  Example instrument names:
 
   - `contoso.ticket_queue.duration`
   - `contoso.reserved_tickets`

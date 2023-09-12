@@ -1453,6 +1453,8 @@ if (openFolderDialog.ShowDialog())
 }
 ```
 
+For more information, see [WPF File Dialog Improvements in .NET 8 (.NET blog)](https://devblogs.microsoft.com/dotnet/wpf-file-dialog-improvements-in-dotnet-8/).
+
 ## NuGet
 
 Starting in .NET 8, NuGet verifies signed packages on Linux by default. NuGet continues to verify signed packages on Windows as well.

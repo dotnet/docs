@@ -331,8 +331,8 @@ var options = new JsonSerializerOptions
 
 You can now create <xref:System.Net.Http.Json.JsonContent> instances using trim-safe or source-generated contracts. The new methods are:
 
-- <xref:System.Net.Http.Json.JsonContent.Create(%60%600,System.Text.Json.Serialization.Metadata.JsonTypeInfo%601,System.Net.Http.Headers.MediaTypeHeaderValue@)?displayProperty=nameWithType>
-- <xref:System.Net.Http.Json.JsonContent.Create(System.Object@,System.Text.Json.Serialization.Metadata.JsonTypeInfo,System.Net.Http.Headers.MediaTypeHeaderValue@)?displayProperty=nameWithType>
+- <xref:System.Net.Http.Json.JsonContent.Create(System.Object,System.Text.Json.Serialization.Metadata.JsonTypeInfo,System.Net.Http.Headers.MediaTypeHeaderValue)?displayProperty=nameWithType>
+- <xref:System.Net.Http.Json.JsonContent.Create%60%601(%60%600,System.Text.Json.Serialization.Metadata.JsonTypeInfo{%60%600},System.Net.Http.Headers.MediaTypeHeaderValue)?displayProperty=nameWithType>
 
 ```csharp
 var book = new Book(id: 42, "Title", "Author", publishedYear: 2023);

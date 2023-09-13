@@ -496,7 +496,7 @@ Press p to pause, r to resume, q to quit.
 
 ### Best practices
 
-- Although the API allows any object to be used as the tag value, numeric types, and strings are anticipated by collection tools. Other types may or may not be
+- Although the API allows any object to be used as the tag value, numeric types and strings are anticipated by collection tools. Other types may or may not be
   supported by a given collection tool.
 
 - We recommend tag names follow the [OpenTelemetry naming guidelines](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/general/metrics.md#general-guidelines),

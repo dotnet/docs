@@ -37,7 +37,7 @@ The memory occupied by an object is automatically reclaimed when the object is n
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="CreatePoints":::
 
-Applications or tests for algorithms might need to create multiple `Point` objects. The following class generates a sequence of random points. The number of points is set by the *primary constructor* parameter. The primary constructor parameter `numPoints` is in scope for all members of the class:
+Applications or tests for algorithms might need to create multiple `Point` objects. The following class generates a sequence of random points. The number of points is set by the *primary constructor* parameter. The primary constructor parameter `numberOfPoints` is in scope for all members of the class:
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="PointFactoryClass":::
 

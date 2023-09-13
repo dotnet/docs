@@ -661,9 +661,9 @@ using Microsoft.Extensions.Options;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton<BigCacheConsumer>();
-builder.Services.Addsingleton<SmallCacheConsumer>();
+builder.Services.AddSingleton<SmallCacheConsumer>();
 
-builder.Services.AddKeyedsingleton<IMemoryCache, BigCache>("big");
+builder.Services.AddKeyedSingleton<IMemoryCache, BigCache>("big");
 builder.Services.AddKeyedSingleton<IMemoryCache, SmallCache>("small");
 
 var app = builder.Build();

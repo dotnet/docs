@@ -150,6 +150,8 @@ items:
       items:
       - name: BinaryFormatter disabled for most projects
         href: serialization/8.0/binaryformatter-disabled.md
+      - name: Reflection-based deserializer resolves metadata eagerly
+        href: serialization/8.0/metadata-resolving.md
     - name: Windows Forms
       items:
       - name: Anchor layout changes
@@ -1596,6 +1598,8 @@ items:
       items:
       - name: BinaryFormatter disabled for most projects
         href: serialization/8.0/binaryformatter-disabled.md
+      - name: Reflection-based deserializer resolves metadata eagerly
+        href: serialization/8.0/metadata-resolving.md
     - name: .NET 7
       items:
       - name: BinaryFormatter serialization APIs produce compiler errors

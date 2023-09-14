@@ -2,7 +2,7 @@
 title: What's new in .NET 8
 description: Learn about the new .NET features introduced in .NET 8.
 titleSuffix: ""
-ms.date: 08/08/2023
+ms.date: 09/12/2023
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
@@ -11,7 +11,7 @@ author: gewarren
 
 .NET 8 is the successor to [.NET 7](dotnet-7.md). It will be [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 8 here](https://dotnet.microsoft.com/download/dotnet).
 
-This article has been updated for .NET 8 Preview 7.
+This article has been updated for .NET 8 release candidate (RC) 1.
 
 > [!IMPORTANT]
 >
@@ -36,83 +36,54 @@ This section contains the following subtopics:
 
 ### Serialization
 
-Many improvements have been made to <xref:System.Text.Json?displayProperty=fullName> serialization and deserialization functionality including:
+Many improvements have been made to <xref:System.Text.Json?displayProperty=fullName> serialization and deserialization functionality in .NET 8. For example, you can [customize handling of members that aren't in the JSON payload.](../../standard/serialization/system-text-json/missing-members.md).
 
-- The serializer has built-in support for the following additional types.
+The following sections describe other serialization improvements:
 
-  - <xref:System.Half>, <xref:System.Int128>, and <xref:System.UInt128> numeric types.
-
-    ```csharp
-    Console.WriteLine(JsonSerializer.Serialize(new object[] { Half.MaxValue, Int128.MaxValue, UInt128.MaxValue }));
-    // [65500,170141183460469231731687303715884105727,340282366920938463463374607431768211455]
-    ```
-
-  - <xref:System.Memory%601> and <xref:System.ReadOnlyMemory%601> values. `byte` values are serialized to Base64 strings, and other types to JSON arrays.
-
-    ```csharp
-    JsonSerializer.Serialize<ReadOnlyMemory<byte>>(new byte[] { 1, 2, 3 }); // "AQID"
-    JsonSerializer.Serialize<Memory<int>>(new int[] { 1, 2, 3 }); // [1,2,3]
-    ```
-
-- You can opt non-public members into the serialization contract for a given type using <xref:System.Text.Json.Serialization.JsonIncludeAttribute> and <xref:System.Text.Json.Serialization.JsonConstructorAttribute> attribute annotations.
-
-  ```csharp
-  string json = JsonSerializer.Serialize(new MyPoco(42)); // {"X":42}
-  JsonSerializer.Deserialize<MyPoco>(json);
-
-  public class MyPoco
-  {
-      [JsonConstructor]
-      internal MyPoco(int x) => X = x;
-
-      [JsonInclude]
-      internal int X { get; }
-  }
-  ```
-
-  For more information, see [Use immutable types and non-public members and accessors](../../standard/serialization/system-text-json/immutability.md).
-
-- You can [customize handling of members that aren't in the JSON payload.](../../standard/serialization/system-text-json/missing-members.md)
-- <xref:System.Text.Json.JsonSerializerOptions.MakeReadOnly?displayProperty=nameWithType> gives you explicit control over when a `JsonSerializerOptions` instance is frozen. (You can also check it with the <xref:System.Text.Json.JsonSerializerOptions.IsReadOnly> property.)
-- <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=nameWithType> is now obsolete. It's been superseded by the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> and <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> properties. For more information, see [Chain source generators](#chain-source-generators).
-- The new <xref:System.Text.Json.JsonSerializerOptions.TryGetTypeInfo(System.Type,System.Text.Json.Serialization.Metadata.JsonTypeInfo@)> method, a variation of the existing <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo(System.Type)> method, returns `false` if no metadata for the specified type was found.
-- The new <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfoResolver.WithAddedModifier(System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver,System.Action{System.Text.Json.Serialization.Metadata.JsonTypeInfo})> extension method lets you easily introduce modifications to the serialization contracts of arbitrary `IJsonTypeInfoResolver` instances.
-
-  ```csharp
-  var options = new JsonSerializerOptions
-  {
-      TypeInfoResolver = MyContext.Default
-          .WithAddedModifier(static typeInfo =>
-          {
-              foreach (JsonPropertyInfo prop in typeInfo.Properties)
-                  prop.Name = prop.Name.ToUpperInvariant();
-          })
-  };
-  ```
-
-- Support for compiler-generated or *unspeakable* types in weakly typed source generation scenarios. Since compiler-generated types can't be explicitly specified by the source generator, <xref:System.Text.Json?displayProperty=fullName> now performs nearest-ancestor resolution at run time. This resolution determines the most appropriate supertype with which to serialize the value.
-
-The following sections go into more depth about other serialization improvements:
-
+- [Built-in support for additional types](#built-in-support-for-additional-types)
 - [Source generator](#source-generator)
 - [Interface hierarchies](#interface-hierarchies)
 - [Naming policies](#naming-policies)
 - [Read-only properties](#read-only-properties)
 - [Disable reflection-based default](#disable-reflection-based-default)
 - [New JsonNode API methods](#new-jsonnode-api-methods)
+- [Non-public members](#non-public-members)
+- [Streaming deserialization APIs](#streaming-deserialization-apis)
+- [WithAddedModifier extension method](#withaddedmodifier-extension-method)
+- [New JsonContent.Create overloads](#new-jsoncontentcreate-overloads)
+- [Freeze a JsonSerializerOptions instance](#freeze-a-jsonserializeroptions-instance)
 
 For more information about JSON serialization in general, see [JSON serialization and deserialization in .NET](../../standard/serialization/system-text-json/overview.md).
 
+#### Built-in support for additional types
+
+The serializer has built-in support for the following additional types.
+
+- <xref:System.Half>, <xref:System.Int128>, and <xref:System.UInt128> numeric types.
+
+  ```csharp
+  Console.WriteLine(JsonSerializer.Serialize(new object[] { Half.MaxValue, Int128.MaxValue, UInt128.MaxValue }));
+  // [65500,170141183460469231731687303715884105727,340282366920938463463374607431768211455]
+  ```
+
+- <xref:System.Memory%601> and <xref:System.ReadOnlyMemory%601> values. `byte` values are serialized to Base64 strings, and other types to JSON arrays.
+
+  ```csharp
+  JsonSerializer.Serialize<ReadOnlyMemory<byte>>(new byte[] { 1, 2, 3 }); // "AQID"
+  JsonSerializer.Serialize<Memory<int>>(new int[] { 1, 2, 3 }); // [1,2,3]
+  ```
+
 #### Source generator
 
-.NET 8 includes performance and reliability enhancements of the System.Text.Json [source generator](../../standard/serialization/system-text-json/source-generation.md) that are aimed at making the [Native AOT](../../standard/glossary.md#native-aot) experience on par with the [reflection-based serializer](../../standard/serialization/system-text-json/source-generation-modes.md#overview). For example:
+.NET 8 includes enhancements of the System.Text.Json [source generator](../../standard/serialization/system-text-json/source-generation.md) that are aimed at making the [Native AOT](../../standard/glossary.md#native-aot) experience on par with the [reflection-based serializer](../../standard/serialization/system-text-json/source-generation-modes.md#overview). For example:
 
-- The [source generator](../../standard/serialization/system-text-json/source-generation.md) now supports serializing types with [`required`](../../standard/serialization/system-text-json/required-properties.md) and [`init`](../../csharp/language-reference/keywords/init.md) properties. These were both already supported in reflection-based serialization.
+- The source generator now supports serializing types with [`required`](../../standard/serialization/system-text-json/required-properties.md) and [`init`](../../csharp/language-reference/keywords/init.md) properties. These were both already supported in reflection-based serialization.
 - Improved formatting of source-generated code.
 - <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> feature parity with <xref:System.Text.Json.JsonSerializerOptions>. This parity lets you specify serialization configuration at compile time, which ensures that the generated `MyContext.Default` property is preconfigured with all the relevant options set.
 - Additional diagnostics (such as `SYSLIB1034` and `SYSLIB1039`).
 - Don't include types of ignored or inaccessible properties.
 - Support for nesting `JsonSerializerContext` declarations within arbitrary type kinds.
+- Support for compiler-generated or *unspeakable* types in weakly typed source generation scenarios. Since compiler-generated types can't be explicitly specified by the source generator, <xref:System.Text.Json?displayProperty=fullName> now performs nearest-ancestor resolution at run time. This resolution determines the most appropriate supertype with which to serialize the value.
 - New converter type `JsonStringEnumConverter<TEnum>`. The existing <xref:System.Text.Json.Serialization.JsonStringEnumConverter> class isn't supported in Native AOT. You can annotate your enum types as follows:
 
   ```csharp
@@ -123,7 +94,7 @@ For more information about JSON serialization in general, see [JSON serializatio
   public partial class MyContext : JsonSerializerContext { }
   ```
 
-- New `JsonConverter.Type` property lets you look up the type of a non-generic `JsonConverter`` instance:
+- New `JsonConverter.Type` property lets you look up the type of a non-generic `JsonConverter` instance:
 
   ```csharp
   Dictionary<Type, JsonConverter> CreateDictionary(IEnumerable<JsonConverter> converters)
@@ -149,6 +120,8 @@ options.TypeInfoResolverChain.Count; // 3
 options.TypeInfoResolverChain.RemoveAt(0);
 options.TypeInfoResolverChain.Count; // 2
 ```
+
+In addition, <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=nameWithType> is now obsolete. It's been superseded by the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> and <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> properties.
 
 #### Interface hierarchies
 
@@ -255,11 +228,9 @@ static JsonSerializerOptions GetDefaultOptions()
 
 #### New JsonNode API methods
 
-The `JsonNode` APIs include the following new methods.
+The <xref:System.Text.Json.Nodes.JsonNode> and <xref:System.Text.Json.Nodes.JsonArray?displayProperty=fullName> types include the following new methods.
 
 ```csharp
-namespace System.Text.Json.Nodes;
-
 public partial class JsonNode
 {
     // Creates a deep clone of the current node and all its descendants.
@@ -284,6 +255,14 @@ public partial class JsonNode
     // Replaces this instance with a new value,
     // updating the parent object/array accordingly.
     public void ReplaceWith<T>(T value);
+
+    // Asynchronously parses a stream as UTF-8 encoded data
+    // representing a single JSON value into a JsonNode.
+    public static Task<JsonNode?> ParseAsync(
+        Stream utf8Json,
+        JsonNodeOptions? nodeOptions = null,
+        JsonDocumentOptions documentOptions = default,
+        CancellationToken cancellationToken = default);
 }
 
 public partial class JsonArray
@@ -292,6 +271,93 @@ public partial class JsonArray
     public IEnumerable<T> GetValues<T>();
 }
 ```
+
+#### Non-public members
+
+You can opt non-public members into the serialization contract for a given type using <xref:System.Text.Json.Serialization.JsonIncludeAttribute> and <xref:System.Text.Json.Serialization.JsonConstructorAttribute> attribute annotations.
+
+```csharp
+string json = JsonSerializer.Serialize(new MyPoco(42)); // {"X":42}
+JsonSerializer.Deserialize<MyPoco>(json);
+
+public class MyPoco
+{
+    [JsonConstructor]
+    internal MyPoco(int x) => X = x;
+
+    [JsonInclude]
+    internal int X { get; }
+}
+```
+
+For more information, see [Use immutable types and non-public members and accessors](../../standard/serialization/system-text-json/immutability.md).
+
+#### Streaming deserialization APIs
+
+.NET 8 includes new <xref:System.Collections.Generic.IAsyncEnumerable%601> streaming deserialization extension methods, for example <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsAsyncEnumerable%2A>. Similar methods have existed that return <xref:System.Threading.Tasks.Task%601>, for example, <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType>. The new extension methods invoke streaming APIs and return <xref:System.Collections.Generic.IAsyncEnumerable%601>.
+
+The following code shows how you might use the new extension methods.
+
+```csharp
+const string RequestUri = "https://api.contoso.com/books";
+using var client = new HttpClient();
+IAsyncEnumerable<Book> books = await client.GetFromJsonAsAsyncEnumerable<Book>(RequestUri);
+
+await foreach (Book book in books)
+{
+    Console.WriteLine($"Read book '{book.title}'");
+}
+
+public record Book(int id, string title, string author, int publishedYear);
+```
+
+#### WithAddedModifier extension method
+
+The new <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfoResolver.WithAddedModifier(System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver,System.Action{System.Text.Json.Serialization.Metadata.JsonTypeInfo})> extension method lets you easily introduce modifications to the serialization contracts of arbitrary `IJsonTypeInfoResolver` instances.
+
+```csharp
+var options = new JsonSerializerOptions
+{
+    TypeInfoResolver = MyContext.Default
+        .WithAddedModifier(static typeInfo =>
+        {
+            foreach (JsonPropertyInfo prop in typeInfo.Properties)
+                prop.Name = prop.Name.ToUpperInvariant();
+        })
+};
+```
+
+#### New JsonContent.Create overloads
+
+You can now create <xref:System.Net.Http.Json.JsonContent> instances using trim-safe or source-generated contracts. The new methods are:
+
+- <xref:System.Net.Http.Json.JsonContent.Create(System.Object,System.Text.Json.Serialization.Metadata.JsonTypeInfo,System.Net.Http.Headers.MediaTypeHeaderValue)?displayProperty=nameWithType>
+- <xref:System.Net.Http.Json.JsonContent.Create%60%601(%60%600,System.Text.Json.Serialization.Metadata.JsonTypeInfo{%60%600},System.Net.Http.Headers.MediaTypeHeaderValue)?displayProperty=nameWithType>
+
+```csharp
+var book = new Book(id: 42, "Title", "Author", publishedYear: 2023);
+HttpContent content = JsonContent.Create(book, MyContext.Default.Book);
+
+public record Book(int id, string title, string author, int publishedYear);
+
+[JsonSerializable(typeof(Book))]
+public partial class MyContext : JsonSerializerContext
+{ }
+```
+
+#### Freeze a JsonSerializerOptions instance
+
+The following new methods let you control when a <xref:System.Text.Json.JsonSerializerOptions> instance is frozen:
+
+- <xref:System.Text.Json.JsonSerializerOptions.MakeReadOnly?displayProperty=nameWithType>
+
+  This overload is designed to be trim-safe and will therefore throw an exception in cases where the options instance hasn't been configured with a resolver.
+
+- <xref:System.Text.Json.JsonSerializerOptions.MakeReadOnly(System.Boolean)?displayProperty=nameWithType>
+
+  If you pass `true` to this overload, it populates the options instance with the default reflection resolver if one is missing. This method is marked `RequiresUnreferenceCode`/`RequiresDynamicCode` and is therefore unsuitable for Native AOT applications.
+
+The new <xref:System.Text.Json.JsonSerializerOptions.IsReadOnly> property lets you check if the options instance is frozen.
 
 ### Time abstraction
 
@@ -1029,7 +1095,7 @@ The JIT already supported this optimization but with several large limitations i
 
 Physical promotion removes these limitations, which fixes a number of long-standing JIT issues.
 
-## .NET SDK changes
+## .NET SDK
 
 This section contains the following subtopics:
 
@@ -1169,18 +1235,25 @@ To make sure your application isn't affected, see [Behavioral differences](https
 ## Containers
 
 - [Container images](#container-images)
-- [Containers performance and compatibility](#container-performance-and-compatibility)
+- [Container publishing](#container-publishing)
 
 ### Container images
 
 The following changes have been made to .NET container images for .NET 8:
 
+- [Generated-image defaults](#generated-image-defaults)
 - [Debian 12](#debian-12)
 - [Non-root user](#non-root-user)
-- [Preview images](#preview-images)
+- [Preview image tags](#preview-image-tags)
 - [Chiseled Ubuntu images](#chiseled-ubuntu-images)
 - [Build multi-platform container images](#build-multi-platform-container-images)
 - [ASP.NET composite images](#aspnet-composite-images)
+
+#### Generated-image defaults
+
+The new [`non-root` capability](#non-root-user) of the Microsoft .NET containers is now the default, which helps your apps stay secure-by-default. Change this default at any time by setting your own `ContainerUser`.
+
+The default container tag is now `latest`. This default is in line with other tooling in the containers space and makes containers easier to use in inner development loops.
 
 #### Debian 12
 
@@ -1198,13 +1271,9 @@ USER app
 
 The default port also changed from port `80` to `8080`. To support this change, a new environment variable `ASPNETCORE_HTTP_PORTS` is available to make it easier to change ports. The variable accepts a list of ports, which is simpler than the format required by `ASPNETCORE_URLS`. If you change the port back to port `80` using one of these variables, you can't run as `non-root`.
 
-#### Preview images
+#### Preview image tags
 
-Preview container images tags now have a `-preview` suffix instead of just using the version number. For example, to pull the .NET 8 Preview SDK, use the following tag:
-
-`docker run --rm -it mcr.microsoft.com/dotnet/sdk:8.0-preview`
-
-The `-preview` suffix will be removed for release candidate (RC) releases.
+Container image tags for .NET 8 Previews 1 through 7 had a `-preview` suffix, for example, `8.0-preview` and `8.0-preview-<OS>`. Starting in RC 1, `preview` is removed from the tag name, and those tags are no longer maintained. The new tags, `8.0` and `8.0-<OS>`, are permanent, and will be maintained throughout the lifetime of .NET 8.
 
 #### Chiseled Ubuntu images
 
@@ -1236,16 +1305,27 @@ There is a caveat to be aware of. Since composites have multiple assemblies embe
 
 Composite images are available for the Alpine Linux, Jammy Chiseled, and Mariner Distroless platforms from the `mcr.microsoft.com/dotnet/nightly/aspnet` repo. The tags are listed with the `-composite` suffix on the [ASP.NET Docker page](https://hub.docker.com/_/microsoft-dotnet-nightly-aspnet).
 
-### Container performance and compatibility
+### Container publishing
+
+- [Performance and compatibility](#performance-and-compatibility)
+- [Authentication](#authentication)
+
+#### Performance and compatibility
 
 .NET 8 has improved performance for pushing containers to remote registries, especially Azure registries. Speedup comes from pushing layers in one operation and, for registries that don't support atomic uploads, a more reliable chunking mechanism.
 
 These improvements also mean that more registries are supported: Harbor, Artifactory, Quay.io, and Podman.
 
-Some generated-image defaults have also changed:
+#### Authentication
 
-- The new [`non-root` capability](#non-root-user) of the Microsoft .NET containers is now the default, which helps your apps stay secure-by-default. Change this default at any time by setting your own `ContainerUser``.
-- The default container tag is now `latest`. This default is in line with other tooling in the containers space and makes containers easier to use in inner development loops.
+.NET 8 adds support for OAuth token exchange authentication (Azure Managed Identity) when pushing containers to registries. This support means that you can now push to registries like Azure Container Registry without any authentication errors. The following commands show an example publishing flow:
+
+```console
+> az acr login -n <your registry name>
+> dotnet publish -r linux-x64 -p PublishProfile=DefaultContainer
+```
+
+For more information containerizing .NET apps, see [Containerize a .NET app with dotnet publish](../docker/publish-as-container.md).
 
 ## Source-generated COM interop
 
@@ -1301,6 +1381,31 @@ In previous .NET versions, you could build .NET from source, but it required you
 
 Building in a container is the easiest approach for most people, since the `dotnet-buildtools/prereqs` container images contain all the required dependencies. For more information, see the [build instructions](https://github.com/dotnet/dotnet#building).
 
+## Cross-built Windows apps
+
+When you build apps that Windows on non-Windows platforms, the resulting executable is now updated with any specified Win32 resources&mdash;for example, application icon, manifest, version information.
+
+Previously, applications had to be built on Windows in order to have such resources. Fixing this gap in cross-building support has been a popular request, as it was a significant pain point affecting both infrastructure complexity and resource usage.
+
+## AOT compilation for Android apps
+
+To decrease app size, .NET and .NET MAUI apps that target Android use *profiled* ahead-of-time (AOT) compilation mode when they're built in Release mode. Profiled AOT compilation affects fewer methods than regular AOT compilation. .NET 8 introduces the `<AndroidStripILAfterAOT>` property that lets you opt into further AOT compilation for Android apps to decrease app size even more.
+
+```xml
+<PropertyGroup>
+  <AndroidStripILAfterAOT>true</AndroidStripILAfterAOT>
+</PropertyGroup>
+```
+
+By default, setting `AndroidStripILAfterAOT` to `true` overrides the default `AndroidEnableProfiledAot` setting, allowing (nearly) all methods that were AOT-compiled to be trimmed. You can also use profiled AOT and IL stripping together by explicitly setting both properties to `true`:
+
+```xml
+<PropertyGroup>
+  <AndroidStripILAfterAOT>true</AndroidStripILAfterAOT>
+  <AndroidEnableProfiledAot>true</AndroidEnableProfiledAot>
+</PropertyGroup>
+```
+
 ## Code analysis
 
 .NET 8 includes several new code analyzers and fixers to help verify that you're using .NET library APIs correctly and efficiently. The following table summarizes the new analyzers.
@@ -1319,6 +1424,19 @@ Building in a container is the easiest approach for most people, since the `dotn
 
 ## Windows Presentation Foundation
 
+- [Hardware acceleration](#hardware-acceleration)
+- [OpenFolderDialog](#openfolderdialog)
+
+### Hardware acceleration
+
+Previously, all WPF applications that were accessed remotely had to use software rendering, even if the system had hardware rendering capabilities. .NET 8 adds an option that lets you opt into hardware acceleration for Remote Desktop Protocol (RDP).
+
+Hardware acceleration refers to the use of a computer's graphics processing unit (GPU) to speed up the rendering of graphics and visual effects in an application. This can result in improved performance and more seamless, responsive graphics. In contrast, software rendering relies solely on the computer's central processing unit (CPU) to render graphics, which can be slower and less effective.
+
+To opt in, set the `Switch.System.Windows.Media.EnableHardwareAccelerationInRdp` configuration property to `true` in a *runtimeconfig.json* file. For more information, see [Hardware acceleration in RDP](../runtime-config/wpf.md#hardware-acceleration-in-rdp).
+
+### OpenFolderDialog
+
 WPF includes a new dialog box control called `OpenFolderDialog`. This control lets app users browse and select folders. Previously, app developers relied on third-party software to achieve this functionality.
 
 ```csharp
@@ -1335,6 +1453,8 @@ if (openFolderDialog.ShowDialog())
 }
 ```
 
+For more information, see [WPF File Dialog Improvements in .NET 8 (.NET blog)](https://devblogs.microsoft.com/dotnet/wpf-file-dialog-improvements-in-dotnet-8/).
+
 ## NuGet
 
 Starting in .NET 8, NuGet verifies signed packages on Linux by default. NuGet continues to verify signed packages on Windows as well.
@@ -1350,6 +1470,7 @@ You can opt out of verification by setting the environment variable `DOTNET_NUGE
 
 ### .NET blog
 
+- [Announcing .NET 8 RC 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-rc1/)
 - [Announcing .NET 8 Preview 7](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-7/)
 - [Announcing .NET 8 Preview 6](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-6/)
 - [Announcing .NET 8 Preview 5](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-5/)
@@ -1357,7 +1478,7 @@ You can opt out of verification by setting the environment variable `DOTNET_NUGE
 - [Announcing .NET 8 Preview 3](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-3/)
 - [Announcing .NET 8 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-2/)
 - [Announcing .NET 8 Preview 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-1/)
-
+- [ASP.NET Core updates in .NET 8 RC 1](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-rc-1/)
 - [ASP.NET Core updates in .NET 8 Preview 7](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-7/)
 - [ASP.NET Core updates in .NET 8 Preview 6](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-6/)
 - [ASP.NET Core updates in .NET 8 Preview 5](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-5/)

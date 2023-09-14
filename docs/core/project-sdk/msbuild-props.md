@@ -914,8 +914,9 @@ To remove this warning and continue to use the version of code analyzers in the 
 
 ## Runtime configuration properties
 
-You can configure some run-time behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring run-time behavior, see [Runtime configuration settings](../runtime-config/index.md).
+You can configure some runtime behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring runtime behavior, see [Runtime configuration settings](../runtime-config/index.md).
 
+- [AutoreleasePoolSupport](#autoreleasepoolsupport)
 - [ConcurrentGarbageCollection](#concurrentgarbagecollection)
 - [InvariantGlobalization](#invariantglobalization)
 - [PredefinedCulturesOnly](#predefinedculturesonly)
@@ -926,6 +927,18 @@ You can configure some run-time behaviors by specifying MSBuild properties in th
 - [TieredCompilation](#tieredcompilation)
 - [TieredCompilationQuickJit](#tieredcompilationquickjit)
 - [TieredCompilationQuickJitForLoops](#tieredcompilationquickjitforloops)
+- [TieredPGO](#tieredpgo)
+- [UseWindowsThreadPool](#usewindowsthreadpool)
+
+### AutoreleasePoolSupport
+
+The `AutoreleasePoolSupport` property configures whether each managed thread receives an implicit [NSAutoreleasePool](https://developer.apple.com/documentation/foundation/nsautoreleasepool) when running on a supported macOS platform. For more information, see [`AutoreleasePool` for managed threads](../runtime-config/threading.md#autoreleasepool-for-managed-threads).
+
+```xml
+<PropertyGroup>
+  <AutoreleasePoolSupport>true</AutoreleasePoolSupport>
+</PropertyGroup>
+```
 
 ### ConcurrentGarbageCollection
 
@@ -1026,6 +1039,26 @@ The `TieredCompilationQuickJitForLoops` property configures whether the JIT comp
 ```xml
 <PropertyGroup>
   <TieredCompilationQuickJitForLoops>true</TieredCompilationQuickJitForLoops>
+</PropertyGroup>
+```
+
+### TieredPGO
+
+The `TieredPGO` property controls whether dynamic or tiered profile-guided optimization (PGO) is enabled. Set the value to `true` to enable tiered PGO. For more information, see [Profile-guided optimization](../runtime-config/compilation.md#profile-guided-optimization).
+
+```xml
+<PropertyGroup>
+  <TieredPGO>true</TieredPGO>
+</PropertyGroup>
+```
+
+### UseWindowsThreadPool
+
+The `UseWindowsThreadPool` property configures whether thread pool thread management is delegated to the Windows thread pool (Windows only). The default value is `false`, in which case the .NET thread pool is used. For more information, see [Windows thread pool](../runtime-config/threading.md#windows-thread-pool).
+
+```xml
+<PropertyGroup>
+  <UseWindowsThreadPool>true</UseWindowsThreadPool>
 </PropertyGroup>
 ```
 

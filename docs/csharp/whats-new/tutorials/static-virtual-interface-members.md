@@ -1,12 +1,12 @@
 ---
-title: Explore static virtual members in interfaces
+title: Explore static abstract members in interfaces
 description: This advanced tutorial demonstrates scenarios for operators and other static members in interfaces.
 ms.date: 07/08/2022
 ms.technology: csharp-advanced-concepts
 ---
-# Tutorial: Explore C# 11 feature - static virtual members in interfaces
+# Tutorial: Explore C# 11 feature - static abstract members in interfaces
 
-C# 11 and .NET 7 include *static virtual members in interfaces*. This feature enables you to define interfaces that include [overloaded operators](../../language-reference/operators/operator-overloading.md) or other static members. Once you've defined interfaces with static members, you can use those interfaces as [constraints](../../programming-guide/generics/constraints-on-type-parameters.md) to create generic types that use operators or other static methods. Even if you don't create interfaces with overloaded operators, you'll likely benefit from this feature and the generic math classes enabled by the language update.
+C# 11 and .NET 7 include *static abstract members in interfaces*. This feature enables you to define interfaces that include [overloaded operators](../../language-reference/operators/operator-overloading.md) or other static members. Once you've defined interfaces with static members, you can use those interfaces as [constraints](../../programming-guide/generics/constraints-on-type-parameters.md) to create generic types that use operators or other static methods. Even if you don't create interfaces with overloaded operators, you'll likely benefit from this feature and the generic math classes enabled by the language update.
 
 In this tutorial, you'll learn how to:
 

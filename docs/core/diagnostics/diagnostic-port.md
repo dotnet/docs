@@ -41,12 +41,12 @@ By default, the runtime executes managed code as soon as it starts, regardless o
 > [!NOTE]
 > This works for apps running .NET 5 or later only.
 
-Both the Mono and CoreCLR runtimes can use custom configured diagnostic ports, but only in the `connect` role. These ports are in addition to the default port that remains available. There are a few common reasons this is useful:
+Both the Mono and CoreCLR runtimes can use custom configured diagnostic ports in the `connect` role. These ports are in addition to the default port that remains available. There are a few common reasons this is useful:
 
 - On Android, iOS, and tvOS there's no default port, so configuring a port is necessary to use diagnostic tools.
 - In environments with containers or firewalls, you may want to set up a predictable endpoint address that doesn't vary based on process ID as the default port does. Then the custom port can be explicitly added to an allow list or proxied across some security boundary.
 
-In each communication channel between a diagnostic tool and the .NET runtime, one side needs to be the listener and wait for the other side to connect. The runtime can be configured to act in the `connect` role for any port. Ports can also be independently configured to suspend at startup, waiting for a diagnostic tool to issue a resume command. Ports configured to connect will repeat their connection attempts indefinitely if the remote endpoint isn't listening or if the connection is lost. But the app does not automatically suspend managed code while waiting to establish that connection. If you want the app to wait for a connection to be established, use the suspend at startup option.
+In each communication channel between a diagnostic tool and the .NET runtime, one side needs to be the listener and wait for the other side to connect. The runtime can be configured to act in the `connect` role for any port. Ports can also be independently configured to suspend at startup, waiting for a diagnostic tool to issue a resume command. Ports configured to connect repeat their connection attempts indefinitely if the remote endpoint isn't listening or if the connection is lost. But the app does not automatically suspend managed code while waiting to establish that connection. If you want the app to wait for a connection to be established, use the suspend at startup option.
 
 Custom ports are configured using the `DOTNET_DiagnosticPorts` environment variable. This variable should be set to a semicolon delimited list of port descriptions. Each port description consists of an endpoint address and optional modifiers that control whether the runtime should suspend on startup. On Windows, the endpoint address is the name of a named pipe without the `\\.\pipe\` prefix. On Linux and macOS, it's the full path to a Unix Domain Socket. On Android, iOS, and tvOS, the address is an IP and port. For example:
 

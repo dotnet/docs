@@ -83,9 +83,15 @@ which use dotted hierarchical names. Assembly names or namespace names for code 
 for code in a second, independent assembly, the name should be based on the assembly that defines the Meter, not the assembly whose code is being instrumented.
 
 - .NET doesn't enforce any naming scheme for Instruments, but we recommend following
-[OpenTelemetry naming guidelines](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/general/metrics.md#general-guidelines), which use dotted hierarchical names
+[OpenTelemetry naming guidelines](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/general/metrics.md#general-guidelines), which use lowercase dotted hierarchical names
 and an underscore ('_') as the separator between multiple words in the same element. Not all metric tools preserve the Meter name as part of the final metric name, so it's beneficial
 to make the instrument name globally unique on its own.
+
+  Example instrument names:
+
+  - `contoso.ticket_queue.duration`
+  - `contoso.reserved_tickets`
+  - `contoso.purchased_tickets`
 
 - The APIs to create instruments and record measurements are thread-safe. In .NET libraries, most instance methods require synchronization when
 invoked on the same object from multiple threads, but that's not needed in this case.
@@ -493,16 +499,23 @@ Press p to pause, r to resume, q to quit.
 - Although the API allows any object to be used as the tag value, numeric types and strings are anticipated by collection tools. Other types may or may not be
   supported by a given collection tool.
 
-- We recommend tag names use lowercase dotted hierarichal names with '_' characters to separate multiple words in the same element. If tag names are
-  reused in different metrics or other telemetry records then they should have the same meaning and set of legal values everywhere they are used.
+- We recommend tag names follow the [OpenTelemetry naming guidelines](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/general/metrics.md#general-guidelines),
+  which use lowercase dotted hierarchal names with '_' characters to separate multiple words in the same element. If tag names are reused in different metrics or other telemetry
+  records, then they should have the same meaning and set of legal values everywhere they are used.
+
+  Example tag names:
+
+  - `customer.country`
+  - `store.payment_method`
+  - `store.purchase_result`
 
 - Beware of having very large or unbounded combinations of tag values being recorded in practice. Although the .NET API implementation can handle it, collection tools will
   likely allocate storage for metric data associated with each tag combination and this could become very large. For example, it's fine if HatCo has 10 different
   hat colors and 25 hat sizes for up to 10*25=250 sales totals to track. However, if HatCo added a third tag that's a CustomerID for the sale and they sell to 100
   million customers worldwide, now there are now likely to be billions of different tag combinations being recorded. Most metric collection tools will either drop data
   to stay within technical limits or there can be large monetary costs to cover the data storage and processing. The implementation of each collection tool will determine
-  its limits, but likely less than 1000 combinations for one instrument is safe. Anything above 1000 combinations will require the collection tool to apply filtering or be engineered to operate at high scale.
-  Histogram implementations tend to use far more memory than other metrics, so safe limits could be 10-100 times lower. If you anticipate large number of unique tag combinations,
+  its limits, but likely less than 1000 combinations for one instrument is safe. Anything above 1000 combinations will require the collection tool to apply filtering or be engineered to operate at a high scale.
+  Histogram implementations tend to use far more memory than other metrics, so safe limits could be 10-100 times lower. If you anticipate a large number of unique tag combinations,
   then logs, transactional databases, or big data processing systems may be more appropriate solutions to operate at the needed scale.
 
 - For instruments that will have very large numbers of tag combinations, prefer using a smaller storage type to help reduce memory overhead. For example, storing the `short` for

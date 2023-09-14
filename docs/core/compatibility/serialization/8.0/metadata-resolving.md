@@ -32,17 +32,11 @@ public class NestedValue
 
 ## New behavior
 
-Starting in .NET 8, the same code from the [Previous behavior](#previous-behavior) section throws an <xref:System.InvalidOperationException> at run time. This error is consistent with the error that was thrown even in previous versions if you attempted to serialize an instance of the same type. It's also consistent with the source generator, which produces a compile-time error.
+Starting in .NET 8, the same code from the [Previous behavior](#previous-behavior) section throws an <xref:System.InvalidOperationException> at run time.
 
 > System.InvalidOperationException: The type 'System.ReadOnlySpan`1[System.Byte]' of property 'Span' on type 'NestedValue' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
-   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
-   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
-   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
-   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo)
-   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
-   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
-   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
-   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+
+This error is consistent with the error that was thrown even in previous versions if you attempted to serialize an instance of the same type. It's also consistent with the source generator, which produces a compile-time error.
 
 ## Version introduced
 

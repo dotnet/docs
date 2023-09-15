@@ -53,7 +53,7 @@ Custom ports are configured using the `DOTNET_DiagnosticPorts` environment varia
 1. `DOTNET_DiagnosticPorts=my_diag_port1` - (Windows) The runtime connects to the named pipe `\\.\pipe\my_diag_port1`.
 1. `DOTNET_DiagnosticPorts=/foo/tool1.socket;foo/tool2.socket` - (Linux and macOS) The runtime connects to both the Unix Domain Sockets `/foo/tool1.socket` and `/foo/tool2.socket`.
 1. `DOTNET_DiagnosticPorts=127.0.0.1:9000` - (Android, iOS, and tvOS) The runtime connects to IP 127.0.0.1 on port 9000.
-1. `DOTNET_DiagnosticPorts=/foo/tool1.socket,nosuspend` - (Linux and macOS) This example has the `nosuspend` modifier. The runtime creates and connects to Unix Domain Socket `/foo/tool1.socket`. Additional diagnostic ports would normally cause the runtime to suspend at startup waiting for a resume command, but `nosuspend` causes the runtime not to wait.
+1. `DOTNET_DiagnosticPorts=/foo/tool1.socket,nosuspend` - (Linux and macOS) This example has the `nosuspend` modifier. The runtime tries to connect to Unix Domain Socket `/foo/tool1.socket` that an external tool creates. Additional diagnostic ports would normally cause the runtime to suspend at startup waiting for a resume command, but `nosuspend` causes the runtime not to wait.
 
 The complete syntax for a port is `address[,(suspend|nosuspend)]`. `suspend` is the default if neither `suspend` or `nosuspend` is specified.
 

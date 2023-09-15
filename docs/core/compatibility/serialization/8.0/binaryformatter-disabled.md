@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: BinaryFormatter disabled across most project types"
-description: Learn about the .NET 7 breaking change in serialization where serialize and deserialize methods on BinaryFormatter now throw an exception at run time.
+description: Learn about the .NET 8 breaking change in serialization where serialize and deserialize methods on BinaryFormatter now throw an exception at run time.
 ms.date: 05/01/2023
 ---
 # BinaryFormatter disabled across most project types

@@ -52,7 +52,7 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 >
 > <sup>2</sup> With .NET 6, the.NET 6.0.100 SDK can be used in version 16.11 for **downlevel** targeting. This means that you're not forced to update your SDK and Visual Studio versions simultaneously. However, you won't be able to target .NET 6 because of limitations in 6.0 features and C# 10 features in version 16.11. This compatibility is specifically for targeting 5.0 and below.
 >
-> <sup>3</sup> 6.0.300, 7.0.200, and 8.0.200 require newer Visual Studio versions. See the [support rules](#targeting-and-support-rules) for more details
+> <sup>3</sup> 6.0.300, 7.0.200, and 8.0.200 require newer Visual Studio versions. For more information, see the [support rules](#targeting-and-support-rules).
 >
 > [Visual Studio 2019 Lifecycle](/lifecycle/products/visual-studio-2019)
 >

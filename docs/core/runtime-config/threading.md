@@ -10,15 +10,27 @@ This article details the settings you can use to configure threading in .NET.
 
 [!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
-## CPU groups
+## Use all CPU groups on Windows
 
-- Configures whether threads are automatically distributed across CPU groups.
-- If you omit this setting, threads are not distributed across CPU groups. This is equivalent to setting the value to `0`.
+- On machines that have multiple CPU groups, this setting configures whether components such as the thread pool use all CPU groups or only the primary CPU group of the process. The setting also affects what <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> returns.
+- When this setting is enabled, all CPU groups are used and threads are also [automatically distributed across CPU groups](#assign-threads-to-cpu-groups-on-windows) by default.
+- This setting is enabled by default on Windows 11 and above, and disabled by default on Windows 10 and below. When enabling this setting, in order for it to take effect the GC must also be configured to use all CPU groups, see [GC CPU groups](./garbage-collector.md#cpu-groups).
 
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | N/A | N/A |
 | **Environment variable** | `COMPlus_Thread_UseAllCpuGroups` or `DOTNET_Thread_UseAllCpuGroups` | `0` - disabled<br/>`1` - enabled |
+
+## Assign threads to CPU groups on Windows
+
+- On machines that have multiple CPU groups and [all CPU groups are being used](#use-all-cpu-groups-on-windows), this setting configures whether threads are automatically distributed across CPU groups.
+- When this setting is enabled, new threads are assigned to a CPU group in a way that tries to fully populate a CPU group that is already in use before utilizing a new CPU group.
+- This setting is enabled by default.
+
+| | Setting name | Values |
+| - | - | - |
+| **runtimeconfig.json** | N/A | N/A |
+| **Environment variable** | `COMPlus_Thread_AssignCpuGroups` or `DOTNET_Thread_AssignCpuGroups` | `0` - disabled<br/>`1` - enabled |
 
 ## Minimum threads
 

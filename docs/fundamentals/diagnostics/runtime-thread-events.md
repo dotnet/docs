@@ -22,7 +22,7 @@ These events collect information about worker and I/O threads in the threadpool.
  The following table shows the event information.
 
 |Event|Event ID|Raised when|
-|-----------------------------------|-----------|
+|-----------------------------------|-----------|-|
 |`IOThreadCreate_V1`|44|An I/O thread is created in the thread pool.|
 
  The following table shows the event data.
@@ -102,7 +102,7 @@ These events collect information about worker and I/O threads in the threadpool.
 ## ThreadPoolWorkerThreadStart event
 
 |Keyword for raising the event|Level|
-|-----------------------------------|-----------|-----------|
+|-----------------------------------|-----------|
 |`ThreadingKeyword` (0x10000)|Informational (4)|
 
 |Event|Event ID|Description|
@@ -118,7 +118,7 @@ These events collect information about worker and I/O threads in the threadpool.
 ## ThreadPoolWorkerThreadStop event
 
 |Keyword for raising the event|Level|
-|-----------------------------------|-----------|-----------|
+|-----------------------------------|-----------|
 |`ThreadingKeyword` (0x10000)|Informational (4)|
 
 |Event|Event ID|Description|
@@ -134,7 +134,7 @@ These events collect information about worker and I/O threads in the threadpool.
 ## ThreadPoolWorkerThreadWait event
 
 |Keyword for raising the event|Level|
-|-----------------------------------|-----------|-----------|
+|-----------------------------------|-----------|
 |`ThreadingKeyword` (0x10000)|Informational (4)|
 
 |Event|Event ID|Description|
@@ -150,7 +150,7 @@ These events collect information about worker and I/O threads in the threadpool.
 ## ThreadPoolWorkerThreadRetirementStart event
 
 |Keyword for raising the event|Level|
-|-----------------------------------|-----------|-----------|
+|-----------------------------------|-----------|
 |`ThreadingKeyword` (0x10000)|Informational (4)|
 
 |Event|Event ID|Description|
@@ -166,7 +166,7 @@ These events collect information about worker and I/O threads in the threadpool.
 ## ThreadPoolWorkerThreadRetirementStop event
 
 |Keyword for raising the event|Level|
-|-----------------------------------|-----------|-----------|
+|-----------------------------------|-----------|
 |`ThreadingKeyword` (0x10000)|Informational (4)|
 
 |Event|Event ID|Description|
@@ -220,7 +220,7 @@ These events collect information about worker and I/O threads in the threadpool.
 |----------------|---------------|-----------------|
 |`AverageThroughput`|`win:Double`|Average throughput of a sample of measurements.|
 |`NewWorkerThreadCount`|`win:UInt32`|New number of active worker threads.|
-|`Reason`|`win:UInt32`|Reason for the adjustment.<br /><br /> `0x0` - Warmup.<br /><br /> `0x1` - Initializing.<br /><br /> `0x2` - Random move.<br /><br /> `0x3` - Climbing move.<br /><br /> `0x4` - Change point.<br /><br /> `0x5` - Stabilizing.<br /><br /> `0x6` - Starvation.<br /><br /> `0x7` - Thread timed out.|
+|`Reason`|`win:UInt32`|Reason for the adjustment.<br /><br /> `0x0` - Warmup.<br /><br /> `0x1` - Initializing.<br /><br /> `0x2` - Random move.<br /><br /> `0x3` - Climbing move.<br /><br /> `0x4` - Change point.<br /><br /> `0x5` - Stabilizing.<br /><br /> `0x6` - Starvation.<br /><br /> `0x7` - Thread timed out.<br /><br /> `0x8` - Cooperative blocking.|
 |`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
 
 ## ThreadPoolWorkerThreadAdjustmentStats event

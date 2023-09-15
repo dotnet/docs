@@ -41,3 +41,6 @@ These events collect information about worker and I/O threads.
 
 [Type Events](runtime-type-events.md)\
 These events collect information about the type system.
+
+[Tiered compilation events](runtime-tiered-compilation-events.md)\
+These events collect information about tiered compilation.

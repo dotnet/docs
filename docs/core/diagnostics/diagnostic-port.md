@@ -45,6 +45,7 @@ Both the Mono and CoreCLR runtimes can use custom configured diagnostic ports in
 
 - On Android, iOS, and tvOS there's no default port, so configuring a port is necessary to use diagnostic tools.
 - In environments with containers or firewalls, you may want to set up a predictable endpoint address that doesn't vary based on process ID as the default port does. Then the custom port can be explicitly added to an allow list or proxied across some security boundary.
+- For monitoring tools it is useful to have the tool listen on an endpoint, and the runtime actively attempts to connect to it. This avoids needing the monitoring tool to continuously poll for new apps starting. In environments where the default diagnostic port isn't accessible, it also avoids needing to configure the monitor with a custom endpoint for each monitored app.
 
 In each communication channel between a diagnostic tool and the .NET runtime, one side needs to be the listener and wait for the other side to connect. The runtime can be configured to act in the `connect` role for any port. Ports can also be independently configured to suspend at startup, waiting for a diagnostic tool to issue a resume command. Ports configured to connect repeat their connection attempts indefinitely if the remote endpoint isn't listening or if the connection is lost. But the app does not automatically suspend managed code while waiting to establish that connection. If you want the app to wait for a connection to be established, use the suspend at startup option.
 

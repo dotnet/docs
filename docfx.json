@@ -174,9 +174,9 @@
                 "docs/**/**.md":  "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute",
                 "docs/**/**.yml": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute"
             },
-            "open_source_feedback_issueTemplateName": {
-                "docs/**.md":  "customer-feedback",
-                "docs/**.yml": "customer-feedback"
+            "open_source_feedback_issueUrl": {
+                "docs/**.md":  "https://github.com/dotnet/docs/issues/new?template=customer-feedback",
+                "docs/**.yml": "https://github.com/dotnet/docs/issues/new?template=customer-feedback"
             },
             "open_source_feedback_productName": {
                 "docs/**.md":  ".NET",
@@ -185,6 +185,10 @@
             "open_source_feedback_productDescription": {
                 "docs/**.md":  "Free. Cross platform. Open source. A developer platform for building all your apps.",
                 "docs/**.yml": "Free. Cross platform. Open source. A developer platform for building all your apps."
+            },
+            "open_source_feedback_issueTitle": {
+                "docs/**.md": "[Customer issue] - ",
+                "docs/**.yml": "[Customer issue] - "
             },
             "open_source_feedback_productLogoLightUrl": {
                 "docs/**.md":  "https://learn.microsoft.com/media/logos/logo_net.svg",

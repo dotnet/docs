@@ -14,7 +14,7 @@ With .NET, you can create and deploy templates that generate projects, files, an
 
 You can view the completed template in the [.NET Samples GitHub repository](https://github.com/dotnet/samples/tree/main/core/tutorials/cli-templates-create-item-template).
 
-In this part of the series you learn how to:
+In this part of the series you'll learn how to:
 
 ::: zone pivot="dotnet-8-0"
 
@@ -302,4 +302,4 @@ To learn more about templates, most of which you've already learned, see the [Cu
 * [Template Authoring Tools](https://aka.ms/templating-authoring-tools)
 * [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)
 * [Template samples](https://aka.ms/template-samples)
-* [*template.json* schema at the JSON Schema Store](http://json.schemastore.org/template)
+* [_template.json_ schema at the JSON Schema Store](http://json.schemastore.org/template)

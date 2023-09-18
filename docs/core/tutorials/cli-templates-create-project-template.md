@@ -27,7 +27,7 @@ With .NET, you can create and deploy templates that generate projects, files, ev
 >
 > You can view the templates that are installed on your machine by running the `dotnet new list` command.
 
-In this part of the series you learn how to:
+In this part of the series you'll learn how to:
 
 > [!div class="checklist"]
 >
@@ -103,11 +103,11 @@ Open the _template.json_ with your favorite text editor and paste in the followi
 }
 ```
 
-This config file contains all the settings for your template. You can see the basic settings, such as `name` and `shortName`, but there's also a `tags/type` value that's set to `item`. This categorizes your template as an "item" template. There's no restriction on the type of template you create. The `item` and `project` values are common names that .NET recommends so that users can easily filter the type of template they're searching for.
+This config file contains all the settings for your template. You can see the basic settings, such as `name` and `shortName`, but there's also a `tags/type` value that's set to `item`. This categorizes your template as a "project" template. There's no restriction on the type of template you create. The `item` and `project` values are common names that .NET recommends so that users can easily filter the type of template they're searching for.
 
 The `sourceName` item is what is replaced when the user uses the template. The value of `sourceName` in the config file is searched for in every file name and file content, and by default, is replaced with the name of the current folder. When the `-n` or `--name` parameter is passed with the `dotnet new` command, the value provided is used instead of the current folder. In the case of this template, `consoleasync` is replaced in the name of the _.csproj_ file.
 
-The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the \*.json file with the `classifications` tags list. They're two different things unfortunately named similarly. The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template) and is described at [Reference for template.json](https://github.com/dotnet/templating/wiki/Reference-for-template.json). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
+The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the _template.json_ file with the `classifications` tags list. They're two different concepts that are unfortunately named the same. The full schema for the _template.json_ file is found at the [JSON Schema Store](http://json.schemastore.org/template) and is described at [Reference for template.json](https://github.com/dotnet/templating/wiki/Reference-for-template.json). For more information about the _template.json_ file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
 
 Now that you have a valid _.template.config/template.json_ file, your template is ready to be installed. Before you install the template, make sure that you delete any extra folders and files you don't want included in your template, like the _bin_ or _obj_ folders. In your terminal, navigate to the _consoleasync_ folder and run `dotnet new install .\` to install the template located at the current folder. If you're using a Linux or macOS operating system, use a forward slash: `dotnet new install ./`.
 

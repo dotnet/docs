@@ -11,11 +11,14 @@ recommendations: false
 
 # Tutorial: Create an item template
 
-With .NET, you can create and deploy templates that generate projects, files, even resources. This tutorial is part one of a series that teaches you how to create, install, and uninstall templates for use with the `dotnet new` command.
+With .NET, you can create and deploy templates that generate projects, files, and resources. This tutorial is part one of a series that teaches you how to create, install, and uninstall templates for use with the `dotnet new` command.
 
 You can view the completed template in the [.NET Samples GitHub repository](https://github.com/dotnet/samples/tree/main/core/tutorials/cli-templates-create-item-template).
 
-In this part of the series, you learn how to:
+> [!TIP]
+> **Item** templates aren't shown in the **Add** > **New Item** dialog of Visual Studio.
+
+In this part of the series, you'll learn how to:
 
 > [!div class="checklist"]
 >
@@ -62,7 +65,7 @@ working
     └───extensions
 ```
 
-Navigate to the _extensions_ folder and create a new file named _CommonExtensions.cs_. Open the file in a text editor. This class will provide an extension method named `Reverse` that reverses the contents of a string. Paste in the following code and save the file:
+Navigate to the _extensions_ folder and create a new file named _StringExtensions.cs_. Open the file in a text editor. This class will provide an extension method named `Reverse` that reverses the contents of a string. Paste in the following code and save the file:
 
 ```csharp
 namespace System;
@@ -125,18 +128,18 @@ Open the _template.json_ with your favorite text editor and paste in the followi
 
 This config file contains all the settings for your template. You can see the basic settings, such as `name` and `shortName`, but there's also a `tags/type` value that's set to `item`. This categorizes your template as an "item" template. There's no restriction on the type of template you create. The `item` and `project` values are common names that .NET recommends so that users can easily filter the type of template they're searching for.
 
-The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the \*.json file with the `classifications` tags list. They're two different things unfortunately named similarly. The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template) and is described at [Reference for template.json](https://github.com/dotnet/templating/wiki/Reference-for-template.json). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
+The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the _template.json_ file with the `classifications` tags list. They're two different concepts that are unfortunately named the same. The full schema for the _template.json_ file is found at the [JSON Schema Store](http://json.schemastore.org/template) and is described at [Reference for template.json](https://github.com/dotnet/templating/wiki/Reference-for-template.json). For more information about the _template.json_ file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
 
 The `symbols` part of this JSON object is used to define the parameters that can be used in the template. In this case, there's one parameter defined, `ClassName`. The defined parameter contains the following settings:
 
 - `type` - This is a mandatory setting and must be set to `parameter`.
 - `description` - The description of the parameter, which is printed in the template help.
-- `datatype` - The type of data of the supplied value when the parameter is used.
-- `replaces` - Specifies a text value that should be replaced in all template content files by the value of the parameter.
-- `fileRename` - Similar to `replaces`, this specifies a text value that is replaced in the names of all of the template files.
-- `defaultValue` - The default value of this parameter.
+- `datatype` - The type of data of the parameter value when the parameter is used.
+- `replaces` - Specifies a text value that should be replaced in all template files by the value of the parameter.
+- `fileRename` - Similar to `replaces`, this specifies a text value that is replaced in the names of all of the template files by the value of the parameter.
+- `defaultValue` - The default value of this parameter when the parameter isn't specified by the user.
 
-When the template is used, the user can provide a value for the `ClassName` parameter, and this value replaces all occurrences of `StringExtensions`. If a value isn't provided, the `defaultValue` is used. For this template, there are two occurrences of `StringExtensions`, the file _StringExtensions.cs_ and the class _StringExtensions_. Because the `defaultValue` of the parameter is `StringExtensions`, the file name and class name remain the same if the parameter isn't specified when using the template. When a value is specified, for example `MyExts`, the file name is renamed _MyExts.cs_ and the class is renamed to _MyExts_.
+When the template is used, the user can provide a value for the `ClassName` parameter, and this value replaces all occurrences of `StringExtensions`. If a value isn't provided, the `defaultValue` is used. For this template, there are two occurrences of `StringExtensions`, the file _StringExtensions.cs_ and the class _StringExtensions_. Because the `defaultValue` of the parameter is `StringExtensions`, the file name and class name remain unchanged if the parameter isn't specified when using the template. When a value is specified, for example `dotnet new stringext -ClassName MyExts`, the file name is renamed _MyExts.cs_ and the class is renamed to _MyExts_.
 
 To see what parameters are available for a template, use the `-?` parameter with the template name:
 
@@ -221,7 +224,7 @@ Now that you have an item template installed, test it.
     Hello, World!
     ```
 
-01. Next, run `dotnet new stringext` to generate the _CommonExtensions.cs_ from the template.
+01. Next, run `dotnet new stringext` to generate the _StringExtensions.cs_ from the template.
 
     ```dotnetcli
     dotnet new stringext
@@ -251,7 +254,7 @@ Now that you have an item template installed, test it.
     !dlroW ,olleH
     ```
 
-Congratulations! You created and deployed an item template with .NET. In preparation for the next part of this tutorial series, you must uninstall the template you created. Make sure to delete all files and folders in the _test_ folder too. This gets you back to a clean state ready for the next major section of this tutorial.
+Congratulations! You created and deployed an item template with .NET. In preparation for the next part of this tutorial series, you must uninstall the template you created. Make sure to delete all files and folders in the _test_ folder too. This gets you back to a clean state ready for the next part of this tutorial.
 
 ## Uninstall the template
 

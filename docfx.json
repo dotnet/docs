@@ -175,8 +175,8 @@
                 "docs/**/**.yml": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute"
             },
             "open_source_feedback_issueUrl": {
-                "docs/**.md":  "https://github.com/dotnet/docs/issues/new?template=customer-feedback",
-                "docs/**.yml": "https://github.com/dotnet/docs/issues/new?template=customer-feedback"
+                "docs/**.md":  "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml",
+                "docs/**.yml": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml"
             },
             "open_source_feedback_productName": {
                 "docs/**.md":  ".NET",

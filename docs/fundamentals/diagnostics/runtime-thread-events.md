@@ -1,6 +1,6 @@
 ---
 title: "ThreadPool runtime events"
-description: See .NET runtime thread pool events that collect diagnostic information about thread pool in .NET Core. Thread pool events are worker thread pool events or I/O thread pool events.
+description: Learn about the .NET runtime thread pool events that collect diagnostic information about thread pool in .NET Core. Thread pool events are worker thread pool events or I/O thread pool events.
 ms.date: "11/13/2020"
 ms.topic: reference
 helpviewer_keywords:
@@ -9,7 +9,7 @@ helpviewer_keywords:
 ---
 # .NET runtime thread pool events
 
-These events collect information about worker and I/O threads in the threadpool. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md)
+The events described in this article collect information about worker and I/O threads in the threadpool. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md)
 
 ## IOThreadCreate_V1 event
 

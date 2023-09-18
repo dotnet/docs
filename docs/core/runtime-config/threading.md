@@ -14,7 +14,7 @@ This article details the settings you can use to configure threading in .NET.
 
 - On machines that have multiple CPU groups, this setting configures whether components such as the thread pool use all CPU groups or only the primary CPU group of the process. The setting also affects what <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> returns.
 - When this setting is enabled, all CPU groups are used and threads are also [automatically distributed across CPU groups](#assign-threads-to-cpu-groups-on-windows) by default.
-- This setting is enabled by default on Windows 11 and above, and disabled by default on Windows 10 and below. When enabling this setting, in order for it to take effect the GC must also be configured to use all CPU groups, see [GC CPU groups](./garbage-collector.md#cpu-groups).
+- This setting is enabled by default on Windows 11 and later versions, and disabled by default on Windows 10 and earlier versions. For this setting to take effect when enabled, the GC must also be configured to use all CPU groups; for more information, see [GC CPU groups](./garbage-collector.md#cpu-groups).
 
 | | Setting name | Values |
 | - | - | - |

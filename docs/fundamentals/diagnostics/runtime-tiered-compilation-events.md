@@ -1,6 +1,6 @@
 ---
 title: "Tiered compilation runtime events"
-description: See .NET runtime tiered compilation events that collect diagnostic information about tiered compilation in .NET Core.
+description: Learn about the .NET runtime tiered compilation events that collect diagnostic information about tiered compilation in .NET Core.
 ms.date: "9/15/2023"
 ms.topic: reference
 helpviewer_keywords:
@@ -9,7 +9,7 @@ helpviewer_keywords:
 ---
 # .NET runtime tiered compilation events
 
-These events collect information about tiered compilation. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md)
+The events described in this article collect information about tiered compilation. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md)
 
 ## TieredCompilationSettings event
 
@@ -44,7 +44,7 @@ The following table shows the event information.
 
 |Event|Event ID|Raised when|
 |-|-|-|
-|`TieredCompilationPause`|281|Tiered compilation was paused. Tiered compilation may be paused due to startup-like activities such as a new method being called for the first time, to reduce overhead during application startup, such as call-counting and background JIT-compilation. It would resume after startup-like activities cease for a short duration.|
+|`TieredCompilationPause`|281|Tiered compilation was paused. Tiered compilation may be paused due to startup-like activities, such as a new method being called for the first time, to reduce overhead during application startup, such as call-counting and background JIT-compilation. It resumes after startup-like activities cease for a short duration.|
 
 The following table shows the event data.
 
@@ -114,4 +114,4 @@ The following table shows the event data.
 |-|-|-|
 |`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 |`PendingMethodCount`|`win:UInt32`|The number of methods still pending background JIT-compilation.|
-|`JittedMethodCount`|`win:UInt32`|The number of methods that were JIT-compiled in the background since background JIT-compilation had last started.|
+|`JittedMethodCount`|`win:UInt32`|The number of methods that were JIT-compiled in the background since background JIT-compilation last started.|

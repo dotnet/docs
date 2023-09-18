@@ -12,7 +12,7 @@ In this tutorial, you learn how to:
 > [!div class="checklist"]
 >
 > - When to declare a primary constructor on your type
-> - How to call call primary constructors from other constructors
+> - How to call primary constructors from other constructors
 > - How to use primary constructor parameters in members of the type
 > - Where primary constructor parameters are stored
 

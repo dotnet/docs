@@ -47,10 +47,16 @@ In this part of the series you learn how to:
 
 ::: zone pivot="dotnet-8-0"
 
-* Install .NET 8 Preview 7.
+* Install .NET 8 Preview.
 * Install the `Microsoft.TemplateEngine.Authoring.Templates` template from the NuGet package feed.
 
   * Run the `dotnet new install Microsoft.TemplateEngine.Authoring.Templates` command from your terminal.
+
+::: zone-end
+
+::: zone pivot="dotnet-7-0,dotnet-6-0"
+
+[!INCLUDE [dotnet6-syntax-note](includes/dotnet6-syntax-note.md)]
 
 ::: zone-end
 
@@ -189,7 +195,7 @@ In the second group, the `<TargetFramework>` setting ensures that MSBuild runs p
 
 ::: zone pivot="dotnet-8-0"
 
-By default, the created project file includes [template authoring MSBuild tasks](https://aka.ms/templating-authoring-tools).
+The created project file includes [template authoring MSBuild tasks](https://aka.ms/templating-authoring-tools) and localization settings.
 
 ```xml
   <PropertyGroup>
@@ -202,7 +208,7 @@ By default, the created project file includes [template authoring MSBuild tasks]
 ```
 
 > [!IMPORTANT]
-> By default, _content_ also contains a _SampleTemplate_ folder. **Delete** this folder, as it was added to the authoring template for demonstration purposes.
+> The _content_ content folder contains a _SampleTemplate_ folder. **Delete** this folder, as it was added to the authoring template for demonstration purposes.
 
 These MSBuild tasks provide template validation and [localization of the templates](https://aka.ms/templating-localization) capabilities. Localization is disabled by default. To enable creation of localization files, set `LocalizeTemplates` to `true`.
 
@@ -262,7 +268,7 @@ Example templates: string extensions              stringext                [C#] 
 Example templates: async project                  consoleasync             [C#]              Common/Console/C#9
 ```
 
-If you uploaded the NuGet package to a NuGet feed, you can use the `dotnet new install <PACKAGE_ID>` command where `<PACKAGE_ID>` is the same as the `<PackageId>` setting from the _.csproj_ file. This package ID is the same as the NuGet package identifier.
+If you uploaded the NuGet package to a NuGet feed, you can use the `dotnet new install <PACKAGE_ID>` command where `<PACKAGE_ID>` is the same as the `<PackageId>` setting from the _.csproj_ file.
 
 ## Uninstall the template package
 

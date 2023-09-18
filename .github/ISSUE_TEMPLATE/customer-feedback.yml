@@ -1,10 +1,15 @@
 name: Feedback from live site
-title: "[Documentation feedback] - "
 description: |
   This template is hooked into the feedback control on the bottom of every page on the live site. It automatically fills in several fields for you. You should not use this template for other purposes.
-labels:
-  - ":watch: Not Triaged"
 body:
+  - type: textarea
+    id: feedback
+    validations:
+      required: true
+    attributes:
+      label: Short description
+      description: >-
+        Write a clear and concise description of the issue for this article.
   - type: textarea
     id: details
     validations:
@@ -12,7 +17,6 @@ body:
     attributes:
       label: Details
       description: >-
-        Write a clear and concise description of your feedback for the documentation. 
         Provide details that will add context and help the team address your feedback.
   - type: input
     id: pageUrl
@@ -27,8 +31,14 @@ body:
     attributes:
       label: Content source URL
   - type: input
-    id: documentId
+    id: documentVersionIndependentId
     validations:
       required: true
     attributes:
-      label: Document Id
+      label: Document Version Independent Id
+  - type: input
+    id: author
+    validations:
+      required: true
+    attributes:
+      label: Author

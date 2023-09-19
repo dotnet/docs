@@ -19,7 +19,7 @@ dotnet-install.ps1 [-Architecture <ARCHITECTURE>] [-AzureFeed]
     [-InstallDir <DIRECTORY>] [-JSonFile <JSONFILE>]
     [-NoCdn] [-NoPath] [-ProxyAddress] [-ProxyBypassList <LIST_OF_URLS>]
     [-ProxyUseDefaultCredentials] [-Quality <QUALITY>] [-Runtime <RUNTIME>]
-    [-SkipNonVersionedFiles] [-UncachedFeed] [KeepZip] [ZipPath <PATH>] [-Verbose]
+    [-SkipNonVersionedFiles] [-UncachedFeed] [-KeepZip] [-ZipPath <PATH>] [-Verbose]
     [-Version <VERSION>]
 
 Get-Help ./dotnet-install.ps1

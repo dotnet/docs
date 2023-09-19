@@ -7,7 +7,7 @@ ms.date: 10/02/2018
 
 The primary way of adding dependencies to a .NET library is referencing NuGet packages. NuGet package references allow you to quickly reuse and leverage already written functionality, but they're a common source of friction for .NET developers. Correctly managing dependencies is important to prevent changes in other .NET libraries from breaking your .NET library, and vice versa!
 
-## "Diamond" dependencies
+## Diamond dependencies
 
 It's common for a .NET project to have multiple versions of a package in its dependency tree. For example, an app depends on two NuGet packages, each of which depends on a different version of the same package. A diamond dependency now exists in the app's dependency graph.
 
@@ -72,7 +72,7 @@ Shared source packages are great for including small pieces of functionality. Fo
 
 ![Shared source project](./media/dependencies/shared-source-project.png)
 
-Shared source packages have some limitations. They can only be referenced by `PackageReference`, so older `packages.config` projects are excluded. Also, shared source packages are only usable by projects with the same language type. Because of these limitations, shared source packages are best used to share functionality within an open-source project.
+Shared source packages have some limitations. They can only be referenced by `PackageReference`, so older `packages.config` projects are excluded. Also, shared source packages are only usable by projects with the same language. Because of these limitations, shared source packages are best used to share functionality within an open-source project.
 
 ✔️ CONSIDER referencing shared source packages for small, internal pieces of functionality.
 

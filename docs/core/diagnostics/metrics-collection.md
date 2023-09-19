@@ -132,7 +132,7 @@ This tutorial shows one of the integrations available for OpenTelemetry metrics 
 Add a reference to the OpenTelemetry Prometheus exporter to the example app:
 
 ```dotnetcli
-dotnet add package OpenTelemetry.Exporter.Prometheus.AspNetCore --prerelease
+dotnet add package OpenTelemetry.Exporter.Prometheus.HttpListener --prerelease
 ```
 
 > [!NOTE]
@@ -145,7 +145,7 @@ Update `Program.cs` with OpenTelemetry configuration:
 In the preceding code:
 
 - `AddMeter("HatCo.HatStore")` configures OpenTelemetry to transmit all the metrics collected by the Meter defined in the app.
-- `AddPrometheusExporter` configures OpenTelemetry to:
+- `AddPrometheusHttpListener` configures OpenTelemetry to:
   - Expose Prometheus' metrics endpoint on port `9184`
   - Use the HttpListener.
 

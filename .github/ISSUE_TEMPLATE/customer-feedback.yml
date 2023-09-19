@@ -1,6 +1,6 @@
 name: Learn feedback control.
 description: |
-  ":no_entry: This template is hooked into the feedback control on the bottom of every page on the live site. It automatically fills in several fields for you. Don't use for other purposes. :no_entry:"
+  "⛔ This template is hooked into the feedback control on the bottom of every page on the live site. It automatically fills in several fields for you. Don't use for other purposes. ⛔"
 body:
   - type: markdown
     attributes:
@@ -28,7 +28,7 @@ body:
       label: Description
   - type: markdown
     attributes:
-      value: "## Article information"
+      value: "## 🚧 Article information 🚧"
   - type: markdown
     attributes:
       value: "*Don't modify the following fields*. They are automatically filled in for you. Doing so will disconnect your issue from the affected article. *Don't edit them*."

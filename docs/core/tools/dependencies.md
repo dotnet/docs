@@ -19,9 +19,6 @@ The `<PackageReference>` project file element has the following structure:
 
 The `Include` attribute specifies the ID of the package to add to the project. The `Version` attribute specifies the version to get. Versions are specified as per [NuGet version rules](/nuget/create-packages/dependency-versions#version-ranges).
 
-> [!NOTE]
-> If you're not familiar with project-file syntax, see the [MSBuild project reference](/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation for more information.
-
 Use conditions to add a dependency that's available only in a specific target, as shown in the following example:
 
 ```xml
@@ -30,15 +27,19 @@ Use conditions to add a dependency that's available only in a specific target, a
 
 The dependency in the preceding example will only be valid if the build is happening for that given target. The `$(TargetFramework)` in the condition is an MSBuild property that's being set in the project. For most common .NET applications, you don't need to do this.
 
-## Add a dependency by editing the project file
+## Add and remove dependencies
 
-To add a dependency, add a `<PackageReference>` element inside an `<ItemGroup>` element. You can add to an existing `<ItemGroup>` or create a new one. The following example uses the default console application project that's created by `dotnet new console`:
+You can add and remove dependencies by editing your project file or through [.NET CLI](index.md) commands.
+
+### Edit the project file
+
+To add a dependency, add a `<PackageReference>` item inside an `<ItemGroup>` element. You can add to an existing `<ItemGroup>` or create a new one.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    ...
   </PropertyGroup>
 
   <ItemGroup>
@@ -48,7 +49,9 @@ To add a dependency, add a `<PackageReference>` element inside an `<ItemGroup>` 
 </Project>
 ```
 
-## Add a dependency by using the CLI
+To remove a dependency, remove its `<PackageReference>` item from the project file.
+
+### Use the CLI
 
 To add a dependency, run the [dotnet add package](dotnet-add-package.md) command, as shown in the following example:
 
@@ -56,19 +59,23 @@ To add a dependency, run the [dotnet add package](dotnet-add-package.md) command
 dotnet add package Microsoft.EntityFrameworkCore
 ```
 
-## Remove a dependency by editing the project file
-
-To remove a dependency, remove its `<PackageReference>` element from the project file.
-
-## Remove a dependency by using the CLI
-
 To remove a dependency, run the [dotnet remove package](dotnet-remove-package.md) command, as shown in the following example:
 
 ```dotnetcli
 dotnet remove package Microsoft.EntityFrameworkCore
 ```
 
+## Tips
+
+- Don't include inputs to the restore operation in the *.targets* or *.props* file of a referenced package. These inputs can include `PackageReference` items, `ExcludeAssets` attributes, the NuGet feeds to use, or other NuGet configuration. The *.targets* and *.props* files from packages aren't used until after NuGet restore is complete. Anything needed for restore needs to be in the project file or *.targets* file of the project itself, not a package dependency.
+- If you want to use ASP.NET APIs in a console application or class library, add a [FrameworkReference](../project-sdk/msbuild-props.md#frameworkreference) item to your project file:
+
+  `<FrameworkReference Include="Microsoft.AspNetCore.App" />`
+
+  For more information, see [Use the ASP.NET Core shared framework](/aspnet/core/fundamentals/target-aspnetcore#use-the-aspnet-core-shared-framework).
+
 ## See also
 
 * [Package references in project files](../project-sdk/msbuild-props.md#reference-related-properties)
 * [dotnet list package command](dotnet-list-package.md)
+* [Dependencies (library guidance)](../../standard/library-guidance/dependencies.md)

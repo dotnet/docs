@@ -1091,7 +1091,7 @@ You can set the `AssetTargetFallback` property to one or more [target framework 
 
 The `DisableImplicitFrameworkReferences` property controls implicit `FrameworkReference` items when targeting .NET Core 3.0 and later versions. When targeting .NET Core 2.1 or .NET Standard 2.0 and earlier versions, it controls implicit [PackageReference](#packagereference) items to packages in a metapackage. (A metapackage is a framework-based package that consists only of dependencies on other packages.) This property also controls implicit references such as `System` and `System.Core` when targeting .NET Framework.
 
-Set this property to `true` to disable implicit `FrameworkReference` or [PackageReference](#packagereference) items. If you set this property to `true`, you can add explicit references to just the frameworks or packages you need.
+Set this property to `true` to disable implicit [FrameworkReference](#frameworkreference) or [PackageReference](#packagereference) items. If you set this property to `true`, you can add explicit references to just the frameworks or packages you need.
 
 ```xml
 <PropertyGroup>
@@ -1320,6 +1320,20 @@ The `InternalsVisibleTo` item generates an <xref:System.Runtime.CompilerServices
 ```
 
 If the friend assembly is signed, you can specify an optional `Key` metadata to specify its full public key. If you don't specify `Key` metadata and a `$(PublicKey)` is available, that key is used. Otherwise, no public key is added to the attribute.
+
+### FrameworkReference
+
+The `FrameworkReference` item defines a reference to a .NET shared framework.
+
+The `Include` attribute specifies the framework ID.
+
+The project file snippet in the following example references the Microsoft.AspNetCore.App shared framework.
+
+```xml
+<ItemGroup>
+  <FrameworkReference Include="Microsoft.AspNetCore.App" />
+</ItemGroup>
+```
 
 ### PackageReference
 

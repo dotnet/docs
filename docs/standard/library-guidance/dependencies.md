@@ -7,11 +7,11 @@ ms.date: 10/02/2018
 
 The primary way of adding dependencies to a .NET library is referencing NuGet packages. NuGet package references allow you to quickly reuse and leverage already written functionality, but they're a common source of friction for .NET developers. Correctly managing dependencies is important to prevent changes in other .NET libraries from breaking your .NET library, and vice versa!
 
-## Diamond dependencies
+## "Diamond" dependencies
 
-It's a common situation for a .NET project to have multiple versions of a package in its dependency tree. For example, an app depends on two NuGet packages, each of which depends on different versions of the same package. A diamond dependency now exists in the app's dependency graph.
+It's common for a .NET project to have multiple versions of a package in its dependency tree. For example, an app depends on two NuGet packages, each of which depends on a different version of the same package. A diamond dependency now exists in the app's dependency graph.
 
-![Diamond dependency](./media/dependencies/diamond-dependency.png "Diamond dependency")
+![Diamond dependency](./media/dependencies/diamond-dependency.png)
 
 At build time, NuGet analyzes all the packages that a project depends on, including the dependencies of dependencies. When multiple versions of a package are detected, rules are evaluated to pick one. Unifying packages is necessary because running side-by-side versions of an assembly in the same application is problematic in .NET.
 
@@ -27,7 +27,7 @@ It's not possible to know what packages will be used alongside your own. A good 
 
 ## NuGet dependency version ranges
 
-A package reference specifies the range of valid packages it allows. Typically, the package reference version in the project file is the minimum version and there's no maximum.
+A package reference specifies the range of valid packages it allows. Typically, the package reference version in the project file is the minimum version, and there's no maximum.
 
 ```xml
 <!-- Accepts any version 1.0 and above. -->
@@ -48,7 +48,7 @@ Because of NuGet's lowest applicable version rule, it isn't necessary to place a
 
 Upper version limits will cause NuGet to fail if there's a conflict. For example, one library accepts exactly 1.0 while another library requires 2.0 or above. While breaking changes may have been introduced in version 2.0, a strict or upper limit version dependency guarantees an error.
 
-![Diamond dependency conflict](./media/dependencies/diamond-dependency-conflict.png "Diamond dependency conflict")
+![Diamond dependency conflict](./media/dependencies/diamond-dependency-conflict.png)
 
 ❌ DO NOT have NuGet package references with no minimum version.
 
@@ -62,17 +62,17 @@ For more information, see [Package versioning](/nuget/concepts/package-versionin
 
 One way to reduce external NuGet package dependencies is to reference shared source packages. A shared source package contains [source code files](/nuget/reference/nuspec#including-content-files) that are included in a project when referenced. Because you're just including source code files that are compiled with the rest of your project, there's no external dependency and chance of conflict.
 
-Shared source packages are great for including small pieces of functionality. For example, a shared source package of helper methods for making HTTP calls.
+Shared source packages are great for including small pieces of functionality. For example, you might reference a shared source package of helper methods for making HTTP calls.
 
-![Shared source package](./media/dependencies/shared-source-package.png "Shared source package")
+![Shared source package](./media/dependencies/shared-source-package.png)
 
 ```xml
 <PackageReference Include="Microsoft.Extensions.Buffers.Testing.Sources" PrivateAssets="All" Version="1.0" />
 ```
 
-![Shared source project](./media/dependencies/shared-source-project.png "Shared source project")
+![Shared source project](./media/dependencies/shared-source-project.png)
 
-Shared source packages have some limitations. They can only be referenced by `PackageReference`, so older `packages.config` projects are excluded. Also shared source packages are only usable by projects with the same language type. Because of these limitations shared source packages are best used to share functionality within an open-source project.
+Shared source packages have some limitations. They can only be referenced by `PackageReference`, so older `packages.config` projects are excluded. Also, shared source packages are only usable by projects with the same language type. Because of these limitations, shared source packages are best used to share functionality within an open-source project.
 
 ✔️ CONSIDER referencing shared source packages for small, internal pieces of functionality.
 

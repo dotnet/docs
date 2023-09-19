@@ -18,6 +18,8 @@ body:
         - Missing information
         - Outdated article
         - Other (describe below)
+    validations:
+      required: true
   - type: textarea
     id: feedback
     validations:
@@ -31,7 +33,7 @@ body:
       value: "## Article information"
   - type: markdown
     attributes:
-      value: "*Don't modify the following fields*. The following fields are automatically filled in for you. Doing so will disconnect your issue from the affected article. *Don't edit them*."
+      value: "*Don't modify the following fields*. They are automatically filled in for you. Doing so will disconnect your issue from the affected article. *Don't edit them*."
   - type: input
     id: pageUrl
     validations:

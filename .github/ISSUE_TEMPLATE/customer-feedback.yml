@@ -26,7 +26,6 @@ body:
       required: true
     attributes:
       label: Description
-      placeholder: "Don't select this template from the 'New issue' menu. It's meant for use from the Microsoft Learn site. Several fields are filled in automatically."
   - type: markdown
     attributes:
       value: "## Article information"

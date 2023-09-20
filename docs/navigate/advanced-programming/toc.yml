@@ -126,7 +126,7 @@ items:
         href: ../../standard/parallel-programming/walkthrough-creating-a-dataflow-pipeline.md
       - name: Unlink dataflow blocks
         href: ../../standard/parallel-programming/how-to-unlink-dataflow-blocks.md
-      - name: Use dataflow in a Windows forms app
+      - name: Use dataflow in a Windows Forms app
         href: ../../standard/parallel-programming/walkthrough-using-dataflow-in-a-windows-forms-application.md
       - name: Cancel a dataflow block
         href: ../../standard/parallel-programming/how-to-cancel-a-dataflow-block.md
@@ -197,7 +197,7 @@ items:
       href: ../../standard/parallel-programming/how-to-implement-a-partitioner-for-static-partitioning.md
   - name: Lambda expressions in PLINQ and TPL
     href: ../../standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md
-  - name: further reading
+  - name: Further reading
     href: ../../standard/parallel-programming/for-further-reading-parallel-programming.md
 - name: Threading
   items:
@@ -212,7 +212,7 @@ items:
       href: ../../standard/threading/exceptions-in-managed-threads.md
     - name: Synchronize data for multithreading
       href: ../../standard/threading/synchronizing-data-for-multithreading.md
-    - name: foreground and background threads
+    - name: Foreground and background threads
       href: ../../standard/threading/foreground-and-background-threads.md
     - name: Managed and unmanaged threading in windows
       href: ../../standard/threading/managed-and-unmanaged-threading-in-windows.md
@@ -299,7 +299,7 @@ items:
           href: ../../standard/collections/thread-safe/when-to-use-a-thread-safe-collection.md
         - name: Add and take items from a BlockingCollection
           href: ../../standard/collections/thread-safe/how-to-add-and-take-items.md
-        - name: Use forEach to remove items in a BlockingCollection
+        - name: Use ForEach to remove items in a BlockingCollection
           href: ../../standard/collections/thread-safe/how-to-use-foreach-to-remove.md
         - name: Add and remove items from a ConcurrentDictionary
           href: ../../standard/collections/thread-safe/how-to-add-and-remove-items.md
@@ -394,7 +394,7 @@ items:
     - name: Overview
       href: ../../standard/garbage-collection/index.md
       displayName: garbage collection
-    - name: fundamentals
+    - name: Fundamentals
       href: ../../standard/garbage-collection/fundamentals.md
     - name: Workstation and server GC
       href: ../../standard/garbage-collection/workstation-server-gc.md

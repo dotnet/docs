@@ -91,6 +91,7 @@ GivePointerToComInterface(nint ptr);
 The COM interface generator respects the <xref:System.Runtime.InteropServices.MarshalAsAttribute> and <xref:System.Runtime.InteropServices.Marshalling.MarshalUsingAttribute> attributes to customize marshalling of parameters. For more information, see [Customize Parameter Marshalling](./customize-parameter-marshalling.md) If an interface uses `string`s, the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.StringMarshalling?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.StringMarshallingCustomType?displayProperty=nameWithType> properties will apply to all parameters and return types of `string` in the interface if they don't have other marshalling attributes.
 
 ## Implicit HRESULTs and PreserveSig
+
 COM methods in C# have a different signature than the native methods. Standard COM has a return type of HRESULT, a 4 byte code representing error and success states. This return value is hidden in the C# signature. The C# return value is converted into an additional parameter in the native signature, and the HRESULT is handled by the generated code, which will throw an exception if the HRESULT is an error value.
 
 For example, the following snippets show C# method signatures and the corresponding native signature the generator infers.

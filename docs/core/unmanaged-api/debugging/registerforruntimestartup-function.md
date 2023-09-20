@@ -16,7 +16,7 @@ ms.assetid: 35c7a18f-133a-4584-bd25-bb338568b0c6
 ---
 # RegisterForRuntimeStartup function
 
-Executes the callback when the .NET Core runtime starts in the specified process.
+Executes the callback when the .NET runtime starts in the specified process.
 
 ## Syntax
 
@@ -38,7 +38,7 @@ HRESULT RegisterForRuntimeStartup (
  [in] A callback that is invoked when the runtime starts. See [PSTARTUP_CALLBACK](pstartup_callback-function-pointer.md) function pointer.
 
  `parameter`\
- [in] data pointer passed to pfnCallback.
+ [in] data pointer passed to `pfnCallback`.
 
  `ppUnregisterToken`\
  [out] pointer to return the [UnregisterForRuntimeStartup](unregisterforruntimestartup-function.md) token.

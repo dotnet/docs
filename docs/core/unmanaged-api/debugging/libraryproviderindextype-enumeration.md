@@ -20,7 +20,7 @@ topic_type:
 ---
 # LIBRARY_PROVIDER_INDEX_TYPE enumeration
 
-The type of index information passed to the library provider is either the identity of the requested module or of the runtime (coreclr) module.
+The type of index information passed to the library provider is either the identity of the requested module or of the runtime (CoreCLR) module.
 
 ## Syntax
 
@@ -43,7 +43,7 @@ typedef enum
 
 ## Remarks
 
-The "index information" is the timestamp/file size on Windows or the build id on Linux/MacOS.
+The "index information" is the timestamp or file size on Windows, or the build ID on Linux and macOS.
 
 ## Requirements
 

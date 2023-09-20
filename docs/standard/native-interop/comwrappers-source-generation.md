@@ -129,6 +129,14 @@ int Method2(float i);
 
 The only supported interface base is [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown). Interfaces with an <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> with a value other values than <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown> are not supported in source-generated COM. Any interfaces without an `InterfaceTypeAttribute` are assumed to derive from `IUnknown`. This differs from built-in COM where the default is <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual>.
 
+## Marshalling defaults and support
+
+Source-generated COM has some different default marshalling behaviors from built in COM.
+
+- In built-in COM, all types had an implicit `[In]` attribute except for arrays of blittable elements, which had implicit `[In, Out]` attributes. In source-generated COM, all types, including arrays of blittable elements, have `[In]` semantics.
+
+- `[In]` and `[Out]` attributes are only allowed on arrays. If `[Out]` or `[In, Out]` behavior is required on other types, it is recommended to use the `in` and `out` parameter modifiers.
+
 ### Derived interfaces
 
 In the built-in COM system, if you had interfaces which derived from other COM interfaces, you would need to declare a shadowing method for each base method on the base interfaces with the `new` keyword. See [the design doc](https://github.com/dotnet/runtime/blob/main/docs/design/libraries/ComInterfaceGenerator/DerivedComInterfaces.md) for more information.
@@ -153,11 +161,31 @@ interface IDerived : IBase
 }
 ```
 
-The COM interface generator does not expect any shadowing of base methods.
+The COM interface generator does not expect any shadowing of base methods. To create a method that inherits from another, simply indicate the base interface as a C# base interface and add the derived interface's methods.
+
+```csharp
+[GeneratedComInterface]
+[Guid("3faca0d2-e7f1-4e9c-82a6-404fd6e0aab8")]
+interface IBase
+{
+    void Method1(int i);
+    void Method2(float i);
+}
+
+[GeneratedComInterface]
+[Guid("3faca0d2-e7f1-4e9c-82a6-404fd6e0aab8")]
+interface IDerived : IBase
+{
+    void Method3(long l);
+    void Method4(double d);
+}
+```
+
+Note that an interface with the `GeneratedComInterface` attribute can only inherit from one base interface that has the `GeneratedComInterface` attribute.
 
 ### Marshal APIs
 
-The APIs in <xref:System.Runtime.InteropServices.Marshal> are not compatible with source-generated COM. These methods should be replaced with their corresponding methods on StrategyBasedComWrappers.
+Some APIs in <xref:System.Runtime.InteropServices.Marshal> are not compatible with source-generated COM. These methods should be replaced with their corresponding methods on StrategyBasedComWrappers.
 
 ## See also
 

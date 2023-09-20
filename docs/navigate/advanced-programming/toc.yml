@@ -126,7 +126,7 @@ items:
         href: ../../standard/parallel-programming/walkthrough-creating-a-dataflow-pipeline.md
       - name: Unlink dataflow blocks
         href: ../../standard/parallel-programming/how-to-unlink-dataflow-blocks.md
-      - name: Use dataflow in a Windows Forms app
+      - name: Use dataflow in a Windows forms app
         href: ../../standard/parallel-programming/walkthrough-using-dataflow-in-a-windows-forms-application.md
       - name: Cancel a dataflow block
         href: ../../standard/parallel-programming/how-to-cancel-a-dataflow-block.md
@@ -197,7 +197,7 @@ items:
       href: ../../standard/parallel-programming/how-to-implement-a-partitioner-for-static-partitioning.md
   - name: Lambda expressions in PLINQ and TPL
     href: ../../standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md
-  - name: Further reading
+  - name: further reading
     href: ../../standard/parallel-programming/for-further-reading-parallel-programming.md
 - name: Threading
   items:
@@ -212,7 +212,7 @@ items:
       href: ../../standard/threading/exceptions-in-managed-threads.md
     - name: Synchronize data for multithreading
       href: ../../standard/threading/synchronizing-data-for-multithreading.md
-    - name: Foreground and background threads
+    - name: foreground and background threads
       href: ../../standard/threading/foreground-and-background-threads.md
     - name: Managed and unmanaged threading in windows
       href: ../../standard/threading/managed-and-unmanaged-threading-in-windows.md
@@ -299,7 +299,7 @@ items:
           href: ../../standard/collections/thread-safe/when-to-use-a-thread-safe-collection.md
         - name: Add and take items from a BlockingCollection
           href: ../../standard/collections/thread-safe/how-to-add-and-take-items.md
-        - name: Use ForEach to remove items in a BlockingCollection
+        - name: Use forEach to remove items in a BlockingCollection
           href: ../../standard/collections/thread-safe/how-to-use-foreach-to-remove.md
         - name: Add and remove items from a ConcurrentDictionary
           href: ../../standard/collections/thread-safe/how-to-add-and-remove-items.md
@@ -394,7 +394,7 @@ items:
     - name: Overview
       href: ../../standard/garbage-collection/index.md
       displayName: garbage collection
-    - name: Fundamentals
+    - name: fundamentals
       href: ../../standard/garbage-collection/fundamentals.md
     - name: Workstation and server GC
       href: ../../standard/garbage-collection/workstation-server-gc.md
@@ -416,4 +416,41 @@ items:
       href: ../../standard/garbage-collection/app-domain-resource-monitoring.md
     - name: Weak references
       href: ../../standard/garbage-collection/weak-references.md
-
+- name: Unmanaged API reference
+  items:
+  - name: Debugging
+    items:
+    - name: Overview
+      href: ../../core/unmanaged-api/debugging/index.md
+    - name: CLRCreateInstance function
+      href: ../../core/unmanaged-api/debugging/clrcreateinstance-function.md
+    - name: CloseCLREnumeration function
+      href: ../../core/unmanaged-api/debugging/closeclrenumeration-function.md
+    - name: CloseResumeHandle function
+      href: ../../core/unmanaged-api/debugging/closeresumehandle-function.md
+    - name: CreateVersionStringFromModule function
+      href: ../../core/unmanaged-api/debugging/createversionstringfrommodule-function.md
+    - name: CreateDebuggingInterfaceFromVersion function
+      href: ../../core/unmanaged-api/debugging/createdebugginginterfacefromversion-function.md
+    - name: CreateDebuggingInterfaceFromVersionEx function
+      href: ../../core/unmanaged-api/debugging/createdebugginginterfacefromversionex-function.md
+    - name: CreateDebuggingInterfaceFromVersion2 function
+      href: ../../core/unmanaged-api/debugging/createdebugginginterfacefromversion2-function.md
+    - name: CreateDebuggingInterfaceFromVersion3 function
+      href: ../../core/unmanaged-api/debugging/createdebugginginterfacefromversion3-function.md
+    - name: CreateProcessForLaunch function
+      href: ../../core/unmanaged-api/debugging/createprocessforlaunch-function.md
+    - name: EnumerateCLRs function
+      href: ../../core/unmanaged-api/debugging/enumerateclrs-function.md
+    - name: GetStartupNotificationEvent function
+      href: ../../core/unmanaged-api/debugging/getstartupnotificationevent-function.md
+    - name: RegisterForRuntimeStartup function
+      href: ../../core/unmanaged-api/debugging/registerforruntimestartup-function.md
+    - name: RegisterForRuntimeStartupEx function
+      href: ../../core/unmanaged-api/debugging/registerforruntimestartupex-function.md
+    - name: RegisterForRuntimeStartup3 function
+      href: ../../core/unmanaged-api/debugging/registerforruntimestartup3-function.md
+    - name: ResumeProcess function
+      href: ../../core/unmanaged-api/debugging/resumeprocess-function.md
+    - name: UnregisterForRuntimeStartup function
+      href: ../../core/unmanaged-api/debugging/unregisterforruntimestartup-function.md

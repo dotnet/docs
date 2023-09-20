@@ -1650,42 +1650,6 @@ items:
       href: dacprejitdata-structure.md
     - name: StackTrace_SimpleContext Structure
       href: stacktrace-simplecontext-structure.md
-  - name: .NET Core Debugging
-    href: dotnet-debugging.md
-    items:
-    - name: CLRCreateInstance Function
-      href: clrcreateinstance-function.md
-    - name: CloseCLREnumeration Function
-      href: closeclrenumeration-function.md
-    - name: CloseResumeHandle Function
-      href: closeresumehandle-function.md
-    - name: CreateVersionStringFromModule Function
-      href: createversionstringfrommodule-function.md
-    - name: CreateDebuggingInterfaceFromVersion Function
-      href: createdebugginginterfacefromversion-function.md
-    - name: CreateDebuggingInterfaceFromVersionEx Function
-      href: createdebugginginterfacefromversionex-function.md
-    - name: CreateDebuggingInterfaceFromVersion2 Function
-      href: createdebugginginterfacefromversion2-function.md
-    - name: CreateDebuggingInterfaceFromVersion3 Function
-      href: createdebugginginterfacefromversion3-function.md
-    - name: CreateProcessForLaunch Function
-    - name: CreateProcessForLaunch Function
-      href: createprocessforlaunch-function.md
-    - name: EnumerateCLRs Function
-      href: enumerateclrs-function.md
-    - name: GetStartupNotificationEvent Function
-      href: getstartupnotificationevent-function.md
-    - name: RegisterForRuntimeStartup Function
-      href: registerforruntimestartup-function.md
-    - name: RegisterForRuntimeStartupEx Function
-      href: registerforruntimestartupex-function.md
-    - name: RegisterForRuntimeStartup3 Function
-      href: registerforruntimestartup3-function.md
-    - name: ResumeProcess Function
-      href: resumeprocess-function.md
-    - name: UnregisterForRuntimeStartup Function
-      href: unregisterforruntimestartup-function.md
   - name: Silverlight Debugging
     href: silverlight-debugging.md
     items:

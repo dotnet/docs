@@ -42,7 +42,7 @@ HRESULT CreateDebuggingInterfaceFromVersion3 (
  [in] A string representing the application group ID of a sandboxed process running in macOS. Pass NULL if the process is not running in a sandbox on macOS or on other platforms.
 
  `pLibraryProvider`\
- [in] A callback interface instance for locating DBI and DAC. See [ICLRDebuggingLibraryProvider3](../../../framework/unmanaged-api/debugging/iclrdebugginglibraryprovider3-interface.md) interface.
+ [in] A callback interface instance for locating DBI and DAC. See [ICLRDebuggingLibraryProvider3](iclrdebugginglibraryprovider3-interface.md) interface.
 
  `ppCordb`\
  [out] Pointer to a pointer to a COM object (`IUnknown`). This object will be cast to an [ICorDebug](../../../framework/unmanaged-api/debugging/icordebug-interface.md) object before it is returned.

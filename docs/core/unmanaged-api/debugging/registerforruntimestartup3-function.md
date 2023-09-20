@@ -40,7 +40,7 @@ HRESULT RegisterForRuntimeStartup3 (
  [in] A string representing the application group ID of a sandboxed process running in Mac. Pass NULL if the process is not running in a sandbox and other platforms.
 
  `pLibraryProvider`\
- [in] A callback interface instance for locating DBI and DAC. See [ICLRDebuggingLibraryProvider3](../../../framework/unmanaged-api/debugging/iclrdebugginglibraryprovider3-interface.md) interface.
+ [in] A callback interface instance for locating DBI and DAC. See [ICLRDebuggingLibraryProvider3](iclrdebugginglibraryprovider3-interface.md) interface.
 
  `pfnCallback`\
  [in] A callback that is invoked when the runtime starts. See [PSTARTUP_CALLBACK](pstartup_callback-function-pointer.md) function pointer.

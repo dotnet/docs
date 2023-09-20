@@ -18,7 +18,7 @@ ms.assetid: 67739617-6add-41a9-9de5-a3200c3109ce
 topic_type:
   - "apiref"
 ---
-# ICLRDebuggingLibraryProvider3 Interface
+# ICLRDebuggingLibraryProvider3 interface
 
 Includes callback methods that allow common language runtime version-specific debugging libraries to be located and loaded on demand for .NET Core regular and single-file applications. This interface is required by the [RegisterForRuntimeStartup3](../../../core/unmanaged-api/debugging/registerforruntimestartup3-function.md) and [CreateDebuggingInterfaceFromVersion3](../../../core/unmanaged-api/debugging/createdebugginginterfacefromversion3-function.md) methods. It is supported by the `ICLRDebugging::OpenVirtualProcess` method acquired with dbgshim's [CLRCreateInstance](../../../core/unmanaged-api/debugging/clrcreateinstance-function.md) API.
 
@@ -41,5 +41,5 @@ Includes callback methods that allow common language runtime version-specific de
 
 ## See also
 
-- [ICLRDebuggingLibraryProvider2 Interface](iclrdebugginglibraryprovider2-interface.md)
-- [ICLRDebuggingLibraryProvider Interface](../../../framework/unmanaged-api/debugging/iclrdebugginglibraryprovider-interface.md)
+- [ICLRDebuggingLibraryProvider2 interface](iclrdebugginglibraryprovider2-interface.md)
+- [ICLRDebuggingLibraryProvider interface](../../../framework/unmanaged-api/debugging/iclrdebugginglibraryprovider-interface.md)

@@ -18,7 +18,7 @@ ms.assetid: 5e3c3958-80bb-43b1-a96b-dd3e6dbd9cd7
 topic_type:
   - "apiref"
 ---
-# CloseCLREnumeration Function
+# CloseCLREnumeration function
 
 Closes any valid common language runtime (CLR) continue-startup events located in an array of handles returned by the [EnumerateCLRs function](enumerateclrs-function.md), and frees the memory for the handle and string path arrays.
 
@@ -43,15 +43,15 @@ HRESULT CloseCLREnumeration (
  `dwArrayLength`\
  [in] DWORD that contains the size (length) of either `pHandleArray` or `pStringArray` (they are the same).
 
-## Return Value
+## Return value
 
- S_OK
+ `S_OK`\
  Handles opened by the [EnumerateCLRs function](enumerateclrs-function.md) are closed, and memory allocated for the handle and string arrays is freed.
 
- E_INVALIDARG
+ `E_INVALIDARG`\
  The length of `pHandleArray` does not match the length that is passed in `dwArrayLength`.
 
- E_FAIL (or other E_ return codes)
+ `E_FAIL` (or other `E_` return codes)\
  The function is unable to free the memory for `pHandleArray` and `pStringArray`.
 
 ## Requirements

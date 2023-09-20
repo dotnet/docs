@@ -18,7 +18,7 @@ ms.assetid: f8d50cb3-ec4f-4529-8fe3-bd61fd28e13c
 topic_type:
   - "apiref"
 ---
-# EnumerateCLRs Function
+# EnumerateCLRs function
 
 Provides a mechanism for enumerating the CLRs in a process.
 
@@ -47,18 +47,18 @@ HRESULT EnumerateCLRs (
  `pdwArrayLengthOut`\
  [out] Pointer to a DWORD that contains the length of the equally sized `ppHandleArrayOut` and `pdwArrayLengthOut`.
 
-## Return Value
+## Return value
 
- S_OK
+ `S_OK`\
  The number of CLRs in the process was successfully determined, and the corresponding handle and path arrays were properly filled.
 
- E_INVALIDARG
+ `E_INVALIDARG`\
  Either `ppHandleArrayOut` or `ppStringArrayOut` is null, or `pdwArrayLengthOut` is null.
 
- E_OUTOFMEMORY
+ `E_OUTOFMEMORY`\
  The function is unable to allocate enough memory for the handle and path arrays.
 
- E_FAIL (or other E_ return codes)
+ `E_FAIL` (or other `E_` return codes)\
  Unable to enumerate loaded CLRs.
 
 ## Remarks

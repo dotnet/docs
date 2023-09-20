@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: CLRCreateInstance for .NET Core Function"
-title: "CLRCreateInstance for .NET Core Function"
+description: "Learn more about: CLRCreateInstance Function"
+title: "CLRCreateInstance Function"
 ms.date: "03/25/2022"
 api_name:
   - "CLRCreateInstance"
@@ -20,7 +20,7 @@ ms.assetid: 5de13327-96c6-4697-a89e-b8bf40717855
 topic_type:
   - "apiref"
 ---
-# CLRCreateInstance for .NET Core Function
+# CLRCreateInstance function
 
 Provides the [ICLRDebugging](../../../framework/unmanaged-api/debugging/iclrdebugging-interface.md) interface.
 
@@ -45,22 +45,22 @@ HRESULT CLRCreateInstance (
  `ppInterface`\
  [out] A [ICLRDebugging](../../../framework/unmanaged-api/debugging/iclrdebugging-interface.md) instance.
 
-## Return Value
+## Return value
 
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
 
-|HRESULT|Description|
-|-------------|-----------------|
-|S_OK|The method completed successfully.|
-|E_POINTER|`ppInterface` is null.|
+| HRESULT     | Description                        |
+|-------------|------------------------------------|
+| `S_OK`      | The method completed successfully. |
+| `E_POINTER` | `ppInterface` is null.             |
 
 ## Remarks
 
  The following table shows the supported combinations for `clsid` and `riid`.
 
-|`clsid`|`riid`|
-|--------------|------------|
-|CLSID_CLRDebugging|IID_ICLRDebugging|
+| `clsid`            | `riid`            |
+|--------------------|-------------------|
+| CLSID_CLRDebugging | IID_ICLRDebugging |
 
  The following code shows how to use `CLRCreateInstance` to get to get the interface:
 

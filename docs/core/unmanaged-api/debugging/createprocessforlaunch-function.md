@@ -18,7 +18,7 @@ ms.assetid: 3d2fe9bd-75ef-4364-84a6-da1e1994ac1a
 topic_type:
   - "apiref"
 ---
-# CreateProcessForLaunch Function
+# CreateProcessForLaunch function
 
 A subset of the Windows CreateProcess that can be supported cross-platform.
 
@@ -55,12 +55,12 @@ HRESULT CreateProcessForLaunch (
  `pResumeHandle`\
  [out] The handle to use with ResumeProcess to resume the process if bSuspendProcess is TRUE.
 
-## Return Value
+## Return value
 
- S_OK
+ `S_OK`\
  The process was successfully created.
 
- E_FAIL (or other E_ return codes)
+ `E_FAIL`\ (or other `E_` return codes)
  The launch failed.
 
 ## Remarks

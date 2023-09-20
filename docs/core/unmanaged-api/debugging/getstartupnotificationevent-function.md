@@ -16,7 +16,7 @@ ms.assetid: c94b1b61-045a-4695-bacd-0f18c5acc246
 topic_type:
   - "apiref"
 ---
-# GetStartupNotificationEvent Function
+# GetStartupNotificationEvent function
 
 Creates or opens an event handle that will be signaled upon by any common language runtime (CLR) that is loading in the specified target process. This API is Windows only.
 
@@ -37,15 +37,15 @@ HRESULT GetStartupNotificationEvent (
  `phStartupEvent`\
  [out] A pointer to a handle that will be signaled by a CLR on startup.
 
-## Return Value
+## Return value
 
- S_OK
+ `S_OK`\
  Successfully obtained the handle to the startup notification event.
 
- E_INVALIDARG
+ `E_INVALIDARG`\
  `phStartupEvent` is null or `debuggeePID` does not refer to a process that is currently running.
 
- E_FAIL (or other E_ return codes)
+ `E_FAIL` (or other `E_` return codes)\
  Unable to obtain the handle to the startup notification event.
 
 ## Remarks

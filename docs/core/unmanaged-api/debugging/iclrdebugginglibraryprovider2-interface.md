@@ -18,7 +18,7 @@ ms.assetid: 67739617-6add-41a9-9de5-a3200c3109ce
 topic_type:
   - "apiref"
 ---
-# ICLRDebuggingLibraryProvider2 Interface
+# ICLRDebuggingLibraryProvider2 interface
 
 Includes the [ProvideLibrary2](iclrdebugginglibraryprovider2-providelibrary2-method.md) method, which allows the debugger to provide a path to a version-specific debugging library.
 
@@ -40,5 +40,5 @@ Includes the [ProvideLibrary2](iclrdebugginglibraryprovider2-providelibrary2-met
 
 ## See also
 
-- [ICLRDebuggingLibraryProvider3 Interface](iclrdebugginglibraryprovider3-interface.md)
-- [ICLRDebuggingLibraryProvider Interface](../../../framework/unmanaged-api/debugging/iclrdebugginglibraryprovider-interface.md)
+- [ICLRDebuggingLibraryProvider3 interface](iclrdebugginglibraryprovider3-interface.md)
+- [ICLRDebuggingLibraryProvider interface](../../../framework/unmanaged-api/debugging/iclrdebugginglibraryprovider-interface.md)

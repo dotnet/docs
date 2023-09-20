@@ -14,9 +14,9 @@ helpviewer_keywords:
   - ".NET Core, debugging"
 ms.assetid: 35c7a18f-133a-4584-bd25-bb338568b0c6
 ---
-# RegisterForRuntimeStartupEx Function for .NET Core
+# RegisterForRuntimeStartupEx function
 
-Executes the callback when the .NET Core runtime starts in the specified process.
+Executes the callback when the .NET runtime starts in the specified process.
 
 ## Syntax
 
@@ -47,7 +47,7 @@ HRESULT RegisterForRuntimeStartupEx (
  `ppUnregisterToken`\
  [out] pointer to return the [UnregisterForRuntimeStartup](unregisterforruntimestartup-function.md) token.
 
-## Return Value
+## Return value
 
  `S_OK`\
  The startup callback was successfully registered.

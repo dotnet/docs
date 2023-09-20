@@ -14,7 +14,7 @@ helpviewer_keywords:
   - ".NET Core, debugging"
 ms.assetid: 35c7a18f-133a-4584-bd25-bb338568b0c6
 ---
-# UnregisterForRuntimeStartup Function for .NET Core
+# UnregisterForRuntimeStartup function
 
 Stops/cancels runtime startup notification.
 
@@ -31,7 +31,7 @@ HRESULT UnregisterForRuntimeStartup (
  `pUnregisterToken`\
  [in] The token from the [RegisterForRuntimeStartup](registerforruntimestartup-function.md) APIs.
 
-## Return Value
+## Return value
 
  `S_OK`\
  The runtime startup callback was successfully unregistered.

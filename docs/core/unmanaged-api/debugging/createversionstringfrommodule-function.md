@@ -18,7 +18,7 @@ ms.assetid: 3d2fe9bd-75ef-4364-84a6-da1e1994ac1a
 topic_type:
   - "apiref"
 ---
-# CreateVersionStringFromModule Function
+# CreateVersionStringFromModule function
 
 Creates a version string from a common language runtime (CLR) path in a target process.
 
@@ -52,21 +52,21 @@ HRESULT CreateVersionStringFromModule (
  `pdwLength`\
  [out] Length of the version string returned by `pBuffer`.
 
-## Return Value
+## Return value
 
- S_OK
+ `S_OK`\
  The version string for the target CLR was successfully returned in `pBuffer`.
 
- E_INVALIDARG
+ `E_INVALIDARG`\
  `szModuleName` is null, or either `pBuffer` or `cchBuffer` is null. `pBuffer` and `cchBuffer` must both be null or non-null.
 
- HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)
+ `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)`\
  `pdwLength` is greater than `cchBuffer`. This may be an expected result if you have passed null for both `pBuffer` and `cchBuffer`, and queried the necessary buffer size by using `pdwLength`.
 
- HRESULT_FROM_WIN32(ERROR_MOD_NOT_FOUND)
+ `HRESULT_FROM_WIN32(ERROR_MOD_NOT_FOUND)`\
  `szModuleName` does not contain a path to a valid CLR in the target process.
 
- E_FAIL (or other E_ return codes)
+ `E_FAIL` (or other `E_` return codes)\
  `pidDebuggee` does not refer to a valid process, or other failure.
 
 ## Remarks

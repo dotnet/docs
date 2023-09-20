@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: CreateDebuggingInterfaceFromVersion Function for .NET Core"
-title: "CreateDebuggingInterfaceFromVersion Function for .NET Core"
+description: "Learn more about: CreateDebuggingInterfaceFromVersion Function"
+title: "CreateDebuggingInterfaceFromVersion Function"
 ms.date: "03/21/2022"
 f1_keywords:
   - "CreateDebuggingInterfaceFromVersion"
@@ -14,7 +14,7 @@ helpviewer_keywords:
   - ".NET Core, debugging"
 ms.assetid: 35c7a18f-133a-4584-bd25-bb338568b0c6
 ---
-# CreateDebuggingInterfaceFromVersion Function for .NET Core
+# CreateDebuggingInterfaceFromVersion function
 
 Accepts a common language runtime (CLR) version string that is returned from the [CreateVersionStringFromModule function](createversionstringfrommodule-function.md), and returns a corresponding debugger interface (typically, [ICorDebug](../../../framework/unmanaged-api/debugging/icordebug-interface.md)).
 
@@ -35,7 +35,7 @@ HRESULT CreateDebuggingInterfaceFromVersion (
  `ppCordb`\
  [out] Pointer to a pointer to a COM object (`IUnknown`). This object will be cast to an [ICorDebug](../../../framework/unmanaged-api/debugging/icordebug-interface.md) object before it is returned.
 
-## Return Value
+## Return value
 
  `S_OK`\
  `ppCordb` references a valid object that implements the [ICorDebug interface](../../../framework/unmanaged-api/debugging/icordebug-interface.md) interface.

@@ -15,7 +15,7 @@ helpviewer_keywords:
 topic_type:
   - "apiref"
 ---
-# PSTARTUP_CALLBACK Function Pointer
+# PSTARTUP_CALLBACK function Pointer
 
 Points to a function that's called when the .NET runtime has started for the [RegisterForRuntimeStartup](registerforruntimestartup-function.md) API.
 

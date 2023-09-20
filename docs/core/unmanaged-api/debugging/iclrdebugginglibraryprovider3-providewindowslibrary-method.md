@@ -19,7 +19,7 @@ ms.assetid: 86f06245-9517-49be-8d8c-ca5deaf34c02
 topic_type:
   - "apiref"
 ---
-# ICLRDebuggingLibraryProvider3::ProvideWindowsLibrary Method
+# ICLRDebuggingLibraryProvider3::ProvideWindowsLibrary method
 
 Gets a library provider callback interface that allows common language runtime (CLR) version-specific debugging libraries to be located and loaded on demand.
 
@@ -55,15 +55,13 @@ HRESULT ProvideWindowsLibrary (
 `ppResolvedModulePath` \
 [out] This is a null terminated path to the module dll. On Windows it should be allocated with CoTaskMemAlloc. On Unix it should be allocated with malloc. Failure leaves it untouched. See security note below!
 
-## Return Value
+## Return value
 
-This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
+This method returns the following specific HRESULT as well as HRESULT errors that indicate method failure.
 
-|HRESULT|Description|
-|-------------|-----------------|
-|S_OK|The method completed successfully.|
-
-## Exceptions
+| HRESULT | Description                        |
+|---------|------------------------------------|
+| `S_OK`  | The method completed successfully. |
 
 ## Remarks
 
@@ -85,8 +83,3 @@ The debugger may use any available means to locate or procure the debugging modu
 **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
 
 **.NET Versions:** Available since .NET Core 2.1
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

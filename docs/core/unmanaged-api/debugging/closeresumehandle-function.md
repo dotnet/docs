@@ -18,7 +18,7 @@ ms.assetid: 5e3c3958-80bb-43b1-a96b-dd3e6dbd9cd7
 topic_type:
   - "apiref"
 ---
-# CloseResumeHandle Function
+# CloseResumeHandle function
 
 Closes the handle returned by the [CreateProcessForLaunch function](createprocessforlaunch-function.md).
 
@@ -35,12 +35,12 @@ HRESULT CloseResumeHandle (
  `hResumeHandle`\
  [in] The resume handle returned by [CreateProcessForLaunch function](createprocessforlaunch-function.md).
 
-## Return Value
+## Return value
 
- S_OK
+ `S_OK`\
  The handle was successfully closed.
 
- E_FAIL (or other E_ return codes)
+ `E_FAIL` (or other `E_` return codes)\
  The handle was invalid.
 
 ## Requirements

@@ -43,13 +43,13 @@ Provides a mechanism for enumerating the CLRs in a process.
 Creates or opens an event handle that will be signaled upon by any common language runtime (CLR) that is loading in the specified target process.
 
 [RegisterForRuntimeStartup function](registerforruntimestartup-function.md)\
-Executes the callback when the .NET Core runtime starts in the specified process.
+Executes the callback when the .NET runtime starts in the specified process.
 
 [RegisterForRuntimeStartupEx function](registerforruntimestartupex-function.md)\
-Executes the callback when the .NET Core runtime starts in the specified process.
+Executes the callback when the .NET runtime starts in the specified process.
 
 [RegisterForRuntimeStartup3 function](registerforruntimestartup3-function.md)\
-Executes the callback when the .NET Core runtime starts in the specified process.
+Executes the callback when the .NET runtime starts in the specified process.
 
 [ResumeProcess function](resumeprocess-function.md)\
 Resumes the process using the resume handle returned by the [CreateProcessForLaunch function](createprocessforlaunch-function.md).

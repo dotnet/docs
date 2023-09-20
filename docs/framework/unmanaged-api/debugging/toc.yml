@@ -73,18 +73,6 @@ items:
       items:
       - name: ProvideLibrary Method
         href: iclrdebugginglibraryprovider-providelibrary-method.md
-    - name: ICLRDebuggingLibraryProvider2 Interface
-      href: iclrdebugginglibraryprovider2-interface.md
-      items:
-      - name: ProvideLibrary2 Method
-        href: iclrdebugginglibraryprovider2-providelibrary2-method.md
-    - name: ICLRDebuggingLibraryProvider3 Interface
-      href: iclrdebugginglibraryprovider3-interface.md
-      items:
-      - name: ProvideWindowsLibrary Method
-        href: iclrdebugginglibraryprovider3-providewindowslibrary-method.md
-      - name: ProvideUnixLibrary Method
-        href: iclrdebugginglibraryprovider3-provideunixlibrary-method.md
     - name: ICLRMetadataLocator Interface
       href: iclrmetadatalocator-interface.md
       items:
@@ -1503,8 +1491,6 @@ items:
       href: clrdatacreateinstance-function.md
     - name: PFN_CLRDataCreateInstance Function Pointer
       href: pfn-clrdatacreateinstance-function-pointer.md
-    - name: PSTARTUP_CALLBACK Function Pointer
-      href: pstartup_callback-function-pointer.md
   - name: Debugging Enumerations
     href: debugging-enumerations.md
     items:
@@ -1582,8 +1568,6 @@ items:
       href: corgcreferencetype-enumeration.md
     - name: ILCodeKind Enumeration
       href: ilcodekind-enumeration.md
-    - name: LIBRARY_PROVIDER_INDEX_TYPE Enumeration
-      href: libraryproviderindextype-enumeration.md
     - name: LoggingLevelEnum Enumeration
       href: logginglevelenum-enumeration.md
     - name: LogSwitchCallReason Enumeration

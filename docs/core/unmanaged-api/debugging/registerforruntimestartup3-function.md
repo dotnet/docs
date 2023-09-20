@@ -43,7 +43,7 @@ HRESULT RegisterForRuntimeStartup3 (
  [in] A callback interface instance for locating DBI and DAC. See [ICLRDebuggingLibraryProvider3](../../../framework/unmanaged-api/debugging/iclrdebugginglibraryprovider3-interface.md) interface.
 
  `pfnCallback`\
- [in] A callback that is invoked when the runtime starts. See [PSTARTUP_CALLBACK](../../../framework/unmanaged-api/debugging/pstartup_callback-function-pointer.md) function pointer.
+ [in] A callback that is invoked when the runtime starts. See [PSTARTUP_CALLBACK](pstartup_callback-function-pointer.md) function pointer.
 
  `parameter`\
  [in] data pointer passed to pfnCallback.
@@ -70,10 +70,10 @@ This is the only register function that works for single-file applications.
 
 ## Requirements
 
- **Platforms:** See [.NET Core supported operating systems](../../../core/install/windows.md?pivots=os-windows).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** dbgshim.h
 
  **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
 
- **.NET Versions:** [!INCLUDE[net_core_60](../../../../includes/net-core-60-md.md)]
+ **.NET Versions:** Available since .NET 6.0

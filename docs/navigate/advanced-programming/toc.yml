@@ -444,6 +444,26 @@ items:
       href: ../../core/unmanaged-api/debugging/enumerateclrs-function.md
     - name: GetStartupNotificationEvent function
       href: ../../core/unmanaged-api/debugging/getstartupnotificationevent-function.md
+    - name: ICLRDebuggingLibraryProvider2 interface
+      items:
+      - name: Overview
+        href: iclrdebugginglibraryprovider2-interface.md
+        displayName: ICLRDebuggingLibraryProvider2
+      - name: ProvideLibrary2 Method
+        href: iclrdebugginglibraryprovider2-providelibrary2-method.md
+    - name: ICLRDebuggingLibraryProvider3 interface
+      items:
+      - name: Overview
+        href: iclrdebugginglibraryprovider3-interface.md
+        displayName: ICLRDebuggingLibraryProvider3
+      - name: ProvideWindowsLibrary method
+        href: iclrdebugginglibraryprovider3-providewindowslibrary-method.md
+      - name: ProvideUnixLibrary method
+        href: iclrdebugginglibraryprovider3-provideunixlibrary-method.md
+    - name: LIBRARY_PROVIDER_INDEX_TYPE enumeration
+      href: libraryproviderindextype-enumeration.md
+    - name: PSTARTUP_CALLBACK function pointer
+      href: ../../core/unmanaged-api/debugging/pstartup_callback-function-pointer.md
     - name: RegisterForRuntimeStartup function
       href: ../../core/unmanaged-api/debugging/registerforruntimestartup-function.md
     - name: RegisterForRuntimeStartupEx function

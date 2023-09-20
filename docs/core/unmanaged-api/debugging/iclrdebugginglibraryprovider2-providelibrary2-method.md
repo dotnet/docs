@@ -1,35 +1,33 @@
 ---
-description: "Learn more about: ICLRDebuggingLibraryProvider3::ProvideWindowsLibrary Method"
-title: "ICLRDebuggingLibraryProvider3::ProvideWindowsLibrary Method"
+description: "Learn more about: ICLRDebuggingLibraryProvider2::ProvideLibrary2 Method"
+title: "ICLRDebuggingLibraryProvider2::ProvideLibrary2 Method"
 ms.date: "03/30/2017"
 api_name:
-  - "ICLRDebuggingLibraryProvider3.ProvideWindowsLibrary Method"
-api_location: 
+  - "ICLRDebuggingLibraryProvider2.ProvideLibrary2 Method"
+api_location:
   - "dbgshim.dll"
   - "libdbgshim.so"
   - "libdbgshim.dylib"
 api_type:
   - "COM"
 f1_keywords:
-  - "ICLRDebuggingLibraryProvider3::ProvideWindowsLibrary"
+  - "ICLRDebuggingLibraryProvider2::ProvideLibrary2"
 helpviewer_keywords:
-  - "ProvideWindowsLibrary method [.NET Core debugging]"
-  - "ICLRDebuggingLibraryProvider3::ProvideWindowsLibrary method [.NET Core debugging]"
+  - "ProvideLibrary method [.NET Core debugging]"
+  - "ICLRDebuggingLibraryProvider2::ProvideLibrary2 method [.NET Core debugging]"
 ms.assetid: 86f06245-9517-49be-8d8c-ca5deaf34c02
 topic_type:
   - "apiref"
 ---
-# ICLRDebuggingLibraryProvider3::ProvideWindowsLibrary Method
+# ICLRDebuggingLibraryProvider2::ProvideLibrary2 Method
 
-Gets a library provider callback interface that allows common language runtime (CLR) version-specific debugging libraries to be located and loaded on demand.
+Allows the debugger to provide a path to a version-specific common language runtime (CLR) debugging library.
 
 ## Syntax
 
 ```cpp
-HRESULT ProvideWindowsLibrary (
+HRESULT ProvideLibrary2 (
      [in] const WCHAR* pwszFileName,
-     [in] const WCHAR* pwszRuntimeModule,
-     [in] LIBRARY_PROVIDER_INDEX_TYPE indexType,
      [in] DWORD dwTimestamp,
      [in] DWORD dwSizeOfImage,
      [out] LPWSTR* ppResolvedModulePath);
@@ -39,12 +37,6 @@ HRESULT ProvideWindowsLibrary (
 
 `pwszFilename` \
 [in] The name of the module being requested.
-
-`pwszRuntimeModule` \
-[in] The runtime or single-file module path.
-
-`indexType` \
-[in] The type of index information (dwTimestamp/dwSizeOfImage) provided. See [LIBRARY_PROVIDER_INDEX_TYPE](libraryproviderindextype-enumeration.md) enum.
 
 `dwTimestamp` \
 [in] The date time stamp stored in the COFF file header of PE files.
@@ -67,24 +59,24 @@ This method returns the following specific HRESULTs as well as HRESULT errors th
 
 ## Remarks
 
-`ProvideWindowsLibrary` allows the debugger to provide modules that are needed for debugging specific CLR files such as mscordbi.dll and mscordacwks.dll.
+`ProvideLibrary2` allows the debugger to provide modules that are needed for debugging specific CLR files such as mscordbi.dll and mscordacwks.dll.
 
 The debugger may use any available means to locate or procure the debugging module.
 
 > [!IMPORTANT]
-> This feature allows the API caller to provide modules that contain executable, and possibly malicious, code. As a security precaution, the caller should not use `ProvideWindowsLibrary` to distribute any code that it is not willing to execute itself.
+> This feature allows the API caller to provide modules that contain executable, and possibly malicious, code. As a security precaution, the caller should not use `ProvideLibrary2` to distribute any code that it is not willing to execute itself.
 >
 > If a serious security issue is discovered in an already released library, such as mscordbi.dll or mscordacwks.dll, the shim can be patched to recognize the bad versions of the files. The shim can then issue requests for the patched versions of the files and reject the bad versions if they are provided in response to any request. This can occur only if the user has patched to a new version of the shim. Unpatched versions will remain vulnerable.
 
 ## Requirements
 
-**Platforms:** See [.NET Core supported operating systems](../../../core/install/windows.md?pivots=os-windows).  
-  
-**Header:** dbgshim.h  
-  
+**Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
+
+**Header:** dbgshim.h
+
 **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
-  
-**.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]
+
+**.NET Versions:** Available since .NET Core 2.1
 
 ## See also
 

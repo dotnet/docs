@@ -35,7 +35,7 @@ HRESULT RegisterForRuntimeStartup (
  [in] The process id of the target process.
 
  `pfnCallback`\
- [in] A callback that is invoked when the runtime starts. See [PSTARTUP_CALLBACK](../../../framework/unmanaged-api/debugging/pstartup_callback-function-pointer.md) function pointer.
+ [in] A callback that is invoked when the runtime starts. See [PSTARTUP_CALLBACK](pstartup_callback-function-pointer.md) function pointer.
 
  `parameter`\
  [in] data pointer passed to pfnCallback.
@@ -60,10 +60,10 @@ The callback is passed the proper ICorDebug instance for the version of the runt
 
 ## Requirements
 
- **Platforms:** See [.NET Core supported operating systems](../../../core/install/windows.md?pivots=os-windows).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** dbgshim.h
 
  **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
 
- **.NET Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]
+ **.NET Versions:** Available since .NET Core 2.1

@@ -52,7 +52,7 @@ When tiered compilation is enabled, a method may have more than one native code 
 
 **Library:** CorGuids.lib
 
-**.NET Framework Versions:** [!INCLUDE[net_core_21](../../../../includes/net-core-21-md.md)]
+**.NET Framework Versions:** Available since .NET Core 2.1
 
 ## See also
 

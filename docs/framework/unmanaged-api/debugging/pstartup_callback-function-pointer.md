@@ -18,7 +18,7 @@ topic_type:
 ---
 # PSTARTUP_CALLBACK Function Pointer
 
-Points to a function that is called when the .NET Core runtime has started for the [RegisterForRuntimeStartup](registerforruntimestartup-function.md) API.
+Points to a function that is called when the .NET Core runtime has started for the [RegisterForRuntimeStartup](../../../core/unmanaged-api/debugging/registerforruntimestartup-function.md) API.
   
 ## Syntax  
   

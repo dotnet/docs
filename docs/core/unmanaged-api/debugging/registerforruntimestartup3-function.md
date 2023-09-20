@@ -2,13 +2,13 @@
 description: "Learn more about: RegisterForRuntimeStartup3 Function"
 title: "RegisterForRuntimeStartup3 Function"
 ms.date: "03/21/2022"
-f1_keywords: 
+f1_keywords:
   - "RegisterForRuntimeStartup3"
-api_location: 
+api_location:
   - "dbgshim.dll"
   - "libdbgshim.so"
   - "libdbgshim.dylib"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "RegisterForRuntimeStartup3 function"
   - "debugging API [.NET Core]"
   - ".NET Core, debugging"
@@ -17,48 +17,48 @@ ms.assetid: 35c7a18f-133a-4584-bd25-bb338568b0c6
 # RegisterForRuntimeStartup3 Function for .NET Core
 
 Executes the callback when the .NET Core runtime starts in the specified process.
-  
-## Syntax  
-  
-```cpp  
-HRESULT RegisterForRuntimeStartup3 (  
+
+## Syntax
+
+```cpp
+HRESULT RegisterForRuntimeStartup3 (
     [in] DWORD dwProcessId,
     [in] LPCWSTR lpApplicationGroupId,
     [in] ICLRDebuggingLibraryProvider3* pLibraryProvider,
     [in] PSTARTUP_CALLBACK pfnCallback,
     [in] PVOID parameter,
     [out] PVOID *ppUnregisterToken)
-);  
-```  
-  
-## Parameters  
+);
+```
+
+## Parameters
 
  `dwProcessId`\
  [in] The process id of the target process.
-  
+
  `lpApplicationGroupId`\
  [in] A string representing the application group ID of a sandboxed process running in Mac. Pass NULL if the process is not running in a sandbox and other platforms.
 
  `pLibraryProvider`\
- [in] A callback interface instance for locating DBI and DAC. See [ICLRDebuggingLibraryProvider3](iclrdebugginglibraryprovider3-interface.md) interface.  
+ [in] A callback interface instance for locating DBI and DAC. See [ICLRDebuggingLibraryProvider3](../../../framework/unmanaged-api/debugging/iclrdebugginglibraryprovider3-interface.md) interface.
 
  `pfnCallback`\
- [in] A callback that is invoked when the runtime starts. See [PSTARTUP_CALLBACK](pstartup_callback-function-pointer.md) function pointer.
+ [in] A callback that is invoked when the runtime starts. See [PSTARTUP_CALLBACK](../../../framework/unmanaged-api/debugging/pstartup_callback-function-pointer.md) function pointer.
 
  `parameter`\
  [in] data pointer passed to pfnCallback.
 
  `ppUnregisterToken`\
  [out] pointer to return the [UnregisterForRuntimeStartup](unregisterforruntimestartup-function.md) token.
-  
+
 ## Return Value
 
  `S_OK`\
  The startup callback was successfully registered.
-  
+
  `E_INVALIDARG`\
- Either `pfnCallback` or `ppUnregisterToken` is null.  
-  
+ Either `pfnCallback` or `ppUnregisterToken` is null.
+
  `E_FAIL` (or other `E_` return codes)\
  Callback registration failed.
 
@@ -70,10 +70,10 @@ This is the only register function that works for single-file applications.
 
 ## Requirements
 
- **Platforms:** See [.NET Core supported operating systems](../../../core/install/windows.md?pivots=os-windows).  
-  
- **Header:** dbgshim.h  
-  
+ **Platforms:** See [.NET Core supported operating systems](../../../core/install/windows.md?pivots=os-windows).
+
+ **Header:** dbgshim.h
+
  **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
-  
+
  **.NET Versions:** [!INCLUDE[net_core_60](../../../../includes/net-core-60-md.md)]

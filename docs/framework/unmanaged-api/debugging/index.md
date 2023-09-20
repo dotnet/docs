@@ -31,4 +31,4 @@ The debugging API enables a debugger to debug code that runs in the common langu
 
 ## See also
 
-- [.NET debugging](../../../core/unmanaged-api/debugging/dotnet-debugging.md)
+- [.NET debugging](../../../core/unmanaged-api/debugging/index.md)

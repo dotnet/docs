@@ -55,7 +55,7 @@ Accepts a CLR version string returned from the [CreateVersionStringFromModule fu
 Creates or opens an event handle that will be signaled upon by any common language runtime (CLR) that is loading in the specified target process.
 
 [CLRCreateInstance function](clrcreateinstance-function.md)\
-Provides the [ICLRDebugging](iclrdebugging-interface.md) interface.
+Provides the [ICLRDebugging](../../../framework/unmanaged-api/debugging/iclrdebugging-interface.md) interface.
 
 ## See also
 

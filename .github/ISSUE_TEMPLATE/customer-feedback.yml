@@ -1,23 +1,37 @@
-name: Feedback from live site
+name: Learn feedback control.
 description: |
-  This template is hooked into the feedback control on the bottom of every page on the live site. It automatically fills in several fields for you. You should not use this template for other purposes.
+  ⛔ This template is hooked into the feedback control on the bottom of every page on the live site. It automatically fills in several fields for you. Don't use for other purposes. ⛔
 body:
+  - type: markdown
+    attributes:
+      value: "## Issue information"
+  - type: markdown
+    attributes:
+      value: Select the issue type, and describe the issue in the text box below. Add as much detail as needed to help us resolve the issue.
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Type of issue
+      options:
+        - Typo
+        - Code doesn't work
+        - Missing information
+        - Outdated article
+        - Other (describe below)
+    validations:
+      required: true
   - type: textarea
     id: feedback
     validations:
       required: true
     attributes:
-      label: Short description
-      description: >-
-        Write a clear and concise description of the issue for this article.
-  - type: textarea
-    id: details
-    validations:
-      required: true
+      label: Description
+  - type: markdown
     attributes:
-      label: Details
-      description: >-
-        Provide details that will add context and help the team address your feedback.
+      value: "## 🚧 Article information 🚧"
+  - type: markdown
+    attributes:
+      value: "*Don't modify the following fields*. They are automatically filled in for you. Doing so will disconnect your issue from the affected article. *Don't edit them*."
   - type: input
     id: pageUrl
     validations:
@@ -41,4 +55,4 @@ body:
     validations:
       required: true
     attributes:
-      label: Author
+      label: Article author

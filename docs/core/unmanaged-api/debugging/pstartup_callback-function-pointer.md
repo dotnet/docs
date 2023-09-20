@@ -31,7 +31,7 @@ typedef VOID (*PSTARTUP_CALLBACK)(
 ## Parameters
 
 `pCordb`\
-[in] Pointer to a pointer to a COM object (`IUnknown`). This object will be cast to an [ICorDebug](icordebug-interface.md) object before it's returned.
+[in] Pointer to a pointer to a COM object (`IUnknown`). This object will be cast to an [ICorDebug](../../../framework/unmanaged-api/debugging/icordebug-interface.md) object before it's returned.
 
 `parameter`\
 [in] The `parameter` value passed to [RegisterForRuntimeStartup](registerforruntimestartup-function.md).
@@ -39,13 +39,13 @@ typedef VOID (*PSTARTUP_CALLBACK)(
 `hr`\
 [in] The result of the operation. The values are:
 
-- `S_OK`: `pCordb` references a valid object that implements the [ICorDebug interface](icordebug-interface.md) interface.
+- `S_OK`: `pCordb` references a valid object that implements the [ICorDebug interface](../../../framework/unmanaged-api/debugging/icordebug-interface.md) interface.
 
 - `CORDBG_E_DEBUG_COMPONENT_MISSING`: A component that is necessary for CLR debugging cannot be located. Either _mscordbi.dll_ or _mscordaccore.dll_ was not found in the same directory as the target CoreCLR.dll.
 
 `CORDBG_E_INCOMPATIBLE_PROTOCOL`: Either _mscordbi.dll_ or _mscordaccore.dll_ is not the same version as the target CoreCLR.dll.
 
-- `E_FAIL` (or other `E_` return codes): Unable to return an [ICorDebug interface](icordebug-interface.md).
+- `E_FAIL` (or other `E_` return codes): Unable to return an [ICorDebug interface](../../../framework/unmanaged-api/debugging/icordebug-interface.md).
 
 ## Remarks
 

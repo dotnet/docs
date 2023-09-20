@@ -36,13 +36,13 @@ HRESULT CLRCreateInstance (
 
 ## Parameters
 
- `clsid`
+ `clsid`\
  [in] Supports only the CLSID_CLRDebugging class identifier.
 
- `riid`
+ `riid`\
  [in] Supports only the IID_ICLRDebugging interface identifiers.
 
- `ppInterface`
+ `ppInterface`\
  [out] A [ICLRDebugging](../../../framework/unmanaged-api/debugging/iclrdebugging-interface.md) instance.
 
 ## Return Value

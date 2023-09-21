@@ -42,7 +42,9 @@ Gets an environment variable from the process. On non-Windows platforms the runt
 ## Requirements
 
 **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
+
 **Header:** CorProf.idl, CorProf.h
+
 **.NET Versions:** Available since .NET Core 3.1
 
 ## See also

@@ -180,6 +180,12 @@ items:
               - name: UI automation fundamentals
                 tocHref: /dotnet/framework/ui-automation/
                 topicHref: /dotnet/framework/ui-automation/index
+              - name: Unmanaged API reference (debugging)
+                tocHref: /dotnet/core/unmanaged-api/debugging/
+                topicHref: /dotnet/core/unmanaged-api/debugging/index
+              - name: Unmanaged API reference (profiling)
+                tocHref: /dotnet/core/unmanaged-api/profiling/
+                topicHref: /dotnet/core/unmanaged-api/profiling/index
               - name: Unmanaged API reference
                 tocHref: /dotnet/framework/unmanaged-api/
                 topicHref: /dotnet/framework/unmanaged-api/index
@@ -292,7 +298,7 @@ items:
               - name: Advanced concepts
                 tocHref: /dotnet/csharp/advanced-topics/
                 topicHref: /dotnet/csharp/advanced-topics/reflection-and-attributes/index
-               
+
               - name: Tutorials
                 tocHref: /dotnet/csharp/tutorials/
                 topicHref: /dotnet/csharp/tutorials/index

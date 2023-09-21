@@ -45,8 +45,7 @@ This section includes information on unmanaged APIs that can be used by managed-
  [Metadata](./metadata/index.md)
  Describes the metadata API, which enables a client such as a compiler to generate or access a component's metadata without the types being loaded by the CLR.
 
- [Profiling](./profiling/in
-dex.md)
+ [Profiling](./profiling/index.md)
  Describes the profiling API, which enables a profiler to monitor a program's execution by the CLR.
 
  [Strong Naming](./strong-naming/index.md)

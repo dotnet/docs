@@ -73,7 +73,9 @@ Notifies the profiler whenever an EventPipe event has been delivered to the prof
 ## Requirements
 
 **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
+
 **Header:** CorProf.idl, CorProf.h
+
 **.NET Versions:** Available since .NET 5.0
 
 ## See also

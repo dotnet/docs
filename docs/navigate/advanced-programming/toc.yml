@@ -449,7 +449,7 @@ items:
       - name: Overview
         href: ../../core/unmanaged-api/debugging/iclrdebugginglibraryprovider2-interface.md
         displayName: ICLRDebuggingLibraryProvider2
-      - name: ProvideLibrary2 Method
+      - name: ProvideLibrary2 method
         href: ../../core/unmanaged-api/debugging/iclrdebugginglibraryprovider2-providelibrary2-method.md
     - name: ICLRDebuggingLibraryProvider3 interface
       items:
@@ -474,3 +474,103 @@ items:
       href: ../../core/unmanaged-api/debugging/resumeprocess-function.md
     - name: UnregisterForRuntimeStartup function
       href: ../../core/unmanaged-api/debugging/unregisterforruntimestartup-function.md
+  - name: Profiling
+    items:
+    - name: Overview
+      href: ../../core/unmanaged-api/profiling/index.md
+    - name: Structures
+      items:
+      - name: COR_PRF_EVENT_DATA structure
+        href: cor-prf-event-data-structure.md
+      - name: COR_PRF_EVENTPIPE_PARAM_DESC structure
+        href: cor-prf-eventpipe-param-desc-structure.md
+      - name: COR_PRF_EVENTPIPE_PROVIDER_CONFIG structure
+        href: cor-prf-eventpipe-provider-config-structure.md
+    - name: Enumerations
+      items:
+      - name: COR_PRF_EVENTPIPE_LEVEL enumeration
+        href: cor-prf-eventpipe-level-enumeration.md
+      - name: COR_PRF_EVENTPIPE_PARAM_TYPE enumeration
+        href: cor-prf-eventpipe-param-type-enumeration.md
+      - name: COR_PRF_HANDLE_TYPE enumeration
+        href: cor-prf-handle-type-enumeration.md
+      - name: COR_PRF_REJIT_FLAGS enumeration
+        href: cor-prf-rejit-flags-enumeration.md
+    - name: Interfaces
+      items:
+      - name: ICorProfilerCallback10 interface
+        items:
+        - name: Overview
+          href: icorprofilercallback10-interface.md
+          displayName: ICorProfilerCallback10
+        - name: EventPipeEventDelivered method
+          href: icorprofilercallback10-eventpipeeventdelivered-method.md
+        - name: EventPipeProviderCreated method
+          href: icorprofilercallback10-eventpipeprovidercreated-method.md
+      - name: ICorProfilerInfo9 interface
+        items:
+        - name: Overview
+          href: icorprofilerinfo9-interface.md
+          displayName: ICorProfilerInfo9
+        - name: GetCodeInfo4 method
+          href: icorprofilerinfo9-getcodeinfo4-method.md
+        - name: GetILToNativeMapping3 method
+          href: icorprofilerinfo9-getiltonativemapping3-method.md
+        - name: GetNativeCodeStartAddresses method
+          href: icorprofilerinfo9-getnativecodestartaddresses-method.md
+      - name: ICorProfilerInfo10 interface
+        items:
+        - name: Overview
+          href: icorprofilerinfo10-interface.md
+          displayName: ICorProfilerInfo10
+        - name: EnumerateObjectReferences method
+          href: icorprofilerinfo10-enumerateobjectreferences-method.md
+        - name: IsFrozenObject method
+          href: icorprofilerinfo10-isfrozenobject-method.md
+        - name: GetLOHObjectSizeThreshold method
+          href: icorprofilerinfo10-getlohobjectsizethreshold-method.md
+        - name: RequestReJITWithInliners method
+          href: icorprofilerinfo10-requestrejitwithinliners-method.md
+        - name: ResumeRuntime method
+          href: icorprofilerinfo10-resumeruntime-method.md
+        - name: SuspendRuntime method
+          href: icorprofilerinfo10-suspendruntime-method.md
+      - name: ICorProfilerInfo11 interface
+        items:
+        - name: Overview
+          href: icorprofilerinfo11-interface.md
+          displayName: ICorProfilerInfo11
+        - name: GetEnvironmentVariable method
+          href: icorprofilerinfo11-getenvironmentvariable-method.md
+        - name: SetEnvironmentVariable method
+          href: icorprofilerinfo11-setenvironmentvariable-method.md
+      - name: ICorProfilerInfo12 interface
+        items:
+        - name: Overview
+          href: icorprofilerinfo12-interface.md
+          displayName: ICorProfilerInfo12
+        - name: EventPipeAddProviderToSession method
+          href: icorprofilerinfo12-eventpipeaddprovidertosession-method.md
+        - name: EventPipeCreateProvider method
+          href: icorprofilerinfo12-eventpipecreateprovider-method.md
+        - name: EventPipeDefineEvent method
+          href: icorprofilerinfo12-eventpipedefineevent-method.md
+        - name: EventPipeGetProviderInfo method
+          href: icorprofilerinfo12-eventpipegetproviderinfo-method.md
+        - name: EventPipeStartSession method
+          href: icorprofilerinfo12-eventpipestartsession-method.md
+        - name: EventPipeStopSession method
+          href: icorprofilerinfo12-eventpipestopsession-method.md
+        - name: EventPipeWriteEvent method
+          href: icorprofilerinfo12-eventpipewriteevent-method.md
+      - name: ICorProfilerInfo13 interface
+        items:
+        - name: Overview
+          href: icorprofilerinfo13-interface.md
+          displayName: ICorProfilerInfo13
+        - name: CreateHandle method
+          href: icorprofilerinfo13-createhandle-method.md
+        - name: DestroyHandle method
+          href: icorprofilerinfo13-destroyhandle-method.md
+        - name: GetObjectIDFromHandle method
+          href: icorprofilerinfo13-getobjectidfromhandle-method.md

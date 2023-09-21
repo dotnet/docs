@@ -7,6 +7,8 @@ ms.date: 09/19/2023
 
 The articles in this section describe the unmanaged APIs that the common language runtime (CLR) provides to support debugging .NET applications that are running on Windows, Linux, or macOS operating systems.
 
+These articles describe APIs that were introduced in .NET Core 2.0 and later versions. For .NET Framework-era unmanaged APIs, see [.NET Framework debugging](../../../framework/unmanaged-api/debugging/index.md).
+
 ## Functions
 
 [CloseCLREnumeration function](closeclrenumeration-function.md)\

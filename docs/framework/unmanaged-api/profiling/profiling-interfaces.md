@@ -47,8 +47,8 @@ Provides callback methods that the common language runtime uses to notify the pr
 [ICorProfilerCallback9 Interface](icorprofilercallback9-interface.md)\
 Provides a callback method that the common language runtime uses to notify the profiler that a dynamic method is garbage collected and subsequently unloaded.
 
-[ICorProfilerCallback10 Interface](icorprofilercallback10-interface.md)\
-Provides callback methods to notify the profiler that EventPipe events have been delivered to the profiler's currently active session.
+[ICorProfilerCallback10 Interface](../../../core/unmanaged-api/profiling/icorprofilercallback10-interface.md)\
+(.NET Core) Provides callback methods to notify the profiler that EventPipe events have been delivered to the profiler's currently active session.
 
 [ICorProfilerFunctionControl Interface](icorprofilerfunctioncontrol-interface.md)\
 Provides methods that allow a code profiler to communicate with the CLR to control how the JIT compiler should generate code when recompiling a specific method.
@@ -80,20 +80,20 @@ Provides a method to apply newly defined metadata to a module and that provides 
 [ICorProfilerInfo8 Interface](icorprofilerinfo8-interface.md)\
 Provides methods to query information about dynamic methods.
 
-[ICorProfilerInfo9 Interface](icorprofilerinfo9-interface.md)\
-Provides methods to query information about functions with multiple native code versions.
+[ICorProfilerInfo9 Interface](../../../core/unmanaged-api/profiling/icorprofilerinfo9-interface.md)\
+(.NET Core) Provides methods to query information about functions with multiple native code versions.
 
-[ICorProfilerInfo10 Interface](icorprofilerinfo10-interface.md)\
-Provides methods to modify function IL, query information from the runtime, and suspend and resume the runtime.
+[ICorProfilerInfo10 Interface](../../../core/unmanaged-api/profiling/icorprofilerinfo10-interface.md)\
+(.NET Core) Provides methods to modify function IL, query information from the runtime, and suspend and resume the runtime.
 
-[ICorProfilerInfo11 Interface](icorprofilerinfo11-interface.md)\
-Provides methods to get and set environment variables in the process.
+[ICorProfilerInfo11 Interface](../../../core/unmanaged-api/profiling/icorprofilerinfo11-interface.md)\
+(.NET Core) Provides methods to get and set environment variables in the process.
 
-[ICorProfilerInfo12 Interface](icorprofilerinfo12-interface.md)\
-Provides methods to create EventPipe sessions, events, and providers.
+[ICorProfilerInfo12 Interface](../../../core/unmanaged-api/profiling/icorprofilerinfo12-interface.md)\
+(.NET Core) Provides methods to create EventPipe sessions, events, and providers.
 
-[ICorProfilerInfo13 Interface](icorprofilerinfo13-interface.md)\
-Provides methods to manage weak, strong, and pinned handles that wrap objects.
+[ICorProfilerInfo13 Interface](../../../core/unmanaged-api/profiling/icorprofilerinfo13-interface.md)\
+(.NET Core) Provides methods to manage weak, strong, and pinned handles that wrap objects.
 
 [ICorProfilerModuleEnum Interface](icorprofilermoduleenum-interface.md)\
 Provides methods to sequentially iterate through a collection of modules loaded by the application or the profiler.

@@ -36,13 +36,13 @@ This section describes the unmanaged structures that the profiling API uses.
  Describes a range (that is, block) of memory that is undergoing garbage collection.
 
  [COR_PRF_EVENTPIPE_PROVIDER_CONFIG Structure](../../../core/unmanaged-api/profiling/cor-prf-eventpipe-provider-config-structure.md)\
- Describes the fields necessary to configure an EventPipe provider.
+ (.NET Core) Describes the fields necessary to configure an EventPipe provider.
 
  [COR_PRF_EVENTPIPE_PARAM_DESC Structure](../../../core/unmanaged-api/profiling/cor-prf-eventpipe-param-desc-structure.md)\
- Describes the parameter name and type for an EventPipe event.
+ (.NET Core) Describes the parameter name and type for an EventPipe event.
 
  [COR_PRF_EVENT_DATA Structure](../../../core/unmanaged-api/profiling/cor-prf-event-data-structure.md)\
- Describes the event data for an EventPipe event being written.
+ (.NET Core) Describes the event data for an EventPipe event being written.
 
 ## Related Sections
 

@@ -1,8 +1,9 @@
 ---
 title: Containerize an app with dotnet publish
 description: In this tutorial, you'll learn how to containerize a .NET application with dotnet publish.
-ms.date: 02/08/2023
+ms.date: 09/21/2023
 ms.topic: tutorial
+zone_pivot_groups: dotnet-version-7-8
 ---
 
 # Containerize a .NET app with dotnet publish
@@ -13,9 +14,20 @@ Containers have many features and benefits, such as being an immutable infrastru
 
 Install the following prerequisites:
 
+:::zone pivot="dotnet-8-0"
+
+- [.NET 8+ SDK](https://dotnet.microsoft.com/download/dotnet/8.0)\
+If you have .NET installed, use the `dotnet --info` command to determine which SDK you're using.
+- [Docker Community Edition](https://www.docker.com/products/docker-desktop)
+
+:::zone-end
+:::zone pivot="dotnet-7-0"
+
 - [.NET 7+ SDK](https://dotnet.microsoft.com/download/dotnet/7.0)\
 If you have .NET installed, use the `dotnet --info` command to determine which SDK you're using.
 - [Docker Community Edition](https://www.docker.com/products/docker-desktop)
+
+:::zone-end
 
 In addition to these prerequisites, it's recommended that you're familiar with [Worker Services in .NET](../extensions/workers.md).
 
@@ -187,6 +199,21 @@ This tooling supports publishing to any registry that supports the [Docker Regis
 
 For notes on working with these registries, see the [registry-specific notes](https://aka.ms/dotnet/containers/auth#notes-for-specific-registries).
 
+:::zone pivot="dotnet-8-0"
+
+### `ContainerRepository`
+
+The container image name controls the name of the image itself, for example, `dotnet/runtime` or `my-app`. By default, the `AssemblyName` of the project is used.
+
+```xml
+<PropertyGroup>
+    <ContainerRepository>my-app</ContainerRepository>
+</PropertyGroup>
+```
+
+:::zone-end
+:::zone pivot="dotnet-7-0"
+
 ### `ContainerImageName`
 
 The container image name controls the name of the image itself, for example, `dotnet/runtime` or `my-app`. By default, the `AssemblyName` of the project is used.
@@ -196,6 +223,8 @@ The container image name controls the name of the image itself, for example, `do
     <ContainerImageName>my-app</ContainerImageName>
 </PropertyGroup>
 ```
+
+:::zone-end
 
 Image names consist of one or more slash-delimited segments, each of which can only contain lowercase alphanumeric characters, periods, underscores, and dashes, and must start with a letter or number. Any other characters will result in an error being thrown.
 

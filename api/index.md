@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: .NET API browser"
+description: Explore Microsoft's comprehensive .NET API browser. Your ultimate resource for all .NET-based APIs. Start your search now.
 layout: ApiBrowserPage
 hide_bc: true
 title: .NET API browser

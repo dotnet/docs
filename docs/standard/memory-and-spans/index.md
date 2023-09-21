@@ -14,11 +14,11 @@ Starting with .NET Core 2.1, .NET includes a number of interrelated types that r
 
 - <xref:System.Span%601?displayProperty=nameWithType>, a type that is used to access a contiguous region of memory. A <xref:System.Span%601> instance can be backed by an array of type `T`, a buffer allocated with [stackalloc](../../csharp/language-reference/operators/stackalloc.md), or a pointer to unmanaged memory. Because it has to be allocated on the stack, it has a number of restrictions. For example, a field in a class cannot be of type <xref:System.Span%601>, nor can span be used in asynchronous operations.
 
-- <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, an immutable version of the <xref:System.Span%601> structure, that can be also backed by a <xref:System.String>.
+- <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, an immutable version of the <xref:System.Span%601> structure. Instances can be also backed by a <xref:System.String>.
 
 - <xref:System.Memory%601?displayProperty=nameWithType>, a wrapper over a contiguous region of memory. A <xref:System.Memory%601> instance can be backed by an array of type `T` or a memory manager. As it can be stored on the managed heap, <xref:System.Memory%601> has none of the limitations of <xref:System.Span%601>.
 
-- <xref:System.ReadOnlyMemory%601?displayProperty=nameWithType>, an immutable version of the <xref:System.Memory%601> structure which instances can also be backed by a <xref:System.String>.
+- <xref:System.ReadOnlyMemory%601?displayProperty=nameWithType>, an immutable version of the <xref:System.Memory%601> structure. Instances can also be backed by a <xref:System.String>.
 
 - <xref:System.Buffers.MemoryPool%601?displayProperty=nameWithType>, which allocates strongly typed blocks of memory from a memory pool to an owner. <xref:System.Buffers.IMemoryOwner%601> instances can be rented from the pool by calling <xref:System.Buffers.MemoryPool%601.Rent%2A?displayProperty=nameWithType> and released back to the pool by calling <xref:System.Buffers.MemoryPool%601.Dispose?displayProperty=nameWithType>.
 

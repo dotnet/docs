@@ -8,7 +8,7 @@ ms.date: 09/08/2023
 
 # Introduction to resiliency in .NET
 
-Resiliency is the ability of an app to recover from failures and continue to function. In the context of .NET programming, resiliency is achieved by designing apps that can handle failures gracefully and recover quickly. To help you build resilient apps in .NET, the following two libraries are available:
+Resiliency is the ability of an app to recover from failures and continue to function. In the context of .NET programming, resiliency is achieved by designing apps that can handle failures gracefully and recover quickly. To help build resilient apps in .NET, the following two packages are available on NuGet:
 
 - [Microsoft.Extensions.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Resilience): This NuGet package provides mechanisms to harden apps against transient failures.
 - [Microsoft.Extensions.Http.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience): This NuGet package provides resiliency mechanisms specifically for the <xref:System.Net.Http.HttpClient>.
@@ -16,8 +16,6 @@ Resiliency is the ability of an app to recover from failures and continue to fun
 ## Resilience-based policies
 
 ### Policy pipeline
-
-
 
 ## A word on Chaos Engineering
 

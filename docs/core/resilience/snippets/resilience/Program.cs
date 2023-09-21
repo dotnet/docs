@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Hosting;
+﻿using System.Net;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Resilience;
 using Microsoft.Extensions.Resilience.FaultInjection;
 
@@ -6,9 +7,9 @@ HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
 builder.Services.AddResilienceEnrichment();
 
-builder.Services.AddFaultInjection(static options =>
+builder.Services.AddFaultInjection(static builder =>
 {
-    options.Configure(static options =>
+    _ = builder.Configure(static options =>
     {
         options.ChaosPolicyOptionsGroups[""] = new()
         {
@@ -17,7 +18,19 @@ builder.Services.AddFaultInjection(static options =>
         };
     });
 
-    options.AddException("http", new HttpRequestException());
-
-    // options.AddCustomResult("obj", new HttpResponseMessage());
+    _ = builder.AddException("http", new HttpRequestException());
 });
+
+builder.Services.ConfigureFailureResultContext<HttpResponseMessage>(
+    configure: static response => response is not null
+        ? FailureResultContext.Create(
+            failureSource:
+                response.ReasonPhrase = "Fault injection",
+            failureReason:
+                (response.StatusCode = HttpStatusCode.InternalServerError)
+                    .ToString())
+        : FailureResultContext.Create());
+
+IHost host = builder.Build();
+
+await host.RunAsync();

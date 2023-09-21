@@ -21,7 +21,7 @@ You use the `ref` keyword in the following contexts:
 
 ## Passing an argument by reference
 
-When used in a method's parameter list, the `ref` keyword indicates that an argument is passed by reference, not by value. The `ref` keyword makes the formal parameter an alias for the argument, which must be a variable. In other words, any operation on the parameter is made on the argument.
+When used in a method's parameter list, the `ref` keyword indicates that an argument is passed by reference, not by value. The `ref` keyword makes the formal parameter an alias for the argument, which must be a variable. In other words, any operation on the parameter is made on the argument. Arguments passed to methods using the `ref` keyword are writable by the called method. Beginning with C# 12, you can use the `ref readonly` modifier to indicate that the called method won't reassign the argument.
 
 For example, suppose the caller passes a local variable expression or an array element access expression. The called method can then replace the object to which the ref parameter refers. In that case, the caller's local variable or the array element refers to the new object when the method returns.
 
@@ -65,14 +65,12 @@ You can't use the `ref`, `in`, and `out` keywords for the following kinds of met
 - The `ref` keyword can't be used on the first argument of an extension method when the argument isn't a struct, or a generic type not constrained to be a struct.
 - The `in` keyword can't be used unless the first argument is a struct. The `in` keyword can't be used on any generic type, even when constrained to be a struct.
 
-## Passing an argument by reference: An example
-
 The previous examples pass value types by reference. You can also use the `ref` keyword to pass reference types by reference. Passing a reference type by reference enables the called method to replace the object to which the reference parameter refers in the caller. The storage location of the object is passed to the method as the value of the reference parameter. If you change the value in the storage location of the parameter (to point to a new object), you also change the storage location to which the caller refers. The following example passes an instance of a reference type as a `ref` parameter.
 
 :::code language="csharp" source="snippets/RefParameterModifier.cs" id="Snippet3":::
 
 For more information about how to pass reference types by value and by reference, see [Passing Reference-Type Parameters](method-parameters.md).
-  
+
 ## Reference return values
 
 Reference return values (or ref returns) are values that a method returns by reference to the caller. That is, the caller can modify the value returned by a method, and that change is reflected in the state of the object in the called method.

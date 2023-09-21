@@ -7,11 +7,12 @@ ms.date: 04/04/2023
 
 Some C# 12 features have been introduced in previews. You can try these features using the latest [Visual Studio preview](https://visualstudio.microsoft.com/vs/preview/) or the latest [.NET 8 preview SDK](https://dotnet.microsoft.com/download/dotnet).
 
-- [Primary constructors](#primary-constructors) - Introduced in Visual Studio 17.6 preview 2.
-- [Optional parameters in lambda expressions](#default-lambda-parameters) - Introduced in Visual Studio 17.5 preview 2.
-- [Alias any type](#alias-any-type) - Introduced in Visual Studio 17.6 preview 3.
-- [Inline arrays](#inline-arrays) - Introduced in Visual Studio 17.7 preview 3.
+- [Primary constructors](#primary-constructors) - Introduced in Visual Studio 17.6, preview 2.
 - [Collection expressions](#collection-expressions) - Introduced in Visual Studio 17.7, preview 5.
+- [Inline arrays](#inline-arrays) - Introduced in Visual Studio 17.7, preview 3.
+- [Optional parameters in lambda expressions](#default-lambda-parameters) - Introduced in Visual Studio 17.5, preview 2.
+- [`ref readonly` parameters](#-ref-readonly--parameters) - Introduced in Visual Studio 17.8, preview 2.
+- [Alias any type](#alias-any-type) - Introduced in Visual Studio 17.6, preview 3.
 
 - [Interceptors](#interceptors) - *Preview feature* Introduced in Visual Studio 17.7, preview 3.
 
@@ -71,6 +72,18 @@ foreach (var element in single)
 The operand of a spread operator is an expression that can be enumerated. The spread operator evaluates each element of the enumerations expression.
 
 You can use collection expressions anywhere you need a collection of elements. They can specify the initial value for a collection or be passed as arguments to methods that take collection types. You can learn more about collection expressions in the [language reference article on collection expressions](../language-reference/operators/collection-expressions.md) or the [feature specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md).
+
+## `ref readonly` parameters
+
+C# added `in` parameters as a way to pass readonly references. `in` parameters allow both variables and values, and can be used without any annotation on arguments.
+
+The addition of `ref readonly` parameters enables more clarity for APIs that may be using `ref` parameters, or `in` parameters:
+
+- APIs created before `in` was introduced may use `ref` even though the argument isn't modified. Those APIs can be updated with `ref readonly`. It won't be a breaking change for callers, as would be if the `ref` parameter was changed to `in`. An example is <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A?displayProperty=fullName>.
+- APIs that take an `in` parameter, but logically require a variable. A value expression won't work. An example is <xref:System.ReadOnlySpan%601.%23ctor(%600@)?displayProperty=fullName>.
+- APIs that use `ref` because they require a variable, but don't mutate that variable. An example is <xref:System.Runtime.CompilerServices.Unsafe.IsNullRef%2A?displayProperty=fullName>.
+
+To learn more about `ref readonly` parameters, see the article on [parameter modifiers](../language-reference/keywords/method-parameters.md#modifiers) in the language reference, or the [ref readonly parameters](~/_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md) feature specification.
 
 ## Default lambda parameters
 

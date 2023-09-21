@@ -90,18 +90,38 @@ Informally, you can think of these scopes as the mechanism to ensure your code n
 
 ## Modifiers
 
-Parameters declared for a method without [in](./in-parameter-modifier.md), [ref](./ref.md) or [out](./out-parameter-modifier.md), are passed to the called method by value. The `ref`, `in`, and `out` modifiers differ in assignment rules:
+You can apply one of these modifiers to any method parameter:
+
+- [`ref`](./ref.md): the parameter is passed by reference. You can add the [`readonly`](./ref.md#passing-an-argument-by-readonly-reference) modifier to indicate that the reference isn't written to by the called method.
+- [`out`](./out.md): The parameter is passed by reference. It must be written to in the called method before it is read.
+- [`in`](./in.md): The parameter may be passed by reference. If it is passed by reference, it is not written to by the called method.
+
+When a parameter has one of the preceding modifiers, the corresponding argument must have a compatible modifier:
+
+- An argument for a `ref` parameter must include the `ref` modifier.
+- An argument for an `out` parameter must include the `out` modifier.
+- An argument for an `in` parameter may optionally include the `in` modifier. If the `ref` modifier is used on the argument instead, the compiler issues a warning.
+- An argument for a `ref readonly` parameter may include either the `in` or `ref` modifiers, but not both. If neither modifier is included, the compiler issues a warning.
+
+Parameters declared for a method without [in](./in-parameter-modifier.md), [ref](./ref.md), [ref readonly](ref-readonly.md), or [out](./out-parameter-modifier.md), are passed to the called method by value. The `ref`, `ref readonly`, `in`, and `out` modifiers differ in assignment rules:
 
 - The argument for a `ref` parameter must be definitely assigned. The called method may reassign that parameter.
-- The argument for an `in` parameter must be definitely assigned. The called method can't reassign that parameter.
+- The argument for an `in` or `ref readonly` parameter must be definitely assigned. The called method can't reassign that parameter.
 - The argument for an `out` parameter needn't be definitely assigned. The called method must assign the parameter.
 
 This section describes the keywords you can use when declaring method parameters:
 
 - [params](./params.md) specifies that this parameter may take a variable number of arguments.
-- [in](./in-parameter-modifier.md) specifies that this parameter is passed by reference but is only read by the called method.
-- [ref](./ref.md) specifies that this parameter is passed by reference and may be read or written by the called method.
+- [in](./in-parameter-modifier.md) specifies that this parameter may be passed by reference. If passed by reference, it is only read by the called method.
+- [ref](./ref.md) specifies that this parameter is passed by reference and may be read or written by the called method. Beginning in C# 12, the `readonly` modifier indicates that this parameter can't be written by the called method.
 - [out](./out-parameter-modifier.md) specifies that this parameter is passed by reference and is written by the called method.
+
+You don't use these methods in most methods. When you use these modifiers, they describe how the parameter will be used:
+
+- `out` means the method sets the value of the argument.
+- `ref` means the method may read or write the value of the argument.
+- `ref readonly` means the method will read, but not write the value of the argument. The argument *must* be passed by reference.
+- `in` means the method will read, but not write the value of the argument. The argument may be passed by reference or through a temporary variable.
 
 ## See also
 

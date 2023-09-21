@@ -11,26 +11,22 @@ These articles describe APIs that were introduced in .NET Core 2.0 and later ver
 
 ## Structures
 
-- [COR_PRF_EVENT_DATA structure](../../../core/unmanaged-api/profiling/cor-prf-event-data-structure.md)
-- [COR_PRF_EVENTPIPE_PARAM_DESC structure](../../../core/unmanaged-api/profiling/cor-prf-eventpipe-param-desc-structure.md)
-- [COR_PRF_EVENTPIPE_PROVIDER_CONFIG structure](../../../core/unmanaged-api/profiling/cor-prf-eventpipe-provider-config-structure.md)
+- [COR_PRF_EVENT_DATA structure](cor-prf-event-data-structure.md)
+- [COR_PRF_EVENTPIPE_PARAM_DESC structure](cor-prf-eventpipe-param-desc-structure.md)
+- [COR_PRF_EVENTPIPE_PROVIDER_CONFIG structure](cor-prf-eventpipe-provider-config-structure.md)
 
 ## Enumerations
 
-- [COR_PRF_EVENTPIPE_LEVEL enumeration](../../../core/unmanaged-api/profiling/cor-prf-eventpipe-level-enumeration.md)
-- [COR_PRF_EVENTPIPE_PARAM_TYPE enumeration](../../../core/unmanaged-api/profiling/cor-prf-eventpipe-param-type-enumeration.md)
-- [COR_PRF_HANDLE_TYPE enumeration](../../../core/unmanaged-api/profiling/cor-prf-handle-type-enumeration.md)
-- [COR_PRF_REJIT_FLAGS enumeration](../../../core/unmanaged-api/profiling/cor-prf-rejit-flags-enumeration.md)
+- [COR_PRF_EVENTPIPE_LEVEL enumeration](cor-prf-eventpipe-level-enumeration.md)
+- [COR_PRF_EVENTPIPE_PARAM_TYPE enumeration](cor-prf-eventpipe-param-type-enumeration.md)
+- [COR_PRF_HANDLE_TYPE enumeration](cor-prf-handle-type-enumeration.md)
+- [COR_PRF_REJIT_FLAGS enumeration](cor-prf-rejit-flags-enumeration.md)
 
 ## Interfaces
 
-- [ICorProfilerCallback10 interface](../../../core/unmanaged-api/profiling/icorprofilercallback10-interface.md)
-- [ICorProfilerInfo9 interface](../../../core/unmanaged-api/profiling/icorprofilerinfo9-interface.md)
-- [ICorProfilerInfo10 interface](../../../core/unmanaged-api/profiling/icorprofilerinfo10-interface.md)
-- [ICorProfilerInfo11 interface](../../../core/unmanaged-api/profiling/icorprofilerinfo11-interface.md)
-- [ICorProfilerInfo12 interface](../../../core/unmanaged-api/profiling/icorprofilerinfo12-interface.md)
-- [ICorProfilerInfo13 interface](../../../core/unmanaged-api/profiling/icorprofilerinfo13-interface.md)
-
-## See also
-
-- [.NET Framework profiling (unmanaged API reference)](../../../framework/unmanaged-api/profiling/index.md)
+- [ICorProfilerCallback10 interface](icorprofilercallback10-interface.md)
+- [ICorProfilerInfo9 interface](icorprofilerinfo9-interface.md)
+- [ICorProfilerInfo10 interface](icorprofilerinfo10-interface.md)
+- [ICorProfilerInfo11 interface](icorprofilerinfo11-interface.md)
+- [ICorProfilerInfo12 interface](icorprofilerinfo12-interface.md)
+- [ICorProfilerInfo13 interface](icorprofilerinfo13-interface.md)

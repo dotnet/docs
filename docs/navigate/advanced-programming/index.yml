@@ -88,3 +88,13 @@ landingContent:
             url: ../../standard/garbage-collection/implementing-dispose.md
           - text: Implement a DisposeAsync method
             url: ../../standard/garbage-collection/implementing-disposeasync.md
+
+  # Card
+  - title: Unmanaged API reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Debugging
+            url: ../../core/unmanaged-api/debugging.md
+          - text: Profiling
+            url: ../../core/unmanaged-api/profiling.md

@@ -2,15 +2,15 @@ items:
 - name: Profiling
   href: index.md
   items:
-  - name: Profiling Overview
+  - name: Overview
     href: profiling-overview.md
-  - name: Setting Up a Profiling Environment
+  - name: Set up a profiling environment
     href: setting-up-a-profiling-environment.md
-  - name: CLR Profilers and Windows Store Apps
+  - name: CLR profilers and Windows Store apps
     href: clr-profilers-and-windows-store-apps.md
   - name: CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT
     href: corprof-e-unsupported-call-sequence-hresult.md
-  - name: Profiling Interfaces
+  - name: Profiling interfaces
     href: profiling-interfaces.md
     items:
     - name: ICLRProfiling Interface
@@ -498,7 +498,7 @@ items:
       items:
       - name: Alloc Method
         href: imethodmalloc-alloc-method.md
-  - name: Profiling Global Static Functions
+  - name: Profiling global static functions
     href: profiling-global-static-functions.md
     items:
     - name: FunctionEnter Function
@@ -531,7 +531,7 @@ items:
       href: functiontailcall3withinfo-function.md
     - name: StackSnapshotCallback Function
       href: stacksnapshotcallback-function.md
-  - name: Profiling Enumerations
+  - name: Profiling enumerations
     href: profiling-enumerations.md
     items:
     - name: COR_PRF_CLAUSE_TYPE Enumeration
@@ -568,7 +568,7 @@ items:
       href: cor-prf-suspend-reason-enumeration.md
     - name: COR_PRF_TRANSITION_REASON Enumeration
       href: cor-prf-transition-reason-enumeration.md
-  - name: Profiling Structures
+  - name: Profiling structures
     href: profiling-structures.md
     items:
     - name: COR_PRF_ASSEMBLY_REFERENCE_INFO Structure
@@ -585,3 +585,5 @@ items:
       href: cor-prf-function-argument-range-structure.md
     - name: COR_PRF_GC_GENERATION_RANGE Structure
       href: cor-prf-gc-generation-range-structure.md
+  - name: .NET Core profiling
+    href: ../../../core/unmanaged-api/profiling/index.md

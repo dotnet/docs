@@ -76,7 +76,3 @@ Includes the [ProvideLibrary2](iclrdebugginglibraryprovider2-providelibrary2-met
 
 [ICLRDebuggingLibraryProvider3 interface](iclrdebugginglibraryprovider3-interface.md)\
 Includes callback methods that allow common language runtime version-specific debugging libraries to be located and loaded on demand for .NET regular and single-file applications.
-
-## See also
-
-- [.NET Framework debugging (unmanaged API reference)](../../../framework/unmanaged-api/debugging/index.md)

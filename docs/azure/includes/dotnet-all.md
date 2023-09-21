@@ -286,6 +286,7 @@
 | Schema Registry for Kafka Avro | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Kafka.SchemaRegistry.Avro/1.0.0-beta.1) |  |  |
 | Schema Registry for Kafka Json | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Kafka.SchemaRegistry.Json/1.0.0-beta.1) |  |  |
 | Time Series Insights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Rpc/1.0.0) |  |  |
 | Unknown Display Name | NuGet [3.0.37](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Rpc/3.0.37) |  |  |
 | Unknown Display Name | NuGet [3.0.37](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Rpc.Core/3.0.37) |  |  |
 | Anomaly Detector | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.AnomalyDetector/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.AnomalyDetector_1.0.0-preview.1/sdk/cognitiveservices/AnomalyDetector) |

@@ -29,7 +29,3 @@ api_type:
 **Header:** CorProf.idl, CorProf.h
 
 **.NET Versions:** Available since .NET 7.0
-
-## See also
-
-- [Profiling Interfaces](profiling-interfaces.md)

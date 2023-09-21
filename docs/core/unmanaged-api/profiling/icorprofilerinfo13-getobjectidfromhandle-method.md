@@ -44,5 +44,4 @@ If `*pObject` is null, the object wrapped by this handle is no longer alive and 
 
 ## See also
 
-- [Profiling Interfaces](profiling-interfaces.md)
 - [ICorProfilerInfo13 Interface](icorprofilerinfo13-interface.md)

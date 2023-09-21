@@ -26,7 +26,3 @@ api_type:
 **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 **Header:** CorProf.idl, CorProf.h
 **.NET Versions:** Available since .NET Core 3.1
-
-## See also
-
-- [Profiling Interfaces](profiling-interfaces.md)

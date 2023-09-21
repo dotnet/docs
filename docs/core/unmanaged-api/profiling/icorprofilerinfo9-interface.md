@@ -7,7 +7,7 @@ ms.author: "davmason"
 ---
 # ICorProfilerInfo9 interface
 
-A subclass of [ICorProfilerInfo8](icorprofilerinfo8-interface.md) that provides methods to query information about functions with multiple native code versions.
+A subclass of [ICorProfilerInfo8](../../../framework/unmanaged-api/profiling/icorprofilerinfo8-interface.md) that provides methods to query information about functions with multiple native code versions.
 
 ## Methods
 

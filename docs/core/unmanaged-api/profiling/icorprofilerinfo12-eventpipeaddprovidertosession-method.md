@@ -40,7 +40,6 @@ Adds a provider to an existing EventPipe session.
 
 - [EventPipe Overview](../../../core/diagnostics/eventpipe.md)
 - [Well Known EventProviders](../../../core/diagnostics/well-known-event-providers.md)
-- [Profiling Interfaces](profiling-interfaces.md)
 - [ICorProfilerCallback10 Interface](icorprofilercallback10-interface.md)
 - [ICorProfilerInfo12 Interface](icorprofilerinfo12-interface.md)
 - [COR_PRF_EVENTPIPE_PROVIDER_CONFIG Structure](cor-prf-eventpipe-provider-config-structure.md)

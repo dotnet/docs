@@ -46,8 +46,4 @@ typedef enum
 
  **Library:** CorGuids.lib
 
- **.NET Framework Versions:** [!INCLUDE[net_core_30](../../../../includes/net-core-30-md.md)]
-
-## See also
-
-- [Profiling Enumerations](profiling-enumerations.md)
+ **.NET Framework Versions:** Available since .NET Core 3.0

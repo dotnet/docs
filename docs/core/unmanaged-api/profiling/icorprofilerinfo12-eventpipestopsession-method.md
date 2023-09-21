@@ -34,6 +34,5 @@ Stops an EventPipe session, preventing any future events from being written to t
 
 ## See also
 
-- [Profiling Interfaces](profiling-interfaces.md)
 - [ICorProfilerCallback10 Interface](icorprofilercallback10-interface.md)
 - [ICorProfilerInfo12 Interface](icorprofilerinfo12-interface.md)

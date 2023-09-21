@@ -72,4 +72,4 @@ HRESULT CreateDebuggingInterfaceFromVersion2 (
 
  **Library:** dbgshim.dll, libdbgshim.so, libdbgshim.dylib
 
- **.NET Versions:** [!INCLUDE[net_core_31](../../../../includes/net-core-31-md.md)]
+ **.NET Versions:** Available since .NET Core 3.1

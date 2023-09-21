@@ -38,7 +38,7 @@ HRESULT GetILToNativeMapping3( [in]  UINT_PTR pNativeCodeStartAddress,
 [out] The total number of available COR_DEBUG_IL_TO_NATIVE_MAP structures.
 
 `map`\
-[out] An array of [COR_DEBUG_IL_TO_NATIVE_MAP](../debugging/cor-debug-il-to-native-map-structure.md) structures, each of which specifies the offsets. After the `GetILToNativeMapping3` method returns, `map` will contain some or all of the `COR_DEBUG_IL_TO_NATIVE_MAP` structures.
+[out] An array of [COR_DEBUG_IL_TO_NATIVE_MAP](../../../framework/unmanaged-api/debugging/cor-debug-il-to-native-map-structure.md) structures, each of which specifies the offsets. After the `GetILToNativeMapping3` method returns, `map` will contain some or all of the `COR_DEBUG_IL_TO_NATIVE_MAP` structures.
 
 ## Remarks
 

@@ -45,5 +45,4 @@ typedef struct
 
 ## See also
 
-- [Profiling Enumerations](profiling-enumerations.md)
 - [ICorProfilerInfo12::EventPipeDefineEvent](icorprofilerinfo12-eventpipedefineevent-method.md)

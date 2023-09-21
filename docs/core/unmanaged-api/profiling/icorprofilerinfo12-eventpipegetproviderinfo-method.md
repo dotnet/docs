@@ -49,6 +49,5 @@ Creates an EventPipe provider that the profiler can use to write events for othe
 
 - [EventPipe Overview](../../../core/diagnostics/eventpipe.md)
 - [Well Known EventProviders](../../../core/diagnostics/well-known-event-providers.md)
-- [Profiling Interfaces](profiling-interfaces.md)
 - [ICorProfilerCallback10 Interface](icorprofilercallback10-interface.md)
 - [ICorProfilerInfo12 Interface](icorprofilerinfo12-interface.md)

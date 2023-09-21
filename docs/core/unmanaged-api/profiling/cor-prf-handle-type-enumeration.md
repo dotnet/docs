@@ -47,5 +47,4 @@ typedef enum
 
 ## See also
 
-- [Profiling Enumerations](profiling-enumerations.md)
 - [ICorProfilerInfo13::CreateHandle](icorprofilerinfo13-createhandle-method.md)

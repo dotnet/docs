@@ -42,7 +42,7 @@ HRESULT RequestReJITWithInliners( [in]                       DWORD       dwRejit
 
 ## Remarks
 
-[RequestReJIT](icorprofilerinfo4-requestrejit-method.md) does not do any tracking of inlined methods. The profiler was expected to either block inlining or track inlining and call `RequestReJIT` for all inliners to make sure every instance of an inlined method was ReJITted. This poses a problem with ReJIT on attach, since the profiler is not present to monitor inlining. This method can be called to guarantee that the full set of inliners will be ReJITted as well.
+[RequestReJIT](../../../framework/unmanaged-api/profiling/icorprofilerinfo4-requestrejit-method.md) doesn't track inlined methods. The profiler is expected to either block inlining or track inlining and call `RequestReJIT` for all inliners to make sure every instance of an inlined method was ReJITted. This poses a problem with ReJIT on attach, since the profiler is not present to monitor inlining. This method, `RequestReJITWithInliners`, can be called to guarantee that the full set of inliners is ReJITted as well.
 
 ## Requirements
 
@@ -52,7 +52,7 @@ HRESULT RequestReJITWithInliners( [in]                       DWORD       dwRejit
 
 **Library:** CorGuids.lib
 
-**.NET Versions:** [!INCLUDE[net_core_30](../../../../includes/net-core-30-md.md)]
+**.NET Versions:** Available since .NET Core 3.0
 
 ## See also
 

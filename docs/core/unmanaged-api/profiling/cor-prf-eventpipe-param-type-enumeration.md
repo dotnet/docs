@@ -72,7 +72,3 @@ typedef enum
 **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 **Header:** CorProf.idl, CorProf.h
 **.NET Versions:** Available since .NET 5.0
-
-## See also
-
-- [Profiling Enumerations](profiling-enumerations.md)

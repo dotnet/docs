@@ -24,8 +24,4 @@ A subclass of [ICorProfilerInfo9](icorprofilerinfo9-interface.md) that provides 
 
 **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 **Header:** CorProf.idl, CorProf.h
-**.NET Versions:** [!INCLUDE[net_core_30](../../../../includes/net-core-30-md.md)]
-
-## See also
-
-- [Profiling Interfaces](profiling-interfaces.md)
+**.NET Versions:** Available since .NET Core 3.0

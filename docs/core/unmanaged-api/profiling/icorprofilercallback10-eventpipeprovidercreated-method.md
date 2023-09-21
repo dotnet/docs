@@ -17,7 +17,7 @@ Notifies the profiler whenever an EventPipe provider is created.
 ## Syntax
 
 ```cpp
-    HRESULT EventPipeProviderCreated([in] EVENTPIPE_PROVIDER provider);
+HRESULT EventPipeProviderCreated([in] EVENTPIPE_PROVIDER provider);
 ```
 
 ## Parameters
@@ -33,7 +33,6 @@ Notifies the profiler whenever an EventPipe provider is created.
 
 ## See also
 
-- [Profiling Interfaces](profiling-interfaces.md)
 - [ICorProfilerCallback10 Interface](icorprofilercallback10-interface.md)
 - [ICorProfilerInfo12 Interface](icorprofilerinfo12-interface.md)
 - [ICorProfilerInfo12.EventPipeAddProviderToSession Method](icorprofilerinfo12-eventpipeaddprovidertosession-method.md)

@@ -47,5 +47,4 @@ Gets an environment variable from the process. On non-Windows platforms the runt
 
 ## See also
 
-- [Profiling Interfaces](profiling-interfaces.md)
 - [ICorProfilerInfo11 Interface](icorprofilerinfo11-interface.md)

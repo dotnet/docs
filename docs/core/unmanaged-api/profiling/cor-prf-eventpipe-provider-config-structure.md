@@ -47,5 +47,4 @@ typedef struct
 
 ## See also
 
-- [Profiling Enumerations](profiling-enumerations.md)
 - [ICorProfilerInfo12::EventPipeAddProviderToSession](icorprofilerinfo12-eventpipeaddprovidertosession-method.md)

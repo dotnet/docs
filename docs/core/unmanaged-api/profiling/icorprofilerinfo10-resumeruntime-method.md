@@ -31,7 +31,7 @@ HRESULT ResumeRuntime();
 
 **Library:** CorGuids.lib
 
-**.NET Versions:** [!INCLUDE[net_core_30](../../../../includes/net-core-30-md.md)]
+**.NET Versions:** Available since .NET Core 3.0
 
 ## See also
 

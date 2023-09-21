@@ -88,6 +88,8 @@ The following table lists the C# operators starting with the highest precedence 
 | [c ? t : f](conditional-operator.md) | Conditional operator |
 | [x = y](assignment-operator.md), [x += y](arithmetic-operators.md#compound-assignment), [x -= y](arithmetic-operators.md#compound-assignment), [x *= y](arithmetic-operators.md#compound-assignment), [x /= y](arithmetic-operators.md#compound-assignment), [x %= y](arithmetic-operators.md#compound-assignment), [x &= y](boolean-logical-operators.md#compound-assignment), [x &#124;= y](boolean-logical-operators.md#compound-assignment), [x ^= y](boolean-logical-operators.md#compound-assignment), [x <<= y](bitwise-and-shift-operators.md#compound-assignment), [x >>= y](bitwise-and-shift-operators.md#compound-assignment), [x >>>= y](bitwise-and-shift-operators.md#compound-assignment), [x ??= y](null-coalescing-operator.md), [=>](lambda-operator.md) | Assignment and lambda declaration |
 
+For information about the precedence of [logical pattern combinators](patterns.md#logical-patterns), see the [Precedence and order of checking of logical patterns](patterns.md#precedence-and-order-of-checking) section of the [Patterns](patterns.md) article.
+
 ## Operator associativity
 
 When operators have the same precedence, associativity of the operators determines the order in which the operations are performed:
@@ -96,7 +98,7 @@ When operators have the same precedence, associativity of the operators determin
 - *Right-associative* operators are evaluated in order from right to left. The assignment operators, the null-coalescing operators, lambdas, and the [conditional operator `?:`](conditional-operator.md) are right-associative. For example, `x = y = z` is evaluated as `x = (y = z)`.
 
 > [!IMPORTANT]
-> In an expression of the form `P?.A0?.A1`, if `P` is `null`, neither `A0` nor `A1` are evaluated. Similarly, in an expression of the form `P?.A0.A1`, because `A0` isn't evaluated when `P` is null, neither is `A0.A1`. See the [C# language specification](~/_csharpstandard/standard/expressions.md#1177-null-conditional-member-access) for more details.
+> In an expression of the form `P?.A0?.A1`, if `P` is `null`, neither `A0` nor `A1` are evaluated. Similarly, in an expression of the form `P?.A0.A1`, because `A0` isn't evaluated when `P` is null, neither is `A0.A1`. See the [C# language specification](~/_csharpstandard/standard/expressions.md#1288-null-conditional-member-access) for more details.
 
 Use parentheses to change the order of evaluation imposed by operator associativity:
 
@@ -124,10 +126,10 @@ Typically, all operator operands are evaluated. However, some operators evaluate
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
 - [Expressions](~/_csharpstandard/standard/expressions.md)
-- [Operators](~/_csharpstandard/standard/expressions.md#114-operators)
+- [Operators](~/_csharpstandard/standard/expressions.md#124-operators)
 
 ## See also
 
 - [C# reference](../index.md)
 - [Operator overloading](operator-overloading.md)
-- [Expression trees](../../programming-guide/concepts/expression-trees/index.md)
+- [Expression trees](../../advanced-topics/expression-trees/index.md)

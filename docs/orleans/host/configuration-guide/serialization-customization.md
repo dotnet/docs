@@ -69,12 +69,17 @@ In the preceding example implementation:
 The next step is to register your serializer with the Orleans runtime. This is typically achieved by extending <xref:Orleans.Serialization.ISerializerBuilder> and exposing a custom `AddCustomSerializer` extension method. The following example demonstrates the typical pattern:
 
 ```csharp
+using Microsoft.Extensions.DependencyInjection;
+using Orleans.Serialization;
+using Orleans.Serialization.Serializers;
+using Orleans.Serialization.Cloning;
+
 public static class SerializationHostingExtensions
 {
     public static ISerializerBuilder AddCustomSerializer(
         this ISerializerBuilder builder)
     {
-        ver services = builder.Services;
+        var services = builder.Services;
 
         services.AddSingleton<CustomOrleansSerializer>();
         services.AddSingleton<IGeneralizedCodec, CustomOrleansSerializer>();

@@ -1,6 +1,6 @@
 ---
 title: Compilation config settings
-description: Learn about run-time settings that configure how the JIT compiler works for .NET Core apps.
+description: Learn about run-time settings that configure how the JIT compiler works for .NET apps.
 ms.date: 10/29/2021
 ms.topic: reference
 ---
@@ -147,3 +147,18 @@ This setting enables dynamic or tiered profile-guided optimization (PGO) in .NET
 | | Setting name | Values |
 | - | - | - |
 | **Environment variable** | `DOTNET_TieredPGO` | `1` - enabled<br/>`0` - disabled |
+| **MSBuild property** | `TieredPGO` | `true` - enabled<br/>`false` - disabled |
+
+### Examples
+
+Project file:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TieredPGO>true</TieredPGO>
+  </PropertyGroup>
+
+</Project>
+```

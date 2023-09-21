@@ -42,6 +42,7 @@ f1_keywords:
   - "CS9016" # WRN_UseDefViolationPropertyUnsupportedVersion  Use of possibly unassigned property
   - "CS9017" # WRN_UseDefViolationFieldUnsupportedVersion  Use of possibly unassigned field
   - "CS8967" # ERR_NewlinesAreNotAllowedInsideANonVerbatimInterpolatedString  Newlines inside a non-verbatim interpolated string are not supported in C#
+  - "CS9171"
 helpviewer_keywords:
   - "CS0171"
   - "CS0188"
@@ -83,7 +84,8 @@ helpviewer_keywords:
   - "CS9016"
   - "CS9017"
   - "CS8967"
-ms.date: 11/22/2022
+  - "CS9171"
+ms.date: 07/11/2023
 ---
 # Resolve warnings related to language features and versions
 
@@ -115,6 +117,7 @@ That's be design. The text closely matches the text of the compiler error / warn
 - **CS9015** - *Error: Use of possibly unassigned field. Upgrade to auto-default the field.*
 - **CS9016** - *Warning: Use of possibly unassigned property. Upgrade to auto-default the property.*
 - **CS9017** - *Warning: Use of possibly unassigned field. Upgrade to auto-default the field.*
+- **CS9171** - *Target runtime doesn't support inline array types.*
 
 In addition, the following errors and warnings relate to struct initialization changes in recent versions:
 
@@ -139,6 +142,8 @@ If your selected framework doesn't match the language version required, you can 
 You may have an older target framework selected in your project file. If you remove the `LangVersion` element from your project file, the compiler will use the default value listed in the preceding section. The following table shows all current C# language versions. You can also specify a specific language version to enable newer features.
 
 [!INCLUDE [langversion-table](../includes/langversion-table.md)]
+
+You can learn more about the language versions supported for each framework version in the article on [Configure language version](../configure-language-version.md) in the language reference section.
 
 ## Avoid the updated feature
 

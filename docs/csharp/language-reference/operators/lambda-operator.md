@@ -17,7 +17,7 @@ The `=>` token is supported in two forms: as the [lambda operator](#lambda-opera
 
 In [lambda expressions](lambda-expressions.md), the lambda operator `=>` separates the input parameters on the left side from the lambda body on the right side.
 
-The following example uses the [LINQ](../../programming-guide/concepts/linq/index.md) feature with method syntax to demonstrate the usage of lambda expressions:
+The following example uses the [LINQ](/dotnet/csharp/linq/) feature with method syntax to demonstrate the usage of lambda expressions:
 
 [!code-csharp-interactive[infer types of input variables](snippets/shared/LambdaOperator.cs#InferredTypes)]
 
@@ -47,7 +47,7 @@ where `expression` is a valid expression. The return type of `expression` must b
   - Finalizer
   - Property or indexer `set` accessor
 
-`expression` must be a [*statement expression*](~/_csharpstandard/standard/statements.md#127-expression-statements). Because the expression's result is discarded, the return type of that expression can be any type.
+`expression` must be a [*statement expression*](~/_csharpstandard/standard/statements.md#137-expression-statements). Because the expression's result is discarded, the return type of that expression can be any type.
 
 The following example shows an expression body definition for a `Person.ToString` method:
 
@@ -72,7 +72,7 @@ The `=>` operator can't be overloaded.
 
 ## C# language specification
 
-For more information about the lambda operator, see the [Anonymous function expressions](~/_csharpstandard/standard/expressions.md#1117-anonymous-function-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information about the lambda operator, see the [Anonymous function expressions](~/_csharpstandard/standard/expressions.md#1219-anonymous-function-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

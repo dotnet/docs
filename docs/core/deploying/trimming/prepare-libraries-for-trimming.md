@@ -3,308 +3,259 @@ title: Prepare .NET libraries for trimming
 description: Learn how to prepare .NET libraries for trimming.
 author: sbomer
 ms.author: svbomer
-ms.date: 04/16/2021
+ms.date: 06/12/2023
+zone_pivot_groups: dotnet-preview-version
 ---
 
 # Prepare .NET libraries for trimming
 
-The .NET SDK makes it possible to reduce the size of self-contained apps by [trimming](trim-self-contained.md), which removes unused code from the app and its dependencies. Not all code is compatible with trimming, so .NET 6 provides trim analysis warnings to detect patterns that may break trimmed apps. To resolve warnings originating from the app code, see [resolving trim warnings](#resolve-trim-warnings). This article describes how to prepare libraries for trimming with the aid of these warnings, including recommendations for fixing some common cases.
+The .NET SDK makes it possible to reduce the size of self-contained apps by [trimming](trim-self-contained.md). Trimming removes unused code from the app and its dependencies. Not all code is compatible with trimming. .NET provides trim analysis warnings to detect patterns that may break trimmed apps. This article:
+
+* Describes how to prepare libraries for trimming.
+* Provides recommendations for [resolving common trimming warnings](#resolve-trim-warnings).
+
+## Prerequisites
+
+:::zone pivot="dotnet-6-0"
+
+[.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet) or later.
+
+To get the most up-to-date trimming warnings and analyzer coverage:
+
+* Install and use the .NET 8 SDK or later.
+* Target `net8.0` or later.
+
+:::zone-end
+
+:::zone pivot="dotnet-7-0"
+
+[.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet) or later.
+
+To get the most up-to-date trimming warnings and analyzer coverage:
+
+* Install and use the .NET 8 SDK or later.
+* Target `net8.0` or later.
+
+:::zone-end
+
+:::zone pivot="dotnet-8-0"
+
+[.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet) or later.
+
+:::zone-end
 
 ## Enable library trim warnings
 
-> [!TIP]
-> Ensure you're using the .NET 6 SDK or later for these steps. They will not work correctly in previous versions.
+Trim warnings in a library can be found with either of the following methods:
 
-There are two ways to find trim warnings in your library:
+* Enabling project-specific trimming using the `IsTrimmable` property.
+* Creating a trimming test app that uses the library and enabling trimming for the test app. It's not necessary to reference all the APIs in the library.
 
-  1. Enable project-specific trimming using the `IsTrimmable` property.
-  2. Add your library as a reference to a sample app, and trim the sample app.
-
-Consider doing both. Project-specific trimming is convenient and shows trim warnings for one project, but relies on the references being marked trim-compatible in order to see all warnings. Trimming a sample app is more work, but will always show all warnings.
+We recommend using both approaches. Project-specific trimming is convenient and shows trim warnings for one project, but relies on the references being marked trim-compatible to see all warnings. Trimming a test app is more work, but shows all warnings.
 
 ### Enable project-specific trimming
 
-> [!TIP]
-> To get the latest version of the analyzer with the most coverage, use the [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet). Note this will only update the tooling used to build your app and doesn't require you to target the .NET 7 runtime.
+Set `<IsTrimmable>true</IsTrimmable>` in the project file.
 
-Set `<IsTrimmable>true</IsTrimmable>` in a `<PropertyGroup>` tag in your library project file. This will mark your assembly as "trimmable" and enable trim warnings for that project. Being "trimmable" means your library is considered compatible with trimming and should have no trim warnings when building the library. When used in a trimmed application, the assembly will have its unused members trimmed in the final output.
+:::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyLibrary/MyLibrary.csproj.xml" id="snippet" highlight="2":::
 
-If you want to see trim warnings, but don't want to mark your library as trim-compatible, you can add `<EnableTrimAnalyzer>true</EnableTrimAnalyzer>` instead.
+Setting `<IsTrimmable>true</IsTrimmable>` marks the assembly as "trimmable" and enables trim warnings. "trimmable" means the project:
 
-### Show all warnings with sample application
+* Is considered compatible with trimming.
+* Shouldn't generate trim related warnings when building. When used in a trimmed app, the assembly has its unused members trimmed in the final output.
 
-To show all analysis warnings for your library, including warnings about dependencies, you need the trimmer to analyze the implementation of your library and the implementations of dependencies your library uses. When building and publishing a library, the implementations of the dependencies are not available, and the reference assemblies that are available do not have enough information for the trimmer to determine if they are compatible with trimming. Because of this, you'll need to create and publish a self-contained sample application which produces an executable that includes your library and the dependencies it relies on. This executable includes all the information the trimmer requires to warn you about all trim incompatibilities in your library code, as well as the code that your library references from its dependencies.
+The `IsTrimmable` property defaults to `true` when configuring a project as AOT-compatible with `<IsAotCompatible>true</IsAotCompatible>`. For more information, see [AOT-compatibility analyzers](../native-aot/index.md#aot-compatibility-analyzers).
 
-To create your sample app, first create a separate application project with `dotnet new` and modify the project file to look like the following. No changes to the source code are necessary. You'll need to add the following to your project file:
+To generate trim warnings without marking the project as trim-compatible, use `<EnableTrimAnalyzer>true</EnableTrimAnalyzer>` rather than `<IsTrimmable>true</IsTrimmable>`.
 
-- Set the PublishTrimmed property to `true` with `<PublishTrimmed>true</PublishTrimmed>` in a `<PropertyGroup>` tag.
-- A reference to your library with `<PublishTrimmed>true</PublishTrimmed>` in an `<ItemGroup>` tag.
-- Specify your library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />` in an `<ItemGroup>` tag.
-  - This ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root" which means the trimmer will analyze the assembly as if everything will be used, and traverses all possible code paths that originate from that assembly. This is necessary in case the library has `[AssemblyMetadata("IsTrimmable", "True")]`, which would otherwise let trimming remove the unused library without analyzing it.
-- Set the TrimmerDefaultAction property to `trim` with `<TrimmerDefaultAction>link</TrimmerDefaultAction>` in a `<PropertyGroup>` tag.
-  - This ensures that the trimmer only analyzes the parts of the library's dependencies that are used. It tells the trimmer that any code that is not part of a "root" can be trimmed if it is unused. Without this option, you would see warnings originating from _any_ part of a dependency that doesn't set `[AssemblyMetadata("IsTrimmable", "True")]`, including parts that are unused by your library.
+### Show all warnings with test app
 
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
+To show all analysis warnings for a library, the trimmer must analyze the implementation:
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <PublishTrimmed>true</PublishTrimmed>
-    <!-- Prevent warnings from unused code in dependencies -->
-    <TrimmerDefaultAction>link</TrimmerDefaultAction>
-  </PropertyGroup>
+* Of the library.
+* All dependencies the library uses.
 
-  <ItemGroup>
-    <ProjectReference Include="path/to/MyLibrary.csproj" />
-    <!-- Analyze the whole library, even if attributed with "IsTrimmable" -->
-    <TrimmerRootAssembly Include="MyLibrary" />
-  </ItemGroup>
+When building and publishing a library:
 
-</Project>
-```
+* The implementations of the dependencies aren't available.
+* The available reference assemblies don't have enough information for the trimmer to determine if they're compatible with trimming.
 
-Once your project file is updated, run `dotnet publish` with the [runtime identifier (RID)](../../rid-catalog.md) you want to target.
+Because of the dependency limitations, a self-contained test app which uses the library and its dependencies must be created. The test app includes all the information the trimmer requires to issue warning on trim incompatibilities in:
+
+* The library code.
+* The code that the library references from its dependencies.
+
+***Note:*** If the library has different behavior depending on the target framework, create a trimming test app for each of the target frameworks that support trimming. For example, if the library uses [conditional compilation](../../../csharp/language-reference/preprocessor-directives.md#conditional-compilation) such as `#if NET7_0` to change behavior.
+
+To create the trimming test app:
+
+* Create a separate console application project.
+* Add a reference to the library.
+* Modify the project similar to the project shown below using the following list:
+
+If library targets a TFM that is not trimmable, for example `net472` or `netstandard2.0`, there's no benefit to creating a trimming test app. Trimming is only supported for .NET 6 and later.
+
+:::zone pivot="dotnet-6-0"
+
+* Set `<TrimmerDefaultAction>` to `link`. <!-- only diff with .NET7+ -->
+* Add `<PublishTrimmed>true</PublishTrimmed>`.
+* Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
+* Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
+  * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root". A "root" assembly means the trimmer analyzes every call in the library and traverses all code paths that originate from that assembly.
+
+:::zone-end
+
+:::zone pivot="dotnet-7-0"
+
+* Add `<PublishTrimmed>true</PublishTrimmed>`.
+* Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
+* Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
+  * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root". A "root" assembly means the trimmer analyzes every call in the library and traverses all code paths that originate from that assembly.
+
+:::zone-end
+
+:::zone pivot="dotnet-8-0"
+
+* Add `<PublishTrimmed>true</PublishTrimmed>`.
+* Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
+* Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
+  * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root". A "root" assembly means the trimmer analyzes every call in the library and traverses all code paths that originate from that assembly.
+
+:::zone-end
+
+### .csproj file
+
+:::zone pivot="dotnet-6-0"
+
+:::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyTestLib6app/XMLFile1.xml":::
+
+:::zone-end
+
+:::zone pivot="dotnet-7-0"
+
+:::code language="xml" source="~/docs/core/deploying/trimming/snippets/ConsoleApp1/ConsoleApp1.csproj":::
+
+**Note:** In the preceding project file, when using .NET 7, replace `<TargetFramework>net8.0</TargetFramework>` with `<TargetFramework>net7.0</TargetFramework>`.
+
+:::zone-end
+
+:::zone pivot="dotnet-8-0"
+
+:::code language="xml" source="~/docs/core/deploying/trimming/snippets/ConsoleApp1/ConsoleApp1.csproj":::
+
+:::zone-end
+
+Once the project file is updated, run `dotnet publish` with the target [runtime identifier (RID)](../../rid-catalog.md).
 
 ```dotnetcli
 dotnet publish -c Release -r <RID>
 ```
 
-You can also follow the same pattern for multiple libraries. To see trim analysis warnings for more than one library at a time, add them all to the same project as `ProjectReference` and `TrimmerRootAssembly` items. This will warn about dependencies if _any_ of the root libraries use a trim-unfriendly API in a dependency. To see warnings that have to do with only a particular library, reference that library only.
+Follow the preceding pattern for multiple libraries. To see trim analysis warnings for more than one library at a time, add them all to the same project as `ProjectReference` and `TrimmerRootAssembly` items. Adding all the libraries to the same project with `ProjectReference` and `TrimmerRootAssembly` items warns about dependencies if ***any*** of the root libraries use a trim-unfriendly API in a dependency. To see warnings that have to do with only a particular library, reference that library only.
 
-> [!NOTE]
-> The analysis results depend on the implementation details of your dependencies. If you update to a new version of a dependency, this may introduce analysis warnings if the new version added non-understood reflection patterns, even if there were no API changes. In other words, introducing trim analysis warnings to a library is a breaking change when the library is used with `PublishTrimmed`.
+***Note:*** The analysis results depend on the implementation details of the dependencies. Updating to a new version of a dependency may introduce analysis warnings:
+
+* If the new version added non-understood reflection patterns.
+* Even if there were no API changes.
+* Introducing trim analysis warnings is a breaking change when the library is used with `PublishTrimmed`.
 
 ## Resolve trim warnings
 
-The above steps will produce warnings about code that may cause problems when used in a trimmed app. Here are a few examples of the most common kinds of warnings you may encounter, with recommendations for fixing them.
+The preceding steps produce warnings about code that may cause problems when used in a trimmed app. The following examples show the most common warnings with recommendations for fixing them.
 
 ### RequiresUnreferencedCode
 
-```csharp
-using System.Diagnostics.CodeAnalysis;
+Consider the following code that uses [`[RequiresUnreferencedCode]`](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute) to indicate that the specified method requires dynamic access to code that is not referenced statically, for example, through <xref:System.Reflection?displayProperty=fullName>.
 
-public class MyLibrary
-{
-    public static void Method()
-    {
-        // warning IL2026 : MyLibrary.Method: Using method 'MyLibrary.DynamicBehavior' which has
-        // 'RequiresUnreferencedCodeAttribute' can break functionality
-        // when trimming application code.
-        DynamicBehavior();
-    }
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_1" highlight="12-13":::
 
-    [RequiresUnreferencedCode("DynamicBehavior is incompatible with trimming.")]
-    static void DynamicBehavior()
-    {
-    }
-}
-```
+The preceding highlighted code indicates the library calls a method that has explicitly been annotated as incompatible with trimming. To get rid of the warning, consider whether `MyMethod` needs to call `DynamicBehavior`. If so, annotate the caller `MyMethod` with `[RequiresUnreferencedCode]` which propagates the warning so that callers of `MyMethod` get a warning instead:
 
-This means the library calls a method that has explicitly been annotated as incompatible with trimming, using <xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute>. To get rid of the warning, consider whether `Method` needs to call `DynamicBehavior` to do its job. If so, annotate the caller `Method` with `RequiresUnreferencedCode` as well; this will "bubble up" the warning so that callers of `Method` get a warning instead:
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class2.cs" id="snippet_RequiresUnreferencedCode" highlight="3":::
 
-```csharp
-// Warn for calls to Method, but not for Method's call to DynamicBehavior.
-[RequiresUnreferencedCode("Calls DynamicBehavior.")]
-public static void Method()
-{
-    DynamicBehavior(); // OK. Doesn't warn now.
-}
-```
+Once you have propagated up the attribute all the way to public API, apps calling the library:
 
-Once you have "bubbled up" the attribute all the way to public APIs (so that these warnings are produced only for public methods, if at all), you are done. Apps that call your library will now get warnings if they call those public APIs, but these will no longer produce warnings like `IL2104: Assembly 'MyLibrary' produced trim warnings`.
+* Get warnings only for public methods that aren't trimmable.
+* Don't get warnings like `IL2104: Assembly 'MyLibrary' produced trim warnings`.
 
 ### DynamicallyAccessedMembers
 
-```csharp
-using System.Diagnostics.CodeAnalysis;
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_DAA1":::
 
-public class MyLibrary
-{
-    static void UseMethods(Type type)
-    {
-        // warning IL2070: MyLibrary.UseMethods(Type): 'this' argument does not satisfy
-        // 'DynamicallyAccessedMemberTypes.PublicMethods' in call to 'System.Type.GetMethods()'.
-        // The parameter 't' of method 'MyLibrary.UseMethods(Type)' does not have matching annotations.
-        foreach (var method in type.GetMethods())
-        {
-            // ...
-        }
-    }
-}
-```
+In the preceding code, `UseMethods` is calling a reflection method that has a [`[DynamicallyAccessedMembers]`](xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute) requirement. The requirement states that the type's public methods are available. Satisfy the requirement by adding the same requirement to the parameter of `UseMethods`.
 
-Here, `UseMethods` is calling a reflection method that has a <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute> requirement. The requirement states that the type's public methods are available. In this case, you can satisfy the requirement by adding the same requirement to the parameter of `UseMethods`.
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_DAA2" highlight="3":::
 
-```csharp
-static void UseMethods(
-    // State the requirement in the UseMethods parameter.
-    [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]
-    Type type)
-{
-    // ...
-}
-```
+Now any calls to `UseMethods` produce warnings if they pass in values that don't satisfy the <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicMethods> requirement. Similar to `[RequiresUnreferencedCode]`, once you have propagated up such warnings to public APIs, you're done.
 
-Now any calls to `UseMethods` will produce warnings if they pass in values that don't satisfy the `PublicMethods` requirement. Like with `RequiresUnreferencedCode`, once you have bubbled up such warnings to public APIs, you are done.
+In the following example, an unknown [Type](/dotnet/api/system.type) flows into the annotated method parameter. The unknown `Type` is from a field:
 
-Here is another example where an unknown `Type` flows into the annotated method parameter, this time from a field:
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_UMH":::
 
-```csharp
-static Type type;
+Similarly, here the problem is that the field `type` is passed into a parameter with these requirements. It's fixed by adding  [`[DynamicallyAccessedMembers]`](xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute) to the field. `[DynamicallyAccessedMembers]` warns about code that assigns incompatible values to the field. Sometimes this process continues until a public API is annotated, and other times it ends when a concrete type flows into a location with these requirements. For example:
 
-static void UseMethodsHelper()
-{
-    // warning IL2077: MyLibrary.UseMethodsHelper(Type): 'type' argument does not satisfy
-    // 'DynamicallyAccessedMemberTypes.PublicMethods' in call to 'MyLibrary.UseMethods(Type)'.
-    // The field 'System.Type MyLibrary::type' does not have matching annotations.
-    UseMethods(type);
-}
-```
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class3.cs" id="snippet_UMH2" highlight="1":::
 
-Similarly, here the problem is that the field `type` is passed into a parameter with these requirements. You can fix it by adding `DynamicallyAccessedMembers` to the field. This will warn about code that assigns incompatible values to the field instead. Sometimes this process will continue until a public API is annotated, and other times it will end when a concrete type flows into a location with these requirements. For example:
-
-```csharp
-[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]
-static Type type;
-
-static void InitializeTypeField()
-{
-    MyLibrary.type = typeof(System.Tuple);
-}
-```
-
-In this case the trim analysis will simply keep public methods of `System.Tuple`, and will not produce further warnings.
+In this case, the trim analysis keeps public methods of <xref:System.Tuple>, and produces further warnings.
 
 ## Recommendations
 
-In general, try to avoid reflection if possible. When using reflection, limit it in scope so that it is reachable only from a small part of the library.
-
-- Avoid using non-understood patterns in places like static constructors that will result in the warning propagating to all members of the class.
-- Avoid annotating virtual methods or interface methods, which will require all overrides to have matching annotations.
-- In some cases, you will be able to mechanically propagate warnings through your code without issues. Sometimes this will result in much of your public API being annotated with `RequiresUnreferencedCode`, which is the right thing to do if the library indeed behaves in ways that can't be understood statically by the trim analysis.
-- In other cases, you might discover that your code uses patterns that can't be expressed in terms of the `DynamicallyAccessedMembers` attributes, even if it only uses reflection to operate on statically known types. In these cases, you may need to reorganize some of your code to make it follow an analyzable pattern.
-- Sometimes the existing design of an API will render it mostly trim-incompatible, and you may need to find other ways to accomplish what it is doing. A common example is reflection-based serializers. In these cases, consider adopting other technology like source generators to produce code that is more easily statically analyzed.
+* ***Avoid*** reflection when possible. When using reflection, minimize reflection scope so that it's reachable only from a small part of the library.
+* Annotate code with `DynamicallyAccessedMembers` to statically express the trimming requirements when possible.
+* Consider reorganizing code to make it follow an analyzable pattern that can be annotated with `DynamicallyAccessedMembers`
+* When code is incompatible with trimming, annotate it with `RequiresUnreferencedCode` and propagate this annotation to callers until the relevant public APIs are annotated.
+* Avoid using code that uses reflection in a way not understood by the static analysis. For example, reflection in static constructors should be avoided. Using statically unanalyzable reflection in static constructors result in the warning propagating to all members of the class.
+* Avoid annotating virtual methods or interface methods. Annotating virtual or interface methods requires all overrides to have matching annotations.
+* If an API is mostly trim-incompatible, alternative coding approaches to the API may need to be considered. A common example is reflection-based serializers. In these cases, consider adopting other technology like source generators to produce code that is more easily statically analyzed. For example, see [How to use source generation in System.Text.Json](../../../standard/serialization/system-text-json/source-generation.md)
 
 ## Resolve warnings for non-analyzable patterns
 
-It's better to resolve warnings by expressing the intent of your code using `RequiresUnreferencedCode` and `DynamicallyAccessedMembers` when possible. However, in some cases you may be interested in enabling trimming of a library that uses patterns that can't be expressed with those attributes, or without refactoring existing code. This section describes some advanced ways to resolve trim analysis warnings.
+It's better to resolve warnings by expressing the intent of your code using `[RequiresUnreferencedCode]` and `DynamicallyAccessedMembers` when possible. However, in some cases, you may be interested in enabling trimming of a library that uses patterns that can't be expressed with those attributes, or without refactoring existing code. This section describes some advanced ways to resolve trim analysis warnings.
 
 > [!WARNING]
-> These techniques might break your code if used incorrectly.
+> These techniques might change the behavior or your code or result in run time exceptions if used incorrectly.
 
 ### UnconditionalSuppressMessage
 
-If the intent of your code can't be expressed with the annotations, but you know that the warning doesn't represent a real issue at run time, you can suppress the warnings using <xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute>. This is similar to `SuppressMessageAttribute`, but it's persisted in IL and respected during trim analysis.
+Consider code that:
+
+* The intent can't be expressed with the annotations.
+* Generates a warning but doesn't represent a real issue at run time.
+
+The warnings can be suppressed <xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute>. This is similar to `SuppressMessageAttribute`, but it's persisted in IL and respected during trim analysis.
 
 > [!WARNING]
-> When suppressing warnings, you are responsible for guaranteeing the trim compatibility of your code based on invariants that you know to be true by inspection. Be careful with these annotations, because if they are incorrect, or if invariants of your code change, they might end up hiding real issues.
+> When suppressing warnings, you are responsible for guaranteeing the trim compatibility of the code based on invariants that you know to be true by inspection and testing. Use caution with these annotations, because if they are incorrect, or if invariants of your code change, they might end up hiding incorrect code.
 
 For example:
 
-```csharp
-class TypeCollection
-{
-    Type[] types;
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_AD1":::
 
-    // Ensure that only types with preserved constructors are stored in the array
-    [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicParameterlessConstructor)]
-    public Type this[int i]
-    {
-        // warning IL2063: TypeCollection.Item.get: Value returned from method 'TypeCollection.Item.get'
-        // can not be statically determined and may not meet 'DynamicallyAccessedMembersAttribute' requirements.
-        get => types[i];
-        set => types[i] = value;
-    }
-}
+In the preceding code, the indexer property has been annotated so that the returned `Type` meets the requirements of `CreateInstance`. This ensures that the `TypeWithConstructor` constructor is kept, and that the call to `CreateInstance` doesn't warn. The indexer setter annotation ensures that any types stored in the `Type[]` have a constructor. However, the analysis isn't able to see this and produces a warning for the getter, because it doesn't know that the returned type has its constructor preserved.
 
-class TypeCreator
-{
-    TypeCollection types;
+If you're sure that the requirements are met, you can silence this warning by adding [`[UnconditionalSuppressMessage]`](xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute) to the getter:
 
-    public void CreateType(int i)
-    {
-        types[i] = typeof(TypeWithConstructor);
-        Activator.CreateInstance(types[i]); // No warning!
-    }
-}
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_AD2" highlight="9-10":::
 
-class TypeWithConstructor
-{
-}
-```
+It's important to underline that it's only valid to suppress a warning if there are annotations or code that ensure the reflected-on members are visible targets of reflection. It isn't sufficient that the member was a target of a call, field or property access. It may appear to be the case sometimes but such code is bound to break eventually as more trimming optimizations are added. Properties, fields, and methods that aren't visible targets of reflection could be inlined, have their names removed, get moved to different types, or otherwise optimized in ways that break reflecting on them. When suppressing a warning, it's only permissible to reflect on targets that were visible targets of reflection to the trimming analyzer elsewhere.
 
-Here, the indexer property has been annotated so that the returned `Type` meets the requirements of `CreateInstance`. This already ensures that the `TypeWithConstructor` constructor is kept, and that the call to `CreateInstance` doesn't warn. Furthermore, the indexer setter annotation ensures that any types stored in the `Type[]` have a constructor. However, the analysis isn't able to see this, and still produces a warning for the getter, because it doesn't know that the returned type has its constructor preserved.
-
-If you are sure that the requirements are met, you can silence this warning by adding `UnconditionalSuppressMessage` to the getter:
-
-```csharp
-[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicParameterlessConstructor)]
-public Type this[int i]
-{
-    [UnconditionalSuppressMessage("ReflectionAnalysis", "IL2063",
-        Justification = "The list only contains types stored through the annotated setter.")]
-    get => types[i];
-    set => types[i] = value;
-}
-```
-
-It is important to underline that it is only valid to suppress a warning if there are annotations or code that ensure the reflected-on members are visible targets of reflection. It is not sufficient that the member was simply a target of a call, field or property access. It may appear to be the case sometimes but such code is bound to break eventually as more trimming optimizations are added. Properties, fields, and methods that are not visible targets of reflection could be inlined, have their names removed, get moved to different types, or otherwise optimized in ways that will break reflecting on them. When suppressing a warning, it's only permissible to reflect on targets that were visible targets of reflection to the trimming analyzer elsewhere.
-
-```csharp
-[UnconditionalSuppressMessage("ReflectionAnalysis", "IL2063",
-    // Invalid justification and suppression: property being non-reflectively
-    // used by the app doesn't guarantee that the property will be available
-    // for reflection. Properties that are not visible targets of reflection
-    // are already optimized away with Native AOT trimming and may be
-    // optimized away for non-native deployment in the future as well.
-    Justification = "*INVALID* Only need to serialize properties that are used by the app. *INVALID*")]
-public string Serialize(object o)
-{
-    StringBuilder sb = new StringBuilder();
-    foreach (var property in o.GetType().GetProperties())
-    {
-        AppendProperty(sb, property, o);
-    }
-    return sb.ToString();
-}
-```
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_AD3" highlight="6-8":::
 
 ### DynamicDependency
 
-This attribute can be used to indicate that a member has a dynamic dependency on other members. This results in the referenced members being kept whenever the member with the attribute is kept, but doesn't silence warnings on its own. Unlike the other attributes which teach the trim analysis about the reflection behavior of your code, `DynamicDependency` only keeps additional members. This can be used together with `UnconditionalSuppressMessageAttribute` to fix some analysis warnings.
+The [`[DynamicDependency]`](xref:System.Diagnostics.CodeAnalysis.DynamicDependencyAttribute) attribute can be used to indicate that a member has a dynamic dependency on other members. This results in the referenced members being kept whenever the member with the attribute is kept, but doesn't silence warnings on its own. Unlike the other attributes, which inform the trim analysis about the reflection behavior of the code, `[DynamicDependency]` only keeps other members. This can be used together with [`[UnconditionalSuppressMessage]`](xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute) to fix some analysis warnings.
 
 > [!WARNING]
-> Use `DynamicDependencyAttribute` only as a last resort when the other approaches aren't viable. It is preferable to express the reflection behavior of your code using `RequiresUnreferencedCodeAttribute` or `DynamicallyAccessedMembersAttribute`.
+> Use `[DynamicDependency]` attribute only as a last resort when the other approaches aren't viable. It is preferable to express the reflection behavior using [`[RequiresUnreferencedCode]`](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute) or [`[DynamicallyAccessedMembers]`](xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute).
 
-```csharp
-[DynamicDependency("Helper", "MyType", "MyAssembly")]
-static void RunHelper()
-{
-    var helper = Assembly.Load("MyAssembly").GetType("MyType").GetMethod("Helper");
-    helper.Invoke(null, null);
-}
-```
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_AD4" highlight="1":::
 
 Without `DynamicDependency`, trimming might remove `Helper` from `MyAssembly` or remove `MyAssembly` completely if it's not referenced elsewhere, producing a warning that indicates a possible failure at run time. The attribute ensures that `Helper` is kept.
 
 The attribute specifies the members to keep via a `string` or via `DynamicallyAccessedMemberTypes`. The type and assembly are either implicit in the attribute context, or explicitly specified in the attribute (by `Type`, or by `string`s for the type and assembly name).
 
-The type and member strings use a variation of the C# documentation comment ID string [format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format), without the member prefix. The member string should not include the name of the declaring type, and may omit parameters to keep all members of the specified name. Some examples of the format follow:
+The type and member strings use a variation of the C# documentation comment ID string [format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format), without the member prefix. The member string shouldn't include the name of the declaring type, and may omit parameters to keep all members of the specified name. Some examples of the format are shown in the following code:
 
-```csharp
-[DynamicDependency("Method()")]
-[DynamicDependency("Method(System,Boolean,System.String)")]
-[DynamicDependency("MethodOnDifferentType()", typeof(ContainingType))]
-[DynamicDependency("MemberName")]
-[DynamicDependency("MemberOnUnreferencedAssembly", "ContainingType", "UnreferencedAssembly")]
-[DynamicDependency("MemberName", "Namespace.ContainingType.NestedType", "Assembly")]
-// generics
-[DynamicDependency("GenericMethodName``1")]
-[DynamicDependency("GenericMethod``2(``0,``1)")]
-[DynamicDependency("MethodWithGenericParameterTypes(System.Collections.Generic.List{System.String})")]
-[DynamicDependency("MethodOnGenericType(`0)", "GenericType`1", "UnreferencedAssembly")]
-[DynamicDependency("MethodOnGenericType(`0)", typeof(GenericType<>))]
-```
+:::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_AD5":::
 
-This attribute is designed to be used in cases where a method contains reflection patterns that can not be analyzed even with the help of `DynamicallyAccessedMembersAttribute`.
+The `[DynamicDependency]` attribute is designed to be used in cases where a method contains reflection patterns that can't be analyzed even with the help of `DynamicallyAccessedMembersAttribute`.

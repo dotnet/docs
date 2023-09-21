@@ -27,19 +27,19 @@ internal class ObjectWorkerService :
     {
         await Task.Delay(NextRandomDelay);
 
-        var id = _objectIdProvider.GetNextId();
+        int id = _objectIdProvider.GetNextId();
 
         return s_objects.GetOrAdd(id, _ => new(id, $"Object #{id}"));
     }
 
     public int GetNextId() => s_objects.Count + 1;
 
-    public async Task<ObjectGraph> MarkAsync(ObjectGraph obj)
+    public async Task<ObjectGraph?> MarkAsync(ObjectGraph obj)
     {
         await Task.Delay(NextRandomDelay);
 
         return s_objects.TryUpdate(obj.Id, obj with { IsProcessed = true }, obj) &&
-            s_objects.TryGetValue(obj.Id, out ObjectGraph updatedObject)
+            s_objects.TryGetValue(obj.Id, out ObjectGraph? updatedObject)
             ? updatedObject
             : obj;
     }

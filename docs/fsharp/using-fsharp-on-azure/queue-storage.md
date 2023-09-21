@@ -13,7 +13,7 @@ Azure Queue Storage provides cloud messaging between application components. In 
 
 This tutorial shows how to write F# code for some common tasks using Azure Queue Storage. Tasks covered include creating and deleting queues and adding, reading, and deleting queue messages.
 
-For a conceptual overview of queue storage, see [the .NET guide for queue storage](/azure/storage/storage-dotnet-how-to-use-queues).
+For a conceptual overview of queue storage, see [the .NET guide for queue storage](/azure/storage/queues/storage-quickstart-queues-dotnet).
 
 ## Prerequisites
 

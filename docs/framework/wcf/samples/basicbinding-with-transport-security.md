@@ -6,7 +6,7 @@ ms.assetid: f49b1de6-0254-4362-8ef2-fccd8ff9688b
 ---
 # BasicBinding with Transport Security
 
-The [TransportSecurity sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates the use of SSL transport security with the basic binding. This sample is based on the [Getting Started](getting-started-sample.md) that implements a calculator service.
+The [TransportSecurity sample](https://github.com/dotnet/samples/tree/main/framework/wcf/Basic/Binding/Basic/TransportSecurity/CS) demonstrates the use of SSL transport security with the basic binding. This sample is based on the [Getting Started](getting-started-sample.md) that implements a calculator service.
 
 ## Sample Details
 

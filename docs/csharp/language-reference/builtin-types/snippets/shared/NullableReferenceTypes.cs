@@ -1,84 +1,81 @@
-﻿using System;
+﻿namespace builtin_types;
 
-namespace builtin_types
+public static class NullableReferenceTypes
 {
-    #nullable enable
-    public static class NullableReferenceTypes
+    public static void Examples()
     {
-        public static void Examples()
+        FirstExample();
+        WarningsExamples();
+    }
+
+    private static void FirstExample()
+    {
+        // <SnippetCoreSyntax>
+        string notNull = "Hello";
+        string? nullable = default;
+        notNull = nullable!; // null forgiveness
+        // </SnippetCoreSyntax>
+    }
+
+    // <SnippetClassWithNullable>
+    public class ProductDescription
+    {
+        private string shortDescription;
+        private string? detailedDescription;
+
+        public ProductDescription() // Warning! shortDescription not initialized.
         {
-            FirstExample();
-            WarningsExamples();
         }
 
-        private static void FirstExample()
+        public ProductDescription(string productDescription) =>
+            this.shortDescription = productDescription;
+
+        public void SetDescriptions(string productDescription, string? details=null)
         {
-            // <SnippetCoreSyntax>
-            string notNull = "Hello";
-            string? nullable = default;
-            notNull = nullable!; // null forgiveness
-            // </SnippetCoreSyntax>
+            shortDescription = productDescription;
+            detailedDescription = details;
         }
 
-        // <SnippetClassWithNullable>
-        public class ProductDescription
+        public string GetDescription()
         {
-            private string shortDescription;
-            private string? detailedDescription;
-
-            public ProductDescription() // Warning! shortDescription not initialized.
+            if (detailedDescription.Length == 0) // Warning! dereference possible null
             {
-            }
-
-            public ProductDescription(string productDescription) =>
-                this.shortDescription = productDescription;
-
-            public void SetDescriptions(string productDescription, string? details=null)
-            {
-                shortDescription = productDescription;
-                detailedDescription = details;
-            }
-
-            public string GetDescription()
-            {
-                if (detailedDescription.Length == 0) // Warning! dereference possible null
-                {
-                    return shortDescription;
-                }
-                else
-                {
-                    return $"{shortDescription}\n{detailedDescription}";
-                }
-            }
-
-            public string FullDescription()
-            {
-                if (detailedDescription == null)
-                {
-                    return shortDescription;
-                }
-                else if (detailedDescription.Length > 0) // OK, detailedDescription can't be null.
-                {
-                    return $"{shortDescription}\n{detailedDescription}";
-                }
                 return shortDescription;
             }
+            else
+            {
+                return $"{shortDescription}\n{detailedDescription}";
+            }
         }
-        // </SnippetClassWithNullable>
 
-        private static void WarningsExamples()
+        public string FullDescription()
         {
-            // <SnippetLocalWarnings>
-            string shortDescription = default; // Warning! non-nullable set to null;
-            var product = new ProductDescription(shortDescription); // Warning! static analysis knows shortDescription maybe null.
-
-            string description = "widget";
-            var item = new ProductDescription(description);
-
-            item.SetDescriptions(description, "These widgets will do everything.");
-            // </SnippetLocalWarnings>
-            string result = item.FullDescription();
+            if (detailedDescription == null)
+            {
+                return shortDescription;
+            }
+            else if (detailedDescription.Length > 0) // OK, detailedDescription can't be null.
+            {
+                return $"{shortDescription}\n{detailedDescription}";
+            }
+            return shortDescription;
         }
     }
-    #nullable restore
+    // </SnippetClassWithNullable>
+
+    private static void WarningsExamples()
+    {
+        // <SnippetLocalWarnings>
+        string shortDescription = default; // Warning! non-nullable set to null;
+        var product = new ProductDescription(shortDescription); // Warning! static analysis knows shortDescription maybe null.
+
+        string description = "widget";
+        var item = new ProductDescription(description);
+
+        item.SetDescriptions(description, "These widgets will do everything.");
+        // </SnippetLocalWarnings>
+        string result = item.FullDescription();
+    }
 }
+
+

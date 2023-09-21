@@ -1,7 +1,7 @@
 ---
 title: Localizability review
 description: Learn about localizability reviews, and when they should occur and how to use them.
-ms.date: 08/11/2021
+ms.date: 03/13/2023
 dev_langs:
   - "csharp"
   - "vb"

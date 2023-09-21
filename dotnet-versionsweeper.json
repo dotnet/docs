@@ -1,4 +1,5 @@
 {
+    "actionType": "all",
     "outOfSupportWithinDays": 60,
     "ignore":[
         "samples/**/*.*",
@@ -9,6 +10,8 @@
         "**/docs/core/porting/snippets/upgrade-assistant-wcf-framework/CalculatorSample/**/*.csproj",
         "**/docs/core/whats-new/snippets/**/*.csproj",
         "**/docs/core/whats-new/snippets/**/*.vbproj",
-        "**/docs/core/whats-new/snippets/**/*.fsproj"
+        "**/docs/core/whats-new/snippets/**/*.fsproj",
+        "**/docs/csharp/advanced-topics/interop/snippets/**/*.csproj",
+        "**/docs/csharp/programming-guide/classes-and-structs/snippets/NamedAndOptional/namedandoptionalsnippets.csproj"
     ]
 }

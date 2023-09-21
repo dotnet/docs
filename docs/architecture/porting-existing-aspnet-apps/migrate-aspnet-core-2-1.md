@@ -9,7 +9,7 @@ ms.date: 12/10/2021
 
 [!INCLUDE [download-alert](includes/download-alert.md)]
 
-ASP.NET Core 2.1 is an interesting release because it's the most recently supported ASP.NET Core release that supported both .NET Core and .NET Framework runtimes. As such, it may offer an easier upgrade path for some apps when compared to upgrading all parts of the app to .NET Core/.NET 6 at once. Although support for .NET Core 2.1 ended in August 2021, it may make sense as an interim step for some apps. Also, support for ASP.NET Core 2.1 running on .NET Framework will continue for as long as [its underlying .NET Framework is supported](/lifecycle/products/microsoft-net-framework). A complete [list of currently supported ASP.NET Core 2.1 packages](https://dotnet.microsoft.com/platform/support/policy/aspnetcore-2.1) is available for reference.
+ASP.NET Core 2.1 is an interesting release because it's the most recently supported ASP.NET Core release that supported both .NET Core and .NET Framework runtimes. As such, it may offer an easier upgrade path for some apps when compared to upgrading all parts of the app to .NET Core/.NET 7 at once. Although support for .NET Core 2.1 ended in August 2021, it may make sense as an interim step for some apps. Also, support for ASP.NET Core 2.1 running on .NET Framework will continue for as long as [its underlying .NET Framework is supported](/lifecycle/products/microsoft-net-framework). A complete [list of currently supported ASP.NET Core 2.1 packages](https://dotnet.microsoft.com/platform/support/policy/aspnetcore-2.1) is available for reference.
 
 ## Should apps run on .NET Framework with ASP.NET Core 2.1
 

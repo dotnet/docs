@@ -29,7 +29,7 @@ namespace Samples
         public int Number { get { return this.number; } }
 
         //<snippet3>
-        // Override Object.Equals to perform specfic comparison
+        // Override Object.Equals to perform specific comparison
         public override bool Equals(Object obj)
         {
             // If the object we're being asked to compare ourselves to is null

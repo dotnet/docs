@@ -37,10 +37,10 @@ The main takeaway you should have is that asynchronous computations are independ
 
 In F#, asynchronous programming is centered around two core concepts: async computations and tasks.
 
-- The `Async<'T>` type with `async { }` [computation expression](../language-reference/computation-expressions.md), which represents a composable asynchronous computation that can be started to form a task.
-- The `Task<'T>` type, with `task { }` [computation expression](../language-reference/computation-expressions.md), which represents an executing .NET task.
+- The `Async<'T>` type with [`async { }` expressions](../language-reference/async-expressions.md), which represents a composable asynchronous computation that can be started to form a task.
+- The `Task<'T>` type, with [`task { }` expressions](../language-reference/task-expressions.md), which represents an executing .NET task.
 
-In general, you should use `async { }` programming in F# unless you frequently need to create or consume .NET tasks.
+In general, you should consider using `task {…}` over `async {…}` in new code if you're interoperating with .NET libraries that use tasks, and if you don't rely on asynchronous code tailcalls or implicit cancellation token propagation.
 
 ### Core concepts of async
 
@@ -330,7 +330,7 @@ What to watch out for:
 
 ### Interoperate with .NET
 
-If using `async { }` programming, you may need to interoperate with a .NET library or C# codebase that uses [async/await](../../csharp/programming-guide/concepts/async/index.md)-style asynchronous programming. Because C# and the majority of .NET libraries use the <xref:System.Threading.Tasks.Task%601> and <xref:System.Threading.Tasks.Task> types as their core abstractions this may change how you write your F# asynchronous code.
+If using `async { }` programming, you may need to interoperate with a .NET library or C# codebase that uses [async/await](../../csharp/language-reference/keywords/async.md)-style asynchronous programming. Because C# and the majority of .NET libraries use the <xref:System.Threading.Tasks.Task%601> and <xref:System.Threading.Tasks.Task> types as their core abstractions this may change how you write your F# asynchronous code.
 
 One option is to switch to writing .NET tasks directly using `task { }`. Alternatively, you can use the `Async.AwaitTask` function to await a .NET asynchronous computation:
 

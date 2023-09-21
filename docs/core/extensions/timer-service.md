@@ -1,10 +1,11 @@
 ---
 title: Implement the IHostedService interface
-description: Learn how to implement a custom IHostedService interface with .NET.
+description: Learn how to implement a custom IHostedService interface in C#, much like the inbuilt .NET BackgroundService.
 author: IEvangelist
 ms.author: dapine
-ms.date: 04/20/2022
+ms.date: 05/09/2023
 ms.topic: tutorial
+zone_pivot_groups: dotnet-version
 ---
 
 # Implement the `IHostedService` interface
@@ -23,9 +24,20 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+:::zone target="docs" pivot="dotnet-7-0"
+
+- The [.NET 7.0 SDK or later](https://dotnet.microsoft.com/download/dotnet/7.0)
 - A .NET integrated development environment (IDE)
   - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
+
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+- The [.NET 6.0 SDK or later](https://dotnet.microsoft.com/download/dotnet/6.0)
+- A .NET integrated development environment (IDE)
+  - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
+
+:::zone-end
 
 <!-- ## Create a new project -->
 [!INCLUDE [file-new-worker](includes/file-new-worker.md)]
@@ -36,7 +48,16 @@ The timer-based background service makes use of the <xref:System.Threading.Timer
 
 Replace the contents of the `Worker` from the template with the following C# code, and rename the file to *TimerService.cs*:
 
-:::code source="snippets/workers/timer-service/TimerService.cs" highlight="35,42-45":::
+:::zone target="docs" pivot="dotnet-7-0"
+
+:::code source="snippets/workers/7.0/timer-service/TimerService.cs" highlight="35,42-45":::
+
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+:::code source="snippets/workers/6.0/timer-service/TimerService.cs" highlight="35,42-45":::
+
+:::zone-end
 
 > [!IMPORTANT]
 > The `Worker` was a subclass of <xref:Microsoft.Extensions.Hosting.BackgroundService>. Now, the `TimerService` implements both the <xref:Microsoft.Extensions.Hosting.IHostedService>, and <xref:System.IAsyncDisposable> interfaces.
@@ -50,9 +71,18 @@ When <xref:Microsoft.Extensions.Hosting.IHostedService.StartAsync%2A> is called,
 
 Replace the existing `Program` contents with the following C# code:
 
-:::code source="snippets/workers/timer-service/Program.cs" highlight="6":::
+:::zone target="docs" pivot="dotnet-7-0"
 
-The service is registered in `IHostBuilder.ConfigureServices` (*Program.cs*) with the `AddHostedService` extension method. This is the same extension method you use when registering <xref:Microsoft.Extensions.Hosting.BackgroundService> subclasses, as they both implement the <xref:Microsoft.Extensions.Hosting.IHostedService> interface.
+:::code source="snippets/workers/7.0/timer-service/Program.cs" highlight="4":::
+
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+:::code source="snippets/workers/6.0/timer-service/Program.cs" highlight="4-7":::
+
+:::zone-end
+
+The service is registered in (*Program.cs*) with the `AddHostedService` extension method. This is the same extension method you use when registering <xref:Microsoft.Extensions.Hosting.BackgroundService> subclasses, as they both implement the <xref:Microsoft.Extensions.Hosting.IHostedService> interface.
 
 For more information on registering services, see [Dependency injection in .NET](dependency-injection.md).
 

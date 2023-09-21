@@ -1,0 +1,86 @@
+name: "C# 12 - New feature"
+description: Create the task list of a new feature in C# 12. Intended mostly for docs / product-team use.
+title: "[C# 12]: New Feature - "
+labels:
+  - ":checkered_flag: Release: .NET 8" 
+  - Pri1
+  - csharp-whats-new/tech
+  - dotnet-csharp/prod
+assignees:
+ - billwagner
+body:
+  - type: dropdown
+    id: version
+    attributes:
+      label: Visual Studio release
+      description: What Visual Studio (preview) contains this feature?
+      options:
+        - "17.7"
+        - "17.8p1"
+        - "17.8p2"
+        - "17.8p3"
+        - "Other (please put exact version in description textbox)"
+  - type: input
+    id: Speclet
+    attributes:
+      label: Link to speclet
+      description: Insert the markdown format for a link to the speclet
+      value: "- [Speclet](https://github.com/dotnet/csharplang/blob/main/proposals/feature.md)"
+    validations:
+      required: true
+  - type: input
+    id: pullrequest
+    attributes:
+      label: Link to Pull request
+      description: Insert the markdown format for a link to the PR
+      value: "- [PR](https://github.com/dotnet/roslyn/pulls/nnnnn)"
+    validations:
+      required: true
+  - type: textarea
+    id: new-behavior
+    attributes:
+      label: New behavior
+      description: Describe the new behavior. Include code snippets if applicable.
+    validations:
+      required: true
+  - type: checkboxes
+    id: task-list
+    attributes:
+      label: Areas affected
+      description: Check all areas that must be updated. Some are always updated.
+      options:
+        - label: "**Add to What's new in C# 12**: Add links to updated docs in the What's new in C# 12 article."
+          required: true
+        - label:  "**Update language reference**: Detail the areas in the language reference that will be updated for this feature."
+          required: true
+        - label:  "**Update compiler messages**: Add new (or updated) pages for new compiler messages. Include related message."
+          required: true
+        - label: "*Include in *Everyday C#* section**: Is this new feature included in Everyday C#?"
+          required: false
+        - label: "**Tutorials**: Are new tutorials required for this feature? If so, detail below"
+          required: false
+  - type: textarea
+    id: language-reference
+    attributes:
+      label: Language reference tasks
+      description: Add a list of areas or articles in the language reference that should be updated for this feature.
+      placeholder: |
+        - Syntax directly affected
+        - Related language elements that should include use of this new feature
+        - Areas where the new feature reduces friction
+  - type: textarea
+    id: tutorials
+    attributes:
+      label: Tutorial tasks
+      description: Add a list of topics that should be covered in one or more tutorials related to this feature.
+      placeholder: |
+        - Syntax directly affected
+        - Related language elements that should include use of this new feature
+        - Areas where the new feature reduces friction
+  - type: textarea
+    id: fundamentals
+    attributes:
+      label: Everyday C# tasks
+      description: Add a list of any articles in the new Everyday C# section that should be updated.
+      placeholder: |
+        - How will this be used as part of *Everyday C#*?

@@ -14,3 +14,5 @@ ms.topic: include
 > - Microsoft.NET.Sdk.Worker
 >
 > These implicit `global using` directives include the most common namespaces for the project type.
+>
+> For more information, see the article on [Implicit using directives](~/docs/core/project-sdk/overview.md#implicit-using-directives)

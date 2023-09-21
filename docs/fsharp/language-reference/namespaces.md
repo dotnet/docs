@@ -18,7 +18,7 @@ namespace [rec] [parent-namespaces.]identifier
 
 If you want to put code in a namespace, the first declaration in the file must declare the namespace. The contents of the entire file then become part of the namespace, provided no other namespaces declaration exists further in the file. If that is the case, then all code up until the next namespace declaration is considered to be within the first namespace.
 
-Namespaces cannot directly contain values and functions. Instead, values and functions must be included in modules, and modules are included in namespaces. Namespaces can contain types, modules.
+Namespaces cannot directly contain values and functions. Instead, values and functions must be included in modules, and modules are included in namespaces. Namespaces can contain types and modules.
 
 XML doc comments can be declared above a namespace, but they're ignored. Compiler directives can also be declared above a namespace.
 

@@ -99,7 +99,7 @@ First, download a **binary** release for either the SDK or the runtime from one 
 - ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet/3.1)
 - [All .NET downloads](https://dotnet.microsoft.com/download/dotnet)
 
-Next, extract the downloaded file and use the `export` command to set `DOTNET_ROOT` to the extracted folder's location and then ensure .NET is in PATH. This should make the .NET CLI commands available at the terminal.
+Next, extract the downloaded file and use the `export` command to set `DOTNET_ROOT` to the extracted folder's location and then ensure .NET is in PATH. This should make the .NET CLI commands available at the terminal. For more information about .NET environment variables, see [.NET SDK and CLI environment variables](../tools/dotnet-environment-variables.md#net-sdk-and-cli-environment-variables).
 
 Alternatively, after downloading the .NET binary, the following commands may be run from the directory where the file is saved to extract the runtime. This will also make the .NET CLI commands available at the terminal and set the required environment variables. **Remember to change the `DOTNET_FILE` value to the name of the downloaded binary**:
 
@@ -126,6 +126,12 @@ export PATH=$PATH:$DOTNET_ROOT
 > Also, add `export DOTNET_ROOT=$HOME/dotnet` to the end of the file.
 
 This approach lets you install different versions into separate locations and choose explicitly which one to use by which application.
+
+## Verify downloaded binaries
+
+[!INCLUDE [verify-download-intro](includes/verify-download-intro.md)]
+
+[!INCLUDE [verify-download-macos-linux](includes/verify-download-macos-linux.md)]
 
 ## Arm-based Macs
 
@@ -170,6 +176,8 @@ Visual Studio for Mac installs the .NET SDK when the **.NET** workload is select
 
 :::image type="content" source="media/install-sdk/mac-install-selection.png" alt-text="macOS Visual Studio 2019 for Mac with the .NET workload selected." lightbox="media/install-sdk/mac-install-selection.png":::
 
+[!INCLUDE [](~/includes/vs-mac-eol.md)]
+
 ## Install alongside Visual Studio Code
 
 Visual Studio Code is a powerful and lightweight source code editor that runs on your desktop. Visual Studio Code is available for Windows, macOS, and Linux.
@@ -186,7 +194,7 @@ The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for aut
 
 The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET 6. You can choose a specific release by specifying the `channel` switch. Include the `runtime` switch to install a runtime. Otherwise, the script installs the SDK.
 
-The following command installs the ASP.NET Core runtime for maximum compatability. The ASP.NET Core runtime also includes the standard .NET runtime.
+The following command installs the ASP.NET Core runtime for maximum compatibility. The ASP.NET Core runtime also includes the standard .NET runtime.
 
 ```bash
 ./dotnet-install.sh --channel 7.0 --runtime aspnetcore

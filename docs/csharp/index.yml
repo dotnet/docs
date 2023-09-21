@@ -7,7 +7,7 @@ metadata:
   title: "C# docs - get started, tutorials, reference."
   description: "Learn C# programming - for beginning developers, developers new to C#, and experienced C# / .NET developers"
   ms.topic: landing-page # Required
-  ms.date: 11/19/2019
+  ms.date: 04/05/2023
 
 landingContent:
   - title: "Learn to program in C#"
@@ -81,6 +81,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
+          - text: C# language strategy
+            url: ./tour-of-csharp/strategy.md
           - text: "Programming concepts"
             url: ./programming-guide/concepts/index.md
       - linkListType: quickstart
@@ -112,14 +114,14 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
+          - text: "What's new in C# 12"
+            url: whats-new/csharp-12.md
           - text: "What's new in C# 11"
             url: whats-new/csharp-11.md
           - text: "What's new in C# 10"
             url: whats-new/csharp-10.md
           - text: "What's new in C# 9.0"
             url: whats-new/csharp-9.md
-          - text: "What's new in C# 8.0"
-            url: whats-new/csharp-8.md
       - linkListType: tutorial
         links:
           - text: Explore record types

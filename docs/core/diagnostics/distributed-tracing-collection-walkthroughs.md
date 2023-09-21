@@ -21,7 +21,7 @@ available to diagnose application issues when needed. See
 [Cloud Native Computing Foundation](https://www.cncf.io/) that aims to standardize generating and collecting telemetry for
 cloud-native software. In these examples, you'll collect and display distributed trace information on the console. To learn how to
 configure OpenTelemetry to send information elsewhere, see the
-[OpenTelemetry getting started guide](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started/README.md).
+[OpenTelemetry getting started guide](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started-console/README.md).
 
 ### ASP.NET example
 

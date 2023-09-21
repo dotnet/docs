@@ -1,7 +1,7 @@
 ---
 title: dotnet build command
 description: The dotnet build command builds a project and all of its dependencies.
-ms.date: 08/12/2021
+ms.date: 07/19/2023
 ---
 # dotnet build
 
@@ -16,10 +16,14 @@ ms.date: 08/12/2021
 ```dotnetcli
 dotnet build [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
     [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>]
+    [--disable-build-servers]
     [--force] [--interactive] [--no-dependencies] [--no-incremental]
     [--no-restore] [--nologo] [--no-self-contained] [--os <OS>]
-    [-o|--output <OUTPUT_DIRECTORY>] [-r|--runtime <RUNTIME_IDENTIFIER>]
-    [--self-contained [true|false]] [--source <SOURCE>] [--use-current-runtime, --ucr [true|false]]
+    [-o|--output <OUTPUT_DIRECTORY>]
+    [-p|--property:<PROPERTYNAME>=<VALUE>]
+    [-r|--runtime <RUNTIME_IDENTIFIER>]
+    [--self-contained [true|false]] [--source <SOURCE>]
+    [--tl [auto|on|off]] [--use-current-runtime, --ucr [true|false]]
     [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
 dotnet build -h|--help
@@ -82,6 +86,8 @@ The project or solution file to build. If a project or solution file isn't speci
 
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
+[!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
+
 - **`-f|--framework <FRAMEWORK>`**
 
   Compiles for a specific [framework](../../standard/frameworks.md). The framework must be defined in the [project file](../project-sdk/overview.md). Examples: `net7.0`, `net462`.
@@ -118,7 +124,20 @@ The project or solution file to build. If a project or solution file isn't speci
 
   Directory in which to place the built binaries. If not specified, the default path is `./bin/<configuration>/<framework>/`.  For projects with multiple target frameworks (via the `TargetFrameworks` property), you also need to define `--framework` when you specify this option.
 
+  - .NET 7.0.200 SDK and later
+
+    If you specify the `--output` option when running this command on a solution, the CLI will emit a warning (an error in 7.0.200) due to the unclear semantics of the output path. The `--output` option is disallowed because all outputs of all built projects would be copied into the specified directory, which isn't compatible with multi-targeted projects, as well as projects that have different versions of direct and transitive dependencies. For more information, see [Solution-level `--output` option no longer valid for build-related commands](../compatibility/sdk/7.0/solution-level-output-no-longer-valid.md).
+
 [!INCLUDE [os](../../../includes/cli-os.md)]
+
+- **`-p|--property:<PROPERTYNAME>=<VALUE>`**
+
+  Sets one or more MSBuild properties. Specify multiple properties delimited by semicolons or by repeating the option:
+
+  ```dotnetcli
+  --property:<NAME1>=<VALUE1>;<NAME2>=<VALUE2>
+  --property:<NAME1>=<VALUE1> --property:<NAME2>=<VALUE2>
+  ```
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
@@ -126,13 +145,29 @@ The project or solution file to build. If a project or solution file isn't speci
 
 - **`--self-contained [true|false]`**
 
-  Publishes the .NET runtime with the application so the runtime doesn't need to be installed on the target machine. The default is `true` if a runtime identifier is specified.  Available since .NET 6 SDK.
+  Publishes the .NET runtime with the application so the runtime doesn't need to be installed on the target machine. The default is `true` if a runtime identifier is specified. Available since .NET 6.
 
 - **`--source <SOURCE>`**
 
   The URI of the NuGet package source to use during the restore operation.
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+- **`--tl [auto|on|off]`**
+
+  Specifies whether the *terminal logger* should be used for the build output. The default is `auto`, which first verifies the environment before enabling terminal logging. The environment check verifies that the terminal is capable of using modern output features and isn't using a redirected standard output before enabling the new logger. `on` skips the environment check and enables terminal logging. `off` skips the environment check and uses the default console logger.
+
+  The terminal logger shows you the restore phase followed by the build phase. During each phase, the currently building projects appear at the bottom of the terminal. Each project that's building outputs both the MSBuild target currently being built and the amount of time spent on that target. You can search this information to learn more about the build. When a project is finished building, a single "build completed" section is written for that captures:
+
+  - The name of the built project
+  - The target framework (if multi-targeted)
+  - The status of that build
+  - The primary output of that build (which is hyperlinked)
+  - Any diagnostics generated for that project
+
+  This option is available starting in .NET 8.
+
+- **`-v|--verbosity <LEVEL>`**
+
+  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`. By default, MSBuild displays warnings and errors at all verbosity levels. To exclude warnings, use `/property:WarningLevel=0`. For more information, see <xref:Microsoft.Build.Framework.LoggerVerbosity> and [WarningLevel](../../csharp/language-reference/compiler-options/errors-warnings.md#warninglevel).
 
 - **`--use-current-runtime, --ucr [true|false]`**
 

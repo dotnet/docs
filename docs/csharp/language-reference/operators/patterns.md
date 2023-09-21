@@ -1,7 +1,7 @@
 ---
 title: "Patterns - Pattern matching using the is and switch expressions."
 description: "Learn about the patterns supported by the `is` and `switch` expressions. Combine multiple patterns using the `and`, `or`, and `not` operators."
-ms.date: 11/28/2022
+ms.date: 01/30/2023
 f1_keywords: 
   - "and_CSharpKeyword"
   - "or_CSharpKeyword"
@@ -14,7 +14,7 @@ helpviewer_keywords:
 ---
 # Pattern matching - the `is` and `switch` expressions, and operators `and`, `or` and `not` in patterns
 
-You use the [`is` expression](is.md), the [switch statement](../statements/selection-statements.md#the-switch-statement) and the [switch expression](switch-expression.md) to match an input expression against any number of characteristics. C# supports multiple patterns, including declaration, type, constant, relational, property, list, var, and discard. Patterns can be combined using boolean logic keywords `and`, `or`, and `not`.
+You use the [`is` expression](is.md), the [switch statement](../statements/selection-statements.md#the-switch-statement) and the [switch expression](switch-expression.md) to match an input expression against any number of characteristics. C# supports multiple patterns, including declaration, type, constant, relational, property, list, var, and discard. Patterns can be combined using Boolean logic keywords `and`, `or`, and `not`.
 
 The following C# expressions and statements support pattern matching:
 
@@ -145,11 +145,13 @@ As the preceding example shows, you can repeatedly use the pattern combinators i
 
 ### Precedence and order of checking
 
-The following list orders pattern combinators starting from the highest precedence to the lowest:
+The pattern combinators are ordered from the highest precedence to the lowest as follows:
 
 - `not`
 - `and`
 - `or`
+
+When a logical pattern is a pattern of an `is` expression, the precedence of logical pattern combinators is **higher** than the precedence of logical operators (both [bitwise logical](bitwise-and-shift-operators.md) and [Boolean logical](boolean-logical-operators.md) operators). Otherwise, the precedence of logical pattern combinators is **lower** than the precedence of logical and conditional logical operators. For the complete list of C# operators ordered by precedence level, see the [Operator precedence](index.md#operator-precedence) section of the [C# operators](index.md) article.
 
 To explicitly specify the precedence, use parentheses, as the following example shows:
 
@@ -247,7 +249,7 @@ You use a *discard pattern* `_` to match any expression, including `null`, as th
 
 In the preceding example, a discard pattern is used to handle `null` and any integer value that doesn't have the corresponding member of the <xref:System.DayOfWeek> enumeration. That guarantees that a `switch` expression in the example handles all possible input values. If you don't use a discard pattern in a `switch` expression and none of the expression's patterns matches an input, the runtime [throws an exception](switch-expression.md#non-exhaustive-switch-expressions). The compiler generates a warning if a `switch` expression doesn't handle all possible input values.
 
-A discard pattern can't be a pattern in an `is` expression or a `switch` statement. In those cases, to match any expression, use a [`var` pattern](#var-pattern) with a discard: `var _`.
+A discard pattern can't be a pattern in an `is` expression or a `switch` statement. In those cases, to match any expression, use a [`var` pattern](#var-pattern) with a discard: `var _`. A discard pattern can be a pattern in a `switch` expression.
 
 For more information, see the [Discard pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#discard-pattern) section of the feature proposal note.
 
@@ -267,11 +269,11 @@ As the preceding example shows, a list pattern is matched when each nested patte
 
 :::code language="csharp" source="snippets/patterns/ListPattern.cs" id="MatchAnyElement":::
 
-The preceding examples match a whole input sequence against a list pattern. To match elements only at the start or/and the end of an input sequence, use the *slice pattern* `..` within a list pattern, as the following example shows:
+The preceding examples match a whole input sequence against a list pattern. To match elements only at the start or/and the end of an input sequence, use the *slice pattern* `..`, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/ListPattern.cs" id="UseSlice":::
 
-A slice pattern matches zero or more elements. You can use at most one slice pattern in a list pattern.
+A slice pattern matches zero or more elements. You can use at most one slice pattern in a list pattern. The slice pattern can only appear in a list pattern.
 
 You can also nest a subpattern within a slice pattern, as the following example shows:
 
@@ -281,9 +283,10 @@ For more information, see the [List patterns](~/_csharplang/proposals/csharp-11.
 
 ## C# language specification
 
-For more information, see the following feature proposal notes:
+For more information, see the [Patterns and pattern matching](~/_csharpstandard/standard/patterns.md) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
-- [C# 7 - Pattern matching](~/_csharplang/proposals/csharp-7.0/pattern-matching.md)
+For information about features added in C# 8 and later, see the following feature proposal notes:
+
 - [C# 8 - Recursive pattern matching](~/_csharplang/proposals/csharp-8.0/patterns.md)
 - [C# 9 - Pattern-matching updates](~/_csharplang/proposals/csharp-9.0/patterns3.md)
 - [C# 10 - Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)

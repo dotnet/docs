@@ -15,19 +15,23 @@ One of the most common scenarios for IoT devices is detection of environmental c
 
 In this topic, you will use .NET to read environmental conditions from a sensor.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?show=dotnet-iot-for-beginners&ep=iot-sensors-and-displays-with-i²c-and-dotnet-dotnet-iot-for-beginners]
+
 ## Prerequisites
 
-- [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
+- [!INCLUDE [prereq-sbc](../includes/prereq-sbc.md)]
 - [BME280](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout) humidity/barometric pressure/temperature sensor breakout
 - Jumper wires
 - Breadboard (optional)
 - Raspberry Pi GPIO breakout board (optional)
 - [!INCLUDE [tutorial-prereq-dotnet](../includes/tutorial-prereq-dotnet.md)]
 
+[!INCLUDE [rpi-note](../includes/rpi-note.md)]
+
 > [!IMPORTANT]
 > There are many manufacturers of BME280 breakouts. Most designs are similar, and the manufacturer shouldn't make any difference to the functionality. This tutorial attempts to account for variations. Ensure your BME280 breakout includes an Inter-Integrated Circuit (I<sup>2</sup>C) interface.
 >
-> Components like BME280 breakouts are generally sold with unsoldered pin headers. If you're uncomfortable with soldering, look for a BME280 breakout board with a pre-soldered header or a different connector. If you want, consider learning how to solder! [Here's a good beginner's guide to soldering](https://learn.adafruit.com/adafruit-guide-excellent-soldering).
+> Components like BME280 breakouts are often sold with unsoldered pin headers. If you're uncomfortable with soldering, look for a BME280 breakout board with a pre-soldered header or a different connector. If you want, consider learning how to solder! [Here's a good beginner's guide to soldering](https://learn.adafruit.com/adafruit-guide-excellent-soldering).
 
 [!INCLUDE [prepare-pi-i2c](../includes/prepare-pi-i2c.md)]
 
@@ -73,7 +77,7 @@ Complete the following steps in your preferred development environment:
         > [!IMPORTANT]
         > Some BME280 breakout manufacturers use the secondary address value. For those devices, use `Bme280.SecondaryI2cAddress`.
 
-    - A [using declaration](../../csharp/language-reference/keywords/using-statement.md) creates an instance of `I2cDevice` by calling `I2cDevice.Create` and passing in `i2cSettings`. This `I2cDevice` represents the I<sup>2</sup>C bus. The `using` declaration ensures the object is disposed and hardware resources are released properly.
+    - A [using declaration](../../csharp/language-reference/statements/using.md) creates an instance of `I2cDevice` by calling `I2cDevice.Create` and passing in `i2cSettings`. This `I2cDevice` represents the I<sup>2</sup>C bus. The `using` declaration ensures the object is disposed and hardware resources are released properly.
     - Another `using` declaration creates an instance of `Bme280` to represent the sensor. The `I2cDevice` is passed in the constructor.
     - The time required for the chip to take measurements with the chip's current (default) settings is retrieved by calling `GetMeasurementDuration`.
     - A `while` loop runs indefinitely. Each iteration:

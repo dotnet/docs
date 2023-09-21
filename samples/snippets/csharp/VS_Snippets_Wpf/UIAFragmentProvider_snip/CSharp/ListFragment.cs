@@ -500,7 +500,7 @@ namespace ElementProvider
         /// <summary>
         /// Gets the runtime identifier of the UI Automation element.
         /// </summary>
-        /// <returns>Fragement roots return null.</returns>
+        /// <returns>Fragment roots return null.</returns>
         int[] IRawElementProviderFragment.GetRuntimeId()
         {
             return null;

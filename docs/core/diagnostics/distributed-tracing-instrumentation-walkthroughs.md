@@ -250,7 +250,7 @@ if(activity != null)
 ```
 
 - OpenTelemetry provides a set of recommended
-[conventions](https://github.com/open-telemetry/opentelemetry-specification/tree/main/specification/trace/semantic_conventions)
+[conventions](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/README.md)
 for setting Tags on Activities that represent common types of application work.
 
 - If you are instrumenting functions with high-performance requirements,
@@ -445,7 +445,7 @@ void DoBatchWork(ActivityContext[] requestContexts)
     // Assume each context in requestContexts encodes the trace-id that was sent with a request
     using(Activity activity = s_source.StartActivity(name: "BigBatchOfWork",
                                                      kind: ActivityKind.Internal,
-                                                     parentContext: null,
+                                                     parentContext: default,
                                                      links: requestContexts.Select(ctx => new ActivityLink(ctx))
     {
         // do the batch of work here

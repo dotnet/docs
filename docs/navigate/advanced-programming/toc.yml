@@ -1,0 +1,476 @@
+items:
+- name: Advanced .NET programming
+  href: index.yml
+- name: Asynchronous programming patterns
+  items:
+  - name: Overview
+    href: ../../standard/asynchronous-programming-patterns/index.md
+  - name: Task-based asynchronous pattern (TAP)
+    items:
+    - name: Overview
+      displayName: TAP, task-based asynchronous pattern
+      href: ../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md
+    - name: Implement the TAP
+      href: ../../standard/asynchronous-programming-patterns/implementing-the-task-based-asynchronous-pattern.md
+    - name: Consume the TAP
+      href: ../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md
+    - name: Interop with other asynchronous patterns and types
+      href: ../../standard/asynchronous-programming-patterns/interop-with-other-asynchronous-patterns-and-types.md
+  - name: Event-based asynchronous pattern (EAP)
+    items:
+    - name: Documentation overview
+      href: ../../standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md
+    - name: EAP overview
+      displayName: EAP, event-based asynchronous pattern
+      href: ../../standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md
+    - name: Implement the EAP
+      href: ../../standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md
+    - name: Best practices
+      href: ../../standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md
+    - name: When to implement the EAP
+      href: ../../standard/asynchronous-programming-patterns/deciding-when-to-implement-the-event-based-asynchronous-pattern.md
+    - name: Implement a component that supports the EAP
+      href: ../../standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md
+    - name: Implement a client of the EAP
+      href: ../../standard/asynchronous-programming-patterns/how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md
+    - name: Use components that support the EAP
+      href: ../../standard/asynchronous-programming-patterns/how-to-use-components-that-support-the-event-based-asynchronous-pattern.md
+  - name: Asynchronous programming model (APM)
+    items:
+    - name: Overview
+      displayName: APM, asynchronous programming model
+      href: ../../standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md
+    - name: Call asynchronous methods using IAsyncResult
+      href: ../../standard/asynchronous-programming-patterns/calling-asynchronous-methods-using-iasyncresult.md
+      items:
+      - name: Block execution using an AsyncWaitHandle
+        href: ../../standard/asynchronous-programming-patterns/blocking-application-execution-using-an-asyncwaithandle.md
+      - name: Block execution by ending an async operation
+        href: ../../standard/asynchronous-programming-patterns/blocking-application-execution-by-ending-an-async-operation.md
+      - name: Poll for the status of an async operation
+        href: ../../standard/asynchronous-programming-patterns/polling-for-the-status-of-an-asynchronous-operation.md
+      - name: Use an AsyncCallback delegate to end an async operation
+        href: ../../standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-to-end-an-asynchronous-operation.md
+        items:
+        - name: Use an AsyncCallback delegate and state object
+          href: ../../standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-and-state-object.md
+    - name: Asynchronous programming using delegates
+      items:
+      - name: Overview
+        href: ../../standard/asynchronous-programming-patterns/asynchronous-programming-using-delegates.md
+      - name: Call synchronous methods asynchronously
+        href: ../../standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md
+- name: Parallel programming
+  items:
+  - name: Overview
+    href: ../../standard/parallel-programming/index.md
+  - name: Task Parallel Library (TPL)
+    href: ../../standard/parallel-programming/task-parallel-library-tpl.md
+    items:
+    - name: Data parallelism
+      items:
+      - name: Overview
+        displayName: data parallelism
+        href: ../../standard/parallel-programming/data-parallelism-task-parallel-library.md
+      - name: Write a Parallel.For loop
+        href: ../../standard/parallel-programming/how-to-write-a-simple-parallel-for-loop.md
+      - name: Write a Parallel.ForEach loop
+        href: ../../standard/parallel-programming/how-to-write-a-simple-parallel-foreach-loop.md
+      - name: Write a Parallel.For loop with thread-local variables
+        href: ../../standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md
+      - name: Write a Parallel.ForEach loop with partition-local variables
+        href: ../../standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-partition-local-variables.md
+      - name: Cancel a parallel loop
+        href: ../../standard/parallel-programming/how-to-cancel-a-parallel-for-or-foreach-loop.md
+      - name: Handle exceptions in parallel loops
+        href: ../../standard/parallel-programming/how-to-handle-exceptions-in-parallel-loops.md
+      - name: Speed up small loop bodies
+        href: ../../standard/parallel-programming/how-to-speed-up-small-loop-bodies.md
+      - name: Iterate file directories with the Parallel class
+        href: ../../standard/parallel-programming/how-to-iterate-file-directories-with-the-parallel-class.md
+    - name: Task-based asynchronous programming
+      href: ../../standard/parallel-programming/task-based-asynchronous-programming.md
+      items:
+      - name: Chain tasks by using continuation tasks
+        href: ../../standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md
+      - name: Attached and detached child tasks
+        href: ../../standard/parallel-programming/attached-and-detached-child-tasks.md
+      - name: Task cancellation
+        href: ../../standard/parallel-programming/task-cancellation.md
+      - name: Exception handling
+        href: ../../standard/parallel-programming/exception-handling-task-parallel-library.md
+      - name: Use Parallel.Invoke to execute parallel operations
+        href: ../../standard/parallel-programming/how-to-use-parallel-invoke-to-execute-parallel-operations.md
+      - name: Return a value from a task
+        href: ../../standard/parallel-programming/how-to-return-a-value-from-a-task.md
+      - name: Cancel a task and its children
+        href: ../../standard/parallel-programming/how-to-cancel-a-task-and-its-children.md
+      - name: Create pre-computed tasks
+        href: ../../standard/parallel-programming/how-to-create-pre-computed-tasks.md
+      - name: Traverse a binary tree with parallel tasks
+        href: ../../standard/parallel-programming/how-to-traverse-a-binary-tree-with-parallel-tasks.md
+      - name: Unwrap a nested task
+        href: ../../standard/parallel-programming/how-to-unwrap-a-nested-task.md
+      - name: Prevent a child task from attaching to its parent
+        href: ../../standard/parallel-programming/how-to-prevent-a-child-task-from-attaching-to-its-parent.md
+    - name: Dataflow
+      href: ../../standard/parallel-programming/dataflow-task-parallel-library.md
+      items:
+      - name: Write messages to and read messages from a dataflow block
+        href: ../../standard/parallel-programming/how-to-write-messages-to-and-read-messages-from-a-dataflow-block.md
+      - name: Implement a producer-consumer dataflow pattern
+        href: ../../standard/parallel-programming/how-to-implement-a-producer-consumer-dataflow-pattern.md
+      - name: Perform an action when a dataflow block receives data
+        href: ../../standard/parallel-programming/how-to-perform-action-when-a-dataflow-block-receives-data.md
+      - name: Create a dataflow pipeline
+        href: ../../standard/parallel-programming/walkthrough-creating-a-dataflow-pipeline.md
+      - name: Unlink dataflow blocks
+        href: ../../standard/parallel-programming/how-to-unlink-dataflow-blocks.md
+      - name: Use dataflow in a Windows Forms app
+        href: ../../standard/parallel-programming/walkthrough-using-dataflow-in-a-windows-forms-application.md
+      - name: Cancel a dataflow block
+        href: ../../standard/parallel-programming/how-to-cancel-a-dataflow-block.md
+      - name: Create a custom dataflow block type
+        href: ../../standard/parallel-programming/walkthrough-creating-a-custom-dataflow-block-type.md
+      - name: Use JoinBlock to read data from multiple sources
+        href: ../../standard/parallel-programming/how-to-use-joinblock-to-read-data-from-multiple-sources.md
+      - name: Specify the degree of parallelism in a dataflow block
+        href: ../../standard/parallel-programming/how-to-specify-the-degree-of-parallelism-in-a-dataflow-block.md
+      - name: Specify a task scheduler in a dataflow block
+        href: ../../standard/parallel-programming/how-to-specify-a-task-scheduler-in-a-dataflow-block.md
+      - name: Use BatchBlock and BatchedJoinBlock to improve efficiency
+        href: ../../standard/parallel-programming/walkthrough-using-batchblock-and-batchedjoinblock-to-improve-efficiency.md
+    - name: Use TPL with other asynchronous patterns
+      items:
+      - name: TPL and traditional .NET asynchronous programming
+        href: ../../standard/parallel-programming/tpl-and-traditional-async-programming.md
+      - name: Wrap EAP patterns in a task
+        href: ../../standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md
+    - name: Potential pitfalls in data and task parallelism
+      href: ../../standard/parallel-programming/potential-pitfalls-in-data-and-task-parallelism.md
+  - name: Parallel LINQ (PLINQ)
+    items:
+    - name: Introduction
+      href: ../../standard/parallel-programming/introduction-to-plinq.md
+    - name: Optimize queries for speedup
+      href: ../../standard/parallel-programming/understanding-speedup-in-plinq.md
+    - name: Order preservation
+      href: ../../standard/parallel-programming/order-preservation-in-plinq.md
+    - name: Merge options
+      href: ../../standard/parallel-programming/merge-options-in-plinq.md
+    - name: Potential pitfalls
+      href: ../../standard/parallel-programming/potential-pitfalls-with-plinq.md
+    - name: Create and execute a query
+      href: ../../standard/parallel-programming/how-to-create-and-execute-a-simple-plinq-query.md
+    - name: Control ordering in a query
+      href: ../../standard/parallel-programming/how-to-control-ordering-in-a-plinq-query.md
+    - name: Combine parallel and sequential LINQ queries
+      href: ../../standard/parallel-programming/how-to-combine-parallel-and-sequential-linq-queries.md
+    - name: Handle exceptions in a query
+      href: ../../standard/parallel-programming/how-to-handle-exceptions-in-a-plinq-query.md
+    - name: Cancel a query
+      href: ../../standard/parallel-programming/how-to-cancel-a-plinq-query.md
+    - name: Write a custom aggregate function
+      href: ../../standard/parallel-programming/how-to-write-a-custom-plinq-aggregate-function.md
+    - name: Specify the execution mode
+      href: ../../standard/parallel-programming/how-to-specify-the-execution-mode-in-plinq.md
+    - name: Specify merge options
+      href: ../../standard/parallel-programming/how-to-specify-merge-options-in-plinq.md
+    - name: Iterate file directories
+      href: ../../standard/parallel-programming/how-to-iterate-file-directories-with-plinq.md
+    - name: Measure query performance
+      href: ../../standard/parallel-programming/how-to-measure-plinq-query-performance.md
+    - name: Data sample
+      href: ../../standard/parallel-programming/plinq-data-sample.md
+  - name: Data structures for parallel programming
+    href: ../../standard/parallel-programming/data-structures-for-parallel-programming.md
+  - name: Parallel diagnostic tools
+    href: ../../standard/parallel-programming/parallel-diagnostic-tools.md
+  - name: Custom partitioners for PLINQ and TPL
+    items:
+    - name: Overview
+      href: ../../standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md
+      displayName: custom partitioners
+    - name: Implement dynamic partitions
+      href: ../../standard/parallel-programming/how-to-implement-dynamic-partitions.md
+    - name: Implement a partitioner for static partitioning
+      href: ../../standard/parallel-programming/how-to-implement-a-partitioner-for-static-partitioning.md
+  - name: Lambda expressions in PLINQ and TPL
+    href: ../../standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md
+  - name: Further reading
+    href: ../../standard/parallel-programming/for-further-reading-parallel-programming.md
+- name: Threading
+  items:
+  - name: Managed threading basics
+    items:
+    - name: Overview
+      displayName: threading
+      href: ../../standard/threading/managed-threading-basics.md
+    - name: Threads and threading
+      href: ../../standard/threading/threads-and-threading.md
+    - name: Exceptions in managed threads
+      href: ../../standard/threading/exceptions-in-managed-threads.md
+    - name: Synchronize data for multithreading
+      href: ../../standard/threading/synchronizing-data-for-multithreading.md
+    - name: Foreground and background threads
+      href: ../../standard/threading/foreground-and-background-threads.md
+    - name: Managed and unmanaged threading in windows
+      href: ../../standard/threading/managed-and-unmanaged-threading-in-windows.md
+    - name: "Thread local storage: Thread-relative static fields and data slots"
+      href: ../../standard/threading/thread-local-storage-thread-relative-static-fields-and-data-slots.md
+  - name: Using threads and threading
+    items:
+    - name: Overview
+      href: ../../standard/threading/using-threads-and-threading.md
+    - name: Create threads and pass data at start time
+      href: ../../standard/threading/creating-threads-and-passing-data-at-start-time.md
+    - name: Pause and interrupt threads
+      href: ../../standard/threading/pausing-and-resuming-threads.md
+    - name: Schedule threads
+      href: ../../standard/threading/scheduling-threads.md
+    - name: Cancel threads
+      items:
+      - name: Overview
+        href: ../../standard/threading/cancellation-in-managed-threads.md
+      - name: Cancel threads cooperatively
+        href: ../../standard/threading/canceling-threads-cooperatively.md
+      - name: How-tos
+        items:
+        - name: Listen for cancellation requests by polling
+          href: ../../standard/threading/how-to-listen-for-cancellation-requests-by-polling.md
+        - name: Register callbacks for cancellation requests
+          href: ../../standard/threading/how-to-register-callbacks-for-cancellation-requests.md
+        - name: Listen for cancellation requests that have wait handles
+          href: ../../standard/threading/how-to-listen-for-cancellation-requests-that-have-wait-handles.md
+        - name: Listen for multiple cancellation requests
+          href: ../../standard/threading/how-to-listen-for-multiple-cancellation-requests.md
+    - name: Destroy threads
+      href: ../../standard/threading/destroying-threads.md
+  - name: Best practices
+    href: ../../standard/threading/managed-threading-best-practices.md
+  - name: Threading objects and features
+    items:
+    - name: Overview
+      href: ../../standard/threading/threading-objects-and-features.md
+    - name: The managed thread pool
+      href: ../../standard/threading/the-managed-thread-pool.md
+    - name: Timers
+      href: ../../standard/threading/timers.md
+    - name: Overview of synchronization primitives
+      href: ../../standard/threading/overview-of-synchronization-primitives.md
+    - name: EventWaitHandle
+      href: ../../standard/threading/eventwaithandle.md
+    - name: CountdownEvent
+      href: ../../standard/threading/countdownevent.md
+    - name: Mutexes
+      href: ../../standard/threading/mutexes.md
+    - name: Semaphore and SemaphoreSlim
+      href: ../../standard/threading/semaphore-and-semaphoreslim.md
+    - name: Barrier
+      items:
+      - name: Overview
+        href: ../../standard/threading/barrier.md
+      - name: Synchronize concurrent operations with a Barrier
+        href: ../../standard/threading/how-to-synchronize-concurrent-operations-with-a-barrier.md
+    - name: SpinLock
+      items:
+      - name: Overview
+        displayName: spinlock
+        href: ../../standard/threading/spinlock.md
+      - name: Use SpinLock for low-level synchronization
+        href: ../../standard/threading/how-to-use-spinlock-for-low-level-synchronization.md
+      - name: Enable thread-tracking mode in SpinLock
+        href: ../../standard/threading/how-to-enable-thread-tracking-mode-in-spinlock.md
+    - name: SpinWait
+      items:
+      - name: Overview
+        href: ../../standard/threading/spinwait.md
+      - name: Use SpinWait to implement a two-phase wait operation
+        href: ../../standard/threading/how-to-use-spinwait-to-implement-a-two-phase-wait-operation.md
+    - name: Thread-safe collections
+      items:
+      - name: Overview
+        displayName: thread-safe collections
+        href: ../../standard/collections/thread-safe/index.md
+        items:
+        - name: BlockingCollection overview
+          href: ../../standard/collections/thread-safe/blockingcollection-overview.md
+        - name: When to use a thread-safe collection
+          href: ../../standard/collections/thread-safe/when-to-use-a-thread-safe-collection.md
+        - name: Add and take items from a BlockingCollection
+          href: ../../standard/collections/thread-safe/how-to-add-and-take-items.md
+        - name: Use ForEach to remove items in a BlockingCollection
+          href: ../../standard/collections/thread-safe/how-to-use-foreach-to-remove.md
+        - name: Add and remove items from a ConcurrentDictionary
+          href: ../../standard/collections/thread-safe/how-to-add-and-remove-items.md
+        - name: Add bounding and blocking functionality
+          href: ../../standard/collections/thread-safe/how-to-add-bounding-and-blocking.md
+        - name: Use arrays of blocking collections in a pipeline
+          href: ../../standard/collections/thread-safe/how-to-use-arrays-of-blockingcollections.md
+        - name: Create an object pool using a ConcurrentBag
+          href: ../../standard/collections/thread-safe/how-to-create-an-object-pool.md
+- name: Native interoperability
+  items:
+  - name: Overview
+    href: ../../standard/native-interop/index.md
+    displayName: Native interop
+  - name: P/Invoke
+    items:
+    - name: Overview
+      href: ../../standard/native-interop/pinvoke.md
+      displayName: P/Invoke
+    - name: Source generation
+      href: ../../standard/native-interop/pinvoke-source-generation.md
+    - name: Native library loading
+      href: ../../standard/native-interop/native-library-loading.md
+    - name: Calling conventions
+      href: ../../standard/native-interop/calling-conventions.md
+  - name: Type marshalling
+    items:
+    - name: Overview
+      href: ../../standard/native-interop/type-marshalling.md
+      displayName: Type marshalling
+    - name: Charsets and marshalling
+      href: ../../standard/native-interop/charset.md
+    - name: Disabled marshalling
+      href: ../../standard/native-interop/disabled-marshalling.md
+    - name: Customize structure marshalling
+      href: ../../standard/native-interop/customize-struct-marshalling.md
+    - name: Customize parameter marshalling
+      href: ../../standard/native-interop/customize-parameter-marshalling.md
+    - name: Source generation
+      href: ../../standard/native-interop/custom-marshalling-source-generation.md
+    - name: "Tutorial: Use custom marshallers in source generation"
+      href: ../../standard/native-interop/tutorial-custom-marshaller.md
+  - name: Interop guidance
+    href: ../../standard/native-interop/best-practices.md
+  - name: Expose .NET components to COM
+    href: ../../core/native-interop/expose-components-to-com.md
+  - name: Host .NET from native code
+    href: ../../core/tutorials/netcore-hosting.md
+  - name: COM interop
+    items:
+    - name: Overview
+      href: ../../standard/native-interop/cominterop.md
+      displayName: COM interop
+    - name: COM wrappers
+      items:
+      - name: Overview
+        href: ../../standard/native-interop/com-wrappers.md
+        displayName: COM wrappers
+      - name: Runtime-callable wrapper
+        href: ../../standard/native-interop/runtime-callable-wrapper.md
+      - name: COM-callable wrapper
+        href: ../../standard/native-interop/com-callable-wrapper.md
+      - name: "Tutorial: Use the ComWrappers API"
+        href: ../../standard/native-interop/tutorial-comwrappers.md
+    - name: Qualify .NET types for COM interop
+      href: ../../standard/native-interop/qualify-net-types-for-interoperation.md
+  - name: Apply interop attributes
+    href: ../../standard/native-interop/apply-interop-attributes.md
+  - name: Exceptions
+    href: ../../standard/native-interop/exceptions-interoperability.md
+- name: Memory management
+  items:
+  - name: What is "managed code"?
+    href: ../../standard/managed-code.md
+  - name: Automatic memory management
+    href: ../../standard/automatic-memory-management.md
+  - name: Clean up unmanaged resources
+    items:
+    - name: Overview
+      href: ../../standard/garbage-collection/unmanaged.md
+      displayName: unmanaged resources, memory management
+    - name: Implement a Dispose method
+      href: ../../standard/garbage-collection/implementing-dispose.md
+      displayName: "using, Dispose, dispose pattern, IDisposable"
+    - name: Implement a DisposeAsync method
+      href: ../../standard/garbage-collection/implementing-disposeasync.md
+      displayName: "await using, DisposeAsync, async dispose pattern, IAsyncDisposable"
+    - name: Use objects that implement IDisposable
+      href: ../../standard/garbage-collection/using-objects.md
+  - name: Garbage collection
+    items:
+    - name: Overview
+      href: ../../standard/garbage-collection/index.md
+      displayName: garbage collection
+    - name: Fundamentals
+      href: ../../standard/garbage-collection/fundamentals.md
+    - name: Workstation and server GC
+      href: ../../standard/garbage-collection/workstation-server-gc.md
+    - name: Background GC
+      href: ../../standard/garbage-collection/background-gc.md
+    - name: The large object heap
+      href: ../../standard/garbage-collection/large-object-heap.md
+    - name: Garbage collection and performance
+      href: ../../standard/garbage-collection/performance.md
+    - name: Induced collections
+      href: ../../standard/garbage-collection/induced.md
+    - name: Latency modes
+      href: ../../standard/garbage-collection/latency.md
+    - name: Optimization for shared web hosting
+      href: ../../standard/garbage-collection/optimization-for-shared-web-hosting.md
+    - name: Garbage collection notifications
+      href: ../../standard/garbage-collection/notifications.md
+    - name: Application domain resource monitoring
+      href: ../../standard/garbage-collection/app-domain-resource-monitoring.md
+    - name: Weak references
+      href: ../../standard/garbage-collection/weak-references.md
+- name: Unmanaged API reference
+  items:
+  - name: Debugging
+    items:
+    - name: Overview
+      href: ../../core/unmanaged-api/debugging/index.md
+    - name: CLRCreateInstance function
+      href: ../../core/unmanaged-api/debugging/clrcreateinstance-function.md
+    - name: CloseCLREnumeration function
+      href: ../../core/unmanaged-api/debugging/closeclrenumeration-function.md
+    - name: CloseResumeHandle function
+      href: ../../core/unmanaged-api/debugging/closeresumehandle-function.md
+    - name: CreateVersionStringFromModule function
+      href: ../../core/unmanaged-api/debugging/createversionstringfrommodule-function.md
+    - name: CreateDebuggingInterfaceFromVersion function
+      href: ../../core/unmanaged-api/debugging/createdebugginginterfacefromversion-function.md
+    - name: CreateDebuggingInterfaceFromVersionEx function
+      href: ../../core/unmanaged-api/debugging/createdebugginginterfacefromversionex-function.md
+    - name: CreateDebuggingInterfaceFromVersion2 function
+      href: ../../core/unmanaged-api/debugging/createdebugginginterfacefromversion2-function.md
+    - name: CreateDebuggingInterfaceFromVersion3 function
+      href: ../../core/unmanaged-api/debugging/createdebugginginterfacefromversion3-function.md
+    - name: CreateProcessForLaunch function
+      href: ../../core/unmanaged-api/debugging/createprocessforlaunch-function.md
+    - name: EnumerateCLRs function
+      href: ../../core/unmanaged-api/debugging/enumerateclrs-function.md
+    - name: GetStartupNotificationEvent function
+      href: ../../core/unmanaged-api/debugging/getstartupnotificationevent-function.md
+    - name: ICLRDebuggingLibraryProvider2 interface
+      items:
+      - name: Overview
+        href: ../../core/unmanaged-api/debugging/iclrdebugginglibraryprovider2-interface.md
+        displayName: ICLRDebuggingLibraryProvider2
+      - name: ProvideLibrary2 Method
+        href: ../../core/unmanaged-api/debugging/iclrdebugginglibraryprovider2-providelibrary2-method.md
+    - name: ICLRDebuggingLibraryProvider3 interface
+      items:
+      - name: Overview
+        href: ../../core/unmanaged-api/debugging/iclrdebugginglibraryprovider3-interface.md
+        displayName: ICLRDebuggingLibraryProvider3
+      - name: ProvideWindowsLibrary method
+        href: ../../core/unmanaged-api/debugging/iclrdebugginglibraryprovider3-providewindowslibrary-method.md
+      - name: ProvideUnixLibrary method
+        href: ../../core/unmanaged-api/debugging/iclrdebugginglibraryprovider3-provideunixlibrary-method.md
+    - name: LIBRARY_PROVIDER_INDEX_TYPE enumeration
+      href: ../../core/unmanaged-api/debugging/libraryproviderindextype-enumeration.md
+    - name: PSTARTUP_CALLBACK function pointer
+      href: ../../core/unmanaged-api/debugging/pstartup_callback-function-pointer.md
+    - name: RegisterForRuntimeStartup function
+      href: ../../core/unmanaged-api/debugging/registerforruntimestartup-function.md
+    - name: RegisterForRuntimeStartupEx function
+      href: ../../core/unmanaged-api/debugging/registerforruntimestartupex-function.md
+    - name: RegisterForRuntimeStartup3 function
+      href: ../../core/unmanaged-api/debugging/registerforruntimestartup3-function.md
+    - name: ResumeProcess function
+      href: ../../core/unmanaged-api/debugging/resumeprocess-function.md
+    - name: UnregisterForRuntimeStartup function
+      href: ../../core/unmanaged-api/debugging/unregisterforruntimestartup-function.md

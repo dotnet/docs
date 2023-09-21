@@ -46,7 +46,7 @@ There are three different validators that verify your package as part of the `Pa
 ## Suppress compatibility errors
 
 To suppress compatibility errors for intentional changes, add a *CompatibilitySuppressions.xml* file to your project.
-You can generate this file automatically by passing `/p:GenerateCompatibilitySuppressionFile=true` if you're building the project from the command line, or by adding the following property to your project: `<GenerateCompatibilitySuppressionFile>true</GenerateCompatibilitySuppressionFile>`
+You can generate this file automatically by passing `/p:GenerateCompatibilitySuppressionFile=true` if you're packing the project from the command line, or by adding the following property to your project: `<GenerateCompatibilitySuppressionFile>true</GenerateCompatibilitySuppressionFile>`
 
 The suppression file looks like this.
 

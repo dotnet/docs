@@ -23,5 +23,5 @@ To serialize or deserialize objects, use the <xref:System.Xml.Serialization.XmlS
 
 ## See also
 
-- [Binary Serialization](binary-serialization.md)
+- [Binary Serialization](/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization)
 - [XML Web Services created using ASP.NET and XML Web Service clients](/previous-versions/dotnet/netframework-4.0/7bkzywba(v=vs.100))

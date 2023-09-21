@@ -13,15 +13,19 @@ recommendations: false
 
 General-purpose I/O (GPIO) pins can be controlled individually. This is useful for controlling LEDs, relays, and other stateful devices. In this topic, you will use .NET and your Raspberry Pi's GPIO pins to power an LED and blink it repeatedly.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?show=dotnet-iot-for-beginners&ep=general-purpose-inputoutput-use-gpio-output-to-control-devices-with-dotnet-dotnet-iot-for-beginners]
+
 ## Prerequisites
 
-- [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
+- [!INCLUDE [prereq-sbc](../includes/prereq-sbc.md)]
 - 5 mm LED
 - 330 Ω resistor
 - Breadboard
 - Jumper wires
 - Raspberry Pi GPIO breakout board (optional/recommended)
 - [!INCLUDE [tutorial-prereq-dotnet](../includes/tutorial-prereq-dotnet.md)]
+
+[!INCLUDE [rpi-note](../includes/rpi-note.md)]
 
 [!INCLUDE [ensure-ssh](../includes/ensure-ssh.md)]
 
@@ -52,14 +56,14 @@ Complete the following steps in your preferred development environment:
     cd BlinkTutorial
     ```
 
-1. [!INCLUDE [tutorial-add-packages](../includes/tutorial-add-iot-package.md)]
+1. [!INCLUDE [tutorial-add-packages](../includes/tutorial-add-gpio-package.md)]
 1. Replace the contents of *Program.cs* with the following code:
 
     :::code language="csharp" source="~/iot-samples/tutorials/BlinkTutorial/Program.cs" :::
 
     In the preceding code:
 
-    - A [using declaration](../../csharp/language-reference/keywords/using-statement.md) creates an instance of `GpioController`. The `using` declaration ensures the object is disposed and hardware resources are released properly.
+    - A [using declaration](../../csharp/language-reference/statements/using.md) creates an instance of `GpioController`. The `using` declaration ensures the object is disposed and hardware resources are released properly.
     - GPIO pin 18 is opened for output
     - A `while` loop runs indefinitely. Each iteration:
         1. Writes a value to GPIO pin 18. If `ledOn` is true, it writes `PinValue.High` (on). Otherwise, it writes `PinValue.Low`.

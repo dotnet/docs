@@ -81,8 +81,8 @@ Elements in square brackets ([ and ]) are optional. The colon (:) is a literal s
 |*-*|An optional negative sign, which indicates a negative time interval.|  
 |*d*|The optional number of days, with no leading zeros.|  
 |*h*|The number of hours, which ranges from "0" to "23", with no leading zeros.|  
-|*mm*|The number of minutes, which ranges from "00" to "59"..|  
-|*ss*|The number of seconds, which ranges from "00" to "59"..|  
+|*mm*|The number of minutes, which ranges from "00" to "59".|  
+|*ss*|The number of seconds, which ranges from "00" to "59".|  
 |*.*|The fractional seconds separator. It is equivalent to the specified culture's <xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A> property without user overrides.|  
 |*FFFFFFF*|The fractional seconds. As few digits as possible are displayed.|  
   

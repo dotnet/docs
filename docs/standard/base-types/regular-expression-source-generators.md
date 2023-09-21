@@ -11,6 +11,9 @@ ms.author: dapine
 
 A regular expression, or regex, is a string that enables a developer to express a pattern being searched for, making it a very common way to search text and extract results as a subset from the searched string. In .NET, the `System.Text.RegularExpressions` namespace is used to define <xref:System.Text.RegularExpressions.Regex> instances and static methods, and match on user-defined patterns. In this article, you'll learn how to use source generation to generate `Regex` instances to optimize performance.
 
+> [!NOTE]
+> Where possible, use source generated regular expressions instead of compiling regular expressions using the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option. Source generation can help your app start faster, run more quickly and be more trimmable. To learn when source generation is possible, see [When to use it](#when-to-use-it).
+
 ## Compiled regular expressions
 
 When you write `new Regex("somepattern")`, a few things happen. The specified pattern is parsed, both to ensure the validity of the pattern and to transform it into an internal tree that represents the parsed regex. The tree is then optimized in various ways, transforming the pattern into a functionally equivalent variation that can be more efficiently executed. The tree is written into a form that can be interpreted as a series of opcodes and operands that provide instructions to the regex interpreter engine on how to match. When a match is performed, the interpreter simply walks through those instructions, processing them against the input text. When instantiating a new `Regex` instance or calling one of the static methods on `Regex`, the interpreter is the default engine employed.
@@ -361,7 +364,7 @@ private bool TryMatchAtCurrentPosition(ReadOnlySpan<char> inputSpan)
 
 Take notice of how `Thursday` was reordered to be just after `Tuesday`, and how for both the `Tuesday`/`Thursday` pair and the `Saturday`/`Sunday` pair, you end up with multiple levels of switches. In the extreme, if you were to create a long alternation of many different words, the source generator would end up emitting the logical equivalent of a trie[^1], reading each character and `switch`'ing to the branch for handling the remainder of the word. This is a very efficient way to match words, and it's what the source generator is doing here.
 
-[^1]: https://en.wikipedia.org/wiki/Trie "Wikipedia: Trie — A trie is a data structure that's used to store strings in a way that allows for efficient prefix matching."
+[^1]: <https://en.wikipedia.org/wiki/Trie> "Wikipedia: Trie — A trie is a data structure that's used to store strings in a way that allows for efficient prefix matching."
 
 At the same time, the source generator has other issues to contend with that simply don't exist when outputting to IL directly. If you look a couple of code examples back, you can see some braces somewhat strangely commented out. That's not a mistake. The source generator is recognizing that, if those braces weren't commented out, the structure of the backtracking is relying on jumping from outside of the scope to a label defined inside of that scope; such a label would not be visible to such a `goto` and the code would fail to compile. Thus, the source generator needs to avoid there being a scope in the way. In some cases, it'll simply comment out the scope as was done here. In other cases where that's not possible, it may sometimes avoid constructs that require scopes (such as a multi-statement `if` block) if doing so would be problematic.
 

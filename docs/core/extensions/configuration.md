@@ -1,9 +1,9 @@
 ---
 title: Configuration
-description: Learn how to use the Configuration API to configure .NET applications.
+description: Learn how to use the Configuration API to configure .NET applications. Explore various inbuilt configuration providers.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/09/2022
+ms.date: 07/19/2023
 ms.topic: overview
 ---
 
@@ -32,11 +32,26 @@ Given one or more configuration sources, the <xref:Microsoft.Extensions.Configur
 
 ## Configure console apps
 
-.NET console applications created using the [dotnet new](../tools/dotnet-new.md) command template or Visual Studio by default *do not* expose configuration capabilities. To add configuration in a new .NET console application, [add a package reference](../tools/dotnet-add-package.md) to [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting). Modify the *Program.cs* file to match the following code:
+.NET console applications created using the [dotnet new](../tools/dotnet-new.md) command template or Visual Studio by default *don't* expose configuration capabilities. To add configuration in a new .NET console application, [add a package reference](../tools/dotnet-add-package.md) to [Microsoft.Extensions.Configuration](https://www.nuget.org/packages/Microsoft.Extensions.Configuration). This package is the foundation for configuration in .NET apps. It provides the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> and related types.
 
-:::code language="csharp" source="snippets/configuration/console/Program.cs" highlight="3":::
+:::code source="snippets/configuration/console-basic-builder/Program.cs":::
 
-The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[])?displayProperty=nameWithType> method provides default configuration for the app in the following order, from highest to lowest priority:
+The preceding code:
+
+- Creates a new <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> instance.
+- Adds an in-memory collection of key-value pairs to the configuration builder.
+- Calls the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder.Build> method to create an <xref:Microsoft.Extensions.Configuration.IConfiguration> instance.
+- Writes the value of the `SomeKey` key to the console.
+
+While this example uses an in-memory configuration, there are many configuration providers available, exposing functionality for file-based, environment variables, command line arguments, and other configuration sources. For more information, see [Configuration providers in .NET](configuration-providers.md).
+
+### Alternative hosting approach
+
+Commonly, your apps will do more than just read configuration. They'll likely use dependency injection, logging, and other services. The [.NET Generic Host](generic-host.md) approach is recommended for apps that use these services. Instead, consider [adding a package reference](../tools/dotnet-add-package.md) to [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting). Modify the *Program.cs* file to match the following code:
+
+:::code source="snippets/configuration/console/Program.cs" highlight="3":::
+
+The <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder(System.String[])?displayProperty=nameWithType> method provides default configuration for the app in the following order, from highest to lowest priority:
 
 1. Command-line arguments using the [Command-line configuration provider](configuration-providers.md#command-line-configuration-provider).
 1. Environment variables using the [Environment Variables configuration provider](configuration-providers.md#environment-variable-configuration-provider).
@@ -118,7 +133,7 @@ Consider an example _appsettings.json_ file:
 
 Now, given this JSON file, here's an example consumption pattern using the configuration builder directly:
 
-:::code language="csharp" source="snippets/configuration/console-raw/Program.cs" highlight="4-7,10":::
+:::code source="snippets/configuration/console-raw/Program.cs" highlight="4-7,10":::
 
 The preceding C# code:
 
@@ -129,9 +144,9 @@ The preceding C# code:
 
 The `Settings` object is shaped as follows:
 
-:::code language="csharp" source="snippets/configuration/console-raw/Settings.cs":::
+:::code source="snippets/configuration/console-raw/Settings.cs":::
 
-:::code language="csharp" source="snippets/configuration/console-raw/NestedSettings.cs":::
+:::code source="snippets/configuration/console-raw/NestedSettings.cs":::
 
 ### Basic example with hosting
 
@@ -151,9 +166,9 @@ Add the _appsettings.json_ file at the root of the project with the following co
 
 Replace the contents of the _Program.cs_ file with the following C# code:
 
-:::code language="csharp" source="snippets/configuration/console-basic/Program.cs" highlight="5,8,11-13,16-18":::
+:::code source="snippets/configuration/console-basic/Program.cs" highlight="5,8,11-13,16-18":::
 
-When you run this application, the `Host.CreateDefaultBuilder` defines the behavior to discover the JSON configuration and expose it through the `IConfiguration` instance. From the `host` instance, you can ask the service provider for the `IConfiguration` instance and then ask it for values.
+When you run this application, the `Host.CreateApplicationBuilder` defines the behavior to discover the JSON configuration and expose it through the `IConfiguration` instance. From the `host` instance, you can ask the service provider for the `IConfiguration` instance and then ask it for values.
 
 > [!TIP]
 > Using the raw `IConfiguration` instance in this way, while convenient, doesn't scale very well. When applications grow in complexity, and their corresponding configurations become more complex, we recommend that you use the [_options pattern_](options.md) as an alternative.
@@ -166,7 +181,7 @@ Consider the same _appsettings.json_ file contents from the previous example:
 
 Replace the contents of the _Program.cs_ file with the following C# code:
 
-:::code language="csharp" source="snippets/configuration/console-indexer/Program.cs" highlight="11-15,17-22":::
+:::code source="snippets/configuration/console-indexer/Program.cs" highlight="11-15,17-22":::
 
 The values are accessed using the indexer API where each key is a string, and the value is a string. Configuration supports properties, objects, arrays, and dictionaries.
 
@@ -187,7 +202,7 @@ The following table shows the configuration providers available to .NET Core app
 | [App secrets (Secret Manager)](/aspnet/core/security/app-secrets)                                                      | File in the user profile directory |
 
 > [!TIP]
-> The order in which configuration providers are added matters. When multiple configuration providers are used and more than one provided specifies the same key, the last one added is used.
+> The order in which configuration providers are added matters. When multiple configuration providers are used and more than one provider specifies the same key, the last one added is used.
 
 For more information on various configuration providers, see [Configuration providers in .NET](configuration-providers.md).
 

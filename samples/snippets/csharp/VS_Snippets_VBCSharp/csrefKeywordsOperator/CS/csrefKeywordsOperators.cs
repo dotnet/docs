@@ -33,7 +33,7 @@ namespace KeywordsUberProject
     }
     //</snippet8>
 
-    namespace newModifier //to allow resuse of BaseC and DerivedC
+    namespace newModifier //to allow reuse of BaseC and DerivedC
     {
         //<snippet9>
         public class BaseC

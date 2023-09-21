@@ -48,7 +48,7 @@ namespace DeferredTransactionSample
                 writeCommand.Parameters.AddWithValue("$newValue", value + 1L);
                 writeCommand.ExecuteNonQuery();
 
-                // After the first write statment, both concurrent reads and writes are blocked
+                // After the first write statement, both concurrent reads and writes are blocked
                 // until the transaction completes
 
                 transaction.Commit();

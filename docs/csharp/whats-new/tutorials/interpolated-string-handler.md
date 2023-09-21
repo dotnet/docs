@@ -22,7 +22,7 @@ This tutorial assumes you're familiar with C# and .NET, including either Visual 
 
 ## New outline
 
-C# 10 adds support for a custom [*interpolated string handler*](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md#the-handler-pattern). An interpolated string handler is a type that processes the placeholder expression in an interpolated string. Without a custom handler, placeholders are processed similar to <xref:System.String.Format%2A?displayProperty=nameWithType>. Each placeholder is formatted as text, and then the components are concatenated to form the resulting string.
+C# 10 adds support for a custom [*interpolated string handler*](#implement-the-handler-pattern). An interpolated string handler is a type that processes the placeholder expression in an interpolated string. Without a custom handler, placeholders are processed similar to <xref:System.String.Format%2A?displayProperty=nameWithType>. Each placeholder is formatted as text, and then the components are concatenated to form the resulting string.
 
 You can write a handler for any scenario where you use information about the resulting string. Will it be used? What constraints are on the format? Some examples include:
 
@@ -46,7 +46,7 @@ This `Logger` supports six different levels. When a message won't pass the log l
 This step is to build an *interpolated string handler* that recreates the current behavior. An interpolated string handler is a type that must have the following characteristics:
 
 - The <xref:System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute?displayProperty=fullName> applied to the type.
-- A constructor that has two `int` parameters, `literalLength` and `formatCount`. (More parameters are allowed).
+- A constructor that has two `int` parameters, `literalLength` and `formattedCount`. (More parameters are allowed).
 - A public `AppendLiteral` method with the signature: `public void AppendLiteral(string s)`.
 - A generic public `AppendFormatted` method with the signature: `public void AppendFormatted<T>(T t)`.
 
@@ -197,7 +197,7 @@ The only output when `LogLevel.Trace` was specified is the output from the const
 
 This example illustrates an important point for interpolated string handlers, especially when logging libraries are used. Any side-effects in the placeholders may not occur.  Add the following code to your main program and see this behavior in action:
 
-:::code language="csharp" source="./snippets/interpolated-string-handler/Version_4_Examples.cs" id="TestSideeffects":::
+:::code language="csharp" source="./snippets/interpolated-string-handler/Version_4_Examples.cs" id="TestSideEffects":::
 
 You can see the `index` variable is incremented five times each iteration of the loop. Because the placeholders are evaluated only for `Critical`, `Error` and `Warning` levels, not for `Information` and `Trace`, the final value of `index` doesn't match the expectation:
 

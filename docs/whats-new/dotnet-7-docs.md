@@ -137,7 +137,6 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [CA1418: Validate platform compatibility](../fundamentals/code-analysis/quality-rules/ca1418.md) - Add docs for CA1420 and CA1422
 - [Portability and interoperability rules](../fundamentals/code-analysis/quality-rules/interoperability-warnings.md) - Add docs for CA1420 and CA1422
 - [Code-style rule options](../fundamentals/code-analysis/code-style-rule-options.md) - Add missing code-style rules
-- [Expression-level preferences](../fundamentals/code-analysis/style-rules/expression-level-preferences.md) - Add missing code-style rules
 - [Use local function instead of lambda (IDE0039)](../fundamentals/code-analysis/style-rules/ide0039.md) - Add missing code-style rules
 - [Code-style rules](../fundamentals/code-analysis/style-rules/index.md)
   - Add missing code-style rules
@@ -148,8 +147,6 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [Language rules](../fundamentals/code-analysis/style-rules/language-rules.md)
   - Add missing code-style rules
   - Add IDE0160 and IDE0161.
-- [Null-checking preferences](../fundamentals/code-analysis/style-rules/null-checking-preferences.md) - Add missing code-style rules
-- [Pattern matching preferences](../fundamentals/code-analysis/style-rules/pattern-matching-preferences.md) - Add missing code-style rules
 - [.NET runtime contention events](../fundamentals/diagnostics/runtime-contention-events.md) - Update the doc with the new version of ContentionStart
 - [Error codes returned by package validation](../fundamentals/package-validation/diagnostic-ids.md)
   - add docs for diagnostics CP0012 and CP0013
@@ -172,7 +169,7 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [How to write custom converters for JSON serialization (marshalling) in .NET](../standard/serialization/system-text-json/converters-how-to.md)
   - Add section on Utf8JsonReader.CopyString
   - Add contract customization article
-- [How to use a JSON document, Utf8JsonReader, and Utf8JsonWriter in System.Text.Json](../standard/serialization/system-text-json/use-dom-utf8jsonreader-utf8jsonwriter.md) - Add section on Utf8JsonReader.CopyString
+- [How to use Utf8JsonReader in System.Text.Json](../standard/serialization/system-text-json/use-utf8jsonreader.md) - Add section on Utf8JsonReader.CopyString
 - [Compare Newtonsoft.Json to System.Text.Json, and migrate to System.Text.Json](../standard/serialization/system-text-json/migrate-from-newtonsoft.md) - Add contract customization article
 - [How to preserve references and handle or ignore circular references in System.Text.Json](../standard/serialization/system-text-json/preserve-references.md) - Add contract customization article
 - [How to serialize properties of derived classes with System.Text.Json](../standard/serialization/system-text-json/polymorphism.md) - `System.Text.Json` polymorphism updates for .NET 7
@@ -241,7 +238,7 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [Access Modifiers (C# Reference)](../csharp/language-reference/keywords/access-modifiers.md) - Language reference updates for `file` scoped types
 - [ref (C# Reference)](../csharp/language-reference/keywords/ref.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
 - [Assignment operators (C# reference)](../csharp/language-reference/operators/assignment-operator.md) - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
-- [Write safe and efficient C# code](../csharp/write-safe-efficient-code.md)
+- [Avoid allocations](../csharp//advanced-topics/performance/index.md)
   - `ref` fields and `scoped`. Modify pages on struct creation, variable declaration, and ref struct.
   - Add updates for numeric IntPtr
 - [+ and += operators (C# reference)](../csharp/language-reference/operators/addition-operator.md) - Write content for UTF-8 string literals for C# 11.
@@ -256,19 +253,19 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
 - [Properties](../csharp/properties.md) - C# 11: required members
 - [Constraints on type parameters (C# Programming Guide)](../csharp/programming-guide/generics/constraints-on-type-parameters.md) - Add information on static virtual interface members
 - [Generic Interfaces (C# Programming Guide)](../csharp/programming-guide/generics/generic-interfaces.md) - Add information on static virtual interface members
-- [Built-in types (C# reference)](../csharp/language-reference/builtin-types/built-in-types.md) - Add updates for numeric IntPtr
-- [Built-in numeric conversions (C# reference)](../csharp/language-reference/builtin-types/numeric-conversions.md) - Add updates for numeric IntPtr
+- [Built-in types (C# reference)](../csharp/language-reference/builtin-types/built-in-types.md) - Add updates for numeric `IntPtr`
+- [Built-in numeric conversions (C# reference)](../csharp/language-reference/builtin-types/numeric-conversions.md) - Add updates for numeric `IntPtr`
 - [Arithmetic operators (C# reference)](../csharp/language-reference/operators/arithmetic-operators.md) - Operator updates to support generic math
-- [Determine caller information using attributes interpreted by the C# compiler](../csharp/language-reference/attributes/caller-information.md) - Extended nameof parameter scope
-- [Attributes for null-state static analysis interpreted by the C# compiler](../csharp/language-reference/attributes/nullable-analysis.md) - Extended nameof parameter scope
+- [Determine caller information using attributes interpreted by the C# compiler](../csharp/language-reference/attributes/caller-information.md) - Extended `nameof` parameter scope
+- [Attributes for null-state static analysis interpreted by the C# compiler](../csharp/language-reference/attributes/nullable-analysis.md) - Extended `nameof` parameter scope
 - [delegate operator (C# reference)](../csharp/language-reference/operators/delegate-operator.md) - Document new method group conversion
-- [Generics and Attributes (C# Programming Guide)](../csharp/programming-guide/generics/generics-and-attributes.md) - generic attributes are allowed in C# 11
+- [Generics and Attributes (C# Programming Guide)](../csharp/advanced-topics/reflection-and-attributes/generics-and-attributes.md) - generic attributes are allowed in C# 11
 
 ## Microsoft Orleans
 
 ### New articles
 
-- [What's new in Orleans 7.0](../orleans/whats-new-in-orleans.md)
+- [Migrate from Orleans 3.x to 7.0](../orleans/migration-guide.md)
 
 ### Updated articles
 

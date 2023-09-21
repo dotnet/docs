@@ -127,7 +127,7 @@ The order in which naming rules are defined in an EditorConfig file doesn't matt
 The [EditorConfig Language Service extension](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) can analyze an EditorConfig file and report cases where the rule ordering in the file is different to what the compiler will use at run time.
 
 > [!NOTE]
-> If you're using a version of Visual Studio earlier than Visual Studio 2019 version 16.2, naming rules should be ordered from most-specific to least-specific in the EditorConfig file. The first rule encountered that can be applied is the only rule that is applied. However, if there are multiple rule *properties* with the same name, the most recently found property with that name takes precedence. For more information, see [File hierarchy and precedence](/visualstudio/ide/create-portable-custom-editor-options#file-hierarchy-and-precedence).
+> If you're using a version of Visual Studio earlier than Visual Studio 2019, naming rules should be ordered from most-specific to least-specific in the EditorConfig file. The first rule encountered that can be applied is the only rule that is applied. However, if there are multiple rule *properties* with the same name, the most recently found property with that name takes precedence. For more information, see [File hierarchy and precedence](/visualstudio/ide/create-portable-custom-editor-options#file-hierarchy-and-precedence).
 
 ### Example: Overlapping naming strategies
 
@@ -167,7 +167,7 @@ The severity value must be `warning` or `error` to be [enforced on build](../ove
 
 ## Example: Public member capitalization
 
-The following *.editorconfig* file contains a naming convention that specifies that public properties, methods, fields, events, and delegates must be capitalized. Notice that this naming convention specifies multiple kinds of symbol to apply the rule to, using a comma to separate the values.
+The following *.editorconfig* file contains a naming convention that specifies that public properties, methods, fields, events, and delegates that are marked `readonly` must be capitalized. This naming convention specifies multiple kinds of symbol to apply the rule to, using a comma to separate the values.
 
 ```ini
 [*.{cs,vb}]

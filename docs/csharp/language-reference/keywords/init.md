@@ -29,6 +29,10 @@ var john = new Person_InitExample
 john.YearOfBirth = 1926; //Not allowed, as its value can only be set once in the constructor
 ```
 
+An `init` accessor doesn't force callers to set the property. Instead, it allows an object initializer to set the initial value while prohibiting later modification. You can add the `required` modifier to force callers to set a property. The following example shows the same behavior:
+
+:::code language="csharp" source="./snippets/InitNullablityExample.cs" id="Snippet4":::
+
 The `init` accessor can be used as an expression-bodied member. Example:
 
 [!code-csharp[init#3](snippets/InitExample3.cs)]

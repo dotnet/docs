@@ -1,7 +1,7 @@
 ---
 title: HTTP support in .NET
 description: Learn about the comprehensive support for HTTP that .NET provides.
-ms.date: 08/24/2022
+ms.date: 05/19/2023
 helpviewer_keywords:
   - "protocols, HTTP"
   - "sending data, HTTP"
@@ -17,7 +17,7 @@ helpviewer_keywords:
 
 # HTTP support in .NET
 
-Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources from a web server. The <xref:System.Net.Http.HttpClient?displayProperty=fullName> class exposes the ability to send HTTP requests and receive HTTP responses from a resource identified by a URI. There are many types of resources that are available on the web, and HTTP defines a set of request methods for accessing these resources.
+Hypertext Transfer Protocol (or HTTP) is a protocol for requesting resources from a web server. The <xref:System.Net.Http.HttpClient?displayProperty=fullName> class exposes the ability to send HTTP requests and receive HTTP responses from a resource identified by a URI. Many types of resources are available on the web, and HTTP defines a set of request methods for accessing these resources.
 
 ## HTTP request methods
 
@@ -43,11 +43,11 @@ The request methods are differentiated via several factors, first by their _verb
 
 ## HTTP status codes
 
-.NET provides comprehensive support for the HTTP protocol, which makes up the majority of all internet traffic, with the <xref:System.Net.Http.HttpClient>. For more information, see [Make HTTP requests with the HttpClient class](httpclient.md). Applications receive HTTP protocol errors by catching an <xref:System.Net.Http.HttpRequestException>. HTTP status codes are either reported in <xref:System.Net.Http.HttpResponseMessage> with the <xref:System.Net.Http.HttpResponseMessage.StatusCode?displayProperty=nameWithType> or in <xref:System.Net.Http.HttpRequestException> with the <xref:System.Net.Http.HttpRequestException.StatusCode?displayProperty=nameWithType> in case the called method doesn't return a response message. For more information about error handling, see [HTTP error handling](httpclient.md#http-error-handling), and for more information about status codes, see [RFC 9110, HTTP Semantics: Status Codes](https://www.rfc-editor.org/rfc/rfc9110#name-status-codes).
+.NET provides comprehensive support for the HTTP protocol, which accounts for most internet traffic, with the <xref:System.Net.Http.HttpClient>. For more information, see [Make HTTP requests with the HttpClient class](httpclient.md). Applications receive HTTP protocol errors by catching an <xref:System.Net.Http.HttpRequestException>. HTTP status codes are either reported in <xref:System.Net.Http.HttpResponseMessage> with the <xref:System.Net.Http.HttpResponseMessage.StatusCode?displayProperty=nameWithType> or in <xref:System.Net.Http.HttpRequestException> with the <xref:System.Net.Http.HttpRequestException.StatusCode?displayProperty=nameWithType> in case the called method doesn't return a response message. For more information about error handling, see [HTTP error handling](httpclient.md#http-error-handling), and for more information about status codes, see [RFC 9110, HTTP Semantics: Status Codes](https://www.rfc-editor.org/rfc/rfc9110#name-status-codes).
 
 ### Informational status codes
 
-The informational status codes reflect an interim response. Most of the interim responses, for example <xref:System.Net.HttpStatusCode.Continue?displayProperty=nameWithType>, are handled internally by <xref:System.Net.Http.HttpClient> and are never surfaced to the user.
+The informational status codes reflect an interim response. Most of the interim responses, for example <xref:System.Net.HttpStatusCode.Continue?displayProperty=nameWithType>, are handled internally with <xref:System.Net.Http.HttpClient> and are never surfaced to the user.
 
 | HTTP status code | `HttpStatusCode`                                                                 |
 |------------------|----------------------------------------------------------------------------------|
@@ -75,7 +75,7 @@ The successful status codes indicate that the client's request was successfully 
 
 ### Redirection status codes
 
-Redirection status codes require the user agent to take action in order to fulfill the request. Automatic redirection is turned on by default, it can be changed with <xref:System.Net.Http.HttpClientHandler.AllowAutoRedirect?displayProperty=nameWithType> or <xref:System.Net.Http.SocketsHttpHandler.AllowAutoRedirect?displayProperty=nameWithType>.
+Redirection status codes require the user agent to take action to fulfill the request. Automatic redirection is turned on by default, it can be changed with <xref:System.Net.Http.HttpClientHandler.AllowAutoRedirect?displayProperty=nameWithType> or <xref:System.Net.Http.SocketsHttpHandler.AllowAutoRedirect?displayProperty=nameWithType>.
 
 | HTTP status code | `HttpStatusCode`                                                                                                                                                  |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|

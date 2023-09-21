@@ -24,7 +24,7 @@ Namespace Introduction
 
             ' Output:
             ' Hello from the calling thread.
-            ' Hello from taskA. 
+            ' Hello from taskA.
 
             '</snippet01>
         End Sub
@@ -53,8 +53,8 @@ Namespace Introduction
         Shared Sub TaskDemo2()
             ' Create the task object by using an Action(Of Object) to pass in custom data
             ' in the Task constructor. This is useful when you need to capture outer variables
-            ' from within a loop. 
-            ' As an experiment, try modifying this code to capture i directly in the lamda,
+            ' from within a loop.
+            ' As an experiment, try modifying this code to capture i directly in the lambda,
             ' and compare results.
             Dim taskArray() As Task
             ReDim taskArray(10)

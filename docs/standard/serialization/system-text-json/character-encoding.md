@@ -30,11 +30,11 @@ By default, the serializer escapes all non-ASCII characters. That is, it replace
 
 To serialize the character set(s) of one or more languages without escaping, specify [Unicode range(s)](xref:System.Text.Unicode.UnicodeRanges) when creating an instance of <xref:System.Text.Encodings.Web.JavaScriptEncoder?displayProperty=fullName>, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs" id="Usings":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/SerializeCustomEncoding.vb" id="Usings":::
+:::code language="csharp" source="snippets/how-to/csharp/SerializeCustomEncoding.cs" id="Usings":::
+:::code language="vb" source="snippets/how-to/vb/SerializeCustomEncoding.vb" id="Usings":::
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs" id="LanguageSets":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/SerializeCustomEncoding.vb" id="LanguageSets":::
+:::code language="csharp" source="snippets/how-to/csharp/SerializeCustomEncoding.cs" id="LanguageSets":::
+:::code language="vb" source="snippets/how-to/vb/SerializeCustomEncoding.vb" id="LanguageSets":::
 
 This code doesn't escape Cyrillic or Greek characters. If the `Summary` property is set to Cyrillic `жарко`, the `WeatherForecast` object is serialized as shown in this example:
 
@@ -54,11 +54,11 @@ To serialize all language sets without escaping, use <xref:System.Text.Unicode.U
 
 An alternative is to specify individual characters that you want to allow through without being escaped. The following example serializes only the first two characters of `жарко`:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs" id="Usings":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/SerializeCustomEncoding.vb" id="Usings":::
+:::code language="csharp" source="snippets/how-to/csharp/SerializeCustomEncoding.cs" id="Usings":::
+:::code language="vb" source="snippets/how-to/vb/SerializeCustomEncoding.vb" id="Usings":::
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs" id="SelectedCharacters":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/SerializeCustomEncoding.vb" id="SelectedCharacters":::
+:::code language="csharp" source="snippets/how-to/csharp/SerializeCustomEncoding.cs" id="SelectedCharacters":::
+:::code language="vb" source="snippets/how-to/vb/SerializeCustomEncoding.vb" id="SelectedCharacters":::
 
 Here's an example of JSON produced by the preceding code:
 
@@ -76,9 +76,9 @@ The preceding sections show how to specify allow lists of code points or ranges 
 
 ### Global block list
 
-The global block list includes things like private-use characters, control characters, undefined code points, and certain Unicode categories, such as the [Space_Separator category](https://util.unicode.org/UnicodeJsps/list-unicodeset.jsp?a=%5B:General_Category=Space_Separator:%5D), excluding `U+0020 SPACE`. For example, `U+3000 IDEOGRAPHIC SPACE` is escaped even if you specify Unicode range [CJK Symbols and Punctuation (U+3000-U+303F)](xref:System.Text.Unicode.UnicodeRanges.CjkSymbolsandPunctuation) as your allow list.
+The global block list includes things like private-use characters, control characters, undefined code points, and certain Unicode categories, such as the [Space_Separator category](https://www.compart.com/en/unicode/category/Zs), excluding `U+0020 SPACE`. For example, `U+3000 IDEOGRAPHIC SPACE` is escaped even if you specify Unicode range [CJK Symbols and Punctuation (U+3000-U+303F)](xref:System.Text.Unicode.UnicodeRanges.CjkSymbolsandPunctuation) as your allow list.
 
-The global block list is an implementation detail that has changed in every release of .NET Core and in .NET 5. Don't take a dependency on a character being a member of (or not being a member of) the global block list.
+The global block list is an implementation detail that has changed in every release of .NET. Don't take a dependency on a character being a member of (or not being a member of) the global block list.
 
 ### Encoder-specific block lists
 
@@ -88,11 +88,11 @@ Examples of encoder-specific blocked code points include `'<'` and `'&'` for the
 
 To minimize escaping you can use <xref:System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping?displayProperty=nameWithType>, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs" id="Usings":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/SerializeCustomEncoding.vb" id="Usings":::
+:::code language="csharp" source="snippets/how-to/csharp/SerializeCustomEncoding.cs" id="Usings":::
+:::code language="vb" source="snippets/how-to/vb/SerializeCustomEncoding.vb" id="Usings":::
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs" id="UnsafeRelaxed":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/SerializeCustomEncoding.vb" id="UnsafeRelaxed":::
+:::code language="csharp" source="snippets/how-to/csharp/SerializeCustomEncoding.cs" id="UnsafeRelaxed":::
+:::code language="vb" source="snippets/how-to/vb/SerializeCustomEncoding.vb" id="UnsafeRelaxed":::
 
 > [!CAUTION]
 > Compared to the default encoder, the `UnsafeRelaxedJsonEscaping` encoder is more permissive about allowing characters to pass through unescaped:
@@ -106,20 +106,3 @@ To minimize escaping you can use <xref:System.Text.Encodings.Web.JavaScriptEncod
 
 * [System.Text.Json overview](overview.md)
 * [How to serialize and deserialize JSON](how-to.md)
-* [Instantiate JsonSerializerOptions instances](configure-options.md)
-* [Enable case-insensitive matching](character-casing.md)
-* [Customize property names and values](customize-properties.md)
-* [Ignore properties](ignore-properties.md)
-* [Allow invalid JSON](invalid-json.md)
-* [Handle overflow JSON or use JsonElement or JsonNode](handle-overflow.md)
-* [Preserve references and handle circular references](preserve-references.md)
-* [Deserialize to immutable types and non-public accessors](immutability.md)
-* [Polymorphic serialization](polymorphism.md)
-* [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft.md)
-* [Use DOM, Utf8JsonReader, and Utf8JsonWriter](use-dom-utf8jsonreader-utf8jsonwriter.md)
-* [Write custom converters for JSON serialization](converters-how-to.md)
-* [DateTime and DateTimeOffset support](../../datetime/system-text-json-support.md)
-* [How to use source generation](source-generation.md)
-* [Supported collection types](supported-collection-types.md)
-* [System.Text.Json API reference](xref:System.Text.Json)
-* [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

@@ -1095,39 +1095,39 @@
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/migration-guide/mitigation-culture-and-asynchronous-operations.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.5.2-4.6"
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/migration-guide/mitigation-culture-and-dispatcher-operations-in-wpf-apps.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.5.2-4.6"
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/migration-guide/mitigation-default-authorizationcontext.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.5.2-4.6"
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/migration-guide/mitigation-eventsource-writeevent-method-calls.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5-4.5.1"
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/migration-guide/mitigation-grid-control.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.2-4.7"
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/migration-guide/mitigation-horizontal-scrolling-and-virtualization.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.1-4.6.2"
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/migration-guide/mitigation-long-path-support.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.1-4.6.2"
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/migration-guide/mitigation-memberdescriptor-equals.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.1-4.6.2"
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/migration-guide/mitigation-minfreememorypercentagetoactiveservice-configuration-setting.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5-4.5.1"
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/minimum-release-dword.md",
@@ -1135,11 +1135,11 @@
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/mitigation-claimsidentity-constructor.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.1-4.6.2"
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/mitigation-cspparameters-parentwindowhandle-expects-an-hwnd.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.2-4.7"
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/net-compatibility-diagnostics.md",
@@ -1176,6 +1176,454 @@
         {
             "source_path_from_root": "/docs/framework/migration-guide/retargeting/index.md",
             "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.0-4.5.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.5.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.0-4.5.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.5.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.0-4.6.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.0-4.6.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.0-4.6.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.0-4.7.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.0-4.7.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.0-4.7.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.0-4.8.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.8.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5-4.5.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.5.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5-4.5.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.5.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5-4.6.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5-4.6.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5-4.6.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5-4.7.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5-4.7.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5-4.7.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5-4.8.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.8.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5.1-4.5.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.5.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5.1-4.6.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5.1-4.6.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5.1-4.7.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5.1-4.7.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5.1-4.7.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5.1-4.8.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.8.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5.2-4.6.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5.2-4.6.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5.2-4.6.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5.2-4.7.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5.2-4.7.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5.2-4.7.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5.2-4.8.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.8.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.6-4.6.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.6-4.6.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.6-4.7.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.6-4.7.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.6-4.7.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.6-4.8.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.8.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.6.1-4.6.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.6.1-4.7.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.6.1-4.7.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.6.1-4.7.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.6.1-4.8.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.8.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.6.2-4.7.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.6.2-4.7.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.6.2-4.8.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.8.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.7-4.7.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.7-4.7.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.7-4.8.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.8.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.7.1-4.7.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.7.1-4.8.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.8.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.8-4.8.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.8.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.0-4.5.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.5.1-4.6.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.6.2-4.7.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/retargeting/4.7.2-4.8.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.8.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.0-4.5.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5.2-4.6.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.6.2-4.7.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.7.2-4.8.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.8.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.0-4.5.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.0-4.5.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.0-4.6.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.0-4.6.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.0-4.6.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.0-4.7.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.0-4.7.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.0-4.7.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.0-4.8.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.8.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5-4.5.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5-4.5.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5-4.6.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5-4.6.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5-4.6.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5-4.7.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5-4.7.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5-4.7.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5-4.8.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.8.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5.1-4.5.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5.1-4.6.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5.1-4.6.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5.1-4.6.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5.1-4.7.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5.1-4.7.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5.1-4.7.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5.1-4.8.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.8.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5.2-4.6.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5.2-4.6.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5.2-4.7.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5.2-4.7.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5.2-4.7.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.5.2-4.8.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.8.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.6-4.6.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.6-4.6.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.6-4.7.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.6-4.7.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.6-4.7.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.6-4.8.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.8.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.6.1-4.6.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.6.1-4.7.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.6.1-4.7.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.6.1-4.7.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.6.1-4.8.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.8.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.6.2-4.7.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.6.2-4.7.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.6.2-4.8.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.8.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.7-4.7.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.7-4.7.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.7-4.8.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.8.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.7.1-4.7.2.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.7.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.7.1-4.8.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.8.x"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/runtime/4.8-4.8.1.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.8.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-5-1.md",
@@ -1661,6 +2109,126 @@
             "redirect_url": "/dotnet/framework/unmanaged-api/profiling/cor-prf-monitor-enumeration"
         },
         {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/dotnet-debugging.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/clrcreateinstance-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/clrcreateinstance-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/closeclrenumeration-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/closeclrenumeration-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/closeresumehandle-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/closeresumehandle-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createversionstringfrommodule-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/createversionstringfrommodule-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createdebugginginterfacefromversion-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/createdebugginginterfacefromversion-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createdebugginginterfacefromversionex-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/createdebugginginterfacefromversionex-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createdebugginginterfacefromversion2-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/createdebugginginterfacefromversion2-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createdebugginginterfacefromversion3-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/createdebugginginterfacefromversion3-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createprocessforlaunch-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/createprocessforlaunch-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/enumerateclrs-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/enumerateclrs-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/getstartupnotificationevent-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/getstartupnotificationevent-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider2-interface.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/iclrdebugginglibraryprovider2-interface",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider2-providelibrary2-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/iclrdebugginglibraryprovider2-providelibrary2-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider3-interface.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/iclrdebugginglibraryprovider3-interface",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider3-provideunixlibrary-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/iclrdebugginglibraryprovider3-provideunixlibrary-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider3-providewindowslibrary-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/iclrdebugginglibraryprovider3-providewindowslibrary-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/libraryproviderindextype-enumeration.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/libraryproviderindextype-enumeration",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/pstartup_callback-function-pointer.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/pstartup_callback-function-pointer",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/registerforruntimestartup-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/registerforruntimestartup-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/registerforruntimestartupex-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/registerforruntimestartupex-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/registerforruntimestartup3-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/registerforruntimestartup3-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/resumeprocess-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/resumeprocess-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/unregisterforruntimestartup-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/unregisterforruntimestartup-function",
+            "redirect_document_id": true
+        },
+        {
             "source_path_from_root": "/docs/framework/wcf/diagnostics/etw/monitoring-service-operation-failures.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/ff468239(v=vs.100)"
         },
@@ -1688,6 +2256,16 @@
         {
             "source_path_from_root": "/docs/framework/wcf/feature-details/controlling-serialization-and-deserialization-with-serializationbinder.md",
             "redirect_url": "/dotnet/framework/wcf/feature-details/data-transfer-and-serialization"
+        },
+        {
+            "source_path_from_root": "/docs/framework/wcf/feature-details/diff-in-queue-in-vista-server-2003-windows-xp.md",
+            "redirect_url": "/previous-versions/dotnet/framework/wcf/feature-details/queuing-differences-windows-vista",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/framework/wcf/feature-details/diff-service-certificate-validation-ie-and-wcf.md",
+            "redirect_url": "/previous-versions/dotnet/framework/wcf/feature-details/service-cert-validation-differences",
+            "redirect_document_id": false
         },
         {
             "source_path_from_root": "/docs/framework/wcf/feature-details/how-to-create-a-workflow-service-that-calls-another-workflow-service.md",

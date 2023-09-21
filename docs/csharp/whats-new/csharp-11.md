@@ -1,7 +1,8 @@
 ---
 title: What's new in C# 11 - C# Guide
-description: Get an overview of the new features coming in C# 11.
+description: Get an overview of the new features added in C# 11.
 ms.date: 11/21/2022
+ms.custom: UpdateFrequency1
 ---
 # What's new in C# 11
 
@@ -23,7 +24,9 @@ The following features were added in C# 11:
 - [Improved method group conversion to delegate](#improved-method-group-conversion-to-delegate)
 - [Warning wave 7](../language-reference/compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters)
 
-You can download the latest [Visual Studio 2022](https://visualstudio.microsoft.com/vs/). You can also try all these features with the .NET 7 SDK, which can be downloaded from the [.NET downloads](https://dotnet.microsoft.com/download/dotnet) page.
+C# 11 is supported on **.NET 7**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
+
+You can download the latest .NET 7 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), which includes the .NET 7 SDK.
 
 [!INCLUDE [released-version-feedback](./includes/released-feedback.md)]
 
@@ -165,7 +168,7 @@ You've been able to test if a `string` had a specific constant value using patte
 
 ## Extended nameof scope
 
-Type parameter names and parameter names are now in scope when used in a `nameof` expression in an [attribute declaration](../programming-guide/concepts/attributes/index.md#using-attributes) on that method. This feature means you can use the `nameof` operator to specify the name of a method parameter in an attribute on the method or parameter declaration. This feature is most often useful to add attributes for [nullable analysis](../language-reference/attributes/nullable-analysis.md).
+Type parameter names and parameter names are now in scope when used in a `nameof` expression in an [attribute declaration](/dotnet/csharp/advanced-topics/reflection-and-attributes#using-attributes) on that method. This feature means you can use the `nameof` operator to specify the name of a method parameter in an attribute on the method or parameter declaration. This feature is most often useful to add attributes for [nullable analysis](../language-reference/attributes/nullable-analysis.md).
 
 ## UTF-8 string literals
 

@@ -221,7 +221,7 @@ pull_request:
             - path: "(?i).*docs\/csharp\/programming-guide\/concepts\/expression-trees.*"
               run:
                 - labels-add: ["dotnet-csharp/prod", "csharp-advanced-concepts/tech"]
-            - path: "(?i).*docs\/csharp\/programming-guide\/concepts\/async.*"
+            - path: "(?i).*docs\/csharp\/asynchronous-programming\/.*"
               run:
                 - labels-add: ["dotnet-csharp/prod", "csharp-async/tech"]
             - path: "(?i).*docs\/csharp\/programming-guide\/concepts\/linq.*"

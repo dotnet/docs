@@ -30,6 +30,9 @@ The following code example shows how client code uses the generic `GenericList<T
 
 :::code language="csharp" source="snippets/generics/Program.cs" ID="Snippet3":::
 
+> [!NOTE]
+> Following examples applies not only to `class` types, but also `interface` and `struct` types
+
 ## Generics overview
 
 - Use generic types to maximize code reuse, type safety, and performance.

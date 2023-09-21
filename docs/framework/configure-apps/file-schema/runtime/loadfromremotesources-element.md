@@ -2,7 +2,7 @@
 description: "Learn more about: <loadFromRemoteSources> element"
 title: "<loadFromRemoteSources> Element"
 ms.date: "05/24/2018"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "loadFromRemoteSources element"
   - "<loadFromRemoteSources> element"
 ms.assetid: 006d1280-2ac3-4db6-a984-a3d4e275046a
@@ -10,49 +10,49 @@ ms.assetid: 006d1280-2ac3-4db6-a984-a3d4e275046a
 # \<loadFromRemoteSources> element
 
 Specifies whether assemblies loaded from remote sources should be granted full trust in .NET Framework 4 and later.
-  
+
 > [!NOTE]
-> If you were directed to this article because of an error message in the Visual Studio project error list or a build error, see [How to: Use an Assembly from the Web in Visual Studio](/previous-versions/visualstudio/visual-studio-2010/ee890038(v=vs.100)).  
-  
+> If you were directed to this article because of an error message in the Visual Studio project error list or a build error, see [How to: Use an Assembly from the Web in Visual Studio](/previous-versions/visualstudio/visual-studio-2010/ee890038(v=vs.100)).
+
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<loadFromRemoteSources>**  
-  
-## Syntax  
-  
-```xml  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<loadFromRemoteSources>**
+
+## Syntax
+
+```xml
 <loadFromRemoteSources
-   enabled="true|false"/>  
-```  
-  
+   enabled="true|false"/>
+```
+
 ## Attributes and elements
 
- The following sections describe attributes, child elements, and parent elements.  
-  
-### Attributes  
-  
-|Attribute|Description|  
-|---------------|-----------------|  
-|`enabled`|Required attribute.<br /><br /> Specifies whether an assembly that is loaded from a remote source should be granted full trust.|  
-  
-## enabled attribute  
-  
-|Value|Description|  
-|-----------|-----------------|  
-|`false`|Do not grant full trust to applications from remote sources. This is the default.|  
-|`true`|Grant full trust to applications from remote sources.|  
-  
-### Child elements  
+ The following sections describe attributes, child elements, and parent elements.
 
- None.  
-  
-### Parent elements  
-  
-|Element|Description|  
-|-------------|-----------------|  
-|`configuration`|The root element in every configuration file used by the common language runtime and .NET Framework applications.|  
-|`runtime`|Contains information about runtime initialization options.|  
-  
+### Attributes
+
+|Attribute|Description|
+|---------------|-----------------|
+|`enabled`|Required attribute.<br /><br /> Specifies whether an assembly that is loaded from a remote source should be granted full trust.|
+
+## enabled attribute
+
+|Value|Description|
+|-----------|-----------------|
+|`false`|Do not grant full trust to applications from remote sources. This is the default.|
+|`true`|Grant full trust to applications from remote sources.|
+
+### Child elements
+
+ None.
+
+### Parent elements
+
+|Element|Description|
+|-------------|-----------------|
+|`configuration`|The root element in every configuration file used by the common language runtime and .NET Framework applications.|
+|`runtime`|Contains information about runtime initialization options.|
+
 ## Remarks
 
 In the .NET Framework 3.5 and earlier versions, if you load an assembly from a remote location, code in the assembly runs in partial trust with a grant set that depends on the zone from which it is loaded. For example, if you load an assembly from a website, it is loaded into the Internet zone and granted the Internet permission set. In other words, it executes in an Internet sandbox.
@@ -89,7 +89,7 @@ Setting the `<loadFromRemoteSources>` element to `true` prevents this exception 
 
 ## Notes
 
-- In the .NET Framework 4.5 and later versions, assemblies on local network shares run in full trust by default; you do not have to enable the `<loadFromRemoteSources>` element.
+- In .NET Framework 4.5 and later versions, assemblies on local network shares (that is, the [Local Intranet security zone](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537183(v=vs.85)#default-url-security-zones)) run in full trust by default; you don't have to enable the `<loadFromRemoteSources>` element. For security zones other than Local Machine or Local Intranet, set the value to `true`.
 
 - If an application has been copied from the web, it is flagged by Windows as being a web application, even if it resides on the local computer. You can change that designation by changing its file properties, or you can use the `<loadFromRemoteSources>` element to grant the assembly full trust. As an alternative, you can use the <xref:System.Reflection.Assembly.UnsafeLoadFrom%2A> method to load a local assembly that the operating system has flagged as having been loaded from the web.
 
@@ -97,18 +97,18 @@ Setting the `<loadFromRemoteSources>` element to `true` prevents this exception 
 
 ## Configuration file
 
-This element is typically used in the application configuration file, but can be used in other configuration files depending upon the context. For more information, see the article [More Implicit Uses of CAS Policy: loadFromRemoteSources](/archive/blogs/shawnfa/more-implicit-uses-of-cas-policy-loadfromremotesources) in the .NET Security blog.  
+This element is typically used in the application configuration file, but can be used in other configuration files depending upon the context. For more information, see the article [More Implicit Uses of CAS Policy: loadFromRemoteSources](/archive/blogs/shawnfa/more-implicit-uses-of-cas-policy-loadfromremotesources) in the .NET Security blog.
 
 ## Example
 
 The following example shows how to grant full trust to assemblies loaded from remote sources.
 
 ```xml
-<configuration>  
-   <runtime>  
-      <loadFromRemoteSources enabled="true"/>  
-   </runtime>  
-</configuration>  
+<configuration>
+   <runtime>
+      <loadFromRemoteSources enabled="true"/>
+   </runtime>
+</configuration>
 ```
 
 ## See also

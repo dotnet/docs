@@ -34,6 +34,8 @@ In this part of the series, you'll learn how to:
 
 * Open a terminal and navigate to the _working\templates_ folder.
 
+[!INCLUDE [dotnet6-syntax-note](includes/dotnet6-syntax-note.md)]
+
 ## Create the required folders
 
 This series uses a "working folder" where your template source is contained and a "testing folder" used to test your templates. The working folder and testing folder should be under the same parent folder.
@@ -102,20 +104,57 @@ Open the _template.json_ with your favorite text editor and paste in the followi
 
 ```json
 {
-  "$schema": "http://json.schemastore.org/template",
-  "author": "Me",
-  "classifications": [ "Common", "Code" ],
-  "identity": "ExampleTemplate.StringExtensions",
-  "name": "Example templates: string extensions",
-  "shortName": "stringext",
-  "tags": {
-    "language": "C#",
-    "type": "item"
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Me",
+    "classifications": [ "Common", "Code" ],
+    "identity": "ExampleTemplate.StringExtensions",
+    "name": "Example templates: string extensions",
+    "shortName": "stringext",
+    "tags": {
+      "language": "C#",
+      "type": "item"
+    },
+    "symbols": {
+      "ClassName":{
+        "type": "parameter",
+        "description": "The name of the code file and class.",
+        "datatype": "text",
+        "replaces": "StringExtensions",
+        "fileRename": "StringExtensions",
+        "defaultValue": "StringExtensions"
+      }
+    }
   }
-}
 ```
 
 This config file contains all the settings for your template. You can see the basic settings, such as `name` and `shortName`, but there's also a `tags/type` value that is set to `item`. This categorizes your template as an item template. There's no restriction on the type of template you create. The `item` and `project` values are common names that .NET recommends so that users can easily filter the type of template they're searching for.
+
+The `symbols` part of this JSON object is used to define the parameters that can be used in the template. In this case, there is one parameter defined, `ClassName`, which has several properties. The `type` property specifies that this is a parameter, the `description` property provides a description of the parameter, the `datatype` property specifies that the value of this parameter should be text, the `replaces` property specifies the text that should be replaced by the value of this parameter, the `fileRename` property specifies that the file should be renamed using the value of this parameter, and the `defaultValue` property specifies the default value for this parameter. This means that when this template is used, the user can provide a value for the `ClassName` parameter, and this value will be used to replace all occurrences of `StringExtensions` in the template and to rename the file. If no value is provided, then `StringExtensions` will be used as the default value. To see what parameters are avalible for the item template the user can run `dotnet new stringext -?` to see the avalible parameters.
+
+```console
+dotnet new stringext -?
+Example templates: string extensions (C#)
+Author: Me
+
+Usage:
+  dotnet new stringext [options] [template options]
+
+Options:
+  -n, --name <name>       The name for the output being created. If no name is specified, the name of the output directory is used.
+  -o, --output <output>   Location to place the generated output.
+  --dry-run               Displays a summary of what would happen if the given command line were run if it would result in a template creation.
+  --force                 Forces content to be generated even if it would change existing files.
+  --no-update-check       Disables checking for the template package updates when instantiating a template.
+  --project <project>     The project that should be used for context evaluation.
+  -lang, --language <C#>  Specifies the template language to instantiate.
+  --type <item>           Specifies the template type to instantiate.
+
+Template options:
+  -C, --ClassName <ClassName>  The name of the code file and class.
+                               Type: text
+                               Default: StringExtensions
+
+```
 
 The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the \*.json file with the `classifications` tags list. They're two different things unfortunately named similarly. The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
 
@@ -165,7 +204,7 @@ dotnet run
 You get the following output.
 
 ```console
-Hello World!
+Hello, World!
 ```
 
 Next, run `dotnet new stringext` to generate the _CommonExtensions.cs_ from the template.
@@ -180,10 +219,10 @@ You get the following output.
 The template "Example templates: string extensions" was created successfully.
 ```
 
-Change the code in _Program.cs_ to reverse the `"Hello World"` string with the extension method provided by the template.
+Change the code in _Program.cs_ to reverse the `"Hello, World!"` string with the extension method provided by the template.
 
 ```csharp
-Console.WriteLine("Hello World!".Reverse());
+Console.WriteLine("Hello, World!".Reverse());
 ```
 
 Run the program again and you'll see that the result is reversed.
@@ -195,7 +234,7 @@ dotnet run
 You get the following output.
 
 ```console
-!dlroW olleH
+!dlroW ,olleH
 ```
 
 Congratulations! You created and deployed an item template with .NET. In preparation for the next part of this tutorial series, you must uninstall the template you created. Make sure to delete all files from the _test_ folder too. This will get you back to a clean state ready for the next major section of this tutorial.

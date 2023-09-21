@@ -27,6 +27,8 @@ dotnet tool restore -h|--help
 
 The `dotnet tool restore` command finds the tool manifest file that is in scope for the current directory and installs the tools that are listed in it. For information about manifest files, see [Install a local tool](global-tools.md#install-a-local-tool) and [Invoke a local tool](global-tools.md#invoke-a-local-tool).
 
+For information about where local tools are stored, see [dotnet tool install](dotnet-tool-install.md#local-tools).
+
 ## Options
 
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]

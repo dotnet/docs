@@ -386,7 +386,7 @@ The following table shows the event information:
 
 |Event|Event ID|Raised when|
 |-----------|--------------|-----------------|
-|`GCTriggered`|33|A GC has been triggered.|
+|`GCTriggered`|35|A GC has been triggered.|
 
 The following table shows the event data:
 

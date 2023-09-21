@@ -8,50 +8,54 @@ public class InnerJoinsTest
     [Fact]
     public void BasicTest()
     {
-        var sw = InitTest();
-
-        InnerJoins.Basic();
-        Assert.Equal(
+        const string expectedOutput =
 @"""Daisy"" is owned by Magnus
 ""Barley"" is owned by Terry
 ""Boots"" is owned by Terry
 ""Whiskers"" is owned by Charlotte
 ""Blue Moon"" is owned by Rui
-", sw.ToString());
+";
+
+        var querySyntaxResult = InnerJoins.Basic();
+        Assert.Equal(expectedOutput, querySyntaxResult);
+
+        var methodSyntaxResult = InnerJoins.BasicMethodSyntax();
+        Assert.Equal(methodSyntaxResult, querySyntaxResult);
     }
 
     [Fact]
     public void CompositeKeyTest()
     {
-        var sw = InitTest();
-
-        InnerJoins.CompositeKey();
-        Assert.Equal(
+        const string expectedOutput =
 @"The following people are both employees and students:
 Terry Adams
 Vernette Price
-", sw.ToString());
+";
+        var querySyntaxResult = InnerJoins.CompositeKey();
+        Assert.Equal(expectedOutput, querySyntaxResult);
+
+        var methodSyntaxResult = InnerJoins.CompositeKeyMethodSyntax();
+        Assert.Equal(methodSyntaxResult, querySyntaxResult);
     }
 
     [Fact]
     public void MultipleJoinTest()
     {
-        var sw = InitTest();
-
-        InnerJoins.MultipleJoin();
-        Assert.Equal(
+        const string expectedOutput =
 @"The cat ""Daisy"" shares a house, and the first letter of their name, with ""Duke"".
 The cat ""Whiskers"" shares a house, and the first letter of their name, with ""Wiley"".
-", sw.ToString());
+";
+        var querySyntaxResult = InnerJoins.MultipleJoin();
+        Assert.Equal(expectedOutput, querySyntaxResult);
+
+        var methodSyntaxResult = InnerJoins.MultipleJoinMethodSyntax();
+        Assert.Equal(methodSyntaxResult, querySyntaxResult);
     }
 
     [Fact]
     public void InnerGroupJoinTest()
     {
-        var sw = InitTest();
-
-        InnerJoins.InnerGroupJoin();
-        Assert.Equal(
+        const string expectedOutput =
 @"Inner join using GroupJoin():
 Magnus - Daisy
 Terry - Barley
@@ -65,6 +69,11 @@ Terry - Barley
 Terry - Boots
 Terry - Blue Moon
 Charlotte - Whiskers
-", sw.ToString());
+";
+        var querySyntaxResult = InnerJoins.InnerGroupJoin();
+        Assert.Equal(expectedOutput, querySyntaxResult);
+
+        var methodSyntaxResult = InnerJoins.InnerGroupJoinMethodSyntax();
+        Assert.Equal(methodSyntaxResult, querySyntaxResult);
     }
 }

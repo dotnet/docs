@@ -12,6 +12,8 @@ ms.prod: dotnet
 
 .NET runs on various platforms and architectures. Common Internet of things (IoT) boards, such as Raspberry Pi and Hummingboard, are supported. IoT apps typically interact with specialized hardware, such as sensors, analog-to-digital converters, and LCD devices. The .NET IoT Libraries enable these scenarios.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?show=dotnet-iot-for-beginners&ep=intro-to-dotnet-iot-with-single-board-computers-and-raspberry-pi-dotnet-iot-for-beginners]
+
 ## Libraries
 
 The .NET IoT Libraries are composed of two NuGet packages:
@@ -51,7 +53,9 @@ Some commonly used device bindings include:
 `System.Device.Gpio` is supported on any operating system that supports .NET, including most versions of Linux that support ARM/ARM64 and Windows 10 IoT Core.
 
 > [!TIP]
-> For Raspberry Pi, [Raspberry Pi OS](https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system)  (formerly Raspbian) is recommended.
+> For Raspberry Pi, [Raspberry Pi OS (64-bit)](https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system) is recommended. No desktop is required, so Raspberry Pi OS Lite can be used to reduce the size of the operating system.
+>
+> :::image type="content" source="media/rpi-imager-64bit.gif" alt-text="Animated GIF showing the Raspberry Pi Imager tool. The user selects 'RASPBERRY PI OS LITE (64-BIT) from the list of available operating systems.":::
 
 ## Supported hardware platforms
 
@@ -60,7 +64,7 @@ Some commonly used device bindings include:
 PC platforms are supported via the use of a USB to SPI/I<sup>2</sup>C bridge.
 
 > [!IMPORTANT]
-> .NET is not supported on ARMv6 architecture devices, including Raspberry Pi Zero and Raspberry Pi devices prior to Raspberry Pi 2.
+> .NET is not supported on devices prior to ARMv7, including Raspberry Pi Zero and Raspberry Pi devices prior to Raspberry Pi 2.
 
 ## Resources
 

@@ -35,41 +35,36 @@ The primary mechanism in ASP.NET Core for identifying an application's users is 
 > [!TIP]
 > ASP.NET Core 2.1 and later provides [ASP.NET Core Identity](/aspnet/core/security/authentication/identity) as a [Razor Class Library](/aspnet/core/razor-pages/ui-class), so you won't see much of the necessary code in your project, as was the case for previous versions. For details on how to customize the Identity code to suit your needs, see [Scaffold Identity in ASP.NET Core projects](/aspnet/core/security/authentication/scaffold-identity).
 
-The following code is taken from the ASP.NET Core Web Application MVC 3.1 project template with individual user account authentication selected. It shows how to configure ASP.NET Core Identity using Entity Framework Core in the `Startup.ConfigureServices` method.
+The following code is taken from the ASP.NET Core Web Application MVC 3.1 project template with individual user account authentication selected. It shows how to configure ASP.NET Core Identity using Entity Framework Core in the _Program.cs_ file.
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
-{
-    //...
-    services.AddDbContext<ApplicationDbContext>(options =>
-        options.UseSqlServer(
-            Configuration.GetConnectionString("DefaultConnection")));
+//...
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("DefaultConnection")));
 
-    services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddDefaultIdentity<IdentityUser>(options => 
+    options.SignIn.RequireConfirmedAccount = true)
         .AddEntityFrameworkStores<ApplicationDbContext>();
 
-    services.AddRazorPages();
-    //...
-}
+builder.Services.AddRazorPages();
+//...
 ```
 
-Once ASP.NET Core Identity is configured, you enable it by adding the `app.UseAuthentication()` and `endpoints.MapRazorPages()` as shown in the following code in the service's `Startup.Configure` method:
+Once ASP.NET Core Identity is configured, you enable it by adding the `app.UseAuthentication()` and `endpoints.MapRazorPages()` as shown in the following code in the service's _Program.cs_ file:
 
 ```csharp
-public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+//...
+app.UseRouting();
+
+app.UseAuthentication();
+app.UseAuthorization();
+
+app.UseEndpoints(endpoints =>
 {
-    //...
-    app.UseRouting();
-
-    app.UseAuthentication();
-    app.UseAuthorization();
-
-    app.UseEndpoints(endpoints =>
-    {
-        endpoints.MapRazorPages();
-    });
-    //...
-}
+    endpoints.MapRazorPages();
+});
+//...
 ```
 
 > [!IMPORTANT]
@@ -91,26 +86,23 @@ For authentication scenarios that make use of a local user data store and that p
 
 ASP.NET Core also supports using [external authentication providers](/aspnet/core/security/authentication/social/) to let users sign in via [OAuth 2.0](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2) flows. This means that users can sign in using existing authentication processes from providers like Microsoft, Google, Facebook, or Twitter and associate those identities with an ASP.NET Core identity in your application.
 
-To use external authentication, besides including the authentication middleware as mentioned before, using the `app.UseAuthentication()` method, you also have to register the external provider in `Startup` as shown in the following example:
+To use external authentication, besides including the authentication middleware as mentioned before, using the `app.UseAuthentication()` method, you also have to register the external provider in _Program.cs_ as shown in the following example:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
-{
-    //...
-    services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-        .AddEntityFrameworkStores<ApplicationDbContext>();
+//...
+services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<ApplicationDbContext>();
 
-    services.AddAuthentication()
-        .AddMicrosoftAccount(microsoftOptions =>
-        {
-            microsoftOptions.ClientId = Configuration["Authentication:Microsoft:ClientId"];
-            microsoftOptions.ClientSecret = Configuration["Authentication:Microsoft:ClientSecret"];
-        })
-        .AddGoogle(googleOptions => { ... })
-        .AddTwitter(twitterOptions => { ... })
-        .AddFacebook(facebookOptions => { ... });
-    //...
-}
+services.AddAuthentication()
+    .AddMicrosoftAccount(microsoftOptions =>
+    {
+        microsoftOptions.ClientId = builder.Configuration["Authentication:Microsoft:ClientId"];
+        microsoftOptions.ClientSecret = builder.Configuration["Authentication:Microsoft:ClientSecret"];
+    })
+    .AddGoogle(googleOptions => { ... })
+    .AddTwitter(twitterOptions => { ... })
+    .AddFacebook(facebookOptions => { ... });
+//...
 ```
 
 Popular external authentication providers and their associated NuGet packages are shown in the following table:
@@ -150,57 +142,53 @@ For example, in an ASP.NET Core Web API that exposes RESTful endpoints that migh
 
 ### Authenticate with an OpenID Connect or OAuth 2.0 Identity provider
 
-If user information is stored in Azure Active Directory or another identity solution that supports OpenID Connect or OAuth 2.0, you can use the **Microsoft.AspNetCore.Authentication.OpenIdConnect** package to authenticate using the OpenID Connect workflow. For example, to authenticate to the Identity.Api microservice in eShopOnContainers, an ASP.NET Core web application can use middleware from that package as shown in the following simplified example in `Startup.cs`:
+If user information is stored in Azure Active Directory or another identity solution that supports OpenID Connect or OAuth 2.0, you can use the **Microsoft.AspNetCore.Authentication.OpenIdConnect** package to authenticate using the OpenID Connect workflow. For example, to authenticate to the Identity.Api microservice in eShopOnContainers, an ASP.NET Core web application can use middleware from that package as shown in the following simplified example in _Program.cs_:
 
 ```csharp
-// Startup.cs
+// Program.cs
 
-public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+var identityUrl = builder.Configuration.GetValue<string>("IdentityUrl");
+var callBackUrl = builder.Configuration.GetValue<string>("CallBackUrl");
+var sessionCookieLifetime = builder.Configuration.GetValue("SessionCookieLifetimeMinutes", 60);
+
+// Add Authentication services
+
+services.AddAuthentication(options =>
 {
-    //…
-    app.UseAuthentication();
-    //…
-    app.UseEndpoints(endpoints =>
-    {
-        //...
-    });
-}
-
-public void ConfigureServices(IServiceCollection services)
+    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddCookie(setup => setup.ExpireTimeSpan = TimeSpan.FromMinutes(sessionCookieLifetime))
+.AddOpenIdConnect(options =>
 {
-    var identityUrl = Configuration.GetValue<string>("IdentityUrl");
-    var callBackUrl = Configuration.GetValue<string>("CallBackUrl");
-    var sessionCookieLifetime = Configuration.GetValue("SessionCookieLifetimeMinutes", 60);
+    options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.Authority = identityUrl.ToString();
+    options.SignedOutRedirectUri = callBackUrl.ToString();
+    options.ClientId = useLoadTest ? "mvctest" : "mvc";
+    options.ClientSecret = "secret";
+    options.ResponseType = useLoadTest ? "code id_token token" : "code id_token";
+    options.SaveTokens = true;
+    options.GetClaimsFromUserInfoEndpoint = true;
+    options.RequireHttpsMetadata = false;
+    options.Scope.Add("openid");
+    options.Scope.Add("profile");
+    options.Scope.Add("orders");
+    options.Scope.Add("basket");
+    options.Scope.Add("marketing");
+    options.Scope.Add("locations");
+    options.Scope.Add("webshoppingagg");
+    options.Scope.Add("orders.signalrhub");
+});
 
-    // Add Authentication services
+// Build the app
+//…
+app.UseAuthentication();
+//…
+app.UseEndpoints(endpoints =>
+{
+    //...
+});
 
-    services.AddAuthentication(options =>
-    {
-        options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-    })
-    .AddCookie(setup => setup.ExpireTimeSpan = TimeSpan.FromMinutes(sessionCookieLifetime))
-    .AddOpenIdConnect(options =>
-    {
-        options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-        options.Authority = identityUrl.ToString();
-        options.SignedOutRedirectUri = callBackUrl.ToString();
-        options.ClientId = useLoadTest ? "mvctest" : "mvc";
-        options.ClientSecret = "secret";
-        options.ResponseType = useLoadTest ? "code id_token token" : "code id_token";
-        options.SaveTokens = true;
-        options.GetClaimsFromUserInfoEndpoint = true;
-        options.RequireHttpsMetadata = false;
-        options.Scope.Add("openid");
-        options.Scope.Add("profile");
-        options.Scope.Add("orders");
-        options.Scope.Add("basket");
-        options.Scope.Add("marketing");
-        options.Scope.Add("locations");
-        options.Scope.Add("webshoppingagg");
-        options.Scope.Add("orders.signalrhub");
-    });
-}
 ```
 
 When you use this workflow, the ASP.NET Core Identity middleware is not needed, because all user information storage and authentication is handled by the Identity service.
@@ -211,9 +199,9 @@ If you prefer to issue security tokens for local ASP.NET Core Identity users rat
 
 [IdentityServer4](https://github.com/IdentityServer/IdentityServer4) and [OpenIddict](https://github.com/openiddict/openiddict-core) are OpenID Connect providers that integrate easily with ASP.NET Core Identity to let you issue security tokens from an ASP.NET Core service. The [IdentityServer4 documentation](https://identityserver4.readthedocs.io/en/latest/) has in-depth instructions for using the library. However, the basic steps to using IdentityServer4 to issue tokens are as follows.
 
-1. You call app.UseIdentityServer in the Startup.Configure method to add IdentityServer4 to the application's HTTP request processing pipeline. This lets the library serve requests to OpenID Connect and OAuth2 endpoints like /connect/token.
+1. You configure IdentityServer4 in _Program.cs_ by making a call to builder.Services.AddIdentityServer.
 
-2. You configure IdentityServer4 in Startup.ConfigureServices by making a call to services.AddIdentityServer.
+2. You call app.UseIdentityServer in _Program.cs_ to add IdentityServer4 to the application's HTTP request processing pipeline. This lets the library serve requests to OpenID Connect and OAuth2 endpoints like /connect/token.
 
 3. You configure identity server by setting the following data:
 
@@ -234,16 +222,14 @@ When you specify clients and resources for IdentityServer4 to use, you can pass 
 A sample configuration for IdentityServer4 to use in-memory resources and clients provided by a custom IClientStore type might look like the following example:
 
 ```csharp
-public IServiceProvider ConfigureServices(IServiceCollection services)
-{
-    //...
-    services.AddSingleton<IClientStore, CustomClientStore>();
-    services.AddIdentityServer()
-        .AddSigningCredential("CN=sts")
-        .AddInMemoryApiResources(MyApiResourceProvider.GetAllResources())
-        .AddAspNetIdentity<ApplicationUser>();
-    //...
-}
+// Program.cs
+
+builder.Services.AddSingleton<IClientStore, CustomClientStore>();
+builder.Services.AddIdentityServer()
+    .AddSigningCredential("CN=sts")
+    .AddInMemoryApiResources(MyApiResourceProvider.GetAllResources())
+    .AddAspNetIdentity<ApplicationUser>();
+//...
 ```
 
 ### Consume security tokens
@@ -253,38 +239,32 @@ Authenticating against an OpenID Connect endpoint or issuing your own security t
 For that scenario, authentication middleware that handles JWT tokens is available in the **Microsoft.AspNetCore.Authentication.JwtBearer** package. JWT stands for "[JSON Web Token](https://tools.ietf.org/html/rfc7519)" and is a common security token format (defined by RFC 7519) for communicating security claims. A simplified example of how to use middleware to consume such tokens might look like this code fragment, taken from the Ordering.Api microservice of eShopOnContainers.
 
 ```csharp
-// Startup.cs
+// Program.cs
 
-public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+var identityUrl = builder.Configuration.GetValue<string>("IdentityUrl");
+
+// Add Authentication services
+
+builder.Services.AddAuthentication(options =>
 {
-    //…
-    // Configure the pipeline to use authentication
-    app.UseAuthentication();
-    //…
-    app.UseEndpoints(endpoints =>
-    {
-        //...
-    });
-}
+    options.DefaultAuthenticateScheme = AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme;
 
-public void ConfigureServices(IServiceCollection services)
+}).AddJwtBearer(options =>
 {
-    var identityUrl = Configuration.GetValue<string>("IdentityUrl");
+    options.Authority = identityUrl;
+    options.RequireHttpsMetadata = false;
+    options.Audience = "orders";
+});
 
-    // Add Authentication services
+// Build the app
 
-    services.AddAuthentication(options =>
-    {
-        options.DefaultAuthenticateScheme = AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme;
-        options.DefaultChallengeScheme = AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme;
-
-    }).AddJwtBearer(options =>
-    {
-        options.Authority = identityUrl;
-        options.RequireHttpsMetadata = false;
-        options.Audience = "orders";
-    });
-}
+app.UseAuthentication();
+//…
+app.UseEndpoints(endpoints =>
+{
+    //...
+});
 ```
 
 The parameters in this usage are:

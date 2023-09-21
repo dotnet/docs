@@ -353,7 +353,7 @@ module Transactions =
 
 type Transactor(ctx, currentBalance) =
     member _.ExecuteTransaction(txnType) =
-        Transactions.doTransaction ctx txtType currentBalance
+        Transactions.doTransaction ctx txnType currentBalance
         ...
 ```
 
@@ -559,10 +559,10 @@ The previous example used a single function to encapsulate operations using muta
 open System.Collections.Generic
 
 let addToClosureTable (key, value) (t: Dictionary<_,_>) =
-    if not (t.ContainsKey(key)) then
-        t.Add(key, value)
-    else
+    if t.ContainsKey(key) then
         t[key] <- value
+    else
+        t.Add(key, value)
 
 let closureTableCount (t: Dictionary<_,_>) = t.Count
 
@@ -582,10 +582,10 @@ type Closure1Table() =
     let t = Dictionary<Item0, HashSet<TerminalIndex>>()
 
     member _.Add(key, value) =
-        if not (t.ContainsKey(key)) then
-            t.Add(key, value)
-        else
+        if t.ContainsKey(key) then
             t[key] <- value
+        else
+            t.Add(key, value)
 
     member _.Count = t.Count
 

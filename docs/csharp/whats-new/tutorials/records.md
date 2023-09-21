@@ -11,7 +11,7 @@ In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
 >
-> - Decide if you should declare a `class` or a `record`.
+> - Decide if you add the `record` modifier to a `class` type.
 > - Declare record types and positional record types.
 > - Substitute your methods for compiler generated methods in records.
 
@@ -21,7 +21,7 @@ You'll need to set up your machine to run .NET 6 or later, including the C# 10 o
 
 ## Characteristics of records
 
-You define a *record* by declaring a type with the `record` keyword, instead of the `class` or `struct` keyword. Optionally, you can declare a `record class` to clarify that it's a reference type. A record is a reference type and follows value-based equality semantics. You can define a `record struct` to create a record that is a value type. To enforce value semantics, the compiler generates several methods for your record type (both for `record class` types and `record struct` types):
+You define a *record* by declaring a type with the `record` keyword, modifying a `class` or `struct` declaration. Optionally, you can omit the `class` keyword to create a `record class`. A record follows value-based equality semantics. To enforce value semantics, the compiler generates several methods for your record type (both for `record class` types and `record struct` types):
 
 - An override of <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>.
 - A virtual `Equals` method whose parameter is the record type.

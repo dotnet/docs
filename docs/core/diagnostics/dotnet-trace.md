@@ -27,7 +27,6 @@ There are two ways to download and install `dotnet-trace`:
   | OS  | Platform |
   | --- | -------- |
   | Windows | [x86](https://aka.ms/dotnet-trace/win-x86) \| [x64](https://aka.ms/dotnet-trace/win-x64) \| [Arm](https://aka.ms/dotnet-trace/win-arm) \| [Arm-x64](https://aka.ms/dotnet-trace/win-arm64) |
-  | macOS   | [x64](https://aka.ms/dotnet-trace/osx-x64) |
   | Linux   | [x64](https://aka.ms/dotnet-trace/linux-x64) \| [Arm](https://aka.ms/dotnet-trace/linux-arm) \| [Arm64](https://aka.ms/dotnet-trace/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-trace/linux-musl-x64) \| [musl-Arm64](https://aka.ms/dotnet-trace/linux-musl-arm64) |
 
 > [!NOTE]
@@ -211,7 +210,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 > - If you see an error message similar to: `[ERROR] System.ComponentModel.Win32Exception (299): A 32 bit processes cannot access modules of a 64 bit process.`, you are trying to use a version of `dotnet-trace` that has mismatched bitness against the target process. Make sure to download the correct bitness of the tool in the [install](#install) link.
 
-> - If you experience an unhandled exception while running `dotnet-trace collect`, this results in an incomplete trace. If finding the root cause of the exception is your priority, navigate to [Collect dumps on crash](dumps.md#collect-dumps-on-crash). As a result of the unhandled exception, the trace is truncated when the runtime shuts down to prevent other undesired behavior such as a hang or data corruption. Even though the trace is incomplete, you can still open it to see what happened leading up to the failure. However, it will be missing Rundown information (this happens at the end of a trace) so stacks might be unresolved (depending on what providers were turned on). Open the trace by executing PerfView with the `/ContinueOnError` flag at the command line. The logs will also contain the location the exception was fired.
+> - If you experience an unhandled exception while running `dotnet-trace collect`, this results in an incomplete trace. If finding the root cause of the exception is your priority, navigate to [Collect dumps on crash](collect-dumps-crash.md). As a result of the unhandled exception, the trace is truncated when the runtime shuts down to prevent other undesired behavior such as a hang or data corruption. Even though the trace is incomplete, you can still open it to see what happened leading up to the failure. However, it will be missing Rundown information (this happens at the end of a trace) so stacks might be unresolved (depending on what providers were turned on). Open the trace by executing PerfView with the `/ContinueOnError` flag at the command line. The logs will also contain the location the exception was fired.
 
 ## dotnet-trace convert
 

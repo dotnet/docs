@@ -2,18 +2,18 @@
 title: Unsupported APIs on .NET Core and .NET 5+
 titleSuffix: ""
 description: Learn which .NET APIs always throw an exception on .NET Core and .NET 5 and later versions.
-ms.date: 11/23/2021
+ms.date: 08/22/2023
 ---
 # APIs that always throw exceptions on .NET Core and .NET 5+
 
-The following APIs will always throw an exception on .NET 5 and later versions (including all versions of .NET Core) on all or a subset of platforms. In most cases, the exception that's thrown is <xref:System.PlatformNotSupportedException>.
+The following APIs will always throw an exception on .NET (Core) on all or a subset of platforms. In most cases, the exception that's thrown is <xref:System.PlatformNotSupportedException>.
 
 This article organizes the affected APIs by namespace.
 
 > [!NOTE]
 >
 > - This article is a work-in-progress. It is not a complete list of APIs that throw exceptions on .NET 5+.
-> - This article does not include the explicit interface implementations for binary serialization that throw on .NET 5+. For more information, see [Binary serialization in .NET Core](../../standard/serialization/binary-serialization.md#net-core).
+> - This article does not include the explicit interface implementations for binary serialization that throw on .NET 5+. For more information, see [Binary serialization in .NET Core](/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization#net-core).
 
 ## System
 
@@ -184,6 +184,7 @@ This article organizes the affected APIs by namespace.
 
 | Member | Platforms that throw |
 | - | - |
+| <xref:System.Runtime.InteropServices.IDispatchImplAttribute> | All |
 | <xref:System.Runtime.InteropServices.Marshal.GetIDispatchForObject(System.Object)?displayProperty=nameWithType> | All |
 | <xref:System.Runtime.InteropServices.RuntimeEnvironment.SystemConfigurationFile?displayProperty=nameWithType> | All |
 | <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsIntPtr(System.Guid,System.Guid)?displayProperty=nameWithType> | All |
@@ -196,7 +197,11 @@ This article organizes the affected APIs by namespace.
 
 | Member | Platforms that throw |
 | - | - |
+| <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(System.IO.Stream,System.Object)?displayProperty=fullName>* | All |
+| <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(System.IO.Stream)?displayProperty=nameWithType>* | All |
 | <xref:System.Runtime.Serialization.XsdDataContractExporter.Schemas?displayProperty=nameWithType> | All |
+
+\* .NET 8 and later versions only for all project types except Windows Forms and WPF.
 
 ## System.Security
 
@@ -271,6 +276,10 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Security.Cryptography.KeyedHashAlgorithm.Create(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.ProtectedData.Protect%2A?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.RSACryptoServiceProvider.DecryptValue(System.Byte[])?displayProperty=fullName> | All |
+| <xref:System.Security.Cryptography.RSACryptoServiceProvider.EncryptValue(System.Byte[])?displayProperty=fullName> | All |
+| <xref:System.Security.Cryptography.RSA.DecryptValue(System.Byte[])?displayProperty=fullName> | All |
+| <xref:System.Security.Cryptography.RSA.EncryptValue(System.Byte[])?displayProperty=fullName> | All |
 | <xref:System.Security.Cryptography.RSA.FromXmlString%2A?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.RSA.ToXmlString%2A?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.SymmetricAlgorithm.Create?displayProperty=nameWithType> | All |
@@ -338,5 +347,5 @@ This article organizes the affected APIs by namespace.
 ## See also
 
 - [Breaking changes for migration from .NET Framework to .NET Core](fx-core.md)
-- [Binary serialization in .NET Core](../../standard/serialization/binary-serialization.md#net-core)
+- [Binary serialization in .NET Core](/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization#net-core)
 - [.NET portability analyzer](../../standard/analyzers/portability-analyzer.md)

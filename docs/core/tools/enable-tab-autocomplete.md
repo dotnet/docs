@@ -1,17 +1,17 @@
 ---
 title: Enable tab completion
-description: This article teaches you how to enable tab completion for the .NET CLI for PowerShell, Bash, zsh, and fish.
+description: This article teaches you how to enable tab completion for the .NET CLI for PowerShell, Bash, zsh, fish, and nushell.
 author: adegeo
 ms.author: adegeo
 ms.topic: how-to
-ms.date: 10/13/2022
+ms.date: 07/06/2023
 ---
 
 # How to enable tab completion for the .NET CLI
 
 **This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
-This article describes how to configure tab completion for four shells: PowerShell, Bash, zsh, and fish. For other shells, refer to their documentation on how to configure tab completion.
+This article describes how to configure tab completion for five shells: PowerShell, Bash, zsh, fish, and nushell. For other shells, refer to their documentation on how to configure tab completion.
 
 Once set up, tab completion for the .NET CLI is triggered by entering a `dotnet` command in the shell and then pressing the <kbd>Tab</kbd> key. The current command line is sent to the `dotnet complete` command, and the results are processed by the shell. You can test the results without enabling tab completion by sending something directly to the `dotnet complete` command. For example:
 
@@ -24,7 +24,7 @@ migrate
 pack
 ```
 
-If that command doesn't work, make sure that .NET Core 2.0 SDK or above is installed. If it's installed but that command still doesn't work, make sure that the `dotnet` command resolves to a version of .NET Core 2.0 SDK and above. Use the `dotnet --version` command to see what version of `dotnet` your current path is resolving to. For more information, see [Select the .NET version to use](../versions/selection.md).
+If that command doesn't work, make sure that .NET Core 2.0 SDK or later is installed. If it's installed but that command still doesn't work, make sure that the `dotnet` command resolves to a version of .NET Core 2.0 SDK or later. Use the `dotnet --version` command to see what version of `dotnet` your current path is resolving to. For more information, see [Select the .NET version to use](../versions/selection.md).
 
 ## Examples
 
@@ -63,7 +63,7 @@ To add tab completion to your **bash** shell for the .NET CLI, add the following
 
 function _dotnet_bash_complete()
 {
-  local cur="${COMP_WORDS[COMP_CWORD]}" IFS=$'\n'
+  local cur="${COMP_WORDS[COMP_CWORD]}" IFS=$'\n' # On Windows you may need to use use IFS=$'\r\n'
   local candidates
 
   read -d '' -ra candidates < <(dotnet complete --position "${COMP_POINT}" "${COMP_LINE}" 2>/dev/null)
@@ -81,7 +81,7 @@ To add tab completion to your **zsh** shell for the .NET CLI, add the following 
 ```zsh
 # zsh parameter completion for the dotnet CLI
 
-_dotnet_zsh_complete() 
+_dotnet_zsh_complete()
 {
   local completions=("$(dotnet complete "$words")")
 
@@ -105,4 +105,35 @@ To add tab completion to your **fish** shell for the .NET CLI, add the following
 
 ```fish
 complete -f -c dotnet -a "(dotnet complete (commandline -cp))"
+```
+
+## nushell
+
+To add tab completion to your **nushell** for .NET CLI, add the following to the beginning of your `config.nu` file:
+
+```nu
+let external_completer = { |spans|
+    {
+        dotnet: { ||
+            dotnet complete (
+                $spans | skip 1 | str join " "
+            ) | lines
+        }
+    } | get $spans.0 | each { || do $in }
+}
+```
+
+And then in the `config` record, find the `completions` section and add the `external_completer` that was defined earlier to `external`:
+
+```nu
+let-env config = {
+    # your options here
+    completions: {
+        # your options here
+        external: {
+            # your options here
+            completer: $external_completer # add it here
+        }
+    }
+}
 ```

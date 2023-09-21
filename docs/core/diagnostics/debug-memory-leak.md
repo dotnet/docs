@@ -1,20 +1,20 @@
 ---
 title: Debug a memory leak tutorial
-description: Learn how to debug a memory leak in .NET Core.
+description: Learn how to debug a memory leak in .NET.
 ms.topic: tutorial
-ms.date: 04/20/2020
+ms.date: 09/11/2023
 recommendations: false
 ---
 
-# Debug a memory leak in .NET Core
+# Debug a memory leak in .NET
 
 **This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
-A memory leak may happen when your app references objects that it no longer needs to perform the desired task. Referencing said objects makes the garbage collector to be unable to reclaim the memory used, often resulting in performance degradation and potentially end up throwing an <xref:System.OutOfMemoryException>.
+Memory can leak when your app references objects that it no longer needs to perform the desired task. Referencing these objects prevents the garbage collector from reclaiming the memory used. That can result in performance degradation and an <xref:System.OutOfMemoryException> exception being thrown.
 
-This tutorial demonstrates the tools to analyze a memory leak in a .NET Core app using the .NET diagnostics CLI tools. If you are on Windows, you may be able to [use Visual Studio's Memory Diagnostic tools](/visualstudio/profiling/memory-usage) to debug the memory leak.
+This tutorial demonstrates the tools to analyze a memory leak in a .NET app using the .NET diagnostics CLI tools. If you're on Windows, you may be able to [use Visual Studio's Memory Diagnostic tools](/visualstudio/profiling/memory-usage) to debug the memory leak.
 
-This tutorial uses a sample app, which is designed to intentionally leak memory. The sample is provided as an exercise. You can analyze an app that is unintentionally leaking memory too.
+This tutorial uses a sample app that intentionally leaks memory, as an exercise. You can also analyze apps that unintentionally leak memory.
 
 In this tutorial, you will:
 
@@ -30,14 +30,14 @@ The tutorial uses:
 
 - [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version.
 - [dotnet-counters](dotnet-counters.md) to check managed memory usage.
-- [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file.
+- [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file (includes the [SOS debugging extension](sos-debugging-extension.md)).
 - A [sample debug target](/samples/dotnet/samples/diagnostic-scenarios/) app to diagnose.
 
-The tutorial assumes the sample and tools are installed and ready to use.
+The tutorial assumes the sample apps and tools are installed and ready to use.
 
 ## Examine managed memory usage
 
-Before you start collecting diagnostics data to help us root cause this scenario, you need to make sure you're actually seeing a memory leak (memory growth). You can use the [dotnet-counters](dotnet-counters.md) tool to confirm that.
+Before you start collecting diagnostic data to help root cause this scenario, make sure you're actually seeing a memory leak (growth in memory usage). You can use the [dotnet-counters](dotnet-counters.md) tool to confirm that.
 
 Open a console window and navigate to the directory where you downloaded and unzipped the [sample debug target](/samples/dotnet/samples/diagnostic-scenarios/). Run the target:
 
@@ -99,7 +99,7 @@ Focusing on this line:
 
 You can see that the managed heap memory is 4 MB right after startup.
 
-Now, hit the URL `https://localhost:5001/api/diagscenario/memleak/20000`.
+Now, go to the URL `https://localhost:5001/api/diagscenario/memleak/20000`.
 
 Observe that the memory usage has grown to 30 MB.
 
@@ -111,7 +111,7 @@ By watching the memory usage, you can safely say that memory is growing or leaki
 
 ### Generate memory dump
 
-When analyzing possible memory leaks, you need access to the app's memory heap. Then you can analyze the memory contents. Looking at relationships between objects, you create theories on why memory isn't being freed. A common diagnostics data source is a memory dump on Windows or the equivalent core dump on Linux. To generate a dump of a .NET Core application, you can use the [dotnet-dump](dotnet-dump.md) tool.
+When analyzing possible memory leaks, you need access to the app's memory heap to analyze the memory contents. Looking at relationships between objects, you create theories as to why memory isn't being freed. A common diagnostic data source is a memory dump on Windows or the equivalent core dump on Linux. To generate a dump of a .NET application, you can use the [dotnet-dump](dotnet-dump.md) tool.
 
 Using the [sample debug target](/samples/dotnet/samples/diagnostic-scenarios/) previously started, run the following command to generate a Linux core dump:
 
@@ -125,6 +125,9 @@ The result is a core dump located in the same folder.
 Writing minidump with heap to ./core_20190430_185145
 Complete
 ```
+
+> [!NOTE]
+> For a comparison over time, let the original process continue running after collecting the first dump and collect a second dump the same way. You would then have two dumps over a period of time that you can compare to see where the memory usage is growing.
 
 ### Restart the failed process
 
@@ -143,9 +146,9 @@ dotnet-dump analyze core_20190430_185145
 Where `core_20190430_185145` is the name of the core dump you want to analyze.
 
 > [!NOTE]
-> If you see an error complaining that *libdl.so* cannot be found, you may have to install the *libc6-dev* package. For more information, see [Prerequisites for .NET Core on Linux](../install/linux.md).
+> If you see an error complaining that *libdl.so* cannot be found, you may have to install the *libc6-dev* package. For more information, see [Prerequisites for .NET on Linux](../install/linux.md).
 
-You'll be presented with a prompt where you can enter SOS commands. Commonly, the first thing you want to look at is the overall state of the managed heap:
+You'll be presented with a prompt where you can enter [SOS](sos-debugging-extension.md) commands. Commonly, the first thing you want to look at is the overall state of the managed heap:
 
 ```console
 > dumpheap -stat
@@ -170,7 +173,7 @@ Here you can see that most objects are either `String` or `Customer` objects.
 You can use the `dumpheap` command again with the method table (MT) to get a list of all the `String` instances:
 
 ```console
-> dumpheap -mt 00007faddaa50f90
+> dumpheap -mt 00007f6c1dc00f90
 
          Address               MT     Size
 ...

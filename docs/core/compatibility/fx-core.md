@@ -2,7 +2,7 @@
 title: Breaking changes - .NET Framework to .NET Core
 titleSuffix: ""
 description: Lists the breaking changes from .NET Framework to .NET Core 1.0 - 3.1.
-ms.date: 05/05/2020
+ms.date: 08/22/2023
 ---
 # Breaking changes for migration from .NET Framework to .NET Core
 
@@ -14,10 +14,15 @@ If you're migrating an app from .NET Framework to .NET Core versions 1.0 through
 ## Core .NET libraries
 
 - [Change in default value of UseShellExecute](#change-in-default-value-of-useshellexecute)
+- [IDispatchImplAttribute API is removed](#net-8)
 - [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](#unauthorizedaccessexception-thrown-by-filesysteminfoattributes)
 - [Handling corrupted-process-state exceptions is not supported](#handling-corrupted-state-exceptions-is-not-supported)
 - [UriBuilder properties no longer prepend leading characters](#uribuilder-properties-no-longer-prepend-leading-characters)
 - [Process.StartInfo throws InvalidOperationException for processes you didn't start](#processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start)
+
+### .NET 8
+
+[IDispatchImplAttribute API is removed](interop/8.0/idispatchimplattribute-removed.md)
 
 ### .NET Core 2.1
 

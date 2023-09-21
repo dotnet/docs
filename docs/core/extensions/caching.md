@@ -1,9 +1,9 @@
 ---
 title: Caching in .NET
-description: Learn how to use various in-memory and distributed caching mechanisms in .NET.
+description: Discover effective ways to implement in-memory and distributed caching in .NET. Boost app performance and scalability with .NET caching.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/09/2022
+ms.date: 06/23/2023
 ---
 
 # Caching in .NET
@@ -47,7 +47,7 @@ Setting an expiration will cause entries in the cache to be *evicted* if they're
 
 ### In-memory cache example
 
-To use the default <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache> implementation, call the <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddMemoryCache%2A> extension method to register all the required services with DI. In the following code sample, the generic host is used to expose the <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureServices%2A> functionality:
+To use the default <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache> implementation, call the <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddMemoryCache%2A> extension method to register all the required services with DI. In the following code sample, the generic host is used to expose DI functionality:
 
 :::code source="snippets/caching/memory-apis/Program.cs" range="1-7" highlight="6":::
 
@@ -217,17 +217,20 @@ In the preceding C# code:
 
 Consumers of this service are free to call `GetPhotosAsync` method, and handle photos accordingly. No `HttpClient` is required as the cache contains the photos.
 
+The asynchronous signal is based on an encapsulated <xref:System.Threading.SemaphoreSlim> instance, within a generic-type constrained singleton. The `CacheSignal<T>` relies on an instance of `SemaphoreSlim`:
+
+:::code source="snippets/caching/memory-worker/CacheSignal.cs":::
+
+In the preceding C# code, the decorator pattern is used to wrap an instance of the `SemaphoreSlim`. Since the `CacheSignal<T>` is registered as a singleton, it can be used across all service lifetimes with any generic type &mdash; in this case, the `Photo`. It is responsible for signaling the seeding of the cache.
+
 The `CacheWorker` is a subclass of <xref:Microsoft.Extensions.Hosting.BackgroundService>:
 
 :::code source="snippets/caching/memory-worker/CacheWorker.cs":::
 
-> [!IMPORTANT]
-> You need to `override` <xref:Microsoft.Extensions.Hosting.BackgroundService.StartAsync%2A?displayProperty=nameWithType> and call `await _cacheSignal.WaitAsync()` in order to prevent a race condition between the starting of the `CacheWorker` and a call to `PhotoService.GetPhotosAsync`.
-
 In the preceding C# code:
 
-- The constructor requires an `ILogger`, `HttpClient`, `CacheSignal<Photo>`, and `IMemoryCache`.
-- The defines an `_updateInterval` of three hours.
+- The constructor requires an `ILogger`, `HttpClient`, and `IMemoryCache`.
+- The `_updateInterval` is defined for three hours.
 - The `ExecuteAsync` method:
   - Loops while the app is running.
   - Makes an HTTP request to `"https://jsonplaceholder.typicode.com/photos"`, and maps the response as an array of `Photo` objects.
@@ -236,11 +239,7 @@ In the preceding C# code:
   - The call to <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> is awaited, given the update interval.
   - After delaying for three hours, the cache is again updated.
 
-The asynchronous signal is based on an encapsulated <xref:System.Threading.SemaphoreSlim> instance, within a generic-type constrained singleton. The `CacheSignal<T>` relies on an instance of `SemaphoreSlim`:
-
-:::code source="snippets/caching/memory-worker/CacheSignal.cs":::
-
-In the preceding C# code, the decorator pattern is used to wrap an instance of the `SemaphoreSlim`. Since the `CacheSignal<T>` is registered as a singleton, it can be used across all service lifetimes with any generic type &mdash; in this case, the `Photo`. It is responsible for signaling the seeding of the cache.
+Consumers in the same process could ask the `IMemoryCache` for the photos, but the `CacheWorker` is responsible for updating the cache.
 
 ## Distributed caching
 

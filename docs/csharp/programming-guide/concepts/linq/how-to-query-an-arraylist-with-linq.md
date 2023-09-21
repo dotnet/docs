@@ -81,6 +81,3 @@ namespace NonGenericLINQ
 */  
 ```  
   
-## See also
-
-- [LINQ to Objects (C#)](./linq-to-objects.md)

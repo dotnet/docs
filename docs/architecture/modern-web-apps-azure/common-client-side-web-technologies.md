@@ -196,8 +196,6 @@ Frameworks continue to evolve with breakneck speed. Use the considerations liste
 > [https://learn.microsoft.com/aspnet/core/client-side/](/aspnet/core/client-side/)
 > - **jQuery**  
 > <https://jquery.com/>
-> - **jQuery vs AngularJS**  
-> <https://www.airpair.com/angularjs/posts/jquery-angularjs-comparison-migration-walkthrough>
 > - **Angular**  
 > <https://angular.io/>
 > - **React**  

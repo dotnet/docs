@@ -1,13 +1,13 @@
 ---
 title: .NET (and .NET Core) - introduction and overview
 description: Learn about .NET (and .NET Core). .NET is a free, open-source development platform for building many kinds of apps.
-ms.date: 11/08/2022
+ms.date: 03/24/2023
 ms.custom: "updateeachrelease"
 recommendations: false
 ---
 # What is .NET? Introduction and overview
 
-[.NET is a free](https://dotnet.microsoft.com/download/), cross-platform, [open source developer platform](https://github.com/dotnet/core) for building many kinds of applications. .NET is built on a [high-performance runtime](https://devblogs.microsoft.com/dotnet/category/performance/) that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/).
+[.NET is a free](https://dotnet.microsoft.com/download/), cross-platform, [open-source developer platform](https://github.com/dotnet/core) for building many kinds of applications. .NET is built on a [high-performance runtime](https://devblogs.microsoft.com/dotnet/category/performance/) that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/).
 
 **Cloud apps**
 
@@ -39,9 +39,9 @@ recommendations: false
 
 .NET features allow developers to productively write reliable and performant code.
 
-* [Asynchronous code](../csharp/programming-guide/concepts/async/index.md)
+* [Asynchronous code](../csharp/asynchronous-programming/index.md)
 * [Attributes](../standard/attributes/index.md)
-* [Reflection](../csharp/programming-guide/concepts/reflection.md)
+* [Reflection](/dotnet/csharp/advanced-topics/reflection-and-attributes/)
 * [Code analyzers](../fundamentals/code-analysis/overview.md)
 * [Delegates and lambdas](../standard/delegates-lambdas.md)
 * [Events](../standard/events/index.md)
@@ -49,7 +49,7 @@ recommendations: false
 * [Garbage collection](../standard/automatic-memory-management.md)
 * [Generic types](../standard/generics.md)
 * [LINQ (Language Integrated Query)](../standard/linq/index.md).
-* [Parallel programming](../standard/parallel-programming/index.md)
+* [Parallel programming](../standard/parallel-programming/index.md) and [Managed threading](../standard/threading/managed-threading-basics.md)
 * Type inference - [C#](../csharp/fundamentals/types/index.md#specifying-types-in-variable-declarations), [F#](../fsharp/language-reference/type-inference.md), [Visual Basic](../visual-basic/programming-guide/language-features/variables/local-type-inference.md).
 * [Type system](../standard/base-types/common-type-system.md)
 * [Unsafe code](../csharp/language-reference/unsafe-code.md)
@@ -79,28 +79,20 @@ Console.WriteLine("Hello, World!");
 
 The app can be built and run with the [.NET CLI](tools/index.md):
 
-```bash
-% dotnet run
-Hello, World!
-```
-
-It can also be built and run as two separate steps. The following example is for an app that is named *app*:
-
-```bash
-% dotnet build
-% ./bin/Debug/net6.0/app 
+```dotnetcli
+dotnet run
 Hello, World!
 ```
 
 ## Binary distributions
 
-* [.NET SDK](sdk.md) -- Set of tools, libraries, and runtimes for development, building, and testing apps.
-* [.NET Runtimes](https://dotnet.microsoft.com/download/dotnet) -- Set of runtimes and libraries, for running apps.
+* [.NET SDK](sdk.md): Set of tools, libraries, and runtimes for development, building, and testing apps.
+* [.NET Runtimes](https://dotnet.microsoft.com/download/dotnet): Set of runtimes and libraries, for running apps.
 
 You can download .NET from:
 
-* [The Microsoft download site](https://dotnet.microsoft.com/download/).
-* [Containers](https://mcr.microsoft.com/catalog?search=dotnet/).
+* [The Microsoft download site](https://dotnet.microsoft.com/download).
+* [Containers](https://mcr.microsoft.com/catalog?search=dotnet).
 * [Linux package managers](install/linux.md).
 
 ## Free and open source
@@ -145,14 +137,14 @@ The runtime is designed to support multiple programming languages. C#, F#, and V
 * [C#](../csharp/index.yml) is a modern, object-oriented, and type-safe programming language. It has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers.
 
 * [F#](../fsharp/index.yml) is an interoperable programming language for writing succinct, robust, and performant code. F# programming is data-oriented, where code involves transforming data with functions.
-  
+
 * [Visual Basic](../visual-basic/index.yml) uses a more verbose syntax that is closer to ordinary human language. It can be an easier language to learn for people new to programming.
 
 ## Compilation
 
-.NET apps (as written in a high-level language like C#) are compiled to an [Intermediate Language (IL)](https://en.wikipedia.org/wiki/Common_Intermediate_Language). IL is a compact code format that can be supported on any operating system or architecture. Most .NET apps use APIs that are supported in multiple environments, requiring only the .NET runtime to run.
+.NET apps (as written in a high-level language like C#) are compiled into an [Intermediate Language (IL)](https://en.wikipedia.org/wiki/Common_Intermediate_Language). IL is a compact code format that can be supported on any operating system or architecture. Most .NET apps use APIs that are supported in multiple environments, requiring only the .NET runtime to run.
 
-IL needs to be compiled to native code in order to execute on a CPU, for example Arm64 or x64. .NET supports both Ahead-Of-Time (AOT) and Just-In-Time (JIT) compilation models.
+IL needs to be compiled to native code to execute on a CPU, for example, Arm64 or x64. .NET supports both Ahead-Of-Time (AOT) and Just-In-Time (JIT) compilation models.
 
 * On Android, macOS, and Linux, JIT compilation is the default, and AOT is optional (for example, with [ReadyToRun](deploying/ready-to-run.md)).
 * On [iOS](/xamarin/ios/), AOT is mandatory (except when running in the simulator).
@@ -206,6 +198,7 @@ For more information, see the following resources:
 MSBuild and the .NET CLI can be used with various continuous integration tools and environments, such as:
 
 * [GitHub Actions](https://github.com/features/actions)
+* [GitHub Actions and .NET](../devops/github-actions-overview.md)
 * [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops)
 * [CAKE for C#](https://cakebuild.net/)
 * [FAKE for F#](https://fake.build/)
@@ -219,7 +212,7 @@ For more information, see [Use the .NET SDK in Continuous Integration (CI) envir
 * *Self-contained* apps include the .NET runtime and dependent libraries. They can be [single-file](deploying/single-file/overview.md) or multi-file. Users of the application can run it on a machine that doesn't have the .NET runtime installed. Self-contained apps always target a single operating system and architecture configuration.
 * *Framework-dependent* apps require a compatible version of the .NET runtime, typically installed globally. Framework-dependent apps can be published for a single operating system and architecture configuration or as "portable," targeting all supported configurations.
 
-.NET apps are launched with a native executable, by default. The executable is both operating system and architecture-specific. Apps can also be launched with the [`dotnet` command](tools/dotnet.md).
+.NET apps are launched with a native executable, by default. The executable is both operating-system and architecture-specific. Apps can also be launched with the [`dotnet` command](tools/dotnet.md).
 
 Apps can be [deployed in containers](docker/introduction.md). Microsoft provides [container images](https://mcr.microsoft.com/catalog?search=dotnet) for various target environments.
 

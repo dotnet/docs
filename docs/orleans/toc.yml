@@ -8,12 +8,14 @@ items:
         href: overview.md
       - name: Benefits
         href: benefits.md
-      - name: What's new
-        href: whats-new-in-orleans.md
+      - name: "Migrate from Orleans 3.x to 7.0"
+        href: migration-guide.md
   - name: Quickstarts
     items:
       - name: Build your first Orleans app
         href: quickstarts/build-your-first-orleans-app.md
+      - name: Deploy and scale an Orleans app on Azure
+        href: quickstarts/deploy-scale-orleans-on-azure.md
   - name: Grains
     items:
       - name: Develop grains
@@ -22,12 +24,14 @@ items:
         href: grains/grain-identity.md
       - name: Grain placement
         href: grains/grain-placement.md
+      - name: Grain extensions
+        href: grains/grain-extensions.md
       - name: Timers and reminders
         href: grains/timers-and-reminders.md
       - name: Observers
         href: grains/observers.md
       - name: Request scheduling
-        href: grains/reentrancy.md
+        href: grains/request-scheduling.md
       - name: Request context
         href: grains/request-context.md
       - name: Code generation
@@ -140,22 +144,23 @@ items:
             href: host/configuration-guide/adonet-configuration.md
           - name: Serialization
             items:
-            - name: Overview
-              href: host/configuration-guide/serialization.md
-            - name: Serialization of immutable types
-              href: host/configuration-guide/serialization-immutability.md
-            - name: Configure serialization
-              href: host/configuration-guide/serialization-configuration.md
-            - name: Customize serialization
-              href: host/configuration-guide/serialization-customization.md
+              - name: Overview
+                href: host/configuration-guide/serialization.md
+              - name: Serialization of immutable types
+                href: host/configuration-guide/serialization-immutability.md
+              - name: Configure serialization
+                href: host/configuration-guide/serialization-configuration.md
+              - name: Customize serialization
+                href: host/configuration-guide/serialization-customization.md
           - name: Startup tasks
             href: host/configuration-guide/startup-tasks.md
           - name: Orleans graceful shut down
             href: host/configuration-guide/shutting-down-orleans.md
-      - name: Monitoring
+      - name: Observability
         items:
-          - name: Runtime monitoring
+          - name: Overview
             href: host/monitoring/index.md
+            displayName: zipkin,jaeger,open telemetry,opentelemetry,meter,counter,activity source,observability,monitoring,logging,metrics,telemetry,distributed tracing
           - name: Silo error code monitoring
             href: host/monitoring/silo-error-code-monitoring.md
           - name: Client error code monitoring
@@ -230,14 +235,6 @@ items:
         href: implementation/load-balancing.md
       - name: Unit testing
         href: implementation/testing.md
-  - name: Migration guides
-    items:
-      - name: Migrate from Orleans 1.5
-        href: migration/migration-1.5.md
-      - name: Migrate from Orleans 1.5 in Azure Cloud Services
-        href: migration/migration-azure-2.0.md
-      - name: Code generation
-        href: migration/codegen.md
   - name: Resources
     items:
       - name: Frequently asked questions

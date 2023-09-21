@@ -1,12 +1,10 @@
 ﻿using DependencyInjection.Example;
 
-var builder = Host.CreateDefaultBuilder(args);
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
-builder.ConfigureServices(
-    services =>
-        services.AddHostedService<Worker>()
-            .AddScoped<IMessageWriter, MessageWriter>());
+builder.Services.AddHostedService<Worker>();
+builder.Services.AddSingleton<IMessageWriter, MessageWriter>();
 
-using var host = builder.Build();
+using IHost host = builder.Build();
 
 host.Run();

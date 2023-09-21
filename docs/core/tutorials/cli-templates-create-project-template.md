@@ -12,8 +12,6 @@ recommendations: false
 
 With .NET, you can create and deploy templates that generate projects, files, even resources. This tutorial is part two of a series that teaches you how to create, install, and uninstall, templates for use with the `dotnet new` command.
 
-You can view the completed template in the [.NET Samples GitHub repository](https://github.com/dotnet/samples/tree/main/core/tutorials/cli-templates-create-item-template).
-
 > [!TIP]
 > The official .NET templates that are shipped with the .NET SDK can be found in the following repositories:
 >
@@ -44,6 +42,8 @@ In this part of the series you'll learn how to:
 * Complete [part 1](cli-templates-create-item-template.md) of this tutorial series.
 * Open a terminal and navigate to the _working\templates_ folder.
 
+[!INCLUDE [dotnet6-syntax-note](includes/dotnet6-syntax-note.md)]
+
 ## Create a project template
 
 Project templates produce ready-to-run projects that make it easy for users to start with a working set of code. .NET includes a few project templates such as a console application or a class library. In this example, you'll create a new console project that replaces the standard "Hello World" console output with one that runs asynchronously.
@@ -60,7 +60,7 @@ working
 
 ## Modify Program.cs
 
-Open up the _program.cs_ file. The standard console project doesn't asynchronously write to the console output, so let's add that. Change the code to the following and save the file:
+Open up the _Program.cs_ file. The standard console project doesn't asynchronously write to the console output, so let's add that. Change the code to the following and save the file:
 
 ```csharp
 await Console.Out.WriteAsync("Hello World with C#");
@@ -112,6 +112,7 @@ Open the _template.json_ with your favorite text editor and paste in the followi
   "identity": "ExampleTemplate.AsyncProject",
   "name": "Example templates: async project",
   "shortName": "consoleasync",
+  "sourceName":"ExampleTemplate.AsyncProject",
   "tags": {
     "language": "C#",
     "type": "project"
@@ -120,6 +121,8 @@ Open the _template.json_ with your favorite text editor and paste in the followi
 ```
 
 This config file contains all of the settings for your template. You can see the basic settings such as `name` and `shortName` but also there's a `tags/type` value that's set to `project`. This designates your template as a project template. There's no restriction on the type of template you create. The `item` and `project` values are common names that .NET recommends so that users can easily filter the type of template they're searching for.
+
+The `sourceName` item is what is replaced when the user uses the template. The value of `sourceName` in the config file, is searched for in any file name and file content. In this case test will replace `consoleasync` in the name of the .csproj file. By default, this value uses the name of the current folder. When the `-n` or `--name` parameter is passed with the `dotnet new` command, the value provided is used instead of the current folder.
 
 The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the json file with the `classifications` tags list. They're two different things unfortunately named similarly. The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
 

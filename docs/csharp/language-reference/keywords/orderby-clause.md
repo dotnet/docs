@@ -36,4 +36,4 @@ At compile time, the `orderby` clause is translated to a call to the <xref:Syste
 - [Query Keywords (LINQ)](query-keywords.md)
 - [LINQ in C#](../../linq/index.md)
 - [group clause](group-clause.md)
-- [Language Integrated Query (LINQ)](../../programming-guide/concepts/linq/index.md)
+- [Language Integrated Query (LINQ)](/dotnet/csharp/linq/)

@@ -46,7 +46,7 @@ Because `System.Drawing.Common` was designed to be a thin wrapper over Windows t
 
 `libgdiplus` is the main provider of the cross-platform implementation of `System.Drawing.Common` on the native side. `libgdiplus` is effectively a reimplementation of the parts of Windows that `System.Drawing.Common` depends on. That implementation makes `libgdiplus` a non-trivial component. It's around 30,000 lines of C code that's largely untested, and it lacks a lot of functionality. `libgdiplus` also has numerous external dependencies for image processing and text rendering, such as `cairo`, `pango`, and other native libraries. Those dependencies make maintaining and shipping the component even more challenging. Since the inclusion of the Mono cross-platform implementation, we have redirected numerous issues to `libgdiplus` that never got fixed. In comparison, other external dependencies we have taken, such as `icu` or `openssl`, are high-quality libraries. It's not viable to get `libgdiplus` to the point where its feature set and quality is on par with the rest of the .NET stack.
 
-From analysis of NuGet packages, we've observed that `System.Drawing.Common` is used cross-platform mostly for image manipulation, such as QR code generators and text rendering. We haven't noticed heavy graphics usage, as our cross-platform graphics support is incomplete. The usages we see of `System.Drawing.Common` in non-Windows environments are typically well supported with SkiaSharp.
+From analysis of NuGet packages, we've observed that `System.Drawing.Common` is used cross-platform mostly for image manipulation, such as QR code generators and text rendering. We haven't noticed heavy graphics usage, as our cross-platform graphics support is incomplete. The usages we see of `System.Drawing.Common` in non-Windows environments are typically well supported with SkiaSharp and ImageSharp.
 
 `System.Drawing.Common` will continue to evolve only in the context of Windows Forms and GDI+.
 
@@ -55,7 +55,8 @@ From analysis of NuGet packages, we've observed that `System.Drawing.Common` is 
 To use these APIs for cross-platform apps, migrate to one of the following libraries:
 
 - [SkiaSharp](https://github.com/mono/SkiaSharp)
-- [Microsoft.Maui.Graphics](https://github.com/dotnet/Microsoft.Maui.Graphics)
+- [ImageSharp](https://sixlabors.com/products/imagesharp) (tiered license)
+- [Microsoft.Maui.Graphics](/dotnet/maui/user-interface/graphics/)
 
 Alternatively, you can enable support for non-Windows platforms in .NET 6 by setting the `System.Drawing.EnableUnixSupport` [runtime configuration switch](../../../runtime-config/index.md) to `true` in the *runtimeconfig.json* file.
 
@@ -84,7 +85,7 @@ Alternatively, you can enable support for non-Windows platforms in .NET 6 by set
 > [!NOTE]
 >
 > - This configuration switch was added to give cross-platform apps that depend heavily on this package time to migrate to more modern libraries. However, non-Windows bugs will not be fixed.
-> - This switch is only available in .NET 6 and was removed in .NET 7.
+> - This switch is only available in .NET 6 and was removed in .NET 7. For more information, see [System.Drawing.Common config switch removed](../7.0/system-drawing.md).
 
 ## Affected APIs
 

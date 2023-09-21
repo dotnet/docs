@@ -3,14 +3,14 @@ title: TLS/SSL best practices
 description: Learn the best practices when using SslStream in .NET.
 author: rzikm
 ms.author: radekzikmund
-ms.date: 1/9/2023
+ms.date: 03/13/2023
 ---
 
 # TLS/SSL best practices
 
 TLS (Transport Layer Security) is a cryptographic protocol designed to secure communication between two computers over the internet. The TLS protocol is exposed in .NET via the <xref:System.Net.Security.SslStream> class.
 
-This article presents best practices for setting up secure communication between client and server and assumes use of .NET. For best practices with .NET Framework, see [Transport Layer Security (TLS) best practices with the .NET Framework](/dotnet/framework/network-programming/tls).
+This article presents best practices for setting up secure communication between client and server and assumes use of .NET. For best practices with .NET Framework, see [Transport Layer Security (TLS) best practices with the .NET Framework](../../framework/network-programming/tls.md).
 
 ## Select TLS version
 

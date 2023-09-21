@@ -25,7 +25,7 @@ For more information, see [Extended Protection for Authentication Overview](exte
 
     1. Open the IIS manager -> Server certificates (from the feature view tab).
 
-    2. For the purpose of testing this sample, you can create a self-signed certificate. (If you don’t want Internet Explorer to prompt you about the certificate not being secure, you can install it in the Trusted Certificate Root authority store).
+    2. For the purpose of testing this sample, you can create a self-signed certificate. (If you don’t want the web browser to prompt you about the certificate not being secure, you can install it in the Trusted Certificate Root authority store).
 
 5. Go to the Actions pane for the Default Web site. Click Edit Site -> Bindings. Add HTTPS as a type if it is not already present, with port number 443, and assign the SSL certificate created in the above step.
 

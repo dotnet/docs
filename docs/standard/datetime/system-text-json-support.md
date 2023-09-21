@@ -5,7 +5,6 @@ author: layomia
 ms.author: laakinri
 ms.date: 01/11/2023
 ms.custom: devdivchpfy22
-zone_pivot_groups: dotnet-version
 helpviewer_keywords:
   - "JSON, Serializer, Utf8"
   - "JSON DateTime, JSON DateTimeOffset"
@@ -21,8 +20,6 @@ The `System.Text.Json` library parses and writes <xref:System.DateTime> and <xre
 [Converters](xref:System.Text.Json.Serialization.JsonConverter%601) provide custom support for serializing and deserializing with <xref:System.Text.Json.JsonSerializer>. You can also use <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter> to implement custom support.
 
 ## Support for the ISO 8601-1:2019 format
-
-::: zone pivot="dotnet-6-0,dotnet-7-0,dotnet-5-0,dotnet-core-3-1"
 
 The <xref:System.Text.Json.JsonSerializer>, <xref:System.Text.Json.Utf8JsonReader>, <xref:System.Text.Json.Utf8JsonWriter>,
 and <xref:System.Text.Json.JsonElement> types parse and write <xref:System.DateTime> and <xref:System.DateTimeOffset>
@@ -63,14 +60,9 @@ Attempting to read non-compliant formats with <xref:System.Text.Json.Utf8JsonRea
 
 :::code language="csharp" source="snippets/system-text-json-support/csharp/reading-with-utf8jsonreader-error/Program.cs":::
 
-::: zone-end
-::: zone pivot="dotnet-7-0"
-
 ## Serialize DateOnly and TimeOnly properties
 
 [!INCLUDE [dateonly-and-timeonly-serialization-cs](includes/dateonly-and-timeonly-serialization-cs.md)]
-
-::: zone-end
 
 ## Custom support for <xref:System.DateTime> and <xref:System.DateTimeOffset>
 
@@ -125,9 +117,9 @@ the converter successfully parses the data using <xref:System.DateTime.Parse(Sys
 
 The following converters handle Unix epoch format with or without a time zone offset (values such as `/Date(1590863400000-0700)/` or `/Date(1590863400000)/`):
 
-:::code language="csharp" source="../serialization/system-text-json/snippets/system-text-json-how-to-5-0/csharp/CustomConverterUnixEpochDate.cs" id="ConverterOnly":::
+:::code language="csharp" source="../serialization/system-text-json/snippets/how-to-5-0/csharp/CustomConverterUnixEpochDate.cs" id="ConverterOnly":::
 
-:::code language="csharp" source="../serialization/system-text-json/snippets/system-text-json-how-to-5-0/csharp/CustomConverterUnixEpochDateNoZone.cs" id="ConverterOnly":::
+:::code language="csharp" source="../serialization/system-text-json/snippets/how-to-5-0/csharp/CustomConverterUnixEpochDateNoZone.cs" id="ConverterOnly":::
 
 ### When writing with <xref:System.Text.Json.Utf8JsonWriter>
 
@@ -155,7 +147,7 @@ then parsed using <xref:System.DateTimeOffset.ParseExact(System.String,System.St
 
 ### Date and time components
 
-The extended ISO 8601-1:2019 profile implemented in <xref:System.Text.Json> defines the following components for
+The extended ISO 8601-1:2019 profile implemented in <xref:System.Text.Json?displayProperty=fullName> defines the following components for
 date and time representations. These components are used to define various supported levels of granularity
 when parsing and formatting <xref:System.DateTime> and <xref:System.DateTimeOffset> representations.
 

@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with dotnet publish
 description: In this tutorial, you'll learn how to containerize a .NET application with dotnet publish.
-ms.date: 01/04/2023
+ms.date: 02/08/2023
 ms.topic: tutorial
 ---
 
@@ -73,17 +73,20 @@ The worker template loops indefinitely. Use the cancel command <kbd>Ctrl+C</kbd>
 
 ## Add NuGet package
 
-The [Microsoft.NET.Build.Containers NuGet package](https://libraries.io/nuget/Microsoft.NET.Build.Containers) package is currently required to publish an app as a container. To add the `Microsoft.NET.Build.Containers` NuGet package to the worker template, run the following [dotnet add package](../tools/dotnet-add-package.md) command:
+The [Microsoft.NET.Build.Containers](https://www.nuget.org/packages/Microsoft.NET.Build.Containers) NuGet package is currently required to publish non-web projects as a container. To add the `Microsoft.NET.Build.Containers` NuGet package to the worker template, run the following [dotnet add package](../tools/dotnet-add-package.md) command:
 
 ```dotnetcli
 dotnet add package Microsoft.NET.Build.Containers
 ```
 
+> [!TIP]
+> If you're building a web app and using .NET SDK 7.0.300 or later, then the package isn't required&mdash;the SDK contains the same functionality out of the box.
+
 ## Set the container image name
 
 There are various configuration options available when publishing an app as a container. For more information, see [Configure container image](#configure-container-image).
 
-By default, the container image name is the `AssemblyName` of the project. If that name is invalid as a container image name, you can override it by specifying a `ContainerImageName` as shown in the following:
+By default, the container image name is the `AssemblyName` of the project. If that name is invalid as a container image name, you can override it by specifying a `ContainerImageName` as shown in the following project file:
 
 :::code language="xml" source="snippets/Worker/DotNet.ContainerImage.csproj" highlight="8":::
 
@@ -112,27 +115,25 @@ The preceding .NET CLI command publishes the app as a container:
 > [!TIP]
 > Depending on the type of app you're containerizing, the command-line switches (options) might vary. For example, the `/t:PublishContainer` argument is only required for non-web .NET apps, such as `console` and `worker` templates. For web templates, replace the `/t:PublishContainer` argument with `-p:PublishProfile=DefaultContainer`. For more information, see [.NET SDK container builds, issue #141](https://github.com/dotnet/sdk-container-builds/issues/141).
 
-The command will produce output similar to the following:
+The command produces output similar to the following:
 
 ```dotnetcli
 Determining projects to restore...
   All projects are up-to-date for restore.
   DotNet.ContainerImage -> .\Worker\bin\Release\net7.0\linux-x64\DotNet.ContainerImage.dll
   DotNet.ContainerImage -> .\Worker\bin\Release\net7.0\linux-x64\publish\
-  Pushed container 'dotnet-worker-image:1.0.0' to registry 'docker://'
+  Building image 'dotnet-worker-image' with tags 1.0.0 on top of base image mcr.microsoft.com/dotnet/aspnet:7.0
+  Pushed container 'dotnet-worker-image:1.0.0' to Docker daemon
 ```
 
-This command compiles your worker app to the *publish- folder and pushes the container to your local docker registry.
+This command compiles your worker app to the *publish* folder and pushes the container to your local docker registry.
 
 ## Configure container image
 
-You can control many aspects of the generated container through MSBuild properties. In general, if you could use a command in a _Dockerfile_ to set some configuration, you can do the same via MSBuild.
+You can control many aspects of the generated container through MSBuild properties. In general, if you can use a command in a _Dockerfile_ to set some configuration, you can do the same via MSBuild.
 
 > [!NOTE]
 > The only exceptions to this are `RUN` commands. Due to the way containers are built, those cannot be emulated. If you need this functionality, you'll need to use a _Dockerfile_ to build your container images.
-
-> [!IMPORTANT]
-> Currently, only Linux containers are supported.
 
 ### `ContainerBaseImage`
 
@@ -147,26 +148,53 @@ The tag of the image is inferred to be the numeric component of your chosen `Tar
 If you set a value here, you should set the fully qualified name of the image to use as the base, including any tag you prefer:
 
 ```xml
-<ContainerBaseImage>mcr.microsoft.com/dotnet/runtime:6.0</ContainerBaseImage>
+<PropertyGroup>
+    <ContainerBaseImage>mcr.microsoft.com/dotnet/runtime:6.0</ContainerBaseImage>
+</PropertyGroup>
+```
+
+### `ContainerRuntimeIdentifier`
+
+The container runtime identifier property controls the operating system and architecture used by your container if your [`ContainerBaseImage`](#containerbaseimage) supports more than one platform. For example, the `mcr.microsoft.com/dotnet/runtime` image currently supports `linux-x64`, `linux-arm`, `linux-arm64` and `win10-x64` images all behind the same tag, so the tooling needs a way to be told which of these versions you intend to use.  By default, this is set to the value of the `RuntimeIdentifier` that you chose when you published the container.  This property rarely needs to be set explicitly - instead use the `-r` option to the `dotnet publish` command.  If the image you've chosen doesn't support the `RuntimeIdentifier` you've chosen, you'll get an error that describes the RuntimeIdentifiers the image does support.
+
+You can always set the `ContainerBaseImage` property to a fully qualified image name, including the tag, to avoid needing to use this property at all.
+
+```xml
+<PropertyGroup>
+    <ContainerRuntimeIdentifier>linux-arm64</ContainerRuntimeIdentifier>
+</PropertyGroup>
 ```
 
 ### `ContainerRegistry`
 
-The container registry property controls the destination registry, the place that the newly created image will be pushed to. Be default, it's pushed to the local Docker daemon (`docker://`), but you can also specify a remote registry. For example, consider the following XML example:
+The container registry property controls the destination registry, the place that the newly created image will be pushed to. Be default it's pushed to the local Docker daemon, but you can also specify a remote registry.  When using a remote registry that requires authentication, you authenticate using the well-known `docker login` mechanisms. See [Authenticating to container registries](https://aka.ms/dotnet/containers/auth) for more details. For a concrete example of using this property, consider the following XML example:
 
 ```xml
-<ContainerRegistry>registry.mycorp.com:1234</ContainerRegistry>
+<PropertyGroup>
+    <ContainerRegistry>registry.mycorp.com:1234</ContainerRegistry>
+</PropertyGroup>
 ```
 
-> [!IMPORTANT]
-> There is no authentication currently supported. This is planned for [a future release](https://github.com/dotnet/sdk-container-builds/issues/70), so make sure you're pointing to a local Docker daemon.
+This tooling supports publishing to any registry that supports the [Docker Registry HTTP API V2](https://docs.docker.com/registry/spec/api/).  This includes the following registries explicitly (and likely many more implicitly):
+
+* [Azure Container Registry](https://azure.microsoft.com/products/container-registry)
+* [Amazon Elastic Container Registry](https://aws.amazon.com/ecr/)
+* [Google Artifact Registry](https://cloud.google.com/artifact-registry)
+* [Docker Hub](https://hub.docker.com/)
+* [GitHub Packages](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
+* [GitLab-hosted Container Registry](https://docs.gitlab.com/ee/user/packages/container_registry/)
+* [Quay.io](https://quay.io/)
+
+For notes on working with these registries, see the [registry-specific notes](https://aka.ms/dotnet/containers/auth#notes-for-specific-registries).
 
 ### `ContainerImageName`
 
-The container image name controls the name of the image itself, e.g `dotnet/runtime` or `my-app`. By default, the `AssemblyName` of the project is used.
+The container image name controls the name of the image itself, for example, `dotnet/runtime` or `my-app`. By default, the `AssemblyName` of the project is used.
 
 ```xml
-<ContainerImageName>my-app</ContainerImageName>
+<PropertyGroup>
+    <ContainerImageName>my-app</ContainerImageName>
+</PropertyGroup>
 ```
 
 Image names consist of one or more slash-delimited segments, each of which can only contain lowercase alphanumeric characters, periods, underscores, and dashes, and must start with a letter or number. Any other characters will result in an error being thrown.
@@ -176,13 +204,17 @@ Image names consist of one or more slash-delimited segments, each of which can o
 The container image tag property controls the tags that are generated for the image. Tags are often used to refer to different versions of an application, but they can also refer to different operating system distributions, or even different configurations. By default, the `Version` of the project is used as the tag value. To override the default, specify either of the following:
 
 ```xml
-<ContainerImageTag>1.2.3-alpha2</ContainerImageTag>
+<PropertyGroup>
+    <ContainerImageTag>1.2.3-alpha2</ContainerImageTag>
+</PropertyGroup>
 ```
 
 To specify multiple tags, use a semicolon-delimited set of tags in the `ContainerImageTags` property, similar to setting multiple `TargetFrameworks`:
 
 ```xml
-<ContainerImageTags>1.2.3-alpha2;latest</ContainerImageTags>
+<PropertyGroup>
+    <ContainerImageTags>1.2.3-alpha2;latest</ContainerImageTags>
+</PropertyGroup>
 ```
 
 Tags can only contain up to 127 alphanumeric characters, periods, underscores, and dashes. They must start with an alphanumeric character or an underscore. Any other form will result in an error being thrown.
@@ -194,7 +226,9 @@ The container working directory node controls the working directory of the conta
 By default, the `/app` directory value is used as the working directory.
 
 ```xml
-<ContainerWorkingDirectory>/bin</ContainerWorkingDirectory>
+<PropertyGroup>
+    <ContainerWorkingDirectory>/bin</ContainerWorkingDirectory>
+</PropertyGroup>
 ```
 
 ### `ContainerPort`
@@ -280,8 +314,8 @@ Consider the following example .NET project item group:
 
 ```xml
 <ItemGroup>
-  <!-- Assuming the ContainerEntrypoint defined above, 
-       this would be the way to update the database by 
+  <!-- Assuming the ContainerEntrypoint defined above,
+       this would be the way to update the database by
        default, but let the user run a different EF command. -->
   <ContainerEntrypointArgs Include="database" />
   <ContainerEntrypointArgs Include="update" />
@@ -301,9 +335,9 @@ For more information, see [Implement conventional labels on top of existing labe
 
 ## Clean up resources
 
-In this article, you published a .NET worker as a container image. If you want, delete this resource. Use the `docker images` command to see a list of images installed.
+In this article, you published a .NET worker as a container image. If you want, delete this resource. Use the `docker images` command to see a list of installed images.
 
-```dockerfile
+```console
 docker images
 ```
 
@@ -317,7 +351,7 @@ dotnet-worker-image   1.0.0     25aeb97a2e21   12 seconds ago   191MB
 > [!TIP]
 > Image files can be large. Typically, you would remove temporary containers you created while testing and developing your app. You usually keep the base images with the runtime installed if you plan on building other images based on that runtime.
 
-To delete the image, copy the image id and run the `docker image rm` command:
+To delete the image, copy the image ID and run the `docker image rm` command:
 
 ```console
 docker image rm 25aeb97a2e21

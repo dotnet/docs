@@ -22,7 +22,7 @@ jobs:
 
     # Checkout the repo into the workspace within the VM
     steps:
-      - uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c
+      - uses: actions/checkout@v4.0.0
       # - name: Setup .NET
       #   uses: actions/setup-dotnet@4d4a70f4a5b2a5a5329f13be4ac933f2c9206ac0
       #   with:
@@ -44,8 +44,9 @@ jobs:
           dependabot-yml-path: ".github/dependabot.yml"
       - name: Create pull request
         if: github.event_name == 'workflow_dispatch' || github.repository_owner == 'dotnet'
-        uses: peter-evans/create-pull-request@2b011faafdcbc9ceb11414d64d0573f37c774b04
+        uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38
         with:
+          branch: create-dependabotconfig-pull-request/patch
           title: "Update dependabot.yml - automatically."
           body: ".NET dependabot-bot automated PR. 🤖"
           commit-message: ".NET dependabot-bot automated PR."

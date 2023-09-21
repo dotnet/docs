@@ -1,6 +1,6 @@
 ---
 title: Database errors
-ms.date: 12/13/2019
+ms.date: 06/06/2023
 description: Describes how database errors and retires are handled by the library.
 ---
 # Database errors
@@ -18,11 +18,11 @@ Consider carefully how your app will handle these errors.
 
 ## Locking, retries, and timeouts
 
-SQLite is aggressive when it comes to locking tables and database files. If your app enables any concurrent database access, you'll likely encounter busy and locked errors. You can mitigate many errors by using a [shared cache](connection-strings.md#cache) and [write-ahead logging](async.md).
+SQLite is aggressive when it comes to locking tables and database files. If your app enables any concurrent database access, you'll likely encounter busy and locked errors. You can mitigate many errors by using [write-ahead logging](async.md).
 
 Whenever Microsoft.Data.Sqlite encounters a busy or locked error, it will automatically retry until it succeeds or the command timeout is reached.
 
-You can increase the timeout of command by setting <xref:Microsoft.Data.Sqlite.SqliteCommand.CommandTimeout%2A>. The default timeout is 30 seconds. A value of `0` means no timeout.
+You can increase the timeout of a command by setting <xref:Microsoft.Data.Sqlite.SqliteCommand.CommandTimeout%2A>. The default timeout is 30 seconds. A value of `0` means no timeout.
 
 ```csharp
 // Retry for 60 seconds while locked

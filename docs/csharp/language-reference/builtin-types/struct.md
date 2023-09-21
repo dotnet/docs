@@ -1,14 +1,13 @@
 ---
 title: "Structure types - C# reference"
 description: Learn about the struct type in C#
-ms.date: 09/15/2022
-f1_keywords: 
+ms.date: 04/05/2023
+f1_keywords:
   - "struct_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "struct keyword [C#]"
   - "struct type [C#]"
   - "structure type [C#]"
-ms.assetid: ff3dd9b7-dc93-4720-8855-ef5558f65c7c
 ---
 # Structure types (C# reference)
 
@@ -16,7 +15,7 @@ A *structure type* (or *struct type*) is a [value type](value-types.md) that can
 
 [!code-csharp[struct example](snippets/shared/StructType.cs#StructExample)]
 
-`ref struct` types and `readonly ref struct` types are covered in the article on [ref struct types](ref-struct.md).
+For information about `ref struct` and `readonly ref struct` types, see the [ref structure types](ref-struct.md) article.
 
 Structure types have *value semantics*. That is, a variable of a structure type contains an instance of the type. By default, variable values are copied on assignment, passing an argument to a method, and returning a method result. For structure-type variables, an instance of the type is copied. For more information, see [Value types](value-types.md).
 
@@ -44,7 +43,7 @@ The following code defines a `readonly` struct with init-only property setters, 
 
 You can also use the `readonly` modifier to declare that an instance member doesn't modify the state of a struct. If you can't declare the whole structure type as `readonly`, use the `readonly` modifier to mark the instance members that don't modify the state of the struct.
 
-Within a `readonly` instance member, you can't assign to structure's instance fields. However, a `readonly` member can call a non-`readonly` member. In that case the compiler creates a copy of the structure instance and calls the non-`readonly` member on that copy. As a result, the original structure instance isn't modified.
+Within a `readonly` instance member, you can't assign to structure's instance fields. However, a `readonly` member can call a non-`readonly` member. In that case, the compiler creates a copy of the structure instance and calls the non-`readonly` member on that copy. As a result, the original structure instance isn't modified.
 
 Typically, you apply the `readonly` modifier to the following kinds of instance members:
 
@@ -71,7 +70,7 @@ Typically, you apply the `readonly` modifier to the following kinds of instance 
 
 You can apply the `readonly` modifier to static fields of a structure type, but not any other static members, such as properties or methods.
 
-The compiler may make use of the `readonly` modifier for performance optimizations. For more information, see [Write safe and efficient C# code](../../write-safe-efficient-code.md).
+The compiler may make use of the `readonly` modifier for performance optimizations. For more information, see [Avoiding allocations](../../advanced-topics/performance/index.md).
 
 ## Nondestructive mutation
 
@@ -83,6 +82,28 @@ Beginning with C# 10, you can use the [`with` expression](../operators/with-expr
 
 Beginning with C# 10, you can define record structure types. Record types provide built-in functionality for encapsulating data. You can define both `record struct` and `readonly record struct` types. A record struct can't be a [`ref struct`](ref-struct.md). For more information and examples, see [Records](record.md).
 
+## Inline arrays
+
+Beginning with C# 12, you can declare *inline arrays* as a `struct` type:
+
+:::code language="csharp" source="snippets/shared/StructType.cs" id="DeclareInlineArray":::
+
+An inline array is a structure that contains a contiguous block of N elements of the same type. It's a safe-code equivalent of the [fixed buffer](../unsafe-code.md#fixed-size-buffers) declaration available only in unsafe code. An inline array is a `struct` with the following characteristics:
+
+- It contains a single field.
+- The struct doesn't specify an explicit layout.
+
+In addition, the compiler validates the <xref:System.Runtime.CompilerServices.InlineArrayAttribute?displayProperty=fullName> attribute:
+
+- The length must be greater than zero (`> 0`).
+- The target type must be a struct.
+
+In most cases, an inline array can be accessed like an array, both to read and write values. In addition, you can use the [range](../operators/member-access-operators.md#range-operator-) and [index](../operators/member-access-operators.md#indexer-access) operators.
+
+There are minimal restrictions on the type of the single field. It can't be a pointer type, but it can be any reference type, or any value type. You can use inline arrays with almost any C# data structure.
+
+Inline arrays are an advanced language feature. They're intended for high-performance scenarios where an inline, contiguous block of elements is faster than other alternative data structures. You can learn more about inline arrays from the [feature speclet](~/_csharplang/proposals/csharp-12.0/inline-arrays.md)
+
 ## Struct initialization and default values
 
 A variable of a `struct` type directly contains the data for that `struct`. That creates a distinction between an uninitialized `struct`, which has its default value and an initialized `struct`, which stores values set by constructing it. For example consider the following code:
@@ -91,7 +112,7 @@ A variable of a `struct` type directly contains the data for that `struct`. That
 
 As the preceding example shows, the [default value expression](../operators/default.md) ignores a parameterless constructor and produces the [default value](default-values.md) of the structure type. Structure-type array instantiation also ignores a parameterless constructor and produces an array populated with the default values of a structure type.
 
-The most common situation where you'll see default values is in arrays or in other collections where internal storage includes blocks of variables. The following example creates an array of 30 `TemperatureRange` structures, each of which has the default value:
+The most common situation where you see default values is in arrays or in other collections where internal storage includes blocks of variables. The following example creates an array of 30 `TemperatureRange` structures, each of which has the default value:
 
 ```csharp
 // All elements have default values of 0:
@@ -108,6 +129,8 @@ Beginning with C# 11, if you don't initialize all fields in a struct, the compil
 :::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializer":::
 
 Every `struct` has a `public` parameterless constructor. If you write a parameterless constructor, it must be public. If a struct declares any field initializers, it must explicitly declare a constructor. That constructor need not be parameterless. If a struct declares a field initializer but no constructors, the compiler reports an error. Any explicitly declared constructor (with parameters, or parameterless) executes all field initializers for that struct. All fields without a field initializer or an assignment in a constructor are set to the [default value](default-values.md). For more information, see the [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md) feature proposal note.
+
+Beginning with C# 12, `struct` types can define a [primary constructor](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) as part of its declaration. Primary constructors provides a concise syntax for constructor parameters that can be used throughout the `struct` body, in any member declaration for that struct.
 
 If all instance fields of a structure type are accessible, you can also instantiate it without the `new` operator. In that case you must initialize all instance fields before the first use of the instance. The following example shows how to do that:
 
@@ -127,7 +150,7 @@ Structs have most of the capabilities of a [class](../keywords/class.md) type. T
 
 ## Passing structure-type variables by reference
 
-When you pass a structure-type variable to a method as an argument or return a structure-type value from a method, the whole instance of a structure type is copied. Pass by value can affect the performance of your code in high-performance scenarios that involve large structure types. You can avoid value copying by passing a structure-type variable by reference. Use the [`ref`](../keywords/ref.md#passing-an-argument-by-reference), [`out`](../keywords/out-parameter-modifier.md), or [`in`](../keywords/in-parameter-modifier.md) method parameter modifiers to indicate that an argument must be passed by reference. Use [ref returns](../statements/jump-statements.md#the-return-statement) to return a method result by reference. For more information, see [Write safe and efficient C# code](../../write-safe-efficient-code.md).
+When you pass a structure-type variable to a method as an argument or return a structure-type value from a method, the whole instance of a structure type is copied. Pass by value can affect the performance of your code in high-performance scenarios that involve large structure types. You can avoid value copying by passing a structure-type variable by reference. Use the [`ref`](../keywords/ref.md#passing-an-argument-by-reference), [`out`](../keywords/out-parameter-modifier.md), or [`in`](../keywords/in-parameter-modifier.md) method parameter modifiers to indicate that an argument must be passed by reference. Use [ref returns](../statements/jump-statements.md#the-return-statement) to return a method result by reference. For more information, see [Avoid allocations](../../advanced-topics/performance/index.md).
 
 ## struct constraint
 

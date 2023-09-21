@@ -2,6 +2,7 @@
 title: Build ASP.NET Core applications deployed as Linux containers into AKS/Kubernetes clusters
 description: Learn about creating ASP.NET Core applications deployed as Linux containers into AKS/Kubernetes clusters
 ms.date: 12/08/2021
+ms.custon: devx-track-azurecli
 ---
 
 # Build ASP.NET Core applications deployed as Linux containers into an AKS/Kubernetes orchestrator
@@ -10,15 +11,15 @@ ms.date: 12/08/2021
 
 Azure Kubernetes Services (AKS) is Azure's managed Kubernetes orchestrations services that simplify container deployment and management.
 
-AKS main features are:
+The main features of AKS are:
 
-- An Azure-hosted control plane
-- Automated upgrades
-- Self-healing
-- User-configurable scaling
+- An Azure-hosted control plane.
+- Automated upgrades.
+- Self-healing.
+- User-configurable scaling.
 - Simpler user experience for both developers and cluster operators.
 
-The following examples explore the creation of an ASP.NET Core 6.0 application that runs on Linux and deploys to an AKS Cluster in Azure, while development is done using Visual Studio 2022 version 17.0.
+The following examples explore the creation of an ASP.NET Core 6.0 application that runs on Linux and deploys to an AKS Cluster in Azure. Development is done using Visual Studio 2022 version 17.0.
 
 ## Creating the ASP.NET Core Project using Visual Studio 2022
 
@@ -192,12 +193,12 @@ You can upload the images to the [Azure Container Registry (ACR)](https://azure.
 
 Run the following command from the **az cli**:
 
-```powershell
+```console
 az acr create --name exploredocker --resource-group explore-docker-aks-rg --sku basic --admin-enabled
 ```
 
 > [!NOTE]
-> The container registry name (e.g `exploredocker`) must be unique within Azure, and contain 5-50 alphanumeric characters. For more details, refer [Create a container registry](/azure/container-registry/container-registry-get-started-azure-cli#create-a-container-registry)
+> The container registry name (for example, `exploredocker`) must be unique within Azure and contain 5-50 alphanumeric characters. For more details, see [Create a container registry](/azure/container-registry/container-registry-get-started-azure-cli#create-a-container-registry).
 
 ### Create the image in Release mode
 
@@ -384,7 +385,7 @@ You also have to allow the AKS cluster to pull images from the ACR, using this c
 az aks update --name explore-docker-aks --resource-group explore-docker-aks-rg --attach-acr exploredocker
 ```
 
-The previous command might take a couple of minutes to complete. Then, use the `kubectl apply` command to launch the deployments, and then `kubectl get all` get list the cluster objects.
+The previous command might take a couple of minutes to complete. Then, use the `kubectl apply` command to launch the deployments, and then `kubectl get all` to list the cluster objects.
 
 ```console
 kubectl apply -f deploy-webapi.yml

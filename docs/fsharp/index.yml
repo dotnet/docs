@@ -18,6 +18,8 @@ landingContent:
         links:
           - text: "What is F#?"
             url: what-is-fsharp.md
+          - text: "F# strategy"
+            url: strategy.md
           - text: "First steps in F#"
             url: /training/modules/fsharp-first-steps/
           - text: "Install F#"
@@ -91,8 +93,6 @@ landingContent:
             url: scenarios/web-development.md
           - text: "F# for machine learning"
             url: scenarios/machine-learning.md
-          - text: "F# for Apache Spark on Azure"
-            url: using-fsharp-on-azure/apache-spark.md
           - text: "F# for deploying Azure resources"
             url: using-fsharp-on-azure/deploying-and-managing.md
       - linkListType: learn

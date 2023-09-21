@@ -1,24 +1,22 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureAppConfiguration((hostingContext, configuration) =>
-    {
-        configuration.Sources.Clear();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+builder.Configuration.Sources.Clear();
 
-        IHostEnvironment env = hostingContext.HostingEnvironment;
+IHostEnvironment env = builder.Environment;
 
-        configuration
-            .AddIniFile("appsettings.ini", optional: true, reloadOnChange: true)
-            .AddIniFile($"appsettings.{env.EnvironmentName}.ini", true, true);
+builder.Configuration
+    .AddIniFile("appsettings.ini", optional: true, reloadOnChange: true)
+    .AddIniFile($"appsettings.{env.EnvironmentName}.ini", true, true);
 
-        foreach ((string key, string? value) in
-            configuration.Build().AsEnumerable().Where(t => t.Value is not null))
-        {
-            Console.WriteLine($"{key}={value}");
-        }
-    })
-    .Build();
+foreach ((string key, string? value) in
+    builder.Configuration.AsEnumerable().Where(t => t.Value is not null))
+{
+    Console.WriteLine($"{key}={value}");
+}
+
+using IHost host = builder.Build();
 
 // Application code should start here.
 

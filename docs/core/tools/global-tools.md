@@ -3,7 +3,7 @@ title: .NET tools
 description: How to install, use, update, and remove .NET tools. Covers global tools, tool-path tools, and local tools. 
 author: KathleenDollard
 ms.topic: how-to
-ms.date: 08/10/2022
+ms.date: 07/25/2023
 ms.custom: devdivchpfy22
 ---
 # How to manage .NET tools
@@ -29,7 +29,7 @@ A .NET tool is a special NuGet package that contains a console application. You 
 > [!IMPORTANT]
 > .NET tools run in full trust. Don't install a .NET tool unless you trust the author.
 >
-> .NET tools might not work correctly if .NET was [installed via Snap](../install/linux-snap.md).
+> .NET tools might not work correctly if .NET was installed via Snap.
 
 ## Find a tool
 
@@ -38,7 +38,7 @@ Here are some ways to find tools:
 * Use the [dotnet tool search](dotnet-tool-search.md) command to find a tool that's published to NuGet.org.
 * Use the ".NET tool" package type filter to search for the [NuGet](https://www.nuget.org) website. For more information, see [Finding and choosing packages](/nuget/consume-packages/finding-and-choosing-packages).
 * See the source code for the tools the ASP.NET Core team created in the [Tools directory of the dotnet/aspnetcore GitHub repository](https://github.com/dotnet/aspnetcore/tree/main/src/Tools).
-* Learn about diagnostic tools at [.NET diagnostic tools](../diagnostics/index.md#net-core-diagnostic-global-tools).
+* Learn about diagnostic tools at [.NET diagnostic tools](../diagnostics/tools-overview.md).
 
 ## Check the author and statistics
 
@@ -60,6 +60,8 @@ The output shows the command used to invoke the tool and the version installed, 
 You can invoke the tool using the following command: dotnetsay
 Tool 'dotnetsay' (version '2.1.4') was successfully installed.
 ```
+
+[!INCLUDE[](~/includes/dotnet-tool-install-arch-options.md)]
 
 The default location for a tool's binaries depends on the operating system:
 

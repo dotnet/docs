@@ -1,6 +1,6 @@
 ---
 title: Garbage collector config settings
-description: Learn about run-time settings for configuring how the garbage collector manages memory for .NET Core apps.
+description: Learn about run-time settings for configuring how the garbage collector manages memory for .NET apps.
 ms.date: 04/20/2022
 ms.topic: reference
 ---
@@ -12,8 +12,8 @@ Settings are arranged into groups on this page. The settings within each group a
 
 > [!NOTE]
 >
-> - These settings can also be changed dynamically by the app as it's running, so any configuration options you set may be overridden.
-> - Some settings, such as [latency level](../../standard/garbage-collection/latency.md), are typically set only through the API at design time. Such settings are omitted from this page.
+> - These configurations are only read by the runtime when the GC is initialized (usually this means during the process startup time). If you change an environment variable when a process is already running, the change won't be reflected in that process. Settings that can be changed through APIs at run time, such as [latency level](../../standard/garbage-collection/latency.md), are omitted from this page.
+> - Because GC is per process, it rarely ever makes sense to set these configurations at the machine level. For example, you wouldn't want every .NET process on a machine to use server GC or the same heap hard limit.
 > - For number values, use decimal notation for settings in the *runtimeconfig.json* file and hexadecimal notation for environment variable settings. For hexadecimal values, you can specify them with or without the "0x" prefix.
 > - If you're using the environment variables, .NET 6 standardizes on the prefix `DOTNET_` instead of `COMPlus_`. However, the `COMPlus_` prefix will continue to work. If you're using a previous version of the .NET runtime, you should still use the `COMPlus_` prefix, for example, `COMPlus_gcServer`.
 
@@ -44,14 +44,14 @@ For example, to specify 12 heaps for `GCHeapCount` for a .NET Framework app name
 
 For both .NET Core and .NET Framework, you can use environment variables.
 
-On Windows using .NET 5 or a later version:
+On Windows using .NET 6 or a later version:
 
 ```cmd
 SET DOTNET_gcServer=1
 SET DOTNET_GCHeapCount=c
 ```
 
-On Windows using .NET Core 3.1 or earlier:
+On Windows using .NET 5 or earlier:
 
 ```cmd
 SET COMPlus_gcServer=1
@@ -60,21 +60,21 @@ SET COMPlus_GCHeapCount=c
 
 On other operating systems:
 
-For .NET 5 or later versions:
+For .NET 6 or later versions:
 
 ```bash
 export DOTNET_gcServer=1
 export DOTNET_GCHeapCount=c
 ```
 
-For .NET Core 3.1 and earlier versions:
+For .NET 5 and earlier versions:
 
 ```bash
 export COMPlus_gcServer=1
 export COMPlus_GCHeapCount=c
 ```
 
-For .NET Core only, you can set the value in the *runtimeconfig.json* file.
+If you're not using .NET Framework, you can also set the value in the *runtimeconfig.json* file.
 
 ```json
 {
@@ -573,7 +573,7 @@ Example:
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | N/A | N/A | N/A |
+| **runtimeconfig.json** | `System.GC.ConserveMemory` | `0` - `9` | .NET 6 |
 | **Environment variable** | `COMPlus_GCConserveMemory` | `0` -`9` | .NET Framework 4.8 |
 | **Environment variable** | `DOTNET_GCConserveMemory` | `0` -`9` | .NET 6 |
 | **app.config for .NET Framework** | [GCConserveMemory](../../framework/configure-apps/file-schema/runtime/gcconservememory-element.md) | `0` -`9` | .NET Framework 4.8 |

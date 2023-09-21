@@ -1,13 +1,14 @@
 ---
 title: Worker Services
-description: Learn how to implement a custom IHostedService and use existing implementations with .NET.
+description: Learn how to implement a custom IHostedService and use existing implementations in C#. Discover various worker implementations, templates, and service patterns.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/20/2022
+ms.date: 05/09/2023
 ms.topic: overview
+zone_pivot_groups: dotnet-version
 ---
 
-# Worker Services in .NET
+# Worker services in .NET
 
 There are numerous reasons for creating long-running services such as:
 
@@ -35,17 +36,26 @@ Many terms are mistakenly used synonymously. In this section, there are definiti
 
 The Worker Service template is available to the .NET CLI, and Visual Studio. For more information, see [.NET CLI, `dotnet new worker` - template](../tools/dotnet-new-sdk-templates.md#web-others). The template consists of a `Program` and `Worker` class.
 
-:::code language="csharp" source="snippets/workers/background-service/Program.cs":::
+:::zone target="docs" pivot="dotnet-7-0"
+
+:::code language="csharp" source="snippets/workers/7.0/background-service/Program.cs":::
+
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+:::code language="csharp" source="snippets/workers/6.0/background-service/Program.cs":::
+
+:::zone-end
 
 The preceding `Program` class:
 
-- Creates the default <xref:Microsoft.Extensions.Hosting.IHostBuilder>.
-- Calls <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureServices%2A> to add the `Worker` class as a hosted service with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A>.
+- Creates a <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder>.
+- Calls <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A> to register the `Worker` as a hosted service.
 - Builds an <xref:Microsoft.Extensions.Hosting.IHost> from the builder.
 - Calls `Run` on the `host` instance, which runs the app.
 
 > [!TIP]
-> By default the Worker Service template doesn't enable server garbage collection (GC). All of the scenarios that require long-running services should consider performance implications of this default. To enable server GC, add the `ServerGarbageCollection` node to the project file:
+> By default the Worker template doesn't enable server garbage collection (GC). All of the scenarios that require long-running services should consider performance implications of this default. To enable server GC, add the `ServerGarbageCollection` node to the project file:
 >
 > ```xml
 > <PropertyGroup>
@@ -55,34 +65,24 @@ The preceding `Program` class:
 >
 > For more information regarding performance considerations, see [Server GC](../../standard/garbage-collection/workstation-server-gc.md#server-gc). For more information on configuring server GC, see [Server GC configuration examples](../runtime-config/garbage-collector.md#workstation-vs-server).
 
-The *Program.cs* file from the template can be rewritten using top-level statements:
-
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using App.WorkerService;
-
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices((hostContext, services) =>
-    {
-        services.AddHostedService<Worker>();
-    })
-    .Build();
-
-await host.RunAsync();
-```
-
-This is functionally equivalent to the original template. For more information on C# 9 features, see [What's new in C# 9.0](../../csharp/whats-new/csharp-9.md).
-
 As for the `Worker`, the template provides a simple implementation.
 
-:::code language="csharp" source="snippets/workers/background-service/Worker.cs":::
+:::zone target="docs" pivot="dotnet-7-0"
 
-The preceding `Worker` class is a subclass of <xref:Microsoft.Extensions.Hosting.BackgroundService>, which implements <xref:Microsoft.Extensions.Hosting.IHostedService>. The <xref:Microsoft.Extensions.Hosting.BackgroundService> is an `abstract class` and requires the subclass to implement <xref:Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>. In the template implementation the `ExecuteAsync` loops once per second, logging the current date and time until the process is signaled to cancel.
+:::code language="csharp" source="snippets/workers/7.0/background-service/Worker.cs":::
+
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+:::code language="csharp" source="snippets/workers/6.0/background-service/Worker.cs":::
+
+:::zone-end
+
+The preceding `Worker` class is a subclass of <xref:Microsoft.Extensions.Hosting.BackgroundService>, which implements <xref:Microsoft.Extensions.Hosting.IHostedService>. The <xref:Microsoft.Extensions.Hosting.BackgroundService> is an `abstract class` and requires the subclass to implement <xref:Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>. In the template implementation, the `ExecuteAsync` loops once per second, logging the current date and time until the process is signaled to cancel.
 
 ### The project file
 
-The Worker Service template relies on the following project file `Sdk`:
+The Worker template relies on the following project file `Sdk`:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk.Worker">
@@ -92,13 +92,32 @@ For more information, see [.NET project SDKs](../project-sdk/overview.md).
 
 ### NuGet package
 
-An app based on the Worker Service template uses the `Microsoft.NET.Sdk.Worker` SDK and has an explicit package reference to the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) package.
+An app based on the Worker template uses the `Microsoft.NET.Sdk.Worker` SDK and has an explicit package reference to the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) package.
 
 ### Containers and cloud adaptability
 
-With most modern .NET workloads, containers are a viable option. When creating a long-running service from the Worker Service template in Visual Studio, you can opt-in to **Docker support**. Doing so will create a *Dockerfile* that will containerize your .NET app. A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of instructions to build an image. For .NET apps, the *Dockerfile* usually sits in the root of the directory next to a solution file.
+With most modern .NET workloads, containers are a viable option. When creating a long-running service from the Worker template in Visual Studio, you can opt in to **Docker support**. Doing so creates a *Dockerfile* that containerizes your .NET app. A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of instructions to build an image. For .NET apps, the *Dockerfile* usually sits in the root of the directory next to a solution file.
 
-:::code language="dockerfile" source="snippets/workers/background-service/Dockerfile":::
+:::zone target="docs" pivot="dotnet-7-0"
+
+:::code language="dockerfile" source="snippets/workers/7.0/background-service/Dockerfile":::
+
+The preceding *Dockerfile* steps include:
+
+- Setting the base image from `mcr.microsoft.com/dotnet/runtime:7.0` as the alias `base`.
+- Changing the working directory to */app*.
+- Setting the `build` alias from the `mcr.microsoft.com/dotnet/sdk:7.0` image.
+- Changing the working directory to */src*.
+- Copying the contents and publishing the .NET app:
+  - The app is published using the [`dotnet publish`](../tools/dotnet-publish.md) command.
+- Relayering the .NET SDK image from `mcr.microsoft.com/dotnet/runtime:7.0` (the `base` alias).
+- Copying the published build output from the */publish*.
+- Defining the entry point, which delegates to [`dotnet App.BackgroundService.dll`](../tools/dotnet.md).
+
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+:::code language="dockerfile" source="snippets/workers/6.0/background-service/Dockerfile":::
 
 The preceding *Dockerfile* steps include:
 
@@ -112,19 +131,30 @@ The preceding *Dockerfile* steps include:
 - Copying the published build output from the */publish*.
 - Defining the entry point, which delegates to [`dotnet App.BackgroundService.dll`](../tools/dotnet.md).
 
+:::zone-end
+
 > [!TIP]
 > The MCR in `mcr.microsoft.com` stands for "Microsoft Container Registry", and is Microsoft's syndicated container catalog from the official Docker hub. The [Microsoft syndicates container catalog](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog) article contains additional details.
 
-When targeting Docker as a deployment strategy for your .NET Worker Service, there are a few considerations in the project file:
+When you target Docker as a deployment strategy for your .NET Worker Service, there are a few considerations in the project file:
 
-:::code language="xml" source="snippets/workers/background-service/App.WorkerService.csproj" highlight="8,13":::
+:::zone target="docs" pivot="dotnet-7-0"
+
+:::code language="xml" source="snippets/workers/7.0/background-service/App.WorkerService.csproj" highlight="8,13":::
+
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+:::code language="xml" source="snippets/workers/6.0/background-service/App.WorkerService.csproj" highlight="8,13":::
+
+:::zone-end
 
 In the preceding project file, the `<DockerDefaultTargetOS>` element specifies `Linux` as its target. To target Windows containers, use `Windows` instead. The [`Microsoft.VisualStudio.Azure.Containers.Tools.Targets` NuGet package](https://www.nuget.org/packages/Microsoft.VisualStudio.Azure.Containers.Tools.Targets) is automatically added as a package reference when **Docker support** is selected from the template.
 
 For more information on Docker with .NET, see [Tutorial: Containerize a .NET app](../docker/build-container.md). For more information on deploying to Azure, see [Tutorial: Deploy a Worker Service to Azure](cloud-service.md).
 
 > [!IMPORTANT]
-> If you want to leverage _User Secrets_ with the Worker Service template, you'd have to explicitly reference the `Microsoft.Extensions.Configuration.UserSecrets` NuGet package.
+> If you want to leverage *User Secrets* with the Worker template, you'd have to explicitly reference the `Microsoft.Extensions.Configuration.UserSecrets` NuGet package.
 
 ## Hosted Service extensibility
 
@@ -143,9 +173,18 @@ These two methods serve as *lifecycle* methods - they're called during host star
 
 ## Signal completion
 
-In most common scenarios, you do not need to explicitly signal the completion of a hosted service. When the host starts the services, they're designed to run until the host is stopped. In some scenarios, however, you may need to signal the completion of the entire host application when the service completes. To achieve this, consider the following `Worker` class:
+In most common scenarios, you don't need to explicitly signal the completion of a hosted service. When the host starts the services, they're designed to run until the host is stopped. In some scenarios, however, you may need to signal the completion of the entire host application when the service completes. To signal the completion, consider the following `Worker` class:
 
-:::code source="snippets/workers/signal-completion-service/App.SignalCompletionService/Worker.cs":::
+:::zone target="docs" pivot="dotnet-7-0"
+
+:::code source="snippets/workers/7.0/signal-completion-service/App.SignalCompletionService/Worker.cs":::
+
+:::zone-end
+:::zone target="docs" pivot="dotnet-6-0"
+
+:::code source="snippets/workers/6.0/signal-completion-service/App.SignalCompletionService/Worker.cs":::
+
+:::zone-end
 
 In the preceding code, the `ExecuteAsync` method doesn't loop, and when it's complete it calls <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.StopApplication?displayProperty=nameWithType>.
 

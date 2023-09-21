@@ -9,15 +9,11 @@ The value of the `TrimmerDefaultAction` property is now ignored by the publish p
 
 ## Previous behavior
 
-Previously, only assemblies that were opted-in with `<IsTrimmable>true</IsTrimmable>` in the library project file were trimmed with the action specified by the `TrimmerDefaultAction`. The default value for that property was `link` in .NET 6.
+Previously, only assemblies that were opted-in with `<IsTrimmable>true</IsTrimmable>` in the library project file were trimmed with the action specified by the `TrimmerDefaultAction`. In .NET 6, the default value for that property was `copy`. While apps with trim warnings were more likely to work with this default, run-time behavior could still be affected. In addition, the `copy` action caused apps to be larger than if the entire app was trimmed.
 
 ## New behavior
 
-Starting in .NET 7, the property `TrimmerDefaultAction` is ignored and publishing behaves as if it was set to `link` all the time.
-
-The default value for the property was the most aggressive trimming mode, `link`. Thus, projects that had explicitly set a value in the project file usually had trim warnings and did so to reduce the aggressiveness. The most common setting was `copyused`.
-
-If your app had any trim warnings, you may see changes in behavior or exceptions.
+Starting in .NET 7, the property `TrimmerDefaultAction` is ignored and publishing behaves as if it was set to `link` all the time. This means all assemblies are fully trimmed, whether they opt in or not. As a result, applications with trim warnings may see changes in behavior or run-time exceptions. For more information and instructions for restoring the previous behavior, see [All assemblies trimmed by default](./trim-all-assemblies.md).
 
 ## Version introduced
 
@@ -40,3 +36,4 @@ To revert to the previous behavior, use [`global.json`](../../../tools/global-js
 ## See also
 
 - [Trimming options](../../../deploying/trimming/trimming-options.md)
+- [All assemblies trimmed by default](./trim-all-assemblies.md)

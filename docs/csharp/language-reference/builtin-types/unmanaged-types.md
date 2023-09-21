@@ -9,7 +9,7 @@ helpviewer_keywords:
 
 A type is an **unmanaged type** if it's any of the following types:
 
-- `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `char`, `float`, `double`, `decimal`, or `bool`
+- `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `nint`, `nuint`, `char`, `float`, `double`, `decimal`, or `bool`
 - Any [enum](enum.md) type
 - Any [pointer](../unsafe-code.md#pointer-types) type
 - Any user-defined [struct](struct.md) type that contains fields of unmanaged types only.
@@ -26,7 +26,7 @@ A generic struct may be the source of both unmanaged and managed constructed typ
 
 ## C# language specification
 
-For more information, see the [Pointer types](~/_csharpstandard/standard/unsafe-code.md#223-pointer-types) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Pointer types](~/_csharpstandard/standard/unsafe-code.md#233-pointer-types) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

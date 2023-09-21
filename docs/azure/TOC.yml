@@ -38,19 +38,19 @@
     - name: Authentication
       items:
       - name: Overview
-        href: sdk/authentication.md
+        href: ./sdk/authentication/index.md
       - name: Auth during local development
         items:
         - name: Auth using developer service principals
-          href: sdk/authentication-local-development-service-principal.md
+          href: ./sdk/authentication/local-development-service-principal.md
         - name: Auth using developer accounts
-          href: sdk/authentication-local-development-dev-accounts.md
+          href: ./sdk/authentication/local-development-dev-accounts.md
       - name: Auth from Azure-hosted apps
-        href: sdk/authentication-azure-hosted-apps.md
+        href: ./sdk/authentication/azure-hosted-apps.md
       - name: Auth from on-premises apps
-        href: sdk/authentication-on-premises-apps.md
+        href: ./sdk/authentication/on-premises-apps.md
       - name: Additional auth methods
-        href: sdk/authentication-additional-methods.md
+        href: ./sdk/authentication/additional-methods.md
     - name: Resource management
       href: ./sdk/resource-management.md
     - name: Dependency injection
@@ -61,6 +61,8 @@
       href: ./sdk/logging.md
     - name: Pagination
       href: ./sdk/pagination.md
+    - name: Unit testing and mocking
+      href: ./sdk/unit-testing-mocking.md
     - name: Configure a proxy server
       href: ./sdk/azure-sdk-configure-proxy.md
     - name: Packages list

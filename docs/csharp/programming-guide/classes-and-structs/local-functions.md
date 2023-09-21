@@ -33,6 +33,10 @@ A local function is defined as a nested method inside a containing member. Its d
 <modifiers> <return-type> <method-name> <parameter-list>
 ```
 
+> [!NOTE]
+> The `<parameter-list>` shouldn't contain the parameters named with [contextual keyword](../../language-reference/keywords/index.md#contextual-keywords) `value`.
+> The compiler creates the temporary variable "value", which contains the referenced outter variables, which later causes ambiguity and may also cause an unexpected behaviour.
+
 You can use the following modifiers with a local function:
 
 - [`async`](../../language-reference/keywords/async.md)
@@ -56,7 +60,7 @@ The preceding example uses a [special attribute](../../language-reference/attrib
 
 ## Local functions and exceptions
 
-One of the useful features of local functions is that they can allow exceptions to surface immediately. For method iterators, exceptions are surfaced only when the returned sequence is enumerated, and not when the iterator is retrieved. For async methods, any exceptions thrown in an async method are observed when the returned task is awaited.
+One of the useful features of local functions is that they can allow exceptions to surface immediately. For iterator methods, exceptions are surfaced only when the returned sequence is enumerated, and not when the iterator is retrieved. For async methods, any exceptions thrown in an async method are observed when the returned task is awaited.
 
 The following example defines an `OddSequence` method that enumerates odd numbers in a specified range. Because it passes a number greater than 100 to the `OddSequence` enumerator method, the method throws an <xref:System.ArgumentOutOfRangeException>. As the output from the example shows, the exception surfaces only when you iterate the numbers, and not when you retrieve the enumerator.
 
@@ -149,9 +153,13 @@ One final advantage not demonstrated in this sample is that local functions can 
 
 :::code language="csharp" source="snippets/local-functions/Program.cs" id="YieldReturn" :::
 
-The `yield return` statement is not allowed in lambda expressions, see [compiler error CS1621](../../misc/cs1621.md).
+The `yield return` statement is not allowed in lambda expressions. For more information, see [compiler error CS1621](../../language-reference/compiler-messages/lambda-expression-errors.md#syntax-limitations-in-lambda-expressions).
 
 While local functions may seem redundant to lambda expressions, they actually serve different purposes and have different uses. Local functions are more efficient for the case when you want to write a function that is called only from the context of another method.
+
+## C# language specification
+
+For more information, see the [Local function declarations](~/_csharpstandard/standard/statements.md#1364-local-function-declarations) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

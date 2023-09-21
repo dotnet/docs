@@ -1,6 +1,6 @@
 ﻿using System;
 
-class BaseClassWithFinalizer : IDisposable
+public class BaseClassWithFinalizer : IDisposable
 {
     // To detect redundant calls
     private bool _disposedValue;

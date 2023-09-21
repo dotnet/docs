@@ -97,11 +97,8 @@ While Visual Studio Code doesn't come with an automated .NET Core installer like
 
 The [download page](https://dotnet.microsoft.com/download/dotnet) for .NET provides Windows Installer executables.
 
-When you use the Windows installers to install .NET, you can customize the installation path by setting the `DOTNETHOME_X64` and `DOTNETHOME_X86` parameters:
-
-```console
-dotnet-sdk-7.0.100-win-x64.exe DOTNETHOME_X64="F:\dotnet\x64" DOTNETHOME_X86="F:\dotnet\x86"
-```
+> [IMPORTANT]
+> Starting in November 2021, you can't change the installation path of .NET with the Windows Installer package. To install .NET to a different path, use the [dotnet-install scripts](../tools/dotnet-install-script.md).
 
 If you want to install .NET silently, such as in a production environment or to support continuous integration, use the following switches:
 
@@ -129,7 +126,7 @@ The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for CI 
 
 The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET 6. You can choose a specific release by specifying the `Channel` switch. Include the `Runtime` switch to install a runtime. Otherwise, the script installs the SDK.
 
-The following command installs the ASP.NET Core runtime for maximum compatability. The ASP.NET Core runtime also includes the standard .NET runtime.
+The following command installs the ASP.NET Core runtime for maximum compatibility. The ASP.NET Core runtime also includes the standard .NET runtime.
 
 ```powershell
 dotnet-install.ps1 -Channel 7.0 -Runtime aspnetcore
@@ -206,6 +203,12 @@ For more information about .NET 7 supported operating systems, distributions, an
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
+## Verify downloaded binaries
+
+[!INCLUDE [verify-download-intro](includes/verify-download-intro.md)]
+
+[!INCLUDE [verify-download-windows](includes/verify-download-windows.md)]
+
 ## Runtime information
 
 The runtime is used to run apps created with .NET. When an app author publishes an app, they can include the runtime with their app. If they don't include the runtime, it's up to the user to install the runtime.
@@ -277,7 +280,6 @@ The following Windows versions are supported with .NET 7:
 |---------------------|---------------|-----------------|
 | Windows 11          | 21H2+         | x64, Arm64      |
 | Windows 10 Client   | 1607+         | x64, x86, Arm64 |
-| Windows Client      | 7 SP1+, 8.1   | x64, x86        |
 | Windows Server      | 2012+         | x64, x86        |
 | Windows Server Core | 2012+         | x64, x86        |
 | Nano Server         | 1809+         | x64             |

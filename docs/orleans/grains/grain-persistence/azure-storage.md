@@ -1,7 +1,7 @@
 ---
 title: Azure Storage grain persistence
 description: Learn about Azure Storage grain persistence in .NET Orleans.
-ms.date: 03/15/2022
+ms.date: 08/25/2023
 ---
 
 # Azure Storage grain persistence
@@ -10,7 +10,7 @@ The Azure Storage grain persistence provider supports both [Azure Blob Storage](
 
 ## Install Azure Table Storage
 
-Install the [`Microsoft.Orleans.Persistence.AzureStorage`](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.AzureStorage) package from NuGet. The Azure Table Storage provider stores state in a table row, splitting the state over multiple columns if the limits of a single column are exceeded. Each row can hold a maximum length of one megabyte, as [imposed by Azure Table Storage](/azure/storage/common/storage-scalability-targets#azure-table-storage-scale-targets).
+Install the [Microsoft.Orleans.Persistence.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.AzureStorage) package from NuGet. The Azure Table Storage provider stores state in a table row, splitting the state over multiple columns if the limits of a single column are exceeded. Each row can hold a maximum length of 1 megabyte, as [imposed by Azure Table Storage](/azure/storage/common/storage-scalability-targets#azure-table-storage-scale-targets).
 
 Configure the Azure Table Storage grain persistence provider using the <xref:Orleans.Hosting.AzureTableSiloBuilderExtensions.AddAzureTableGrainStorage%2A?displayProperty=nameWithType> extension methods.
 
@@ -19,7 +19,6 @@ siloBuilder.AddAzureTableGrainStorage(
     name: "profileStore",
     configureOptions: options =>
     {
-        options.UseJson = true;
         options.ConfigureTableServiceClient(
             "DefaultEndpointsProtocol=https;AccountName=data1;AccountKey=SOMETHING1");
     });
@@ -36,7 +35,6 @@ siloBuilder.AddAzureBlobGrainStorage(
     name: "profileStore",
     configureOptions: options =>
     {
-        options.UseJson = true;
         options.ConfigureBlobServiceClient(
              "DefaultEndpointsProtocol=https;AccountName=data1;AccountKey=SOMETHING1");
     });

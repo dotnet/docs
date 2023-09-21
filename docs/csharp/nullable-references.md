@@ -96,7 +96,7 @@ public void PrintMessage(string message)
 }
 ```
 
-Based on inspection, any developer would consider this code safe, and shouldn't generate warnings. The compiler doesn't know that `IsNullOrWhiteSpace` provides a null check. You apply attributes to inform the compiler that `message` is *not-null* if and only if `IsNullOrWhiteSpace` returns `false`. In the previous example, the signature includes the [`NotNullWhen`](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute) to indicate the null state of `message`:
+Based on inspection, any developer would consider this code safe, and shouldn't generate warnings. The compiler doesn't know that `IsNullOrWhiteSpace` provides a null check. When `IsNullOrWhitespace` returns `false,` the *null-state* of the string is *not-null*. When `IsNullOrWhitespace` returns `true`, the *null-state* isn't changed. In the previous example, the signature includes the [`NotNullWhen`](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute) to indicate the null state of `message`:
 
 ```csharp
 public static bool IsNullOrWhiteSpace([NotNullWhen(false)] string message);

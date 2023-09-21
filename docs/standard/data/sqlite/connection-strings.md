@@ -1,6 +1,6 @@
 ---
 title: Connection strings
-ms.date: 07/14/2021
+ms.date: 06/06/2023
 no-loc: Command Timeout,Default Timeout,Data Source,Recursive Triggers,Pooling
 description: The supported keywords and values of connection strings.
 ---
@@ -119,6 +119,9 @@ You can use <xref:Microsoft.Data.Sqlite.SqliteConnectionStringBuilder> as a stro
 ### Basic
 
 A basic connection string with a shared cache for improved concurrency.
+
+> [!CAUTION]
+> Mixing shared-cache mode and write-ahead logging is discouraged. For optimal performance, remove `Cache=Shared` when the database is configured to use write-ahead logging.
 
 ```connectionstring
 Data Source=Application.db;Cache=Shared

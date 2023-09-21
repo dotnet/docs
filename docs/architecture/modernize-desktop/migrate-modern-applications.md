@@ -12,8 +12,7 @@ In this chapter, we're exploring the most common issues and challenges you can f
 
 If you just want to update your application to the latest .NET version using a tool and not get into the details of what's happening behind the scenes, feel free to skip this chapter and find step-by-step instructions in the [Example of migrating to .NET](example-migration.md) chapter.
 
-A complex desktop application doesn't work in isolation and needs some kind of interaction with subsystems that may reside on the local machine or on a remote server. It will probably need some kind of database to connect as a persistence
-storage either locally or remotely. With the rise of internet and service-oriented architectures, it's common to have your application connected to some sort of service residing on a remote server or in the cloud. You may need to access the machine file system to implement some functionality. Alternatively, maybe you're using a piece of functionality that resides inside a COM object outside your application, which is a common scenario if, for example, you're integrating Office assemblies in your app.
+A complex desktop application doesn't work in isolation and needs some kind of interaction with subsystems that may reside on the local machine or on a remote server. It will probably need some kind of database to connect with as a persistence store either locally or remotely. With the rise of Internet and service-oriented architectures, it's common to have your application connected to some sort of service residing on a remote server or in the cloud. You may need to access the machine file system to implement some functionality. Alternatively, maybe you're using a piece of functionality that resides inside a COM object outside your application, which is a common scenario if, for example, you're integrating Office assemblies in your app.
 
 Besides, there are differences in the API surface that is exposed by .NET Framework and .NET, and some features that are available on .NET Framework aren't available on .NET. It's important for you to know and take them into account when planning a migration.
 
@@ -45,7 +44,7 @@ Or you can build your own.
 
 The new configuration API allows a list of name-value pairs that can be grouped into a multi-level hierarchy. Any stored value maps to a string, and there's built-in binding support that allows you to deserialize settings into a custom plain old CLR object (POCO).
 
-The <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> object lets you add as many configuration providers as you may need for your application. A precedence rule to resolve preference. So, the last provider you add in your code overrides the others. This is a great feature for managing different environments for execution since you can define different configurations for development, testing, and production environments. And you can manage them on a single function inside your code.
+The <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> object lets you add as many configuration providers as you may need for your application. A precedence rule is used to resolve provider preference. So, the last provider you add in your code overrides the others. This is a great feature for managing different environments for execution since you can define different configurations for development, testing, and production environments. And you can manage them in a single function inside your code.
 
 ### Migrating configuration files
 
@@ -160,7 +159,7 @@ If you have a desktop application using a WCF service and you want to migrate it
 
 The first thing is how to resolve the configuration to access the service. Because the configuration is different on .NET, you'll need to make some updates in your configuration file.
 
-Second, you'll need to regenerate the service client with the new tools present on Visual Studio 2019. In this step, you must consider activating the generation of the synchronous operations to make the client compatible with your existing code.
+Second, you'll need to regenerate the service client with the new tools present on Visual Studio 2019 and Visual Studio 2022. In this step, you must consider activating the generation of the synchronous operations to make the client compatible with your existing code.
 
 After the migration, if you find that there are libraries you need that aren't present on .NET, you can add a reference to the [Microsoft.Windows.Compatibility](https://www.nuget.org/packages/Microsoft.Windows.Compatibility) NuGet package and see if the missing functions are there.
 
@@ -168,7 +167,7 @@ If you're using the <xref:System.Net.WebRequest> class to perform web service ca
 
 ## Consuming a COM Object
 
-Currently, there's no way to add a reference to a COM object from Visual Studio 2019 to use with .NET. So, you have to manually modify the project file.
+Currently, there's no way to add a reference to a COM object from Visual Studio 2019 or Visual Studio 2022 to use with .NET. So, you have to manually modify the project file.
 
 Insert a `COMReference` structure inside the project file like in the following example:
 
@@ -187,7 +186,7 @@ Insert a `COMReference` structure inside the project file like in the following 
 
 ## More things to consider
 
-Several technologies available to .NET Framework libraries aren't available for .NET Core or .NET 5. If your code relies on some of these technologies, consider the alternative approaches outlined in this section.
+Several technologies available to .NET Framework libraries aren't available for .NET Core or .NET 7. If your code relies on some of these technologies, consider the alternative approaches outlined in this section.
 
 The [Windows Compatibility Pack](../../core/porting/windows-compat-pack.md) provides access to APIs that were previously available only for .NET Framework. It can be used on .NET Core and .NET Standard projects.
 

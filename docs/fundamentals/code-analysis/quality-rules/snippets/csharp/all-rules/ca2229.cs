@@ -21,7 +21,9 @@ namespace ca2229
            SerializationInfo info,
            StreamingContext context)
         {
-            n1 = (int)info.GetValue(nameof(n1), typeof(int));
+            n1 = (info.GetValue(nameof(n1), typeof(int)) != null) ?
+                (int)info.GetValue(nameof(n1), typeof(int))! :
+                -1;
         }
 
         // The following method serializes the instance.

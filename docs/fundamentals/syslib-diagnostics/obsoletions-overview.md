@@ -2,7 +2,7 @@
 title: Obsolete features in .NET 5+
 titleSuffix: ""
 description: Learn about APIs that are marked as obsolete in .NET 5 and later versions that produce SYSLIB compiler warnings.
-ms.date: 11/07/2022
+ms.date: 06/08/2023
 ---
 
 # Obsolete features in .NET 5+
@@ -68,6 +68,11 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 | [SYSLIB0045](syslib0045.md) | Warning | Cryptographic factory methods accepting an algorithm name are obsolete. Use the parameterless `Create` factory method on the algorithm type instead. |
 | [SYSLIB0046](syslib0046.md) | Warning | The <xref:System.Runtime.ControlledExecution.Run(System.Action,System.Threading.CancellationToken)?displayProperty=nameWithType> method might corrupt the process and should not be used in production code. |
 | [SYSLIB0047](syslib0047.md) | Warning | <xref:System.Xml.XmlSecureResolver> is obsolete. Use `XmlResolver.ThrowingResolver` instead when attempting to forbid XML external entity resolution. |
+| [SYSLIB0048](syslib0048.md) | Warning | <xref:System.Security.Cryptography.RSA.EncryptValue(System.Byte[])?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.DecryptValue(System.Byte[])?displayProperty=nameWithType> are obsolete. Use <xref:System.Security.Cryptography.RSA.Encrypt%2A?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.Decrypt%2A?displayProperty=nameWithType> instead. |
+| [SYSLIB0050](syslib0050.md) | Warning | Formatter-based serialization is obsolete and should not be used. |
+| [SYSLIB0051](syslib0051.md) | Warning | APIs that support obsolete formatter-based serialization are obsolete. They should not be called or extended by application code. |
+| [SYSLIB0052](syslib0052.md) | Warning | APIs that support obsolete mechanisms for Regex extensibility are obsolete. |
+| [SYSLIB0053](syslib0053.md) | Warning | <xref:System.Security.Cryptography.AesGcm> should indicate the required tag size for encryption and decryption. Use a constructor that accepts the tag size. |
 
 ## Suppress warnings
 
@@ -111,3 +116,4 @@ To suppress the warnings in a project file:
 - [API obsoletions with non-default diagnostic IDs (.NET 5)](../../core/compatibility/core-libraries/5.0/obsolete-apis-with-custom-diagnostics.md)
 - [API obsoletions with non-default diagnostic IDs (.NET 6)](../../core/compatibility/core-libraries/6.0/obsolete-apis-with-custom-diagnostics.md)
 - [API obsoletions with non-default diagnostic IDs (.NET 7)](../../core/compatibility/core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md)
+- [API obsoletions with non-default diagnostic IDs (.NET 8)](../../core/compatibility/core-libraries/8.0/obsolete-apis-with-custom-diagnostics.md)

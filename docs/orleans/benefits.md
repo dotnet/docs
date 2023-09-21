@@ -1,7 +1,7 @@
 ---
 title: Orleans benefits
 description: Learn the many benefits of .NET Orleans.
-ms.date: 03/09/2022
+ms.date: 09/05/2023
 ---
 
 # Orleans benefits
@@ -66,7 +66,7 @@ Grains in Orleans have logical endpoints, and messaging among them is multiplexe
 
 ### Efficient scheduling
 
-The runtime schedules execution of a large number of single-threaded grains across a custom thread pool with a thread per physical processor core. With grain code written in the non-blocking, continuation-based style (a requirement of the Orleans programming model), application code runs in a very efficient "cooperative" multi-threaded manner with no contention. This allows the system to reach high throughput and run at very high CPU utilization (up to 90%+) with great stability.
+The runtime schedules execution of a large number of single-threaded grains using the .NET Thread Pool, which is highly optimized for performance. With grain code written in the non-blocking, continuation-based style (a requirement of the Orleans programming model), application code runs in a very efficient "cooperative" multi-threaded manner with no contention. This allows the system to reach high throughput and run at very high CPU utilization (up to 90%+) with great stability.
 
 The fact that growth in the number of grains in the system and an increase in the load does not lead to additional threads or other OS primitives helps scalability of individual nodes and the whole system.
 

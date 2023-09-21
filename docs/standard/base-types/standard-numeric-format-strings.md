@@ -54,6 +54,7 @@ The following table describes the standard numeric format specifiers and display
 
 | Format specifier | Name | Description | Examples |
 |--|--|--|--|
+| "B" or "b" | Binary | Result: A binary string.<br /><br /> Supported by: Integral types only (.NET 8+).<br /><br /> Precision specifier: Number of digits in the result string.<br /><br /> More information: [The Binary ("B") Format Specifier](#BFormatString). | 42 ("B")<br />-> 101010<br /><br /> 255 ("b16")<br />-> 0000000011111111 |
 | "C" or "c" | Currency | Result: A currency value.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Number of decimal digits.<br /><br /> Default precision specifier: Defined by <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits%2A?displayProperty=nameWithType>.<br /><br /> More information: [The Currency ("C") Format Specifier](#CFormatString). | 123.456 ("C", en-US)<br />-> \\$123.46<br /><br /> 123.456 ("C", fr-FR)<br />-> 123,46 &euro;<br /><br /> 123.456 ("C", ja-JP)<br />-> ¥123<br /><br /> -123.456 ("C3", en-US)<br />-> (\\$123.456)<br /><br /> -123.456 ("C3", fr-FR)<br />-> -123,456 &euro;<br /><br /> -123.456 ("C3", ja-JP)<br />-> -¥123.456 |
 | "D" or "d" | Decimal | Result: Integer digits with optional negative sign.<br /><br /> Supported by: Integral types only.<br /><br /> Precision specifier: Minimum number of digits.<br /><br /> Default precision specifier: Minimum number of digits required.<br /><br /> More information: [The Decimal("D") Format Specifier](#DFormatString). | 1234 ("D")<br />-> 1234<br /><br /> -1234 ("D6")<br />-> -001234 |
 | "E" or "e" | Exponential (scientific) | Result: Exponential notation.<br /><br /> Supported by: All numeric types.<br /><br /> Precision specifier: Number of decimal digits.<br /><br /> Default precision specifier: 6.<br /><br /> More information: [The Exponential ("E") Format Specifier](#EFormatString). | 1052.0329112756 ("E", en-US)<br />-> 1.052033E+003<br /><br /> 1052.0329112756 ("e", fr-FR)<br />-> 1,052033e+003<br /><br /> -1052.0329112756 ("e2", en-US)<br />-> -1.05e+003<br /><br /> -1052.0329112756 ("E2", fr-FR)<br />-> -1,05E+003 |
@@ -92,6 +93,16 @@ A standard numeric format string can be used to define the formatting of a numer
 - It can be supplied as the `formatString` argument in an interpolated expression item of an interpolated string. For more information, see the [String interpolation](../../csharp/language-reference/tokens/interpolated.md) article in the C# reference or the [Interpolated strings](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md) article in the Visual Basic reference.
 
 The following sections provide detailed information about each of the standard numeric format strings.
+
+<a name="BFormatString"></a>
+
+## Binary format specifier (B)
+
+The binary ("B") format specifier converts a number to a string of binary digits. This format is supported only for integral types and only on .NET 8+.
+
+The precision specifier indicates the minimum number of digits desired in the resulting string. If required, the number is padded with zeros to its left to produce the number of digits given by the precision specifier.
+
+The result string is not affected by the formatting information of the current <xref:System.Globalization.NumberFormatInfo> object.
 
 <a name="CFormatString"></a>
 
@@ -192,18 +203,18 @@ The following example formats a <xref:System.Double> and an <xref:System.Int32> 
 
 The general ("G") format specifier converts a number to the more compact of either fixed-point or scientific notation, depending on the type of the number and whether a precision specifier is present. The precision specifier defines the maximum number of significant digits that can appear in the result string. If the precision specifier is omitted or zero, the type of the number determines the default precision, as indicated in the following table.
 
-|Numeric type|Default precision|
-|------------------|-----------------------|
-|<xref:System.Byte> or <xref:System.SByte>|3 digits|
+|Numeric type                               | Default precision |
+|-------------------------------------------|-------------------|
+|<xref:System.Byte> or <xref:System.SByte>  |3 digits|
 |<xref:System.Int16> or <xref:System.UInt16>|5 digits|
 |<xref:System.Int32> or <xref:System.UInt32>|10 digits|
-|<xref:System.Int64>|19 digits|
-|<xref:System.UInt64>|20 digits|
-|<xref:System.Numerics.BigInteger>|Unlimited (same as ["R"](#RFormatString))|
-|<xref:System.Half>|3 digits|
-|<xref:System.Single>|7 digits|
-|<xref:System.Double>|15 digits|
-|<xref:System.Decimal>|29 digits|
+|<xref:System.Int64>                        |19 digits|
+|<xref:System.UInt64>                       |20 digits|
+|<xref:System.Numerics.BigInteger>          |Unlimited (same as ["R"](#RFormatString))|
+|<xref:System.Half>                         |Smallest round-trippable number of digits to represent the number|
+|<xref:System.Single>                       |Smallest round-trippable number of digits to represent the number (in .NET Framework, G7 is the default)|
+|<xref:System.Double>                       |Smallest round-trippable number of digits to represent the number (in .NET Framework, G15 is the default)|
+|<xref:System.Decimal>                      |Smallest round-trippable number of digits to represent the number|
 
 Fixed-point notation is used if the exponent that would result from expressing the number in scientific notation is greater than -5 and less than the precision specifier; otherwise, scientific notation is used. The result contains a decimal point if required, and trailing zeros after the decimal point are omitted. If the precision specifier is present and the number of significant digits in the result exceeds the specified precision, the excess trailing digits are removed by rounding.
 

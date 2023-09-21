@@ -1,13 +1,13 @@
 ---
 title: Dependency injection
-description: Learn how .NET implements dependency injection and how to use it.
+description: Learn how to use dependency injection within your .NET apps. Discover how to registration services, define service lifetimes, and express dependencies in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/09/2022
+ms.date: 07/19/2023
 ms.topic: overview
 ---
 
-# Dependency injection in .NET
+# .NET dependency injection
 
 .NET supports the dependency injection (DI) software design pattern, which is a technique for achieving [Inversion of Control (IoC)](../../architecture/modern-web-apps-azure/architectural-principles.md#dependency-inversion) between classes and their dependencies. Dependency injection in .NET is a built-in part of the framework, along with configuration, logging, and the options pattern.
 
@@ -61,17 +61,17 @@ This interface is implemented by a concrete type, `MessageWriter`:
 
 :::code language="csharp" source="snippets/configuration/dependency-injection/MessageWriter.cs":::
 
-The sample code registers the `IMessageWriter` service with the concrete type `MessageWriter`. The <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped%2A> method registers the service with a scoped lifetime, the lifetime of a single request. [Service lifetimes](#service-lifetimes) are described later in this article.
+The sample code registers the `IMessageWriter` service with the concrete type `MessageWriter`. The <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A> method registers the service with a singleton lifetime, the lifetime of a single request. [Service lifetimes](#service-lifetimes) are described later in this article.
 
 :::code language="csharp" source="snippets/configuration/dependency-injection/Program.cs" highlight="5-8":::
 
 In the preceding code, the sample app:
 
-- Creates a host builder instance.
+- Creates a host app builder instance.
 - Configures the services by registering:
 
   - The `Worker` as a hosted service. For more information, see [Worker Services in .NET](workers.md).
-  - The `IMessageWriter` interface as a scoped service with a corresponding implementation of the `MessageWriter` class.
+  - The `IMessageWriter` interface as a singleton service with a corresponding implementation of the `MessageWriter` class.
 
 - Builds the host and runs it.
 
@@ -88,30 +88,26 @@ The implementation of the `IMessageWriter` interface can be improved by using th
 
 :::code language="csharp" source="snippets/configuration/dependency-injection/LoggingMessageWriter.cs":::
 
-The updated `ConfigureServices` method registers the new `IMessageWriter` implementation:
+The updated `AddSingleton` method registers the new `IMessageWriter` implementation:
 
 ```csharp
-static IHostBuilder CreateHostBuilder(string[] args) =>
-    Host.CreateDefaultBuilder(args)
-        .ConfigureServices((_, services) =>
-            services.AddHostedService<Worker>()
-                    .AddScoped<IMessageWriter, LoggingMessageWriter>());
+builder.Services.AddSingleton<IMessageWriter, LoggingMessageWriter>());
 ```
 
-The method `CreateHostBuilder` uses types `IHostBuilder` and `Host`. In order to use them, packages `Microsoft.Extensions.DependencyInjection` and `Microsoft.Extensions.Hosting` must be referenced respectively.
+The <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder> (`builder`) type is part of the `Microsoft.Extensions.Hosting` NuGet package.
 
 `LoggingMessageWriter` depends on <xref:Microsoft.Extensions.Logging.ILogger%601>, which it requests in the constructor. `ILogger<TCategoryName>` is a [framework-provided service](#framework-provided-services).
 
 It's not unusual to use dependency injection in a chained fashion. Each requested dependency in turn requests its own dependencies. The container resolves the dependencies in the graph and returns the fully resolved service. The collective set of dependencies that must be resolved is typically referred to as a *dependency tree*, *dependency graph*, or *object graph*.
 
-The container resolves `ILogger<TCategoryName>` by taking advantage of [(generic) open types](/dotnet/csharp/language-reference/language-specification/types#open-and-closed-types), eliminating the need to register every [(generic) constructed type](/dotnet/csharp/language-reference/language-specification/types#constructed-types).
+The container resolves `ILogger<TCategoryName>` by taking advantage of [(generic) open types](/dotnet/csharp/language-reference/language-specification/types#843-open-and-closed-types), eliminating the need to register every [(generic) constructed type](/dotnet/csharp/language-reference/language-specification/types#84-constructed-types).
 
 With dependency injection terminology, a service:
 
 - Is typically an object that provides a service to other objects, such as the `IMessageWriter` service.
 - Is not related to a web service, although the service may use a web service.
 
-The framework provides a robust logging system. The `IMessageWriter` implementations shown in the preceding examples were written to demonstrate basic DI, not to implement logging. Most apps shouldn't need to write loggers. The following code demonstrates using the default logging, which only requires the `Worker` to be registered in `ConfigureServices` as a hosted service <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A>:
+The framework provides a robust logging system. The `IMessageWriter` implementations shown in the preceding examples were written to demonstrate basic DI, not to implement logging. Most apps shouldn't need to write loggers. The following code demonstrates using the default logging, which only requires the `Worker` to be registered as a hosted service <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A>:
 
 ```csharp
 public class Worker : BackgroundService
@@ -126,13 +122,13 @@ public class Worker : BackgroundService
         while (!stoppingToken.IsCancellationRequested)
         {
             _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-            await Task.Delay(1000, stoppingToken);
+            await Task.Delay(1_000, stoppingToken);
         }
     }
 }
 ```
 
-Using the preceding code, there is no need to update `ConfigureServices`, because logging is provided by the framework.
+Using the preceding code, there is no need to update `Program.cs`, because logging is provided by the framework.
 
 ## Multiple constructor discovery rules
 
@@ -209,21 +205,30 @@ Microsoft Extensions uses a convention for registering a group of related servic
 
 ## Framework-provided services
 
-The `ConfigureServices` method registers services that the app uses, including platform features. Initially, the `IServiceCollection` provided to `ConfigureServices` has services defined by the framework depending on [how the host was configured](generic-host.md#host-configuration). For apps based on the .NET templates, the framework registers hundreds of services.
+When using any of the available host or app builder patterns, defaults are applied and services are registered by the framework. Consider some of the most popular host and app builder patterns:
+
+- <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.WebHost.CreateDefaultBuilder?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Builder.WebApplication.CreateBuilder?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Components.WebAssembly.Hosting.WebAssemblyHostBuilder.CreateDefault%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Maui.Hosting.MauiApp.CreateBuilder%2A?displayProperty=nameWithType>
+
+After creating a builder from any of these APIs, the `IServiceCollection` has services defined by the framework, depending on [how the host was configured](generic-host.md#host-configuration). For apps based on the .NET templates, the framework could register hundreds of services.
 
 The following table lists a small sample of these framework-registered services:
 
-| Service Type                                                                                  | Lifetime  |
-|-----------------------------------------------------------------------------------------------|-----------|
+| Service Type | Lifetime |
+|--|--|
 | <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory?displayProperty=fullName> | Singleton |
-| <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime>                                  | Singleton |
-| <xref:Microsoft.Extensions.Logging.ILogger%601?displayProperty=fullName>                      | Singleton |
-| <xref:Microsoft.Extensions.Logging.ILoggerFactory?displayProperty=fullName>                   | Singleton |
-| <xref:Microsoft.Extensions.ObjectPool.ObjectPoolProvider?displayProperty=fullName>            | Singleton |
-| <xref:Microsoft.Extensions.Options.IConfigureOptions%601?displayProperty=fullName>            | Transient |
-| <xref:Microsoft.Extensions.Options.IOptions%601?displayProperty=fullName>                     | Singleton |
-| <xref:System.Diagnostics.DiagnosticListener?displayProperty=fullName>                         | Singleton |
-| <xref:System.Diagnostics.DiagnosticSource?displayProperty=fullName>                           | Singleton |
+| <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime> | Singleton |
+| <xref:Microsoft.Extensions.Logging.ILogger%601?displayProperty=fullName> | Singleton |
+| <xref:Microsoft.Extensions.Logging.ILoggerFactory?displayProperty=fullName> | Singleton |
+| <xref:Microsoft.Extensions.ObjectPool.ObjectPoolProvider?displayProperty=fullName> | Singleton |
+| <xref:Microsoft.Extensions.Options.IConfigureOptions%601?displayProperty=fullName> | Transient |
+| <xref:Microsoft.Extensions.Options.IOptions%601?displayProperty=fullName> | Singleton |
+| <xref:System.Diagnostics.DiagnosticListener?displayProperty=fullName> | Singleton |
+| <xref:System.Diagnostics.DiagnosticSource?displayProperty=fullName> | Singleton |
 
 ## Service lifetimes
 
@@ -377,7 +382,7 @@ When services are resolved by `ActivatorUtilities`, constructor injection requir
 
 ## Scope validation
 
-When the app runs in the `Development` environment and calls [CreateDefaultBuilder](generic-host.md#default-builder-settings) to build the host, the default service provider performs checks to verify that:
+When the app runs in the `Development` environment and calls [CreateApplicationBuilder](generic-host.md#default-builder-settings) to build the host, the default service provider performs checks to verify that:
 
 - Scoped services aren't resolved from the root service provider.
 - Scoped services aren't injected into singletons.

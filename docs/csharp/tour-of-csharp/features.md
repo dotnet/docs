@@ -13,7 +13,7 @@ C# and .NET provide many different collection types. Arrays have syntax defined 
 
 ### Arrays
 
-An [***array***](../programming-guide/arrays/index.md) is a data structure that contains a number of variables that are accessed through computed indices. The variables contained in an array, also called the ***elements*** of the array, are all of the same type. This type is called the ***element type*** of the array.
+An [***array***](../language-reference/builtin-types/arrays.md) is a data structure that contains a number of variables that are accessed through computed indices. The variables contained in an array, also called the ***elements*** of the array, are all of the same type. This type is called the ***element type*** of the array.
 
 Array types are reference types, and the declaration of an array variable simply sets aside space for a reference to an array instance. Actual array instances are created dynamically at run time using the `new` operator. The `new` operation specifies the ***length*** of the new array instance, which is then fixed for the lifetime of the instance. The indices of the elements of an array range from `0` to `Length - 1`. The `new` operator automatically initializes the elements of an array to their default value, which, for example, is zero for all numeric types and `null` for all reference types.
 
@@ -94,7 +94,7 @@ This small sample shows the major features for asynchronous programming:
 
 ## Attributes
 
-Types, members, and other entities in a C# program support modifiers that control certain aspects of their behavior. For example, the accessibility of a method is controlled using the `public`, `protected`, `internal`, and `private` modifiers. C# generalizes this capability such that user-defined types of declarative information can be attached to program entities and retrieved at run-time. Programs specify this declarative information by defining and using [***attributes***](../programming-guide/concepts/attributes/index.md).
+Types, members, and other entities in a C# program support modifiers that control certain aspects of their behavior. For example, the accessibility of a method is controlled using the `public`, `protected`, `internal`, and `private` modifiers. C# generalizes this capability such that user-defined types of declarative information can be attached to program entities and retrieved at run-time. Programs specify this declarative information by defining and using [***attributes***](/dotnet/csharp/advanced-topics/reflection-and-attributes).
 
 The following example declares a `HelpAttribute` attribute that can be placed on program entities to provide links to their associated documentation.
 

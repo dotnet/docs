@@ -130,7 +130,7 @@ This implementation calls `MakeDeposit` only if the initial balance is greater t
 Now that the `BankAccount` class has a read-only field for the minimum balance, the final change is to change the hard code `0` to `minimumBalance` in the `MakeWithdrawal` method:
 
 ```csharp
-if (Balance - amount < minimumBalance)
+if (Balance - amount < _minimumBalance)
 ```
 
 After extending the `BankAccount` class, you can modify the `LineOfCreditAccount` constructor to call the new base constructor, as shown in the following code:
@@ -157,7 +157,7 @@ public void MakeWithdrawal(decimal amount, DateTime date, string note)
         throw new InvalidOperationException("Not sufficient funds for this withdrawal");
     }
     var withdrawal = new Transaction(-amount, date, note);
-    allTransactions.Add(withdrawal);
+    _allTransactions.Add(withdrawal);
 }
 ```
 

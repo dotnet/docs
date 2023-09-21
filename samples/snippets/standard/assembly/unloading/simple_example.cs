@@ -12,7 +12,7 @@ namespace simple
         {
         }
 
-        protected override Assembly Load(AssemblyName name)
+        protected override Assembly? Load(AssemblyName name)
         {
             return null;
         }
@@ -23,7 +23,7 @@ namespace simple
     {
         // <Snippet2>
         [MethodImpl(MethodImplOptions.NoInlining)]
-        static int ExecuteAndUnload(string assemblyPath, out WeakReference alcWeakRef)
+        static void ExecuteAndUnload(string assemblyPath, out WeakReference alcWeakRef)
         {
             // <Snippet3>
             var alc = new TestAssemblyLoadContext();
@@ -34,14 +34,12 @@ namespace simple
 
             // <Snippet4>
             var args = new object[1] {new string[] {"Hello"}};
-            int result = (int) a.EntryPoint.Invoke(null, args);
+            _ = a.EntryPoint?.Invoke(null, args);
             // </Snippet4>
 
             // <Snippet5>
             alc.Unload();
             // </Snippet5>
-
-            return result;
         }
         // </Snippet2>
 
@@ -49,7 +47,7 @@ namespace simple
         {
             // <Snippet6>
             WeakReference testAlcWeakRef;
-            int result = ExecuteAndUnload("absolute/path/to/your/assembly", out testAlcWeakRef);
+            ExecuteAndUnload("absolute/path/to/your/assembly", out testAlcWeakRef);
             // </Snippet6>
 
             // <Snippet7>

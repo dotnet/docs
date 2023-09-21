@@ -3,7 +3,7 @@ title: Install .NET on openSUSE
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on openSUSE.
 author: adegeo
 ms.author: adegeo
-ms.date: 12/21/2022
+ms.date: 05/04/2023
 ---
 
 # Install the .NET SDK or the .NET Runtime on openSUSE
@@ -20,7 +20,7 @@ The following table is a list of currently supported .NET releases on openSUSE 1
 
 | openSUSE   | .NET      |
 |------------|-----------|
-| 15         | 7, 6,     |
+| 15.4+      | 7, 6      |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -70,7 +70,13 @@ When you install with a package manager, these libraries are installed for you. 
 - libicu
 - libopenssl1_0_0
 
-If the target runtime environment's OpenSSL version is 1.1 or newer, you'll need to install **compat-openssl10**.
+If the target runtime environment's OpenSSL version is 1.1 or newer, you'll need to install `compat-openssl10`.
+
+Dependencies can be installed with the `zypper install` command. The following snippet demonstrates installing the `krb5` library:
+
+```bash
+sudo zypper install krb5
+```
 
 For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/main/Documentation/self-contained-linux-apps.md).
 

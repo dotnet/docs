@@ -15,7 +15,7 @@ Let's start with a simple definition:
 
 > *Cloud-native architecture and technologies are an approach to designing, constructing, and operating workloads that are built in the cloud and take full advantage of the cloud computing model.*
 
-The [Cloud Native Computing Foundation](https://www.cncf.io/) provides the [official definition](https://github.com/cncf/foundation/blob/master/charter.md):
+The [Cloud Native Computing Foundation](https://www.cncf.io/) provides the [official definition](https://github.com/cncf/toc/blob/main/DEFINITION.md):
 
 > *Cloud-native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach.*
 
@@ -30,7 +30,7 @@ Here are some companies who have implemented cloud-native techniques. Think abou
 | Company | Experience |
 | :-------- | :-------- |
 | [Netflix](https://www.infoq.com/news/2013/06/netflix/) | Has 600+ services in production. Deploys 100 times per day. |
-| [Uber](https://eng.uber.com/micro-deploy/) | Has 1,000+ services in production. Deploys several thousand times each week. |
+| [Uber](https://www.uber.com/blog/micro-deploy-code/) | Has 1,000+ services in production. Deploys several thousand times each week. |
 | [WeChat](https://www.cs.columbia.edu/~ruigu/papers/socc18-final100.pdf) | Has 3,000+ services in production. Deploys 1,000 times a day. |
 
 As you can see, Netflix, Uber, and, WeChat expose cloud-native systems that consist of many independent services. This architectural style enables them to rapidly respond to market conditions. They instantaneously update small areas of a live, complex application, without a full redeployment. They individually scale services as needed.
@@ -201,7 +201,7 @@ Secrets are covered in detail [Cloud-native security](./security.md).
 
 In the top row of the figure, note how Dapr provides [language-specific SDKs](https://docs.dapr.io/developing-applications/sdks/) for popular development platforms. Dapr v1 includes support for .NET, Go, Node.js, Python, PHP, Java, and JavaScript.
 
-While language-specific SDKs enhance the developer experience, Dapr is platform agnostic. Under the hood, Dapr's programming model exposes capabilities through standard HTTP/gRPC communication protocols. Any programming platform can call Dapr via its native HTTP and gRPC APIs.  
+While language-specific SDKs enhance the developer experience, Dapr is platform agnostic. Under the hood, Dapr's programming model exposes capabilities through standard HTTP/gRPC communication protocols. Any programming platform can call Dapr via its native HTTP and gRPC APIs.
 
 The blue boxes across the center of the figure represent the Dapr building blocks. Each exposes pre-built plumbing code for a distributed application capability that your application can consume.
 

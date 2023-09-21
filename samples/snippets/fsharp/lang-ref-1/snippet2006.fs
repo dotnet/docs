@@ -4,11 +4,11 @@ type Expression =
     | Multiply of Expression * Expression
     | Variable of string
 
-let rec Evaluate (env:Map<string,int>) exp =
+let rec Evaluate (env: Map<string, int>) exp =
     match exp with
     | Number n -> n
-    | Add (x, y) -> Evaluate env x + Evaluate env y
-    | Multiply (x, y) -> Evaluate env x * Evaluate env y
+    | Add(x, y) -> Evaluate env x + Evaluate env y
+    | Multiply(x, y) -> Evaluate env x * Evaluate env y
     | Variable id -> env[id]
 
 let environment = Map [ "a", 1; "b", 2; "c", 3 ]

@@ -1,12 +1,12 @@
 ---
-title: Logging
+title: Logging in C#
 author: IEvangelist
-description: Learn how to use the logging framework provided by the Microsoft.Extensions.Logging NuGet package.
+description: Learn about app logging provided by the Microsoft.Extensions.Logging NuGet package in C#.
 ms.author: dapine
-ms.date: 11/03/2022
+ms.date: 06/23/2023
 ---
 
-# Logging in .NET
+# Logging in C# and .NET
 
 .NET supports a logging API that works with a variety of built-in and third-party logging providers. This article shows how to use the logging API with [built-in providers](logging-providers.md). The logging providers are responsible for determining where logs are written to. Most of the code examples shown in this article apply to any .NET app that uses the [Generic Host](generic-host.md). For apps that don't use the Generic Host, see [Non-host console app](#non-host-console-app).
 
@@ -369,9 +369,9 @@ In the preceding example, the `DateTimeOffset` instance is the type that corresp
 
 For more information on `DateTime` and `DateTimeOffset` formatting, see [Custom date and time format strings](../../standard/base-types/custom-date-and-time-format-strings.md).
 
-### Log message template formatting examples
+#### Examples
 
-Log message templates allow placeholder formatting. The following examples show how to format a message template using the `{}` placeholder syntax. Additionally, an example of escaping the `{}` placeholder syntax is shown with its output. Finally, string interpolation with templating placeholders is also shown:
+The following examples show how to format a message template using the `{}` placeholder syntax. Additionally, an example of escaping the `{}` placeholder syntax is shown with its output. Finally, string interpolation with templating placeholders is also shown:
 
 ```csharp
 logger.LogInformation("Number: {Number}", 1);               // Number: 1
@@ -380,7 +380,9 @@ logger.LogInformation($"{{{{Number}}}}: {{Number}}", 5);    // {Number}: 5
 ```
 
 > [!TIP]
-> You should always use log message template formatting when logging. You should avoid string interpolation as it can cause performance issues.
+>
+> - In most cases, you should use log message template formatting when logging. Use of string interpolation can cause performance issues.
+> - Code analysis rule [CA2254: Template should be a static expression](../../fundamentals/code-analysis/quality-rules/ca2254.md) helps alert you to places where your log messages don't use proper formatting.
 
 ## Log exceptions
 
@@ -416,14 +418,16 @@ For example, consider the following worker service app:
 - Created with the .NET Worker templates.
 - *appsettings.json* and *appsettings.Development.json* deleted or renamed.
 
-With the preceding setup, navigating to the privacy or home page produces many `Trace`, `Debug`, and `Information`  messages with `Microsoft` in the category name.
+With the preceding setup, navigating to the privacy or home page produces many `Trace`, `Debug`, and `Information` messages with `Microsoft` in the category name.
 
 The following code sets the default log level when the default log level is not set in configuration:
 
 ```csharp
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureLogging(logging => logging.SetMinimumLevel(LogLevel.Warning))
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Logging.SetMinimumLevel(LogLevel.Warning);
+
+using IHost host = builder.Build();
 
 await host.RunAsync();
 ```
@@ -433,23 +437,25 @@ await host.RunAsync();
 A filter function is invoked for all providers and categories that don't have rules assigned to them by configuration or code:
 
 ```csharp
-await Host.CreateDefaultBuilder(args)
-    .ConfigureLogging(logging =>
-        logging.AddFilter((provider, category, logLevel) =>
-        {
-            return provider.Contains("ConsoleLoggerProvider")
-                && (category.Contains("Example") || category.Contains("Microsoft"))
-                && logLevel >= LogLevel.Information;
-        }))
-    .Build()
-    .RunAsync();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Logging.AddFilter((provider, category, logLevel) =>
+{
+    return provider.Contains("ConsoleLoggerProvider")
+        && (category.Contains("Example") || category.Contains("Microsoft"))
+        && logLevel >= LogLevel.Information;
+});
+
+using IHost host = builder.Build();
+
+await host.RunAsync();
 ```
 
 The preceding code displays console logs when the category contains `Example` or `Microsoft` and the log level is `Information` or higher.
 
 ## Log scopes
 
- A *scope* can group a set of logical operations. This grouping can be used to attach the same data to each log that's created as part of a set. For example, every log created as part of processing a transaction can include the transaction ID.
+ A *scope* groups a set of logical operations. This grouping can be used to attach the same data to each log that's created as part of a set. For example, every log created as part of processing a transaction can include the transaction ID.
 
 A scope:
 
@@ -496,12 +502,14 @@ The following JSON enables scopes for the console provider:
 The following code enables scopes for the console provider:
 
 ```csharp
-await Host.CreateDefaultBuilder(args)
-    .ConfigureLogging((_, logging) =>
-        logging.ClearProviders()
-            .AddConsole(options => options.IncludeScopes = true))
-    .Build()
-    .RunAsync();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole(options => options.IncludeScopes = true);
+
+using IHost host = builder.Build();
+
+await host.RunAsync();
 ```
 
 ## Non-host console app
@@ -533,7 +541,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-IHost host = Host.CreateDefaultBuilder(args).Build();
+using IHost host = Host.CreateApplicationBuilder(args).Build();
 
 var logger = host.Services.GetRequiredService<ILogger<Program>>();
 logger.LogInformation("Host created.");
@@ -553,14 +561,14 @@ Its project file would look similar to the following:
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
   </ItemGroup>
 
 </Project>
@@ -572,7 +580,7 @@ Logging should be so fast that it isn't worth the performance cost of asynchrono
 
 ## Change log levels in a running app
 
-The Logging API doesn't include a scenario to change log levels while an app is running. However, some configuration providers are capable of reloading configuration, which takes immediate effect on logging configuration. For example, the [File Configuration Provider](configuration-providers.md#file-configuration-provider) reloads logging configuration by default. If configuration is changed in code while an app is running, the app can call [IConfigurationRoot.Reload](xref:Microsoft.Extensions.Configuration.IConfigurationRoot.Reload%2A) to update the app's logging configuration.
+The Logging API doesn't include a scenario to change log levels while an app is running. However, some configuration providers are capable of reloading configuration, which takes immediate effect on logging configuration. For example, the [File Configuration Provider](configuration-providers.md#file-configuration-provider) reloads logging configuration by default. If the configuration is changed in code while an app is running, the app can call [IConfigurationRoot.Reload](xref:Microsoft.Extensions.Configuration.IConfigurationRoot.Reload%2A) to update the app's logging configuration.
 
 ## NuGet packages
 
@@ -588,13 +596,15 @@ The preferred approach for setting log filter rules is by using [Configuration](
 The following example shows how to register filter rules in code:
 
 ```csharp
-await Host.CreateDefaultBuilder(args)
-    .ConfigureLogging(logging =>
-        logging.AddFilter("System", LogLevel.Debug)
-            .AddFilter<DebugLoggerProvider>("Microsoft", LogLevel.Information)
-            .AddFilter<ConsoleLoggerProvider>("Microsoft", LogLevel.Trace))
-    .Build()
-    .RunAsync();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Logging.AddFilter("System", LogLevel.Debug)
+    .AddFilter<DebugLoggerProvider>("Microsoft", LogLevel.Information)
+    .AddFilter<ConsoleLoggerProvider>("Microsoft", LogLevel.Trace);
+
+using IHost host = builder.Build();
+
+await host.RunAsync();
 ```
 
 `logging.AddFilter("System", LogLevel.Debug)` specifies the `System` category and log level `Debug`. The filter is applied to all providers because a specific provider was not configured.
@@ -611,4 +621,5 @@ await Host.CreateDefaultBuilder(args)
 - [Implement a custom logging provider in .NET](custom-logging-provider.md)
 - [Console log formatting](console-log-formatter.md)
 - [High-performance logging in .NET](high-performance-logging.md)
+- [Logging guidance for .NET library authors](logging-library-authors.md)
 - Logging bugs should be created in the [github.com/dotnet/runtime](https://github.com/dotnet/runtime//issues) repo

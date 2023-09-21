@@ -1,6 +1,6 @@
 ---
-title: "Member access operators and expressions"
-description: "C# operators that you use to access type members. These operators include the dot operator - `.`, indexers - `[`, `]`, `^` and `..`, and invocation - `(`, `)`."
+title: "Member access and null-conditional operators and expressions:"
+description: "C# operators that you use to access type members or null-conditionally access type members. These operators include the dot operator - `.`, indexers - `[`, `]`, `^` and `..`, and invocation - `(`, `)`."
 ms.date: 11/28/2022
 author: pkulikov
 f1_keywords:
@@ -35,7 +35,7 @@ helpviewer_keywords:
 ---
 # Member access operators and expressions - the dot, indexer, and invocation operators.
 
-You use several operators and expressions to access a type member. These operators include member access (`.`), array element or indexer access (`[]`), index-from-end (`^`), range (`..`), null-conditional operators (`?.` and `?[]`), and method invocation (`()`).
+You use several operators and expressions to access a type member. These operators include member access (`.`), array element or indexer access (`[]`), index-from-end (`^`), range (`..`), null-conditional operators (`?.` and `?[]`), and method invocation (`()`). These include the *null-conditional* member access (`?.`), and indexer access (`?[]`) operators.
 
 - [`.` (member access)](#member-access-expression-): to access a member of a namespace or a type
 - [`[]` (array element or indexer access)](#indexer-operator-): to access an array element or a type indexer
@@ -78,7 +78,7 @@ If an array index is outside the bounds of the corresponding dimension of an arr
 
 As the preceding example shows, you also use square brackets when you declare an array type or instantiate an array instance.
 
-For more information about arrays, see [Arrays](../../programming-guide/arrays/index.md).
+For more information about arrays, see [Arrays](../builtin-types/arrays.md).
 
 ### Indexer access
 
@@ -94,7 +94,7 @@ For more information about indexers, see [Indexers](../../programming-guide/inde
 
 For information about pointer element access, see the [Pointer element access operator []](pointer-related-operators.md#pointer-element-access-operator-) section of the [Pointer related operators](pointer-related-operators.md) article.
 
-You also use square brackets to specify [attributes](../../programming-guide/concepts/attributes/index.md):
+You also use square brackets to specify [attributes](/dotnet/csharp/advanced-topics/reflection-and-attributes):
 
 ```csharp
 [System.Diagnostics.Conditional("DEBUG")]
@@ -103,7 +103,7 @@ void TraceMethod() {}
 
 ## Null-conditional operators `?.` and `?[]`
 
-A null-conditional operator applies a [member access](#member-access-expression-), `?.`, or [element access](#indexer-operator-), `?[]`, operation to its operand only if that operand evaluates to non-null; otherwise, it returns `null`. That is,
+A null-conditional operator applies a [member access](#member-access-expression-) (`?.`) or [element access](#indexer-operator-) (`?[]`) operation to its operand only if that operand evaluates to non-null; otherwise, it returns `null`. That is:
 
 - If `a` evaluates to `null`, the result of `a?.x` or `a?[x]` is `null`.
 - If `a` evaluates to non-null, the result of `a?.x` or `a?[x]` is the same as the result of `a.x` or `a[x]`, respectively.
@@ -228,6 +228,8 @@ The following example demonstrates the effect of using all the ranges presented 
 
 For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
 
+The `..` token is also used as the [spread operator](./collection-expressions.md#spread-element) in a collection expression.
+
 ## Operator overloadability
 
 The `.`, `()`, `^`, and `..` operators can't be overloaded. The `[]` operator is also considered a non-overloadable operator. Use [indexers](../../programming-guide/indexers/index.md) to support indexing with user-defined types.
@@ -236,10 +238,10 @@ The `.`, `()`, `^`, and `..` operators can't be overloaded. The `[]` operator is
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Member access](~/_csharpstandard/standard/expressions.md#1176-member-access)
-- [Element access](~/_csharpstandard/standard/expressions.md#11710-element-access)
-- [Null-conditional member access](~/_csharpstandard/standard/expressions.md#1177-null-conditional-member-access)
-- [Invocation expressions](~/_csharpstandard/standard/expressions.md#1178-invocation-expressions)
+- [Member access](~/_csharpstandard/standard/expressions.md#1287-member-access)
+- [Element access](~/_csharpstandard/standard/expressions.md#12811-element-access)
+- [Null-conditional member access](~/_csharpstandard/standard/expressions.md#1288-null-conditional-member-access)
+- [Invocation expressions](~/_csharpstandard/standard/expressions.md#1289-invocation-expressions)
 
 For more information about indices and ranges, see the [feature proposal note](~/_csharplang/proposals/csharp-8.0/ranges.md).
 

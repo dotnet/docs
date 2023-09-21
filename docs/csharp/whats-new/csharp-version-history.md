@@ -3,7 +3,7 @@ title: The history of C# - C# Guide
 description: What did the language look like in its earliest versions, and how has it evolved since?
 author: erikdietrich
 ms.date: 06/18/2021
-ms.custom: updateeachrelease
+ms.custom: "updateeachrelease, UpdateFrequency1"
 ---
 
 # The history of C\#
@@ -140,7 +140,7 @@ C# 8.0 is the first major C# release that specifically targets .NET Core. Some f
   - Property patterns
   - Tuple patterns
   - Positional patterns
-- [Using declarations](../language-reference/keywords/using-directive.md)
+- [Using declarations](../language-reference/statements/using.md)
 - [Static local functions](../programming-guide/classes-and-structs/local-functions.md)
 - [Disposable ref structs](../language-reference/builtin-types/ref-struct.md)
 - [Nullable reference types](../language-reference/builtin-types/nullable-reference-types.md)
@@ -235,14 +235,14 @@ C# version 7.0 was released with Visual Studio 2017. This version has some evolu
 - [Pattern matching](../fundamentals/functional/pattern-matching.md)
 - [Local functions](../programming-guide/classes-and-structs/local-functions.md)
 - [Expanded expression bodied members](../programming-guide/statements-expressions-operators/expression-bodied-members.md)
-- [Ref locals](../language-reference/statements/declarations.md#ref-locals)
+- [Ref locals](../language-reference/statements/declarations.md#reference-variables)
 - [Ref returns](../language-reference/statements/jump-statements.md#ref-returns)
 
 Other features included:
 
 - [Discards](../fundamentals/functional/discards.md)
 - Binary Literals and Digit Separators
-- [Throw expressions](../language-reference/keywords/throw.md#the-throw-expression)
+- [Throw expressions](../language-reference/statements/exception-handling-statements.md#the-throw-expression)
 
 All of these features offer new capabilities for developers and the opportunity to write cleaner code than ever. A highlight is condensing the declaration of variables to use with the `out` keyword and by allowing multiple return values via tuple. .NET Core now targets any operating system and has its eyes firmly on the cloud and on portability. These new capabilities certainly occupy the language designers' thoughts and time, in addition to coming up with new features.
 
@@ -276,7 +276,7 @@ They did one other thing along with this version, though it's not a traditional 
 
 C# version 5.0, released with Visual Studio 2012, was a focused version of the language. Nearly all of the effort for that version went into another groundbreaking language concept: the `async` and `await` model for asynchronous programming.  Here's the major features list:
 
-- [Asynchronous members](../async.md)
+- [Asynchronous members](../asynchronous-programming/index.md)
 - [Caller info attributes](../language-reference/attributes/caller-information.md)
 - [Code Project: Caller Info Attributes in C# 5.0](https://www.codeproject.com/Tips/606379/Caller-Info-Attributes-in-Csharp)
 
@@ -311,7 +311,7 @@ C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full
 - [Anonymous types](../fundamentals/types/anonymous-types.md)
 - [Query expressions](../linq/query-expression-basics.md)
 - [Lambda expressions](../language-reference/operators/lambda-expressions.md)
-- [Expression trees](../expression-trees.md)
+- [Expression trees](/dotnet/csharp/advanced-topics/expression-trees)
 - [Extension methods](../programming-guide/classes-and-structs/extension-methods.md)
 - [Implicitly typed local variables](../language-reference/statements/declarations.md#implicitly-typed-local-variables)
 - [Partial methods](../language-reference/keywords/partial-method.md)
@@ -375,6 +375,6 @@ The major features of C# 1.0 included:
 - [Delegates](../delegates-overview.md)
 - [Operators and expressions](../language-reference/operators/index.md)
 - [Statements](../programming-guide/statements-expressions-operators/statements.md)
-- [Attributes](../programming-guide/concepts/attributes/index.md)
+- [Attributes](/dotnet/csharp/advanced-topics/reflection-and-attributes)
 
 _Article_ [_originally published on the NDepend blog_](https://blog.ndepend.com/c-versions-look-language-history/)_, courtesy of Erik Dietrich and Patrick Smacchia._

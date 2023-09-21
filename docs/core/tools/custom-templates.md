@@ -14,7 +14,7 @@ You can install custom templates from a NuGet package on any NuGet feed, by refe
 The template engine is open source, and the online code repository is at [dotnet/templating](https://github.com/dotnet/templating/) on GitHub. More templates, including templates from third parties, can be found using [`dotnet new search`](dotnet-new-search.md). For more information about creating and using custom templates, see [How to create your own templates for dotnet new](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/) and the [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki).
 
 > [!NOTE]
-> Template examples are available at the [dotnet/dotnet-template-samples](https://github.com/dotnet/dotnet-template-samples) GitHub repository. However, while these examples are good resource for learning how the templates work, the repository is archived and no longer maintained. The examples may be out of date and no longer working.
+> Template examples are available at the [dotnet/templating](https://aka.ms/template-samples) GitHub repository.
 
 To follow a walkthrough and create a template, see the [Create a custom template for dotnet new](../tutorials/cli-templates-create-item-template.md) tutorial.
 
@@ -91,6 +91,67 @@ The *template.json* file looks like the following:
 
 The *mytemplate* folder is an installable template package. Once the package is installed, the `shortName` can be used with the `dotnet new` command. For example, `dotnet new adatumconsole` would output the `console.cs` and `readme.txt` files to the current folder.
 
+## Template localization
+
+The .NET templates are localizable. If a template is localized for the language matching the current locale, its elements appear in the same language as the CLI. Localization is optional when creating new templates.
+
+The localizable elements on a template are:
+
+- Name
+- Author
+- Description
+- Symbols
+  - Description
+  - Display Name
+  - Descriptions and Display name of choices for choice parameters
+- Post actions
+  - Description
+  - Manual instructions
+
+Localization files have a JSON format, and just one file per culture should exist. The naming convention is: `templatestrings.<lang code>.json`, where `lang code` corresponds to one of the [CultureInfo](/dotnet/api/system.globalization.cultureinfo.name) options. All localization files should be inside the `.template-config\localize` folder.
+
+The localization JSON consists of key value pairs:
+
+- The key is the reference to an element of `template.json` to be localized. If the element is a child, use the full path with a `/` delimiter.
+- The value is the localization string of the element given by the key.
+
+For more information about localizing templates, see the [dotnet templating wiki's localization page](https://aka.ms/templating-localization).
+
+### Example
+
+For example, here's *template.json* file with some localizable fields:
+
+```JSON
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Microsoft",
+  "classifications": "Config",
+  "name": "EditorConfig file",
+  "description": "Creates an .editorconfig file for configuring code style preferences.",
+  "symbols": {
+    "Empty": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false",
+      "displayName": "Empty",
+      "description": "Creates empty .editorconfig instead of the defaults for .NET."
+    }
+  }
+}
+```
+
+And some fields are to be localized to Brazilian Portuguese. The filename will be `templatestrings.pt-BR.json` to match the culture, and it would look like:
+
+```JSON
+{
+  "author": "Microsoft",
+  "name": "Arquivo EditorConfig",
+  "description": "Cria um arquivo .editorconfig para configurar as preferências de estilo de código.",
+  "symbols/Empty/displayName": "Vazio",
+  "symbols/Empty/description": "Cria .editorconfig vazio em vez dos padrões para .NET."
+}
+```
+
 ## Pack a template into a NuGet package (nupkg file)
 
 A custom template is packed with the [dotnet pack](dotnet-pack.md) command and a *.csproj* file. Alternatively, [NuGet](/nuget/tools/nuget-exe-cli-reference) can be used with the [nuget pack](/nuget/tools/cli-ref-pack) command along with a *.nuspec* file. However, NuGet requires the .NET Framework on Windows and [Mono](https://www.mono-project.com/) on Linux and macOS.
@@ -113,7 +174,7 @@ An easy way to exclude all code files from being compiled by your template proje
 
 An easy way to structure your template pack is to put all templates in individual folders, and then each template folder inside of a *templates* folder that is located in the same directory as your *.csproj* file. This way, you can use a single project item to include all files and folders in the *templates* as **content**. Inside of an `<ItemGroup>` element, create a `<Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />` item.
 
-Here's an example *.csproj* file that follows all of the guidelines above. It packs the *templates* child folder to the *content* package folder and excludes any code file from being compiled.
+Here's an example *.csproj* file that follows all of these guidelines. It packs the *templates* child folder to the *content* package folder and excludes any code file from being compiled.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -141,7 +202,7 @@ Here's an example *.csproj* file that follows all of the guidelines above. It pa
 </Project>
 ```
 
-The example below demonstrates the file and folder structure of using a *.csproj* to create a template package. The *MyDotnetTemplates.csproj* file and *templates* folder are both located at the root of a directory named *project_folder*. The *templates* folder contains two templates, *mytemplate1* and *mytemplate2*. Each template has content files and a *.template.config* folder with a *template.json* config file.
+The following example demonstrates the file and folder structure of using a *.csproj* to create a template package. The *MyDotnetTemplates.csproj* file and *templates* folder are both located at the root of a directory named *project_folder*. The *templates* folder contains two templates, *mytemplate1* and *mytemplate2*. Each template has content files and a *.template.config* folder with a *template.json* config file.
 
 ```text
 project_folder
@@ -203,7 +264,7 @@ dotnet new install <FILE_SYSTEM_DIRECTORY>
 
 ## Get a list of installed template packages
 
-The uninstall command, without any other parameters, will list all installed template packages and included templates.
+The uninstall command, without any other parameters, lists all installed template packages and included templates.
 
 ```dotnetcli
 dotnet new uninstall
@@ -226,7 +287,7 @@ Currently installed items:
 ...
 ```
 
-The first level of items after `Currently installed items:` are the identifiers used in uninstalling a template package. And in the previous example, `Microsoft.Azure.WebJobs.ProjectTemplates` is listed. If the template package was installed by using a file system path, this identifier will be the folder path of the *.template.config* folder. Only the template packages installed via `dotnet new install` are shown in the list. The template packages that are built into the .NET SDK aren't shown.
+The first level of items after `Currently installed items:` are the identifiers used in uninstalling a template package. And in the previous example, `Microsoft.Azure.WebJobs.ProjectTemplates` is listed. If the template package was installed by using a file system path, this identifier is the folder path of the *.template.config* folder. Only the template packages installed via `dotnet new install` are shown in the list. The template packages that are built into the .NET SDK aren't shown.
 
 ## Uninstall a template package
 
@@ -246,7 +307,7 @@ dotnet new uninstall <FILE_SYSTEM_DIRECTORY>
 
 ## Create a project using a custom template
 
-After a template is installed, use the template by executing the `dotnet new <TEMPLATE>` command as you would with any other pre-installed template. You can also specify [options](dotnet-new.md#options) to the `dotnet new` command, including template-specific options you configured in the template settings. Supply the template's short name directly to the command:
+After a template is installed, use the template by executing the `dotnet new <TEMPLATE>` command as you would with any other preinstalled template. You can also specify [options](dotnet-new.md#options) to the `dotnet new` command, including template-specific options you configured in the template settings. Supply the template's short name directly to the command:
 
 ```dotnetcli
 dotnet new <TEMPLATE>
@@ -256,6 +317,6 @@ dotnet new <TEMPLATE>
 
 - [Create a custom template for dotnet new (tutorial)](../tutorials/cli-templates-create-item-template.md)
 - [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)
-- [dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)
+- [Template samples](https://aka.ms/template-samples)
 - [How to create your own templates for dotnet new](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/)
 - [*template.json* schema at the JSON Schema Store](http://json.schemastore.org/template)

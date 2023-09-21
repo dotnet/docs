@@ -48,7 +48,7 @@ namespace CancellationWinForms
       {
          InitializeComponent();
 
-         // Create the UI task scheduler from the current sychronization
+         // Create the UI task scheduler from the current synchronization
          // context.
          uiTaskScheduler = TaskScheduler.FromCurrentSynchronizationContext();
       }

@@ -73,11 +73,11 @@ To configure the above structure, add <xref:System.Net.Http.IHttpClientFactory> 
 In the next snippet, you can see how `AddHttpClient()` can be used to register Typed Clients (Service Agents) that need to use `HttpClient`.
 
 ```csharp
-// Startup.cs
+// Program.cs
 //Add http client services at ConfigureServices(IServiceCollection services)
-services.AddHttpClient<ICatalogService, CatalogService>();
-services.AddHttpClient<IBasketService, BasketService>();
-services.AddHttpClient<IOrderingService, OrderingService>();
+builder.Services.AddHttpClient<ICatalogService, CatalogService>();
+builder.Services.AddHttpClient<IBasketService, BasketService>();
+builder.Services.AddHttpClient<IOrderingService, OrderingService>();
 ```
 
 Registering the client services as shown in the previous snippet, makes the `DefaultClientFactory` create a standard `HttpClient` for each service. The typed client is registered as transient with DI container. In the preceding code, `AddHttpClient()` registers _CatalogService_, _BasketService_, _OrderingService_ as transient services so they can be injected and consumed directly without any need for additional registrations.
@@ -85,9 +85,9 @@ Registering the client services as shown in the previous snippet, makes the `Def
 You could also add instance-specific configuration in the registration to, for example, configure the base address, and add some resiliency policies, as shown in the following:
 
 ```csharp
-services.AddHttpClient<ICatalogService, CatalogService>(client =>
+builder.Services.AddHttpClient<ICatalogService, CatalogService>(client =>
 {
-    client.BaseAddress = new Uri(Configuration["BaseUrl"]);
+    client.BaseAddress = new Uri(builder.Configuration["BaseUrl"]);
 })
     .AddPolicyHandler(GetRetryPolicy())
     .AddPolicyHandler(GetCircuitBreakerPolicy());
@@ -117,7 +117,7 @@ The `HttpMessageHandler` objects in the pool have a lifetime that's the length o
 
 ```csharp
 //Set 5 min as the lifetime for the HttpMessageHandler objects in the pool used for the Catalog Typed Client
-services.AddHttpClient<ICatalogService, CatalogService>()
+builder.Services.AddHttpClient<ICatalogService, CatalogService>()
     .SetHandlerLifetime(TimeSpan.FromMinutes(5));
 ```
 
@@ -201,7 +201,7 @@ Up to this point, the above code snippet only shows the example of performing re
   [https://learn.microsoft.com/aspnet/core/fundamentals/http-requests](/aspnet/core/fundamentals/http-requests)
 
 - **HttpClientFactory source code in the `dotnet/runtime` GitHub repository**  
-  <https://github.com/dotnet/runtime/tree/release/6.0/src/libraries/Microsoft.Extensions.Http/>
+  <https://github.com/dotnet/runtime/tree/release/7.0/src/libraries/Microsoft.Extensions.Http/>
 
 - **Polly (.NET resilience and transient-fault-handling library)**  
   <https://thepollyproject.azurewebsites.net/>

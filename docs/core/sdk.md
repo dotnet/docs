@@ -1,7 +1,7 @@
 ---
 title: .NET SDK overview
 description: Learn about the .NET SDK (formerly known as the .NET Core SDK), which is a set of libraries and tools used to create .NET projects.
-ms.date: 07/14/2022
+ms.date: 08/10/2023
 ms.technology: dotnet-cli
 ---
 # What is the .NET SDK?
@@ -33,6 +33,11 @@ interested in how to set up the SDK on your CI build server, see [Use the .NET S
 
 By default, the SDK installs in a "side-by-side" (SxS) manner, which means multiple versions
 can coexist at any given time on a single machine. For information about how the version gets picked when you're running CLI commands, see [Select the .NET version to use](versions/selection.md).
+
+## Security guide
+
+> [!IMPORTANT]
+> The .NET SDK locates and executes various tools that ship as separate executable binaries in the SDK. In most cases, the SDK is able to determine the full path to the executable. However, there are exceptions where the SDK cannot determine the path and relies on user input. It's possible that a user can provide input that causes the .NET SDK to execute malicious software. For this reason, you shouldn't trust any repos with binaries that match specific file names in the SDK install location, for example, *msbuild.exe*. The SDK installs to a versioned folder such as *C:\Program Files\dotnet\sdk\7.0.400\\* on Windows or */usr/bin/share/dotnet/sdk/7.0.400* on Linux.
 
 ## See also
 

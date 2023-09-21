@@ -1,9 +1,11 @@
 ﻿// <snippet1>
 using System;
+using System.Runtime.Versioning;
 using System.Security.Cryptography;
 using System.Security.Cryptography.Xml;
 using System.Xml;
 
+[SupportedOSPlatform("Windows")]
 public class SignXML
 {
     public static void Main(String[] args)
@@ -105,7 +107,7 @@ public class SignXML
 
         // Append the element to the XML document.
         // <snippet12>
-        xmlDoc.DocumentElement.AppendChild(xmlDoc.ImportNode(xmlDigitalSignature, true));
+        xmlDoc.DocumentElement?.AppendChild(xmlDoc.ImportNode(xmlDigitalSignature, true));
         // </snippet12>
     }
 }

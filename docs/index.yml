@@ -32,10 +32,6 @@ highlightedContent:
       itemType: learn
       url: https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro
     # Card
-    - title: "Browse .NET learning paths"
-      itemType: learn
-      url: /training/dotnet/
-    # Card
     - title: "Interactive introduction to C#"
       itemType: get-started
       url: csharp/tour-of-csharp/tutorials/hello-world.yml
@@ -70,9 +66,6 @@ conceptualContent:
         - url: core/whats-new/dotnet-7.md
           itemType: whats-new
           text: What's new in .NET 7
-        - url: core/deploying/index.md
-          itemType: deploy
-          text: Deploy .NET apps
         - url: https://dotnetfoundation.org
           itemType: overview
           text: .NET Foundation
@@ -82,6 +75,7 @@ conceptualContent:
         - url: /dotnet/communitytoolkit/
           itemType: overview
           text: Community Toolkits
+
     # Card
     - title: .NET concepts
       links:
@@ -91,26 +85,43 @@ conceptualContent:
         - url: fundamentals/index.yml
           itemType: concept
           text: .NET fundamentals
-        - url: /aspnet/core/
-          itemType: overview
-          text: ASP.NET Core
-        - url: /ef/core/
-          itemType: overview
-          text: Entity Framework Core
         - url: fundamentals/implementations.md
           itemType: concept
           text: .NET implementations
         - url: framework/index.yml
           itemType: overview
-          text: .NET Framework (Windows) apps
+          text: .NET Framework (for Windows)
+        - url: standard/net-standard.md
+          itemType: overview
+          text: .NET Standard
         - url: /answers/products/dotnet
           itemType: get-started
           text: .NET Q&A
         - url: https://techcommunity.microsoft.com/t5/net/ct-p/dotnet
           itemType: concept
           text: .NET tech community forums
+        - url: standard/security/index.md
+          itemType: overview
+          text: Security in .NET
+
     # Card
     - title: Develop .NET apps
+      links:
+        - url: /dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0&preserve-view=true
+          itemType: tutorial
+          text: Create .NET desktop apps for Windows
+        - url: /aspnet/core/
+          itemType: overview
+          text: Create web apps with ASP.NET Core
+        - url: orleans/index.yml
+          itemType: overview
+          text: Build cloud-native .NET apps with Orleans
+        - url: core/docker/build-container.md
+          itemType: tutorial
+          text: Containerize .NET apps with Docker
+
+    # Card
+    - title: .NET tools and diagnostics
       links:
         - url: core/sdk.md
           itemType: overview
@@ -118,42 +129,104 @@ conceptualContent:
         - url: core/tools/index.md
           itemType: overview
           text: .NET CLI overview
-        - url: standard/net-standard.md
+        - url: core/project-sdk/msbuild-props.md
+          itemType: reference
+          text: MSBuild property reference
+        - url: core/tools/global-tools.md
           itemType: overview
-          text: .NET Standard
+          text: Global and local tools
+        - url: core/diagnostics/index.md
+          itemType: overview
+          text: Diagnostics tools
+        - url: fundamentals/code-analysis/overview.md
+          itemType: overview
+          text: Code analysis
+        - url: fundamentals/package-validation/overview.md
+          itemType: overview
+          text: Package validation
+          
+    # Card
+    - title: Migrate and upgrade
+      links:
         - url: core/porting/index.md
           itemType: overview
           text: Port from .NET Framework to .NET
         - url: core/compatibility/breaking-changes.md
           itemType: concept
           text: .NET breaking changes
-        - url: orleans/index.yml
+        - url: https://dotnet.microsoft.com/download
+          itemType: download
+          text: Download .NET
+
+    # Card
+    - title: DevOps and testing
+      links:
+        - url: core/deploying/index.md
+          itemType: deploy
+          text: Deploy .NET apps
+        - url: core/testing/index.md
           itemType: overview
-          text: Build cloud-native .NET apps with Orleans
-        - url: core/docker/build-container.md
-          itemType: tutorial
-          text: Containerize .NET apps with Docker
-        - url: /dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0&preserve-view=true
-          itemType: tutorial
-          text: Create .NET desktop apps for Windows
-          
+          text: Unit test .NET apps
+        - url: devops/github-actions-overview.md
+          itemType: overview
+          text: GitHub Actions and .NET
+
+    # Card
+    - title: Data access in .NET
+      links:
+        - url: standard/linq/index.md
+          itemType: overview
+          text: LINQ overview
+        - url: /ef/core/
+          itemType: overview
+          text: Entity Framework Core
+        - url: /dotnet/api/overview/azure/storage/
+          itemType: overview
+          text: Azure Storage
+        - url: standard/data/xml/index.md
+          itemType: overview
+          text: XML data
+
+    # Card
+    - title: Advanced .NET programming
+      links:
+        - url: standard/asynchronous-programming-patterns/index.md
+          itemType: overview
+          text: Async programming patterns overview
+        - url: standard/threading/managed-threading-basics.md
+          itemType: overview
+          text: Threading overview
+        - url: standard/parallel-programming/index.md
+          itemType: overview
+          text: Parallel programming overview
+        - url: standard/native-interop/index.md
+          itemType: overview
+          text: Native interoperability
+        - url: standard/garbage-collection/index.md
+          itemType: overview
+          text: Garbage collection
+
 # tools section (optional)
-## Languages: C#, F#, and Visual Basic
+## Languages: strategy, C#, F#, and Visual Basic
 tools:
   title: Programming languages # < 60 chars (optional)
-  summary: "You can write .NET apps in C#, F#, or Visual Basic."
+  summary: "Write your app in your favorite language"
   items:
     # Card
+    - title: "Write .NET apps in C#, F#, or Visual Basic"
+      imageSrc: /media/logos/logo_net.svg
+      url: fundamentals/languages.md
+    # Card
     - title: "A modern, object-oriented, and type-safe language"
-      imageSrc: /media/logos/logo_Csharp.svg
+      imageSrc: ./media/logo_csharp.png
       url: csharp/index.yml
     # Card
     - title: "A simple language for succinct, robust, and performant code"
-      imageSrc: /media/logos/logo_Fsharp.svg
+      imageSrc: ./media/logo_fsharp.png
       url: fsharp/index.yml
     # Card
     - title: "An approachable language with readable syntax"
-      imageSrc: /media/logos/logo_VB.svg
+      imageSrc: ./media/logo_vb.png
       url: visual-basic/index.yml
 
 # Card with summary style
@@ -246,8 +319,6 @@ additionalContent:
             text: Azure Cognitive Services
           - url: /azure/machine-learning
             text: Azure machine learning
-          - url: spark/index.yml
-            text: .NET for Apache Spark
           - url: fsharp/scenarios/machine-learning.md
             text: F# for Machine Leaning
       # Card
@@ -293,9 +364,9 @@ additionalContent:
         summary: API reference documentation for ML.NET
         url: ../api/index.md?view=ml-dotnet&preserve-view=true
       # Card
-      - title: ".NET for Apache Spark API reference"
-        summary: API reference documentation for .NET for Apache Spark
-        url: ../api/index.md?view=spark-dotnet&preserve-view=true
+      - title: ".NET Platform Extensions API reference"
+        summary: API reference documentation for .NET Platform Extensions
+        url: ../api/index.md?view=dotnet-plat-ext-8.0
       # Card
       - title: "C# language reference"
         summary: C# language reference and specification

@@ -8,6 +8,8 @@ ms.date: 12/01/2022
 
 ## [Hello, World!](/samples/dotnet/samples/orleans-hello-world-sample-app)
 
+<!-- markdownlint-disable-file MD034 -->
+
 :::image type="content" source="https://raw.githubusercontent.com/dotnet/samples/main/orleans/HelloWorld/code.png" alt-text="Sample code for the Hello World Orleans app.":::
 
 A *Hello, World!* application that demonstrates how to create and use your first grains.

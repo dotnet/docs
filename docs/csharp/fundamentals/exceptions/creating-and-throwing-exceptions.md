@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # Creating and Throwing Exceptions
 
-Exceptions are used to indicate that an error has occurred while running the program. Exception objects that describe an error are created and then *thrown* with the [`throw`](../../language-reference/keywords/throw.md) keyword. The runtime then searches for the most compatible exception handler.
+Exceptions are used to indicate that an error has occurred while running the program. Exception objects that describe an error are created and then *thrown* with the [`throw` statement or expression](../../language-reference/statements/exception-handling-statements.md#the-throw-statement). The runtime then searches for the most compatible exception handler.
 
 Programmers should throw exceptions when one or more of the following conditions are true:
 
@@ -54,7 +54,7 @@ Add new properties to the exception class when the data they provide is useful t
 
 ## C# Language Specification
 
-For more information, see [Exceptions](~/_csharpstandard/standard/exceptions.md) and [The throw statement](~/_csharpstandard/standard/statements.md#12106-the-throw-statement) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Exceptions](~/_csharpstandard/standard/exceptions.md) and [The throw statement](~/_csharpstandard/standard/statements.md#13106-the-throw-statement) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 

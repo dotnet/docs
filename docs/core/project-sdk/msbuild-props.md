@@ -146,7 +146,7 @@ You can specify properties such as `PackageId`, `PackageVersion`, `PackageIcon`,
 
 ### PackRelease
 
-The `PackRelease` property is similar to the [PublishRelease](#publishrelease) property, except that it changes the default behavior of `dotnet pack`.
+The `PackRelease` property is similar to the [PublishRelease](#publishrelease) property, except that it changes the default behavior of `dotnet pack`. This property was introduced in .NET 7.
 
 ```xml
 <PropertyGroup>
@@ -155,7 +155,9 @@ The `PackRelease` property is similar to the [PublishRelease](#publishrelease) p
 ```
 
 > [!NOTE]
-> To use `PackRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PACK_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). Setting this variable will increase the time required to pack solutions that have many projects.
+>
+> - Starting in the .NET 8 SDK, `PackRelease` defaults to `true`. For more information, see ['dotnet pack' uses Release configuration](../compatibility/sdk/8.0/dotnet-pack-config.md).
+> - .NET 7 SDK only: To use `PackRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PACK_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). For solutions that have many projects, setting this variable increases the time required to pack.
 
 ## Publish-related properties
 
@@ -343,7 +345,7 @@ When this property is `true`, XML documentation files for the project's referenc
 
 ### PublishRelease
 
-The `PublishRelease` property informs `dotnet publish` to use the `Release` configuration by default instead of the `Debug` configuration.
+The `PublishRelease` property informs `dotnet publish` to use the `Release` configuration by default instead of the `Debug` configuration. This property was introduced in .NET 7.
 
 ```xml
 <PropertyGroup>
@@ -353,8 +355,9 @@ The `PublishRelease` property informs `dotnet publish` to use the `Release` conf
 
 > [!NOTE]
 >
-> - This property does not affect the behavior of `dotnet build /t:Publish` and changes the configuration only when publishing via the .NET CLI.
-> - To use `PublishRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PUBLISH_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). This will increase the time required to publish solutions that have many projects. When publishing a solution with this variable enabled, the executable project's `PublishRelease` value takes precedence and flows the new default configuration to any other projects in the solution. If a solution contains multiple executable or top-level projects with differing values of `PublishRelease`, the solution won't successfully publish.
+> - Starting in the .NET 8 SDK, `PublishRelease` defaults to `true` for projects that target .NET 8 or later. For more information, see ['dotnet publish' uses Release configuration](../compatibility/sdk/8.0/dotnet-publish-config.md).
+> - This property does not affect the behavior of `dotnet build /t:Publish`, and it only changes the configuration only when publishing via the .NET CLI.
+> - .NET 7 SDK only: To use `PublishRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PUBLISH_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). When publishing a solution with this variable enabled, the executable project's `PublishRelease` value takes precedence and flows the new default configuration to any other projects in the solution. If a solution contains multiple executable or top-level projects with differing values of `PublishRelease`, the solution won't successfully publish. For solutions that have many projects, use of this setting increases the time required to publish.
 
 ### RollForward
 
@@ -467,6 +470,7 @@ The following MSBuild properties are documented in this section:
 - [GenerateDocumentationFile](#generatedocumentationfile)
 - [GenerateRequiresPreviewFeaturesAttribute](#generaterequirespreviewfeaturesattribute)
 - [OptimizeImplicitlyTriggeredBuild](#optimizeimplicitlytriggeredbuild)
+- [DisableRuntimeMarshalling](#disableruntimemarshalling)
 
 C# compiler options, such as `LangVersion` and `Nullable`, can also be specified as MSBuild properties in your project file. For more information, see [C# compiler options](../../csharp/language-reference/compiler-options/index.md).
 
@@ -536,12 +540,12 @@ If you specify this property but you set [GenerateDocumentationFile](#generatedo
 
 ### EmbeddedResourceUseDependentUponConvention
 
-The `EmbeddedResourceUseDependentUponConvention` property defines whether resource manifest file names are generated from type information in source files that are co-located with resource files. For example, if *Form1.resx* is in the same folder as *Form1.cs*, and `EmbeddedResourceUseDependentUponConvention` is set to `true`, the generated *.resources* file takes its name from the first type that's defined in *Form1.cs*. For example, if `MyNamespace.Form1` is the first type defined in *Form1.cs*, the generated file name is *MyNamespace.Form1.resources*.
+The `EmbeddedResourceUseDependentUponConvention` property defines whether resource manifest file names are generated from type information in source files that are co-located with resource files. For example, if *Form1.resx* is in the same folder as *Form1.cs*, and `EmbeddedResourceUseDependentUponConvention` is set to `true`, the generated *.resources* file takes its name from the first type that's defined in *Form1.cs*. If `MyNamespace.Form1` is the first type defined in *Form1.cs*, the generated file name is *MyNamespace.Form1.resources*.
 
 > [!NOTE]
 > If `LogicalName`, `ManifestResourceName`, or `DependentUpon` metadata is specified for an `EmbeddedResource` item, the generated manifest file name for that resource file is based on that metadata instead.
 
-By default, in a new .NET project, this property is set to `true`. If set to `false`, and no `LogicalName`, `ManifestResourceName`, or `DependentUpon` metadata is specified for the `EmbeddedResource` item in the project file, the resource manifest file name is based off the root namespace for the project and the relative file path to the *.resx* file. For more information, see [How resource manifest files are named](../resources/manifest-file-names.md).
+By default, in a new .NET project that targets .NET Core 3.0 or a later version, this property is set to `true`. If set to `false`, and no `LogicalName`, `ManifestResourceName`, or `DependentUpon` metadata is specified for the `EmbeddedResource` item in the project file, the resource manifest file name is based off the root namespace for the project and the relative file path to the *.resx* file. For more information, see [How resource manifest files are named](../resources/manifest-file-names.md).
 
 ```xml
 <PropertyGroup>
@@ -572,6 +576,9 @@ Library authors who intend to ship preview assemblies should set this property t
 ### EnableWindowsTargeting
 
 Set the `EnableWindowsTargeting` property to `true` to build Windows apps (for example, Windows Forms or Windows Presentation Foundation apps) on a non-Windows platform. If you don't set this property to `true`, you'll get build warning [NETSDK1100](../tools/sdk-errors/netsdk1100.md). This error occurs because targeting and runtime packs aren't automatically downloaded on platforms that aren't supported. By setting this property, those packs are downloaded when cross-targeting.
+
+> [!NOTE]
+> This property is currently recommended to allow development on non-Windows platforms. But when the application is ready to be released, it should be built on Windows. When building on a non-Windows platform, the output may not be the same as when building on Windows. In particular, the executable is not marked as a Windows application (which means that it will always launch a console window) and won't have an icon embedded.
 
 ```xml
 <PropertyGroup>
@@ -612,6 +619,16 @@ To speed up the build time, builds that are implicitly triggered by Visual Studi
 ```xml
 <PropertyGroup>
     <OptimizeImplicitlyTriggeredBuild>True</OptimizeImplicitlyTriggeredBuild>
+</PropertyGroup>
+```
+
+### DisableRuntimeMarshalling
+
+The `DisableRuntimeMarshalling` property enables you to specify that you would like to disable runtime marshalling support for your project. If this property is set to `true`, then the <xref:System.Runtime.CompilerServices.DisableRuntimeMarshallingAttribute> is added to the assembly and any P/Invokes or delegate-based interop will follow the rules for [disabled runtime marshalling](../../standard/native-interop/disabled-marshalling.md).
+
+```xml
+<PropertyGroup>
+    <DisableRuntimeMarshalling>True</DisableRuntimeMarshalling>
 </PropertyGroup>
 ```
 
@@ -897,8 +914,9 @@ To remove this warning and continue to use the version of code analyzers in the 
 
 ## Runtime configuration properties
 
-You can configure some run-time behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring run-time behavior, see [Runtime configuration settings](../runtime-config/index.md).
+You can configure some runtime behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring runtime behavior, see [Runtime configuration settings](../runtime-config/index.md).
 
+- [AutoreleasePoolSupport](#autoreleasepoolsupport)
 - [ConcurrentGarbageCollection](#concurrentgarbagecollection)
 - [InvariantGlobalization](#invariantglobalization)
 - [PredefinedCulturesOnly](#predefinedculturesonly)
@@ -909,6 +927,18 @@ You can configure some run-time behaviors by specifying MSBuild properties in th
 - [TieredCompilation](#tieredcompilation)
 - [TieredCompilationQuickJit](#tieredcompilationquickjit)
 - [TieredCompilationQuickJitForLoops](#tieredcompilationquickjitforloops)
+- [TieredPGO](#tieredpgo)
+- [UseWindowsThreadPool](#usewindowsthreadpool)
+
+### AutoreleasePoolSupport
+
+The `AutoreleasePoolSupport` property configures whether each managed thread receives an implicit [NSAutoreleasePool](https://developer.apple.com/documentation/foundation/nsautoreleasepool) when running on a supported macOS platform. For more information, see [`AutoreleasePool` for managed threads](../runtime-config/threading.md#autoreleasepool-for-managed-threads).
+
+```xml
+<PropertyGroup>
+  <AutoreleasePoolSupport>true</AutoreleasePoolSupport>
+</PropertyGroup>
+```
 
 ### ConcurrentGarbageCollection
 
@@ -1012,6 +1042,26 @@ The `TieredCompilationQuickJitForLoops` property configures whether the JIT comp
 </PropertyGroup>
 ```
 
+### TieredPGO
+
+The `TieredPGO` property controls whether dynamic or tiered profile-guided optimization (PGO) is enabled. Set the value to `true` to enable tiered PGO. For more information, see [Profile-guided optimization](../runtime-config/compilation.md#profile-guided-optimization).
+
+```xml
+<PropertyGroup>
+  <TieredPGO>true</TieredPGO>
+</PropertyGroup>
+```
+
+### UseWindowsThreadPool
+
+The `UseWindowsThreadPool` property configures whether thread pool thread management is delegated to the Windows thread pool (Windows only). The default value is `false`, in which case the .NET thread pool is used. For more information, see [Windows thread pool](../runtime-config/threading.md#windows-thread-pool).
+
+```xml
+<PropertyGroup>
+  <UseWindowsThreadPool>true</UseWindowsThreadPool>
+</PropertyGroup>
+```
+
 ## Reference-related properties
 
 The following MSBuild properties are documented in this section:
@@ -1041,7 +1091,7 @@ You can set the `AssetTargetFallback` property to one or more [target framework 
 
 The `DisableImplicitFrameworkReferences` property controls implicit `FrameworkReference` items when targeting .NET Core 3.0 and later versions. When targeting .NET Core 2.1 or .NET Standard 2.0 and earlier versions, it controls implicit [PackageReference](#packagereference) items to packages in a metapackage. (A metapackage is a framework-based package that consists only of dependencies on other packages.) This property also controls implicit references such as `System` and `System.Core` when targeting .NET Framework.
 
-Set this property to `true` to disable implicit `FrameworkReference` or [PackageReference](#packagereference) items. If you set this property to `true`, you can add explicit references to just the frameworks or packages you need.
+Set this property to `true` to disable implicit [FrameworkReference](#frameworkreference) or [PackageReference](#packagereference) items. If you set this property to `true`, you can add explicit references to just the frameworks or packages you need.
 
 ```xml
 <PropertyGroup>
@@ -1270,6 +1320,20 @@ The `InternalsVisibleTo` item generates an <xref:System.Runtime.CompilerServices
 ```
 
 If the friend assembly is signed, you can specify an optional `Key` metadata to specify its full public key. If you don't specify `Key` metadata and a `$(PublicKey)` is available, that key is used. Otherwise, no public key is added to the attribute.
+
+### FrameworkReference
+
+The `FrameworkReference` item defines a reference to a .NET shared framework.
+
+The `Include` attribute specifies the framework ID.
+
+The project file snippet in the following example references the Microsoft.AspNetCore.App shared framework.
+
+```xml
+<ItemGroup>
+  <FrameworkReference Include="Microsoft.AspNetCore.App" />
+</ItemGroup>
+```
 
 ### PackageReference
 

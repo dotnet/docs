@@ -13,7 +13,7 @@ Previously, users were required to set the default authentication scheme, which 
 builder.Services.AddAuthentication("MyDefaultScheme");
 ```
 
-Moving forward, when a *single* authentication scheme is registered, that scheme will be treated as the default scheme. For example, "MyDefaultScheme" will be treated as the default scheme in the following code.
+Moving forward, when a *single* authentication scheme is registered, that scheme is treated as the default scheme. For example, "MyDefaultScheme" is treated as the default scheme in the following code.
 
 ```csharp
 builder.Services.AddAuthentication().AddOAuth("MyDefaultScheme");
@@ -23,7 +23,7 @@ This change might expose unintended behavior changes in applications, such as au
 
 ## Version introduced
 
-ASP.NET Core 7.0 Preview 7
+ASP.NET Core 7.0
 
 ## Previous behavior
 

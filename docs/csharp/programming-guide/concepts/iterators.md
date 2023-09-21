@@ -337,7 +337,7 @@ On each successive iteration of the `foreach` loop (or the direct call to `IEnum
 
 Iterators don't support the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method. To reiterate from the start, you must obtain a new iterator. Calling <xref:System.Collections.IEnumerator.Reset%2A> on the iterator returned by an iterator method throws a <xref:System.NotSupportedException>.
 
-For additional information, see the [C# Language Specification](~/_csharpstandard/standard/classes.md#1414-iterators).
+For additional information, see the [C# Language Specification](~/_csharpstandard/standard/classes.md#1514-iterators).
 
 ## Use of Iterators
 
@@ -354,5 +354,4 @@ Iterators enable you to maintain the simplicity of a `foreach` loop when you nee
 - <xref:System.Collections.Generic>
 - <xref:System.Collections.Generic.IEnumerable%601>
 - [foreach, in](../../language-reference/statements/iteration-statements.md#the-foreach-statement)
-- [Using foreach with Arrays](../arrays/using-foreach-with-arrays.md)
 - [Generics](../../fundamentals/types/generics.md)

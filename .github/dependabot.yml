@@ -21,7 +21,25 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
+    directory: "/docs/azure/sdk/snippets/unit-testing" #UnitTestingSampleApp.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/diagnostics/snippets/Metrics" #metric-instr.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
     directory: "/docs/core/diagnostics/snippets/Microsoft.Diagnostics.NETCore.Client/csharp" #Microsoft.Diagnostics.NETCore.Client.Samples.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/diagnostics/snippets/OTel-Prometheus-Grafana-Jaeger/csharp" #OTel-Prometheus-Grafana-Jaeger.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -52,6 +70,12 @@ updates:
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
     directory: "/docs/core/extensions/snippets/configuration/app-lifetime" #app-lifetime.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/configuration/console-basic-builder" #console-basic-builder.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -189,6 +213,12 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/configuration/options-validation-onstart" #options-validation-onstart.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
     directory: "/docs/core/extensions/snippets/configuration/worker-scope" #worker-scope.csproj
     schedule:
       interval: "weekly"
@@ -273,6 +303,12 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/logging/library-authors" #library-authors.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
     directory: "/docs/core/extensions/snippets/logging/logger-message-generator" #logger-message-generator.csproj
     schedule:
       interval: "weekly"
@@ -303,55 +339,85 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/background-service" #App.WorkerService.csproj
+    directory: "/docs/core/extensions/snippets/workers/6.0/background-service" #App.WorkerService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/cloud-service" #App.CloudService.csproj
+    directory: "/docs/core/extensions/snippets/workers/6.0/cloud-service" #App.CloudService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/queue-service" #App.QueueService.csproj
+    directory: "/docs/core/extensions/snippets/workers/6.0/queue-service" #App.QueueService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/scoped-service" #App.ScopedService.csproj
+    directory: "/docs/core/extensions/snippets/workers/6.0/scoped-service" #App.ScopedService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/signal-completion-service/App.SignalCompletionService" #App.SignalCompletionService.csproj
+    directory: "/docs/core/extensions/snippets/workers/6.0/signal-completion-service/App.SignalCompletionService" #App.SignalCompletionService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/timer-service" #App.TimerHostedService.csproj
+    directory: "/docs/core/extensions/snippets/workers/6.0/timer-service" #App.TimerHostedService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/windows-service" #App.WindowsService.csproj
+    directory: "/docs/core/extensions/snippets/workers/6.0/windows-service" #App.WindowsService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/porting/snippets/upgrade-assistant-wpf-framework/csharp/StarVoteControl" #StarVoteControl.csproj
+    directory: "/docs/core/extensions/snippets/workers/7.0/background-service" #App.WorkerService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/porting/snippets/upgrade-assistant-wpf-framework/csharp/WebSiteRatings" #WebSiteRatings.csproj
+    directory: "/docs/core/extensions/snippets/workers/7.0/cloud-service" #App.CloudService.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/workers/7.0/queue-service" #App.QueueService.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/workers/7.0/scoped-service" #App.ScopedService.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/workers/7.0/signal-completion-service/App.SignalCompletionService" #App.SignalCompletionService.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/workers/7.0/timer-service" #App.TimerHostedService.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/workers/7.0/windows-service" #App.WindowsService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -393,7 +459,31 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
+    directory: "/docs/core/tutorials/snippets/library-with-visual-studio/csharp/StringLibraryTestNet8" #StringLibraryTest.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
     directory: "/docs/core/tutorials/snippets/library-with-visual-studio/vb/StringLibraryTest" #StringLibraryTest.vbproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/csharp/advanced-topics/interop/snippets/dynamic-iron-python-walkthrough" #ironpythonsample.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/csharp/asynchronous-programming/snippets/generate-consume-asynchronous-streams/finished" #IssuePRreport.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/csharp/asynchronous-programming/snippets/generate-consume-asynchronous-streams/start" #IssuePRreport.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -447,13 +537,7 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/csharp/tutorials/snippets/generate-consume-asynchronous-streams/finished" #IssuePRreport.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/docs/csharp/tutorials/snippets/generate-consume-asynchronous-streams/start" #IssuePRreport.csproj
+    directory: "/docs/csharp/whats-new/tutorials/snippets/primary-constructors" #primary-constructors.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -543,7 +627,19 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
+    directory: "/docs/orleans/deployment/snippets/consul/Silo" #Silo.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
     directory: "/docs/orleans/deployment/snippets/service-fabric/stateless" #Orleans.ServiceFabric.Stateless.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/orleans/grains/snippets/timers" #Timers.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -573,25 +669,31 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/orleans/host/configuration-guide/snippets/best-practices" #best-practices.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/docs/orleans/host/configuration-guide/snippets/configuration" #configuration.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/docs/orleans/host/configuration-guide/snippets/custom-serialization" #custom.csproj
+    directory: "/docs/orleans/host/snippets" #Client.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
     directory: "/docs/orleans/quickstarts/snippets/url-shortener/orleansurlshortener" #orleansurlshortener.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/orleans/streaming/snippets/broadcastchannel/BroadcastChannel.Client" #BroadcastChannel.Client.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/orleans/streaming/snippets/broadcastchannel/BroadcastChannel.GrainInterfaces" #BroadcastChannel.GrainInterfaces.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/orleans/streaming/snippets/broadcastchannel/BroadcastChannel.Silo" #BroadcastChannel.Silo.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -753,12 +855,6 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/samples/snippets/core/testing/unit-testing-vb-dotnet-test/vb/PrimeService.Tests" #PrimeService.Tests.vbproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
     directory: "/samples/snippets/core/testing/unit-testing-vb-mstest/vb/PrimeService.Tests" #PrimeService.Tests.vbproj
     schedule:
       interval: "weekly"
@@ -771,30 +867,6 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/samples/snippets/core/tutorials/creating-app-with-plugin-support/csharp/FrenchPlugin" #FrenchPlugin.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/samples/snippets/core/tutorials/creating-app-with-plugin-support/csharp/JsonPlugin" #JsonPlugin.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/samples/snippets/core/tutorials/creating-app-with-plugin-support/csharp/OldJsonPlugin" #OldJsonPlugin.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/samples/snippets/core/tutorials/creating-app-with-plugin-support/csharp/UVPlugin" #UVPlugin.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
     directory: "/samples/snippets/core/tutorials/testing-with-cli/csharp/test/NewTypesTests" #NewTypesTests.csproj
     schedule:
       interval: "weekly"
@@ -802,18 +874,6 @@ updates:
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
     directory: "/samples/snippets/csharp/concepts/linq/LinqSamples.Test" #LinqSamples.Test.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/samples/snippets/csharp/getting_started/ClassLibraryProjects/StringLibraryTest" #StringLibraryTest.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/samples/snippets/csharp/getting-started/console-webapiclient" #webapiclient.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -850,36 +910,6 @@ updates:
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
     directory: "/samples/snippets/csharp/roslyn-sdk/SyntaxTransformationQuickStart/TransformationCS" #TransformationCS.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/samples/snippets/csharp/safe-efficient-code/benchmark" #benchmark.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/samples/snippets/csharp/tutorials/nullable-reference-migration/finished/SimpleFeedReader.Tests" #SimpleFeedReader.Tests.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/samples/snippets/csharp/tutorials/nullable-reference-migration/finished/SimpleFeedReader" #SimpleFeedReader.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/samples/snippets/csharp/tutorials/nullable-reference-migration/start/SimpleFeedReader.Tests" #SimpleFeedReader.Tests.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/samples/snippets/csharp/tutorials/nullable-reference-migration/start/SimpleFeedReader" #SimpleFeedReader.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -1017,12 +1047,6 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/samples/snippets/csharp/VS_Snippets_VBCSharp/vbdynamicwalkthroughironpython/cs" #ironpythonsample.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
     directory: "/samples/snippets/csharp/xunit-test" #xunit-test.csproj
     schedule:
       interval: "weekly"
@@ -1107,12 +1131,6 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/samples/snippets/standard/data/sqlite/InMemorySample" #InMemorySample.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
     directory: "/samples/snippets/standard/data/sqlite/InteropSample" #InteropSample.csproj
     schedule:
       interval: "weekly"
@@ -1185,12 +1203,6 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToDecryptXMLElementX509/vb" #decryptxml.vbproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
     directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/vb" #encryptxml.vbproj
     schedule:
       interval: "weekly"
@@ -1198,6 +1210,12 @@ updates:
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
     directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementSymmetric/vb" #encryptxml.vbproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementX509/vb" #encryptxml.vbproj
     schedule:
       interval: "weekly"
       day: "wednesday"

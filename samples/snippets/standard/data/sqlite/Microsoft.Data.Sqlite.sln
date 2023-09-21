@@ -21,8 +21,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DirtyReadSample", "DirtyRea
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EncryptionSample", "EncryptionSample\EncryptionSample.csproj", "{739759ED-E5AF-4D0E-A4A9-1308B106D4D8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InMemorySample", "InMemorySample\InMemorySample.csproj", "{29224BE5-041E-4B6C-B226-42BD01F7865B}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InteropSample", "InteropSample\InteropSample.csproj", "{50031A6D-3B6D-4792-B4CE-59028F1D76AB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegularExpressionSample", "RegularExpressionSample\RegularExpressionSample.csproj", "{60CFB41F-D7AB-49C6-83F7-632AE9A143B7}"
@@ -89,10 +87,6 @@ Global
 		{739759ED-E5AF-4D0E-A4A9-1308B106D4D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{739759ED-E5AF-4D0E-A4A9-1308B106D4D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{739759ED-E5AF-4D0E-A4A9-1308B106D4D8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{29224BE5-041E-4B6C-B226-42BD01F7865B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{29224BE5-041E-4B6C-B226-42BD01F7865B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{29224BE5-041E-4B6C-B226-42BD01F7865B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{29224BE5-041E-4B6C-B226-42BD01F7865B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{50031A6D-3B6D-4792-B4CE-59028F1D76AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{50031A6D-3B6D-4792-B4CE-59028F1D76AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50031A6D-3B6D-4792-B4CE-59028F1D76AB}.Release|Any CPU.ActiveCfg = Release|Any CPU

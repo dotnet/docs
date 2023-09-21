@@ -92,7 +92,7 @@ Informally, you can think of these scopes as the mechanism to ensure your code n
 
 You can apply one of these modifiers to any method parameter:
 
-- [`ref`](./ref.md): the parameter is passed by reference. You can add the [`readonly`](./ref.md#passing-an-argument-by-readonly-reference) modifier to indicate that the reference isn't written to by the called method.
+- [`ref`](./ref.md): the parameter is passed by reference. You can add the [`readonly`](./ref.md) modifier to indicate that the reference isn't written to by the called method.
 - [`out`](./out.md): The parameter is passed by reference. It must be written to in the called method before it is read.
 - [`in`](./in.md): The parameter may be passed by reference. If it is passed by reference, it is not written to by the called method.
 
@@ -103,7 +103,7 @@ When a parameter has one of the preceding modifiers, the corresponding argument 
 - An argument for an `in` parameter may optionally include the `in` modifier. If the `ref` modifier is used on the argument instead, the compiler issues a warning.
 - An argument for a `ref readonly` parameter may include either the `in` or `ref` modifiers, but not both. If neither modifier is included, the compiler issues a warning.
 
-Parameters declared for a method without [in](./in-parameter-modifier.md), [ref](./ref.md), [ref readonly](ref-readonly.md), or [out](./out-parameter-modifier.md), are passed to the called method by value. The `ref`, `ref readonly`, `in`, and `out` modifiers differ in assignment rules:
+Parameters declared for a method without [in](./in-parameter-modifier.md), [ref](./ref.md), [ref readonly](ref.md), or [out](./out-parameter-modifier.md), are passed to the called method by value. The `ref`, `ref readonly`, `in`, and `out` modifiers differ in assignment rules:
 
 - The argument for a `ref` parameter must be definitely assigned. The called method may reassign that parameter.
 - The argument for an `in` or `ref readonly` parameter must be definitely assigned. The called method can't reassign that parameter.

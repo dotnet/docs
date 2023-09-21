@@ -11,7 +11,7 @@ Some C# 12 features have been introduced in previews. You can try these features
 - [Collection expressions](#collection-expressions) - Introduced in Visual Studio 17.7, preview 5.
 - [Inline arrays](#inline-arrays) - Introduced in Visual Studio 17.7, preview 3.
 - [Optional parameters in lambda expressions](#default-lambda-parameters) - Introduced in Visual Studio 17.5, preview 2.
-- [`ref readonly` parameters](#-ref-readonly--parameters) - Introduced in Visual Studio 17.8, preview 2.
+- [`ref readonly` parameters](#ref-readonly-parameters) - Introduced in Visual Studio 17.8, preview 2.
 - [Alias any type](#alias-any-type) - Introduced in Visual Studio 17.6, preview 3.
 
 - [Interceptors](#interceptors) - *Preview feature* Introduced in Visual Studio 17.7, preview 3.

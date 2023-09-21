@@ -180,12 +180,6 @@ items:
               - name: UI automation fundamentals
                 tocHref: /dotnet/framework/ui-automation/
                 topicHref: /dotnet/framework/ui-automation/index
-              - name: Unmanaged API reference (debugging)
-                tocHref: /dotnet/core/unmanaged-api/debugging/
-                topicHref: /dotnet/core/unmanaged-api/debugging/index
-              - name: Unmanaged API reference (profiling)
-                tocHref: /dotnet/core/unmanaged-api/profiling/
-                topicHref: /dotnet/core/unmanaged-api/profiling/index
               - name: Unmanaged API reference
                 tocHref: /dotnet/framework/unmanaged-api/
                 topicHref: /dotnet/framework/unmanaged-api/index
@@ -612,6 +606,12 @@ items:
               - name: Memory management
                 tocHref: /dotnet/standard/garbage-collection/
                 topicHref: /dotnet/standard/managed-code
+              - name: Unmanaged API reference (debugging)
+                tocHref: /dotnet/core/unmanaged-api/debugging/
+                topicHref: /dotnet/core/unmanaged-api/debugging/index
+              - name: Unmanaged API reference (profiling)
+                tocHref: /dotnet/core/unmanaged-api/profiling/
+                topicHref: /dotnet/core/unmanaged-api/profiling/index
           - name: Data access
             tocHref: /dotnet/navigate/data-access/
             topicHref: /dotnet/navigate/data-access/index

@@ -88,7 +88,7 @@ GivePointerToComInterface(nint ptr);
 
 ## Customizing marshalling
 
-The COM interface generator respects the <xref:System.Runtime.InteropServices.MarshalAsAttribute> and <xref:System.Runtime.InteropServices.Marshalling.MarshalUsingAttribute> attributes to customize marshalling of parameters. For more information, see [Customize Parameter Marshalling](./customize-parameter-marshalling.md) If an interface uses `string`s, the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.StringMarshalling?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.StringMarshallingCustomType?displayProperty=nameWithType> properties will apply to all parameters and return types of `string` in the interface if they don't have other marshalling attributes.
+The COM interface generator respects the <xref:System.Runtime.InteropServices.MarshalAsAttribute> and <xref:System.Runtime.InteropServices.Marshalling.MarshalUsingAttribute> attributes to customize marshalling of parameters. For more information, see [Customize Parameter Marshalling](./customize-parameter-marshalling.md) If an interface has `string` parameters or return types, the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.StringMarshalling?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.StringMarshallingCustomType?displayProperty=nameWithType> properties will apply to all parameters and return types of `string` in the interface if they don't have other marshalling attributes.
 
 ## Implicit HRESULTs and PreserveSig
 

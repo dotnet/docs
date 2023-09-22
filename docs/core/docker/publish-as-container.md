@@ -39,7 +39,7 @@ You need a .NET app to containerize, so start by creating a new app from a templ
 dotnet new worker -o Worker -n DotNet.ContainerImage
 ```
 
-Your folder tree will look like the following:
+Your folder tree looks like the following:
 
 ```Directory
 📁 sample-directory
@@ -136,7 +136,7 @@ The preceding .NET CLI command publishes the app as a container:
 > [!TIP]
 > Depending on the type of app you're containerizing, the command-line switches (options) might vary. For example, the `/t:PublishContainer` argument is only required for non-web .NET apps, such as `console` and `worker` templates. For web templates, replace the `/t:PublishContainer` argument with `-p:PublishProfile=DefaultContainer`. For more information, see [.NET SDK container builds, issue #141](https://github.com/dotnet/sdk-container-builds/issues/141).
 
-The command produces output similar to the following:
+The command produces output similar to the example output:
 
 :::zone pivot="dotnet-8-0"
 
@@ -180,7 +180,7 @@ The container base image property controls the image used as the basis for your 
 - If your project is an ASP.NET Core project, the `mcr.microsoft.com/dotnet/aspnet` image is used as the base image.
 - Otherwise the `mcr.microsoft.com/dotnet/runtime` image is used as the base image.
 
-The tag of the image is inferred to be the numeric component of your chosen `TargetFramework`. For example, a project targeting `net6.0` will result in the `6.0` tag of the inferred base image, and a `net7.0-linux` project will use the `7.0` tag, and so on.
+The tag of the image is inferred to be the numeric component of your chosen `TargetFramework`. For example, a project targeting `net6.0` results in the `6.0` tag of the inferred base image, and a `net7.0-linux` project will use the `7.0` tag, and so on.
 
 If you set a value here, you should set the fully qualified name of the image to use as the base, including any tag you prefer:
 
@@ -205,7 +205,7 @@ If you set a value here, you should set the fully qualified name of the image to
 
 ### `ContainerRuntimeIdentifier`
 
-The container runtime identifier property controls the operating system and architecture used by your container if your [ContainerBaseImage](#containerbaseimage) supports more than one platform. For example, the `mcr.microsoft.com/dotnet/runtime` image currently supports `linux-x64`, `linux-arm`, `linux-arm64` and `win10-x64` images all behind the same tag, so the tooling needs a way to be told which of these versions you intend to use. By default, this is set to the value of the `RuntimeIdentifier` that you chose when you published the container. This property rarely needs to be set explicitly - instead use the `-r` option to the `dotnet publish` command. If the image you've chosen doesn't support the `RuntimeIdentifier` you've chosen, you'll get an error that describes the RuntimeIdentifiers the image does support.
+The container runtime identifier property controls the operating system and architecture used by your container if your [ContainerBaseImage](#containerbaseimage) supports more than one platform. For example, the `mcr.microsoft.com/dotnet/runtime` image currently supports `linux-x64`, `linux-arm`, `linux-arm64` and `win10-x64` images all behind the same tag, so the tooling needs a way to be told which of these versions you intend to use. By default, this is set to the value of the `RuntimeIdentifier` that you chose when you published the container. This property rarely needs to be set explicitly - instead use the `-r` option to the `dotnet publish` command. If the image you've chosen doesn't support the `RuntimeIdentifier` you've chosen, results in an error that describes the RuntimeIdentifiers the image does support.
 
 You can always set the `ContainerBaseImage` property to a fully qualified image name, including the tag, to avoid needing to use this property at all.
 
@@ -219,7 +219,7 @@ For more information regarding the runtime identifiers supported by .NET, see [R
 
 ### `ContainerRegistry`
 
-The container registry property controls the destination registry, the place that the newly created image will be pushed to. Be default it's pushed to the local Docker daemon, but you can also specify a remote registry.  When using a remote registry that requires authentication, you authenticate using the well-known `docker login` mechanisms. See [Authenticating to container registries](https://aka.ms/dotnet/containers/auth) for more details. For a concrete example of using this property, consider the following XML example:
+The container registry property controls the destination registry, the place that the newly created image will be pushed to. Be default it's pushed to the local Docker daemon, but you can also specify a remote registry.  When using a remote registry that requires authentication, you authenticate using the well-known `docker login` mechanisms. For more information, See [authenticating to container registries](https://aka.ms/dotnet/containers/auth) for more details. For a concrete example of using this property, consider the following XML example:
 
 ```xml
 <PropertyGroup>
@@ -266,7 +266,7 @@ The container image name controls the name of the image itself, for example, `do
 
 :::zone-end
 
-Image names consist of one or more slash-delimited segments, each of which can only contain lowercase alphanumeric characters, periods, underscores, and dashes, and must start with a letter or number. Any other characters will result in an error being thrown.
+Image names consist of one or more slash-delimited segments, each of which can only contain lowercase alphanumeric characters, periods, underscores, and dashes, and must start with a letter or number. Any other characters result in an error being thrown.
 
 ### `ContainerImageTag(s)`
 
@@ -286,7 +286,7 @@ To specify multiple tags, use a semicolon-delimited set of tags in the `Containe
 </PropertyGroup>
 ```
 
-Tags can only contain up to 127 alphanumeric characters, periods, underscores, and dashes. They must start with an alphanumeric character or an underscore. Any other form will result in an error being thrown.
+Tags can only contain up to 127 alphanumeric characters, periods, underscores, and dashes. They must start with an alphanumeric character or an underscore. Any other form results in an error being thrown.
 
 > [!NOTE]
 > When using `ContainerImageTags`, the tags are delimited by `;` and may need to be escaped depending on the build environment. Be careful to properly escape the tags to avoid image build errors.
@@ -428,6 +428,14 @@ To delete the image, copy the image ID and run the `docker image rm` command:
 ```console
 docker image rm 25aeb97a2e21
 ```
+
+:::zone pivot="dotnet-8-0"
+
+## Differentiate images
+
+[!INCLUDE [differentiate-images](includes/differentiate-images.md)]
+
+:::zone-end
 
 ## Next steps
 

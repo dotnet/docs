@@ -100,7 +100,16 @@ There are various configuration options available when publishing an app as a co
 
 By default, the container image name is the `AssemblyName` of the project. If that name is invalid as a container image name, you can override it by specifying a `ContainerImageName` as shown in the following project file:
 
-:::code language="xml" source="snippets/Worker/DotNet.ContainerImage.csproj" highlight="8":::
+:::zone pivot="dotnet-8-0"
+
+:::code language="xml" source="snippets/8.0/Worker/DotNet.ContainerImage.csproj" highlight="8":::
+
+:::zone-end
+:::zone pivot="dotnet-7-0"
+
+:::code language="xml" source="snippets/7.0/Worker/DotNet.ContainerImage.csproj" highlight="8":::
+
+:::zone-end
 
 ## Publish .NET app
 
@@ -129,6 +138,20 @@ The preceding .NET CLI command publishes the app as a container:
 
 The command produces output similar to the following:
 
+:::zone pivot="dotnet-8-0"
+
+```dotnetcli
+Determining projects to restore...
+  All projects are up-to-date for restore.
+  DotNet.ContainerImage -> .\Worker\bin\Release\net8.0\linux-x64\DotNet.ContainerImage.dll
+  DotNet.ContainerImage -> .\Worker\bin\Release\net8.0\linux-x64\publish\
+  Building image 'dotnet-worker-image' with tags 1.0.0 on top of base image mcr.microsoft.com/dotnet/aspnet:8.0
+  Pushed container 'dotnet-worker-image:1.0.0' to Docker daemon
+```
+
+:::zone-end
+:::zone pivot="dotnet-7-0"
+
 ```dotnetcli
 Determining projects to restore...
   All projects are up-to-date for restore.
@@ -137,6 +160,8 @@ Determining projects to restore...
   Building image 'dotnet-worker-image' with tags 1.0.0 on top of base image mcr.microsoft.com/dotnet/aspnet:7.0
   Pushed container 'dotnet-worker-image:1.0.0' to Docker daemon
 ```
+
+:::zone-end
 
 This command compiles your worker app to the *publish* folder and pushes the container to your local docker registry.
 
@@ -155,19 +180,32 @@ The container base image property controls the image used as the basis for your 
 - If your project is an ASP.NET Core project, the `mcr.microsoft.com/dotnet/aspnet` image is used as the base image.
 - Otherwise the `mcr.microsoft.com/dotnet/runtime` image is used as the base image.
 
-The tag of the image is inferred to be the numeric component of your chosen `TargetFramework`. For example, a project targeting `.net6.0` will result in the `6.0` tag of the inferred base image, and a `.net7.0-linux` project will use the `7.0` tag.
+The tag of the image is inferred to be the numeric component of your chosen `TargetFramework`. For example, a project targeting `net6.0` will result in the `6.0` tag of the inferred base image, and a `net7.0-linux` project will use the `7.0` tag, and so on.
 
 If you set a value here, you should set the fully qualified name of the image to use as the base, including any tag you prefer:
 
+:::zone pivot="dotnet-8-0"
+
 ```xml
 <PropertyGroup>
-    <ContainerBaseImage>mcr.microsoft.com/dotnet/runtime:6.0</ContainerBaseImage>
+    <ContainerBaseImage>mcr.microsoft.com/dotnet/runtime:8.0</ContainerBaseImage>
 </PropertyGroup>
 ```
 
+:::zone-end
+:::zone pivot="dotnet-7-0"
+
+```xml
+<PropertyGroup>
+    <ContainerBaseImage>mcr.microsoft.com/dotnet/runtime:7.0</ContainerBaseImage>
+</PropertyGroup>
+```
+
+:::zone-end
+
 ### `ContainerRuntimeIdentifier`
 
-The container runtime identifier property controls the operating system and architecture used by your container if your [`ContainerBaseImage`](#containerbaseimage) supports more than one platform. For example, the `mcr.microsoft.com/dotnet/runtime` image currently supports `linux-x64`, `linux-arm`, `linux-arm64` and `win10-x64` images all behind the same tag, so the tooling needs a way to be told which of these versions you intend to use.  By default, this is set to the value of the `RuntimeIdentifier` that you chose when you published the container.  This property rarely needs to be set explicitly - instead use the `-r` option to the `dotnet publish` command.  If the image you've chosen doesn't support the `RuntimeIdentifier` you've chosen, you'll get an error that describes the RuntimeIdentifiers the image does support.
+The container runtime identifier property controls the operating system and architecture used by your container if your [ContainerBaseImage](#containerbaseimage) supports more than one platform. For example, the `mcr.microsoft.com/dotnet/runtime` image currently supports `linux-x64`, `linux-arm`, `linux-arm64` and `win10-x64` images all behind the same tag, so the tooling needs a way to be told which of these versions you intend to use. By default, this is set to the value of the `RuntimeIdentifier` that you chose when you published the container. This property rarely needs to be set explicitly - instead use the `-r` option to the `dotnet publish` command. If the image you've chosen doesn't support the `RuntimeIdentifier` you've chosen, you'll get an error that describes the RuntimeIdentifiers the image does support.
 
 You can always set the `ContainerBaseImage` property to a fully qualified image name, including the tag, to avoid needing to use this property at all.
 
@@ -176,6 +214,8 @@ You can always set the `ContainerBaseImage` property to a fully qualified image 
     <ContainerRuntimeIdentifier>linux-arm64</ContainerRuntimeIdentifier>
 </PropertyGroup>
 ```
+
+For more information regarding the runtime identifiers supported by .NET, see [RID catalog](../rid-catalog.md).
 
 ### `ContainerRegistry`
 
@@ -228,9 +268,9 @@ The container image name controls the name of the image itself, for example, `do
 
 Image names consist of one or more slash-delimited segments, each of which can only contain lowercase alphanumeric characters, periods, underscores, and dashes, and must start with a letter or number. Any other characters will result in an error being thrown.
 
-### `ContainerImageTags`
+### `ContainerImageTag(s)`
 
-The container image tag property controls the tags that are generated for the image. Tags are often used to refer to different versions of an application, but they can also refer to different operating system distributions, or even different configurations. By default, the `Version` of the project is used as the tag value. To override the default, specify either of the following:
+The container image tag property controls the tags that are generated for the image. To specify a single tag use `ContainerImageTag` and for multiple tags use `ContainerImageTags`. Tags are often used to refer to different versions of an application, but they can also refer to different operating system distributions, or even different configurations. By default, the `Version` of the project is used as the tag value. To override the default, specify either of the following:
 
 ```xml
 <PropertyGroup>
@@ -247,6 +287,9 @@ To specify multiple tags, use a semicolon-delimited set of tags in the `Containe
 ```
 
 Tags can only contain up to 127 alphanumeric characters, periods, underscores, and dashes. They must start with an alphanumeric character or an underscore. Any other form will result in an error being thrown.
+
+> [!NOTE]
+> When using `ContainerImageTags`, the tags are delimited by `;` and may need to be escaped depending on the build environment. Be careful to properly escape the tags to avoid image build errors.
 
 ### `ContainerWorkingDirectory`
 

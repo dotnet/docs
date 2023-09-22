@@ -34,7 +34,7 @@ These images are smaller, as they don't include globalization dependencies such 
 </PropertyGroup>
 ```
 
-> [!NOTE]
+> [!TIP]
 > SDK images aren't produced for `*-distroless` or `*-chiseled` image types. Composite images are the smallest `aspnet` offering for CoreCLR.
 
 ## Large images

@@ -335,6 +335,9 @@ The default behavior before .NET 6 is `Ignore`, which resulted in *zombie proces
 
 To see the app created as a Windows Service, open **Services**. Select the Windows key (or <kbd>Ctrl</kbd> + <kbd>Esc</kbd>), and search from "Services". From the **Services** app, you should be able to find your service by its name.
 
+> [!IMPORTANT]
+> By default, regular (non-admin) users cannot manage Windows services. To verify that this app functions as expected, you'll need to use an Admin account.
+
 :::image type="content" source="media/windows-service.png" lightbox="media/windows-service.png" alt-text="The Services user interface.":::
 
 To verify that the service is functioning as expected, you need to:

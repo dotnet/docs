@@ -432,7 +432,7 @@ The `ContainerAppCommand` configuration has a single `Include` property, which r
   <ContainerAppCommand Include="dotnet" />
   <ContainerAppCommand Include="ef" />
 
-  <!-- This shorthand syntax means the same thing - note the semicolon separating the tokens. -->
+  <!-- This shorthand syntax means the same thing, note the semicolon separating the tokens. -->
   <ContainerAppCommand Include="dotnet;ef" />
 </ItemGroup>
 ```
@@ -445,7 +445,9 @@ The `ContainerAppCommandArgs` configuration has a single `Include` property, whi
 
 ```xml
 <ItemGroup>
-  <!-- Assuming the ContainerAppCommand defined above, this would be the way to force the database to update. -->
+  <!-- Assuming the ContainerAppCommand defined above, 
+       this would be the way to force the database to update.
+  -->
   <ContainerAppCommandArgs Include="database" />
   <ContainerAppCommandArgs Include="update" />
 
@@ -462,7 +464,9 @@ The `ContainerDefaultArgs` configuration has a single `Include` property, which 
 
 ```xml
 <ItemGroup>
-  <!-- Assuming the ContainerAppCommand defined above, this would be the way to force the database to update. -->
+  <!-- Assuming the ContainerAppCommand defined above, 
+       this would be the way to force the database to update.
+  -->
   <ContainerDefaultArgs Include="database" />
   <ContainerDefaultArgs Include="update" />
 

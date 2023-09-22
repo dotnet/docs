@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with dotnet publish
 description: In this tutorial, you'll learn how to containerize a .NET application with dotnet publish.
-ms.date: 09/21/2023
+ms.date: 09/22/2023
 ms.topic: tutorial
 zone_pivot_groups: dotnet-version-7-8
 ---
@@ -104,7 +104,7 @@ By default, the container image name is the `AssemblyName` of the project. If th
 
 ## Publish .NET app
 
-To publish the .NET app as a container, use the following `dotnet publish` command:
+To publish the .NET app as a container, use the following [dotnet publish](../tools/dotnet-publish.md) command:
 
 ```dotnetcli
 dotnet publish --os linux --arch x64 /t:PublishContainer -c Release

@@ -485,7 +485,7 @@
 | SQL Database Elastic Scale Service SplitMerge | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Service.SplitMerge/1.2.0) |  |  |
 | SQL Database Jobs | NuGet [0.8.3362.1](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.Jobs/0.8.3362.1) |  |  |
 | Web - Redis Output Cache Provider | NuGet [4.0.1](https://www.nuget.org/packages/Microsoft.Web.RedisOutputCacheProvider/4.0.1) |  | GitHub [4.0.1](https://github.com/Azure/aspnet-redis-providers/tree/NuGet-Release/RedisOutputCacheProvider-3.0.1/src/OutputCacheProvider) |
-| Web - Redis Session State Provider | NuGet [5.0.2](https://www.nuget.org/packages/Microsoft.Web.RedisSessionStateProvider/5.0.2) |  | GitHub [5.0.2](https://github.com/Azure/aspnet-redis-providers/tree/NuGet-Release/RedisSessionStateProvider-4.0.1/src/RedisSessionStateProvider) |
+| Web - Redis Session State Provider | NuGet [5.0.3](https://www.nuget.org/packages/Microsoft.Web.RedisSessionStateProvider/5.0.3) |  | GitHub [5.0.3](https://github.com/Azure/aspnet-redis-providers/tree/NuGet-Release/RedisSessionStateProvider-4.0.1/src/RedisSessionStateProvider) |
 | Functions Extensions - Cosmos DB ChangeProcessor | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.ChangeProcessor/1.0.2) |  |  |
 | Functions Extensions - Cosmos DB Mongo | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.Mongo/1.0.2) |  |  |
 | Functions Extensions - Dapr | NuGet [0.16.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Dapr/0.16.0-preview01) |  |  |

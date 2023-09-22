@@ -289,7 +289,11 @@ To specify multiple tags, use a semicolon-delimited set of tags in the `Containe
 Tags can only contain up to 127 alphanumeric characters, periods, underscores, and dashes. They must start with an alphanumeric character or an underscore. Any other form results in an error being thrown.
 
 > [!NOTE]
-> When using `ContainerImageTags`, the tags are delimited by `;` and may need to be escaped depending on the build environment. Be careful to properly escape the tags to avoid image build errors.
+> When using `ContainerImageTags`, the tags are delimited by a `;` character. If you're calling `dotnet publish` from the command line (as is the case with most CI/CD environments), you'll need to outer wrap the values in a single `'` and inner wrap with double quotes `"`, for example (`='"tag-1;tag-2"'`). Consider the following `dotnet publish` command:
+>
+> ```dotnetcli
+> dotnet publish -p ContainerImageTags='"1.2.3-alpha2;latest"'
+> ```
 
 ### `ContainerWorkingDirectory`
 

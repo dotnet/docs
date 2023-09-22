@@ -429,18 +429,11 @@ To delete the image, copy the image ID and run the `docker image rm` command:
 docker image rm 25aeb97a2e21
 ```
 
-:::zone pivot="dotnet-8-0"
-
-## Differentiate images
-
-[!INCLUDE [differentiate-images](includes/differentiate-images.md)]
-
-:::zone-end
-
 ## Next steps
 
 - [Announcing built-in container support for the .NET SDK](https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk)
 - [Tutorial: Containerize a .NET app](build-container.md)
+- [.NET container images](container-images.md)
 - [Review the Azure services that support containers](https://azure.microsoft.com/overview/containers/)
 - [Read about Dockerfile commands](https://docs.docker.com/engine/reference/builder/)
 - [Explore the container tools in Visual Studio](/visualstudio/containers/overview)

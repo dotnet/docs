@@ -330,6 +330,14 @@ items:
         href: ../../core/diagnostics/metrics-instrumentation.md
       - name: Collection
         href: ../../core/diagnostics/metrics-collection.md
+      - name: Built-in Metrics
+        items:
+        - name: Overview
+          href: ../../core/diagnostics/built-in-metrics.md
+        - name: ASP.NET Core Metrics
+          href: ../../core/diagnostics/built-in-metrics-aspnetcore.md
+        - name: System.Net Metrics
+          href: ../../core/diagnostics/built-in-metrics-system-net.md
       - name: EventCounters
         items:
         - name: Overview

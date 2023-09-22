@@ -49,13 +49,13 @@ If you have .NET installed, use the `dotnet --info` command to determine which S
 
 ## Create .NET app
 
-You need a .NET app that the Docker container will run. Open your terminal, create a working folder if you haven't already, and enter it. In the working folder, run the following command to create a new project in a subdirectory named *App*:
+You need a .NET app that the Docker container runs. Open your terminal, create a working folder if you haven't already, and enter it. In the working folder, run the following command to create a new project in a subdirectory named *App*:
 
 ```dotnetcli
 dotnet new console -o App -n DotNet.Docker
 ```
 
-Your folder tree will look like the following:
+Your folder tree looks like the following:
 
 ```Directory
 📁 docker-working
@@ -70,7 +70,7 @@ Your folder tree will look like the following:
             └── project.nuget.cache
 ```
 
-The `dotnet new` command creates a new folder named *App* and generates a "Hello World" console application. Change directories and navigate into the *App* folder, from your terminal session. Use the `dotnet run` command to start the app. The application will run, and print `Hello World!` below the command:
+The `dotnet new` command creates a new folder named *App* and generates a "Hello World" console application. Change directories and navigate into the *App* folder, from your terminal session. Use the `dotnet run` command to start the app. The application runs, and print `Hello World!` below the command:
 
 ```dotnetcli
 cd App
@@ -78,7 +78,7 @@ dotnet run
 Hello World!
 ```
 
-The default template creates an app that prints to the terminal and then immediately terminates. For this tutorial, you'll use an app that loops indefinitely. Open the *Program.cs* file in a text editor.
+The default template creates an app that prints to the terminal and then immediately terminates. For this tutorial, you use an app that loops indefinitely. Open the *Program.cs* file in a text editor.
 
 > [!TIP]
 > If you're using Visual Studio Code, from the previous terminal session type the following command:
@@ -126,7 +126,7 @@ If you pass a number on the command line to the app, it will only count up to th
 
 ## Publish .NET app
 
-Before adding the .NET app to the Docker image, first it must be published. It is best to have the container run the published version of the app. To publish the app, run the following command:
+Before adding the .NET app to the Docker image, first it must be published. It's best to have the container run the published version of the app. To publish the app, run the following command:
 
 ```dotnetcli
 dotnet publish -c Release
@@ -209,7 +209,7 @@ DotNet.Docker.deps.json  DotNet.Docker.dll  DotNet.Docker.exe  DotNet.Docker.pdb
 
 The *Dockerfile* file is used by the `docker build` command to create a container image. This file is a text file named *Dockerfile* that doesn't have an extension.
 
-Create a file named *Dockerfile* in the directory containing the *.csproj* and open it in a text editor. This tutorial will use the ASP.NET Core runtime image (which contains the .NET runtime image) and corresponds with the .NET console application.
+Create a file named *Dockerfile* in the directory containing the *.csproj* and open it in a text editor. This tutorial uses the ASP.NET Core runtime image (which contains the .NET runtime image) and corresponds with the .NET console application.
 
 :::zone pivot="dotnet-8-0"
 
@@ -350,7 +350,7 @@ Now that you have an image that contains your app, you can create a container. Y
 docker create --name core-counter counter-image
 ```
 
-This `docker create` command will create a container based on the **counter-image** image. The output of that command shows you the **CONTAINER ID** (yours will be different) of the created container:
+This `docker create` command creates a container based on the **counter-image** image. The output of that command shows you the **CONTAINER ID** (yours will be different) of the created container:
 
 ```console
 d0be06126f7db6dd1cee369d911262a353c9b7fb4829a0c11b4b2eb7b2d429cf
@@ -377,7 +377,7 @@ CONTAINER ID   IMAGE           COMMAND                  CREATED          STATUS 
 cf01364df453   counter-image   "dotnet DotNet.Docke…"   53 seconds ago   Up 10 seconds             core-counter
 ```
 
-Similarly, the `docker stop` command will stop the container. The following example uses the `docker stop` command to stop the container, and then uses the `docker ps` command to show that no containers are running:
+Similarly, the `docker stop` command stops the container. The following example uses the `docker stop` command to stop the container, and then uses the `docker ps` command to show that no containers are running:
 
 ```console
 docker stop core-counter
@@ -389,7 +389,7 @@ CONTAINER ID    IMAGE    COMMAND    CREATED    STATUS    PORTS    NAMES
 
 ### Connect to a container
 
-After a container is running, you can connect to it to see the output. Use the `docker start` and `docker attach` commands to start the container and peek at the output stream. In this example, the <kbd>Ctrl+C</kbd> keystroke is used to detach from the running container. This keystroke will end the process in the container unless otherwise specified, which would stop the container. The `--sig-proxy=false` parameter ensures that <kbd>Ctrl+C</kbd> will not stop the process in the container.
+After a container is running, you can connect to it to see the output. Use the `docker start` and `docker attach` commands to start the container and peek at the output stream. In this example, the <kbd>Ctrl+C</kbd> keystroke is used to detach from the running container. This keystroke ends the process in the container unless otherwise specified, which would stop the container. The `--sig-proxy=false` parameter ensures that <kbd>Ctrl+C</kbd> won't stop the process in the container.
 
 After you detach from the container, reattach to verify that it's still running and counting.
 
@@ -455,7 +455,7 @@ Counter: 2
 Counter: 3
 ```
 
-With `docker run -it`, the <kbd>Ctrl+C</kbd> command will stop process that is running in the container, which in turn, stops the container. Since the `--rm` parameter was provided, the container is automatically deleted when the process is stopped. Verify that it doesn't exist:
+With `docker run -it`, the <kbd>Ctrl+C</kbd> command stop process that is running in the container, which in turn, stops the container. Since the `--rm` parameter was provided, the container is automatically deleted when the process is stopped. Verify that it doesn't exist:
 
 ```console
 docker ps -a
@@ -569,8 +569,6 @@ Use the `docker images` command to see a list of images installed.
 
 > [!TIP]
 > Image files can be large. Typically, you would remove temporary containers you created while testing and developing your app. You usually keep the base images with the runtime installed if you plan on building other images based on that runtime.
-
-:::zone pivot="dotnet-8-0"
 
 ## Next steps
 

@@ -180,7 +180,7 @@ The container base image property controls the image used as the basis for your 
 - If your project is an ASP.NET Core project, the `mcr.microsoft.com/dotnet/aspnet` image is used as the base image.
 - Otherwise the `mcr.microsoft.com/dotnet/runtime` image is used as the base image.
 
-The tag of the image is inferred to be the numeric component of your chosen `TargetFramework`. For example, a project targeting `net6.0` results in the `6.0` tag of the inferred base image, and a `net7.0-linux` project will use the `7.0` tag, and so on.
+The tag of the image is inferred to be the numeric component of your chosen `TargetFramework`. For example, a project targeting `net6.0` results in the `6.0` tag of the inferred base image, and a `net7.0-linux` project uses the `7.0` tag, and so on.
 
 If you set a value here, you should set the fully qualified name of the image to use as the base, including any tag you prefer:
 
@@ -200,6 +200,24 @@ If you set a value here, you should set the fully qualified name of the image to
     <ContainerBaseImage>mcr.microsoft.com/dotnet/runtime:7.0</ContainerBaseImage>
 </PropertyGroup>
 ```
+
+:::zone-end
+
+:::zone pivot="dotnet-8-0"
+
+### ContainerFamily
+
+Starting with .NET 8, `ContainerFamily` is used to choose a different family of Microsoft-provided container images as the base image for your app. When set, this value is appended to the end of the selected TFM-specific tag, changing the tag provided. For example, to use the Alpine Linux variants of the .NET base images, you can set `ContainerFamily` to `alpine`:
+
+```xml
+<PropertyGroup>
+    <ContainerFamily>alpine</ContainerFamily>
+</PropertyGroup>
+```
+
+The preceding project configuration results in a final tag of `8.0-alpine` for a .NET 8-targeting app.
+
+This field is free-form, and often can be used to select different operating system distributions, default package configurations, or any other _flavor_ of changes to a base image. For more information, see [.NET container images](container-images.md).
 
 :::zone-end
 
@@ -270,7 +288,20 @@ Image names consist of one or more slash-delimited segments, each of which can o
 
 ### `ContainerImageTag(s)`
 
-The container image tag property controls the tags that are generated for the image. To specify a single tag use `ContainerImageTag` and for multiple tags use `ContainerImageTags`. Tags are often used to refer to different versions of an application, but they can also refer to different operating system distributions, or even different configurations. By default, the `Version` of the project is used as the tag value. To override the default, specify either of the following:
+The container image tag property controls the tags that are generated for the image. To specify a single tag use `ContainerImageTag` and for multiple tags use `ContainerImageTags`. Tags are often used to refer to different versions of an app, but they can also refer to different operating system distributions, or even different configurations.
+
+:::zone pivot="dotnet-8-0"
+
+Starting with .NET 8, when a tag isn't provided the default is `latest`.
+
+:::zone-end
+:::zone pivot="dotnet-7-0"
+
+By default, the `Version` of the project is used as the tag value.
+
+:::zone-end
+
+To override the default, specify either of the following:
 
 ```xml
 <PropertyGroup>
@@ -294,6 +325,27 @@ Tags can only contain up to 127 alphanumeric characters, periods, underscores, a
 > ```dotnetcli
 > dotnet publish -p ContainerImageTags='"1.2.3-alpha2;latest"'
 > ```
+
+### `ContainerLabel`
+
+The container label adds a metadata label to the container. Labels have no impact on the container at runtime, but are often used to store version and authoring metadata for use by security scanners and other infrastructure tools. You can specify any number of container labels.
+
+The `ContainerLabel` node has two attributes:
+
+- `Include`: The key of the label.
+- `Value`: The value of the label (this may be empty).
+
+```xml
+<ItemGroup>
+    <ContainerLabel Include="org.contoso.businessunit" Value="contoso-university" />
+</ItemGroup>
+```
+
+For a list of labels that are created by default, see [default container labels](#default-container-labels).
+
+## Configure container execution
+
+To control the execution of the container, you can use the following MSBuild properties.
 
 ### `ContainerWorkingDirectory`
 
@@ -322,26 +374,21 @@ The `ContainerPort` node has two attributes:
 </ItemGroup>
 ```
 
-### `ContainerLabel`
+:::zone pivot="dotnet-8-0"
 
-The container label adds a metadata label to the container. Labels have no impact on the container at runtime, but are often used to store version and authoring metadata for use by security scanners and other infrastructure tools. You can specify any number of container labels.
+Starting with .NET 8, the `ContainerPort` is inferred when not explicitly provided based on several well-known ASP.NET environment variables:
 
-The `ContainerLabel` node has two attributes:
+- `ASPNETCORE_URLS`
+- `ASPNETCORE_HTTP_PORTS`
+- `ASPNETCORE_HTTPS_PORTS`
 
-- `Include`: The key of the label.
-- `Value`: The value of the label (this may be empty).
+If these environment variables are present, they're values are parsed and converted to TCP port mappings. These environment variables are read from your base image, if present, or from the environment variables defined in your project through `ContainerEnvironmentVariable` items. For more information, see [ContainerEnvironmentVariable](#containerenvironmentvariable).
 
-```xml
-<ItemGroup>
-    <ContainerLabel Include="org.contoso.businessunit" Value="contoso-university" />
-</ItemGroup>
-```
-
-For a list of labels that are created by default, see [default container labels](#default-container-labels).
+:::zone-end
 
 ### `ContainerEnvironmentVariable`
 
-The container environment variable node allows you to add environment variables to the container. Environment variables are accessible to the application running in the container immediately, and are often used to change the run-time behavior of the running application.
+The container environment variable node allows you to add environment variables to the container. Environment variables are accessible to the app running in the container immediately, and are often used to change the run-time behavior of the running app.
 
 The `ContainerEnvironmentVariable` node has two attributes:
 
@@ -356,9 +403,124 @@ The `ContainerEnvironmentVariable` node has two attributes:
 
 For more information, see [.NET environment variables](../tools/dotnet-environment-variables.md).
 
+## Configure container commands
+
+By default, the container tools launch your app using either the generated AppHost binary for your app (if your app uses an AppHost), or the `dotnet` command plus your app's DLL.
+
+:::zone pivot="dotnet-8-0"
+
+However, you can control how your app is executed by using some combination of `ContainerAppCommand`, `ContainerAppCommandArgs`, `ContainerDefaultArgs`, and `ContainerAppCommandInstruction`.
+
+These different configuration points exist because different base images use different combinations of the container `ENTRYPOINT` and `COMMAND` properties, and you want to be able to support all of them. The defaults should be useable for most apps, but if you want to customize your app launch behavior you should:
+
+- Identify the binary to run and set it as `ContainerAppCommand`
+- Identify which arguments are _required_ for your application to run and set them as `ContainerAppCommandArgs`
+- Identify which arguments (if any) are _optional_ and could be overridden by a user and set them as `ContainerDefaultArgs`
+- Set `ContainerAppCommandInstruction` to `DefaultArgs`
+
+For more information, see the following configuration items.
+
+### `ContainerAppCommand`
+
+The app command configuration item is the logical entry point of your app. For most apps, this is the AppHost, the generated executable binary for your app. If your app doesn't generate an AppHost, then this command will typically be `dotnet <your project dll>`. These values are applied after any `ENTRYPOINT` in your base container, or directly if no `ENTRYPOINT` is defined.
+
+The `ContainerAppCommand` configuration has a single `Include` property, which represents the command, option, or argument to use in the entrypoint command:
+
+```xml
+<ItemGroup Label="ContainerAppCommand Assignment">
+  <!-- This is how you would start the dotnet ef tool in your container -->
+  <ContainerAppCommand Include="dotnet" />
+  <ContainerAppCommand Include="ef" />
+
+  <!-- This shorthand syntax means the same thing - note the semicolon separating the tokens. -->
+  <ContainerAppCommand Include="dotnet;ef" />
+</ItemGroup>
+```
+
+### `ContainerAppCommandArgs`
+
+This app command args configuration item represents any logically required arguments for your app that should be applied to the `ContainerAppCommand`. By default, none are generated for an app. When present, the args are applied to your container when it's run.
+
+The `ContainerAppCommandArgs` configuration has a single `Include` property, which represents the option or argument to apply to the `ContainerAppCommand` command.
+
+```xml
+<ItemGroup>
+  <!-- Assuming the ContainerAppCommand defined above, this would be the way to force the database to update. -->
+  <ContainerAppCommandArgs Include="database" />
+  <ContainerAppCommandArgs Include="update" />
+
+  <!-- This is the shorthand syntax for the same idea -->
+  <ContainerAppCommandArgs Include="database;update" />
+</ItemGroup>
+```
+
+### `ContainerDefaultArgs`
+
+This default args configuration item represents any user-overridable arguments for your app. This is a good way to provide defaults that your app might need to run in a way that makes it easy to start, yet still easy to customize.
+
+The `ContainerDefaultArgs` configuration has a single `Include` property, which represents the option or argument to apply to the `ContainerAppCommand` command.
+
+```xml
+<ItemGroup>
+  <!-- Assuming the ContainerAppCommand defined above, this would be the way to force the database to update. -->
+  <ContainerDefaultArgs Include="database" />
+  <ContainerDefaultArgs Include="update" />
+
+  <!-- This is the shorthand syntax for the same idea -->
+  <ContainerDefaultArgs Include="database;update" />
+</ItemGroup>
+```
+
+### `ContainerAppCommandInstruction`
+
+The app command instruction configuration helps control the way the `ContainerEntrypoint`, `ContainerEntrypointArgs`, `ContainerAppCommand`, `ContainerAppCommandArgs`, and `ContainerDefaultArgs` are combined to form the final command that is run in the container. This depends greatly on if an `ENTRYPOINT` is present in the base image. This property takes one of three values: `"DefaultArgs"`, `"Entrypoint"`, or `"None"`.
+
+- `Entrypoint`:
+  - In this mode, the entrypoint is defined by `ContainerAppCommand`, `ContainerAppCommandArgs`, and `ContainerDefaultArgs`.
+- `None`:
+  - In this mode, the entrypoint is defined by `ContainerEntrypoint`, `ContainerEntrypointArgs`, and `ContainerDefaultArgs`.
+- `DefaultArgs`:
+  - This is the most complex mode—if none of the `ContainerEntrypoint[Args]` items are present, the `ContainerAppCommand[Args]` and `ContainerDefaultArgs` are used to create the entrypoint and command-skipping the base image entrypoint for base images that have it hard-coded to `dotnet` or `/usr/bin/dotnet` so that you have complete control.
+  - If both `ContainerEntrypoint` and `ContainerAppCommand` are present, then `ContainerEntrypoint` becomes the entrypoint, and `ContainerAppCommand` becomes the command.
+
+> [!NOTE]
+> The `ContainerEntrypoint` and `ContainerEntrypointArgs` configuration items have been deprecated as of .NET 8.
+
+> [!IMPORTANT]
+> This is for advanced users-most apps shouldn't need to customize their entrypoint to this degree. For more information and if you'd like to provide use cases for your scenarios, see [GitHub: .NET SDK container builds discussions](https://github.com/dotnet/sdk-container-builds/discussions).
+
+### `ContainerUser`
+
+The user configuration item controls the default user that the container runs as. This is often used to run the container as a nonroot user, which is a best practice for security. There are a few constraints for this configuration to be aware of:
+
+- It can take various forms—username, linux user ids, group name, linux group id, `username:groupname`, and other id variants.
+- There's no verification that the user or group specified exists on the image.
+- Changing the user can alter the behavior of the app, especially in regards to things like _File System_ permissions.
+
+The default value of this field varies by project TFM and target operating system:
+
+- If you're targeting .NET 8 or higher and using the Microsoft runtime images, then
+  - on Linux the rootless user `app` is used (though it's referenced by its user id)
+  - on Windows the rootless user `ContainerUser` is used
+- otherwise no default `ContainerUser` is used
+
+```xml
+<PropertyGroup>
+  <ContainerUser>my-existing-app-user</ContainerUser>
+</PropertyGroup>
+```
+
+> [!TIP]
+> The `APP_UID` environment variable is used to set user information in your container. This value can come from environment variables defined in your base image (like that Microsoft .NET images do), or you can set it yourself via the `ContainerEnvironmentVariable` syntax.
+
+:::zone-end
+:::zone pivot="dotnet-7-0"
+
+However, you can control how your app is executed by using `ContainerEntrypoint` and `ContainerEntrypointArgs`.
+
 ### `ContainerEntrypoint`
 
-The container entry point can be used to customize the `ENTRYPOINT` of the container, which is the executable that is called when the container is started. By default, for builds that create an app host, it's set as the `ContainerEntrypoint`. For builds that don't create an executable, the `dotnet path/to/application.dll` is used as the `ContainerEntrypoint`.
+The container entry point can be used to customize the `ENTRYPOINT` of the container, which is the executable that is called when the container is started. By default, for builds that create an app host, it's set as the `ContainerEntrypoint`. For builds that don't create an executable, the `dotnet path/to/app.dll` is used as the `ContainerEntrypoint`.
 
 The `ContainerEntrypoint` node has a single attribute:
 
@@ -400,6 +562,8 @@ Consider the following example .NET project item group:
   <ContainerEntrypointArgs Include="database;update" />
 </ItemGroup>
 ```
+
+:::zone-end
 
 ### Default container labels
 

@@ -18,7 +18,7 @@ Starting with .NET 8, container images are more pragmatic in how they're differe
 - The image variant (for example, `*-distroless`, `*-chiseled`).
 - The image feature (for example, `*-aot`, `*-extra`).
 
-## Small images
+## Images optimized for size
 
 The following images are focused on resulting in the smallest possible image size:
 
@@ -37,7 +37,7 @@ These images are smaller, as they don't include globalization dependencies such 
 > [!TIP]
 > SDK images aren't produced for `*-distroless` or `*-chiseled` image types. Composite images are the smallest `aspnet` offering for CoreCLR.
 
-## Large images
+## Images suitable for globalization
 
 Containerized apps that require globalization inflate the image size, as they require globalization dependencies. Ubuntu and Debian images have ICU and tzdata installed already.
 
@@ -59,9 +59,9 @@ The [runtime-deps](https://hub.docker.com/_/microsoft-dotnet-runtime-deps) image
 
 The need for `runtime-deps` extends to native AOT, `*-distroless` and `*-chiseled` image types as well. For each OS, three image variants are provided (all in `runtime-deps`), consider the following example using `*-chiseled` images:
 
-- `8.0-jammy-chiseled`: Images for CoreCLR (no tzdata or ICU).
-- `8.0-jammy-chiseled-aot`: Images for native AOT (no tzdata, ICU, or stdc++).
-- `8.0-jammy-chiseled-extra`: Image for both CoreCLR and native AOT (includes tzdata, ICU, and stdc++).
+- `8.0-jammy-chiseled`: Images for CoreCLR, no tzdata or ICU.
+- `8.0-jammy-chiseled-aot`: Images for native AOT, no tzdata, ICU, or stdc++.
+- `8.0-jammy-chiseled-extra`: Image for both CoreCLR and native AOT, includes tzdata, ICU, and stdc++.
 
 In terms of scenarios:
 

@@ -122,7 +122,7 @@ The following options are available when `dotnet` runs an application. For examp
 
 <a name="rollforward"></a>
 
-- **`--roll-forward <SETTING>`** **
+- **`--roll-forward <SETTING>`**
 
   Controls how roll forward is applied to the app. The `SETTING` can be one of the following values. If not specified, `Minor` is the default.
 

@@ -82,7 +82,7 @@ AOT images are published for:
 - Mariner
 - Ubuntu
 
-For more information, see [Native AOT deployment](../../deploying/native-aot/index.md).
+For more information, see [Native AOT deployment](./deploying/native-aot/index.md).
 
 ## Docker hub repositories
 

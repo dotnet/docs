@@ -292,7 +292,7 @@ items:
               - name: Advanced concepts
                 tocHref: /dotnet/csharp/advanced-topics/
                 topicHref: /dotnet/csharp/advanced-topics/reflection-and-attributes/index
-               
+
               - name: Tutorials
                 tocHref: /dotnet/csharp/tutorials/
                 topicHref: /dotnet/csharp/tutorials/index
@@ -606,6 +606,12 @@ items:
               - name: Memory management
                 tocHref: /dotnet/standard/garbage-collection/
                 topicHref: /dotnet/standard/managed-code
+              - name: Unmanaged API reference (debugging)
+                tocHref: /dotnet/core/unmanaged-api/debugging/
+                topicHref: /dotnet/core/unmanaged-api/debugging/index
+              - name: Unmanaged API reference (profiling)
+                tocHref: /dotnet/core/unmanaged-api/profiling/
+                topicHref: /dotnet/core/unmanaged-api/profiling/index
           - name: Data access
             tocHref: /dotnet/navigate/data-access/
             topicHref: /dotnet/navigate/data-access/index

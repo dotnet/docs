@@ -2,47 +2,47 @@
 description: "Learn more about: ICorDebugProcess11::EnumerateLoaderHeapMemoryRegions Method"
 title: "ICorDebugProcess11::EnumerateLoaderHeapMemoryRegions Method"
 ms.date: "06/06/2022"
-dev_langs: 
+dev_langs:
   - "cpp"
-api_name: 
+api_name:
   - "ICorDebugProcess11.EnumerateLoaderHeapMemoryRegions"
-api_location: 
+api_location:
   - "mscordbi.dll"
-api_type: 
+api_type:
   - "COM"
 ms.assetid:
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # ICorDebugProcess11::EnumerateLoaderHeapMemoryRegions Method
 
-[Supported in .NET 5 and later versions.]  
-  
+[Supported in .NET 5 and later versions.]
+
  Enumerates ranges of native memory that are used by the .NET runtime to store internal data structures that describe .NET types and methods. The information returned is the same information that would be shown by using the SOS `eeheap-loader` command.
-  
-## Syntax  
-  
+
+## Syntax
+
 ```cpp
 HRESULT EnumerateLoaderHeapMemoryRegions(
 [out] ICorDebugMemoryRangeEnum** ppRanges
-); 
-```  
-  
-## Parameters  
+);
+```
 
- `ppRanges`  
+## Parameters
 
-## Remarks  
+ `ppRanges`
 
-## Requirements  
+## Remarks
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
+## Requirements
 
- **Header:** CorDebug.idl, CorDebug.h  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
- **Library:** CorGuids.lib  
+ **Header:** CorDebug.idl, CorDebug.h
 
- **.NET Versions:** [!INCLUDE[net-core-50-plus](../../../../includes/net-core-50-md.md)]  
+ **Library:** CorGuids.lib
+
+ **.NET Versions:** Available since .NET Core 5.0
 
 ## See also
 

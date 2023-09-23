@@ -1,6 +1,6 @@
 ---
 title: "Type system runtime events"
-description: See .NET runtime events that collect diagnostic information specific to the .NET type system, such as TypeLoadStart and TypeLoadStop.
+description: Learn about the .NET runtime events that collect diagnostic information specific to the .NET type system, such as TypeLoadStart and TypeLoadStop.
 ms.date: "11/13/2020"
 ms.topic: reference
 helpviewer_keywords:
@@ -10,7 +10,7 @@ helpviewer_keywords:
 
 # .NET runtime type events
 
-These events collect information relating to loading types. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md)
+The events described in this article collect information relating to loading types. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md)
 
 ## TypeLoadStart Event
 

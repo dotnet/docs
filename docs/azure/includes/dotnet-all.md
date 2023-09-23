@@ -337,7 +337,7 @@
 | Functions - Extensions | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions/1.1.0) |  | GitHub [1.1.0](https://github.com/Azure/azure-functions-dotnet-extensions) |
 | Functions extension for Azure Mobile Apps | NuGet [3.0.0-beta8](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MobileApps/3.0.0-beta8) |  | GitHub [3.0.0-beta8](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.0-beta8/src/WebJobs.Extensions.MobileApps) |
 | Functions extension for Blob Storage | NuGet [5.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs/5.2.0) | [docs](/dotnet/api/overview/azure/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs-readme) |  |
-| Functions extension for Cosmos DB | NuGet [4.3.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDB/4.3.1) |  | GitHub [4.3.1](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/cosmos-v3.0.7/src/WebJobs.Extensions.CosmosDB) |
+| Functions extension for Cosmos DB | NuGet [4.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDB/4.4.0) |  | GitHub [4.4.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/cosmos-v3.0.7/src/WebJobs.Extensions.CosmosDB) |
 | Functions extension for DocumentDB | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DocumentDB/1.3.0) |  | GitHub [1.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions) |
 | Functions extension for Durable Task Framework | NuGet [2.10.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask/2.10.0) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/functions) | GitHub [2.10.0](https://github.com/Azure/azure-functions-durable-extension/tree/v2.2.2/src/WebJobs.Extensions.DurableTask) |
 | Functions extension for HTTP | NuGet [3.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Http/3.2.0) |  | GitHub [3.2.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.2/src/WebJobs.Extensions.Http) |
@@ -485,16 +485,16 @@
 | SQL Database Elastic Scale Service SplitMerge | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Service.SplitMerge/1.2.0) |  |  |
 | SQL Database Jobs | NuGet [0.8.3362.1](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.Jobs/0.8.3362.1) |  |  |
 | Web - Redis Output Cache Provider | NuGet [4.0.1](https://www.nuget.org/packages/Microsoft.Web.RedisOutputCacheProvider/4.0.1) |  | GitHub [4.0.1](https://github.com/Azure/aspnet-redis-providers/tree/NuGet-Release/RedisOutputCacheProvider-3.0.1/src/OutputCacheProvider) |
-| Web - Redis Session State Provider | NuGet [5.0.1](https://www.nuget.org/packages/Microsoft.Web.RedisSessionStateProvider/5.0.1) |  | GitHub [5.0.1](https://github.com/Azure/aspnet-redis-providers/tree/NuGet-Release/RedisSessionStateProvider-4.0.1/src/RedisSessionStateProvider) |
+| Web - Redis Session State Provider | NuGet [5.0.3](https://www.nuget.org/packages/Microsoft.Web.RedisSessionStateProvider/5.0.3) |  | GitHub [5.0.3](https://github.com/Azure/aspnet-redis-providers/tree/NuGet-Release/RedisSessionStateProvider-4.0.1/src/RedisSessionStateProvider) |
 | Functions Extensions - Cosmos DB ChangeProcessor | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.ChangeProcessor/1.0.2) |  |  |
 | Functions Extensions - Cosmos DB Mongo | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.Mongo/1.0.2) |  |  |
-| Functions Extensions - Dapr | NuGet [0.15.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Dapr/0.15.0-preview01) |  |  |
-| Functions Extensions - Dapr Core | NuGet [0.15.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Dapr.Core/0.15.0-preview01) |  |  |
+| Functions Extensions - Dapr | NuGet [0.16.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Dapr/0.16.0-preview01) |  |  |
+| Functions Extensions - Dapr Core | NuGet [0.16.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Dapr.Core/0.16.0-preview01) |  |  |
 | Functions Extensions - HTTP AspNet Core | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore/1.0.0) |  |  |
 | Functions Extensions - Redis | NuGet [0.3.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Redis/0.3.1-preview) |  |  |
 | Functions Extensions - Redis | NuGet [0.3.1-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Redis/0.3.1-preview) |  |  |
 | Functions Extensions - WebPubSub | NuGet [1.7.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.WebPubSub/1.7.0-beta.1) |  |  |
-| Functions Extensions - Worker Extentions | NuGet [0.15.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Dapr/0.15.0-preview01) |  |  |
+| Functions Extensions - Worker Extentions | NuGet [0.16.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Dapr/0.16.0-preview01) |  |  |
 | Hyak Common | NuGet [1.2.2](https://www.nuget.org/packages/Hyak.Common/1.2.2) |  |  |
 | Hyak Common - Tracing Etw | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Etw/1.0.2) |  |  |
 | Hyak Common - Tracing Log4Net | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Log4Net/1.0.2) |  |  |

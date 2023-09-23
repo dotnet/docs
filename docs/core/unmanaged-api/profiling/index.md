@@ -7,7 +7,7 @@ ms.date: 09/19/2023
 
 The profiling API enables a profiler to monitor a program's execution by the common language runtime (CLR).
 
-These articles describe APIs that were introduced in .NET Core 2.0 and later versions. For .NET Framework-era unmanaged APIs, see [.NET Framework profiling](../../../framework/unmanaged-api/profiling/index.md).
+These articles describe APIs that were introduced in .NET Core 2.0 and later versions. For .NET Framework-era unmanaged APIs, most of which can also be used to profile .NET (Core) apps, see [.NET Framework profiling](../../../framework/unmanaged-api/profiling/index.md).
 
 ## Structures
 

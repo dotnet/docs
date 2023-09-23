@@ -92,6 +92,12 @@ landingContent:
             url: ../../core/diagnostics/metrics.md
           - text: Runtime events
             url: ../../fundamentals/diagnostics/runtime-events.md
+      - linkListType: reference
+        links:
+          - text: Unmanaged API for debugging
+            url: ../../core/unmanaged-api/debugging/index.md
+          - text: Unmanaged API for profiling
+            url: ../../core/unmanaged-api/profiling/index.md
 
   # Card
   - title: Code analysis

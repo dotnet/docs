@@ -45,7 +45,7 @@ public static extern int SHAutoCompleteHRESULT(IntPtr hwndEdit, SHAutoCompleteFl
 
 ## Manually handling HRESULT values
 
-When working with a `PreserveSig` method that has an `HRESULT` return value, you can use the <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR> method to throw the corresponding exception if the `HRESULT` indicates a failure.
+When working with a `PreserveSig` method that has an `HRESULT` return value, you can use the <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> method to throw the corresponding exception if the `HRESULT` indicates a failure.
 
 ## See also
 

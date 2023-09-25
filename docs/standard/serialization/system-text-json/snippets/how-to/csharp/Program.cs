@@ -45,6 +45,9 @@ public class Program
         Console.WriteLine("\n============================= Roundtrip enum as string\n");
         RoundtripEnumAsString.Run();
 
+        Console.WriteLine("\n============================= Roundtrip enum usingJsonConverterAttribute\n");
+        RoundtripEnumUsingConverterAttribute.Run();
+
         Console.WriteLine("\n============================= Roundtrip Stack<T>\n");
         RoundtripStackOfT.Run();
 

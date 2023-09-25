@@ -73,7 +73,7 @@ static nint GetPointerToComInterface();
 [LibraryImport("MyComObjectProvider.dll")]
 static void GivePointerToComInterface(nint comObject);
 
-// Use the system to create a Runtime Callable Wrapper to use in managed code
+// Use the ComWrappers API to create a Runtime Callable Wrapper to use in managed code
 ComWrappers cw = new StrategyBasedComWrappers();
 nint ptr = GetPointerToComInterface();
 IFoo foo = (IFoo)cw.GetOrCreateObjectForComInterface(ptr);
@@ -88,7 +88,7 @@ GivePointerToComInterface(ptr);
 
 ## Customizing marshalling
 
-The COM interface generator respects the <xref:System.Runtime.InteropServices.MarshalAsAttribute> and <xref:System.Runtime.InteropServices.Marshalling.MarshalUsingAttribute> attributes to customize marshalling of parameters. For more information, see [Customize Parameter Marshalling](./customize-parameter-marshalling.md) If an interface has `string` parameters or return types, the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.StringMarshalling?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.StringMarshallingCustomType?displayProperty=nameWithType> properties will apply to all parameters and return types of `string` in the interface if they don't have other marshalling attributes.
+The COM interface generator respects the <xref:System.Runtime.InteropServices.Marshalling.MarshalUsingAttribute> and some usages of <xref:System.Runtime.InteropServices.MarshalAsAttribute> attributes to customize marshalling of parameters. For more information, see how to [customize source-generated marshalling with the `MarshalUsing` attribute](./custom-marshalling-source-generation.md) and [customize parameter marshalling with the `MarshalAs` attribute](./customize-parameter-marshalling.md). If an interface has `string` parameters or return types, the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.StringMarshalling?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.StringMarshallingCustomType?displayProperty=nameWithType> properties will apply to all parameters and return types of `string` in the interface if they don't have other marshalling attributes.
 
 ## Implicit HRESULTs and PreserveSig
 
@@ -108,18 +108,18 @@ HRESULT Method1(int i);
 HRESULT Method2(float i, _Out_ int* returnValue);
 ```
 
-If you want to handle the HRESULT yourself, you can use the <xref:System.Runtime.InteropServices.PreserveSigAttribute> on the method to indicate the generator should not do this transformation. Below are snippets that demonstrate what native signature the generator expects when `[PreserveSig]` is applied.
+If you want to handle the `HRESULT` yourself, you can use the <xref:System.Runtime.InteropServices.PreserveSigAttribute> on the method to indicate the generator should not do this transformation. Below are snippets that demonstrate what native signature the generator expects when `[PreserveSig]` is applied. COM methods must return `HRESULT`, so the return value of any method with `PreserveSig` should be `int`.
 
 ```csharp
 [PreserveSig]
-void Method1(int i);
+int Method1(int i, out int j);
 
 [PreserveSig]
 int Method2(float i);
 ```
 
 ```c
-int Method1(int i);
+int Method1(int i, int* j);
 
 int Method2(float i);
 ```

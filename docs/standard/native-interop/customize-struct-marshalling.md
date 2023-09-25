@@ -11,6 +11,9 @@ ms.topic: how-to
 
 Sometimes the default marshalling rules for structures aren't exactly what you need. The .NET runtimes provide a few extension points for you to customize your structure's layout and how fields are marshalled. Customizing structure layout is supported for all scenarios, but customizing field marshalling is only supported for scenarios where runtime marshalling is enabled. If [runtime marshalling is disabled](disabled-marshalling.md), then any field marshalling must be done manually.
 
+> [!NOTE]
+> This article does not cover customizing marshalling for source-generated interop. If using [source-generated interop for P/Invokes](./pinvoke-source-generation.md) or [COM](./comwrappers-source-generation.md), customizing marshalling is covered in [another article](./custom-marshalling-source-generation.md).
+
 ## Customizing structure layout
 
 .NET provides the <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=nameWithType> attribute and the <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=nameWithType> enumeration to allow you to customize how fields are placed in memory. The following guidance will help you avoid common issues.

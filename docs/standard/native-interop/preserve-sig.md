@@ -8,7 +8,6 @@ ms.date: 9/21/2023
 
 In order to stay programming language agnostic, the Windows COM system and many Windows APIs return a 4 byte integer type called an `HRESULT` to indicate whether an API succeeded or failed, along with some information about the failure. Other values that need to be passed to the caller are "returned" via pointer parameters that act as "out" parameters, and are typically the last parameter in the signature. Languages like C# and Visual Basic traditionally translate a failure code to an exception to match how failures are usually propagated in the language, and expect interop method signatures to not include the `HRESULT`. To translate the method signature to a native signature, the runtime moves the return value of the method to an additional "out" parameter with an additional level of indirection (in other words, makes it a pointer to the managed return type), and adds an `HRESULT` return value. If a method returns `void`, no additional parameter is added and the return value becomes an `HRESULT`. For example, see below two C# COM methods that translate to the same native signature.
 
-
 ```csharp
 int Add(int a, int b);
 
@@ -18,7 +17,6 @@ void Add(int a, int b, out int c);
 ```c
 HRESULT Add(int a, int b, /* out */ int* sum);
 ```
-
 
 ## PreserveSig in COM
 

@@ -7,7 +7,7 @@ ms.date: 07/12/2023
 
 The default ASP.NET Core port configured in .NET container images has been updated from port 80 to 8080.
 
-We also added the new `ASPNETCORE_HTTP_PORTS` environment variable as a simpler alternative to `ASPNETCORE_URLS`.
+We also added the new `ASPNETCORE_HTTP_PORTS` environment variable as a simpler alternative to `ASPNETCORE_URLS`. The new variable expects a semicolon delimited list of ports numbers, while the older variable expects a more complicated syntax.
 
 ## Previous behavior
 

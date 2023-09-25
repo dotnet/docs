@@ -40,7 +40,7 @@ class Program
     {
         using MeterProvider meterProvider = Sdk.CreateMeterProviderBuilder()
                 .AddMeter("HatCo.HatStore")
-                .AddPrometheusHttpListener(options => options.UriPrefixes = new string[] { "http://localhost:9464/" })
+                .AddPrometheusHttpListener(options => options.UriPrefixes = new string[] { "http://localhost:9184/" })
                 .Build();
 
         var rand = Random.Shared;

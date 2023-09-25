@@ -10,7 +10,7 @@ ms.date: 08/25/2023
 
 The .NET runtime's built-in (not source-generated), Windows-only, COM interop system generates an IL stub&mdash;a stream of IL instructions that is JIT-ed&mdash;at run-time to facilitate the transition from managed code to COM, and vice-versa. Since this IL stub is generated at run-time, it isn't compatible with [NativeAOT](../../core/deploying/native-aot/index.md), or [IL trimming](../../core/deploying/trimming/trim-self-contained.md). Stub generation at run-time can also make diagnosing marshalling issues difficult.
 
-Code using built-in interop uses attributes such as `ComImport` or `DllImport`, which rely on code generation at run-time.
+Built-in interop uses attributes such as `ComImport` or `DllImport`, which rely on code generation at run-time. The following code shows an example of this:
 
 ```csharp
 [ComImport]
@@ -36,7 +36,7 @@ nint ptr = Marshal.GetIUnknownForObject(foo);
 GivePointerToComInterface(ptr);
 ```
 
-The ComWrappers API enables interacting with COM in C# without using the the built-in COM system, but [requires substantial boilerplate and hand written unsafe code](./tutorial-comwrappers.md). The COM interface generator automates this process and makes ComWrappers as easy as built-in COM, but delivers it in a trimmable and AOT friendly manner.
+The `ComWrappers` API enables interacting with COM in C# without using the built-in COM system, but [requires substantial boilerplate and hand-written unsafe code](./tutorial-comwrappers.md). The COM interface generator automates this process and makes `ComWrappers` as easy as built-in COM, but delivers it in a trimmable and AOT-friendly manner.
 
 ## Basic usage
 
@@ -136,13 +136,13 @@ The only supported interface base is [IUnknown](/windows/win32/api/unknwn/nn-unk
 
 Source-generated COM has some different default marshalling behaviors from built in COM.
 
-- In built-in COM, all types had an implicit `[In]` attribute except for arrays of blittable elements, which had implicit `[In, Out]` attributes. In source-generated COM, all types, including arrays of blittable elements, have `[In]` semantics.
+- In the built-in COM system, all types had an implicit `[In]` attribute except for arrays of blittable elements, which had implicit `[In, Out]` attributes. In source-generated COM, all types, including arrays of blittable elements, have `[In]` semantics.
 
-- `[In]` and `[Out]` attributes are only allowed on arrays. If `[Out]` or `[In, Out]` behavior is required on other types, it is recommended to use the `in` and `out` parameter modifiers.
+- `[In]` and `[Out]` attributes are only allowed on arrays. If `[Out]` or `[In, Out]` behavior is required on other types, use the `in` and `out` parameter modifiers.
 
 ### Derived interfaces
 
-In the built-in COM system, if you had interfaces which derived from other COM interfaces, you would need to declare a shadowing method for each base method on the base interfaces with the `new` keyword. See [the design doc](https://github.com/dotnet/runtime/blob/main/docs/design/libraries/ComInterfaceGenerator/DerivedComInterfaces.md) for more information.
+In the built-in COM system, if you had interfaces which derived from other COM interfaces, you would need to declare a shadowing method for each base method on the base interfaces with the `new` keyword. See [COM interface inheritance and .NET](./qualify-net-types-for-interoperation#com-interface-inheritance-and-net) for more information.
 
 ```csharp
 [ComImport]
@@ -164,7 +164,7 @@ interface IDerived : IBase
 }
 ```
 
-The COM interface generator does not expect any shadowing of base methods. To create a method that inherits from another, simply indicate the base interface as a C# base interface and add the derived interface's methods.
+The COM interface generator does not expect any shadowing of base methods. To create a method that inherits from another, simply indicate the base interface as a C# base interface and add the derived interface's methods. See [the design doc](https://github.com/dotnet/runtime/blob/main/docs/design/libraries/ComInterfaceGenerator/DerivedComInterfaces.md) for more information.
 
 ```csharp
 [GeneratedComInterface]

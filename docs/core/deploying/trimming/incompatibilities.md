@@ -17,7 +17,7 @@ Automatic [COM marshalling](../../../standard/native-interop/cominterop.md) has 
 
 ## WPF
 
-The Windows Presentation Foundation (WPF) framework makes substantial use of reflection and some features are heavily reliant on run-time code inspection. In .NET 6, it's not possible for trimming analysis to preserve all necessary code for WPF applications. Unfortunately, almost no WPF apps are runnable after trimming, so trimming support for WPF is currently disabled in the .NET SDK. See [WPF is not trim-compatible](https://github.com/dotnet/wpf/issues/3811) issue for progress on enabling trimming for WPF.
+The Windows Presentation Foundation (WPF) framework makes substantial use of reflection and some features are heavily reliant on run-time code inspection. It's not possible for trimming analysis to preserve all necessary code for WPF applications. Unfortunately, almost no WPF apps are runnable after trimming, so trimming support for WPF is currently disabled in the .NET SDK. See [WPF is not trim-compatible](https://github.com/dotnet/wpf/issues/3811) issue for progress on enabling trimming for WPF.
 
 ## Windows Forms
 

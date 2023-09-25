@@ -35,7 +35,7 @@ These images are smaller, as they don't include globalization dependencies such 
 ```
 
 > [!TIP]
-> SDK images aren't produced for `*-distroless` or `*-chiseled` image types. Composite images are the smallest `aspnet` offering for CoreCLR.
+> SDK images aren't produced for `*-distroless` or `*-chiseled` image types. Composite images are the smallest `aspnet` offering for [Core CLR](../../standard/glossary.md#core-clr).
 
 ## Images suitable for globalization
 
@@ -59,13 +59,13 @@ The [runtime-deps](https://hub.docker.com/_/microsoft-dotnet-runtime-deps) image
 
 The need for `runtime-deps` extends to native AOT, `*-distroless`, and `*-chiseled` image types as well. For each OS, three image variants are provided (all in `runtime-deps`). Consider the following example using `*-chiseled` images:
 
-- `8.0-jammy-chiseled`: Images for CoreCLR, no tzdata or ICU.
+- `8.0-jammy-chiseled`: Images for Core CLR, no tzdata or ICU.
 - `8.0-jammy-chiseled-aot`: Images for native AOT, no tzdata, ICU, or stdc++.
-- `8.0-jammy-chiseled-extra`: Image for both CoreCLR and native AOT, includes tzdata, ICU, and stdc++.
+- `8.0-jammy-chiseled-extra`: Image for both Core CLR and native AOT, includes tzdata, ICU, and stdc++.
 
 In terms of scenarios:
 
-The `8.0-jammy-chiseled` images are the base for `runtime` and `aspnet` images of the same tag. By default, native AOT apps can use the `8.0-jammy-chiseled-aot` image, since it's optimized for size. Native AOT apps and CoreCLR self-contained/single file apps that require globalization functionality can use `8.0-jammy-chiseled-extra`.
+The `8.0-jammy-chiseled` images are the base for `runtime` and `aspnet` images of the same tag. By default, native AOT apps can use the `8.0-jammy-chiseled-aot` image, since it's optimized for size. Native AOT apps and Core CLR self-contained/single file apps that require globalization functionality can use `8.0-jammy-chiseled-extra`.
 
 Alpine and Mariner images use the same scheme.
 

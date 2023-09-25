@@ -6,7 +6,7 @@ ms.date: 9/21/2023
 
 # Implicit method signature translations in .NET interop
 
-In order to stay programming language agnostic, the Windows COM system and many Windows APIs return a 4 byte error code called an HRESULT to indicate whether an API succeeded or failed, along with some information about the failure. Other values that need to be passed to the caller are "returned" via pointer parameters that act as `out` parameters, and are typically the last parameter in the signature. Languages like C#, Visual Basic, and Java traditionally translate a failure code to an exception to match how failures are usually propagated in the language, and the `out` parameter was treated as the return value in the signature of the managed langauge representation. For example, see below a native COM method signature and its corresponding C# signature.
+In order to stay programming language agnostic, the Windows COM system and many Windows APIs return a 4 byte integer type called an `HRESULT` to indicate whether an API succeeded or failed, along with some information about the failure. Other values that need to be passed to the caller are "returned" via pointer parameters that act as "out" parameters, and are typically the last parameter in the signature. Languages like C# and Visual Basic traditionally translate a failure code to an exception to match how failures are usually propagated in the language, and the "out" parameter was treated as the return value in the signature of the managed language representation. For example, see below a native COM method signature and its corresponding C# signature.
 
 ```c
 HRESULT Add(int a, int b, /* out */ int* sum);
@@ -18,7 +18,7 @@ int Add(int a, int b);
 
 ## PreserveSig in COM
 
-All COM methods in C# are expected to use the translated signature by default. In order to use and export methods without the translation, add the <xref:System.Runtime.InteropServices.PreserveSigAttribute> to a COM interface method. When the attribute is applied to a method, no translation is done to the signature. This applied to both built-in COM and source-generated COM. For example, see below the C# method signature with a `PreserveSig` attribute and its corresponding native signature.
+All COM methods in C# are expected to use the translated signature by default. In order to use and export methods without the translation, add the <xref:System.Runtime.InteropServices.PreserveSigAttribute> to a COM interface method. When the attribute is applied to a method, no translation is done to the signature. This applies to both built-in COM and source-generated COM. For example, see the C# method signature below with a `PreserveSig` attribute and its corresponding native signature.
 
 ```csharp
 [PreserveSig]

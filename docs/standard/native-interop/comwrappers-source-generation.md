@@ -8,9 +8,9 @@ ms.date: 08/25/2023
 
 .NET 8 introduces a source generator that creates an implementation of the [ComWrappers](./com-wrappers.md) API for you. The generator recognizes the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute>.
 
-The .NET runtime's built-in (not source-generated), Windows-only, COM interop system generates an IL stub&mdash;a stream of IL instructions that is JIT-ed&mdash;at run time to facilitate the transition from managed code to COM, and vice-versa. Since this IL stub is generated at run time, it isn't compatible with [NativeAOT](../../core/deploying/native-aot/index.md), or [IL trimming](../../core/deploying/trimming/trim-self-contained.md). Run time stub generation also makes diagnosing marshalling issues difficult.
+The .NET runtime's built-in (not source-generated), Windows-only, COM interop system generates an IL stub&mdash;a stream of IL instructions that is JIT-ed&mdash;at run-time to facilitate the transition from managed code to COM, and vice-versa. Since this IL stub is generated at run-time, it isn't compatible with [NativeAOT](../../core/deploying/native-aot/index.md), or [IL trimming](../../core/deploying/trimming/trim-self-contained.md). Stub generation at run-time can also make diagnosing marshalling issues difficult.
 
-Code using built-in interop might use attributes such as ComImport or DllImport. These rely on run time code generation.
+Code using built-in interop uses attributes such as `ComImport` or `DllImport`, which rely on code generation at run-time.
 
 ```csharp
 [ComImport]
@@ -27,20 +27,20 @@ static void GivePointerToComInterface(nint comObject);
 
 // Use the system to create a Runtime Callable Wrapper to use in managed code
 nint ptr = GetPointerToComInterface();
-IFoo foo = Marshal.GetObjectForIUnknown(ptr);
+IFoo foo = (IFoo)Marshal.GetObjectForIUnknown(ptr);
 foo.Method(0);
 ...
 // Use the system to create a COM Callable Wrapper to pass to unmanaged code
 IFoo foo = GetManagedIFoo();
 nint ptr = Marshal.GetIUnknownForObject(foo);
-GivePointerToComInterface(nint ptr);
+GivePointerToComInterface(ptr);
 ```
 
-The ComWrappers API enables interacting with COM in C# without using the the built-in COM system, but [requires lots of boilerplate and hand written unsafe code](./tutorial-comwrappers.md). The COM interface generator automates that process and makes ComWrappers as easy as built-in COM.
+The ComWrappers API enables interacting with COM in C# without using the the built-in COM system, but [requires substantial boilerplate and hand written unsafe code](./tutorial-comwrappers.md). The COM interface generator automates this process and makes ComWrappers as easy as built-in COM, but delivers it in a trimmable and AOT friendly manner.
 
 ## Basic usage
 
-To use the COM interface generator, add the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> and <xref:System.Runtime.InteropServices.GuidAttribute> attributes on the interface definition that you want to import from COM or expose to COM. The type will also need to be `partial` and have `internal` or `public` visibility for the generated code to be able to access it.
+To use the COM interface generator, add the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> and <xref:System.Runtime.InteropServices.GuidAttribute> attributes on the interface definition that you want to import from or expose to COM. The type must be marked `partial` and have `internal` or `public` visibility for the generated code to be able to access it.
 
 ```csharp
 [GeneratedComInterface]
@@ -76,14 +76,14 @@ static void GivePointerToComInterface(nint comObject);
 // Use the system to create a Runtime Callable Wrapper to use in managed code
 ComWrappers cw = new StrategyBasedComWrappers();
 nint ptr = GetPointerToComInterface();
-IFoo foo = cw.GetOrCreateObjectForComInterface(ptr);
+IFoo foo = (IFoo)cw.GetOrCreateObjectForComInterface(ptr);
 foo.Method(0);
 ...
 // Use the system to create a COM Callable Wrapper to pass to unmanaged code
 ComWrappers cw = new StrategyBasedComWrappers();
-Foo foo = new Foo();
+Foo foo = new();
 nint ptr = cw.GetOrCreateComInterfaceForObject(foo);
-GivePointerToComInterface(nint ptr);
+GivePointerToComInterface(ptr);
 ```
 
 ## Customizing marshalling
@@ -92,7 +92,7 @@ The COM interface generator respects the <xref:System.Runtime.InteropServices.Ma
 
 ## Implicit HRESULTs and PreserveSig
 
-COM methods in C# have a different signature than the native methods. Standard COM has a return type of HRESULT, a 4 byte code representing error and success states. This return value is hidden in the C# signature. The C# return value is converted into an additional parameter in the native signature, and the HRESULT is handled by the generated code, which will throw an exception if the HRESULT is an error value.
+COM methods in C# have a different signature than the native methods. Standard COM has a return type of `HRESULT`, a 4 byte integer type representing error and success states. This `HRESULT` return value is hidden by default in the C# signature and converted to an exception when an error value is returned. The last "out" parameter of the native COM signature may optionally be converted into the return in the C# signature.
 
 For example, the following snippets show C# method signatures and the corresponding native signature the generator infers.
 
@@ -186,7 +186,7 @@ Note that an interface with the `GeneratedComInterface` attribute can only inher
 
 ### Marshal APIs
 
-Some APIs in <xref:System.Runtime.InteropServices.Marshal> are not compatible with source-generated COM. These methods should be replaced with their corresponding methods on StrategyBasedComWrappers.
+Some APIs in <xref:System.Runtime.InteropServices.Marshal> are not compatible with source-generated COM. These methods should be replaced with their corresponding methods on a `ComWrappers` implementation.
 
 ## See also
 

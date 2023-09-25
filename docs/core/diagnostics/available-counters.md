@@ -37,7 +37,7 @@ The following counters are published as part of .NET runtime (CoreCLR) and are m
 | :::no-loc text="ThreadPool Thread Count"::: (`threadpool-thread-count`) | The number of thread pool threads that currently exist in the <xref:System.Threading.ThreadPool>, based on <xref:System.Threading.ThreadPool.ThreadCount?displayProperty=nameWithType> | .NET Core 3.1 |
 | :::no-loc text="Working Set"::: (`working-set`) | The number of megabytes of physical memory mapped to the process context at a point in time base on <xref:System.Environment.WorkingSet?displayProperty=nameWithType> | .NET Core 3.1 |
 | :::no-loc text="IL Bytes Jitted"::: (`il-bytes-jitted`) | The total size of ILs that are JIT-compiled, in bytes | .NET 5 |
-| :::no-loc text="Method Jitted Count"::: (`method-jitted-count`) | The number of methods that are JIT-compiled | .NET 5 |
+| :::no-loc text="Methods Jitted Count"::: (`methods-jitted-count`) | The number of methods that are JIT-compiled | .NET 5 |
 | :::no-loc text="GC Committed Bytes"::: (`gc-committed`) | The number of bytes committed by the GC | .NET 6 |
 
 ## Microsoft.AspNetCore.Hosting counters

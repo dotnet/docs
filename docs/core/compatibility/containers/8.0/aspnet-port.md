@@ -1,9 +1,9 @@
 ---
-title: "Breaking change: Default ASP.NET Core port changed to 8080"
-description: Learn about the breaking change in containers where the default ASP.NET Core port changed to 8080.
+title: "Breaking change: Default ASP.NET Core port changed from 80 to 8080"
+description: Learn about the breaking change in containers where the default ASP.NET Core port changed from 80 to 8080.
 ms.date: 07/12/2023
 ---
-# Default ASP.NET Core port changed to 8080
+# Default ASP.NET Core port changed from 80 to 8080
 
 The default ASP.NET Core port configured in .NET container images has been updated from port 80 to 8080.
 

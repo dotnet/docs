@@ -124,6 +124,8 @@ int Method1(int i);
 int Method2(float i);
 ```
 
+For more information, see [Implicit method signature translations in .NET interop](./preserve-sig.md)
+
 ## Incompatibilities and differences to built-in COM
 
 ### IUnknown only

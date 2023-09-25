@@ -64,6 +64,8 @@ $ docker kill 3cc86b4b3ea1a7303d83171c132b0645d4adf61d80131152936b01661ae82a09
 3cc86b4b3ea1a7303d83171c132b0645d4adf61d80131152936b01661ae82a09
 ```
 
+If you are using [Kubernetes](https://kubernetes.io/docs/tutorials/services/connect-applications-service/) or [Docker Compose](https://docs.docker.com/compose/compose-file/05-services/#ports), you will need to change the port per those schemas. See [Using .NET with Kubernetes](https://github.com/dotnet/dotnet-docker/blob/main/samples/kubernetes/README.md) for examples.
+
 ## Version introduced
 
 .NET 8 Preview 1

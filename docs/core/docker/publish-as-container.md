@@ -145,8 +145,8 @@ Determining projects to restore...
   All projects are up-to-date for restore.
   DotNet.ContainerImage -> .\Worker\bin\Release\net8.0\linux-x64\DotNet.ContainerImage.dll
   DotNet.ContainerImage -> .\Worker\bin\Release\net8.0\linux-x64\publish\
-  Building image 'dotnet-worker-image' with tags 1.0.0 on top of base image mcr.microsoft.com/dotnet/aspnet:8.0
-  Pushed container 'dotnet-worker-image:1.0.0' to Docker daemon
+  Building image 'dotnet-worker-image' with tags latest on top of base image mcr.microsoft.com/dotnet/aspnet:8.0
+  Pushed container 'dotnet-worker-image:latest' to Docker daemon
 ```
 
 :::zone-end
@@ -207,7 +207,7 @@ If you set a value here, you should set the fully qualified name of the image to
 
 ### ContainerFamily
 
-Starting with .NET 8, `ContainerFamily` is used to choose a different family of Microsoft-provided container images as the base image for your app. When set, this value is appended to the end of the selected TFM-specific tag, changing the tag provided. For example, to use the Alpine Linux variants of the .NET base images, you can set `ContainerFamily` to `alpine`:
+Starting with .NET 8, you can use the `ContainerFamily` MSBuild property to choose a different family of Microsoft-provided container images as the base image for your app. When set, this value is appended to the end of the selected TFM-specific tag, changing the tag provided. For example, to use the Alpine Linux variants of the .NET base images, you can set `ContainerFamily` to `alpine`:
 
 ```xml
 <PropertyGroup>
@@ -217,7 +217,7 @@ Starting with .NET 8, `ContainerFamily` is used to choose a different family of 
 
 The preceding project configuration results in a final tag of `8.0-alpine` for a .NET 8-targeting app.
 
-This field is free-form, and often can be used to select different operating system distributions, default package configurations, or any other _flavor_ of changes to a base image. For more information, see [.NET container images](container-images.md).
+This field is free-form, and often can be used to select different operating system distributions, default package configurations, or any other _flavor_ of changes to a base image. This field is ignored when `ContainerBaseImage` is set. For more information, see [.NET container images](container-images.md).
 
 :::zone-end
 
@@ -261,7 +261,7 @@ For notes on working with these registries, see the [registry-specific notes](ht
 
 ### `ContainerRepository`
 
-The container image name controls the name of the image itself, for example, `dotnet/runtime` or `my-app`. By default, the `AssemblyName` of the project is used.
+The container repository is the name of the image itself, for example, `dotnet/runtime` or `my-app`. By default, the `AssemblyName` of the project is used.
 
 ```xml
 <PropertyGroup>
@@ -328,7 +328,7 @@ Tags can only contain up to 127 alphanumeric characters, periods, underscores, a
 
 ### `ContainerLabel`
 
-The container label adds a metadata label to the container. Labels have no impact on the container at runtime, but are often used to store version and authoring metadata for use by security scanners and other infrastructure tools. You can specify any number of container labels.
+The container label adds a metadata label to the container. Labels have no impact on the container at run time, but are often used to store version and authoring metadata for use by security scanners and other infrastructure tools. You can specify any number of container labels.
 
 The `ContainerLabel` node has two attributes:
 
@@ -382,7 +382,7 @@ Starting with .NET 8, the `ContainerPort` is inferred when not explicitly provid
 - `ASPNETCORE_HTTP_PORTS`
 - `ASPNETCORE_HTTPS_PORTS`
 
-If these environment variables are present, they're values are parsed and converted to TCP port mappings. These environment variables are read from your base image, if present, or from the environment variables defined in your project through `ContainerEnvironmentVariable` items. For more information, see [ContainerEnvironmentVariable](#containerenvironmentvariable).
+If these environment variables are present, their values are parsed and converted to TCP port mappings. These environment variables are read from your base image, if present, or from the environment variables defined in your project through `ContainerEnvironmentVariable` items. For more information, see [ContainerEnvironmentVariable](#containerenvironmentvariable).
 
 :::zone-end
 
@@ -484,7 +484,7 @@ The app command instruction configuration helps control the way the `ContainerEn
 - `None`:
   - In this mode, the entrypoint is defined by `ContainerEntrypoint`, `ContainerEntrypointArgs`, and `ContainerDefaultArgs`.
 - `DefaultArgs`:
-  - This is the most complex mode—if none of the `ContainerEntrypoint[Args]` items are present, the `ContainerAppCommand[Args]` and `ContainerDefaultArgs` are used to create the entrypoint and command-skipping the base image entrypoint for base images that have it hard-coded to `dotnet` or `/usr/bin/dotnet` so that you have complete control.
+  - This is the most complex mode—if none of the `ContainerEntrypoint[Args]` items are present, the `ContainerAppCommand[Args]` and `ContainerDefaultArgs` are used to create the entrypoint and command. The base image entrypoint for base images that have it hard-coded to `dotnet` or `/usr/bin/dotnet` is skipped so that you have complete control.
   - If both `ContainerEntrypoint` and `ContainerAppCommand` are present, then `ContainerEntrypoint` becomes the entrypoint, and `ContainerAppCommand` becomes the command.
 
 > [!NOTE]
@@ -495,18 +495,18 @@ The app command instruction configuration helps control the way the `ContainerEn
 
 ### `ContainerUser`
 
-The user configuration item controls the default user that the container runs as. This is often used to run the container as a nonroot user, which is a best practice for security. There are a few constraints for this configuration to be aware of:
+The user configuration property controls the default user that the container runs as. This is often used to run the container as a nonroot user, which is a best practice for security. There are a few constraints for this configuration to be aware of:
 
-- It can take various forms—username, linux user ids, group name, linux group id, `username:groupname`, and other id variants.
+- It can take various forms—username, linux user ids, group name, linux group id, `username:groupname`, and other ID variants.
 - There's no verification that the user or group specified exists on the image.
 - Changing the user can alter the behavior of the app, especially in regards to things like _File System_ permissions.
 
 The default value of this field varies by project TFM and target operating system:
 
-- If you're targeting .NET 8 or higher and using the Microsoft runtime images, then
-  - on Linux the rootless user `app` is used (though it's referenced by its user id)
+- If you're targeting .NET 8 or higher and using the Microsoft runtime images, then:
+  - on Linux the rootless user `app` is used (though it's referenced by its user ID)
   - on Windows the rootless user `ContainerUser` is used
-- otherwise no default `ContainerUser` is used
+- Otherwise, no default `ContainerUser` is used
 
 ```xml
 <PropertyGroup>

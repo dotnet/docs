@@ -13,7 +13,7 @@ ms.date: 09/22/2023
 Starting with .NET 8, container images are more pragmatic in how they're differentiated. The following characteristics are used to differentiate images:
 
 - The target framework moniker (TFM) of the app.
-- The OS, version and architecture.
+- The OS, version, and architecture.
 - The image type (for example, `runtime`, `aspnet`, `sdk`).
 - The image variant (for example, `*-distroless`, `*-chiseled`).
 - The image feature (for example, `*-aot`, `*-extra`).
@@ -26,7 +26,7 @@ The following images are focused on resulting in the smallest possible image siz
 - Mariner distroless
 - Ubuntu chiseled
 
-These images are smaller, as they don't include globalization dependencies such as, ICU or tzdata. These images only work with apps that are configured for globalization invariant mode. To configure an app for invariant globalization, add the following property to the project file:
+These images are smaller, as they don't include globalization dependencies such as, ICU, or tzdata. These images only work with apps that are configured for globalization invariant mode. To configure an app for invariant globalization, add the following property to the project file:
 
 ```xml
 <PropertyGroup>
@@ -49,7 +49,7 @@ The tzdata dependency was added to the following images:
 This globalization tactic is used by `runtime`, `aspnet`, and `sdk` images with the same tag.
 
 > [!IMPORTANT]
-> Adding tzdata to Debian bookworm images has no practical effect, unless there's an update to tzdata (that isn't yet included in Debian) at which point .NET images would include a newer tzdata.
+> Adding tzdata to Debian bookworm images has no practical effect, unless there's an update to tzdata (that isn't yet included in Debian), at which point .NET images would include a newer tzdata.
 
 Some packages are still optional, such as Kerberos, LDAP, and msquic. These packages are only required in niche scenarios.
 
@@ -57,7 +57,7 @@ Some packages are still optional, such as Kerberos, LDAP, and msquic. These pack
 
 The [runtime-deps](https://hub.docker.com/_/microsoft-dotnet-runtime-deps) images have significant value, particularly since they include a standard user and port definitions. They're convenient to use for self-contained and native AOT scenarios. However, solely providing `runtime-deps` images that are needed by the [runtime](https://hub.docker.com/_/microsoft-dotnet-runtime) and [sdk](https://hub.docker.com/_/microsoft-dotnet-sdk) images isn't sufficient to enable all the imaginable scenarios or generate optimal images.
 
-The need for `runtime-deps` extends to native AOT, `*-distroless` and `*-chiseled` image types as well. For each OS, three image variants are provided (all in `runtime-deps`), consider the following example using `*-chiseled` images:
+The need for `runtime-deps` extends to native AOT, `*-distroless`, and `*-chiseled` image types as well. For each OS, three image variants are provided (all in `runtime-deps`). Consider the following example using `*-chiseled` images:
 
 - `8.0-jammy-chiseled`: Images for CoreCLR, no tzdata or ICU.
 - `8.0-jammy-chiseled-aot`: Images for native AOT, no tzdata, ICU, or stdc++.
@@ -70,7 +70,7 @@ The `8.0-jammy-chiseled` images are the base for `runtime` and `aspnet` images o
 Alpine and Mariner images use the same scheme.
 
 > [!NOTE]
-> Debian and Ubuntu (non-chiseled) `runtime-deps` images will not have multiple variants.
+> Debian and Ubuntu (non-chiseled) `runtime-deps` images don't have multiple variants.
 
 ## Native AOT container images
 

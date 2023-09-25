@@ -142,7 +142,7 @@ Source-generated COM has some different default marshalling behaviors from built
 
 ### Derived interfaces
 
-In the built-in COM system, if you had interfaces which derived from other COM interfaces, you would need to declare a shadowing method for each base method on the base interfaces with the `new` keyword. See [COM interface inheritance and .NET](./qualify-net-types-for-interoperation#com-interface-inheritance-and-net) for more information.
+In the built-in COM system, if you had interfaces which derived from other COM interfaces, you would need to declare a shadowing method for each base method on the base interfaces with the `new` keyword. See [COM interface inheritance and .NET](./qualify-net-types-for-interoperation.md#com-interface-inheritance-and-net) for more information.
 
 ```csharp
 [ComImport]

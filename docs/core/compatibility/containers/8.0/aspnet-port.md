@@ -19,9 +19,9 @@ For example, running the following command allowed you to access the app locally
 
 ## New behavior
 
-Starting with .NET 8, if you map to port 80 in the container without explicitly setting the ASP.NET Core port used in the container, any attempt to connect to that mapped port will fail.
+Starting with .NET 8, if you map to port 80 in the container without explicitly setting the ASP.NET Core port used in the container to 80, any attempt to connect to that mapped port will fail.
 
-For example, if you run the following command, you'd be unable to connect to the application locally using port 8000.
+For example, if you run the following command, you'd be _unable_ to connect to the application locally using port 8000.
 
 `docker run --rm -it -p 8000:80 <my-app>`
 

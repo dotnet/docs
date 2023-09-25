@@ -1,7 +1,7 @@
 ---
 title: Introduction to Docker
 description: This article provides an introduction and overview to Docker in the context of a .NET application.
-ms.date: 03/20/2019
+ms.date: 09/25/2023
 ms.custom: "mvc"
 ---
 
@@ -41,7 +41,7 @@ A **Dockerfile** is a file that defines a set of instructions that creates an im
 
 Official .NET Docker images are published to the Microsoft Container Registry (MCR) and are discoverable at the [Microsoft .NET Docker Hub repository](https://hub.docker.com/_/microsoft-dotnet/). Each repository contains images for different combinations of the .NET SDK or .NET runtime and operating system that you can use.
 
-Microsoft provides images that are tailored for specific scenarios. For example, the [ASP.NET Core repository](https://hub.docker.com/_/microsoft-dotnet-aspnet/) provides images that are built for running ASP.NET Core apps in production.
+Microsoft provides images that are tailored for specific scenarios. For example, the [ASP.NET Core repository](https://hub.docker.com/_/microsoft-dotnet-aspnet/) provides images that are built for running ASP.NET Core apps in production. For more information, see [.NET container images](container-images.md).
 
 ## Azure services
 

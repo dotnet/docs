@@ -123,4 +123,7 @@ _.NET Framework image repositories:_
 | [framework-sdk](https://hub.docker.com/_/microsoft-dotnet-framework-sdk) | `mcr.microsoft.com/dotnet/framework/sdk` |
 | [framework-wcf](https://hub.docker.com/_/microsoft-dotnet-framework-wcf) | `mcr.microsoft.com/dotnet/framework/wcf` |
 
-For more information, see [New approach for differentiating .NET 8+ images](https://github.com/dotnet/dotnet-docker/discussions/4821).
+## See also
+
+- [What's new in .NET 8: Container images](../whats-new/dotnet-8.md#container-images)
+- [New approach for differentiating .NET 8+ images](https://github.com/dotnet/dotnet-docker/discussions/4821)

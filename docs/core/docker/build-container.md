@@ -240,7 +240,7 @@ Save the *Dockerfile* file. The directory structure of the working folder should
         │               ├── DotNet.Docker.dll
         │               ├── DotNet.Docker.pdb
         │               └── DotNet.Docker.runtimeconfig.json
-        └──obj 📁
+        └──📁 obj
             └──...
 ```
 
@@ -274,7 +274,7 @@ Save the *Dockerfile* file. The directory structure of the working folder should
         │               ├── DotNet.Docker.dll
         │               ├── DotNet.Docker.pdb
         │               └── DotNet.Docker.runtimeconfig.json
-        └──obj 📁
+        └──📁 obj
             └──...
 ```
 

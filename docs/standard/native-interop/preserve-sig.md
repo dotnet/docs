@@ -6,12 +6,12 @@ ms.date: 9/21/2023
 
 # Implicit method signature translations in .NET interop
 
-In order to stay programming language agnostic, the Windows COM system and many Windows APIs return a 4 byte integer type called an `HRESULT` to indicate whether an API succeeded or failed, along with some information about the failure. Other values that need to be passed to the caller are "returned" via pointer parameters that act as "out" parameters, and are typically the last parameter in the signature. Languages like C# and Visual Basic traditionally translate a failure code to an exception to match how failures are usually propagated in the language, and expect interop method signatures to not include the `HRESULT`. To translate the method signature to a native signature, the runtime moves the return value of the method to an additional "out" parameter with an additional level of indirection (in other words, makes it a pointer to the managed return type), and adds an `HRESULT` return value. If a method returns `void`, no additional parameter is added and the return value becomes an `HRESULT`. For example, see below two C# COM methods that translate to the same native signature.
+In order to stay programming language agnostic, the Windows COM system and many Windows APIs return a 4 byte integer type called an `HRESULT` to indicate whether an API succeeded or failed, along with some information about the failure. Other values that need to be passed to the caller are "returned" via pointer parameters that act as "out" parameters, and are typically the last parameter in the signature. Languages like C# and Visual Basic traditionally translate a failure code to an exception to match how failures are usually propagated in the language, and expect interop method signatures to not include the `HRESULT`. To translate the method signature to a native signature, the runtime moves the return value of the method to an additional "out" parameter with one more level of indirection (in other words, makes it a pointer to the managed signature's return type), and assumes an `HRESULT` return value. If the managed method returns `void`, no additional parameter is added and the return value becomes an `HRESULT`. For example, see the following two C# COM methods that translate to the same native signature:
 
 ```csharp
 int Add(int a, int b);
 
-void Add(int a, int b, out int c);
+void Add(int a, int b, out int sum);
 ```
 
 ```c
@@ -45,11 +45,11 @@ public static extern void SHAutoComplete(IntPtr hwndEdit, SHAutoCompleteFlags dw
 public static extern int SHAutoCompleteHRESULT(IntPtr hwndEdit, SHAutoCompleteFlags dwFlags);
 ```
 
-> [NOTE!] Source-generated P/Invokes, which use the <xref:System.Runtime.InteropServices.LibraryImportAttribute>, have no `PreserveSig` field. The generated code assumes the native and managed signature are identical. See [Source-generated P/Invokes](./pinvoke-source-generation.md#differences-from-dllimport) for more information.
+> [NOTE!] Source-generated P/Invokes, which use the <xref:System.Runtime.InteropServices.LibraryImportAttribute>, have no `PreserveSig` field. The generated code always assumes the native and managed signature are identical. See [Source-generated P/Invokes](./pinvoke-source-generation.md#differences-from-dllimport) for more information.
 
 ## Manually handling HRESULT values
 
-When working with a `PreserveSig` method that has an `HRESULT` return value, you can use the <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> method to throw the corresponding exception if the `HRESULT` indicates a failure.
+When calling a `PreserveSig` method that returns an `HRESULT`, you can use the <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> method to throw the corresponding exception if the `HRESULT` indicates a failure. Similarly, when implementing a `PreserveSig` method, you can use the <xref:System.Runtime.InteropServices.Marshal.GetHRForException%2A> method to return the `HRESULT` that corresponding value for an exception.
 
 ## See also
 

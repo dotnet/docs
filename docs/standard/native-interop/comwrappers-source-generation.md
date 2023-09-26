@@ -119,9 +119,9 @@ int Method2(float i);
 ```
 
 ```c
-int Method1(int i, int* j);
+HRESULT Method1(int i, int* j);
 
-int Method2(float i);
+HRESULT Method2(float i);
 ```
 
 For more information, see [Implicit method signature translations in .NET interop](./preserve-sig.md)

@@ -2,7 +2,7 @@
 title: How to customize property names and values with System.Text.Json
 description: "Learn how to customize property names and values when serializing with System.Text.Json in .NET."
 ms.date: 09/25/2023
-zone_pivot_groups: dotnet-version
+zone_pivot_groups: dotnet-preview-version
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
@@ -188,7 +188,7 @@ The built-in <xref:System.Text.Json.Serialization.JsonStringEnumConverter> can d
 
 You can also specify the converter to use by annotating your enum with <xref:System.Text.Json.Serialization.JsonConverterAttribute>. The following example shows how to specify the <xref:System.Text.Json.Serialization.JsonStringEnumConverter%601> (available in .NET 8 and later versions) by using the <xref:System.Text.Json.Serialization.JsonConverterAttribute> attribute. For example, suppose you need to serialize the following class that has an enum:
 
-:::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithPrecipEnum":::
+:::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithConverterEnum":::
 
 The following sample code serializes the enum names instead of the numeric values:
 

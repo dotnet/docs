@@ -360,17 +360,6 @@ namespace SystemTextJsonSamples
             return weatherForecast;
         }
 
-        public static WeatherForecast2WithPrecipEnum CreateWeatherForecast2WithPrecipEnum()
-        {
-            var weatherForecast = new WeatherForecast2WithPrecipEnum
-            {
-                Date = DateTime.Parse("2019-08-01"),
-                TemperatureCelsius = 25,
-                Precipitation = Precipitation2.Sleet
-            };
-            return weatherForecast;
-        }
-
         public static WeatherForecastWithPropertyNameAttribute CreateWeatherForecastWithPropertyNameAttribute()
         {
             var weatherForecast = new WeatherForecastWithPropertyNameAttribute

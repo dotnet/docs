@@ -162,6 +162,10 @@
         },
         "fileMetadata": {
             "feedback_system": {
+                "_csharplang/**.*": "OpenSource",
+                "_csharpstandard/standard/*.md": "OpenSource",
+                "_vblang/**.*": "OpenSource",
+                "_roslyn/**.*": "OpenSource",
                 "docs/**.*": "OpenSource",
                 "docs/standard/design-guidelines/**/**.md": "None",
                 "docs/framework/data/adonet/**/**.md": "None",
@@ -170,25 +174,53 @@
                 "docs/framework/wcf/**/**.md": "None"
             },
             "open_source_feedback_contributorGuideUrl": {
-                "docs/**/**.*": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute"
+                "docs/**/**.*": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute",
+                "_csharplang/**.*": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute",
+                "_csharpstandard/standard/*.md": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute",
+                "_vblang/**.*": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute",
+                "_roslyn/**.*": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute"
             },
             "open_source_feedback_issueUrl": {
-                "docs/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml"
+                "docs/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml",
+                "_csharplang/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml",
+                "_csharpstandard/standard/*.md": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml",
+                "_vblang/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml",
+                "_roslyn/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml"
             },
             "open_source_feedback_productName": {
-                "docs/**.*": ".NET feedback"
+                "docs/**.*": ".NET feedback",
+                "_csharplang/**.*": "C# feature specification feedback",
+                "_csharpstandard/standard/*.md": "C# Standard documentation feedback",
+                "_vblang/**.*": "Visual Basic language spec feedback",
+                "_roslyn/**.*": "Roslyn breaking feedback"
             },
             "open_source_feedback_productDescription": {
-                "docs/**.*": "The .NET documentation is open source. Provide feedback here."
+                "docs/**.*": "The .NET documentation is open source. Provide feedback here.",
+                "_csharplang/**.*": "The C# feature specifications are open source. Provide feedback here.",
+                "_csharpstandard/standard/*.md": "The C# Standard documentation is open source. Provide feedback here.",
+                "_vblang/**.*": "The Visual Basic language documentation is open source. Provide feedback here.",
+                "_roslyn/**.*": "The Roslyn documentation is open source. Provide feedback here."
             },
             "open_source_feedback_issueTitle": {
-                "docs/**.*": ""
+                "docs/**.*": "",
+                "_csharplang/**.*": "",
+                "_csharpstandard/standard/*.md": "",
+                "_vblang/**.*": "",
+                "_roslyn/**.*": ""
             },
             "open_source_feedback_productLogoLightUrl": {
-                "docs/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg"
+                "docs/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_csharplang/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_csharpstandard/standard/*.md": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_vblang/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_roslyn/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg"
             },
             "open_source_feedback_productLogoDarkUrl": {
-                "docs/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg"
+                "docs/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_csharplang/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_csharpstandard/standard/*.md": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_vblang/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_roslyn/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg"
             },
             "social_image_url": {
                 "docs/**/*.*": "/dotnet/media/dotnet-logo.png",
@@ -486,6 +518,7 @@
                 "_csharplang/proposals/csharp-11.0/*.md": "09/30/2022",
                 "_csharplang/proposals/csharp-12.0/*.md": "08/15/2023",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "11/08/2022",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "09/26/2023",
                 "_vblang/spec/*.md": "07/21/2017"
             },
             "ms.technology": {
@@ -692,6 +725,7 @@
 
 
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "C# compiler breaking changes since C# 10",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "C# compiler breaking changes since C# 11",
                 "_vblang/spec/introduction.md": "Introduction",
                 "_vblang/spec/lexical-grammar.md": "Lexical grammar",
                 "_vblang/spec/preprocessing-directives.md": "Preprocessing directives",
@@ -805,6 +839,7 @@
                 "_csharplang/proposals/csharp-12.0/experimental-attribute.md": "Use the ExperimentalAttribute attribute to indicate APIs that aren't stable.",
 
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "Learn about any breaking changes since the initial release of C# 10",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "Learn about any breaking changes since the initial release of C# 11",
                 "_vblang/spec/introduction.md": "This chapter provides and introduction to the Visual Basic language.",
                 "_vblang/spec/lexical-grammar.md": "This chapter defines the lexical grammar for Visual Basic.",
                 "_vblang/spec/preprocessing-directives.md": "This chapter defines the preprocessing directives allowed in Visual Basic",

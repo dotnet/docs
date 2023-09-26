@@ -175,10 +175,10 @@ app.MapPost("/complete-sale", ([FromBody] SaleModel model, HatCoMetrics metrics)
 });
 ```
 
-### Best Practices
+### Best practices
 
-- <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> implements IDisposable, but IMeterFactory automatically manages the lifetime of any Meters it
-  creates, disposing them when the DI container is disposed. Adding extra code to invoke Dispose() on the Meter is unnecessary and won't have any effect.
+- <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> implements IDisposable, but IMeterFactory automatically manages the lifetime of any `Meter` objects it
+  creates, disposing them when the DI container is disposed. It's unnecessary to add extra code to invoke `Dispose()` on the `Meter`, and it won't have any effect.
 
 ## Types of instruments
 

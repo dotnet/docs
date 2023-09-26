@@ -189,17 +189,17 @@
             },
             "open_source_feedback_productName": {
                 "docs/**.*": ".NET feedback",
-                "_csharplang/**.*": "C# Feature specification feedback",
+                "_csharplang/**.*": "C# feature specification feedback",
                 "_csharpstandard/standard/*.md": "C# Standard documentation feedback",
-                "_vblang/**.*": "VB Language spec feedback",
-                "_roslyn/**.*": "roslyn breaking feedback"
+                "_vblang/**.*": "Visual Basic language spec feedback",
+                "_roslyn/**.*": "Roslyn breaking feedback"
             },
             "open_source_feedback_productDescription": {
                 "docs/**.*": "The .NET documentation is open source. Provide feedback here.",
                 "_csharplang/**.*": "The C# feature specifications are open source. Provide feedback here.",
                 "_csharpstandard/standard/*.md": "The C# Standard documentation is open source. Provide feedback here.",
-                "_vblang/**.*": "The VB Language documentation is open source. Provide feedback here.",
-                "_roslyn/**.*": "The rolsyn documentation is open source. Provide feedback here."
+                "_vblang/**.*": "The Visual Basic language documentation is open source. Provide feedback here.",
+                "_roslyn/**.*": "The Roslyn documentation is open source. Provide feedback here."
             },
             "open_source_feedback_issueTitle": {
                 "docs/**.*": "",

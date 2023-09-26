@@ -94,6 +94,8 @@ The serializer has built-in support for the following additional types.
   public partial class MyContext : JsonSerializerContext { }
   ```
 
+  For more information, see [Serialize enum fields as strings](../../standard/serialization/system-text-json/source-generation-modes.md#serialize-enum-fields-as-strings).
+
 - New `JsonConverter.Type` property lets you look up the type of a non-generic `JsonConverter` instance:
 
   ```csharp

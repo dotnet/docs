@@ -174,11 +174,11 @@
                 "docs/framework/wcf/**/**.md": "None"
             },
             "open_source_feedback_contributorGuideUrl": {
-            "docs/**/**.*": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute",
-            "_csharplang/**.*": "OpenSource",
-            "_csharpstandard/standard/*.md": "OpenSource",
-            "_vblang/**.*": "OpenSource",
-            "_roslyn/**.*": "OpenSource"
+                "docs/**/**.*": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute",
+                "_csharplang/**.*": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute",
+                "_csharpstandard/standard/*.md": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute",
+                "_vblang/**.*": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute",
+                "_roslyn/**.*": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute"
             },
             "open_source_feedback_issueUrl": {
                 "docs/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml",

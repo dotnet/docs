@@ -43,7 +43,7 @@ namespace SystemTextJsonSamples
     {
         public static void Run()
         {
-            // <Serialize>
+            // <Serialize2>
             var weatherForecast = new WeatherForecast2WithPrecipEnum
             {
                 Date = DateTime.Parse("2019-08-01"),

@@ -209,10 +209,18 @@
                 "_roslyn/**.*": ""
             },
             "open_source_feedback_productLogoLightUrl": {
-                "docs/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg"
+                "docs/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_csharplang/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_csharpstandard/standard/*.md": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_vblang/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_roslyn/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg"
             },
             "open_source_feedback_productLogoDarkUrl": {
-                "docs/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg"
+                "docs/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_csharplang/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_csharpstandard/standard/*.md": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_vblang/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_roslyn/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg"
             },
             "social_image_url": {
                 "docs/**/*.*": "/dotnet/media/dotnet-logo.png",

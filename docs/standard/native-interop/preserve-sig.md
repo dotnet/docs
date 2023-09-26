@@ -51,6 +51,10 @@ public static extern int SHAutoCompleteHRESULT(IntPtr hwndEdit, SHAutoCompleteFl
 
 When calling a `PreserveSig` method that returns an `HRESULT`, you can use the <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> method to throw the corresponding exception if the `HRESULT` indicates a failure. Similarly, when implementing a `PreserveSig` method, you can use the <xref:System.Runtime.InteropServices.Marshal.GetHRForException%2A> method to return the `HRESULT` that corresponding value for an exception.
 
+## Marshalling HRESULTs as structs
+
+When using a `PreserveSig` method, `int` is expected to be the managed type for `HRESULT`. However, using a 4 byte struct can enable helper methods and properties that make the value easy to work with. In order to use a struct in place of `int` as the managed representation of `HRESULT`, use the <xref:System.Runtime.InteropServices.MarshalAsAttribute> with <xref:System.Runtime.InteropServices.UnmanagedType.Error> as the argument. This will reinterpret the bits of the `HRESULT` as the struct. This is supported by built-in and source-generated marshalling.
+
 ## See also
 
 - [Handling COM Interop Exceptions](../../standard/exceptions/handling-com-interop-exceptions.md)

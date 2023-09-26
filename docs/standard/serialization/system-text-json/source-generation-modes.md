@@ -179,6 +179,8 @@ Notice that the enum doesn't have the <xref:System.Text.Json.Serialization.JsonC
 
 :::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithPrecipEnumNoConverter":::
 
+:::zone-end
+
 ## See also
 
 * [Try the new System.Text.Json source generator](https://devblogs.microsoft.com/dotnet/try-the-new-system-text-json-source-generator/)

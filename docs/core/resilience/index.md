@@ -1,9 +1,9 @@
 ---
 title: Introduction to resiliency in .NET
-description: Learn about resiliency in .NET programming, including chaos engineering, fault tolerance, fault injection, and various resilience-based policies.
+description: 
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/08/2023
+ms.date: 09/26/2023
 ---
 
 # Introduction to resiliency in .NET
@@ -13,69 +13,42 @@ Resiliency is the ability of an app to recover from failures and continue to fun
 - [Microsoft.Extensions.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Resilience): This NuGet package provides mechanisms to harden apps against transient failures.
 - [Microsoft.Extensions.Http.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience): This NuGet package provides resiliency mechanisms specifically for the <xref:System.Net.Http.HttpClient>.
 
-## Resilience-based policies
+These two NuGet packages are built on top of _Polly_, which is a very popular open-source project. Polly is a .NET resilience and transient-fault-handling library that allows developers to express policies such as Retry, Circuit Breaker, Timeout, Bulkhead Isolation, Rate-limiting and Fallback in a fluent and thread-safe manner. For more information, see [Polly](https://github.com/App-vNext/Polly).
 
-### Policy pipeline
+## Get started
 
-## A word on Chaos Engineering
+To get started with resiliency in .NET, install the [Microsoft.Extensions.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Resilience) NuGet package.
 
-Chaos Engineering is a practice that involves conducting experiments on a distributed system by exposing it to real-world failures. The goal of these experiments is to build confidence in the system's ability to withstand turbulent conditions in production. By subjecting the system to controlled chaos, engineers can identify and address weaknesses in the system's design and architecture, ultimately improving its overall resiliency.
+### [.NET CLI](#tab/dotnet-cli)
 
-As such, and in the context of .NET programming, various resilience-based policies are centered around the practice of Chaos Engineering. These policies are designed to help you build resilient apps by allowing you to inject faults into your app's services and test its ability to handle them.
+```dotnetcli
+dotnet add package Microsoft.Extensions.Resilience --version 8.0.0-rc.1.23421.29
+```
 
-## Fault tolerance
+### [PackageReference](#tab/package-reference)
 
-Fault tolerance is the ability of a system to continue functioning even when one or more components fail. This is an important aspect of resiliency because it ensures that your app can continue to function even when things go wrong. For example, if your app relies on a database for storing data, it should be able to handle database failures gracefully and recover quickly from them, thus exhibiting fault tolerance.
+```xml
+<PackageReference Include="Microsoft.Extensions.Resilience"
+    Version="8.0.0-rc.1.23421.29" />
+```
 
-### Fault injection
+---
 
-Fault injection is a technique that involves injecting faults into a system to test its ability to handle them. For example, you can inject faults into your app's database layer to test its ability to handle database failures.
+For more information, see [dotnet add package](../tools/dotnet-add-package.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
 
-To promote resilience pattern adoption, an application-level fault injection solution is needed to validate strategies and identify gaps. The [Microsoft.Extensions.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Resilience) library provides several mechanisms for building fault-tolerant apps, including fault injection. This library uses the [Simmy](https://github.com/Polly-Contrib/Simmy) library to simulate faults via chaos policies. Simmy is a chaos-engineering library that allows faults to be injected into services via chaos policies.
+## Build a resilience pipeline
 
-A Simmy chaos policy is a special type of resilience policy that allows you to define strategies to inject faults into services. Chaos policies can be applied individually or added to a Polly resilience policy. When added to a resilience policy, faults are injected into the resilience policy according to the strategy defined by the chaos policy, which allows resilience strategies to be tested and verified.
+### Pipeline builder extensions
 
-#### Inject faults into a resilience policy
+## Enrichment
 
-To inject faults, use any of the default policies available in the [Microsoft.Extensions.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Resilience) library. The following faults can be injected into a resilience policy.
+Enrichment is the automatic augmentation of telemetry with well-known state, in the form of name/value pairs. For example, an app might emit a log that includes the _operation_ and _result code_ as columns to represent the outcome of some operation. In this situation and depending on peripheral context, enrichment adds _cluster name_, _process name_, _region_, _tenant id_ and more to the log as it's sent to the telemetry backend. Enrichment is done systematically and behind the scenes relative to logging and metrics update within the app's main code.
 
-##### Latency faults
+Consider 1,000 instances of a service, spread around the world, each pumping logs and metrics out. If you look at a dashboard for your service and there's a problem, you need to know which region/data center is having trouble. Enrichment automatically makes sure that the log records have the state needed to pinpoint failures in distributed systems. If this isn't done through enrichment, it means the app code itself would need to track this state internally, weave it to wherever logging is done in the code, and then manually emit it. Enrichment makes that simpler, and invisible to app logic.
 
-<xref:Microsoft.Extensions.Resilience.FaultInjection.LatencyPolicyOptions?displayProperty=fullName>
+## Use pipeline
 
-| Property | Default value | Description |
-|--|--|--|
-| `Enabled` | `false` | Determines if the created policy should be enabled. |
-| `FaultInjectionRate` | `0.1` | A decimal between 0 and 1 inclusive. Indicates the rate at which a chaos policy should inject faults. |
-| `Latency` | 30 seconds | The latency to be injected. The upper bound is 10 minutes. |
+## Next steps
 
-##### Exception faults
-
-<xref:Microsoft.Extensions.Resilience.FaultInjection.ExceptionPolicyOptions?displayProperty=fullName>
-
-| Property | Default value | Description |
-|--|--|--|
-| `Enabled` | `false` | Determines if the created policy should be enabled. |
-| `FaultInjectionRate` | `0.1` | A decimal between 0 and 1 inclusive. Indicates the rate at which a chaos policy should inject faults. |
-| `ExceptionKey` | `"DefaultException"` | This key is used for fetching a registered exception instance. |
-
-##### Custom defined object faults
-
-<xref:Microsoft.Extensions.Resilience.FaultInjection.CustomResultPolicyOptions?displayProperty=fullName>
-
-| Property | Default value | Description |
-|--|--|--|
-| `Enabled` | `false` | Determines if the created policy should be enabled. |
-| `FaultInjectionRate` | `0.1` | A decimal between 0 and 1 inclusive. Indicates the rate at which a chaos policy should inject faults. |
-| `CustomResultKey` | `string.Empty` | This key is used for fetching a registered custom defined result object. |
-
-##### Custom defined `HttpResponseMessage` faults
-
-<xref:Microsoft.Extensions.Resilience.FaultInjection.HttpResponseInjectionPolicyOptions?displayProperty=fullName>
-
-| Property | Default value | Description |
-|--|--|--|
-| `Enabled` | `false` | Determines if the created policy should be enabled. |
-| `FaultInjectionRate` | `0.1` | A decimal between 0 and 1 inclusive. Indicates the rate at which a chaos policy should inject faults. |
-| `StatusCode` | `502` | The status code to be injected into a <xref:System.Net.Http.HttpResponseMessage>. |
-| `HttpContentKey` | `null` | This key is used to retrieve a registered `HttpContent` instance. |
+> [!div class="nextstepaction"]
+> [Learn about adding code to articles](code-in-docs.md)

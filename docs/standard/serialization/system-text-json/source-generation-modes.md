@@ -1,7 +1,7 @@
 ---
 title: How to choose reflection or source generation in System.Text.Json
 description: "Learn how to choose reflection or source generation in System.Text.Json."
-ms.date: 02/21/2023
+ms.date: 09/25/2023
 no-loc: [System.Text.Json]
 zone_pivot_groups: dotnet-preview-version
 helpviewer_keywords:
@@ -138,6 +138,48 @@ If a non-supported option or attribute is specified for a type, the serializer f
 ## How to use source generation modes
 
 Most of the System.Text.Json documentation shows how to write code that uses reflection mode. For information about how to use source generation modes, see [How to use source generation in System.Text.Json](source-generation.md).
+
+:::zone pivot="dotnet-8-0"
+
+## Serialize enum fields as strings
+
+By default, enums are serialized as numbers. To serialize enum names as strings using source generation, use the <xref:System.Text.Json.Serialization.JsonStringEnumConverter%601> converter. (The non-generic <xref:System.Text.Json.Serialization.JsonStringEnumConverter> type is not supported by the Native AOT runtime.)
+
+Suppose you need to serialize the following class that has an enum:
+
+:::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithConverterEnum":::
+
+Create a <xref:System.Text.Json.Serialization.JsonSerializerContext> class and annotate it with the <xref:System.Text.Json.Serialization.JsonSerializableAttribute> attribute:
+
+:::code language="csharp" source="snippets/how-to/csharp/RoundtripEnumSourceGeneration.cs" id="Context1":::
+
+The following code serializes the enum names instead of the numeric values:
+
+:::code language="csharp" source="snippets/how-to/csharp/RoundtripEnumSourceGeneration.cs" id="Serialize":::
+
+The resulting JSON looks like the following example:
+
+```json
+{
+  "Date": "2019-08-01T00:00:00-07:00",
+  "TemperatureCelsius": 25,
+  "Precipitation": "Sleet"
+}
+```
+
+Alternatively to using the <xref:System.Text.Json.Serialization.JsonStringEnumConverter%601> type, you can apply a blanket policy to serialize enums as strings by using the <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute>. Create a <xref:System.Text.Json.Serialization.JsonSerializerContext> class and annotate it with the <xref:System.Text.Json.Serialization.JsonSerializableAttribute> *and <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute>* attributes:
+
+:::code language="csharp" source="snippets/how-to/csharp/RoundtripEnumSourceGeneration.cs" id="Context2":::
+
+Notice that the enum doesn't have the <xref:System.Text.Json.Serialization.JsonConverterAttribute>:
+
+:::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithPrecipEnumNoConverter":::
+
+The following code serializes the enum names instead of the numeric values:
+
+:::code language="csharp" source="snippets/how-to/csharp/RoundtripEnumSourceGeneration.cs" id="Serialize2":::
+
+:::zone-end
 
 ## See also
 

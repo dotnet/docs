@@ -1,7 +1,7 @@
 ---
 title: How to customize property names and values with System.Text.Json
 description: "Learn how to customize property names and values when serializing with System.Text.Json in .NET."
-ms.date: 08/25/2021
+ms.date: 09/25/2023
 zone_pivot_groups: dotnet-version
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
@@ -204,12 +204,7 @@ The resulting JSON looks like the following example:
 }
 ```
 
-To use the converter with source generation, which is Native AOT-compatible, create a class that derives from <xref:System.Text.Json.Serialization.JsonSerializerContext> and annotate it with the <xref:System.Text.Json.Serialization.JsonSerializableAttribute> attribute:
-
-```csharp
-[JsonSerializable(typeof(Precipitation))]
-public partial class MyContext : JsonSerializerContext { }
-```
+To use the converter with source generation, see [Serialize enum fields as strings](source-generation-modes.md#serialize-enum-fields-as-strings).
 
 :::zone-end
 

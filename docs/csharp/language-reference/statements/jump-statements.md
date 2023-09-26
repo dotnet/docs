@@ -77,7 +77,7 @@ The `ref` return value is an alias to another variable in the called method's sc
 - If you pass it to another method *by reference*, you're passing a reference to the variable it aliases.
 - When you make a [ref local](declarations.md#reference-variables) alias, you make a new alias to the same variable.
 
-A ref return must be [*ref_safe_to_escape*](../keywords/method-parameters.md#scope-of-references-and-values) to the calling method. That means:
+A ref return must be [*ref-safe-context*](../keywords/method-parameters.md#scope-of-references-and-values) to the calling method. That means:
 
 - The return value must have a lifetime that extends beyond the execution of the method. In other words, it can't be a local variable in the method that returns it. It can be an instance or static field of a class, or it can be an argument passed to the method. Attempting to return a local variable generates compiler error CS8168, "Can't return local 'obj' by reference because it isn't a ref local."
 - The return value can't be the literal `null`. A method with a ref return can return an alias to a variable whose value is currently the `null` (uninstantiated) value or a [nullable value type](../../language-reference/builtin-types/nullable-value-types.md) for a value type.
@@ -99,6 +99,41 @@ public ref Person GetContactInformation(string fname, string lname)
     return ref p;
 }
 ```
+
+### Reference return values - Copied
+
+Reference return values (or ref returns) are values that a method returns by reference to the caller. That is, the caller can modify the value returned by a method, and that change is reflected in the state of the object in the called method.
+
+A reference return value is defined by using the `ref` keyword:
+
+- In the method signature. For example, the following method signature indicates that the `GetCurrentPrice` method returns a <xref:System.Decimal> value by reference.
+
+```csharp
+public ref decimal GetCurrentPrice()
+```
+
+- Between the `return` token and the variable returned in a `return` statement in the method. For example:
+
+```csharp
+return ref DecimalArray[0];
+```
+
+In order for the caller to modify the object's state, the reference return value must be stored to a variable that is explicitly defined as a [reference variable](../statements/declarations.md#reference-variables).
+
+Here's a more complete ref return example, showing both the method signature and method body.
+
+:::code language="csharp" source="snippets/RefParameterModifier.cs" id="SnippetFindReturningRef":::
+
+The called method may also declare the return value as `ref readonly` to return the value by reference, and enforce that the calling code can't modify the returned value. The calling method can avoid copying the returned value by storing the value in a local `ref readonly` reference variable.
+
+The following example defines a `Book` class that has two <xref:System.String> fields, `Title` and `Author`. It also defines a `BookCollection` class that includes a private array of `Book` objects. Individual book objects are returned by reference by calling its `GetBookByTitle` method.
+
+:::code language="csharp" source="snippets/RefParameterModifier.cs" id="Snippet4":::
+
+When the caller stores the value returned by the `GetBookByTitle` method as a ref local, changes that the caller makes to the return value are reflected in the `BookCollection` object, as the following example shows.
+
+:::code language="csharp" source="snippets/RefParameterModifier.cs" id="Snippet5":::
+
 
 ## The `goto` statement
 

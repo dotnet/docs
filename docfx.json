@@ -174,19 +174,39 @@
                 "docs/framework/wcf/**/**.md": "None"
             },
             "open_source_feedback_contributorGuideUrl": {
-                "docs/**/**.*": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute"
+            "docs/**/**.*": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute",
+            "_csharplang/**.*": "OpenSource",
+            "_csharpstandard/standard/*.md": "OpenSource",
+            "_vblang/**.*": "OpenSource",
+            "_roslyn/**.*": "OpenSource"
             },
             "open_source_feedback_issueUrl": {
-                "docs/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml"
+                "docs/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml",
+                "_csharplang/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml",
+                "_csharpstandard/standard/*.md": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml",
+                "_vblang/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml",
+                "_roslyn/**.*": "OpenSource"
             },
             "open_source_feedback_productName": {
-                "docs/**.*": ".NET feedback"
+                "docs/**.*": ".NET feedback",
+                "_csharplang/**.*": "C# Feature specification feedback",
+                "_csharpstandard/standard/*.md": "C# Standard documentation feedback",
+                "_vblang/**.*": "VB Language spec feedback",
+                "_roslyn/**.*": "roslyn breaking feedback"
             },
             "open_source_feedback_productDescription": {
-                "docs/**.*": "The .NET documentation is open source. Provide feedback here."
+                "docs/**.*": "The .NET documentation is open source. Provide feedback here.",
+                "_csharplang/**.*": "The C# feature specifications are open source. Provide feedback here.",
+                "_csharpstandard/standard/*.md": "The C# Standard documentation is open source. Provide feedback here.",
+                "_vblang/**.*": "The VB Language documentation is open source. Provide feedback here.",
+                "_roslyn/**.*": "The rolsyn documentation is open source. Provide feedback here."
             },
             "open_source_feedback_issueTitle": {
-                "docs/**.*": ""
+                "docs/**.*": "",
+                "_csharplang/**.*": "",
+                "_csharpstandard/standard/*.md": "",
+                "_vblang/**.*": "",
+                "_roslyn/**.*": ""
             },
             "open_source_feedback_productLogoLightUrl": {
                 "docs/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg"

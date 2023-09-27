@@ -69,7 +69,7 @@ you'll get the compiler error message:
 
 You can also use the `readonly` modifier to declare that an instance member doesn't modify the state of a struct.
 
-[!code-csharp[readonly method](../builtin-types/snippets/shared/StructType.cs#ReadonlyMethod)]
+:::code language="csharp" source="../builtin-types/snippets/shared/StructType.cs" id="SnippetReadonlyMethod":::
 
 ## Ref readonly return example
 

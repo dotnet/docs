@@ -47,7 +47,7 @@ public static extern int SHAutoCompleteHRESULT(IntPtr hwndEdit, SHAutoCompleteFl
 
 > [NOTE!] Source-generated P/Invokes, which use the <xref:System.Runtime.InteropServices.LibraryImportAttribute>, have no `PreserveSig` field. The generated code always assumes the native and managed signature are identical. See [Source-generated P/Invokes](./pinvoke-source-generation.md#differences-from-dllimport) for more information.
 
-## Manually handling HRESULT values
+## Manually handling `HRESULT` values
 
 When calling a `PreserveSig` method that returns an `HRESULT`, you can use the <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> method to throw the corresponding exception if the `HRESULT` indicates a failure. Similarly, when implementing a `PreserveSig` method, you can use the <xref:System.Runtime.InteropServices.Marshal.GetHRForException%2A> method to return the `HRESULT` that corresponding value for an exception.
 

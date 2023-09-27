@@ -1,10 +1,9 @@
 ---
 title: 'Tutorial: ML.NET classification model to categorize images'
-description: Learn how to train a classification model to categorize images using a pre-trained TensorFlow model for image processing. 
+description: Learn how to train a classification model to categorize images using a pre-trained TensorFlow model for image processing.
 ms.date: 11/11/2021
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
-recommendations: false
 #Customer intent: As a developer, I want to train a classification model with ML.NET to categorize images using a pre-trained TensorFlow model to process images.
 ---
 # Tutorial: Train an ML.NET classification model to categorize images
@@ -322,7 +321,7 @@ An ML.NET model pipeline is a chain of estimators. No execution happens during p
 
     [!code-csharp[SaveModel](./snippets/image-classification/csharp/Program.cs#ReturnModel)]
 
-## Run the application!
+## Run the application
 
 1. Add the call to `GenerateModel` after the creation of the <xref:Microsoft.ML.MLContext> class:
 

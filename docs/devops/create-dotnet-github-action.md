@@ -5,7 +5,6 @@ author: IEvangelist
 ms.author: dapine
 ms.date: 11/16/2022
 ms.topic: tutorial
-recommendations: false
 ---
 
 # Tutorial: Create a GitHub Action with .NET
@@ -87,14 +86,14 @@ A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of i
 :::code language="dockerfile" source="snippets/create-dotnet-github-action/Dockerfile" highlight="24":::
 
 > [!NOTE]
-> The .NET app in this tutorial relies on the .NET SDK as part of its functionality. The _Dockerfile_ creates a new set of Docker layers, independent from the previous ones. It starts from scratch with the SDK image, and adds the build output from the previous set of layers. For applications that ***do not*** require the .NET SDK as part of their functionality, they should rely on just the .NET Runtime instead. This greatly reduces the size of the image.
+> The .NET app in this tutorial relies on the .NET SDK as part of its functionality. The *Dockerfile* creates a new set of Docker layers, independent from the previous ones. It starts from scratch with the SDK image, and adds the build output from the previous set of layers. For applications that ***do not*** require the .NET SDK as part of their functionality, they should rely on just the .NET Runtime instead. This greatly reduces the size of the image.
 >
 > ```dockerfile
 > FROM mcr.microsoft.com/dotnet/runtime:7.0
 > ```
 
 > [!WARNING]
-> Pay close attention to every step within the _Dockerfile_, as it does differ from the standard _Dockerfile_ created from the "add docker support" functionality. In particular, the last few steps vary by not specifying a new `WORKDIR` which would change the path to the app's `ENTRYPOINT`.
+> Pay close attention to every step within the *Dockerfile*, as it does differ from the standard *Dockerfile* created from the "add docker support" functionality. In particular, the last few steps vary by not specifying a new `WORKDIR` which would change the path to the app's `ENTRYPOINT`.
 
 The preceding *Dockerfile* steps include:
 

@@ -77,7 +77,7 @@ The type returned doesn't need to be a `readonly struct`. Any type that can be r
 
 Ref readonly return can also be used in conjunction with `readonly` instance members on `struct` types:
 
-[!code-csharp[readonly ref readonly example](snippets/ReadonlyKeywordExamples.cs#ReadonlyRefReadonly)]
+:::code language="csharp" source="./snippets/ReadonlyKeywordExamples.cs" id="SnippetReadonlyRefReadonly":::
 
 The method essentially returns a `readonly` reference together with the instance member (in this case a method) being `readonly` (not able to modify any instance fields).
 

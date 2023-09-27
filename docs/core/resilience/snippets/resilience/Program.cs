@@ -33,7 +33,6 @@ ResiliencePipeline pipeline = pipelineProvider.GetPipeline(key);
 await pipeline.ExecuteAsync(static async cancellationToken =>
 {
     // Code that could potentially fail.
-    Console.WriteLine("TODO: code that could fail goes here.");
 
     await ValueTask.CompletedTask;
 });

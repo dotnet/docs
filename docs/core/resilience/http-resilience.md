@@ -1,9 +1,9 @@
 ---
-title: Resilient patterns for HTTP
+title: Resilient patterns for HTTP apps
 description: 
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/26/2023
+ms.date: 09/27/2023
 ---
 
 If you're app is using the [IHttpClientFactory](../extensions/httpclient-factory.md), you should install the [Microsoft.Extensions.Http.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience) NuGet package—as this package is specifically designed to provide resiliency mechanisms for the <xref:System.Net.Http.HttpClient>.

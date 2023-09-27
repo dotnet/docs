@@ -1,6 +1,6 @@
 ---
 title: Introduction to resiliency in .NET
-description: Learn about resiliency in .NET and how to build resilient apps.
+description: Learn about resiliency in .NET and how to build a resilience pipeline.
 author: IEvangelist
 ms.author: dapine
 ms.date: 09/27/2023
@@ -25,14 +25,13 @@ To get started with resiliency in .NET, install the [Microsoft.Extensions.Resili
 ### [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli
-dotnet add package Microsoft.Extensions.Resilience --version 8.0.0-rc.1.23421.29
+dotnet add package Microsoft.Extensions.Resilience --version 8.0.0
 ```
 
 ### [PackageReference](#tab/package-reference)
 
 ```xml
-<PackageReference Include="Microsoft.Extensions.Resilience"
-    Version="8.0.0-rc.1.23421.29" />
+<PackageReference Include="Microsoft.Extensions.Resilience" Version="8.0.0" />
 ```
 
 ---
@@ -78,6 +77,17 @@ The preceding code:
 Each pipeline is configured for a given `key`, and each `key` is used to identify it's corresponding `ResiliencePipeline` when getting the pipeline from the provider. The `key` is a generic type parameter of the `AddResiliencePipeline` method.
 
 ### Resilience pipeline builder extensions
+
+To add a strategy to the pipeline, call any of the available `Add*` extension methods on the `ResiliencePipelineBuilder` instance.
+
+- `AddRetry`: Try again if something fails, which is useful when the problem is temporary and might go away.
+- `AddCircuitBreaker`: Stop trying if something is broken or busy, which benefits you by avoiding wasting time and making things worse.
+- `AddTimeout`: Give up if something takes too long, which can improve performance by freeing up resources.
+- `AddRateLimiter`: Limit how many requests you make or accept, which enables you to control load.
+- `AddFallback`: Do something else when experiencing failures, which improves user experience.
+- `AddHedging`: Do more than one thing at the same time and take the fastest one, which can improve responsiveness.
+
+For more information, see [Resilience strategies](https://www.pollydocs.org/strategies/index.html).
 
 ## Enrichment
 
@@ -134,7 +144,9 @@ await pipeline.ExecuteAsync(static async cancellationToken =>
 });
 ```
 
+The preceding code, executes the delegate within the `ExecuteAsync` method. When there are failures, the configured strategies are executed. For example, if the `RetryStrategy` is configured to retry 3 times, the delegate is executed 3 times before the failure is propagated.
+
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Learn about adding code to articles](code-in-docs.md)
+> [Resilient patterns for HTTP apps](http-resilience.md)

@@ -326,7 +326,7 @@
 | Custom Vision Training | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training/2.0.0)<br>NuGet [2.1.0-preview](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training/2.1.0-preview) |  | GitHub [2.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training_2.0.0/sdk/cognitiveservices/Vision.CustomVision.Training) |
 | Data Lake Analytics | NuGet [1.4.211011](https://www.nuget.org/packages/Microsoft.Azure.DataLake.USQL.SDK/1.4.211011) |  |  |
 | Data Movement | NuGet [2.0.4](https://www.nuget.org/packages/Microsoft.Azure.Storage.DataMovement/2.0.4) |  | GitHub [2.0.4](https://github.com/Azure/azure-storage-net-data-movement/tree/v1.3.0) |
-| DCAP | NuGet [1.12.1](https://www.nuget.org/packages/Microsoft.Azure.DCAP/1.12.1) |  | GitHub [1.12.1](https://github.com/microsoft/Azure-DCAP-Client/tree/1.6) |
+| DCAP | NuGet [1.12.2](https://www.nuget.org/packages/Microsoft.Azure.DCAP/1.12.2) |  | GitHub [1.12.2](https://github.com/microsoft/Azure-DCAP-Client/tree/1.6) |
 | Devices Provisioning Service | NuGet [1.18.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Service/1.18.1)<br>NuGet [2.0.0-preview007](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Service/2.0.0-preview007) |  |  |
 | Digital Twins | NuGet [1.0.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.DigitalTwin.Client/1.0.0-preview-001) |  |  |
 | Digital Twins Service | NuGet [1.0.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.DigitalTwin.Service/1.0.0-preview-001) |  |  |

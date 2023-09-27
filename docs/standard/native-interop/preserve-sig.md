@@ -35,7 +35,7 @@ This can be useful if the method may return different `HRESULT` values that are 
 
 ## PreserveSig with P/Invokes
 
-The <xref:System.Runtime.InteropServices.DllImportAttribute> attribute also has a `bool` field named `PreserveSig` that works similarly to the `PreserveSigAttribute`, but defaults to `true`. To indicate that the runtime should translate the managed signature and handle the `HRESULT` that is returned, set the `PreserveSig` field to `false` in the `DllImportAttribute`. For example, see below the signatures of two P/Invokes to the same native method, one with `PreserveSig` set to `false`, and one with it left to the default `true` value.
+The <xref:System.Runtime.InteropServices.DllImportAttribute> attribute also has the `bool PreserveSig` field that works similarly to the `PreserveSigAttribute`, but defaults to `true`. To indicate that the runtime should translate the managed signature and handle the `HRESULT` that is returned, set the `PreserveSig` field to `false` in the `DllImportAttribute`. For example, see below the signatures of two P/Invokes to the same native method, one with `PreserveSig` set to `false`, and one with it left to the default `true` value.
 
 ```csharp
 [DllImport("shlwapi.dll", EntryPoint = "SHAutoComplete", ExactSpelling = true, PreserveSig = false)]

@@ -110,7 +110,7 @@ The following errors indicate a mismatch between the interceptor method and the 
 - **CS9155**: *Cannot intercept call with `M` because it is not accessible within `V`.*
 - **CS9156**: *Cannot intercept call to `M` with `V` because of a difference in 'scoped' modifiers or `[UnscopedRef]` attributes.*
 
-In addition, the following warnings indicate a mismatch in the signatures of the interceptor and and the interceptable method:
+In addition, the following warnings indicate a mismatch in the signatures of the interceptor and the interceptable method:
 
 - **CS9154**: *Intercepting a call to `M` with interceptor `V`, but the signatures do not match.*
 - **CS9158**: *Nullability of reference types in return type doesn't match interceptable method.*

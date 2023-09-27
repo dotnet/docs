@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.custom: devx-track-dotnet, engagement-fy23
 ms.date: 1/26/2023
 author: alexwolfmsft
-ms.author: alexwolf\
+ms.author: alexwolf
 ---
 # Configure Visual Studio for Azure development with .NET
 

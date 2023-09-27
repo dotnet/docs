@@ -323,7 +323,7 @@ In general, use the following format for code samples:
 - Place the comment on a separate line, not at the end of a line of code.
 - Begin comment text with an uppercase letter.
 - End comment text with a period.
-- Insert one space between the comment delimiter (//) and the comment text, as shown in the following example.
+- Insert one space between the comment delimiter (`//`) and the comment text, as shown in the following example.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet3":::
 

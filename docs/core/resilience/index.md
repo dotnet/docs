@@ -1,9 +1,9 @@
 ---
 title: Introduction to resiliency in .NET
-description: 
+description: Learn about resiliency in .NET and how to build resilient apps.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/26/2023
+ms.date: 09/27/2023
 ---
 
 # Introduction to resiliency in .NET
@@ -13,7 +13,10 @@ Resiliency is the ability of an app to recover from failures and continue to fun
 - [Microsoft.Extensions.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Resilience): This NuGet package provides mechanisms to harden apps against transient failures.
 - [Microsoft.Extensions.Http.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience): This NuGet package provides resiliency mechanisms specifically for the <xref:System.Net.Http.HttpClient>.
 
-These two NuGet packages are built on top of _Polly_, which is a very popular open-source project. Polly is a .NET resilience and transient-fault-handling library that allows developers to express policies such as Retry, Circuit Breaker, Timeout, Bulkhead Isolation, Rate-limiting and Fallback in a fluent and thread-safe manner. For more information, see [Polly](https://github.com/App-vNext/Polly).
+These two NuGet packages are built on top of _Polly_, which is a very popular open-source project. Polly is a .NET resilience and transient-fault-handling library that allows developers to express strategies such as Retry, Circuit Breaker, Timeout, Bulkhead Isolation, Rate-limiting and Fallback in a fluent and thread-safe manner. For more information, see [Polly](https://github.com/App-vNext/Polly).
+
+> [!IMPORTANT]
+> The [Microsoft.Extensions.Http.Polly](https://www.nuget.org/packages/Microsoft.Extensions.Http.Polly) NuGet package is deprecated. Use either of the aforementioned packages instead.
 
 ## Get started
 
@@ -38,7 +41,43 @@ For more information, see [dotnet add package](../tools/dotnet-add-package.md) o
 
 ## Build a resilience pipeline
 
-### Pipeline builder extensions
+To use resiliency, you must first build a pipeline of resilience-based strategies. Each configured strategy executes in order of configuration The entry point is an extension method on the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> type, named `AddResiliencePipeline`. This method takes a delegate that configures the pipeline. The delegate is passed an instance of `ResiliencePipelineBuilder`, which is used to add resilience strategies to the pipeline.
+
+Consider the following string-based `key` example:
+
+```csharp
+using Microsoft.Extensions.DependencyInjection;
+using Polly;
+using Polly.CircuitBreaker;
+using Polly.Registry;
+using Polly.Retry;
+
+var services = new ServiceCollection();
+
+const string key = "Retry-CircuitBreaker-Timeout";
+
+services.AddResiliencePipeline(key, builder =>
+{
+    builder.AddRetry(new RetryStrategyOptions());
+
+    builder.AddCircuitBreaker(new CircuitBreakerStrategyOptions());
+
+    builder.AddTimeout(TimeSpan.FromSeconds(5));
+
+    // Add other strategies here...
+});
+```
+
+The preceding code:
+
+- Creates a new `ServiceCollection` instance.
+- Defines a `key` to identify the pipeline.
+- Adds a resilience pipeline to the `ServiceCollection` instance.
+- Configures the pipeline with a retry strategy, circuit breaker strategy, and timeout strategy.
+
+Each pipeline is configured for a given `key`, and each `key` is used to identify it's corresponding `ResiliencePipeline` when getting the pipeline from the provider. The `key` is a generic type parameter of the `AddResiliencePipeline` method.
+
+### Resilience pipeline builder extensions
 
 ## Enrichment
 
@@ -46,7 +85,54 @@ Enrichment is the automatic augmentation of telemetry with well-known state, in 
 
 Consider 1,000 instances of a service, spread around the world, each pumping logs and metrics out. If you look at a dashboard for your service and there's a problem, you need to know which region/data center is having trouble. Enrichment automatically makes sure that the log records have the state needed to pinpoint failures in distributed systems. If this isn't done through enrichment, it means the app code itself would need to track this state internally, weave it to wherever logging is done in the code, and then manually emit it. Enrichment makes that simpler, and invisible to app logic.
 
+### Add resilience enrichment
+
+In addition to registering a resilience pipeline, you can also register resilience enrichment. To add enrichment, call the `AddResilienceEnrichment` extensions method on the `IServiceCollection` instance.
+
+```csharp
+services.AddResilienceEnrichment();
+```
+
+By calling the `AddResilienceEnrichment` extension method, you're adding an additional dimensions on top of the default ones that are built-in to the underlying Polly library. The following enrichment dimensions are added:
+
+- Exception enrichment based on the <xref:Microsoft.Extensions.Diagnostics.ExceptionSummarization.IExceptionSummarizer>, which provides a mechanism to summarize exceptions for use in telemetry.
+- Result enrichment based on the <xref:Microsoft.Extensions.Resilience.FailureResultContext>, which captures the dimensions metered for transient fault failures.
+- Request metadata enrichment based on <xref:Microsoft.Extensions.Http.Telemetry.RequestMetadata>, which holds the request metadata for telemetry.
+
 ## Use pipeline
+
+To use a configured resilience pipeline, you must get the pipeline from the `ResiliencePipelineProvider<TKey>`. When you added the pipeline earlier, the `key` was of type `string`, so you must get the pipeline from the `ResiliencePipelineProvider<string>`.
+
+```csharp
+// Build service provider
+using ServiceProvider provider = services.BuildServiceProvider();
+
+// Get pipeline provider
+ResiliencePipelineProvider<string> pipelineProvider =
+    provider.GetRequiredService<ResiliencePipelineProvider<string>>();
+
+// Get the pipeline
+ResiliencePipeline pipeline = pipelineProvider.GetPipeline(key);
+```
+
+The preceding code:
+
+- Builds a service provider from the `ServiceCollection` instance.
+- Gets the `ResiliencePipelineProvider<string>` from the service provider.
+- Retrieves the `ResiliencePipeline` from the `ResiliencePipelineProvider<string>`.
+
+### Execute pipeline
+
+To use the resilience pipeline, call any of the available `Execute*` methods on the `ResiliencePipeline` instance. For example, consider an example call to `ExecuteAsync` method:
+
+```csharp
+await pipeline.ExecuteAsync(static async cancellationToken =>
+{
+    // Code that could potentially fail.
+
+    await ValueTask.CompletedTask;
+});
+```
 
 ## Next steps
 

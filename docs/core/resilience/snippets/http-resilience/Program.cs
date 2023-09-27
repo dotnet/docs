@@ -1,27 +1,24 @@
-﻿using System.Threading.RateLimiting;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Polly;
 using Polly.CircuitBreaker;
 using Polly.Registry;
 
 var services = new ServiceCollection();
 
-const string key = "default-pipeline";
+const string key = "Retry-CircuitBreaker-Timeout";
 
 services.AddResiliencePipeline(key, builder =>
 {
-    builder.AddCircuitBreaker(new CircuitBreakerStrategyOptions()
-    {
-        ManualControl = new CircuitBreakerManualControl(isIsolated: true)
-    });
+    // See: https://www.pollydocs.org/strategies/retry.html
+    builder.AddRetry(new());
 
-    builder.AddConcurrencyLimiter(new ConcurrencyLimiterOptions()
-    {
-        QueueProcessingOrder = QueueProcessingOrder.OldestFirst
-    });
+    // See: https://www.pollydocs.org/strategies/circuit-breaker.html
+    builder.AddCircuitBreaker(new CircuitBreakerStrategyOptions());
+
+    builder.AddTimeout(TimeSpan.FromSeconds(5));
+
+    // Add other strategies here...
 });
-
-services.AddResilienceEnrichment();
 
 using ServiceProvider provider = services.BuildServiceProvider();
 
@@ -30,7 +27,11 @@ ResiliencePipelineProvider<string> pipelineProvider =
 
 ResiliencePipeline pipeline = pipelineProvider.GetPipeline(key);
 
-await pipeline.ExecuteAsync(static async cancellationToken =>
+int failures = 0;
+
+await pipeline.ExecuteAsync(async cancellationToken =>
 {
-    await ValueTask.CompletedTask;
+    await Task.Delay(5_050, cancellationToken);
+
+    throw new Exception($"I failed {++ failures} times...");
 });

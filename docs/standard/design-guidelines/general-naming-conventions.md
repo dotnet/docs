@@ -13,7 +13,6 @@ helpviewer_keywords:
   - "Hungarian notation"
   - "names [.NET Framework], type names"
   - "names [.NET Framework], acronyms"
-ms.topic: reference
 ---
 # General Naming Conventions
 

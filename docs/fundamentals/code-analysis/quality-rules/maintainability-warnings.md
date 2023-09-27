@@ -2,7 +2,6 @@
 title: Maintainability rules (code analysis)
 description: "Learn about code analysis maintainability rules."
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.maintainabilityrules
 helpviewer_keywords:

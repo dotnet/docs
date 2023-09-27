@@ -2,7 +2,6 @@
 title: Usage rules (code analysis)
 description: "Learn about code analysis usage rules."
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.usagerules
 helpviewer_keywords:

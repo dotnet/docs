@@ -2,7 +2,6 @@
 title: Configuration files for code analysis rules
 description: Learn about different configuration files to configure code analysis rules.
 ms.date: 07/07/2021
-ms.topic: conceptual
 no-loc: ["EditorConfig"]
 ---
 # Configuration files for code analysis rules

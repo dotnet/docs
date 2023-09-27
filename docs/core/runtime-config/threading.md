@@ -2,7 +2,6 @@
 title: Threading config settings
 description: Learn about the settings that configure threading for .NET apps.
 ms.date: 11/04/2021
-ms.topic: reference
 ---
 # Runtime configuration options for threading
 

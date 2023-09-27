@@ -65,6 +65,12 @@ you'll get the compiler error message:
 
 **A readonly field cannot be assigned to (except in a constructor or a variable initializer)**
 
+## Readonly instance members
+
+You can also use the `readonly` modifier to declare that an instance member doesn't modify the state of a struct.
+
+:::code language="csharp" source="../builtin-types/snippets/shared/StructType.cs" id="SnippetReadonlyMethod":::
+
 ## Ref readonly return example
 
 The `readonly` modifier on a `ref return` indicates that the returned reference can't be modified. The following example returns a reference to the origin. It uses the `readonly` modifier to indicate that callers can't modify the origin:

@@ -75,7 +75,7 @@ The type returned doesn't need to be a `readonly struct`. Any type that can be r
 
 ## Readonly ref readonly return example
 
-Ref readonly return can also be used in conjunction with readonly instance members:
+Ref readonly return can also be used in conjunction with `readonly` instance members on `struct` types:
 
 [!code-csharp[readonly ref readonly example](snippets/ReadonlyKeywordExamples.cs#ReadonlyRefReadonly)]
 

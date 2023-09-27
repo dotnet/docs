@@ -9,7 +9,7 @@ helpviewer_keywords:
 ---
 # Using Properties (C# Programming Guide)
 
-Properties combine aspects of both fields and methods. To the user of an object, a property appears to be a field, accessing the property requires the same syntax. To the implementer of a class, a property is one or two code blocks, representing a [get](../../language-reference/keywords/get.md) accessor and/or a [set](../../language-reference/keywords/set.md) accessor. The code block for the `get` accessor is executed when the property is read; the code block for the `set` accessor is executed when the property is assigned a value. A property without a `set` accessor is considered read-only. A property without a `get` accessor is considered write-only. A property that has both accessors is read-write. In C# 9 and later, you can use an `init` accessor instead of a `set` accessor to make the property read-only.
+Properties combine aspects of both fields and methods. To the user of an object, a property appears to be a field; accessing the property requires the same syntax. To the implementer of a class, a property is one or two code blocks, representing a [get](../../language-reference/keywords/get.md) accessor and/or a [set](../../language-reference/keywords/set.md) accessor. The code block for the `get` accessor is executed when the property is read; the code block for the `set` accessor is executed when the property is assigned a value. A property without a `set` accessor is considered read-only. A property without a `get` accessor is considered write-only. A property that has both accessors is read-write. In C# 9 and later, you can use an `init` accessor instead of a `set` accessor to make the property read-only.
 
 Unlike fields, properties aren't classified as variables. Therefore, you can't pass a property as a [ref](../../language-reference/keywords/ref.md) or [out](../../language-reference/keywords/out-parameter-modifier.md) parameter.
 
@@ -69,7 +69,7 @@ A property may be declared as a static property by using the `static` keyword. S
 A property may be marked as a virtual property by using the [virtual](../../language-reference/keywords/virtual.md) keyword. Virtual properties enable derived classes to override the property behavior by using the [override](../../language-reference/keywords/override.md) keyword. For more information about these options, see [Inheritance](../../fundamentals/object-oriented/inheritance.md).
 
 A property overriding a virtual property can also be [sealed](../../language-reference/keywords/sealed.md), specifying that for derived classes it's no longer virtual. Lastly, a property can be declared [abstract](../../language-reference/keywords/abstract.md). Abstract properties don't define an implementation in the class, and derived classes must write their own implementation. For more information about these options, see [Abstract and Sealed Classes and Class Members](abstract-and-sealed-classes-and-class-members.md).
-  
+
 > [!NOTE]
 > It is an error to use a [virtual](../../language-reference/keywords/virtual.md), [abstract](../../language-reference/keywords/abstract.md), or [override](../../language-reference/keywords/override.md) modifier on an accessor of a [static](../../language-reference/keywords/static.md) property.
 

@@ -53,7 +53,7 @@ When calling a `PreserveSig` method that returns an `HRESULT`, you can use the <
 
 ## Marshalling HRESULTs as structs
 
-When using a `PreserveSig` method, `int` is expected to be the managed type for `HRESULT`. However, using a 4 byte struct can enable helper methods and properties that make the value easy to work with. In order to use a struct in place of `int` as the managed representation of `HRESULT`, use the <xref:System.Runtime.InteropServices.MarshalAsAttribute> with <xref:System.Runtime.InteropServices.UnmanagedType.Error> as the argument. This will reinterpret the bits of the `HRESULT` as the struct. This is supported by built-in and source-generated marshalling.
+When using a `PreserveSig` method, `int` is expected to be the managed type for `HRESULT`. However, using a 4 byte struct can enable helper methods and properties that make the value easy to work with. In built-in marshalling, this works by automatically. In order to use a struct in place of `int` as the managed representation of `HRESULT` in source-generated marshalling, use the <xref:System.Runtime.InteropServices.MarshalAsAttribute> with <xref:System.Runtime.InteropServices.UnmanagedType.Error> as the argument. This will reinterpret the bits of the `HRESULT` as the struct.
 
 ## See also
 

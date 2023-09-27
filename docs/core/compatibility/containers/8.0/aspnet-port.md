@@ -94,4 +94,4 @@ None.
 - [New non-root 'app' user in Linux images](app-user.md)
 - [Containerize a .NET app](../../../docker/publish-as-container.md)
 - [Blog: Secure your .NET cloud apps with rootless Linux containers](https://devblogs.microsoft.com/dotnet/securing-containers-with-rootless/#switching-to-port-8080)
-- [Bog: Running non-root .NET containers with Kubernetes](https://devblogs.microsoft.com/dotnet/running-nonroot-kubernetes-with-dotnet/)
+- [Blog: Running non-root .NET containers with Kubernetes](https://devblogs.microsoft.com/dotnet/running-nonroot-kubernetes-with-dotnet/)

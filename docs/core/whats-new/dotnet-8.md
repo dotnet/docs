@@ -2,7 +2,7 @@
 title: What's new in .NET 8
 description: Learn about the new .NET features introduced in .NET 8.
 titleSuffix: ""
-ms.date: 09/12/2023
+ms.date: 09/26/2023
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
@@ -93,6 +93,8 @@ The serializer has built-in support for the following additional types.
   [JsonSerializable(typeof(MyEnum))]
   public partial class MyContext : JsonSerializerContext { }
   ```
+
+  For more information, see [Serialize enum fields as strings](../../standard/serialization/system-text-json/source-generation-modes.md#serialize-enum-fields-as-strings).
 
 - New `JsonConverter.Type` property lets you look up the type of a non-generic `JsonConverter` instance:
 
@@ -307,7 +309,7 @@ The following code shows how you might use the new extension methods.
 ```csharp
 const string RequestUri = "https://api.contoso.com/books";
 using var client = new HttpClient();
-IAsyncEnumerable<Book> books = await client.GetFromJsonAsAsyncEnumerable<Book>(RequestUri);
+IAsyncEnumerable<Book> books = client.GetFromJsonAsAsyncEnumerable<Book>(RequestUri);
 
 await foreach (Book book in books)
 {

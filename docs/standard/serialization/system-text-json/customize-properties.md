@@ -1,8 +1,8 @@
 ---
 title: How to customize property names and values with System.Text.Json
 description: "Learn how to customize property names and values when serializing with System.Text.Json in .NET."
-ms.date: 08/25/2021
-zone_pivot_groups: dotnet-version
+ms.date: 09/25/2023
+zone_pivot_groups: dotnet-preview-version
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
@@ -137,7 +137,17 @@ The camel case naming policy for dictionary keys applies to serialization only. 
 
 ## Enums as strings
 
-By default, enums are serialized as numbers. To serialize enum names as strings, use the <xref:System.Text.Json.Serialization.JsonStringEnumConverter>.
+:::zone pivot="dotnet-8-0"
+
+By default, enums are serialized as numbers. To serialize enum names as strings, use the <xref:System.Text.Json.Serialization.JsonStringEnumConverter> or <xref:System.Text.Json.Serialization.JsonStringEnumConverter%601> converter. Only <xref:System.Text.Json.Serialization.JsonStringEnumConverter%601> is supported by the Native AOT runtime.
+
+:::zone-end
+
+:::zone pivot="dotnet-7-0,dotnet-6-0"
+
+By default, enums are serialized as numbers. To serialize enum names as strings, use the <xref:System.Text.Json.Serialization.JsonStringEnumConverter> converter.
+
+:::zone-end
 
 For example, suppose you need to serialize the following class that has an enum:
 
@@ -169,12 +179,34 @@ The resulting JSON looks like the following example:
 }
 ```
 
-The built-in <xref:System.Text.Json.Serialization.JsonStringEnumConverter> can deserialize string values as well. It works without a specified naming policy or with the <xref:System.Text.Json.JsonNamingPolicy.CamelCase> naming policy. It doesn't support other naming policies, such as snake case. The following example shows deserialization using `CamelCase`:
+The built-in <xref:System.Text.Json.Serialization.JsonStringEnumConverter> can deserialize string values as well. It works with or without a specified naming policy. The following example shows deserialization using `CamelCase`:
 
 :::code language="csharp" source="snippets/how-to/csharp/RoundtripEnumAsString.cs" id="Deserialize":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripEnumAsString.vb" id="Deserialize":::
 
-For information about custom converter code that supports deserialization while using a snake case naming policy, see [Support enum string value deserialization](converters-how-to.md#support-enum-string-value-deserialization).
+:::zone pivot="dotnet-8-0"
+
+You can also specify the converter to use by annotating your enum with <xref:System.Text.Json.Serialization.JsonConverterAttribute>. The following example shows how to specify the <xref:System.Text.Json.Serialization.JsonStringEnumConverter%601> (available in .NET 8 and later versions) by using the <xref:System.Text.Json.Serialization.JsonConverterAttribute> attribute. For example, suppose you need to serialize the following class that has an enum:
+
+:::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithConverterEnum":::
+
+The following sample code serializes the enum names instead of the numeric values:
+
+:::code language="csharp" source="snippets/how-to/csharp/RoundtripEnumUsingConverterAttribute.cs" id="Serialize":::
+
+The resulting JSON looks like the following example:
+
+```json
+{
+  "Date": "2019-08-01T00:00:00-07:00",
+  "TemperatureCelsius": 25,
+  "Precipitation": "Sleet"
+}
+```
+
+To use the converter with source generation, see [Serialize enum fields as strings](source-generation-modes.md#serialize-enum-fields-as-strings).
+
+:::zone-end
 
 :::zone pivot="dotnet-7-0,dotnet-6-0"
 

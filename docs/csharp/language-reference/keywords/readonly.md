@@ -79,6 +79,14 @@ The `readonly` modifier on a `ref return` indicates that the returned reference 
 
 The type returned doesn't need to be a `readonly struct`. Any type that can be returned by `ref` can be returned by `ref readonly`.
 
+## Readonly ref readonly return example
+
+Ref readonly return can also be used in conjunction with `readonly` instance members on `struct` types:
+
+:::code language="csharp" source="./snippets/ReadonlyKeywordExamples.cs" id="SnippetReadonlyRefReadonly":::
+
+The method essentially returns a `readonly` reference together with the instance member (in this case a method) being `readonly` (not able to modify any instance fields).
+
 ## C# language specification
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]

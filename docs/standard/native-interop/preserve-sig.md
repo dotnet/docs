@@ -28,12 +28,12 @@ int Add(int a, int b, out int sum);
 ```
 
 ```c
-int Add(int a, int b, int* sum);
+HRESULT Add(int a, int b, int* sum);
 ```
 
 This can be useful if the method may return different `HRESULT` values that are not failures, but must be handled differently. For example, some methods may return the value `S_FALSE` when a method does not fail, but only returns partial results, and `S_OK` when it returns all results.
 
-## PreserveSig with P/Invokes
+## `PreserveSig` with P/Invokes
 
 The <xref:System.Runtime.InteropServices.DllImportAttribute> attribute also has the `bool PreserveSig` field that works similarly to the `PreserveSigAttribute`, but defaults to `true`. To indicate that the runtime should translate the managed signature and handle the `HRESULT` that is returned, set the `PreserveSig` field to `false` in the `DllImportAttribute`. For example, see below the signatures of two P/Invokes to the same native method, one with `PreserveSig` set to `false`, and one with it left to the default `true` value.
 

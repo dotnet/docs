@@ -10,7 +10,7 @@ The Component Object Model (COM) lets an object expose its functionality to othe
 
 ## Built-in and source-generated COM interop
 
-COM interop functionality can be achieved through a built-in system in the .NET runtime (introduced in .NET Core 3.0) or through implementing the [ComWrappers API](./tutorial-comwrappers.md) (introduced in .NET 6). In .NET 8, the [COM source generator](./comwrappers-source-generation.md) can be used to automatically implement the ComWrappers API for `IUnknown`-based interfaces.
+COM interop functionality can be achieved through a built-in system in the .NET runtime or through implementing the [ComWrappers API](./tutorial-comwrappers.md) (introduced in .NET 6). In .NET 8, the [COM source generator](./comwrappers-source-generation.md) can be used to automatically implement the `ComWrappers` API for `IUnknown`-based interfaces.
 
 - [COM Wrappers](./com-wrappers.md)
 - [COM Callable Wrappers](./com-callable-wrapper.md)

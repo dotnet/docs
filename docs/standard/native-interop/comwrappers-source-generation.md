@@ -128,13 +128,13 @@ For more information, see [Implicit method signature translations in .NET intero
 
 ## Incompatibilities and differences to built-in COM
 
-### IUnknown only
+### `IUnknown` only
 
-The only supported interface base is [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown). Interfaces with an <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> with a value other values than <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown> are not supported in source-generated COM. Any interfaces without an `InterfaceTypeAttribute` are assumed to derive from `IUnknown`. This differs from built-in COM where the default is <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual>.
+The only supported interface base is [`IUnknown`](/windows/win32/api/unknwn/nn-unknwn-iunknown). Interfaces with an <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> with a value other than <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown> are not supported in source-generated COM. Any interfaces without an `InterfaceTypeAttribute` are assumed to derive from `IUnknown`. This differs from built-in COM where the default is <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual>.
 
 ## Marshalling defaults and support
 
-Source-generated COM has some different default marshalling behaviors from built in COM.
+Source-generated COM has some different default marshalling behaviors from built-in COM.
 
 - In the built-in COM system, all types had an implicit `[In]` attribute except for arrays of blittable elements, which had implicit `[In, Out]` attributes. In source-generated COM, all types, including arrays of blittable elements, have `[In]` semantics.
 

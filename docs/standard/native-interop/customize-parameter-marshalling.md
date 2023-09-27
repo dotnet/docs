@@ -10,7 +10,7 @@ ms.topic: how-to
 When the .NET runtime's default parameter marshalling behavior doesn't do what you want, use can use the <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=nameWithType> attribute to customize how your parameters are marshalled. These customization features do not apply when [runtime marshalling is disabled](disabled-marshalling.md).
 
 > [!NOTE]
-> Source-generated interop for [P/Invokes](./pinvoke-source-generation.md) and [COM](./comwrappers-source-generation.md) only respects a small subset of <xref:System.Runtime.InteropServices.MarshalAsAttribute> on parameters. It is recommended to use <xref:System.Runtime.InteropServices.Marshalling.MarshalUsingAttribute> for source-generated interop instead. See [Custom marshalling for source generation](./custom-marshalling-source-generation.md) for more information.
+> Source-generated interop for [P/Invokes](./pinvoke-source-generation.md) and [COM](./comwrappers-source-generation.md) only respects a small subset of <xref:System.Runtime.InteropServices.MarshalAsAttribute> on parameters. It is recommended to use <xref:System.Runtime.InteropServices.Marshalling.MarshalUsingAttribute> for source-generated interop instead. For more information, see [Custom marshalling for source generation](./custom-marshalling-source-generation.md).
 
 ## Customizing string parameters
 

@@ -4,13 +4,13 @@ description: Learn about compile-time source generation for ComWrappers in .NET.
 ms.date: 08/25/2023
 ---
 
-# Source Generation for ComWrappers
+# Source generation for ComWrappers
 
 .NET 8 introduces a source generator that creates an implementation of the [ComWrappers](./com-wrappers.md) API for you. The generator recognizes the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute>.
 
-The .NET runtime's built-in (not source-generated), Windows-only, COM interop system generates an IL stub&mdash;a stream of IL instructions that is JIT-ed&mdash;at run-time to facilitate the transition from managed code to COM, and vice-versa. Since this IL stub is generated at run-time, it isn't compatible with [NativeAOT](../../core/deploying/native-aot/index.md), or [IL trimming](../../core/deploying/trimming/trim-self-contained.md). Stub generation at run-time can also make diagnosing marshalling issues difficult.
+The .NET runtime's built-in (not source-generated), Windows-only, COM interop system generates an IL stub&mdash;a stream of IL instructions that's JIT-ed&mdash;at run time to facilitate the transition from managed code to COM, and vice-versa. Since this IL stub is generated at run time, it's incompatible with [NativeAOT](../../core/deploying/native-aot/index.md) and [IL trimming](../../core/deploying/trimming/trim-self-contained.md). Stub generation at run time can also make diagnosing marshalling issues difficult.
 
-Built-in interop uses attributes such as `ComImport` or `DllImport`, which rely on code generation at run-time. The following code shows an example of this:
+Built-in interop uses attributes such as `ComImport` or `DllImport`, which rely on code generation at run time. The following code shows an example of this:
 
 ```csharp
 [ComImport]
@@ -51,7 +51,7 @@ internal partial IFoo
 }
 ```
 
-Then, to expose a class that implements an interface to COM, add the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComClassAttribute> to the implementing class. This class will also need to be `partial` and either `internal` or `public`.
+Then, to expose a class that implements an interface to COM, add the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComClassAttribute> to the implementing class. This class must also be `partial` and either `internal` or `public`.
 
 ```csharp
 [GeneratedComClass]
@@ -64,7 +64,7 @@ internal partial class Foo : IFoo
 }
 ```
 
-At compile time, the generator will create an implementation of the ComWrappers API, and you can use the <xref:System.Runtime.InteropServices.Marshalling.StrategyBasedComWrappers> type or a custom derived type to consume or expose the COM interface.
+At compile time, the generator creates an implementation of the ComWrappers API, and you can use the <xref:System.Runtime.InteropServices.Marshalling.StrategyBasedComWrappers> type or a custom derived type to consume or expose the COM interface.
 
 ```csharp
 [LibraryImport("MyComObjectProvider.dll")]
@@ -86,9 +86,9 @@ nint ptr = cw.GetOrCreateComInterfaceForObject(foo);
 GivePointerToComInterface(ptr);
 ```
 
-## Customizing marshalling
+## Customize marshalling
 
-The COM interface generator respects the <xref:System.Runtime.InteropServices.Marshalling.MarshalUsingAttribute> and some usages of <xref:System.Runtime.InteropServices.MarshalAsAttribute> attributes to customize marshalling of parameters. For more information, see how to [customize source-generated marshalling with the `MarshalUsing` attribute](./custom-marshalling-source-generation.md) and [customize parameter marshalling with the `MarshalAs` attribute](./customize-parameter-marshalling.md). If an interface has `string` parameters or return types, the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.StringMarshalling?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.StringMarshallingCustomType?displayProperty=nameWithType> properties will apply to all parameters and return types of `string` in the interface if they don't have other marshalling attributes.
+The COM interface generator respects the <xref:System.Runtime.InteropServices.Marshalling.MarshalUsingAttribute> attribute and some usages of the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute to customize marshalling of parameters. For more information, see how to [customize source-generated marshalling with the `MarshalUsing` attribute](./custom-marshalling-source-generation.md) and [customize parameter marshalling with the `MarshalAs` attribute](./customize-parameter-marshalling.md). The <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.StringMarshalling?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.StringMarshallingCustomType?displayProperty=nameWithType> properties apply to all parameters and return types of type `string` in the interface if they don't have other marshalling attributes.
 
 ## Implicit HRESULTs and PreserveSig
 
@@ -108,7 +108,7 @@ HRESULT Method1(int i);
 HRESULT Method2(float i, _Out_ int* returnValue);
 ```
 
-If you want to handle the `HRESULT` yourself, you can use the <xref:System.Runtime.InteropServices.PreserveSigAttribute> on the method to indicate the generator should not do this transformation. Below are snippets that demonstrate what native signature the generator expects when `[PreserveSig]` is applied. COM methods must return `HRESULT`, so the return value of any method with `PreserveSig` should be `int`.
+If you want to handle the `HRESULT` yourself, you can use the <xref:System.Runtime.InteropServices.PreserveSigAttribute> on the method to indicate the generator should not do this transformation. The following snippets demonstrate what native signature the generator expects when `[PreserveSig]` is applied. COM methods must return `HRESULT`, so the return value of any method with `PreserveSig` should be `int`.
 
 ```csharp
 [PreserveSig]
@@ -130,19 +130,19 @@ For more information, see [Implicit method signature translations in .NET intero
 
 ### `IUnknown` only
 
-The only supported interface base is [`IUnknown`](/windows/win32/api/unknwn/nn-unknwn-iunknown). Interfaces with an <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> with a value other than <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown> are not supported in source-generated COM. Any interfaces without an `InterfaceTypeAttribute` are assumed to derive from `IUnknown`. This differs from built-in COM where the default is <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual>.
+The only supported interface base is [`IUnknown`](/windows/win32/api/unknwn/nn-unknwn-iunknown). Interfaces with an <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> that has a value other than <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown> are not supported in source-generated COM. Any interfaces without an `InterfaceTypeAttribute` are assumed to derive from `IUnknown`. This differs from built-in COM where the default is <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual>.
 
 ## Marshalling defaults and support
 
 Source-generated COM has some different default marshalling behaviors from built-in COM.
 
-- In the built-in COM system, all types had an implicit `[In]` attribute except for arrays of blittable elements, which had implicit `[In, Out]` attributes. In source-generated COM, all types, including arrays of blittable elements, have `[In]` semantics.
+- In the built-in COM system, all types have an implicit `[In]` attribute except for arrays of blittable elements, which have implicit `[In, Out]` attributes. In source-generated COM, all types, including arrays of blittable elements, have `[In]` semantics.
 
 - `[In]` and `[Out]` attributes are only allowed on arrays. If `[Out]` or `[In, Out]` behavior is required on other types, use the `in` and `out` parameter modifiers.
 
 ### Derived interfaces
 
-In the built-in COM system, if you had interfaces which derived from other COM interfaces, you would need to declare a shadowing method for each base method on the base interfaces with the `new` keyword. See [COM interface inheritance and .NET](./qualify-net-types-for-interoperation.md#com-interface-inheritance-and-net) for more information.
+In the built-in COM system, if you have interfaces that derive from other COM interfaces, you must declare a shadowing method for each base method on the base interfaces with the `new` keyword. For more information, see [COM interface inheritance and .NET](./qualify-net-types-for-interoperation.md#com-interface-inheritance-and-net).
 
 ```csharp
 [ComImport]
@@ -164,7 +164,7 @@ interface IDerived : IBase
 }
 ```
 
-The COM interface generator does not expect any shadowing of base methods. To create a method that inherits from another, simply indicate the base interface as a C# base interface and add the derived interface's methods. See [the design doc](https://github.com/dotnet/runtime/blob/main/docs/design/libraries/ComInterfaceGenerator/DerivedComInterfaces.md) for more information.
+The COM interface generator does not expect any shadowing of base methods. To create a method that inherits from another, simply indicate the base interface as a C# base interface and add the derived interface's methods. For more information, see [the design doc](https://github.com/dotnet/runtime/blob/main/docs/design/libraries/ComInterfaceGenerator/DerivedComInterfaces.md).
 
 ```csharp
 [GeneratedComInterface]
@@ -188,7 +188,7 @@ Note that an interface with the `GeneratedComInterface` attribute can only inher
 
 ### Marshal APIs
 
-Some APIs in <xref:System.Runtime.InteropServices.Marshal> are not compatible with source-generated COM. These methods should be replaced with their corresponding methods on a `ComWrappers` implementation.
+Some APIs in <xref:System.Runtime.InteropServices.Marshal> are not compatible with source-generated COM. Replace these methods with their corresponding methods on a `ComWrappers` implementation.
 
 ## See also
 

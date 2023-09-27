@@ -7,7 +7,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.custom: "vs-dotnet,contperf-fy21q3"
-recommendations: false
 ---
 # Tutorial: Create a .NET console application using Visual Studio
 

@@ -4,7 +4,6 @@ description: Learn how to use the code coverage capabilities for .NET unit tests
 author: IEvangelist
 ms.author: dapine
 ms.date: 11/11/2021
-recommendations: false
 ---
 
 # Use code coverage for unit testing
@@ -32,7 +31,7 @@ From a command prompt in a new directory named `UnitTestingCodeCoverage`, create
 dotnet new classlib -n Numbers
 ```
 
-The snippet below defines a simple `PrimeService` class that provides functionality to check if a number is prime. Copy the snippet below and replace the contents of the *Class1.cs* file that was automatically created in the *Numbers* directory. Rename the *Class1.cs* file to *PrimeService.cs*.
+The snippet below defines a simple `PrimeService` class that provides functionality to check if a number is prime. Copy the snippet below and replace the contents of the _Class1.cs_ file that was automatically created in the _Numbers_ directory. Rename the _Class1.cs_ file to _PrimeService.cs_.
 
 ```csharp
 namespace System.Numbers
@@ -74,7 +73,7 @@ dotnet new xunit -n XUnit.Coverlet.Collector
 dotnet new xunit -n XUnit.Coverlet.MSBuild
 ```
 
-Both of the newly created xUnit test projects need to add a project reference of the *Numbers* class library. This is so that the test projects have access to the *PrimeService* for testing. From the command prompt, use the [`dotnet add`](../tools/dotnet-add-reference.md) command:
+Both of the newly created xUnit test projects need to add a project reference of the _Numbers_ class library. This is so that the test projects have access to the _PrimeService_ for testing. From the command prompt, use the [`dotnet add`](../tools/dotnet-add-reference.md) command:
 
 ```dotnetcli
 dotnet add XUnit.Coverlet.Collector\XUnit.Coverlet.Collector.csproj reference Numbers\Numbers.csproj
@@ -84,15 +83,15 @@ dotnet add XUnit.Coverlet.Collector\XUnit.Coverlet.Collector.csproj reference Nu
 dotnet add XUnit.Coverlet.MSBuild\XUnit.Coverlet.MSBuild.csproj reference Numbers\Numbers.csproj
 ```
 
-The *MSBuild* project is named appropriately, as it will depend on the [coverlet.msbuild](https://www.nuget.org/packages/coverlet.msbuild) NuGet package. Add this package dependency by running the [`dotnet add package`](../tools/dotnet-add-package.md) command:
+The _MSBuild_ project is named appropriately, as it will depend on the [coverlet.msbuild](https://www.nuget.org/packages/coverlet.msbuild) NuGet package. Add this package dependency by running the [`dotnet add package`](../tools/dotnet-add-package.md) command:
 
 ```dotnetcli
 cd XUnit.Coverlet.MSBuild && dotnet add package coverlet.msbuild && cd ..
 ```
 
-The previous command changed directories effectively scoping to the *MSBuild* test project, then added the NuGet package. When that was done, it then changed directories, stepping up one level.
+The previous command changed directories effectively scoping to the _MSBuild_ test project, then added the NuGet package. When that was done, it then changed directories, stepping up one level.
 
-Open both of the *UnitTest1.cs* files, and replace their contents with the following snippet. Rename the *UnitTest1.cs* files to *PrimeServiceTests.cs*.
+Open both of the _UnitTest1.cs_ files, and replace their contents with the following snippet. Rename the _UnitTest1.cs_ files to _PrimeServiceTests.cs_.
 
 ```csharp
 using System.Numbers;
@@ -132,7 +131,7 @@ From the command prompt, create a new solution to encapsulate the class library 
 dotnet new sln -n XUnit.Coverage
 ```
 
-This will create a new solution file name `XUnit.Coverage` in the *UnitTestingCodeCoverage* directory. Add the projects to the root of the solution.
+This will create a new solution file name `XUnit.Coverage` in the _UnitTestingCodeCoverage_ directory. Add the projects to the root of the solution.
 
 ## [Linux](#tab/linux)
 
@@ -168,7 +167,7 @@ In this section, the focus is on data collector tools. To use Coverlet for code 
 ## Integrate with .NET test
 
 The xUnit test project template already integrates with [coverlet.collector](https://www.nuget.org/packages/coverlet.collector) by default.
-From the command prompt, change directories to the *XUnit.Coverlet.Collector* project, and run the [`dotnet test`](../tools/dotnet-test.md) command:
+From the command prompt, change directories to the _XUnit.Coverlet.Collector_ project, and run the [`dotnet test`](../tools/dotnet-test.md) command:
 
 ```dotnetcli
 cd XUnit.Coverlet.Collector && dotnet test --collect:"XPlat Code Coverage"
@@ -177,9 +176,9 @@ cd XUnit.Coverlet.Collector && dotnet test --collect:"XPlat Code Coverage"
 > [!NOTE]
 > The `"XPlat Code Coverage"` argument is a friendly name that corresponds to the data collectors from Coverlet. This name is required but is case insensitive.
 
-As part of the `dotnet test` run, a resulting *coverage.cobertura.xml* file is output to the *TestResults* directory. The XML file contains the results. This is a cross-platform option that relies on the .NET CLI, and it is great for build systems where MSBuild is not available.
+As part of the `dotnet test` run, a resulting _coverage.cobertura.xml_ file is output to the _TestResults_ directory. The XML file contains the results. This is a cross-platform option that relies on the .NET CLI, and it is great for build systems where MSBuild is not available.
 
-Below is the example *coverage.cobertura.xml* file.
+Below is the example _coverage.cobertura.xml_ file.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -258,13 +257,13 @@ Below is the example *coverage.cobertura.xml* file.
 ```
 
 > [!TIP]
-> As an alternative, you could use the MSBuild package if your build system already makes use of MSBuild. From the command prompt, change directories to the *XUnit.Coverlet.MSBuild* project, and run the `dotnet test` command:
+> As an alternative, you could use the MSBuild package if your build system already makes use of MSBuild. From the command prompt, change directories to the _XUnit.Coverlet.MSBuild_ project, and run the `dotnet test` command:
 >
 > ```dotnetcli
 > dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura
 > ```
 >
-> The resulting *coverage.cobertura.xml* file is output.
+> The resulting _coverage.cobertura.xml_ file is output.
 > You can follow MSBuild integration guide [here](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/MSBuildIntegration.md)
 
 ## Generate reports
@@ -275,7 +274,7 @@ Now that you're able to collect data from unit test runs, you can generate repor
 dotnet tool install -g dotnet-reportgenerator-globaltool
 ```
 
-Run the tool and provide the desired options, given the output *coverage.cobertura.xml* file from the previous test run.
+Run the tool and provide the desired options, given the output _coverage.cobertura.xml_ file from the previous test run.
 
 ```console
 reportgenerator

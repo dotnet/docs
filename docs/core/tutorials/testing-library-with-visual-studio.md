@@ -7,7 +7,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.custom: "vs-dotnet"
-recommendations: false
 ---
 # Tutorial: Test a .NET class library with .NET using Visual Studio
 

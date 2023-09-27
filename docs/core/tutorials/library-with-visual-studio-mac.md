@@ -2,7 +2,6 @@
 title: Create a .NET class library using Visual Studio for Mac
 description: Learn how to create a .NET class library using Visual Studio for Mac.
 ms.date: 11/30/2020
-recommendations: false
 ---
 # Tutorial: Create a .NET class library using Visual Studio for Mac
 
@@ -20,11 +19,11 @@ A *class library* defines types and methods that are called by an application. I
 
 ## Prerequisites
 
-* [Install Visual Studio for Mac version 8.8 or later](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link). Select the option to install .NET Core. Installing Xamarin is optional for .NET development. For more information, see the following resources:
+- [Install Visual Studio for Mac version 8.8 or later](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link). Select the option to install .NET Core. Installing Xamarin is optional for .NET development. For more information, see the following resources:
 
-  * [Tutorial: Install Visual Studio for Mac](/visualstudio/mac/installation).
-  * [Supported macOS versions](../install/macos.md).
-  * [.NET versions supported by Visual Studio for Mac](/visualstudio/mac/net-core-support).
+  - [Tutorial: Install Visual Studio for Mac](/visualstudio/mac/installation).
+  - [Supported macOS versions](../install/macos.md).
+  - [.NET versions supported by Visual Studio for Mac](/visualstudio/mac/net-core-support).
 
 ## Create a solution with a class library project
 
@@ -102,9 +101,9 @@ Initially, the new console app project doesn't have access to the class library.
 
 ## Additional resources
 
-* [Develop libraries with the .NET CLI](libraries.md)
-* [Visual Studio 2019 for Mac Release Notes](/visualstudio/releasenotes/vs2019-mac-relnotes)
-* [.NET Standard versions and the platforms they support](../../standard/net-standard.md).
+- [Develop libraries with the .NET CLI](libraries.md)
+- [Visual Studio 2019 for Mac Release Notes](/visualstudio/releasenotes/vs2019-mac-relnotes)
+- [.NET Standard versions and the platforms they support](../../standard/net-standard.md).
 
 ## Next steps
 

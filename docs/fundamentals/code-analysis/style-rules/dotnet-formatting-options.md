@@ -2,6 +2,7 @@
 title: .NET formatting options
 description: Learn about the code-style options for formatting .NET code.
 ms.date: 12/20/2022
+ms.topic: reference
 dev_langs:
 - CSharp
 - VB

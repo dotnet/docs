@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "ETW, method events (CLR)"
   - "method events [.NET Framework]"
+ms.topic: reference
 ---
 
 # Method ETW Events

@@ -2,6 +2,7 @@
 title: Security rules (code analysis)
 description: "Learn about code analysis security rules."
 ms.date: 10/02/2019
+ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.securityrules
 helpviewer_keywords:

@@ -2,6 +2,7 @@
 title: Predefined configuration files (code analysis)
 description: Learn about using predefined editorconfig and rule set files to target specific types of code analysis.
 ms.date: 09/24/2020
+ms.topic: conceptual
 ---
 # Predefined configuration files
 

@@ -2,6 +2,7 @@
 title: Documentation rules (code analysis)
 description: "Learn about code analysis rule Documentation rules"
 ms.date: 09/16/2019
+ms.topic: reference
 f1_keywords:
   - "vs.codeanalysis.documentationrules"
 helpviewer_keywords:

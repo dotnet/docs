@@ -2,6 +2,7 @@
 title: Code-style rules overview
 description: Learn about the different .NET code-style rules and categories.
 ms.date: 07/22/2023
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 ---

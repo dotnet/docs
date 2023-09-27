@@ -2,6 +2,7 @@
 title: C# formatting options
 description: Learn about the code style options for formatting C# code files.
 ms.date: 12/13/2022
+ms.topic: reference
 dev_langs:
 - CSharp
 ---

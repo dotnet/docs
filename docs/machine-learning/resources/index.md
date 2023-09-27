@@ -1,6 +1,7 @@
 ---
 title:  ML.NET resources
 description: Learn more about machine learning and ML.NET
+ms.topic: reference
 ms.date: 02/25/2020
 ---
 # ML.NET resources

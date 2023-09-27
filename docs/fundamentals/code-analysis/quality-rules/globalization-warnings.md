@@ -2,6 +2,7 @@
 title: Globalization rules (code analysis)
 description: "Learn about code analysis rule Globalization rules"
 ms.date: 11/04/2016
+ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.globalizationrules
 helpviewer_keywords:

@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "system requirements"
   - "operating systems supported"
   - "hardware requirements"
+ms.topic: reference
 ---
 # .NET Framework system requirements
 

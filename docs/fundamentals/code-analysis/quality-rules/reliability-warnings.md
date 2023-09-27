@@ -2,6 +2,7 @@
 title: Reliability rules (code analysis)
 description: "Learn about code analysis reliability rules."
 ms.date: 11/04/2016
+ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.reliabilityrules
 helpviewer_keywords:

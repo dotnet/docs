@@ -2,6 +2,7 @@
 title: Miscellaneous coding style rules
 description: Learn about the miscellaneous category of .NET code-style rules.
 ms.date: 02/06/2021
+ms.topic: reference
 author: BartoszKlonowski
 ---
 

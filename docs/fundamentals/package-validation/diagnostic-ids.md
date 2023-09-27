@@ -2,7 +2,7 @@
 description: A reference for package validation diagnostic IDs.
 title: "Package Validation Diagnostics IDs"
 ms.date: 11/03/2021
-ms.topic: error-reference
+ms.topic: reference
 ---
 # Error codes returned by package validation
 

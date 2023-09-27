@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "endpoints [WCF]"
   - "Svcutil.exe"
   - "clients [WCF], consuming services"
+ms.topic: reference
 ---
 # ServiceModel Metadata Utility Tool (Svcutil.exe)
 

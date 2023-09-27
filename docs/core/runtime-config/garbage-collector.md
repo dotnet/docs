@@ -2,6 +2,7 @@
 title: Garbage collector config settings
 description: Learn about run-time settings for configuring how the garbage collector manages memory for .NET apps.
 ms.date: 04/20/2022
+ms.topic: reference
 ---
 # Runtime configuration options for garbage collection
 

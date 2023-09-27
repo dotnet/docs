@@ -2,6 +2,7 @@
 title: WPF config settings
 description: Learn about the settings that configure WPF for .NET apps.
 ms.date: 09/08/2023
+ms.topic: reference
 ---
 # Runtime configuration options for WPF
 

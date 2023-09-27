@@ -3,6 +3,7 @@ title: .NET Framework technologies unavailable on .NET 6+
 titleSuffix: ""
 description: Learn about .NET Framework technologies that are unavailable on .NET 6 and later versions.
 ms.date: 02/28/2023
+ms.topic: reference
 ---
 # .NET Framework technologies unavailable on .NET
 

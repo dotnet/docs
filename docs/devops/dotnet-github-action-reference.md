@@ -1,6 +1,7 @@
 ---
 title: .NET-related GitHub Actions
 description: Learn about the available .NET-related GitHub Actions.
+ms.topic: reference
 ms.date: 09/17/2021
 ---
 # .NET-related GitHub Actions

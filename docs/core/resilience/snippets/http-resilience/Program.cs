@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Polly;
+using Polly.CircuitBreaker;
+using Polly.Retry;
 
 var services = new ServiceCollection();
 
@@ -14,12 +16,20 @@ builder.AddStandardResilienceHandler(options =>
     options.RetryOptions.BackoffType = DelayBackoffType.Exponential;
 });
 
-builder.AddResilienceHandler("CustomPipeline", builder =>
+builder.AddResilienceHandler("CustomPipeline", static builder =>
 {
-    builder.
+    builder.AddRetry(new RetryStrategyOptions<HttpResponseMessage>
+    {
+        // Custom options
+        BackoffType = DelayBackoffType.Exponential,
+    });
 
-    options.AddCircuitBreaker(new());
+    builder.AddCircuitBreaker(new CircuitBreakerStrategyOptions<HttpResponseMessage>());
+
+    builder.AddTimeout(TimeSpan.FromSeconds(5));
 });
+
+builder.AddStandardHedgingHandler();
 
 // services.ConfigureOptions<RetryStrategyOptions<HttpResponseMessage>>(/**/);
 

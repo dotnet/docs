@@ -1,17 +1,17 @@
 ---
-title: Introduction to resiliency in .NET
-description: Learn about resiliency in .NET and how to build a resilience pipeline.
+title: Introduction to resilience in .NET
+description: Learn about resilience in .NET and how to build a resilience pipeline.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/27/2023
+ms.date: 09/28/2023
 ---
 
-# Introduction to resiliency in .NET
+# Introduction to resilience in .NET
 
-Resiliency is the ability of an app to recover from failures and continue to function. In the context of .NET programming, resiliency is achieved by designing apps that can handle failures gracefully and recover quickly. To help build resilient apps in .NET, the following two packages are available on NuGet:
+Resiliency is the ability of an app to recover from failures and continue to function. In the context of .NET programming, resilience is achieved by designing apps that can handle failures gracefully and recover quickly. To help build resilient apps in .NET, the following two packages are available on NuGet:
 
 - [Microsoft.Extensions.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Resilience): This NuGet package provides mechanisms to harden apps against transient failures.
-- [Microsoft.Extensions.Http.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience): This NuGet package provides resiliency mechanisms specifically for the <xref:System.Net.Http.HttpClient>.
+- [Microsoft.Extensions.Http.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience): This NuGet package provides resilience mechanisms specifically for the <xref:System.Net.Http.HttpClient>.
 
 These two NuGet packages are built on top of _Polly_, which is a very popular open-source project. Polly is a .NET resilience and transient-fault-handling library that allows developers to express strategies such as Retry, Circuit Breaker, Timeout, Bulkhead Isolation, Rate-limiting and Fallback in a fluent and thread-safe manner. For more information, see [Polly](https://github.com/App-vNext/Polly).
 
@@ -20,7 +20,7 @@ These two NuGet packages are built on top of _Polly_, which is a very popular op
 
 ## Get started
 
-To get started with resiliency in .NET, install the [Microsoft.Extensions.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Resilience) NuGet package.
+To get started with resilience in .NET, install the [Microsoft.Extensions.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Resilience) NuGet package.
 
 ### [.NET CLI](#tab/dotnet-cli)
 
@@ -40,7 +40,7 @@ For more information, see [dotnet add package](../tools/dotnet-add-package.md) o
 
 ## Build a resilience pipeline
 
-To use resiliency, you must first build a pipeline of resilience-based strategies. Each configured strategy executes in order of configuration The entry point is an extension method on the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> type, named `AddResiliencePipeline`. This method takes a delegate that configures the pipeline. The delegate is passed an instance of `ResiliencePipelineBuilder`, which is used to add resilience strategies to the pipeline.
+To use resilience, you must first build a pipeline of resilience-based strategies. Each configured strategy executes in order of configuration The entry point is an extension method on the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> type, named `AddResiliencePipeline`. This method takes a delegate that configures the pipeline. The delegate is passed an instance of `ResiliencePipelineBuilder`, which is used to add resilience strategies to the pipeline.
 
 Consider the following string-based `key` example:
 

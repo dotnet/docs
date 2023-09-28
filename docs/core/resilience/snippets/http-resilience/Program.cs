@@ -1,37 +1,33 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Polly;
-using Polly.CircuitBreaker;
-using Polly.Registry;
 
 var services = new ServiceCollection();
 
-const string key = "Retry-CircuitBreaker-Timeout";
+var builder = services.AddHttpClient<ExampleClient>(
+    configureClient: static client =>
+    {
+        client.BaseAddress = new("https://jsonplaceholder.typicode.com");
+    });
 
-services.AddResiliencePipeline(key, builder =>
+builder.AddStandardResilienceHandler(options =>
 {
-    // See: https://www.pollydocs.org/strategies/retry.html
-    builder.AddRetry(new());
-
-    // See: https://www.pollydocs.org/strategies/circuit-breaker.html
-    builder.AddCircuitBreaker(new CircuitBreakerStrategyOptions());
-
-    builder.AddTimeout(TimeSpan.FromSeconds(5));
-
-    // Add other strategies here...
+    options.RetryOptions.BackoffType = DelayBackoffType.Exponential;
 });
 
-using ServiceProvider provider = services.BuildServiceProvider();
-
-ResiliencePipelineProvider<string> pipelineProvider =
-    provider.GetRequiredService<ResiliencePipelineProvider<string>>();
-
-ResiliencePipeline pipeline = pipelineProvider.GetPipeline(key);
-
-int failures = 0;
-
-await pipeline.ExecuteAsync(async cancellationToken =>
+builder.AddResilienceHandler("CustomPipeline", builder =>
 {
-    await Task.Delay(5_050, cancellationToken);
+    builder.
 
-    throw new Exception($"I failed {++ failures} times...");
+    options.AddCircuitBreaker(new());
 });
+
+// services.ConfigureOptions<RetryStrategyOptions<HttpResponseMessage>>(/**/);
+
+var provider = services.BuildServiceProvider();
+
+var client = provider.GetRequiredService<ExampleClient>();
+
+await foreach (var comment in client.GetCommentsAsync())
+{
+    Console.WriteLine(comment);
+}

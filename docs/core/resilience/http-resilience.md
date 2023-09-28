@@ -81,18 +81,33 @@ The standard hedging handler wraps the execution of the request with a standard 
 // var host = Host.CreateApplicationBuilder(args);
 // host.Services.AddHttpClient<ExampleClient>(client => { ... });
 
-services.AddHttpClient<ExampleClient>(client =>
+var services = new ServiceCollection();
+
+IHttpClientBuilder builder = services.AddHttpClient<ExampleClient>(
+    configureClient: static client =>
     {
-        client.BaseAddress = new Uri("https://example.com");
-    })
-    .AddStandardHedgingHandler();
+        client.BaseAddress = new("https://jsonplaceholder.typicode.com");
+    });
 ```
 
 The preceding code:
 
 - Adds an <xref:System.Net.Http.HttpClient> for the `ExampleClient` type to the service container.
-- Configures the <xref:System.Net.Http.HttpClient> to use `"https://example.com"` as the base address.
+- Configures the <xref:System.Net.Http.HttpClient> to use `"https://jsonplaceholder.typicode.com"` as the base address.
 - Adds the standard hedging resilience handler to the <xref:System.Net.Http.HttpClient>.
+
+The `ExampleClient` is defined as follows:
+
+:::code source="snippets/http-resilience/ExampleClient.cs":::
+
+The preceding code:
+
+- Defines an `ExampleClient` type that has a constructor that accepts an <xref:System.Net.Http.HttpClient>.
+- Exposes a `GetCommentsAsync` method that sends a GET request to the `"/comments"` endpoint and returns the response.
+
+The `Comment` type is defined as follows:
+
+:::code source="snippets/http-resilience/Comment.cs":::
 
 #### Standard hedging handler defaults
 
@@ -101,7 +116,13 @@ The standard hedging uses a pool of circuit breakers to ensure that unhealthy en
 > [!TIP]
 > It's recommended that you configure the way the strategies are selected by calling `StandardHedgingHandlerBuilderExtensions.SelectPipelineByAuthority`.
 
-The default configuration chains five resilience strategies in the following order (from the outermost to the innermost):
+To use the standard hedging handler, call `AddStandardHedgingHandler` extension method. The following example configures the `ExampleClient` to use the standard hedging handler.
+
+```csharp
+builder.AddStandardHedgingHandler();
+```
+
+The preceding code, adds the standard hedging handler to the <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder>. The default configuration chains five resilience strategies in the following order (from the outermost to the innermost):
 
 | Order | Strategy | Description |
 |--:|--|--|
@@ -118,12 +139,6 @@ For finite control, you can customize the resilience handlers by calling the `Ad
 To configure a named resilience handler, call the `AddResilienceHandler` extension method with the name of the handler. The following example configures a named resilience handler called `CustomResilienceHandler`.
 
 ```csharp
-// A service collection is manually instantiated for this example.
-// If you're using a generic host, you'll instead use its service collection:
-//
-// var host = Host.CreateApplicationBuilder(args);
-// host.Services.AddHttpClient<ExampleClient>(client => { ... });
-
 builder.AddResilienceHandler("CustomPipeline", static builder =>
 {
     // See: https://www.pollydocs.org/strategies/retry.html
@@ -168,11 +183,33 @@ There are many options available for each of the resilience strategies. For more
 
 ## Example usage
 
+You app relies on [dependency injection](../extensions/dependency-injection.md) to resolve the `ExampleClient` and its corresponding <xref:System.Net.Http.HttpClient>, but for this example, since the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollection> was manually instantiated this code builds the <xref:System.IServiceProvider> and resolves the `ExampleClient` from it.
+
+```csharp
+var provider = services.BuildServiceProvider();
+
+var client = provider.GetRequiredService<ExampleClient>();
+
+await foreach (var comment in client.GetCommentsAsync())
+{
+    Console.WriteLine(comment);
+}
+```
+
+The preceding code:
+
+- Builds the <xref:System.IServiceProvider> from the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollection>.
+- Resolves the `ExampleClient` from the <xref:System.IServiceProvider>.
+- Calls the `GetCommentsAsync` method on the `ExampleClient` to get the comments.
+- Writes each comment to the console.
+
 <!--
 Mermaid diagram generated from the following code:
 
   https://mermaid.live/edit#pako:eNp9U01v4jAQ_Suj9NJKBBCHXdWVVgofbS8rrRaOXCb2hLh1YmpPBAj47zshUAGHzWlm3vN748l4n2hvKFFJ4fxGlxgYFtNlDfJlj7hBy6CdpZr7b8QTX1USxizuav2klNpAmv6C8WOBqsA0947hfbH4A2-zBQz0mf3UyY1b7qFjrpzPKcWKgtUYoWReRzUYfERfrx1qKr0zFPq8W9u2vb5IHWCy7w63lc7mL301FBnmYnPsXCYnlxM6Z-QmwkToCkbD4QGm50bjV4OBUl2S_oR5ozXFCAOR4ybUcLlle8H4f9Xa1-lJ-fWszMFivXKU0lY7rJCtr2EWgg-inzXs25JG53atW9i1HnQ9GMIAsy3phkkY0baz1ySuAZlWluIh61oS-RinVMAGCuuceiiK4uUOom_IaGPu0XhGzbPgz_do7prL8fyn-VGM7nGIHPwnqYfhcNjr4nRjDZdqtN5eq0EG-V0q2teV8S1hcptOb9NXyJNeIqtToTWyuPsWXCZcUkXLREmYY5RoWR-F16yNDG5mLPuQyIRdpF6C8iPmssKJ4tDQhTS1uApYfbPodOh39zxOr-T4D3EqCwo
 
 -->
+
+Imagine a situation where the network was to go down, or the server was to become unresponsive. The following diagram shows how the resilience strategies would handle the situation:
 
 :::image type="content" source="assets/http-get-comments-flow.png" lightbox="assets/http-get-comments-flow.png" alt-text="Example HTTP GET work flow with resilience pipeline.":::

@@ -60,6 +60,9 @@ Both of the previous examples depend on parameters, and in both cases, the param
 
 ## More resources
 
+- [Writing cross platform P/Invokes](./native-library-loading.md)
+- [Source generated P/Invoke marshalling](./pinvoke-source-generation.md)
+- [PInvoke.net wiki](https://www.pinvoke.net/) an excellent Wiki with information on common Windows APIs and how to call them.
 - [C#/Win32 P/Invoke source generator](https://github.com/microsoft/CsWin32/) automatically generates definitions for Windows APIs.
 - [P/Invoke in C++/CLI](/cpp/dotnet/native-and-dotnet-interoperability)
 - [Mono documentation on P/Invoke](https://www.mono-project.com/docs/advanced/pinvoke/)

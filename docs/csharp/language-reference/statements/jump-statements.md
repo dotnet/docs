@@ -104,17 +104,17 @@ public ref Person GetContactInformation(string fname, string lname)
 
 Here's a more complete ref return example, showing both the method signature and method body.
 
-:::code language="csharp" source="snippets/RefParameterModifier.cs" id="SnippetFindReturningRef":::
+:::code language="csharp" source="snippets/jump-statements/RefParameterModifier.cs" id="SnippetFindReturningRef":::
 
 The called method may also declare the return value as `ref readonly` to return the value by reference, and enforce that the calling code can't modify the returned value. The calling method can avoid copying the returned value by storing the value in a local `ref readonly` reference variable.
 
 The following example defines a `Book` class that has two <xref:System.String> fields, `Title` and `Author`. It also defines a `BookCollection` class that includes a private array of `Book` objects. Individual book objects are returned by reference by calling its `GetBookByTitle` method.
 
-:::code language="csharp" source="snippets/RefParameterModifier.cs" id="Snippet4":::
+:::code language="csharp" source="snippets/jump-statements/RefParameterModifier.cs" id="Snippet4":::
 
 When the caller stores the value returned by the `GetBookByTitle` method as a ref local, changes that the caller makes to the return value are reflected in the `BookCollection` object, as the following example shows.
 
-:::code language="csharp" source="snippets/RefParameterModifier.cs" id="Snippet5":::
+:::code language="csharp" source="snippets/jump-statements/RefParameterModifier.cs" id="Snippet5":::
 
 ## The `goto` statement
 

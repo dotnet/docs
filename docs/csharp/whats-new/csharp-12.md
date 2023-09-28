@@ -83,7 +83,7 @@ The addition of `ref readonly` parameters enables more clarity for APIs that may
 - APIs that take an `in` parameter, but logically require a variable. A value expression won't work. An example is <xref:System.ReadOnlySpan%601.%23ctor(%600@)?displayProperty=fullName>.
 - APIs that use `ref` because they require a variable, but don't mutate that variable. An example is <xref:System.Runtime.CompilerServices.Unsafe.IsNullRef%2A?displayProperty=fullName>.
 
-To learn more about `ref readonly` parameters, see the article on [parameter modifiers](../language-reference/keywords/method-parameters.md#modifiers) in the language reference, or the [ref readonly parameters](~/_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md) feature specification.
+To learn more about `ref readonly` parameters, see the article on [parameter modifiers](../language-reference/keywords/method-parameters.md#ref-readonly-modifier) in the language reference, or the [ref readonly parameters](~/_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md) feature specification.
 
 ## Default lambda parameters
 

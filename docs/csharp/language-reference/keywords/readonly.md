@@ -26,7 +26,7 @@ The `readonly` keyword is a modifier that can be used in five contexts:
 - In a `readonly struct` type definition, `readonly` indicates that the structure type is immutable. For more information, see the [`readonly` struct](../builtin-types/struct.md#readonly-struct) section of the [Structure types](../builtin-types/struct.md) article.
 - In an instance member declaration within a structure type, `readonly` indicates that an instance member doesn't modify the state of the structure. For more information, see the [`readonly` instance members](../builtin-types/struct.md#readonly-instance-members) section of the [Structure types](../builtin-types/struct.md) article.
 - In a [`ref readonly` method return](#ref-readonly-return-example), the `readonly` modifier indicates that method returns a reference and writes aren't allowed to that reference.
-  - To declare a [`ref readonly` parameter](method-parameters.md#modifiers) to a method.
+  - To declare a [`ref readonly` parameter](method-parameters.md#ref-readonly-modifier) to a method.
 
 ## Readonly field example
 

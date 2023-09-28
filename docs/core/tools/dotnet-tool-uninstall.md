@@ -51,7 +51,7 @@ The `dotnet tool uninstall` command provides a way for you to uninstall .NET too
 
 - **`--tool-manifest <PATH>`**
 
-  Specifies that the tool to be removed from the manifest file. PATH can be absolute or relative. Can't be combined with the `--global` option.
+  Specifies the manifest file that the tool is to be removed from. PATH can be absolute or relative. Can't be combined with the `--global` option.
 
 ## Examples
 

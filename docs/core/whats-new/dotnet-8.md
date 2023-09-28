@@ -1391,7 +1391,7 @@ Building in a container is the easiest approach for most people, since the `dotn
 
 ## Cross-built Windows apps
 
-When you build apps that Windows on non-Windows platforms, the resulting executable is now updated with any specified Win32 resources&mdash;for example, application icon, manifest, version information.
+When you build apps for Windows on non-Windows platforms, the resulting executable is now updated with any specified Win32 resources&mdash;for example, application icon, manifest, version information.
 
 Previously, applications had to be built on Windows in order to have such resources. Fixing this gap in cross-building support has been a popular request, as it was a significant pain point affecting both infrastructure complexity and resource usage.
 

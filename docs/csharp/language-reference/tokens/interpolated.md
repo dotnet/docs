@@ -54,7 +54,7 @@ Beginning with C# 11, you can use an interpolated [raw string literal](../builti
 
 :::code language="csharp" source="./snippets/string-interpolation.cs" id="InterpolatedRawStringLiteral":::
 
-To embed `{` and `}` characters in the result string, start an interpolated raw string literal with multiple `$` characters. When you do that, any sequence of `{` or `}` characters shorter than the number of `$` characters is embedded in the result string. To enclose any interpolation expression within that string, you need to use the same number of braces as the number of `$` characters, as the the following example shows:
+To embed `{` and `}` characters in the result string, start an interpolated raw string literal with multiple `$` characters. When you do that, any sequence of `{` or `}` characters shorter than the number of `$` characters is embedded in the result string. To enclose any interpolation expression within that string, you need to use the same number of braces as the number of `$` characters, as the following example shows:
 
 :::code language="csharp" source="./snippets/string-interpolation.cs" id="InterpolatedRawStringLiteralWithBraces":::
 

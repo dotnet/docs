@@ -61,13 +61,15 @@ When the `return` statement has an expression, that expression must be implicitl
 
 ### Ref returns
 
-By default, the `return` statement returns the value of an expression. You can return a reference to a variable. To do that, use the `return` statement with the [`ref` keyword](../keywords/ref.md), as the following example shows:
+By default, the `return` statement returns the value of an expression. You can return a reference to a variable. Reference return values (or ref returns) are values that a method returns by reference to the caller. That is, the caller can modify the value returned by a method, and that change is reflected in the state of the object in the called method. To do that, use the `return` statement with the `ref` keyword, as the following example shows:
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/jump-statements/ReturnStatement.cs" id="RefReturn":::
 
-Return values can be returned by reference (`ref` returns). A reference return value allows a method to return a reference to a variable, rather than a value, back to a caller. The caller can then choose to treat the returned variable as if it were returned by value or by reference. The caller can create a new variable that is itself a reference to the returned value, called a [ref local](declarations.md#reference-variables). A *reference return value* means that a method returns a *reference* (or an alias) to some variable. That variable's scope must include the method. That variable's lifetime must extend beyond the return of the method. Modifications to the method's return value by the caller are made to the variable that is returned by the method.
+A reference return value allows a method to return a reference to a variable, rather than a value, back to a caller. The caller can then choose to treat the returned variable as if it were returned by value or by reference. The caller can create a new variable that is itself a reference to the returned value, called a [ref local](declarations.md#reference-variables). A *reference return value* means that a method returns a *reference* (or an alias) to some variable. That variable's scope must include the method. That variable's lifetime must extend beyond the return of the method. Modifications to the method's return value by the caller are made to the variable that is returned by the method.
 
 Declaring that a method returns a *reference return value* indicates that the method returns an alias to a variable. The design intent is often that calling code accesses that variable through the alias, including to modify it. Methods returning by reference can't have the return type `void`.
+
+In order for the caller to modify the object's state, the reference return value must be stored to a variable that is explicitly defined as a [reference variable](../statements/declarations.md#reference-variables).
 
 The `ref` return value is an alias to another variable in the called method's scope. You can interpret any use of the ref return as using the variable it aliases:
 
@@ -100,26 +102,6 @@ public ref Person GetContactInformation(string fname, string lname)
 }
 ```
 
-### Reference return values - Copied
-
-Reference return values (or ref returns) are values that a method returns by reference to the caller. That is, the caller can modify the value returned by a method, and that change is reflected in the state of the object in the called method.
-
-A reference return value is defined by using the `ref` keyword:
-
-- In the method signature. For example, the following method signature indicates that the `GetCurrentPrice` method returns a <xref:System.Decimal> value by reference.
-
-```csharp
-public ref decimal GetCurrentPrice()
-```
-
-- Between the `return` token and the variable returned in a `return` statement in the method. For example:
-
-```csharp
-return ref DecimalArray[0];
-```
-
-In order for the caller to modify the object's state, the reference return value must be stored to a variable that is explicitly defined as a [reference variable](../statements/declarations.md#reference-variables).
-
 Here's a more complete ref return example, showing both the method signature and method body.
 
 :::code language="csharp" source="snippets/RefParameterModifier.cs" id="SnippetFindReturningRef":::
@@ -133,7 +115,6 @@ The following example defines a `Book` class that has two <xref:System.String> f
 When the caller stores the value returned by the `GetBookByTitle` method as a ref local, changes that the caller makes to the return value are reflected in the `BookCollection` object, as the following example shows.
 
 :::code language="csharp" source="snippets/RefParameterModifier.cs" id="Snippet5":::
-
 
 ## The `goto` statement
 

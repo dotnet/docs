@@ -10,7 +10,7 @@ config:
     ParserRegex: "^\\* (.*): (.*)$"
 
     ContentUrlRegex:
-     - "### Page URL\r\n\r\n(.*)"
+     - "### Page URL\n\n(.*)"
 
 issues:
 

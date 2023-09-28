@@ -230,7 +230,7 @@ Supported types for the keys of `Dictionary` and `SortedList` types include the 
 * `UInt32`
 * `UInt64`
 
-## System.Data namespace
+## System.Data namespacey
 
 There are no built-in converters for <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, and related types in the <xref:System.Data> namespace. Deserializing these types from untrusted input is not safe, as explained in [the security guidance](../../../framework/data/adonet/dataset-datatable-dataview/security-guidance.md#safety-with-regard-to-untrusted-input). However, you can write a custom converter to support these types. For sample custom converter code that serializes and deserializes a `DataTable`, see [RoundtripDataTable.cs](https://github.com/dotnet/docs/blob/main/docs/standard/serialization/system-text-json/snippets/how-to/csharp/RoundtripDataTable.cs).
 
@@ -239,3 +239,6 @@ There are no built-in converters for <xref:System.Data.DataSet>, <xref:System.Da
 * [System.Text.Json overview](overview.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)
+- And this!
+
+You can do it *like this* or _like that_.

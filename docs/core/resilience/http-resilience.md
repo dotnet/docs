@@ -55,7 +55,7 @@ The preceding code:
 The default configuration chains five resilience strategies in the following order (from the outermost to the innermost):
 
 | Order | Strategy | Description |
-|--|--|--|
+|--:|--|--|
 | **1** | Rate limiter | The rate limiter pipeline limits the maximum number of concurrent requests being sent to the dependency. |
 | **2** | Total request timeout | Total request timeout pipeline applies an overall timeout to the execution, ensuring that the request including hedging attempts, does not exceed the configured limit. |
 | **3** | Retry | The retry pipeline retries the request in case the dependency is slow or returns a transient error. |
@@ -90,7 +90,7 @@ The standard hedging uses a pool of circuit breakers to ensure that unhealthy en
 The default configuration chains five resilience strategies in the following order (from the outermost to the innermost):
 
 | Order | Strategy | Description |
-|--|--|--|
+|--:|--|--|
 | **1** | Rate limiter | The rate limiter pipeline limits the maximum number of concurrent requests being sent to the dependency. |
 | **2** | Total request timeout | Total request timeout pipeline applies an overall timeout to the execution, ensuring that the request including hedging attempts, does not exceed the configured limit. |
 | **3** | Retry | The retry pipeline retries the request in case the dependency is slow or returns a transient error. |
@@ -100,3 +100,7 @@ The default configuration chains five resilience strategies in the following ord
 ### Customize resilience handlers
 
 For finite control, you can customize the resilience handlers by calling the `AddResilienceHandler` extension method. This method takes a delegate that configures the `ResiliencePipelineBuilder<HttpResponseMessage>` instance that is used to create the resilience strategies.
+
+## Example usage
+
+:::image type="content" source="assets/http-get-comments-flow.png" alt-text="Example HTTP GET work flow with resilience pipeline.":::

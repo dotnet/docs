@@ -9,7 +9,6 @@ helpviewer_keywords:
   - "I/O, long paths"
   - "long paths"
   - "path formats, Windows"
-ms.topic: reference
 ---
 # File path formats on Windows systems
 

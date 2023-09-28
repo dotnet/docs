@@ -2,7 +2,6 @@
 title: Portability and Interoperability rules (code analysis)
 description: "Learn about code analysis rule Portability and Interoperability rules"
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
   - "vs.codeanalysis.Portablityrules"
   - "vs.codeanalysis.Interoperabilityrules"

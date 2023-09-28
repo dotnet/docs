@@ -2,7 +2,6 @@
 title: Design rules (code analysis)
 description: "Learn about code analysis design rules."
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.designrules
 helpviewer_keywords:

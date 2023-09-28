@@ -4,7 +4,6 @@ description: Discover how to configure .NET apps using the configuration provide
 author: IEvangelist
 ms.author: dapine
 ms.date: 06/23/2023
-ms.topic: reference
 ---
 
 # Configuration providers in .NET

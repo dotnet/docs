@@ -2,8 +2,7 @@
 title: "Runtime events"
 description: Review diagnostic events emitted by .NET runtime (CoreCLR) that can be used with ETW, LTTng, or EventPipe.
 ms.date: "11/13/2020"
-ms.topic: reference
-helpviewer_keywords: 
+helpviewer_keywords:
   - "runtime events (CoreCLR)"
   - "ETW, EventPipe runtime events (CoreCLR)"
 ---

@@ -2,7 +2,6 @@
 title: "Garbage collection runtime events"
 description: Learn about the .NET runtime events that collect diagnostic information specific to .NET garbage collector.
 ms.date: "11/13/2020"
-ms.topic: reference
 helpviewer_keywords:
   - "GC events"
   - "garbage collection events (CoreCLR)"

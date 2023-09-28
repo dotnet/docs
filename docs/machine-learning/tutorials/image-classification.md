@@ -321,7 +321,7 @@ An ML.NET model pipeline is a chain of estimators. No execution happens during p
 
     [!code-csharp[SaveModel](./snippets/image-classification/csharp/Program.cs#ReturnModel)]
 
-## Run the application
+## Run the application!
 
 1. Add the call to `GenerateModel` after the creation of the <xref:Microsoft.ML.MLContext> class:
 

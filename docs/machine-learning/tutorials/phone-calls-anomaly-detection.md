@@ -4,7 +4,6 @@ description: Learn how to build an anomaly detection application for time series
 ms.date: 07/28/2021
 ms.topic: tutorial
 ms.custom: mvc
-recommendations: false
 #Customer intent: As a developer, I want to use ML.NET in a time-series anomaly detection for number of phone calls so that I can analyze the data for anomaly points to take the appropriate action.
 ---
 # Tutorial: Detect anomalies in time series with ML.NET

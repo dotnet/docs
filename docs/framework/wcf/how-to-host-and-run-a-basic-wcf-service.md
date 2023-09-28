@@ -9,7 +9,6 @@ helpviewer_keywords:
   - "WCF services [WCF]"
   - "WCF services [WCF], running"
 ms.assetid: 31774d36-923b-4e2d-812e-aa190127266f
-recommendations: false
 ---
 # Tutorial: Host and run a basic Windows Communication Foundation service
 
@@ -72,7 +71,7 @@ To host the service, you add code to do the following steps:
 3. Create a service endpoint.
 4. Enable metadata exchange.
 5. Open the service host to listen for incoming messages.
-  
+
 Make the following changes to the code:
 
 1. Open the **Program.cs** or **Module1.vb** file in the **GettingStartedHost** project and replace its code with the following code:

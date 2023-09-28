@@ -7,7 +7,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.custom: "vs-dotnet,contperf-fy21q1"
-recommendations: false
 ---
 # Tutorial: Create a .NET class library using Visual Studio
 

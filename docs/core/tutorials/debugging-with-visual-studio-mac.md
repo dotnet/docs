@@ -2,7 +2,6 @@
 title: Debug a .NET console application using Visual Studio for Mac
 description: Learn how to debug a .NET console app using Visual Studio Mac.
 ms.date: 01/28/2023
-recommendations: false
 ---
 # Tutorial: Debug a .NET console application using Visual Studio for Mac
 

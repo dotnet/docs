@@ -6,7 +6,6 @@ author: adegeo
 ms.date: 02/03/2021
 ms.topic: tutorial
 ms.author: adegeo
-recommendations: false
 ---
 
 # Tutorial: Create an item template

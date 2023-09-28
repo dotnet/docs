@@ -13,7 +13,7 @@ Resiliency is the ability of an app to recover from failures and continue to fun
 - [Microsoft.Extensions.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Resilience): This NuGet package provides mechanisms to harden apps against transient failures.
 - [Microsoft.Extensions.Http.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience): This NuGet package provides resilience mechanisms specifically for the <xref:System.Net.Http.HttpClient>.
 
-These two NuGet packages are built on top of _Polly_, which is a very popular open-source project. Polly is a .NET resilience and transient-fault-handling library that allows developers to express strategies such as Retry, Circuit Breaker, Timeout, Bulkhead Isolation, Rate-limiting and Fallback in a fluent and thread-safe manner. For more information, see [Polly](https://github.com/App-vNext/Polly).
+These two NuGet packages are built on top of [Polly](https://github.com/dotnet/docs/pull/37270), which is a very popular open-source project. Polly is a .NET resilience and transient fault-handling library that allows developers to express strategies such as Retry, Circuit Breaker, Timeout, Bulkhead Isolation, Rate-limiting and Fallback in a fluent and thread-safe manner.
 
 > [!IMPORTANT]
 > The [Microsoft.Extensions.Http.Polly](https://www.nuget.org/packages/Microsoft.Extensions.Http.Polly) NuGet package is deprecated. Use either of the aforementioned packages instead.

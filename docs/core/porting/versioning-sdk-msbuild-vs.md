@@ -39,7 +39,7 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 | 7.0.3xx          | 17.6               | May '23      | Jan '25   |
 | 7.0.4xx          | 17.7               | Aug '23      | Nov '23   |
 | 8.0.1xx          | 17.8               | Nov '23      | TBD       |
-| 8.0.2xx          | 17.9<sup>3</sup>   | Feb '23      | TBD       |
+| 8.0.2xx          | 17.9<sup>3</sup>   | Feb '24      | TBD       |
 
 > [!NOTE]
 > Targeting `net6.0` is officially supported in Visual Studio 17.0+ only.

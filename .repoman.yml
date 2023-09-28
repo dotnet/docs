@@ -1,4 +1,4 @@
-revision: 2
+revision: 3
 schema-version: 1
 owner-ms-alias: adegeo
 
@@ -9,6 +9,8 @@ config:
 
     ParserRegex: "^\\* (.*): (.*)$"
 
+    ContentUrlRegex:
+     - "### Page URL\r\n\r\n(.*)"
 
 issues:
 
@@ -61,14 +63,11 @@ issues:
       pass:
         - labels-add: ["dependencies"]
 
-    # If breaking change issue metadata, add labels
     - check:
-        - type: metadata-comment
-          name: "issue type"
-          value: "(?i)breaking-change$"
+        - type: metadata-exists
+  
       pass:
-        - labels-add: ["breaking-change", "doc-idea"]
-        - projects-add: [135]
+        - prod_tech_labels: true
 
   reopened:
 

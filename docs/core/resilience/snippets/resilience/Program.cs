@@ -8,7 +8,7 @@ var services = new ServiceCollection();
 
 const string key = "Retry-CircuitBreaker-Timeout";
 
-services.AddResiliencePipeline(key, builder =>
+services.AddResiliencePipeline(key, static builder =>
 {
     // See: https://www.pollydocs.org/strategies/retry.html
     builder.AddRetry(new RetryStrategyOptions());
@@ -21,7 +21,6 @@ services.AddResiliencePipeline(key, builder =>
 });
 
 services.AddResilienceEnrichment();
-services.AddExceptionSummarizer(); // TODO: remove once bug is fixed.
 
 using ServiceProvider provider = services.BuildServiceProvider();
 

@@ -3,12 +3,12 @@ title: Resilience-patterns for HTTP apps
 description: 
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/28/2023
+ms.date: 09/29/2023
 ---
 
 # Resilience-patterns for HTTP apps
 
-Building robust HTTP apps that can recover from transient fault errors is a common requirement. To help build resilient HTTP apps, the [Microsoft.Extensions.Http.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience) NuGet package provides resilience mechanisms specifically for the <xref:System.Net.Http.HttpClient>. This NuGet package is built on top of _Polly_, which is a very popular open-source project. For more information, see [Polly](https://github.com/App-vNext/Polly).
+Building robust HTTP apps that can recover from transient fault errors is a common requirement. To help build resilient HTTP apps, the [Microsoft.Extensions.Http.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience) NuGet package provides resilience mechanisms specifically for the <xref:System.Net.Http.HttpClient>. This NuGet package is built on top of _Polly_, which is a popular open-source project. For more information, see [Polly](https://github.com/App-vNext/Polly).
 
 ## Get started
 
@@ -30,7 +30,7 @@ dotnet add package Microsoft.Extensions.Http.Resilience --version 8.0.0
 
 ## Add resilience handlers to an HTTP client
 
-To add resilience to an <xref:System.Net.Http.HttpClient>, you chain a call on the <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> type which is returned from calling any of the available <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> methods. There are several resilience-centric extensions available, some are standard employing various industry best practices, and others are more customizable.
+To add resilience to an <xref:System.Net.Http.HttpClient>, you chain a call on the <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> type that is returned from calling any of the available <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> methods. There are several resilience-centric extensions available, some are standard employing various industry best practices, and others are more customizable.
 
 ### The standard resilience handler
 
@@ -45,9 +45,10 @@ The standard resilience handler uses multiple resilience strategies with default
 
 var services = new ServiceCollection();
 
-services.AddHttpClient<ExampleClient>(client =>
+var builder = services.AddHttpClient<ExampleClient>(
+    configureClient: static client =>
     {
-        client.BaseAddress = new Uri("https://example.com");
+        client.BaseAddress = new("https://jsonplaceholder.typicode.com");
     })
     .AddStandardResilienceHandler();
 ```
@@ -55,8 +56,9 @@ services.AddHttpClient<ExampleClient>(client =>
 The preceding code:
 
 - Adds an <xref:System.Net.Http.HttpClient> for the `ExampleClient` type to the service container.
-- Configures the <xref:System.Net.Http.HttpClient> to use `"https://example.com"` as the base address.
-- Adds a standard resilience handler to the <xref:System.Net.Http.HttpClient>.
+- Configures the <xref:System.Net.Http.HttpClient> to use `"https://jsonplaceholder.typicode.com"` as the base address.
+- Adds the standard resilience handler to the <xref:System.Net.Http.HttpClient>.
+- Declares a `builder` (of type `IHttpStandardResilienceHandlerBuilder`), which is used to configure the standard resilience handler. There are extension methods to configure the standard resilience handler.
 
 #### Standard resilience handler defaults
 
@@ -65,14 +67,14 @@ The default configuration chains five resilience strategies in the following ord
 | Order | Strategy | Description |
 |--:|--|--|
 | **1** | Rate limiter | The rate limiter pipeline limits the maximum number of concurrent requests being sent to the dependency. |
-| **2** | Total request timeout | The total request timeout pipeline applies an overall timeout to the execution, ensuring that the request, including retry attempts, does not exceed the configured limit. |
+| **2** | Total request timeout | The total request timeout pipeline applies an overall timeout to the execution, ensuring that the request, including retry attempts, doesn't exceed the configured limit. |
 | **3** | Retry | The retry pipeline retries the request in case the dependency is slow or returns a transient error. |
 | **4** | Circuit breaker | The circuit breaker blocks the execution if too many direct failures or timeouts are detected. |
 | **5** | Attempt timeout | The attempt timeout pipeline limits each request attempt duration and throws if it's exceeded. |
 
 ### The standard hedging handler
 
-The standard hedging handler wraps the execution of the request with a standard hedging mechanism. The standard hedging handler is added by calling the `AddStandardHedgingHandler` extension method.
+The standard hedging handler wraps the execution of the request with a standard hedging mechanism. Hedging retries slow requests in parallel. The standard hedging handler is added by calling the `AddStandardHedgingHandler` extension method.
 
 ```csharp
 // A service collection is manually instantiated for this example.
@@ -83,11 +85,12 @@ The standard hedging handler wraps the execution of the request with a standard 
 
 var services = new ServiceCollection();
 
-IHttpClientBuilder builder = services.AddHttpClient<ExampleClient>(
+var builder = services.AddHttpClient<ExampleClient>(
     configureClient: static client =>
     {
         client.BaseAddress = new("https://jsonplaceholder.typicode.com");
-    });
+    })
+    .AddStandardHedgingHandler();
 ```
 
 The preceding code:
@@ -95,6 +98,7 @@ The preceding code:
 - Adds an <xref:System.Net.Http.HttpClient> for the `ExampleClient` type to the service container.
 - Configures the <xref:System.Net.Http.HttpClient> to use `"https://jsonplaceholder.typicode.com"` as the base address.
 - Adds the standard hedging resilience handler to the <xref:System.Net.Http.HttpClient>.
+- Declares a `builder` (of type `IStandardHedgingHandlerBuilder`), which is used to configure the standard hedging resilience handler. There are extension methods to configure the standard hedging resilience handler.
 
 The `ExampleClient` is defined as follows:
 
@@ -111,7 +115,7 @@ The `Comment` type is defined as follows:
 
 #### Standard hedging handler defaults
 
-The standard hedging uses a pool of circuit breakers to ensure that unhealthy endpoints are not hedged against. By default, the selection from the pool is based on the URL authority (scheme + host + port).
+The standard hedging uses a pool of circuit breakers to ensure that unhealthy endpoints aren't hedged against. By default, the selection from the pool is based on the URL authority (scheme + host + port).
 
 > [!TIP]
 > It's recommended that you configure the way the strategies are selected by calling `StandardHedgingHandlerBuilderExtensions.SelectPipelineByAuthority`.
@@ -122,12 +126,12 @@ To use the standard hedging handler, call `AddStandardHedgingHandler` extension 
 builder.AddStandardHedgingHandler();
 ```
 
-The preceding code, adds the standard hedging handler to the <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder>. The default configuration chains five resilience strategies in the following order (from the outermost to the innermost):
+The preceding code adds the standard hedging handler to the <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder>. The default configuration chains five resilience strategies in the following order (from the outermost to the innermost):
 
 | Order | Strategy | Description |
 |--:|--|--|
-| **1** | Total request timeout | The total request timeout pipeline applies an overall timeout to the execution, ensuring that the request, including hedging attempts, does not exceed the configured limit. |
-| **2** | Hedging | The hedging strategy executes the requests against multiple endpoints in case the dependency is slow or returns a transient error. |
+| **1** | Total request timeout | The total request timeout pipeline applies an overall timeout to the execution, ensuring that the request, including hedging attempts, doesn't exceed the configured limit. |
+| **2** | Hedging | The hedging strategy executes the requests against multiple endpoints in case the dependency is slow or returns a transient error. Routing is options, by default it just hedges the URL provided by the original <xref:System.Net.Http.HttpRequestMessage>. |
 | **3** | Rate limiter (per endpoint) | The rate limiter pipeline limits the maximum number of concurrent requests being sent to the dependency. |
 | **4** | Circuit breaker (per endpoint) | The circuit breaker blocks the execution if too many direct failures or timeouts are detected. |
 | **5** | Attempt timeout (per endpoint) | The attempt timeout pipeline limits each request attempt duration and throws if it's exceeded. |
@@ -142,7 +146,7 @@ To configure a named resilience handler, call the `AddResilienceHandler` extensi
 builder.AddResilienceHandler("CustomPipeline", static builder =>
 {
     // See: https://www.pollydocs.org/strategies/retry.html
-    builder.AddRetry(new RetryStrategyOptions<HttpResponseMessage>
+    builder.AddRetry(new HttpRetryStrategyOptions
     {
         BackoffType = DelayBackoffType.Exponential,
         MaxRetryAttempts = 5,
@@ -150,7 +154,7 @@ builder.AddResilienceHandler("CustomPipeline", static builder =>
     });
 
     // See: https://www.pollydocs.org/strategies/circuit-breaker.html
-    var options = new CircuitBreakerStrategyOptions<HttpResponseMessage>()
+    builder.AddCircuitBreaker(new HttpCircuitBreakerStrategyOptions
     {
         SamplingDuration = TimeSpan.FromSeconds(10),
         FailureRatio = 0.2,
@@ -164,8 +168,7 @@ builder.AddResilienceHandler("CustomPipeline", static builder =>
                     HttpStatusCode.RequestTimeout or HttpStatusCode.TooManyRequests
             });
         }
-    };
-    builder.AddCircuitBreaker(options);
+    });
 
     // See: https://www.pollydocs.org/strategies/timeout.html
     builder.AddTimeout(TimeSpan.FromSeconds(5));
@@ -183,7 +186,7 @@ There are many options available for each of the resilience strategies. For more
 
 ## Example usage
 
-You app relies on [dependency injection](../extensions/dependency-injection.md) to resolve the `ExampleClient` and its corresponding <xref:System.Net.Http.HttpClient> but, for this example, since the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollection> was manually instantiated, this code builds the <xref:System.IServiceProvider> and resolves the `ExampleClient` from it.
+Your app relies on [dependency injection](../extensions/dependency-injection.md) to resolve the `ExampleClient` and its corresponding <xref:System.Net.Http.HttpClient> but, for this example, since the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollection> was manually instantiated, this code builds the <xref:System.IServiceProvider> and resolves the `ExampleClient` from it.
 
 ```csharp
 var provider = services.BuildServiceProvider();

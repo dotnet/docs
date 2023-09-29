@@ -1,8 +1,7 @@
 ﻿using System.Net;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Http.Resilience;
 using Polly;
-using Polly.CircuitBreaker;
-using Polly.Retry;
 
 var services = new ServiceCollection();
 
@@ -14,7 +13,7 @@ var builder = services.AddHttpClient<ExampleClient>(
 
 builder.AddStandardResilienceHandler(options =>
 {
-    options.RetryOptions.BackoffType = DelayBackoffType.Exponential;
+    options.RetryOptions.BackoffType = DelayBackoffType.Linear;
 });
 
 builder.AddResilienceHandler("CustomPipeline", static builder =>
@@ -28,7 +27,7 @@ builder.AddResilienceHandler("CustomPipeline", static builder =>
     });
 
     // See: https://www.pollydocs.org/strategies/circuit-breaker.html
-    var options = new HttpCircuitBreakerStrategyOptions()
+    builder.AddCircuitBreaker(new HttpCircuitBreakerStrategyOptions
     {
         SamplingDuration = TimeSpan.FromSeconds(10),
         FailureRatio = 0.2,
@@ -41,16 +40,13 @@ builder.AddResilienceHandler("CustomPipeline", static builder =>
                     HttpStatusCode.RequestTimeout or HttpStatusCode.TooManyRequests
             });
         }
-    };
-    builder.AddCircuitBreaker(options);
+    });
 
     // See: https://www.pollydocs.org/strategies/timeout.html
     builder.AddTimeout(TimeSpan.FromSeconds(5));
 });
 
 builder.AddStandardHedgingHandler();
-
-// services.ConfigureOptions<RetryStrategyOptions<HttpResponseMessage>>(/**/);
 
 var provider = services.BuildServiceProvider();
 

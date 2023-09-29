@@ -48,7 +48,7 @@ The following list identifies practices to avoid when throwing exceptions:
 
 Methods declared with the `async` modifier have some special considerations when it comes to exceptions. Exceptions thrown in an `async` method are stored in the returned task and don't emerge until, for example, the task is awaited. For more information about stored exceptions, see [Asynchronous exceptions](../../asynchronous-programming/index.md#asynchronous-exceptions).
 
-We recommend that you validate arguments and throw any corresponding arguments, such as <xref:System.ArgumentException>, <xref:System.ArgumentNullException>, and <xref:System.ObjectDisposedException>, before entering the asynchronous parts of your methods. That is, these validation exceptions should emerge synchronously before the work starts. The following code snippet shows an example where, if the exceptions are thrown, the <xref:System.ArgumentException> exceptions would emerge synchronously, whereas the <xref:System.InvalidOperationException> would be stored in the returned task.
+We recommend that you validate arguments and throw any corresponding exceptions, such as <xref:System.ArgumentException> and <xref:System.ArgumentNullException>, before entering the asynchronous parts of your methods. That is, these validation exceptions should emerge synchronously before the work starts. The following code snippet shows an example where, if the exceptions are thrown, the <xref:System.ArgumentException> exceptions would emerge synchronously, whereas the <xref:System.InvalidOperationException> would be stored in the returned task.
 
 :::code language="csharp" source="snippets/exceptions/TaskExceptions.cs" ID="TaskExceptions":::
 

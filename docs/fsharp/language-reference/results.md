@@ -62,14 +62,14 @@ let test() =
     let req1 = { Name = "Phillip"; Email = "phillip@contoso.biz" }
     let res1 = validateRequest (Ok req1)
     match res1 with
-    | Ok req -> printfn $"My request was valid! Name: {req.Name} Email {req.Email}"  
+    | Ok req -> printfn $"My request was valid! Name: {req.Name} Email {req.Email}"
     | Error e -> printfn $"Error: {e}"
     // Prints: "My request was valid!  Name: Phillip Email: phillip@consoto.biz"
 
     let req2 = { Name = "Phillip"; Email = "phillip@bananas.com" }
     let res2 = validateRequest (Ok req2)
     match res2 with
-    | Ok req -> printfn $"My request was valid! Name: {req.Name} Email {req.Email}"  
+    | Ok req -> printfn $"My request was valid! Name: {req.Name} Email {req.Email}"
     | Error e -> printfn $"Error: {e}"
     // Prints: "Error: No email from bananas.com is allowed."
 

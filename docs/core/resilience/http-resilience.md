@@ -28,9 +28,13 @@ dotnet add package Microsoft.Extensions.Http.Resilience --version 8.0.0
 
 ---
 
+For more information, see [dotnet add package](../tools/dotnet-add-package.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
+
 ## Add resilience handlers to an HTTP client
 
 To add resilience to an <xref:System.Net.Http.HttpClient>, you chain a call on the <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> type that is returned from calling any of the available <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> methods. There are several resilience-centric extensions available, some are standard employing various industry best practices, and others are more customizable.
+
+While the following examples use the `AddHttpClient` extension method, from the [Microsoft.Extensions.Http](https://www.nuget.org/packages/Microsoft.Extensions.Http).
 
 ### The standard resilience handler
 

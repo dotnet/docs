@@ -217,3 +217,12 @@ Mermaid diagram generated from the following code:
 Imagine a situation where the network was to go down, or the server was to become unresponsive. The following diagram shows how the resilience strategies would handle the situation, given the `ExampleClient` and the `GetCommentsAsync` method:
 
 :::image type="content" source="assets/http-get-comments-flow.png" lightbox="assets/http-get-comments-flow.png" alt-text="Example HTTP GET work flow with resilience pipeline.":::
+
+The preceding diagram depicts:
+
+- The `ExampleClient` sends an HTTP GET request to the `"/comments"` endpoint.
+- The <xref:System.Net.Http.HttpResponseMessage> is evaluated:
+  - If the response is successful (HTTP 200), the response is returned.
+  - If the response is unsuccessful (HTTP non-200), the resilience pipeline employs the configured resilience strategies.
+
+While this is a simple example, it demonstrates how the resilience strategies can be used to handle transient errors. For more information, see [Polly docs: Strategies](https://www.pollydocs.org/strategies).

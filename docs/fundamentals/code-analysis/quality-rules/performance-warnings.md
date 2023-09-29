@@ -2,7 +2,6 @@
 title: Performance rules (code analysis)
 description: "Learn about code analysis performance rules."
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.performancerules
 helpviewer_keywords:

@@ -8,7 +8,6 @@ helpviewer_keywords:
   - "Pascal-case names [.NET Framework]"
   - "case sensitivity, capitalization conventions"
   - "names [.NET Framework], capitalization"
-ms.topic: reference
 ---
 # Capitalization Conventions
 

@@ -2,7 +2,6 @@
 title: Code quality rules overview
 description: Learn about all of the available code quality rules for code analysis.
 ms.date: 09/01/2020
-ms.topic: reference
 author: mikadumont
 ms.author: midumont
 ---

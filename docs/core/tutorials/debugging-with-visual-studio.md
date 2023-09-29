@@ -7,7 +7,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.custom: "vs-dotnet"
-recommendations: false
 ---
 # Tutorial: Debug a .NET console application using Visual Studio
 

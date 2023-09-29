@@ -5,7 +5,6 @@ author: adegeo
 ms.date: 09/30/2022
 ms.topic: tutorial
 ms.author: adegeo
-recommendations: false
 ---
 
 # Tutorial: Create a project template

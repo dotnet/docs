@@ -6,7 +6,6 @@ ms.custom: devx-track-dotnet, vscode-azure-extension-update-completed, engagemen
 ms.date: 1/26/2023
 author: alexwolfmsft
 ms.author: alexwolf
-recommendations: false
 ---
 
 # Configure Visual Studio Code for Azure development

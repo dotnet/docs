@@ -2,7 +2,6 @@
 title: Code-style language and unnecessary code rules
 description: Learn about the different code-style rules for using C# and Visual Basic language constructs and for finding unnecessary code.
 ms.date: 07/22/2023
-ms.topic: reference
 helpviewer_keywords:
 - language code style rules [EditorConfig]
 - language rules

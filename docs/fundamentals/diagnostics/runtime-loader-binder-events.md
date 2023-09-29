@@ -2,7 +2,6 @@
 title: "Loader and binder runtime events"
 description: Learn about the .NET runtime events that collect diagnostic information specific to loader and binder ETW events, which collect information about the assembly loader and binder.
 ms.date: "11/13/2020"
-ms.topic: reference
 helpviewer_keywords:
   - "Assembly Loader events (CoreCLR)"
   - "Assembly Binder events (CoreCLR)"

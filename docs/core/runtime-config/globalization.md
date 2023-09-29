@@ -2,7 +2,6 @@
 title: Globalization config settings
 description: Learn about run-time settings that configure globalization aspects of a .NET Core app, for example, how it parses Japanese dates.
 ms.date: 05/18/2020
-ms.topic: reference
 ---
 # Runtime configuration options for globalization
 

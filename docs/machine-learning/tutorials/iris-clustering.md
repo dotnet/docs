@@ -5,7 +5,6 @@ author: pkulikov
 ms.date: 11/11/2021
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0516
-recommendations: false
 #Customer intent: As a developer, I want to use ML.NET so that I can build a k-means clustering model to categorize iris flowers based on its parameters.
 ---
 # Tutorial: Categorize iris flowers using k-means clustering with ML.NET

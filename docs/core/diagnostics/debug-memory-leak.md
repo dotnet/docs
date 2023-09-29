@@ -3,7 +3,6 @@ title: Debug a memory leak tutorial
 description: Learn how to debug a memory leak in .NET.
 ms.topic: tutorial
 ms.date: 09/11/2023
-recommendations: false
 ---
 
 # Debug a memory leak in .NET

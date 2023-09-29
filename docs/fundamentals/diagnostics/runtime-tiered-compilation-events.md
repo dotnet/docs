@@ -2,7 +2,6 @@
 title: "Tiered compilation runtime events"
 description: Learn about the .NET runtime tiered compilation events that collect diagnostic information about tiered compilation in .NET Core.
 ms.date: "9/15/2023"
-ms.topic: reference
 helpviewer_keywords:
   - "Tiered compilation events (CoreCLR)"
   - "ETW, tiered compilation events (CoreCLR)"

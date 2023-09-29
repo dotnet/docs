@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "GC events"
   - "garbage collection events [.NET Framework]"
   - "ETW, garbage collection events (CLR)"
-ms.topic: reference
 ---
 # Garbage Collection ETW Events
 
@@ -31,7 +30,7 @@ This category consists of the following events:
 - [GCCreateConcurrentThread_V1 Event](#gccreateconcurrentthread_v1-event)
 - [GCTerminateConcurrentThread_V1 Event](#gcterminateconcurrentthread_v1-event)
 
-## GCStart_V1 Event  
+## GCStart_V1 Event
 
 The following table shows the keyword and level. For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).
 
@@ -109,7 +108,7 @@ The following table shows the event data:
 |SinkBlockCount|win:UInt32|The number of synchronization blocks in use.|
 |GCHandleCount|win:UInt32|The number of garbage collection handles in use.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
-  
+
 ## GCHeapStats_V2 Event
 
 The following table shows the keyword and level:
@@ -144,7 +143,7 @@ The following table shows the event data:
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
 |GenerationSize4|win:UInt64|The size, in bytes, of the pinned object heap.|
 |TotalPromotedSize4|win:UInt64|The number of bytes that survived in the pinned object heap after the last collection.|
-  
+
 ## GCCreateSegment_V1 Event
 
 The following table shows the keyword and level:

@@ -143,6 +143,7 @@ For finite control, you can customize the resilience handlers by calling the `Ad
 To configure a named resilience handler, call the `AddResilienceHandler` extension method with the name of the handler. The following example configures a named resilience handler called `CustomResilienceHandler`.
 
 ```csharp
+// The builder is of type, IHttpClientBuilder.
 builder.AddResilienceHandler("CustomPipeline", static builder =>
 {
     // See: https://www.pollydocs.org/strategies/retry.html

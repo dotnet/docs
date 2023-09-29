@@ -44,37 +44,13 @@ The following list identifies practices to avoid when throwing exceptions:
 - Don't throw <xref:System.Exception?displayProperty=nameWithType>, <xref:System.SystemException?displayProperty=nameWithType>, <xref:System.NullReferenceException?displayProperty=nameWithType>, or <xref:System.IndexOutOfRangeException?displayProperty=nameWithType> intentionally from your own source code.
 - Don't create exceptions that can be thrown in debug mode but not release mode. To identify run-time errors during the development phase, use Debug Assert instead.
 
-## Throw exceptions from task-returning methods
+## Exceptions in task-returning methods
 
-Methods that return <xref:System.Threading.Tasks.Task%601> objects have some special considerations when it comes to exceptions. Exceptions that are thrown outside of the async state machine, that is, before `await` is called, emerge synchronously from the method, just like a non task-returning method. However, exceptions that are thrown within the async state machine are stored in the task and don't emerge until, for example, the task is awaited. For more information about stored exceptions, see [Asynchronous exceptions](../../asynchronous-programming/index.md#asynchronous-exceptions).
+Methods declared with the `async` modifier have some special considerations when it comes to exceptions. Exceptions thrown in an `async` method are stored in the returned task and don't emerge until, for example, the task is awaited. For more information about stored exceptions, see [Asynchronous exceptions](../../asynchronous-programming/index.md#asynchronous-exceptions).
 
-We recommend that you validate arguments and throw any corresponding arguments, such as <xref:System.ArgumentException>, <xref:System.ArgumentNullException>, and <xref:System.ObjectDisposedException>, before entering the asynchronous parts of your methods. That is, these validation exceptions should emerge synchronously before the work starts. The following code snippet shows an example where the <xref:System.ArgumentException> exceptions emerge synchronously, whereas the <xref:System.InvalidOperationException> is stored in the returned task.
+We recommend that you validate arguments and throw any corresponding arguments, such as <xref:System.ArgumentException>, <xref:System.ArgumentNullException>, and <xref:System.ObjectDisposedException>, before entering the asynchronous parts of your methods. That is, these validation exceptions should emerge synchronously before the work starts. The following code snippet shows an example where, if the exceptions are thrown, the <xref:System.ArgumentException> exceptions would emerge synchronously, whereas the <xref:System.InvalidOperationException> would be stored in the returned task.
 
-```csharp
-public static Task<Toast> ToastBreadAsync(int slices, int toastTime)
-{
-    if (slices < 1 || slices > 4)
-        throw new ArgumentException("You must specify between 1 and 4 slices of bread.", nameof(slices));
-    if (toastTime < 1)
-        throw new ArgumentException("Toast time is too short.", nameof(toastTime));
-
-    return ToastBreadAsyncCore(slices, toastTime);
-}
-
-private static async Task<Toast> ToastBreadAsyncCore(int slices, int time)
-{
-    for (int slice = 0; slice < slices; slice++)
-    {
-        Console.WriteLine("Putting a slice of bread in the toaster");
-    }
-    // Start toasting.
-    await Task.Delay(time);
-    if (time > 2000)
-        throw new InvalidOperationException("The toaster is on fire!");
-
-    return new Toast();
-}
-```
+:::code language="csharp" source="snippets/exceptions/TaskExceptions.cs" ID="TaskExceptions":::
 
 ## Define exception classes
 

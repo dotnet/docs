@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using exceptions;
 
 namespace Exceptions
 {
@@ -7,6 +8,8 @@ namespace Exceptions
     {
         static void Main(string[] args)
         {
+            var toast = KitchenHelpers.ToastBreadAsync(2, 100).Result;
+
             ExceptionTest.Main();
             TestThrowCatch();
             CatchOrder.Main();

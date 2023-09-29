@@ -203,7 +203,7 @@ When code running asynchronously throws an exception, that exception is stored i
 The most common scenario for a faulted task is that the `Exception` property contains exactly one exception. When code `awaits` a faulted task, the first exception in the <xref:System.AggregateException.InnerExceptions?displayProperty=nameWithType> collection is rethrown. That's why the output from this example shows an `InvalidOperationException` instead of an `AggregateException`. Extracting the first inner exception makes working with asynchronous methods as similar as possible to working with their synchronous counterparts. You can examine the `Exception` property in your code when your scenario may generate multiple exceptions.
 
 > [!TIP]
-> We recommend that any argument validation exceptions emerge *synchronously* from task-returning methods. For more information and an example, see [Throw exceptions from task-returning methods](../fundamentals/exceptions/creating-and-throwing-exceptions.md#throw-exceptions-from-task-returning-methods).
+> We recommend that any argument validation exceptions emerge *synchronously* from task-returning methods. For more information and an example of how to do it, see [Exceptions in task-returning methods](../fundamentals/exceptions/creating-and-throwing-exceptions.md#exceptions-in-task-returning-methods).
 
 Before going on, comment out these two lines in your `ToastBreadAsync` method. You don't want to start another fire:
 

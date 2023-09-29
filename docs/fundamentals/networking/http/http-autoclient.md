@@ -3,10 +3,13 @@ title: Use the REST API HTTP client generator
 description: Learn how to generate HttpClient-dependent code implementations of AutoClient decorated interfaces.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/06/2023
+ms.date: 09/29/2023
 ---
 
 # Use the REST API HTTP client generator
+
+> [!NOTE]
+> This API is experimental. It might change in subsequent versions of the library, and backwards compatibility is not guaranteed.
 
 The <xref:System.Net.Http.HttpClient> is a great way to consume REST APIs, but it's not without its challenges. One of the challenges is the amount of boilerplate code you need to write to consume the API. In this article, you learn how to use the [Microsoft.Extensions.Http.AutoClient](https://www.nuget.org/packages/Microsoft.Extensions.Http.AutoClient) NuGet package to decorate an interface and generate an HTTP client dependency. The AutoClient's underlying source generator generates the implementation of your interface, along with extension methods to register it into the dependency injection container. Additionally, the AutoClient generates telemetry for each HTTP request, which is sent with <xref:Microsoft.Extensions.Http.Telemetry>.
 

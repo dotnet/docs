@@ -76,6 +76,8 @@ The default configuration chains five resilience strategies in the following ord
 
 The standard hedging handler wraps the execution of the request with a standard hedging mechanism. Hedging retries slow requests in parallel. The standard hedging handler is added by calling the `AddStandardHedgingHandler` extension method.
 
+To use the standard hedging handler, call `AddStandardHedgingHandler` extension method. The following example configures the `ExampleClient` to use the standard hedging handler.
+
 ```csharp
 // A service collection is manually instantiated for this example.
 // If you're using a generic host, you'll instead use its service collection:
@@ -119,12 +121,6 @@ The standard hedging uses a pool of circuit breakers to ensure that unhealthy en
 
 > [!TIP]
 > It's recommended that you configure the way the strategies are selected by calling `StandardHedgingHandlerBuilderExtensions.SelectPipelineByAuthority`.
-
-To use the standard hedging handler, call `AddStandardHedgingHandler` extension method. The following example configures the `ExampleClient` to use the standard hedging handler.
-
-```csharp
-builder.AddStandardHedgingHandler();
-```
 
 The preceding code adds the standard hedging handler to the <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder>. The default configuration chains five resilience strategies in the following order (from the outermost to the innermost):
 
@@ -214,6 +210,6 @@ Mermaid diagram generated from the following code:
 
 -->
 
-Imagine a situation where the network was to go down, or the server was to become unresponsive. The following diagram shows how the resilience strategies would handle the situation:
+Imagine a situation where the network was to go down, or the server was to become unresponsive. The following diagram shows how the resilience strategies would handle the situation, given the `ExampleClient` and the `GetCommentsAsync` method:
 
 :::image type="content" source="assets/http-get-comments-flow.png" lightbox="assets/http-get-comments-flow.png" alt-text="Example HTTP GET work flow with resilience pipeline.":::

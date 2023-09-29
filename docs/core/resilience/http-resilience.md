@@ -65,10 +65,10 @@ The default configuration chains five resilience strategies in the following ord
 | Order | Strategy | Description |
 |--:|--|--|
 | **1** | Rate limiter | The rate limiter pipeline limits the maximum number of concurrent requests being sent to the dependency. |
-| **2** | Total request timeout | Total request timeout pipeline applies an overall timeout to the execution, ensuring that the request including hedging attempts, does not exceed the configured limit. |
+| **2** | Total request timeout | The total request timeout pipeline applies an overall timeout to the execution, ensuring that the request, including retry attempts, does not exceed the configured limit. |
 | **3** | Retry | The retry pipeline retries the request in case the dependency is slow or returns a transient error. |
 | **4** | Circuit breaker | The circuit breaker blocks the execution if too many direct failures or timeouts are detected. |
-| **5** | Attempt timeout | The attempt timeout pipeline limits each request attempt duration and throws if its exceeded. |
+| **5** | Attempt timeout | The attempt timeout pipeline limits each request attempt duration and throws if it's exceeded. |
 
 ### The standard hedging handler
 
@@ -126,11 +126,11 @@ The preceding code, adds the standard hedging handler to the <xref:Microsoft.Ext
 
 | Order | Strategy | Description |
 |--:|--|--|
-| **1** | Total request timeout | Total request timeout pipeline applies an overall timeout to the execution, ensuring that the request including hedging attempts, does not exceed the configured limit. |
+| **1** | Total request timeout | The total request timeout pipeline applies an overall timeout to the execution, ensuring that the request, including hedging attempts, does not exceed the configured limit. |
 | **2** | Hedging | The hedging strategy executes the requests against multiple endpoints in case the dependency is slow or returns a transient error. |
 | **3** | Rate limiter (per endpoint) | The rate limiter pipeline limits the maximum number of concurrent requests being sent to the dependency. |
 | **4** | Circuit breaker (per endpoint) | The circuit breaker blocks the execution if too many direct failures or timeouts are detected. |
-| **5** | Attempt timeout (per endpoint) | The attempt timeout pipeline limits each request attempt duration and throws if its exceeded. |
+| **5** | Attempt timeout (per endpoint) | The attempt timeout pipeline limits each request attempt duration and throws if it's exceeded. |
 
 ### Customize resilience handlers
 
@@ -174,16 +174,16 @@ builder.AddResilienceHandler("CustomPipeline", static builder =>
 
 The preceding code:
 
-- Adds a resilience handler with the `"CustomPipeline"` as the `pipelineName` to the service container.
+- Adds a resilience handler with the name `"CustomPipeline"` as the `pipelineName` to the service container.
 - Adds a retry strategy with exponential backoff, five retries, and jitter preference to the resilience builder.
-- Adds a circuit breaker strategy with a sampling duration of 10 seconds, a failure ratio of 0.2 (20%), a minimum throughput of three, and a predicate that handles `RequestTimeout` and `TooManyRequests` status codes to the resilience builder.
+- Adds a circuit breaker strategy with a sampling duration of 10 seconds, a failure ratio of 0.2 (20%), a minimum throughput of three, and a predicate that handles `RequestTimeout` and `TooManyRequests` HTTP status codes to the resilience builder.
 - Adds a timeout strategy with a timeout of five seconds to the resilience builder.
 
 There are many options available for each of the resilience strategies. For more information, see the [Polly docs: Strategies](https://www.pollydocs.org/strategies).
 
 ## Example usage
 
-You app relies on [dependency injection](../extensions/dependency-injection.md) to resolve the `ExampleClient` and its corresponding <xref:System.Net.Http.HttpClient>, but for this example, since the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollection> was manually instantiated this code builds the <xref:System.IServiceProvider> and resolves the `ExampleClient` from it.
+You app relies on [dependency injection](../extensions/dependency-injection.md) to resolve the `ExampleClient` and its corresponding <xref:System.Net.Http.HttpClient> but, for this example, since the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollection> was manually instantiated, this code builds the <xref:System.IServiceProvider> and resolves the `ExampleClient` from it.
 
 ```csharp
 var provider = services.BuildServiceProvider();

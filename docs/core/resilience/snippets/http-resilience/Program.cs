@@ -20,7 +20,7 @@ builder.AddStandardResilienceHandler(options =>
 builder.AddResilienceHandler("CustomPipeline", static builder =>
 {
     // See: https://www.pollydocs.org/strategies/retry.html
-    builder.AddRetry(new RetryStrategyOptions<HttpResponseMessage>
+    builder.AddRetry(new HttpRetryStrategyOptions
     {
         BackoffType = DelayBackoffType.Exponential,
         MaxRetryAttempts = 5,
@@ -28,7 +28,7 @@ builder.AddResilienceHandler("CustomPipeline", static builder =>
     });
 
     // See: https://www.pollydocs.org/strategies/circuit-breaker.html
-    var options = new CircuitBreakerStrategyOptions<HttpResponseMessage>()
+    var options = new HttpCircuitBreakerStrategyOptions()
     {
         SamplingDuration = TimeSpan.FromSeconds(10),
         FailureRatio = 0.2,

@@ -18,11 +18,26 @@ You can also put each element on a separate line, in which case the semicolon se
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet2.fs)]
 
-The type of the array elements is inferred from the literals used and must be consistent. The following code causes an error because 1.0 is a float and 2 and 3 are integers.
+The type of the array elements is inferred from the literals used and must be consistent.
 
 ```fsharp
-// Causes an error.
-// let array2 = [| 1.0; 2; 3 |]
+// This is an array of 3 integers.
+let array1 = [| 1; 2; 3 |]
+// This is an array of a tuple of 3 integers.
+let array2 = [| 1, 2, 3 |]
+```
+
+The following code causes an error because 3.0 is a float and 1 and 2 are integers.
+
+```fsharp
+// Causes an error. The 3.0 (float) cannot be converted to integer implicitly.
+// let array3 = [| 1; 2; 3.0 |]
+```
+
+The following code causes an error too because `1,2` is a tuple and `3` is an integer.
+```fsharp
+// Causes an error too. The 3 (integer) cannot be converted to tuple implicitly.
+// let array4 = [| 1, 2; 3 |]
 ```
 
 You can also use sequence expressions to create arrays. Following is an example that creates an array of squares of integers from 1 to 10.

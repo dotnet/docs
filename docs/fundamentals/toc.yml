@@ -830,6 +830,9 @@ items:
       - name: HTTP/3 with .NET
         href: ../core/extensions/httpclient-http3.md
         displayName: networking,http,http3,http/3,http3 with .net,http/3 with .net
+      - name: REST API HTTP client generator
+        href: networking/http/http-autoclient.md
+        displayName: networking,http,httpclient,auto,autoclient,auto-client,source generation,source generator,httpclient source generation,httpclient source generator
       - name: Rate limit an HTTP handler
         href: ../core/extensions/http-ratelimiter.md
         displayName: networking,http,rate limit,rate limiting,rate limit http,rate limiting http,rate limit http handler,rate limiting http handler

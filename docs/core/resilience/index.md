@@ -153,4 +153,4 @@ The preceding code executes the delegate within the `ExecuteAsync` method. When 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Resilient patterns for HTTP apps](http-resilience.md)
+> [Build resilient HTTP apps: Key development patterns](http-resilience.md)

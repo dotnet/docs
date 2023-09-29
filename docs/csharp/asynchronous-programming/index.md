@@ -1,7 +1,7 @@
 ---
 title: Asynchronous programming in C#
 description: An overview of the C# language support for asynchronous programming using async, await, Task, and Task<T>
-ms.date: 02/08/2023
+ms.date: 09/28/2023
 ---
 # Asynchronous programming with async and await
 
@@ -201,6 +201,9 @@ There are two important mechanisms to understand: how an exception is stored in 
 When code running asynchronously throws an exception, that exception is stored in the `Task`. The <xref:System.Threading.Tasks.Task.Exception?displayProperty=nameWithType> property is a <xref:System.AggregateException?displayProperty=nameWithType> because more than one exception may be thrown during asynchronous work. Any exception thrown is added to the <xref:System.AggregateException.InnerExceptions?displayProperty=nameWithType> collection. If that `Exception` property is null, a new `AggregateException` is created and the thrown exception is the first item in the collection.
 
 The most common scenario for a faulted task is that the `Exception` property contains exactly one exception. When code `awaits` a faulted task, the first exception in the <xref:System.AggregateException.InnerExceptions?displayProperty=nameWithType> collection is rethrown. That's why the output from this example shows an `InvalidOperationException` instead of an `AggregateException`. Extracting the first inner exception makes working with asynchronous methods as similar as possible to working with their synchronous counterparts. You can examine the `Exception` property in your code when your scenario may generate multiple exceptions.
+
+> [!TIP]
+> We recommend that any argument validation exceptions emerge *synchronously* from task-returning methods. For more information and an example, see [Throw exceptions from task-returning methods](../fundamentals/exceptions/creating-and-throwing-exceptions.md#throw-exceptions-from-task-returning-methods).
 
 Before going on, comment out these two lines in your `ToastBreadAsync` method. You don't want to start another fire:
 

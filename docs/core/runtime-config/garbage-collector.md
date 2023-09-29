@@ -556,7 +556,7 @@ Example:
 
 ## Standalone GC
 
-- Specifies the name of a standalone GC DLL that the runtime loads in place of the one it has in the main runtime DLL (coreclr.dll). This DLL needs to reside in the same directory as *coreclr.dll*.
+- Specifies the name of a GC native library that the runtime loads in place of the default GC implementation. This native library needs to reside in the same directory as the .NET runtime (**coreclr.dll** on Windows, **libcoreclr.so** on Linux).
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |

@@ -6,7 +6,8 @@ class KitchenHelpers
 
     // <TaskExceptions>
     // Non-async, task-returning method.
-    // Within this method, any thrown exceptions emerge synchronously.
+    // Within this method (but outside of the local function),
+    // any thrown exceptions emerge synchronously.
     public static Task<Toast> ToastBreadAsync(int slices, int toastTime)
     {
         if (slices is < 1 or > 4)

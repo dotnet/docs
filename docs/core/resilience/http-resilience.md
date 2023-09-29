@@ -30,13 +30,13 @@ dotnet add package Microsoft.Extensions.Http.Resilience --version 8.0.0
 
 For more information, see [dotnet add package](../tools/dotnet-add-package.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
 
-## Add resilience handlers to an HTTP client
+## Add resilience to an HTTP client
 
 To add resilience to an <xref:System.Net.Http.HttpClient>, you chain a call on the <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> type that is returned from calling any of the available <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> methods. There are several resilience-centric extensions available, some are standard employing various industry best practices, and others are more customizable.
 
 While the following examples use the `AddHttpClient` extension method, from the [Microsoft.Extensions.Http](https://www.nuget.org/packages/Microsoft.Extensions.Http).
 
-### The standard resilience handler
+## Add standard resilience handler
 
 The standard resilience handler uses multiple resilience strategies with default options to send the requests and handle any transient errors. The standard resilience handler is added by calling the `AddStandardResilienceHandler` extension method.
 
@@ -64,7 +64,7 @@ The preceding code:
 - Adds the standard resilience handler to the <xref:System.Net.Http.HttpClient>.
 - Declares a `builder` (of type `IHttpStandardResilienceHandlerBuilder`), which is used to configure the standard resilience handler. There are extension methods to configure the standard resilience handler.
 
-#### Standard resilience handler defaults
+### Standard resilience handler defaults
 
 The default configuration chains five resilience strategies in the following order (from the outermost to the innermost):
 
@@ -76,7 +76,7 @@ The default configuration chains five resilience strategies in the following ord
 | **4** | Circuit breaker | The circuit breaker blocks the execution if too many direct failures or timeouts are detected. |
 | **5** | Attempt timeout | The attempt timeout pipeline limits each request attempt duration and throws if it's exceeded. |
 
-### The standard hedging handler
+## Add standard hedging handler
 
 The standard hedging handler wraps the execution of the request with a standard hedging mechanism. Hedging retries slow requests in parallel. The standard hedging handler is added by calling the `AddStandardHedgingHandler` extension method.
 
@@ -119,7 +119,7 @@ The `Comment` type is defined as follows:
 
 :::code source="snippets/http-resilience/Comment.cs":::
 
-#### Standard hedging handler defaults
+### Standard hedging handler defaults
 
 The standard hedging uses a pool of circuit breakers to ensure that unhealthy endpoints aren't hedged against. By default, the selection from the pool is based on the URL authority (scheme + host + port).
 
@@ -136,7 +136,7 @@ The preceding code adds the standard hedging handler to the <xref:Microsoft.Exte
 | **4** | Circuit breaker (per endpoint) | The circuit breaker blocks the execution if too many direct failures or timeouts are detected. |
 | **5** | Attempt timeout (per endpoint) | The attempt timeout pipeline limits each request attempt duration and throws if it's exceeded. |
 
-### Customize resilience handlers
+## Add custom resilience handlers
 
 For finite control, you can customize the resilience handlers by calling the `AddResilienceHandler` extension method. This method takes a delegate that configures the `ResiliencePipelineBuilder<HttpResponseMessage>` instance that is used to create the resilience strategies.
 

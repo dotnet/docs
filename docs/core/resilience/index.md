@@ -91,7 +91,7 @@ To add a strategy to the pipeline, call any of the available `Add*` extension me
 
 For more information, see [Resilience strategies](https://www.pollydocs.org/strategies/index.html).
 
-## Enrichment
+## Add enrichment
 
 Enrichment is the automatic augmentation of telemetry with well-known state, in the form of name/value pairs. For example, an app might emit a log that includes the _operation_ and _result code_ as columns to represent the outcome of some operation. In this situation and depending on peripheral context, enrichment adds _Cluster name_, _Process name_, _Region_, _Tenant ID_ and more to the log as it's sent to the telemetry backend. When enrichment is added, the app code doesn't need to do anything extra to benefit from enriched metrics.
 

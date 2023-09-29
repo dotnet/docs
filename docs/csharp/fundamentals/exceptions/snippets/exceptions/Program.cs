@@ -6,9 +6,9 @@ namespace Exceptions
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            var toast = KitchenHelpers.ToastBreadAsync(2, 100).Result;
+            var toast = await KitchenHelpers.ToastBreadAsync(2, 100);
 
             ExceptionTest.Main();
             TestThrowCatch();

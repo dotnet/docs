@@ -91,7 +91,7 @@ The implementation of the `IMessageWriter` interface can be improved by using th
 The updated `AddSingleton` method registers the new `IMessageWriter` implementation:
 
 ```csharp
-builder.Services.AddSingleton<IMessageWriter, LoggingMessageWriter>());
+builder.Services.AddSingleton<IMessageWriter, LoggingMessageWriter>();
 ```
 
 The <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder> (`builder`) type is part of the `Microsoft.Extensions.Hosting` NuGet package.

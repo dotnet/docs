@@ -80,6 +80,8 @@ Delegates behave like classes and structs. By default, they have `internal` acce
 | `interface` members                               |     public     |
 | [class, record, and struct members](./members.md) |    private     |
 
+Reach out to [Accessibility Levels](../../language-reference/keywords/accessibility-levels.md) page for more details.
+
 ## C# language specification
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
@@ -90,6 +92,7 @@ Delegates behave like classes and structs. By default, they have `internal` acce
 - [C# Programming Guide](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)
 - [Interfaces](../../fundamentals/types/interfaces.md)
+- [Accessibility Levels](../../language-reference/keywords/accessibility-levels.md)
 - [private](../../language-reference/keywords/private.md)
 - [public](../../language-reference/keywords/public.md)
 - [internal](../../language-reference/keywords/internal.md)

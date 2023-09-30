@@ -9,6 +9,8 @@ ms.assetid: 127cbc0c-cbed-48fd-9c89-7c5d4f98f163
 ---
 # Property Design
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 Although properties are technically very similar to methods, they are quite different in terms of their usage scenarios. They should be seen as smart fields. They have the calling syntax of fields, and the flexibility of methods.
 
  ✔️ DO create get-only properties if the caller should not be able to change the value of the property.

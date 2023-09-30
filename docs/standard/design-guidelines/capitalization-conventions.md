@@ -11,6 +11,8 @@ helpviewer_keywords:
 ---
 # Capitalization Conventions
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 The guidelines in this chapter lay out a simple method for using case that, when applied consistently, make identifiers for types, members, and parameters easy to read.
 
 ## Capitalization Rules for Identifiers

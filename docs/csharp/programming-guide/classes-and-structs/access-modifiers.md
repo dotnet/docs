@@ -68,6 +68,18 @@ Enumeration members are always `public`, and no access modifiers can be applied.
 
 Delegates behave like classes and structs. By default, they have `internal` access when declared directly within a namespace, and `private` access when nested.
 
+## Default access summary table
+
+|  Type                                             | Default access |
+| ------------------------------------------------- | :------------: |
+| `class`                                           |    internal    |
+| `struct`                                          |    internal    |
+| `interface`                                       |    internal    |
+| `record`                                          |    internal    |
+| `enum`                                            |    internal    |
+| `interface` members                               |     public     |
+| [class, record, and struct members](./members.md) |    private     |
+
 ## C# language specification
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]

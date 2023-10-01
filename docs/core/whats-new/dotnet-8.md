@@ -192,7 +192,7 @@ class CustomerInfo
 }
 ```
 
-Prior to .NET 8, the input values were ignored and the `Name` and `Company` properties retained their default values.
+Prior to .NET 8, the input values were ignored and the `Names` and `Company` properties retained their default values.
 
 ```output
 {"Names":[],"Company":{"Name":"N/A","PhoneNumber":"N/A"}}

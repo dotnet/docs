@@ -173,7 +173,7 @@ For example, consider the following code that deserializes into a `CustomerInfo`
 using System.Text.Json;
 
 CustomerInfo customer =
-    JsonSerializer.Deserialize<CustomerInfo>("""{"Name":"John Doe","Company":{"Name":"Contoso"}}""")!;
+    JsonSerializer.Deserialize<CustomerInfo>("""{"Names":["John Doe"],"Company":{"Name":"Contoso"}}""")!;
 
 Console.WriteLine(JsonSerializer.Serialize(customer));
 
@@ -187,7 +187,7 @@ class CompanyInfo
 class CustomerInfo
 {
     // Both of these properties are read-only.
-    public string Name { get; } = "Anonymous";
+    public List<string> Names { get; } = new();
     public CompanyInfo Company { get; } = new() { Name = "N/A", PhoneNumber = "N/A" };
 }
 ```
@@ -195,13 +195,13 @@ class CustomerInfo
 Prior to .NET 8, the input values were ignored and the `Name` and `Company` properties retained their default values.
 
 ```output
-{"Name":"Anonymous","Company":{"Name":"N/A","PhoneNumber":"N/A"}}
+{"Names":[],"Company":{"Name":"N/A","PhoneNumber":"N/A"}}
 ```
 
 Now, the input values are used to populate the read-only properties during deserialization.
 
 ```output
-{"Name":"John Doe","Company":{"Name":"Contoso","PhoneNumber":null}}
+{"Names":["John Doe"],"Company":{"Name":"Contoso","PhoneNumber":null}}
 ```
 
 #### Disable reflection-based default

@@ -3,7 +3,7 @@ title: Introduction to resilient app development
 description: Learn about resiliency as it related to .NET and how to build a resilience pipeline.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/29/2023
+ms.date: 10/02/2023
 ---
 
 # Introduction to resilient app development
@@ -42,7 +42,7 @@ For more information, see [dotnet add package](../tools/dotnet-add-package.md) o
 
 ## Build a resilience pipeline
 
-To use resilience, you must first build a pipeline of resilience-based strategies. Each configured strategy executes in order of configuration. In other words, order is very important. The entry point is an extension method on the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> type, named `AddResiliencePipeline`. This method takes an identifier of the pipeline and delegate that configures the pipeline. The delegate is passed an instance of `ResiliencePipelineBuilder`, which is used to add resilience strategies to the pipeline.
+To use resilience, you must first build a pipeline of resilience-based strategies. Each configured strategy executes in order of configuration. In other words, order is important. The entry point is an extension method on the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> type, named `AddResiliencePipeline`. This method takes an identifier of the pipeline and delegate that configures the pipeline. The delegate is passed an instance of `ResiliencePipelineBuilder`, which is used to add resilience strategies to the pipeline.
 
 Consider the following string-based `key` example:
 

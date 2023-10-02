@@ -1,14 +1,14 @@
 ---
 title: "Build resilient HTTP apps: Key development patterns"
-description: 
+description: Learn how to build resilient HTTP apps using the Microsoft.Extensions.Http.Resilience NuGet package.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/29/2023
+ms.date: 10/02/2023
 ---
 
 # Build resilient HTTP apps: Key development patterns
 
-Building robust HTTP apps that can recover from transient fault errors is a common requirement. To help build resilient HTTP apps, the [Microsoft.Extensions.Http.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience) NuGet package provides resilience mechanisms specifically for the <xref:System.Net.Http.HttpClient>. This NuGet package is built on top of _Polly_, which is a popular open-source project. For more information, see [Polly](https://github.com/App-vNext/Polly).
+Building robust HTTP apps that can recover from transient fault errors is a common requirement. This article assumes that you've already read the [Introduction to resilient app development](index.md). To help build resilient HTTP apps, the [Microsoft.Extensions.Http.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience) NuGet package provides resilience mechanisms specifically for the <xref:System.Net.Http.HttpClient>. This NuGet package is built on top of _Polly_, which is a popular open-source project. For more information, see [Polly](https://github.com/App-vNext/Polly).
 
 ## Get started
 

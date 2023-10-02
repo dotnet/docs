@@ -33,13 +33,8 @@ Welcome to what's new in the .NET docs for September 2023. This article lists so
 
 ### New articles
 
-- [ICorProfilerInfo9 interface](../core/unmanaged-api/profiling/icorprofilerinfo9-interface.md)
-- [.NET profiling (unmanaged API reference)](../core/unmanaged-api/profiling/index.md)
-- [CLRCreateInstance function](../core/unmanaged-api/debugging/clrcreateinstance-function.md)
-- [ICLRDebuggingLibraryProvider3 interface](../core/unmanaged-api/debugging/iclrdebugginglibraryprovider3-interface.md)
-- [.NET debugging (unmanaged API reference)](../core/unmanaged-api/debugging/index.md)
-- [LIBRARY_PROVIDER_INDEX_TYPE enumeration](../core/unmanaged-api/debugging/libraryproviderindextype-enumeration.md)
-- [PSTARTUP_CALLBACK function Pointer](../core/unmanaged-api/debugging/pstartup_callback-function-pointer.md)
+- [.NET profiling (unmanaged API reference)](../core/unmanaged-api/profiling/index.md) (moved to this location)
+- [.NET debugging (unmanaged API reference)](../core/unmanaged-api/debugging/index.md) (moved to this location)
 - [.NET runtime tiered compilation events](../fundamentals/diagnostics/runtime-tiered-compilation-events.md)
 - [Runtime configuration options for WPF](../core/runtime-config/wpf.md)
 - [Customize SNI in HTTP requests](../core/extensions/httpclient-sni.md)
@@ -47,7 +42,7 @@ Welcome to what's new in the .NET docs for September 2023. This article lists so
 
 ### Updated articles
 
-- [What's new in .NET 8](../core/whats-new/dotnet-8.md) - Update what's new for RC 1
+- [What's new in .NET 8](../core/whats-new/dotnet-8.md) - Updated for RC 1
 - [Tutorial: Debug a .NET console application using Visual Studio Code](../core/tutorials/debugging-with-visual-studio-code.md) - .NET 8 update for VS Code tutorial series
 - [Tutorial: Create a .NET class library using Visual Studio Code](../core/tutorials/library-with-visual-studio-code.md) - .NET 8 update for VS Code tutorial series
 - [Tutorial: Publish a .NET console application using Visual Studio Code](../core/tutorials/publishing-with-visual-studio-code.md) - .NET 8 update for VS Code tutorial series

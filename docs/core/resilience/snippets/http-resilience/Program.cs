@@ -1,7 +1,9 @@
 ﻿using System.Net;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Http.Resilience;
+using Microsoft.Extensions.Options;
 using Polly;
+using Polly.Retry;
 
 var services = new ServiceCollection();
 
@@ -47,6 +49,24 @@ builder.AddResilienceHandler("CustomPipeline", static builder =>
 });
 
 builder.AddStandardHedgingHandler();
+
+builder.AddResilienceHandler(
+    "AdvancedPipeline",
+    static (ResiliencePipelineBuilder<HttpResponseMessage> builder,
+        ResilienceHandlerContext context) =>
+{
+    // Enable the reloads whenever the named options change
+    context.EnableReloads<RetryStrategyOptions>("my-retry-options");
+
+    // Retrieve the named options
+    var retryOptions =
+        context.ServiceProvider
+            .GetRequiredService<IOptionsMonitor<RetryStrategyOptions<HttpResponseMessage>>>()
+            .Get("my-retry-options");
+
+    // Add retries using the resolved options
+    builder.AddRetry(retryOptions);
+});
 
 var provider = services.BuildServiceProvider();
 

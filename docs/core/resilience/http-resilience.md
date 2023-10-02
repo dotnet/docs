@@ -140,11 +140,14 @@ The preceding code adds the standard hedging handler to the <xref:Microsoft.Exte
 
 For finite control, you can customize the resilience handlers by calling the `AddResilienceHandler` extension method. This method takes a delegate that configures the `ResiliencePipelineBuilder<HttpResponseMessage>` instance that is used to create the resilience strategies.
 
-To configure a named resilience handler, call the `AddResilienceHandler` extension method with the name of the handler. The following example configures a named resilience handler called `CustomResilienceHandler`.
+To configure a named resilience handler, call the `AddResilienceHandler` extension method with the name of the handler. The following example configures a named resilience handler called `"CustomPipeline"`.
 
 ```csharp
 // The builder is of type, IHttpClientBuilder.
-builder.AddResilienceHandler("CustomPipeline", static builder =>
+builder.AddResilienceHandler(
+    "CustomPipeline",
+    static (ResiliencePipelineBuilder<HttpResponseMessage> builder,
+            ResilienceHandlerContext context) =>
 {
     // See: https://www.pollydocs.org/strategies/retry.html
     builder.AddRetry(new HttpRetryStrategyOptions
@@ -184,6 +187,39 @@ The preceding code:
 - Adds a timeout strategy with a timeout of five seconds to the resilience builder.
 
 There are many options available for each of the resilience strategies. For more information, see the [Polly docs: Strategies](https://www.pollydocs.org/strategies).
+
+### Dynamic reload
+
+Polly supports dynamic reload of the resilience strategies. This means that you can change the configuration of the resilience strategies at runtime. To enable dynamic reload, use the appropriate `AddResilienceHandler` overload that exposes the `ResilienceHandlerContext`. Given the context, call `EnableReloads` of the corresponding resilience strategy options:
+
+```csharp
+builder.AddResilienceHandler(
+    "AdvancedPipeline",
+    static (ResiliencePipelineBuilder<HttpResponseMessage> builder,
+            ResilienceHandlerContext context) =>
+{
+    // Enable the reloads whenever the named options change
+    context.EnableReloads<RetryStrategyOptions>("my-retry-options");
+
+    // Retrieve the named options
+    var retryOptions =
+        context.ServiceProvider
+            .GetRequiredService<IOptionsMonitor<RetryStrategyOptions<HttpResponseMessage>>>()
+            .Get("my-retry-options");
+
+    // Add retries using the resolved options
+    builder.AddRetry(retryOptions);
+});
+```
+
+The preceding code:
+
+- Adds a resilience handler with the name `"AdvancedPipeline"` as the `pipelineName` to the service container.
+- Enables the reloads of the `RetryStrategyOptions` named `"my-retry-options"` whenever the named options change.
+- Retrieves the named options from the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> service.
+- Adds a retry strategy with the retrieved options to the resilience builder.
+
+For more information, see [Polly docs: Advanced dependency injection](https://www.pollydocs.org/advanced/dependency-injection.html).
 
 ## Example usage
 

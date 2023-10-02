@@ -34,7 +34,10 @@ For more information, see [dotnet add package](../tools/dotnet-add-package.md) o
 
 To add resilience to an <xref:System.Net.Http.HttpClient>, you chain a call on the <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> type that is returned from calling any of the available <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> methods. There are several resilience-centric extensions available, some are standard employing various industry best practices, and others are more customizable.
 
-While the following examples use the `AddHttpClient` extension method, from the [Microsoft.Extensions.Http](https://www.nuget.org/packages/Microsoft.Extensions.Http).
+When adding resilience, you should only add one resilience handler and avoid stacking handlers. If you need to add multiple resilience handlers, you should consider using the `AddResilienceHandler` extension method, which allows you to customize the resilience strategies.
+
+> [!IMPORTANT]
+> All of the following examples use the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> extension method, from the [Microsoft.Extensions.Http](https://www.nuget.org/packages/Microsoft.Extensions.Http), which return an <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance. The <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance is used to configure the <xref:System.Net.Http.HttpClient> and add the resilience handler.
 
 ## Add standard resilience handler
 
@@ -113,7 +116,7 @@ The `ExampleClient` is defined as follows:
 The preceding code:
 
 - Defines an `ExampleClient` type that has a constructor that accepts an <xref:System.Net.Http.HttpClient>.
-- Exposes a `GetCommentsAsync` method that sends a GET request to the `"/comments"` endpoint and returns the response.
+- Exposes a `GetCommentsAsync` method that sends a GET request to the `/comments` endpoint and returns the response.
 
 The `Comment` type is defined as follows:
 
@@ -138,7 +141,7 @@ The preceding code adds the standard hedging handler to the <xref:Microsoft.Exte
 
 ### Customize hedging handler route selection
 
-When using the standard hedging handler, you can customize the way the strategies are selected by calling various extensions on the `IRoutingStrategyBuilder` type. This can be very useful for scenarios such as a/b testing, where you want to route a percentage of the requests to a different endpoint:
+When using the standard hedging handler, you can customize the way the strategies are selected by calling various extensions on the `IRoutingStrategyBuilder` type. This can be useful for scenarios such as a/b testing, where you want to route a percentage of the requests to a different endpoint:
 
 ```csharp
 // Hedging allows sending multiple concurrent requests.
@@ -192,7 +195,7 @@ For more information, see [Polly docs: Hedging resilience strategy](https://www.
 
 ## Add custom resilience handlers
 
-For finite control, you can customize the resilience handlers by calling the `AddResilienceHandler` extension method. This method takes a delegate that configures the `ResiliencePipelineBuilder<HttpResponseMessage>` instance that is used to create the resilience strategies.
+To have more control, you can customize the resilience handlers by calling the `AddResilienceHandler` extension method. This method takes a delegate that configures the `ResiliencePipelineBuilder<HttpResponseMessage>` instance that is used to create the resilience strategies.
 
 To configure a named resilience handler, call the `AddResilienceHandler` extension method with the name of the handler. The following example configures a named resilience handler called `"CustomPipeline"`.
 
@@ -310,7 +313,7 @@ Imagine a situation where the network was to go down, or the server was to becom
 
 The preceding diagram depicts:
 
-- The `ExampleClient` sends an HTTP GET request to the `"/comments"` endpoint.
+- The `ExampleClient` sends an HTTP GET request to the `/comments` endpoint.
 - The <xref:System.Net.Http.HttpResponseMessage> is evaluated:
   - If the response is successful (HTTP 200), the response is returned.
   - If the response is unsuccessful (HTTP non-200), the resilience pipeline employs the configured resilience strategies.

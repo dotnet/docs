@@ -136,6 +136,60 @@ The preceding code adds the standard hedging handler to the <xref:Microsoft.Exte
 | **4** | Circuit breaker (per endpoint) | The circuit breaker blocks the execution if too many direct failures or timeouts are detected. |
 | **5** | Attempt timeout (per endpoint) | The attempt timeout pipeline limits each request attempt duration and throws if it's exceeded. |
 
+### Customize hedging handler route selection
+
+When using the standard hedging handler, you can customize the way the strategies are selected by calling various extensions on the `IRoutingStrategyBuilder` type. This can be very useful for scenarios such as a/b testing, where you want to route a percentage of the requests to a different endpoint:
+
+```csharp
+// Hedging allows sending multiple concurrent requests.
+// The builder is of type, IHttpClientBuilder.
+builder.AddStandardHedgingHandler(static (IRoutingStrategyBuilder builder) =>
+{
+    builder.ConfigureOrderedGroups(static orderedGroup =>
+    {
+        orderedGroup.Groups.Add(new EndpointGroup()
+        {
+            Endpoints =
+            {
+                // Imagine a/b testing, where 3% of the requests are 
+                // sent to the experimental endpoint.
+                new() { Uri = new("https://example.com/experimental"), Weight = 3 },
+                new() { Uri = new("https://example.com/stable"), Weight = 97 }
+            }
+        });
+    });
+
+    builder.ConfigureWeightedGroups(static weightedGroup =>
+    {
+        // Alternatively, you can use initial attempt as the selection mode.
+        weightedGroup.SelectionMode =
+            WeightedGroupSelectionMode.EveryAttempt;
+
+        weightedGroup.Groups.Add(new WeightedEndpointGroup()
+        {
+            Endpoints =
+            {
+                // Apply 33% of the requests to each endpoint
+                new() { Uri = new("https://example.com/a"), Weight = 33 },
+                new() { Uri = new("https://example.com/b"), Weight = 33 },
+                new() { Uri = new("https://example.com/c"), Weight = 33 }
+            }
+        });
+    });
+});
+```
+
+The preceding code:
+
+- Adds the hedging handler to the <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder>.
+- Configures the `IRoutingStrategyBuilder` to use the `ConfigureOrderedGroups` method to configure the ordered groups.
+- Adds an `EndpointGroup` to the `orderedGroup` that routes 3% of the requests to the `https://example.com/experimental` endpoint and 97% of the requests to the `https://example.com/stable` endpoint.
+- Configures the `IRoutingStrategyBuilder` to use the `ConfigureWeightedGroups` method to configure the weighted groups.
+- Sets the `SelectionMode` to `WeightedGroupSelectionMode.EveryAttempt`.
+- Adds a `WeightedEndpointGroup` to the `weightedGroup` that routes 33% of the requests to the `https://example.com/a` endpoint, 33% of the requests to the `https://example.com/b` endpoint, and 33% of the requests to the `https://example.com/c` endpoint.
+
+For more information, see [Polly docs: Hedging resilience strategy](https://www.pollydocs.org/strategies/hedging.html).
+
 ## Add custom resilience handlers
 
 For finite control, you can customize the resilience handlers by calling the `AddResilienceHandler` extension method. This method takes a delegate that configures the `ResiliencePipelineBuilder<HttpResponseMessage>` instance that is used to create the resilience strategies.

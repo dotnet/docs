@@ -50,6 +50,38 @@ builder.AddResilienceHandler("CustomPipeline", static builder =>
 
 builder.AddStandardHedgingHandler();
 
+builder.AddStandardHedgingHandler(static (IRoutingStrategyBuilder builder) =>
+{
+    // Hedging allows sending multiple concurrent requests
+    builder.ConfigureOrderedGroups(static orderedGroup =>
+    {
+        orderedGroup.Groups.Add(new EndpointGroup()
+        {
+            Endpoints =
+            {
+                // Imagine a/b testing
+                new WeightedEndpoint() { Uri = new("route/a"), Weight = 1 },
+                new WeightedEndpoint() { Uri = new("b"), Weight = 99 }
+            }
+        });
+    });
+
+    builder.ConfigureWeightedGroups(static weightedGroup =>
+    {
+        weightedGroup.SelectionMode = WeightedGroupSelectionMode.EveryAttempt;
+
+        weightedGroup.Groups.Add(new WeightedEndpointGroup()
+        {
+            Endpoints =
+            {
+                // imagine a/b testing
+                new WeightedEndpoint() { Uri = new("a"), Weight = 1 },
+                new WeightedEndpoint() { Uri = new("b"), Weight = 99 }
+            }
+        });
+    });
+});
+
 builder.AddResilienceHandler(
     "AdvancedPipeline",
     static (ResiliencePipelineBuilder<HttpResponseMessage> builder,

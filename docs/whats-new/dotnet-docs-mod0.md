@@ -75,7 +75,6 @@ Welcome to what's new in the .NET docs for September 2023. This article lists so
 
 - [Add section on exceptions in task-returning methods](../csharp/fundamentals/exceptions/creating-and-throwing-exceptions.md)
 
-
 ## DevOps and testing in .NET
 
 ### New articles

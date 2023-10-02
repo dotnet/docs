@@ -45,7 +45,13 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/docker/snippets/Worker" #DotNet.ContainerImage.csproj
+    directory: "/docs/core/docker/snippets/7.0/Worker" #DotNet.ContainerImage.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/docker/snippets/8.0/Worker" #DotNet.ContainerImage.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -568,6 +574,12 @@ updates:
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
     directory: "/docs/fundamentals/code-analysis/quality-rules/snippets/vb/all-rules" #all-rules.vbproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/fundamentals/networking/http/snippets/autoclient" #autoclient.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -1191,13 +1203,13 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB" #LINQtoDataSetExamplesVB.vbproj
+    directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToDecryptXMLElementAsymmetric/vb" #decryptxml.vbproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToDecryptXMLElementAsymmetric/vb" #decryptxml.vbproj
+    directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToDecryptXMLElementX509/vb" #decryptxml.vbproj
     schedule:
       interval: "weekly"
       day: "wednesday"

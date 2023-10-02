@@ -71,6 +71,11 @@ Welcome to what's new in the .NET docs for September 2023. This article lists so
 - [Compiler Error CS8964](../csharp/language-reference/compiler-messages/cs8964.md)
 - [Resolve errors and warnings generated from expressions prohibited in expression trees](../csharp/language-reference/compiler-messages/expression-tree-restrictions.md)
 
+### Updated articles
+
+- [Add section on exceptions in task-returning methods](../csharp/fundamentals/exceptions/creating-and-throwing-exceptions.md)
+
+
 ## DevOps and testing in .NET
 
 ### New articles

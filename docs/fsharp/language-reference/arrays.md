@@ -35,6 +35,7 @@ The following code causes an error because 3.0 is a float and 1 and 2 are intege
 ```
 
 The following code causes an error too because `1,2` is a tuple and `3` is an integer.
+
 ```fsharp
 // Causes an error too. The 3 (integer) cannot be converted to tuple implicitly.
 // let array4 = [| 1, 2; 3 |]

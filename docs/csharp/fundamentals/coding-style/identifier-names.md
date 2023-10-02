@@ -20,34 +20,33 @@ For a complete definition of valid identifiers, see the [Identifiers article in 
 
 ## Naming conventions
 
-In addition to the rules, there are many identifier [naming conventions](../../../standard/design-guidelines/naming-guidelines.md) used throughout the .NET APIs. By convention, C# programs use `PascalCase` for type names, namespaces, and all public members. In addition, the `dotnet/docs` team uses the following conventions, adopted from the [.NET Runtime team coding style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md):
+In addition to the rules, conventions for identifier names are used throughout the .NET APIs. By convention, C# programs use `PascalCase` for type names, namespaces, and all public members. In addition, the `dotnet/docs` team uses the following conventions, adopted from the [.NET Runtime team's coding style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md):
 
 - Interface names start with a capital `I`.
 - Attribute types end with the word `Attribute`.
 - Enum types use a singular noun for nonflags, and a plural noun for flags.
 - Identifiers shouldn't contain two consecutive underscore (`_`) characters. Those names are reserved for compiler-generated identifiers.
 - Use meaningful and descriptive names for variables, methods, and classes.
-- Avoid using single-letter names, except for simple loop counters. See exceptions for syntax examples noted in the following section.
 - Prefer clarity over brevity.
 - Use PascalCase for class names and method names.
 - Use camelCase for method arguments, local variables, and private fields.
 - Use PascalCase for constant names, both fields and local constants.
 - Private instance fields start with an underscore (`_`).
-- Static fields start with `s_`. Note that this isn't the default Visual Studio behavior, nor part of the [Framework design guidelines](../../../standard/design-guidelines/names-of-type-members.md#names-of-fields), but is configurable in editorconfig.
+- Static fields start with `s_`. Note that this isn't the default Visual Studio behavior, nor part of the [Framework design guidelines](../../../standard/design-guidelines/names-of-type-members.md#names-of-fields), but is [configurable in editorconfig](../../../fundamentals/code-analysis/style-rules/naming-rules.md).
 - Avoid using abbreviations or acronyms in names, except for widely known and accepted abbreviations.
 - Use meaningful and descriptive namespaces that follow the reverse domain name notation.
 - Choose assembly names that represent the primary purpose of the assembly.
+- Avoid using single-letter names, except for simple loop counters. Also, syntax examples that describe the syntax of C# constructs often use the following single-letter names that match the convention used in the [C# language specification](~/_csharpstandard/standard/readme.md). Syntax examples are an exception to the rule.
 
-The examples that describe the syntax of C# constructs often use single letter names that match the convention used in the [C# language specification](~/_csharpstandard/standard/readme.md):
+  - Use `S` for structs, `C` for classes.
+  - Use `M` for methods.
+  - Use `v` for variables, `p` for parameters.
+  - Use `r` for `ref` parameters.
 
-- Use `S` for structs, `C` for classes.
-- Use `M` for methods.
-- Use `v` for variables, `p` for parameters.
-- Use `r` for `ref` parameters.
+> [!TIP]
+> You can enforce naming conventions that concern capitalization, prefixes, suffixes, and word separators by using [code-style naming rules](../../../fundamentals/code-analysis/style-rules/naming-rules.md).
 
-The preceding single-letter names are allowed only in the language reference section.
-
-In the following examples, guidance pertaining to elements marked `public` is applicable when working with `protected` and `protected internal` elements, all of which are intended to be visible to external callers.
+In the following examples, guidance pertaining to elements marked `public` is also applicable when working with `protected` and `protected internal` elements, all of which are intended to be visible to external callers.
 
 ### Pascal case
 
@@ -155,7 +154,7 @@ public T SomeMethod<T>(int someNumber, bool isValid)
 }
 ```
 
-For more information on C# naming conventions, see [C# Coding Style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md).
+For more information on C# naming conventions, see the [.NET Runtime team's coding style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md).
 
 ### Type parameter naming guidelines
 

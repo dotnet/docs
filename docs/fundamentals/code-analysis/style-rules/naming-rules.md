@@ -231,4 +231,4 @@ This example also demonstrates that entity definitions can be reused. The `under
 * [Language rules](language-rules.md)
 * [Formatting rules](ide0055.md)
 * [Roslyn naming rules](https://github.com/dotnet/roslyn/blob/main/.editorconfig#L63)
-* [.NET code style rules reference](index.md)
+* [C# identifier naming rules and conventions](../../../csharp/fundamentals/coding-style/identifier-names.md)

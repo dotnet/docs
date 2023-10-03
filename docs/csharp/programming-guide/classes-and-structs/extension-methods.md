@@ -146,7 +146,7 @@ This next example demonstrates `ref` extension methods for user-defined struct t
 ```csharp
 using System;
 
-public struct NormalAccount
+public struct Account
 {
     public uint id;
     public float balance;
@@ -157,7 +157,7 @@ public struct NormalAccount
 public static class Extensions
 {
     // ref keyword can also appear before the this keyword
-    public static void Deposit(ref this NormalAccount account, float amount)
+    public static void Deposit(ref this Account account, float amount)
     {
         account.balance += amount;
 
@@ -171,7 +171,7 @@ public static class Program
 {
     public static void Main()
     {
-        NormalAccount account = new NormalAccount
+        Account account = new()
         {
             id = 1,
             balance = 100f

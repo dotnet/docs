@@ -64,6 +64,10 @@ builder.AddStandardHedgingHandler(static (IRoutingStrategyBuilder builder) =>
                 new WeightedEndpoint() { Uri = new("b"), Weight = 99 }
             }
         });
+
+        // Add more groups, having only one means that hedging will never 
+        // do secondary attempts. The maximum number of attempts directly 
+        // correlates to the number of groups.
     });
 
     builder.ConfigureWeightedGroups(static weightedGroup =>
@@ -79,6 +83,10 @@ builder.AddStandardHedgingHandler(static (IRoutingStrategyBuilder builder) =>
                 new WeightedEndpoint() { Uri = new("b"), Weight = 99 }
             }
         });
+
+        // Add more groups, having only one means that hedging will never 
+        // do secondary attempts. The maximum number of attempts directly 
+        // correlates to the number of groups.
     });
 });
 

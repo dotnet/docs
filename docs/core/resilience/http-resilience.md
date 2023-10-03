@@ -160,8 +160,28 @@ builder.AddStandardHedgingHandler(static (IRoutingStrategyBuilder builder) =>
                 new() { Uri = new("https://example.com/stable"), Weight = 97 }
             }
         });
-    });
 
+        // Add more groups, having only one means that hedging will never 
+        // do secondary attempts. The maximum number of attempts directly 
+        // correlates to the number of groups.
+    });
+});
+```
+
+The preceding code:
+
+- Adds the hedging handler to the <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder>.
+- Configures the `IRoutingStrategyBuilder` to use the `ConfigureOrderedGroups` method to configure the ordered groups.
+- Adds an `EndpointGroup` to the `orderedGroup` that routes 3% of the requests to the `https://example.com/experimental` endpoint and 97% of the requests to the `https://example.com/stable` endpoint.
+- Configures the `IRoutingStrategyBuilder` to use the `ConfigureWeightedGroups` method to configure the
+
+To configure a weighted group, call the `ConfigureWeightedGroups` method on the `IRoutingStrategyBuilder` type. The following example configures the `IRoutingStrategyBuilder` to use the `ConfigureWeightedGroups` method to configure the weighted groups.
+
+```csharp
+// Hedging allows sending multiple concurrent requests.
+// The builder is of type, IHttpClientBuilder.
+builder.AddStandardHedgingHandler(static (IRoutingStrategyBuilder builder) =>
+{
     builder.ConfigureWeightedGroups(static weightedGroup =>
     {
         // Alternatively, you can use initial attempt as the selection mode.
@@ -178,6 +198,10 @@ builder.AddStandardHedgingHandler(static (IRoutingStrategyBuilder builder) =>
                 new() { Uri = new("https://example.com/c"), Weight = 33 }
             }
         });
+
+        // Add more groups, having only one means that hedging will never 
+        // do secondary attempts. The maximum number of attempts directly 
+        // correlates to the number of groups.
     });
 });
 ```
@@ -185,11 +209,12 @@ builder.AddStandardHedgingHandler(static (IRoutingStrategyBuilder builder) =>
 The preceding code:
 
 - Adds the hedging handler to the <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder>.
-- Configures the `IRoutingStrategyBuilder` to use the `ConfigureOrderedGroups` method to configure the ordered groups.
-- Adds an `EndpointGroup` to the `orderedGroup` that routes 3% of the requests to the `https://example.com/experimental` endpoint and 97% of the requests to the `https://example.com/stable` endpoint.
 - Configures the `IRoutingStrategyBuilder` to use the `ConfigureWeightedGroups` method to configure the weighted groups.
 - Sets the `SelectionMode` to `WeightedGroupSelectionMode.EveryAttempt`.
 - Adds a `WeightedEndpointGroup` to the `weightedGroup` that routes 33% of the requests to the `https://example.com/a` endpoint, 33% of the requests to the `https://example.com/b` endpoint, and 33% of the requests to the `https://example.com/c` endpoint.
+
+> [!TIP]
+> The maximum number of hedging attempts directly correlates to the number of configured groups. For example, if you have two groups, the maximum number of attempts is two.
 
 For more information, see [Polly docs: Hedging resilience strategy](https://www.pollydocs.org/strategies/hedging.html).
 

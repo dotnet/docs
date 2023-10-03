@@ -77,7 +77,7 @@ The following people contributed to the .NET docs during this period. Thank you!
 
 - [pkulikov](https://github.com/pkulikov) - Petr Kulikov ![7 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-7-green)
 - [ErykKorzeniowski](https://github.com/ErykKorzeniowski) -  ![5 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-5-green)
-- [imehdi7](https://github.com/imehdi7) -  ![3 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-3-green)
+- imehdi7 -  ![3 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-3-green)
 - [smoothdeveloper](https://github.com/smoothdeveloper) - Gauthier Segay ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
 - [aleksvujic](https://github.com/aleksvujic) - Aleks Vujić ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [andrewreeman](https://github.com/andrewreeman) - Andrew Reeman ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)

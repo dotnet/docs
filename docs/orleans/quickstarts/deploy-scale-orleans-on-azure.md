@@ -77,7 +77,7 @@ Update the `builder` configuration code in the `Program.cs` file to match the ex
 
 ::: zone-end
 
-::: zone pivot="azure-cosmos-db"
+::: zone pivot="azure-cosmos-db-nosql"
 
 * A conditional environment check is added to ensure the app runs properly in both local development and Azure hosted scenarios.
 * The `UseCosmosClustering` method configures the Orleans cluster to use Azure Cosmos DB for NoSQL and authenticates using a connection string.
@@ -148,7 +148,7 @@ Create an Azure Storage account to hold the cluster and persistent state data yo
 
 ::: zone-end
 
-::: zone pivot="azure-cosmos-db"
+::: zone pivot="azure-cosmos-db-nosql"
 
 ## Create the Azure Cosmos DB for NoSQL account
 
@@ -249,7 +249,7 @@ Optionally, you can verify that the cluster and state data is stored as expected
 
 ::: zone-end
 
-::: zone pivot="azure-cosmos-db"
+::: zone pivot="azure-cosmos-db-nosql"
 
 1. In the Azure portal, navigate to the overview page of the Azure Cosmos DB for NoSQL account.
 1. On the navigation, select **Data Explorer**.

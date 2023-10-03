@@ -474,7 +474,7 @@ Learn [how the specification pattern is applied in the eShopOnWeb sample](https:
   [https://learn.microsoft.com/ef/core/modeling/relational/tables](/ef/core/modeling/relational/tables)
 
 - **Use HiLo to generate keys with Entity Framework Core** \
-  <https://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/>
+  [https://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/use-hilo-to-generate-keys-with-entity-framework-core-2/](https://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/use-hilo-to-generate-keys-with-entity-framework-core-2/)
 
 - **Backing Fields** \
   [https://learn.microsoft.com/ef/core/modeling/backing-field](/ef/core/modeling/backing-field)

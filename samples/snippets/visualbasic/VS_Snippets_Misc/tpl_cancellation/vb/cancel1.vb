@@ -68,9 +68,8 @@ Module Example
             Console.WriteLine("AggregateException thrown with the following inner exceptions:")
             ' Display information about each exception.
             For Each v In e.InnerExceptions
-                If TypeOf v Is OperationCanceledException
-                    Console.WriteLine("   OperationCanceledException: Task {0}",
-                                      DirectCast(v, OperationCanceledException).Task.Id)
+                If TypeOf v Is OperationCanceledException Then
+                    Console.WriteLine("   The operation was canceled.")
                 Else
                     Console.WriteLine("   Exception: {0}", v.GetType().Name)
                 End If

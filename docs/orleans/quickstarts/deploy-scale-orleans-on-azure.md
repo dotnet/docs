@@ -35,6 +35,28 @@ This quickstart builds on the sample app from the [Build your first Orleans app]
 git clone https://github.com/Azure-Samples/build-your-first-orleans-app-aspnetcore
 ```
 
+## Install the NuGet packages
+
+Prior to using the grain, you must install the corresponding **clustering** and **persistence** NuGet packages.
+
+::: zone pivot="azure-storage"
+
+| | NuGet package |
+| --- | --- |
+| **Clustering** | [Microsoft.Orleans.Clustering.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AzureStorage) |
+| **Persistence** | [Microsoft.Orleans.Persistence.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.AzureStorage) |
+
+::: zone-end
+
+::: zone pivot="azure-cosmos-db-nosql"
+
+| | NuGet package |
+| --- | --- |
+| **Clustering** | [Microsoft.Orleans.Clustering.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cosmos) |
+| **Persistence** |  [Microsoft.Orleans.Persistence.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.Cosmos) |
+
+::: zone-end
+
 ## Configure the sample app
 
 The sample app is currently configured to create a localhost cluster and persist grains in memory. When hosted in Azure, Orleans can be configured to use more scalable, centralized state using services like Azure Table Storage and Azure Blob Storage.

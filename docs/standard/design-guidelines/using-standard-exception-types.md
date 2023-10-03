@@ -11,6 +11,8 @@ ms.assetid: ab22ce03-78f9-4dca-8824-c7ed3bdccc27
 ---
 # Using Standard Exception Types
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 This section describes the standard exceptions provided by the Framework and the details of their usage. The list is by no means exhaustive. Please refer to the .NET Framework reference documentation for usage of other Framework exception types.
 
 ## Exception and SystemException

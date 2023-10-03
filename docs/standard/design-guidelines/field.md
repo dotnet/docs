@@ -10,6 +10,8 @@ ms.assetid: 7cb4b0f3-7a10-4c93-b84d-733f7134fcf8
 ---
 # Field Design
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 The principle of encapsulation is one of the most important notions in object-oriented design. This principle states that data stored inside an object should be accessible only to that object.
 
  A useful way to interpret the principle is to say that a type should be designed so that changes to fields of that type (name or type changes) can be made without breaking code other than for members of the type. This interpretation immediately implies that all fields must be private.

@@ -147,4 +147,4 @@ let percent = $$"""50% of 20 is %%.1f{{20m * 0.5m}}"""
 
 * [Strings](strings.md)
 * [F# RFC FS-1001 - Interpolated strings](https://github.com/fsharp/fslang-design/blob/main/FSharp-5.0/FS-1001-StringInterpolation.md)
-* [F# RFC FS-1132 - Extended syntax for interpolated strings](https://github.com/fsharp/fslang-design/blob/main/RFCs/FS-1132-better-interpolated-triple-quoted-strings.md)
+* [F# RFC FS-1132 - Extended syntax for interpolated strings](https://github.com/fsharp/fslang-design/blob/main/FSharp-8.0/FS-1132-better-interpolated-triple-quoted-strings.md)

@@ -13,6 +13,8 @@ ms.assetid: 12feb7f0-b793-4d96-b090-42d6473bab8c
 ---
 # Nested Types
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 A nested type is a type defined within the scope of another type, which is called the enclosing type. A nested type has access to all members of its enclosing type. For example, it has access to private fields defined in the enclosing type and to protected fields defined in all ascendants of the enclosing type.
 
  In general, nested types should be used sparingly. There are several reasons for this. Some developers are not fully familiar with the concept. These developers might, for example, have problems with the syntax of declaring variables of nested types. Nested types are also very tightly coupled with their enclosing types, and as such are not suited to be general-purpose types.

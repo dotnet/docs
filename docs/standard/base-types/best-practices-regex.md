@@ -1,7 +1,7 @@
 ---
 title: Best Practices for Regular Expressions in .NET
 description: Learn how to create efficient, effective regular expressions in .NET.
-ms.date: "08/05/2022"
+ms.date: 10/02/2023
 ms.custom: devdivchpfy22
 ms.topic: conceptual
 dev_langs:
@@ -29,9 +29,7 @@ Regular expression patterns are often written to match valid input. That is, dev
 To match unconstrained input, a regular expression must handle three kinds of text efficiently:
 
 - Text that matches the regular expression pattern.
-
 - Text that doesn't match the regular expression pattern.
-
 - Text that nearly matches the regular expression pattern.
 
 The last text type is especially problematic for a regular expression that has been written to handle constrained input. If that regular expression also relies on extensive [backtracking](backtracking-in-regular-expressions.md), the regular expression engine can spend an inordinate amount of time (in some cases, many hours or days) processing seemingly innocuous text.
@@ -141,7 +139,6 @@ To compile regular expressions to an assembly, you call the <xref:System.Text.Re
 We recommend that you compile regular expressions to an assembly in the following situations:
 
 - If you're a component developer who wants to create a library of reusable regular expressions.
-
 - If you expect your regular expression's pattern-matching methods to be called an indeterminate number of times&mdash;anywhere from once or twice to thousands or tens of thousands of times. Unlike compiled or interpreted regular expressions, regular expressions that are compiled to separate assemblies offer performance that's consistent regardless of the number of method calls.
 
 If you're using compiled regular expressions to optimize performance, you shouldn't use reflection to create the assembly, load the regular expression engine, and execute its pattern-matching methods. Avoiding reflection requires that you don't build regular expression patterns dynamically, and that you specify any pattern-matching options, such as case-insensitive pattern matching, at the time the assembly is created. It also requires that you separate the code that creates the assembly from the code that uses the regular expression.
@@ -160,8 +157,8 @@ When the example is compiled to an executable and run, it creates an assembly na
 
 Ordinarily, the regular expression engine uses linear progression to move through an input string and compare it to a regular expression pattern. However, when indeterminate quantifiers such as `*`, `+`, and `?` are used in a regular expression pattern, the regular expression engine might give up a portion of successful partial matches and return to a previously saved state in order to search for a successful match for the entire pattern. This process is known as backtracking.
 
-> [!NOTE]
-> For more information on backtracking, see [Details of Regular Expression Behavior](details-of-regular-expression-behavior.md) and [Backtracking](backtracking-in-regular-expressions.md). For a detailed discussion of backtracking, see [Optimizing Regular Expression Performance, Part II: Taking Charge of Backtracking](/archive/blogs/bclteam/optimizing-regular-expression-performance-part-ii-taking-charge-of-backtracking-ron-petrusha) in the BCL Team blog.
+> [!TIP]
+> For more information on backtracking, see [Details of regular expression behavior](details-of-regular-expression-behavior.md) and [Backtracking](backtracking-in-regular-expressions.md). For detailed discussions of backtracking, see the [Regular Expression Improvements in .NET 7](https://devblogs.microsoft.com/dotnet/regular-expression-improvements-in-dotnet-7/#backtracking-and-regexoptions-nonbacktracking) and [Optimizing Regular Expression Performance](/archive/blogs/bclteam/optimizing-regular-expression-performance-part-ii-taking-charge-of-backtracking-ron-petrusha) blog posts.
 
 Support for backtracking gives regular expressions power and flexibility. It also places the responsibility for controlling the operation of the regular expression engine in the hands of regular expression developers. Because developers are often not aware of this responsibility, their misuse of backtracking or reliance on excessive backtracking often plays the most significant role in degrading regular expression performance. In a worst-case scenario, execution time can double for each additional character in the input string. In fact, by using backtracking excessively, it's easy to create the programmatic equivalent of an endless loop if input nearly matches the regular expression pattern. The regular expression engine might take hours or even days to process a relatively short input string.
 
@@ -176,15 +173,18 @@ Often, applications pay a performance penalty for using backtracking even though
 
 Because a word boundary isn't the same as, or a subset of, a word character, there's no possibility that the regular expression engine will cross a word boundary when matching word characters. Therefore for this regular expression, backtracking can never contribute to the overall success of any match. It can only degrade performance because the regular expression engine is forced to save its state for each successful preliminary match of a word character.
 
-If you determine that backtracking isn't necessary, you can disable it by using the `(?>subexpression)` language element, known as an atomic group. The following example parses an input string by using two regular expressions. The first, `\b\p{Lu}\w*\b`, relies on backtracking. The second, `\b\p{Lu}(?>\w*)\b`, disables backtracking. As the output from the example shows, they both produce the same result:
+If you determine that backtracking isn't necessary, you can disable it in a couple of ways:
 
-[!code-csharp[Conceptual.RegularExpressions.BestPractices#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/backtrack2.cs#10)]
-[!code-vb[Conceptual.RegularExpressions.BestPractices#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/backtrack2.vb#10)]
+- By setting the <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType> option (introduced in .NET 7). For more information, see [Nonbacktracking mode](regular-expression-options.md#nonbacktracking-mode).
+- By using the `(?>subexpression)` language element, known as an atomic group. The following example parses an input string by using two regular expressions. The first, `\b\p{Lu}\w*\b`, relies on backtracking. The second, `\b\p{Lu}(?>\w*)\b`, disables backtracking. As the output from the example shows, they both produce the same result:
+
+  [!code-csharp[Conceptual.RegularExpressions.BestPractices#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/backtrack2.cs#10)]
+  [!code-vb[Conceptual.RegularExpressions.BestPractices#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/backtrack2.vb#10)]
 
 In many cases, backtracking is essential for matching a regular expression pattern to input text. However, excessive backtracking can severely degrade performance and create the impression that an application has stopped responding. In particular, this problem arises when quantifiers are nested and the text that matches the outer subexpression is a subset of the text that matches the inner subexpression.
 
 > [!WARNING]
-> In addition to avoiding excessive backtracking, you should use the timeout feature to ensure that excessive backtracking doesn't severely degrade regular expression performance. For more information, see the [Use Time-out Values](#use-time-out-values) section.
+> In addition to avoiding excessive backtracking, you should use the timeout feature to ensure that excessive backtracking doesn't severely degrade regular expression performance. For more information, see the [Use time-out values](#use-time-out-values) section.
 
 For example, the regular expression pattern `^[0-9A-Z]([-.\w]*[0-9A-Z])*\$$` is intended to match a part number that consists of at least one alphanumeric character. Any additional characters can consist of an alphanumeric character, a hyphen, an underscore, or a period, though the last character must be alphanumeric. A dollar sign terminates the part number. In some cases, this regular expression pattern can exhibit poor performance because quantifiers are nested, and because the subexpression `[0-9A-Z]` is a subset of the subexpression `[-.\w]*`.
 
@@ -204,7 +204,7 @@ The following example illustrates the use of this regular expression to match an
 [!code-csharp[Conceptual.RegularExpressions.BestPractices#11](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/backtrack4.cs#11)]
 [!code-vb[Conceptual.RegularExpressions.BestPractices#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/backtrack4.vb#11)]
 
-The regular expression language in .NET includes the following language elements that you can use to eliminate nested quantifiers. For more information, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).
+The regular expression language in .NET includes the following language elements that you can use to eliminate nested quantifiers. For more information, see [Grouping constructs](grouping-constructs-in-regular-expressions.md).
 
 |Language element|Description|
 |----------------------|-----------------|

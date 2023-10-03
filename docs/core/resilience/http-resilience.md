@@ -127,7 +127,7 @@ The `Comment` type is defined as follows:
 The standard hedging uses a pool of circuit breakers to ensure that unhealthy endpoints aren't hedged against. By default, the selection from the pool is based on the URL authority (scheme + host + port).
 
 > [!TIP]
-> It's recommended that you configure the way the strategies are selected by calling `StandardHedgingHandlerBuilderExtensions.SelectPipelineByAuthority`.
+> It's recommended that you configure the way the strategies are selected by calling `StandardHedgingHandlerBuilderExtensions.SelectPipelineByAuthority` or `StandardHedgingHandlerBuilderExtensions.SelectPipelineBy` for more advanced scenarios.
 
 The preceding code adds the standard hedging handler to the <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder>. The default configuration chains five resilience strategies in the following order (from the outermost to the innermost):
 
@@ -141,7 +141,7 @@ The preceding code adds the standard hedging handler to the <xref:Microsoft.Exte
 
 ### Customize hedging handler route selection
 
-When using the standard hedging handler, you can customize the way the strategies are selected by calling various extensions on the `IRoutingStrategyBuilder` type. This can be useful for scenarios such as a/b testing, where you want to route a percentage of the requests to a different endpoint:
+When using the standard hedging handler, you can customize the way the request endpoints are selected by calling various extensions on the `IRoutingStrategyBuilder` type. This can be useful for scenarios such as a/b testing, where you want to route a percentage of the requests to a different endpoint:
 
 ```csharp
 // Hedging allows sending multiple concurrent requests.
@@ -272,7 +272,7 @@ builder.AddResilienceHandler(
 The preceding code:
 
 - Adds a resilience handler with the name `"AdvancedPipeline"` as the `pipelineName` to the service container.
-- Enables the reloads of the `RetryStrategyOptions` named `"my-retry-options"` whenever the named options change.
+- Enables the reloads of the `"AdvancedPipeline"` pipeline whenever the named `RetryStrategyOptions` options change.
 - Retrieves the named options from the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> service.
 - Adds a retry strategy with the retrieved options to the resilience builder.
 

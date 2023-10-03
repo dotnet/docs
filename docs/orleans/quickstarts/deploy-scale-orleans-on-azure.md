@@ -3,9 +3,9 @@ title: Deploy and scale an Orleans app on Azure
 description: Host and scale an Orleans app on Azure Container Apps with Azure Container Registry and Azure Storage or Azure Cosmos DB.
 author: alexwolfmsft
 ms.author: alexwolf
+ms.topic: how-to
+ms.devlang: csharp
 ms.date: 10/03/2022
-ms.topic: quickstart
-ms.devlang: how-to
 zone_pivot_groups: orleans-persistence-option
 # CustomerIntent: As a developer, I want to host my Orleans application in Azure so that I can take advantage of the scaling capabilities for the database and application services.
 ---
@@ -272,3 +272,19 @@ Orleans is designed for distributed applications. Even an app as simple as the U
     :::image type="content" source="../media/scale-containers.png" alt-text="A screenshot showing how to scale the container app.":::
 
 After the deployment is finished, repeat the testing steps from the previous section. The app continues to work as expected across several instances and can now handle a higher number of requests.
+
+## Next step
+
+::: zone pivot="azure-storage"
+
+> [!div class="nextstepaction"]
+> [Azure Storage grain persistence](../grains/grain-persistence/azure-storage.md)
+
+::: zone-end
+
+::: zone pivot="azure-cosmos-db-nosql"
+
+> [!div class="nextstepaction"]
+> [Azure Cosmos DB grain persistence](../grains/grain-persistence/azure-cosmos-db.md)
+
+::: zone-end

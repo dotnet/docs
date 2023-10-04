@@ -109,81 +109,11 @@ Rather than creating new objects when reusable functionality needs to be created
 
 Extending predefined types can be difficult with `struct` types because they're passed by value to methods. That means any changes to the struct are made to a copy of the struct. Those changes aren't visible once the extension method exits. You can add the `ref` modifier to the first argument making it a `ref` extension method. The `ref` keyword can appear before or after the `this` keyword without any semantic differences. Adding the `ref` modifier indicates that the first argument is passed by reference. This enables you to write extension methods that change the state of the struct being extended (note that private members are not accessible). Only value types or generic types constrained to struct (see [`struct` constraint](../../language-reference/builtin-types/struct.md#struct-constraint) for more information) are allowed as the first parameter of a `ref` extension method. The following example shows how to use a `ref` extension method to directly modify a built-in type without the need to reassign the result or pass it through a function with the `ref` keyword:
 
-```csharp
-using System;
-
-public static class Extensions
-{
-    public static void Increment(this int number)
-        => number++;
-
-    // Take note of the extra ref keyword here
-    public static void RefIncrement(this ref int number)
-        => number++;
-}
-
-public static class Program
-{
-    public static void Main()
-    {
-        int x = 1;
-
-        // Takes x by value leading to the extension method
-        // Increment modifying its own copy, leaving x unchanged
-        x.Increment();
-        Console.WriteLine($"x is now {x}"); // x is now 1
-
-        // Takes x by reference leading to the extension method
-        // RefIncrement changing the value of x directly
-        x.RefIncrement();
-        Console.WriteLine($"x is now {x}"); // x is now 2
-    }
-}
-```
+:::code language="csharp" source="./snippets/methods/Program.cs" id="Snippet9":::
 
 This next example demonstrates `ref` extension methods for user-defined struct types:
 
-```csharp
-using System;
-
-public struct Account
-{
-    public uint id;
-    public float balance;
-
-    private int secret;
-}
-
-public static class Extensions
-{
-    // ref keyword can also appear before the this keyword
-    public static void Deposit(ref this Account account, float amount)
-    {
-        account.balance += amount;
-
-        // The following line results in an error as an extension
-        // method is not allowed to access private members
-        // account.secret = 1; // CS0122
-    }
-}
-
-public static class Program
-{
-    public static void Main()
-    {
-        Account account = new()
-        {
-            id = 1,
-            balance = 100f
-        };
-
-        Console.WriteLine($"I have ${account.balance}"); // I have $100
-
-        account.Deposit(50f);
-        Console.WriteLine($"I have ${account.balance}"); // I have $150
-    }
-}
-```
+:::code language="csharp" source="./snippets/methods/Program.cs" id="Snippet10":::
 
 ## General Guidelines
 

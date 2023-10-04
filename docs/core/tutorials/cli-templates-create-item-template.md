@@ -87,7 +87,7 @@ Now that the content of the template is finished, the next step is to create the
 
 In this part of the tutorial, your template folder is located at _working\content\extensions_.
 
-Templates are recognized by **dotnet** because they have a special folder and config file that exist at the root of your template folder.
+Templates are recognized by .NET because they have a special folder and config file that exist at the root of your template folder.
 
 First, create a new subfolder named _.template.config_, and enter it. Then, create a new file named _template.json_. Your folder structure should look like this:
 
@@ -139,7 +139,7 @@ The `symbols` part of this JSON object is used to define the parameters that can
 - `fileRename` - Similar to `replaces`, this specifies a text value that is replaced in the names of all of the template files by the value of the parameter.
 - `defaultValue` - The default value of this parameter when the parameter isn't specified by the user.
 
-When the template is used, the user can provide a value for the `ClassName` parameter, and this value replaces all occurrences of `StringExtensions`. If a value isn't provided, the `defaultValue` is used. For this template, there are two occurrences of `StringExtensions`, the file _StringExtensions.cs_ and the class _StringExtensions_. Because the `defaultValue` of the parameter is `StringExtensions`, the file name and class name remain unchanged if the parameter isn't specified when using the template. When a value is specified, for example `dotnet new stringext -ClassName MyExts`, the file name is renamed _MyExts.cs_ and the class is renamed to _MyExts_.
+When the template is used, the user can provide a value for the `ClassName` parameter, and this value replaces all occurrences of `StringExtensions`. If a value isn't provided, the `defaultValue` is used. For this template, there are two occurrences of `StringExtensions`: the file _StringExtensions.cs_ and the class _StringExtensions_. Because the `defaultValue` of the parameter is `StringExtensions`, the file name and class name remain unchanged if the parameter isn't specified when using the template. When a value is specified, for example `dotnet new stringext -ClassName MyExts`, the file is renamed _MyExts.cs_ and the class is renamed to _MyExts_.
 
 To see what parameters are available for a template, use the `-?` parameter with the template name:
 
@@ -193,7 +193,7 @@ Example templates: string extensions              stringext                [C#] 
 
 Now that you have an item template installed, test it.
 
-01. Navigate to the _test/_ folder.
+01. Navigate to the _test_ folder.
 01. Create a new console application with `dotnet new console`, which generates a working project you can easily test with the `dotnet run` command.
 
     ```dotnetcli
@@ -202,7 +202,7 @@ Now that you have an item template installed, test it.
 
     You get output similar to the following.
 
-    ```console
+    ```output
     The template "Console Application" was created successfully.
     
     Processing post-creation actions...
@@ -220,11 +220,11 @@ Now that you have an item template installed, test it.
 
     You get the following output.
 
-    ```console
+    ```output
     Hello, World!
     ```
 
-01. Next, run `dotnet new stringext` to generate the _StringExtensions.cs_ from the template.
+01. Run `dotnet new stringext` to generate the _StringExtensions.cs_ file from the template.
 
     ```dotnetcli
     dotnet new stringext
@@ -232,7 +232,7 @@ Now that you have an item template installed, test it.
 
     You get the following output.
 
-    ```console
+    ```output
     The template "Example templates: string extensions" was created successfully.
     ```
 
@@ -250,11 +250,11 @@ Now that you have an item template installed, test it.
 
     You get the following output.
 
-    ```console
+    ```output
     !dlroW ,olleH
     ```
 
-Congratulations! You created and deployed an item template with .NET. In preparation for the next part of this tutorial series, you must uninstall the template you created. Make sure to delete all files and folders in the _test_ folder too. This gets you back to a clean state ready for the next part of this tutorial.
+Congratulations! You created and deployed an item template with .NET. In preparation for the next part of this tutorial series, uninstall the template you created. Make sure to delete all files and folders in the _test_ folder too. This gets you back to a clean state ready for the next part of this tutorial series.
 
 ## Uninstall the template
 

@@ -41,9 +41,9 @@ In this part of the series you'll learn how to:
 
 * Complete [part 1](cli-templates-create-item-template.md) and [part 2](cli-templates-create-project-template.md) of this tutorial series.
 
-  This tutorial uses the two templates created in the first two parts of this tutorial. You can use a different template as long as you copy the template, as a folder, into the _working\content\\_ folder.
+  This tutorial uses the two templates created in the first two parts of this tutorial series. You can use a different template as long as you copy the template, as a folder, into the _working\content_ folder.
 
-* Open a terminal and navigate to the _working\\_ folder.
+* Open a terminal and navigate to the _working_ folder.
 
 ::: zone pivot="dotnet-8-0"
 
@@ -68,7 +68,7 @@ Template packages are represented by a NuGet package (_.nupkg_) file. And, like 
 
 Normally you use a C# project file to compile code and produce a binary. However, the project can also be used to generate a template package. By changing the settings of the _.csproj_, you can prevent it from compiling any code and instead include all the assets of your templates as resources. When this project is built, it produces a template package NuGet package.
 
-The package you're going to generate will include the [item] and(cli-templates-create-item-template.md) and [package](cli-templates-create-project-template.md) templates previously created.
+The package you're going to generate will include the [item] and(cli-templates-create-item-template.md) and [project](cli-templates-create-project-template.md) templates previously created.
 
 ::: zone pivot="dotnet-8-0"
 
@@ -80,7 +80,7 @@ The [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/package
     dotnet new templatepack -n "AdatumCorporation.Utility.Templates"
     ```
 
-    The `-n` parameter sets the project filename to _AdatumCorporation.Utility.Templates.csproj_. You should see a result similar to the following output.
+    The `-n` parameter sets the project file name to _AdatumCorporation.Utility.Templates.csproj_. You should see a result similar to the following output.
 
     ```output
     The template "Template Package" was created successfully.
@@ -126,7 +126,7 @@ The [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/package
     dotnet new console -n AdatumCorporation.Utility.Templates
     ```
 
-    The `-n` parameter sets the project filename to _AdatumCorporation.Utility.Templates.csproj_. You should see a result similar to the following output.
+    The `-n` parameter sets the project file name to _AdatumCorporation.Utility.Templates.csproj_. You should see a result similar to the following output.
 
     ```output
     The template "Console Application" was created successfully.
@@ -177,12 +177,12 @@ The [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/package
 
 The settings under `<PropertyGroup>` in the XML snippet are broken into two groups.
 
-The first group deals with properties required for a NuGet package. The four `<Package*>` settings have to do with the NuGet package properties to identify your package on a NuGet feed. The `<PackageId>` value, while used by NuGet, is also used to uninstall the template package. The remaining settings, such as `<Title>` and `<PackageTags>`, have to do with metadata displayed on the NuGet feed and `dotnet` package manager. For more information about NuGet settings, see [NuGet and MSBuild properties](/nuget/reference/msbuild-targets).
+The first group deals with properties required for a NuGet package. The four `<Package*>` settings have to do with the NuGet package properties to identify your package on a NuGet feed. The `<PackageId>` value, while used by NuGet, is also used to uninstall the template package. The remaining settings, such as `<Title>` and `<PackageTags>`, have to do with metadata displayed on the NuGet feed and .NET package manager. For more information about NuGet settings, see [NuGet and MSBuild properties](/nuget/reference/msbuild-targets).
 
 > [!NOTE]
 > To ensure that the template package appears in `dotnet new search` results,`<PackageType>` must be set to `Template`.
 
-In the second group, the `<TargetFramework>` setting ensures that MSBuild runs properly when you run the pack command to compile and pack the project. The group also includes settings that have to do with configuring the project to include the templates in the appropriate folder in the NuGet pack when it's created:
+In the second group, the `<TargetFramework>` setting ensures that MSBuild runs properly when you run the pack command to compile and pack the project. The group also includes settings that have to do with configuring the project to include the templates in the appropriate folder in the NuGet package when it's created:
 
 * The `<NoWarn>` setting suppresses a warning message that doesn't apply to template package projects.
 

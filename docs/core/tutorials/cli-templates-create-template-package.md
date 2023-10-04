@@ -30,10 +30,10 @@ In this part of the series you'll learn how to:
 
 > [!div class="checklist"]
 >
-> * Create a \*.csproj project to build a template package
-> * Configure the project file for packing
-> * Install a template package from a NuGet package file
-> * Uninstall a template package by package ID
+> * Create a \*.csproj project to build a template package.
+> * Configure the project file for packing.
+> * Install a template package from a NuGet package file.
+> * Uninstall a template package by package ID.
 
 ::: zone-end
 

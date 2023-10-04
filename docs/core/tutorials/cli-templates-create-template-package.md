@@ -21,8 +21,8 @@ In this part of the series you'll learn how to:
 > [!div class="checklist"]
 >
 > * Create a template package by using the [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/packages/Microsoft.TemplateEngine.Authoring.Templates) NuGet package.
-> * Install a template package from a NuGet package file
-> * Uninstall a template package by package ID
+> * Install a template package from a NuGet package file.
+> * Uninstall a template package by package ID.
 
 ::: zone-end
 

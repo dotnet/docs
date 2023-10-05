@@ -186,7 +186,7 @@ Create an API for NoSQL account to hold the cluster and persistent state data yo
     * Leave the rest of the options at their defaults, and then select **Review**.
     * Select **Create** after Azure validates your settings.
 
-        :::image type="content" source="../media/create-cosmos-db-account.png" alt-text="A screenshot showing how to create an Azure Cosmos DB account.":::
+        :::image type="content" source="../media/create-cosmos-db-account.png" alt-text="A screenshot showing how to create an Azure Cosmos DB account." lightbox="../media/create-cosmos-db-account.png":::
 
 1. Select **Go to resource** after the storage account is created.
 
@@ -267,7 +267,7 @@ Optionally, you can verify that the cluster and state data is stored as expected
     * **OrleansSiloInstances**: This table tracks essential silo data for the Orleans cluster.
 1. Select the **OrleansGrainState** table. The table holds a row entry for every URL redirect persisted by the app during your testing.
 
-    :::image type="content" source="../media/table-storage.png" alt-text="A screenshot showing Orleans data in Azure Table Storage.":::
+    :::image type="content" source="../media/storage-table-entities.png" alt-text="A screenshot showing Orleans data in Azure Table Storage.":::
 
 ::: zone-end
 

@@ -97,7 +97,7 @@ public Task NavigateToAsync(string route, IDictionary<string, object> routeParam
 The .NET MAUI `Shell` control is already familiar with route-based navigation, so the `NavigateToAsync` method works to mask this functionality. The `NavigateToAsync` method allows navigation data to be specified as an argument that's passed to the view-model being navigated to, where it's typically used to perform initialization. For more information, see [Passing parameters during navigation](#passing-parameters-during-navigation).
 
 > [!IMPORTANT]
-> There are multiple ways to perform navigation in .NET MAUI. The `MauiNavigationService` is specifically build to work with `Shell`. If you are using a `NavigationPage` or `TabbedPAge` or a different navigation mechanism, this routing service would have to be updated to work using those components.
+> There are multiple ways to perform navigation in .NET MAUI. The `MauiNavigationService` is specifically build to work with `Shell`. If you are using a `NavigationPage` or `TabbedPage` or a different navigation mechanism, this routing service would have to be updated to work using those components.
 
 In order to register routes for the `MauiNavigationService` we need to supply route information from XAML or in the code-behind. The following example shows registration of routes via XAML.
 

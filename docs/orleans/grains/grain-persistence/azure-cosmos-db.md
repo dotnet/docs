@@ -12,7 +12,7 @@ The Azure Cosmos DB grain persistence provider supports the [API for NoSQL](/azu
 
 ## Install NuGet package
 
-Install the [Microsoft.Orleans.Persistence.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.Cosmos) and [Microsoft.Orleans.Clustering.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cosmos) packages from NuGet. The Azure Cosmos DB provider stores state in a container item.
+Install the [Microsoft.Orleans.Persistence.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Persistence.Cosmos) and [Microsoft.Orleans.Clustering.Cosmos](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cosmos) NuGet packages. The Azure Cosmos DB provider stores state in a container item.
 
 > [!IMPORTANT]
 > The default database name used by the provider is **Orleans**. The default clustering container name is **OrleansCluster** and the default storage container name is **OrleansStorage**. The cluster container expects a partition key value of `/ClusterId` and the storage container expects `/PartitionKey`.

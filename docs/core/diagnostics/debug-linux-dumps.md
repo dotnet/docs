@@ -62,4 +62,4 @@ Dumps collected from a Linux machine can also be analyzed on a Windows machine u
 - [dotnet-symbol](dotnet-symbol.md) for more details on installing and using the symbol download tool.
 - [.NET Core diagnostics repo](https://github.com/dotnet/diagnostics/blob/main/documentation/) for more details on debugging, including a useful FAQ.
 - [Installing LLDB](https://github.com/dotnet/diagnostics/blob/main/documentation/sos.md#getting-lldb) for instructions on installing LLDB on Linux or Mac.
-- [Practice and troubleshoot on Linux](https://learn.microsoft.com/en-us/troubleshoot/developer/webapps/aspnetcore/practice-troubleshoot-linux/introduction) for tutorial on debugging crash dumps on Linux
+- [Practice and troubleshoot on Linux](/troubleshoot/developer/webapps/aspnetcore/practice-troubleshoot-linux/introduction) for tutorial on debugging crash dumps on Linux

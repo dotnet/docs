@@ -5,7 +5,7 @@ ms.date: 10/05/2023
 ---
 # --arch option doesn't imply self-contained
 
-Up until now, the `--arch` option for `dotnet` CLI commands such as [dotnet publish](../../../tools/dotnet-publish.md) implied that the app was [self-contained](../../../deploying/index.md#publish-self-contained). The behavior of the `--arch` option has now been changed to match that of the `--runtime option`, and it no longer implies that an app is self-contained.
+Up until now, the `--arch` option for `dotnet` CLI commands such as [dotnet publish](../../../tools/dotnet-publish.md) implied that the app was [self-contained](../../../deploying/index.md#publish-self-contained). The behavior of the `--arch` option has now been changed to match that of the `--runtime` option, and it no longer implies that an app is self-contained.
 
 ## Previous behavior
 

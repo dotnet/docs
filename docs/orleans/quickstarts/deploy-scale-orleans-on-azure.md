@@ -61,7 +61,7 @@ Prior to using the grain, you must install the corresponding **clustering** and 
 
 The sample app is currently configured to create a localhost cluster and persist grains in memory. When hosted in Azure, Orleans can be configured to use more scalable, centralized state using services like Azure Table Storage and Azure Blob Storage.
 
-Update the `builder` configuration code in the `Program.cs` file to match the example here, which implements these key concepts:
+Update the `builder` configuration code in the _Program.cs_ file to match the example here, which implements these key concepts:
 
 ::: zone pivot="azure-storage"
 

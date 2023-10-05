@@ -142,7 +142,7 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 
 - **`-c|--command <debug_command>`**
 
-  Specifies the [command](#analyze-sos-commands) to run in the shell on start.
+  Runs the [command](#analyze-sos-commands) on start. Multiple instances of this parameter can be used in an invocation to chain commands. Commands will get run in the order that they are provided on the command line. If you want dotnet dump to exit after the commands, your last command should be 'exit'.
 
 ### Analyze SOS commands
 

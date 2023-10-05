@@ -19,7 +19,7 @@ Install the [Microsoft.Orleans.Persistence.Cosmos](https://www.nuget.org/package
 
 ## Configure clustering provider
 
-Configure the clustering provider using the `HostingExtensions.UseCosmosClustering` extension method.
+To configure the clustering provider use the `HostingExtensions.UseCosmosClustering` extension method.
 
 ```csharp
 siloBuilder.UseCosmosClustering(

@@ -18,10 +18,10 @@ The following steps show how you can use Http retries with Polly integrated into
 
 First, you will need to install the `Microsoft.Extensions.Http.Polly` package.
 
-- [Install with Visual Studio](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio)
-- [Install with dotnet CLI](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-dotnet-cli)
-- [Install with nuget.exe CLI](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-nuget-cli)
-- [Install with Package Manager Console (PowerShell)](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-powershell)
+- [Install with Visual Studio](/nuget/consume-packages/install-use-packages-visual-studio)
+- [Install with dotnet CLI](/nuget/consume-packages/install-use-packages-dotnet-cli)
+- [Install with nuget.exe CLI](/nuget/consume-packages/install-use-packages-nuget-cli)
+- [Install with Package Manager Console (PowerShell)](/nuget/consume-packages/install-use-packages-powershell)
 
 **Reference the .NET 7 packages**
 

@@ -79,7 +79,7 @@ The `ref` return value is an alias to another variable in the called method's sc
 - If you pass it to another method *by reference*, you're passing a reference to the variable it aliases.
 - When you make a [ref local](declarations.md#reference-variables) alias, you make a new alias to the same variable.
 
-A ref return must be [*ref-safe-context*](../keywords/method-parameters.md#scope-of-references-and-values) to the calling method. That means:
+A ref return must be [*ref-safe-context*](../keywords/method-parameters.md#safe-context-of-references-and-values) to the calling method. That means:
 
 - The return value must have a lifetime that extends beyond the execution of the method. In other words, it can't be a local variable in the method that returns it. It can be an instance or static field of a class, or it can be an argument passed to the method. Attempting to return a local variable generates compiler error CS8168, "Can't return local 'obj' by reference because it isn't a ref local."
 - The return value can't be the literal `null`. A method with a ref return can return an alias to a variable whose value is currently the `null` (uninstantiated) value or a [nullable value type](../../language-reference/builtin-types/nullable-value-types.md) for a value type.

@@ -23,11 +23,11 @@ Configure the clustering provider using the `HostingExtensions.UseCosmosClusteri
 
 ```csharp
 siloBuilder.UseCosmosClustering(
-    configureOptions: options =>
+    configureOptions: static options =>
     {
-        o.DatabaseName = "Orleans";
-        o.DatabaseThroughput = 400;
-        o.ContainerName = "OrleansCluster";
+        options.DatabaseName = "Orleans";
+        options.DatabaseThroughput = 400;
+        options.ContainerName = "OrleansCluster";
         options.ConfigureCosmosClient("AccountName=example;Key=example;");
     });
 ```

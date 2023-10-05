@@ -19,7 +19,7 @@ What type of application might be a candidate for cloud native?
 
 - An application that requires a high release velocity - with high confidence
 
-- A system with where individual features must release *without* a full redeployment of the entire system
+- A system where individual features must release *without* a full redeployment of the entire system
 
 - An application developed by teams with expertise in different technology stacks
 

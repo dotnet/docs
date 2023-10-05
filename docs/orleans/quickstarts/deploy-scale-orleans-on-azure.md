@@ -1,8 +1,6 @@
 ---
 title: Deploy and scale an Orleans app on Azure
 description: Host and scale an Orleans app on Azure Container Apps with Azure Container Registry and Azure Storage or Azure Cosmos DB.
-author: alexwolfmsft
-ms.author: alexwolf
 ms.topic: how-to
 ms.devlang: csharp
 ms.date: 10/03/2023

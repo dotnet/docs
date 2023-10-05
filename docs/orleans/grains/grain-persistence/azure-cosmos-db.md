@@ -31,6 +31,7 @@ siloBuilder.UseCosmosClustering(
         options.ConfigureCosmosClient("AccountName=example;Key=example;");
     });
 ```
+
 ## Configure storage provider
 
 Configure the Azure Cosmos DB grain persistence provider using the `HostingExtensions.AddCosmosGrainStorage` extension method.

@@ -38,11 +38,11 @@ Configure the Azure Cosmos DB grain persistence provider using the `HostingExten
 ```csharp
 siloBuilder.AddCosmosGrainStorage(
     name: "profileStore",
-    configureOptions: options =>
+    configureOptions: static options =>
     {
-        o.DatabaseName = "Orleans";
-        o.DatabaseThroughput = 400;
-        o.ContainerName = "OrleansStorage";
+        options.DatabaseName = "Orleans";
+        options.DatabaseThroughput = 400;
+        options.ContainerName = "OrleansStorage";
         options.ConfigureCosmosClient("AccountName=example;Key=example;");
     });
 ```

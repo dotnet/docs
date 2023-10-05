@@ -2,7 +2,7 @@
 title: What's new in .NET 8
 description: Learn about the new .NET features introduced in .NET 8.
 titleSuffix: ""
-ms.date: 09/26/2023
+ms.date: 10/05/2023
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
@@ -11,7 +11,7 @@ author: gewarren
 
 .NET 8 is the successor to [.NET 7](dotnet-7.md). It will be [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 8 here](https://dotnet.microsoft.com/download/dotnet).
 
-This article has been updated for .NET 8 release candidate (RC) 1.
+This article has been updated for .NET 8 release candidate (RC) 2.
 
 > [!IMPORTANT]
 >
@@ -649,6 +649,7 @@ This section contains the following subtopics:
 - [Extensions metrics](#extensions-metrics)
 - [Hosted lifecycle services](#hosted-lifecycle-services)
 - [Keyed DI services](#keyed-di-services)
+- [System.Numerics.Tensors.TensorPrimitives](#systemnumericstensorstensorprimitives)
 
 ### Keyed DI services
 
@@ -864,6 +865,16 @@ Assert.Equal(3, collector.LastMeasurement.Value);
 Assert.Empty(collector.LastMeasurement.Tags);
 Assert.Equal(now, collector.LastMeasurement.Timestamp);
 ```
+
+### System.Numerics.Tensors.TensorPrimitives
+
+The [System.Numerics.Tensors.TensorPrimitives](https://www.nuget.org/packages/System.Numerics.Tensors.TensorPrimitives) NuGet package adds built-in .NET support for tensor operations. The tensor primitives are the next step in the evolution of numerics for AI in .NET. They build on top of [hardware intrinsics](xref:System.Runtime.Intrinsics) and [generic math](../../standard/generics/math.md) to optimize data-intensive workloads like those of AI and machine learning.
+
+AI workloads like semantic search and retrieval-augmented generation (RAG) extend the natural language capabilities of large language models such as ChatGPT by augmenting prompts with relevant data. For these workloads, operations on vectors&mdash;like *cosine similarity* to find the most relevant data to answer a question&mdash;are crucial. The System.Numerics.Tensors.TensorPrimitives package provides APIs for vector operations, meaning you don't need to take an external dependency or write your own implementation.
+
+This package replaces the [System.Numerics.Tensors package](https://www.nuget.org/packages/System.Numerics.Tensors).
+
+For more information, see the [Announcing .NET 8 RC 2 blog post](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-rc2/).
 
 ## Garbage collection
 
@@ -1107,6 +1118,7 @@ Physical promotion removes these limitations, which fixes a number of long-stand
 
 This section contains the following subtopics:
 
+- [CLI-based project evaluation](#cli-based-project-evaluation)
 - [Terminal build output](#terminal-build-output)
 - [Simplified output paths](#simplified-output-paths)
 - ['dotnet workload clean' command](#dotnet-workload-clean-command)
@@ -1114,6 +1126,46 @@ This section contains the following subtopics:
 - [Template engine](#template-engine)
 - [Source Link](#source-link)
 - [Source-build SDK](#source-build-sdk)
+
+### CLI-based project evaluation
+
+MSBuild includes a new feature that makes it easier to incorporate data from MSBuild into your scripts or tools. The following new flags are available for CLI commands such as [dotnet publish](../tools/dotnet-publish.md) to obtain data for use in CI pipelines and elsewhere.
+
+| Flag  | Description  |
+|---------|---------|
+| `--getProperty:<PROPERTYNAME>` | Retrieves the MSBuild property with the specified name. |
+| `--getItem:<ITEMTYPE>` | Retrieves MSBuild items of the specified type. |
+| `--getTargetResults:<TARGETNAME>` | Retrieves the outputs from running the specified target. |
+
+Values are written to the standard output. Multiple or complex values are output as JSON, as shown in the following examples.
+
+```dotnetcli
+>dotnet publish --getProperty:OutputPath
+bin\Release\net8.0\
+```
+
+```dotnetcli
+> dotnet publish -p PublishProfile=DefaultContainer --getProperty:GeneratedContainerDigest --getProperty:GeneratedContainerConfiguration
+{
+  "Properties": {
+    "GeneratedContainerDigest": "sha256:ef880a503bbabcb84bbb6a1aa9b41b36dc1ba08352e7cd91c0993646675174c4",
+    "GeneratedContainerConfiguration": "{\u0022config\u0022:{\u0022ExposedPorts\u0022:{\u00228080/tcp\u0022:{}},\u0022Labels\u0022...}}"
+  }
+}
+```
+
+```dotnetcli
+>dotnet publish -p PublishProfile=DefaultContainer --getItem:ContainerImageTags
+{
+  "Items": {
+    "ContainerImageTags": [
+      {
+        "Identity": "latest",
+		...
+    ]
+  }
+}
+```
 
 ### Terminal build output
 
@@ -1317,6 +1369,7 @@ Composite images are available for the Alpine Linux, Jammy Chiseled, and Mariner
 
 - [Performance and compatibility](#performance-and-compatibility)
 - [Authentication](#authentication)
+- [Publish to tar.gz archive](#publish-to-targz-archive)
 
 #### Performance and compatibility
 
@@ -1334,6 +1387,18 @@ These improvements also mean that more registries are supported: Harbor, Artifac
 ```
 
 For more information containerizing .NET apps, see [Containerize a .NET app with dotnet publish](../docker/publish-as-container.md).
+
+#### Publish to tar.gz archive
+
+Starting in .NET 8, you can create a container directly as a *tar.gz* archive. This feature is useful if your workflow isn't straightforward and requires that you, for example, run a scanning tool over your images before pushing them. Once the archive is created, you can move it, scan it, or load it into a local Docker toolchain.
+
+To publish to an archive, add the `ContainerArchiveOutputPath` property to your `dotnet publish` command, for example:
+
+```dotnetcli
+dotnet publish -p PublishProfile=DefaultContainer -p ContainerArchiveOutputPath=./images/sdk-container-demo.tar.gz
+```
+
+You can specify either a folder name or a path with a specific file name.
 
 ## Source-generated COM interop
 
@@ -1478,6 +1543,7 @@ You can opt out of verification by setting the environment variable `DOTNET_NUGE
 
 ### .NET blog
 
+- [Announcing .NET 8 RC 2](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-rc2/)
 - [Announcing .NET 8 RC 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-rc1/)
 - [Announcing .NET 8 Preview 7](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-7/)
 - [Announcing .NET 8 Preview 6](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-6/)
@@ -1486,6 +1552,7 @@ You can opt out of verification by setting the environment variable `DOTNET_NUGE
 - [Announcing .NET 8 Preview 3](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-3/)
 - [Announcing .NET 8 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-2/)
 - [Announcing .NET 8 Preview 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-1/)
+- [ASP.NET Core updates in .NET 8 RC 2](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-rc-2/)
 - [ASP.NET Core updates in .NET 8 RC 1](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-rc-1/)
 - [ASP.NET Core updates in .NET 8 Preview 7](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-7/)
 - [ASP.NET Core updates in .NET 8 Preview 6](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-6/)

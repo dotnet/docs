@@ -5,7 +5,7 @@ author: alexwolfmsft
 ms.author: alexwolf
 ms.topic: how-to
 ms.devlang: csharp
-ms.date: 10/03/2022
+ms.date: 10/03/2023
 zone_pivot_groups: orleans-persistence-option
 # CustomerIntent: As a developer, I want to host my Orleans application in Azure so that I can take advantage of the scaling capabilities for the database and application services.
 ---

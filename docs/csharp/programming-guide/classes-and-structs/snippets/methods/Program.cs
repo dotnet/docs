@@ -18,7 +18,6 @@ abstract class Motorcycle
 //<Snippet2>
 class TestMotorcycle : Motorcycle
 {
-
     public override double GetTopSpeed()
     {
         return 108.4;
@@ -26,7 +25,6 @@ class TestMotorcycle : Motorcycle
 
     static void Main()
     {
-
         TestMotorcycle moto = new TestMotorcycle();
 
         moto.StartEngine();
@@ -110,7 +108,7 @@ class SimpleMath
 
 class TestSimpleMath
 {
-    static void test()
+    static void Test()
     {
         SimpleMath obj = new SimpleMath();
 
@@ -128,3 +126,73 @@ class TestSimpleMath
         //</Snippet8>
     }
 }
+
+//<Snippet9>
+public static class IntExtensions
+{
+    public static void Increment(this int number)
+        => number++;
+
+    // Take note of the extra ref keyword here
+    public static void RefIncrement(this ref int number)
+        => number++;
+}
+
+public static class IntProgram
+{
+    public static void Test()
+    {
+        int x = 1;
+
+        // Takes x by value leading to the extension method
+        // Increment modifying its own copy, leaving x unchanged
+        x.Increment();
+        Console.WriteLine($"x is now {x}"); // x is now 1
+
+        // Takes x by reference leading to the extension method
+        // RefIncrement changing the value of x directly
+        x.RefIncrement();
+        Console.WriteLine($"x is now {x}"); // x is now 2
+    }
+}
+//</Snippet9>
+
+//<Snippet10>
+public struct Account
+{
+    public uint id;
+    public float balance;
+
+    private int secret;
+}
+
+public static class AccountExtensions
+{
+    // ref keyword can also appear before the this keyword
+    public static void Deposit(ref this Account account, float amount)
+    {
+        account.balance += amount;
+
+        // The following line results in an error as an extension
+        // method is not allowed to access private members
+        // account.secret = 1; // CS0122
+    }
+}
+
+public static class AccountProgram
+{
+    public static void Test()
+    {
+        Account account = new()
+        {
+            id = 1,
+            balance = 100f
+        };
+
+        Console.WriteLine($"I have ${account.balance}"); // I have $100
+
+        account.Deposit(50f);
+        Console.WriteLine($"I have ${account.balance}"); // I have $150
+    }
+}
+//</Snippet10>

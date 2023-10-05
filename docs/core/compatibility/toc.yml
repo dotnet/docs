@@ -142,6 +142,8 @@ items:
         href: sdk/8.0/msbuild-language.md
       - name: Runtime-specific apps not self-contained
         href: sdk/8.0/runtimespecific-app-default.md
+      - name: --arch option doesn't imply self-contained
+        href: sdk/8.0/arch-option.md
       - name: SDK uses a smaller RID graph
         href: sdk/8.0/rid-graph.md
       - name: Trimming may not be used with .NET Standard or .NET Framework
@@ -1504,6 +1506,8 @@ items:
         href: sdk/8.0/msbuild-language.md
       - name: Runtime-specific apps not self-contained
         href: sdk/8.0/runtimespecific-app-default.md
+      - name: --arch option doesn't imply self-contained
+        href: sdk/8.0/arch-option.md
       - name: SDK uses a smaller RID graph
         href: sdk/8.0/rid-graph.md
       - name: Trimming may not be usedwith .NET Standard or .NET Framework

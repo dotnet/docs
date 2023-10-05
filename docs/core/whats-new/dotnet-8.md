@@ -1161,7 +1161,7 @@ bin\Release\net8.0\
     "ContainerImageTags": [
       {
         "Identity": "latest",
-		...
+        ...
     ]
   }
 }

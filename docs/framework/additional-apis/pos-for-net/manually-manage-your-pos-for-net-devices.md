@@ -171,7 +171,7 @@ The following table lists posdm.exe commands and the equivalent XML that you mus
 <td><p>The service object search paths are all of the values under the registry key:</p>
 <p><strong>HKLM\Software\Wow6432Node\Posfor.NET\ControlAssemblies</strong></p>
 <p>The default search path is:</p>
-<p><em>%CommonProgramFiles(x86)%</em>\Microsoft Shared\Point Of Service\Control Assemblies\</p>
+<p>*%CommonProgramFiles(x86)%*\Microsoft Shared\Point Of Service\Control Assemblies\</p>
 <p>POS for .NET will attempt to load all service object DLL's found in these paths.</p></td>
 <td></td>
 </tr>

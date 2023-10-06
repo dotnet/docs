@@ -326,7 +326,7 @@ After an event is handled, the component is rendered to account for any componen
 {
     @if (message == null)
     {
-        <p><em>Loading...</em></p>
+        <p>*Loading...*</p>
     }
     else
     {

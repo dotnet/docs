@@ -72,6 +72,8 @@ We recommend that you use the stable version of the scripts:
 - Bash (Linux/macOS): <https://dot.net/v1/dotnet-install.sh>
 - PowerShell (Windows): <https://dot.net/v1/dotnet-install.ps1>
 
+The source for the scripts is in the [dotnet/install-scripts](https://github.com/dotnet/install-scripts) GitHub repository.
+
 ### Script behavior
 
 Both scripts have the same behavior. They download the ZIP/tarball file from the CLI build drops and proceed to install it in either the default location or in a location specified by `-InstallDir|--install-dir`.

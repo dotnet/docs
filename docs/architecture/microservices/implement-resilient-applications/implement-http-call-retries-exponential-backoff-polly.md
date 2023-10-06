@@ -14,20 +14,20 @@ Polly is a .NET library that provides resilience and transient-fault handling ca
 
 The following steps show how you can use Http retries with Polly integrated into `IHttpClientFactory`, which is explained in the previous section.
 
+**Install .NET packages**
+
+First, you will need to install the `Microsoft.Extensions.Http.Polly` package.
+
+- [Install with Visual Studio](/nuget/consume-packages/install-use-packages-visual-studio)
+- [Install with dotnet CLI](/nuget/consume-packages/install-use-packages-dotnet-cli)
+- [Install with nuget.exe CLI](/nuget/consume-packages/install-use-packages-nuget-cli)
+- [Install with Package Manager Console (PowerShell)](/nuget/consume-packages/install-use-packages-powershell)
+
 **Reference the .NET 7 packages**
 
 `IHttpClientFactory` is available since .NET Core 2.1, however, we recommend you use the latest .NET 7 packages from NuGet in your project. You typically also need to reference the extension package `Microsoft.Extensions.Http.Polly`.
 
 **Configure a client with Polly's Retry policy, in app startup**
-
-As shown in previous sections, you need to define a named or typed client HttpClient configuration in your standard _Program.cs_ app configuration. Now you add incremental code specifying the policy for the Http retries with exponential backoff, as follows:
-
-```csharp
-// Program.cs
-builder.Services.AddHttpClient<IBasketService, BasketService>()
-        .SetHandlerLifetime(TimeSpan.FromMinutes(5))  //Set lifetime to five minutes
-        .AddPolicyHandler(GetRetryPolicy());
-```
 
 The **AddPolicyHandler()** method is what adds policies to the `HttpClient` objects you'll use. In this case, it's adding a Polly's policy for Http Retries with exponential backoff.
 
@@ -42,6 +42,15 @@ static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
         .WaitAndRetryAsync(6, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2,
                                                                     retryAttempt)));
 }
+```
+
+As shown in previous sections, you need to define a named or typed client HttpClient configuration in your standard _Program.cs_ app configuration. Now you add incremental code specifying the policy for the Http retries with exponential backoff, as follows:
+
+```csharp
+// Program.cs
+builder.Services.AddHttpClient<IBasketService, BasketService>()
+        .SetHandlerLifetime(TimeSpan.FromMinutes(5))  //Set lifetime to five minutes
+        .AddPolicyHandler(GetRetryPolicy());
 ```
 
 With Polly, you can define a Retry policy with the number of retries, the exponential backoff configuration, and the actions to take when there's an HTTP exception, such as logging the error. In this case, the policy is configured to try six times with an exponential retry, starting at two seconds.

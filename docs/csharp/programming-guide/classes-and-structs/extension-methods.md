@@ -107,7 +107,13 @@ static class DomainEntityExtensions
 
 Rather than creating new objects when reusable functionality needs to be created, we can often extend an existing type, such as a .NET or CLR type. As an example, if we don't use extension methods, we might create an `Engine` or `Query` class to do the work of executing a query on a SQL Server that may be called from multiple places in our code. However we can instead extend the <xref:System.Data.SqlClient.SqlConnection?displayProperty=nameWithType> class using extension methods to perform that query from anywhere we have a connection to a SQL Server. Other examples might be to add common functionality to the <xref:System.String?displayProperty=nameWithType> class, extend the data processing capabilities of the <xref:System.IO.File?displayProperty=nameWithType> and <xref:System.IO.Stream?displayProperty=nameWithType> objects, and <xref:System.Exception?displayProperty=nameWithType> objects for specific error handling functionality. These types of use-cases are limited only by your imagination and good sense.
 
-Extending predefined types can be difficult with `struct` types because they're passed by value to methods. That means any changes to the struct are made to a copy of the struct. Those changes aren't visible once the extension method exits. You can add the `ref` modifier to the first argument of an extension method. Adding the `ref` modifier means the first argument is passed by reference. This enables you to write extension methods that change the state of the struct being extended.
+Extending predefined types can be difficult with `struct` types because they're passed by value to methods. That means any changes to the struct are made to a copy of the struct. Those changes aren't visible once the extension method exits. You can add the `ref` modifier to the first argument making it a `ref` extension method. The `ref` keyword can appear before or after the `this` keyword without any semantic differences. Adding the `ref` modifier indicates that the first argument is passed by reference. This enables you to write extension methods that change the state of the struct being extended (note that private members are not accessible). Only value types or generic types constrained to struct (see [`struct` constraint](../../language-reference/builtin-types/struct.md#struct-constraint) for more information) are allowed as the first parameter of a `ref` extension method. The following example shows how to use a `ref` extension method to directly modify a built-in type without the need to reassign the result or pass it through a function with the `ref` keyword:
+
+:::code language="csharp" source="./snippets/methods/Program.cs" id="Snippet9":::
+
+This next example demonstrates `ref` extension methods for user-defined struct types:
+
+:::code language="csharp" source="./snippets/methods/Program.cs" id="Snippet10":::
 
 ## General Guidelines
 

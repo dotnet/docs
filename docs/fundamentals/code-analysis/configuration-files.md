@@ -98,6 +98,18 @@ Consider the following naming recommendations:
 > [!NOTE]
 > The top-level entry `is_global = true` is not required when the file is named `.globalconfig`, but it is recommended for clarity.
 
+### Distribution in NuGet packages
+
+Global AnalyzerConfig files can be distributed with NuGet packages. To do so, add a [*.props* file](/nuget/concepts/msbuild-props-and-targets) to the NuGet package. In the *.props* file, add a `GlobalAnalyzerConfigFiles` item under the `Project` node:
+
+```xml
+<Project>
+  <ItemGroup>
+    <GlobalAnalyzerConfigFiles Include="Relative/Path/to/PackageName.globalconfig" />
+  </ItemGroup>
+</Project>
+```
+
 ### Example
 
 Following is an example global AnalyzerConfig file to configure options and rule severity at the project level:

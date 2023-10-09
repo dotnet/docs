@@ -12,7 +12,7 @@ This article describes the networking metrics built-in for <xref:System.Net> pro
 see [here](available-counters.md).
 
 - [Meter: `System.Net.NameResolution`](#meter-systemnetnameresolution) - Metrics for DNS lookups
-  * [Instrument: `dns.lookups.duration`](#instrument-dnslookupsduration)
+  * [Instrument: `dns.lookup.duration`](#instrument-dnslookupduration)
 - [Meter: `System.Net.Http`](#meter-systemnethttp) - Metrics for outbound networking requests using HttpClient
   * [Instrument: `http.client.open_connections`](#instrument-httpclientopen_connections)
   * [Instrument: `http.client.connection.duration`](#instrument-httpclientconnectionduration)
@@ -22,11 +22,11 @@ see [here](available-counters.md).
 
 ## Meter: `System.Net.NameResolution`
 
-### Instrument: `dns.lookups.duration`
+### Instrument: `dns.lookup.duration`
 
 | Name     | Instrument Type | Unit | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `dns.lookups.duration` | Histogram | `s` | Measures the time taken to perform a DNS lookup. |
+| `dns.lookup.duration` | Histogram | `s` | Measures the time taken to perform a DNS lookup. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -54,8 +54,8 @@ Available starting in: .NET 8
 | `server.socket.address` | string | Server address of the socket connection - IP address or Unix domain socket name. | `10.5.3.2` | Always |
 | `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
 
-<xref:System.Net.Http.HttpClient> uses a cached pool of network connections when sending HTTP messages. This metric counts how many connections are currently
-in the pool. Active connections are currently transmitting data or awaiting replies on already sent messages. Idle connections aren't currently handling any
+<xref:System.Net.Http.HttpClient>, when configured to use the default <xref:System.Net.Http.SocketsHttpHandler>, maintains a cached pool of network connections for sending HTTP messages. This metric counts how many connections are currently
+in the pool. Active connections are handling active requests. Active connects could be transmitting data or awaiting the client or server. Idle connections aren't handling any
 requests, but are left open so that future requests can be handled more quickly.
 
 Available starting in: .NET 8
@@ -73,6 +73,8 @@ Available starting in: .NET 8
 | `server.port` | int | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | If not default (`80` for `http` scheme, `443` for `https`) |
 | `server.socket.address` | string | Server address of the socket connection - IP address or Unix domain socket name. | `10.5.3.2` | Always |
 | `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
+
+This metric is only captured when <xref:System.Net.Http.HttpClient> is configured to use the default <xref:System.Net.Http.SocketsHttpHandler>.
 
 Available starting in: .NET 8
 
@@ -92,9 +94,9 @@ Available starting in: .NET 8
 | `server.port` | int | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | If not default (`80` for `http` scheme, `443` for `https`) |
 | `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
 
-Client request duration measures time it takes for the call time to underlying client handler to complete request.
-If request was sent with `HttpCompletionOption.ResponseContentRead` option (the default value) then metric records
-time to last byte, otherwise (if `HttpCompletionOption.ResponseHeadersRead` was set), metric records time it took to receive response headers.
+HTTP client request duration measures the time the underlying client handler takes to complete the request.
+If the request was sent with `HttpCompletionOption.ResponseContentRead` option (the default value) then this metric records
+time to last byte, otherwise if `HttpCompletionOption.ResponseHeadersRead` was set, this metric records time it took to receive response headers.
 
 Available starting in: .NET 8
 
@@ -112,9 +114,9 @@ Available starting in: .NET 8
 | `server.port` | int | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | If not default (`80` for `http` scheme, `443` for `https`) |
 | `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
 
-HttpClient sends HTTP requests using a pool of network connections. If all connections are already busy handling other requests, new requests are placed in a queue and
-wait until a network connection is available for use. This instrument measures the amount of time HTTP requests spend waiting in that queue, prior to anything being
-sent across the network.
+<xref:System.Net.Http.HttpClient>, when configured to use the default <xref:System.Net.Http.SocketsHttpHandler>, sends HTTP requests using a pool of network connections.
+If all connections are already busy handling other requests, new requests are placed in a queue and wait until a network connection is available for use. This instrument
+measures the amount of time HTTP requests spend waiting in that queue, prior to anything being sent across the network.
 
 Available starting in: .NET 8
 
@@ -132,6 +134,6 @@ Available starting in: .NET 8
 | `server.port` | int | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | If not default (`80` for `http` scheme, `443` for `https`) |
 | `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
 
-Requests are considered active for the same time period that is measured by the [http.client.request.duration](#instrument-httpclientrequestduration) instrument.
+This metric counts how many requests are considered active. Requests are active for the same time period that is measured by the [http.client.request.duration](#instrument-httpclientrequestduration) instrument.
 
 Available starting in: .NET 8

@@ -2,7 +2,7 @@
 title: "Breaking change: .NET 8 obsoletions with custom IDs"
 titleSuffix: ""
 description: Learn about the .NET 8 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
-ms.date: 09/08/2023
+ms.date: 10/09/2023
 ---
 # API obsoletions with non-default diagnostic IDs (.NET 8)
 
@@ -18,6 +18,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 | - | - |
 | [SYSLIB0011](../../../../fundamentals/syslib-diagnostics/syslib0011.md) | BinaryFormatter serialization is obsolete | Warning/error |
 | [SYSLIB0048](../../../../fundamentals/syslib-diagnostics/syslib0048.md) | <xref:System.Security.Cryptography.RSA.EncryptValue(System.Byte[])?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.DecryptValue(System.Byte[])?displayProperty=nameWithType> are obsolete. Use <xref:System.Security.Cryptography.RSA.Encrypt%2A?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.Decrypt%2A?displayProperty=nameWithType> instead. | Warning |
+| [SYSLIB0049](../../../../fundamentals/syslib-diagnostics/syslib0049.md) | JsonSerializerOptions.AddContext is obsolete. To register a JsonSerializerContext, use either the TypeInfoResolver or TypeInfoResolverChain property. | Warning |
 | [SYSLIB0050](../../../../fundamentals/syslib-diagnostics/syslib0050.md) | Formatter-based serialization is obsolete and should not be used. | Warning |
 | [SYSLIB0051](../../../../fundamentals/syslib-diagnostics/syslib0051.md) | APIs that support obsolete formatter-based serialization are obsolete. They should not be called or extended by application code. | Warning |
 | [SYSLIB0052](../../../../fundamentals/syslib-diagnostics/syslib0052.md) | APIs that support obsolete mechanisms for Regex extensibility are obsolete. | Warning |
@@ -52,6 +53,10 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 - <xref:System.Security.Cryptography.RSA.DecryptValue(System.Byte[])?displayProperty=fullName>
 - <xref:System.Security.Cryptography.RSACryptoServiceProvider.EncryptValue(System.Byte[])?displayProperty=fullName>
 - <xref:System.Security.Cryptography.RSACryptoServiceProvider.DecryptValue(System.Byte[])?displayProperty=fullName>
+
+### SYSLIB0049
+
+- <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=fullName>
 
 ### SYSLIB0050
 

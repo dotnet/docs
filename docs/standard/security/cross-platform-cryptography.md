@@ -67,7 +67,7 @@ The `libcrypto.0.9.7.dylib` and `libcrypto.0.9.8.dylib` libraries included in ma
 
 ### AES-GCM and ChaCha20Poly1305 on macOS
 
-MacOS did not support AES-GCM or ChaCha20Poly1305 until macOS 10.15 for third-party code. Prior to .NET 8, <xref:System.Security.Cryptography.AesGcm> and <xref:System.Security.Cryptography.ChaCha20Poly1305> have the same requirement as AES-CCM and users must install OpenSSL for these types to function.
+macOS did not support AES-GCM or ChaCha20Poly1305 until macOS 10.15 for third-party code. Prior to .NET 8, <xref:System.Security.Cryptography.AesGcm> and <xref:System.Security.Cryptography.ChaCha20Poly1305> have the same requirement as AES-CCM and users must install OpenSSL for these types to function.
 
 Starting in .NET 8, .NET on macOS will use the Apple's CryptoKit framework for AES-GCM and ChaCha20Poly1305. Users will not need to install or configure any additional dependencies for AES-GCM or ChaCha20Poly1305 on macOS.
 
@@ -96,7 +96,7 @@ Starting in .NET 8, .NET on macOS will use the Apple's CryptoKit framework for A
   The <xref:System.Security.Cryptography.AesGcm> class supports only 96-bit (12-byte) nonces.
 
 * Tag Sizes
-  On Windows and Linux, the <xref:System.Security.Cryptography.AesGcm> class supports creating or processing 96, 104, 112, 120, and 128-bit (12, 13, 14, 15, and 16-byte) tags. On macOS, the tag size is limited to 128-bit (16-byte) due to limitation of the CryptoKit framework.
+  On Windows and Linux, the <xref:System.Security.Cryptography.AesGcm> class supports creating or processing 96, 104, 112, 120, and 128-bit (12, 13, 14, 15, and 16-byte) tags. On macOS, the tag size is limited to 128-bit (16-byte) due to limitations of the CryptoKit framework.
 
 ### ChaCha20Poly1305 keys, nonces, and tags.
 
@@ -121,20 +121,20 @@ RSA key operations are performed by the OS libraries, and the types of key that 
 
 Padding and digest support vary by platform:
 
-| Padding Mode                 | Windows (CNG)            | Linux (OpenSSL) | macOS  | iOS | Android | Windows (CAPI) |
-|------------------------------|--------------------------|-----------------|--------|-----|---------|----------------|
-| PKCS1 Encryption             | ✔️                       | ✔️              | ✔️    | ✔️  | ✔️      | ✔️             |
-| OAEP - SHA-1                 | ✔️                       | ✔️              | ✔️    | ✔️  | ✔️      | ✔️             |
-| OAEP - SHA-2                 | ✔️                       | ✔️              | ✔️    | ✔️  | ✔️      | ❌             |
-| OAEP - SHA-3**               | Windows 11 Build 25324+  | OpenSSL 1.1.1+  | ❌     | ❌  | ❌     | ❌             |
-| PKCS1 Signature (MD5, SHA-1) | ✔️                       | ✔️              | ✔️    | ✔️  | ✔️      | ✔️             |
-| PKCS1 Signature (SHA-2)      | ✔️                       | ✔️              | ✔️    | ✔️  | ✔️      | ⚠️\*           |
-| PKCS1 Signature (SHA-3)**    | Windows 11 Build 25324+  | OpenSSL 1.1.1+  | ❌     |  ❌ | ❌     | ❌             |
-| PSS                          | ✔️                       | ✔️              | ✔️    | ✔️  | ✔️      | ❌             |
+| Padding Mode                        | Windows (CNG)            | Linux (OpenSSL) | macOS  | iOS | Android | Windows (CAPI) |
+|-------------------------------------|--------------------------|-----------------|--------|-----|---------|----------------|
+| PKCS1 Encryption                    | ✔️                       | ✔️              | ✔️    | ✔️  | ✔️      | ✔️               |
+| OAEP - SHA-1                        | ✔️                       | ✔️              | ✔️    | ✔️  | ✔️      | ✔️               |
+| OAEP - SHA-2                        | ✔️                       | ✔️              | ✔️    | ✔️  | ✔️      | ❌               |
+| OAEP - SHA-3<sup>2</sup>            | Windows 11 Build 25324+  | OpenSSL 1.1.1+  | ❌     | ❌  | ❌     | ❌               |
+| PKCS1 Signature (MD5, SHA-1)        | ✔️                       | ✔️              | ✔️    | ✔️  | ✔️      | ✔️               |
+| PKCS1 Signature (SHA-2)             | ✔️                       | ✔️              | ✔️    | ✔️  | ✔️      | ⚠️<sup>1</sup> |
+| PKCS1 Signature (SHA-3)<sup>2</sup> | Windows 11 Build 25324+  | OpenSSL 1.1.1+  | ❌     |  ❌ | ❌     | ❌               |
+| PSS                                 | ✔️                       | ✔️              | ✔️    | ✔️  | ✔️      | ❌               |
 
-\* Windows CryptoAPI (CAPI) is capable of PKCS1 signature with a SHA-2 algorithm. But the individual RSA object may be loaded in a cryptographic service provider (CSP) that doesn't support it.
+<sup>1</sup> Windows CryptoAPI (CAPI) is capable of PKCS1 signature with a SHA-2 algorithm. But the individual RSA object may be loaded in a cryptographic service provider (CSP) that doesn't support it.
 
-\** Requires .NET 8.
+<sup>2</sup> Requires .NET 8.
 
 #### RSA on Windows
 

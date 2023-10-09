@@ -195,7 +195,7 @@ var options = new JsonSerializerOptions
 };
 ```
 
-Starting in .NET 8, if you later want to prepend or append another context, you can do so using the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain?displayProperty=nameWithType> property. The ordering of the chain is significant: <xref:System.Text.Json.JsonSerializerOptions> queries each of the resolvers in their specified order, returning the first result that's non-null.
+Starting in .NET 8, if you later want to prepend or append another context, you can do so using the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain?displayProperty=nameWithType> property. The ordering of the chain is significant: <xref:System.Text.Json.JsonSerializerOptions> queries each of the resolvers in their specified order and returns the first result that's non-null.
 
 ```csharp
 options.TypeInfoResolverChain.Add(ContextD.Default); // Append to the end of the list.

@@ -32,20 +32,20 @@ The underlying ciphers and chaining are done by the system libraries.
 
 | Cipher + Mode | Windows  | Linux | macOS | iOS | Android |
 |---------------|----------|-------|-------|-----|---------|
-| AES-CBC       | ✔️        | ✔️     | ✔️     | ✔️   | ✔️      |
-| AES-ECB       | ✔️        | ✔️     | ✔️     | ✔️   | ✔️      |
-| AES-CFB8      | ✔️        | ✔️     | ✔️     | ✔️   | ✔️      |
-| AES-CFB128    | ✔️        | ✔️     | ✔️     | ✔️   | ✔️      |
-| 3DES-CBC      | ✔️        | ✔️     | ✔️     | ✔️   | ✔️      |
-| 3DES-ECB      | ✔️        | ✔️     | ✔️     | ✔️   | ✔️      |
-| 3DES-CFB8     | ✔️        | ✔️     | ✔️     | ✔️   | ✔️      |
-| 3DES-CFB64    | ✔️        | ✔️     | ✔️     | ✔️   | ✔️      |
-| DES-CBC       | ✔️        | ✔️     | ✔️     | ✔️   | ✔️      |
-| DES-ECB       | ✔️        | ✔️     | ✔️     | ✔️   | ✔️      |
-| DES-CFB8      | ✔️        | ✔️     | ✔️     | ✔️   | ✔️      |
-| RC2-CBC       | ✔️        | ✔️     | ✔️     | ✔️   | ❌     |
-| RC2-ECB       | ✔️        | ✔️     | ✔️     | ✔️   | ❌     |
-| RC2-CFB       | ❌       | ❌     | ❌    | ❌   | ❌     |
+| AES-CBC       | ✔️       | ✔️    | ✔️   | ✔️  | ✔️      |
+| AES-ECB       | ✔️       | ✔️    | ✔️   | ✔️  | ✔️      |
+| AES-CFB8      | ✔️       | ✔️    | ✔️   | ✔️  | ✔️      |
+| AES-CFB128    | ✔️       | ✔️    | ✔️   | ✔️  | ✔️      |
+| 3DES-CBC      | ✔️       | ✔️    | ✔️   | ✔️  | ✔️      |
+| 3DES-ECB      | ✔️       | ✔️    | ✔️   | ✔️  | ✔️      |
+| 3DES-CFB8     | ✔️       | ✔️    | ✔️   | ✔️  | ✔️      |
+| 3DES-CFB64    | ✔️       | ✔️    | ✔️   | ✔️  | ✔️      |
+| DES-CBC       | ✔️       | ✔️    | ✔️   | ✔️  | ✔️      |
+| DES-ECB       | ✔️       | ✔️    | ✔️   | ✔️  | ✔️      |
+| DES-CFB8      | ✔️       | ✔️    | ✔️   | ✔️  | ✔️      |
+| RC2-CBC       | ✔️       | ✔️    | ✔️   | ✔️  | ❌      |
+| RC2-ECB       | ✔️       | ✔️    | ✔️   | ✔️  | ❌      |
+| RC2-CFB       | ❌       | ❌    | ❌   | ❌  | ❌      |
 
 ## Authenticated encryption
 
@@ -55,9 +55,9 @@ As authentication encryption requires newer platform APIs to support the algorit
 
 | Cipher + Mode     | Windows                 | Linux          | macOS   | iOS | Android       | Browser |
 |-------------------|-------------------------|----------------|---------|-----|---------------|---------|
-| AES-GCM           | ✔️                       | ✔️              | ⚠️       | ❌  | ✔️             | ❌      |
-| AES-CCM           | ✔️                       | ✔️              | ⚠️       | ❌  | ✔️             | ❌      |
-| ChaCha20Poly1305  | Windows 10 Build 20142+ | OpenSSL 1.1.0+ | ⚠️       | ❌  | API Level 28+ | ❌      |
+| AES-GCM           | ✔️                      | ✔️            | ⚠️      | ❌  | ✔️            | ❌      |
+| AES-CCM           | ✔️                      | ✔️            | ⚠️      | ❌  | ✔️            | ❌      |
+| ChaCha20Poly1305  | Windows 10 Build 20142+ | OpenSSL 1.1.0+ | ⚠️      | ❌  | API Level 28+ | ❌      |
 
 ### AES-CCM on macOS
 
@@ -123,14 +123,14 @@ Padding and digest support vary by platform:
 
 | Padding Mode                 | Windows (CNG)            | Linux (OpenSSL) | macOS  | iOS | Android | Windows (CAPI) |
 |------------------------------|--------------------------|-----------------|--------|-----|---------|----------------|
-| PKCS1 Encryption             | ✔️                        | ✔️               | ✔️      | ✔️   | ✔️       | ✔️             |
-| OAEP - SHA-1                 | ✔️                        | ✔️               | ✔️      | ✔️   | ✔️       | ✔️             |
-| OAEP - SHA-2                 | ✔️                        | ✔️               | ✔️      | ✔️   | ✔️       | ❌             |
-| OAEP - SHA-3**               | Windows 11 Build 25324+  | OpenSSL 1.1.1+  | ❌     | ❌   | ❌      | ❌             |
-| PKCS1 Signature (MD5, SHA-1) | ✔️                        | ✔️               | ✔️      | ✔️   | ✔️       | ✔️             |
-| PKCS1 Signature (SHA-2)      | ✔️                        | ✔️               | ✔️      | ✔️   | ✔️       | ⚠️\*           |
-| PKCS1 Signature (SHA-3)**    | Windows 11 Build 25324+  | OpenSSL 1.1.1+  | ❌     |  ❌  | ❌      | ❌             |
-| PSS                          | ✔️                        | ✔️               | ✔️      | ✔️   | ✔️       | ❌             |
+| PKCS1 Encryption             | ✔️                       | ✔️              | ✔️    | ✔️  | ✔️      | ✔️             |
+| OAEP - SHA-1                 | ✔️                       | ✔️              | ✔️    | ✔️  | ✔️      | ✔️             |
+| OAEP - SHA-2                 | ✔️                       | ✔️              | ✔️    | ✔️  | ✔️      | ❌             |
+| OAEP - SHA-3**               | Windows 11 Build 25324+  | OpenSSL 1.1.1+  | ❌     | ❌  | ❌     | ❌             |
+| PKCS1 Signature (MD5, SHA-1) | ✔️                       | ✔️              | ✔️    | ✔️  | ✔️      | ✔️             |
+| PKCS1 Signature (SHA-2)      | ✔️                       | ✔️              | ✔️    | ✔️  | ✔️      | ⚠️\*           |
+| PKCS1 Signature (SHA-3)**    | Windows 11 Build 25324+  | OpenSSL 1.1.1+  | ❌     |  ❌ | ❌     | ❌             |
+| PSS                          | ✔️                       | ✔️              | ✔️    | ✔️  | ✔️      | ❌             |
 
 
 \* Windows CryptoAPI (CAPI) is capable of PKCS1 signature with a SHA-2 algorithm. But the individual RSA object may be loaded in a cryptographic service provider (CSP) that doesn't support it.
@@ -149,11 +149,11 @@ Padding and digest support vary by platform:
 
 .NET exposes types to allow programs to interoperate with the OS libraries that the .NET cryptography code uses. The types involved do not translate between platforms, and should only be directly used when necessary.
 
-| Type                                                         | Windows | Linux         | macOS         | iOS             | Android         |
-|--------------------------------------------------------------|---------|---------------|---------------|-----------------|-----------------|
-| <xref:System.Security.Cryptography.RSACryptoServiceProvider> | ✔️     | ⚠️<sup>1</sup>   | ⚠️<sup>1</sup> | ⚠️<sup>1</sup>   | ⚠️<sup>1</sup>   |
-| <xref:System.Security.Cryptography.RSACng>                   | ✔️     | ❌              | ❌             | ❌              | ❌              |
-| <xref:System.Security.Cryptography.RSAOpenSsl>               | ❌     | ✔️              | ⚠️<sup>2</sup>  | ❌              | ❌              |
+| Type                                                         | Windows | Linux         | macOS           | iOS             | Android         |
+|--------------------------------------------------------------|---------|---------------|-----------------|-----------------|-----------------|
+| <xref:System.Security.Cryptography.RSACryptoServiceProvider> | ✔️     | ⚠️<sup>1</sup> | ⚠️<sup>1</sup> | ⚠️<sup>1</sup>  | ⚠️<sup>1</sup>  |
+| <xref:System.Security.Cryptography.RSACng>                   | ✔️     | ❌             | ❌             | ❌              | ❌              |
+| <xref:System.Security.Cryptography.RSAOpenSsl>               | ❌     | ✔️             | ⚠️<sup>2</sup> | ❌              | ❌              |
 
 <sup>1</sup> On non-Windows, <xref:System.Security.Cryptography.RSACryptoServiceProvider> can be used for compatibility with existing programs. In that case, any method that requires OS interop, such as opening a named key, throws a <xref:System.PlatformNotSupportedException>.
 
@@ -165,15 +165,15 @@ ECDSA (Elliptic Curve Digital Signature Algorithm) key generation is done by the
 
 ECDSA key curves are defined by the OS libraries and are subject to their limitations.
 
-| Elliptic Curve                     | Windows 10    | Windows 7 - 8.1 | Linux         | macOS         | iOS           | Android        |
-|------------------------------------|---------------|-----------------|---------------|---------------|---------------|----------------|
-| NIST P-256 (secp256r1)             | ✔️           | ✔️              | ✔️                | ✔️             | ✔️             | ✔️              |
-| NIST P-384 (secp384r1)             | ✔️           | ✔️              | ✔️                | ✔️             | ✔️             | ✔️              |
-| NIST P-521 (secp521r1)             | ✔️           | ✔️              | ✔️                | ✔️             | ✔️             | ✔️              |
-| Brainpool curves (as named curves) | ✔️           | ❌              | ⚠️<sup>1</sup>   | ❌             | ❌             | ⚠️<sup>4</sup> |
-| Other named curves                 | ⚠️<sup>2</sup>| ❌             | ⚠️<sup>1</sup>   | ❌             | ❌             | ⚠️<sup>4</sup> |
-| Explicit curves                    | ✔️           | ❌              | ✔️               | ❌             | ❌             | ✔️             |
-| Export or import as explicit       | ✔️           | ❌<sup>3</sup>  | ✔️               | ❌<sup>3</sup> | ❌<sup>3</sup> | ✔️             |
+| Elliptic Curve                     | Windows 10     | Windows 7 - 8.1 | Linux           | macOS          | iOS            | Android        |
+|------------------------------------|----------------|-----------------|-----------------|----------------|----------------|----------------|
+| NIST P-256 (secp256r1)             | ✔️             | ✔️              | ✔️             | ✔️             | ✔️             | ✔️            |
+| NIST P-384 (secp384r1)             | ✔️             | ✔️              | ✔️             | ✔️             | ✔️             | ✔️            |
+| NIST P-521 (secp521r1)             | ✔️             | ✔️              | ✔️             | ✔️             | ✔️             | ✔️            |
+| Brainpool curves (as named curves) | ✔️             | ❌              | ⚠️<sup>1</sup> | ❌             | ❌             | ⚠️<sup>4</sup> |
+| Other named curves                 | ⚠️<sup>2</sup> | ❌              | ⚠️<sup>1</sup> | ❌             | ❌             | ⚠️<sup>4</sup> |
+| Explicit curves                    | ✔️             | ❌              | ✔️             | ❌             | ❌             | ✔️             |
+| Export or import as explicit       | ✔️             | ❌<sup>3</sup>  | ✔️             | ❌<sup>3</sup> | ❌<sup>3</sup> | ✔️             |
 
 <sup>1</sup> Linux distributions don't all have support for the same named curves.
 
@@ -189,8 +189,8 @@ ECDSA key curves are defined by the OS libraries and are subject to their limita
 
 | Type                                             | Windows | Linux | macOS | iOS | Android |
 |--------------------------------------------------|---------|-------|-------|-----|---------|
-| <xref:System.Security.Cryptography.ECDsaCng>     | ✔️       | ❌    | ❌    | ❌   | ❌      |
-| <xref:System.Security.Cryptography.ECDsaOpenSsl> | ❌      | ✔️    | ⚠️\*    | ❌   | ❌      |
+| <xref:System.Security.Cryptography.ECDsaCng>     | ✔️      | ❌   | ❌    | ❌  | ❌      |
+| <xref:System.Security.Cryptography.ECDsaOpenSsl> | ❌      | ✔️   | ⚠️\*  | ❌  | ❌      |
 
 \* On macOS, <xref:System.Security.Cryptography.ECDsaOpenSsl> works if OpenSSL is installed in the system and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
 
@@ -212,15 +212,15 @@ The <xref:System.Security.Cryptography.ECDiffieHellman> class supports the "raw"
 
 ECDH key curves are defined by the OS libraries and are subject to their limitations.
 
-| Elliptic Curve                     | Windows 10    | Windows 7 - 8.1 | Linux         | macOS         | iOS           | Android        |
-|------------------------------------|---------------|-----------------|---------------|---------------|---------------|----------------|
-| NIST P-256 (secp256r1)             | ✔️           | ✔️              | ✔️                | ✔️             | ✔️             | ✔️              |
-| NIST P-384 (secp384r1)             | ✔️           | ✔️              | ✔️                | ✔️             | ✔️             | ✔️              |
-| NIST P-521 (secp521r1)             | ✔️           | ✔️              | ✔️                | ✔️             | ✔️             | ✔️              |
-| Brainpool curves (as named curves) | ✔️           | ❌              | ⚠️<sup>1</sup>   | ❌             | ❌             | ⚠️<sup>4</sup> |
-| Other named curves                 | ⚠️<sup>2</sup>| ❌             | ⚠️<sup>1</sup>   | ❌             | ❌             | ⚠️<sup>4</sup> |
-| Explicit curves                    | ✔️           | ❌              | ✔️               | ❌             | ❌             | ✔️             |
-| Export or import as explicit       | ✔️           | ❌<sup>3</sup>  | ✔️               | ❌<sup>3</sup> | ❌<sup>3</sup> | ✔️             |
+| Elliptic Curve                     | Windows 10     | Windows 7 - 8.1 | Linux          | macOS           | iOS            | Android        |
+|------------------------------------|----------------|-----------------|----------------|-----------------|----------------|----------------|
+| NIST P-256 (secp256r1)             | ✔️             | ✔️              | ✔️             | ✔️             | ✔️             | ✔️             |
+| NIST P-384 (secp384r1)             | ✔️             | ✔️              | ✔️             | ✔️             | ✔️             | ✔️             |
+| NIST P-521 (secp521r1)             | ✔️             | ✔️              | ✔️             | ✔️             | ✔️             | ✔️             |
+| Brainpool curves (as named curves) | ✔️             | ❌              | ⚠️<sup>1</sup> | ❌             | ❌             | ⚠️<sup>4</sup> |
+| Other named curves                 | ⚠️<sup>2</sup> | ❌              | ⚠️<sup>1</sup> | ❌             | ❌             | ⚠️<sup>4</sup> |
+| Explicit curves                    | ✔️             | ❌              | ✔️             | ❌             | ❌             | ✔️             |
+| Export or import as explicit       | ✔️             | ❌<sup>3</sup>  | ✔️             | ❌<sup>3</sup> | ❌<sup>3</sup> | ✔️             |
 
 <sup>1</sup> Linux distributions don't all have support for the same named curves.
 
@@ -236,8 +236,8 @@ ECDH key curves are defined by the OS libraries and are subject to their limitat
 
 | Type                                                       | Windows | Linux | macOS | iOS | Android  |
 |------------------------------------------------------------|---------|-------|-------|-----|----------|
-| <xref:System.Security.Cryptography.ECDiffieHellmanCng>     | ✔️     | ❌       | ❌    | ❌  | ❌       |
-| <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> | ❌     | ✔️       | ⚠️\*   | ❌  | ❌       |
+| <xref:System.Security.Cryptography.ECDiffieHellmanCng>     | ✔️     | ❌    | ❌    | ❌  | ❌       |
+| <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> | ❌     | ✔️    | ⚠️\*  | ❌  | ❌       |
 
 \* On macOS, <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> works if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
 
@@ -247,12 +247,12 @@ DSA (Digital Signature Algorithm) key generation is performed by the system libr
 
 | Function                      | Windows CNG | Linux | macOS         | Windows CAPI | iOS  | Android |
 |-------------------------------|-------------|-------|---------------|--------------|------|---------|
-| Key creation (<= 1024 bits)   | ✔️           | ✔️    | ❌             | ✔️            | ❌    | ✔️       |
-| Key creation (> 1024 bits)    | ✔️           | ✔️    | ❌             | ❌           | ❌    | ✔️       |
-| Loading keys (<= 1024 bits)   | ✔️           | ✔️    | ✔️              | ✔️            | ❌   | ✔️       |
-| Loading keys (> 1024 bits)    | ✔️           | ✔️    | ⚠️\*            | ❌           | ❌   | ✔️       |
-| FIPS 186-2                    | ✔️           | ✔️    | ✔️              | ✔️            | ❌   | ✔️       |
-| FIPS 186-3 (SHA-2 signatures) | ✔️           | ✔️    | ❌             | ❌           | ❌    | ✔️       |
+| Key creation (<= 1024 bits)   | ✔️          | ✔️    | ❌           | ✔️           | ❌   | ✔️      |
+| Key creation (> 1024 bits)    | ✔️          | ✔️    | ❌           | ❌           | ❌   | ✔️      |
+| Loading keys (<= 1024 bits)   | ✔️          | ✔️    | ✔️           | ✔️           | ❌   | ✔️      |
+| Loading keys (> 1024 bits)    | ✔️          | ✔️    | ⚠️\*         | ❌           | ❌   | ✔️      |
+| FIPS 186-2                    | ✔️          | ✔️    | ✔️           | ✔️           | ❌   | ✔️      |
+| FIPS 186-3 (SHA-2 signatures) | ✔️          | ✔️    | ❌           | ❌           | ❌   | ✔️      |
 
 \* macOS loads DSA keys bigger than 1024 bits, but the behavior of those keys is undefined. They don't behave according to FIPS 186-3.
 
@@ -268,11 +268,11 @@ DSA (Digital Signature Algorithm) key generation is performed by the system libr
 
 .NET exposes types to allow programs to interoperate with the OS libraries that the .NET cryptography code uses. The types involved don't translate between platforms and should only be directly used when necessary.
 
-| Type                                                         | Windows | Linux         | macOS         | iOS    | Android       |
-|--------------------------------------------------------------|---------|---------------|---------------|--------|---------------|
-| <xref:System.Security.Cryptography.DSACryptoServiceProvider> | ✔️       | ⚠️<sup>1</sup> | ⚠️<sup>1</sup>   | ❌    | ⚠️<sup>1</sup> |
-| <xref:System.Security.Cryptography.DSACng>                   | ✔️       | ❌             | ❌              | ❌    | ❌            |
-| <xref:System.Security.Cryptography.DSAOpenSsl>               | ❌      | ✔️            | ⚠️<sup>2</sup>   | ❌     | ❌             |
+| Type                                                         | Windows | Linux          | macOS           | iOS    | Android        |
+|--------------------------------------------------------------|---------|----------------|-----------------|--------|----------------|
+| <xref:System.Security.Cryptography.DSACryptoServiceProvider> | ✔️      | ⚠️<sup>1</sup> | ⚠️<sup>1</sup>  | ❌    | ⚠️<sup>1</sup> |
+| <xref:System.Security.Cryptography.DSACng>                   | ✔️      | ❌             | ❌              | ❌    | ❌             |
+| <xref:System.Security.Cryptography.DSAOpenSsl>               | ❌      | ✔️             | ⚠️<sup>2</sup>  | ❌    | ❌             |
 
 <sup>1</sup> On non-Windows, <xref:System.Security.Cryptography.DSACryptoServiceProvider> can be used for compatibility with existing programs. In that case, any method that requires system interop, such as opening a named key, throws a <xref:System.PlatformNotSupportedException>.
 
@@ -286,24 +286,24 @@ The majority of support for X.509 certificates in .NET comes from OS libraries. 
 
 | Scenario                                     | Windows | Linux | macOS | iOS | Android |
 |----------------------------------------------|---------|-------|-------|-----|---------|
-| Empty                                        | ✔️       | ✔️     | ✔️     | ✔️   | ✔️       |
-| One certificate, no private key              | ✔️       | ✔️     | ✔️     | ✔️   | ✔️       |
-| One certificate, with private key            | ✔️       | ✔️     | ✔️     | ✔️   | ✔️       |
-| Multiple certificates, no private keys       | ✔️       | ✔️     | ✔️     | ✔️   | ✔️       |
-| Multiple certificates, one private key       | ✔️       | ✔️     | ✔️     | ✔️   | ✔️       |
-| Multiple certificates, multiple private keys | ✔️       | ✔️     | ✔️     | ✔️   | ✔️       |
+| Empty                                        | ✔️      | ✔️    | ✔️   | ✔️  | ✔️     |
+| One certificate, no private key              | ✔️      | ✔️    | ✔️   | ✔️  | ✔️     |
+| One certificate, with private key            | ✔️      | ✔️    | ✔️   | ✔️  | ✔️     |
+| Multiple certificates, no private keys       | ✔️      | ✔️    | ✔️   | ✔️  | ✔️     |
+| Multiple certificates, one private key       | ✔️      | ✔️    | ✔️   | ✔️  | ✔️     |
+| Multiple certificates, multiple private keys | ✔️      | ✔️    | ✔️   | ✔️  | ✔️     |
 
 ### Write a PKCS12/PFX
 
 | Scenario                                     | Windows | Linux | macOS | iOS | Android |
 |----------------------------------------------|---------|-------|-------|-------|---------|
-| Empty                                        | ✔️       | ✔️     | ✔️     | ✔️     | ✔️       |
-| One certificate, no private key              | ✔️       | ✔️     | ✔️     | ✔️     | ✔️       |
-| One certificate, with private key            | ✔️       | ✔️     | ✔️     | ✔️     | ✔️       |
-| Multiple certificates, no private keys       | ✔️       | ✔️     | ✔️     | ✔️     | ✔️       |
-| Multiple certificates, one private key       | ✔️       | ✔️     | ✔️     | ✔️     | ✔️       |
-| Multiple certificates, multiple private keys | ✔️       | ✔️     | ✔️     | ✔️     | ✔️       |
-| Ephemeral loading                            | ✔️       | ✔️     | ❌    | ✔️     | ✔️       |
+| Empty                                        | ✔️      | ✔️    | ✔️   | ✔️    | ✔️      |
+| One certificate, no private key              | ✔️      | ✔️    | ✔️   | ✔️    | ✔️      |
+| One certificate, with private key            | ✔️      | ✔️    | ✔️   | ✔️    | ✔️      |
+| Multiple certificates, no private keys       | ✔️      | ✔️    | ✔️   | ✔️    | ✔️      |
+| Multiple certificates, one private key       | ✔️      | ✔️    | ✔️   | ✔️    | ✔️      |
+| Multiple certificates, multiple private keys | ✔️      | ✔️    | ✔️   | ✔️    | ✔️      |
+| Ephemeral loading                            | ✔️      | ✔️    | ❌   | ✔️    | ✔️      |
 
 
 macOS can't load certificate private keys without a keychain object, which requires writing to disk. Keychains are created automatically for PFX loading, and are deleted when no longer in use. Since the <xref:System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.EphemeralKeySet?displayProperty=nameWithType> option means that the private key should not be written to disk, asserting that flag on macOS results in a <xref:System.PlatformNotSupportedException>.
@@ -324,10 +324,10 @@ The following tables show which scenarios are supported in each platform. For un
 
 | Scenario                                         | Windows | Linux | macOS | iOS   | Android |
 |--------------------------------------------------|---------|-------|-------|-------|--------|
-| Open CurrentUser\My (ReadOnly)                   | ✔️     | ✔️       | ✔️     | ✔️     | ✔️     |
-| Open CurrentUser\My (ReadWrite)                  | ✔️     | ✔️       | ✔️     | ✔️     | ✔️     |
-| Open CurrentUser\My (ExistingOnly)               | ✔️     | ⚠️       | ✔️     | ✔️     | ✔️     |
-| Open LocalMachine\My                             | ✔️     | ❌       | ✔️     | ✔️     | ✔️     |
+| Open CurrentUser\My (ReadOnly)                   | ✔️      | ✔️    | ✔️   | ✔️    | ✔️     |
+| Open CurrentUser\My (ReadWrite)                  | ✔️      | ✔️    | ✔️   | ✔️    | ✔️     |
+| Open CurrentUser\My (ExistingOnly)               | ✔️      | ⚠️    | ✔️   | ✔️    | ✔️     |
+| Open LocalMachine\My                             | ✔️      | ❌    | ✔️   | ✔️    | ✔️     |
 
 On Linux, stores are created on first write, and no user stores exist by default, so opening `CurrentUser\My` with `ExistingOnly` may fail.
 
@@ -335,14 +335,14 @@ On macOS, the `CurrentUser\My` store is the user's default keychain, which is `l
 
 #### The Root store
 
-| Scenario                              | Windows | Linux | macOS           | iOS | Android        |
-|---------------------------------------|---------|-------|-----------------|-----|----------------|
-| Open CurrentUser\Root (ReadOnly)      | ✔️       | ✔️     | ✔️               | ❌  | ✔️              |
-| Open CurrentUser\Root (ReadWrite)     | ✔️       | ✔️     | ❌              | ❌  | ❌              |
-| Open CurrentUser\Root (ExistingOnly)  | ✔️       | ⚠️     | ✔️ (if ReadOnly) | ❌  | ✔️ (if ReadOnly) |
-| Open LocalMachine\Root (ReadOnly)     | ✔️       | ✔️     | ✔️               | ❌  | ✔️               |
-| Open LocalMachine\Root (ReadWrite)    | ✔️       | ❌     | ❌              | ❌  | ❌              |
-| Open LocalMachine\Root (ExistingOnly) | ✔️       | ⚠️     | ✔️ (if ReadOnly) | ❌  | ✔️ (if ReadOnly) |
+| Scenario                              | Windows | Linux | macOS             | iOS | Android          |
+|---------------------------------------|---------|-------|-------------------|-----|------------------|
+| Open CurrentUser\Root (ReadOnly)      | ✔️      | ✔️    | ✔️               | ❌  | ✔️               |
+| Open CurrentUser\Root (ReadWrite)     | ✔️      | ✔️    | ❌               | ❌  | ❌               |
+| Open CurrentUser\Root (ExistingOnly)  | ✔️      | ⚠️    | ✔️ (if ReadOnly) | ❌  | ✔️ (if ReadOnly) |
+| Open LocalMachine\Root (ReadOnly)     | ✔️      | ✔️    | ✔️               | ❌  | ✔️               |
+| Open LocalMachine\Root (ReadWrite)    | ✔️      | ❌    | ❌               | ❌  | ❌               |
+| Open LocalMachine\Root (ExistingOnly) | ✔️      | ⚠️    | ✔️ (if ReadOnly) | ❌  | ✔️ (if ReadOnly) |
 
 On Linux, the `LocalMachine\Root` store is an interpretation of the CA bundle in the default path for OpenSSL.
 
@@ -350,14 +350,14 @@ On macOS, the `CurrentUser\Root` store is an interpretation of the `SecTrustSett
 
 #### The Intermediate store
 
-| Scenario                                      | Windows | Linux | macOS           | iOS   | Android |
-|-----------------------------------------------|---------|-------|-----------------|-------|---------|
-| Open CurrentUser\Intermediate (ReadOnly)      | ✔️       | ✔️    | ✔️                | ❌    | ❌       |
-| Open CurrentUser\Intermediate (ReadWrite)     | ✔️       | ✔️    | ❌               | ❌    | ❌       |
-| Open CurrentUser\Intermediate (ExistingOnly)  | ✔️       | ⚠️    | ✔️ (if ReadOnly)  | ❌    | ❌       |
-| Open LocalMachine\Intermediate (ReadOnly)     | ✔️       | ✔️    | ✔️                | ❌    | ❌       |
-| Open LocalMachine\Intermediate (ReadWrite)    | ✔️       | ❌    | ❌               | ❌    | ❌       |
-| Open LocalMachine\Intermediate (ExistingOnly) | ✔️       | ⚠️    | ✔️ (if ReadOnly)  | ❌    | ❌       |
+| Scenario                                      | Windows | Linux | macOS             | iOS   | Android |
+|-----------------------------------------------|---------|-------|-------------------|-------|---------|
+| Open CurrentUser\Intermediate (ReadOnly)      | ✔️      | ✔️    | ✔️               | ❌    | ❌     |
+| Open CurrentUser\Intermediate (ReadWrite)     | ✔️      | ✔️    | ❌               | ❌    | ❌     |
+| Open CurrentUser\Intermediate (ExistingOnly)  | ✔️      | ⚠️    | ✔️ (if ReadOnly) | ❌    | ❌     |
+| Open LocalMachine\Intermediate (ReadOnly)     | ✔️      | ✔️    | ✔️               | ❌    | ❌     |
+| Open LocalMachine\Intermediate (ReadWrite)    | ✔️      | ❌    | ❌               | ❌    | ❌     |
+| Open LocalMachine\Intermediate (ExistingOnly) | ✔️      | ⚠️    | ✔️ (if ReadOnly) | ❌    | ❌     |
 
 On Linux, the `CurrentUser\Intermediate` store is used as a cache when downloading intermediate CAs by their Authority Information Access records on successful X509Chain builds. The `LocalMachine\Intermediate` store is an interpretation of the CA bundle in the default path for OpenSSL.
 
@@ -365,14 +365,14 @@ On macOS, the `CurrentUser\Intermediate` store is treated as a custom store. Cer
 
 #### The Disallowed store
 
-| Scenario                                    | Windows | Linux | macOS           | iOS             | Android         |
-|---------------------------------------------|---------|-------|-----------------|-----------------|-----------------|
-| Open CurrentUser\Disallowed (ReadOnly)      | ✔️     | ⚠️       | ✔️               | ✔️               | ✔️               |
-| Open CurrentUser\Disallowed (ReadWrite)     | ✔️     | ⚠️       | ❌              | ❌               | ❌               |
-| Open CurrentUser\Disallowed (ExistingOnly)  | ✔️     | ⚠️       | ✔️ (if ReadOnly) | ✔️ (if ReadOnly) | ✔️ (if ReadOnly) |
-| Open LocalMachine\Disallowed (ReadOnly)     | ✔️     | ❌       | ✔️              | ✔️               | ✔️               |
-| Open LocalMachine\Disallowed (ReadWrite)    | ✔️     | ❌       | ❌             | ❌               | ❌               |
-| Open LocalMachine\Disallowed (ExistingOnly) | ✔️     | ❌       | ✔️ (if ReadOnly)| ✔️ (if ReadOnly) | ✔️ (if ReadOnly) |
+| Scenario                                    | Windows | Linux | macOS            | iOS              | Android          |
+|---------------------------------------------|---------|-------|------------------|------------------|------------------|
+| Open CurrentUser\Disallowed (ReadOnly)      | ✔️     | ⚠️    | ✔️               | ✔️               | ✔️               |
+| Open CurrentUser\Disallowed (ReadWrite)     | ✔️     | ⚠️    | ❌               | ❌               | ❌               |
+| Open CurrentUser\Disallowed (ExistingOnly)  | ✔️     | ⚠️    | ✔️ (if ReadOnly) | ✔️ (if ReadOnly) | ✔️ (if ReadOnly) |
+| Open LocalMachine\Disallowed (ReadOnly)     | ✔️     | ❌    | ✔️               | ✔️               | ✔️               |
+| Open LocalMachine\Disallowed (ReadWrite)    | ✔️     | ❌    | ❌               | ❌               | ❌               |
+| Open LocalMachine\Disallowed (ExistingOnly) | ✔️     | ❌    | ✔️ (if ReadOnly) | ✔️ (if ReadOnly) | ✔️ (if ReadOnly) |
 
 On Linux, the `Disallowed` store is not used in chain building, and attempting to add contents to it results in a <xref:System.Security.Cryptography.CryptographicException>. A <xref:System.Security.Cryptography.CryptographicException> is thrown when opening the `Disallowed` store if it has already acquired contents.
 
@@ -382,9 +382,9 @@ On macOS, the CurrentUser\Disallowed and LocalMachine\Disallowed stores are inte
 
 | Scenario                                         | Windows | Linux | macOS | iOS | Android |
 |--------------------------------------------------|---------|-------|-------|-----|---------|
-| Open non-existent store (ExistingOnly)           | ❌     | ❌     | ❌    | ❌   | ❌      |
-| Open CurrentUser non-existent store (ReadWrite)  | ✔️     | ✔️     | ⚠️      | ❌   | ❌      |
-| Open LocalMachine non-existent store (ReadWrite) | ✔️     | ❌     | ❌    | ❌    | ❌      |
+| Open non-existent store (ExistingOnly)           | ❌     | ❌     | ❌    | ❌   | ❌    |
+| Open CurrentUser non-existent store (ReadWrite)  | ✔️     | ✔️     | ⚠️    | ❌   | ❌    |
+| Open LocalMachine non-existent store (ReadWrite) | ✔️     | ❌     | ❌    | ❌   | ❌    |
 
 On macOS, custom store creation with the X509Store API is supported only for `CurrentUser` location. It will create a new keychain with no password in the user's keychain directory (*~/Library/Keychains*). To create a keychain with password, a P/Invoke to `SecKeychainCreate` could be used. Similarly, `SecKeychainOpen` could be used to open keychains in different locations. The resulting `IntPtr` can be passed to [`new X509Store(IntPtr)`](xref:System.Security.Cryptography.X509Certificates.X509Store.%23ctor(System.IntPtr)) to obtain a read/write-capable store, subject to the current user's permissions.
 

@@ -54,7 +54,7 @@ see [here](available-counters.md).
 | `network.protocol.name` | string | [OSI application layer](https://osi-model.com/application-layer/) or non-OSI equivalent. | `amqp`; `http`; `mqtt` | Always |
 | `network.protocol.version` | string | Version of the protocol specified in `network.protocol.name`. | `3.1.1` | Always |
 | `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https` | Always |
-| `aspnetcore.request.is_unhandled` | boolean | True when the request was not handled by the application pipeline. | If the request was unhandled. |
+| `aspnetcore.request.is_unhandled` | boolean | True when the request was not handled by the application pipeline. | `true` | If the request was unhandled. |
 
 The time used to handle an inbound HTTP request as measured at the hosting layer of ASP.NET Core. The time measurement starts once the underlying web host has
 sufficiently parsed the HTTP request headers on the inbound network stream to identify the new request and initialize context data structures such as the <xref:Microsoft.AspNetCore.Http.HttpContext>. The

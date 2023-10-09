@@ -484,7 +484,7 @@
 | Microsoft.Azure.WebJobs.CosmosDb.Mongo | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.Mongo/1.0.4) |  |  |
 | Microsoft.Azure.WebJobs.Extensions.Kusto | NuGet [1.0.8-Preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kusto/1.0.8-Preview) |  |  |
 | Service Bus - Message ID plugin | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.MessageIdPlugin/2.0.0) |  |  |
-| SQL Database Elastic Scale Client | NuGet [2.3.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/2.3.0)<br>NuGet [2.4.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/2.4.0-preview1) |  | GitHub [2.3.0](https://github.com/Azure/elastic-db-tools/tree/v2.3.0/Src/ElasticScale.Client) |
+| SQL Database Elastic Scale Client | NuGet [2.3.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/2.3.0)<br>NuGet [2.4.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/2.4.0-preview2) |  | GitHub [2.3.0](https://github.com/Azure/elastic-db-tools/tree/v2.3.0/Src/ElasticScale.Client) |
 | SQL Database Elastic Scale Service SplitMerge | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Service.SplitMerge/1.2.0) |  |  |
 | SQL Database Jobs | NuGet [0.8.3362.1](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.Jobs/0.8.3362.1) |  |  |
 | Web - Redis Output Cache Provider | NuGet [4.0.1](https://www.nuget.org/packages/Microsoft.Web.RedisOutputCacheProvider/4.0.1) |  | GitHub [4.0.1](https://github.com/Azure/aspnet-redis-providers/tree/NuGet-Release/RedisOutputCacheProvider-3.0.1/src/OutputCacheProvider) |

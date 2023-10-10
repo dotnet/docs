@@ -1395,7 +1395,9 @@ Starting in .NET 8, you can create a container directly as a *tar.gz* archive. T
 To publish to an archive, add the `ContainerArchiveOutputPath` property to your `dotnet publish` command, for example:
 
 ```dotnetcli
-dotnet publish -p PublishProfile=DefaultContainer -p ContainerArchiveOutputPath=./images/sdk-container-demo.tar.gz
+dotnet publish \
+  -p PublishProfile=DefaultContainer \
+  -p ContainerArchiveOutputPath=./images/sdk-container-demo.tar.gz
 ```
 
 You can specify either a folder name or a path with a specific file name.

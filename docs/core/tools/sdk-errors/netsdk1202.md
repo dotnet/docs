@@ -19,7 +19,7 @@ MAUI application:
 ```
 
 The best solution would be to update to a newer, supported `TargetFramework`
-such as `net7.0`, `net8.0`, etc. Note that using a .NET 8 SDK and .NET 8 MAUI
+such as `net7.0` or `net8.0`. Note that using a .NET 8 SDK and .NET 8 MAUI
 optional workload does not support building `net6.0` applications in any form,
 and so this is a hard requirement when using the latest .NET SDK.
 

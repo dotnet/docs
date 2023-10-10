@@ -44,7 +44,7 @@ Interoperability with native code is referred to as *platform invoke* and is a f
 
 ### Defining Parameters in External Functions
 
-When declaring external functions with return values or parameters you use a syntax similar to C. You have the option to use the managed (where the CLR will perform some automatic conversions between native and .NET types) and unmanaged declarations which may offer better performance in some circumstances. Take the example of the Windows function [GetBinaryTypeW](https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-getbinarytypew). It can be declared in two different ways:
+When declaring external functions with return values or parameters you use a syntax similar to C. You have the option to use the managed (where the CLR will perform some automatic conversions between native and .NET types) and unmanaged declarations which may offer better performance in some circumstances. Take the example of the Windows function [GetBinaryTypeW](/windows/win32/api/winbase/nf-winbase-getbinarytypew). It can be declared in two different ways:
 
 ```fs
 // Using automatic marshaling of managed types
@@ -57,7 +57,7 @@ extern bool GetBinaryTypeW([<MarshalAs(UnmanagedType.LPWStr)>] string lpApplicat
 
 `MarshalAs(UnmanagedType.LPWStr)` instructs the CLR to perform an automatic conversion between a .NET `string` and Windows native string representation when the function is called. `uint&` declares a `uint` that will be passed `byref` i.e. as a managed pointer. To obtain a managed pointer you use the address of `&` operator.
 
-Alternately, you may wish to manage the marshalling of data types manually and declare the external functions using only [unmanaged types](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/unmanaged-types).
+Alternately, you may wish to manage the marshalling of data types manually and declare the external functions using only [unmanaged types](../../../csharp/language-reference/builtin-types/unmanaged-types.md).
 
 ```fs
 // Using unmanaged types
@@ -65,9 +65,9 @@ Alternately, you may wish to manage the marshalling of data types manually and d
 extern int GetBinaryTypeW(nativeint lpApplicationName, uint* lpBinaryType);
 ```
 
-You could use [`Marshal.StringToHGlobalUni`](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.interopservices.marshal.stringtohglobaluni) to convert a .NET string to native format and receive a pointer (`nativeint`) to it that could be supplied to `lpApplicationName`.
+You could use<xref:System.Runtime.InteropServices.Marshal.StringToHGlobalUni%2A?displayProperty=nameWithType> to convert a .NET string to native format and receive a pointer (`nativeint`) to it that could be supplied to `lpApplicationName`.
 
-To obtain a pointer to an integer you would use the pointer of `&&` operator or the [`fixed`](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/fixed) keyword.
+To obtain a pointer to an integer you would use the pointer of `&&` operator or the [`fixed`](../language-reference/fixed.md) keyword.
 
 ## See also
 

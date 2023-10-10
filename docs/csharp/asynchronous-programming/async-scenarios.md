@@ -20,23 +20,17 @@ The core of async programming is the `Task` and `Task<T>` objects, which model a
 
 The `await` keyword is where the magic happens. It yields control to the caller of the method that performed `await`, and it ultimately allows a UI to be responsive or a service to be elastic. While [there are ways](../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) to approach async code other than `async` and `await`, this article focuses on the language-level constructs.
 
-### I/O-bound example: Download data from a web service
+> [!NOTE]
+> In some of following examples <xref:System.Net.Http.HttpClient?displayProperty=fullName> class is used to download some data from a web service.
+> The `s_httpClient` object used in these examples is a static field of `Program` class (please check the complete example):
+>
+> `private static readonly HttpClient s_httpClient = new();`
 
-You may need to download some data from a web service when a button is pressed but don't want to block the UI thread. It can be accomplished like this, using the <xref:System.Net.Http.HttpClient?displayProperty=fullName> class:
+### I/O-bound example: Download data from a web servic
 
-```csharp
-private readonly HttpClient _httpClient = new HttpClient();
+You may need to download some data from a web service when a button is pressed but don't want to block the UI thread. It can be accomplished like this:
 
-downloadButton.Clicked += async (o, e) =>
-{
-    // This line will yield control to the UI as the request
-    // from the web service is happening.
-    //
-    // The UI thread is now free to perform other work.
-    var stringData = await _httpClient.GetStringAsync(URL);
-    DoSomethingWithData(stringData);
-};
-```
+:::code language="csharp" source="snippets/async-scenarios/Program.cs" ID="UnblockingDownload":::
 
 The code expresses the intent (downloading data asynchronously) without getting bogged down in interacting with `Task` objects.
 
@@ -46,23 +40,7 @@ Say you're writing a mobile game where pressing a button can inflict damage on m
 
 The best way to handle this is to start a background thread, which does the work using `Task.Run`, and await its result using `await`. This allows the UI to feel smooth as the work is being done.
 
-```csharp
-private DamageResult CalculateDamageDone()
-{
-    // Code omitted:
-    //
-    // Does an expensive calculation and returns
-    // the result of that calculation.
-}
-
-calculateButton.Clicked += async (o, e) =>
-{
-    // This line will yield control to the UI while CalculateDamageDone()
-    // performs its work. The UI thread is free to perform other work.
-    var damageResult = await Task.Run(() => CalculateDamageDone());
-    DisplayDamage(damageResult);
-};
-```
+:::code language="csharp" source="snippets/async-scenarios/Program.cs" ID="PerformGameCalculation":::
 
 This code clearly expresses the intent of the button's click event, it doesn't require managing a background thread manually, and it does so in a non-blocking way.
 
@@ -106,24 +84,12 @@ The following examples demonstrate various ways you can write async code in C#. 
 
 ### Extract data from a network
 
-This snippet downloads the HTML from the homepage at <https://dotnetfoundation.org> and counts the number of times the string ".NET" occurs in the HTML. It uses ASP.NET to define a Web API controller method, which performs this task and returns the number.
+This snippet downloads the HTML from the given URL and counts the number of times the string ".NET" occurs in the HTML. It uses ASP.NET to define a Web API controller method, which performs this task and returns the number.
 
 > [!NOTE]
 > If you plan on doing HTML parsing in production code, don't use regular expressions. Use a parsing library instead.
 
-```csharp
-private readonly HttpClient _httpClient = new HttpClient();
-
-[HttpGet, Route("DotNetCount")]
-public async Task<int> GetDotNetCount()
-{
-    // Suspends GetDotNetCount() to allow the caller (the web server)
-    // to accept another request, rather than blocking on this one.
-    var html = await _httpClient.GetStringAsync("https://dotnetfoundation.org");
-
-    return Regex.Matches(html, @"\.NET").Count;
-}
-```
+:::code language="csharp" source="snippets/async-scenarios/Program.cs" ID="ExtractDataFromNetwork":::
 
 Here's the same scenario written for a Universal Windows App, which performs the same task when a Button is pressed:
 
@@ -159,44 +125,11 @@ You may find yourself in a situation where you need to retrieve multiple pieces 
 
 This example shows how you might grab `User` data for a set of `userId`s.
 
-```csharp
-public async Task<User> GetUserAsync(int userId)
-{
-    // Code omitted:
-    //
-    // Given a user Id {userId}, retrieves a User object corresponding
-    // to the entry in the database with {userId} as its Id.
-}
-
-public static async Task<IEnumerable<User>> GetUsersAsync(IEnumerable<int> userIds)
-{
-    var getUserTasks = new List<Task<User>>();
-    foreach (int userId in userIds)
-    {
-        getUserTasks.Add(GetUserAsync(userId));
-    }
-
-    return await Task.WhenAll(getUserTasks);
-}
-```
+:::code language="csharp" source="snippets/async-scenarios/Program.cs" ID="GetUsersForDataset":::
 
 Here's another way to write this more succinctly, using LINQ:
 
-```csharp
-public async Task<User> GetUserAsync(int userId)
-{
-    // Code omitted:
-    //
-    // Given a user Id {userId}, retrieves a User object corresponding
-    // to the entry in the database with {userId} as its Id.
-}
-
-public static async Task<User[]> GetUsersAsync(IEnumerable<int> userIds)
-{
-    var getUserTasks = userIds.Select(id => GetUserAsync(id)).ToArray();
-    return await Task.WhenAll(getUserTasks);
-}
-```
+:::code language="csharp" source="snippets/async-scenarios/Program.cs" ID="GetUsersForDatasetByLINQ":::
 
 Although it's less code, use caution when mixing LINQ with asynchronous code. Because LINQ uses deferred (lazy) execution, async calls won't happen immediately as they do in a `foreach` loop unless you force the generated sequence to iterate with a call to `.ToList()` or `.ToArray()`. The above example uses <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> to perform the query eagerly and store the results in an array. That forces the code `id => GetUserAsync(id)` to run and start the task.
 

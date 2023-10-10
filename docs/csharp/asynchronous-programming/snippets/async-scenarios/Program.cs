@@ -67,6 +67,7 @@ public class Program
 
     private static void Calculate()
     {
+        // <PerformGameCalculation>
         static DamageResult CalculateDamageDone()
         {
             return new DamageResult()
@@ -85,6 +86,7 @@ public class Program
             var damageResult = await Task.Run(() => CalculateDamageDone());
             DisplayDamage(damageResult);
         };
+        // </PerformGameCalculation>
     }
 
     private static void DisplayDamage(DamageResult damage)
@@ -94,6 +96,7 @@ public class Program
 
     private static void Download(string URL)
     {
+        // <UnblockingDownload>
         s_downloadButton.Clicked += async (o, e) =>
         {
             // This line will yield control to the UI as the request
@@ -103,6 +106,7 @@ public class Program
             var stringData = await s_httpClient.GetStringAsync(URL);
             DoSomethingWithData(stringData);
         };
+        // </UnblockingDownload>
     }
 
     private static void DoSomethingWithData(object stringData)
@@ -110,6 +114,7 @@ public class Program
         Console.WriteLine("Displaying data: ", stringData);
     }
 
+    // <GetUsersForDataset>
     private static async Task<User> GetUserAsync(int userId)
     {
         // Code omitted:
@@ -130,7 +135,17 @@ public class Program
 
         return await Task.WhenAll(getUserTasks);
     }
+    // </GetUsersForDataset>
 
+    // <GetUsersForDatasetByLINQ>
+    private static async Task<User[]> GetUsersAsyncByLINQ(IEnumerable<int> userIds)
+    {
+        var getUserTasks = userIds.Select(id => GetUserAsync(id)).ToArray();
+        return await Task.WhenAll(getUserTasks);
+    }
+    // </GetUsersForDatasetByLINQ>
+
+    // <ExtractDataFromNetwork>
     [HttpGet, Route("DotNetCount")]
     static public async Task<int> GetDotNetCount(string URL)
     {
@@ -139,6 +154,7 @@ public class Program
         var html = await s_httpClient.GetStringAsync(URL);
         return Regex.Matches(html, @"\.NET").Count;
     }
+    // </ExtractDataFromNetwork>
 
     static async Task Main()
     {

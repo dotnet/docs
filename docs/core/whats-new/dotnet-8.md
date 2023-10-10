@@ -868,7 +868,7 @@ Assert.Equal(now, collector.LastMeasurement.Timestamp);
 
 ### System.Numerics.Tensors.TensorPrimitives
 
-The [System.Numerics.Tensors.TensorPrimitives](https://www.nuget.org/packages/System.Numerics.Tensors.TensorPrimitives) NuGet package adds built-in .NET support for tensor operations. The tensor primitives are the next step in the evolution of numerics for AI in .NET. They build on top of [hardware intrinsics](xref:System.Runtime.Intrinsics) and [generic math](../../standard/generics/math.md) to optimize data-intensive workloads like those of AI and machine learning.
+The [System.Numerics.Tensors.TensorPrimitives](https://www.nuget.org/packages/System.Numerics.Tensors.TensorPrimitives) NuGet package adds built-in .NET support for tensor operations. The tensor primitives optimize data-intensive workloads like those of AI and machine learning.
 
 AI workloads like semantic search and retrieval-augmented generation (RAG) extend the natural language capabilities of large language models such as ChatGPT by augmenting prompts with relevant data. For these workloads, operations on vectors&mdash;like *cosine similarity* to find the most relevant data to answer a question&mdash;are crucial. The System.Numerics.Tensors.TensorPrimitives package provides APIs for vector operations, meaning you don't need to take an external dependency or write your own implementation.
 

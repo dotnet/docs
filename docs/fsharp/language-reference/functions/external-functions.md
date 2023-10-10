@@ -67,7 +67,7 @@ extern int GetBinaryTypeW(nativeint lpApplicationName, uint* lpBinaryType);
 
 You could use<xref:System.Runtime.InteropServices.Marshal.StringToHGlobalUni%2A?displayProperty=nameWithType> to convert a .NET string to native format and receive a pointer (`nativeint`) to it that could be supplied to `lpApplicationName`.
 
-To obtain a pointer to an integer you would use the pointer of `&&` operator or the [`fixed`](../language-reference/fixed.md) keyword.
+To obtain a pointer to an integer you would use the pointer of `&&` operator or the [`fixed`](../fixed.md) keyword.
 
 ## See also
 

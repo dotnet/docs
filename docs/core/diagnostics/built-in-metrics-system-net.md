@@ -32,8 +32,8 @@ see [here](available-counters.md).
 |---|---|---|---|---|
 | `dns.question.name` | string | The name being queried. | `www.example.com`; `dot.net` | Always |
 
-This metric measures the time take to make DNS requests. These requests can occur by calling
-<xref:System.Net.Dns.GetHostName> or indirectly wihtin higher level APIs on types such as <xref:System.Net.Http.HttpClient>.
+This metric measures the time take to make DNS requests. These requests can occur by calling methods on
+<xref:System.Net.Dns> or indirectly wihtin higher level APIs on types such as <xref:System.Net.Http.HttpClient>.
 
 Available starting in: .NET 8
 

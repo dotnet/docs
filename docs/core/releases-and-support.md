@@ -36,7 +36,7 @@ Versioning for the .NET SDK works slightly differently from the .NET runtime. To
 
 To differentiate such updates, the .NET SDK uses the concept of feature bands. For example, the first .NET 5 SDK was 5.0.100. This release corresponds to the 5.0.1xx *feature band*. Feature bands are defined in the hundreds groups in the third section of the version number. For example, 5.0.101 and 5.0.201 are versions in two different feature bands while 5.0.101 and 5.0.199 are in the same feature band. When .NET SDK 5.0.101 is installed, .NET SDK 5.1.100 is removed from the machine if it exists. When .NET SDK 5.0.200 is installed on the same machine, .NET SDK 5.0.101 isn't removed.
 
-### Runtime roll-forward and compatibility
+### Runtime roll forward and compatibility
 
 Major and minor updates install side by side with previous versions. An application built to target a specific *major.minor* version continues to use that targeted runtime even if a newer version is installed. The app doesn't automatically roll forward to use a newer *major.minor* version of the runtime unless you opt in for this behavior. An application that was built to target .NET Core 3.0 doesn't automatically start running on .NET Core 3.1. We recommend rebuilding the app and testing against a newer major or minor runtime version before deploying to production. For more information, see [Framework-dependent apps roll forward](versions/selection.md#framework-dependent-apps-roll-forward) and [Self-contained deployment runtime roll forward](deploying/runtime-patch-selection.md).
 
@@ -44,7 +44,7 @@ Servicing updates are treated differently from major and minor releases. An appl
 
 ## .NET version lifecycles
 
-.NET versions adopt the [modern lifecycle](/lifecycle/policies/modern) rather than the [fixed lifecycle](/lifecycle/policies/fixed) that was used for .NET Framework releases. Products with fixed lifecycles provide a long fixed period of support, for example, 5 years of mainstream support and another 5 years of extended support. Mainstream support includes security and non-security fixes, while extended support provides security fixes only. Products that adopt a modern lifecycle have a more service-like support model, with shorter support periods and more frequent releases.
+.NET versions adopt the [modern lifecycle](/lifecycle/policies/modern) rather than the [fixed lifecycle](/lifecycle/policies/fixed) that was used for .NET Framework releases. Products that adopt a modern lifecycle have a service-like support model, with shorter support periods and more frequent releases.
 
 ### Release tracks
 

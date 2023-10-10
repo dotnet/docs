@@ -9,7 +9,7 @@ f1_keywords:
 # NETSDK1202: workload is out of support and will not receive security updates in the future
 
 NETSDK1202 indicates your project is using an optional workload that is out of
-support. An example of this, would be using `net6.0` target frameworks in a .NET
+support. An example of this would be using `net6.0` target frameworks in a .NET
 MAUI application:
 
 ```xml

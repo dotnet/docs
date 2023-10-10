@@ -189,6 +189,12 @@ With async programming, there are some details to keep in mind that can prevent 
 
 A recommended goal is to achieve complete or near-complete [Referential Transparency](https://en.wikipedia.org/wiki/Referential_transparency_%28computer_science%29) in your code. Doing so will result in a predictable, testable, and maintainable codebase.
 
+## Complete example
+
+The following code is the complete text of the *Program.cs* file for the example.
+
+:::code language="csharp" source="snippets/async-scenario/Program.cs":::
+
 ## Other resources
 
 * [The Task asynchronous programming model (C#)](task-asynchronous-programming-model.md).

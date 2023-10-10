@@ -181,3 +181,42 @@ public class Program
         Console.WriteLine("Application ending.");
     }
 }
+
+// Example output:
+//
+// Application started.
+// Counting '.NET' phrase in websites...
+// https://learn.microsoft.com: 0
+// https://learn.microsoft.com/aspnet/core: 57
+// https://learn.microsoft.com/azure: 1
+// https://learn.microsoft.com/azure/devops: 2
+// https://learn.microsoft.com/dotnet: 83
+// https://learn.microsoft.com/dotnet/desktop/wpf/get-started/create-app-visual-studio: 31
+// https://learn.microsoft.com/education: 0
+// https://learn.microsoft.com/shows/net-core-101/what-is-net: 42
+// https://learn.microsoft.com/enterprise-mobility-security: 0
+// https://learn.microsoft.com/gaming: 0
+// https://learn.microsoft.com/graph: 0
+// https://learn.microsoft.com/microsoft-365: 0
+// https://learn.microsoft.com/office: 0
+// https://learn.microsoft.com/powershell: 0
+// https://learn.microsoft.com/sql: 0
+// https://learn.microsoft.com/surface: 0
+// https://dotnetfoundation.org: 16
+// https://learn.microsoft.com/visualstudio: 0
+// https://learn.microsoft.com/windows: 0
+// https://learn.microsoft.com/xamarin: 6
+// Total: 238
+// Retrieving User objects with list of IDs...
+// 1: isEnabled= False
+// 2: isEnabled= False
+// 3: isEnabled= False
+// 4: isEnabled= False
+// 5: isEnabled= False
+// 6: isEnabled= False
+// 7: isEnabled= False
+// 8: isEnabled= False
+// 9: isEnabled= False
+// 0: isEnabled= False
+// Application ending.
+

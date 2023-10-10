@@ -208,46 +208,42 @@ Any change made to the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoReso
 
 ## Source generation support in ASP.NET Core
 
-- In Blazor apps:
-
-  Use overloads of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A?displayProperty=nameWithType> extension methods that take a source generation context or `TypeInfo<TValue>`.
-
-- In Razor Pages, MVC, SignalR, and Web API apps:
+In Blazor apps, use overloads of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A?displayProperty=nameWithType> extension methods that take a source generation context or `TypeInfo<TValue>`.
 
 :::zone pivot="dotnet-8-0,dotnet-7-0"
 
-  Use the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver?displayProperty=nameWithType> property to specify the context.
+In Razor Pages, MVC, SignalR, and Web API apps, use the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver?displayProperty=nameWithType> property to specify the context.
 
-  ```csharp
-  [JsonSerializable(typeof(WeatherForecast[]))]
-  internal partial class MyJsonContext : JsonSerializerContext { }
-  ```
+```csharp
+[JsonSerializable(typeof(WeatherForecast[]))]
+internal partial class MyJsonContext : JsonSerializerContext { }
+```
 
-  ```csharp
-  var serializerOptions = new JsonSerializerOptions
-  {
-      TypeInfoResolver = MyJsonContext.Default;
-  };
+```csharp
+var serializerOptions = new JsonSerializerOptions
+{
+    TypeInfoResolver = MyJsonContext.Default;
+};
 
-  services.AddControllers().AddJsonOptions(options =>
-      options.JsonSerializerOptions = serializerOptions);
-  ```
+services.AddControllers().AddJsonOptions(options =>
+    options.JsonSerializerOptions = serializerOptions);
+```
 
 :::zone-end
 
 :::zone pivot="dotnet-6-0"
 
-  Use the <xref:System.Text.Json.JsonSerializerOptions.AddContext%2A> method of <xref:System.Text.Json.JsonSerializerOptions>, as shown in the following example:
+In Razor Pages, MVC, SignalR, and Web API apps, use the <xref:System.Text.Json.JsonSerializerOptions.AddContext%2A> method of <xref:System.Text.Json.JsonSerializerOptions>, as shown in the following example:
 
-  ```csharp
-  [JsonSerializable(typeof(WeatherForecast[]))]
-  internal partial class MyJsonContext : JsonSerializerContext { }
-  ```
+```csharp
+[JsonSerializable(typeof(WeatherForecast[]))]
+internal partial class MyJsonContext : JsonSerializerContext { }
+```
 
-  ```csharp
-  services.AddControllers().AddJsonOptions(options =>
-      options.JsonSerializerOptions.AddContext<MyJsonContext>());
-  ```
+```csharp
+services.AddControllers().AddJsonOptions(options =>
+    options.JsonSerializerOptions.AddContext<MyJsonContext>());
+```
 
 :::zone-end
 

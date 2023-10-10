@@ -21,7 +21,7 @@ MAUI application:
 The best solution would be to update to a newer, supported `TargetFramework`
 such as `net7.0` or `net8.0`. Note that using a .NET 8 SDK and .NET 8 MAUI
 optional workload does not support building `net6.0` applications in any form,
-and so this is a hard requirement when using the latest .NET SDK.
+so this is a hard requirement when using the latest .NET SDK.
 
 You can continue building `net6.0` .NET MAUI applications with a .NET 6 or .NET
 7 SDK in an unsupported fashion. Additionally, you can opt out of the warning in

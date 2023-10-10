@@ -94,9 +94,8 @@ Available starting in: .NET 8
 | `server.port` | int | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | If not default (`80` for `http` scheme, `443` for `https`) |
 | `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
 
-HTTP client request duration measures the time the underlying client handler takes to complete the request.
-If the request was sent with `HttpCompletionOption.ResponseContentRead` option (the default value) then this metric records
-time to last byte, otherwise if `HttpCompletionOption.ResponseHeadersRead` was set, this metric records time it took to receive response headers.
+HTTP client request duration measures the time the underlying client handler takes to complete the request up to reading response headers from the network
+stream. It does not include the time spent reading the response body.
 
 Available starting in: .NET 8
 

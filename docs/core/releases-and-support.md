@@ -1,10 +1,10 @@
 ---
 title: .NET releases, patches, and support
-description: Learn about releases, patches, and support for .NET 5+ (including .NET Core) and later versions.
-ms.date: 12/08/2022
+description: Learn about releases, patches, and support for .NET.
+ms.date: 10/10/2023
 ms.topic: overview
 ---
-# Releases and support for .NET (.NET 5+ and .NET Core)
+# Releases and support for .NET
 
 Microsoft ships major releases, minor releases, and servicing updates (patches) for .NET 5 (and .NET Core) and later versions. This article explains release types, servicing updates, SDK feature bands, support periods, and support options.
 
@@ -34,25 +34,25 @@ Servicing updates (patches) ship almost every month, and these updates carry bot
 
 Versioning for the .NET SDK works slightly differently from the .NET runtime. To align with new Visual Studio releases, .NET SDK updates sometimes include new features or new versions of components like MSBuild and NuGet. These new features or components may be incompatible with the versions that shipped in previous SDK updates for the same major or minor version.
 
-To differentiate such updates, the .NET SDK uses the concept of feature bands. For example, the first .NET 5 SDK was 5.0.100. This release corresponds to the 3.1.1xx  *feature band*. Feature bands are defined in the hundreds groups in the third section of the version number. For example, 5.0.101 and 5.0.201 are versions in two different feature bands while 5.0.101 and 5.0.199 are in the same feature band. When .NET SDK 5.0.101 is installed, .NET SDK 5.1.100 is removed from the machine if it exists. When .NET SDK 5.0.200 is installed on the same machine, .NET SDK 5.0.101 isn't removed.
+To differentiate such updates, the .NET SDK uses the concept of feature bands. For example, the first .NET 5 SDK was 5.0.100. This release corresponds to the 5.0.1xx *feature band*. Feature bands are defined in the hundreds groups in the third section of the version number. For example, 5.0.101 and 5.0.201 are versions in two different feature bands while 5.0.101 and 5.0.199 are in the same feature band. When .NET SDK 5.0.101 is installed, .NET SDK 5.1.100 is removed from the machine if it exists. When .NET SDK 5.0.200 is installed on the same machine, .NET SDK 5.0.101 isn't removed.
 
-### Runtime roll-forward and compatibility
+### Runtime roll forward and compatibility
 
 Major and minor updates install side by side with previous versions. An application built to target a specific *major.minor* version continues to use that targeted runtime even if a newer version is installed. The app doesn't automatically roll forward to use a newer *major.minor* version of the runtime unless you opt in for this behavior. An application that was built to target .NET Core 3.0 doesn't automatically start running on .NET Core 3.1. We recommend rebuilding the app and testing against a newer major or minor runtime version before deploying to production. For more information, see [Framework-dependent apps roll forward](versions/selection.md#framework-dependent-apps-roll-forward) and [Self-contained deployment runtime roll forward](deploying/runtime-patch-selection.md).
 
-Servicing updates are treated differently from major and minor releases. An application built to target .NET 5.0.0 runs on the 5.0.0 runtime by default. It automatically rolls forward to use a newer 5.0.1 runtime when that servicing update is installed. This behavior is the default because we want security fixes to be used as soon as they're installed without any other action needed. You can opt out from this default roll forward behavior.
+Servicing updates are treated differently from major and minor releases. An application built to target .NET 7 runs on the 7.0.0 runtime by default. It automatically rolls forward to use a newer 7.0.1 runtime when that servicing update is installed. This behavior is the default because we want security fixes to be used as soon as they're installed without any other action needed. You can opt out from this default roll forward behavior.
 
 ## .NET version lifecycles
 
-.NET Core, .NET 5, and later versions adopt the [modern lifecycle](/lifecycle/policies/modern) rather than the [fixed lifecycle](/lifecycle/policies/fixed) that has been used for .NET Framework releases. Products with fixed lifecycles provide a long fixed period of support, for example, 5 years of mainstream support and another 5 years of extended support. Mainstream support includes security and non-security fixes, while extended support provides security fixes only. Products that adopt a modern lifecycle have a more service-like support model, with shorter support periods and more frequent releases.
+.NET versions adopt the [modern lifecycle](/lifecycle/policies/modern) rather than the [fixed lifecycle](/lifecycle/policies/fixed) that was used for .NET Framework releases. Products that adopt a modern lifecycle have a service-like support model, with shorter support periods and more frequent releases.
 
 ### Release tracks
 
 There are two support tracks for releases:
 
-* *Short Term Support* (STS) releases
+* *Standard Term Support* (STS) releases
 
-  These versions are supported until six months after the next major or minor release ships. Previously (.NET Core 3.0 and earlier), these releases were supported for only three months after the next major or minor release shipped.
+  These versions are supported until 6 months after the next major or minor release ships. Previously (.NET Core 3.0 and earlier), these releases were supported for only 3 months after the next major or minor release shipped.
 
   Example:
 
@@ -84,7 +84,7 @@ If you're building a client application that will be distributed to consumers, s
 
 .NET servicing updates are supported until the next servicing update is released. The release cadence is monthly.
 
-You need to regularly install servicing updates to ensure that your apps are in a secure and supported state. For example, if the latest servicing update for .NET 5 is 5.0.8 and we ship 5.0.9, then 5.0.8 is no longer the latest. The supported servicing level for .NET 5 is then 5.0.9.
+You need to regularly install servicing updates to ensure that your apps are in a secure and supported state. For example, if the latest servicing update for .NET 7 is 7.0.8 and we ship 7.0.9, then 7.0.8 is no longer the latest. The supported servicing level for .NET 7 is then 7.0.9.
 
 For information about the latest servicing updates for each major and minor version, see the [.NET downloads page](https://dotnet.microsoft.com/download/dotnet).
 
@@ -94,7 +94,7 @@ End of support refers to the date after which Microsoft no longer provides fixes
 
 ## Supported operating systems
 
-.NET 5 (and .NET Core) and later versions can be run on a range of operating systems. Each of these operating systems has a lifecycle defined by its sponsor organization (for example, Microsoft, Red Hat, or Apple). We take these lifecycle schedules into account when adding and removing support for operating system versions.
+.NET can be run on a range of operating systems. Each of these operating systems has a lifecycle defined by its sponsor organization (for example, Microsoft, Red Hat, or Apple). We take these lifecycle schedules into account when adding and removing support for operating system versions.
 
 When an operating system version goes out of support, we stop testing that version and providing support for that version. Users need to move forward to a supported operating system version to get support.
 
@@ -108,7 +108,7 @@ You have a choice between Microsoft assisted support and Community support.
 
 For assisted support, [contact a Microsoft Support Professional](https://support.microsoft.com/supportforbusiness/productselection/?sapid=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).
 
-You need to be on a supported servicing level (the latest available servicing update) to be eligible for support. If a system is running .NET 5 and the 5.0.8 servicing update has been released, then 5.0.8 needs to be installed as a first step.
+You need to be on a supported servicing level (the latest available servicing update) to be eligible for support. If a system is running .NET 7 and the 7.0.8 servicing update has been released, then 7.0.8 needs to be installed as a first step.
 
 ### Community support
 

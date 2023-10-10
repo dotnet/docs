@@ -193,7 +193,7 @@ A recommended goal is to achieve complete or near-complete [Referential Transpar
 
 The following code is the complete text of the *Program.cs* file for the example.
 
-:::code language="csharp" source="snippets/async-scenario/Program.cs":::
+:::code language="csharp" source="snippets/async-scenarios/Program.cs":::
 
 ## Other resources
 

@@ -69,6 +69,7 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 | [SYSLIB0046](syslib0046.md) | Warning | The <xref:System.Runtime.ControlledExecution.Run(System.Action,System.Threading.CancellationToken)?displayProperty=nameWithType> method might corrupt the process and should not be used in production code. |
 | [SYSLIB0047](syslib0047.md) | Warning | <xref:System.Xml.XmlSecureResolver> is obsolete. Use `XmlResolver.ThrowingResolver` instead when attempting to forbid XML external entity resolution. |
 | [SYSLIB0048](syslib0048.md) | Warning | <xref:System.Security.Cryptography.RSA.EncryptValue(System.Byte[])?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.DecryptValue(System.Byte[])?displayProperty=nameWithType> are obsolete. Use <xref:System.Security.Cryptography.RSA.Encrypt%2A?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.Decrypt%2A?displayProperty=nameWithType> instead. |
+| [SYSLIB0049](syslib0049.md) | Warning | JsonSerializerOptions.AddContext is obsolete. To register a JsonSerializerContext, use either the TypeInfoResolver or TypeInfoResolverChain property. |
 | [SYSLIB0050](syslib0050.md) | Warning | Formatter-based serialization is obsolete and should not be used. |
 | [SYSLIB0051](syslib0051.md) | Warning | APIs that support obsolete formatter-based serialization are obsolete. They should not be called or extended by application code. |
 | [SYSLIB0052](syslib0052.md) | Warning | APIs that support obsolete mechanisms for Regex extensibility are obsolete. |

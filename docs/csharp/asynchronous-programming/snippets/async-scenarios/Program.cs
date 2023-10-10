@@ -41,6 +41,30 @@ public class Program
 
     private static readonly HttpClient s_httpClient = new();
 
+    private static readonly IEnumerable<string> s_urlList = new string[]
+    {
+            "https://learn.microsoft.com",
+            "https://learn.microsoft.com/aspnet/core",
+            "https://learn.microsoft.com/azure",
+            "https://learn.microsoft.com/azure/devops",
+            "https://learn.microsoft.com/dotnet",
+            "https://learn.microsoft.com/dotnet/desktop/wpf/get-started/create-app-visual-studio",
+            "https://learn.microsoft.com/education",
+            "https://learn.microsoft.com/shows/net-core-101/what-is-net",
+            "https://learn.microsoft.com/enterprise-mobility-security",
+            "https://learn.microsoft.com/gaming",
+            "https://learn.microsoft.com/graph",
+            "https://learn.microsoft.com/microsoft-365",
+            "https://learn.microsoft.com/office",
+            "https://learn.microsoft.com/powershell",
+            "https://learn.microsoft.com/sql",
+            "https://learn.microsoft.com/surface",
+            "https://dotnetfoundation.org",
+            "https://learn.microsoft.com/visualstudio",
+            "https://learn.microsoft.com/windows",
+            "https://learn.microsoft.com/xamarin"
+    };
+
     private static void Calculate()
     {
         static DamageResult CalculateDamageDone()
@@ -114,5 +138,30 @@ public class Program
         // to accept another request, rather than blocking on this one.
         var html = await s_httpClient.GetStringAsync(URL);
         return Regex.Matches(html, @"\.NET").Count;
+    }
+
+    static async Task Main()
+    {
+        Console.WriteLine("Application started.");
+
+        Console.WriteLine("Counting '.NET' phrase in websites...");
+        int total = 0;
+        foreach (string url in s_urlList)
+        {
+            var result = await GetDotNetCount(url);
+            Console.WriteLine($"{url}: {result}");
+            total += result;
+        }
+        Console.WriteLine("Total: " + total);
+
+        Console.WriteLine("Retrieving User objects with list of IDs...");
+        IEnumerable<int> ids = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
+        var users = await GetUsersAsync(ids);
+        foreach (User? user in users)
+        {
+            Console.WriteLine($"{user.id}: isEnabled={user.isEnabled}");
+        }
+
+        Console.WriteLine("Application ending.");
     }
 }

@@ -6,7 +6,9 @@ ms.topic: overview
 ---
 # Releases and support for .NET
 
-Microsoft ships major releases, minor releases, and servicing updates (patches) for .NET 5 (and .NET Core) and later versions. This article explains release types, servicing updates, SDK feature bands, support periods, and support options.
+Microsoft ships major releases, minor releases, and servicing updates (patches) for .NET. This article explains release types, servicing updates, SDK feature bands, support periods, and support options.
+
+(For information about versioning and support for .NET Framework, see [.NET Framework versions and dependencies](../framework/migration-guide/versions-and-dependencies.md) and [.NET Framework Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework).)
 
 ## Release types
 
@@ -36,6 +38,8 @@ Versioning for the .NET SDK works slightly differently from the .NET runtime. To
 
 To differentiate such updates, the .NET SDK uses the concept of feature bands. For example, the first .NET 5 SDK was 5.0.100. This release corresponds to the 5.0.1xx *feature band*. Feature bands are defined in the hundreds groups in the third section of the version number. For example, 5.0.101 and 5.0.201 are versions in two different feature bands while 5.0.101 and 5.0.199 are in the same feature band. When .NET SDK 5.0.101 is installed, .NET SDK 5.1.100 is removed from the machine if it exists. When .NET SDK 5.0.200 is installed on the same machine, .NET SDK 5.0.101 isn't removed.
 
+For more information about the relationship between .NET SDK and Visual Studio versions, see [.NET SDK, MSBuild, and Visual Studio versioning](porting/versioning-sdk-msbuild-vs.md).
+
 ### Runtime roll forward and compatibility
 
 Major and minor updates install side by side with previous versions. An application built to target a specific *major.minor* version continues to use that targeted runtime even if a newer version is installed. The app doesn't automatically roll forward to use a newer *major.minor* version of the runtime unless you opt in for this behavior. An application that was built to target .NET Core 3.0 doesn't automatically start running on .NET Core 3.1. We recommend rebuilding the app and testing against a newer major or minor runtime version before deploying to production. For more information, see [Framework-dependent apps roll forward](versions/selection.md#framework-dependent-apps-roll-forward) and [Self-contained deployment runtime roll forward](deploying/runtime-patch-selection.md).
@@ -52,12 +56,10 @@ There are two support tracks for releases:
 
 * *Standard Term Support* (STS) releases
 
-  These versions are supported until 6 months after the next major or minor release ships. Previously (.NET Core 3.0 and earlier), these releases were supported for only 3 months after the next major or minor release shipped.
+  These versions are supported until 6 months after the next major or minor release ships.
 
   Example:
 
-  * .NET Core 3.0 shipped in September 2019 and was followed by .NET Core 3.1 in December 2019.
-  * .NET Core 3.0 support ended in March 2020, 3 months after 3.1 shipped.
   * .NET 5 is an STS release and was released in November 2020. It was supported for 18 months, until May 2022.
   * .NET 7 is an STS release and was released in November 2022. It's supported for 18 months, until May 2024.
 
@@ -76,9 +78,12 @@ Servicing updates ship monthly and include both security and non-security (relia
 
 ## How to choose a release
 
-If you're building a service and expect to continue updating it on a regular basis, then an STS release like .NET 7 may be your best option to stay up to date with the latest features .NET has to offer.
+If you're building a service and expect to continue updating it on a regular basis, then an STS release like the .NET 7 runtime may be your best option to stay up to date with the latest features .NET has to offer.
 
-If you're building a client application that will be distributed to consumers, stability may be more important than access to the latest features. Your application might need to be supported for a certain period before the consumer can upgrade to the next version of the application. In that case, an LTS release like .NET 6 might be the right option.
+If you're building a client application that will be distributed to consumers, stability might be more important than access to the latest features. Your application might need to be supported for a certain period before the consumer can upgrade to the next version of the application. In that case, an LTS release like the .NET 6 runtime could be the right option.
+
+> [!NOTE]
+> We recommend upgrading to the latest SDK version, even if it's an STS release, as it can target all available runtimes.
 
 ### Support for servicing updates
 

@@ -38,7 +38,7 @@ The necessary dependencies are:
 
 The following commands may suffice for compiling for `linux-arm64` on Ubuntu 22.04 amd64, although this is not documented or guaranteed by Ubuntu:
 
-```
+```bash
 sudo dpkg --add-architecture arm64
 sudo bash -c 'cat > /etc/apt/sources.list.d/arm64.list <<EOF
 deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports/ jammy main restricted

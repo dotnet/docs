@@ -1,8 +1,9 @@
 ---
 title: How to use source generation in System.Text.Json
 description: "Learn how to use source generation in System.Text.Json."
-ms.date: 10/21/2022
+ms.date: 10/09/2023
 no-loc: [System.Text.Json]
+zone_pivot_groups: dotnet-preview-version
 dev_langs:
   - "csharp"
   - "vb"
@@ -181,24 +182,70 @@ Here are the preceding examples in a complete program:
 
 :::code language="csharp" source="snippets/source-generation/csharp/JsonSerializerOptionsExample.cs" id="All":::
 
+:::zone pivot="dotnet-8-0,dotnet-7-0"
+
+## Combine source generators
+
+You can combine contracts from multiple source-generated contexts inside a single <xref:System.Text.Json.JsonSerializerOptions> instance. Use the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver?displayProperty=nameWithType> property to chain multiple contexts that have been combined by using the <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfoResolver.Combine(System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver[])?displayProperty=nameWithType> method.
+
+```csharp
+var options = new JsonSerializerOptions
+{
+    TypeInfoResolver = JsonTypeInfoResolver.Combine(ContextA.Default, ContextB.Default, ContextC.Default);
+};
+```
+
+Starting in .NET 8, if you later want to prepend or append another context, you can do so using the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain?displayProperty=nameWithType> property. The ordering of the chain is significant: <xref:System.Text.Json.JsonSerializerOptions> queries each of the resolvers in their specified order and returns the first result that's non-null.
+
+```csharp
+options.TypeInfoResolverChain.Add(ContextD.Default); // Append to the end of the list.
+options.TypeInfoResolverChain.Insert(0, ContextE.Default); // Insert at the beginning of the list.
+```
+
+Any change made to the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> property is reflected by <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> and vice versa.
+
+:::zone-end
+
 ## Source generation support in ASP.NET Core
 
-- In Blazor apps:
+In Blazor apps, use overloads of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A?displayProperty=nameWithType> extension methods that take a source generation context or `TypeInfo<TValue>`.
 
-  Use overloads of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A?displayProperty=nameWithType> extension methods that take a source generation context or `TypeInfo<TValue>`.
+:::zone pivot="dotnet-8-0,dotnet-7-0"
 
-- In Razor Pages, MVC, SignalR, and Web API apps:
+In Razor Pages, MVC, SignalR, and Web API apps, use the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver?displayProperty=nameWithType> property to specify the context.
 
-  Use the <xref:System.Text.Json.JsonSerializerOptions.AddContext%2A> method of <xref:System.Text.Json.JsonSerializerOptions>, as shown in the following example:
+```csharp
+[JsonSerializable(typeof(WeatherForecast[]))]
+internal partial class MyJsonContext : JsonSerializerContext { }
+```
 
-  ```csharp
-  [JsonSerializable(typeof(WeatherForecast[]))]
-  internal partial class MyJsonContext : JsonSerializerContext { }
-  ```
+```csharp
+var serializerOptions = new JsonSerializerOptions
+{
+    TypeInfoResolver = MyJsonContext.Default;
+};
 
-  ```csharp
-  services.AddControllers().AddJsonOptions(options => options.JsonSerializerOptions.AddContext<MyJsonContext>());
-  ```
+services.AddControllers().AddJsonOptions(options =>
+    options.JsonSerializerOptions = serializerOptions);
+```
+
+:::zone-end
+
+:::zone pivot="dotnet-6-0"
+
+In Razor Pages, MVC, SignalR, and Web API apps, use the <xref:System.Text.Json.JsonSerializerOptions.AddContext%2A> method of <xref:System.Text.Json.JsonSerializerOptions>, as shown in the following example:
+
+```csharp
+[JsonSerializable(typeof(WeatherForecast[]))]
+internal partial class MyJsonContext : JsonSerializerContext { }
+```
+
+```csharp
+services.AddControllers().AddJsonOptions(options =>
+    options.JsonSerializerOptions.AddContext<MyJsonContext>());
+```
+
+:::zone-end
 
 ## See also
 

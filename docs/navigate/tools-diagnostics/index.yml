@@ -7,7 +7,7 @@ metadata:
   title: .NET tools and diagnostics documentation
   description: Learn about .NET tools, including the SDK and .NET CLI, diagnostics and instrumentation, code analysis, and package validation.
   ms.topic: landing-page
-  ms.date: 01/17/2023
+  ms.date: 10/10/2023
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -84,6 +84,8 @@ landingContent:
         links:
           - text: .NET diagnostics tools
             url: ../../core/diagnostics/index.md
+          - text: Diagnostic packages
+            url: ../../core/diagnostics/diagnostic-packages.md
           - text: Dumps
             url: ../../core/diagnostics/dumps.md
           - text: Logging and tracing

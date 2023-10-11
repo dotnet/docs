@@ -1,9 +1,7 @@
 ---
 title: Compile-time logging source generation
 description: Learn how to use the LoggerMessageAttribute and compile-time source generation for logging in .NET.
-author: maryamariyan
-ms.author: maariyan
-ms.date: 03/13/2023
+ms.date: 10/11/2023
 ---
 
 # Compile-time logging source generation
@@ -22,7 +20,7 @@ public static partial class Log
     [LoggerMessage(
         EventId = 0,
         Level = LogLevel.Critical,
-        Message = "Could not open socket to `{hostName}`")]
+        Message = "Could not open socket to `{HostName}`")]
     public static partial void CouldNotOpenSocket(
         ILogger logger, string hostName);
 }
@@ -36,7 +34,7 @@ public static partial class Log
     [LoggerMessage(
         EventId = 0,
         Level = LogLevel.Critical,
-        Message = "Could not open socket to `{hostName}`")]
+        Message = "Could not open socket to `{HostName}`")]
     public static partial void CouldNotOpenSocket(
         this ILogger logger, string hostName);
 }
@@ -57,7 +55,7 @@ public partial class InstanceLoggingExample
     [LoggerMessage(
         EventId = 0,
         Level = LogLevel.Critical,
-        Message = "Could not open socket to `{hostName}`")]
+        Message = "Could not open socket to `{HostName}`")]
     public partial void CouldNotOpenSocket(string hostName);
 }
 ```
@@ -69,7 +67,7 @@ public static partial class Log
 {
     [LoggerMessage(
         EventId = 0,
-        Message = "Could not open socket to `{hostName}`")]
+        Message = "Could not open socket to `{HostName}`")]
     public static partial void CouldNotOpenSocket(
         ILogger logger,
         LogLevel level, /* Dynamic log level as parameter, rather than defined in attribute. */
@@ -93,7 +91,7 @@ Consider the example logging output when using the `JsonConsole` formatter.
     "Message": "Liana lives in Seattle.",
     "name": "Liana",
     "city": "Seattle",
-    "{OriginalFormat}": "{name} lives in {city}."
+    "{OriginalFormat}": "{Name} lives in {City}."
   }
 }
 ```
@@ -140,7 +138,7 @@ As a general rule, the first instance of `ILogger`, `LogLevel`, and `Exception` 
 ```csharp
 // This is a valid attribute usage
 [LoggerMessage(
-    EventId = 110, Level = LogLevel.Debug, Message = "M1 {ex3} {ex2}")]
+    EventId = 110, Level = LogLevel.Debug, Message = "M1 {Ex3} {Ex2}")]
 public static partial void ValidLogMethod(
     ILogger logger,
     Exception ex,
@@ -149,7 +147,7 @@ public static partial void ValidLogMethod(
 
 // This causes a warning
 [LoggerMessage(
-    EventId = 0, Level = LogLevel.Debug, Message = "M1 {ex} {ex2}")]
+    EventId = 0, Level = LogLevel.Debug, Message = "M1 {Ex} {Ex2}")]
 public static partial void WarningLogMethod(
     ILogger logger,
     Exception ex,
@@ -216,7 +214,7 @@ There are no constraints on the ordering of log method parameters. A developer c
 [LoggerMessage(
     EventId = 110,
     Level = LogLevel.Debug,
-    Message = "M1 {ex3} {ex2}")]
+    Message = "M1 {Ex3} {Ex2}")]
 static partial void LogMethod(
     Exception ex,
     Exception ex2,
@@ -237,7 +235,7 @@ static partial void LogMethod(
 >     "Message": "M1 System.Exception: Third time's the charm. System.Exception: This is the second error.",
 >     "ex2": "System.Exception: This is the second error.",
 >     "ex3": "System.Exception: Third time's the charm.",
->     "{OriginalFormat}": "M1 {ex3} {ex2}"
+>     "{OriginalFormat}": "M1 {Ex3} {Ex2}"
 >   }
 > }
 > ```
@@ -263,7 +261,7 @@ public partial class LoggingSample
     [LoggerMessage(
         EventId = 20,
         Level = LogLevel.Critical,
-        Message = "Value is {value:E}")]
+        Message = "Value is {Value:E}")]
     public static partial void UsingFormatSpecifier(
         ILogger logger, double value);
 
@@ -276,7 +274,7 @@ public partial class LoggingSample
 
     [LoggerMessage(
         EventId = 10,
-        Message = "Welcome to {city} {province}!")]
+        Message = "Welcome to {City} {Province}!")]
     public partial void LogWithDynamicLogLevel(
         string city, LogLevel level, string province);
 
@@ -327,7 +325,7 @@ Consider the example logging output when using the `JsonConsole` formatter:
     "Message": "Welcome to Vancouver BC!",
     "city": "Vancouver",
     "province": "BC",
-    "{OriginalFormat}": "Welcome to {city} {province}!"
+    "{OriginalFormat}": "Welcome to {City} {Province}!"
   }
 }
 {
@@ -339,7 +337,7 @@ Consider the example logging output when using the `JsonConsole` formatter:
     "Message": "Welcome to Vancouver BC!",
     "city": "Vancouver",
     "province": "BC",
-    "{OriginalFormat}": "Welcome to {city} {province}!"
+    "{OriginalFormat}": "Welcome to {City} {Province}!"
   }
 }
 {
@@ -350,7 +348,7 @@ Consider the example logging output when using the `JsonConsole` formatter:
   "State": {
     "Message": "Value is 1.234568E+004",
     "value": 12345.6789,
-    "{OriginalFormat}": "Value is {value:E}"
+    "{OriginalFormat}": "Value is {Value:E}"
   }
 }
 ```

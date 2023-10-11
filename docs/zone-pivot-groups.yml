@@ -92,3 +92,11 @@ groups:
       title: Orleans 7.0
     - id: orleans-3-x
       title: Orleans 3.x
+- id: orleans-persistence-option
+  title: Orleans persistence option
+  prompt: Choose an option for Orleans persistence
+  pivots:
+    - id: azure-storage
+      title: Azure Storage
+    - id: azure-cosmos-db-nosql
+      title: Azure Cosmos DB for NoSQL

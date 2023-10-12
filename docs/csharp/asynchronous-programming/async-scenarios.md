@@ -1,11 +1,11 @@
 ---
-title: Asynchronous programming - C#
+title: Asynchronous programming scenarios - C#
 description: Learn about the C# language-level asynchronous programming model provided by .NET Core.
 author: BillWagner
 ms.date: 02/08/2023
 ms.technology: csharp-async
 ---
-# Asynchronous programming
+# Asynchronous programming scenarios
 
 If you have any I/O-bound needs (such as requesting data from a network, accessing a database, or reading and writing to a file system), you'll want to utilize asynchronous programming. You could also have CPU-bound code, such as performing an expensive calculation, which is also a good scenario for writing async code.
 
@@ -26,7 +26,7 @@ The `await` keyword is where the magic happens. It yields control to the caller 
 >
 > `private static readonly HttpClient s_httpClient = new();`
 
-### I/O-bound example: Download data from a web servic
+### I/O-bound example: Download data from a web service
 
 You may need to download some data from a web service when a button is pressed but don't want to block the UI thread. It can be accomplished like this:
 

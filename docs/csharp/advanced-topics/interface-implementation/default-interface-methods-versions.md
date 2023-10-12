@@ -33,7 +33,7 @@ From those interfaces, the team could build a library for their users to create 
 
 Now, it's time to upgrade the library for the next release. One of the requested features enables a loyalty discount for customers that have lots of orders. This new loyalty discount gets applied whenever a customer makes an order. The specific discount is a property of each individual customer. Each implementation of `ICustomer` can set different rules for the loyalty discount.
 
-The most natural way to add this functionality is to enhance the `ICustomer` interface with a method to apply any loyalty discount. This design suggestion caused concern among experienced developers: "Interfaces are immutable once they've been released! Don't make a breaking change!" *Default interface implementations* for upgrading interfaces. The library authors can add new members to the interface and provide a default implementation for those members.
+The most natural way to add this functionality is to enhance the `ICustomer` interface with a method to apply any loyalty discount. This design suggestion caused concern among experienced developers: "Interfaces are immutable once they've been released! Don't make a breaking change!" We should use default interface implementations for upgrading interfaces. The library authors can add new members to the interface and provide a default implementation for those members.
 
 Default interface implementations enable developers to upgrade an interface while still enabling any implementors to override that implementation. Users of the library can accept the default implementation as a non-breaking change. If their business rules are different, they can override.
 

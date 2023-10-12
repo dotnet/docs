@@ -838,7 +838,7 @@ Meter meter = meterFactory.Create(options);
 
 #### MetricCollector\<T> class
 
-The new <xref:Microsoft.Extensions.Telemetry.Testing.Metering.MetricCollector%601> class lets you record metric measurements along with timestamps. Additionally, the class offers the flexibility to use a time provider of your choice for accurate timestamp generation.
+The new <xref:Microsoft.Extensions.Diagnostics.Metrics.Testing.MetricCollector%601> class lets you record metric measurements along with timestamps. Additionally, the class offers the flexibility to use a time provider of your choice for accurate timestamp generation.
 
 ```csharp
 const string CounterName = "MyCounter";

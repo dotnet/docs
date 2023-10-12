@@ -534,8 +534,7 @@ Press p to pause, r to resume, q to quit.
 
 ## Test custom metrics
 
-Its possible to test any custom metrics you add using <xref:Microsoft.Extensions.Telemetry.Testing.Metering.MetricCollector%601>. This type makes it easy to record the measurements
-from specific instruments and assert the values were correct.
+Its possible to test any custom metrics you add using <xref:Microsoft.Extensions.Diagnostics.Metrics.Testing.MetricCollector%601>. This type makes it easy to record the measurements from specific instruments and assert the values were correct.
 
 ### Test with dependency injection
 

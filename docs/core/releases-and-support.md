@@ -21,7 +21,7 @@ For example:
 * .NET Core 3.1 is the first minor release after the .NET Core 3.0 major release.
 * .NET Core 5.0.15 is the fifteenth patch for .NET 5.
 
-For a list of released versions of .NET and .NET Core, and information about how often .NET ships, see the [Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core#lifecycle).
+For a list of released versions of .NET and information about how often .NET ships, see the [Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core#lifecycle).
 
 ### Major releases
 

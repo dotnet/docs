@@ -67,7 +67,7 @@ static async Task StartMonitoringAsync(IResourceMonitor monitor)
         cancellationTokenSource.Cancel();
     };
 }
-// <monitor>
+// </monitor>
 
 // <output>
 // Sample output:

@@ -23,9 +23,9 @@ The following NuGet packages are available:
 
 When you're trying to generate meaningful diagnostic messages for exceptions, maintaining the inclusion of pertinent information can pose a challenge. The standard exception message often lacks critical details that accompany the exception, while invoking the <xref:System.Exception.ToString%2A?displayProperty=nameWithType> method yields an excess of state information.
 
-The `IExceptionSummarizer` class offers methods for extracting crucial details from recognized exception types, thereby furnishing a singular `string` that serves as the foundation for crafting top-quality diagnostic messages.
+The <xref:Microsoft.Extensions.Diagnostics.ExceptionSummarization.IExceptionSummarizer> interface offers methods for extracting crucial details from recognized exception types, thereby furnishing a singular `string` that serves as the foundation for crafting top-quality diagnostic messages.
 
-The `IExceptionSummarizer.Summarize` method systematically traverses the roster of registered summarizers until it identifies a summarizer capable of handling the specific exception type. In the event that no summarizer is capable of recognizing the exception type, a meaningful default exception summary is provided instead.
+The <xref:Microsoft.Extensions.Diagnostics.ExceptionSummarization.IExceptionSummarizer.Summarize%2A?displayProperty=nameWithType> method systematically traverses the roster of registered summarizers until it identifies a summarizer capable of handling the specific exception type. In the event that no summarizer is capable of recognizing the exception type, a meaningful default exception summary is provided instead.
 
 ### Example exception summarization usage
 
@@ -35,7 +35,7 @@ The following example demonstrates how to use the `IExceptionSummarizer` interfa
 
 The preceding code:
 
-- Instantiates a new `ServiceCollection` instance, chaining a call to the `AddExceptionSummarizer` extension method.
+- Instantiates a new <xref:Microsoft.Extensions.DependencyInjection.ServiceCollection> instance, chaining a call to the <xref:Microsoft.Extensions.Diagnostics.ExceptionSummarization.ExceptionSummarizationExtensions.AddExceptionSummarizer%2A> extension method.
   - The `AddExceptionSummarizer` extension method accepts a delegate that is used to configure the `ExceptionSummarizerBuilder` instance.
   - The `builder` is used to add the HTTP provider, which handles exceptions of type:
     - <xref:System.OperationCanceledException>
@@ -50,7 +50,7 @@ The preceding code:
 
 Resource monitoring involves the continuous measurement of resource utilization over a specified period. The [Microsoft.Extensions.Diagnostics.ResourceMonitoring](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.ResourceMonitoring) NuGet package offers a collection of APIs tailored for monitoring the resource utilization of your .NET applications.
 
-The `IResourceMonitor` interface furnishes methods for retrieving real-time information concerning process resource utilization. This interface supports the retrieval of data related to CPU and memory usage and is currently compatible with both Windows and Linux platforms.
+The <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor> interface furnishes methods for retrieving real-time information concerning process resource utilization. This interface supports the retrieval of data related to CPU and memory usage and is currently compatible with both Windows and Linux platforms.
 
 ### Example resource monitoring usage
 
@@ -60,18 +60,18 @@ The following example demonstrates how to use the `IResourceMonitor` interface t
 
 The preceding code:
 
-- Instantiates a new `ServiceCollection` instance, chaining calls to the `AddLogging` and `AddResourceMonitoring` extension methods.
+- Instantiates a new `ServiceCollection` instance, chaining calls to the <xref:Microsoft.Extensions.DependencyInjection.LoggingServiceCollectionExtensions.AddLogging%2A> and <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceMonitoringExtensions.AddResourceMonitoring%2A> extension methods.
 - Builds a new `ServiceProvider` instance from the `ServiceCollection` instance.
 - Gets an instance of the `IResourceMonitor` interface from the `ServiceProvider` instance.
 
 > [!IMPORTANT]
-> The `Microsoft.Extensions.Diagnostics.ResourceMonitoring` package assumes that the consumer will register logging providers with the `Microsoft.Extensions.Logging` package. If you don't register logging, the call to `AddResourceMonitoring` will throw an exception.
+> The <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring?displayProperty=fullName> package assumes that the consumer will register logging providers with the `Microsoft.Extensions.Logging` package. If you don't register logging, the call to `AddResourceMonitoring` will throw an exception.
 
-At this point, with the `IResourceMonitor` implementation you'll ask for resource utilization with the `GetUtilization` method. The `GetUtilization` method returns a `ResourceUtilization` instance that contains the following information:
+At this point, with the `IResourceMonitor` implementation you'll ask for resource utilization with the <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor.GetUtilization%2A?displayProperty=nameWithType> method. The `GetUtilization` method returns a <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceUtilization> instance that contains the following information:
 
 _**Current process's**_
 
-- CPU usage as a percentage.
+- <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceUtilization.CpuUsedPercentage>: CPU usage as a percentage.
 - Memory usage as a percentage.
 - Memory usage in bytes.
 

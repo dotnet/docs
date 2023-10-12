@@ -40,6 +40,8 @@ items:
         items:
           - name: Grain persistence
             href: grains/grain-persistence/index.md
+          - name: Azure Cosmos DB
+            href: grains/grain-persistence/azure-cosmos-db.md
           - name: Relational storage (ADO.NET)
             href: grains/grain-persistence/relational-storage.md
           - name: Azure storage

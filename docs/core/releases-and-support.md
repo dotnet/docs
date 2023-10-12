@@ -4,7 +4,6 @@ description: Learn about releases, patches, and support for .NET.
 ms.date: 10/10/2023
 ms.topic: overview
 ---
-
 # Releases and support for .NET
 
  > [!NOTE]

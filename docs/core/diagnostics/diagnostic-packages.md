@@ -46,6 +46,9 @@ The preceding code:
 - Gets an instance of the `IExceptionSummarizer` interface from the `ServiceProvider` instance.
 - Iterates over a collection of exceptions, calling the `Summarize` method on each exception and displaying the result.
 
+> [!WARNING]
+> The primary focus in the design of all exception summarization implementations is to provide diagnostic convenience to trusted users, rather than prioritizing the protection of personally identifiable information (PII).
+
 ## Resource monitoring
 
 Resource monitoring involves the continuous measurement of resource utilization over a specified period. The [Microsoft.Extensions.Diagnostics.ResourceMonitoring](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.ResourceMonitoring) NuGet package offers a collection of APIs tailored for monitoring the resource utilization of your .NET applications.

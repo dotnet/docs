@@ -2,10 +2,10 @@
 title: Creating Metrics
 description: How to add new metrics to a .NET library or application
 ms.topic: tutorial
-ms.date: 11/04/2021
+ms.date: 10/11/2023
 ---
 
-# Creating Metrics
+# Creating metrics
 
 **This article applies to: ✔️** .NET Core 6 and later versions **✔️** .NET Framework 4.6.1 and later versions
 

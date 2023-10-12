@@ -1,7 +1,7 @@
 ---
 title: Diagnostic packages overview
 description: An overview of the available diagnostic packages in .NET.
-ms.date: 10/11/2023
+ms.date: 10/12/2023
 ms.topic: overview
 ---
 
@@ -56,20 +56,46 @@ The `IResourceMonitor` interface furnishes methods for retrieving real-time info
 
 The following example demonstrates how to use the `IResourceMonitor` interface to retrieve information about the current process's CPU and memory usage.
 
-:::code source="snippets/resource-monitoring/Program.cs":::
+:::code source="snippets/resource-monitoring/Program.cs" id="setup":::
 
 The preceding code:
 
 - Instantiates a new `ServiceCollection` instance, chaining calls to the `AddLogging` and `AddResourceMonitoring` extension methods.
 - Builds a new `ServiceProvider` instance from the `ServiceCollection` instance.
 - Gets an instance of the `IResourceMonitor` interface from the `ServiceProvider` instance.
+
+> [!IMPORTANT]
+> The `Microsoft.Extensions.Diagnostics.ResourceMonitoring` package assumes that the consumer will register logging providers with the `Microsoft.Extensions.Logging` package. If you don't register logging, the call to `AddResourceMonitoring` will throw an exception.
+
+At this point, with the `IResourceMonitor` implementation you'll ask for resource utilization with the `GetUtilization` method. The `GetUtilization` method returns a `ResourceUtilization` instance that contains the following information:
+
+_**Current process's**_
+
+- CPU usage as a percentage.
+- Memory usage as a percentage.
+- Memory usage in bytes.
+
+_**System resources**_
+
+- Guaranteed memory in bytes.
+- Maximum memory in bytes.
+- Guaranteed CPU in units.
+- Maximum CPU in units.
+
+Extending this example, you can leverage [Spectre.Console](https://www.nuget.org/packages/Spectre.Console), a well-regarded .NET library designed to simplify the development of visually appealing, cross-platform console applications. With Spectre, you'll be able to present resource utilization data in a tabular format. The following code illustrates the usage of the `IResourceMonitor` interface to access details regarding the CPU and memory usage of the current process, then presenting this data in a table:
+
+:::code source="snippets/resource-monitoring/Program.cs" id="monitor":::
+
+The preceding code:
+
 - Creates a cancellation token source and a cancellation token.
 - Creates a new `Table` instance, configuring it with a title, caption, and columns.
 - Performs a live render of the `Table` instance, passing in a delegate that will be invoked every three seconds.
 - Gets the current resource utilization information from the `IResourceMonitor` instance and displays it as a new row in the `Table` instance.
 
-> [!IMPORTANT]
-> The `Microsoft.Extensions.Diagnostics.ResourceMonitoring` package assumes that the consumer will register logging providers with the `Microsoft.Extensions.Logging` package. If you don't register logging, the call to `AddResourceMonitoring` will throw an exception.
+The following is an example of the output from the preceding code:
+
+:::code source="snippets/resource-monitoring/Program.cs" id="output":::
 
 ## Health checks
 

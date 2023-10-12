@@ -26,7 +26,7 @@ The `await` keyword is where the magic happens. It yields control to the caller 
 >
 > `private static readonly HttpClient s_httpClient = new();`
 
-### I/O-bound example: Download data from a web servic
+### I/O-bound example: Download data from a web service
 
 You may need to download some data from a web service when a button is pressed but don't want to block the UI thread. It can be accomplished like this:
 

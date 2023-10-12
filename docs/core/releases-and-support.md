@@ -7,7 +7,7 @@ ms.topic: overview
 # Releases and support for .NET
 
  > [!NOTE]
- > This topic concerns .NET 5 and later versions, and versions of .NET Core, which preceded them. For .NET Framework releases, see [.NET Framework Lifecycle](https://learn.microsoft.com/en-us/lifecycle/products/microsoft-net-framework).
+ > This article concerns .NET 5 and later versions, and versions of .NET Core. For .NET Framework releases, see [.NET Framework Lifecycle](https://learn.microsoft.com/en-us/lifecycle/products/microsoft-net-framework).
 
 Microsoft ships major releases, minor releases, and servicing updates (patches) for .NET 5 (and .NET Core) and later versions. This article explains release types, servicing updates, SDK feature bands, support periods, and support options.
 

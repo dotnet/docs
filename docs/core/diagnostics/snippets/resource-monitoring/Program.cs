@@ -40,7 +40,7 @@ static async Task StartMonitoringAsync(IResourceMonitor monitor)
     await AnsiConsole.Live(table)
         .StartAsync(async ctx =>
         {
-            var window = TimeSpan.FromSeconds(1);
+            var window = TimeSpan.FromSeconds(3);
             while (token.IsCancellationRequested is false)
             {
                 var utilization = monitor.GetUtilization(window);

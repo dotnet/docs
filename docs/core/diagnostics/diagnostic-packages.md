@@ -83,7 +83,7 @@ At this point, with the `IResourceMonitor` implementation you'll ask for resourc
 
 Extending this example, you can leverage [Spectre.Console](https://www.nuget.org/packages/Spectre.Console), a well-regarded .NET library designed to simplify the development of visually appealing, cross-platform console applications. With Spectre, you'll be able to present resource utilization data in a tabular format. The following code illustrates the usage of the `IResourceMonitor` interface to access details regarding the CPU and memory usage of the current process, then presenting this data in a table:
 
-:::code source="snippets/resource-monitoring/Program.cs" id="monitor":::
+:::code source="snippets/resource-monitoring/Program.cs" id="monitor" highlight="29-30,35-39":::
 
 The preceding code:
 

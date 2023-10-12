@@ -4,7 +4,11 @@ description: Learn about releases, patches, and support for .NET.
 ms.date: 10/10/2023
 ms.topic: overview
 ---
+
 # Releases and support for .NET
+
+ > [!NOTE]
+ > This topic concerns .NET 5 and later versions, and versions of .NET Core, which preceded them. For .NET Framework releases, see [.NET Framework Lifecycle](https://learn.microsoft.com/en-us/lifecycle/products/microsoft-net-framework).
 
 Microsoft ships major releases, minor releases, and servicing updates (patches) for .NET 5 (and .NET Core) and later versions. This article explains release types, servicing updates, SDK feature bands, support periods, and support options.
 
@@ -17,6 +21,8 @@ For example:
 * .NET 6 and .NET 7 are major releases.
 * .NET Core 3.1 is the first minor release after the .NET Core 3.0 major release.
 * .NET Core 5.0.15 is the fifteenth patch for .NET 5.
+
+For a list of released versions of .NET and .NET Core, and information about how often .NET ships, see the [Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core#lifecycle).
 
 ### Major releases
 
@@ -90,7 +96,7 @@ For information about the latest servicing updates for each major and minor vers
 
 ## End of support
 
-End of support refers to the date after which Microsoft no longer provides fixes, updates, or technical assistance for a product version. Before this date, make sure you have moved to using a supported version. Versions that are out of support no longer receive security updates that protect your applications and data.
+End of support refers to the date after which Microsoft no longer provides fixes, updates, or technical assistance for a product version. Before this date, make sure you have moved to using a supported version. Versions that are out of support no longer receive security updates that protect your applications and data. For the supported date ranges for each version of .NET, see the [Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
 ## Supported operating systems
 
@@ -113,7 +119,3 @@ You need to be on a supported servicing level (the latest available servicing up
 ### Community support
 
 For community support, see the [Community page](https://dotnet.microsoft.com/platform/community).
-
-## See also
-
-For more information, including supported date ranges for each version of .NET, see the [Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).

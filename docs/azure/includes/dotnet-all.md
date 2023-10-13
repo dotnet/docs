@@ -336,7 +336,6 @@
 | HDInsight - Job | NuGet [3.0.0-preview.3](https://www.nuget.org/packages/Microsoft.Azure.HDInsight.Job/3.0.0-preview.3) |  | GitHub [3.0.0-preview.3](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.HDInsight.Job_3.0.0-preview.3/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/) |
 | Image Search | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingImageSearch/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingImageSearch_2.1.0-preview.1/sdk/cognitiveservices/Search.BingImageSearch) |
 | Image Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.ImageSearch/2.0.0) |  |  |
-| Information Protection | NuGet [1.7.147](https://www.nuget.org/packages/Microsoft.InformationProtection.File/1.7.147) |  |  |
 | IoT Plug and Play - Devices Client | NuGet [1.41.2](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/1.41.2)<br>NuGet [2.0.0-preview007](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/2.0.0-preview007) |  |  |
 | Kinect Developer Kit | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Kinect.BodyTracking/1.0.1) |  |  |
 | Kinect Developer Kit | NuGet [1.4.1](https://www.nuget.org/packages/Microsoft.Azure.Kinect.Sensor/1.4.1) |  | GitHub [1.4.1](https://github.com/Microsoft/Azure-Kinect-Sensor-SDK) |

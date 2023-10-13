@@ -878,7 +878,7 @@ For more information, see the [Announcing .NET 8 RC 2 blog post](https://devblog
 
 ## Garbage collection
 
-.NET 8 adds a capability to adjust the memory limit on the fly. This is useful in cloud-service scenarios, where demand comes and goes. To be cost-effective, services should scale up and down on resource consumption as the demand fluctuates. When a service detects a decrease in demand, it can scale down resource consumption by reducing its memory limit. Previously, this would fail because the garbage collector (GC) was unaware of the change and might allocate more memory than the new limit. With this change, you can call the `RefreshMemoryLimit` API to update the GC with the new memory limit.
+.NET 8 adds a capability to adjust the memory limit on the fly. This is useful in cloud-service scenarios, where demand comes and goes. To be cost-effective, services should scale up and down on resource consumption as the demand fluctuates. When a service detects a decrease in demand, it can scale down resource consumption by reducing its memory limit. Previously, this would fail because the garbage collector (GC) was unaware of the change and might allocate more memory than the new limit. With this change, you can call the <xref:System.GC.RefreshMemoryLimit> API to update the GC with the new memory limit.
 
 There are some limitations to be aware of:
 

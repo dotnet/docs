@@ -3,7 +3,7 @@ title: Dependency injection
 description: Learn how to use dependency injection within your .NET apps. Discover how to registration services, define service lifetimes, and express dependencies in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/19/2023
+ms.date: 10/13/2023
 ms.topic: overview
 ---
 
@@ -28,14 +28,14 @@ A class can create an instance of the `MessageWriter` class to make use of its `
 ```csharp
 public class Worker : BackgroundService
 {
-    private readonly MessageWriter _messageWriter = new MessageWriter();
+    private readonly MessageWriter _messageWriter = new();
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         while (!stoppingToken.IsCancellationRequested)
         {
             _messageWriter.Write($"Worker running at: {DateTimeOffset.Now}");
-            await Task.Delay(1000, stoppingToken);
+            await Task.Delay(1_000, stoppingToken);
         }
     }
 }
@@ -61,7 +61,7 @@ This interface is implemented by a concrete type, `MessageWriter`:
 
 :::code language="csharp" source="snippets/configuration/dependency-injection/MessageWriter.cs":::
 
-The sample code registers the `IMessageWriter` service with the concrete type `MessageWriter`. The <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A> method registers the service with a singleton lifetime, the lifetime of a single request. [Service lifetimes](#service-lifetimes) are described later in this article.
+The sample code registers the `IMessageWriter` service with the concrete type `MessageWriter`. The <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A> method registers the service with a singleton lifetime, the lifetime of the app. [Service lifetimes](#service-lifetimes) are described later in this article.
 
 :::code language="csharp" source="snippets/configuration/dependency-injection/Program.cs" highlight="5-8":::
 
@@ -128,7 +128,7 @@ public class Worker : BackgroundService
 }
 ```
 
-Using the preceding code, there is no need to update `Program.cs`, because logging is provided by the framework.
+Using the preceding code, there is no need to update _Program.cs_, because logging is provided by the framework.
 
 ## Multiple constructor discovery rules
 

@@ -15,7 +15,7 @@ In previous .NET versions, these APIs can be used without any build warning. In 
 The following table lists the custom diagnostic IDs and their corresponding warning messages for obsoleted APIs.
 
 | Diagnostic ID | Description | Severity |
-| - | - |
+| - | - | - |
 | [SYSLIB0011](../../../../fundamentals/syslib-diagnostics/syslib0011.md) | BinaryFormatter serialization is obsolete | Warning/error |
 | [SYSLIB0048](../../../../fundamentals/syslib-diagnostics/syslib0048.md) | <xref:System.Security.Cryptography.RSA.EncryptValue(System.Byte[])?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.DecryptValue(System.Byte[])?displayProperty=nameWithType> are obsolete. Use <xref:System.Security.Cryptography.RSA.Encrypt%2A?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.Decrypt%2A?displayProperty=nameWithType> instead. | Warning |
 | [SYSLIB0049](../../../../fundamentals/syslib-diagnostics/syslib0049.md) | JsonSerializerOptions.AddContext is obsolete. To register a JsonSerializerContext, use either the TypeInfoResolver or TypeInfoResolverChain property. | Warning |

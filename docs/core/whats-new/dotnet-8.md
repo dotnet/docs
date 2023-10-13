@@ -2,7 +2,7 @@
 title: What's new in .NET 8
 description: Learn about the new .NET features introduced in .NET 8.
 titleSuffix: ""
-ms.date: 09/26/2023
+ms.date: 10/05/2023
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
@@ -11,7 +11,7 @@ author: gewarren
 
 .NET 8 is the successor to [.NET 7](dotnet-7.md). It will be [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 8 here](https://dotnet.microsoft.com/download/dotnet).
 
-This article has been updated for .NET 8 release candidate (RC) 1.
+This article has been updated for .NET 8 release candidate (RC) 2.
 
 > [!IMPORTANT]
 >
@@ -649,6 +649,7 @@ This section contains the following subtopics:
 - [Extensions metrics](#extensions-metrics)
 - [Hosted lifecycle services](#hosted-lifecycle-services)
 - [Keyed DI services](#keyed-di-services)
+- [System.Numerics.Tensors.TensorPrimitives](#systemnumericstensorstensorprimitives)
 
 ### Keyed DI services
 
@@ -837,7 +838,7 @@ Meter meter = meterFactory.Create(options);
 
 #### MetricCollector\<T> class
 
-The new <xref:Microsoft.Extensions.Telemetry.Testing.Metering.MetricCollector%601> class lets you record metric measurements along with timestamps. Additionally, the class offers the flexibility to use a time provider of your choice for accurate timestamp generation.
+The new <xref:Microsoft.Extensions.Diagnostics.Metrics.Testing.MetricCollector%601> class lets you record metric measurements along with timestamps. Additionally, the class offers the flexibility to use a time provider of your choice for accurate timestamp generation.
 
 ```csharp
 const string CounterName = "MyCounter";
@@ -865,35 +866,40 @@ Assert.Empty(collector.LastMeasurement.Tags);
 Assert.Equal(now, collector.LastMeasurement.Timestamp);
 ```
 
+### System.Numerics.Tensors.TensorPrimitives
+
+The updated [System.Numerics.Tensors](https://www.nuget.org/packages/System.Numerics.Tensors) NuGet package includes APIs in the new <xref:System.Numerics.Tensors.TensorPrimitives> namespace that add support for tensor operations. The tensor primitives optimize data-intensive workloads like those of AI and machine learning.
+
+AI workloads like semantic search and retrieval-augmented generation (RAG) extend the natural language capabilities of large language models such as ChatGPT by augmenting prompts with relevant data. For these workloads, operations on vectors&mdash;like *cosine similarity* to find the most relevant data to answer a question&mdash;are crucial. The System.Numerics.Tensors.TensorPrimitives package provides APIs for vector operations, meaning you don't need to take an external dependency or write your own implementation.
+
+This package replaces the [System.Numerics.Tensors package](https://www.nuget.org/packages/System.Numerics.Tensors).
+
+For more information, see the [Announcing .NET 8 RC 2 blog post](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-rc2/).
+
 ## Garbage collection
 
-.NET 8 adds a capability to adjust the memory limit on the fly. This is useful in cloud-service scenarios, where demand comes and goes. To be cost-effective, services should scale up and down on resource consumption as the demand fluctuates. When a service detects a decrease in demand, it can scale down resource consumption by reducing its memory limit. Previously, this would fail because the garbage collector (GC) was unaware of the change and might allocate more memory than the new limit. With this change, you can call the `_RefreshMemoryLimit` API to update the GC with the new memory limit.
+.NET 8 adds a capability to adjust the memory limit on the fly. This is useful in cloud-service scenarios, where demand comes and goes. To be cost-effective, services should scale up and down on resource consumption as the demand fluctuates. When a service detects a decrease in demand, it can scale down resource consumption by reducing its memory limit. Previously, this would fail because the garbage collector (GC) was unaware of the change and might allocate more memory than the new limit. With this change, you can call the <xref:System.GC.RefreshMemoryLimit> API to update the GC with the new memory limit.
 
 There are some limitations to be aware of:
 
-- For now, the `_RefreshMemoryLimit` API is private, so you'll need to call it through private reflection.
 - On 32-bit platforms (for example, Windows x86 and Linux ARM), .NET is unable to establish a new heap hard limit if there isn't already one.
 - The API might return a non-zero status code indicating the refresh failed. This can happen if the scale-down is too aggressive and leaves no room for the GC to maneuver. In this case, consider calling `GC.Collect(2, GCCollectionMode.Aggressive)` to shrink the current memory usage, and then try again.
-- If you scale up the memory limit beyond the size that the GC believes the process can handle during startup, the `_RefreshMemoryLimit` call will succeed, but it won't be able to use more memory than what it perceives as the limit.
+- If you scale up the memory limit beyond the size that the GC believes the process can handle during startup, the `RefreshMemoryLimit` call will succeed, but it won't be able to use more memory than what it perceives as the limit.
 
-The following code snippet shows how to call the API using reflection.
+The following code snippet shows how to call the API.
 
 ```csharp
-MethodInfo refreshMemoryLimitMethod = typeof(GC).GetMethod(
-    "_RefreshMemoryLimit", BindingFlags.NonPublic | BindingFlags.Static);
-
-refreshMemoryLimitMethod.Invoke(null, Array<object>.Empty);
+GC.RefreshMemoryLimit();
 ```
 
 You can also refresh some of the GC configuration settings related to the memory limit. The following code snippet sets the heap hard limit to 100 mebibytes (MiB):
 
 ```csharp
 AppContext.SetData("GCHeapHardLimit", (ulong)100 * 1024 * 1024);
-MethodInfo refreshMemoryLimitMethod = typeof(GC).GetMethod(
-    "_RefreshMemoryLimit", BindingFlags.NonPublic | BindingFlags.Static);
-
-refreshMemoryLimitMethod.Invoke(null, Array<object>.Empty);
+GC.RefreshMemoryLimit();
 ```
+
+The API can throw an <xref:System.InvalidOperationException> if the hard limit is invalid, for example, in the case of negative heap hard limit percentages and if the hard limit is too low. This can happen if the heap hard limit that the refresh will set, either because of new AppData settings or implied by the container memory limit changes, is lower than what's already committed.
 
 ## Configuration-binding source generator
 
@@ -1107,6 +1113,7 @@ Physical promotion removes these limitations, which fixes a number of long-stand
 
 This section contains the following subtopics:
 
+- [CLI-based project evaluation](#cli-based-project-evaluation)
 - [Terminal build output](#terminal-build-output)
 - [Simplified output paths](#simplified-output-paths)
 - ['dotnet workload clean' command](#dotnet-workload-clean-command)
@@ -1114,6 +1121,46 @@ This section contains the following subtopics:
 - [Template engine](#template-engine)
 - [Source Link](#source-link)
 - [Source-build SDK](#source-build-sdk)
+
+### CLI-based project evaluation
+
+MSBuild includes a new feature that makes it easier to incorporate data from MSBuild into your scripts or tools. The following new flags are available for CLI commands such as [dotnet publish](../tools/dotnet-publish.md) to obtain data for use in CI pipelines and elsewhere.
+
+| Flag  | Description  |
+|---------|---------|
+| `--getProperty:<PROPERTYNAME>` | Retrieves the MSBuild property with the specified name. |
+| `--getItem:<ITEMTYPE>` | Retrieves MSBuild items of the specified type. |
+| `--getTargetResults:<TARGETNAME>` | Retrieves the outputs from running the specified target. |
+
+Values are written to the standard output. Multiple or complex values are output as JSON, as shown in the following examples.
+
+```dotnetcli
+>dotnet publish --getProperty:OutputPath
+bin\Release\net8.0\
+```
+
+```dotnetcli
+> dotnet publish -p PublishProfile=DefaultContainer --getProperty:GeneratedContainerDigest --getProperty:GeneratedContainerConfiguration
+{
+  "Properties": {
+    "GeneratedContainerDigest": "sha256:ef880a503bbabcb84bbb6a1aa9b41b36dc1ba08352e7cd91c0993646675174c4",
+    "GeneratedContainerConfiguration": "{\u0022config\u0022:{\u0022ExposedPorts\u0022:{\u00228080/tcp\u0022:{}},\u0022Labels\u0022...}}"
+  }
+}
+```
+
+```dotnetcli
+>dotnet publish -p PublishProfile=DefaultContainer --getItem:ContainerImageTags
+{
+  "Items": {
+    "ContainerImageTags": [
+      {
+        "Identity": "latest",
+        ...
+    ]
+  }
+}
+```
 
 ### Terminal build output
 
@@ -1317,6 +1364,7 @@ Composite images are available for the Alpine Linux, Jammy Chiseled, and Mariner
 
 - [Performance and compatibility](#performance-and-compatibility)
 - [Authentication](#authentication)
+- [Publish to tar.gz archive](#publish-to-targz-archive)
 
 #### Performance and compatibility
 
@@ -1334,6 +1382,20 @@ These improvements also mean that more registries are supported: Harbor, Artifac
 ```
 
 For more information containerizing .NET apps, see [Containerize a .NET app with dotnet publish](../docker/publish-as-container.md).
+
+#### Publish to tar.gz archive
+
+Starting in .NET 8, you can create a container directly as a *tar.gz* archive. This feature is useful if your workflow isn't straightforward and requires that you, for example, run a scanning tool over your images before pushing them. Once the archive is created, you can move it, scan it, or load it into a local Docker toolchain.
+
+To publish to an archive, add the `ContainerArchiveOutputPath` property to your `dotnet publish` command, for example:
+
+```dotnetcli
+dotnet publish \
+  -p PublishProfile=DefaultContainer \
+  -p ContainerArchiveOutputPath=./images/sdk-container-demo.tar.gz
+```
+
+You can specify either a folder name or a path with a specific file name.
 
 ## Source-generated COM interop
 
@@ -1478,6 +1540,7 @@ You can opt out of verification by setting the environment variable `DOTNET_NUGE
 
 ### .NET blog
 
+- [Announcing .NET 8 RC 2](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-rc2/)
 - [Announcing .NET 8 RC 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-rc1/)
 - [Announcing .NET 8 Preview 7](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-7/)
 - [Announcing .NET 8 Preview 6](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-6/)
@@ -1486,6 +1549,7 @@ You can opt out of verification by setting the environment variable `DOTNET_NUGE
 - [Announcing .NET 8 Preview 3](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-3/)
 - [Announcing .NET 8 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-2/)
 - [Announcing .NET 8 Preview 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-1/)
+- [ASP.NET Core updates in .NET 8 RC 2](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-rc-2/)
 - [ASP.NET Core updates in .NET 8 RC 1](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-rc-1/)
 - [ASP.NET Core updates in .NET 8 Preview 7](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-7/)
 - [ASP.NET Core updates in .NET 8 Preview 6](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-6/)

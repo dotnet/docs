@@ -2,10 +2,10 @@
 title: Creating Metrics
 description: How to add new metrics to a .NET library or application
 ms.topic: tutorial
-ms.date: 11/04/2021
+ms.date: 10/11/2023
 ---
 
-# Creating Metrics
+# Creating metrics
 
 **This article applies to: ✔️** .NET Core 6 and later versions **✔️** .NET Framework 4.6.1 and later versions
 
@@ -539,8 +539,7 @@ Press p to pause, r to resume, q to quit.
 
 ## Test custom metrics
 
-Its possible to test any custom metrics you add using <xref:Microsoft.Extensions.Telemetry.Testing.Metering.MetricCollector%601>. This type makes it easy to record the measurements
-from specific instruments and assert the values were correct.
+Its possible to test any custom metrics you add using <xref:Microsoft.Extensions.Diagnostics.Metrics.Testing.MetricCollector%601>. This type makes it easy to record the measurements from specific instruments and assert the values were correct.
 
 ### Test with dependency injection
 

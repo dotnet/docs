@@ -878,33 +878,28 @@ For more information, see the [Announcing .NET 8 RC 2 blog post](https://devblog
 
 ## Garbage collection
 
-.NET 8 adds a capability to adjust the memory limit on the fly. This is useful in cloud-service scenarios, where demand comes and goes. To be cost-effective, services should scale up and down on resource consumption as the demand fluctuates. When a service detects a decrease in demand, it can scale down resource consumption by reducing its memory limit. Previously, this would fail because the garbage collector (GC) was unaware of the change and might allocate more memory than the new limit. With this change, you can call the `_RefreshMemoryLimit` API to update the GC with the new memory limit.
+.NET 8 adds a capability to adjust the memory limit on the fly. This is useful in cloud-service scenarios, where demand comes and goes. To be cost-effective, services should scale up and down on resource consumption as the demand fluctuates. When a service detects a decrease in demand, it can scale down resource consumption by reducing its memory limit. Previously, this would fail because the garbage collector (GC) was unaware of the change and might allocate more memory than the new limit. With this change, you can call the <xref:System.GC.RefreshMemoryLimit> API to update the GC with the new memory limit.
 
 There are some limitations to be aware of:
 
-- For now, the `_RefreshMemoryLimit` API is private, so you'll need to call it through private reflection.
 - On 32-bit platforms (for example, Windows x86 and Linux ARM), .NET is unable to establish a new heap hard limit if there isn't already one.
 - The API might return a non-zero status code indicating the refresh failed. This can happen if the scale-down is too aggressive and leaves no room for the GC to maneuver. In this case, consider calling `GC.Collect(2, GCCollectionMode.Aggressive)` to shrink the current memory usage, and then try again.
-- If you scale up the memory limit beyond the size that the GC believes the process can handle during startup, the `_RefreshMemoryLimit` call will succeed, but it won't be able to use more memory than what it perceives as the limit.
+- If you scale up the memory limit beyond the size that the GC believes the process can handle during startup, the `RefreshMemoryLimit` call will succeed, but it won't be able to use more memory than what it perceives as the limit.
 
-The following code snippet shows how to call the API using reflection.
+The following code snippet shows how to call the API.
 
 ```csharp
-MethodInfo refreshMemoryLimitMethod = typeof(GC).GetMethod(
-    "_RefreshMemoryLimit", BindingFlags.NonPublic | BindingFlags.Static);
-
-refreshMemoryLimitMethod.Invoke(null, Array<object>.Empty);
+GC.RefreshMemoryLimit();
 ```
 
 You can also refresh some of the GC configuration settings related to the memory limit. The following code snippet sets the heap hard limit to 100 mebibytes (MiB):
 
 ```csharp
 AppContext.SetData("GCHeapHardLimit", (ulong)100 * 1024 * 1024);
-MethodInfo refreshMemoryLimitMethod = typeof(GC).GetMethod(
-    "_RefreshMemoryLimit", BindingFlags.NonPublic | BindingFlags.Static);
-
-refreshMemoryLimitMethod.Invoke(null, Array<object>.Empty);
+GC.RefreshMemoryLimit();
 ```
+
+The API can throw an <xref:System.InvalidOperationException> if the hard limit is invalid, for example, in the case of negative heap hard limit percentages and if the hard limit is too low. This can happen if the heap hard limit that the refresh will set, either because of new AppData settings or implied by the container memory limit changes, is lower than what's already committed.
 
 ## Configuration-binding source generator
 

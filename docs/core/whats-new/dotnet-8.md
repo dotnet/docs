@@ -899,7 +899,7 @@ AppContext.SetData("GCHeapHardLimit", (ulong)100 * 1024 * 1024);
 GC.RefreshMemoryLimit();
 ```
 
-It's worth noting that the API can throw an ``InvalidOperationException`` in case the hard limit is invalid e.g., in the case of negative heap hard limit percentages and if the hard limit is too low; this can happen if the heap hard limit that the refresh will set, either because of new AppData settings or implied by the container memory limit changes, is lower than what is already committed.
+The API can throw an <xref:System.InvalidOperationException> if the hard limit is invalid, for example, in the case of negative heap hard limit percentages and if the hard limit is too low. This can happen if the heap hard limit that the refresh will set, either because of new AppData settings or implied by the container memory limit changes, is lower than what's already committed.
 
 ## Configuration-binding source generator
 

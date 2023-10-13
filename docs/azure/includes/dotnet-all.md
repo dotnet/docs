@@ -282,12 +282,7 @@
 | IoT Edge Function | NuGet [3.5.3](https://www.nuget.org/packages/Microsoft.Azure.IoT.Edge.Function/3.5.3) |  |  |
 | IoT Models Repository | NuGet [1.0.0-preview.5](https://www.nuget.org/packages/Azure.IoT.ModelsRepository/1.0.0-preview.5) |  |  |
 | Microsoft.Azure.Devices.Authentication | NuGet [2.0.0-preview001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Authentication/2.0.0-preview001) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Kusto | NuGet [1.0.8-Preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kusto/1.0.8-Preview) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Rpc | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Rpc/1.0.0) |  |  |
 | Microsoft.Azure.IoT.Edge.Module | NuGet [3.2.0](https://www.nuget.org/packages/Microsoft.Azure.IoT.Edge.Module/3.2.0) |  |  |
-| Microsoft.Azure.WebJobs.CosmosDb.ChangeProcessor | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.ChangeProcessor/1.0.4) |  |  |
-| Microsoft.Azure.WebJobs.Extensions.Rpc | NuGet [3.0.37](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Rpc/3.0.37) |  |  |
-| Microsoft.Azure.WebJobs.Rpc.Core | NuGet [3.0.37](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Rpc.Core/3.0.37) |  |  |
 | Microsoft.Azure.WebPubSub.AspNetCore | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.AspNetCore/1.2.0) |  |  |
 | Microsoft.Azure.WebPubSub.Common | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.Common/1.2.0) |  |  |
 | Quantum Jobs | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Quantum.Jobs/1.0.0-beta.3) |  |  |
@@ -299,6 +294,12 @@
 | Application Insights | NuGet [0.9.0-preview](https://www.nuget.org/packages/Microsoft.Azure.ApplicationInsights/0.9.0-preview) |  |  |
 | Auto Suggest | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.AutoSuggest/2.0.0) |  |  |
 | Auto Suggest | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingAutoSuggest/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingAutoSuggest_2.1.0-preview.1/sdk/cognitiveservices/Search.BingAutoSuggest) |
+| Autorest Client Runtime | NuGet [2.3.24](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime/2.3.24) |  | GitHub [2.3.24](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Rest.ClientRuntime_2.3.21/sdk/mgmtcommon/ClientRuntime) |
+| Autorest Client Runtime - Azure | NuGet [3.3.19](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Azure/3.3.19) |  | GitHub [3.3.19](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/mgmtcommon/ClientRuntime.Azure) |
+| Autorest Client Runtime - Azure Authentication | NuGet [2.4.1](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Azure.Authentication/2.4.1) |  | GitHub [2.4.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Rest.ClientRuntime.Azure.Authentication_2.4.1/sdk/mgmtcommon/Auth/Az.Auth/Az.Authentication) |
+| Autorest Client Runtime - Azure Test Framework | NuGet [1.7.7](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Azure.TestFramework/1.7.7) |  | GitHub [1.7.7](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Rest.ClientRuntime.Azure.TestFramework_1.7.7/sdk/mgmtcommon/TestFramework/ClientRuntime.Azure.TestFramework) |
+| Autorest Client Runtime - ETW | NuGet [2.1.3](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Etw/2.1.3) |  | GitHub [2.1.3](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/mgmtcommon/ClientRuntime.Etw) |
+| Autorest Client Runtime - Log4Net | NuGet [2.1.4](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Log4Net/2.1.4) |  | GitHub [2.1.4](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/mgmtcommon/ClientRuntime.Log4Net) |
 | AutoRest Common | NuGet [2.4.48](https://www.nuget.org/packages/Microsoft.AutoRest.Common/2.4.48) |  | GitHub [2.4.48](https://github.com/Azure/autorest.common) |
 | Azure Stack - Azure Consistent Storage | NuGet [0.10.8-preview](https://www.nuget.org/packages/Microsoft.AzureStack.AzureConsistentStorage/0.10.8-preview) |  |  |
 | Azure.FX | NuGet [0.0.22-alpha](https://www.nuget.org/packages/Azure.FX/0.0.22-alpha) |  |  |
@@ -307,13 +308,6 @@
 | Batch - Apps Cryptography | NuGet [1.1.1.4](https://www.nuget.org/packages/Microsoft.Azure.Batch.Apps.Cryptography/1.1.1.4) |  |  |
 | Batch - Conventions Files | NuGet [4.0.0](https://www.nuget.org/packages/Microsoft.Azure.Batch.Conventions.Files/4.0.0) |  | GitHub [4.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Batch.Conventions.Files_4.0.0/sdk/batch/Microsoft.Azure.Batch.Conventions.Files/) |
 | Batch - File Staging | NuGet [9.0.0](https://www.nuget.org/packages/Microsoft.Azure.Batch.FileStaging/9.0.0) |  | GitHub [9.0.0](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/batch/Microsoft.Azure.Batch.FileStaging) |
-| Client Runtime | NuGet [2.3.24](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime/2.3.24) |  | GitHub [2.3.24](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Rest.ClientRuntime_2.3.21/sdk/mgmtcommon/ClientRuntime) |
-| Client Runtime - Azure | NuGet [3.3.19](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Azure/3.3.19) |  | GitHub [3.3.19](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/mgmtcommon/ClientRuntime.Azure) |
-| Client Runtime - Azure Authentication | NuGet [2.4.1](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Azure.Authentication/2.4.1) |  | GitHub [2.4.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Rest.ClientRuntime.Azure.Authentication_2.4.1/sdk/mgmtcommon/Auth/Az.Auth/Az.Authentication) |
-| Client Runtime - Azure Test Framework | NuGet [1.7.7](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Azure.TestFramework/1.7.7) |  | GitHub [1.7.7](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Rest.ClientRuntime.Azure.TestFramework_1.7.7/sdk/mgmtcommon/TestFramework/ClientRuntime.Azure.TestFramework) |
-| Client Runtime - ETW | NuGet [2.1.3](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Etw/2.1.3) |  | GitHub [2.1.3](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/mgmtcommon/ClientRuntime.Etw) |
-| Client Runtime - Log4Net | NuGet [2.1.4](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Log4Net/2.1.4) |  | GitHub [2.1.4](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/mgmtcommon/ClientRuntime.Log4Net) |
-| Code Analyzers for Durable Functions | NuGet [0.5.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask.Analyzers/0.5.0) |  | GitHub [0.5.0](https://github.com/Azure/azure-functions-durable-extension/tree/Analyzer-v0.3.0/src/WebJobs.Extensions.DurableTask.Analyzers) |
 | Commerce Usage Aggregates | NuGet [1.5.3](https://www.nuget.org/packages/Microsoft.Azure.Commerce.UsageAggregates/1.5.3) |  |  |
 | Common | NuGet [2.2.1](https://www.nuget.org/packages/Microsoft.Azure.Common/2.2.1) |  |  |
 | Common - Authentication | NuGet [1.7.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Common.Authentication/1.7.0-preview) |  |  |
@@ -337,32 +331,6 @@
 | Entity Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.EntitySearch/2.0.0) |  |  |
 | Event Hubs - Service Fabric Processor | NuGet [0.5.4](https://www.nuget.org/packages/Microsoft.Azure.EventHubs.ServiceFabricProcessor/0.5.4) |  | GitHub [0.5.4](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.EventHubs.ServiceFabricProcessor_0.5.4/sdk/eventhub/Microsoft.Azure.EventHubs.ServiceFabricProcessor/) |
 | Face | NuGet [2.8.0-preview.3](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.Face/2.8.0-preview.3) |  | GitHub [2.8.0-preview.3](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Vision.Face_2.6.0-preview.1/sdk/cognitiveservices/Vision.Face) |
-| Feature Management | NuGet [2.5.1](https://www.nuget.org/packages/Microsoft.FeatureManagement/2.5.1) | [docs](https://learn.microsoft.com/dotnet/api/microsoft.featuremanagement) |  |
-| Functions - Extensions | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions/1.1.0) |  | GitHub [1.1.0](https://github.com/Azure/azure-functions-dotnet-extensions) |
-| Functions extension for Azure Mobile Apps | NuGet [3.0.0-beta8](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MobileApps/3.0.0-beta8) |  | GitHub [3.0.0-beta8](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.0-beta8/src/WebJobs.Extensions.MobileApps) |
-| Functions extension for Blob Storage | NuGet [5.2.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs/5.2.1) | [docs](/dotnet/api/overview/azure/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs-readme) |  |
-| Functions extension for Cosmos DB | NuGet [4.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDB/4.4.0) |  | GitHub [4.4.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/cosmos-v3.0.7/src/WebJobs.Extensions.CosmosDB) |
-| Functions extension for DocumentDB | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DocumentDB/1.3.0) |  | GitHub [1.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions) |
-| Functions extension for Durable Task Framework | NuGet [2.10.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask/2.10.0) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/functions) | GitHub [2.10.0](https://github.com/Azure/azure-functions-durable-extension/tree/v2.2.2/src/WebJobs.Extensions.DurableTask) |
-| Functions extension for HTTP | NuGet [3.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Http/3.2.0) |  | GitHub [3.2.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.2/src/WebJobs.Extensions.Http) |
-| Functions extension for IoT Edge | NuGet [1.0.7](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.EdgeHub/1.0.7) |  | GitHub [1.0.7](https://github.com/Azure/iotedge/tree/1.0.7/edge-hub) |
-| Functions extension for Kafka | NuGet [3.9.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kafka/3.9.0) |  | GitHub [3.9.0](https://github.com/Azure/azure-functions-kafka-extension/tree/3.0.0/src/Microsoft.Azure.WebJobs.Extensions.Kafka) |
-| Functions extension for Notification Hubs | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.NotificationHubs/1.3.0) |  | GitHub [1.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions) |
-| Functions extension for RabbitMQ | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.RabbitMQ/2.0.3) |  | GitHub [2.0.3](https://github.com/Azure/azure-functions-rabbitmq-extension/tree/v0.2.2029-beta) |
-| Functions extension for script abstractions | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script.Abstractions/1.0.0-preview) |  |  |
-| Functions extension for SendGrid | NuGet [3.0.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.SendGrid/3.0.3) |  | GitHub [3.0.3](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.0/src/WebJobs.Extensions.SendGrid) |
-| Functions extension for Sources | NuGet [3.0.37](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Sources/3.0.37) |  | GitHub [3.0.37](https://github.com/Azure/azure-webjobs-sdk) |
-| Functions extension for Storage Queues | NuGet [5.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Storage.Queues/5.2.0) | [docs](/dotnet/api/overview/azure/Microsoft.Azure.WebJobs.Extensions.Storage.Queues-readme) |  |
-| Functions extension for Twilio | NuGet [3.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Twilio/3.0.2) |  | GitHub [3.0.2](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.0/src/WebJobs.Extensions.Twilio) |
-| Functions extension metadata generator | NuGet [4.0.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator/4.0.1) |  | GitHub [4.0.1](https://github.com/Azure/azure-functions-host) |
-| Functions item template pack for Microsoft Template Engine | NuGet [4.0.2738](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ItemTemplates/4.0.2738) |  | GitHub [4.0.2738](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
-| Functions OpenAPI app settings deserialization library | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Configuration.AppSettings/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Configuration.AppSettings/2.0.0-preview2) |  |  |
-| Functions OpenAPI document and Swagger UI renderer library | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi/2.0.0-preview2) |  |  |
-| Functions project template pack for Microsoft Template Engine | NuGet [4.0.2738](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ProjectTemplates/4.0.2738) |  | GitHub [4.0.2738](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
-| Functions runtime assemblies for App Insights logging | NuGet [3.0.35](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging.ApplicationInsights/3.0.35) |  | GitHub [3.0.35](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18/src/Microsoft.Azure.WebJobs.Logging.ApplicationInsights) |
-| Functions runtime assemblies for logging | NuGet [4.0.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging/4.0.3) |  | GitHub [4.0.3](https://github.com/Azure/azure-webjobs-sdk/tree/dev/src/Microsoft.Azure.WebJobs.Logging) |
-| Functions runtime assemblies for Microsoft.Azure.WebJobs.Host | NuGet [3.0.37](https://www.nuget.org/packages/Microsoft.Azure.WebJobs/3.0.37) |  | GitHub [3.0.37](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18/src/Microsoft.Azure.WebJobs) |
-| Functions timers and file triggers | NuGet [5.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions/5.0.0) |  | GitHub [5.0.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/dev/src/WebJobs.Extensions) |
 | Gallery | NuGet [2.6.2-preview](https://www.nuget.org/packages/Microsoft.Azure.Gallery/2.6.2-preview) |  |  |
 | Hadoop Client | NuGet [1.5.13](https://www.nuget.org/packages/Microsoft.Hadoop.Client/1.5.13) |  |  |
 | HDInsight - Job | NuGet [3.0.0-preview.3](https://www.nuget.org/packages/Microsoft.Azure.HDInsight.Job/3.0.0-preview.3) |  | GitHub [3.0.0-preview.3](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.HDInsight.Job_3.0.0-preview.3/sdk/hdinsight/Microsoft.Azure.HDInsight.Job/) |
@@ -391,8 +359,6 @@
 | Microsoft.Azure.Devices.Provisioning.Transport.Http | NuGet [1.15.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Http/1.15.1)<br>NuGet [1.16.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Http/1.16.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.Provisioning.Transport.Mqtt | NuGet [1.17.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.17.1)<br>NuGet [1.18.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.18.0-preview-001) |  |  |
 | Microsoft.Azure.Devices.Shared | NuGet [1.30.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.30.1)<br>NuGet [1.31.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.31.0-preview-001) |  |  |
-| Microsoft.Azure.Functions.Worker | NuGet [1.19.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.19.0) |  |  |
-| Microsoft.Azure.Functions.Worker.Sdk | NuGet [1.15.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.15.1) |  |  |
 | Microsoft.Azure.uamqp | NuGet [1.2.11](https://www.nuget.org/packages/Microsoft.Azure.uamqp/1.2.11) |  |  |
 | Microsoft.Azure.umqtt | NuGet [1.1.11](https://www.nuget.org/packages/Microsoft.Azure.umqtt/1.1.11) |  |  |
 | Mobile Apps | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Server/2.0.3) |  |  |
@@ -402,7 +368,6 @@
 | News Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.NewsSearch/2.0.0) |  |  |
 | Notification Hubs | NuGet [4.1.0](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs/4.1.0) |  | GitHub [4.1.0](https://github.com/Azure/azure-notificationhubs-dotnet) |
 | Personalizer | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Personalizer/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Personalizer_1.0.0/sdk/cognitiveservices/Personalizer) |
-| Power BI | NuGet [3.20.1](https://www.nuget.org/packages/Microsoft.PowerBI.Api/3.20.1) |  | GitHub [3.20.1](https://github.com/Microsoft/PowerBI-CSharp) |
 | Relay | NuGet [3.0.1](https://www.nuget.org/packages/Microsoft.Azure.Relay/3.0.1) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/service-bus-relay) | GitHub [3.0.1](https://github.com/Azure/azure-relay-dotnet/tree/2.0.1) |
 | Search - Common | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Common/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Common_10.1.0/sdk/search/Microsoft.Azure.Search.Common/) |
 | Search - Data | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Data/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Data_10.1.0/sdk/search/Microsoft.Azure.Search.Data/) |
@@ -420,10 +385,6 @@
 | Spell Check | NuGet [4.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.SpellCheck/4.1.0-preview.1) |  | GitHub [4.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Language.SpellCheck_4.1.0-preview.1/sdk/cognitiveservices/Language.SpellCheck) |
 | Spring Cloud Client | NuGet [2.0.0-preview.3](https://www.nuget.org/packages/Microsoft.Azure.SpringCloud.Client/2.0.0-preview.3) |  |  |
 | Storage - Files Data Lake | NuGet [2.0.0-alpha.2](https://www.nuget.org/packages/Microsoft.Azure.DataLake.Store/2.0.0-alpha.2) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/data-lake-store) | GitHub [2.0.0-alpha.2](https://github.com/Azure/azure-data-lake-store-net/tree/1.2.3-alpha) |
-| Storage APIs for Microsoft.Azure.WebJobs.Host | NuGet [5.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Host.Storage/5.0.0) |  | GitHub [5.0.0](https://github.com/Azure/azure-webjobs-sdk/tree/storage-v4.0.1/src/Microsoft.Azure.WebJobs.Host.Storage) |
-| Supporting library for Microsoft.Azure.WebJobs | NuGet [3.0.37](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Core/3.0.37) |  | GitHub [3.0.37](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18) |
-| Supporting library for Microsoft.Azure.WebJobs.Extensions.OpenApi | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Core/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Core/2.0.0-preview2) |  |  |
-| Supporting library for testing Microsoft.Azure.WebJobs.Host | NuGet [3.0.37](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Host.TestCommon/3.0.37) |  | GitHub [3.0.37](https://github.com/Azure/azure-webjobs-sdk) |
 | Synapse Analytics | NuGet [0.1.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Synapse/0.1.0-preview) |  | GitHub [0.1.0-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Synapse_0.1.0-preview/sdk/synapse/Microsoft.Azure.Synapse/) |
 | Tables | NuGet [2.1.2](https://www.nuget.org/packages/Microsoft.Azure.CosmosDB.Table/2.1.2) |  |  |
 | Video Search | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingVideoSearch/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingVideoSearch_2.1.0-preview.1/sdk/cognitiveservices/Search.BingVideoSearch) |
@@ -441,20 +402,56 @@
 | WindowsAzure Media Services | NuGet [4.2.0](https://www.nuget.org/packages/windowsazure.mediaservices/4.2.0) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/media-services) | GitHub [4.2.0](https://github.com/Azure/azure-sdk-for-media-services) |
 | App Service - API Apps Common | NuGet [0.9.36](https://www.nuget.org/packages/Microsoft.Azure.AppService.ApiApps.Common/0.9.36) |  |  |
 | App Service - API Apps Service | NuGet [0.9.64](https://www.nuget.org/packages/Microsoft.Azure.AppService.ApiApps.Service/0.9.64) |  |  |
+| Code Analyzers for Durable Functions | NuGet [0.5.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask.Analyzers/0.5.0) |  | GitHub [0.5.0](https://github.com/Azure/azure-functions-durable-extension/tree/Analyzer-v0.3.0/src/WebJobs.Extensions.DurableTask.Analyzers) |
 | Core - Client - Newtonsoft Json | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Core.NewtonsoftJson/1.0.0) |  |  |
 | Cosmos DB - BulkExecutor | NuGet [2.5.1-preview](https://www.nuget.org/packages/Microsoft.Azure.CosmosDB.BulkExecutor/2.5.1-preview) |  | GitHub [2.5.1-preview](https://github.com/Azure/azure-cosmosdb-bulkexecutor-dotnet-getting-started) |
 | Cosmos DB - Direct | NuGet [3.31.5](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Direct/3.31.5) |  | GitHub [3.31.5](https://github.com/Azure/azure-cosmos-dotnet-v3) |
 | Cosmos DB - Encryption | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption/2.0.3) |  | GitHub [2.0.3](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/encryption/1.0.0-preview4/Microsoft.Azure.Cosmos.Encryption) |
 | Cosmos DB - Encryption | NuGet [1.0.0-preview06](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption.Custom/1.0.0-preview06) |  |  |
 | Extensions - Caching Cosmos | NuGet [1.5.0](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Cosmos/1.5.0) |  | GitHub [1.5.0](https://github.com/Azure/Microsoft.Extensions.Caching.Cosmos/tree/v1.0.0-preview4) |
+| Functions - Extensions | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions/1.1.0) |  | GitHub [1.1.0](https://github.com/Azure/azure-functions-dotnet-extensions) |
 | Functions extension for Application Insights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Functions extension for Authentication Events | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AuthenticationEvents/1.0.0-beta.3) |  |  |
+| Functions extension for Azure Mobile Apps | NuGet [3.0.0-beta8](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MobileApps/3.0.0-beta8) |  | GitHub [3.0.0-beta8](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.0-beta8/src/WebJobs.Extensions.MobileApps) |
 | Functions extension for Azure SQL and SQL Server | NuGet [3.0.444-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/3.0.444-preview) |  |  |
+| Functions extension for Blob Storage | NuGet [5.2.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs/5.2.1) | [docs](/dotnet/api/overview/azure/Microsoft.Azure.WebJobs.Extensions.Storage.Blobs-readme) |  |
+| Functions extension for Cosmos DB | NuGet [4.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDB/4.4.0) |  | GitHub [4.4.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/cosmos-v3.0.7/src/WebJobs.Extensions.CosmosDB) |
+| Functions extension for DocumentDB | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DocumentDB/1.3.0) |  | GitHub [1.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions) |
+| Functions extension for Durable Task Framework | NuGet [2.10.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask/2.10.0) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/functions) | GitHub [2.10.0](https://github.com/Azure/azure-functions-durable-extension/tree/v2.2.2/src/WebJobs.Extensions.DurableTask) |
 | Functions extension for Durable Task Framework - isolated worker | NuGet [1.0.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.0.3) |  |  |
+| Functions extension for HTTP | NuGet [3.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Http/3.2.0) |  | GitHub [3.2.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.2/src/WebJobs.Extensions.Http) |
+| Functions extension for IoT Edge | NuGet [1.0.7](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.EdgeHub/1.0.7) |  | GitHub [1.0.7](https://github.com/Azure/iotedge/tree/1.0.7/edge-hub) |
+| Functions extension for Kafka | NuGet [3.9.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kafka/3.9.0) |  | GitHub [3.9.0](https://github.com/Azure/azure-functions-kafka-extension/tree/3.0.0/src/Microsoft.Azure.WebJobs.Extensions.Kafka) |
+| Functions extension for Notification Hubs | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.NotificationHubs/1.3.0) |  | GitHub [1.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions) |
+| Functions extension for RabbitMQ | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.RabbitMQ/2.0.3) |  | GitHub [2.0.3](https://github.com/Azure/azure-functions-rabbitmq-extension/tree/v0.2.2029-beta) |
+| Functions extension for script abstractions | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script.Abstractions/1.0.0-preview) |  |  |
+| Functions extension for SendGrid | NuGet [3.0.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.SendGrid/3.0.3) |  | GitHub [3.0.3](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.0/src/WebJobs.Extensions.SendGrid) |
+| Functions extension for Sources | NuGet [3.0.37](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Sources/3.0.37) |  | GitHub [3.0.37](https://github.com/Azure/azure-webjobs-sdk) |
+| Functions extension for Storage Queues | NuGet [5.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Storage.Queues/5.2.0) | [docs](/dotnet/api/overview/azure/Microsoft.Azure.WebJobs.Extensions.Storage.Queues-readme) |  |
 | Functions extension for Storage Timers | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Timers.Storage/1.0.0) |  |  |
+| Functions extension for Twilio | NuGet [3.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Twilio/3.0.2) |  | GitHub [3.0.2](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.0/src/WebJobs.Extensions.Twilio) |
+| Functions extension metadata generator | NuGet [4.0.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator/4.0.1) |  | GitHub [4.0.1](https://github.com/Azure/azure-functions-host) |
+| Functions Extensions - Cosmos DB ChangeProcessor | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.ChangeProcessor/1.0.2) |  |  |
+| Functions Extensions - Cosmos DB Mongo | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.Mongo/1.0.2) |  |  |
+| Functions Extensions - Dapr | NuGet [0.17.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Dapr/0.17.0-preview01) |  |  |
+| Functions Extensions - Dapr Core | NuGet [0.17.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Dapr.Core/0.17.0-preview01) |  |  |
+| Functions Extensions - HTTP AspNet Core | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore/1.0.0) |  |  |
+| Functions Extensions - Redis | NuGet [0.3.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Redis/0.3.1-preview) |  |  |
+| Functions Extensions - Redis | NuGet [0.3.1-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Redis/0.3.1-preview) |  |  |
+| Functions Extensions - WebPubSub | NuGet [1.7.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.WebPubSub/1.7.0-beta.1) |  |  |
+| Functions Extensions - Worker Extentions | NuGet [0.17.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Dapr/0.17.0-preview01) |  |  |
+| Functions item template pack for Microsoft Template Engine | NuGet [4.0.2738](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ItemTemplates/4.0.2738) |  | GitHub [4.0.2738](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
+| Functions OpenAPI app settings deserialization library | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Configuration.AppSettings/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Configuration.AppSettings/2.0.0-preview2) |  |  |
+| Functions OpenAPI document and Swagger UI renderer library | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi/2.0.0-preview2) |  |  |
+| Functions project template pack for Microsoft Template Engine | NuGet [4.0.2738](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ProjectTemplates/4.0.2738) |  | GitHub [4.0.2738](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
+| Functions runtime assemblies for App Insights logging | NuGet [3.0.35](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging.ApplicationInsights/3.0.35) |  | GitHub [3.0.35](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18/src/Microsoft.Azure.WebJobs.Logging.ApplicationInsights) |
+| Functions runtime assemblies for logging | NuGet [4.0.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging/4.0.3) |  | GitHub [4.0.3](https://github.com/Azure/azure-webjobs-sdk/tree/dev/src/Microsoft.Azure.WebJobs.Logging) |
+| Functions runtime assemblies for Microsoft.Azure.WebJobs.Host | NuGet [3.0.37](https://www.nuget.org/packages/Microsoft.Azure.WebJobs/3.0.37) |  | GitHub [3.0.37](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18/src/Microsoft.Azure.WebJobs) |
+| Functions timers and file triggers | NuGet [5.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions/5.0.0) |  | GitHub [5.0.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/dev/src/WebJobs.Extensions) |
 | Microsoft.Azure.Cosmos.Templates | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Templates/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Analyzers | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Analyzers/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Authentication.WebAssembly | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.0)<br>NuGet [1.0.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.1-preview) |  |  |
+| Microsoft.Azure.Functions.Worker | NuGet [1.19.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.19.0) |  |  |
 | Microsoft.Azure.Functions.Worker.ApplicationInsights | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ApplicationInsights/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Core | NuGet [1.15.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/1.15.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Abstractions | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.3.0) |  |  |
@@ -464,8 +461,10 @@
 | Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [5.6.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/5.6.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [3.9.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/3.9.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Kusto | NuGet [1.0.8-Preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kusto/1.0.8-Preview) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.OpenApi | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/2.0.0-preview2) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ/2.0.3) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Rpc | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Rpc/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.SendGrid | NuGet [3.0.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SendGrid/3.0.3) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ServiceBus | NuGet [5.13.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ServiceBus/5.13.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.SignalRService | NuGet [1.7.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SignalRService/1.7.0) |  |  |
@@ -480,25 +479,24 @@
 | Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.14.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.14.0) |  |  |
 | Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.2738](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.2738) |  |  |
 | Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.2738](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.2738) |  |  |
+| Microsoft.Azure.Functions.Worker.Sdk | NuGet [1.15.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.15.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.2.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.2.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Generators | NuGet [1.1.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Generators/1.1.2) |  |  |
+| Microsoft.Azure.WebJobs.CosmosDb.ChangeProcessor | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.ChangeProcessor/1.0.4) |  |  |
 | Microsoft.Azure.WebJobs.CosmosDb.Mongo | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.Mongo/1.0.4) |  |  |
 | Microsoft.Azure.WebJobs.Extensions.Kusto | NuGet [1.0.8-Preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kusto/1.0.8-Preview) |  |  |
+| Microsoft.Azure.WebJobs.Extensions.Rpc | NuGet [3.0.37](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Rpc/3.0.37) |  |  |
+| Microsoft.Azure.WebJobs.Rpc.Core | NuGet [3.0.37](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Rpc.Core/3.0.37) |  |  |
 | Service Bus - Message ID plugin | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.MessageIdPlugin/2.0.0) |  |  |
 | SQL Database Elastic Scale Client | NuGet [2.3.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/2.3.0)<br>NuGet [2.4.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/2.4.0-preview2) |  | GitHub [2.3.0](https://github.com/Azure/elastic-db-tools/tree/v2.3.0/Src/ElasticScale.Client) |
 | SQL Database Elastic Scale Service SplitMerge | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Service.SplitMerge/1.2.0) |  |  |
 | SQL Database Jobs | NuGet [0.8.3362.1](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.Jobs/0.8.3362.1) |  |  |
+| Storage APIs for Microsoft.Azure.WebJobs.Host | NuGet [5.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Host.Storage/5.0.0) |  | GitHub [5.0.0](https://github.com/Azure/azure-webjobs-sdk/tree/storage-v4.0.1/src/Microsoft.Azure.WebJobs.Host.Storage) |
+| Supporting library for Microsoft.Azure.WebJobs | NuGet [3.0.37](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Core/3.0.37) |  | GitHub [3.0.37](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18) |
+| Supporting library for Microsoft.Azure.WebJobs.Extensions.OpenApi | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Core/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Core/2.0.0-preview2) |  |  |
+| Supporting library for testing Microsoft.Azure.WebJobs.Host | NuGet [3.0.37](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Host.TestCommon/3.0.37) |  | GitHub [3.0.37](https://github.com/Azure/azure-webjobs-sdk) |
 | Web - Redis Output Cache Provider | NuGet [4.0.1](https://www.nuget.org/packages/Microsoft.Web.RedisOutputCacheProvider/4.0.1) |  | GitHub [4.0.1](https://github.com/Azure/aspnet-redis-providers/tree/NuGet-Release/RedisOutputCacheProvider-3.0.1/src/OutputCacheProvider) |
 | Web - Redis Session State Provider | NuGet [5.0.3](https://www.nuget.org/packages/Microsoft.Web.RedisSessionStateProvider/5.0.3) |  | GitHub [5.0.3](https://github.com/Azure/aspnet-redis-providers/tree/NuGet-Release/RedisSessionStateProvider-4.0.1/src/RedisSessionStateProvider) |
-| Functions Extensions - Cosmos DB ChangeProcessor | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.ChangeProcessor/1.0.2) |  |  |
-| Functions Extensions - Cosmos DB Mongo | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.Mongo/1.0.2) |  |  |
-| Functions Extensions - Dapr | NuGet [0.17.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Dapr/0.17.0-preview01) |  |  |
-| Functions Extensions - Dapr Core | NuGet [0.17.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Dapr.Core/0.17.0-preview01) |  |  |
-| Functions Extensions - HTTP AspNet Core | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore/1.0.0) |  |  |
-| Functions Extensions - Redis | NuGet [0.3.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Redis/0.3.1-preview) |  |  |
-| Functions Extensions - Redis | NuGet [0.3.1-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Redis/0.3.1-preview) |  |  |
-| Functions Extensions - WebPubSub | NuGet [1.7.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.WebPubSub/1.7.0-beta.1) |  |  |
-| Functions Extensions - Worker Extentions | NuGet [0.17.0-preview01](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Dapr/0.17.0-preview01) |  |  |
 | Hyak Common | NuGet [1.2.2](https://www.nuget.org/packages/Hyak.Common/1.2.2) |  |  |
 | Hyak Common - Tracing Etw | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Etw/1.0.2) |  |  |
 | Hyak Common - Tracing Log4Net | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Log4Net/1.0.2) |  |  |

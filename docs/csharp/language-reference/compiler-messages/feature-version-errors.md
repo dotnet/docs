@@ -46,6 +46,7 @@ f1_keywords:
   - "CS8058"
   - "CS8305"
   - "CS9204"
+  - "CS9194"
 helpviewer_keywords:
   - "CS0171"
   - "CS0188"
@@ -91,6 +92,7 @@ helpviewer_keywords:
   - "CS8058"
   - "CS8305"
   - "CS9204"
+  - "CS0104"
 ms.date: 10/26/2023
 ---
 # Resolve warnings related to language features and versions
@@ -125,6 +127,7 @@ That's be design. The text closely matches the text of the compiler error / warn
 - **CS9016** - *Warning: Use of possibly unassigned property. Upgrade to auto-default the property.*
 - **CS9017** - *Warning: Use of possibly unassigned field. Upgrade to auto-default the field.*
 - **CS9171** - *Target runtime doesn't support inline array types.*
+- **CS9194** - *Argument may not be passed with the `ref` keyword. To pass `ref` arguments to `in` parameters, upgrade to language version 12 or greater.*
 
 In addition, the following errors and warnings relate to struct initialization changes in recent versions:
 

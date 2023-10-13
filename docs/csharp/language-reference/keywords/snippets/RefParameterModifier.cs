@@ -10,6 +10,17 @@ namespace InRefOutModifier
         {
             FirstRefExample();
             ModifyProductsByReference();
+
+            // call By Ref examples:
+
+            var options = new OptionStruct();
+
+            // <ByReadonlyRefExampleCall>
+            ForceByRef(in options);
+            ForceByRef(ref options);
+            ForceByRef(options); // Warning! variable should be passed with `ref` or `in`
+            ForceByRef(new OptionStruct()); // Warning, but an expression, so no variable to reference
+            // </ByReadonlyRefExampleCall>
         }
 
         private static void FirstRefExample()
@@ -127,8 +138,19 @@ namespace InRefOutModifier
             // </InParameterModifier>
         }
 
+        // <ByReadonlyRefExample>
+        public static void ForceByRef(ref readonly OptionStruct thing)
+        {
+            // elided
+        }
+        // </ByReadonlyRefExample>
+
     }
 
+    public struct OptionStruct
+    {
+        // taking the place of lots of fields
+    }
     // <Snippet4>
 
     public class Book

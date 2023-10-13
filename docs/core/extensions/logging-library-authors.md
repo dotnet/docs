@@ -3,7 +3,7 @@ title: Logging guidance for .NET library authors
 author: IEvangelist
 description: Learn how to expose logging as a library author in .NET. Follow the guidance to ensure your library is correctly exposed to consumers.
 ms.author: dapine
-ms.date: 08/08/2023
+ms.date: 10/11/2023
 ---
 
 # Logging guidance for .NET library authors
@@ -49,7 +49,7 @@ namespace Logging.LibraryAuthors;
 internal static partial class LogMessages
 {
     [LoggerMessage(
-        Message = "Sold {quantity} of {description}",
+        Message = "Sold {Quantity} of {Description}",
         Level = LogLevel.Information,
         SkipEnabledCheck = true)]
     internal static partial void LogProductSaleDetails(

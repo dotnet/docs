@@ -3,7 +3,7 @@ title: Worker Services
 description: Learn how to implement a custom IHostedService and use existing implementations in C#. Discover various worker implementations, templates, and service patterns.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/09/2023
+ms.date: 10/13/2023
 ms.topic: overview
 zone_pivot_groups: dotnet-version
 ---
@@ -55,7 +55,7 @@ The preceding `Program` class:
 - Calls `Run` on the `host` instance, which runs the app.
 
 > [!TIP]
-> By default the Worker template doesn't enable server garbage collection (GC). All of the scenarios that require long-running services should consider performance implications of this default. To enable server GC, add the `ServerGarbageCollection` node to the project file:
+> The Worker template doesn't enable server garbage collection (GC) by default, as there are numerous factors that play a role in determining its necessity. Server garbage collection is crucial in long-running services to efficiently manage memory, prevent memory leaks, and maintain stable performance. All of the scenarios that require long-running services should consider performance implications of this default. To enable server GC, add the `ServerGarbageCollection` node to the project file:
 >
 > ```xml
 > <PropertyGroup>

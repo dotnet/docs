@@ -3,7 +3,7 @@ title: Worker Services
 description: Learn how to implement a custom IHostedService and use existing implementations in C#. Discover various worker implementations, templates, and service patterns.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/09/2023
+ms.date: 10/13/2023
 ms.topic: overview
 zone_pivot_groups: dotnet-version
 ---
@@ -54,16 +54,28 @@ The preceding `Program` class:
 - Builds an <xref:Microsoft.Extensions.Hosting.IHost> from the builder.
 - Calls `Run` on the `host` instance, which runs the app.
 
-> [!TIP]
-> By default the Worker template doesn't enable server garbage collection (GC). All of the scenarios that require long-running services should consider performance implications of this default. To enable server GC, add the `ServerGarbageCollection` node to the project file:
->
-> ```xml
-> <PropertyGroup>
->      <ServerGarbageCollection>true</ServerGarbageCollection>
-> </PropertyGroup>
-> ```
->
-> For more information regarding performance considerations, see [Server GC](../../standard/garbage-collection/workstation-server-gc.md#server-gc). For more information on configuring server GC, see [Server GC configuration examples](../runtime-config/garbage-collector.md#workstation-vs-server).
+### Template defaults
+
+The Worker template doesn't enable server garbage collection (GC) by default, as there are numerous factors that play a role in determining its necessity. All of the scenarios that require long-running services should consider performance implications of this default. To enable server GC, add the `ServerGarbageCollection` node to the project file:
+
+```xml
+<PropertyGroup>
+    <ServerGarbageCollection>true</ServerGarbageCollection>
+</PropertyGroup>
+```
+
+_**Tradeoffs and considerations**_
+
+| Enabled | Disabled |
+|--|--|
+| Efficient memory management: Automatically reclaims unused memory to prevent memory leaks and optimize resource usage. | Improved real-time performance: Avoids potential pauses or interruptions caused by garbage collection in latency-sensitive applications. |
+| Long-term stability: Helps maintain stable performance in long-running services by managing memory over extended periods. | Resource efficiency: May conserve CPU and memory resources in resource-constrained environments. |
+| Reduced maintenance: Minimizes the need for manual memory management, simplifying maintenance. | Manual memory control: Provides fine-grained control over memory for specialized applications. |
+| Predictable behavior: Contributes to consistent and predictable application behavior. | Suitable for Short-lived processes: Minimizes the overhead of garbage collection for short-lived or ephemeral processes. |
+
+For more information regarding performance considerations, see [Server GC](../../standard/garbage-collection/workstation-server-gc.md#server-gc). For more information on configuring server GC, see [Server GC configuration examples](../runtime-config/garbage-collector.md#workstation-vs-server).
+
+### Worker class
 
 As for the `Worker`, the template provides a simple implementation.
 

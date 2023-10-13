@@ -63,7 +63,7 @@ The preceding `Program` class:
 > </PropertyGroup>
 > ```
 >
-> _**Trade-offs and considerations**_
+> _**Tradeoffs and considerations**_
 >
 > | Enabled | Disabled |
 > |--|--|

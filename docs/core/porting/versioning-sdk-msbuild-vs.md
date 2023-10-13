@@ -6,7 +6,7 @@ ms.author: stebon
 ms.custom: updateeachrelease
 ms.date: 06/10/2021
 ---
-# Overview of .NET, MSBuild, and Visual Studio versioning
+# .NET SDK, MSBuild, and Visual Studio versioning
 
 Understanding the versioning of the .NET SDK and how it relates to Visual Studio and MSBuild can be confusing. MSBuild versions with Visual Studio, but is also included in the .NET SDK. The SDK has a minimum version of MSBuild and Visual Studio that it works with, and it won't load in a version of Visual Studio that's older than that minimum version.
 

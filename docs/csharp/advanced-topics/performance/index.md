@@ -1,8 +1,7 @@
 ---
 title: Avoid memory allocations and data copies
 description: Performance work in .NET means removing allocations from your code. One technique is to change critical data structures from `class` to `struct`. That changes semantics and means more data is being copied. Learn how to minimize allocations while preserving semantics and avoid extra copies.
-ms.date: 02/03/2023
-ms.technology: csharp-advanced-concepts
+ms.date: 10/13/2023
 ---
 # Reduce memory allocations using new C# features
 
@@ -23,7 +22,7 @@ Variables in C# store *values*. In `struct` types, the value is the contents of 
 
 In C#, parameters to methods are *passed by value*, and return values are *return by value*. The *value* of the argument is passed to the method. The *value* of the return argument is the return value.
 
-The `ref`, `in`, or `out` modifier indicates that parameter is *passed by reference*. The *reference* to the storage location is passed to the method. Adding `ref` to the method signature means the return value is *returned by reference*. The *reference* to the storage location is the return value.
+The `ref`, `in`, `ref readonly` or `out` modifier indicates that parameter is *passed by reference*. The *reference* to the storage location is passed to the method. Adding `ref` to the method signature means the return value is *returned by reference*. The *reference* to the storage location is the return value.
 
 You can also use *ref assignment* to have a variable refer to another variable. A typical assignment copies the *value* of the right hand side to the variable on the left hand side of the assignment. A *ref assignment* copies the memory location of the variable on the right hand side to the variable on the left hand side. The `ref` now refers to the original variable:
 
@@ -32,6 +31,8 @@ You can also use *ref assignment* to have a variable refer to another variable. 
 When you *assign* a variable, you change its *value*. When you *ref assign* a variable, you change what it refers to.
 
 You can work directly with the storage for values using `ref` variables, pass by reference, and ref assignment. Scope rules enforced by the compiler ensure safety when working directly with storage.
+
+The `ref readonly` and `in` modifiers both indicate that the argument should be passed by reference, and can't be reassigned in the method. The difference is that `ref readonly` indicates the method uses the parameter as a variable. The method might capture the parameter, or it might return the parameter by readonly reference. In those cases, you should use the `ref readonly` modifier. Otherwise, the `in` modifier offers more flexibility. You don't need to add the `in` modifier for an `in` parameter, so you can update existing APIs safely using the `in` modifier. The compiler issues a warning if you don't add either the `ref` or `in` modifier to an argument for a `ref readonly` parameter.
 
 ## Ref safe to escape scope
 
@@ -47,28 +48,28 @@ public ref int CantEscape()
 
 The compiler reports an error because you can't return a reference to a local variable from a method. The caller can't access the storage being referred to. The *ref safe to escape scope* defines the scope in which a `ref` expression is safe to access or modify. The following table lists the *ref safe to escape scopes* for variable types. `ref` fields can't be declared in a `class` or a non-ref `struct`, so those rows aren't in the table:
 
-| Declaration                 | *ref safe to escape scope*    |
-|-----------------------------|-------------------------------|
-| non-ref local               | block where local is declared |
-| non-ref parameter           | current method                |
-| `ref`, `in` parameter       | calling method                |
-| `out` parameter             | current method                |
-| `class` field               | calling method                |
-| non-ref `struct` field      | current method                |
-| `ref` field of `ref struct` | calling method                |
+| Declaration                           | *ref safe to escape scope*    |
+|---------------------------------------|-------------------------------|
+| non-ref local                         | block where local is declared |
+| non-ref parameter                     | current method                |
+| `ref`, `ref readonly`, `in` parameter | calling method                |
+| `out` parameter                       | current method                |
+| `class` field                         | calling method                |
+| non-ref `struct` field                | current method                |
+| `ref` field of `ref struct`           | calling method                |
 
 A variable can be `ref` returned if its *ref safe to escape scope* is the calling method. If its *ref safe to escape scope* is the current method or a block, `ref` return is disallowed. The following snippet shows two examples. A member field can be accessed from the scope calling a method, so a class or struct field's *ref safe to escape scope* is the calling method. The *ref safe to escape scope* for a parameter with the `ref`, or `in` modifiers is the entire method. Both can be `ref` returned from a member method:
 
 :::code language="csharp" source="./snippets/ref-safety/EscapeScopes.cs" id="RefSafeToEscapeScopes":::
 
 > [!NOTE]
-> When the `in` modifier is applied to a parameter, that parameter can be returned by `ref readonly`, not `ref`.
+> When the `ref readonly` or `in` modifier is applied to a parameter, that parameter can be returned by `ref readonly`, not `ref`.
 
 The compiler ensures that a reference can't escape its *ref safe to escape scope*. You can use `ref` parameters, `ref return` and `ref` local variables safely because the compiler detects if you've accidentally written code where a `ref` expression could be accessed when its storage isn't valid.
 
 ## Safe to escape scope and ref structs
 
-`ref struct` types require more rules to ensure they can be used safely. A `ref struct` type may include `ref` fields. That requires the introduction of a *safe to escape scope*. For most types, the *safe to escape scope* is the calling method. In other words, a value that's not a `ref struct` can always be returned from a method.
+`ref struct` types require more rules to ensure they can be used safely. A `ref struct` type can include `ref` fields. That requires the introduction of a *safe to escape scope*. For most types, the *safe to escape scope* is the calling method. In other words, a value that's not a `ref struct` can always be returned from a method.
 
 Informally, the *safe to escape scope* for a `ref struct` is the scope where all of its `ref` fields can be accessed. In other words, it's the intersection of the *ref safe to escape scopes* of all its `ref` fields. The following method returns a `ReadOnlySpan<char>` to a member field, so its *safe to escape scope* is the method:
 
@@ -97,10 +98,10 @@ The introduction of <xref:System.Span%601?displayProperty=fullName> and <xref:Sy
 
 Using these features to improve performance involves these tasks:
 
-- *Avoid allocations*:  When you change a type from a `class` to a `struct`, you change how it's stored. Local variables are stored on the stack. Members are stored inline when the container object is allocated. This change means fewer allocations and that decreases the work the garbage collector does. It may also decrease memory pressure so the garbage collector runs less often.
+- *Avoid allocations*:  When you change a type from a `class` to a `struct`, you change how it's stored. Local variables are stored on the stack. Members are stored inline when the container object is allocated. This change means fewer allocations and that decreases the work the garbage collector does. It might also decrease memory pressure so the garbage collector runs less often.
 - *Preserve reference semantics*: Changing a type from a `class` to a `struct` changes the semantics of passing a variable to a method. Code that modified the state of its parameters needs modification. Now that the parameter is a `struct`, the method is modifying a copy of the original object. You can restore the original semantics by passing that parameter as a `ref` parameter. After that change, the method modifies the original `struct` again.
 - *Avoid copying data*: Copying larger `struct` types can impact performance in some code paths. You can also add the `ref` modifier to pass larger data structures to methods by reference instead of by value.
-- *Restrict modifications*: When a `struct` type is passed by reference, the called method could modify the state of the struct. You can replace the `ref` modifier with the `in` modifier to indicate that the argument can't be modified. You can also create `readonly struct` types or `struct` types with `readonly` members to provide more control over what members of a `struct` can be modified.
+- *Restrict modifications*: When a `struct` type is passed by reference, the called method could modify the state of the struct. You can replace the `ref` modifier with the `ref readonly` or `in` modifiers to indicate that the argument can't be modified. Prefer `ref readonly` when the method captures the parameter or returns it by readonly reference. You can also create `readonly struct` types or `struct` types with `readonly` members to provide more control over what members of a `struct` can be modified.
 - *Directly manipulate memory*: Some algorithms are most efficient when treating data structures as a block of memory containing a sequence of elements. The `Span` and `Memory` types provide safe access to blocks of memory.
 
 None of these techniques require `unsafe` code. Used wisely, you can get performance characteristics from safe code that was previously only possible by using unsafe techniques. You can try the techniques yourself in the tutorial on [reducing memory allocations](ref-tutorial.md).

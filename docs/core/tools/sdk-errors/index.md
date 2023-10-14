@@ -169,7 +169,7 @@ f1_keywords:
 
 **This article applies to:** ✔️ .NET 6 SDK and later versions
 
-This is a complete list of the errors that you might get from the .NET SDK while developing .NET apps. If more info is available for a particular error, the error number is a link.
+This list is a complete list of the errors that you might get from the .NET SDK while developing .NET apps. If more info is available for a particular error, the error number is a link.
 
 | SDK Message Number | Message            |
 |--------------------|--------------------|

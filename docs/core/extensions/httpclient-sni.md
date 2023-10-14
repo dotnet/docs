@@ -8,9 +8,9 @@ ms.date: 9/5/2023
 
 # Customize SNI in HTTP requests
 
-When negotiating an HTTPS connection, a TLS connection needs to be established first. As part of the TLS handshake, the client sends the domain name of the server it's connecting to in one of the TLS extensions. When hosting multiple (virtual) servers on the same machine, this feature of the TLS protocol allows clients to distinguish which of these servers they're connecting to and to configure TLS settings, such as the server certificate, accordingly.
+When it negotiates an HTTPS connection, a TLS connection needs to be established first. As part of the TLS handshake, the client sends the domain name of the server it's connecting to in one of the TLS extensions. When multiple (virtual) servers are hosted on the same machine, this feature of the TLS protocol allows clients to distinguish which of these servers they're connecting to and to configure TLS settings, such as the server certificate, accordingly.
 
-When making an HTTP request using `HttpClient`, the implementation automatically selects a value for the server name indication (SNI) extension based on the URL the client is connecting to. For scenarios that require more manual control of the extension, you can use one of the following approaches.
+When an HTTP request using `HttpClient` is made, the implementation automatically selects a value for the server name indication (SNI) extension based on the URL the client is connecting to. For scenarios that require more manual control of the extension, you can use one of the following approaches.
 
 ## Host header
 
@@ -34,7 +34,7 @@ System.Console.WriteLine(response);
 
 ## Manual SslStream authentication via ConnectCallback
 
-A more complicated, but also more powerful, option is to use the `SocketsHttpHandler.ConnectCallback`. Since .NET 7, it is possible to return an authenticated `SslStream` and thus customize how the TLS connection is established. Inside the callback, arbitrary `SslClientAuthenticationOptions` options can be used to perform client-side authentication.
+A more complicated, but also more powerful, option is to use the `SocketsHttpHandler.ConnectCallback`. Since .NET 7, it's possible to return an authenticated `SslStream` and thus customize how the TLS connection is established. Inside the callback, arbitrary `SslClientAuthenticationOptions` options can be used to perform client-side authentication.
 
 ```csharp
 var handler = new SocketsHttpHandler

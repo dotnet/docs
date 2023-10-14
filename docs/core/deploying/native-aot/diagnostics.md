@@ -8,7 +8,7 @@ ms.date: 08/07/2023
 
 # Diagnostics and instrumentation
 
-Native AOT shares some, but not all, diagnostics and instrumentation capabilities with CoreCLR. Because of CoreCLR's rich selection of diagnostic utilities, it's sometimes appropriate to diagnose and debug problems in CoreCLR. Apps that are [trim-compatible](../trimming/prepare-libraries-for-trimming.md) should not have behavioral differences, so investigations often apply to both runtimes. Nonetheless, some information can only be gathered after publishing, so Native AOT also provides post-publish diagnostic tooling.
+Native AOT shares some, but not all, diagnostics and instrumentation capabilities with CoreCLR. Because of CoreCLR's rich selection of diagnostic utilities, it's sometimes appropriate to diagnose and debug problems in CoreCLR. Apps that are [trim-compatible](../trimming/prepare-libraries-for-trimming.md) shouldn't have behavioral differences, so investigations often apply to both runtimes. Nonetheless, some information can only be gathered after publishing, so Native AOT also provides post-publish diagnostic tooling.
 
 ## .NET 8 Native AOT diagnostic support
 
@@ -39,17 +39,16 @@ Native AOT provides partial support for some [well-known event providers](../../
 The .NET CLI tooling (`dotnet` SDK) and Visual Studio offer separate commands for `build` and
 `publish`. `build` (or `Start` in Visual Studio) uses CoreCLR. Only `publish` creates a
 Native AOT application.  Publishing your app as Native AOT produces an app that has been
-ahead-of-time (AOT) compiled to native code. As mentioned previously, this means that not all diagnostic
-tools will work seamlessly with published Native AOT applications in .NET 8. However, all .NET
+ahead-of-time (AOT) compiled to native code. As mentioned previously, not all diagnostic
+tools work seamlessly with published Native AOT applications in .NET 8. However, all .NET
 diagnostic tools are available for developers during the application building stage. We recommend
-developing, debugging, and testing the applications as usual and publishing the working app with Native
-AOT as one of the last steps.
+developing, debugging, and testing the applications as usual and publishing the working app with Native AOT as one of the last steps.
 
 ## Native debugging
 
-When you run your app during development, like inside Visual Studio, or with `dotnet run`, `dotnet build`, or `dotnet test`, it runs on CoreCLR by default. However, if `PublishAot` is present in the project file, the behavior should be the same between CoreCLR and Native AOT. This allows you to use the standard Visual Studio managed debugging engine for development and testing.
+When you run your app during development, like inside Visual Studio, or with `dotnet run`, `dotnet build`, or `dotnet test`, it runs on CoreCLR by default. However, if `PublishAot` is present in the project file, the behavior should be the same between CoreCLR and Native AOT. This characteristic allows you to use the standard Visual Studio managed debugging engine for development and testing.
 
-After publishing, Native AOT applications are true native binaries. The managed debugger will not work on them. However, the Native AOT compiler generates fully native executable files that can be debugged by native debuggers on your platform of choice (for example, WinDbg or Visual Studio on Windows and gdb or lldb on Unix-like systems).
+After publishing, Native AOT applications are true native binaries. The managed debugger won't work on them. However, the Native AOT compiler generates fully native executable files that native debuggers can debug on your platform of choice (for example, WinDbg or Visual Studio on Windows and gdb or lldb on Unix-like systems).
 
 The Native AOT compiler generates information about line numbers, types, locals, and parameters. The native debugger lets you inspect stack trace and variables, step into or over source lines, or set line breakpoints.
 
@@ -60,7 +59,7 @@ Collecting a [dump](../../diagnostics/dumps.md) file for a Native AOT applicatio
 
 ### Visual Studio-specific notes
 
-You can launch a Native AOT-compiled executable under the Visual Studio debugger by opening it in the Visual Studio IDE. You will need to [open the executable itself in Visual Studio](/visualstudio/debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution).
+You can launch a Native AOT-compiled executable under the Visual Studio debugger by opening it in the Visual Studio IDE. You'll need to [open the executable itself in Visual Studio](/visualstudio/debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution).
 
 To set a breakpoint that breaks whenever an exception is thrown, choose the **Breakpoints** option from the **Debug > Windows** menu. In the new window, select **New > Function** breakpoint. Specify `RhThrowEx` as the Function Name and leave the Language option at **All Languages** (don't select C#).
 
@@ -68,7 +67,7 @@ To see what exception was thrown, start debugging (**Debug > Start Debugging** o
 
 ### Importance of the symbol file
 
-When publishing, the Native AOT compiler produces both an executable and a symbol file. Native debugging, and related activities like profiling, require access to the native symbol file. If this file is not present, you may have degraded or broken results.
+When publishing, the Native AOT compiler produces both an executable and a symbol file. Native debugging, and related activities like profiling, require access to the native symbol file. If this file isn't present, you might have degraded or broken results.
 
 For information about the name and location of the symbol file, see [Native debug information](index.md#native-aot-deployment).
 
@@ -78,4 +77,4 @@ Platform-specific tools like [PerfView](https://github.com/microsoft/perfview) a
 
 ## Heap analysis
 
-Managed heap analysis is not currently supported in Native AOT. Heap analysis tools like [dotnet-gcdump](../../diagnostics/dotnet-gcdump.md), [PerfView](https://github.com/microsoft/perfview), and Visual Studio heap analysis tools don't work in Native AOT in .NET 8.
+Managed heap analysis isn't currently supported in Native AOT. Heap analysis tools like [dotnet-gcdump](../../diagnostics/dotnet-gcdump.md), [PerfView](https://github.com/microsoft/perfview), and Visual Studio heap analysis tools don't work in Native AOT in .NET 8.

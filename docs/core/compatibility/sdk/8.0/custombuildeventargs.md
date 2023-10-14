@@ -17,7 +17,7 @@ Starting in .NET 8, a build error is issued if your code uses any type derived f
 
 > Usage of unsecure BinaryFormatter during serialization of custom event type 'MyCustomBuildEventArgs'. This will be deprecated soon. Please use Extended*EventArgs instead. More info: <https://aka.ms/msbuild/eventargs>
 
-If you build from Visual Studio, there is no change in behavior unless you opt in by setting the `MSBUILDCUSTOMBUILDEVENTWARNING` environment variable to 1 (available in Visual Studio version 17.8 and later).
+If you build from Visual Studio, there's no change in behavior unless you opt in by setting the `MSBUILDCUSTOMBUILDEVENTWARNING` environment variable to 1 (available in Visual Studio version 17.8 and later).
 
 ## Version introduced
 
@@ -40,7 +40,7 @@ Use one of the following newly introduced, built-in events for extensibility ins
 - `Microsoft.Build.Framework.ExtendedBuildMessageEventArgs`
 - `Microsoft.Build.Framework.ExtendedBuildWarningEventArgs`
 
-Alternatively, you can temporarily disable the check by explicitly setting the environment variable `MSBUILDCUSTOMBUILDEVENTWARNING` to something other than 1.
+Alternatively, you can temporarily disable the check by explicitly setting the environment variable `MSBUILDCUSTOMBUILDEVENTWARNING` to something other than `1`.
 
 ## Affected APIs
 

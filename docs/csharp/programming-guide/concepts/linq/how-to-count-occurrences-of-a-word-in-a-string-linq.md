@@ -32,7 +32,7 @@ class CountWords
         //Convert the string into an array of words  
         string[] source = text.Split(new char[] { '.', '?', '!', ' ', ';', ':', ',' }, StringSplitOptions.RemoveEmptyEntries);  
   
-        // Create the query.  Use the InvariantCultureIgnoreCase comparision to match "data" and "Data"
+        // Create the query.  Use the InvariantCultureIgnoreCase comparison to match "data" and "Data"
         var matchQuery = from word in source  
                          where word.Equals(searchTerm, StringComparison.InvariantCultureIgnoreCase)  
                          select word;  

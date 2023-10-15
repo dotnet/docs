@@ -22,7 +22,7 @@ Variables in C# store *values*. In `struct` types, the value is the contents of 
 
 In C#, parameters to methods are *passed by value*, and return values are *return by value*. The *value* of the argument is passed to the method. The *value* of the return argument is the return value.
 
-The `ref`, `in`, `ref readonly` or `out` modifier indicates that parameter is *passed by reference*. The *reference* to the storage location is passed to the method. Adding `ref` to the method signature means the return value is *returned by reference*. The *reference* to the storage location is the return value.
+The `ref`, `in`, `ref readonly`, or `out` modifier indicates that the argument is *passed by reference*. A *reference* to the storage location is passed to the method. Adding `ref` to the method signature means the return value is *returned by reference*. A *reference* to the storage location is the return value.
 
 You can also use *ref assignment* to have a variable refer to another variable. A typical assignment copies the *value* of the right hand side to the variable on the left hand side of the assignment. A *ref assignment* copies the memory location of the variable on the right hand side to the variable on the left hand side. The `ref` now refers to the original variable:
 
@@ -32,7 +32,7 @@ When you *assign* a variable, you change its *value*. When you *ref assign* a va
 
 You can work directly with the storage for values using `ref` variables, pass by reference, and ref assignment. Scope rules enforced by the compiler ensure safety when working directly with storage.
 
-The `ref readonly` and `in` modifiers both indicate that the argument should be passed by reference, and can't be reassigned in the method. The difference is that `ref readonly` indicates the method uses the parameter as a variable. The method might capture the parameter, or it might return the parameter by readonly reference. In those cases, you should use the `ref readonly` modifier. Otherwise, the `in` modifier offers more flexibility. You don't need to add the `in` modifier for an `in` parameter, so you can update existing APIs safely using the `in` modifier. The compiler issues a warning if you don't add either the `ref` or `in` modifier to an argument for a `ref readonly` parameter.
+The `ref readonly` and `in` modifiers both indicate that the argument should be passed by reference and can't be reassigned in the method. The difference is that `ref readonly` indicates that the method uses the parameter as a variable. The method might capture the parameter, or it might return the parameter by readonly reference. In those cases, you should use the `ref readonly` modifier. Otherwise, the `in` modifier offers more flexibility. You don't need to add the `in` modifier to an argument for an `in` parameter, so you can update existing API signatures safely using the `in` modifier. The compiler issues a warning if you don't add either the `ref` or `in` modifier to an argument for a `ref readonly` parameter.
 
 ## Ref safe context
 
@@ -65,7 +65,7 @@ A variable can be `ref` returned if its *ref safe context* is the calling method
 > [!NOTE]
 > When the `ref readonly` or `in` modifier is applied to a parameter, that parameter can be returned by `ref readonly`, not `ref`.
 
-The compiler ensures that a reference can't escape its *ref safe context*. You can use `ref` parameters, `ref return` and `ref` local variables safely because the compiler detects if you've accidentally written code where a `ref` expression could be accessed when its storage isn't valid.
+The compiler ensures that a reference can't escape its *ref safe context*. You can use `ref` parameters, `ref return`, and `ref` local variables safely because the compiler detects if you've accidentally written code where a `ref` expression could be accessed when its storage isn't valid.
 
 ## Safe context and ref structs
 

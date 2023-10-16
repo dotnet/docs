@@ -8,7 +8,7 @@ ms.date: 9/5/2023
 
 # Customize SNI in HTTP requests
 
-When it negotiates an HTTPS connection, a TLS connection needs to be established first. As part of the TLS handshake, the client sends the domain name of the server it's connecting to in one of the TLS extensions. When multiple (virtual) servers are hosted on the same machine, this feature of the TLS protocol allows clients to distinguish which of these servers they're connecting to and to configure TLS settings, such as the server certificate, accordingly.
+When a client and server negotiate an HTTPS connection, a TLS connection needs to be established first. As part of the TLS handshake, the client sends the domain name of the server it's connecting to in one of the TLS extensions. When multiple (virtual) servers are hosted on the same machine, this feature of the TLS protocol allows clients to distinguish which of these servers they're connecting to and to configure TLS settings, such as the server certificate, accordingly.
 
 When an HTTP request using `HttpClient` is made, the implementation automatically selects a value for the server name indication (SNI) extension based on the URL the client is connecting to. For scenarios that require more manual control of the extension, you can use one of the following approaches.
 

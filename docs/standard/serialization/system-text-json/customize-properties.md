@@ -17,7 +17,7 @@ ms.topic: how-to
 
 # How to customize property names and values with System.Text.Json
 
-By default, property names and dictionary keys are unchanged in the JSON output, including case. Enum values are represented as numbers. And properties are serialized in the order they're defined. However, you customize these behaviors by:
+By default, property names and dictionary keys are unchanged in the JSON output, including case. Enum values are represented as numbers. And properties are serialized in the order they're defined. However, you can customize these behaviors by:
 
 - Specifying specific serialized property names.
 - Using a built-in [naming policy](xref:System.Text.Json.JsonNamingPolicy), such as camelCase, snake_case, or kebab-case, for property names and dictionary keys.
@@ -58,13 +58,13 @@ The property name set by this attribute:
 
 The following table shows the built-in naming policies and how they affect property names.
 
-| Naming policy                                             | Original property name | Converted property name |
-|-----------------------------------------------------------|------------------------|-------------------------|
-| <xref:System.Text.Json.JsonNamingPolicy.CamelCase>        | `TempCelsius`          | `tempCelsius`           |
-| <xref:System.Text.Json.JsonNamingPolicy.KebabCaseLower>\* | `TempCelsius`          | `temp-celsius`          |
-| <xref:System.Text.Json.JsonNamingPolicy.KebabCaseUpper>\* | `TempCelsius`          | `TEMP-CELSIUS`          |
-| <xref:System.Text.Json.JsonNamingPolicy.SnakeCaseLower>\* | `TempCelsius`          | `temp_celsius`          |
-| <xref:System.Text.Json.JsonNamingPolicy.SnakeCaseUpper>\* | `TempCelsius`          | `TEMP_CELSIUS`          |
+| Naming policy                                             | Description | Original property name | Converted property name |
+|-----------------------------------------------------------|-|-----------------------|-------------------------|
+| <xref:System.Text.Json.JsonNamingPolicy.CamelCase>        | First word starts with a lower case character.<br/>Successive words start with an uppercase character. | `TempCelsius`          | `tempCelsius`           |
+| <xref:System.Text.Json.JsonNamingPolicy.KebabCaseLower>\* | Words are separated by hyphens.<br/>All characters are lowercase. | `TempCelsius`          | `temp-celsius`          |
+| <xref:System.Text.Json.JsonNamingPolicy.KebabCaseUpper>\* | Words are separated by hyphens.<br/>All characters are uppercase. | `TempCelsius`          | `TEMP-CELSIUS`          |
+| <xref:System.Text.Json.JsonNamingPolicy.SnakeCaseLower>\* | Words are separated by underscores.<br/>All characters are lowercase. | `TempCelsius`          | `temp_celsius`          |
+| <xref:System.Text.Json.JsonNamingPolicy.SnakeCaseUpper>\* | Words are separated by underscores.<br/>All characters are uppercase. |`TempCelsius`          | `TEMP_CELSIUS`          |
 
 \* Available in .NET 8 and later versions.
 

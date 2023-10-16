@@ -2402,7 +2402,7 @@ type MyClassDerived(y: string) =
         """)
 ```
 
-#### Formating the primary constructor
+#### Formatting the primary constructor
 
 In default formatting conventions, no space is added between the type name and the parentheses for the primary constructor.
 

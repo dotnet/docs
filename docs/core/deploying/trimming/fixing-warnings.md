@@ -9,9 +9,9 @@ ms.date: 09/08/2021
 
 Conceptually, [trimming](trim-self-contained.md) is simple: when publishing the application, the .NET SDK analyzes the entire application and removes all unused code. However, it can be difficult to determine what is unused, or more precisely, what is used.
 
-To prevent changes in behavior when trimming applications, the .NET SDK provides static analysis of trim compatibility through "trim warnings." Trim warnings are produced by the trimmer when it finds code that may not be compatible with trimming. Code that's not trim-compatible may produce behavioral changes, or even crashes, in an application after it has been trimmed. Ideally, all applications that use trimming should have no trim warnings. If there are any trim warnings, the app should be thoroughly tested after trimming to ensure that there are no behavior changes.
+To prevent changes in behavior when trimming applications, the .NET SDK provides static analysis of trim compatibility through "trim warnings". Trim warnings are produced by the trimmer when it finds code that may not be compatible with trimming. Code that's not trim-compatible may produce behavioral changes, or even crashes, in an application after it has been trimmed. Ideally, all applications that use trimming should have no trim warnings. If there are any trim warnings, the app should be thoroughly tested after trimming to ensure that there are no behavior changes.
 
-This article will help developers understand why some patterns produce trim warnings, and how these warnings can be addressed.
+This article helps you understand why some patterns produce trim warnings, and how these warnings can be addressed.
 
 ## Examples of trim warnings
 
@@ -41,7 +41,7 @@ Trim warnings are meant to bring predictability to trimming. There are two large
 
 These are typically methods which either don't work at all, or may be broken in some cases if they're used in a trimmed application. Good example is the `Type.GetType` method from previous example. In a trimmed app it may work, but there's no guarantee. Such APIs are marked with <xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute>.
 
-<xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute> is simple and broad: it's an attribute that means the member has been annotated incompatible with trimming, meaning that it might use reflection or some other mechanism to access code that may be trimmed away. This attribute is used when code is fundamentally not trim compatible, or the trim dependency is too complex to explain to the trimmer. This would often be true for methods that use the C# [`dynamic`](../../../csharp/language-reference/builtin-types/reference-types.md#the-dynamic-type) keyword, accessing types from <xref:System.Reflection.Assembly.LoadFrom(System.String)>, or other runtime code generation technologies. An example would be:
+<xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute> is simple and broad: it's an attribute that means the member has been annotated incompatible with trimming. This attribute is used when code is fundamentally not trim compatible, or the trim dependency is too complex to explain to the trimmer. This would often be true for methods that dynamically load code for example via <xref:System.Reflection.Assembly.LoadFrom(System.String)>, enumerate or search through all types in an application or assembly for example via <xref:System.Type.GetType>, use the C# [`dynamic`](../../../csharp/language-reference/builtin-types/reference-types.md#the-dynamic-type) keyword, or use other runtime code generation technologies. An example would be:
 
 ```csharp
 [RequiresUnreferencedCode("This functionality is not compatible with trimming. Use 'MethodFriendlyToTrimming' instead")]
@@ -60,11 +60,11 @@ void TestMethod()
 }
 ```
 
-There aren't many workarounds for `RequiresUnreferencedCode`. The best fix is to avoid calling the method at all when trimming and use something else that's trim-compatible. If you're writing a library and it's not in your control whether or not to call the method, you can also mark the functionality in your library as incompatible with trimming, by using the `RequiresUnreferencedCode` attribute. It is useful to library authors to "bubble up" the warning to a public API.
+There aren't many workarounds for `RequiresUnreferencedCode`. The best fix is to avoid calling the method at all when trimming and use something else that's trim-compatible.
 
 #### Mark functionality as incompatible with trimming
 
-If you're writing a library and your method is simply incompatible with trimming, you can mark it with `RequiresUnreferencedCode`. This will annotate your method as not trim compatible. Adding `RequiresUnreferencedCode` will silence all trimming warnings in the given method, but will produce a warning whenever someone else calls it.
+If you're writing a library and it's not in your control whether or not to use incompatible functionality, you can mark it with `RequiresUnreferencedCode`. This will annotate your method as not trim compatible. Adding `RequiresUnreferencedCode` will silence all trim warnings in the given method, but will produce a warning whenever someone else calls it.
 
 The <xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute> requires you to specify a `Message`. The message is shown as part of a warning reported to the developer who calls the marked method. For example:
 
@@ -84,22 +84,43 @@ Good message should state what functionality is not compatible with trimming and
 
 If the guidance to the developer becomes too long to be included in a warning message, you can add an optional `Url` to the <xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute> to point the developer to a web page describing the problem and possible solutions in greater detail.
 
-For example used like this:
+For example:
 
 ```csharp
 [RequiresUnreferencedCode("This functionality is not compatible with trimming. Use 'MethodFriendlyToTrimming' instead", Url = "https://site/trimming-and-method)]
 void MethodWithAssemblyLoad() { ... }
 ```
 
-A warning generated from this attribute would then look like this:
+This produces a warning:
 
 ```console
 IL2026: Using member 'MethodWithAssemblyLoad()' which has 'RequiresUnreferencedCodeAttribute' can break functionality when trimming application code. This functionality is not compatible with trimming. Use 'MethodFriendlyToTrimming' instead. https://site/trimming-and-method
 ```
 
+Using `RequiresUnreferencedCode` often leads to marking more methods with it due to the same reason. This is common when a low-level method is not trim-compatible, then the higher level method which calls it is also incompatible. You "bubble up" the warning to a public API. Each usage of `RequiresUnreferencedCode` needs a message, and in these cases the messages are likely the same. To avoid duplicating strings and making it easier to maintain, use a constant string field to store the message:
+
+```csharp
+class Functionality
+{
+    const string IncompatibleWithTrimmingMessage = "This functionality is not compatible with trimming. Use 'FunctionalityFriendlyToTrimming' instead";
+
+    [RequiresUnreferencedCode(IncompatibleWithTrimmingMessage)]
+    private void ImplementationOfAssemblyLoading()
+    {
+        ...
+    }
+
+    [RequiresUnreferencedCode(IncompatibleWithTrimmingMessage)]
+    public void MethodWithAssemblyLoad()
+    {
+        ImplementationOfAssemblyLoading();
+    }
+}
+```
+
 ### Functionality with requirements on its input
 
-Trimming provides tools to specify additional requirements on input to methods and other members which lead to trim compatible code. These requirements are usually about reflection and ability to access certain members or operations on a passed in type via reflection. Such requirements are specified using the <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute>.
+Trimming provides tools to specify additional requirements on input to methods and other members which lead to trim compatible code. These requirements are usually about reflection and ability to access certain members or operations on a type. Such requirements are specified using the <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute>.
 
 Unlike `RequiresUnreferencedCode`, reflection can sometimes be understood by the trimmer as long as it's annotated correctly. Let's take another look at the original example:
 
@@ -212,8 +233,40 @@ void MethodWithAssemblyLoad() { ... }
     Justification = "Everything referenced in the loaded assembly is manually preserved, so it's safe")]
 void TestMethod()
 {
+    InitializeEverything();
+
     MethodWithAssemblyLoad(); // Warning suppressed
+
+    ReportResults();
 }
 ```
 
-`UnconditionalSuppressMessage` is like `SuppressMessage` but it can be seen by `publish` and other post-build tools. `SuppressMessage` and `#pragma` directives are only present in source so they can't be used to silence warnings from the trimmer. Be very careful when suppressing trim warnings: it's possible that the call may be trim-compatible now, but as you change your code that may change, and you may forget to review all the suppressions.
+> !WARNING
+> Be very careful when suppressing trim warnings. It's possible that the call may be trim-compatible now, but as you change your code that may change, and you may forget to review all the suppressions.
+
+`UnconditionalSuppressMessage` is like `SuppressMessage` but it can be seen by `publish` and other post-build tools.
+
+> !IMPORTANT
+> Do not use `SuppressMessage` or `#pragma warning disable` to suppress trimmer warnings. These only work for the compiler, but are not preserved in the compiled assembly. Trimmer operates on compiled assemblies and would not see the suppression.
+
+The suppression applies to the entire method body. So in our sample above it will suppress all warnings `IL2026` from anywhere in the method. This makes it somewhat harder to understand, as it's not clear which method is the problematic one, unless you add a comment. More importantly if the code changes in the future and for example the `ReportResults` becomes trim-incompatible as well, there will ne no warning reported for this call, as it's going to be suppressed by the existing attribute.
+
+You can be resolve this by refactoring the problematic call into a separate method or local function and then apply the suppression to just that method:
+
+```csharp
+void TestMethod()
+{
+    InitializeEverything();
+
+    CallMethodWithAssemblyLoad();
+
+    ReportResults();
+
+    [UnconditionalSuppressMessage("AssemblyLoadTrimming", "IL2026:RequiresUnreferencedCode",
+        Justification = "Everything referenced in the loaded assembly is manually preserved, so it's safe")]
+    void CallMethodWithAssemblyLoad()
+    {
+        MethodWIthAssemblyLoad(); // Warning suppressed
+    }
+}
+```

@@ -82,7 +82,7 @@ The preceding code sets a response timeout of five seconds on the `LeaveGame` me
 
 ### Configure response timeout
 
-Much like individual grain method response timeouts, you can configure a default response timeout for all grain methods. Calls to grain methods will timeout if a response isn't received within a specified time period. By default, this period is **30 seconds**. You can configure the default response timeout by configuring the <xref:Orleans.Configuration.MessagingOptions.ResponseTimeout> property:
+Much like individual grain method response timeouts, you can configure a default response timeout for all grain methods. Calls to grain methods will timeout if a response isn't received within a specified time period. By default, this period is **30 seconds**. You can configure the default response timeout:
 
 - By configuring <xref:Orleans.Configuration.MessagingOptions.ResponseTimeout> on <xref:Orleans.Configuration.ClientMessagingOptions>, on an external client.
 - By configuring <xref:Orleans.Configuration.MessagingOptions.ResponseTimeout> on <xref:Orleans.Configuration.SiloMessagingOptions>, on a server.

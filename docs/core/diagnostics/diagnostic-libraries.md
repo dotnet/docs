@@ -1,13 +1,13 @@
 ---
-title: Diagnostic packages overview
-description: An overview of the available diagnostic packages in .NET.
-ms.date: 10/12/2023
+title: Diagnostic libraries
+description: An overview of the available diagnostic libraries in .NET.
+ms.date: 10/16/2023
 ms.topic: overview
 ---
 
-# Diagnostic packages overview
+# Diagnostic libraries
 
-Available as a set of .NET Extensions, various diagnostic packages provide a set of APIs and tools that enable you to collect and analyze diagnostic information about your .NET applications. From summarizing exceptions, to determining resource utilization and monitoring, to exposing health checks, and providing probes for Kubernetes, the diagnostic packages provide a rich set of functionality that can be used to instrument your apps.
+Available as a set of .NET Extensions, various diagnostic libraries provide a set of APIs and tools that enable you to collect and analyze diagnostic information about your .NET applications. From summarizing exceptions, to determining resource utilization and monitoring, to exposing health checks, and providing probes for Kubernetes, the diagnostic packages provide a rich set of functionality that can be used to instrument your apps.
 
 The following NuGet packages are available:
 
@@ -47,7 +47,7 @@ The preceding code:
 - Iterates over a collection of exceptions, calling the `Summarize` method on each exception and displaying the result.
 
 > [!WARNING]
-> The primary focus in the design of all exception summarization implementations is to provide diagnostic convenience to trusted users, rather than prioritizing the protection of personally identifiable information (PII).
+> The primary focus in the design of all exception summarization implementations is to provide diagnostic convenience to trusted users, rather than prioritizing the protection of personally identifiable information (PII). The <xref:Microsoft.Extensions.Diagnostics.ExceptionSummarization.ExceptionSummary.Description?displayProperty=nameWithType> doesn't contain sensitive information, but the <xref:Microsoft.Extensions.Diagnostics.ExceptionSummarization.ExceptionSummary.AdditionalDetails?displayProperty=nameWithType> might contain sensitive information depending on the implementation.
 
 ## Resource monitoring
 
@@ -106,15 +106,68 @@ The following heath check status results are possible:
 - <xref:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Degraded?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy?displayProperty=nameWithType>
 
-To perform health check on the application lifecycle events of <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime>, use the <xref:Microsoft.Extensions.Diagnostics.HealthChecks.CommonHealthChecksExtensions.AddApplicationLifecycleHealthCheck%2A>.
+### Application lifetime health checks
+
+To perform health checks on the application lifetime events of <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime>, use the <xref:Microsoft.Extensions.Diagnostics.HealthChecks.CommonHealthChecksExtensions.AddApplicationLifecycleHealthCheck%2A> extension method available in the [Microsoft.Extensions.Diagnostics.HealthChecks.Common](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks.Common) NuGet package.
 
 This provider will indicate that the application is healthy only when it is fully active. Until the lifetime object indicates the application has started, the provider will report the application as not healthy. When the application starts shutting down, the provider will report the application as unhealthy.
 
-In other words, this provider ensures that the application instance only receives traffic when it is fully active.
+In other words, this provider ensures that the application instance only receives traffic when it is fully active. Please consider the following example:
 
-<https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks.Common>
+:::code source="snippets/lifetime-health-checks/Program.cs":::
 
-<https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilization>
+The preceding code:
+
+- Creates a new <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder> instance.
+- Adds a health check for the application lifetime events of <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime> by chaining a call from the <xref:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckServiceBuilder> instance returned by the <xref:Microsoft.Extensions.DependencyInjection.HealthChecksServiceCollectionExtensions.AddHealthChecks%2A> call to the <xref:Microsoft.Extensions.Diagnostics.HealthChecks.CommonHealthChecksExtensions.AddApplicationLifecycleHealthCheck%2A> extension method.
+- Builds the `IHost` instance.
+- Gets an instance of the <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime> interface from the service provider.
+- Gets an instance of the <xref:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService> class from the service provider.
+- Defines a delegate that will be invoked when the application starts, is stopping, and eventually stops—that requests the health check service to perform a health check and display the result.
+- Registers the delegate with the `ApplicationStarted`, `ApplicationStopping`, and `ApplicationStopped` events of the `IHostApplicationLifetime` instance.
+- Runs the application.
+
+### Resource utilization health checks
+
+To perform health checks on the resource utilization of your .NET apps, add a package reference to [Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilization](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilization). On an `IServiceCollection` instance, chain a call from <xref:Microsoft.Extensions.DependencyInjection.HealthCheckServiceCollectionExtensions.AddHealthChecks%2A> to <xref:Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilizationHealthCheckExtensions.AddResourceUtilizationHealthCheck%2A>. The following example demonstrates how to use the `AddResourceUtilizationHealthCheck` extension method to add a resource utilization health check to an `IServiceCollection` instance:
+
+```csharp
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
+using Microsoft.Extensions.Diagnostics.ResourceMonitoring;
+using Microsoft.Extensions.Hosting;
+
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.Services.AddResourceMonitoring();
+
+var healthChecksBuilder = builder.Services
+    .AddHealthChecks()
+    .AddResourceUtilizationHealthCheck();
+
+var app = builder.Build();
+
+var healthCheckService = app.Services.GetRequiredService<HealthCheckService>();
+
+var result = await healthCheckService.CheckHealthAsync();
+
+Console.WriteLine($"{result.Status} {result.TotalDuration}");
+
+app.Run();
+```
+
+The preceding code:
+
+- Creates a new <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder> instance.
+- Adds resource monitoring by calling <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceMonitoringExtensions.AddResourceMonitoring%2A>.
+- Adds a health check for resource utilization by chaining a call from the <xref:Microsoft.Extensions.DependencyInjection.HealthCheckServiceCollectionExtensions.AddHealthChecks%2A> call to the <xref:Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilizationHealthCheckExtensions.AddResourceUtilizationHealthCheck%2A> extension method.
+- Builds the `IHost` instance.
+- Gets an instance of the <xref:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService> class from the service provider.
+- Performs a health check and displays the result.
+- Runs the application.
+
+> [!IMPORTANT]
+> The <xref:Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilizationHealthCheckOptions?displayProperty=fullName> package assumes that the consumer will register logging providers with the `Microsoft.Extensions.Logging` package. If you don't register logging, the call to `AddResourceMonitoring` will throw an exception.
 
 ## Kubernetes probes
 

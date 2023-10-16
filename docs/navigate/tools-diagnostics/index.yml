@@ -84,8 +84,6 @@ landingContent:
         links:
           - text: .NET diagnostics tools
             url: ../../core/diagnostics/index.md
-          - text: Diagnostic packages
-            url: ../../core/diagnostics/diagnostic-packages.md
           - text: Dumps
             url: ../../core/diagnostics/dumps.md
           - text: Logging and tracing
@@ -94,6 +92,10 @@ landingContent:
             url: ../../core/diagnostics/metrics.md
           - text: Runtime events
             url: ../../fundamentals/diagnostics/runtime-events.md
+      - linkListType: concept
+        links:
+          - text: .NET diagnostic libraries
+            url: ../../core/diagnostics/diagnostic-libraries.md
       - linkListType: reference
         links:
           - text: Unmanaged API for debugging

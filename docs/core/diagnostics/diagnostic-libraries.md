@@ -131,30 +131,7 @@ The preceding code:
 
 To perform health checks on the resource utilization of your .NET apps, add a package reference to [Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilization](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilization). On an `IServiceCollection` instance, chain a call from <xref:Microsoft.Extensions.DependencyInjection.HealthCheckServiceCollectionExtensions.AddHealthChecks%2A> to <xref:Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilizationHealthCheckExtensions.AddResourceUtilizationHealthCheck%2A>. The following example demonstrates how to use the `AddResourceUtilizationHealthCheck` extension method to add a resource utilization health check to an `IServiceCollection` instance:
 
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Diagnostics.HealthChecks;
-using Microsoft.Extensions.Diagnostics.ResourceMonitoring;
-using Microsoft.Extensions.Hosting;
-
-var builder = Host.CreateApplicationBuilder(args);
-
-builder.Services.AddResourceMonitoring();
-
-var healthChecksBuilder = builder.Services
-    .AddHealthChecks()
-    .AddResourceUtilizationHealthCheck();
-
-var app = builder.Build();
-
-var healthCheckService = app.Services.GetRequiredService<HealthCheckService>();
-
-var result = await healthCheckService.CheckHealthAsync();
-
-Console.WriteLine($"{result.Status} {result.TotalDuration}");
-
-app.Run();
-```
+:::code source="snippets/health-checks/Program.cs":::
 
 The preceding code:
 
@@ -167,7 +144,7 @@ The preceding code:
 - Runs the application.
 
 > [!IMPORTANT]
-> The <xref:Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilizationHealthCheckOptions?displayProperty=fullName> package assumes that the consumer will register logging providers with the `Microsoft.Extensions.Logging` package. If you don't register logging, the call to `AddResourceMonitoring` will throw an exception.
+> The `Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilization` library assumes that the consumer will register the dependent call to <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceMonitoringExtensions.AddResourceMonitoring%2A>. If you don't register this, when resolving the `HealthCheckService` an exception is thrown.
 
 ## Kubernetes probes
 

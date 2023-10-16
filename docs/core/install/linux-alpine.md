@@ -3,7 +3,7 @@ title: Install .NET on Alpine
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Alpine.
 author: adegeo
 ms.author: adegeo
-ms.date: 05/05/2023
+ms.date: 10/16/2023
 ---
 
 # Install the .NET SDK or the .NET Runtime on Alpine
@@ -31,11 +31,12 @@ The Alpine package manager supports installing some versions of .NET. If the .NE
 
 The following table is a list of currently supported .NET releases and the versions of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Alpine reaches end-of-life](https://alpinelinux.org/releases/).
 
-| Alpine | .NET      |
-|--------|-----------|
-| 3.17   | 7, 6      |
-| 3.16   | 7, 6      |
-| 3.15   | 7, 6      |
+| Alpine | Supported Version  | Available in Package Manager |
+|--------|--------------------| -----------------------------|
+| 3.18   | .NET 7.0, .NET 6.0 | .NET 7.0, .NET 6.0 |
+| 3.17   | .NET 7.0, .NET 6.0 | .NET 7.0, .NET 6.0 |
+| 3.16   | .NET 7.0, .NET 6.0 | .NET 6.0 |
+| 3.15   | .NET 7.0, .NET 6.0 | None |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -43,16 +44,16 @@ The following table is a list of currently supported .NET releases and the versi
 
 The following table is a list of currently supported .NET releases and the architecture of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the architecture of [Alpine is supported#](https://alpinelinux.org/releases/). Note that only `x86_64`, `armv7`, `aarch64` is officially supported by Microsoft. Other architectures are supported by the distribution maintainers, and can be installed using the `apk` package manager.
 
-| Architecture     | .NET 6  | .NET 7  |
-|------------------|---------|---------|
-| x86_64           | ✔️ 3.16 | ✔️ 3.17 |
-| x86              | ❌      | ❌      |
-| aarch64          | ✔️ 3.16 | ✔️ 3.17 |
-| armv7            | ✔️ 3.16 | ✔️ 3.17 |
-| armhf            | ❌      | ❌      |
-| s390x            | ✔️ 3.17 | ✔️ 3.17 |
-| ppc64le          | ❌      | ✔️ edge |
-| riscv64          | ❌      | ❌      |
+| Architecture     | .NET 6           | .NET 7  |
+|------------------|------------------|---------|
+| x86_64           | 3.16, 3.17, 3.18 | 3.17, 3.18 |
+| x86              | None             | None       |
+| aarch64          | 3.16, 3.17, 3.18 | 3.17, 3.18 |
+| armv7            | 3.16, 3.17, 3.18 | 3.17, 3.18 |
+| armhf            | None             | None |
+| s390x            | 3.17             | 3.17 |
+| ppc64le          | None             | None |
+| riscv64          | None             | None |
 
 ## Install preview versions
 
@@ -83,7 +84,7 @@ apk add bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib
 
 [!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 
-To install libgdiplus on Alpine 3.16 or newer (older versions don't include the package), run:
+To install libgdiplus on Alpine 3.16 or newer, run:
 
 ```bash
 apk add libgdiplus

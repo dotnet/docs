@@ -143,7 +143,7 @@ The preceding code:
 - Performs a health check and displays the result.
 - Runs the application.
 
-> [!IMPORTANT]
+> [!NOTE]
 > The `Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilization` library assumes that the consumer will register the dependent call to <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceMonitoringExtensions.AddResourceMonitoring%2A>. If you don't register this, when resolving the `HealthCheckService` an exception is thrown.
 
 ## Kubernetes probes

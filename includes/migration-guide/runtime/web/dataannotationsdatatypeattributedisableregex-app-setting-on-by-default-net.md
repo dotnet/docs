@@ -6,7 +6,16 @@ In .NET Framework 4.6.1, an app setting (`&quot;dataAnnotations:dataTypeAttribut
 
 #### Suggestion
 
-If you find that regular expressions in your web application do not work after upgrading to .NET Framework 4.7.2, you can update the value of the `&quot;dataAnnotations:dataTypeAttribute:disableRegEx&quot;` setting to `false` to revert to the previous behavior.<pre><code class="lang-xml">&lt;configuration&gt;&#13;&#10;&lt;appSettings&gt;&#13;&#10;...&#13;&#10;&lt;add key=&quot;dataAnnotations:dataTypeAttribute:disableRegEx&quot; value=&quot;false&quot;/&gt;&#13;&#10;...&#13;&#10;&lt;/appSettings&gt;&#13;&#10;&lt;/configuration&gt;&#13;&#10;</code></pre>
+If you find that regular expressions in your web application do not work after upgrading to .NET Framework 4.7.2, you can update the value of the `&quot;dataAnnotations:dataTypeAttribute:disableRegEx&quot;` setting to `false` to revert to the previous behavior.
+```xml
+<configuration>
+<appSettings>
+...
+<add key==dataAnnotations:dataTypeAttribute:disableRegEx= value==false=/>
+...
+</appSettings>
+</configuration>
+```
 
 | Name    | Value       |
 |:--------|:------------|

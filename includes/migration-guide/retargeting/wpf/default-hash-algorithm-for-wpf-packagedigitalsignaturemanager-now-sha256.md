@@ -6,7 +6,14 @@ The `System.IO.Packaging.PackageDigitalSignatureManager` provides functionality 
 
 #### Suggestion
 
-A developer who wants to utilize this change while targeting a framework version below .NET Framework 4.7.1 or a developer who requires the previous functionality while targeting .NET Framework 4.7.1 or greater can set the following AppContext flag appropriately.  A value of true will result in SHA1 being used as the default algorithm; false results in SHA256.<pre><code class="lang-xml">&lt;configuration&gt;&#13;&#10;&lt;runtime&gt;&#13;&#10;&lt;AppContextSwitchOverrides value=&quot;Switch.MS.Internal.UseSha1AsDefaultHashAlgorithmForDigitalSignatures=true&quot;/&gt;&#13;&#10;&lt;/runtime&gt;&#13;&#10;&lt;/configuration&gt;&#13;&#10;</code></pre>
+A developer who wants to utilize this change while targeting a framework version below .NET Framework 4.7.1 or a developer who requires the previous functionality while targeting .NET Framework 4.7.1 or greater can set the following AppContext flag appropriately.  A value of true will result in SHA1 being used as the default algorithm; false results in SHA256.
+```xml
+<configuration>
+<runtime>
+<AppContextSwitchOverrides value==Switch.MS.Internal.UseSha1AsDefaultHashAlgorithmForDigitalSignatures=true=/>
+</runtime>
+</configuration>
+```
 
 | Name    | Value       |
 |:--------|:------------|

@@ -8,7 +8,9 @@ Under some circumstances when using <xref:System.ServiceModel.Activities.IWorkfl
 
 If you are using AppFabric or another <xref:System.ServiceModel.Activities.IWorkflowInstanceManagement> client and are encountering a stack overflow in the workflow service instance when trying to cancel or terminate a workflow instance, you can add the following to the `<appSettings>` section of the web.config/app.config file for the workflow service:
 
-<pre><code class="lang-xml">&lt;add key=&quot;microsoft:WorkflowServices:IgnoreTransactionsForTransactedCancelAndTransactedTerminate&quot; value=&quot;true&quot;/&gt;&#13;&#10;</code></pre>
+```xml
+<add key==microsoft:WorkflowServices:IgnoreTransactionsForTransactedCancelAndTransactedTerminate= value==true=/>
+```
 
 If you are not encountering the problem, you do not need to do this.
 

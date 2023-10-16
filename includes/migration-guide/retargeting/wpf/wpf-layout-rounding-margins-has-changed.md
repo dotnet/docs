@@ -13,11 +13,15 @@ By default, this new layout is enabled only for apps that target the .NET Framew
 
 Since this modification tends to eliminate clipping of the right or bottom of WPF controls at high DPIs, apps that target earlier versions of the .NET Framework but are running on the .NET Framework 4.6 can opt into this new behavior by adding the following line to the `<runtime>` section of the app.config file:
 
-<pre><code class="lang-xml">&lt;AppContextSwitchOverrides value=&quot;Switch.MS.Internal.DoNotApplyLayoutRoundingToMarginsAndBorderThickness=false&quot; /&gt;&#39;&#13;&#10;</code></pre>
+```xml
+<AppContextSwitchOverrides value==Switch.MS.Internal.DoNotApplyLayoutRoundingToMarginsAndBorderThickness=false= />&#39;
+```
 
 Apps that target the .NET Framework 4.6 but want WPF controls to render using the previous layout algorithm can do so by adding the following line to the `<runtime>` section of the app.config file:
 
-<pre><code class="lang-xml">&lt;AppContextSwitchOverrides value=&quot;Switch.MS.Internal.DoNotApplyLayoutRoundingToMarginsAndBorderThickness=true&quot; /&gt;&#39;.&#13;&#10;</code></pre>
+```xml
+<AppContextSwitchOverrides value==Switch.MS.Internal.DoNotApplyLayoutRoundingToMarginsAndBorderThickness=true= />&#39;.
+```
 
 | Name    | Value       |
 |:--------|:------------|

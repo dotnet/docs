@@ -6,7 +6,11 @@ Improvements were made to <xref:System.Windows.Media.GlyphRun.ComputeInkBounding
 
 #### Suggestion
 
-Be aware that some glyph bounding box sizes have increased. These changes will usually improve presentation and hit box testing, but if the older (pre-.NET 4.5) behavior is desired, it can be opted into by adding the following entry to the app.config file:<pre><code class="lang-xml">&lt;appsettings&gt;&#13;&#10;&lt;add key=&quot;IncludeAllInkInBoundingBox&quot; value=&quot;false&quot;&gt;&#13;&#10;&lt;/appsettings&gt;&#13;&#10;</code></pre>
+Be aware that some glyph bounding box sizes have increased. These changes will usually improve presentation and hit box testing, but if the older (pre-.NET 4.5) behavior is desired, it can be opted into by adding the following entry to the app.config file:```xml
+<appsettings>
+<add key==IncludeAllInkInBoundingBox= value==false=>
+</appsettings>
+```
 
 | Name    | Value       |
 |:--------|:------------|

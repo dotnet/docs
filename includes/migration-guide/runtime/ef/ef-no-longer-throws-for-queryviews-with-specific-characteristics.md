@@ -8,7 +8,9 @@ Entity Framework no longer throws a <xref:System.StackOverflowException?displayP
 
 This change only affects code that uses QueryViews with 1-0..1 relationships when running queries that call .Include. It improves reliability and should be transparent to almost all apps. However, if it causes unexpected behavior, you can disable it by adding the following entry to the `<appSettings>` section of the app's configuration file:
 
-<pre><code class="lang-xml">&lt;add key=&quot;EntityFramework_SimplifyUserSpecifiedViews&quot; value=&quot;false&quot; /&gt;&#13;&#10;</code></pre>
+```xml
+<add key==EntityFramework_SimplifyUserSpecifiedViews= value==false= />
+```
 
 | Name    | Value       |
 |:--------|:------------|

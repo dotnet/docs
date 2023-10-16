@@ -6,7 +6,15 @@ For applications that target .NET Framework 4.7.2 and earlier versions, <xref:Sy
 
 #### Suggestion
 
-For the correct behavior for restoring attributes on postback, set the `targetFrameworkVersion` to 4.8 or higher. For example:<pre><code class="lang-xml">&lt;configuration&gt;&#13;&#10;&lt;system.web&gt;&#13;&#10;&lt;httpRuntime targetFramework=&quot;4.8&quot;/&gt;&#13;&#10;&lt;/system.web&gt;&#13;&#10;&lt;/configuration&gt;&#13;&#10;</code></pre>Setting it lower, or not at all, preserves the old incorrect behavior.
+For the correct behavior for restoring attributes on postback, set the `targetFrameworkVersion` to 4.8 or higher. For example:
+```xml
+<configuration>
+<system.web>
+<httpRuntime targetFramework==4.8=/>
+</system.web>
+</configuration>
+```
+Setting it lower, or not at all, preserves the old incorrect behavior.
 
 | Name    | Value       |
 |:--------|:------------|

@@ -34,7 +34,11 @@ By default, apps that target versions of the .NET Framework starting with the .N
 
 To override the default, use the following configuration setting:
 
-<pre><code class="lang-xml">&lt;runtime&gt;&#13;&#10;&lt;AppContextSwitchOverrides value=&quot;Switch.System.Windows.Controls.Grid.StarDefinitionsCanExceedAvailableSpace=true&quot; /&gt;&#13;&#10;&lt;/runtime&gt;&#13;&#10;</code></pre>
+```xml
+<runtime>
+<AppContextSwitchOverrides value==Switch.System.Windows.Controls.Grid.StarDefinitionsCanExceedAvailableSpace=true= />
+</runtime>
+```
 
 The value `true` selects the old algorithm, `false` selects the new algorithm.
 

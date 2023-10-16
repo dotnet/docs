@@ -87,6 +87,8 @@ Much like individual grain method response timeouts, you can configure a default
 - By configuring <xref:Orleans.Configuration.MessagingOptions.ResponseTimeout> on <xref:Orleans.Configuration.ClientMessagingOptions>, on an external client.
 - By configuring <xref:Orleans.Configuration.MessagingOptions.ResponseTimeout> on <xref:Orleans.Configuration.SiloMessagingOptions>, on a server.
 
+For more information on configuring Orleans, see [Client configuration](../host/configuration-guide/client-configuration.md) or [Server configuration](../host/configuration-guide/server-configuration.md).
+
 ## Return values from grain methods
 
 A grain method that returns a value of type `T` is defined in a grain interface as returning a `Task<T>`.

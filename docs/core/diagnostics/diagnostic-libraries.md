@@ -13,11 +13,11 @@ The following NuGet packages are available:
 
 | NuGet package | Description |
 |--|--|
-| [📦 Microsoft.Extensions.Diagnostics.ExceptionSummarization](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.ExceptionSummarization) | Retrieves exception summary information. |
-| [📦 Microsoft.Extensions.Diagnostics.ResourceMonitoring](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.ResourceMonitoring) | Measures processor and memory usage. |
-| [📦 Microsoft.Extensions.Diagnostics.HealthChecks.Common](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks.Common) | Health check implementations. |
-| [📦 Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilization](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilization) | Resource utilization health checks. |
-| [📦 Microsoft.Extensions.Diagnostics.Probes](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.Probes) | Provides support for environmental probes. |
+| [📦 Microsoft.Extensions.Diagnostics.ExceptionSummarization](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.ExceptionSummarization) | Provides a mechanism for retrieving exception summary information. |
+| [📦 Microsoft.Extensions.Diagnostics.ResourceMonitoring](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.ResourceMonitoring) | Provides resource monitoring that measures processor and memory usage. |
+| [📦 Microsoft.Extensions.Diagnostics.HealthChecks.Common](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks.Common) | Provides a standard health check implementation, as well as host application lifetime hooks. |
+| [📦 Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilization](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilization) | Provides resource utilization health checks. |
+| [📦 Microsoft.Extensions.Diagnostics.Probes](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.Probes) | Provides support for Kubernetes environmental probes. |
 
 ## Exception summarization
 

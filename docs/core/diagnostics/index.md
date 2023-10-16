@@ -1,7 +1,7 @@
 ---
 title: Diagnostics tools overview - .NET Core
 description: An overview of the tools and techniques available to diagnose .NET Core applications.
-ms.date: 07/16/2020
+ms.date: 10/16/2023
 ms.topic: overview
 #Customer intent: As a .NET Core developer I want to find the best tools to help me diagnose problems so that I can be productive.
 ---
@@ -57,6 +57,10 @@ If debugging or observability is not sufficient, .NET supports additional diagno
 ## Diagnostics tools
 
 .NET supports a number of [CLI tools](./tools-overview.md) that can be used to diagnose your applications.
+
+## Diagnostic libraries
+
+.NET provides a number of [diagnostic libraries](./diagnostic-libraries.md) that can be used to instrument your applications, from exception summarization to resource monitoring, and exposing standard mechanisms for health checks.
 
 ## .NET Core diagnostics tutorials
 

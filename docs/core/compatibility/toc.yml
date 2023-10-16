@@ -4,6 +4,14 @@ items:
 - name: Breaking changes by version
   expanded: true
   items:
+  - name: .NET 9
+    items:
+    - name: Overview
+      href: 9.0.md
+    - name: Core .NET libraries
+      items:
+      - name: API obsoletions with custom diagnostic IDs
+        href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
   - name: .NET 8
     items:
     - name: Overview

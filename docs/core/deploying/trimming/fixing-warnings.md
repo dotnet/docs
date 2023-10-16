@@ -241,12 +241,12 @@ void TestMethod()
 }
 ```
 
-> !WARNING
+> [!WARNING]
 > Be very careful when suppressing trim warnings. It's possible that the call may be trim-compatible now, but as you change your code that may change, and you may forget to review all the suppressions.
 
 `UnconditionalSuppressMessage` is like `SuppressMessage` but it can be seen by `publish` and other post-build tools.
 
-> !IMPORTANT
+> [!IMPORTANT]
 > Do not use `SuppressMessage` or `#pragma warning disable` to suppress trimmer warnings. These only work for the compiler, but are not preserved in the compiled assembly. Trimmer operates on compiled assemblies and would not see the suppression.
 
 The suppression applies to the entire method body. So in our sample above it will suppress all warnings `IL2026` from anywhere in the method. This makes it somewhat harder to understand, as it's not clear which method is the problematic one, unless you add a comment. More importantly if the code changes in the future and for example the `ReportResults` becomes trim-incompatible as well, there will ne no warning reported for this call, as it's going to be suppressed by the existing attribute.

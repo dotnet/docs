@@ -94,7 +94,7 @@ The preceding code:
 
 The following is an example of the output from the preceding code:
 
-:::code source="snippets/resource-monitoring/Program.cs" id="output":::
+:::image type="content" source="media/resource-monitoring-output.png" lightbox="media/resource-monitoring-output.png" alt-text="Example Resource Monitoring app output.":::
 
 ## Health checks
 

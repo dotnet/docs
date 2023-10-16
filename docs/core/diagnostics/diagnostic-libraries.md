@@ -148,4 +148,10 @@ The preceding code:
 
 ## Kubernetes probes
 
-<https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.Probes>
+An experimental package is available for Kubernetes probes. The [Microsoft.Extensions.Diagnostics.Probes](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.Probes) NuGet package provides support for environmental probes. This package is currently experimental and is subject to change.
+
+It's intended to report health checks that align with various Kubernetes probes, for example:
+
+- Liveness
+- Readiness
+- Startup

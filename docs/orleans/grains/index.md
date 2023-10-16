@@ -1,7 +1,7 @@
 ---
 title: Develop a grain
 description: Learn how to develop a grain in .NET Orleans.
-ms.date: 05/05/2023
+ms.date: 10/16/2023
 ---
 
 # Develop a grain
@@ -57,6 +57,30 @@ public class PlayerGrain : Grain, IPlayerGrain
    }
 }
 ```
+
+## Response timeout for grain methods
+
+The Orleans runtime allows you to enforce a response timeout per grain method. If a grain method doesn't complete within the timeout, the runtime throws <xref:System.TimeoutException>. To impose a response timeout, add the <xref:Orleans.ResponseTimeoutAttribute> to a grain method. Extending the previous `PlayerGrain` implementation, the following example shows how to impose a response timeout on the `LeaveGame` method:
+
+```csharp
+public class PlayerGrain : Grain, IPlayerGrain
+{
+    // Omitted for brevity...
+
+    [ResponseTimeout("00:00:05")] // 5s timeout
+    public Task LeaveGame(IGameGrain game)
+    {
+        _currentGame = null;
+        
+        Console.WriteLine(
+            $"Player {GetPrimaryKey()} left game {game.GetPrimaryKey()}");
+        
+        return Task.CompletedTask;
+    }
+}
+```
+
+The preceding code sets a response timeout of five seconds on the `LeaveGame` method. When leaving a game, if it takes longer than five seconds a <xref:System.TimeoutException> is thrown.
 
 ## Return values from grain methods
 

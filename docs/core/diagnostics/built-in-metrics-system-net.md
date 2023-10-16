@@ -31,9 +31,22 @@ see [here](available-counters.md).
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
 | `dns.question.name` | string | The name being queried. | `www.example.com`; `dot.net` | Always |
+| `error.type` | string | A well-known error string or the full type name of an exception that occured. | `host_not_found`; `System.Net.Sockets.SocketException` | If an error occured |
 
 This metric measures the time take to make DNS requests. These requests can occur by calling methods on
 <xref:System.Net.Dns> or indirectly wihtin higher level APIs on types such as <xref:System.Net.Http.HttpClient>.
+
+Most errors when doing a DNS lookup throw a <xref:System.Net.Sockets.SocketException>. To better disambiguate the common error cases, SocketExceptions with specific <xref:System.Net.Sockets.SocketException.SocketErrorCode>
+are given explicit error names in `error.type`:
+
+| SocketErrorCode | `error.type` |
+| --------------- | ------------ |
+| <xref:System.Net.Sockets.SocketError.HostNotFound> | host_not_found |
+| <xref:System.Net.Sockets.SocketError.TryAgain> | try_again |
+| <xref:System.Net.Sockets.SocketError.AddressFamilyNotSupported> | address_family_not_supported |
+| <xref:System.Net.Sockets.SocketError.NoRecovery> | no_recovery |
+
+SocketExceptions with any other SocketError value are reported as `System.Net.Sockets.SocketException`.
 
 Available starting in: .NET 8
 
@@ -51,7 +64,7 @@ Available starting in: .NET 8
 | `network.protocol.version` | string | Version of the application layer protocol used. | `1.1`; `2` | Always |
 | `server.address` | string | Host identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `example.com` | Always |
 | `server.port` | int | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | If not default (`80` for `http` scheme, `443` for `https`) |
-| `server.socket.address` | string | Server address of the socket connection - IP address or Unix domain socket name. | `10.5.3.2` | Always |
+| `network.peer.address` | string | Peer IP address of the socket connection. | `10.5.3.2` | Always |
 | `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
 
 <xref:System.Net.Http.HttpClient>, when configured to use the default <xref:System.Net.Http.SocketsHttpHandler>, maintains a cached pool of network connections for sending HTTP messages. This metric counts how many connections are currently
@@ -71,7 +84,7 @@ Available starting in: .NET 8
 | `network.protocol.version` | string | Version of the application layer protocol used. | `1.1`; `2` | Always |
 | `server.address` | string | Host identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `example.com` | Always |
 | `server.port` | int | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | If not default (`80` for `http` scheme, `443` for `https`) |
-| `server.socket.address` | string | Server address of the socket connection - IP address or Unix domain socket name. | `10.5.3.2` | Always |
+| `network.peer.address` | string | IP address of the socket connection. | `10.5.3.2` | Always |
 | `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
 
 This metric is only captured when <xref:System.Net.Http.HttpClient> is configured to use the default <xref:System.Net.Http.SocketsHttpHandler>.

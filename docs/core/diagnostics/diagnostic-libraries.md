@@ -119,7 +119,7 @@ In other words, this provider ensures that the application instance only receive
 The preceding code:
 
 - Creates a new <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder> instance.
-- Adds a health check for the application lifetime events of <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime> by chaining a call from the <xref:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckServiceBuilder> instance returned by the <xref:Microsoft.Extensions.DependencyInjection.HealthChecksServiceCollectionExtensions.AddHealthChecks%2A> call to the <xref:Microsoft.Extensions.Diagnostics.HealthChecks.CommonHealthChecksExtensions.AddApplicationLifecycleHealthCheck%2A> extension method.
+- Adds a health check for the application lifetime events of <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime> by chaining a call from the <xref:Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder> instance returned by the <xref:Microsoft.Extensions.DependencyInjection.HealthCheckServiceCollectionExtensions.AddHealthChecks%2A> call to the <xref:Microsoft.Extensions.Diagnostics.HealthChecks.CommonHealthChecksExtensions.AddApplicationLifecycleHealthCheck%2A> extension method.
 - Builds the `IHost` instance.
 - Gets an instance of the <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime> interface from the service provider.
 - Gets an instance of the <xref:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService> class from the service provider.

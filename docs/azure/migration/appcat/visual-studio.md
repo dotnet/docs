@@ -17,19 +17,19 @@ If you have not installed the Azure AppCAT Visual Studio extension, please follo
 
 ## Scan your application
 
-The Azure AppCAT tool lets you decide which projects in your solution to scan to identify migration opportunities to Azure. Follow these steps to scan your application.
+Azure AppCAT lets you decide which projects in your solution to scan to identify migration opportunities to Azure. Follow these steps to scan your application.
 
 1. Open the solution containing the projects you want to migrate to Azure in Visual Studio 2022.
-2. Right click on any of the projects in the Solution Explorer window and select **Replatform to Azure**.
+1. Right click on any of the projects in the Solution Explorer window and select **Replatform to Azure**.
   ![Screenshot of the replatform to Azure menu item in Visual Studio](./media/replatform.png)
-3. The Azure AppCAT tool will start and display the projects in your solution in a treeview. It will give you an option to select which projects to analyze. The AppCAT tool will have pre-selected projects for you that it thinks are most likely to have compatibility issues. You can change the selection by checking or unchecking the boxes next to the projects.
+1. Azure AppCAT will start and display the projects in your solution in a treeview. It will give you an option to select which projects to analyze. Azure AppCAT will have pre-selected projects for you that it thinks are most likely to have compatibility issues. You can change the selection by checking or unchecking the boxes next to the projects.
   ![Screenshot of the Azure AppCAT tool showing the projects in the solution](./media/analyze-project-selection.png)
-4. Click the **Analyze** button to start the scan. The AppCAT tool will scan all the code in the selected projects to look for potential issues when migrating to Azure. When it's finished, you'll see a dashboard of its results.
+1. Click the **Analyze** button to start the scan. Azure AppCAT will scan all the code in the selected projects to look for potential issues when migrating to Azure. When it's finished, you'll see a dashboard of its results.
   ![Screenshot of the Azure AppCAT tool showing the results of the scan](./media/analyze-results.png)
 
 ## Interpret the results
 
-After the projects have been scanned, the Azure AppCAT tool presents its results in a dashboard format. In this section we'll describe the different sections of the dashboard and how to interpret them.
+After the projects have been scanned, Azure AppCAT presents its results in a dashboard format. In this section we'll describe the different sections of the dashboard and how to interpret them.
 
 ### Dashboard view
 
@@ -58,7 +58,7 @@ You can drill down to see the issues found in each project by clicking on the pr
 
 At the top of the project dashboard you'll find 3 tabs: **Dashboard**, **Components**, and **Issues**.
 
-Click on the **Components** tab to see which files the issues the AppCAT tool identified reside in. You can drill down into the file to see the rule that triggered the issue, a description of the rule, the exact position in the code where the issue exists, and an estimation of the effort it will take to fix.
+Click on the **Components** tab to see which files the issues Azure AppCAT identified reside in. You can drill down into the file to see the rule that triggered the issue, a description of the rule, the exact position in the code where the issue exists, and an estimation of the effort it will take to fix.
 
 ![Screenshot of the project component dashboard](./media/project-component-dashboard.png)
 
@@ -68,7 +68,7 @@ Finally, by clicking on the **Issues** tab, you can see the issues organzied by 
 
 ### Aggregate issues
 
-Click on the **Aggregate** tab below the **Projects** tab on the left side of the AppCAT result's screen to see the issues organized by the rule that triggered them. These are all of the issues across all of the projects scanned. You can drill down into the rules to see the exact files and locations that needs to be addressed and the effort to fix.
+Click on the **Aggregate** tab below the **Projects** tab on the left side of Azure AppCAT result's screen to see the issues organized by the rule that triggered them. These are all of the issues across all of the projects scanned. You can drill down into the rules to see the exact files and locations that needs to be addressed and the effort to fix.
 
 ![Screenshot of the aggregate dashboard](./media/aggregate-dashboard.png)
 

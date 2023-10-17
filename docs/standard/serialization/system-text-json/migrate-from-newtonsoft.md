@@ -568,14 +568,14 @@ During deserialization, `Newtonsoft.Json` adds objects to a collection even if t
 
 :::zone pivot="dotnet-8-0"
 
-System.Text.Json includes a built-in naming policy for snake case. However, there are some behavior differences with `Newtonsoft.Json` for some inputs. The following table shows some of these differences when using the <xref:System.Text.Json.JsonNamingPolicy.SnakeCaseLower?displayProperty=nameWithType> policy.
+System.Text.Json includes a built-in naming policy for snake case. However, there are some behavior differences with `Newtonsoft.Json` for some inputs. The following table shows some of these differences when converting input using the <xref:System.Text.Json.JsonNamingPolicy.SnakeCaseLower?displayProperty=nameWithType> policy.
 
-| Input          | Newtonsoft.Json  | System.Text.Json |
-|----------------|------------------|------------------|
-| "AB1"          | "a_b1"           | "ab1"            |
-| "abc123DEF456" | "abc123_de_f456" | "abc123_def456"  |
-| "ABC123def456" | "ab_c123def456"  | "abc123def456"   |
-| "KEBAB-CASE"   | "keba_b-_case"   | "kebab-case"     |
+| Input           | Newtonsoft.Json result | System.Text.Json result |
+|-----------------|------------------------|-------------------------|
+| "AB1"           | "a_b1"                 | "ab1"                   |
+| "SHA512Managed" | "sh_a512_managed"      | "sha512_managed"        |
+| "abc123DEF456"  | "abc123_de_f456"       | "abc123_def456"         |
+| "KEBAB-CASE"    | "keba_b-_case"         | "kebab-case"            |
 
 ::: zone-end
 

@@ -6,7 +6,16 @@ In .NET Framework 4.7.1 and earlier versions, WPF potentially creates a <xref:Sy
 
 #### Suggestion
 
-In .NET Framework 4.7.2 and later versions, developers can disable this fix in order to help alleviate (but not eliminate) timing issues that may occur due to the cleanup change.To disable the change in cleanup, use the following AppContext flag.<pre><code class="lang-xml">&lt;configuration&gt;&#13;&#10;&lt;runtime&gt;&#13;&#10;&lt;AppContextSwitchOverrides value=&quot;Switch.MS.Internal.DoNotInvokeInWeakEventTableShutdownListener=true&quot;/&gt;&#13;&#10;&lt;/runtime&gt;&#13;&#10;&lt;/configuration&gt;&#13;&#10;</code></pre>
+In .NET Framework 4.7.2 and later versions, developers can disable this fix in order to help alleviate (but not eliminate) timing issues that may occur due to the cleanup change.To disable the change in cleanup, use the following AppContext flag.
+
+```xml
+<configuration>
+<runtime>
+<AppContextSwitchOverrides value="Switch.MS.Internal.DoNotInvokeInWeakEventTableShutdownListener=true"/>
+</runtime>
+</configuration>
+
+```
 
 | Name    | Value       |
 |:--------|:------------|

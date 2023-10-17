@@ -8,7 +8,26 @@ As of .NET Framework 4.5, a number of <xref:System.Xml.Serialization.XmlSerializ
 
 #### Suggestion
 
-If this exception is seen, the `Binder` property of the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=fullName> can be set to a custom binder that will find the correct type.<pre><code class="lang-csharp">var formatter = new BinaryFormatter { Binder = new TypeFinderBinder() }&#13;&#10;</code></pre>And then the custom binder:<pre><code class="lang-csharp">public class TypeFinderBinder : SerializationBinder&#13;&#10;{&#13;&#10;private static readonly string s_assemblyName = Assembly.GetExecutingAssembly().FullName;&#13;&#10;&#13;&#10;public override Type BindToType(string assemblyName, string typeName)&#13;&#10;{&#13;&#10;return Type.GetType(String.Format(CultureInfo.InvariantCulture, &quot;{0}, {1}&quot;, typeName, s_assemblyName));&#13;&#10;}&#13;&#10;}&#13;&#10;</code></pre>
+If this exception is seen, the `Binder` property of the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=fullName> can be set to a custom binder that will find the correct type.
+
+```csharp
+var formatter = new BinaryFormatter { Binder = new TypeFinderBinder() }
+```
+
+And then the custom binder:
+
+```csharp
+public class TypeFinderBinder : SerializationBinder
+{
+    private static readonly string s_assemblyName = Assembly.GetExecutingAssembly().FullName;
+
+    public override Type BindToType(string assemblyName, string typeName)
+    {
+        return Type.GetType(String.Format(CultureInfo.InvariantCulture, "{0}, {1}", typeName, s_assemblyName));
+    }
+}
+
+```
 
 | Name    | Value   |
 | :------ | :------ |

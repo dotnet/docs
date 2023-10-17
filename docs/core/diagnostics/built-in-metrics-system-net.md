@@ -8,7 +8,7 @@ ms.date: 9/21/2023
 # System.Net Metrics
 
 This article describes the networking metrics built-in for <xref:System.Net> produced using the
-<xref:System.Diagnostics.Metrics?displayProperty=nameWithType> API. For a listing of metrics based on the alternate [EventCounters](event-counters.md) API, see [here](available-counters.md).
+<xref:System.Diagnostics.Metrics?displayProperty=nameWithType> API. For a listing of metrics based on the alternate [EventCounters](event-counters.md) API, see [Well-known EventCounters in .NET](available-counters.md).
 
 - [Meter: `System.Net.NameResolution`](#meter-systemnetnameresolution) - Metrics for DNS lookups
   * [Instrument: `dns.lookup.duration`](#instrument-dnslookupduration)
@@ -35,8 +35,7 @@ This article describes the networking metrics built-in for <xref:System.Net> pro
 This metric measures the time take to make DNS requests. These requests can occur by calling methods on
 <xref:System.Net.Dns> or indirectly within higher level APIs on types such as <xref:System.Net.Http.HttpClient>.
 
-Most errors when doing a DNS lookup throw a <xref:System.Net.Sockets.SocketException>. To better disambiguate the common error cases, SocketExceptions with specific <xref:System.Net.Sockets.SocketException.SocketErrorCode>
-are given explicit error names in `error.type`:
+Most errors when doing a DNS lookup throw a <xref:System.Net.Sockets.SocketException>. To better disambiguate the common error cases, socket exceptions with specific <xref:System.Net.Sockets.SocketException.SocketErrorCode> are given explicit error names in `error.type`:
 
 | SocketErrorCode | `error.type` |
 | --------------- | ------------ |
@@ -45,7 +44,7 @@ are given explicit error names in `error.type`:
 | <xref:System.Net.Sockets.SocketError.AddressFamilyNotSupported> | address_family_not_supported |
 | <xref:System.Net.Sockets.SocketError.NoRecovery> | no_recovery |
 
-SocketExceptions with any other SocketError value are reported as `System.Net.Sockets.SocketException`.
+Socket exceptions with any other `SocketError` value are reported as `System.Net.Sockets.SocketException`.
 
 Available starting in: .NET 8
 
@@ -66,9 +65,7 @@ Available starting in: .NET 8
 | `network.peer.address` | string | Peer IP address of the socket connection. | `10.5.3.2` | Always |
 | `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
 
-<xref:System.Net.Http.HttpClient>, when configured to use the default <xref:System.Net.Http.SocketsHttpHandler>, maintains a cached pool of network connections for sending HTTP messages. This metric counts how many connections are currently
-in the pool. Active connections are handling active requests. Active connects could be transmitting data or awaiting the client or server. Idle connections aren't handling any
-requests, but are left open so that future requests can be handled more quickly.
+<xref:System.Net.Http.HttpClient>, when configured to use the default <xref:System.Net.Http.SocketsHttpHandler>, maintains a cached pool of network connections for sending HTTP messages. This metric counts how many connections are currently in the pool. Active connections are handling active requests. Active connects could be transmitting data or awaiting the client or server. Idle connections aren't handling any requests, but are left open so that future requests can be handled more quickly.
 
 Available starting in: .NET 8
 

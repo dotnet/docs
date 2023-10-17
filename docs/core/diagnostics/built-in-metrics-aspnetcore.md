@@ -166,7 +166,7 @@ Available staring in: ASP.NET Core 8.0
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `aspnetcore.rate_limiting.request.time_in_queue` | Histogram | `s` | The time a request spent in a queue, waiting to acquire a rate limiting lease. |
+| `aspnetcore.rate_limiting.request.time_in_queue` | Histogram | `s` | The time a request spent in a queue waiting to acquire a rate limiting lease. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -363,11 +363,11 @@ Available staring in: ASP.NET Core 8.0
 
 `signalr.transport` is one of the following:
 
-| Value  | Description |
+| Value  | Protocol |
 |---|---|
-| `server_sent_events` | ServerSentEvents protocol |
-| `long_polling` | LongPolling protocol |
-| `web_sockets` | WebSockets protocol |
+| `server_sent_events` | [server-sent events](https://developer.mozilla.org/docs/Web/API/Server-sent_events/Using_server-sent_events)  |
+| `long_polling` | [Long Polling](/archive/msdn-magazine/2012/april/cutting-edge-long-polling-and-signalr) |
+| `web_sockets` | [WebSocket](https://datatracker.ietf.org/doc/html/rfc6455) |
 
 Available staring in: ASP.NET Core 8.0
 

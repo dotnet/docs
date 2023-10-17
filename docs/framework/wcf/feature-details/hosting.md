@@ -10,8 +10,6 @@ The topics in the section describe service hosting. A service can be hosted by I
 
  It is important to note that running a service or any extension from an untrusted host compromises security.
 
-[!INCLUDE[](~/includes/wcf_grpc_heading.md)]
-
 ## In This Section
 
  [Hosting in Internet Information Services](hosting-in-internet-information-services.md)\

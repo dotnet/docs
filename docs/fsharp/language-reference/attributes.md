@@ -136,7 +136,7 @@ type MyStruct =
   end
 ```
 
-    </td>
+</td>
   </tr>
 </table>
 

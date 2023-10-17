@@ -10,6 +10,8 @@ The topics in the section describe service hosting. A service can be hosted by I
 
  It is important to note that running a service or any extension from an untrusted host compromises security.
 
+[!INCLUDE[](~/includes/wcf_grpc_heading.md)]
+
 ## In This Section
 
  [Hosting in Internet Information Services](hosting-in-internet-information-services.md)\
@@ -32,6 +34,5 @@ The topics in the section describe service hosting. A service can be hosted by I
 
 ## See also
 
-- [!INCLUDE[](~/includes/wcf_grpc.md)]
 - [Hosting Services](../hosting-services.md)
 - [Windows Server App Fabric Hosting Features](/previous-versions/appfabric/ee677189(v=azure.10))

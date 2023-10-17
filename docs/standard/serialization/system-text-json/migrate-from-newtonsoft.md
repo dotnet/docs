@@ -86,7 +86,6 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Configurable limits                                   | ❌ [Not supported](#some-limits-not-configurable) |
 ::: zone-end
 
-
 ::: zone pivot="dotnet-7-0"
 
 | Newtonsoft.Json feature                               | System.Text.Json equivalent |

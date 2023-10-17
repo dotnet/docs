@@ -10,7 +10,6 @@ Apps affected by this change may work around it by storing the desired <xref:Sys
 
 ```csharp
 AppContext.SetSwitch("Switch.System.Globalization.NoAsyncCurrentCulture", true);
-
 ```
 
 This issue has been fixed by WPF in .NET Framework 4.6.2. It has also been fixed in .NET Frameworks 4.6, 4.6.1 through [KB 3139549](https://support.microsoft.com/kb/3139549). Applications targeting .NET Framework 4.6 or later will automatically get the right behavior in WPF applications - <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=fullName>/<xref:System.Globalization.CultureInfo.CurrentUICulture?displayProperty=fullName>) would be preserved across Dispatcher operations.

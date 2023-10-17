@@ -38,7 +38,7 @@ The eShopOnContainers reference application has been widely accepted across the 
 
 ## eShopOnDapr
 
-An updated version of eShop accompanies this book. It's called [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr). The update evolves the earlier eShopOnContainers application by integrating Dapr building blocks. Figure 12-3 shows the new solution architecture:  
+An updated version of eShop accompanies this book. It's called [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr). The update evolves the earlier eShopOnContainers application by integrating Dapr building blocks. Figure 12-3 shows the new solution architecture:
 
 :::image type="content" source="./media/reference-application/eshop-on-dapr.png" alt-text="eShopOnDapr reference application architecture.":::
 
@@ -604,7 +604,6 @@ public Task SendOrderConfirmationAsync(Order order)
             ["subject"] = $"Your eShopOnDapr Order #{order.OrderNumber}"
         });
 }
-
 ```
 
 As you can see in this example, `message` contains the message body. The `CreateEmailBody` method simply formats a string with the body text. The name of the binding to invoke is `sendmail` and the operation is `create`. The `metadata` specifies the email sender, recipient, and subject for the email message. If these values are static, they can also be included in the metadata fields in the configuration file.

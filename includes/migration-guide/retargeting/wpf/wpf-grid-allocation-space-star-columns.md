@@ -38,7 +38,6 @@ To override the default, use the following configuration setting:
 <runtime>
 <AppContextSwitchOverrides value="Switch.System.Windows.Controls.Grid.StarDefinitionsCanExceedAvailableSpace=true" />
 </runtime>
-
 ```
 
 The value `true` selects the old algorithm, `false` selects the new algorithm.

@@ -408,7 +408,6 @@ var siloHostBuilder = new HostBuilder()
     {
         c.AddApplicationInsightsTelemetryConsumer("INSTRUMENTATION_KEY");
     });
-
 ```
 
 Client configuration code look like this:

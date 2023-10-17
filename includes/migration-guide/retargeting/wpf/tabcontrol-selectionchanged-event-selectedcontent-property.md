@@ -12,7 +12,6 @@ Apps that target the .NET Framework 4.7.1 or later can opt out of this change an
 <runtime>
 <AppContextSwitchOverrides value="Switch.System.Windows.Controls.TabControl.SelectionPropertiesCanLagBehindSelectionChangedEvent=true" />
 </runtime>
-
 ```
 
 Apps that target the .NET Framework 4.7 or earlier but are running on the .NET Framework 4.7.1 or later can enable the new behavior by adding the following line to the `<runtime>` section of the application .configuration file:
@@ -21,7 +20,6 @@ Apps that target the .NET Framework 4.7 or earlier but are running on the .NET F
 <runtime>
 <AppContextSwitchOverrides value="Switch.System.Windows.Controls.TabControl.SelectionPropertiesCanLagBehindSelectionChangedEvent=false" />
 </runtime>
-
 ```
 
 | Name    | Value       |

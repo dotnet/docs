@@ -16,7 +16,6 @@ Developers who wish to revert to getting <xref:System.NullReferenceException?dis
 <AppContextSwitchOverrides value="Switch.System.Windows.Media.ImageSourceConverter.OverrideExceptionWithNullReferenceException=true"/>
 </runtime>
 </configuration>
-
 ```
 
 | Name    | Value       |

@@ -13,7 +13,6 @@ Once non-adorner based text selection is enabled, you can use the <xref:System.W
 Foreground="Blue" CaretBrush="Blue">
 This is some text.
 </TextBox>
-
 ```
 
 | Name    | Value       |

@@ -14,7 +14,6 @@ A developer who targets .NET Framework 4.7.2 or greater and wants to revert to S
 <AppContextSwitchOverrides value="Switch.System.Windows.Markup.DoNotUseSha256ForMarkupCompilerChecksumAlgorithm=true"/>
 </runtime>
 </configuration>
-
 ```
 
 A developer who wants to utilize SHA256 hashing while targeting a framework version below .NET 4.7.2 must set the below AppContext flag.  Note that the installed version of the .NET Framework must be 4.7.2 or greater.
@@ -22,10 +21,9 @@ A developer who wants to utilize SHA256 hashing while targeting a framework vers
 ```xml
 <configuration>
 <runtime>
-<AppContextSwitchOverrides value="Switch.System.Windows.Markup.DoNotUseSha256ForMarkupCompilerChecksumAlgorithm=false
+<AppContextSwitchOverrides value="Switch.System.Windows.Markup.DoNotUseSha256ForMarkupCompilerChecksumAlgorithm=false"/>
 </runtime>
 </configuration>
-
 ```
 
 | Name    | Value       |

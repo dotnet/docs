@@ -10,7 +10,6 @@ This change only affects code that uses QueryViews with 1-0..1 relationships whe
 
 ```xml
 <add key="EntityFramework_SimplifyUserSpecifiedViews" value="false" />
-
 ```
 
 | Name    | Value       |

@@ -14,7 +14,6 @@ In .NET Framework 4.7.2 and later versions, developers can disable this fix in o
 <AppContextSwitchOverrides value="Switch.MS.Internal.DoNotInvokeInWeakEventTableShutdownListener=true"/>
 </runtime>
 </configuration>
-
 ```
 
 | Name    | Value       |

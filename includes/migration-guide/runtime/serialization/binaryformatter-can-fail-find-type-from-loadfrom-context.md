@@ -26,7 +26,6 @@ public class TypeFinderBinder : SerializationBinder
         return Type.GetType(String.Format(CultureInfo.InvariantCulture, "{0}, {1}", typeName, s_assemblyName));
     }
 }
-
 ```
 
 | Name    | Value   |

@@ -6,20 +6,19 @@ When serializing a derived type, the <xref:System.Xml.Serialization.XmlSerialize
 
 #### Suggestion
 
-This problem can be solved by making the new, hiding member accessible to the <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> (by marking it public, for example).Alternatively, the following config setting will revert to 4.0 <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> behavior, which will fix the problem:
+This problem can be solved by making the new, hiding member accessible to the <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> (by marking it public, for example). Alternatively, the following config setting will revert to 4.0 <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> behavior, which will fix the problem:
 
 ```xml
 <system.xml.serialization>
 <xmlSerializer useLegacySerializerGeneration="true" />
 </system.xml.serialization>
-
 ```
 
-| Name    | Value       |
-|:--------|:------------|
-| Scope   |Minor|
-|Version|4.5|
-|Type|Runtime|
+| Name    | Value   |
+|:--------|:--------|
+| Scope   | Minor   |
+| Version | 4.5     |
+| Type    | Runtime |
 
 #### Affected APIs
 

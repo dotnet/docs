@@ -24,7 +24,6 @@ Developers who wish to enable this stack can add/merge the following to their ap
 <AppContextSwitchOverrides value="Switch.System.Windows.Input.Stylus.EnablePointerSupport=true"/>
 </runtime>
 </configuration>
-
 ```
 
 Removing this or setting the value to false will turn this optional stack off.Note that this stack is available only on Windows 10 Creators Update and above.

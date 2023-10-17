@@ -3,7 +3,7 @@ title: "Migrate from Newtonsoft.Json to System.Text.Json - .NET"
 description: "Learn about the differences between Newtonsoft.Json and System.Text.Json and how to migrate to System.Text.Json."
 no-loc: [System.Text.Json, Newtonsoft.Json]
 ms.date: 10/16/2023
-zone_pivot_groups: dotnet--preview-version
+zone_pivot_groups: dotnet-preview-version
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
@@ -43,7 +43,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Newtonsoft.Json feature                               | System.Text.Json equivalent |
 |-------------------------------------------------------|-----------------------------|
 | Case-insensitive deserialization by default           | ✔️ [PropertyNameCaseInsensitive global setting](#case-insensitive-deserialization) |
-| Camel-case property names                             | ✔️ [PropertyNamingPolicy global setting](customize-properties.md#use-camel-case-for-all-json-property-names) |
+| Camel-case property names                             | ✔️ [PropertyNamingPolicy global setting](customize-properties.md#use-a-built-in-naming-policy) |
 | Snake-case property names                             | ✔️ [Snake case naming policy](#snake-case-naming-policy)|
 | Minimal character escaping                            | ✔️ [Strict character escaping, configurable](#minimal-character-escaping) |
 | `NullValueHandling.Ignore` global setting             | ✔️ [DefaultIgnoreCondition global option](ignore-properties.md#ignore-all-null-value-properties) |
@@ -92,7 +92,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Newtonsoft.Json feature                               | System.Text.Json equivalent |
 |-------------------------------------------------------|-----------------------------|
 | Case-insensitive deserialization by default           | ✔️ [PropertyNameCaseInsensitive global setting](#case-insensitive-deserialization) |
-| Camel-case property names                             | ✔️ [PropertyNamingPolicy global setting](customize-properties.md#use-camel-case-for-all-json-property-names) |
+| Camel-case property names                             | ✔️ [PropertyNamingPolicy global setting](customize-properties.md#use-a-built-in-naming-policy) |
 | Minimal character escaping                            | ✔️ [Strict character escaping, configurable](#minimal-character-escaping) |
 | `NullValueHandling.Ignore` global setting             | ✔️ [DefaultIgnoreCondition global option](ignore-properties.md#ignore-all-null-value-properties) |
 | Allow comments                                        | ✔️ [ReadCommentHandling global setting](#comments) |
@@ -140,7 +140,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Newtonsoft.Json feature                               | System.Text.Json equivalent |
 |-------------------------------------------------------|-----------------------------|
 | Case-insensitive deserialization by default           | ✔️ [PropertyNameCaseInsensitive global setting](#case-insensitive-deserialization) |
-| Camel-case property names                             | ✔️ [PropertyNamingPolicy global setting](customize-properties.md#use-camel-case-for-all-json-property-names) |
+| Camel-case property names                             | ✔️ [PropertyNamingPolicy global setting](customize-properties.md#use-a-built-in-naming-policy) |
 | Minimal character escaping                            | ✔️ [Strict character escaping, configurable](#minimal-character-escaping) |
 | `NullValueHandling.Ignore` global setting             | ✔️ [DefaultIgnoreCondition global option](ignore-properties.md#ignore-all-null-value-properties) |
 | Allow comments                                        | ✔️ [ReadCommentHandling global setting](#comments) |
@@ -193,7 +193,7 @@ This is not an exhaustive list of `Newtonsoft.Json` features. The list includes 
 
 During deserialization, `Newtonsoft.Json` does case-insensitive property name matching by default. The <xref:System.Text.Json?displayProperty=fullName> default is case-sensitive, which gives better performance since it's doing an exact match. For information about how to do case-insensitive matching, see [Case-insensitive property matching](character-casing.md).
 
-If you're using `System.Text.Json` indirectly by using ASP.NET Core, you don't need to do anything to get behavior like `Newtonsoft.Json`. ASP.NET Core specifies the settings for [camel-casing property names](customize-properties.md#use-camel-case-for-all-json-property-names) and case-insensitive matching when it uses `System.Text.Json`.
+If you're using `System.Text.Json` indirectly by using ASP.NET Core, you don't need to do anything to get behavior like `Newtonsoft.Json`. ASP.NET Core specifies the settings for camel-casing property names and case-insensitive matching when it uses `System.Text.Json`.
 
 ASP.NET Core also enables deserializing [quoted numbers](#allow-or-write-numbers-in-quotes) by default.
 
@@ -582,7 +582,7 @@ System.Text.Json includes a built-in naming policy for snake case. However, ther
 
 :::zone pivot="dotnet-7-0, dotnet-6-0"
 
-The only built-in property naming policy in System.Text.Json is for [camel case](customize-properties.md#use-camel-case-for-all-json-property-names). `Newtonsoft.Json` can convert property names to snake case. A [custom naming policy](customize-properties.md#use-a-custom-json-property-naming-policy) can provide this functionality, or upgrade to .NET 8 or later, which includes built-in snake case naming policies.
+The only built-in property naming policy in System.Text.Json is for camel case. `Newtonsoft.Json` can convert property names to snake case. A [custom naming policy](customize-properties.md#use-a-custom-json-property-naming-policy) can provide this functionality, or upgrade to .NET 8 or later, which includes built-in snake case naming policies.
 
 ::: zone-end
 

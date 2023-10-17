@@ -8,11 +8,21 @@ To support debugging XOML-based workflows with Visual Studio, when workflow proj
 
 If re-building your project does not solve the problem, try setting the `AppContext` switch &quot;Switch.System.Workflow.ComponentModel.UseLegacyHashForXomlFileChecksum&quot; to true.In code:
 
-<pre><code class="lang-csharp">System.AppContext.SetSwitch(&quot;Switch.System.Workflow.ComponentModel.UseLegacyHashForXomlFileChecksum&quot;, true);&#13;&#10;</code></pre>
+```csharp
+System.AppContext.SetSwitch("Switch.System.Workflow.ComponentModel.UseLegacyHashForXomlFileChecksum", true);
+
+```
 
 Or in a configuration file (this needs to be in MSBuild.exe.config for the MSBuild.exe that you are using):
 
-<pre><code class="lang-xml">&lt;configuration&gt;&#13;&#10;&lt;runtime&gt;&#13;&#10;&lt;AppContextSwitchOverrides value=&quot;Switch.System.Workflow.ComponentModel.UseLegacyHashForXomlFileChecksum=true&quot; /&gt;&#13;&#10;&lt;/runtime&gt;&#13;&#10;&lt;/configuration&gt;&#13;&#10;</code></pre>
+```xml
+<configuration>
+<runtime>
+<AppContextSwitchOverrides value="Switch.System.Workflow.ComponentModel.UseLegacyHashForXomlFileChecksum=true" />
+</runtime>
+</configuration>
+
+```
 
 | Name    | Value       |
 |:--------|:------------|

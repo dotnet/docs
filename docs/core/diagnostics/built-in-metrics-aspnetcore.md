@@ -56,9 +56,16 @@ see [here](available-counters.md).
 | `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https` | Always |
 | `aspnetcore.request.is_unhandled` | boolean | True when the request wasn't handled by the application pipeline. | `true` | If the request was unhandled. |
 
-The time used to handle an inbound HTTP request as measured at the hosting layer of ASP.NET Core. The time measurement starts once the underlying web host has
-sufficiently parsed the HTTP request headers on the inbound network stream to identify the new request and initialize context data structures such as the <xref:Microsoft.AspNetCore.Http.HttpContext>. The
-time ends when the ASP.NET Core handler pipeline is finished executing, all response data has been sent, and context data structures for the request are being disposed.
+The time used to handle an inbound HTTP request as measured at the hosting layer of ASP.NET Core. The time measurement starts once the underlying web host has:
+
+- Sufficiently parsed the HTTP request headers on the inbound network stream to identify the new request.
+- Initialized the context data structures such as the <xref:Microsoft.AspNetCore.Http.HttpContext>.
+
+The time ends when:
+
+- The ASP.NET Core handler pipeline is finished executing.
+- All response data has been sent.
+- All context data structures for the request are being disposed.
 
 Available staring in: ASP.NET Core 8.0
 
@@ -210,7 +217,7 @@ Available staring in: ASP.NET Core 8.0
 |---|---|---|---|---|
 | `network.transport` | string | [OSI transport layer](https://osi-model.com/transport-layer/) or [inter-process communication method](https://en.wikipedia.org/wiki/Inter-process_communication). | `tcp`; `unix` | Always |
 | `network.type`| string | [OSI network layer](https://osi-model.com/network-layer/) or non-OSI equivalent. | `ipv4`; `ipv6` | If the transport is `tcp` or `udp`. |
-| `server.address` | string | Server address - domain name if available without reverse DNS lookup, otherwise IP address or Unix domain socket name. | `example.com` | Always |
+| `server.address` | string | Server address domain name if available without reverse DNS lookup;  otherwise, IP address or Unix domain socket name. | `example.com` | Always |
 | `server.port`| int | Server port number | `80`; `8080`; `443` | If the transport is `tcp` or `udp`. |
 
 Available staring in: ASP.NET Core 8.0
@@ -228,7 +235,7 @@ Available staring in: ASP.NET Core 8.0
 | `network.protocol.version` | string | Version of the protocol specified in `network.protocol.name`. | `1.1`; `2` | Always |
 | `network.transport` | string | [OSI transport layer](https://osi-model.com/transport-layer/) or [inter-process communication method](https://en.wikipedia.org/wiki/Inter-process_communication). | `tcp`; `unix` | Always |
 | `network.type` | string | [OSI network layer](https://osi-model.com/network-layer/) or non-OSI equivalent. | `ipv4`; `ipv6` | If the transport is `tcp` or `udp`. |
-| `server.address` | string | Server address - domain name if available without reverse DNS lookup, otherwise IP address or Unix domain socket name. | `example.com` | Always |
+| `server.address` | string | Server address domain name if available without reverse DNS lookup;  otherwise, IP address or Unix domain socket name. | `example.com` | Always |
 | `server.port` | int | Server port number | `80`; `8080`; `443` | If the transport is `tcp` or `udp`. |
 | `tls.protocol.version` | string | TLS protocol version. | `1.2`; `1.3` | If the connection is secured with TLS. |
 
@@ -244,10 +251,10 @@ Available staring in: ASP.NET Core 8.0
 |---|---|---|---|---|
 | `network.transport`| string | [OSI transport layer](https://osi-model.com/transport-layer/) or [inter-process communication method](https://en.wikipedia.org/wiki/Inter-process_communication). | `tcp`; `unix` | Always |
 | `network.type` | string | [OSI network layer](https://osi-model.com/network-layer/) or non-OSI equivalent. | `ipv4`; `ipv6` | If the transport is `tcp` or `udp`. |
-| `server.address`| string | Server address - domain name if available without reverse DNS lookup, otherwise IP address or Unix domain socket name. | `example.com` | Always |
+| `server.address`| string | Server address domain name if available without reverse DNS lookup;  otherwise, IP address or Unix domain socket name. | `example.com` | Always |
 | `server.port` | int | Server port number | `80`; `8080`; `443` | If the transport is `tcp` or `udp`. |
 
-Connections are rejected when the currently active count exceeds the value configured with MaxConcurrentConnections.
+Connections are rejected when the currently active count exceeds the value configured with `MaxConcurrentConnections`.
 
 Available staring in: ASP.NET Core 8.0
 
@@ -261,7 +268,7 @@ Available staring in: ASP.NET Core 8.0
 |---|---|---|---|---|
 | `network.transport` | string | [OSI transport layer](https://osi-model.com/transport-layer/) or [inter-process communication method](https://en.wikipedia.org/wiki/Inter-process_communication). | `tcp`; `unix` | Always |
 | `network.transport` | string | [OSI network layer](https://osi-model.com/network-layer/) or non-OSI equivalent. | `ipv4`; `ipv6` | If the transport is `tcp` or `udp`. |
-| `server.address` | string | Server address - domain name if available without reverse DNS lookup, otherwise IP address or Unix domain socket name. | `example.com` | Always |
+| `server.address` | string | Server address domain name if available without reverse DNS lookup;  otherwise, IP address or Unix domain socket name. | `example.com` | Always |
 | `server.port` | int | Server port number | `80`; `8080`; `443` | If the transport is `tcp` or `udp`. |
 
 Available staring in: ASP.NET Core 8.0
@@ -278,7 +285,7 @@ Available staring in: ASP.NET Core 8.0
 | `network.protocol.version` | string | Version of the protocol specified in `network.protocol.name`. | `1.1`; `2` | Always |
 | `network.transport` | string | [OSI transport layer](https://osi-model.com/transport-layer/) or [inter-process communication method](https://en.wikipedia.org/wiki/Inter-process_communication). | `tcp`; `unix` | Always |
 | `network.transport` | string | [OSI network layer](https://osi-model.com/network-layer/) or non-OSI equivalent. | `ipv4`; `ipv6` | If the transport is `tcp` or `udp`. |
-| `server.address` | string | Server address - domain name if available without reverse DNS lookup, otherwise IP address or Unix domain socket name. | `example.com` | Always |
+| `server.address` | string | Server address domain name if available without reverse DNS lookup;  otherwise, IP address or Unix domain socket name. | `example.com` | Always |
 | `server.port` | int | Server port number | `80`; `8080`; `443` | If the transport is `tcp` or `udp`. |
 
 Available staring in: ASP.NET Core 8.0
@@ -293,7 +300,7 @@ Available staring in: ASP.NET Core 8.0
 |---|---|---|---|---|
 | `network.transport` | string | [OSI transport layer](https://osi-model.com/transport-layer/) or [inter-process communication method](https://en.wikipedia.org/wiki/Inter-process_communication). | `tcp`; `unix` | Always |
 | `network.transport` | string | [OSI network layer](https://osi-model.com/network-layer/) or non-OSI equivalent. | `ipv4`; `ipv6` | If the transport is `tcp` or `udp`. |
-| `server.address` | string | Server address - domain name if available without reverse DNS lookup, otherwise IP address or Unix domain socket name. | `example.com` | Always |
+| `server.address` | string | Server address domain name if available without reverse DNS lookup;  otherwise, IP address or Unix domain socket name. | `example.com` | Always |
 | `server.port` | int | Server port number | `80`; `8080`; `443` | If the transport is `tcp` or `udp`. |
 
 The counter only tracks HTTP/1.1 connections.
@@ -311,7 +318,7 @@ Available staring in: ASP.NET Core 8.0
 | `error.type` | string | The full name of exception type. | `System.OperationCanceledException`; `Contoso.MyException` | If an exception was thrown. |
 | `network.transport` | string | [OSI transport layer](https://osi-model.com/transport-layer/) or [inter-process communication method](https://en.wikipedia.org/wiki/Inter-process_communication). | `tcp`; `unix` | Always |
 | `network.transport` | string | [OSI network layer](https://osi-model.com/network-layer/) or non-OSI equivalent. | `ipv4`; `ipv6` | If the transport is `tcp` or `udp`. |
-| `server.address` | string | Server address - domain name if available without reverse DNS lookup, otherwise IP address or Unix domain socket name. | `example.com` | Always |
+| `server.address` | string | Server address domain name if available without reverse DNS lookup;  otherwise, IP address or Unix domain socket name. | `example.com` | Always |
 | `server.port` | int | Server port number | `80`; `8080`; `443` | If the transport is `tcp` or `udp`. |
 | `tls.protocol.version` | string | TLS protocol version. | `1.2`; `1.3` | If the connection is secured with TLS. |
 
@@ -327,7 +334,7 @@ Available staring in: ASP.NET Core 8.0
 |---|---|---|---|---|
 | `network.transport` | string | [OSI transport layer](https://osi-model.com/transport-layer/) or [inter-process communication method](https://en.wikipedia.org/wiki/Inter-process_communication). | `tcp`; `unix` | Always |
 | `network.transport` | string | [OSI network layer](https://osi-model.com/network-layer/) or non-OSI equivalent. | `ipv4`; `ipv6` | If the transport is `tcp` or `udp`. |
-| `server.address` | string | Server address - domain name if available without reverse DNS lookup, otherwise IP address or Unix domain socket name. | `example.com` | Always |
+| `server.address` | string | Server address domain name if available without reverse DNS lookup;  otherwise, IP address or Unix domain socket name. | `example.com` | Always |
 | `server.port` | int | Server port number | `80`; `8080`; `443` | If the transport is `tcp` or `udp`. |
 
 Available staring in: ASP.NET Core 8.0

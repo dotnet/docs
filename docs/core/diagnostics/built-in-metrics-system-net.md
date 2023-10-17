@@ -8,8 +8,7 @@ ms.date: 9/21/2023
 # System.Net Metrics
 
 This article describes the networking metrics built-in for <xref:System.Net> produced using the
-<xref:System.Diagnostics.Metrics?displayProperty=nameWithType> API. For a listing of metrics based on the alternate [EventCounters](event-counters.md) API,
-see [here](available-counters.md).
+<xref:System.Diagnostics.Metrics?displayProperty=nameWithType> API. For a listing of metrics based on the alternate [EventCounters](event-counters.md) API, see [here](available-counters.md).
 
 - [Meter: `System.Net.NameResolution`](#meter-systemnetnameresolution) - Metrics for DNS lookups
   * [Instrument: `dns.lookup.duration`](#instrument-dnslookupduration)
@@ -31,10 +30,10 @@ see [here](available-counters.md).
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
 | `dns.question.name` | string | The name being queried. | `www.example.com`; `dot.net` | Always |
-| `error.type` | string | A well-known error string or the full type name of an exception that occured. | `host_not_found`; `System.Net.Sockets.SocketException` | If an error occured |
+| `error.type` | string | A well-known error string or the full type name of an exception that occurred. | `host_not_found`; `System.Net.Sockets.SocketException` | If an error occurred |
 
 This metric measures the time take to make DNS requests. These requests can occur by calling methods on
-<xref:System.Net.Dns> or indirectly wihtin higher level APIs on types such as <xref:System.Net.Http.HttpClient>.
+<xref:System.Net.Dns> or indirectly within higher level APIs on types such as <xref:System.Net.Http.HttpClient>.
 
 Most errors when doing a DNS lookup throw a <xref:System.Net.Sockets.SocketException>. To better disambiguate the common error cases, SocketExceptions with specific <xref:System.Net.Sockets.SocketException.SocketErrorCode>
 are given explicit error names in `error.type`:
@@ -107,8 +106,7 @@ Available starting in: .NET 8
 | `server.port` | int | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | If not default (`80` for `http` scheme, `443` for `https`) |
 | `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
 
-HTTP client request duration measures the time the underlying client handler takes to complete the request up to reading response headers from the network
-stream. It does not include the time spent reading the response body.
+HTTP client request duration measures the time the underlying client handler takes to complete the request. Completing the request includes the time up to reading response headers from the network stream. It doesn't include the time spent reading the response body.
 
 Available starting in: .NET 8
 
@@ -126,9 +124,7 @@ Available starting in: .NET 8
 | `server.port` | int | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | If not default (`80` for `http` scheme, `443` for `https`) |
 | `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
 
-<xref:System.Net.Http.HttpClient>, when configured to use the default <xref:System.Net.Http.SocketsHttpHandler>, sends HTTP requests using a pool of network connections.
-If all connections are already busy handling other requests, new requests are placed in a queue and wait until a network connection is available for use. This instrument
-measures the amount of time HTTP requests spend waiting in that queue, prior to anything being sent across the network.
+<xref:System.Net.Http.HttpClient>, when configured to use the default <xref:System.Net.Http.SocketsHttpHandler>, sends HTTP requests using a pool of network connections. If all connections are busy handling other requests, new requests are placed in a queue and wait until a network connection is available for use. This instrument measures the amount of time HTTP requests spend waiting in that queue, prior to anything being sent across the network.
 
 Available starting in: .NET 8
 

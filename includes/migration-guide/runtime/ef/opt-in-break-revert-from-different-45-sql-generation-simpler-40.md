@@ -10,7 +10,6 @@ This feature is disabled by default. If Entity Framework generates extra JOIN st
 
 ```xml
 <add key="EntityFramework_SimplifyLimitOperations" value="true" />
-
 ```
 
 | Name    | Value       |

@@ -14,7 +14,6 @@ using (var stream = GetWindowsRuntimeStream() as Stream)
 // do something
 await stream.FlushAsync();
 }
-
 ```
 
 | Name    | Value       |

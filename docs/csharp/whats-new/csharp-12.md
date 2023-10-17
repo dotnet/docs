@@ -50,7 +50,6 @@ int[] row0 = [1, 2, 3];
 int[] row1 = [4, 5, 6];
 int[] row2 = [7, 8, 9];
 int[][] twoDFromVariables = [row0, row1, row2];
-
 ```
 
 The *spread operator*, `..` in a collection expression replaces its argument with the elements from that collection. The argument must be a collection type. The following examples show how the spread operator works:

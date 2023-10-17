@@ -10,7 +10,6 @@ If you are using AppFabric or another <xref:System.ServiceModel.Activities.IWork
 
 ```xml
 <add key="microsoft:WorkflowServices:IgnoreTransactionsForTransactedCancelAndTransactedTerminate" value="true"/>
-
 ```
 
 If you are not encountering the problem, you do not need to do this.

@@ -15,7 +15,6 @@ In code:
 ```csharp
 System.AppContext.SetSwitch("Switch.System.Workflow.Runtime.UseLegacyHashForWorkflowDefinitionDispenserCacheKey", true);
 System.AppContext.SetSwitch("Switch.System.Workflow.Runtime.UseLegacyHashForSqlTrackingCacheKey", true);
-
 ```
 
 Or in the configuration file (this needs to be in the config file for the application that is creating the <xref:System.Workflow.Runtime.WorkflowRuntime> object):
@@ -27,7 +26,6 @@ Or in the configuration file (this needs to be in the config file for the applic
 <AppContextSwitchOverrides value="Switch.System.Workflow.Runtime.UseLegacyHashForSqlTrackingCacheKeytrue" />
 </runtime>
 </configuration>
-
 ```
 
 | Name    | Value       |

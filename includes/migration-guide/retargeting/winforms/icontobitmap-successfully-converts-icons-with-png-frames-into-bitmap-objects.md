@@ -15,7 +15,6 @@ If this behavior is undesirable, you can retain the previous behavior by adding 
 ```xml
 <AppContextSwitchOverrides
 value="Switch.System.Drawing.DontSupportPngFramesInIcons=true" />
-
 ```
 
 If the app.config file already contains the `AppContextSwitchOverrides` element, the new value should be merged with the value attribute like this:
@@ -23,7 +22,6 @@ If the app.config file already contains the `AppContextSwitchOverrides` element,
 ```xml
 <AppContextSwitchOverrides
 value="Switch.System.Drawing.DontSupportPngFramesInIcons=true;<previous key>=<previous value>" />
-
 ```
 
 | Name    | Value       |

@@ -14,7 +14,6 @@ For the correct behavior for restoring attributes on postback, set the `targetFr
 <httpRuntime targetFramework="4.8"/>
 </system.web>
 </configuration>
-
 ```
 
 Setting it lower, or not at all, preserves the old incorrect behavior.

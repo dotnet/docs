@@ -14,7 +14,6 @@ A developer who wants to utilize this change while targeting a framework version
 <AppContextSwitchOverrides value="Switch.MS.Internal.UseSha1AsDefaultHashAlgorithmForDigitalSignatures=true"/>
 </runtime>
 </configuration>
-
 ```
 
 | Name    | Value       |

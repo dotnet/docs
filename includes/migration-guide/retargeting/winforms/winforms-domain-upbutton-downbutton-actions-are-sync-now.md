@@ -15,7 +15,6 @@ In order for an application to benefit from these changes, it must run on the .N
 <runtime>
 <AppContextSwitchOverrides value="Switch.System.Windows.Forms.DomainUpDown.UseLegacyScrolling=false"/>
 </runtime>
-
 ```
 
 | Name    | Value       |

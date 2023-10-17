@@ -162,7 +162,6 @@ jobs:
 
     - name: Logout of Azure
       run: az logout
-
 ```
 
 The preceding GitHub workflow will:

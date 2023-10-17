@@ -10,7 +10,6 @@ If re-building your project does not solve the problem, try setting the `AppCont
 
 ```csharp
 System.AppContext.SetSwitch("Switch.System.Workflow.ComponentModel.UseLegacyHashForXomlFileChecksum", true);
-
 ```
 
 Or in a configuration file (this needs to be in MSBuild.exe.config for the MSBuild.exe that you are using):
@@ -21,7 +20,6 @@ Or in a configuration file (this needs to be in MSBuild.exe.config for the MSBui
 <AppContextSwitchOverrides value="Switch.System.Workflow.ComponentModel.UseLegacyHashForXomlFileChecksum=true" />
 </runtime>
 </configuration>
-
 ```
 
 | Name    | Value       |

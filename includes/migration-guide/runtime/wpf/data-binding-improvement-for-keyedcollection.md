@@ -2,7 +2,7 @@
 
 #### Details
 
-Fixed <xref:System.Windows.Data.Binding> incorrect use of IList indexer when the source object declares a custom indexer with the same signature (for example, KeyedCollection&lt;int,TItem&gt;).
+Fixed <xref:System.Windows.Data.Binding> incorrect use of IList indexer when the source object declares a custom indexer with the same signature (for example, `KeyedCollection<int,TItem>`).
 
 #### Suggestion
 
@@ -15,11 +15,10 @@ In order for an application that targets an older version to benefit from this c
 <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7"/>
 </startup>
 <runtime>
-<!-- AppContextSwitchOverrides value attribute is in the form of &#39;key1=true/false;key2=true/false  -->
+<!-- AppContextSwitchOverrides value attribute is in the form of key1=true/false;key2=true/false  -->
 <AppContextSwitchOverrides value="Switch.System.Windows.Data.Binding.IListIndexerHidesCustomIndexer=false" />
 </runtime>
 </configuration>
-
 ```
 
 | Name    | Value   |

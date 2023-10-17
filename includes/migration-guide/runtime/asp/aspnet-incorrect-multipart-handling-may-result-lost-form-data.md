@@ -18,7 +18,6 @@ This behavior can also be explicitly controlled with an `appSetting`:
 ...
 </appSettings>
 </configuration>
-
 ```
 
 | Name    | Value       |

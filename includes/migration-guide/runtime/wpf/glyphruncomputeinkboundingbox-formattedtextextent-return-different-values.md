@@ -12,7 +12,6 @@ Be aware that some glyph bounding box sizes have increased. These changes will u
 <appsettings>
 <add key="IncludeAllInkInBoundingBox" value="false">
 </appsettings>
-
 ```
 
 | Name    | Value       |

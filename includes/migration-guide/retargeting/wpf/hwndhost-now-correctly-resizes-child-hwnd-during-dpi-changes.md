@@ -19,7 +19,6 @@ In order for the application to benefit from these changes, it must run on the .
 <AppContextSwitchOverrides value="Switch.System.Windows.DoNotUsePresentationDpiCapabilityTier2OrGreater=false" />
 </runtime>
 </configuration>
-
 ```
 
 | Name    | Value       |

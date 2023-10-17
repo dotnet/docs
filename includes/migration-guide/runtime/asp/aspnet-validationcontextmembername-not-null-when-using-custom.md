@@ -16,7 +16,6 @@ Add the following setting to your *web.config* file for the property to return t
 ...
 </appSettings>
 </configuration>
-
 ```
 
 In .NET Framework 4.8 version prior to the October 2019 update,  adding this to your *web.config* file restores the previous behavior and the property returns `null`.

@@ -14,7 +14,6 @@ A developer who wants to utilize this change must set the following AppContext f
 <AppContextSwitchOverrides value="Switch.System.Windows.Controls.Text.UseAdornerForTextboxSelectionRendering=false"/>
 </runtime>
 </configuration>
-
 ```
 
 | Name    | Value       |

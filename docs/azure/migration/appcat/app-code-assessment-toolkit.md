@@ -3,6 +3,8 @@ title: Azure Application and Code Assessment Toolkit
 description: Learn how to assess .NET applications with Azure AppCAT to evaluate their readiness to migrate to Azure.
 ms.topic: conceptual
 ms.date: 10/16/2023
+author: codemillmatt
+ms.author: masoucou
 ---
 
 # Assess your .NET applications for migration to Azure with Azure AppCAT for .NET

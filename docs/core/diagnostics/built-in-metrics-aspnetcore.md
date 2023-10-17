@@ -65,8 +65,9 @@ The time ends when:
 
 - The ASP.NET Core handler pipeline is finished executing.
 - All response data has been sent.
-- All context data structures for the request are being disposed.
+- The context data structures for the request are being disposed.
 
+<!-- Once we migrate this doc to https://github.com/dotnet/AspNetCore.Docs we can remove the following version info -->
 Available staring in: ASP.NET Core 8.0
 
 ### Instrument: `http.server.active_requests`
@@ -92,7 +93,7 @@ Available staring in: ASP.NET Core 8.0
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
-| `aspnetcore.routing.match_status` | string | Match result - success or failure | `success`; `failure` | Always |
+| `aspnetcore.routing.match_status` | string | Match result | `success`; `failure` | Always |
 | `aspnetcore.routing.is_fallback_route` | boolean | A value that indicates whether the matched route is a fallback route. | `True` | If a route was successfully matched. |
 | `http.route` | string | The matched route | `{controller}/{action}/{id?}` | If a route was successfully matched. |
 
@@ -153,7 +154,7 @@ Available staring in: ASP.NET Core 8.0
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `aspnetcore.rate_limiting.queued_requests` | UpDownCounter | `{request}` | Number of requests that are currently queued, waiting to acquire a rate limiting lease. |
+| `aspnetcore.rate_limiting.queued_requests` | UpDownCounter | `{request}` | Number of requests that are currently queued waiting to acquire a rate limiting lease. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|

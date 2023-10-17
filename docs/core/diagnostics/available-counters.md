@@ -8,6 +8,7 @@ ms.date: 12/17/2020
 # Well-known EventCounters in .NET
 
 The .NET runtime and libraries implement and publish several [EventCounters](./event-counters.md) that can be used to identify and diagnose various performance issues. This article is a reference on the providers that can be used to monitor these counters and their descriptions.
+See the [well-known metrics reference](built-in-metrics.md) instead if you are working with .NET's newer [System.Diagnostics.Metrics API](metrics.md).
 
 ## System.Runtime counters
 

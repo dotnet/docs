@@ -2,7 +2,7 @@
 
 #### Details
 
-When using TLS 1.x, the .NET Framework relies on the underlying Windows SCHANNEL API. Starting with .NET Framework 4.6, the [SCH_SEND_AUX_RECORD](/windows/win32/api/schannel/ns-schannel-schannel_cred) flag is passed by default to SCHANNEL. This causes SCHANNEL to split data to be encrypted into two separate records, the first as a single byte and the second as *n*-1 bytes.In rare cases, this breaks communication between clients and existing servers that make the assumption that the data resides in a single record.
+When using TLS 1.x, the .NET Framework relies on the underlying Windows SCHANNEL API. Starting with .NET Framework 4.6, the [SCH_SEND_AUX_RECORD](/windows/win32/api/schannel/ns-schannel-schannel_cred) flag is passed by default to SCHANNEL. This causes SCHANNEL to split data to be encrypted into two separate records, the first as a single byte and the second as *n*-1 bytes. In rare cases, this breaks communication between clients and existing servers that make the assumption that the data resides in a single record.
 
 #### Suggestion
 

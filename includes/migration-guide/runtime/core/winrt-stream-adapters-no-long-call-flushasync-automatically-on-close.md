@@ -6,7 +6,16 @@ In Windows Store apps, Windows Runtime stream adapters no longer call the FlushA
 
 #### Suggestion
 
-This change should be transparent. Developers can restore the previous behavior by writing code like this:<pre><code class="lang-csharp">using (var stream = GetWindowsRuntimeStream() as Stream)&#13;&#10;{&#13;&#10;// do something&#13;&#10;await stream.FlushAsync();&#13;&#10;}&#13;&#10;</code></pre>
+This change should be transparent. Developers can restore the previous behavior by writing code like this:
+
+```csharp
+using (var stream = GetWindowsRuntimeStream() as Stream)
+{
+// do something
+await stream.FlushAsync();
+}
+
+```
 
 | Name    | Value       |
 |:--------|:------------|

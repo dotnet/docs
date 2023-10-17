@@ -68,6 +68,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `DefaultContractResolver` to ignore properties        | ✔️ [DefaultJsonTypeInfoResolver class](#conditionally-ignore-a-property) |
 | Polymorphic serialization                             | ✔️ [[JsonDerivedType] attribute](#polymorphic-serialization) |
 | Polymorphic deserialization                           | ✔️ [Type discriminator on [JsonDerivedType] attribute](#polymorphic-deserialization) |
+| Deserialize string enum value                         | ✔️ [Deserialize string enum values](#deserialize-string-enum-values) |
 | Support for a broad range of types                    | ⚠️ [Some types require custom converters](#types-without-built-in-support) |
 | Deserialize inferred type to `object` properties      | ⚠️ [Not supported, workaround, sample](#deserialization-of-object-properties) |
 | Deserialize JSON `null` literal to non-nullable value types | ⚠️ [Not supported, workaround, sample](#deserialize-null-to-non-nullable-type) |
@@ -115,6 +116,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `DefaultContractResolver` to ignore properties        | ✔️ [DefaultJsonTypeInfoResolver class](#conditionally-ignore-a-property) |
 | Polymorphic serialization                             | ✔️ [[JsonDerivedType] attribute](#polymorphic-serialization) |
 | Polymorphic deserialization                           | ✔️ [Type discriminator on [JsonDerivedType] attribute](#polymorphic-deserialization) |
+| Deserialize string enum value                         | ✔️ [Deserialize string enum values](#deserialize-string-enum-values) |
 | Support for a broad range of types                    | ⚠️ [Some types require custom converters](#types-without-built-in-support) |
 | Deserialize inferred type to `object` properties      | ⚠️ [Not supported, workaround, sample](#deserialization-of-object-properties) |
 | Deserialize JSON `null` literal to non-nullable value types | ⚠️ [Not supported, workaround, sample](#deserialize-null-to-non-nullable-type) |
@@ -159,6 +161,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `ReferenceLoopHandling` global setting                | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
 | Callbacks                                             | ✔️ [Callbacks](#callbacks) |
 | NaN, Infinity, -Infinity                              | ✔️ [Supported](#nan-infinity--infinity) |
+| Deserialize string enum value                         | ✔️ [Deserialize string enum values](#deserialize-string-enum-values) |
 | Support for a broad range of types                    | ⚠️ [Some types require custom converters](#types-without-built-in-support) |
 | Polymorphic serialization                             | ⚠️ [Not supported, workaround, sample](#polymorphic-serialization) |
 | Polymorphic deserialization                           | ⚠️ [Not supported, workaround, sample](#polymorphic-deserialization) |
@@ -384,6 +387,30 @@ Custom converters can be implemented for types that don't have built-in support.
 `Newtonsoft.Json` has a `TypeNameHandling` setting that adds type-name metadata to the JSON while serializing. It uses the metadata while deserializing to do polymorphic deserialization. Starting in .NET 7, <xref:System.Text.Json?displayProperty=fullName> relies on type discriminator information to perform polymorphic deserialization. This metadata is emitted in the JSON and then used during deserialization to determine whether to deserialize to the base type or a derived type. For more information, see [Serialize properties of derived classes](polymorphism.md).
 
 To support polymorphic deserialization in older .NET versions, create a converter like the example in [How to write custom converters](converters-how-to.md#support-polymorphic-deserialization).
+
+### Deserialize string enum values
+
+By default, System.Text.Json doesn't support deserializing string enum values, whereas `Newtonsoft.Json` does. For example, the following code throws a <xref:System.Text.Json.JsonException>:
+
+```csharp
+string json = "{ \"Text\": \"Hello\", \"Enum\": \"Two\" }";
+var _ = JsonSerializer.Deserialize<MyObj>(json); // Throws exception.
+
+class MyObj
+{
+    public string Text { get; set; } = "";
+    public MyEnum Enum { get; set; }
+}
+
+enum MyEnum
+{
+    One,
+    Two,
+    Three
+}
+```
+
+However, you can enable deserialization of string enum values by using the <xref:System.Text.Json.Serialization.JsonStringEnumConverter> converter. For more information, see [Enums as strings](customize-properties.md#enums-as-strings).
 
 ### Deserialization of object properties
 

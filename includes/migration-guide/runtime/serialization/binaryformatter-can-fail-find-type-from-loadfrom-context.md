@@ -19,12 +19,12 @@ And then the custom binder:
 ```csharp
 public class TypeFinderBinder : SerializationBinder
 {
-	private static readonly string s_assemblyName = Assembly.GetExecutingAssembly().FullName;
+    private static readonly string s_assemblyName = Assembly.GetExecutingAssembly().FullName;
 
-	public override Type BindToType(string assemblyName, string typeName)
-	{
-		return Type.GetType(String.Format(CultureInfo.InvariantCulture, "{0}, {1}", typeName, s_assemblyName));
-	}
+    public override Type BindToType(string assemblyName, string typeName)
+    {
+        return Type.GetType(String.Format(CultureInfo.InvariantCulture, "{0}, {1}", typeName, s_assemblyName));
+    }
 }
 
 ```

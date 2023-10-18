@@ -97,7 +97,7 @@ For information about other known issues with source generation, see the [GitHub
 
 ## Serialization optimization mode
 
-`JsonSerializer` has many features that customize the output of serialization, such as [camel-casing property names](customize-properties.md#use-camel-case-for-all-json-property-names) and [preserving references](preserve-references.md#preserve-references-and-handle-circular-references). Support for all those features causes some performance overhead. Source generation can improve serialization performance by generating optimized code that uses [`Utf8JsonWriter`](use-utf8jsonwriter.md) directly.
+`JsonSerializer` has many features that customize the output of serialization, such as [naming policies](customize-properties.md#use-a-built-in-naming-policy) and [preserving references](preserve-references.md#preserve-references-and-handle-circular-references). Support for all those features causes some performance overhead. Source generation can improve serialization performance by generating optimized code that uses [`Utf8JsonWriter`](use-utf8jsonwriter.md) directly.
 
 The optimized code doesn't support all of the serialization features that `JsonSerializer` supports. The serializer detects whether the optimized code can be used and falls back to default serialization code if unsupported options are specified. For example, <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString?displayProperty=nameWithType> is not applicable to writing, so specifying this option doesn't cause a fall-back to default code.
 

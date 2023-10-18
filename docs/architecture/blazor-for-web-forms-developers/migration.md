@@ -231,7 +231,6 @@ void ConfigDataBase(IApplicationBuilder app)
 }
 
 app.Run();
-
 ```
 
 One significant change you may notice from Web Forms is the prominence of dependency injection (DI). DI has been a guiding principle in the ASP.NET Core design. It supports customization of almost all aspects of the ASP.NET Core framework. There's even a built-in service provider that can be used for many scenarios. If more customization is required, it can be supported by many community projects. For example, you can carry forward your third-party DI library investment.
@@ -258,7 +257,6 @@ To serve static files (for example, HTML, CSS, images, and JavaScript), the file
 app.UseStaticFiles();
 
 ...
-
 ```
 
 The eShop project enables basic static file access. There are many customizations available for static file access. For information on enabling default files or a file browser, see [Static files in ASP.NET Core](/aspnet/core/fundamentals/static-files).

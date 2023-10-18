@@ -51,7 +51,6 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
-
 ```
 
 **Figure 2-1**. A typical ASP.NET Core *Program.cs* file.

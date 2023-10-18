@@ -59,7 +59,6 @@ Module Program
         ' The sharedParameters, hash, and signedHash are used to later verify the signature.
     End Sub
 End Module
-
 ```
 
 ```csharp

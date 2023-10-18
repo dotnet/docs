@@ -132,7 +132,6 @@ When using the `%A` specifier, strings are formatted using quotes. Escape codes 
 
 ```fsharp
 printfn "%A" ("abc", "a\tb\nc\"d")
-
 ```
 
 produces
@@ -360,7 +359,7 @@ Counts([0; 1; 2; 3;
 
 The default implementation of `ToString` is observable in F# programming. Often, the default results
 aren't suitable for use in either programmer-facing information display or user output, and as a result it
-is common to override the default implementation.  
+is common to override the default implementation.
 
 By default, F# record and union types override the implementation of `ToString` with an implementation that
 uses `sprintf "%+A"`.  For example,

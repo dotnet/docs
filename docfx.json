@@ -182,8 +182,8 @@
             },
             "open_source_feedback_issueUrl": {
                 "docs/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml",
-                "_csharplang/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml",
-                "_csharpstandard/standard/*.md": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml",
+                "_csharplang/**.*": "https://github.com/dotnet/charplang/issues/new?template=docs-feedback.yml",
+                "_csharpstandard/standard/*.md": "https://github.com/dotnet/csharpstandard/issues/new?template=docs-feedback.yml",
                 "_vblang/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml",
                 "_roslyn/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml"
             },
@@ -221,6 +221,10 @@
                 "_csharpstandard/standard/*.md": "https://learn.microsoft.com/media/logos/logo_net.svg",
                 "_vblang/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg",
                 "_roslyn/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg"
+            },
+            "open_source_feedback_issueLabels": {
+                "_csharplang/**.*": "Area-Speclets,untriaged",
+                "_csharpstandard/standard/*.md": "status: needs triaging"
             },
             "social_image_url": {
                 "docs/**/*.*": "/dotnet/media/dotnet-logo.png",

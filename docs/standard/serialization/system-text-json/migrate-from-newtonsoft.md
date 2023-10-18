@@ -70,13 +70,13 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Polymorphic deserialization                           | ✔️ [Type discriminator on [JsonDerivedType] attribute](#polymorphic-deserialization) |
 | Deserialize string enum value                         | ✔️ [Deserialize string enum values](#deserialize-string-enum-values) |
 | `MissingMemberHandling` global setting                | ✔️ [Handle missing members](#handle-missing-members) |
+| Add to collections without setters                    | ✔️ [](#add-to-collections-without-setters) |
 | Support for a broad range of types                    | ⚠️ [Some types require custom converters](#types-without-built-in-support) |
 | Deserialize inferred type to `object` properties      | ⚠️ [Not supported, workaround, sample](#deserialization-of-object-properties) |
 | Deserialize JSON `null` literal to non-nullable value types | ⚠️ [Not supported, workaround, sample](#deserialize-null-to-non-nullable-type) |
 | `DateTimeZoneHandling`, `DateFormatString` settings   | ⚠️ [Not supported, workaround, sample](#specify-date-format) |
 | `JsonConvert.PopulateObject` method                   | ⚠️ [Not supported, workaround](#populate-existing-objects) |
 | `ObjectCreationHandling` global setting               | ⚠️ [Not supported, workaround](#reuse-rather-than-replace-properties) |
-| Add to collections without setters                    | ⚠️ [Not supported, workaround](#add-to-collections-without-setters) |
 | Support for `System.Runtime.Serialization` attributes | ⚠️ [Not supported, workaround, sample](#systemruntimeserialization-attributes) |
 | `JsonObjectAttribute`                                 | ⚠️ [Not supported, workaround](#jsonobjectattribute) |
 | Allow property names without quotes                   | ❌ [Not supported by design](#json-strings-property-names-and-string-values) |
@@ -629,7 +629,7 @@ If the JSON that's being deserialized includes properties that are missing in th
 In .NET 8 and later versions, you can set your preference for whether to skip or disallow unmapped JSON properties using one of the following means:
 
 * Apply the <xref:System.Text.Json.Serialization.JsonUnmappedMemberHandlingAttribute> attribute to the type you're deserializing to.
-* To set your preference globally, set the <xref:System.Text.Json.JsonSerializerOptions.UnmappedMemberHandling?displayProperty=nameWithType> property. Or, for source generation, set the <xref:System.Text.Json.JsonSourceGenerationOptionsAttribute.UnmappedMemberHandling?displayProperty=nameWithType> property and apply the attribute to your <xref:System.Text.Json.Serialization.JsonSerializerContext> class.
+* To set your preference globally, set the <xref:System.Text.Json.JsonSerializerOptions.UnmappedMemberHandling?displayProperty=nameWithType> property. Or, for source generation, set the <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute.UnmappedMemberHandling?displayProperty=nameWithType> property and apply the attribute to your <xref:System.Text.Json.Serialization.JsonSerializerContext> class.
 * Customize the <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.UnmappedMemberHandling?displayProperty=nameWithType> property.
 
 In .NET 7, you can use [contract customization](custom-contracts.md) to throw an exception for JSON properties that don't exist in the target type. The following code snippet shows an example.

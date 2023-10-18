@@ -8,6 +8,8 @@ ms.date: 10/10/2023
 
 # Cross-compilation
 
+Cross-compilation refers to compiling a binary for a different platform than the one the compiler is running on. The platform difference might be a different OS or a different architecture. For instance, compiling for Windows from Linux, or from ARM64 from x64.
+
 Due to restrictions of the platforms themselves, **Native AOT does not support cross-OS
 compilation**. That means you can't directly compile for Windows using Linux or vice versa. Cross-OS
 compilation requires some form of emulation, like a virtual machine or Windows WSL.

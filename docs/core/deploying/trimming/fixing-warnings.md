@@ -39,7 +39,7 @@ Trim warnings are meant to bring predictability to trimming. There are two large
 
 ### Functionality incompatible with trimming
 
-These are typically methods which either don't work at all, or may be broken in some cases if they're used in a trimmed application. Good example is the `Type.GetType` method from previous example. In a trimmed app it may work, but there's no guarantee. Such APIs are marked with <xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute>.
+These are typically methods which either don't work at all, or may be broken in some cases if they're used in a trimmed application. A good example is the `Type.GetType` method from the previous example. In a trimmed app it may work, but there's no guarantee. Such APIs are marked with <xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute>.
 
 <xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute> is simple and broad: it's an attribute that means the member has been annotated incompatible with trimming. This attribute is used when code is fundamentally not trim compatible, or the trim dependency is too complex to explain to the trimmer. This would often be true for methods that dynamically load code for example via <xref:System.Reflection.Assembly.LoadFrom(System.String)>, enumerate or search through all types in an application or assembly for example via <xref:System.Type.GetType>, use the C# [`dynamic`](../../../csharp/language-reference/builtin-types/reference-types.md#the-dynamic-type) keyword, or use other runtime code generation technologies. An example would be:
 
@@ -80,7 +80,7 @@ IL2026: Using member 'MethodWithAssemblyLoad()' which has 'RequiresUnreferencedC
 
 Developers calling such APIs are generally not going to be interested in the particulars of the affected API or specifics as it relates to trimming.
 
-Good message should state what functionality is not compatible with trimming and then guide the developer what are their potential next steps. It may suggest to use a different functionality or change how the functionality is used. It may also simply state that the functionality is not yet compatible with trimming without a clear replacement.
+A good message should state what functionality is not compatible with trimming and then guide the developer what are their potential next steps. It may suggest to use a different functionality or change how the functionality is used. It may also simply state that the functionality is not yet compatible with trimming without a clear replacement.
 
 If the guidance to the developer becomes too long to be included in a warning message, you can add an optional `Url` to the <xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute> to point the developer to a web page describing the problem and possible solutions in greater detail.
 
@@ -120,7 +120,7 @@ class Functionality
 
 ### Functionality with requirements on its input
 
-Trimming provides tools to specify additional requirements on input to methods and other members which lead to trim compatible code. These requirements are usually about reflection and ability to access certain members or operations on a type. Such requirements are specified using the <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute>.
+Trimming provides tools to specify additional requirements on input to methods and other members which lead to trim compatible code. These requirements are usually about reflection and the ability to access certain members or operations on a type. Such requirements are specified using the <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute>.
 
 Unlike `RequiresUnreferencedCode`, reflection can sometimes be understood by the trimmer as long as it's annotated correctly. Let's take another look at the original example:
 
@@ -217,7 +217,7 @@ void Method3(
 
 Now there are no warnings because the trimmer knows which members may be accessed via runtime reflection (public methods) and on which types (`System.DateTime`), and it will preserve them. In general, this is the best way to deal with reflection related warnings: if possible, add annotations so the trimmer knows what to preserve.
 
-Warnings produces by these additional requirements are automatically suppressed if the affected code is in a method with `RequiresUnreferencedCode`.
+Warnings produced by these additional requirements are automatically suppressed if the affected code is in a method with `RequiresUnreferencedCode`.
 
 Unlike `RequiresUnreferencedCode` which simply reports the incompatibility, adding `DynamicallyAccessedMembers` makes the code compatible with trimming.
 
@@ -251,7 +251,7 @@ void TestMethod()
 
 The suppression applies to the entire method body. So in our sample above it will suppress all warnings `IL2026` from anywhere in the method. This makes it somewhat harder to understand, as it's not clear which method is the problematic one, unless you add a comment. More importantly if the code changes in the future and for example the `ReportResults` becomes trim-incompatible as well, there will ne no warning reported for this call, as it's going to be suppressed by the existing attribute.
 
-You can be resolve this by refactoring the problematic call into a separate method or local function and then apply the suppression to just that method:
+You can resolve this by refactoring the problematic call into a separate method or local function and then applying the suppression to just that method:
 
 ```csharp
 void TestMethod()

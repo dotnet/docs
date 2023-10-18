@@ -19,6 +19,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "logger-message-generator", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "library-authors", "library-authors\library-authors.csproj", "{C0C79D16-5ECB-4B52-9303-15DCF6B0B639}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "getting-started", "getting-started\getting-started.csproj", "{AA405DF9-EA0A-4130-BD42-F662CFFFA0B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "getting-started-logger-message", "getting-started-logger-message\getting-started-logger-message.csproj", "{1179C5BB-3C2F-4253-9FCC-528DACF1D0D6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "getting-started-type-category-name", "getting-started-type-category-name\getting-started-type-category-name.csproj", "{8CE47011-B4BB-4054-A48F-30CCF5AE5671}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "getting-started-open-telemetry", "getting-started-open-telemetry\getting-started-open-telemetry.csproj", "{D711C802-982D-4712-B70D-A3179C4313CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aspnet-mvc", "aspnet-mvc\aspnet-mvc.csproj", "{D169B00F-66E9-4500-879D-487FE0E09F23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "di-without-host", "di-without-host\di-without-host.csproj", "{5191561E-658B-485D-B006-760C65218FA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +69,30 @@ Global
 		{C0C79D16-5ECB-4B52-9303-15DCF6B0B639}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0C79D16-5ECB-4B52-9303-15DCF6B0B639}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0C79D16-5ECB-4B52-9303-15DCF6B0B639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA405DF9-EA0A-4130-BD42-F662CFFFA0B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA405DF9-EA0A-4130-BD42-F662CFFFA0B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA405DF9-EA0A-4130-BD42-F662CFFFA0B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA405DF9-EA0A-4130-BD42-F662CFFFA0B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1179C5BB-3C2F-4253-9FCC-528DACF1D0D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1179C5BB-3C2F-4253-9FCC-528DACF1D0D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1179C5BB-3C2F-4253-9FCC-528DACF1D0D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1179C5BB-3C2F-4253-9FCC-528DACF1D0D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CE47011-B4BB-4054-A48F-30CCF5AE5671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CE47011-B4BB-4054-A48F-30CCF5AE5671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CE47011-B4BB-4054-A48F-30CCF5AE5671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CE47011-B4BB-4054-A48F-30CCF5AE5671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D711C802-982D-4712-B70D-A3179C4313CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D711C802-982D-4712-B70D-A3179C4313CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D711C802-982D-4712-B70D-A3179C4313CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D711C802-982D-4712-B70D-A3179C4313CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D169B00F-66E9-4500-879D-487FE0E09F23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D169B00F-66E9-4500-879D-487FE0E09F23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D169B00F-66E9-4500-879D-487FE0E09F23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D169B00F-66E9-4500-879D-487FE0E09F23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5191561E-658B-485D-B006-760C65218FA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5191561E-658B-485D-B006-760C65218FA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5191561E-658B-485D-B006-760C65218FA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5191561E-658B-485D-B006-760C65218FA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

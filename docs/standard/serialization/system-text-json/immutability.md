@@ -30,7 +30,7 @@ The parameter names of a parameterized constructor must match the property names
 
 :::code language="csharp" source="snippets/how-to-5-0/csharp/ImmutableTypesCtorParms.cs" highlight="9,13-15":::
 
-Besides `[JsonPropertyName]` the following attributes support deserialization with parameterized constructors:
+Besides `[JsonPropertyName]`, the following attributes support deserialization with parameterized constructors:
 
 * [[JsonConverter]](xref:System.Text.Json.Serialization.JsonConverterAttribute)
 * [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute)

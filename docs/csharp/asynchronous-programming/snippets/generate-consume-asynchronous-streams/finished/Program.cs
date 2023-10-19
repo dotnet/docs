@@ -140,9 +140,7 @@ class Program
         while (hasMorePages && (pagesReturned++ < 10))
         {
             var postBody = issueAndPRQuery.ToJsonText();
-
-            var response = await client.Connection.Post<string>(new Uri("https://api.github.com/graphql"),
-                postBody, "application/json", "application/json");
+            var response = await client.Connection.Post<string>(new Uri("https://api.github.com/graphql"), postBody, "application/json", "application/json");
 
             JObject results = JObject.Parse(response.HttpResponse.Body.ToString()!);
 

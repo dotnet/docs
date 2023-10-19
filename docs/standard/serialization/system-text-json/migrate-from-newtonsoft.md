@@ -68,6 +68,8 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `DefaultContractResolver` to ignore properties        | ✔️ [DefaultJsonTypeInfoResolver class](#conditionally-ignore-a-property) |
 | Polymorphic serialization                             | ✔️ [[JsonDerivedType] attribute](#polymorphic-serialization) |
 | Polymorphic deserialization                           | ✔️ [Type discriminator on [JsonDerivedType] attribute](#polymorphic-deserialization) |
+| Deserialize string enum value                         | ✔️ [Deserialize string enum values](#deserialize-string-enum-values) |
+| `MissingMemberHandling` global setting                | ✔️ [Handle missing members](#handle-missing-members) |
 | Support for a broad range of types                    | ⚠️ [Some types require custom converters](#types-without-built-in-support) |
 | Deserialize inferred type to `object` properties      | ⚠️ [Not supported, workaround, sample](#deserialization-of-object-properties) |
 | Deserialize JSON `null` literal to non-nullable value types | ⚠️ [Not supported, workaround, sample](#deserialize-null-to-non-nullable-type) |
@@ -76,7 +78,6 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `ObjectCreationHandling` global setting               | ⚠️ [Not supported, workaround](#reuse-rather-than-replace-properties) |
 | Add to collections without setters                    | ⚠️ [Not supported, workaround](#add-to-collections-without-setters) |
 | Support for `System.Runtime.Serialization` attributes | ⚠️ [Not supported, workaround, sample](#systemruntimeserialization-attributes) |
-| `MissingMemberHandling` global setting                | ⚠️ [Not supported, workaround, sample](#handle-missing-members) |
 | `JsonObjectAttribute`                                 | ⚠️ [Not supported, workaround](#jsonobjectattribute) |
 | Allow property names without quotes                   | ❌ [Not supported by design](#json-strings-property-names-and-string-values) |
 | Allow single quotes around string values              | ❌ [Not supported by design](#json-strings-property-names-and-string-values) |
@@ -115,6 +116,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `DefaultContractResolver` to ignore properties        | ✔️ [DefaultJsonTypeInfoResolver class](#conditionally-ignore-a-property) |
 | Polymorphic serialization                             | ✔️ [[JsonDerivedType] attribute](#polymorphic-serialization) |
 | Polymorphic deserialization                           | ✔️ [Type discriminator on [JsonDerivedType] attribute](#polymorphic-deserialization) |
+| Deserialize string enum value                         | ✔️ [Deserialize string enum values](#deserialize-string-enum-values) |
 | Support for a broad range of types                    | ⚠️ [Some types require custom converters](#types-without-built-in-support) |
 | Deserialize inferred type to `object` properties      | ⚠️ [Not supported, workaround, sample](#deserialization-of-object-properties) |
 | Deserialize JSON `null` literal to non-nullable value types | ⚠️ [Not supported, workaround, sample](#deserialize-null-to-non-nullable-type) |
@@ -159,6 +161,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `ReferenceLoopHandling` global setting                | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
 | Callbacks                                             | ✔️ [Callbacks](#callbacks) |
 | NaN, Infinity, -Infinity                              | ✔️ [Supported](#nan-infinity--infinity) |
+| Deserialize string enum value                         | ✔️ [Deserialize string enum values](#deserialize-string-enum-values) |
 | Support for a broad range of types                    | ⚠️ [Some types require custom converters](#types-without-built-in-support) |
 | Polymorphic serialization                             | ⚠️ [Not supported, workaround, sample](#polymorphic-serialization) |
 | Polymorphic deserialization                           | ⚠️ [Not supported, workaround, sample](#polymorphic-deserialization) |
@@ -385,6 +388,30 @@ Custom converters can be implemented for types that don't have built-in support.
 
 To support polymorphic deserialization in older .NET versions, create a converter like the example in [How to write custom converters](converters-how-to.md#support-polymorphic-deserialization).
 
+### Deserialize string enum values
+
+By default, System.Text.Json doesn't support deserializing string enum values, whereas `Newtonsoft.Json` does. For example, the following code throws a <xref:System.Text.Json.JsonException>:
+
+```csharp
+string json = "{ \"Text\": \"Hello\", \"Enum\": \"Two\" }";
+var _ = JsonSerializer.Deserialize<MyObj>(json); // Throws exception.
+
+class MyObj
+{
+    public string Text { get; set; } = "";
+    public MyEnum Enum { get; set; }
+}
+
+enum MyEnum
+{
+    One,
+    Two,
+    Three
+}
+```
+
+However, you can enable deserialization of string enum values by using the <xref:System.Text.Json.Serialization.JsonStringEnumConverter> converter. For more information, see [Enums as strings](customize-properties.md#enums-as-strings).
+
 ### Deserialization of object properties
 
 When `Newtonsoft.Json` deserializes to <xref:System.Object>, it:
@@ -597,11 +624,13 @@ System.Text.Json doesn't have built-in support for these attributes. However, st
 
 ### Handle missing members
 
-If the JSON that's being deserialized includes properties that are missing in the target type, `Newtonsoft.Json` can be configured to throw exceptions. <xref:System.Text.Json?displayProperty=fullName> ignores extra properties in the JSON, except when you use the [[JsonExtensionData] attribute](handle-overflow.md).
+If the JSON that's being deserialized includes properties that are missing in the target type, `Newtonsoft.Json` can be configured to throw exceptions. By default, <xref:System.Text.Json?displayProperty=fullName> ignores extra properties in the JSON, except when you use the [[JsonExtensionData] attribute](handle-overflow.md).
 
-Starting in .NET 7, you can use [contract customization](custom-contracts.md) as a workaround to match the `Newtonsoft.Json` functionality and throw an exception for JSON properties that don't exist in the target type. The following code snippet shows an example.
+In .NET 8 and later versions, you can set your preference for whether to skip or disallow unmapped JSON properties using one of the following means:
 
-:::code language="csharp" source="snippets/migrate-from-newtonsoft/MissingMemberHandling.cs":::
+* Apply the <xref:System.Text.Json.Serialization.JsonUnmappedMemberHandlingAttribute> attribute to the type you're deserializing to.
+* To set your preference globally, set the <xref:System.Text.Json.JsonSerializerOptions.UnmappedMemberHandling?displayProperty=nameWithType> property. Or, for source generation, set the <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute.UnmappedMemberHandling?displayProperty=nameWithType> property and apply the attribute to your <xref:System.Text.Json.Serialization.JsonSerializerContext> class.
+* Customize the <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo.UnmappedMemberHandling?displayProperty=nameWithType> property.
 
 ### JsonObjectAttribute
 

@@ -139,7 +139,7 @@ class Program
         // Stop with 10 pages, because these are large repos:
         while (hasMorePages && (pagesReturned++ < 10))
         {
-            var postBody = JsonConvert.SerializeObject(issueAndPRQuery);
+            var postBody = issueAndPRQuery.ToJsonText();
 
             var response = await client.Connection.Post<string>(new Uri("https://api.github.com/graphql"),
                 postBody, requestHeaders);

@@ -1,7 +1,7 @@
 ﻿using OpenTelemetry.Logs;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Logging.AddOpenTelemetry(otelLogging => otelLogging.AddOtlpExporter());
+builder.Logging.AddOpenTelemetry(logging => logging.AddOtlpExporter());
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

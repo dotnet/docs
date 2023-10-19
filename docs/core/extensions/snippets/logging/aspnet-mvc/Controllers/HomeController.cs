@@ -1,8 +1,9 @@
 ﻿using System.Diagnostics;
-using aspnet_mvc.Models;
+using AspNetCore.Mvc.Example.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace aspnet_mvc.Controllers;
+namespace AspNetCore.Mvc.Example.Controllers;
+
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;

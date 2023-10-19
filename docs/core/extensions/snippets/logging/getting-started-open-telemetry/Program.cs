@@ -9,4 +9,4 @@ using ILoggerFactory factory = LoggerFactory.Create(builder =>
     });
 });
 ILogger logger = factory.CreateLogger("Program");
-logger.LogInformation("Hello World! Logging is {description}.", "fun");
+logger.LogInformation("Hello World! Logging is {Description}.", "fun");

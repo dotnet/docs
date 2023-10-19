@@ -8,54 +8,44 @@ ms.date: 10/15/2023
 
 # Logging in C# and .NET
 
-.NET supports high performance, structured logging via the <xref:Microsoft.Extensions.Logging.ILogger> API to help monitor application behavior and diagnose issues.
-Logs can be written to different destinations by selecting different [logging providers](logging-providers.md). Basic logging providers are built-in and there are many
-others available from third parties.
+.NET supports high performance, structured logging via the <xref:Microsoft.Extensions.Logging.ILogger> API to help monitor application behavior and diagnose issues. Logs can be written to different destinations by configuring different [logging providers](logging-providers.md). Basic logging providers are built-in and there are many third-party providers available as well.
 
-## Getting started
+## Get started
 
-This first example shows the basics, but it is only suitable for a trivial console app. In the next section we show how to improve the code considering scale, performance, configuration and typical programming patterns.
+This first example shows the basics, but it is only suitable for a trivial console app. In the next section you see how to improve the code considering scale, performance, configuration and typical programming patterns.
 
 :::code language="csharp" source="snippets/logging/getting-started/Program.cs" range="1-5":::
 
 The preceding example:
 
-- Creates an <xref:Microsoft.Extensions.Logging.ILoggerFactory>. The ILoggerFactory stores all the configuration that determines where log messages are sent. In this case
-we configured the console [logging provider](logging-providers.md) so that log messages are written to the console.
-- Creates an <xref:Microsoft.Extensions.Logging.ILogger> with a category named `Program`. The [category](#log-category) is a string will that be associated with each message logged
-by this ILogger object. It can be used to group log messages from the same class together when searching or filtering logs.
-- Calls <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation%2A> to log a message at the `Information` level. The [log level](#log-level) indicates the severity of the logged event
-and can be used to filter out less important log messages. The log entry also includes a [message template](#log-message-template) `"Hello World! Logging is {description}."` and a key-value pair
-`description=fun`. The key name comes from the word inside the curly braces in the template and the value comes from the remaining method argument.
+- Creates an <xref:Microsoft.Extensions.Logging.ILoggerFactory>. The `ILoggerFactory` stores all the configuration that determines where log messages are sent. In this case, you configure the console [logging provider](logging-providers.md) so that log messages are written to the console.
+- Creates an <xref:Microsoft.Extensions.Logging.ILogger> with a category named "Program". The [category](#log-category) is a `string` that is associated with each message logged
+by the `ILogger` object. It's used to group log messages from the same class (or category) together when searching or filtering logs.
+- Calls <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation%2A> to log a message at the `Information` level. The [log level](#log-level) indicates the severity of the logged event and is used to filter out less important log messages. The log entry also includes a [message template](#log-message-template) `"Hello World! Logging is {Description}."` and a key-value pair `Description = fun`. The key name (or placeholder) comes from the word inside the curly braces in the template and the value comes from the remaining method argument.
 
 [!INCLUDE [logging-samples-browser](includes/logging-samples-browser.md)]
 
 ## Logging in a non-trivial app
 
-There are several changes you should consider making to the example above when logging in a less trivial scenario:
+There are several changes you should consider making to the previous example when logging in a less trivial scenario:
 
-- If your application is using [Dependency Injection (DI)](dependency-injection.md) or a host such as ASP.NET's [WebApplication](/aspnet/core/fundamentals/minimal-apis/webapplication) or [Generic Host](generic-host.md) then
-you should use ILoggerFactory and ILogger objects from the DI container rather than creating them directly. See [Integration with DI and Hosts](#integration-with-hosts-and-dependency-injection) below for details.
+- If your application is using [Dependency Injection (DI)](dependency-injection.md) or a host such as ASP.NET's [WebApplication](/aspnet/core/fundamentals/minimal-apis/webapplication) or [Generic Host](generic-host.md) then you should use `ILoggerFactory` and `ILogger` objects from their respective DI containers rather than creating them directly. For more information, see [Integration with DI and Hosts](#integration-with-hosts-and-dependency-injection).
 
-- Logging [compile-time source generation](logger-message-generator.md) is usually a better alternative to ILogger extension methods like LogInformation(). It offers
-better performance, stronger typing, and avoids spreading string constants throughout your methods. The tradeoff is that using this technique requires a bit more code.
+- Logging [compile-time source generation](logger-message-generator.md) is usually a better alternative to `ILogger` extension methods like `LogInformation`. Logging source generation offers better performance, stronger typing, and avoids spreading `string` constants throughout your methods. The tradeoff is that using this technique requires a bit more code.
 
 :::code language="csharp" source="snippets/logging/getting-started-logger-message/Program.cs" range="5-13" highlight="5,8-9":::
 
-- The recommended practice for log category names is to use the name of the class that is creating the log message. This helps relate log messages back to the code which produced
-them and offers a good level of control when filtering logs. <xref:Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger%2A> accepts a Type to make this naming easy to do.
+- The recommended practice for log category names is to use the name of the class that's creating the log message. This helps relate log messages back to the code which produced them and offers a good level of control when filtering logs. <xref:Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger%2A> accepts a `Type` to make this naming easy to do.
 
 :::code language="csharp" source="snippets/logging/getting-started-type-category-name/Program.cs" range="3-11" highlight="6":::
 
-- If you don't use console logs as your sole production monitoring solution, add the [logging providers](logging-providers.md) you plan to use. For example you could use
-[OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet#getting-started) sending logs over the [OTLP protocol](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/README.md#enable-log-exporter):
+- If you don't use console logs as your sole production monitoring solution, add the [logging providers](logging-providers.md) you plan to use. For example, you could use [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet#getting-started) to send logs over the [OTLP protocol](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/README.md#enable-log-exporter):
 
 :::code language="csharp" source="snippets/logging/getting-started-open-telemetry/Program.cs" range="4-12" highlight="3-6":::
 
 ## Integration with hosts and dependency injection
 
-If your application is using [Dependency Injection (DI)](dependency-injection.md) or a host such as ASP.NET's [WebApplication](/aspnet/core/fundamentals/minimal-apis/webapplication) or [Generic Host](generic-host.md) then
-you should use ILoggerFactory and ILogger objects from the DI container rather than creating them directly.
+If your application is using [Dependency Injection (DI)](dependency-injection.md) or a host such as ASP.NET's [WebApplication](/aspnet/core/fundamentals/minimal-apis/webapplication) or [Generic Host](generic-host.md) then you should use `ILoggerFactory` and `ILogger` objects from the DI container rather than creating them directly.
 
 ### Getting an ILogger from DI
 
@@ -65,44 +55,39 @@ This example gets an ILogger object in a hosted app using ASP.NET MVC Controller
 
 :::code language="csharp" source="snippets/logging/aspnet-mvc/Controllers/HomeController.cs" range="33-37":::
 
-<xref:Microsoft.Extensions.Logging.ILogger%601> derives from <xref:Microsoft.Extensions.Logging.ILogger> and indicates which category the `ILogger` object has. The DI container locates an `ILogger` with
-the correct category and supplies it as the constructor argument. If no `ILogger` with that category exists yet, the DI container automatically creates it from the `ILoggerFactory` that is in the container.
+<xref:Microsoft.Extensions.Logging.ILogger%601> derives from <xref:Microsoft.Extensions.Logging.ILogger> and indicates which category the `ILogger` object has. The DI container locates an `ILogger` with the correct category and supplies it as the constructor argument. If no `ILogger` with that category exists yet, the DI container automatically creates it from the `ILoggerFactory` in the service provider.
 
 ### Host-provided ILoggerFactory
 
 Host builders initialize [default configuration](generic-host.md#default-builder-settings),
-then add a configured ILoggerFactory object to the host's DI container when the host is built. Before the host is built you can adjust the logging configuration
-via <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Logging?displayProperty=nameWithType>, <xref:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Logging?displayProperty=nameWithType>, or similar APIs on other
-hosts. Hosts also apply logging configuration from default configuration sources as *appsettings.json* and environment variables.
+then add a configured `ILoggerFactory` object to the host's DI container when the host is built. Before the host is built you can adjust the logging configuration via <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Logging?displayProperty=nameWithType>, <xref:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Logging?displayProperty=nameWithType>, or similar APIs on other hosts. Hosts also apply logging configuration from default configuration sources as _appsettings.json_ and environment variables. For more information, see [Configuration in .NET](configuration.md).
 
-This example customizes the ILoggerFactory provided by WebApplicationBuilder. It adds [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet#getting-started) as a logging provider transmitting the logs over [OTLP](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/README.md#enable-log-exporter):
+This example customizes the `ILoggerFactory` provided by `WebApplicationBuilder`. It adds [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet#getting-started) as a logging provider transmitting the logs over [OTLP](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/README.md#enable-log-exporter):
 
 :::code language="csharp" source="snippets/logging/aspnet-mvc/Program.cs" range="1-9" highlight="4":::
 
-### Creating an ILoggerFactory with DI
+### Create an ILoggerFactory with DI
 
-If you are using a DI container without a host, use <xref:Microsoft.Extensions.DependencyInjection.LoggingServiceCollectionExtensions.AddLogging%2A> to configure and add `ILoggerFactory` to the container.
+If you're using a DI container without a host, use <xref:Microsoft.Extensions.DependencyInjection.LoggingServiceCollectionExtensions.AddLogging%2A> to configure and add `ILoggerFactory` to the container.
 
 :::code language="csharp" source="snippets/logging/di-without-host/Program.cs" range="1-29" highlight="6":::
 
 The preceding example:
 
-- Created a DI service container containing an ILoggerFactory configured to write to the console
+- Created a DI service container containing an `ILoggerFactory` configured to write to the console
 - Added a singleton `Worker` to the container
 - Created an instance of the `Worker` from the DI container which also automatically created an `ILogger<Worker>` to use as the constructor argument.
-- Invoked Worker.DoSomeWork() which used the `ILogger<Worker>` to log a message to the console.
+- Invoked `Worker.DoSomeWork` which used the `ILogger<Worker>` to log a message to the console.
 
 ## Configure logging
 
-Logging configuration can be set in code or via external sources such as config files and environment variables. Using external configuration is beneficial when possible because
-it can be changed without rebuilding the application. However some tasks, such as setting logging providers, can only be configured from code.
+Logging configuration is set in code or via external sources, such as, config files and environment variables. Using external configuration is beneficial when possible because it can be changed without rebuilding the application. However, some tasks, such as setting logging providers, can only be configured from code.
 
 ### Configure logging without code
 
-For apps that [use a host](#integration-with-hosts-and-dependency-injection), logging configuration is commonly provided by the `Logging` section of *appsettings*.`{Environment}`*.json* files.
-For apps that do not use a host, external configuration sources can either be [set up explicitly](configuration.md) or you can [configure logging in code](#configure-logging-with-code) instead.
+For apps that [use a host](#integration-with-hosts-and-dependency-injection), logging configuration is commonly provided by the `"Logging"` section of _appsettings_`.{Environment}`_.json_ files. For apps that don't use a host, external configuration sources are [set up explicitly](configuration.md) or [configured in code](#configure-logging-with-code) instead.
 
-The following *appsettings.Development.json* file is generated by the .NET Worker service templates:
+The following _appsettings.Development.json_ file is generated by the .NET Worker service templates:
 
 :::code language="json" source="snippets/configuration/worker-service/appsettings.Development.json":::
 
@@ -243,16 +228,18 @@ For more information on setting .NET configuration values using environment vari
 
 ### Configure logging with code
 
-Logging is configured using the <xref:Microsoft.Extensions.Logging.ILoggingBuilder> API. This can be accessed from different places:
+To configure logging in code, use the <xref:Microsoft.Extensions.Logging.ILoggingBuilder> API. This can be accessed from different places:
 
-- If creating the `ILoggerFactory` directly, <xref:Microsoft.Extensions.Logging.LoggerFactory.Create%2A?displayProperty=nameWithType>
-- If using DI without a host, <xref:Microsoft.Extensions.DependencyInjection.LoggingServiceCollectionExtensions.AddLogging%2A?displayProperty=nameWithType>
-- If using a host, <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Logging?displayProperty=nameWithType>, <xref:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Logging?displayProperty=nameWithType> or other host specific APIs
+- When creating the `ILoggerFactory` directly, configure in <xref:Microsoft.Extensions.Logging.LoggerFactory.Create%2A?displayProperty=nameWithType>.
+- When using DI without a host, configure in <xref:Microsoft.Extensions.DependencyInjection.LoggingServiceCollectionExtensions.AddLogging%2A?displayProperty=nameWithType>.
+- When using a host, configure with <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Logging?displayProperty=nameWithType>, <xref:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Logging?displayProperty=nameWithType> or other host specific APIs.
 
 This example shows setting the console [logging provider](logging-providers.md) and several [filters](#how-filtering-rules-are-applied).
 
 ```csharp
-using var loggerFactory = LoggerFactory.Create(builder =>
+using Microsoft.Extensions.Logging;
+
+using var loggerFactory = LoggerFactory.Create(static builder =>
 {
     builder
         .AddFilter("Microsoft", LogLevel.Warning)
@@ -265,9 +252,7 @@ ILogger logger = loggerFactory.CreateLogger<Program>();
 logger.LogDebug("Example log message");
 ```
 
-In this example <xref:Microsoft.Extensions.Logging.FilterLoggingBuilderExtensions.AddFilter%2A> is used to [adjust the log level](#how-filtering-rules-are-applied) that will be enabled for various categories.
-<xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddConsole%2A> is used to add the console logging provider. By default logs with "Debug" severity are not enabled, but because the configuration adjusted
-filters, the debug message "Example log message" will get displayed on the console.
+In the preceding example <xref:Microsoft.Extensions.Logging.FilterLoggingBuilderExtensions.AddFilter%2A> is used to [adjust the log level](#how-filtering-rules-are-applied) that's enabled for various categories. <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddConsole%2A> is used to add the console logging provider. By default, logs with `Debug` severity aren't enabled, but because the configuration adjusted the filters, the debug message "Example log message" is displayed on the console.
 
 ## How filtering rules are applied
 

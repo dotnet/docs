@@ -249,10 +249,10 @@ using var loggerFactory = LoggerFactory.Create(static builder =>
 });
 
 ILogger logger = loggerFactory.CreateLogger<Program>();
-logger.LogDebug("Example log message");
+logger.LogDebug("Hello {target}", "Everyone");
 ```
 
-In the preceding example <xref:Microsoft.Extensions.Logging.FilterLoggingBuilderExtensions.AddFilter%2A> is used to [adjust the log level](#how-filtering-rules-are-applied) that's enabled for various categories. <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddConsole%2A> is used to add the console logging provider. By default, logs with `Debug` severity aren't enabled, but because the configuration adjusted the filters, the debug message "Example log message" is displayed on the console.
+In the preceding example <xref:Microsoft.Extensions.Logging.FilterLoggingBuilderExtensions.AddFilter%2A> is used to [adjust the log level](#how-filtering-rules-are-applied) that's enabled for various categories. <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddConsole%2A> is used to add the console logging provider. By default, logs with `Debug` severity aren't enabled, but because the configuration adjusted the filters, the debug message "Hello Everyone" is displayed on the console.
 
 ## How filtering rules are applied
 

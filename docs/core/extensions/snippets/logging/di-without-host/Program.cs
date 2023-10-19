@@ -2,28 +2,28 @@
 using Microsoft.Extensions.Logging;
 
 // Add services to the container including logging
-ServiceCollection services = new ServiceCollection();
+var services = new ServiceCollection();
 services.AddLogging(builder => builder.AddConsole());
-services.AddSingleton<Worker>();
+services.AddSingleton<ExampleService>();
 IServiceProvider serviceProvider = services.BuildServiceProvider();
 
-// Get the worker object from the container
-Worker worker = serviceProvider.GetRequiredService<Worker>();
+// Get the ExampleService object from the container
+ExampleService service = serviceProvider.GetRequiredService<ExampleService>();
 
 // Do some pretend work
-worker.DoSomeWork(10, 20);
+service.DoSomeWork(10, 20);
 
-class Worker
+class ExampleService
 {
-    private readonly ILogger<Worker> _logger;
+    private readonly ILogger<ExampleService> _logger;
 
-    public Worker(ILogger<Worker> logger)
+    public ExampleService(ILogger<ExampleService> logger)
     {
         _logger = logger;
     }
 
     public void DoSomeWork(int x, int y)
     {
-        _logger.LogInformation("DoSomeWork was called. x={x}, y={y}", x, y);
+        _logger.LogInformation("DoSomeWork was called. x={X}, y={Y}", x, y);
     }
 }

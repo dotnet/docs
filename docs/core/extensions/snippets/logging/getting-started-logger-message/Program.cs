@@ -9,6 +9,6 @@ internal partial class Program
         LogStartupMessage(logger, "fun");
     }
 
-    [LoggerMessage(Level = LogLevel.Information, Message = "Hello World! Logging is {description}.")]
+    [LoggerMessage(Level = LogLevel.Information, Message = "Hello World! Logging is {Description}.")]
     static partial void LogStartupMessage(ILogger logger, string description);
 }

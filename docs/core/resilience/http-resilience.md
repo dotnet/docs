@@ -143,7 +143,7 @@ The preceding code:
 > [!TIP]
 > The maximum number of hedging attempts directly correlates to the number of configured groups. For example, if you have two groups, the maximum number of attempts is two.
 
-For more information, see [Polly docs: Hedging resilience strategy](https://www.pollydocs.org/strategies/hedging.html).
+For more information, see [Polly docs: Hedging resilience strategy](https://www.pollydocs.org/strategies/hedging).
 
 It's common to configure either an ordered group or weighted group, but it's valid to configure both. Using ordered and weighted groups is helpful in scenarios where you want to send a percentage of the requests to a different endpoint, such is the case with A/B testing.
 
@@ -162,7 +162,7 @@ The preceding code:
 - Adds a circuit breaker strategy with a sampling duration of 10 seconds, a failure ratio of 0.2 (20%), a minimum throughput of three, and a predicate that handles `RequestTimeout` and `TooManyRequests` HTTP status codes to the resilience builder.
 - Adds a timeout strategy with a timeout of five seconds to the resilience builder.
 
-There are many options available for each of the resilience strategies. For more information, see the [Polly docs: Strategies](https://www.pollydocs.org/strategies). For more information about configuring `ShouldHandle` delegates, see [Polly docs: Fault handling in reactive strategies](https://www.pollydocs.org/strategies/index.html#fault-handling-in-reactive-strategies).
+There are many options available for each of the resilience strategies. For more information, see the [Polly docs: Strategies](https://www.pollydocs.org/strategies). For more information about configuring `ShouldHandle` delegates, see [Polly docs: Fault handling in reactive strategies](https://www.pollydocs.org/strategies/index.html#fault-handling).
 
 ### Dynamic reload
 

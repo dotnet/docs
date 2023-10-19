@@ -8,20 +8,20 @@ ms.date: 10/10/2023
 
 # Cross-compilation
 
-Cross-compilation refers to compiling a binary for a different platform than the one the compiler is running on. The platform difference might be a different OS or a different architecture. For instance, compiling for Windows from Linux, or from ARM64 from x64.
+Cross-compilation is a process of creating executable code for a platform other than the one on which the compiler is running. The platform difference might be a different OS or a different architecture. For instance, compiling for Windows from Linux, or for ARM64 from x64. On Linux, the difference can also be between the LIBC the Linux userland is built on - glibc (e.g. Ubuntu Linux) or musl (e.g. Alpine Linux).
 
-Due to restrictions of the platforms themselves, **Native AOT does not support cross-OS
-compilation**. That means you can't directly compile for Windows using Linux or vice versa. Cross-OS
-compilation requires some form of emulation, like a virtual machine or Windows WSL.
+Native AOT uses platform tools (linkers) to link platform libraries (static and dynamic) together with AOT-compiled managed code into the final executable file. The availability of cross-linkers and static/dynamic libraries for the target system limits the OS/architecture pairs that can cross-compile. These platform tools and libraries are provided by the platform maintainer.
+
+Since there's no standardized way to obtain native macOS SDK for use on Windows/Linux, or Windows SDK for use on Linux/macOS, or a Linux SDK for use on Windows/macOS, **Native AOT does not support cross-OS
+compilation**. Cross-OS compilation with Native AOT requires some form of emulation, like a virtual machine or Windows WSL.
 
 However, Native AOT does have limited support for _cross-architecture_ compilation. As long as the
-necessary native toolchain is installed, you can cross-compile between the `x64` and the `arm64`
+necessary native toolchain is installed, it's possible to cross-compile between the `x64` and the `arm64`
 architectures on Windows, Mac, or Linux.
 
 ## Windows
 
-Windows requires the toolchain for both the host and target architecture. This means you need
-the MSVC C/C++ Visual Studio workloads for both x64/x86 and for arm64.
+Cross-compiling from x64 Windows to ARM64 Windows or vice versa works as long as the appropriate VS 2022 C++ build tools are installed. To target ARM64 make sure the Visual Studio component "VS 2022 C++ ARM64/ARM64EC build tools (Latest)" is installed. To target x64, look for "VS 2022 C++ x64/x86 build tools (Latest)" instead.
 
 ## Mac
 

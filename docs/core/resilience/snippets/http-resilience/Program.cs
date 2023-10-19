@@ -12,7 +12,7 @@ IHttpClientBuilder httpClientBuilder = builder.Services.AddHttpClient<ExampleCli
     });
 // </setup>
 
-WithStandardHandler(httpClientBuilder);
+// WithStandardHandler(httpClientBuilder);
 
 // WithStandardHedgingHandler(httpClientBuilder);
 

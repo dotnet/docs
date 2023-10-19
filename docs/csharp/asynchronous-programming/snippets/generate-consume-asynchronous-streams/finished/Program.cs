@@ -141,12 +141,6 @@ class Program
         {
             var postBody = JsonConvert.SerializeObject(issueAndPRQuery);
 
-            var requestHeaders = new HttpHeaders
-        {
-            {"Content-Type", "application/json"},
-            {"Accept", "application/json"}
-        };
-
             var response = await client.Connection.Post<string>(new Uri("https://api.github.com/graphql"),
                 postBody, requestHeaders);
 

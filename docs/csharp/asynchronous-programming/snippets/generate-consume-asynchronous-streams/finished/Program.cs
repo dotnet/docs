@@ -142,7 +142,7 @@ class Program
             var postBody = issueAndPRQuery.ToJsonText();
 
             var response = await client.Connection.Post<string>(new Uri("https://api.github.com/graphql"),
-                postBody, requestHeaders);
+                postBody, "application/json", "application/json");
 
             JObject results = JObject.Parse(response.HttpResponse.Body.ToString()!);
 

@@ -20,7 +20,7 @@ services.AddResiliencePipeline(key, static builder =>
     builder.AddTimeout(TimeSpan.FromSeconds(1.5));
 });
 
-services.AddResilienceEnrichment();
+services.AddResilienceEnricher();
 
 using ServiceProvider provider = services.BuildServiceProvider();
 

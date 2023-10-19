@@ -50,13 +50,13 @@ The preceding code:
 - Creates a <xref:Microsoft.Extensions.DependencyInjection.ServiceCollection> instance.
 - Adds an <xref:System.Net.Http.HttpClient> for the `ExampleClient` type to the service container.
 - Configures the <xref:System.Net.Http.HttpClient> to use `"https://jsonplaceholder.typicode.com"` as the base address.
-- Creates the `httpClientBuilder` which is used throughout the other examples within this article.
+- Creates the `httpClientBuilder`, that's used throughout the other examples within this article.
 
 A more real-world example would rely on hosting, such as that described in the [.NET Generic Host](../extensions/generic-host.md). Using the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package, consider the following updated example:
 
 :::code source="snippets/http-resilience/Program.cs" id="setup":::
 
-The preceding code is very similar to the manual `ServiceCollection` creation approach, but instead relies on the <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder?displayProperty=nameWithType> to build out a host that exposes the services.
+The preceding code is similar to the manual `ServiceCollection` creation approach, but instead relies on the <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder?displayProperty=nameWithType> to build out a host that exposes the services.
 
 The `ExampleClient` is defined as follows:
 
@@ -75,7 +75,7 @@ Given that you've created an <xref:Microsoft.Extensions.DependencyInjection.IHtt
 
 :::code source="snippets/http-resilience/Program.ResilienceHandler.cs" id="standard-handler":::
 
-The preceding code, adds the standard resilience handler to the <xref:System.Net.Http.HttpClient>. Like most resilience APIs, there are overloads that allow you to customize the default options and applied resilience strategies.
+The preceding code adds the standard resilience handler to the <xref:System.Net.Http.HttpClient>. Like most resilience APIs, there are overloads that allow you to customize the default options and applied resilience strategies.
 
 ### Standard resilience handler defaults
 
@@ -97,7 +97,7 @@ To use the standard hedging handler, call `AddStandardHedgingHandler` extension 
 
 :::code source="snippets/http-resilience/Program.HedgingHandler.cs" id="standard-hedging":::
 
-The preceding code, adds the standard hedging handler to the <xref:System.Net.Http.HttpClient>.
+The preceding code adds the standard hedging handler to the <xref:System.Net.Http.HttpClient>.
 
 ### Standard hedging handler defaults
 

@@ -3,7 +3,7 @@ title: Introduction to resilient app development
 description: Learn about resiliency as it related to .NET and how to build a resilience pipeline.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/02/2023
+ms.date: 10/19/2023
 ---
 
 # Introduction to resilient app development
@@ -46,28 +46,7 @@ To use resilience, you must first build a pipeline of resilience-based strategie
 
 Consider the following string-based `key` example:
 
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Polly;
-using Polly.CircuitBreaker;
-using Polly.Registry;
-using Polly.Retry;
-
-var services = new ServiceCollection();
-
-const string key = "Retry-CircuitBreaker-Timeout";
-
-services.AddResiliencePipeline(key, builder =>
-{
-    builder.AddRetry(new RetryStrategyOptions());
-
-    builder.AddCircuitBreaker(new CircuitBreakerStrategyOptions());
-
-    builder.AddTimeout(TimeSpan.FromSeconds(5));
-
-    // Add other strategies here...
-});
-```
+:::code language="csharp" source="snippets/resilience/Program.cs" id="setup":::
 
 The preceding code:
 
@@ -99,11 +78,9 @@ Imagine 1,000 globally distributed service instances generating logs and metrics
 
 ### Add resilience enrichment
 
-In addition to registering a resilience pipeline, you can also register resilience enrichment. To add enrichment, call the `AddResilienceEnrichment` extensions method on the `IServiceCollection` instance.
+In addition to registering a resilience pipeline, you can also register resilience enrichment. To add enrichment, call the `AddResilienceEnricher` extensions method on the `IServiceCollection` instance.
 
-```csharp
-services.AddResilienceEnrichment();
-```
+:::code language="csharp" source="snippets/resilience/Program.cs" id="enricher":::
 
 By calling the `AddResilienceEnrichment` extension method, you're adding dimensions on top of the default ones that are built in to the underlying Polly library. The following enrichment dimensions are added:
 
@@ -117,17 +94,7 @@ For more information, see [Polly: Telemetry metrics](https://www.pollydocs.org/a
 
 To use a configured resilience pipeline, you must get the pipeline from a `ResiliencePipelineProvider<TKey>`. When you added the pipeline earlier, the `key` was of type `string`, so you must get the pipeline from the `ResiliencePipelineProvider<string>`.
 
-```csharp
-// Build service provider
-using ServiceProvider provider = services.BuildServiceProvider();
-
-// Get pipeline provider
-ResiliencePipelineProvider<string> pipelineProvider =
-    provider.GetRequiredService<ResiliencePipelineProvider<string>>();
-
-// Get the pipeline
-ResiliencePipeline pipeline = pipelineProvider.GetPipeline(key);
-```
+:::code language="csharp" source="snippets/resilience/Program.cs" id="pipeline":::
 
 The preceding code:
 
@@ -139,14 +106,7 @@ The preceding code:
 
 To use the resilience pipeline, call any of the available `Execute*` methods on the `ResiliencePipeline` instance. For example, consider an example call to `ExecuteAsync` method:
 
-```csharp
-await pipeline.ExecuteAsync(static async cancellationToken =>
-{
-    // Code that could potentially fail.
-
-    await ValueTask.CompletedTask;
-});
-```
+:::code language="csharp" source="snippets/resilience/Program.cs" id="execute":::
 
 The preceding code executes the delegate within the `ExecuteAsync` method. When there are failures, the configured strategies are executed. For example, if the `RetryStrategy` is configured to retry three times, the delegate is executed three times before the failure is propagated.
 

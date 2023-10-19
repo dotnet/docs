@@ -5,14 +5,14 @@ internal partial class Program
 {
     private static void WithStandardHedgingHandler(IHttpClientBuilder httpClientBuilder)
     {
-        // <standard-hedging>
+        // <standard>
         httpClientBuilder.AddStandardHedgingHandler();
-        // </standard-hedging>
+        // </standard>
     }
 
     private static void WithConfiguredStandardHedgingHandler(IHttpClientBuilder httpClientBuilder)
     {
-        // <configure-standard-hedging>
+        // <ordered>
         httpClientBuilder.AddStandardHedgingHandler(static (IRoutingStrategyBuilder builder) =>
         {
             // Hedging allows sending multiple concurrent requests
@@ -30,9 +30,9 @@ internal partial class Program
                 });
             });
         });
-        // </configure-standard-hedging-ordered>
+        // </ordered>
 
-        // <configure-standard-hedging-weighted>
+        // <weighted>
         httpClientBuilder.AddStandardHedgingHandler(static (IRoutingStrategyBuilder builder) =>
         {
             // Hedging allows sending multiple concurrent requests
@@ -51,8 +51,8 @@ internal partial class Program
                     }
                 });
             });
-        });        
-        // </configure-standard-hedging-weighted>
+        });
+        // </weighted>
     }
 }
 

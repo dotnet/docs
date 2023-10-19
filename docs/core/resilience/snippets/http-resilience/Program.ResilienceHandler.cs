@@ -5,18 +5,18 @@ internal partial class Program
 {
     private static void WithStandardHandler(IHttpClientBuilder httpClientBuilder)
     {
-        // <standard-handler>
+        // <standard>
         httpClientBuilder.AddStandardResilienceHandler();
-        // </standard-handler>
+        // </standard>
     }
 
     private static void WithConfiguredStandardHandler(IHttpClientBuilder httpClientBuilder)
     {
-        // <configure-standard-handler>
+        // <configure>
         httpClientBuilder.AddStandardResilienceHandler(static options =>
         {
             options.Retry.BackoffType = DelayBackoffType.Linear;
         });
-        // </configure-standard-handler>
+        // </configure>
     }
 }

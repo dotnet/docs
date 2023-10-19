@@ -7,7 +7,7 @@ internal partial class Program
 {
     private static void WithCustomHandler(IHttpClientBuilder httpClientBuilder)
     {
-        // <custom-handler>
+        // <custom>
         httpClientBuilder.AddResilienceHandler(
             "CustomPipeline",
             static builder =>
@@ -42,12 +42,12 @@ internal partial class Program
             // See: https://www.pollydocs.org/strategies/timeout.html
             builder.AddTimeout(TimeSpan.FromSeconds(5));
         });
-        // </custom-handler>
+        // </custom>
     }
 
     private static void WithAdvancedCustomHandler(IHttpClientBuilder httpClientBuilder)
     {
-        // <advanced-handler>
+        // <advanced>
         httpClientBuilder.AddResilienceHandler(
             "AdvancedPipeline",
             static (ResiliencePipelineBuilder<HttpResponseMessage> builder,
@@ -63,6 +63,6 @@ internal partial class Program
                 // Add retries using the resolved options
                 builder.AddRetry(retryOptions);
             });
-        // </advanced-handler>
+        // </advanced>
     }
 }

@@ -21,7 +21,7 @@ IHttpClientBuilder httpClientBuilder = builder.Services.AddHttpClient<ExampleCli
 ConfigureRetryOptions(builder);
 WithAdvancedCustomHandler(httpClientBuilder);
 
-// <example-usage>
+// <usage>
 IHost host = builder.Build();
 
 ExampleClient client = host.Services.GetRequiredService<ExampleClient>();
@@ -30,4 +30,4 @@ await foreach (Comment? comment in client.GetCommentsAsync())
 {
     Console.WriteLine(comment);
 }
-// </example-usage>
+// </usage>

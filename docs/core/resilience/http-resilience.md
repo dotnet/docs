@@ -32,9 +32,9 @@ For more information, see [dotnet add package](../tools/dotnet-add-package.md) o
 
 ## Add resilience to an HTTP client
 
-To add resilience to an <xref:System.Net.Http.HttpClient>, you chain a call on the <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> type that is returned from calling any of the available <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> methods. There are several resilience-centric extensions available, some are standard employing various industry best practices, and others are more customizable.
+To add resilience to an <xref:System.Net.Http.HttpClient>, you chain a call on the <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> type that is returned from calling any of the available <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> methods. For more information, see [IHttpClientFactory with .NET](../extensions/httpclient-factory.md).
 
-When adding resilience, you should only add one resilience handler and avoid stacking handlers. If you need to add multiple resilience handlers, you should consider using the `AddResilienceHandler` extension method, which allows you to customize the resilience strategies.
+There are several resilience-centric extensions available, some are standard, thus employing various industry best practices, and others are more customizable. When adding resilience, you should only add one resilience handler and avoid stacking handlers. If you need to add multiple resilience handlers, you should consider using the `AddResilienceHandler` extension method, which allows you to customize the resilience strategies.
 
 > [!IMPORTANT]
 > All of the examples within this article rely on the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> API, from the [Microsoft.Extensions.Http](https://www.nuget.org/packages/Microsoft.Extensions.Http) library, which returns an <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance. The <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance is used to configure the <xref:System.Net.Http.HttpClient> and add the resilience handler.
@@ -43,7 +43,7 @@ When adding resilience, you should only add one resilience handler and avoid sta
 
 The standard resilience handler uses multiple resilience strategies stacked atop one another, with default options to send the requests and handle any transient errors. The standard resilience handler is added by calling the `AddStandardResilienceHandler` extension method on an <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance.
 
-:::code source="snippets/http-resilience/Program.ServiceCollection.cs" id="service-collection":::
+:::code language="csharp" source="snippets/http-resilience/Program.ServiceCollection.cs" id="services":::
 
 The preceding code:
 
@@ -54,13 +54,13 @@ The preceding code:
 
 A more real-world example would rely on hosting, such as that described in the [.NET Generic Host](../extensions/generic-host.md). Using the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package, consider the following updated example:
 
-:::code source="snippets/http-resilience/Program.cs" id="setup":::
+:::code language="csharp" source="snippets/http-resilience/Program.cs" id="setup":::
 
 The preceding code is similar to the manual `ServiceCollection` creation approach, but instead relies on the <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder?displayProperty=nameWithType> to build out a host that exposes the services.
 
 The `ExampleClient` is defined as follows:
 
-:::code source="snippets/http-resilience/ExampleClient.cs":::
+:::code language="csharp" source="snippets/http-resilience/ExampleClient.cs":::
 
 The preceding code:
 
@@ -69,11 +69,11 @@ The preceding code:
 
 The `Comment` type is defined as follows:
 
-:::code source="snippets/http-resilience/Comment.cs":::
+:::code language="csharp" source="snippets/http-resilience/Comment.cs":::
 
 Given that you've created an <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> (`httpClientBuilder`), and you now understand the `ExampleClient` implementation and corresponding `Comment` model, consider the following example:
 
-:::code source="snippets/http-resilience/Program.ResilienceHandler.cs" id="standard-handler":::
+:::code language="csharp" source="snippets/http-resilience/Program.ResilienceHandler.cs" id="standard":::
 
 The preceding code adds the standard resilience handler to the <xref:System.Net.Http.HttpClient>. Like most resilience APIs, there are overloads that allow you to customize the default options and applied resilience strategies.
 
@@ -95,7 +95,7 @@ The standard hedging handler wraps the execution of the request with a standard 
 
 To use the standard hedging handler, call `AddStandardHedgingHandler` extension method. The following example configures the `ExampleClient` to use the standard hedging handler.
 
-:::code source="snippets/http-resilience/Program.HedgingHandler.cs" id="standard-hedging":::
+:::code language="csharp" source="snippets/http-resilience/Program.HedgingHandler.cs" id="standard":::
 
 The preceding code adds the standard hedging handler to the <xref:System.Net.Http.HttpClient>.
 
@@ -120,7 +120,7 @@ The preceding code adds the standard hedging handler to the <xref:Microsoft.Exte
 
 When using the standard hedging handler, you can customize the way the request endpoints are selected by calling various extensions on the `IRoutingStrategyBuilder` type. This can be useful for scenarios such as a/b testing, where you want to route a percentage of the requests to a different endpoint:
 
-:::code source="snippets/http-resilience/Program.HedgingHandler.cs" id="configure-standard-hedging-ordered":::
+:::code language="csharp" source="snippets/http-resilience/Program.HedgingHandler.cs" id="ordered":::
 
 The preceding code:
 
@@ -131,7 +131,7 @@ The preceding code:
 
 To configure a weighted group, call the `ConfigureWeightedGroups` method on the `IRoutingStrategyBuilder` type. The following example configures the `IRoutingStrategyBuilder` to use the `ConfigureWeightedGroups` method to configure the weighted groups.
 
-:::code source="snippets/http-resilience/Program.HedgingHandler.cs" id="configure-standard-hedging-weighted":::
+:::code language="csharp" source="snippets/http-resilience/Program.HedgingHandler.cs" id="weighted":::
 
 The preceding code:
 
@@ -153,7 +153,7 @@ To have more control, you can customize the resilience handlers by using the `Ad
 
 To configure a named resilience handler, call the `AddResilienceHandler` extension method with the name of the handler. The following example configures a named resilience handler called `"CustomPipeline"`.
 
-:::code source="snippets/http-resilience/Program.CustomHandler.cs" id="custom-handler":::
+:::code language="csharp" source="snippets/http-resilience/Program.CustomHandler.cs" id="custom":::
 
 The preceding code:
 
@@ -168,7 +168,7 @@ There are many options available for each of the resilience strategies. For more
 
 Polly supports dynamic reloading of the configured resilience strategies. This means that you can change the configuration of the resilience strategies at runtime. To enable dynamic reload, use the appropriate `AddResilienceHandler` overload that exposes the `ResilienceHandlerContext`. Given the context, call `EnableReloads` of the corresponding resilience strategy options:
 
-:::code source="snippets/http-resilience/Program.CustomHandler.cs" id="advanced-handler":::
+:::code language="csharp" source="snippets/http-resilience/Program.CustomHandler.cs" id="advanced":::
 
 The preceding code:
 
@@ -185,7 +185,7 @@ This example relies on an options section that is capable of change, such as an 
 
 Now imagine that these options were bound to the apps configuration, binding the `HttpRetryStrategyOptions` to the `"RetryOptions"` section:
 
-:::code source="snippets/http-resilience/Program.RetryOptions.cs" id="retry-options":::
+:::code language="csharp" source="snippets/http-resilience/Program.RetryOptions.cs" id="options":::
 
 For more information, see [Options pattern in .NET](../extensions/options.md).
 
@@ -193,7 +193,7 @@ For more information, see [Options pattern in .NET](../extensions/options.md).
 
 Your app relies on [dependency injection](../extensions/dependency-injection.md) to resolve the `ExampleClient` and its corresponding <xref:System.Net.Http.HttpClient>. The code builds the <xref:System.IServiceProvider> and resolves the `ExampleClient` from it.
 
-:::code source="snippets/http-resilience/Program.cs" id="example-usage":::
+:::code language="csharp" source="snippets/http-resilience/Program.cs" id="usage":::
 
 The preceding code:
 

@@ -6,7 +6,7 @@ internal partial class Program
 {
     private static void CreateServiceCollection()
     {
-        // <service-collection>
+        // <services>
         var services = new ServiceCollection();
 
         var httpClientBuilder = services.AddHttpClient<ExampleClient>(
@@ -14,6 +14,6 @@ internal partial class Program
             {
                 client.BaseAddress = new("https://jsonplaceholder.typicode.com");
             });
-        // </service-collection>
+        // </services>
     }
 }

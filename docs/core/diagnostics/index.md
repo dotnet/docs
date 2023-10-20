@@ -1,7 +1,7 @@
 ---
 title: Diagnostics tools overview - .NET Core
 description: An overview of the tools and techniques available to diagnose .NET Core applications.
-ms.date: 10/16/2023
+ms.date: 10/20/2023
 ms.topic: overview
 #Customer intent: As a .NET Core developer I want to find the best tools to help me diagnose problems so that I can be productive.
 ---
@@ -35,7 +35,7 @@ For most cases, whether adding logging to an existing project or creating a new 
 
 ### Metrics
 
-[Metrics](metrics.md) are numerical measurements recorded over time to monitor application performance and health. Metrics are often used to generate alerts when potential problems are detected. Metrics have very low performance overhead and many services configure them as always-on telemetry.
+[Metrics](metrics.md) are numerical measurements recorded over time to monitor application performance and health. Metrics are often used to generate alerts when potential problems are detected. Metrics have very low performance overhead and many services configure them as always-on telemetry. Exceptions are often recorded as metrics, and can be summarized to reduce the cardinality of the data. For more information, see [Exception summarization](diagnostic-exception-summary.md).
 
 ### Distributed traces
 
@@ -50,6 +50,10 @@ There are multiple ways that the instrumentation data can be egressed from the a
 - [dotnet-monitor](./dotnet-monitor.md) - an agent for collecting traces and telemetry
 - Third-party libraries or app code can read the information from the <xref:System.Diagnostics.Metrics?displayProperty=nameWithType>, <xref:Microsoft.Extensions.Logging.ILogger%601>, and <xref:System.Diagnostics.Activity?displayProperty=nameWithType> APIs.
 
+## Resource monitoring
+
+[Resource monitoring](diagnostic-resource-monitoring.md) is the process of continuously observing and tracking the utilization, performance, and availability of various computing resources within a system. These resources can include hardware components (such as CPUs, memory, disk storage, and network interfaces) as well as software components (like applications and services). Resource monitoring is often used to detect and diagnose performance issues, and to ensure that the system is operating within expected parameters.
+
 ## Specialized diagnostics
 
 If debugging or observability is not sufficient, .NET supports additional diagnostic mechanisms such as EventSource, Dumps, DiagnosticSource. For more information, see the [specialized diagnostics](./specialized-diagnostics-overview.md) article.
@@ -57,10 +61,6 @@ If debugging or observability is not sufficient, .NET supports additional diagno
 ## Diagnostics tools
 
 .NET supports a number of [CLI tools](./tools-overview.md) that can be used to diagnose your applications.
-
-## Diagnostic libraries
-
-.NET provides a number of [diagnostic libraries](./diagnostic-libraries.md) that can be used to instrument your applications, from exception summarization to resource monitoring, and exposing standard mechanisms for health checks.
 
 ## .NET Core diagnostics tutorials
 

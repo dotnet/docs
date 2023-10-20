@@ -10,7 +10,7 @@ var services = new ServiceCollection()
 var provider = services.BuildServiceProvider();
 
 // Get the exception summarizer.
-var summarizer = provider.GetRequiredService<IExceptionSummarizer>();
+IExceptionSummarizer summarizer = provider.GetRequiredService<IExceptionSummarizer>();
 
 // Define exceptions to summarize.
 Exception[] exceptions =
@@ -25,7 +25,7 @@ Exception[] exceptions =
 foreach (var exception in exceptions)
 {
     // Summarize the exception.
-    var summary = summarizer.Summarize(exception);
+    ExceptionSummary summary = summarizer.Summarize(exception);
 
     Console.WriteLine(summary);
 }

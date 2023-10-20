@@ -94,8 +94,12 @@ landingContent:
             url: ../../fundamentals/diagnostics/runtime-events.md
       - linkListType: concept
         links:
-          - text: .NET diagnostic libraries
-            url: ../../core/diagnostics/diagnostic-libraries.md
+          - text: App health checks in C#
+            url: ../../core/diagnostics/diagnostic-health-checks.md
+          - text: Exception summary
+            url: ../../core/diagnostics/diagnostic-exception-summary.md
+          - text: Resource monitoring
+            url: ../../core/diagnostics/diagnostic-resource-monitoring.md
       - linkListType: reference
         links:
           - text: Unmanaged API for debugging

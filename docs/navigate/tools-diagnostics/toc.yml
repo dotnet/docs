@@ -323,8 +323,12 @@ items:
       href: ../../core/extensions/logging.md
     - name: Observability with OpenTelemetry
       href: ../../core/diagnostics/observability-with-otel.md
-    - name: Diagnostic libraries
-      href: ../../core/diagnostics/diagnostic-libraries.md
+    - name: Resource monitoring
+      href: ../../core/diagnostics/diagnostic-resource-monitoring.md
+      displayName: resource monitoring,
+    - name: App health checks
+      href: ../../core/diagnostics/diagnostic-health-checks.md
+      displayName: health check,healthcheck,degraded,healthy,unhealthy,resource monitoring,resource health,app lifecycle monitoring
     - name: Metrics
       items:
       - name: Overview
@@ -332,6 +336,9 @@ items:
         href: ../../core/diagnostics/metrics.md
       - name: Instrumentation
         href: ../../core/diagnostics/metrics-instrumentation.md
+      - name: Exception summarization
+        href: ../../core/diagnostics/diagnostics-exception-summary.md
+        displayName: exception summarization,exception summary,exception summarizer,ExceptionSummary
       - name: Collection
         href: ../../core/diagnostics/metrics-collection.md
       - name: Built-in Metrics

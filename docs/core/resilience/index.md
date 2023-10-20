@@ -1,6 +1,6 @@
 ---
 title: Introduction to resilient app development
-description: Learn about resiliency as it related to .NET and how to build a resilience pipeline.
+description: Learn about resiliency as it relates to .NET and how to build a resilience pipeline.
 author: IEvangelist
 ms.author: dapine
 ms.date: 10/19/2023
@@ -13,9 +13,9 @@ Resiliency is the ability of an app to recover from failures and continue to fun
 | NuGet package | Description |
 |--|--|
 | [📦 Microsoft.Extensions.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Resilience) | This NuGet package provides mechanisms to harden apps against transient failures. |
-| [📦 Microsoft.Extensions.Http.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience) | This NuGet package provides resilience mechanisms specifically for the <xref:System.Net.Http.HttpClient> class |
+| [📦 Microsoft.Extensions.Http.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience) | This NuGet package provides resilience mechanisms specifically for the <xref:System.Net.Http.HttpClient> class. |
 
-These two NuGet packages are built on top of [Polly](https://github.com/App-vNext/Polly), which is a popular open-source project. Polly is a .NET resilience and transient fault-handling library that allows developers to express strategies such as Retry, Circuit Breaker, Timeout, Bulkhead Isolation, Rate-limiting, Fallback and Hedging in a fluent and thread-safe manner.
+These two NuGet packages are built on top of [Polly](https://github.com/App-vNext/Polly), which is a popular open-source project. Polly is a .NET resilience and transient fault-handling library that allows developers to express strategies such as Retry, Circuit Breaker, Timeout, Bulkhead Isolation, Rate-limiting, Fallback, and Hedging in a fluent and thread-safe manner.
 
 > [!IMPORTANT]
 > The [Microsoft.Extensions.Http.Polly](https://www.nuget.org/packages/Microsoft.Extensions.Http.Polly) NuGet package is deprecated. Use either of the aforementioned packages instead.
@@ -62,7 +62,7 @@ Each pipeline is configured for a given `key`, and each `key` is used to identif
 To add a strategy to the pipeline, call any of the available `Add*` extension methods on the `ResiliencePipelineBuilder` instance.
 
 - `AddRetry`: Try again if something fails, which is useful when the problem is temporary and might go away.
-- `AddCircuitBreaker`: Stop trying if something is broken or busy, which benefits you by avoiding wasting time and making things worse.
+- `AddCircuitBreaker`: Stop trying if something is broken or busy, which benefits you by avoiding wasted time and making things worse.
 - `AddTimeout`: Give up if something takes too long, which can improve performance by freeing up resources.
 - `AddRateLimiter`: Limit how many requests you make or accept, which enables you to control load.
 - `AddFallback`: Do something else when experiencing failures, which improves user experience.
@@ -72,7 +72,7 @@ For more information, see [Resilience strategies](https://www.pollydocs.org/stra
 
 ## Add enrichment
 
-Enrichment is the automatic augmentation of telemetry with well-known state, in the form of name/value pairs. For example, an app might emit a log that includes the _operation_ and _result code_ as columns to represent the outcome of some operation. In this situation and depending on peripheral context, enrichment adds _Cluster name_, _Process name_, _Region_, _Tenant ID_ and more to the log as it's sent to the telemetry backend. When enrichment is added, the app code doesn't need to do anything extra to benefit from enriched metrics.
+Enrichment is the automatic augmentation of telemetry with well-known state, in the form of name/value pairs. For example, an app might emit a log that includes the _operation_ and _result code_ as columns to represent the outcome of some operation. In this situation and depending on peripheral context, enrichment adds _Cluster name_, _Process name_, _Region_, _Tenant ID_, and more to the log as it's sent to the telemetry backend. When enrichment is added, the app code doesn't need to do anything extra to benefit from enriched metrics.
 
 Imagine 1,000 globally distributed service instances generating logs and metrics. When you encounter an issue on your service dashboard, it's crucial to quickly identify the problematic region or data center. Enrichment ensures that metric records contain the necessary information to pinpoint failures in distributed systems. Without enrichment, the burden falls on the app code to internally manage this state, integrate it into the logging process, and manually transmit it. Enrichment simplifies this process, seamlessly handling it without affecting the app's logic.
 
@@ -82,7 +82,7 @@ In addition to registering a resilience pipeline, you can also register resilien
 
 :::code language="csharp" source="snippets/resilience/Program.cs" id="enricher":::
 
-By calling the `AddResilienceEnrichment` extension method, you're adding dimensions on top of the default ones that are built in to the underlying Polly library. The following enrichment dimensions are added:
+By calling the `AddResilienceEnricher` extension method, you're adding dimensions on top of the default ones that are built into the underlying Polly library. The following enrichment dimensions are added:
 
 - Exception enrichment based on the <xref:Microsoft.Extensions.Diagnostics.ExceptionSummarization.IExceptionSummarizer>, which provides a mechanism to summarize exceptions for use in telemetry.
 - Result enrichment based on the <xref:Microsoft.Extensions.Resilience.FailureResultContext>, which captures the dimensions metered for transient fault failures.

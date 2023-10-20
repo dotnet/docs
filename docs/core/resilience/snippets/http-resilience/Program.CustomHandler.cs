@@ -53,7 +53,7 @@ internal partial class Program
             static (ResiliencePipelineBuilder<HttpResponseMessage> builder,
                 ResilienceHandlerContext context) =>
             {
-                // Enable the reloads whenever the named options change
+                // Enable reloads whenever the named options change
                 context.EnableReloads<HttpRetryStrategyOptions>("RetryOptions");
 
                 // Retrieve the named options

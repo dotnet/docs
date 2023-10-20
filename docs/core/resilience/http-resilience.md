@@ -8,7 +8,7 @@ ms.date: 10/19/2023
 
 # Build resilient HTTP apps: Key development patterns
 
-Building robust HTTP apps that can recover from transient fault errors is a common requirement. This article assumes that you've already read the [Introduction to resilient app development](index.md), as this article builds upon the core concepts conveyed. To help build resilient HTTP apps, the [Microsoft.Extensions.Http.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience) NuGet package provides resilience mechanisms specifically for the <xref:System.Net.Http.HttpClient>. This NuGet package is built on top of the `Microsoft.Extensions.Resilience` library and _Polly_, which is a popular open-source project. For more information, see [Polly](https://github.com/App-vNext/Polly).
+Building robust HTTP apps that can recover from transient fault errors is a common requirement. This article assumes that you've already read [Introduction to resilient app development](index.md), as this article builds upon the core concepts conveyed. To help build resilient HTTP apps, the [Microsoft.Extensions.Http.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience) NuGet package provides resilience mechanisms specifically for the <xref:System.Net.Http.HttpClient>. This NuGet package is built on top of the `Microsoft.Extensions.Resilience` library and _Polly_, which is a popular open-source project. For more information, see [Polly](https://github.com/App-vNext/Polly).
 
 ## Get started
 
@@ -34,7 +34,7 @@ For more information, see [dotnet add package](../tools/dotnet-add-package.md) o
 
 To add resilience to an <xref:System.Net.Http.HttpClient>, you chain a call on the <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> type that is returned from calling any of the available <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> methods. For more information, see [IHttpClientFactory with .NET](../extensions/httpclient-factory.md).
 
-There are several resilience-centric extensions available, some are standard, thus employing various industry best practices, and others are more customizable. When adding resilience, you should only add one resilience handler and avoid stacking handlers. If you need to add multiple resilience handlers, you should consider using the `AddResilienceHandler` extension method, which allows you to customize the resilience strategies.
+There are several resilience-centric extensions available. Some are standard, thus employing various industry best practices, and others are more customizable. When adding resilience, you should only add one resilience handler and avoid stacking handlers. If you need to add multiple resilience handlers, you should consider using the `AddResilienceHandler` extension method, which allows you to customize the resilience strategies.
 
 > [!IMPORTANT]
 > All of the examples within this article rely on the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> API, from the [Microsoft.Extensions.Http](https://www.nuget.org/packages/Microsoft.Extensions.Http) library, which returns an <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance. The <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance is used to configure the <xref:System.Net.Http.HttpClient> and add the resilience handler.
@@ -50,9 +50,9 @@ The preceding code:
 - Creates a <xref:Microsoft.Extensions.DependencyInjection.ServiceCollection> instance.
 - Adds an <xref:System.Net.Http.HttpClient> for the `ExampleClient` type to the service container.
 - Configures the <xref:System.Net.Http.HttpClient> to use `"https://jsonplaceholder.typicode.com"` as the base address.
-- Creates the `httpClientBuilder`, that's used throughout the other examples within this article.
+- Creates the `httpClientBuilder` that's used throughout the other examples within this article.
 
-A more real-world example would rely on hosting, such as that described in the [.NET Generic Host](../extensions/generic-host.md). Using the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package, consider the following updated example:
+A more real-world example would rely on hosting, such as that described in the [.NET Generic Host](../extensions/generic-host.md) article. Using the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package, consider the following updated example:
 
 :::code language="csharp" source="snippets/http-resilience/Program.cs" id="setup":::
 
@@ -91,7 +91,7 @@ The default configuration chains five resilience strategies in the following ord
 
 ## Add standard hedging handler
 
-The standard hedging handler wraps the execution of the request with a standard hedging mechanism. Hedging retries slow requests in parallel. The standard hedging handler is added by calling the `AddStandardHedgingHandler` extension method.
+The standard hedging handler wraps the execution of the request with a standard hedging mechanism. Hedging retries slow requests in parallel.
 
 To use the standard hedging handler, call `AddStandardHedgingHandler` extension method. The following example configures the `ExampleClient` to use the standard hedging handler.
 
@@ -166,7 +166,7 @@ There are many options available for each of the resilience strategies. For more
 
 ### Dynamic reload
 
-Polly supports dynamic reloading of the configured resilience strategies. This means that you can change the configuration of the resilience strategies at runtime. To enable dynamic reload, use the appropriate `AddResilienceHandler` overload that exposes the `ResilienceHandlerContext`. Given the context, call `EnableReloads` of the corresponding resilience strategy options:
+Polly supports dynamic reloading of the configured resilience strategies. This means that you can change the configuration of the resilience strategies at run time. To enable dynamic reload, use the appropriate `AddResilienceHandler` overload that exposes the `ResilienceHandlerContext`. Given the context, call `EnableReloads` of the corresponding resilience strategy options:
 
 :::code language="csharp" source="snippets/http-resilience/Program.CustomHandler.cs" id="advanced":::
 
@@ -177,13 +177,13 @@ The preceding code:
 - Retrieves the named options from the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> service.
 - Adds a retry strategy with the retrieved options to the resilience builder.
 
-For more information, see [Polly docs: Advanced dependency injection](https://www.pollydocs.org/advanced/dependency-injection.html).
+For more information, see [Polly docs: Advanced dependency injection](https://www.pollydocs.org/advanced/dependency-injection#dynamic-reloads).
 
 This example relies on an options section that is capable of change, such as an _appsettings.json_ file. Consider the following _appsettings.json_ file:
 
 :::code language="json" source="snippets/http-resilience/appsettings.json":::
 
-Now imagine that these options were bound to the apps configuration, binding the `HttpRetryStrategyOptions` to the `"RetryOptions"` section:
+Now imagine that these options were bound to the app's configuration, binding the `HttpRetryStrategyOptions` to the `"RetryOptions"` section:
 
 :::code language="csharp" source="snippets/http-resilience/Program.RetryOptions.cs" id="options":::
 
@@ -209,7 +209,7 @@ Mermaid diagram generated from the following code:
 
 -->
 
-Imagine a situation where the network was to go down, or the server was to become unresponsive. The following diagram shows how the resilience strategies would handle the situation, given the `ExampleClient` and the `GetCommentsAsync` method:
+Imagine a situation where the network goes down or the server becomes unresponsive. The following diagram shows how the resilience strategies would handle the situation, given the `ExampleClient` and the `GetCommentsAsync` method:
 
 :::image type="content" source="assets/http-get-comments-flow.png" lightbox="assets/http-get-comments-flow.png" alt-text="Example HTTP GET work flow with resilience pipeline.":::
 

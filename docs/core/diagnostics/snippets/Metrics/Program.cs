@@ -64,7 +64,7 @@ class Program
     static Counter<int> s_hatsSold = s_meter.CreateCounter<int>(
         name: "hats-sold",
         unit: "Hats",
-        description: "The number of ats sold in our store");
+        description: "The number of hats sold in our store");
 
     static void Main(string[] args)
     {

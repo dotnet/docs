@@ -5,10 +5,9 @@ using Microsoft.Extensions.Hosting;
 
 var builder = Host.CreateApplicationBuilder(args);
 
-builder.Services.AddResourceMonitoring();
+// builder.Services.AddResourceMonitoring();
 
-var healthChecksBuilder = builder.Services
-    .AddHealthChecks()
+builder.Services.AddHealthChecks()
     .AddResourceUtilizationHealthCheck();
 
 var app = builder.Build();

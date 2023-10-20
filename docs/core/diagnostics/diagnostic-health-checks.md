@@ -48,7 +48,7 @@ The preceding code:
 - Defines a new `ExampleLifecycle` class that implements the <xref:Microsoft.Extensions.Hosting.IHostedService> interface.
 - Defines a primary constructor accepting the following parameters:
   - An instance of the <xref:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService> class.
-  - An instance of the <xref:Microsoft.Extensions.Logging.ILogger%2A> class.
+  - An instance of the <xref:Microsoft.Extensions.Logging.ILogger%601> class.
 - Implements the <xref:Microsoft.Extensions.Hosting.IHostedLifecycleService> interface, with each method invoking the `CheckHealthAsync` method.
 - Defines a `ReadyAsync` method that invokes the `CheckHealthAsync` method.
 - Defines a custom `CheckHealthAsync` method that captures the caller name and cancellation token, then requests a health check from the `HealthCheckService` instance. The `result` is then logged.

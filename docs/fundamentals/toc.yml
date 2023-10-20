@@ -799,6 +799,9 @@ items:
       displayName: console log formatting,console log formatter,console log formatting provider,console log formatter provider
   - name: HostBuilder (generic host)
     href: ../core/extensions/generic-host.md
+  - name: Resilience
+    href: ../core/resilience/index.md
+    displayName: resilience,transient fault handling,recovery,polly
   - name: Networking
     items:
     - name: Network programming
@@ -827,6 +830,9 @@ items:
       - name: IHttpClientFactory
         href: ../core/extensions/httpclient-factory.md
         displayName: networking,httpclient,http,dependency injection,client,factory,named client,named httpclient,typed client,typed httpclient
+      - name: Build resilient HTTP apps
+        href: ../core/resilience/http-resilience.md
+        displayName: resilience,transient fault handling,http,httpclient,recovery,polly
       - name: HTTP/3 with .NET
         href: ../core/extensions/httpclient-http3.md
         displayName: networking,http,http3,http/3,http3 with .net,http/3 with .net

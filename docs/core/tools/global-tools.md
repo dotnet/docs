@@ -195,7 +195,7 @@ To list a specific tool, use the [dotnet tool list <PACKAGE_ID>](dotnet-tool-lis
 dotnet tool list dotnetsay
 ```
 
-The output will be only contain information of that tool if it is installed, similar to the following example:
+The output will only list that tool if it's installed, similar to the following example:
 
 ```console
 Package Id      Version      Commands       Manifest

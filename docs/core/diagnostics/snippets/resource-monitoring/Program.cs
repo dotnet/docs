@@ -13,14 +13,14 @@ var provider = services.BuildServiceProvider();
 var monitor = provider.GetRequiredService<IResourceMonitor>();
 // </setup>
 
+using var cancellationTokenSource = new CancellationTokenSource();
+var token = cancellationTokenSource.Token;
+
 // <monitor>
-await StartMonitoringAsync(monitor);
+await StartMonitoringAsync(monitor, token);
 
-static async Task StartMonitoringAsync(IResourceMonitor monitor)
+async Task StartMonitoringAsync(IResourceMonitor monitor, CancellationToken cancellationToken)
 {
-    using var cancellationTokenSource = new CancellationTokenSource();
-    var token = cancellationTokenSource.Token;
-
     var table = new Table()
         .Centered()
         .Title("Resource Monitoring", new Style(foreground: Color.Purple, decoration: Decoration.Bold))
@@ -41,7 +41,7 @@ static async Task StartMonitoringAsync(IResourceMonitor monitor)
         .StartAsync(async ctx =>
         {
             var window = TimeSpan.FromSeconds(3);
-            while (token.IsCancellationRequested is false)
+            while (cancellationToken.IsCancellationRequested is false)
             {
                 var utilization = monitor.GetUtilization(window);
                 var resources = utilization.SystemResources;
@@ -68,17 +68,3 @@ static async Task StartMonitoringAsync(IResourceMonitor monitor)
     };
 }
 // </monitor>
-
-// <output>
-/* Sample output:
-                                             Resource Monitoring
-┌─────────────┬───────┬──────────┬────────────────┬─────────────────────────────────┬───────────────────────┐
-│    Time     │ CPU % │ Memory % │ Memory (bytes) │    GTD / Max Memory (bytes)     │ GTD / Max CPU (units) │
-├─────────────┼───────┼──────────┼────────────────┼─────────────────────────────────┼───────────────────────┤
-│ 10:18:50 AM │ 0.00% │  4.88%   │   33,419,264   │ 68,412,022,784 / 68,412,022,784 │        20 / 20        │
-│ 10:18:53 AM │ 0.00% │  4.88%   │   33,419,264   │ 68,412,022,784 / 68,412,022,784 │        20 / 20        │
-│ 10:18:56 AM │ 0.00% │  4.88%   │   33,419,264   │ 68,412,022,784 / 68,412,022,784 │        20 / 20        │
-└─────────────┴───────┴──────────┴────────────────┴─────────────────────────────────┴───────────────────────┘
-                               Updates every three seconds. *GTD: Guaranteed
-*/
-// </output>

@@ -69,7 +69,7 @@ This article describes the syntax of configuration files and provides informatio
   
   These apps have two configuration files: a source configuration file, which is modified by the developer during development, and an output file that's distributed with the app.  
   
-  By default, the name of the source configuration file is *App.config*. When you create a .NET Framework project in Visual Studio, an *App.config* file is automatically added to the project. You can also add a file manually by selecting **File** > **New File**. Place the *App.config* file in the project directory and set its **Copy To Output Directory** property to **Copy always** or **Copy if newer**. 
+  By default, the name of the source configuration file is *App.config*. When you create a .NET Framework project in Visual Studio, an *App.config* file is automatically added to the project. You can also add a file manually by selecting **File** > **New File**. Place the *App.config* file in the project directory and set its **Copy To Output Directory** property to **Copy always** or **Copy if newer**.
   
   To create the output configuration file that's deployed with the app, Visual Studio copies the source configuration file to the directory where the compiled assembly is placed. This file is named *\<yourappname>.exe.config*. For example, an app named *myApp.exe* has an output configuration file named *myApp.exe.config*.
 

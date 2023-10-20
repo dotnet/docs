@@ -5,7 +5,6 @@ using Microsoft.Extensions.Hosting;
 var builder = Host.CreateApplicationBuilder(args);
 
 var healthChecksBuilder = builder.Services
-    .AddSingleton<ExampleLifecycle>()
     .AddHostedService<ExampleLifecycle>()
     .AddHealthChecks()
     .AddApplicationLifecycleHealthCheck();
@@ -14,13 +13,18 @@ var healthChecksBuilder = builder.Services
 
 var app = builder.Build();
 
-var example = app.Services.GetRequiredService<ExampleLifecycle>();
+var services = app.Services.GetRequiredService<IEnumerable<IHostedService>>();
 
-async Task DelayAndRepostAsync()
+await Task.WhenAll(DelayAndReportAsync(services), app.RunAsync());
+
+static async Task DelayAndReportAsync(IEnumerable<IHostedService> services)
 {
     // Ensure app started...
     await Task.Delay(500);
-    await example.PostStartedAndPreStoppingAsync();
-}
 
-await Task.WhenAll(DelayAndRepostAsync(), app.RunAsync());
+    var service = services.FirstOrDefault(static s => s is ExampleLifecycle);
+    if (service is ExampleLifecycle example)
+    {
+        await example.ReadyAsync();
+    }
+}

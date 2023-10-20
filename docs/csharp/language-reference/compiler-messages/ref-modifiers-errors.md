@@ -74,9 +74,9 @@ These errors and warnings follow these themes:
 
 Fields of static readonly field 'name' cannot be passed ref or out (except in a static constructor)
 
-A field (variable) marked with the [readonly](../language-reference/keywords/readonly.md) keyword cannot be passed either to a [ref](../language-reference/keywords/ref.md) or [out](../language-reference/keywords/out-parameter-modifier.md) parameter except inside a constructor. For more information, see [Fields](../programming-guide/classes-and-structs/fields.md).
+A field (variable) marked with the [readonly](../../language-reference/keywords/readonly.md) keyword cannot be passed either to a [ref](../../language-reference/keywords/ref.md) or [out](../../language-reference/keywords/out-parameter-modifier.md) parameter except inside a constructor. For more information, see [Fields](../programming-guide/classes-and-structs/fields.md).
 
-CS0192 also results if the `readonly` field is [static](../language-reference/keywords/static.md) and the constructor is not marked `static`.
+CS0192 also results if the `readonly` field is [static](../../language-reference/keywords/static.md) and the constructor is not marked `static`.
 
 The following sample generates CS0192.
 
@@ -110,7 +110,7 @@ class MyClass
 
 Fields of static readonly field 'name' cannot be passed ref or out (except in a static constructor)
 
-A [readonly](../language-reference/keywords/readonly.md) variable must have the same [static](../language-reference/keywords/static.md) usage as the constructor in which you want to pass it as a [ref](../language-reference/keywords/ref.md) or [out](../language-reference/keywords/out-parameter-modifier.md) parameter. For more information, see [Method Parameters](../language-reference/keywords/method-parameters.md).
+A [readonly](../../language-reference/keywords/readonly.md) variable must have the same [static](../../language-reference/keywords/static.md) usage as the constructor in which you want to pass it as a [ref](../../language-reference/keywords/ref.md) or [out](../../language-reference/keywords/out-parameter-modifier.md) parameter. For more information, see [Method Parameters](../../language-reference/keywords/method-parameters.md).
 
 The following sample generates CS0199:
 
@@ -140,7 +140,7 @@ class MyClass
 
 A property or indexer may not be passed as an out or ref parameter
 
-A [property](../programming-guide/classes-and-structs/properties.md) is not available to be passed as a [ref](../language-reference/keywords/ref.md) or [out](../language-reference/keywords/out-parameter-modifier.md) parameter. For more information, see [Method Parameters](../language-reference/keywords/method-parameters.md).
+A [property](../programming-guide/classes-and-structs/properties.md) is not available to be passed as a [ref](../../language-reference/keywords/ref.md) or [out](../../language-reference/keywords/out-parameter-modifier.md) parameter. For more information, see [Method Parameters](../../language-reference/keywords/method-parameters.md).
 
 The following sample generates CS0206:
 
@@ -177,7 +177,7 @@ public class MyClass
 
 ref and out are not valid in this context
 
-The declaration for an [indexer](../programming-guide/indexers/index.md) cannot include the use of [ref](../language-reference/keywords/ref.md) or [out](../language-reference/keywords/out-parameter-modifier.md) parameters.
+The declaration for an [indexer](../programming-guide/indexers/index.md) cannot include the use of [ref](../../language-reference/keywords/ref.md) or [out](../../language-reference/keywords/out-parameter-modifier.md) parameters.
 
 The following sample generates CS0631:
 
@@ -208,7 +208,7 @@ public class MyClass2
 
 A ref or out argument must be an assignable variable
 
-Only a variable can be passed as a [ref](../language-reference/keywords/ref.md) parameter in a method call. A `ref` value is like passing a pointer.
+Only a variable can be passed as a [ref](../../language-reference/keywords/ref.md) parameter in a method call. A `ref` value is like passing a pointer.
 
 The following sample generates CS1510:
 
@@ -236,7 +236,7 @@ public class C
 
 Cannot pass 'var' as a ref or out argument because it is read-only
 
-A variable passed as a [ref](../language-reference/keywords/ref.md) or [out](../language-reference/keywords/out-parameter-modifier.md) parameter is expected to be modified in the called method. Therefore, it is not possible to pass a read-only parameter as `ref` or `out`.
+A variable passed as a [ref](../../language-reference/keywords/ref.md) or [out](../../language-reference/keywords/out-parameter-modifier.md) parameter is expected to be modified in the called method. Therefore, it is not possible to pass a read-only parameter as `ref` or `out`.
 
 The following sample generates CS1605:
 
@@ -369,7 +369,7 @@ class D
 
 Cannot pass fields of 'variable' as a ref or out argument because it is a 'readonly variable type'
 
-This error occurs if you are attempting to pass a member of a [foreach](../language-reference/statements/iteration-statements.md#the-foreach-statement) variable, a [using](../language-reference/statements/using.md) variable, or a [fixed](../language-reference/statements/fixed.md) variable to a function as a ref or out argument. Because these variables are considered read-only in these contexts, this is not allowed.
+This error occurs if you are attempting to pass a member of a [foreach](../../language-reference/statements/iteration-statements.md#the-foreach-statement) variable, a [using](../../language-reference/statements/using.md) variable, or a [fixed](../../language-reference/statements/fixed.md) variable to a function as a ref or out argument. Because these variables are considered read-only in these contexts, this is not allowed.
 
 The following sample generates CS1655:
 
@@ -401,7 +401,7 @@ class CMain
 
 Cannot pass 'parameter' as a ref or out argument because 'reason'
 
-This error occurs when a variable is passed as a [ref](../language-reference/keywords/ref.md) or [out](../language-reference/keywords/out-parameter-modifier.md) argument in a context in which that variable is readonly. Readonly contexts include [foreach](../language-reference/statements/iteration-statements.md#the-foreach-statement) iteration variables, [using](../language-reference/statements/using.md) variables, and `fixed` variables. To resolve this error, do not call functions that take the `foreach`, `using` or `fixed` variable as a `ref` or `out` parameter in `using` blocks, `foreach` statements, and `fixed` statements.
+This error occurs when a variable is passed as a [ref](../../language-reference/keywords/ref.md) or [out](../../language-reference/keywords/out-parameter-modifier.md) argument in a context in which that variable is readonly. Readonly contexts include [foreach](../../language-reference/statements/iteration-statements.md#the-foreach-statement) iteration variables, [using](../../language-reference/statements/using.md) variables, and `fixed` variables. To resolve this error, do not call functions that take the `foreach`, `using` or `fixed` variable as a `ref` or `out` parameter in `using` blocks, `foreach` statements, and `fixed` statements.
 
 The following sample generates CS1657:
 

@@ -37,6 +37,8 @@ The following errors may be generated when source generators or interceptors are
   - A non ref-returning property or indexer may not be used as an out or ref value
 - CS0631: ERR_IllegalRefParam
   - ref and out are not valid in this context
+- CS0767: ERR_ExplicitImplCollisionOnRefOut
+  - Cannot inherit interface '{0}' with the specified type parameters because it causes method '{1}' to contain overloads which differ only on ref and out
 - CS1510: ERR_RefLvalueExpected
   - A ref or out value must be an assignable variable
 - CS1605: ERR_RefReadonlyLocal
@@ -51,8 +53,24 @@ The following errors may be generated when source generators or interceptors are
   - Cannot use fields of '{0}' as a ref or out value because it is a '{1}'
 - CS1657: ERR_RefReadonlyLocalCause
   - Cannot use '{0}' as a ref or out value because it is a '{1}'
+- CS1741: ERR_RefOutDefaultValue
+  - A ref or out parameter cannot have a default value
 - CS1939: ERR_QueryOutRefRangeVariable
   - Cannot pass the range variable '{0}' as an out or ref parameter
+- CS1988: ERR_BadAsyncArgType
+  - Async methods cannot have ref, in or out parameters
+- CS8166: ERR_RefReturnParameter
+  - Cannot return a parameter by reference '{0}' because it is not a ref parameter
+- CS8167: ERR_RefReturnParameter2
+  - Cannot return by reference a member of parameter '{0}' because it is not a ref or out parameter
+- CS8168: ERR_RefReturnLocal
+  - Cannot return local '{0}' by reference because it is not a ref local
+- CS8169: ERR_RefReturnLocal2
+  - Cannot return a member of local '{0}' by reference because it is not a ref local
+- CS8373: ERR_RefLocalOrParamExpected
+  - The left-hand side of a ref assignment must be a ref variable.
+- CS8374: ERR_RefAssignNarrower
+  - Cannot ref-assign '{1}' to '{0}' because '{1}' has a narrower escape scope than '{0}'.
 
 - **CS9190**: `readonly` modifier must be specified after `ref`.
 - **CS9199**: A ref readonly parameter cannot have the Out attribute.
@@ -202,6 +220,53 @@ public class MyClass2
     {
     }
 }
+```
+
+## Compiler Error CS0767
+
+Cannot inherit interface with the specified type parameters because it causes method to contain overloads which differ only on ref and out
+
+The following sample generates CS0767:
+
+```csharp
+// CS0767.cs (0,0)
+
+using System;
+
+namespace Stuff
+{
+    interface ISomeInterface<T, U>
+    {
+        void Method(ref Func<U, T> _);
+        void Method(out Func<T, U> _);
+    }
+
+    class Explicit : ISomeInterface<int, int>
+    {
+        void ISomeInterface<int, int>.Method(ref Func<int, int> v) { v = _ => throw new NotImplementedException(); }
+        void ISomeInterface<int, int>.Method(out Func<int, int> v) { v = _ => throw new NotImplementedException(); }
+    }
+}
+```
+
+In this example, implementing `ISomeInterface<int,int>` creates two `Method` overloads with the same type of parameter but differs only by `ref`/`out`.  This effectively declares a class that would otherwise raise error CS0663:
+
+```csharp
+    class BadClass 
+    {
+        void Method(ref Func<int, int> v) { v = _ => throw new NotImplementedException(); }
+        void Method(out Func<int, int> v) { v = _ => throw new NotImplementedException(); }
+    }
+```
+
+The simplest way to correct this error is to use different type arguments for `ISomeInterface<T,U>`, for example:
+
+```csharp
+    class Explicit : ISomeInterface<int, long>
+    {
+        void ISomeInterface<int, long>.Method(ref Func<long, int> v) { v = _ => throw new NotImplementedException(); }
+        void ISomeInterface<int, long>.Method(out Func<int, long> v) { v = _ => throw new NotImplementedException(); }
+    }
 ```
 
 ## Compiler Error CS1510
@@ -448,6 +513,43 @@ unsafe class C
 }
 ```
 
+## Compiler Error CS1741
+
+ `ref` or `out` parameter cannot have a default value
+
+Using `ref` or `out` in a method signature causes arguments to be passed by reference, making the parameter an alias for the argument.  Since the parameter must be a variable should the default value be used, no variable would exist as the alias for the argument.
+
+The following sample generates CS1741:
+
+```csharp
+// CS1741.cs (6,21)
+class Program
+{
+    static void Main(string[] args)
+    {
+        void RefOut(ref int x = 2)
+        {
+            x++;
+        }
+        int y = 2;
+        RefOut(ref y);
+    }
+}
+```
+
+In this example, removing the `ref` modifier from the method signature would be a logic error--the method's body would have no visible side effects when executed.  To correct this error, remove the unnecessary default value from the method signature:
+
+```csharp
+    static void Main(string[] args)
+    {
+        void RefOut(ref int x)
+        {
+            x++;
+        }
+        int y = 2;
+        RefOut(ref y);
+    }
+```
 ## Compiler Error CS1939
 
 Cannot pass the range variable 'name' as an out or ref parameter.
@@ -472,6 +574,245 @@ class Test
         var q = from x in list
                 let k = x
                 select Test.F(ref x); // CS1939
+    }
+}
+```
+
+## Compiler Error CS1988
+
+Async methods cannot have `ref`, `in` or `out` parameters
+
+`ref` parameters are not supported in `async` methods because the method may not have completed when control returns to the calling code.  Any changes to the referenced variables will not be visible to the calling code, resulting in a CS1988 error.
+
+The following sample generates CS1988:
+
+```csharp
+class C
+{
+    async Task M(ref int left, ref int right)
+    {
+        await Task.Run(() =>
+        {
+            left = 1;
+            right = 2;
+        });
+    }
+}
+```
+
+One reason to use the `ref` keyword is that a method conceptually has more than one result but implemented with more than one `ref` parameter.  In this case, correcting the error can be achieved by transforming the method to return a single result through the use of a tuple:
+
+```csharp
+    async Task<(int,int)> M(int left, int right)
+    {
+        await Task.Run(() =>
+        {
+            left = 1;
+            right = 2;
+        });
+
+        return (left, right);
+    }
+```
+
+## Compiler Error CS8166
+
+Cannot return a parameter by reference because it is not a ref parameter
+
+The following sample generates CS8166:
+
+```csharp
+// CS8166.cs (11,20)
+
+public class Test
+{
+    public struct S1
+    {
+        public char x;
+    }
+
+    ref char Test1(char arg1, S1 arg2)
+    {
+        return ref arg1;
+    }
+}
+```
+
+To return a parameter that is not passed by reference, refactoring to use return by value will correct this error:
+
+```csharp
+public class Test
+{
+    public struct S1
+    {
+        public char x;
+    }
+
+    char Test1(char arg1, S1 arg2)
+    {
+        return arg1;
+    }
+}
+```
+
+## Compiler Error CS8167
+
+Cannot return by reference a member of parameter because it is not a ref or out parameter
+
+The following sample generates CS8167:
+
+```csharp
+// CS8167.cs (11,20)
+
+public class Test
+{
+    public struct S1
+    {
+        public char x;
+    }
+
+    ref char Test1(char arg1, S1 arg2)
+    {
+        return ref arg1;
+    }
+}
+```
+
+To return a parameter that is not declared with `out` or `ref`, refactoring to return by value corrects this error:
+
+```csharp
+public class Test
+{
+    public struct S1
+    {
+        public char x;
+    }
+
+    char Test1(char arg1, S1 arg2)
+    {
+        return arg1;
+    }
+}
+```
+
+## Compiler Error CS8168
+
+Cannot return local by reference because it is not a ref local
+
+The following sample generates CS8168:
+
+```csharp
+// CS8168.cs (8,14)
+
+public class Test
+{
+    ref char Test1()
+    {
+        char l = default(char);
+
+        return ref l;
+    }
+}
+```
+
+The scope of `l` is within the body of the method.  If a reference to `l` were to leave the scope of this method, that reference would outlive the object to which it refers.  The compiler's scope rules cause error CS8168 to be generated in this example.
+
+To return the value of a local, refactoring to return by value will correct this error:
+
+```csharp
+// CS8168.cs (8,14)
+
+public class Test
+{
+    char Test1()
+    {
+        char l = default(char);
+
+        return l;
+    }
+}
+```
+
+## Compiler Error CS8169
+
+Cannot return a member of local by reference because it is not a ref local
+
+The following sample generates CS8169:
+
+```csharp
+// CS8169.cs (17,15)
+
+public class Test
+{
+    public struct S1
+    {
+        public char x;
+    }
+
+    ref char Test1(char arg1, ref S1 arg2)
+    {
+        S1 l = default(S1);
+        // valid
+        ref char r = ref l.x;
+
+        // invalid
+        return ref l.x;
+    }
+}
+```
+
+Using a `ref` to `S1.x` within the `Test1` method is valid because use of the reference does not leave the scope of the value type `l`.  Upon returning from `Test`, `l` would become invalid along with any references to its properties.
+
+## Compiler Error CS8373
+
+The left-hand side of a ref assignment must be a ref variable.
+
+The following sample generates CS8373:
+
+```csharp
+// CS8373.cs (6,90)
+
+public class C
+{
+    void M(int a, ref int b)
+    {
+        a = ref b;
+    }
+}
+```
+
+## To correct this error
+
+To assign the value of a `ref` variable, removing the `ref` keyword corrects this error:
+
+```csharp
+public class C
+{
+    void M(int a, ref int b)
+    {
+        a = b;
+    }
+}
+```
+
+## Compiler Error CS8374
+
+Cannot ref-assign to because has a narrower escape scope than.
+
+The following sample generates CS8374 because the reference contained in `r1` is externally visible but the scope of `rx`'s value (its lifetime) is local:
+
+```csharp
+// CS8374.cs (6,9)
+
+class C
+{
+    void M(ref int r1)
+    {
+        int x = 0;
+        ref int rx = ref x;
+        for (int i = 0; i < (r1 = ref rx); i++)
+        {
+        }
     }
 }
 ```

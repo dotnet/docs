@@ -3,7 +3,7 @@ title: Introduction to resilient app development
 description: Learn about resiliency as it relates to .NET and how to build a resilience pipeline.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/19/2023
+ms.date: 10/20/2023
 ---
 
 # Introduction to resilient app development
@@ -68,7 +68,7 @@ To add a strategy to the pipeline, call any of the available `Add*` extension me
 - `AddFallback`: Do something else when experiencing failures, which improves user experience.
 - `AddHedging`: Do more than one thing at the same time and take the fastest one, which can improve responsiveness.
 
-For more information, see [Resilience strategies](https://www.pollydocs.org/strategies/index.html).
+For more information, see [Resilience strategies](https://www.pollydocs.org/strategies).
 
 ## Add enrichment
 
@@ -88,7 +88,7 @@ By calling the `AddResilienceEnricher` extension method, you're adding dimension
 - Result enrichment based on the <xref:Microsoft.Extensions.Resilience.FailureResultContext>, which captures the dimensions metered for transient fault failures.
 - Request metadata enrichment based on <xref:Microsoft.Extensions.Http.Telemetry.RequestMetadata>, which holds the request metadata for telemetry.
 
-For more information, see [Polly: Telemetry metrics](https://www.pollydocs.org/advanced/telemetry.html#metrics).
+For more information, see [Polly: Telemetry metrics](https://www.pollydocs.org/advanced/telemetry#metrics).
 
 ## Use resilience pipeline
 

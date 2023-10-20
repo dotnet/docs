@@ -3,7 +3,7 @@ title: "Build resilient HTTP apps: Key development patterns"
 description: Learn how to build resilient HTTP apps using the Microsoft.Extensions.Http.Resilience NuGet package.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/19/2023
+ms.date: 10/20/2023
 ---
 
 # Build resilient HTTP apps: Key development patterns
@@ -118,7 +118,7 @@ The preceding code adds the standard hedging handler to the <xref:Microsoft.Exte
 
 ### Customize hedging handler route selection
 
-When using the standard hedging handler, you can customize the way the request endpoints are selected by calling various extensions on the `IRoutingStrategyBuilder` type. This can be useful for scenarios such as a/b testing, where you want to route a percentage of the requests to a different endpoint:
+When using the standard hedging handler, you can customize the way the request endpoints are selected by calling various extensions on the `IRoutingStrategyBuilder` type. This can be useful for scenarios such as A/B testing, where you want to route a percentage of the requests to a different endpoint:
 
 :::code language="csharp" source="snippets/http-resilience/Program.HedgingHandler.cs" id="ordered":::
 
@@ -162,7 +162,7 @@ The preceding code:
 - Adds a circuit breaker strategy with a sampling duration of 10 seconds, a failure ratio of 0.2 (20%), a minimum throughput of three, and a predicate that handles `RequestTimeout` and `TooManyRequests` HTTP status codes to the resilience builder.
 - Adds a timeout strategy with a timeout of five seconds to the resilience builder.
 
-There are many options available for each of the resilience strategies. For more information, see the [Polly docs: Strategies](https://www.pollydocs.org/strategies). For more information about configuring `ShouldHandle` delegates, see [Polly docs: Fault handling in reactive strategies](https://www.pollydocs.org/strategies/index.html#fault-handling).
+There are many options available for each of the resilience strategies. For more information, see the [Polly docs: Strategies](https://www.pollydocs.org/strategies). For more information about configuring `ShouldHandle` delegates, see [Polly docs: Fault handling in reactive strategies](https://www.pollydocs.org/strategies#fault-handling).
 
 ### Dynamic reload
 
@@ -211,7 +211,7 @@ Mermaid diagram generated from the following code:
 
 Imagine a situation where the network goes down or the server becomes unresponsive. The following diagram shows how the resilience strategies would handle the situation, given the `ExampleClient` and the `GetCommentsAsync` method:
 
-:::image type="content" source="assets/http-get-comments-flow.png" lightbox="assets/http-get-comments-flow.png" alt-text="Example HTTP GET work flow with resilience pipeline.":::
+:::image type="content" source="media/http-get-comments-flow.png" lightbox="media/http-get-comments-flow.png" alt-text="Example HTTP GET work flow with resilience pipeline.":::
 
 The preceding diagram depicts:
 

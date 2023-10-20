@@ -44,7 +44,7 @@ internal partial class Program
                 {
                     Endpoints =
                     {
-                        // Imagine a/b testing
+                        // Imagine A/B testing
                         new() { Uri = new("https://example.net/api/a"), Weight = 33 },
                         new() { Uri = new("https://example.net/api/b"), Weight = 33 },
                         new() { Uri = new("https://example.net/api/c"), Weight = 33 }

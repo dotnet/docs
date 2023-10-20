@@ -1,7 +1,7 @@
 ---
 title: Diagnostic libraries
 description: An overview of the available diagnostic libraries in .NET.
-ms.date: 10/16/2023
+ms.date: 10/20/2023
 ms.topic: overview
 ---
 

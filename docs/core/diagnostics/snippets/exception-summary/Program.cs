@@ -12,14 +12,17 @@ var provider = services.BuildServiceProvider();
 // Get the exception summarizer.
 var summarizer = provider.GetRequiredService<IExceptionSummarizer>();
 
-foreach (var exception in new Exception[]
-    {
-        new OperationCanceledException("Operation cancelled..."),
-        new TaskCanceledException("Task cancelled..."),
-        new SocketException(10_024, "Too many sockets open..."),
-        new WebException("Keep alive failure...",
-            WebExceptionStatus.KeepAliveFailure)
-    })
+// Define exceptions to summarize.
+Exception[] exceptions =
+[
+    new OperationCanceledException("Operation cancelled..."),
+    new TaskCanceledException("Task cancelled..."),
+    new SocketException(10_024, "Too many sockets open..."),
+    new WebException("Keep alive failure...",
+        WebExceptionStatus.KeepAliveFailure)
+];
+
+foreach (var exception in exceptions)
 {
     // Summarize the exception.
     var summary = summarizer.Summarize(exception);
@@ -28,9 +31,3 @@ foreach (var exception in new Exception[]
 }
 
 Console.ReadLine();
-
-// Sample output:
-//   OperationCanceledException:TaskTimeout:Unknown
-//   TaskCanceledException:TaskTimeout:Unknown
-//   SocketException:TooManyOpenSockets:Unknown
-//   WebException:KeepAliveFailure:Unknown

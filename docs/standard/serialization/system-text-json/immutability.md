@@ -1,17 +1,12 @@
 ---
 title: Use immutable types and non-public members or accessors
 description: "Learn how to use immutable types and non-public members and accessors while serializing to and deserializing from JSON in .NET."
-ms.date: 02/08/2021
+ms.date: 10/19/2023
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords:
-  - "JSON serialization"
-  - "serializing objects"
-  - "serialization"
-  - "objects, serializing"
 ms.topic: how-to
 ---
 
@@ -43,8 +38,6 @@ Records in C# 9 are also supported, as shown in the following example:
 
 You can apply any of the attributes to the property names, using the `property:` target on the attribute. For more information on positional records, see the article on [records](../../../csharp/language-reference/builtin-types/record.md#positional-syntax-for-property-definition) in the C# language reference.
 
-For types that are immutable because all their members or property setters are non-public, see the following section.
-
 ## Non-public members and property accessors
 
 You can enable use of a non-public *accessor* on a property by using the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute, as shown in the following example:
@@ -54,7 +47,7 @@ You can enable use of a non-public *accessor* on a property by using the [[JsonI
 
 In .NET 8 and later versions, you can also use the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute to opt non-public members into the serialization contract for a given type.
 
-> ![NOTE]
+> [!NOTE]
 > In source-generation mode, you can't serialize `private` members or use `private` accessors by annotating them with the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute. And you can only serialize `internal` members or use `internal` accessors if they're in the same assembly as the generated <xref:System.Text.Json.Serialization.JsonSerializerContext>.
 
 ## See also

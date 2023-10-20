@@ -2,7 +2,7 @@
 title: "Migrate from Newtonsoft.Json to System.Text.Json - .NET"
 description: "Learn about the differences between Newtonsoft.Json and System.Text.Json and how to migrate to System.Text.Json."
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 10/16/2023
+ms.date: 10/20/2023
 zone_pivot_groups: dotnet-preview-version
 helpviewer_keywords:
   - "JSON serialization"
@@ -70,13 +70,13 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Polymorphic deserialization                           | ✔️ [Type discriminator on [JsonDerivedType] attribute](#polymorphic-deserialization) |
 | Deserialize string enum value                         | ✔️ [Deserialize string enum values](#deserialize-string-enum-values) |
 | `MissingMemberHandling` global setting                | ✔️ [Handle missing members](#handle-missing-members) |
+| Populate properties without setters                   | ✔️ [Populate properties without setters](#populate-properties-without-setters) |
+| `ObjectCreationHandling` global setting               | ✔️ [Reuse rather than replace properties](#reuse-rather-than-replace-properties) |
 | Support for a broad range of types                    | ⚠️ [Some types require custom converters](#types-without-built-in-support) |
 | Deserialize inferred type to `object` properties      | ⚠️ [Not supported, workaround, sample](#deserialization-of-object-properties) |
 | Deserialize JSON `null` literal to non-nullable value types | ⚠️ [Not supported, workaround, sample](#deserialize-null-to-non-nullable-type) |
 | `DateTimeZoneHandling`, `DateFormatString` settings   | ⚠️ [Not supported, workaround, sample](#specify-date-format) |
 | `JsonConvert.PopulateObject` method                   | ⚠️ [Not supported, workaround](#populate-existing-objects) |
-| `ObjectCreationHandling` global setting               | ⚠️ [Not supported, workaround](#reuse-rather-than-replace-properties) |
-| Add to collections without setters                    | ⚠️ [Not supported, workaround](#add-to-collections-without-setters) |
 | Support for `System.Runtime.Serialization` attributes | ⚠️ [Not supported, workaround, sample](#systemruntimeserialization-attributes) |
 | `JsonObjectAttribute`                                 | ⚠️ [Not supported, workaround](#jsonobjectattribute) |
 | Allow property names without quotes                   | ❌ [Not supported by design](#json-strings-property-names-and-string-values) |
@@ -123,7 +123,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `DateTimeZoneHandling`, `DateFormatString` settings   | ⚠️ [Not supported, workaround, sample](#specify-date-format) |
 | `JsonConvert.PopulateObject` method                   | ⚠️ [Not supported, workaround](#populate-existing-objects) |
 | `ObjectCreationHandling` global setting               | ⚠️ [Not supported, workaround](#reuse-rather-than-replace-properties) |
-| Add to collections without setters                    | ⚠️ [Not supported, workaround](#add-to-collections-without-setters) |
+| Add to collections without setters                    | ⚠️ [Not supported, workaround](#populate-properties-without-setters) |
 | Snake-case property names                             | ⚠️ [Not supported, workaround](#snake-case-naming-policy)|
 | Support for `System.Runtime.Serialization` attributes | ⚠️ [Not supported, workaround, sample](#systemruntimeserialization-attributes) |
 | `MissingMemberHandling` global setting                | ⚠️ [Not supported, workaround, sample](#handle-missing-members) |
@@ -172,7 +172,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `DateTimeZoneHandling`, `DateFormatString` settings   | ⚠️ [Not supported, workaround, sample](#specify-date-format) |
 | `JsonConvert.PopulateObject` method                   | ⚠️ [Not supported, workaround](#populate-existing-objects) |
 | `ObjectCreationHandling` global setting               | ⚠️ [Not supported, workaround](#reuse-rather-than-replace-properties) |
-| Add to collections without setters                    | ⚠️ [Not supported, workaround](#add-to-collections-without-setters) |
+| Add to collections without setters                    | ⚠️ [Not supported, workaround](#populate-properties-without-setters) |
 | Snake-case property names                             | ⚠️ [Not supported, workaround](#snake-case-naming-policy)|
 | `JsonObjectAttribute`                                 | ⚠️ [Not supported, workaround](#jsonobjectattribute) |
 | Support for `System.Runtime.Serialization` attributes | ❌ [Not supported](#systemruntimeserialization-attributes) |
@@ -585,11 +585,33 @@ The `JsonConvert.PopulateObject` method in `Newtonsoft.Json` deserializes a JSON
 
 ### Reuse rather than replace properties
 
-The `Newtonsoft.Json` `ObjectCreationHandling` setting lets you specify that objects in properties should be reused rather than replaced during deserialization. <xref:System.Text.Json?displayProperty=fullName> always replaces objects in properties. Custom converters can provide this functionality.
+:::zone pivot="dotnet-8-0"
 
-### Add to collections without setters
+Starting in .NET 8, System.Text.Json supports reusing initialized properties rather than replacing them. There are some differences in behavior, which you can read about in the [API proposal](https://github.com/dotnet/runtime/issues/78556).
 
-During deserialization, `Newtonsoft.Json` adds objects to a collection even if the property has no setter. <xref:System.Text.Json?displayProperty=fullName> ignores properties that don't have setters. Custom converters can provide this functionality.
+For more information, see [Populate initialized properties](populate-properties.md).
+
+:::zone-end
+
+:::zone pivot="dotnet-7-0,dotnet-6-0"
+
+The `ObjectCreationHandling` setting in `Newtonsoft.Json` lets you specify that objects in properties should be reused rather than replaced during deserialization. <xref:System.Text.Json?displayProperty=fullName> always replaces objects in properties. Custom converters can provide this functionality, or you can upgrade to .NET 8, which provides populate functionality.
+
+:::zone-end
+
+### Populate properties without setters
+
+:::zone pivot="dotnet-8-0"
+
+Starting in .NET 8, System.Text.Json supports populating properties, including those that don't have a setter. For more information, see [Populate initialized properties](populate-properties.md).
+
+:::zone-end
+
+:::zone pivot="dotnet-7-0,dotnet-6-0"
+
+During deserialization, `Newtonsoft.Json` adds objects to a collection even if the property has no setter. System.Text.Json ignores properties that don't have setters. Custom converters can provide this functionality.
+
+:::zone-end
 
 ### Snake case naming policy
 

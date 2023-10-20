@@ -55,9 +55,7 @@ The following is an example of the output from the preceding code:
 
 ## Kubernetes probes
 
-The [Microsoft.Extensions.Diagnostics.Probes](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.Probes) NuGet package provides support for Kubernetes probes. This package is currently experimental and is subject to change.
-
-It's intended to report health checks that align with various Kubernetes probes, for example:
+The [Microsoft.Extensions.Diagnostics.Probes](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.Probes) NuGet package provides support for Kubernetes probes. It's intended to report health checks that align with various Kubernetes probes, for example:
 
 - Liveness
 - Readiness

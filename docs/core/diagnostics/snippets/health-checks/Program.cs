@@ -5,7 +5,7 @@ using Microsoft.Extensions.Hosting;
 
 var builder = Host.CreateApplicationBuilder(args);
 
-// builder.Services.AddResourceMonitoring();
+builder.Services.AddResourceMonitoring();
 
 builder.Services.AddHealthChecks()
     .AddResourceUtilizationHealthCheck();

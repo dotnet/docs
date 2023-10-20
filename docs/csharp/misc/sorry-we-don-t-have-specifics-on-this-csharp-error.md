@@ -597,7 +597,6 @@ f1_keywords:
   - "CS9061"
   - "CS9062"
   - "CS9063"
-  - "CS9064"
   - "CS9065"
   - "CS9066"
   - "CS9067"
@@ -631,7 +630,6 @@ f1_keywords:
   - "CS9095"
   - "CS9096"
   - "CS9097"
-  - "CS9100"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ms.assetid: 48320e4a-6e17-45a6-9966-88c6ec89bd2f

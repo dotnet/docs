@@ -42,6 +42,7 @@ f1_keywords:
   - "CS9016" # WRN_UseDefViolationPropertyUnsupportedVersion  Use of possibly unassigned property
   - "CS9017" # WRN_UseDefViolationFieldUnsupportedVersion  Use of possibly unassigned field
   - "CS8967" # ERR_NewlinesAreNotAllowedInsideANonVerbatimInterpolatedString  Newlines inside a non-verbatim interpolated string are not supported in C#
+  - "CS9064"
   - "CS9171"
   - "CS8058"
   - "CS8305"
@@ -88,11 +89,12 @@ helpviewer_keywords:
   - "CS9016"
   - "CS9017"
   - "CS8967"
+  - "CS9064"
   - "CS9171"
   - "CS8058"
   - "CS8305"
   - "CS9204"
-  - "CS0104"
+  - "CS9194"
 ms.date: 10/26/2023
 ---
 # Resolve warnings related to language features and versions
@@ -126,6 +128,7 @@ That's be design. The text closely matches the text of the compiler error / warn
 - **CS9015** - *Error: Use of possibly unassigned field. Upgrade to auto-default the field.*
 - **CS9016** - *Warning: Use of possibly unassigned property. Upgrade to auto-default the property.*
 - **CS9017** - *Warning: Use of possibly unassigned field. Upgrade to auto-default the field.*
+- **CS9064** - *Target runtime doesn't support ref fields.*
 - **CS9171** - *Target runtime doesn't support inline array types.*
 - **CS9194** - *Argument may not be passed with the `ref` keyword. To pass `ref` arguments to `in` parameters, upgrade to language version 12 or greater.*
 

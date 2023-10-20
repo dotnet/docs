@@ -8,6 +8,8 @@ ms.date: 10/20/2023
 
 When you're trying to generate meaningful diagnostic messages for exceptions, maintaining the inclusion of pertinent information can pose a challenge. The standard exception message often lacks critical details that accompany the exception, while invoking the <xref:System.Exception.ToString%2A?displayProperty=nameWithType> method yields an excess of state information.
 
+This article relies on the [Microsoft.Extensions.Diagnostics.ExceptionSummarization](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.ExceptionSummarization) NuGet package.
+
 ## The goal of exception summarization
 
 Metric tags typically support a limited number of distinct values, and as such they are not suitable to represent values which are highly variable, such as the result of `Exception.ToString`. An exception summary represents a low-cardinality version of an exception's information, suitable for such cases.

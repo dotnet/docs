@@ -51,7 +51,7 @@ The preceding examples use type inference for the type being serialized. An over
 * By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
 * By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](customize-properties.md).
 * By default, circular references are detected and exceptions thrown. You can [preserve references and handle circular references](preserve-references.md).
-* By default, [fields](../../../csharp/programming-guide/classes-and-structs/fields.md) are ignored. You can [include fields](#include-fields).
+* By default, [fields](../../../csharp/programming-guide/classes-and-structs/fields.md) are ignored. You can [include fields](fields.md).
 
 When you use System.Text.Json indirectly in an ASP.NET Core app, some default behaviors are different. For more information, see [Web defaults for JsonSerializerOptions](configure-options.md#web-defaults-for-jsonserializeroptions).
 

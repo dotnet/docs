@@ -12,7 +12,7 @@ ms.topic: how-to
 
 # Use immutable types and properties
 
-An immutable *type* is one that prevents you from changing any property or field values of an object after it's instantiated. The type might be a record, have no public properties or fields, have read-only properties, or have properties with private or init-only setters. <xref:System.String?displayProperty=nameWithType> is an immutable type. <xref:System.Text.Json> provides different ways that you can deserialize JSON to immutable types.
+An immutable *type* is one that prevents you from changing any property or field values of an object after it's instantiated. The type might be a record, have no public properties or fields, have read-only properties, or have properties with private or init-only setters. <xref:System.String?displayProperty=nameWithType> is an example of an immutable type. <xref:System.Text.Json> provides different ways that you can deserialize JSON to immutable types.
 
 ## Parameterized constructors
 

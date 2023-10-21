@@ -31,7 +31,9 @@ For example, if you execute the following deserialization code, `Numbers1` conta
 A? a = JsonSerializer.Deserialize<A>("""{"Numbers1": [4,5,6], "Numbers2": [4,5,6]}""");
 ```
 
-Starting in .NET 8, you can change the deserialization behavior to modify (*populate*) initialized properties and fields instead of replacing them. And since the value that the property references isn't *replaced* (that is, doesn't require a setter), if the type of the property is mutable, deserialization can also populate *read-only* properties. The <xref:System.Text.Json.Serialization.JsonObjectCreationHandling> enum fields provide the object creation handling choices:
+Starting in .NET 8, you can change the deserialization behavior to modify (*populate*) initialized properties and fields instead of replacing them. And since the value that the property references isn't *replaced* (that is, doesn't require a setter), if the type of the property is mutable, deserialization can also populate *read-only* properties.
+
+The <xref:System.Text.Json.Serialization.JsonObjectCreationHandling> enum fields provide the object creation handling choices:
 
 - <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Replace?displayProperty=nameWithType> (matches the default behavior)
 - <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Populate?displayProperty=nameWithType>

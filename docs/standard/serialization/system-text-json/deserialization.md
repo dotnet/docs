@@ -45,7 +45,7 @@ The following behaviors apply when deserializing JSON:
 * Non-public constructors are ignored by the serializer.
 * Deserialization to immutable objects or properties that don't have public `set` accessors is supported but not enabled by default. See [Immutable types and records](immutability.md).
 * By default, enums are supported as numbers. You can [deserialize string enum fields](customize-properties.md#enums-as-strings).
-* By default, fields are ignored. You can [include fields](#include-fields).
+* By default, fields are ignored. You can [include fields](fields.md).
 * By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](invalid-json.md).
 * The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) is 64.
 

@@ -3,7 +3,6 @@ title: Use immutable types and properties
 description: "Learn how to deserialize JSON to immutable types and properties in .NET."
 ms.date: 10/20/2023
 no-loc: [System.Text.Json, Newtonsoft.Json]
-zone_pivot_groups: dotnet-preview-version
 dev_langs:
   - "csharp"
   - "vb"
@@ -34,10 +33,10 @@ The parameter names of a parameterized constructor must match the property names
 
 Besides `[JsonPropertyName]`, the following attributes support deserialization with parameterized constructors:
 
-* [[JsonConverter]](xref:System.Text.Json.Serialization.JsonConverterAttribute)
-* [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute)
-* [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute)
-* [[JsonNumberHandling]](xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute)
+- [[JsonConverter]](xref:System.Text.Json.Serialization.JsonConverterAttribute)
+- [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute)
+- [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute)
+- [[JsonNumberHandling]](xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute)
 
 ## Records
 
@@ -61,11 +60,9 @@ In .NET 8 and later versions, you can also use the [[JsonInclude]](xref:System.T
 > [!NOTE]
 > In source-generation mode, you can't serialize `private` members or use `private` accessors by annotating them with the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute. And you can only serialize `internal` members or use `internal` accessors if they're in the same assembly as the generated <xref:System.Text.Json.Serialization.JsonSerializerContext>.
 
-:::zone pivot="dotnet-8-0"
-
 ## Read-only properties
 
-Read-only properties, or those that have no setter either private or public, can also be deserialized. While you can't change the instance that the property references, if the type of the property is mutable, you can modify it. For example, you can add an element to a list. To deserialize a read-only property, you need to set its object creation handling behavior to *populate* instead of *replace*. For example, you can annotate the property with the <xref:System.Text.Json.Serialization.JsonObjectCreationHandlingAttribute> attribute.
+In .NET 8 and later versions, read-only properties, or those that have no setter either private or public, can also be deserialized. While you can't change the instance that the property references, if the type of the property is mutable, you can modify it. For example, you can add an element to a list. To deserialize a read-only property, you need to set its object creation handling behavior to *populate* instead of *replace*. For example, you can annotate the property with the <xref:System.Text.Json.Serialization.JsonObjectCreationHandlingAttribute> attribute.
 
   ```csharp
   class A
@@ -77,9 +74,7 @@ Read-only properties, or those that have no setter either private or public, can
 
 For more information, see [Populate initialized properties](populate-properties.md).
 
-:::zone-end
-
 ## See also
 
-* [System.Text.Json overview](overview.md)
-* [How to serialize and deserialize JSON](how-to.md)
+- [System.Text.Json overview](overview.md)
+- [How to serialize and deserialize JSON](how-to.md)

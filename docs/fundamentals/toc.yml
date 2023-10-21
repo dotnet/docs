@@ -561,10 +561,10 @@ items:
             href: ../standard/serialization/system-text-json/missing-members.md
           - name: Handle overflow JSON, use JsonElement or JsonNode
             href: ../standard/serialization/system-text-json/handle-overflow.md
-          - name: Populate initialized properties
-            href: ../standard/serialization/system-text-json/populate-properties.md
           - name: Deserialize to immutable types
             href: ../standard/serialization/system-text-json/immutability.md
+          - name: Populate initialized properties
+            href: ../standard/serialization/system-text-json/populate-properties.md
         - name: Migrate from Newtonsoft.Json
           href: ../standard/serialization/system-text-json/migrate-from-newtonsoft.md
         - name: Instantiate JsonSerializerOptions

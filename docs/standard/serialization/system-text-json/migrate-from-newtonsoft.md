@@ -609,7 +609,7 @@ Starting in .NET 8, System.Text.Json supports populating properties, including t
 
 :::zone pivot="dotnet-7-0,dotnet-6-0"
 
-During deserialization, `Newtonsoft.Json` adds objects to a collection even if the property has no setter. System.Text.Json ignores properties that don't have setters. Custom converters can provide this functionality.
+During deserialization, `Newtonsoft.Json` adds objects to a collection even if the property has no setter. System.Text.Json ignores properties that don't have setters. Custom converters can provide this functionality, or you can upgrade to .NET 8, which can populate read-only properties.
 
 :::zone-end
 

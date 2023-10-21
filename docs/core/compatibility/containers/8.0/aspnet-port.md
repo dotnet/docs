@@ -9,6 +9,8 @@ The default ASP.NET Core port configured in .NET container images has been updat
 
 We also added the new `ASPNETCORE_HTTP_PORTS` environment variable as a simpler alternative to `ASPNETCORE_URLS`. The new variable expects a semicolon delimited list of ports numbers, while the older variable expects a more complicated syntax.
 
+Apps build using the older [`WebHost.CreateDefaultBuilder`](https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.webhost.createdefaultbuilder) API won't respect the new `ASPNETCORE_HTTP_PORTS` environment variable and will therefore switch to using a default port of 5000, now that `ASPNETCORE_URLS` is no longer set automatically.
+
 ## Previous behavior
 
 Prior to .NET 8, you could run a container expecting port 80 to be the default port and be able to access the running app.
@@ -56,7 +58,7 @@ $ docker kill 74d866bdaa8a5a09e4a347bba17ced321d77a2524a0853294a123640bcc7f21d
 Mapping port `80` with `ASPNETCORE_HTTP_PORTS` set to port `80`:
 
 ```bash
-$ docker run --rm -d -p 8000:80 -e ASPNETCORE_HTTP_PORTS=80 mcr.microsoft.com/dotnet/samples:aspnetapp 
+$ docker run --rm -d -p 8000:80 -e ASPNETCORE_HTTP_PORTS=80 mcr.microsoft.com/dotnet/samples:aspnetapp
 3cc86b4b3ea1a7303d83171c132b0645d4adf61d80131152936b01661ae82a09
 $ curl http://localhost:8000/Environment
 {"runtimeVersion":".NET 8.0.0-rc.1.23419.4","osVersion":"Alpine Linux v3.18","osArchitecture":"Arm64","user":"root","processorCount":4,"totalAvailableMemoryBytes":4123820032,"memoryLimit":0,"memoryUsage":95383552,"hostName":"3cc86b4b3ea1"}
@@ -84,6 +86,8 @@ There are two ways to respond to this breaking change:
 
 - Recommended: Explicitly set the `ASPNETCORE_HTTP_PORTS`, `ASPNETCORE_HTTPS_PORTS`, and `ASPNETCORE_URLS` environment variables to the desired port. Example: `docker run --rm -it -p 9999:80 -e ASPNETCORE_HTTP_PORTS=80 <my-app>`
 - Update existing commands and configuration that rely on the expected default port of port 80 to reference port 8080 instead. Example: `docker run --rm -it -p 9999:8080 <my-app>`
+
+Apps build using the older [`WebHost.CreateDefaultBuilder`](https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.webhost.createdefaultbuilder) will need to either set `ASPNETCORE_URLS` (not `ASPNETCORE_HTTP_PORTS`) or update the expected default port of port 80 to reference port 5000 instead.
 
 ## Affected APIs
 

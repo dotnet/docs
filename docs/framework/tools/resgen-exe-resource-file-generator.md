@@ -1,7 +1,7 @@
 ---
 title: "Resgen.exe (Resource File Generator)"
 description: Use Resgen.exe, the Resource File Generator. Convert text (.txt, .restext) and XML resource format (.resx) files to embeddable CLR runtime binaries (.resources).
-ms.date: 08/10/2021
+ms.date: 10/23/2023
 helpviewer_keywords: 
   - "resource files, .resources files"
   - "resource files, .resx files"

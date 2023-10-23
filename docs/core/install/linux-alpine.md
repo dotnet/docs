@@ -84,7 +84,7 @@ apk add bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib
 
 [!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 
-To install libgdiplus on Alpine 3.16 or newer, run:
+To install libgdiplus on Alpine 3.16 or later, run:
 
 ```bash
 apk add libgdiplus

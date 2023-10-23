@@ -106,7 +106,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
   * Walk up the directory tree searching for a directory that has a `.git` subfolder. If one is found, create the manifest in that directory.
   * If the previous step doesn't find a directory, walk up the directory tree searching for a directory that has a `.sln/git` file. If one is found, create the manifest in that directory.
   * If neither of the previous two steps finds a directory, create the manifest in the current working directory.
-  
+
 - **`--disable-parallel`**
 
   Prevent restoring multiple projects in parallel.

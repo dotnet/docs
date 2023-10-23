@@ -112,7 +112,7 @@ resgen filename.extension [outputDirectory]
 |.resources file|Conversion fails if file contains non-string resources (including file links)|No issues|Not supported|--|
 |.exe or .dll assembly|Not supported|Not supported|Only string resources (including path names) are recognized as resources|Not supported|
 
-\*In Windows 8.x Store apps, you use .resw files to create resources. Despite the difference of file extension, the .resw file format is identical to the .resx file format, except that .resw files may contain only strings and file paths. You can convert .resx files that contain only strings and file paths into .resw files by simply changing the file extension.
+\*In Windows 8.x Store apps, you use .resw files to create resources. Despite the difference of file extension, the .resw file format is identical to the .resx file format, except that .resw files can contain only strings and file paths. You can convert .resx files that contain only strings and file paths into .resw files by simply changing the file extension.
 
 ## Performing Specific Resgen.exe Tasks
 

@@ -9,7 +9,7 @@ The default ASP.NET Core port configured in .NET container images has been updat
 
 We also added the new `ASPNETCORE_HTTP_PORTS` environment variable as a simpler alternative to `ASPNETCORE_URLS`. The new variable expects a semicolon delimited list of ports numbers, while the older variable expects a more complicated syntax.
 
-Apps build using the older [`WebHost.CreateDefaultBuilder`](https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.webhost.createdefaultbuilder) API won't respect the new `ASPNETCORE_HTTP_PORTS` environment variable and will therefore switch to using a default port of 5000, which is not accessible outside the container, now that `ASPNETCORE_URLS` is no longer set automatically.
+Apps built using the older <xref:Microsoft.AspNetCore.WebHost.CreateDefaultBuilder?displayProperty=nameWithType> API won't respect the new `ASPNETCORE_HTTP_PORTS` environment variable. And now that `ASPNETCORE_URLS` is no longer set automatically, they'll switch to use a default port of 5000.
 
 ## Previous behavior
 

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: <linkedConfiguration> element"
 title: "<linkedConfiguration> element"
-ms.date: "03/30/2017"
+ms.date: "10/23/2023"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/assemblyBinding/linkedConfiguration"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#linkedConfiguration"
@@ -38,7 +38,7 @@ Specifies a configuration file to include.
 
 |     | Description |
 | --- | ----------- |
-| [**\<assemblyBinding>** Element](assemblybinding-element-for-configuration.md) | Specifies assembly binding policy at the configuration level. |
+| [\<assemblyBinding> Element](assemblybinding-element-for-configuration.md) | Specifies assembly binding policy at the configuration level. |
 
 ## Child elements
 
@@ -46,10 +46,10 @@ None
 
 ## Remarks
 
-The **\<linkedConfiguration>** element simplifies servicing for component assemblies. If one or more applications use an assembly that has a configuration file residing in a well-known location, the configuration files of the applications that use the assembly can use the **\<linkedConfiguration>** element to include the assembly configuration file, rather than including configuration information directly. When the component assembly is serviced, updating the common configuration file provides updated configuration information to all applications that use the assembly.
+The **\<linkedConfiguration>** element simplifies servicing for component assemblies. If one or more applications use an assembly that has a configuration file residing in a well-known location, their configuration files can use the \<linkedConfiguration> element to include the assembly configuration file, rather than duplicating configuration information. When the component assembly is serviced, updating the common configuration file provides updated configuration information to all applications that use the assembly.
 
 > [!NOTE]
-> The **\<linkedConfiguration>** element is not supported for applications with Windows side-by-side manifests.
+> The \<linkedConfiguration> element isn't supported for applications with Windows side-by-side manifests.
 
 The following rules govern the use of linked configuration files:
 
@@ -57,17 +57,19 @@ The following rules govern the use of linked configuration files:
 
 - The only format supported for the `href` attribute is `file://`. Local files and UNC files are supported.
 
-- There is no constraint on the number of linked configurations per configuration file.
+- There's no constraint on the number of linked configurations per configuration file.
 
-- All linked configuration files are merged to form one file, similar to the behavior of the `#include` directive in C/C++.
+- All linked configuration files are merged to form one assembly configuration file, similar to the behavior of the `#include` directive in C/C++.
 
-- The **\<linkedConfiguration>** element is allowed only in application configuration files; it's ignored in *Machine.config*.
+- The \<linkedConfiguration> element is allowed only in application configuration files. *Machine.config* ignores this element.
 
-- Circular references are detected and terminated. That is, if the **\<linkedConfiguration>** elements of a series of configuration files form a loop, the loop is detected and stopped.
+- There's no restriction on the content of the included configuration files, as long as they conform to the schema of the parent \<assemblyBinding> element.
+
+- Circular references are detected and terminated. That is, if the \<linkedConfiguration> elements of a series of configuration files form a loop, the loop is detected and stopped.
 
 ## Example
 
-The following example shows how to include configuration file from the local hard disk:
+The following example shows how to include configuration file from a local hard drive:
 
 ```xml
 <configuration>
@@ -79,5 +81,5 @@ The following example shows how to include configuration file from the local har
 
 ## See also
 
-- [**\<assemblyBinding>** Element](assemblybinding-element-for-configuration.md)
+- [\<assemblyBinding> Element](assemblybinding-element-for-configuration.md)
 - [Configuration file schema for the .NET Framework](index.md)

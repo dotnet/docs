@@ -30,13 +30,13 @@ Specifies a configuration file to include.
 
 ## Attribute
 
-|           | Description |
+| Attribute | Description |
 | --------- | ----------- |
 | **href**  | Required attribute.<br><br>The URL of the configuration file to include. The only format supported for the **href** attribute is `file://`. Local files and UNC files are supported. |
 
 ## Parent element
 
-|     | Description |
+| Element | Description |
 | --- | ----------- |
 | [\<assemblyBinding> Element](assemblybinding-element-for-configuration.md) | Specifies assembly binding policy at the configuration level. |
 
@@ -61,7 +61,7 @@ The following rules govern the use of linked configuration files:
 
 - All linked configuration files are merged to form one assembly configuration file, similar to the behavior of the `#include` directive in C/C++.
 
-- The \<linkedConfiguration> element is allowed only in application configuration files. *Machine.config* ignores this element.
+- The \<linkedConfiguration> element is allowed only in application configuration files. If the element appears in a *Machine.config* file, it's ignored.
 
 - There's no restriction on the content of the included configuration files, as long as they conform to the schema of the parent \<assemblyBinding> element.
 

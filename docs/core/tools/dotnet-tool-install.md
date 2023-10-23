@@ -97,7 +97,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 - **`--create-manifest-if-needed`**
 
-  Applies to local tools. To find a manifest, the search algorithm searches up the directory tree for `dotnet-tools.json` or a `.config` folder that contains a `dotnet-tools.json` file.
+  Applies to local tools. Available starting with .NET 8 SDK. To find a manifest, the search algorithm searches up the directory tree for `dotnet-tools.json` or a `.config` folder that contains a `dotnet-tools.json` file.
 
   If a tool-manifest can't be found and the `--create-manifest-if-needed` option is set to false, the `CannotFindAManifestFile` error occurs.
 
@@ -106,7 +106,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
   * Walk up the directory tree searching for a directory that has a `.git` subfolder. If one is found, create the manifest in that directory.
   * If the previous step doesn't find a directory, walk up the directory tree searching for a directory that has a `.sln/git` file. If one is found, create the manifest in that directory.
   * If neither of the previous two steps finds a directory, create the manifest in the current working directory.
-
+  
 - **`--disable-parallel`**
 
   Prevent restoring multiple projects in parallel.

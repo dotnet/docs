@@ -9,7 +9,7 @@ The default ASP.NET Core port configured in .NET container images has been updat
 
 We also added the new `ASPNETCORE_HTTP_PORTS` environment variable as a simpler alternative to `ASPNETCORE_URLS`. The new variable expects a semicolon delimited list of ports numbers, while the older variable expects a more complicated syntax.
 
-Apps build using the older [`WebHost.CreateDefaultBuilder`](https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.webhost.createdefaultbuilder) API won't respect the new `ASPNETCORE_HTTP_PORTS` environment variable and will therefore switch to using a default port of 5000, now that `ASPNETCORE_URLS` is no longer set automatically.
+Apps build using the older [`WebHost.CreateDefaultBuilder`](https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.webhost.createdefaultbuilder) API won't respect the new `ASPNETCORE_HTTP_PORTS` environment variable and will therefore switch to using a default port of 5000, which is not accessible outside the container, now that `ASPNETCORE_URLS` is no longer set automatically.
 
 ## Previous behavior
 
@@ -87,7 +87,7 @@ There are two ways to respond to this breaking change:
 - Recommended: Explicitly set the `ASPNETCORE_HTTP_PORTS`, `ASPNETCORE_HTTPS_PORTS`, and `ASPNETCORE_URLS` environment variables to the desired port. Example: `docker run --rm -it -p 9999:80 -e ASPNETCORE_HTTP_PORTS=80 <my-app>`
 - Update existing commands and configuration that rely on the expected default port of port 80 to reference port 8080 instead. Example: `docker run --rm -it -p 9999:8080 <my-app>`
 
-Apps build using the older [`WebHost.CreateDefaultBuilder`](https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.webhost.createdefaultbuilder) will need to either set `ASPNETCORE_URLS` (not `ASPNETCORE_HTTP_PORTS`) or update the expected default port of port 80 to reference port 5000 instead.
+If your app was built using the older <xref:Microsoft.AspNetCore.WebHost.CreateDefaultBuilder?displayProperty=nameWithType> method, either set `ASPNETCORE_URLS` (not `ASPNETCORE_HTTP_PORTS`) or update the expected default port of port 80 to reference port 5000 instead.
 
 ## Affected APIs
 

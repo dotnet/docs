@@ -3,6 +3,64 @@ title: Errors and warnings associated with reference parameter modifiers
 description: The compiler issues these errors and warnings when you have used the reference parameter modifiers incorrectly. They indicate you've got some mismatch between the modifier on the parameter, the argument, or the use of the parameter in the method.
 f1_keywords:
   - "CS9190"
+  - "CS0192"
+  - "CS0199"
+  - "CS0206"
+  - "CS0631"
+  - "CS0767"
+  - "CS1510"
+  - "CS1605"
+  - "CS1623"
+  - "CS1649"
+  - "CS1651"
+  - "CS1655"
+  - "CS1657"
+  - "CS1741"
+  - "CS1939"
+  - "CS1988"
+  - "CS7084"
+  - "CS8166"
+  - "CS8167"
+  - "CS8168"
+  - "CS8169"
+  - "CS8325"
+  - "CS8326"
+  - "CS8327"
+  - "CS8329"
+  - "CS8330"
+  - "CS8331"
+  - "CS8332"
+  - "CS8337"
+  - "CS8338"
+  - "CS8345"
+  - "CS8351"
+  - "CS8373"
+  - "CS8374"
+  - "CS8388"
+  - "CS8977"
+  - "CS9072"
+  - "CS9077"
+  - "CS9078"
+  - "CS9079"
+  - "CS9096"
+  - "CS9109"
+  - "CS9110"
+  - "CS9116"
+  - "CS9119"
+  - "CS9130"
+  - "CS9190"
+  - "CS9199"
+  - "CS9085"
+  - "CS9086"
+  - "CS9087"
+  - "CS9089"
+  - "CS9091"
+  - "CS9092"
+  - "CS9093"
+  - "CS9094"
+  - "CS9095"
+  - "CS9097"
+  - "CS9184"
   - "CS9191"
   - "CS9192"
   - "CS9193"
@@ -10,10 +68,68 @@ f1_keywords:
   - "CS9196"
   - "CS9197"
   - "CS9198"
-  - "CS9199"
   - "CS9200"
+  - "CS9201"
 helpviewer_keywords:
   - "CS9190"
+  - "CS0192"
+  - "CS0199"
+  - "CS0206"
+  - "CS0631"
+  - "CS0767"
+  - "CS1510"
+  - "CS1605"
+  - "CS1623"
+  - "CS1649"
+  - "CS1651"
+  - "CS1655"
+  - "CS1657"
+  - "CS1741"
+  - "CS1939"
+  - "CS1988"
+  - "CS7084"
+  - "CS8166"
+  - "CS8167"
+  - "CS8168"
+  - "CS8169"
+  - "CS8325"
+  - "CS8326"
+  - "CS8327"
+  - "CS8329"
+  - "CS8330"
+  - "CS8331"
+  - "CS8332"
+  - "CS8337"
+  - "CS8338"
+  - "CS8345"
+  - "CS8351"
+  - "CS8373"
+  - "CS8374"
+  - "CS8388"
+  - "CS8977"
+  - "CS9072"
+  - "CS9077"
+  - "CS9078"
+  - "CS9079"
+  - "CS9096"
+  - "CS9109"
+  - "CS9110"
+  - "CS9116"
+  - "CS9119"
+  - "CS9130"
+  - "CS9190"
+  - "CS9199"
+  - "CS9085"
+  - "CS9086"
+  - "CS9087"
+  - "CS9089"
+  - "CS9091"
+  - "CS9092"
+  - "CS9093"
+  - "CS9094"
+  - "CS9095"
+  - "CS9097"
+  - "CS9184"
   - "CS9191"
   - "CS9192"
   - "CS9193"
@@ -21,74 +137,183 @@ helpviewer_keywords:
   - "CS9196"
   - "CS9197"
   - "CS9198"
-  - "CS9199"
   - "CS9200"
-ms.date: 10/16/2023
+  - "CS9201"
+ms.date: 10/24/2023
 ---
 # Errors and warnings associated with reference parameters, variables, and returns
 
 The following errors may be generated when source generators or interceptors are loaded during a compilation:
 
-- CS0192: ERR_RefReadonly
-  - A readonly field cannot be used as a ref or out value (except in a constructor)
-- CS0199: ERR_RefReadonlyStatic
-  - A static readonly field cannot be used as a ref or out value (except in a static constructor)
-- CS0206: ERR_RefProperty
-  - A non ref-returning property or indexer may not be used as an out or ref value
-- CS0631: ERR_IllegalRefParam
-  - ref and out are not valid in this context
-- CS0767: ERR_ExplicitImplCollisionOnRefOut
-  - Cannot inherit interface '{0}' with the specified type parameters because it causes method '{1}' to contain overloads which differ only on ref and out
-- CS1510: ERR_RefLvalueExpected
-  - A ref or out value must be an assignable variable
-- CS1605: ERR_RefReadonlyLocal
-  - Cannot use '{0}' as a ref or out value because it is read-only
-- CS1623: ERR_BadIteratorArgType
-  - Iterators cannot have ref, in or out parameters
-- CS1649: ERR_RefReadonly2
-  - Members of readonly field '{0}' cannot be used as a ref or out value (except in a constructor)
-- CS1651: ERR_RefReadonlyStatic2
-  - Fields of static readonly field '{0}' cannot be used as a ref or out value (except in a static constructor)
-- CS1655: ERR_RefReadonlyLocal2Cause
-  - Cannot use fields of '{0}' as a ref or out value because it is a '{1}'
-- CS1657: ERR_RefReadonlyLocalCause
-  - Cannot use '{0}' as a ref or out value because it is a '{1}'
-- CS1741: ERR_RefOutDefaultValue
-  - A ref or out parameter cannot have a default value
-- CS1939: ERR_QueryOutRefRangeVariable
-  - Cannot pass the range variable '{0}' as an out or ref parameter
-- CS1988: ERR_BadAsyncArgType
-  - Async methods cannot have ref, in or out parameters
-- CS8166: ERR_RefReturnParameter
-  - Cannot return a parameter by reference '{0}' because it is not a ref parameter
-- CS8167: ERR_RefReturnParameter2
-  - Cannot return by reference a member of parameter '{0}' because it is not a ref or out parameter
-- CS8168: ERR_RefReturnLocal
-  - Cannot return local '{0}' by reference because it is not a ref local
-- CS8169: ERR_RefReturnLocal2
-  - Cannot return a member of local '{0}' by reference because it is not a ref local
-- CS8373: ERR_RefLocalOrParamExpected
-  - The left-hand side of a ref assignment must be a ref variable.
-- CS8374: ERR_RefAssignNarrower
-  - Cannot ref-assign '{1}' to '{0}' because '{1}' has a narrower escape scope than '{0}'.
+- [**CS0192**](#readonly-fields-and-variables-cant-be-writable-reference-variables) - *A `readonly` field cannot be used as a `ref` or `out` value (except in a constructor)*
+- [**CS0199**](#readonly-fields-and-variables-cant-be-writable-reference-variables) - *A `static readonly` field cannot be used as a `ref` or `out` value (except in a static constructor)*
+- [**CS0206**](#reference-variable-cant-be-value-expression) - *A non ref-returning property or indexer may not be used as an `out` or `ref` value*
+- [**CS0631**](#incompatible-language-constructs) - *`ref` and `out` are not valid in this context*
+- [**CS0767**](#incompatible-language-constructs) - *Cannot inherit interface with the specified type parameters because it causes method to contain overloads which differ only on `ref` and `out`*
+- [**CS1510**](#reference-variable-cant-be-value-expression) - *A `ref` or `out` value must be an assignable variable*
+- [**CS1605**](#readonly-fields-and-variables-cant-be-writable-reference-variables) - *Cannot use variable as a `ref` or `out` value because it is read-only*
+- [**CS1623**](#incompatible-language-constructs) - *Iterators cannot have `ref`, `in` or `out` parameters*
+- [**CS1649**](#readonly-fields-and-variables-cant-be-writable-reference-variables) - *Members of a `readonly` field cannot be used as a `ref` or `out` value (except in a constructor)*
+- [**CS1651**](#readonly-fields-and-variables-cant-be-writable-reference-variables) - *Fields of a static readonly field cannot be used as a `ref` or `out` value (except in a static constructor)*
+- [**CS1655**](#readonly-fields-and-variables-cant-be-writable-reference-variables) - *Cannot use fields of type as a `ref` or `out` value*
+- [**CS1657**](#reference-variable-cant-be-value-expression) - *Cannot use variable as a `ref` or `out` value*
+- [**CS1741**](#incompatible-language-constructs) - *A `ref` or `out` parameter cannot have a default value*
+- [**CS1939**](#incompatible-language-constructs) - *Cannot pass the range variable as an `out` or `ref` parameter*
+- [**CS1988**](#incompatible-language-constructs) - *Async methods cannot have `ref`, `in` or `out` parameters*
+- [**CS7084**](#incompatible-language-constructs) - *A Windows Runtime event may not be passed as an `out` or `ref` parameter.*
+- [**CS8166**](#ref-safety-violations) - *Cannot return a parameter by reference because it is not a `ref` parameter*
+- [**CS8167**](#ref-safety-violations) - *Cannot return by reference a member of parameter because it is not a `ref` or `out` parameter*
+- [**CS8168**](#ref-safety-violations) - *Cannot return local by reference because it is not a ref local*
+- [**CS8169**](#ref-safety-violations) - *Cannot return a member of local variable by reference because it is not a ref local*
+- [**CS8325**](#incompatible-language-constructs) - *'`await`' cannot be used in an expression containing a `ref` conditional operator*
+- [**CS8326**](#incompatible-language-constructs) - *Both conditional operator values must be ref values or neither may be a ref value*
+- [**CS8327**](#incompatible-language-constructs) - *The expression must be of correct type to match the alternative ref value*
+- [**CS8329**](#readonly-fields-and-variables-cant-be-writable-reference-variables) - *Cannot use variable as a `ref` or `out` value because it is a readonly variable*
+- [**CS8330**](#readonly-fields-and-variables-cant-be-writable-reference-variables) - *Members of variable cannot be used as a `ref` or `out` value because it is a readonly variable*
+- [**CS8331**](#readonly-fields-and-variables-cant-be-writable-reference-variables) - *Cannot assign to variable or use it as the right hand side of a `ref` assignment because it is a readonly variable*
+- [**CS8332**](#readonly-fields-and-variables-cant-be-writable-reference-variables) - *Cannot assign to a member of variable or use it as the right hand side of a `ref` assignment because it is a readonly variable*
+- [**CS8337**](#incompatible-language-constructs) - *The first parameter of a '`ref`' extension method must be a value type or a generic type constrained to struct.*
+- [**CS8338**](#incompatible-language-constructs) - *The first '`in`' or '`ref readonly`' parameter of the extension method must be a concrete (non-generic) value type.*
+- [**CS8345**](#ref-safety-violations) - *Field or auto-implemented property cannot be of type unless it is an instance member of a `ref struct`.*
+- [**CS8351**](#ref-safety-violations) - *Branches of a `ref` conditional operator cannot refer to variables with incompatible declaration scopes*
+- [**CS8373**](#incompatible-language-constructs) - *The left-hand side of a `ref` assignment must be a ref variable.*
+- [**CS8374**](#ref-safety-violations) - *Cannot ref-assign source has a narrower escape scope than destination.*
+- [**CS8388**](#incompatible-language-constructs) - *An `out` variable cannot be declared as a ref local*
+- [**CS8977**](#incompatible-language-constructs) - *Cannot use '`ref`', '`in`', or '`out`' in the signature of a method attributed with 'UnmanagedCallersOnly'.*
+- [**CS9072**](#incompatible-language-constructs) - *A deconstruction variable cannot be declared as a ref local*
+- [**CS9077**](#ref-safety-violations) - *Cannot return a parameter by reference through a `ref` parameter; it can only be returned in a return statement*
+- [**CS9078**](#ref-safety-violations) - *Cannot return by reference a member of parameter through a `ref` parameter; it can only be returned in a return statement*
+- [**CS9079**](#ref-safety-violations) - *Cannot ref-assign because source can only escape the current method through a return statement.*
+- [**CS9096**](#ref-safety-violations) - *Cannot ref-assign because source has a wider value escape scope than destination allowing assignment through source of values with narrower escapes scopes than destination.*
+- [**CS9109**](#ref-safety-violations) - *Cannot use `ref`, `out`, or `in` primary constructor parameter inside an instance member*
+- [**CS9110**](#ref-safety-violations) - *Cannot use primary constructor parameter that has ref-like type inside an instance member*
+- [**CS9116**](#readonly-fields-and-variables-cant-be-writable-reference-variables) - *A primary constructor parameter of a readonly type cannot be used as a `ref` or `out` value (except in init-only setter of the type or a variable initializer)*
+- [**CS9119**](#readonly-fields-and-variables-cant-be-writable-reference-variables) - *Members of primary constructor parameter of a readonly type cannot be used as a `ref` or `out` value (except in init-only setter of the type or a variable initializer)*
+- [**CS9130**](#incompatible-language-constructs) - *Using alias cannot be a '`ref`' type.*
+- [**CS9190**](#incompatible-language-constructs) - *`readonly` modifier must be specified after `ref`.*
+- [**CS9199**](#incompatible-language-constructs) - *A `ref readonly` parameter cannot have the Out attribute.*
 
-- **CS9190**: `readonly` modifier must be specified after `ref`.
-- **CS9199**: A ref readonly parameter cannot have the Out attribute.
+The following warnings may be generated when reference variables are used incorrectly:
 
-The following warnings may be generated when source generators or interceptors are loaded during a compilation:
-
-- **CS9191**: The `ref` modifier for argument corresponding to `in` parameter is equivalent to `in`. Consider using `in` instead.
-- **CS9192**: Argument should be passed with `ref` or `in` keyword.
-- **CS9193**: Argument should be a variable because it is passed to a `ref readonly` parameter
-- **CS9195**: Argument should be passed with the `in` keyword
-- **CS9196**: Reference kind modifier of parameter doesn't match the corresponding parameter in overridden or implemented member.
-- **CS9197**: Reference kind modifier of parameter doesn't match the corresponding parameter in hidden member.
-- **CS9198**: Reference kind modifier of parameter doesn't match the corresponding parameter in target.
-- **CS9200**: A default value is specified for `ref readonly` parameter, but `ref readonly` should be used only for references. Consider declaring the parameter as `in`.
+- [**CS9085**](#ref-safety-violations) - *This ref-assigns variable but destination has a narrower escape scope than source.*
+- [**CS9086**](#ref-safety-violations) - *The branches of the `ref` conditional operator refer to variables with incompatible declaration scopes*
+- [**CS9087**](#ref-safety-violations) - *This returns a parameter by reference but it is not a `ref` parameter*
+- [**CS9089**](#ref-safety-violations) - *This returns by reference a member of parameter that is not a `ref` or `out` parameter*
+- [**CS9091**](#ref-safety-violations) - *This returns local by reference but it is not a ref local*
+- [**CS9092**](#ref-safety-violations) - *This returns a member of local by reference but it is not a ref local*
+- [**CS9093**](#ref-safety-violations) - *This ref-assigns but source can only escape the current method through a return statement.*
+- [**CS9094**](#ref-safety-violations) - *This returns a parameter by reference through a `ref` parameter; but it can only safely be returned in a return statement*
+- [**CS9095**](#ref-safety-violations) - *This returns by reference a member of parameter through a `ref` parameter; but it can only safely be returned in a return statement*
+- [**CS9097**](#ref-safety-violations) - *This ref-assigns  but source has a wider value escape scope than destination allowing assignment through destination of values with narrower escapes scopes than source.*
+- [**CS9184**](#incompatible-language-constructs) - *'Inline arrays' language feature is not supported for inline array types with element field which is either a '`ref`' field, or has type that is not valid as a type argument.*
+- [**CS9191**](#reference-variable-cant-be-value-expression) - *The `ref` modifier for argument corresponding to `in` parameter is equivalent to `in`. Consider using `in` instead.*
+- [**CS9192**](#reference-variable-cant-be-value-expression) - *Argument should be passed with `ref` or `in` keyword.*
+- [**CS9193**](#reference-variable-cant-be-value-expression) - *Argument should be a variable because it is passed to a `ref readonly` parameter*
+- [**CS9195**](#reference-variable-cant-be-value-expression) - *Argument should be passed with the `in` keyword*
+- [**CS9196**](#incompatible-language-constructs) - *Reference kind modifier of parameter doesn't match the corresponding parameter in overridden or implemented member.*
+- [**CS9197**](#incompatible-language-constructs) - *Reference kind modifier of parameter doesn't match the corresponding parameter in hidden member.*
+- [**CS9198**](#incompatible-language-constructs) - *Reference kind modifier of parameter doesn't match the corresponding parameter in target.*
+- [**CS9200**](#incompatible-language-constructs) - *A default value is specified for `ref readonly` parameter, but `ref readonly` should be used only for references. Consider declaring the parameter as `in`.*
+- [**CS9201**](#incompatible-language-constructs) - *Ref field should be ref-assigned before use.*
 
 These errors and warnings follow these themes:
 
-## Compiler Error CS0192
+- ***[Language constructs where `ref` variables aren't valid](#incompatible-language-constructs)*** - Some C# idioms don't allow variables. Usually this is because ref safety analysis can't be performed reliably.
+- ***[Value expression used as reference variable](#reference-variable-cant-be-value-expression)*** - The expression used as a reference variable must be a variable, not a value expression.
+- ***[Readonly variables used as writable reference variables](#readonly-fields-and-variables-can-be-writable-reference-variables)*** - A reference to a readonly variable can't be passed by writable reference.
+- ***[violations of ref safety](#ref-safety-violations)*** - A reference variable can't refer to a variable that has a narrower context. That would mean the reference variable could refer to invalid memory.
+
+## Incompatible language constructs
+
+- **CS0631** - *`ref` and `out` are not valid in this context*
+- **CS0767** - *Cannot inherit interface with the specified type parameters because it causes method to contain overloads which differ only on `ref` and `out`*
+- **CS1623** - *Iterators cannot have `ref`, `in` or `out` parameters*
+- **CS1741** - *A `ref` or `out` parameter cannot have a default value*
+- **CS1939** - *Cannot pass the range variable as an `out` or `ref` parameter*
+- **CS1988** - *Async methods cannot have `ref`, `in` or `out` parameters*
+- **CS7084** - *A Windows Runtime event may not be passed as an `out` or `ref` parameter.*
+- **CS8325** - *'await' cannot be used in an expression containing a `ref` conditional operator*
+- **CS8326** - *Both conditional operator values must be ref values or neither may be a ref value*
+- **CS8327** - *The expression must be of correct type to match the alternative ref value*
+- **CS8337** - *The first parameter of a '`ref`' extension method must be a value type or a generic type constrained to struct.*
+- **CS8338** - *The first '`in`' or '`ref readonly`' parameter of the extension method must be a concrete (non-generic) value type.*
+- **CS8373** - *The left-hand side of a `ref` assignment must be a ref variable.*
+- **CS8388** - *An `out` variable cannot be declared as a ref local*
+- **CS8977** - *Cannot use '`ref`', '`in`', or '`out`' in the signature of a method attributed with 'UnmanagedCallersOnly'.*
+- **CS9072** - *A deconstruction variable cannot be declared as a ref local*
+- **CS9130** - *Using alias cannot be a '`ref`' type.*
+- **CS9190** - *`readonly` modifier must be specified after `ref`.*
+- **CS9199** - *A `ref readonly` parameter cannot have the Out attribute.*
+
+Warnings:
+
+- **CS9184** - *'Inline arrays' language feature is not supported for inline array types with element field which is either a '`ref`' field, or has type that is not valid as a type argument.*
+- **CS9196** - *Reference kind modifier of parameter doesn't match the corresponding parameter in overridden or implemented member.*
+- **CS9197** - *Reference kind modifier of parameter doesn't match the corresponding parameter in hidden member.*
+- **CS9198** - *Reference kind modifier of parameter doesn't match the corresponding parameter in target.*
+- **CS9200** - *A default value is specified for `ref readonly` parameter, but `ref readonly` should be used only for references. Consider declaring the parameter as `in`.*
+- **CS9201** - *Ref field should be ref-assigned before use.*
+
+## Reference variable can't be value expression
+
+- **CS0206** - *A non ref-returning property or indexer may not be used as an `out` or `ref` value*
+- **CS1510** - *A `ref` or `out` value must be an assignable variable*
+- **CS1657** - *Cannot use variable as a `ref` or `out` value*
+
+Warnings:
+
+- **CS9191** - *The `ref` modifier for argument corresponding to `in` parameter is equivalent to `in`. Consider using `in` instead.*
+- **CS9192** - *Argument should be passed with `ref` or `in` keyword.*
+- **CS9193** - *Argument should be a variable because it is passed to a `ref readonly` parameter*
+- **CS9195** - *Argument should be passed with the `in` keyword*
+
+## Readonly fields and variables can't be writable reference variables
+
+- **CS0192** - *A `readonly` field cannot be used as a `ref` or `out` value (except in a constructor)*
+- **CS0199** - *A `static readonly` field cannot be used as a `ref` or `out` value (except in a static constructor)*
+- **CS1605** - *Cannot use variable as a `ref` or `out` value because it is read-only*
+- **CS1649** - *Members of a `readonly` field cannot be used as a `ref` or `out` value (except in a constructor)*
+- **CS1651** - *Fields of a `static readonly` field cannot be used as a `ref` or `out` value (except in a static constructor)*
+- **CS1655** - *Cannot use fields of type as a `ref` or `out` value*
+- **CS8329** - *Cannot use variable as a `ref` or `out` value because it is a readonly variable*
+- **CS8330** - *Members of variable cannot be used as a `ref` or `out` value because it is a readonly variable*
+- **CS8331** - *Cannot assign to variable or use it as the right hand side of a `ref` assignment because it is a readonly variable*
+- **CS8332** - *Cannot assign to a member of variable or use it as the right hand side of a `ref` assignment because it is a readonly variable*
+- **CS9116** - *A primary constructor parameter of a `readonly` type cannot be used as a `ref` or `out` value (except in init-only setter of the type or a variable initializer)*
+- **CS9119** - *Members of primary constructor parameter of a readonly type cannot be used as a `ref` or `out` value (except in init-only setter of the type or a variable initializer)*
+
+## Ref safety violations
+
+- **CS8166** - *Cannot return a parameter by reference because it is not a `ref` parameter*
+- **CS8167** - *Cannot return by reference a member of parameter because it is not a `ref` or `out` parameter*
+- **CS8168** - *Cannot return local by reference because it is not a ref local*
+- **CS8169** - *Cannot return a member of local variable by reference because it is not a ref local*
+- **CS8345** - *Field or auto-implemented property cannot be of type unless it is an instance member of a `ref struct`.*
+- **CS8351** - *Branches of a `ref` conditional operator cannot refer to variables with incompatible declaration scopes*
+- **CS8374** - *Cannot ref-assign source has a narrower escape scope than destination.*
+- **CS9077** - *Cannot return a parameter by reference through a `ref` parameter; it can only be returned in a return statement*
+- **CS9078** - *Cannot return by reference a member of parameter through a `ref` parameter; it can only be returned in a return statement*
+- **CS9079** - *Cannot ref-assign source to destination because source can only escape the current method through a return statement.*
+- **CS9096** - *Cannot ref-assign source to destination because source has a wider value escape scope than destination allowing assignment through destination of values with narrower escapes scopes than source.*
+- **CS9109** - *Cannot use `ref`, `out`, or `in` primary constructor parameter inside an instance member*
+- **CS9110** - *Cannot use primary constructor parameter that has ref-like type inside an instance member*
+
+Warnings:
+
+- **CS9085** - *This ref-assigns source to destination but source has a narrower escape scope than destination.*
+- **CS9086** - *The branches of the ref conditional operator refer to variables with incompatible declaration scopes*
+- **CS9087** - *This returns a parameter by reference but it is not a `ref` parameter*
+- **CS9089** - *This returns by reference a member of parameter that is not a `ref` or `out` parameter*
+- **CS9091** - *This returns local by reference but it is not a ref local*
+- **CS9092** - *This returns a member of local by reference but it is not a ref local*
+- **CS9093** - *This ref-assigns source to destination but source can only escape the current method through a return statement.*
+- **CS9094** - *This returns a parameter by reference through a `ref` parameter; but it can only safely be returned in a return statement*
+- **CS9095** - *This returns by reference a member of parameter through a `ref` parameter; but it can only safely be returned in a return statement*
+- **CS9097** - *This ref-assigns source to destination but source has a wider value escape scope than destination allowing assignment through destination of values with narrower escapes scopes than source.*
+
+## Old content starts here
+
+### Compiler Error CS0192
 
 Fields of static readonly field 'name' cannot be passed ref or out (except in a static constructor)
 
@@ -124,7 +349,7 @@ class MyClass
 }
 ```
 
-## Compiler Error CS0199
+### Compiler Error CS0199
 
 Fields of static readonly field 'name' cannot be passed ref or out (except in a static constructor)
 
@@ -154,7 +379,7 @@ class MyClass
 }
 ```
 
-## Compiler Error CS0206
+### Compiler Error CS0206
 
 A property or indexer may not be passed as an out or ref parameter
 
@@ -191,7 +416,7 @@ public class MyClass
 }
 ```
 
-## Compiler Error CS0631
+### Compiler Error CS0631
 
 ref and out are not valid in this context
 
@@ -222,7 +447,7 @@ public class MyClass2
 }
 ```
 
-## Compiler Error CS0767
+### Compiler Error CS0767
 
 Cannot inherit interface with the specified type parameters because it causes method to contain overloads which differ only on ref and out
 
@@ -269,7 +494,7 @@ The simplest way to correct this error is to use different type arguments for `I
     }
 ```
 
-## Compiler Error CS1510
+### Compiler Error CS1510
 
 A ref or out argument must be an assignable variable
 
@@ -297,7 +522,7 @@ public class C
 }
 ```
 
-## Compiler Error CS1605
+### Compiler Error CS1605
 
 Cannot pass 'var' as a ref or out argument because it is read-only
 
@@ -318,7 +543,7 @@ class C
 }
 ```
 
-## Compiler Error CS1623
+### Compiler Error CS1623
 
 Iterators cannot have in ref or out parameters
 
@@ -357,7 +582,7 @@ class C : IEnumerable
 }
 ```
 
-## Compiler Error CS1649
+### Compiler Error CS1649
 
 Members of readonly field 'identifier' cannot be passed ref or out (except in a constructor)
 
@@ -394,7 +619,7 @@ class D
 }
 ```
 
-## Compiler Error CS1651
+### Compiler Error CS1651
 
 Fields of static readonly field 'identifier' cannot be passed ref or out (except in a static constructor)
 
@@ -430,7 +655,7 @@ class D
 }
 ```
 
-## Compiler Error CS1655
+### Compiler Error CS1655
 
 Cannot pass fields of 'variable' as a ref or out argument because it is a 'readonly variable type'
 
@@ -462,7 +687,7 @@ class CMain
 }
 ```
 
-## Compiler Error CS1657
+### Compiler Error CS1657
 
 Cannot pass 'parameter' as a ref or out argument because 'reason'
 
@@ -513,7 +738,7 @@ unsafe class C
 }
 ```
 
-## Compiler Error CS1741
+### Compiler Error CS1741
 
  `ref` or `out` parameter cannot have a default value
 
@@ -550,7 +775,8 @@ In this example, removing the `ref` modifier from the method signature would be 
         RefOut(ref y);
     }
 ```
-## Compiler Error CS1939
+
+### Compiler Error CS1939
 
 Cannot pass the range variable 'name' as an out or ref parameter.
 
@@ -578,7 +804,7 @@ class Test
 }
 ```
 
-## Compiler Error CS1988
+### Compiler Error CS1988
 
 Async methods cannot have `ref`, `in` or `out` parameters
 
@@ -615,7 +841,7 @@ One reason to use the `ref` keyword is that a method conceptually has more than 
     }
 ```
 
-## Compiler Error CS8166
+### Compiler Error CS8166
 
 Cannot return a parameter by reference because it is not a ref parameter
 
@@ -655,7 +881,7 @@ public class Test
 }
 ```
 
-## Compiler Error CS8167
+### Compiler Error CS8167
 
 Cannot return by reference a member of parameter because it is not a ref or out parameter
 
@@ -695,7 +921,7 @@ public class Test
 }
 ```
 
-## Compiler Error CS8168
+### Compiler Error CS8168
 
 Cannot return local by reference because it is not a ref local
 
@@ -733,7 +959,7 @@ public class Test
 }
 ```
 
-## Compiler Error CS8169
+### Compiler Error CS8169
 
 Cannot return a member of local by reference because it is not a ref local
 
@@ -763,7 +989,7 @@ public class Test
 
 Using a `ref` to `S1.x` within the `Test1` method is valid because use of the reference does not leave the scope of the value type `l`.  Upon returning from `Test`, `l` would become invalid along with any references to its properties.
 
-## Compiler Error CS8373
+### Compiler Error CS8373
 
 The left-hand side of a ref assignment must be a ref variable.
 
@@ -781,8 +1007,6 @@ public class C
 }
 ```
 
-## To correct this error
-
 To assign the value of a `ref` variable, removing the `ref` keyword corrects this error:
 
 ```csharp
@@ -795,7 +1019,7 @@ public class C
 }
 ```
 
-## Compiler Error CS8374
+### Compiler Error CS8374
 
 Cannot ref-assign to because has a narrower escape scope than.
 

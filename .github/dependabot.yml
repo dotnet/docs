@@ -429,6 +429,18 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
+    directory: "/docs/core/resilience/snippets/http-resilience" #http-resilience.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/resilience/snippets/resilience" #resilience.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
     directory: "/docs/core/testing/snippets/order-unit-tests/csharp/MSTest.Project" #MSTest.Project.csproj
     schedule:
       interval: "weekly"
@@ -1191,13 +1203,13 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/samples/snippets/standard/data/sqlite/SystemLibrarySample" #SystemLibrarySample.csproj
+    directory: "/samples/snippets/visualbasic/programming-guide/dynamic-linq-expression-trees" #dynamic-linq-expression-trees.vbproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/samples/snippets/visualbasic/programming-guide/dynamic-linq-expression-trees" #dynamic-linq-expression-trees.vbproj
+    directory: "/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/VB" #CustomCopyToDataTableVB.vbproj
     schedule:
       interval: "weekly"
       day: "wednesday"

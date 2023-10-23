@@ -108,9 +108,11 @@ resgen filename.extension [outputDirectory]
 |Convert from|To text file|To .resx file|To .resw file|To .resources file|
 |------------------|------------------|-------------------|-------------------|------------------------|
 |Text (.txt or .restext) file|--|No issues|Not supported|No issues|
-|.resx file|Conversion fails if file contains non-string resources (including file links)|--|Not supported|No issues|
+|.resx file|Conversion fails if file contains non-string resources (including file links)|--|Not supported\*|No issues|
 |.resources file|Conversion fails if file contains non-string resources (including file links)|No issues|Not supported|--|
 |.exe or .dll assembly|Not supported|Not supported|Only string resources (including path names) are recognized as resources|Not supported|
+
+\*In Windows 8.x Store apps, you use .resw files to create resources. Despite the difference of file extension, the .resw file format is identical to the .resx file format, except that .resw files may contain only strings and file paths. You can convert .resx files that contain only strings and file paths into .resw files by simply changing the file extension.
 
 ## Performing Specific Resgen.exe Tasks
 
@@ -184,7 +186,7 @@ resgen Resources.resx Resources.resources
 
  The syntax is the same as that shown in the previous section.
 
- In addition, you can use Resgen.exe to convert embedded resources in a .NET Framework assembly to a .resw file tor Windows 8.x Store apps.
+ In addition, you can use Resgen.exe to convert embedded resources in a .NET Framework assembly to a .resw file for Windows 8.x Store apps.
 
  The following command reads a binary resources file Resources.resources and writes an XML-based output file named Resources.resx.
 
@@ -256,9 +258,9 @@ resgen MyApp.exe Win8Resources
 
  Starting with .NET Framework 4.5, Resgen.exe supports conditional compilation of string resources in text (.txt and .restext) files. This enables you to use a single text-based resource file in multiple build configurations.
 
- In a .txt or .restext file, you use the `#ifdef`…`#endif` construct to include a resource in the binary .resources file if a symbol is defined, and you use the `#if !`... `#endif` construct to include a resource if a symbol is not defined. At compile time, you then define symbols by using the `/define:` option followed by a comma-delimited list of symbols. The comparison is cased-sensitive; the case of symbols defined by `/define` must match the case of symbols in the text files to be compiled.
+ In a .txt or .restext file, you use the `#ifdef`…`#endif` construct to include a resource in the binary .resources file if a symbol is defined, and you use the `#if !`... `#endif` construct to include a resource if a symbol is not defined. At compile time, you then define symbols by using the `/define:` option followed by a comma-delimited list of symbols. The comparison is case-sensitive. The case of symbols defined by `/define` must match the case of symbols in the text files to be compiled.
 
- For example, the following file named UIResources.rext includes a string resource named `AppTitle` that can take one of three values, depending on whether symbols named `PRODUCTION`, `CONSULT`, or `RETAIL` are defined.
+ For example, the following file named UIResources.text includes a string resource named `AppTitle` that can take one of three values, depending on whether symbols named `PRODUCTION`, `CONSULT`, or `RETAIL` are defined.
 
 ```text
 #ifdef PRODUCTION

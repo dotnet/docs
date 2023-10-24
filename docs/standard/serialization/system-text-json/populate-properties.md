@@ -50,7 +50,10 @@ Starting in .NET 8, you can change the deserialization behavior to modify (*popu
 
 ### Read-only properties
 
-For reference type properties, since the value that the property references isn't *replaced* (that is, doesn't require a setter), if the type of the property is mutable, deserialization can also populate *read-only* properties. This doesn't apply to struct type properties since the instance must be replaced with a modified copy.
+For populating reference properties that are mutable, since the instance that the property references isn't *replaced*, the property doesn't need to have a setter. This behavior means that deserialization can also populate *read-only* properties.
+
+> [!NOTE]
+> Struct properties still require setters because the instance is replaced with a modified copy.
 
 ### Collection property example
 
@@ -111,7 +114,7 @@ There are multiple ways to specify a preference for *replace* or *populate*:
 
 - Use the <xref:System.Text.Json.Serialization.JsonObjectCreationHandlingAttribute> attribute to annotate at the type or property level. If you set the attribute at the type level and set its <xref:System.Text.Json.Serialization.JsonObjectCreationHandlingAttribute.Handling> property to <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Populate>, the behavior will only apply to those properties where population is possible (for example, value types must have a setter).
 
-  If you want to set the type-wide behavior preference to <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Populate>, but want to exclude one or more properties from that, you can add the attribute at the type level and again at the property level to override the behavior preference for that property. That pattern is shown in the following code.
+  If you want the type-wide preference to be <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Populate>, but want to exclude one or more properties from that behavior, you can add the attribute at the type level and again at the property level to override the inherited behavior. That pattern is shown in the following code.
 
   ```csharp
   // Type-level preference is Populate.

@@ -52,7 +52,7 @@ The property name set by this attribute:
 
 * Applies in both directions, for serialization and deserialization.
 * Takes precedence over property naming policies.
-* [Doesn't affect parameter name matching for parameterized constructors](immutability.md#immutable-types-and-records).
+* [Doesn't affect parameter name matching for parameterized constructors](immutability.md#parameterized-constructors).
 
 ## Use a built-in naming policy
 

@@ -31,8 +31,9 @@ The switch to re-enable functionality on non-Windows operating systems was added
 
 To use these APIs for cross-platform apps, migrate to an alternative library, such as one of the following:
 
-- [ImageSharp](https://sixlabors.com/products/imagesharp)
 - [SkiaSharp](https://github.com/mono/SkiaSharp)
+- [ImageSharp](https://sixlabors.com/products/imagesharp) (tiered license)
+- [Aspose.Drawing](https://products.aspose.com/drawing/net/) (commercial license)
 - [Microsoft.Maui.Graphics](/dotnet/maui/user-interface/graphics/)
 
 ## Affected APIs

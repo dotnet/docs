@@ -10,7 +10,7 @@ ms.topic: how-to
 
 # Populate initialized properties
 
-Starting in .NET 8, you can specify a preference to either [replace](#replace-behavior) or [populate](#populate-behavior) .NET properties when JSON is deserialized. The <xref:System.Text.Json.Serialization.JsonObjectCreationHandling> enum fields provide the object creation handling choices:
+Starting in .NET 8, you can specify a preference to either [replace](#default-replace-behavior) or [populate](#populate-behavior) .NET properties when JSON is deserialized. The <xref:System.Text.Json.Serialization.JsonObjectCreationHandling> enum fields provide the object creation handling choices:
 
 - <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Replace?displayProperty=nameWithType> (matches the default behavior)
 - <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Populate?displayProperty=nameWithType>
@@ -44,9 +44,25 @@ Starting in .NET 8, you can change the deserialization behavior to modify (*popu
 
 - For a collection type property, any existing values are kept, and new values from the JSON are added to the collection.
 - For a non-collection reference type property, its mutable properties are updated to the JSON value but the reference itself doesn't change.
-- For a struct type property, the effective behavior is that for its mutable properties, the existing values are kept, and new values from the JSON are added. However, unlike a reference property, the object itself isn't reused since it's a value type. Instead, a copy of the struct is modified and then reassigned to the property.
+- For a struct type property, the effective behavior is that for its mutable properties, the existing values are kept, and new values from the JSON are added. However, unlike a reference property, the object itself isn't reused since it's a value type. Instead, a copy of the struct is modified and then reassigned to the property. For example, after executing the following code, `a.S1.Numbers3` contains the values 1, 2, 3, 4, 5, and 6.
 
-Since the value that the property references isn't *replaced* (that is, doesn't require a setter), if the type of the property is mutable, deserialization can also populate *read-only* properties.
+  ```csharp
+  A? a = JsonSerializer.Deserialize<A>("""{"S1": {"Numbers3": [4,5,6]}}""");
+
+  class A
+  {
+    public S S1 { get; set; } = new S();
+  }
+
+  struct S
+  {
+      public S() { }
+      [JsonObjectCreationHandling(JsonObjectCreationHandling.Populate)]
+      public List<int> Numbers3 { get; } = new List<int>() { 1, 2, 3 };
+  }
+  ```
+
+For reference type properties, since the value that the property references isn't *replaced* (that is, doesn't require a setter), if the type of the property is mutable, deserialization can also populate *read-only* properties. This doesn't apply to struct type properties since the instance must be replaced with a modified copy.
 
 Consider the same example class `A` from the previous exception, but this time annotated with a preference for *populating* properties instead of replacing them:
 

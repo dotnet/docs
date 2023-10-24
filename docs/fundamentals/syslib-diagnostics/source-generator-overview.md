@@ -122,8 +122,8 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1100][1100] | Type is not supported. |
 | [SYSLIB1101][1101] | Property on type is not supported. |
 | [SYSLIB1102][1102] | Project's language version must be at least C# 11. |
-| [SYSLIB1103][1103] | (Reserved for Microsoft.Extensions.Configuration.Binder.SourceGeneration.) |
-| [SYSLIB1104][1104] | (Reserved for Microsoft.Extensions.Configuration.Binder.SourceGeneration.) |
+| [SYSLIB1103][1103] | Value types are invalid inputs to configuration 'Bind' methods. |
+| [SYSLIB1104][1104] | Generator cannot determine the target configuration type. |
 | [SYSLIB1105][1105] | (Reserved for Microsoft.Extensions.Configuration.Binder.SourceGeneration.) |
 | [SYSLIB1106][1106] | (Reserved for Microsoft.Extensions.Configuration.Binder.SourceGeneration.)(Reserved for Microsoft.Extensions.Configuration.Binder.SourceGeneration.)  |
 | [SYSLIB1107][1107] | (Reserved for Microsoft.Extensions.Configuration.Binder.SourceGeneration.) |
@@ -138,6 +138,25 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1116][1116] | (Reserved for Microsoft.Extensions.Configuration.Binder.SourceGeneration.) |
 | [SYSLIB1117][1117] | (Reserved for Microsoft.Extensions.Configuration.Binder.SourceGeneration.) |
 | [SYSLIB1118][1118] | (Reserved for Microsoft.Extensions.Configuration.Binder.SourceGeneration.) |
+| [SYSLIB1201][1201] | Can't use `ValidateObjectMembersAttribute` or `ValidateEnumeratedItemsAttribute` on fields or properties with open generic types. |
+| [SYSLIB1202][1202] | A member type has no fields or properties to validate. |
+| [SYSLIB1203][1203] | A type has no fields or properties to validate. |
+| [SYSLIB1204][1204] | A type annotated with `OptionsValidatorAttribute` doesn't implement the necessary interface. |
+| [SYSLIB1205][1205] | A type already includes an implementation of the 'Validate' method. |
+| [SYSLIB1206][1206] | Can't validate private fields or properties. |
+| [SYSLIB1207][1207] | Member type is not enumerable. |
+| [SYSLIB1208][1208] | Validators used for transitive or enumerable validation must have a constructor with no parameters. |
+| [SYSLIB1209][1209] | `OptionsValidatorAttribute` can't be applied to a static class. |
+| [SYSLIB1210][1210] | Null validator type specified for the `ValidateObjectMembersAttribute` or `ValidateEnumeratedItemsAttribute` attributes. |
+| [SYSLIB1211][1211] | Unsupported circular references in model types. |
+| [SYSLIB1212][1212] | Member potentially missing transitive validation. |
+| [SYSLIB1213][1213] | Member potentially missing enumerable validation. |
+| [SYSLIB1214][1214] | Can't validate constants, static fields or properties. |
+| [SYSLIB1215][1215] | Validation attribute on the member is inaccessible from the validator type. |
+| [SYSLIB1216][1216] | C# language version not supported by the options validation source generator. |
+| [SYSLIB1217][1217] | The validation attribute is only applicable to properties of type string, array, or `ICollection`; it cannot be used with other types. |
+| [SYSLIB1218][1218] | (Reserved for Microsoft.Extensions.Options.SourceGeneration.) |
+| [SYSLIB1219][1219] | (Reserved for Microsoft.Extensions.Options.SourceGeneration.) |
 
 <!-- Include adds ## Suppress warnings (H2 heading) -->
 [!INCLUDE [suppress-source-generator-diagnostics](includes/suppress-source-generator-diagnostics.md)]
@@ -251,3 +270,22 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 [1116]: syslib1100-1118.md
 [1117]: syslib1100-1118.md
 [1118]: syslib1100-1118.md
+[1201]: syslib1201-1219.md
+[1202]: syslib1201-1219.md
+[1203]: syslib1201-1219.md
+[1204]: syslib1201-1219.md
+[1205]: syslib1201-1219.md
+[1206]: syslib1201-1219.md
+[1207]: syslib1201-1219.md
+[1208]: syslib1201-1219.md
+[1209]: syslib1201-1219.md
+[1210]: syslib1201-1219.md
+[1211]: syslib1201-1219.md
+[1212]: syslib1201-1219.md
+[1213]: syslib1201-1219.md
+[1214]: syslib1201-1219.md
+[1215]: syslib1201-1219.md
+[1216]: syslib1201-1219.md
+[1217]: syslib1201-1219.md
+[1218]: syslib1201-1219.md
+[1219]: syslib1201-1219.md

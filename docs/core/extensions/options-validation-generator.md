@@ -2,7 +2,7 @@
 title: Compile-time options validation source generation
 author: tarekgh
 description: Learn how to utilize compile-time source generation for validating options.
-ms.author: tarekgh
+ms.author: tarekms
 ms.date: 10/23/2023
 ---
 

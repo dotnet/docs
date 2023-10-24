@@ -143,8 +143,11 @@ ms.date: 10/24/2023
 ---
 # Errors and warnings associated with reference parameters, variables, and returns
 
-The following errors may be generated when source generators or interceptors are loaded during a compilation:
+The following errors can be generated when you're working with reference variables:
 
+<!-- The text in the bullet lists generate issues for Acrolinx, because they don't use contractions.
+That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+ -->
 - [**CS0192**](#writable-reference-variables-require-a-writable-referent) - *A `readonly` field cannot be used as a `ref` or `out` value (except in a constructor)*
 - [**CS0199**](#writable-reference-variables-require-a-writable-referent) - *A `static readonly` field cannot be used as a `ref` or `out` value (except in a static constructor)*
 - [**CS0206**](#reference-variables-require-a-referent) - *A non ref-returning property or indexer may not be used as an `out` or `ref` value*
@@ -193,7 +196,7 @@ The following errors may be generated when source generators or interceptors are
 - [**CS9190**](#incorrect-syntax) - *`readonly` modifier must be specified after `ref`.*
 - [**CS9199**](#reference-variable-restrictions) - *A `ref readonly` parameter cannot have the Out attribute.*
 
-The following warnings may be generated when reference variables are used incorrectly:
+The following warnings are generated when reference variables are used incorrectly:
 
 - [**CS9085**](#ref-safety-violations) - *This ref-assigns variable but destination has a narrower escape scope than source.*
 - [**CS9086**](#ref-safety-violations) - *The branches of the `ref` conditional operator refer to variables with incompatible declaration scopes*
@@ -237,14 +240,14 @@ These errors indicate that you're using incorrect syntax regarding reference var
 
 You can correct the error with one of these changes:
 
-- The left operand of an `= ref` operator must be a reference variable. For more details see [reference variables](../statements/declarations.md#reference-variables).
+- The left operand of an `= ref` operator must be a reference variable. For more information on the correct syntax, see [reference variables](../statements/declarations.md#reference-variables).
 - The parameter modifier `ref readonly` must be in that order. `readonly ref` is not a legal parameter modifier. Switch the order of the words.
 - A local variable can't be declared as `out`. To declare a local reference variable, use `ref`.
 - A `using` alias can't be a `ref` type. You must remove that alias.
 
 ## Reference variable restrictions
 
-The following errors indicate that a reference variable can't used where you have one:
+The following errors indicate that a reference variable can't be used where you have one:
 
 - **CS0631** - *`ref` and `out` are not valid in this context*
 - **CS0767** - *Cannot inherit interface with the specified type parameters because it causes method to contain overloads which differ only on `ref` and `out`*
@@ -331,7 +334,7 @@ You must copy the value and pass a reference to the copy.
 
 ## Ref safety violations
 
-The compiler tracks the safe context of referents and reference variables. The compiler issues errors, or warnings in unsafe code, when a reference variable may be referring to a referent variable that's no longer valid. The reference variable can't refer to a variable that may be reclaimed while the reference variable is still valid.
+The compiler tracks the safe context of referents and reference variables. The compiler issues errors, or warnings in unsafe code, when a reference variable refers to a referent variable that's no longer valid. The reference variable can't refer to a variable that has been reclaimed while the reference variable is still valid.
 
 - **CS8166** - *Cannot return a parameter by reference because it is not a `ref` parameter*
 - **CS8167** - *Cannot return by reference a member of parameter because it is not a `ref` or `out` parameter*
@@ -360,4 +363,4 @@ Warnings:
 - **CS9095** - *This returns by reference a member of parameter through a `ref` parameter; but it can only safely be returned in a return statement*
 - **CS9097** - *This ref-assigns source to destination but source has a wider value escape scope than destination allowing assignment through destination of values with narrower escapes scopes than source.*
 
-The compiler uses static analysis to determine if the referent will be valid at all points where the reference variable can be used. You'll need to refactor code so that the referent remains valid at all locations where the reference variable may refer to it. For details on the rules for ref safety, see the C# standard on [ref safe contexts](~/_csharpstandard/standard/variables.md#972-ref-safe-contexts).
+The compiler uses static analysis to determine if the referent is valid at all points where the reference variable can be used. You need to refactor code so that the referent remains valid at all locations where the reference variable may refer to it. For details on the rules for ref safety, see the C# standard on [ref safe contexts](~/_csharpstandard/standard/variables.md#972-ref-safe-contexts).

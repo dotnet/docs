@@ -151,7 +151,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1211][1211] | Unsupported circular references in model types. |
 | [SYSLIB1212][1212] | Member potentially missing transitive validation. |
 | [SYSLIB1213][1213] | Member potentially missing enumerable validation. |
-| [SYSLIB1214][1214] | Can't validate constants, static fields or properties. |
+| [SYSLIB1214][1214] | Can't validate constants, static fields, or properties. |
 | [SYSLIB1215][1215] | Validation attribute on the member is inaccessible from the validator type. |
 | [SYSLIB1216][1216] | C# language version not supported by the options validation source generator. |
 | [SYSLIB1217][1217] | The validation attribute is only applicable to properties of type string, array, or `ICollection`; it cannot be used with other types. |

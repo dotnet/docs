@@ -12,7 +12,7 @@ ms.topic: how-to
 
 Starting in .NET 8, you can specify a preference to either [replace](#default-replace-behavior) or [populate](#populate-behavior) .NET properties when JSON is deserialized. The <xref:System.Text.Json.Serialization.JsonObjectCreationHandling> enum fields provide the object creation handling choices:
 
-- <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Replace?displayProperty=nameWithType> (matches the default behavior)
+- <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Replace?displayProperty=nameWithType>
 - <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Populate?displayProperty=nameWithType>
 
 ## Default (replace) behavior
@@ -30,7 +30,7 @@ class A
 When you create an instance of this class, the `Numbers1` (and `Numbers2`) property's value is a list with three elements (1, 2, and 3). If you deserialize JSON to this type, the *default* behavior is that property values are *replaced*:
 
 - For `Numbers1`, since it's read-only (no setter), it still has the values 1, 2, and 3 in its list.
-- For `Numbers2`, which is read-write, the contents of the list are effectively replaced with the values from the JSON.
+- For `Numbers2`, which is read-write, a new list is allocated and the values from the JSON are added.
 
 For example, if you execute the following deserialization code, `Numbers1` contains the values 1, 2, and 3 and `Numbers2` contains the values 4, 5, and 6.
 
@@ -40,25 +40,39 @@ A? a = JsonSerializer.Deserialize<A>("""{"Numbers1": [4,5,6], "Numbers2": [4,5,6
 
 ## Populate behavior
 
-Starting in .NET 8, you can change the deserialization behavior to modify (*populate*) initialized properties and fields instead of replacing them:
+Starting in .NET 8, you can change the deserialization behavior to modify (*populate*) properties and fields instead of replace them:
 
-- For a collection type property, any existing values are kept, and new values from the JSON are added to the collection.
-- For a non-collection reference type property, its mutable properties are updated to the JSON value but the reference itself doesn't change.
-- For a struct type property, the effective behavior is that for its mutable properties, the existing values are kept, and new values from the JSON are added. However, unlike a reference property, the object itself isn't reused since it's a value type. Instead, a copy of the struct is modified and then reassigned to the property. For example, after executing the following code, `a.S1.Numbers3` contains the values 1, 2, 3, 4, 5, and 6.
+- For a collection type property, the object is reused without clearing. If the collection is prepopulated with elements, they'll show in the final deserialized result along with the values from the JSON.
+- For a property that's an object with properties, its mutable properties are updated to the JSON values but the object reference itself doesn't change.
+- For a struct type property, the effective behavior is that for its mutable properties, any existing values are kept and new values from the JSON are added. However, unlike a reference property, the object itself isn't reused since it's a value type. Instead, a copy of the struct is modified and then reassigned to the property. The property must have a setter, otherwise, an <xref:System.InvalidOperationException> is thrown at run time.
+
+  For example, the following class contains a struct property, `S1`, whose deserialization behavior is set to <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Populate>. After executing this code, `a.S1.Value1` has a value of 10 (from the constructor) and `a.S1.Value2` has a value of 5 (from the JSON). If the default serialization behavior, <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Replace>, was used for the struct property, `a.S1.Value1` would have its default value of 0 after deserialization. That's because the constructor `A()` would be called, setting `a.S1.Value1` to 10, but then the value of S1 would be replaced with a new instance.
 
   ```csharp
-  A? a = JsonSerializer.Deserialize<A>("""{"S1": {"Numbers3": [4,5,6]}}""");
+  A? a = JsonSerializer.Deserialize<A>("""{"S1": {"Value2": 5}}""");
 
   class A
   {
-    public S S1 { get; set; } = new S();
+      public A()
+      {
+          s1 = new S();
+          s1.Value1 = 10;
+      }
+
+      private S s1;
+
+      [JsonObjectCreationHandling(JsonObjectCreationHandling.Populate)]
+      public S S1
+      {
+          get { return s1; }
+          set { s1 = value; }
+      }
   }
 
   struct S
   {
-      public S() { }
-      [JsonObjectCreationHandling(JsonObjectCreationHandling.Populate)]
-      public List<int> Numbers3 { get; } = new List<int>() { 1, 2, 3 };
+      public int Value1 { get; set; }
+      public int Value2 { get; set; }
   }
   ```
 

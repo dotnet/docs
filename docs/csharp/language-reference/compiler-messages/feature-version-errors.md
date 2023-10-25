@@ -43,6 +43,9 @@ f1_keywords:
   - "CS9017" # WRN_UseDefViolationFieldUnsupportedVersion  Use of possibly unassigned field
   - "CS8967" # ERR_NewlinesAreNotAllowedInsideANonVerbatimInterpolatedString  Newlines inside a non-verbatim interpolated string are not supported in C#
   - "CS9171"
+  - "CS8058"
+  - "CS8305"
+  - "CS9204"
 helpviewer_keywords:
   - "CS0171"
   - "CS0188"
@@ -85,7 +88,10 @@ helpviewer_keywords:
   - "CS9017"
   - "CS8967"
   - "CS9171"
-ms.date: 07/11/2023
+  - "CS8058"
+  - "CS8305"
+  - "CS9204"
+ms.date: 10/26/2023
 ---
 # Resolve warnings related to language features and versions
 
@@ -95,6 +101,7 @@ This article covers the following compiler warnings:
 That's be design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
 - **CS8022, CS8023, CS8024, CS8025, CS8026, CS8059, CS8107, CS8302, CS8320, CS8370, CS8400, CS8773, CS8936, CS9058** - *Feature is not available. Use newer language version.*
+- **CS8058** - *Feature is experimental.*
 - **CS8192** - *Provided language version is unsupported or invalid*
 - **CS8303** - *Specified language version cannot have leading zeroes*
 - **CS8304** - *Compiler version is less than language version*
@@ -124,6 +131,8 @@ In addition, the following errors and warnings relate to struct initialization c
 - [**CS0171**, **CS8881**](#breaking-changes-on-struct-initialization): *Backing field for automatically implemented property 'name' must be fully assigned before control is returned to the caller.*
 - [**CS0188**, **CS8885**](#breaking-changes-on-struct-initialization): *The 'this' object cannot be used before all of its fields are assigned to*
 - [**CS0843**, **CS8880**](#breaking-changes-on-struct-initialization): *Backing field for automatically implemented property 'name' must be fully assigned before control is returned to the caller*
+- [**CS8305**](#enable-experimental-features) - *Feature is for evaluation purposes only and is subject to change or removal in future updates.*
+- [**CS9204**](#enable-experimental-features) - *Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.*
 
 The cause behind all these errors and warnings is that the compiler installed supports a newer version of C# than the version your project has selected. The C# compiler can conform to any previous version. You can validate syntax against an earlier version of C#, or because your project must support older libraries or runtimes.
 
@@ -148,6 +157,13 @@ You can learn more about the language versions supported for each framework vers
 ## Avoid the updated feature
 
 If you must support older libraries or runtimes, you may need to avoid using newer features.
+
+## Enable experimental features
+
+The diagnostics for experimental features can be disabled to use the experimental feature.
+
+> [!WARNING]
+> Experimental features are subject to changes. The APIs may change, or they may be removed in future updates. Including experimental features is a way to get feedback on ideas and concepts for future development. Use extreme caution when using any feature marked as experimental.
 
 ## Breaking changes on struct initialization
 

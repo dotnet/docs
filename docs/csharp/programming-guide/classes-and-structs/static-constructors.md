@@ -1,7 +1,7 @@
 ---
 title: "Static Constructors - C# Programming Guide"
 description: A static constructor in C# initializes static data or performs an action done only once. It runs before the first instance is created or static members are referenced.
-ms.date: 01/30/2023
+ms.date: 10/24/2023
 helpviewer_keywords: 
   - "static constructors [C#]"
   - "constructors [C#], static"
@@ -19,6 +19,8 @@ There are several actions that are part of static initialization. Those actions 
 1. *Base type static field initializers run*. Static field initializers starting with the direct base through each base type to <xref:System.Object?displayProperty=fullName>.
 1. *Base static constructors run*. Any static constructors, starting with <xref:System.Object.%23ctor%2A?displayProperty=nameWithType> through each base class to the direct base class.
 1. *The static constructor runs*. The static constructor for the type runs.
+
+A [module initializer](../../language-reference/attributes/general.md#moduleinitializer-attribute) can be an alternative to a static constructor. For more information, see the [specification for module initializers](https://github.com/dotnet/runtime/blob/main/docs/design/specs/Ecma-335-Augments.md#module-initializer).
 
 ## Remarks
 

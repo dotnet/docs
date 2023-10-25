@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 12 - C# Guide
 description: Get an overview of the new features in C# 12.
-ms.date: 09/23/2023
+ms.date: 10/26/2023
 ---
 # What's new in C# 12
 
@@ -21,7 +21,7 @@ Some C# 12 features have been introduced in previews. You can try these features
 
 You can now create primary constructors in any `class` and `struct`. Primary constructors are no longer restricted to `record` types. Primary constructor parameters are in scope for the entire body of the class. To ensure that all primary constructor parameters are definitely assigned, all explicitly declared constructors must call the primary constructor using `this()` syntax. Adding a primary constructor to a `class` prevents the compiler from declaring an implicit parameterless constructor. In a `struct`, the implicit parameterless constructor initializes all fields, including primary constructor parameters to the 0-bit pattern.
 
-The compiler generates public properties for primary constructor parameters only in `record` types, either `record class` or `record struct` types. Non-record classes and structs may not always want this behavior for primary constructor parameters.
+The compiler generates public properties for primary constructor parameters only in `record` types, either `record class` or `record struct` types. Non-record classes and structs might not always want this behavior for primary constructor parameters.
 
 You can learn more about primary constructors in the tutorial for [exploring primary constructors](./tutorials/primary-constructors.md) and in the article on [instance constructors](../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors).
 
@@ -97,7 +97,7 @@ You can use the `using` alias directive to alias any type, not just named types.
 
 ## Inline arrays
 
-Inline arrays are used by the runtime team and other library authors to improve performance in your apps. Inline arrays enable a developer to create an array of fixed size in a `struct` type. A struct with an inline buffer should provide performance characteristics similar to an unsafe fixed size buffer. You likely won't declare your own inline arrays, but you'll use them transparently when they're exposed as <xref:System.Span%601?displayProperty=nameWithType> or <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> objects from runtime APIs.
+Inline arrays are used by the runtime team and other library authors to improve performance in your apps. Inline arrays enable a developer to create an array of fixed size in a `struct` type. A struct with an inline buffer should provide performance characteristics similar to an unsafe fixed size buffer. You likely won't declare your own inline arrays, but you use them transparently when they're exposed as <xref:System.Span%601?displayProperty=nameWithType> or <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> objects from runtime APIs.
 
 An *inline array* is declared similar to the following `struct`:
 
@@ -124,7 +124,7 @@ foreach (var i in buffer)
 }
 ```
 
-The difference is that the compiler can take advantage of known information about an inline array. You'll likely consume inline arrays as you would any other array. For more information on how to declare inline arrays, see the language reference on [`struct` types](../language-reference/builtin-types/struct.md#inline-arrays).
+The difference is that the compiler can take advantage of known information about an inline array. You likely consume inline arrays as you would any other array. For more information on how to declare inline arrays, see the language reference on [`struct` types](../language-reference/builtin-types/struct.md#inline-arrays).
 
 ## Experimental attribute
 

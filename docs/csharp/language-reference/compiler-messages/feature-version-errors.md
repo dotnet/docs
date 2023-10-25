@@ -148,7 +148,7 @@ If your selected framework doesn't match the language version required, you can 
 
 ## Select the matching language version
 
-You may have an older target framework selected in your project file. If you remove the `LangVersion` element from your project file, the compiler will use the default value listed in the preceding section. The following table shows all current C# language versions. You can also specify a specific language version to enable newer features.
+You might have an older target framework selected in your project file. If you remove the `LangVersion` element from your project file, the compiler uses the default value listed in the preceding section. The following table shows all current C# language versions. You can also specify a specific language version to enable newer features.
 
 [!INCLUDE [langversion-table](../includes/langversion-table.md)]
 
@@ -156,7 +156,7 @@ You can learn more about the language versions supported for each framework vers
 
 ## Avoid the updated feature
 
-If you must support older libraries or runtimes, you may need to avoid using newer features.
+If you must support older libraries or runtimes, you might need to avoid using newer features.
 
 ## Enable experimental features
 

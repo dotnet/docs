@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 10/24/2023
+ms.date: 10/25/2023
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -478,8 +478,8 @@ C# compiler options, such as `LangVersion` and `Nullable`, can also be specified
 
 The `ContinuousIntegrationBuild` property indicates whether a build is executing on a continuous integration (CI) server. When set to `true`, this property enables settings that only apply to official builds as opposed to local builds on a developer machine. For example, stored file paths are normalized for official builds. But on a local development machine, the debugger isn't able to find local source files if file paths are normalized.
 
->[!NOTE]
->Currently, this property works only if you either reference a [SourceLink](https://github.com/dotnet/sourcelink) provider package or add a `<SourceRoot Include="$(MSBuildThisFileDirectory)" />` item or similar. The actual directory doesn't matter as long as it contains all source files not already covered by a `<SourceRoot>` item.
+> [!NOTE]
+> Currently, setting this property to `true` works only if you add either a specific [SourceLink](https://github.com/dotnet/sourcelink) provider package reference or a `<SourceRoot Include="$(MyDirectory)" />` item. For more information, see [dotnet/roslyn issue 55860](https://github.com/dotnet/roslyn/issues/55860).
 
 You can use your CI system's variable to conditionally set the `ContinuousIntegrationBuild` property. For example, the variable name for Azure Pipelines is `TF_BUILD`:
 

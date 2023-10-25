@@ -7,14 +7,14 @@ ms.date: 09/23/2023
 
 Some C# 12 features have been introduced in previews. You can try these features using the latest [Visual Studio preview](https://visualstudio.microsoft.com/vs/preview/) or the latest [.NET 8 preview SDK](https://dotnet.microsoft.com/download/dotnet).
 
-- [Primary constructors](#primary-constructors) - Introduced in Visual Studio 17.6, preview 2.
-- [Collection expressions](#collection-expressions) - Introduced in Visual Studio 17.7, preview 5.
-- [Inline arrays](#inline-arrays) - Introduced in Visual Studio 17.7, preview 3.
-- [Optional parameters in lambda expressions](#default-lambda-parameters) - Introduced in Visual Studio 17.5, preview 2.
-- [`ref readonly` parameters](#ref-readonly-parameters) - Introduced in Visual Studio 17.8, preview 2.
-- [Alias any type](#alias-any-type) - Introduced in Visual Studio 17.6, preview 3.
+- [Primary constructors](#primary-constructors) - Introduced in Visual Studio version 17.6 Preview 2.
+- [Collection expressions](#collection-expressions) - Introduced in Visual Studio version 17.7 Preview 5.
+- [Inline arrays](#inline-arrays) - Introduced in Visual Studio version 17.7 Preview 3.
+- [Optional parameters in lambda expressions](#default-lambda-parameters) - Introduced in Visual Studio version 17.5 Preview 2.
+- [`ref readonly` parameters](#ref-readonly-parameters) - Introduced in Visual Studio version 17.8 Preview 2.
+- [Alias any type](#alias-any-type) - Introduced in Visual Studio version 17.6 Preview 3.
 
-- [Interceptors](#interceptors) - *Preview feature* Introduced in Visual Studio 17.7, preview 3.
+- [Interceptors](#interceptors) - *Preview feature* Introduced in Visual Studio version 17.7 Preview 3.
 
 ## Primary constructors
 

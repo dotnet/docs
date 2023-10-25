@@ -77,7 +77,7 @@ When you use these modifiers, they describe how the argument is used:
 - `ref readonly` means the method reads, but can't write the value of the argument. The argument *should* be passed by reference.
 - `in` means the method reads, but can't write the value of the argument. The argument will be passed by reference or through a temporary variable.
 
-Properties aren't variables. They're methods, and can't be passed to `ref` parameters. You can't use these keywords for the following kinds of methods:
+Properties aren't variables. They're methods, and can't be passed to `ref` parameters. You can't use the previous parameter modifiers in the following kinds of methods:
 
 - Async methods, which you define by using the [async](async.md) modifier.
 - Iterator methods, which include a [yield return](../statements/yield.md) or `yield break` statement.

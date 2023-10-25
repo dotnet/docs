@@ -1,6 +1,6 @@
 ---
 title: Errors and warnings associated with reference parameter modifiers
-description: The compiler issues these errors and warnings when you have used the reference parameter modifiers incorrectly. They indicate you've got some mismatch between the modifier on the parameter, the argument, or the use of the parameter in the method.
+description: The compiler issues these errors and warnings when you use the reference parameter modifiers incorrectly. They indicate a mismatch between the modifier on the parameter, the argument, or the use of the parameter in the method.
 f1_keywords:
   - "CS9190"
   - "CS0192"
@@ -234,7 +234,7 @@ This article uses the term *reference variable* as a general term for a paramete
 These errors indicate that you're using incorrect syntax regarding reference variables:
 
 - **CS8373** - *The left-hand side of a `ref` assignment must be a ref variable.*
-- **CS8388** - *An `out` variable cannot be declared as a ref local*
+- **CS8388** - *An `out` variable cannot be declared as a ref local.*
 - **CS9130** - *Using alias cannot be a '`ref`' type.*
 - **CS9190** - *`readonly` modifier must be specified after `ref`.*
 
@@ -276,14 +276,14 @@ The following warnings indicate that a reference variable shouldn't be used, and
 
 To fix the error, remove the reference variable where it isn't allowed:
 
-- Remove `in`, `ref` and `out` parameters from [indexers](../../programming-guide/indexers/index.md), [iterators](../../iterators.md), and [async methods](../../asynchronous-programming/index.md).
+- Remove `in`, `ref`, and `out` parameters from [indexers](../../programming-guide/indexers/index.md), [iterators](../../iterators.md), and [async methods](../../asynchronous-programming/index.md).
 - Remove [ref conditional expressions](../operators/conditional-operator.md#conditional-ref-expression) (`? :`) that include an [await](../operators/await.md).
 - Remove the `ref` modifier from the first parameter of a [extension method](../../programming-guide/classes-and-structs/extension-methods.md) where that type isn't a value type or a generic type constrained as a value type.
 - Either both or neither [conditional operator expressions] must be `ref` variables. Either remove `ref` from one expression, or add it to the other. If it's a `ref` conditional expression, both expressions must be the same type.
 - `ref` and `out` parameters can't have [default values](../../programming-guide/classes-and-structs/named-and-optional-arguments.md). Either remove the `ref` or `out` modifier, or remove the default value.
 - The range variable in a [LINQ query expression](../../linq/query-expression-basics.md) can't be passed by reference.
 - You can't deconstruct an object into reference variables. Replace the reference variables with value variables.
-- Implementing multiple interfaces where method overloads differ only on `ref` and `out`. For example, one interface declares `void M(ref int i)` and another interface declares `void M(out int i)`. A class can't implement both interfaces because the methods aren't distinguishable. You can only implement one of those interfaces.
+- You can't implement multiple interfaces where method overloads differ only on `ref` and `out`. For example, one interface declares `void M(ref int i)` and another interface declares `void M(out int i)`. A class can't implement both interfaces because the methods aren't distinguishable. You can only implement one of those interfaces.
 - Methods attributed with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute?displayProperty=nameWithType> can't use reference parameters.
 - A Windows runtime event can't be passed as a reference variable.
 - A `ref readonly` parameter can't be an Out parameter.
@@ -322,7 +322,7 @@ A writable reference variable requires that the referent also be writable. The f
 - **CS9116** - *A primary constructor parameter of a `readonly` type cannot be used as a `ref` or `out` value (except in init-only setter of the type or a variable initializer)*
 - **CS9119** - *Members of primary constructor parameter of a readonly type cannot be used as a `ref` or `out` value (except in init-only setter of the type or a variable initializer)*
 
-Examples of variable that aren't writable include:
+Examples of variables that aren't writable include:
 
 - [readonly](../../language-reference/keywords/readonly.md) fields, both instance and static fields.
 - Members of `readonly` fields.
@@ -363,4 +363,4 @@ Warnings:
 - **CS9095** - *This returns by reference a member of parameter through a `ref` parameter; but it can only safely be returned in a return statement*
 - **CS9097** - *This ref-assigns source to destination but source has a wider value escape scope than destination allowing assignment through destination of values with narrower escapes scopes than source.*
 
-The compiler uses static analysis to determine if the referent is valid at all points where the reference variable can be used. You need to refactor code so that the referent remains valid at all locations where the reference variable may refer to it. For details on the rules for ref safety, see the C# standard on [ref safe contexts](~/_csharpstandard/standard/variables.md#972-ref-safe-contexts).
+The compiler uses static analysis to determine if the referent is valid at all points where the reference variable can be used. You need to refactor code so that the referent remains valid at all locations where the reference variable might refer to it. For details on the rules for ref safety, see the C# standard on [ref safe contexts](~/_csharpstandard/standard/variables.md#972-ref-safe-contexts).

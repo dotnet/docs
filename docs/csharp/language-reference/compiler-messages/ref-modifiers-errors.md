@@ -286,7 +286,7 @@ To fix the error, remove the reference variable where it isn't allowed:
 - You can't implement multiple interfaces where method overloads differ only on `ref` and `out`. For example, one interface declares `void M(ref int i)` and another interface declares `void M(out int i)`. A class can't implement both interfaces because the methods aren't distinguishable. You can only implement one of those interfaces.
 - Methods attributed with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute?displayProperty=nameWithType> can't use reference parameters.
 - A Windows runtime event can't be passed as a reference variable.
-- A `ref readonly` parameter can't be an Out parameter.
+- A `ref readonly` parameter can't have the <xref:System.Runtime.InteropServices.OutAttribute?displayProperty=nameWithType> applied to it in remoting API.
 
 ## Reference variables require a referent
 
@@ -328,7 +328,7 @@ Examples of variables that aren't writable include:
 - Members of `readonly` fields.
 - The `this` variable.
 - The [foreach](../../language-reference/statements/iteration-statements.md#the-foreach-statement) iteration variable
-- A [using](../../language-reference/statements/using.md) variable, or a [fixed](../../language-reference/statements/fixed.md)
+- A [using](../../language-reference/statements/using.md) variable, or a [fixed](../../language-reference/statements/fixed.md) variable.
 
 You must copy the value and pass a reference to the copy.
 

@@ -295,10 +295,10 @@
 | Application Insights | NuGet [0.9.0-preview](https://www.nuget.org/packages/Microsoft.Azure.ApplicationInsights/0.9.0-preview) |  |  |
 | Auto Suggest | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.AutoSuggest/2.0.0) |  |  |
 | Auto Suggest | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingAutoSuggest/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingAutoSuggest_2.1.0-preview.1/sdk/cognitiveservices/Search.BingAutoSuggest) |
-| Autorest Client Runtime | NuGet [2.3.24](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime/2.3.24) |  | GitHub [2.3.24](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Rest.ClientRuntime_2.3.21/sdk/mgmtcommon/ClientRuntime) |
 | Autorest Client Runtime - Azure | NuGet [3.3.19](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Azure/3.3.19) |  | GitHub [3.3.19](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/mgmtcommon/ClientRuntime.Azure) |
 | Autorest Client Runtime - Azure Authentication | NuGet [2.4.1](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Azure.Authentication/2.4.1) |  | GitHub [2.4.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Rest.ClientRuntime.Azure.Authentication_2.4.1/sdk/mgmtcommon/Auth/Az.Auth/Az.Authentication) |
 | Autorest Client Runtime - Azure Test Framework | NuGet [1.7.7](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Azure.TestFramework/1.7.7) |  | GitHub [1.7.7](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Rest.ClientRuntime.Azure.TestFramework_1.7.7/sdk/mgmtcommon/TestFramework/ClientRuntime.Azure.TestFramework) |
+| Autorest Client Runtime - Client | NuGet [2.3.24](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime/2.3.24) |  | GitHub [2.3.24](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Rest.ClientRuntime_2.3.21/sdk/mgmtcommon/ClientRuntime) |
 | Autorest Client Runtime - ETW | NuGet [2.1.3](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Etw/2.1.3) |  | GitHub [2.1.3](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/mgmtcommon/ClientRuntime.Etw) |
 | Autorest Client Runtime - Log4Net | NuGet [2.1.4](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Log4Net/2.1.4) |  | GitHub [2.1.4](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/mgmtcommon/ClientRuntime.Log4Net) |
 | AutoRest Common | NuGet [2.4.48](https://www.nuget.org/packages/Microsoft.AutoRest.Common/2.4.48) |  | GitHub [2.4.48](https://github.com/Azure/autorest.common) |
@@ -385,10 +385,6 @@
 | Web Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.WebSearch/2.0.0) |  |  |
 | WebSites - DataProtection | NuGet [0.1.78-alpha](https://www.nuget.org/packages/Microsoft.Azure.WebSites.DataProtection/0.1.78-alpha) |  |  |
 | WindowsAzure Common | NuGet [1.4.1](https://www.nuget.org/packages/Microsoft.WindowsAzure.Common/1.4.1) |  |  |
-| WindowsAzure Common - Dependencies | NuGet [1.1.1](https://www.nuget.org/packages/Microsoft.WindowsAzure.Common.Dependencies/1.1.1) |  |  |
-| WindowsAzure Common - Tracing ETW | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.WindowsAzure.Common.Tracing.Etw/1.0.0) |  |  |
-| WindowsAzure Common - Tracing Log4Net | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.WindowsAzure.Common.Tracing.Log4Net/1.0.0) |  |  |
-| WindowsAzure Media Services | NuGet [4.2.0](https://www.nuget.org/packages/windowsazure.mediaservices/4.2.0) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/media-services) | GitHub [4.2.0](https://github.com/Azure/azure-sdk-for-media-services) |
 | App Service - API Apps Common | NuGet [0.9.36](https://www.nuget.org/packages/Microsoft.Azure.AppService.ApiApps.Common/0.9.36) |  |  |
 | App Service - API Apps Service | NuGet [0.9.64](https://www.nuget.org/packages/Microsoft.Azure.AppService.ApiApps.Service/0.9.64) |  |  |
 | Code Analyzers for Durable Functions | NuGet [0.5.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask.Analyzers/0.5.0) |  | GitHub [0.5.0](https://github.com/Azure/azure-functions-durable-extension/tree/Analyzer-v0.3.0/src/WebJobs.Extensions.DurableTask.Analyzers) |

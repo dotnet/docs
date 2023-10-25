@@ -33,7 +33,7 @@ There are several changes you should consider making to the previous example whe
 
 - Logging [compile-time source generation](logger-message-generator.md) is usually a better alternative to `ILogger` extension methods like `LogInformation`. Logging source generation offers better performance, stronger typing, and avoids spreading `string` constants throughout your methods. The tradeoff is that using this technique requires a bit more code.
 
-:::code language="csharp" source="snippets/logging/getting-started-logger-message/Program.cs" highlight="8,11-12":::
+:::code language="csharp" source="snippets/logging/getting-started-logger-message/Program.cs" highlight="9,12-13":::
 
 - The recommended practice for log category names is to use the fully qualified name of the class that's creating the log message. This helps relate log messages back to the code which produced them and offers a good level of control when filtering logs. <xref:Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger%2A> accepts a `Type` to make this naming easy to do.
 
@@ -54,10 +54,11 @@ This example gets an ILogger object in a hosted app using [ASP.NET Minimal APIs]
 :::code language="csharp" source="snippets/logging/minimal-web/Program.cs" highlight="8":::
 
 The preceding example:
-  - Created a singleton service called `ExampleHandler` and mapped incoming web requests to run the `ExampleHandler.HandleRequest` function.
-  - Line 8 defines a [primary constructor](/dotnet/csharp/whats-new/tutorials/primary-constructors) for the ExampleHandler, a feature added in C# 12. Using the older style C# constructor would work equally well but is a little more verbose.
-  - The constructor defines a parameter of type `ILogger<ExampleHandler>`. <xref:Microsoft.Extensions.Logging.ILogger%601> derives from <xref:Microsoft.Extensions.Logging.ILogger> and indicates which category the `ILogger` object has. The DI container locates an `ILogger` with the correct category and supplies it as the constructor argument. If no `ILogger` with that category exists yet, the DI container automatically creates it from the `ILoggerFactory` in the service provider.
-  - The `logger` parameter received in the constructor was used for logging in the `HandleRequest` function.
+
+- Created a singleton service called `ExampleHandler` and mapped incoming web requests to run the `ExampleHandler.HandleRequest` function.
+- Line 8 defines a [primary constructor](/dotnet/csharp/whats-new/tutorials/primary-constructors) for the ExampleHandler, a feature added in C# 12. Using the older style C# constructor would work equally well but is a little more verbose.
+- The constructor defines a parameter of type `ILogger<ExampleHandler>`. <xref:Microsoft.Extensions.Logging.ILogger%601> derives from <xref:Microsoft.Extensions.Logging.ILogger> and indicates which category the `ILogger` object has. The DI container locates an `ILogger` with the correct category and supplies it as the constructor argument. If no `ILogger` with that category exists yet, the DI container automatically creates it from the `ILoggerFactory` in the service provider.
+- The `logger` parameter received in the constructor was used for logging in the `HandleRequest` function.
 
 ### Host-provided ILoggerFactory
 

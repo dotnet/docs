@@ -67,7 +67,7 @@ then add a configured `ILoggerFactory` object to the host's DI container when th
 
 This example expands on the previous one to customize the `ILoggerFactory` provided by `WebApplicationBuilder`. It adds [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet#getting-started) as a logging provider transmitting the logs over [OTLP (OpenTelemetry protocol)](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/README.md#enable-log-exporter):
 
-:::code language="csharp" source="snippets/logging/minimal-web-open-telemetry/Program.cs" id="add-open-telemetry" highlight="2":::
+:::code language="csharp" source="snippets/logging/minimal-web-open-telemetry/Program.cs" range="3-6" highlight="2":::
 
 ### Create an ILoggerFactory with DI
 

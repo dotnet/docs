@@ -1,7 +1,7 @@
 ---
 title: "Instance constructors"
 description: Instance constructors in C# create and initialize any instance member variables when you use the new expression to create an instance of a type.
-ms.date: 05/25/2023
+ms.date: 10/25/2023
 helpviewer_keywords:
   - "constructors [C#], instance constructors"
   - "instance constructors [C#]"
@@ -44,6 +44,12 @@ The parameters to a primary constructor are in scope in the entire body of the d
 A primary constructor indicates that these parameters are necessary for any instance of a type. Any explicitly written constructor must use the `this(...)` initializer syntax to invoke the primary constructor. That ensures that the primary constructor parameters are definitely assigned by all constructors. For any `class` type, including `record class` types, the implicit parameterless constructor isn't emitted when a primary constructor is present. For any `struct` type, including `record struct` types, the implicit parameterless constructor is always emitted, and always initializes all fields, including primary constructor parameters, to the 0-bit pattern. If you write an explicit parameterless constructor, it must invoke the primary constructor. In that case, you can specify a different value for the primary constructor parameters. The following code shows examples of primary constructors.
 
 :::code language="csharp" source="./snippets/instance-constructors/widgets/Program.cs" id="DerivedPrimaryConstructor":::
+
+You can add attributes to the synthesized primary constructor method by specifying the `method:` target on the attribute:
+
+:::code language="csharp" source="./snippets/instance-constructors/widgets/Program.cs" id="PrimaryConstructorAttribute":::
+
+If you don't specify the `method` target, the attribute is placed on the class rather than the method.
 
 In `class` and `struct` types, primary constructor parameters are available anywhere in the body of the type. They can be used as member fields. When a primary constructor parameter is used, the compiler captures the constructor parameter in a private field with a compiler-generated name. If a primary constructor parameter isn't used in the body of the type, no private field is captured. That rule prevents accidentally allocating two copies of a primary constructor parameter that's passed to a base constructor.
 

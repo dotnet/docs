@@ -62,3 +62,15 @@ public class Location
    }
 }
 // </ExpressionBodiedCtor>
+
+public class MyAttribute:  System.Attribute
+{
+}
+
+// <PrimaryConstructorAttribute>
+[method: MyAttribute]
+public class Widget(string name)
+{
+   // details elided
+}
+// </PrimaryConstructorAttribute>

@@ -14,7 +14,7 @@ ms.date: 10/15/2023
 
 This first example shows the basics, but it is only suitable for a trivial console app. In the next section you see how to improve the code considering scale, performance, configuration and typical programming patterns.
 
-:::code language="csharp" source="snippets/logging/getting-started/Program.cs" range="1-5":::
+:::code language="csharp" source="snippets/logging/getting-started/Program.cs":::
 
 The preceding example:
 
@@ -33,51 +33,53 @@ There are several changes you should consider making to the previous example whe
 
 - Logging [compile-time source generation](logger-message-generator.md) is usually a better alternative to `ILogger` extension methods like `LogInformation`. Logging source generation offers better performance, stronger typing, and avoids spreading `string` constants throughout your methods. The tradeoff is that using this technique requires a bit more code.
 
-:::code language="csharp" source="snippets/logging/getting-started-logger-message/Program.cs" range="5-13" highlight="5,8-9":::
+:::code language="csharp" source="snippets/logging/getting-started-logger-message/Program.cs" highlight="8,11-12":::
 
 - The recommended practice for log category names is to use the fully qualified name of the class that's creating the log message. This helps relate log messages back to the code which produced them and offers a good level of control when filtering logs. <xref:Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger%2A> accepts a `Type` to make this naming easy to do.
 
-:::code language="csharp" source="snippets/logging/getting-started-type-category-name/Program.cs" range="3-11" highlight="6":::
+:::code language="csharp" source="snippets/logging/getting-started-type-category-name/Program.cs" highlight="8":::
 
 - If you don't use console logs as your sole production monitoring solution, add the [logging providers](logging-providers.md) you plan to use. For example, you could use [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet#getting-started) to send logs over the [OTLP (OpenTelemetry protocol)](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/README.md#enable-log-exporter):
 
-:::code language="csharp" source="snippets/logging/getting-started-open-telemetry/Program.cs" range="4-12" highlight="3-6":::
+:::code language="csharp" source="snippets/logging/getting-started-open-telemetry/Program.cs" highlight="6-9":::
 
 ## Integration with hosts and dependency injection
 
 If your application is using [Dependency Injection (DI)](dependency-injection.md) or a host such as ASP.NET's [WebApplication](/aspnet/core/fundamentals/minimal-apis/webapplication) or [Generic Host](generic-host.md) then you should use `ILoggerFactory` and `ILogger` objects from the DI container rather than creating them directly.
 
-### Getting an ILogger from DI
+### Get an ILogger from DI
 
-This example gets an ILogger object in a hosted app using ASP.NET MVC Controllers:
+This example gets an ILogger object in a hosted app using [ASP.NET Minimal APIs](/aspnet/core/fundamentals/minimal-apis/overview):
 
-:::code language="csharp" source="snippets/logging/aspnet-mvc/Controllers/HomeController.cs" range="6-19" highlight="5":::
+:::code language="csharp" source="snippets/logging/minimal-web/Program.cs" highlight="8":::
 
-:::code language="csharp" source="snippets/logging/aspnet-mvc/Controllers/HomeController.cs" range="33-37":::
-
-<xref:Microsoft.Extensions.Logging.ILogger%601> derives from <xref:Microsoft.Extensions.Logging.ILogger> and indicates which category the `ILogger` object has. The DI container locates an `ILogger` with the correct category and supplies it as the constructor argument. If no `ILogger` with that category exists yet, the DI container automatically creates it from the `ILoggerFactory` in the service provider.
+The preceding example:
+  - Created a singleton service called `ExampleHandler` and mapped incoming web requests to run the `ExampleHandler.HandleRequest` function.
+  - Line 8 defines a [primary constructor](/dotnet/csharp/whats-new/tutorials/primary-constructors) for the ExampleHandler, a feature added in C# 12. Using the older style C# constructor would work equally well but is a little more verbose.
+  - The constructor defines a parameter of type `ILogger<ExampleHandler>`. <xref:Microsoft.Extensions.Logging.ILogger%601> derives from <xref:Microsoft.Extensions.Logging.ILogger> and indicates which category the `ILogger` object has. The DI container locates an `ILogger` with the correct category and supplies it as the constructor argument. If no `ILogger` with that category exists yet, the DI container automatically creates it from the `ILoggerFactory` in the service provider.
+  - The `logger` parameter received in the constructor was used for logging in the `HandleRequest` function.
 
 ### Host-provided ILoggerFactory
 
 Host builders initialize [default configuration](generic-host.md#default-builder-settings),
 then add a configured `ILoggerFactory` object to the host's DI container when the host is built. Before the host is built you can adjust the logging configuration via <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Logging?displayProperty=nameWithType>, <xref:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Logging?displayProperty=nameWithType>, or similar APIs on other hosts. Hosts also apply logging configuration from default configuration sources as _appsettings.json_ and environment variables. For more information, see [Configuration in .NET](configuration.md).
 
-This example customizes the `ILoggerFactory` provided by `WebApplicationBuilder`. It adds [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet#getting-started) as a logging provider transmitting the logs over [OTLP (OpenTelemetry protocol)](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/README.md#enable-log-exporter):
+This example expands on the previous one to customize the `ILoggerFactory` provided by `WebApplicationBuilder`. It adds [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet#getting-started) as a logging provider transmitting the logs over [OTLP (OpenTelemetry protocol)](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/README.md#enable-log-exporter):
 
-:::code language="csharp" source="snippets/logging/aspnet-mvc/Program.cs" range="1-9" highlight="4":::
+:::code language="csharp" source="snippets/logging/minimal-web-open-telemetry/Program.cs" id="add-open-telemetry" highlight="2":::
 
 ### Create an ILoggerFactory with DI
 
 If you're using a DI container without a host, use <xref:Microsoft.Extensions.DependencyInjection.LoggingServiceCollectionExtensions.AddLogging%2A> to configure and add `ILoggerFactory` to the container.
 
-:::code language="csharp" source="snippets/logging/di-without-host/Program.cs" range="1-29" highlight="6":::
+:::code language="csharp" source="snippets/logging/di-without-host/Program.cs" highlight="6":::
 
 The preceding example:
 
 - Created a DI service container containing an `ILoggerFactory` configured to write to the console
-- Added a singleton `Worker` to the container
-- Created an instance of the `Worker` from the DI container which also automatically created an `ILogger<Worker>` to use as the constructor argument.
-- Invoked `Worker.DoSomeWork` which used the `ILogger<Worker>` to log a message to the console.
+- Added a singleton `ExampleService` to the container
+- Created an instance of the `ExampleService` from the DI container which also automatically created an `ILogger<ExampleService>` to use as the constructor argument.
+- Invoked `ExampleService.DoSomeWork` which used the `ILogger<ExampleService>` to log a message to the console.
 
 ## Configure logging
 
@@ -249,7 +251,7 @@ using var loggerFactory = LoggerFactory.Create(static builder =>
 });
 
 ILogger logger = loggerFactory.CreateLogger<Program>();
-logger.LogDebug("Hello {target}", "Everyone");
+logger.LogDebug("Hello {Target}", "Everyone");
 ```
 
 In the preceding example <xref:Microsoft.Extensions.Logging.FilterLoggingBuilderExtensions.AddFilter%2A> is used to [adjust the log level](#how-filtering-rules-are-applied) that's enabled for various categories. <xref:Microsoft.Extensions.Logging.ConsoleLoggerExtensions.AddConsole%2A> is used to add the console logging provider. By default, logs with `Debug` severity aren't enabled, but because the configuration adjusted the filters, the debug message "Hello Everyone" is displayed on the console.

@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "getting-started-open-teleme
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aspnet-mvc", "aspnet-mvc\aspnet-mvc.csproj", "{D169B00F-66E9-4500-879D-487FE0E09F23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "di-without-host", "di-without-host\di-without-host.csproj", "{5191561E-658B-485D-B006-760C65218FA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "di-without-host", "di-without-host\di-without-host.csproj", "{5191561E-658B-485D-B006-760C65218FA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "minimal-web", "minimal-web\minimal-web.csproj", "{631A9547-C326-4BE6-A8C1-AB070AB0025D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{5191561E-658B-485D-B006-760C65218FA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5191561E-658B-485D-B006-760C65218FA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5191561E-658B-485D-B006-760C65218FA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{631A9547-C326-4BE6-A8C1-AB070AB0025D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{631A9547-C326-4BE6-A8C1-AB070AB0025D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{631A9547-C326-4BE6-A8C1-AB070AB0025D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{631A9547-C326-4BE6-A8C1-AB070AB0025D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

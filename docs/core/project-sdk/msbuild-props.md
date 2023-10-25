@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 12/08/2022
+ms.date: 10/24/2023
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -496,7 +496,6 @@ For GitHub Actions, the variable name is `GITHUB_ACTIONS`:
   <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
 </PropertyGroup>
 ```
-
 
 ### CopyDebugSymbolFilesFromPackages
 

@@ -476,7 +476,10 @@ C# compiler options, such as `LangVersion` and `Nullable`, can also be specified
 
 ### ContinuousIntegrationBuild
 
-The `ContinuousIntegrationBuild` property indicates whether a build is executing on a continuous integration (CI) server. When set to `true`, this property enables settings that only apply to official builds as opposed to local builds on a developer machine. For example, stored file paths are normalized for official builds. But on a local development machine, the debugger won't be able to find local source files if file paths are normalized.
+The `ContinuousIntegrationBuild` property indicates whether a build is executing on a continuous integration (CI) server. When set to `true`, this property enables settings that only apply to official builds as opposed to local builds on a developer machine. For example, stored file paths are normalized for official builds. But on a local development machine, the debugger isn't able to find local source files if file paths are normalized.
+
+>[!NOTE]
+>Currently, this property works only if you either reference a [SourceLink](https://github.com/dotnet/sourcelink) provider package or add a `<SourceRoot Include="$(MSBuildThisFileDirectory)" />` item or similar. The actual directory doesn't matter as long as it contains all source files not already covered by a `<SourceRoot>` item.
 
 You can use your CI system's variable to conditionally set the `ContinuousIntegrationBuild` property. For example, the variable name for Azure Pipelines is `TF_BUILD`:
 
@@ -493,6 +496,7 @@ For GitHub Actions, the variable name is `GITHUB_ACTIONS`:
   <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
 </PropertyGroup>
 ```
+
 
 ### CopyDebugSymbolFilesFromPackages
 

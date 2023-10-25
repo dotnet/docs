@@ -20,7 +20,7 @@ There are several actions that are part of static initialization. Those actions 
 1. *Base static constructors run*. Any static constructors, starting with <xref:System.Object.%23ctor%2A?displayProperty=nameWithType> through each base class to the direct base class.
 1. *The static constructor runs*. The static constructor for the type runs.
 
-A [module initializer](../../language-reference/attributes/general.md#moduleinitializer-attribute) can be an alternative to a static constructor. For more information, see the [specification for module initializers](https://github.com/dotnet/runtime/blob/main/docs/design/specs/Ecma-335-Augments.md#module-initializer).
+A [module initializer](../../language-reference/attributes/general.md#moduleinitializer-attribute) can be an alternative to a static constructor. For more information, see the [specification for module initializers](~/_csharplang/proposals/csharp-9.0/module-initializers.md).
 
 ## Remarks
 

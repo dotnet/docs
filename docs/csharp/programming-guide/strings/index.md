@@ -74,7 +74,7 @@ You should consider raw string literals when you're generating text that include
 
 :::code language="csharp" source="./snippets/StringLiterals.cs" id="JSONString":::
 
-Compare that text with the equivalent text in our sample on [JSON serialization](../../../standard/serialization/system-text-json/how-to.md?pivots=dotnet-6-0#how-to-read-json-as-net-objects-deserialize), which doesn't make use of this new feature.
+Compare that text with the equivalent text in the sample on [JSON deserialization](../../../standard/serialization/system-text-json/deserialization.md), which doesn't make use of this new feature.
 
 ### String escape sequences
 

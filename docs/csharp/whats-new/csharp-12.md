@@ -77,9 +77,9 @@ You can use collection expressions anywhere you need a collection of elements. T
 
 C# added `in` parameters as a way to pass readonly references. `in` parameters allow both variables and values, and can be used without any annotation on arguments.
 
-The addition of `ref readonly` parameters enables more clarity for APIs that may be using `ref` parameters, or `in` parameters:
+The addition of `ref readonly` parameters enables more clarity for APIs that might be using `ref` parameters or `in` parameters:
 
-- APIs created before `in` was introduced may use `ref` even though the argument isn't modified. Those APIs can be updated with `ref readonly`. It won't be a breaking change for callers, as would be if the `ref` parameter was changed to `in`. An example is <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A?displayProperty=fullName>.
+- APIs created before `in` was introduced might use `ref` even though the argument isn't modified. Those APIs can be updated with `ref readonly`. It won't be a breaking change for callers, as would be if the `ref` parameter was changed to `in`. An example is <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A?displayProperty=fullName>.
 - APIs that take an `in` parameter, but logically require a variable. A value expression won't work. An example is <xref:System.ReadOnlySpan%601.%23ctor(%600@)?displayProperty=fullName>.
 - APIs that use `ref` because they require a variable, but don't mutate that variable. An example is <xref:System.Runtime.CompilerServices.Unsafe.IsNullRef%2A?displayProperty=fullName>.
 

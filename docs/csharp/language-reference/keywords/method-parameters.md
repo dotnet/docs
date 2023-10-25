@@ -18,7 +18,7 @@ By default, arguments in C# are passed to functions *by value*. That means a cop
 
 Because a struct is a [value type](../builtin-types/value-types.md), the method receives and operates on a copy of the struct argument when you pass a struct by value to a method. The method has no access to the original struct in the calling method and therefore can't change it in any way. The method can change only the copy.
 
-A class instance is a [reference type](reference-types.md) not a value type. When a reference type is passed by value to a method, the method receives a copy of the reference to the class instance. Both variables refer to the same object. The parameter is a copy of the reference. The called method can't reassign the instance in the calling method. However, the called method can use the copy of the reference to access the instance members. If the called method changes an instance member, the original instance in the calling method also changes.
+A class instance is a [reference type](reference-types.md) not a value type. When a reference type is passed by value to a method, the method receives a copy of the reference to the class instance. Both variables refer to the same object. The parameter is a copy of the reference. The called method can't reassign the instance in the calling method. However, the called method can use the copy of the reference to access the instance members. If the called method changes an instance member, the calling method also sees those changes since it references the same instance.
 
 The output of the following example illustrates the difference. The method `ClassTaker` changes the value of the `willIChange` field because the method uses the address in the parameter to find the specified field of the class instance. The `willIChange` field of the struct in the calling method doesn't change from calling `StructTaker` because the value of the argument is a copy of the struct itself, not a copy of its address. `StructTaker` changes the copy, and the copy is lost when the call to `StructTaker` is completed.
 
@@ -61,7 +61,7 @@ You apply one of the following modifiers to a parameter declaration to pass argu
 - [`readonly ref`](#ref-parameter-modifier): The argument must be initialized before calling the method. The method can't assign a new value to the parameter.
 - [`in`](#in-parameter-modifier): The argument must be initialized before calling the method. The method can't assign a new value to the parameter. The compiler might create a temporary variable to hold a copy of the argument to `in` parameters.
 
-Members of a class can't have signatures that differ only by `ref`, `ref readonly`, `in`, or `out`. A compiler error occurs if the only difference between two members of a type is that one of them has a `ref` parameter and the other has an `out`, `ref readonly` or `in` parameter. However, methods can be overloaded when one method has a `ref`, `ref readonly`, `in`, or `out` parameter and the other has a parameter that is passed by value, as shown in the following example. In other situations that require signature matching, such as hiding or overriding, `in`, `ref`, `ref readonly`, and `out` are part of the signature and don't match each other.
+Members of a class can't have signatures that differ only by `ref`, `ref readonly`, `in`, or `out`. A compiler error occurs if the only difference between two members of a type is that one of them has a `ref` parameter and the other has an `out`, `ref readonly`, or `in` parameter. However, methods can be overloaded when one method has a `ref`, `ref readonly`, `in`, or `out` parameter and the other has a parameter that is passed by value, as shown in the following example. In other situations that require signature matching, such as hiding or overriding, `in`, `ref`, `ref readonly`, and `out` are part of the signature and don't match each other.
 
 When a parameter has one of the preceding modifiers, the corresponding argument can have a compatible modifier:
 
@@ -70,11 +70,11 @@ When a parameter has one of the preceding modifiers, the corresponding argument 
 - An argument for an `in` parameter can optionally include the `in` modifier. If the `ref` modifier is used on the argument instead, the compiler issues a warning.
 - An argument for a `ref readonly` parameter should include either the `in` or `ref` modifiers, but not both. If neither modifier is included, the compiler issues a warning.
 
-When you use these modifiers, they describe how the parameter is used:
+When you use these modifiers, they describe how the argument is used:
 
 - `ref` means the method can read or write the value of the argument.
 - `out` means the method sets the value of the argument.
-- `ref readonly` means the method reads, but not write the value of the argument. The argument *should* be passed by reference.
+- `ref readonly` means the method reads, but can't write the value of the argument. The argument *should* be passed by reference.
 - `in` means the method reads, but can't write the value of the argument. The argument will be passed by reference or through a temporary variable.
 
 Properties aren't variables. They're methods, and can't be passed to `ref` parameters. You can't use these keywords for the following kinds of methods:
@@ -82,7 +82,7 @@ Properties aren't variables. They're methods, and can't be passed to `ref` param
 - Async methods, which you define by using the [async](async.md) modifier.
 - Iterator methods, which include a [yield return](../statements/yield.md) or `yield break` statement.
 
-[Extension methods](../../programming-guide/classes-and-structs/extension-methods.md) also have restrictions on the use of these keywords:
+[Extension methods](../../programming-guide/classes-and-structs/extension-methods.md) also have restrictions on the use of these argument keywords:
 
 - The `out` keyword can't be used on the first argument of an extension method.
 - The `ref` keyword can't be used on the first argument of an extension method when the argument isn't a `struct`, or a generic type not constrained to be a struct.
@@ -107,7 +107,7 @@ Variables passed as `out` arguments don't have to be initialized before being pa
 
 [Deconstruct methods](../../fundamentals/functional/deconstruct.md) declare their parameters with the `out` modifier to return multiple values. Other methods can return [value tuples](../builtin-types/value-tuples.md) for multiple return values.
 
-You can declare a variable in a separate statement before you pass it as an `out` argument. You can also declare the `out` variable in the argument list of the method call, rather than in a separate variable declaration. Out variable declarations produce more compact, readable code, and also prevent you from inadvertently assigning a value to the variable before the method call. The following example defines the `number` variable in the call to the [Int32.TryParse](xref:System.Int32.TryParse(System.String,System.Int32@)) method.
+You can declare a variable in a separate statement before you pass it as an `out` argument. You can also declare the `out` variable in the argument list of the method call, rather than in a separate variable declaration. `out` variable declarations produce more compact, readable code, and also prevent you from inadvertently assigning a value to the variable before the method call. The following example defines the `number` variable in the call to the [Int32.TryParse](xref:System.Int32.TryParse(System.String,System.Int32@)) method.
 
 :::code language="csharp" source="snippets/RefParameterModifier.cs" id="OutVarDeclaration":::
 
@@ -133,12 +133,12 @@ The `in` modifier is required in the method declaration but unnecessary at the c
 
 :::code language="csharp" source="snippets/RefParameterModifier.cs" id="InParameterModifier":::
 
-The `in` modifier allows the compiler to create a temporary variable for the argument and pass a readonly reference to that argument. The compiler always creates a temporary variable when the argument must be converted. When there's an [implicit conversion](~/_csharpstandard/standard/conversions.md#102-implicit-conversions) from the argument type, or when the argument is a value that isn't a variable. For example, when the argument is a literal value, or the value returned from a property accessor. When your API requires that the argument be passed by reference, choose the `ref readonly` modifier instead of the `in` modifier.
+The `in` modifier allows the compiler to create a temporary variable for the argument and pass a readonly reference to that argument. The compiler always creates a temporary variable when the argument must be converted, when there's an [implicit conversion](~/_csharpstandard/standard/conversions.md#102-implicit-conversions) from the argument type, or when the argument is a value that isn't a variable. For example, when the argument is a literal value, or the value returned from a property accessor. When your API requires that the argument be passed by reference, choose the `ref readonly` modifier instead of the `in` modifier.
 
-Defining methods using `in` parameters is a potential performance optimization. Some `struct` type arguments might be large in size, and when methods are called in tight loops or critical code paths, the cost of copying those structures is critical. Methods declare `in` parameters to specify that arguments might be passed by reference safely because the called method doesn't modify the state of that argument. Passing those arguments by reference avoids the (potentially) expensive copy. You explicitly add the `in` modifier at the call site to ensure the argument is passed by reference, not by value. Explicitly using `in` has the following two effects:
+Methods that are defined using `in` parameters potentially gain performance optimization. Some `struct` type arguments might be large in size, and when methods are called in tight loops or critical code paths, the cost of copying those structures is substantial. Methods declare `in` parameters to specify that arguments can be passed by reference safely because the called method doesn't modify the state of that argument. Passing those arguments by reference avoids the (potentially) expensive copy. You explicitly add the `in` modifier at the call site to ensure the argument is passed by reference, not by value. Explicitly using `in` has the following two effects:
 
 - Specifying `in` at the call site forces the compiler to select a method defined with a matching `in` parameter. Otherwise, when two methods differ only in the presence of `in`, the by value overload is a better match.
-- Specifying `in` declares your intent to pass an argument by reference. The argument used with `in` must represent a location that can be directly referred to. The same general rules for `out` and `ref` arguments apply: You can't use constants, ordinary properties, or other expressions that produce values. Otherwise, omitting `in` at the call site informs the compiler that it's fine to create a temporary variable to pass by read-only reference to the method. The compiler creates a temporary variable to overcome several restrictions with `in` arguments:
+- By specifying `in`, you declare your intent to pass an argument by reference. The argument used with `in` must represent a location that can be directly referred to. The same general rules for `out` and `ref` arguments apply: You can't use constants, ordinary properties, or other expressions that produce values. Otherwise, omitting `in` at the call site informs the compiler that it's fine to create a temporary variable to pass by read-only reference to the method. The compiler creates a temporary variable to overcome several restrictions with `in` arguments:
   - A temporary variable allows compile-time constants as `in` parameters.
   - A temporary variable allows properties, or other expressions for `in` parameters.
   - A temporary variable allows arguments where there's an implicit conversion from the argument type to the parameter type.
@@ -163,7 +163,7 @@ Method(i); // passed by readonly reference
 Method(in i); // passed by readonly reference, explicitly using `in`
 ```
 
-Now, suppose another method using by value arguments was available. The results change as shown in the following code:
+Now, suppose another method using by-value arguments was available. The results change as shown in the following code:
 
 ```csharp
 static void Method(int argument)

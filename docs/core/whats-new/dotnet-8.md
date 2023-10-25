@@ -165,7 +165,7 @@ JsonSerializer.Serialize(new { PropertyName = "value" }, options); // { "propert
 
 You can now deserialize onto read-only fields or properties (that is, those that don't have a `set` accessor).
 
-To opt into this support globally, set a new option, <xref:System.Text.Json.JsonSerializerOptions.PreferredObjectCreationHandling>, to <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Populate?displayProperty=nameWithType>. If compatibility is a concern, you can also enable the functionality more granularly by placing the `[JsonObjectCreationHandling(JsonObjectCreationHandling.Populate)]` attribute on types whose properties are to be populated, or on individual properties.
+To opt into this support globally, set a new option, <xref:System.Text.Json.JsonSerializerOptions.PreferredObjectCreationHandling>, to <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Populate?displayProperty=nameWithType>. If compatibility is a concern, you can also enable the functionality more granularly by placing the `[JsonObjectCreationHandling(JsonObjectCreationHandling.Populate)]` attribute on specific types whose properties are to be populated, or on individual properties.
 
 For example, consider the following code that deserializes into a `CustomerInfo` type that has two read-only properties.
 
@@ -203,6 +203,8 @@ Now, the input values are used to populate the read-only properties during deser
 ```output
 {"Names":["John Doe"],"Company":{"Name":"Contoso","PhoneNumber":null}}
 ```
+
+For more information about the *populate* deserialization behavior, see [Populate initialized properties](../../standard/serialization/system-text-json/populate-properties.md).
 
 #### Disable reflection-based default
 

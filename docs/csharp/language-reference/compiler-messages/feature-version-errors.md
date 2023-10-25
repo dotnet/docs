@@ -163,7 +163,7 @@ If you must support older libraries or runtimes, you might need to avoid using n
 The diagnostics for experimental features can be disabled to use the experimental feature.
 
 > [!WARNING]
-> Experimental features are subject to changes. The APIs may change, or they may be removed in future updates. Including experimental features is a way to get feedback on ideas and concepts for future development. Use extreme caution when using any feature marked as experimental.
+> Experimental features are subject to changes. The APIs may change, or they may be removed in future updates. Including experimental features is a way for library authors to get feedback on ideas and concepts for future development. Use extreme caution when using any feature marked as experimental.
 
 ## Breaking changes on struct initialization
 

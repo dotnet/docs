@@ -49,10 +49,10 @@ In C# 10, you can use constant string interpolation and the `nameof` operator to
 
 ## `Experimental` attribute
 
-Types, methods, or assemblies can be marked with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=nameWithType> to indicate an experimental feature. The compiler issues a warning if you access a method or type annotated with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>. You can disable these warnings to experiment with an experimental feature.
+Types, methods, and assemblies can be marked with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=nameWithType> to indicate an experimental feature. The compiler issues a warning if you access a method or type annotated with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>. You can disable these warnings to pilot an experimental feature.
 
 > [!WARNING]
-> Experimental features are subject to changes. The APIs may change, or they may be removed in future updates. Including experimental features is a way to get feedback on ideas and concepts for future development. Use extreme caution when using any feature marked as experimental.
+> Experimental features are subject to changes. The APIs may change, or they may be removed in future updates. Including experimental features is a way for library authors to get feedback on ideas and concepts for future development. Use extreme caution when using any feature marked as experimental.
 
 ## `SetsRequiredMembers` attribute
 

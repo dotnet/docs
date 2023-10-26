@@ -200,6 +200,22 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
   Shows the input and output streams of a launched child process in the current console.
 
+- **`--resume-runtime`**
+
+  Resume runtime once session has been initialized, defaults to true. Disable resume of runtime using --resume-runtime:false.
+
+- **`--stopping-event-provider-name`**
+
+  A string, parsed as-is, that will stop the trace upon hitting an event with the matching provider name. For a more specific stopping event, additionally provide `--stopping-event-event-name` and/or `--stopping-event-payload-filter`.
+
+- **`--stopping-event-event-name`**
+
+  A string, parsed as-is, that will stop the trace upon hitting an event with the matching event name. Requires `--stopping-event-provider-name` to be set. For a more specific stopping event, additionally provide `--stopping-event-payload-filter`.
+
+- **`--stopping-event-payload-filter`**
+
+  A string, parsed as [payload_field_name]:[payload_field_value] pairs separated by commas, that will stop the trace upon hitting an event with a matching payload. Requires `--stopping-event-provider-name` and `--stopping-event-event-name` to be set.
+
 > [!NOTE]
 
 > - Stopping the trace may take a long time (up to minutes) for large applications. The runtime needs to send over the type cache for all managed code that was captured in the trace.

@@ -59,6 +59,7 @@ The following commands are installed by default:
 - [`nuget verify`](dotnet-nuget-verify.md) (Available since .NET 5 SDK)
 - [`nuget trust`](dotnet-nuget-trust.md) (Available since .NET 5 SDK)
 - [`nuget sign`](dotnet-nuget-sign.md) (Available since .NET 6 SDK)
+- [`package search`](dotnet-package-search.md)
 
 ### Workload management commands
 

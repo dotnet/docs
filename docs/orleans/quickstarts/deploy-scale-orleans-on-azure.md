@@ -118,10 +118,17 @@ Update the `builder` configuration code in the _Program.cs_ file to match the ex
         {
             var connectionString = "<azure-cosmos-db-nosql-connection-string>";
     
-            siloBuilder
-                .UseCosmosClustering(o => o.ConfigureCosmosClient(connectionString))
-                .AddCosmosGrainStorage("urls", o => o.ConfigureCosmosClient(connectionString));
+            siloBuilder.UseCosmosClustering(options =>
+            {
+                options.IsResourceCreationEnabled = true;
+                options.ConfigureCosmosClient(connectionString);
+            });
     
+            siloBuilder.AddCosmosGrainStorage(name: "urls", options =>
+            {
+                options.IsResourceCreationEnabled = true;
+                options.ConfigureCosmosClient(connectionString);
+            });
             siloBuilder.Configure<ClusterOptions>(options =>
             {
                 options.ClusterId = "url-shortener";
@@ -130,6 +137,9 @@ Update the `builder` configuration code in the _Program.cs_ file to match the ex
         });
     }
     ```
+
+    > [!TIP]
+    > Use `IsResourceCreationEnabled` to instruct the grain to create any required Azure Cosmos DB for NoSQL resources automatically.
 
 ::: zone-end
 
@@ -188,16 +198,7 @@ Create an API for NoSQL account to hold the cluster and persistent state data yo
 
 1. Select **Go to resource** after the storage account is created.
 
-## Create the database and container resources
-
-The Orleans grain expects specific case-sensitive database and container names prior to deployment.
-
-1. On the account overview page, select **Data Explorer**.
-1. Create a database named `Orleans`.
-1. Within the `Orleans` database, create a container named `OrleansStorage` with a partition key path of `/PartitionKey`.
-1. Create another container named `OrleansCluster` within the `Orleans` database. Ensure this container has a partition key path of `/ClusterId`.
-
-## Configure the connection to Azure Storage
+## Configure the connection to Azure Cosmos DB
 
 1. On the account overview page, select **Access keys** on the navigation.
 1. On the Access keys page, next to **Primary Connection string** select **Show**, and then copy the value.

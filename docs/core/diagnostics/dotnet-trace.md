@@ -161,7 +161,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 - **`-o|--output <trace-file-path>`**
 
-  The output path for the collected trace data. If not specified, it defaults to `trace.nettrace`.
+  The output path for the collected trace data. If not specified it defaults to `<appname>_<yyyyMMdd>_<HHmmss>.nettrace`, e.g., `myapp_20210315_111514.nettrace``.
 
 - **`-p|--process-id <PID>`**
 

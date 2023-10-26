@@ -82,8 +82,11 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
     [--format <Chromium|NetTrace|Speedscope>] [-h|--help] [--duration dd:hh:mm:ss]
     [-n, --name <name>] [--diagnostic-port] [-o|--output <trace-file-path>] [-p|--process-id <pid>]
     [--profile <profile-name>] [--providers <list-of-comma-separated-providers>]
-    [--show-child-io]
     [-- <command>] (for target applications running .NET 5 or later)
+    [--show-child-io] [--resume-runtime]
+    [--stopping-event-provider-name <stoppingEventProviderName>]
+    [--stopping-event-event-name <stoppingEventEventName>]
+    [--stopping-event-payload-filter <stoppingEventPayloadFilter>]
 ```
 
 ### Options

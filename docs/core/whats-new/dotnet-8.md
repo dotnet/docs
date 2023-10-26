@@ -18,6 +18,10 @@ This article has been updated for .NET 8 release candidate (RC) 2.
 > - This information relates to a pre-release product that may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 > - Much of the other .NET documentation on [https://learn.microsoft.com/dotnet](/dotnet) has not yet been updated for .NET 8.
 
+## ASP.NET Core
+
+For information about what's new in ASP.NET Core, see [What's new in ASP.NET Core 8.0](/aspnet/core/release-notes/aspnetcore-8.0).
+
 ## Core .NET libraries
 
 This section contains the following subtopics:

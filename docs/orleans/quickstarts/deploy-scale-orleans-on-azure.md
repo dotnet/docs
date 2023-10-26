@@ -215,7 +215,7 @@ Create an API for NoSQL account to hold the cluster and persistent state data yo
 
 ## Deploy to Azure Container Apps
 
-1. In the Visual Studio solution explorer, right select on the top level project node and select **Add > Dockerfile**. Visual Studio creates a Dockerfile at the root of your project. This file enables containerization for your app and allows it to run on Azure container apps.
+1. In the Visual Studio solution explorer, right select on the top level project node and select **Add > Docker Support**. Visual Studio creates a Dockerfile at the root of your project. This file enables containerization for your app and allows it to run on Azure container apps.
 1. In the Visual Studio solution explorer, right-click on the top level project node and select **Publish**.
 1. In the publishing dialog, select **Azure** as the deployment target, and then select **Next**.
 1. For the specific target, select **Azure Container Apps (Linux)**, and then select **Next**.

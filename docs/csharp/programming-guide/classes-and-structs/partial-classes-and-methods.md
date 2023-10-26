@@ -101,7 +101,7 @@ A partial class or struct may contain a partial method. One part of the class co
 
 - It doesn't have any accessibility modifiers (including the default [private](../../language-reference/keywords/private.md)).
 - It returns [void](../../language-reference/builtin-types/void.md).
-- It doesn't have any [out](../../language-reference/keywords/out-parameter-modifier.md) parameters.
+- It doesn't have any [out](../../language-reference/keywords/method-parameters.md#out-parameter-modifier) parameters.
 - It doesn't have any of the following modifiers [virtual](../../language-reference/keywords/virtual.md), [override](../../language-reference/keywords/override.md), [sealed](../../language-reference/keywords/sealed.md), [new](../../language-reference/keywords/new-modifier.md), or [extern](../../language-reference/keywords/extern.md).
 
 Any method that doesn't conform to all those restrictions (for example, `public virtual partial void` method), must provide an implementation. That implementation may be supplied by a *source generator*.

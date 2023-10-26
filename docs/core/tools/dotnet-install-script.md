@@ -311,7 +311,7 @@ Signature validation is an important security measure that helps ensure the auth
 
 Here is a step-by-step guide on how to verify the authenticity of the `dotnet-install.sh` script using GPG:
 
-1. **Install GPG**: GPG (GNU Privacy Guard) is a free and open-source tool for encrypting and signing data. You can install it on your system using your package manager. For example, on Ubuntu or Debian, you can use the command `sudo apt-get install gnupg`.
+1. **Install GPG**: GPG (GNU Privacy Guard) is a free and open-source tool for encrypting and signing data. You can install it by following the [instructions on the GPG website](https://gnupg.org/download/).
 2. **Import our public key**: Download [public key](https://dot.net/v1/dotnet-install.asc) file, and you can then import it into your GPG keyring by running the command `gpg --import dotnet-install.asc`.
 3. **Download the signature file**: The signature file for our bash script is available at `https://dot.net/v1/dotnet-install.sig`. You can download it using a tool like `wget` or `curl`.
 4. **Verify the signature**: To verify the signature of our bash script, run the command `gpg --verify dotnet-install.sig dotnet-install.sh`. This will check the signature of the `dotnet-install.sh` file against the signature in the `dotnet-install.sig` file.

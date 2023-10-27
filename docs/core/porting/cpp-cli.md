@@ -2,7 +2,7 @@
 title: Migrate C++/CLI projects to .NET Core and .NET 5+
 description: Learn about porting C++/CLI projects to .NET Core and .NET 5 and later versions.
 author: mjrousos
-ms.date: 10/23/2023
+ms.date: 10/27/2023
 ---
 
 # How to port a C++/CLI project to .NET Core or .NET 5+
@@ -30,22 +30,20 @@ To port a C++/CLI project to .NET Core, make the following changes to the *.vcxp
 
 ### WPF and Windows Forms usage
 
-You can use an app with a native entry point that displays a Windows Forms form via C++/CLI. You can also migrate a solution with a managed entry point interoperating with native dependencies via C++/CLI.
-
 .NET Core C++/CLI projects can use Windows Forms and WPF APIs. To use these Windows desktop APIs, you need to add explicit framework references to the UI libraries. SDK-style projects that use Windows desktop APIs reference the necessary framework libraries automatically by using the `Microsoft.NET.Sdk.WindowsDesktop` SDK. Because C++/CLI projects don't use the SDK-style project format, they need to add explicit framework references when targeting .NET Core.
 
 To use Windows Forms APIs, add this reference to the *.vcxproj* file:
 
 ```xml
 <!-- Reference all of Windows Forms -->
-    <FrameworkReference Include="Microsoft.WindowsDesktop.App.WindowsForms" />
+<FrameworkReference Include="Microsoft.WindowsDesktop.App.WindowsForms" />
 ```
 
 To use WPF APIs, add this reference to the *.vcxproj* file:
 
 ```xml
 <!-- Reference all of WPF -->
-    <FrameworkReference Include="Microsoft.WindowsDesktop.App.WPF" />
+<FrameworkReference Include="Microsoft.WindowsDesktop.App.WPF" />
 ```
 
 To use both Windows Forms and WPF APIs, add this reference to the *.vcxproj* file:
@@ -53,7 +51,7 @@ To use both Windows Forms and WPF APIs, add this reference to the *.vcxproj* fil
 ```xml
 <!-- Reference the entirety of the Windows desktop framework:
      Windows Forms, WPF, and the types that provide integration between them -->
-    <FrameworkReference Include="Microsoft.WindowsDesktop.App" />
+<FrameworkReference Include="Microsoft.WindowsDesktop.App" />
 ```
 
 Currently, it's not possible to add these references by using Visual Studio's reference manager. Instead, update the project file by editing it manually. In Visual Studio, you need to unload the project first. You can also use another editor like Visual Studio Code.
@@ -82,9 +80,11 @@ It's also possible to build C++/CLI projects without using MSBuild. Follow these
    }
    ```
 
->[!NOTE]
->C++/CLI assemblies can be loaded multiple times, each time into a new <xref:System.Runtime.Loader.AssemblyLoadContext>. If the first time managed code in a C++/CLI assembly is executed is from a native caller, the assembly is loaded into a separate `AssemblyLoadContext`. If the first time managed code is executed is from a managed caller, the assembly is loaded into the same `AssemblyLoadContext` as the caller, usually the default.
->
+> [!NOTE]
+> C++/CLI assemblies that target .NET 7 or a later version are always loaded into the default <xref:System.Runtime.Loader.AssemblyLoadContext>. However, in .NET 6 and earlier versions, C++/CLI assemblies might be loaded multiple times, each time into a new `AssemblyLoadContext`. If the first time that managed code in a C++/CLI assembly is executed:
+> 
+> - Is from a native caller, the assembly is loaded into a separate `AssemblyLoadContext`.
+> - Is from a managed caller, the assembly is loaded into the same `AssemblyLoadContext` as the caller, usually the default.
+> 
 >To always load your C++/CLI assembly into the default `AssemblyLoadContext`, you can add an "initialize" style call from your entry-point assembly to your C++/CLI assembly. For more information, see this [dotnet/runtime issue](https://github.com/dotnet/runtime/issues/61105).
->
->This limitation is removed starting in .NET 7. C++/CLI assemblies that target .NET 7 or a later version are always loaded into the default `AssemblyLoadContext`.
+

@@ -9,7 +9,7 @@ If debugging or observability is not sufficient, .NET supports additional diagno
 
 ## Tracing with Event Source
 
-[Event Source](./eventsource.md)) provides the ability to collect detailed diagnostic information about what's happening inside .NET processes. It includes telemetry information for the runtime, GC, libraries, and application code.
+[Event Source](./eventsource.md) provides the ability to collect detailed diagnostic information about what's happening inside .NET processes. It includes telemetry information for the runtime, GC, libraries, and application code.
 
 Event Source data can be collected in-process using the <xref:System.Diagnostics.Tracing.EventListener?displayProperty=nameWithType> API or with external diagostics tools such as [Visual Studio](/visualstudio/profiling), [dotnet-monitor](./dotnet-monitor.md), [dotnet-trace](./dotnet-trace.md), [PerfView](https://github.com/microsoft/perfview), and the [Perfcollect](./trace-perfcollect-lttng.md) scripts. Using the external tools to collect event source data in traces is commonly used for performance analysis.
 

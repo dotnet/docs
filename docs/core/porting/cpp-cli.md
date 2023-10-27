@@ -82,9 +82,8 @@ It's also possible to build C++/CLI projects without using MSBuild. Follow these
 
 > [!NOTE]
 > C++/CLI assemblies that target .NET 7 or a later version are always loaded into the default <xref:System.Runtime.Loader.AssemblyLoadContext>. However, in .NET 6 and earlier versions, C++/CLI assemblies might be loaded multiple times, each time into a new `AssemblyLoadContext`. If the first time that managed code in a C++/CLI assembly is executed:
-> 
+>
 > - Is from a native caller, the assembly is loaded into a separate `AssemblyLoadContext`.
 > - Is from a managed caller, the assembly is loaded into the same `AssemblyLoadContext` as the caller, usually the default.
-> 
->To always load your C++/CLI assembly into the default `AssemblyLoadContext`, you can add an "initialize" style call from your entry-point assembly to your C++/CLI assembly. For more information, see this [dotnet/runtime issue](https://github.com/dotnet/runtime/issues/61105).
-
+>
+> To always load your C++/CLI assembly into the default `AssemblyLoadContext`, you can add an "initialize" style call from your entry-point assembly to your C++/CLI assembly. For more information, see this [dotnet/runtime issue](https://github.com/dotnet/runtime/issues/61105).

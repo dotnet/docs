@@ -1543,7 +1543,7 @@ You can opt out of verification by setting the environment variable `DOTNET_NUGE
 
 ### C# Hot Reload supports modifying generics
 
-Starting in .NET 8, C# Hot Reload [supports modifying generic types and generic methods](https://devblogs.microsoft.com/dotnet/hot-reload-generics/).  When debugging console, desktop, mobile or WebAssembly applications with Visual Studio, applying changes to C# code or Razor pages is now supported in generic classes and generic methods.  See the [full list of edits supported by Roslyn](https://github.com/dotnet/roslyn/blob/main/docs/wiki/EnC-Supported-Edits.md)
+Starting in .NET 8, C# Hot Reload [supports modifying generic types and generic methods](https://devblogs.microsoft.com/dotnet/hot-reload-generics/). When you debug console, desktop, mobile, or WebAssembly applications with Visual Studio, you can apply changes to generic classes and generic methods in C# code or Razor pages. For more information, see the [full list of edits supported by Roslyn](https://github.com/dotnet/roslyn/blob/main/docs/wiki/EnC-Supported-Edits.md)
 
 ## See also
 

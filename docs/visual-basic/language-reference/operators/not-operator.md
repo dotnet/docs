@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Not Operator (Visual Basic)"
 title: "Not Operator"
-ms.date: 07/20/2015
+ms.date: 10/27/2023
 f1_keywords: 
   - "vb.Not"
 helpviewer_keywords: 
@@ -53,6 +53,8 @@ result = Not expression
 > [!NOTE]
 > Since the logical and bitwise operators have a lower precedence than other arithmetic and relational operators, any bitwise operations should be enclosed in parentheses to ensure accurate execution.  
   
+Note that `if Not someStr?.Contains("some string")` or any other value that evaluates as `Boolean`? and has the value of `nothing` or `HasValue=false` should actually run an `else` block in `if` to prevent any confusion. The evaluation follows the SQL evaluation where null/nothing doesn't equal anything, not even another null/nothing.
+
 ## Data Types  
 
  For a Boolean negation, the data type of the result is `Boolean`. For a bitwise negation, the result data type is the same as that of `expression`. However, if expression is `Decimal`, the result is `Long`.  

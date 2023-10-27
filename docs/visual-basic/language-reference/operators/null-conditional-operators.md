@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: ?. and ?() null-conditional operators (Visual Basic)"
 title: "Null-conditional Operators"
-ms.date: 10/19/2018
+ms.date: 10/27/2023
 helpviewer_keywords:
   - "null-conditional operators [Visual Basic]"
   - "?. operator [Visual Basic]"
@@ -59,6 +59,8 @@ The null-conditional operators are short-circuiting.  If one operation in a chai
 ```vb
 A?.B?.C?(E)
 ```
+
+Note that `if Not someStr?.Contains("some string")` or any other value that evaluates as `Boolean`? and has the value of `nothing` or `HasValue=false` should actually run an `else` block in `if` to prevent any confusion. The evaluation follows the SQL evaluation where null/nothing doesn't equal anything, not even another null/nothing.
 
 Another use for null-conditional member access is to invoke delegates in a thread-safe way with much less code.  The following example defines two types, a `NewsBroadcaster` and a `NewsReceiver`. News items are sent to the receiver by the `NewsBroadcaster.SendNews` delegate.
 

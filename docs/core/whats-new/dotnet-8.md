@@ -1539,6 +1539,12 @@ Most users shouldn't notice the verification. However, if you have an existing r
 
 You can opt out of verification by setting the environment variable `DOTNET_NUGET_SIGNATURE_VERIFICATION` to `false`.
 
+## Diagnostics
+
+### C# Hot Reload supports modifying generics
+
+Starting in .NET 8, C# Hot Reload [supports modifying generic types and generic methods](https://devblogs.microsoft.com/dotnet/hot-reload-generics/). When you debug console, desktop, mobile, or WebAssembly applications with Visual Studio, you can apply changes to generic classes and generic methods in C# code or Razor pages. For more information, see the [full list of edits supported by Roslyn](https://github.com/dotnet/roslyn/blob/main/docs/wiki/EnC-Supported-Edits.md)
+
 ## See also
 
 - [Breaking changes in .NET 8](../compatibility/8.0.md)

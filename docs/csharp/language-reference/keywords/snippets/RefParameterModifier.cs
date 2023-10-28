@@ -54,7 +54,7 @@ namespace InRefOutModifier
         private static void ChangeByReference(ref Product itemRef)
         {
             // Change the address that is stored in the itemRef parameter.
-            itemRef = new Product("Stapler", 99999);
+            itemRef = new Product("Stapler", 12345);
         }
 
         private static void ModifyProductsByReference()

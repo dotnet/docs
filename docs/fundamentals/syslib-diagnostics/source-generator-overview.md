@@ -53,12 +53,12 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1031][1031] | The `System.Text.Json` source generator encountered a duplicate `JsonTypeInfo` property name |
 | [SYSLIB1032][1032] | The `System.Text.Json` source generator encountered a context class that is not partial |
 | [SYSLIB1033][1033] | The `System.Text.Json` source generator encountered a type that has multiple `[JsonConstructor]` annotations |
-| SYSLIB1034 | (Reserved for System.Text.Json.SourceGeneration.) |
+| [SYSLIB1034][1034] | JsonSourceGenerator encountered a `JsonStringEnumConverter` annotation |
 | [SYSLIB1035][1035] | The `System.Text.Json` source generator encountered a type that has multiple `[JsonExtensionData]` annotations |
 | [SYSLIB1036][1036] | The `System.Text.Json` source generator encountered an invalid `[JsonExtensionData]` annotation |
 | [SYSLIB1037][1037] | The `System.Text.Json` source generator encountered a type with init-only properties for which deserialization is not supported |
 | [SYSLIB1038][1038] | The `System.Text.Json` source generator encountered a property annotated with `[JsonInclude]` that has inaccessible accessors |
-| SYSLIB1039 | (ID is reserved for System.Text.Json.SourceGeneration.) |
+| [SYSLIB1039][1039] | JsonSourceGenerator encountered a `JsonDerivedTypeAttribute` annotation with `JsonSourceGenerationMode.Serialization` enabled |
 | [SYSLIB1040][1040] | Invalid <xref:System.Text.RegularExpressions.GeneratedRegexAttribute> usage. |
 | [SYSLIB1041][1041] | Multiple <xref:System.Text.RegularExpressions.GeneratedRegexAttribute> attributes were applied to the same method, but only one is allowed. |
 | [SYSLIB1042][1042] | The specified regular expression is invalid. |
@@ -187,10 +187,12 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 [1031]: syslib1031.md
 [1032]: syslib1032.md
 [1033]: syslib1033.md
+[1034]: syslib1034.md
 [1035]: syslib1035.md
 [1036]: syslib1036.md
 [1037]: syslib1037.md
 [1038]: syslib1038.md
+[1039]: syslib1039.md
 [1040]: syslib1040-1049.md
 [1041]: syslib1040-1049.md
 [1042]: syslib1040-1049.md

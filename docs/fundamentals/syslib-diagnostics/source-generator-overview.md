@@ -45,7 +45,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1023][1023] | Generating more than six arguments is not supported |
 | SYSLIB1024 | Logging method argument uses unsupported `out` parameter modifier |
 | SYSLIB1025 | Multiple logging methods cannot use the same event name within a class |
-| SYSLIB1026 | (Reserved for logging.) |
+| SYSLIB1026 | C# language version not supported by the logging source generator. |
 | SYSLIB1027 | (Reserved for logging.) |
 | SYSLIB1028 | (Reserved for logging.) |
 | SYSLIB1029 | (Reserved for logging.) |
@@ -111,19 +111,19 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1089][1089] | (Reserved for System.Runtime.InteropServices.JavaScript.JSImportGenerator.) |
 | [SYSLIB1090][1090] | Invalid `GeneratedComInterfaceAttribute` usage. |
 | [SYSLIB1091][1091] | Method is declared in different partial declaration than the `GeneratedComInterface` attribute. |
-| [SYSLIB1092][1092] | (Reserved for Microsoft.Interop.ComInteropGenerator.) |
-| [SYSLIB1093][1093] | (Reserved for Microsoft.Interop.ComInteropGenerator.) |
-| [SYSLIB1094][1094] | (Reserved for Microsoft.Interop.ComInteropGenerator.) |
-| [SYSLIB1095][1095] | (Reserved for Microsoft.Interop.ComInteropGenerator.) |
-| [SYSLIB1096][1096] | (Reserved for Microsoft.Interop.ComInteropGenerator.) |
-| [SYSLIB1097][1097] | (Reserved for Microsoft.Interop.ComInteropGenerator.) |
-| [SYSLIB1098][1098] | (Reserved for Microsoft.Interop.ComInteropGenerator.) |
-| [SYSLIB1099][1099] | (Reserved for Microsoft.Interop.ComInteropGenerator.) |
-| [SYSLIB1100][1100] | Type is not supported. |
-| [SYSLIB1101][1101] | Property on type is not supported. |
-| [SYSLIB1102][1102] | Project's language version must be at least C# 11. |
-| [SYSLIB1103][1103] | Value types are invalid inputs to configuration 'Bind' methods. |
-| [SYSLIB1104][1104] | Generator cannot determine the target configuration type. |
+| [SYSLIB1092][1092] | Usage of `LibraryImport` or `GeneratedComInterface` attribute does not follow recommendation. |
+| [SYSLIB1093][1093] | Analysis for COM interface generation has failed. |
+| [SYSLIB1094][1094] | The base COM interface failed to generate source. Code will not be generated for this interface. |
+| [SYSLIB1095][1095] | Invalid `GeneratedComClassAttribute` usage. |
+| [SYSLIB1096][1096] | Use `GeneratedComInterfaceAttribute` instead of `ComImportAttribute` to generate COM marshalling code at compile time. |
+| [SYSLIB1097][1097] | This type implements at least one type with the `GeneratedComInterfaceAttribute` attribute. Add the `GeneratedComClassAttribute` to enable passing this type to COM and exposing the COM interfaces for the types with the `GeneratedComInterfaceAttribute` from objects of this type. |
+| [SYSLIB1098][1098] | .NET COM hosting with `EnableComHosting` only supports built-in COM interop. It does not support source-generated COM interop with `GeneratedComInterfaceAttribute`. |
+| [SYSLIB1099][1099] | COM Interop APIs on `System.Runtime.InteropServices.Marshal` do not support source-generated COM and will fail at run time. |
+| [SYSLIB1100][1100] | Configuration binding generator: Type is not supported. |
+| [SYSLIB1101][1101] | Configuration binding generator: Property on type is not supported. |
+| [SYSLIB1102][1102] | Configuration binding generator: Project's language version must be at least C# 11. |
+| [SYSLIB1103][1103] | Configuration binding generator: Value types are invalid inputs to configuration 'Bind' methods. |
+| [SYSLIB1104][1104] | Configuration binding generator: Generator cannot determine the target configuration type. |
 | [SYSLIB1105][1105] | (Reserved for Microsoft.Extensions.Configuration.Binder.SourceGeneration.) |
 | [SYSLIB1106][1106] | (Reserved for Microsoft.Extensions.Configuration.Binder.SourceGeneration.)(Reserved for Microsoft.Extensions.Configuration.Binder.SourceGeneration.)  |
 | [SYSLIB1107][1107] | (Reserved for Microsoft.Extensions.Configuration.Binder.SourceGeneration.) |

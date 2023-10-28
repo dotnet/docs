@@ -1,7 +1,7 @@
 ---
 title: Analyzer diagnostics in .NET 6+
 description: Learn about analyzer diagnostics created by source generators in .NET 6 and later versions that produce SYSLIB compiler warnings.
-ms.date: 05/10/2023
+ms.date: 10/27/2023
 ---
 
 # Source-generator diagnostics in .NET 6+
@@ -157,6 +157,16 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1217][1217] | The validation attribute is only applicable to properties of type string, array, or `ICollection`; it cannot be used with other types. |
 | [SYSLIB1218][1218] | (Reserved for Microsoft.Extensions.Options.SourceGeneration.) |
 | [SYSLIB1219][1219] | (Reserved for Microsoft.Extensions.Options.SourceGeneration.) |
+| [SYSLIB1220][1220] | JsonSourceGenerator encountered a [JsonConverterAttribute] with an invalid type argument. |
+| [SYSLIB1221][1221] | JsonSourceGenerator does not support this C# language version. |
+| [SYSLIB1222][1222] | Constructor annotated with JsonConstructorAttribute is inaccessible. |
+| [SYSLIB1223][1223] | Constructor annotated with JsonConstructorAttribute is inaccessible. |
+| [SYSLIB1224][1224] | 	Types annotated with JsonSerializableAttribute must be classes deriving from JsonSerializerContext. |
+| [SYSLIB1225][1225] | (Reserved for System.Text.Json.SourceGeneration.) |
+| [SYSLIB1226][1226] | (Reserved for System.Text.Json.SourceGeneration.) |
+| [SYSLIB1227][1227] | (Reserved for System.Text.Json.SourceGeneration.) |
+| [SYSLIB1228][1228] | (Reserved for System.Text.Json.SourceGeneration.) |
+| [SYSLIB1229][1229] | (Reserved for System.Text.Json.SourceGeneration.) |
 
 <!-- Include adds ## Suppress warnings (H2 heading) -->
 [!INCLUDE [suppress-source-generator-diagnostics](includes/suppress-source-generator-diagnostics.md)]
@@ -291,3 +301,13 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 [1217]: syslib1201-1219.md
 [1218]: syslib1201-1219.md
 [1219]: syslib1201-1219.md
+[1220]: syslib1220-1229.md
+[1221]: syslib1220-1229.md
+[1222]: syslib1220-1229.md
+[1223]: syslib1220-1229.md
+[1224]: syslib1220-1229.md
+[1225]: syslib1220-1229.md
+[1226]: syslib1220-1229.md
+[1227]: syslib1220-1229.md
+[1228]: syslib1220-1229.md
+[1229]: syslib1220-1229.md

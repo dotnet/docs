@@ -161,7 +161,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1221][1221] | JsonSourceGenerator does not support this C# language version. |
 | [SYSLIB1222][1222] | Constructor annotated with JsonConstructorAttribute is inaccessible. |
 | [SYSLIB1223][1223] | Constructor annotated with JsonConstructorAttribute is inaccessible. |
-| [SYSLIB1224][1224] | 	Types annotated with JsonSerializableAttribute must be classes deriving from JsonSerializerContext. |
+| [SYSLIB1224][1224] | Types annotated with JsonSerializableAttribute must be classes deriving from JsonSerializerContext. |
 | [SYSLIB1225][1225] | (Reserved for System.Text.Json.SourceGeneration.) |
 | [SYSLIB1226][1226] | (Reserved for System.Text.Json.SourceGeneration.) |
 | [SYSLIB1227][1227] | (Reserved for System.Text.Json.SourceGeneration.) |

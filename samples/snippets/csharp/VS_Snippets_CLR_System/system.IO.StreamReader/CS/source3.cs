@@ -13,18 +13,19 @@ public class ReadBuf
             Console.WriteLine($"{FILE_NAME} does not exist.");
             return;
         }
-        FileStream f = new FileStream(FILE_NAME, FileMode.Open,
-            FileAccess.Read, FileShare.Read);
-        // Create an instance of BinaryReader that can
-        // read bytes from the FileStream.
-        using (BinaryReader br = new BinaryReader(f))
+        using (FileStream f = new FileStream(FILE_NAME, FileMode.Open, FileAccess.Read, FileShare.Read))
         {
-            byte input;
-            // While not at the end of the file, read lines from the file.
-            while (br.PeekChar() > -1 )
+            // Create an instance of BinaryReader that can
+            // read bytes from the FileStream.
+            using (BinaryReader br = new BinaryReader(f, Encoding.UTF8, true))
             {
-                input = br.ReadByte();
-                Console.WriteLine(input);
+                byte input;
+                // While not at the end of the file, read lines from the file.
+                while (br.PeekChar() > -1)
+                {
+                    input = br.ReadByte();
+                    Console.WriteLine(input);
+                }
             }
         }
     }

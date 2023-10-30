@@ -13,7 +13,7 @@ Some C# 12 features have been introduced in previews. You can try these features
 - [Optional parameters in lambda expressions](#default-lambda-parameters) - Introduced in Visual Studio version 17.5 Preview 2.
 - [`ref readonly` parameters](#ref-readonly-parameters) - Introduced in Visual Studio version 17.8 Preview 2.
 - [Alias any type](#alias-any-type) - Introduced in Visual Studio version 17.6 Preview 3.
-- [Experimental attribute](#experimental attribute) - Introduced in Visual Studio version 17.7 Preview 3.
+- [Experimental attribute](#experimental-attribute) - Introduced in Visual Studio version 17.7 Preview 3.
 
 - [Interceptors](#interceptors) - *Preview feature* Introduced in Visual Studio version 17.7 Preview 3.
 
@@ -128,7 +128,7 @@ The difference is that the compiler can take advantage of known information abou
 
 ## Experimental attribute
 
-Types, methods, or assemblies can be marked with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=nameWithType> to indicate an experimental feature. The compiler issues a warning if you access a method or type annotated with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>.
+Types, methods, or assemblies can be marked with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=nameWithType> to indicate an experimental feature. The compiler issues a warning if you access a method or type annotated with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>. All types included in an assembly marked with the `Experimental` attribute are experimental. You can read more in the article on [General attributes read by the compiler](../language-reference/attributes/general.md#experimental-attribute), or the [feature specification](~/_csharplang/proposals/csharp-12.0/experimental-attribute.md).
 
 ## Interceptors
 

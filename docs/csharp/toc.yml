@@ -1139,7 +1139,7 @@ items:
       displayName: AllowNull, DisallowNull, MaybeNull, NotNull, MaybeNullWhen, NotNullWhen, NotNullIfNotNull, DoesNotReturn, DoesNotReturnIf
       href: language-reference/attributes/nullable-analysis.md
     - name: Miscellaneous
-      displayName: Conditional, Obsolete, SetsRequiredMembers, AttributeUsage, ModuleInitializer, SkipLocalsInit, module initializer
+      displayName: Conditional, Obsolete, Experimental, SetsRequiredMembers, AttributeUsage, ModuleInitializer, SkipLocalsInit, module initializer
       href: language-reference/attributes/general.md
   - name: Unsafe code and pointers
     displayName: unsafe code, pointers, fixed size buffer, function pointer
@@ -1392,3 +1392,5 @@ items:
         href: ../../_csharplang/proposals/csharp-12.0/inline-arrays.md
       - name: Ref readonly parameters
         href: ../../_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md
+      - name: Experimental attribute
+        href: ../../_csharplang/proposals/csharp-12.0/experimental-attribute.md

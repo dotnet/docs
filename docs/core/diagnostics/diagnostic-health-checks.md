@@ -1,7 +1,7 @@
 ---
 title: App health checks in C#
 description: Learn how to use resource utilization and application lifetime health checks in .NET app development.
-ms.date: 10/20/2023
+ms.date: 10/30/2023
 ---
 
 # .NET app health checks in C\#

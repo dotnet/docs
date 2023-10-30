@@ -1,7 +1,7 @@
 ---
 title: Exception summarization in C#
 description: Learn the value proposition of exception summarization within diagnostic metrics for .NET app development.
-ms.date: 10/20/2023
+ms.date: 10/30/2023
 ---
 
 # Exception summarization
@@ -51,4 +51,4 @@ The preceding code:
 - Iterates over a collection of exceptions, calling the `Summarize` method on each exception and displaying the result.
 
 > [!NOTE]
-> The primary focus in the design of all exception summarization implementations is to provide diagnostic convenience to trusted users, rather than prioritizing the protection of personally identifiable information (PII). The <xref:Microsoft.Extensions.Diagnostics.ExceptionSummarization.ExceptionSummary.Description?displayProperty=nameWithType> doesn't contain sensitive information, but the <xref:Microsoft.Extensions.Diagnostics.ExceptionSummarization.ExceptionSummary.AdditionalDetails?displayProperty=nameWithType> might contain sensitive information depending on the implementation.
+> The primary focus in the design of all exception summarization implementations is to provide diagnostic convenience, rather than prioritizing the protection of personally identifiable information (PII). The <xref:Microsoft.Extensions.Diagnostics.ExceptionSummarization.ExceptionSummary.Description?displayProperty=nameWithType> doesn't contain sensitive information, but the <xref:Microsoft.Extensions.Diagnostics.ExceptionSummarization.ExceptionSummary.AdditionalDetails?displayProperty=nameWithType> might contain sensitive information depending on the implementation.

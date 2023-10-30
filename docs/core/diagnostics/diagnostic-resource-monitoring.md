@@ -1,7 +1,7 @@
 ---
 title: Diagnostic resource monitoring
 description: Learn how to use the diagnostic resource monitoring library in .NET.
-ms.date: 10/20/2023
+ms.date: 10/30/2023
 ---
 
 # Resource monitoring
@@ -40,7 +40,7 @@ At this point, with the `IResourceMonitor` implementation you'll ask for resourc
 
 Extending this example, you can leverage [Spectre.Console](https://www.nuget.org/packages/Spectre.Console), a well-regarded .NET library designed to simplify the development of visually appealing, cross-platform console applications. With Spectre, you'll be able to present resource utilization data in a tabular format. The following code illustrates the usage of the `IResourceMonitor` interface to access details regarding the CPU and memory usage of the current process, then presenting this data in a table:
 
-:::code source="snippets/resource-monitoring/Program.cs" id="monitor" highlight="30-31,36-40":::
+:::code source="snippets/resource-monitoring/Program.cs" id="monitor" highlight="27-28,33-37":::
 
 The preceding code:
 
@@ -55,12 +55,12 @@ The following is an example of the output from the preceding code:
 
 ## Kubernetes probes
 
-The [Microsoft.Extensions.Diagnostics.Probes](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.Probes) NuGet package provides support for Kubernetes probes. It's intended to report health checks that align with various Kubernetes probes, for example:
+In addition to resource monitoring, apps that exist within a Kubernetes cluster report their health through diagnostic probes. The [Microsoft.Extensions.Diagnostics.Probes](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.Probes) NuGet package provides support for Kubernetes probes. It externalizes various [health checks](diagnostic-health-checks.md) that align with various Kubernetes probes, for example:
 
 - Liveness
 - Readiness
 - Startup
 
-The library communicates the apps current health state to a Kubernetes hosting environment. If a process reports as being unhealthy, Kubernetes doesn't send it any traffic, providing the process time to recover or terminate.
+The library communicates the apps current health to a Kubernetes hosting environment. If a process reports as being unhealthy, Kubernetes doesn't send it any traffic, providing the process time to recover or terminate.
 
-To add support for Kubernetes probes, add a package reference to [Microsoft.Extensions.Diagnostics.Probes](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.Probes). On an `IServiceCollection` instance, call <xref:Microsoft.Extensions.Diagnostics.Probes.KubernetesProbesExtensions.AddKubernetesProbes%2A>.
+To add support for Kubernetes probes, add a package reference to [Microsoft.Extensions.Diagnostics.Probes](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.Probes). On an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> instance, call <xref:Microsoft.Extensions.Diagnostics.Probes.KubernetesProbesExtensions.AddKubernetesProbes%2A>.

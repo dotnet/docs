@@ -17,7 +17,7 @@ public class ReadBuf
         {
             // Create an instance of BinaryReader that can
             // read bytes from the FileStream.
-            using (BinaryReader br = new BinaryReader(f, Encoding.UTF8, true))
+            using (BinaryReader br = new BinaryReader(f))
             {
                 byte input;
                 // While not at the end of the file, read lines from the file.

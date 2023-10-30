@@ -36,28 +36,6 @@ On Windows, Linux, and macOS, the runtime has one diagnostic port open by defaul
 
 By default, the runtime executes managed code as soon as it starts, regardless of whether any diagnostic tools have connected to the diagnostic port. Sometimes it's useful to have the runtime wait to run managed code until after a diagnostic tool is connected, to observe the initial program behavior. Setting environment variable `DOTNET_DefaultDiagnosticPortSuspend=1` causes the runtime to wait until a tool connects to the default port. If no tool is attached after several seconds, the runtime prints a warning message to the console explaining that it's still waiting for a tool to attach.
 
-## Configure additional diagnostic ports
-
-> [!NOTE]
-> This works for apps running .NET 5 or later only.
-
-Both the Mono and CoreCLR runtimes can use custom configured diagnostic ports in the `connect` role. Mono also supports custom TCP/IP ports in the `listen` role, when used with [dotnet-dsrouter](dotnet-dsrouter.md) on Android or iOS. These custom ports are in addition to the default port that remains available. There are a few common reasons that custom ports are useful:
-
-- On Android, iOS, and tvOS there's no default port, so configuring a port is necessary to use diagnostic tools.
-- In environments with containers or firewalls, you may want to set up a predictable endpoint address that doesn't vary based on process ID as the default port does. Then the custom port can be explicitly added to an allow list or proxied across some security boundary.
-- For monitoring tools it is useful to have the tool listen on an endpoint, and the runtime actively attempts to connect to it. This avoids needing the monitoring tool to continuously poll for new apps starting. In environments where the default diagnostic port isn't accessible, it also avoids needing to configure the monitor with a custom endpoint for each monitored app.
-
-In each communication channel between a diagnostic tool and the .NET runtime, one side needs to be the listener and wait for the other side to connect. The runtime can be configured to act in the `connect` role for any port. (The Mono runtime can also be configured to act in the `listen` role for any port.) Ports can also be independently configured to suspend at startup, waiting for a diagnostic tool to issue a resume command. Ports configured to connect repeat their connection attempts indefinitely if the remote endpoint isn't listening or if the connection is lost. But the app does not automatically suspend managed code while waiting to establish that connection. If you want the app to wait for a connection to be established, use the suspend at startup option.
-
-Custom ports are configured using the `DOTNET_DiagnosticPorts` environment variable. This variable should be set to a semicolon delimited list of port descriptions. Each port description consists of an endpoint address and optional modifiers that control the runtime's `connect` or `listen` role and if the runtime should suspend on startup. On Windows, the endpoint address is the name of a named pipe without the `\\.\pipe\` prefix. On Linux and macOS, it's the full path to a Unix Domain Socket. On Android, iOS, and tvOS, the address is an IP and port. For example:
-
-1. `DOTNET_DiagnosticPorts=my_diag_port1` - (Windows) The runtime connects to the named pipe `\\.\pipe\my_diag_port1`.
-1. `DOTNET_DiagnosticPorts=/foo/tool1.socket;foo/tool2.socket` - (Linux and macOS) The runtime connects to both the Unix Domain Sockets `/foo/tool1.socket` and `/foo/tool2.socket`.
-1. `DOTNET_DiagnosticPorts=127.0.0.1:9000` - (Android, iOS, and tvOS) The runtime connects to IP 127.0.0.1 on port 9000.
-1. `DOTNET_DiagnosticPorts=/foo/tool1.socket,nosuspend` - (Linux and macOS) This example has the `nosuspend` modifier. The runtime tries to connect to Unix Domain Socket `/foo/tool1.socket` that an external tool creates. Additional diagnostic ports would normally cause the runtime to suspend at startup waiting for a resume command, but `nosuspend` causes the runtime not to wait.
-
-The complete syntax for a port is `address[,(listen|connect)][,(suspend|nosuspend)]`. `connect` is the default if neither `connect` or `listen` is specified (and `listen` is only supported by the Mono runtime on Android or iOS). `suspend` is the default if neither `suspend` or `nosuspend` is specified.
-
 ## Usage in dotnet diagnostic tools
 
 Tools such as [dotnet-dump](./dotnet-dump.md), [dotnet-counters](./dotnet-counters.md), and [dotnet-trace](./dotnet-trace.md) all support `collect` or `monitor` verbs that communicate to a .NET app via the diagnostic port.

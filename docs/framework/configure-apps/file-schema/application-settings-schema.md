@@ -16,6 +16,9 @@ Application settings allow a Windows Forms or ASP.NET application to store and r
 
 By default, application settings in a Windows Forms application uses the <xref:System.Configuration.LocalFileSettingsProvider> class, which uses the .NET configuration system to store settings in an XML configuration file. For more information about the files used by application settings, see [Application Settings Architecture](/dotnet/desktop/winforms/advanced/application-settings-architecture).
 
+> [!NOTE]
+> Most configuration sections defined by .NETFramework are no longer functional in .NETCore. <xref:System.Configuration.ConfigurationManager> is only provided for compatibility. Consider, instead, removing the usage in app.config and calling API to make the same setting.
+
 Application settings defines the following elements as part of the configuration files it uses.
 
 | Element                    | Description                                                                           |
@@ -41,6 +44,8 @@ This element defines a setting. It has the following attributes.
 | ---------------- | ----------- |
 | **name**         | Required. The unique ID of the setting. Settings created through Visual Studio are saved with the name `ProjectName.Properties.Settings`. |
 | **serializeAs** | Required. The format to use for serializing the value to text. Valid values are:<br><br>- `string`. The value is serialized as a string using a <xref:System.ComponentModel.TypeConverter>.<br>- `xml`. The value is serialized using XML serialization.<br>- `binary`. The value is serialized as text-encoded binary using binary serialization.<br />- `custom`. The settings provider has inherent knowledge of this setting and serializes and de-serializes it. |
+
+Add the names for settings that your create in **\<applicationSettings>** as entries under the **\<configSections>** element at the top of the file. You see the **\<configSections>** element under **\<configuration>** in the example section.
 
 ## \<value> element
 

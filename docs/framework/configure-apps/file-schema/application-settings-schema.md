@@ -17,7 +17,7 @@ Application settings allow a Windows Forms or ASP.NET application to store and r
 By default, application settings in a Windows Forms application uses the <xref:System.Configuration.LocalFileSettingsProvider> class, which uses the .NET configuration system to store settings in an XML configuration file. For more information about the files used by application settings, see [Application Settings Architecture](/dotnet/desktop/winforms/advanced/application-settings-architecture).
 
 > [!NOTE]
-> Most configuration sections defined by .NETFramework are no longer functional in .NETCore. <xref:System.Configuration.ConfigurationManager> is only provided for compatibility. Consider, instead, removing the usage in app.config and calling API to make the same setting.
+> Most configuration sections defined by .NET Framework don't function in .NET 6+ and .NET Core versions. <xref:System.Configuration.ConfigurationManager> is provided only for compatibility. Instead, consider removing the usage in app.config and calling the corresponding API, if available, to make the same setting.
 
 Application settings defines the following elements as part of the configuration files it uses.
 

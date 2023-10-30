@@ -59,7 +59,6 @@ Add the names for settings that you create in **\<applicationSettings>** as entr
 </configuration>
 ```
 
-
 ## \<value> element
 
 This element contains the value of a setting.

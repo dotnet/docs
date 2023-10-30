@@ -60,7 +60,7 @@ The null-conditional operators are short-circuiting.  If one operation in a chai
 A?.B?.C?(E)
 ```
 
-Note that when `if Not someStr?.Contains("some string")` or any other value that evaluates as `Boolean?` has the value of `nothing` or `HasValue=false`, the `else` block is run.  The evaluation follows the SQL evaluation where null/nothing doesn't equal anything, not even another null/nothing.
+Note that if `Not someStr?.Contains("some string")` or any other value that evaluates as `Boolean?` has the value of `nothing` or `HasValue=false`, the `else` block is run.  The evaluation follows the SQL evaluation where null/nothing doesn't equal anything, not even another null/nothing.
 
 Another use for null-conditional member access is to invoke delegates in a thread-safe way with much less code.  The following example defines two types, a `NewsBroadcaster` and a `NewsReceiver`. News items are sent to the receiver by the `NewsBroadcaster.SendNews` delegate.
 

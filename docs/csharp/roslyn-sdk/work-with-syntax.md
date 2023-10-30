@@ -15,8 +15,7 @@ The *syntax tree* is a fundamental immutable data structure exposed by the compi
 
 Syntax trees are the primary structure used for compilation, code analysis, binding, refactoring, IDE features, and code generation. No part of the source code is understood without it first being identified and categorized into one of many well-known structural language elements.
 
-> [!NOTE]
-> [RoslynQuoter](https://github.com/KirillOsenkov/RoslynQuoter) is an open-source tool that shows the syntax factory API calls used to construct a program's syntax tree. To try it out live, see [http://roslynquoter.azurewebsites.net](http://roslynquoter.azurewebsites.net).
+[RoslynQuoter](https://github.com/KirillOsenkov/RoslynQuoter) is an open-source tool that shows the syntax factory API calls used to construct a program's syntax tree. To try it out live, see [http://roslynquoter.azurewebsites.net](http://roslynquoter.azurewebsites.net).
 
 Syntax trees have three key attributes:
 

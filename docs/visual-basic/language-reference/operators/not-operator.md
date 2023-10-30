@@ -53,7 +53,7 @@ result = Not expression
 > [!NOTE]
 > Since the logical and bitwise operators have a lower precedence than other arithmetic and relational operators, any bitwise operations should be enclosed in parentheses to ensure accurate execution.  
   
-Note that `if Not someStr?.Contains("some string")` or any other value that evaluates as `Boolean?` and has the value of `nothing` or `HasValue=false` the `else` block is run.  The evaluation follows the SQL evaluation where null/nothing doesn't equal anything, not even another null/nothing.
+Note that when `if Not someStr?.Contains("some string")` or any other value that evaluates as `Boolean?` has the value of `nothing` or `HasValue=false`, the `else` block is run.  The evaluation follows the SQL evaluation where null/nothing doesn't equal anything, not even another null/nothing.
 
 ## Data Types  
 

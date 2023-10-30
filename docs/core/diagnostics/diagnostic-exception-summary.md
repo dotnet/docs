@@ -28,7 +28,7 @@ The <xref:Microsoft.Extensions.Diagnostics.ExceptionSummarization.IExceptionSumm
 The result of the `Summarize` method returns an <xref:Microsoft.Extensions.Diagnostics.ExceptionSummarization.ExceptionSummary> struct, and it contains the following properties:
 
 - <xref:Microsoft.Extensions.Diagnostics.ExceptionSummarization.ExceptionSummary.Description?displayProperty=nameWithType>: The summary description of the exception.
-- <xref:Microsoft.Extensions.Diagnostics.ExceptionSummarization.ExceptionSummary.AdditionalDetails?displayProperty=nameWithType>: Intended for low-level diagnostic use, this property contains additional details about the exception and has a relatively high cardinality.
+- <xref:Microsoft.Extensions.Diagnostics.ExceptionSummarization.ExceptionSummary.AdditionalDetails?displayProperty=nameWithType>: Intended for low-level diagnostic use, this property contains additional details about the exception and has a relatively high cardinality. This property may contain privacy-sensitive information.
 - <xref:Microsoft.Extensions.Diagnostics.ExceptionSummarization.ExceptionSummary.ExceptionType?displayProperty=nameWithType>:  The type of the exception, unless inner exceptions are present, in which case both outer and inner types are reflected.
 
 ## Example exception summarization usage

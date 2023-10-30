@@ -22,7 +22,7 @@ The compiler determines a default based on these rules:
 If your project targets a `preview` framework that has a corresponding preview language version, the language version used is the preview language version. You use the latest features with that preview in any environment, without affecting projects that target a released .NET Core version.
 
 > [!IMPORTANT]
-> The new project template for Visual Studio 2017 added a `<LangVersion>latest</LangVersion>` entry to new project files. If you upgrade the target framework for these projects, it can [override the default](#override-a-default). When you update the .NET SDK for these projects, remove the `<LangVersion>latest</LangVersion>` from your project file to ensure your project uses the recommended compiler version for your target framework. You can update the target framework to access newer language features.
+> The new project template for Visual Studio 2017 added a `<LangVersion>latest</LangVersion>` entry to new project files. If you upgrade the target framework for these projects, it can [override the default](#override-the-default). When you update the .NET SDK for these projects, remove the `<LangVersion>latest</LangVersion>` from your project file to ensure your project uses the recommended compiler version for your target framework. You can update the target framework to access newer language features.
 
 ## Override the default
 

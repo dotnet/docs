@@ -11,7 +11,7 @@ public sealed class Worker : BackgroundService
     {
         while (!stoppingToken.IsCancellationRequested)
         {
-            _logger.LogInformation("Worker running at: {time}", DateTimeOffset.UtcNow);
+            _logger.LogInformation("Worker running at: {Time}", DateTimeOffset.UtcNow);
             await Task.Delay(1_000, stoppingToken);
         }
     }

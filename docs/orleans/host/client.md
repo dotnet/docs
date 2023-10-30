@@ -1,7 +1,7 @@
 ---
 title: Orleans clients
 description: Learn how to write .NET Orleans clients.
-ms.date: 01/13/2023
+ms.date: 10/30/2023
 zone_pivot_groups: orleans-version
 ---
 
@@ -204,27 +204,24 @@ When connecting to a cluster in a different process (on a different machine), a 
 ```csharp
 public class ClusterClientHostedService : IHostedService
 {
-    public IClusterClient Client { get; }
+    private readonly IClusterClient _client;
 
-    public ClusterClientHostedService(ILoggerProvider loggerProvider)
+    public ClusterClientHostedService(IClusterClient client)
     {
-        Client = new ClientBuilder()
-            .UseLocalhostClustering()
-            .ConfigureLogging(builder => builder.AddProvider(loggerProvider))
-            .Build();
+        _client = client;
     }
 
     public async Task StartAsync(CancellationToken cancellationToken)
     {
         // A retry filter could be provided here.
-        await Client.Connect();
+        await _client.Connect();
     }
 
     public async Task StopAsync(CancellationToken cancellationToken)
     {
-        await Client.Close();
+        await _client.Close();
 
-        Client.Dispose();
+        _client.Dispose();
     }
 }
 ```
@@ -232,38 +229,17 @@ public class ClusterClientHostedService : IHostedService
 The service is then registered like this:
 
 ```csharp
-await new HostBuilder()
-    .ConfigureServices(services =>
+await Host.CreateDefaultBuilder(args)
+    .UseOrleansClient(builder =>
     {
-        services.AddSingleton<ClusterClientHostedService>();
-        services.AddSingleton<IHostedService>(
-            sp => sp.GetService<ClusterClientHostedService>());
-        services.AddSingleton<IClusterClient>(
-            sp => sp.GetService<ClusterClientHostedService>().Client);
-        services.AddSingleton<IGrainFactory>(
-            sp => sp.GetService<ClusterClientHostedService>().Client);
+        builder.UseLocalhostClustering();
     })
-    .ConfigureLogging(builder => builder.AddConsole())
-    .RunConsoleAsync();
-```
-
-At this point, an `IClusterClient` instance could be consumed anywhere that dependency injection is supported, such as in an ASP.NET controller:
-
-```csharp
-public class HomeController : Controller
-{
-    private readonly IClusterClient _client;
-
-    public HomeController(IClusterClient client) => _client = client;
-
-    public IActionResult Index()
+    .ConfigureServices(services => 
     {
-        var grain = _client.GetGrain<IMyGrain>();
-        var model = grain.GetModel();
-
-        return View(model);
+        services.AddHostedService<ClusterClientHostedService>();
     }
-}
+    )
+    .RunConsoleAsync();
 ```
 
 ### Example

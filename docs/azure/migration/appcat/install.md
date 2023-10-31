@@ -9,7 +9,7 @@ ms.author: masoucou
 
 # Install the Azure Application and Code Assessment Toolkit (Azure AppCAT)
 
-Azure AppCAT for .NET can be installed as a Visual Studio extension of a s a.NET command-line tool. When installed as a Visual Studio extension, loaded projects can be upgraded through the context menu. The command-line version of the tool provides and interactive step-by-step experience.
+Azure AppCAT for .NET can be installed as a Visual Studio extension or as a .NET command-line tool. When installed as a Visual Studio extension, loaded projects and solution can be upgraded through the context menu in Solution Explorer. The command-line version of the tool provides an interactive step-by-step experience.
 
 ## Prerequisites
 

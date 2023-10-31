@@ -79,7 +79,7 @@ The following values are valid:
 
 - To ensure that your project uses the default compiler version recommended for your target framework, don't use the **LangVersion** option. You can update the target framework to access newer language features.
 
-- Specifying **LangVersion** with the `default` value is different from omitting the **LangVersion** option. Specifying `default` uses the latest version of the language that the compiler supports, without taking into account the target framework. For example, building a project that targets .NET 6 from the current version of Visual Studio 2022 uses C# 10 if **LangVersion** isn't specified, but uses C# 11 if **LangVersion** is set to `default`.
+- Specifying **LangVersion** with the `default` value is different from omitting the **LangVersion** option. Specifying `default` uses the latest version of the language that the compiler supports, without taking into account the target framework. For example, building a project that targets .NET 6 from Visual Studio version 17.6 uses C# 10 if **LangVersion** isn't specified, but uses C# 11 if **LangVersion** is set to `default`.
 
 - Metadata referenced by your C# application isn't subject to the **LangVersion** compiler option.
 

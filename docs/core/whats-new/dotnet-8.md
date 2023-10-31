@@ -1142,37 +1142,7 @@ bin\Release\net8.0\
 
 .NET 8 introduces an option to simplify the output path and folder structure for build outputs. Previously, .NET apps produced a deep and complex set of output paths for different build artifacts. The new, simplified output path structure gathers all build outputs into a common location, which makes it easier for tooling to anticipate.
 
-To opt into the new output path format, use one of the following properties in your *Directory.Build.props* file:
-
-- Add an `ArtifactsPath` property with a value of `$(MSBuildThisFileDirectory)artifacts` (or whatever you want the folder location to be), OR
-- To use the default location, simply set the `UseArtifactsOutput` property to `true`.
-
-Alternatively, run `dotnet new buildprops --use-artifacts` and the template will generate the *Directory.Build.props* file for you:
-
-```xml
-<Project>
-  <PropertyGroup>
-    <ArtifactsPath>$(MSBuildThisFileDirectory)artifacts</ArtifactsPath>
-  </PropertyGroup>
-</Project>
-```
-
-By default, the common location is a folder named *artifacts* in the root of your repository rather than in each project folder. The folder structure under the root *artifacts* folder is as follows:
-
-```Directory
-📁 artifacts
-    └──📂 <Type of output>
-        └──📂 <Project name>
-            └──📂 <Pivot>
-```
-
-The following table shows the default values for each level in the folder structure. The values, as well as the default location, can be overridden using properties in the *Directory.build.props* file.
-
-| Folder level | Description |
-|--|--|
-| Type of output | Examples: `bin`, `obj`, `publish`, or `package` |
-| Project name | Separates output by each project. |
-| Pivot | Distinguishes between builds of a project for different configurations, target frameworks, and runtime identifiers. If multiple elements are needed, they're joined by an underscore (`_`). |
+For more information, see [Artifacts output layout](../sdk/artifacts-output.md).
 
 ### `dotnet workload clean` command
 

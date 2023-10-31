@@ -79,7 +79,7 @@ The serializer has built-in support for the following additional types.
 
 #### Source generator
 
-.NET 8 includes enhancements of the System.Text.Json [source generator](../../standard/serialization/system-text-json/source-generation.md) that are aimed at making the [Native AOT](../../standard/glossary.md#native-aot) experience on par with the [reflection-based serializer](../../standard/serialization/system-text-json/source-generation-modes.md#overview). For example:
+.NET 8 includes enhancements of the System.Text.Json [source generator](../../standard/serialization/system-text-json/source-generation.md) that are aimed at making the [Native AOT](../../standard/glossary.md#native-aot) experience on par with the [reflection-based serializer](../../standard/serialization/system-text-json/reflection-vs-source-generation.md#reflection). For example:
 
 - The source generator now supports serializing types with [`required`](../../standard/serialization/system-text-json/required-properties.md) and [`init`](../../csharp/language-reference/keywords/init.md) properties. These were both already supported in reflection-based serialization.
 - Improved formatting of source-generated code.
@@ -98,7 +98,7 @@ The serializer has built-in support for the following additional types.
   public partial class MyContext : JsonSerializerContext { }
   ```
 
-  For more information, see [Serialize enum fields as strings](../../standard/serialization/system-text-json/source-generation-modes.md#serialize-enum-fields-as-strings).
+  For more information, see [Serialize enum fields as strings](../../standard/serialization/system-text-json/source-generation.md#serialize-enum-fields-as-strings).
 
 - New `JsonConverter.Type` property lets you look up the type of a non-generic `JsonConverter` instance:
 

@@ -286,6 +286,8 @@ options.TypeInfoResolverChain.Insert(0, ContextE.Default); // Insert at the begi
 
 Any change made to the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> property is reflected by <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> and vice versa.
 
+:::zone-end
+
 :::zone pivot="dotnet-8-0"
 
 ## Serialize enum fields as strings

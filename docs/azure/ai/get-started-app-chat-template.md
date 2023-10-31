@@ -158,6 +158,7 @@ The sample repository contains all the code and configuration files you need to 
     azd up
     ```
 
+1. When you're prompted for an environment name, enter a value of your choice, such as `dotnetai`. The environment name influences the naming of provisioned Azure resources.
 1. When you're prompted to select a location the first time, select a location near you. This location is used for most the resources including hosting.
 1. When you're prompted for a location for the OpenAI model, select a location that is near you. If the same location is available as your first location, select that.
 1. Wait until app is deployed. It may take 5-10 minutes for the deployment to complete.
@@ -170,7 +171,8 @@ The sample repository contains all the code and configuration files you need to 
 
 The chat app is preloaded with employee benefits information from [PDF files](https://github.com/Azure-Samples/azure-search-openai-demo/tree/main/data). You can use the chat app to ask questions about the benefits. The following steps walk you through the process of using the chat app.
 
-1. In the browser, select a question or enter a question in the text box at the bottom of the page such as one of the following: 
+1. In the browser, navigate to the **Chat** page using the left navigation.
+1. Select one of the suggested questions or enter your own in the text box at the bottom of the page: 
 
     * What is included in my Northwind Health Plus plan that is not in standard?
     * What happens in a performance review? 
@@ -178,11 +180,11 @@ The chat app is preloaded with employee benefits information from [PDF files](ht
 
     :::image type="content" source="../media/get-started-app-chat-template/browser-chat-initial-answer.png" alt-text="Screenshot of chat app's first answer.":::
 
-1. From the answer, select a citation.
+1. From the answer, select a citation. A pop-up window will open displaying the source of the information.
 
     :::image type="content" source="../media/get-started-app-chat-template/browser-chat-initial-answer-citation-highlighted.png" alt-text="Screenshot of chat app's first answer with its citation highlighted in a red box.":::
 
-1. In the right-pane, use the tabs to understand how the answer was generated.
+1. Navigate between the tabs at the top of the answer box to understand how the answer was generated.
 
     |Tab|Description|
     |---|---|
@@ -190,7 +192,7 @@ The chat app is preloaded with employee benefits information from [PDF files](ht
     |**Supporting content**|This includes the information to answer your question and the source material. The number of source material citations is noted in the **Developer settings**. The default value is **3**.|
     |**Citation**|This displays the original page that contains the citation.|
 
-1. When you are done, select the selected tab again to close the pane.
+1. When you are done, navigate back to the answer tab.
 
 ### Use chat app settings to change behavior of responses
 
@@ -204,10 +206,9 @@ The intelligence of the chat is determined by the OpenAI model and the settings 
 |Retrieve this many search results|This is the number of search results that are used to generate the answer. You can see these sources returned in the _Thought process_ and _Supporting content_ tabs of the citation. |
 |Exclude category|This is the category of documents that are excluded from the search results.|
 |Use semantic ranker for retrieval|This is a feature of [Azure Cognitive Search](/azure/search/semantic-search-overview#what-is-semantic-search) that uses machine learning to improve the relevance of search results.|
+|Retrieval mode|**Vectors + Text** means that the search results are based on the text of the documents and the embeddings of the documents. **Vectors** means that the search results are based on the embeddings of the documents. **Text** means that the search results are based on the text of the documents.|
 |Use query-contextual summaries instead of whole documents| |
 |Suggest follow-up questions|Have the chat app suggest follow-up questions based on the answer.|
-|Retrieval mode|**Vectors + Text** means that the search results are based on the text of the documents and the embeddings of the documents. **Vectors** means that the search results are based on the embeddings of the documents. **Text** means that the search results are based on the text of the documents.|
-|Stream chat completion responses|Stream response instead of waiting until the complete answer is available for a response.|
 
 The following steps walk you through the process of changing the settings.
 

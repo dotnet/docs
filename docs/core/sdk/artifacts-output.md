@@ -64,4 +64,11 @@ To opt into the centralized output path format, add one of the following MSBuild
   </Project>
   ```
 
-The "pivot" folder name defaults to a combination of target framework moniker (TFM), configuration, and runtime identifier (RID). Any that aren't present are omitted. To customize how the "pivot" folder is named, set the `ArtifactsPivots` MSbuild property to your desired string.
+The "pivot" folder name defaults to a combination of target framework moniker (TFM), configuration, and runtime identifier (RID). Any that aren't present are omitted. To customize how the "pivot" folder is named, set the `ArtifactsPivots` MSBuild property to your desired string. For example:
+
+```xml
+<PropertyGroup>
+  ...
+  <ArtifactsPivots>$(ArtifactsPivots)_MyCustomPivot</ArtifactsPivots>
+</PropertyGroup>
+```

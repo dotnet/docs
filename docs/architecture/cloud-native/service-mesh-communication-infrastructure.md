@@ -57,8 +57,6 @@ We next move to distributed data in cloud-native systems and the benefits and ch
 
 - [Azure API Gateway Ingress Controller](https://azure.github.io/application-gateway-kubernetes-ingress/)
 
-- [About Ingress in Azure Kubernetes Service (AKS)](https://vincentlauzon.com/2018/10/10/about-ingress-in-azure-kubernetes-service-aks/)
-
 - [gRPC Documentation](https://grpc.io/docs/guides/)
 
 - [gRPC for WCF Developers](../grpc-for-wcf-developers/index.md)

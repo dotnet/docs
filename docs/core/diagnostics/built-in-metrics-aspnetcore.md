@@ -110,7 +110,7 @@ Available staring in: ASP.NET Core 8.0
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
 | `aspnetcore.diagnostics.exception.result` | string | ASP.NET Core exception middleware handling result | `handled`; `unhandled` | Always |
-| `aspnetcore.diagnostics.handler.type` | string | Full type name of the [`IExceptionHandler`](https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.diagnostics.iexceptionhandler) implementation that handled the exception. | `Contoso.MyHandler` | If the exception was handled by this handler. |
+| `aspnetcore.diagnostics.handler.type` | string | Full type name of the [`IExceptionHandler`](/dotnet/api/microsoft.aspnetcore.diagnostics.iexceptionhandler) implementation that handled the exception. | `Contoso.MyHandler` | If the exception was handled by this handler. |
 | `exception.type` | string | The full name of exception type. | `System.OperationCanceledException`; `Contoso.MyException` | Always |
 
 `aspnetcore.diagnostics.exception.result` is one of the following:

@@ -15,7 +15,7 @@ The following official Ecma documents are available for [C#](https://www.ecma-in
 
 - **The C# Language Standard (version 6.0)**: [ECMA-334.pdf](https://www.ecma-international.org/wp-content/uploads/ECMA-334_6th_edition_june_2022.pdf)
 - **The Common Language Infrastructure**: [ECMA-335.pdf](https://www.ecma-international.org/wp-content/uploads/ECMA-335_6th_edition_june_2012.pdf).
-- **Information Derived from the Partition IV XML File**: [ECMA-084.pdf](https://www.ecma-international.org/publications-and-standards/technical-reports/ecma-tr-84/) format.
+- **Information Derived from the Partition IV XML File**: [ECMA TR/84](https://www.ecma-international.org/publications-and-standards/technical-reports/ecma-tr-84/) format.
 
 The official ISO/IEC documents are available from the ISO/IEC [Publicly Available Standards](https://standards.iso.org/ittf/PubliclyAvailableStandards/) page. These links are direct from that page:
 

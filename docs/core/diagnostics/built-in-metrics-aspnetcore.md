@@ -67,7 +67,7 @@ The time ends when:
 - All response data has been sent.
 - The context data structures for the request are being disposed.
 
-The default buckets for this metic are set to { 0, 0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10 }.
+When using OpenTelemetry, the default buckets for this metric are set to { 0, 0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10 }.
 
 <!-- Once we migrate this doc to https://github.com/dotnet/AspNetCore.Docs we can remove the following version info -->
 Available staring in: ASP.NET Core 8.0
@@ -246,8 +246,6 @@ As this metric is tracking the connection duration, and ideally http connections
 
 Available staring in: ASP.NET Core 8.0
 
-This 
-
 ### Instrument: `kestrel.rejected_connections`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
@@ -377,7 +375,7 @@ Available staring in: ASP.NET Core 8.0
 | `long_polling` | [Long Polling](/archive/msdn-magazine/2012/april/cutting-edge-long-polling-and-signalr) |
 | `web_sockets` | [WebSocket](https://datatracker.ietf.org/doc/html/rfc6455) |
 
-As this metric is tracking the connection duration, and ideally signal connections are durable, the buckets should be longer than those used for request durations. For example, using [0, 0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, 30, 60, 120, 300] provides an upper bucket of 5 mins.
+As this metric is tracking the connection duration, and ideally SignalR connections are durable, the buckets should be longer than those used for request durations. For example, using [0, 0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, 30, 60, 120, 300] provides an upper bucket of 5 mins.
 
 Available staring in: ASP.NET Core 8.0
 

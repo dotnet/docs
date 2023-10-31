@@ -46,7 +46,7 @@ Most errors when doing a DNS lookup throw a <xref:System.Net.Sockets.SocketExcep
 
 Socket exceptions with any other `SocketError` value are reported as `System.Net.Sockets.SocketException`.
 
-The default buckets for this metric are set to { 0, 0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10 }.
+When using OpenTelemetry, the default buckets for this metric are set to { 0, 0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10 }.
 
 Available starting in: .NET 8
 
@@ -109,7 +109,7 @@ Available starting in: .NET 8
 
 HTTP client request duration measures the time the underlying client handler takes to complete the request. Completing the request includes the time up to reading response headers from the network stream. It doesn't include the time spent reading the response body.
 
-The default buckets for this metic are set to { 0, 0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10 }.
+When using OpenTelemetry, the default buckets for this metric are set to { 0, 0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10 }.
 
 Available starting in: .NET 8
 

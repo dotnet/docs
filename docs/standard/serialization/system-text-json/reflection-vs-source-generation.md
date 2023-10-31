@@ -31,13 +31,15 @@ As an alternative, `System.Text.Json` can use the C# [source generation](../../.
 
 Source generation can be used in two modes:
 
-* **Metadata collection mode**
+* **Metadata-based mode**
 
   During compilation, `System.Text.Json` collects the metadata needed for serialization and generates source code files. The generated source code files are automatically compiled as an integral part of the app.
 
-* **Serialization optimization (fast track) mode**
+* **Serialization-optimization (fast path) mode**
 
-  <xref:System.Text.Json.JsonSerializer> features that customize the output of serialization, such as naming policies and reference preservation, carry a performance overhead. In serialization optimization mode, System.Text.Json generates optimized code that uses [`Utf8JsonWriter`](use-utf8jsonwriter.md) directly. This optimized or *fast path* code increases serialization throughput.
+  <xref:System.Text.Json.JsonSerializer> features that customize the output of serialization, such as naming policies and reference preservation, carry a performance overhead. In serialization-optimization mode, System.Text.Json generates optimized serialization code that uses [`Utf8JsonWriter`](use-utf8jsonwriter.md) directly. This optimized or *fast path* code increases serialization throughput.
+
+  Fast-path *deserialization* isn't currently available. For more information, see [dotnet/runtime issue 55043](https://github.com/dotnet/runtime/issues/55043).
 
 Source generation for `System.Text.Json` requires C# 9.0 or a later version.
 
@@ -47,25 +49,29 @@ Choose reflection or source-generation modes based on the following benefits tha
 
 :::zone pivot="dotnet-8-0"
 
-| Benefit                                              | Reflection | Source generation<br/>(Metadata collection mode) | Source generation<br/>(Serialization optimization mode) |
+| Benefit                                              | Reflection | Source generation<br/>(Metadata-based mode) | Source generation<br/>(Serialization-optimization mode) |
 |------------------------------------------------------|------------|---------------------|----------------------------|
-| Simpler to code and debug.                           | ✔️        | ❌                  | ❌                        |
-| Supports non-public accessors.                       | ✔️        | ❌                  | ❌                        |
-| Supports all available serialization customizations. | ✔️        | ❌                  | ❌                        |
+| Simpler to code.                                     | ✔️        | ❌                  | ❌                        |
+| Simpler to debug.                                    | ❌        | ✔️                  | ✔️                        |
+| Supports non-public members.                         | ✔️        | ✔️<sup>*</sup>      | ✔️<sup>*</sup>            |
+| Supports all available serialization customizations. | ✔️        | ❌<sup>†</sup>      | ❌<sup>†</sup>            |
 | Reduces start-up time.                               | ❌        | ✔️                  | ❌                        |
 | Reduces private memory usage.                        | ❌        | ✔️                  | ✔️                        |
 | Eliminates run-time reflection.                      | ❌        | ✔️                  | ✔️                        |
 | Facilitates trim-safe app size reduction.            | ❌        | ✔️                  | ✔️                        |
 | Increases serialization throughput.                  | ❌        | ❌                  | ✔️                        |
 
+\* The source generator supports *some* non-public members, for example, internal types in the same assembly.
+† Source-generated contracts can be modified using the contract customization API.
+
 :::zone-end
 
 :::zone pivot="dotnet-7-0,dotnet-6-0"
 
-| Benefit                                              | Reflection | Source generation:<br/>Metadata collection | Source generation:<br/>Serialization optimization |
+| Benefit                                              | Reflection | Source generation<br/>(Metadata-based mode) | Source generation<br/>(Serialization-optimization mode) |
 |------------------------------------------------------|------------|---------------------|----------------------------|
-| Simpler to code and debug.                           | ✔️        | ❌                  | ❌                        |
-| Supports non-public accessors.                       | ✔️        | ❌                  | ❌                        |
+| Simpler to code.                                     | ✔️        | ❌                  | ❌                        |
+| Simpler to debug.                                    | ❌        | ❌                  | ✔️                        |
 | Supports required properties.                        | ✔️        | ❌                  | ❌                        |
 | Supports init-only properties.                       | ✔️        | ❌                  | ❌                        |
 | Supports all available serialization customizations. | ✔️        | ❌                  | ❌                        |

@@ -18,7 +18,7 @@ From the serializer's perspective, these two demarcations are equivalent and bot
 
 - If you're using a programming language other than C# or a down-level version of C#.
 - If you only want the requirement to apply to JSON deserialization.
-- If you're using `System.Text.Json` serialization in [source generation](source-generation-modes.md#metadata-collection-mode) mode. In this case, your code won't compile if you use the `required` modifier, as source generation occurs at compile time.
+- If you're using `System.Text.Json` serialization in [source generation](source-generation-modes.md#metadata-based-mode) mode. In this case, your code won't compile if you use the `required` modifier, as source generation occurs at compile time.
 
 The following code snippet shows an example of a property modified with the `required` keyword. This property must be present in the JSON payload for deserialization to succeed.
 

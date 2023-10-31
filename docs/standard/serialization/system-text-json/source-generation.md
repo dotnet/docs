@@ -97,12 +97,12 @@ Here are the preceding examples in a complete program:
 
 ## Specify source-generation mode
 
-You can specify metadata-collection mode or serialization-optimization mode for an entire context, which may include multiple types. Or you can specify the mode for an individual type. If you do both, the mode specification for a type wins.
+You can specify metadata-based mode or serialization-optimization mode for an entire context, which may include multiple types. Or you can specify the mode for an individual type. If you do both, the mode specification for a type wins.
 
 - For an entire context, use the <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute.GenerationMode?displayProperty=nameWithType> property.
 - For an individual type, use the <xref:System.Text.Json.Serialization.JsonSerializableAttribute.GenerationMode?displayProperty=nameWithType> property.
 
-### Serialization-optimization mode example
+### Serialization-optimization (fast path) mode example
 
 - For an entire context:
 
@@ -116,7 +116,7 @@ You can specify metadata-collection mode or serialization-optimization mode for 
 
   :::code language="csharp" source="snippets/source-generation/csharp/SerializeOnlyNoOptions.cs" id="All":::
 
-### Metadata-collection mode example
+### Metadata-based mode example
 
 - For an entire context:
 
@@ -148,7 +148,29 @@ Starting with .NET 8, you can also use overloads of <xref:System.Net.Http.Json.H
 
 :::zone-end
 
-:::zone pivot="dotnet-8-0,dotnet-7-0"
+:::zone pivot="dotnet-8-0"
+
+In Razor Pages, MVC, SignalR, and Web API apps, use the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver?displayProperty=nameWithType> property to specify the context.
+
+```csharp
+[JsonSerializable(typeof(WeatherForecast[]))]
+internal partial class MyJsonContext : JsonSerializerContext { }
+```
+
+```csharp
+var serializerOptions = new JsonSerializerOptions
+{
+    TypeInfoResolver = MyJsonContext.Default;
+};
+
+services.AddControllers().AddJsonOptions(
+    static options =>
+        options.TypeInfoResolverChain.Add(MyJsonContext.Default));
+```
+
+:::zone-end
+
+:::zone pivot="dotnet-7-0"
 
 In Razor Pages, MVC, SignalR, and Web API apps, use the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver?displayProperty=nameWithType> property to specify the context.
 

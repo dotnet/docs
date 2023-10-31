@@ -2,7 +2,6 @@
 title: DateTime and DateTimeOffset support in System.Text.Json
 description: An overview of how DateTime and DateTimeOffset types are supported in the System.Text.Json library.
 author: layomia
-ms.author: laakinri
 ms.date: 01/11/2023
 ms.custom: devdivchpfy22
 helpviewer_keywords:
@@ -71,7 +70,7 @@ Attempting to read non-compliant formats with <xref:System.Text.Json.Utf8JsonRea
 If you want the serializer to perform custom parsing or formatting, you can implement [custom converters](xref:System.Text.Json.Serialization.JsonConverter%601).
 Here are a few examples:
 
-#### Using DateTime(Offset).Parse and DateTime(Offset).ToString
+#### DateTime(Offset).Parse and DateTime(Offset).ToString
 
 If you can't determine the formats of your input <xref:System.DateTime> or <xref:System.DateTimeOffset> text representations, you can use the `DateTime(Offset).Parse` method in your converter read logic.
 This method allows you to use .NET's extensive support for parsing various <xref:System.DateTime> and <xref:System.DateTimeOffset> text formats, including non-ISO 8601 strings and ISO 8601 formats that don't conform to the extended ISO 8601-1:2019 profile.
@@ -87,7 +86,7 @@ This approach is also less performant than using the serializer's native impleme
 > When implementing <xref:System.Text.Json.Serialization.JsonConverter%601>, and `T` is <xref:System.DateTime>, the `typeToConvert` parameter will always be `typeof(DateTime)`.
 The parameter is useful for handling polymorphic cases and when using generics to get `typeof(T)` in a performant way.
 
-#### Using <xref:System.Buffers.Text.Utf8Parser> and <xref:System.Buffers.Text.Utf8Formatter>
+#### <xref:System.Buffers.Text.Utf8Parser> and <xref:System.Buffers.Text.Utf8Formatter>
 
 You can use fast UTF-8-based parsing and formatting methods in your converter logic if your input <xref:System.DateTime> or <xref:System.DateTimeOffset>
 text representations are compliant with one of the "R", "l", "O", or "G"
@@ -104,7 +103,7 @@ The following example shows a custom converter that serializes and deserializes 
 >
 > The "l" (lowercase "L") format isn't documented with the other [standard date and time format strings](../base-types/standard-date-and-time-format-strings.md) because it's supported only by the `Utf8Parser` and `Utf8Formatter` types. The format is lowercase RFC 1123 (a lowercase version of the "R" format). For example, "thu, 25 jul 2019 06:36:07 gmt".
 
-#### Using DateTime(Offset).Parse as a fallback to the serializer's native parsing
+#### Use DateTime(Offset).Parse as a fallback
 
 If you generally expect your input <xref:System.DateTime> or <xref:System.DateTimeOffset> data to conform to the extended ISO 8601-1:2019 profile,
 you can use the serializer's native parsing logic. You can also implement a fallback mechanism.
@@ -113,7 +112,7 @@ the converter successfully parses the data using <xref:System.DateTime.Parse(Sys
 
 :::code language="csharp" source="snippets/system-text-json-support/csharp/datetime-converter-examples/example3/Program.cs":::
 
-#### Using Unix epoch date format
+#### Use Unix epoch date format
 
 The following converters handle Unix epoch format with or without a time zone offset (values such as `/Date(1590863400000-0700)/` or `/Date(1590863400000)/`):
 
@@ -121,7 +120,7 @@ The following converters handle Unix epoch format with or without a time zone of
 
 :::code language="csharp" source="../serialization/system-text-json/snippets/how-to-5-0/csharp/CustomConverterUnixEpochDateNoZone.cs" id="ConverterOnly":::
 
-### When writing with <xref:System.Text.Json.Utf8JsonWriter>
+### When using <xref:System.Text.Json.Utf8JsonWriter>
 
 If you want to write a custom <xref:System.DateTime> or <xref:System.DateTimeOffset> text representation with <xref:System.Text.Json.Utf8JsonWriter>,
 you can format your custom representation to a <xref:System.String>, `ReadOnlySpan<Byte>`, `ReadOnlySpan<Char>`, or <xref:System.Text.Json.JsonEncodedText>,
@@ -133,7 +132,7 @@ and then written with the <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue
 
 :::code language="csharp" source="snippets/system-text-json-support/csharp/custom-writing-with-utf8jsonwriter/Program.cs":::
 
-### When reading with <xref:System.Text.Json.Utf8JsonReader>
+### When using <xref:System.Text.Json.Utf8JsonReader>
 
 If you want to read a custom <xref:System.DateTime> or <xref:System.DateTimeOffset> text representation with <xref:System.Text.Json.Utf8JsonReader>,
 you can get the value of the current JSON token as a <xref:System.String> using <xref:System.Text.Json.Utf8JsonReader.GetString> method, then parse the value using custom logic.

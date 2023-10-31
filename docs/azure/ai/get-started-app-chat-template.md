@@ -207,7 +207,7 @@ The intelligence of the chat is determined by the OpenAI model and the settings 
 |Exclude category|This is the category of documents that are excluded from the search results.|
 |Use semantic ranker for retrieval|This is a feature of [Azure Cognitive Search](/azure/search/semantic-search-overview#what-is-semantic-search) that uses machine learning to improve the relevance of search results.|
 |Retrieval mode|**Vectors + Text** means that the search results are based on the text of the documents and the embeddings of the documents. **Vectors** means that the search results are based on the embeddings of the documents. **Text** means that the search results are based on the text of the documents.|
-|Use query-contextual summaries instead of whole documents| |
+|Use query-contextual summaries instead of whole documents| Limits the query to only search summarized data instead of a more thorough search of the full document. |
 |Suggest follow-up questions|Have the chat app suggest follow-up questions based on the answer.|
 
 The following steps walk you through the process of changing the settings.
@@ -219,7 +219,7 @@ The following steps walk you through the process of changing the settings.
     What is my deductible?
     ```
 
-    The chat returned suggested follow-up questions such as the following:
+    The chat returns follow-up question suggestions such as the following:
 
     ```
     1. What is the cost sharing for out-of-network services?
@@ -228,7 +228,7 @@ The following steps walk you through the process of changing the settings.
     ```
 
 1. In the **Settings** tab, deselect **Use semantic ranker for retrieval**.
-1. Ask the same question again? 
+1. Ask the same question again.
 
     ```
     What is my deductible?
@@ -236,9 +236,9 @@ The following steps walk you through the process of changing the settings.
 
 1. What is the difference in the answers?
 
-    For example the response, which used the Semantic ranker provided a single answer: `The deductible for the Northwind Health Plus plan is $2,000 per year`.
+    The response which used the Semantic ranker provided a single answer: `The deductible for the Northwind Health Plus plan is $2,000 per year`.
 
-    The response without semantic ranking returned an answer, which required more work to get the answer: `Based on the information provided, it is unclear what your specific deductible is. The Northwind Health Plus plan has different deductible amounts for in-network and out-of-network services, and there is also a separate prescription drug deductible. I would recommend checking with your provider or referring to the specific benefits details for your plan to determine your deductible amount`.
+    The response without semantic ranking returned a less direct answer: `Based on the information provided, it is unclear what your specific deductible is. The Northwind Health Plus plan has different deductible amounts for in-network and out-of-network services, and there is also a separate prescription drug deductible. I would recommend checking with your provider or referring to the specific benefits details for your plan to determine your deductible amount`.
 
 ## Clean up resources
 

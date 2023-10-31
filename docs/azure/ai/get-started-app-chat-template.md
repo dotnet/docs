@@ -212,7 +212,7 @@ The intelligence of the chat is determined by the OpenAI model and the settings 
 
 The following steps walk you through the process of changing the settings.
 
-1. In the browser, select the **Developer Settings** tab.
+1. In the browser, select the gear icon in the upper right of the page.
 1. Check the **Suggest follow-up questions** checkbox and ask the same question again.
 
     ```

@@ -97,7 +97,7 @@ This produces a warning:
 IL2026: Using member 'MethodWithAssemblyLoad()' which has 'RequiresUnreferencedCodeAttribute' can break functionality when trimming application code. This functionality is not compatible with trimming. Use 'MethodFriendlyToTrimming' instead. https://site/trimming-and-method
 ```
 
-Using `RequiresUnreferencedCode` often leads to marking more methods with it, due to the same reason. This is common when a high-level method becomes incompatible with trimming when it calls a low-level method that isn't trim-compatible. You "bubble up" the warning to a public API. Each usage of `RequiresUnreferencedCode` needs a message, and in these cases the messages are likely the same. To avoid duplicating strings and making it easier to maintain, use a constant string field to store the message:
+Using `RequiresUnreferencedCode` often leads to marking more methods with it, due to the same reason. This is common when a high-level method becomes incompatible with trimming because it calls a low-level method that isn't trim-compatible. You "bubble up" the warning to a public API. Each usage of `RequiresUnreferencedCode` needs a message, and in these cases the messages are likely the same. To avoid duplicating strings and making it easier to maintain, use a constant string field to store the message:
 
 ```csharp
 class Functionality

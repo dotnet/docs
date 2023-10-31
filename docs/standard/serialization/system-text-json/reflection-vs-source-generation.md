@@ -27,15 +27,15 @@ By default, <xref:System.Text.Json.JsonSerializer> collects metadata at run time
 
 ## Source generation
 
-As an alternative, `System.Text.Json` can use the C# [source generation](../../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md), which reduces app size. In addition, reflection can't be used in [Native AOT applications](../../../core/deploying/native-aot/index.md), so you must use source generation for those apps.
+As an alternative, `System.Text.Json` can use the C# [source generation](../../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md), which reduces app size. In addition, certain reflection APIs can't be used in [Native AOT applications](../../../core/deploying/native-aot/index.md), so you must use source generation for those apps.
 
 Source generation can be used in two modes:
 
 * **Metadata collection mode**
 
-  During compilation, `System.Text.Json` collects the metadata needed for serialization and generates source code files. The generated source code files are automatically compiled as an integral part of the app.
+  During compilation, `System.Text.Json` collects the information needed for serialization and generates source code files that populate JSON contract metadata for the requested types.
 
-* **Serialization optimization (fast track) mode**
+* **Serialization optimization (fast path) mode**
 
   <xref:System.Text.Json.JsonSerializer> features that customize the output of serialization, such as naming policies and reference preservation, carry a performance overhead. In serialization optimization mode, System.Text.Json generates optimized code that uses [`Utf8JsonWriter`](use-utf8jsonwriter.md) directly. This optimized or *fast path* code increases serialization throughput.
 
@@ -52,7 +52,7 @@ Choose reflection or source-generation modes based on the following benefits tha
 | Simpler to code and debug.                           | ✔️        | ❌                  | ❌                        |
 | Supports non-public accessors.                       | ✔️        | ❌                  | ❌                        |
 | Supports all available serialization customizations. | ✔️        | ❌                  | ❌                        |
-| Reduces start-up time.                               | ❌        | ✔️                  | ❌                        |
+| Reduces start-up time.                               | ❌        | ✔️                  | ✔️                        |
 | Reduces private memory usage.                        | ❌        | ✔️                  | ✔️                        |
 | Eliminates run-time reflection.                      | ❌        | ✔️                  | ✔️                        |
 | Facilitates trim-safe app size reduction.            | ❌        | ✔️                  | ✔️                        |
@@ -65,11 +65,10 @@ Choose reflection or source-generation modes based on the following benefits tha
 | Benefit                                              | Reflection | Source generation:<br/>Metadata collection | Source generation:<br/>Serialization optimization |
 |------------------------------------------------------|------------|---------------------|----------------------------|
 | Simpler to code and debug.                           | ✔️        | ❌                  | ❌                        |
-| Supports non-public accessors.                       | ✔️        | ❌                  | ❌                        |
+| Supports non-public members.                       | ✔️        | ❌                  | ❌                        |
 | Supports required properties.                        | ✔️        | ❌                  | ❌                        |
 | Supports init-only properties.                       | ✔️        | ❌                  | ❌                        |
-| Supports all available serialization customizations. | ✔️        | ❌                  | ❌                        |
-| Reduces start-up time.                               | ❌        | ✔️                  | ❌                        |
+| Reduces start-up time.                               | ❌        | ✔️                  | ✔️                        |
 | Reduces private memory usage.                        | ❌        | ✔️                  | ✔️                        |
 | Eliminates run-time reflection.                      | ❌        | ✔️                  | ✔️                        |
 | Facilitates trim-safe app size reduction.            | ❌        | ✔️                  | ✔️                        |

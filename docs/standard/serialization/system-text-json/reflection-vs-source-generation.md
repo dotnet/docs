@@ -23,7 +23,7 @@ This information is referred to as *metadata*.
 
 ## Reflection
 
-By default, `JsonSerializer` collects metadata at run time by using [reflection](/dotnet/csharp/advanced-topics/reflection-and-attributes/). Whenever `JsonSerializer` has to serialize or deserialize a type for the first time, it collects and caches this metadata. The metadata collection process takes time and uses memory.
+By default, <xref:System.Text.Json.JsonSerializer> collects metadata at run time by using [reflection](/dotnet/csharp/advanced-topics/reflection-and-attributes/). Whenever `JsonSerializer` has to serialize or deserialize a type for the first time, it collects and caches this metadata. The metadata collection process takes time and uses memory.
 
 ## Source generation
 
@@ -33,7 +33,7 @@ Source generation can be used in two modes:
 
 * **Metadata collection mode**
 
-  During compilation, System.Text.Json collects the metadata needed for serialization and generates source code files. The generated source code files are automatically compiled as an integral part of the application.
+  During compilation, `System.Text.Json` collects the metadata needed for serialization and generates source code files. The generated source code files are automatically compiled as an integral part of the app.
 
 * **Serialization optimization (fast track) mode**
 

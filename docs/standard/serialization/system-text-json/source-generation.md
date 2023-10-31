@@ -141,6 +141,11 @@ You can specify metadata-collection mode or serialization-optimization mode for 
 ## Source-generation support in ASP.NET Core
 
 In Blazor apps, use overloads of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A?displayProperty=nameWithType> extension methods that take a source generation context or `TypeInfo<TValue>`.
+:::zone pivot="dotnet-8"
+
+Starting with .NET 8, you can also use overloads of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsAsyncEnumerable%2A?displayProperty=nameWithType> extension methods that accept a source generation context or `TypeInfo<TValue>`.
+
+:::zone-end
 
 :::zone pivot="dotnet-8-0,dotnet-7-0"
 
@@ -157,8 +162,9 @@ var serializerOptions = new JsonSerializerOptions
     TypeInfoResolver = MyJsonContext.Default;
 };
 
-services.AddControllers().AddJsonOptions(options =>
-    options.JsonSerializerOptions = serializerOptions);
+services.AddControllers().AddJsonOptions(
+    static options =>
+        options.JsonSerializerOptions = serializerOptions);
 ```
 
 :::zone-end

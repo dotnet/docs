@@ -13,7 +13,7 @@ Some C# 12 features have been introduced in previews. You can try these features
 - [Optional parameters in lambda expressions](#default-lambda-parameters) - Introduced in Visual Studio version 17.5 Preview 2.
 - [`ref readonly` parameters](#ref-readonly-parameters) - Introduced in Visual Studio version 17.8 Preview 2.
 - [Alias any type](#alias-any-type) - Introduced in Visual Studio version 17.6 Preview 3.
-- [Experimental attribute](#experimental attribute) - Introduced in Visual Studio version 17.7 Preview 3.
+- [Experimental attribute](#experimental-attribute) - Introduced in Visual Studio version 17.7 Preview 3.
 
 - [Interceptors](#interceptors) - *Preview feature* Introduced in Visual Studio version 17.7 Preview 3.
 

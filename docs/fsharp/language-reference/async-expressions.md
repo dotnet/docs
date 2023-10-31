@@ -79,5 +79,5 @@ The `runAll` function launches three async expressions in parallel and waits unt
 - [Async programming in F#](../tutorials/async.md)
 - [F# Language Reference](index.md)
 - [Computation Expressions](computation-expressions.md)
-- [Tasks expressions](task-expressions.md)
+- [Task expressions](task-expressions.md)
 - [Control.Async Class](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html)

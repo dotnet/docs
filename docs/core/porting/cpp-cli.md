@@ -1,8 +1,8 @@
 ---
-title: Migrating C++/CLI projects to .NET Core and .NET 5+
+title: Migrate C++/CLI projects to .NET Core and .NET 5+
 description: Learn about porting C++/CLI projects to .NET Core and .NET 5 and later versions.
 author: mjrousos
-ms.date: 03/29/2022
+ms.date: 10/27/2023
 ---
 
 # How to port a C++/CLI project to .NET Core or .NET 5+
@@ -13,19 +13,19 @@ Beginning with .NET Core 3.1 and Visual Studio 2019, [C++/CLI projects](/cpp/dot
 
 There are some important limitations to porting C++/CLI projects to .NET Core compared to other languages:
 
-* C++/CLI support for .NET Core is Windows only.
-* C++/CLI projects can't target .NET Standard, only .NET Core (or .NET Framework).
-* C++/CLI projects don't support the new SDK-style project file format. Instead, even when targeting .NET Core, C++/CLI projects use the existing vcxproj file format.
-* C++/CLI projects can't multitarget multiple .NET platforms. If you need to build a C++/CLI project for both .NET Framework and .NET Core, use separate project files.
-* .NET Core doesn't support `-clr:pure` or `-clr:safe` compilation, only the new `-clr:netcore` option (which is equivalent to `-clr` for .NET Framework).
+- C++/CLI support for .NET Core is Windows only.
+- C++/CLI projects can't target .NET Standard, only .NET Core or .NET Framework.
+- C++/CLI projects don't support the new SDK-style project file format. Instead, even when targeting .NET Core, C++/CLI projects use the existing *.vcxproj* file format.
+- C++/CLI projects can't multitarget multiple .NET platforms. If you need to build a C++/CLI project for both .NET Framework and .NET Core, use separate project files.
+- .NET Core doesn't support `-clr:pure` or `-clr:safe` compilation, only the new `-clr:netcore` option (which is equivalent to `-clr` for .NET Framework).
 
 ## Port a C++/CLI project
 
 To port a C++/CLI project to .NET Core, make the following changes to the *.vcxproj* file. These migration steps differ from the steps needed for other project types because C++/CLI projects don't use SDK-style project files.
 
-1. Replace `<CLRSupport>true</CLRSupport>` properties with `<CLRSupport>NetCore</CLRSupport>`. This property is often in configuration-specific property groups, so you may need to replace it in multiple places.
-2. Replace `<TargetFrameworkVersion>` properties with `<TargetFramework>netcoreapp3.1</TargetFramework>`.
-3. Remove any .NET Framework references (like `<Reference Include="System" />`). .NET Core SDK assemblies are automatically referenced when using `<CLRSupport>NetCore</CLRSupport>`.
+1. Replace `<CLRSupport>true</CLRSupport>` properties with `<CLRSupport>NetCore</CLRSupport>`. This property is often in configuration-specific property groups, so you might need to replace it in multiple places.
+2. Replace `<TargetFrameworkVersion>` properties with `<TargetFramework>netcoreapp3.1</TargetFramework>`. Be sure to change the tag as well as the value.
+3. Remove any .NET Framework references to `System`, `System.Data`, `System.Windows.Forms`, and `System.Xml`, like `<Reference Include="System" />`. .NET Core SDK assemblies are automatically referenced when using `<CLRSupport>NetCore</CLRSupport>`.
 4. Update API usage in *.cpp* files, as necessary, to remove APIs unavailable to .NET Core. Because C++/CLI projects tend to be fairly thin interop layers, there are often not many changes needed. You can use the [.NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md) to identify unsupported .NET APIs used by C++/CLI binaries just as with purely managed binaries.
 
 ### WPF and Windows Forms usage
@@ -54,7 +54,7 @@ To use both Windows Forms and WPF APIs, add this reference to the *.vcxproj* fil
 <FrameworkReference Include="Microsoft.WindowsDesktop.App" />
 ```
 
-Currently, it's not possible to add these references using Visual Studio's reference manager. Instead, update the project file by editing it manually. In Visual Studio, you'll need to unload the project first. You can also use another editor like Visual Studio Code.
+Currently, it's not possible to add these references by using Visual Studio's reference manager. Instead, update the project file by editing it manually. In Visual Studio, you need to unload the project first. You can also use another editor like Visual Studio Code.
 
 ## Build without MSBuild
 
@@ -62,30 +62,28 @@ It's also possible to build C++/CLI projects without using MSBuild. Follow these
 
 1. When compiling, pass `-clr:netcore` to *cl.exe*.
 2. Reference necessary .NET Core reference assemblies.
-3. When linking, provide the .NET Core app host directory as a `LibPath` (so that *ijwhost.lib* can be found).
-4. Copy *ijwhost.dll* (from the .NET Core app host directory) to the project's output directory.
-5. Make sure a [runtimeconfig.json](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md) file exists for the first component of the application that will run managed code. If the application has a managed entry point, a `runtime.config` file will be created and copied automatically. If the application has a native entry point, though, you need to create a `runtimeconfig.json` file for the first C++/CLI library to use the .NET Core runtime.
+3. When linking, provide the .NET Core app host directory as a `LibPath`, so that *ijwhost.lib* can be found.
+4. Copy *ijwhost.dll* from the .NET Core app host directory to the project's output directory.
+5. Make sure a [runtimeconfig.json](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md) file exists for the first component of the application that will run managed code. For latest versions of Visual Studio, a *runtime.config* file is created and copied automatically.
 
-## Known issues
+   For older versions of Visual Studio, if the application has a native entry point, you need to manually create the following *runtimeconfig.json* file for the first C++/CLI library to use the .NET Core runtime. If a C++/CLI library is called from a managed entry point, the library doesn't need a *runtimeconfig.json* file, because the entry point assembly has one that's used when starting the runtime.
 
-There are a few known issues to look out for when working with C++/CLI projects that target .NET Core 3.1 or .NET 5+:
+   ```json
+   {
+         "runtimeOptions": {
+            "tfm": "netcoreapp3.1",
+            "framework": {
+               "name": "Microsoft.NETCore.App",
+               "version": "3.1.0"
+            }
+         }
+   }
+   ```
 
-* A WPF framework reference in .NET Core C++/CLI projects currently causes some extraneous warnings about being unable to import symbols. These warnings can be safely ignored and should be fixed soon.
-* If the application has a native entry point, the C++/CLI library that first executes managed code needs a [runtimeconfig.json](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md) file. This config file is used when the .NET Core runtime starts. C++/CLI projects don't create `runtimeconfig.json` files automatically at build time yet, so the file must be generated manually. If a C++/CLI library is called from a managed entry point, then the C++/CLI library doesn't need a `runtimeconfig.json` file (since the entry point assembly will have one that is used when starting the runtime). A simple sample `runtimeconfig.json` file is shown below. For more information, see the [spec on GitHub](https://github.com/dotnet/sdk/blob/main/documentation/specs/runtime-configuration-file.md).
-
-    ```json
-    {
-          "runtimeOptions": {
-             "tfm": "netcoreapp3.1",
-             "framework": {
-                "name": "Microsoft.NETCore.App",
-                "version": "3.1.0"
-             }
-          }
-    }
-    ```
-
-* On Windows 7, loading a .NET Core C++/CLI assembly when the entry application is native may exhibit failing behavior. This failing behavior is due to the Windows 7 loader not respecting non-`mscoree.dll` entry points for C++/CLI assemblies. The recommended course of action is to convert the entry application to managed code. Scenarios involving Thread Local Storage (TLS) are specifically unsupported in all cases on Windows 7.
-* C++/CLI assemblies may be loaded multiple times, each time into a new <xref:System.Runtime.Loader.AssemblyLoadContext>. If the first time that managed code in a C++/CLI assembly is executed is from a native caller, the assembly is loaded into a separate `AssemblyLoadContext`. If the first time that managed code is executed is from a managed caller, the assembly is loaded into the same `AssemblyLoadContext` as the caller (usually the default). To always load your C++/CLI assembly into the default `AssemblyLoadContext`, add an "initialize" style call from your entry-point assembly to your C++/CLI assembly. For more information, see this [dotnet/runtime issue](https://github.com/dotnet/runtime/issues/61105).
-
-  This limitation is removed starting in .NET 7. C++/CLI assemblies that target .NET 7 or a later version are always loaded into the default `AssemblyLoadContext`.
+> [!NOTE]
+> C++/CLI assemblies that target .NET 7 or a later version are always loaded into the default <xref:System.Runtime.Loader.AssemblyLoadContext>. However, in .NET 6 and earlier versions, C++/CLI assemblies might be loaded multiple times, each time into a new `AssemblyLoadContext`. If the first time that managed code in a C++/CLI assembly is executed:
+>
+> - Is from a native caller, the assembly is loaded into a separate `AssemblyLoadContext`.
+> - Is from a managed caller, the assembly is loaded into the same `AssemblyLoadContext` as the caller, usually the default.
+>
+> To always load your C++/CLI assembly into the default `AssemblyLoadContext`, you can add an "initialize" style call from your entry-point assembly to your C++/CLI assembly. For more information, see this [dotnet/runtime issue](https://github.com/dotnet/runtime/issues/61105).

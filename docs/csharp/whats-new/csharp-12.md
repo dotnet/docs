@@ -13,7 +13,7 @@ Some C# 12 features have been introduced in previews. You can try these features
 - [Optional parameters in lambda expressions](#default-lambda-parameters) - Introduced in Visual Studio version 17.5 Preview 2.
 - [`ref readonly` parameters](#ref-readonly-parameters) - Introduced in Visual Studio version 17.8 Preview 2.
 - [Alias any type](#alias-any-type) - Introduced in Visual Studio version 17.6 Preview 3.
-- [Experimental attribute](#experimental attribute) - Introduced in Visual Studio version 17.7 Preview 3.
+- [Experimental attribute](#experimental-attribute) - Introduced in Visual Studio version 17.7 Preview 3.
 
 - [Interceptors](#interceptors) - *Preview feature* Introduced in Visual Studio version 17.7 Preview 3.
 
@@ -44,10 +44,10 @@ int[] a = [1, 2, 3, 4, 5, 6, 7, 8];
 // Create a span
 Span<int> b  = ['a', 'b', 'c', 'd', 'e', 'f', 'h', 'i'];
 
-// Create a 2 D array:
+// Create a jagged 2D array:
 int[][] twoD = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
-// create a 2 D array from variables:
+// Create a jagged 2D array from variables:
 int[] row0 = [1, 2, 3];
 int[] row1 = [4, 5, 6];
 int[] row2 = [7, 8, 9];
@@ -141,7 +141,7 @@ An *interceptor* is a method that can declaratively substitute a call to an *int
 
 You use an *interceptor* as part of a source generator to modify, rather than add code to an existing source compilation. The source generator substitutes calls to an interceptable method with a call to the *interceptor* method.
 
-If you're interested in experimenting with interceptors, you can learn more by reading the [feature specification](https://github.com/dotnet/roslyn/blob/main/docs/features/interceptors.md). If you use the feature, make sure to stay current with any changes in the feature specification for this preview feature. Once the feature is finalized, we'll add more guidance on this site.
+If you're interested in experimenting with interceptors, you can learn more by reading the [feature specification](https://github.com/dotnet/roslyn/blob/main/docs/features/interceptors.md). If you use the feature, make sure to stay current with any changes in the feature specification for this experimental feature. If the feature is finalized, we'll add more guidance on this site.
 
 ## See also
 

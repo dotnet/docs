@@ -77,11 +77,11 @@ and suggesting code fixes.
 
 ### Scripting APIs
 
-Hosting and scripting APIs are part of the compiler layer. You can use them
-for executing code snippets and accumulating a runtime execution context.
-The C# interactive REPL (Read-Evaluate-Print Loop) uses these APIs. The REPL
-enables you to use C# as a scripting language, executing the code interactively
-as you write it.
+Hosting and scripting APIs are built on top of the compiler layer. You
+can use the scripting APIs to run code snippets and accumulate a runtime
+execution context. The C# interactive REPL (Read-Evaluate-Print Loop)
+uses these APIs. The REPL enables you to use C# as a scripting language,
+running the code interactively as you write it.
 
 ### Workspaces APIs
 

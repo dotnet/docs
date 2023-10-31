@@ -85,7 +85,7 @@ Begin now with a development environment that has all the dependencies installed
 1. Start the process to create a new GitHub Codespace on the `main` branch of the [`Azure-Samples/azure-search-openai-demo`](https://github.com/Azure-Samples/azure-search-openai-demo) GitHub repository:
 
     > [!div class="nextstepaction"]
-    > [Open this project in GitHub Codespaces](https://github.com/codespaces/new?azure-portal=true&hide_repo_select=true&ref=main&repo=599293758)
+    > [Open this project in GitHub Codespaces](https://github.com/codespaces/new?azure-portal=true&hide_repo_select=true&ref=main&repo=624102171)
 
 1. On the **Create codespace** page, review the codespace configuration settings and then select **Create new codespace**
 

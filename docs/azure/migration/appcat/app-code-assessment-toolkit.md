@@ -17,7 +17,7 @@ Azure AppCAT is a tool to assess .NET source code to identify replatforming and 
 
 Azure AppCAT discovers application technology usage through static code analysis, supports effort estimation, and accelerates code replatforming, helping you move .NET applications to Azure.
 
-AppCAT bundles a set of tools, engines, and rules to assess and replatform .NET applications to different Azure targets (Azure App Service, Azure Kubernetes Service, Azure Container Apps, and Azure Spring Apps) with specific Azure replatforming rules.
+AppCAT bundles a set of tools, engines, and rules to assess and replatform .NET applications to Azure App Service and in the future other Azure targets (such as Azure Kubernetes Service, Azure Container Apps, etc. ) can be added.
 
 ### When should I use Azure AppCAT?
 

@@ -95,4 +95,4 @@ Exporting to HTML will produce a page that renders similar to the following:
 
 ### AppCAT for .NET CLI
 
-For information on how to use and interpret results from the .NET CLI version of AppCAT, see [Use AppCAT for .NET with the .NET CLI](./donet-cli.md).
+For information on how to use and interpret results from the .NET CLI version of AppCAT, see [Use AppCAT for .NET with the .NET CLI](./dotnet-cli.md).

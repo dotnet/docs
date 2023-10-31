@@ -370,7 +370,6 @@ Sentiment: I love this spaghetti. | Prediction: Positive | Probability: 0.996063
 
 =============== End of process ===============
 Press any key to continue . . .
-
 ```
 
 Congratulations! You've now successfully built a machine learning model for classifying and predicting messages sentiment.

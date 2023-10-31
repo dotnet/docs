@@ -32,7 +32,7 @@ For more information about how to use indexers with an interface, see [Interface
 
 The signature of an indexer consists of the number and types of its formal parameters. It doesn't include the indexer type or the names of the formal parameters. If you declare more than one indexer in the same class, they must have different signatures.
 
-An indexer is not classified as a variable; therefore, an indexer value cannot be passed by reference (as a [`ref`](../../language-reference/keywords/ref.md) or [`out`](../../language-reference/keywords/out-parameter-modifier.md) parameter) unless its value is a reference (i.e., it returns by reference.)
+An indexer is not classified as a variable; therefore, an indexer value cannot be passed by reference (as a [`ref`](../../language-reference/keywords/ref.md) or [`out`](../../language-reference/keywords/method-parameters.md#out-parameter-modifier) parameter) unless its value is a reference (i.e., it returns by reference.)
 
 To provide the indexer with a name that other languages can use, use <xref:System.Runtime.CompilerServices.IndexerNameAttribute?displayProperty=nameWithType>, as the following example shows:
 

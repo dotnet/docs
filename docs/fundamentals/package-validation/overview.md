@@ -15,7 +15,7 @@ You might think that a change is safe and compatible if source consuming that ch
 Package validation tooling allows library developers to validate that their packages are consistent and well formed. It provides the following checks:
 
 - Validates that there are no breaking changes across versions.
-- Validates that the package has the same set of publics APIs for all the different runtime-specific implementations.
+- Validates that the package has the same set of public APIs for all the different runtime-specific implementations.
 - Helps developers catch any applicability holes.
 
 ## Enable package validation

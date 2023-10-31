@@ -257,7 +257,6 @@ services:
 
   rabbitmq:
     image: rabbitmq:3-management
-
 ```
 
 The values in the base docker-compose.yml file should not change because of different target deployment environments.
@@ -380,7 +379,6 @@ services:
     ports:
       - "15672:15672"
       - "5672:5672"
-
 ```
 
 In this example, the development override configuration exposes some ports to the host, defines environment variables with redirect URLs, and specifies connection strings for the development environment. These settings are all just for the development environment.

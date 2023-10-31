@@ -56,7 +56,8 @@
                     "csharp-12.0/using-alias-types.md",
                     "csharp-12.0/lambda-method-group-defaults.md",
                     "csharp-12.0/inline-arrays.md",
-                    "csharp-12.0/experimental-attribute.md"
+                    "csharp-12.0/experimental-attribute.md",
+                    "csharp-12.0/ref-readonly-parameters.md"
                 ],
                 "src": "_csharplang/proposals",
                 "dest": "csharp/language-reference/proposals",
@@ -182,8 +183,8 @@
             },
             "open_source_feedback_issueUrl": {
                 "docs/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml",
-                "_csharplang/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml",
-                "_csharpstandard/standard/*.md": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml",
+                "_csharplang/**.*": "https://github.com/dotnet/charplang/issues/new?template=docs-feedback.yml",
+                "_csharpstandard/standard/*.md": "https://github.com/dotnet/csharpstandard/issues/new?template=docs-feedback.yml",
                 "_vblang/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml",
                 "_roslyn/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml"
             },
@@ -221,6 +222,10 @@
                 "_csharpstandard/standard/*.md": "https://learn.microsoft.com/media/logos/logo_net.svg",
                 "_vblang/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg",
                 "_roslyn/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg"
+            },
+            "open_source_feedback_issueLabels": {
+                "_csharplang/**.*": "Area-Speclets,untriaged",
+                "_csharpstandard/standard/*.md": "status: needs triaging"
             },
             "social_image_url": {
                 "docs/**/*.*": "/dotnet/media/dotnet-logo.png",
@@ -684,6 +689,7 @@
                 "_csharplang/proposals/csharp-12.0/inline-arrays.md": "Inline arrays, or fixed sized buffers",
                 "_csharplang/proposals/csharp-12.0/collection-expressions.md": "Collection expressions",
                 "_csharplang/proposals/csharp-12.0/experimental-attribute.md": "Experimental attribute",
+                "_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md": "Ref readonly parameters",
 
 
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "C# compiler breaking changes since C# 10",
@@ -799,6 +805,7 @@
                 "_csharplang/proposals/csharp-12.0/inline-arrays.md": "Inline arrays provide a general-purpose and safe mechanism for declaring inline arrays within C# classes, structs, and interfaces.",
                 "_csharplang/proposals/csharp-12.0/collection-expressions.md": "Collection expressions provide a concise syntax to initialize collections by defining elements or embedded collections as the source of the new collection's elements.",
                 "_csharplang/proposals/csharp-12.0/experimental-attribute.md": "Use the ExperimentalAttribute attribute to indicate APIs that aren't stable.",
+                "_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md": "Ref readonly parameters enforce that arguments are passed by references, where `in` parameters allow the compiler some flexibiility.",
 
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "Learn about any breaking changes since the initial release of C# 10",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "Learn about any breaking changes since the initial release of C# 11",

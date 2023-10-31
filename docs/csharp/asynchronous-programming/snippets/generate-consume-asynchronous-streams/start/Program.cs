@@ -4,6 +4,7 @@ using Octokit;
 
 namespace GitHubActivityReport;
 
+// <SnippetStarterGraphQLRequest>
 public class GraphQLRequest
 {
     [JsonProperty("query")]
@@ -15,6 +16,7 @@ public class GraphQLRequest
     public string ToJsonText() =>
         JsonConvert.SerializeObject(this);
 }
+// </SnippetStarterGraphQLRequest>
 
 class Program
 {

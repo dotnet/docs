@@ -407,7 +407,6 @@ Counter and Histogram tags can be specified in overloads of the <xref:System.Dia
 s_hatsSold.Add(2,
                new KeyValuePair<string, object>("product.color", "red"),
                new KeyValuePair<string, object>("product.size", 12));
-
 ```
 
 Replace the code of `Program.cs` and rerun the app and dotnet-counters as before:

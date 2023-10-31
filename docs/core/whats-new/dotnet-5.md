@@ -134,11 +134,11 @@ For more information on project templates from the .NET CLI, see [`dotnet new`](
 There are new features in and for [System.Text.Json](../../standard/serialization/system-text-json/overview.md):
 
 - [Preserve references and handle circular references](../../standard/serialization/system-text-json/preserve-references.md)
-- [HttpClient and HttpContent extension methods](../../standard/serialization/system-text-json/how-to.md#httpclient-and-httpcontent-extension-methods)
+- [HttpClient and HttpContent extension methods](../../standard/serialization/system-text-json/overview.md#httpclient-and-httpcontent-extension-methods)
 - [Allow or write numbers in quotes](../../standard/serialization/system-text-json/invalid-json.md#allow-or-write-numbers-in-quotes)
 - [Support immutable types and C# 9 Records](../../standard/serialization/system-text-json/immutability.md)
 - [Support non-public property accessors](../../standard/serialization/system-text-json/immutability.md)
-- [Support fields](../../standard/serialization/system-text-json/how-to.md#include-fields)
+- [Support fields](../../standard/serialization/system-text-json/fields.md)
 - [Conditionally ignore properties](../../standard/serialization/system-text-json/ignore-properties.md)
 - [Support non-string-key dictionaries](../../standard/serialization/system-text-json/migrate-from-newtonsoft.md#dictionary-with-non-string-key)
 - [Allow custom converters to handle null](../../standard/serialization/system-text-json/converters-how-to.md#handle-null-values)

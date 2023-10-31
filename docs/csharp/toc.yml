@@ -898,15 +898,8 @@ items:
     - name: Method Parameters
       items:
       - name: Passing parameters
+        displayName: ref, in, out, params, reference parameter, value parameter, ref readonly
         href: language-reference/keywords/method-parameters.md
-      - name: params
-        href: language-reference/keywords/params.md
-      - name: in (Parameter Modifier)
-        href: language-reference/keywords/in-parameter-modifier.md
-      - name: ref
-        href: language-reference/keywords/ref.md
-      - name: out (Parameter Modifier)
-        href: language-reference/keywords/out-parameter-modifier.md
     - name: Namespace Keywords
       items:
       - name: namespace
@@ -1146,7 +1139,7 @@ items:
       displayName: AllowNull, DisallowNull, MaybeNull, NotNull, MaybeNullWhen, NotNullWhen, NotNullIfNotNull, DoesNotReturn, DoesNotReturnIf
       href: language-reference/attributes/nullable-analysis.md
     - name: Miscellaneous
-      displayName: Conditional, Obsolete, SetsRequiredMembers, AttributeUsage, ModuleInitializer, SkipLocalsInit, module initializer
+      displayName: Conditional, Obsolete, Experimental, SetsRequiredMembers, AttributeUsage, ModuleInitializer, SkipLocalsInit, module initializer
       href: language-reference/attributes/general.md
   - name: Unsafe code and pointers
     displayName: unsafe code, pointers, fixed size buffer, function pointer
@@ -1397,3 +1390,7 @@ items:
         href: ../../_csharplang/proposals/csharp-12.0/lambda-method-group-defaults.md
       - name: Inline arrays
         href: ../../_csharplang/proposals/csharp-12.0/inline-arrays.md
+      - name: Ref readonly parameters
+        href: ../../_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md
+      - name: Experimental attribute
+        href: ../../_csharplang/proposals/csharp-12.0/experimental-attribute.md

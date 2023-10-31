@@ -236,6 +236,7 @@ There are no built-in converters for <xref:System.Data.DataSet>, <xref:System.Da
 
 ## See also
 
+* [Populate initialized properties](populate-properties.md)
 * [System.Text.Json overview](overview.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

@@ -65,7 +65,6 @@ Next, add the Authorization service, which controls access to the system:
             policy.RequireClaim(ClaimTypes.Name);
         });
     });
-
 ```
 
 > [!TIP]

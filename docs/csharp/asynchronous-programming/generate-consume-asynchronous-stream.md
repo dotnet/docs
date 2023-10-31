@@ -53,6 +53,12 @@ The implementation reveals why you observed the behavior discussed in the previo
 
 :::code language="csharp" source="snippets/generate-consume-asynchronous-streams/start/Program.cs" id="SnippetRunPagedQuery" :::
 
+The very first thing this method does is to create the POST object, using the `GraphQLRequest` class:
+
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/start/Program.cs" id="SnippetStarterGraphQLRequest":::
+
+which helps to form the POST object body, and correctly convert it to JSON presented as single string with the `ToJsonText` method, which removes all newline characters from your request body marking them with the `\` (backslash) escape character.
+
 Let's concentrate on the paging algorithm and async structure of the preceding code. (You can consult the [GitHub GraphQL documentation](https://developer.github.com/v4/guides/) for details on the GitHub GraphQL API.) The `RunPagedQueryAsync` method enumerates the issues from most recent to oldest. It requests 25 issues per page and examines the `pageInfo` structure of the response to continue with the previous page. That follows GraphQL's standard paging support for multi-page responses. The response includes a `pageInfo` object that includes a `hasPreviousPages` value and a `startCursor` value used to request the previous page. The issues are in the `nodes` array. The `RunPagedQueryAsync` method appends these nodes to an array that contains all the results from all pages.
 
 After retrieving and restoring a page of results, `RunPagedQueryAsync` reports progress and checks for cancellation. If cancellation has been requested, `RunPagedQueryAsync` throws an <xref:System.OperationCanceledException>.

@@ -25,7 +25,7 @@ You can define tuples with an arbitrary large number of elements:
 
 ## Use cases of tuples
 
-One of the most common use cases of tuples is as a method return type. That is, instead of defining [`out` method parameters](../keywords/out-parameter-modifier.md), you can group method results in a tuple return type, as the following example shows:
+One of the most common use cases of tuples is as a method return type. That is, instead of defining [`out` method parameters](../keywords/method-parameters.md#out-parameter-modifier), you can group method results in a tuple return type, as the following example shows:
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="MultipleReturns":::
 
@@ -143,7 +143,7 @@ The `==` and `!=` operators compare tuples in short-circuiting way. That is, an 
 
 ## Tuples as out parameters
 
-Typically, you refactor a method that has [`out` parameters](../keywords/out-parameter-modifier.md) into a method that returns a tuple. However, there are cases in which an `out` parameter can be of a tuple type. The following example shows how to work with tuples as `out` parameters:
+Typically, you refactor a method that has [`out` parameters](../keywords/method-parameters.md#out-parameter-modifier) into a method that returns a tuple. However, there are cases in which an `out` parameter can be of a tuple type. The following example shows how to work with tuples as `out` parameters:
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="TupleAsOutParameter":::
 

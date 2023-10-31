@@ -156,7 +156,7 @@ Starting in .NET 7, you can use the <xref:System.Text.Json.Utf8JsonReader.CopySt
 
 ## Related APIs
 
-* To deserialize a custom type from a `Utf8JsonReader` instance, call <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.Text.Json.Utf8JsonReader@,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> or <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.Text.Json.Utf8JsonReader@,System.Text.Json.Serialization.Metadata.JsonTypeInfo{%60%600})?displayProperty=nameWithType>. For an example, see [Deserialize from UTF-8](how-to.md#deserialize-from-utf-8).
+* To deserialize a custom type from a `Utf8JsonReader` instance, call <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.Text.Json.Utf8JsonReader@,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> or <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.Text.Json.Utf8JsonReader@,System.Text.Json.Serialization.Metadata.JsonTypeInfo{%60%600})?displayProperty=nameWithType>. For an example, see [Deserialize from UTF-8](deserialization.md#deserialize-from-utf-8).
 
 * <xref:System.Text.Json.Nodes.JsonNode> and the classes that derive from it provide the ability to create a mutable DOM. You can convert a `Utf8JsonReader` instance to a `JsonNode` by calling <xref:System.Text.Json.Nodes.JsonNode.Parse(System.Text.Json.Utf8JsonReader@,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})?displayProperty=nameWithType>. The following code snippet shows an example.
 

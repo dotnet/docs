@@ -142,6 +142,7 @@ The following example shows the JSON that results from the preceding code:
 > This article is about serialization, not deserialization. Polymorphic deserialization is not supported in versions prior to .NET 7, but as a workaround you can write a custom converter, such as the example in [Support polymorphic deserialization](converters-how-to.md#support-polymorphic-deserialization). For more information about how .NET 7 supports polymorphic serialization and deserialization, see [How to serialize properties of derived classes with System.Text.Json in .NET 7](polymorphism.md?pivots=dotnet-7-0).
 
 :::zone-end
+
 :::zone pivot="dotnet-7-0"
 
 Beginning with .NET 7, `System.Text.Json` supports polymorphic type hierarchy serialization and deserialization with attribute annotations.

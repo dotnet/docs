@@ -42,7 +42,12 @@ f1_keywords:
   - "CS9016" # WRN_UseDefViolationPropertyUnsupportedVersion  Use of possibly unassigned property
   - "CS9017" # WRN_UseDefViolationFieldUnsupportedVersion  Use of possibly unassigned field
   - "CS8967" # ERR_NewlinesAreNotAllowedInsideANonVerbatimInterpolatedString  Newlines inside a non-verbatim interpolated string are not supported in C#
+  - "CS9064"
   - "CS9171"
+  - "CS8058"
+  - "CS8305"
+  - "CS9204"
+  - "CS9194"
 helpviewer_keywords:
   - "CS0171"
   - "CS0188"
@@ -84,8 +89,13 @@ helpviewer_keywords:
   - "CS9016"
   - "CS9017"
   - "CS8967"
+  - "CS9064"
   - "CS9171"
-ms.date: 07/11/2023
+  - "CS8058"
+  - "CS8305"
+  - "CS9204"
+  - "CS9194"
+ms.date: 10/26/2023
 ---
 # Resolve warnings related to language features and versions
 
@@ -95,6 +105,7 @@ This article covers the following compiler warnings:
 That's be design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
 - **CS8022, CS8023, CS8024, CS8025, CS8026, CS8059, CS8107, CS8302, CS8320, CS8370, CS8400, CS8773, CS8936, CS9058** - *Feature is not available. Use newer language version.*
+- **CS8058** - *Feature is experimental.*
 - **CS8192** - *Provided language version is unsupported or invalid*
 - **CS8303** - *Specified language version cannot have leading zeroes*
 - **CS8304** - *Compiler version is less than language version*
@@ -117,13 +128,17 @@ That's be design. The text closely matches the text of the compiler error / warn
 - **CS9015** - *Error: Use of possibly unassigned field. Upgrade to auto-default the field.*
 - **CS9016** - *Warning: Use of possibly unassigned property. Upgrade to auto-default the property.*
 - **CS9017** - *Warning: Use of possibly unassigned field. Upgrade to auto-default the field.*
+- **CS9064** - *Target runtime doesn't support ref fields.*
 - **CS9171** - *Target runtime doesn't support inline array types.*
+- **CS9194** - *Argument may not be passed with the `ref` keyword. To pass `ref` arguments to `in` parameters, upgrade to language version 12 or greater.*
 
 In addition, the following errors and warnings relate to struct initialization changes in recent versions:
 
 - [**CS0171**, **CS8881**](#breaking-changes-on-struct-initialization): *Backing field for automatically implemented property 'name' must be fully assigned before control is returned to the caller.*
 - [**CS0188**, **CS8885**](#breaking-changes-on-struct-initialization): *The 'this' object cannot be used before all of its fields are assigned to*
 - [**CS0843**, **CS8880**](#breaking-changes-on-struct-initialization): *Backing field for automatically implemented property 'name' must be fully assigned before control is returned to the caller*
+- [**CS8305**](#enable-experimental-features) - *Feature is for evaluation purposes only and is subject to change or removal in future updates.*
+- [**CS9204**](#enable-experimental-features) - *Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.*
 
 The cause behind all these errors and warnings is that the compiler installed supports a newer version of C# than the version your project has selected. The C# compiler can conform to any previous version. You can validate syntax against an earlier version of C#, or because your project must support older libraries or runtimes.
 
@@ -139,7 +154,7 @@ If your selected framework doesn't match the language version required, you can 
 
 ## Select the matching language version
 
-You may have an older target framework selected in your project file. If you remove the `LangVersion` element from your project file, the compiler will use the default value listed in the preceding section. The following table shows all current C# language versions. You can also specify a specific language version to enable newer features.
+You might have an older target framework selected in your project file. If you remove the `LangVersion` element from your project file, the compiler uses the default value listed in the preceding section. The following table shows all current C# language versions. You can also specify a specific language version to enable newer features.
 
 [!INCLUDE [langversion-table](../includes/langversion-table.md)]
 
@@ -147,7 +162,14 @@ You can learn more about the language versions supported for each framework vers
 
 ## Avoid the updated feature
 
-If you must support older libraries or runtimes, you may need to avoid using newer features.
+If you must support older libraries or runtimes, you might need to avoid using newer features.
+
+## Enable experimental features
+
+The diagnostics for experimental features can be disabled to use the experimental feature.
+
+> [!WARNING]
+> Experimental features are subject to changes. The APIs may change, or they may be removed in future updates. Including experimental features is a way for library authors to get feedback on ideas and concepts for future development. Use extreme caution when using any feature marked as experimental.
 
 ## Breaking changes on struct initialization
 

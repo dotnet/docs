@@ -18,6 +18,10 @@ This article has been updated for .NET 8 release candidate (RC) 2.
 > - This information relates to a pre-release product that may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 > - Much of the other .NET documentation on [https://learn.microsoft.com/dotnet](/dotnet) has not yet been updated for .NET 8.
 
+## ASP.NET Core
+
+For information about what's new in ASP.NET Core, see [What's new in ASP.NET Core 8.0](/aspnet/core/release-notes/aspnetcore-8.0).
+
 ## Core .NET libraries
 
 This section contains the following subtopics:
@@ -165,7 +169,7 @@ JsonSerializer.Serialize(new { PropertyName = "value" }, options); // { "propert
 
 You can now deserialize onto read-only fields or properties (that is, those that don't have a `set` accessor).
 
-To opt into this support globally, set a new option, <xref:System.Text.Json.JsonSerializerOptions.PreferredObjectCreationHandling>, to <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Populate?displayProperty=nameWithType>. If compatibility is a concern, you can also enable the functionality more granularly by placing the `[JsonObjectCreationHandling(JsonObjectCreationHandling.Populate)]` attribute on types whose properties are to be populated, or on individual properties.
+To opt into this support globally, set a new option, <xref:System.Text.Json.JsonSerializerOptions.PreferredObjectCreationHandling>, to <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Populate?displayProperty=nameWithType>. If compatibility is a concern, you can also enable the functionality more granularly by placing the `[JsonObjectCreationHandling(JsonObjectCreationHandling.Populate)]` attribute on specific types whose properties are to be populated, or on individual properties.
 
 For example, consider the following code that deserializes into a `CustomerInfo` type that has two read-only properties.
 
@@ -203,6 +207,8 @@ Now, the input values are used to populate the read-only properties during deser
 ```output
 {"Names":["John Doe"],"Company":{"Name":"Contoso","PhoneNumber":null}}
 ```
+
+For more information about the *populate* deserialization behavior, see [Populate initialized properties](../../standard/serialization/system-text-json/populate-properties.md).
 
 #### Disable reflection-based default
 
@@ -1532,6 +1538,12 @@ Starting in .NET 8, NuGet verifies signed packages on Linux by default. NuGet co
 Most users shouldn't notice the verification. However, if you have an existing root certificate bundle located at */etc/pki/ca-trust/extracted/pem/objsign-ca-bundle.pem*, you may see trust failures accompanied by [warning NU3042](/nuget/reference/errors-and-warnings/nu3042).
 
 You can opt out of verification by setting the environment variable `DOTNET_NUGET_SIGNATURE_VERIFICATION` to `false`.
+
+## Diagnostics
+
+### C# Hot Reload supports modifying generics
+
+Starting in .NET 8, C# Hot Reload [supports modifying generic types and generic methods](https://devblogs.microsoft.com/dotnet/hot-reload-generics/). When you debug console, desktop, mobile, or WebAssembly applications with Visual Studio, you can apply changes to generic classes and generic methods in C# code or Razor pages. For more information, see the [full list of edits supported by Roslyn](https://github.com/dotnet/roslyn/blob/main/docs/wiki/EnC-Supported-Edits.md)
 
 ## See also
 

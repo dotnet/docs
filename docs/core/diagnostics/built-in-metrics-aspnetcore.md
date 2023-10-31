@@ -67,6 +67,8 @@ The time ends when:
 - All response data has been sent.
 - The context data structures for the request are being disposed.
 
+The default buckets for this metic are set to { 0, 0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10 }.
+
 <!-- Once we migrate this doc to https://github.com/dotnet/AspNetCore.Docs we can remove the following version info -->
 Available staring in: ASP.NET Core 8.0
 
@@ -240,7 +242,11 @@ Available staring in: ASP.NET Core 8.0
 | `server.port` | int | Server port number | `80`; `8080`; `443` | If the transport is `tcp` or `udp`. |
 | `tls.protocol.version` | string | TLS protocol version. | `1.2`; `1.3` | If the connection is secured with TLS. |
 
+As this metric is tracking the connection duration, and ideally http connections are used for multiple requests, the buckets should be longer than those used for request durations. For example, using [0, 0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, 30, 60, 120, 300] provides an upper bucket of 5 mins.
+
 Available staring in: ASP.NET Core 8.0
+
+This 
 
 ### Instrument: `kestrel.rejected_connections`
 
@@ -323,6 +329,8 @@ Available staring in: ASP.NET Core 8.0
 | `server.port` | int | Server port number | `80`; `8080`; `443` | If the transport is `tcp` or `udp`. |
 | `tls.protocol.version` | string | TLS protocol version. | `1.2`; `1.3` | If the connection is secured with TLS. |
 
+The default buckets for this metic are set to { 0, 0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10 }.
+
 Available staring in: ASP.NET Core 8.0
 
 ### Instrument: `kestrel.active_tls_handshakes`
@@ -368,6 +376,8 @@ Available staring in: ASP.NET Core 8.0
 | `server_sent_events` | [server-sent events](https://developer.mozilla.org/docs/Web/API/Server-sent_events/Using_server-sent_events)  |
 | `long_polling` | [Long Polling](/archive/msdn-magazine/2012/april/cutting-edge-long-polling-and-signalr) |
 | `web_sockets` | [WebSocket](https://datatracker.ietf.org/doc/html/rfc6455) |
+
+As this metric is tracking the connection duration, and ideally signal connections are durable, the buckets should be longer than those used for request durations. For example, using [0, 0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, 30, 60, 120, 300] provides an upper bucket of 5 mins.
 
 Available staring in: ASP.NET Core 8.0
 

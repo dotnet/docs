@@ -79,12 +79,12 @@ The serializer has built-in support for the following additional types.
 
 #### Source generator
 
-.NET 8 includes enhancements of the System.Text.Json [source generator](../../standard/serialization/system-text-json/source-generation.md) that are aimed at making the [Native AOT](../../standard/glossary.md#native-aot) experience on par with the [reflection-based serializer](../../standard/serialization/system-text-json/source-generation-modes.md#overview). For example:
+.NET 8 includes enhancements of the System.Text.Json [source generator](../../standard/serialization/system-text-json/source-generation.md) that are aimed at making the [Native AOT](../../standard/glossary.md#native-aot) experience on par with the [reflection-based serializer](../../standard/serialization/system-text-json/reflection-vs-source-generation.md#reflection). For example:
 
 - The source generator now supports serializing types with [`required`](../../standard/serialization/system-text-json/required-properties.md) and [`init`](../../csharp/language-reference/keywords/init.md) properties. These were both already supported in reflection-based serialization.
 - Improved formatting of source-generated code.
-- <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> feature parity with <xref:System.Text.Json.JsonSerializerOptions>. This parity lets you specify serialization configuration at compile time, which ensures that the generated `MyContext.Default` property is preconfigured with all the relevant options set.
-- Additional diagnostics (such as `SYSLIB1034` and `SYSLIB1039`).
+- <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> feature parity with <xref:System.Text.Json.JsonSerializerOptions>. For more information, see [Specify options (source generation)](../../standard/serialization/system-text-json/source-generation.md#specify-options).
+- Additional diagnostics (such as [SYSLIB1034](../../fundamentals/syslib-diagnostics/syslib1034.md) and [SYSLIB1039](../../fundamentals/syslib-diagnostics/syslib1039.md)).
 - Don't include types of ignored or inaccessible properties.
 - Support for nesting `JsonSerializerContext` declarations within arbitrary type kinds.
 - Support for compiler-generated or *unspeakable* types in weakly typed source generation scenarios. Since compiler-generated types can't be explicitly specified by the source generator, <xref:System.Text.Json?displayProperty=fullName> now performs nearest-ancestor resolution at run time. This resolution determines the most appropriate supertype with which to serialize the value.
@@ -98,7 +98,7 @@ The serializer has built-in support for the following additional types.
   public partial class MyContext : JsonSerializerContext { }
   ```
 
-  For more information, see [Serialize enum fields as strings](../../standard/serialization/system-text-json/source-generation-modes.md#serialize-enum-fields-as-strings).
+  For more information, see [Serialize enum fields as strings](../../standard/serialization/system-text-json/source-generation.md#serialize-enum-fields-as-strings).
 
 - New `JsonConverter.Type` property lets you look up the type of a non-generic `JsonConverter` instance:
 
@@ -111,21 +111,7 @@ The serializer has built-in support for the following additional types.
 
 ##### Chain source generators
 
-The <xref:System.Text.Json.JsonSerializerOptions> class includes a new <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> property that complements the existing <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> property. These properties are used in contract customization for chaining source generators. The addition of the new property means that you don't have to specify all chained components at one call site&mdash;they can be added after the fact.
-
-<xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> also lets you introspect the chain or remove components from it. The following code snippet shows an example.
-
-```csharp
-var options = new JsonSerializerOptions
-{
-    TypeInfoResolver = JsonTypeInfoResolver.Combine(
-        ContextA.Default, ContextB.Default, ContextC.Default);
-};
-
-options.TypeInfoResolverChain.Count; // 3
-options.TypeInfoResolverChain.RemoveAt(0);
-options.TypeInfoResolverChain.Count; // 2
-```
+The <xref:System.Text.Json.JsonSerializerOptions> class includes a new <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> property that complements the existing <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> property. These properties are used in contract customization for chaining source generators. The addition of the new property means that you don't have to specify all chained components at one call site&mdash;they can be added after the fact. <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> also lets you introspect the chain or remove components from it. For more information, see [Combine source generators](../../standard/serialization/system-text-json/source-generation.md#combine-source-generators).
 
 In addition, <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=nameWithType> is now obsolete. It's been superseded by the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> and <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> properties. For more information, see [SYSLIB0049](../../fundamentals/syslib-diagnostics/syslib0049.md).
 
@@ -164,6 +150,8 @@ public class DerivedImplement : IDerived
 var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower };
 JsonSerializer.Serialize(new { PropertyName = "value" }, options); // { "property_name" : "value" }
 ```
+
+For more information, see [Use a built-in naming policy](../../standard/serialization/system-text-json/customize-properties.md#use-a-built-in-naming-policy).
 
 #### Read-only properties
 
@@ -214,31 +202,9 @@ For more information about the *populate* deserialization behavior, see [Populat
 
 You can now disable using the reflection-based serializer by default. This disablement is useful to avoid accidental rooting of reflection components that aren't even in use, especially in trimmed and Native AOT apps. To disable default reflection-based serialization by requiring that a <xref:System.Text.Json.JsonSerializerOptions> argument be passed to the <xref:System.Text.Json.JsonSerializer> serialization and deserialization methods, set the `JsonSerializerIsReflectionEnabledByDefault` MSBuild property to `false` in your project file.
 
-```xml
-<JsonSerializerIsReflectionEnabledByDefault>false</JsonSerializerIsReflectionEnabledByDefault>
-```
-
-(If the property is set to `false` and you don't pass a configured <xref:System.Text.Json.JsonSerializerOptions> argument, the `Serialize` and `Deserialize` methods throw a <xref:System.NotSupportedException> at run time.)
-
 Use the new <xref:System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault> API to check the value of the feature switch. If you're a library author building on top of <xref:System.Text.Json?displayProperty=fullName>, you can rely on the property to configure your defaults without accidentally rooting reflection components.
 
-```csharp
-static JsonSerializerOptions GetDefaultOptions()
-{
-    if (JsonSerializer.IsReflectionEnabledByDefault)
-    {
-        // This branch has a dependency on DefaultJsonTypeInfo,
-        // but it will get trimmed away if the feature switch is disabled.
-        return new()
-        {
-            TypeInfoResolver = new DefaultJsonTypeInfoResolver(),
-            PropertyNamingPolicy = JsonNamingPolicy.KebabCaseLower,
-        }
-    }
-
-    return new() { PropertyNamingPolicy = JsonNamingPolicy.KebabCaseLower };
-}
-```
+For more information, see [Disable reflection defaults](../../standard/serialization/system-text-json/source-generation.md#disable-reflection-defaults).
 
 #### New JsonNode API methods
 

@@ -25,7 +25,7 @@ For Visual Basic, there are some limitations on what parts of the library you ca
 
 ## How to get the library
 
-The library is built-in as part of the shared framework for .NET Core 3.0 and later versions. The [source generation feature](source-generation-modes.md#source-generation---metadata-collection-mode) is built-in as part of the shared framework for .NET 6 and later versions. Use of source generation requires .NET 5 SDK or later.
+The library is built-in as part of the shared framework for .NET Core 3.0 and later versions. The [source generation feature](source-generation-modes.md#metadata-collection-mode) is built-in as part of the shared framework for .NET 6 and later versions. Use of source generation requires .NET 5 SDK or later.
 
 For framework versions earlier than .NET Core 3.0, install the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package. The package supports:
 

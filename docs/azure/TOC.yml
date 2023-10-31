@@ -31,6 +31,10 @@
       href: ./migration/vm.md
     - name: Migrate a SQL Server database to Azure
       href: ./migration/sql.md
+- name: Azure AI apps
+  items:
+    - name: Enterprise chat app template
+      href: ./ai/enterprise-chat-app.md
 - name: Azure SDK for .NET
   items:
     - name: What is the Azure SDK for .NET?
@@ -38,19 +42,19 @@
     - name: Authentication
       items:
       - name: Overview
-        href: ./sdk/authentication/index.md
+        href: sdk/authentication.md
       - name: Auth during local development
         items:
         - name: Auth using developer service principals
-          href: ./sdk/authentication/local-development-service-principal.md
+          href: sdk/authentication-local-development-service-principal.md
         - name: Auth using developer accounts
-          href: ./sdk/authentication/local-development-dev-accounts.md
+          href: sdk/authentication-local-development-dev-accounts.md
       - name: Auth from Azure-hosted apps
-        href: ./sdk/authentication/azure-hosted-apps.md
+        href: sdk/authentication-azure-hosted-apps.md
       - name: Auth from on-premises apps
-        href: ./sdk/authentication/on-premises-apps.md
+        href: sdk/authentication-on-premises-apps.md
       - name: Additional auth methods
-        href: ./sdk/authentication/additional-methods.md
+        href: sdk/authentication-additional-methods.md
     - name: Resource management
       href: ./sdk/resource-management.md
     - name: Dependency injection

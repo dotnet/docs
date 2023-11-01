@@ -26,9 +26,9 @@ This article is part of a collection of articles that show you how to build a ch
 
 Other articles in the collection include: 
 
-* [Python](/azure/python/quickstarts/get-started-app-chat-template.md)
-* [JavaScript](/azure/javascript/quickstarts/get-started-app-chat-template.md)
-* [Java](/azure/java/quickstarts/get-started-app-chat-template.md)
+* [Python](/azure/python/quickstarts/get-started-app-chat-template)
+* [JavaScript](/azure/javascript/quickstarts/get-started-app-chat-template)
+* [Java](/azure/java/quickstarts/get-started-app-chat-template)
 
 ## Architectural overview
 
@@ -64,7 +64,7 @@ To use this article, you need the following prerequisites:
 
 #### [Visual Studio Code](#tab/visual-studio-code)
 1. An Azure subscription - [Create one for free](https://azure.microsoft.com/free/cognitive-services?azure-portal=true)
-1. [Azure Developer CLI](/azure-developer-cli/install-azd.md?tabs=winget-windows%2Cbrew-mac%2Cscript-linux&pivots=os-windows)
+1. [Azure Developer CLI](/azure-developer-cli/install-azd?tabs=winget-windows%2Cbrew-mac%2Cscript-linux&pivots=os-windows)
 1. [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 1. [Visual Studio Code](https://code.visualstudio.com/)
 1. [Dev Container Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
@@ -116,7 +116,7 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
     > [!TIP]
     > You can use the main menu to navigate to the **Terminal** menu option and then select the **New Terminal** option.
     >
-    > :::image type="content" source="../media/get-started-app-chat-template/open-terminal-option.png" lightbox="./media/get-started-app-chat-template/open-terminal-option.png" alt-text="Screenshot of the menu option to open a new terminal.":::
+    > :::image type="content" source="../media/get-started-app-chat-template/open-terminal-option.png" lightbox="../media/get-started-app-chat-template/open-terminal-option.png" alt-text="Screenshot of the menu option to open a new terminal.":::
 
 1. Sign in to Azure with the Azure Developer CLI.
 

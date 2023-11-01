@@ -49,7 +49,7 @@ Key components of the architecture include:
 
 Most resources in this architecture use a basic or consumption pricing tier. Consumption pricing is based on usage, which means you only pay for what you use. To complete this article, there will be a charge but it will be minimal. When you are done with the article, you can delete the resources to stop incurring charges.
 
-Learn more about [cost in the sample repo](https://github.com/Azure-Samples/azure-search-openai-demo#cost-estimation).
+Learn more about [cost in the sample repo](https://github.com/Azure-Samples/azure-search-openai-demo-csharp#cost-estimation).
 
 ## Prerequisites
 
@@ -82,7 +82,7 @@ Begin now with a development environment that has all the dependencies installed
 > [!IMPORTANT]
 > All GitHub accounts can use Codespaces for up to 60 hours free each month with 2 core instances. For more information, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
 
-1. Start the process to create a new GitHub Codespace on the `main` branch of the [`Azure-Samples/azure-search-openai-demo`](https://github.com/Azure-Samples/azure-search-openai-demo) GitHub repository:
+1. Start the process to create a new GitHub Codespace on the `main` branch of the [`Azure-Samples/azure-search-openai-demo-csharp`](https://github.com/Azure-Samples/azure-search-openai-demo-csharp) GitHub repository:
 
     > [!div class="nextstepaction"]
     > [Open this project in GitHub Codespaces](https://github.com/codespaces/new?azure-portal=true&hide_repo_select=true&ref=main&repo=624102171)
@@ -129,7 +129,7 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
 1. Initialize the folder to use the sample project with Azure Developer CLI:
 
     ```bash
-    azd init -t azure-search-openai-demo
+    azd init -t azure-search-openai-demo-csharp
     ```
 
     You don't need to clone this repository.
@@ -169,7 +169,7 @@ The sample repository contains all the code and configuration files you need to 
 
 ### Use chat app to get answers from PDF files
 
-The chat app is preloaded with employee benefits information from [PDF files](https://github.com/Azure-Samples/azure-search-openai-demo/tree/main/data). You can use the chat app to ask questions about the benefits. The following steps walk you through the process of using the chat app.
+The chat app is preloaded with employee benefits information from [PDF files](https://github.com/Azure-Samples/azure-search-openai-demo-csharp/tree/main/data). You can use the chat app to ask questions about the benefits. The following steps walk you through the process of using the chat app.
 
 1. In the browser, navigate to the **Chat** page using the left navigation.
 1. Select one of the suggested questions or enter your own in the text box at the bottom of the page: 
@@ -263,7 +263,7 @@ Deleting the GitHub Codespaces environment ensures that you can maximize the amo
 
 1. Sign into the GitHub Codespaces dashboard (<https://github.com/codespaces>).
 
-1. Locate your currently running codespaces sourced from the [`Azure-Samples/azure-search-openai-demo`](https://github.com/Azure-Samples/azure-search-openai-demo) GitHub repository.
+1. Locate your currently running codespaces sourced from the [`Azure-Samples/azure-search-openai-demo-csharp`](https://github.com/Azure-Samples/azure-search-openai-demo-csharp) GitHub repository.
 
     :::image type="content" source="../media/get-started-app-chat-template/github-codespace-dashboard.png" alt-text="Screenshot of all the running codespaces including their status and templates.":::
 
@@ -286,13 +286,13 @@ You aren't necessarily required to clean up your local environment, but you can 
 
 ## Get help
 
-This sample repository offers [troubleshooting information](https://github.com/Azure-Samples/azure-search-openai-demo/tree/main#troubleshooting).
+This sample repository offers [troubleshooting information](https://github.com/Azure-Samples/azure-search-openai-demo-csharp/tree/main#troubleshooting).
 
-If your issue isn't addressed, log your issue to the repository's [Issues](https://github.com/Azure-Samples/azure-search-openai-demo/issues).
+If your issue isn't addressed, log your issue to the repository's [Issues](https://github.com/Azure-Samples/azure-search-openai-demo-csharp/issues).
 
 ## Next steps
 
-* [Enterprise chat app GitHub repository](https://github.com/Azure-Samples/azure-search-openai-demo)
+* [Enterprise chat app GitHub repository](https://github.com/Azure-Samples/azure-search-openai-demo-csharp)
 * [Build a chat app with Azure OpenAI](https://aka.ms/azai/chat) best practice solution architecture
 * [Access control in Generative AI Apps with Azure Cognitive Search](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/access-control-in-generative-ai-applications-with-azure/ba-p/3956408)
 * [Build an Enterprise ready OpenAI solution with Azure API Management](https://techcommunity.microsoft.com/t5/apps-on-azure-blog/build-an-enterprise-ready-azure-openai-solution-with-azure-api/bc-p/3935407)

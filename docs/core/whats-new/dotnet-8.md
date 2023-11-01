@@ -1082,7 +1082,7 @@ Not all iOS features are compatible with Native AOT. Similarly, not all librarie
 
 - Using Native AOT is only enabled during app deployment (`dotnet publish`).
 - Managed code debugging is only supported with Mono.
-- Compatibility with MAUI framework is limited.
+- Compatibility with the .NET MAUI framework is limited.
 
 ## Performance improvements
 

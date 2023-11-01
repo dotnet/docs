@@ -9,7 +9,7 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 
 # Get started with the enterprise chat app template for .NET
 
-Deploy and use a chat app to get answers about employee benefits at a fictitious company with .NET. The employee benefits chat app is seeded with PDF files including the employee handbook, a benefits document and a list of company roles and expectations. 
+Deploy and use a chat app to get answers about employee benefits at a fictitious company with .NET. The employee benefits chat app is seeded with PDF files including the employee handbook, a benefits document and a list of company roles and expectations.
 
 > [!div class="nextstepaction"]
 > [Begin now](#open-development-environment)
@@ -22,9 +22,9 @@ By following the instructions in this article, you will:
 
 Once you complete this procedure,you can start modifying the new project with your custom code.
 
-This article is part of a collection of articles that show you how to build a chat app using Azure Cognitive Search and OpenAI. 
+This article is part of a collection of articles that show you how to build a chat app using Azure Cognitive Search and OpenAI.
 
-Other articles in the collection include: 
+Other articles in the collection include:
 
 * [Python](/azure/developer/python/get-started-app-chat-template)
 * [JavaScript](/azure/developer/javascript/get-started-app-chat-template)
@@ -40,12 +40,12 @@ Key components of the architecture include:
 
 * A web application to host the interactive chat experience.
 * An Azure Cognitive Search resource to get answers from your own data.
-* An Azure OpenAI Service to provide: 
-    * Keywords to enhance the search over your own data.
-    * Answers from the OpenAI model.
-    * Embeddings from the ada model
+* An Azure OpenAI Service to provide:
+  * Keywords to enhance the search over your own data.
+  * Answers from the OpenAI model.
+  * Embeddings from the ada model
 
-## Cost 
+## Cost
 
 Most resources in this architecture use a basic or consumption pricing tier. Consumption pricing is based on usage, which means you only pay for what you use. To complete this article, there will be a charge but it will be minimal. When you are done with the article, you can delete the resources to stop incurring charges.
 
@@ -63,6 +63,7 @@ To use this article, you need the following prerequisites:
 1. GitHub account
 
 #### [Visual Studio Code](#tab/visual-studio-code)
+
 1. An Azure subscription - [Create one for free](https://azure.microsoft.com/free/cognitive-services?azure-portal=true)
 1. [Azure Developer CLI](/azure/developer/azure-developer-cli/install-azd?tabs=winget-windows%2Cbrew-mac%2Cscript-linux&pivots=os-windows)
 1. [Docker Desktop](https://www.docker.com/products/docker-desktop/)
@@ -73,7 +74,7 @@ To use this article, you need the following prerequisites:
 
 ## Open development environment
 
-Begin now with a development environment that has all the dependencies installed to complete this article. 
+Begin now with a development environment that has all the dependencies installed to complete this article.
 
 #### [GitHub Codespaces (recommended)](#tab/github-codespaces)
 
@@ -162,7 +163,7 @@ The sample repository contains all the code and configuration files you need to 
 1. When you're prompted to select a location the first time, select a location near you. This location is used for most the resources including hosting.
 1. When you're prompted for a location for the OpenAI model, select a location that is near you. If the same location is available as your first location, select that.
 1. Wait until app is deployed. It may take 5-10 minutes for the deployment to complete.
-1. After the application has been successfully deployed, you see a URL displayed in the terminal. 
+1. After the application has been successfully deployed, you see a URL displayed in the terminal.
 1. Select that URL to open the chat application in a browser.
 
     :::image type="content" source="../media/get-started-app-chat-template/browser-chat-with-your-data.png" alt-text="Screenshot of chat app in browser showing several suggestions for chat input and the chat text box to enter a question.":::
@@ -172,11 +173,11 @@ The sample repository contains all the code and configuration files you need to 
 The chat app is preloaded with employee benefits information from [PDF files](https://github.com/Azure-Samples/azure-search-openai-demo-csharp/tree/main/data). You can use the chat app to ask questions about the benefits. The following steps walk you through the process of using the chat app.
 
 1. In the browser, navigate to the **Chat** page using the left navigation.
-1. Select one of the suggested questions or enter your own in the text box at the bottom of the page: 
+1. Select one of the suggested questions or enter your own in the text box at the bottom of the page:
 
     * What is included in my Northwind Health Plus plan that is not in standard?
-    * What happens in a performance review? 
-    * What does a product manager do? 
+    * What happens in a performance review?
+    * What does a product manager do?
 
     :::image type="content" source="../media/get-started-app-chat-template/browser-chat-initial-answer.png" alt-text="Screenshot of chat app's first answer.":::
 
@@ -196,7 +197,7 @@ The chat app is preloaded with employee benefits information from [PDF files](ht
 
 ### Use chat app settings to change behavior of responses
 
-The intelligence of the chat is determined by the OpenAI model and the settings that are used to interact with the model. 
+The intelligence of the chat is determined by the OpenAI model and the settings that are used to interact with the model.
 
 :::image type="content" source="../media/get-started-app-chat-template/browser-chat-developer-settings-chat-pane.png" alt-text="Screenshot of chat developer settings.":::
 

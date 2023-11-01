@@ -141,10 +141,10 @@ Project file:
 
 ## Debuggability
 
-- Configures whether the .NET Core runtime generates optimized code for images that were built in release configuration.
+- Configures whether the .NET runtime generates optimized code for images that were built in release configuration.
 - If you omit this setting, .NET generates optimized code. This is equivalent to setting the value to `0`.
-- Use this setting to make it easier to debug code generated from images built in release configuration.
-- See also [JIT Optimization and Debugging](/visualstudio/debugger/jit-optimization-and-debugging) which describes the equivalent setting in Visual Studio.
+- Set the value to 1 to make it easier to debug code generated from images built in release configuration.
+- [JIT Optimization and Debugging](/visualstudio/debugger/jit-optimization-and-debugging) describes the equivalent setting in Visual Studio.
 
 | | Setting name | Values |
 | - | - | - |

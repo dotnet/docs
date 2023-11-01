@@ -1060,18 +1060,17 @@ The default console app template now includes support for AOT out-of-the-box. To
 - `tvos`
 - `tvossimulator`
 
-Preliminary testing shows that app size on disk decreases by about 40% for .NET iOS apps that use Native AOT instead of Mono. App size on disk for .NET MAUI iOS apps *increases* by about 25%. However, since the .NET 8 support is only the first step for the feature as a whole, we urge you not to draw conclusions about performance at this point.
+Preliminary testing shows that app size on disk decreases by about 35% for .NET iOS apps that use Native AOT instead of Mono. App size on disk for .NET MAUI iOS apps decreases up to 50%. Additionally, the startup time is also faster. .NET iOS apps have about 28% faster startup time, while .NET MAUI iOS apps have about 50% better startup performance compared to Mono. However, since the .NET 8 support is experimental and only the first step for the feature as a whole, we urge you not to draw conclusions about performance at this point and check out the [.NET 8 Performance Improvements in .NET MAUI blog post](https://devblogs.microsoft.com/dotnet/dotnet-8-performance-improvements-in-dotnet-maui/) for more details.
 
-Native AOT support is available as an opt-in feature intended for app deployment; Mono is still the default runtime for app development and deployment. To build and run a .NET MAUI application with Native AOT on an iOS device, use `dotnet workload install maui` to install the .NET MAUI workload and `dotnet new maui -n HelloMaui` to create the app. Then, set the MSBuild properties `PublishAot` and `PublishAotUsingRuntimePack` to `true` in the project file.
+Native AOT support is available as an opt-in feature intended for app deployment; Mono is still the default runtime for app development and deployment. To build and run a .NET MAUI application with Native AOT on an iOS device, use `dotnet workload install maui` to install the .NET MAUI workload and `dotnet new maui -n HelloMaui` to create the app. Then, set the MSBuild properties `PublishAot` to `true` in the project file.
 
 ```xml
 <PropertyGroup>
   <PublishAot>true</PublishAot>
-  <PublishAotUsingRuntimePack>true</PublishAotUsingRuntimePack>
 </PropertyGroup>
 ```
 
-When you set these properties and run `dotnet publish` as shown in the following example, the app will be deployed by using Native AOT.
+When you set the required property and run `dotnet publish` as shown in the following example, the app will be deployed by using Native AOT.
 
 ```dotnetcli
 dotnet publish -f net8.0-ios -c Release -r ios-arm64  /t:Run
@@ -1081,10 +1080,9 @@ dotnet publish -f net8.0-ios -c Release -r ios-arm64  /t:Run
 
 Not all iOS features are compatible with Native AOT. Similarly, not all libraries commonly used in iOS are compatible with NativeAOT. And in addition to the existing [limitations of Native AOT deployment](../deploying/native-aot/index.md#limitations-of-native-aot-deployment), the following list shows some of the other limitations when targeting iOS-like platforms:
 
-- Installation and app deployment using Visual Studio is untested.
 - Using Native AOT is only enabled during app deployment (`dotnet publish`).
-- <xref:System.Linq.Expressions> library functionality isn't fully supported.
 - Managed code debugging is only supported with Mono.
+- Compatibility with MAUI framework is limited.
 
 ## Performance improvements
 

@@ -27,7 +27,7 @@ Programmers should throw exceptions when one or more of the following conditions
   :::code language="csharp" source="snippets/exceptions/Program.cs" ID="InvalidArg":::
 
   > [!NOTE]
-  > The preceding example is for illustrative purposes. Ideally, you don't use exceptions to validate arguments, but to handle exceptional program conditions.
+  > The preceding example shows how to use the `InnerException` property. It's intentionally simplified. In practice, you should check that an index is in range before using it. You could use this technique of wrapping an exception when a member of a parameter throws an exception you couldn't anticipate before calling the member.
 
 Exceptions contain a property named <xref:System.Exception.StackTrace%2A>. This string contains the name of the methods on the current call stack, together with the file name and line number where the exception was thrown for each method. A <xref:System.Exception.StackTrace%2A> object is created automatically by the common language runtime (CLR) from the point of the `throw` statement, so that exceptions must be thrown from the point where the stack trace should begin.
 

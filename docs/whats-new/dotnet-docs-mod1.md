@@ -70,7 +70,7 @@ Welcome to what's new in the .NET docs for October 2023. This article lists some
 
 ### Updated articles
 
-- [Best Practices for Implementing the Event-based Asynchronous Pattern](../standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md) - Replace <em> with *
+- [Best Practices for Implementing the Event-based Asynchronous Pattern](../standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md) - Replace `<em>` with `*`
 
 ## C# language
 

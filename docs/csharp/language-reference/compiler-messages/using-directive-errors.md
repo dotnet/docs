@@ -1,7 +1,7 @@
 ---
 title: "Resolve compiler errors and warnings related to using directives and using alias directives"
 description: "These errors and warnings indicate problems with using directives and using directive aliases. This information helps diagnose and fix those issues."
-ms.date: 04/25/2023
+ms.date: 11/02/2023
 f1_keywords:
   - "CS0105"
   - "CS0138"

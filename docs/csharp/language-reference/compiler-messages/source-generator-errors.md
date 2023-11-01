@@ -61,7 +61,7 @@ helpviewer_keywords:
   - "CS9178"
   - "CS9206"
   - "CS9207"
-ms.date: 11/01/2023
+ms.date: 11/02/2023
 ---
 # Errors and warnings associated with source generators and interceptors
 

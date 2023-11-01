@@ -65,7 +65,7 @@ helpviewer_keywords:
  - "CS9208"
  - "CS9209"
  - "CS9210"
-ms.date: 11/01/2023
+ms.date: 11/02/2023
 ---
 # Resolve errors and warnings in array and collection declarations and initialization expressions
 

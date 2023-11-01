@@ -31,7 +31,7 @@ helpviewer_keywords:
   - "CS9183"
   - "CS9184"
   - "CS9189"
-ms.date: 11/01/2023
+ms.date: 11/02/2023
 ---
 # Resolve errors and warnings with inline array declarations
 

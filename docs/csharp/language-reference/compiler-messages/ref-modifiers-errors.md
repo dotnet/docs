@@ -55,10 +55,6 @@ f1_keywords:
   - "CS9101"
   - "CS9102"
   - "CS9104"
-  - "CS9109"
-  - "CS9110"
-  - "CS9116"
-  - "CS9119"
   - "CS9190"
   - "CS9191"
   - "CS9192"
@@ -124,10 +120,6 @@ helpviewer_keywords:
   - "CS9101"
   - "CS9102"
   - "CS9104"
-  - "CS9109"
-  - "CS9110"
-  - "CS9116"
-  - "CS9119"
   - "CS9190"
   - "CS9191"
   - "CS9192"
@@ -139,7 +131,7 @@ helpviewer_keywords:
   - "CS9199"
   - "CS9200"
   - "CS9201"
-ms.date: 10/24/2023
+ms.date: 11/02/2023
 ---
 # Errors and warnings associated with reference parameters, variables, and returns
 
@@ -191,10 +183,6 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9101**](#unscoped-ref-restrictions) - *UnscopedRefAttribute can only be applied to struct instance methods and properties, and cannot be applied to constructors or init-only members.*
 - [**CS9102**](#unscoped-ref-restrictions) - *UnscopedRefAttribute cannot be applied to an interface implementation.*
 - [**CS9104**](#reference-variable-restrictions) - *A using statement resource of type cannot be used in async methods or async lambda expressions.*
-- [**CS9109**](#ref-safety-violations) - *Cannot use `ref`, `out`, or `in` primary constructor parameter inside an instance member*
-- [**CS9110**](#ref-safety-violations) - *Cannot use primary constructor parameter that has ref-like type inside an instance member*
-- [**CS9116**](#writable-reference-variables-require-a-writable-referent) - *A primary constructor parameter of a readonly type cannot be used as a `ref` or `out` value (except in init-only setter of the type or a variable initializer)*
-- [**CS9119**](#writable-reference-variables-require-a-writable-referent) - *Members of primary constructor parameter of a readonly type cannot be used as a `ref` or `out` value (except in init-only setter of the type or a variable initializer)*
 - [**CS9190**](#incorrect-syntax) - *`readonly` modifier must be specified after `ref`.*
 - [**CS9199**](#reference-variable-restrictions) - *A `ref readonly` parameter cannot have the Out attribute.*
 
@@ -328,8 +316,6 @@ A writable reference variable requires that the referent also be writable. The f
 - **CS8330** - *Members of variable cannot be used as a `ref` or `out` value because it is a readonly variable*
 - **CS8331** - *Cannot assign to variable or use it as the right hand side of a `ref` assignment because it is a readonly variable*
 - **CS8332** - *Cannot assign to a member of variable or use it as the right hand side of a `ref` assignment because it is a readonly variable*
-- **CS9116** - *A primary constructor parameter of a `readonly` type cannot be used as a `ref` or `out` value (except in init-only setter of the type or a variable initializer)*
-- **CS9119** - *Members of primary constructor parameter of a readonly type cannot be used as a `ref` or `out` value (except in init-only setter of the type or a variable initializer)*
 
 Examples of variables that aren't writable include:
 
@@ -356,8 +342,6 @@ The compiler tracks the safe context of referents and reference variables. The c
 - **CS9078** - *Cannot return by reference a member of parameter through a `ref` parameter; it can only be returned in a return statement*
 - **CS9079** - *Cannot ref-assign source to destination because source can only escape the current method through a return statement.*
 - **CS9096** - *Cannot ref-assign source to destination because source has a wider value escape scope than destination allowing assignment through destination of values with narrower escapes scopes than source.*
-- **CS9109** - *Cannot use `ref`, `out`, or `in` primary constructor parameter inside an instance member*
-- **CS9110** - *Cannot use primary constructor parameter that has ref-like type inside an instance member*
 
 Warnings:
 

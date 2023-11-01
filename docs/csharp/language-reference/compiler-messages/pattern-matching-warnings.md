@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "CS8509"
   - "CS9134"
   - "CS9135"
-ms.date: 11/10/2022
+ms.date: 11/02/2022
 ---
 # Pattern matching errors and warnings
 

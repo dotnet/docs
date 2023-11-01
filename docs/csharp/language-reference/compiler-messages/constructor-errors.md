@@ -87,7 +87,7 @@ helpviewer_keywords:
  - "CS9124"
  - "CS9136"
  - "CS9179"
-ms.date: 11/01/2023
+ms.date: 11/02/2023
 ---
 # Resolve errors and warnings in constructor declarations
 

@@ -18,7 +18,6 @@ f1_keywords:
   - "CS9098" # ERR_ImplicitlyTypedDefaultParameter: Implicitly typed lambda parameter '{0}' cannot have a default value.
   - "CS9099" # WRN_OptionalParamValueMismatch: The default parameter value does not match in the target delegate type.
   - "CS9100" # WRN_ParamsArrayInLambdaOnly: Parameter has params modifier in lambda but not in target delegate type.
-  - "CS9108"
 helpviewer_keywords:
   - "CS0748"
   - "CS0835"
@@ -36,7 +35,6 @@ helpviewer_keywords:
   - "CS9098"
   - "CS9099"
   - "CS9100"
-  - "CS9108"
 ms.date: 05/04/2023
 ---
 # Errors and warnings when using lambda expressions and anonymous functions
@@ -59,7 +57,6 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8971**](#syntax-limitations-in-lambda-expressions) - *InterpolatedStringHandlerArgument has no effect when applied to lambda parameters and will be ignored at the call site.*
 - [**CS8975**](#lambda-expression-parameters-and-returns) - *The contextual keyword `var` cannot be used as an explicit lambda return type.*
 - [**CS9098**](#lambda-expression-parameters-and-returns) - *Implicitly typed lambda parameter '...' cannot have a default value.*
-- [**CS9108**](#syntax-limitations-in-lambda-expressions) - *Cannot use a parameter that has ref-like type inside an anonymous method, lambda expression, query expression, or local function*
 
 In addition, there are several *warnings* related to declaring and using lambda expressions:
 
@@ -77,7 +74,6 @@ Some C# syntax is prohibited in lambda expressions and anonymous methods. Using 
 - **CS1673**: *Anonymous methods, lambda expressions, and query expressions inside structs cannot access instance members of `this`.*
 - **CS1686**: *Local variable or its members cannot have their address taken and be used inside an anonymous method or lambda expression.*
 - **CS8175**: *Cannot use ref local inside an anonymous method, lambda expression, or query expression.*
-- **CS9108**: *Cannot use a parameter that has ref-like type inside an anonymous method, lambda expression, query expression, or local function*
 
 All the following constructs are disallowed in lambda expressions:
 

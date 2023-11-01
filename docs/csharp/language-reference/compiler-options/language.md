@@ -1,7 +1,7 @@
 ---
 description: "C# Compiler Options for language feature rules. These options control how the compiler interprets certain language constructs."
 title: "C# Compiler Options - language feature rules"
-ms.date: 07/06/2021
+ms.date: 10/30/2023
 f1_keywords:
   - "cs.build.options"
 helpviewer_keywords:
@@ -60,7 +60,9 @@ This option specifies the names of one or more symbols that you want to define. 
 
 ## LangVersion
 
-Causes the compiler to accept only syntax that is included in the chosen C# language specification.
+The default language version for the C# compiler depends on the target framework for your application and the version of the SDK or Visual Studio installed. Those rules are defined in [C# language versioning](../configure-language-version.md#defaults).
+
+The **LangVersion** option causes the compiler to accept only syntax that is included in the specified C# language specification, for example:
 
 ```xml
 <LangVersion>9.0</LangVersion>
@@ -70,18 +72,22 @@ The following values are valid:
 
 [!INCLUDE [lang-versions-table](../includes/langversion-table.md)]
 
-The default language version depends on the target framework for your application and the version of the SDK or Visual Studio installed. Those rules are defined in [C# language versioning](../configure-language-version.md#defaults).
-
 > [!IMPORTANT]
-> The `latest` value is generally not recommended. With it, the compiler enables the latest features, even if those features depend on updates not included in the configured target framework. Without this setting, your project uses the compiler version recommended for your target framework. You can update the target framework to access newer language features.
+> The `latest` value is generally not recommended. With `latest`, the compiler enables the latest features, even if those features depend on updates not included in the configured target framework.
 
-Metadata referenced by your C# application isn't subject to the **LangVersion** compiler option.
+### Considerations
 
-Because each version of the C# compiler contains extensions to the language specification, **LangVersion** doesn't give you the equivalent functionality of an earlier version of the compiler.
+- To ensure that your project uses the default compiler version recommended for your target framework, don't use the **LangVersion** option. You can update the target framework to access newer language features.
 
-Additionally, while C# version updates generally coincide with major .NET releases, the new syntax and features aren't necessarily tied to that specific framework version. Each specific feature has its own minimum .NET API or common language runtime requirements that may allow it to run on downlevel frameworks by including NuGet packages or other libraries.
+- Specifying **LangVersion** with the `default` value is different from omitting the **LangVersion** option. Specifying `default` uses the latest version of the language that the compiler supports, without taking into account the target framework. For example, building a project that targets .NET 6 from Visual Studio version 17.6 uses C# 10 if **LangVersion** isn't specified, but uses C# 11 if **LangVersion** is set to `default`.
 
-Regardless of which **LangVersion** setting you use, use the current version of the common language runtime to create your .exe or .dll. One exception is friend assemblies and [**ModuleAssemblyName**](advanced.md#moduleassemblyname), which work under **-langversion:ISO-1**.
+- Metadata referenced by your C# application isn't subject to the **LangVersion** compiler option.
+
+- Because each version of the C# compiler contains extensions to the language specification, **LangVersion** doesn't give you the equivalent functionality of an earlier version of the compiler.
+
+- While C# version updates generally coincide with major .NET releases, the new syntax and features aren't necessarily tied to that specific framework version. Each specific feature has its own minimum .NET API or common language runtime requirements that may allow it to run on downlevel frameworks by including NuGet packages or other libraries.
+
+- Regardless of which **LangVersion** setting you use, use the current version of the common language runtime to create your *.exe* or *.dll*. One exception is friend assemblies and [ModuleAssemblyName](advanced.md#moduleassemblyname), which work under **-langversion:ISO-1**.
 
 For other ways to specify the C# language version, see [C# language versioning](../configure-language-version.md).
 

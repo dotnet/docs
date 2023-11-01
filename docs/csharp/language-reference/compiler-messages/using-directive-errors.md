@@ -25,6 +25,8 @@ f1_keywords:
   - "CS9131"
   - "CS9132"
   - "CS9133"
+  - "CS9162"
+  - "CS9163"
 helpviewer_keywords: 
   - "CS0105"
   - "CS0138"
@@ -48,6 +50,8 @@ helpviewer_keywords:
   - "CS9131"
   - "CS9132"
   - "CS9133"
+  - "CS9162"
+  - "CS9163"
 ---
 # Resolve warnings related using namespaces
 
@@ -74,6 +78,7 @@ That's be design. The text closely matches the text of the compiler error / warn
 - [**CS9131**](#restrictions-on-using-aliases) - *Error: Only a using alias can be `unsafe`.*
 - [**CS9132**](#restrictions-on-using-aliases) - *Error: Using alias cannot be a nullable reference type.*
 - [**CS9133**](#using-static-directive) - *Error: `static` modifier must precede `unsafe` modifier.*
+- [**CS9162**](#using-static-directive) - *Type is not valid for 'using static'. Only a class, struct, interface, enum, delegate, or namespace can be used.*
 
 And the following compiler warnings:
 
@@ -122,6 +127,8 @@ The compiler generates **CS7007** if you include the `static` modifier importing
 ```csharp
 using static System; // CS7007
 ```
+
+The compiler emits CS9162 if the symbol isn't one of the proper types.
 
 If you combine the `static` modifier with the `unsafe` modifier in a `using` directive, the `static` modifier must come first:
 

@@ -41,6 +41,9 @@ f1_keywords:
  - "CS9120" # ERR_RefReturnPrimaryConstructorParameter - Cannot return primary constructor parameter '{0}' by reference.
  - "CS9121" # ERR_StructLayoutCyclePrimaryConstructorParameter - Struct primary constructor parameter '{0}' of type '{1}' causes a cycle in the struct layout
  - "CS9122" # ERR_UnexpectedParameterList - Unexpected parameter list. Test: Interfaces can't have primary constructors.
+ - "CS9124"
+ - "CS9136"
+ - "CS9179"
 helpviewer_keywords:
  - "CS0514"
  - "CS0515"
@@ -81,7 +84,10 @@ helpviewer_keywords:
  - "CS9120"
  - "CS9121"
  - "CS9122"
-ms.date: 05/08/2023
+ - "CS9124"
+ - "CS9136"
+ - "CS9179"
+ms.date: 11/01/2023
 ---
 # Resolve errors and warnings in constructor declarations
 
@@ -127,12 +133,15 @@ class as well.*
 - [**CS9120**](#primary-constructor-syntax) - *Cannot return primary constructor parameter by reference.*
 - [**CS9121**](#primary-constructor-syntax) - *Struct primary constructor parameter of type causes a cycle in the struct layout.*
 - [**CS9122**](#primary-constructor-syntax) - *Unexpected parameter list.*
+- [**CS9136**](#primary-constructor-syntax) - *Cannot use primary constructor parameter of type inside an instance member.*
 
 In addition, the following warnings are covered in this article:
 
 - [**CS0824**](#constructor-declarations) - *Constructor 'name' is marked external.*
 - [**CS9107**](#primary-constructor-syntax) - *Parameter is captured into the state of the enclosing type and its value is also passed to the base constructor. The value might be captured by the base class as well.*
 - [**CS9113**](#primary-constructor-syntax) - *Parameter is unread.*
+- [**CS9124**](#primary-constructor-syntax) - *Parameter is captured into the state of the enclosing type and its value is also used to initialize a field, property, or event.*
+- [**CS9179**](#primary-constructor-syntax) - *Primary constructor parameter is shadowed by a member from base*
 
 ## Static constructors
 
@@ -242,6 +251,8 @@ The compiler emits the following errors when a primary constructor violates one 
 - **CS9120** - *Cannot return primary constructor parameter by reference.*
 - **CS9121** - *Struct primary constructor parameter of type causes a cycle in the struct layout.*
 - **CS9122** - *Unexpected parameter list.*
+- **CS9124** - *Parameter is captured into the state of the enclosing type and its value is also used to initialize a field, property, or event.*
+- **CS9136** - *Cannot use primary constructor parameter of type inside an instance member.*
 
 Primary constructor parameters are in scope in the body of that type. The compiler can synthesize a field that stores the parameter for use in members or in field initializers. Because a primary constructor parameter may be copied to a field, the following restrictions apply:
 
@@ -264,7 +275,9 @@ Readonly only struct types have the following extra restrictions on primary cons
 
 In all these cases, the restrictions on primary constructor parameters are consistent with restrictions on data fields in those types. The restrictions are because a primary constructor parameter may be transformed into a synthesized field in the type. Therefore primary constructor parameters must follow the rules that apply to that synthesized field.
 
-The two warnings provide guidance on captured primary constructor parameters.
+The warnings provide guidance on captured or shadowed primary constructor parameters.
 
 - **CS9107** - *Parameter is captured into the state of the enclosing type and its value is also passed to the base constructor. The value might be captured by the base class as well.* This warning indicates that your code may be allocated two copies of a primary constructor parameter. Because the parameter is passed to the base class, the base class likely uses it. Because the derived class accesses it, it may have a second copy of the same parameter. That extra storage may not be intended.
 - **CS9113** - *Parameter is unread.* This warning indicates that your class never references the primary constructor, even to pass it to the base primary constructor. It likely isn't needed.
+- **CS9124** - *Parameter is captured into the state of the enclosing type and its value is also used to initialize a field, property, or event.* This warning indicates that the constructor parameter of a nested type is also captured by the enclosing type. The parameter is likely stored twice.
+- **CS9179** - *Primary constructor parameter is shadowed by a member from base*

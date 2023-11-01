@@ -27,6 +27,10 @@ f1_keywords:
   - "CS9159"
   - "CS9160"
   - "CS9161"
+  - "CS9177"
+  - "CS9178"
+  - "CS9206"
+  - "CS9207"
 helpviewer_keywords:
   - "CS9137"
   - "CS9138"
@@ -53,7 +57,11 @@ helpviewer_keywords:
   - "CS9159"
   - "CS9160"
   - "CS9161"
-ms.date: 06/28/2023
+  - "CS9177"
+  - "CS9178"
+  - "CS9206"
+  - "CS9207"
+ms.date: 11/01/2023
 ---
 # Errors and warnings associated with source generators and interceptors
 
@@ -81,6 +89,10 @@ The following errors may be generated when source generators or interceptors are
 - [**CS9157**](#incorrect-mapping): *Line and character numbers provided to `InterceptsLocationAttribute` must be positive.*
 - [**CS9160**](#other-failures): *A nameof operator cannot be intercepted.*
 - [**CS9161**](#other-failures): *An interceptor cannot be marked with `UnmanagedCallersOnlyAttribute`.*
+- [**CS9177**](#signature-mismatch): *Interceptor must be non-generic or have matching arity.*
+- [**CS9178**](#signature-mismatch): *Method must be non-generic to match*
+- [**CS9206**](#other-failures): *An interceptor cannot be declared in the global namespace.*
+- [**CS9207**](#other-failures): *Cannot intercept because method is not an invocation of an ordinary member method.*
 
 The following warnings may be generated when source generators or interceptors are loaded during a compilation:
 
@@ -109,6 +121,8 @@ The following errors indicate a mismatch between the interceptor method and the 
 - **CS9149**: *Interceptor must not have a `this` parameter because method does not have a `this` parameter.*
 - **CS9155**: *Cannot intercept call with `M` because it is not accessible within `V`.*
 - **CS9156**: *Cannot intercept call to `M` with `V` because of a difference in 'scoped' modifiers or `[UnscopedRef]` attributes.*
+- **CS9177**]: *Interceptor must be non-generic or have matching arity.*
+- **CS9178**: *Method must be non-generic to match*
 
 In addition, the following warnings indicate a mismatch in the signatures of the interceptor and the interceptable method:
 
@@ -121,6 +135,7 @@ The interceptor method must be compatible with the interceptable method. You mus
 - Instance methods can intercept instance methods, not static methods. Similarly, static methods can only intercept static methods, not instance methods.
 - The method signatures for the interceptor and the interceptable method must match: They must have the same parameters with the same modifiers in the same order. The return types must also match.
 - The ref safe contexts must match. In other words, corresponding `ref` parameters must be either `scoped` or not `scoped`.
+- They methods must both be non-generic, or both must have the same number of type parameters.
 
 ## Incorrect mapping
 
@@ -149,11 +164,15 @@ These errors indicate other limitations for interceptors:
 - **CS9153**: *The indicated call is intercepted multiple times.*
 - **CS9160**: *A nameof operator cannot be intercepted.*
 - **CS9161**: *An interceptor cannot be marked with `UnmanagedCallersOnlyAttribute`.*
+- **CS9206**: *An interceptor cannot be declared in the global namespace.*
+- **CS9207**: *Cannot intercept because method is not an invocation of an ordinary member method.*
 
 These errors indicate that your interceptor method violates one of the rules for interceptors:
 
 - Interceptors can't be generic methods, or members of generic classes.
 - Interceptors must be ordinary members. They can't be operators, instance or static constructors, or finalizers.
+- Interceptable methods must be ordinary members. They can't be operators, instance or static constructors, or finalizers, nor delegate invocations.
 - Interceptable methods that are never invoked can't be intercepted.
 - Interceptable methods can be intercepted at most once.
 - Interceptors can't be methods limited to unmanaged callers.
+- Interceptors must be contained in a namespace.

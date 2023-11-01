@@ -616,6 +616,10 @@ f1_keywords:
   - "CS9095"
   - "CS9096"
   - "CS9097"
+  # C# 12 errors begin here
+  - "CS9123"
+  - "CS9125"
+  - "CS9205"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ms.assetid: 48320e4a-6e17-45a6-9966-88c6ec89bd2f

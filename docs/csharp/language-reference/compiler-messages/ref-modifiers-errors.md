@@ -2,7 +2,6 @@
 title: Errors and warnings associated with reference parameter modifiers
 description: The compiler issues these errors and warnings when you use the reference parameter modifiers incorrectly. They indicate a mismatch between the modifier on the parameter, the argument, or the use of the parameter in the method.
 f1_keywords:
-  - "CS9190"
   - "CS0192"
   - "CS0199"
   - "CS0206"
@@ -42,14 +41,6 @@ f1_keywords:
   - "CS9077"
   - "CS9078"
   - "CS9079"
-  - "CS9096"
-  - "CS9109"
-  - "CS9110"
-  - "CS9116"
-  - "CS9119"
-  - "CS9130"
-  - "CS9190"
-  - "CS9199"
   - "CS9085"
   - "CS9086"
   - "CS9087"
@@ -59,8 +50,16 @@ f1_keywords:
   - "CS9093"
   - "CS9094"
   - "CS9095"
+  - "CS9096"
   - "CS9097"
-  - "CS9184"
+  - "CS9101"
+  - "CS9102"
+  - "CS9104"
+  - "CS9109"
+  - "CS9110"
+  - "CS9116"
+  - "CS9119"
+  - "CS9190"
   - "CS9191"
   - "CS9192"
   - "CS9193"
@@ -68,10 +67,10 @@ f1_keywords:
   - "CS9196"
   - "CS9197"
   - "CS9198"
+  - "CS9199"
   - "CS9200"
   - "CS9201"
 helpviewer_keywords:
-  - "CS9190"
   - "CS0192"
   - "CS0199"
   - "CS0206"
@@ -111,14 +110,6 @@ helpviewer_keywords:
   - "CS9077"
   - "CS9078"
   - "CS9079"
-  - "CS9096"
-  - "CS9109"
-  - "CS9110"
-  - "CS9116"
-  - "CS9119"
-  - "CS9130"
-  - "CS9190"
-  - "CS9199"
   - "CS9085"
   - "CS9086"
   - "CS9087"
@@ -128,8 +119,16 @@ helpviewer_keywords:
   - "CS9093"
   - "CS9094"
   - "CS9095"
+  - "CS9096"
   - "CS9097"
-  - "CS9184"
+  - "CS9101"
+  - "CS9102"
+  - "CS9104"
+  - "CS9109"
+  - "CS9110"
+  - "CS9116"
+  - "CS9119"
+  - "CS9190"
   - "CS9191"
   - "CS9192"
   - "CS9193"
@@ -137,6 +136,7 @@ helpviewer_keywords:
   - "CS9196"
   - "CS9197"
   - "CS9198"
+  - "CS9199"
   - "CS9200"
   - "CS9201"
 ms.date: 10/24/2023
@@ -188,11 +188,13 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9078**](#ref-safety-violations) - *Cannot return by reference a member of parameter through a `ref` parameter; it can only be returned in a return statement*
 - [**CS9079**](#ref-safety-violations) - *Cannot ref-assign because source can only escape the current method through a return statement.*
 - [**CS9096**](#ref-safety-violations) - *Cannot ref-assign because source has a wider value escape scope than destination allowing assignment through source of values with narrower escapes scopes than destination.*
+- [**CS9101**](#unscoped-ref-restrictions) - *UnscopedRefAttribute can only be applied to struct instance methods and properties, and cannot be applied to constructors or init-only members.*
+- [**CS9102**](#unscoped-ref-restrictions) - *UnscopedRefAttribute cannot be applied to an interface implementation.*
+- [**CS9104**](#reference-variable-restrictions) - *A using statement resource of type cannot be used in async methods or async lambda expressions.*
 - [**CS9109**](#ref-safety-violations) - *Cannot use `ref`, `out`, or `in` primary constructor parameter inside an instance member*
 - [**CS9110**](#ref-safety-violations) - *Cannot use primary constructor parameter that has ref-like type inside an instance member*
 - [**CS9116**](#writable-reference-variables-require-a-writable-referent) - *A primary constructor parameter of a readonly type cannot be used as a `ref` or `out` value (except in init-only setter of the type or a variable initializer)*
 - [**CS9119**](#writable-reference-variables-require-a-writable-referent) - *Members of primary constructor parameter of a readonly type cannot be used as a `ref` or `out` value (except in init-only setter of the type or a variable initializer)*
-- [**CS9130**](#incorrect-syntax) - *Using alias cannot be a '`ref`' type.*
 - [**CS9190**](#incorrect-syntax) - *`readonly` modifier must be specified after `ref`.*
 - [**CS9199**](#reference-variable-restrictions) - *A `ref readonly` parameter cannot have the Out attribute.*
 
@@ -208,7 +210,6 @@ The following warnings are generated when reference variables are used incorrect
 - [**CS9094**](#ref-safety-violations) - *This returns a parameter by reference through a `ref` parameter; but it can only safely be returned in a return statement*
 - [**CS9095**](#ref-safety-violations) - *This returns by reference a member of parameter through a `ref` parameter; but it can only safely be returned in a return statement*
 - [**CS9097**](#ref-safety-violations) - *This ref-assigns  but source has a wider value escape scope than destination allowing assignment through destination of values with narrower escapes scopes than source.*
-- [**CS9184**](#reference-variable-restrictions) - *'Inline arrays' language feature is not supported for inline array types with element field which is either a '`ref`' field, or has type that is not valid as a type argument.*
 - [**CS9191**](#reference-variables-require-a-referent) - *The `ref` modifier for argument corresponding to `in` parameter is equivalent to `in`. Consider using `in` instead.*
 - [**CS9192**](#reference-variables-require-a-referent) - *Argument should be passed with `ref` or `in` keyword.*
 - [**CS9193**](#reference-variables-require-a-referent) - *Argument should be a variable because it is passed to a `ref readonly` parameter*
@@ -235,7 +236,6 @@ These errors indicate that you're using incorrect syntax regarding reference var
 
 - **CS8373** - *The left-hand side of a `ref` assignment must be a ref variable.*
 - **CS8388** - *An `out` variable cannot be declared as a ref local.*
-- **CS9130** - *Using alias cannot be a '`ref`' type.*
 - **CS9190** - *`readonly` modifier must be specified after `ref`.*
 
 You can correct the error with one of these changes:
@@ -243,7 +243,6 @@ You can correct the error with one of these changes:
 - The left operand of an `= ref` operator must be a reference variable. For more information on the correct syntax, see [reference variables](../statements/declarations.md#reference-variables).
 - The parameter modifier `ref readonly` must be in that order. `readonly ref` is not a legal parameter modifier. Switch the order of the words.
 - A local variable can't be declared as `out`. To declare a local reference variable, use `ref`.
-- A `using` alias can't be a `ref` type. You must remove that alias.
 
 ## Reference variable restrictions
 
@@ -263,11 +262,11 @@ The following errors indicate that a reference variable can't be used where you 
 - **CS8338** - *The first '`in`' or '`ref readonly`' parameter of the extension method must be a concrete (non-generic) value type.*
 - **CS8977** - *Cannot use '`ref`', '`in`', or '`out`' in the signature of a method attributed with 'UnmanagedCallersOnly'.*
 - **CS9072** - *A deconstruction variable cannot be declared as a ref local*
+- **CS9104** - *A `using` statement resource of type cannot be used in async methods or async lambda expressions.*
 - **CS9199** - *A `ref readonly` parameter cannot have the Out attribute.*
 
 The following warnings indicate that a reference variable shouldn't be used, and might be unsafe:
 
-- **CS9184** - *'Inline arrays' language feature is not supported for inline array types with element field which is either a '`ref`' field, or has type that is not valid as a type argument.*
 - **CS9196** - *Reference kind modifier of parameter doesn't match the corresponding parameter in overridden or implemented member.*
 - **CS9197** - *Reference kind modifier of parameter doesn't match the corresponding parameter in hidden member.*
 - **CS9198** - *Reference kind modifier of parameter doesn't match the corresponding parameter in target.*
@@ -281,12 +280,22 @@ To fix the error, remove the reference variable where it isn't allowed:
 - Remove the `ref` modifier from the first parameter of a [extension method](../../programming-guide/classes-and-structs/extension-methods.md) where that type isn't a value type or a generic type constrained as a value type.
 - Either both or neither [conditional operator expressions] must be `ref` variables. Either remove `ref` from one expression, or add it to the other. If it's a `ref` conditional expression, both expressions must be the same type.
 - `ref` and `out` parameters can't have [default values](../../programming-guide/classes-and-structs/named-and-optional-arguments.md). Either remove the `ref` or `out` modifier, or remove the default value.
+- You can't put reference variables in a `using` statement in `async` methods lambda expressions.
 - The range variable in a [LINQ query expression](../../linq/query-expression-basics.md) can't be passed by reference.
 - You can't deconstruct an object into reference variables. Replace the reference variables with value variables.
 - You can't implement multiple interfaces where method overloads differ only on `ref` and `out`. For example, one interface declares `void M(ref int i)` and another interface declares `void M(out int i)`. A class can't implement both interfaces because the methods aren't distinguishable. You can only implement one of those interfaces.
 - Methods attributed with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute?displayProperty=nameWithType> can't use reference parameters.
 - A Windows runtime event can't be passed as a reference variable.
 - A `ref readonly` parameter can't have the <xref:System.Runtime.InteropServices.OutAttribute?displayProperty=nameWithType> applied to it in remoting API.
+
+## `unscoped ref` restrictions
+
+The `unscoped` qualifier on `ref` parameters isn't allowed in some locations:
+
+- **CS9101** - *UnscopedRefAttribute can only be applied to struct instance methods and properties, and cannot be applied to constructors or  or init-only members.*
+- **CS9102** - *UnscopedRefAttribute cannot be applied to an interface implementation.*
+
+You must remove the `unscoped` modifier on the parameter declaration that caused the error.
 
 ## Reference variables require a referent
 

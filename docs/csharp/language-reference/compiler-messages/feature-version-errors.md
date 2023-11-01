@@ -43,11 +43,14 @@ f1_keywords:
   - "CS9017" # WRN_UseDefViolationFieldUnsupportedVersion  Use of possibly unassigned field
   - "CS8967" # ERR_NewlinesAreNotAllowedInsideANonVerbatimInterpolatedString  Newlines inside a non-verbatim interpolated string are not supported in C#
   - "CS9064"
+  - "CS9103"
   - "CS9171"
   - "CS8058"
   - "CS8305"
   - "CS9204"
   - "CS9194"
+  - "CS9202"
+  - "CS9211"
 helpviewer_keywords:
   - "CS0171"
   - "CS0188"
@@ -90,12 +93,15 @@ helpviewer_keywords:
   - "CS9017"
   - "CS8967"
   - "CS9064"
+  - "CS9103"
   - "CS9171"
   - "CS8058"
   - "CS8305"
   - "CS9204"
   - "CS9194"
-ms.date: 10/26/2023
+  - "CS9202"
+  - "CS9211"
+ms.date: 11/01/2023
 ---
 # Resolve warnings related to language features and versions
 
@@ -129,8 +135,11 @@ That's be design. The text closely matches the text of the compiler error / warn
 - **CS9016** - *Warning: Use of possibly unassigned property. Upgrade to auto-default the property.*
 - **CS9017** - *Warning: Use of possibly unassigned field. Upgrade to auto-default the field.*
 - **CS9064** - *Target runtime doesn't support ref fields.*
+- **CS9103** - *Definition in a module with an unrecognized RefSafetyRulesAttribute version, expecting '11'.*
 - **CS9171** - *Target runtime doesn't support inline array types.*
 - **CS9194** - *Argument may not be passed with the `ref` keyword. To pass `ref` arguments to `in` parameters, upgrade to language version 12 or greater.*
+- **CS9202** - *Feature is not available in C# 12.0. Please use newer language version*
+- **CS9211** - *The diagnosticId argument to the 'Experimental' attribute must be a valid identifier.*
 
 In addition, the following errors and warnings relate to struct initialization changes in recent versions:
 
@@ -170,6 +179,8 @@ The diagnostics for experimental features can be disabled to use the experimenta
 
 > [!WARNING]
 > Experimental features are subject to changes. The APIs may change, or they may be removed in future updates. Including experimental features is a way for library authors to get feedback on ideas and concepts for future development. Use extreme caution when using any feature marked as experimental.
+
+You can also declare your own experimental features using the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=fullName>. The compiler emits *CS9211* if the identifier used for the experimental feature is not a valid identifier.
 
 ## Breaking changes on struct initialization
 

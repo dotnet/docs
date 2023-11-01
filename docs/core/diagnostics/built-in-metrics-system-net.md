@@ -46,7 +46,7 @@ Most errors when doing a DNS lookup throw a <xref:System.Net.Sockets.SocketExcep
 
 Socket exceptions with any other `SocketError` value are reported as `System.Net.Sockets.SocketException`.
 
-When using OpenTelemetry, the default buckets for this metric are set to { 0, 0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10 }.
+When using OpenTelemetry, the default buckets for this metric are set to [ 0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10 ].
 
 Available starting in: .NET 8
 
@@ -87,7 +87,7 @@ Available starting in: .NET 8
 
 This metric is only captured when <xref:System.Net.Http.HttpClient> is configured to use the default <xref:System.Net.Http.SocketsHttpHandler>.
 
-As this metric is tracking the connection duration, and ideally http connections are used for multiple requests, the buckets should be longer than those used for request durations. For example, using {0, 0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, 30, 60, 120, 300} provides an upper bucket of 5 mins.
+As this metric is tracking the connection duration, and ideally http connections are used for multiple requests, the buckets should be longer than those used for request durations. For example, using [ 0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, 30, 60, 120, 300 ] provides an upper bucket of 5 mins.
 
 Available starting in: .NET 8
 
@@ -109,7 +109,7 @@ Available starting in: .NET 8
 
 HTTP client request duration measures the time the underlying client handler takes to complete the request. Completing the request includes the time up to reading response headers from the network stream. It doesn't include the time spent reading the response body.
 
-When using OpenTelemetry, the default buckets for this metric are set to { 0, 0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10 }.
+When using OpenTelemetry, the default buckets for this metric are set to [ 0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10 ].
 
 Available starting in: .NET 8
 

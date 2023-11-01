@@ -33,7 +33,7 @@ var answer = x switch
 }
 ```
 
-The compiler generates CS9135 when the pattern isn't a constant value. You can't create pattern matching expressions to match against a variable. 
+The compiler generates CS9135 when the pattern isn't a constant value. You can't create pattern matching expressions to match against a variable.
 
 The following code snippets generate CS8509:
 

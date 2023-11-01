@@ -139,6 +139,17 @@ Project file:
 | - | - | - |
 | **Environment variable** | `COMPlus_ReadyToRun` or `DOTNET_ReadyToRun` | `1` - enabled<br/>`0` - disabled |
 
+## Debuggability
+
+- Configures whether the .NET Core runtime generates optimized code for images that were built in release configuration.
+- If you omit this setting, .NET generates optimized code. This is equivalent to setting the value to `0`.
+- Use this setting to make it easier to debug code generated from images built in release configuration.
+- See also [JIT Optimization and Debugging](/visualstudio/debugger/jit-optimization-and-debugging) which describes the equivalent setting in Visual Studio.
+
+| | Setting name | Values |
+| - | - | - |
+| **Environment variable** | `COMPlus_JITMinOpts` or `DOTNET_JITMinOpts` | `1` - enabled<br/>`0` - disabled |
+
 ## Profile-guided optimization
 
 This setting enables dynamic or tiered profile-guided optimization (PGO) in .NET 6 and later versions.

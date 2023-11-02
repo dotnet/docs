@@ -1,7 +1,7 @@
 ---
 title: F# code formatting guidelines
 description: Learn guidelines for formatting F# code.
-ms.date: 09/19/2021
+ms.date: 11/01/2023
 ---
 # F# code formatting guidelines
 
@@ -1299,6 +1299,14 @@ let comparer = {
             reversed.CompareTo(rev s2)
 }
 ```
+
+Empty type definitions may be formatted on one line:
+
+```fsharp
+type AnEmptyType = class end
+```
+
+Regardless of the chosen page width, `= class end` should always be on the same line.
 
 ### Formatting index/slice expressions
 

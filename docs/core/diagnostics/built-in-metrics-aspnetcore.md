@@ -53,7 +53,7 @@ see [here](available-counters.md).
 | `aspnetcore.header_parsing.header.name` | string | The header name. | `Content-Type` | Always |
 | `error.type` | string | The error message. | `Unable to parse media type value.` | Always |
 
-Available starting in: .NET extensions 8.0.
+Available starting in: .NET 8.0.
 
 ### Instrument: `aspnetcore.header_parsing.cache_accesses`
 
@@ -75,7 +75,7 @@ The metric is emitted only for HTTP request header parsers that support caching.
 | `Hit` | The header's value was found in the cache. |
 | `Miss` | The header's value wasn't found in the cache. |
 
-Available starting in: .NET extensions 8.0.
+Available starting in: .NET 8.0.
 
 ## Meter: `Microsoft.AspNetCore.Hosting`
 

@@ -317,7 +317,7 @@ summarize the distribution differently or offer more configuration options.
 - Callbacks for all observable instruments are invoked in sequence, so any callback that takes a long time can delay or prevent all metrics from being collected. Favor
   quickly reading a cached value, returning no measurements, or throwing an exception over performing any potentially long-running or blocking operation.
 
-- The ObservableCounter, ObservableUpDownCounter, and ObservableGauge callbacks occur on a thread that's not usually synchronized with the code that updates the values. It's your responsibility to either synchronize memory access or accept the inconsistent values that can result from using unsynchronized access. Common approaches to synchronize access are to use a lock or call <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> and <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType>.
+- The ObservableCounter, ObservableUpDownCounter, and ObservableGauge callbacks occur on a thread that's not usually synchronized with the code that updates the values. It's your responsibility to either synchronize memory access or accept the inconsistent values that can result from using unsynchronized access. Common approaches to synchronize access are to use a lock or call <xref:System.Threading.Volatile.Read%2A> and <xref:System.Threading.Volatile.Write%2A>.
 
 - The <xref:System.Diagnostics.Metrics.Meter.CreateObservableGauge%2A> and <xref:System.Diagnostics.Metrics.Meter.CreateObservableCounter%2A> functions do return an
   instrument object, but in most cases you don't need to save it in a variable because no further interaction with the object is needed. Assigning it to a static variable

@@ -7,8 +7,8 @@ ms.date: 11/02/2023
 
 # .NET extensions metrics
 
-This article describes the metrics built-in for diagnostic .NET extensions libraries produced using the
-<xref:System.Diagnostics.Metrics?displayProperty=nameWithType> API. For a listing of metrics based on the older [EventCounters](event-counters.md) API, see [here](available-counters.md).
+This article describes the built-in metrics for diagnostic .NET extensions libraries that are produced using the
+<xref:System.Diagnostics.Metrics?displayProperty=nameWithType> API. For a listing of metrics based on the older [EventCounters](event-counters.md) API, see [Available counters](available-counters.md).
 
 - [Meter: `Microsoft.Extensions.Diagnostics.HealthChecks`](#meter-microsoftextensionsdiagnosticshealthchecks)
   - [Instrument: `dotnet.health_check.reports`](#instrument-dotnethealth_checkreports)
@@ -38,7 +38,7 @@ This article describes the metrics built-in for diagnostic .NET extensions libra
 | `Healthy` | An application was healthy. |
 | `Unhealthy` | An application was unhealthy. |
 
-Available starting in: .NET extensions 8.0.
+Available starting in: .NET 8.0.
 
 ### Instrument: `dotnet.health_check.unhealthy_checks`
 
@@ -59,7 +59,7 @@ Available starting in: .NET extensions 8.0.
 | `Healthy` | An application was healthy. |
 | `Unhealthy` | An application was unhealthy. |
 
-Available starting in: .NET extensions 8.0.
+Available starting in: .NET 8.0.
 
 ## Meter: `Microsoft.Extensions.Diagnostics.ResourceMonitoring`
 
@@ -74,7 +74,7 @@ The instrument is available only on Linux.
 | ---- | --------------- | ----------- | ----------- |
 | `process.cpu.utilization` | ObservableGauge | `1` | The CPU consumption of the running application in range `[0, 1]`. |
 
-Available starting in: .NET extensions 8.0.
+Available starting in: .NET 8.0.
 
 ### Instrument: `dotnet.process.memory.virtual.utilization`
 
@@ -84,7 +84,7 @@ The instrument is available only on Linux.
 | ---- | --------------- | ----------- | ----------- |
 | `dotnet.process.memory.virtual.utilization` | ObservableGauge | `1` | The memory consumption of the running application in range `[0, 1]`. |
 
-Available starting in: .NET extensions 8.0.
+Available starting in: .NET 8.0.
 
 ### Instrument: `system.network.connections`
 
@@ -123,4 +123,4 @@ The instrument is available only on Windows.
 | `syn_sent` | A connection has sent a SYN packet. |
 | `time_wait` | A connection is in the time wait state. |
 
-Available starting in: .NET extensions 8.0.
+Available starting in: .NET 8.0.

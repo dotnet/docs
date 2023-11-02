@@ -1026,18 +1026,17 @@ The default console app template now includes support for AOT out-of-the-box. To
 - `tvos`
 - `tvossimulator`
 
-Preliminary testing shows that app size on disk decreases by about 40% for .NET iOS apps that use Native AOT instead of Mono. App size on disk for .NET MAUI iOS apps *increases* by about 25%. However, since the .NET 8 support is only the first step for the feature as a whole, we urge you not to draw conclusions about performance at this point.
+Preliminary testing shows that app size on disk decreases by about 35% for .NET iOS apps that use Native AOT instead of Mono. App size on disk for .NET MAUI iOS apps decreases up to 50%. Additionally, the startup time is also faster. .NET iOS apps have about 28% faster startup time, while .NET MAUI iOS apps have about 50% better startup performance compared to Mono. The .NET 8 support is experimental and only the first step for the feature as a whole. For more information, see the [.NET 8 Performance Improvements in .NET MAUI blog post](https://devblogs.microsoft.com/dotnet/dotnet-8-performance-improvements-in-dotnet-maui/).
 
-Native AOT support is available as an opt-in feature intended for app deployment; Mono is still the default runtime for app development and deployment. To build and run a .NET MAUI application with Native AOT on an iOS device, use `dotnet workload install maui` to install the .NET MAUI workload and `dotnet new maui -n HelloMaui` to create the app. Then, set the MSBuild properties `PublishAot` and `PublishAotUsingRuntimePack` to `true` in the project file.
+Native AOT support is available as an opt-in feature intended for app deployment; Mono is still the default runtime for app development and deployment. To build and run a .NET MAUI application with Native AOT on an iOS device, use `dotnet workload install maui` to install the .NET MAUI workload and `dotnet new maui -n HelloMaui` to create the app. Then, set the MSBuild property `PublishAot` to `true` in the project file.
 
 ```xml
 <PropertyGroup>
   <PublishAot>true</PublishAot>
-  <PublishAotUsingRuntimePack>true</PublishAotUsingRuntimePack>
 </PropertyGroup>
 ```
 
-When you set these properties and run `dotnet publish` as shown in the following example, the app will be deployed by using Native AOT.
+When you set the required property and run `dotnet publish` as shown in the following example, the app will be deployed by using Native AOT.
 
 ```dotnetcli
 dotnet publish -f net8.0-ios -c Release -r ios-arm64  /t:Run
@@ -1047,10 +1046,9 @@ dotnet publish -f net8.0-ios -c Release -r ios-arm64  /t:Run
 
 Not all iOS features are compatible with Native AOT. Similarly, not all libraries commonly used in iOS are compatible with NativeAOT. And in addition to the existing [limitations of Native AOT deployment](../deploying/native-aot/index.md#limitations-of-native-aot-deployment), the following list shows some of the other limitations when targeting iOS-like platforms:
 
-- Installation and app deployment using Visual Studio is untested.
 - Using Native AOT is only enabled during app deployment (`dotnet publish`).
-- <xref:System.Linq.Expressions> library functionality isn't fully supported.
 - Managed code debugging is only supported with Mono.
+- Compatibility with the .NET MAUI framework is limited.
 
 ## Performance improvements
 
@@ -1142,37 +1140,7 @@ bin\Release\net8.0\
 
 .NET 8 introduces an option to simplify the output path and folder structure for build outputs. Previously, .NET apps produced a deep and complex set of output paths for different build artifacts. The new, simplified output path structure gathers all build outputs into a common location, which makes it easier for tooling to anticipate.
 
-To opt into the new output path format, use one of the following properties in your *Directory.Build.props* file:
-
-- Add an `ArtifactsPath` property with a value of `$(MSBuildThisFileDirectory)artifacts` (or whatever you want the folder location to be), OR
-- To use the default location, simply set the `UseArtifactsOutput` property to `true`.
-
-Alternatively, run `dotnet new buildprops --use-artifacts` and the template will generate the *Directory.Build.props* file for you:
-
-```xml
-<Project>
-  <PropertyGroup>
-    <ArtifactsPath>$(MSBuildThisFileDirectory)artifacts</ArtifactsPath>
-  </PropertyGroup>
-</Project>
-```
-
-By default, the common location is a folder named *artifacts* in the root of your repository rather than in each project folder. The folder structure under the root *artifacts* folder is as follows:
-
-```Directory
-📁 artifacts
-    └──📂 <Type of output>
-        └──📂 <Project name>
-            └──📂 <Pivot>
-```
-
-The following table shows the default values for each level in the folder structure. The values, as well as the default location, can be overridden using properties in the *Directory.build.props* file.
-
-| Folder level | Description |
-|--|--|
-| Type of output | Examples: `bin`, `obj`, `publish`, or `package` |
-| Project name | Separates output by each project. |
-| Pivot | Distinguishes between builds of a project for different configurations, target frameworks, and runtime identifiers. If multiple elements are needed, they're joined by an underscore (`_`). |
+For more information, see [Artifacts output layout](../sdk/artifacts-output.md).
 
 ### `dotnet workload clean` command
 

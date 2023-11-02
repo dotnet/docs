@@ -423,18 +423,17 @@ services.AddSingleton<IMessageWriter, QueueMessageWriter>("queue");
 
 The `key` isn't limited to `string`, it can be any `object` you want, as long as the type correctly implements `Equals`.
 
-In the constructor of the class that uses `IMessageWriter`, you can use the <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute> to specify the key of the service to resolve:
+In the constructor of the class that uses `IMessageWriter`, you add the <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute> to specify the key of the service to resolve:
 
-```csharp
 ```csharp
 public class ExampleService
 {
-    public ExampleService([FromKeyedServices("queue")] IMessageWriter writer)
+    public ExampleService(
+        [FromKeyedServices("queue")] IMessageWriter writer)
     {
-        // omitted for brevity
+        // Omitted for brevity...
     }
 }
-
 ```
 
 ## See also

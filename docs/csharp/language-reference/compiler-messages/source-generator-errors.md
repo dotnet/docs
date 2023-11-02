@@ -1,6 +1,6 @@
 ---
 title: Errors and warnings associated with source generators and interceptors
-description: You may see these errors and warnings when code is compiled with source generators and interceptors. They indicate some condition where the compiler can't run the source generator, or the generate code isn't compilable.
+description: You might see these errors and warnings when code is compiled with source generators and interceptors. They indicate some condition where the compiler can't run the source generator, or the generate code isn't compilable.
 f1_keywords:
   - "CS9137"
   - "CS9138"
@@ -61,11 +61,11 @@ helpviewer_keywords:
   - "CS9178"
   - "CS9206"
   - "CS9207"
-ms.date: 11/02/2023
+ms.date: 11/02 /2023
 ---
 # Errors and warnings associated with source generators and interceptors
 
-The following errors may be generated when source generators or interceptors are loaded during a compilation:
+The following errors are generated when source generators or interceptors are loaded during a compilation:
 
 - [**CS9137**](#interceptors-are-experimental): *The 'interceptors' experimental feature is not enabled. Add `<Features>InterceptorsPreview<Features>` to your project.*
 - [**CS9138**](#other-failures): *Method cannot be used as an interceptor because it or its containing type has type parameters.*
@@ -94,7 +94,7 @@ The following errors may be generated when source generators or interceptors are
 - [**CS9206**](#other-failures): *An interceptor cannot be declared in the global namespace.*
 - [**CS9207**](#other-failures): *Cannot intercept because method is not an invocation of an ordinary member method.*
 
-The following warnings may be generated when source generators or interceptors are loaded during a compilation:
+The following warnings are  generated when source generators or interceptors are loaded during a compilation:
 
 - [**CS9154**](#signature-mismatch): *Intercepting a call to `M` with interceptor `V`, but the signatures do not match.*
 - [**CS9158**](#signature-mismatch): *Nullability of reference types in return type doesn't match interceptable method.*
@@ -104,13 +104,13 @@ These errors and warnings follow these themes:
 
 ## Interceptors are experimental
 
-This error indicates you haven't enabled the experimental feature.
+This error indicates you must enable the experimental feature.
 
 - **CS9137**: *The 'interceptors' experimental feature is not enabled. Add `<Features>InterceptorsPreview<Features>` to your project.*
 
-In C# 12, interceptors are experimental. Interceptors may be subject to breaking changes or removal in a future release. Therefore, it is not recommended for production or released applications.
+In C# 12, interceptors are experimental. Interceptors are subject to breaking changes or removal in a future release. Therefore, it is not recommended for production or released applications.
 
-In order to use interceptors, you'll need to set the `<Features>InterceptorsPreview<Features>` element in your project file. Without this flag, interceptors are disabled, even when other C# 12 features are enabled.
+In order to use interceptors, you must set the `<Features>InterceptorsPreview<Features>` element in your project file. Without this flag, interceptors are disabled, even when other C# 12 features are enabled.
 
 ## Signature mismatch
 
@@ -139,7 +139,7 @@ The interceptor method must be compatible with the interceptable method. You mus
 
 ## Incorrect mapping
 
-Interceptors require a source mapping that maps the interceptable method and the interceptor method. The following error indicate an issue with the mapping:
+Interceptors require a source mapping that maps the interceptable method and the interceptor method. The following errors indicate an issue with the mapping:
 
 - **CS9139**: *Cannot intercept: compilation does not contain a file with path.*
 - **CS9140**: *Cannot intercept: compilation does not contain a file with path. Did you mean to use a different path?*

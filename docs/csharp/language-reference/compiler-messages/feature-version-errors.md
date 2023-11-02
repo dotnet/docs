@@ -110,44 +110,44 @@ This article covers the following compiler warnings:
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's be design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
-- **CS8022, CS8023, CS8024, CS8025, CS8026, CS8059, CS8107, CS8302, CS8320, CS8370, CS8400, CS8773, CS8936, CS9058** - *Feature is not available. Use newer language version.*
-- **CS8058** - *Feature is experimental.*
-- **CS8192** - *Provided language version is unsupported or invalid*
-- **CS8303** - *Specified language version cannot have leading zeroes*
-- **CS8304** - *Compiler version is less than language version*
-- **CS1738** - *Named argument specifications must appear after all fixed arguments have been specified.*
-- **CS8306** - *Tuple element name is inferred.*
-- **CS8314** - *An expression of type cannot be handled by a pattern of type*
-- **CS8371** - *Field-targeted attributes on auto-properties are not supported in language version*
-- **CS8401** - *To use `@$` instead of `$@` for an interpolated verbatim string, use newer language version.*
-- **CS8511** - *An expression of type cannot be handled by a pattern of type.*
-- **CS8627** - *A nullable type parameter must be known to be a value type or non-nullable reference type*
-- **CS8630** - *Invalid nullable options. Use newer language version*
-- **CS8652** - *The modifier is not valid for this item.*
-- **CS8704** - *Type does not implement interface member. It cannot implicitly implement a non-public member.*
-- **CS8706** - *Type cannot implement interface member because a feature is not available in this version.*
-- **CS8904** - *Invalid variance: The type parameter must be valid.*
-- **CS8912** - *Inheriting from a record with a sealed 'Object.ToString' is not supported.*
-- **CS8957** - *Conditional expression is not valid in language version because a common type was not found between types.*
-- **CS8967** - *Newlines inside a non-verbatim interpolated string are not supported in C#*
-- **CS9014** - *Error: Use of possibly unassigned property. Upgrade to auto-default the property.*
-- **CS9015** - *Error: Use of possibly unassigned field. Upgrade to auto-default the field.*
-- **CS9016** - *Warning: Use of possibly unassigned property. Upgrade to auto-default the property.*
-- **CS9017** - *Warning: Use of possibly unassigned field. Upgrade to auto-default the field.*
-- **CS9064** - *Target runtime doesn't support ref fields.*
-- **CS9103** - *Definition in a module with an unrecognized RefSafetyRulesAttribute version, expecting '11'.*
-- **CS9171** - *Target runtime doesn't support inline array types.*
-- **CS9194** - *Argument may not be passed with the `ref` keyword. To pass `ref` arguments to `in` parameters, upgrade to language version 12 or greater.*
-- **CS9202** - *Feature is not available in C# 12.0. Please use newer language version*
-- **CS9211** - *The diagnosticId argument to the 'Experimental' attribute must be a valid identifier.*
+- **CS8022, CS8023, CS8024, CS8025, CS8026, CS8059, CS8107, CS8302, CS8320, CS8370, CS8400, CS8773, CS8936, CS9058**: *Feature is not available. Use newer language version.*
+- **CS8058**: *Feature is experimental.*
+- **CS8192**: *Provided language version is unsupported or invalid*
+- **CS8303**: *Specified language version cannot have leading zeroes*
+- **CS8304**: *Compiler version is less than language version*
+- **CS1738**: *Named argument specifications must appear after all fixed arguments have been specified.*
+- **CS8306**: *Tuple element name is inferred.*
+- **CS8314**: *An expression of type cannot be handled by a pattern of type*
+- **CS8371**: *Field-targeted attributes on auto-properties are not supported in language version*
+- **CS8401**: *To use `@$` instead of `$@` for an interpolated verbatim string, use newer language version.*
+- **CS8511**: *An expression of type cannot be handled by a pattern of type.*
+- **CS8627**: *A nullable type parameter must be known to be a value type or non-nullable reference type*
+- **CS8630**: *Invalid nullable options. Use newer language version*
+- **CS8652**: *The modifier is not valid for this item.*
+- **CS8704**: *Type does not implement interface member. It cannot implicitly implement a non-public member.*
+- **CS8706**: *Type cannot implement interface member because a feature is not available in this version.*
+- **CS8904**: *Invalid variance: The type parameter must be valid.*
+- **CS8912**: *Inheriting from a record with a sealed 'Object.ToString' is not supported.*
+- **CS8957**: *Conditional expression is not valid in language version because a common type was not found between types.*
+- **CS8967**: *Newlines inside a non-verbatim interpolated string are not supported in C#*
+- **CS9014**: *Error: Use of possibly unassigned property. Upgrade to auto-default the property.*
+- **CS9015**: *Error: Use of possibly unassigned field. Upgrade to auto-default the field.*
+- **CS9016**: *Warning: Use of possibly unassigned property. Upgrade to auto-default the property.*
+- **CS9017**: *Warning: Use of possibly unassigned field. Upgrade to auto-default the field.*
+- **CS9064**: *Target runtime doesn't support ref fields.*
+- **CS9103**: *Definition in a module with an unrecognized RefSafetyRulesAttribute version, expecting '11'.*
+- **CS9171**: *Target runtime doesn't support inline array types.*
+- **CS9194**: *Argument may not be passed with the `ref` keyword. To pass `ref` arguments to `in` parameters, upgrade to language version 12 or greater.*
+- **CS9202**: *Feature is not available in C# 12.0. Please use newer language version*
+- **CS9211**: *The diagnosticId argument to the 'Experimental' attribute must be a valid identifier.*
 
 In addition, the following errors and warnings relate to struct initialization changes in recent versions:
 
 - [**CS0171**, **CS8881**](#breaking-changes-on-struct-initialization): *Backing field for automatically implemented property 'name' must be fully assigned before control is returned to the caller.*
 - [**CS0188**, **CS8885**](#breaking-changes-on-struct-initialization): *The 'this' object cannot be used before all of its fields are assigned to*
 - [**CS0843**, **CS8880**](#breaking-changes-on-struct-initialization): *Backing field for automatically implemented property 'name' must be fully assigned before control is returned to the caller*
-- [**CS8305**](#enable-experimental-features) - *Feature is for evaluation purposes only and is subject to change or removal in future updates.*
-- [**CS9204**](#enable-experimental-features) - *Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.*
+- [**CS8305**](#enable-experimental-features): *Feature is for evaluation purposes only and is subject to change or removal in future updates.*
+- [**CS9204**](#enable-experimental-features): *Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.*
 
 The cause behind all these errors and warnings is that the compiler installed supports a newer version of C# than the version your project has selected. The C# compiler can conform to any previous version. You can validate syntax against an earlier version of C#, or because your project must support older libraries or runtimes.
 
@@ -190,7 +190,7 @@ All these errors and warnings help ensure that `struct` types are properly initi
 - **CS0188**, **CS8885**: *The 'this' object cannot be used before all of its fields are assigned to*
 - **CS0843**, **CS8880**: *Backing field for automatically implemented property 'name' must be fully assigned before control is returned to the caller*
 
-You can address this error by upgrading your language version to C# 11, when all fields are initialized by every `struct` constructor. If that's not a possible option, you must explicitly call the default constructor, as shown in the following example:
+You can address this error by upgrading your language version to C# 11, every `struct` constructor initializes all fields. If that's not a possible option, you must explicitly call the default constructor, as shown in the following example:
 
 ```csharp
 struct S

@@ -60,32 +60,32 @@ This article covers the following compiler errors:
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's be design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
-- [**CS0138**](#using-static-directive) - *Error: A using namespace directive can only be applied to namespaces; 'type' is a type not a namespace.*
-- [**CS0431**](#alias-qualifier) - *Error: Cannot use alias 'identifier' with `::` since the alias references a type. Use `.` instead*.
-- [**CS0432**](#alias-qualifier) - *Error: Alias 'identifier' not found.*
-- [**CS0576**](#alias-name-conflicts) - *Error: Namespace 'namespace' contains a definition conflicting with alias 'identifier'.*
-- [**CS0687**](#alias-qualifier) - *Error: The namespace alias qualifier `::` always resolves to a type or namespace so is illegal here. Consider using `.` instead.*
-- [**CS1529**](#using-directive) - *Error: A using clause must precede all other elements defined in the namespace except extern alias declarations.*
-- [**CS1537**](#alias-name-conflicts) - *Error: The using alias 'alias' appeared previously in this namespace.*
-- [**CS7000**](#alias-qualifier) - *Error: Unexpected use of an aliased name.*
-- [**CS7007**](#using-static-directive) - *Error: A `using static` directive can only be applied to types. Consider a `using namespace` directive instead*
-- [**CS8083**](#alias-qualifier) - *Error: An alias-qualified name is not an expression.*
-- [**CS8085**](#restrictions-on-using-aliases) - *Error: A 'using static' directive cannot be used to declare an alias.*
-- [**CS8914**](#global-using-directive) - *Error: A global using directive cannot be used in a namespace declaration.*
-- [**CS8915**](#global-using-directive) - *Error: A global using directive must precede all non-global using directives.*
-- [**CS9055**](#global-using-directive) - *Error: A file-local type cannot be used in a 'global using static' directive.*
-- [**CS9130**](#restrictions-on-using-aliases) - *Error: Using alias cannot be a `ref` type.*
-- [**CS9131**](#restrictions-on-using-aliases) - *Error: Only a using alias can be `unsafe`.*
-- [**CS9132**](#restrictions-on-using-aliases) - *Error: Using alias cannot be a nullable reference type.*
-- [**CS9133**](#using-static-directive) - *Error: `static` modifier must precede `unsafe` modifier.*
-- [**CS9162**](#using-static-directive) - *Type is not valid for 'using static'. Only a class, struct, interface, enum, delegate, or namespace can be used.*
+- [**CS0138**](#using-static-directive): *Error: A using namespace directive can only be applied to namespaces; 'type' is a type not a namespace.*
+- [**CS0431**](#alias-qualifier): *Error: Cannot use alias 'identifier' with `::` since the alias references a type. Use `.` instead*.
+- [**CS0432**](#alias-qualifier): *Error: Alias 'identifier' not found.*
+- [**CS0576**](#alias-name-conflicts): *Error: Namespace 'namespace' contains a definition conflicting with alias 'identifier'.*
+- [**CS0687**](#alias-qualifier): *Error: The namespace alias qualifier `::` always resolves to a type or namespace so is illegal here. Consider using `.` instead.*
+- [**CS1529**](#using-directive): *Error: A using clause must precede all other elements defined in the namespace except extern alias declarations.*
+- [**CS1537**](#alias-name-conflicts): *Error: The using alias 'alias' appeared previously in this namespace.*
+- [**CS7000**](#alias-qualifier): *Error: Unexpected use of an aliased name.*
+- [**CS7007**](#using-static-directive): *Error: A `using static` directive can only be applied to types. Consider a `using namespace` directive instead*
+- [**CS8083**](#alias-qualifier): *Error: An alias-qualified name is not an expression.*
+- [**CS8085**](#restrictions-on-using-aliases): *Error: A 'using static' directive cannot be used to declare an alias.*
+- [**CS8914**](#global-using-directive): *Error: A global using directive cannot be used in a namespace declaration.*
+- [**CS8915**](#global-using-directive): *Error: A global using directive must precede all non-global using directives.*
+- [**CS9055**](#global-using-directive): *Error: A file-local type cannot be used in a 'global using static' directive.*
+- [**CS9130**](#restrictions-on-using-aliases): *Error: Using alias cannot be a `ref` type.*
+- [**CS9131**](#restrictions-on-using-aliases): *Error: Only a using alias can be `unsafe`.*
+- [**CS9132**](#restrictions-on-using-aliases): *Error: Using alias cannot be a nullable reference type.*
+- [**CS9133**](#using-static-directive): *Error: `static` modifier must precede `unsafe` modifier.*
+- [**CS9162**](#using-static-directive): *Type is not valid for 'using static'. Only a class, struct, interface, enum, delegate, or namespace can be used.*
 
 And the following compiler warnings:
 
-- [**CS0105**](#using-directive) - *Warning: The using directive for 'namespace' appeared previously in this namespace.*
-- [**CS0440**](#alias-qualifier) - *Warning: Defining an alias named `global` is ill-advised since `global::` always references the global namespace and not an alias.*
-- [**CS8019**](#using-directive) - *Info: Unnecessary using directive.*
-- [**CS8933**](#using-directive) - *Info: The using directive appeared previously as global using.*
+- [**CS0105**](#using-directive): *Warning: The using directive for 'namespace' appeared previously in this namespace.*
+- [**CS0440**](#alias-qualifier): *Warning: Defining an alias named `global` is ill-advised since `global::` always references the global namespace and not an alias.*
+- [**CS8019**](#using-directive): *Info: Unnecessary using directive.*
+- [**CS8933**](#using-directive): *Info: The using directive appeared previously as global using.*
 
 These errors and warnings indicate you're `using` directive isn't formed correctly. The following sections cover these errors and how to correct them.
 
@@ -106,7 +106,7 @@ To fix this issue, move any `using` declarations to the top of the file or the t
 
 :::code language="csharp" source="./snippets/UsingDirectives/MyClass.cs" id="UsingExample":::
 
-The compiler produces warning **CS8933**, **CS0105** or diagnostic **CS8019** for a `using` directive that's duplicated in a `using` or `global using` directive. You can remove any duplicates.
+The compiler produces warning **CS8933**, **CS0105** or diagnostic **CS8019** for a duplicate `using` directive from a `using` or `global using` directive. You can remove any duplicates.
 
 Incorrectly combining a `using` directive with the `static`, `global`, or `unsafe` modifiers on a `using` directive are covered later in this article.
 

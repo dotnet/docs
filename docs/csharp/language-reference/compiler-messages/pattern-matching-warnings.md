@@ -15,12 +15,12 @@ ms.date: 11/02/2022
 
 The compiler generates the following errors for invalid pattern match expressions:
 
-- **CS9134** - *A switch expression arm does not begin with a 'case' keyword.*
-- **CS9135** - *A constant value of type is expected*
+- **CS9134**: *A switch expression arm does not begin with a 'case' keyword.*
+- **CS9135**: *A constant value of type is expected*
 
 The compiler generates the following warnings for incomplete pattern matching expressions:
 
-- **CS8509** - *The switch expression does not handle all possible values of its input type (it is not exhaustive). For example, the pattern '...' is not covered.*
+- **CS8509**: *The switch expression does not handle all possible values of its input type (it is not exhaustive). For example, the pattern '...' is not covered.*
 
 The compiler generates CS9134 to help you convert a switch statement to a switch expression. The `case` keyword isn't used in a switch expression. If you have the `case` keyword in a switch expression, it must be removed:
 
@@ -43,6 +43,6 @@ To address this warning, add switch arms that cover all possible input values. F
 
 :::code language="csharp" source="./snippets/pattern-matching-warnings/Switch.cs" id="SwitchAllPossibleValues":::
 
-The `_` pattern matches all remaining values. It's often used to match invalid values, as shown in the preceding example.
+The `_` pattern matches all remaining values. One scenario for the `_` pattern is matching invalid values, as shown in the preceding example.
 
 For more information, see [Switch](../statements/selection-statements.md#the-switch-statement).

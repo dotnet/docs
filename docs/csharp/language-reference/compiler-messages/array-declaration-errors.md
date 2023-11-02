@@ -74,40 +74,40 @@ This article covers the following compiler errors:
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
-- [**CS0022**](#invalid-array-element-access) - *Wrong number of indices inside [], expected 'number'*
-- [**CS0178**](#invalid-array-rank) - *Invalid rank specifier: expected '`,`' or '`]`'*
-- [**CS0248**](#invalid-array-length) - *Cannot create an array with a negative size*
-- [**CS0270**](#invalid-array-length) - *Array size cannot be specified in a variable declaration (try initializing with a '`new`' expression)*
-- [**CS0611**](#invalid-element-type) - *Array elements cannot be of type*
-- [**CS0623**](#invalid-array-initializer) - *Array initializers can only be used in a variable or field initializer. Try using a new expression instead.*
-- [**CS0650**](#invalid-array-rank) - *Bad array declarator: To declare a managed array the rank specifier precedes the variable's identifier. To declare a fixed size buffer field, use the fixed keyword before the field type.*
-- [**CS0719**](#invalid-element-type) - *Array elements cannot be of static type*
-- [**CS0747**](#invalid-collection-initializer) - *Invalid initializer member declarator.*
-- [**CS0820**](#invalid-element-type) - *Cannot assign array initializer to an implicitly typed local*
-- [**CS0826**](#invalid-element-type) - *No best type found for implicitly typed array.*
-- [**CS0846**](#invalid-array-initializer) - *A nested array initializer is expected*
-- [**CS1552**](#invalid-array-rank) - *Array type specifier, `[]`, must appear before parameter name*
-- [**CS1586**](#invalid-array-length) - *Array creation must have array size or array initializer*
-- [**CS1920**](#invalid-collection-initializer) - *Element initializer cannot be empty.*
-- [**CS1921**](#invalid-collection-initializer) - *The best overloaded method match has wrong signature for the initializer element. The initializable `Add` must be an accessible instance method.*
-- [**CS1925**](#invalid-array-initializer) - *Cannot initialize object of type 'type' with a collection initializer.*
-- [**CS1954**](#invalid-collection-initializer) - *The best overloaded method match for the collection initializer element cannot be used. Collection initializer '`Add`' methods cannot have `ref` or `out` parameters.*
-- [**CS9174**](#invalid-collection-initializer) - *Cannot initialize type with a collection literal because the type is not constructible.*
-- [**CS9176**](#invalid-collection-initializer) - *There is no target type for the collection literal.*
-- [**CS9185**](#invalid-collection-builder) - *The CollectionBuilderAttribute builder type must be a non-generic class or struct.*
-- [**CS9186**](#invalid-collection-builder) - *The CollectionBuilderAttribute method name is invalid.*
-- [**CS9187**](#invalid-collection-builder) - *Could not find an accessible method with the expected signature: a static method with a single parameter of type `ReadOnlySpan<T>`; and correct return type*
-- [**CS9188**](#invalid-collection-builder) - *Type has a CollectionBuilderAttribute but no element type.*
-- [**CS9203**](#invalid-collection-initializer) - *A collection expression of this type cannot be used in this context because it may be exposed outside of the current scope.*
-- [**CS9210**](#invalid-collection-initializer) - *This version of <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=nameWithType>cannot be used with collection expressions.*
+- [**CS0022**](#invalid-array-element-access): *Wrong number of indices inside [], expected 'number'*
+- [**CS0178**](#invalid-array-rank): *Invalid rank specifier: expected '`,`' or '`]`'*
+- [**CS0248**](#invalid-array-length): *Cannot create an array with a negative size*
+- [**CS0270**](#invalid-array-length): *Array size cannot be specified in a variable declaration (try initializing with a '`new`' expression)*
+- [**CS0611**](#invalid-element-type): *Array elements cannot be of type*
+- [**CS0623**](#invalid-array-initializer): *Array initializers can only be used in a variable or field initializer. Try using a new expression instead.*
+- [**CS0650**](#invalid-array-rank): *Bad array declarator: To declare a managed array the rank specifier precedes the variable's identifier. To declare a fixed size buffer field, use the fixed keyword before the field type.*
+- [**CS0719**](#invalid-element-type): *Array elements cannot be of static type*
+- [**CS0747**](#invalid-collection-initializer): *Invalid initializer member declarator.*
+- [**CS0820**](#invalid-element-type): *Cannot assign array initializer to an implicitly typed local*
+- [**CS0826**](#invalid-element-type): *No best type found for implicitly typed array.*
+- [**CS0846**](#invalid-array-initializer): *A nested array initializer is expected*
+- [**CS1552**](#invalid-array-rank): *Array type specifier, `[]`, must appear before parameter name*
+- [**CS1586**](#invalid-array-length): *Array creation must have array size or array initializer*
+- [**CS1920**](#invalid-collection-initializer): *Element initializer cannot be empty.*
+- [**CS1921**](#invalid-collection-initializer): *The best overloaded method match has wrong signature for the initializer element. The initializable `Add` must be an accessible instance method.*
+- [**CS1925**](#invalid-array-initializer): *Cannot initialize object of type 'type' with a collection initializer.*
+- [**CS1954**](#invalid-collection-initializer): *The best overloaded method match for the collection initializer element cannot be used. Collection initializer '`Add`' methods cannot have `ref` or `out` parameters.*
+- [**CS9174**](#invalid-collection-initializer): *Cannot initialize type with a collection literal because the type is not constructible.*
+- [**CS9176**](#invalid-collection-initializer): *There is no target type for the collection literal.*
+- [**CS9185**](#invalid-collection-builder): *The CollectionBuilderAttribute builder type must be a non-generic class or struct.*
+- [**CS9186**](#invalid-collection-builder): *The CollectionBuilderAttribute method name is invalid.*
+- [**CS9187**](#invalid-collection-builder): *Could not find an accessible method with the expected signature: a static method with a single parameter of type `ReadOnlySpan<T>`; and correct return type*
+- [**CS9188**](#invalid-collection-builder): *Type has a CollectionBuilderAttribute but no element type.*
+- [**CS9203**](#invalid-collection-initializer): *A collection expression of this type cannot be used in this context because it may be exposed outside of the current scope.*
+- [**CS9210**](#invalid-collection-initializer): *This version of <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=nameWithType>cannot be used with collection expressions.*
 
 In addition, the following warnings are covered in this article:
 
-- [**CS3007**](#common-language-specification-warnings) - *Overloaded method 'method' differing only by unnamed array types is not CLS-compliant*
-- [**CS3016**](#common-language-specification-warnings) - *Arrays as attribute arguments is not CLS-compliant*
-- [**CS0251**](#invalid-array-element-access) - *Indexing an array with a negative index (array indices always start at zero)*
-- [**CS9208**](#invalid-collection-initializer) - *Collection expression may incur unexpected heap allocations. Consider explicitly creating an array, then converting to the final type to make the allocation explicit.*
-- [**CS9209**](#invalid-collection-initializer) - *Collection expression may incur unexpected heap allocations due to use of '`..`' spreads. Consider explicitly creating an array, then converting to the final type to make the allocation explicit.*
+- [**CS3007**](#common-language-specification-warnings): *Overloaded method 'method' differing only by unnamed array types is not CLS-compliant*
+- [**CS3016**](#common-language-specification-warnings): *Arrays as attribute arguments is not CLS-compliant*
+- [**CS0251**](#invalid-array-element-access): *Indexing an array with a negative index (array indices always start at zero)*
+- [**CS9208**](#invalid-collection-initializer): *Collection expression may incur unexpected heap allocations. Consider explicitly creating an array, then converting to the final type to make the allocation explicit.*
+- [**CS9209**](#invalid-collection-initializer): *Collection expression may incur unexpected heap allocations due to use of '`..`' spreads. Consider explicitly creating an array, then converting to the final type to make the allocation explicit.*
 
 You can learn more about arrays, collection initializers and collection expressions in the following articles:
 
@@ -119,19 +119,19 @@ You can learn more about arrays, collection initializers and collection expressi
 
 The following errors indicate that the code generated by the compiler for a collection initializer is invalid:
 
-- **CS0747** - *Invalid initializer member declarator.*
-- **CS1920** - *Element initializer cannot be empty.*
-- **CS1921** - *The best overloaded method match has wrong signature for the initializer element. The initializable `Add` must be an accessible instance method.*
-- **CS1954** - *The best overloaded method match for the collection initializer element cannot be used. Collection initializer '`Add`' methods cannot have `ref` or `out` parameters.*
-- **CS9174** - *Cannot initialize type with a collection literal because the type is not constructible.*
-- **CS9176** - *There is no target type for the collection literal.*
-- **CS9203** - *A collection expression of this type cannot be used in this context because it may be exposed outside of the current scope.*
-- **CS9210** - *This version of <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=nameWithType>cannot be used with collection expressions.*
+- **CS0747**: *Invalid initializer member declarator.*
+- **CS1920**: *Element initializer cannot be empty.*
+- **CS1921**: *The best overloaded method match has wrong signature for the initializer element. The initializable `Add` must be an accessible instance method.*
+- **CS1954**: *The best overloaded method match for the collection initializer element cannot be used. Collection initializer '`Add`' methods cannot have `ref` or `out` parameters.*
+- **CS9174**: *Cannot initialize type with a collection literal because the type is not constructible.*
+- **CS9176**: *There is no target type for the collection literal.*
+- **CS9203**: *A collection expression of this type cannot be used in this context because it may be exposed outside of the current scope.*
+- **CS9210**: *This version of <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=nameWithType>cannot be used with collection expressions.*
 
 The compiler might also generate the following warning:
 
-- **CS9208** - *Collection expression may incur unexpected heap allocations. Consider explicitly creating an array, then converting to the final type to make the allocation explicit.*
-- **CS9209** - *Collection expression may incur unexpected heap allocations due to use of '`..`' spreads. Consider explicitly creating an array, then converting to the final type to make the allocation explicit.*
+- **CS9208**: *Collection expression may incur unexpected heap allocations. Consider explicitly creating an array, then converting to the final type to make the allocation explicit.*
+- **CS9209**: *Collection expression may incur unexpected heap allocations due to use of '`..`' spreads. Consider explicitly creating an array, then converting to the final type to make the allocation explicit.*
 
 The errors all indicate that the code generated by the compiler for a collection initializer is invalid. Check the following:
 
@@ -147,16 +147,16 @@ The warnings indicates that the collection expression, including any [spread ele
 
 ## Invalid array initializer
 
-- **CS0623** - *Array initializers can only be used in a variable or field initializer. Try using a new expression instead.*
-- **CS0846** - *A nested array initializer is expected*
-- **CS1925** - *Cannot initialize object of type 'type' with a collection initializer.*
+- **CS0623**: *Array initializers can only be used in a variable or field initializer. Try using a new expression instead.*
+- **CS0846**: *A nested array initializer is expected*
+- **CS1925**: *Cannot initialize object of type 'type' with a collection initializer.*
 
 These errors indicate that you've created an invalid initializer. The likely cause is unbalanced braces `{` and `}` around one or more elements or child arrays. Ensure that the initializing expression matches the number of arrays in a jagged array initialization, and that the braces are balanced.
 
 ## Invalid array element access
 
-- **CS0022** - *Wrong number of indices inside [], expected 'number'*
-- **CS0251** - *Indexing an array with a negative index (array indices always start at zero)*
+- **CS0022**: *Wrong number of indices inside [], expected 'number'*
+- **CS0251**: *Indexing an array with a negative index (array indices always start at zero)*
 
 You access an element of an array by specifying the index for each axis declared in the array. The indices are between `[` and `]` after the array name. There are two rules for the array indices:
 
@@ -165,9 +165,9 @@ You access an element of an array by specifying the index for each axis declared
 
 ## Invalid array rank
 
-- **CS0178** - *Invalid rank specifier: expected '`,`' or '`]`'*
-- **CS0650** - *Bad array declarator: To declare a managed array the rank specifier precedes the variable's identifier. To declare a fixed size buffer field, use the fixed keyword before the field type.*
-- **CS1552** - *Array type specifier, `[]`, must appear before parameter name*
+- **CS0178**: *Invalid rank specifier: expected '`,`' or '`]`'*
+- **CS0650**: *Bad array declarator: To declare a managed array the rank specifier precedes the variable's identifier. To declare a fixed size buffer field, use the fixed keyword before the field type.*
+- **CS1552**: *Array type specifier, `[]`, must appear before parameter name*
 
 An array declaration consists of the following tokens, in order:
 
@@ -189,9 +189,9 @@ For more information, see the C# specification ([C# Language Specification](~/_c
 
 ## Invalid array length
 
-- **CS0248** - *Cannot create an array with a negative size*
-- **CS0270** - *Array size cannot be specified in a variable declaration (try initializing with a 'new' expression*
-- **CS1586** - *Array creation must have array size or array initializer*
+- **CS0248**: *Cannot create an array with a negative size*
+- **CS0270**: *Array size cannot be specified in a variable declaration (try initializing with a 'new' expression*
+- **CS1586**: *Array creation must have array size or array initializer*
 
 The length of each dimension of an array must be specified as part of the array initialization, not its declaration. The length of each dimension must be positive. You can specify the length either by using a `new` expression to allocate the array, or using an array initializer to assign all the elements. The following example shows both mechanisms:
 
@@ -199,10 +199,10 @@ The length of each dimension of an array must be specified as part of the array 
 
 ## Invalid element type
 
-- **CS0611** - *Array elements cannot be of type 'type'*
-- **CS0719** - *Array elements cannot be of static type*
-- **CS0820** - *Cannot assign array initializer to an implicitly typed local*
-- **CS0826** - *No best type found for implicitly typed array.*
+- **CS0611**: *Array elements cannot be of type 'type'*
+- **CS0719**: *Array elements cannot be of static type*
+- **CS0820**: *Cannot assign array initializer to an implicitly typed local*
+- **CS0826**: *No best type found for implicitly typed array.*
 
 There are some types that cannot be used as the type of an array. These types include <xref:System.TypedReference?displayProperty=fullName> and <xref:System.ArgIterator?displayProperty=fullName>. The type of an array can't be a `static` class, because instances of a `static` class can't be created.
 
@@ -220,10 +220,10 @@ You can ensure the best common type using any of the following techniques:
 
 The following errors indicate errors in your collection builder type:
 
-- **CS9185** - *The `CollectionBuilderAttribute` builder type must be a non-generic class or struct.*
-- **CS9186** - *The `CollectionBuilderAttribute` method name is invalid.*
-- **CS9187** - *Could not find an accessible method with the expected signature: a static method with a single parameter of type `ReadOnlySpan<T>`; and correct return type.*
-- **CS9188** - *Type has a `CollectionBuilderAttribute` but no element type.*
+- **CS9185**: *The `CollectionBuilderAttribute` builder type must be a non-generic class or struct.*
+- **CS9186**: *The `CollectionBuilderAttribute` method name is invalid.*
+- **CS9187**: *Could not find an accessible method with the expected signature: a static method with a single parameter of type `ReadOnlySpan<T>`; and correct return type.*
+- **CS9188**: *Type has a `CollectionBuilderAttribute` but no element type.*
 
 These errors indicate that your collection builder type needs modification. Remember the following rules:
 
@@ -234,8 +234,8 @@ These errors indicate that your collection builder type needs modification. Reme
 
 ## Common language specification warnings
 
-- **CS3007** - *Overloaded method 'method' differing only by unnamed array types is not CLS-compliant*
-- **CS3016** - *Arrays as attribute arguments is not CLS-compliant*
+- **CS3007**: *Overloaded method 'method' differing only by unnamed array types is not CLS-compliant*
+- **CS3016**: *Arrays as attribute arguments is not CLS-compliant*
 
 CS3007 occurs if you have an overloaded method that takes a jagged array and the only difference between the method signatures is the element type of the array. To avoid this error, consider using a rectangular array rather than a jagged array or, if CLS Compliance isn't needed, remove the <xref:System.CLSCompliantAttribute> attribute. For more information on CLS Compliance, see [Language independence and language-independent components](../../../standard/language-independence.md).
 

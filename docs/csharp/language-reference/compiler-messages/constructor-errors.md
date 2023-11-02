@@ -154,7 +154,7 @@ You can write at most one static constructor for a type. The declaration of a st
 - The static constructor must be a parameterless constructor.
 - The static constructor must not call `base()` or `this()`. If the base class includes a static constructor, the runtime calls it automatically.
 
-## Constructor declarations
+## Constructor declaration
 
 - **CS0526**: *Interfaces cannot contain constructors.*
 - **CS0710**: *Static classes cannot have instance constructors.*

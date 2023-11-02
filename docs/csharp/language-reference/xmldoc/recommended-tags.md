@@ -164,7 +164,7 @@ If you want angle brackets to appear in the text of a documentation comment, use
 <summary>description</summary>
 ```
 
-The `<summary>` tag should be used to describe a type or a type member. Use [\<remarks>](#remarks) to add supplemental information to a type description. Use the [cref attribute](#cref-attribute) to enable documentation tools such as [DocFX](https://dotnet.github.io/docfx/) and [Sandcastle](https://github.com/EWSoftware/SHFB) to create internal hyperlinks to documentation pages for code elements. The text for the `<summary>` tag is a source of information about the type in IntelliSense, and is also displayed in the Object Browser window.
+The `<summary>` tag should be used to describe a type or a type member. Use [\<remarks>](#remarks) to add supplemental information to a type description. Use the [cref attribute](#cref-attribute) to enable documentation tools such as [DocFX](https://dotnet.github.io/docfx/) and [Sandcastle](https://github.com/EWSoftware/SHFB) to create internal hyperlinks to documentation pages for code elements. The text for the `<summary>` tag is the only source of information about the type in IntelliSense, and is also displayed in the Object Browser window.
 
 ### \<remarks>
 
@@ -174,7 +174,7 @@ description
 </remarks>
 ```
 
-The `<remarks>` tag is used to add information about a type or a type member, supplementing the information specified with [\<summary>](#summary). This information is displayed in the Object Browser window. The text for the `<remarks>` tag is a source of information about the type in IntelliSense. This tag may include more lengthy explanations. You may find that using `CDATA` sections for markdown make writing it more convenient. Tools such as [docfx](https://dotnet.github.io/docfx/) process the markdown text in `CDATA` sections.
+The `<remarks>` tag is used to add information about a type or a type member, supplementing the information specified with [\<summary>](#summary). This information is displayed in the Object Browser window. This tag may include more lengthy explanations. You may find that using `CDATA` sections for markdown make writing it more convenient. Tools such as [docfx](https://dotnet.github.io/docfx/) process the markdown text in `CDATA` sections.
 
 ## Document members
 

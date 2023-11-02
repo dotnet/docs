@@ -408,6 +408,34 @@ In the preceding code, while the app is running, the background service:
 
 From the sample source code, you can see how implementations of <xref:Microsoft.Extensions.Hosting.IHostedService> can benefit from scoped service lifetimes.
 
+## Keyed services
+
+.NET also supports service registrations and lookups based on a key, meaning it's possible to register multiple services with a different key, and use this key for the lookup.
+
+For example, let's consider you have different implementation of the interface `IMessageWriter`: `MemoryMessageWriter` and `QueueMessageWriter`.
+
+You can register these services using the overload of the service registration methods (seen earlier) that supports a key as a parameter:
+
+```csharp
+services.AddSingleton<IMessageWriter, MemoryMessageWriter>("memory");
+services.AddSingleton<IMessageWriter, QueueMessageWriter>("queue");
+```
+
+The `key` isn't limited to `string`, it can be any `object` you want, as long as the type correctly implements `Equals`.
+
+In the constructor of the class that uses `IMessageWriter`, you add the <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute> to specify the key of the service to resolve:
+
+```csharp
+public class ExampleService
+{
+    public ExampleService(
+        [FromKeyedServices("queue")] IMessageWriter writer)
+    {
+        // Omitted for brevity...
+    }
+}
+```
+
 ## See also
 
 - [Use dependency injection in .NET](dependency-injection-usage.md)

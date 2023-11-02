@@ -18,7 +18,6 @@ f1_keywords:
   - "CS9098" # ERR_ImplicitlyTypedDefaultParameter: Implicitly typed lambda parameter '{0}' cannot have a default value.
   - "CS9099" # WRN_OptionalParamValueMismatch: The default parameter value does not match in the target delegate type.
   - "CS9100" # WRN_ParamsArrayInLambdaOnly: Parameter has params modifier in lambda but not in target delegate type.
-  - "CS9108"
 helpviewer_keywords:
   - "CS0748"
   - "CS0835"
@@ -36,7 +35,6 @@ helpviewer_keywords:
   - "CS9098"
   - "CS9099"
   - "CS9100"
-  - "CS9108"
 ms.date: 05/04/2023
 ---
 # Errors and warnings when using lambda expressions and anonymous functions
@@ -46,26 +44,25 @@ There are several *errors* related to declaring and using lambda expressions:
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
-- [**CS0748**](#lambda-expression-parameters-and-returns) - *Inconsistent lambda parameter usage; parameter types must be all explicit or all implicit.*
-- [**CS1621**](#syntax-limitations-in-lambda-expressions) - *The yield statement cannot be used inside an anonymous method or lambda expression.*
-- [**CS1628**](#syntax-limitations-in-lambda-expressions) - *Cannot use `in` `ref` or `out` parameter inside an anonymous method, lambda expression, or query expression.*
-- [**CS1632**](#syntax-limitations-in-lambda-expressions) - *Control cannot leave the body of an anonymous method or lambda expression.*
-- [**CS1673**](#syntax-limitations-in-lambda-expressions) - *Anonymous methods, lambda expressions, and query expressions inside structs cannot access instance members of 'this'.*
-- [**CS1686**](#syntax-limitations-in-lambda-expressions) - *Local variable or its members cannot have their address taken and be used inside an anonymous method or lambda expression.*
-- [**CS1706**](#syntax-limitations-in-lambda-expressions) - *Expression cannot contain anonymous methods or lambda expressions.*
-- [**CS8030**](#syntax-limitations-in-lambda-expressions) - *Anonymous function converted to a void returning delegate cannot return a value.*
-- [**CS8175**](#syntax-limitations-in-lambda-expressions) - *Cannot use ref local inside an anonymous method, lambda expression, or query expression.*
-- [**CS8916**](#lambda-expression-parameters-and-returns) - *Attributes on lambda expressions require a parenthesized parameter list.*
-- [**CS8971**](#syntax-limitations-in-lambda-expressions) - *InterpolatedStringHandlerArgument has no effect when applied to lambda parameters and will be ignored at the call site.*
-- [**CS8975**](#lambda-expression-parameters-and-returns) - *The contextual keyword `var` cannot be used as an explicit lambda return type.*
-- [**CS9098**](#lambda-expression-parameters-and-returns) - *Implicitly typed lambda parameter '...' cannot have a default value.*
-- [**CS9108**](#syntax-limitations-in-lambda-expressions) - *Cannot use a parameter that has ref-like type inside an anonymous method, lambda expression, query expression, or local function*
+- [**CS0748**](#lambda-expression-parameters-and-returns): *Inconsistent lambda parameter usage; parameter types must be all explicit or all implicit.*
+- [**CS1621**](#syntax-limitations-in-lambda-expressions): *The yield statement cannot be used inside an anonymous method or lambda expression.*
+- [**CS1628**](#syntax-limitations-in-lambda-expressions): *Cannot use `in` `ref` or `out` parameter inside an anonymous method, lambda expression, or query expression.*
+- [**CS1632**](#syntax-limitations-in-lambda-expressions): *Control cannot leave the body of an anonymous method or lambda expression.*
+- [**CS1673**](#syntax-limitations-in-lambda-expressions): *Anonymous methods, lambda expressions, and query expressions inside structs cannot access instance members of 'this'.*
+- [**CS1686**](#syntax-limitations-in-lambda-expressions): *Local variable or its members cannot have their address taken and be used inside an anonymous method or lambda expression.*
+- [**CS1706**](#syntax-limitations-in-lambda-expressions): *Expression cannot contain anonymous methods or lambda expressions.*
+- [**CS8030**](#syntax-limitations-in-lambda-expressions): *Anonymous function converted to a void returning delegate cannot return a value.*
+- [**CS8175**](#syntax-limitations-in-lambda-expressions): *Cannot use ref local inside an anonymous method, lambda expression, or query expression.*
+- [**CS8916**](#lambda-expression-parameters-and-returns): *Attributes on lambda expressions require a parenthesized parameter list.*
+- [**CS8971**](#syntax-limitations-in-lambda-expressions): *InterpolatedStringHandlerArgument has no effect when applied to lambda parameters and will be ignored at the call site.*
+- [**CS8975**](#lambda-expression-parameters-and-returns): *The contextual keyword `var` cannot be used as an explicit lambda return type.*
+- [**CS9098**](#lambda-expression-parameters-and-returns): *Implicitly typed lambda parameter '...' cannot have a default value.*
 
 In addition, there are several *warnings* related to declaring and using lambda expressions:
 
-- [**CS8971**](#syntax-limitations-in-lambda-expressions) - *InterpolatedStringHandlerArgument has no effect when applied to lambda parameters and will be ignored at the call site.*
-- [**CS9099**](#lambda-expression-delegate-type) - *The default parameter value does not match in the target delegate type.*
-- [**CS9100**](#lambda-expression-delegate-type) - *Parameter has params modifier in lambda but not in target delegate type.*
+- [**CS8971**](#syntax-limitations-in-lambda-expressions): *InterpolatedStringHandlerArgument has no effect when applied to lambda parameters and will be ignored at the call site.*
+- [**CS9099**](#lambda-expression-delegate-type): *The default parameter value does not match in the target delegate type.*
+- [**CS9100**](#lambda-expression-delegate-type): *Parameter has params modifier in lambda but not in target delegate type.*
 
 ## Syntax limitations in lambda expressions
 
@@ -77,7 +74,6 @@ Some C# syntax is prohibited in lambda expressions and anonymous methods. Using 
 - **CS1673**: *Anonymous methods, lambda expressions, and query expressions inside structs cannot access instance members of `this`.*
 - **CS1686**: *Local variable or its members cannot have their address taken and be used inside an anonymous method or lambda expression.*
 - **CS8175**: *Cannot use ref local inside an anonymous method, lambda expression, or query expression.*
-- **CS9108**: *Cannot use a parameter that has ref-like type inside an anonymous method, lambda expression, query expression, or local function*
 
 All the following constructs are disallowed in lambda expressions:
 
@@ -92,17 +88,17 @@ You can't use any of these constructs in a lambda expression or an anonymous met
 
 In addition, interpolated string handler types are ignored when applied to a lambda parameter. If you use one, you see the following warning:
 
-- **CS8971** - *InterpolatedStringHandlerArgument has no effect when applied to lambda parameters and will be ignored at the call site.*
+- **CS8971**:  *InterpolatedStringHandlerArgument has no effect when applied to lambda parameters and will be ignored at the call site.*
 
 ## Lambda expression parameters and returns
 
 These errors indicate a problem with a parameter declaration:
 
-- **CS0748** - *Inconsistent lambda parameter usage; parameter types must be all explicit or all implicit.*
-- **CS9098** - *Implicitly typed lambda parameter '...' cannot have a default value.*
-- **CS8030** - *Anonymous function converted to a void returning delegate cannot return a value.*
-- **CS8916** - *Attributes on lambda expressions require a parenthesized parameter list.*
-- **CS8975** - *The contextual keyword 'var' cannot be used as an explicit lambda return type.*
+- **CS0748**:  *Inconsistent lambda parameter usage; parameter types must be all explicit or all implicit.*
+- **CS9098**:  *Implicitly typed lambda parameter '...' cannot have a default value.*
+- **CS8030**:  *Anonymous function converted to a void returning delegate cannot return a value.*
+- **CS8916**:  *Attributes on lambda expressions require a parenthesized parameter list.*
+- **CS8975**:  *The contextual keyword 'var' cannot be used as an explicit lambda return type.*
 
 Lambda expression parameters must follow these rules:
 
@@ -117,7 +113,7 @@ Return types of lambda expression must follow these rules:
 
 ## Lambda expression delegate type
 
-- [**CS9099**](#lambda-expression-delegate-type) - Warning: *The default parameter value does not match in the target delegate type.*
+- [**CS9099**](#lambda-expression-delegate-type): Warning: *The default parameter value does not match in the target delegate type.*
 
 When you declare a default value or add the `params` modifier with a lambda expression parameter, the delegate type isn't one of the `Func` or `Action` types. Rather, it's a custom type that includes the default parameter value or `params` modifier. The following code generates warnings because it assigns a lambda expression that has a default parameter to an `Action` type:
 

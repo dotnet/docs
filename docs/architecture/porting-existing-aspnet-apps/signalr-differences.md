@@ -13,7 +13,7 @@ ASP.NET Core SignalR is incompatible with clients or servers using ASP.NET Signa
 
 ## Feature differences
 
-- ASP.NET SignalR automatically attempts to reconnect dropped connections; this behavior is opt-in for ASP.NET Core SignalR clients
+- ASP.NET SignalR automatically attempts to reconnect dropped connections; this behavior is opt-in for ASP.NET Core SignalR clients.
 - Both frameworks support JSON; ASP.NET Core SignalR also supports a binary protocol based on MessagePack, and custom protocols can be created.
 - The Forever Frame transport, supported by ASP.NET SignalR, isn't supported in ASP.NET Core SignalR.
 - ASP.NET Core SignalR must be configured by adding `services.AddSignalR()` and `app.UseEndpoints` in _Program.cs_.

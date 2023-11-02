@@ -25,8 +25,8 @@ or [.editorconfig] files.
 * Diagnostic IDs must be legal identifiers in C#
 * Diagnostic IDs should be less than 15 characters long
 * Diagnostic IDs should be of the form `PREFIX123456`
-    - The prefix should be specific to your project
-    - The number should represent the specific diagnostic
+  - The prefix should be specific to your project
+  - The number should represent the specific diagnostic
 
 > [!NOTE]
 > It's a source breaking change to change diagnostic IDs (e.g. existing

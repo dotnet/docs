@@ -421,7 +421,7 @@ services.AddSingleton<IMessageWriter, MemoryMessageWriter>("memory");
 services.AddSingleton<IMessageWriter, QueueMessageWriter>("queue");
 ```
 
-Note that the key isn't limited to `string`, it can be any `object` you want, as long as the type correctly implements `Equals`.
+The `key` isn't limited to `string`, it can be any `object` you want, as long as the type correctly implements `Equals`.
 
 In the constructor of the class that uses `IMessageWriter`, you can use the <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute> to specify the key of the service to resolve:
 

@@ -1,7 +1,7 @@
 ---
 title: Diagnostic resource monitoring
 description: Learn how to use the diagnostic resource monitoring library in .NET.
-ms.date: 10/30/2023
+ms.date: 11/02/2023
 ---
 
 # Resource monitoring
@@ -9,6 +9,8 @@ ms.date: 10/30/2023
 Resource monitoring involves the continuous measurement of resource utilization over a specified period. The [Microsoft.Extensions.Diagnostics.ResourceMonitoring](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.ResourceMonitoring) NuGet package offers a collection of APIs tailored for monitoring the resource utilization of your .NET applications.
 
 The <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor> interface furnishes methods for retrieving real-time information concerning process resource utilization. This interface supports the retrieval of data related to CPU and memory usage and is currently compatible with both Windows and Linux platforms. All resource monitoring diagnostic information is published to OpenTelemetry by default, so there's no need to manually publish this yourself.
+
+In addition, the resource monitoring library reports various diagnostic metrics. For more information, see [Diagnostic Metrics: `Microsoft.Extensions.Diagnostics.ResourceMonitoring`](built-in-metrics-diagnostics.md#meter-microsoftextensionsdiagnosticsresourcemonitoring).
 
 ## Example resource monitoring usage
 
@@ -64,3 +66,7 @@ In addition to resource monitoring, apps that exist within a Kubernetes cluster 
 The library communicates the apps current health to a Kubernetes hosting environment. If a process reports as being unhealthy, Kubernetes doesn't send it any traffic, providing the process time to recover or terminate.
 
 To add support for Kubernetes probes, add a package reference to [Microsoft.Extensions.Diagnostics.Probes](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.Probes). On an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> instance, call <xref:Microsoft.Extensions.Diagnostics.Probes.KubernetesProbesExtensions.AddKubernetesProbes%2A>.
+
+## See also
+
+- [.NET extensions metrics](built-in-metrics-diagnostics.md)

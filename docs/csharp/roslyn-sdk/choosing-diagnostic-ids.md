@@ -35,5 +35,5 @@ Don't limit your prefix to two-characters (such as `CSXXX`and `CAXXXX`).
 Instead, use a longer prefix to avoid conflicts. For example, the `System.*`
 diagnostics use `SYSLIB` as their prefix.
 
-[#pragma warning disable]: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/preprocessor-directives#pragma-warning
+[#pragma warning disable]: ../language-reference/preprocessor-directives.md#pragma-warning
 [.editorconfig]: ../../fundamentals/code-analysis/code-style-rule-options.md

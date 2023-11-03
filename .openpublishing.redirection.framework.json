@@ -1095,39 +1095,39 @@
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/migration-guide/mitigation-culture-and-asynchronous-operations.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.5.2-4.6"
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/migration-guide/mitigation-culture-and-dispatcher-operations-in-wpf-apps.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.5.2-4.6"
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/migration-guide/mitigation-default-authorizationcontext.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.5.2-4.6"
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/migration-guide/mitigation-eventsource-writeevent-method-calls.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5-4.5.1"
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/migration-guide/mitigation-grid-control.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.2-4.7"
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/migration-guide/mitigation-horizontal-scrolling-and-virtualization.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.1-4.6.2"
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/migration-guide/mitigation-long-path-support.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.1-4.6.2"
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/migration-guide/mitigation-memberdescriptor-equals.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.1-4.6.2"
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/migration-guide/mitigation-minfreememorypercentagetoactiveservice-configuration-setting.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5-4.5.1"
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/minimum-release-dword.md",
@@ -1135,11 +1135,11 @@
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/mitigation-claimsidentity-constructor.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.1-4.6.2"
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/mitigation-cspparameters-parentwindowhandle-expects-an-hwnd.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.2-4.7"
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.7.x"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/net-compatibility-diagnostics.md",
@@ -2107,6 +2107,306 @@
         {
             "source_path_from_root": "/docs/framework/unmanaged-api/cor-prf-allowable-after-attach-bitmask.md",
             "redirect_url": "/dotnet/framework/unmanaged-api/profiling/cor-prf-monitor-enumeration"
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/dotnet-debugging.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/clrcreateinstance-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/clrcreateinstance-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/closeclrenumeration-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/closeclrenumeration-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/closeresumehandle-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/closeresumehandle-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createversionstringfrommodule-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/createversionstringfrommodule-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createdebugginginterfacefromversion-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/createdebugginginterfacefromversion-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createdebugginginterfacefromversionex-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/createdebugginginterfacefromversionex-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createdebugginginterfacefromversion2-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/createdebugginginterfacefromversion2-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createdebugginginterfacefromversion3-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/createdebugginginterfacefromversion3-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/createprocessforlaunch-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/createprocessforlaunch-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/enumerateclrs-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/enumerateclrs-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/getstartupnotificationevent-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/getstartupnotificationevent-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider2-interface.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/iclrdebugginglibraryprovider2-interface",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider2-providelibrary2-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/iclrdebugginglibraryprovider2-providelibrary2-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider3-interface.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/iclrdebugginglibraryprovider3-interface",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider3-provideunixlibrary-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/iclrdebugginglibraryprovider3-provideunixlibrary-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider3-providewindowslibrary-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/iclrdebugginglibraryprovider3-providewindowslibrary-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/libraryproviderindextype-enumeration.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/libraryproviderindextype-enumeration",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/pstartup_callback-function-pointer.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/pstartup_callback-function-pointer",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/registerforruntimestartup-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/registerforruntimestartup-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/registerforruntimestartupex-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/registerforruntimestartupex-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/registerforruntimestartup3-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/registerforruntimestartup3-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/resumeprocess-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/resumeprocess-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/debugging/unregisterforruntimestartup-function.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/debugging/unregisterforruntimestartup-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/cor-prf-event-data-structure.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/cor-prf-event-data-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/cor-prf-eventpipe-level-enumeration.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/cor-prf-eventpipe-level-enumeration",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/cor-prf-eventpipe-param-desc-structure.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/cor-prf-eventpipe-param-desc-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/cor-prf-eventpipe-param-type-enumeration.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/cor-prf-eventpipe-param-type-enumeration",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/cor-prf-eventpipe-provider-config-structure.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/cor-prf-eventpipe-provider-config-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/cor-prf-handle-type-enumeration.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/cor-prf-handle-type-enumeration",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/cor-prf-rejit-flags-enumeration.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/cor-prf-rejit-flags-enumeration",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilercallback10-eventpipeeventdelivered-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilercallback10-eventpipeeventdelivered-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilercallback10-eventpipeprovidercreated-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilercallback10-eventpipeprovidercreated-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilercallback10-interface.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilercallback10-interface",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo10-enumerateobjectreferences-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo10-enumerateobjectreferences-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo10-getlohobjectsizethreshold-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo10-getlohobjectsizethreshold-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo10-interface.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo10-interface",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo10-isfrozenobject-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo10-isfrozenobject-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo10-requestrejitwithinliners-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo10-requestrejitwithinliners-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo10-resumeruntime-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo10-resumeruntime-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo10-suspendruntime-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo10-suspendruntime-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo11-getenvironmentvariable-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo11-getenvironmentvariable-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo11-interface.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo11-interface",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo11-setenvironmentvariable-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo11-setenvironmentvariable-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo12-eventpipeaddprovidertosession-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo12-eventpipeaddprovidertosession-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo12-eventpipecreateprovider-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo12-eventpipecreateprovider-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo12-eventpipedefineevent-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo12-eventpipedefineevent-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo12-eventpipegetproviderinfo-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo12-eventpipegetproviderinfo-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo12-eventpipestartsession-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo12-eventpipestartsession-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo12-eventpipestopsession-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo12-eventpipestopsession-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo12-eventpipewriteevent-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo12-eventpipewriteevent-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo12-interface.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo12-interface",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo13-createhandle-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo13-createhandle-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo13-destroyhandle-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo13-destroyhandle-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo13-getobjectidfromhandle-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo13-getobjectidfromhandle-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo13-interface.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo13-interface",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo9-getcodeinfo4-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo9-getcodeinfo4-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo9-getiltonativemapping3-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo9-getiltonativemapping3-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo9-getnativecodestartaddresses-method.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo9-getnativecodestartaddresses-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/framework/unmanaged-api/profiling/icorprofilerinfo9-interface.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/profiling/icorprofilerinfo9-interface",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/framework/wcf/diagnostics/etw/monitoring-service-operation-failures.md",

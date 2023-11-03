@@ -50,7 +50,7 @@ To register the `IHttpClientFactory`, call `AddHttpClient`:
 
 Consuming services can require the `IHttpClientFactory` as a constructor parameter with [DI][di]. The following code uses `IHttpClientFactory` to create an `HttpClient` instance:
 
-:::code source="snippets/http/basic/TodoService.cs" highlight="11,15,17,22":::
+:::code source="snippets/http/basic/TodoService.cs" highlight="10,14,16,21":::
 
 Using `IHttpClientFactory` like in the preceding example is a good way to refactor an existing app. It has no impact on how `HttpClient` is used. In places where `HttpClient` instances are created in an existing app, replace those occurrences with calls to <xref:System.Net.Http.IHttpClientFactory.CreateClient%2A>.
 

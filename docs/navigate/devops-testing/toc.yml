@@ -333,6 +333,8 @@ items:
             href: ../../core/deploying/native-aot/diagnostics.md
           - name: Native code interop
             href: ../../core/deploying/native-aot/interop.md
+          - name: Cross-compilation
+            href: ../../core/deploying/native-aot/cross-compile.md
           - name: Intro to AOT warnings
             href: ../../core/deploying/native-aot/fixing-warnings.md
           - name: AOT warnings
@@ -365,6 +367,8 @@ items:
             href: ../../core/docker/build-container.md
           - name: Publish app as container image
             href: ../../core/docker/publish-as-container.md
+          - name: .NET container images
+            href: ../../core/docker/container-images.md
           - name: Container tools in Visual Studio
             href: /visualstudio/containers/overview?toc=/dotnet/navigate/devops-testing/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: .NET distribution packaging

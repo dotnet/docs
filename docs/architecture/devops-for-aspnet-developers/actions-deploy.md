@@ -3,6 +3,7 @@ title: DevOps with .NET and GitHub Actions - Deploy a .NET Web App to Azure Web 
 description: Deploy a .NET app to Azure App Service, the first step for DevOps with .NET and GitHub Actions.
 author: colindembovsky
 ms.date: 03/04/2021
+ms.custom: devx-track-azurecli
 ---
 # Deploy a .NET web app using GitHub Actions
 

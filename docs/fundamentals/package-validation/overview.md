@@ -15,7 +15,7 @@ You might think that a change is safe and compatible if source consuming that ch
 Package validation tooling allows library developers to validate that their packages are consistent and well formed. It provides the following checks:
 
 - Validates that there are no breaking changes across versions.
-- Validates that the package has the same set of publics APIs for all the different runtime-specific implementations.
+- Validates that the package has the same set of public APIs for all the different runtime-specific implementations.
 - Helps developers catch any applicability holes.
 
 ## Enable package validation
@@ -46,7 +46,7 @@ There are three different validators that verify your package as part of the `Pa
 ## Suppress compatibility errors
 
 To suppress compatibility errors for intentional changes, add a *CompatibilitySuppressions.xml* file to your project.
-You can generate this file automatically by passing `/p:GenerateCompatibilitySuppressionFile=true` if you're building the project from the command line, or by adding the following property to your project: `<GenerateCompatibilitySuppressionFile>true</GenerateCompatibilitySuppressionFile>`
+You can generate this file automatically by passing `/p:GenerateCompatibilitySuppressionFile=true` if you're packing the project from the command line, or by adding the following property to your project: `<GenerateCompatibilitySuppressionFile>true</GenerateCompatibilitySuppressionFile>`
 
 The suppression file looks like this.
 

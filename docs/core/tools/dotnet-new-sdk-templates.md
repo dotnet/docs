@@ -3,7 +3,7 @@ title: .NET default templates for dotnet new
 description: The information about dotnet new templates shipped with dotnet SDK.
 ms.custom: updateeachrelease
 no-loc: [Blazor, WebAssembly]
-ms.date: 05/31/2023
+ms.date: 08/10/2023
 ---
 # .NET default templates for dotnet new
 
@@ -44,8 +44,8 @@ The following table shows the templates that come pre-installed with the .NET SD
 | ASP.NET Core with Angular                    | [`angular`](#spa)                     | [C#]         | Web/MVC/SPA                           | 2.0              |
 | ASP.NET Core with React.js                   | [`react`](#spa)                       | [C#]         | Web/MVC/SPA                           | 2.0              |
 | Razor Class Library                          | [`razorclasslib`](#razorclasslib)     | [C#]         | Web/Razor/Library/Razor Class Library | 2.1              |
-| ASP.NET Core Web API                         | [`webapi`](#webapi)                   | [C#], F#     | Web/WebAPI                            | 1.0              |
-| ASP.NET Core API                             | [`api`](#api)                         | [C#]         | Web/API                               | 8.0              |
+| ASP.NET Core Web API                         | [`webapi`](#webapi)                   | [C#], F#     | Web/Web API/API/Service/WebAPI        | 1.0              |
+| ASP.NET Core API                             | [`webapiaot`](#webapiaot)             | [C#]         | Web/Web API/API/Service               | 8.0              |
 | ASP.NET Core gRPC Service                    | [`grpc`](#web-others)                 | [C#]         | Web/gRPC                              | 3.0              |
 | dotnet gitignore file                        | `gitignore`                           |              | Config                                | 3.0              |
 | global.json file                             | [`globaljson`](#globaljson)           |              | Config                                | 2.0              |
@@ -209,7 +209,7 @@ The ability to create a project for an earlier TFM depends on having that versio
   | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
-  
+
 The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only the .NET 6 SDK installed, then the only value available for `--framework` is `net6.0`. If you install the .NET 5 SDK, the value `net5.0` becomes available for `--framework`. If you install the .NET Core 3.1 SDK, `netcoreapp3.1` becomes available, and so on. So by specifying `--framework netcoreapp3.1` you can target .NET Core 3.1 even while running `dotnet new` in the .NET 6 SDK.
 
 - **`-p|--enable-pack`**
@@ -704,11 +704,9 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 ***
 
-## `api`
+## `webapiaot`
 
-- **`--aot`**
-
-  Enable publish using AOT. For more information, see [Native AOT deployment](/dotnet/core/deploying/native-aot) and [The API template](/aspnet/core/fundamentals/native-aot#the-api-template).
+Creates a web API project with AOT publish enabled. For more information, see [Native AOT deployment](/dotnet/core/deploying/native-aot) and [The Web API (Native AOT) template](/aspnet/core/fundamentals/native-aot#the-web-api-native-aot-template).
 
 - **`--exclude-launch-settings`**
 
@@ -751,7 +749,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`-minimal|--use-minimal-apis`**
 
-  Create a project that uses the [ASP.NET Core minimal API](/aspnet/core/fundamentals/minimal-apis).
+  Create a project that uses the [ASP.NET Core minimal API](/aspnet/core/fundamentals/minimal-apis). Default is `false`, but this option is overridden by `--controllers`. Since the default for `--controllers` is `false`, entering `dotnet new webapi` without specifying either option creates a minimal API project.
 
 - **`-ssp|--susi-policy-id <ID>`**
 
@@ -764,6 +762,10 @@ The ability to create a project for an earlier TFM depends on having that versio
 - **`--client-id <ID>`**
 
   The Client ID for this project. Use with `IndividualB2C` or `SingleOrg` authentication. The default value is `11111111-1111-1111-11111111111111111`.
+
+- **`--controllers`**, **`--use-controllers`**
+
+  Whether to use controllers instead of minimal APIs. If both this option and `-minimal` are specified, this option overrides the value specified by `-minimal`. Default is `false`.
 
 - **`--domain <DOMAIN>`**
 

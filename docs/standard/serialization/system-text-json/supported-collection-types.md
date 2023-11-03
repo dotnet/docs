@@ -28,9 +28,9 @@ The following sections are organized by namespace and show which types are suppo
 
 | Type                                                                                            | Serialization | Deserialization |
 |-------------------------------------------------------------------------------------------------|---------------|-----------------|
-| [Single-dimensional arrays](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md) | ✔️           | ✔️              |
-| [Multi-dimensional arrays](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)    | ❌           | ❌              |
-| [Jagged arrays](../../../csharp/programming-guide/arrays/jagged-arrays.md)                         | ✔️           | ✔️              |
+| [Single-dimensional arrays](../../../csharp/language-reference/builtin-types/arrays.md#single-dimensional-arrays) | ✔️           | ✔️              |
+| [Multi-dimensional arrays](../../../csharp/language-reference/builtin-types/arrays.md#multidimensional-arrays)    | ❌           | ❌              |
+| [Jagged arrays](../../../csharp/language-reference/builtin-types/arrays.md#jagged-arrays)                         | ✔️           | ✔️              |
 
 ## System.Collections namespace
 
@@ -236,6 +236,7 @@ There are no built-in converters for <xref:System.Data.DataSet>, <xref:System.Da
 
 ## See also
 
+* [Populate initialized properties](populate-properties.md)
 * [System.Text.Json overview](overview.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

@@ -1,8 +1,7 @@
 ---
 title: Garbage collector config settings
-description: Learn about run-time settings for configuring how the garbage collector manages memory for .NET Core apps.
+description: Learn about run-time settings for configuring how the garbage collector manages memory for .NET apps.
 ms.date: 04/20/2022
-ms.topic: reference
 ---
 # Runtime configuration options for garbage collection
 
@@ -556,7 +555,7 @@ Example:
 
 ## Standalone GC
 
-- Specifies the name of a standalone GC DLL that the runtime loads in place of the one it has in the main runtime DLL (coreclr.dll). This DLL needs to reside in the same directory as *coreclr.dll*.
+- Specifies the name of a GC native library that the runtime loads in place of the default GC implementation. This native library needs to reside in the same directory as the .NET runtime (**coreclr.dll** on Windows, **libcoreclr.so** on Linux).
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |

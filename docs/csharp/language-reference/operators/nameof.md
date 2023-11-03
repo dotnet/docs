@@ -1,6 +1,6 @@
 ---
 title: "The nameof expression - evaluate the text name of a symbol"
-description: "The C# `nameof` expression produces the name of its operand. You use it whenever you need to use the nam of a symbol as text"
+description: "The C# `nameof` expression produces the name of its operand. You use it whenever you need to use the name of a symbol as text"
 ms.date: 11/28/2022
 f1_keywords:
   - "nameof_CSharpKeyword"

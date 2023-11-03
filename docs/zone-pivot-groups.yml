@@ -66,6 +66,24 @@ groups:
       title: .NET 7
     - id: dotnet-6-0
       title: .NET 6
+- id: dotnet-version-6-8
+  title: .NET version
+  prompt: Choose a .NET version
+  pivots:
+    - id: dotnet-7-0
+      title: .NET 7
+    - id: dotnet-6-0
+      title: .NET 6
+    - id: dotnet-8-0
+      title: .NET 8 Preview
+- id: dotnet-version-7-8
+  title: .NET version
+  prompt: Choose a .NET version
+  pivots:
+    - id: dotnet-7-0
+      title: .NET 7
+    - id: dotnet-8-0
+      title: .NET 8 Preview
 - id: orleans-version
   title: Orleans version
   prompt: Choose an Orleans version
@@ -74,3 +92,11 @@ groups:
       title: Orleans 7.0
     - id: orleans-3-x
       title: Orleans 3.x
+- id: orleans-persistence-option
+  title: Orleans persistence option
+  prompt: Choose an option for Orleans persistence
+  pivots:
+    - id: azure-storage
+      title: Azure Storage
+    - id: azure-cosmos-db-nosql
+      title: Azure Cosmos DB for NoSQL

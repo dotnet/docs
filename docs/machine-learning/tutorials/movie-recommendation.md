@@ -5,7 +5,6 @@ author: briacht
 ms.date: 11/11/2021
 ms.custom: mvc, title-hack-0516
 ms.topic: tutorial
-recommendations: false
 #Customer intent: As a developer, I want to use ML.NET to apply a recommendation learning algorithm so that I can understand how to recommend items based on a user's history.
 ---
 
@@ -35,7 +34,7 @@ You will use the following steps to accomplish your task, as well as any other M
 
 ## Prerequisites
 
-- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
+* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
 
 ## Select the appropriate machine learning task
 

@@ -1,11 +1,12 @@
 ---
 title: .NET Runtime config options
 description: Learn how to configure the .NET runtime using configuration settings.
+ms.topic: conceptual
 ms.date: 07/23/2021
 ---
 # .NET Runtime configuration settings
 
-.NET 5+ (including .NET Core versions) supports the use of configuration files and environment variables to configure the behavior of .NET applications at run time.
+.NET 5+ (including .NET Core versions) supports the use of configuration files and environment variables to configure the behavior of .NET applications.
 
 > [!NOTE]
 > The articles in this section concern configuration of the .NET Runtime itself. If you're migrating to .NET Core 3.1 or later and are looking for a replacement for the *app.config* file, or if you simply want a way to use custom configuration values in your .NET app, see the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder?displayProperty=fullName> class and [Configuration in .NET](../extensions/configuration.md).
@@ -87,11 +88,11 @@ If you're placing the options in the template JSON file, omit the `runtimeOption
 
 ## MSBuild properties
 
-Some runtime configuration options can be set using MSBuild properties in the *.csproj* or *.vbproj* file of SDK-style .NET Core projects. MSBuild properties take precedence over options set in the *runtimeconfig.template.json* file.
+Some runtime configuration options can be set using MSBuild properties in the *.csproj* or *.vbproj* file of SDK-style .NET projects. MSBuild properties take precedence over options set in the *runtimeconfig.template.json* file.
 
 For runtime configuration settings that don't have a specific MSBuild property, you can use the `RuntimeHostConfigurationOption` MSBuild item instead.
 
-Here is an example SDK-style project file with MSBuild properties for configuring run-time behavior:
+Here is an example SDK-style project file with MSBuild properties for configuring the behavior of the .NET runtime:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -115,11 +116,11 @@ Here is an example SDK-style project file with MSBuild properties for configurin
 </Project>
 ```
 
-MSBuild properties for configuring the behavior of the runtime are noted in the individual articles for each area, for example, [garbage collection](garbage-collector.md). They are also listed in the [Runtime configuration](../project-sdk/msbuild-props.md#runtime-configuration-properties) section of the MSBuild properties reference for SDK-style projects.
+MSBuild properties for configuring the behavior of the runtime are noted in the individual articles for each area, for example, [garbage collection](garbage-collector.md). They're also listed in the [Runtime configuration](../project-sdk/msbuild-props.md#runtime-configuration-properties) section of the MSBuild properties reference for SDK-style projects.
 
 ## Environment variables
 
-Environment variables can be used to supply some runtime configuration information. Configuring a run-time option by using an environment variable applies the setting to all .NET Core apps. Configuration knobs specified as environment variables generally have the prefix **DOTNET_**.
+Environment variables can be used to supply some runtime configuration information. Configuration knobs specified as environment variables generally have the prefix **DOTNET_**.
 
 [!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 

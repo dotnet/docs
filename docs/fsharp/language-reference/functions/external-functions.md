@@ -5,7 +5,7 @@ ms.date: 05/16/2016
 ---
 # External Functions
 
-This topic describes F# language support for calling functions in native code.
+This article describes F# language support for calling functions in native code.
 
 ## Syntax
 
@@ -16,7 +16,7 @@ extern declaration
 
 ## Remarks
 
-In the previous syntax, *arguments* represents arguments that are supplied to the `System.Runtime.InteropServices.DllImportAttribute` attribute. The first argument is a string that represents the name of the DLL that contains this function, without the .dll extension. Additional arguments can be supplied for any of the public properties of the `System.Runtime.InteropServices.DllImportAttribute` class, such as the calling convention.
+In the previous syntax, `arguments` represents arguments that are supplied to the `System.Runtime.InteropServices.DllImportAttribute` attribute. The first argument is a string that represents the name of the DLL that contains this function, without the .dll extension. Additional arguments can be supplied for any of the public properties of the `System.Runtime.InteropServices.DllImportAttribute` class, such as the calling convention.
 
 Assume you have a native C++ DLL that contains the following exported function.
 
@@ -41,6 +41,33 @@ InteropWithNative.HelloWorld()
 ```
 
 Interoperability with native code is referred to as *platform invoke* and is a feature of the CLR. For more information, see [Interoperating with Unmanaged Code](../../../framework/interop/index.md). The information in that section is applicable to F#.
+
+### Defining Parameters in External Functions
+
+When you declare external functions with return values or parameters, you use a syntax similar to C. You have the option to use the managed declarations (where the CLR will perform some automatic conversions between native and .NET types) and unmanaged declarations, which might offer better performance in some circumstances. For example, the Windows function [GetBinaryTypeW](/windows/win32/api/winbase/nf-winbase-getbinarytypew) can be declared in two different ways:
+
+```fs
+// Using automatic marshaling of managed types
+[<DllImport("kernel32.dll",
+    CallingConvention = CallingConvention.StdCall,
+    CharSet = CharSet.Unicode,
+    ExactSpelling = true)>]
+extern bool GetBinaryTypeW([<MarshalAs(UnmanagedType.LPWStr)>] string lpApplicationName, uint& lpBinaryType);
+```
+
+`MarshalAs(UnmanagedType.LPWStr)` instructs the CLR to perform an automatic conversion between a .NET `string` and Windows native string representation when the function is called. `uint&` declares a `uint` that will be passed `byref`, that is, as a managed pointer. To obtain a managed pointer, you use the address of `&` operator.
+
+Alternately, you might want to manage the marshalling of data types manually and declare the external functions using only [unmanaged types](../../../csharp/language-reference/builtin-types/unmanaged-types.md).
+
+```fs
+// Using unmanaged types
+[<DllImport("kernel32.dll", CallingConvention = CallingConvention.StdCall, ExactSpelling = true)>]
+extern int GetBinaryTypeW(nativeint lpApplicationName, uint* lpBinaryType);
+```
+
+You could use<xref:System.Runtime.InteropServices.Marshal.StringToHGlobalUni%2A?displayProperty=nameWithType> to convert a .NET string to native format and receive a pointer (`nativeint`) to it that could be supplied to `lpApplicationName`.
+
+To obtain a pointer to an integer, use the pointer of `&&` operator or the [`fixed`](../fixed.md) keyword.
 
 ## See also
 

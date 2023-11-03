@@ -1,7 +1,7 @@
 ---
 title: Asynchronous programming in C#
 description: An overview of the C# language support for asynchronous programming using async, await, Task, and Task<T>
-ms.date: 02/08/2023
+ms.date: 09/28/2023
 ---
 # Asynchronous programming with async and await
 
@@ -202,6 +202,9 @@ When code running asynchronously throws an exception, that exception is stored i
 
 The most common scenario for a faulted task is that the `Exception` property contains exactly one exception. When code `awaits` a faulted task, the first exception in the <xref:System.AggregateException.InnerExceptions?displayProperty=nameWithType> collection is rethrown. That's why the output from this example shows an `InvalidOperationException` instead of an `AggregateException`. Extracting the first inner exception makes working with asynchronous methods as similar as possible to working with their synchronous counterparts. You can examine the `Exception` property in your code when your scenario may generate multiple exceptions.
 
+> [!TIP]
+> We recommend that any argument validation exceptions emerge *synchronously* from task-returning methods. For more information and an example of how to do it, see [Exceptions in task-returning methods](../fundamentals/exceptions/creating-and-throwing-exceptions.md#exceptions-in-task-returning-methods).
+
 Before going on, comment out these two lines in your `ToastBreadAsync` method. You don't want to start another fire:
 
 ```csharp
@@ -253,7 +256,7 @@ After all those changes, the final version of the code looks like this:
 
 :::image type="content" source="media/whenany-async-breakfast.png" alt-text="when any async breakfast":::
 
-The final version of the asynchronously prepared breakfast took roughly 15 minutes because some tasks ran concurrently, and the code monitored multiple tasks at once and only took action when it was needed.
+The final version of the asynchronously prepared breakfast took roughly 6 minutes because some tasks ran concurrently, and the code monitored multiple tasks at once and only took action when it was needed.
 
 This final code is asynchronous. It more accurately reflects how a person would cook a breakfast. Compare the preceding code with the first code sample in this article. The core actions are still clear from reading the code. You can read this code the same way you'd read those instructions for making a breakfast at the beginning of this article. The language features for `async` and `await` provide the translation every person makes to follow those written instructions: start tasks as you can and don't block waiting for tasks to complete.
 

@@ -82,12 +82,12 @@
         {
             "source_path_from_root": "/docs/core/compatibility/core-libraries/7.0/binaryformatter-apis-produce-errors.md",
             "redirect_url": "/dotnet/core/compatibility/serialization/7.0/binaryformatter-apis-produce-errors",
-            "redirect_document_id": true    
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/compatibility/core-libraries/7.0/serializationformat-binary.md",
             "redirect_url": "/dotnet/core/compatibility/serialization/7.0/serializationformat-binary",
-            "redirect_document_id": true    
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/compatibility/extensions/6.0/bind-single-elements-to-array.md",
@@ -142,6 +142,10 @@
         {
             "source_path_from_root": "/docs/core/compatibility/sdk/6.0/implicit-namespaces-rc1.md",
             "redirect_url": "/dotnet/core/compatibility/6.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/sdk/8.0/tool-rollforward.md",
+            "redirect_url": "/dotnet/core/compatibility/8.0"
         },
         {
             "source_path_from_root": "/docs/core/compatibility/serialization.md",
@@ -766,6 +770,10 @@
             "redirect_url": "/dotnet/core/install/windows"
         },
         {
+            "source_path_from_root": "/docs/core/install/linux-snap.md",
+            "redirect_url": "/dotnet/core/install/linux"
+        },
+        {
             "source_path_from_root": "/docs/core/install/sdk.md",
             "redirect_url": "/dotnet/core/install/windows"
         },
@@ -1171,6 +1179,10 @@
         {
             "source_path_from_root": "/docs/fundamentals/networking/tcp/tcp-overview.md",
             "redirect_url": "/dotnet/fundamentals/networking/sockets/tcp-classes"
+        },
+        {
+            "source_path_from_root": "/docs/core/porting/upgrade-assistant-uwp-framework.md",
+            "redirect_url": "/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/upgrade-assistant"
         }
     ]
 }

@@ -29,7 +29,6 @@ You can also write custom converters to customize or extend `System.Text.Json` w
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
-* [Support enum string value deserialization](#support-enum-string-value-deserialization).
 * [Use default system converter](#use-default-system-converter).
 
 ::: zone-end
@@ -39,7 +38,7 @@ You can also write custom converters to customize or extend `System.Text.Json` w
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
-* [Support enum string value deserialization](#support-enum-string-value-deserialization).
+* [Naming policies for enum string deserialization](#naming-policies-for-enum-string-deserialization).
 
 ::: zone-end
 
@@ -221,7 +220,6 @@ The following sections provide converter samples that address some common scenar
 
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
-* [Support enum string value deserialization](#support-enum-string-value-deserialization).
 * [Use default system converter](#use-default-system-converter).
 
 ::: zone-end
@@ -231,7 +229,7 @@ The following sections provide converter samples that address some common scenar
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
-* [Support enum string value deserialization](#support-enum-string-value-deserialization).
+* [Naming policies for enum string deserialization](#naming-policies-for-enum-string-deserialization).
 
 ::: zone-end
 
@@ -328,9 +326,13 @@ The following code registers the converter:
 
 :::code language="csharp" source="snippets/how-to/csharp/RoundtripStackOfT.cs" id="Register":::
 
-### Support enum string value deserialization
+::: zone pivot="dotnet-6-0"
 
-By default, the built-in <xref:System.Text.Json.Serialization.JsonStringEnumConverter> can serialize and deserialize string values for enums. It works without a specified naming policy or with the <xref:System.Text.Json.JsonNamingPolicy.CamelCase> naming policy. It doesn't support other naming policies, such as snake case. For information about custom converter code that can support round-tripping to and from enum string values while using a snake case naming policy, see GitHub issue [dotnet/runtime #31619](https://github.com/dotnet/runtime/issues/31619#issuecomment-891994805).
+### Naming policies for enum string deserialization
+
+By default, the built-in <xref:System.Text.Json.Serialization.JsonStringEnumConverter> can serialize and deserialize string values for enums. It works without a specified naming policy or with the <xref:System.Text.Json.JsonNamingPolicy.CamelCase> naming policy. It doesn't support other naming policies, such as snake case. For information about custom converter code that can support round-tripping to and from enum string values while using a snake case naming policy, see GitHub issue [dotnet/runtime #31619](https://github.com/dotnet/runtime/issues/31619#issuecomment-891994805). Alternatively, upgrade to .NET 7 or later versions, which provide built-in support for applying naming policies when round-tripping to and from enum string values.
+
+::: zone-end
 
 ::: zone pivot="dotnet-7-0"
 

@@ -22,6 +22,9 @@ In this tutorial, you'll implement the following interface definitions. These in
 
 All source code used in this tutorial is available in the [dotnet/samples repository](https://github.com/dotnet/samples/tree/main/core/interop/comwrappers/Tutorial).
 
+> [!Note]
+> In the .NET 8 SDK and later versions, a source generator is provided to automatically generate a `ComWrappers` API implementation for you. For more information, see [`ComWrappers` source generation](./comwrappers-source-generation.md).
+
 **C# definitions**
 
 ```csharp

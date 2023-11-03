@@ -49,11 +49,11 @@ This example parses a set of CSV files from hypothetical customers. It ensures t
 
 ## Game data visualization
 
-![Game telemetry](/samples/azure-samples/gaming-in-editor-telemetry/in-editor-telemetry-visualization/media/points.png)
+![Game telemetry](https://github.com/Azure-Samples/gaming-in-editor-telemetry/blob/master/Documentation/img/points.png)
 
 An example of how a developer could implement an in-editor data visualization solution for their game. In fact, an Unreal Engine 4 Plugin and Unity Plugin were developed using this sample as its backend. The service component is game engine agnostic.
 
-[In-editor game telemetry visualization](/samples/azure-samples/gaming-in-editor-telemetry/in-editor-telemetry-visualization/)
+[In-editor game telemetry visualization](https://github.com/Azure-Samples/gaming-in-editor-telemetry/tree/master)
 
 ## GraphQL
 
@@ -63,11 +63,11 @@ Create a serverless function that exposes a GraphQL API.
 
 ## Internet of Things (IoT) reliable edge relay
 
-![IoT Architecture](/samples/azure-samples/iot-reliable-edge-relay/iot-reliable-edge-relay/media/architecture.png)
+![IoT Architecture](https://github.com/Azure-Samples/iot-reliable-edge-relay/blob/main/images/architecture.svg)
 
 This sample implements a new communication protocol to enable reliable upstream communication from IoT devices. It automates data gap detection and backfill.
 
-[IoT Reliable Edge Relay](/samples/azure-samples/iot-reliable-edge-relay/iot-reliable-edge-relay/)
+[IoT Reliable Edge Relay](https://github.com/Azure-Samples/iot-reliable-edge-relay)
 
 ## Microservices reference architecture
 
@@ -79,7 +79,7 @@ A reference architecture that walks you through the decision-making process invo
 
 ## Serverless for mobile
 
-Azure Functions are easy to implement and maintain, and accessible through HTTP. They are a great way to implement an API for a mobile application. Microsoft offers great cross-platform tools for iOS, Android, and Windows with Xamarin. As such, Xamarin and Azure Functions are working great together. This article shows how to implement an Azure Function in the Azure portal or in Visual Studio at first, and build a cross-platform client with Xamarin.Forms running on Android, iOS, and Windows.
+Azure Functions are easy to implement and maintain, and accessible through HTTP. They're a good way to implement an API for a mobile application. Microsoft offers cross-platform tools for iOS, Android, and Windows with Xamarin. As such, Xamarin and Azure Functions work well together. This article shows how to implement an Azure Function in the Azure portal or in Visual Studio, and then build a cross-platform client with Xamarin.Forms running on Android, iOS, and Windows.
 
 [Implementing a simple Azure Function with a Xamarin.Forms client](/samples/azure-samples/functions-xamarin-getting-started/implementing-a-simple-azure-function-with-a-xamarinforms-client/)
 
@@ -96,8 +96,8 @@ This sample shows how to utilize Durable Functions' fan-out pattern to load an a
 - [Customer Reviews App with Cognitive Services](/samples/azure-samples/functions-customer-reviews/customer-reviews-cognitive-services/)
 - [File processing and validation using Azure Functions, Logic Apps, and Durable Functions](/samples/azure-samples/serverless-file-validation/file-processing-and-validation-using-azure-functions-logic-apps-and-durable-functions/)
 - [Implementing a simple Azure Function with a Xamarin.Forms client](/samples/azure-samples/functions-xamarin-getting-started/implementing-a-simple-azure-function-with-a-xamarinforms-client/)
-- [In-editor game telemetry visualization](/samples/azure-samples/gaming-in-editor-telemetry/in-editor-telemetry-visualization/)
-- [IoT Reliable Edge Relay](/samples/azure-samples/iot-reliable-edge-relay/iot-reliable-edge-relay/)
+- [In-editor game telemetry visualization](https://github.com/Azure-Samples/gaming-in-editor-telemetry/tree/master)
+- [IoT Reliable Edge Relay](https://github.com/Azure-Samples/iot-reliable-edge-relay)
 - [Produce and Consume messages through Service Bus, Event Hubs, and Storage Queues with Azure Functions](/samples/azure-samples/durable-functions-producer-consumer/product-consume-messages-az-functions/)
 - [Serverless functions for GraphQL](https://github.com/softchris/graphql-workshop-dotnet/blob/master/docs/workshop/4.md)
 - [Serverless Microservices reference architecture](/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/)

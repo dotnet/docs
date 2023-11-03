@@ -34,7 +34,7 @@ In addition:
 - The `PublishReadyToRun` property no longer implies `SelfContained` if the project targets .NET 8 or later.
 
 > [!NOTE]
->If you publish using `msbuild /t:Publish`, you must explicitly specify `SelfContained` if you want your app to be self-contained, even if your project has one of the listed publish properties.
+> If you publish using `msbuild /t:Publish` and you want your app to be self-contained, you must explicitly specify `SelfContained`, even if your project has one of the listed publish properties.
 
 ## Version introduced
 

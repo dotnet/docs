@@ -23,3 +23,16 @@ public class Widget(string name, int width, int height, int depth) : NamedItem(n
     public int Volume => width * height * depth;
 }
 // </DerivedPrimaryConstructor>
+
+public class MyAttribute:  System.Attribute
+{
+}
+
+// <PrimaryConstructorAttribute>
+[method: MyAttribute]
+public class TaggedWidget(string name)
+{
+   // details elided
+}
+// </PrimaryConstructorAttribute>
+

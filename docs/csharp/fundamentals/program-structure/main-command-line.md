@@ -110,15 +110,18 @@ Return value = 0
 When you declare an `async` return value for `Main`, the compiler generates the boilerplate code for calling asynchronous methods in `Main`.  If you don't specify the `async` keyword, you need to write that code yourself, as shown in the following example. The code in the example ensures that your program runs until the asynchronous operation is completed:
 
 ```csharp
-public static void Main()
+class AsyncMainReturnValTest
 {
-    AsyncConsoleWork().GetAwaiter().GetResult();
-}
+    public static void Main()
+    {
+        AsyncConsoleWork().GetAwaiter().GetResult();
+    }
 
-private static async Task<int> AsyncConsoleWork()
-{
-    // Main body here
-    return 0;
+    private static async Task<int> AsyncConsoleWork()
+    {
+        // Main body here
+        return 0;
+    }
 }
 ```
 

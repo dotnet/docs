@@ -2,7 +2,6 @@
 title: Configuration files for code analysis rules
 description: Learn about different configuration files to configure code analysis rules.
 ms.date: 07/07/2021
-ms.topic: conceptual
 no-loc: ["EditorConfig"]
 ---
 # Configuration files for code analysis rules
@@ -98,6 +97,18 @@ Consider the following naming recommendations:
 
 > [!NOTE]
 > The top-level entry `is_global = true` is not required when the file is named `.globalconfig`, but it is recommended for clarity.
+
+### Distribution in NuGet packages
+
+Global AnalyzerConfig files can be distributed with NuGet packages. To do so, add a [*.props* file](/nuget/concepts/msbuild-props-and-targets) to the NuGet package. In the *.props* file, add a `GlobalAnalyzerConfigFiles` item under the `Project` node:
+
+```xml
+<Project>
+  <ItemGroup>
+    <GlobalAnalyzerConfigFiles Include="Relative/Path/to/PackageName.globalconfig" />
+  </ItemGroup>
+</Project>
+```
 
 ### Example
 

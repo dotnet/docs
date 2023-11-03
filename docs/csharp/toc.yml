@@ -151,12 +151,14 @@ items:
   - name: C# 12
     displayName: what's New
     href: whats-new/csharp-12.md
+  - name: Breaking changes in C# 12
+    href: ../../_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%208.md
   - name: C# 11
     items:
     - name: New features
       displayName: what's new
       href: whats-new/csharp-11.md
-    - name: Breaking changes
+    - name: Breaking changes in C# 11
       href: ../../_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%207.md
   - name: C# 10
     href: whats-new/csharp-10.md
@@ -503,6 +505,8 @@ items:
     href: roslyn-sdk/syntax-visualizer.md
   - name: Source Generators
     href: roslyn-sdk/source-generators-overview.md
+  - name: Choose diagnostic IDs
+    href: roslyn-sdk/choosing-diagnostic-ids.md
   - name: Quick starts
     items:
     - name: Syntax analysis
@@ -544,8 +548,6 @@ items:
     - name: Overview
       displayName: programming concepts
       href: programming-guide/concepts/index.md
-    - name: Collections
-      href: programming-guide/concepts/collections.md
     - name: Covariance and contravariance
       items:
       - name: Overview
@@ -704,23 +706,6 @@ items:
       href: programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md
     - name: "How to declare, instantiate, and use a delegate"
       href: programming-guide/delegates/how-to-declare-instantiate-and-use-a-delegate.md
-  - name: Arrays
-    items:
-    - name: Overview
-      displayName: arrays
-      href: programming-guide/arrays/index.md
-    - name: Single-Dimensional Arrays
-      href: programming-guide/arrays/single-dimensional-arrays.md
-    - name: Multidimensional Arrays
-      href: programming-guide/arrays/multidimensional-arrays.md
-    - name: Jagged Arrays
-      href: programming-guide/arrays/jagged-arrays.md
-    - name: Using foreach with Arrays
-      href: programming-guide/arrays/using-foreach-with-arrays.md
-    - name: Passing Arrays as Arguments
-      href: programming-guide/arrays/passing-arrays-as-arguments.md
-    - name: Implicitly Typed Arrays
-      href: programming-guide/arrays/implicitly-typed-arrays.md
   - name: Strings
     items:
     - name: Programming with strings
@@ -832,6 +817,12 @@ items:
       - name: Nullable reference types
         href: language-reference/builtin-types/nullable-reference-types.md
         displayName: "? token, ? symbol"
+      - name: Collections and arrays
+        items:
+        - name: Collections
+          href: language-reference/builtin-types/collections.md
+        - name: Arrays
+          href: language-reference/builtin-types/arrays.md
     - name: void
       href: language-reference/builtin-types/void.md
     - name: Built-in types
@@ -909,15 +900,8 @@ items:
     - name: Method Parameters
       items:
       - name: Passing parameters
+        displayName: ref, in, out, params, reference parameter, value parameter, ref readonly
         href: language-reference/keywords/method-parameters.md
-      - name: params
-        href: language-reference/keywords/params.md
-      - name: in (Parameter Modifier)
-        href: language-reference/keywords/in-parameter-modifier.md
-      - name: ref
-        href: language-reference/keywords/ref.md
-      - name: out (Parameter Modifier)
-        href: language-reference/keywords/out-parameter-modifier.md
     - name: Namespace Keywords
       items:
       - name: namespace
@@ -1015,6 +999,9 @@ items:
     - name: Bitwise and shift operators
       href: language-reference/operators/bitwise-and-shift-operators.md
       displayName: "~, &, |, ^, <<, >>, &=, |=, ^=, <<=, >>=, AND, XOR, OR"
+    - name: Collection expressions
+      displayName: Collection literal, ".. token", ".. symbol", "[] token", "[] symbol"
+      href: language-reference/operators/collection-expressions.md 
     - name: Equality operators
       href: language-reference/operators/equality-operators.md
       displayName: ==, !=
@@ -1154,7 +1141,7 @@ items:
       displayName: AllowNull, DisallowNull, MaybeNull, NotNull, MaybeNullWhen, NotNullWhen, NotNullIfNotNull, DoesNotReturn, DoesNotReturnIf
       href: language-reference/attributes/nullable-analysis.md
     - name: Miscellaneous
-      displayName: Conditional, Obsolete, SetsRequiredMembers, AttributeUsage, ModuleInitializer, SkipLocalsInit, module initializer
+      displayName: Conditional, Obsolete, Experimental, SetsRequiredMembers, AttributeUsage, ModuleInitializer, SkipLocalsInit, module initializer
       href: language-reference/attributes/general.md
   - name: Unsafe code and pointers
     displayName: unsafe code, pointers, fixed size buffer, function pointer
@@ -1393,13 +1380,19 @@ items:
         href: ../../_csharplang/proposals/csharp-11.0/file-local-types.md
       - name: Generic attributes
         href: ../../_csharplang/proposals/csharp-11.0/generic-attributes.md
-    - name: C# Preview features
+    - name: C# 12 features
       items:
       - name: Primary constructors
         href: ../../_csharplang/proposals/csharp-12.0/primary-constructors.md
+      - name: Collection expressions
+        href: ../../_csharplang/proposals/csharp-12.0/collection-expressions.md
       - name: Alias any type
         href: ../../_csharplang/proposals/csharp-12.0/using-alias-types.md
       - name: Optional Lambda expression parameters
         href: ../../_csharplang/proposals/csharp-12.0/lambda-method-group-defaults.md
       - name: Inline arrays
         href: ../../_csharplang/proposals/csharp-12.0/inline-arrays.md
+      - name: Ref readonly parameters
+        href: ../../_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md
+      - name: Experimental attribute
+        href: ../../_csharplang/proposals/csharp-12.0/experimental-attribute.md

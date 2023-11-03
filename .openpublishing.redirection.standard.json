@@ -59,6 +59,10 @@
             "redirect_url": "/dotnet/standard/base-types/backtracking-in-regular-expressions"
         },
         {
+            "source_path_from_root": "/docs/standard/base-types/best-practices.md",
+            "redirect_url": "/dotnet/standard/base-types/best-practices-regex"
+        },
+        {
             "source_path_from_root": "/docs/standard/base-types/changing-formats.md",
             "redirect_url": "/dotnet/standard/base-types/regular-expression-example-changing-date-formats"
         },
@@ -807,6 +811,11 @@
         {
             "source_path_from_root": "/docs/standard/using-linq.md",
             "redirect_url": "/dotnet/standard/linq/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/native-interop/cross-platform.md",
+            "redirect_url": "/dotnet/standard/native-interop/native-library-loading",
             "redirect_document_id": true
         }
     ]

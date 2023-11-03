@@ -1,7 +1,7 @@
 ---
 title: Native interoperability best practices - .NET
 description: Learn the best practices for interfacing with native components in .NET.
-ms.date: 01/18/2019
+ms.date: 10/27/2023
 ---
 # Native interoperability best practices
 
@@ -15,7 +15,8 @@ The guidance in this section applies to all interop scenarios.
 - ✔️ CONSIDER using the same naming and capitalization for constant values.
 - ✔️ DO use .NET types that map closest to the native type. For example, in C#, use `uint` when the native type is `unsigned int`.
 - ✔️ DO prefer expressing higher level native types using .NET structs rather than classes.
-- ✔️ DO only use `[In]` and `[Out]` attributes when the behavior you want differs from the default behavior.
+- ✔️ DO use `[In]` and `[Out]` attributes on array parameters.
+- ✔️ DO only use `[In]` and `[Out]` attributes on other types when the behavior you want differs from the default behavior.
 - ✔️ CONSIDER using <xref:System.Buffers.ArrayPool%601?displayProperty=nameWithType> to pool your native array buffers.
 - ✔️ CONSIDER wrapping your P/Invoke declarations in a class with the same name and capitalization as your native library.
   - This allows your `[DllImport]` attributes to use the C# `nameof` language feature to pass in the name of the native library and ensure that you didn't misspell the name of the native library.
@@ -33,7 +34,7 @@ The guidance in this section applies to all interop scenarios.
 
 When the CharSet is Unicode or the argument is explicitly marked as `[MarshalAs(UnmanagedType.LPWSTR)]` _and_ the string is passed by value (not `ref` or `out`), the string will be pinned and used directly by native code (rather than copied).
 
-❌ DO NOT use `[Out] string` parameters. String parameters passed by value with the `[Out]` attribute can destabilize the runtime if the string is an interned string. See more information about string interning in the documentation for <xref:System.String.Intern%2A?displayProperty=nameWithType>.
+❌ DON'T use `[Out] string` parameters. String parameters passed by value with the `[Out]` attribute can destabilize the runtime if the string is an interned string. See more information about string interning in the documentation for <xref:System.String.Intern%2A?displayProperty=nameWithType>.
 
 ✔️ CONSIDER setting the `CharSet` property in `[DllImport]` so the runtime knows the expected string encoding.
 
@@ -73,13 +74,13 @@ Booleans are easy to mess up. By default, a .NET `bool` is marshalled to a Windo
 
 ## GUIDs
 
-GUIDs are usable directly in signatures. Many Windows APIs take `GUID&` type aliases like `REFIID`. When passed by ref, they can either be passed by `ref` or with the `[MarshalAs(UnmanagedType.LPStruct)]` attribute.
+GUIDs are usable directly in signatures. Many Windows APIs take `GUID&` type aliases like `REFIID`. When the method signature contains a reference parameter, place either a `ref` keyword or a `[MarshalAs(UnmanagedType.LPStruct)]` attribute on the GUID parameter declaration.
 
 | GUID | By-ref GUID |
 |------|-------------|
 | `KNOWNFOLDERID` | `REFKNOWNFOLDERID` |
 
-❌ DO NOT Use `[MarshalAs(UnmanagedType.LPStruct)]` for anything other than `ref` GUID parameters.
+❌ DON'T Use `[MarshalAs(UnmanagedType.LPStruct)]` for anything other than `ref` GUID parameters.
 
 ## Blittable types
 

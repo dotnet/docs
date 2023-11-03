@@ -51,10 +51,13 @@
                     "csharp-9.0/*.md",
                     "csharp-10.0/*.md",
                     "csharp-11.0/*.md",
-                    "primary-constructors.md",
-                    "using-alias-types.md",
-                    "lambda-method-group-defaults.md",
-                    "inline-arrays.md"
+                    "csharp-12.0/primary-constructors.md",
+                    "csharp-12.0/collection-expressions.md",
+                    "csharp-12.0/using-alias-types.md",
+                    "csharp-12.0/lambda-method-group-defaults.md",
+                    "csharp-12.0/inline-arrays.md",
+                    "csharp-12.0/experimental-attribute.md",
+                    "csharp-12.0/ref-readonly-parameters.md"
                 ],
                 "src": "_csharplang/proposals",
                 "dest": "csharp/language-reference/proposals",
@@ -75,7 +78,8 @@
             },
             {
                 "files": [
-                    "Compiler Breaking Changes - DotNet 7.md"
+                    "Compiler Breaking Changes - DotNet 7.md",
+                    "Compiler Breaking Changes - DotNet 8.md"
                 ],
                 "src": "_roslyn/docs/compilers/CSharp",
                 "dest": "csharp/whats-new/breaking-changes",
@@ -131,7 +135,6 @@
             "ms.devlang": "dotnet",
             "ms.prod": "dotnet",
             "ms.topic": "conceptual",
-            "recommendations": true,
             "searchScope": [
                 ".NET"
             ],
@@ -160,11 +163,69 @@
         },
         "fileMetadata": {
             "feedback_system": {
+                "_csharplang/**.*": "OpenSource",
+                "_csharpstandard/standard/*.md": "OpenSource",
+                "_vblang/**.*": "OpenSource",
+                "_roslyn/**.*": "OpenSource",
+                "docs/**.*": "OpenSource",
                 "docs/standard/design-guidelines/**/**.md": "None",
                 "docs/framework/data/adonet/**/**.md": "None",
                 "docs/framework/data/wcf/**/**.md": "None",
                 "docs/framework/ui-automation/**/**.md": "None",
                 "docs/framework/wcf/**/**.md": "None"
+            },
+            "open_source_feedback_contributorGuideUrl": {
+                "docs/**/**.*": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute",
+                "_csharplang/**.*": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute",
+                "_csharpstandard/standard/*.md": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute",
+                "_vblang/**.*": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute",
+                "_roslyn/**.*": "https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute"
+            },
+            "open_source_feedback_issueUrl": {
+                "docs/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml",
+                "_csharplang/**.*": "https://github.com/dotnet/charplang/issues/new?template=docs-feedback.yml",
+                "_csharpstandard/standard/*.md": "https://github.com/dotnet/csharpstandard/issues/new?template=docs-feedback.yml",
+                "_vblang/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml",
+                "_roslyn/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml"
+            },
+            "open_source_feedback_productName": {
+                "docs/**.*": ".NET feedback",
+                "_csharplang/**.*": "C# feature specification feedback",
+                "_csharpstandard/standard/*.md": "C# Standard documentation feedback",
+                "_vblang/**.*": "Visual Basic language spec feedback",
+                "_roslyn/**.*": "Roslyn breaking feedback"
+            },
+            "open_source_feedback_productDescription": {
+                "docs/**.*": "The .NET documentation is open source. Provide feedback here.",
+                "_csharplang/**.*": "The C# feature specifications are open source. Provide feedback here.",
+                "_csharpstandard/standard/*.md": "The C# Standard documentation is open source. Provide feedback here.",
+                "_vblang/**.*": "The Visual Basic language documentation is open source. Provide feedback here.",
+                "_roslyn/**.*": "The Roslyn documentation is open source. Provide feedback here."
+            },
+            "open_source_feedback_issueTitle": {
+                "docs/**.*": "",
+                "_csharplang/**.*": "",
+                "_csharpstandard/standard/*.md": "",
+                "_vblang/**.*": "",
+                "_roslyn/**.*": ""
+            },
+            "open_source_feedback_productLogoLightUrl": {
+                "docs/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_csharplang/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_csharpstandard/standard/*.md": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_vblang/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_roslyn/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg"
+            },
+            "open_source_feedback_productLogoDarkUrl": {
+                "docs/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_csharplang/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_csharpstandard/standard/*.md": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_vblang/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg",
+                "_roslyn/**.*": "https://learn.microsoft.com/media/logos/logo_net.svg"
+            },
+            "open_source_feedback_issueLabels": {
+                "_csharplang/**.*": "Area-Speclets,untriaged",
+                "_csharpstandard/standard/*.md": "status: needs triaging"
             },
             "social_image_url": {
                 "docs/**/*.*": "/dotnet/media/dotnet-logo.png",
@@ -188,8 +249,7 @@
                 "docs/fundamentals/code-analysis/quality-rules/**/il*.md": "https://github.com/mono/linker/issues",
                 "docs/fundamentals/code-analysis/style-rules/**/*.md": "https://github.com/dotnet/roslyn/issues",
                 "docs/machine-learning/**/**.md": "https://github.com/dotnet/machinelearning",
-                "docs/standard/data/sqlite/**/*.md": "https://github.com/dotnet/efcore",
-                "docs/spark/**/**.md": "https://github.com/dotnet/spark"
+                "docs/standard/data/sqlite/**/*.md": "https://github.com/dotnet/efcore"
             },
             "ms.prod": {
                 "_csharplang/**/*.md": "dotnet-csharp",
@@ -199,7 +259,7 @@
                 "docs/architecture/**/**.md": "dotnet-architecture",
                 "docs/azure/**/*.*": "dotnet-azure",
                 "docs/core/**/*.*": "dotnet-fundamentals",
-                "docs/core/install/**/**.md": ".net",
+                "docs/core/install/**/**.md": "dotnet-fundamentals",
                 "docs/csharp/**/*.*": "dotnet-csharp",
                 "docs/framework/**/**.md": "dotnet-framework",
                 "docs/fsharp/**/**.md": "dotnet-fsharp",
@@ -210,7 +270,6 @@
                 "docs/standard/design-guidelines/*.md": "dotnet",
                 "docs/standard/security/*.md": "dotnet",
                 "docs/visual-basic/**/**.md": "dotnet-visualbasic",
-                "docs/spark/**/**.md": "dotnet-spark",
                 "docs/orleans/**/**.md": "dotnet-orleans"
             },
             "ms.topic": {
@@ -218,7 +277,10 @@
                 "_csharpstandard/**/*.md": "language-reference",
                 "_vblang/spec/*.md": "language-reference",
                 "docs/azure/**/**.md": "conceptual",
-                "docs/core/compatibility/**.md": "reference",
+                "docs/core/deploying/native-aot/warnings/**.md": "error-reference",
+                "docs/core/deploying/single-file/warnings/**.md": "error-reference",
+                "docs/core/deploying/trimming/trim-warnings/**.md": "error-reference",
+                "docs/core/runtime-config/**.md": "reference",
                 "docs/core/tools/dotnet*.md": "reference",
                 "docs/core/tools/sdk-errors/*.md": "error-reference",
                 "docs/core/tutorials/**.md": "tutorial",
@@ -237,33 +299,30 @@
                 "docs/framework/configure-apps/file-schema/**/**.md": "reference",
                 "docs/framework/data/adonet/ef/language-reference/*-entity-sql.md": "language-reference",
                 "docs/framework/debug-trace-profile/*-mda.md": "reference",
-                "docs/framework/migration-guide/**/**.md": "reference",
                 "docs/framework/performance/*-etw-events.md": "reference",
                 "docs/framework/tools/**/**.md": "reference",
                 "docs/framework/unmanaged-api/**/**.md": "reference",
                 "docs/framework/wcf/diagnostics/etw/**.md": "reference",
                 "docs/framework/wcf/diagnostics/event-logging/**.md": "reference",
                 "docs/framework/wcf/diagnostics/performance-counters/**.md": "reference",
-                "docs/framework/wcf/diagnostics/tracing/**.md": "reference",
+                "docs/framework/wcf/diagnostics/tracing/microsoft-transactions-*.md": "reference",
+                "docs/framework/wcf/diagnostics/tracing/ssc-*.md": "reference",
+                "docs/framework/wcf/diagnostics/tracing/system-*.md": "reference",
                 "docs/framework/wcf/diagnostics/wmi/**.md": "reference",
-                "docs/framework/wcf/whats-new/**.md": "reference",
                 "docs/framework/**/how-to*.md": "how-to",
                 "docs/framework/**/troubleshooting*.md": "troubleshooting",
                 "docs/fsharp/language-reference/**/**.md": "language-reference",
                 "docs/iot/**/*.*": "conceptual",
-                "docs/fundamentals/code-analysis/**.md": "reference",
                 "docs/fundamentals/code-analysis/quality-rules/**.md": "reference",
                 "docs/fundamentals/code-analysis/style-rules/**.md": "reference",
-                "docs/fundamentals/diagnostics/**.md": "reference",
-                "docs/fundamentals/syslib-diagnostics/**/*.md": "reference",
+                "docs/fundamentals/diagnostics/runtime-*.md": "reference",
+                "docs/fundamentals/syslib-diagnostics/**/*.md": "error-reference",
                 "docs/standard/**/*how-to*.md": "how-to",
                 "docs/standard/base-types/*.md": "how-to",
-                "docs/standard/data/sqlite/*.md": "reference",
                 "docs/visual-basic/language-reference/**/*.md": "language-reference",
                 "docs/visual-basic/reference/**/*.md": "language-reference",
                 "docs/visual-basic/misc/bc*.md": "error-reference",
                 "docs/visual-basic/**/troubleshooting*.md": "troubleshooting",
-                "docs/whats-new/**/**.md": "reference",
                 "docs/windows-workflow-foundation/1*.md": "error-reference",
                 "docs/windows-workflow-foundation/2*.md": "error-reference",
                 "docs/windows-workflow-foundation/3*.md": "error-reference",
@@ -340,7 +399,6 @@
                 "docs/fundamentals/syslib-diagnostics/**/**.md": "gewarren",
                 "docs/iot/**/*.*": "camsoper",
                 "docs/machine-learning/**/**.md": "luisquintanilla",
-                "docs/spark/**/**.md": "luisquintanilla",
                 "docs/standard/**/**.md": "gewarren",
                 "docs/standard/analyzers/**/**.md": "IEvangelist",
                 "docs/standard/assembly/**/**.md": "IEvangelist",
@@ -427,7 +485,6 @@
                 "docs/fundamentals/syslib-diagnostics/**/**.md": "gewarren",
                 "docs/iot/**/*.*": "casoper",
                 "docs/machine-learning/**/**.md": "luquinta",
-                "docs/spark/**/**.md": "luquinta",
                 "docs/standard/**/**.md": "gewarren",
                 "docs/standard/analyzers/**/**.md": "dapine",
                 "docs/standard/assembly/**/**.md": "dapine",
@@ -464,8 +521,9 @@
                 "_csharplang/proposals/csharp-9.0/*.md": "07/29/2020",
                 "_csharplang/proposals/csharp-10.0/*.md": "08/07/2021",
                 "_csharplang/proposals/csharp-11.0/*.md": "09/30/2022",
-                "_csharplang/proposals/*.md": "07/06/2023",
+                "_csharplang/proposals/csharp-12.0/*.md": "08/15/2023",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "11/08/2022",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "09/26/2023",
                 "_vblang/spec/*.md": "07/21/2017"
             },
             "ms.technology": {
@@ -515,7 +573,7 @@
                 "docs/csharp/language-reference/compiler-messages/**/**.md": "csharp-diagnostics",
                 "docs/csharp/roslyn-sdk/**/**.md": "csharp-roslyn",
                 "docs/csharp/tour-of-csharp/**/**.md": "csharp-get-started",
-                "docs/core/install/**/**.md": "dotnet-installation",
+                "docs/core/install/**/**.md": "dotnet-install",
                 "docs/core/tools/**/**.md": "dotnet-cli",
                 "docs/core/docker/**/**.md": "dotnet-docker",
                 "docs/framework/configure-apps/file-schema/network/**/**.md": "dotnet-networking",
@@ -533,44 +591,6 @@
                 "docs/standard/security/**.md": "dotnet-security",
                 "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics",
                 "docs/visual-basic/misc/**/**.md": "vb-diagnostics"
-            },
-            "recommendations": {
-                "_csharplang/**/*.md": false,
-                "_csharpstandard/**/*.md": false,
-                "_vblang/spec/*.md": false,
-                "docs/architecture/**/**.md": false,
-                "docs/standard/design-guidelines/**/**.md": false,
-                "docs/core/compatibility/**/**.md": false,
-                "docs/core/tools/dotnet*.md": false,
-                "docs/core/tools/sdk-errors/**/**.md": false,
-                "docs/csharp/language-reference/**/**.md": false,
-                "docs/csharp/misc/**/**.md": false,
-                "docs/csharp/programming-guide/xmldoc/**/**.md": false,
-                "docs/csharp/tour-of-csharp/**/*.md": false,
-                "docs/csharp/tour-of-csharp/tutorials/*.yml": false,
-                "docs/framework/additional-apis/**/**.md": false,
-                "docs/framework/configure-apps/file-schema/**/**.md": false,
-                "docs/framework/data/adonet/ef/language-reference/*-entity-sql.md": false,
-                "docs/framework/debug-trace-profile/**/**.md": false,
-                "docs/framework/performance/*-etw-events.md": false,
-                "docs/framework/tools/**/**.md": false,
-                "docs/framework/unmanaged-api/**/**.md": false,
-                "docs/framework/wcf/diagnostics/event-logging/**/**.md": false,
-                "docs/framework/wcf/diagnostics/performance-counters/**/**.md": false,
-                "docs/framework/wcf/diagnostics/tracing/**/**.md": false,
-                "docs/framework/wcf/diagnostics/wmi/**/**.md": false,
-                "docs/framework/wcf/whats-new/**.md": false,
-                "docs/fsharp/language-reference/**/**.md": false,
-                "docs/fundamentals/code-analysis/quality-rules/**/**.md": false,
-                "docs/fundamentals/code-analysis/style-rules/**/**.md": false,
-                "docs/fundamentals/diagnostics/**/**.md": false,
-                "docs/fundamentals/syslib-diagnostics/**/**.md": false,
-                "docs/standard/data/sqlite/**/**.md": false,
-                "docs/standard/library-guidance/**/**.md": false,
-                "docs/visual-basic/language-reference/**/**.md": false,
-                "docs/visual-basic/reference/**/**.md": false,
-                "docs/visual-basic/misc/**/**.md": false,
-                "docs/whats-new/**/**.md": false
             },
             "title": {
                 "_csharpstandard/standard/README.md": "Table of contents",
@@ -663,13 +683,17 @@
                 "_csharplang/proposals/csharp-11.0/unsigned-right-shift-operator.md": "Unsigned right shift operator",
                 "_csharplang/proposals/csharp-11.0/utf8-string-literals.md": "UTF-8 string literals",
 
-                "_csharplang/proposals/primary-constructors.md": "Primary constructors",
-                "_csharplang/proposals/using-alias-types.md": "Alias any type",
-                "_csharplang/proposals/lambda-method-group-defaults.md": "Optional and parameter array parameters for lambdas and method groups",
-                "_csharplang/proposals/inline-arrays.md": "Inline arrays, or fixed sized buffers",
-                
+                "_csharplang/proposals/csharp-12.0/primary-constructors.md": "Primary constructors",
+                "_csharplang/proposals/csharp-12.0/using-alias-types.md": "Alias any type",
+                "_csharplang/proposals/csharp-12.0/lambda-method-group-defaults.md": "Optional and parameter array parameters for lambdas and method groups",
+                "_csharplang/proposals/csharp-12.0/inline-arrays.md": "Inline arrays, or fixed sized buffers",
+                "_csharplang/proposals/csharp-12.0/collection-expressions.md": "Collection expressions",
+                "_csharplang/proposals/csharp-12.0/experimental-attribute.md": "Experimental attribute",
+                "_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md": "Ref readonly parameters",
+
 
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "C# compiler breaking changes since C# 10",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "C# compiler breaking changes since C# 11",
                 "_vblang/spec/introduction.md": "Introduction",
                 "_vblang/spec/lexical-grammar.md": "Lexical grammar",
                 "_vblang/spec/preprocessing-directives.md": "Preprocessing directives",
@@ -775,12 +799,16 @@
                 "_csharplang/proposals/csharp-11.0/unsigned-right-shift-operator.md": "This feature defines a logical right-shift operator, `>>>`. The logical right shift operator always shifts in 0 values in the left-most bits during a shift.",
                 "_csharplang/proposals/csharp-11.0/utf8-string-literals.md": "This feature enables the `u8` suffix on a string literal. The `u8` suffix instructs the compiler to convert the UTF-8 string literal to a `ReadOnlySpan<byte>`.",
 
-                "_csharplang/proposals/primary-constructors.md": "Primary constructors put the parameters of one constructor in scope for the whole class or struct to be used for initialization or directly as object state. The trade-off is that any other constructors must call through the primary constructor.",
-                "_csharplang/proposals/using-alias-types.md": "Using directives can alias any type, not just named types. You can create aliases for tuple types, generics and more.",
-                "_csharplang/proposals/lambda-method-group-defaults.md": "Optional and parameter array parameters for lambdas and method groups",
-                "_csharplang/proposals/inline-arrays.md": "Inline arrays provide a general-purpose and safe mechanism for declaring inline arrays within C# classes, structs, and interfaces.",
-                
+                "_csharplang/proposals/csharp-12.0/primary-constructors.md": "Primary constructors put the parameters of one constructor in scope for the whole class or struct to be used for initialization or directly as object state. The trade-off is that any other constructors must call through the primary constructor.",
+                "_csharplang/proposals/csharp-12.0/using-alias-types.md": "Using directives can alias any type, not just named types. You can create aliases for tuple types, generics and more.",
+                "_csharplang/proposals/csharp-12.0/lambda-method-group-defaults.md": "Optional and parameter array parameters for lambdas and method groups",
+                "_csharplang/proposals/csharp-12.0/inline-arrays.md": "Inline arrays provide a general-purpose and safe mechanism for declaring inline arrays within C# classes, structs, and interfaces.",
+                "_csharplang/proposals/csharp-12.0/collection-expressions.md": "Collection expressions provide a concise syntax to initialize collections by defining elements or embedded collections as the source of the new collection's elements.",
+                "_csharplang/proposals/csharp-12.0/experimental-attribute.md": "Use the ExperimentalAttribute attribute to indicate APIs that aren't stable.",
+                "_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md": "Ref readonly parameters enforce that arguments are passed by references, where `in` parameters allow the compiler some flexibiility.",
+
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "Learn about any breaking changes since the initial release of C# 10",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "Learn about any breaking changes since the initial release of C# 11",
                 "_vblang/spec/introduction.md": "This chapter provides and introduction to the Visual Basic language.",
                 "_vblang/spec/lexical-grammar.md": "This chapter defines the lexical grammar for Visual Basic.",
                 "_vblang/spec/preprocessing-directives.md": "This chapter defines the preprocessing directives allowed in Visual Basic",
@@ -796,11 +824,13 @@
                 "_vblang/spec/overload-resolution.md": "This chapter describes the rules that govern overload resolution when multiple members have the same name."
             },
             "titleSuffix": {
+                "docs/**/**.md": ".NET",
                 "_csharpstandard/standard/*.md": "C# language specification",
                 "_csharplang/proposals/csharp-8.0/*.md": "C# 8.0 draft feature specifications",
                 "_csharplang/proposals/csharp-9.0/*.md": "C# 9.0 draft feature specifications",
                 "_csharplang/proposals/csharp-10.0/*.md": "C# 10.0 draft feature specifications",
                 "_csharplang/proposals/csharp-11.0/*.md": "C# 11.0 draft feature specifications",
+                "_csharplang/proposals/csharp-12.0/*.md": "C# 12.0 draft feature specifications",
                 "_csharplang/proposals/*.md": "C# preview feature specifications",
                 "docs/framework/**/**.md": ".NET Framework",
                 "docs/framework/data/adonet/**/**.md": "ADO.NET",
@@ -825,6 +855,7 @@
                 "docs/core/tools/**.md": ".NET CLI",
                 "docs/core/tutorials/**.md": ".NET",
                 "docs/core/versions/**.md": ".NET",
+                "docs/csharp/**/**.md": "C#",
                 "docs/machine-learning/**/**.md": "ML.NET",
                 "docs/standard/data/sqlite/**/**.md": "Microsoft.Data.Sqlite",
                 "docs/standard/design-guidelines/**/**.md": "Framework Design Guidelines",

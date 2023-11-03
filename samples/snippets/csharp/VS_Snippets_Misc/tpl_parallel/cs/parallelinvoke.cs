@@ -2,10 +2,8 @@
 namespace ParallelTasks
 {
     using System;
-    using System.IO;
     using System.Linq;
     using System.Text;
-    using System.Threading;
     using System.Threading.Tasks;
     using System.Net;
 
@@ -18,24 +16,25 @@ namespace ParallelTasks
 
             #region ParallelTasks
             // Perform three tasks in parallel on the source array
-            Parallel.Invoke(() =>
-                             {
-                                 Console.WriteLine("Begin first task...");
-                                 GetLongestWord(words);
-                             },  // close first Action
+            Parallel.Invoke(
+                () =>
+                {
+                    Console.WriteLine("Begin first task...");
+                    GetLongestWord(words);
+                },  // close first Action
 
-                             () =>
-                             {
-                                 Console.WriteLine("Begin second task...");
-                                 GetMostCommonWords(words);
-                             }, //close second Action
+                () =>
+                {
+                    Console.WriteLine("Begin second task...");
+                    GetMostCommonWords(words);
+                }, //close second Action
 
-                             () =>
-                             {
-                                 Console.WriteLine("Begin third task...");
-                                 GetCountForWord(words, "sleep");
-                             } //close third Action
-                         ); //close parallel.invoke
+                () =>
+                {
+                    Console.WriteLine("Begin third task...");
+                    GetCountForWord(words, "sleep");
+                } //close third Action
+            ); //close parallel.invoke
 
             Console.WriteLine("Returned from Parallel.Invoke");
             #endregion
@@ -48,8 +47,8 @@ namespace ParallelTasks
         private static void GetCountForWord(string[] words, string term)
         {
             var findWord = from word in words
-                           where word.ToUpper().Contains(term.ToUpper())
-                           select word;
+                where word.ToUpper().Contains(term.ToUpper())
+                select word;
 
             Console.WriteLine($@"Task 3 -- The word ""{term}"" occurs {findWord.Count()} times.");
         }
@@ -57,10 +56,10 @@ namespace ParallelTasks
         private static void GetMostCommonWords(string[] words)
         {
             var frequencyOrder = from word in words
-                                 where word.Length > 6
-                                 group word by word into g
-                                 orderby g.Count() descending
-                                 select g.Key;
+                where word.Length > 6
+                group word by word into g
+                orderby g.Count() descending
+                select g.Key;
 
             var commonWords = frequencyOrder.Take(10);
 
@@ -76,8 +75,8 @@ namespace ParallelTasks
         private static string GetLongestWord(string[] words)
         {
             var longestWord = (from w in words
-                               orderby w.Length descending
-                               select w).First();
+                orderby w.Length descending
+                select w).First();
 
             Console.WriteLine($"Task 1 -- The longest word is {longestWord}.");
             return longestWord;

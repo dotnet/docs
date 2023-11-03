@@ -40,11 +40,7 @@ class Program
     {
         using MeterProvider meterProvider = Sdk.CreateMeterProviderBuilder()
                 .AddMeter("HatCo.HatStore")
-                .AddPrometheusExporter(opt =>
-                {
-                    opt.StartHttpListener = true;
-                    opt.HttpListenerPrefixes = new string[] { $"http://localhost:9184/" };
-                })
+                .AddPrometheusHttpListener(options => options.UriPrefixes = new string[] { "http://localhost:9184/" })
                 .Build();
 
         var rand = Random.Shared;
@@ -68,7 +64,7 @@ class Program
     static Counter<int> s_hatsSold = s_meter.CreateCounter<int>(
         name: "hats-sold",
         unit: "Hats",
-        description: "The number of ats sold in our store");
+        description: "The number of hats sold in our store");
 
     static void Main(string[] args)
     {

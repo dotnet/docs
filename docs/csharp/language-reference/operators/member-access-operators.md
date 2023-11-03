@@ -78,7 +78,7 @@ If an array index is outside the bounds of the corresponding dimension of an arr
 
 As the preceding example shows, you also use square brackets when you declare an array type or instantiate an array instance.
 
-For more information about arrays, see [Arrays](../../programming-guide/arrays/index.md).
+For more information about arrays, see [Arrays](../builtin-types/arrays.md).
 
 ### Indexer access
 
@@ -192,7 +192,7 @@ You can also use the `^` operator with the [range operator](#range-operator-) to
 
 ## Range operator `..`
 
-The `..` operator specifies the start and end of a range of indices as its operands. The left-hand operand is an *inclusive* start of a range. The right-hand operand is an *exclusive* end of a range. Either of operands can be an index from the start or from the end of a sequence, as the following example shows:
+The `..` operator specifies the start and end of a range of indices as its operands. The left-hand operand is an *inclusive* start of a range. The right-hand operand is an *exclusive* end of a range. Either of the operands can be an index from the start or from the end of a sequence, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="Ranges":::
 
@@ -227,6 +227,8 @@ The following example demonstrates the effect of using all the ranges presented 
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="RangesAllPossible":::
 
 For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
+
+The `..` token is also used as the [spread operator](./collection-expressions.md#spread-element) in a collection expression.
 
 ## Operator overloadability
 

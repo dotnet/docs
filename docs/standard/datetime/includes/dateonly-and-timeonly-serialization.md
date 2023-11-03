@@ -3,7 +3,6 @@ author: IEvangelist
 ms.author: dapine
 ms.date: 01/11/2023
 ms.topic: include
-recommendations: false
 ---
 
 With .NET 7+, `System.Text.Json` supports serializing and deserializing <xref:System.DateOnly> and <xref:System.TimeOnly> types. Consider the following object:

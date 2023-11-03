@@ -76,7 +76,6 @@ public class CreateOrderCommandHandler
             .SaveEntitiesAsync(cancellationToken);
     }
 }
-
 ```
 
 The class uses the injected repositories to execute the transaction and persist the state changes. It does not matter whether that class is a command handler, an ASP.NET Core Web API controller method, or a [DDD Application Service](https://lostechies.com/jimmybogard/2008/08/21/services-in-domain-driven-design/). It is ultimately a simple class that uses repositories, domain entities, and other application coordination in a fashion similar to a command handler. Dependency Injection works the same way for all the mentioned classes, as in the example using DI based on the constructor.
@@ -885,7 +884,6 @@ public class CreateOrderCommandValidator : AbstractValidator<CreateOrderCommand>
         return orderItems.Any();
     }
 }
-
 ```
 
 You could create additional validations. This is a very clean and elegant way to implement your command validations.

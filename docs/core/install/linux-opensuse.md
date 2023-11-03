@@ -70,7 +70,13 @@ When you install with a package manager, these libraries are installed for you. 
 - libicu
 - libopenssl1_0_0
 
-If the target runtime environment's OpenSSL version is 1.1 or newer, you'll need to install **compat-openssl10**.
+If the target runtime environment's OpenSSL version is 1.1 or newer, you'll need to install `compat-openssl10`.
+
+Dependencies can be installed with the `zypper install` command. The following snippet demonstrates installing the `krb5` library:
+
+```bash
+sudo zypper install krb5
+```
 
 For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/main/Documentation/self-contained-linux-apps.md).
 

@@ -2,7 +2,7 @@
 title: What's new in .NET 8
 description: Learn about the new .NET features introduced in .NET 8.
 titleSuffix: ""
-ms.date: 08/08/2023
+ms.date: 10/05/2023
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
@@ -11,12 +11,16 @@ author: gewarren
 
 .NET 8 is the successor to [.NET 7](dotnet-7.md). It will be [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 8 here](https://dotnet.microsoft.com/download/dotnet).
 
-This article has been updated for .NET 8 Preview 7.
+This article has been updated for .NET 8 release candidate (RC) 2.
 
 > [!IMPORTANT]
 >
 > - This information relates to a pre-release product that may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 > - Much of the other .NET documentation on [https://learn.microsoft.com/dotnet](/dotnet) has not yet been updated for .NET 8.
+
+## ASP.NET Core
+
+For information about what's new in ASP.NET Core, see [What's new in ASP.NET Core 8.0](/aspnet/core/release-notes/aspnetcore-8.0).
 
 ## Core .NET libraries
 
@@ -36,84 +40,55 @@ This section contains the following subtopics:
 
 ### Serialization
 
-Many improvements have been made to <xref:System.Text.Json?displayProperty=fullName> serialization and deserialization functionality including:
+Many improvements have been made to <xref:System.Text.Json?displayProperty=fullName> serialization and deserialization functionality in .NET 8. For example, you can [customize handling of members that aren't in the JSON payload](../../standard/serialization/system-text-json/missing-members.md).
 
-- The serializer has built-in support for the following additional types.
+The following sections describe other serialization improvements:
 
-  - <xref:System.Half>, <xref:System.Int128>, and <xref:System.UInt128> numeric types.
-
-    ```csharp
-    Console.WriteLine(JsonSerializer.Serialize(new object[] { Half.MaxValue, Int128.MaxValue, UInt128.MaxValue }));
-    // [65500,170141183460469231731687303715884105727,340282366920938463463374607431768211455]
-    ```
-
-  - <xref:System.Memory%601> and <xref:System.ReadOnlyMemory%601> values. `byte` values are serialized to Base64 strings, and other types to JSON arrays.
-
-    ```csharp
-    JsonSerializer.Serialize<ReadOnlyMemory<byte>>(new byte[] { 1, 2, 3 }); // "AQID"
-    JsonSerializer.Serialize<Memory<int>>(new int[] { 1, 2, 3 }); // [1,2,3]
-    ```
-
-- You can opt non-public members into the serialization contract for a given type using <xref:System.Text.Json.Serialization.JsonIncludeAttribute> and <xref:System.Text.Json.Serialization.JsonConstructorAttribute> attribute annotations.
-
-  ```csharp
-  string json = JsonSerializer.Serialize(new MyPoco(42)); // {"X":42}
-  JsonSerializer.Deserialize<MyPoco>(json);
-
-  public class MyPoco
-  {
-      [JsonConstructor]
-      internal MyPoco(int x) => X = x;
-
-      [JsonInclude]
-      internal int X { get; }
-  }
-  ```
-
-  For more information, see [Use immutable types and non-public members and accessors](../../standard/serialization/system-text-json/immutability.md).
-
-- You can [customize handling of members that aren't in the JSON payload.](../../standard/serialization/system-text-json/missing-members.md)
-- <xref:System.Text.Json.JsonSerializerOptions.MakeReadOnly?displayProperty=nameWithType> gives you explicit control over when a `JsonSerializerOptions` instance is frozen. (You can also check it with the <xref:System.Text.Json.JsonSerializerOptions.IsReadOnly> property.)
-- <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=nameWithType> is now obsolete. It's been superseded by the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> and <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> properties. For more information, see [Chain source generators](#chain-source-generators).
-- The new <xref:System.Text.Json.JsonSerializerOptions.TryGetTypeInfo(System.Type,System.Text.Json.Serialization.Metadata.JsonTypeInfo@)> method, a variation of the existing <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo(System.Type)> method, returns `false` if no metadata for the specified type was found.
-- The new <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfoResolver.WithAddedModifier(System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver,System.Action{System.Text.Json.Serialization.Metadata.JsonTypeInfo})> extension method lets you easily introduce modifications to the serialization contracts of arbitrary `IJsonTypeInfoResolver` instances.
-
-  ```csharp
-  var options = new JsonSerializerOptions
-  {
-      TypeInfoResolver = MyContext.Default
-          .WithAddedModifier(static typeInfo =>
-          {
-              foreach (JsonPropertyInfo prop in typeInfo.Properties)
-                  prop.Name = prop.Name.ToUpperInvariant();
-          })
-  };
-  ```
-
-- Support for compiler-generated or *unspeakable* types in weakly typed source generation scenarios. Since compiler-generated types can't be explicitly specified by the source generator, <xref:System.Text.Json?displayProperty=fullName> now performs nearest-ancestor resolution at run time. This resolution determines the most appropriate supertype with which to serialize the value.
-
-The following sections go into more depth about other serialization improvements:
-
+- [Built-in support for additional types](#built-in-support-for-additional-types)
 - [Source generator](#source-generator)
 - [Interface hierarchies](#interface-hierarchies)
 - [Naming policies](#naming-policies)
 - [Read-only properties](#read-only-properties)
 - [Disable reflection-based default](#disable-reflection-based-default)
 - [New JsonNode API methods](#new-jsonnode-api-methods)
+- [Non-public members](#non-public-members)
+- [Streaming deserialization APIs](#streaming-deserialization-apis)
+- [WithAddedModifier extension method](#withaddedmodifier-extension-method)
+- [New JsonContent.Create overloads](#new-jsoncontentcreate-overloads)
+- [Freeze a JsonSerializerOptions instance](#freeze-a-jsonserializeroptions-instance)
 
 For more information about JSON serialization in general, see [JSON serialization and deserialization in .NET](../../standard/serialization/system-text-json/overview.md).
 
+#### Built-in support for additional types
+
+The serializer has built-in support for the following additional types.
+
+- <xref:System.Half>, <xref:System.Int128>, and <xref:System.UInt128> numeric types.
+
+  ```csharp
+  Console.WriteLine(JsonSerializer.Serialize(new object[] { Half.MaxValue, Int128.MaxValue, UInt128.MaxValue }));
+  // [65500,170141183460469231731687303715884105727,340282366920938463463374607431768211455]
+  ```
+
+- <xref:System.Memory%601> and <xref:System.ReadOnlyMemory%601> values. `byte` values are serialized to Base64 strings, and other types to JSON arrays.
+
+  ```csharp
+  JsonSerializer.Serialize<ReadOnlyMemory<byte>>(new byte[] { 1, 2, 3 }); // "AQID"
+  JsonSerializer.Serialize<Memory<int>>(new int[] { 1, 2, 3 }); // [1,2,3]
+  ```
+
 #### Source generator
 
-.NET 8 includes performance and reliability enhancements of the System.Text.Json [source generator](../../standard/serialization/system-text-json/source-generation.md) that are aimed at making the [native AOT](../../standard/glossary.md#native-aot) experience on par with the [reflection-based serializer](../../standard/serialization/system-text-json/source-generation-modes.md#overview). For example:
+.NET 8 includes enhancements of the System.Text.Json [source generator](../../standard/serialization/system-text-json/source-generation.md) that are aimed at making the [Native AOT](../../standard/glossary.md#native-aot) experience on par with the [reflection-based serializer](../../standard/serialization/system-text-json/reflection-vs-source-generation.md#reflection). For example:
 
-- The [source generator](../../standard/serialization/system-text-json/source-generation.md) now supports serializing types with [`required`](../../standard/serialization/system-text-json/required-properties.md) and [`init`](../../csharp/language-reference/keywords/init.md) properties. These were both already supported in reflection-based serialization.
+- The source generator now supports serializing types with [`required`](../../standard/serialization/system-text-json/required-properties.md) and [`init`](../../csharp/language-reference/keywords/init.md) properties. These were both already supported in reflection-based serialization.
 - Improved formatting of source-generated code.
-- <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> feature parity with <xref:System.Text.Json.JsonSerializerOptions>. This parity lets you specify serialization configuration at compile time, which ensures that the generated `MyContext.Default` property is preconfigured with all the relevant options set.
-- Additional diagnostics (such as `SYSLIB1034` and `SYSLIB1039`).
+- <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> feature parity with <xref:System.Text.Json.JsonSerializerOptions>. For more information, see [Specify options (source generation)](../../standard/serialization/system-text-json/source-generation.md#specify-options).
+- Additional diagnostics (such as [SYSLIB1034](../../fundamentals/syslib-diagnostics/syslib1034.md) and [SYSLIB1039](../../fundamentals/syslib-diagnostics/syslib1039.md)).
 - Don't include types of ignored or inaccessible properties.
 - Support for nesting `JsonSerializerContext` declarations within arbitrary type kinds.
-- New converter type `JsonStringEnumConverter<TEnum>`. The existing <xref:System.Text.Json.Serialization.JsonStringEnumConverter> class isn't supported in native AOT. You can annotate your enum types as follows:
+- Support for compiler-generated or *unspeakable* types in weakly typed source generation scenarios. Since compiler-generated types can't be explicitly specified by the source generator, <xref:System.Text.Json?displayProperty=fullName> now performs nearest-ancestor resolution at run time. This resolution determines the most appropriate supertype with which to serialize the value.
+- New converter type `JsonStringEnumConverter<TEnum>`. The existing <xref:System.Text.Json.Serialization.JsonStringEnumConverter> class isn't supported in Native AOT. You can annotate your enum types as follows:
 
   ```csharp
   [JsonConverter(typeof(JsonStringEnumConverter<MyEnum>))]
@@ -123,7 +98,9 @@ For more information about JSON serialization in general, see [JSON serializatio
   public partial class MyContext : JsonSerializerContext { }
   ```
 
-- New `JsonConverter.Type` property lets you look up the type of a non-generic `JsonConverter`` instance:
+  For more information, see [Serialize enum fields as strings](../../standard/serialization/system-text-json/source-generation.md#serialize-enum-fields-as-strings).
+
+- New `JsonConverter.Type` property lets you look up the type of a non-generic `JsonConverter` instance:
 
   ```csharp
   Dictionary<Type, JsonConverter> CreateDictionary(IEnumerable<JsonConverter> converters)
@@ -134,21 +111,9 @@ For more information about JSON serialization in general, see [JSON serializatio
 
 ##### Chain source generators
 
-The <xref:System.Text.Json.JsonSerializerOptions> class includes a new <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> property that complements the existing <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> property. These properties are used in contract customization for chaining source generators. The addition of the new property means that you don't have to specify all chained components at one call site&mdash;they can be added after the fact.
+The <xref:System.Text.Json.JsonSerializerOptions> class includes a new <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> property that complements the existing <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> property. These properties are used in contract customization for chaining source generators. The addition of the new property means that you don't have to specify all chained components at one call site&mdash;they can be added after the fact. <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> also lets you introspect the chain or remove components from it. For more information, see [Combine source generators](../../standard/serialization/system-text-json/source-generation.md#combine-source-generators).
 
-<xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> also lets you introspect the chain or remove components from it. The following code snippet shows an example.
-
-```csharp
-var options = new JsonSerializerOptions
-{
-    TypeInfoResolver = JsonTypeInfoResolver.Combine(
-        ContextA.Default, ContextB.Default, ContextC.Default);
-};
-
-options.TypeInfoResolverChain.Count; // 3
-options.TypeInfoResolverChain.RemoveAt(0);
-options.TypeInfoResolverChain.Count; // 2
-```
+In addition, <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=nameWithType> is now obsolete. It's been superseded by the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> and <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> properties. For more information, see [SYSLIB0049](../../fundamentals/syslib-diagnostics/syslib0049.md).
 
 #### Interface hierarchies
 
@@ -186,11 +151,13 @@ var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolic
 JsonSerializer.Serialize(new { PropertyName = "value" }, options); // { "property_name" : "value" }
 ```
 
+For more information, see [Use a built-in naming policy](../../standard/serialization/system-text-json/customize-properties.md#use-a-built-in-naming-policy).
+
 #### Read-only properties
 
 You can now deserialize onto read-only fields or properties (that is, those that don't have a `set` accessor).
 
-To opt into this support globally, set a new option, <xref:System.Text.Json.JsonSerializerOptions.PreferredObjectCreationHandling>, to <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Populate?displayProperty=nameWithType>. If compatibility is a concern, you can also enable the functionality more granularly by placing the `[JsonObjectCreationHandling(JsonObjectCreationHandling.Populate)]` attribute on types whose properties are to be populated, or on individual properties.
+To opt into this support globally, set a new option, <xref:System.Text.Json.JsonSerializerOptions.PreferredObjectCreationHandling>, to <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Populate?displayProperty=nameWithType>. If compatibility is a concern, you can also enable the functionality more granularly by placing the `[JsonObjectCreationHandling(JsonObjectCreationHandling.Populate)]` attribute on specific types whose properties are to be populated, or on individual properties.
 
 For example, consider the following code that deserializes into a `CustomerInfo` type that has two read-only properties.
 
@@ -198,7 +165,7 @@ For example, consider the following code that deserializes into a `CustomerInfo`
 using System.Text.Json;
 
 CustomerInfo customer =
-    JsonSerializer.Deserialize<CustomerInfo>("""{"Name":"John Doe","Company":{"Name":"Contoso"}}""")!;
+    JsonSerializer.Deserialize<CustomerInfo>("""{"Names":["John Doe"],"Company":{"Name":"Contoso"}}""")!;
 
 Console.WriteLine(JsonSerializer.Serialize(customer));
 
@@ -212,54 +179,38 @@ class CompanyInfo
 class CustomerInfo
 {
     // Both of these properties are read-only.
-    public string Name { get; } = "Anonymous";
+    public List<string> Names { get; } = new();
     public CompanyInfo Company { get; } = new() { Name = "N/A", PhoneNumber = "N/A" };
 }
 ```
 
-Prior to .NET 8, the input values were ignored and the `Name` and `Company` properties retained their default values.
+Prior to .NET 8, the input values were ignored and the `Names` and `Company` properties retained their default values.
 
 ```output
-{"Name":"Anonymous","Company":{"Name":"N/A","PhoneNumber":"N/A"}}
+{"Names":[],"Company":{"Name":"N/A","PhoneNumber":"N/A"}}
 ```
 
 Now, the input values are used to populate the read-only properties during deserialization.
 
 ```output
-{"Name":"John Doe","Company":{"Name":"Contoso","PhoneNumber":null}}
+{"Names":["John Doe"],"Company":{"Name":"Contoso","PhoneNumber":null}}
 ```
+
+For more information about the *populate* deserialization behavior, see [Populate initialized properties](../../standard/serialization/system-text-json/populate-properties.md).
 
 #### Disable reflection-based default
 
-You can now disable using the reflection-based serializer by default. This disablement is useful to avoid accidental rooting of reflection components that aren't even in use, especially in trimmed and native AOT apps. To disable default reflection-based serialization by requiring that a <xref:System.Text.Json.JsonSerializerOptions> argument be passed to the <xref:System.Text.Json.JsonSerializer> serialization and deserialization methods, set the `JsonSerializer.IsReflectionEnabledByDefault` property to `false` in your project file. (If the property is set to `false` and you don't pass a configured <xref:System.Text.Json.JsonSerializerOptions> argument, the `Serialize` and `Deserialize` methods throw a <xref:System.NotSupportedException> at run time.)
+You can now disable using the reflection-based serializer by default. This disablement is useful to avoid accidental rooting of reflection components that aren't even in use, especially in trimmed and Native AOT apps. To disable default reflection-based serialization by requiring that a <xref:System.Text.Json.JsonSerializerOptions> argument be passed to the <xref:System.Text.Json.JsonSerializer> serialization and deserialization methods, set the `JsonSerializerIsReflectionEnabledByDefault` MSBuild property to `false` in your project file.
 
-Use the new <xref:System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault> property to check the value of the feature switch. If you're a library author building on top of <xref:System.Text.Json?displayProperty=fullName>, you can rely on the property to configure your defaults without accidentally rooting reflection components.
+Use the new <xref:System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault> API to check the value of the feature switch. If you're a library author building on top of <xref:System.Text.Json?displayProperty=fullName>, you can rely on the property to configure your defaults without accidentally rooting reflection components.
 
-```csharp
-static JsonSerializerOptions GetDefaultOptions()
-{
-    if (JsonSerializer.IsReflectionEnabledByDefault)
-    {
-        // This branch has a dependency on DefaultJsonTypeInfo,
-        // but it will get trimmed away if the feature switch is disabled.
-        return new()
-        {
-            TypeInfoResolver = new DefaultJsonTypeInfoResolver(),
-            PropertyNamingPolicy = JsonNamingPolicy.KebabCaseLower,
-        }
-    }
-
-    return new() { PropertyNamingPolicy = JsonNamingPolicy.KebabCaseLower };
-}
-```
+For more information, see [Disable reflection defaults](../../standard/serialization/system-text-json/source-generation.md#disable-reflection-defaults).
 
 #### New JsonNode API methods
 
-The `JsonNode` APIs include the following new methods.
+The <xref:System.Text.Json.Nodes.JsonNode> and <xref:System.Text.Json.Nodes.JsonArray?displayProperty=fullName> types include the following new methods.
 
 ```csharp
-namespace System.Text.Json.Nodes;
-
 public partial class JsonNode
 {
     // Creates a deep clone of the current node and all its descendants.
@@ -284,6 +235,14 @@ public partial class JsonNode
     // Replaces this instance with a new value,
     // updating the parent object/array accordingly.
     public void ReplaceWith<T>(T value);
+
+    // Asynchronously parses a stream as UTF-8 encoded data
+    // representing a single JSON value into a JsonNode.
+    public static Task<JsonNode?> ParseAsync(
+        Stream utf8Json,
+        JsonNodeOptions? nodeOptions = null,
+        JsonDocumentOptions documentOptions = default,
+        CancellationToken cancellationToken = default);
 }
 
 public partial class JsonArray
@@ -292,6 +251,93 @@ public partial class JsonArray
     public IEnumerable<T> GetValues<T>();
 }
 ```
+
+#### Non-public members
+
+You can opt non-public members into the serialization contract for a given type using <xref:System.Text.Json.Serialization.JsonIncludeAttribute> and <xref:System.Text.Json.Serialization.JsonConstructorAttribute> attribute annotations.
+
+```csharp
+string json = JsonSerializer.Serialize(new MyPoco(42)); // {"X":42}
+JsonSerializer.Deserialize<MyPoco>(json);
+
+public class MyPoco
+{
+    [JsonConstructor]
+    internal MyPoco(int x) => X = x;
+
+    [JsonInclude]
+    internal int X { get; }
+}
+```
+
+For more information, see [Use immutable types and non-public members and accessors](../../standard/serialization/system-text-json/immutability.md).
+
+#### Streaming deserialization APIs
+
+.NET 8 includes new <xref:System.Collections.Generic.IAsyncEnumerable%601> streaming deserialization extension methods, for example <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsAsyncEnumerable%2A>. Similar methods have existed that return <xref:System.Threading.Tasks.Task%601>, for example, <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType>. The new extension methods invoke streaming APIs and return <xref:System.Collections.Generic.IAsyncEnumerable%601>.
+
+The following code shows how you might use the new extension methods.
+
+```csharp
+const string RequestUri = "https://api.contoso.com/books";
+using var client = new HttpClient();
+IAsyncEnumerable<Book> books = client.GetFromJsonAsAsyncEnumerable<Book>(RequestUri);
+
+await foreach (Book book in books)
+{
+    Console.WriteLine($"Read book '{book.title}'");
+}
+
+public record Book(int id, string title, string author, int publishedYear);
+```
+
+#### WithAddedModifier extension method
+
+The new <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfoResolver.WithAddedModifier(System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver,System.Action{System.Text.Json.Serialization.Metadata.JsonTypeInfo})> extension method lets you easily introduce modifications to the serialization contracts of arbitrary `IJsonTypeInfoResolver` instances.
+
+```csharp
+var options = new JsonSerializerOptions
+{
+    TypeInfoResolver = MyContext.Default
+        .WithAddedModifier(static typeInfo =>
+        {
+            foreach (JsonPropertyInfo prop in typeInfo.Properties)
+                prop.Name = prop.Name.ToUpperInvariant();
+        })
+};
+```
+
+#### New JsonContent.Create overloads
+
+You can now create <xref:System.Net.Http.Json.JsonContent> instances using trim-safe or source-generated contracts. The new methods are:
+
+- <xref:System.Net.Http.Json.JsonContent.Create(System.Object,System.Text.Json.Serialization.Metadata.JsonTypeInfo,System.Net.Http.Headers.MediaTypeHeaderValue)?displayProperty=nameWithType>
+- <xref:System.Net.Http.Json.JsonContent.Create%60%601(%60%600,System.Text.Json.Serialization.Metadata.JsonTypeInfo{%60%600},System.Net.Http.Headers.MediaTypeHeaderValue)?displayProperty=nameWithType>
+
+```csharp
+var book = new Book(id: 42, "Title", "Author", publishedYear: 2023);
+HttpContent content = JsonContent.Create(book, MyContext.Default.Book);
+
+public record Book(int id, string title, string author, int publishedYear);
+
+[JsonSerializable(typeof(Book))]
+public partial class MyContext : JsonSerializerContext
+{ }
+```
+
+#### Freeze a JsonSerializerOptions instance
+
+The following new methods let you control when a <xref:System.Text.Json.JsonSerializerOptions> instance is frozen:
+
+- <xref:System.Text.Json.JsonSerializerOptions.MakeReadOnly?displayProperty=nameWithType>
+
+  This overload is designed to be trim-safe and will therefore throw an exception in cases where the options instance hasn't been configured with a resolver.
+
+- <xref:System.Text.Json.JsonSerializerOptions.MakeReadOnly(System.Boolean)?displayProperty=nameWithType>
+
+  If you pass `true` to this overload, it populates the options instance with the default reflection resolver if one is missing. This method is marked `RequiresUnreferenceCode`/`RequiresDynamicCode` and is therefore unsuitable for Native AOT applications.
+
+The new <xref:System.Text.Json.JsonSerializerOptions.IsReadOnly> property lets you check if the options instance is frozen.
 
 ### Time abstraction
 
@@ -575,6 +621,7 @@ This section contains the following subtopics:
 - [Extensions metrics](#extensions-metrics)
 - [Hosted lifecycle services](#hosted-lifecycle-services)
 - [Keyed DI services](#keyed-di-services)
+- [System.Numerics.Tensors.TensorPrimitives](#systemnumericstensorstensorprimitives)
 
 ### Keyed DI services
 
@@ -595,9 +642,9 @@ using Microsoft.Extensions.Options;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton<BigCacheConsumer>();
-builder.Services.Addsingleton<SmallCacheConsumer>();
+builder.Services.AddSingleton<SmallCacheConsumer>();
 
-builder.Services.AddKeyedsingleton<IMemoryCache, BigCache>("big");
+builder.Services.AddKeyedSingleton<IMemoryCache, BigCache>("big");
 builder.Services.AddKeyedSingleton<IMemoryCache, SmallCache>("small");
 
 var app = builder.Build();
@@ -763,7 +810,7 @@ Meter meter = meterFactory.Create(options);
 
 #### MetricCollector\<T> class
 
-The new <xref:Microsoft.Extensions.Telemetry.Testing.Metering.MetricCollector%601> class lets you record metric measurements along with timestamps. Additionally, the class offers the flexibility to use a time provider of your choice for accurate timestamp generation.
+The new <xref:Microsoft.Extensions.Diagnostics.Metrics.Testing.MetricCollector%601> class lets you record metric measurements along with timestamps. Additionally, the class offers the flexibility to use a time provider of your choice for accurate timestamp generation.
 
 ```csharp
 const string CounterName = "MyCounter";
@@ -791,35 +838,40 @@ Assert.Empty(collector.LastMeasurement.Tags);
 Assert.Equal(now, collector.LastMeasurement.Timestamp);
 ```
 
+### System.Numerics.Tensors.TensorPrimitives
+
+The updated [System.Numerics.Tensors](https://www.nuget.org/packages/System.Numerics.Tensors) NuGet package includes APIs in the new <xref:System.Numerics.Tensors.TensorPrimitives> namespace that add support for tensor operations. The tensor primitives optimize data-intensive workloads like those of AI and machine learning.
+
+AI workloads like semantic search and retrieval-augmented generation (RAG) extend the natural language capabilities of large language models such as ChatGPT by augmenting prompts with relevant data. For these workloads, operations on vectors&mdash;like *cosine similarity* to find the most relevant data to answer a question&mdash;are crucial. The System.Numerics.Tensors.TensorPrimitives package provides APIs for vector operations, meaning you don't need to take an external dependency or write your own implementation.
+
+This package replaces the [System.Numerics.Tensors package](https://www.nuget.org/packages/System.Numerics.Tensors).
+
+For more information, see the [Announcing .NET 8 RC 2 blog post](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-rc2/).
+
 ## Garbage collection
 
-.NET 8 adds a capability to adjust the memory limit on the fly. This is useful in cloud-service scenarios, where demand comes and goes. To be cost-effective, services should scale up and down on resource consumption as the demand fluctuates. When a service detects a decrease in demand, it can scale down resource consumption by reducing its memory limit. Previously, this would fail because the garbage collector (GC) was unaware of the change and might allocate more memory than the new limit. With this change, you can call the `_RefreshMemoryLimit` API to update the GC with the new memory limit.
+.NET 8 adds a capability to adjust the memory limit on the fly. This is useful in cloud-service scenarios, where demand comes and goes. To be cost-effective, services should scale up and down on resource consumption as the demand fluctuates. When a service detects a decrease in demand, it can scale down resource consumption by reducing its memory limit. Previously, this would fail because the garbage collector (GC) was unaware of the change and might allocate more memory than the new limit. With this change, you can call the <xref:System.GC.RefreshMemoryLimit> API to update the GC with the new memory limit.
 
 There are some limitations to be aware of:
 
-- For now, the `_RefreshMemoryLimit` API is private, so you'll need to call it through private reflection.
 - On 32-bit platforms (for example, Windows x86 and Linux ARM), .NET is unable to establish a new heap hard limit if there isn't already one.
 - The API might return a non-zero status code indicating the refresh failed. This can happen if the scale-down is too aggressive and leaves no room for the GC to maneuver. In this case, consider calling `GC.Collect(2, GCCollectionMode.Aggressive)` to shrink the current memory usage, and then try again.
-- If you scale up the memory limit beyond the size that the GC believes the process can handle during startup, the `_RefreshMemoryLimit` call will succeed, but it won't be able to use more memory than what it perceives as the limit.
+- If you scale up the memory limit beyond the size that the GC believes the process can handle during startup, the `RefreshMemoryLimit` call will succeed, but it won't be able to use more memory than what it perceives as the limit.
 
-The following code snippet shows how to call the API using reflection.
+The following code snippet shows how to call the API.
 
 ```csharp
-MethodInfo refreshMemoryLimitMethod = typeof(GC).GetMethod(
-    "_RefreshMemoryLimit", BindingFlags.NonPublic | BindingFlags.Static);
-
-refreshMemoryLimitMethod.Invoke(null, Array<object>.Empty);
+GC.RefreshMemoryLimit();
 ```
 
 You can also refresh some of the GC configuration settings related to the memory limit. The following code snippet sets the heap hard limit to 100 mebibytes (MiB):
 
 ```csharp
 AppContext.SetData("GCHeapHardLimit", (ulong)100 * 1024 * 1024);
-MethodInfo refreshMemoryLimitMethod = typeof(GC).GetMethod(
-    "_RefreshMemoryLimit", BindingFlags.NonPublic | BindingFlags.Static);
-
-refreshMemoryLimitMethod.Invoke(null, Array<object>.Empty);
+GC.RefreshMemoryLimit();
 ```
+
+The API can throw an <xref:System.InvalidOperationException> if the hard limit is invalid, for example, in the case of negative heap hard limit percentages and if the hard limit is too low. This can happen if the heap hard limit that the refresh will set, either because of new AppData settings or implied by the container memory limit changes, is lower than what's already committed.
 
 ## Configuration-binding source generator
 
@@ -944,10 +996,10 @@ Required modifier for first parameter: System.Runtime.InteropServices.InAttribut
 
 ## Native AOT support
 
-The option to [publish as native AOT](../deploying/native-aot/index.md) was first introduced in .NET 7. Publishing an app with native AOT creates a fully self-contained version of your app that doesn't need a runtime&mdash;everything is included in a single file. .NET 8 brings the following improvements to native AOT publishing:
+The option to [publish as Native AOT](../deploying/native-aot/index.md) was first introduced in .NET 7. Publishing an app with Native AOT creates a fully self-contained version of your app that doesn't need a runtime&mdash;everything is included in a single file. .NET 8 brings the following improvements to Native AOT publishing:
 
 - Adds support for the x64 and Arm64 architectures on *macOS*.
-- Reduces the sizes of native AOT apps on Linux by up to 50%. The following table shows the size of a "Hello World" app published with native AOT that includes the entire .NET runtime on .NET 7 vs. .NET 8:
+- Reduces the sizes of Native AOT apps on Linux by up to 50%. The following table shows the size of a "Hello World" app published with Native AOT that includes the entire .NET runtime on .NET 7 vs. .NET 8:
 
   | Operating system                        | .NET 7  | .NET 8  |
   |-----------------------------------------|---------|---------|
@@ -960,13 +1012,13 @@ The option to [publish as native AOT](../deploying/native-aot/index.md) was firs
 
 The default console app template now includes support for AOT out-of-the-box. To create a project that's configured for AOT compilation, just run `dotnet new console --aot`. The project configuration added by `--aot` has three effects:
 
-- Generates a native self-contained executable with native AOT when you publish the project, for example, with `dotnet publish` or Visual Studio.
+- Generates a native self-contained executable with Native AOT when you publish the project, for example, with `dotnet publish` or Visual Studio.
 - Enables compatibility analyzers for trimming, AOT, and single file. These analyzers alert you to potentially problematic parts of your project (if there are any).
 - Enables debug-time emulation of AOT so that when you debug your project without AOT compilation, you get a similar experience to AOT. For example, if you use <xref:System.Reflection.Emit?displayProperty=nameWithType> in a NuGet package that wasn't annotated for AOT (and therefore was missed by the compatibility analyzer), the emulation means you won't have any surprises when you try to publish the project with AOT.
 
-### Target iOS-like platforms with native AOT
+### Target iOS-like platforms with Native AOT
 
-.NET 8 starts the work to enable native AOT support for iOS-like platforms. You can now build and run .NET iOS and .NET MAUI applications with native AOT on the following platforms:
+.NET 8 starts the work to enable Native AOT support for iOS-like platforms. You can now build and run .NET iOS and .NET MAUI applications with Native AOT on the following platforms:
 
 - `ios`
 - `iossimulator`
@@ -974,18 +1026,17 @@ The default console app template now includes support for AOT out-of-the-box. To
 - `tvos`
 - `tvossimulator`
 
-Preliminary testing shows that app size on disk decreases by about 40% for .NET iOS apps that use native AOT instead of Mono. App size on disk for .NET MAUI iOS apps *increases* by about 25%. However, since the .NET 8 support is only the first step for the feature as a whole, we urge you not to draw conclusions about performance at this point.
+Preliminary testing shows that app size on disk decreases by about 35% for .NET iOS apps that use Native AOT instead of Mono. App size on disk for .NET MAUI iOS apps decreases up to 50%. Additionally, the startup time is also faster. .NET iOS apps have about 28% faster startup time, while .NET MAUI iOS apps have about 50% better startup performance compared to Mono. The .NET 8 support is experimental and only the first step for the feature as a whole. For more information, see the [.NET 8 Performance Improvements in .NET MAUI blog post](https://devblogs.microsoft.com/dotnet/dotnet-8-performance-improvements-in-dotnet-maui/).
 
-Native AOT support is available as an opt-in feature intended for app deployment; Mono is still the default runtime for app development and deployment. To build and run a .NET MAUI application with native AOT on an iOS device, use `dotnet workload install maui` to install the .NET MAUI workload and `dotnet new maui -n HelloMaui` to create the app. Then, set the MSBuild properties `PublishAot` and `PublishAotUsingRuntimePack` to `true` in the project file.
+Native AOT support is available as an opt-in feature intended for app deployment; Mono is still the default runtime for app development and deployment. To build and run a .NET MAUI application with Native AOT on an iOS device, use `dotnet workload install maui` to install the .NET MAUI workload and `dotnet new maui -n HelloMaui` to create the app. Then, set the MSBuild property `PublishAot` to `true` in the project file.
 
 ```xml
 <PropertyGroup>
   <PublishAot>true</PublishAot>
-  <PublishAotUsingRuntimePack>true</PublishAotUsingRuntimePack>
 </PropertyGroup>
 ```
 
-When you set these properties and run `dotnet publish` as shown in the following example, the app will be deployed by using native AOT.
+When you set the required property and run `dotnet publish` as shown in the following example, the app will be deployed by using Native AOT.
 
 ```dotnetcli
 dotnet publish -f net8.0-ios -c Release -r ios-arm64  /t:Run
@@ -993,12 +1044,11 @@ dotnet publish -f net8.0-ios -c Release -r ios-arm64  /t:Run
 
 #### Limitations
 
-Not all iOS features are compatible with native AOT. Similarly, not all libraries commonly used in iOS are compatible with NativeAOT. And in addition to the existing [limitations of native AOT deployment](../deploying/native-aot/index.md#limitations-of-native-aot-deployment), the following list shows some of the other limitations when targeting iOS-like platforms:
+Not all iOS features are compatible with Native AOT. Similarly, not all libraries commonly used in iOS are compatible with NativeAOT. And in addition to the existing [limitations of Native AOT deployment](../deploying/native-aot/index.md#limitations-of-native-aot-deployment), the following list shows some of the other limitations when targeting iOS-like platforms:
 
-- Installation and app deployment using Visual Studio is untested.
-- Using native AOT is only enabled during app deployment (`dotnet publish`).
-- <xref:System.Linq.Expressions> library functionality isn't fully supported.
+- Using Native AOT is only enabled during app deployment (`dotnet publish`).
 - Managed code debugging is only supported with Mono.
+- Compatibility with the .NET MAUI framework is limited.
 
 ## Performance improvements
 
@@ -1029,10 +1079,11 @@ The JIT already supported this optimization but with several large limitations i
 
 Physical promotion removes these limitations, which fixes a number of long-standing JIT issues.
 
-## .NET SDK changes
+## .NET SDK
 
 This section contains the following subtopics:
 
+- [CLI-based project evaluation](#cli-based-project-evaluation)
 - [Terminal build output](#terminal-build-output)
 - [Simplified output paths](#simplified-output-paths)
 - ['dotnet workload clean' command](#dotnet-workload-clean-command)
@@ -1040,6 +1091,46 @@ This section contains the following subtopics:
 - [Template engine](#template-engine)
 - [Source Link](#source-link)
 - [Source-build SDK](#source-build-sdk)
+
+### CLI-based project evaluation
+
+MSBuild includes a new feature that makes it easier to incorporate data from MSBuild into your scripts or tools. The following new flags are available for CLI commands such as [dotnet publish](../tools/dotnet-publish.md) to obtain data for use in CI pipelines and elsewhere.
+
+| Flag  | Description  |
+|---------|---------|
+| `--getProperty:<PROPERTYNAME>` | Retrieves the MSBuild property with the specified name. |
+| `--getItem:<ITEMTYPE>` | Retrieves MSBuild items of the specified type. |
+| `--getTargetResults:<TARGETNAME>` | Retrieves the outputs from running the specified target. |
+
+Values are written to the standard output. Multiple or complex values are output as JSON, as shown in the following examples.
+
+```dotnetcli
+>dotnet publish --getProperty:OutputPath
+bin\Release\net8.0\
+```
+
+```dotnetcli
+> dotnet publish -p PublishProfile=DefaultContainer --getProperty:GeneratedContainerDigest --getProperty:GeneratedContainerConfiguration
+{
+  "Properties": {
+    "GeneratedContainerDigest": "sha256:ef880a503bbabcb84bbb6a1aa9b41b36dc1ba08352e7cd91c0993646675174c4",
+    "GeneratedContainerConfiguration": "{\u0022config\u0022:{\u0022ExposedPorts\u0022:{\u00228080/tcp\u0022:{}},\u0022Labels\u0022...}}"
+  }
+}
+```
+
+```dotnetcli
+>dotnet publish -p PublishProfile=DefaultContainer --getItem:ContainerImageTags
+{
+  "Items": {
+    "ContainerImageTags": [
+      {
+        "Identity": "latest",
+        ...
+    ]
+  }
+}
+```
 
 ### Terminal build output
 
@@ -1049,37 +1140,7 @@ This section contains the following subtopics:
 
 .NET 8 introduces an option to simplify the output path and folder structure for build outputs. Previously, .NET apps produced a deep and complex set of output paths for different build artifacts. The new, simplified output path structure gathers all build outputs into a common location, which makes it easier for tooling to anticipate.
 
-To opt into the new output path format, use one of the following properties in your *Directory.Build.props* file:
-
-- Add an `ArtifactsPath` property with a value of `$(MSBuildThisFileDirectory)artifacts` (or whatever you want the folder location to be), OR
-- To use the default location, simply set the `UseArtifactsOutput` property to `true`.
-
-Alternatively, run `dotnet new buildprops --use-artifacts` and the template will generate the *Directory.Build.props* file for you:
-
-```xml
-<Project>
-  <PropertyGroup>
-    <ArtifactsPath>$(MSBuildThisFileDirectory)artifacts</ArtifactsPath>
-  </PropertyGroup>
-</Project>
-```
-
-By default, the common location is a folder named *artifacts* in the root of your repository rather than in each project folder. The folder structure under the root *artifacts* folder is as follows:
-
-```Directory
-📁 artifacts
-    └──📂 <Type of output>
-        └──📂 <Project name>
-            └──📂 <Pivot>
-```
-
-The following table shows the default values for each level in the folder structure. The values, as well as the default location, can be overridden using properties in the *Directory.build.props* file.
-
-| Folder level | Description |
-|--|--|
-| Type of output | Examples: `bin`, `obj`, `publish`, or `package` |
-| Project name | Separates output by each project. |
-| Pivot | Distinguishes between builds of a project for different configurations, target frameworks, and runtime identifiers. If multiple elements are needed, they're joined by an underscore (`_`). |
+For more information, see [Artifacts output layout](../sdk/artifacts-output.md).
 
 ### `dotnet workload clean` command
 
@@ -1149,7 +1210,7 @@ The Linux distribution-built (source-build) SDK now has the capability to build 
 
 Mobile apps can now use a new *hybrid* globalization mode that uses a lighter ICU bundle. In hybrid mode, globalization data is partially pulled from the ICU bundle and partially from calls into Native API. It serves all the [locales supported by mobile](https://github.com/dotnet/icu/blob/dotnet/main/icu-filters/icudt_mobile.json).
 
-`HybridGlobalization` is most suitable for apps that can't work in `InvariantGlobalization` mode and that use cultures that where trimmed from ICU data on mobile. You can also use it when you want to load a smaller ICU data file. (The *icudt_hybrid.dat* file is 34.5 % smaller than the default ICU data file *icudt.dat*.)
+`HybridGlobalization` is most suitable for apps that can't work in `InvariantGlobalization` mode and that use cultures that were trimmed from ICU data on mobile. You can also use it when you want to load a smaller ICU data file. (The *icudt_hybrid.dat* file is 34.5 % smaller than the default ICU data file *icudt.dat*.)
 
 To use `HybridGlobalization` mode, set the MSBuild property to true:
 
@@ -1169,18 +1230,25 @@ To make sure your application isn't affected, see [Behavioral differences](https
 ## Containers
 
 - [Container images](#container-images)
-- [Containers performance and compatibility](#container-performance-and-compatibility)
+- [Container publishing](#container-publishing)
 
 ### Container images
 
 The following changes have been made to .NET container images for .NET 8:
 
+- [Generated-image defaults](#generated-image-defaults)
 - [Debian 12](#debian-12)
 - [Non-root user](#non-root-user)
-- [Preview images](#preview-images)
+- [Preview image tags](#preview-image-tags)
 - [Chiseled Ubuntu images](#chiseled-ubuntu-images)
 - [Build multi-platform container images](#build-multi-platform-container-images)
 - [ASP.NET composite images](#aspnet-composite-images)
+
+#### Generated-image defaults
+
+The new [`non-root` capability](#non-root-user) of the Microsoft .NET containers is now the default, which helps your apps stay secure-by-default. Change this default at any time by setting your own `ContainerUser`.
+
+The default container tag is now `latest`. This default is in line with other tooling in the containers space and makes containers easier to use in inner development loops.
 
 #### Debian 12
 
@@ -1198,17 +1266,13 @@ USER app
 
 The default port also changed from port `80` to `8080`. To support this change, a new environment variable `ASPNETCORE_HTTP_PORTS` is available to make it easier to change ports. The variable accepts a list of ports, which is simpler than the format required by `ASPNETCORE_URLS`. If you change the port back to port `80` using one of these variables, you can't run as `non-root`.
 
-#### Preview images
+#### Preview image tags
 
-Preview container images tags now have a `-preview` suffix instead of just using the version number. For example, to pull the .NET 8 Preview SDK, use the following tag:
-
-`docker run --rm -it mcr.microsoft.com/dotnet/sdk:8.0-preview`
-
-The `-preview` suffix will be removed for release candidate (RC) releases.
+Container image tags for .NET 8 Previews 1 through 7 had a `-preview` suffix, for example, `8.0-preview` and `8.0-preview-<OS>`. Starting in RC 1, `preview` is removed from the tag name, and those tags are no longer maintained. The new tags, `8.0` and `8.0-<OS>`, are permanent, and will be maintained throughout the lifetime of .NET 8.
 
 #### Chiseled Ubuntu images
 
-[Chiseled Ubuntu images](https://hub.docker.com/r/ubuntu/dotnet-deps) are available for .NET 8. Chiseled images have a reduced attacked surface because they're ultra-small, have no package manager or shell, and are `non-root`. This type of image is for developers that want the benefit of appliance-style computing. Chiseled images are published to the [.NET nightly artifact registry](https://mcr.microsoft.com/product/dotnet/nightly/aspnet/tags).
+[Chiseled Ubuntu images](https://hub.docker.com/r/ubuntu/dotnet-deps) are available for .NET 8. Chiseled images have a reduced attacked surface because they're ultra-small, have no package manager or shell, and are `non-root`. This type of image is for developers who want the benefit of appliance-style computing. Chiseled images are published to the [.NET nightly artifact registry](https://mcr.microsoft.com/product/dotnet/nightly/aspnet/tags).
 
 #### Build multi-platform container images
 
@@ -1236,16 +1300,42 @@ There is a caveat to be aware of. Since composites have multiple assemblies embe
 
 Composite images are available for the Alpine Linux, Jammy Chiseled, and Mariner Distroless platforms from the `mcr.microsoft.com/dotnet/nightly/aspnet` repo. The tags are listed with the `-composite` suffix on the [ASP.NET Docker page](https://hub.docker.com/_/microsoft-dotnet-nightly-aspnet).
 
-### Container performance and compatibility
+### Container publishing
+
+- [Performance and compatibility](#performance-and-compatibility)
+- [Authentication](#authentication)
+- [Publish to tar.gz archive](#publish-to-targz-archive)
+
+#### Performance and compatibility
 
 .NET 8 has improved performance for pushing containers to remote registries, especially Azure registries. Speedup comes from pushing layers in one operation and, for registries that don't support atomic uploads, a more reliable chunking mechanism.
 
 These improvements also mean that more registries are supported: Harbor, Artifactory, Quay.io, and Podman.
 
-Some generated-image defaults have also changed:
+#### Authentication
 
-- The new [`non-root` capability](#non-root-user) of the Microsoft .NET containers is now the default, which helps your apps stay secure-by-default. Change this default at any time by setting your own `ContainerUser``.
-- The default container tag is now `latest`. This default is in line with other tooling in the containers space and makes containers easier to use in inner development loops.
+.NET 8 adds support for OAuth token exchange authentication (Azure Managed Identity) when pushing containers to registries. This support means that you can now push to registries like Azure Container Registry without any authentication errors. The following commands show an example publishing flow:
+
+```console
+> az acr login -n <your registry name>
+> dotnet publish -r linux-x64 -p PublishProfile=DefaultContainer
+```
+
+For more information containerizing .NET apps, see [Containerize a .NET app with dotnet publish](../docker/publish-as-container.md).
+
+#### Publish to tar.gz archive
+
+Starting in .NET 8, you can create a container directly as a *tar.gz* archive. This feature is useful if your workflow isn't straightforward and requires that you, for example, run a scanning tool over your images before pushing them. Once the archive is created, you can move it, scan it, or load it into a local Docker toolchain.
+
+To publish to an archive, add the `ContainerArchiveOutputPath` property to your `dotnet publish` command, for example:
+
+```dotnetcli
+dotnet publish \
+  -p PublishProfile=DefaultContainer \
+  -p ContainerArchiveOutputPath=./images/sdk-container-demo.tar.gz
+```
+
+You can specify either a folder name or a path with a specific file name.
 
 ## Source-generated COM interop
 
@@ -1273,7 +1363,7 @@ The source generator also supports the new <xref:System.Runtime.InteropServices.
 
 Methods on interfaces with the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> attribute support all the same types as `LibraryImportAttribute`, and `LibraryImportAttribute` now supports `GeneratedComInterface`-attributed types and `GeneratedComClass`-attributed types.
 
-If your C# code only uses a `GeneratedComInterface`-attributed interface to either wrap a COM object from unmanaged code or wrap a managed object from C# to expose to unmanaged code, you can use the options in the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.Options> property to customize which code will be generated. These options means you don't need to write marshallers for scenarios that you know won't be used.
+If your C# code only uses a `GeneratedComInterface`-attributed interface to either wrap a COM object from unmanaged code or wrap a managed object from C# to expose to unmanaged code, you can use the options in the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute.Options> property to customize which code will be generated. These options mean you don't need to write marshallers for scenarios that you know won't be used.
 
 The source generator uses the new <xref:System.Runtime.InteropServices.Marshalling.StrategyBasedComWrappers> type to create and manage the COM object wrappers and the managed object wrappers. This new type handles providing the expected .NET user experience for COM interop, while providing customization points for advanced users. If your application has its own mechanism for defining types from COM or if you need to support scenarios that source-generated COM doesn't currently support, consider using the new <xref:System.Runtime.InteropServices.Marshalling.StrategyBasedComWrappers> type to add the missing features for your scenario and get the same .NET user experience for your COM types.
 
@@ -1301,6 +1391,31 @@ In previous .NET versions, you could build .NET from source, but it required you
 
 Building in a container is the easiest approach for most people, since the `dotnet-buildtools/prereqs` container images contain all the required dependencies. For more information, see the [build instructions](https://github.com/dotnet/dotnet#building).
 
+## Cross-built Windows apps
+
+When you build apps that target Windows on non-Windows platforms, the resulting executable is now updated with any specified Win32 resources&mdash;for example, application icon, manifest, version information.
+
+Previously, applications had to be built on Windows in order to have such resources. Fixing this gap in cross-building support has been a popular request, as it was a significant pain point affecting both infrastructure complexity and resource usage.
+
+## AOT compilation for Android apps
+
+To decrease app size, .NET and .NET MAUI apps that target Android use *profiled* ahead-of-time (AOT) compilation mode when they're built in Release mode. Profiled AOT compilation affects fewer methods than regular AOT compilation. .NET 8 introduces the `<AndroidStripILAfterAOT>` property that lets you opt-in to further AOT compilation for Android apps to decrease app size even more.
+
+```xml
+<PropertyGroup>
+  <AndroidStripILAfterAOT>true</AndroidStripILAfterAOT>
+</PropertyGroup>
+```
+
+By default, setting `AndroidStripILAfterAOT` to `true` overrides the default `AndroidEnableProfiledAot` setting, allowing (nearly) all methods that were AOT-compiled to be trimmed. You can also use profiled AOT and IL stripping together by explicitly setting both properties to `true`:
+
+```xml
+<PropertyGroup>
+  <AndroidStripILAfterAOT>true</AndroidStripILAfterAOT>
+  <AndroidEnableProfiledAot>true</AndroidEnableProfiledAot>
+</PropertyGroup>
+```
+
 ## Code analysis
 
 .NET 8 includes several new code analyzers and fixers to help verify that you're using .NET library APIs correctly and efficiently. The following table summarizes the new analyzers.
@@ -1313,11 +1428,24 @@ Building in a container is the easiest approach for most people, since the `dotn
 | [CA1859](../../fundamentals/code-analysis/quality-rules/ca1859.md) | Performance | This rule recommends upgrading the type of specific local variables, fields, properties, method parameters, and method return types from interface or abstract types to concrete types when possible. Using concrete types leads to higher quality generated code. |
 | [CA1860](../../fundamentals/code-analysis/quality-rules/ca1860.md) | Performance | To determine whether a collection type has any elements, it's better to use `Length`, `Count`, or `IsEmpty` than to call <xref:System.Linq.Enumerable.Any%2A?displayProperty=nameWithType>. |
 | [CA1861](../../fundamentals/code-analysis/quality-rules/ca1861.md) | Performance | Constant arrays passed as arguments aren't reused when called repeatedly, which implies a new array is created each time. To improve performance, consider extracting the array to a static readonly field. |
-| [CA1865-CA1867](../../fundamentals/code-analysis/quality-rules/ca1865-ca1867.md) | Performance | The char overload is a better performing overload for a string with a single char. |
+| [CA1865-CA1867](../../fundamentals/code-analysis/quality-rules/ca1865-ca1867.md) | Performance | The char overload is a better-performing overload for a string with a single char. |
 | CA2021 | Reliability | <xref:System.Linq.Enumerable.Cast%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.OfType%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> require compatible types to function correctly. Widening and user-defined conversions aren't supported with generic types. |
 | CA1510-CA1513 | Maintainability | Throw helpers are simpler and more efficient than an `if` block constructing a new exception instance. These four analyzers were created for the following exceptions: <xref:System.ArgumentNullException>, <xref:System.ArgumentException>, <xref:System.ArgumentOutOfRangeException> and <xref:System.ObjectDisposedException>. |
 
 ## Windows Presentation Foundation
+
+- [Hardware acceleration](#hardware-acceleration)
+- [OpenFolderDialog](#openfolderdialog)
+
+### Hardware acceleration
+
+Previously, all WPF applications that were accessed remotely had to use software rendering, even if the system had hardware rendering capabilities. .NET 8 adds an option that lets you opt into hardware acceleration for Remote Desktop Protocol (RDP).
+
+Hardware acceleration refers to the use of a computer's graphics processing unit (GPU) to speed up the rendering of graphics and visual effects in an application. This can result in improved performance and more seamless, responsive graphics. In contrast, software rendering relies solely on the computer's central processing unit (CPU) to render graphics, which can be slower and less effective.
+
+To opt in, set the `Switch.System.Windows.Media.EnableHardwareAccelerationInRdp` configuration property to `true` in a *runtimeconfig.json* file. For more information, see [Hardware acceleration in RDP](../runtime-config/wpf.md#hardware-acceleration-in-rdp).
+
+### OpenFolderDialog
 
 WPF includes a new dialog box control called `OpenFolderDialog`. This control lets app users browse and select folders. Previously, app developers relied on third-party software to achieve this functionality.
 
@@ -1335,6 +1463,8 @@ if (openFolderDialog.ShowDialog())
 }
 ```
 
+For more information, see [WPF File Dialog Improvements in .NET 8 (.NET blog)](https://devblogs.microsoft.com/dotnet/wpf-file-dialog-improvements-in-dotnet-8/).
+
 ## NuGet
 
 Starting in .NET 8, NuGet verifies signed packages on Linux by default. NuGet continues to verify signed packages on Windows as well.
@@ -1343,6 +1473,12 @@ Most users shouldn't notice the verification. However, if you have an existing r
 
 You can opt out of verification by setting the environment variable `DOTNET_NUGET_SIGNATURE_VERIFICATION` to `false`.
 
+## Diagnostics
+
+### C# Hot Reload supports modifying generics
+
+Starting in .NET 8, C# Hot Reload [supports modifying generic types and generic methods](https://devblogs.microsoft.com/dotnet/hot-reload-generics/). When you debug console, desktop, mobile, or WebAssembly applications with Visual Studio, you can apply changes to generic classes and generic methods in C# code or Razor pages. For more information, see the [full list of edits supported by Roslyn](https://github.com/dotnet/roslyn/blob/main/docs/wiki/EnC-Supported-Edits.md)
+
 ## See also
 
 - [Breaking changes in .NET 8](../compatibility/8.0.md)
@@ -1350,6 +1486,8 @@ You can opt out of verification by setting the environment variable `DOTNET_NUGE
 
 ### .NET blog
 
+- [Announcing .NET 8 RC 2](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-rc2/)
+- [Announcing .NET 8 RC 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-rc1/)
 - [Announcing .NET 8 Preview 7](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-7/)
 - [Announcing .NET 8 Preview 6](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-6/)
 - [Announcing .NET 8 Preview 5](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-5/)
@@ -1357,7 +1495,8 @@ You can opt out of verification by setting the environment variable `DOTNET_NUGE
 - [Announcing .NET 8 Preview 3](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-3/)
 - [Announcing .NET 8 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-2/)
 - [Announcing .NET 8 Preview 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-1/)
-
+- [ASP.NET Core updates in .NET 8 RC 2](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-rc-2/)
+- [ASP.NET Core updates in .NET 8 RC 1](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-rc-1/)
 - [ASP.NET Core updates in .NET 8 Preview 7](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-7/)
 - [ASP.NET Core updates in .NET 8 Preview 6](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-6/)
 - [ASP.NET Core updates in .NET 8 Preview 5](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-5/)

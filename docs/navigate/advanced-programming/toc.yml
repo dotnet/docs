@@ -319,10 +319,12 @@ items:
     - name: Overview
       href: ../../standard/native-interop/pinvoke.md
       displayName: P/Invoke
-    - name: Cross-platform P/Invoke
-      href: ../../standard/native-interop/cross-platform.md
     - name: Source generation
       href: ../../standard/native-interop/pinvoke-source-generation.md
+    - name: Native library loading
+      href: ../../standard/native-interop/native-library-loading.md
+    - name: Calling conventions
+      href: ../../standard/native-interop/calling-conventions.md
   - name: Type marshalling
     items:
     - name: Overview
@@ -362,10 +364,14 @@ items:
         href: ../../standard/native-interop/com-callable-wrapper.md
       - name: "Tutorial: Use the ComWrappers API"
         href: ../../standard/native-interop/tutorial-comwrappers.md
+      - name: Source generation
+        href: ../../standard/native-interop/comwrappers-source-generation.md
     - name: Qualify .NET types for COM interop
       href: ../../standard/native-interop/qualify-net-types-for-interoperation.md
   - name: Apply interop attributes
     href: ../../standard/native-interop/apply-interop-attributes.md
+  - name: HRESULT and PreserveSig
+    href: ../../standard/native-interop/preserve-sig.md
   - name: Exceptions
     href: ../../standard/native-interop/exceptions-interoperability.md
 - name: Memory management
@@ -414,4 +420,3 @@ items:
       href: ../../standard/garbage-collection/app-domain-resource-monitoring.md
     - name: Weak references
       href: ../../standard/garbage-collection/weak-references.md
-

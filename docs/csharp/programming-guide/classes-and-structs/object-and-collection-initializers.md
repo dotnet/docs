@@ -108,7 +108,7 @@ public class Person
     public string LastName { get; init; }
 }
 
-// Last name property is necessary to be initialized.
+// The `LastName` property can be set only during initialization. It CAN'T be modified afterwards.
 // The `FirstName` property can be modified after initialization.
 var pet = new Person() { FirstName = "Joe", LastName = "Doe"};
 

@@ -13,7 +13,7 @@ You define functions by using the `let` keyword, or, if the function is recursiv
 
 ```fsharp
 // Non-recursive function definition.
-let [inline] function-name parameter-list [ : return-type ] = function-body
+let [inline] function-name parameter-list [: return-type ] = function-body
 // Recursive function definition.
 let rec function-name parameter-list = recursive-function-body
 ```
@@ -47,7 +47,7 @@ But the following code is acceptable at any level of scope:
 Names of parameters are listed after the function name. You can specify a type for a parameter, as shown in the following example:
 
 ```fsharp
-let f (x : int) = x + 1
+let f (x: int) = x + 1
 ```
 
 If you specify a type, it follows the name of the parameter and is separated from the name by a colon. If you omit the type for the parameter, the parameter type is inferred by the compiler. For example, in the following function definition, the argument `x` is inferred to be of type `int` because 1 is of type `int`.
@@ -83,7 +83,7 @@ To specify the return type explicitly, write the code as follows:
 As the code is written above, the compiler applies **float** to the entire function; if you mean to apply it to the parameter types as well, use the following code:
 
 ```fsharp
-let cylinderVolume (radius : float) (length : float) : float
+let cylinderVolume (radius: float) (length: float) : float
 ```
 
 ## Calling a Function
@@ -149,12 +149,9 @@ let result = 100 |> function1 |> function2
 The following sample walks through how you can use these operators to build a simple functional pipeline:
 
 ```fsharp
-
 /// Square the odd values of the input and add one, using F# pipe operators.
 let squareAndAddOdd values =
-    values
-    |> List.filter (fun x -> x % 2 <> 0)
-    |> List.map (fun x -> x * x + 1)
+    values |> List.filter (fun x -> x % 2 <> 0) |> List.map (fun x -> x * x + 1)
 
 let numbers = [ 1; 2; 3; 4; 5 ]
 
@@ -179,7 +176,6 @@ The composition operator `>>` takes two functions and returns a function; by con
 
 ```fsharp
 // Function composition and pipeline operators compared.
-
 let addOne x = x + 1
 let timesTwo x = 2 * x
 

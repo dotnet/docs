@@ -53,9 +53,7 @@ items:
         href: ../core/install/linux-rhel.md
       - name: SLES
         href: ../core/install/linux-sles.md
-      - name: Install with Snap
-        href: ../core/install/linux-snap.md
-      - name: Install script & binaries
+      - name: Installation script & binaries
         href: ../core/install/linux-scripted-manual.md
     - name: Remove outdated runtimes and SDKs
       href: ../core/install/remove-runtime-sdk-versions.md
@@ -505,7 +503,7 @@ items:
       - name: Miscellaneous constructs
         href: ../standard/base-types/miscellaneous-constructs-in-regular-expressions.md
     - name: Best practices for regular expressions
-      href: ../standard/base-types/best-practices.md
+      href: ../standard/base-types/best-practices-regex.md
     - name: Regular expression object model
       href: ../standard/base-types/the-regular-expression-object-model.md
     - name: Regular expression behavior
@@ -539,54 +537,68 @@ items:
       - name: Overview
         href: ../standard/serialization/system-text-json/overview.md
         displayName: json serialization
-      - name: Reflection vs. source generation
-        href: ../standard/serialization/system-text-json/source-generation-modes.md
-      - name: How to serialize and deserialize JSON
-        href: ../standard/serialization/system-text-json/how-to.md
-      - name: Control serialization behavior
+      - name: How to
         items:
+        - name: Serialize
+          items:
+          - name: How to serialize
+            href: ../standard/serialization/system-text-json/how-to.md
+          - name: Customize property names and values
+            href: ../standard/serialization/system-text-json/customize-properties.md
+          - name: Ignore properties
+            href: ../standard/serialization/system-text-json/ignore-properties.md
+          - name: Include fields
+            href: ../standard/serialization/system-text-json/fields.md
+        - name: Deserialize
+          items:
+          - name: How to deserialize
+            href: ../standard/serialization/system-text-json/deserialization.md
+          - name: Require JSON properties
+            href: ../standard/serialization/system-text-json/required-properties.md
+          - name: Allow invalid JSON
+            href: ../standard/serialization/system-text-json/invalid-json.md
+          - name: Handle missing members
+            href: ../standard/serialization/system-text-json/missing-members.md
+          - name: Handle overflow JSON, use JsonElement or JsonNode
+            href: ../standard/serialization/system-text-json/handle-overflow.md
+          - name: Deserialize to immutable types
+            href: ../standard/serialization/system-text-json/immutability.md
+          - name: Populate initialized properties
+            href: ../standard/serialization/system-text-json/populate-properties.md
+        - name: Migrate from Newtonsoft.Json
+          href: ../standard/serialization/system-text-json/migrate-from-newtonsoft.md
         - name: Instantiate JsonSerializerOptions
           href: ../standard/serialization/system-text-json/configure-options.md
         - name: Enable case-insensitive matching
           href: ../standard/serialization/system-text-json/character-casing.md
-        - name: Customize property names and values
-          href: ../standard/serialization/system-text-json/customize-properties.md
-        - name: Ignore properties
-          href: ../standard/serialization/system-text-json/ignore-properties.md
-        - name: Require properties
-          href: ../standard/serialization/system-text-json/required-properties.md
-        - name: Allow invalid JSON
-          href: ../standard/serialization/system-text-json/invalid-json.md
-        - name: Handle missing members
-          href: ../standard/serialization/system-text-json/missing-members.md
-        - name: Handle overflow JSON, use JsonElement or JsonNode
-          href: ../standard/serialization/system-text-json/handle-overflow.md
-        - name: Preserve references, handle circular references
+        - name: Handle references
           href: ../standard/serialization/system-text-json/preserve-references.md
-        - name: Deserialize to immutable types, non-public accessors
-          href: ../standard/serialization/system-text-json/immutability.md
-        - name: Polymorphic serialization
+        - name: Serialize polymorphic types
           href: ../standard/serialization/system-text-json/polymorphism.md
-      - name: Read/write JSON without using JsonSerializer
-        items:
-        - name: Use DOM
-          href: ../standard/serialization/system-text-json/use-dom.md
-        - name: Use Utf8JsonWriter
-          href: ../standard/serialization/system-text-json/use-utf8jsonwriter.md
-        - name: Use Utf8JsonReader
-          href: ../standard/serialization/system-text-json/use-utf8jsonreader.md
-      - name: Migrate from Newtonsoft.Json
-        href: ../standard/serialization/system-text-json/migrate-from-newtonsoft.md
+        - name: Read/write JSON without using JsonSerializer
+          items:
+          - name: Use DOM
+            href: ../standard/serialization/system-text-json/use-dom.md
+          - name: Use Utf8JsonWriter
+            href: ../standard/serialization/system-text-json/use-utf8jsonwriter.md
+          - name: Use Utf8JsonReader
+            href: ../standard/serialization/system-text-json/use-utf8jsonreader.md
       - name: Visual Basic support
         href: ../standard/serialization/system-text-json/visual-basic-support.md
       - name: Supported collection types
         href: ../standard/serialization/system-text-json/supported-collection-types.md
       - name: Advanced
         items:
+        - name: Source generation
+          items:
+          - name: Reflection vs. source generation
+            href: ../standard/serialization/system-text-json/reflection-vs-source-generation.md
+          - name: Source-generation modes
+            href: ../standard/serialization/system-text-json/source-generation-modes.md
+          - name: Use source generation
+            href: ../standard/serialization/system-text-json/source-generation.md
         - name: Customize character encoding
           href: ../standard/serialization/system-text-json/character-encoding.md
-        - name: Use source generation
-          href: ../standard/serialization/system-text-json/source-generation.md
         - name: Write custom converters
           href: ../standard/serialization/system-text-json/converters-how-to.md
         - name: Customize contracts
@@ -773,6 +785,9 @@ items:
     - name: Options pattern
       href: ../core/extensions/options.md
       displayName: options pattern,options,configuration options,config options
+    - name: Options validation source generation
+      href: ../core/extensions/options-validation-generator.md
+      displayName: options source generation, OptionsValidator, OptionsValidatorAttribute
     - name: Options pattern guidance for library authors
       href: ../core/extensions/options-library-authors.md
       displayName: options pattern guidance,options guidance,configuration options guidance,config options guidance
@@ -801,6 +816,9 @@ items:
       displayName: console log formatting,console log formatter,console log formatting provider,console log formatter provider
   - name: HostBuilder (generic host)
     href: ../core/extensions/generic-host.md
+  - name: Resilience
+    href: ../core/resilience/index.md
+    displayName: resilience,transient fault handling,recovery,polly
   - name: Networking
     items:
     - name: Network programming
@@ -829,12 +847,18 @@ items:
       - name: IHttpClientFactory
         href: ../core/extensions/httpclient-factory.md
         displayName: networking,httpclient,http,dependency injection,client,factory,named client,named httpclient,typed client,typed httpclient
+      - name: Build resilient HTTP apps
+        href: ../core/resilience/http-resilience.md
+        displayName: resilience,transient fault handling,http,httpclient,recovery,polly
       - name: HTTP/3 with .NET
         href: ../core/extensions/httpclient-http3.md
         displayName: networking,http,http3,http/3,http3 with .net,http/3 with .net
       - name: Rate limit an HTTP handler
         href: ../core/extensions/http-ratelimiter.md
         displayName: networking,http,rate limit,rate limiting,rate limit http,rate limiting http,rate limit http handler,rate limiting http handler
+      - name: Customize SNI in HTTP requests
+        href: ../core/extensions/httpclient-sni.md
+        displayName: networking,http,httpclient,sni,server name indication,server name indication http,server name indication httpclient,server name indication http client
     - name: Sockets
       items:
       - name: Sockets support
@@ -1070,5 +1094,7 @@ items:
       href: ../core/runtime-config/networking.md
     - name: Threading settings
       href: ../core/runtime-config/threading.md
+    - name: WPF settings
+      href: ../core/runtime-config/wpf.md
   - name: Troubleshoot app launch failures
     href: ../core/runtime-discovery/troubleshoot-app-launch.md

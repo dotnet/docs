@@ -2,7 +2,7 @@
 title: C# language versioning - C# Guide
 description: Learn about how the C# language version is determined based on your project and the reasons behind that choice. Learn how to override the default manually.
 ms.custom: "updateeachrelease"
-ms.date: 02/25/2022
+ms.date: 10/30/2023
 ---
 
 # C# language versioning
@@ -19,18 +19,18 @@ The compiler determines a default based on these rules:
 
 [!INCLUDE [langversion-table](includes/default-langversion-table.md)]
 
-When your project targets a preview framework that has a corresponding preview language version, the language version used is the preview language version. You use the latest features with that preview in any environment, without affecting projects that target a released .NET Core version.
+If your project targets a `preview` framework that has a corresponding preview language version, the language version used is the preview language version. You use the latest features with that preview in any environment, without affecting projects that target a released .NET Core version.
 
 > [!IMPORTANT]
-> The new project template for Visual Studio 2017 added a `<LangVersion>latest</LangVersion>` entry to new project files. If you upgrade the target framework for these projects, they [override the default behavior](#override-a-default). You should remove the `<LangVersion>latest</LangVersion>` from your project file when you update the .NET SDK. Then, your project will use the compiler version recommended for your target framework. You can update the target framework to access newer language features.
+> The new project template for Visual Studio 2017 added a `<LangVersion>latest</LangVersion>` entry to new project files. If you upgrade the target framework for these projects, the `<LangVersion>` setting can [override the default](#override-the-default) for the new target framework. Be sure to remove the `<LangVersion>latest</LangVersion>` from your project file to ensure your project uses the recommended compiler version for your target framework. You can update the target framework to access newer language features.
 
-## Override a default
+## Override the default
 
 If you must specify your C# version explicitly, you can do so in several ways:
 
 - Manually edit your [project file](#edit-the-project-file).
 - Set the language version [for multiple projects in a subdirectory](#configure-multiple-projects).
-- Configure the [**LangVersion** compiler option](compiler-options/language.md#langversion).
+- Configure the [LangVersion compiler option](compiler-options/language.md#langversion).
 
 > [!TIP]
 > You can see the language version in Visual Studio in the project properties page. Under the *Build* tab, the *Advanced* pane displays the version selected.
@@ -51,7 +51,7 @@ The value `preview` uses the latest available preview C# language version that y
 
 ### Configure multiple projects
 
-To configure multiple projects, you can create a **Directory.Build.props** file that contains the `<LangVersion>` element. You typically do that in your solution directory. Add the following to a **Directory.Build.props** file in your solution directory:
+To configure multiple projects, you can create a *Directory.Build.props* file, typically in your solution directory, that contains the `<LangVersion>` element. Add the following setting to the *Directory.Build.props* file:
 
 ```xml
 <Project>
@@ -61,10 +61,13 @@ To configure multiple projects, you can create a **Directory.Build.props** file 
 </Project>
 ```
 
-Builds in all subdirectories of the directory containing that file will use the preview C# version. For more information, see [Customize your build](/visualstudio/msbuild/customize-your-build).
+Builds in all subdirectories of the directory containing that file now use the preview C# version. For more information, see [Customize your build](/visualstudio/msbuild/customize-your-build).
 
 ## C# language version reference
 
-The following table shows all current C# language versions. Your compiler may not necessarily understand every value if it's older. If you install the latest .NET SDK, then you have access to everything listed.
+The following table shows all current C# language versions. Older compilers might not understand every value. If you install the latest .NET SDK, you have access to everything listed.
 
 [!INCLUDE [langversion-table](includes/langversion-table.md)]
+
+>[!NOTE]
+>Specifying **LangVersion** with the `default` value is different from omitting the **LangVersion** option. Specifying `default` uses the latest version of the language that the compiler supports, without taking into account the target framework. For example, building a project that targets .NET 6 from the current version of Visual Studio 2022 uses C# 10 if **LangVersion** isn't specified, but uses C# 11 if **LangVersion** is set to `default`.

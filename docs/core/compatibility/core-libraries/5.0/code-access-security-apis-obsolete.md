@@ -428,7 +428,7 @@ Due to CAS's deprecation, the [supporting infrastructure was not brought forward
 - `T:System.Security.Permissions.WebBrowserPermissionLevel`
 - `T:System.Security.Permissions.ZoneIdentityPermission`
 - `T:System.Security.Permissions.ZoneIdentityPermissionAttribute`
-- `M:`System.Security.Policy.ApplicationTrust.ApplicationTrust(PermissionSet, IEnumerable<StrongName>)`
+- `M:System.Security.Policy.ApplicationTrust.ApplicationTrust(PermissionSet, IEnumerable<StrongName>)`
 - `P:System.Security.Policy.ApplicationTrust.FullTrustAssemblies`
 - `T:System.Security.Policy.FileCodeGroup`
 - `T:System.Security.Policy.GacInstalled`

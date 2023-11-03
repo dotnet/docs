@@ -136,7 +136,7 @@ The `AddConsoleFormatter` API:
 
 :::code language="csharp" source="snippets/logging/console-formatter-custom/Program.cs" highlight="6-7":::
 
-Define a `CustomerFormatter` subclass of `ConsoleFormatter`:
+Define a `CustomFormatter` subclass of `ConsoleFormatter`:
 
 :::code language="csharp" source="snippets/logging/console-formatter-custom/CustomFormatter.cs" highlight="22-38":::
 

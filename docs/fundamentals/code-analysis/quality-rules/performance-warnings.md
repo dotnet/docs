@@ -2,7 +2,6 @@
 title: Performance rules (code analysis)
 description: "Learn about code analysis performance rules."
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.performancerules
 helpviewer_keywords:
@@ -73,3 +72,5 @@ Performance rules support high-performance libraries and applications.
 | [CA1864: Prefer the 'IDictionary.TryAdd(TKey, TValue)' method](ca1864.md) | Both <xref:System.Collections.Generic.Dictionary%602.ContainsKey(%600)?displayProperty=nameWithType> and <xref:System.Collections.Generic.Dictionary%602.Add%2A?displayProperty=nameWithType> perform a lookup, which is redundant. It's is more efficient to call <xref:System.Collections.Generic.Dictionary%602.TryAdd%2A?displayProperty=nameWithType>, which returns a `bool` indicating if the value was added or not. `TryAdd` doesn't overwrite the key's value if the key is already present. |
 | [CA1865-CA1867: Use char overload](ca1865-ca1867.md) | The char overload is a better performing overload for a string with a single char. |
 | [CA1868: Unnecessary call to 'Contains' for sets](ca1868.md) | Both <xref:System.Collections.Generic.ISet%601.Add(%600)?displayProperty=nameWithType> and <xref:System.Collections.Generic.ICollection%601.Remove(%600)?displayProperty=nameWithType> perform a lookup, which makes it redundant to call <xref:System.Collections.Generic.ICollection%601.Contains(%600)?displayProperty=nameWithType> beforehand. It's more efficient to call <xref:System.Collections.Generic.ISet%601.Add(%600)> or <xref:System.Collections.Generic.ICollection%601.Remove(%600)> directly, which returns a Boolean value indicating whether the item was added or removed. |
+| [CA1869: Cache and reuse 'JsonSerializerOptions' instances](ca1869.md) | Using a local instance of <xref:System.Text.Json.JsonSerializerOptions> for serialization or deserialization can substantially degrade the performance of your application if your code executes multiple times, since System.Text.Json internally caches serialization-related metadata into the provided instance. |
+| [CA1870: Use a cached 'SearchValues' instance](ca1870.md) | Using a cached  <xref:System.Buffers.SearchValues%601> instance is more efficient than passing values to 'IndexOfAny' or 'ContainsAny' directly. |

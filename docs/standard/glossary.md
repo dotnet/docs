@@ -180,7 +180,7 @@ Mono is typically used with a [just-in-time compiler](#jit), but it also feature
 
 For more information, see the [Mono documentation](https://www.mono-project.com/docs/).
 
-## native AOT
+## Native AOT
 
 A deployment mode where the app is self-contained and has been [ahead-of-time](#aot) compiled to native code at the time of publish. Native AOT apps don't use a [JIT](#jit) compiler at run time. They can run on machines that don't have the .NET runtime installed.
 

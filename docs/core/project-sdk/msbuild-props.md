@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 12/08/2022
+ms.date: 10/25/2023
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -476,7 +476,10 @@ C# compiler options, such as `LangVersion` and `Nullable`, can also be specified
 
 ### ContinuousIntegrationBuild
 
-The `ContinuousIntegrationBuild` property indicates whether a build is executing on a continuous integration (CI) server. When set to `true`, this property enables settings that only apply to official builds as opposed to local builds on a developer machine. For example, stored file paths are normalized for official builds. But on a local development machine, the debugger won't be able to find local source files if file paths are normalized.
+The `ContinuousIntegrationBuild` property indicates whether a build is executing on a continuous integration (CI) server. When set to `true`, this property enables settings that only apply to official builds as opposed to local builds on a developer machine. For example, stored file paths are normalized for official builds. But on a local development machine, the debugger isn't able to find local source files if file paths are normalized.
+
+> [!NOTE]
+> Currently, setting this property to `true` works only if you add either a specific [SourceLink](https://github.com/dotnet/sourcelink) provider package reference or a `<SourceRoot Include="$(MyDirectory)" />` item. For more information, see [dotnet/roslyn issue 55860](https://github.com/dotnet/roslyn/issues/55860).
 
 You can use your CI system's variable to conditionally set the `ContinuousIntegrationBuild` property. For example, the variable name for Azure Pipelines is `TF_BUILD`:
 
@@ -914,8 +917,9 @@ To remove this warning and continue to use the version of code analyzers in the 
 
 ## Runtime configuration properties
 
-You can configure some run-time behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring run-time behavior, see [Runtime configuration settings](../runtime-config/index.md).
+You can configure some runtime behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring runtime behavior, see [Runtime configuration settings](../runtime-config/index.md).
 
+- [AutoreleasePoolSupport](#autoreleasepoolsupport)
 - [ConcurrentGarbageCollection](#concurrentgarbagecollection)
 - [InvariantGlobalization](#invariantglobalization)
 - [PredefinedCulturesOnly](#predefinedculturesonly)
@@ -926,6 +930,18 @@ You can configure some run-time behaviors by specifying MSBuild properties in th
 - [TieredCompilation](#tieredcompilation)
 - [TieredCompilationQuickJit](#tieredcompilationquickjit)
 - [TieredCompilationQuickJitForLoops](#tieredcompilationquickjitforloops)
+- [TieredPGO](#tieredpgo)
+- [UseWindowsThreadPool](#usewindowsthreadpool)
+
+### AutoreleasePoolSupport
+
+The `AutoreleasePoolSupport` property configures whether each managed thread receives an implicit [NSAutoreleasePool](https://developer.apple.com/documentation/foundation/nsautoreleasepool) when running on a supported macOS platform. For more information, see [`AutoreleasePool` for managed threads](../runtime-config/threading.md#autoreleasepool-for-managed-threads).
+
+```xml
+<PropertyGroup>
+  <AutoreleasePoolSupport>true</AutoreleasePoolSupport>
+</PropertyGroup>
+```
 
 ### ConcurrentGarbageCollection
 
@@ -1029,6 +1045,26 @@ The `TieredCompilationQuickJitForLoops` property configures whether the JIT comp
 </PropertyGroup>
 ```
 
+### TieredPGO
+
+The `TieredPGO` property controls whether dynamic or tiered profile-guided optimization (PGO) is enabled. Set the value to `true` to enable tiered PGO. For more information, see [Profile-guided optimization](../runtime-config/compilation.md#profile-guided-optimization).
+
+```xml
+<PropertyGroup>
+  <TieredPGO>true</TieredPGO>
+</PropertyGroup>
+```
+
+### UseWindowsThreadPool
+
+The `UseWindowsThreadPool` property configures whether thread pool thread management is delegated to the Windows thread pool (Windows only). The default value is `false`, in which case the .NET thread pool is used. For more information, see [Windows thread pool](../runtime-config/threading.md#windows-thread-pool).
+
+```xml
+<PropertyGroup>
+  <UseWindowsThreadPool>true</UseWindowsThreadPool>
+</PropertyGroup>
+```
+
 ## Reference-related properties
 
 The following MSBuild properties are documented in this section:
@@ -1058,7 +1094,7 @@ You can set the `AssetTargetFallback` property to one or more [target framework 
 
 The `DisableImplicitFrameworkReferences` property controls implicit `FrameworkReference` items when targeting .NET Core 3.0 and later versions. When targeting .NET Core 2.1 or .NET Standard 2.0 and earlier versions, it controls implicit [PackageReference](#packagereference) items to packages in a metapackage. (A metapackage is a framework-based package that consists only of dependencies on other packages.) This property also controls implicit references such as `System` and `System.Core` when targeting .NET Framework.
 
-Set this property to `true` to disable implicit `FrameworkReference` or [PackageReference](#packagereference) items. If you set this property to `true`, you can add explicit references to just the frameworks or packages you need.
+Set this property to `true` to disable implicit [FrameworkReference](#frameworkreference) or [PackageReference](#packagereference) items. If you set this property to `true`, you can add explicit references to just the frameworks or packages you need.
 
 ```xml
 <PropertyGroup>
@@ -1287,6 +1323,20 @@ The `InternalsVisibleTo` item generates an <xref:System.Runtime.CompilerServices
 ```
 
 If the friend assembly is signed, you can specify an optional `Key` metadata to specify its full public key. If you don't specify `Key` metadata and a `$(PublicKey)` is available, that key is used. Otherwise, no public key is added to the attribute.
+
+### FrameworkReference
+
+The `FrameworkReference` item defines a reference to a .NET shared framework.
+
+The `Include` attribute specifies the framework ID.
+
+The project file snippet in the following example references the Microsoft.AspNetCore.App shared framework.
+
+```xml
+<ItemGroup>
+  <FrameworkReference Include="Microsoft.AspNetCore.App" />
+</ItemGroup>
+```
 
 ### PackageReference
 

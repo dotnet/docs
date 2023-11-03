@@ -197,16 +197,16 @@ public static class GroupQueryResults
             from student in students
             group student by new
             {
-                FirstLetter = student.LastName[0],
+                FirstLetterOfLastName = student.LastName[0],
                 IsScoreOver85 = student.ExamScores[0] > 85
             } into studentGroup
-            orderby studentGroup.Key.FirstLetter
+            orderby studentGroup.Key.FirstLetterOfLastName
             select studentGroup;
 
         foreach (var scoreGroup in groupByCompoundKey)
         {
             string s = scoreGroup.Key.IsScoreOver85 == true ? "more than 85" : "less than 85";
-            Console.WriteLine($"Name starts with {scoreGroup.Key.FirstLetter} who scored {s}");
+            Console.WriteLine($"Name starts with {scoreGroup.Key.FirstLetterOfLastName} who scored {s}");
             foreach (var item in scoreGroup)
             {
                 Console.WriteLine($"\t{item.FirstName} {item.LastName}");

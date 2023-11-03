@@ -1,7 +1,7 @@
 ---
 title: How to customize property names and values with System.Text.Json
 description: "Learn how to customize property names and values when serializing with System.Text.Json in .NET."
-ms.date: 09/25/2023
+ms.date: 10/16/2023
 zone_pivot_groups: dotnet-preview-version
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
@@ -17,17 +17,16 @@ ms.topic: how-to
 
 # How to customize property names and values with System.Text.Json
 
-By default, property names and dictionary keys are unchanged in the JSON output, including case. Enum values are represented as numbers. In this article, you'll learn how to:
+By default, property names and dictionary keys are unchanged in the JSON output, including case. Enum values are represented as numbers. And properties are serialized in the order they're defined. However, you can customize these behaviors by:
 
-* [Customize individual property names](#customize-individual-property-names)
-* [Convert all property names to camel case](#use-camel-case-for-all-json-property-names)
-* [Implement a custom property naming policy](#use-a-custom-json-property-naming-policy)
-* [Convert dictionary keys to camel case](#camel-case-dictionary-keys)
-* [Convert enums to strings and camel case](#enums-as-strings)
-* [Configure the order of serialized properties](#configure-the-order-of-serialized-properties)
+- Specifying specific serialized property names.
+- Using a built-in [naming policy](xref:System.Text.Json.JsonNamingPolicy), such as camelCase, snake_case, or kebab-case, for property names and dictionary keys.
+- Using a custom naming policy for property names and dictionary keys.
+- Serializing enum values as strings, with or without a naming policy.
+- Configuring the order of serialized properties.
 
 > [!NOTE]
-> The [web default](configure-options.md#web-defaults-for-jsonserializeroptions) is camel case.
+> The [web default](configure-options.md#web-defaults-for-jsonserializeroptions) naming policy is camel case.
 
 For other scenarios that require special handling of JSON property names and values, you can [implement custom converters](converters-how-to.md).
 
@@ -53,11 +52,23 @@ The property name set by this attribute:
 
 * Applies in both directions, for serialization and deserialization.
 * Takes precedence over property naming policies.
-* [Doesn't affect parameter name matching for parameterized constructors](immutability.md#immutable-types-and-records).
+* [Doesn't affect parameter name matching for parameterized constructors](immutability.md#parameterized-constructors).
 
-## Use camel case for all JSON property names
+## Use a built-in naming policy
 
-To use camel case for all JSON property names, set <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType> to `JsonNamingPolicy.CamelCase`, as shown in the following example:
+The following table shows the built-in naming policies and how they affect property names.
+
+| Naming policy                                             | Description | Original property name | Converted property name |
+|-----------------------------------------------------------|-|-----------------------|-------------------------|
+| <xref:System.Text.Json.JsonNamingPolicy.CamelCase>        | First word starts with a lower case character.<br/>Successive words start with an uppercase character. | `TempCelsius`          | `tempCelsius`           |
+| <xref:System.Text.Json.JsonNamingPolicy.KebabCaseLower>\* | Words are separated by hyphens.<br/>All characters are lowercase. | `TempCelsius`          | `temp-celsius`          |
+| <xref:System.Text.Json.JsonNamingPolicy.KebabCaseUpper>\* | Words are separated by hyphens.<br/>All characters are uppercase. | `TempCelsius`          | `TEMP-CELSIUS`          |
+| <xref:System.Text.Json.JsonNamingPolicy.SnakeCaseLower>\* | Words are separated by underscores.<br/>All characters are lowercase. | `TempCelsius`          | `temp_celsius`          |
+| <xref:System.Text.Json.JsonNamingPolicy.SnakeCaseUpper>\* | Words are separated by underscores.<br/>All characters are uppercase. |`TempCelsius`          | `TEMP_CELSIUS`          |
+
+\* Available in .NET 8 and later versions.
+
+The following example shows how to use camel case for all JSON property names by setting <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType> to <xref:System.Text.Json.JsonNamingPolicy.CamelCase?displayProperty=nameWithType>:
 
 :::code language="csharp" source="snippets/how-to/csharp/RoundTripCamelCasePropertyNames.cs" id="Serialize":::
 :::code language="vb" source="snippets/how-to/vb/RoundTripCamelCasePropertyNames.vb" id="Serialize":::
@@ -76,10 +87,13 @@ Here's an example class to serialize and JSON output:
 }
 ```
 
-The camel case property naming policy:
+The naming policy:
 
 * Applies to serialization and deserialization.
 * Is overridden by `[JsonPropertyName]` attributes. This is why the JSON property name `Wind` in the example is not camel case.
+
+> [!NOTE]
+> None of the built-in naming policies support letters that are surrogate pairs. For more information, see [dotnet/runtime issue 90352](https://github.com/dotnet/runtime/issues/90352).
 
 ## Use a custom JSON property naming policy
 
@@ -112,9 +126,9 @@ The JSON property naming policy:
 * Applies to serialization and deserialization.
 * Is overridden by `[JsonPropertyName]` attributes. This is why the JSON property name `Wind` in the example is not upper case.
 
-## Camel case dictionary keys
+## Use a naming policy for dictionary keys
 
-If a property of an object to be serialized is of type `Dictionary<string,TValue>`, the `string` keys can be converted to camel case. To do that, set <xref:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy> to `JsonNamingPolicy.CamelCase`, as shown in the following example:
+If a property of an object to be serialized is of type `Dictionary<string,TValue>`, the `string` keys can be converted using a naming policy, such as camel case. To do that, set <xref:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy?displayProperty=nameWithType> to your desired naming policy. The following example uses the `CamelCase` naming policy:
 
 :::code language="csharp" source="snippets/how-to/csharp/SerializeCamelCaseDictionaryKeys.cs" id="Serialize":::
 :::code language="vb" source="snippets/how-to/vb/SerializeCamelCaseDictionaryKeys.vb" id="Serialize":::
@@ -133,7 +147,7 @@ Serializing an object with a dictionary named `TemperatureRanges` that has key-v
 }
 ```
 
-The camel case naming policy for dictionary keys applies to serialization only. If you deserialize a dictionary, the keys will match the JSON file even if you specify `JsonNamingPolicy.CamelCase` for the `DictionaryKeyPolicy`.
+Naming policies for dictionary keys apply to serialization only. If you deserialize a dictionary, the keys will match the JSON file even if you set <xref:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy?displayProperty=nameWithType> to a non-default naming policy.
 
 ## Enums as strings
 
@@ -204,18 +218,15 @@ The resulting JSON looks like the following example:
 }
 ```
 
-To use the converter with source generation, see [Serialize enum fields as strings](source-generation-modes.md#serialize-enum-fields-as-strings).
+To use the converter with source generation, see [Serialize enum fields as strings](source-generation.md#serialize-enum-fields-as-strings).
 
 :::zone-end
 
-:::zone pivot="dotnet-7-0,dotnet-6-0"
-
 ## Configure the order of serialized properties
 
-The [`[JsonPropertyOrder]`](xref:System.Text.Json.Serialization.JsonPropertyOrderAttribute) attribute lets you specify the order of properties in the JSON output from serialization. The default value of the `Order` property is zero. Set `Order` to a positive number to position a property after those that have the default value. A negative `Order` positions a property before those that have the default value. Properties are written in order from the lowest `Order` value to the highest. Here's an example:
+By default, properties are serialized in the order in which they're defined in their class. The [`[JsonPropertyOrder]`](xref:System.Text.Json.Serialization.JsonPropertyOrderAttribute) attribute lets you specify the order of properties in the JSON output from serialization. The default value of the `Order` property is zero. Set `Order` to a positive number to position a property after those that have the default value. A negative `Order` positions a property before those that have the default value. Properties are written in order from the lowest `Order` value to the highest. Here's an example:
 
 :::code language="csharp" source="snippets/how-to-6-0/csharp/PropertyOrder.cs":::
-::: zone-end
 
 ## See also
 

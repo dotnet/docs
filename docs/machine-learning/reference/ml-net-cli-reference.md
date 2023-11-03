@@ -86,7 +86,6 @@ mlnet classification
 -v, --verbosity <v>
 
 -?, -h, --help
-
 ```
 
 ### Regression options
@@ -158,7 +157,6 @@ mlnet recommendation
 -v, --verbosity <v>
 
 -?, -h, --help
-
 ```
 
 Invalid input options cause the CLI tool to emit a list of valid inputs and an error message.

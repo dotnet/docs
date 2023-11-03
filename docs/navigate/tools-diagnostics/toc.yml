@@ -17,6 +17,8 @@ items:
         href: ../../core/tools/telemetry.md
       - name: Signed-package verification
         href: ../../core/tools/nuget-signed-package-verification.md
+      - name: Artifacts output layout
+        href: ../../core/sdk/artifacts-output.md
       - name: Error messages
         items:
           - name: List of all SDK errors
@@ -323,6 +325,12 @@ items:
       href: ../../core/extensions/logging.md
     - name: Observability with OpenTelemetry
       href: ../../core/diagnostics/observability-with-otel.md
+    - name: Resource monitoring
+      href: ../../core/diagnostics/diagnostic-resource-monitoring.md
+      displayName: resource monitoring,
+    - name: App health checks
+      href: ../../core/diagnostics/diagnostic-health-checks.md
+      displayName: health check,healthcheck,degraded,healthy,unhealthy,resource monitoring,resource health,app lifecycle monitoring
     - name: Metrics
       items:
       - name: Overview
@@ -330,8 +338,21 @@ items:
         href: ../../core/diagnostics/metrics.md
       - name: Instrumentation
         href: ../../core/diagnostics/metrics-instrumentation.md
+      - name: Exception summarization
+        href: ../../core/diagnostics/diagnostic-exception-summary.md
+        displayName: exception summarization,exception summary,exception summarizer,ExceptionSummary
       - name: Collection
         href: ../../core/diagnostics/metrics-collection.md
+      - name: Built-in metrics
+        items:
+        - name: Overview
+          href: ../../core/diagnostics/built-in-metrics.md
+        - name: .NET extensions metrics
+          href: ../../core/diagnostics/built-in-metrics-diagnostics.md
+        - name: ASP.NET Core metrics
+          href: ../../core/diagnostics/built-in-metrics-aspnetcore.md
+        - name: System.Net metrics
+          href: ../../core/diagnostics/built-in-metrics-system-net.md
       - name: EventCounters
         items:
         - name: Overview
@@ -1720,6 +1741,8 @@ items:
             href: ../../fundamentals/syslib-diagnostics/syslib1032.md
           - name: SYSLIB1033
             href: ../../fundamentals/syslib-diagnostics/syslib1033.md
+          - name: SYSLIB1034
+            href: ../../fundamentals/syslib-diagnostics/syslib1034.md
           - name: SYSLIB1035
             href: ../../fundamentals/syslib-diagnostics/syslib1035.md
           - name: SYSLIB1036
@@ -1728,6 +1751,8 @@ items:
             href: ../../fundamentals/syslib-diagnostics/syslib1037.md
           - name: SYSLIB1038
             href: ../../fundamentals/syslib-diagnostics/syslib1038.md
+          - name: SYSLIB1039
+            href: ../../fundamentals/syslib-diagnostics/syslib1039.md
           - name: SYSLIB1040-SYSLIB1049
             href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
             displayProperty: syslib1041, syslib1042, syslib1043, syslib1044, syslib1045, syslib1046, syslib1047, syslib1048, syslib1049
@@ -1743,6 +1768,12 @@ items:
           - name: SYSLIB1100-SYSLIB1118
             href: ../../fundamentals/syslib-diagnostics/syslib1100-1118.md
             displayProperty: syslib1101, syslib1102, syslib1103, syslib1104, syslib1105, syslib1106, syslib1107, syslib1108, syslib1109, syslib1110, syslib1111, syslib1112, syslib1113, syslib1114, syslib1115, syslib1116, syslib1117, syslib1118
+          - name: SYSLIB1201-SYSLIB1219
+            href: ../../fundamentals/syslib-diagnostics/syslib1201-1219.md
+            displayProperty: syslib1201, syslib1202, syslib1203, syslib1204, syslib1205, syslib1206, syslib1207, syslib1208, syslib1209, syslib1210, syslib1211, syslib1212, syslib1213, syslib1214, syslib1215, syslib1216, syslib1217, syslib1218, syslib1219
+          - name: SYSLIB1220-SYSLIB1229
+            href: ../../fundamentals/syslib-diagnostics/syslib1220-1229.md
+            displayProperty: syslib1220, syslib1221, syslib1222, syslib1223, syslib1224, syslib1225, syslib1226, syslib1227, syslib1228, syslib1229
   - name: Package validation
     items:
       - name: Get started

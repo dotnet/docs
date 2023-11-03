@@ -79,7 +79,7 @@ A reference architecture that walks you through the decision-making process invo
 
 ## Serverless for mobile
 
-Azure Functions are easy to implement and maintain, and accessible through HTTP. They are a great way to implement an API for a mobile application. Microsoft offers great cross-platform tools for iOS, Android, and Windows with Xamarin. As such, Xamarin and Azure Functions are working great together. This article shows how to implement an Azure Function in the Azure portal or in Visual Studio at first, and build a cross-platform client with Xamarin.Forms running on Android, iOS, and Windows.
+Azure Functions are easy to implement and maintain, and accessible through HTTP. They're a good way to implement an API for a mobile application. Microsoft offers cross-platform tools for iOS, Android, and Windows with Xamarin. As such, Xamarin and Azure Functions work well together. This article shows how to implement an Azure Function in the Azure portal or in Visual Studio, and then build a cross-platform client with Xamarin.Forms running on Android, iOS, and Windows.
 
 [Implementing a simple Azure Function with a Xamarin.Forms client](/samples/azure-samples/functions-xamarin-getting-started/implementing-a-simple-azure-function-with-a-xamarinforms-client/)
 

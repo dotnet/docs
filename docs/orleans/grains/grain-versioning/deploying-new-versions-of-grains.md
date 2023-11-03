@@ -56,7 +56,6 @@ var silo = new HostBuilder()
         })
     })
     .Build();
-
 ```
 
 Suggested deployment steps:

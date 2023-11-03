@@ -18,6 +18,10 @@ This article has been updated for .NET 8 release candidate (RC) 2.
 > - This information relates to a pre-release product that may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 > - Much of the other .NET documentation on [https://learn.microsoft.com/dotnet](/dotnet) has not yet been updated for .NET 8.
 
+## ASP.NET Core
+
+For information about what's new in ASP.NET Core, see [What's new in ASP.NET Core 8.0](/aspnet/core/release-notes/aspnetcore-8.0).
+
 ## Core .NET libraries
 
 This section contains the following subtopics:
@@ -75,12 +79,12 @@ The serializer has built-in support for the following additional types.
 
 #### Source generator
 
-.NET 8 includes enhancements of the System.Text.Json [source generator](../../standard/serialization/system-text-json/source-generation.md) that are aimed at making the [Native AOT](../../standard/glossary.md#native-aot) experience on par with the [reflection-based serializer](../../standard/serialization/system-text-json/source-generation-modes.md#overview). For example:
+.NET 8 includes enhancements of the System.Text.Json [source generator](../../standard/serialization/system-text-json/source-generation.md) that are aimed at making the [Native AOT](../../standard/glossary.md#native-aot) experience on par with the [reflection-based serializer](../../standard/serialization/system-text-json/reflection-vs-source-generation.md#reflection). For example:
 
 - The source generator now supports serializing types with [`required`](../../standard/serialization/system-text-json/required-properties.md) and [`init`](../../csharp/language-reference/keywords/init.md) properties. These were both already supported in reflection-based serialization.
 - Improved formatting of source-generated code.
-- <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> feature parity with <xref:System.Text.Json.JsonSerializerOptions>. This parity lets you specify serialization configuration at compile time, which ensures that the generated `MyContext.Default` property is preconfigured with all the relevant options set.
-- Additional diagnostics (such as `SYSLIB1034` and `SYSLIB1039`).
+- <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> feature parity with <xref:System.Text.Json.JsonSerializerOptions>. For more information, see [Specify options (source generation)](../../standard/serialization/system-text-json/source-generation.md#specify-options).
+- Additional diagnostics (such as [SYSLIB1034](../../fundamentals/syslib-diagnostics/syslib1034.md) and [SYSLIB1039](../../fundamentals/syslib-diagnostics/syslib1039.md)).
 - Don't include types of ignored or inaccessible properties.
 - Support for nesting `JsonSerializerContext` declarations within arbitrary type kinds.
 - Support for compiler-generated or *unspeakable* types in weakly typed source generation scenarios. Since compiler-generated types can't be explicitly specified by the source generator, <xref:System.Text.Json?displayProperty=fullName> now performs nearest-ancestor resolution at run time. This resolution determines the most appropriate supertype with which to serialize the value.
@@ -94,7 +98,7 @@ The serializer has built-in support for the following additional types.
   public partial class MyContext : JsonSerializerContext { }
   ```
 
-  For more information, see [Serialize enum fields as strings](../../standard/serialization/system-text-json/source-generation-modes.md#serialize-enum-fields-as-strings).
+  For more information, see [Serialize enum fields as strings](../../standard/serialization/system-text-json/source-generation.md#serialize-enum-fields-as-strings).
 
 - New `JsonConverter.Type` property lets you look up the type of a non-generic `JsonConverter` instance:
 
@@ -107,21 +111,7 @@ The serializer has built-in support for the following additional types.
 
 ##### Chain source generators
 
-The <xref:System.Text.Json.JsonSerializerOptions> class includes a new <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> property that complements the existing <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> property. These properties are used in contract customization for chaining source generators. The addition of the new property means that you don't have to specify all chained components at one call site&mdash;they can be added after the fact.
-
-<xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> also lets you introspect the chain or remove components from it. The following code snippet shows an example.
-
-```csharp
-var options = new JsonSerializerOptions
-{
-    TypeInfoResolver = JsonTypeInfoResolver.Combine(
-        ContextA.Default, ContextB.Default, ContextC.Default);
-};
-
-options.TypeInfoResolverChain.Count; // 3
-options.TypeInfoResolverChain.RemoveAt(0);
-options.TypeInfoResolverChain.Count; // 2
-```
+The <xref:System.Text.Json.JsonSerializerOptions> class includes a new <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> property that complements the existing <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> property. These properties are used in contract customization for chaining source generators. The addition of the new property means that you don't have to specify all chained components at one call site&mdash;they can be added after the fact. <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> also lets you introspect the chain or remove components from it. For more information, see [Combine source generators](../../standard/serialization/system-text-json/source-generation.md#combine-source-generators).
 
 In addition, <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=nameWithType> is now obsolete. It's been superseded by the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> and <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> properties. For more information, see [SYSLIB0049](../../fundamentals/syslib-diagnostics/syslib0049.md).
 
@@ -161,11 +151,13 @@ var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolic
 JsonSerializer.Serialize(new { PropertyName = "value" }, options); // { "property_name" : "value" }
 ```
 
+For more information, see [Use a built-in naming policy](../../standard/serialization/system-text-json/customize-properties.md#use-a-built-in-naming-policy).
+
 #### Read-only properties
 
 You can now deserialize onto read-only fields or properties (that is, those that don't have a `set` accessor).
 
-To opt into this support globally, set a new option, <xref:System.Text.Json.JsonSerializerOptions.PreferredObjectCreationHandling>, to <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Populate?displayProperty=nameWithType>. If compatibility is a concern, you can also enable the functionality more granularly by placing the `[JsonObjectCreationHandling(JsonObjectCreationHandling.Populate)]` attribute on types whose properties are to be populated, or on individual properties.
+To opt into this support globally, set a new option, <xref:System.Text.Json.JsonSerializerOptions.PreferredObjectCreationHandling>, to <xref:System.Text.Json.Serialization.JsonObjectCreationHandling.Populate?displayProperty=nameWithType>. If compatibility is a concern, you can also enable the functionality more granularly by placing the `[JsonObjectCreationHandling(JsonObjectCreationHandling.Populate)]` attribute on specific types whose properties are to be populated, or on individual properties.
 
 For example, consider the following code that deserializes into a `CustomerInfo` type that has two read-only properties.
 
@@ -204,35 +196,15 @@ Now, the input values are used to populate the read-only properties during deser
 {"Names":["John Doe"],"Company":{"Name":"Contoso","PhoneNumber":null}}
 ```
 
+For more information about the *populate* deserialization behavior, see [Populate initialized properties](../../standard/serialization/system-text-json/populate-properties.md).
+
 #### Disable reflection-based default
 
 You can now disable using the reflection-based serializer by default. This disablement is useful to avoid accidental rooting of reflection components that aren't even in use, especially in trimmed and Native AOT apps. To disable default reflection-based serialization by requiring that a <xref:System.Text.Json.JsonSerializerOptions> argument be passed to the <xref:System.Text.Json.JsonSerializer> serialization and deserialization methods, set the `JsonSerializerIsReflectionEnabledByDefault` MSBuild property to `false` in your project file.
 
-```xml
-<JsonSerializerIsReflectionEnabledByDefault>false</JsonSerializerIsReflectionEnabledByDefault>
-```
-
-(If the property is set to `false` and you don't pass a configured <xref:System.Text.Json.JsonSerializerOptions> argument, the `Serialize` and `Deserialize` methods throw a <xref:System.NotSupportedException> at run time.)
-
 Use the new <xref:System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault> API to check the value of the feature switch. If you're a library author building on top of <xref:System.Text.Json?displayProperty=fullName>, you can rely on the property to configure your defaults without accidentally rooting reflection components.
 
-```csharp
-static JsonSerializerOptions GetDefaultOptions()
-{
-    if (JsonSerializer.IsReflectionEnabledByDefault)
-    {
-        // This branch has a dependency on DefaultJsonTypeInfo,
-        // but it will get trimmed away if the feature switch is disabled.
-        return new()
-        {
-            TypeInfoResolver = new DefaultJsonTypeInfoResolver(),
-            PropertyNamingPolicy = JsonNamingPolicy.KebabCaseLower,
-        }
-    }
-
-    return new() { PropertyNamingPolicy = JsonNamingPolicy.KebabCaseLower };
-}
-```
+For more information, see [Disable reflection defaults](../../standard/serialization/system-text-json/source-generation.md#disable-reflection-defaults).
 
 #### New JsonNode API methods
 
@@ -1054,18 +1026,17 @@ The default console app template now includes support for AOT out-of-the-box. To
 - `tvos`
 - `tvossimulator`
 
-Preliminary testing shows that app size on disk decreases by about 40% for .NET iOS apps that use Native AOT instead of Mono. App size on disk for .NET MAUI iOS apps *increases* by about 25%. However, since the .NET 8 support is only the first step for the feature as a whole, we urge you not to draw conclusions about performance at this point.
+Preliminary testing shows that app size on disk decreases by about 35% for .NET iOS apps that use Native AOT instead of Mono. App size on disk for .NET MAUI iOS apps decreases up to 50%. Additionally, the startup time is also faster. .NET iOS apps have about 28% faster startup time, while .NET MAUI iOS apps have about 50% better startup performance compared to Mono. The .NET 8 support is experimental and only the first step for the feature as a whole. For more information, see the [.NET 8 Performance Improvements in .NET MAUI blog post](https://devblogs.microsoft.com/dotnet/dotnet-8-performance-improvements-in-dotnet-maui/).
 
-Native AOT support is available as an opt-in feature intended for app deployment; Mono is still the default runtime for app development and deployment. To build and run a .NET MAUI application with Native AOT on an iOS device, use `dotnet workload install maui` to install the .NET MAUI workload and `dotnet new maui -n HelloMaui` to create the app. Then, set the MSBuild properties `PublishAot` and `PublishAotUsingRuntimePack` to `true` in the project file.
+Native AOT support is available as an opt-in feature intended for app deployment; Mono is still the default runtime for app development and deployment. To build and run a .NET MAUI application with Native AOT on an iOS device, use `dotnet workload install maui` to install the .NET MAUI workload and `dotnet new maui -n HelloMaui` to create the app. Then, set the MSBuild property `PublishAot` to `true` in the project file.
 
 ```xml
 <PropertyGroup>
   <PublishAot>true</PublishAot>
-  <PublishAotUsingRuntimePack>true</PublishAotUsingRuntimePack>
 </PropertyGroup>
 ```
 
-When you set these properties and run `dotnet publish` as shown in the following example, the app will be deployed by using Native AOT.
+When you set the required property and run `dotnet publish` as shown in the following example, the app will be deployed by using Native AOT.
 
 ```dotnetcli
 dotnet publish -f net8.0-ios -c Release -r ios-arm64  /t:Run
@@ -1075,10 +1046,9 @@ dotnet publish -f net8.0-ios -c Release -r ios-arm64  /t:Run
 
 Not all iOS features are compatible with Native AOT. Similarly, not all libraries commonly used in iOS are compatible with NativeAOT. And in addition to the existing [limitations of Native AOT deployment](../deploying/native-aot/index.md#limitations-of-native-aot-deployment), the following list shows some of the other limitations when targeting iOS-like platforms:
 
-- Installation and app deployment using Visual Studio is untested.
 - Using Native AOT is only enabled during app deployment (`dotnet publish`).
-- <xref:System.Linq.Expressions> library functionality isn't fully supported.
 - Managed code debugging is only supported with Mono.
+- Compatibility with the .NET MAUI framework is limited.
 
 ## Performance improvements
 
@@ -1170,37 +1140,7 @@ bin\Release\net8.0\
 
 .NET 8 introduces an option to simplify the output path and folder structure for build outputs. Previously, .NET apps produced a deep and complex set of output paths for different build artifacts. The new, simplified output path structure gathers all build outputs into a common location, which makes it easier for tooling to anticipate.
 
-To opt into the new output path format, use one of the following properties in your *Directory.Build.props* file:
-
-- Add an `ArtifactsPath` property with a value of `$(MSBuildThisFileDirectory)artifacts` (or whatever you want the folder location to be), OR
-- To use the default location, simply set the `UseArtifactsOutput` property to `true`.
-
-Alternatively, run `dotnet new buildprops --use-artifacts` and the template will generate the *Directory.Build.props* file for you:
-
-```xml
-<Project>
-  <PropertyGroup>
-    <ArtifactsPath>$(MSBuildThisFileDirectory)artifacts</ArtifactsPath>
-  </PropertyGroup>
-</Project>
-```
-
-By default, the common location is a folder named *artifacts* in the root of your repository rather than in each project folder. The folder structure under the root *artifacts* folder is as follows:
-
-```Directory
-📁 artifacts
-    └──📂 <Type of output>
-        └──📂 <Project name>
-            └──📂 <Pivot>
-```
-
-The following table shows the default values for each level in the folder structure. The values, as well as the default location, can be overridden using properties in the *Directory.build.props* file.
-
-| Folder level | Description |
-|--|--|
-| Type of output | Examples: `bin`, `obj`, `publish`, or `package` |
-| Project name | Separates output by each project. |
-| Pivot | Distinguishes between builds of a project for different configurations, target frameworks, and runtime identifiers. If multiple elements are needed, they're joined by an underscore (`_`). |
+For more information, see [Artifacts output layout](../sdk/artifacts-output.md).
 
 ### `dotnet workload clean` command
 
@@ -1532,6 +1472,12 @@ Starting in .NET 8, NuGet verifies signed packages on Linux by default. NuGet co
 Most users shouldn't notice the verification. However, if you have an existing root certificate bundle located at */etc/pki/ca-trust/extracted/pem/objsign-ca-bundle.pem*, you may see trust failures accompanied by [warning NU3042](/nuget/reference/errors-and-warnings/nu3042).
 
 You can opt out of verification by setting the environment variable `DOTNET_NUGET_SIGNATURE_VERIFICATION` to `false`.
+
+## Diagnostics
+
+### C# Hot Reload supports modifying generics
+
+Starting in .NET 8, C# Hot Reload [supports modifying generic types and generic methods](https://devblogs.microsoft.com/dotnet/hot-reload-generics/). When you debug console, desktop, mobile, or WebAssembly applications with Visual Studio, you can apply changes to generic classes and generic methods in C# code or Razor pages. For more information, see the [full list of edits supported by Roslyn](https://github.com/dotnet/roslyn/blob/main/docs/wiki/EnC-Supported-Edits.md)
 
 ## See also
 

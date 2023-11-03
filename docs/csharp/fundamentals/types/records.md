@@ -47,15 +47,15 @@ The compiler synthesizes a public init-only property for each primary constructo
 
 The following example defines a public record that uses positional parameters to declare and instantiate a record. It then prints the type name and property values:
 
-:::code language="csharp" source="../../language-reference/builtin-types/snippets/shared/RecordType.cs" ID="InstantiatePositional":::
+:::code language="csharp" source="./snippets/records/FirstRecord.cs" id="FirstRecord":::
 
 The following example demonstrates value equality in records:
 
-:::code language="csharp" source="../../language-reference/builtin-types/snippets/shared/RecordType.cs" ID="Equality":::
+:::code language="csharp" source="./snippets/records/EqualityTest.cs" id="EqualityTest":::
 
 The following example demonstrates use of a `with` expression to copy an immutable object and change one of the properties:
 
-:::code language="csharp" source="../../language-reference/builtin-types/snippets/shared/RecordType.cs" ID="WithExpressions":::
+:::code language="csharp" source="./snippets/records/ImmutableRecord.cs" id="ImmutableRecord":::
 
 For more information, see [Records (C# reference)](../../language-reference/builtin-types/record.md).
   

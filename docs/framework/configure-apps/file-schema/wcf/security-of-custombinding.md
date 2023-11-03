@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: <security> of <customBinding>"
 title: "<security> of <customBinding>"
-ms.date: "03/30/2017"
+ms.date: "10/31/2023"
 ms.assetid: 243a5148-bbd1-447f-a8a5-6e7792c0a3f1
 ---
 # \<security> of \<customBinding>
@@ -74,7 +74,7 @@ Specifies the security options for a custom binding.
 |TripleDes|Use TripleDes encryption,  Sha1 for message digest, Rsa-oaep-mgf1p for key wrap.|  
 |Basic128Rsa15|Use Aes128 for message encryption, Sha1 for message digest and Rsa15 for key wrap.|  
 |TripleDesRsa15|Use TripleDes encryption, Sha1 for message digest and Rsa15 for key wrap.|  
-|Basic128Sha256|Use Aes256 for message encryption, Sha256 for message digest and Rsa-oaep-mgf1p for key wrap.|  
+|Basic128Sha256|Use Aes128 for message encryption, Sha256 for message digest and Rsa-oaep-mgf1p for key wrap.|  
 |Basic192Sha256|Use Aes192 for message encryption, Sha256 for message digest and Rsa-oaep-mgf1p for key wrap.|  
 |Basic256Sha256|Use Aes256 for message encryption, Sha256 for message digest and Rsa-oaep-mgf1p for key wrap.|  
 |TripleDesSha256|Use TripleDes for message encryption, Sha256 for message digest and Rsa-oaep-mgf1p for key wrap.|  

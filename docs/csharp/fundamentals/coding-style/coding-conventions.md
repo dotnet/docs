@@ -33,6 +33,10 @@ These tools make it easier for your team to adopt your preferred guidelines. Vis
 
 Code analysis produces warnings and diagnostics when the enabled rules are violated. You configure the rules you want applied to your project. Then, each CI build notifies developers when they violate any of the rules.
 
+### Diagnostic IDs
+
+- [Choose appropriate diagnostic IDs](../../roslyn-sdk/choosing-diagnostic-ids.md) when building your own analyzers
+
 ## Language guidelines
 
 The following sections describe practices that the .NET docs team follows to prepare code examples and samples. In general, follow these practices:

@@ -41,8 +41,12 @@ When installed, .NET consists of several components that are laid out as follows
 │   │   └── <apphost version>            (13)
 │   ├── Microsoft.WindowsDesktop.App.Ref          (*)
 │   │   └── <desktop ref version>        (14)
-│   └── NETStandard.Library.Ref                   (*)
-│       └── <netstandard version>        (15)
+│   ├── NETStandard.Library.Ref                   (*)
+│   │   └── <netstandard version>        (15)
+│   ├── Microsoft.NETCore.App.Runtime.<rid>       (*)
+│   │   └── <runtime version>            (18)
+│   └── Microsoft.AspNetCore.App.Runtime.<rid>    (*)
+│       └── <aspnetcore version>         (18)
 ├── shared                                        (*)
 │   ├── Microsoft.NETCore.App                     (*)
 │   │   └── <runtime version>     (5)
@@ -99,6 +103,8 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 - (17) **templates** contains the templates used by the SDK. For example, `dotnet new` finds project templates here.
 
+- (18) **Microsoft.NETCore.App.Runtime.\<rid>/\<runtime version>,Microsoft.AspNetCore.App.Runtime.\<rid>/\<aspnetcore version>** These files enable building self-contained applications. These directories contain symbolic links to files in (2), (5) and (6).
+
 The folders marked with `(*)` are used by multiple packages. Some package formats (for example, `rpm`) require special handling of such folders. The package maintainer must take care of this.
 
 ## Recommended packages
@@ -115,7 +121,7 @@ The following lists the recommended packages:
 - `dotnet-sdk-[major].[minor]` - Installs the latest SDK for specific runtime
   - **Version:** \<sdk version>
   - **Example:** dotnet-sdk-7.0
-  - **Contains:** (3),(4)
+  - **Contains:** (3),(4),(18)
   - **Dependencies:** `dotnet-runtime-[major].[minor]`, `aspnetcore-runtime-[major].[minor]`, `dotnet-targeting-pack-[major].[minor]`, `aspnetcore-targeting-pack-[major].[minor]`, `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, `dotnet-apphost-pack-[major].[minor]`, `dotnet-templates-[major].[minor]`
 
 - `aspnetcore-runtime-[major].[minor]` - Installs a specific ASP.NET Core runtime

@@ -25,7 +25,7 @@ This change can affect [binary compatibility](../../categories.md#binary-compati
 
 ## Reason for change
 
-The constructor was not intended to be public and this is just fixing the mistake.
+The constructor was not intended to be public; this change fixes the mistake.
 
 ## Recommended action
 

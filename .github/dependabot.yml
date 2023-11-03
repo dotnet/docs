@@ -45,7 +45,13 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/docker/snippets/Worker" #DotNet.ContainerImage.csproj
+    directory: "/docs/core/docker/snippets/7.0/Worker" #DotNet.ContainerImage.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/docker/snippets/8.0/Worker" #DotNet.ContainerImage.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -423,6 +429,18 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
+    directory: "/docs/core/resilience/snippets/http-resilience" #http-resilience.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/resilience/snippets/resilience" #resilience.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
     directory: "/docs/core/testing/snippets/order-unit-tests/csharp/MSTest.Project" #MSTest.Project.csproj
     schedule:
       interval: "weekly"
@@ -472,6 +490,12 @@ updates:
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
     directory: "/docs/csharp/advanced-topics/interop/snippets/dynamic-iron-python-walkthrough" #ironpythonsample.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/csharp/asynchronous-programming/snippets/async-scenarios" #async-scenarios.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -573,6 +597,12 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
+    directory: "/docs/fundamentals/networking/http/snippets/autoclient" #autoclient.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
     directory: "/docs/machine-learning/tutorials/snippets/github-issue-classification/csharp" #GitHubIssueClassification.csproj
     schedule:
       interval: "weekly"
@@ -634,6 +664,12 @@ updates:
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
     directory: "/docs/orleans/deployment/snippets/service-fabric/stateless" #Orleans.ServiceFabric.Stateless.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/orleans/grains/snippets/timers" #Timers.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -1167,12 +1203,6 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/samples/snippets/standard/data/sqlite/SystemLibrarySample" #SystemLibrarySample.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
     directory: "/samples/snippets/visualbasic/programming-guide/dynamic-linq-expression-trees" #dynamic-linq-expression-trees.vbproj
     schedule:
       interval: "weekly"
@@ -1198,6 +1228,12 @@ updates:
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
     directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToDecryptXMLElementX509/vb" #decryptxml.vbproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/vb" #encryptxml.vbproj
     schedule:
       interval: "weekly"
       day: "wednesday"

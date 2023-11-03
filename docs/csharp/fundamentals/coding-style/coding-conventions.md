@@ -9,7 +9,7 @@ helpviewer_keyword:
 ---
 # Common C# code conventions
 
-A code standard is essential for maintaining code readability, consistency, and collaboration within a development team. Following industry practices and established guidelines helps ensure that code is easier to understand, maintain, and extend. Most projects enforce a consistent style through code conventions. The [`dotnet/docs`](https://github.com/dotnet/docs) and [`dotnet/samples`](https://github.com/dotnet/samples) projects are no exception. In this series of articles, you learn our coding conventions and the tools we use to enforce them. You can take our conventions as-is, or modify them to suit your team's needs.
+A code standard is essential for maintaining code readability, consistency, and collaboration within a development team. Code that follows industry practices and established guidelines is easier to understand, maintain, and extend. Most projects enforce a consistent style through code conventions. The [`dotnet/docs`](https://github.com/dotnet/docs) and [`dotnet/samples`](https://github.com/dotnet/samples) projects are no exception. In this series of articles, you learn our coding conventions and the tools we use to enforce them. You can take our conventions as-is, or modify them to suit your team's needs.
 
 We chose our conventions based on the following goals:
 
@@ -27,11 +27,15 @@ This article explains our guidelines. The guidelines have evolved over time, and
 
 ## Tools and analyzers
 
-Tools can help your team enforce your standards. You can enable any of the [Code analysis tools](../../../fundamentals/code-analysis/overview.md) to enforce the rules you prefer. You can also create an [editorconfig](/visualstudio/ide/create-portable-custom-editor-options) so that Visual Studio automatically enforces your style guidelines. You can start by using [the dotnet/docs](https://github.com/dotnet/docs/blob/main/.editorconfig) to use our style as a starting point.
+Tools can help your team enforce your standards. You can enable [code analysis](../../../fundamentals/code-analysis/overview.md) to enforce the rules you prefer. You can also create an [editorconfig](/visualstudio/ide/create-portable-custom-editor-options) so that Visual Studio automatically enforces your style guidelines. As a starting point, you can copy the [dotnet/docs repo's file](https://github.com/dotnet/docs/blob/main/.editorconfig) to use our style.
 
-These tools make it easier for your team to adopt your preferred guidelines. Visual Studio applies the rules in all `.editorconfig` files in scope to format your code. You can use multiple rule sets to enforce corporate-wide standards, team standards, and even granular project standards.
+These tools make it easier for your team to adopt your preferred guidelines. Visual Studio applies the rules in all `.editorconfig` files in scope to format your code. You can use multiple configurations to enforce corporate-wide standards, team standards, and even granular project standards.
 
-Any configured code analysis tools produce warnings and diagnostics when its rules are violated. You configure the rules you want applied to your project. Then, each CI build notifies developers when they violate any of the rules.
+Code analysis produces warnings and diagnostics when the enabled rules are violated. You configure the rules you want applied to your project. Then, each CI build notifies developers when they violate any of the rules.
+
+### Diagnostic IDs
+
+- [Choose appropriate diagnostic IDs](../../roslyn-sdk/choosing-diagnostic-ids.md) when building your own analyzers
 
 ## Language guidelines
 
@@ -249,7 +253,7 @@ Now, let's change it slightly:
 namespace CoolStuff.AwesomeFeature
 {
     using Azure;
-    
+
     public class Awesome
     {
         public void Stuff()
@@ -292,7 +296,7 @@ Adding a new namespace that matches either `CoolStuff.Azure` or `CoolStuff.Aweso
 namespace CoolStuff.AwesomeFeature
 {
     using global::Azure;
-    
+
     public class Awesome
     {
         public void Stuff()
@@ -323,7 +327,7 @@ In general, use the following format for code samples:
 - Place the comment on a separate line, not at the end of a line of code.
 - Begin comment text with an uppercase letter.
 - End comment text with a period.
-- Insert one space between the comment delimiter (//) and the comment text, as shown in the following example.
+- Insert one space between the comment delimiter (`//`) and the comment text, as shown in the following example.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet3":::
 

@@ -7,7 +7,7 @@ ms.topic: conceptual
 
 # .NET observability with OpenTelemetry
 
-When you run an application, you want to know how well the app is performing and to detect potential problems before they become larger. Commonly developers accomplish this by making the app emit telemetry data such as logs or metrics, then monitor and analyze that data.
+When you run an application, you want to know how well the app is performing and to detect potential problems before they become larger. You can do this by emitting telemetry data such as logs or metrics from your app, then monitoring and analyzing that data.
 
 ## What is observability
 
@@ -19,7 +19,7 @@ Observability is commonly done using a combination of:
 - Metrics, which are measuring counters and gauges such as number of completed requests, active requests, widgets that have been sold; or a histogram of the request latency.
 - Distributed tracing, which tracks requests and activities across components in a distributed system so that you can see where time is spent and track down specific failures.
 
-Together, logs, metrics, and distributed tracing are known as the *3 pillars of observability*.
+Together, logs, metrics, and distributed tracing are known as the *three pillars of observability*.
 
 Each pillar might include telemetry data from:
 
@@ -262,13 +262,14 @@ Modify the Prometheus YAML configuration file to specify the port for your HTTP 
   scrape_configs:
   # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
   - job_name: "prometheus"
+    - scrape_interval: 1s # poll very quickly for a more responsive demo
 
     # metrics_path defaults to '/metrics'
     # scheme defaults to 'http'.
 
+    scrape_interval: 1s # poll very quickly for a more responsive demo
     static_configs:
       - targets: ["localhost:5212"]
-      - scrape_interval: 1s # poll very quickly for a more responsive demo
 ```
 
 Start Prometheus, and look in the output for the port it's running on, typically 9090:

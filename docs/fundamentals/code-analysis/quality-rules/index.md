@@ -2,7 +2,6 @@
 title: Code quality rules overview
 description: Learn about all of the available code quality rules for code analysis.
 ms.date: 09/01/2020
-ms.topic: reference
 author: mikadumont
 ms.author: midumont
 ---
@@ -90,6 +89,7 @@ The following table lists code quality analysis rules.
 > | [CA1507: Use nameof in place of string](ca1507.md) | A string literal is used as an argument where a `nameof` expression could be used. |
 > | [CA1508: Avoid dead conditional code](ca1508.md) | A method has conditional code that always evaluates to `true` or `false` at run time. This leads to dead code in the `false` branch of the condition. |
 > | [CA1509: Invalid entry in code metrics configuration file](ca1509.md) | Code metrics rules, such as [CA1501](ca1501.md), [CA1502](ca1502.md), [CA1505](ca1505.md) and [CA1506](ca1506.md), supplied a configuration file named `CodeMetricsConfig.txt` that has an invalid entry. |
+> | [CA1514: Avoid redundant length argument](ca1514.md) | A redundant length argument is used when slicing to the end of a string or buffer. A calculated length can be error-prone and is also unnecessary. |
 > | [CA1700: Do not name enum values 'Reserved'](ca1700.md) | This rule assumes that an enumeration member that has a name that contains "reserved" is not currently used but is a placeholder to be renamed or removed in a future version. Renaming or removing a member is a breaking change. |
 > | [CA1707: Identifiers should not contain underscores](ca1707.md) | By convention, identifier names do not contain the underscore (_) character. This rule checks namespaces, types, members, and parameters. |
 > | [CA1708: Identifiers should differ by more than case](ca1708.md) | Identifiers for namespaces, types, members, and parameters cannot differ only by case because languages that target the common language runtime are not required to be case-sensitive. |
@@ -161,6 +161,7 @@ The following table lists code quality analysis rules.
 > | [CA1865-CA1867: Use char overload](ca1865-ca1867.md) | The char overload is a better performing overload for a string with a single char. |
 > | [CA1868: Unnecessary call to 'Contains' for sets](ca1868.md) | Both <xref:System.Collections.Generic.ISet%601.Add(%600)?displayProperty=nameWithType> and <xref:System.Collections.Generic.ICollection%601.Remove(%600)?displayProperty=nameWithType> perform a lookup, which makes it redundant to call <xref:System.Collections.Generic.ICollection%601.Contains(%600)?displayProperty=nameWithType> beforehand. It's more efficient to call <xref:System.Collections.Generic.ISet%601.Add(%600)> or <xref:System.Collections.Generic.ICollection%601.Remove(%600)> directly, which returns a Boolean value indicating whether the item was added or removed. |
 > | [CA1869: Cache and reuse 'JsonSerializerOptions' instances](ca1869.md) | Using a local instance of <xref:System.Text.Json.JsonSerializerOptions> for serialization or deserialization can substantially degrade the performance of your application if your code executes multiple times, since System.Text.Json internally caches serialization-related metadata into the provided instance. |
+> | [CA1870: Use a cached 'SearchValues' instance](ca1870.md) | Using a cached <xref:System.Buffers.SearchValues%601> instance is more efficient than passing values to 'IndexOfAny' or 'ContainsAny' directly. |
 > | [CA2000: Dispose objects before losing scope](ca2000.md) | Because an exceptional event might occur that will prevent the finalizer of an object from running, the object should be explicitly disposed before all references to it are out of scope. |
 > | [CA2002: Do not lock on objects with weak identity](ca2002.md) |An object is said to have a weak identity when it can be directly accessed across application domain boundaries. A thread that tries to acquire a lock on an object that has a weak identity can be blocked by a second thread in a different application domain that has a lock on the same object. |
 > | [CA2007: Do not directly await a Task](ca2007.md) | An asynchronous method [awaits](../../../csharp/language-reference/operators/await.md) a <xref:System.Threading.Tasks.Task> directly. When an asynchronous method awaits a <xref:System.Threading.Tasks.Task> directly, continuation occurs in the same thread that created the task. This behavior can be costly in terms of performance and can result in a deadlock on the UI thread. Consider calling <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> to signal your intention for continuation. |

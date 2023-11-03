@@ -1,8 +1,7 @@
 ---
 title: .NET Runtime Identifier (RID) catalog
 description: Learn about the runtime identifier (RID) and how RIDs are used in .NET.
-ms.date: 07/11/2022
-ms.topic: reference
+ms.date: 10/27/2023
 ---
 # .NET RID Catalog
 
@@ -67,6 +66,8 @@ The following example shows a slightly bigger RID graph also defined in the *run
                 any
 ```
 
+Alternatively, you can use the [RidGraph](https://github.com/0xced/RidGraph) tool to easily visualize the RID graph (or any subset of the graph).
+
 All RIDs eventually map back to the root `any` RID.
 
 There are some considerations about RIDs that you have to keep in mind when working with them:
@@ -84,7 +85,7 @@ To be able to use RIDs, you have to know which RIDs exist. For the latest and co
 
 RIDs that are considered 'portable' &mdash; that is, aren't tied to a specific version or OS distribution &mdash; are the recommended choice. This means that portable RIDs should be used for both [building a platform-specific application](./deploying/index.md#platform-specific-and-framework-dependent) and [creating a NuGet package with RID-specific assets](/nuget/create-packages/supporting-multiple-target-frameworks#architecture-specific-folders).
 
-Starting with .NET 8, the default behavior of the .NET SDK and runtime is to only consider non-version-specific and non-distro-specific RIDs. When restoring and building, the SDK [uses a smaller portable RID graph](https://github.com/dotnet/docs/issues/36527). The <xref:System.Runtime.InteropServices.RuntimeInformation.RuntimeIdentifier?displayProperty=nameWithType> [returns the platform for which the runtime was built](https://github.com/dotnet/docs/issues/36466). At run time, .NET finds [RID-specific assets using a known set of portable RIDs](./compatibility/deployment/8.0/rid-asset-list.md). When building an application with RID-specific assets that may be ignored at runtime, the SDK will emit a warning: [NETSDK1206](./tools/sdk-errors/netsdk1206.md).
+Starting with .NET 8, the default behavior of the .NET SDK and runtime is to only consider non-version-specific and non-distro-specific RIDs. When restoring and building, the SDK [uses a smaller portable RID graph](./compatibility/sdk/8.0/rid-graph.md). The <xref:System.Runtime.InteropServices.RuntimeInformation.RuntimeIdentifier?displayProperty=nameWithType> [returns the platform for which the runtime was built](./compatibility/core-libraries/8.0/runtimeidentifier.md). At run time, .NET finds [RID-specific assets using a known set of portable RIDs](./compatibility/deployment/8.0/rid-asset-list.md). When building an application with RID-specific assets that may be ignored at runtime, the SDK will emit a warning: [NETSDK1206](./tools/sdk-errors/netsdk1206.md).
 
 ### Loading assets for a specific OS version or distribution
 
@@ -110,6 +111,7 @@ For more information, see [.NET dependencies and requirements](./install/windows
 
 - `linux-x64` (Most desktop distributions like CentOS, Debian, Fedora, Ubuntu, and derivatives)
 - `linux-musl-x64` (Lightweight distributions using [musl](https://wiki.musl-libc.org/projects-using-musl.html) like Alpine Linux)
+- `linux-musl-arm64` (Used to build Docker images for 64-bit Arm v8 and minimalistic base images)
 - `linux-arm` (Linux distributions running on Arm like Raspbian on Raspberry Pi Model 2+)
 - `linux-arm64` (Linux distributions running on 64-bit Arm like Ubuntu Server 64-bit on Raspberry Pi Model 3+)
 - `linux-bionic-arm64` (Distributions using Android's bionic libc, for example, Termux)

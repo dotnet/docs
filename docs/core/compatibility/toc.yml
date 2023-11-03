@@ -56,6 +56,8 @@ items:
         href: core-libraries/8.0/getgeneration-return-value.md
       - name: GetFolderPath behavior on Unix
         href: core-libraries/8.0/getfolderpath-unix.md
+      - name: GetSystemVersion no longer returns ImageRuntimeVersion
+        href: core-libraries/8.0/getsystemversion.md
       - name: IndexOfAnyValues renamed to SearchValues
         href: core-libraries/8.0/indexofanyvalues-renamed.md
       - name: ITypeDescriptorContext nullable annotations
@@ -66,6 +68,8 @@ items:
         href: core-libraries/8.0/parameterinfo-hasdefaultvalue.md
       - name: Removed overloads of ToFrozenDictionary/ToFrozenSet
         href: core-libraries/8.0/optimizeforreading-arg.md
+      - name: RuntimeIdentifier returns platform for which runtime was built
+        href: core-libraries/8.0/runtimeidentifier.md
     - name: Cryptography
       items:
       - name: AesGcm authentication tag size on macOS
@@ -96,6 +100,10 @@ items:
         href: extensions/8.0/dictionary-configuration-binding.md
       - name: HostApplicationBuilderSettings.Args respected by constructor
         href: extensions/8.0/hostapplicationbuilder-ctor.md
+      - name: ManagementDateTimeConverter.ToDateTime returns a local time
+        href: extensions/8.0/dmtf-todatetime.md
+      - name: System.Formats.Cbor DateTimeOffset formatting change
+        href: extensions/8.0/cbor-datetime.md
     - name: Globalization
       items:
       - name: Date and time converters honor culture argument
@@ -106,6 +114,8 @@ items:
       items:
       - name: CreateObjectFlags.Unwrap only unwraps on target instance
         href: interop/8.0/comwrappers-unwrap.md
+      - name: Custom marshallers require additional members
+        href: interop/8.0/marshal-modes.md
       - name: IDispatchImplAttribute API is removed
         href: interop/8.0/idispatchimplattribute-removed.md
       - name: SafeHandle types must have public constructor
@@ -116,8 +126,6 @@ items:
         href: reflection/8.0/function-pointer-reflection.md
     - name: SDK and MSBuild
       items:
-      - name: .NET tool roll-forward behavior
-        href: sdk/8.0/tool-rollforward.md
       - name: CLI console output uses UTF-8
         href: sdk/8.0/console-encoding.md
       - name: Console encoding not UTF-8 after completion
@@ -130,16 +138,26 @@ items:
         href: sdk/8.0/dotnet-publish-config.md
       - name: "'dotnet restore' produces security vulnerability warnings"
         href: sdk/8.0/dotnet-restore-audit.md
+      - name: MSBuild custom derived build events deprecated
+        href: sdk/8.0/custombuildeventargs.md
       - name: MSBuild respects DOTNET_CLI_UI_LANGUAGE
         href: sdk/8.0/msbuild-language.md
       - name: Runtime-specific apps not self-contained
         href: sdk/8.0/runtimespecific-app-default.md
+      - name: --arch option doesn't imply self-contained
+        href: sdk/8.0/arch-option.md
+      - name: SDK uses a smaller RID graph
+        href: sdk/8.0/rid-graph.md
       - name: Trimming may not be used with .NET Standard or .NET Framework
         href: sdk/8.0/trimming-unsupported-targetframework.md
+      - name: Version requirements for .NET 8 SDK
+        href: sdk/8.0/version-requirements.md
     - name: Serialization
       items:
       - name: BinaryFormatter disabled for most projects
         href: serialization/8.0/binaryformatter-disabled.md
+      - name: Reflection-based deserializer resolves metadata eagerly
+        href: serialization/8.0/metadata-resolving.md
     - name: Windows Forms
       items:
       - name: Anchor layout changes
@@ -1084,6 +1102,8 @@ items:
         href: core-libraries/8.0/getgeneration-return-value.md
       - name: GetFolderPath behavior on Unix
         href: core-libraries/8.0/getfolderpath-unix.md
+      - name: GetSystemVersion no longer returns ImageRuntimeVersion
+        href: core-libraries/8.0/getsystemversion.md
       - name: IndexOfAnyValues renamed to SearchValues
         href: core-libraries/8.0/indexofanyvalues-renamed.md
       - name: ITypeDescriptorContext nullable annotations
@@ -1094,6 +1114,8 @@ items:
         href: core-libraries/8.0/parameterinfo-hasdefaultvalue.md
       - name: Removed overloads of ToFrozenDictionary/ToFrozenSet
         href: core-libraries/8.0/optimizeforreading-arg.md
+      - name: RuntimeIdentifier returns platform for which runtime was built
+        href: core-libraries/8.0/runtimeidentifier.md
     - name: .NET 7
       items:
       - name: API obsoletions with default diagnostic ID
@@ -1332,6 +1354,10 @@ items:
         href: extensions/8.0/dictionary-configuration-binding.md
       - name: HostApplicationBuilderSettings.Args respected by constructor
         href: extensions/8.0/hostapplicationbuilder-ctor.md
+      - name: ManagementDateTimeConverter.ToDateTime returns a local time
+        href: extensions/8.0/dmtf-todatetime.md
+      - name: System.Formats.Cbor DateTimeOffset formatting change
+        href: extensions/8.0/cbor-datetime.md
     - name: .NET 7
       items:
       - name: Binding config to dictionary extends values
@@ -1384,6 +1410,8 @@ items:
       items:
       - name: CreateObjectFlags.Unwrap only unwraps on target instance
         href: interop/8.0/comwrappers-unwrap.md
+      - name: Custom marshallers require additional members
+        href: interop/8.0/marshal-modes.md
       - name: IDispatchImplAttribute API is removed
         href: interop/8.0/idispatchimplattribute-removed.md
       - name: SafeHandle types must have public constructor
@@ -1464,8 +1492,6 @@ items:
     items:
     - name: .NET 8
       items:
-      - name: .NET tool roll-forward behavior
-        href: sdk/8.0/tool-rollforward.md
       - name: CLI console output uses UTF-8
         href: sdk/8.0/console-encoding.md
       - name: Console encoding not UTF-8 after completion
@@ -1478,12 +1504,20 @@ items:
         href: sdk/8.0/dotnet-publish-config.md
       - name: "'dotnet restore' produces security vulnerability warnings"
         href: sdk/8.0/dotnet-restore-audit.md
+      - name: MSBuild custom derived build events deprecated
+        href: sdk/8.0/custombuildeventargs.md
       - name: MSBuild respects DOTNET_CLI_UI_LANGUAGE
         href: sdk/8.0/msbuild-language.md
       - name: Runtime-specific apps not self-contained
         href: sdk/8.0/runtimespecific-app-default.md
+      - name: --arch option doesn't imply self-contained
+        href: sdk/8.0/arch-option.md
+      - name: SDK uses a smaller RID graph
+        href: sdk/8.0/rid-graph.md
       - name: Trimming may not be usedwith .NET Standard or .NET Framework
         href: sdk/8.0/trimming-unsupported-targetframework.md
+      - name: Version requirements for .NET 8 SDK
+        href: sdk/8.0/version-requirements.md
     - name: .NET 7
       items:
       - name: Automatic RuntimeIdentifier for certain projects
@@ -1576,6 +1610,8 @@ items:
       items:
       - name: BinaryFormatter disabled for most projects
         href: serialization/8.0/binaryformatter-disabled.md
+      - name: Reflection-based deserializer resolves metadata eagerly
+        href: serialization/8.0/metadata-resolving.md
     - name: .NET 7
       items:
       - name: BinaryFormatter serialization APIs produce compiler errors

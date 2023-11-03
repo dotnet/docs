@@ -3,7 +3,6 @@ title: Design with nullable reference types
 description: This advanced tutorial provides an introduction to nullable reference types. You'll learn to express your design intent on when reference values may be null, and have the compiler enforce when they cannot be null.
 ms.date: 11/01/2022
 ms.technology: csharp-null-safety
-recommendations: false
 ---
 # Tutorial: Express your design intent more clearly with nullable and non-nullable reference types
 

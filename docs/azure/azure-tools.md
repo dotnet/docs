@@ -6,7 +6,6 @@ ms.custom: devx-track-dotnet, engagement-fy23, devx-track-azurepowershell
 ms.date: 1/26/2023
 author: alexwolfmsft
 ms.author: alexwolf
-recommendations: false
 ---
 
 # Additional Tools for Azure Developers
@@ -27,11 +26,11 @@ Azure Developer CLI (`azd`) is an open-source tool that accelerates the process 
 You can use `azd` with extensible templates that include everything you need to get an application up and running in Azure. These templates include application code, and reusable infrastructure as code assets.
 
 > [!div class="nextstepaction"]
-> [Install Azure Developer CLI](/azure/developer/azure-developer-cli/install-azd)  
+> [Install Azure Developer CLI](/azure/developer/azure-developer-cli/install-azd)
 
 ## Azure Storage Explorer
 
-Azure Storage Explorer is a free, GUI tool for managing storage resources and data in Azure.  You can upload, download and manage blobs and files, as well as manage data in Azure queues, tables and CosmosDB.  If you plan on working with any storage resources in Azure, installation of Azure Storage Explorer is recommended.  Versions are available for Windows, macOS and Linux.  
+Azure Storage Explorer is a free, GUI tool for managing storage resources and data in Azure.  You can upload, download and manage blobs and files, as well as manage data in Azure queues, tables and CosmosDB.  If you plan on working with any storage resources in Azure, installation of Azure Storage Explorer is recommended.  Versions are available for Windows, macOS and Linux.
 
 > [!div class="nextstepaction"]
 > [Download Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/)

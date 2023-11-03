@@ -259,7 +259,6 @@ The *_Layout.cshtml* file includes the default HTML for the app and its componen
     <script src="_framework/blazor.server.js"></script>
 </body>
 </html>
-
 ```
 
 The script reference to *_framework/blazor.server.js* establishes the real-time connection with the server and then deals with all user interactions and UI updates.

@@ -69,7 +69,7 @@ The first table in this article lists keywords that are reserved identifiers in 
         [`operator`](../operators/operator-overloading.md)  
         [`out`](out.md)  
         [`override`](override.md)  
-        [`params`](params.md)  
+        [`params`](method-parameters.md#params-modifier)  
         [`private`](private.md)  
         [`protected`](protected.md)  
         [`public`](public.md)  

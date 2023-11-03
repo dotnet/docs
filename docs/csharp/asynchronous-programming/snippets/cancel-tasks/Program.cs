@@ -59,7 +59,7 @@ class Program
                 await sumPageSizesTask;
                 Console.WriteLine("Download task completed before cancel request was processed.");
             }
-            catch (TaskCanceledException)
+            catch (OperationCanceledException)
             {
                 Console.WriteLine("Download task has been cancelled.");
             }

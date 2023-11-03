@@ -23,7 +23,7 @@ This tutorial requires the following:
 
 - [.NET 5 or later SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
 - Integrated development environment (IDE)
-  - [We recommend Visual Studio, Visual Studio Code, or Visual Studio for Mac](https://visualstudio.microsoft.com)
+  - [We recommend Visual Studio or Visual Studio Code](https://visualstudio.microsoft.com)
 
 ### Create example application
 

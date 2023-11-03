@@ -15,6 +15,8 @@ ms.assetid: f8b8ec9b-0ba7-4dea-aadf-a93395cd804f
 ---
 # Choosing Between Class and Struct
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 One of the basic design decisions every framework designer faces is whether to design a type as a class (a reference type) or as a struct (a value type). Good understanding of the differences in the behavior of reference types and value types is crucial in making this choice.
 
  The first difference between reference types and value types we will consider is that reference types are allocated on the heap and garbage-collected, whereas value types are allocated either on the stack or inline in containing types and deallocated when the stack unwinds or when their containing type gets deallocated. Therefore, allocations and deallocations of value types are in general cheaper than allocations and deallocations of reference types.

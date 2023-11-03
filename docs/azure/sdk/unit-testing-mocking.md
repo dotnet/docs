@@ -9,7 +9,7 @@ ms.date: 07/05/2023
 
 Unit testing is an important part of a sustainable development process that can improve code quality and prevent regressions or bugs in your apps. However, unit testing presents challenges when the code you're testing performs network calls, such as those made to Azure resources. Tests that run against live services can experience issues, such as latency that slows down test execution, dependencies on code outside of the isolated test, and issues with managing service state and costs every time the test is run. Instead of testing against live Azure services, replace the service clients with mocked or in-memory implementations. This avoids the above issues and lets developers focus on testing their application logic, independent from the network and service.
 
-In this article, you'll learn how to write unit tests for the Azure SDK for .NET that isolate your dependencies to make your tests more reliable. You'll also learn how to replace key components with in-memory test implementations to create fast and reliable unit tests, and see how to design your own classes to better support unit testing. This article includes examples that use [Moq](https://www.nuget.org/packages/moq/) and [NSubstitute](https://www.nuget.org/packages/nsubstitute/), which are popular mocking libraries for .NET.
+In this article, you learn how to write unit tests for the Azure SDK for .NET that isolate your dependencies to make your tests more reliable. You also learn how to replace key components with in-memory test implementations to create fast and reliable unit tests, and see how to design your own classes to better support unit testing. This article includes examples that use [Moq](https://www.nuget.org/packages/moq/) and [NSubstitute](https://www.nuget.org/packages/nsubstitute/), which are popular mocking libraries for .NET.
 
 ## Understand service clients
 
@@ -23,7 +23,7 @@ Each of the Azure SDK clients follows [mocking guidelines](https://azure.github.
 > [!NOTE]
 > The code examples in this article use types from the [Azure.Security.KeyVault.Secrets](https://www.nuget.org/packages/Azure.Security.KeyVault.Secrets/) library for the Azure Key Vault service. The concepts demonstrated in this article also apply to service clients from many other Azure services, such as Azure Storage or Azure Service Bus.
 
-To create a test service client, you can either use a mocking library or standard C# features such as inheritance. Mocking frameworks allow you to simplify the code that you must write to override member behavior (as well as other useful features that are beyond the scope of this article).
+To create a test service client, you can either use a mocking library or standard C# features such as inheritance. Mocking frameworks allow you to simplify the code that you must write to override member behavior. (These frameworks also have other useful features that are beyond the scope of this article.)
 
 # [Non-library](#tab/csharp)
 
@@ -181,7 +181,7 @@ When unit testing you only want the unit tests to verify the application logic a
 
 ## Refactor your types for testability
 
-Classes that need to be tested should be designed for [dependency injection](/dotnet/azure/sdk/dependency-injection), which allows the class to receive its dependencies instead of creating them internally. It was a seamless process to replace the `SecretClient` implementation in the example from the previous section because it was one of the constructor parameters. However, there may be classes in your code that create their own dependencies and aren't easily testable, such as the following:
+Classes that need to be tested should be designed for [dependency injection](dependency-injection.md), which allows the class to receive its dependencies instead of creating them internally. It was a seamless process to replace the `SecretClient` implementation in the example from the previous section because it was one of the constructor parameters. However, there might be classes in your code that create their own dependencies and aren't easily testable, such as the following class:
 
 ```csharp
 public class AboutToExpireSecretFinder

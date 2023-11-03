@@ -10,6 +10,8 @@ ms.assetid: a016bd18-6710-4358-9438-9f190a295392
 ---
 # Interface Design
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 Although most APIs are best modeled using classes and structs, there are cases in which interfaces are more appropriate or are the only option.
 
  The CLR does not support multiple inheritance (i.e., CLR classes cannot inherit from more than one base class), but it does allow types to implement one or more interfaces in addition to inheriting from a base class. Therefore, interfaces are often used to achieve the effect of multiple inheritance. For example, <xref:System.IDisposable> is an interface that allows types to support disposability independent of any other inheritance hierarchy in which they want to participate.

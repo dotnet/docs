@@ -57,7 +57,7 @@ A conditional ref expression conditionally returns a variable reference, as the 
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ConditionalOperator.cs" id="ConditionalRef":::
 
-You can [`ref` assign](assignment-operator.md#ref-assignment) the result of a conditional ref expression, use it as a [reference return](../statements/jump-statements.md#ref-returns) or pass it as a [`ref`](../keywords/ref.md#passing-an-argument-by-reference), [`out`](../keywords/out-parameter-modifier.md), or [`in`](../keywords/in-parameter-modifier.md) method parameter. You can also assign to the result of a conditional ref expression, as the preceding example shows.
+You can [`ref` assign](assignment-operator.md#ref-assignment) the result of a conditional ref expression, use it as a [reference return](../statements/jump-statements.md#ref-returns) or pass it as a `ref`, `out`, `in`, or `ref readonly` [method parameter](../keywords/method-parameters.md#reference-parameters). You can also assign to the result of a conditional ref expression, as the preceding example shows.
 
 The syntax for a conditional ref expression is as follows:
 

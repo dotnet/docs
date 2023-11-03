@@ -17,6 +17,8 @@ items:
         href: ../../core/tools/telemetry.md
       - name: Signed-package verification
         href: ../../core/tools/nuget-signed-package-verification.md
+      - name: Artifacts output layout
+        href: ../../core/sdk/artifacts-output.md
       - name: Error messages
         items:
           - name: List of all SDK errors
@@ -45,6 +47,8 @@ items:
             href: ../../core/tools/sdk-errors/netsdk1080.md
           - name: NETSDK1082
             href: ../../core/tools/sdk-errors/netsdk1082.md
+          - name: NETSDK1083
+            href: ../../core/tools/sdk-errors/netsdk1083.md
           - name: NETSDK1100
             href: ../../core/tools/sdk-errors/netsdk1100.md
           - name: NETSDK1112
@@ -73,6 +77,10 @@ items:
             href: ../../core/tools/sdk-errors/netsdk1182.md
           - name: NETSDK1195
             href: ../../core/tools/sdk-errors/netsdk1195.md
+          - name: NETSDK1202
+            href: ../../core/tools/sdk-errors/netsdk1202.md
+          - name: NETSDK1206
+            href: ../../core/tools/sdk-errors/netsdk1206.md
   - name: .NET CLI
     items:
       - name: Overview
@@ -317,6 +325,12 @@ items:
       href: ../../core/extensions/logging.md
     - name: Observability with OpenTelemetry
       href: ../../core/diagnostics/observability-with-otel.md
+    - name: Resource monitoring
+      href: ../../core/diagnostics/diagnostic-resource-monitoring.md
+      displayName: resource monitoring,
+    - name: App health checks
+      href: ../../core/diagnostics/diagnostic-health-checks.md
+      displayName: health check,healthcheck,degraded,healthy,unhealthy,resource monitoring,resource health,app lifecycle monitoring
     - name: Metrics
       items:
       - name: Overview
@@ -324,8 +338,21 @@ items:
         href: ../../core/diagnostics/metrics.md
       - name: Instrumentation
         href: ../../core/diagnostics/metrics-instrumentation.md
+      - name: Exception summarization
+        href: ../../core/diagnostics/diagnostic-exception-summary.md
+        displayName: exception summarization,exception summary,exception summarizer,ExceptionSummary
       - name: Collection
         href: ../../core/diagnostics/metrics-collection.md
+      - name: Built-in metrics
+        items:
+        - name: Overview
+          href: ../../core/diagnostics/built-in-metrics.md
+        - name: .NET extensions metrics
+          href: ../../core/diagnostics/built-in-metrics-diagnostics.md
+        - name: ASP.NET Core metrics
+          href: ../../core/diagnostics/built-in-metrics-aspnetcore.md
+        - name: System.Net metrics
+          href: ../../core/diagnostics/built-in-metrics-system-net.md
       - name: EventCounters
         items:
         - name: Overview
@@ -387,6 +414,8 @@ items:
             href: ../../fundamentals/diagnostics/runtime-thread-events.md
           - name: Type-system events
             href: ../../fundamentals/diagnostics/runtime-type-events.md
+          - name: Tiered compilation events
+            href: ../../fundamentals/diagnostics/runtime-tiered-compilation-events.md
       - name: Collect diagnostics in containers
         href: ../../core/diagnostics/diagnostics-in-containers.md
       - name: Dumps
@@ -459,6 +488,172 @@ items:
         href: ../../core/diagnostics/debug-threadpool-starvation.md
       - name: Debug a stack overflow
         href: ../../core/diagnostics/debug-stackoverflow.md
+    - name: Unmanaged API reference
+      items:
+      - name: Debugging
+        items:
+        - name: Overview
+          href: ../../core/unmanaged-api/debugging/index.md
+        - name: Functions
+          items:
+          - name: CLRCreateInstance function
+            href: ../../core/unmanaged-api/debugging/clrcreateinstance-function.md
+          - name: CloseCLREnumeration function
+            href: ../../core/unmanaged-api/debugging/closeclrenumeration-function.md
+          - name: CloseResumeHandle function
+            href: ../../core/unmanaged-api/debugging/closeresumehandle-function.md
+          - name: CreateVersionStringFromModule function
+            href: ../../core/unmanaged-api/debugging/createversionstringfrommodule-function.md
+          - name: CreateDebuggingInterfaceFromVersion function
+            href: ../../core/unmanaged-api/debugging/createdebugginginterfacefromversion-function.md
+          - name: CreateDebuggingInterfaceFromVersionEx function
+            href: ../../core/unmanaged-api/debugging/createdebugginginterfacefromversionex-function.md
+          - name: CreateDebuggingInterfaceFromVersion2 function
+            href: ../../core/unmanaged-api/debugging/createdebugginginterfacefromversion2-function.md
+          - name: CreateDebuggingInterfaceFromVersion3 function
+            href: ../../core/unmanaged-api/debugging/createdebugginginterfacefromversion3-function.md
+          - name: CreateProcessForLaunch function
+            href: ../../core/unmanaged-api/debugging/createprocessforlaunch-function.md
+          - name: EnumerateCLRs function
+            href: ../../core/unmanaged-api/debugging/enumerateclrs-function.md
+          - name: GetStartupNotificationEvent function
+            href: ../../core/unmanaged-api/debugging/getstartupnotificationevent-function.md
+          - name: RegisterForRuntimeStartup function
+            href: ../../core/unmanaged-api/debugging/registerforruntimestartup-function.md
+          - name: RegisterForRuntimeStartupEx function
+            href: ../../core/unmanaged-api/debugging/registerforruntimestartupex-function.md
+          - name: RegisterForRuntimeStartup3 function
+            href: ../../core/unmanaged-api/debugging/registerforruntimestartup3-function.md
+          - name: ResumeProcess function
+            href: ../../core/unmanaged-api/debugging/resumeprocess-function.md
+          - name: UnregisterForRuntimeStartup function
+            href: ../../core/unmanaged-api/debugging/unregisterforruntimestartup-function.md
+        - name: Interfaces
+          items:
+          - name: ICLRDebuggingLibraryProvider2 interface
+            items:
+            - name: Overview
+              href: ../../core/unmanaged-api/debugging/iclrdebugginglibraryprovider2-interface.md
+              displayName: ICLRDebuggingLibraryProvider2
+            - name: ProvideLibrary2 method
+              href: ../../core/unmanaged-api/debugging/iclrdebugginglibraryprovider2-providelibrary2-method.md
+          - name: ICLRDebuggingLibraryProvider3 interface
+            items:
+            - name: Overview
+              href: ../../core/unmanaged-api/debugging/iclrdebugginglibraryprovider3-interface.md
+              displayName: ICLRDebuggingLibraryProvider3
+            - name: ProvideWindowsLibrary method
+              href: ../../core/unmanaged-api/debugging/iclrdebugginglibraryprovider3-providewindowslibrary-method.md
+            - name: ProvideUnixLibrary method
+              href: ../../core/unmanaged-api/debugging/iclrdebugginglibraryprovider3-provideunixlibrary-method.md
+        - name: Enumerations
+          items:
+          - name: LIBRARY_PROVIDER_INDEX_TYPE enumeration
+            href: ../../core/unmanaged-api/debugging/libraryproviderindextype-enumeration.md
+        - name: Function pointers
+          items:
+          - name: PSTARTUP_CALLBACK function pointer
+            href: ../../core/unmanaged-api/debugging/pstartup_callback-function-pointer.md
+      - name: Profiling
+        items:
+        - name: Overview
+          href: ../../core/unmanaged-api/profiling/index.md
+        - name: Structures
+          items:
+          - name: COR_PRF_EVENT_DATA structure
+            href: ../../core/unmanaged-api/profiling/cor-prf-event-data-structure.md
+          - name: COR_PRF_EVENTPIPE_PARAM_DESC structure
+            href: ../../core/unmanaged-api/profiling/cor-prf-eventpipe-param-desc-structure.md
+          - name: COR_PRF_EVENTPIPE_PROVIDER_CONFIG structure
+            href: ../../core/unmanaged-api/profiling/cor-prf-eventpipe-provider-config-structure.md
+        - name: Enumerations
+          items:
+          - name: COR_PRF_EVENTPIPE_LEVEL enumeration
+            href: ../../core/unmanaged-api/profiling/cor-prf-eventpipe-level-enumeration.md
+          - name: COR_PRF_EVENTPIPE_PARAM_TYPE enumeration
+            href: ../../core/unmanaged-api/profiling/cor-prf-eventpipe-param-type-enumeration.md
+          - name: COR_PRF_HANDLE_TYPE enumeration
+            href: ../../core/unmanaged-api/profiling/cor-prf-handle-type-enumeration.md
+          - name: COR_PRF_REJIT_FLAGS enumeration
+            href: ../../core/unmanaged-api/profiling/cor-prf-rejit-flags-enumeration.md
+        - name: Interfaces
+          items:
+          - name: ICorProfilerCallback10 interface
+            items:
+            - name: Overview
+              href: ../../core/unmanaged-api/profiling/icorprofilercallback10-interface.md
+              displayName: ICorProfilerCallback10
+            - name: EventPipeEventDelivered method
+              href: ../../core/unmanaged-api/profiling/icorprofilercallback10-eventpipeeventdelivered-method.md
+            - name: EventPipeProviderCreated method
+              href: ../../core/unmanaged-api/profiling/icorprofilercallback10-eventpipeprovidercreated-method.md
+          - name: ICorProfilerInfo9 interface
+            items:
+            - name: Overview
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo9-interface.md
+              displayName: ICorProfilerInfo9
+            - name: GetCodeInfo4 method
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo9-getcodeinfo4-method.md
+            - name: GetILToNativeMapping3 method
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo9-getiltonativemapping3-method.md
+            - name: GetNativeCodeStartAddresses method
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo9-getnativecodestartaddresses-method.md
+          - name: ICorProfilerInfo10 interface
+            items:
+            - name: Overview
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo10-interface.md
+              displayName: ICorProfilerInfo10
+            - name: EnumerateObjectReferences method
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo10-enumerateobjectreferences-method.md
+            - name: IsFrozenObject method
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo10-isfrozenobject-method.md
+            - name: GetLOHObjectSizeThreshold method
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo10-getlohobjectsizethreshold-method.md
+            - name: RequestReJITWithInliners method
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo10-requestrejitwithinliners-method.md
+            - name: ResumeRuntime method
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo10-resumeruntime-method.md
+            - name: SuspendRuntime method
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo10-suspendruntime-method.md
+          - name: ICorProfilerInfo11 interface
+            items:
+            - name: Overview
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo11-interface.md
+              displayName: ICorProfilerInfo11
+            - name: GetEnvironmentVariable method
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo11-getenvironmentvariable-method.md
+            - name: SetEnvironmentVariable method
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo11-setenvironmentvariable-method.md
+          - name: ICorProfilerInfo12 interface
+            items:
+            - name: Overview
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo12-interface.md
+              displayName: ICorProfilerInfo12
+            - name: EventPipeAddProviderToSession method
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo12-eventpipeaddprovidertosession-method.md
+            - name: EventPipeCreateProvider method
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo12-eventpipecreateprovider-method.md
+            - name: EventPipeDefineEvent method
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo12-eventpipedefineevent-method.md
+            - name: EventPipeGetProviderInfo method
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo12-eventpipegetproviderinfo-method.md
+            - name: EventPipeStartSession method
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo12-eventpipestartsession-method.md
+            - name: EventPipeStopSession method
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo12-eventpipestopsession-method.md
+            - name: EventPipeWriteEvent method
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo12-eventpipewriteevent-method.md
+          - name: ICorProfilerInfo13 interface
+            items:
+            - name: Overview
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo13-interface.md
+              displayName: ICorProfilerInfo13
+            - name: CreateHandle method
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo13-createhandle-method.md
+            - name: DestroyHandle method
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo13-destroyhandle-method.md
+            - name: GetObjectIDFromHandle method
+              href: ../../core/unmanaged-api/profiling/icorprofilerinfo13-getobjectidfromhandle-method.md
   - name: Code analysis
     items:
       - name: Overview
@@ -663,6 +858,8 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca1508.md
                   - name: CA1509
                     href: ../../fundamentals/code-analysis/quality-rules/ca1509.md
+                  - name: CA1514
+                    href: ../../fundamentals/code-analysis/quality-rules/ca1514.md
               - name: Naming rules
                 items:
                   - name: Overview
@@ -812,6 +1009,8 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca1868.md
                   - name: CA1869
                     href: ../../fundamentals/code-analysis/quality-rules/ca1869.md
+                  - name: CA1870
+                    href: ../../fundamentals/code-analysis/quality-rules/ca1870.md
               - name: SingleFile rules
                 items:
                   - name: Overview
@@ -1475,10 +1674,16 @@ items:
             href: ../../fundamentals/syslib-diagnostics/syslib0047.md
           - name: SYSLIB0048
             href: ../../fundamentals/syslib-diagnostics/syslib0048.md
+          - name: SYSLIB0049
+            href: ../../fundamentals/syslib-diagnostics/syslib0049.md
           - name: SYSLIB0050
             href: ../../fundamentals/syslib-diagnostics/syslib0050.md
           - name: SYSLIB0051
             href: ../../fundamentals/syslib-diagnostics/syslib0051.md
+          - name: SYSLIB0052
+            href: ../../fundamentals/syslib-diagnostics/syslib0052.md
+          - name: SYSLIB0053
+            href: ../../fundamentals/syslib-diagnostics/syslib0053.md
       - name: Source-generated code
         items:
           - name: Overview
@@ -1536,6 +1741,8 @@ items:
             href: ../../fundamentals/syslib-diagnostics/syslib1032.md
           - name: SYSLIB1033
             href: ../../fundamentals/syslib-diagnostics/syslib1033.md
+          - name: SYSLIB1034
+            href: ../../fundamentals/syslib-diagnostics/syslib1034.md
           - name: SYSLIB1035
             href: ../../fundamentals/syslib-diagnostics/syslib1035.md
           - name: SYSLIB1036
@@ -1544,6 +1751,8 @@ items:
             href: ../../fundamentals/syslib-diagnostics/syslib1037.md
           - name: SYSLIB1038
             href: ../../fundamentals/syslib-diagnostics/syslib1038.md
+          - name: SYSLIB1039
+            href: ../../fundamentals/syslib-diagnostics/syslib1039.md
           - name: SYSLIB1040-SYSLIB1049
             href: ../../fundamentals/syslib-diagnostics/syslib1040-1049.md
             displayProperty: syslib1041, syslib1042, syslib1043, syslib1044, syslib1045, syslib1046, syslib1047, syslib1048, syslib1049
@@ -1559,6 +1768,12 @@ items:
           - name: SYSLIB1100-SYSLIB1118
             href: ../../fundamentals/syslib-diagnostics/syslib1100-1118.md
             displayProperty: syslib1101, syslib1102, syslib1103, syslib1104, syslib1105, syslib1106, syslib1107, syslib1108, syslib1109, syslib1110, syslib1111, syslib1112, syslib1113, syslib1114, syslib1115, syslib1116, syslib1117, syslib1118
+          - name: SYSLIB1201-SYSLIB1219
+            href: ../../fundamentals/syslib-diagnostics/syslib1201-1219.md
+            displayProperty: syslib1201, syslib1202, syslib1203, syslib1204, syslib1205, syslib1206, syslib1207, syslib1208, syslib1209, syslib1210, syslib1211, syslib1212, syslib1213, syslib1214, syslib1215, syslib1216, syslib1217, syslib1218, syslib1219
+          - name: SYSLIB1220-SYSLIB1229
+            href: ../../fundamentals/syslib-diagnostics/syslib1220-1229.md
+            displayProperty: syslib1220, syslib1221, syslib1222, syslib1223, syslib1224, syslib1225, syslib1226, syslib1227, syslib1228, syslib1229
   - name: Package validation
     items:
       - name: Get started

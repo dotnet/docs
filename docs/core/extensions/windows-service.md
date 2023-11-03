@@ -3,7 +3,7 @@ title: Create Windows Service using BackgroundService
 description: Learn how to create a Windows Service using the BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/12/2023
+ms.date: 09/08/2023
 ms.topic: tutorial
 zone_pivot_groups: dotnet-version
 ---
@@ -334,6 +334,9 @@ The default behavior before .NET 6 is `Ignore`, which resulted in *zombie proces
 ## Verify service functionality
 
 To see the app created as a Windows Service, open **Services**. Select the Windows key (or <kbd>Ctrl</kbd> + <kbd>Esc</kbd>), and search from "Services". From the **Services** app, you should be able to find your service by its name.
+
+> [!IMPORTANT]
+> By default, regular (non-admin) users cannot manage Windows services. To verify that this app functions as expected, you'll need to use an Admin account.
 
 :::image type="content" source="media/windows-service.png" lightbox="media/windows-service.png" alt-text="The Services user interface.":::
 

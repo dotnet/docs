@@ -14,7 +14,7 @@ ms.assetid: 7e911a0c-3f98-4536-87be-d539b7536ca8
 
 You can use the `out` keyword in two contexts:
 
-- As a [parameter modifier](out-parameter-modifier.md), which lets you pass an argument to a method by reference rather than by value.
+- As a [parameter modifier](method-parameters.md#out-parameter-modifier), which lets you pass an argument to a method by reference rather than by value.
 
 - In [generic type parameter declarations](out-generic-modifier.md) for interfaces and delegates, which specifies that a type parameter is covariant.
 

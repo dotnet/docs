@@ -1,7 +1,7 @@
 ---
 title: F# code formatting guidelines
 description: Learn guidelines for formatting F# code.
-ms.date: 09/19/2021
+ms.date: 11/01/2023
 ---
 # F# code formatting guidelines
 
@@ -1300,6 +1300,14 @@ let comparer = {
 }
 ```
 
+Empty type definitions may be formatted on one line:
+
+```fsharp
+type AnEmptyType = class end
+```
+
+Regardless of the chosen page width, `= class end` should always be on the same line.
+
 ### Formatting index/slice expressions
 
 Index expressions shouldn't contain any spaces around the opening and closing brackets.
@@ -2090,7 +2098,7 @@ Always prefer the .NET style, except for five specific types:
 1. For F# Lists, use the postfix form: `int list` rather than `list<int>`.
 2. For F# Options, use the postfix form: `int option` rather than `option<int>`.
 3. For F# Value Options, use the postfix form: `int voption` rather than `voption<int>`.
-4. For F# arrays, use the syntactic name `int[]` rather than `int array` or `array<int>`.
+4. For F# arrays, use the postfix form: `int array` rather than `array<int>` or `int[]`.
 5. For Reference Cells, use `int ref` rather than `ref<int>` or `Ref<int>`.
 
 For all other types, use the prefix form.

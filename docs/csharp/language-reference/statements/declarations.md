@@ -100,7 +100,7 @@ For information about the `ref` fields, see the [`ref` fields](../builtin-types/
 
 ## scoped ref
 
-The contextual keyword `scoped` restricts the lifetime of a value. The `scoped` modifier restricts the [*ref-safe-to-escape* or *safe-to-escape* lifetime](../keywords/method-parameters.md#scope-of-references-and-values), respectively, to the current method. Effectively, adding the `scoped` modifier asserts that your code won't extend the lifetime of the variable.
+The contextual keyword `scoped` restricts the lifetime of a value. The `scoped` modifier restricts the [*ref-safe-to-escape* or *safe-to-escape* lifetime](../keywords/method-parameters.md#safe-context-of-references-and-values), respectively, to the current method. Effectively, adding the `scoped` modifier asserts that your code won't extend the lifetime of the variable.
 
 You can apply `scoped` to a parameter or local variable. The `scoped` modifier may be applied to parameters and locals when the type is a [`ref struct`](../builtin-types/ref-struct.md). Otherwise, the `scoped` modifier may be applied only to local [reference variables](#reference-variables). That includes local variables declared with the `ref` modifier and parameters declared with the `in`, `ref` or `out` modifiers.
 

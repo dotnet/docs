@@ -6,7 +6,6 @@ ms.custom: devx-track-dotnet, engagement-fy23
 ms.date: 3/23/2023
 author: alexwolfmsft
 ms.author: alexwolf
-recommendations: false
 ---
 
 # Create an Azure account

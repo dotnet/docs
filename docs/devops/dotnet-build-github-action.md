@@ -5,7 +5,6 @@ author: IEvangelist
 ms.author: dapine
 ms.date: 02/16/2022
 ms.topic: quickstart
-recommendations: false
 ---
 
 # Quickstart: Create a build validation GitHub workflow

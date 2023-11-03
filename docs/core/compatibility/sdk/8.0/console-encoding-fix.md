@@ -12,7 +12,7 @@ In addition, the .NET SDK no longer changes the encoding to UTF-8 on older Windo
 ## Previous behavior
 
 - The SDK changed the encoding of a terminal after running a command such as `dotnet build`.
-- The SDK used the UTF-8 encoding to correctly render non-English characters, even on versions of windows 10 that did not officially support UTF-8. The behavior was undefined on those versions.
+- The SDK used the UTF-8 encoding to correctly render non-English characters, even on versions of Windows 10 that did not officially support UTF-8. The behavior was undefined on those versions.
 
 ## New behavior
 

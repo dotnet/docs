@@ -1,7 +1,7 @@
 ---
 title: Database errors
 ms.date: 06/06/2023
-description: Describes how database errors and retires are handled by the library.
+description: Describes how database errors and retries are handled by the library.
 ---
 # Database errors
 

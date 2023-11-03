@@ -1,7 +1,7 @@
 ---
 description: "readonly keyword - C# Reference"
 title: "readonly keyword - C# Reference"
-ms.date: 04/14/2020
+ms.date: 09/25/2023
 f1_keywords:
   - "readonly_CSharpKeyword"
   - "readonly"
@@ -11,7 +11,7 @@ ms.assetid: 2f8081f6-0de2-4903-898d-99696c48d2f4
 ---
 # readonly (C# Reference)
 
-The `readonly` keyword is a modifier that can be used in four contexts:
+The `readonly` keyword is a modifier that can be used in five contexts:
 
 - In a [field declaration](#readonly-field-example), `readonly` indicates that assignment to the field can only occur as part of the declaration or in a constructor in the same class. A readonly field can be assigned and reassigned multiple times within the field declaration and constructor.
 
@@ -26,6 +26,7 @@ The `readonly` keyword is a modifier that can be used in four contexts:
 - In a `readonly struct` type definition, `readonly` indicates that the structure type is immutable. For more information, see the [`readonly` struct](../builtin-types/struct.md#readonly-struct) section of the [Structure types](../builtin-types/struct.md) article.
 - In an instance member declaration within a structure type, `readonly` indicates that an instance member doesn't modify the state of the structure. For more information, see the [`readonly` instance members](../builtin-types/struct.md#readonly-instance-members) section of the [Structure types](../builtin-types/struct.md) article.
 - In a [`ref readonly` method return](#ref-readonly-return-example), the `readonly` modifier indicates that method returns a reference and writes aren't allowed to that reference.
+  - To declare a [`ref readonly` parameter](method-parameters.md#ref-readonly-modifier) to a method.
 
 ## Readonly field example
 
@@ -44,7 +45,7 @@ You can assign a value to a `readonly` field only in the following contexts:
 - In an instance constructor of the class that contains the instance field declaration.
 - In the static constructor of the class that contains the static field declaration.
 
-These constructor contexts are also the only contexts in which it's valid to pass a `readonly` field as an [out](out-parameter-modifier.md) or [ref](ref.md) parameter.
+These constructor contexts are also the only contexts in which it's valid to pass a `readonly` field as an [out](method-parameters.md#out-parameter-modifier) or [ref](ref.md) parameter.
 
 > [!NOTE]
 > The `readonly` keyword is different from the [const](const.md) keyword. A `const` field can only be initialized at the declaration of the field. A `readonly` field can be assigned multiple times in the field declaration and in any constructor. Therefore, `readonly` fields can have different values depending on the constructor used. Also, while a `const` field is a compile-time constant, the `readonly` field can be used for run-time constants as in the following example:
@@ -65,6 +66,12 @@ you'll get the compiler error message:
 
 **A readonly field cannot be assigned to (except in a constructor or a variable initializer)**
 
+## Readonly instance members
+
+You can also use the `readonly` modifier to declare that an instance member doesn't modify the state of a struct.
+
+:::code language="csharp" source="../builtin-types/snippets/shared/StructType.cs" id="SnippetReadonlyMethod":::
+
 ## Ref readonly return example
 
 The `readonly` modifier on a `ref return` indicates that the returned reference can't be modified. The following example returns a reference to the origin. It uses the `readonly` modifier to indicate that callers can't modify the origin:
@@ -72,6 +79,14 @@ The `readonly` modifier on a `ref return` indicates that the returned reference 
 [!code-csharp[readonly return example](snippets/ReadonlyKeywordExamples.cs#ReadonlyReturn)]
 
 The type returned doesn't need to be a `readonly struct`. Any type that can be returned by `ref` can be returned by `ref readonly`.
+
+## Readonly ref readonly return example
+
+Ref readonly return can also be used in conjunction with `readonly` instance members on `struct` types:
+
+:::code language="csharp" source="./snippets/ReadonlyKeywordExamples.cs" id="SnippetReadonlyRefReadonly":::
+
+The method essentially returns a `readonly` reference together with the instance member (in this case a method) being `readonly` (not able to modify any instance fields).
 
 ## C# language specification
 

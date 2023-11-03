@@ -19,7 +19,7 @@ dotnet-install.ps1 [-Architecture <ARCHITECTURE>] [-AzureFeed]
     [-InstallDir <DIRECTORY>] [-JSonFile <JSONFILE>]
     [-NoCdn] [-NoPath] [-ProxyAddress] [-ProxyBypassList <LIST_OF_URLS>]
     [-ProxyUseDefaultCredentials] [-Quality <QUALITY>] [-Runtime <RUNTIME>]
-    [-SkipNonVersionedFiles] [-UncachedFeed] [-Verbose]
+    [-SkipNonVersionedFiles] [-UncachedFeed] [-KeepZip] [-ZipPath <PATH>] [-Verbose]
     [-Version <VERSION>]
 
 Get-Help ./dotnet-install.ps1
@@ -33,7 +33,7 @@ dotnet-install.sh  [--architecture <ARCHITECTURE>] [--azure-feed]
     [--install-dir <DIRECTORY>] [--jsonfile <JSONFILE>]
     [--no-cdn] [--no-path] [--quality <QUALITY>]
     [--runtime <RUNTIME>] [--runtime-id <RID>]
-    [--skip-non-versioned-files] [--uncached-feed] [--verbose]
+    [--skip-non-versioned-files] [--uncached-feed] [--keep-zip] [--zip-path <PATH>] [--verbose]
     [--version <VERSION>]
 
 dotnet-install.sh --help
@@ -71,6 +71,8 @@ We recommend that you use the stable version of the scripts:
 
 - Bash (Linux/macOS): <https://dot.net/v1/dotnet-install.sh>
 - PowerShell (Windows): <https://dot.net/v1/dotnet-install.ps1>
+
+The source for the scripts is in the [dotnet/install-scripts](https://github.com/dotnet/install-scripts) GitHub repository.
 
 ### Script behavior
 
@@ -201,6 +203,14 @@ The install scripts do not update the registry on Windows. They just download th
 - **`-UncachedFeed|--uncached-feed`**
 
   For internal use only. Allows using a different storage to download SDK archives from. This parameter is only used if --no-cdn is true.
+
+- **`-KeepZip|--keep-zip`**
+
+  If set, the downloaded SDK archive is kept after installation.
+
+- **`-ZipPath|--zip-path <PATH>`**
+
+ If set, the downloaded SDK archive is stored at the specified path.
 
 - **`-Verbose|--verbose`**
 

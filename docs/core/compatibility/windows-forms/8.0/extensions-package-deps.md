@@ -29,7 +29,7 @@ This change can affect [*source compatibility*](../../categories.md#source-compa
 
 This change avoids a dependency on System.Drawing.Common when System.Windows.Extensions is referenced.
 
-This change helps more components remove a dependency on System.Drawing.Common unless they actually need it. For more information, see [dotnet/msbuild issue 8962](dotnet/msbuild#8962).
+This change helps more components remove a dependency on System.Drawing.Common unless they actually need it. For more information, see [dotnet/msbuild issue 8962](https://www.github.com/dotnet/msbuild/issues/8962).
 
 ## Recommended action
 

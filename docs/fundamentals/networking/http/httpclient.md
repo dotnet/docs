@@ -3,7 +3,7 @@ title: Make HTTP requests with the HttpClient
 description: Learn how to make HTTP requests and handle responses with the HttpClient in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 05/19/2023
+ms.date: 11/02/2023
 ---
 
 # Make HTTP requests with the HttpClient class
@@ -377,5 +377,4 @@ For more information about configuring a proxy, see:
 - [Guidelines for using HttpClient](httpclient-guidelines.md)
 - [IHttpClientFactory with .NET](../../../core/extensions/httpclient-factory.md)
 - [Use HTTP/3 with HttpClient](../../../core/extensions/httpclient-http3.md)
-- [REST API HTTP client generator](http-autoclient.md)
 - [Test web APIs with the HttpRepl](/aspnet/core/web-api/http-repl)

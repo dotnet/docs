@@ -102,6 +102,8 @@ items:
         href: extensions/8.0/hostapplicationbuilder-ctor.md
       - name: ManagementDateTimeConverter.ToDateTime returns a local time
         href: extensions/8.0/dmtf-todatetime.md
+      - name: System.Formats.Cbor DateTimeOffset formatting change
+        href: extensions/8.0/cbor-datetime.md
     - name: Globalization
       items:
       - name: Date and time converters honor culture argument
@@ -1354,6 +1356,8 @@ items:
         href: extensions/8.0/hostapplicationbuilder-ctor.md
       - name: ManagementDateTimeConverter.ToDateTime returns a local time
         href: extensions/8.0/dmtf-todatetime.md
+      - name: System.Formats.Cbor DateTimeOffset formatting change
+        href: extensions/8.0/cbor-datetime.md
     - name: .NET 7
       items:
       - name: Binding config to dictionary extends values

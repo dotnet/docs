@@ -5,23 +5,23 @@ ms.date: 11/03/2023
 ---
 # SendFile throws NotSupportedException for connectionless sockets
 
-The behavior of the <xref:System.Net.Sockets.SendFile%2A> method family for connectionless (for example, UDP) sockets is now consistent across all platforms. The [affected methods](#affected-apis) now throw a <xref:System.NotSupportedException> on all platforms.
+The behavior of the <xref:System.Net.Sockets.Socket.SendFile%2A> method family for connectionless (for example, UDP) sockets is now consistent across all platforms. The [affected methods](#affected-apis) now throw a <xref:System.NotSupportedException> on all platforms.
 
 ## Previous behavior
 
 Previously, for a connectionless <xref:System.Net.Sockets.Socket> (for example, UDP), the following behaviors were observed:
 
-- <xref:System.Net.Sockets.SendFile%2A> threw a <xref:System.NotSupportedException> on Windows, but not on Unix-like platforms.
-- The <xref:System.Threading.Tasks.ValueTask> returned from <xref:System.Net.Sockets.SendFileAsync%2A> stored a <xref:System.Net.Sockets.SocketException> on all platforms.
-- Calling <xref:System.Net.Sockets.EndSendFile%2A> on an <xref:System.IAsyncResult> returned from <xref:System.Net.Sockets.BeginSendFile%2A> threw a <xref:System.Net.Sockets.SocketException> on all platforms.
+- <xref:System.Net.Sockets.Socket.SendFile%2A> threw a <xref:System.NotSupportedException> on Windows, but not on Unix-like platforms.
+- The <xref:System.Threading.Tasks.ValueTask> returned from <xref:System.Net.Sockets.Socket.SendFileAsync%2A> stored a <xref:System.Net.Sockets.SocketException> on all platforms.
+- Calling <xref:System.Net.Sockets.Socket.EndSendFile%2A> on an <xref:System.IAsyncResult> returned from <xref:System.Net.Sockets.Socket.BeginSendFile%2A> threw a <xref:System.Net.Sockets.SocketException> on all platforms.
 
 ## New behavior
 
 Starting in .NET 8, for a connectionless <xref:System.Net.Sockets.Socket> (for example, UDP), the following behaviors are observed:
 
-- <xref:System.Net.Sockets.SendFile%2A> throws a <xref:System.NotSupportedException> on all platforms.
-- The <xref:System.Threading.Tasks.ValueTask> returned from <xref:System.Net.Sockets.SendFileAsync%2A> stores a <xref:System.NotSupportedException> on all platforms.
-- Calling <xref:System.Net.Sockets.EndSendFile%2A> on an <xref:System.IAsyncResult> returned from <xref:System.Net.Sockets.BeginSendFile%2A> throws a <xref:System.NotSupportedException> on all platforms.
+- <xref:System.Net.Sockets.Socket.SendFile%2A> throws a <xref:System.NotSupportedException> on all platforms.
+- The <xref:System.Threading.Tasks.ValueTask> returned from <xref:System.Net.Sockets.Socket.SendFileAsync%2A> stores a <xref:System.NotSupportedException> on all platforms.
+- Calling <xref:System.Net.Sockets.Socket.EndSendFile%2A> on an <xref:System.IAsyncResult> returned from <xref:System.Net.Sockets.Socket.BeginSendFile%2A> throws a <xref:System.NotSupportedException> on all platforms.
 
 ## Version introduced
 
@@ -41,6 +41,6 @@ Do not use `SendFile` methods for connectionless sockets.
 
 ## Affected APIs
 
-- <xref:System.Net.Sockets.SendFile%2A?displayProperty=fullName>
-- <xref:System.Net.Sockets.SendFileAsync%2A?displayProperty=fullName>
-- <xref:System.Net.Sockets.EndSendFile%2A?displayProperty=fullName>
+- <xref:System.Net.Sockets.Socket.SendFile%2A?displayProperty=fullName>
+- <xref:System.Net.Sockets.Socket.SendFileAsync%2A?displayProperty=fullName>
+- <xref:System.Net.Sockets.Socket.EndSendFile%2A?displayProperty=fullName>

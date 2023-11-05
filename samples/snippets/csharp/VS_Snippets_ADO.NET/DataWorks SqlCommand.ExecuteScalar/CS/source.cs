@@ -32,14 +32,12 @@ static class Class1
                 Console.WriteLine(ex.Message);
             }
         }
-        return (int)newProdID;
+        return newProdID;
     }
     // </Snippet1>
-    static string GetConnectionString()
-    {
+    static string GetConnectionString() =>
         // To avoid storing the connection string in your code,
         // you can retrieve it from a configuration file.
-        return "Data Source=(local);Initial Catalog=AdventureWorks;"
+        "Data Source=(local);Initial Catalog=AdventureWorks;"
             + "Integrated Security=true";
-    }
 }

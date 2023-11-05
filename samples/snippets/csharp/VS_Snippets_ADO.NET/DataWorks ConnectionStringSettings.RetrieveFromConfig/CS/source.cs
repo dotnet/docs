@@ -3,7 +3,7 @@ using System;
 // <Snippet1>
 using System.Configuration;
 
-internal static class Program
+static class Program
 {
     static void Main()
     {

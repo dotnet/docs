@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Data;
-using System.Reflection;
 using System.Data.SqlClient;
 using System.Globalization;
+using System.Linq;
+using System.Reflection;
 
 namespace DP_Custom_CopyToDataTable_Examples
 {
@@ -74,9 +74,9 @@ namespace DP_Custom_CopyToDataTable_Examples
 
             // Query for items with price greater than 9.99.
             IOrderedEnumerable<Item> query = from i in items
-                        where i.Price > 9.99
-                        orderby i.Price
-                        select i;
+                                             where i.Price > 9.99
+                                             orderby i.Price
+                                             select i;
 
             // Load the query results into new DataTable.
             DataTable table = query.CopyToDataTable();
@@ -267,16 +267,12 @@ namespace DP_Custom_CopyToDataTable_Examples
     // <SnippetCustomCopyToDataTableMethods>
     public static class CustomLINQtoDataSetMethods
     {
-        public static DataTable CopyToDataTable<T>(this IEnumerable<T> source)
-        {
-            return new ObjectShredder<T>().Shred(source, null, null);
-        }
+        public static DataTable CopyToDataTable<T>(this IEnumerable<T> source) =>
+            new ObjectShredder<T>().Shred(source, null, null);
 
         public static DataTable CopyToDataTable<T>(this IEnumerable<T> source,
-                                                    DataTable table, LoadOption? options)
-        {
-            return new ObjectShredder<T>().Shred(source, table, options);
-        }
+                                                    DataTable table, LoadOption? options) =>
+            new ObjectShredder<T>().Shred(source, table, options);
     }
     // </SnippetCustomCopyToDataTableMethods>
 

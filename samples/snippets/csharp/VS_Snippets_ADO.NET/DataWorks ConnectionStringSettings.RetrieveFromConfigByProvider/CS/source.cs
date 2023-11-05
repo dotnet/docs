@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Configuration;
 
-internal static class Program
+static class Program
 {
     static void Main()
     {

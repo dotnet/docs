@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Data.SqlClient;
 using System.Configuration;
 using System.Data.Common;
+using System.Data.SqlClient;
 
 static class Program
 {

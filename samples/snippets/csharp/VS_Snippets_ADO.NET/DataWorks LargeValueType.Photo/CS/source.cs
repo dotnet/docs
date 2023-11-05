@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Data.SqlClient;
 using System.Data;
+using System.Data.SqlClient;
 using System.Data.SqlTypes;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -92,12 +92,10 @@ static class Program
     }
     // </Snippet1>
 
-    static string GetConnectionString()
-    {
+    static string GetConnectionString() =>
         // To avoid storing the connectionection string in your code,
         // you can retrieve it from a configuration file, using the
         // System.Configuration.ConfigurationSettings.AppSettings property
-        return "Data Source=(local);Initial Catalog=AdventureWorks;" +
+        "Data Source=(local);Initial Catalog=AdventureWorks;" +
             "Integrated Security=SSPI";
-    }
 }

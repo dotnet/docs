@@ -4,10 +4,7 @@ using System.Data;
 static class DataTableReaderConstructor
 {
     [STAThread]
-    static void Main()
-    {
-        TestConstructor();
-    }
+    static void Main() => TestConstructor();
     // <Snippet1>
     static void TestConstructor()
     {

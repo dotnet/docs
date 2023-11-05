@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Data;
-using System.Linq;
-using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Globalization;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace DataViewWinFormsSample
 {
@@ -13,10 +13,7 @@ namespace DataViewWinFormsSample
         SqlDataAdapter _contactsDataAdapter;
         DataView _contactView;
 
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         // <SnippetLDVSample1FormLoad>
         void Form1_Load(object sender, EventArgs e)

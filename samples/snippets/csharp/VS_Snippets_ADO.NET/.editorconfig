@@ -10,6 +10,7 @@ root = false        # inherit .NET standard except my faves: var/private style p
 csharp_style_prefer_method_group_conversion = true:silent
 csharp_style_prefer_primary_constructors = true:suggestion
 csharp_style_prefer_top_level_statements = true:silent
+csharp_style_unused_value_assignment_preference = discard_variable:none
 csharp_using_directive_placement = outside_namespace:suggestion
 dotnet_style_operator_placement_when_wrapping = end_of_line
 dotnet_style_require_accessibility_modifiers = omit_if_default

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data.SqlClient;
-using System.Xml;
 using System.Data.SqlTypes;
+using System.Xml;
 
 static class Class1
 {

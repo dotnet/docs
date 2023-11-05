@@ -17,14 +17,10 @@ static class Program
         // Create a DataTable and specify a SqlType
         // for each column.
         DataTable table = new();
-        DataColumn icolumnolumn =
-            table.Columns.Add("SalesOrderID", typeof(SqlInt32));
-        DataColumn priceColumn =
-            table.Columns.Add("UnitPrice", typeof(SqlMoney));
-        DataColumn totalColumn =
-            table.Columns.Add("LineTotal", typeof(SqlDecimal));
-        DataColumn columnModifiedDate =
-            table.Columns.Add("ModifiedDate", typeof(SqlDateTime));
+        table.Columns.Add("SalesOrderID", typeof(SqlInt32));
+        table.Columns.Add("UnitPrice", typeof(SqlMoney));
+        table.Columns.Add("LineTotal", typeof(SqlDecimal));
+        table.Columns.Add("ModifiedDate", typeof(SqlDateTime));
 
         // Open a connection to SQL Server and fill the DataTable
         // with data from the Sales.SalesOrderDetail table
@@ -77,12 +73,10 @@ static class Program
     }
     // </Snippet1>
 
-    static string GetConnectionString()
-    {
+    static string GetConnectionString() =>
         // To avoid storing the connection string in your code,
         // you can retrieve it from a configuration file, using the
         // System.Configuration.ConfigurationSettings.AppSettings property
-        return "Data Source=(local);Initial Catalog=AdventureWorks;"
+        "Data Source=(local);Initial Catalog=AdventureWorks;"
             + "Integrated Security=SSPI;";
-    }
 }

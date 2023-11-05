@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using System.Globalization;
 
 namespace DataViewSamples
 {
@@ -13,10 +13,7 @@ namespace DataViewSamples
     {
         DataSet _dataSet;
 
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         void Form1_Load(object sender, EventArgs e)
         {
@@ -183,19 +180,25 @@ namespace DataViewSamples
                     {
                         // Check to see if the current code is 0 (a vowel); do not process vowels.
                         if (currCode != 0)
+                        {
                             buffer.Append(currCode);
+                        }
                     }
                     // Set the previous character code.
                     prevCode = currCode;
 
                     // If the buffer size meets the length limit, exit the loop.
                     if (buffer.Length == length)
+                    {
                         break;
+                    }
                 }
                 // Pad the buffer, if required.
                 size = buffer.Length;
                 if (size < length)
+                {
                     buffer.Append('0', length - size);
+                }
 
                 // Set the value to return.
                 value = buffer.ToString();
@@ -205,7 +208,7 @@ namespace DataViewSamples
         }
         // </SnippetSoundEx>
 
-        void button1_Click(object sender, EventArgs e)
+        void Button1_Click(object sender, EventArgs e)
         {
             // <SnippetCreateLDVFromQuery1>
             DataTable orders = _dataSet.Tables["SalesOrderHeader"];
@@ -222,7 +225,7 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromQuery1>
         }
 
-        void button2_Click(object sender, EventArgs e)
+        void Button2_Click(object sender, EventArgs e)
         {
             // <SnippetCreateLDVFromQuery2>
             DataTable orders = _dataSet.Tables["SalesOrderDetail"];
@@ -241,7 +244,7 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromQuery2>
         }
 
-        void button3_Click(object sender, EventArgs e)
+        void Button3_Click(object sender, EventArgs e)
         {
             // <SnippetCreateLDVFromQuery3>
             DataTable contacts = _dataSet.Tables["Contact"];
@@ -256,7 +259,7 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromQuery3>
         }
 
-        void button4_Click(object sender, EventArgs e)
+        void Button4_Click(object sender, EventArgs e)
         {
             // <SnippetCreateLDVFromQuery4>
             DataTable orders = _dataSet.Tables["SalesOrderHeader"];
@@ -271,7 +274,7 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromQuery4>
         }
 
-        void button5_Click(object sender, EventArgs e)
+        void Button5_Click(object sender, EventArgs e)
         {
             // <SnippetCreateLDVFromTable>
             DataTable orders = _dataSet.Tables["SalesOrderDetail"];
@@ -283,7 +286,7 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromTable>
         }
 
-        void button6_Click(object sender, EventArgs e)
+        void Button6_Click(object sender, EventArgs e)
         {
             // <SnippetCreateLDVFromQueryOrderBy>
             DataTable orders = _dataSet.Tables["SalesOrderHeader"];
@@ -298,7 +301,7 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromQueryOrderBy>
         }
 
-        void button7_Click(object sender, EventArgs e)
+        void Button7_Click(object sender, EventArgs e)
         {
             // <SnippetCreateLDVFromQueryStringSort>
             DataTable contacts = _dataSet.Tables["Contact"];
@@ -315,7 +318,7 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromQueryStringSort>
         }
 
-        void button8_Click(object sender, EventArgs e)
+        void Button8_Click(object sender, EventArgs e)
         {
             // <SnippetCreateLDVFromQueryOrderByThenBy>
             DataTable orders = _dataSet.Tables["SalesOrderDetail"];
@@ -331,7 +334,7 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromQueryOrderByThenBy>
         }
 
-        void button9_Click(object sender, EventArgs e)
+        void Button9_Click(object sender, EventArgs e)
         {
             // <SnippetCreateLDVFromQueryOrderBy2>
             DataTable orders = _dataSet.Tables["SalesOrderHeader"];
@@ -348,7 +351,7 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromQueryOrderBy2>
         }
 
-        void button10_Click(object sender, EventArgs e)
+        void Button10_Click(object sender, EventArgs e)
         {
             // <SnippetCreateLDVFromQueryOrderByDescending>
             DataTable orders = _dataSet.Tables["SalesOrderHeader"];
@@ -363,7 +366,7 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromQueryOrderByDescending>
         }
 
-        void button11_Click(object sender, EventArgs e)
+        void Button11_Click(object sender, EventArgs e)
         {
             // <SnippetLDVStringSort>
             DataTable contacts = _dataSet.Tables["Contact"];
@@ -377,7 +380,7 @@ namespace DataViewSamples
             // </SnippetLDVStringSort>
         }
 
-        void button12_Click(object sender, EventArgs e)
+        void Button12_Click(object sender, EventArgs e)
         {
             // <SnippetLDVClearSort>
             DataTable orders = _dataSet.Tables["SalesOrderHeader"];
@@ -394,7 +397,7 @@ namespace DataViewSamples
             // </SnippetLDVClearSort>
         }
 
-        void button13_Click(object sender, EventArgs e)
+        void Button13_Click(object sender, EventArgs e)
         {
             // <SnippetLDVClearRowFilter>
             DataTable contacts = _dataSet.Tables["Contact"];
@@ -411,7 +414,7 @@ namespace DataViewSamples
             // </SnippetLDVClearRowFilter>
         }
 
-        void button14_Click(object sender, EventArgs e)
+        void Button14_Click(object sender, EventArgs e)
         {
             // <SnippetLDVRowFilter>
             DataTable contacts = _dataSet.Tables["Contact"];
@@ -425,7 +428,7 @@ namespace DataViewSamples
             // </SnippetLDVRowFilter>
         }
 
-        void button15_Click(object sender, EventArgs e)
+        void Button15_Click(object sender, EventArgs e)
         {
             // <SnippetLDVSoundExFilter>
             DataTable contacts = _dataSet.Tables["Contact"];
@@ -443,7 +446,7 @@ namespace DataViewSamples
             // </SnippetLDVSoundExFilter>
         }
 
-        void button16_Click(object sender, EventArgs e)
+        void Button16_Click(object sender, EventArgs e)
         {
             // <SnippetLDVFromQueryWhere>
             DataTable orders = _dataSet.Tables["SalesOrderDetail"];
@@ -458,7 +461,7 @@ namespace DataViewSamples
             // </SnippetLDVFromQueryWhere>
         }
 
-        void button17_Click(object sender, EventArgs e)
+        void Button17_Click(object sender, EventArgs e)
         {
             // <SnippetLDVFromQueryWhere2>
             DataTable contacts = _dataSet.Tables["Contact"];
@@ -475,7 +478,7 @@ namespace DataViewSamples
             // </SnippetLDVFromQueryWhere2>
         }
 
-        void button18_Click(object sender, EventArgs e)
+        void Button18_Click(object sender, EventArgs e)
         {
             // <SnippetLDVFromQueryWhere3>
             DataTable orders = _dataSet.Tables["SalesOrderHeader"];
@@ -490,7 +493,7 @@ namespace DataViewSamples
             // </SnippetLDVFromQueryWhere3>
         }
 
-        void button19_Click(object sender, EventArgs e)
+        void Button19_Click(object sender, EventArgs e)
         {
             // <SnippetLDVFromQueryWhereOrderByThenBy>
             DataTable contacts = _dataSet.Tables["Contact"];
@@ -508,7 +511,7 @@ namespace DataViewSamples
             // </SnippetLDVFromQueryWhereOrderByThenBy>
         }
 
-        void button20_Click(object sender, EventArgs e)
+        void Button20_Click(object sender, EventArgs e)
         {
             // <SnippetLDVFromQueryWhereOrderByThenBy2>
             DataTable orders = _dataSet.Tables["SalesOrderHeader"];
@@ -524,7 +527,7 @@ namespace DataViewSamples
             // </SnippetLDVFromQueryWhereOrderByThenBy2>
         }
 
-        void button21_Click(object sender, EventArgs e)
+        void Button21_Click(object sender, EventArgs e)
         {
             // <SnippetLDVFromQueryOrderByFind>
             DataTable contacts = _dataSet.Tables["Contact"];
@@ -540,7 +543,7 @@ namespace DataViewSamples
             // </SnippetLDVFromQueryOrderByFind>
         }
 
-        void button22_Click(object sender, EventArgs e)
+        void Button22_Click(object sender, EventArgs e)
         {
             // <SnippetLDVFromQueryFindRows>
             DataTable products = _dataSet.Tables["Product"];
@@ -559,7 +562,7 @@ namespace DataViewSamples
             // </SnippetLDVFromQueryFindRows>
         }
 
-        void button23_Click(object sender, EventArgs e)
+        void Button23_Click(object sender, EventArgs e)
         {
             // <SnippetLDVFromQueryWhereSetRowFilter>
             DataTable contacts = _dataSet.Tables["Contact"];
@@ -577,7 +580,7 @@ namespace DataViewSamples
             // </SnippetLDVFromQueryWhereSetRowFilter>
         }
 
-        void button24_Click(object sender, EventArgs e)
+        void Button24_Click(object sender, EventArgs e)
         {
             // <SnippetLDVClearRowFilter2>
             DataTable orders = _dataSet.Tables["SalesOrderHeader"];
@@ -595,7 +598,7 @@ namespace DataViewSamples
             // </SnippetLDVClearRowFilter2>
         }
 
-        void button26_Click(object sender, EventArgs e)
+        void Button26_Click(object sender, EventArgs e)
         {
             // <SnippetLDVClearSort2>
             DataTable contacts = _dataSet.Tables["Contact"];
@@ -612,7 +615,7 @@ namespace DataViewSamples
             // </SnippetLDVClearSort2>
         }
 
-        void button25_Click(object sender, EventArgs e)
+        void Button25_Click(object sender, EventArgs e)
         {
             // <SnippetCreateLDVFromQueryOrderByYear>
             DataTable orders = _dataSet.Tables["SalesOrderHeader"];
@@ -628,7 +631,7 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromQueryOrderByYear>
         }
 
-        void button27_Click(object sender, EventArgs e)
+        void Button27_Click(object sender, EventArgs e)
         {
             DataTable products = _dataSet.Tables["Product"];
 
@@ -645,7 +648,7 @@ namespace DataViewSamples
             // Create a table from the bound view representing a query of
             // available products.
             var view = (DataView)bindingSource1.DataSource;
-            var productsTable = (DataTable)view.Table;
+            DataTable productsTable = view.Table;
 
             // Set RowStateFilter to display the current rows.
             view.RowStateFilter = DataViewRowState.CurrentRows;
@@ -666,7 +669,7 @@ namespace DataViewSamples
             // </SnippetQueryDataView1>
         }
 
-        void button28_Click(object sender, EventArgs e)
+        void Button28_Click(object sender, EventArgs e)
         {
             // <SnippetQueryDataView2>
             DataTable products = _dataSet.Tables["Product"];

@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Data;
 using System.Configuration;
+using System.Data;
 using System.Data.Common;
 
 static class Program

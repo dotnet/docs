@@ -130,11 +130,9 @@ static class Program
     }
     // </Snippet2>
 
-    static string GetConnectionString()
-    {
+    static string GetConnectionString() =>
         // To avoid storing the connection string in your code,
         // you can retrieve it from a configuration file.
-        return "Provider=Microsoft.Jet.OLEDB.4.0;Data Source="
+        "Provider=Microsoft.Jet.OLEDB.4.0;Data Source="
             + "c:\\Data\\Northwind.mdb;User Id=admin;Password=;";
-    }
 }

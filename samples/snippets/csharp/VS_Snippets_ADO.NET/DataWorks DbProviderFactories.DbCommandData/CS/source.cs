@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Data;
-using System.Data.SqlClient;
-using System.Data.OleDb;
 using System.Configuration;
 using System.Data.Common;
 
-class Program
+static class Program
 {
     static void Main()
     {
-        DbConnection c = CreateFactoryConnection("System.Data.OleDb");
-        //DbConnection c = CreateFactoryConnection("System.Data.SqlClient");
-        DbCommandSelect(c);
+        DbConnection? c = CreateFactoryConnection("System.Data.OleDb");
+        //DbConnection? c = CreateFactoryConnection("System.Data.SqlClient");
+        if (c != null)
+        {
+            DbCommandSelect(c);
+        }
         Console.ReadLine();
     }
 
@@ -20,7 +21,7 @@ class Program
     // from the Categories table by executing a DbDataReader.
     static void DbCommandSelect(DbConnection connection)
     {
-        string queryString =
+        const string queryString =
             "SELECT CategoryID, CategoryName FROM Categories";
 
         // Check for valid DbConnection.
@@ -45,7 +46,6 @@ class Program
                         Console.WriteLine("{0}. {1}", reader[0], reader[1]);
                     }
                 }
-
                 catch (Exception ex)
                 {
                     Console.WriteLine("Exception.Message: {0}", ex.Message);
@@ -60,11 +60,11 @@ class Program
     // </Snippet1>
     // Given a provider, create the factory and connect to the data source.
     // The provider invariant name is in the format System.Data.ProviderName.
-    static DbConnection CreateFactoryConnection(string providerName)
+    static DbConnection? CreateFactoryConnection(string providerName)
     {
         // Retrieve the connection string from the configuration file
         // by supplying the provider name to a custom function.
-        string connectionString = GetConnectionStringByProvider(providerName);
+        var connectionString = GetConnectionStringByProvider(providerName);
 
         // Create the factory if there's a valid connection string.
         if (connectionString != null)
@@ -73,8 +73,11 @@ class Program
                 DbProviderFactories.GetFactory(providerName);
 
             // Create the connection.
-            DbConnection connection = factory.CreateConnection();
-            connection.ConnectionString = connectionString;
+            DbConnection? connection = factory.CreateConnection();
+            if (connection != null)
+            {
+                connection.ConnectionString = connectionString;
+            }
 
             // Return the connection.
             return connection;
@@ -86,9 +89,9 @@ class Program
     // If there are multiple connection strings for the same
     // provider, the first one found is returned.
     // Returns null if the provider is not found.
-    static string GetConnectionStringByProvider(string providerName)
+    static string? GetConnectionStringByProvider(string providerName)
     {
-        for (int i = 0; i < ConfigurationManager.ConnectionStrings.Count; i++)
+        for (var i = 0; i < ConfigurationManager.ConnectionStrings.Count; i++)
         {
             ConnectionStringSettings settings =
                 ConfigurationManager.ConnectionStrings[i];

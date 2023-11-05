@@ -1,21 +1,22 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
-class Program
+
+static class Program
 {
     static void Main()
     {
         // Supply any valid Document ID value.
         // The value 7 is supplied for demonstration purposes.
-        string summaryString = GetDocumentSummary(7);
+        var summaryString = GetDocumentSummary(7);
         Console.ReadLine();
     }
     // <Snippet1>
-    static private string GetDocumentSummary(int documentID)
+    static string? GetDocumentSummary(int documentID)
     {
         //Assumes GetConnectionString returns a valid connection string.
         using (SqlConnection connection =
-                   new SqlConnection(GetConnectionString()))
+                   new(GetConnectionString()))
         {
             connection.Open();
             SqlCommand command = connection.CreateCommand();
@@ -27,21 +28,25 @@ class Program
 
                 // Set up the input parameter for the DocumentID.
                 SqlParameter paramID =
-                    new SqlParameter("@DocumentID", SqlDbType.Int);
-                paramID.Value = documentID;
+                    new("@DocumentID", SqlDbType.Int)
+                    {
+                        Value = documentID
+                    };
                 command.Parameters.Add(paramID);
 
                 // Set up the output parameter to retrieve the summary.
                 SqlParameter paramSummary =
-                    new SqlParameter("@DocumentSummary",
-                    SqlDbType.NVarChar, -1);
-                paramSummary.Direction = ParameterDirection.Output;
+                    new("@DocumentSummary",
+                    SqlDbType.NVarChar, -1)
+                    {
+                        Direction = ParameterDirection.Output
+                    };
                 command.Parameters.Add(paramSummary);
 
                 // Execute the stored procedure.
                 command.ExecuteNonQuery();
-                Console.WriteLine((String)(paramSummary.Value));
-                return (String)(paramSummary.Value);
+                Console.WriteLine((string)paramSummary.Value);
+                return (string)paramSummary.Value;
             }
             catch (Exception ex)
             {
@@ -51,7 +56,7 @@ class Program
         }
     }
     // </Snippet1>
-    static private string GetConnectionString()
+    static string GetConnectionString()
     {
         // To avoid storing the connectionection string in your code,
         // you can retrieve it from a configuration file, using the

@@ -1,14 +1,12 @@
 ﻿// <SnippetImportsUsing>
 using System;
-using System.Linq;
-using System.Linq.Expressions;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Data.Common;
 using System.Globalization;
+using System.Linq;
 // </SnippetImportsUsing>
-using System.Windows.Forms;
+//using System.Windows.Forms;
 
 namespace LINQtoDataSetSamples
 {
@@ -1376,14 +1374,18 @@ namespace LINQtoDataSetSamples
         {
             //<SnippetToDictionary>
             // Fill the DataSet.
-            DataSet ds = new DataSet();
-            ds.Locale = CultureInfo.InvariantCulture;
+            DataSet ds = new DataSet
+            {
+                Locale = CultureInfo.InvariantCulture
+            };
             FillDataSet(ds);
 
             DataTable products = ds.Tables["Product"];
 
-            var scoreRecordsDict = products.AsEnumerable().
-                ToDictionary(record => record.Field<string>("Name"));
+            var scoreRecordsDict =
+                products.AsEnumerable()
+                    .Where(rec=>rec.Field<string>("Name") !=null)
+                    .ToDictionary(record => record.Field<string>("Name"));
             Console.WriteLine("Top Tube's ProductID: {0}",
                 scoreRecordsDict["Top Tube"]["ProductID"]);
             //</SnippetToDictionary>

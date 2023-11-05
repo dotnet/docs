@@ -1,25 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Data;
-using System.Data.Common;
 using System.Reflection;
 using System.Data.SqlClient;
 using System.Globalization;
 
 namespace DP_Custom_CopyToDataTable_Examples
 {
-    class Program
+    static class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             //ItemsQueries();
 
-           // JoinQuery();
-           // LoadScalarSequence();
-           // LoadItemsIntoTable();
-           // LoadItemsIntoExistingTable();
+            // JoinQuery();
+            // LoadScalarSequence();
+            // LoadItemsIntoTable();
+            // LoadItemsIntoExistingTable();
             LoadItemsExpandSchema();
 
             Console.WriteLine("Hit enter...");
@@ -30,8 +28,10 @@ namespace DP_Custom_CopyToDataTable_Examples
         {
             //<SnippetJoin>
             // Fill the DataSet.
-            DataSet ds = new DataSet();
-            ds.Locale = CultureInfo.InvariantCulture;
+            var ds = new DataSet
+            {
+                Locale = CultureInfo.InvariantCulture
+            };
             FillDataSet(ds);
 
             DataTable orders = ds.Tables["SalesOrderHeader"];
@@ -42,8 +42,8 @@ namespace DP_Custom_CopyToDataTable_Examples
                 join detail in details.AsEnumerable()
                 on order.Field<int>("SalesOrderID") equals
                     detail.Field<int>("SalesOrderID")
-                where order.Field<bool>("OnlineOrderFlag") == true
-                && order.Field<DateTime>("OrderDate").Month == 8
+                where order.Field<bool>("OnlineOrderFlag")
+                    && order.Field<DateTime>("OrderDate").Month == 8
                 select new
                 {
                     SalesOrderID =
@@ -66,17 +66,17 @@ namespace DP_Custom_CopyToDataTable_Examples
         {
             //<SnippetLoadItemsIntoTable>
             // Create a sequence.
-            Item[] items = new Item[]
+            var items = new Item[]
             { new Book{Id = 1, Price = 13.50, Genre = "Comedy", Author = "Gustavo Achong"},
               new Book{Id = 2, Price = 8.50, Genre = "Drama", Author = "Jessie Zeng"},
               new Movie{Id = 1, Price = 22.99, Genre = "Comedy", Director = "Marissa Barnes"},
               new Movie{Id = 1, Price = 13.40, Genre = "Action", Director = "Emmanuel Fernandez"}};
 
             // Query for items with price greater than 9.99.
-            var query = from i in items
-                         where i.Price > 9.99
-                         orderby i.Price
-                         select i;
+            IOrderedEnumerable<Item> query = from i in items
+                        where i.Price > 9.99
+                        orderby i.Price
+                        select i;
 
             // Load the query results into new DataTable.
             DataTable table = query.CopyToDataTable();
@@ -88,21 +88,21 @@ namespace DP_Custom_CopyToDataTable_Examples
         {
             //<SnippetLoadItemsIntoExistingTable>
             // Create a sequence.
-            Item[] items = new Item[]
+            var items = new Item[]
             { new Book{Id = 1, Price = 13.50, Genre = "Comedy", Author = "Gustavo Achong"},
               new Book{Id = 2, Price = 8.50, Genre = "Drama", Author = "Jessie Zeng"},
               new Movie{Id = 1, Price = 22.99, Genre = "Comedy", Director = "Marissa Barnes"},
               new Movie{Id = 1, Price = 13.40, Genre = "Action", Director = "Emmanuel Fernandez"}};
 
             // Create a table with a schema that matches that of the query results.
-            DataTable table = new DataTable();
+            var table = new DataTable();
             table.Columns.Add("Price", typeof(int));
             table.Columns.Add("Genre", typeof(string));
 
             var query = from i in items
-                         where i.Price > 9.99
-                         orderby i.Price
-                         select new { i.Price, i.Genre };
+                        where i.Price > 9.99
+                        orderby i.Price
+                        select new { i.Price, i.Genre };
 
             query.CopyToDataTable(table, LoadOption.PreserveChanges);
             //</SnippetLoadItemsIntoExistingTable>
@@ -113,7 +113,7 @@ namespace DP_Custom_CopyToDataTable_Examples
         {
             //<SnippetLoadItemsExpandSchema>
             // Create a sequence.
-            Item[] items = new Item[]
+            var items = new Item[]
             { new Book{Id = 1, Price = 13.50, Genre = "Comedy", Author = "Gustavo Achong"},
               new Book{Id = 2, Price = 8.50, Genre = "Drama", Author = "Jessie Zeng"},
               new Movie{Id = 1, Price = 22.99, Genre = "Comedy", Director = "Marissa Barnes"},
@@ -121,15 +121,15 @@ namespace DP_Custom_CopyToDataTable_Examples
 
             // Load into an existing DataTable, expand the schema and
             // autogenerate a new Id.
-            DataTable table = new DataTable();
+            var table = new DataTable();
             DataColumn dc = table.Columns.Add("NewId", typeof(int));
             dc.AutoIncrement = true;
             table.Columns.Add("ExtraColumn", typeof(string));
 
             var query = from i in items
-                         where i.Price > 9.99
-                         orderby i.Price
-                         select new { i.Price, i.Genre };
+                        where i.Price > 9.99
+                        orderby i.Price
+                        select new { i.Price, i.Genre };
 
             query.CopyToDataTable(table, LoadOption.PreserveChanges);
             //</SnippetLoadItemsExpandSchema>
@@ -140,7 +140,7 @@ namespace DP_Custom_CopyToDataTable_Examples
         {
             //<SnippetLoadScalarSequence>
             // Create a sequence.
-            Item[] items = new Item[]
+            var items = new Item[]
             { new Book{Id = 1, Price = 13.50, Genre = "Comedy", Author = "Gustavo Achong"},
               new Book{Id = 2, Price = 8.50, Genre = "Drama", Author = "Jessie Zeng"},
               new Movie{Id = 1, Price = 22.99, Genre = "Comedy", Director = "Marissa Barnes"},
@@ -148,9 +148,9 @@ namespace DP_Custom_CopyToDataTable_Examples
 
             // load sequence of scalars.
             IEnumerable<double> query = from i in items
-                         where i.Price > 9.99
-                         orderby i.Price
-                         select i.Price;
+                                        where i.Price > 9.99
+                                        orderby i.Price
+                                        select i.Price;
 
             DataTable table = query.CopyToDataTable();
             //</SnippetLoadScalarSequence>
@@ -159,12 +159,11 @@ namespace DP_Custom_CopyToDataTable_Examples
 
         static void DisplayTable(DataTable table)
         {
-
-            for (int i = 0; i < table.Rows.Count; i++)
+            for (var i = 0; i < table.Rows.Count; i++)
             {
-                for (int j = 0; j < table.Columns.Count; j++)
+                for (var j = 0; j < table.Columns.Count; j++)
                 {
-                    Console.WriteLine(table.Columns[j].ColumnName + ": " + table.Rows[i][j].ToString());
+                    Console.WriteLine(table.Columns[j].ColumnName + ": " + table.Rows[i][j]);
                 }
                 Console.WriteLine("");
             }
@@ -178,10 +177,10 @@ namespace DP_Custom_CopyToDataTable_Examples
                 // Create a new adapter and give it a query to fetch sales order, contact,
                 // address, and product information for sales in the year 2002. Point connection
                 // information to the configuration setting "AdventureWorks".
-                string connectionString = "Data Source=localhost;Initial Catalog=AdventureWorks;"
+                const string connectionString = "Data Source=localhost;Initial Catalog=AdventureWorks;"
                     + "Integrated Security=true;";
 
-                SqlDataAdapter da = new SqlDataAdapter(
+                var da = new SqlDataAdapter(
                     "SELECT SalesOrderID, ContactID, OrderDate, OnlineOrderFlag, " +
                     "TotalDue, SalesOrderNumber, Status, ShipToAddressID, BillToAddressID " +
                     "FROM Sales.SalesOrderHeader " +
@@ -227,14 +226,14 @@ namespace DP_Custom_CopyToDataTable_Examples
                 // Add data relations.
                 DataTable orderHeader = ds.Tables["SalesOrderHeader"];
                 DataTable orderDetail = ds.Tables["SalesOrderDetail"];
-                DataRelation order = new DataRelation("SalesOrderHeaderDetail",
+                var order = new DataRelation("SalesOrderHeaderDetail",
                                          orderHeader.Columns["SalesOrderID"],
                                          orderDetail.Columns["SalesOrderID"], true);
                 ds.Relations.Add(order);
 
                 DataTable contact = ds.Tables["Contact"];
                 DataTable orderHeader2 = ds.Tables["SalesOrderHeader"];
-                DataRelation orderContact = new DataRelation("SalesOrderContact",
+                var orderContact = new DataRelation("SalesOrderContact",
                                                 contact.Columns["ContactID"],
                                                 orderHeader2.Columns["ContactID"], true);
                 ds.Relations.Add(orderContact);
@@ -284,10 +283,10 @@ namespace DP_Custom_CopyToDataTable_Examples
     // <SnippetObjectShredderClass>
     public class ObjectShredder<T>
     {
-        private System.Reflection.FieldInfo[] _fi;
-        private System.Reflection.PropertyInfo[] _pi;
-        private System.Collections.Generic.Dictionary<string, int> _ordinalMap;
-        private System.Type _type;
+        readonly FieldInfo[] _fi;
+        readonly PropertyInfo[] _pi;
+        readonly Dictionary<string, int> _ordinalMap;
+        readonly Type _type;
 
         // ObjectShredder constructor.
         public ObjectShredder()
@@ -324,18 +323,15 @@ namespace DP_Custom_CopyToDataTable_Examples
 
             // Enumerate the source sequence and load the object values into rows.
             table.BeginLoadData();
-            using (IEnumerator<T> e = source.GetEnumerator())
+            foreach (T item in source)
             {
-                while (e.MoveNext())
+                if (options != null)
                 {
-                    if (options != null)
-                    {
-                        table.LoadDataRow(ShredObject(table, e.Current), (LoadOption)options);
-                    }
-                    else
-                    {
-                        table.LoadDataRow(ShredObject(table, e.Current), true);
-                    }
+                    table.LoadDataRow(ShredObject(table, item), (LoadOption)options);
+                }
+                else
+                {
+                    table.LoadDataRow(ShredObject(table, item), true);
                 }
             }
             table.EndLoadData();
@@ -358,7 +354,7 @@ namespace DP_Custom_CopyToDataTable_Examples
             table.BeginLoadData();
             using (IEnumerator<T> e = source.GetEnumerator())
             {
-                Object[] values = new object[table.Columns.Count];
+                var values = new object[table.Columns.Count];
                 while (e.MoveNext())
                 {
                     values[table.Columns["Value"].Ordinal] = e.Current;
@@ -381,7 +377,6 @@ namespace DP_Custom_CopyToDataTable_Examples
 
         public object[] ShredObject(DataTable table, T instance)
         {
-
             FieldInfo[] fi = _fi;
             PropertyInfo[] pi = _pi;
 
@@ -395,7 +390,7 @@ namespace DP_Custom_CopyToDataTable_Examples
             }
 
             // Add the property and field values of the instance to an array.
-            Object[] values = new object[table.Columns.Count];
+            var values = new object[table.Columns.Count];
             foreach (FieldInfo f in fi)
             {
                 values[_ordinalMap[f.Name]] = f.GetValue(instance);

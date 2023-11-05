@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Data.Common;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -14,32 +11,34 @@ namespace DataViewSamples
 {
     public partial class Form1 : Form
     {
-        DataSet dataSet;
+        DataSet _dataSet;
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        void Form1_Load(object sender, EventArgs e)
         {
             // Fill the DataSet.
-            dataSet = new DataSet();
-            dataSet.Locale = CultureInfo.InvariantCulture;
-            FillDataSet(dataSet);
+            _dataSet = new DataSet
+            {
+                Locale = CultureInfo.InvariantCulture
+            };
+            FillDataSet(_dataSet);
 
             dataGridView1.DataSource = bindingSource1;
         }
 
-        private void FillDataSet(DataSet ds)
+        static void FillDataSet(DataSet ds)
         {
             // Create a new adapter and give it a query to fetch sales order, contact,
             // address, and product information for sales in the year 2002. Point connection
             // information to the configuration setting "AdventureWorks".
-            string connectionString = "Data Source=localhost;Initial Catalog=AdventureWorks;"
+            const string connectionString = "Data Source=localhost;Initial Catalog=AdventureWorks;"
                 + "Integrated Security=true;";
 
-            SqlDataAdapter da = new SqlDataAdapter(
+            var da = new SqlDataAdapter(
                 "SELECT SalesOrderID, ContactID, OrderDate, OnlineOrderFlag, " +
                 "TotalDue, SalesOrderNumber, Status, ShipToAddressID, BillToAddressID " +
                 "FROM Sales.SalesOrderHeader " +
@@ -85,53 +84,55 @@ namespace DataViewSamples
             // Add data relations.
             DataTable orderHeader = ds.Tables["SalesOrderHeader"];
             DataTable orderDetail = ds.Tables["SalesOrderDetail"];
-            DataRelation order = new DataRelation("SalesOrderHeaderDetail",
+            var order = new DataRelation("SalesOrderHeaderDetail",
                                      orderHeader.Columns["SalesOrderID"],
                                      orderDetail.Columns["SalesOrderID"], true);
             ds.Relations.Add(order);
 
             DataTable contact = ds.Tables["Contact"];
             DataTable orderHeader2 = ds.Tables["SalesOrderHeader"];
-            DataRelation orderContact = new DataRelation("SalesOrderContact",
+            var orderContact = new DataRelation("SalesOrderContact",
                                             contact.Columns["ContactID"],
                                             orderHeader2.Columns["ContactID"], true);
             ds.Relations.Add(orderContact);
         }
 
         // <SnippetSoundEx>
-        static private string SoundEx(string word)
+        static string SoundEx(string word)
         {
             // The length of the returned code.
-            int length = 4;
+            const int length = 4;
 
             // Value to return.
-            string value = "";
+            var value = "";
 
             // The size of the word to process.
-            int size = word.Length;
+            var size = word.Length;
 
             // The word must be at least two characters in length.
             if (size > 1)
             {
                 // Convert the word to uppercase characters.
-                word = word.ToUpper(System.Globalization.CultureInfo.InvariantCulture);
+                word = word.ToUpper(CultureInfo.InvariantCulture);
 
                 // Convert the word to a character array.
-                char[] chars = word.ToCharArray();
+                var chars = word.ToCharArray();
 
                 // Buffer to hold the character codes.
-                StringBuilder buffer = new StringBuilder();
-                buffer.Length = 0;
+                var buffer = new StringBuilder
+                {
+                    Length = 0
+                };
 
                 // The current and previous character codes.
-                int prevCode = 0;
-                int currCode = 0;
+                var prevCode = 0;
+                var currCode = 0;
 
                 // Add the first character to the buffer.
                 buffer.Append(chars[0]);
 
                 // Loop through all the characters and convert them to the proper character code.
-                for (int i = 1; i < size; i++)
+                for (var i = 1; i < size; i++)
                 {
                     switch (chars[i])
                     {
@@ -194,7 +195,7 @@ namespace DataViewSamples
                 // Pad the buffer, if required.
                 size = buffer.Length;
                 if (size < length)
-                    buffer.Append('0', (length - size));
+                    buffer.Append('0', length - size);
 
                 // Set the value to return.
                 value = buffer.ToString();
@@ -204,14 +205,14 @@ namespace DataViewSamples
         }
         // </SnippetSoundEx>
 
-        private void button1_Click(object sender, EventArgs e)
+        void button1_Click(object sender, EventArgs e)
         {
             // <SnippetCreateLDVFromQuery1>
-            DataTable orders = dataSet.Tables["SalesOrderHeader"];
+            DataTable orders = _dataSet.Tables["SalesOrderHeader"];
 
             EnumerableRowCollection<DataRow> query =
                 from order in orders.AsEnumerable()
-                where order.Field<bool>("OnlineOrderFlag") == true
+                where order.Field<bool>("OnlineOrderFlag")
                 orderby order.Field<decimal>("TotalDue")
                 select order;
 
@@ -221,15 +222,15 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromQuery1>
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        void button2_Click(object sender, EventArgs e)
         {
             // <SnippetCreateLDVFromQuery2>
-            DataTable orders = dataSet.Tables["SalesOrderDetail"];
+            DataTable orders = _dataSet.Tables["SalesOrderDetail"];
 
             EnumerableRowCollection<DataRow> query =
                 from order in orders.AsEnumerable()
-                where (order.Field<Int16>("OrderQty") > 2 &&
-                    order.Field<Int16>("OrderQty") < 6)
+                where order.Field<short>("OrderQty") > 2 &&
+                    order.Field<short>("OrderQty") < 6
                 select order;
 
             DataView view = query.AsDataView();
@@ -240,10 +241,10 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromQuery2>
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        void button3_Click(object sender, EventArgs e)
         {
             // <SnippetCreateLDVFromQuery3>
-            DataTable contacts = dataSet.Tables["Contact"];
+            DataTable contacts = _dataSet.Tables["Contact"];
 
             EnumerableRowCollection<DataRow> query = from contact in contacts.AsEnumerable()
                                                      where contact.Field<string>("LastName").StartsWith("S")
@@ -255,10 +256,10 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromQuery3>
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        void button4_Click(object sender, EventArgs e)
         {
             // <SnippetCreateLDVFromQuery4>
-            DataTable orders = dataSet.Tables["SalesOrderHeader"];
+            DataTable orders = _dataSet.Tables["SalesOrderHeader"];
 
             EnumerableRowCollection<DataRow> query = from order in orders.AsEnumerable()
                                                      where order.Field<DateTime>("OrderDate") > new DateTime(2002, 9, 15)
@@ -270,11 +271,10 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromQuery4>
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        void button5_Click(object sender, EventArgs e)
         {
-
             // <SnippetCreateLDVFromTable>
-            DataTable orders = dataSet.Tables["SalesOrderDetail"];
+            DataTable orders = _dataSet.Tables["SalesOrderDetail"];
 
             DataView view = orders.AsDataView();
             bindingSource1.DataSource = view;
@@ -283,10 +283,10 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromTable>
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        void button6_Click(object sender, EventArgs e)
         {
             // <SnippetCreateLDVFromQueryOrderBy>
-            DataTable orders = dataSet.Tables["SalesOrderHeader"];
+            DataTable orders = _dataSet.Tables["SalesOrderHeader"];
 
             EnumerableRowCollection<DataRow> query = from order in orders.AsEnumerable()
                                                      orderby order.Field<DateTime>("OrderDate")
@@ -298,10 +298,10 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromQueryOrderBy>
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        void button7_Click(object sender, EventArgs e)
         {
             // <SnippetCreateLDVFromQueryStringSort>
-            DataTable contacts = dataSet.Tables["Contact"];
+            DataTable contacts = _dataSet.Tables["Contact"];
 
             EnumerableRowCollection<DataRow> query = from contact in contacts.AsEnumerable()
                                                      where contact.Field<string>("LastName").StartsWith("S")
@@ -315,13 +315,13 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromQueryStringSort>
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        void button8_Click(object sender, EventArgs e)
         {
             // <SnippetCreateLDVFromQueryOrderByThenBy>
-            DataTable orders = dataSet.Tables["SalesOrderDetail"];
+            DataTable orders = _dataSet.Tables["SalesOrderDetail"];
 
             EnumerableRowCollection<DataRow> query = from order in orders.AsEnumerable()
-                                                     orderby order.Field<Int16>("OrderQty"), order.Field<int>("SalesOrderID")
+                                                     orderby order.Field<short>("OrderQty"), order.Field<int>("SalesOrderID")
                                                      select order;
 
             DataView view = query.AsDataView();
@@ -331,10 +331,10 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromQueryOrderByThenBy>
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        void button9_Click(object sender, EventArgs e)
         {
             // <SnippetCreateLDVFromQueryOrderBy2>
-            DataTable orders = dataSet.Tables["SalesOrderHeader"];
+            DataTable orders = _dataSet.Tables["SalesOrderHeader"];
 
             EnumerableRowCollection<DataRow> query =
                 from order in orders.AsEnumerable()
@@ -348,10 +348,10 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromQueryOrderBy2>
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        void button10_Click(object sender, EventArgs e)
         {
             // <SnippetCreateLDVFromQueryOrderByDescending>
-            DataTable orders = dataSet.Tables["SalesOrderHeader"];
+            DataTable orders = _dataSet.Tables["SalesOrderHeader"];
 
             EnumerableRowCollection<DataRow> query = from order in orders.AsEnumerable()
                                                      orderby order.Field<DateTime>("OrderDate") descending
@@ -363,10 +363,10 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromQueryOrderByDescending>
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        void button11_Click(object sender, EventArgs e)
         {
             // <SnippetLDVStringSort>
-            DataTable contacts = dataSet.Tables["Contact"];
+            DataTable contacts = _dataSet.Tables["Contact"];
 
             DataView view = contacts.AsDataView();
 
@@ -377,10 +377,10 @@ namespace DataViewSamples
             // </SnippetLDVStringSort>
         }
 
-        private void button12_Click(object sender, EventArgs e)
+        void button12_Click(object sender, EventArgs e)
         {
             // <SnippetLDVClearSort>
-            DataTable orders = dataSet.Tables["SalesOrderHeader"];
+            DataTable orders = _dataSet.Tables["SalesOrderHeader"];
 
             EnumerableRowCollection<DataRow> query = from order in orders.AsEnumerable()
                                                      orderby order.Field<decimal>("TotalDue")
@@ -394,10 +394,10 @@ namespace DataViewSamples
             // </SnippetLDVClearSort>
         }
 
-        private void button13_Click(object sender, EventArgs e)
+        void button13_Click(object sender, EventArgs e)
         {
             // <SnippetLDVClearRowFilter>
-            DataTable contacts = dataSet.Tables["Contact"];
+            DataTable contacts = _dataSet.Tables["Contact"];
 
             DataView view = contacts.AsDataView();
 
@@ -411,10 +411,10 @@ namespace DataViewSamples
             // </SnippetLDVClearRowFilter>
         }
 
-        private void button14_Click(object sender, EventArgs e)
+        void button14_Click(object sender, EventArgs e)
         {
             // <SnippetLDVRowFilter>
-            DataTable contacts = dataSet.Tables["Contact"];
+            DataTable contacts = _dataSet.Tables["Contact"];
 
             DataView view = contacts.AsDataView();
 
@@ -425,12 +425,12 @@ namespace DataViewSamples
             // </SnippetLDVRowFilter>
         }
 
-        private void button15_Click(object sender, EventArgs e)
+        void button15_Click(object sender, EventArgs e)
         {
             // <SnippetLDVSoundExFilter>
-            DataTable contacts = dataSet.Tables["Contact"];
+            DataTable contacts = _dataSet.Tables["Contact"];
 
-            string soundExCode = SoundEx("Zhu");
+            var soundExCode = SoundEx("Zhu");
 
             EnumerableRowCollection<DataRow> query = from contact in contacts.AsEnumerable()
                                                      where SoundEx(contact.Field<string>("LastName")) == soundExCode
@@ -443,13 +443,13 @@ namespace DataViewSamples
             // </SnippetLDVSoundExFilter>
         }
 
-        private void button16_Click(object sender, EventArgs e)
+        void button16_Click(object sender, EventArgs e)
         {
             // <SnippetLDVFromQueryWhere>
-            DataTable orders = dataSet.Tables["SalesOrderDetail"];
+            DataTable orders = _dataSet.Tables["SalesOrderDetail"];
 
             EnumerableRowCollection<DataRow> query = from order in orders.AsEnumerable()
-                                                     where order.Field<Int16>("OrderQty") > 2 && order.Field<Int16>("OrderQty") < 6
+                                                     where order.Field<short>("OrderQty") > 2 && order.Field<short>("OrderQty") < 6
                                                      select order;
 
             DataView view = query.AsDataView();
@@ -458,10 +458,10 @@ namespace DataViewSamples
             // </SnippetLDVFromQueryWhere>
         }
 
-        private void button17_Click(object sender, EventArgs e)
+        void button17_Click(object sender, EventArgs e)
         {
             // <SnippetLDVFromQueryWhere2>
-            DataTable contacts = dataSet.Tables["Contact"];
+            DataTable contacts = _dataSet.Tables["Contact"];
 
             EnumerableRowCollection<DataRow> query = from contact in contacts.AsEnumerable()
                                                      where contact.Field<string>("LastName") == "Hernandez"
@@ -472,13 +472,13 @@ namespace DataViewSamples
             bindingSource1.DataSource = view;
             dataGridView1.AutoResizeColumns();
 
-           // </SnippetLDVFromQueryWhere2>
+            // </SnippetLDVFromQueryWhere2>
         }
 
-        private void button18_Click(object sender, EventArgs e)
+        void button18_Click(object sender, EventArgs e)
         {
             // <SnippetLDVFromQueryWhere3>
-            DataTable orders = dataSet.Tables["SalesOrderHeader"];
+            DataTable orders = _dataSet.Tables["SalesOrderHeader"];
 
             EnumerableRowCollection<DataRow> query = from order in orders.AsEnumerable()
                                                      where order.Field<DateTime>("OrderDate") > new DateTime(2002, 6, 1)
@@ -490,10 +490,10 @@ namespace DataViewSamples
             // </SnippetLDVFromQueryWhere3>
         }
 
-        private void button19_Click(object sender, EventArgs e)
+        void button19_Click(object sender, EventArgs e)
         {
             // <SnippetLDVFromQueryWhereOrderByThenBy>
-            DataTable contacts = dataSet.Tables["Contact"];
+            DataTable contacts = _dataSet.Tables["Contact"];
 
             EnumerableRowCollection<DataRow> query = from contact in contacts.AsEnumerable()
                                                      where contact.Field<string>("LastName").StartsWith("S")
@@ -508,10 +508,10 @@ namespace DataViewSamples
             // </SnippetLDVFromQueryWhereOrderByThenBy>
         }
 
-        private void button20_Click(object sender, EventArgs e)
+        void button20_Click(object sender, EventArgs e)
         {
             // <SnippetLDVFromQueryWhereOrderByThenBy2>
-            DataTable orders = dataSet.Tables["SalesOrderHeader"];
+            DataTable orders = _dataSet.Tables["SalesOrderHeader"];
 
             EnumerableRowCollection<DataRow> query = from order in orders.AsEnumerable()
                                                      where order.Field<DateTime>("OrderDate") > new DateTime(2002, 9, 15)
@@ -524,10 +524,10 @@ namespace DataViewSamples
             // </SnippetLDVFromQueryWhereOrderByThenBy2>
         }
 
-        private void button21_Click(object sender, EventArgs e)
+        void button21_Click(object sender, EventArgs e)
         {
             // <SnippetLDVFromQueryOrderByFind>
-            DataTable contacts = dataSet.Tables["Contact"];
+            DataTable contacts = _dataSet.Tables["Contact"];
 
             EnumerableRowCollection<DataRow> query = from contact in contacts.AsEnumerable()
                                                      orderby contact.Field<string>("LastName")
@@ -536,33 +536,33 @@ namespace DataViewSamples
             DataView view = query.AsDataView();
 
             // Find a contact with the last name of Zhu.
-            int found = view.Find("Zhu");
+            var found = view.Find("Zhu");
             // </SnippetLDVFromQueryOrderByFind>
         }
 
-        private void button22_Click(object sender, EventArgs e)
+        void button22_Click(object sender, EventArgs e)
         {
             // <SnippetLDVFromQueryFindRows>
-            DataTable products = dataSet.Tables["Product"];
+            DataTable products = _dataSet.Tables["Product"];
 
             EnumerableRowCollection<DataRow> query = from product in products.AsEnumerable()
-                                                     orderby product.Field<Decimal>("ListPrice"), product.Field<string>("Color")
+                                                     orderby product.Field<decimal>("ListPrice"), product.Field<string>("Color")
                                                      select product;
 
             DataView view = query.AsDataView();
 
             view.Sort = "Color";
 
-            object[] criteria = new object[] { "Red"};
+            var criteria = new object[] { "Red" };
 
             DataRowView[] foundRowsView = view.FindRows(criteria);
             // </SnippetLDVFromQueryFindRows>
         }
 
-        private void button23_Click(object sender, EventArgs e)
+        void button23_Click(object sender, EventArgs e)
         {
             // <SnippetLDVFromQueryWhereSetRowFilter>
-            DataTable contacts = dataSet.Tables["Contact"];
+            DataTable contacts = _dataSet.Tables["Contact"];
 
             EnumerableRowCollection<DataRow> query = from contact in contacts.AsEnumerable()
                                                      where contact.Field<string>("LastName") == "Hernandez"
@@ -577,14 +577,14 @@ namespace DataViewSamples
             // </SnippetLDVFromQueryWhereSetRowFilter>
         }
 
-        private void button24_Click(object sender, EventArgs e)
+        void button24_Click(object sender, EventArgs e)
         {
             // <SnippetLDVClearRowFilter2>
-            DataTable orders = dataSet.Tables["SalesOrderHeader"];
+            DataTable orders = _dataSet.Tables["SalesOrderHeader"];
 
             EnumerableRowCollection<DataRow> query = from order in orders.AsEnumerable()
                                                      where order.Field<DateTime>("OrderDate") > new DateTime(2002, 11, 20)
-                                                        && order.Field<Decimal>("TotalDue") < new Decimal(60.00)
+                                                        && order.Field<decimal>("TotalDue") < new decimal(60.00)
                                                      select order;
 
             DataView view = query.AsDataView();
@@ -595,10 +595,10 @@ namespace DataViewSamples
             // </SnippetLDVClearRowFilter2>
         }
 
-        private void button26_Click(object sender, EventArgs e)
+        void button26_Click(object sender, EventArgs e)
         {
             // <SnippetLDVClearSort2>
-            DataTable contacts = dataSet.Tables["Contact"];
+            DataTable contacts = _dataSet.Tables["Contact"];
 
             DataView view = contacts.AsDataView();
 
@@ -612,10 +612,10 @@ namespace DataViewSamples
             // </SnippetLDVClearSort2>
         }
 
-        private void button25_Click(object sender, EventArgs e)
+        void button25_Click(object sender, EventArgs e)
         {
             // <SnippetCreateLDVFromQueryOrderByYear>
-            DataTable orders = dataSet.Tables["SalesOrderHeader"];
+            DataTable orders = _dataSet.Tables["SalesOrderHeader"];
 
             EnumerableRowCollection<DataRow> query = from order in orders.AsEnumerable()
                                                      orderby order.Field<DateTime>("OrderDate").Year
@@ -628,10 +628,9 @@ namespace DataViewSamples
             // </SnippetCreateLDVFromQueryOrderByYear>
         }
 
-        private void button27_Click(object sender, EventArgs e)
+        void button27_Click(object sender, EventArgs e)
         {
-
-            DataTable products = dataSet.Tables["Product"];
+            DataTable products = _dataSet.Tables["Product"];
 
             // Query for red colored products.
             EnumerableRowCollection<DataRow> redProductsQuery =
@@ -645,29 +644,32 @@ namespace DataViewSamples
             // <SnippetQueryDataView1>
             // Create a table from the bound view representing a query of
             // available products.
-            DataView view = (DataView)bindingSource1.DataSource;
-            DataTable productsTable = (DataTable)view.Table;
+            var view = (DataView)bindingSource1.DataSource;
+            var productsTable = (DataTable)view.Table;
 
             // Set RowStateFilter to display the current rows.
-            view.RowStateFilter = DataViewRowState.CurrentRows ;
+            view.RowStateFilter = DataViewRowState.CurrentRows;
 
             // Query the DataView for red colored products ordered by list price.
             var productQuery = from DataRowView rowView in view
                                where rowView.Row.Field<string>("Color") == "Red"
                                orderby rowView.Row.Field<decimal>("ListPrice")
-                               select new { Name = rowView.Row.Field<string>("Name"),
-                                            Color = rowView.Row.Field<string>("Color"),
-                                            Price = rowView.Row.Field<decimal>("ListPrice")};
+                               select new
+                               {
+                                   Name = rowView.Row.Field<string>("Name"),
+                                   Color = rowView.Row.Field<string>("Color"),
+                                   Price = rowView.Row.Field<decimal>("ListPrice")
+                               };
 
             // Bind the query results to another DataGridView.
             dataGridView2.DataSource = productQuery.ToList();
             // </SnippetQueryDataView1>
         }
 
-        private void button28_Click(object sender, EventArgs e)
+        void button28_Click(object sender, EventArgs e)
         {
             // <SnippetQueryDataView2>
-            DataTable products = dataSet.Tables["Product"];
+            DataTable products = _dataSet.Tables["Product"];
 
             // Query for red colored products.
             EnumerableRowCollection<DataRow> redProductsQuery =
@@ -677,8 +679,8 @@ namespace DataViewSamples
                 select product;
 
             // Create a table and view from the query.
-            DataTable redProducts = redProductsQuery.CopyToDataTable<DataRow>();
-            DataView view = new DataView(redProducts);
+            DataTable redProducts = redProductsQuery.CopyToDataTable();
+            var view = new DataView(redProducts);
 
             // Mark a row as deleted.
             redProducts.Rows[0].Delete();

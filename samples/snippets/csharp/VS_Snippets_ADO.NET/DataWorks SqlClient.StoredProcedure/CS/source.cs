@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
-class Program
+
+static class Program
 {
     static void Main()
     {
@@ -14,20 +15,24 @@ class Program
     static void GetSalesByCategory(string connectionString,
         string categoryName)
     {
-        using (SqlConnection connection = new SqlConnection(connectionString))
+        using (SqlConnection connection = new(connectionString))
         {
             // Create the command and set its properties.
-            SqlCommand command = new SqlCommand();
-            command.Connection = connection;
-            command.CommandText = "SalesByCategory";
-            command.CommandType = CommandType.StoredProcedure;
+            SqlCommand command = new()
+            {
+                Connection = connection,
+                CommandText = "SalesByCategory",
+                CommandType = CommandType.StoredProcedure
+            };
 
             // Add the input parameter and set its properties.
-            SqlParameter parameter = new SqlParameter();
-            parameter.ParameterName = "@CategoryName";
-            parameter.SqlDbType = SqlDbType.NVarChar;
-            parameter.Direction = ParameterDirection.Input;
-            parameter.Value = categoryName;
+            SqlParameter parameter = new()
+            {
+                ParameterName = "@CategoryName",
+                SqlDbType = SqlDbType.NVarChar,
+                Direction = ParameterDirection.Input,
+                Value = categoryName
+            };
 
             // Add the parameter to the Parameters collection.
             command.Parameters.Add(parameter);

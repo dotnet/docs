@@ -5,7 +5,7 @@
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -486,44 +486,44 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource bindingSource1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Button button28;
+        System.Windows.Forms.DataGridView dataGridView1;
+        System.Windows.Forms.BindingSource bindingSource1;
+        System.Windows.Forms.Button button1;
+        System.Windows.Forms.Button button2;
+        System.Windows.Forms.Button button3;
+        System.Windows.Forms.Label label1;
+        System.Windows.Forms.Button button4;
+        System.Windows.Forms.Button button5;
+        System.Windows.Forms.Label label2;
+        System.Windows.Forms.Button button6;
+        System.Windows.Forms.Label label3;
+        System.Windows.Forms.Label label4;
+        System.Windows.Forms.Button button7;
+        System.Windows.Forms.Button button8;
+        System.Windows.Forms.Button button9;
+        System.Windows.Forms.Button button10;
+        System.Windows.Forms.Button button11;
+        System.Windows.Forms.Button button12;
+        System.Windows.Forms.Button button13;
+        System.Windows.Forms.Button button14;
+        System.Windows.Forms.Button button15;
+        System.Windows.Forms.Button button16;
+        System.Windows.Forms.Label label5;
+        System.Windows.Forms.Button button17;
+        System.Windows.Forms.Button button18;
+        System.Windows.Forms.Button button19;
+        System.Windows.Forms.Button button20;
+        System.Windows.Forms.Button button21;
+        System.Windows.Forms.Label label6;
+        System.Windows.Forms.Button button22;
+        System.Windows.Forms.Button button23;
+        System.Windows.Forms.Button button24;
+        System.Windows.Forms.Button button26;
+        System.Windows.Forms.Button button25;
+        System.Windows.Forms.DataGridView dataGridView2;
+        System.Windows.Forms.Label label7;
+        System.Windows.Forms.Button button27;
+        System.Windows.Forms.Button button28;
     }
 }
 

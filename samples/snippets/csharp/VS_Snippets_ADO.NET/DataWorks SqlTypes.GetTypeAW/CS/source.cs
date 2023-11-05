@@ -3,20 +3,20 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
 
-class Program
+static class Program
 {
     static void Main()
     {
-        string connectionString = GetConnectionString();
+        var connectionString = GetConnectionString();
         GetSqlTypesAW(connectionString);
         Console.ReadLine();
     }
     // <Snippet1>
-    static private void GetSqlTypesAW(string connectionString)
+    static void GetSqlTypesAW(string connectionString)
     {
         // Create a DataTable and specify a SqlType
         // for each column.
-        DataTable table = new DataTable();
+        DataTable table = new();
         DataColumn icolumnolumn =
             table.Columns.Add("SalesOrderID", typeof(SqlInt32));
         DataColumn priceColumn =
@@ -29,19 +29,21 @@ class Program
         // Open a connection to SQL Server and fill the DataTable
         // with data from the Sales.SalesOrderDetail table
         // in the AdventureWorks sample database.
-        using (SqlConnection connection = new SqlConnection(connectionString))
+        using (SqlConnection connection = new(connectionString))
         {
-            string queryString =
+            const string queryString =
                 "SELECT TOP 5 SalesOrderID, UnitPrice, LineTotal, ModifiedDate "
                 + "FROM Sales.SalesOrderDetail WHERE LineTotal < @LineTotal";
 
             // Create the SqlCommand.
-            SqlCommand command = new SqlCommand(queryString, connection);
+            SqlCommand command = new(queryString, connection);
 
             // Create the SqlParameter and assign a value.
             SqlParameter parameter =
-                new SqlParameter("@LineTotal", SqlDbType.Decimal);
-            parameter.Value = 1.5;
+                new("@LineTotal", SqlDbType.Decimal)
+                {
+                    Value = 1.5
+                };
             command.Parameters.Add(parameter);
 
             // Open the connection and load the data.
@@ -75,7 +77,7 @@ class Program
     }
     // </Snippet1>
 
-    static private string GetConnectionString()
+    static string GetConnectionString()
     {
         // To avoid storing the connection string in your code,
         // you can retrieve it from a configuration file, using the

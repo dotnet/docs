@@ -6,28 +6,29 @@ class Program
 {
     static void Main()
     {
-        string connectionString = GetConnectionString();
+        var connectionString = GetConnectionString();
         MergeIdentityColumns(connectionString);
         Console.ReadLine();
     }
     // <Snippet1>
-    private static void MergeIdentityColumns(string connectionString)
+    static void MergeIdentityColumns(string connectionString)
     {
         using (SqlConnection connection =
-                   new SqlConnection(connectionString))
+                   new(connectionString))
         {
             // Create the DataAdapter
             SqlDataAdapter adapter =
-                new SqlDataAdapter(
+                new(
                 "SELECT ShipperID, CompanyName FROM dbo.Shippers",
-                connection);
-
-            //Add the InsertCommand to retrieve new identity value.
-            adapter.InsertCommand = new SqlCommand(
+                connection)
+                {
+                    //Add the InsertCommand to retrieve new identity value.
+                    InsertCommand = new SqlCommand(
                 "INSERT INTO dbo.Shippers (CompanyName) " +
                 "VALUES (@CompanyName); " +
                 "SELECT ShipperID, CompanyName FROM dbo.Shippers " +
-                "WHERE ShipperID = SCOPE_IDENTITY();", connection);
+                "WHERE ShipperID = SCOPE_IDENTITY();", connection)
+                };
 
             // Add the parameter for the inserted value.
             adapter.InsertCommand.Parameters.Add(
@@ -40,7 +41,7 @@ class Program
             adapter.MissingSchemaAction = MissingSchemaAction.AddWithKey;
 
             // Fill the DataTable.
-            DataTable shipper = new DataTable();
+            DataTable shipper = new();
             adapter.Fill(shipper);
 
             // Add a new shipper.
@@ -50,11 +51,11 @@ class Program
 
             // Add changed rows to a new DataTable. This
             // DataTable will be used by the DataAdapter.
-            DataTable dataChanges = shipper.GetChanges();
+            DataTable dataChanges = shipper.GetChanges()!;
 
             // Add the event handler.
             adapter.RowUpdated +=
-                new SqlRowUpdatedEventHandler(OnRowUpdated);
+                 OnRowUpdated;
 
             adapter.Update(dataChanges);
             connection.Close();
@@ -88,7 +89,7 @@ class Program
     }
     // </Snippet2>
 
-    static private string GetConnectionString()
+    static string GetConnectionString()
     {
         // To avoid storing the connection string in your code,
         // you can retrieve it from a configuration file.

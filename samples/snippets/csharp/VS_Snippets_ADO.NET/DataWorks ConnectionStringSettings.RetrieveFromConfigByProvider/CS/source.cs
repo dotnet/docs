@@ -1,18 +1,15 @@
-
-using System;
-using System.Data;
-using System.Data.SqlClient;
-using System.Data.OleDb;
+﻿using System;
 using System.Configuration;
 
-class Program
+internal static class Program
 {
     static void Main()
     {
-        string? s = GetConnectionStringByProvider("System.Data.SqlClient");
+        var s = GetConnectionStringByProvider("System.Data.SqlClient");
         Console.WriteLine(s);
         Console.ReadLine();
     }
+
     // <Snippet1>
     // Retrieve a connection string by specifying the providerName.
     // Assumes one connection string per provider in the config file.
@@ -29,7 +26,9 @@ class Program
             foreach (ConnectionStringSettings cs in settings)
             {
                 if (cs.ProviderName == providerName)
+                {
                     return cs.ConnectionString;
+                }
             }
         }
         return null;

@@ -6,31 +6,31 @@ class Program
 {
     static void Main()
     {
-        string connectionString = GetConnectionString();
+        var connectionString = GetConnectionString();
         ConnectToData(connectionString);
         Console.ReadLine();
     }
-    private static void ConnectToData(string connectionString)
+    static void ConnectToData(string connectionString)
     {
         using (SqlConnection connection =
-                   new SqlConnection(connectionString))
+                   new(connectionString))
         {
             SqlDataAdapter adapter =
-                new SqlDataAdapter(
+                new(
                 "SELECT CustomerID, CompanyName FROM dbo.Customers",
                 connection);
-            DataSet dataSet = new DataSet();
+            DataSet dataSet = new();
 
             // <Snippet1>
-            DataTable customers = dataSet.Tables["Customers"];
+            DataTable customers = dataSet.Tables["Customers"]!;
 
             // Make modifications to the Customers table.
 
             // Get changes to the DataSet.
-            DataSet dataSetChanges = dataSet.GetChanges();
+            DataSet dataSetChanges = dataSet.GetChanges() ?? new();
 
             // Add an event handler to handle the errors during Update.
-            adapter.RowUpdated += new SqlRowUpdatedEventHandler(OnRowUpdated);
+            adapter.RowUpdated += OnRowUpdated;
 
             connection.Open();
             adapter.Update(dataSetChanges, "Customers");
@@ -40,7 +40,7 @@ class Program
             dataSet.Merge(dataSetChanges, true, MissingSchemaAction.Add);
 
             // Reject changes on rows with errors and clear the error.
-            DataRow[] errRows = dataSet.Tables["Customers"].GetErrors();
+            DataRow[] errRows = dataSet.Tables["Customers"]!.GetErrors();
             foreach (DataRow errRow in errRows)
             {
                 errRow.RejectChanges();
@@ -60,13 +60,13 @@ class Program
     {
         if (args.Status == UpdateStatus.ErrorsOccurred)
         {
-            args.Row.RowError = args.Errors.Message;
+            args.Row.RowError = args.Errors!.Message;
             args.Status = UpdateStatus.SkipCurrentRow;
         }
     }
-   // </Snippet2>
+    // </Snippet2>
 
-    static private string GetConnectionString()
+    static string GetConnectionString()
     {
         // To avoid storing the connection string in your code,
         // you can retrieve it from a configuration file.

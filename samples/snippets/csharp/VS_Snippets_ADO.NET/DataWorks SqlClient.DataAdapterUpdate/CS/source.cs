@@ -2,27 +2,28 @@
 using System.Data;
 using System.Data.SqlClient;
 
-class Program
+static class Program
 {
     static void Main()
     {
-        string connectionString = GetConnectionString();
+        var connectionString = GetConnectionString();
         AdapterUpdate(connectionString);
         Console.ReadLine();
     }
     // <Snippet1>
-    private static void AdapterUpdate(string connectionString)
+    static void AdapterUpdate(string connectionString)
     {
         using (SqlConnection connection =
-                   new SqlConnection(connectionString))
+                   new(connectionString))
         {
-            SqlDataAdapter dataAdapter = new SqlDataAdapter(
+            SqlDataAdapter dataAdapter = new(
               "SELECT CategoryID, CategoryName FROM Categories",
-              connection);
-
-            dataAdapter.UpdateCommand = new SqlCommand(
+              connection)
+            {
+                UpdateCommand = new SqlCommand(
                "UPDATE Categories SET CategoryName = @CategoryName " +
-               "WHERE CategoryID = @CategoryID", connection);
+               "WHERE CategoryID = @CategoryID", connection)
+            };
 
             dataAdapter.UpdateCommand.Parameters.Add(
                "@CategoryName", SqlDbType.NVarChar, 15, "CategoryName");
@@ -32,7 +33,7 @@ class Program
             parameter.SourceColumn = "CategoryID";
             parameter.SourceVersion = DataRowVersion.Original;
 
-            DataTable categoryTable = new DataTable();
+            DataTable categoryTable = new();
             dataAdapter.Fill(categoryTable);
 
             DataRow categoryRow = categoryTable.Rows[0];
@@ -51,7 +52,7 @@ class Program
     }
     // </Snippet1>
 
-    static private string GetConnectionString()
+    static string GetConnectionString()
     {
         // To avoid storing the connection string in your code,
         // you can retrieve it from a configuration file.

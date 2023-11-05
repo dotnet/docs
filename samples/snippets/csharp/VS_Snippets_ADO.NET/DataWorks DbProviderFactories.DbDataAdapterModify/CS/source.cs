@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Data;
-using System.Data.SqlClient;
-using System.Data.OleDb;
-using System.Configuration;
 using System.Data.Common;
 
-class Program
+static class Program
 {
     static void Main()
     {
@@ -30,7 +27,7 @@ class Program
             using (connection)
             {
                 // Define the query.
-                string queryString =
+                const string queryString =
                     "SELECT CustomerID, CompanyName FROM Customers";
 
                 // Create the select command.
@@ -60,7 +57,7 @@ class Program
                     adapter.DeleteCommand.CommandText);
 
                 // Fill the DataTable.
-                DataTable table = new DataTable();
+                DataTable table = new();
                 adapter.Fill(table);
 
                 // Insert a new row.

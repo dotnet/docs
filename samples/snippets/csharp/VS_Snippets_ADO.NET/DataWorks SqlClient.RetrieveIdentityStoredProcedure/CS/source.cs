@@ -2,30 +2,33 @@
 using System.Data;
 using System.Data.SqlClient;
 
-class Program
+static class Program
 {
     static void Main()
     {
-        string connectionString = GetConnectionString();
+        var connectionString = GetConnectionString();
         RetrieveIdentity(connectionString);
         Console.ReadLine();
     }
     // <Snippet1>
-    private static void RetrieveIdentity(string connectionString)
+    static void RetrieveIdentity(string connectionString)
     {
         using (SqlConnection connection =
-                   new SqlConnection(connectionString))
+                   new(connectionString))
         {
             // Create a SqlDataAdapter based on a SELECT query.
             SqlDataAdapter adapter =
-                new SqlDataAdapter(
+                new(
                 "SELECT CategoryID, CategoryName FROM dbo.Categories",
-                connection);
-
-            //Create the SqlCommand to execute the stored procedure.
-            adapter.InsertCommand = new SqlCommand("dbo.InsertCategory",
-                connection);
-            adapter.InsertCommand.CommandType = CommandType.StoredProcedure;
+                connection)
+                {
+                    //Create the SqlCommand to execute the stored procedure.
+                    InsertCommand = new SqlCommand("dbo.InsertCategory",
+                connection)
+                    {
+                        CommandType = CommandType.StoredProcedure
+                    }
+                };
 
             // Add the parameter for the CategoryName. Specifying the
             // ParameterDirection for an input parameter is not required.
@@ -41,7 +44,7 @@ class Program
             parameter.Direction = ParameterDirection.Output;
 
             // Create a DataTable and fill it.
-            DataTable categories = new DataTable();
+            DataTable categories = new();
             adapter.Fill(categories);
 
             // Add a new row.
@@ -62,7 +65,7 @@ class Program
     }
     // </Snippet1>
 
-    static private string GetConnectionString()
+    static string GetConnectionString()
     {
         // To avoid storing the connection string in your code,
         // you can retrieve it from a configuration file.

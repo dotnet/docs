@@ -2,15 +2,15 @@
 using System.Data;
 using System.Data.SqlClient;
 
-class Program
+static class Program
 {
     static void Main()
     {
         // <Snippet1>
         // Assumes GetConnectionString returns a valid connection string
         // where pooling is turned off by setting Pooling=False;.
-        string connectionString = GetConnectionString();
-        using (SqlConnection connection1 = new SqlConnection(connectionString))
+        var connectionString = GetConnectionString();
+        using (SqlConnection connection1 = new(connectionString))
         {
             // Drop the TestSnapshot table if it exists
             connection1.Open();
@@ -51,7 +51,7 @@ class Program
             command1.ExecuteNonQuery();
 
             // Open a second connection to AdventureWorks
-            using (SqlConnection connection2 = new SqlConnection(connectionString))
+            using (SqlConnection connection2 = new(connectionString))
             {
                 connection2.Open();
                 // Initiate a second transaction to read from TestSnapshot
@@ -67,8 +67,8 @@ class Program
                 while (reader2.Read())
                 {
                     Console.WriteLine("Expected 1,1 Actual "
-                        + reader2.GetValue(0).ToString()
-                        + "," + reader2.GetValue(1).ToString());
+                        + reader2.GetValue(0)
+                        + "," + reader2.GetValue(1));
                 }
                 transaction2.Commit();
             }
@@ -81,7 +81,7 @@ class Program
             // and will time out after 4 seconds.
             // You would see the same behavior with the
             // RepeatableRead or Serializable isolation levels.
-            using (SqlConnection connection3 = new SqlConnection(connectionString))
+            using (SqlConnection connection3 = new(connectionString))
             {
                 connection3.Open();
                 SqlCommand command3 = connection3.CreateCommand();
@@ -115,7 +115,7 @@ class Program
             // of the proposed new value 22 for valueCol. If the first
             // transaction rolls back, this value will never actually have
             // existed in the database.
-            using (SqlConnection connection4 = new SqlConnection(connectionString))
+            using (SqlConnection connection4 = new(connectionString))
             {
                 connection4.Open();
                 SqlCommand command4 = connection4.CreateCommand();
@@ -128,8 +128,8 @@ class Program
                 while (reader4.Read())
                 {
                     Console.WriteLine("Expected 1,22 Actual "
-                        + reader4.GetValue(0).ToString()
-                        + "," + reader4.GetValue(1).ToString());
+                        + reader4.GetValue(0)
+                        + "," + reader4.GetValue(1));
                 }
 
                 transaction4.Commit();
@@ -142,7 +142,7 @@ class Program
         // CLEANUP
         // Delete the TestSnapshot table and set
         // ALLOW_SNAPSHOT_ISOLATION OFF
-        using (SqlConnection connection5 = new SqlConnection(connectionString))
+        using (SqlConnection connection5 = new(connectionString))
         {
             connection5.Open();
             SqlCommand command5 = connection5.CreateCommand();
@@ -164,7 +164,7 @@ class Program
         // </Snippet1>
     }
 
-    static private string GetConnectionString()
+    static string GetConnectionString()
     {
         // To avoid storing the connection string in your code,
         // you can retrieve it from a configuration file, using the

@@ -2,32 +2,32 @@
 using System.Data;
 using System.Data.SqlClient;
 
-class Program
+static class Program
 {
     static void Main()
     {
-        string connectionString = GetConnectionString();
+        var connectionString = GetConnectionString();
         ConnectToData(connectionString);
         Console.ReadLine();
     }
-    private static void ConnectToData(string connectionString)
+    static void ConnectToData(string connectionString)
     {
         // <Snippet1>
         using (SqlConnection connection =
-                   new SqlConnection(connectionString))
+                   new(connectionString))
         {
             SqlDataAdapter adapter =
-                new SqlDataAdapter(
+                new(
                 "SELECT CustomerID, CompanyName FROM dbo.Customers",
                 connection);
 
             connection.Open();
 
-            DataSet customers = new DataSet();
+            DataSet customers = new();
             adapter.FillSchema(customers, SchemaType.Source, "Customers");
             adapter.Fill(customers, "Customers");
 
-            DataSet orders = new DataSet();
+            DataSet orders = new();
             orders.ReadXml("Orders.xml", XmlReadMode.ReadSchema);
             orders.AcceptChanges();
 
@@ -36,7 +36,7 @@ class Program
         }
     }
 
-    static private string GetConnectionString()
+    static string GetConnectionString()
     {
         // To avoid storing the connection string in your code,
         // you can retrieve it from a configuration file.

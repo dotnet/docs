@@ -1,24 +1,25 @@
 ﻿using System;
-using System.Data;
 // <Snippet1>
 using System.Data.SqlClient;
 
-class Program
+static class Program
 {
     static void Main()
     {
-        string connectionString = GetConnectionString();
+        var connectionString = GetConnectionString();
         // Open a sourceConnection to the AdventureWorks database.
         using (SqlConnection sourceConnection =
-                   new SqlConnection(connectionString))
+                   new(connectionString))
         {
             sourceConnection.Open();
 
             //  Delete all from the destination table.
-            SqlCommand commandDelete = new SqlCommand();
-            commandDelete.Connection = sourceConnection;
-            commandDelete.CommandText =
-                "DELETE FROM dbo.BulkCopyDemoMatchingColumns";
+            SqlCommand commandDelete = new()
+            {
+                Connection = sourceConnection,
+                CommandText =
+                "DELETE FROM dbo.BulkCopyDemoMatchingColumns"
+            };
             commandDelete.ExecuteNonQuery();
 
             //  Add a single row that will result in duplicate key
@@ -31,26 +32,28 @@ class Program
             //  does exist in your version of the Production.Products
             //  table. Choose any ProductID in the middle of the table
             //  (not first or last row) to best illustrate the result.
-            SqlCommand commandInsert = new SqlCommand();
-            commandInsert.Connection = sourceConnection;
-            commandInsert.CommandText =
+            SqlCommand commandInsert = new()
+            {
+                Connection = sourceConnection,
+                CommandText =
                 "SET IDENTITY_INSERT dbo.BulkCopyDemoMatchingColumns ON;" +
                 "INSERT INTO " + "dbo.BulkCopyDemoMatchingColumns " +
                 "([ProductID], [Name] ,[ProductNumber]) " +
                 "VALUES(446, 'Lock Nut 23','LN-3416');" +
-                "SET IDENTITY_INSERT dbo.BulkCopyDemoMatchingColumns OFF";
+                "SET IDENTITY_INSERT dbo.BulkCopyDemoMatchingColumns OFF"
+            };
             commandInsert.ExecuteNonQuery();
 
             // Perform an initial count on the destination table.
-            SqlCommand commandRowCount = new SqlCommand(
+            SqlCommand commandRowCount = new(
                 "SELECT COUNT(*) FROM dbo.BulkCopyDemoMatchingColumns;",
                 sourceConnection);
-            long countStart = System.Convert.ToInt32(
+            long countStart = Convert.ToInt32(
                 commandRowCount.ExecuteScalar());
             Console.WriteLine("Starting row count = {0}", countStart);
 
             //  Get data from the source table as a SqlDataReader.
-            SqlCommand commandSourceData = new SqlCommand(
+            SqlCommand commandSourceData = new(
                 "SELECT ProductID, Name, ProductNumber " +
                 "FROM Production.Product;", sourceConnection);
             SqlDataReader reader = commandSourceData.ExecuteReader();
@@ -61,7 +64,7 @@ class Program
             // Therefore, you must use the SqlBulkCopy construct that
             // requires a string for the connection, rather than an
             // existing SqlConnection object.
-            using (SqlBulkCopy bulkCopy = new SqlBulkCopy(
+            using (SqlBulkCopy bulkCopy = new(
                        connectionString, SqlBulkCopyOptions.KeepIdentity |
                        SqlBulkCopyOptions.UseInternalTransaction))
             {
@@ -88,7 +91,7 @@ class Program
 
             // Perform a final count on the destination
             // table to see how many rows were added.
-            long countEnd = System.Convert.ToInt32(
+            long countEnd = Convert.ToInt32(
                 commandRowCount.ExecuteScalar());
             Console.WriteLine("Ending row count = {0}", countEnd);
             Console.WriteLine("{0} rows were added.", countEnd - countStart);
@@ -97,9 +100,9 @@ class Program
         }
     }
 
-    private static string GetConnectionString()
-        // To avoid storing the sourceConnection string in your code,
-        // you can retrieve it from a configuration file.
+    static string GetConnectionString()
+    // To avoid storing the sourceConnection string in your code,
+    // you can retrieve it from a configuration file.
     {
         return "Data Source=(local); " +
             " Integrated Security=true;" +

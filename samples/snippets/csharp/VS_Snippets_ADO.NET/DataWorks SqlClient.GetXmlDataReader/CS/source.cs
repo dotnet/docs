@@ -1,14 +1,13 @@
 ﻿using System;
-using System.Data;
 using System.Data.SqlClient;
 using System.Xml;
 using System.Data.SqlTypes;
 
-class Class1
+static class Class1
 {
     static void Main()
     {
-        string c = "Data Source=(local);Integrated Security=true;" +
+        const string c = "Data Source=(local);Integrated Security=true;" +
         "Initial Catalog=AdventureWorks; ";
         GetXmlData(c);
         Console.ReadLine();
@@ -21,7 +20,7 @@ class Class1
 
     static void GetXmlData(string connectionString)
     {
-        using (SqlConnection connection = new SqlConnection(connectionString))
+        using (SqlConnection connection = new(connectionString))
         {
             connection.Open();
 
@@ -30,18 +29,18 @@ class Class1
             // for the CustomerID criteria. The example selects two rows
             // in order to demonstrate reading first from one row to
             // another, then from one node to another within the xml column.
-            string commandText =
+            const string commandText =
                 "SELECT Demographics from Sales.Store WHERE " +
                 "CustomerID = 3 OR CustomerID = 4";
 
-            SqlCommand commandSales = new SqlCommand(commandText, connection);
+            SqlCommand commandSales = new(commandText, connection);
 
             SqlDataReader salesReaderData = commandSales.ExecuteReader();
 
             //  Multiple rows are returned by the SELECT, so each row
             //  is read and an XmlReader (an xml data type) is set to the
             //  value of its first (and only) column.
-            int countRow = 1;
+            var countRow = 1;
             while (salesReaderData.Read())
             //  Must use GetSqlXml here to get a SqlXml type.
             //  GetValue returns a string instead of SqlXml.
@@ -61,14 +60,14 @@ class Class1
                 {
                     if (salesReaderXml.NodeType == XmlNodeType.Element)
                     {
-                        string elementLocalName =
+                        var elementLocalName =
                             salesReaderXml.LocalName;
                         salesReaderXml.Read();
                         Console.WriteLine(elementLocalName + ": " +
                             salesReaderXml.Value);
                     }
                 }
-                countRow = countRow + 1;
+                countRow++;
             }
         }
     }

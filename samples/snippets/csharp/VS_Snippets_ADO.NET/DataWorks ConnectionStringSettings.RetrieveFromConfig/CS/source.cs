@@ -3,7 +3,7 @@ using System;
 // <Snippet1>
 using System.Configuration;
 
-class Program
+internal static class Program
 {
     static void Main()
     {
@@ -16,14 +16,11 @@ class Program
         ConnectionStringSettingsCollection settings =
             ConfigurationManager.ConnectionStrings;
 
-        if (settings != null)
+        foreach (ConnectionStringSettings cs in settings)
         {
-            foreach(ConnectionStringSettings cs in settings)
-            {
-                Console.WriteLine(cs.Name);
-                Console.WriteLine(cs.ProviderName);
-                Console.WriteLine(cs.ConnectionString);
-            }
+            Console.WriteLine(cs.Name);
+            Console.WriteLine(cs.ProviderName);
+            Console.WriteLine(cs.ConnectionString);
         }
     }
 }

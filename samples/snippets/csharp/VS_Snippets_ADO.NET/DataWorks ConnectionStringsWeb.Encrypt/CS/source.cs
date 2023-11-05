@@ -1,9 +1,7 @@
-﻿
-using System;
-using System.Configuration;
+﻿using System.Configuration;
 using System.Web.Configuration;
 
-class Program
+static class Program
 {
     static void Main()
     {
@@ -16,7 +14,7 @@ class Program
             OpenWebConfiguration("~");
 
         // Get the connectionStrings section.
-        ConnectionStringsSection section =
+        var section =
             config.GetSection("connectionStrings")
             as ConnectionStringsSection;
 

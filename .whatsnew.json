@@ -15,40 +15,36 @@
     },
     "areas": [
         {
-            "names": [ "." ],
-            "heading": "Home"
-        },
-        {
-            "names": [ "architecture" ],
-            "heading": "Architecture guides"
-        },
-        {
-            "names": [ "azure" ],
-            "heading": "Azure SDK for .NET"
-        },
-        {
-            "names": [ "csharp" ],
-            "heading": "C# language"
-        },
-        {
-            "names": [ "desktop-wpf" ],
-            "heading": ".NET Core desktop"
-        },
-        {
-            "names": [ "framework" ],
-            "heading": ".NET Framework"
-        },
-        {
-            "names": [ "fsharp" ],
-            "heading": "F# language"
+            "names": [ "standard/security" ],
+            "heading": ".NET security"
         },
         {
             "names": [ "core/compatibility" ],
             "heading": ".NET breaking changes"
         },
         {
-            "names": [ "standard/linq", "standard/data" ],
-            "heading": "Data access in .NET"
+            "names": [ "core", "fundamentals", "standard" ],
+            "heading": ".NET fundamentals"
+        },
+        {
+            "names": [ "core/porting" ],
+            "heading": "Migration to .NET"
+        },
+        {
+            "names": [ "csharp" ],
+            "heading": "C# language"
+        },
+        {
+            "names": [ "fsharp" ],
+            "heading": "F# language"
+        },
+        {
+            "names": [ "visual-basic" ],
+            "heading": "Visual Basic language"
+        },
+        {
+            "names": [ "architecture" ],
+            "heading": "Architecture guides"
         },
         {
             "names": [ "devops",
@@ -57,14 +53,6 @@
                        "core/docker"
                      ],
             "heading": "DevOps and testing in .NET"
-        },
-        {
-            "names": [ "core/porting" ],
-            "heading": "Migration to .NET"
-        },
-        {
-            "names": [ "standard/security" ],
-            "heading": ".NET security"
         },
         {
             "names": [ "core/tools",
@@ -88,8 +76,16 @@
             "heading": "Advanced .NET programming"
         },
         {
-            "names": [ "core", "fundamentals", "standard" ],
-            "heading": ".NET fundamentals"
+            "names": [ "azure" ],
+            "heading": "Azure SDK for .NET"
+        },
+        {
+            "names": [ "desktop-wpf" ],
+            "heading": ".NET Core desktop"
+        },
+        {
+            "names": [ "standard/linq", "standard/data" ],
+            "heading": "Data access in .NET"
         },
         {
             "names": [ "iot" ],
@@ -100,16 +96,20 @@
             "heading": "ML.NET"
         },
         {
+            "names": [ "orleans", "dotnet-orleans" ],
+            "heading": "Microsoft Orleans"
+        },
+        {
             "names": [ "spark" ],
             "heading": ".NET for Apache Spark"
         },
         {
-            "names": [ "visual-basic" ],
-            "heading": "Visual Basic language"
+            "names": [ "." ],
+            "heading": "Home"
         },
         {
-            "names": [ "orleans", "dotnet-orleans" ],
-            "heading": "Microsoft Orleans"
+            "names": [ "framework" ],
+            "heading": ".NET Framework"
         }
     ]
 }

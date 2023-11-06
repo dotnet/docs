@@ -9,7 +9,7 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 
 # Get started with the enterprise chat app template for .NET
 
-Deploy and use a chat app to get answers about employee benefits at a fictitious company with .NET. The employee benefits chat app is seeded with PDF files including the employee handbook, a benefits document and a list of company roles and expectations.
+In this article, you deploy and use a .NET chat app powered by Azure AI OpenAI to get answers about employee benefits at a fictitious company. The employee benefits chat app is seeded with PDF files including an employee handbook, a benefits document and a list of company roles and expectations.
 
 > [!div class="nextstepaction"]
 > [Begin now](#open-development-environment)
@@ -39,7 +39,7 @@ A simple architecture of the chat app is shown in the following diagram:
 Key components of the architecture include:
 
 * A web application to host the interactive chat experience.
-* An Azure Cognitive Search resource to get answers from your own data.
+* An Azure Cognitive Search resource to index your data for relevant queries.
 * An Azure OpenAI Service to provide:
   * Keywords to enhance the search over your own data.
   * Answers from the OpenAI model.
@@ -49,7 +49,7 @@ Key components of the architecture include:
 
 Most resources in this architecture use a basic or consumption pricing tier. Consumption pricing is based on usage, which means you only pay for what you use. To complete this article, there will be a charge but it will be minimal. When you are done with the article, you can delete the resources to stop incurring charges.
 
-Learn more about [cost in the sample repo](https://github.com/Azure-Samples/azure-search-openai-demo-csharp#cost-estimation).
+For more information, see [Azure Samples: Cost in the sample repo](https://github.com/Azure-Samples/azure-search-openai-demo-csharp#cost-estimation).
 
 ## Prerequisites
 
@@ -83,12 +83,12 @@ Begin now with a development environment that has all the dependencies installed
 > [!IMPORTANT]
 > All GitHub accounts can use Codespaces for up to 60 hours free each month with 2 core instances. For more information, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
 
-1. Start the process to create a new GitHub Codespace on the `main` branch of the [`Azure-Samples/azure-search-openai-demo-csharp`](https://github.com/Azure-Samples/azure-search-openai-demo-csharp) GitHub repository:
+1. Start the process to create a new GitHub Codespace on the `main` branch of the [Azure-Samples/azure-search-openai-demo-csharp](https://github.com/Azure-Samples/azure-search-openai-demo-csharp) GitHub repository:
 
     > [!div class="nextstepaction"]
     > [Open this project in GitHub Codespaces](https://github.com/codespaces/new?azure-portal=true&hide_repo_select=true&ref=main&repo=624102171)
 
-1. On the **Create codespace** page, review the codespace configuration settings and then select **Create new codespace**
+1. On the **Create codespace** page, review the codespace configuration settings and then select **Create new codespace**:
 
     :::image type="content" source="../media/get-started-app-chat-template/github-create-codespace.png" alt-text="Screenshot of the confirmation screen before creating a new codespace.":::
 
@@ -191,9 +191,9 @@ The chat app is preloaded with employee benefits information from [PDF files](ht
     |---|---|
     |**Thought process**|This is a script of the interactions in chat. You can view the system prompt (`content`) and your user question (`content`).|
     |**Supporting content**|This includes the information to answer your question and the source material. The number of source material citations is noted in the **Developer settings**. The default value is **3**.|
-    |**Citation**|This displays the original page that contains the citation.|
+    |**Citation**|This displays the source page that contains the citation.|
 
-1. When you are done, navigate back to the answer tab.
+1. When you're done, navigate back to the answer tab.
 
 ### Use chat app settings to change behavior of responses
 
@@ -216,7 +216,7 @@ The following steps walk you through the process of changing the settings.
 1. In the browser, select the gear icon in the upper right of the page.
 1. Check the **Suggest follow-up questions** checkbox and ask the same question again.
 
-    ```
+    ```Text
     What is my deductible?
     ```
 
@@ -231,7 +231,7 @@ The following steps walk you through the process of changing the settings.
 1. In the **Settings** tab, deselect **Use semantic ranker for retrieval**.
 1. Ask the same question again.
 
-    ```
+    ```Text
     What is my deductible?
     ```
 

@@ -103,7 +103,6 @@ Begin now with a development environment that has all the dependencies installed
 
 1. In the terminal at the bottom of the screen, sign in to Azure with the Azure Developer CLI.
 
-
     ```bash
     azd auth login
     ```
@@ -167,8 +166,8 @@ The sample repository contains all the code and configuration files you need to 
     azd up
     ```
 
-1. When you're prompted to enter an environment name, keep it short and lowercase. For example, `myenv`. Its used as part of the resource group name. 
-1. When prompted, select a subscription to create the resources in. 
+1. When you're prompted to enter an environment name, keep it short and lowercase. For example, `myenv`. Its used as part of the resource group name.
+1. When prompted, select a subscription to create the resources in.
 1. When you're prompted to select a location the first time, select a location near you. This location is used for most the resources including hosting.
 1. If you're prompted for a location for the OpenAI model, select a location that is near you. If the same location is available as your first location, select that.
 1. Wait until app is deployed. It may take up to 20 minutes for the deployment to complete.
@@ -182,7 +181,7 @@ The sample repository contains all the code and configuration files you need to 
 The chat app is preloaded with employee benefits information from [PDF files](https://github.com/Azure-Samples/azure-search-openai-demo-csharp/tree/main/data). You can use the chat app to ask questions about the benefits. The following steps walk you through the process of using the chat app.
 
 1. In the browser, navigate to the **Chat** page using the left navigation.
-1. Select or enter "What is included in my Northwind Health Plus plan that is not in standard?" in the chat text box. 
+1. Select or enter "What is included in my Northwind Health Plus plan that is not in standard?" in the chat text box.
 
     :::image type="content" source="../media/get-started-app-chat-template/browser-chat-initial-answer.png" lightbox="../media/get-started-app-chat-template/browser-chat-initial-answer.png" alt-text="Screenshot of chat app's first answer.":::
 

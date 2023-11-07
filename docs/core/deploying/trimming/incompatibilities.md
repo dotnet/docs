@@ -9,20 +9,6 @@ ms.date: 10/08/2021
 
 There are some patterns that are known to be incompatible with trimming. Some of these patterns might become compatible as tooling improves or as libraries make modifications to become trimming compatible.
 
-## Built-in COM marshalling
-
-Alternative: [COM Wrappers](../../../standard/native-interop/com-wrappers.md)
-
-Automatic [COM marshalling](../../../standard/native-interop/cominterop.md) has been built in to .NET since .NET Framework 1.0. It uses run-time code analysis to automatically convert between native COM objects and managed .NET objects. Unfortunately, trimming analysis can't always predict what .NET code needs to be preserved for automatic COM marshalling. However, if [COM Wrappers](../../../standard/native-interop/com-wrappers.md) are used instead, trimming analysis can guarantee that all used code will be correctly preserved.
-
-## WPF
-
-The Windows Presentation Foundation (WPF) framework makes substantial use of reflection and some features are heavily reliant on run-time code inspection. It's not possible for trimming analysis to preserve all necessary code for WPF applications. Unfortunately, almost no WPF apps are runnable after trimming, so trimming support for WPF is currently disabled in the .NET SDK. See [WPF is not trim-compatible](https://github.com/dotnet/wpf/issues/3811) issue for progress on enabling trimming for WPF.
-
-## Windows Forms
-
-The Windows Forms framework makes minimal use of reflection, but is heavily reliant on built-in COM marshalling. Unfortunately, almost no Windows Forms apps are runnable without built-in COM marshalling, so trimming support for Windows Forms apps is disabled in the .NET SDK currently. See [Make WinForms trim compatible](https://github.com/dotnet/winforms/issues/4649) issue for progress on enabling trimming for Windows Forms.
-
 ## Reflection-based serializers
 
 Alternative: Reflection-free serializers.
@@ -38,3 +24,21 @@ Popular reflection-based serializers and their recommended alternatives:
 ## Dynamic assembly loading and execution
 
 Trimming and dynamic assembly loading is a common problem for systems that support plugins or extensions, usually through APIs like <xref:System.Reflection.Assembly.LoadFrom(System.String)>. Trimming relies on seeing all assemblies at build time, so it knows which code is used and can't be trimmed away. Most plugin systems load third-party code dynamically, so it's not possible for the trimmer to identify what code is needed.
+
+## Windows platform incompatibilities
+
+The following sections list known incompatibilities with trimming on Windows.
+
+### Built-in COM marshalling
+
+Alternative: [COM Wrappers](../../../standard/native-interop/com-wrappers.md)
+
+Automatic [COM marshalling](../../../standard/native-interop/cominterop.md) has been built in to .NET since .NET Framework 1.0. It uses run-time code analysis to automatically convert between native COM objects and managed .NET objects. Unfortunately, trimming analysis can't always predict what .NET code needs to be preserved for automatic COM marshalling. However, if [COM Wrappers](../../../standard/native-interop/com-wrappers.md) are used instead, trimming analysis can guarantee that all used code will be correctly preserved.
+
+### WPF
+
+The Windows Presentation Foundation (WPF) framework makes substantial use of reflection and some features are heavily reliant on run-time code inspection. It's not possible for trimming analysis to preserve all necessary code for WPF applications. Unfortunately, almost no WPF apps are runnable after trimming, so trimming support for WPF is currently disabled in the .NET SDK. See [WPF is not trim-compatible](https://github.com/dotnet/wpf/issues/3811) issue for progress on enabling trimming for WPF.
+
+### Windows Forms
+
+The Windows Forms framework makes minimal use of reflection, but is heavily reliant on built-in COM marshalling. Unfortunately, almost no Windows Forms apps are runnable without built-in COM marshalling, so trimming support for Windows Forms apps is disabled in the .NET SDK currently. See [Make WinForms trim compatible](https://github.com/dotnet/winforms/issues/4649) issue for progress on enabling trimming for Windows Forms.

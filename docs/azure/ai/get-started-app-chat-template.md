@@ -26,9 +26,9 @@ This article is part of a collection of articles that show you how to build a ch
 
 Other articles in the collection include:
 
-* [Python](/azure/developer/python/get-started-app-chat-template)
-* [JavaScript](/azure/developer/javascript/get-started-app-chat-template)
-* [Java](/azure/developer/java/get-started-app-chat-template)
+- [Python](/azure/developer/python/get-started-app-chat-template)
+- [JavaScript](/azure/developer/javascript/get-started-app-chat-template)
+- [Java](/azure/developer/java/get-started-app-chat-template)
 
 ## Architectural overview
 
@@ -38,12 +38,12 @@ A simple architecture of the chat app is shown in the following diagram:
 
 Key components of the architecture include:
 
-* A web application to host the interactive chat experience.
-* An Azure Cognitive Search resource to index your data for relevant queries.
-* An Azure OpenAI Service to provide:
-  * Keywords to enhance the search over your own data.
-  * Answers from the OpenAI model.
-  * Embeddings from the ada model
+- A web application to host the interactive chat experience.
+- An Azure Cognitive Search resource to index your data for relevant queries.
+- An Azure OpenAI Service to provide:
+  - Keywords to enhance the search over your own data.
+  - Answers from the OpenAI model.
+  - Embeddings from the ada model
 
 ## Cost
 
@@ -55,7 +55,7 @@ For more information, see [Azure Samples: Cost in the sample repo](https://githu
 
 A [development container](https://containers.dev/) environment is available with all dependencies required to complete this article. You can run the development container in GitHub Codespaces (in a browser) or locally using Visual Studio Code.
 
-To use this article, you need the following prerequisites:
+To follow along with this article, you need the following prerequisites:
 
 #### [Codespaces (recommended)](#tab/github-codespaces)
 
@@ -171,7 +171,7 @@ The sample repository contains all the code and configuration files you need to 
 1. When prompted, select a subscription to create the resources in. 
 1. When you're prompted to select a location the first time, select a location near you. This location is used for most the resources including hosting.
 1. If you're prompted for a location for the OpenAI model, select a location that is near you. If the same location is available as your first location, select that.
-1. Wait until app is deployed. It may take 5-10 minutes for the deployment to complete.
+1. Wait until app is deployed. It may take up to 20 minutes for the deployment to complete.
 1. After the application has been successfully deployed, you see a URL displayed in the terminal.
 1. Select that URL labeled `Deploying service web` to open the chat application in a browser.
 
@@ -227,11 +227,9 @@ The following steps walk you through the process of changing the settings.
 
     The chat returns follow-up question suggestions such as the following:
 
-    ```
-    1. What is the cost sharing for out-of-network services?
-    2. Are preventive care services subject to the deductible?
-    3. How does the prescription drug deductible work?
-    ```
+    - "What is the cost sharing for out-of-network services?"
+    - "Are preventive care services subject to the deductible?"
+    - "How does the prescription drug deductible work?"
 
 1. In the **Settings** tab, deselect **Use semantic ranker for retrieval**.
 1. Ask the same question again.
@@ -298,8 +296,8 @@ If your issue isn't addressed, log your issue to the repository's [Issues](https
 
 ## Next steps
 
-* [Enterprise chat app GitHub repository](https://github.com/Azure-Samples/azure-search-openai-demo-csharp)
-* [Build a chat app with Azure OpenAI](https://aka.ms/azai/chat) best practice solution architecture
-* [Access control in Generative AI Apps with Azure Cognitive Search](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/access-control-in-generative-ai-applications-with-azure/ba-p/3956408)
-* [Build an Enterprise ready OpenAI solution with Azure API Management](https://techcommunity.microsoft.com/t5/apps-on-azure-blog/build-an-enterprise-ready-azure-openai-solution-with-azure-api/bc-p/3935407)
-* [Outperforming vector search with hybrid retrieval and ranking capabilities](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/azure-cognitive-search-outperforming-vector-search-with-hybrid/ba-p/3929167)
+- [Enterprise chat app GitHub repository](https://github.com/Azure-Samples/azure-search-openai-demo-csharp)
+- [Build a chat app with Azure OpenAI](https://aka.ms/azai/chat) best practice solution architecture
+- [Access control in Generative AI Apps with Azure Cognitive Search](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/access-control-in-generative-ai-applications-with-azure/ba-p/3956408)
+- [Build an Enterprise ready OpenAI solution with Azure API Management](https://techcommunity.microsoft.com/t5/apps-on-azure-blog/build-an-enterprise-ready-azure-openai-solution-with-azure-api/bc-p/3935407)
+- [Outperforming vector search with hybrid retrieval and ranking capabilities](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/azure-cognitive-search-outperforming-vector-search-with-hybrid/ba-p/3929167)

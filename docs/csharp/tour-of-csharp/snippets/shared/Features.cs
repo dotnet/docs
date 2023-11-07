@@ -140,17 +140,15 @@ class Features
 
     private static void InitializeArray()
     {
-            // <InitializeArray>
-            int[] a = [ 1, 2, 3 ];
-            // </InitializeArray>
-            // <EnumerateArray>
-            foreach (int item in a)
-            {
-                Console.WriteLine(item);
-            }
-            // </EnumerateArray>
+        // <InitializeArray>
+        int[] a = [ 1, 2, 3 ];
+        // </InitializeArray>
+        // <EnumerateArray>
+        foreach (int item in a)
+        {
+            Console.WriteLine(item);
         }
-
+        // </EnumerateArray>
     }
 
     private static void ArrayOfArrays()

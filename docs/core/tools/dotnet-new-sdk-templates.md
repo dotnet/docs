@@ -652,43 +652,6 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 ***
 
-## `reactredux`
-
-- **`--exclude-launch-settings`**
-
-  Excludes *launchSettings.json* from the generated template.
-
-- **`-f|--framework <FRAMEWORK>`**
-
-  Specifies the [framework](../../standard/frameworks.md) to target. Option not available in .NET Core 2.2 SDK.
-
-  The following table lists the default values according to the SDK version number you're using:
-
-  | SDK version | Default value   |
-  |-------------|-----------------|
-  | 6.0         | `net6.0`        |
-  | 5.0         | `net5.0`        |
-  | 3.1         | `netcoreapp3.1` |
-  | 3.0         | `netcoreapp3.0` |
-  | 2.1         | `netcoreapp2.0` |
-
-  To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
-
-- **`--no-restore`**
-
-  Doesn't execute an implicit restore during project creation.
-
-- **`--no-https`**
-
-  Turns off HTTPS.
-
-- **`--kestrelHttpPort`**
-
-  Port number to use for the HTTP endpoint in *launchSettings.json*.
-
-- **`--kestrelHttpsPort`**
-
-  Port number to use for the HTTPS endpoint in *launchSettings.json*. This option is not applicable when the parameter `no-https` is used (but `no-https` is ignored when an individual or organizational authentication setting is chosen for `--auth`).
 
 ***
 

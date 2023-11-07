@@ -23,7 +23,9 @@ The following table lists popular reflection-based serializers and their recomme
 | **System.Configuration.ConfigurationManager** | [Source generated `Microsoft.Extensions.Configuration`](https://github.com/dotnet/runtime/issues/44493) |
 | **System.Runtime.Serialization.Formatters.Binary.BinaryFormatter** | [Migrate away from BinaryFormatter serialization due to its security and reliability flaws.](../../compatibility/serialization/7.0/binaryformatter-apis-produce-errors.md#recommended-action) |
 
-Runtime code generation via JIT, for example, via <xref:System.Reflection.Emit> is also incompatible with trimming.
+## Runtime code generation via JIT
+
+Runtime code generation via JIT, for example, via <xref:System.Reflection.Emit> is incompatible with trimming.
 
 ## Dynamic assembly loading and execution
 

@@ -15,12 +15,12 @@ Alternative: Reflection-free serializers.
 
 Many uses of reflection can be made trimming-compatible, as described in [Introduction to trim warnings](fixing-warnings.md). However, serializers tend to have complex uses of reflection. Many of these uses can't be made analyzable at build time. Unfortunately, the best option is often to rewrite the system to use source generation.
 
-Popular reflection-based serializers and their recommended alternatives:
+The following table lists popular reflection-based serializers and their recommended alternatives:
 
 | Serializers | Alternative |
-| :---------: | :---------: |
-| **Newtonsoft.Json** `                                            ` | [Source generated `System.Text.Json`](../../../standard/serialization/system-text-json/source-generation.md)    |
-| **System.Configuration.ConfigurationManager** `                  ` | [Source generated `Microsoft.Extensions.Configuration`](https://github.com/dotnet/runtime/issues/44493) |
+| :-- | :---------: |
+| **Newtonsoft.Json** | [Source generated `System.Text.Json`](../../../standard/serialization/system-text-json/source-generation.md)    |
+| **System.Configuration.ConfigurationManager** | [Source generated `Microsoft.Extensions.Configuration`](https://github.com/dotnet/runtime/issues/44493) |
 | **System.Runtime.Serialization.Formatters.Binary.BinaryFormatter** | [Migrate away from BinaryFormatter serialization due to its security and reliability flaws.](../../compatibility/serialization/7.0/binaryformatter-apis-produce-errors.md#recommended-action) |
 
 Runtime code generation via JIT, for example, via <xref:System.Reflection.Emit> is also incompatible with trimming.

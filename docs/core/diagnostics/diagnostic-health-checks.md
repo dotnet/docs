@@ -1,7 +1,7 @@
 ---
 title: App health checks in C#
 description: Learn how to use resource utilization and application lifetime health checks in .NET app development.
-ms.date: 10/30/2023
+ms.date: 11/02/2023
 ---
 
 # .NET app health checks in C\#
@@ -13,6 +13,8 @@ The following heath check status results are possible:
 - <xref:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Healthy?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Degraded?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy?displayProperty=nameWithType>
+
+In addition, health checks often report various diagnostic metrics. For more information, see [Diagnostic Metrics: `Microsoft.Extensions.Diagnostics.HealthChecks`](built-in-metrics-diagnostics.md#meter-microsoftextensionsdiagnosticshealthchecks).
 
 ## Resource utilization health checks
 
@@ -80,3 +82,7 @@ The app outputs logs in the following order, reporting the health check status a
 1. `StoppedAsync`: Unhealthy
 
 In other words, this provider ensures that the application instance only receives traffic when it's ready. If you're developing web apps with ASP.NET Core, there's health checks middleware available. For more information, [Health checks in ASP.NET Core](/aspnet/core/host-and-deploy/health-checks).
+
+## See also
+
+- [.NET extensions metrics](built-in-metrics-diagnostics.md)

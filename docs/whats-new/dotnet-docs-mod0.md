@@ -38,7 +38,6 @@ Welcome to what's new in the .NET docs for September 2023. This article lists so
 - [.NET runtime tiered compilation events](../fundamentals/diagnostics/runtime-tiered-compilation-events.md)
 - [Runtime configuration options for WPF](../core/runtime-config/wpf.md)
 - [Customize SNI in HTTP requests](../core/extensions/httpclient-sni.md)
-- [Use the REST API HTTP client generator](../fundamentals/networking/http/http-autoclient.md)
 
 ### Updated articles
 

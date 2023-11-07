@@ -218,7 +218,7 @@ The resulting JSON looks like the following example:
 }
 ```
 
-To use the converter with source generation, see [Serialize enum fields as strings](source-generation-modes.md#serialize-enum-fields-as-strings).
+To use the converter with source generation, see [Serialize enum fields as strings](source-generation.md#serialize-enum-fields-as-strings).
 
 :::zone-end
 

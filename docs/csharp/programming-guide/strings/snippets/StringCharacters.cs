@@ -54,7 +54,7 @@ public class StringCharacters
     {
         //<BuildString>
         string str = "hello";
-        string nullStr = null;
+        string? nullStr = null;
         string emptyStr = String.Empty;
 
         string tempStr = str + nullStr;

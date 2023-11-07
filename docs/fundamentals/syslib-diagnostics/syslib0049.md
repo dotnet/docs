@@ -1,9 +1,9 @@
 ---
-title: SYSLIB0049 warning -
-description: Learn about the obsoletion of the RSA.EncryptValue and RSA.DecryptValue methods that generates compile-time warning SYSLIB0049.
+title: SYSLIB0049 warning - JsonSerializerOptions.AddContext is obsolete
+description: Learn about the obsoletion of the JsonSerializerOptions.AddContext method that generates compile-time warning SYSLIB0049.
 ms.date: 10/09/2023
 ---
-# SYSLIB0049
+# SYSLIB0049: JsonSerializerOptions.AddContext is obsolete
 
 The <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=nameWithType> method is obsolete, starting in .NET 8. Calling it in code generates warning `SYSLIB0049` at compile time.
 

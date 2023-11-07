@@ -43,11 +43,14 @@ f1_keywords:
   - "CS9017" # WRN_UseDefViolationFieldUnsupportedVersion  Use of possibly unassigned field
   - "CS8967" # ERR_NewlinesAreNotAllowedInsideANonVerbatimInterpolatedString  Newlines inside a non-verbatim interpolated string are not supported in C#
   - "CS9064"
+  - "CS9103"
   - "CS9171"
   - "CS8058"
   - "CS8305"
   - "CS9204"
   - "CS9194"
+  - "CS9202"
+  - "CS9211"
 helpviewer_keywords:
   - "CS0171"
   - "CS0188"
@@ -90,12 +93,15 @@ helpviewer_keywords:
   - "CS9017"
   - "CS8967"
   - "CS9064"
+  - "CS9103"
   - "CS9171"
   - "CS8058"
   - "CS8305"
   - "CS9204"
   - "CS9194"
-ms.date: 10/26/2023
+  - "CS9202"
+  - "CS9211"
+ms.date: 11/02/2023
 ---
 # Resolve warnings related to language features and versions
 
@@ -104,41 +110,44 @@ This article covers the following compiler warnings:
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's be design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
-- **CS8022, CS8023, CS8024, CS8025, CS8026, CS8059, CS8107, CS8302, CS8320, CS8370, CS8400, CS8773, CS8936, CS9058** - *Feature is not available. Use newer language version.*
-- **CS8058** - *Feature is experimental.*
-- **CS8192** - *Provided language version is unsupported or invalid*
-- **CS8303** - *Specified language version cannot have leading zeroes*
-- **CS8304** - *Compiler version is less than language version*
-- **CS1738** - *Named argument specifications must appear after all fixed arguments have been specified.*
-- **CS8306** - *Tuple element name is inferred.*
-- **CS8314** - *An expression of type cannot be handled by a pattern of type*
-- **CS8371** - *Field-targeted attributes on auto-properties are not supported in language version*
-- **CS8401** - *To use `@$` instead of `$@` for an interpolated verbatim string, use newer language version.*
-- **CS8511** - *An expression of type cannot be handled by a pattern of type.*
-- **CS8627** - *A nullable type parameter must be known to be a value type or non-nullable reference type*
-- **CS8630** - *Invalid nullable options. Use newer language version*
-- **CS8652** - *The modifier is not valid for this item.*
-- **CS8704** - *Type does not implement interface member. It cannot implicitly implement a non-public member.*
-- **CS8706** - *Type cannot implement interface member because a feature is not available in this version.*
-- **CS8904** - *Invalid variance: The type parameter must be valid.*
-- **CS8912** - *Inheriting from a record with a sealed 'Object.ToString' is not supported.*
-- **CS8957** - *Conditional expression is not valid in language version because a common type was not found between types.*
-- **CS8967** - *Newlines inside a non-verbatim interpolated string are not supported in C#*
-- **CS9014** - *Error: Use of possibly unassigned property. Upgrade to auto-default the property.*
-- **CS9015** - *Error: Use of possibly unassigned field. Upgrade to auto-default the field.*
-- **CS9016** - *Warning: Use of possibly unassigned property. Upgrade to auto-default the property.*
-- **CS9017** - *Warning: Use of possibly unassigned field. Upgrade to auto-default the field.*
-- **CS9064** - *Target runtime doesn't support ref fields.*
-- **CS9171** - *Target runtime doesn't support inline array types.*
-- **CS9194** - *Argument may not be passed with the `ref` keyword. To pass `ref` arguments to `in` parameters, upgrade to language version 12 or greater.*
+- **CS8022, CS8023, CS8024, CS8025, CS8026, CS8059, CS8107, CS8302, CS8320, CS8370, CS8400, CS8773, CS8936, CS9058**: *Feature is not available. Use newer language version.*
+- **CS8058**: *Feature is experimental.*
+- **CS8192**: *Provided language version is unsupported or invalid*
+- **CS8303**: *Specified language version cannot have leading zeroes*
+- **CS8304**: *Compiler version is less than language version*
+- **CS1738**: *Named argument specifications must appear after all fixed arguments have been specified.*
+- **CS8306**: *Tuple element name is inferred.*
+- **CS8314**: *An expression of type cannot be handled by a pattern of type*
+- **CS8371**: *Field-targeted attributes on auto-properties are not supported in language version*
+- **CS8401**: *To use `@$` instead of `$@` for an interpolated verbatim string, use newer language version.*
+- **CS8511**: *An expression of type cannot be handled by a pattern of type.*
+- **CS8627**: *A nullable type parameter must be known to be a value type or non-nullable reference type*
+- **CS8630**: *Invalid nullable options. Use newer language version*
+- **CS8652**: *The modifier is not valid for this item.*
+- **CS8704**: *Type does not implement interface member. It cannot implicitly implement a non-public member.*
+- **CS8706**: *Type cannot implement interface member because a feature is not available in this version.*
+- **CS8904**: *Invalid variance: The type parameter must be valid.*
+- **CS8912**: *Inheriting from a record with a sealed 'Object.ToString' is not supported.*
+- **CS8957**: *Conditional expression is not valid in language version because a common type was not found between types.*
+- **CS8967**: *Newlines inside a non-verbatim interpolated string are not supported in C#*
+- **CS9014**: *Error: Use of possibly unassigned property. Upgrade to auto-default the property.*
+- **CS9015**: *Error: Use of possibly unassigned field. Upgrade to auto-default the field.*
+- **CS9016**: *Warning: Use of possibly unassigned property. Upgrade to auto-default the property.*
+- **CS9017**: *Warning: Use of possibly unassigned field. Upgrade to auto-default the field.*
+- **CS9064**: *Target runtime doesn't support ref fields.*
+- **CS9103**: *Definition in a module with an unrecognized RefSafetyRulesAttribute version, expecting '11'.*
+- **CS9171**: *Target runtime doesn't support inline array types.*
+- **CS9194**: *Argument may not be passed with the `ref` keyword. To pass `ref` arguments to `in` parameters, upgrade to language version 12 or greater.*
+- **CS9202**: *Feature is not available in C# 12.0. Please use newer language version*
+- **CS9211**: *The diagnosticId argument to the 'Experimental' attribute must be a valid identifier.*
 
 In addition, the following errors and warnings relate to struct initialization changes in recent versions:
 
 - [**CS0171**, **CS8881**](#breaking-changes-on-struct-initialization): *Backing field for automatically implemented property 'name' must be fully assigned before control is returned to the caller.*
 - [**CS0188**, **CS8885**](#breaking-changes-on-struct-initialization): *The 'this' object cannot be used before all of its fields are assigned to*
 - [**CS0843**, **CS8880**](#breaking-changes-on-struct-initialization): *Backing field for automatically implemented property 'name' must be fully assigned before control is returned to the caller*
-- [**CS8305**](#enable-experimental-features) - *Feature is for evaluation purposes only and is subject to change or removal in future updates.*
-- [**CS9204**](#enable-experimental-features) - *Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.*
+- [**CS8305**](#enable-experimental-features): *Feature is for evaluation purposes only and is subject to change or removal in future updates.*
+- [**CS9204**](#enable-experimental-features): *Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.*
 
 The cause behind all these errors and warnings is that the compiler installed supports a newer version of C# than the version your project has selected. The C# compiler can conform to any previous version. You can validate syntax against an earlier version of C#, or because your project must support older libraries or runtimes.
 
@@ -171,6 +180,8 @@ The diagnostics for experimental features can be disabled to use the experimenta
 > [!WARNING]
 > Experimental features are subject to changes. The APIs may change, or they may be removed in future updates. Including experimental features is a way for library authors to get feedback on ideas and concepts for future development. Use extreme caution when using any feature marked as experimental.
 
+You can also declare your own experimental features using the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=fullName>. The compiler emits *CS9211* if the identifier used for the experimental feature is not a valid identifier.
+
 ## Breaking changes on struct initialization
 
 All these errors and warnings help ensure that `struct` types are properly initialized before their fields are accessed. In earlier versions of C#, you must explicitly assign all fields in a struct in any constructor. The parameterless constructor initializes all fields to their default value. In later versions, all constructors initialize all fields. Either the field is explicitly set, set in a field initializer, or set to its default value.
@@ -179,7 +190,7 @@ All these errors and warnings help ensure that `struct` types are properly initi
 - **CS0188**, **CS8885**: *The 'this' object cannot be used before all of its fields are assigned to*
 - **CS0843**, **CS8880**: *Backing field for automatically implemented property 'name' must be fully assigned before control is returned to the caller*
 
-You can address this error by upgrading your language version to C# 11, when all fields are initialized by every `struct` constructor. If that's not a possible option, you must explicitly call the default constructor, as shown in the following example:
+You can address this error by upgrading your language version to C# 11, every `struct` constructor initializes all fields. If that's not a possible option, you must explicitly call the default constructor, as shown in the following example:
 
 ```csharp
 struct S

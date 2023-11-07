@@ -1,7 +1,7 @@
 ---
 title: F# code formatting guidelines
 description: Learn guidelines for formatting F# code.
-ms.date: 09/19/2021
+ms.date: 11/01/2023
 ---
 # F# code formatting guidelines
 
@@ -1300,6 +1300,14 @@ let comparer = {
 }
 ```
 
+Empty type definitions may be formatted on one line:
+
+```fsharp
+type AnEmptyType = class end
+```
+
+Regardless of the chosen page width, `= class end` should always be on the same line.
+
 ### Formatting index/slice expressions
 
 Index expressions shouldn't contain any spaces around the opening and closing brackets.
@@ -2402,7 +2410,7 @@ type MyClassDerived(y: string) =
         """)
 ```
 
-#### Formating the primary constructor
+#### Formatting the primary constructor
 
 In default formatting conventions, no space is added between the type name and the parentheses for the primary constructor.
 

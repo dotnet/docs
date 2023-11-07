@@ -1,11 +1,11 @@
 ---
-title: System.Net Metrics
+title: System.Net metrics
 description: Review the metrics available for System.Net
 ms.topic: reference
 ms.date: 9/21/2023
 ---
 
-# System.Net Metrics
+# System.Net metrics
 
 This article describes the networking metrics built-in for <xref:System.Net> produced using the
 <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> API. For a listing of metrics based on the alternate [EventCounters](event-counters.md) API, see [Well-known EventCounters in .NET](available-counters.md).

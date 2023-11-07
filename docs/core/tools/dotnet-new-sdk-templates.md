@@ -652,9 +652,6 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 ***
 
-
-***
-
 ## `razorclasslib`
 
 - **`--no-restore`**

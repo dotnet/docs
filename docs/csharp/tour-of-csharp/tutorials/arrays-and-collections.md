@@ -22,7 +22,7 @@ Create a directory named *list-tutorial*. Make that the current directory and ru
 Open *Program.cs* in your favorite editor, and replace the existing code with the following:
 
 ```csharp
-var names = new List<string> { "<name>", "Ana", "Felipe" };
+List<string> names = [ "<name>", "Ana", "Felipe" ];
 foreach (var name in names)
 {
     Console.WriteLine($"Hello {name.ToUpper()}!");
@@ -117,7 +117,7 @@ WorkWithStrings();
 
 void WorkWithStrings()
 {
-    var names = new List<string> { "<name>", "Ana", "Felipe" };
+    List<string> names = [ "<name>", "Ana", "Felipe" ];
     foreach (var name in names)
     {
         Console.WriteLine($"Hello {name.ToUpper()}!");
@@ -173,7 +173,7 @@ You've been using the `string` type in lists so far. Let's make a <xref:System.C
 Add the following to your program after you call `WorkWithStrings()`:
 
 ```csharp
-var fibonacciNumbers = new List<int> {1, 1};
+List<int> fibonacciNumbers = [ 1, 1 ];
 ```
 
 That creates a list of integers, and sets the first two integers to the value 1. These are the first two values of a *Fibonacci Sequence*, a sequence of numbers. Each next Fibonacci number is found by taking the sum of the previous two numbers. Add this code:

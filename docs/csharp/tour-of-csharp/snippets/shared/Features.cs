@@ -140,25 +140,9 @@ class Features
 
     private static void InitializeArray()
     {
-        {
             // <InitializeArray>
-            int[] a = new int[] { 1, 2, 3 };
+            int[] a = [ 1, 2, 3 ];
             // </InitializeArray>
-        }
-        {
-            // <InitializeShortened>
-            int[] a = { 1, 2, 3 };
-            // </InitializeShortened>
-        }
-        {
-            // <InitializeGenerated>
-            int[] t = new int[3];
-            t[0] = 1;
-            t[1] = 2;
-            t[2] = 3;
-            int[] a = t;
-            // </InitializeGenerated>
-
             // <EnumerateArray>
             foreach (int item in a)
             {

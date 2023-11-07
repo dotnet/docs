@@ -3,23 +3,27 @@ title: Known trimming incompatibilities
 description: Identify patterns and frameworks that are known to have problems with trimming
 author: agocke
 ms.author: angocke
-ms.date: 10/08/2021
+ms.date: 11/8/2023
 ---
 # Known trimming incompatibilities
 
-There are some patterns that are known to be incompatible with trimming. Some of these patterns might become compatible as tooling improves or as libraries make modifications to become trimming compatible.
+This article lists patterns that are incompatible with trimming with the current tooling.
 
 ## Reflection-based serializers
 
 Alternative: Reflection-free serializers.
 
-Many uses of reflection can be made trimming-compatible, as described in [Introduction to trim warnings](fixing-warnings.md). However, serializers tend to have complex uses of reflection. Many of these uses can't be made analyzable at build time. Unfortunately, the best option is often to rewrite the system to use source generation instead.
+Many uses of reflection can be made trimming-compatible, as described in [Introduction to trim warnings](fixing-warnings.md). However, serializers tend to have complex uses of reflection. Many of these uses can't be made analyzable at build time. Unfortunately, the best option is often to rewrite the system to use source generation.
 
 Popular reflection-based serializers and their recommended alternatives:
 
-- **Newtonsoft.Json**. Recommended alternative: [source generated System.Text.Json](../../../standard/serialization/system-text-json/source-generation.md)
-- **System.Configuration.ConfigurationManager**. Recommended alternative: [source generated Microsoft.Extensions.Configuration](https://github.com/dotnet/runtime/issues/44493)
-- **System.Runtime.Serialization.Formatters.Binary.BinaryFormatter** Recommended alternative: [Migrate away from BinaryFormatter serialization due to its security and reliability flaws.](../../compatibility/serialization/7.0/binaryformatter-apis-produce-errors.md#recommended-action)
+| Serializers | Alternative |
+| :---------: | :---------: |
+| **Newtonsoft.Json**    | [source generated System.Text.Json](../../../standard/serialization/system-text-json/source-generation.md)    |
+| **System.Configuration.ConfigurationManager** |  [source generated Microsoft.Extensions.Configuration](https://github.com/dotnet/runtime/issues/44493) |
+| **System.Runtime.Serialization.Formatters.Binary.BinaryFormatter** | [Migrate away from BinaryFormatter serialization due to its security and reliability flaws.](../../compatibility/serialization/7.0/binaryformatter-apis-produce-errors.md#recommended-action) |
+
+Runtime code generation via JIT, for example, via <xref:System.Reflection.Emit> is also incompatible with trimming.
 
 ## Dynamic assembly loading and execution
 
@@ -28,6 +32,10 @@ Trimming and dynamic assembly loading is a common problem for systems that suppo
 ## Windows platform incompatibilities
 
 The following sections list known incompatibilities with trimming on Windows.
+
+### NET programming with C++/CLI
+
+[NET programming with C++/CLI](/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp) is not supported with trimming.
 
 ### Built-in COM marshalling
 

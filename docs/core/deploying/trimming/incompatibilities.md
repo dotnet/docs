@@ -19,8 +19,8 @@ Popular reflection-based serializers and their recommended alternatives:
 
 | Serializers | Alternative |
 | :---------: | :---------: |
-| **Newtonsoft.Json**    | [source generated System.Text.Json](../../../standard/serialization/system-text-json/source-generation.md)    |
-| **System.Configuration.ConfigurationManager** |  [source generated Microsoft.Extensions.Configuration](https://github.com/dotnet/runtime/issues/44493) |
+| **Newtonsoft.Json** `                                            ` | [Source generated `System.Text.Json`](../../../standard/serialization/system-text-json/source-generation.md)    |
+| **System.Configuration.ConfigurationManager** `                  ` | [Source generated `Microsoft.Extensions.Configuration`](https://github.com/dotnet/runtime/issues/44493) |
 | **System.Runtime.Serialization.Formatters.Binary.BinaryFormatter** | [Migrate away from BinaryFormatter serialization due to its security and reliability flaws.](../../compatibility/serialization/7.0/binaryformatter-apis-produce-errors.md#recommended-action) |
 
 Runtime code generation via JIT, for example, via <xref:System.Reflection.Emit> is also incompatible with trimming.

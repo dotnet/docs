@@ -440,7 +440,7 @@
 | Microsoft.Azure.Functions.Analyzers | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Analyzers/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Authentication.WebAssembly | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.0)<br>NuGet [1.0.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.1-preview) |  |  |
 | Microsoft.Azure.Functions.Worker | NuGet [1.19.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.19.0) |  |  |
-| Microsoft.Azure.Functions.Worker.ApplicationInsights | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ApplicationInsights/1.0.0)<br>NuGet [1.1.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ApplicationInsights/1.1.0-preview1) |  |  |
+| Microsoft.Azure.Functions.Worker.ApplicationInsights | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ApplicationInsights/1.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Core | NuGet [1.15.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/1.15.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Abstractions | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.3.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |

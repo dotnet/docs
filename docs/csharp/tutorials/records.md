@@ -1,7 +1,7 @@
 ---
 title: Use record types - C# tutorial
 description: Learn about how to use record types, build hierarchies of records, and when to choose records over classes.
-ms.date: 09/30/2021
+ms.date: 11/08/2023
 ---
 # Create record types
 

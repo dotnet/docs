@@ -2,7 +2,7 @@
 title: Creating Metrics
 description: How to add new metrics to a .NET library or application
 ms.topic: tutorial
-ms.date: 10/11/2023
+ms.date: 10/31/2023
 ---
 
 # Creating metrics
@@ -310,37 +310,39 @@ summarize the distribution differently or offer more configuration options.
 
 ### Best practices
 
-- Histograms tend to store a lot more data in memory than other metric types, however, the exact memory usage is determined by the collection tool being used.
+- Histograms tend to store a lot more data in memory than other metric types. However, the exact memory usage is determined by the collection tool being used.
   If you're defining a large number (>100) of Histogram metrics, you may need to give users guidance not to enable them all at the same time, or to configure their tools to save
   memory by reducing precision. Some collection tools may have hard limits on the number of concurrent Histograms they will monitor to prevent excessive memory use.
 
 - Callbacks for all observable instruments are invoked in sequence, so any callback that takes a long time can delay or prevent all metrics from being collected. Favor
   quickly reading a cached value, returning no measurements, or throwing an exception over performing any potentially long-running or blocking operation.
 
+- The ObservableCounter, ObservableUpDownCounter, and ObservableGauge callbacks occur on a thread that's not usually synchronized with the code that updates the values. It's your responsibility to either synchronize memory access or accept the inconsistent values that can result from using unsynchronized access. Common approaches to synchronize access are to use a lock or call <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> and <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType>.
+
 - The <xref:System.Diagnostics.Metrics.Meter.CreateObservableGauge%2A> and <xref:System.Diagnostics.Metrics.Meter.CreateObservableCounter%2A> functions do return an
   instrument object, but in most cases you don't need to save it in a variable because no further interaction with the object is needed. Assigning it to a static variable
-  as we did for the other instruments is legal but error prone, because C# static initialization is lazy and the variable is usually never referenced. Here is an example
+  as we did for the other instruments is legal but error prone, because C# static initialization is lazy and the variable is usually never referenced. Here's an example
   of the problem:
 
-```csharp
-using System;
-using System.Diagnostics.Metrics;
-
-class Program
-{
-    // BEWARE! Static initializers only run when code in a running method refers to a static variable.
-    // These statics will never be initialized because none of them were referenced in Main().
-    //
-    static Meter s_meter = new Meter("HatCo.Store");
-    static ObservableCounter<int> s_coatsSold = s_meter.CreateObservableCounter<int>("hatco.store.coats_sold", () => s_rand.Next(1,10));
-    static Random s_rand = new Random();
-
-    static void Main(string[] args)
-    {
-        Console.ReadLine();
-    }
-}
-```
+  ```csharp
+  using System;
+  using System.Diagnostics.Metrics;
+  
+  class Program
+  {
+      // BEWARE! Static initializers only run when code in a running method refers to a static variable.
+      // These statics will never be initialized because none of them were referenced in Main().
+      //
+      static Meter s_meter = new Meter("HatCo.Store");
+      static ObservableCounter<int> s_coatsSold = s_meter.CreateObservableCounter<int>("hatco.store.coats_sold", () => s_rand.Next(1,10));
+      static Random s_rand = new Random();
+  
+      static void Main(string[] args)
+      {
+          Console.ReadLine();
+      }
+  }
+  ```
 
 ## Descriptions and units
 

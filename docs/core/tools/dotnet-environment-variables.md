@@ -252,10 +252,10 @@ The following scenarios produce the output shown:
 
 * Launch with no profile
   
-    ```dotnetcli
-    $ dotnet run --no-launch-profile
-    DOTNET_LAUNCH_PROFILE=
-    ```
+  ```dotnetcli
+  $ dotnet run --no-launch-profile
+  DOTNET_LAUNCH_PROFILE=
+  ```
 
 ### `NUGET_PACKAGES`
 

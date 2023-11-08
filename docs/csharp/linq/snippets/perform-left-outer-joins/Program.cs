@@ -10,8 +10,8 @@ Pet bluemoon = new("Blue Moon", terry);
 Pet daisy = new("Daisy", magnus);
 
 // Create two lists.
-List<Person> people = new() { magnus, terry, charlotte, arlene };
-List<Pet> pets = new() { barley, boots, whiskers, bluemoon, daisy };
+List<Person> people = [magnus, terry, charlotte, arlene];
+List<Pet> pets = [barley, boots, whiskers, bluemoon, daisy];
 
 var query =
     from person in people

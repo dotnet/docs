@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Orleans.Server" Version="7.2.2" />
-    <PackageReference Include="Microsoft.Orleans.Clustering.Consul" Version="7.2.2" />
+    <PackageReference Include="Microsoft.Orleans.Clustering.Consul" Version="7.2.3" />
   </ItemGroup>
 
 </Project>

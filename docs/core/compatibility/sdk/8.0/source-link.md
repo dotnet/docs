@@ -5,7 +5,7 @@ ms.date: 11/08/2023
 ---
 # Source Link included in the .NET SDK
 
-The [Source Link](https://github.com/dotnet/sourcelink) build tooling is now included in the .NET SDK. Source Link enables packages and applications to embed information about the source control information of the built artifacts. As a side effect, commit information is included in the `InformationalVersion` value of build libraries and applications.
+The [Source Link](https://github.com/dotnet/sourcelink) build tooling is now included in the .NET SDK. Source Link enables packages and applications to embed information about the source control information of the built artifacts. As a side effect, commit information is included in the `InformationalVersion` value of built libraries and applications.
 
 ## Previous behavior
 

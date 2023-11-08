@@ -1,9 +1,9 @@
 ---
-title: "Breaking change: Unlisted packages not installed by default"
+title: "Breaking change: Unlisted packages not installed by default for .NET tools"
 description: Learn about a breaking change in the .NET 8 SDK where `dotnet tool install` no longer installs tools from unlisted versions of NuGet packages.
 ms.date: 11/07/2023
 ---
-# Unlisted packages not installed by default
+# Unlisted packages not installed by default for .NET tools
 
 The [dotnet tool install](../../../tools/dotnet-tool-install.md) commands no longer install tools from [unlisted versions](/nuget/nuget-org/policies/deleting-packages#unlisting-a-package) of NuGet packages by default. You can still force the install by specifying the unlisted version as an exact version surrounded with brackets, for example `--version [5.0.0]`.
 

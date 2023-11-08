@@ -122,6 +122,10 @@ items:
         href: interop/8.0/jsfunctionbinding-constructor.md
       - name: SafeHandle types must have public constructor
         href: interop/8.0/safehandle-constructor.md
+    - name: Networking
+      items:
+      - name: SendFile throws NotSupportedException for connectionless sockets
+        href: networking/8.0/sendfile-connectionless.md
     - name: Reflection
       items:
       - name: IntPtr no longer used for function pointer types
@@ -140,6 +144,8 @@ items:
         href: sdk/8.0/dotnet-publish-config.md
       - name: "'dotnet restore' produces security vulnerability warnings"
         href: sdk/8.0/dotnet-restore-audit.md
+      - name: Implicit `using` for System.Net.Http no longer added
+        href: sdk/8.0/implicit-global-using-netfx.md
       - name: MSBuild custom derived build events deprecated
         href: sdk/8.0/custombuildeventargs.md
       - name: MSBuild respects DOTNET_CLI_UI_LANGUAGE
@@ -172,6 +178,8 @@ items:
         href: windows-forms/8.0/top-level-window-scaling.md
       - name: ImageList.ColorDepth default is Depth32Bit
         href: windows-forms/8.0/imagelist-colordepth.md
+      - name: System.Windows.Extensions doesn't reference System.Drawing.Common
+        href: windows-forms/8.0/extensions-package-deps.md
       - name: TableLayoutStyleCollection throws ArgumentException
         href: windows-forms/8.0/tablelayoutstylecollection.md
       - name: Top-level forms scale size to DPI
@@ -1458,6 +1466,10 @@ items:
         href: maui/7.0/iwindowstatemanager-apis-removed.md
   - name: Networking
     items:
+    - name: .NET 8
+      items:
+      - name: SendFile throws NotSupportedException for connectionless sockets
+        href: networking/8.0/sendfile-connectionless.md
     - name: .NET 7
       items:
       - name: AllowRenegotiation default is false
@@ -1508,6 +1520,8 @@ items:
         href: sdk/8.0/dotnet-publish-config.md
       - name: "'dotnet restore' produces security vulnerability warnings"
         href: sdk/8.0/dotnet-restore-audit.md
+      - name: Implicit `using` for System.Net.Http no longer added
+        href: sdk/8.0/implicit-global-using-netfx.md
       - name: MSBuild custom derived build events deprecated
         href: sdk/8.0/custombuildeventargs.md
       - name: MSBuild respects DOTNET_CLI_UI_LANGUAGE
@@ -1688,6 +1702,8 @@ items:
         href: windows-forms/8.0/top-level-window-scaling.md
       - name: ImageList.ColorDepth default is Depth32Bit
         href: windows-forms/8.0/imagelist-colordepth.md
+      - name: System.Windows.Extensions doesn't reference System.Drawing.Common
+        href: windows-forms/8.0/extensions-package-deps.md
       - name: TableLayoutStyleCollection throws ArgumentException
         href: windows-forms/8.0/tablelayoutstylecollection.md
       - name: Top-level forms scale size to DPI

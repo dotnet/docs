@@ -165,7 +165,7 @@ var serializerOptions = new JsonSerializerOptions
 
 services.AddControllers().AddJsonOptions(
     static options =>
-        options.TypeInfoResolverChain.Add(MyJsonContext.Default));
+        options.JsonSerializerOptions.TypeInfoResolverChain.Add(MyJsonContext.Default));
 ```
 
 :::zone-end
@@ -247,7 +247,7 @@ Because the property is treated as a link-time constant, the previous method doe
 
 In .NET 8 and later versions, most options that you can set using <xref:System.Text.Json.JsonSerializerOptions> can also be set using the <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> attribute. The advantage to setting options via the attribute is that the configuration is specified at compile time, which ensures that the generated `MyContext.Default` property is preconfigured with all the relevant options set.
 
-The following code shows how to set options using the xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> attribute.
+The following code shows how to set options using the <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> attribute.
 
 :::code language="csharp" source="snippets/source-generation/csharp/SerializeOnlyWithOptions.cs" id="JsonSourceGenerationOptions":::
 

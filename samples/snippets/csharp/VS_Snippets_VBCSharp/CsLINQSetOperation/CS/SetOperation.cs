@@ -14,7 +14,7 @@ namespace Sandbox
         private static void Distinct()
         {
             // <Snippet1>
-            string[] planets = { "Mercury", "Venus", "Venus", "Earth", "Mars", "Earth" };
+            string[] planets = ["Mercury", "Venus", "Venus", "Earth", "Mars", "Earth"];
 
             IEnumerable<string> query = from planet in planets.Distinct()
                                         select planet;
@@ -37,8 +37,8 @@ namespace Sandbox
         private static void Except()
         {
             // <Snippet2>
-            string[] planets1 = { "Mercury", "Venus", "Earth", "Jupiter" };
-            string[] planets2 = { "Mercury", "Earth", "Mars", "Jupiter" };
+            string[] planets1 = ["Mercury", "Venus", "Earth", "Jupiter"];
+            string[] planets2 = ["Mercury", "Earth", "Mars", "Jupiter"];
 
             IEnumerable<string> query = from planet in planets1.Except(planets2)
                                         select planet;
@@ -58,8 +58,8 @@ namespace Sandbox
         private static void Intersect()
         {
             // <Snippet3>
-            string[] planets1 = { "Mercury", "Venus", "Earth", "Jupiter" };
-            string[] planets2 = { "Mercury", "Earth", "Mars", "Jupiter" };
+            string[] planets1 = ["Mercury", "Venus", "Earth", "Jupiter"];
+            string[] planets2 = ["Mercury", "Earth", "Mars", "Jupiter"];
 
             IEnumerable<string> query = from planet in planets1.Intersect(planets2)
                                         select planet;
@@ -81,8 +81,8 @@ namespace Sandbox
         private static void Union()
         {
             // <Snippet4>
-            string[] planets1 = { "Mercury", "Venus", "Earth", "Jupiter" };
-            string[] planets2 = { "Mercury", "Earth", "Mars", "Jupiter" };
+            string[] planets1 = ["Mercury", "Venus", "Earth", "Jupiter"];
+            string[] planets2 = ["Mercury", "Earth", "Mars", "Jupiter"];
 
             IEnumerable<string> query = from planet in planets1.Union(planets2)
                                         select planet;

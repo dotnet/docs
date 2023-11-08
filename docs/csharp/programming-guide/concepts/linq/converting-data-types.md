@@ -50,12 +50,13 @@ class CarnivorousPlant : Plant
 
 static void Cast()
 {
-    Plant[] plants = new Plant[] {
+    Plant[] plants = 
+    [
         new CarnivorousPlant { Name = "Venus Fly Trap", TrapType = "Snap Trap" },
         new CarnivorousPlant { Name = "Pitcher Plant", TrapType = "Pitfall Trap" },
         new CarnivorousPlant { Name = "Sundew", TrapType = "Flypaper Trap" },
         new CarnivorousPlant { Name = "Waterwheel Plant", TrapType = "Snap Trap" }
-    };
+    ];
 
     var query = from CarnivorousPlant cPlant in plants
                 where cPlant.TrapType == "Snap Trap"

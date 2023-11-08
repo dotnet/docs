@@ -9,14 +9,14 @@ using System.Linq.Dynamic.Core;
 using ExpressionTreeToString;
 
 // <Initialize>
-var companyNames = new[] {
+string[] companyNames = [
     "Consolidated Messenger", "Alpine Ski House", "Southridge Video",
     "City Power & Light", "Coho Winery", "Wide World Importers",
     "Graphic Design Institute", "Adventure Works", "Humongous Insurance",
     "Woodgrove Bank", "Margie's Travel", "Northwind Traders",
     "Blue Yonder Airlines", "Trey Research", "The Phone Company",
     "Wingtip Toys", "Lucerne Publishing", "Fourth Coffee"
-};
+];
 
 // We're using an in-memory array as the data source, but the IQueryable could have come
 // from anywhere -- an ORM backed by a database, a web request, or any other LINQ provider.

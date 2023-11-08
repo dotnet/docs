@@ -52,10 +52,6 @@ class FindFileByExtension
   
         Console.WriteLine("\r\nThe newest .txt file is {0}. Creation time: {1}",  
             newestFile.FullName, newestFile.CreationTime);  
-  
-        // Keep the console window open in debug mode.  
-        Console.WriteLine("Press any key to exit");  
-        Console.ReadKey();  
     }  
 }  
 ```  

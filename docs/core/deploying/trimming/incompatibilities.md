@@ -20,7 +20,7 @@ The following table lists popular reflection-based serializers and their recomme
 | Serializers | Alternative |
 | :-- | :---------: |
 | **Newtonsoft.Json** | [Source generated `System.Text.Json`](../../../standard/serialization/system-text-json/source-generation.md)    |
-| **System.Configuration.ConfigurationManager** | [Configuration-binding source generator](/dotnet/core/whats-new/dotnet-8) |
+| **System.Configuration.ConfigurationManager** | [Configuration-binding source generator](/dotnet/core/whats-new/dotnet-8#configuration-binding-source-generator) |
 | **System.Runtime.Serialization.Formatters.Binary.BinaryFormatter** | [Migrate away from BinaryFormatter serialization due to its security and reliability flaws.](../../compatibility/serialization/7.0/binaryformatter-apis-produce-errors.md#recommended-action) |
 
 ## Runtime code generation via JIT

@@ -7,15 +7,15 @@ public static class CustomJoins
     public static void CustomJoins1()
     {
         // <cross_join>
-        List<Category> categories = new()
-        {
+        List<Category> categories =
+        [
             new(Name: "Beverages", ID: 001),
             new("Condiments", 002),
             new("Vegetables", 003)
-        };
+        ];
 
-        List<Product> products = new()
-        {
+        List<Product> products =
+        [
             new(Name: "Tea", CategoryID: 001),
             new("Mustard", 002),
             new("Pickles", 002),
@@ -25,7 +25,7 @@ public static class CustomJoins
             new("Melons", 005),
             new("Ice Cream", 007),
             new("Mackerel", 012)
-        };
+        ];
 
         var crossJoinQuery =
             from c in categories

@@ -7,17 +7,17 @@ public static class OrderResultsOfJoin
     public static void OrderResultsOfJoin1()
     {
         // <order_results_of_join_1>
-        List<Category> categories = new()
-        {
+        List<Category> categories =
+        [
             new(Name: "Beverages", ID: 001),
             new("Condiments", 002),
             new("Vegetables", 003),
             new("Grains", 004),
             new("Fruit", 005)
-        };
+        ];
 
-        List<Product> products = new()
-        {
+        List<Product> products =
+        [
             new(Name: "Cola", CategoryID: 001),
             new("Tea", 001),
             new("Mustard", 002),
@@ -26,7 +26,7 @@ public static class OrderResultsOfJoin
             new("Bok Choy", 003),
             new("Peaches", 005),
             new("Melons", 005),
-        };
+        ];
 
         var groupJoinQuery2 =
             from category in categories

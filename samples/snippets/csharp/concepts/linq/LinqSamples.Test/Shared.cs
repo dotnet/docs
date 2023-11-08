@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-using Xunit;
+﻿using Xunit;
 
 // Tests need to be carried out synchronously, otherwise the console output for different tests gets intermingled
 [assembly: CollectionBehavior(CollectionBehavior.CollectionPerAssembly)]

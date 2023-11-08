@@ -4,8 +4,8 @@ namespace LinqSamples;
 
 public static class NullValues
 {
-    static readonly Category[] categories = { };
-    static readonly Product[] products = { };
+    static readonly Category[] categories = [];
+    static readonly Product[] products = [];
 
     public static void NullValues1()
     {

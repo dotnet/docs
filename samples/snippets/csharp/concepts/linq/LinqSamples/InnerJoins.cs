@@ -11,16 +11,16 @@ public static class InnerJoins
         Person arlene = new("Arlene", "Huff");
         Person rui = new("Rui", "Raposo");
 
-        List<Person> people = new() { magnus, terry, charlotte, arlene, rui };
+        List<Person> people = [magnus, terry, charlotte, arlene, rui];
 
-        List<Pet> pets = new()
-        {
+        List<Pet> pets =
+        [
             new(Name: "Barley", Owner: terry),
             new("Boots", terry),
             new("Whiskers", charlotte),
             new("Blue Moon", rui),
             new("Daisy", magnus),
-        };
+        ];
 
         // Create a collection of person-pet pairs. Each element in the collection
         // is an anonymous type containing both the person's name and their pet's name.
@@ -59,16 +59,16 @@ public static class InnerJoins
         Person arlene = new("Arlene", "Huff");
         Person rui = new("Rui", "Raposo");
 
-        List<Person> people = new() { magnus, terry, charlotte, arlene, rui };
+        List<Person> people = [magnus, terry, charlotte, arlene, rui];
 
-        List<Pet> pets = new()
-        {
+        List<Pet> pets =
+        [
             new(Name: "Barley", Owner: terry),
             new("Boots", terry),
             new("Whiskers", charlotte),
             new("Blue Moon", rui),
             new("Daisy", magnus),
-        };
+        ];
 
         // <inner_joins_method_syntax_1>
         var query =
@@ -91,20 +91,20 @@ public static class InnerJoins
     public static string CompositeKey()
     {
         // <inner_joins_2>
-        List<Employee> employees = new()
-        {
+        List<Employee> employees =
+        [
             new(FirstName: "Terry", LastName: "Adams", EmployeeID: 522459),
             new("Charlotte", "Weiss", 204467),
             new("Magnus", "Hedland", 866200),
             new("Vernette", "Price", 437139)
-        };
+        ];
 
-        List<Student> students = new()
-        {
+        List<Student> students =
+        [
             new(FirstName: "Vernette", LastName: "Price", StudentID: 9562),
             new("Terry", "Earls", 9870),
             new("Terry", "Adams", 9913)
-        };
+        ];
 
         // Join the two data sources based on a composite key consisting of first and last name,
         // to determine which employees are also students.
@@ -140,20 +140,20 @@ public static class InnerJoins
 
     public static string CompositeKeyMethodSyntax()
     {
-        List<Employee> employees = new()
-        {
+        List<Employee> employees =
+        [
             new(FirstName: "Terry", LastName: "Adams", EmployeeID: 522459),
             new("Charlotte", "Weiss", 204467),
             new("Magnus", "Hedland", 866200),
             new("Vernette", "Price", 437139)
-        };
+        ];
 
-        List<Student> students = new()
-        {
+        List<Student> students =
+        [
             new(FirstName: "Vernette", LastName: "Price", StudentID: 9562),
             new("Terry", "Earls", 9870),
             new("Terry", "Adams", 9913)
-        };
+        ];
 
         // <inner_joins_method_syntax_2>
         var query = employees.Join(
@@ -184,26 +184,26 @@ public static class InnerJoins
         Person rui = new("Rui", "Raposo");
         Person phyllis = new("Phyllis", "Harris");
 
-        List<Person> people = new() { magnus, terry, charlotte, arlene, rui, phyllis };
+        List<Person> people = [magnus, terry, charlotte, arlene, rui, phyllis];
 
-        List<Cat> cats = new()
-        {
+        List<Cat> cats =
+        [
             new(Name: "Barley", Owner: terry),
             new("Boots", terry),
             new("Whiskers", charlotte),
             new("Blue Moon", rui),
             new("Daisy", magnus),
-        };
+        ];
 
-        List<Dog> dogs = new()
-        {
+        List<Dog> dogs =
+        [
             new(Name: "Four Wheel Drive", Owner: phyllis),
             new("Duke", magnus),
             new("Denim", terry),
             new("Wiley", charlotte),
             new("Snoopy", rui),
             new("Snickers", arlene),
-        };
+        ];
 
         // The first join matches Person and Cat.Owner from the list of people and
         // cats, based on a common Person. The second join matches dogs whose names start
@@ -250,26 +250,26 @@ public static class InnerJoins
         Person rui = new("Rui", "Raposo");
         Person phyllis = new("Phyllis", "Harris");
 
-        List<Person> people = new() { magnus, terry, charlotte, arlene, rui, phyllis };
+        List<Person> people = [magnus, terry, charlotte, arlene, rui, phyllis];
 
-        List<Cat> cats = new()
-        {
+        List<Cat> cats =
+        [
             new(Name: "Barley", Owner: terry),
             new("Boots", terry),
             new("Whiskers", charlotte),
             new("Blue Moon", rui),
             new("Daisy", magnus),
-        };
+        ];
 
-        List<Dog> dogs = new()
-        {
+        List<Dog> dogs =
+        [
             new(Name: "Four Wheel Drive", Owner: phyllis),
             new("Duke", magnus),
             new("Denim", terry),
             new("Wiley", charlotte),
             new("Snoopy", rui),
             new("Snickers", arlene),
-        };
+        ];
 
         // <inner_joins_method_syntax_3>
         var query = people.Join(cats,
@@ -299,16 +299,16 @@ public static class InnerJoins
         Person charlotte = new("Charlotte", "Weiss");
         Person arlene = new("Arlene", "Huff");
 
-        List<Person> people = new() { magnus, terry, charlotte, arlene };
+        List<Person> people = [magnus, terry, charlotte, arlene];
 
-        List<Pet> pets = new()
-        {
+        List<Pet> pets =
+        [
             new(Name: "Barley", Owner: terry),
             new("Boots", terry),
             new("Whiskers", charlotte),
             new("Blue Moon", terry),
             new("Daisy", magnus),
-        };
+        ];
 
         var query1 =
             from person in people
@@ -369,16 +369,16 @@ public static class InnerJoins
         Person charlotte = new("Charlotte", "Weiss");
         Person arlene = new("Arlene", "Huff");
 
-        List<Person> people = new() { magnus, terry, charlotte, arlene };
+        List<Person> people = [magnus, terry, charlotte, arlene];
 
-        List<Pet> pets = new()
-        {
+        List<Pet> pets =
+        [
             new(Name: "Barley", Owner: terry),
             new("Boots", terry),
             new("Whiskers", charlotte),
             new("Blue Moon", terry),
             new("Daisy", magnus),
-        };
+        ];
 
         // <inner_joins_method_syntax_4>
         var query1 = people.GroupJoin(pets,

@@ -18,7 +18,7 @@ public class ReturnQueryFromMethod
                 where i < 4
                 select i.ToString();
 
-        int[] nums = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        int[] nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
         // QueryMethod1 returns a query as the value of the method.
         var myQuery1 = QueryMethod1(nums);

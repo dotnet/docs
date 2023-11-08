@@ -144,6 +144,8 @@ items:
         href: sdk/8.0/dotnet-publish-config.md
       - name: "'dotnet restore' produces security vulnerability warnings"
         href: sdk/8.0/dotnet-restore-audit.md
+      - name: Implicit `using` for System.Net.Http no longer added
+        href: sdk/8.0/implicit-global-using-netfx.md
       - name: MSBuild custom derived build events deprecated
         href: sdk/8.0/custombuildeventargs.md
       - name: MSBuild respects DOTNET_CLI_UI_LANGUAGE
@@ -1518,6 +1520,8 @@ items:
         href: sdk/8.0/dotnet-publish-config.md
       - name: "'dotnet restore' produces security vulnerability warnings"
         href: sdk/8.0/dotnet-restore-audit.md
+      - name: Implicit `using` for System.Net.Http no longer added
+        href: sdk/8.0/implicit-global-using-netfx.md
       - name: MSBuild custom derived build events deprecated
         href: sdk/8.0/custombuildeventargs.md
       - name: MSBuild respects DOTNET_CLI_UI_LANGUAGE

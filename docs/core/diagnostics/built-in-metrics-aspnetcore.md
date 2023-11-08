@@ -40,14 +40,6 @@ see [here](available-counters.md).
   - [Instrument: `signalr.server.connection.duration`](#instrument-signalrserverconnectionduration)
   - [Instrument: `signalr.server.active_connections`](#instrument-signalrserveractive_connections)
 
-## Meter: `Microsoft.AspNetCore.HeaderParsing`
-
-### Instrument: `aspnetcore.header_parsing.parse_errors`
-
-| Name | Instrument Type | Unit (UCUM) | Description |
-|--|--|--|--|
-| `aspnetcore.header_parsing.parse_errors` | Counter | `{parse_error}` | Number of errors that occurred wh
-
 ## Meter: `Microsoft.AspNetCore.Hosting`
 
 ### Instrument: `http.server.request.duration`
@@ -215,7 +207,15 @@ Available staring in: ASP.NET Core 8.0
 | `global_limiter` | Lease request was rejected by the global limiter |
 | `request_canceled` | Lease request was canceled |
 
-Available staring in: ASP.NET Core 8.0en parsing HTTP request headers. |
+Available staring in: ASP.NET Core 8.0
+
+## Meter: `Microsoft.AspNetCore.HeaderParsing`
+
+### Instrument: `aspnetcore.header_parsing.parse_errors`
+
+| Name | Instrument Type | Unit (UCUM) | Description |
+|--|--|--|--|
+| `aspnetcore.header_parsing.parse_errors` | Counter | `{parse_error}` | Number of errors that occurred when parsing HTTP request headers. |
 
 | Attribute | Type | Description | Examples | Presence |
 |--|--|--|--|--|

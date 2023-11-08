@@ -29,9 +29,9 @@ This run-time change is the next stage of the [BinaryFormatter obsoletion plan](
 
 ## Recommended action
 
-**The best course of action is to migrate away from `BinaryFormatter` due to its security and reliability flaws.**
+**The best course of action is to migrate away from `BinaryFormatter` due to its security and reliability flaws.** For more information, see [Preferred alternatives](../../../../standard/serialization/binaryformatter-security-guide.md#preferred-alternatives).
 
-However, should you need to continue using `BinaryFormatter`, you can set a compatibility switch in your project file to re-enable `BinaryFormatter` functionality. For more information, see the [Recommended action](../7.0/binaryformatter-apis-produce-errors.md#recommended-action) section of the .NET 7 breaking change notification. That compatibility switch continues to be honored in .NET 8.
+If you need to continue using `BinaryFormatter`, you can set a compatibility switch in your project file to re-enable `BinaryFormatter` functionality. For more information, see the [Recommended action](../7.0/binaryformatter-apis-produce-errors.md#recommended-action) section of the .NET 7 breaking change notification. That compatibility switch continues to be honored in .NET 8.
 
 ## Affected APIs
 

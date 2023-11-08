@@ -207,6 +207,7 @@ The [dotnet run](dotnet-run.md) command sets this variable to the selected launc
 
 Given the following *launchSettings.json* file:
 
+```json
 {
   "profiles": {
     "First": {
@@ -217,6 +218,7 @@ Given the following *launchSettings.json* file:
     }
   }
 }
+```
 
 And the following *Program.cs* file:
 

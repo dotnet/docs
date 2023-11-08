@@ -6,7 +6,7 @@ public static class Index
     {
         // <intro>
         // Specify the data source.
-        int[] scores = { 97, 92, 81, 60 };
+        int[] scores = [ 97, 92, 81, 60 ];
 
         // Define the query expression.
         IEnumerable<int> scoreQuery =

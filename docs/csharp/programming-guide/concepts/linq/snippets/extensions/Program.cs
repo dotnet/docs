@@ -1,7 +1,7 @@
 ﻿using Custom.Linq.Extensions;
 
 // <MedianUsage>
-double[] numbers = { 1.9, 2, 8, 4, 5.7, 6, 7.2, 0 };
+double[] numbers = [1.9, 2, 8, 4, 5.7, 6, 7.2, 0];
 var query = numbers.Median();
 
 Console.WriteLine($"double: Median = {query}");
@@ -10,12 +10,12 @@ Console.WriteLine($"double: Median = {query}");
 // </MedianUsage>
 
 // <OverloadUsage>
-double[] numbers1 = { 1.9, 2, 8, 4, 5.7, 6, 7.2, 0 };
+double[] numbers1 = [1.9, 2, 8, 4, 5.7, 6, 7.2, 0];
 var query1 = numbers1.Median();
 
 Console.WriteLine($"double: Median = {query1}");
 
-int[] numbers2 = { 1, 2, 3, 4, 5 };
+int[] numbers2 = [1, 2, 3, 4, 5];
 var query2 = numbers2.Median();
 
 Console.WriteLine($"int: Median = {query2}");
@@ -25,7 +25,7 @@ Console.WriteLine($"int: Median = {query2}");
 // </OverloadUsage>
 
 // <GenericUsage>
-int[] numbers3 = { 1, 2, 3, 4, 5 };
+int[] numbers3 = [1, 2, 3, 4, 5];
 
 /*
     You can use the num => num lambda expression as a parameter for the Median method
@@ -36,7 +36,7 @@ var query3 = numbers3.Median(num => num);
 
 Console.WriteLine($"int: Median = {query3}");
 
-string[] numbers4 = { "one", "two", "three", "four", "five" };
+string[] numbers4 = ["one", "two", "three", "four", "five"];
 
 // With the generic overload, you can also use numeric properties of objects.
 var query4 = numbers4.Median(str => str.Length);
@@ -48,7 +48,7 @@ Console.WriteLine($"string: Median = {query4}");
 // </GenericUsage>
 
 // <SequenceUsage>
-string[] strings = { "a", "b", "c", "d", "e" };
+string[] strings = ["a", "b", "c", "d", "e"];
 
 var query5 = strings.AlternateElements();
 

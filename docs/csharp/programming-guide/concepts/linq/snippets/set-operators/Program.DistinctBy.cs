@@ -8,7 +8,7 @@ public static partial class Program
 
         // <Planets>
         Planet[] planets =
-        {
+        [
             Planet.Mercury,
             Planet.Venus,
             Planet.Earth,
@@ -18,7 +18,7 @@ public static partial class Program
             Planet.Uranus,
             Planet.Neptune,
             Planet.Pluto
-        };
+        ];
         // </Planets>
 
         // <DistinctBy>

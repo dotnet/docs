@@ -8,22 +8,22 @@ public static partial class Program
 
         // <Planets>
         Planet[] firstFivePlanetsFromTheSun =
-        {
+        [
             Planet.Mercury,
             Planet.Venus,
             Planet.Earth,
             Planet.Mars,
             Planet.Jupiter
-        };
+        ];
 
         Planet[] lastFivePlanetsFromTheSun =
-        {
+        [
             Planet.Mars,
             Planet.Jupiter,
             Planet.Saturn,
             Planet.Uranus,
             Planet.Neptune
-        };
+        ];
         // </Planets>
 
         // <UnionBy>

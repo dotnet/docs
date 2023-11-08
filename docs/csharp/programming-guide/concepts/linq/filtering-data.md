@@ -26,7 +26,7 @@ Filtering refers to the operation of restricting the result set to contain only 
  The following example uses the `where` clause to filter from an array those strings that have a specific length.  
   
 ```csharp  
-string[] words = { "the", "quick", "brown", "fox", "jumps" };  
+string[] words = [ "the", "quick", "brown", "fox", "jumps" ];  
   
 IEnumerable<string> query = from word in words  
                             where word.Length == 3  

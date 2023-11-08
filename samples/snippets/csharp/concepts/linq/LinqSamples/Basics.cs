@@ -263,7 +263,7 @@ public static class Basics
     public static void Basics18()
     {
         // <basics18>
-        string[] names = { "Svetlana Omelchenko", "Claire O'Donnell", "Sven Mortensen", "Cesar Garcia" };
+        string[] names = ["Svetlana Omelchenko", "Claire O'Donnell", "Sven Mortensen", "Cesar Garcia" ];
         IEnumerable<string> queryFirstNames =
             from name in names
             let firstName = name.Split(' ')[0]

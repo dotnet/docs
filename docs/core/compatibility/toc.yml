@@ -156,8 +156,12 @@ items:
         href: sdk/8.0/arch-option.md
       - name: SDK uses a smaller RID graph
         href: sdk/8.0/rid-graph.md
-      - name: Trimming may not be used with .NET Standard or .NET Framework
+      - name: Source Link included in the .NET SDK
+        href: sdk/8.0/source-link.md
+      - name: Trimming can't be used with .NET Standard or .NET Framework
         href: sdk/8.0/trimming-unsupported-targetframework.md
+      - name: Unlisted packages not installed by default
+        href: sdk/8.0/unlisted-versions.md
       - name: Version requirements for .NET 8 SDK
         href: sdk/8.0/version-requirements.md
     - name: Serialization
@@ -1532,8 +1536,12 @@ items:
         href: sdk/8.0/arch-option.md
       - name: SDK uses a smaller RID graph
         href: sdk/8.0/rid-graph.md
-      - name: Trimming may not be usedwith .NET Standard or .NET Framework
+      - name: Source Link included in the .NET SDK
+        href: sdk/8.0/source-link.md
+      - name: Trimming can't be used with .NET Standard or .NET Framework
         href: sdk/8.0/trimming-unsupported-targetframework.md
+      - name: Unlisted packages not installed by default
+        href: sdk/8.0/unlisted-versions.md
       - name: Version requirements for .NET 8 SDK
         href: sdk/8.0/version-requirements.md
     - name: .NET 7

@@ -5,7 +5,7 @@ ms.date: 09/05/2023
 ---
 # Version requirements for .NET 8 SDK
 
-Per the [published support rules](../../../porting/versioning-sdk-msbuild-vs.md#targeting-and-support-rules), we update the minimum Visual Studio and MSBuild version for each new major release with a one quarter delay. For the .NET 8 release, 8.0.100 requires version 17.7 to be loaded but only supports targeting .NET 7 in that version. To target `net8.0`, you must use version 17.8 or later.
+Per the [published support rules](../../../porting/versioning-sdk-msbuild-vs.md#targeting-and-support-rules), the minimum Visual Studio and MSBuild version for each new major release is updated with a one quarter delay. For the .NET 8 release, 8.0.100 requires version 17.7 to be loaded but only supports targeting .NET 7 in that version. To target `net8.0`, you must use version 17.8 or later.
 
 ## Version introduced
 
@@ -18,6 +18,10 @@ Per the [published support rules](../../../porting/versioning-sdk-msbuild-vs.md#
 ## New behavior
 
 Versions 8.0.1xx of the .NET SDK require Visual Studio version 17.7 and MSBuild version 17.7.
+
+## Type of breaking change
+
+This change can affect [source compatibility](../../categories.md#source-compatibility).
 
 ## Reason for change
 

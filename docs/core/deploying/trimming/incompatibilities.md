@@ -37,7 +37,7 @@ The following sections list known incompatibilities with trimming on Windows.
 
 ### NET programming with C++/CLI
 
-[NET programming with C++/CLI](/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp) is not supported with trimming.
+[NET programming with C++/CLI](/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp) currently doesn't support trimming.
 
 ### Built-in COM marshalling
 

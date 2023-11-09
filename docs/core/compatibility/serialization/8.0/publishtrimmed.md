@@ -9,7 +9,7 @@ Projects that enable the [PublishTrimmed](../../../deploying/trimming/trimming-o
 
 ## Previous behavior
 
-Prior to this change, projects that have the `PublishTrimmed` property enabled, that is, `<PublishTrimmed>true</PublishTrimmed>` published a trimmed application. However, the reflection-based default serialization behavior wasn't necessarily disabled. In other words, depending on what code got trimmed, the follow code might or might not succeed serialization, or might or might not output the correct serialization data.
+Prior to this change, projects that have the `PublishTrimmed` property enabled, that is, `<PublishTrimmed>true</PublishTrimmed>`, published a trimmed application. However, the reflection-based default serialization behavior wasn't necessarily disabled. Depending on what code got trimmed, the follow code might or might not succeed serialization, or might or might not output the correct serialization data.
 
 ```csharp
 JSonSerializer.Serialize(new { Value = 42 });
@@ -35,7 +35,9 @@ This change ensures that trimmed applications use appropriate defaults. It also 
 
 ## Recommended action
 
-You can get back the original behavior by explicitly enabling the `JsonSerializerIsReflectionEnabledByDefault` property in your project file:
+To ensure that serialization suceeds, we recommend that you migrate your trimmed applications to use the source generator.
+
+However, if you must use reflection, you can revert to the original behavior by explicitly enabling the `JsonSerializerIsReflectionEnabledByDefault` property in your project file:
 
 ```xml
 <PropertyGroup>
@@ -43,8 +45,6 @@ You can get back the original behavior by explicitly enabling the `JsonSerialize
   <JsonSerializerIsReflectionEnabledByDefault>true</JsonSerializerIsReflectionEnabledByDefault>
 </PropertyGroup>
 ```
-
-However, we strongly recommend that you take appropriate action to migrate your trimmed applications to use the source generator.
 
 ## Affected APIs
 

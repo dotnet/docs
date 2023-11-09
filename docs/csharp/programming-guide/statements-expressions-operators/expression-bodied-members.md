@@ -73,7 +73,7 @@ An expression body definition for a finalizer typically contains cleanup stateme
 
 The following example defines a finalizer that uses an expression body definition to indicate that the finalizer has been called.
 
-[!code-csharp[expression-bodied-finalizer](../classes-and-structs/snippets/finalizers/ExpressionBodiedMembers/expr-bodied-finalizer.cs#1)]
+[!code-csharp[expression-bodied-finalizer](../classes-and-structs/snippets/finalizers/expr-bodied-finalizer.cs#1)]
 
 For more information, see [Finalizers (C# Programming Guide)](../classes-and-structs/finalizers.md).
 

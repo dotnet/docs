@@ -6,9 +6,9 @@ namespace SportsExample;
 
 public class Sports
 {
-   private string[] types = { "Baseball", "Basketball", "Football",
+   private string[] types = [ "Baseball", "Basketball", "Football",
                               "Hockey", "Soccer", "Tennis",
-                              "Volleyball" };
+                              "Volleyball" ];
 
    public string this[int i]
    {

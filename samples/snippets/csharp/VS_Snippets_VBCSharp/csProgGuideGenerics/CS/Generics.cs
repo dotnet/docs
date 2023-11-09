@@ -402,7 +402,7 @@ namespace CsCsrefProgrammingGenerics
         {
             static void Main()
             {
-                int[] arr = { 0, 1, 2, 3, 4 };
+                int[] arr = [0, 1, 2, 3, 4];
                 List<int> list = new List<int>();
 
                 for (int x = 5; x < 10; x++)

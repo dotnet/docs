@@ -2,8 +2,9 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8</TargetFramework>
     <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>IterationStatements</RootNamespace>
     <StartupObject>IterationStatements.Program</StartupObject>

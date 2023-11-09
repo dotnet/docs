@@ -67,7 +67,7 @@ class AccountTest
 
     static void Update(Account account)
     {
-        decimal[] amounts = { 0, 2, -3, 6, -2, -1, 8, -5, 11, -6 };
+        decimal[] amounts = [0, 2, -3, 6, -2, -1, 8, -5, 11, -6];
         foreach (var amount in amounts)
         {
             if (amount >= 0)

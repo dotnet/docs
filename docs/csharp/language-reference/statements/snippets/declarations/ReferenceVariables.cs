@@ -1,4 +1,4 @@
-public static class ReferenceVariables
+﻿public static class ReferenceVariables
 {
     public static void Examples()
     {
@@ -27,7 +27,7 @@ public static class ReferenceVariables
         // <RefReassign>
         void Display(int[] s) => Console.WriteLine(string.Join(" ", s));
 
-        int[] xs = { 0, 0, 0 };
+        int[] xs = [0, 0, 0];
         Display(xs);
 
         ref int element = ref xs[0];
@@ -47,7 +47,7 @@ public static class ReferenceVariables
     private static void RefReadonly()
     {
         // <RefReadonly>
-        int[] xs = { 1, 2, 3 };
+        int[] xs = [1, 2, 3];
 
         ref readonly int element = ref xs[0];
         // element = 100;  error CS0131: The left-hand side of an assignment must be a variable, property or indexer

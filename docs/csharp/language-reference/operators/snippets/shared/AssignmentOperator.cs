@@ -11,7 +11,7 @@ public static class AssignmentOperator
     private static void Simple()
     {
         // <SnippetSimple>
-        var numbers = new List<double>() { 1.0, 2.0, 3.0 };
+        List<double> numbers = [1.0, 2.0, 3.0];
 
         Console.WriteLine(numbers.Capacity);
         numbers.Capacity = 100;

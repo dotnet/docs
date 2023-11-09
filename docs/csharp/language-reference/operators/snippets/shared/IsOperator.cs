@@ -52,11 +52,11 @@ public static class IsOperator
     private static void ListPattern()
     {
         // <ListPatterns>
-        int[] empty = { };
-        int[] one = { 1 };
-        int[] odd = { 1, 3, 5 };
-        int[] even = { 2, 4, 6 };
-        int[] fib = { 1, 1, 2, 3, 5 };
+        int[] empty = [];
+        int[] one = [1];
+        int[] odd = [1, 3, 5];
+        int[] even = [2, 4, 6];
+        int[] fib = [1, 1, 2, 3, 5];
 
         Console.WriteLine(odd is [1, _, 2, ..]);   // false
         Console.WriteLine(fib is [1, _, 2, ..]);   // true

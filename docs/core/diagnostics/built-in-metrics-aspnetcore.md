@@ -11,9 +11,6 @@ This article describes the metrics built-in for ASP.NET Core produced using the
 <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> API. For a listing of metrics based on the older [EventCounters](event-counters.md) API,
 see [here](available-counters.md).
 
-- [Meter: `Microsoft.AspNetCore.HeaderParsing`](#meter-microsoftaspnetcoreheaderparsing)
-  - [Instrument: `aspnetcore.header_parsing.parse_errors`](#instrument-aspnetcoreheader_parsingparse_errors)
-  - [Instrument: `aspnetcore.header_parsing.cache_accesses`](#instrument-aspnetcoreheader_parsingcache_accesses)
 - [Meter: `Microsoft.AspNetCore.Hosting`](#meter-microsoftaspnetcorehosting)
   - [Instrument: `http.server.request.duration`](#instrument-httpserverrequestduration)
   - [Instrument: `http.server.active_requests`](#instrument-httpserveractive_requests)
@@ -27,6 +24,9 @@ see [here](available-counters.md).
   - [Instrument: `aspnetcore.rate_limiting.queued_requests`](#instrument-aspnetcorerate_limitingqueued_requests)
   - [Instrument: `aspnetcore.rate_limiting.request.time_in_queue`](#instrument-aspnetcorerate_limitingrequesttime_in_queue)
   - [Instrument: `aspnetcore.rate_limiting.requests`](#instrument-aspnetcorerate_limitingrequests)
+- [Meter: `Microsoft.AspNetCore.HeaderParsing`](#meter-microsoftaspnetcoreheaderparsing)
+  - [Instrument: `aspnetcore.header_parsing.parse_errors`](#instrument-aspnetcoreheader_parsingparse_errors)
+  - [Instrument: `aspnetcore.header_parsing.cache_accesses`](#instrument-aspnetcoreheader_parsingcache_accesses)
 - [Meter: `Microsoft.AspNetCore.Server.Kestrel`](#meter-microsoftaspnetcoreserverkestrel)
   - [Instrument: `kestrel.active_connections`](#instrument-kestrelactive_connections)
   - [Instrument: `kestrel.connection.duration`](#instrument-kestrelconnectionduration)
@@ -39,43 +39,6 @@ see [here](available-counters.md).
 - [Meter: `Microsoft.AspNetCore.Http.Connections`](#meter-microsoftaspnetcorehttpconnections)
   - [Instrument: `signalr.server.connection.duration`](#instrument-signalrserverconnectionduration)
   - [Instrument: `signalr.server.active_connections`](#instrument-signalrserveractive_connections)
-
-## Meter: `Microsoft.AspNetCore.HeaderParsing`
-
-### Instrument: `aspnetcore.header_parsing.parse_errors`
-
-| Name | Instrument Type | Unit (UCUM) | Description |
-|--|--|--|--|
-| `aspnetcore.header_parsing.parse_errors` | Counter | `{parse_error}` | Number of errors that occurred when parsing HTTP request headers. |
-
-| Attribute | Type | Description | Examples | Presence |
-|--|--|--|--|--|
-| `aspnetcore.header_parsing.header.name` | string | The header name. | `Content-Type` | Always |
-| `error.type` | string | The error message. | `Unable to parse media type value.` | Always |
-
-Available starting in: .NET 8.0.
-
-### Instrument: `aspnetcore.header_parsing.cache_accesses`
-
-The metric is emitted only for HTTP request header parsers that support caching.
-
-| Name | Instrument Type | Unit (UCUM) | Description |
-| ---- | --------------- | ----------- | ----------- |
-| `aspnetcore.header_parsing.cache_accesses` | Counter | `{cache_access}` | Number of times a cache storing parsed header values was accessed. |
-
-| Attribute | Type | Description | Examples | Presence |
-|---|---|---|---|---|
-| `aspnetcore.header_parsing.header.name` | string | The header name. | `Content-Type` | Always |
-| `aspnetcore.header_parsing.cache_access.type` | string | A value indicating whether the header's value was found in the cache or not. | `Hit`; `Miss` | Always |
-
-`aspnetcore.header_parsing.cache_access.type` is one of the following:
-
-| Value | Description |
-|---|---|
-| `Hit` | The header's value was found in the cache. |
-| `Miss` | The header's value wasn't found in the cache. |
-
-Available starting in: .NET 8.0.
 
 ## Meter: `Microsoft.AspNetCore.Hosting`
 
@@ -245,6 +208,43 @@ Available staring in: ASP.NET Core 8.0
 | `request_canceled` | Lease request was canceled |
 
 Available staring in: ASP.NET Core 8.0
+
+## Meter: `Microsoft.AspNetCore.HeaderParsing`
+
+### Instrument: `aspnetcore.header_parsing.parse_errors`
+
+| Name | Instrument Type | Unit (UCUM) | Description |
+|--|--|--|--|
+| `aspnetcore.header_parsing.parse_errors` | Counter | `{parse_error}` | Number of errors that occurred when parsing HTTP request headers. |
+
+| Attribute | Type | Description | Examples | Presence |
+|--|--|--|--|--|
+| `aspnetcore.header_parsing.header.name` | string | The header name. | `Content-Type` | Always |
+| `error.type` | string | The error message. | `Unable to parse media type value.` | Always |
+
+Available starting in: .NET 8.0.
+
+### Instrument: `aspnetcore.header_parsing.cache_accesses`
+
+The metric is emitted only for HTTP request header parsers that support caching.
+
+| Name | Instrument Type | Unit (UCUM) | Description |
+| ---- | --------------- | ----------- | ----------- |
+| `aspnetcore.header_parsing.cache_accesses` | Counter | `{cache_access}` | Number of times a cache storing parsed header values was accessed. |
+
+| Attribute | Type | Description | Examples | Presence |
+|---|---|---|---|---|
+| `aspnetcore.header_parsing.header.name` | string | The header name. | `Content-Type` | Always |
+| `aspnetcore.header_parsing.cache_access.type` | string | A value indicating whether the header's value was found in the cache or not. | `Hit`; `Miss` | Always |
+
+`aspnetcore.header_parsing.cache_access.type` is one of the following:
+
+| Value | Description |
+|---|---|
+| `Hit` | The header's value was found in the cache. |
+| `Miss` | The header's value wasn't found in the cache. |
+
+Available starting in: .NET 8.0.
 
 ## Meter: `Microsoft.AspNetCore.Server.Kestrel`
 

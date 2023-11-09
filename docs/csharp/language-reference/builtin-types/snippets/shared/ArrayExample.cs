@@ -16,7 +16,7 @@
     static void Main()
     {
         // Declare and initialize an array.
-        string[] weekDays = { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
+        string[] weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
         // Display the array elements.
         DisplayArray(weekDays);
         Console.WriteLine();

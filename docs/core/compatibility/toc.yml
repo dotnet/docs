@@ -50,6 +50,8 @@ items:
         href: core-libraries/8.0/decodefromutf8-whitespace.md
       - name: Boolean-backed enum type support removed
         href: core-libraries/8.0/bool-backed-enum.md
+      - name: Enumerable.Sum throws new OverflowException for some inputs
+        href: core-libraries/8.0/enumerable-sum.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
       - name: GC.GetGeneration might return Int32.MaxValue
@@ -1110,6 +1112,8 @@ items:
         href: core-libraries/8.0/decodefromutf8-whitespace.md
       - name: Boolean-backed enum type support removed
         href: core-libraries/8.0/bool-backed-enum.md
+      - name: Enumerable.Sum throws new OverflowException for some inputs
+        href: core-libraries/8.0/enumerable-sum.md
       - name: FileStream writes when pipe is closed
         href: core-libraries/8.0/filestream-disposed-pipe.md
       - name: GC.GetGeneration might return Int32.MaxValue

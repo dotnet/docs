@@ -1,37 +1,37 @@
 ---
-title: Use AppCAT for .NET with Visual Studio
-description: Learn how to assess .NET applications with AppCAT for .NET to evaluate their readiness to migrate to Azure with Visual Studio.
+title: Use Azure Migrate application and code assessment for .NET with Visual Studio
+description: Learn how to assess .NET applications to evaluate their readiness to migrate to Azure with Visual Studio.
 ms.topic: conceptual
-ms.date: 10/16/2023
+ms.date: 11/09/2023
 author: codemillmatt
 ms.author: masoucou
 ---
 
-# Analyze projects with Azure AppCAT tool with Visual Studio
+# Analyze projects with Visual Studio
 
-AppCAT (Application Code Assessment Toolkit) for .NET is a tool to assess .NET source code to identify replatforming and migration opportunities to Azure. It helps you modernize and replatform large-scale .NET applications through a broad range of transformations, use cases, and code patterns.
+Azure Migrate application and code assessment for .NET is a tool to assess .NET source code to identify replatforming and migration opportunities to Azure. It helps you modernize and replatform large-scale .NET applications through a broad range of transformations, use cases, and code patterns.
 
-This guide describes how to use the AppCAT for .NET Visual Studio extension to both scan and interpret the results of the scan.
+This guide describes how to use the application and code assessment Visual Studio extension to both scan and interpret the results of the scan.
 
-If you have not installed the AppCAT for .NET Visual Studio extension, please follow [these instructions first](./install.md).
+If you have not installed the Visual Studio extension, please follow [these instructions first](./install.md).
 
 ## Scan your application
 
-AppCAT for .NET lets you decide which projects in your solution to scan to identify migration opportunities to Azure. Follow these steps to scan your application.
+The application and code assessment lets you decide which projects in your solution to scan to identify migration opportunities to Azure. Follow these steps to scan your application.
 
 1. Open the solution containing the projects you want to migrate to Azure in Visual Studio 2022.
 1. Right click on any of the projects in the Solution Explorer window and select **Replatform to Azure**.
   ![Screenshot of the replatform to Azure menu item in Visual Studio](./media/replatform.png)
-1. AppCAT will start and give you teh option to start a new analysis report or open an existing one. It will also display any recent analysis reports.
+1. The utility will start and give you the option to start a new analysis report or open an existing one. It will also display any recent analysis reports.
   ![Screenshot of the AppCAT tool showing the recent analysis reports](./media/appcat-start-screen.png)
-1. Click on **New report** and AppCAT will display the projects in your solution in a treeview. It will give you an option to select which projects to analyze. AppCAT will have pre-selected projects for you that it thinks are most likely to have compatibility issues. You can change the selection by checking or unchecking the boxes next to the projects.
+1. Click on **New report** and it will display the projects in your solution in a treeview. It will give you an option to select which projects to analyze. You fill find projects pre-selected for you that are most likely to have compatibility issues. You can change the selection by checking or unchecking the boxes next to the projects.
   ![Screenshot of the Azure AppCAT tool showing the projects in the solution](./media/analyze-project-selection.png)
-1. Click the **Analyze** button to start the scan. AppCAT will scan all the code in the selected projects to look for potential issues when migrating to Azure. When it's finished, you'll see a dashboard of its results.
+1. Click the **Analyze** button to start the scan. The selected projects are scanned to look for potential issues when migrating to Azure. When finished, you'll see a dashboard of results.
   ![Screenshot of the Azure AppCAT tool showing the results of the scan](./media/analyze-results.png)
 
 ## Interpret the results
 
-After the projects have been scanned, AppCAT presents its results in a dashboard format. In this section we'll describe the different sections of the dashboard and how to interpret them.
+After the projects have been scanned, the application and code assessment presents its results in a dashboard format. In this section we'll describe the different sections of the dashboard and how to interpret them.
 
 ### Dashboard view
 
@@ -57,7 +57,7 @@ The **Summary** section of the dashboard contains several terms that are worth d
 
 ### Projects view
 
-Click on the **Projects** tab below the **Dashboard** tab on the left side of the AppCAT result's screen to see the number of issues, incidents, and the estimated effort to fix those issues by each project scanned.
+Click on the **Projects** tab below the **Dashboard** tab on the left side of the result's screen to see the number of issues, incidents, and the estimated effort to fix those issues by each project scanned.
 
 ![Screenshot of the projects dashboard](./media/projects-overview.png)
 
@@ -79,13 +79,13 @@ Finally, by clicking on the **Issues** tab, you can see the issues organzied by 
 
 ### Aggregate issues
 
-Click on the **Aggregate** tab below the **Projects** tab on the left side of AppCAT result's screen to see the issues organized by the rule that triggered them. These are all of the issues across all of the projects scanned, including the number of incidents and an estimated story points effort. You can drill down into the rules to see the exact files and locations that needs to be addressed and the effort to fix. You can also save the state of each individual incident as you address them.
+Click on the **Aggregate** tab below the **Projects** tab on the left side of the result's screen to see the issues organized by the rule that triggered them. These are all of the issues across all of the projects scanned, including the number of incidents and an estimated story points effort. You can drill down into the rules to see the exact files and locations that needs to be addressed and the effort to fix. You can also save the state of each individual incident as you address them.
 
 ![Screenshot of the aggregate dashboard](./media/aggregate-dashboard.png)
 
 ### Export results
 
-AppCAT for .NET also lets you export all of the results it finds into HTML, JSON, or CSV file formats. Click on the **Export** button and select the file format you want to export to as well as the file location.
+The application and code assessment also lets you export all of the results it finds into HTML, JSON, or CSV file formats. Click on the **Export** button and select the file format you want to export to as well as the file location.
 
 Exporting to HTML will produce a page that renders similar to the following:
 
@@ -93,6 +93,6 @@ Exporting to HTML will produce a page that renders similar to the following:
 
 ## Next steps
 
-### AppCAT for .NET CLI
+### Application and code assessment for .NET CLI
 
-For information on how to use and interpret results from the .NET CLI version of AppCAT, see [Use AppCAT for .NET with the .NET CLI](./dotnet-cli.md).
+For information on how to use and interpret results from the application and code assessment for .NET CLI, see [Use with the .NET CLI](./dotnet-cli.md).

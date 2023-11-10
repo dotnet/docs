@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 10/25/2023
+ms.date: 11/09/2023
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -179,11 +179,13 @@ The following MSBuild properties are documented in this section:
 - [PublishDocumentationFiles](#publishdocumentationfiles)
 - [PublishReferencesDocumentationFiles](#publishreferencesdocumentationfiles)
 - [PublishRelease](#publishrelease)
+- [PublishSelfContained](#publishselfcontained)
 - [RollForward](#rollforward)
 - [RuntimeFrameworkVersion](#runtimeframeworkversion)
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
 - [SatelliteResourceLanguages](#satelliteresourcelanguages)
+- [SelfContained](#selfcontained)
 - [UseAppHost](#useapphost)
 
 ### AppendTargetFrameworkToOutputPath
@@ -359,6 +361,18 @@ The `PublishRelease` property informs `dotnet publish` to use the `Release` conf
 > - This property does not affect the behavior of `dotnet build /t:Publish`, and it only changes the configuration only when publishing via the .NET CLI.
 > - .NET 7 SDK only: To use `PublishRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PUBLISH_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). When publishing a solution with this variable enabled, the executable project's `PublishRelease` value takes precedence and flows the new default configuration to any other projects in the solution. If a solution contains multiple executable or top-level projects with differing values of `PublishRelease`, the solution won't successfully publish. For solutions that have many projects, use of this setting increases the time required to publish.
 
+### PublishSelfContained
+
+The `PublishSelfContained` property informs `dotnet publish` to publish an app as a [self-contained app](../deploying/index.md#publish-self-contained). This property is useful when you can't use the `--self-contained` argument for the [dotnet publish](../tools/dotnet-publish.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `PublishSelfContained` MSBuild property to a project or *Directory.Build.Props* file.
+
+This property was introduced in .NET 7. It's similar to the [SelfContained](#selfcontained) property, except that it's specific to the `publish` verb. It's recommended to use `PublishSelfContained` instead of `SelfContained`.
+
+```xml
+<PropertyGroup>
+  <PublishSelfContained>true</PublishSelfContained>
+</PropertyGroup>
+```
+
 ### RollForward
 
 The `RollForward` property controls how the application chooses a runtime when multiple runtime versions are available. This value is output to the *.runtimeconfig.json* as the `rollForward` setting.
@@ -426,6 +440,18 @@ The `SatelliteResourceLanguages` property lets you specify which languages you w
 > - To specify multiple languages as an argument to `dotnet publish`, you must add *three pairs* of quotation marks around the language identifiers. For example:
 >
 >   `dotnet msbuild multi.msbuildproj -p:SatelliteResourceLanguages="""de;en"""`
+
+### SelfContained
+
+The `SelfContained` property informs `dotnet build` and `dotnet publish` to build or publish an app as a [self-contained app](../deploying/index.md#publish-self-contained). This property is useful when you can't use the `--self-contained` argument with the [dotnet](../tools/dotnet.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `SelfContained` MSBuild property to a project or *Directory.Build.Props* file.
+
+This property is similar to the [PublishSelfContained](#publishselfcontained) property. It's recommended to use `PublishSelfContained` instead of `SelfContained` when possible.
+
+```xml
+<PropertyGroup>
+  <SelfContained>true</SelfContained>
+</PropertyGroup>
+```
 
 ### UseAppHost
 

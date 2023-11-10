@@ -28,7 +28,7 @@ Other articles in the collection include:
 
 - [Python](/azure/developer/python/get-started-app-chat-template)
 - [JavaScript](/azure/developer/javascript/get-started-app-chat-template)
-- [Java](/azure/developer/java/get-started-app-chat-template)
+- [Java](/azure/developer/java/quickstarts/get-started-app-chat-template)
 
 ## Architectural overview
 

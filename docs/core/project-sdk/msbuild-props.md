@@ -185,6 +185,7 @@ The following MSBuild properties are documented in this section:
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
 - [SatelliteResourceLanguages](#satelliteresourcelanguages)
+- [SelfContained](#selfcontained)
 - [UseAppHost](#useapphost)
 
 ### AppendTargetFrameworkToOutputPath

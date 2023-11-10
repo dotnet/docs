@@ -35,9 +35,6 @@ The .NET Core resource fallback process involves the following steps:
     - If the managed assembly corresponding to the satellite assembly was loaded from a file, check the directory of the managed assembly for a subdirectory that matches the requested <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType> (for example, `es-MX`).
 
         > [!NOTE]
-        > This feature was not implemented in .NET Core before 3.0.
-        >
-        > [!NOTE]
         > On Linux and macOS, the subdirectory is case-sensitive and must either:
         >
         > - Exactly match case.

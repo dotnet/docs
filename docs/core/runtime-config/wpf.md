@@ -20,4 +20,3 @@ This article details the settings you can use to configure Windows Presentation 
 | **Environment variable** | N/A | N/A | |
 
 [!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
-```

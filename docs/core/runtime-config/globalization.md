@@ -64,6 +64,8 @@ Project file:
 | **runtimeconfig.json** | `Switch.System.Globalization.EnforceJapaneseEraYearRanges` | `false` - relaxed range checks<br/>`true` - overflows cause an exception |
 | **Environment variable** | N/A | N/A |
 
+[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
+
 ## Japanese date parsing
 
 - Determines whether a string that contains either "1" or "Gannen" as the year parses successfully or whether only "1" is supported.
@@ -74,6 +76,8 @@ Project file:
 | - | - | - |
 | **runtimeconfig.json** | `Switch.System.Globalization.EnforceLegacyJapaneseDateParsing` | `false` - "Gannen" or "1" is supported<br/>`true` - only "1" is supported |
 | **Environment variable** | N/A | N/A |
+
+[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
 
 ## Japanese year format
 
@@ -86,6 +90,8 @@ Project file:
 | **runtimeconfig.json** | `Switch.System.Globalization.FormatJapaneseFirstYearAsANumber` | `false` - format as "Gannen"<br/>`true` - format as number |
 | **Environment variable** | N/A | N/A |
 
+[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
+
 ## NLS
 
 - Determines whether .NET uses National Language Support (NLS) or International Components for Unicode (ICU) globalization APIs for Windows apps. .NET 5 and later versions use ICU globalization APIs by default on Windows 10 May 2019 Update and later versions.
@@ -96,6 +102,8 @@ Project file:
 | - | - | - | - |
 | **runtimeconfig.json** | `System.Globalization.UseNls` | `false` - Use ICU globalization APIs<br/>`true` - Use NLS globalization APIs | .NET 5 |
 | **Environment variable** | `DOTNET_SYSTEM_GLOBALIZATION_USENLS` | `false` - Use ICU globalization APIs<br/>`true` - Use NLS globalization APIs | .NET 5 |
+
+[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
 
 ## Predefined cultures
 

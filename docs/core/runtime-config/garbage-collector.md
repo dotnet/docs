@@ -242,6 +242,8 @@ For more information about some of these settings, see the [Middle ground betwee
 | **Environment variable** | `DOTNET_GCHeapCount` | *hexadecimal value* | .NET 6 |
 | **app.config for .NET Framework** | [GCHeapCount](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md) | *decimal value* | .NET Framework 4.6.2 |
 
+[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
+
 #### Examples
 
 *runtimeconfig.json* file:
@@ -283,6 +285,8 @@ For more information about some of these settings, see the [Middle ground betwee
 | **Environment variable** | `DOTNET_GCHeapAffinitizeMask` | *hexadecimal value* | .NET 6 |
 | **app.config for .NET Framework** | [GCHeapAffinitizeMask](../../framework/configure-apps/file-schema/runtime/gcheapaffinitizemask-element.md) | *decimal value* | .NET Framework 4.6.2 |
 
+[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
+
 #### Examples
 
 *runtimeconfig.json* file:
@@ -321,6 +325,8 @@ For more information about some of these settings, see the [Middle ground betwee
 | **runtimeconfig.json** | `System.GC.HeapAffinitizeRanges` | Comma-separated list of processor numbers or ranges of processor numbers.<br/>Unix example: "1-10,12,50-52,70"<br/>Windows example: "0:1-10,0:12,1:50-52,1:70" | .NET Core 3.0 |
 | **Environment variable** | `COMPlus_GCHeapAffinitizeRanges` | Comma-separated list of processor numbers or ranges of processor numbers.<br/>Unix example: "1-10,12,50-52,70"<br/>Windows example: "0:1-10,0:12,1:50-52,1:70" | .NET Core 3.0 |
 | **Environment variable** | `DOTNET_GCHeapAffinitizeRanges` | Comma-separated list of processor numbers or ranges of processor numbers.<br/>Unix example: "1-10,12,50-52,70"<br/>Windows example: "0:1-10,0:12,1:50-52,1:70" | .NET 6 |
+
+[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
 
 #### Examples
 
@@ -363,6 +369,8 @@ For more information about some of these settings, see the [Middle ground betwee
 | **Environment variable** | `DOTNET_GCCpuGroup` | `0` - disabled<br/>`1` - enabled | .NET 6 |
 | **app.config for .NET Framework** | [GCCpuGroup](../../framework/configure-apps/file-schema/runtime/gccpugroup-element.md) | `false` - disabled<br/>`true` - enabled |  |
 
+[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
+
 > [!NOTE]
 > To configure the common language runtime (CLR) to also distribute threads from the thread pool across all CPU groups, enable the [Thread_UseAllCpuGroups element](../../framework/configure-apps/file-schema/runtime/thread-useallcpugroups-element.md) option. For .NET Core apps, you can enable this option by setting the value of the `DOTNET_Thread_UseAllCpuGroups` environment variable to `1`.
 
@@ -378,6 +386,8 @@ For more information about some of these settings, see the [Middle ground betwee
 | **Environment variable** | `COMPlus_GCNoAffinitize` | `0` - affinitize<br/>`1` - don't affinitize | .NET Core 3.0 |
 | **Environment variable** | `DOTNET_GCNoAffinitize` | `0` - affinitize<br/>`1` - don't affinitize | .NET 6 |
 | **app.config for .NET Framework** | [GCNoAffinitize](../../framework/configure-apps/file-schema/runtime/gcnoaffinitize-element.md) | `false` - affinitize<br/>`true` - don't affinitize | .NET Framework 4.6.2 |
+
+[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
 
 #### Examples
 
@@ -418,6 +428,8 @@ For more information about some of these settings, see the [Middle ground betwee
 | **runtimeconfig.json** | `System.GC.HeapHardLimit` | *decimal value* | .NET Core 3.0 |
 | **Environment variable** | `COMPlus_GCHeapHardLimit` | *hexadecimal value* | .NET Core 3.0 |
 | **Environment variable** | `DOTNET_GCHeapHardLimit` | *hexadecimal value* | .NET 6 |
+
+[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
 
 #### Examples
 
@@ -463,6 +475,8 @@ For more information about some of these settings, see the [Middle ground betwee
 | **runtimeconfig.json** | `System.GC.HeapHardLimitPercent` | *decimal value* | .NET Core 3.0 |
 | **Environment variable** | `COMPlus_GCHeapHardLimitPercent` | *hexadecimal value* | .NET Core 3.0 |
 | **Environment variable** | `DOTNET_GCHeapHardLimitPercent` | *hexadecimal value* | .NET 6 |
+
+[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
 
 #### Examples
 
@@ -516,6 +530,8 @@ You can specify the GC's allowable heap usage on a per-object-heap basis. The di
 | **Environment variable** | `COMPlus_GCHeapHardLimitPOH` | *hexadecimal value* | .NET 5 |
 | **Environment variable** | `DOTNET_GCHeapHardLimitPOH` | *hexadecimal value* | .NET 6 |
 
+These configuration settings don't have specific MSBuild properties. However, you can add a `RuntimeHostConfigurationOption` MSBuild item instead. Use the *runtimeconfig.json* setting name as the value of the `Include` attribute. For an example, see [MSBuild properties](../index.md#msbuild-properties).
+
 > [!TIP]
 > If you're setting the option in *runtimeconfig.json*, specify a decimal value. If you're setting the option as an environment variable, specify a hexadecimal value. For example, to specify a heap hard limit of 200 mebibytes (MiB), the values would be 209715200 for the JSON file and 0xC800000 or C800000 for the environment variable.
 
@@ -546,6 +562,8 @@ You can specify the GC's allowable heap usage on a per-object-heap basis. The di
 | **Environment variable** | `COMPlus_GCHeapHardLimitPOHPercent` | *hexadecimal value* | .NET 5 |
 | **Environment variable** | `DOTNET_GCHeapHardLimitPOHPercent` | *hexadecimal value* | .NET 6 |
 
+These configuration settings don't have specific MSBuild properties. However, you can add a `RuntimeHostConfigurationOption` MSBuild item instead. Use the *runtimeconfig.json* setting name as the value of the `Include` attribute. For an example, see [MSBuild properties](../index.md#msbuild-properties).
+
 > [!TIP]
 > If you're setting the option in *runtimeconfig.json*, specify a decimal value. If you're setting the option as an environment variable, specify a hexadecimal value. For example, to limit the heap usage to 30%, the values would be 30 for the JSON file and 0x1E or 1E for the environment variable.
 
@@ -563,6 +581,8 @@ The high memory load threshold can be adjusted by the `DOTNET_GCHighMemPercent` 
 | **runtimeconfig.json** | `System.GC.HighMemoryPercent` | *decimal value* | .NET 5 |
 | **Environment variable** | `COMPlus_GCHighMemPercent` | *hexadecimal value* | .NET Core 3.0<br/>.NET Framework 4.7.2 |
 | **Environment variable** | `DOTNET_GCHighMemPercent` | *hexadecimal value* | .NET 6 |
+
+[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
 
 > [!TIP]
 > If you're setting the option in *runtimeconfig.json*, specify a decimal value. If you're setting the option as an environment variable, specify a hexadecimal value. For example, to set the high memory threshold to 75%, the values would be 75 for the JSON file and 0x4B or 4B for the environment variable.
@@ -653,6 +673,8 @@ Project file:
 | **Environment variable** | `DOTNET_GCLOHThreshold` | *hexadecimal value* | .NET 6 |
 | **app.config for .NET Framework** | [GCLOHThreshold](../../framework/configure-apps/file-schema/runtime/gclohthreshold-element.md) | *decimal value* | .NET Framework 4.8 |
 
+[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
+
 #### Examples
 
 *runtimeconfig.json* file:
@@ -703,6 +725,8 @@ Project file:
 | **Environment variable** | `COMPlus_GCConserveMemory` | `0` -`9` | .NET Framework 4.8 |
 | **Environment variable** | `DOTNET_GCConserveMemory` | `0` -`9` | .NET 6 |
 | **app.config for .NET Framework** | [GCConserveMemory](../../framework/configure-apps/file-schema/runtime/gcconservememory-element.md) | `0` -`9` | .NET Framework 4.8 |
+
+[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
 
 Example *app.config* file:
 

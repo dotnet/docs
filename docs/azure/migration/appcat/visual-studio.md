@@ -21,20 +21,20 @@ The application and code assessment lets you decide which projects in your solut
 
 1. Open the solution containing the projects you want to migrate to Azure in Visual Studio 2022.
 1. Right click on any of the projects in the Solution Explorer window and select **Replatform to Azure**.
-    ![Screenshot of the replatform to Azure menu item in Visual Studio](./media/replatform.png)
+    ![Screenshot of the replatform to Azure menu item in Visual Studio](./media/vs/replatform.png)
 1. The utility will start and give you the option to start a new analysis report or open an existing one. It will also display any recent analysis reports.
-    ![Screenshot of the AppCAT tool showing the recent analysis reports](./media/appcat-start-screen.png)
+    ![Screenshot showing the recent analysis reports](./media/vs/appcat-start-screen.png)
 1. Click on **New report** and it will display the projects in your solution in a treeview. It will give you an option to select which projects to analyze. You fill find projects pre-selected for you that are most likely to have compatibility issues. You can change the selection by checking or unchecking the boxes next to the projects.
-    ![Screenshot of the Azure AppCAT tool showing the projects in the solution](./media/analyze-project-selection.png)
+    ![Screenshot showing the projects in the solution](./media/vs/analyze-project-selection.png)
 1. Click the **Next** button and you'll be presented with the option to analyze **Source code and settings**, **Binary dependencies**, or both.
-    ![Screenshot of the product component selection screen](./media/analyze-project-component-selection.png)
+    ![Screenshot of the product component selection screen](./media/vs/analyze-project-component-selection.png)
     > [!NOTE]
     > The **source code and settings** option will only scan the source code in the projects you selected on the previous screen. The **Binary dependencies** option will scan any dependencies (such as NuGet packages) your projects rely on. You can expect to see many more issues identified when **binary dependencies** is selected.
     > You should consider selecting only **source code and settings** first to figure out what issues reside in your code and fix those before runnig the **binary dependencies** scan.
     >
 
 1. Click the **Analyze** button to start the scan. The selected projects are scanned to look for potential issues when migrating to Azure. When finished, you'll see a dashboard of results.
-  ![Screenshot of the Azure AppCAT tool showing the results of the scan](./media/analyze-results.png)
+  ![Screenshot showing the results of the scan](./media/vs/analyze-results.png)
 
 ## Interpret the results
 
@@ -51,9 +51,9 @@ Here are the issue severity classifications:
 * **Potential** - we are not sure if it is necessarily a blocking problem, but raised just in case.
 * **Informational** - the issue was raised only for informational purpose and is not required to be resolved.
 
-![Screenshot of the Azure AppCAT tool dashboard](./media/dashboard-results.png)
+![Screenshot of the application and code assessment tool for .NET dashboard](./media/vs/dashboard-results.png)
 
-The dashboard displays a graph of the category of each issue found. The categories can range from HTTP, to database, to scaling, and so on. The categories are based upon rules that the AppCAT tool uses to identify issues.
+The dashboard displays a graph of the category of each issue found. The categories can range from HTTP, to database, to scaling, and so on. The categories are based upon rules used to identify issues.
 
 The **Summary** section of the dashboard contains several terms that are worth defining as you'll see them in other screens.
 
@@ -66,29 +66,29 @@ The **Summary** section of the dashboard contains several terms that are worth d
 
 Click on the **Projects** tab below the **Dashboard** tab on the left side of the result's screen to see the number of issues, incidents, and the estimated effort to fix those issues by each project scanned.
 
-![Screenshot of the projects dashboard](./media/projects-overview.png)
+![Screenshot of the projects dashboard](./media/vs/projects-overview.png)
 
 You can drill down to see the issues found in each project by clicking on the project name. This will show a screen similar to the overall dashboard but scoped to the selected project.
 
-![Screenshot of the projects dashboard](./media/project-dashboard.png)
+![Screenshot of the projects dashboard](./media/vs/project-dashboard.png)
 
 At the top of the project dashboard you'll find 3 tabs: **Dashboard**, **Components**, and **Issues**.
 
-Click on the **Components** tab to see which files the incidents of the issues AppCAT identified reside in. You can drill down into the file to see the rule that triggered the incident, a description of the rule, the exact position in the code where the issue exists, and an estimation of the effort it will take to fix. You can also mark the issue's state as you progress in replatforming your application: **Active**, **Fixed**, or **Ignored**.
+Click on the **Components** tab to see which files the incidents of the issues identified reside in. You can drill down into the file to see the rule that triggered the incident, a description of the rule, the exact position in the code where the issue exists, and an estimation of the effort it will take to fix. You can also mark the issue's state as you progress in replatforming your application: **Active**, **Fixed**, or **Ignored**.
 
 You can click the **Save** button in the upper right corner to save your progress addressing the incidents.
 
-![Screenshot of the project component dashboard](./media/project-component-dashboard.png)
+![Screenshot of the project component dashboard](./media/vs/project-component-dashboard.png)
 
 Finally, by clicking on the **Issues** tab, you can see the issues organzied by the rules which triggered them. You can drill down into the rules to see the exact file location that needs to be addressed and the effort to fix. You can also save the state of the individual incident in each file as you address them.
 
-![Screenshot of the project issues dashboard](./media/project-issue-dashboard.png)
+![Screenshot of the project issues dashboard](./media/vs/project-issue-dashboard.png)
 
 ### Aggregate issues
 
 Click on the **Aggregate** tab below the **Projects** tab on the left side of the result's screen to see the issues organized by the rule that triggered them. These are all of the issues across all of the projects scanned, including the number of incidents and an estimated story points effort. You can drill down into the rules to see the exact files and locations that needs to be addressed and the effort to fix. You can also save the state of each individual incident as you address them.
 
-![Screenshot of the aggregate dashboard](./media/aggregate-dashboard.png)
+![Screenshot of the aggregate dashboard](./media/vs/aggregate-dashboard.png)
 
 ### Export results
 
@@ -96,7 +96,7 @@ The application and code assessment also lets you export all of the results it f
 
 Exporting to HTML will produce a page that renders similar to the following:
 
-![Screenshot of the html export results](./media/html-export.png)
+![Screenshot of the html export results](./media/vs/html-export.png)
 
 ## Next steps
 

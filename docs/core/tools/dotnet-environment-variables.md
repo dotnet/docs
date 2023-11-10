@@ -233,6 +233,9 @@ Specifies whether data about the .NET tools usage is collected and sent to Micro
 
 If `DOTNET_SKIP_FIRST_TIME_EXPERIENCE` is set to `true`, the `NuGetFallbackFolder` won't be expanded to disk and a shorter welcome message and telemetry notice will be shown.
 
+> [!NOTE]
+> This environment variable is no longer supported in .NET Core 3.0 and beyond.
+
 ### `DOTNET_MULTILEVEL_LOOKUP`
 
 Specifies whether the .NET runtime, shared framework, or SDK are resolved from the global location. If not set, it defaults to 1 (logical `true`). Set the value to 0 (logical `false`) to not resolve from the global location and have isolated .NET installations. For more information about multi-level lookup, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).

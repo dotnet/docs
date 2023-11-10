@@ -41,8 +41,11 @@ The following examples show uses of collection expressions:
 // Create an array:
 int[] a = [1, 2, 3, 4, 5, 6, 7, 8];
 
+// Create a list:
+List<string> b = ["one", "two", "three"];
+
 // Create a span
-Span<int> b  = ['a', 'b', 'c', 'd', 'e', 'f', 'h', 'i'];
+Span<char> c  = ['a', 'b', 'c', 'd', 'e', 'f', 'h', 'i'];
 
 // Create a jagged 2D array:
 int[][] twoD = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];

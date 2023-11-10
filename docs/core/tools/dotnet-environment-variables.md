@@ -169,6 +169,24 @@ Configures the runtime to pause during startup and wait for the _Diagnostics IPC
 
 When set to `1`, enables debugging, profiling, and other diagnostics via the [Diagnostic Port](../diagnostics/diagnostic-port.md). Defaults to 1.
 
+### `DOTNET_EnableDiagnostics_IPC`
+
+> [!NOTE]
+> Available since .NET 8
+When set to `1`, enables the [Diagnostic Port](../diagnostics/diagnostic-port.md). Defaults to 1.
+
+### `DOTNET_EnableDiagnostics_Debugger`
+
+> [!NOTE]
+> Available since .NET 8
+When set to `1`, enables debugging. Defaults to 1.
+
+### `DOTNET_EnableDiagnostics_Profiler`
+
+> [!NOTE]
+> Available since .NET 8
+When set to `1`, enables profiling. Defaults to 1.
+
 ### EventPipe variables
 
 See [EventPipe environment variables](../diagnostics/eventpipe.md#trace-using-environment-variables) for more information.

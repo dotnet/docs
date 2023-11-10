@@ -56,6 +56,16 @@ This article details the settings you can use to configure threading in .NET.
 }
 ```
 
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Threading.ThreadPool.MinThreads": 4
+   }
+}
+```
+
 Project file:
 
 ```xml
@@ -89,6 +99,16 @@ Project file:
       "configProperties": {
          "System.Threading.ThreadPool.MaxThreads": 20
       }
+   }
+}
+```
+
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Threading.ThreadPool.MaxThreads": 20
    }
 }
 ```
@@ -129,6 +149,16 @@ Project file:
       "configProperties": {
          "System.Threading.ThreadPool.UseWindowsThreadPool": true
       }
+   }
+}
+```
+
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Threading.ThreadPool.UseWindowsThreadPool": true
    }
 }
 ```
@@ -180,6 +210,16 @@ In some cases, the thread pool detects work items that block its threads. To com
 }
 ```
 
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Threading.ThreadPool.Blocking.ThreadsToAddWithoutDelay_ProcCountFactor": 5
+   }
+}
+```
+
 ## `AutoreleasePool` for managed threads
 
 This option configures whether each managed thread receives an implicit [NSAutoreleasePool](https://developer.apple.com/documentation/foundation/nsautoreleasepool) when running on a supported macOS platform.
@@ -200,6 +240,16 @@ This option configures whether each managed thread receives an implicit [NSAutor
       "configProperties": {
          "System.Threading.Thread.EnableAutoreleasePool": true
       }
+   }
+}
+```
+
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Threading.Thread.EnableAutoreleasePool": true
    }
 }
 ```

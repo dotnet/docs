@@ -13,7 +13,7 @@ Azure Migrate application and code assessment for .NET is a tool to assess .NET 
 
 This guide describes how to use the application and code assessment Visual Studio extension to both scan and interpret the results of the scan.
 
-If you have not installed the .NET CLI tool, please follow [these instructions first](./install.md#install-the-NET-global-tool).
+If you have not installed the .NET CLI tool, please follow [these instructions first](./install.md).
 
 ## Scan your application
 

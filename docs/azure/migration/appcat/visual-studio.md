@@ -66,7 +66,7 @@ The **Summary** section of the dashboard contains several terms that are worth d
 
 Click on the **Projects** tab below the **Dashboard** tab on the left side of the result's screen to see the number of issues, incidents, and the estimated effort to fix those issues by each project scanned.
 
-![Screenshot of the projects dashboard](./media/vs/projects-overview.png)
+![Screenshot of the overall results dashboard](./media/vs/projects-overview.png)
 
 You can drill down to see the issues found in each project by clicking on the project name. This will show a screen similar to the overall dashboard but scoped to the selected project.
 

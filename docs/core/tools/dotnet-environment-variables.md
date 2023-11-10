@@ -234,7 +234,7 @@ Specifies whether data about the .NET tools usage is collected and sent to Micro
 If `DOTNET_SKIP_FIRST_TIME_EXPERIENCE` is set to `true`, the `NuGetFallbackFolder` won't be expanded to disk and a shorter welcome message and telemetry notice will be shown.
 
 > [!NOTE]
-> This environment variable is no longer supported in .NET Core 3.0 and beyond.
+> This environment variable is no longer supported in .NET Core 3.0 and later.
 > Use [`DOTNET_NOLOGO`](#dotnet_nologo) as a replacement.
 
 ### `DOTNET_MULTILEVEL_LOOKUP`

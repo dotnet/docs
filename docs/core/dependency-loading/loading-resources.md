@@ -25,13 +25,14 @@ The .NET Core resource fallback process involves the following steps:
 1. Determine the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> instance. In all cases, the `active` instance is the executing assembly's <xref:System.Runtime.Loader.AssemblyLoadContext>.
 
 2. The `active` instance loads a satellite assembly for the requested culture in the following priority order:
+
     - Check its cache.
 
     - If `active` is the <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> instance, run the [default satellite (resource) assembly probing](default-probing.md#satellite-resource-assembly-probing) logic.
 
     - Call the <xref:System.Runtime.Loader.AssemblyLoadContext.Load%2A?displayProperty=nameWithType> function.
 
-    - If the managed assembly corresponding to the satellite assembly was loaded from a file, check the directory of the managed assembly for a subdirectory that matches the requested <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType> (for example `es-MX`).
+    - If the managed assembly corresponding to the satellite assembly was loaded from a file, check the directory of the managed assembly for a subdirectory that matches the requested <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType> (for example, `es-MX`).
 
         > [!NOTE]
         > This feature was not implemented in .NET Core before 3.0.

@@ -235,6 +235,7 @@ If `DOTNET_SKIP_FIRST_TIME_EXPERIENCE` is set to `true`, the `NuGetFallbackFolde
 
 > [!NOTE]
 > This environment variable is no longer supported in .NET Core 3.0 and beyond.
+> Use [`DOTNET_NOLOGO`](#dotnet_nologo) as a replacement.
 
 ### `DOTNET_MULTILEVEL_LOOKUP`
 

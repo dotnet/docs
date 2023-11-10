@@ -31,6 +31,16 @@ ms.date: 05/18/2020
 }
 ```
 
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Globalization.Invariant": true
+   }
+}
+```
+
 Project file:
 
 ```xml

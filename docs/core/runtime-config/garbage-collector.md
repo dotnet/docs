@@ -13,8 +13,8 @@ Settings are arranged into groups on this page. The settings within each group a
 >
 > - These configurations are only read by the runtime when the GC is initialized (usually this means during the process startup time). If you change an environment variable when a process is already running, the change won't be reflected in that process. Settings that can be changed through APIs at run time, such as [latency level](../../standard/garbage-collection/latency.md), are omitted from this page.
 > - Because GC is per process, it rarely ever makes sense to set these configurations at the machine level. For example, you wouldn't want every .NET process on a machine to use server GC or the same heap hard limit.
-> - For number values, use decimal notation for settings in the *runtimeconfig.json* file and hexadecimal notation for environment variable settings. For hexadecimal values, you can specify them with or without the "0x" prefix.
-> - If you're using the environment variables, .NET 6 standardizes on the prefix `DOTNET_` instead of `COMPlus_`. However, the `COMPlus_` prefix will continue to work. If you're using a previous version of the .NET runtime, you should still use the `COMPlus_` prefix, for example, `COMPlus_gcServer`.
+> - For number values, use decimal notation for settings in the *runtimeconfig.json* or *runtimeconfig.template.json* file and hexadecimal notation for environment variable settings. For hexadecimal values, you can specify them with or without the "0x" prefix.
+> - If you're using the environment variables, .NET 6 and later versions standardize on the prefix `DOTNET_` instead of `COMPlus_`. However, the `COMPlus_` prefix will continue to work. If you're using a previous version of the .NET runtime, you should still use the `COMPlus_` prefix, for example, `COMPlus_gcServer`.
 
 ## Ways to specify the configuration
 
@@ -22,8 +22,8 @@ For different versions of the .NET runtime, there are different ways to specify 
 
 | Config location      | .NET versions this location applies to | Formats  | How it's interpreted                                         |
 | -------------------- | -------------------------------------- | -------- | ------------------------------------------------------------ |
-| runtimeconfig.json file | .NET Core                           | n        | n is interpreted as a decimal value.                         |
-| Environment variable | .NET Framework, .NET Core              | 0xn or n | n is interpreted as a hex value in either format             |
+| runtimeconfig.json file/</br>runtimeconfig.template.json file | .NET (Core)                           | n        | n is interpreted as a decimal value.                         |
+| Environment variable | .NET Framework, .NET (Core)              | 0xn or n | n is interpreted as a hex value in either format             |
 | app.config file      | .NET Framework                         | 0xn      | n is interpreted as a hex value<sup>1</sup>                  |
 
 <sup>1</sup> You can specify a value without the `0x` prefix for an app.config file setting, but it's not recommended. On .NET Framework 4.8+, due to a bug, a value specified without the `0x` prefix is interpreted as hexadecimal, but on previous versions of .NET Framework, it's interpreted as decimal. To avoid having to change your config, use the `0x` prefix when specifying a value in your app.config file.
@@ -41,7 +41,7 @@ For example, to specify 12 heaps for `GCHeapCount` for a .NET Framework app name
 </configuration>
 ```
 
-For both .NET Core and .NET Framework, you can use environment variables.
+For both .NET (Core) and .NET Framework, you can use environment variables.
 
 On Windows using .NET 6 or a later version:
 
@@ -73,7 +73,9 @@ export COMPlus_gcServer=1
 export COMPlus_GCHeapCount=c
 ```
 
-If you're not using .NET Framework, you can also set the value in the *runtimeconfig.json* file.
+If you're not using .NET Framework, you can also set the value in the *runtimeconfig.json* or *runtimeconfig.template.json* file.
+
+*runtimeconfig.json* file:
 
 ```json
 {
@@ -82,6 +84,17 @@ If you're not using .NET Framework, you can also set the value in the *runtimeco
       "System.GC.Server": true,
       "System.GC.HeapCount": 12
    }
+  }
+}
+```
+
+*runtimeconfig.template.json* file:
+
+```json
+{
+  "configProperties": {
+    "System.GC.Server": true,
+    "System.GC.HeapCount": 12
   }
 }
 ```
@@ -124,6 +137,16 @@ Use the following settings to select flavors of garbage collection:
 }
 ```
 
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.GC.Server": true
+   }
+}
+```
+
 Project file:
 
 ```xml
@@ -160,6 +183,16 @@ Project file:
       "configProperties": {
          "System.GC.Concurrent": false
       }
+   }
+}
+```
+
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.GC.Concurrent": false
    }
 }
 ```
@@ -209,7 +242,9 @@ For more information about some of these settings, see the [Middle ground betwee
 | **Environment variable** | `DOTNET_GCHeapCount` | *hexadecimal value* | .NET 6 |
 | **app.config for .NET Framework** | [GCHeapCount](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md) | *decimal value* | .NET Framework 4.6.2 |
 
-Example:
+#### Examples
+
+*runtimeconfig.json* file:
 
 ```json
 {
@@ -217,6 +252,16 @@ Example:
       "configProperties": {
          "System.GC.HeapCount": 16
       }
+   }
+}
+```
+
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.GC.HeapCount": 16
    }
 }
 ```
@@ -238,7 +283,9 @@ Example:
 | **Environment variable** | `DOTNET_GCHeapAffinitizeMask` | *hexadecimal value* | .NET 6 |
 | **app.config for .NET Framework** | [GCHeapAffinitizeMask](../../framework/configure-apps/file-schema/runtime/gcheapaffinitizemask-element.md) | *decimal value* | .NET Framework 4.6.2 |
 
-Example:
+#### Examples
+
+*runtimeconfig.json* file:
 
 ```json
 {
@@ -246,6 +293,16 @@ Example:
       "configProperties": {
          "System.GC.HeapAffinitizeMask": 1023
       }
+   }
+}
+```
+
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.GC.HeapAffinitizeMask": 1023
    }
 }
 ```
@@ -265,7 +322,9 @@ Example:
 | **Environment variable** | `COMPlus_GCHeapAffinitizeRanges` | Comma-separated list of processor numbers or ranges of processor numbers.<br/>Unix example: "1-10,12,50-52,70"<br/>Windows example: "0:1-10,0:12,1:50-52,1:70" | .NET Core 3.0 |
 | **Environment variable** | `DOTNET_GCHeapAffinitizeRanges` | Comma-separated list of processor numbers or ranges of processor numbers.<br/>Unix example: "1-10,12,50-52,70"<br/>Windows example: "0:1-10,0:12,1:50-52,1:70" | .NET 6 |
 
-Example:
+#### Examples
+
+*runtimeconfig.json* file:
 
 ```json
 {
@@ -273,6 +332,16 @@ Example:
       "configProperties": {
          "System.GC.HeapAffinitizeRanges": "0:1-10,0:12,1:50-52,1:70"
       }
+   }
+}
+```
+
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.GC.HeapAffinitizeRanges": "0:1-10,0:12,1:50-52,1:70"
    }
 }
 ```
@@ -310,7 +379,9 @@ Example:
 | **Environment variable** | `DOTNET_GCNoAffinitize` | `0` - affinitize<br/>`1` - don't affinitize | .NET 6 |
 | **app.config for .NET Framework** | [GCNoAffinitize](../../framework/configure-apps/file-schema/runtime/gcnoaffinitize-element.md) | `false` - affinitize<br/>`true` - don't affinitize | .NET Framework 4.6.2 |
 
-Example:
+#### Examples
+
+*runtimeconfig.json* file:
 
 ```json
 {
@@ -318,6 +389,16 @@ Example:
       "configProperties": {
          "System.GC.NoAffinitize": true
       }
+   }
+}
+```
+
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.GC.NoAffinitize": true
    }
 }
 ```
@@ -338,7 +419,9 @@ Example:
 | **Environment variable** | `COMPlus_GCHeapHardLimit` | *hexadecimal value* | .NET Core 3.0 |
 | **Environment variable** | `DOTNET_GCHeapHardLimit` | *hexadecimal value* | .NET 6 |
 
-Example:
+#### Examples
+
+*runtimeconfig.json* file:
 
 ```json
 {
@@ -346,6 +429,16 @@ Example:
       "configProperties": {
          "System.GC.HeapHardLimit": 209715200
       }
+   }
+}
+```
+
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.GC.HeapHardLimit": 209715200
    }
 }
 ```
@@ -371,7 +464,9 @@ Example:
 | **Environment variable** | `COMPlus_GCHeapHardLimitPercent` | *hexadecimal value* | .NET Core 3.0 |
 | **Environment variable** | `DOTNET_GCHeapHardLimitPercent` | *hexadecimal value* | .NET 6 |
 
-Example:
+#### Examples
+
+*runtimeconfig.json* file:
 
 ```json
 {
@@ -379,6 +474,16 @@ Example:
       "configProperties": {
          "System.GC.HeapHardLimitPercent": 30
       }
+   }
+}
+```
+
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.GC.HeapHardLimitPercent": 30
    }
 }
 ```
@@ -488,6 +593,16 @@ The high memory load threshold can be adjusted by the `DOTNET_GCHighMemPercent` 
 }
 ```
 
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.GC.RetainVM": true
+   }
+}
+```
+
 Project file:
 
 ```xml
@@ -538,7 +653,9 @@ Project file:
 | **Environment variable** | `DOTNET_GCLOHThreshold` | *hexadecimal value* | .NET 6 |
 | **app.config for .NET Framework** | [GCLOHThreshold](../../framework/configure-apps/file-schema/runtime/gclohthreshold-element.md) | *decimal value* | .NET Framework 4.8 |
 
-Example:
+#### Examples
+
+*runtimeconfig.json* file:
 
 ```json
 {
@@ -546,6 +663,16 @@ Example:
       "configProperties": {
          "System.GC.LOHThreshold": 120000
       }
+   }
+}
+```
+
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.GC.LOHThreshold": 120000
    }
 }
 ```

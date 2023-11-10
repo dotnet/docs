@@ -38,7 +38,7 @@ When a project is [built](../tools/dotnet-build.md), an *[appname].runtimeconfig
 > - The *[appname].runtimeconfig.json* file will get overwritten on subsequent builds.
 > - If your app's `OutputType` is not `Exe` and you want configuration options to be copied from *runtimeconfig.template.json* to *[appname].runtimeconfig.json*, you must explicitly set `GenerateRuntimeConfigurationFiles` to `true` in your project file. For apps that require a *runtimeconfig.json* file, this property defaults to `true`.
 
-Specify runtime configuration options in the **configProperties** section of the *runtimeconfig.json* files. This section has the form:
+Specify runtime configuration options in the **configProperties** section of the *runtimeconfig.json* or *runtimeconfig.template.json* file. This section has the form:
 
 ```json
 "configProperties": {

@@ -1236,7 +1236,6 @@ The following changes have been made to .NET container images for .NET 8:
 - [Generated-image defaults](#generated-image-defaults)
 - [Debian 12](#debian-12)
 - [Non-root user](#non-root-user)
-- [Preview image tags](#preview-image-tags)
 - [Chiseled Ubuntu images](#chiseled-ubuntu-images)
 - [Build multi-platform container images](#build-multi-platform-container-images)
 - [ASP.NET composite images](#aspnet-composite-images)

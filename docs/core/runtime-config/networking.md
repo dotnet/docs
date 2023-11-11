@@ -20,6 +20,8 @@ ms.date: 11/27/2019
 | **runtimeconfig.json** | `System.Net.Http.SocketsHttpHandler.Http2Support` | `false` - disabled<br/>`true` - enabled |
 | **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT` | `0` - disabled<br/>`1` - enabled |
 
+[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
+
 ## SPN creation in HttpClient (.NET 6 and later)
 
 - Impacts generation of [service principal names](/windows/win32/ad/service-principal-names) (SPN) for Kerberos and NTLM authentication when `Host` header is missing and target is not running on default port.
@@ -31,6 +33,8 @@ ms.date: 11/27/2019
 | - | - | - |
 | **runtimeconfig.json** | `System.Net.Http.UsePortInSpn` | `true` - includes port number in SPN, for example, `HTTP/host:port`<br/>`false` - does not include port in SPN, for example, `HTTP/host` |
 | **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_USEPORTINSPN` | `1` - includes port number in SPN, for example, `HTTP/host:port`<br/>`0` - does not include port in SPN, for example, `HTTP/host` |
+
+[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
 
 ## UseSocketsHttpHandler (.NET Core 2.1-3.1 only)
 

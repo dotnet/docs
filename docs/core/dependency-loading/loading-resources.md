@@ -24,26 +24,25 @@ The .NET Core resource fallback process involves the following steps:
 
 1. Determine the `active` <xref:System.Runtime.Loader.AssemblyLoadContext> instance. In all cases, the `active` instance is the executing assembly's <xref:System.Runtime.Loader.AssemblyLoadContext>.
 
-2. The `active` instance attempts to load a satellite assembly for the requested culture in priority order by:
-    - Checking its cache.
-    - Checking the directory of the currently executing assembly for a subdirectory that matches the requested <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType> (for example `es-MX`).
+2. The `active` instance loads a satellite assembly for the requested culture in the following priority order:
 
-        > [!NOTE]
-        > This feature was not implemented in .NET Core before 3.0.
-        >
+    - Check its cache.
+
+    - If `active` is the <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> instance, run the [default satellite (resource) assembly probing](default-probing.md#satellite-resource-assembly-probing) logic.
+
+    - Call the <xref:System.Runtime.Loader.AssemblyLoadContext.Load%2A?displayProperty=nameWithType> function.
+
+    - If the managed assembly corresponding to the satellite assembly was loaded from a file, check the directory of the managed assembly for a subdirectory that matches the requested <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType> (for example, `es-MX`).
+
         > [!NOTE]
         > On Linux and macOS, the subdirectory is case-sensitive and must either:
         >
         > - Exactly match case.
         > - Be in lower case.
 
-    - If `active` is the <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> instance, by running the [default satellite (resource) assembly probing](default-probing.md#satellite-resource-assembly-probing) logic.
+    - Raise the <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType> event.
 
-    - Calling the <xref:System.Runtime.Loader.AssemblyLoadContext.Load%2A?displayProperty=nameWithType> function.
-
-    - Raising the <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType> event.
-
-    - Raising the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.
+    - Raise the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.
 
 3. If a satellite assembly is loaded:
    - The <xref:System.AppDomain.AssemblyLoad?displayProperty=nameWithType> event is raised.
@@ -52,7 +51,7 @@ The .NET Core resource fallback process involves the following steps:
     > [!NOTE]
     > To find a resource within the satellite assembly, the runtime searches for the resource file requested by the <xref:System.Resources.ResourceManager> for the current <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType>. Within the resource file, it searches for the requested resource name. If either is not found, the resource is treated as not found.
 
-4. The runtime next searches the parent culture assemblies through many potential levels, each time repeating steps 2 & 3.
+4. The <xref:System.Resources.ResourceManager> next searches the parent culture assemblies through many potential levels, each time repeating steps 2 & 3.
 
     Each culture has only one parent, which is defined by the <xref:System.Globalization.CultureInfo.Parent%2A?displayProperty=nameWithType> property.
 
@@ -60,7 +59,7 @@ The .NET Core resource fallback process involves the following steps:
 
     For the <xref:System.Globalization.CultureInfo.InvariantCulture>, we don't return to steps 2 & 3, but rather continue with step 5.
 
-5. If the resource is still not found, the resource for the default (fallback) culture is used.
+5. If the resource is still not found, the <xref:System.Resources.ResourceManager> uses the resource for the default (fallback) culture.
 
    Typically, the resources for the default culture are included in the main application assembly. However, you can specify <xref:System.Resources.UltimateResourceFallbackLocation.Satellite?displayProperty=nameWithType> for the <xref:System.Resources.NeutralResourcesLanguageAttribute.Location?displayProperty=nameWithType> property. This value indicates that the ultimate fallback location for resources is a satellite assembly rather than the main assembly.
 

@@ -19,10 +19,4 @@ This article details the settings you can use to configure Windows Presentation 
 | **runtimeconfig.json** | `Switch.System.Windows.Media.EnableHardwareAccelerationInRdp` | `true` - enabled<br/>`false` - disabled | .NET 8 |
 | **Environment variable** | N/A | N/A | |
 
-You can also configure this setting by adding a `RuntimeHostConfigurationOption` item to your project file.
-
-```xml
-<ItemGroup>
-      <RuntimeHostConfigurationOption Include="Switch.System.Windows.Media.EnableHardwareAccelerationInRdp" Value="true" />
-</ItemGroup>
-```
+[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]

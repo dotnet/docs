@@ -13,11 +13,11 @@ Per the [published support rules](../../../porting/versioning-sdk-msbuild-vs.md#
 
 ## Previous behavior
 
-.NET 8.0.1xx-preview1 required version 17.4 of Visual Studio and MSBuild. .NET 8.0.1xx-preview4 required version 17.6 of Visual Studio and MSBuild.
+.NET 7.0.1xx versions required version 17.4 of Visual Studio and MSBuild. .NET 7.0.4xx versions required version 17.7 of Visual Studio and MSBuild.
 
 ## New behavior
 
-Versions 8.0.1xx of the .NET SDK require Visual Studio version 17.7 and MSBuild version 17.7.
+.NET 8.0.1xx SDK versions require Visual Studio 2022 version 17.7 and MSBuild version 17.7.
 
 ## Type of breaking change
 

@@ -5,7 +5,7 @@ ms.date: 06/06/2023
 ---
 # SafeHandle types must have public constructor
 
-Historically, passing <xref:System.Runtime.InteropServices.SafeHandle>-derived types to P/Invokes and COM methods has implicitly required a parameterless constructor of any visibility when a `SafeHandle`-derived type is passed as a `ref` or `out` parameter or a return type. Source-generated interop in .NET 7 and earlier .NET 8 preview versions allowed this behavior to enable easier migration from <xref:System.Runtime.InteropServices.DllImportAttribute>-based P/Invokes. At the same time, we updated the [SafeHandle documentation](/dotnet/api/system.runtime.interopservices.safehandle#notes-to-implementers) to tell implementers to provide a `public` parameterless constructor in their derived type. This breaking change makes that recommendation a requirement for source-generated marshalling.
+Historically, passing <xref:System.Runtime.InteropServices.SafeHandle>-derived types to P/Invokes and COM methods has implicitly required a parameterless constructor of any visibility when a `SafeHandle`-derived type is passed as a `ref` or `out` parameter or a return type. Source-generated interop in .NET 7 allowed this behavior to enable easier migration from <xref:System.Runtime.InteropServices.DllImportAttribute>-based P/Invokes. At the same time, we updated the [SafeHandle documentation](/dotnet/api/system.runtime.interopservices.safehandle#notes-to-implementers) to tell implementers to provide a `public` parameterless constructor in their derived type. This breaking change makes that recommendation a requirement for source-generated marshalling.
 
 ## Previous behavior
 

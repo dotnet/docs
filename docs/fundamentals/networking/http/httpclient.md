@@ -39,7 +39,7 @@ This `HttpClient` instance uses the base address when making subsequent requests
 - Specifying the <xref:System.Net.Http.HttpClient.DefaultRequestVersion?displayProperty=nameWithType>.
 
 > [!TIP]
-> Alternatively, you can create `HttpClient` instances using a factory-pattern approach that allows you to configure any number of clients and consume them as dependency injection services. For more information, see [IHttpClientFactory with .NET](../../../core/extensions/httpclient-factory.md).
+> Alternatively, you can create `HttpClient` instances using a factory-pattern approach that allows you to configure any number of clients and consume them as dependency injection services. For more information, see [HTTP client factory with .NET](../../../core/extensions/httpclient-factory.md).
 
 ## Make an HTTP request
 
@@ -375,6 +375,6 @@ For more information about configuring a proxy, see:
 
 - [HTTP support in .NET](http-overview.md)
 - [Guidelines for using HttpClient](httpclient-guidelines.md)
-- [IHttpClientFactory with .NET](../../../core/extensions/httpclient-factory.md)
+- [HTTP client factory with .NET](../../../core/extensions/httpclient-factory.md)
 - [Use HTTP/3 with HttpClient](../../../core/extensions/httpclient-http3.md)
 - [Test web APIs with the HttpRepl](/aspnet/core/web-api/http-repl)

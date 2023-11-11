@@ -24,7 +24,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 - The [.NET 7.0 SDK or later](https://dotnet.microsoft.com/download/dotnet/7.0)
 - A .NET integrated development environment (IDE)
@@ -48,7 +48,7 @@ The timer-based background service makes use of the <xref:System.Threading.Timer
 
 Replace the contents of the `Worker` from the template with the following C# code, and rename the file to *TimerService.cs*:
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code source="snippets/workers/7.0/timer-service/TimerService.cs" highlight="35,42-45":::
 
@@ -71,7 +71,7 @@ When <xref:Microsoft.Extensions.Hosting.IHostedService.StartAsync%2A> is called,
 
 Replace the existing `Program` contents with the following C# code:
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code source="snippets/workers/7.0/timer-service/Program.cs" highlight="4":::
 

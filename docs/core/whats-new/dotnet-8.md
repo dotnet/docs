@@ -2,7 +2,7 @@
 title: What's new in .NET 8
 description: Learn about the new .NET features introduced in .NET 8.
 titleSuffix: ""
-ms.date: 10/05/2023
+ms.date: 11/14/2023
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
@@ -10,13 +10,6 @@ author: gewarren
 # What's new in .NET 8
 
 .NET 8 is the successor to [.NET 7](dotnet-7.md). It will be [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 8 here](https://dotnet.microsoft.com/download/dotnet).
-
-This article has been updated for .NET 8 release candidate (RC) 2.
-
-> [!IMPORTANT]
->
-> - This information relates to a pre-release product that may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-> - Much of the other .NET documentation on [https://learn.microsoft.com/dotnet](/dotnet) has not yet been updated for .NET 8.
 
 ## ASP.NET Core
 
@@ -144,7 +137,7 @@ public class DerivedImplement : IDerived
 
 #### Naming policies
 
-[`JsonNamingPolicy`](/dotnet/api/system.text.json.jsonnamingpolicy?view=net-8.0&preserve-view=true#properties) includes new naming policies for `snake_case` (with an underscore) and `kebab-case` (with a hyphen) property name conversions. Use these policies similarly to the existing <xref:System.Text.Json.JsonNamingPolicy.CamelCase?displayProperty=nameWithType> policy:
+[`JsonNamingPolicy`](xref:System.Text.Json.JsonNamingPolicy#properties) includes new naming policies for `snake_case` (with an underscore) and `kebab-case` (with a hyphen) property name conversions. Use these policies similarly to the existing <xref:System.Text.Json.JsonNamingPolicy.CamelCase?displayProperty=nameWithType> policy:
 
 ```csharp
 var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower };
@@ -1079,6 +1072,10 @@ The JIT already supported this optimization but with several large limitations i
 
 Physical promotion removes these limitations, which fixes a number of long-standing JIT issues.
 
+## .NET MAUI
+
+For information about what's new in .NET MAUI in .NET 8, see [What's new in .NET MAUI for .NET 8](/dotnet/maui/whats-new/dotnet-8).
+
 ## .NET SDK
 
 This section contains the following subtopics:
@@ -1486,6 +1483,7 @@ Starting in .NET 8, C# Hot Reload [supports modifying generic types and generic 
 
 ### .NET blog
 
+- [Announcing .NET 8](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8/)
 - [Announcing .NET 8 RC 2](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-rc2/)
 - [Announcing .NET 8 RC 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-rc1/)
 - [Announcing .NET 8 Preview 7](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-7/)
@@ -1495,6 +1493,7 @@ Starting in .NET 8, C# Hot Reload [supports modifying generic types and generic 
 - [Announcing .NET 8 Preview 3](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-3/)
 - [Announcing .NET 8 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-2/)
 - [Announcing .NET 8 Preview 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-1/)
+- [ASP.NET Core in .NET 8](https://devblogs.microsoft.com/dotnet/announcing-asp-net-core-in-dotnet-8)
 - [ASP.NET Core updates in .NET 8 RC 2](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-rc-2/)
 - [ASP.NET Core updates in .NET 8 RC 1](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-rc-1/)
 - [ASP.NET Core updates in .NET 8 Preview 7](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-7/)

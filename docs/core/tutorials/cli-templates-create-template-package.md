@@ -3,7 +3,7 @@ title: Create a template package for dotnet new
 description: Learn how to create a csproj file that builds a template package for the dotnet new command.
 author: adegeo
 ms.date: 09/11/2023
-zone_pivot_groups: dotnet-preview-version
+zone_pivot_groups: dotnet-version
 ms.topic: tutorial
 ms.author: adegeo
 ---
@@ -84,7 +84,7 @@ The [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/package
 
     ```output
     The template "Template Package" was created successfully.
-    
+
     Processing post-creation actions...
     Description: Manual actions required
     Manual instructions: Open *.csproj in the editor and complete the package metadata configuration. Copy the templates to _content_ folder. Fill in README.md.
@@ -94,7 +94,7 @@ The [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/package
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
-    
+
       <PropertyGroup>
         <!-- The package metadata. Fill in the properties marked as TODO below -->
         <!-- Follow the instructions on https://learn.microsoft.com/nuget/create-packages/package-authoring-best-practices -->
@@ -130,11 +130,11 @@ The [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/package
 
     ```output
     The template "Console Application" was created successfully.
-    
+
     Processing post-creation actions...
     Running 'dotnet restore' on .\AdatumCorporation.Utility.Templates.csproj...
       Restore completed in 52.38 ms for C:\code\working\AdatumCorporation.Utility.Templates.csproj.
-    
+
     Restore succeeded.
     ```
 
@@ -144,8 +144,8 @@ The [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/package
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
-    
-      <PropertyGroup>    
+
+      <PropertyGroup>
         <PackageId>AdatumCorporation.Utility.Templates</PackageId>
         <PackageVersion>1.0</PackageVersion>
         <Title>AdatumCorporation Templates</Title>
@@ -153,21 +153,21 @@ The [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/package
         <Description>Templates to use when creating an application for Adatum Corporation.</Description>
         <PackageTags>dotnet-new;templates;adatum</PackageTags>
         <PackageProjectUrl>https://your-url</PackageProjectUrl>
-    
+
         <PackageType>Template</PackageType>
-        <TargetFramework>netstandard2.0</TargetFramework>    
+        <TargetFramework>netstandard2.0</TargetFramework>
         <IncludeContentInPack>true</IncludeContentInPack>
         <IncludeBuildOutput>false</IncludeBuildOutput>
         <ContentTargetFolders>content</ContentTargetFolders>
         <NoWarn>$(NoWarn);NU5128</NoWarn>
         <NoDefaultExcludes>true</NoDefaultExcludes>
       </PropertyGroup>
-    
+
       <ItemGroup>
         <Content Include="content\**\*" Exclude="content\**\bin\**;content\**\obj\**" />
         <Compile Remove="**\*" />
       </ItemGroup>
-    
+
     </Project>
     ```
 
@@ -186,7 +186,7 @@ In the second group, the `<TargetFramework>` setting ensures that MSBuild runs p
 
 * The `<NoWarn>` setting suppresses a warning message that doesn't apply to template package projects.
 
-* The `<NoDefaultExcludes>` setting ensures that files and folders that start with a `.` (like `.gitignore`) are part of the template. The *default* behavior of NuGet packages is to ignore those files and folders.
+* The `<NoDefaultExcludes>` setting ensures that files and folders that start with a `.` (like `.gitignore`) are part of the template. The _default_ behavior of NuGet packages is to ignore those files and folders.
 
 `<ItemGroup>` contains two items. First, the `<Content>` item includes everything in the _templates_ folder as content. It's also set to exclude any _bin_ folder or _obj_ folder to prevent any compiled code (if you tested and compiled your templates) from being included. Second, the `<Compile>` item excludes all code files from compiling no matter where they're located. This setting prevents the project that's used to create the template package from trying to compile the code in the _templates_ folder hierarchy.
 

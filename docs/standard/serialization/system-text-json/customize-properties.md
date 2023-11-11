@@ -2,7 +2,7 @@
 title: How to customize property names and values with System.Text.Json
 description: "Learn how to customize property names and values when serializing with System.Text.Json in .NET."
 ms.date: 10/16/2023
-zone_pivot_groups: dotnet-preview-version
+zone_pivot_groups: dotnet-version
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
@@ -50,9 +50,9 @@ Here's an example type to serialize and resulting JSON:
 
 The property name set by this attribute:
 
-* Applies in both directions, for serialization and deserialization.
-* Takes precedence over property naming policies.
-* [Doesn't affect parameter name matching for parameterized constructors](immutability.md#parameterized-constructors).
+- Applies in both directions, for serialization and deserialization.
+- Takes precedence over property naming policies.
+- [Doesn't affect parameter name matching for parameterized constructors](immutability.md#parameterized-constructors).
 
 ## Use a built-in naming policy
 
@@ -89,8 +89,8 @@ Here's an example class to serialize and JSON output:
 
 The naming policy:
 
-* Applies to serialization and deserialization.
-* Is overridden by `[JsonPropertyName]` attributes. This is why the JSON property name `Wind` in the example is not camel case.
+- Applies to serialization and deserialization.
+- Is overridden by `[JsonPropertyName]` attributes. This is why the JSON property name `Wind` in the example is not camel case.
 
 > [!NOTE]
 > None of the built-in naming policies support letters that are surrogate pairs. For more information, see [dotnet/runtime issue 90352](https://github.com/dotnet/runtime/issues/90352).
@@ -123,8 +123,8 @@ Here's an example class to serialize and JSON output:
 
 The JSON property naming policy:
 
-* Applies to serialization and deserialization.
-* Is overridden by `[JsonPropertyName]` attributes. This is why the JSON property name `Wind` in the example is not upper case.
+- Applies to serialization and deserialization.
+- Is overridden by `[JsonPropertyName]` attributes. This is why the JSON property name `Wind` in the example is not upper case.
 
 ## Use a naming policy for dictionary keys
 
@@ -230,5 +230,5 @@ By default, properties are serialized in the order in which they're defined in t
 
 ## See also
 
-* [System.Text.Json overview](overview.md)
-* [How to serialize and deserialize JSON](how-to.md)
+- [System.Text.Json overview](overview.md)
+- [How to serialize and deserialize JSON](how-to.md)

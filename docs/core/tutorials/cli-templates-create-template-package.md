@@ -47,7 +47,7 @@ In this part of the series you'll learn how to:
 
 ::: zone pivot="dotnet-8-0"
 
-* Install .NET 8 Preview.
+* Install .NET 8.
 * Install the `Microsoft.TemplateEngine.Authoring.Templates` template from the NuGet package feed.
 
   * Run the `dotnet new install Microsoft.TemplateEngine.Authoring.Templates` command from your terminal.

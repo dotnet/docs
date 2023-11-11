@@ -1263,10 +1263,6 @@ USER app
 
 The default port also changed from port `80` to `8080`. To support this change, a new environment variable `ASPNETCORE_HTTP_PORTS` is available to make it easier to change ports. The variable accepts a list of ports, which is simpler than the format required by `ASPNETCORE_URLS`. If you change the port back to port `80` using one of these variables, you can't run as `non-root`.
 
-#### Preview image tags
-
-Container image tags for .NET 8 Previews 1 through 7 had a `-preview` suffix, for example, `8.0-preview` and `8.0-preview-<OS>`. Starting in RC 1, `preview` is removed from the tag name, and those tags are no longer maintained. The new tags, `8.0` and `8.0-<OS>`, are permanent, and will be maintained throughout the lifetime of .NET 8.
-
 #### Chiseled Ubuntu images
 
 [Chiseled Ubuntu images](https://hub.docker.com/r/ubuntu/dotnet-deps) are available for .NET 8. Chiseled images have a reduced attacked surface because they're ultra-small, have no package manager or shell, and are `non-root`. This type of image is for developers who want the benefit of appliance-style computing. Chiseled images are published to the [.NET nightly artifact registry](https://mcr.microsoft.com/product/dotnet/nightly/aspnet/tags).

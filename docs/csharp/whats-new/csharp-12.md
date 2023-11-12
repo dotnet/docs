@@ -136,7 +136,7 @@ Types, methods, or assemblies can be marked with the <xref:System.Diagnostics.Co
 > Interceptors are an experimental feature, available in preview mode with C# 12. The feature may be subject to breaking changes or removal in a future release. Therefore, it is not recommended for production or released applications.
 >
 > In order to use interceptors, the user project must specify the property <InterceptorsPreviewNamespaces>. This is a list of namespaces which are allowed to contain interceptors.
-> 
+>
 > For example: `<InterceptorsPreviewNamespaces>$(InterceptorsPreviewNamespaces);Microsoft.AspNetCore.Http.Generated;MyLibrary.Generated</InterceptorsPreviewNamespaces>`
 
 An *interceptor* is a method that can declaratively substitute a call to an *interceptable* method with a call to itself at compile time. This substitution occurs by having the interceptor declare the source locations of the calls that it intercepts. Interceptors provide a limited facility to change the semantics of existing code by adding new code to a compilation, for example in a source generator.

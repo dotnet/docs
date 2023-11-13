@@ -47,7 +47,14 @@ For the purposes of explaining the results of the analysis, we're going to use t
 
 ### Dashboard view
 
-The main dashboard shows a summary of the results of the scan. It shows the number of projects scanned, the number of issues found, it estimates the amount of effort to fix the issues in story points, and it classifies the issues by severity from Mandatory to Informational.
+The main dashboard shows a Summary section with the results of the scan, Severity graph and Categories of the issues and incidents.
+
+The **Summary** section of the dashboard contains several terms that are worth defining as you'll see them in other screens.
+
+* **Projects**: the number of projects scanned.
+* **Issues**: an incompatibility with Azure or a potential problem.
+* **Incidents**: an occurrence of the issue in your code. For example, an issue could be a call to a database that is not accessible from Azure, and the incidents are the times when you make that call in your code. That way one issue might have many incidents (implementation) across your code.
+* **Story points**: the estimated effort to fix all of the issues found. This is a relative measure of effort and is not meant to be an exact estimate.
 
 Here are the issue severity classifications:
 

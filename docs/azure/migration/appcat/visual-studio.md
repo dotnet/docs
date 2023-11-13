@@ -36,70 +36,9 @@ The application and code assessment lets you decide which projects in your solut
 1. Click the **Analyze** button to start the scan. The selected projects are scanned to look for potential issues when migrating to Azure. When finished, you'll see a dashboard of results.
   ![Screenshot showing the results of the scan](./media/vs/analyze-results.png)
 
-## Interpret the results
-
-After the projects have been scanned, the application and code assessment presents its results in a dashboard format. In this section we'll describe the different sections of the dashboard and how to interpret them.
-
-### Dashboard view
-
-The main dashboard shows a summary of the results of the scan. It shows the number of projects scanned, the number of issues found, it estimates the amount of effort to fix the issues in story points, and it classifies the issues by severity from Mandatory to Informational.
-
-Here are the issue severity classifications:
-
-* **Mandatory** - the issue has to be resolved for the migration to be successful.
-* **Optional** - the issue discovered is a real issue and fixing it could improve the app after migration, however it is not blocking.
-* **Potential** - we are not sure if it is necessarily a blocking problem, but raised just in case.
-* **Informational** - the issue was raised only for informational purpose and is not required to be resolved.
-
-![Screenshot of the application and code assessment tool for .NET dashboard](./media/vs/dashboard-results.png)
-
-The dashboard displays a graph of the category of each issue found. The categories can range from HTTP, to database, to scaling, and so on. The categories are based upon rules used to identify issues.
-
-The **Summary** section of the dashboard contains several terms that are worth defining as you'll see them in other screens.
-
-* **Projects**: the number of projects scanned.
-* **Issues**: the number of unique encounters of a rule that may need to be addressed.
-* **Incidents**: the total number of occurences of all issues found.
-* **Story points**: the estimated effort to fix all of the issues found. This is a relative measure of effort and is not meant to be an exact estimate.
-
-### Projects view
-
-Click on the **Projects** tab below the **Dashboard** tab on the left side of the result's screen to see the number of issues, incidents, and the estimated effort to fix those issues by each project scanned.
-
-![Screenshot of the overall results dashboard](./media/vs/projects-overview.png)
-
-You can drill down to see the issues found in each project by clicking on the project name. This will show a screen similar to the overall dashboard but scoped to the selected project.
-
-![Screenshot of the projects dashboard](./media/vs/project-dashboard.png)
-
-At the top of the project dashboard you'll find 3 tabs: **Dashboard**, **Components**, and **Issues**.
-
-Click on the **Components** tab to see which files the incidents of the issues identified reside in. You can drill down into the file to see the rule that triggered the incident, a description of the rule, the exact position in the code where the issue exists, and an estimation of the effort it will take to fix. You can also mark the issue's state as you progress in replatforming your application: **Active**, **Fixed**, or **Ignored**.
-
-You can click the **Save** button in the upper right corner to save your progress addressing the incidents.
-
-![Screenshot of the project component dashboard](./media/vs/project-component-dashboard.png)
-
-Finally, by clicking on the **Issues** tab, you can see the issues organzied by the rules which triggered them. You can drill down into the rules to see the exact file location that needs to be addressed and the effort to fix. You can also save the state of the individual incident in each file as you address them.
-
-![Screenshot of the project issues dashboard](./media/vs/project-issue-dashboard.png)
-
-### Aggregate issues
-
-Click on the **Aggregate** tab below the **Projects** tab on the left side of the result's screen to see the issues organized by the rule that triggered them. These are all of the issues across all of the projects scanned, including the number of incidents and an estimated story points effort. You can drill down into the rules to see the exact files and locations that needs to be addressed and the effort to fix. You can also save the state of each individual incident as you address them.
-
-![Screenshot of the aggregate dashboard](./media/vs/aggregate-dashboard.png)
-
-### Export results
-
-The application and code assessment also lets you export all of the results it finds into HTML, JSON, or CSV file formats. Click on the **Export** button and select the file format you want to export to as well as the file location.
-
-Exporting to HTML will produce a page that renders similar to the following:
-
-![Screenshot of the html export results](./media/vs/html-export.png)
-
 ## Next steps
 
 ### Application and code assessment for .NET CLI
 
-For information on how to use and interpret results from the application and code assessment for .NET CLI, see [Use with the .NET CLI](./dotnet-cli.md).
+For information on how to intepret results, see [Interpret the analysis results from the Azure Migrate application and code assessment for .NET](./interpret-results.md)
+For information on how to use the Azure Migrate application and code assessment for .NET with the .NET CLI, see [Use with the .NET CLI](./dotnet-cli.md).

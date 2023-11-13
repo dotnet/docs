@@ -122,7 +122,6 @@ let f (x: Tensor) = sin (sqrt x)
 printfn $"{f (dsharp.tensor 1.2)}"
 ```
 
-
 ### Specifying a package source
 
 You can also specify a package source with the `#i` command. The following example specifies a remote and a local source:

@@ -37,7 +37,7 @@ appcat analyze <APPLICATION_PATH>
 1. Next you'll be presented with the option to analyze **Source code and settings**, **Binary dependencies**, or both. Make your choice and press **Enter**.
     ![Screenshot of the CLI dependency selection screen](./media/cli/cli-select-dependencies.png)
     > [!NOTE]
-    > The **source code and settings** option will only scan the source code in the projects you selected on the previous screen. The **Binary dependencies** option will scan any dependencies (such as NuGet packages) your projects rely on. You can expect to see many more issues identified when **binary dependencies** is selected. This option can create some "noise" since it will also identify potential compatibility issues of the binaries that are not necessarily apply to your application. 
+    > The **source code and settings** option will only scan the source code in the projects you selected on the previous screen. The **Binary dependencies** option will scan any dependencies (such as NuGet packages) your projects rely on. You can expect to see many more issues identified when **binary dependencies** is selected. This option can create some "noise" since it will also identify potential compatibility issues of the binaries that are not necessarily apply to your application.
     >
 
 1. You'll then be prompted to generate a report with the results of the analysis. The output can be formatted as CSV, HTML, or JSON. Press **Enter**.

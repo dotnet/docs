@@ -43,7 +43,7 @@ The application and code assessment for .NET CLI tool lets you decide which proj
 
 ## Interpret the results
 
-For the purposes of explaining the results of the analysis, we're going to use the HTML report. The report presents its results in a dashboard format. In this section we'll describe the different sections of the dashboard and how to interpret them.
+For the purposes of explaining the results of the analysis, we're going to use the HTML report. The report presents its results in a dashboard format. In this part we'll describe the different sections of the dashboard and how to interpret them.
 
 ### Dashboard view
 

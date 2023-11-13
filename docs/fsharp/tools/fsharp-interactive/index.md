@@ -95,7 +95,7 @@ F# scripting is natively supported in [Visual Studio](../../get-started/get-star
 > [!NOTE]
 > Package management system is extensible, see more about the [plugins and extension mechanism](https://aka.ms/dotnetdepmanager).
 
-Since 5.0 release of the language, F# Interactive supports referencing packages through an extensibility mechanism, out of the box, it can reference NuGet packages with the `#r "nuget:"` syntax and an optional version:
+Since 5.0 release of the language, F# Interactive supports referencing packages through an extensibility mechanism; out of the box, it can reference NuGet packages with the `#r "nuget:"` syntax and an optional version:
 
 ```fsharp
 #r "nuget: Newtonsoft.Json"

@@ -93,7 +93,7 @@ Click on the **Components** tab to see which files the incidents of the issues i
 
 ![Screenshot of the report's project component dashboard](./media/cli/cli-report-project-component.png)
 
-Finally, by clicking on the **Issues** tab, you can see the issues organzied by the rules which triggered them. You can drill down into the rules to see the exact file location that needs to be addressed and the effort to fix.
+Finally, by clicking on the **Issues** tab, you can see the incidents organized by the issues which triggered them. You can drill down into the issues to see the exact file location that needs to be addressed and the effort to fix.
 
 ![Screenshot of the project issues dashboard](./media/cli/cli-report-project-issue.png)
 

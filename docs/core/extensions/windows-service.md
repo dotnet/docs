@@ -29,7 +29,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 - The [.NET 7.0 SDK or later](https://dotnet.microsoft.com/download/dotnet/7.0)
 - A Windows OS
@@ -63,7 +63,7 @@ For more information on the .NET CLI add package command, see [dotnet add packag
 
 After successfully adding the packages, your project file should now contain the following package references:
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code language="xml" source="snippets/workers/7.0/windows-service/App.WindowsService.csproj" range="14-17" highlight="2-3":::
 
@@ -78,7 +78,7 @@ After successfully adding the packages, your project file should now contain the
 
 This worker project makes use of C#'s [nullable reference types](../../csharp/nullable-references.md). To enable them for the entire project, update the project file accordingly:
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code language="xml" source="snippets/workers/7.0/windows-service/App.WindowsService.csproj" range="1-7,12-20" highlight="5":::
 
@@ -95,7 +95,7 @@ The preceding project file changes add the `<Nullable>enable<Nullable>` node. Fo
 
 Add a new class to the project named *JokeService.cs*, and replace its contents with the following C# code:
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code source="snippets/workers/7.0/windows-service/JokeService.cs":::
 
@@ -112,7 +112,7 @@ The preceding joke service source code exposes a single piece of functionality, 
 
 Replace the existing `Worker` from the template with the following C# code, and rename the file to *WindowsBackgroundService.cs*:
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code source="snippets/workers/7.0/windows-service/WindowsBackgroundService.cs":::
 
@@ -152,7 +152,7 @@ In the preceding code, the `JokeService` is injected along with an `ILogger`. Bo
 
 Replace the template *Program.cs* file contents with the following C# code:
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code source="snippets/workers/7.0/windows-service/Program.cs" highlight="6-9,14-15":::
 
@@ -180,7 +180,7 @@ To create the .NET Worker Service app as a Windows Service, it's recommended tha
 > sc.exe create ".NET Joke Service" binpath="C:\Path\To\dotnet.exe C:\Path\To\App.WindowsService.dll"
 > ```
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code language="xml" source="snippets/workers/7.0/windows-service/App.WindowsService.csproj" highlight="8-11":::
 
@@ -206,7 +206,7 @@ Right-click on the project in the **Solution Explorer**, and select **Publish...
 
 Leave the default **Location**, and then select **Finish**. Once the profile is created, select **Show all settings**, and verify your **Profile settings**.
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::image type="content" source="media/profile-settings-7.0.png" lightbox="media/profile-settings-7.0.png" alt-text="The Visual Studio Profile settings":::
 
@@ -320,7 +320,7 @@ With .NET 6, [new hosting exception-handling behaviors](../compatibility/core-li
 
 The default behavior before .NET 6 is `Ignore`, which resulted in *zombie processes* (a running process that didn't do anything). With .NET 6, the default behavior is `StopHost`, which results in the host being stopped when an exception is thrown. But it stops cleanly, meaning that the Windows Service management system will not restart the service. To correctly allow the service to be restarted, you can call <xref:System.Environment.Exit%2A?displayProperty=nameWithType> with a non-zero exit code. Consider the following highlighted `catch` block:
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code source="snippets/workers/7.0/windows-service/WindowsBackgroundService.cs" highlight="30-43":::
 

@@ -5,17 +5,17 @@ ms.date: 10/26/2023
 ---
 # What's new in C# 12
 
-Some C# 12 features have been introduced in previews. You can try these features using the latest [Visual Studio preview](https://visualstudio.microsoft.com/vs/preview/) or the latest [.NET 8 preview SDK](https://dotnet.microsoft.com/download/dotnet).
+C# 12 includes the following new features. You can try these features using the latest [Visual Studio 2022](https://visualstudio.microsoft.com/vs/preview/) version or the [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet).
 
-- [Primary constructors](#primary-constructors) - Introduced in Visual Studio version 17.6 Preview 2.
-- [Collection expressions](#collection-expressions) - Introduced in Visual Studio version 17.7 Preview 5.
-- [Inline arrays](#inline-arrays) - Introduced in Visual Studio version 17.7 Preview 3.
-- [Optional parameters in lambda expressions](#default-lambda-parameters) - Introduced in Visual Studio version 17.5 Preview 2.
-- [`ref readonly` parameters](#ref-readonly-parameters) - Introduced in Visual Studio version 17.8 Preview 2.
-- [Alias any type](#alias-any-type) - Introduced in Visual Studio version 17.6 Preview 3.
-- [Experimental attribute](#experimental-attribute) - Introduced in Visual Studio version 17.7 Preview 3.
+- [Primary constructors](#primary-constructors) - Introduced in Visual Studio 2022 version 17.6 Preview 2.
+- [Collection expressions](#collection-expressions) - Introduced in Visual Studio 2022 version 17.7 Preview 5.
+- [Inline arrays](#inline-arrays) - Introduced in Visual Studio 2022 version 17.7 Preview 3.
+- [Optional parameters in lambda expressions](#default-lambda-parameters) - Introduced in Visual Studio 2022 version 17.5 Preview 2.
+- [`ref readonly` parameters](#ref-readonly-parameters) - Introduced in Visual Studio 2022 version 17.8 Preview 2.
+- [Alias any type](#alias-any-type) - Introduced in Visual Studio 2022 version 17.6 Preview 3.
+- [Experimental attribute](#experimental-attribute) - Introduced in Visual Studio 2022 version 17.7 Preview 3.
 
-- [Interceptors](#interceptors) - *Preview feature* Introduced in Visual Studio version 17.7 Preview 3.
+- [Interceptors](#interceptors) - *Preview feature* Introduced in Visual Studio 2022 version 17.7 Preview 3.
 
 ## Primary constructors
 

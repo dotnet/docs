@@ -3,7 +3,7 @@ title: How to use source generation in System.Text.Json
 description: "Learn how to use source generation in System.Text.Json."
 ms.date: 10/09/2023
 no-loc: [System.Text.Json]
-zone_pivot_groups: dotnet-preview-version
+zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"

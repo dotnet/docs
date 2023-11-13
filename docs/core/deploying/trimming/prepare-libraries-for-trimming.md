@@ -4,7 +4,7 @@ description: Learn how to prepare .NET libraries for trimming.
 author: sbomer
 ms.author: svbomer
 ms.date: 06/12/2023
-zone_pivot_groups: dotnet-preview-version
+zone_pivot_groups: dotnet-version
 ---
 
 # Prepare .NET libraries for trimming

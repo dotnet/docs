@@ -3,7 +3,7 @@ title: Source-generation modes in System.Text.Json
 description: Learn about the two different source-generation modes in System.Text.Json.
 ms.date: 10/30/2023
 no-loc: [System.Text.Json]
-zone_pivot_groups: dotnet-preview-version
+zone_pivot_groups: dotnet-version
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"

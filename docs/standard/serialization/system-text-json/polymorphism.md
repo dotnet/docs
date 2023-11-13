@@ -143,7 +143,7 @@ The following example shows the JSON that results from the preceding code:
 
 :::zone-end
 
-:::zone pivot="dotnet-7-0"
+:::zone pivot="dotnet-8-0,dotnet-7-0"
 
 Beginning with .NET 7, `System.Text.Json` supports polymorphic type hierarchy serialization and deserialization with attribute annotations.
 

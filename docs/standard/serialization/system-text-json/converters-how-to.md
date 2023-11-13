@@ -24,7 +24,7 @@ A *converter* is a class that converts an object or a value to and from JSON. Th
 
 You can also write custom converters to customize or extend `System.Text.Json` with new functionality. The following scenarios are covered later in this article:
 
-::: zone pivot="dotnet-7-0"
+::: zone pivot="dotnet-8-0,dotnet-7-0"
 
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
@@ -216,7 +216,7 @@ A built-in converter is chosen only if no applicable custom converter is registe
 
 The following sections provide converter samples that address some common scenarios that built-in functionality doesn't handle.
 
-::: zone pivot="dotnet-7-0"
+::: zone pivot="dotnet-8-0,dotnet-7-0"
 
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
@@ -334,7 +334,7 @@ By default, the built-in <xref:System.Text.Json.Serialization.JsonStringEnumConv
 
 ::: zone-end
 
-::: zone pivot="dotnet-7-0"
+::: zone pivot="dotnet-8-0,dotnet-7-0"
 
 ### Use default system converter
 

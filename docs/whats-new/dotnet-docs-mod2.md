@@ -23,7 +23,6 @@ Welcome to what's new in the .NET docs for August 2023. This article lists some 
 - [Boolean-backed enum type support removed](../core/compatibility/core-libraries/8.0/bool-backed-enum.md)
 - [Binding config to dictionary extends values](../core/compatibility/extensions/7.0/config-bind-dictionary.md)
 - ['ca-certificates' and 'krb5-libs' packages removed from Alpine images](../core/compatibility/containers/8.0/krb5-libs-package.md)
-- [Removed Boolean-based overloads of ToFrozenDictionary/ToFrozenSet](../core/compatibility/core-libraries/8.0/optimizeforreading-arg.md)
 - [Security token events return a JSonWebToken](../core/compatibility/aspnet-core/8.0/securitytoken-events.md)
 - [TrimMode defaults to full for Web SDK projects](../core/compatibility/aspnet-core/8.0/trimmode-full.md)
 

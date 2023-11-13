@@ -78,7 +78,7 @@ Developers writing .NET 5 apps will have access to the latest C# version and fea
 
 - **Function pointers**: Language constructs that expose the following intermediate language (IL) opcodes: `ldftn` and `calli`.
 
-For more information on the available C# 9 features, see [What's new in C# 9](../../csharp/whats-new/csharp-9.md).
+For more information on the available C# 9 features, see [What's new in C# 9](../../csharp/whats-new/csharp-version-history.md#c-version-9).
 
 ### Source generators
 

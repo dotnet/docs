@@ -26,7 +26,7 @@ Define a `Settings` record type entity for storing configuration values in the d
 
 :::code language="csharp" source="snippets/configuration/custom-provider/Models/Settings.cs":::
 
-For information on record types, see [Record types in C# 9](../../csharp/whats-new/csharp-9.md#record-types).
+For information on record types, see [Record types in C#](/dotnet/csharp/language-reference/builtin-types/records).
 
 Add an `EntityConfigurationContext` to store and access the configured values.
 

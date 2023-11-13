@@ -35,7 +35,7 @@ Azure Migrate application and code assessment for .NET is also available as a .N
 dotnet tool install -g dotnet-appcat
 ```
 
-Similarly, because the AppCAT tool is installed as a .NET tool, it can be easily updated by running:
+Similarly, to update the tool, use the following command:
 
 ```dotnetcli
 dotnet tool update -g dotnet-appcat

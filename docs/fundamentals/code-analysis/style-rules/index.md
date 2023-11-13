@@ -1,7 +1,7 @@
 ---
 title: Code-style rules overview
 description: Learn about the different .NET code-style rules and categories.
-ms.date: 07/22/2023
+ms.date: 11/10/2023
 author: gewarren
 ms.author: gewarren
 ---
@@ -132,6 +132,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0260](ide0078-ide0260.md) | Use pattern matching | [csharp_style_pattern_matching_over_as_with_null_check](ide0078-ide0260.md#csharp_style_pattern_matching_over_as_with_null_check-ide0260) |
 > | [IDE0270](ide0029-ide0030-ide0270.md) | Null check can be simplified | [dotnet_style_coalesce_expression](ide0029-ide0030-ide0270.md#dotnet_style_coalesce_expression) |
 > | [IDE0280](ide0280.md) | Use `nameof` | |
+> | [IDE0290](ide0290.md) | Use primary constructor | [csharp_style_prefer_primary_constructors](ide0290.md#csharp_style_prefer_primary_constructors) |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
 

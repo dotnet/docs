@@ -1,7 +1,7 @@
 ---
 title: Code-style language and unnecessary code rules
 description: Learn about the different code-style rules for using C# and Visual Basic language constructs and for finding unnecessary code.
-ms.date: 07/22/2023
+ms.date: 11/10/2023
 helpviewer_keywords:
 - language code style rules [EditorConfig]
 - language rules
@@ -91,6 +91,7 @@ C# style rules:
 - [Remove unnecessary lambda expression (IDE0200)](ide0200.md)
 - [Convert to top-level statements (IDE0210)](ide0210.md)
 - [Convert to 'Program.Main' style program (IDE0211)](ide0211.md)
+- [Use primary constructor (IDE0290)](ide0290.md)
 
 ### Expression-bodied members
 

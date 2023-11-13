@@ -135,7 +135,7 @@ Types, methods, or assemblies can be marked with the <xref:System.Diagnostics.Co
 > [!WARNING]
 > Interceptors are an experimental feature, available in preview mode with C# 12. The feature may be subject to breaking changes or removal in a future release. Therefore, it is not recommended for production or released applications.
 >
-> In order to use interceptors, the user project must specify the property <InterceptorsPreviewNamespaces>. This is a list of namespaces which are allowed to contain interceptors.
+> In order to use interceptors, the user project must specify the property `<InterceptorsPreviewNamespaces>`. This is a list of namespaces which are allowed to contain interceptors.
 >
 > For example: `<InterceptorsPreviewNamespaces>$(InterceptorsPreviewNamespaces);Microsoft.AspNetCore.Http.Generated;MyLibrary.Generated</InterceptorsPreviewNamespaces>`
 

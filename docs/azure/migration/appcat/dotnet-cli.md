@@ -89,7 +89,7 @@ You can drill down to see the issues found in each project by clicking on the pr
 
 At the top of the project dashboard you'll find 3 tabs: **Dashboard**, **Components**, and **Issues**.
 
-Click on the **Components** tab to see which files the incidents of the issues identified reside in. You can drill down into the file to see the rule that triggered the incident, a description of the rule, the exact position in the code where the issue exists, and an estimation of the effort it will take to fix.
+Click on the **Components** tab to see which files the incidents of the issues identified reside in. You can drill down into the file to see the issues that triggered the incident, a description of the issue, the exact position in the code where the incidents exist, and an estimation of the effort it will take to fix the incidents.
 
 ![Screenshot of the CLI's report project component dashboard](./media/cli/cli-report-project-component.png)
 

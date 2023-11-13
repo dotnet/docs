@@ -76,7 +76,7 @@ The **Summary** section of the dashboard contains several terms that are worth d
 
 ### Projects view
 
-Click on the **Projects** link below the **Dashboard** on the left side of the report to see the number of issues, incidents, and the estimated effort to fix those issues by each project scanned.
+Click on the **Projects** link below the **Dashboard** on the left side of the report to see the number of issues, incidents, and the estimated effort to fix those incidents by each project scanned.
 
 ![Screenshot of the projects dashboard](./media/cli/cli-report-projects-overview.png)
 

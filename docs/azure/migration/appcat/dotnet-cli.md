@@ -39,6 +39,7 @@ appcat analyze <APPLICATION_PATH>
     > [!NOTE]
     > The **source code and settings** option will only scan the source code in the projects you selected on the previous screen. The **Binary dependencies** option will scan any dependencies (such as NuGet packages) your projects rely on. You can expect to see many more issues identified when **binary dependencies** is selected. This option can create some "noise" since it will also identify potential compatibility issues of the binaries that are not necessarily apply to your application. 
     >
+
 1. You'll then be prompted to generate a report with the results of the analysis. The output can be formatted as CSV, HTML, or JSON. Press **Enter**.
     ![Screenshot of the CLI report format selection screen](./media/cli/cli-report-format-selection.png)
 1. You'll be prompted for a report name. Input the name and press **Enter**.

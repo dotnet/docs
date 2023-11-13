@@ -19,7 +19,10 @@ If you have not installed the .NET CLI tool, please follow [these instructions f
 
 The application and code assessment for .NET CLI tool lets you decide which projects in your solution to scan to identify migration opportunities to Azure. Follow these steps to scan your application.
 
-1. Switch to the base directory of your solution.
+In CLI run the command:
+
+```dotnetcli
+appcat analyze <APPLICATION_PATH>
 1. Type `appcat analyze` and press **Enter**.
 
     > [!NOTE]

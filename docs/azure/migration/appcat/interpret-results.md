@@ -7,6 +7,8 @@ author: codemillmatt
 ms.author: masoucou
 ---
 
+# Interpret the analysis results
+
 Both CLI tool and Visual Studio allows you to create HTML, CSV and JSON reports. This section describes how to interpret these reports.
 
 For the purposes of this document we're going to use the HTML report.

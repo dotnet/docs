@@ -175,9 +175,7 @@ Starting with .NET 8, when set to `1`, enables the [Diagnostic Port](../diagnost
 
 ### `DOTNET_EnableDiagnostics_Debugger`
 
-> [!NOTE]
-> Available since .NET 8
-When set to `1`, enables debugging. Defaults to 1.
+Starting with .NET 8, when set to `1`, enables debugging. Defaults to 1.
 
 ### `DOTNET_EnableDiagnostics_Profiler`
 

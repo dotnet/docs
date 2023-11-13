@@ -171,9 +171,7 @@ When set to `1`, enables debugging, profiling, and other diagnostics via the [Di
 
 ### `DOTNET_EnableDiagnostics_IPC`
 
-> [!NOTE]
-> Available since .NET 8
-When set to `1`, enables the [Diagnostic Port](../diagnostics/diagnostic-port.md). Defaults to 1.
+Starting with .NET 8, when set to `1`, enables the [Diagnostic Port](../diagnostics/diagnostic-port.md). Defaults to 1.
 
 ### `DOTNET_EnableDiagnostics_Debugger`
 

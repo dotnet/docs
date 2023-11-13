@@ -91,7 +91,7 @@ At the top of the project dashboard you'll find 3 tabs: **Dashboard**, **Compone
 
 Click on the **Components** tab to see which files the incidents of the issues identified reside in. You can drill down into the file to see the issues that triggered the incident, a description of the issue, the exact position in the code where the incidents exist, and an estimation of the effort it will take to fix the incidents.
 
-![Screenshot of the CLI's report project component dashboard](./media/cli/cli-report-project-component.png)
+![Screenshot of the report's project component dashboard](./media/cli/cli-report-project-component.png)
 
 Finally, by clicking on the **Issues** tab, you can see the issues organzied by the rules which triggered them. You can drill down into the rules to see the exact file location that needs to be addressed and the effort to fix.
 

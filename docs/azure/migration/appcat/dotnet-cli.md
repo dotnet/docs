@@ -60,7 +60,7 @@ Here are the issue severity classifications:
 
 * **Mandatory** - the issue has to be resolved for the migration to be successful.
 * **Optional** - the issue discovered is a real issue and fixing it could improve the app after migration, however it is not blocking.
-* **Potential** - we are not sure if it is necessarily a blocking problem, but raised just in case.
+* **Potential** - it could or could not be a blocking problem depending on the specifics of your app and the migration scenario, so the tool draws your attention and suggests what checks could be made to ensure the application will work in Azure.
 * **Informational** - the issue was raised only for informational purpose and is not required to be resolved.
 
 ![Screenshot of the application and code assessment tool for .NET dashboard](./media/cli/cli-report-dashboard.png)

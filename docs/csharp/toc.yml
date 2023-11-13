@@ -178,16 +178,16 @@ items:
       href: whats-new/tutorials/primary-constructors.md
     - name: Explore static interface members
       href: whats-new/tutorials/static-virtual-interface-members.md
-    - name: Explore record types
-      href: whats-new/tutorials/records.md
-    - name: Explore top-level statements
-      href: whats-new/tutorials/top-level-statements.md
     - name: Explore patterns in objects
       href: whats-new/tutorials/patterns-objects.md
     - name: Write a custom string interpolation handler
       href: whats-new/tutorials/interpolated-string-handler.md
 - name: Tutorials
   items:
+  - name: Explore record types
+    href: tutorials/records.md
+  - name: Explore top-level statements
+    href: tutorials/top-level-statements.md
   - name: Explore indexes and ranges
     href: tutorials/ranges-indexes.md
   - name: Work with nullable reference types

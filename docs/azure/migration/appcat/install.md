@@ -19,7 +19,7 @@ Application and code assessment can be installed as a Visual Studio extension or
 
 ## Install the Visual Studio extension
 
-The application and code assessment for .NET can be installed as a Visual Studio extension, which lets you analyze an open projects in your solution. Use the following steps to install it from inside Visual Studio. Alternatively, you can download and install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.azureappcat).
+The application and code assessment for .NET can be installed as a Visual Studio extension, which lets you analyze an open projects in your solution. Use the following steps to install it from inside Visual Studio. Alternatively, you can download and install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.appcat).
 
   1. With Visual Studio opened, press the **Extensions > Manage Extensions** menu item, which opens the **Manage Extensions** window.
   2. In the **Manage Extensions** window, enter **"Azure Migrate"** into the search input box.

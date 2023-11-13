@@ -13,7 +13,7 @@ To run F# Interactive from the console, run `dotnet fsi`. You will find `dotnet 
 
 > [!NOTE]
 > If you intend to use F# interactive under .NET Framework runtime, you'll need the [Visual Studio Build Tools](https://visualstudio.microsoft.com/downloads/?q=build+tools) or an edition of Visual Studio installed, and invoke the `FsiAnyCPU.exe` command from a "Developer Command Prompt" or simply make `FsiAnyCPU.exe` available in the `PATH` environment variable, in place of `dotnet fsi` command line.
-> 
+>
 > Tooling supports defining version F# Interactive runtime:
 > * In Visual Studio: In the menu bar, **Tools** / **Options** then **F# Tools** / **F# Interactive**, and adjust **Use .NET Core Scripting**.
 > * In Visual Studio Code (ionide extension): In the command palette, **Preferences: Open User Settings**, then **Extensions** / **F#** / **FSharp: Fsi Sdk File Path**.

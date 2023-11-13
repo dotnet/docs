@@ -21,7 +21,7 @@ The application and code assessment lets you decide which projects in your solut
 
 1. Open the solution containing the projects you want to migrate to Azure in Visual Studio 2022.
 1. Right click on any of the projects in the Solution Explorer window and select **Re-platform to Azure**.
-    ![Screenshot of the replatform to Azure menu item in Visual Studio](./media/vs/replatform.png)
+    ![Screenshot of the re-platform to Azure menu item in Visual Studio](./media/vs/replatform.png)
 1. The utility will start and give you the option to start a new analysis report or open an existing one. It will also display any recent analysis reports.
     ![Screenshot showing the recent analysis reports](./media/vs/appcat-start-screen.png)
 1. Click on **New report** and it will display the projects in your solution in a treeview. It will give you an option to select which projects to analyze. You fill find projects pre-selected for you that are most likely to have compatibility issues. You can change the selection by checking or unchecking the boxes next to the projects.

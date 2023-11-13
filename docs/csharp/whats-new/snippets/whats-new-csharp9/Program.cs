@@ -5,5 +5,3 @@ using System;
 
 Console.WriteLine("Hello World!");
 // </TopLevelStatements>
-
-PositionalRecords.PositionalExamples();

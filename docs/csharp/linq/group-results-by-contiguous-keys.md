@@ -45,6 +45,7 @@ In the presented code, of `ChunkExtensions` class implementation, the `while(tru
 <br/>(The chunk is represented by [`Chunk`](#chunk-class) class.)
 <br/>in the source sequence. This loop corresponds to the outer foreach loop that executes the query.
 What happens in that loop is:
+
 1. Get the key for the current Chunk, by assigning it to `key` variable: `var key = keySelector(enumerator.Current);`. The source iterator will churn through the source sequence until it finds an element with a key that doesn't match.
 2. Make a new Chunk (group) object, and store it in `current` variable, that initially has one GroupItem, which is a copy of the current source element.
 3. Return that Chunk. A Chunk is an `IGrouping<TKey,TSource>`, which is the return value of the [`ChunkBy`](#chunk-class) method. At this point the Chunk only has the first element in its source sequence. The remaining elements will be returned only when the client code foreach's over this chunk. See `Chunk.GetEnumerator` for more info.

@@ -237,7 +237,7 @@ The `#r` and `#load` directives seen previously are only available in F# Interac
 |Directive|Description|
 |---------|-----------|
 |`#r "nuget:..."`|References a package from NuGet|
-|`#r "extname:..."`|Reference a package from `extname` extension (such as `paket`)|
+|`#r "extname:..."`|Reference a package from `extname` extension[^1] (such as `paket`)|
 |`#r "assembly-name.dll"`|References an assembly on disk|
 |`#load "file-name.fsx"`|Reads a source file, compiles it, and runs it.|
 |`#help`|Displays information about available directives.|

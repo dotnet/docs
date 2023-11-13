@@ -59,7 +59,7 @@ The **Summary** section of the dashboard contains several terms that are worth d
 Here are the issue severity classifications:
 
 * **Mandatory** - the issue has to be resolved for the migration to be successful.
-* **Optional** - the issue discovered is a real issue and fixing it could improve the app after migration, however it is not blocking.
+* **Optional** - the issue discovered is a real issue and fixing it could improve the application work after migration, however it is not blocking.
 * **Potential** - it could or could not be a blocking problem depending on the specifics of your app and the migration scenario, so the tool draws your attention and suggests what checks could be made to ensure the application will work in Azure.
 * **Informational** - the issue was raised only for informational purpose and is not required to be resolved.
 

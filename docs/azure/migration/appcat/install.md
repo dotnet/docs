@@ -9,7 +9,7 @@ ms.author: masoucou
 
 # Install Azure Migrate application and code assessment for .NET
 
-Application and code assessment can be installed as a Visual Studio extension or as a .NET command-line tool. When installed as a Visual Studio extension, loaded projects can be upgraded through the context menu in Solution Explorer. The command-line version of the tool provides an interactive step-by-step experience.
+Application and code assessment can be installed as a Visual Studio extension or as a .NET command-line tool. When installed as a Visual Studio extension, loaded projects can be analyzed through the context menu in Solution Explorer. The command-line version of the tool provides an interactive step-by-step experience.
 
 ## Prerequisites
 

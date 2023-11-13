@@ -24,7 +24,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 - The [.NET 7.0 SDK or later](https://dotnet.microsoft.com/download/dotnet/7.0)
 - A .NET integrated development environment (IDE)
@@ -51,7 +51,7 @@ You may be familiar with the <xref:System.Web.Hosting.HostingEnvironment.QueueBa
 
 In .NET, to model a service that is inspired by the `QueueBackgroundWorkItem` functionality, start by adding an `IBackgroundTaskQueue` interface to the project:
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code source="snippets/workers/7.0/queue-service/IBackgroundTaskQueue.cs":::
 
@@ -64,7 +64,7 @@ In .NET, to model a service that is inspired by the `QueueBackgroundWorkItem` fu
 
 There are two methods, one that exposes queuing functionality, and another that dequeues previously queued work items. A *work item* is a `Func<CancellationToken, ValueTask>`. Next, add the default implementation to the project.
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code source="snippets/workers/7.0/queue-service/DefaultBackgroundTaskQueue.cs":::
 
@@ -87,7 +87,7 @@ In the following `QueueHostedService` example:
 
 Replace the existing `Worker` class with the following C# code, and rename the file to *QueueHostedService.cs*.
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code source="snippets/workers/7.0/queue-service/QueuedHostedService.cs" highlight="29-30,32":::
 
@@ -106,7 +106,7 @@ A `MonitorLoop` service handles enqueuing tasks for the hosted service whenever 
   - Three 5-second delays are executed <xref:System.Threading.Tasks.Task.Delay%2A>.
   - A `try-catch` statement traps <xref:System.OperationCanceledException> if the task is canceled.
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code source="snippets/workers/7.0/queue-service/MonitorLoop.cs" highlight="5,10,35":::
 :::zone-end
@@ -118,7 +118,7 @@ A `MonitorLoop` service handles enqueuing tasks for the hosted service whenever 
 
 Replace the existing `Program` contents with the following C# code:
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code source="snippets/workers/7.0/queue-service/Program.cs" highlight="4-14":::
 
@@ -131,7 +131,7 @@ Replace the existing `Program` contents with the following C# code:
 
 The services are registered in (*Program.cs*). The hosted service is registered with the `AddHostedService` extension method. `MonitorLoop` is started in *Program.cs* top-level statement:
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code source="snippets/workers/7.0/queue-service/Program.cs" range="18-19":::
 

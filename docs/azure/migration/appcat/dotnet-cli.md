@@ -97,7 +97,7 @@ Finally, by clicking on the **Issues** tab, you can see the incidents organized 
 
 ![Screenshot of the project issues dashboard](./media/cli/cli-report-project-issue.png)
 
-### Aggregate issues
+### Aggregate Issues view
 
 Click on the **Aggregate issues** link below the **Projects** on the left side of the report's screen to see the incidents organized by the issues that triggered them. These are all of the issues across all of the projects scanned, including the number of incidents and an estimated story points effort. You can drill down into each issue to see the exact files and locations that needs to be addressed and the effort to fix.
 

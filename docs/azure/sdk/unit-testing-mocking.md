@@ -239,7 +239,7 @@ For example, an Azure virtual machine resizes in an Azure resource group. The `A
 
 :::code language="csharp" source="snippets/unit-testing/ResourceManager/ResourceManagerCodeStructure.cs" id="ParentOfVMIsRG" :::
 
-The method `GetVirtualMachines` is an extension method on `ResourceGroupResource`, which is usually not supported by mocking libraries. To write a unit test for this method, you need to mock the method on the corresponding "mockable resource" of this extension method.
+Because the virtual machine-related functionality such as `GetVirtualMachines` on `ResourceGroupResource` are implemented as extension methods, it is not possible to just create a mock of the type and override the method. Instead, you'll also have to create a mock class for the "mockable resource" and wire them together.
 
 The mockable resource type is always in the `Mocking` sub-namespace of the extension method. In the above example, the mockable resource type is in the `Azure.ResourceManager.Compute.Mocking` namespace. And the mockable resource type is always named after the resource type with a "Mockable" and the library name as prefixes. In the above example, the mockable resource type is named `MockableComputeResourceGroupResource`, where `ResourceGroupResource` is the resource type of the extension method, and `Compute` is the library name.
 

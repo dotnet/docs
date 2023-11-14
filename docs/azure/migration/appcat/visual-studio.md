@@ -24,7 +24,7 @@ The application and code assessment lets you decide which projects in your solut
     ![Screenshot of the re-platform to Azure menu item in Visual Studio](./media/vs/replatform.png)
 1. The utility will start and give you the option to start a new analysis report or open an existing one. It will also display any recent analysis reports.
     ![Screenshot showing the recent analysis reports](./media/vs/appcat-start-screen.png)
-1. Click on **New report** and it will display the projects in your solution in a treeview. It will give you an option to select which projects to analyze. You fill find projects pre-selected for you that are most likely to have compatibility issues. You can change the selection by checking or unchecking the boxes next to the projects.
+1. Click on **New report** and it will display the projects in your solution in a treeview. It will give you an option to select which projects to analyze. You will find web projects pre-selected for you and you can change the selection by checking or unchecking the boxes next to the projects. When the tool runs, it also analyzes the dependencies your selected projects has. 
     ![Screenshot showing the projects in the solution](./media/vs/analyze-project-selection.png)
 1. Click the **Next** button and you'll be presented with the option to analyze **Source code and settings**, **Binary dependencies**, or both.
     ![Screenshot of the product component selection screen](./media/vs/analyze-project-component-selection.png)

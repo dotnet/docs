@@ -36,7 +36,7 @@ Many terms are mistakenly used synonymously. In this section, there are definiti
 
 The Worker Service template is available to the .NET CLI, and Visual Studio. For more information, see [.NET CLI, `dotnet new worker` - template](../tools/dotnet-new-sdk-templates.md#web-others). The template consists of a `Program` and `Worker` class.
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code language="csharp" source="snippets/workers/7.0/background-service/Program.cs":::
 
@@ -79,7 +79,7 @@ For more information regarding performance considerations, see [Server GC](../..
 
 As for the `Worker`, the template provides a simple implementation.
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code language="csharp" source="snippets/workers/7.0/background-service/Worker.cs":::
 
@@ -110,7 +110,7 @@ An app based on the Worker template uses the `Microsoft.NET.Sdk.Worker` SDK and 
 
 With most modern .NET workloads, containers are a viable option. When creating a long-running service from the Worker template in Visual Studio, you can opt in to **Docker support**. Doing so creates a *Dockerfile* that containerizes your .NET app. A [*Dockerfile*](https://docs.docker.com/engine/reference/builder) is a set of instructions to build an image. For .NET apps, the *Dockerfile* usually sits in the root of the directory next to a solution file.
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code language="dockerfile" source="snippets/workers/7.0/background-service/Dockerfile":::
 
@@ -150,7 +150,7 @@ The preceding *Dockerfile* steps include:
 
 When you target Docker as a deployment strategy for your .NET Worker Service, there are a few considerations in the project file:
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code language="xml" source="snippets/workers/7.0/background-service/App.WorkerService.csproj" highlight="8,13":::
 
@@ -187,7 +187,7 @@ These two methods serve as *lifecycle* methods - they're called during host star
 
 In most common scenarios, you don't need to explicitly signal the completion of a hosted service. When the host starts the services, they're designed to run until the host is stopped. In some scenarios, however, you may need to signal the completion of the entire host application when the service completes. To signal the completion, consider the following `Worker` class:
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code source="snippets/workers/7.0/signal-completion-service/App.SignalCompletionService/Worker.cs":::
 

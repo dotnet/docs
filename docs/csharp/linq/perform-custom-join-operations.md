@@ -42,6 +42,9 @@ In the following example, the query must join two sequences based on matching ke
 
 :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/CustomJoins.cs" id="merge_csv_files":::
 
+Note that `queryNamesScores`, containing the merged data sources, in the above example is using a named type. You could use `var` instead of an explicit type for the query.
+<br/>Also, the `students` variable is optional to create. This good practice of storing the newly created `Student` objects in memory allows for faster access in future queries.
+
 ## See also
 
 - [Language Integrated Query (LINQ)](index.md)

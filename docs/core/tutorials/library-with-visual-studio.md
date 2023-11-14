@@ -2,7 +2,7 @@
 title: Create a .NET class library using Visual Studio
 description: Learn how to create a .NET class library using Visual Studio.
 ms.date: 08/22/2023
-zone_pivot_groups: dotnet-version-6-8
+zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"

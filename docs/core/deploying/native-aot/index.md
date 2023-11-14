@@ -10,7 +10,7 @@ ms.date: 06/12/2023
 
 Publishing your app as *Native AOT* produces an app that's [self-contained](../index.md#publish-self-contained) and that has been ahead-of-time (AOT) compiled to native code. Native AOT apps have faster startup time and smaller memory footprints. These apps can run on machines that don't have the .NET runtime installed.
 
-The benefit of Native AOT is most significant for workloads with a high number of deployed instances, such as cloud infrastructure and hyper-scale services. Native AOT deployment is currently in [preview for ASP.NET Core 8.0](/aspnet/core/fundamentals/native-aot/?view=aspnetcore-8.0&preserve-view=true).
+The benefit of Native AOT is most significant for workloads with a high number of deployed instances, such as cloud infrastructure and hyper-scale services. .NET 8 adds [ASP.NET Core support for native AOT](/aspnet/core/fundamentals/native-aot).
 
 The Native AOT deployment model uses an ahead-of-time compiler to compile IL to native code at the time of publish. Native AOT apps don't use a just-in-time (JIT) compiler when the application runs. Native AOT apps can run in restricted environments where a JIT isn't allowed. Native AOT applications target a specific runtime environment, such as Linux x64 or Windows x64, just like publishing a [self-contained app](../index.md#publish-self-contained).
 
@@ -167,7 +167,7 @@ The publish process analyzes the entire project and its dependencies for possibl
 ### [.NET 8+](#tab/net8plus)
 
 - [Diagnostic support for debugging and profiling](./diagnostics.md) with some limitations.
-- Support for some ASP.NET Core features. For more information, see [ASP.NET Core support for Native AOT](/aspnet/core/fundamentals/native-aot/?view=aspnetcore-8.0&preserve-view=true).
+- Support for some ASP.NET Core features. For more information, see [ASP.NET Core support for Native AOT](/aspnet/core/fundamentals/native-aot/).
 
 ---
 

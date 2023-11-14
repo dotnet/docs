@@ -894,14 +894,10 @@ items:
       - name: volatile
         href: language-reference/keywords/volatile.md
     - name: Statement Keywords
-      items:
-      - name: Statement categories
-        href: language-reference/keywords/statement-keywords.md
+      href: language-reference/keywords/statement-keywords.md
     - name: Method Parameters
-      items:
-      - name: Passing parameters
-        displayName: ref, in, out, params, reference parameter, value parameter, ref readonly
-        href: language-reference/keywords/method-parameters.md
+      displayName: ref, in, out, params, reference parameter, value parameter, ref readonly
+      href: language-reference/keywords/method-parameters.md
     - name: Namespace Keywords
       items:
       - name: namespace

@@ -1,6 +1,6 @@
 ﻿namespace LinqSamples;
 
-// <group_by_contiguous_keys_1>
+// <group_by_contiguous_keys_chunkextensions>
 public static class ChunkExtensions
 {
     public static IEnumerable<IGrouping<TKey, TSource>> ChunkBy<TSource, TKey>(
@@ -27,32 +27,15 @@ public static class ChunkExtensions
             yield break;
         }
 
-        // Iterate through source sequence and create a copy of each Chunk.
-        // On each pass, the iterator advances to the first element of the next "Chunk"
-        // in the source sequence. This loop corresponds to the outer foreach loop that
-        // executes the query.
         Chunk<TKey, TSource> current = null;
         while (true)
         {
-            // Get the key for the current Chunk. The source iterator will churn through
-            // the source sequence until it finds an element with a key that doesn't match.
             var key = keySelector(enumerator.Current);
 
-            // Make a new Chunk (group) object that initially has one GroupItem, which is a copy of the current source element.
             current = new Chunk<TKey, TSource>(key, enumerator, value => comparer.Equals(key, keySelector(value)));
 
-            // Return the Chunk. A Chunk is an IGrouping<TKey,TSource>, which is the return value of the ChunkBy method.
-            // At this point the Chunk only has the first element in its source sequence. The remaining elements will be
-            // returned only when the client code foreach's over this chunk. See Chunk.GetEnumerator for more info.
             yield return current;
 
-            // Check to see whether (a) the chunk has made a copy of all its source elements or
-            // (b) the iterator has reached the end of the source sequence. If the caller uses an inner
-            // foreach loop to iterate the chunk items, and that loop ran to completion,
-            // then the Chunk.GetEnumerator method will already have made
-            // copies of all chunk items before we get here. If the Chunk.GetEnumerator loop did not
-            // enumerate all elements in the chunk, we need to do it here to avoid corrupting the iterator
-            // for clients that may be calling us on a separate thread.
             if (current.CopyAllChunkElements() == noMoreSourceElements)
             {
                 yield break;
@@ -61,9 +44,9 @@ public static class ChunkExtensions
 
     }
 }
+// </group_by_contiguous_keys_chunkextensions>
 
-// A Chunk is a contiguous group of one or more source elements that have the same key. A Chunk
-// has a key and a list of ChunkItem objects, which are copies of the elements in the source sequence.
+// <group_by_contiguous_keys_chunk_class>
 class Chunk<TKey, TSource> : IGrouping<TKey, TSource>
 {
     // INVARIANT: DoneCopyingChunk == true ||
@@ -117,10 +100,7 @@ class Chunk<TKey, TSource> : IGrouping<TKey, TSource>
         m_Lock = new object();
     }
 
-    // Indicates that all chunk elements have been copied to the list of ChunkItems,
-    // and the source enumerator is either at the end, or else on an element with a new key.
-    // the tail of the linked list is set to null in the CopyNextChunkElement method if the
-    // key of the next element does not match the current chunk's key, or there are no more elements in the source.
+    // Indicates that all chunk elements have been copied to the list of ChunkItems.
     private bool DoneCopyingChunk => tail == null;
 
     // Adds one ChunkItem to the current group
@@ -128,7 +108,6 @@ class Chunk<TKey, TSource> : IGrouping<TKey, TSource>
     private void CopyNextChunkElement()
     {
         // Try to advance the iterator on the source sequence.
-        // If MoveNext returns false we are at the end, and isLastSourceElement is set to true
         isLastSourceElement = !enumerator.MoveNext();
 
         // If we are (a) at the end of the source, or (b) at the end of the current chunk
@@ -148,9 +127,7 @@ class Chunk<TKey, TSource> : IGrouping<TKey, TSource>
         tail = tail.Next!;
     }
 
-    // Called after the end of the last chunk was reached. It first checks whether
-    // there are more elements in the source sequence. If there are, it
-    // Returns true if enumerator for this chunk was exhausted.
+    // Called after the end of the last chunk was reached.
     internal bool CopyAllChunkElements()
     {
         while (true)
@@ -159,9 +136,6 @@ class Chunk<TKey, TSource> : IGrouping<TKey, TSource>
             {
                 if (DoneCopyingChunk)
                 {
-                    // If isLastSourceElement is false,
-                    // it signals to the outer iterator
-                    // to continue iterating.
                     return isLastSourceElement;
                 }
                 else
@@ -174,12 +148,10 @@ class Chunk<TKey, TSource> : IGrouping<TKey, TSource>
 
     public TKey Key { get; }
 
-    // Invoked by the inner foreach loop. This method stays just one step ahead
-    // of the client requests. It adds the next element of the chunk only after
-    // the clients requests the last element in the list so far.
+    // Stays just one step ahead of the client requests.
     public IEnumerator<TSource> GetEnumerator()
     {
-        //Specify the initial element to enumerate.
+        // Specify the initial element to enumerate.
         ChunkItem current = head;
 
         // There should always be at least one ChunkItem in a Chunk.
@@ -205,7 +177,9 @@ class Chunk<TKey, TSource> : IGrouping<TKey, TSource>
 
     System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() => GetEnumerator();
 }
+// </group_by_contiguous_keys_chunk_class>
 
+// <group_by_contiguous_keys_client_code>
 public static class GroupByContiguousKeys
 {
     // The source sequence.
@@ -239,4 +213,4 @@ public static class GroupByContiguousKeys
         }
     }
 }
-// </group_by_contiguous_keys_1>
+// </group_by_contiguous_keys_client_code>

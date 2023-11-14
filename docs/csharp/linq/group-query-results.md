@@ -35,11 +35,15 @@ The following example shows how to group source elements by using something othe
 
 :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/GroupQueryResults.cs" id="group_query_results_2":::
 
+Note that nested foreach is required to access group items.
+
 ## Group by a range example
 
 The following example shows how to group source elements by using a numeric range as a group key. The query then projects the results into an anonymous type that contains only the first and last name and the percentile range to which the student belongs. An anonymous type is used because it is not necessary to use the complete `Student` object to display the results. `GetPercentile` is a helper function that calculates a percentile based on the student's average score. The method returns an integer between 0 and 10.
 
 :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/GroupQueryResults.cs" id="group_query_results_3":::
+
+Note that nested foreach required to iterate over groups and group items.
 
 ## Group by comparison example
 

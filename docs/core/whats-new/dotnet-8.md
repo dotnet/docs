@@ -2,7 +2,7 @@
 title: What's new in .NET 8
 description: Learn about the new .NET features introduced in .NET 8.
 titleSuffix: ""
-ms.date: 10/05/2023
+ms.date: 11/14/2023
 ms.topic: overview
 ms.author: gewarren
 author: gewarren
@@ -10,13 +10,6 @@ author: gewarren
 # What's new in .NET 8
 
 .NET 8 is the successor to [.NET 7](dotnet-7.md). It will be [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 8 here](https://dotnet.microsoft.com/download/dotnet).
-
-This article has been updated for .NET 8 release candidate (RC) 2.
-
-> [!IMPORTANT]
->
-> - This information relates to a pre-release product that may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-> - Much of the other .NET documentation on [https://learn.microsoft.com/dotnet](/dotnet) has not yet been updated for .NET 8.
 
 ## ASP.NET Core
 
@@ -144,7 +137,7 @@ public class DerivedImplement : IDerived
 
 #### Naming policies
 
-[`JsonNamingPolicy`](/dotnet/api/system.text.json.jsonnamingpolicy?view=net-8.0&preserve-view=true#properties) includes new naming policies for `snake_case` (with an underscore) and `kebab-case` (with a hyphen) property name conversions. Use these policies similarly to the existing <xref:System.Text.Json.JsonNamingPolicy.CamelCase?displayProperty=nameWithType> policy:
+[`JsonNamingPolicy`](xref:System.Text.Json.JsonNamingPolicy#properties) includes new naming policies for `snake_case` (with an underscore) and `kebab-case` (with a hyphen) property name conversions. Use these policies similarly to the existing <xref:System.Text.Json.JsonNamingPolicy.CamelCase?displayProperty=nameWithType> policy:
 
 ```csharp
 var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower };
@@ -1078,7 +1071,11 @@ The JIT already supported this optimization but with several large limitations i
 - It was only supported if each field was a primitive type, or a simple struct wrapping a primitive type.
 
 Physical promotion removes these limitations, which fixes a number of long-standing JIT issues.
+<!--
+## .NET MAUI
 
+For information about what's new in .NET MAUI in .NET 8, see [What's new in .NET MAUI for .NET 8](/dotnet/maui/whats-new/dotnet-8).
+-->
 ## .NET SDK
 
 This section contains the following subtopics:
@@ -1239,7 +1236,6 @@ The following changes have been made to .NET container images for .NET 8:
 - [Generated-image defaults](#generated-image-defaults)
 - [Debian 12](#debian-12)
 - [Non-root user](#non-root-user)
-- [Preview image tags](#preview-image-tags)
 - [Chiseled Ubuntu images](#chiseled-ubuntu-images)
 - [Build multi-platform container images](#build-multi-platform-container-images)
 - [ASP.NET composite images](#aspnet-composite-images)
@@ -1265,10 +1261,6 @@ USER app
 .NET 8 adds an environment variable for the UID for the `non-root` user, which is 64198. This environment variable is useful for the Kubernetes `runAsNonRoot` test, which requires that the container user be set via UID and not by name. This [dockerfile](https://github.com/dotnet/dotnet-docker/blob/e5bc76bca49a1bbf9c11e74a590cf6a9fe9dbf2a/samples/aspnetapp/Dockerfile.alpine-non-root#L27) shows an example usage.
 
 The default port also changed from port `80` to `8080`. To support this change, a new environment variable `ASPNETCORE_HTTP_PORTS` is available to make it easier to change ports. The variable accepts a list of ports, which is simpler than the format required by `ASPNETCORE_URLS`. If you change the port back to port `80` using one of these variables, you can't run as `non-root`.
-
-#### Preview image tags
-
-Container image tags for .NET 8 Previews 1 through 7 had a `-preview` suffix, for example, `8.0-preview` and `8.0-preview-<OS>`. Starting in RC 1, `preview` is removed from the tag name, and those tags are no longer maintained. The new tags, `8.0` and `8.0-<OS>`, are permanent, and will be maintained throughout the lifetime of .NET 8.
 
 #### Chiseled Ubuntu images
 
@@ -1486,6 +1478,7 @@ Starting in .NET 8, C# Hot Reload [supports modifying generic types and generic 
 
 ### .NET blog
 
+<!--- [Announcing .NET 8](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8/)-->
 - [Announcing .NET 8 RC 2](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-rc2/)
 - [Announcing .NET 8 RC 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-rc1/)
 - [Announcing .NET 8 Preview 7](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-7/)
@@ -1495,6 +1488,7 @@ Starting in .NET 8, C# Hot Reload [supports modifying generic types and generic 
 - [Announcing .NET 8 Preview 3](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-3/)
 - [Announcing .NET 8 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-2/)
 - [Announcing .NET 8 Preview 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-1/)
+<!--- [ASP.NET Core in .NET 8](https://devblogs.microsoft.com/dotnet/announcing-asp-net-core-in-dotnet-8)-->
 - [ASP.NET Core updates in .NET 8 RC 2](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-rc-2/)
 - [ASP.NET Core updates in .NET 8 RC 1](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-rc-1/)
 - [ASP.NET Core updates in .NET 8 Preview 7](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-7/)

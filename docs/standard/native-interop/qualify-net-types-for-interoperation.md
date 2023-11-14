@@ -2,7 +2,7 @@
 title: "Qualifying .NET Types for COM Interoperation"
 description: This article provides guidelines to help you expose types in a .NET assembly to COM applications for COM interop.
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "exposing .NET components to COM"
   - "COM interop, qualifying .NET types"
   - "qualifying .NET types for interoperation"
@@ -15,33 +15,33 @@ ms.assetid: 4b8afb52-fb8d-4e65-b47c-fd82956a3cdd
 
 ## Expose .NET types to COM
 
-If you intend to expose types in an assembly to COM applications, consider the requirements of COM interop at design time. Managed types (class, interface, structure, and enumeration) seamlessly integrate with COM types when you adhere to the following guidelines:  
-  
-- Classes should implement interfaces explicitly.  
-  
-     Although COM interop provides a mechanism to automatically generate an interface containing all members of the class and the members of its base class, it is far better to provide explicit interfaces. The automatically generated interface is called the class interface. For guidelines, see [Introducing the class interface](com-callable-wrapper.md#introducing-the-class-interface).  
-  
-     You can use Visual Basic, C#, and C++ to incorporate interface definitions in your code, instead of having to use Interface Definition Language (IDL) or its equivalent. For syntax details, see your language documentation.  
-  
-- Managed types must be public.  
-  
-     Only public types in an assembly are registered and exported to the type library. As a result, only public types are visible to COM.  
-  
-     Managed types expose features to other managed code that might not be exposed to COM. For instance, parameterized constructors, static methods, and constant fields are not exposed to COM clients. Further, as the runtime marshals data in and out of a type, the data might be copied or transformed.  
-  
-- Methods, properties, fields, and events must be public.  
-  
-     Members of public types must also be public if they are to be visible to COM. You can restrict the visibility of an assembly, a public type, or public members of a public type by applying the <xref:System.Runtime.InteropServices.ComVisibleAttribute>. By default, all public types and members are visible.  
-  
-- Types must have a public parameterless constructor to be activated from COM.  
-  
-     Managed, public types are visible to COM. However, without a public parameterless constructor (a constructor with no arguments), COM clients cannot create the type. COM clients can still use the type if it is activated by some other means.  
-  
-- Types cannot be abstract.  
-  
-     Neither COM clients nor .NET clients can create abstract types.  
-  
- When exported to COM, the inheritance hierarchy of a managed type is flattened. Versioning also differs between managed and unmanaged environments. Types exposed to COM do not have the same versioning characteristics as other managed types.  
+If you intend to expose types in an assembly to COM applications, consider the requirements of COM interop at design time. Managed types (class, interface, structure, and enumeration) seamlessly integrate with COM types when you adhere to the following guidelines:
+
+- Classes should implement interfaces explicitly.
+
+     Although COM interop provides a mechanism to automatically generate an interface containing all members of the class and the members of its base class, it is far better to provide explicit interfaces. The automatically generated interface is called the class interface. For guidelines, see [Introducing the class interface](com-callable-wrapper.md#introducing-the-class-interface).
+
+     You can use Visual Basic, C#, and C++ to incorporate interface definitions in your code, instead of having to use Interface Definition Language (IDL) or its equivalent. For syntax details, see your language documentation.
+
+- Managed types must be public.
+
+     Only public types in an assembly are registered and exported to the type library. As a result, only public types are visible to COM.
+
+     Managed types expose features to other managed code that might not be exposed to COM. For instance, parameterized constructors, static methods, and constant fields are not exposed to COM clients. Further, as the runtime marshals data in and out of a type, the data might be copied or transformed.
+
+- Methods, properties, fields, and events must be public.
+
+     Members of public types must also be public if they are to be visible to COM. You can restrict the visibility of an assembly, a public type, or public members of a public type by applying the <xref:System.Runtime.InteropServices.ComVisibleAttribute>. By default, all public types and members are visible.
+
+- Types must have a public parameterless constructor to be activated from COM.
+
+     Managed, public types are visible to COM. However, without a public parameterless constructor (a constructor with no arguments), COM clients cannot create the type. COM clients can still use the type if it is activated by some other means.
+
+- Types cannot be abstract.
+
+     Neither COM clients nor .NET clients can create abstract types.
+
+ When exported to COM, the inheritance hierarchy of a managed type is flattened. Versioning also differs between managed and unmanaged environments. Types exposed to COM do not have the same versioning characteristics as other managed types.
 
 ## Consume COM types from .NET
 
@@ -228,7 +228,7 @@ interface IComInterface2 : IComInterface
 
 At the metadata level, `IComInterface2` doesn't implement `IComInterface` but only specifies that implementers of `IComInterface2` must also implement `IComInterface`. Thus, each method from the base interface types must be redeclared.
 
-###### Interface inheritance with `GeneratedComInterfaceAttribute` (.NET 8 Preview 4 or later)
+###### Interface inheritance with `GeneratedComInterfaceAttribute` (.NET 8 and later)
 
 The COM source generator triggered by the `GeneratedComInterfaceAttribute` implements C# interface inheritance as COM interface inheritance, so the virtual function tables are laid out as expected. If you take the previous example, the correct definition of these interfaces in .NET with `System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute` is as follows:
 

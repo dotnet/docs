@@ -21,7 +21,8 @@ public sealed class MockResourceGroupResource : ResourceGroupResource
     private readonly MockableComputeResourceGroupResource _mockableComputeResourceGroupResource;
     public MockResourceGroupResource(VirtualMachineCollection virtualMachineCollection)
     {
-        _mockableComputeResourceGroupResource = new MockMockableComputeResourceGroupResource(virtualMachineCollection);
+        _mockableComputeResourceGroupResource =
+            new MockMockableComputeResourceGroupResource(virtualMachineCollection);
     }
 
     internal MockResourceGroupResource(ArmClient client, ResourceIdentifier id) : base(client, id)

@@ -1,5 +1,4 @@
-﻿using Azure;
-using Moq;
+﻿using Moq;
 
 namespace UnitTestingSampleApp.ResourceManager.Moq;
 

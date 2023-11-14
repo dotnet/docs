@@ -340,6 +340,7 @@ gpg:               imported: 1
 
 ### Download and verification
 
+With the key imported, you can now download the script and the signature, then verify the script matches the signature:
 ```bash
 wget https://dot.net/v1/dotnet-install.sh
 wget https://dot.net/v1/dotnet-install.sig

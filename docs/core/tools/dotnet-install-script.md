@@ -358,7 +358,7 @@ gpg:          There is no indication that the signature belongs to the owner.
 Primary key fingerprint: 2B93 0AB1 228D 11D5 D7F6  B6AC B9CF 1A51 FC7D 3ACF
 ```
 
-The warning means that you don't trust the public key in the keyring, but the script is still verified. Status code returned by the verification command should be `0`.
+The warning means that you don't trust the public key in the keyring, but the script is still verified. The exit code returned by the verification command should be `0`, indicating success.
 
 ## See also
 

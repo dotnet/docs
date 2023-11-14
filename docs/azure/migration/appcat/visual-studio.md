@@ -11,7 +11,9 @@ ms.author: masoucou
 
 Azure Migrate application and code assessment for .NET helps you to identify any issues your application might have when it is ported to Azure and improve the performance, scalability and security by suggesting modern, cloud-native solutions.
 
-This guide describes how to use the application and code assessment Visual Studio extension to both scan and interpret the results of the scan.
+The tool is available as a Visual Studio extension and a [CLI tool](./dotnet-cli.md).
+
+This guide describes how to use the CLI tool to scan your application for possible incompatibilities with Azure.
 
 If you have not installed the Visual Studio extension, please follow [these instructions first](./install.md).
 

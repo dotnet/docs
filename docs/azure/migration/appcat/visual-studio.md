@@ -30,7 +30,9 @@ The application and code assessment lets you decide which projects in your solut
     ![Screenshot of the product component selection screen](./media/vs/analyze-project-component-selection.png)
     > [!NOTE]
     > The **source code and settings** option will only scan the source code in the projects you selected on the previous screen. The **Binary dependencies** option will scan any dependencies (such as NuGet packages) your projects rely on. You can expect to see many more issues identified when **binary dependencies** is selected.
-    > You should consider selecting only **source code and settings** first to figure out what issues reside in your code and fix those before runnig the **binary dependencies** scan.
+    > Scanning binaries can be valuable because the issues detected may identify potential problem in dependencies, but also might not be as useful because source code is not available for these dependencies, so the issues can't be fixed and, in the case of potential issues, it may not be an issues in your case.
+
+> It might be helpful to generate two different reports: for action items and for your awareness.
     >
 
 1. Click the **Analyze** button to start the scan. The selected projects are scanned to look for potential issues when migrating to Azure. When finished, you'll see a dashboard of results.

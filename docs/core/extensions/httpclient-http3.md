@@ -29,30 +29,7 @@ The HTTP version can be configured by setting `HttpRequestMessage.Version` to 3.
 
 ## Platform dependencies
 
-HTTP/3 uses QUIC as its transport protocol. The .NET implementation of HTTP/3 uses [MsQuic](https://github.com/microsoft/msquic) to provide QUIC functionality. If the platform that HttpClient is running on doesn't have all the requirements for HTTP/3, then it's disabled.
-
-### Windows
-
-- Windows 11, Windows Server 2022, or later. (Earlier Windows versions are missing the cryptographic APIs required to support QUIC.)
-
-On Windows, msquic.dll is distributed as part of the .NET runtime, and no other steps are required to install it.
-
-### Linux
-
-- OpenSSL 1.1
-
-On Linux, libmsquic is published via Microsoft's official Linux package repository packages.microsoft.com. To consume it, it must be added manually. For more information, see [Linux Software Repository for Microsoft Products](/windows-server/administration/linux-package-repository-for-microsoft-software). After configuring the package feed, it's installed via the package manager of your distro, for example, for Ubuntu:
-
-```bash
-sudo apt install libmsquic
-```
-
-> [!NOTE]
-> .NET 7 is only compatible with 2.1+ versions of libmsquic.
-
-### macOS
-
-HTTP/3 isn't currently supported on macOS but may be available in a future release.
+HTTP/3 uses QUIC as its transport protocol. The .NET implementation of HTTP/3 uses [MsQuic](https://github.com/microsoft/msquic) to provide QUIC functionality. As a result, .NET support of HTTP/3 depends on MsQuic platform requirements which are documented in [QUIC Platform dependencies](../../fundamentals/networking/quic/quic-overview.md#platform-dependencies). If the platform that HttpClient is running on doesn't have all the requirements for HTTP/3, then it's disabled.
 
 ## Using HttpClient
 

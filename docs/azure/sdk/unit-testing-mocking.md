@@ -249,7 +249,7 @@ Here is how it works:
 
 ## [Non-library](#tab/csharp)
 
-:::code language="csharp" source="snippets/unit-testing/ResourceManager/NonLibrary/MockComputeResourceGroupMockingExtension.cs" :::
+:::code language="csharp" source="snippets/unit-testing/ResourceManager/NonLibrary/MockMockableComputeResourceGroupResource.cs" :::
 
 ## [Moq](#tab/moq)
 

@@ -35,5 +35,5 @@ The `Uri` class automatically performs validation and canonicalization per [RCF 
 - [Sockets in .NET](sockets/sockets-overview.md)
 - [TCP in .NET](sockets/tcp-classes.md)
 - [Tutorial: Make HTTP requests in a .NET console app using C#](../../csharp/tutorials/console-webapiclient.md)
-- [Networking telemetry in .NET](networking-telemetry.md)
+- [Networking telemetry in .NET](telemetry/networking-telemetry.md)
 - [.NET Networking improvements](https://devblogs.microsoft.com/dotnet/dotnet-6-networking-improvements)

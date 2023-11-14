@@ -554,12 +554,12 @@ public sealed class InternalLatencyMonitor : IKestrelTelemetryConsumer, IHttpTel
 }
 ```
 
-[distributed tracing documentation]: ../../core/diagnostics/distributed-tracing.md
-[EventCounters]: ../../core/diagnostics/event-counters.md
-[well-known counters]: ../../core/diagnostics/available-counters.md
-[dotnet-counter docs]: ../../core/diagnostics/dotnet-counters.md
-[dotnet-trace docs]: ../../core/diagnostics/dotnet-trace.md
-[dotnet-trace analysis docs]: ../../core/diagnostics/dotnet-trace.md#view-the-trace-captured-from-dotnet-trace
+[distributed tracing documentation]: ../../../core/diagnostics/distributed-tracing.md
+[EventCounters]: ../../../core/diagnostics/event-counters.md
+[well-known counters]: ../../../core/diagnostics/available-counters.md
+[dotnet-counter docs]: ../../../core/diagnostics/dotnet-counters.md
+[dotnet-trace docs]: ../../../core/diagnostics/dotnet-trace.md
+[dotnet-trace analysis docs]: ../../../core/diagnostics/dotnet-trace.md#view-the-trace-captured-from-dotnet-trace
 [PerfView]: https://github.com/microsoft/perfview
 [AppInsights EventCounters docs]: /azure/azure-monitor/app/eventcounters
 [`TraceEvent`]: https://github.com/microsoft/perfview/blob/main/documentation/TraceEvent/TraceEventLibrary.md
@@ -578,4 +578,4 @@ public sealed class InternalLatencyMonitor : IKestrelTelemetryConsumer, IHttpTel
 [`ISocketsTelemetryConsumer`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/Sockets/ISocketsTelemetryConsumer.cs
 [`IKestrelTelemetryConsumer`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/Kestrel/IKestrelTelemetryConsumer.cs
 [`AsyncLocal`]: xref:System.Threading.AsyncLocal%601
-[`ActivityID`]: ../../core/diagnostics/eventsource-activity-ids.md
+[`ActivityID`]: ../../../core/diagnostics/eventsource-activity-ids.md

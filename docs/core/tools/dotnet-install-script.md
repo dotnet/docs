@@ -319,7 +319,7 @@ Here is a step-by-step guide on how to verify the authenticity of the `dotnet-in
 
 ### Preparing environment
 
-Installing GPG and importing public key is one time operation.
+Installing GPG and importing our public key is a one time operation.
 
 ```bash
 sudo apt install gpg

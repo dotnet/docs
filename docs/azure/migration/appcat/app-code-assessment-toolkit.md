@@ -57,4 +57,3 @@ More services may be added in the future.
 For information on how to install the Azure Migrate application and code assessment for .NET extension for Visual Studio or CLi tool, see [installation instructions](./install.md).
 
 
-For information on how to use and interpret results, see [Use the application and code assessment with Visual Studio](visual-studio.md).

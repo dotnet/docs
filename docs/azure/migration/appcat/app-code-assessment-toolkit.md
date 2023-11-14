@@ -27,7 +27,9 @@ The utility is designed to help organizations modernize their .NET applications 
 
 With it you can:
 
-- **Assess the code to a specific target:** Assess an application for a specific Azure target. Check the effort and the modifications you have to do in order to replatform your applications to Azure.
+- **Assess the code compatibility with Azure:** get notified about every part of your code that might not work when you move your application to Azure.
+
+- **Get recommendations on refactoring your code:** receive guidance and effort estimates on how to update your code to make it Azure-compatible, what verifications you should make to ensure your applications will work properly, and how to improve your applications performance, scalability, security, etc.
 
 ### Supported languages
 

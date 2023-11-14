@@ -3,7 +3,7 @@ title: Service discovery in .NET
 description: Learn how to use the Microsoft.Extensions.ServiceDiscovery library to simplify the integration of service discovery patterns in .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/13/2023
+ms.date: 11/14/2023
 ms.topic: overview
 ---
 

@@ -64,7 +64,7 @@ The serializer has built-in support for the following additional types.
 
   ```csharp
   Console.WriteLine(JsonSerializer.Serialize(
-      new object[] { Half.MaxValue, Int128.MaxValue, UInt128.MaxValue }
+      [ Half.MaxValue, Int128.MaxValue, UInt128.MaxValue ]
   ));
   // [65500,170141183460469231731687303715884105727,340282366920938463463374607431768211455]
   ```

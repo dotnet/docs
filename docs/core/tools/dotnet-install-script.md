@@ -327,7 +327,7 @@ wget https://dot.net/v1/dotnet-install.asc
 gpg --import dotnet-install.asc
 ```
 
-Example of successful key import output:
+When successful, you should see output like the following:
 
 ```
 gpg: directory '/home/<user>/.gnupg' created

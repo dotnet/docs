@@ -14,7 +14,7 @@ Application and code assessment can be installed as a Visual Studio extension or
 ## Prerequisites
 
 - Windows operating system
-- Visual Studio 2022 version 17.1 or later
+- Visual Studio 2022 version 17.1 or later - for the Visual Studio extension
 - .NET SDK for the command-line tool
 
 ## Install the Visual Studio extension

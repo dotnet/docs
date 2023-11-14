@@ -27,7 +27,6 @@ The utility is designed to help organizations modernize their .NET applications 
 
 With it you can:
 
-- **Discover technology usage:** Quickly see which technologies an application uses. Discovery is useful if you have legacy applications with not much documentation and want to know which technologies they use.
 - **Assess the code to a specific target:** Assess an application for a specific Azure target. Check the effort and the modifications you have to do in order to replatform your applications to Azure.
 
 ### Supported languages

@@ -98,7 +98,7 @@ Within a class or struct method, you can use implicit typing to instruct the com
 
 ## Records
 
-C# 9 introduces the `record` type, a reference type that you can create instead of a class or a struct. Records are classes with built-in behavior for encapsulating data in immutable types. C# 10 introduces the `record struct` value type. A record (either `record class` or `record struct`) provides the following features:
+You can add the `record` modifier to a class or a struct. Records are types with built-in behavior for value-based equality. A record (either `record class` or `record struct`) provides the following features:
 
 * Concise syntax for creating a reference type with immutable properties.
 * Value equality.

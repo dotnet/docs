@@ -17,7 +17,7 @@ Use the `static` modifier to declare a static member, which belongs to the type 
 
 You can add the `static` modifier to a [local function](../../programming-guide/classes-and-structs/local-functions.md). A static local function can't capture local variables or instance state.
 
-Beginning with C# 9.0, you can add the `static` modifier to a [lambda expression](../operators/lambda-expressions.md) or [anonymous method](../operators/delegate-operator.md). A static lambda or anonymous method can't capture local variables or instance state.
+You can add the `static` modifier to a [lambda expression](../operators/lambda-expressions.md) or [anonymous method](../operators/delegate-operator.md). A static lambda or anonymous method can't capture local variables or instance state.
 
 ## Example - static class
 

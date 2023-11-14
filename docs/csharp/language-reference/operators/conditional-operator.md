@@ -22,9 +22,7 @@ As the preceding example shows, the syntax for the conditional operator is as fo
 condition ? consequent : alternative
 ```
 
-The `condition` expression must evaluate to `true` or `false`. If `condition` evaluates to `true`, the `consequent` expression is evaluated, and its result becomes the result of the operation. If `condition` evaluates to `false`, the `alternative` expression is evaluated, and its result becomes the result of the operation. Only `consequent` or `alternative` is evaluated.
-
-Beginning with C# 9.0, conditional expressions are target-typed. That is, if a target type of a conditional expression is known, the types of `consequent` and `alternative` must be implicitly convertible to the target type, as the following example shows:
+The `condition` expression must evaluate to `true` or `false`. If `condition` evaluates to `true`, the `consequent` expression is evaluated, and its result becomes the result of the operation. If `condition` evaluates to `false`, the `alternative` expression is evaluated, and its result becomes the result of the operation. Only `consequent` or `alternative` is evaluated. Conditional expressions are target-typed. That is, if a target type of a conditional expression is known, the types of `consequent` and `alternative` must be implicitly convertible to the target type, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/ConditionalOperator.cs" id="TargetTyped":::
 
@@ -85,7 +83,7 @@ For more information, see the [Conditional operator](~/_csharpstandard/standard/
 
 Specifications for newer features are:
 
-- [Target-typed conditional expression (C# 9.0)](~/_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md)
+- [Target-typed conditional expression](~/_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md)
 
 ## See also
 

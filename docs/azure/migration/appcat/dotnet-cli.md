@@ -31,7 +31,7 @@ appcat analyze <APPLICATION_PATH>
     > [!NOTE]
     > If this is your first time running application and code assessment for .NET, you will see an informational message about telemetry and how to opt-out if you should want to.
 
-1. A screen is presented that allows you to pick the projects in your solution to analyze. Use the arrow keys to highlight individual projects and press the spacebar to select them. Press **Enter** when you're ready.
+1. A screen is presented that allows you to pick the projects in your solution to analyze. Use the arrow keys to highlight individual projects and press **Space** to select them. Press **Enter** when you're ready.
     ![A screenshot of the CLI tool's project selection](./media/cli/cli-analyze-project-selection.png)
 1. Next you'll be presented with the option to analyze **Source code and settings**, **Binary dependencies**, or both. Make your choice and press **Enter**.
     ![Screenshot of the CLI dependency selection screen](./media/cli/cli-select-dependencies.png)

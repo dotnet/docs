@@ -148,4 +148,4 @@ When service endpoints are being resolved, each registered resolver is called in
 
 ## See also
 
-- [Service discovery in .NET Aspire](/dotnet/aspire/service-discovery/overview.md)
+- [Service discovery in .NET Aspire](/dotnet/aspire/service-discovery/overview)

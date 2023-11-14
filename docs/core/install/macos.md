@@ -27,7 +27,7 @@ There are two types of supported releases: Long Term Support (LTS) releases and 
 
 The following table is a list of currently supported .NET releases and the versions of macOS they're supported on:
 
-| Operating System       | .NET 7 (LTS) | .NET 7 (STS) | .NET 6 (LTS) |
+| Operating System       | .NET 8 (LTS) | .NET 7 (STS) | .NET 6 (LTS) |
 |------------------------|--------------|--------------|--------------|
 | macOS 13.0 "Ventura"   | ✔️ 8.0       | ✔️ 7.0        | ✔️ 6.0        |
 | macOS 12.0 "Monterey"  | ✔️ 8.0       | ✔️ 7.0        | ✔️ 6.0        |

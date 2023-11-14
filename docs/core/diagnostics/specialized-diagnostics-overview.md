@@ -41,7 +41,7 @@ The .NET runtime exposes a service endpoint that allows other processes to send 
 
 ## DiagnosticSource & DiagnosticListener
 
-[DiagnosticSource](./diagnosticsource-diagnosticlistener.md) is a module that allows code to be instrumented for production-time logging of rich data payloads for consumption within the process that was instrumented. At run time, consumers can dynamically discover data sources and subscribe to the ones of interest. <xref:System.Diagnostics.DiagnosticSource?displayProperty=nameWithType> was designed to allow in-process tools to access rich data, such as by [Open Telemetry instrumentation libraries](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Instrumentation.AspNetCore/README.md). DiagnosticSource data can also be egressed via EventPipe, which enables rich diagnostic data to be collected by dedicated tools. |
+[DiagnosticSource](./diagnosticsource-diagnosticlistener.md) is a module that allows code to be instrumented for production-time logging of rich data payloads for consumption within the process that was instrumented. At run time, consumers can dynamically discover data sources and subscribe to the ones of interest. <xref:System.Diagnostics.DiagnosticSource?displayProperty=nameWithType> was designed to allow in-process tools to access rich data, such as by [OpenTelemetry instrumentation libraries](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Instrumentation.AspNetCore/README.md). DiagnosticSource data can also be egressed via EventPipe, which enables rich diagnostic data to be collected by dedicated tools. |
 
 ## See also
 

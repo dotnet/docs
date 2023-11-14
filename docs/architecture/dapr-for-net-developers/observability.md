@@ -481,7 +481,7 @@ Check out the [Dapr dashboard CLI command reference](https://docs.dapr.io/refere
 
 The Dapr .NET SDK doesn't contain any specific observability features. All observability features are offered at the Dapr level.
 
-If you want to emit telemetry from your .NET application code, you should consider the [OpenTelemetry SDK for .NET](https://opentelemetry.io/docs/net/). The Open Telemetry project is cross-platform, open source, and vendor agnostic. It provides an end-to-end implementation to generate, emit, collect, process, and export telemetry data. There's a single instrumentation library per language that supports automatic and manual instrumentation. Telemetry is published using the Open Telemetry standard. The project has broad industry support and adoption from cloud providers, vendors, and end users.
+If you want to emit telemetry from your .NET application code, you should consider the [OpenTelemetry SDK for .NET](https://opentelemetry.io/docs/net/). The OpenTelemetry project is cross-platform, open source, and vendor agnostic. It provides an end-to-end implementation to generate, emit, collect, process, and export telemetry data. There's a single instrumentation library per language that supports automatic and manual instrumentation. Telemetry is published using the OpenTelemetry standard. The project has broad industry support and adoption from cloud providers, vendors, and end users.
 
 ## Sample application: Dapr Traffic Control
 
@@ -526,14 +526,14 @@ Dapr offers a dashboard that presents information about the Dapr services and co
 ## References
 
 - [Azure Application Insights](/azure/azure-monitor/app/app-insights-overview/)
-- [Open Telemetry](https://opentelemetry.io/)
+- [OpenTelemetry](https://opentelemetry.io/)
 - [Zipkin](https://zipkin.io/)
 - [W3C Trace Context](https://www.w3.org/TR/trace-context/)
 - [Jaeger](https://www.jaegertracing.io/)
 - [New Relic](https://newrelic.com/)
 - [Prometheus](https://prometheus.io/)
 - [Grafana](https://grafana.com/grafana/)
-- [Open Telemetry SDK for .NET](https://opentelemetry.io/docs/net/)
+- [OpenTelemetry SDK for .NET](https://opentelemetry.io/docs/net/)
 - [Fluentd](https://www.fluentd.org/)
 - [ELK stack](https://www.elastic.co/elastic-stack)
 - [Seq](https://datalust.co/seq)

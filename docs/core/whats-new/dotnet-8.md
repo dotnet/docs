@@ -11,6 +11,10 @@ author: gewarren
 
 .NET 8 is the successor to [.NET 7](dotnet-7.md). It will be [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 8 here](https://dotnet.microsoft.com/download/dotnet).
 
+## .NET Aspire
+
+.NET Aspire is an opinionated, cloud ready stack for building observable, production ready, distributed applications.​ .NET Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns, and is available in preview for .NET 8. For more information, see [.NET Aspire (Preview)](/dotnet/aspire).
+
 ## ASP.NET Core
 
 For information about what's new in ASP.NET Core, see [What's new in ASP.NET Core 8.0](/aspnet/core/release-notes/aspnetcore-8.0).
@@ -59,7 +63,9 @@ The serializer has built-in support for the following additional types.
 - <xref:System.Half>, <xref:System.Int128>, and <xref:System.UInt128> numeric types.
 
   ```csharp
-  Console.WriteLine(JsonSerializer.Serialize(new object[] { Half.MaxValue, Int128.MaxValue, UInt128.MaxValue }));
+  Console.WriteLine(JsonSerializer.Serialize(
+      [ Half.MaxValue, Int128.MaxValue, UInt128.MaxValue ]
+  ));
   // [65500,170141183460469231731687303715884105727,340282366920938463463374607431768211455]
   ```
 
@@ -97,7 +103,8 @@ The serializer has built-in support for the following additional types.
 
   ```csharp
   Dictionary<Type, JsonConverter> CreateDictionary(IEnumerable<JsonConverter> converters)
-    => converters.Where(converter => converter.Type != null).ToDictionary(converter => converter.Type!);
+      => converters.Where(converter => converter.Type != null)
+                   .ToDictionary(converter => converter.Type!);
   ```
 
   The property is nullable since it returns `null` for `JsonConverterFactory` instances and `typeof(T)` for `JsonConverter<T>` instances.
@@ -116,7 +123,8 @@ The following code shows an example where the properties from both the immediate
 
 ```csharp
 IDerived value = new DerivedImplement { Base = 0, Derived = 1 };
-JsonSerializer.Serialize(value); // {"Base":0,"Derived":1}
+JsonSerializer.Serialize(value);
+// {"Base":0,"Derived":1}
 
 public interface IBase
 {
@@ -140,8 +148,12 @@ public class DerivedImplement : IDerived
 [`JsonNamingPolicy`](xref:System.Text.Json.JsonNamingPolicy#properties) includes new naming policies for `snake_case` (with an underscore) and `kebab-case` (with a hyphen) property name conversions. Use these policies similarly to the existing <xref:System.Text.Json.JsonNamingPolicy.CamelCase?displayProperty=nameWithType> policy:
 
 ```csharp
-var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower };
-JsonSerializer.Serialize(new { PropertyName = "value" }, options); // { "property_name" : "value" }
+var options = new JsonSerializerOptions
+{
+    PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower
+};
+JsonSerializer.Serialize(new { PropertyName = "value" }, options);
+// { "property_name" : "value" }
 ```
 
 For more information, see [Use a built-in naming policy](../../standard/serialization/system-text-json/customize-properties.md#use-a-built-in-naming-policy).
@@ -158,7 +170,9 @@ For example, consider the following code that deserializes into a `CustomerInfo`
 using System.Text.Json;
 
 CustomerInfo customer =
-    JsonSerializer.Deserialize<CustomerInfo>("""{"Names":["John Doe"],"Company":{"Name":"Contoso"}}""")!;
+    JsonSerializer.Deserialize<CustomerInfo>("""
+        {"Names":["John Doe"],"Company":{"Name":"Contoso"}}
+        """)!;
 
 Console.WriteLine(JsonSerializer.Serialize(customer));
 
@@ -173,7 +187,10 @@ class CustomerInfo
 {
     // Both of these properties are read-only.
     public List<string> Names { get; } = new();
-    public CompanyInfo Company { get; } = new() { Name = "N/A", PhoneNumber = "N/A" };
+    public CompanyInfo Company { get; } = new()
+    {
+        Name = "N/A", PhoneNumber = "N/A"
+    };
 }
 ```
 
@@ -250,7 +267,9 @@ public partial class JsonArray
 You can opt non-public members into the serialization contract for a given type using <xref:System.Text.Json.Serialization.JsonIncludeAttribute> and <xref:System.Text.Json.Serialization.JsonConstructorAttribute> attribute annotations.
 
 ```csharp
-string json = JsonSerializer.Serialize(new MyPoco(42)); // {"X":42}
+string json = JsonSerializer.Serialize(new MyPoco(42));
+// {"X":42}
+
 JsonSerializer.Deserialize<MyPoco>(json);
 
 public class MyPoco
@@ -295,7 +314,9 @@ var options = new JsonSerializerOptions
         .WithAddedModifier(static typeInfo =>
         {
             foreach (JsonPropertyInfo prop in typeInfo.Properties)
+            {
                 prop.Name = prop.Name.ToUpperInvariant();
+            }
         })
 };
 ```
@@ -315,7 +336,8 @@ public record Book(int id, string title, string author, int publishedYear);
 
 [JsonSerializable(typeof(Book))]
 public partial class MyContext : JsonSerializerContext
-{ }
+{
+}
 ```
 
 #### Freeze a JsonSerializerOptions instance
@@ -365,7 +387,8 @@ private class ZonedTimeProvider : TimeProvider
 }
 
 // Create a timer using a time provider.
-ITimer timer = timeProvider.CreateTimer(callBack, state, delay, Timeout.InfiniteTimeSpan);
+ITimer timer = timeProvider.CreateTimer(
+    callBack, state, delay, Timeout.InfiniteTimeSpan);
 
 // Measure a period using the system time provider.
 long providerTimestamp1 = TimeProvider.System.GetTimestamp();
@@ -520,16 +543,22 @@ The <xref:System.ComponentModel.DataAnnotations?displayProperty=fullName> namesp
 New APIs let you attach key-value pair tags to <xref:System.Diagnostics.Metrics.Meter> and <xref:System.Diagnostics.Metrics.Instrument> objects when you create them. Aggregators of published metric measurements can use the tags to differentiate the aggregated values.
 
 ```csharp
-MeterOptions options = new MeterOptions("name")
+var options = new MeterOptions("name")
 {
     Version = "version",
     // Attach these tags to the created meter
-    Tags = new TagList() { { "MeterKey1", "MeterValue1" }, { "MeterKey2", "MeterValue2" } }
+    Tags = new TagList()
+    {
+        { "MeterKey1", "MeterValue1" },
+        { "MeterKey2", "MeterValue2" }
+    }
 };
 
 Meter meter = meterFactory.Create(options);
 
-Instrument instrument = meter.CreateCounter<int>("counter", null, null, new TagList() { { "counterKey1", "counterValue1" } });
+Instrument instrument = meter.CreateCounter<int>(
+    "counter", null, null, new TagList() { { "counterKey1", "counterValue1" } }
+);
 instrument.Add(1);
 ```
 
@@ -592,14 +621,33 @@ namespace System.IO.Compression;
 
 public static partial class ZipFile
 {
-    public static void CreateFromDirectory(string sourceDirectoryName, Stream destination);
-    public static void CreateFromDirectory(string sourceDirectoryName, Stream destination, CompressionLevel compressionLevel, bool includeBaseDirectory);
-    public static void CreateFromDirectory(string sourceDirectoryName, Stream destination, CompressionLevel compressionLevel, bool includeBaseDirectory, Encoding? entryNameEncoding);
+    public static void CreateFromDirectory(
+        string sourceDirectoryName, Stream destination);
 
-    public static void ExtractToDirectory(Stream source, string destinationDirectoryName) { }
-    public static void ExtractToDirectory(Stream source, string destinationDirectoryName, bool overwriteFiles) { }
-    public static void ExtractToDirectory(Stream source, string destinationDirectoryName, Encoding? entryNameEncoding) { }
-    public static void ExtractToDirectory(Stream source, string destinationDirectoryName, Encoding? entryNameEncoding, bool overwriteFiles) { }
+    public static void CreateFromDirectory(
+        string sourceDirectoryName,
+        Stream destination,
+        CompressionLevel compressionLevel,
+        bool includeBaseDirectory);
+
+    public static void CreateFromDirectory(
+        string sourceDirectoryName,
+        Stream destination,
+        CompressionLevel compressionLevel,
+        bool includeBaseDirectory,
+    Encoding? entryNameEncoding);
+
+    public static void ExtractToDirectory(
+        Stream source, string destinationDirectoryName) { }
+
+    public static void ExtractToDirectory(
+        Stream source, string destinationDirectoryName, bool overwriteFiles) { }
+
+    public static void ExtractToDirectory(
+        Stream source, string destinationDirectoryName, Encoding? entryNameEncoding) { }
+
+    public static void ExtractToDirectory(
+        Stream source, string destinationDirectoryName, Encoding? entryNameEncoding, bool overwriteFiles) { }
 }
 ```
 
@@ -713,7 +761,8 @@ public class FirstModelNoNamespace
     [MinLength(5)]
     public string P1 { get; set; } = string.Empty;
 
-    [Microsoft.Extensions.Options.ValidateObjectMembers(typeof(SecondValidatorNoNamespace))]
+    [Microsoft.Extensions.Options.ValidateObjectMembers(
+        typeof(SecondValidatorNoNamespace))]
     public SecondModelNoNamespace? P2 { get; set; }
 }
 
@@ -725,12 +774,14 @@ public class SecondModelNoNamespace
 }
 
 [OptionsValidator]
-public partial class FirstValidatorNoNamespace : IValidateOptions<FirstModelNoNamespace>
+public partial class FirstValidatorNoNamespace 
+    : IValidateOptions<FirstModelNoNamespace>
 {
 }
 
 [OptionsValidator]
-public partial class SecondValidatorNoNamespace : IValidateOptions<SecondModelNoNamespace>
+public partial class SecondValidatorNoNamespace 
+    : IValidateOptions<SecondModelNoNamespace>
 {
 }
 ```
@@ -740,10 +791,13 @@ If your app uses dependency injection, you can inject the validation as shown in
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
-builder.Services.Configure<FirstModelNoNamespace>(builder.Configuration.GetSection(...));
+builder.Services.Configure<FirstModelNoNamespace>(
+    builder.Configuration.GetSection(...));
 
-builder.Services.AddSingleton<IValidateOptions<FirstModelNoNamespace>, FirstValidatorNoNamespace>();
-builder.Services.AddSingleton<IValidateOptions<SecondModelNoNamespace>, SecondValidatorNoNamespace>();
+builder.Services.AddSingleton<
+    IValidateOptions<FirstModelNoNamespace>, FirstValidatorNoNamespace>();
+builder.Services.AddSingleton<
+    IValidateOptions<SecondModelNoNamespace>, SecondValidatorNoNamespace>();
 ```
 
 #### ValidateOptionsResultBuilder type
@@ -860,7 +914,7 @@ GC.RefreshMemoryLimit();
 You can also refresh some of the GC configuration settings related to the memory limit. The following code snippet sets the heap hard limit to 100 mebibytes (MiB):
 
 ```csharp
-AppContext.SetData("GCHeapHardLimit", (ulong)100 * 1024 * 1024);
+AppContext.SetData("GCHeapHardLimit", (ulong)100 * 1_024 * 1_024);
 GC.RefreshMemoryLimit();
 ```
 
@@ -945,8 +999,10 @@ FieldInfo fieldInfo = typeof(UClass).GetField(nameof(UClass._fp));
 Type fpType = fieldInfo.FieldType;
 
 // New methods to determine if a type is a function pointer.
-Console.WriteLine($"IsFunctionPointer: {fpType.IsFunctionPointer}");
-Console.WriteLine($"IsUnmanagedFunctionPointer: {fpType.IsUnmanagedFunctionPointer}");
+Console.WriteLine(
+    $"IsFunctionPointer: {fpType.IsFunctionPointer}");
+Console.WriteLine(
+    $"IsUnmanagedFunctionPointer: {fpType.IsUnmanagedFunctionPointer}");
 
 // New methods to obtain the return and parameter types.
 Console.WriteLine($"Return type: {fpType.GetFunctionPointerReturnType()}");
@@ -969,7 +1025,10 @@ foreach (Type callConv in modifiedType.GetFunctionPointerCallingConventions())
 }
 
 // New method to obtain the custom modifiers.
-foreach (Type modreq in modifiedType.GetFunctionPointerParameterTypes()[0].GetRequiredCustomModifiers())
+var modifiers =
+    modifiedType.GetFunctionPointerParameterTypes()[0].GetRequiredCustomModifiers();
+
+foreach (Type modreq in modifiers)
 {
     Console.WriteLine($"Required modifier for first parameter: {modreq}");
 }
@@ -1093,21 +1152,21 @@ This section contains the following subtopics:
 
 MSBuild includes a new feature that makes it easier to incorporate data from MSBuild into your scripts or tools. The following new flags are available for CLI commands such as [dotnet publish](../tools/dotnet-publish.md) to obtain data for use in CI pipelines and elsewhere.
 
-| Flag  | Description  |
-|---------|---------|
-| `--getProperty:<PROPERTYNAME>` | Retrieves the MSBuild property with the specified name. |
-| `--getItem:<ITEMTYPE>` | Retrieves MSBuild items of the specified type. |
+| Flag                              | Description                                              |
+|-----------------------------------|----------------------------------------------------------|
+| `--getProperty:<PROPERTYNAME>`    | Retrieves the MSBuild property with the specified name.  |
+| `--getItem:<ITEMTYPE>`            | Retrieves MSBuild items of the specified type.           |
 | `--getTargetResults:<TARGETNAME>` | Retrieves the outputs from running the specified target. |
 
 Values are written to the standard output. Multiple or complex values are output as JSON, as shown in the following examples.
 
 ```dotnetcli
->dotnet publish --getProperty:OutputPath
+dotnet publish --getProperty:OutputPath
 bin\Release\net8.0\
 ```
 
 ```dotnetcli
-> dotnet publish -p PublishProfile=DefaultContainer --getProperty:GeneratedContainerDigest --getProperty:GeneratedContainerConfiguration
+dotnet publish -p PublishProfile=DefaultContainer --getProperty:GeneratedContainerDigest --getProperty:GeneratedContainerConfiguration
 {
   "Properties": {
     "GeneratedContainerDigest": "sha256:ef880a503bbabcb84bbb6a1aa9b41b36dc1ba08352e7cd91c0993646675174c4",
@@ -1117,7 +1176,7 @@ bin\Release\net8.0\
 ```
 
 ```dotnetcli
->dotnet publish -p PublishProfile=DefaultContainer --getItem:ContainerImageTags
+dotnet publish -p PublishProfile=DefaultContainer --getItem:ContainerImageTags
 {
   "Items": {
     "ContainerImageTags": [
@@ -1412,10 +1471,10 @@ By default, setting `AndroidStripILAfterAOT` to `true` overrides the default `An
 
 .NET 8 includes several new code analyzers and fixers to help verify that you're using .NET library APIs correctly and efficiently. The following table summarizes the new analyzers.
 
-| Rule ID | Category    | Description  |
-|---------|-------------|--------------|
-|CA1856   | Performance | Fires when the <xref:System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute> attribute is not applied correctly on a parameter. |
-|CA1857   | Performance | Fires when a parameter is annotated with <xref:System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute> but the provided argument isn't a constant. |
+| Rule ID | Category | Description |
+|--|--|--|
+| CA1856 | Performance | Fires when the <xref:System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute> attribute is not applied correctly on a parameter. |
+| CA1857 | Performance | Fires when a parameter is annotated with <xref:System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute> but the provided argument isn't a constant. |
 | [CA1858](../../fundamentals/code-analysis/quality-rules/ca1858.md) | Performance | To determine whether a string starts with a given prefix, it's better to call <xref:System.String.StartsWith%2A?displayProperty=nameWithType> than to call <xref:System.String.IndexOf%2A?displayProperty=nameWithType> and then compare the result with zero. |
 | [CA1859](../../fundamentals/code-analysis/quality-rules/ca1859.md) | Performance | This rule recommends upgrading the type of specific local variables, fields, properties, method parameters, and method return types from interface or abstract types to concrete types when possible. Using concrete types leads to higher quality generated code. |
 | [CA1860](../../fundamentals/code-analysis/quality-rules/ca1860.md) | Performance | To determine whether a collection type has any elements, it's better to use `Length`, `Count`, or `IsEmpty` than to call <xref:System.Linq.Enumerable.Any%2A?displayProperty=nameWithType>. |
@@ -1445,7 +1504,8 @@ WPF includes a new dialog box control called `OpenFolderDialog`. This control le
 var openFolderDialog = new OpenFolderDialog()
 {
     Title = "Select folder to open ...",
-    InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
+    InitialDirectory = Environment.GetFolderPath(
+        Environment.SpecialFolder.ProgramFiles)
 };
 
 string folderName = "";

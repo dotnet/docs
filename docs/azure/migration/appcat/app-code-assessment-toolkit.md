@@ -9,7 +9,7 @@ ms.author: masoucou
 
 # Assess your .NET applications for migration to Azure
 
-This guide describes how to assess .NET applications with the application and code assessment for .NET to evaluate their readiness to migrate to Azure.
+This guide describes how to use the application and code assessment for .NET to evaluate how ready your .NET applications are for moving to Azure and what changes you need to make for a successful cloud migration.
 
 ## What is the application and code assessment for .NET?
 

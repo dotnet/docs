@@ -23,9 +23,6 @@ The application and code assessment for .NET CLI tool lets you decide which proj
 
 1. In CLI type `appcat analyze` and press **Enter**.
 
-```dotnetcli
-appcat analyze <APPLICATION_PATH>
-
     > [!NOTE]
     > If this is your first time running application and code assessment for .NET, you will see an informational message about telemetry and how to opt-out if you should want to.
 

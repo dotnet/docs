@@ -15,7 +15,9 @@ This guide describes how to use the application and code assessment for .NET to 
 
 The utility is used to assess .NET source code to identify replatforming and migration opportunities to Azure.
 
-It discovers application technology usage through static code analysis, supports effort estimation, and accelerates code replatforming, helping you move .NET applications to Azure.
+It discovers application technology usage through static code analysis, supports effort estimation, and accelerates code replatforming by giving you recommendations on how to overcome any potential issues and make your code cloud-compatible.
+
+Application and code assessment is available in a Visual Studio extension and in a CLI tool.
 
 Application and code assessment for .NET bundles a set of tools, engines, and rules to assess and replatform .NET applications to Azure App Service and in the future other Azure targets (such as Azure Kubernetes Service, Azure Container Apps, etc.) can be added.
 

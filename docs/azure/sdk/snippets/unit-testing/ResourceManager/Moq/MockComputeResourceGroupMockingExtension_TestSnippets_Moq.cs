@@ -7,17 +7,15 @@ public class MockComputeResourceGroupMockingExtension_TestSnippets_Moq
 {
     public void GetVirtualMachinesSnippets()
     {
-        // <Moq_GetVirtualMachines>
         Mock<ResourceGroupResource> rgMock = new Mock<ResourceGroupResource>();
-        Mock<ComputeResourceGroupMockingExtension> rgMockingExtensionMock = new Mock<ComputeResourceGroupMockingExtension>();
+        Mock<MockableComputeResourceGroupResource> mockableRg = new Mock<MockableComputeResourceGroupResource>();
         // mock the actual implementation on ComputeResourceGroupMockingExtension
-        rgMockingExtensionMock.Setup(rg => rg.GetVirtualMachines())
+        mockableRg.Setup(rg => rg.GetVirtualMachines())
             .Returns(Mock.Of<VirtualMachineCollection>());
         // mock the GetCachedClient method
-        rgMock.Setup(rg => rg.GetCachedClient(It.IsAny<Func<ArmClient, ComputeResourceGroupMockingExtension>>()))
-            .Returns(rgMockingExtensionMock.Object);
+        rgMock.Setup(rg => rg.GetCachedClient(It.IsAny<Func<ArmClient, MockableComputeResourceGroupResource>>()))
+            .Returns(mockableRg.Object);
         
         ResourceGroupResource resourceGroup = rgMock.Object;
-        // </Moq_GetVirtualMachines>
     }
 }

@@ -1,4 +1,6 @@
-using Azure.Core;
+﻿using Azure.Core;
+
+#nullable disable
 
 namespace UnitTestingSampleApp.ResourceManager;
 

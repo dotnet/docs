@@ -239,16 +239,13 @@ For example, an Azure virtual machine resizes in an Azure resource group. The `A
 
 :::code language="csharp" source="snippets/unit-testing/ResourceManager/ResourceManagerCodeStructure.cs" id="ParentOfVMIsRG" :::
 
-To make sure these extension methods are able to be mocked or unit tested, these methods are always implemented in this way:
+The method `GetVirtualMachines` is an extension method on `ResourceGroupResource`, which is usually not supported by mocking libraries. To write a unit test for this method, you need to mock the method on the corresponding "mockable resource" of this extension method.
 
-:::code language="csharp" source="snippets/unit-testing/ResourceManager/ComputeExtensions.cs" id="HowExtensionMethodsAreImplemented" :::
+The mockable resource type is always in the `Mocking` sub-namespace of the extension method. In the above example, the mockable resource type is in the `Azure.ResourceManager.Compute.Mocking` namespace. And the mockable resource type is always named after the resource type with a "Mockable" and the library name as prefixes. In the above example, the mockable resource type is named `MockableComputeResourceGroupResource`, where `ResourceGroupResource` is the resource type of the extension method, and `Compute` is the library name.
 
-All the extension methods in Azure Resource Manager libraries are implemented in the same pattern:
+One more thing to do before you could get the unit test running is that you need to mock the `GetCachedClient` method on the resource type of the extension method to hook up the extension method and the method on the mockable resource type.
 
-1. There is a class holding the actual implementation of the method, we call it the "Mocking Extension" class. It is named in this pattern "{RP Name}{Resource Name}MockingExtension". In the above example, it is `ComputeResourceGroupMockingExtension`.
-1. The extension method has a private method constructing an instance of the "Mocking Extension" class by calling its `GetCachedClient` method.
-
-Because the virtual machine-related functionality on `ResourceGroupResource` are implemented as extension methods, it is not possible to just create a mock of the type and override the method.  Instead, you'll also have to create a mock class for the extension method and wire them together.
+Here is how it works:
 
 ## [Non-library](#tab/csharp)
 
@@ -256,22 +253,13 @@ Because the virtual machine-related functionality on `ResourceGroupResource` are
 
 ## [Moq](#tab/moq)
 
-:::code language="csharp" source="snippets/unit-testing/ResourceManager/Moq/MockComputeResourceGroupMockingExtension_TestSnippets_Moq.cs" id="Moq_GetVirtualMachines" :::
+:::code language="csharp" source="snippets/unit-testing/ResourceManager/Moq/MockComputeResourceGroupMockingExtension_TestSnippets_Moq.cs" :::
 
 # [NSubstitute](#tab/nsubstitute)
 
-:::code language="csharp" source="snippets/unit-testing/ResourceManager/NSubstitute/MockComputeResourceGroupMockingExtension_TestSnippets_NSubstitute.cs" id="NSubstitute_GetVirtualMachines" :::
+:::code language="csharp" source="snippets/unit-testing/ResourceManager/NSubstitute/MockComputeResourceGroupMockingExtension_TestSnippets_NSubstitute.cs" :::
 
 ---
-
-There is a universal naming pattern across all the Azure Resource Manager libraries for the "mocking extension" type:
-
-1. Find the extended type of the extension method, in the above example, it is `ResourceGroupResource`.
-2. Trim the `Resource` suffix off it and get the "Resource Name", in the above example, it becomes `ResourceGroup`.
-3. Find the namespace of the extension method, in the above example, it is `Azure.ResourceManager.Compute`.
-4. Remove the `Azure.ResourceManager` from the namespace above, and concatenate the left segments together to get the "RP Name", in the above example, it is `Compute`.
-5. Now we get the name of the mocking extension type using this pattern: `{RP Name}{Resource Name}MockingExtension`. In the above extension, the name of the mocking extension type is: `ComputeResourceGroupMockingExtension`.
-6. The mocking extension type is always in the `Mocking` sub-namespace of the extension method. In the above example, the mocking extension type is in the `Azure.ResourceManager.Compute.Mocking` namespace.
 
 ## See also
 

@@ -1,31 +1,32 @@
-using Azure.Core;
+﻿using Azure.Core;
+
+#nullable disable
 
 namespace UnitTestingSampleApp.ResourceManager;
 
-// <HowExtensionMethodsAreImplemented>
 public static partial class ComputeExtensions
 {
-    private static ComputeResourceGroupMockingExtension GetComputeResourceGroupMockingExtension(
+    private static MockableComputeResourceGroupResource GetMockableComputeResourceGroupResource(
         ArmResource resource)
     {
         return resource.GetCachedClient(client =>
-            new ComputeResourceGroupMockingExtension(client, resource.Id));
+            new MockableComputeResourceGroupResource(client, resource.Id));
     }
 
     public static VirtualMachineCollection GetVirtualMachines(
         this ResourceGroupResource resourceGroup)
     {
-        return GetComputeResourceGroupMockingExtension(resourceGroup)
+        return GetMockableComputeResourceGroupResource(resourceGroup)
             .GetVirtualMachines();
     }
 }
 
-public partial class ComputeResourceGroupMockingExtension : ArmResource
+public partial class MockableComputeResourceGroupResource : ArmResource
 {
-    protected ComputeResourceGroupMockingExtension()
+    protected MockableComputeResourceGroupResource()
     { }
 
-    internal ComputeResourceGroupMockingExtension(
+    internal MockableComputeResourceGroupResource(
         ArmClient client, ResourceIdentifier id) : base(client, id)
     { }
 
@@ -34,4 +35,3 @@ public partial class ComputeResourceGroupMockingExtension : ArmResource
         return new VirtualMachineCollection(Client, Id);
     }
 }
-// </HowExtensionMethodsAreImplemented>

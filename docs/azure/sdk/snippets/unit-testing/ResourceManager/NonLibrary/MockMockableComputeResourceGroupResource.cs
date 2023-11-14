@@ -1,12 +1,11 @@
-﻿using Azure;
-using Azure.Core;
+﻿using Azure.Core;
 
 namespace UnitTestingSampleApp.ResourceManager.NonLibrary;
 
-public sealed class MockComputeResourceGroupMockingExtension : ComputeResourceGroupMockingExtension
+public sealed class MockMockableComputeResourceGroupResource : MockableComputeResourceGroupResource
 {
     private VirtualMachineCollection _virtualMachineCollection;
-    public MockComputeResourceGroupMockingExtension(VirtualMachineCollection virtualMachineCollection)
+    public MockMockableComputeResourceGroupResource(VirtualMachineCollection virtualMachineCollection)
     {
         _virtualMachineCollection = virtualMachineCollection;
     }
@@ -19,16 +18,19 @@ public sealed class MockComputeResourceGroupMockingExtension : ComputeResourceGr
 
 public sealed class MockResourceGroupResource : ResourceGroupResource
 {
-    public MockResourceGroupResource()
-    {}
+    private readonly MockableComputeResourceGroupResource _mockableComputeResourceGroupResource;
+    public MockResourceGroupResource(VirtualMachineCollection virtualMachineCollection)
+    {
+        _mockableComputeResourceGroupResource = new MockMockableComputeResourceGroupResource(virtualMachineCollection);
+    }
 
     internal MockResourceGroupResource(ArmClient client, ResourceIdentifier id) : base(client, id)
     {}
 
     public override T GetCachedClient<T>(Func<ArmClient, T> factory) where T : class
     {
-        if (typeof(T) == typeof(ComputeResourceGroupMockingExtension))
-            return new MockComputeResourceGroupMockingExtension(new MockVirtualMachineCollection()) as T;
+        if (typeof(T) == typeof(MockableComputeResourceGroupResource))
+            return _mockableComputeResourceGroupResource as T;
         return base.GetCachedClient(factory);
     }
 }

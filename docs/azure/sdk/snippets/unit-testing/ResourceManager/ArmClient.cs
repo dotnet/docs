@@ -1,5 +1,7 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Collections.Concurrent;
+
+#nullable disable
 
 namespace UnitTestingSampleApp.ResourceManager;
 
@@ -11,6 +13,6 @@ public partial class ArmClient
     public virtual T GetCachedClient<T>(Func<ArmClient, T> clientFactory)
             where T : class
     {
-        return _clientCache.GetOrAdd(typeof(T), (type) => { return clientFactory(this); }) as T;
+        return _clientCache.GetOrAdd(typeof(T), type => clientFactory(this)) as T;
     }
 }

@@ -1,6 +1,8 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Collections.Concurrent;
 using Azure.Core;
+
+#nullable disable
 
 namespace UnitTestingSampleApp.ResourceManager;
 
@@ -25,6 +27,6 @@ public abstract partial class ArmResource
     public virtual T GetCachedClient<T>(Func<ArmClient, T> clientFactory)
         where T : class
     {
-        return _clientCache.GetOrAdd(typeof(T), (type) => { return clientFactory(Client); }) as T;
+        return _clientCache.GetOrAdd(typeof(T), type => clientFactory(Client)) as T;
     }
 }

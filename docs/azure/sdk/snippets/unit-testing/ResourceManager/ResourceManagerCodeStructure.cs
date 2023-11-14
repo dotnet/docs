@@ -1,5 +1,4 @@
-﻿using Azure;
-using Azure.Security.KeyVault.Secrets;
+﻿#nullable disable
 
 namespace UnitTestingSampleApp.ResourceManager;
 

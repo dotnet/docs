@@ -7,17 +7,15 @@ public class MockComputeResourceGroupMockingExtension_TestSnippets_NSubstitute
 {
     public void GetVirtualMachinesSnippets()
     {
-        // <NSubstitute_GetVirtualMachines>
         ResourceGroupResource rgMock = Substitute.For<ResourceGroupResource>();
-        ComputeResourceGroupMockingExtension rgMockingExtensionMock = Substitute.For<ComputeResourceGroupMockingExtension>();
+        MockableComputeResourceGroupResource mockableRg = Substitute.For<MockableComputeResourceGroupResource>();
         // mock the actual method
-        rgMockingExtensionMock.GetVirtualMachines()
+        mockableRg.GetVirtualMachines()
             .Returns(Substitute.For<VirtualMachineCollection>());
         // mock the GetCachedClient method
-        rgMock.GetCachedClient(Arg.Any<Func<ArmClient, ComputeResourceGroupMockingExtension>>())
-            .Returns(rgMockingExtensionMock);
+        rgMock.GetCachedClient(Arg.Any<Func<ArmClient, MockableComputeResourceGroupResource>>())
+            .Returns(mockableRg);
 
         ResourceGroupResource resourceGroup = rgMock;
-        // </NSubstitute_GetVirtualMachines>
     }
 }

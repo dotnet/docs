@@ -1,7 +1,7 @@
 ---
 title: .NET (and .NET Core) - introduction and overview
 description: Learn about .NET (and .NET Core). .NET is a free, open-source development platform for building many kinds of apps.
-ms.date: 03/24/2023
+ms.date: 11/14/2023
 ms.custom: "updateeachrelease"
 ---
 # What is .NET? Introduction and overview
@@ -11,6 +11,7 @@ ms.custom: "updateeachrelease"
 **Cloud apps**
 
 * [Cloud native apps](../architecture/cloud-native/index.md)
+* [.NET Aspire](/dotnet/aspire)
 * [Console apps](tutorials/with-visual-studio-code.md)
 * [Serverless functions in the cloud](/azure/azure-functions/functions-create-first-function-vs-code?pivots=programming-language-csharp)
 * [Web apps, web APIs, and microservices](/aspnet/core/introduction-to-aspnet-core#recommended-learning-path)

@@ -315,6 +315,62 @@ Manually installing .NET doesn't add the environment variables system-wide, and 
 
 There is no uninstall script. For information about manually uninstalling .NET, see [How to remove the .NET Runtime and SDK](../install/remove-runtime-sdk-versions.md#scripted-or-manual).
 
+## Signature validation of dotnet-install.sh
+
+Signature validation is an important security measure that helps ensure the authenticity and integrity of a script. By verifying the signature of a script, you can be sure that it has not been tampered with and that it comes from a trusted source.
+
+Here is a step-by-step guide on how to verify the authenticity of the `dotnet-install.sh` script using GPG:
+
+1. **Install GPG**: GPG (GNU Privacy Guard) is a free and open-source tool for encrypting and signing data. You can install it by following the [instructions on the GPG website](https://gnupg.org/download/).
+2. **Import our public key**: Download the install-scripts [public key](https://dot.net/v1/dotnet-install.asc) file, and then import it into your GPG keyring by running the command `gpg --import dotnet-install.asc`.
+3. **Download the signature file**: The signature file for our bash script is available at `https://dot.net/v1/dotnet-install.sig`. You can download it using a tool like `wget` or `curl`.
+4. **Verify the signature**: To verify the signature of our bash script, run the command `gpg --verify dotnet-install.sig dotnet-install.sh`. This will check the signature of the `dotnet-install.sh` file against the signature in the `dotnet-install.sig` file.
+5. **Check the result**: If the signature is valid, you will see a message containing `Good signature from "Microsoft DevUXTeamPrague <devuxteamprague@microsoft.com>"`. This means that the script has not been tampered with and can be trusted.
+
+### Preparing environment
+
+Installing GPG and importing our public key is a one time operation.
+
+```bash
+sudo apt install gpg
+wget https://dot.net/v1/dotnet-install.asc
+gpg --import dotnet-install.asc
+```
+
+When successful, you should see output like the following:
+
+```
+gpg: directory '/home/<user>/.gnupg' created
+gpg: keybox '/home/<user>/.gnupg/pubring.kbx' created
+gpg: /home/<user>/.gnupg/trustdb.gpg: trustdb created
+gpg: key B9CF1A51FC7D3ACF: public key "Microsoft DevUXTeamPrague <devuxteamprague@microsoft.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+```
+
+### Download and verification
+
+With the key imported, you can now download the script and the signature, then verify the script matches the signature:
+
+```bash
+wget https://dot.net/v1/dotnet-install.sh
+wget https://dot.net/v1/dotnet-install.sig
+gpg --verify dotnet-install.sig dotnet-install.sh
+```
+
+When successful, you should see output like the following:
+
+```
+gpg: Signature made <datetime>
+gpg:                using RSA key B9CF1A51FC7D3ACF
+gpg: Good signature from "Microsoft DevUXTeamPrague <devuxteamprague@microsoft.com>" [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 2B93 0AB1 228D 11D5 D7F6  B6AC B9CF 1A51 FC7D 3ACF
+```
+
+The warning means that you don't trust the public key in the keyring, but the script is still verified. The exit code returned by the verification command should be `0`, indicating success.
+
 ## See also
 
 - [.NET releases](https://github.com/dotnet/core/releases)

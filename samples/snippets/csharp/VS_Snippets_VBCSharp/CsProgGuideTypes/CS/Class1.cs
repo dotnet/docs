@@ -335,7 +335,7 @@ namespace CsProgGuideTypes
         static void Main(string[] args)
         {
             //<Snippet22>
-            byte[] bytes = { 0, 0, 0, 25 };
+            byte[] bytes = [0, 0, 0, 25];
 
             // If the system architecture is little-endian (that is, little end first),
             // reverse the byte array.
@@ -466,7 +466,7 @@ namespace CsProgGuideTypes
         static void Main()
         {
             //<snippet38>
-            byte[] vals = { 0x01, 0xAA, 0xB1, 0xDC, 0x10, 0xDD };
+            byte[] vals = [0x01, 0xAA, 0xB1, 0xDC, 0x10, 0xDD];
 
             string str = BitConverter.ToString(vals);
             Console.WriteLine(str);
@@ -493,7 +493,7 @@ namespace CsProgGuideTypes
             //</snippet39>
 
             //<snippet48>
-            byte[] array = { 0x64, 0x6f, 0x74, 0x63, 0x65, 0x74 };
+            byte[] array = [0x64, 0x6f, 0x74, 0x63, 0x65, 0x74];
 
             string hexValue = Convert.ToHexString(array);
             Console.WriteLine(hexValue);

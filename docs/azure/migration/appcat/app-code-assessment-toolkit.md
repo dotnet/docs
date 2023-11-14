@@ -49,7 +49,6 @@ It analyzes your code in the following project types:
 
 Currently application identifies potential issues for migration to Azure App Service, AKS, and Azure Container Apps. In the future the tool might have an ability to set the target explicitly and filter the exact issues and recommendations for each target separately.
 
-- Azure App Service
 
 More services may be added in the future.
 

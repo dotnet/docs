@@ -13,7 +13,7 @@ This guide describes how to use the application and code assessment for .NET to 
 
 ## What is the application and code assessment for .NET?
 
-The utility is used to assess .NET source code to identify replatforming and migration opportunities to Azure. It helps you modernize and replatform large-scale .NET applications through a broad range of transformations, use cases, and code patterns.
+The utility is used to assess .NET source code to identify replatforming and migration opportunities to Azure.
 
 It discovers application technology usage through static code analysis, supports effort estimation, and accelerates code replatforming, helping you move .NET applications to Azure.
 

@@ -19,7 +19,7 @@ It discovers application technology usage through static code analysis, supports
 
 Application and code assessment is available in a Visual Studio extension and in a CLI tool.
 
-Application and code assessment for .NET bundles a set of tools, engines, and rules to assess and replatform .NET applications to Azure App Service and in the future other Azure targets (such as Azure Kubernetes Service, Azure Container Apps, etc.) can be added.
+Application and code assessment for .NET bundles a set of tools, engines, and rules to assess and replatform .NET applications to various Azure targets such as Azure App Service, Azure Kubernetes Service and Azure Container Apps.
 
 ### When should I use the application and code assessment?
 

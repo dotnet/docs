@@ -45,7 +45,7 @@ The preceding code is the result of running the `dotnet new console` command and
 Console.WriteLine("Hello, World!");
 ```
 
-[!INCLUDE [csharp10-templates](../../../../includes/csharp10-templates.md)]
+[!INCLUDE [csharp10-templates](../../../includes/csharp10-templates.md)]
 
 This feature simplifies what's needed to begin exploring new ideas. You can use top-level statements for scripting scenarios, or to explore. Once you've got the basics working, you can start refactoring the code and create methods, classes, or other assemblies for reusable components you've built. Top-level statements do enable quick experimentation and beginner tutorials. They also provide a smooth path from experimentation to full programs.
 
@@ -212,4 +212,4 @@ The preceding example adds the call to `Utilities.ShowConsoleAnimation`, and add
 
 Top-level statements make it easier to create simple programs for use to explore new algorithms. You can experiment with algorithms by trying different snippets of code. Once you've learned what works, you can refactor the code to be more maintainable.
 
-Top-level statements simplify programs that are based on console applications. These include Azure functions, GitHub actions, and other small utilities. For more information, see [Top-level statements (C# Programming Guide)](../../fundamentals/program-structure/top-level-statements.md).
+Top-level statements simplify programs that are based on console applications. These include Azure functions, GitHub actions, and other small utilities. For more information, see [Top-level statements (C# Programming Guide)](../fundamentals/program-structure/top-level-statements.md).

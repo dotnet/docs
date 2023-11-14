@@ -56,7 +56,7 @@ This example gets an ILogger object in a hosted app using [ASP.NET Minimal APIs]
 The preceding example:
 
 - Created a singleton service called `ExampleHandler` and mapped incoming web requests to run the `ExampleHandler.HandleRequest` function.
-- Line 8 defines a [primary constructor](/dotnet/csharp/whats-new/tutorials/primary-constructors) for the ExampleHandler, a feature added in C# 12. Using the older style C# constructor would work equally well but is a little more verbose.
+- Line 8 defines a [primary constructor](../../csharp/whats-new/tutorials/primary-constructors.md) for the ExampleHandler, a feature added in C# 12. Using the older style C# constructor would work equally well but is a little more verbose.
 - The constructor defines a parameter of type `ILogger<ExampleHandler>`. <xref:Microsoft.Extensions.Logging.ILogger%601> derives from <xref:Microsoft.Extensions.Logging.ILogger> and indicates which category the `ILogger` object has. The DI container locates an `ILogger` with the correct category and supplies it as the constructor argument. If no `ILogger` with that category exists yet, the DI container automatically creates it from the `ILoggerFactory` in the service provider.
 - The `logger` parameter received in the constructor was used for logging in the `HandleRequest` function.
 

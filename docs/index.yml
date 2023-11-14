@@ -12,7 +12,7 @@ metadata:
   ms.collection: collection
   author: BillWagner
   ms.author: wiwagn
-  ms.date: 11/05/2021
+  ms.date: 11/13/2023
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -43,6 +43,10 @@ highlightedContent:
     - title: "Azure for .NET developers"
       itemType: overview
       url: azure/index.yml
+    # Card
+    - title: .NET Aspire (Preview)
+      itemType: overview
+      url: /dotnet/aspire
     # Card
     - title: "What's new in .NET docs"
       itemType: whats-new
@@ -116,6 +120,9 @@ conceptualContent:
         - url: orleans/index.yml
           itemType: overview
           text: Build cloud-native .NET apps with Orleans
+        - url: /dotnet/aspire/quickstart-build-your-first-aspire-app
+          itemType: quickstart
+          text: Build cloud-native apps with .NET Aspire
         - url: core/docker/build-container.md
           itemType: tutorial
           text: Containerize .NET apps with Docker
@@ -302,6 +309,8 @@ additionalContent:
         links:
           - url: azure/index.yml
             text: Azure for .NET developers
+          - url: /dotnet/aspire
+            text: .NET Aspire (Preview)
           - url: ./azure/migration/app-service.md?preserve-view=true&view=azure-dotnet
             text: Migrate on-premises .NET web apps or services
           - url: ./azure/key-azure-services.md

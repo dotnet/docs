@@ -23,7 +23,7 @@
     href: dotnet-dev-env-checklist.md
 - name: Migrate to Azure
   items:
-    - name: Azure Application Code Assessment Toolkit
+    - name: Azure Migrate application and code assessment
       items:
       - name: Overview
         href: ./migration/appcat/app-code-assessment-toolkit.md
@@ -33,6 +33,8 @@
         href: ./migration/appcat/visual-studio.md
       - name: .NET CLI walkthrough
         href: ./migration/appcat/dotnet-cli.md
+      - name: Interpret the results
+        href: ./migration/appcat/interpret-results.md
     - name: Choose the right Azure hosting option
       href: ./migration/choose.md
     - name: Migrate a .NET web app or service to Azure App Service

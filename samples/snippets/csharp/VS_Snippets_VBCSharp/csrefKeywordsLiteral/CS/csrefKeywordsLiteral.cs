@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace NullExamples
 {
     //<snippet1>
-
     class Program
     {
         class MyClass
@@ -14,7 +10,7 @@ namespace NullExamples
             public void MyMethod() { }
         }
 
-        static void Main(string[] args)
+        static void Main()
         {
             // Set a breakpoint here to see that mc = null.
             // However, the compiler considers it "unassigned."
@@ -45,8 +41,7 @@ namespace NullExamples
             string t = String.Empty; // Logically the same as ""
 
             // Equals applied to any null object returns false.
-            bool b = (t.Equals(s));
-            Console.WriteLine(b);
+            Console.WriteLine("t.Equals(s) is {0}", t.Equals(s));
 
             // Equality operator also returns false when one
             // operand is null.
@@ -62,8 +57,8 @@ namespace NullExamples
             int? i = null;
 
             // Keep the console window open in debug mode.
-            System.Console.WriteLine("Press any key to exit.");
-            System.Console.ReadKey();
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
         }
     }
     //</snippet1>

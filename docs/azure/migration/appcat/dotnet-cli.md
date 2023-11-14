@@ -9,7 +9,7 @@ ms.author: masoucou
 
 # Analyze applications with the .NET CLI
 
-Azure Migrate application and code assessment for .NET is a tool to assess .NET source code to identify migration opportunities to Azure. It helps you to identify any issues your application might have when it is ported to Azure and improve the performance, scalability and security by suggesting modern, cloud-native solutions.
+Azure Migrate application and code assessment for .NET helps you to identify any issues your application might have when it is ported to Azure and improve the performance, scalability and security by suggesting modern, cloud-native solutions.
 
 The tool is available as a [Visual Studio extension](./visual-studio.md) and a CLI tool.
 

@@ -346,7 +346,7 @@ wget https://dot.net/v1/dotnet-install.sig
 gpg --verify dotnet-install.sig dotnet-install.sh
 ```
 
-Example of successful verification output:
+When successful, you should see output like the following:
 
 ```
 gpg: Signature made <datetime>

@@ -54,7 +54,7 @@ More services may be added in the future.
 
 ### Install the Visual Studio extension or the CLI tool
 
-For information on how to install the Azure Migrate application and code assessment for .NET extension for Visual Studio, see [installation instructions](./install.md).
+For information on how to install the Azure Migrate application and code assessment for .NET extension for Visual Studio or CLi tool, see [installation instructions](./install.md).
 
 ### Use with Visual Studio
 

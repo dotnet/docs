@@ -25,7 +25,7 @@ The application and code assessment for .NET can be installed as a Visual Studio
   2. In the **Manage Extensions** window, enter **"Azure Migrate"** into the search input box.
   3. Select the **Azure Migrate application and code assessment** item, and then select **Download**.
   4. Once the extension has been downloaded, close Visual Studio. This starts the installation of the extension.
-  5. In the VSIX Installer dialog elect **Modify** and follow the directions to install the extension.
+  5. In the VSIX Installer dialog select **Modify** and follow the directions to install the extension.
 
 ## Install the .NET global tool
 

@@ -1,6 +1,6 @@
 ---
 title: "Top-level statements - programs without Main methods"
-description: Learn about top-level statements in C# 9 and later. You can create programs without the ceremony of a Program class and a Main method.
+description: Learn about top-level statements. You can create programs without the ceremony of a Program class and a Main method.
 ms.date: 08/19/2021
 helpviewer_keywords:
   - "C# language, top-level statements"
@@ -8,7 +8,7 @@ helpviewer_keywords:
 ---
 # Top-level statements - programs without `Main` methods
 
-Starting in C# 9, you don't have to explicitly include a `Main` method in a console application project. Instead, you can use the *top-level statements* feature to minimize the code you have to write. In this case, the compiler generates a class and `Main` method entry point for the application.
+You don't have to explicitly include a `Main` method in a console application project. Instead, you can use the *top-level statements* feature to minimize the code you have to write. In this case, the compiler generates a class and `Main` method entry point for the application.
 
 Here's a *Program.cs* file that is a complete C# program in C# 10:
 

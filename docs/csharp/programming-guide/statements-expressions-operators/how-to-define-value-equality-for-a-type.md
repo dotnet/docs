@@ -48,7 +48,7 @@ The implementation details for value equality are different for classes and stru
 5. Optional: To support definitions for "greater than" or "less than," implement the <xref:System.IComparable%601> interface for your type, and also overload the [<=](../../language-reference/operators/comparison-operators.md#less-than-or-equal-operator-) and [>=](../../language-reference/operators/comparison-operators.md#greater-than-or-equal-operator-) operators.  
 
 > [!NOTE]
-> Starting in C# 9.0, you can use records to get value equality semantics without any unnecessary boilerplate code.
+> You can use records to get value equality semantics without any unnecessary boilerplate code.
 
 ## Class example
 

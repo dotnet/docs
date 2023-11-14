@@ -1130,11 +1130,11 @@ The JIT already supported this optimization but with several large limitations i
 - It was only supported if each field was a primitive type, or a simple struct wrapping a primitive type.
 
 Physical promotion removes these limitations, which fixes a number of long-standing JIT issues.
-<!--
+
 ## .NET MAUI
 
 For information about what's new in .NET MAUI in .NET 8, see [What's new in .NET MAUI for .NET 8](/dotnet/maui/whats-new/dotnet-8).
--->
+
 ## .NET SDK
 
 This section contains the following subtopics:
@@ -1538,7 +1538,7 @@ Starting in .NET 8, C# Hot Reload [supports modifying generic types and generic 
 
 ### .NET blog
 
-<!--- [Announcing .NET 8](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8/)-->
+- [Announcing .NET 8](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8/)
 - [Announcing .NET 8 RC 2](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-rc2/)
 - [Announcing .NET 8 RC 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-rc1/)
 - [Announcing .NET 8 Preview 7](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-7/)
@@ -1548,7 +1548,7 @@ Starting in .NET 8, C# Hot Reload [supports modifying generic types and generic 
 - [Announcing .NET 8 Preview 3](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-3/)
 - [Announcing .NET 8 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-2/)
 - [Announcing .NET 8 Preview 1](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-preview-1/)
-<!--- [ASP.NET Core in .NET 8](https://devblogs.microsoft.com/dotnet/announcing-asp-net-core-in-dotnet-8)-->
+- [ASP.NET Core in .NET 8](https://devblogs.microsoft.com/dotnet/announcing-asp-net-core-in-dotnet-8)
 - [ASP.NET Core updates in .NET 8 RC 2](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-rc-2/)
 - [ASP.NET Core updates in .NET 8 RC 1](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-rc-1/)
 - [ASP.NET Core updates in .NET 8 Preview 7](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-7/)

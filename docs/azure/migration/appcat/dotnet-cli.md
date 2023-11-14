@@ -52,4 +52,3 @@ appcat analyze <APPLICATION_PATH>
 ### Interpret the results
 
 For information on how to interpret results, see [Interpret the analysis results from the Azure Migrate application and code assessment for .NET](./interpret-results.md).
-For information on how to use and interpret results from the application and code assessment Visual Studio, see [Use with Visual Studio](./visual-studio.md).

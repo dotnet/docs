@@ -9,8 +9,8 @@ namespace UnitTestingSampleApp.ResourceManager;
 public abstract partial class ArmResource
 {
     protected ArmResource()
-    {}
-    
+    { }
+
     protected internal ArmResource(ArmClient client, ResourceIdentifier id)
     {
         Client = client;
@@ -20,7 +20,7 @@ public abstract partial class ArmResource
     public virtual ResourceIdentifier Id { get; }
 
     protected internal virtual ArmClient Client { get; }
-    
+
     private readonly ConcurrentDictionary<Type, object> _clientCache = new ConcurrentDictionary<Type, object>();
 
     [EditorBrowsable(EditorBrowsableState.Never)]

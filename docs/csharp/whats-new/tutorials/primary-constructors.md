@@ -59,7 +59,7 @@ The preceding examples use primary constructor parameters to initialize readonly
 
 In the preceding example, the `Translate` method changes the `dx` and `dy` components. That requires the `Magnitude` and `Direction` properties be computed when accessed. The `=>` operator designates an expression-bodied `get` accessor, whereas the `=` operator designates an initializer. This version adds a parameterless constructor to the struct. The parameterless constructor must invoke the primary constructor, so that all the primary constructor parameters are initialized.
 
-In the previous example, the primary constructor properties are accessed in a method. Therefore the compiler creates hidden fields to represent each parameter. The following code shows approximately what the compiler generates. The actual field names are valid MSIL identifiers, but not valid C# identifiers.
+In the previous example, the primary constructor properties are accessed in a method. Therefore the compiler creates hidden fields to represent each parameter. The following code shows approximately what the compiler generates. The actual field names are valid CIL identifiers, but not valid C# identifiers.
 
 :::code source="./snippets/primary-constructors/Distance.cs" id="StructTwoLowered":::
 

@@ -109,8 +109,6 @@ public static class CustomJoins
         string[] names = File.ReadAllLines(@"csv/names.csv");
         string[] scores = File.ReadAllLines(@"csv/scores.csv");
 
-        // Merge the data sources using a named type.
-        // You could use var instead of an explicit type for the query.
         IEnumerable<Student> queryNamesScores =
             // Split each line in the data files into an array of strings.
             from name in names
@@ -130,8 +128,6 @@ public static class CustomJoins
                 ).ToList()
             );
 
-        // Optional. Store the newly created student objects in memory
-        // for faster access in future queries
         List<Student> students = queryNamesScores.ToList();
 
         foreach (var student in students)

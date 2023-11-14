@@ -210,7 +210,7 @@ SELECT C2.FirstName, C2.LastName
   
 ```sql  
 SELECT * FROM products;
-SELECT * FROM catagories;
+SELECT * FROM categories;
 ```  
   
  However, the equivalent Entity SQL is not supported:  

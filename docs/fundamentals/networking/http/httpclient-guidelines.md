@@ -87,6 +87,6 @@ The preceding code:
 ## See also
 
 - [HTTP support in .NET](http-overview.md)
-- [Create HttpClient instances using IHttpClientFactory](../../../core/extensions/httpclient-factory.md)
+- [HTTP client factory with .NET](../../../core/extensions/httpclient-factory.md)
 - [Make HTTP requests with the HttpClient](httpclient.md)
 - [Use IHttpClientFactory to implement resilient HTTP requests](../../../architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests.md)

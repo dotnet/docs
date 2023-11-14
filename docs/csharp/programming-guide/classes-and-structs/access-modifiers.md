@@ -80,7 +80,7 @@ Delegates behave like classes and structs. By default, they have `internal` acce
 | `interface` members                               |     public     |
 | [class, record, and struct members](./members.md) |    private     |
 
-Reach out to [Accessibility Levels](../../language-reference/keywords/accessibility-levels.md) page for more details.
+For more details see the [Accessibility Levels](../../language-reference/keywords/accessibility-levels.md) page.
 
 ## C# language specification
 

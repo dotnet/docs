@@ -84,7 +84,6 @@ To activate tab completion for the .NET SDK, see [Enable tab completion](enable-
 | ASP.NET Core web app                         | [`webapp, razor`](dotnet-new-sdk-templates.md#web-options)   | [C#]         | Web/MVC/Razor Pages                   | 2.2, 2.0   |
 | ASP.NET Core with Angular                    | [`angular`](dotnet-new-sdk-templates.md#spa)                 | [C#]         | Web/MVC/SPA                           | 2.0        |
 | ASP.NET Core with React.js                   | [`react`](dotnet-new-sdk-templates.md#spa)                   | [C#]         | Web/MVC/SPA                           | 2.0        |
-| ASP.NET Core with React.js and Redux         | [`reactredux`](dotnet-new-sdk-templates.md#reactredux)       | [C#]         | Web/MVC/SPA                           | 2.0        |
 | Razor class library                          | [`razorclasslib`](dotnet-new-sdk-templates.md#razorclasslib) | [C#]         | Web/Razor/Library/Razor Class Library | 2.1        |
 | ASP.NET Core web API                         | [`webapi`](dotnet-new-sdk-templates.md#webapi)               | [C#], F#     | Web/WebAPI                            | 1.0        |
 | ASP.NET Core gRPC service                    | [`grpc`](dotnet-new-sdk-templates.md#web-others)             | [C#]         | Web/gRPC                              | 3.0        |

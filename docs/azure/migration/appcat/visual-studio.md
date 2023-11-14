@@ -29,7 +29,7 @@ The application and code assessment lets you decide which projects in your solut
 1. Click the **Next** button and you'll be presented with the option to analyze **Source code and settings**, **Binary dependencies**, or both.
     ![Screenshot of the product component selection screen](./media/vs/analyze-project-component-selection.png)
     > [!NOTE]
-    > The **source code and settings** option will only scan the source code in the projects you selected on the previous screen. The **Binary dependencies** option will scan any dependencies (such as NuGet packages) your projects rely on. You can expect to see many more issues identified when **binary dependencies** is selected.
+    > The **source code and settings** option will only scan the source code in the projects you selected on the previous screen. The **Binary dependencies** option will scan any dependencies (such as NuGet packages or referenced dlls) your projects rely on. You can expect to see many more issues identified when **binary dependencies** is selected.
     > Scanning binaries can be valuable because the issues detected may identify potential problem in dependencies, but also might not be as useful because source code is not available for these dependencies, so the issues can't be fixed and, in the case of potential issues, it may not be an issues in your case.
 
 > It might be helpful to generate two different reports: for action items and for your awareness.

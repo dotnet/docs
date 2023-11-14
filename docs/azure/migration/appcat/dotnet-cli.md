@@ -27,7 +27,10 @@ In CLI run the command:
 appcat analyze <APPLICATION_PATH>
 ```
 
-1. Type `appcat analyze` and press **Enter**.
+1. In CLI type `appcat analyze` and press **Enter**.
+
+```dotnetcli
+appcat analyze <APPLICATION_PATH>
 
     > [!NOTE]
     > If this is your first time running application and code assessment for .NET, you will see an informational message about telemetry and how to opt-out if you should want to.

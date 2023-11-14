@@ -8,13 +8,13 @@ ms.date: 06/10/2021
 ---
 # .NET SDK, MSBuild, and Visual Studio versioning
 
-Understanding the versioning of the .NET SDK and how it relates to Visual Studio and MSBuild can be confusing. MSBuild versions with Visual Studio, but is also included in the .NET SDK. The SDK has a minimum version of MSBuild and Visual Studio that it works with, and it won't load in a version of Visual Studio that's older than that minimum version.
+The versioning of the .NET SDK and how it relates to Visual Studio and MSBuild can be confusing. MSBuild versions with Visual Studio, but is also included in the .NET SDK. The SDK has a minimum version of MSBuild and Visual Studio that it works with, and it won't load in a version of Visual Studio that's older than that minimum version.
 
 ## Versioning
 
-The first part of the .NET SDK version matches the .NET version that it includes, runs on, and targets by default.  The feature band starts at 1 and increases for each quarterly Visual Studio minor release.  The patch version increments with each month's servicing updates.
+The first part of the .NET SDK version matches the .NET version that it includes, runs on, and targets by default. The feature band starts at 1 and increases for each quarterly Visual Studio minor release. The patch version increments with each month's servicing updates.
 
-For example, version 5.0.203 ships with .NET 5, is the second minor Visual Studio release since 5.0.100 first came out, and is the third patch since 5.0.200 released.
+For example, version 7.0.203 ships with .NET 7, is the second minor Visual Studio release since 7.0.100 first came out, and is the third patch since 7.0.200 released.
 
 ## Lifecycle
 
@@ -48,7 +48,7 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 >
 > .1xx SDK feature band is supported throughout the lifecycle of major .NET versions. During the extended support period, support is limited to security fixes and minimal high-priority non-security fixes for Linux only. To learn more about the reasoning for this extended support, refer to this [document](https://github.com/dotnet/source-build#support).
 >
-> <sup>1</sup> Visual Studio 17.3 went out of support in Nov 2022. 6.0.4xx will be in support for the life of .NET 6 as a stand-alone release.
+> <sup>1</sup> Visual Studio 2022 version 17.3 went out of support in Nov 2022. 6.0.4xx will be in support for the life of .NET 6 as a standalone release.
 >
 > <sup>2</sup> With .NET 6, the.NET 6.0.100 SDK can be used in version 16.11 for **downlevel** targeting. This means that you're not forced to update your SDK and Visual Studio versions simultaneously. However, you won't be able to target .NET 6 because of limitations in 6.0 features and C# 10 features in version 16.11. This compatibility is specifically for targeting 5.0 and below.
 >
@@ -63,7 +63,7 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 Starting with .NET SDK 7.0.100 and .NET SDK 6.0.300, a policy has been put into place regarding which versions of MSBuild and Visual Studio a given version of the .NET SDK will run in. The policy is:
 
 - Each new TargetFramework **requires** a new Visual Studio version or a new `dotnet` version.
-- The first version of Visual Studio that supports a new TargetFramework becomes a floor for the feature bands of that SDK for Roslyn API surface, msbuild targets, source generators, analyzers, and so on.
+- The first version of Visual Studio that supports a new TargetFramework becomes a floor for the feature bands of that SDK for Roslyn API surface, MSBuild targets, source generators, analyzers, and so on.
 - The first version of a new .NET SDK that supports a new TargetFramework can still be used with the prior version of Visual Studio to allow one quarter for tooling and infrastructure (for example, actions and pipelines) to migrate.
 
 | SDK | Visual Studio version<br/>the SDK ships with | Minimum Visual Studio version | Max TargetFramework in<br/>minimum Visual Studio version | Max TargetFramework in `dotnet` |

@@ -128,7 +128,7 @@ If the divisor is 0, the second clause in the `if` statement would cause a run-t
 
 ### `new` operator
 
-- Use one of the concise forms of object instantiation, as shown in the following declarations. The second example shows syntax that is available starting in C# 9.
+- Use one of the concise forms of object instantiation, as shown in the following declarations.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet19":::
 

@@ -45,7 +45,7 @@ A common use of `var` is with a [constructor invocation expression](../operators
 var xs = new List<int>();
 ```
 
-Beginning with C# 9.0, you can use a [target-typed `new` expression](../operators/new-operator.md#target-typed-new) as an alternative:
+You can use a [target-typed `new` expression](../operators/new-operator.md#target-typed-new) as an alternative:
 
 ```csharp
 List<int> xs = new();

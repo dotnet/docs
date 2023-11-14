@@ -43,4 +43,3 @@ The application and code assessment lets you decide which projects in your solut
 ### Interpret the results
 
 For information on how to interpret results, see [Interpret the analysis results from the Azure Migrate application and code assessment for .NET](./interpret-results.md).
-For information on how to use the Azure Migrate application and code assessment for .NET with the .NET CLI, see [Use with the .NET CLI](./dotnet-cli.md).

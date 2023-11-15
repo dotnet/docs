@@ -30,7 +30,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
-## Install .NET 7
+## Install .NET 8
 
 [!INCLUDE [linux-dnf-install-80](includes/linux-install-80-dnf.md)]
 

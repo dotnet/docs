@@ -20,20 +20,20 @@ The following guidelines will help you use these to organize your code.
 
 ### Prefer namespaces at the top level
 
-For any publicly consumable code, namespaces are preferential to modules at the top level. Because they are compiled as .NET namespaces, they are consumable from C# with no issue.
+For any publicly consumable code, namespaces are preferential to modules at the top level. Because they are compiled as .NET namespaces, they are consumable from C# without resorting to `using static`.
 
 ```fsharp
-// Good!
+// Recommended.
 namespace MyCode
 
 type MyClass() =
     ...
 ```
 
-Using a top-level module may not appear different when called only from F#, but for C# consumers, callers may be surprised by having to qualify `MyClass` with the `MyCode` module.
+Using a top-level module may not appear different when called only from F#, but for C# consumers, callers may be surprised by having to qualify `MyClass` with the `MyCode` module when not aware of the specific `using static` C# construct.
 
 ```fsharp
-// Bad!
+// Will be seen as a static class outside F#
 module MyCode
 
 type MyClass() =
@@ -83,7 +83,7 @@ let parsed = StringTokenization.parse s // Must qualify to use 'parse'
 
 ### Sort `open` statements topologically
 
-In F#, the order of declarations matters, including with `open` statements. This is unlike C#, where the effect of `using` and `using static` is independent of the ordering of those statements in a file.
+In F#, the order of declarations matters, including with `open` statements (and `open type`, just refered as `open` farther down). This is unlike C#, where the effect of `using` and `using static` is independent of the ordering of those statements in a file.
 
 In F#, elements opened into a scope can shadow others already present. This means that reordering `open` statements could alter the meaning of code. As a result, any arbitrary sorting of all `open` statements (for example, alphanumerically) is not recommended, lest you generate different behavior that you might expect.
 
@@ -127,7 +127,7 @@ A line break separates topological layers, with each layer being sorted alphanum
 There are many times when initializing a value can have side effects, such as instantiating a context to a database or other remote resource. It is tempting to initialize such things in a module and use it in subsequent functions:
 
 ```fsharp
-// This is bad!
+// Not recommended, side-effect at static initialization
 module MyApi =
     let dep1 = File.ReadAllText "/Users/<name>/connectionstring.txt"
     let dep2 = Environment.GetEnvironmentVariable "DEP_2"
@@ -139,7 +139,7 @@ module MyApi =
     let function2 arg = doStuffWith dep1 dep2 dep3 arg
 ```
 
-This is frequently a bad idea for a few reasons:
+This is frequently problematic for a few reasons:
 
 First, application configuration is pushed into the codebase with `dep1` and `dep2`. This is difficult to maintain in larger codebases.
 
@@ -232,7 +232,7 @@ Reconciling functionality to perform in the face of an exception with pattern ma
 
 ### Do not use monadic error handling to replace exceptions
 
-Exceptions are often seen as taboo in functional programming. Indeed, exceptions violate purity, so it's safe to consider them not-quite functional. However, this ignores the reality of where code must run, and that runtime errors can occur. In general, write code on the assumption that most things aren't pure or total, to minimize unpleasant surprises.
+Exceptions are often seen as taboo in the pure functional paradigm. Indeed, exceptions violate purity, so it's safe to consider them not-quite functionally pure. However, this ignores the reality of where code must run, and that runtime errors can occur. In general, write code on the assumption that most things aren't pure or total, to minimize unpleasant surprises (akin to empty `catch` in C# or mismanaging the stack trace, discarding information).
 
 It is important to consider the following core strengths/aspects of Exceptions with respect to their relevance and appropriateness in the .NET runtime and cross-language ecosystem as a whole:
 
@@ -261,7 +261,7 @@ match result with
 Additionally, it can be tempting to swallow any exception in the desire for a "simple" function that returns a "nicer" type:
 
 ```fsharp
-// This is bad!
+// Can be problematic due to discarding the cause of error.
 let tryReadAllText (path : string) =
     try System.IO.File.ReadAllText path |> Some
     with _ -> None
@@ -270,7 +270,7 @@ let tryReadAllText (path : string) =
 Unfortunately, `tryReadAllText` can throw numerous exceptions based on the myriad of things that can happen on a file system, and this code discards away any information about what might actually be going wrong in your environment. If you replace this code with a result type, then you're back to "stringly typed" error message parsing:
 
 ```fsharp
-// This is bad!
+// Problematic, callers only have a string to figure the cause of error.
 let tryReadAllText (path : string) =
     try System.IO.File.ReadAllText path |> Ok
     with e -> Error e.Message
@@ -398,6 +398,7 @@ Don't apply this technique universally to your entire codebase, but it is a good
 
 F# has multiple options for [Access control](../language-reference/access-control.md), inherited from what is available in the .NET runtime. These are not just usable for types - you can use them for functions, too.
 
+Good practices in context of libraries that are widely consumed:
 * Prefer non-`public` types and members until you need them to be publicly consumable. This also minimizes what consumers couple to.
 * Strive to keep all helper functionality `private`.
 * Consider the use of `[<AutoOpen>]` on a private module of helper functions if they become numerous.
@@ -532,6 +533,22 @@ Although the previous example showed that a struct Discriminated Union yielded b
 F# values are immutable by default, which allows you to avoid certain classes of bugs (especially those involving concurrency and parallelism). However, in certain cases, in order to achieve optimal (or even reasonable) efficiency of execution time or memory allocations, a span of work may best be implemented by using in-place mutation of state. This is possible in an opt-in basis with F# with the `mutable` keyword.
 
 Use of `mutable` in F# may feel at odds with functional purity. This is understandable, but functional purity everywhere can be at odds with performance goals. A compromise is to encapsulate mutation such that callers need not care about what happens when they call a function. This allows you to write a functional interface over a mutation-based implementation for performance-critical code.
+
+Also, F# `let` binding constructs allow you to nest bindings into another one, this can be leveraged to keep the scope of `mutable` variable close or at its theoritical smallest.
+
+```fsharp
+let data =
+    [
+        let mutable completed = false
+        while not completed do
+            logic ()
+            // ...
+            if someCondition then
+                completed <- true   
+    ]
+```  
+
+No code can access the mutable `completed` that was used only to initialize `data` let bound value.
 
 ### Wrap mutable code in immutable interfaces
 

@@ -1161,12 +1161,12 @@ MSBuild includes a new feature that makes it easier to incorporate data from MSB
 Values are written to the standard output. Multiple or complex values are output as JSON, as shown in the following examples.
 
 ```dotnetcli
-dotnet publish --getProperty:OutputPath
+>dotnet publish --getProperty:OutputPath
 bin\Release\net8.0\
 ```
 
 ```dotnetcli
-dotnet publish -p PublishProfile=DefaultContainer --getProperty:GeneratedContainerDigest --getProperty:GeneratedContainerConfiguration
+>dotnet publish -p PublishProfile=DefaultContainer --getProperty:GeneratedContainerDigest --getProperty:GeneratedContainerConfiguration
 {
   "Properties": {
     "GeneratedContainerDigest": "sha256:ef880a503bbabcb84bbb6a1aa9b41b36dc1ba08352e7cd91c0993646675174c4",
@@ -1176,7 +1176,7 @@ dotnet publish -p PublishProfile=DefaultContainer --getProperty:GeneratedContain
 ```
 
 ```dotnetcli
-dotnet publish -p PublishProfile=DefaultContainer --getItem:ContainerImageTags
+>dotnet publish -p PublishProfile=DefaultContainer --getItem:ContainerImageTags
 {
   "Items": {
     "ContainerImageTags": [

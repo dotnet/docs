@@ -188,3 +188,4 @@ info: App.QueueService.QueuedHostedService[0]
 - [Use scoped services within a `BackgroundService`](scoped-service.md)
 - [Create a Windows Service using `BackgroundService`](windows-service.md)
 - [Implement the `IHostedService` interface](timer-service.md)
+- [Web-Queue-Worker architectural style](/azure/architecture/guide/architecture-styles/web-queue-worker)

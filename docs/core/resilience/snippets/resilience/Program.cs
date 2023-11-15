@@ -4,6 +4,7 @@ using Polly;
 using Polly.CircuitBreaker;
 using Polly.Registry;
 using Polly.Retry;
+using Polly.Timeout;
 
 var services = new ServiceCollection();
 

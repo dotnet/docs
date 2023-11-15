@@ -4,18 +4,19 @@ using Polly;
 using Polly.CircuitBreaker;
 using Polly.Registry;
 using Polly.Retry;
+using Polly.Timeout;
 
 var services = new ServiceCollection();
 
-const string key = "Retry-CircuitBreaker-Timeout";
+const string key = "Retry-Timeout";
 
 services.AddResiliencePipeline(key, static builder =>
 {
     // See: https://www.pollydocs.org/strategies/retry.html
-    builder.AddRetry(new RetryStrategyOptions());
-
-    // See: https://www.pollydocs.org/strategies/circuit-breaker.html
-    builder.AddCircuitBreaker(new CircuitBreakerStrategyOptions());
+    builder.AddRetry(new RetryStrategyOptions
+    {
+        ShouldHandle = new PredicateBuilder().Handle<TimeoutRejectedException>()
+    });
 
     // See: https://www.pollydocs.org/strategies/timeout.html
     builder.AddTimeout(TimeSpan.FromSeconds(1.5));
@@ -36,11 +37,11 @@ ResiliencePipeline pipeline = pipelineProvider.GetPipeline(key);
 // </pipeline>
 
 // <execute>
-await pipeline.ExecuteAsync(static async cancellationToken =>
+await pipeline.ExecuteAsync(static cancellationToken =>
 {
     // Code that could potentially fail.
 
-    await ValueTask.CompletedTask;
+    return ValueTask.CompletedTask;
 });
 // </execute>
 

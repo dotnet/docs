@@ -18,8 +18,8 @@ The following table is a list of currently supported .NET releases on both SLES 
 
 | SLES   | .NET |
 |--------|------|
-| 15     | 7, 6 |
-| 12 SP5 | 7, 6 |
+| 15     | 8, 7, 6 |
+| 12 SP5 | 8, 7, 6 |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -45,7 +45,7 @@ Currently, the SLES 15 Microsoft repository setup package installs the *microsof
 sudo ln -s /etc/yum.repos.d/microsoft-prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
-[!INCLUDE [linux-zyp-install-60](includes/linux-install-60-zyp.md)]
+[!INCLUDE [linux-zyp-install-80](includes/linux-install-80-zyp.md)]
 
 ## SLES 12
 
@@ -57,7 +57,7 @@ sudo ln -s /etc/yum.repos.d/microsoft-prod.repo /etc/zypp/repos.d/microsoft-prod
 sudo rpm -Uvh https://packages.microsoft.com/config/sles/12/packages-microsoft-prod.rpm
 ```
 
-[!INCLUDE [linux-zyp-install-60](includes/linux-install-60-zyp.md)]
+[!INCLUDE [linux-zyp-install-80](includes/linux-install-80-zyp.md)]
 
 ## How to install other versions
 

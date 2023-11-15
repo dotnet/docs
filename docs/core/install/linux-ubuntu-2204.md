@@ -3,7 +3,7 @@ title: Install .NET on Ubuntu 22.04
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu 22.04.
 author: adegeo
 ms.author: adegeo
-ms.date: 05/24/2023
+ms.date: 11/14/2023
 ---
 
 # Install .NET SDK or .NET Runtime on Ubuntu 22.04
@@ -22,7 +22,7 @@ The following versions of .NET are supported or available for Ubuntu 22.04:
 
 | Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------|-----------------------------------|
-| 7.0, 6.0                | 7.0, 6.0                 | 7.0, 6.0, 3.1                     |
+| 8.0, 7.0, 6.0           | 8.0, 7.0, 6.0            | 8.0, 7.0, 6.0, 3.1                |
 
 [!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
 
@@ -32,7 +32,7 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 
 ## Install .NET
 
-[!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
+[!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
 
 ## How to install other versions
 

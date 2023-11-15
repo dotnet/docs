@@ -1,3 +1,9 @@
+---
+author: adegeo
+ms.author: adegeo
+ms.date: 11/14/2023
+ms.topic: include
+---
 
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 

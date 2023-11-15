@@ -3,10 +3,12 @@ title: Install .NET on Ubuntu 20.04
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu 20.04.
 author: adegeo
 ms.author: adegeo
-ms.date: 03/01/2023
+ms.date: 11/14/2023
 ---
 
 # Install .NET SDK or .NET Runtime on Ubuntu 20.04
+
+[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
 This article discusses how to install .NET on Ubuntu 20.04; .NET 6 and .NET 7 are supported.
 
@@ -20,7 +22,7 @@ The following versions of .NET are supported or available for Ubuntu 20.04:
 
 | Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------|-----------------------------------|
-| 7.0, 6.0                | None                     | 7.0. 6.0, 5.0, 3.1, 2.1           |
+| 8.0, 7.0, 6.0           | None                     | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1      |
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
@@ -36,7 +38,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
+[!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
 
 ## How to install other versions
 

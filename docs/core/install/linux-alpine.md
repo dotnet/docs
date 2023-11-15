@@ -3,10 +3,12 @@ title: Install .NET on Alpine
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Alpine.
 author: adegeo
 ms.author: adegeo
-ms.date: 10/16/2023
+ms.date: 11/14/2023
 ---
 
 # Install the .NET SDK or the .NET Runtime on Alpine
+
+[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
 .NET is supported on Alpine and this article describes how to install .NET on Alpine. When an Alpine version falls out of support, .NET is no longer supported with that version.
 
@@ -18,6 +20,10 @@ The Alpine package manager supports installing some versions of .NET. If the .NE
 
 - [Use the .NET install script.](linux-scripted-manual.md#scripted-install)
 - [Download and install .NET manually.](linux-scripted-manual.md#manual-install)
+
+## Install .NET 8
+
+[!INCLUDE [linux-apk-install-80](includes/linux-install-80-apk.md)]
 
 ## Install .NET 7
 
@@ -33,8 +39,8 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Alpine | Supported Version  | Available in Package Manager |
 |--------|--------------------| -----------------------------|
-| 3.18   | .NET 7.0, .NET 6.0 | .NET 7.0, .NET 6.0 |
-| 3.17   | .NET 7.0, .NET 6.0 | .NET 7.0, .NET 6.0 |
+| 3.18   | .NET 7.0, .NET 6.0 | .NET 8.0, .NET 7.0, .NET 6.0 |
+| 3.17   | .NET 7.0, .NET 6.0 | .NET 8.0, .NET 7.0, .NET 6.0 |
 | 3.16   | .NET 7.0, .NET 6.0 | .NET 6.0 |
 | 3.15   | .NET 7.0, .NET 6.0 | None |
 
@@ -44,16 +50,16 @@ The following table is a list of currently supported .NET releases and the versi
 
 The following table is a list of currently supported .NET releases and the architecture of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the architecture of [Alpine is supported#](https://alpinelinux.org/releases/). Note that only `x86_64`, `armv7`, `aarch64` is officially supported by Microsoft. Other architectures are supported by the distribution maintainers, and can be installed using the `apk` package manager.
 
-| Architecture     | .NET 6           | .NET 7  |
-|------------------|------------------|---------|
-| x86_64           | 3.16, 3.17, 3.18 | 3.17, 3.18 |
-| x86              | None             | None       |
-| aarch64          | 3.16, 3.17, 3.18 | 3.17, 3.18 |
-| armv7            | 3.16, 3.17, 3.18 | 3.17, 3.18 |
-| armhf            | None             | None |
-| s390x            | 3.17             | 3.17 |
-| ppc64le          | None             | None |
-| riscv64          | None             | None |
+| Architecture     | .NET 6           | .NET 7  | .NET 8  |
+|------------------|------------------|---------|---------|
+| x86_64           | 3.16, 3.17, 3.18 | 3.17, 3.18 | 3.17, 3.18 |
+| x86              | None             | None       | None       |
+| aarch64          | 3.16, 3.17, 3.18 | 3.17, 3.18 | 3.17, 3.18 |
+| armv7            | 3.16, 3.17, 3.18 | 3.17, 3.18 | 3.17, 3.18 |
+| armhf            | None             | None | None |
+| s390x            | 3.17             | 3.17 | 3.17 |
+| ppc64le          | None             | None | None |
+| riscv64          | None             | None | None |
 
 ## Install preview versions
 

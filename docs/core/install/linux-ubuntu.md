@@ -3,7 +3,7 @@ title: .NET and Ubuntu overview
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu.
 author: adegeo
 ms.author: adegeo
-ms.date: 05/24/2023
+ms.date: 11/14/2023
 ---
 
 # Install the .NET SDK or the .NET Runtime on Ubuntu
@@ -25,7 +25,7 @@ When your version of Ubuntu supports .NET through the built-in Ubuntu feed, supp
 
 Use the following sections to determine how you should install .NET:
 
-- [I'm using Ubuntu 22.04, 22.10, or 23.04, and I only need .NET 6.0 or .NET 7.0](#im-using-ubuntu-2204-2210-or-2304-and-i-only-need-net-60-or-net-70)
+- [I'm using Ubuntu 22.04, 22.10, or 23.04, and I only need .NET](#im-using-ubuntu-2204-2210-or-2304-and-i-only-need-net)
 - [I'm using a version of Ubuntu prior to 22.04](#im-using-a-version-of-ubuntu-prior-to-2204)
 - [I'm using other Microsoft packages, such as `powershell`, `mdatp`, or `mssql`](#im-using-other-microsoft-packages-such-as-powershell-mdatp-or-mssql)
 - [I want to create a .NET app](#i-want-to-create-a-net-app)
@@ -35,7 +35,7 @@ Use the following sections to determine how you should install .NET:
 - [I don't want to use APT](#i-dont-want-to-use-apt)
 - [I'm using an Arm-based CPU](#im-using-an-arm-based-cpu)
 
-### I'm using Ubuntu 22.04, 22.10, or 23.04, and I only need .NET 6.0 or .NET 7.0
+### I'm using Ubuntu 22.04, 22.10, or 23.04, and I only need .NET
 
 Install .NET through the Ubuntu feed. For more information, see the following pages:
 

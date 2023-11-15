@@ -57,8 +57,6 @@ namespace NullExamples
             int? i = null;
 
             // Keep the console window open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
         }
     }
     //</snippet1>

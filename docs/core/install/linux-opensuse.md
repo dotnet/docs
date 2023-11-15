@@ -3,7 +3,7 @@ title: Install .NET on openSUSE
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on openSUSE.
 author: adegeo
 ms.author: adegeo
-ms.date: 05/04/2023
+ms.date: 11/14/2023
 ---
 
 # Install the .NET SDK or the .NET Runtime on openSUSE
@@ -20,7 +20,7 @@ The following table is a list of currently supported .NET releases on openSUSE 1
 
 | openSUSE   | .NET      |
 |------------|-----------|
-| 15.4+      | 7, 6      |
+| 15.4+      | 8, 7, 6      |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -44,7 +44,7 @@ sudo mv prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
-[!INCLUDE [linux-zyp-install-70](includes/linux-install-70-zyp.md)]
+[!INCLUDE [linux-zyp-install-80](includes/linux-install-80-zyp.md)]
 
 ## How to install other versions
 

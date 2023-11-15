@@ -13,7 +13,7 @@ const string key = "Retry-Timeout";
 services.AddResiliencePipeline(key, static builder =>
 {
     // See: https://www.pollydocs.org/strategies/retry.html
-    builder.AddRetry(new RetryStrategyOptions()
+    builder.AddRetry(new RetryStrategyOptions
     {
         ShouldHandle = new PredicateBuilder().Handle<TimeoutRejectedException>()
     });

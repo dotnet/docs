@@ -109,7 +109,7 @@ To use the resilience pipeline, call any of the available `Execute*` methods on 
 
 :::code language="csharp" source="snippets/resilience/Program.cs" id="execute":::
 
-The preceding code executes the delegate within the `ExecuteAsync` method. When there are failures, the configured strategies are executed. For example, if the `RetryStrategy` is configured to retry three times, the delegate is executed four times (1 initial attempt + 3 retry attempts) before the failure is propagated.
+The preceding code executes the delegate within the `ExecuteAsync` method. When there are failures, the configured strategies are executed. For example, if the `RetryStrategy` is configured to retry three times, the delegate is executed four times (one initial attempt plus three retry attempts) before the failure is propagated.
 
 ## Next steps
 

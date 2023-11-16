@@ -141,7 +141,7 @@ class Features
     private static void InitializeArray()
     {
         // <InitializeArray>
-        int[] a = [ 1, 2, 3 ];
+        int[] a = [1, 2, 3];
         // </InitializeArray>
         // <EnumerateArray>
         foreach (int item in a)

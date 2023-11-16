@@ -68,10 +68,6 @@ namespace NonGenericLINQ
   
             foreach (Student s in query)  
                 Console.WriteLine(s.LastName + ": " + s.Scores[0]);  
-  
-            // Keep the console window open in debug mode.  
-            Console.WriteLine("Press any key to exit.");  
-            Console.ReadKey();  
         }  
     }  
 }  

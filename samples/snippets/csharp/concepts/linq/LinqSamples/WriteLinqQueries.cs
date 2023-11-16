@@ -2,14 +2,14 @@
 
 public class WriteLinqQueries
 {
-    static readonly List<int> numbers = new() { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
-    static readonly List<int> numbers1 = new() { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
-    static readonly List<int> numbers2 = new() { 15, 14, 11, 13, 19, 18, 16, 17, 12, 10 };
+    static readonly List<int> numbers = [ 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 ];
+    static readonly List<int> numbers1 = [5, 4, 1, 3, 9, 8, 6, 7, 2, 0];
+    static readonly List<int> numbers2 = [15, 14, 11, 13, 19, 18, 16, 17, 12, 10];
 
     public static void WriteLinqQueries1()
     {
         // <write_linq_queries_1>
-        List<int> numbers = new() { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+        List<int> numbers = [5, 4, 1, 3, 9, 8, 6, 7, 2, 0];
 
         // The query variables can also be implicitly typed by using var
 
@@ -37,8 +37,8 @@ public class WriteLinqQueries
     public static void WriteLinqQueries2()
     {
         // <write_linq_queries_2>
-        List<int> numbers1 = new() { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
-        List<int> numbers2 = new() { 15, 14, 11, 13, 19, 18, 16, 17, 12, 10 };
+        List<int> numbers1 = [5, 4, 1, 3, 9, 8, 6, 7, 2, 0];
+        List<int> numbers2 = [15, 14, 11, 13, 19, 18, 16, 17, 12, 10];
 
         // Query #4.
         double average = numbers1.Average();

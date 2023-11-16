@@ -80,18 +80,18 @@ class JoinOperation
         {
             List<Product> products =
             [
-                new Product { Name = "Cola", CategoryId = 0 },
-                new Product { Name = "Tea", CategoryId = 0 },
-                new Product { Name = "Apple", CategoryId = 1 },
-                new Product { Name = "Kiwi", CategoryId = 1 },
-                new Product { Name = "Carrot", CategoryId = 2 },
+                new() { Name = "Cola", CategoryId = 0 },
+                new() { Name = "Tea", CategoryId = 0 },
+                new() { Name = "Apple", CategoryId = 1 },
+                new() { Name = "Kiwi", CategoryId = 1 },
+                new() { Name = "Carrot", CategoryId = 2 },
             ];
 
             List<Category> categories =
             [
-                new Category { Id = 0, CategoryName = "Beverage" },
-                new Category { Id = 1, CategoryName = "Fruit" },
-                new Category { Id = 2, CategoryName = "Vegetable" }
+                new() { Id = 0, CategoryName = "Beverage" },
+                new() { Id = 1, CategoryName = "Fruit" },
+                new() { Id = 2, CategoryName = "Vegetable" }
             ];
 
             // Join categories and product based on CategoryId and grouping result

@@ -4,7 +4,7 @@ public static class VoidType
 {
     public static void Examples()
     {
-        Display([ 1, 2, 9 ]);
+        Display([1, 2, 9]);
     }
 
     // <SnippetVoidExample>

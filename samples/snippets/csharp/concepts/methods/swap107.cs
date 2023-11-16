@@ -1,6 +1,7 @@
 ﻿// <Snippet107>
 
 using System;
+
 public class RefSwapExample
 {
    static void Main()

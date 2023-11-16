@@ -44,7 +44,7 @@ On Windows, msquic.dll is distributed as part of the .NET runtime, and no other 
 
 All the following dependencies are stated in the `libmsquic` package manifest and are automatically installed by the package manager:
 
-- OpenSSL 3+ or 1.1 - depends on the default OpenSSL version for the distribution version, for example, OpenSSL 3 for Debian 12 and OpenSSL 1.1 for Debian 11.
+- OpenSSL 3+ or 1.1 - depends on the default OpenSSL version for the distribution version, for example, OpenSSL 3 for [Ubuntu 22](https://packages.ubuntu.com/jammy/openssl) and OpenSSL 1.1 for [Ubuntu 20](https://packages.ubuntu.com/focal/utils/openssl).
 
 - libnuma 1
 

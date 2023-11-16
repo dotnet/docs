@@ -48,8 +48,8 @@ The following rules are enabled, by default, in .NET 8.
 | [CA2015](quality-rules/ca2015.md) | Reliability | Warning | Do not define finalizers for types derived from <xref:System.Buffers.MemoryManager%601> |
 | [CA2017](quality-rules/ca2017.md) | Reliability | Warning | Parameter count mismatch |
 | [CA2018](quality-rules/ca2018.md) | Reliability | Warning | The `count` argument to `Buffer.BlockCopy` should specify the number of bytes to copy |
-| [CA2200](quality-rules/ca2200.md) | Usage | Warning | Rethrow to preserve stack details |
 | CA2021 | Reliability | Warning | Do not call `Enumerable.Cast<T>` or `Enumerable.OfType<T>` with incompatible types |
+| [CA2200](quality-rules/ca2200.md) | Usage | Warning | Rethrow to preserve stack details |
 | [CA2247](quality-rules/ca2247.md) | Usage | Warning | Argument passed to `TaskCompletionSource` constructor should be <xref:System.Threading.Tasks.TaskCreationOptions> enum instead of <xref:System.Threading.Tasks.TaskContinuationOptions> |
 | [CA2252](quality-rules/ca2252.md) | Usage | Error | Opt in to preview features |
 | [CA2255](quality-rules/ca2255.md) | Usage | Warning | The `ModuleInitializer` attribute should not be used in libraries |

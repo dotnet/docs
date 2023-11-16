@@ -29,7 +29,7 @@ The HTTP version can be configured by setting `HttpRequestMessage.Version` to 3.
 
 ## Platform dependencies
 
-HTTP/3 uses QUIC as its transport protocol. The .NET implementation of HTTP/3 uses [MsQuic](https://github.com/microsoft/msquic) to provide QUIC functionality. As a result, .NET support of HTTP/3 depends on MsQuic platform requirements which are documented in [QUIC Platform dependencies](../../fundamentals/networking/quic/quic-overview.md#platform-dependencies). If the platform that HttpClient is running on doesn't have all the requirements for HTTP/3, then it's disabled.
+HTTP/3 uses QUIC as its transport protocol. The .NET implementation of HTTP/3 uses [MsQuic](https://github.com/microsoft/msquic) to provide QUIC functionality. As a result, .NET support of HTTP/3 depends on MsQuic platform requirements, which are documented in [QUIC Platform dependencies](../../fundamentals/networking/quic/quic-overview.md#platform-dependencies). If the platform that HttpClient is running on doesn't have all the requirements for HTTP/3, then it's disabled.
 
 ## Using HttpClient
 

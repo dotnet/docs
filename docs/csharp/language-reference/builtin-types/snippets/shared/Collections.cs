@@ -7,7 +7,7 @@ public class Collections
         // <SnippetCreateList>
         // Create a list of strings by using a
         // collection initializer.
-        var salmons = new List<string> { "chinook", "coho", "pink", "sockeye" };
+        List<string> salmons = ["chinook", "coho", "pink", "sockeye"];
 
         // Iterate through the list.
         foreach (var salmon in salmons)
@@ -43,7 +43,7 @@ public class Collections
     {
 
         // <SnippetRemoveItemByIndex>
-        var numbers = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        List<int> numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
         // Remove odd numbers.
         for (var index = numbers.Count - 1; index >= 0; index--)

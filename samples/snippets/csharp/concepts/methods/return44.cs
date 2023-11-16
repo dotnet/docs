@@ -1,6 +1,4 @@
-﻿using System;
-
-//<Snippet44>
+﻿//<Snippet44>
 class SimpleMath
 {
     public int AddTwoNumbers(int number1, int number2)

@@ -54,7 +54,7 @@ public static class NullCoalescingOperator
     private static void NullCoalescingAssignment()
     {
         // <SnippetAssignment>
-        List<int> numbers = null;
+        List<int>? numbers = null;
         int? a = null;
 
         Console.WriteLine((numbers is null)); // expected: true

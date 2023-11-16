@@ -7,7 +7,7 @@
         int[] array1 = new int[5];
 
         // Declare and set array element values.
-        int[] array2 = { 1, 2, 3, 4, 5, 6 };
+        int[] array2 = [1, 2, 3, 4, 5, 6];
 
         // Declare a two dimensional array.
         int[,] multiDimensionalArray1 = new int[2, 3];
@@ -19,7 +19,7 @@
         int[][] jaggedArray = new int[6][];
 
         // Set the values of the first array in the jagged array structure.
-        jaggedArray[0] = new int[4] { 1, 2, 3, 4 };
+        jaggedArray[0] = [1, 2, 3, 4];
         // </DeclareArrays>
     }
 
@@ -27,7 +27,7 @@
     {
         // <SingleDimensionalArrayDeclaration>
         int[] array = new int[5];
-        string[] weekDays = { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
+        string[] weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
         Console.WriteLine(weekDays[0]);
         Console.WriteLine(weekDays[1]);
@@ -181,16 +181,16 @@
         // <JaggedArrayDeclaration>
         int[][] jaggedArray = new int[3][];
 
-        jaggedArray[0] = new int[] { 1, 3, 5, 7, 9 };
-        jaggedArray[1] = new int[] { 0, 2, 4, 6 };
-        jaggedArray[2] = new int[] { 11, 22 };
+        jaggedArray[0] = [1, 3, 5, 7, 9];
+        jaggedArray[1] = [0, 2, 4, 6];
+        jaggedArray[2] = [11, 22];
 
         int[][] jaggedArray2 = 
-        {
-            new int[] { 1, 3, 5, 7, 9 },
-            new int[] { 0, 2, 4, 6 },
-            new int[] { 11, 22 }
-        };
+        [
+            [1, 3, 5, 7, 9],
+            [0, 2, 4, 6],
+            [11, 22]
+        ];
 
         // Assign 77 to the second element ([1]) of the first array ([0]):
         jaggedArray2[0][1] = 77;
@@ -198,12 +198,12 @@
         // Assign 88 to the second element ([1]) of the third array ([2]):
         jaggedArray2[2][1] = 88;
 
-        int[][,] jaggedArray3 = new int[3][,]
-        {
+        int[][,] jaggedArray3 =
+        [
             new int[,] { {1,3}, {5,7} },
             new int[,] { {0,2}, {4,6}, {8,10} },
             new int[,] { {11,22}, {99,88}, {0,9} }
-        };
+        ];
 
         Console.Write("{0}", jaggedArray3[0][1, 0]);
         Console.WriteLine(jaggedArray3.Length);
@@ -217,8 +217,8 @@
         int[][] arr = new int[2][];
 
         // Initialize the elements.
-        arr[0] = new int[5] { 1, 3, 5, 7, 9 };
-        arr[1] = new int[4] { 2, 4, 6, 8 };
+        arr[0] = [1, 3, 5, 7, 9];
+        arr[1] = [2, 4, 6, 8];
 
         // Display the array elements.
         for (int i = 0; i < arr.Length; i++)
@@ -241,7 +241,7 @@
     public static void ArraysWithLINQ()
     {
         //<LINQAndArrays>
-        var a = new[] { 1, 10, 100, 1000 }; // int[]
+        int[] a = new[] { 1, 10, 100, 1000 }; // int[]
 
         // Accessing array
         Console.WriteLine("First element: " + a[0]);
@@ -264,11 +264,11 @@
         */
 
         // single-dimension jagged array
-        var c = new[]
-        {
-                                            new[]{1,2,3,4},
-                                            new[]{5,6,7,8}
-                    };
+        int[][] c =
+        [
+            [1,2,3,4],
+            [5,6,7,8]
+        ];
         // Looping through the outer array
         for (int k = 0; k < c.Length; k++)
         {
@@ -291,11 +291,11 @@
         */
 
         // jagged array of strings
-        var d = new[]
-        {
-                        new[]{"Luca", "Mads", "Luke", "Dinesh"},
-                        new[]{"Karen", "Suma", "Frances"}
-                    };
+        string[][] d =
+        [
+            ["Luca", "Mads", "Luke", "Dinesh"],
+            ["Karen", "Suma", "Frances"]
+        ];
 
         // Looping through the outer array
         int i = 0;

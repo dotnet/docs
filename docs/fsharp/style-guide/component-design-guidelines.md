@@ -62,7 +62,7 @@ This section presents recommendations for developing public F#-facing libraries;
 
 #### Use .NET naming and capitalization conventions
 
-The following table follows .NET naming and capitalization conventions. There are small additions to also include F# constructs. Those recommendations are especially meant for APIs that cross beyond F#-to-F# boundaries, fitting with idioms from .NET BCL and majority of libraries.
+The following table follows .NET naming and capitalization conventions. There are small additions to also include F# constructs. Those recommendations are especially meant for APIs that cross beyond F#-to-F# boundaries, fitting with idioms from .NET BCL and the majority of libraries.
 
 | Construct | Case | Part | Examples | Notes |
 |-----------|------|------|----------|-------|

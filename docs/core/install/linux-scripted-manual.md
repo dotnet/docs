@@ -90,7 +90,7 @@ Before running this script, make sure you grant permission for this script to ru
 chmod +x ./dotnet-install.sh
 ```
 
-The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) SDK version, which is .NET 6. To install the latest release, which may not be an (LTS) version, use the `--version latest` parameter.
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) SDK version, which is .NET 8. To install the latest release, which may not be an (LTS) version, use the `--version latest` parameter.
 
 ```bash
 ./dotnet-install.sh --version latest

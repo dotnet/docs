@@ -58,7 +58,7 @@ The following rules are enabled, by default, in .NET 8.
 | [CA2258](quality-rules/ca2258.md) | Usage | Warning | Providing a `DynamicInterfaceCastableImplementation` interface in Visual Basic is unsupported |
 | [CA2259](quality-rules/ca2259.md) | Usage | Warning | `ThreadStatic` only affects static fields |
 | [CA2260](quality-rules/ca2260.md) | Usage | Warning | Use correct type parameter |
-| CA2261 | Usage | Warning | Do not use `ConfigureAwaitOptions.SuppressThrowing` with `Task<TResult>` |
+| [CA2261](quality-rules/ca2261.md) | Usage | Warning | Do not use `ConfigureAwaitOptions.SuppressThrowing` with `Task<TResult>` |
 
 # [.NET 7](#tab/net-7)
 

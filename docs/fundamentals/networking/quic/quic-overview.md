@@ -48,7 +48,7 @@ All the following dependencies are stated in the `libmsquic` package manifest an
 
 - libnuma 1
 
-On Linux, libmsquic is published via Microsoft's official Linux package repository, <https:packages.microsoft.com>. To consume libmsquic, you must add it manually. For more information, see [Linux Software Repository for Microsoft Products](/windows-server/administration/linux-package-repository-for-microsoft-software). After configuring the package feed, it's installed via the package manager of your distro, for example, for Ubuntu:
+On Linux, libmsquic is published via Microsoft's official Linux package repository, <https://packages.microsoft.com>. To consume libmsquic, you must add it manually. For more information, see [Linux Software Repository for Microsoft Products](/windows-server/administration/linux-package-repository-for-microsoft-software). After configuring the package feed, it's installed via the package manager of your distro, for example, for Ubuntu:
 
 ```bash
 sudo apt install libmsquic

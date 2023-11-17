@@ -98,7 +98,7 @@ public Task<EventPipeSession> StartEventPipeSessionAsync(EventPipeProvider provi
 * `token` (for the Async overload): The token to monitor for cancellation requests.
 
 > [!NOTE]
-> Rundown events contain payloads that may be needed for post analysis, such as resolving method names of thread samples. Unless you know you do not want this, we recommend setting this to true. In large applications, this may take a while.
+> Rundown events contain payloads that may be needed for post analysis, such as resolving method names of thread samples. Unless you know you do not want this, we recommend setting `requestRundown` to true. In large applications, this may take a while.
 
 * `circularBufferMB` : The size of the circular buffer to be used as a buffer for writing events within the runtime.
 

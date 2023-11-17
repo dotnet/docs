@@ -168,6 +168,8 @@ items:
       items:
       - name: BinaryFormatter disabled for most projects
         href: serialization/8.0/binaryformatter-disabled.md
+      - name: PublishedTrimmed projects fail reflection-based serialization
+        href: serialization/8.0/publishtrimmed.md
       - name: Reflection-based deserializer resolves metadata eagerly
         href: serialization/8.0/metadata-resolving.md
     - name: Windows Forms
@@ -1636,6 +1638,8 @@ items:
       items:
       - name: BinaryFormatter disabled for most projects
         href: serialization/8.0/binaryformatter-disabled.md
+      - name: PublishedTrimmed projects fail reflection-based serialization
+        href: serialization/8.0/publishtrimmed.md
       - name: Reflection-based deserializer resolves metadata eagerly
         href: serialization/8.0/metadata-resolving.md
     - name: .NET 7

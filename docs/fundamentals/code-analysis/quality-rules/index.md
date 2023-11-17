@@ -1,7 +1,7 @@
 ---
 title: Code quality rules overview
 description: Learn about all of the available code quality rules for code analysis.
-ms.date: 09/01/2020
+ms.date: 11/16/2023
 author: mikadumont
 ms.author: midumont
 ---
@@ -89,6 +89,10 @@ The following table lists code quality analysis rules.
 > | [CA1507: Use nameof in place of string](ca1507.md) | A string literal is used as an argument where a `nameof` expression could be used. |
 > | [CA1508: Avoid dead conditional code](ca1508.md) | A method has conditional code that always evaluates to `true` or `false` at run time. This leads to dead code in the `false` branch of the condition. |
 > | [CA1509: Invalid entry in code metrics configuration file](ca1509.md) | Code metrics rules, such as [CA1501](ca1501.md), [CA1502](ca1502.md), [CA1505](ca1505.md) and [CA1506](ca1506.md), supplied a configuration file named `CodeMetricsConfig.txt` that has an invalid entry. |
+> | [CA1510: Use ArgumentNullException throw helper](ca1510.md) | Throw helpers are simpler and more efficient than `if` blocks that construct a new exception instance. |
+> | [CA1511: Use ArgumentException throw helper](ca1511.md) | Throw helpers are simpler and more efficient than `if` blocks that construct a new exception instance. |
+> | [CA1512: Use ArgumentOutOfRangeException throw helper](ca1512.md) | Throw helpers are simpler and more efficient than `if` blocks that construct a new exception instance. |
+> | [CA1513: Use ObjectDisposedException throw helper](ca1513.md) | Throw helpers are simpler and more efficient than `if` blocks that construct a new exception instance. |
 > | [CA1514: Avoid redundant length argument](ca1514.md) | A redundant length argument is used when slicing to the end of a string or buffer. A calculated length can be error-prone and is also unnecessary. |
 > | [CA1700: Do not name enum values 'Reserved'](ca1700.md) | This rule assumes that an enumeration member that has a name that contains "reserved" is not currently used but is a placeholder to be renamed or removed in a future version. Renaming or removing a member is a breaking change. |
 > | [CA1707: Identifiers should not contain underscores](ca1707.md) | By convention, identifier names do not contain the underscore (_) character. This rule checks namespaces, types, members, and parameters. |
@@ -153,6 +157,8 @@ The following table lists code quality analysis rules.
 > | [CA1853: Unnecessary call to 'Dictionary.ContainsKey(key)'](ca1853.md) | There's no need to guard `Dictionary.Remove(key)` with `Dictionary.ContainsKey(key)`. <xref:System.Collections.Generic.Dictionary%602.Remove(%600)?displayProperty=nameWithType> already checks whether the key exists and doesn't throw if it doesn't exist. |
 > | [CA1854: Prefer the 'IDictionary.TryGetValue(TKey, out TValue)' method](ca1854.md) | Prefer 'TryGetValue' over a Dictionary indexer access guarded by a 'ContainsKey' check. 'ContainsKey' and the indexer both look up the key, so using 'TryGetValue' avoids the extra lookup. |
 > | [CA1855: Use Span\<T>.Clear() instead of Span\<T>.Fill()](ca1855.md) | It's more efficient to call <xref:System.Span%601.Clear?displayProperty=nameWithType> than to call <xref:System.Span%601.Fill(%600)?displayProperty=nameWithType> to fill the elements of the span with a default value. |
+> | [CA1856: Incorrect usage of ConstantExpected attribute](ca1856.md) | The <xref:System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute> attribute is not applied correctly on a parameter. |
+> | [CA1857: The parameter expects a constant for optimal performance](ca1857.md) | An invalid argument is passed to a parameter that's annotated with <xref:System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute>. |
 > | [CA1858: Use StartsWith instead of IndexOf](ca1858.md) | It's more efficient to call <xref:System.String.StartsWith%2A?displayProperty=nameWithType> than to call <xref:System.String.IndexOf%2A?displayProperty=nameWithType> to check whether a string starts with a given prefix. |
 > | [CA1859: Use concrete types when possible for improved performance](ca1859.md) | Code uses interface types or abstract types, leading to unnecessary interface calls or virtual calls. |
 > | [CA1860: Avoid using 'Enumerable.Any()' extension method](ca1860.md) | It's more efficient and clearer to use `Length`, `Count`, or `IsEmpty` (if possible) than to call <xref:System.Linq.Enumerable.Any%2A?displayProperty=nameWithType> to determine whether a collection type has any elements. |
@@ -177,6 +183,7 @@ The following table lists code quality analysis rules.
 > | [CA2018: The `count` argument to `Buffer.BlockCopy` should specify the number of bytes to copy](ca2018.md) | When using `Buffer.BlockCopy`, the `count` argument specifies the number of bytes to copy. You should only use `Array.Length` for the `count` argument on arrays whose elements are exactly one byte in size. `byte`, `sbyte`, and `bool` arrays have elements that are one byte in size. |
 > | [CA2019: `ThreadStatic` fields should not use inline initialization](ca2019.md) | A field that's annotated with <xref:System.ThreadStaticAttribute> is initialized inline or explicitly in a `static` (`Shared` in Visual Basic) constructor. |
 > | [CA2020: Prevent behavioral change caused by built-in operators of IntPtr/UIntPtr](ca2020.md) | Some built-in operators added in .NET 7 behave differently than the user-defined operators in .NET 6 and earlier versions. Some operators that used to throw in unchecked context while overflowing don't throw anymore unless wrapped within checked context. Some operators that previously didn't throw in checked context now throw unless wrapped within unchecked context. |
+> | [CA2021: Don't call Enumerable.Cast\<T> or Enumerable.OfType\<T> with incompatible types](ca2021.md) | A call to <xref:System.Linq.Enumerable.Cast%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> or <xref:System.Linq.Enumerable.OfType%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> specifies a type parameter that's incompatible with the type of the input collection. |
 > | [CA2100: Review SQL queries for security vulnerabilities](ca2100.md) | A method sets the System.Data.IDbCommand.CommandText property by using a string that is built from a string argument to the method. This rule assumes that the string argument contains user input. A SQL command string that is built from user input is vulnerable to SQL injection attacks. |
 > | [CA2101: Specify marshalling for P/Invoke string arguments](ca2101.md) | A platform invoke member allows partially trusted callers, has a string parameter, and does not explicitly marshal the string. This can cause a potential security vulnerability. |
 > | [CA2109: Review visible event handlers](ca2109.md) | A public or protected event-handling method was detected. Event-handling methods should not be exposed unless absolutely necessary. |
@@ -223,6 +230,7 @@ The following table lists code quality analysis rules.
 > | [CA2258: Providing a 'DynamicInterfaceCastableImplementation' interface in Visual Basic is unsupported](ca2258.md) | Providing a functional `DynamicInterfaceCastableImplementationAttribute`-attributed interface requires the Default Interface Members feature, which is unsupported in Visual Basic. |
 > | [CA2259: Ensure `ThreadStatic` is only used with static fields](ca2259.md) | <xref:System.ThreadStaticAttribute> only affects `static` (`Shared` in Visual Basic) fields. When applied to instance fields, the attribute has no impact on behavior. |
 > | [CA2260: Implement generic math interfaces correctly](ca2260.md) | Generic math interfaces require the derived type itself to be used for the self-recurring type parameter. |
+> | [CA2261: Do not use `ConfigureAwaitOptions.SuppressThrowing` with `Task<TResult>`](ca2261.md) | The `ConfigureAwaitOptions.SuppressThrowing` option isn't supported by the generic `Task<TResult>`, since that might lead to returning an invalid `TResult`. |
 > | [CA2300: Do not use insecure deserializer BinaryFormatter](ca2300.md) | Insecure deserializers are vulnerable when deserializing untrusted data. An attacker could modify the serialized data to include unexpected types to inject objects with malicious side effects. |
 > | [CA2301: Do not call BinaryFormatter.Deserialize without first setting BinaryFormatter.Binder](ca2301.md) | Insecure deserializers are vulnerable when deserializing untrusted data. An attacker could modify the serialized data to include unexpected types to inject objects with malicious side effects. |
 > | [CA2302: Ensure BinaryFormatter.Binder is set before calling BinaryFormatter.Deserialize](ca2302.md) | Insecure deserializers are vulnerable when deserializing untrusted data. An attacker could modify the serialized data to include unexpected types to inject objects with malicious side effects. |

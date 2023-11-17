@@ -3,8 +3,7 @@
 class Program
 {
     // <DeclareData>
-    private static DailyTemperature[] data = new DailyTemperature[]
-    {
+    private static DailyTemperature[] data = [
         new DailyTemperature(HighTemp: 57, LowTemp: 30), 
         new DailyTemperature(60, 35),
         new DailyTemperature(63, 33),
@@ -25,7 +24,7 @@ class Program
         new DailyTemperature(76, 53),
         new DailyTemperature(80, 60),
         new DailyTemperature(85, 66) 
-    };
+    ];
     // </DeclareData>
 
     static void Main(string[] args)

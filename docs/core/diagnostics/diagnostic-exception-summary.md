@@ -39,7 +39,7 @@ The following example demonstrates how to use the `IExceptionSummarizer` interfa
 
 The preceding code:
 
-- Instantiates a new <xref:Microsoft.Extensions.DependencyInjection.ServiceCollection> instance, chaining a call to the <xref:Microsoft.Extensions.Diagnostics.ExceptionSummarization.ExceptionSummarizationExtensions.AddExceptionSummarizer%2A> extension method.
+- Instantiates a new <xref:Microsoft.Extensions.DependencyInjection.ServiceCollection> instance, chaining a call to the <xref:Microsoft.Extensions.DependencyInjection.ExceptionSummarizationServiceCollectionExtensions.AddExceptionSummarizer%2A> extension method.
   - The `AddExceptionSummarizer` extension method accepts a delegate that is used to configure the `ExceptionSummarizerBuilder` instance.
   - The `builder` is used to add the HTTP provider, which handles exceptions of type:
     - <xref:System.OperationCanceledException>

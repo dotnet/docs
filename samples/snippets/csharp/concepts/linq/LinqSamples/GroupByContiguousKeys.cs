@@ -183,7 +183,7 @@ class Chunk<TKey, TSource> : IGrouping<TKey, TSource>
 public static class GroupByContiguousKeys
 {
     // The source sequence.
-    static readonly KeyValuePair<string, string>[] list = {
+    static readonly KeyValuePair<string, string>[] list = [
         new("A","We"),
         new("A","think"),
         new("A","that"),
@@ -192,7 +192,7 @@ public static class GroupByContiguousKeys
         new ("A","really"),
         new("B","cool"),
         new("B","!")
-    };
+    ];
 
     // Query variable declared as class member to be available
     // on different threads.

@@ -83,7 +83,7 @@ namespace builtin_types
         // <MixedSyntax>
         public record Person(string FirstName, string LastName)
         {
-            public string[] PhoneNumbers { get; init; } = Array.Empty<string>();
+            public string[] PhoneNumbers { get; init; } = [];
         };
         // </MixedSyntax>
     }

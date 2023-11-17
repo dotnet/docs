@@ -45,6 +45,20 @@ The `hostfxr` library is found using `get_hostfxr_path` API from `nethost` libra
 
 [!code-cpp[HostFxrHost#LoadHostFxr](~/samples/snippets/core/tutorials/netcore-hosting/csharp/HostWithHostFxr/src/NativeHost/nativehost.cpp#LoadHostFxr)]
 
+The sample uses the following includes:
+
+```cpp
+#include <nethost.h>
+#include <coreclr_delegates.h>
+#include <hostfxr.h>
+```
+
+These files can be found at the following locations:
+
+* <https://github.com/dotnet/runtime/blob/main/src/native/corehost/nethost/nethost.h>
+* <https://github.com/dotnet/runtime/blob/main/src/native/corehost/coreclr_delegates.h>
+* <https://github.com/dotnet/runtime/blob/main/src/native/corehost/hostfxr.h>
+
 ### Step 2 - Initialize and start the .NET runtime
 
 The `hostfxr_initialize_for_runtime_config` and `hostfxr_get_runtime_delegate` functions initialize and start the .NET runtime using the runtime configuration for the managed component that will be loaded. The `hostfxr_get_runtime_delegate` function is used to get a runtime delegate that allows loading a managed assembly and getting a function pointer to a static method in that assembly.

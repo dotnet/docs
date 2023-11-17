@@ -19,10 +19,6 @@ class QueryDuplicateFileNames
         // Uncomment QueryDuplicates2 to run that query.  
         QueryDuplicates();  
         // QueryDuplicates2();  
-  
-        // Keep the console window open in debug mode.  
-        Console.WriteLine("Press any key to exit.");  
-        Console.ReadKey();  
     }  
   
     static void QueryDuplicates()  

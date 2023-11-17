@@ -5,7 +5,7 @@ class RefArrayExample
 {
     static void Main()
     {
-        int[] arr = {1, 4, 5};
+        int[] arr = [1, 4, 5];
         Console.WriteLine("In Main, array has {0} elements and starts with {1}",
                           arr.Length, arr[0]);
 
@@ -17,7 +17,7 @@ class RefArrayExample
     static void Change(ref int[] arr)
     {
         // Both of the following changes will affect the original variables:
-        arr = new int[5] {-9, -7, -5, -3, -1};
+        arr = [-9, -7, -5, -3, -1];
         Console.WriteLine("In Change, array has {0} elements and starts with {1}",
                           arr.Length, arr[0]);
     }

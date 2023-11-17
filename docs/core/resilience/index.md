@@ -3,7 +3,7 @@ title: Introduction to resilient app development
 description: Learn about resiliency as it relates to .NET and how to build a resilience pipeline.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/20/2023
+ms.date: 11/16/2023
 ---
 
 # Introduction to resilient app development
@@ -86,8 +86,7 @@ In addition to registering a resilience pipeline, you can also register resilien
 By calling the `AddResilienceEnricher` extension method, you're adding dimensions on top of the default ones that are built into the underlying Polly library. The following enrichment dimensions are added:
 
 - Exception enrichment based on the <xref:Microsoft.Extensions.Diagnostics.ExceptionSummarization.IExceptionSummarizer>, which provides a mechanism to summarize exceptions for use in telemetry.
-- Result enrichment based on the <xref:Microsoft.Extensions.Resilience.FailureResultContext>, which captures the dimensions metered for transient fault failures.
-- Request metadata enrichment based on <xref:Microsoft.Extensions.Http.Telemetry.RequestMetadata>, which holds the request metadata for telemetry.
+- Request metadata enrichment based on <xref:Microsoft.Extensions.Http.Diagnostics.RequestMetadata>, which holds the request metadata for telemetry.
 
 For more information, see [Polly: Telemetry metrics](https://www.pollydocs.org/advanced/telemetry#metrics).
 

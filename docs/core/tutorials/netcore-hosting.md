@@ -55,9 +55,9 @@ The sample uses the following includes:
 
 These files can be found at the following locations:
 
-* `https://github.com/dotnet/runtime/blob/main/src/native/corehost/nethost/nethost.h`
-* `https://github.com/dotnet/runtime/blob/main/src/native/corehost/coreclr_delegates.h`
-* `https://github.com/dotnet/runtime/blob/main/src/native/corehost/hostfxr.h`
+* <https://github.com/dotnet/runtime/blob/main/src/native/corehost/nethost/nethost.h>
+* <https://github.com/dotnet/runtime/blob/main/src/native/corehost/coreclr_delegates.h>
+* <https://github.com/dotnet/runtime/blob/main/src/native/corehost/hostfxr.h>
 
 ### Step 2 - Initialize and start the .NET runtime
 

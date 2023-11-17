@@ -23,6 +23,12 @@ public DiagnosticsClient
         bool requestRundown = true,
         int circularBufferMB = 256);
 
+    public Task<EventPipeSession> StartEventPipeSessionAsync(
+        IEnumerable<EventPipeProvider> providers,
+        bool requestRundown,
+        int circularBufferMB = 256,
+        CancellationToken token = default);
+
     public void WriteDump(
         DumpType dumpType,
         string dumpPath,

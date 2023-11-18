@@ -28,7 +28,7 @@ class FindSentences
         @"objects in memory is often tedious and error-prone.";  
   
         // Split the text block into an array of sentences.  
-        string[] sentences = text.Split(new char[] { '.', '?', '!' });  
+        string[] sentences = text.Split(['.', '?', '!' ]);  
   
         // Define the search terms. This list could also be dynamically populated at run time.  
         string[] wordsToMatch = { "Historically", "data", "integrated" };  
@@ -36,7 +36,7 @@ class FindSentences
         // Find sentences that contain all the terms in the wordsToMatch array.  
         // Note that the number of terms to match is not specified at compile time.  
         var sentenceQuery = from sentence in sentences  
-                            let w = sentence.Split(new char[] { '.', '?', '!', ' ', ';', ':', ',' },  
+                            let w = sentence.Split(['.', '?', '!', ' ', ';', ':', ','],  
                                                     StringSplitOptions.RemoveEmptyEntries)  
                             where w.Distinct().Intersect(wordsToMatch).Count() == wordsToMatch.Count()  
                             select sentence;  
@@ -48,10 +48,6 @@ class FindSentences
         {  
             Console.WriteLine(str);  
         }  
-  
-        // Keep the console window open in debug mode.  
-        Console.WriteLine("Press any key to exit");  
-        Console.ReadKey();  
     }  
 }  
 /* Output:  

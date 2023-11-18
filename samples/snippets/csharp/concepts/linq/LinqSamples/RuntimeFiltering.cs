@@ -7,7 +7,7 @@ public static class RuntimeFiltering
     public static void RuntimeFiltering1()
     {
         // <runtime_filtering_1>
-        int[] ids = { 111, 114, 112 };
+        int[] ids = [111, 114, 112];
 
         var queryNames =
             from student in students
@@ -30,7 +30,7 @@ public static class RuntimeFiltering
          */
 
         // Change the ids.
-        ids = new[] { 122, 117, 120, 115 };
+        ids = [122, 117, 120, 115];
 
         // The query will now return different results
         foreach (var name in queryNames)

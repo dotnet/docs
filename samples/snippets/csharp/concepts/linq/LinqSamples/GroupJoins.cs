@@ -12,16 +12,16 @@ public static class GroupJoins
         Person charlotte = new("Charlotte", "Weiss");
         Person arlene = new("Arlene", "Huff");
 
-        List<Person> people = new() { magnus, terry, charlotte, arlene };
+        List<Person> people = [magnus, terry, charlotte, arlene];
 
-        List<Pet> pets = new()
-        {
+        List<Pet> pets =
+        [
             new(Name: "Barley", Owner: terry),
             new("Boots", terry),
             new("Whiskers", charlotte),
             new("Blue Moon", terry),
             new("Daisy", magnus),
-        };
+        ];
 
         var query =
             from person in people
@@ -68,16 +68,16 @@ public static class GroupJoins
         Person charlotte = new("Charlotte", "Weiss");
         Person arlene = new("Arlene", "Huff");
 
-        List<Person> people = new() { magnus, terry, charlotte, arlene };
+        List<Person> people = [magnus, terry, charlotte, arlene];
 
-        List<Pet> pets = new()
-        {
+        List<Pet> pets =
+        [
             new(Name: "Barley", Owner: terry),
             new("Boots", terry),
             new("Whiskers", charlotte),
             new("Blue Moon", terry),
             new("Daisy", magnus),
-        };
+        ];
 
         XElement ownersAndPets = new("PetOwners",
             from person in people

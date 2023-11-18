@@ -6,7 +6,7 @@ class ParamsExample
 {
     static void Main()
     {
-        string fromArray = GetVowels(new[] { "apple", "banana", "pear" });
+        string fromArray = GetVowels(["apple", "banana", "pear"]);
         Console.WriteLine($"Vowels from array: '{fromArray}'");
 
         string fromMultipleArguments = GetVowels("apple", "banana", "pear");
@@ -26,7 +26,7 @@ class ParamsExample
             return string.Empty;
         }
 
-        var vowels = new char[] { 'A', 'E', 'I', 'O', 'U' };
+        char[] vowels = ['A', 'E', 'I', 'O', 'U'];
         return string.Concat(
             input.SelectMany(
                 word => word.Where(letter => vowels.Contains(char.ToUpper(letter)))));

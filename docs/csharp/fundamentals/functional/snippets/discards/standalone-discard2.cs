@@ -11,7 +11,7 @@ public class DiscardOrVariable
    // <VariableIdentifier>
    private static void ShowValue(int _)
    {
-      byte[] arr = { 0, 0, 1, 2 };
+      byte[] arr = [0, 0, 1, 2];
       _ = BitConverter.ToInt32(arr, 0);
       Console.WriteLine(_);
    }

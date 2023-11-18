@@ -24,12 +24,12 @@ namespace Sandbox
 
             public static void Example()
             {
-                List<Market> markets = new List<Market>
-                {
-                    new Market { Name = "Emily's", Items = new string[] { "kiwi", "cheery", "banana" } },
-                    new Market { Name = "Kim's", Items = new string[] { "melon", "mango", "olive" } },
-                    new Market { Name = "Adam's", Items = new string[] { "kiwi", "apple", "orange" } },
-                };
+                List<Market> markets =
+                [
+                    new Market { Name = "Emily's", Items = ["kiwi", "cheery", "banana"] },
+                    new Market { Name = "Kim's", Items = ["melon", "mango", "olive"] },
+                    new Market { Name = "Adam's", Items = ["kiwi", "apple", "orange"] },
+                ];
 
                 // Determine which market have all fruit names length equal to 5
                 IEnumerable<string> names = from market in markets
@@ -59,12 +59,12 @@ namespace Sandbox
 
             public static void Example()
             {
-                List<Market> markets = new List<Market>
-                {
-                    new Market { Name = "Emily's", Items = new string[] { "kiwi", "cheery", "banana" } },
-                    new Market { Name = "Kim's", Items = new string[] { "melon", "mango", "olive" } },
-                    new Market { Name = "Adam's", Items = new string[] { "kiwi", "apple", "orange" } },
-                };
+                List<Market> markets =
+                [
+                    new Market { Name = "Emily's", Items = ["kiwi", "cheery", "banana"] },
+                    new Market { Name = "Kim's", Items = ["melon", "mango", "olive"] },
+                    new Market { Name = "Adam's", Items = ["kiwi", "apple", "orange"] },
+                ];
 
                 // Determine which market have any fruit names start with 'o'
                 IEnumerable<string> names = from market in markets
@@ -95,12 +95,12 @@ namespace Sandbox
 
             public static void Example()
             {
-                List<Market> markets = new List<Market>
-                {
-                    new Market { Name = "Emily's", Items = new string[] { "kiwi", "cheery", "banana" } },
-                    new Market { Name = "Kim's", Items = new string[] { "melon", "mango", "olive" } },
-                    new Market { Name = "Adam's", Items = new string[] { "kiwi", "apple", "orange" } },
-                };
+                List<Market> markets =
+                [
+                    new Market { Name = "Emily's", Items = ["kiwi", "cheery", "banana"] },
+                    new Market { Name = "Kim's", Items = ["melon", "mango", "olive"] },
+                    new Market { Name = "Adam's", Items = ["kiwi", "apple", "orange"] },
+                ];
 
                 // Determine which market contains fruit names equal 'kiwi'
                 IEnumerable<string> names = from market in markets

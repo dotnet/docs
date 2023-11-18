@@ -2,7 +2,6 @@
 title: .NET SDK overview
 description: Learn about the .NET SDK (formerly known as the .NET Core SDK), which is a set of libraries and tools used to create .NET projects.
 ms.date: 08/10/2023
-ms.technology: dotnet-cli
 ---
 # What is the .NET SDK?
 

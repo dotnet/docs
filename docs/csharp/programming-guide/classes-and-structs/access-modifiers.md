@@ -39,7 +39,10 @@ Not all access modifiers are valid for all types or members in all contexts. In 
 
 Classes, records, and structs declared directly within a namespace (in other words, that aren't nested within other classes or structs) can be either `public` or `internal`. `internal` is the default if no access modifier is specified.
 
+Classes and records only can be `sealed`.
+
 Struct members, including nested classes and structs, can be declared `public`, `internal`, or `private`. Class members, including nested classes and structs, can be `public`, `protected internal`, `protected`, `internal`, `private protected`, or `private`. Class and struct members,  including nested classes and structs, have `private` access by default. Private nested types aren't accessible from outside the containing type.
+Class members only, including nested classes can be `sealed`.
 
 Derived classes and derived records can't have greater accessibility than their base types. You can't declare a public class `B` that derives from an internal class `A`. If allowed, it would have the effect of making `A` public, because all `protected` or `internal` members of `A` are accessible from the derived class.
 

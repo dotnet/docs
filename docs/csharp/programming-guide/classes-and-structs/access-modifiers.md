@@ -15,6 +15,7 @@ All types and type members have an accessibility level. The accessibility level 
 - [private](../../language-reference/keywords/private.md): The type or member can be accessed only by code in the same `class` or `struct`.
 - [protected](../../language-reference/keywords/protected.md): The type or member can be accessed only by code in the same `class`, or in a `class` that is derived from that `class`.
 - [internal](../../language-reference/keywords/internal.md): The type or member can be accessed by any code in the same assembly, but not from another assembly. In other words, `internal` types or members can be accessed from code that is part of the same compilation.
+- [sealed](../../language-reference/keywords/sealed.md): The type can't be inherited from, but when applied to the members of that type it prevents inheriting types from overriding that member (virtual method or a property).
 - [protected internal](../../language-reference/keywords/protected-internal.md): The type or member can be accessed by any code in the assembly in which it's declared, or from within a derived `class` in another assembly.
 - [private protected](../../language-reference/keywords/private-protected.md): The type or member can be accessed by types derived from the `class` that are declared within its containing assembly.
 

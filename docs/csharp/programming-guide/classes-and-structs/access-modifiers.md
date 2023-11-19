@@ -50,7 +50,7 @@ You can enable specific other assemblies to access your internal types by using 
 
 ## Class, record, and struct member accessibility
 
-Class and record members (including nested classes, records and structs) can be declared with any of the six types of access. Struct members can't be declared as `protected`, `protected internal`, or `private protected` because structs don't support inheritance.
+Class members (including nested classes and records) can be declared with any of the seven types of access. Struct members (including nested classes, records and structs) can't be declared as `protected`, `protected internal`, `private protected`, or `sealed` because structs don't support inheritance.
 
 Normally, the accessibility of a member isn't greater than the accessibility of the type that contains it. However, a `public` member of an internal class might be accessible from outside the assembly if the member implements interface methods or overrides virtual methods that are defined in a public base class.
 

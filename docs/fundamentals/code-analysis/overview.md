@@ -2,7 +2,7 @@
 title: Code analysis in .NET
 titleSuffix: ""
 description: Learn about source code analysis in the .NET SDK.
-ms.date: 12/07/2022
+ms.date: 11/15/2023
 ms.topic: overview
 ms.custom: updateeachrelease
 helpviewer_keywords:

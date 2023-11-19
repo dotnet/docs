@@ -1,7 +1,7 @@
 ---
 title: .NET Standard
 description: Learn about .NET Standard, its versions, and the .NET implementations that support it.
-ms.date: 11/14/2022
+ms.date: 11/15/2023
 ms.prod: dotnet
 ms.technology: dotnet-standard
 ms.custom: "updateeachrelease"

@@ -21,13 +21,13 @@ All types and type members have an accessibility level. The accessibility level 
 
 ## Summary table
 
-| Caller's location                      | `public` | `protected internal` | `protected` | `internal` | `private protected` | `private` |
-| -------------------------------------- | :------: | :------------------: | :---------: | :--------: | :-----------------: | :-------: |
-| Within the class                       |    ✔️️     |          ✔️           |      ✔️      |     ✔️      |          ✔️          |     ✔️     |
-| Derived class (same assembly)          |    ✔️     |          ✔️           |      ✔️      |     ✔️      |          ✔️          |     ❌     |
-| Non-derived class (same assembly)      |    ✔️     |          ✔️           |      ❌      |     ✔️      |          ❌          |     ❌     |
-| Derived class (different assembly)     |    ✔️     |          ✔️           |      ✔️      |     ❌      |          ❌          |     ❌     |
-| Non-derived class (different assembly) |    ✔️     |          ❌           |      ❌      |     ❌      |          ❌          |     ❌     |
+| Caller's location                      | `public` | `protected internal` | `protected` | `internal` | `private protected` | `private` | `sealed` |
+| -------------------------------------- | :------: | :------------------: | :---------: | :--------: | :-----------------: | :-------: | :------: |
+| Within the class                       |    ✔️️     |          ✔️           |      ✔️      |     ✔️      |          ✔️          |     ✔️     |     ✔️     |
+| Derived class (same assembly)          |    ✔️     |          ✔️           |      ✔️      |     ✔️      |          ✔️          |     ❌     |     ❌     |
+| Non-derived class (same assembly)      |    ✔️     |          ✔️           |      ❌      |     ✔️      |          ❌          |     ❌     |     ✔️     |
+| Derived class (different assembly)     |    ✔️     |          ✔️           |      ✔️      |     ❌      |          ❌          |     ❌     |     ❌     |
+| Non-derived class (different assembly) |    ✔️     |          ❌           |      ❌      |     ❌      |          ❌          |     ❌     |     ✔️     |
 
 The following examples demonstrate how to specify access modifiers on a type and member:
 

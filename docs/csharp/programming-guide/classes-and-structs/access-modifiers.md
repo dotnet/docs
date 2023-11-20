@@ -15,19 +15,18 @@ All types and type members have an accessibility level. The accessibility level 
 - [private](../../language-reference/keywords/private.md): The type or member can be accessed only by code in the same `class` or `struct`.
 - [protected](../../language-reference/keywords/protected.md): The type or member can be accessed only by code in the same `class`, or in a `class` that is derived from that `class`.
 - [internal](../../language-reference/keywords/internal.md): The type or member can be accessed by any code in the same assembly, but not from another assembly. In other words, `internal` types or members can be accessed from code that is part of the same compilation.
-- [sealed](../../language-reference/keywords/sealed.md): The type can't be inherited from, but when applied to the members of that type it prevents inheriting types from overriding that member (virtual method or a property).
 - [protected internal](../../language-reference/keywords/protected-internal.md): The type or member can be accessed by any code in the assembly in which it's declared, or from within a derived `class` in another assembly.
 - [private protected](../../language-reference/keywords/private-protected.md): The type or member can be accessed by types derived from the `class` that are declared within its containing assembly.
 
 ## Summary table
 
-| Caller's location                      | `public` | `protected internal` | `protected` | `internal` | `private protected` | `private` | `sealed` |
-| -------------------------------------- | :------: | :------------------: | :---------: | :--------: | :-----------------: | :-------: | :------: |
-| Within the class                       |    ✔️️     |          ✔️           |      ✔️      |     ✔️      |          ✔️          |     ✔️     |     ✔️     |
-| Derived class (same assembly)          |    ✔️     |          ✔️           |      ✔️      |     ✔️      |          ✔️          |     ❌     |     ❌     |
-| Non-derived class (same assembly)      |    ✔️     |          ✔️           |      ❌      |     ✔️      |          ❌          |     ❌     |     ✔️     |
-| Derived class (different assembly)     |    ✔️     |          ✔️           |      ✔️      |     ❌      |          ❌          |     ❌     |     ❌     |
-| Non-derived class (different assembly) |    ✔️     |          ❌           |      ❌      |     ❌      |          ❌          |     ❌     |     ✔️     |
+| Caller's location                      | `public` | `protected internal` | `protected` | `internal` | `private protected` | `private` |
+| -------------------------------------- | :------: | :------------------: | :---------: | :--------: | :-----------------: | :-------: |
+| Within the class                       |    ✔️️     |          ✔️           |      ✔️      |     ✔️      |          ✔️          |     ✔️     |
+| Derived class (same assembly)          |    ✔️     |          ✔️           |      ✔️      |     ✔️      |          ✔️          |     ❌     |
+| Non-derived class (same assembly)      |    ✔️     |          ✔️           |      ❌      |     ✔️      |          ❌          |     ❌     |
+| Derived class (different assembly)     |    ✔️     |          ✔️           |      ✔️      |     ❌      |          ❌          |     ❌     |
+| Non-derived class (different assembly) |    ✔️     |          ❌           |      ❌      |     ❌      |          ❌          |     ❌     |
 
 The following examples demonstrate how to specify access modifiers on a type and member:
 
@@ -39,10 +38,7 @@ Not all access modifiers are valid for all types or members in all contexts. In 
 
 Classes, records, and structs declared directly within a namespace (in other words, that aren't nested within other classes or structs) can be either `public` or `internal`. `internal` is the default if no access modifier is specified.
 
-Classes and records only can be `sealed`.
-
 Struct members, including nested classes and structs, can be declared `public`, `internal`, or `private`. Class members, including nested classes and structs, can be `public`, `protected internal`, `protected`, `internal`, `private protected`, or `private`. Class and struct members,  including nested classes and structs, have `private` access by default. Private nested types aren't accessible from outside the containing type.
-Class members only, including nested classes can be `sealed`.
 
 Derived classes and derived records can't have greater accessibility than their base types. You can't declare a public class `B` that derives from an internal class `A`. If allowed, it would have the effect of making `A` public, because all `protected` or `internal` members of `A` are accessible from the derived class.
 
@@ -50,7 +46,7 @@ You can enable specific other assemblies to access your internal types by using 
 
 ## Class, record, and struct member accessibility
 
-Class members (including nested classes and records) can be declared with any of the seven types of access. Struct members (including nested classes, records and structs) can't be declared as `protected`, `protected internal`, `private protected`, or `sealed` because structs don't support inheritance.
+Class and record members (including nested classes, records and structs) can be declared with any of the six types of access. Struct members can't be declared as `protected`, `protected internal`, or `private protected` because structs don't support inheritance.
 
 Normally, the accessibility of a member isn't greater than the accessibility of the type that contains it. However, a `public` member of an internal class might be accessible from outside the assembly if the member implements interface methods or overrides virtual methods that are defined in a public base class.
 

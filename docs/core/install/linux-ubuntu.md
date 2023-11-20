@@ -43,7 +43,7 @@ Install .NET through the Ubuntu feed. For more information, see the following pa
 - [Install .NET on Ubuntu 22.04](linux-ubuntu-2204.md)
 - [Install .NET on Ubuntu 22.10](linux-ubuntu-2210.md)
 - [Install .NET on Ubuntu 23.04](linux-ubuntu-2304.md).
-- [Install .NET on Ubuntu 23.04](linux-ubuntu-2310.md).
+- [Install .NET on Ubuntu 23.10](linux-ubuntu-2310.md).
 
 [!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
 

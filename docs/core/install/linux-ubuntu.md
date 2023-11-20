@@ -26,7 +26,7 @@ When your version of Ubuntu supports .NET through the built-in Ubuntu feed, supp
 
 Use the following sections to determine how you should install .NET:
 
-- [I'm using Ubuntu 22.04, 22.10, or 23.04, and I only need .NET](#im-using-ubuntu-2204-2210-or-2304-and-i-only-need-net)
+- [I'm using Ubuntu 22.04 or later, and I only need .NET](#im-using-ubuntu-2204-or-later-and-i-only-need-net)
 - [I'm using a version of Ubuntu prior to 22.04](#im-using-a-version-of-ubuntu-prior-to-2204)
 - [I'm using other Microsoft packages, such as `powershell`, `mdatp`, or `mssql`](#im-using-other-microsoft-packages-such-as-powershell-mdatp-or-mssql)
 - [I want to create a .NET app](#i-want-to-create-a-net-app)
@@ -36,13 +36,14 @@ Use the following sections to determine how you should install .NET:
 - [I don't want to use APT](#i-dont-want-to-use-apt)
 - [I'm using an Arm-based CPU](#im-using-an-arm-based-cpu)
 
-### I'm using Ubuntu 22.04, 22.10, or 23.04, and I only need .NET
+### I'm using Ubuntu 22.04 or later, and I only need .NET
 
 Install .NET through the Ubuntu feed. For more information, see the following pages:
 
-- [Install .NET on Ubuntu 22.04](linux-ubuntu-2204.md)
-- [Install .NET on Ubuntu 22.10](linux-ubuntu-2210.md)
+- [Install .NET on Ubuntu 22.04](linux-ubuntu-2204.md).
+- [Install .NET on Ubuntu 22.10](linux-ubuntu-2210.md).
 - [Install .NET on Ubuntu 23.04](linux-ubuntu-2304.md).
+- [Install .NET on Ubuntu 23.10](linux-ubuntu-2310.md).
 
 [!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
 
@@ -66,7 +67,7 @@ If you want to source the .NET packages from the Ubuntu feed, you need to deprio
 
 ### I want to create a .NET app
 
-Use the same package sources for the SDK as you use for the runtime. For example, if you're using Ubuntu 22.04 and .NET 6, but not .NET 7, it's recommended that you install .NET through the built-in Ubuntu feed. If, however, you move to .NET 7, which isn't provided by Canonical for Ubuntu 22.04, you should [Register and install with the Microsoft package repository](#register-the-microsoft-package-repository). Review the other suggestions in the [Decide how to install .NET](#decide-how-to-install-net) section.
+Use the same package sources for the SDK as you use for the runtime. For example, if you're using Ubuntu 22.04 and .NET 6, but not .NET 7, it's recommended that you install .NET through the built-in Ubuntu feed. If, however, you move to .NET 7, which isn't provided by Canonical for Ubuntu 22.04, you should uninstall .NET and reinstall it with the **Microsoft package repository**. For more information, see [Register and install with the Microsoft package repository](#register-the-microsoft-package-repository). Also, review the other suggestions in the [Decide how to install .NET](#decide-how-to-install-net) section.
 
 ### I want to run a .NET app in a container, cloud, or continuous-integration scenario
 
@@ -106,10 +107,11 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Ubuntu                              | Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](#register-the-microsoft-package-repository) |
 |-------------------------------------|-------------------------|--------------------------|-----------------------------------|
-| [23.04](linux-ubuntu-2304.md)       | 8.0, 7.0, 6.0           | 8.0, 7.0, 6.0            | 8.0, 7.0, 6.0                     |
+| [23.10](linux-ubuntu-2310.md)       | 8.0, 7.0, 6.0           | 8.0, 7.0, 6.0            | 8.0, 7.0, 6.0                     |
+| [23.04](linux-ubuntu-2304.md)       | 8.0, 7.0, 6.0           | 7.0, 6.0                 | 8.0, 7.0, 6.0                     |
 | [22.10](linux-ubuntu-2210.md)       | 7.0, 6.0                | 7.0, 6.0                 | 7.0, 6.0, 3.1                     |
-| [22.04 (LTS)](linux-ubuntu-2204.md) | 7.0, 6.0                | 6.0                      | 7.0, 6.0, 3.1                     |
-| [20.04 (LTS)](linux-ubuntu-2004.md) | 7.0, 6.0                | None                     | 7.0. 6.0, 5.0, 3.1, 2.1           |
+| [22.04 (LTS)](linux-ubuntu-2204.md) | 8.0, 7.0, 6.0           | 6.0                      | 8.0, 7.0, 6.0, 3.1                |
+| [20.04 (LTS)](linux-ubuntu-2004.md) | 8.0, 7.0, 6.0           | None                     | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1      |
 | [18.04 (LTS)](linux-ubuntu-1804.md) | 7.0, 6.0                | None                     | 7.0. 6.0, 5.0, 3.1, 2.2, 2.1      |
 | [16.04 (LTS)](linux-ubuntu-1604.md) | 6.0                     | None                     | 6.0, 5.0, 3.1, 3.0, 2.2, 2.1, 2.0 |
 

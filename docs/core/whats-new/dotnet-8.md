@@ -700,9 +700,9 @@ class BigCacheConsumer([FromKeyedServices("big")] IMemoryCache cache)
     public object? GetData() => cache.Get("data");
 }
 
-class SmallCacheConsumer(IKeyedServiceProvider keyedServiceProvider)
+class SmallCacheConsumer(IServiceProvider serviceProvider)
 {
-    public object? GetData() => keyedServiceProvider.GetRequiredKeyedService<IMemoryCache>("small");
+    public object? GetData() => serviceProvider.GetRequiredKeyedService<IMemoryCache>("small");
 }
 ```
 

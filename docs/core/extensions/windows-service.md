@@ -8,6 +8,8 @@ ms.topic: tutorial
 zone_pivot_groups: dotnet-version
 ---
 
+[comment]: <> (Since 8.0 is now out do we want to create a version of some of the referenced snippets in this document for the new version?  This example is referencing 7.0.  I don't mind volunteering to help.  This example is already importing some 8.0 libraries.  Just a thought.  Charles Owen)
+
 # Create Windows Service using `BackgroundService`
 
 .NET Framework developers are probably familiar with Windows Service apps. Before .NET Core and .NET 5+, developers who relied on .NET Framework could create Windows Services to perform background tasks or execute long-running processes. This functionality is still available and you can create Worker Services that run as a Windows Service.

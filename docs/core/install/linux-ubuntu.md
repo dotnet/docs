@@ -40,8 +40,8 @@ Use the following sections to determine how you should install .NET:
 
 Install .NET through the Ubuntu feed. For more information, see the following pages:
 
-- [Install .NET on Ubuntu 22.04](linux-ubuntu-2204.md)
-- [Install .NET on Ubuntu 22.10](linux-ubuntu-2210.md)
+- [Install .NET on Ubuntu 22.04](linux-ubuntu-2204.md).
+- [Install .NET on Ubuntu 22.10](linux-ubuntu-2210.md).
 - [Install .NET on Ubuntu 23.04](linux-ubuntu-2304.md).
 - [Install .NET on Ubuntu 23.10](linux-ubuntu-2310.md).
 

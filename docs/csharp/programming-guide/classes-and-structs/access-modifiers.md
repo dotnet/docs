@@ -99,6 +99,7 @@ For more details see the [Accessibility Levels](../../language-reference/keyword
 - [protected](../../language-reference/keywords/protected.md)
 - [protected internal](../../language-reference/keywords/protected-internal.md)
 - [private protected](../../language-reference/keywords/private-protected.md)
+- [sealed](../../programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md#sealed-classes-and-class-members)
 - [class](../../language-reference/keywords/class.md)
 - [struct](../../language-reference/builtin-types/struct.md)
 - [interface](../../language-reference/keywords/interface.md)

@@ -38,9 +38,9 @@ The .NET Framework is highly productive for building apps. Powerful and safe lan
 
 ### Fact 3: Good tools make all the difference
 
- Good tools let you drill quickly into the biggest performance issues (CPU, memory, or disk) and help you locate the code that causes those bottlenecks. Microsoft ships a variety of performance tools such as [Visual Studio Profiler](/visualstudio/profiling/beginners-guide-to-performance-profiling) and PerfView.
+ Good tools let you drill quickly into the biggest performance issues (CPU, memory, or disk) and help you locate the code that causes those bottlenecks. Microsoft ships a variety of performance tools such as [Visual Studio Profiler](/visualstudio/profiling/beginners-guide-to-performance-profiling) and [PerfView](https://github.com/microsoft/perfview/releases).
 
- [PerfView](https://github.com/microsoft/perfview/releases) is a powerful tool that helps you focus on deep issues such as disk I/O, GC events, and memory. You can capture performance-related [Event Tracing for Windows](../wcf/samples/etw-tracing.md) (ETW) events and view easily per app, per process, per stack, and per thread information. PerfView shows you how much and what kind of memory your app allocates, and which functions or call stacks contribute how much to the memory allocations. For details, see the rich help topics, demos, and videos included with the tool.
+ PerfView is a powerful tool that helps you focus on deep issues such as disk I/O, GC events, and memory. You can capture performance-related [Event Tracing for Windows](../wcf/samples/etw-tracing.md) (ETW) events and view easily per app, per process, per stack, and per thread information. PerfView shows you how much and what kind of memory your app allocates, and which functions or call stacks contribute how much to the memory allocations. For details, see the rich help topics, demos, and videos included with the tool.
 
 ### Fact 4: It’s all about allocations
 

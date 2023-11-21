@@ -226,6 +226,8 @@ Adding the `[<RequireQualifiedAccess>]` attribute to a module indicates that the
 
 This is useful when functions and values in the module have names that are likely to conflict with names in other modules. Requiring qualified access can greatly increase the long-term maintainability and evolvability of a library.
 
+It is strongly suggested to have the `[<RequireQualifiedAccess>]` attribute for custom modules that extend those provided by `FSharp.Core` (such as `Seq`, `List`, `Array`), as those modules are prevalently used in F# code and have `[<RequireQualifiedAccess>]` defined on them; more generally, it is discouraged to define custom modules lacking the attribute, when such module shadows or extend other modules that have the attribute. 
+
 Adding the `[<AutoOpen>]` attribute to a module means the module will be opened when the containing namespace is opened. The `[<AutoOpen>]` attribute may also be applied to an assembly to indicate a module that is automatically opened when the assembly is referenced.
 
 For example, a statistics library **MathsHeaven.Statistics** might contain a `module MathsHeaven.Statistics.Operators` containing functions `erf` and `erfc`. It is reasonable to mark this module as `[<AutoOpen>]`. This means `open MathsHeaven.Statistics` will also open this module and bring the names `erf` and `erfc` into scope. Another good use of `[<AutoOpen>]` is for modules containing extension methods.

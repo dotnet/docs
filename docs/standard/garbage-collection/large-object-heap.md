@@ -164,7 +164,7 @@ The garbage collector provides a rich set of ETW events to help you understand w
 - [GC ETW Events - 3](https://devblogs.microsoft.com/dotnet/gc-etw-events-3/)
 - [GC ETW Events - 4](https://devblogs.microsoft.com/dotnet/gc-etw-events-4/)
 
-To identify excessive generation 2 GCs caused by temporary LOH allocations, look at the Trigger Reason column for GCs. For a simple test that only allocates temporary large objects, you can collect information on ETW events with the following PerfView command:
+To identify excessive generation 2 GCs caused by temporary LOH allocations, look at the Trigger Reason column for GCs. For a simple test that only allocates temporary large objects, you can collect information on ETW events with the following [PerfView](https://github.com/microsoft/perfview) command:
 
 ```console
 perfview /GCCollectOnly /AcceptEULA /nogui collect

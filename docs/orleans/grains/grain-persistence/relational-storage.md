@@ -151,7 +151,7 @@ situation to find a hosting environment that is virtualized, and where performan
 
 ### 3. Allow you to make use of vendor- and version-specific abilities
 
-Vendors have implemented different extensions and features within their products. It's sensible to make use of these features when they're available. These are features such as [native UPSERT](https://www.postgresql.org/about/news/1636/) or [PipelineDB](http://docs.pipelinedb.com/introduction.html) in PostgreSQL, and [PolyBase](/sql/relational-databases/polybase/get-started-with-polybase) or [natively compiled tables and stored procedures](/sql/relational-databases/in-memory-oltp/native-compilation-of-tables-and-stored-procedures) in SQL Server.
+Vendors have implemented different extensions and features within their products. It's sensible to make use of these features when they're available. These are features such as [native UPSERT](https://www.postgresql.org/about/news/1636/) or [PipelineDB](https://github.com/pipelinedb/pipelinedb/blob/master/README.md) in PostgreSQL, and [PolyBase](/sql/relational-databases/polybase/get-started-with-polybase) or [natively compiled tables and stored procedures](/sql/relational-databases/in-memory-oltp/native-compilation-of-tables-and-stored-procedures) in SQL Server.
 
 ### 4. Make it possible to optimize hardware resources
 
@@ -187,7 +187,7 @@ The Orleans framework does not know about deployment-specific hardware (which ha
 1. The general idea is that data is read and written through Orleans-specific queries.
    Orleans operates on column names and types when reading, and on parameter names and types when writing.
 2. The implementations **must** preserve input and output names and types. Orleans uses these parameters to read query results by name and type.
-   Vendor- and deployment-specific tuning is allowed, and contributions are encouraged as long as the interface contract is maintained.  
+   Vendor- and deployment-specific tuning is allowed, and contributions are encouraged as long as the interface contract is maintained.
 3. The implementation across vendor-specific scripts **should** preserve the constraint names.
    This simplifies troubleshooting, by virtue of uniform naming across concrete implementations.
 4. **Version** &ndash; or **ETag** in application code &ndash; for Orleans, this represents a unique version.

@@ -97,13 +97,13 @@ sudo rm -rf /usr/share/dotnet/sdk/6.0.406
 ```
 
 > [!IMPORTANT]
-> The version directories may not match the "version" you're uninstalling. The individual runtimes and SDKs that are installed with a single .NET release may have different versions. For example, you may have installed ASP.NET Core 8 Runtime, which installed the 8.0.2 ASP.NET Core runtime and the 8.0.8 .NET runtime. Each has a different versioned directory. For more information, see [Overview of how .NET is versioned](../versions/index.md).
+> The version directories might not match the "version" you're uninstalling. The individual runtimes and SDKs that are installed with a single .NET release might have different versions. For example, you might have installed ASP.NET Core 8 Runtime, which installed the 8.0.2 ASP.NET Core runtime and the 8.0.8 .NET runtime. Each has a different versioned directory. For more information, see [Overview of how .NET is versioned](../versions/index.md).
 
 ::: zone-end
 
 ::: zone pivot="os-macos"
 
-When you manually install .NET, it's generally installed to the `/usr/local/share/dotnet/` or the `$HOME/.dotnet` directory. The SDK, runtime, and .NET host, are installed into separate sub directories. These "component" directories contain a directory for each version of .NET. By removing the versioned directories, you remove that version of .NET from your system. These directories may vary depending on your Linux distribution.
+When you manually install .NET, it's generally installed to the `/usr/local/share/dotnet/` or the `$HOME/.dotnet` directory. The SDK, runtime, and .NET host are installed into separate sub directories. These "component" directories contain a directory for each version of .NET. By removing the versioned directories, you remove that version of .NET from your system. These directories may vary depending on your Linux distribution.
 
 There are three commands you can use to discover where .NET is installed: `dotnet --list-sdks` for SDKs, `dotnet --list-runtimes` for runtimes, and `dotnet --info` for everything. These commands don't list the .NET host. To determine which hosts are installed, check the `/usr/local/share/dotnet/host/fxr/` directory. The following list represents the directories of a specific version of .NET, where the `$version` variable represents the version of the .NET:
 
@@ -113,7 +113,7 @@ There are three commands you can use to discover where .NET is installed: `dotne
 
 - **Runtime**:
 
-  The runtime is based on specific .NET product runtimes, such as `Microsoft.AspNetCore.All` or `Microsoft.NETCore.App` (the .NET runtime specifically). These are installed to the `/usr/local/share/dotnet/shared/$product/$version` directory, where `$product` is the product runtime. For example, you may see the following directories:
+  The runtime is based on specific .NET product runtimes, such as `Microsoft.AspNetCore.All` or `Microsoft.NETCore.App` (the .NET runtime specifically). These are installed to the `/usr/local/share/dotnet/shared/$product/$version` directory, where `$product` is the product runtime. For example, you might see the following directories:
 
   ```
   /usr/local/share/dotnet/shared/Microsoft.NETCore.App/$version/dotnet --info
@@ -132,7 +132,7 @@ sudo rm -rf /usr/local/share/dotnet/sdk/6.0.406
 ```
 
 > [!IMPORTANT]
-> The version directories may not match the "version" you're uninstalling. The individual runtimes and SDKs that are installed with a single .NET release may have different versions. For example, you may have installed ASP.NET Core 8 Runtime, which installed the 8.0.2 ASP.NET Core runtime and the 8.0.8 .NET runtime. Each has a different versioned directory. For more information, see [Overview of how .NET is versioned](../versions/index.md).
+> The version directories might not match the "version" you're uninstalling. The individual runtimes and SDKs that are installed with a single .NET release might have different versions. For example, you might have installed ASP.NET Core 8 Runtime, which installed the 8.0.2 ASP.NET Core runtime and the 8.0.8 .NET runtime. Each has a different versioned directory. For more information, see [Overview of how .NET is versioned](../versions/index.md).
 
 > [!IMPORTANT]
 > If you're using an Arm-based Mac, such as one with an M1 chip, review the directory paths described in [Install .NET on Arm-based Macs](macos.md#arm-based-macs).

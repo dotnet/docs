@@ -21,7 +21,7 @@ public abstract partial class ArmResource
 
     protected internal virtual ArmClient Client { get; }
 
-    private readonly ConcurrentDictionary<Type, object> _clientCache = new ConcurrentDictionary<Type, object>();
+    private readonly ConcurrentDictionary<Type, object> _clientCache = new();
 
     [EditorBrowsable(EditorBrowsableState.Never)]
     public virtual T GetCachedClient<T>(Func<ArmClient, T> clientFactory)

@@ -235,7 +235,7 @@ This approach is useful when you would like to consolidate the dependency creati
 
 In ARM libraries, the clients were designed to emphasize their relationship to one another, mirroring the service hierarchy. To achieve that goal, extension methods are widely used to add additional features to clients.
 
-For example, an Azure virtual machine resizes in an Azure resource group. The `Azure.ResourceManager.Compute` namespace models Azure virtual machine as `VirtualMachineResource` and `Azure.ResourceManager` namespace models Azure resource group as `ResourceGroupResource`.  To query the virtual machines for a resource group, you would write:
+For example, an Azure virtual machine exists in an Azure resource group. The `Azure.ResourceManager.Compute` namespace models Azure virtual machine as `VirtualMachineResource` and `Azure.ResourceManager` namespace models Azure resource group as `ResourceGroupResource`. To query the virtual machines for a resource group, you would write:
 
 :::code language="csharp" source="snippets/unit-testing/ResourceManager/ResourceManagerCodeStructure.cs" id="ParentOfVMIsRG" :::
 

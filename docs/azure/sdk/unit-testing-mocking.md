@@ -243,7 +243,7 @@ Because the virtual machine-related functionality such as `GetVirtualMachines` o
 
 The mockable resource type is always in the `Mocking` sub-namespace of the extension method. In the preceding example, the mockable resource type is in the `Azure.ResourceManager.Compute.Mocking` namespace. The mockable resource type is always named after the resource type with "Mockable" and the library name as prefixes. In the preceding example, the mockable resource type is named `MockableComputeResourceGroupResource`, where `ResourceGroupResource` is the resource type of the extension method, and `Compute` is the library name.
 
-One more thing to do before you could get the unit test running is that you need to mock the `GetCachedClient` method on the resource type of the extension method to hook up the extension method and the method on the mockable resource type.
+One more requirement before you get the unit test running is to mock the `GetCachedClient` method on the resource type of the extension method. Completing this step hooks up the extension method and the method on the mockable resource type.
 
 Here is how it works:
 

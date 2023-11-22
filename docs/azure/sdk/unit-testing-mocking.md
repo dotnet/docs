@@ -231,7 +231,7 @@ var finder = new AboutToExpireSecretFinder(TimeSpan.FromDays(2), secretClient);
 
 This approach is useful when you would like to consolidate the dependency creation and share the client between multiple consuming classes.
 
-## Understand Azure Resource Manager clients
+## Understand Azure Resource Manager (ARM) clients
 
 In Azure Resource Manager libraries, the clients were designed to emphasize their relationship to one another, mirroring the service hierarchy. To achieve that goal, extension methods are widely used to add additional features to clients.
 

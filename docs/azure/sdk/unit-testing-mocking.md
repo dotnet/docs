@@ -245,7 +245,7 @@ The mockable resource type is always in the `Mocking` sub-namespace of the exten
 
 One more requirement before you get the unit test running is to mock the `GetCachedClient` method on the resource type of the extension method. Completing this step hooks up the extension method and the method on the mockable resource type.
 
-Here is how it works:
+Here's how it works:
 
 ## [Non-library](#tab/csharp)
 

@@ -241,7 +241,7 @@ For example, an Azure virtual machine resizes in an Azure resource group. The `A
 
 Because the virtual machine-related functionality such as `GetVirtualMachines` on `ResourceGroupResource` are implemented as extension methods, it's not possible to just create a mock of the type and override the method. Instead, you'll also have to create a mock class for the "mockable resource" and wire them together.
 
-The mockable resource type is always in the `Mocking` sub-namespace of the extension method. In the above example, the mockable resource type is in the `Azure.ResourceManager.Compute.Mocking` namespace. And the mockable resource type is always named after the resource type with a "Mockable" and the library name as prefixes. In the above example, the mockable resource type is named `MockableComputeResourceGroupResource`, where `ResourceGroupResource` is the resource type of the extension method, and `Compute` is the library name.
+The mockable resource type is always in the `Mocking` sub-namespace of the extension method. In the preceding example, the mockable resource type is in the `Azure.ResourceManager.Compute.Mocking` namespace. The mockable resource type is always named after the resource type with "Mockable" and the library name as prefixes. In the preceding example, the mockable resource type is named `MockableComputeResourceGroupResource`, where `ResourceGroupResource` is the resource type of the extension method, and `Compute` is the library name.
 
 One more thing to do before you could get the unit test running is that you need to mock the `GetCachedClient` method on the resource type of the extension method to hook up the extension method and the method on the mockable resource type.
 

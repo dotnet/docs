@@ -4,7 +4,7 @@ jobs:
   comment:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/github-script@e69ef5462fd455e02edcaf4dd7708eda96b9eda0
+      - uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
         env:
           SHOULD_COMMENT: ${{ github.base_ref == 'refs/heads/live' && !(github.event.issue.user.login == 'cxwtool' || github.head_ref == 'refs/heads/main') }}
         with:

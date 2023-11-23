@@ -1,0 +1,153 @@
+---
+title: Networking Metrics in .NET
+description: Learn how to consume .NET networking Metrics.
+author: antonfirsov
+ms.author: anfirszo
+ms.date: 11/14/2023
+---
+
+# Networking Metrics in .NET
+
+[Metrics](../../../core/diagnostics/metrics.md) are numerical measurements reported over time. They are typically used to monitor the health of an app and generate alerts.
+
+Starting with .NET 8.0, the `System.Net.Http` and the `System.Net.NameResolution` libraries are instrumented to publish OpenTelemetry-compatible metrics using .NET-s built-in Metrics API-s.
+
+> [!TIP]
+> See [System.Net metrics](https://learn.microsoft.com/en-us/dotnet/core/diagnostics/built-in-metrics-system-net) for a comprehensive list of all instruments together with their attributes.
+
+## Using metrics
+
+There are two parts to using metrics in a .NET app:
+
+* **Instrumentation:** Code in .NET libraries takes measurements and associates these measurements with a metric name. .NET and ASP.NET Core include many built-in metrics.
+* **Collection:** A .NET app configures named metrics to be transmitted from the app for external storage and analysis. Some tools may perform configuration outside the app using configuration files or a UI tool.
+
+Instrumented code can record numeric measurements, but the measurements need to be aggregated, transmitted, and stored to create useful metrics for monitoring. The process of aggregating, transmitting, and storing data is called collection. Measurements can also be associated with key-value pairs called tags or attributes that allow data to be categorized for analysis. For more information, see [Multi-dimensional metrics](../../../core/diagnostics/metrics-instrumentation#multi-dimensional-metrics).
+
+### Example app
+
+For the sake of this tutorial, let's create a simple app that sends HTTP requests to various endpoints in parallel.
+
+```
+dotnet new console -o HelloBuiltinMetrics
+cd ..\HelloBuiltinMetrics
+```
+
+Replace the contents of `Program.cs` with the following sample code:
+
+:::code language="csharp" source="snippets/metrics/Program.cs" id="snippet_1":::
+
+### View metrics with dotnet-counters
+
+[`dotnet-counters`](../../../core/diagnostics/dotnet-counters.md) is a cross-platform performance monitoring tool for ad-hoc health monitoring and first-level performance investigation.
+
+```console
+dotnet tool install --global dotnet-counters
+```
+
+When running against a .NET 8.0+ process, it will enable the instruments defined by the `--counters` argument and display the measurements, continuosuly refreshing the console with the latest numbers:
+
+```console
+ dotnet-counters monitor --counters System.Net.Http,System.Net.NameResolution -n HelloBuiltinMetrics
+```
+
+### View metrics in Grafana with OpenTelemetry and Prometheus
+
+#### Overview
+
+[OpenTelemetry](https://opentelemetry.io/):
+
+- Is a vendor-neutral open-source project supported by the [Cloud Native Computing Foundation](https://www.cncf.io/).
+- Standardizes generating and collecting telemetry for cloud-native software.
+- Works with .NET using the .NET metric APIs.
+- Is endorsed by [Azure Monitor](/azure/azure-monitor/app/opentelemetry-overview) and many APM vendors.
+
+This tutorial shows one of the integrations available for OpenTelemetry metrics using the OSS [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/) projects. The metrics data flow:
+
+1. The .NET metric APIs record measurements from the example app.
+1. The OpenTelemetry library running in the app aggregates the measurements.
+1. The Prometheus exporter library makes the aggregated data available via an HTTP metrics endpoint. 'Exporter' is what OpenTelemetry calls the libraries that transmit telemetry to vendor-specific backends.
+1. A Prometheus server:
+
+   - Polls the metrics endpoint
+   - Reads the data
+   - Stores the data in a database for long-term persistence. Prometheus refers to reading and storing data as *scraping* an endpoint.
+   - Can run on a different machine
+
+1. The Grafana server:
+
+   - Queries the data stored in Prometheus and displays it on a web-based monitoring dashboard.
+   - Can run on a different machine.
+
+#### Configure the example app to use OpenTelemetry's Prometheus exporter
+
+Add a reference to the OpenTelemetry Prometheus exporter to the example app:
+
+```dotnetcli
+dotnet add package OpenTelemetry.Exporter.Prometheus.HttpListener --prerelease
+```
+
+> [!NOTE]
+> This tutorial uses a pre-release build of OpenTelemetry's Prometheus support available at the time of writing.
+
+Update `Program.cs` with OpenTelemetry configuration:
+
+:::code language="csharp" source="snippets/metrics/Program.cs" id="snippet_2" highlight="31-34":::
+
+In the preceding code:
+
+- `AddMeter("System.Net.Http", "System.Net.NameResolution")` configures OpenTelemetry to transmit all the metrics collected by the builtin meters `System.Net.Http` and `System.Net.NameResolution`.
+- `AddPrometheusHttpListener` configures OpenTelemetry to:
+  - Expose Prometheus' metrics endpoint on port `9184`
+  - Use the HttpListener.
+
+Run the app and leave it running so measurements can be collected:
+
+```dotnetcli
+dotnet run
+```
+
+#### Set up and configure Prometheus
+
+Follow the [Prometheus first steps](https://prometheus.io/docs/introduction/first_steps/) to set up a Prometheus server and confirm it is working.
+
+Modify the *prometheus.yml* configuration file so that Prometheus scrapes the metrics endpoint that the example app is exposing. Add the following highlighted text in the `scrape_configs` section:
+
+:::code language="yaml" source="snippets/metrics/prometheus.yml" highlight="31-99":::
+
+#### Start prometheus
+
+1. Reload the configuration or restart the Prometheus server.
+1. Confirm that OpenTelemetryTest is in the UP state in the **Status** > **Targets** page of the Prometheus web portal.
+![Prometheus status](~/docs/core/diagnostics/media/prometheus-status.png)
+
+1. On the Graph page of the Prometheus web portal, enter `http` in the expression text box and select `http_client_active_requests`
+![http_client_active_requests](~/docs/fundamentals/networking/telemetry/media/prometheus-search.png)
+  In the graph tab, Prometheus shows the value of the `http.client.active_requests` Counter that is being emitted by the example app.
+  ![Prometheus active requests graph](~/docs/fundamentals/networking/telemetry/media/prometheus-active-requests.png)
+
+#### Show metrics on a Grafana dashboard
+
+1. Follow the [standard instructions](https://prometheus.io/docs/visualization/grafana/#creating-a-prometheus-graph) to install Grafana and connect it to a Prometheus data source.
+
+1. Create a Grafana dashboard by clicking the **+** icon on the top toolbar then select **Dashboard**. In the dashboard editor that appears, enter **Open HTTP/1.1 Connections** in **Title** input box and the following query in the PromQL expression field:
+
+```
+sum by(http_connection_state) (http_client_open_connections{network_protocol_version="1.1"})
+```
+
+![Grafana HTTP/1.1 Connections](~/docs/fundamentals/networking/telemetry/media/grafana-connections.png)
+
+1. Click **Apply** to save and view the new dashboard.
+
+## Enrichment
+
+Enrichment means the addition of custom tags (attributes) to a metric. This is useful if an app wants to add a custom categorization to dashboards or alerts built with metrics. The [`http.client.request.duration`](../../../core/diagnostics/built-in-metrics-system-net.md#instrument-httpclientrequestduration) instrument supports enrichment by registering callbacks with <xref:System.Net.Http.Metrics.HttpMetricsEnrichmentContext>. Note that this is a low-level API and a separate callback registration is needed for each `HttpRequestMessage`.
+
+:::code language="csharp" source="snippets/metrics/Program.cs" id="snippet_3":::
+
+## `IMeterFactory` and `IHttpClientFactory` integration
+
+HTTP metrics were designed with isolation and testability in mind meaning that all metrics can be emitted by a custom <xref:System.Diagnostics.Metrics.Meter> instance. For this <xref:System.Net.Http.Http.SocketsHttpHandler.MeterFactory> or <xref:System.Net.Http.Http.HttpClientHandler.MeterFactory> has to be set to a custom <xref:System.Diagnostics.Metrics.IMeterFactory> instance.
+
+When working with [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) and [`IHttpClientFactory`](../../../core/extensions/httpclient-factory.md), the default `IHttpClientFactory` implementation will automatically pick the `IMeterFactory` instance registered in the `ServiceCollection` and assign it to the handlers it creates internally.

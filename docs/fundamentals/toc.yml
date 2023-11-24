@@ -830,9 +830,6 @@ items:
     - name: IPv6 overview
       href: networking/ipv6-overview.md
       displayName: ipv6,ipv
-    - name: Telemetry
-      href: networking/telemetry/overview.md
-      displayName: networking telemetry
     - name: Service discovery in .NET
       href: ../core/extensions/service-discovery.md
     - name: HTTP
@@ -893,6 +890,20 @@ items:
         href: networking/quic/quic-overview.md
       - name: QUIC troubleshooting
         href: networking/quic/quic-troubleshooting.md
+    - name: Telemetry
+      items:
+      - name: Networking telemetry
+        href: networking/telemetry/overview.md
+        displayName: networking telemetry
+      - name: Metrics
+        href: networking/telemetry/metrics.md
+        displayName: networking metrics
+      - name: Events
+        href: networking/telemetry/events.md
+        displayName: networking events
+      - name: Event counters
+        href: networking/telemetry/event-counters.md
+        displayName: networking event counters
   - name: File globbing
     href: ../core/extensions/file-globbing.md
     displayName: file globbing,globbing,globbing patterns,globbing pattern,globbing

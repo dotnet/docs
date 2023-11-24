@@ -131,7 +131,6 @@ The library provides the following strongly typed metrics types:
 - [`SocketsMetrics`]
 - [`KestrelMetrics`]
 
-[Metrics]: ./metrics.md
 [EventCounters]: ../../../core/diagnostics/event-counters.md
 [well-known counters]: ../../../core/diagnostics/available-counters.md
 [dotnet-counter docs]: ../../../core/diagnostics/dotnet-counters.md

@@ -13,7 +13,7 @@ ms.date: 11/14/2023
 Starting with .NET 8.0, the `System.Net.Http` and the `System.Net.NameResolution` libraries are instrumented to publish OpenTelemetry-compatible metrics using .NET-s built-in Metrics API-s.
 
 > [!TIP]
-> See [System.Net metrics](https://learn.microsoft.com/en-us/dotnet/core/diagnostics/built-in-metrics-system-net) for a comprehensive list of all instruments together with their attributes.
+> See [System.Net metrics](../../../core/diagnostics/built-in-metrics-system-net.md) for a comprehensive list of all instruments together with their attributes.
 
 ## Using metrics
 
@@ -22,7 +22,7 @@ There are two parts to using metrics in a .NET app:
 * **Instrumentation:** Code in .NET libraries takes measurements and associates these measurements with a metric name. .NET and ASP.NET Core include many built-in metrics.
 * **Collection:** A .NET app configures named metrics to be transmitted from the app for external storage and analysis. Some tools may perform configuration outside the app using configuration files or a UI tool.
 
-Instrumented code can record numeric measurements, but the measurements need to be aggregated, transmitted, and stored to create useful metrics for monitoring. The process of aggregating, transmitting, and storing data is called collection. Measurements can also be associated with key-value pairs called tags or attributes that allow data to be categorized for analysis. For more information, see [Multi-dimensional metrics](../../../core/diagnostics/metrics-instrumentation#multi-dimensional-metrics).
+Instrumented code can record numeric measurements, but the measurements need to be aggregated, transmitted, and stored to create useful metrics for monitoring. The process of aggregating, transmitting, and storing data is called collection. Measurements can also be associated with key-value pairs called tags or attributes that allow data to be categorized for analysis. For more information, see [Multi-dimensional metrics](../../../core/diagnostics/metrics-instrumentation.md#multi-dimensional-metrics).
 
 ### Example app
 
@@ -148,6 +148,6 @@ Enrichment means the addition of custom tags (attributes) to a metric. This is u
 
 ## `IMeterFactory` and `IHttpClientFactory` integration
 
-HTTP metrics were designed with isolation and testability in mind meaning that all metrics can be emitted by a custom <xref:System.Diagnostics.Metrics.Meter> instance. For this <xref:System.Net.Http.Http.SocketsHttpHandler.MeterFactory> or <xref:System.Net.Http.Http.HttpClientHandler.MeterFactory> has to be set to a custom <xref:System.Diagnostics.Metrics.IMeterFactory> instance.
+HTTP metrics were designed with isolation and testability in mind meaning that all metrics can be emitted by a custom <xref:System.Diagnostics.Metrics.Meter> instance. For this <xref:System.Net.Http.SocketsHttpHandler.MeterFactory?displayProperty=nameWithType> or <xref:System.Net.Http.HttpClientHandler.MeterFactory?displayProperty=nameWithType> has to be set to a custom <xref:System.Diagnostics.Metrics.IMeterFactory> instance.
 
 When working with [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) and [`IHttpClientFactory`](../../../core/extensions/httpclient-factory.md), the default `IHttpClientFactory` implementation will automatically pick the `IMeterFactory` instance registered in the `ServiceCollection` and assign it to the handlers it creates internally.

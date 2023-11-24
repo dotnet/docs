@@ -131,6 +131,12 @@ The library provides the following strongly typed metrics types:
 - [`SocketsMetrics`]
 - [`KestrelMetrics`]
 
+## Need more telemetry?
+
+If you have suggestions for other useful information that could be exposed via events or metrics, create a [dotnet/runtime issue](https://github.com/dotnet/runtime/issues/new).
+
+If you're using the [`Yarp.Telemetry.Consumption`] library and have any suggestions, create a [microsoft/reverse-proxy issue].
+
 [EventCounters]: ../../../core/diagnostics/event-counters.md
 [well-known counters]: ../../../core/diagnostics/available-counters.md
 [dotnet-counter docs]: ../../../core/diagnostics/dotnet-counters.md
@@ -142,3 +148,4 @@ The library provides the following strongly typed metrics types:
 [`NetSecurityMetrics`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/NetSecurity/NetSecurityMetrics.cs
 [`SocketsMetrics`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/Sockets/SocketsMetrics.cs
 [`KestrelMetrics`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/Kestrel/KestrelMetrics.cs
+[microsoft/reverse-proxy issue]: https://github.com/microsoft/reverse-proxy/issues/new

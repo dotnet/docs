@@ -10,7 +10,7 @@ ms.date: 11/14/2023
 
 [Metrics](../../../core/diagnostics/metrics.md) are numerical measurements reported over time. They are typically used to monitor the health of an app and generate alerts.
 
-Starting with .NET 8.0, the `System.Net.Http` and the `System.Net.NameResolution` libraries are instrumented to publish OpenTelemetry-compatible metrics using .NET-s built-in Metrics API-s.
+Starting with .NET 8.0, the `System.Net.Http` and the `System.Net.NameResolution` libraries are instrumented to publish metrics using .NET-s built-in [Metrics API](../../../core/diagnostics/metrics.md). These metrics were designed in cooperation with [OpenTelemetry](https://opentelemetry.io/). 
 
 > [!TIP]
 > See [System.Net metrics](../../../core/diagnostics/built-in-metrics-system-net.md) for a comprehensive list of all instruments together with their attributes.
@@ -28,7 +28,7 @@ Instrumented code can record numeric measurements, but the measurements need to 
 
 For the sake of this tutorial, let's create a simple app that sends HTTP requests to various endpoints in parallel.
 
-```
+```dotnetcli
 dotnet new console -o HelloBuiltinMetrics
 cd ..\HelloBuiltinMetrics
 ```
@@ -41,7 +41,7 @@ Replace the contents of `Program.cs` with the following sample code:
 
 [`dotnet-counters`](../../../core/diagnostics/dotnet-counters.md) is a cross-platform performance monitoring tool for ad-hoc health monitoring and first-level performance investigation.
 
-```console
+```dotnetcli
 dotnet tool install --global dotnet-counters
 ```
 
@@ -92,7 +92,7 @@ dotnet add package OpenTelemetry.Exporter.Prometheus.HttpListener --prerelease
 
 Update `Program.cs` with OpenTelemetry configuration:
 
-:::code language="csharp" source="snippets/metrics/Program.cs" id="snippet_2" highlight="31-34":::
+:::code language="csharp" source="snippets/metrics/Program.cs" id="snippet_2" highlight="5-8":::
 
 In the preceding code:
 
@@ -128,7 +128,7 @@ Modify the *prometheus.yml* configuration file so that Prometheus scrapes the me
 
 #### Show metrics on a Grafana dashboard
 
-1. Follow the [standard instructions](https://prometheus.io/docs/visualization/grafana/#creating-a-prometheus-graph) to install Grafana and connect it to a Prometheus data source.
+1. Follow the [standard instructions](https://prometheus.io/docs/visualization/grafana/#installing) to install Grafana and connect it to a Prometheus data source.
 
 1. Create a Grafana dashboard by clicking the **+** icon on the top toolbar then select **Dashboard**. In the dashboard editor that appears, enter **Open HTTP/1.1 Connections** in **Title** input box and the following query in the PromQL expression field:
 
@@ -138,7 +138,7 @@ sum by(http_connection_state) (http_client_open_connections{network_protocol_ver
 
 ![Grafana HTTP/1.1 Connections](~/docs/fundamentals/networking/telemetry/media/grafana-connections.png)
 
-1. Click **Apply** to save and view the new dashboard.
+1. Click **Apply** to save and view the new dashboard. It display the active vs idle HTTP/1.1 connections in the pool.
 
 ## Enrichment
 
@@ -148,6 +148,10 @@ Enrichment means the addition of custom tags (attributes) to a metric. This is u
 
 ## `IMeterFactory` and `IHttpClientFactory` integration
 
-HTTP metrics were designed with isolation and testability in mind meaning that all metrics can be emitted by a custom <xref:System.Diagnostics.Metrics.Meter> instance. For this <xref:System.Net.Http.SocketsHttpHandler.MeterFactory?displayProperty=nameWithType> or <xref:System.Net.Http.HttpClientHandler.MeterFactory?displayProperty=nameWithType> has to be set to a custom <xref:System.Diagnostics.Metrics.IMeterFactory> instance.
+HTTP metrics were designed with isolation and testability in mind meaning that all metrics can be emitted by a custom <xref:System.Diagnostics.Metrics.Meter> instance. This can be achived by assigning a custom <xref:System.Diagnostics.Metrics.IMeterFactory> instance to <xref:System.Net.Http.SocketsHttpHandler.MeterFactory?displayProperty=nameWithType> or <xref:System.Net.Http.HttpClientHandler.MeterFactory?displayProperty=nameWithType>.
 
 When working with [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) and [`IHttpClientFactory`](../../../core/extensions/httpclient-factory.md), the default `IHttpClientFactory` implementation will automatically pick the `IMeterFactory` instance registered in the `ServiceCollection` and assign it to the handlers it creates internally.
+
+## Need more Metrics?
+
+If you have suggestions for other useful information that could be exposed via metrics, create a [dotnet/runtime issue](https://github.com/dotnet/runtime/issues/new).

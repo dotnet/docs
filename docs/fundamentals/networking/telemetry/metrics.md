@@ -10,7 +10,7 @@ ms.date: 11/14/2023
 
 [Metrics](../../../core/diagnostics/metrics.md) are numerical measurements reported over time. They are typically used to monitor the health of an app and generate alerts.
 
-Starting with .NET 8.0, the `System.Net.Http` and the `System.Net.NameResolution` libraries are instrumented to publish metrics using .NET-s built-in [Metrics API](../../../core/diagnostics/metrics.md). These metrics were designed in cooperation with [OpenTelemetry](https://opentelemetry.io/). 
+Starting with .NET 8.0, the `System.Net.Http` and the `System.Net.NameResolution` libraries are instrumented to publish metrics using .NET-s built-in [Metrics API](../../../core/diagnostics/metrics.md). These metrics were designed in cooperation with [OpenTelemetry](https://opentelemetry.io/).
 
 > [!TIP]
 > See [System.Net metrics](../../../core/diagnostics/built-in-metrics-system-net.md) for a comprehensive list of all instruments together with their attributes.

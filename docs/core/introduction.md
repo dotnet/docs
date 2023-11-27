@@ -258,5 +258,7 @@ There are multiple variants of .NET, each supporting a different type of app. Th
 
 ![User's image](image4.png)
 
+![Screenshot 2023-11-27 152805](media/introduction/screenshot-2023-11-27-152805.png)
+
 ![User's image](image5.png)
 

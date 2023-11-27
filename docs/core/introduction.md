@@ -258,3 +258,5 @@ There are multiple variants of .NET, each supporting a different type of app. Th
 
 ![User's image](image4.png)
 
+![User's image](image5.png)
+

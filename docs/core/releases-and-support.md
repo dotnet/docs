@@ -4,6 +4,7 @@ description: Learn about releases, patches, and support for .NET.
 ms.date: 10/10/2023
 ms.topic: overview
 ---
+
 # Releases and support for .NET
 
 Microsoft ships major releases, minor releases, and servicing updates (patches) for .NET. This article explains release types, servicing updates, SDK feature bands, support periods, and support options.
@@ -44,6 +45,14 @@ To differentiate such updates, the .NET SDK uses the concept of feature bands. F
 For more information about the relationship between .NET SDK and Visual Studio versions, see [.NET SDK, MSBuild, and Visual Studio versioning](porting/versioning-sdk-msbuild-vs.md).
 
 ### Runtime roll forward and compatibility
+
+![Screenshot 2023-08-25 105212](media/releases-and-support/screenshot-2023-08-25-105212.png)
+
+![Screenshot 2023-11-27 130440](media/releases-and-support/screenshot-2023-11-27-130440.png)
+
+![Screenshot 2023-11-27 131315](media/releases-and-support/screenshot-2023-11-27-131315.png)
+
+![Screenshot 2023-11-27 131405](media/releases-and-support/screenshot-2023-11-27-131405.png)
 
 Major and minor updates install side by side with previous versions. An application built to target a specific *major.minor* version continues to use that targeted runtime even if a newer version is installed. The app doesn't automatically roll forward to use a newer *major.minor* version of the runtime unless you opt in for this behavior. An application that was built to target .NET Core 3.0 doesn't automatically start running on .NET Core 3.1. We recommend rebuilding the app and testing against a newer major or minor runtime version before deploying to production. For more information, see [Framework-dependent apps roll forward](versions/selection.md#framework-dependent-apps-roll-forward) and [Self-contained deployment runtime roll forward](deploying/runtime-patch-selection.md).
 

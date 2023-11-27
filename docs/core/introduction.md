@@ -249,3 +249,12 @@ There are multiple variants of .NET, each supporting a different type of app. Th
 * [Try .NET in your browser](../csharp/tour-of-csharp/tutorials/numbers-in-csharp.yml)
 * [Take a tour of C#](../csharp/tour-of-csharp/index.md)
 * [Take a tour of F#](../fsharp/tour.md)
+
+![User's image](media/introduction/image.png)
+
+![User's image](image2.png)
+
+![User's image](image3.png)
+
+![User's image](image4.png)
+

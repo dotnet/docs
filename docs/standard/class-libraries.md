@@ -56,3 +56,6 @@ For more information, see [.NET Standard](net-standard.md).
 ## Mono class libraries
 
 Class libraries are supported on Mono, including the three types of libraries described previously. Mono is often viewed as a cross-platform implementation of .NET Framework. In part, this is because platform-specific .NET Framework libraries can run on the Mono runtime without modification or recompilation. This characteristic was in place before the creation of portable class libraries, so was an obvious choice to enable binary portability between .NET Framework and Mono (although it only worked in one direction).
+
+![User's image](media/class-libraries/image.png)
+

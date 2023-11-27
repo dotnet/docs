@@ -6,11 +6,14 @@ ms.author: wiwagn
 ms.date: 02/06/2023
 ms.topic: conceptual
 ---
+
 # Microsoft .NET language strategy
 
 Microsoft offers 3 languages on the .NET platform – C#, F# and Visual Basic. In this article, you’ll learn about our strategy for each language. Look for links to additional articles on how these strategies guide us and ways to learn more about each language.
 
-## C\#
+## C#
+
+![Screenshot 2023-08-25 105212](media/languages/screenshot-2023-08-25-105212.png)
 
 C# is a cross-platform general purpose language that makes developers productive while writing highly performant code. With millions of developers, C# is the most popular .NET language. C# has broad support in the ecosystem and all .NET [workloads](../standard/glossary.md#workload). Based on object-oriented principles, it incorporates many features from other paradigms, not least functional programming. Low-level features support high-efficiency scenarios without writing unsafe code. Most of the .NET runtime and libraries are written in C#, and advances in C# often benefit all .NET developers.
 

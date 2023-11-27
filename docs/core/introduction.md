@@ -37,6 +37,8 @@ ms.custom: "updateeachrelease"
 
 **Other app types**
 
+![Screenshot 2023-08-25 105212](media/introduction/screenshot-2023-08-25-105212.png)
+
 * [Machine learning](../machine-learning/index.yml)
 * [Internet of Things (IoT)](../iot/index.yml)
 

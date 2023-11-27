@@ -21,6 +21,8 @@ ms.custom: "updateeachrelease"
 
 **Cross-platform client apps**
 
+![Screenshot 2023-08-25 105212](media/introduction/screenshot-2023-08-25-105212.png)
+
 * [Desktop apps](https://dotnet.microsoft.com/apps/desktop)
 * [Games](https://dotnet.microsoft.com/apps/games)
 * [Mobile apps](https://dotnet.microsoft.com/apps/maui)

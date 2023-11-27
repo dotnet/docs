@@ -78,6 +78,7 @@ Delegates behave like classes and structs. By default, they have `internal` acce
 | `record`                                          |    internal    |
 | `enum`                                            |    internal    |
 | `interface` members                               |     public     |
+| Anonymous types                                   |    internal    |
 | [class, record, and struct members](./members.md) |    private     |
 
 For more details see the [Accessibility Levels](../../language-reference/keywords/accessibility-levels.md) page.
@@ -103,3 +104,4 @@ For more details see the [Accessibility Levels](../../language-reference/keyword
 - [class](../../language-reference/keywords/class.md)
 - [struct](../../language-reference/builtin-types/struct.md)
 - [interface](../../language-reference/keywords/interface.md)
+- [Anonymous types](../../fundamentals/types/anonymous-types.md)

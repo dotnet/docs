@@ -101,6 +101,9 @@ In the preceding code:
 - `AddMeter("System.Net.Http", "System.Net.NameResolution")` configures OpenTelemetry to transmit all the metrics collected by the built-in `System.Net.Http` and `System.Net.NameResolution` meters.
 - `AddPrometheusHttpListener` configures OpenTelemetry to expose Prometheus' metrics HTTP endpoint on port `9184`.
 
+> [!NOTE]
+> This configuration differs for ASP.NET Core apps, where metrics shall be exported with `OpenTelemetry.Exporter.Prometheus.AspNetCore` instead of `HttpListener`. See the [related ASP.NET Core example](/aspnet/core/log-mon/metrics/metric#create-the-starter-app).
+
 Run the app and leave it running so measurements can be collected:
 
 ```dotnetcli

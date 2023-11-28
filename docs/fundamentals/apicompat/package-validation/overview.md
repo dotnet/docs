@@ -73,7 +73,7 @@ The suppression file looks like this.
 
 - `IsBaselineSuppression`: set to `true` to apply the suppression to a baseline validation; otherwise, set to `false`.
 
-You can also suppress individual diagnostic IDs via the [`NoWarn`](../../../../../csharp/language-reference/compiler-options/errors-warnings.md#nowarn) compiler flag, either per package or globally.
+You can also suppress individual diagnostic IDs via the [`NoWarn`](../../../csharp/language-reference/compiler-options/errors-warnings.md#nowarn) compiler flag, either per package or globally.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

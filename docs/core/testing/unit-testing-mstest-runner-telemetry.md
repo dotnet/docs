@@ -1,3 +1,12 @@
+---
+title: MSTest Test Runner Telemetry
+description: Learn about MSTest Test Runner Telemetry.
+author: nohwnd
+ms.author: jajares
+ms.date: 11/28/2023
+ms.custom: 
+---
+
 # Telemetry
 
 MSTest Runner collects telemetry data, which is used to help understand how to improve the product. For example, this usage data helps to debug issues, such as slow start-up times, and to prioritize new features. While we appreciate the insights this data provides, we also know that not everyone wants to send usage data and you can [disable telemetry](#disable-telemetry-reporting) as described in disable telemetry reporting. You can also read our [privacy statement](https://go.microsoft.com/fwlink/?LinkID=528096&clcid=0x409) to learn more.

@@ -1,3 +1,12 @@
+---
+title: MSTest Test Runner Exit Codes
+description: Learn about MSTest Test Runner exit codes.
+author: nohwnd
+ms.author: jajares
+ms.date: 11/28/2023
+ms.custom: 
+---
+
 # Exit codes
 
 MSTest Runner uses known exit codes to communicate test failure or application error. Exit codes start at 0 and are non-negative:

@@ -20,8 +20,8 @@ dotnet restore [<ROOT>] [--configfile <FILE>] [--disable-build-servers]
     [--interactive] [--lock-file-path <LOCK_FILE_PATH>] [--locked-mode]
     [--no-cache] [--no-dependencies] [--packages <PACKAGES_DIRECTORY>]
     [-r|--runtime <RUNTIME_IDENTIFIER>] [-s|--source <SOURCE>]
-    [--use-current-runtime, --ucr [true|false]] [--use-lock-file]
-    [-v|--verbosity <LEVEL>]
+    [--tl:[auto|on|off]] [--use-current-runtime, --ucr [true|false]]
+    [--use-lock-file] [-v|--verbosity <LEVEL>]
 
 dotnet restore -h|--help
 ```
@@ -143,6 +143,8 @@ There are three specific settings that `dotnet restore` ignores:
 - **`-s|--source <SOURCE>`**
 
   Specifies the URI of the NuGet package source to use during the restore operation. This setting overrides all of the sources specified in the *nuget.config* files. Multiple sources can be provided by specifying this option multiple times.
+
+[!INCLUDE [tl](../../../includes/cli-tl.md)]
 
 - **`--use-current-runtime, --ucr [true|false]`**
 

@@ -72,3 +72,15 @@ The suppression file looks like this.
 - `Right` specifies the right operand of an APICompat comparison.
 
 - `IsBaselineSuppression`: set to `true` to apply the suppression to a baseline validation; otherwise, set to `false`.
+
+You can also suppress individual diagnostic IDs via the [`NoWarn`](../../../../csharp/language-reference/compiler-options/errors-warnings.md#nowarn) compiler flag, either per package or globally.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    ...
+    <!-- The following NoWarn suppresses PKV0001 project-wide -->
+    <NoWarn>$(NoWarn);PKV0001</NoWarn>
+  </PropertyGroup>
+</Project>
+```

@@ -56,8 +56,11 @@ What happens in that loop is:
 
 ### `Chunk` class
 
-The `Chunk` class is a contiguous group of one or more source elements that have the same key. A Chunk has a key and a list of ChunkItem objects, which are copies of the elements in the source sequence.
-<br/>A Chunk has a linked list of `ChunkItem`s, which represent the elements in the current chunk. Each `ChunkItem` (represented by `ChunkItem` class) has a reference to the next `ChunkItem` in the list.
+The `Chunk` class is a contiguous group of one or more source elements that have the same key. A Chunk has a key and a list of ChunkItem objects, which are copies of the elements in the source sequence:
+
+:::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/GroupByContiguousKeys.cs" id="group_by_contiguous_keys_chunk_class":::
+
+A Chunk has a linked list of `ChunkItem`s, which represent the elements in the current chunk. Each `ChunkItem` (represented by `ChunkItem` class) has a reference to the next `ChunkItem` in the list.
 The list consists of it's `head` - which stores the contents of the first source element that belongs with this chunk, and it's `tail` - which is an end of the list. It is repositioned each time a new `ChunkItem` is added.
 <br/>The `Chunk` class contains the private boolean field: `DoneCopyingChunk`, which indicates that all chunk elements have been copied to the list of ChunkItems, and the source enumerator is either at the end, or else on an element with a new key.
 The tail of the linked list is set to `null` in the `CopyNextChunkElement` method if the key of the next element does not match the current chunk's key, or there are no more elements in the source.

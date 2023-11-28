@@ -239,7 +239,7 @@ This property was introduced in .NET 6.
 
 ### EnablePackageValidation
 
-The `EnablePackageValidation` property enables a series of validations on the package after the `pack` task. For more information, see [package validation](../../fundamentals/package-validation/overview.md).
+The `EnablePackageValidation` property enables a series of validations on the package after the `pack` task. For more information, see [package validation](../../fundamentals/apicompat/package-validation/overview.md).
 
 ```xml
 <PropertyGroup>

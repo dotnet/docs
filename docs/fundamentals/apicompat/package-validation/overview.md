@@ -20,7 +20,7 @@ Package validation tooling allows library developers to validate that their pack
 
 ## Enable package validation
 
-You enable package validation in your .NET project by setting the [`EnablePackageValidation` property](../../core/project-sdk/msbuild-props.md#enablepackagevalidation) to `true`.
+You enable package validation in your .NET project by setting the [`EnablePackageValidation` property](../../../core/project-sdk/msbuild-props.md#enablepackagevalidation) to `true`.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -73,7 +73,7 @@ The suppression file looks like this.
 
 - `IsBaselineSuppression`: set to `true` to apply the suppression to a baseline validation; otherwise, set to `false`.
 
-You can also suppress individual diagnostic IDs via the [`NoWarn`](../../../../csharp/language-reference/compiler-options/errors-warnings.md#nowarn) compiler flag, either per package or globally.
+You can also suppress individual diagnostic IDs via the [`NoWarn`](../../../../../csharp/language-reference/compiler-options/errors-warnings.md#nowarn) compiler flag, either per package or globally.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

@@ -10,10 +10,10 @@ ms.date: 11/14/2023
 
 [Metrics](../../../core/diagnostics/metrics.md) are numerical measurements reported over time. They are typically used to monitor the health of an app and generate alerts.
 
-Starting with .NET 8.0, the `System.Net.Http` and the `System.Net.NameResolution` libraries are instrumented to publish metrics using .NET-s built-in [Metrics API](../../../core/diagnostics/metrics.md). These metrics were designed in cooperation with [OpenTelemetry](https://opentelemetry.io/).
+Starting with .NET 8.0, the `System.Net.Http` and the `System.Net.NameResolution` libraries are instrumented to publish metrics using .NET-s new [Syste.Diagnostics.Metrics API](../../../core/diagnostics/metrics.md). These metrics were designed in cooperation with [OpenTelemetry](https://opentelemetry.io/) making sure they are consistent with the standard and work well with popular tools like [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/).
 
 > [!TIP]
-> See [System.Net metrics](../../../core/diagnostics/built-in-metrics-system-net.md) for a comprehensive list of all instruments together with their attributes.
+> See [System.Net metrics](../../../core/diagnostics/built-in-metrics-system-net.md) for a comprehensive list of all built-in instruments together with their attributes.
 
 ## Using metrics
 
@@ -152,6 +152,14 @@ HTTP metrics were designed with isolation and testability in mind meaning that a
 
 When working with [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) and [`IHttpClientFactory`](../../../core/extensions/httpclient-factory.md), the default `IHttpClientFactory` implementation will automatically pick the `IMeterFactory` instance registered in the `ServiceCollection` and assign it to the handlers it creates internally.
 
+## Metrics vs. EventCounters
+
+Metrics are [more feature-rich](../../../core/diagnostics/compare-metric-apis#systemdiagnosticsmetrics) than EventCounters most notably because of their multi-dimentional nature. This enables creating sophisticated queries in tools like Prometheus and getting insights on a level that is not possible with EventCounters.
+
+Nevertheless, it's important to highlight that as of .NET 8, only the `System.Net.Http` and the `System.Net.NameResolutions` libraries are instrumented using Metrics, meaning that if you need counters from the lower levels of the stack such as `System.Net.Sockets` or `System.Net.Security`, you would still need to rely on EventCounters.
+
+Moreover, there are some semantical differences between Metrics and their matching EventCounters. For example when using `HttpCompletionOption.ResponseContentRead`, the [`current-requests` EventCounter](../../../core/diagnostics/available-counters) considers a request to be active until the moment when the last byte of the request body has been read, while it's metrics counterpart [`http.client.active_requests`](../../../core/diagnostics/built-in-metrics-system-net#instrument-httpclientactive_requests) doesn't include the time spent reading the response body when counting the active requests.
+ 
 ## Need more Metrics?
 
 If you have suggestions for other useful information that could be exposed via metrics, create a [dotnet/runtime issue](https://github.com/dotnet/runtime/issues/new).

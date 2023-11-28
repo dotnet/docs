@@ -10,7 +10,7 @@ ms.date: 10/18/2022
 
 Events give you access to:
 
-- Accurate timestamps throughout the lifetime of an operation. For example, how long it took to connect to the server and how long it took to receive response headers.
+- Accurate timestamps throughout the lifetime of an operation. For example, how long it took to connect to the server and how long it took an HTTP request to receive response headers.
 - Debug/trace information that may not be obtainable by other means. For example, what kind of decisions the connection pool made and why.
 
 The instrumentation is based on [EventSource], allowing you to collect this information from both inside and outside the process.

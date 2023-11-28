@@ -10,7 +10,7 @@ ms.date: 11/14/2023
 
 [Metrics](../../../core/diagnostics/metrics.md) are numerical measurements reported over time. They are typically used to monitor the health of an app and generate alerts.
 
-Starting with .NET 8.0, the `System.Net.Http` and the `System.Net.NameResolution` libraries are instrumented to publish metrics using .NET-s new [Syste.Diagnostics.Metrics API](../../../core/diagnostics/metrics.md). These metrics were designed in cooperation with [OpenTelemetry](https://opentelemetry.io/) making sure they are consistent with the standard and work well with popular tools like [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/).
+Starting with .NET 8.0, the `System.Net.Http` and the `System.Net.NameResolution` libraries are instrumented to publish metrics using .NET's new [Syste.Diagnostics.Metrics API](../../../core/diagnostics/metrics.md). These metrics were designed in cooperation with [OpenTelemetry](https://opentelemetry.io/) making sure they are consistent with the standard and work well with popular tools like [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/).
 
 > [!TIP]
 > See [System.Net metrics](../../../core/diagnostics/built-in-metrics-system-net.md) for a comprehensive list of all built-in instruments together with their attributes.
@@ -48,7 +48,7 @@ dotnet tool install --global dotnet-counters
 When running against a .NET 8.0+ process, it will enable the instruments defined by the `--counters` argument and display the measurements, continuosuly refreshing the console with the latest numbers:
 
 ```console
- dotnet-counters monitor --counters System.Net.Http,System.Net.NameResolution -n HelloBuiltinMetrics
+dotnet-counters monitor --counters System.Net.Http,System.Net.NameResolution -n HelloBuiltinMetrics
 ```
 
 ### View metrics in Grafana with OpenTelemetry and Prometheus
@@ -96,10 +96,8 @@ Update `Program.cs` with OpenTelemetry configuration:
 
 In the preceding code:
 
-- `AddMeter("System.Net.Http", "System.Net.NameResolution")` configures OpenTelemetry to transmit all the metrics collected by the builtin meters `System.Net.Http` and `System.Net.NameResolution`.
-- `AddPrometheusHttpListener` configures OpenTelemetry to:
-  - Expose Prometheus' metrics endpoint on port `9184`
-  - Use the HttpListener.
+- `AddMeter("System.Net.Http", "System.Net.NameResolution")` configures OpenTelemetry to transmit all the metrics collected by the built-in `System.Net.Http` and `System.Net.NameResolution` meters.
+- `AddPrometheusHttpListener` configures OpenTelemetry to expose Prometheus' metrics HTTP endpoint on port `9184`.
 
 Run the app and leave it running so measurements can be collected:
 
@@ -138,11 +136,11 @@ sum by(http_connection_state) (http_client_open_connections{network_protocol_ver
 
 ![Grafana HTTP/1.1 Connections](~/docs/fundamentals/networking/telemetry/media/grafana-connections.png)
 
-1. Click **Apply** to save and view the new dashboard. It display the active vs idle HTTP/1.1 connections in the pool.
+1. Click **Apply** to save and view the new dashboard. It displays the number of active vs idle HTTP/1.1 connections in the pool.
 
 ## Enrichment
 
-Enrichment means the addition of custom tags (attributes) to a metric. This is useful if an app wants to add a custom categorization to dashboards or alerts built with metrics. The [`http.client.request.duration`](../../../core/diagnostics/built-in-metrics-system-net.md#instrument-httpclientrequestduration) instrument supports enrichment by registering callbacks with <xref:System.Net.Http.Metrics.HttpMetricsEnrichmentContext>. Note that this is a low-level API and a separate callback registration is needed for each `HttpRequestMessage`.
+Enrichment means the addition of custom tags (attributes) to a metric. This is useful if an app wants to add a custom categorization to dashboards or alerts built with metrics. The [`http.client.request.duration`](../../../core/diagnostics/built-in-metrics-system-net.md#instrument-httpclientrequestduration) instrument supports enrichment by registering callbacks with the <xref:System.Net.Http.Metrics.HttpMetricsEnrichmentContext>. Note that this is a low-level API and a separate callback registration is needed for each `HttpRequestMessage`.
 
 :::code language="csharp" source="snippets/metrics/Program.cs" id="snippet_3":::
 

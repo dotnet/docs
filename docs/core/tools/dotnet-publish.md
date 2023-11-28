@@ -211,11 +211,11 @@ For more information, see the following resources:
 
 [!INCLUDE [tl](../../../includes/cli-tl.md)]
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
-
 - **`--use-current-runtime, --ucr [true|false]`**
 
   Sets the `RuntimeIdentifier` to a platform portable `RuntimeIdentifier` based on the one of your machine. This happens implicitly with properties that require a `RuntimeIdentifier`, such as `SelfContained`, `PublishAot`, `PublishSelfContained`, `PublishSingleFile`, and `PublishReadyToRun`. If the property is set to false, that implicit resolution will no longer occur.
+
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 

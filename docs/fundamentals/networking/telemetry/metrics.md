@@ -160,7 +160,7 @@ In case you are working with [`IHttpClientFactory`](../../../core/extensions/htt
 
 > [!NOTE]
 > For performance reasons, the enrichment callback is only invoked when the `http.client.request.duration` instrument is enabled, meaning that something should be collecting the metrics.
-> This can be `dotnet-monitor`, Prometheus exporter, a [`MeterListener`](../../../diagnostics/metrics-collection#create-a-custom-collection-tool-using-the-net--api) or a `MetricCollector<T>`.
+> This can be `dotnet-monitor`, Prometheus exporter, a [`MeterListener`](../../../core/diagnostics/metrics-collection#create-a-custom-collection-tool-using-the-net--api.md) or a `MetricCollector<T>`.
 
 ## `IMeterFactory` and `IHttpClientFactory` integration
 
@@ -180,13 +180,13 @@ The following example demonstrates how to validate built-in metrics in unit test
 
 ## Metrics vs. EventCounters
 
-Metrics are [more feature-rich](../../../core/diagnostics/compare-metric-apis#systemdiagnosticsmetrics) than EventCounters most notably because of their multi-dimentional nature. This enables creating sophisticated queries in tools like Prometheus and getting insights on a level that is not possible with EventCounters.
+Metrics are [more feature-rich](../../../core/diagnostics/compare-metric-apis.md#systemdiagnosticsmetrics) than EventCounters most notably because of their multi-dimentional nature. This enables creating sophisticated queries in tools like Prometheus and getting insights on a level that is not possible with EventCounters.
 
 Nevertheless, it's important to highlight that as of .NET 8, only the `System.Net.Http` and the `System.Net.NameResolutions` libraries are instrumented using Metrics, meaning that if you need counters from the lower levels of the stack such as `System.Net.Sockets` or `System.Net.Security`, you would still need to rely on EventCounters.
 
 Moreover, there are some semantical differences between Metrics and their matching EventCounters.
-For example when using `HttpCompletionOption.ResponseContentRead`, the [`current-requests` EventCounter](../../../core/diagnostics/available-counters) considers a request to be active until the moment when the last byte of the request body has been read,
-while its metrics counterpart [`http.client.active_requests`](../../../core/diagnostics/built-in-metrics-system-net#instrument-httpclientactive_requests) doesn't include the time spent reading the response body when counting the active requests.
+For example when using `HttpCompletionOption.ResponseContentRead`, the [`current-requests` EventCounter](../../../core/diagnostics/available-counters.md) considers a request to be active until the moment when the last byte of the request body has been read,
+while its metrics counterpart [`http.client.active_requests`](../../../core/diagnostics/built-in-metrics-system-net.md#instrument-httpclientactive_requests) doesn't include the time spent reading the response body when counting the active requests.
  
 ## Need more Metrics?
 

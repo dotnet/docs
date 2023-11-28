@@ -11,7 +11,7 @@ This article describes the networking metrics built-in for <xref:System.Net> pro
 <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> API. For a listing of metrics based on the alternate [EventCounters](event-counters.md) API, see [Well-known EventCounters in .NET](available-counters.md).
 
 > [!TIP]
-> See [Networking Metrics in .NET](/dotnet/fundamentals/networking/telemetry/metrics) for more information about how to collect, report, enrich, and test System.Net metrics.
+> See [Networking Metrics in .NET](../../fundamentals/networking/telemetry/metrics.md) for more information about how to collect, report, enrich, and test System.Net metrics.
 
 - [Meter: `System.Net.NameResolution`](#meter-systemnetnameresolution) - Metrics for DNS lookups
   * [Instrument: `dns.lookup.duration`](#instrument-dnslookupduration)

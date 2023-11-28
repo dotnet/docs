@@ -10,7 +10,8 @@ ms.date: 11/14/2023
 
 [Metrics](../../../core/diagnostics/metrics.md) are numerical measurements reported over time. They are typically used to monitor the health of an app and generate alerts.
 
-Starting with .NET 8.0, the `System.Net.Http` and the `System.Net.NameResolution` libraries are instrumented to publish metrics using .NET's new [Syste.Diagnostics.Metrics API](../../../core/diagnostics/metrics.md). These metrics were designed in cooperation with [OpenTelemetry](https://opentelemetry.io/) making sure they are consistent with the standard and work well with popular tools like [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/).
+Starting with .NET 8.0, the `System.Net.Http` and the `System.Net.NameResolution` libraries are instrumented to publish metrics using .NET's new [Syste.Diagnostics.Metrics API](../../../core/diagnostics/metrics.md).
+These metrics were designed in cooperation with [OpenTelemetry](https://opentelemetry.io/) making sure they are consistent with the standard and work well with popular tools like [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/).
 
 > [!TIP]
 > See [System.Net metrics](../../../core/diagnostics/built-in-metrics-system-net.md) for a comprehensive list of all built-in instruments together with their attributes.
@@ -22,7 +23,8 @@ There are two parts to using metrics in a .NET app:
 * **Instrumentation:** Code in .NET libraries takes measurements and associates these measurements with a metric name. .NET and ASP.NET Core include many built-in metrics.
 * **Collection:** A .NET app configures named metrics to be transmitted from the app for external storage and analysis. Some tools may perform configuration outside the app using configuration files or a UI tool.
 
-Instrumented code can record numeric measurements, but the measurements need to be aggregated, transmitted, and stored to create useful metrics for monitoring. The process of aggregating, transmitting, and storing data is called collection. Measurements can also be associated with key-value pairs called tags or attributes that allow data to be categorized for analysis. For more information, see [Multi-dimensional metrics](../../../core/diagnostics/metrics-instrumentation.md#multi-dimensional-metrics).
+Instrumented code can record numeric measurements, but the measurements need to be aggregated, transmitted, and stored to create useful metrics for monitoring. The process of aggregating, transmitting, and storing data is called collection.
+Measurements can also be associated with key-value pairs called tags or attributes that allow data to be categorized for analysis. For more information, see [Multi-dimensional metrics](../../../core/diagnostics/metrics-instrumentation.md#multi-dimensional-metrics).
 
 ### Example app
 
@@ -35,7 +37,7 @@ cd ..\HelloBuiltinMetrics
 
 Replace the contents of `Program.cs` with the following sample code:
 
-:::code language="csharp" source="snippets/metrics/Program.cs" id="snippet_1":::
+:::code language="csharp" source="snippets/metrics/Program.cs" id="snippet_ExampleApp":::
 
 ### View metrics with dotnet-counters
 
@@ -92,7 +94,7 @@ dotnet add package OpenTelemetry.Exporter.Prometheus.HttpListener --prerelease
 
 Update `Program.cs` with OpenTelemetry configuration:
 
-:::code language="csharp" source="snippets/metrics/Program.cs" id="snippet_2" highlight="5-8":::
+:::code language="csharp" source="snippets/metrics/Program.cs" id="snippet_PrometheusExporter" highlight="5-8":::
 
 In the preceding code:
 
@@ -140,15 +142,38 @@ sum by(http_connection_state) (http_client_open_connections{network_protocol_ver
 
 ## Enrichment
 
-Enrichment means the addition of custom tags (attributes) to a metric. This is useful if an app wants to add a custom categorization to dashboards or alerts built with metrics. The [`http.client.request.duration`](../../../core/diagnostics/built-in-metrics-system-net.md#instrument-httpclientrequestduration) instrument supports enrichment by registering callbacks with the <xref:System.Net.Http.Metrics.HttpMetricsEnrichmentContext>. Note that this is a low-level API and a separate callback registration is needed for each `HttpRequestMessage`.
+Enrichment means the addition of custom tags (attributes) to a metric. This is useful if an app wants to add a custom categorization to dashboards or alerts built with metrics.
+The [`http.client.request.duration`](../../../core/diagnostics/built-in-metrics-system-net.md#instrument-httpclientrequestduration) instrument supports enrichment by registering callbacks with the <xref:System.Net.Http.Metrics.HttpMetricsEnrichmentContext>.
+Note that this is a low-level API and a separate callback registration is needed for each `HttpRequestMessage`.
 
-:::code language="csharp" source="snippets/metrics/Program.cs" id="snippet_3":::
+A simple way to do the callback registration at a single place is to implement a custom delegating <xref:System.Net.Http.DelegatingHandler>.
+This will allow you to intercept and modify the requests before they are forwarded to the inner handler and sent to the server:
+
+:::code language="csharp" source="snippets/metrics/Program.cs" id="snippet_Enrichment":::
+
+In case you are working with [`IHttpClientFactory`](../../../core/extensions/httpclient-factory.md), you can use xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddHttpMessageHandler%2A to register the `EnrichmentHandler`:
+
+:::code language="csharp" source="snippets/metrics/Program.cs" id="snippet_EnrichmentWithFactory":::
+
+> [!NOTE]
+> For performance reasons, the enrichment callback is only invoked when the `http.client.request.duration` instrument is enabled, meaning that something should be collecting the metrics.
+> This can be `dotnet-monitor`, Prometheus exporter, a [`MeterListener`](../../../diagnostics/metrics-collection#create-a-custom-collection-tool-using-the-net--api) or a `MetricCollector<T>`.
 
 ## `IMeterFactory` and `IHttpClientFactory` integration
 
-HTTP metrics were designed with isolation and testability in mind meaning that all metrics can be emitted by a custom <xref:System.Diagnostics.Metrics.Meter> instance. This can be achived by assigning a custom <xref:System.Diagnostics.Metrics.IMeterFactory> instance to <xref:System.Net.Http.SocketsHttpHandler.MeterFactory?displayProperty=nameWithType> or <xref:System.Net.Http.HttpClientHandler.MeterFactory?displayProperty=nameWithType>.
+HTTP metrics were designed with isolation and testability in mind meaning that metrics can be emitted by a custom <xref:System.Diagnostics.Metrics.Meter> instance.
+This can be achived by assigning a custom <xref:System.Diagnostics.Metrics.IMeterFactory> instance to <xref:System.Net.Http.SocketsHttpHandler.MeterFactory?displayProperty=nameWithType> or <xref:System.Net.Http.HttpClientHandler.MeterFactory?displayProperty=nameWithType>.
 
-When working with [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) and [`IHttpClientFactory`](../../../core/extensions/httpclient-factory.md), the default `IHttpClientFactory` implementation will automatically pick the `IMeterFactory` instance registered in the `ServiceCollection` and assign it to the handlers it creates internally.
+When working with [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) and [`IHttpClientFactory`](../../../core/extensions/httpclient-factory.md), the default `IHttpClientFactory` implementation will automatically pick the `IMeterFactory` instance registered in the `ServiceCollection` and assign it to the primary handler it creates internally.
+
+> [!NOTE]
+> The <xref:System.Diagnostics.Metrics.Meter.Name?displayProperty=nameWithType> is `System.Net.Http` for all metrics emitted by `HttpClientHandler` / `SocketsHttpHandler`.
+
+### Testing metrics
+
+The following example demonstrates how to validate built-in metrics in unit tests using xUnit, `IHttpClientFactory` and `MetricCollector<T>` from the [`Microsoft.Extensions.Diagnostics.Testing`](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.Testing) NuGet package:
+
+:::code language="csharp" source="snippets/metrics/Program.cs" id="snippet_Testing":::
 
 ## Metrics vs. EventCounters
 
@@ -156,7 +181,9 @@ Metrics are [more feature-rich](../../../core/diagnostics/compare-metric-apis#sy
 
 Nevertheless, it's important to highlight that as of .NET 8, only the `System.Net.Http` and the `System.Net.NameResolutions` libraries are instrumented using Metrics, meaning that if you need counters from the lower levels of the stack such as `System.Net.Sockets` or `System.Net.Security`, you would still need to rely on EventCounters.
 
-Moreover, there are some semantical differences between Metrics and their matching EventCounters. For example when using `HttpCompletionOption.ResponseContentRead`, the [`current-requests` EventCounter](../../../core/diagnostics/available-counters) considers a request to be active until the moment when the last byte of the request body has been read, while it's metrics counterpart [`http.client.active_requests`](../../../core/diagnostics/built-in-metrics-system-net#instrument-httpclientactive_requests) doesn't include the time spent reading the response body when counting the active requests.
+Moreover, there are some semantical differences between Metrics and their matching EventCounters.
+For example when using `HttpCompletionOption.ResponseContentRead`, the [`current-requests` EventCounter](../../../core/diagnostics/available-counters) considers a request to be active until the moment when the last byte of the request body has been read,
+while its metrics counterpart [`http.client.active_requests`](../../../core/diagnostics/built-in-metrics-system-net#instrument-httpclientactive_requests) doesn't include the time spent reading the response body when counting the active requests.
  
 ## Need more Metrics?
 

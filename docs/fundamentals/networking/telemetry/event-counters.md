@@ -23,6 +23,9 @@ They include information like the following:
 > [!TIP]
 > For the full list, see [well-known counters].
 
+> [!TIP]
+> On projects targeting .NET 8+, consider using the newer and more feature-rich [networking metrics] instead of EventCounters.
+
 ## Groups
 
 Networking information is split across the following groups:
@@ -137,6 +140,7 @@ If you have suggestions for other useful information that could be exposed via e
 
 If you're using the [`Yarp.Telemetry.Consumption`] library and have any suggestions, create a [microsoft/reverse-proxy issue].
 
+[networking metrics]: ./metrics.md
 [EventCounters]: ../../../core/diagnostics/event-counters.md
 [well-known counters]: ../../../core/diagnostics/available-counters.md
 [dotnet-counter docs]: ../../../core/diagnostics/dotnet-counters.md

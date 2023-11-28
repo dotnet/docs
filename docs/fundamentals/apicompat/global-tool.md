@@ -122,4 +122,10 @@ apicompat [command] [options]
 
   Specifies a transformation pattern for the *right side* assemblies.
 
-## Examples
+## Example
+
+The following command compares the .NET 7 and .NET 8 versions of an assembly.
+
+```dotnetcli
+apicompat -l "C:\artifacts\bin\LibApp5\release_net7.0\LibApp5.dll" -r "c:\artifacts\bin\LibApp5\release_net8.0\LibApp5.dll"
+```

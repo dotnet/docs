@@ -11,7 +11,8 @@ This article describes the metrics built-in for ASP.NET Core produced using the
 <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> API. For a listing of metrics based on the older [EventCounters](event-counters.md) API,
 see [here](available-counters.md).
 
-See [Using ASP.NET Core metrics](/aspnet/core/log-mon/metrics/metrics) for more information about how to collect, report, enrich, and test ASP.NET Core metrics.
+> [!TIP]
+> See [Using ASP.NET Core metrics](/aspnet/core/log-mon/metrics/metrics) for more information about how to collect, report, enrich, and test ASP.NET Core metrics.
 
 - [Meter: `Microsoft.AspNetCore.Hosting`](#meter-microsoftaspnetcorehosting)
   - [Instrument: `http.server.request.duration`](#instrument-httpserverrequestduration)

@@ -160,7 +160,7 @@ In case you are working with [`IHttpClientFactory`](../../../core/extensions/htt
 
 > [!NOTE]
 > For performance reasons, the enrichment callback is only invoked when the `http.client.request.duration` instrument is enabled, meaning that something should be collecting the metrics.
-> This can be `dotnet-monitor`, Prometheus exporter, a [`MeterListener`](../../../core/diagnostics/metrics-collection#create-a-custom-collection-tool-using-the-net--api.md) or a `MetricCollector<T>`.
+> This can be `dotnet-monitor`, Prometheus exporter, a [`MeterListener`](../../../core/diagnostics/metrics-collection.md#create-a-custom-collection-tool-using-the-net--api) or a `MetricCollector<T>`.
 
 ## `IMeterFactory` and `IHttpClientFactory` integration
 

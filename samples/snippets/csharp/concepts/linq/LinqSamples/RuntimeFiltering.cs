@@ -52,23 +52,14 @@ public static class RuntimeFiltering
         // <runtime_filtering_2>
         void FilterByYearType(bool oddYear)
         {
-            IEnumerable<Student> studentQuery;
-            if (oddYear)
-            {
-                studentQuery =
-                    from student in students
-                    where student.Year == GradeLevel.FirstYear || student.Year == GradeLevel.ThirdYear
-                    select student;
-            }
-            else
-            {
-                studentQuery =
-                    from student in students
-                    where student.Year == GradeLevel.SecondYear || student.Year == GradeLevel.FourthYear
-                    select student;
-            }
-
-            string descr = oddYear ? "odd" : "even";
+            IEnumerable<Student> studentQuery = oddYear
+                ? (from student in students
+                   where student.Year is GradeLevel.FirstYear or GradeLevel.ThirdYear
+                   select student)
+                : (from student in students
+                   where student.Year is GradeLevel.SecondYear or GradeLevel.FourthYear
+                   select student);
+            var descr = oddYear ? "odd" : "even";
             Console.WriteLine($"The following students are at an {descr} year level:");
             foreach (Student name in studentQuery)
             {

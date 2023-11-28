@@ -1,38 +1,37 @@
-﻿namespace LinqSamples;
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace LinqSamples;
 
 // <group_by_contiguous_keys_chunkextensions>
 public static class ChunkExtensions
 {
     public static IEnumerable<IGrouping<TKey, TSource>> ChunkBy<TSource, TKey>(
             this IEnumerable<TSource> source,
-            Func<TSource, TKey> keySelector
-        ) =>
-            source.ChunkBy(keySelector, EqualityComparer<TKey>.Default);
+            Func<TSource, TKey> keySelector) =>
+                source.ChunkBy(keySelector, EqualityComparer<TKey>.Default);
 
     public static IEnumerable<IGrouping<TKey, TSource>> ChunkBy<TSource, TKey>(
             this IEnumerable<TSource> source,
             Func<TSource, TKey> keySelector,
-            IEqualityComparer<TKey> comparer
-        )
+            IEqualityComparer<TKey> comparer)
     {
         // Flag to signal end of source sequence.
         const bool noMoreSourceElements = true;
 
         // Auto-generated iterator for the source array.
-        var enumerator = source.GetEnumerator();
+        IEnumerator<TSource>? enumerator = source.GetEnumerator();
 
         // Move to the first element in the source sequence.
         if (!enumerator.MoveNext())
         {
-            yield break;
+            yield break;        // source collection is empty
         }
 
-        Chunk<TKey, TSource> current = null;
         while (true)
         {
             var key = keySelector(enumerator.Current);
 
-            current = new Chunk<TKey, TSource>(key, enumerator, value => comparer.Equals(key, keySelector(value)));
+            Chunk<TKey, TSource> current = new(key, enumerator, value => comparer.Equals(key, keySelector(value)));
 
             yield return current;
 
@@ -41,7 +40,6 @@ public static class ChunkExtensions
                 yield break;
             }
         }
-
     }
 }
 // </group_by_contiguous_keys_chunkextensions>
@@ -56,36 +54,35 @@ class Chunk<TKey, TSource> : IGrouping<TKey, TSource>
     // has a reference to the next ChunkItem in the list.
     class ChunkItem
     {
-        public ChunkItem(TSource value)
-        {
-            Value = value;
-        }
+        public ChunkItem(TSource value) => Value = value;
         public readonly TSource Value;
-        public ChunkItem? Next = null;
+        public ChunkItem? Next;
     }
 
+    public TKey Key { get; }
+
     // Stores a reference to the enumerator for the source sequence
-    private IEnumerator<TSource> enumerator;
+    IEnumerator<TSource> enumerator;
 
     // A reference to the predicate that is used to compare keys.
-    private Func<TSource, bool> predicate;
+    Func<TSource, bool> predicate;
 
     // Stores the contents of the first source element that
     // belongs with this chunk.
-    private readonly ChunkItem head;
+    readonly ChunkItem head;
 
     // End of the list. It is repositioned each time a new
     // ChunkItem is added.
-    private ChunkItem tail;
+    ChunkItem? tail;
 
     // Flag to indicate the source iterator has reached the end of the source sequence.
-    internal bool isLastSourceElement = false;
+    internal bool isLastSourceElement;
 
-    // Private object for thread syncronization
-    private readonly object m_Lock;
+    // Private object for thread synchronization
+    readonly object m_Lock;
 
     // REQUIRES: enumerator != null && predicate != null
-    public Chunk(TKey key, IEnumerator<TSource> enumerator, Func<TSource, bool> predicate)
+    public Chunk(TKey key, [DisallowNull] IEnumerator<TSource> enumerator, [DisallowNull] Func<TSource, bool> predicate)
     {
         Key = key;
         this.enumerator = enumerator;
@@ -101,11 +98,11 @@ class Chunk<TKey, TSource> : IGrouping<TKey, TSource>
     }
 
     // Indicates that all chunk elements have been copied to the list of ChunkItems.
-    private bool DoneCopyingChunk => tail == null;
+    bool DoneCopyingChunk => tail == null;
 
     // Adds one ChunkItem to the current group
     // REQUIRES: !DoneCopyingChunk && lock(this)
-    private void CopyNextChunkElement()
+    void CopyNextChunkElement()
     {
         // Try to advance the iterator on the source sequence.
         isLastSourceElement = !enumerator.MoveNext();
@@ -114,17 +111,17 @@ class Chunk<TKey, TSource> : IGrouping<TKey, TSource>
         // then null out the enumerator and predicate for reuse with the next chunk.
         if (isLastSourceElement || !predicate(enumerator.Current))
         {
-            enumerator = null;
-            predicate = null;
+            enumerator = default!;
+            predicate = default!;
         }
         else
         {
-            tail.Next = new ChunkItem(enumerator.Current);
+            tail!.Next = new ChunkItem(enumerator.Current);
         }
 
         // tail will be null if we are at the end of the chunk elements
         // This check is made in DoneCopyingChunk.
-        tail = tail.Next!;
+        tail = tail!.Next!;
     }
 
     // Called after the end of the last chunk was reached.
@@ -146,13 +143,11 @@ class Chunk<TKey, TSource> : IGrouping<TKey, TSource>
         }
     }
 
-    public TKey Key { get; }
-
     // Stays just one step ahead of the client requests.
     public IEnumerator<TSource> GetEnumerator()
     {
         // Specify the initial element to enumerate.
-        ChunkItem current = head;
+        ChunkItem? current = head;
 
         // There should always be at least one ChunkItem in a Chunk.
         while (current != null)
@@ -184,14 +179,14 @@ public static class GroupByContiguousKeys
 {
     // The source sequence.
     static readonly KeyValuePair<string, string>[] list = [
-        new("A","We"),
-        new("A","think"),
-        new("A","that"),
-        new("B","LINQ"),
-        new("C","is"),
-        new ("A","really"),
-        new("B","cool"),
-        new("B","!")
+        new("A", "We"),
+        new("A", "think"),
+        new("A", "that"),
+        new("B", "LINQ"),
+        new("C", "is"),
+        new("A", "really"),
+        new("B", "cool"),
+        new("B", "!")
     ];
 
     // Query variable declared as class member to be available

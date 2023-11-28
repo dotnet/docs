@@ -29,9 +29,9 @@ using OpenTelemetry;
 using System.Net;
 
 using MeterProvider meterProvider = Sdk.CreateMeterProviderBuilder()
-                .AddMeter("System.Net.Http", "System.Net.NameResolution")
-                .AddPrometheusHttpListener(options => options.UriPrefixes = new string[] { "http://localhost:9184/" })
-                .Build();
+    .AddMeter("System.Net.Http", "System.Net.NameResolution")
+    .AddPrometheusHttpListener(options => options.UriPrefixes = new string[] { "http://localhost:9184/" })
+    .Build();
 
 string[] uris = ["http://example.com", "http://httpbin.org/get", "https://example.com", "https://httpbin.org/get"];
 using HttpClient client = new()

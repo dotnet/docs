@@ -2,10 +2,7 @@
 
 class TestMotorcycle : Motorcycle
 {
-   public override int Drive(int miles, int speed)
-   {
-      return (int) Math.Round( ((double)miles) / speed, 0);
-   }
+    public override int Drive(int miles, int speed) => (int)Math.Round(((double)miles) / speed, 0);
 
    public override double GetTopSpeed()
    {

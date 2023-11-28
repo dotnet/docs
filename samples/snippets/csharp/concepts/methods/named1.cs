@@ -1,5 +1,5 @@
 ﻿// <Snippet45>
-namespace methods;
+namespace NamedMotorCycle;
 
 class TestMotorcycle : Motorcycle
 {

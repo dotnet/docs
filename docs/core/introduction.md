@@ -4,7 +4,8 @@ description: Learn about .NET (and .NET Core). .NET is a free, open-source devel
 ms.date: 11/15/2023
 ms.custom: "updateeachrelease"
 ---
-# What is .NET? Introduction and overview
+
+# What is .NET? Introduction and overview1
 
 [.NET is a free](https://dotnet.microsoft.com/download/), cross-platform, [open-source developer platform](https://github.com/dotnet/core) for building many kinds of applications. .NET is built on a [high-performance runtime](https://devblogs.microsoft.com/dotnet/category/performance/) that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/).
 

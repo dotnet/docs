@@ -122,7 +122,8 @@
             "featureFlags": [
                 "enable_uhf_ppe"
             ],
-            "feedback_system": "GitHub",
+            "open_source_feedback_productName": ".NET",
+            "feedback_system": "OpenSource",
             "feedback_github_repo": "dotnet/docs",
             "feedback_product_url": "https://aka.ms/feedback/report?space=61",
             "ms.author": "dotnetcontent",
@@ -157,11 +158,6 @@
         },
         "fileMetadata": {
             "feedback_system": {
-                "_csharplang/**.*": "OpenSource",
-                "_csharpstandard/standard/*.md": "OpenSource",
-                "_vblang/**.*": "OpenSource",
-                "_roslyn/**.*": "OpenSource",
-                "docs/**.*": "OpenSource",
                 "docs/standard/design-guidelines/**/**.md": "None",
                 "docs/framework/data/adonet/**/**.md": "None",
                 "docs/framework/data/wcf/**/**.md": "None",
@@ -181,13 +177,6 @@
                 "_csharpstandard/standard/*.md": "https://github.com/dotnet/csharpstandard/issues/new?template=docs-feedback.yml",
                 "_vblang/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml",
                 "_roslyn/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml"
-            },
-            "open_source_feedback_productName": {
-                "docs/**.*": ".NET feedback",
-                "_csharplang/**.*": "C# feature specification feedback",
-                "_csharpstandard/standard/*.md": "C# Standard documentation feedback",
-                "_vblang/**.*": "Visual Basic language spec feedback",
-                "_roslyn/**.*": "Roslyn breaking feedback"
             },
             "open_source_feedback_productDescription": {
                 "docs/**.*": "The .NET documentation is open source. Provide feedback here.",

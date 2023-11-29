@@ -25,7 +25,7 @@ MSTest Runner uses known exit codes to communicate test failure or application e
 | [9](#9) | Minimum expected tests policy violation. |
 | [10](#10) | Test adapter test session failure. |
 
-To enable verbose logging in order to troubleshoot issue(s), see [troubleshooting](guides/troubleshooting.md).
+To enable verbose logging in order to troubleshoot issue(s), see [troubleshooting](./unit-testing-mstest-runner-intro.md#troubleshooting).
 <!-- Setting special name so we can simply link to the number from here, and from error message that is built into TA source code. -->
 
 ## <a name="0"></a>0 - Success

@@ -60,7 +60,7 @@ Telemetry is by default collected by the runner, see [Telemetry](./unit-testing-
 
 MSTest Runner test projects are built as executables that can be run (or debugged) directly. There is no additional test running console or command that is needed.
 
-The application will exit with non-zero exit code in case of an error. For a list of known exit codes see [exit codes](unite-testing-mstest-runner-exit-codes.md).
+The application will exit with non-zero exit code in case of an error. For a list of known exit codes see [exit codes](unit-testing-mstest-runner-exit-codes.md).
 
 This is how you run tests in common scenarios:
 

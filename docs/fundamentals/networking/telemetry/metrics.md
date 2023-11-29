@@ -12,19 +12,17 @@ ms.date: 11/14/2023
 
 Starting with .NET 8.0, the `System.Net.Http` and the `System.Net.NameResolution` libraries are instrumented to publish metrics using .NET's new [Syste.Diagnostics.Metrics API](../../../core/diagnostics/metrics.md).
 These metrics were designed in cooperation with [OpenTelemetry](https://opentelemetry.io/) making sure they are consistent with the standard and work well with popular tools like [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/).
+They are also [multi-dimensional](../../../core/diagnostics/metrics-instrumentation.md#multi-dimensional-metrics), meaning that measurements are associated with key-value pairs called tags (aka. attributes or labels) that allow data to be categorized for analysis.
 
 > [!TIP]
 > See [System.Net metrics](../../../core/diagnostics/built-in-metrics-system-net.md) for a comprehensive list of all built-in instruments together with their attributes.
 
-## Using metrics
+## Collecting System.Net metrics
 
-There are two parts to using metrics in a .NET app:
+Code in .NET `System.Net.Http` and `System.Net.NameResoltion` is **instrumented** to take measurements and associate these measurements with a metric name.
+These measurements need to be aggregated, transmitted and stored to create useful metrics for monitoring. The process of aggregating, transmitting, and storing data is called **collection**.
 
-* **Instrumentation:** Code in .NET libraries takes measurements and associates these measurements with a metric name. .NET and ASP.NET Core include many built-in metrics.
-* **Collection:** A .NET app configures named metrics to be transmitted from the app for external storage and analysis. Some tools may perform configuration outside the app using configuration files or a UI tool.
-
-Instrumented code can record numeric measurements, but the measurements need to be aggregated, transmitted, and stored to create useful metrics for monitoring. The process of aggregating, transmitting, and storing data is called collection.
-Measurements can also be associated with key-value pairs called tags or attributes that allow data to be categorized for analysis. For more information, see [Multi-dimensional metrics](../../../core/diagnostics/metrics-instrumentation.md#multi-dimensional-metrics).
+This paragraph presents an example app to take measurements and demonstrates various methods to collect and view metrics.
 
 ### Example app
 
@@ -145,11 +143,11 @@ sum by(http_connection_state) (http_client_open_connections{network_protocol_ver
 
 ## Enrichment
 
-Enrichment means the addition of custom tags (attributes) to a metric. This is useful if an app wants to add a custom categorization to dashboards or alerts built with metrics.
+Enrichment means the addition of custom tags (aka. attributes or labels) to a metric. This is useful if an app wants to add a custom categorization to dashboards or alerts built with metrics.
 The [`http.client.request.duration`](../../../core/diagnostics/built-in-metrics-system-net.md#instrument-httpclientrequestduration) instrument supports enrichment by registering callbacks with the <xref:System.Net.Http.Metrics.HttpMetricsEnrichmentContext>.
 Note that this is a low-level API and a separate callback registration is needed for each `HttpRequestMessage`.
 
-A simple way to do the callback registration at a single place is to implement a custom delegating <xref:System.Net.Http.DelegatingHandler>.
+A simple way to do the callback registration at a single place is to implement a custom <xref:System.Net.Http.DelegatingHandler>.
 This will allow you to intercept and modify the requests before they are forwarded to the inner handler and sent to the server:
 
 :::code language="csharp" source="snippets/metrics/Program.cs" id="snippet_Enrichment":::

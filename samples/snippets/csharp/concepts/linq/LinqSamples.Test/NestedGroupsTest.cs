@@ -8,7 +8,7 @@ public class NestedGroupsTest
     [Fact]
     public void NestedGroups1Test()
     {
-        var sw = InitTest();
+        StringWriter sw = InitTest();
 
         NestedGroups.NestedGroup1();
         Assert.Equal(

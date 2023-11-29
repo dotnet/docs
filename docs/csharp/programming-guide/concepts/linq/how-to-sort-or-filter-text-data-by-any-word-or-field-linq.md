@@ -34,10 +34,6 @@ public class SortLines
         {  
             Console.WriteLine(str);  
         }  
-  
-        // Keep the console window open in debug mode.  
-        Console.WriteLine("Press any key to exit");  
-        Console.ReadKey();  
     }  
   
     // Returns the query variable, not query results!  

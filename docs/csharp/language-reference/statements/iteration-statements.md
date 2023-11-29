@@ -83,7 +83,7 @@ The `foreach` statement executes a statement or a block of statements for each e
 
 The `foreach` statement isn't limited to those types. You can use it with an instance of any type that satisfies the following conditions:
 
-- A type has the public parameterless `GetEnumerator` method. Beginning with C# 9.0, the `GetEnumerator` method can be a type's [extension method](../../programming-guide/classes-and-structs/extension-methods.md).
+- A type has the public parameterless `GetEnumerator` method. The `GetEnumerator` method can be a type's [extension method](../../programming-guide/classes-and-structs/extension-methods.md).
 - The return type of the `GetEnumerator` method has the public `Current` property and the public parameterless `MoveNext` method whose return type is `bool`.
 
 The following example uses the `foreach` statement with an instance of the <xref:System.Span%601?displayProperty=nameWithType> type, which doesn't implement any interfaces:
@@ -155,10 +155,10 @@ For more information, see the following sections of the [C# language specificati
 - [The `do` statement](~/_csharpstandard/standard/statements.md#1393-the-do-statement)
 - [The `while` statement](~/_csharpstandard/standard/statements.md#1392-the-while-statement)
 
-For more information about features added in C# 8.0 and later, see the following feature proposal notes:
+For more information about these features, see the following feature proposal notes:
 
-- [Async streams (C# 8.0)](~/_csharplang/proposals/csharp-8.0/async-streams.md)
-- [Extension `GetEnumerator` support for `foreach` loops (C# 9.0)](~/_csharplang/proposals/csharp-9.0/extension-getenumerator.md)
+- [Async streams](~/_csharplang/proposals/csharp-8.0/async-streams.md)
+- [Extension `GetEnumerator` support for `foreach` loops](~/_csharplang/proposals/csharp-9.0/extension-getenumerator.md)
 
 ## See also
 

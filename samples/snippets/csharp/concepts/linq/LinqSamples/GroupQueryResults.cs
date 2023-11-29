@@ -203,7 +203,7 @@ public static class GroupQueryResults
 
         foreach (var scoreGroup in groupByCompoundKey)
         {
-            string s = scoreGroup.Key.IsScoreOver85 == true ? "more than 85" : "less than 85";
+            var s = scoreGroup.Key.IsScoreOver85 ? "more than 85" : "less than 85";
             Console.WriteLine($"Name starts with {scoreGroup.Key.FirstLetterOfLastName} who scored {s}");
             foreach (var item in scoreGroup)
             {

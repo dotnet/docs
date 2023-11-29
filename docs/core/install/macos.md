@@ -19,7 +19,7 @@ In this article, you learn how to install .NET on macOS. .NET is made up of the 
 The latest version of .NET is 8.
 
 > [!div class="button"]
-> [Download .NET Core](https://dotnet.microsoft.com/download/dotnet)
+> [Download .NET](https://dotnet.microsoft.com/download/dotnet)
 
 ## Supported releases
 
@@ -29,10 +29,11 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Operating System       | .NET 8 (LTS) | .NET 7 (STS) | .NET 6 (LTS) |
 |------------------------|--------------|--------------|--------------|
-| macOS 13.0 "Ventura"   | ✔️ 8.0       | ✔️ 7.0        | ✔️ 6.0        |
-| macOS 12.0 "Monterey"  | ✔️ 8.0       | ✔️ 7.0        | ✔️ 6.0        |
-| macOS 11.0 "Big Sur"   | ✔️ 8.0       | ✔️ 7.0        | ✔️ 6.0        |
-| macOS 10.15 "Catalina" | ✔️ 8.0       | ✔️ 7.0        | ✔️ 6.0        |
+| macOS 14.0 "Sonoma"    | ✔️ 8.0        | ✔️ 7.0        | ✔️ 6.0        |
+| macOS 13.0 "Ventura"   | ✔️ 8.0        | ✔️ 7.0        | ✔️ 6.0        |
+| macOS 12.0 "Monterey"  | ✔️ 8.0        | ✔️ 7.0        | ✔️ 6.0        |
+| macOS 11.0 "Big Sur"   | ❌           | ✔️ 7.0        | ✔️ 6.0        |
+| macOS 10.15 "Catalina" | ❌           | ✔️ 7.0        | ✔️ 6.0        |
 
 For a full list of .NET versions and their support life cycle, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
@@ -82,9 +83,11 @@ brew install mono-libgdiplus
 
 ## Install with an installer
 
-macOS has standalone installers that can be used to install .NET 8:
+macOS has standalone installers that can be used to install .NET:
 
-- [x64 and Arm64 CPUs](https://dotnet.microsoft.com/download/dotnet/8.0)
+- ✔️ [.NET 8 downloads](https://dotnet.microsoft.com/download/dotnet/8.0)
+- ✔️ [.NET 7 downloads](https://dotnet.microsoft.com/download/dotnet/7.0)
+- ✔️ [.NET 6 downloads](https://dotnet.microsoft.com/download/dotnet/6.0)
 
 ## Download and manually install
 
@@ -97,7 +100,6 @@ First, download a **binary** release for either the SDK or the runtime from one 
 - ✔️ [.NET 8 downloads](https://dotnet.microsoft.com/download/dotnet/8.0)
 - ✔️ [.NET 7 downloads](https://dotnet.microsoft.com/download/dotnet/7.0)
 - ✔️ [.NET 6 downloads](https://dotnet.microsoft.com/download/dotnet/6.0)
-- ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet/3.1)
 - [All .NET downloads](https://dotnet.microsoft.com/download/dotnet)
 
 Next, extract the downloaded file and use the `export` command to set `DOTNET_ROOT` to the extracted folder's location and then ensure .NET is in PATH. This should make the .NET CLI commands available at the terminal. For more information about .NET environment variables, see [.NET SDK and CLI environment variables](../tools/dotnet-environment-variables.md#net-sdk-and-cli-environment-variables).
@@ -176,7 +178,6 @@ Visual Studio for Mac installs the .NET SDK when the **.NET** workload is select
 | 8.0                   | Visual Studio 2022 for Mac 17.8 or higher.           |
 | 7.0                   | Visual Studio 2022 for Mac 17.4 or higher.           |
 | 6.0                   | Visual Studio 2022 for Mac Preview 3 17.0 or higher. |
-| 3.1                   | Visual Studio 2019 for Mac version 8.4 or higher.    |
 
 :::image type="content" source="media/install-sdk/mac-install-selection.png" alt-text="macOS Visual Studio 2019 for Mac with the .NET workload selected." lightbox="media/install-sdk/mac-install-selection.png":::
 

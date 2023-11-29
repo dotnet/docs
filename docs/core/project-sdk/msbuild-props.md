@@ -26,7 +26,7 @@ The `TargetFramework` property specifies the target framework version for the ap
 
 ```xml
 <PropertyGroup>
-  <TargetFramework>netcoreapp3.1</TargetFramework>
+  <TargetFramework>net8.0</TargetFramework>
 </PropertyGroup>
 ```
 
@@ -41,7 +41,7 @@ Use the `TargetFrameworks` property when you want your app to target multiple pl
 
 ```xml
 <PropertyGroup>
-  <TargetFrameworks>netcoreapp3.1;net462</TargetFrameworks>
+  <TargetFrameworks>net8.0;net462</TargetFrameworks>
 </PropertyGroup>
 ```
 
@@ -110,7 +110,7 @@ Notes about these settings:
 
 #### Migrating from .NET Framework
 
-.NET Framework project templates create a code file with these assembly info attributes set. The file is typically located at *.\Properties\AssemblyInfo.cs* or *.\Properties\AssemblyInfo.vb*. SDK-style projects generate this file for you based on the project settings. **You can't have both.** When porting your code to .NET 5 (or .NET Core 3.1) or later, do one of the following:
+.NET Framework project templates create a code file with these assembly info attributes set. The file is typically located at *.\Properties\AssemblyInfo.cs* or *.\Properties\AssemblyInfo.vb*. SDK-style projects generate this file for you based on the project settings. **You can't have both.** When porting your code to .NET 6 or later, do one of the following:
 
 - Disable the generation of the temporary code file that contains the assembly info attributes by setting `GenerateAssemblyInfo` to `false` in your project file. This enables you to keep your *AssemblyInfo* file.
 - Migrate the settings in the `AssemblyInfo` file to the project file, and then delete the `AssemblyInfo` file.
@@ -239,7 +239,7 @@ This property was introduced in .NET 6.
 
 ### EnablePackageValidation
 
-The `EnablePackageValidation` property enables a series of validations on the package after the `pack` task. For more information, see [package validation](../../fundamentals/package-validation/overview.md).
+The `EnablePackageValidation` property enables a series of validations on the package after the `pack` task. For more information, see [package validation](../../fundamentals/apicompat/package-validation/overview.md).
 
 ```xml
 <PropertyGroup>
@@ -455,9 +455,7 @@ This property is similar to the [PublishSelfContained](#publishselfcontained) pr
 
 ### UseAppHost
 
-The `UseAppHost` property controls whether or not a native executable is created for a deployment. A native executable is required for self-contained deployments.
-
-In .NET Core 3.0 and later versions, a framework-dependent executable is created by default. Set the `UseAppHost` property to `false` to disable generation of the executable.
+The `UseAppHost` property controls whether or not a native executable is created for a deployment. A native executable is required for self-contained deployments. A framework-dependent executable is created by default. Set the `UseAppHost` property to `false` to disable generation of the executable.
 
 ```xml
 <PropertyGroup>

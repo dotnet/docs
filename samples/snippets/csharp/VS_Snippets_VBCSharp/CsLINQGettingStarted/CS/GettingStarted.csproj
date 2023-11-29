@@ -2,13 +2,8 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
 
     <StartupObject>LINQGettingStarted_1.Program.QueryVMethodSyntax</StartupObject>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Reference Include="System.Data.Linq" />
-  </ItemGroup>
-
 </Project>

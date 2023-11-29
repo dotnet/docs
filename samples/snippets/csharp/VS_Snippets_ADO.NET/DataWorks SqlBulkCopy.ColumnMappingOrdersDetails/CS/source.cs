@@ -3,33 +3,33 @@ using System.Data;
 // <Snippet1>
 using System.Data.SqlClient;
 
-class Program
+static class Program
 {
     static void Main()
     {
-        string connectionString = GetConnectionString();
+        var connectionString = GetConnectionString();
         // Open a connection to the AdventureWorks database.
         using (SqlConnection connection =
-                   new SqlConnection(connectionString))
+                   new(connectionString))
         {
             connection.Open();
 
             // Empty the destination tables.
-            SqlCommand deleteHeader = new SqlCommand(
+            SqlCommand deleteHeader = new(
                 "DELETE FROM dbo.BulkCopyDemoOrderHeader;",
                 connection);
             deleteHeader.ExecuteNonQuery();
-            SqlCommand deleteDetail = new SqlCommand(
+            SqlCommand deleteDetail = new(
                 "DELETE FROM dbo.BulkCopyDemoOrderDetail;",
                 connection);
             deleteDetail.ExecuteNonQuery();
 
             // Perform an initial count on the destination
             //  table with matching columns.
-            SqlCommand countRowHeader = new SqlCommand(
+            SqlCommand countRowHeader = new(
                 "SELECT COUNT(*) FROM dbo.BulkCopyDemoOrderHeader;",
                 connection);
-            long countStartHeader = System.Convert.ToInt32(
+            long countStartHeader = Convert.ToInt32(
                 countRowHeader.ExecuteScalar());
             Console.WriteLine(
                 "Starting row count for Header table = {0}",
@@ -37,10 +37,10 @@ class Program
 
             // Perform an initial count on the destination
             // table with different column positions.
-            SqlCommand countRowDetail = new SqlCommand(
+            SqlCommand countRowDetail = new(
                 "SELECT COUNT(*) FROM dbo.BulkCopyDemoOrderDetail;",
                 connection);
-            long countStartDetail = System.Convert.ToInt32(
+            long countStartDetail = Convert.ToInt32(
                 countRowDetail.ExecuteScalar());
             Console.WriteLine(
                 "Starting row count for Detail table = {0}",
@@ -53,41 +53,45 @@ class Program
             // To keep the example simple and quick, a parameter is
             // used to select only orders for a particular account
             // as the source for the bulk insert.
-            SqlCommand headerData = new SqlCommand(
+            SqlCommand headerData = new(
                 "SELECT [SalesOrderID], [OrderDate], " +
                 "[AccountNumber] FROM [Sales].[SalesOrderHeader] " +
                 "WHERE [AccountNumber] = @accountNumber;",
                 connection);
-            SqlParameter parameterAccount = new SqlParameter();
-            parameterAccount.ParameterName = "@accountNumber";
-            parameterAccount.SqlDbType = SqlDbType.NVarChar;
-            parameterAccount.Direction = ParameterDirection.Input;
-            parameterAccount.Value = "10-4020-000034";
+            SqlParameter parameterAccount = new()
+            {
+                ParameterName = "@accountNumber",
+                SqlDbType = SqlDbType.NVarChar,
+                Direction = ParameterDirection.Input,
+                Value = "10-4020-000034"
+            };
             headerData.Parameters.Add(parameterAccount);
             SqlDataReader readerHeader = headerData.ExecuteReader();
 
             // Get the Detail data in a separate connection.
-            using (SqlConnection connection2 = new SqlConnection(connectionString))
+            using (SqlConnection connection2 = new(connectionString))
             {
                 connection2.Open();
-                SqlCommand sourceDetailData = new SqlCommand(
+                SqlCommand sourceDetailData = new(
                     "SELECT [Sales].[SalesOrderDetail].[SalesOrderID], [SalesOrderDetailID], " +
                     "[OrderQty], [ProductID], [UnitPrice] FROM [Sales].[SalesOrderDetail] " +
                     "INNER JOIN [Sales].[SalesOrderHeader] ON [Sales].[SalesOrderDetail]." +
                     "[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID] " +
                     "WHERE [AccountNumber] = @accountNumber;", connection2);
 
-                SqlParameter accountDetail = new SqlParameter();
-                accountDetail.ParameterName = "@accountNumber";
-                accountDetail.SqlDbType = SqlDbType.NVarChar;
-                accountDetail.Direction = ParameterDirection.Input;
-                accountDetail.Value = "10-4020-000034";
+                SqlParameter accountDetail = new()
+                {
+                    ParameterName = "@accountNumber",
+                    SqlDbType = SqlDbType.NVarChar,
+                    Direction = ParameterDirection.Input,
+                    Value = "10-4020-000034"
+                };
                 sourceDetailData.Parameters.Add(accountDetail);
                 SqlDataReader readerDetail = sourceDetailData.ExecuteReader();
 
                 // Create the SqlBulkCopy object.
                 using (SqlBulkCopy bulkCopy =
-                           new SqlBulkCopy(connectionString))
+                           new(connectionString))
                 {
                     bulkCopy.DestinationTableName =
                         "dbo.BulkCopyDemoOrderHeader";
@@ -113,7 +117,7 @@ class Program
                     }
 
                     // Set up the order details destination.
-                    bulkCopy.DestinationTableName ="dbo.BulkCopyDemoOrderDetail";
+                    bulkCopy.DestinationTableName = "dbo.BulkCopyDemoOrderDetail";
 
                     // Clear the ColumnMappingCollection.
                     bulkCopy.ColumnMappings.Clear();
@@ -142,11 +146,11 @@ class Program
 
                 // Perform a final count on the destination
                 // tables to see how many rows were added.
-                long countEndHeader = System.Convert.ToInt32(
+                long countEndHeader = Convert.ToInt32(
                     countRowHeader.ExecuteScalar());
                 Console.WriteLine("{0} rows were added to the Header table.",
                     countEndHeader - countStartHeader);
-                long countEndDetail = System.Convert.ToInt32(
+                long countEndDetail = Convert.ToInt32(
                     countRowDetail.ExecuteScalar());
                 Console.WriteLine("{0} rows were added to the Detail table.",
                     countEndDetail - countStartDetail);
@@ -156,9 +160,9 @@ class Program
         }
     }
 
-    private static string GetConnectionString()
-        // To avoid storing the connection string in your code,
-        // you can retrieve it from a configuration file.
+    static string GetConnectionString()
+    // To avoid storing the connection string in your code,
+    // you can retrieve it from a configuration file.
     {
         return "Data Source=(local); " +
             " Integrated Security=true;" +

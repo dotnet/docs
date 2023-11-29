@@ -1,5 +1,4 @@
 ﻿using Xunit;
-using static LinqSamples.Test.Shared;
 
 namespace LinqSamples.Test;
 

@@ -18,7 +18,7 @@ In a join clause, if only one of the comparison keys is a nullable value type, y
 
 [!code-csharp[csProgGuideLINQ#83](~/samples/snippets/csharp/concepts/linq/how-to-handle-null-values-in-query-expressions_2.cs)]
 
-In each of the examples, the `equals` query keyword is used. C# 9 adds [pattern matching](../language-reference/operators/patterns.md), which includes patterns for `is null` and `is not null`. These patterns aren't recommended in LINQ queries because query providers may not interpret the new C# syntax correctly. A query provider is a library that translates C# query expressions into a native data format, such as Entity Framework Core. Query providers implement the <xref:System.Linq.IQueryProvider?displayProperty=nameWithType> interface to create data sources that implement the <xref:System.Linq.IQueryable%601?displayProperty=nameWithType> interface.
+In each of the examples, the `equals` query keyword is used. You can also use [pattern matching](../language-reference/operators/patterns.md), which includes patterns for `is null` and `is not null`. These patterns aren't recommended in LINQ queries because query providers may not interpret the new C# syntax correctly. A query provider is a library that translates C# query expressions into a native data format, such as Entity Framework Core. Query providers implement the <xref:System.Linq.IQueryProvider?displayProperty=nameWithType> interface to create data sources that implement the <xref:System.Linq.IQueryable%601?displayProperty=nameWithType> interface.
 
 ## See also
 

@@ -15,13 +15,13 @@ There are many use cases and scenarios for serverless applications. This chapter
 
 ## Big data processing
 
-![Map/reduce diagram](/samples/azure-samples/durablefunctions-mapreduce-dotnet/big-data-processing-serverless-mapreduce-on-azure/media/mapreducearchitecture.png)
+![Map/reduce diagram](./media/map-reduce-architecture.png)
 
 This example uses serverless to do a map/reduce operation on a big data set. It determines the average speed of New York Yellow taxi trips per day in 2017.
 
-[Big Data Processing: Serverless MapReduce on Azure](/samples/azure-samples/durablefunctions-mapreduce-dotnet/big-data-processing-serverless-mapreduce-on-azure/)
+[Big Data Processing: Serverless MapReduce on Azure](https://github.com/Azure-Samples/durablefunctions-mapreduce-dotnet)
 
-## Create serverless applications: hands-on lab
+## Create serverless applications: Hands-on lab
 
 Learn how to use functions to execute server-side logic and build serverless architectures.
 
@@ -45,7 +45,7 @@ This sample showcases the new Azure Functions tooling for C# Class Libraries in 
 
 This example parses a set of CSV files from hypothetical customers. It ensures that all files required for a customer "batch" are ready, then validates the structure of each file. Different solutions are presented using Azure Functions, Logic Apps, and Durable Functions.
 
-[File processing and validation using Azure Functions, Logic Apps, and Durable Functions](/samples/azure-samples/serverless-file-validation/file-processing-and-validation-using-azure-functions-logic-apps-and-durable-functions/)
+[File processing and validation using Azure Functions, Logic Apps, and Durable Functions](https://github.com/Azure-Samples/Serverless-File-Validation)
 
 ## Game data visualization
 
@@ -87,18 +87,18 @@ Azure Functions are easy to implement and maintain, and accessible through HTTP.
 
 This sample shows how to utilize Durable Functions' fan-out pattern to load an arbitrary number of messages across any number of sessions/partitions. It targets Service Bus, Event Hubs, or Storage Queues. The sample also adds the ability to consume those messages with another Azure Function and load the resulting timing data in to another Event Hub. The data is then ingested into analytics services like Azure Data Explorer.
 
-[Produce and Consume messages through Service Bus, Event Hubs, and Storage Queues with Azure Functions](/samples/azure-samples/durable-functions-producer-consumer/product-consume-messages-az-functions/)
+[Produce and Consume messages through Service Bus, Event Hubs, and Storage Queues with Azure Functions](https://github.com/Azure-Samples/durable-functions-producer-consumer)
 
 ## Recommended resources
 
-- [Big Data Processing: Serverless MapReduce on Azure](/samples/azure-samples/durablefunctions-mapreduce-dotnet/big-data-processing-serverless-mapreduce-on-azure/)
+- [Big Data Processing: Serverless MapReduce on Azure](https://github.com/Azure-Samples/durablefunctions-mapreduce-dotnet)
 - [Create serverless applications](/training/paths/create-serverless-applications/)
 - [Customer Reviews App with Cognitive Services](/samples/azure-samples/functions-customer-reviews/customer-reviews-cognitive-services/)
-- [File processing and validation using Azure Functions, Logic Apps, and Durable Functions](/samples/azure-samples/serverless-file-validation/file-processing-and-validation-using-azure-functions-logic-apps-and-durable-functions/)
+- [File processing and validation using Azure Functions, Logic Apps, and Durable Functions](https://github.com/Azure-Samples/Serverless-File-Validation)
 - [Implementing a simple Azure Function with a Xamarin.Forms client](/samples/azure-samples/functions-xamarin-getting-started/implementing-a-simple-azure-function-with-a-xamarinforms-client/)
 - [In-editor game telemetry visualization](https://github.com/Azure-Samples/gaming-in-editor-telemetry/tree/master)
 - [IoT Reliable Edge Relay](https://github.com/Azure-Samples/iot-reliable-edge-relay)
-- [Produce and Consume messages through Service Bus, Event Hubs, and Storage Queues with Azure Functions](/samples/azure-samples/durable-functions-producer-consumer/product-consume-messages-az-functions/)
+- [Produce and Consume messages through Service Bus, Event Hubs, and Storage Queues with Azure Functions](https://github.com/Azure-Samples/durable-functions-producer-consumer)
 - [Serverless functions for GraphQL](https://github.com/softchris/graphql-workshop-dotnet/blob/master/docs/workshop/4.md)
 - [Serverless Microservices reference architecture](/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/)
 

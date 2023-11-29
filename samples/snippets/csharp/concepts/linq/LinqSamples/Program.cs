@@ -1,7 +1,7 @@
 ﻿using LinqSamples;
-using l = LinqSamples;
+using LS = LinqSamples;
 
-l.Index.Intro();
+LS.Index.Intro();
 
 Basics.Basics1();
 Basics.Basics2();

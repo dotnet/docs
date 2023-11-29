@@ -3,7 +3,7 @@ title: Check installed .NET versions on Windows, Linux, and macOS
 description: Learn how to list which versions of .NET are installed on your computer. This includes the .NET runtime and SDK.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/08/2022
+ms.date: 11/15/2023
 ms.custom: "updateeachrelease"
 zone_pivot_groups: operating-systems-set-one
 ---
@@ -32,7 +32,7 @@ You get output similar to the following.
 3.1.424 [C:\program files\dotnet\sdk]
 5.0.100 [C:\program files\dotnet\sdk]
 6.0.402 [C:\program files\dotnet\sdk]
-7.0.100 [C:\program files\dotnet\sdk]
+7.0.404 [C:\program files\dotnet\sdk]
 8.0.100 [C:\program files\dotnet\sdk]
 ```
 
@@ -44,7 +44,7 @@ You get output similar to the following.
 3.1.424 [/home/user/dotnet/sdk]
 5.0.100 [/home/user/dotnet/sdk]
 6.0.402 [/home/user/dotnet/sdk]
-7.0.100 [/home/user/dotnet/sdk]
+7.0.404 [/home/user/dotnet/sdk]
 8.0.100 [/home/user/dotnet/sdk]
 ```
 
@@ -56,7 +56,7 @@ You get output similar to the following.
 3.1.424 [/usr/local/share/dotnet/sdk]
 5.0.100 [/usr/local/share/dotnet/sdk]
 6.0.402 [/usr/local/share/dotnet/sdk]
-7.0.100 [/usr/local/share/dotnet/sdk]
+7.0.404 [/usr/local/share/dotnet/sdk]
 8.0.100 [/usr/local/share/dotnet/sdk]
 ```
 
@@ -77,16 +77,16 @@ You get output similar to the following.
 ```console
 Microsoft.AspNetCore.App 3.1.30 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
 Microsoft.AspNetCore.App 6.0.10 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
-Microsoft.AspNetCore.App 7.0.0 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 7.0.5 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
 Microsoft.AspNetCore.App 8.0.0 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
 Microsoft.NETCore.App 3.1.30 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
 Microsoft.NETCore.App 5.0.17 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
 Microsoft.NETCore.App 6.0.10 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
-Microsoft.NETCore.App 7.0.0 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+Microsoft.NETCore.App 7.0.5 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
 Microsoft.NETCore.App 8.0.0 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
 Microsoft.WindowsDesktop.App 3.1.30 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
 Microsoft.WindowsDesktop.App 6.0.10 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
-Microsoft.WindowsDesktop.App 7.0.0 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+Microsoft.WindowsDesktop.App 7.0.5 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
 Microsoft.WindowsDesktop.App 8.0.0 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
 ```
 

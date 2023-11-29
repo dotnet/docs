@@ -18,7 +18,7 @@ items:
         href: aspnet-core/8.0/isystemclock-obsolete.md
       - name: Rate-limiting middleware requires AddRateLimiter
         href: aspnet-core/8.0/addratelimiter-requirement.md
-      - name: Security token events return a JSonWebToken
+      - name: Security token events return a JsonWebToken
         href: aspnet-core/8.0/securitytoken-events.md
       - name: TrimMode defaults to full for Web SDK projects
         href: aspnet-core/8.0/trimmode-full.md
@@ -168,6 +168,8 @@ items:
       items:
       - name: BinaryFormatter disabled for most projects
         href: serialization/8.0/binaryformatter-disabled.md
+      - name: PublishedTrimmed projects fail reflection-based serialization
+        href: serialization/8.0/publishtrimmed.md
       - name: Reflection-based deserializer resolves metadata eagerly
         href: serialization/8.0/metadata-resolving.md
     - name: Windows Forms
@@ -882,7 +884,7 @@ items:
         href: aspnet-core/8.0/isystemclock-obsolete.md
       - name: Rate-limiting middleware requires AddRateLimiter
         href: aspnet-core/8.0/addratelimiter-requirement.md
-      - name: Security token events return a JSonWebToken
+      - name: Security token events return a JsonWebToken
         href: aspnet-core/8.0/securitytoken-events.md
       - name: TrimMode defaults to full for Web SDK projects
         href: aspnet-core/8.0/trimmode-full.md
@@ -1636,6 +1638,8 @@ items:
       items:
       - name: BinaryFormatter disabled for most projects
         href: serialization/8.0/binaryformatter-disabled.md
+      - name: PublishedTrimmed projects fail reflection-based serialization
+        href: serialization/8.0/publishtrimmed.md
       - name: Reflection-based deserializer resolves metadata eagerly
         href: serialization/8.0/metadata-resolving.md
     - name: .NET 7

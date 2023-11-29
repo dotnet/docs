@@ -1,6 +1,6 @@
 ﻿namespace LinqSamples;
 
-public class ReturnQueryFromMethod
+public static class ReturnQueryFromMethod
 {
     public static void ReturnQueryFromMethod1()
     {
@@ -16,7 +16,7 @@ public class ReturnQueryFromMethod
                 where i < 4
                 select i.ToString();
 
-        int[] nums = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        int[] nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
         var myQuery1 = QueryMethod1(nums);
         // </return_query_from_method_1>

@@ -5,7 +5,7 @@ ms.date: 07/27/2023
 ---
 # Empty keys added to dictionary by configuration binder
 
-In previous versions, when configuration was bound to a dictionary type, any keys without corresponding values in the configuration were skipped and weren't added to the dictionary. The behavior has changed such that those keys are longer skipped but instead automatically created with their default values. This change ensures that all keys listed in the configuration will be present within the dictionary.
+In previous versions, when configuration was bound to a dictionary type, any keys without corresponding values in the configuration were skipped and weren't added to the dictionary. The behavior has changed such that those keys are no longer skipped but instead automatically created with their default values. This change ensures that all keys listed in the configuration will be present within the dictionary.
 
 ## Version introduced
 

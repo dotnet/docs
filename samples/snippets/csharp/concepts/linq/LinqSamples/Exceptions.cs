@@ -45,7 +45,7 @@ public static class Exceptions
                 @"C:\newFolder\" + s;
 
         // Data source.
-        string[] files = { "fileA.txt", "fileB.txt", "fileC.txt" };
+        string[] files = ["fileA.txt", "fileB.txt", "fileC.txt"];
 
         // Demonstration query that throws.
         var exceptionDemoQuery =
@@ -60,7 +60,6 @@ public static class Exceptions
                 Console.WriteLine($"Processing {item}");
             }
         }
-
         catch (InvalidOperationException e)
         {
             Console.WriteLine(e.Message);

@@ -9,7 +9,7 @@ ms.custom:
 
 # Overview
 
-MSTestRunner is a light-weight and portable alternative to [microsoft/vstest](https://github.com/microsoft/vstest) for running tests in continuous integration pipelines, and in VisualStudio TestExplorer (Coming soon!).
+MSTest Runner is a light-weight and portable alternative to [microsoft/vstest](https://github.com/microsoft/vstest) for running tests in continuous integration pipelines, and in VisualStudio TestExplorer (Coming soon!).
 
 This runner is embedded directly in your MSTest test project, and there is no additional application (e.g. vstest.console / dotnet test) or any additional infrastructure (e.g. dotnet SDK) needed to run your tests.
 

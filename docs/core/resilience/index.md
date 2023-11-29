@@ -3,7 +3,7 @@ title: Introduction to resilient app development
 description: Learn about resiliency as it relates to .NET and how to build a resilience pipeline.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/16/2023
+ms.date: 11/29/2023
 ---
 
 # Introduction to resilient app development
@@ -71,24 +71,32 @@ To add a strategy to the pipeline, call any of the available `Add*` extension me
 
 For more information, see [Resilience strategies](https://www.pollydocs.org/strategies).
 
-## Add enrichment
+## Metrics enrichment
 
-Enrichment is the automatic augmentation of telemetry with well-known state, in the form of name/value pairs. For example, an app might emit a log that includes the _operation_ and _result code_ as columns to represent the outcome of some operation. In this situation and depending on peripheral context, enrichment adds _Cluster name_, _Process name_, _Region_, _Tenant ID_, and more to the log as it's sent to the telemetry backend. When enrichment is added, the app code doesn't need to do anything extra to benefit from enriched metrics.
+_Enrichment_ is the automatic augmentation of telemetry with well-known state, in the form of name/value pairs. For example, an app might emit a log that includes the _operation_ and _result code_ as columns to represent the outcome of some operation. In this situation and depending on peripheral context, enrichment adds _Cluster name_, _Process name_, _Region_, _Tenant ID_, and more to the log as it's sent to the telemetry backend. When enrichment is added, the app code doesn't need to do anything extra to benefit from enriched metrics.
 
-Imagine 1,000 globally distributed service instances generating logs and metrics. When you encounter an issue on your service dashboard, it's crucial to quickly identify the problematic region or data center. Enrichment ensures that metric records contain the necessary information to pinpoint failures in distributed systems. Without enrichment, the burden falls on the app code to internally manage this state, integrate it into the logging process, and manually transmit it. Enrichment simplifies this process, seamlessly handling it without affecting the app's logic.
+### How enrichment works
+
+Imagine 1,000 globally distributed service instances generating logs and metrics. When you encounter an issue on your [service dashboard](/dotnet/aspire/dashboard), it's crucial to quickly identify the problematic region or data center. Enrichment ensures that metric records contain the necessary information to pinpoint failures in distributed systems. Without enrichment, the burden falls on the app code to internally manage this state, integrate it into the logging process, and manually transmit it. Enrichment simplifies this process, seamlessly handling it without affecting the app's logic.
+
+In the case of resiliency, when you add enrichment the following dimensions are added to the outgoing telemetry:
+
+- `error.type`: Low-cardinality version of an exception's information.
+- `request.name`: The name of the request.
+- `request.dependency.name`: The name of the dependency.
+
+Under the covers, resilience enrichment is built on top of Polly's Telemetry `MeteringEnricher`. For more information, see [Polly: Metering enrichment](https://www.pollydocs.org/advanced/telemetry#metering-enrichment).
 
 ### Add resilience enrichment
 
-In addition to registering a resilience pipeline, you can also register resilience enrichment. To add enrichment, call the `AddResilienceEnricher` extensions method on the `IServiceCollection` instance.
+In addition to registering a resilience pipeline, you can also register resilience enrichment. To add enrichment, call the <xref:Microsoft.Extensions.DependencyInjection.ResilienceServiceCollectionExtensions.AddResilienceEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection)> extensions method on the `IServiceCollection` instance.
 
 :::code language="csharp" source="snippets/resilience/Program.cs" id="enricher":::
 
 By calling the `AddResilienceEnricher` extension method, you're adding dimensions on top of the default ones that are built into the underlying Polly library. The following enrichment dimensions are added:
 
-- Exception enrichment based on the <xref:Microsoft.Extensions.Diagnostics.ExceptionSummarization.IExceptionSummarizer>, which provides a mechanism to summarize exceptions for use in telemetry.
-- Request metadata enrichment based on <xref:Microsoft.Extensions.Http.Diagnostics.RequestMetadata>, which holds the request metadata for telemetry.
-
-For more information, see [Polly: Telemetry metrics](https://www.pollydocs.org/advanced/telemetry#metrics).
+- Exception enrichment based on the <xref:Microsoft.Extensions.Diagnostics.ExceptionSummarization.IExceptionSummarizer>, which provides a mechanism to summarize exceptions for use in telemetry. For more information, see [Exception summarization](../diagnostics/diagnostic-exception-summary.md).
+- Request metadata enrichment based on <xref:Microsoft.Extensions.Http.Diagnostics.RequestMetadata>, which holds the request metadata for telemetry. For more information, see [Polly: Telemetry metrics](https://www.pollydocs.org/advanced/telemetry#metrics).
 
 ## Use resilience pipeline
 

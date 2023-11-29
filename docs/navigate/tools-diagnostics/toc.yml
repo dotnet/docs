@@ -1796,16 +1796,20 @@ items:
           - name: SYSLIB1220-SYSLIB1229
             href: ../../fundamentals/syslib-diagnostics/syslib1220-1229.md
             displayProperty: syslib1220, syslib1221, syslib1222, syslib1223, syslib1224, syslib1225, syslib1226, syslib1227, syslib1228, syslib1229
-  - name: Package validation
+  - name: API compatibility
     items:
-      - name: Get started
-        displayName: package validation
-        href: ../../fundamentals/package-validation/overview.md
-      - name: Baseline package validator
-        href: ../../fundamentals/package-validation/baseline-version-validator.md
-      - name: Compatible framework in package validator
-        href: ../../fundamentals/package-validation/compatible-framework-in-package-validator.md
-      - name: Compatible framework validator
-        href: ../../fundamentals/package-validation/compatible-framework-validator.md
-      - name: Diagnostic IDs
-        href: ../../fundamentals/package-validation/diagnostic-ids.md
+    - name: Package validation
+      items:
+        - name: Get started
+          displayName: package validation
+          href: ../../fundamentals/apicompat/package-validation/overview.md
+        - name: Baseline package validator
+          href: ../../fundamentals/apicompat/package-validation/baseline-version-validator.md
+        - name: Compatible framework in package validator
+          href: ../../fundamentals/apicompat/package-validation/compatible-framework-in-package-validator.md
+        - name: Compatible framework validator
+          href: ../../fundamentals/apicompat/package-validation/compatible-framework-validator.md
+        - name: Diagnostic IDs
+          href: ../../fundamentals/apicompat/package-validation/diagnostic-ids.md
+    - name: Microsoft.DotNet.ApiCompat.Tool global tool
+      href: ../../fundamentals/apicompat/global-tool.md

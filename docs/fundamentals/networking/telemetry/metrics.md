@@ -154,7 +154,7 @@ This will allow you to intercept and modify the requests before they are forward
 
 :::code language="csharp" source="snippets/metrics/Program.cs" id="snippet_Enrichment":::
 
-In case you are working with [`IHttpClientFactory`](../../../core/extensions/httpclient-factory.md), you can use xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddHttpMessageHandler%2A to register the `EnrichmentHandler`:
+In case you are working with [`IHttpClientFactory`](../../../core/extensions/httpclient-factory.md), you can use <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddHttpMessageHandler%2A> to register the `EnrichmentHandler`:
 
 :::code language="csharp" source="snippets/metrics/Program.cs" id="snippet_EnrichmentWithFactory":::
 

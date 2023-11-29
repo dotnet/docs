@@ -119,7 +119,7 @@ Testing.Platform test project are built as executables, and can be debugged dire
 
 1. Set breakpoint into the test that you'd like to debug.
 
-1. Go to Debug > Start Debugging, (or press `F5`) to debug the selected test project.
+1. Go to `Debug > Start Debugging`, (or press `F5`) to debug the selected test project.
 
 All tests will be executed until your test with a breakpoint is reached. Step through your test to debug it. Once you are done debugging the application will resume running all remaining tests, unless you stop it.
 

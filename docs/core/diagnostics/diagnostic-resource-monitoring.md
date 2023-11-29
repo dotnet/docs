@@ -1,7 +1,7 @@
 ---
 title: Diagnostic resource monitoring
 description: Learn how to use the diagnostic resource monitoring library in .NET.
-ms.date: 11/02/2023
+ms.date: 11/29/2023
 ---
 
 # Resource monitoring
@@ -54,6 +54,8 @@ The preceding code:
 The following is an example of the output from the preceding code:
 
 :::image type="content" source="media/resource-monitoring-output.png" lightbox="media/resource-monitoring-output.png" alt-text="Example Resource Monitoring app output.":::
+
+For the source code of this example, see the [Resource monitoring sample](https://github.com/dotnet/docs/tree/main/docs/core/diagnostics/snippets/resource-monitoring).
 
 ## Kubernetes probes
 

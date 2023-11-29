@@ -4,13 +4,13 @@ public static class Example
     // This Click event is marked with the async modifier.
     public static void Main() => DoSomethingAsync().Wait();
 
-    static async Task DoSomethingAsync()
+    private static async Task DoSomethingAsync()
     {
         var result = await DelayAsync();
         Console.WriteLine("Result: " + result);
     }
 
-    static async Task<int> DelayAsync()
+    private static async Task<int> DelayAsync()
     {
         await Task.Delay(100);
         return 5;

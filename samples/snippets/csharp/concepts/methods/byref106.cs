@@ -9,7 +9,7 @@ public static class ByRefExample
         Console.WriteLine("Back in Main, value = {0}", value);
     }
 
-    static void ModifyValue(ref int i)
+    private static void ModifyValue(ref int i)
     {
         i = 30;
         Console.WriteLine("In ModifyValue, parameter value = {0}", i);

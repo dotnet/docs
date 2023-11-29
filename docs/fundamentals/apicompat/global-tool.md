@@ -1,12 +1,15 @@
 ---
 title: Microsoft.DotNet.ApiCompat.Tool global tool
 description: Learn about the Microsoft.DotNet.ApiCompat.Tool global tool, which performs API compatibility checks on assemblies and packages.
-ms.date: 11/27/2023
+ms.date: 11/29/2023
 ---
 
 # Microsoft.DotNet.ApiCompat.Tool global tool
 
-The Microsoft.DotNet.ApiCompat.Tool tool performs API compatibility checks on assemblies and packages.
+The Microsoft.DotNet.ApiCompat.Tool tool performs API compatibility checks on assemblies and packages. The tool has two modes:
+
+- Compare a package against a baseline package.
+- Compare an assembly against a baseline assembly.
 
 ## Install
 
@@ -32,11 +35,15 @@ apicompat [command] [options]
 
 ## Commands
 
-- **`package | --package`**
+- **`package | --package <PACKAGE_FILE>`**
 
-  Validates the compatibility of package assets.
+  Validates the compatibility of package assets. If unspecified, the tool compares assemblies. `<PACKAGE_FILE>` specifies the path to the package file.
 
 ## Options
+
+Some options apply to both assembly and package validation. Others apply to [assemblies only](#assembly-specific-options) or [packages only](#package-specific-options).
+
+### General options
 
 - **`--version`**
 
@@ -90,13 +97,17 @@ apicompat [command] [options]
 
   Enables the rule that checks whether parameter names have changed in public methods.
 
+### Assembly-specific options
+
+These options are only applicable when assemblies are compared.
+
 - **`-l, --left, --left-assembly <PATH>`**
 
-  (REQUIRED) Specifies the path to one or more assemblies that serve as the *left side* to compare.
+  Specifies the path to one or more assemblies that serve as the *left side* to compare. This option is required when comparing assemblies.
 
 - **`-r, --right, --right-assembly`**
 
-  (REQUIRED) Specifies the path to one or more assemblies that serve as the *right side* to compare.
+  Specifies the path to one or more assemblies that serve as the *right side* to compare. This option is required when comparing assemblies.
 
 - **`--strict-mode`**
 
@@ -122,10 +133,56 @@ apicompat [command] [options]
 
   Specifies a transformation pattern for the *right side* assemblies.
 
+### Package-specific options
+
+These options are only applicable when packages are compared.
+
+- **`--baseline-package`**
+
+  Specifies the path to a baseline package to validate against the current package.
+
+- **`--runtime-graph`**
+
+  Specifies the path to the runtime graph to read from.
+
+- **`--run-api-compat`**
+
+  Performs API compatibility checks on the package assets. The default is `true`.
+
+- **`--enable-strict-mode-for-compatible-tfms`**
+
+  Validates API compatibility in strict mode for contract and implementation assemblies for all compatible target frameworks. The default is `true`.
+
+- **`--enable-strict-mode-for-compatible-frameworks-in-package`**
+
+  Validates API compatibility in strict mode for assemblies that are compatible based on their target framework.
+
+- **`--enable-strict-mode-for-baseline-validation`**
+
+  Validates API compatibility in strict mode for package baseline checks.
+
+- **`--package-assembly-references`**
+
+  Specifies the paths to assembly references or their underlying directories for a specific target framework in the package. Separate multiple values with a comma.
+
+- **`--baseline-package-assembly-references`**
+
+  Specifies the paths to assembly references or their underlying directories for a specific target framework in the *baseline* package. Separate multiple values with a comma.
+
+- **`--baseline-package-frameworks-to-ignore`**
+
+  Specifies the set of target frameworks to ignore from the baseline package. The framework string must exactly match the folder name in the baseline package.
+
 ## Example
 
-The following command compares the .NET 7 and .NET 8 versions of an assembly.
+The following command compares the current and baseline versions of an assembly.
 
 ```dotnetcli
-apicompat -l "C:\artifacts\bin\LibApp5\release_net7.0\LibApp5.dll" -r "c:\artifacts\bin\LibApp5\release_net8.0\LibApp5.dll"
+apicompat --left bin\Release\net8.0\LibApp5.dll --right bin\Release\net8.0\LibApp5-baseline.dll
+```
+
+The following command compares the current and baseline versions of a package.
+
+```dotnetcli
+apicompat package "bin\Release\LibApp5.1.0.0.nupkg" --baseline-package "bin\Release\LibApp5.2.0.0.nupkg"
 ```

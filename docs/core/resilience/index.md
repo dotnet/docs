@@ -69,7 +69,7 @@ To add a strategy to the pipeline, call any of the available `Add*` extension me
 - `AddFallback`: Do something else when experiencing failures, which improves user experience.
 - `AddHedging`: Issue multiple requests in case of high latency or failure, which can improve responsiveness.
 
-For more information, see [Resilience strategies](https://www.pollydocs.org/strategies).
+For more information, see [Resilience strategies](https://www.pollydocs.org/strategies). For examples, see [Build resilient HTTP apps: Key development patterns](http-resilience.md).
 
 ## Metrics enrichment
 

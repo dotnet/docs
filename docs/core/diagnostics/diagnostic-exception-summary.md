@@ -1,7 +1,7 @@
 ---
 title: Exception summarization in C#
 description: Learn the value proposition of exception summarization within diagnostic metrics for .NET app development.
-ms.date: 10/30/2023
+ms.date: 11/29/2023
 ---
 
 # Exception summarization
@@ -12,7 +12,7 @@ This article relies on the [Microsoft.Extensions.Diagnostics.ExceptionSummarizat
 
 ## The goal of exception summarization
 
-Metric tags typically support a limited number of distinct values, and as such they are not suitable to represent values which are highly variable, such as the result of `Exception.ToString`. An exception summary represents a low-cardinality version of an exception's information, suitable for such cases.
+Metric tags typically support a limited number of distinct values, and as such they are not suitable to represent values which are highly variable, such as the result of <xref:System.Exception.ToString?displayProperty=nameWithType>. An exception summary represents a low-cardinality version of an exception's information, suitable for such cases.
 
 The goal of exception summarization is twofold:
 

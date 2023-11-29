@@ -65,7 +65,7 @@ Executables are generated in these folders for each globally installed tool, alt
 
 ### `--tool-path` tools
 
-Local tools with explicit tool paths are stored wherever you specified the `--tool-path` parameter to point to. They're stored in the same way as global tools: an executable binary with the actual binaries in a sibling `.store` directory.
+Tools with explicit tool paths are stored wherever you specified the `--tool-path` parameter to point to. They're stored in the same way as global tools: an executable binary with the actual binaries in a sibling `.store` directory.
 
 ### Local tools
 

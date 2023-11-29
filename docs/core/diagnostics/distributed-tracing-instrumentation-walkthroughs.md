@@ -250,10 +250,10 @@ if(activity != null)
 ```
 
 - OpenTelemetry provides a set of recommended
-[conventions](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/README.md)
+[conventions](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/general/trace.md)
 for setting Tags on Activities that represent common types of application work.
 
-- If you are instrumenting functions with high-performance requirements,
+- If you're instrumenting functions with high-performance requirements,
 <xref:System.Diagnostics.Activity.IsAllDataRequested?displayProperty=nameWithType> is a hint that indicates whether any
 of the code listening to Activities intends to read auxiliary information such as Tags. If no listener will read it, then there
 is no need for the instrumented code to spend CPU cycles populating it. For simplicity, this sample doesn't apply that

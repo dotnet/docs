@@ -61,7 +61,13 @@ Methods may have a list of *parameters*, which represent values or variable refe
 
 Like types, methods may also have a set of type parameters, for which type arguments must be specified when the method is called. Unlike types, the type arguments can often be inferred from the arguments of a method call and need not be explicitly given.
 
-The *signature* of a method must be unique in the class in which the method is declared. The signature of a method consists of the name of the method, the number of type parameters, and the number, modifiers, and types of its parameters. The signature of a method doesn't include the return type.
+The *signature* of a method must be unique in the class in which the method is declared. The signature of a method consists of the following:
+
+- The name of the method
+- The number, modifiers, and types of its parameters
+- The number of type parameters in generic methods.
+
+The signature of a method doesn't include the return type.
 
 When a method body is a single expression, the method can be defined using a compact expression format, as shown in the following example:
 

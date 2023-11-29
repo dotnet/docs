@@ -60,11 +60,7 @@ public static class NewOperator
     private static void Array()
     {
         // <SnippetArray>
-        var numbers = new int[3];
-        numbers[0] = 10;
-        numbers[1] = 20;
-        numbers[2] = 30;
-
+        int[] numbers = [10, 20, 30];
         Console.WriteLine(string.Join(", ", numbers));
         // Output:
         // 10, 20, 30
@@ -74,9 +70,9 @@ public static class NewOperator
     private static void ArrayInitialization()
     {
         // <SnippetArrayInitialization>
-        var a = new int[3] { 10, 20, 30 };
-        var b = new int[] { 10, 20, 30 };
-        var c = new[] { 10, 20, 30 };
+        int[] a = [10, 20, 30];
+        int[] b = [10, 20, 30];
+        int[] c = [10, 20, 30];
         Console.WriteLine(c.GetType());  // output: System.Int32[]
         // </SnippetArrayInitialization>
     }

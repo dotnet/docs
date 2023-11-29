@@ -1,4 +1,5 @@
 ﻿// <Snippet107>
+
 using System;
 
 public class RefSwapExample

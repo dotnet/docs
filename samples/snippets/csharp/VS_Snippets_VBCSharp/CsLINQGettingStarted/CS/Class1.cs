@@ -3,7 +3,6 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Text;
 using System.Xml.Linq;
-using System.Data.Linq;
 
 namespace LINQGettingStarted_1
 {
@@ -16,7 +15,7 @@ namespace LINQGettingStarted_1
         {
             // The Three Parts of a LINQ Query:
             // 1. Data source.
-            int[] numbers = new int[7] { 0, 1, 2, 3, 4, 5, 6 };
+            int[] numbers = [ 0, 1, 2, 3, 4, 5, 6 ];
 
             // 2. Query creation.
             // numQuery is an IEnumerable<int>
@@ -45,28 +44,13 @@ namespace LINQGettingStarted_1
             XElement contacts = XElement.Load(@"c:\myContactList.xml");
             // </snippet2>
 
-            // <snippet3>
-            // Create a data source from a SQL Server database.
-            // using System.Data.Linq;
-            DataContext db = new DataContext(@"c:\northwind\northwnd.mdf");
-            // </snippet3>
-
-            //// <snippet37>
-            //Northwnd db = new Northwnd(@"c:\northwnd.mdf");
-
-            //// Query for customers in London.
-            //IQueryable<Customer> custQuery =
-            //    from cust in db.Customers
-            //    where cust.City == "London"
-            //    select cust;
-            //// </snippet37>
         }
         //The Three Parts of a LINQ Query
         static void DeferredExecution()
         {
 
             //  Data source.
-            int[] numbers = new int[7] { 0, 1, 2, 3, 4, 5, 6 };
+            int[] numbers = [ 0, 1, 2, 3, 4, 5, 6 ];
 
             //  Query creation.
             IEnumerable<int> numQuery =
@@ -134,8 +118,8 @@ namespace LINQGettingStarted_1
         static void Main()
         {
             // Create the first data source.
-            List<Student> students = new List<Student>()
-            {
+            List<Student> students = 
+            [
                 new Student { First="Svetlana",
                     Last="Omelchenko",
                     ID=111,
@@ -154,15 +138,15 @@ namespace LINQGettingStarted_1
                     Street="125 Main Street",
                     City="Lake City",
                     Scores= new List<int> { 88, 94, 65, 91 } },
-            };
+            ];
 
             // Create the second data source.
-            List<Teacher> teachers = new List<Teacher>()
-            {
+            List<Teacher> teachers =
+            [
                 new Teacher { First="Ann", Last="Beebe", ID=945, City="Seattle" },
                 new Teacher { First="Alex", Last="Robinson", ID=956, City="Redmond" },
                 new Teacher { First="Michiyo", Last="Sato", ID=972, City="Tacoma" }
-            };
+            ];
 
             // Create the query.
             var peopleInSeattle = (from student in students
@@ -179,8 +163,6 @@ namespace LINQGettingStarted_1
                 Console.WriteLine(person);
             }
 
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
         }
     }
     /* Output:
@@ -197,12 +179,12 @@ namespace LINQGettingStarted_1
         {
             // Create the data source by using a collection initializer.
             // The Student class was defined previously in this topic.
-            List<Student> students = new List<Student>()
-            {
+            List<Student> students =
+            [
                 new Student {First="Svetlana", Last="Omelchenko", ID=111, Scores = new List<int>{97, 92, 81, 60}},
                 new Student {First="Claire", Last="O’Donnell", ID=112, Scores = new List<int>{75, 84, 91, 39}},
                 new Student {First="Sven", Last="Mortensen", ID=113, Scores = new List<int>{88, 94, 65, 91}},
-            };
+            ];
 
             // Create the query.
             var studentsToXML = new XElement("Root",
@@ -218,9 +200,6 @@ namespace LINQGettingStarted_1
             // Execute the query.
             Console.WriteLine(studentsToXML);
 
-            // Keep the console open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
         }
     }
     // </snippet9>
@@ -250,7 +229,7 @@ namespace LINQGettingStarted_1
         static void Main()
         {
             // Data source.
-            double[] radii = { 1, 2, 3 };
+            double[] radii = [ 1, 2, 3 ];
 
             // LINQ query using method syntax.
             IEnumerable<string> output = 
@@ -268,9 +247,6 @@ namespace LINQGettingStarted_1
                 Console.WriteLine(s);
             }
                 
-            // Keep the console open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
         }
     }
     /* Output:
@@ -292,8 +268,8 @@ namespace LINQGettingStarted_1
         }
 
         // Create a data source by using a collection initializer.
-        static List<Student> students = new List<Student>
-        {
+        static List<Student> students = 
+        [
             new Student {First="Svetlana", Last="Omelchenko", ID=111, Scores= new List<int> {97, 92, 81, 60}},
             new Student {First="Claire", Last="O'Donnell", ID=112, Scores= new List<int> {75, 84, 91, 39}},
             new Student {First="Sven", Last="Mortensen", ID=113, Scores= new List<int> {88, 94, 65, 91}},
@@ -306,7 +282,7 @@ namespace LINQGettingStarted_1
             new Student {First="Terry", Last="Adams", ID=120, Scores= new List<int> {99, 82, 81, 79}},
             new Student {First="Eugene", Last="Zabokritski", ID=121, Scores= new List<int> {96, 85, 91, 60}},
             new Student {First="Michael", Last="Tucker", ID=122, Scores= new List<int> {94, 92, 91, 91}}
-        };
+        ];
         //</snippet11>
 
         static void Main()
@@ -554,7 +530,7 @@ namespace LINQGettingStarted_1
         {
             static void Main()
             {
-                int[] numbers = { 5, 10, 8, 3, 6, 12};
+                int[] numbers = [ 5, 10, 8, 3, 6, 12 ];
 
                 //Query syntax:
                 IEnumerable<int> numQuery1 =
@@ -575,11 +551,6 @@ namespace LINQGettingStarted_1
                 {
                     Console.Write(i + " ");
                 }
-
-                // Keep the console open in debug mode.
-                Console.WriteLine(System.Environment.NewLine);
-                Console.WriteLine("Press any key to exit");
-                Console.ReadKey();
             }
         }
         /*

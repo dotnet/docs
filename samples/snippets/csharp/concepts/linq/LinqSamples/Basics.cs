@@ -5,9 +5,9 @@ namespace LinqSamples;
 public static class Basics
 {
     // We're not displaying the output, so these could be filled with dummy data
-    static readonly int[] scores = { 0 }; // Max is called on this, so one value is needed
-    static readonly City[] cities = { };
-    static readonly Country[] countries = { };
+    static readonly int[] scores = [0]; // Max is called on this, so one value is needed
+    static readonly City[] cities = [];
+    static readonly Country[] countries = [];
 
     public static void Basics1()
     {
@@ -58,7 +58,7 @@ public static class Basics
     {
         // <basics5>
         // Data source.
-        int[] scores = { 90, 71, 82, 93, 75, 82 };
+        int[] scores = [90, 71, 82, 93, 75, 82];
 
         // Query Expression.
         IEnumerable<int> scoreQuery = //query variable
@@ -240,8 +240,8 @@ public static class Basics
 
     public static void Basics17()
     {
-        string[] categories = { };
-        Product[] products = { };
+        string[] categories = [];
+        Product[] products = [];
 
         // <basics17>
         var categoryQuery =
@@ -258,7 +258,7 @@ public static class Basics
     public static void Basics18()
     {
         // <basics18>
-        string[] names = { "Svetlana Omelchenko", "Claire O'Donnell", "Sven Mortensen", "Cesar Garcia" };
+        string[] names = ["Svetlana Omelchenko", "Claire O'Donnell", "Sven Mortensen", "Cesar Garcia" ];
         IEnumerable<string> queryFirstNames =
             from name in names
             let firstName = name.Split(' ')[0]

@@ -1,7 +1,7 @@
 ---
 title: Top-level statements - C# tutorial
 description: This tutorial shows how you can use top-level statements to experiment and prove concepts while exploring your ideas
-ms.date: 08/19/2021
+ms.date: 11/14/2023
 ---
 # Tutorial: Explore ideas using top-level statements to build code as you learn
 
@@ -145,7 +145,7 @@ for (int i = 0; i < 20; i++)
 Console.WriteLine();
 
 string[] answers =
-{
+[
     "It is certain.",       "Reply hazy, try again.",     "Don't count on it.",
     "It is decidedly so.",  "Ask again later.",           "My reply is no.",
     "Without a doubt.",     "Better not tell you now.",   "My sources say no.",
@@ -156,7 +156,7 @@ string[] answers =
     "Outlook good.",
     "Yes.",
     "Signs point to yes.",
-};
+];
 
 var index = new Random().Next(answers.Length - 1);
 Console.WriteLine(answers[index]);

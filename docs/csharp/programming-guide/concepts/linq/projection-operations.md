@@ -24,7 +24,7 @@ The standard query operator methods that perform projection are listed in the fo
 The following example uses the `select` clause to project the first letter from each string in a list of strings.
 
 ```csharp
-List<string> words = new() { "an", "apple", "a", "day" };
+List<string> words = ["an", "apple", "a", "day" ];
 
 var query = from word in words
             select word.Substring(0, 1);
@@ -46,7 +46,7 @@ foreach (string s in query)
 The following example uses multiple `from` clauses to project each word from each string in a list of strings.
 
 ```csharp
-List<string> phrases = new() { "an apple a day", "the quick brown fox" };
+List<string> phrases = ["an apple a day", "the quick brown fox"];
 
 var query = from phrase in phrases
             from word in phrase.Split(' ')
@@ -125,13 +125,13 @@ class Bouquet
 
 static void SelectVsSelectMany()
 {
-    List<Bouquet> bouquets = new()
-    {
+    List<Bouquet> bouquets = 
+    [
         new Bouquet { Flowers = new List<string> { "sunflower", "daisy", "daffodil", "larkspur" }},
         new Bouquet { Flowers = new List<string> { "tulip", "rose", "orchid" }},
         new Bouquet { Flowers = new List<string> { "gladiolis", "lily", "snapdragon", "aster", "protea" }},
         new Bouquet { Flowers = new List<string> { "larkspur", "lilac", "iris", "dahlia" }}
-    };
+    ];
 
     IEnumerable<List<string>> query1 = bouquets.Select(bq => bq.Flowers);
 

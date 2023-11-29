@@ -27,9 +27,7 @@ The Service Object developer should be aware of what the POS for .NET framework 
 > [!NOTE]
 > When deriving from the POS for .NET **Base** or **Basic** classes, the Service Object should generally not change the value of **CommonProperties.State** to **ControlState.Closed**. Doing so prevents cleanup of the event queue, and POS for .NET may later throw exceptions as it tries to process events already in the queue.
 
-## See Also
-
-#### Reference
+## See also
 
 - <xref:Microsoft.PointOfService.BaseServiceObjects.PinPadProperties>
 - <xref:Microsoft.PointOfService.StatusUpdateEventHandler>

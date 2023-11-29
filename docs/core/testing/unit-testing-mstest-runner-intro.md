@@ -17,7 +17,7 @@ MSTestRunner lives in [microsoft/testfx](https://github.com/microsoft/testfx/tre
 
 ## Enabling MSTest Runner in a MSTest project
 
-To enable MSTest Runnerin an MSTest project, you need to add `<UseMSTestRunner>true</UseMSTestRunner>` into your project file, and make sure you are using MSTest 3.2.0-preview or newer:
+To enable MSTest Runner in an MSTest project, you need to add `<UseMSTestRunner>true</UseMSTestRunner>` into your project file, and make sure you are using MSTest 3.2.0-preview or newer:
 
 ```csproj
 <Project Sdk="Microsoft.NET.Sdk">

@@ -102,7 +102,7 @@ In the preceding code:
 - `AddPrometheusHttpListener` configures OpenTelemetry to expose Prometheus' metrics HTTP endpoint on port `9184`.
 
 > [!NOTE]
-> This configuration differs for ASP.NET Core apps, where metrics shall be exported with `OpenTelemetry.Exporter.Prometheus.AspNetCore` instead of `HttpListener`. See the [related ASP.NET Core example](/aspnet/core/log-mon/metrics/metric#create-the-starter-app).
+> This configuration differs for ASP.NET Core apps, where metrics shall be exported with `OpenTelemetry.Exporter.Prometheus.AspNetCore` instead of `HttpListener`. See the [related ASP.NET Core example](/aspnet/core/log-mon/metrics/metrics#create-the-starter-app).
 
 Run the app and leave it running so measurements can be collected:
 

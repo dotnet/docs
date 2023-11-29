@@ -107,7 +107,7 @@ Testing.Platform test project are built as executables, and can be run directly.
 
 1. Navigate the test project you want to run in Solution Explorer, right click it and select `Set as Startup Project`.
 
-1. Go to Debug > Start without Debugging, (or press `Ctrl + F5`) to run the selected test project.
+1. Go to `Debug > Start without Debugging`, (or press `Ctrl + F5`) to run the selected test project.
 
 Console window will pop up with the execution and summary of your test run.
 
@@ -218,16 +218,6 @@ It can be configured using the following options:
 | `--hangdump-timeout` | Specify the timeout after which the dump will be generated. The timeout value is specified in one of the following formats:<br/>1.5h, 1.5hour, 1.5hours<br/>90m, 90min, 90minute, 90minutes<br/>5400s, 5400sec, 5400second, 5400seconds. Default is 30m. |
 | `--hangdump-type` | Specify the type of the dump. Valid values are `Mini`, `Heap`, `Triage` (only .NET 6+), `Full`. Default type is `Full`. For more information visit [MS Learn Crash Dump Types](https://learn.microsoft.com/dotnet/core/diagnostics/collect-dumps-crash#types-of-mini-dumps) |
 
-To be able to use this feature you will need to
-
-1. Add a dependency to `Microsoft.Testing.Platform.Extensions.HangDump`
-
-2. Update your `Program.cs` to add
-
-    ```csharp
-    using Microsoft.Testing.Platform.Extensions;
-    builder.AddHangDumpGenerator();
-    ```
 
 ### Crash Dump
 
@@ -241,13 +231,3 @@ It can be configured using the following options:
 | `⁠-⁠-⁠crashdump-⁠filename` | Specify the file name of the dump. |
 | `--crashdump-type` | Specify the type of the dump. Valid values are `Mini`, `Heap`, `Triage`, `Full`. Default type is `Full`. For more information visit [MS Learn Crash Dump Types](https://learn.microsoft.com/dotnet/core/diagnostics/collect-dumps-crash#types-of-mini-dumps) |
 
-To be able to use this feature you will need to
-
-1. Add a dependency to `Microsoft.Testing.Platform.Extensions`
-
-1. Update your `Program.cs` to add
-
-    ```csharp
-    using Microsoft.Testing.Platform.Extensions;
-    builder.AddCrashDumpGenerator();
-    ```

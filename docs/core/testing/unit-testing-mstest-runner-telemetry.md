@@ -1,6 +1,6 @@
 ---
-title: MSTest Test Runner Telemetry
-description: Learn about MSTest Test Runner Telemetry.
+title: MSTest Runner Telemetry
+description: Learn about MSTest Runner Telemetry.
 author: nohwnd
 ms.author: jajares
 ms.date: 11/28/2023

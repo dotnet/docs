@@ -91,7 +91,7 @@ Publishing the test project using `dotnet publish` and running the application d
 #### Using `dotnet test`
 
 > > [!IMPORTANT]
-> `dotnet test` is currently working only with MSTest, NUnit and xUnit tests. TPTF tests will not run using `dotnet test` and no error will be reported.
+> `dotnet test` is currently working only with MSTest, NUnit and xUnit tests.
 
 For tests authored with MSTest, NUnit or xUnit test framework, it is possible to run tests with `dotnet test`.
 

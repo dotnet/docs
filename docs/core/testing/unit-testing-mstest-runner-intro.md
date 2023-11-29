@@ -17,7 +17,7 @@ MSTestRunner lives in [microsoft/testfx](https://github.com/microsoft/testfx/tre
 
 ## Enabling MSTest Runner in an MSTest project
 
-To enable MSTest Runnerin an MSTest project, you need to add `<UseMSTestRunner>true</UseMSTestRunner>` into your project file, and make sure you are using MSTest 3.2.0-preview or newer: 
+To enable MSTest Runnerin an MSTest project, you need to add `<UseMSTestRunner>true</UseMSTestRunner>` into your project file, and make sure you are using MSTest 3.2.0-preview or newer:
 
 ```csproj
 <Project Sdk="Microsoft.NET.Sdk">
@@ -175,7 +175,6 @@ Available options:
 | `--report-trx-filename` | Name of the generated TRX report. The default name matches the following format `<UserName>_<MachineName>_<yyyy-MM-dd HH:mm:ss>.trx`. |
 
 The report will be saved inside the default `TestResults` folder that can be specified through the `--results-directory` command line argument.
-
 
 ## Troubleshooting
 

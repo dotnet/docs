@@ -35,14 +35,18 @@ To enable MSTest Runner in an MSTest project, you need to add `<UseMSTestRunner>
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- All these 3 packages can be replaced by reference to:
-        <PackageReference Include="MSTest" Version="3.2.0-preview.23570.1" />
+    <!-- Replace these 3 packages by reference to just MSTest 
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.2" />
+      <PackageReference Include="MSTest.TestAdapter" Version="3.2.0-preview.23570.1" />
+      <PackageReference Include="MSTest.TestFramework" Version="3.2.0-preview.23570.1" />
     -->
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.2" />
-    <PackageReference Include="MSTest.TestAdapter" Version="3.2.0-preview.23570.1" />
-    <PackageReference Include="MSTest.TestFramework" Version="3.2.0-preview.23570.1" />
 
-    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="MSTest" Version="3.2.0-preview.23570.1" />
+
+    <!-- Replace coverlet collector 
+      <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    --> 
+    <PackageReference Include="Microsoft.Testing.Platform.Extensions.CodeCoverage" Version="17.9.4-beta.23563.1" />
   </ItemGroup>
 
 </Project>
@@ -147,11 +151,13 @@ To run a test project in CI add one step for each test executable that you wish 
     script: '.\Contoso.MyTests\bin\Debug\net8.0\Contoso.MyTests.exe'
 ```
 
-## Test Reports
+## Extensions
+
+### Test Reports
 
 A test report is a file that contains information about the execution and outcome of the tests
 
-### TRX Test Report
+#### TRX Test Report
 
 Visual Studio Test Result file (TRX) is the default format for publishing test results.
 
@@ -217,7 +223,6 @@ It can be configured using the following options:
 | `-⁠-⁠hangdump-⁠filename` | Specify the file name of the dump. |
 | `--hangdump-timeout` | Specify the timeout after which the dump will be generated. The timeout value is specified in one of the following formats:<br/>1.5h, 1.5hour, 1.5hours<br/>90m, 90min, 90minute, 90minutes<br/>5400s, 5400sec, 5400second, 5400seconds. Default is 30m. |
 | `--hangdump-type` | Specify the type of the dump. Valid values are `Mini`, `Heap`, `Triage` (only .NET 6+), `Full`. Default type is `Full`. For more information visit [MS Learn Crash Dump Types](https://learn.microsoft.com/dotnet/core/diagnostics/collect-dumps-crash#types-of-mini-dumps) |
-
 
 ### Crash Dump
 

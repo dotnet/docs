@@ -15,7 +15,7 @@ This runner is embedded directly in your MSTest test project, and there is no ad
 
 MSTestRunner lives in [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) repository, and comes bundled with MSTest in 3.2.0-preview. This preview is available on [test-tools NuGet feed](https://pkgs.dev.azure.com/dnceng/public/_packaging/test-tools/nuget/v3/index.json).
 
-## Enabling MSTest Runner in an MSTest project
+## Enabling MSTest Runner in a MSTest project
 
 To enable MSTest Runnerin an MSTest project, you need to add `<UseMSTestRunner>true</UseMSTestRunner>` into your project file, and make sure you are using MSTest 3.2.0-preview or newer:
 

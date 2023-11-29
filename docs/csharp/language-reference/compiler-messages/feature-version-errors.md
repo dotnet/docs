@@ -35,6 +35,8 @@ f1_keywords:
   - "CS8703" # ERR_InvalidModifierForLanguageVersion  The modifier '{0}' is not valid for this item in C# {1}. Please use language version '{2}' or greater.
   - "CS8704" # ERR_ImplicitImplementationOfNonPublicInterfaceMember  Type does not implement interface member. Type cannot implicitly implement a non-public member in selected version.
   - "CS8706" # ERR_LanguageVersionDoesNotSupportInterfaceImplementationForMember  Type cannot implement interface member '{1}' in type '{2}' because feature '{3}' is not available in 
+  - "CS8919"
+  - "CS8929"
   - "CS8957" # ERR_NoImplicitConvTargetTypedConditional  Conditional expression is not valid in language version {0} because a common type was not found between '{1}' and '{2}'
   - "CS8912" # ERR_InheritingFromRecordWithSealedToString  Inheriting from a record with a sealed 'Object.ToString' is not supported
   - "CS9014" # ERR_UseDefViolationPropertyUnsupportedVersion  Use of possibly unassigned property
@@ -87,6 +89,8 @@ helpviewer_keywords:
   - "CS8706"
   - "CS8957"
   - "CS8912"
+  - "CS8919"
+  - "CS8929"
   - "CS9014"
   - "CS9015"
   - "CS9016"
@@ -128,6 +132,8 @@ That's be design. The text closely matches the text of the compiler error / warn
 - **CS8706**: *Type cannot implement interface member because a feature is not available in this version.*
 - **CS8904**: *Invalid variance: The type parameter must be valid.*
 - **CS8912**: *Inheriting from a record with a sealed 'Object.ToString' is not supported.*
+- **CS8919**: *Cannot implement specified interface member in type because the target runtime doesn't support static abstract members in interfaces*
+- **CS8929**: *Method cannot implement interface member in type because the target runtime doesn't support static abstract members in interfaces.*
 - **CS8957**: *Conditional expression is not valid in language version because a common type was not found between types.*
 - **CS8967**: *Newlines inside a non-verbatim interpolated string are not supported in C#*
 - **CS9014**: *Error: Use of possibly unassigned property. Upgrade to auto-default the property.*

@@ -3,16 +3,16 @@ static class ParamsExample
 {
     static void Main()
     {
-        var fromArray = GetVowels(["apple", "banana", "pear"]);
+        string fromArray = GetVowels(["apple", "banana", "pear"]);
         Console.WriteLine($"Vowels from array: '{fromArray}'");
 
-        var fromMultipleArguments = GetVowels("apple", "banana", "pear");
+        string fromMultipleArguments = GetVowels("apple", "banana", "pear");
         Console.WriteLine($"Vowels from multiple arguments: '{fromMultipleArguments}'");
 
-        var fromNull = GetVowels(null);
+        string fromNull = GetVowels(null);
         Console.WriteLine($"Vowels from null: '{fromNull}'");
 
-        var fromNoValue = GetVowels();
+        string fromNoValue = GetVowels();
         Console.WriteLine($"Vowels from no value: '{fromNoValue}'");
     }
 

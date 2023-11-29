@@ -6,7 +6,7 @@ public static class Example
 
     private static async Task DoSomethingAsync()
     {
-        var result = await DelayAsync();
+        int result = await DelayAsync();
         Console.WriteLine("Result: " + result);
     }
 

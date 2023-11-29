@@ -11,7 +11,7 @@
         moto.StartEngine();
         moto.AddGas(15);
         // <Snippet46>
-        var travelTime = moto.Drive(170, speed: 55);
+        int travelTime = moto.Drive(170, speed: 55);
         // </Snippet46>
         Console.WriteLine("Travel time: approx. {0} hours", travelTime);
     }

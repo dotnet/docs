@@ -1,19 +1,12 @@
 ﻿// <Snippet102>
-using System;
-using System.Diagnostics;
-using System.Threading.Tasks;
-
-public class Example
+public static class Example
 {
     // This Click event is marked with the async modifier.
-    public static void Main()
-    {
-       DoSomethingAsync().Wait();
-    }
+    public static void Main() => DoSomethingAsync().Wait();
 
     private static async Task DoSomethingAsync()
     {
-        int result = await DelayAsync();
+        var result = await DelayAsync();
         Console.WriteLine("Result: " + result);
     }
 

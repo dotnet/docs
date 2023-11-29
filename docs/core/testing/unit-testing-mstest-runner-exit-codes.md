@@ -1,6 +1,6 @@
 ---
-title: MSTest Test Runner Exit Codes
-description: Learn about MSTest Test Runner exit codes.
+title: MSTest Runner Exit Codes
+description: Learn about MSTest Runner exit codes.
 author: nohwnd
 ms.author: jajares
 ms.date: 11/28/2023

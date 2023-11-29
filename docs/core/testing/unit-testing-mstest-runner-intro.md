@@ -1,6 +1,6 @@
 ---
-title: MSTest Test Runner
-description: Learn about MSTest Test Runner, a lightweight way to run tests without depending on dotnet SDK.
+title: MSTest Runner
+description: Learn about MSTest Runner, a lightweight way to run tests without depending on dotnet SDK.
 author: nohwnd
 ms.author: jajares
 ms.date: 11/28/2023

@@ -52,11 +52,8 @@ Building the application will generate an executable application for your test p
 
 ## Running & Debugging tests
 
-::: info
-
-Telemetry is by default collected by the runner, see [Telemetry](./unit-testing-mstest-runner-telemetry.md) to learn more.
-
-:::
+> [!IMPORTANT]
+> Telemetry is by default collected by the runner, see [Telemetry](./unit-testing-mstest-runner-telemetry.md) to learn more.
 
 MSTest Runner test projects are built as executables that can be run (or debugged) directly. There is no additional test running console or command that is needed.
 
@@ -78,29 +75,23 @@ Publishing the test project using `dotnet publish` and running the application d
 
 `dotnet exec` can be used to run an already built test project, this is an alternative to running the application directly. `dotnet exec` requires path to the built test project dll.
 
-:::caution
+> [!IMPORTANT]
+> Providing path to the test project executable (.exe) will result in an error:
 
-Providing path to the test project executable (.exe) will result in an error:
-
-```plaintext
-Error:
-  An assembly specified in the application dependencies manifest
-  (Contoso.MyTests.deps.json) has already been found but with a different
-  file extension:
-    package: 'Contoso.MyTests', version: '1.0.0'
-    path: 'Contoso.MyTests.dll'
-    previously found assembly: 'S:\t\Contoso.MyTests\bin\Debug\net8.0\Contoso.MyTests.exe'
-```
-
-:::
+> ```plaintext
+> Error:
+>   An assembly specified in the application dependencies manifest
+>   (Contoso.MyTests.deps.json) has already been found but with a different
+>   file extension:
+>     package: 'Contoso.MyTests', version: '1.0.0'
+>     path: 'Contoso.MyTests.dll'
+>     previously found assembly: 'S:\t\Contoso.MyTests\bin\Debug\net8.0\Contoso.MyTests.exe'
+> ```
 
 #### Using `dotnet test`
 
-:::caution
-
- `dotnet test` is currently working only with MSTest, NUnit and xUnit tests. TPTF tests will not run using `dotnet test` and no error will be reported.
-
-:::
+> > [!IMPORTANT]
+> `dotnet test` is currently working only with MSTest, NUnit and xUnit tests. TPTF tests will not run using `dotnet test` and no error will be reported.
 
 For tests authored with MSTest, NUnit or xUnit test framework, it is possible to run tests with `dotnet test`.
 
@@ -136,11 +127,8 @@ All tests will be executed until your test with a breakpoint is reached. Step th
 
 Testing.Platform tests partially integrate with Test Explorer. Tests can be Run and Debugged from Test Explorer.
 
-:::caution
-
-Automatic update of tests without building the project is not yet available.
-
-:::
+> [!IMPORTANT]
+> Automatic update of tests without building the project is not yet available.
 
 To run a test, navigate to Test Explorer, select the test (or tests) to run. Right click it, and choose `Run`.
 

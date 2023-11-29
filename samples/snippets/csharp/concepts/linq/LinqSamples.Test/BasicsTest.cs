@@ -8,7 +8,7 @@ public class BasicsTest
     [Fact]
     public void Basics5Test()
     {
-        var sw = InitTest();
+        StringWriter sw = InitTest();
 
         Basics.Basics5();
         Assert.Equal(
@@ -22,7 +22,7 @@ public class BasicsTest
     [Fact]
     public void Basics18Test()
     {
-        var sw = InitTest();
+        StringWriter sw = InitTest();
 
         Basics.Basics18();
         Assert.Equal("Svetlana Claire Sven Cesar ", sw.ToString());

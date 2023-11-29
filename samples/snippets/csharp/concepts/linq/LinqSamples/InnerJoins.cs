@@ -33,7 +33,7 @@ public static class InnerJoins
                 PetName = pet.Name
             };
 
-        string result = "";
+        var result = "";
         foreach (var ownerAndPet in query)
         {
             result += $"\"{ownerAndPet.PetName}\" is owned by {ownerAndPet.OwnerName}\r\n";
@@ -79,7 +79,7 @@ public static class InnerJoins
                             new { OwnerName = person.FirstName, PetName = pet.Name });
         // </inner_joins_method_syntax_1>
 
-        string result = "";
+        var result = "";
         foreach (var ownerAndPet in query)
         {
             result += $"\"{ownerAndPet.PetName}\" is owned by {ownerAndPet.OwnerName}\r\n";
@@ -121,9 +121,8 @@ public static class InnerJoins
             }
             select employee.FirstName + " " + employee.LastName;
 
-        string result = "";
-        result += "The following people are both employees and students:\r\n";
-        foreach (string name in query)
+        var result = "The following people are both employees and students:\r\n";
+        foreach (var name in query)
         {
             result += $"{name}\r\n";
         }
@@ -158,15 +157,14 @@ public static class InnerJoins
         // <inner_joins_method_syntax_2>
         var query = employees.Join(
              students,
-             employee => new {FirstName = employee.FirstName, LastName = employee.LastName },
+             employee => new { FirstName = employee.FirstName, LastName = employee.LastName },
              student => new { FirstName = student.FirstName, student.LastName },
              (employee, student) => $"{employee.FirstName} {employee.LastName}"
          );
         // </inner_joins_method_syntax_2>
 
-        string result = "";
-        result += "The following people are both employees and students:\r\n";
-        foreach (string name in query)
+        var result = "The following people are both employees and students:\r\n";
+        foreach (var name in query)
         {
             result += $"{name}\r\n";
         }
@@ -214,11 +212,11 @@ public static class InnerJoins
             join dog in dogs on new
             {
                 Owner = person,
-                Letter = cat.Name.Substring(0, 1)
+                Letter = cat.Name[..1]
             } equals new
             {
                 dog.Owner,
-                Letter = dog.Name.Substring(0, 1)
+                Letter = dog.Name[..1]
             }
             select new
             {
@@ -226,7 +224,7 @@ public static class InnerJoins
                 DogName = dog.Name
             };
 
-        string result = "";
+        var result = "";
         foreach (var obj in query)
         {
             result += $"The cat \"{obj.CatName}\" shares a house, and the first letter of their name, with \"{obj.DogName}\".\r\n";
@@ -277,12 +275,12 @@ public static class InnerJoins
                 cat => cat.Owner,
                 (person, cat) => new { person, cat })
             .Join(dogs,
-                commonOwner => new { Owner = commonOwner.person, Letter = commonOwner.cat.Name.Substring(0, 1) },
-                dog => new { dog.Owner, Letter = dog.Name.Substring(0, 1) },
+                commonOwner => new { Owner = commonOwner.person, Letter = commonOwner.cat.Name[..1] },
+                dog => new { dog.Owner, Letter = dog.Name[..1] },
                 (commonOwner, dog) => new { CatName = commonOwner.cat.Name, DogName = dog.Name });
         // </inner_joins_method_syntax_3>
 
-        string result = "";
+        var result = "";
         foreach (var obj in query)
         {
             result += $"The cat \"{obj.CatName}\" shares a house, and the first letter of their name, with \"{obj.DogName}\".\r\n";
@@ -320,8 +318,7 @@ public static class InnerJoins
                 PetName = subpet.Name
             };
 
-        string result = "";
-        result += "Inner join using GroupJoin():\r\n";
+        var result = "Inner join using GroupJoin():\r\n";
         foreach (var v in query1)
         {
             result += $"{v.OwnerName} - {v.PetName}\r\n";
@@ -389,8 +386,7 @@ public static class InnerJoins
                 (groupJoinPet, subpet) => new { OwnerName = groupJoinPet.person.FirstName, PetName = subpet.Name });
         // </inner_joins_method_syntax_4>
 
-        string result = "";
-        result += "Inner join using GroupJoin():\r\n";
+        var result = "Inner join using GroupJoin():\r\n";
         foreach (var v in query1)
         {
             result += $"{v.OwnerName} - {v.PetName}\r\n";

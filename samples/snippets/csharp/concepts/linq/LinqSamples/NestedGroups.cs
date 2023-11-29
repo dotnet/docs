@@ -2,7 +2,7 @@
 
 namespace LinqSamples;
 
-public class NestedGroups
+public static class NestedGroups
 {
     public static void NestedGroup1()
     {
@@ -10,10 +10,10 @@ public class NestedGroups
         var nestedGroupsQuery =
             from student in students
             group student by student.Year into newGroup1
-            from newGroup2 in (
-                from student in newGroup1
-                group student by student.LastName
-            )
+            from newGroup2 in
+            from student in newGroup1
+            group student by student.LastName
+
             group newGroup2 by newGroup1.Key;
 
         foreach (var outerGroup in nestedGroupsQuery)

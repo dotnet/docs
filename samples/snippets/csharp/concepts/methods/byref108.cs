@@ -1,7 +1,5 @@
 ﻿// <Snippet108>
-using System;
-
-class RefArrayExample
+static class RefArrayExample
 {
     static void Main()
     {

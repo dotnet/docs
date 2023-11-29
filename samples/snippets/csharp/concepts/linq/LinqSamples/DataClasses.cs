@@ -30,7 +30,7 @@
             this.FirstName = FirstName;
             this.LastName = LastName;
             ID = StudentID;
-            this.ExamScores = ExamScores ?? Enumerable.Empty<int>().ToList();
+            this.ExamScores = ExamScores ?? [];
         }
 
         public static List<Student> students =

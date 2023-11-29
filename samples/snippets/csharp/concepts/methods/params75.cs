@@ -1,25 +1,22 @@
 ﻿//<Snippet75>
-using System;
-using System.Linq;
-
-class ParamsExample
+static class ParamsExample
 {
     static void Main()
     {
-        string fromArray = GetVowels(["apple", "banana", "pear"]);
+        var fromArray = GetVowels(["apple", "banana", "pear"]);
         Console.WriteLine($"Vowels from array: '{fromArray}'");
 
-        string fromMultipleArguments = GetVowels("apple", "banana", "pear");
+        var fromMultipleArguments = GetVowels("apple", "banana", "pear");
         Console.WriteLine($"Vowels from multiple arguments: '{fromMultipleArguments}'");
-        
-        string fromNull = GetVowels(null);
+
+        var fromNull = GetVowels(null);
         Console.WriteLine($"Vowels from null: '{fromNull}'");
 
-        string fromNoValue = GetVowels();
+        var fromNoValue = GetVowels();
         Console.WriteLine($"Vowels from no value: '{fromNoValue}'");
     }
 
-    static string GetVowels(params string[] input)
+    static string GetVowels(params string[]? input)
     {
         if (input == null || input.Length == 0)
         {

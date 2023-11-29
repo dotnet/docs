@@ -83,7 +83,7 @@ using Azure.ResourceManager.ServiceBus;
 
 ArmClient client = new ArmClient(new DefaultAzureCredential());
 SubscriptionResource subscription = client.GetDefaultSubscription();
-ResourceGroupResource resourceGroup = 
+ResourceGroupResource resourceGroup =
     client.GetDefaultSubscription().GetResourceGroup(resourceGroupName);
 ```
 
@@ -157,7 +157,7 @@ ArmClient client = new ArmClient(new DefaultAzureCredential());
 // Next we get a resource group object
 // ResourceGroup is a {ResourceName}Resource object from above
 SubscriptionResource subscription = await client.GetDefaultSubscriptionAsync();
-ResourceGroupResource resourceGroup = 
+ResourceGroupResource resourceGroup =
     await subscription.GetResourceGroupAsync("myRgName");
 
 // Next we get the collection for the virtual machines
@@ -199,16 +199,16 @@ However, keep in mind that some of those properties could be null. You can usual
 You may not want to manually create the `resourceId` from a pure `string`. Each `{ResourceName}Resource` class has a static method that can help you create the resource identifier string.
 
 ```csharp
-ResourceIdentifier resourceId = 
+ResourceIdentifier resourceId =
     AvailabilitySetResource.CreateResourceIdentifier(
         "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-        "resourceGroupName", 
-        "resourceName"); 
+        "resourceGroupName",
+        "resourceName");
 ```
 
 #### Manage existing resources
 
-Performing operations on resources that already exist is a common use case when using the management client libraries. In this scenario, you usually have the identifier of the resource you want to work on as a string. Although the new object hierarchy is great for provisioning and working within the scope of a given parent, it is not the most efficient when it comes to this specific scenario.  
+Performing operations on resources that already exist is a common use case when using the management client libraries. In this scenario, you usually have the identifier of the resource you want to work on as a string. Although the new object hierarchy is great for provisioning and working within the scope of a given parent, it is not the most efficient when it comes to this specific scenario.
 
 Here's an example how you can access an `AvailabilitySetResource` object and manage it directly with its resource identifier:
 
@@ -247,11 +247,11 @@ This approach required a lot of code and three API calls are made to Azure. The 
 So, the previous example would end up looking like this:
 
 ```csharp
-ResourceIdentifier resourceId = 
+ResourceIdentifier resourceId =
     AvailabilitySetResource.CreateResourceIdentifier(
         "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
         "resourceGroupName",
-        "resourceName"); 
+        "resourceName");
 // We construct a new armClient to work with
 ArmClient client = new ArmClient(new DefaultAzureCredential());
 // Next we get the AvailabilitySet resource client from the armClient
@@ -377,8 +377,8 @@ For more detailed examples, take a look at [samples](https://github.com/Azure/az
 
 ### More sample code
 
-- [Managing Resource Groups](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager/samples/Sample2_ManagingResourceGroups.md)
-- [Creating a Virtual Network](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager/samples/Sample3_CreatingAVirtualNetwork.md)
+- [Managing Resource Groups](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager/samples/DocSamples/Sample2_ManagingResourceGroups.cs)
+- [Creating a Virtual Network](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager/samples/DocSamples/Sample3_CreatingAVirtualNetwork.cs)
 - [.NET Management Library Code Samples](/samples/browse/?languages=csharp&terms=managing%20using%20Azure%20.NET%20SDK)
 
 ### Additional Documentation

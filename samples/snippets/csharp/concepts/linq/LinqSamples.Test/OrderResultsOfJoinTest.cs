@@ -1,17 +1,17 @@
 ﻿using Xunit;
 using static LinqSamples.Test.Shared;
 
-namespace LinqSamples.Test
-{
-    public class OrderResultsOfJoinTest
-    {
-        [Fact]
-        public void OrderResultsOfJoinTest1()
-        {
-            var sw = InitTest();
+namespace LinqSamples.Test;
 
-            OrderResultsOfJoin.OrderResultsOfJoin1();
-            Assert.Equal(
+public class OrderResultsOfJoinTest
+{
+    [Fact]
+    public void OrderResultsOfJoinTest1()
+    {
+        StringWriter sw = InitTest();
+
+        OrderResultsOfJoin.OrderResultsOfJoin1();
+        Assert.Equal(
 @"Beverages
   Cola       1
   Tea        1
@@ -26,6 +26,5 @@ Vegetables
   Bok Choy   3
   Carrots    3
 ", sw.ToString());
-        }
     }
 }

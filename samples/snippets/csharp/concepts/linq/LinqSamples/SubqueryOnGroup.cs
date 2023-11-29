@@ -19,7 +19,7 @@ public static class SubqueryOnGroup
                 ).Max()
             };
 
-        int count = queryGroupMax.Count();
+        var count = queryGroupMax.Count();
         Console.WriteLine($"Number of groups = {count}");
 
         foreach (var item in queryGroupMax)
@@ -39,10 +39,10 @@ public static class SubqueryOnGroup
                 .Select(studentGroup => new
                 {
                     Level = studentGroup.Key,
-                    HighestScore = studentGroup.Select(student2 => student2.ExamScores.Average()).Max()
+                    HighestScore = studentGroup.Max(student2 => student2.ExamScores.Average())
                 });
 
-        int count = queryGroupMax.Count();
+        var count = queryGroupMax.Count();
         Console.WriteLine($"Number of groups = {count}");
 
         foreach (var item in queryGroupMax)

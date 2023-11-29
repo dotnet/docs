@@ -60,7 +60,6 @@ public static class Exceptions
                 Console.WriteLine($"Processing {item}");
             }
         }
-
         catch (InvalidOperationException e)
         {
             Console.WriteLine(e.Message);

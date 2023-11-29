@@ -21,7 +21,8 @@ dotnet publish [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
     [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
     [--os <OS>] [-r|--runtime <RUNTIME_IDENTIFIER>]
     [--sc|--self-contained [true|false]] [--no-self-contained]
-    [-s|--source <SOURCE>] [--use-current-runtime, --ucr [true|false]]
+    [-s|--source <SOURCE>] [--tl:[auto|on|off]]
+    [--use-current-runtime, --ucr [true|false]]
     [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
 dotnet publish -h|--help
@@ -208,11 +209,13 @@ For more information, see the following resources:
 
   Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). For more information, see [.NET application publishing](../deploying/index.md) and [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md). If you use this option, use `--self-contained` or `--no-self-contained` also.
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+[!INCLUDE [tl](../../../includes/cli-tl.md)]
 
 - **`--use-current-runtime, --ucr [true|false]`**
 
   Sets the `RuntimeIdentifier` to a platform portable `RuntimeIdentifier` based on the one of your machine. This happens implicitly with properties that require a `RuntimeIdentifier`, such as `SelfContained`, `PublishAot`, `PublishSelfContained`, `PublishSingleFile`, and `PublishReadyToRun`. If the property is set to false, that implicit resolution will no longer occur.
+
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 

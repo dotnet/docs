@@ -1,6 +1,6 @@
 ﻿namespace LinqSamples;
 
-public class ReturnQueryFromMethod
+public static class ReturnQueryFromMethod
 {
     public static void ReturnQueryFromMethod1()
     {

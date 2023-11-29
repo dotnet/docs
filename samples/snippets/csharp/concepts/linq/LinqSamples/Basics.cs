@@ -34,7 +34,7 @@ public static class Basics
     public static void Basics3()
     {
         // <basics3>
-        int highScoreCount = (
+        var highScoreCount = (
             from score in scores
             where score > 80
             select score
@@ -50,7 +50,7 @@ public static class Basics
             where score > 80
             select score;
 
-        int scoreCount = highScoresQuery3.Count();
+        var scoreCount = highScoresQuery3.Count();
         // </basics4>
     }
 
@@ -68,7 +68,7 @@ public static class Basics
             select score; //must end with select or group
 
         // Execute the query to produce the results
-        foreach (int testScore in scoreQuery)
+        foreach (var testScore in scoreQuery)
         {
             Console.WriteLine(testScore);
         }
@@ -94,7 +94,7 @@ public static class Basics
     public static void Basics7()
     {
         // <basics7>
-        int highestScore = (
+        var highestScore = (
             from score in scores
             select score
         ).Max();
@@ -104,7 +104,7 @@ public static class Basics
             from score in scores
             select score;
 
-        int highScore = scoreQuery.Max();
+        var highScore = scoreQuery.Max();
         // the following returns the same result
         highScore = scores.Max();
         // </basics7>
@@ -113,7 +113,7 @@ public static class Basics
     public static void Basics7a()
     {
         // <basics7a>
-        List<City> largeCitiesList = (
+        var largeCitiesList = (
             from country in countries
             from city in country.Cities
             where city.Population > 10000
@@ -126,8 +126,7 @@ public static class Basics
             from city in country.Cities
             where city.Population > 10000
             select city;
-
-        List<City> largeCitiesList2 = largeCitiesQuery.ToList();
+        var largeCitiesList2 = largeCitiesQuery.ToList();
         // </basics7a>
     }
 
@@ -223,7 +222,7 @@ public static class Basics
         // <basics15>
         IEnumerable<City> queryCityPop =
             from city in cities
-            where city.Population < 200000 && city.Population > 100000
+            where city.Population is < 200000 and > 100000
             select city;
         // </basics15>
     }
@@ -258,13 +257,13 @@ public static class Basics
     public static void Basics18()
     {
         // <basics18>
-        string[] names = ["Svetlana Omelchenko", "Claire O'Donnell", "Sven Mortensen", "Cesar Garcia" ];
+        string[] names = ["Svetlana Omelchenko", "Claire O'Donnell", "Sven Mortensen", "Cesar Garcia"];
         IEnumerable<string> queryFirstNames =
             from name in names
             let firstName = name.Split(' ')[0]
             select firstName;
 
-        foreach (string s in queryFirstNames)
+        foreach (var s in queryFirstNames)
         {
             Console.Write(s + " ");
         }
@@ -275,7 +274,6 @@ public static class Basics
 
     public static void Basics19()
     {
-
         var students = Student.students;
 
         // <basics19>

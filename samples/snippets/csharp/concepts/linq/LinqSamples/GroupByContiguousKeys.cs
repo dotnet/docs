@@ -62,24 +62,24 @@ class Chunk<TKey, TSource> : IGrouping<TKey, TSource>
     public TKey Key { get; }
 
     // Stores a reference to the enumerator for the source sequence
-    IEnumerator<TSource> enumerator;
+    private IEnumerator<TSource> enumerator;
 
     // A reference to the predicate that is used to compare keys.
-    Func<TSource, bool> predicate;
+    private Func<TSource, bool> predicate;
 
     // Stores the contents of the first source element that
     // belongs with this chunk.
-    readonly ChunkItem head;
+    private readonly ChunkItem head;
 
     // End of the list. It is repositioned each time a new
     // ChunkItem is added.
-    ChunkItem? tail;
+    private ChunkItem? tail;
 
     // Flag to indicate the source iterator has reached the end of the source sequence.
     internal bool isLastSourceElement;
 
     // Private object for thread synchronization
-    readonly object m_Lock;
+    private readonly object m_Lock;
 
     // REQUIRES: enumerator != null && predicate != null
     public Chunk(TKey key, [DisallowNull] IEnumerator<TSource> enumerator, [DisallowNull] Func<TSource, bool> predicate)
@@ -98,11 +98,11 @@ class Chunk<TKey, TSource> : IGrouping<TKey, TSource>
     }
 
     // Indicates that all chunk elements have been copied to the list of ChunkItems.
-    bool DoneCopyingChunk => tail == null;
+    private bool DoneCopyingChunk => tail == null;
 
     // Adds one ChunkItem to the current group
     // REQUIRES: !DoneCopyingChunk && lock(this)
-    void CopyNextChunkElement()
+    private void CopyNextChunkElement()
     {
         // Try to advance the iterator on the source sequence.
         isLastSourceElement = !enumerator.MoveNext();

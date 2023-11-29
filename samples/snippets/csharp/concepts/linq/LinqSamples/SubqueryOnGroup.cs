@@ -39,10 +39,7 @@ public static class SubqueryOnGroup
                 .Select(studentGroup => new
                 {
                     Level = studentGroup.Key,
-                    HighestScore = studentGroup
-                        //.Select(student2 => student2.ExamScores.Average())    // fold into single method call
-                        //.Max()
-                        .Max(student2 => student2.ExamScores.Average())
+                    HighestScore = studentGroup.Max(student2 => student2.ExamScores.Average())
                 });
 
         var count = queryGroupMax.Count();

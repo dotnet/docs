@@ -128,10 +128,6 @@ public static class CustomJoins
                 ).ToList()
             );
 
-        // Optional. Store the newly created student objects in memory
-        // for faster access in future queries [Hint: not here!]
-        //List<Student> students = queryNamesScores.ToList();
-        //foreach (var student in students)
         foreach (var student in queryNamesScores)
         {
             Console.WriteLine($"The average score of {student.FirstName} {student.LastName} is {student.ExamScores.Average()}.");

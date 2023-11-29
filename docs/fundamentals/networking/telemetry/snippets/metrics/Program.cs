@@ -88,7 +88,7 @@ ServiceCollection services = new();
 services.AddHttpClient(Options.DefaultName).AddHttpMessageHandler(() => new EnrichmentHandler());
 
 ServiceProvider serviceProvider = services.BuildServiceProvider();
-HttpClient client = serviceProvider.GetService<HttpClient>()!;
+HttpClient client = serviceProvider.GetRequiredService<HttpClient>();
 
 await client.GetStringAsync("https://httpbin.org/response-headers?Enrichment-Value=A");
 await client.GetStringAsync("https://httpbin.org/response-headers?Enrichment-Value=B");
@@ -136,7 +136,7 @@ public class MetricsTests
         var meterFactory = serviceProvider.GetService<IMeterFactory>();
         var collector = new MetricCollector<double>(meterFactory,
             "System.Net.Http", "http.client.request.duration");
-        var client = serviceProvider.GetService<HttpClient>()!;
+        var client = serviceProvider.GetRequiredService<HttpClient>();
 
         // Act
         await client.GetStringAsync("http://example.com");

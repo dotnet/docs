@@ -162,13 +162,16 @@ In case you are working with [`IHttpClientFactory`](../../../core/extensions/htt
 
 ## `IMeterFactory` and `IHttpClientFactory` integration
 
-HTTP metrics were designed with isolation and testability in mind meaning that metrics can be emitted by a custom <xref:System.Diagnostics.Metrics.Meter> instance.
-This can be achived by assigning a custom <xref:System.Diagnostics.Metrics.IMeterFactory> instance to <xref:System.Net.Http.SocketsHttpHandler.MeterFactory?displayProperty=nameWithType> or <xref:System.Net.Http.HttpClientHandler.MeterFactory?displayProperty=nameWithType>.
-
-When working with [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) and [`IHttpClientFactory`](../../../core/extensions/httpclient-factory.md), the default `IHttpClientFactory` implementation will automatically pick the `IMeterFactory` instance registered in the `ServiceCollection` and assign it to the primary handler it creates internally.
+HTTP metrics were designed with isolation and testability in mind. These aspects are supported by the use of <xref:System.Diagnostics.Metrics.IMeterFactory>, which enables publishing metrics by a custom <xref:System.Diagnostics.Metrics.Meter> instance in order to keep Meters isolated from each other.
+By default, all metrics are emitted by a global <xref:System.Diagnostics.Metrics.Meter> internal to the `System.Net.Http` library. This behavior can be overriden by assigning a custom <xref:System.Diagnostics.Metrics.IMeterFactory> instance to <xref:System.Net.Http.SocketsHttpHandler.MeterFactory?displayProperty=nameWithType> or <xref:System.Net.Http.HttpClientHandler.MeterFactory?displayProperty=nameWithType>.
 
 > [!NOTE]
 > The <xref:System.Diagnostics.Metrics.Meter.Name?displayProperty=nameWithType> is `System.Net.Http` for all metrics emitted by `HttpClientHandler` / `SocketsHttpHandler`.
+
+When working with [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) and [`IHttpClientFactory`](../../../core/extensions/httpclient-factory.md) on .NET 8+, the default `IHttpClientFactory` implementation will automatically pick the `IMeterFactory` instance registered in the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> and assign it to the primary handler it creates internally.
+
+> [!NOTE]
+> Starting with .NET 8, the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> will automatically call <xref:Microsoft.Extensions.DependencyInjection.MetricsServiceExtensions.AddMetrics> in order to initialize the metrics services and register the default <xref:System.Diagnostics.Metrics.IMeterFactory> implementation with <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. The default <xref:System.Diagnostics.Metrics.IMeterFactory> caches <xref:System.Diagnostics.Metrics.Meter> instances by name, meaning that there will be one  <xref:System.Diagnostics.Metrics.Meter> with the name `System.Net.Http` per <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>.
 
 ### Testing metrics
 
@@ -180,7 +183,7 @@ The following example demonstrates how to validate built-in metrics in unit test
 
 Metrics are [more feature-rich](../../../core/diagnostics/compare-metric-apis.md#systemdiagnosticsmetrics) than EventCounters most notably because of their multi-dimentional nature. This enables creating sophisticated queries in tools like Prometheus and getting insights on a level that is not possible with EventCounters.
 
-Nevertheless, it's important to highlight that as of .NET 8, only the `System.Net.Http` and the `System.Net.NameResolutions` libraries are instrumented using Metrics, meaning that if you need counters from the lower levels of the stack such as `System.Net.Sockets` or `System.Net.Security`, you would still need to rely on EventCounters.
+Nevertheless, it should be noted that as of .NET 8, only the `System.Net.Http` and the `System.Net.NameResolutions` libraries are instrumented using Metrics, meaning that if you need counters from the lower levels of the stack such as `System.Net.Sockets` or `System.Net.Security`, you would still need to rely on EventCounters.
 
 Moreover, there are some semantical differences between Metrics and their matching EventCounters.
 For example when using `HttpCompletionOption.ResponseContentRead`, the [`current-requests` EventCounter](../../../core/diagnostics/available-counters.md) considers a request to be active until the moment when the last byte of the request body has been read,

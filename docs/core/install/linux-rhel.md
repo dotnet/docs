@@ -55,6 +55,10 @@ The following table is a list of currently supported .NET releases on both RHEL 
 
 [!INCLUDE [linux-dnf-install-80](includes/linux-install-80-dnf.md)]
 
+## RHEL 7 ❌ .NET 8
+
+.NET 8 isn't compatible with RHEL 7 and doesn't work.
+
 ## RHEL 7 ❌ .NET 7
 
 .NET 7 isn't officially supported on RHEL 7. To install .NET 7, see [Install .NET on Linux by using an install script or by extracting binaries](linux-scripted-manual.md).

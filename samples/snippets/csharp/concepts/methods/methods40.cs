@@ -34,7 +34,7 @@ namespace MotorCycleExample
                 moto.StartEngine();
                 moto.AddGas(15);
                 _ = moto.Drive(5, 20);
-                var speed = moto.GetTopSpeed();
+                double speed = moto.GetTopSpeed();
                 Console.WriteLine("My top speed is {0}", speed);
             }
         }

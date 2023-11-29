@@ -13,7 +13,7 @@ class TestMotorcycle : Motorcycle
         var moto = new TestMotorcycle();
         moto.StartEngine();
         moto.AddGas(15);
-        var travelTime = moto.Drive(miles: 170, speed: 60);
+        int travelTime = moto.Drive(miles: 170, speed: 60);
         Console.WriteLine("Travel time: approx. {0} hours", travelTime);
     }
 }

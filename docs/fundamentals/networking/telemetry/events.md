@@ -15,9 +15,9 @@ Events give you access to:
 
 The instrumentation is based on [EventSource], allowing you to collect this information from both inside and outside the process.
 
-## Groups
+## Event providers
 
-Networking information is split across the following groups:
+Networking information is split across the following event providers:
 
 - `System.Net.Http` (`HttpClient` and `SocketsHttpHandler`)
 - `System.Net.NameResolution` (`Dns`)
@@ -26,7 +26,7 @@ Networking information is split across the following groups:
 - `Microsoft.AspNetCore.Hosting`
 - `Microsoft-AspNetCore-Server-Kestrel`
 
-The telemetry has some performance overhead when enabled, so make sure to subscribe only to groups you're actually interested in.
+The telemetry has some performance overhead when enabled, so make sure to subscribe only to event providers you're actually interested in.
 
 ## Consume events in-process
 

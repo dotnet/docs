@@ -26,9 +26,9 @@ They include information like the following:
 > [!TIP]
 > On projects targeting .NET 8+, consider using the newer and more feature-rich [networking metrics] instead of EventCounters.
 
-## Groups
+## Providers
 
-Networking information is split across the following groups:
+Networking information is split across the following providers:
 
 - `System.Net.Http` (`HttpClient` and `SocketsHttpHandler`)
 - `System.Net.NameResolution` (`Dns`)
@@ -37,7 +37,7 @@ Networking information is split across the following groups:
 - `Microsoft.AspNetCore.Hosting`
 - `Microsoft-AspNetCore-Server-Kestrel`
 
-The telemetry has some performance overhead when enabled, so make sure to subscribe only to groups you're actually interested in.
+The telemetry has some performance overhead when enabled, so make sure to subscribe only to providers you're actually interested in.
 
 ## Monitor Event Counters from outside the process
 

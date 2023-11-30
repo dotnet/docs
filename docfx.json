@@ -183,11 +183,11 @@
                 "_roslyn/**.*": "https://github.com/dotnet/docs/issues/new?template=customer-feedback.yml"
             },
             "open_source_feedback_productName": {
-                "docs/**.*": ".NET feedback",
-                "_csharplang/**.*": "C# feature specification feedback",
-                "_csharpstandard/standard/*.md": "C# Standard documentation feedback",
-                "_vblang/**.*": "Visual Basic language spec feedback",
-                "_roslyn/**.*": "Roslyn breaking feedback"
+                "docs/**.*": ".NET",
+                "_csharplang/**.*": "C# feature specification",
+                "_csharpstandard/standard/*.md": "C# Standard documentation",
+                "_vblang/**.*": "Visual Basic language spec",
+                "_roslyn/**.*": "Roslyn breaking changes"
             },
             "open_source_feedback_productDescription": {
                 "docs/**.*": "The .NET documentation is open source. Provide feedback here.",
@@ -223,6 +223,7 @@
             },
             "social_image_url": {
                 "docs/**/*.*": "/dotnet/media/dotnet-logo.png",
+                "docs/aspire/**/*.*": "/dotnet/media/dotnet-aspire-logo.png",
                 "docs/azure/**/*.*": "/dotnet/media/dotnet-bot_cloud-apps.png",
                 "docs/orleans/**/*.*": "/dotnet/media/dotnet-orleans.png",
                 "docs/iot/**/*.*": "/dotnet/media/dotnet-bot_iot.png",

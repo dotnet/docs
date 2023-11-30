@@ -79,7 +79,7 @@ For information on customizing the set of counters you're interested in, see the
 
 For example:
 
-```c#
+```C#
 services.ConfigureTelemetryModule<EventCounterCollectionModule>((module, options) =>
 {
     module.Counters.Add(new EventCounterCollectionRequest("System.Net.Http", "current-requests"));
@@ -91,7 +91,7 @@ services.ConfigureTelemetryModule<EventCounterCollectionModule>((module, options
 
 See [this sample](https://github.com/dotnet/docs/tree/main/docs/fundamentals/networking/snippets/misc/RuntimeEventCounters.cs) for subscribing to many runtime and ASP.NET event counters. Simply add an `EventCounterCollectionRequest` for every entry.
 
-```c#
+```C#
 foreach (var (eventSource, counters) in RuntimeEventCounters.EventCounters)
 {
     foreach (string counter in counters)
@@ -108,7 +108,7 @@ While the package is currently maintained as part of the [YARP] project, it can 
 
 To use it, implement the `IMetricsConsumer<TMetrics>` interface:
 
-```c#
+```C#
 public sealed class MyMetricsConsumer : IMetricsConsumer<SocketsMetrics>
 {
     public void OnMetrics(SocketsMetrics previous, SocketsMetrics current)
@@ -121,7 +121,7 @@ public sealed class MyMetricsConsumer : IMetricsConsumer<SocketsMetrics>
 
 Then register the implementations with your DI container:
 
-```c#
+```C#
 services.AddSingleton<IMetricsConsumer<SocketsMetrics>, MyMetricsConsumer>();
 services.AddTelemetryListeners();
 ```

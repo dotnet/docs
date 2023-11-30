@@ -36,7 +36,7 @@ Prefer in-process collection when possible for easier event correlation and anal
 
 [EventListener] is an API that allows you to listen to [EventSource] events from within the same process that produced them.
 
-```c#
+```C#
 using System.Diagnostics.Tracing;
 
 using var listener = new MyListener();
@@ -87,7 +87,7 @@ While the package is currently maintained as part of the [YARP] project, it can 
 
 To use it, implement the interfaces and methods (events) that you're interested in:
 
-```c#
+```C#
 public sealed class MyTelemetryConsumer : IHttpTelemetryConsumer, INetSecurityTelemetryConsumer
 {
     public void OnRequestStart(DateTime timestamp, string scheme, string host, int port, string pathAndQuery, int versionMajor, int versionMinor, HttpVersionPolicy versionPolicy)
@@ -104,7 +104,7 @@ public sealed class MyTelemetryConsumer : IHttpTelemetryConsumer, INetSecurityTe
 
 And register the implementations with your DI container:
 
-```c#
+```C#
 services.AddTelemetryConsumer<MyTelemetryConsumer>();
 ```
 
@@ -176,7 +176,7 @@ Get familiar with [`AsyncLocal`] as this type is key to correlating work across 
 
 Consider the following example:
 
-```c#
+```C#
 AsyncLocal<int> asyncLocal = new();
 asyncLocal.Value = 1;
 
@@ -208,7 +208,7 @@ The following steps show the general pattern.
 
 1. Create a mutable class that can be updated from inside event callbacks.
 
-    ```c#
+    ```C#
     public sealed class RequestInfo
     {
         public DateTime StartTime, HeadersSent;
@@ -217,7 +217,7 @@ The following steps show the general pattern.
 
 1. Set the `AsyncLocal.Value` *before* the main operation so that the state will flow into the operation.
 
-    ```c#
+    ```C#
     private static readonly AsyncLocal<RequestInfo> _requestInfo = new();
 
     public async Task SendRequestAsync(string url)
@@ -231,7 +231,7 @@ The following steps show the general pattern.
 
 1. Inside the event callbacks, check if the shared state is available and update it. `AsyncLocal.Value` will be `null` if the request was sent by a component that didn't set the `AsyncLocal.Value` in the first place.
 
-    ```c#
+    ```C#
     public void OnRequestHeadersStop(DateTime timestamp)
     {
         if (_requestInfo.Value is { } info) info.HeadersSent = timestamp;
@@ -240,7 +240,7 @@ The following steps show the general pattern.
 
 1. Process the collected information after finishing the operation.
 
-    ```c#
+    ```C#
     await _client.GetStringAsync(url);
 
     Log($"Time until headers were sent {url} was {info.HeadersSent - info.StartTime}");
@@ -305,7 +305,7 @@ For more information, see the [full example](https://github.com/dotnet/docs/tree
 
 ### Measure DNS resolutions for a given endpoint
 
-```c#
+```C#
 services.AddTelemetryConsumer(new DnsMonitor("httpbin.org"));
 
 public sealed class DnsMonitor : INameResolutionTelemetryConsumer
@@ -335,7 +335,7 @@ public sealed class DnsMonitor : INameResolutionTelemetryConsumer
 
 ### Measure time-to-headers when using HttpClient
 
-```c#
+```C#
 var info = RequestState.Current; // Initialize the AsyncLocal's value ahead of time
 
 var response = await client.GetStringAsync("http://httpbin.org/get");
@@ -375,7 +375,7 @@ public sealed class TelemetryConsumer : IHttpTelemetryConsumer
 
 This is currently the most accurate way to measure the duration of a given request.
 
-```c#
+```C#
 public sealed class KestrelTelemetryConsumer : IKestrelTelemetryConsumer
 {
     private static readonly AsyncLocal<DateTime?> _startTimestamp = new();
@@ -405,7 +405,7 @@ This sample is applicable if you have a reverse proxy that receives inbound requ
 
 This sample measures the time from receiving the request headers until they're sent out to the backend server.
 
-```c#
+```C#
 public sealed class InternalLatencyMonitor : IKestrelTelemetryConsumer, IHttpTelemetryConsumer
 {
     private record RequestInfo(DateTime StartTimestamp, string RequestId, string Path);

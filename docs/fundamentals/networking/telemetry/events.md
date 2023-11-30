@@ -1,16 +1,23 @@
 ---
-title: Networking Telemetry in .NET
-description: Learn how to consume and correlate .NET telemetry events.
+title: Networking events
+description: Learn how to consume and correlate .NET networking telemetry events.
 author: MihaZupan
 ms.author: mizupan
 ms.date: 10/18/2022
 ---
 
-# Networking telemetry in .NET
+# Networking events in .NET
 
-The .NET networking stack is instrumented at various layers. .NET gives you the option to collect accurate timings throughout the lifetime of an HTTP request and event counters to monitor overall process statistics.
+Events give you access to:
 
-Networking information is split across several groups:
+- Accurate timestamps throughout the lifetime of an operation. For example, how long it took to connect to the server and how long it took an HTTP request to receive response headers.
+- Debug/trace information that may not be obtainable by other means. For example, what kind of decisions the connection pool made and why.
+
+The instrumentation is based on [EventSource], allowing you to collect this information from both inside and outside the process.
+
+## Event providers
+
+Networking information is split across the following event providers:
 
 - `System.Net.Http` (`HttpClient` and `SocketsHttpHandler`)
 - `System.Net.NameResolution` (`Dns`)
@@ -19,141 +26,17 @@ Networking information is split across several groups:
 - `Microsoft.AspNetCore.Hosting`
 - `Microsoft-AspNetCore-Server-Kestrel`
 
-The telemetry has some performance overhead when enabled, so make sure to subscribe only to groups you're actually interested in.
+The telemetry has some performance overhead when enabled, so make sure to subscribe only to event providers you're actually interested in.
 
-> [!TIP]
-> If you're looking for information on tracking HTTP operations across different services, see the [distributed tracing documentation].
-
-## Event counters (metrics)
-
-[EventCounters] are .NET APIs used for lightweight, cross-platform, and near real-time performance metric collection.
-
-Networking components are instrumented to publish basic diagnostics information using EventCounters.
-They include information like the following:
-
-- `System.Net.Http` > `requests-started`
-- `System.Net.Http` > `requests-failed`
-- `System.Net.Http` > `http11-connections-current-total`
-- `System.Net.Security` > `all-tls-sessions-open`
-- `System.Net.Sockets` > `outgoing-connections-established`
-- `System.Net.NameResolution` > `dns-lookups-duration`
-
-> [!TIP]
-> For the full list, see [well-known counters].
-
-### Monitor metrics from outside the process
-
-#### dotnet-counters
-
-[`dotnet-counters`][dotnet-counter docs] is a cross-platform performance monitoring tool for ad-hoc health monitoring and first-level performance investigation.
-
-```console
-dotnet tool install --global dotnet-counters
-```
-
-```console
-dotnet-counters monitor --counters System.Net.Http,System.Net.Security --process-id 1234
-```
-
-The command continually refreshes the console with the latest numbers.
-
-```txt
-[System.Net.Http]
-    Current Http 1.1 Connections                       3
-    Current Http 2.0 Connections                       1
-    Current Http 3.0 Connections                       0
-    Current Requests                                   4
-    HTTP 1.1 Requests Queue Duration (ms)              0
-    HTTP 2.0 Requests Queue Duration (ms)              0
-    HTTP 3.0 Requests Queue Duration (ms)              0
-    Requests Failed                                    0
-    Requests Failed Rate (Count / 1 sec)               0
-    Requests Started                                 470
-    Requests Started Rate (Count / 1 sec)             18
-```
-
-For all the available commands and parameters, see the [dotnet-counter docs].
-
-#### Application Insights
-
-Application Insights does not collect event counters by default.
-For information on customizing the set of counters you're interested in, see the [AppInsights EventCounters docs].
-
-For example:
-
-```c#
-services.ConfigureTelemetryModule<EventCounterCollectionModule>((module, options) =>
-{
-    module.Counters.Add(new EventCounterCollectionRequest("System.Net.Http", "current-requests"));
-    module.Counters.Add(new EventCounterCollectionRequest("System.Net.Http", "requests-failed"));
-    module.Counters.Add(new EventCounterCollectionRequest("System.Net.Http", "http11-connections-current-total"));
-    module.Counters.Add(new EventCounterCollectionRequest("System.Net.Security", "all-tls-sessions-open"));
-});
-```
-
-See [this sample](https://github.com/dotnet/docs/tree/main/docs/fundamentals/networking/snippets/misc/RuntimeEventCounters.cs) for subscribing to many runtime and ASP.NET event counters. Simply add an `EventCounterCollectionRequest` for every entry.
-
-```c#
-foreach (var (eventSource, counters) in RuntimeEventCounters.EventCounters)
-{
-    foreach (string counter in counters)
-    {
-        module.Counters.Add(new EventCounterCollectionRequest(eventSource, counter));
-    }
-}
-```
-
-### Consume metrics in-process
-
-The [`Yarp.Telemetry.Consumption`] library makes it easy to consume metrics from within the process.
-While the package is currently maintained as part of the [YARP] project, it can be used in any .NET application.
-
-To use it, implement the `IMetricsConsumer<TMetrics>` interface:
-
-```c#
-public sealed class MyMetricsConsumer : IMetricsConsumer<SocketsMetrics>
-{
-    public void OnMetrics(SocketsMetrics previous, SocketsMetrics current)
-    {
-        var elapsedTime = (current.Timestamp - previous.Timestamp).TotalMilliseconds;
-        Console.WriteLine($"Received {current.BytesReceived - previous.BytesReceived} bytes in the last {elapsedTime:N2} ms");
-    }
-}
-```
-
-Then register the implementations with your DI container:
-
-```c#
-services.AddSingleton<IMetricsConsumer<SocketsMetrics>, MyMetricsConsumer>();
-services.AddTelemetryListeners();
-```
-
-The library provides the following strongly typed metrics types:
-
-- [`HttpMetrics`]
-- [`NameResolutionMetrics`]
-- [`NetSecurityMetrics`]
-- [`SocketsMetrics`]
-- [`KestrelMetrics`]
-
-## Events
-
-Events give you access to:
-
-- Accurate timestamps throughout the lifetime of an operation. For example, how long it took to connect to the server and how long it took to receive response headers.
-- Debug/trace information that may not be obtainable by other means. For example, what kind of decisions the connection pool made and why.
-
-The instrumentation is based on [EventSource], allowing you to collect this information from both inside and outside the process.
-
-### Consume events in-process
+## Consume events in-process
 
 Prefer in-process collection when possible for easier event correlation and analysis.
 
-#### EventListener
+### EventListener
 
 [EventListener] is an API that allows you to listen to [EventSource] events from within the same process that produced them.
 
-```c#
+```C#
 using System.Diagnostics.Tracing;
 
 using var listener = new MyListener();
@@ -195,7 +78,7 @@ The preceding code prints output similar to the following:
 01:637 ConnectionClosed: versionMajor=1 versionMinor=1
 ```
 
-#### Yarp.Telemetry.Consumption
+### Yarp.Telemetry.Consumption
 
 While the `EventListener` approach outlined above is useful for quick experimentation and debugging, the APIs aren't strongly typed and force you to depend on implementation details of the instrumented library.
 
@@ -204,7 +87,7 @@ While the package is currently maintained as part of the [YARP] project, it can 
 
 To use it, implement the interfaces and methods (events) that you're interested in:
 
-```c#
+```C#
 public sealed class MyTelemetryConsumer : IHttpTelemetryConsumer, INetSecurityTelemetryConsumer
 {
     public void OnRequestStart(DateTime timestamp, string scheme, string host, int port, string pathAndQuery, int versionMajor, int versionMinor, HttpVersionPolicy versionPolicy)
@@ -221,7 +104,7 @@ public sealed class MyTelemetryConsumer : IHttpTelemetryConsumer, INetSecurityTe
 
 And register the implementations with your DI container:
 
-```c#
+```C#
 services.AddTelemetryConsumer<MyTelemetryConsumer>();
 ```
 
@@ -235,9 +118,9 @@ The library provides the following strongly typed interfaces:
 
 These callbacks are called as part of the instrumented operation, so the general logging guidance applies. You should avoid blocking or performing any expensive calculations as part of the callback. Offload any post-processing work to different threads to avoid adding latency to the underlying operation.
 
-### Consume events from outside the process
+## Consume events from outside the process
 
-#### dotnet-trace
+### dotnet-trace
 
 [`dotnet-trace`][dotnet-trace docs] is a cross-platform tool that enables the collection of .NET Core traces of a running process without a native profiler.
 
@@ -254,7 +137,7 @@ For all the available commands and parameters, see the [dotnet-trace docs].
 You can analyze the captured `.nettrace` file in Visual Studio or [PerfView].
 For more information, see the [dotnet-trace analysis docs].
 
-#### PerfView
+### PerfView
 
 [PerfView] is a free, advanced performance analysis tool. It runs on Windows but can also analyze traces captured on Linux.
 
@@ -264,13 +147,13 @@ To configure the list of events to capture, specify them under `Advanced Options
 *System.Net.Sockets,*System.Net.NameResolution,*System.Net.Http,*System.Net.Security
 ```
 
-#### TraceEvent
+### TraceEvent
 
 [`TraceEvent`] is a library that allows you to consume events from different processes in real time. `dotnet-trace` and `PerfView` both rely on it.
 
 If you want to process events programmatically and in real time, see the [`TraceEvent`] docs.
 
-### Start and Stop events
+## Start and Stop events
 
 Larger operations often start with a `Start` event and end with a `Stop` event.
 For example, you'll see `RequestStart`/`RequestStop` events from `System.Net.Http` or `ConnectStart`/`ConnectStop` events from `System.Net.Sockets`.
@@ -293,7 +176,7 @@ Get familiar with [`AsyncLocal`] as this type is key to correlating work across 
 
 Consider the following example:
 
-```c#
+```C#
 AsyncLocal<int> asyncLocal = new();
 asyncLocal.Value = 1;
 
@@ -325,7 +208,7 @@ The following steps show the general pattern.
 
 1. Create a mutable class that can be updated from inside event callbacks.
 
-    ```c#
+    ```C#
     public sealed class RequestInfo
     {
         public DateTime StartTime, HeadersSent;
@@ -334,7 +217,7 @@ The following steps show the general pattern.
 
 1. Set the `AsyncLocal.Value` *before* the main operation so that the state will flow into the operation.
 
-    ```c#
+    ```C#
     private static readonly AsyncLocal<RequestInfo> _requestInfo = new();
 
     public async Task SendRequestAsync(string url)
@@ -348,7 +231,7 @@ The following steps show the general pattern.
 
 1. Inside the event callbacks, check if the shared state is available and update it. `AsyncLocal.Value` will be `null` if the request was sent by a component that didn't set the `AsyncLocal.Value` in the first place.
 
-    ```c#
+    ```C#
     public void OnRequestHeadersStop(DateTime timestamp)
     {
         if (_requestInfo.Value is { } info) info.HeadersSent = timestamp;
@@ -357,7 +240,7 @@ The following steps show the general pattern.
 
 1. Process the collected information after finishing the operation.
 
-    ```c#
+    ```C#
     await _client.GetStringAsync(url);
 
     Log($"Time until headers were sent {url} was {info.HeadersSent - info.StartTime}");
@@ -413,12 +296,6 @@ The `System.Net` stack emits such events from `Private.InternalDiagnostics.Syste
 If you change the condition in the `EventListener` example above to `eventSource.Name.Contains("System.Net")`, you will see 100+ events from different layers in the stack.
 For more information, see the [full example](https://github.com/dotnet/docs/tree/main/docs/fundamentals/networking/snippets/internal-diag-telemetry/Program.cs).
 
-## Need more telemetry?
-
-If you have suggestions for other useful information that could be exposed via events or metrics, create a [dotnet/runtime issue](https://github.com/dotnet/runtime/issues/new).
-
-If you're using the [`Yarp.Telemetry.Consumption`] library and have any suggestions, create a [microsoft/reverse-proxy issue](https://github.com/microsoft/reverse-proxy/issues/new).
-
 ## Samples
 
 - [Measure DNS resolutions for a given endpoint](#measure-dns-resolutions-for-a-given-endpoint)
@@ -428,7 +305,7 @@ If you're using the [`Yarp.Telemetry.Consumption`] library and have any suggesti
 
 ### Measure DNS resolutions for a given endpoint
 
-```c#
+```C#
 services.AddTelemetryConsumer(new DnsMonitor("httpbin.org"));
 
 public sealed class DnsMonitor : INameResolutionTelemetryConsumer
@@ -458,7 +335,7 @@ public sealed class DnsMonitor : INameResolutionTelemetryConsumer
 
 ### Measure time-to-headers when using HttpClient
 
-```c#
+```C#
 var info = RequestState.Current; // Initialize the AsyncLocal's value ahead of time
 
 var response = await client.GetStringAsync("http://httpbin.org/get");
@@ -498,7 +375,7 @@ public sealed class TelemetryConsumer : IHttpTelemetryConsumer
 
 This is currently the most accurate way to measure the duration of a given request.
 
-```c#
+```C#
 public sealed class KestrelTelemetryConsumer : IKestrelTelemetryConsumer
 {
     private static readonly AsyncLocal<DateTime?> _startTimestamp = new();
@@ -528,7 +405,7 @@ This sample is applicable if you have a reverse proxy that receives inbound requ
 
 This sample measures the time from receiving the request headers until they're sent out to the backend server.
 
-```c#
+```C#
 public sealed class InternalLatencyMonitor : IKestrelTelemetryConsumer, IHttpTelemetryConsumer
 {
     private record RequestInfo(DateTime StartTimestamp, string RequestId, string Path);
@@ -554,28 +431,25 @@ public sealed class InternalLatencyMonitor : IKestrelTelemetryConsumer, IHttpTel
 }
 ```
 
-[distributed tracing documentation]: ../../core/diagnostics/distributed-tracing.md
-[EventCounters]: ../../core/diagnostics/event-counters.md
-[well-known counters]: ../../core/diagnostics/available-counters.md
-[dotnet-counter docs]: ../../core/diagnostics/dotnet-counters.md
-[dotnet-trace docs]: ../../core/diagnostics/dotnet-trace.md
-[dotnet-trace analysis docs]: ../../core/diagnostics/dotnet-trace.md#view-the-trace-captured-from-dotnet-trace
+## Need more telemetry?
+
+If you have suggestions for other useful information that could be exposed via events or metrics, create a [dotnet/runtime issue](https://github.com/dotnet/runtime/issues/new).
+
+If you're using the [`Yarp.Telemetry.Consumption`] library and have any suggestions, create a [microsoft/reverse-proxy issue].
+
+[dotnet-trace docs]: ../../../core/diagnostics/dotnet-trace.md
+[dotnet-trace analysis docs]: ../../../core/diagnostics/dotnet-trace.md#view-the-trace-captured-from-dotnet-trace
 [PerfView]: https://github.com/microsoft/perfview
-[AppInsights EventCounters docs]: /azure/azure-monitor/app/eventcounters
 [`TraceEvent`]: https://github.com/microsoft/perfview/blob/main/documentation/TraceEvent/TraceEventLibrary.md
 [YARP]: https://github.com/microsoft/reverse-proxy
 [EventSource]: xref:System.Diagnostics.Tracing.EventSource
 [EventListener]: xref:System.Diagnostics.Tracing.EventListener
 [`Yarp.Telemetry.Consumption`]: https://www.nuget.org/packages/Yarp.Telemetry.Consumption
-[`HttpMetrics`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/Http/HttpMetrics.cs
-[`NameResolutionMetrics`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/NameResolution/NameResolutionMetrics.cs
-[`NetSecurityMetrics`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/NetSecurity/NetSecurityMetrics.cs
-[`SocketsMetrics`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/Sockets/SocketsMetrics.cs
-[`KestrelMetrics`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/Kestrel/KestrelMetrics.cs
 [`IHttpTelemetryConsumer`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/Http/IHttpTelemetryConsumer.cs
 [`INameResolutionTelemetryConsumer`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/NameResolution/INameResolutionTelemetryConsumer.cs
 [`INetSecurityTelemetryConsumer`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/NetSecurity/INetSecurityTelemetryConsumer.cs
 [`ISocketsTelemetryConsumer`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/Sockets/ISocketsTelemetryConsumer.cs
 [`IKestrelTelemetryConsumer`]: https://github.com/microsoft/reverse-proxy/blob/main/src/TelemetryConsumption/Kestrel/IKestrelTelemetryConsumer.cs
 [`AsyncLocal`]: xref:System.Threading.AsyncLocal%601
-[`ActivityID`]: ../../core/diagnostics/eventsource-activity-ids.md
+[`ActivityID`]: ../../../core/diagnostics/eventsource-activity-ids.md
+[microsoft/reverse-proxy issue]: https://github.com/microsoft/reverse-proxy/issues/new

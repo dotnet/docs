@@ -35,7 +35,7 @@ You've written the following code:
 
 You then try to pack the project (using either `dotnet pack` or Visual Studio), and it fails with the following error:
 
-```
+```dotnetcli
 D:\demo>dotnet pack
 Microsoft (R) Build Engine version 17.0.0-preview-21460-01+8f208e609 for .NET
 Copyright (C) Microsoft Corporation. All rights reserved.

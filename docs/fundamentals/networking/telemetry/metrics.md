@@ -19,10 +19,12 @@ They are also [multi-dimensional](../../../core/diagnostics/metrics-instrumentat
 
 ## Collecting System.Net metrics
 
-Code in .NET `System.Net.Http` and `System.Net.NameResoltion` is **instrumented** to take measurements and associate these measurements with a metric name.
-These measurements need to be aggregated, transmitted and stored to create useful metrics for monitoring. The process of aggregating, transmitting, and storing data is called **collection**.
+There are two parts to using metrics in a .NET app:
 
-This paragraph presents an example app to take measurements and demonstrates various methods to collect and view metrics.
+* **Instrumentation:** Code in .NET libraries takes measurements and associates these measurements with a metric name. .NET and ASP.NET Core include many built-in metrics.
+* **Collection:** A .NET app configures named metrics to be transmitted from the app for external storage and analysis. Some tools may perform configuration outside the app using configuration files or a UI tool.
+
+This paragraph demonstrates various methods to collect and view System.Net metrics.
 
 ### Example app
 

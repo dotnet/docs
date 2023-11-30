@@ -10,7 +10,7 @@ ms.date: 11/14/2023
 
 [Metrics](../../../core/diagnostics/metrics.md) are numerical measurements reported over time. They are typically used to monitor the health of an app and generate alerts.
 
-Starting with .NET 8.0, the `System.Net.Http` and the `System.Net.NameResolution` libraries are instrumented to publish metrics using .NET's new [Syste.Diagnostics.Metrics API](../../../core/diagnostics/metrics.md).
+Starting with .NET 8.0, the `System.Net.Http` and the `System.Net.NameResolution` components are instrumented to publish metrics using .NET's new [Syste.Diagnostics.Metrics API](../../../core/diagnostics/metrics.md).
 These metrics were designed in cooperation with [OpenTelemetry](https://opentelemetry.io/) making sure they are consistent with the standard and work well with popular tools like [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/).
 They are also [multi-dimensional](../../../core/diagnostics/metrics-instrumentation.md#multi-dimensional-metrics), meaning that measurements are associated with key-value pairs called tags (aka. attributes or labels) that allow data to be categorized for analysis.
 
@@ -185,7 +185,7 @@ The following example demonstrates how to validate built-in metrics in unit test
 
 Metrics are [more feature-rich](../../../core/diagnostics/compare-metric-apis.md#systemdiagnosticsmetrics) than EventCounters most notably because of their multi-dimentional nature. This enables creating sophisticated queries in tools like Prometheus and getting insights on a level that is not possible with EventCounters.
 
-Nevertheless, it should be noted that as of .NET 8, only the `System.Net.Http` and the `System.Net.NameResolutions` libraries are instrumented using Metrics, meaning that if you need counters from the lower levels of the stack such as `System.Net.Sockets` or `System.Net.Security`, you would still need to rely on EventCounters.
+Nevertheless, it should be noted that as of .NET 8, only the `System.Net.Http` and the `System.Net.NameResolutions` components are instrumented using Metrics, meaning that if you need counters from the lower levels of the stack such as `System.Net.Sockets` or `System.Net.Security`, you would still need to rely on EventCounters.
 
 Moreover, there are some semantical differences between Metrics and their matching EventCounters.
 For example when using `HttpCompletionOption.ResponseContentRead`, the [`current-requests` EventCounter](../../../core/diagnostics/available-counters.md) considers a request to be active until the moment when the last byte of the request body has been read,

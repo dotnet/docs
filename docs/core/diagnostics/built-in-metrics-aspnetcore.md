@@ -12,7 +12,7 @@ This article describes the metrics built-in for ASP.NET Core produced using the
 see [here](available-counters.md).
 
 > [!TIP]
-> See [Using ASP.NET Core metrics](/aspnet/core/log-mon/metrics/metrics) for more information about how to collect, report, enrich, and test ASP.NET Core metrics.
+> For more information about how to collect, report, enrich, and test ASP.NET Core metrics, see [Using ASP.NET Core metrics](/aspnet/core/log-mon/metrics/metrics).
 
 - [Meter: `Microsoft.AspNetCore.Hosting`](#meter-microsoftaspnetcorehosting)
   - [Instrument: `http.server.request.duration`](#instrument-httpserverrequestduration)

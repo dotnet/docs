@@ -57,7 +57,7 @@ Public Class Class1
 
 
     '******************************************************************************
-    ' HowtoDetermineifaRemoteComputerisAvailableinVisualBasic
+    ' HowtoDetermineIfaRemoteComputerIsAvailableInVisualBasic
     Public Sub Method1()
         ' <snippet1>
         If My.Computer.Network.Ping("198.01.01.01") Then
@@ -80,7 +80,7 @@ Public Class Class1
 
 
     '******************************************************************************
-    ' HowtoCheckConnectionStatusinVisualBasic
+    ' HowtoCheckConnectionStatusInVisualBasic
     Public Sub Method3()
         ' <snippet3>
         If My.Computer.Network.IsAvailable Then
@@ -93,7 +93,7 @@ Public Class Class1
 
 
     '******************************************************************************
-    ' HowtoReadaValuefromaRegistryKeyinVisualBasic
+    ' HowtoReadAValueFromARegistryKeyInVisualBasic
     Public Sub Method4()
         ' <snippet4>
         Dim readValue = My.Computer.Registry.GetValue(
@@ -104,7 +104,7 @@ Public Class Class1
 
 
     '******************************************************************************
-    ' HowtoSaveanAudioStreamtotheClipboardinVisualBasic
+    ' HowtoSaveAnAudioStreamToTheClipboardInVisualBasic
     Public Sub Method5()
         ' <snippet5>
         Dim musicReader = My.Computer.FileSystem.ReadAllBytes("cool.wav")
@@ -114,7 +114,7 @@ Public Class Class1
 
 
     '******************************************************************************
-    ' HowtoUploadaFileinVisualBasic
+    ' HowtoUploadAFileInVisualBasic
     Public Sub Method6()
         ' <snippet6>
         My.Computer.Network.UploadFile(
@@ -141,7 +141,7 @@ Public Class Class1
 
 
     '******************************************************************************
-    ' HowtoDownloadaFileinVisualBasic
+    ' HowtoDownloadAFileInVisualBasic
     Public Sub Method9()
         ' <snippet9>
         My.Computer.Network.DownloadFile(
@@ -168,7 +168,7 @@ Public Class Class1
 
 
     '******************************************************************************
-    ' HowtoDetermineifaValueExistsinaRegistryKeyinVisualBasic
+    ' HowtoDetermineIfAValueExistsInARegistryKeyInVisualBasic
     Public Sub Method12()
         ' <snippet12>
         If My.Computer.Registry.GetValue("HKEY_LOCAL_MACHINE\TestApp",
@@ -180,7 +180,7 @@ Public Class Class1
 
 
     '******************************************************************************
-    ' HowtoDetermineWhatTypeofFileisStoredontheClipboardinVisualBasic
+    ' HowtoDetermineWhatTypeofFileIsStoredOnTheClipboardInVisualBasic
     Public Sub Method13()
         ' <snippet13>
         If My.Computer.Clipboard.ContainsImage() Then
@@ -193,7 +193,7 @@ Public Class Class1
 
 
     '******************************************************************************
-    ' HowtoCreateaRegistryKeyandSetItsValuesinVisualBasic
+    ' HowtoCreateARegistryKeyAndSetItsValuesInVisualBasic
     Public Sub Method14()
         ' <snippet14>
         My.Computer.Registry.SetValue("HKEY_CURRENT_USER\MyTestKey",
@@ -206,7 +206,7 @@ Public Class Class1
         '<Snippet17>
         My.Computer.Registry.CurrentUser.CreateSubKey("MyTestKey")
         '</Snippet17>
-        ' Change MyTestKeyValue to This is a test value. 
+        ' Change MyTestKeyValue to This is a test value.
         My.Computer.Registry.SetValue("HKEY_CURRENT_USER\MyTestKey",
           "MyTestKeyValue", "This is a test value.")
         ' </snippet15>
@@ -214,7 +214,7 @@ Public Class Class1
 
 
     '******************************************************************************
-    ' HowtoRetrieveanImagefromtheClipboardinVisualBasic
+    ' HowtoRetrieveAnImageFromTheClipboardInVisualBasic
     Public Sub Method16()
         Dim picturebox1 As New System.Windows.Forms.PictureBox
         ' <snippet16>

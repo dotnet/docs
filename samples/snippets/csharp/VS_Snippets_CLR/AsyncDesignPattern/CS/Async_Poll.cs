@@ -29,7 +29,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
                 Console.WriteLine("You must specify the name of a host computer.");
                 return;
             }
-            // Start the asychronous request for DNS information.
+            // Start the asynchronous request for DNS information.
             IAsyncResult result = Dns.BeginGetHostEntry(args[0], null, null);
             Console.WriteLine("Processing request for information...");
 

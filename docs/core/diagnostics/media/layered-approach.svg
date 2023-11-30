@@ -1,0 +1,83 @@
+<svg width="1280" height="485" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient x1="0.5" y1="0" x2="0.5" y2="1" spreadMethod="reflect" id="fill0">
+   <stop offset="0" stop-color="#A8B7DF"/>
+   <stop offset="0.5" stop-color="#9AABD9"/>
+   <stop offset="1" stop-color="#879ED7"/>
+  </linearGradient>
+  <linearGradient x1="0.5" y1="0" x2="0.5" y2="1" spreadMethod="reflect" id="fill1">
+   <stop offset="0" stop-color="#B5D5A7"/>
+   <stop offset="0.5" stop-color="#AACE99"/>
+   <stop offset="1" stop-color="#9CCA86"/>
+  </linearGradient>
+  <linearGradient x1="0.5" y1="0" x2="0.5" y2="1" spreadMethod="reflect" id="fill2">
+   <stop offset="0" stop-color="#B5D5A7"/>
+   <stop offset="0.5" stop-color="#AACE99"/>
+   <stop offset="1" stop-color="#9CCA86"/>
+  </linearGradient>
+  <linearGradient x1="0.5" y1="0" x2="0.5" y2="1" spreadMethod="reflect" id="fill3">
+   <stop offset="0" stop-color="#B5D5A7"/>
+   <stop offset="0.5" stop-color="#AACE99"/>
+   <stop offset="1" stop-color="#9CCA86"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <rect stroke="null" x="-2" y="1" width="1280" height="484.00002" fill="#FFFFFF" id="svg_2"/>
+  <path stroke="#4472C4" d="m237.5,73.5235c0,-4.9835 4.04,-9.0234 9.023,-9.0234l811.957,0c4.98,0 9.02,4.0399 9.02,9.0234l0,384.9535c0,4.983 -4.04,9.023 -9.02,9.023l-811.957,0c-4.983,0 -9.023,-4.04 -9.023,-9.023l0,-384.9535z" stroke-width="0.66667" stroke-miterlimit="8" fill="url(#fill0)" fill-rule="evenodd" id="svg_3"/>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="94" x="567.33801" id="svg_4">.NET App Process</text>
+  <rect stroke="#4472C4" x="322.5" y="384.5" width="178" height="67" stroke-width="1.33333" stroke-miterlimit="8" fill="#FFFFFF" id="svg_5"/>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="425" x="374.88101" id="svg_6">ILogger</text>
+  <rect stroke="#4472C4" x="522.5" y="383.5" width="178" height="67" stroke-width="1.33333" stroke-miterlimit="8" fill="#FFFFFF" id="svg_7"/>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="424" x="580.58099" id="svg_8">Meter</text>
+  <rect stroke="#4472C4" x="722.5" y="384.5" width="178" height="67" stroke-width="1.33333" stroke-miterlimit="8" fill="#FFFFFF" id="svg_9"/>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="425" x="774.46698" id="svg_10">Activity</text>
+  <rect stroke="#4472C4" x="793.5" y="201.5" width="255" height="38" stroke-width="1.33333" stroke-miterlimit="8" fill="#FFFFFF" id="svg_11"/>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="227" x="816.48297" id="svg_12">Prometheu</text>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="227" x="925.80298" id="svg_13">s</text>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="227" x="940.63599" id="svg_14">Exporter</text>
+  <rect stroke="#4472C4" x="794.5" y="300.5" width="255" height="38" stroke-width="1.33333" stroke-miterlimit="8" fill="#FFFFFF" id="svg_15"/>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="326" x="808.78497" id="svg_16">AzureMonitor</text>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="326" x="950.28497" id="svg_17">Exporter</text>
+  <rect stroke="#70AD47" x="1116.5" y="152.5" width="139" height="39" stroke-width="0.66667" stroke-miterlimit="8" fill="url(#fill1)" id="svg_18"/>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="179" x="1126.31006" id="svg_19">Prometheus</text>
+  <rect stroke="#70AD47" x="1143.5" y="249.5" width="82" height="39" stroke-width="0.66667" stroke-miterlimit="8" fill="url(#fill2)" id="svg_20"/>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="276" x="1152.70996" id="svg_21">Jaeger</text>
+  <rect stroke="#70AD47" x="1105.5" y="324.5" width="162" height="39" stroke-width="0.66667" stroke-miterlimit="8" fill="url(#fill3)" id="svg_22"/>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="351" x="1114.89001" id="svg_23">Azure Monitor</text>
+  <path stroke="null" d="m1049.63,319.195l49.33,21.742l-0.27,0.61l-49.32,-21.742l0.26,-0.61zm49.59,17.849l5.71,6.887l-8.93,0.434l3.22,-7.321z" fill="#4472C4" id="svg_24"/>
+  <path transform="rotate(-25.5603 771.236 307.904)" stroke="null" d="m759.68068,288.58148l20.31988,32.40751l-0.67582,0.34151l-20.31988,-32.40751l0.67582,-0.34151zm23.27557,29.31517l0.51064,9.32926l-8.61929,-5.23015l8.10864,-4.09911z" fill="#4472C4" id="svg_25"/>
+  <path stroke="null" d="m702.5,255.167l13.792,0l0,0.666l-13.792,0l0,-0.666zm12.459,-3.667l8,4l-8,4l0,-8z" fill="#4472C4" id="svg_26"/>
+  <path stroke="null" d="m1049.5,269.167l86.97,0l0,0.666l-86.97,0l0,-0.666zm85.63,-3.667l8,4l-8,4l0,-8z" fill="#4472C4" id="svg_27"/>
+  <path stroke="null" d="m1048.69359,220.24035l62.51161,-44.59696l-0.3871,-0.5427l-62.51169,44.59694l0.38718,0.54272zm63.55571,-40.83766l4.1895,-7.9025l-8.8356,1.3899l4.6461,6.5126z" fill="#4472C4" id="svg_28"/>
+  <path transform="rotate(-51.9121 463.616 284.603)" stroke="null" d="m454.66979,272.10536l14.49524,19.22725l-0.52181,0.4443l-14.49524,-19.22831l0.52181,-0.44323zm16.53129,15.67714l1.88353,9.31743l-8.15025,-3.9912l6.26672,-5.32622z" fill="#4472C4" id="svg_29"/>
+  <path stroke="null" d="m411.62911,385.09431l82.60949,-34.70492l-0.2582,-0.6147l-82.60951,34.70498l0.25822,0.61464zm82.80039,-30.80802l5.8263,-6.7863l-8.9248,-0.5893l3.0985,7.3756z" fill="#4472C4" id="svg_30"/>
+  <rect stroke="#4472C4" x="479.5" y="226.5" width="272" height="113" stroke-width="1.33333" stroke-miterlimit="8" fill="#FFFFFF" id="svg_31"/>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="290" x="515.34198" id="svg_32">OpenTelemetry SDK</text>
+  <rect stroke="#4472C4" x="272.5" y="246.5" width="189" height="66" stroke-width="1.33333" stroke-miterlimit="8" fill="#FFFFFF" id="svg_33"/>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="272" x="287.41901" id="svg_34">Instrumentation</text>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="301" x="320.95901" id="svg_35">Libraries</text>
+  <rect stroke="#4472C4" x="479.5" y="130.5" width="272" height="67" stroke-width="1.33333" stroke-miterlimit="8" fill="#FFFFFF" id="svg_36"/>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="157" x="520.66101" id="svg_37">Azure Monitor</text>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="157" x="667.66101" id="svg_38">OTel</text>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="186" x="586.26099" id="svg_39">Distro</text>
+  <path stroke="null" d="m811.148,384.18l-71.884,-37.313l0.307,-0.591l71.884,37.313l-0.307,0.591zm-72.39,-33.444l-5.258,-7.236l8.943,0.135l-3.685,7.101z" fill="#4472C4" id="svg_40"/>
+  <path stroke="null" d="m611.83333,383.10199l0.00009,-32.9353l-0.66667,0l-0.00008,32.9353l0.66666,0zm3.66675,-31.602l-3.99998,-8l-4.00002,8l8,0z" fill="#4472C4" id="svg_41"/>
+  <path stroke="null" d="m751.77718,282.98017l37.91062,-56.75176l-0.5544,-0.3703l-37.91058,56.75174l0.55436,0.37032zm40.21892,-53.60636l1.1177,-8.8741l-7.77,4.4304l6.6523,4.4437z" fill="#4472C4" id="svg_42"/>
+  <path stroke="null" d="m604.833,199.5l0,12.24l-0.666,0l0,-12.24l0.666,0zm3.667,10.906l-4,8l-4,-8l8,0z" fill="#4472C4" id="svg_43"/>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="409" x="47.0689" id="svg_44">.NET SDK</text>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="438" x="3.78226" id="svg_45">Observability APIs</text>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="276" x="61.8911" id="svg_46">OTel</text>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="276" x="109.611" id="svg_47">SDK &amp;</text>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="305" x="70.2845" id="svg_48">Libraries</text>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="140" x="26.3939" id="svg_49">Vendor</text>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="140" x="97.2005" id="svg_50">-</text>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="140" x="104.534" id="svg_51">specific</text>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="169" x="65.7539" id="svg_52">helpers</text>
+  <path stroke="#4472C4" d="m225.5,460.5c-9.389,0 -17,-1.268 -17,-2.833l0,-41.834c0,-1.564 -7.611,-2.833 -17,-2.833c9.389,0 17,-1.268 17,-2.833l0,-41.834c0,-1.564 7.611,-2.833 17,-2.833" stroke-width="0.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" id="svg_53"/>
+  <path stroke="#4472C4" d="m225.5,201.5c-9.389,0 -17,-1.268 -17,-2.833l0,-41.834c0,-1.564 -7.611,-2.833 -17,-2.833c9.389,0 17,-1.268 17,-2.833l0,-41.834c0,-1.564 7.611,-2.833 17,-2.833" stroke-width="0.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" id="svg_54"/>
+  <path stroke="#4472C4" d="m225.5,355.5c-9.389,0 -17,-1.268 -17,-2.833l0,-66.334c0,-1.564 -7.611,-2.833 -17,-2.833c9.389,0 17,-1.268 17,-2.833l0,-66.334c0,-1.564 7.611,-2.833 17,-2.833" stroke-width="0.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" id="svg_55"/>
+  <rect stroke="#4472C4" x="794.5" y="249.5" width="255" height="39" stroke-width="1.33333" stroke-miterlimit="8" fill="#FFFFFF" id="svg_56"/>
+  <text stroke="null" font-family="Calibri,Calibri_MSFontService,sans-serif" font-weight="400" font-size="24" y="276" x="852.10797" id="svg_57">OTLP Exporter</text>
+ </g>
+</svg>

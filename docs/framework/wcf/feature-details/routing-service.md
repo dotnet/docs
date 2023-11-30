@@ -33,7 +33,7 @@ While it is possible to create an intermediary service that accomplishes one or 
 The Routing Service provides a generic, dynamically configurable, pluggable SOAP intermediary that is compatible with the WCF Service and Channel models and allows you to perform content-based routing of SOAP-based messages.
 
 > [!NOTE]
-> The Routing Service does not currently support routing of WCF REST services.  To route REST calls, consider using <xref:System.Web.Routing> or [Application Request Routing](https://go.microsoft.com/fwlink/?LinkId=164589).
+> The Routing Service does not currently support routing of WCF REST services.  To route REST calls, consider using <xref:System.Web.Routing> or [Application Request Routing](https://iis-umbraco.azurewebsites.net/downloads/microsoft/application-request-routing).
 
 ## Content-Based Routing
 

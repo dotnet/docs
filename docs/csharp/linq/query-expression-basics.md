@@ -68,13 +68,15 @@ On the other hand, the following two examples show variables that are not query 
 
 :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/Basics.cs" id="basics7a":::
 
-For more information about the different ways to express queries, see [Query syntax and method syntax in LINQ](../programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md).
+For more information about the different ways to express queries, see [Query syntax and method syntax in LINQ](write-linq-queries.md).
 
 #### Explicit and implicit typing of query variables
 
 This documentation usually provides the explicit type of the query variable in order to show the type relationship between the query variable and the [select clause](../language-reference/keywords/select-clause.md). However, you can also use the [var](../language-reference/statements/declarations.md#implicitly-typed-local-variables) keyword to instruct the compiler to infer the type of a query variable (or any other local variable) at compile time. For example, the query example that was shown previously in this topic can also be expressed by using implicit typing:
 
 :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/Basics.cs" id="basics8":::
+
+In the above, the use of var is optional here and in all queries. `queryCities` is an `IEnumerable<City>` just as when it is explicitly typed.
 
 For more information, see [Implicitly typed local variables](../programming-guide/classes-and-structs/implicitly-typed-local-variables.md) and [Type relationships in LINQ query operations](../programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md).
 
@@ -113,6 +115,8 @@ Use the `select` clause to produce all other types of sequences. A simple `selec
 The `select` clause can be used to transform source data into sequences of new types. This transformation is also named a *projection*. In the following example, the `select` clause *projects* a sequence of anonymous types which contains only a subset of the fields in the original element. Note that the new objects are initialized by using an object initializer.
 
 :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/Basics.cs" id="basics13":::
+
+So in this example, the `var` is required because the query produces an anonymous type.
 
 For more information about all the ways that a `select` clause can be used to transform source data, see [select clause](../language-reference/keywords/select-clause.md).
 

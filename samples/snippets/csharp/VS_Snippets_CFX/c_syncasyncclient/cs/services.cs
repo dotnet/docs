@@ -37,7 +37,7 @@ namespace Microsoft.WCF.Documentation
     public string  SampleMethod(string msg)
     {
       Console.WriteLine("Called synchronous sample method with \"{0}\"", msg);
- 	    return "The sychronous service greets you: " + msg;
+ 	    return "The synchronous service greets you: " + msg;
     }
 
     // This asynchronously implemented operation is never called because

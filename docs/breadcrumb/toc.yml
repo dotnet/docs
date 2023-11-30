@@ -283,9 +283,16 @@ items:
                   - name: Tutorials
                     tocHref: /dotnet/csharp/whats-new/tutorials/
                     topicHref: /dotnet/csharp/whats-new/tutorials/records
+              - name: LINQ
+                tocHref: /dotnet/csharp/linq/
+                topicHref: /dotnet/csharp/linq/index
               - name: Asynchronous programming
-                tocHref: /dotnet/csharp/asynchronous-programming
+                tocHref: /dotnet/csharp/asynchronous-programming/
                 topicHref: /dotnet/csharp/asynchronous-programming/index
+              - name: Advanced concepts
+                tocHref: /dotnet/csharp/advanced-topics/
+                topicHref: /dotnet/csharp/advanced-topics/reflection-and-attributes/index
+
               - name: Tutorials
                 tocHref: /dotnet/csharp/tutorials/
                 topicHref: /dotnet/csharp/tutorials/index
@@ -308,9 +315,6 @@ items:
                   - name: Events
                     tocHref: /dotnet/csharp/programming-guide/events/
                     topicHref: /dotnet/csharp/programming-guide/events/index
-                  - name: File system and the registry
-                    tocHref: /dotnet/csharp/programming-guide/file-system/
-                    topicHref: /dotnet/csharp/programming-guide/file-system/index
                   - name: Generics
                     tocHref: /dotnet/csharp/programming-guide/generics/
                     topicHref: /dotnet/csharp/programming-guide/generics/index
@@ -336,9 +340,6 @@ items:
                       - name: Expression trees
                         tocHref: /dotnet/csharp/programming-guide/concepts/expression-trees/
                         topicHref: /dotnet/csharp/programming-guide/concepts/expression-trees/index
-                      - name: LINQ
-                        tocHref: /dotnet/csharp/programming-guide/concepts/linq/
-                        topicHref: /dotnet/csharp/programming-guide/concepts/linq/index
                       - name: Serialization
                         tocHref: /dotnet/csharp/programming-guide/concepts/serialization/
                         topicHref: /dotnet/csharp/programming-guide/concepts/serialization/index
@@ -384,29 +385,8 @@ items:
                   - name: C# 7.0 draft specification
                     tocHref: /dotnet/csharp/language-reference/language-specification/
                     topicHref: /dotnet/csharp/language-reference/language-specification/index
-                  - name: C# 7.0 feature specifications
-                    tocHref: /dotnet/csharp/language-reference/proposals/csharp-7.0/
-                    topicHref: /dotnet/csharp/language-reference/proposals/csharp-7.0/index
-                  - name: C# 7.1 feature specifications
-                    tocHref: /dotnet/csharp/language-reference/proposals/csharp-7.1/
-                    topicHref: /dotnet/csharp/language-reference/proposals/csharp-7.1/infer-tuple-names
-                  - name: C# 7.2 feature specifications
-                    tocHref: /dotnet/csharp/language-reference/proposals/csharp-7.2/
-                    topicHref: /dotnet/csharp/language-reference/proposals/csharp-7.2/index
-                  - name: C# 7.3 feature specifications
-                    tocHref: /dotnet/csharp/language-reference/proposals/csharp-7.3/
-                    topicHref: /dotnet/csharp/language-reference/proposals/csharp-7.3/index
-                  - name: C# 8.0 feature specifications
-                    tocHref: /dotnet/csharp/language-reference/proposals/csharp-8.0/
-                    topicHref: /dotnet/csharp/language-reference/proposals/csharp-8.0/index
-                  - name: C# 9.0 feature specifications
-                    tocHref: /dotnet/csharp/language-reference/proposals/csharp-9.0/
-                    topicHref: /dotnet/csharp/language-reference/proposals/csharp-9.0/index
-                  - name: C# 10 feature specifications
-                    tocHref: /dotnet/csharp/language-reference/proposals/csharp-10.0/
-                    topicHref: /dotnet/csharp/language-reference/proposals/csharp-10.0/index
-                  - name: C# 11 feature specifications
-                    tocHref: /dotnet/csharp/language-reference/proposals/csharp-11.0/
+                  - name: C# feature specifications
+                    tocHref: /dotnet/csharp/language-reference/proposals
                     topicHref: /dotnet/csharp/language-reference/proposals/csharp-11.0/index
           - name: F# guide
             tocHref: /dotnet/fsharp/
@@ -520,9 +500,6 @@ items:
               - name: Tutorials
                 tocHref: /dotnet/machine-learning/tutorials/
                 topicHref: /dotnet/machine-learning/tutorials/index
-          - name: .NET for Apache Spark guide
-            tocHref: /dotnet/spark/
-            topicHref: /dotnet/spark/index
           - name: Azure
             tocHref: /dotnet/azure/
             topicHref: /dotnet/azure/index
@@ -530,6 +507,9 @@ items:
               - name: Azure for .NET developers
                 tocHref: /dotnet/azure/
                 topicHref: /dotnet/azure/index
+          - name: .NET Aspire (Preview)
+            tocHref: /dotnet/aspire/
+            topicHref: /dotnet/aspire/index
           - name: Orleans
             tocHref: /dotnet/orleans
             topicHref: /dotnet/orleans/index
@@ -629,6 +609,12 @@ items:
               - name: Memory management
                 tocHref: /dotnet/standard/garbage-collection/
                 topicHref: /dotnet/standard/managed-code
+              - name: Unmanaged API reference (debugging)
+                tocHref: /dotnet/core/unmanaged-api/debugging/
+                topicHref: /dotnet/core/unmanaged-api/debugging/index
+              - name: Unmanaged API reference (profiling)
+                tocHref: /dotnet/core/unmanaged-api/profiling/
+                topicHref: /dotnet/core/unmanaged-api/profiling/index
           - name: Data access
             tocHref: /dotnet/navigate/data-access/
             topicHref: /dotnet/navigate/data-access/index

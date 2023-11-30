@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace HowToStrings
@@ -18,8 +19,6 @@ namespace HowToStrings
 
             SortListOfStrings();
             SearchSortedList();
-
-            ReferenceEqualAndInterning();
         }
 
         private static void OrdinalDefaultComparisons()
@@ -292,26 +291,6 @@ namespace HowToStrings
                 }
             }
             //</snippet8>
-        }
-
-        private static void ReferenceEqualAndInterning()
-        {
-            // <Snippet9>
-            string a = "The computer ate my source code.";
-            string b = "The computer ate my source code.";
-
-            if (String.ReferenceEquals(a, b))
-                Console.WriteLine("a and b are interned.");
-            else
-                Console.WriteLine("a and b are not interned.");
-
-            string c = String.Copy(a);
-
-            if (String.ReferenceEquals(a, c))
-                Console.WriteLine("a and c are interned.");
-            else
-                Console.WriteLine("a and c are not interned.");
-            // </Snippet9>
         }
     }
 }

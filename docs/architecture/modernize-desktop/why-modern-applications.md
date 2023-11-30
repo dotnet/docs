@@ -11,19 +11,19 @@ ms.date: 12/29/2020
 
 ### A story of one company
 
-Back in the early 2000s, one multinational company started developing a distributed desktop solution to exchange information between different branches of the company and execute optimized operations on centralized units. They have chosen a brand-new framework called Windows Forms (also known as WinForms) for their application development. Over the years, the project evolved into a mature, well tested, and time-proven application with hundreds of thousands of lines of code. Time passed and .NET Framework 2.0 is no longer the hot new technology. The developers who are working on this application are facing a dilemma. They'd like to use the latest stack of technologies in their development and have their application look and "feel" modern. At the same time, they don't want to throw away the great product they have built over 15 years and rewrite the entire application from scratch.
+Back in the early 2000s, one multinational company started developing a distributed desktop solution to exchange information between different branches of the company and execute optimized operations on centralized units. They have chosen a brand-new framework called Windows Forms (also known as WinForms) for their application development. Over the years, the project evolved into a mature, well-tested, and time-proven application with hundreds of thousands of lines of code. Time passed and .NET Framework 2.0 is no longer the hot new technology. The developers who are working on this application are facing a dilemma. They'd like to use the latest stack of technologies in their development and have their application look and "feel" modern. At the same time, they don't want to throw away the great product they have built over 15 years and rewrite the entire application from scratch.
 
 ### Your story
 
-You might find yourself in the same boat, where you have mature Windows Forms or Windows Presentation Foundation (WPF) applications that have proved their reliability over the years. You probably want to keep using these applications for many more years. At the same time, since those applications were written some time ago, they might be missing capabilities like modern look, performance, integration with new devices and platform features, and so on, which gives them a feel of "old tech". There's another problem that might concern you as a developer. While working on the older .NET Framework versions and maintaining applications that were written a while ago, you might feel like you aren't learning new technologies and missing on building modern technical skills. If that is your story – this book is for you!
+You might find yourself in the same boat, where you have mature Windows Forms or Windows Presentation Foundation (WPF) applications that have proved their reliability over the years. You probably want to keep using these applications for many more years. At the same time, since those applications were written some time ago, they might be missing capabilities like modern look, performance, integration with new devices and platform features, and so on, which gives them a feel of "old tech". There's another problem that might concern you as a developer. While working on the older .NET Framework versions and maintaining applications that were written a while ago, you might feel like you aren't learning new technologies and missing out on building modern technical skills. If that is your story – this book is for you!
 
 ## Desktop applications nowadays
 
-Before the rise of the Internet, desktop applications were the main approach to build software systems. Developers could choose any programming language, such as COBOL, Fortran, VB6, or C++. But whether they developed small tools or complex distributed architectures, they were all desktop applications.
+Before the rise of the Internet, desktop applications were the main approach to building software systems. Developers could choose any programming language, such as COBOL, Fortran, VB6, or C++. But whether they developed small tools or complex distributed architectures, they were all desktop applications.
 
-Then, Internet technologies started shocking the development world and winning over more engineers with advantages like easy deployment and simplified distribution processes. The fact that once a web application was deployed to production all users got automatic updates made a huge impact on the software agility.
+Then, Internet technologies started shocking the development world and winning over more engineers with advantages like easy deployment and simplified distribution processes. The fact that once a web application was deployed to production all users got automatic updates made a huge impact on software agility.
 
-However, the Internet infrastructure, underlying protocols, and standards like HTTP and HTML weren't designed for building complex applications. In fact, the major development effort back then was aiming just one goal: to give web applications the same capabilities that desktop applications have, such as fast data input and state management.
+However, the Internet infrastructure, underlying protocols, and standards like HTTP and HTML weren't designed for building complex applications. In fact, the major development effort back then was aimed at just one goal: to give web applications the same capabilities that desktop applications have, such as fast data input and state management.
 
 Even though web and mobile applications have grown at an incredible pace, for certain tasks desktop applications still hold the number one place in terms of efficiency and performance. That explains why there are millions of developers who are building their projects with WPF and WinForms and the amount of those applications is constantly growing.
 
@@ -39,7 +39,7 @@ Here are some reasons for choosing desktop applications in your development:
 - Access to hardware devices, such as camera, Bluetooth, or card readers, is easy.
 - Since the technology has been around for a while, there are many experts and a knowledge base available to develop desktop applications.
 
-So, as you can see, developing for desktop is great for many reasons. The technology is mature and time tested, the development cycle is fast, the debugging is powerful and arguably, desktop apps have less complexity and easier to get started with.
+So, as you can see, developing for desktop is great for many reasons. The technology is mature and time-tested, the development cycle is fast, the debugging is powerful and arguably, desktop apps have less complexity and are easier to get started with.
 
 Microsoft offered many UI desktop technologies throughout the years from Win32 introduced in 1995 to Universal Windows Platform (UWP) released in 2016.
 
@@ -53,7 +53,7 @@ You can develop in any of them using C# and Visual Basic, but let's take a close
 
 ### Windows Forms
 
-First released in 2002, Windows Forms is a managed framework and is the oldest, most used, desktop technology built on the Windows graphics device interface (GDI) engine. It offers a smooth drag-and-drop experience for developing user interfaces in Visual Studio.  At the same time, Windows Forms relies on the Visual Studio Designer as the main way you develop your UI, so creating visual components from code isn't trivial.
+First released in 2002, Windows Forms is a managed framework and is the oldest, most-used desktop technology built on the Windows graphics device interface (GDI) engine. It offers a smooth drag-and-drop experience for developing user interfaces in Visual Studio.  At the same time, Windows Forms relies on the Visual Studio Designer as the main way you develop your UI, so creating visual components from code isn't trivial.
 
 The following list summarizes the main characteristics of Windows Forms:
 
@@ -65,7 +65,7 @@ The following list summarizes the main characteristics of Windows Forms:
 
 ### WPF
 
-Based on the XAML language specification, WPF favors a clear separation between UI and code. XAML offers such capabilities like templating, styling, and binding, which is suited for building large applications. Like Windows Forms, it's a managed framework, but the design is modular and reusable.
+Based on the XAML language specification, WPF favors a clear separation between UI and code. XAML offers capabilities like templating, styling, and binding, which is suited for building large applications. Like Windows Forms, it's a managed framework, but the design is modular and reusable.
 
 Here are the main features of WPF:
 
@@ -84,21 +84,21 @@ UWP isn't only a presentation framework like WPF and Windows Forms, but it's als
 - A modern application lifecycle model (for low battery consumption).
 - A new Resource Management System (based on PRI files).
 
-The platform was created to support all kind of input systems (like ink, touch, gamepad, mouse, keyboard, gaze, and so on) in all form-factors with performance and low battery consumption in mind. For these reasons, the shell of the Windows 10 OS uses parts of the UWP platform.
+The platform was created to support all kinds of input systems (like ink, touch, gamepad, mouse, keyboard, gaze, and so on) in all form-factors with performance and low battery consumption in mind. For these reasons, the shell of the Windows 10 OS uses parts of the UWP platform.
 
 ![UWP structure](./media/why-modern-applications/uwp-structure.png)
 
 UWP contains a presentation framework that is XAML-based, like WPF, but it has some important differences such as:
 
 - Applications are executed in app containers. App containers control what resources a UWP app can access.
-- Supported only on Windows 10.
+- Supported only on Windows 10 and Windows 11.
 - Apps can be deployed through Microsoft Store for easier deployment.
 - Designed as part of the Windows Runtime API.
-- Contains an extensive set of rich built-in controls and additional controls available through the Microsoft UI Library NuGet packages (WinUI library) updated every few months.
+- Contains an extensive set of rich built-in controls and additional controls are available through the Microsoft UI Library NuGet packages (WinUI library), updated every few months.
 
 ## A tale of two platforms
 
-In the last 20 years, while UI desktop technologies were growing and following the path from Windows Forms to UWP, the hardware was also evolving from heavy weight PC units with small CRT monitors to high-DPI monitors and lightweight tablets and phones with different data input techniques like Touch and Ink. These changes resulted in creating two different concepts: a Desktop Application and a Modern Application. A Modern Application is one that considers different device form factors, various input and output methods, and leverages modern desktop features while running on a sandboxed execution model. The (traditional) Desktop Application, on the other hand, is an application that needs a solid UI with a high density of controls that is best operated with a mouse and a keyboard.
+In the last 20 years, while UI desktop technologies were growing and following the path from Windows Forms to UWP, the hardware was also evolving from heavyweight PC units with small CRT monitors to high-DPI monitors and lightweight tablets and phones with different data input techniques like Touch and Ink. These changes resulted in creating two different concepts: a Desktop Application and a Modern Application. A Modern Application is one that considers different device form factors, various input and output methods, and leverages modern desktop features while running on a sandboxed execution model. The (traditional) Desktop Application, on the other hand, is an application that needs a solid UI with a high density of controls that is best operated with a mouse and a keyboard.
 
 The following table describes the differences between the two concepts:
 
@@ -111,7 +111,7 @@ The following table describes the differences between the two concepts:
 | Data | Cloud First Data with Insights. Source of truth in the cloud. Insights to know what happens with your app and how it's performing.  | Local Data. Traditional desktop applications usually need some local data.  |
 | Design | Designed for reuse. Reuse in mind between different platforms, front end, and back end, running assets in many places as possible.  | Designed for Windows Desktop only  |
 
-As a part of the commitment to provide developers with the best tools to build applications, Microsoft put a great effort to bring these concepts, or we can even say platforms, closer together to empower developers with the best of both worlds. To do that, Microsoft has performed a bidirectional effort between the two platforms.
+As a part of the commitment to provide developers with the best tools to build applications, Microsoft put forth a great effort to bring these concepts - or we can even say platforms - closer together to empower developers with the best of both worlds. To do that, Microsoft has performed a bidirectional effort between the two platforms.
 
 ![Bidirectional effort between Modern Application and Desktop Applications](./media/why-modern-applications/bidirectional-effort.png)
 
@@ -137,7 +137,7 @@ This path will show you how you can leverage modern desktop features into your e
 
 ### Deployment
 
-Modern development cycles have stressed out to provide agility on how new versions of applications are deployed to every single user. Since Windows Forms and WPF applications are based on a particular version of the .NET Framework that must be present on the machine, they can't take advantage of new .NET Framework version features without the intervention of the IT people with the risk of having side effects for other apps running on the same machine. It has limited the innovation pace for developers forcing them to stay on outdated versions of the .NET Framework.
+Modern development cycles have stressed the importance of providing agility with regard to how new versions of applications are deployed to individual users. Since Windows Forms and WPF applications are based on a particular version of the .NET Framework that must be present on the machine, they can't take advantage of new .NET Framework version features without the intervention of the IT people with the risk of having side effects for other apps running on the same machine. It has limited the innovation pace for developers forcing them to stay on outdated versions of the .NET Framework.
 
 Since the launch of .NET Core 3.0, you can leverage a new approach of deploying multiple versions of .NET side by side and specifying which version of .NET each application should target. This way, you can use the newest features in one application while being confident you aren't going to break any other applications.
 

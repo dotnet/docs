@@ -3,7 +3,7 @@ title: Testing in .NET
 description: This article gives a brief overview of testing concepts, terminology, and tools for testing in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/01/2022
+ms.date: 03/22/2023
 ms.custom: devdivchpfy22
 ---
 
@@ -59,7 +59,7 @@ For more information, see the following resources:
 
 ### MSTest
 
-[MSTest](https://github.com/Microsoft/testfx-docs) is the Microsoft test framework for all .NET languages. It's extensible and works with both .NET CLI and Visual Studio. For more information, see the following resources:
+[MSTest](https://github.com/microsoft/testfx) is the Microsoft test framework for all .NET languages. It's extensible and works with both .NET CLI and Visual Studio. For more information, see the following resources:
 
 - [Unit testing with C#](unit-testing-with-mstest.md)
 - [Unit testing with F#](unit-testing-fsharp-with-mstest.md)
@@ -71,7 +71,7 @@ You can run a solutions unit test from the [.NET CLI](../tools/index.md) with th
 
 ### IDE
 
-Whether you're using Visual Studio, Visual Studio for Mac, or Visual Studio Code, there are graphical user interfaces for testing functionality. There are more features available to IDEs than the CLI, for example, [Live Unit Testing](/visualstudio/test/live-unit-testing). For more information, see [Including and excluding tests with Visual Studio](/visualstudio/test/live-unit-testing#include-and-exclude-test-projects-and-test-methods).
+Whether you're using Visual Studio or Visual Studio Code, there are graphical user interfaces for testing functionality. There are more features available to IDEs than the CLI, for example, [Live Unit Testing](/visualstudio/test/live-unit-testing). For more information, see [Including and excluding tests with Visual Studio](/visualstudio/test/live-unit-testing#include-and-exclude-test-projects-and-test-methods).
 
 ## See also
 

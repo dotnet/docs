@@ -1,16 +1,16 @@
 // This sample will guide you through elements of the F# language.
 //
 // *******************************************************************************************************
-//   To execute the code in F# Interactive, highlight a section of code and press Alt-Enter or right-click 
-//   and select "Execute in Interactive".  You can open the F# Interactive Window from the "View" menu. 
+//   To execute the code in F# Interactive, highlight a section of code and press Alt-Enter or right-click
+//   and select "Execute in Interactive".  You can open the F# Interactive Window from the "View" menu.
 // *******************************************************************************************************
 //
 // For more about F#, see:
 //     http://fsharp.org
-//     https://docs.microsoft.com/dotnet/fsharp/
+//     https://learn.microsoft.com/dotnet/fsharp/
 //
 // To see this tutorial in documentation form, see:
-//     https://docs.microsoft.com/dotnet/fsharp/tour
+//     https://learn.microsoft.com/dotnet/fsharp/tour
 //
 // To learn more about applied F# programming, use
 //     http://fsharp.org/guides/enterprise/
@@ -21,7 +21,7 @@
 // To install the Visual F# Power Tools, use
 //     'Tools' --> 'Extensions and Updates' --> `Online` and search
 //
-// For additional templates to use with F#, see the 'Online Templates' in Visual Studio, 
+// For additional templates to use with F#, see the 'Online Templates' in Visual Studio,
 //     'New Project' --> 'Online Templates'
 
 // F# supports three kinds of comments:
@@ -33,20 +33,20 @@
 ///
 ///    They also support .NET-style XML comments, which allow you to generate reference documentation,
 ///    and they also allow editors (such as Visual Studio) to extract information from them.
-///    To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/xml-documentation
+///    To learn more, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/xml-documentation
 
 
 // Open namespaces using the 'open' keyword.
 //
-// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/import-declarations-the-open-keyword
+// To learn more, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/import-declarations-the-open-keyword
 open System
 
 
 /// Modules are the primary way to organize functions and values in F#. This module contains some
 /// basic values involving basic numeric values computed in a few different ways.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/modules
-module IntegersAndNumbers = 
+/// To learn more, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/modules
+module IntegersAndNumbers =
 
     /// This is a sample integer.
     let sampleInteger = 176
@@ -71,7 +71,7 @@ module IntegersAndNumbers =
 /// Values in F# are immutable by default.  They cannot be changed
 /// in the course of a program's execution unless explicitly marked as mutable.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/values/index#why-immutable
+/// To learn more, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/values/index#why-immutable
 module Immutability =
 
     /// Binding a value to a name via 'let' makes it immutable.
@@ -91,20 +91,20 @@ module Immutability =
     // Note that '=' is not the same as this.  Outside binding values via 'let', '=' is used to test equality.
     otherNumber <- otherNumber + 1
 
-    printfn $"'otherNumber' changed to be {otherNumber}" 
+    printfn $"'otherNumber' changed to be {otherNumber}"
 
 
 /// Much of F# programming consists of defining functions that transform input data to produce
 /// useful results.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/functions/
-module BasicFunctions = 
+/// To learn more, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/functions/
+module BasicFunctions =
 
-    /// You use 'let' to define a function. This one accepts an integer argument and returns an integer. 
+    /// You use 'let' to define a function. This one accepts an integer argument and returns an integer.
     /// Parentheses are optional for function arguments, except for when you use an explicit type annotation.
     let sampleFunction1 x = x*x + 3
 
-    /// Apply the function, naming the function return result using 'let'. 
+    /// Apply the function, naming the function return result using 'let'.
     /// The variable type is inferred from the function return type.
     let result1 = sampleFunction1 4573
 
@@ -121,10 +121,10 @@ module BasicFunctions =
     /// Conditionals use if/then/elif/else.
     ///
     /// Note that F# uses white space indentation-aware syntax, similar to languages like Python.
-    let sampleFunction3 x = 
-        if x < 100.0 then 
+    let sampleFunction3 x =
+        if x < 100.0 then
             2.0*x*x - x/5.0 + 3.0
-        else 
+        else
             2.0*x*x + x/5.0 - 37.0
 
     let result3 = sampleFunction3 (6.5 + 4.5)
@@ -135,10 +135,10 @@ module BasicFunctions =
 
 /// Booleans are fundamental data types in F#.  Here are some examples of Booleans and conditional logic.
 ///
-/// To learn more, see: 
-///     https://docs.microsoft.com/dotnet/fsharp/language-reference/primitive-types
+/// To learn more, see:
+///     https://learn.microsoft.com/dotnet/fsharp/language-reference/primitive-types
 ///     and
-///     https://docs.microsoft.com/dotnet/fsharp/language-reference/symbol-and-operator-reference/boolean-operators
+///     https://learn.microsoft.com/dotnet/fsharp/language-reference/symbol-and-operator-reference/boolean-operators
 module Booleans =
 
     /// Booleans values are 'true' and 'false'.
@@ -154,8 +154,8 @@ module Booleans =
 
 /// Strings are fundamental data types in F#.  Here are some examples of Strings and basic String manipulation.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/strings
-module StringManipulation = 
+/// To learn more, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/strings
+module StringManipulation =
 
     /// Strings use double quotes.
     let string1 = "Hello"
@@ -169,7 +169,7 @@ module StringManipulation =
     let string4 = """The computer said "hello world" when I told it to!"""
 
     /// String concatenation is normally done with the '+' operator.
-    let helloWorld = string1 + " " + string2 
+    let helloWorld = string1 + " " + string2
 
     // This line uses '%s' to print a string value.  This is type-safe.
     printfn "%s" helloWorld
@@ -182,13 +182,13 @@ module StringManipulation =
 
 /// Tuples are simple combinations of data values into a combined value.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/tuples
+/// To learn more, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/tuples
 module Tuples =
 
     /// A simple tuple of integers.
     let tuple1 = (1, 2, 3)
 
-    /// A function that swaps the order of two values in a tuple. 
+    /// A function that swaps the order of two values in a tuple.
     ///
     /// F# Type Inference will automatically generalize the function to have a generic type,
     /// meaning that it will work with any type.
@@ -222,8 +222,8 @@ module Tuples =
 /// are used extensively when processing data.  These operators are themselves functions
 /// which make use of Partial Application.
 ///
-/// To learn more about these operators, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/functions/#function-composition-and-pipelining
-/// To learn more about Partial Application, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/functions/#partial-application-of-arguments
+/// To learn more about these operators, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/functions/#function-composition-and-pipelining
+/// To learn more about Partial Application, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/functions/#partial-application-of-arguments
 module PipelinesAndComposition =
 
     /// Squares a value.
@@ -242,20 +242,20 @@ module PipelinesAndComposition =
 
     /// Given a list of integers, it filters out the even numbers,
     /// squares the resulting odds, and adds 1 to the squared odds.
-    let squareOddValuesAndAddOne values = 
+    let squareOddValuesAndAddOne values =
         let odds = List.filter isOdd values
         let squares = List.map square odds
         let result = List.map addOne squares
         result
 
     printfn $"processing {numbers} through 'squareOddValuesAndAddOne' produces: {squareOddValuesAndAddOne numbers}"
-    
+
     /// A shorter way to write 'squareOddValuesAndAddOne' is to nest each
     /// sub-result into the function calls themselves.
     ///
     /// This makes the function much shorter, but it's difficult to see the
     /// order in which the data is processed.
-    let squareOddValuesAndAddOneNested values = 
+    let squareOddValuesAndAddOneNested values =
         List.map addOne (List.map square (List.filter isOdd values))
 
     printfn $"processing {numbers} through 'squareOddValuesAndAddOneNested' produces: {squareOddValuesAndAddOneNested numbers}"
@@ -303,15 +303,15 @@ module PipelinesAndComposition =
 
 
 /// Lists are ordered, immutable, singly-linked lists.  They are eager in their evaluation.
-/// 
+///
 /// This module shows various ways to generate lists and process lists with some functions
 /// in the 'List' module in the F# Core Library.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/lists
+/// To learn more, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/lists
 module Lists =
 
     /// Lists are defined using [ ... ].  This is an empty list.
-    let list1 = [ ]  
+    let list1 = [ ]
 
     /// This is a list with 3 elements.  ';' is used to separate elements on the same line.
     let list2 = [ 1; 2; 3 ]
@@ -324,15 +324,15 @@ module Lists =
     ]
 
     /// This is a list of integers from 1 to 1000
-    let numberList = [ 1 .. 1000 ]  
+    let numberList = [ 1 .. 1000 ]
 
-    /// Lists can also be generated by computations. This is a list containing 
+    /// Lists can also be generated by computations. This is a list containing
     /// all the days of the year.
     ///
     /// 'yield' is used for on-demand evaluation. More on this later in Sequences.
-    let daysList = 
+    let daysList =
         [ for month in 1 .. 12 do
-              for day in 1 .. System.DateTime.DaysInMonth(2017, month) do 
+              for day in 1 .. System.DateTime.DaysInMonth(2017, month) do
                   yield System.DateTime(2017, month, day) ]
 
     // Print the first 5 elements of 'daysList' using 'List.take'.
@@ -340,22 +340,22 @@ module Lists =
 
     /// Computations can include conditionals.  This is a list containing the tuples
     /// which are the coordinates of the black squares on a chess board.
-    let blackSquares = 
+    let blackSquares =
         [ for i in 0 .. 7 do
-              for j in 0 .. 7 do 
-                  if (i+j) % 2 = 1 then 
+              for j in 0 .. 7 do
+                  if (i+j) % 2 = 1 then
                       yield (i, j) ]
 
     /// Lists can be transformed using 'List.map' and other functional programming combinators.
-    /// This definition produces a new list by squaring the numbers in numberList, using the pipeline 
+    /// This definition produces a new list by squaring the numbers in numberList, using the pipeline
     /// operator to pass an argument to List.map.
-    let squares = 
-        numberList 
-        |> List.map (fun x -> x*x) 
+    let squares =
+        numberList
+        |> List.map (fun x -> x*x)
 
-    /// There are many other list combinations. The following computes the sum of the squares of the 
+    /// There are many other list combinations. The following computes the sum of the squares of the
     /// numbers divisible by 3.
-    let sumOfSquares = 
+    let sumOfSquares =
         numberList
         |> List.filter (fun x -> x % 3 = 0)
         |> List.sumBy (fun x -> x * x)
@@ -368,7 +368,7 @@ module Lists =
 /// Although they are similar to Lists (they support enumeration and have similar combinators for data processing),
 /// they are generally faster and support fast random access.  This comes at the cost of being less safe by being mutable.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/arrays
+/// To learn more, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/arrays
 module Arrays =
 
     /// This is The empty array.  Note that the syntax is similar to that of Lists, but uses `[| ... |]` instead.
@@ -381,31 +381,31 @@ module Arrays =
     let array3 = [| 1 .. 1000 |]
 
     /// This is an array containing only the words "hello" and "world".
-    let array4 = 
+    let array4 =
         [| for word in array2 do
-               if word.Contains("l") then 
+               if word.Contains("l") then
                    yield word |]
 
     /// This is an array initialized by index and containing the even numbers from 0 to 2000.
-    let evenNumbers = Array.init 1001 (fun n -> n * 2) 
+    let evenNumbers = Array.init 1001 (fun n -> n * 2)
 
     /// Sub-arrays are extracted using slicing notation.
     let evenNumbersSlice = evenNumbers[0..500]
 
     /// You can loop over arrays and lists using 'for' loops.
-    for word in array4 do 
+    for word in array4 do
         printfn $"word: {word}"
 
     // You can modify the contents of an array element by using the left arrow assignment operator.
     //
-    // To learn more about this operator, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/values/index#mutable-variables
+    // To learn more about this operator, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/values/index#mutable-variables
     array2[1] <- "WORLD!"
 
     /// You can transform arrays using 'Array.map' and other functional programming operations.
     /// The following calculates the sum of the lengths of the words that start with 'h'.
     ///
     /// Note that in this case, similar to Lists, array2 is not mutated by Array.filter.
-    let sumOfLengthsOfWords = 
+    let sumOfLengthsOfWords =
         array2
         |> Array.filter (fun x -> x.StartsWith "h")
         |> Array.sumBy (fun x -> x.Length)
@@ -415,13 +415,13 @@ module Arrays =
 
 /// Sequences are a logical series of elements, all of the same type.  These are a more general type than Lists and Arrays.
 ///
-/// Sequences are evaluated on-demand and are re-evaluated each time they are iterated. 
+/// Sequences are evaluated on-demand and are re-evaluated each time they are iterated.
 /// An F# sequence is an alias for a .NET System.Collections.Generic.IEnumerable<'T>.
 ///
 /// Sequence processing functions can be applied to Lists and Arrays as well.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/sequences
-module Sequences = 
+/// To learn more, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/sequences
+module Sequences =
 
     /// This is the empty sequence.
     let seq1 = Seq.empty
@@ -433,13 +433,13 @@ module Sequences =
     let numbersSeq = seq { 1 .. 1000 }
 
     /// This is a sequence producing the words "hello" and "world"
-    let seq3 = 
+    let seq3 =
         seq { for word in seq2 do
-                  if word.Contains("l") then 
+                  if word.Contains("l") then
                       yield word }
 
     /// This is a sequence producing the even numbers up to 2000.
-    let evenNumbers = Seq.init 1001 (fun n -> n * 2) 
+    let evenNumbers = Seq.init 1001 (fun n -> n * 2)
 
     let rnd = System.Random()
 
@@ -450,8 +450,8 @@ module Sequences =
               yield! randomWalk (x + rnd.NextDouble() - 0.5) }
 
     /// This example shows the first 100 elements of the random walk.
-    let first100ValuesOfRandomWalk = 
-        randomWalk 5.0 
+    let first100ValuesOfRandomWalk =
+        randomWalk 5.0
         |> Seq.truncate 100
         |> Seq.toList
 
@@ -463,12 +463,12 @@ module Sequences =
 ///
 /// Recursion is the preferred way to process sequences or collections in F#.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/functions/index#recursive-functions
-module RecursiveFunctions = 
-              
-    /// This example shows a recursive function that computes the factorial of an 
+/// To learn more, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/functions/index#recursive-functions
+module RecursiveFunctions =
+
+    /// This example shows a recursive function that computes the factorial of an
     /// integer. It uses 'let rec' to define a recursive function.
-    let rec factorial n = 
+    let rec factorial n =
         if n = 0 then 1 else n * factorial (n-1)
 
     printfn $"Factorial of 6 is: %d{factorial 6}"
@@ -499,7 +499,7 @@ module RecursiveFunctions =
         match xs with
         | []    -> accumulator
         | y::ys -> sumListTailRecHelper (accumulator+y) ys
-    
+
     /// This invokes the tail recursive helper function, providing '0' as a seed accumulator.
     /// An approach like this is common in F#.
     let sumListTailRecursive xs = sumListTailRecHelper 0 xs
@@ -512,37 +512,37 @@ module RecursiveFunctions =
 /// Records are an aggregate of named values, with optional members (such as methods).
 /// They are immutable and have structural equality semantics.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/records
-module RecordTypes = 
+/// To learn more, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/records
+module RecordTypes =
 
-    /// This example shows how to define a new record type.  
-    type ContactCard = 
+    /// This example shows how to define a new record type.
+    type ContactCard =
         { Name     : string
           Phone    : string
           Verified : bool }
-              
+
     /// This example shows how to instantiate a record type.
-    let contact1 = 
-        { Name = "Alf" 
-          Phone = "(206) 555-0157" 
+    let contact1 =
+        { Name = "Alf"
+          Phone = "(206) 555-0157"
           Verified = false }
 
     /// You can also do this on the same line with ';' separators.
     let contactOnSameLine = { Name = "Alf"; Phone = "(206) 555-0157"; Verified = false }
 
-    /// This example shows how to use "copy-and-update" on record values. It creates 
-    /// a new record value that is a copy of contact1, but has different values for 
+    /// This example shows how to use "copy-and-update" on record values. It creates
+    /// a new record value that is a copy of contact1, but has different values for
     /// the 'Phone' and 'Verified' fields.
     ///
-    /// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/copy-and-update-record-expressions
-    let contact2 = 
-        { contact1 with 
+    /// To learn more, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/copy-and-update-record-expressions
+    let contact2 =
+        { contact1 with
             Phone = "(206) 555-0112"
             Verified = true }
 
     /// This example shows how to write a function that processes a record value.
     /// It converts a 'ContactCard' object to a string.
-    let showContactCard (c: ContactCard) = 
+    let showContactCard (c: ContactCard) =
         c.Name + " Phone: " + c.Phone + (if not c.Verified then " (unverified)" else "")
 
     printfn $"Alf's Contact Card: {showContactCard contact1}"
@@ -558,12 +558,12 @@ module RecordTypes =
         member this.PrintedContactCard =
             this.Name + " Phone: " + this.Phone + (if not this.Verified then " (unverified)" else "") + this.Address
 
-    let contactAlternate = 
-        { Name = "Alf" 
-          Phone = "(206) 555-0157" 
-          Verified = false 
+    let contactAlternate =
+        { Name = "Alf"
+          Phone = "(206) 555-0157"
+          Verified = false
           Address = "111 Alf Street" }
-   
+
     // Members are accessed via the '.' operator on an instantiated type.
     printfn $"Alf's alternate contact card is {contactAlternate.PrintedContactCard}"
 
@@ -571,7 +571,7 @@ module RecordTypes =
     /// This is helpful in situations where the performance of structs outweighs
     /// the flexibility of reference types.
     [<Struct>]
-    type ContactCardStruct = 
+    type ContactCardStruct =
         { Name     : string
           Phone    : string
           Verified : bool }
@@ -580,18 +580,18 @@ module RecordTypes =
 /// Discriminated Unions (DU for short) are values which could be a number of named forms or cases.
 /// Data stored in DUs can be one of several distinct values.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/discriminated-unions
-module DiscriminatedUnions = 
+/// To learn more, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/discriminated-unions
+module DiscriminatedUnions =
 
     /// The following represents the suit of a playing card.
-    type Suit = 
-        | Hearts 
-        | Clubs 
-        | Diamonds 
+    type Suit =
+        | Hearts
+        | Clubs
+        | Diamonds
         | Spades
 
     /// A Discriminated Union can also be used to represent the rank of a playing card.
-    type Rank = 
+    type Rank =
         /// Represents the rank of cards 2 .. 10
         | Value of int
         | Ace
@@ -600,34 +600,34 @@ module DiscriminatedUnions =
         | Jack
 
         /// Discriminated Unions can also implement object-oriented members.
-        static member GetAllRanks() = 
+        static member GetAllRanks() =
             [ yield Ace
               for i in 2 .. 10 do yield Value i
               yield Jack
               yield Queen
               yield King ]
-                                   
+
     /// This is a record type that combines a Suit and a Rank.
     /// It's common to use both Records and Discriminated Unions when representing data.
     type Card = { Suit: Suit; Rank: Rank }
-              
+
     /// This computes a list representing all the cards in the deck.
-    let fullDeck = 
+    let fullDeck =
         [ for suit in [ Hearts; Diamonds; Clubs; Spades] do
-              for rank in Rank.GetAllRanks() do 
+              for rank in Rank.GetAllRanks() do
                   yield { Suit=suit; Rank=rank } ]
 
     /// This example converts a 'Card' object to a string.
-    let showPlayingCard (c: Card) = 
-        let rankString = 
-            match c.Rank with 
+    let showPlayingCard (c: Card) =
+        let rankString =
+            match c.Rank with
             | Ace -> "Ace"
             | King -> "King"
             | Queen -> "Queen"
             | Jack -> "Jack"
             | Value n -> string n
-        let suitString = 
-            match c.Suit with 
+        let suitString =
+            match c.Suit with
             | Clubs -> "clubs"
             | Diamonds -> "diamonds"
             | Spades -> "spades"
@@ -635,8 +635,8 @@ module DiscriminatedUnions =
         rankString  + " of " + suitString
 
     /// This example prints all the cards in a playing deck.
-    let printAllCards() = 
-        for card in fullDeck do 
+    let printAllCards() =
+        for card in fullDeck do
             printfn $"{showPlayingCard card}"
 
     // Single-case DUs are often used for domain modeling.  This can buy you extra type safety
@@ -709,11 +709,11 @@ module DiscriminatedUnions =
 
 
 /// Pattern Matching is a feature of F# that allows you to utilize Patterns,
-/// which are a way to compare data with a logical structure or structures, 
+/// which are a way to compare data with a logical structure or structures,
 /// decompose data into constituent parts, or extract information from data in various ways.
 /// You can then dispatch on the "shape" of a pattern via Pattern Matching.
-/// 
-/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/pattern-matching
+///
+/// To learn more, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/pattern-matching
 module PatternMatching =
 
     /// A record for a person's first and last name
@@ -729,9 +729,9 @@ module PatternMatching =
         | Executive of executive: Person * reports: List<Employee> * assistant: Employee
 
     /// Count everyone underneath the employee in the management hierarchy,
-    /// including the employee. The matches bind names to the properties 
+    /// including the employee. The matches bind names to the properties
     /// of the cases so that those names can be used inside the match branches.
-    /// Note that the names used for binding do not need to be the same as the 
+    /// Note that the names used for binding do not need to be the same as the
     /// names given in the DU definition above.
     let rec countReports(emp : Employee) =
         1 + match emp with
@@ -752,7 +752,7 @@ module PatternMatching =
                        | _ -> false) // '_' is a wildcard pattern that matches anything.
                                      // This handles the "or else" case.
 
-    /// You can also use the shorthand function construct for pattern matching, 
+    /// You can also use the shorthand function construct for pattern matching,
     /// which is useful when you're writing functions which make use of Partial Application.
     let private parseHelper (f: string -> bool * 'T) = f >> function
         | (true, item) -> Some item
@@ -771,9 +771,9 @@ module PatternMatching =
     let parseTimeSpan = parseHelper TimeSpan.TryParse
 
     // Active Patterns are another powerful construct to use with pattern matching.
-    // They allow you to partition input data into custom forms, decomposing them at the pattern match call site. 
+    // They allow you to partition input data into custom forms, decomposing them at the pattern match call site.
     //
-    // To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/active-patterns
+    // To learn more, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/active-patterns
     let (|Int|_|) = parseInt
     let (|Double|_|) = parseDouble
     let (|Date|_|) = parseDateTimeOffset
@@ -799,8 +799,8 @@ module PatternMatching =
 /// They are used extensively in F# code to represent the cases where many other
 /// languages would use null references.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/options
-module OptionValues = 
+/// To learn more, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/options
+module OptionValues =
 
     /// First, define a zip code defined via Single-case Discriminated Union.
     type ZipCode = ZipCode of string
@@ -808,7 +808,7 @@ module OptionValues =
     /// Next, define a type where the ZipCode is optional.
     type Customer = { ZipCode: ZipCode option }
 
-    /// Next, define an interface type that represents an object to compute the shipping zone for the customer's zip code, 
+    /// Next, define an interface type that represents an object to compute the shipping zone for the customer's zip code,
     /// given implementations for the 'getState' and 'getShippingZone' abstract methods.
     type IShippingCalculator =
         abstract GetState : ZipCode -> string option
@@ -818,22 +818,22 @@ module OptionValues =
     /// This uses combinators in the Option module to allow a functional pipeline for
     /// transforming data with Optionals.
     let CustomerShippingZone (calculator: IShippingCalculator, customer: Customer) =
-        customer.ZipCode 
-        |> Option.bind calculator.GetState 
+        customer.ZipCode
+        |> Option.bind calculator.GetState
         |> Option.map calculator.GetShippingZone
 
 
 /// Units of measure are a way to annotate primitive numeric types in a type-safe way.
 /// You can then perform type-safe arithmetic on these values.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/units-of-measure
-module UnitsOfMeasure = 
+/// To learn more, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/units-of-measure
+module UnitsOfMeasure =
 
     /// First, open a collection of common unit names
     open Microsoft.FSharp.Data.UnitSystems.SI.UnitNames
 
     /// Define a unitized constant
-    let sampleValue1 = 1600.0<meter>          
+    let sampleValue1 = 1600.0<meter>
 
     /// Next, define a new unit type
     [<Measure>]
@@ -842,10 +842,10 @@ module UnitsOfMeasure =
         static member asMeter = 1609.34<meter/mile>
 
     /// Define a unitized constant
-    let sampleValue2  = 500.0<mile>          
+    let sampleValue2  = 500.0<mile>
 
     /// Compute  metric-system constant
-    let sampleValue3 = sampleValue2 * mile.asMeter   
+    let sampleValue3 = sampleValue2 * mile.asMeter
 
     // Values using Units of Measure can be used just like the primitive numeric type for things like printing.
     printfn $"After a %f{sampleValue1} race I would walk %f{sampleValue2} miles which would be %f{sampleValue3} meters"
@@ -854,10 +854,10 @@ module UnitsOfMeasure =
 /// Classes are a way of defining new object types in F#, and support standard Object-oriented constructs.
 /// They can have a variety of members (methods, properties, events, etc.)
 ///
-/// To learn more about Classes, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/classes
+/// To learn more about Classes, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/classes
 ///
-/// To learn more about Members, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/members
-module DefiningClasses = 
+/// To learn more about Members, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/members
+module DefiningClasses =
 
     /// A simple two-dimensional Vector class.
     ///
@@ -865,7 +865,7 @@ module DefiningClasses =
     /// and takes two arguments: dx and dy, both of type 'double'.
     type Vector2D(dx : double, dy : double) =
 
-        /// This internal field stores the length of the vector, computed when the 
+        /// This internal field stores the length of the vector, computed when the
         /// object is constructed
         let length = sqrt (dx*dx + dy*dy)
 
@@ -879,7 +879,7 @@ module DefiningClasses =
 
         /// This member is a method.  The previous members were properties.
         member this.Scale(k) = Vector2D(k * this.DX, k * this.DY)
-    
+
     /// This is how you instantiate the Vector2D class.
     let vector1 = Vector2D(3.0, 4.0)
 
@@ -892,16 +892,16 @@ module DefiningClasses =
 /// Generic classes allow types to be defined with respect to a set of type parameters.
 /// In the following, 'T is the type parameter for the class.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/generics/
-module DefiningGenericClasses = 
+/// To learn more, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/generics/
+module DefiningGenericClasses =
 
-    type StateTracker<'T>(initialElement: 'T) = 
+    type StateTracker<'T>(initialElement: 'T) =
 
         /// This internal field store the states in a list.
         let mutable states = [ initialElement ]
 
         /// Add a new element to the list of states.
-        member this.UpdateState newState = 
+        member this.UpdateState newState =
             states <- newState :: states  // use the '<-' operator to mutate the value.
 
         /// Get the entire list of historical states.
@@ -920,7 +920,7 @@ module DefiningGenericClasses =
 /// Interfaces are object types with only 'abstract' members.
 /// Object types and object expressions can implement interfaces.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/interfaces
+/// To learn more, see: https://learn.microsoft.com/dotnet/fsharp/language-reference/interfaces
 module ImplementingInterfaces =
 
     /// This is a type that implements IDisposable.
@@ -936,7 +936,7 @@ module ImplementingInterfaces =
 
 
     /// This is an object that implements IDisposable via an Object Expression
-    /// Unlike other languages such as C# or Java, a new type definition is not needed 
+    /// Unlike other languages such as C# or Java, a new type definition is not needed
     /// to implement an interface.
     let interfaceImplementation =
         { new System.IDisposable with
@@ -948,18 +948,18 @@ module ImplementingInterfaces =
 ///
 /// To learn more, see: https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-arraymodule-parallel.html
 module ParallelArrayProgramming =
-              
+
     /// First, an array of inputs.
     let oneBigArray = [| 0 .. 100000 |]
-    
+
     // Next, define a functions that does some CPU intensive computation.
-    let rec computeSomeFunction x = 
-        if x <= 2 then 1 
+    let rec computeSomeFunction x =
+        if x <= 2 then 1
         else computeSomeFunction (x - 1) + computeSomeFunction (x - 2)
-       
+
     // Next, do a parallel map over a large input array.
-    let computeResults() = 
-        oneBigArray 
+    let computeResults() =
+        oneBigArray
         |> Array.Parallel.map (fun x -> computeSomeFunction (x % 20))
 
     // Next, print the results.

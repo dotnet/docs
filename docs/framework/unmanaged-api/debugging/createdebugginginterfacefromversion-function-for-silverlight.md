@@ -12,7 +12,7 @@ ms.assetid: 35c7a18f-133a-4584-bd25-bb338568b0c6
 ---
 # CreateDebuggingInterfaceFromVersion Function for Silverlight
 
-Accepts a common language runtime (CLR) version string that is returned from the [CreateVersionStringFromModule function](createversionstringfrommodule-function.md), and returns a corresponding debugger interface (typically, [ICorDebug](icordebug-interface.md)).  
+Accepts a common language runtime (CLR) version string that is returned from the [CreateVersionStringFromModule function](../../../core/unmanaged-api/debugging/createversionstringfrommodule-function.md), and returns a corresponding debugger interface (typically, [ICorDebug](icordebug-interface.md)).  
   
 ## Syntax  
   
@@ -26,7 +26,7 @@ HRESULT CreateDebuggingInterfaceFromVersion (
 ## Parameters  
 
  `szDebuggeeVersion`\
- [in] Version string of the CLR in the target debuggee, which is returned by the [CreateVersionStringFromModule function](createversionstringfrommodule-function.md).  
+ [in] Version string of the CLR in the target debuggee, which is returned by the [CreateVersionStringFromModule function](../../../core/unmanaged-api/debugging/createversionstringfrommodule-function.md).  
   
  `ppCordb`\
  [out] Pointer to a pointer to a COM object (`IUnknown`). This object will be cast to an [ICorDebug](icordebug-interface.md) object before it is returned.  

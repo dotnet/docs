@@ -3,7 +3,12 @@ using ConsoleDisposable.Example;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-using IHost host = CreateHostBuilder(args).Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+builder.Services.AddTransient<TransientDisposable>();
+builder.Services.AddScoped<ScopedDisposable>();
+builder.Services.AddSingleton<SingletonDisposable>();
+
+using IHost host = builder.Build();
 
 ExemplifyDisposableScoping(host.Services, "Scope 1");
 Console.WriteLine();
@@ -12,13 +17,6 @@ ExemplifyDisposableScoping(host.Services, "Scope 2");
 Console.WriteLine();
 
 await host.RunAsync();
-
-static IHostBuilder CreateHostBuilder(string[] args) =>
-    Host.CreateDefaultBuilder(args)
-    .ConfigureServices((_, services) =>
-        services.AddTransient<TransientDisposable>()
-    .AddScoped<ScopedDisposable>()
-    .AddSingleton<SingletonDisposable>());
 
 static void ExemplifyDisposableScoping(IServiceProvider services, string scope)
 {
@@ -47,7 +45,7 @@ static void ExemplifyDisposableScoping(IServiceProvider services, string scope)
 //     info: Microsoft.Hosting.Lifetime[0]
 //          Hosting environment: Production
 //     info: Microsoft.Hosting.Lifetime[0]
-//          Content root path: .\configuration\console-di-disposable\bin\Debug\net6.0
+//          Content root path: .\configuration\console-di-disposable\bin\Debug\net7.0
 //     info: Microsoft.Hosting.Lifetime[0]
 //          Application is shutting down...
 //     SingletonDisposable.Dispose()

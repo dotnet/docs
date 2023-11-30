@@ -1,5 +1,4 @@
 ﻿using System.Diagnostics;
-
 using BroadcastChannel.GrainInterfaces;
 using Microsoft.Extensions.Hosting;
 using Orleans.BroadcastChannel;
@@ -22,7 +21,7 @@ internal sealed class StockWorker : BackgroundService
         while (!stoppingToken.IsCancellationRequested)
         {
             // Capture the starting timestamp.
-            long startingTimetstamp = Stopwatch.GetTimestamp();
+            long startingTimestamp = Stopwatch.GetTimestamp();
 
             // Get all updated stock values.
             Stock[] stocks = await Task.WhenAll(
@@ -37,7 +36,7 @@ internal sealed class StockWorker : BackgroundService
                 stocks.Where(s => s is not null).Select(channelWriter.Publish));
 
             // Use the elapsed time to calculate a 15 second delay.
-            int elapsed = Stopwatch.GetElapsedTime(startingTimetstamp).Milliseconds;
+            int elapsed = Stopwatch.GetElapsedTime(startingTimestamp).Milliseconds;
             int remaining = Math.Max(0, 15_000 - elapsed);
 
             await Task.Delay(remaining, stoppingToken);

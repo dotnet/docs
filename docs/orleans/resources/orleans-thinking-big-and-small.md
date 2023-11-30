@@ -8,7 +8,7 @@ ms.date: 03/21/2022
 
 You don't need hundreds of servers to benefit from Orleans. A handful is enough.
 
-When Orleans was officially announced as a public preview ([Available Now: Preview of Project "Orleans" – Cloud Services at Scale](https://blogs.msdn.com/b/dotnet/archive/2014/04/02/available-now-preview-of-project-orleans-cloud-services-at-scale.aspx)), some of the initial questions and discussions at //build/ were around what type of services the Orleans programming model is suitable for. I heard statements that Orleans is for super-high scale systems.
+When Orleans was officially announced as a public preview, some of the initial questions and discussions at //build/ were around what type of services the Orleans programming model is suitable for. I heard statements that Orleans is for super-high scale systems.
 
 ## Applicability spectrum
 

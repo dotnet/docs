@@ -99,7 +99,7 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
 
   For information about the effect of this option when used with `--password`, `--no-password`, or without either of those options, see [--export-path](#exportpath) earlier in this article.
 
-  - **`-i|--import <PATH>`**
+- **`-i|--import <PATH>`**
 
   Imports the provided HTTPS development certificate into the local machine. Requires that you also specify the `--clean` option, which clears out any existing HTTPS developer certificates.
 

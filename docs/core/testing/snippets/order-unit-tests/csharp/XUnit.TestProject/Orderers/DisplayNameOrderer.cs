@@ -1,14 +1,11 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Xunit;
+﻿using Xunit;
 using Xunit.Abstractions;
 
-namespace XUnit.Project.Orderers
+namespace XUnit.Project.Orderers;
+
+public class DisplayNameOrderer : ITestCollectionOrderer
 {
-    public class DisplayNameOrderer : ITestCollectionOrderer
-    {
-        public IEnumerable<ITestCollection> OrderTestCollections(
-            IEnumerable<ITestCollection> testCollections) =>
-            testCollections.OrderBy(collection => collection.DisplayName);
-    }
+    public IEnumerable<ITestCollection> OrderTestCollections(
+        IEnumerable<ITestCollection> testCollections) =>
+        testCollections.OrderBy(collection => collection.DisplayName);
 }

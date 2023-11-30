@@ -261,8 +261,6 @@ items:
         href: using-dead-letter-queues-to-handle-message-transfer-failures.md
       - name: Poison Message Handling
         href: poison-message-handling.md
-      - name: Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP
-        href: diff-in-queue-in-vista-server-2003-windows-xp.md
       - name: Securing Messages Using Transport Security
         href: securing-messages-using-transport-security.md
       - name: Securing Messages Using Message Security
@@ -433,8 +431,6 @@ items:
           href: specify-the-certificate-authority-chain-verify-signatures-wcf.md
         - name: Certificate Validation Differences Between HTTPS, SSL over TCP, and SOAP Security
           href: cert-val-diff-https-ssl-over-tcp-and-soap.md
-        - name: Differences Between Service Certificate Validation Done by Internet Explorer and WCF
-          href: diff-service-certificate-validation-ie-and-wcf.md
         - name: "How to: Consistently Reference X.509 Certificates"
           href: how-to-consistently-reference-x-509-certificates.md
     - name: Authentication

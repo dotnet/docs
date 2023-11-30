@@ -4,7 +4,6 @@ description: This tutorial shows you how to create a .NET Core console applicati
 ms.date: 11/04/2021
 ms.topic: tutorial
 ms.custom: mvc
-recommendations: false
 #Customer intent: As a developer, I want to use ML.NET to apply a binary classification task so that I can understand how to use sentiment prediction to take appropriate action.
 ---
 # Tutorial: Analyze sentiment of website comments with binary classification in ML.NET
@@ -371,7 +370,6 @@ Sentiment: I love this spaghetti. | Prediction: Positive | Probability: 0.996063
 
 =============== End of process ===============
 Press any key to continue . . .
-
 ```
 
 Congratulations! You've now successfully built a machine learning model for classifying and predicting messages sentiment.

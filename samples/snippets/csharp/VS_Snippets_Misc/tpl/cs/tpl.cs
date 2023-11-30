@@ -157,7 +157,7 @@ namespace TPL
             public T Data;
         }
 
-        // By using tasks explcitly.
+        // By using tasks explicitly.
         public static void DoTree<T>(Tree<T> tree, Action<T> action)
         {
             if (tree == null) return;

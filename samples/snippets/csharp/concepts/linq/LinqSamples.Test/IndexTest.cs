@@ -8,7 +8,7 @@ public class IndexTest
     [Fact]
     public void IntroTest()
     {
-        var sw = InitTest();
+        StringWriter sw = InitTest();
 
         Index.Intro();
         Assert.Equal("97 92 81 ", sw.ToString());

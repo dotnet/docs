@@ -69,7 +69,7 @@ In addition to the C# project file, NuGet dependencies are stored in a separate 
 
 **Figure 4-7.** The *packages.config* file.
 
-You can migrate *packages.config* in class library projects using Visual Studio. This functionality doesn't work with ASP.NET projects, however. [Learn more about migrating *packages.config* to `<PackageReference>` in Visual Studio](/nuget/consume-packages/migrate-packages-config-to-package-reference). If you have a large number of projects to migrate, [this community tool may help](https://github.com/MarkKharitonov/NuGetPCToPRMigrator). If you're using a tool to migrate the project file to the new format, you should do that after you've finished migrating all NuGet references to use `<PackageReverence>`.
+You can migrate *packages.config* in class library projects using Visual Studio. This functionality doesn't work with ASP.NET projects, however. [Learn more about migrating *packages.config* to `<PackageReference>` in Visual Studio](/nuget/consume-packages/migrate-packages-config-to-package-reference). If you have a large number of projects to migrate, [this community tool may help](https://github.com/MarkKharitonov/NuGetPCToPRMigrator). If you're using a tool to migrate the project file to the new format, you should do that after you've finished migrating all NuGet references to use `<PackageReference>`.
 
 ## Create new ASP.NET Core project
 
@@ -369,7 +369,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 }
 ```
 
-This takes care of the only filter used by the eShop app, and in this case it was done by using built-in middleware. If you have global filters that must be configured in your app, this is done when MVC is added in the `ConfigureServices` method, which is shown later in this chapter.
+This takes care of the only filter used by the eShop app, and in this case it was done by using built-in middleware. If you have global filters that must be configured in your app, this is done when MVC is added in _Program.cs_ when you configure services, which is shown later in this chapter.
 
 The last piece of MVC-related logic that needs to be migrated are the app's default routes. The call to `RouteConfig.RegisterRoutes(RouteTable.Routes)` passes the MVC route table to the `RegisterRoutes` helper method, where the following code is executed when the app starts up:
 
@@ -424,15 +424,12 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 }
 ```
 
-Now it's time to configure MVC services, followed by the rest of the app's support for dependency injection (DI). So far, the *eShopPorted* project's `ConfigureServices` method has remained empty. Now it's time to start populating it.
+Now it's time to configure MVC services, followed by the rest of the app's support for dependency injection (DI). So far, the *eShopPorted* project's _Program.cs_ file hasn't added any service configuration. Now it's time to start adding necessary services.
 
 First, to get ASP.NET Core MVC to work properly, it needs to be added:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
-{
-    services.AddMvc();
-}
+builder.Services.AddMvc();
 ```
 
 The preceding code is the minimal configuration required to get MVC features working. There are many additional features that can be configured from this call (some of which are detailed later in this chapter), but for now this will suffice to build the app. Running it now routes the default request properly, but since we've not yet configured DI, an error occurs while activating `CatalogController`, because no implementation of type `ICatalogService` has been provided yet. We'll return to configure MVC further in a moment. For now, let's migrate the app's dependency injection.
@@ -460,29 +457,15 @@ protected IContainer RegisterContainer()
 
 This code configures an [Autofac](https://autofac.org/) container, reads a config setting to determine whether real or mock data should be used, and passes this setting into an Autofac module (found in the app's */Modules* directory). Fortunately, Autofac supports .NET Core, so the module can be migrated directly. Copy the folder into the new project and updates the class's namespace and it should compile.
 
-ASP.NET Core has built-in support for dependency injection, but you can wire up a third-party container such as Autofac easily if necessary. In this case, since the app is already configured to use Autofac, the simplest solution is to maintain its usage. To do so, the `ConfigureServices` method signature must be modified to return an `IServiceProvider`, and the Autofac container instance must be configured and returned from the method.
-
-**Note:** In .NET Core 3.0 and later, the process for integrating a third-party DI container has changed.
-
-Part of configuring Autofac requires a call to `builder.Populate(services)`. This extension is found in the `Autofac.Extensions.DependencyInjection` NuGet package, which must be installed before the code will compile.
-
-After modifying `ConfigureServices` to configure an Autofac container, the new method is as shown here:
+ASP.NET Core has built-in support for dependency injection, but you can wire up a third-party container such as Autofac easily if necessary. In this case, since the app is already configured to use Autofac, the simplest solution is to maintain its usage. In _Program.cs_, simply configure the builder to use the `AutofacServiceProviderFactory` as shown:
 
 ```csharp
-public IServiceProvider ConfigureServices(IServiceCollection services)
-{
-    services.AddMvc();
-
-    // Create Autofac container builder
-    var builder = new ContainerBuilder();
-    builder.Populate(services);
-    bool useMockData = true; // TODO: read from config
-    builder.RegisterModule(new ApplicationModule(useMockData));
-
-    ILifetimeScope container = builder.Build();
-
-    return new AutofacServiceProvider(container);
-}
+// using Autofac.Extensions.DependencyInjection
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+// note: the factory calls builder.Populate so we don't need to here
+bool useMockData = true; // TODO: read from config
+builder.Host.ConfigureContainer<ContainerBuilder>(builder =>
+    builder.RegisterModule(new ApplicationModule(useMockData)));
 ```
 
 For now, the setting for `useMockData` is set to `true`. This setting will be read from configuration in a moment. At this point, the app compiles and should load successfully when run, as shown in Figure 4-12.
@@ -493,23 +476,14 @@ For now, the setting for `useMockData` is set to `true`. This setting will be re
 
 #### Migrate app settings
 
-ASP.NET Core uses a new [configuration system](/aspnet/core/fundamentals/configuration/?preserve-view=true&view=aspnetcore-2.2), which by default uses an *appsettings.json* file. By using `CreateDefaultBuilder` in *Program.cs*, the default configuration is already set up in the app. To access configuration, classes just need to request it in their constructor. The `Startup` class is no exception. To start accessing configuration in `Startup` and the rest of the app, request an instance of `IConfiguration` from its constructor:
-
-```csharp
-public Startup(IConfiguration configuration)
-{
-    Configuration = configuration;
-}
-
-public IConfiguration Configuration { get; }
-```
+ASP.NET Core uses a new [configuration system](/aspnet/core/fundamentals/configuration/?preserve-view=true&view=aspnetcore-2.2), which by default uses an *appsettings.json* file. By using `CreateDefaultBuilder` in *Program.cs*, the default configuration is already set up in the app. To access configuration, classes just need to request it in their constructor. In _Program.cs_, configuration is accessible from `builder.Configuration`.
 
 The original app referenced its settings using `ConfigurationManager.AppSettings`. A quick search for all references of this term yields the set of settings the new app needs. There are only two:
 
 - `UseMockData`
 - `UseCustomizationData`
 
-If your app has more complex configuration, especially if it's using custom configuration sections, you'll probably want to create and bind objects to different parts of your app's configuration. These types can then be accessed using the [options pattern](../../core/extensions/options.md). However, as noted in the referenced doc, this pattern shouldn't be used in `ConfigureServices`. Instead the ported app will reference the `UseMockData` configuration value directly.
+If your app has more complex configuration, especially if it's using custom configuration sections, you'll probably want to create and bind objects to different parts of your app's configuration. These types can then be accessed using the [options pattern](../../core/extensions/options.md). However, as noted in the referenced doc, this pattern shouldn't be used in _Program.cs_ (or `Startup.ConfigureServices`). Instead the ported app will reference the `UseMockData` configuration value directly.
 
 First, modify the ported app's `appsettings.json` file and add the two settings in the root:
 
@@ -526,10 +500,10 @@ First, modify the ported app's `appsettings.json` file and add the two settings 
 }
 ```
 
-Now, modify `ConfigureServices` to access the `UseMockData` setting from the `Configuration` property (where previously we set the value to `true`):
+Now, modify _Program.cs_ to access the `UseMockData` setting from the `builder.Configuration` property (where previously we set the value to `true`):
 
 ```csharp
-  bool useMockData = Configuration.GetValue<bool>("UseMockData");
+bool useMockData = builder.Configuration.GetValue<bool>("UseMockData");
 ```
 
 At this point, the setting is pulled from configuration. The other setting, `UseCustomizationData`, is used by the `CatalogDBInitializer` class. When you first ported this class, you commented out the access to `ConfigurationManager.AppSettings["UseCustomizationData"]`. Now it's time to modify it to use ASP.NET Core configuration. Modify the constructor of `CatalogDBInitializer` as follows:
@@ -588,7 +562,7 @@ public CatalogDBContext(string connectionString) : base(connectionString)
 }
 ```
 
-Finally, `ConfigureServices` must read the connection string from `Config` and pass it into the `ApplicationModule` when it instantiates it:
+Finally, _Program.cs_ must read the connection string from `Configuration` and pass it into the `ApplicationModule` when it instantiates it:
 
 ```csharp
 bool useMockData = Configuration.GetValue<bool>("UseMockData");
@@ -699,30 +673,18 @@ builder.Property(ci => ci.Id)
     .IsRequired();
 ```
 
-With these modifications, the ASP.NET Core app builds, but it doesn't yet work with EF Core, which must still be configured for dependency injection. With EF Core, the simplest way to configure it is in `ConfigureServices`:
+With these modifications, the ASP.NET Core app builds, but it doesn't yet work with EF Core, which must still be configured for dependency injection. With EF Core, the simplest way to configure it is in _Program.cs_:
 
 ```csharp
-public IServiceProvider ConfigureServices(IServiceCollection services)
+builder.Services.AddMvc();
+bool useMockData = builder.Configuration.GetValue<bool>("UseMockData");
+if (!useMockData)
 {
-    services.AddMvc();
-    bool useMockData = Configuration.GetValue<bool>("UseMockData");
-    if (!useMockData)
-    {
-        string connectionString = Configuration.GetConnectionString("DefaultConnection");
+    string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-        services.AddDbContext<CatalogDBContext>(options =>
-            options.UseSqlServer(connectionString)
-        );
-    }
-
-    // Create Autofac container builder
-    var builder = new ContainerBuilder();
-    builder.Populate(services);
-    builder.RegisterModule(new ApplicationModule(useMockData));
-
-    ILifetimeScope container = builder.Build();
-
-    return new AutofacServiceProvider(container);
+    builder.Services.AddDbContext<CatalogDBContext>(options =>
+        options.UseSqlServer(connectionString)
+    );
 }
 ```
 
@@ -795,29 +757,26 @@ With this change, running the app reveals the images work as before.
 
 ## Additional MVC customizations
 
-The *eShopLegacyMVC* app is fairly simple, so there isn't much to configure in terms of default MVC behavior. However, if you do need to configure additional MVC components, such as CORS, filters, and route constraints, you generally provide this information in `Startup.ConfigureServices`, where `UseMvc` is called. For example, the following code listing configures [CORS](/aspnet/core/security/cors?preserve-view=true&view=aspnetcore-2.2) and sets up a global action filter:
+The *eShopLegacyMVC* app is fairly simple, so there isn't much to configure in terms of default MVC behavior. However, if you do need to configure additional MVC components, such as CORS, filters, and route constraints, you generally provide this information in _Program.cs_, where `UseMvc` is called. For example, the following code listing configures [CORS](/aspnet/core/security/cors?preserve-view=true&view=aspnetcore-2.2) and sets up a global action filter:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
+builder.Services.AddCors(options =>
 {
-    services.AddCors(options =>
-    {
-        options.AddPolicy(MyAllowSpecificOrigins,
-            builder =>
-                builder.WithOrigins("http://example.com", "http://www.contoso.com")
-                    .AllowAnyHeader()
-                    .AllowAnyMethod());
-    });
+    options.AddPolicy(MyAllowSpecificOrigins,
+        builder =>
+            builder.WithOrigins("http://example.com", "http://www.contoso.com")
+                .AllowAnyHeader()
+                .AllowAnyMethod());
+});
 
-    services.AddMvc(options =>
-    {
-      options.Filters.Add(new SampleGlobalActionFilter());
-    }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-}
+builder.Services.AddMvc(options =>
+{
+    options.Filters.Add(new SampleGlobalActionFilter());
+}).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 ```
 
 > [!Note]
-> To finish configuring CORS, you must also call `app.UseCors()` in `Configure`.
+> To finish configuring CORS, you must also call `app.UseCors()` after building the application.
 
 Other advanced scenarios, like adding [custom model binders](/aspnet/core/mvc/advanced/custom-model-binding?preserve-view=true&view=aspnetcore-2.2), formatters, and more are covered in the detailed ASP.NET Core docs. Generally these can be applied on an individual controller or action basis, or globally using the same options approach shown in the previous code listing.
 

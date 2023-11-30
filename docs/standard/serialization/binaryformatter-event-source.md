@@ -75,10 +75,10 @@ For more information, see <xref:System.Diagnostics.Tracing.EventKeywords?display
 
 The following code:
 
-- creates an `EventListener`-derived type that writes to `System.Console`,
-- subscribes that listener to `BinaryFormatter`-produced notifications,
-- serializes and deserializes a simple object graph using `BinaryFormatter`, and
-- analyzes the events that have been raised.
+* creates an `EventListener`-derived type that writes to `System.Console`,
+* subscribes that listener to `BinaryFormatter`-produced notifications,
+* serializes and deserializes a simple object graph using `BinaryFormatter`, and
+* analyzes the events that have been raised.
 
 :::code language="csharp" source="snippets/binaryformatter-event-source/csharp/Program.cs":::
 

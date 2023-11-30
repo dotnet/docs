@@ -8,7 +8,6 @@ Public Class Class13
     Public Sub Process()
     End Sub
 
-
     Private Sub ImplicitConversion()
         '<Snippet161>
         ' If Option Strict is on, this implicit narrowing
@@ -75,6 +74,5 @@ Public Class Class13
 
     End Sub
     '</Snippet164>
-
 
 End Class

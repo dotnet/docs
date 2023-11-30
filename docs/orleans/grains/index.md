@@ -1,7 +1,7 @@
 ---
 title: Develop a grain
 description: Learn how to develop a grain in .NET Orleans.
-ms.date: 03/16/2022
+ms.date: 10/16/2023
 ---
 
 # Develop a grain
@@ -20,7 +20,9 @@ The following is an excerpt from the Orleans version 1.5 Presence Service sample
 public interface IPlayerGrain : IGrainWithGuidKey
 {
     Task<IGameGrain> GetCurrentGame();
+
     Task JoinGame(IGameGrain game);
+
     Task LeaveGame(IGameGrain game);
 }
 
@@ -57,6 +59,35 @@ public class PlayerGrain : Grain, IPlayerGrain
    }
 }
 ```
+
+## Response timeout for grain methods
+
+The Orleans runtime allows you to enforce a response timeout per grain method. If a grain method doesn't complete within the timeout, the runtime throws the <xref:System.TimeoutException>. To impose a response timeout, add the `ResponseTimeoutAttribute` to the interface's grain method definition. It's very important that the attribute is added to the interface method definition, not to the method implementation in the grain class, as both the client and the silo need to be aware of the timeout.
+
+Extending the previous `PlayerGrain` implementation, the following example shows how to impose a response timeout on the `LeaveGame` method:
+
+```csharp
+public interface IPlayerGrain : IGrainWithGuidKey
+{
+    Task<IGameGrain> GetCurrentGame();
+
+    Task JoinGame(IGameGrain game);
+
+    [ResponseTimeout("00:00:05")] // 5s timeout
+    Task LeaveGame(IGameGrain game);
+}
+```
+
+The preceding code sets a response timeout of five seconds on the `LeaveGame` method. When leaving a game, if it takes longer than five seconds a <xref:System.TimeoutException> is thrown.
+
+### Configure response timeout
+
+Much like individual grain method response timeouts, you can configure a default response timeout for all grain methods. Calls to grain methods will timeout if a response isn't received within a specified time period. By default, this period is **30 seconds**. You can configure the default response timeout:
+
+- By configuring <xref:Orleans.Configuration.MessagingOptions.ResponseTimeout> on <xref:Orleans.Configuration.ClientMessagingOptions>, on an external client.
+- By configuring <xref:Orleans.Configuration.MessagingOptions.ResponseTimeout> on <xref:Orleans.Configuration.SiloMessagingOptions>, on a server.
+
+For more information on configuring Orleans, see [Client configuration](../host/configuration-guide/client-configuration.md) or [Server configuration](../host/configuration-guide/server-configuration.md).
 
 ## Return values from grain methods
 
@@ -184,5 +215,14 @@ await joinedTask;
 
 ### Virtual methods
 
-A grain class can optionally override <xref:Orleans.Grain.OnActivateAsync%2A> and <xref:Orleans.Grain.OnDeactivateAsync%2A> virtual methods; these are invoked by the Orleans runtime upon activation and deactivation of each grain of the class. This gives the grain code a chance to perform additional initialization and cleanup operations. An exception thrown by `OnActivateAsync` fails the activation process.
+A grain class can optionally override <xref:Orleans.Grain.OnActivateAsync%2A> and <xref:Orleans.Grain.OnDeactivateAsync%2A> virtual methods; are invoked by the Orleans runtime upon activation and deactivation of each grain of the class. This gives the grain code a chance to perform additional initialization and cleanup operations. An exception thrown by `OnActivateAsync` fails the activation process.
+
 While `OnActivateAsync`, if overridden, is always called as part of the grain activation process, `OnDeactivateAsync` is not guaranteed to get called in all situations, for example, in case of a server failure or other abnormal event. Because of that, applications should not rely on `OnDeactivateAsync` for performing critical operations such as the persistence of state changes. They should use it only for best-effort operations.
+
+## See also
+
+- [Grain extensions](grain-extensions.md)
+- [Grain identity](grain-identity.md)
+- [Grain persistence](grain-persistence/index.md)
+- [Grain lifecycle overview](grain-lifecycle.md)
+- [Grain placement](grain-placement.md)

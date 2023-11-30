@@ -9,7 +9,7 @@ ms.date: 01/10/2022
 
 ![cover image](./media/cover.png)
 
-**EDITION v1.1**
+**EDITION v1.2**
 
 PUBLISHED BY
 
@@ -21,7 +21,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright &copy; 2022 by Microsoft Corporation
+Copyright &copy; 2023 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 
@@ -62,10 +62,12 @@ Editors:
 > **David Pine**, Senior Content Developer, .NET team, Microsoft
 >
 > **Maira Wenzel**, Senior Program Manager, .NET team, Microsoft
+>
+> **Steve "ardalis" Smith**, Senior Architect and Trainer, NimblePros
 
 ## Version
 
-This guide has been written to cover the **Dapr 1.5** version. .NET samples are based on **.NET 6**.
+This guide has been written to cover the **Dapr 1.9** version. .NET samples are based on **.NET 7**.
 
 ## Who should use this guide
 

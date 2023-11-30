@@ -25,7 +25,7 @@ Either way, you should consider using the built-in support for DI that ships wit
 
 ## Dependency injection in ASP.NET Core
 
-ASP.NET Core assumes apps will use DI. It's not just built into the framework, but is required in order to bring support for framework features into your ASP.NET Core apps. In app startup, a call is made to `ConfigureServices` which is responsible for registering all of the types that the DI container (service collection/service provider) can create and inject in the app. Built-in ASP.NET Core features like Entity Framework Core, Identity, and even MVC are brought into the app by configuring them as services in the `ConfigureServices` method.
+ASP.NET Core assumes apps will use DI. It's not just built into the framework, but is required in order to bring support for framework features into your ASP.NET Core apps. In app startup, calls are made to configure services using the `builder.Services` property of the web host builder. This property works with the application's DI container (service collection/service provider) and is used to create and inject service dependencies within the app. Built-in ASP.NET Core features like Entity Framework Core, Identity, and even MVC are brought into the app by configuring them as services during application startup.
 
 In addition to using the default implementation, apps can still use custom containers. The [documentation covers how to replace the default service container](../../core/extensions/dependency-injection-guidelines.md#default-service-container-replacement).
 

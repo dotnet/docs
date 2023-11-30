@@ -30,7 +30,7 @@ namespace Service
             SyndicationFeed feed = new SyndicationFeed("My Blog Feed", "This is a test feed", new Uri("http://SomeURI"), "FeedOneID", new DateTimeOffset(DateTime.Now));
             feed.Authors.Add(new SyndicationPerson("someone@microsoft.com"));
             feed.Categories.Add(new SyndicationCategory("How To Sample Code"));
-            feed.Description = new TextSyndicationContent("This is a sample that illistrates how to expose a feed using ATOM with WCF");
+            feed.Description = new TextSyndicationContent("This is a sample that illustrates how to expose a feed using ATOM with WCF");
             // </Snippet2>
 
             // <Snippet3>

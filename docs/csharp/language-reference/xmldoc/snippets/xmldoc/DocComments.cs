@@ -10,7 +10,7 @@ namespace XmlTags
     /// </summary>
     /// <remarks>
     /// You can expand on that one sentence summary to
-    /// provide more information for readers. In this case, 
+    /// provide more information for readers. In this case,
     /// the <c>ExampleClass</c> provides different C#
     /// elements to show how you would add documentation
     ///comments for most elements in a typical class.
@@ -81,7 +81,7 @@ namespace XmlTags
     /// also use the "bullet" or "number" style. Neither
     /// would typically use the "term" element.
     /// <br/>
-    /// Note: paragraphs are double spaced. Use the *br* 
+    /// Note: paragraphs are double spaced. Use the *br*
     /// tag for single spaced lines.
     /// </para>
     /// </remarks>
@@ -127,11 +127,11 @@ namespace XmlTags
         /// </code>
         /// </example>
         /// <exception cref="System.OverflowException">
-        /// Thrown when one parameter is 
+        /// Thrown when one parameter is
         /// <see cref="Int32.MaxValue">MaxValue</see> and the other is
         /// greater than 0.
-        /// Note that here you can also use 
-        /// <see href="https://docs.microsoft.com/dotnet/api/system.int32.maxvalue"/>
+        /// Note that here you can also use
+        /// <see href="https://learn.microsoft.com/dotnet/api/system.int32.maxvalue"/>
         ///  to point a web page instead.
         /// </exception>
         /// <see cref="ExampleClass"/> for a list of all
@@ -175,7 +175,7 @@ namespace InheritDoc
     /// </summary>
     /// <remarks>
     /// These remarks would explain more about this class.
-    /// In this example, these comments also explain the 
+    /// In this example, these comments also explain the
     /// general information about the derived class.
     /// </remarks>
     public class MainClass
@@ -194,7 +194,7 @@ namespace InheritDoc
     /// <remarks>
     /// While elided for brevity, each method or property
     /// in this interface would contain docs that you want
-    /// to duplicate in each implementing class. 
+    /// to duplicate in each implementing class.
     /// </remarks>
     public interface ITestInterface
     {
@@ -202,8 +202,8 @@ namespace InheritDoc
         /// This method is part of the test interface.
         /// </summary>
         /// <remarks>
-        /// This content would be inherited by classes 
-        /// that implement this interface when the 
+        /// This content would be inherited by classes
+        /// that implement this interface when the
         /// implementing class uses "inheritdoc"
         /// </remarks>
         /// <returns>The value of <paramref name="arg" /> </returns>

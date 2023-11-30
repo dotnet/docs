@@ -11,7 +11,7 @@
             .WriteRequestToConsole();
 
         var todo = await response.Content.ReadFromJsonAsync<Todo>();
-        WriteLine($"{todo}\n");
+        Console.WriteLine($"{todo}\n");
 
         // Expected output:
         //   POST https://jsonplaceholder.typicode.com/todos HTTP/1.1

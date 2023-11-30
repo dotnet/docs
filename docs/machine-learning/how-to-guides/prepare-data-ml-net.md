@@ -332,7 +332,7 @@ Using the first entry as an example, the following is a detailed description of 
 |--|--|--|
 |1. NormalizeText | Converts all letters to lowercase by default | this is a good product
 |2. TokenizeWords | Splits string into individual words | ["this","is","a","good","product"]
-|3. RemoveDefaultStopWords | Removes stopwords like *is* and *a*. | ["good","product"]
+|3. RemoveDefaultStopWords | Removes stop words like *is* and *a*. | ["good","product"]
 |4. MapValueToKey | Maps the values to keys (categories) based on the input data |  [1,2]
 |5. ProduceNGrams | Transforms text into sequence of consecutive words | [1,1,1,0,0]
 |6. NormalizeLpNorm | Scale inputs by their lp-norm | [ 0.577350529, 0.577350529, 0.577350529, 0, 0 ]

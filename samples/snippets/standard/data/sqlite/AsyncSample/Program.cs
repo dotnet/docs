@@ -16,7 +16,7 @@ namespace AsyncSample
             // Microsoft.Data.Sqlite.
 
             #region snippet_WAL
-            var connection = new SqliteConnection("Data Source=AsyncSample.db;Cache=Shared");
+            var connection = new SqliteConnection("Data Source=AsyncSample.db");
             connection.Open();
 
             // Enable write-ahead logging

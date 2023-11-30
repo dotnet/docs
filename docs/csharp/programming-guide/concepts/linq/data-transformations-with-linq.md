@@ -103,9 +103,8 @@ Language-Integrated Query (LINQ) is not only about retrieving data. It is also a
   
 ## See also
 
-- [Language-Integrated Query (LINQ) (C#)](./index.md)
+- [Language-Integrated Query (LINQ) (C#)](/dotnet/csharp/linq/)
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
 - [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)
 - [LINQ to XML (C#)](../../../../standard/linq/linq-xml-overview.md)
-- [LINQ Query Expressions](../../../linq/index.md)
 - [select clause](../../../language-reference/keywords/select-clause.md)

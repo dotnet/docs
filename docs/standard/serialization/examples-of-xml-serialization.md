@@ -103,8 +103,7 @@ End Sub
 private void SerializeElement(string filename)
 {
     XmlSerializer ser = new XmlSerializer(typeof(XmlElement));
-    XmlElement myElement=
-    new XmlDocument().CreateElement("MyElement", "ns");
+    XmlElement myElement = new XmlDocument().CreateElement("MyElement", "ns");
     myElement.InnerText = "Hello World";
     TextWriter writer = new StreamWriter(filename);
     ser.Serialize(writer, myElement);
@@ -114,7 +113,7 @@ private void SerializeElement(string filename)
 private void SerializeNode(string filename)
 {
     XmlSerializer ser = new XmlSerializer(typeof(XmlNode));
-    XmlNode myNode= new XmlDocument().
+    XmlNode myNode = new XmlDocument().
     CreateNode(XmlNodeType.Element, "MyNode", "ns");
     myNode.InnerText = "Hello Node";
     TextWriter writer = new StreamWriter(filename);
@@ -642,10 +641,9 @@ public class Test
     {
         // Creates an instance of the XmlSerializer class;
         // specifies the type of object to serialize.
-        XmlSerializer serializer =
-        new XmlSerializer(typeof(PurchaseOrder));
+        XmlSerializer serializer = new XmlSerializer(typeof(PurchaseOrder));
         TextWriter writer = new StreamWriter(filename);
-        PurchaseOrder po=new PurchaseOrder();
+        PurchaseOrder po =new PurchaseOrder();
 
         // Creates an address to ship and bill to.
         Address billAddress = new Address();

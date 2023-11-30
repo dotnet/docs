@@ -52,7 +52,7 @@ If there isn't enough free space to accommodate the large object allocation requ
 
 During a generation 1 or generation 2 GC, the garbage collector releases segments that have no live objects on them back to the OS by calling the [VirtualFree function](/windows/desktop/api/memoryapi/nf-memoryapi-virtualfree). Space after the last live object to the end of the segment is decommitted (except on the ephemeral segment where gen0/gen1 live, where the garbage collector does keep some committed because your application will be allocating in it right away). And the free spaces remain committed though they are reset, meaning that the OS doesn't need to write data in them back to disk.
 
-Since the LOH is only collected during generation 2 GCs, the LOH segment can only be freed during such a GC. Figure 3 illustrates a scenario where the garbage collector releases one segment (segment 2) back to the OS and decommits more space on the remaining segments. If it needs to use the decommitted space at the end of the segment to satisfy large object allocation requests, it commits the memory again. (For an explanation of commit/decommit, see the documentation for [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc).
+Since the LOH is only collected during generation 2 GCs, the LOH segment can only be freed during such a GC. Figure 3 illustrates a scenario where the garbage collector releases one segment (segment 2) back to the OS and decommits more space on the remaining segments. If it needs to use the decommitted space at the end of the segment to satisfy large object allocation requests, it commits the memory again. (For an explanation of commit/decommit, see the documentation for [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc).)
 
 ![Figure 3: LOH after a gen 2 GC](media/loh/loh-figure-3.jpg)\
 Figure 3: The LOH after a generation 2 GC
@@ -130,9 +130,7 @@ For more information on the fundamentals of memory and the CPU, see the blog [Un
 You can use the following tools to collect data on LOH performance:
 
 - [.NET CLR memory performance counters](#net-clr-memory-performance-counters)
-
 - [ETW events](#etw-events)
-
 - [A debugger](#a-debugger)
 
 ### .NET CLR Memory Performance counters
@@ -155,21 +153,18 @@ Figure 4: The LOH after a generation 2 GC
 Performance counters can also be queried programmatically. Many people collect them this way as part of their routine testing process. When they spot counters with values that are out of the ordinary, they use other means to get more detailed data to help with the investigation.
 
 > [!NOTE]
-> We recommend that you to use ETW events instead of performance counters, because ETW provides much richer information.
+> We recommend that you use ETW events instead of performance counters, because ETW provides much richer information.
 
 ### ETW events
 
 The garbage collector provides a rich set of ETW events to help you understand what the heap is doing and why. The following blog posts show how to collect and understand GC events with ETW:
 
 - [GC ETW Events - 1](https://devblogs.microsoft.com/dotnet/gc-etw-events-1/)
-
 - [GC ETW Events - 2](https://devblogs.microsoft.com/dotnet/gc-etw-events-2/)
-
 - [GC ETW Events - 3](https://devblogs.microsoft.com/dotnet/gc-etw-events-3/)
-
 - [GC ETW Events - 4](https://devblogs.microsoft.com/dotnet/gc-etw-events-4/)
 
-To identify excessive generation 2 GCs caused by temporary LOH allocations, look at the Trigger Reason column for GCs. For a simple test that only allocates temporary large objects, you can collect information on ETW events with the following [PerfView](https://www.microsoft.com/download/details.aspx?id=28567) command line:
+To identify excessive generation 2 GCs caused by temporary LOH allocations, look at the Trigger Reason column for GCs. For a simple test that only allocates temporary large objects, you can collect information on ETW events with the following [PerfView](https://github.com/microsoft/perfview/releases) command:
 
 ```console
 perfview /GCCollectOnly /AcceptEULA /nogui collect
@@ -200,7 +195,7 @@ As you can see, this is a very simple test that just allocates large objects fro
 If all you have is a memory dump and you need to look at what objects are actually on the LOH, you can use the [SoS debugger extension](../../framework/tools/sos-dll-sos-debugging-extension.md) provided by .NET.
 
 > [!NOTE]
-> The debugging commands mentioned in this section are applicable to the [Windows Debuggers](https://www.microsoft.com/whdc/devtools/debugging/default.mspx).
+> The debugging commands mentioned in this section are applicable to the [Windows debuggers](/windows-hardware/drivers/debugger/).
 
 The following shows sample output from analyzing the LOH:
 

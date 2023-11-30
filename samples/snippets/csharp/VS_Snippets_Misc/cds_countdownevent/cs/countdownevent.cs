@@ -188,7 +188,7 @@ namespace CDSCountdownEvent
     } //end class
     //</snippet02>
 
-    class CancelSempahore
+    class CancelSemaphore
     {
         static IEnumerable<Data> GetData()
         {

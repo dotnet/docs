@@ -582,7 +582,7 @@ namespace SOSamples.Statistics
             SetStatisticValue(StatisticInterface,
                             "USB");
 
-            // 2a. Create a new new statistic to test Increment
+            // 2a. Create a new statistic to test Increment
             // method. No custom handler needed.
             CreateStatistic(TestIncrement, false, "blobs");
 

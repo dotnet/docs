@@ -4,13 +4,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
-    {
-        services.AddHttpClient();
-        services.AddTransient<TodoService>();
-    })
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Services.AddHttpClient();
+builder.Services.AddTransient<TodoService>();
+
+using IHost host = builder.Build();
 
 TodoService todoService =
     host.Services.GetRequiredService<TodoService>();

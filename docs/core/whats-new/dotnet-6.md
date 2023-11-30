@@ -105,7 +105,7 @@ A new, writeable document object model (DOM) has been added, which supplements t
 - <xref:System.Text.Json.Nodes.JsonObject>
 - <xref:System.Text.Json.Nodes.JsonValue>
 
-For more information, see [JSON DOM choices](../../standard/serialization/system-text-json/use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#json-dom-choices).
+For more information, see [JSON DOM choices](../../standard/serialization/system-text-json/use-dom.md?pivots=dotnet-6-0#json-dom-choices).
 
 ### IAsyncEnumerable serialization
 
@@ -132,7 +132,7 @@ New method to write "raw" JSON:
 
 - <xref:System.Text.Json.Utf8JsonWriter.WriteRawValue%2A?displayProperty=nameWithType>
 
-  For more information, see [Write Raw JSON](../../standard/serialization/system-text-json/use-dom-utf8jsonreader-utf8jsonwriter.md?pivots=dotnet-6-0#write-raw-json).
+  For more information, see [Write Raw JSON](../../standard/serialization/system-text-json/use-utf8jsonwriter.md#write-raw-json).
 
 Synchronous serialization and deserialization to a stream:
 
@@ -215,7 +215,7 @@ In *preview* is the ability to use operators on generic types in .NET 6. .NET 6 
 
 ## NuGet package validation
 
-If you're a NuGet library developer, new [package-validation tooling](../../fundamentals/package-validation/overview.md) enables you to validate that your packages are consistent and well-formed. You can determine if:
+If you're a NuGet library developer, new [package-validation tooling](../../fundamentals/apicompat/package-validation/overview.md) enables you to validate that your packages are consistent and well-formed. You can determine if:
 
 - There are any breaking changes across package versions.
 - The package has the same set of public APIs for all runtime-specific implementations.

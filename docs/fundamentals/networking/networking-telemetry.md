@@ -336,12 +336,12 @@ The following steps show the general pattern.
 
     ```c#
     private static readonly AsyncLocal<RequestInfo> _requestInfo = new();
-    
+
     public async Task SendRequestAsync(string url)
     {
         var info = new RequestInfo();
         _requestInfo.Value = info;
-        
+
         info.StartTime = DateTime.UtcNow;
         await _client.GetStringAsync(url);
     ```
@@ -359,7 +359,7 @@ The following steps show the general pattern.
 
     ```c#
     await _client.GetStringAsync(url);
-    
+
     Log($"Time until headers were sent {url} was {info.HeadersSent - info.StartTime}");
     ```
 
@@ -524,7 +524,7 @@ public sealed class KestrelTelemetryConsumer : IKestrelTelemetryConsumer
 
 ### Measure the latency of a .NET reverse proxy
 
-This sample is applicable if you have a reverse proxy that receives inbound requests via Kestrel and makes outbound requests via HttpClient (e.g. [YARP]).
+This sample is applicable if you have a reverse proxy that receives inbound requests via Kestrel and makes outbound requests via HttpClient (for example, [YARP]).
 
 This sample measures the time from receiving the request headers until they're sent out to the backend server.
 

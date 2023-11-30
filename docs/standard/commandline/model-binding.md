@@ -66,11 +66,11 @@ The variables that follow the lambda represent the option and argument objects t
 * If the out-of-order options or arguments are of different types, a run-time exception is thrown. For example, an `int` might appear where a `string` should be in the list of sources.
 * If the out-of-order options or arguments are of the same type, the handler silently gets the wrong values in the parameters provided to it. For example, `string` option `x` might appear where `string` option `y` should be in the list of sources. In that case, the variable for the option `y` value gets the option `x` value.
 
-There are overloads of <xref:System.CommandLine.Handler.SetHandler%2A> that support up to 8 parameters, with both synchronous and asynchronous signatures.
+There are overloads of <xref:System.CommandLine.Handler.SetHandler%2A> that support up to 16 parameters, with both synchronous and asynchronous signatures.
 
-## Parameter binding more than 8 options and arguments
+## Parameter binding more than 16 options and arguments
 
-To handle more than 8 options, or to construct a custom type from multiple options, you can use `InvocationContext` or a custom binder.
+To handle more than 16 options, or to construct a custom type from multiple options, you can use `InvocationContext` or a custom binder.
 
 ### Use `InvocationContext`
 

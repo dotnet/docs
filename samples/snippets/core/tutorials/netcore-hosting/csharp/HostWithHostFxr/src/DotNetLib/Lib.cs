@@ -44,7 +44,7 @@ namespace DotNetLib
 
         private static void PrintLibArgs(LibArgs libArgs)
         {
-            string message = RuntimeInformation.IsOSPlatform(OSPlatform.Windows)
+            string? message = RuntimeInformation.IsOSPlatform(OSPlatform.Windows)
                 ? Marshal.PtrToStringUni(libArgs.Message)
                 : Marshal.PtrToStringUTF8(libArgs.Message);
 

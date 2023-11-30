@@ -34,16 +34,6 @@ Choose these tutorials if you want to use Visual Studio Code or some other code 
 - [Create and publish a package](/nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli)
 - [Create an F# console app](../../fsharp/get-started/get-started-vscode.md)
 
-## Use Visual Studio for Mac
-
-- [Create a console app](with-visual-studio-mac.md)
-- [Debug an app](debugging-with-visual-studio-mac.md)
-- [Publish an app](publishing-with-visual-studio-mac.md)
-- [Create a class library](library-with-visual-studio-mac.md)
-- [Unit test a class library](testing-library-with-visual-studio-mac.md)
-- [Install and use a package](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac)
-- [Create an F# console app](../../fsharp/get-started/get-started-with-visual-studio-for-mac.md)
-
 ## Advanced articles
 
 - [How to create libraries](libraries.md)

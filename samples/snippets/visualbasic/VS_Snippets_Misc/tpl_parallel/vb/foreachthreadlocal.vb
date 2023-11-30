@@ -10,7 +10,7 @@ Module ForEachThreadLocal
         Dim nums() As Integer = Enumerable.Range(0, 1000000).ToArray()
         Dim total As Long = 0
 
-        ' First type paramemter is the type of the source elements
+        ' First type parameter is the type of the source elements
         ' Second type parameter is the type of the thread-local variable (partition subtotal)
         Parallel.ForEach(Of Integer, Long)(nums, Function() 0,
                                            Function(elem, loopState, subtotal)

@@ -798,7 +798,7 @@ Module PLinqSnippetsVB
             ' Using the raw string array here. See PLINQ Data Sample.
             Dim customers As String() = GetCustomersAsStrings().ToArray()
 
-            ' First, we must simulate some currupt input.
+            ' First, we must simulate some corrupt input.
             customers(20) = "###"
 
             'throws indexoutofrange
@@ -831,7 +831,7 @@ Module PLinqSnippetsVB
 
             Dim customers() = GetCustomersAsStrings().ToArray()
             ' Using the raw string array here.
-            ' First, we must simulate some currupt input
+            ' First, we must simulate some corrupt input
             customers(20) = "###"
 
             ' Create a delegate with a lambda expression.

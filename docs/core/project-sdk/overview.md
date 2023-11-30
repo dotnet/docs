@@ -212,7 +212,10 @@ In SDK-style projects, use an MSBuild target named `PreBuild` or `PostBuild` and
 
 ## Customize the build
 
-There are various ways to [customize a build](/visualstudio/msbuild/customize-your-build). You may want to override a property by passing it as an argument to an [msbuild](/visualstudio/msbuild/msbuild-command-line-reference) or [dotnet](../tools/index.md) command. You can also add the property to the project file or to a *Directory.Build.props* file. For a list of useful properties for .NET projects, see [MSBuild reference for .NET SDK projects](msbuild-props.md).
+There are various ways to [customize a build](/visualstudio/msbuild/customize-your-build). You may want to override a property by passing it as an argument to an [msbuild](/visualstudio/msbuild/msbuild-command-line-reference) or [dotnet](../tools/index.md) command. You can also add the property to the project file or to a [*Directory.Build.props* file](/visualstudio/msbuild/customize-by-directory#directorybuildprops-and-directorybuildtargets). For a list of useful properties for .NET projects, see [MSBuild reference for .NET SDK projects](msbuild-props.md).
+
+> [!TIP]
+> An easy way to create a new *Directory.Build.props* file from the command line is by using the command `dotnet new buildprops` at the root of your repository.
 
 ### Custom targets
 
@@ -256,6 +259,6 @@ You can configure how to use the custom target. Since it's an MSBuild target, it
 
 ## See also
 
-- [Install .NET Core](../install/index.yml)
+- [Customize your build (MSBuild)](/visualstudio/msbuild/customize-your-build)
 - [How to use MSBuild project SDKs](/visualstudio/msbuild/how-to-use-project-sdk)
 - [Package custom MSBuild targets and props with NuGet](/nuget/create-packages/creating-a-package#include-msbuild-props-and-targets-in-a-package)

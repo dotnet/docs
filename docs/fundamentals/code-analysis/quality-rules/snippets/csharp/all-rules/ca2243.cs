@@ -10,7 +10,7 @@ namespace ca2243
     {
         public AssemblyFileVersionAttribute(string version) { }
 
-        public string Version { get; set; }
+        public string? Version { get; set; }
     }
 
     // Since the parameter is typed as a string, it is possible

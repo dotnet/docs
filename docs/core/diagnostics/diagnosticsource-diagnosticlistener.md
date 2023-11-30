@@ -39,7 +39,7 @@ The `DiagnosticSource` type is an abstract base class that defines the methods n
 The first step in instrumenting code with `DiagnosticSource` is to create a
 `DiagnosticListener`. For example:
 
-:::code language="csharp" source="snippets/diagnosticsource/csharp/Program.cs" id="snippit1":::
+:::code language="csharp" source="snippets/diagnosticsource/csharp/Program.cs" id="Snippet1":::
 
 Notice that `httpLogger` is typed as a `DiagnosticSource`.
 That's because this code
@@ -63,7 +63,7 @@ This is instrument site specific. You need to check the instrumentation site to 
 
 A typical call site will look like:
 
-:::code language="csharp" source="snippets/diagnosticsource/csharp/Program.cs" id="snippit3":::
+:::code language="csharp" source="snippets/diagnosticsource/csharp/Program.cs" id="Snippet3":::
 
 Every event has a `string` name (for example, `RequestStart`), and exactly one `object` as a payload.
 If you need to send more than one item, you can do so by creating an `object` with properties to represent all its information. C#'s [anonymous type](../../csharp/fundamentals/types/anonymous-types.md)
@@ -76,7 +76,7 @@ make it efficient when the source is not enabled.
 
 Combining everything you have:
 
-:::code language="csharp" source="snippets/diagnosticsource/csharp/Program.cs" id="snippit4":::
+:::code language="csharp" source="snippets/diagnosticsource/csharp/Program.cs" id="Snippet4":::
 
 -------------------------------------------
 
@@ -94,7 +94,7 @@ happen.
 
 A typical use of the `AllListeners` static property looks like this:
 
-:::code language="csharp" source="snippets/diagnosticsource/csharp/Program.cs" id="snippit5":::
+:::code language="csharp" source="snippets/diagnosticsource/csharp/Program.cs" id="Snippet5":::
 
 This code creates a callback delegate and, using the `AllListeners.Subscribe` method, requests
 that the delegate be called for every active `DiagnosticListener` in the system. The decision of whether or not to subscribe to the listener
@@ -114,7 +114,7 @@ to subscribe to.
 A `DiagnosticListener` implements the `IObservable<KeyValuePair<string, object>>` interface, so you can
 call `Subscribe()` on it as well. The following code shows how to fill out the previous example:
 
-:::code language="csharp" source="snippets/diagnosticsource/csharp/Program.cs" id="snippit6":::
+:::code language="csharp" source="snippets/diagnosticsource/csharp/Program.cs" id="Snippet6":::
 
 In this example, after finding the 'System.Net.Http' `DiagnosticListener`, an action is created that
 prints out the name of the listener, event, and `payload.ToString()`.
@@ -180,7 +180,7 @@ To decode the payload more fully, you could replace the `listener.Subscribe()` c
 Note that using reflection is relatively expensive. However, using reflection is the only
 option if the payloads were generated using anonymous types. This overhead can be reduced by
 making fast, specialized property fetchers using either [PropertyInfo.GetMethod.CreateDelegate()](xref:System.Reflection.MethodInfo.CreateDelegate%2A) or
-xref<System.Reflection.Emit> namespace, but that's beyond the scope of this article.
+<xref:System.Reflection.Emit> namespace, but that's beyond the scope of this article.
 (For an example of a fast, delegate-based property fetcher, see the [PropertySpec](https://github.com/dotnet/runtime/blob/6de7147b9266d7730b0d73ba67632b0c198cb11e/src/libraries/System.Diagnostics.DiagnosticSource/src/System/Diagnostics/DiagnosticSourceEventSource.cs#L1235)
 class used in the `DiagnosticSourceEventSource`.)
 

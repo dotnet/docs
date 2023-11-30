@@ -1,20 +1,22 @@
 ---
-title: "Generics in the Run Time - C# Programming Guide"
-description: Learn about generic types in the run time. See code examples and view additional available resources.
+title: "Generics in the runtime - C# Programming Guide"
+description: Learn about generic types in the runtime. See code examples and view additional available resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "generics [C#], at run time"
 ms.assetid: 119df7e6-9ceb-49df-af36-24f8f8c0747f
 ---
-# Generics in the Run Time (C# Programming Guide)
+# Generics in the runtime (C# programming guide)
 
 When a generic type or method is compiled into Microsoft intermediate language (MSIL), it contains metadata that identifies it as having type parameters. How the MSIL for a generic type is used differs based on whether the supplied type parameter is a value type or reference type.  
   
  When a generic type is first constructed with a value type as a parameter, the runtime creates a specialized generic type with the supplied parameter or parameters substituted in the appropriate locations in the MSIL. Specialized generic types are created one time for each unique value type that is used as a parameter.  
   
- For example, suppose your program code declared a stack that is constructed of integers:  
+ For example, suppose your program code declared a stack that's constructed of integers:  
   
- [!code-csharp[csProgGuideGenerics#42](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#42)]  
+```csharp
+Stack<int>? stack;
+```  
   
  At this point, the runtime generates a specialized version of the <xref:System.Collections.Generic.Stack%601> class that has the integer substituted appropriately for its parameter. Now, whenever your program code uses a stack of integers, the runtime reuses the generated specialized <xref:System.Collections.Generic.Stack%601> class. In the following example, two instances of a stack of integers are created, and they share a single instance of the `Stack<int>` code:  
   

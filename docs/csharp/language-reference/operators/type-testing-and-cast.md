@@ -145,10 +145,10 @@ A user-defined type can't overload the `()` operator, but can define custom type
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [The is operator](~/_csharpstandard/standard/expressions.md#111111-the-is-operator)
-- [The as operator](~/_csharpstandard/standard/expressions.md#111112-the-as-operator)
-- [Cast expressions](~/_csharpstandard/standard/expressions.md#1187-cast-expressions)
-- [The typeof operator](~/_csharpstandard/standard/expressions.md#11716-the-typeof-operator)
+- [The is operator](~/_csharpstandard/standard/expressions.md#121212-the-is-operator)
+- [The as operator](~/_csharpstandard/standard/expressions.md#121213-the-as-operator)
+- [Cast expressions](~/_csharpstandard/standard/expressions.md#1297-cast-expressions)
+- [The typeof operator](~/_csharpstandard/standard/expressions.md#12817-the-typeof-operator)
 
 ## See also
 

@@ -28,7 +28,7 @@ The Service Object may support either horizontal or vertical marquees. If horizo
 
 Thereafter, applications and Service Objects may use the following to set or get the marquee type:
 
-`DisplayMarqueeType MaqueeType {get, set; }`
+`DisplayMarqueeType MarqueeType {get, set; }`
 
 ## Inter-Character Wait
 

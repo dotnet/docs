@@ -9,6 +9,8 @@ ms.assetid: ca3c956e-725a-441b-b4e3-eab5d472f41c
 ---
 # Naming Parameters
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 Beyond the obvious reason of readability, it is important to follow the guidelines for parameter names because parameters are displayed in documentation and in the designer when visual design tools provide Intellisense and class browsing functionality.
 
  ✔️ DO use camelCasing in parameter names.

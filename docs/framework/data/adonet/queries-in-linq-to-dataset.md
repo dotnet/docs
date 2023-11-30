@@ -29,7 +29,7 @@ A query is an expression that retrieves data from a data source. Queries are usu
 
  Query expressions are a declarative query syntax. This syntax enables a developer to write queries in C# or Visual Basic in a format similar to SQL. By using query expression syntax, you can perform even complex filtering, ordering, and grouping operations on data sources with minimal code. For more information, see [LINQ Query Expressions](../../../csharp/linq/index.md#query-expression-overview) and [Basic Query Operations (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md).
   
- The .NET Framework common language runtime (CLR) cannot read the query expression syntax itself. Therefore, at compile time, query expressions are translated to something that the CLR does understand: method calls. These methods are referred to as the *standard query operators*. As a developer, you have the option of calling them directly by using method syntax, instead of using query syntax. For more information, see [Query Syntax and Method Syntax in LINQ](../../../csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md). For more information about the standard query operators, see [Standard Query Operators Overview](../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md).  
+ The .NET Framework common language runtime (CLR) cannot read the query expression syntax itself. Therefore, at compile time, query expressions are translated to something that the CLR does understand: method calls. These methods are referred to as the *standard query operators*. As a developer, you have the option of calling them directly by using method syntax, instead of using query syntax. For more information, see [Query Syntax and Method Syntax in LINQ](../../../csharp/linq/write-linq-queries.md). For more information about the standard query operators, see [Standard Query Operators Overview](../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md).  
   
  The following example uses <xref:System.Linq.Enumerable.Select%2A> to return all the rows from `Product` table and display the product names.  
   
@@ -63,5 +63,5 @@ A query is an expression that retrieves data from a data source. Queries are usu
 
 - [Programming Guide](programming-guide-linq-to-dataset.md)
 - [Querying DataSets](querying-datasets-linq-to-dataset.md)
-- [Getting Started with LINQ in C#](../../../csharp/programming-guide/concepts/linq/index.md)
+- [Getting Started with LINQ in C#](/dotnet/csharp/linq/)
 - [Getting Started with LINQ in Visual Basic](../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)

@@ -58,7 +58,7 @@ The unary postfix `!` operator is the [null-forgiving operator](null-forgiving.m
 
 The `&` operator computes the logical AND of its operands. The result of `x & y` is `true` if both `x` and `y` evaluate to `true`. Otherwise, the result is `false`.
 
-The `&` operator evaluates both operands even if the left-hand operand evaluates to `false`, so that the operation result is `false` regardless of the value of the right-hand operand.
+The `&` operator always evaluates both operands. When the left-hand operand evaluates to `false`, the operation result is `false` regardless of the value of the right-hand operand. However, even then, the right-hand operand is evaluated.
 
 In the following example, the right-hand operand of the `&` operator is a method call, which is performed regardless of the value of the left-hand operand:
 
@@ -80,7 +80,7 @@ For operands of the [integral numeric types](../builtin-types/integral-numeric-t
 
 The `|` operator computes the logical OR of its operands. The result of `x | y` is `true` if either `x` or `y` evaluates to `true`. Otherwise, the result is `false`.
 
-The `|` operator evaluates both operands even if the left-hand operand evaluates to `true`, so that the operation result is `true` regardless of the value of the right-hand operand.
+The `|` operator always evaluates both operands. When the left-hand operand evaluates to `true`, the operation result is `true` regardless of the value of the right-hand operand. However, even then, the right-hand operand is evaluated.
 
 In the following example, the right-hand operand of the `|` operator is a method call, which is performed regardless of the value of the left-hand operand:
 
@@ -184,16 +184,16 @@ For the complete list of C# operators ordered by precedence level, see the [Oper
 
 A user-defined type can [overload](operator-overloading.md) the `!`, `&`, `|`, and `^` operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. A user-defined type can't explicitly overload a compound assignment operator.
 
-A user-defined type can't overload the conditional logical operators `&&` and `||`. However, if a user-defined type overloads the [true and false operators](true-false-operators.md) and the `&` or `|` operator in a certain way, the `&&` or `||` operation, respectively, can be evaluated for the operands of that type. For more information, see the [User-defined conditional logical operators](~/_csharpstandard/standard/expressions.md#11133-user-defined-conditional-logical-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+A user-defined type can't overload the conditional logical operators `&&` and `||`. However, if a user-defined type overloads the [true and false operators](true-false-operators.md) and the `&` or `|` operator in a certain way, the `&&` or `||` operation, respectively, can be evaluated for the operands of that type. For more information, see the [User-defined conditional logical operators](~/_csharpstandard/standard/expressions.md#12143-user-defined-conditional-logical-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## C# language specification
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Logical negation operator](~/_csharpstandard/standard/expressions.md#1184-logical-negation-operator)
-- [Logical operators](~/_csharpstandard/standard/expressions.md#1112-logical-operators)
-- [Conditional logical operators](~/_csharpstandard/standard/expressions.md#1113-conditional-logical-operators)
-- [Compound assignment](~/_csharpstandard/standard/expressions.md#11193-compound-assignment)
+- [Logical negation operator](~/_csharpstandard/standard/expressions.md#1294-logical-negation-operator)
+- [Logical operators](~/_csharpstandard/standard/expressions.md#1213-logical-operators)
+- [Conditional logical operators](~/_csharpstandard/standard/expressions.md#1214-conditional-logical-operators)
+- [Compound assignment](~/_csharpstandard/standard/expressions.md#12214-compound-assignment)
 
 ## See also
 

@@ -30,10 +30,13 @@ If you need to start or end a raw string literal with quote characters, use the 
 
 :::code language="csharp" source="./snippets/raw-string-literal.cs" id="InitialQuotes":::
 
-Raw strings can also be combined with [interpolated strings](./interpolated.md#special-characters) to embed the `{` and `}` characters in the output string. You use multiple `$` characters in an interpolated raw string literal to embed `{` and `}` characters in the output string without escaping them.
+Raw string literals can also be combined with [interpolated strings](./interpolated.md#interpolated-raw-string-literals) to embed the `{` and `}` characters in the output string. You use multiple `$` characters in an interpolated raw string literal to embed `{` and `}` characters in the output string without escaping them.
+
+Raw string literals were introduced in C# 11.
 
 ## See also
 
-- [C# interpolated strings](./interpolated.md)
-- [C# Special Characters](./index.md)
+- [C# reference](../index.md)
+- [C# special characters](./index.md)
+- [C# string interpolation](./interpolated.md)
 - [Raw string literals feature specification](~/_csharplang/proposals/csharp-11.0/raw-string-literal.md)

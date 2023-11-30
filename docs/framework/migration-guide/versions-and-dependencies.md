@@ -1,10 +1,9 @@
 ---
 title: .NET Framework & Windows OS versions
 description: Learn about key features in each version of .NET Framework, including underlying CLR versions and versions installed by the Windows operating system.
-ms.date: 05/11/2021
+ms.date: 07/31/2023
 helpviewer_keywords:
   - "versions, .NET Framework"
-ms.assetid: f75a72de-e2f2-4a7a-9574-3f278684ea90
 ---
 # .NET Framework versions and dependencies
 
@@ -59,12 +58,13 @@ Jump to:
 | | Versions |
 |-|-|
 |**CLR**|4|
-|**Windows**|➕ 11<br/>➕ 10 November 2021 Update<br/>➕ 10 May 2021 Update<br/>➕ 10 October 2020 Update<br/>|
+|**Windows**|✔️ September 2022 Release (Version 22621)<br/> ➕ 11 October 2021 Release (Version 22000)<br/>➕ 10 November 2021 Update<br/>➕ 10 May 2021 Update<br/>➕ 10 October 2020 Update<br/>|
 |**Windows Server**|➕ Windows Server 2022<br/>|
 
 To determine the installed .NET version, use the following `Release` DWORD:
 
-- 533325 (all OS versions)
+- 533320 (Windows 11 September 2022 Release)
+- 533325 (all other OS versions)
 
 For more information, see [instructions](how-to-determine-which-versions-are-installed.md).
 
@@ -77,7 +77,7 @@ For more information, see [instructions](how-to-determine-which-versions-are-ins
 | | Versions |
 |-|-|
 |**CLR**|4|
-|**Windows**|✔️ 11<br/>✔️ 10 November 2021 Update<br/>✔️ 10 May 2021 Update<br/>✔️ 10 October 2020 Update<br/>✔️ 10 May 2020 Update<br/>✔️ 10 November 2019 Update<br/>✔️ 10 May 2019 Update<br/>➕ 10 October 2018 Update (Version 1809)<br/>➕ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
+|**Windows**|✔️ 11 October 2021 Release (Version 22000)<br/>✔️ 10 November 2021 Update<br/>✔️ 10 May 2021 Update<br/>✔️ 10 October 2020 Update<br/>✔️ 10 May 2020 Update<br/>✔️ 10 November 2019 Update<br/>✔️ 10 May 2019 Update<br/>➕ 10 October 2018 Update (Version 1809)<br/>➕ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
 |**Windows Server**|✔️ Windows Server 2022<br/>➕ Windows Server 2019<br/>➕ Windows Server, version 1809<br/>➕ Windows Server, version 1803<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
 
 To determine the installed .NET version, use the following `Release` DWORD:

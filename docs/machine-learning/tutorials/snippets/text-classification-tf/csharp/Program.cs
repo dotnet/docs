@@ -110,8 +110,8 @@ void PredictSentiment(MLContext mlContext, ITransformer model)
     // </SnippetPredict>
 
     // <SnippetDisplayPredictions>
-    Console.WriteLine("Number of classes: {0}", sentimentPrediction.Prediction.Length);
-    Console.WriteLine("Is sentiment/review positive? {0}", sentimentPrediction.Prediction[1] > 0.5 ? "Yes." : "No.");
+    Console.WriteLine($"Number of classes: {sentimentPrediction.Prediction?.Length}");
+    Console.WriteLine($"Is sentiment/review positive? {(sentimentPrediction.Prediction?[1] > 0.5 ? "Yes." : "No.")}");
     // </SnippetDisplayPredictions>
 
     /////////////////////////////////// Expected output ///////////////////////////////////
@@ -130,7 +130,7 @@ void PredictSentiment(MLContext mlContext, ITransformer model)
 /// </summary>
 public class MovieReview
 {
-    public string ReviewText { get; set; }
+    public string? ReviewText { get; set; }
 }
 //</SnippetMovieReviewClass>
 
@@ -141,7 +141,7 @@ public class MovieReview
 public class MovieReviewSentimentPrediction
 {
     [VectorType(2)]
-    public float[] Prediction { get; set; }
+    public float[]? Prediction { get; set; }
 }
 // </SnippetPrediction>
 
@@ -158,7 +158,7 @@ public class VariableLength
     /// resulting in vectors of tokens of variable lengths.
     /// </summary>
     [VectorType]
-    public int[] VariableLengthFeatures { get; set; }
+    public int[]? VariableLengthFeatures { get; set; }
 }
 // </SnippetVariableLengthFeatures>
 
@@ -180,6 +180,6 @@ public class FixedLength
     /// This is a fixed length vector designated by VectorType attribute.
     /// </summary>
     [VectorType(Config.FeatureLength)]
-    public int[] Features { get; set; }
+    public int[]? Features { get; set; }
 }
 // </SnippetFixedLengthFeatures>

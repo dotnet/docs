@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace AsycnPattern;
+namespace AsyncPattern;
 
 class Program
 {

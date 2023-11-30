@@ -137,6 +137,5 @@ foreach (var student in queryNamesScores2)
 
 ## See also
 
-- [LINQ and Strings (C#)](./linq-and-strings.md)
 - [Object and Collection Initializers](../../classes-and-structs/object-and-collection-initializers.md)
 - [Anonymous Types](../../../fundamentals/types/anonymous-types.md)

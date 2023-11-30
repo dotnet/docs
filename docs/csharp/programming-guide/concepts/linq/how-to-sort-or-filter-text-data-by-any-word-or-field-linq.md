@@ -34,10 +34,6 @@ public class SortLines
         {  
             Console.WriteLine(str);  
         }  
-  
-        // Keep the console window open in debug mode.  
-        Console.WriteLine("Press any key to exit");  
-        Console.ReadKey();  
     }  
   
     // Returns the query variable, not query results!  
@@ -75,6 +71,3 @@ public class SortLines
 
 Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.
   
-## See also
-
-- [LINQ and Strings (C#)](./linq-and-strings.md)

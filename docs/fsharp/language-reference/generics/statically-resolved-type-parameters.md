@@ -33,7 +33,7 @@ The following table summarizes the similarities and differences between the two 
 |Member constraints|Cannot be used with member constraints.|Can be used with member constraints.|
 |Code generation|A type (or method) with standard generic type parameters results in the generation of a single generic type or method.|Multiple instantiations of types and methods are generated, one for each type that is needed.|
 |Use with types|Can be used on types.|Cannot be used on types.|
-|Use with inline functions|No. An inline function cannot be parameterized with a standard generic type parameter.|Yes. Statically resolved type parameters cannot be used on functions or methods that are not inline.|
+|Use with inline functions| An inline function cannot be parameterized with a standard generic type parameter. If the inputs aren't fully generic, the F# compiler specializes them or, if there are no options to specialize, gives an error.|Statically resolved type parameters cannot be used on functions or methods that are not inline.|
 
 Many F# core library functions, especially operators, have statically resolved type parameters. These functions and operators are inline, and result in efficient code generation for numeric computations.
 

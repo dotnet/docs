@@ -50,7 +50,7 @@ Module modMain
         For Each match As Match In Regex.Matches(input, pattern)
             Console.WriteLine("'{0}' found at position {1}.", match.Value, match.Index)
         Next
-        ' The example displays the following output:   
+        ' The example displays the following output:
         '       '99' found at position 0.
         '       '919' found at position 6.
         '       '9119' found at position 14.
@@ -67,22 +67,22 @@ Module modMain
         For Each match As Match In Regex.Matches(input, pattern, RegexOptions.IgnoreCase)
             Console.WriteLine("'{0}' found at position {1}.", match.Value, match.Index)
         Next
-        ' The example displays the following output:   
+        ' The example displays the following output:
         '       'an' found at position 27.
         '       'annual' found at position 30.
         '       'announcement' found at position 37.
-        '       'antique' found at position 57.      
+        '       'antique' found at position 57.
         ' </Snippet2>
     End Sub
 
     Private Sub ShowQuestion()
         ' <Snippet3>
         Dim pattern As String = "\ban?\b"
-        Dim input As String = "An amiable animal with a large snount and an animated nose."
+        Dim input As String = "An amiable animal with a large snout and an animated nose."
         For Each match As Match In Regex.Matches(input, pattern, RegexOptions.IgnoreCase)
             Console.WriteLine("'{0}' found at position {1}.", match.Value, match.Index)
         Next
-        ' The example displays the following output:   
+        ' The example displays the following output:
         '       'An' found at position 0.
         '       'a' found at position 23.
         '       'an' found at position 42.
@@ -98,7 +98,7 @@ Module modMain
         For Each match As Match In Regex.Matches(input, pattern)
             Console.WriteLine("'{0}' found at position {1}.", match.Value, match.Index)
         Next
-        ' The example displays the following output:   
+        ' The example displays the following output:
         '       '103,524' found at position 14.
         '       '106,971' found at position 45.
         ' </Snippet4>
@@ -199,11 +199,11 @@ Module modMain
 
     Private Sub ShowLazyNComma()
         ' <Snippet11>
-        '        Dim pattern As String = "\b\d{2,}\b\D+"   
+        '        Dim pattern As String = "\b\d{2,}\b\D+"
         '        Dim input As String = "7 days, 10 weeks, 300 years"
         '       For Each match As Match In Regex.Matches(input, pattern)
         '          Console.WriteLine("'{0}' found at position {1}.", match.Value, match.Index)
-        '       Next 
+        '       Next
         '       ' The example displays the following output:
         '       '       '10 weeks, ' found at position 8.
         '       '       '300 years' found at position 18.

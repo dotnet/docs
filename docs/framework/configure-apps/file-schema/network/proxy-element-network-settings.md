@@ -43,7 +43,7 @@ Defines a proxy server.
 |`bypassonlocal`|Specifies whether the proxy is bypassed for local resources. Local resources include the local server (`http://localhost`, `http://loopback`, or `http://127.0.0.1`) and a URI without a period (`http://webserver`). The default value is `Unspecified`.|  
 |`proxyaddress`|Specifies the proxy URI to use.|  
 |`scriptLocation`|Specifies the location of the configuration script. Do not use the `bypassonlocal` attribute with this attribute. |  
-|`usesystemdefault`|Specifies whether to use Internet Explorer proxy settings. If set to `True`, subsequent attributes will override Internet Explorer proxy settings. The default value is `Unspecified`.|  
+|`usesystemdefault`|Specifies whether to use system proxy settings. If set to `True`, subsequent attributes will override system proxy settings. The default value is `Unspecified`.|  
   
 ### Child Elements  
 
@@ -59,13 +59,11 @@ Defines a proxy server.
   
 ## Remarks  
 
- The `proxy` element defines a proxy server for an application. If this element is missing from the configuration file, then the .NET Framework will use the proxy settings in Internet Explorer.  
+ The `proxy` element defines a proxy server for an application. If this element is missing from the configuration file, then .NET Framework will use the system proxy settings.  
   
  The value for the `proxyaddress` attribute should be a well-formed Uniform Resource Indicator (URI).  
   
- The `scriptLocation` attribute refers to the automatic detection of proxy configuration scripts. The <xref:System.Net.WebProxy> class will attempt to locate a configuration script (usually named Wpad.dat) when the **Use automatic configuration script** option is selected in Internet Explorer. If `bypassonlocal` is set to any value, `scriptLocation` is ignored.
-  
- Use the `usesystemdefault` attribute for .NET Framework version 1.1 applications that are migrating to version 2.0.  
+ The `scriptLocation` attribute refers to the automatic detection of proxy configuration scripts. The <xref:System.Net.WebProxy> class will attempt to locate a configuration script (usually named Wpad.dat) when the **Use automatic configuration script** option is selected for the connection in Internet properties. If `bypassonlocal` is set to any value, `scriptLocation` is ignored.
   
  An exception is thrown if the `proxyaddress` attribute specifies an invalid default proxy. The <xref:System.Exception.InnerException%2A> property on the exception should have more information about the root cause of the error.  
   
@@ -75,7 +73,7 @@ Defines a proxy server.
   
 ## Example  
 
- The following example uses the defaults from the Internet Explorer proxy, specifies the proxy address, and bypasses the proxy for local access.  
+ The following example uses the defaults from the system proxy, specifies the proxy address, and bypasses the proxy for local access.  
   
 ```xml  
 <configuration>  

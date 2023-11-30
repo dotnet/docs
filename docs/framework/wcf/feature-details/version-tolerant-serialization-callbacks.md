@@ -46,4 +46,4 @@ The data contract programming model fully supports the version-tolerant serializ
 - <xref:System.Runtime.Serialization.OnDeserializingAttribute>
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute>
 - <xref:System.Runtime.Serialization.StreamingContext>
-- [Version Tolerant Serialization](../../../standard/serialization/version-tolerant-serialization.md)
+- [Version Tolerant Serialization](/previous-versions/dotnet/fundamentals/serialization/binary/version-tolerant-serialization)

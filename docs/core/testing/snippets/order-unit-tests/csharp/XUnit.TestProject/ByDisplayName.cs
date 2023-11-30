@@ -2,7 +2,9 @@
 
 // Need to turn off test parallelization so we can validate the run order
 [assembly: CollectionBehavior(DisableTestParallelization = true)]
-[assembly: TestCollectionOrderer("XUnit.Project.Orderers.DisplayNameOrderer", "XUnit.Project")]
+[assembly: TestCollectionOrderer(
+    ordererTypeName: "XUnit.Project.Orderers.DisplayNameOrderer",
+    ordererAssemblyName: "XUnit.Project")]
 
 namespace XUnit.Project;
 

@@ -22,7 +22,7 @@ Create a directory named *list-tutorial*. Make that the current directory and ru
 Open *Program.cs* in your favorite editor, and replace the existing code with the following:
 
 ```csharp
-var names = new List<string> { "<name>", "Ana", "Felipe" };
+List<string> names = ["<name>", "Ana", "Felipe"];
 foreach (var name in names)
 {
     Console.WriteLine($"Hello {name.ToUpper()}!");
@@ -113,11 +113,11 @@ Save the file and type `dotnet run` to try this latest version.
 Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Place all the code you've written in a new method called `WorkWithStrings()`. Call that method at the top of your program. When you finish, your code should look like this:
 
 ```csharp
-WorkWithString();
+WorkWithStrings();
 
-void WorkWithString()
+void WorkWithStrings()
 {
-    var names = new List<string> { "<name>", "Ana", "Felipe" };
+    List<string> names = ["<name>", "Ana", "Felipe"];
     foreach (var name in names)
     {
         Console.WriteLine($"Hello {name.ToUpper()}!");
@@ -173,7 +173,7 @@ You've been using the `string` type in lists so far. Let's make a <xref:System.C
 Add the following to your program after you call `WorkWithStrings()`:
 
 ```csharp
-var fibonacciNumbers = new List<int> {1, 1};
+List<int> fibonacciNumbers = [1, 1];
 ```
 
 That creates a list of integers, and sets the first two integers to the value 1. These are the first two values of a *Fibonacci Sequence*, a sequence of numbers. Each next Fibonacci number is found by taking the sum of the previous two numbers. Add this code:
@@ -185,13 +185,15 @@ var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
 fibonacciNumbers.Add(previous + previous2);
 
 foreach (var item in fibonacciNumbers)
+{
     Console.WriteLine(item);
+}
 ```
 
 Save the file and type `dotnet run` to see the results.
 
 > [!TIP]
-> To concentrate on just this section, you can comment out the code that calls `WorkingWithStrings();`. Just put two `/` characters in front of the call like this:  `// WorkingWithStrings();`.
+> To concentrate on just this section, you can comment out the code that calls `WorkWithStrings();`. Just put two `/` characters in front of the call like this:  `// WorkWithStrings();`.
 
 ## Challenge
 

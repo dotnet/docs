@@ -17,7 +17,7 @@ The topics in this section describe the environment and interfaces that the comm
  Provides a mechanism for enumerating the CLRs in a process.  
   
  [CloseCLREnumeration Function](closeclrenumeration-function-for-silverlight.md)  
- Closes any valid CLR continue-startup events located in an array of handles returned by the [EnumerateCLRs Function](enumerateclrs-function.md), and frees the memory for the handle and string path arrays.  
+ Closes any valid CLR continue-startup events located in an array of handles returned by the [EnumerateCLRs Function](../../../core/unmanaged-api/debugging/enumerateclrs-function.md), and frees the memory for the handle and string path arrays.  
   
  [CreateCoreClrDebugTarget Function](createcoreclrdebugtarget-function.md)  
  Creates a connection to a remote target for process and runtime enumeration.  
@@ -29,7 +29,7 @@ The topics in this section describe the environment and interfaces that the comm
  Creates a version string from a CLR path in a target process.  
   
  [CreateDebuggingInterfaceFromVersion Function](createdebugginginterfacefromversion-function-for-silverlight.md)  
- Accepts a CLR version string returned from [CreateVersionStringFromModule](createversionstringfrommodule-function.md) function, and returns a corresponding debugger interface.  
+ Accepts a CLR version string returned from [CreateVersionStringFromModule](../../../core/unmanaged-api/debugging/createversionstringfrommodule-function.md) function, and returns a corresponding debugger interface.  
   
  [CoreClrDebugProcInfo Structure](coreclrdebugprocinfo-structure.md)  
  Represents a process that is running on a remote machine.  

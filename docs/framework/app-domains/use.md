@@ -10,7 +10,7 @@ ms.assetid: c6d99815-e022-4d2c-9420-1d7ab5b9d504
 ---
 # Using Application Domains
 
-Application domains provide a unit of isolation for the common language runtime. They are created and run inside a process. Application domains are usually created by a runtime host, which is an application responsible for loading the runtime into a process and executing user code within an application domain. The runtime host creates a process and a default application domain, and runs managed code inside it. Runtime hosts include ASP.NET, Microsoft Internet Explorer, and the Windows shell.  
+Application domains provide a unit of isolation for the common language runtime. They are created and run inside a process. Application domains are usually created by a runtime host, which is an application responsible for loading the runtime into a process and executing user code within an application domain. The runtime host creates a process and a default application domain, and runs managed code inside it. Runtime hosts include ASP.NET and the Windows shell.  
   
 For most applications, you do not need to create your own application domain; the runtime host creates any necessary application domains for you. However, you can create and configure additional application domains if your application needs to isolate code or to use and unload DLLs.  
   

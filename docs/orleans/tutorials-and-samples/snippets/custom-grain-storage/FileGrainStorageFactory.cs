@@ -10,13 +10,13 @@ internal static class FileGrainStorageFactory
     internal static IGrainStorage Create(
         IServiceProvider services, string name)
     {
-        var optionsSnapshot =
-            services.GetRequiredService<IOptionsSnapshot<FileGrainStorageOptions>>();
+        var optionsMonitor =
+            services.GetRequiredService<IOptionsMonitor<FileGrainStorageOptions>>();
 
         return ActivatorUtilities.CreateInstance<FileGrainStorage>(
             services,
             name,
-            optionsSnapshot.Get(name),
+            optionsMonitor.Get(name),
             services.GetProviderClusterOptions(name));
     }
 }

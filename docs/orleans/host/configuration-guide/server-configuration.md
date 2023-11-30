@@ -128,7 +128,7 @@ There are several key aspects of silo configuration:
 This is an example of a silo configuration that defines cluster information, uses Azure clustering, and configures the application parts:
 
 ```csharp
-var silo = Host.CreateDefaultBuiler(args)
+var silo = Host.CreateDefaultBuilder(args)
     .UseOrleans(builder =>
     {
         builder

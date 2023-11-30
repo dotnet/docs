@@ -3,7 +3,7 @@ title: File globbing
 author: IEvangelist
 description: Learn how to use file globbing in .NET to match various files with the same partial names, extensions, or segments.
 ms.author: dapine
-ms.date: 11/12/2021
+ms.date: 03/13/2023
 ---
 
 # File globbing in .NET

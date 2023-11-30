@@ -1,7 +1,7 @@
 ---
 title: Welcome to .NET
 description: Getting started with the .NET family of technologies.
-ms.date: 11/08/2022
+ms.date: 11/15/2023
 ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET
@@ -21,15 +21,15 @@ For news about .NET, check the following blogs:
 
 Also follow the latest .NET events:
 
+- [.NET Conf](https://www.dotnetconf.net/)
 - [Microsoft Ignite](https://www.microsoft.com/ignite)
 - [Microsoft Build](https://www.microsoft.com/build)
-- [.NET Conf](https://www.dotnetconf.net/)
 
 For information about the latest features added to the .NET implementations and supported languages, see the following articles:
 
-- [What's new in .NET](core/whats-new/dotnet-7.md)
+- [What's new in .NET 8](core/whats-new/dotnet-8.md)
 - [What's new in .NET Framework](framework/whats-new/index.md)
-- [What's new in C#](./csharp/whats-new/csharp-11.md)
+- [What's new in C# 12](./csharp/whats-new/csharp-12.md)
 - [What's new for Visual Basic](visual-basic/whats-new/index.md)
 
 ## Documentation
@@ -42,7 +42,6 @@ This documentation covers the breadth of .NET across platforms and languages. Yo
 - [F# Guide](fsharp/index.yml)
 - [Visual Basic Guide](visual-basic/index.yml)
 - [ML.NET Guide](machine-learning/index.yml)
-- [.NET for Apache Spark](spark/index.yml)
 - [.NET Application Architecture](architecture/index.yml)
 
 Additionally, you can browse the [.NET API reference](../api/index.md).
@@ -59,6 +58,8 @@ This documentation is completely [open source](https://github.com/dotnet/docs). 
 
 - [.NET runtime](https://github.com/dotnet/runtime)
 - [.NET SDK](https://github.com/dotnet/sdk)
+- [.NET extensions](https://github.com/dotnet/extensions)
+- [.NET Aspire](https://github.com/dotnet/aspire)
 - [Roslyn (C# and Visual Basic) Compiler Platform and IDE Tools](https://github.com/dotnet/roslyn)
 - [.NET code analyzers](https://github.com/dotnet/roslyn-analyzers)
 - [F# Compiler and IDE Tools](https://github.com/dotnet/fsharp)

@@ -37,7 +37,7 @@ dotnet nuget sign -h|--help
 The `dotnet nuget sign` command signs all the packages matching the first argument with a certificate. The certificate with the private key can be obtained from a file or from a certificate installed in a certificate store by providing a subject name or a SHA-1 fingerprint.
 
   > [!NOTE]
-  > This command requires a certificate root store that's valid for both code signing and timestamping. For more information, see [NuGet signed package verification](nuget-signed-package-verification.md).
+  > This command requires a certificate root store that is valid for both code signing and timestamping. Also, this command may not be supported on some combinations of operating system and .NET SDK. For more information, see [NuGet signed package verification](nuget-signed-package-verification.md).
 
 ## Arguments
 
@@ -64,7 +64,7 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
 
 - **`--certificate-subject-name <SUBJECTNAME>`**
 
-  Specifies the subject name of the certificate used to search a local certificate store for the certificate. The search is a case-insensitive string comparison using the supplied value, which will find all certificates with the subject name containing that string, regardless of other subject values. The certificate store can be specified by `--certificate-store-name` and `--certificate-store-location` options.
+  Specifies the subject name of the certificate used to search a local certificate store for the certificate. The search is a case-insensitive string comparison using the supplied value, which finds all certificates with the subject name containing that string, regardless of other subject values. The certificate store can be specified by `--certificate-store-name` and `--certificate-store-location` options.
 
   > [!NOTE]
   > This option currently supports only a single matching certificate in the result. If there are multiple matching certificates in the result, or no matching certificate in the result, the sign command will fail.
@@ -86,7 +86,7 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
 
 - **`-o|--output`**
 
-  Specifies the directory where the signed package should be saved. If this option is not specified, by default the original package is overwritten by the signed package.
+  Specifies the directory where the signed package should be saved. If this option isn't specified, by default the original package is overwritten by the signed package.
 
 - **`--overwrite`**
 

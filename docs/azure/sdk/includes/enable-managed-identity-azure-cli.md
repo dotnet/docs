@@ -1,3 +1,6 @@
+---
+ms.custom: devx-track-azurecli
+---
 #### [Azure App Service](#tab/azure-app-service)
 
 ```azurecli

@@ -17,6 +17,8 @@ By [John Reese](https://reese.dev) with special thanks to [Roy Osherove](https:/
 
 ## Why unit test?
 
+There are several reasons to use unit tests.
+
 ### Less time performing functional tests
 
 Functional tests are expensive. They typically involve opening up the application and performing a series of steps that you (or someone else) must follow in order to validate the expected behavior. These steps might not always be known to the tester. They'll have to reach out to someone more knowledgeable in the area in order to carry out the test. Testing itself could take seconds for trivial changes, or minutes for larger changes. Lastly, this process must be repeated for every change that you make in the system.
@@ -110,6 +112,10 @@ In this case, you're checking a property on the Fake (asserting against it), so 
 The main thing to remember about mocks versus stubs is that mocks are just like stubs, but you assert against the mock object, whereas you don't assert against a stub.
 
 ## Best practices
+
+Here are some of the most important best practices for writing unit tests.
+
+### Avoid infrastructure dependencies
 
 Try not to introduce dependencies on infrastructure when writing unit tests. The dependencies make the tests slow and brittle and should be reserved for integration tests. You can avoid these dependencies in your application by following the [Explicit Dependencies Principle](https://deviq.com/explicit-dependencies-principle) and using [Dependency Injection](../extensions/dependency-injection.md). You can also keep your unit tests in a separate project from your integration tests. This approach ensures your unit test project doesn't have references to or dependencies on infrastructure packages.
 

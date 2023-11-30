@@ -13,7 +13,7 @@ namespace object_collection_initializers
         {
             // Auto-implemented properties.
             public int Age { get; set; }
-            public string Name { get; set; }
+            public string? Name { get; set; }
 
             public Cat()
             {
@@ -49,7 +49,7 @@ namespace object_collection_initializers
 
         public class Product
         {
-            public string ProductName { get; set; }
+            public string? ProductName { get; set; }
             public decimal UnitPrice { get; set; }
         }
 
@@ -95,7 +95,7 @@ namespace object_collection_initializers
             // </SnippetListInitializer>
 
             // <SnippetListInitializerWithNull>
-            List<Cat> moreCats = new List<Cat>
+            List<Cat?> moreCats = new List<Cat?>
             {
                 new Cat{ Name = "Furrytail", Age=5 },
                 new Cat{ Name = "Peaches", Age=4 },
@@ -158,7 +158,7 @@ namespace object_collection_initializers
         {
             // Auto-implemented properties.
             public int Age { get; set; }
-            public string Name { get; set; }
+            public string? Name { get; set; }
 
             public Cat() { }
 
@@ -180,7 +180,7 @@ namespace object_collection_initializers
                 new Cat { Name = "Sasha", Age = 14 }
             };
 
-            List<Cat> moreCats = new List<Cat>
+            List<Cat?> moreCats = new List<Cat?>
             {
                 new Cat { Name = "Furrytail", Age = 5 },
                 new Cat { Name = "Peaches", Age = 4 },
@@ -193,7 +193,7 @@ namespace object_collection_initializers
             foreach (Cat c in cats)
                 System.Console.WriteLine(c.Name);
 
-            foreach (Cat c in moreCats)
+            foreach (Cat? c in moreCats)
                 if (c != null)
                     System.Console.WriteLine(c.Name);
                 else
@@ -264,7 +264,7 @@ namespace object_collection_initializers
     // <SnippetFullDictionaryInitializer>
     public class DictionaryExample
     {
-        class RudimentaryMultiValuedDictionary<TKey, TValue> : IEnumerable<KeyValuePair<TKey, List<TValue>>>
+        class RudimentaryMultiValuedDictionary<TKey, TValue> : IEnumerable<KeyValuePair<TKey, List<TValue>>> where TKey : notnull
         {
             private Dictionary<TKey, List<TValue>> internalDictionary = new Dictionary<TKey, List<TValue>>();
 
@@ -282,7 +282,7 @@ namespace object_collection_initializers
 
             public void Add(TKey key, IEnumerable<TValue> values)
             {
-                if (!internalDictionary.TryGetValue(key, out List<TValue> storedValues))
+                if (!internalDictionary.TryGetValue(key, out List<TValue>? storedValues))
                     internalDictionary.Add(key, storedValues = new List<TValue>());
 
                 storedValues.AddRange(values);

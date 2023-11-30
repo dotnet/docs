@@ -20,4 +20,4 @@ You can use control flow statements, such as `if... else` or `switch`, to select
 
 - [Language Integrated Query (LINQ)](index.md)
 - [where clause](../language-reference/keywords/where-clause.md)
-- [Querying based on runtime state](../../csharp/programming-guide/concepts/expression-trees/how-to-use-expression-trees-to-build-dynamic-queries.md)
+- [Querying based on runtime state](../advanced-topics/expression-trees/debugview-syntax.md)

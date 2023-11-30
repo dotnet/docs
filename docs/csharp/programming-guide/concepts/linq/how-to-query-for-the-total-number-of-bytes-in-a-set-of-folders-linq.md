@@ -40,10 +40,6 @@ class QuerySize
         Console.WriteLine("There are {0} bytes in {1} files under {2}",  
             totalBytes, fileList.Count(), startFolder);  
         Console.WriteLine("The largest files is {0} bytes.", largestFile);  
-  
-        // Keep the console window open in debug mode.  
-        Console.WriteLine("Press any key to exit.");  
-        Console.ReadKey();  
     }  
   
     // This method is used to swallow the possible exception  
@@ -75,7 +71,3 @@ class QuerySize
 
 Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.
   
-## See also
-
-- [LINQ to Objects (C#)](./linq-to-objects.md)
-- [LINQ and File Directories (C#)](./linq-and-file-directories.md)

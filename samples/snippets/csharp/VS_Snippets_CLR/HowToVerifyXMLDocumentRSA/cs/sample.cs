@@ -1,12 +1,13 @@
 ﻿// <snippet1>
 using System;
+using System.Runtime.Versioning;
 using System.Security.Cryptography;
 using System.Security.Cryptography.Xml;
 using System.Xml;
 
+[SupportedOSPlatform("Windows")]
 public class VerifyXML
 {
-
     public static void Main(string[] args)
     {
         try
@@ -94,7 +95,7 @@ public class VerifyXML
 
         // Load the first <signature> node.
         // <snippet7>
-        signedXml.LoadXml((XmlElement)nodeList[0]);
+        signedXml.LoadXml((XmlElement?)nodeList[0]);
         // </snippet7>
 
         // Check the signature and return the result.

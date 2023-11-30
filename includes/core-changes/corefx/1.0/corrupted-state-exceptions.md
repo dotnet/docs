@@ -4,7 +4,7 @@ Handling corrupted-process-state exceptions in .NET Core is not supported.
 
 #### Change description
 
-Previously, corrupted-process-state exceptions could be caught and handled by managed code exception handlers, for example, by using a [try-catch](../../../../docs/csharp/language-reference/keywords/try-catch.md) statement in C#.
+Previously, corrupted-process-state exceptions could be caught and handled by managed code exception handlers, for example, by using a [try-catch](../../../../docs/csharp/language-reference/statements/exception-handling-statements.md#the-try-catch-statement) statement in C#.
 
 Starting in .NET Core 1.0, corrupted-process-state exceptions cannot be handled by managed code. The common language runtime doesn't deliver corrupted-process-state exceptions to managed code.
 

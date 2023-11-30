@@ -55,12 +55,13 @@ When performing a case-insensitive ordinal comparison, these methods use the cas
 
 ## Linguistic comparisons
 
-Strings can also be ordered using linguistic rules for the current culture.
+Many string comparison methods (such as <xref:System.String.StartsWith%2A?displayProperty=nameWithType>) use linguistic rules for the _current culture_ by default to order their inputs.
 This is sometimes referred to as "word sort order." When you perform a
 linguistic comparison, some nonalphanumeric Unicode characters might have
 special weights assigned. For example, the hyphen "-" may have a small
 weight assigned to it so that "co-op" and "coop" appear next to each other
-in sort order. In addition, some Unicode characters may be equivalent to a
+in sort order, while some non-printing control characters might be completely ignored.
+In addition, some Unicode characters may be equivalent to a
 sequence of <xref:System.Char> instances. The following example uses the phrase
 "They dance in the street." in German with the "ss" (U+0073 U+0073) in one string and 'ß' (U+00DF) in another. Linguistically
 (in Windows), "ss" is equal to the German Esszet: 'ß' character in both the "en-US"
@@ -111,18 +112,6 @@ Once sorted, the list of strings can be searched using a binary search. The foll
 Always make sure to use the same type of comparison for sorting and searching. Using different comparison types for sorting and searching produces unexpected results.
 
 Collection classes such as <xref:System.Collections.Hashtable?displayProperty=nameWithType>, <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>, and <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> have constructors that take a <xref:System.StringComparer?displayProperty=nameWithType> parameter when the type of the elements or keys is `string`. In general, you should use these constructors whenever possible, and specify either <xref:System.StringComparer.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparer.OrdinalIgnoreCase?displayProperty=nameWithType>.
-
-## Reference equality and string interning
-
-None of the samples have used <xref:System.Object.ReferenceEquals%2A>. This method determines if two strings
-are the same object, which can lead to inconsistent results in string comparisons. The following example demonstrates the _string interning_ feature of C#. When a program declares two or more identical string variables, the compiler stores them all in the same location. By calling the <xref:System.Object.ReferenceEquals%2A> method, you can see that the two strings actually refer to the same object in memory. Use the <xref:System.String.Copy%2A?displayProperty=nameWithType> method to avoid interning. After the copy has been made, the two strings have different storage locations, even though they have the same value. Run the following sample to show that strings `a` and `b` are _interned_ meaning they share the same storage. The strings `a` and `c` are not.
-
-:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs" id="Snippet9":::
-
-> [!NOTE]
-> When you test for equality of strings, you should use the methods that explicitly specify what kind of comparison you intend to perform. Your code is much more maintainable and readable. Use the overloads of the methods of the <xref:System.String?displayProperty=nameWithType> and <xref:System.Array?displayProperty=nameWithType> classes that take a <xref:System.StringComparison> enumeration parameter. You specify which type of comparison to perform. Avoid using the `==` and `!=` operators when you test for equality. The <xref:System.String.CompareTo%2A?displayProperty=nameWithType> instance methods always perform an ordinal case-sensitive comparison. They are primarily suited for ordering strings alphabetically.
-
-You can intern a string or retrieve a reference to an existing interned string by calling the <xref:System.String.Intern%2A?displayProperty=nameWithType> method. To determine whether a string is interned, call the <xref:System.String.IsInterned%2A?displayProperty=nameWithType> method.
 
 ## See also
 

@@ -4,7 +4,9 @@ using System;
 using System.Xml;
 using System.Security.Cryptography;
 using System.Security.Cryptography.Xml;
+using System.Runtime.Versioning;
 
+[SupportedOSPlatform("windows")]
 class Program
 {
     static void Main(string[] args)
@@ -92,7 +94,7 @@ class Program
         // object and create a new XmlElement object.
         ////////////////////////////////////////////////
         // <snippet5>
-        XmlElement elementToEncrypt = Doc.GetElementsByTagName(ElementToEncrypt)[0] as XmlElement;
+        XmlElement? elementToEncrypt = Doc.GetElementsByTagName(ElementToEncrypt)[0] as XmlElement;
 
         // Throw an XmlException if the element was not found.
         if (elementToEncrypt == null)
@@ -100,7 +102,7 @@ class Program
             throw new XmlException("The specified element was not found");
         }
         // </snippet5>
-        Aes sessionKey = null;
+        Aes? sessionKey = null;
 
         try
         {
@@ -196,17 +198,9 @@ class Program
             EncryptedXml.ReplaceElement(elementToEncrypt, edElement, false);
             // </snippet15>
         }
-        catch (Exception e)
-        {
-            // re-throw the exception.
-            throw e;
-        }
         finally
         {
-            if (sessionKey != null)
-            {
-                sessionKey.Clear();
-            }
+            sessionKey?.Clear();
         }
     }
 

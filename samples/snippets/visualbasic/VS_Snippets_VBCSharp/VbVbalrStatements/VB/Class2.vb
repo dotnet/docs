@@ -1,7 +1,5 @@
-﻿
-Option Explicit Off
+﻿Option Explicit Off
 Option Strict Off
-
 
 Public Class Class2
     Sub TestExplicit()
@@ -16,12 +14,9 @@ Public Class Class2
         '</Snippet48>
     End Sub
 
-
     Class widget
     End Class
 End Class
-
-
 
 Public Class Example98
     ' Yield Statement (Visual Basic)
@@ -52,7 +47,6 @@ Public Class Example98
     End Function
     '</Snippet98>
 End Class
-
 
 Public Class Example99
     ' Yield Statement (Visual Basic)

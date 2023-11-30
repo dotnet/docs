@@ -415,7 +415,6 @@ Add support for memory (or distributed) caching with the following code:
 ```csharp
 builder.Services.AddMemoryCache();
 builder.Services.AddMvc();
-}
 ```
 
 Be sure to add the `Microsoft.Extensions.Caching.Memory` NuGet package as well.

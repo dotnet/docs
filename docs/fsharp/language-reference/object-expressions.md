@@ -5,7 +5,7 @@ ms.date: 02/08/2019
 ---
 # Object Expressions
 
-An *object expression* is an expression that creates a new instance of a dynamically created, anonymous object type that is based on an existing base type, interface, or set of interfaces.
+An *object expression* is an expression that creates a new instance of a compiler generated, anonymous object type that is based on an existing base type, interface, or set of interfaces.
 
 ## Syntax
 

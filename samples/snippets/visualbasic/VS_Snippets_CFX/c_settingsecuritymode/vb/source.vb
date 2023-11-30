@@ -38,7 +38,7 @@ Public Class Test
         '</snippet5>
     End Sub
 
-    Private Sub MakeMessgeBinding()
+    Private Sub MakeMessageBinding()
         '<snippet6>
         '<snippet2>
         Dim b As New WSHttpBinding()
@@ -84,8 +84,8 @@ Public Class Test
         '<snippet8>
         Dim b As New NetTcpBinding(SecurityMode.TransportWithMessageCredential)
         b.Security.Message.ClientCredentialType = MessageCredentialType.Certificate
-        Dim netTcpAdddress As New Uri("net.tcp://baseAddress")
-        Dim sh As New ServiceHost(GetType(Calculator), netTcpAdddress)
+        Dim netTcpAddress As New Uri("net.tcp://baseAddress")
+        Dim sh As New ServiceHost(GetType(Calculator), netTcpAddress)
         sh.Credentials.ServiceCertificate.SetCertificate(StoreLocation.LocalMachine, StoreName.My, X509FindType.FindByIssuerName, "Contoso.com")
         sh.AddServiceEndpoint(GetType(ICalculator), b, "TcpCalculator")
         sh.Open()
@@ -100,8 +100,8 @@ Public Class Test
         Dim b As New NetTcpBinding(SecurityMode.TransportWithMessageCredential)
         b.Security.Transport.ClientCredentialType = TcpClientCredentialType.Windows
         b.Security.Message.ClientCredentialType = MessageCredentialType.Certificate
-        Dim netTcpAdddress As New Uri("net.tcp://Tcp")
-        Dim sh As New ServiceHost(GetType(Calculator), netTcpAdddress)
+        Dim netTcpAddress As New Uri("net.tcp://Tcp")
+        Dim sh As New ServiceHost(GetType(Calculator), netTcpAddress)
         sh.Credentials.ServiceCertificate.SetCertificate(StoreLocation.LocalMachine, StoreName.My, X509FindType.FindByIssuerName, "Contoso.com")
         sh.AddServiceEndpoint(GetType(ICalculator), b, "TcpCalculator")
         sh.Open()

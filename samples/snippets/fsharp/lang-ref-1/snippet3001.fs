@@ -6,14 +6,13 @@ type PointWithCounter(a: int, b: int) =
     let (x, y) = (a, b)
 
     // A private function binding.
-    let privateFunction x y = x * x + 2*y
+    let privateFunction x y = x * x + 2 * y
 
     // A static let binding.
     static let mutable count = 0
 
     // A do binding.
-    do
-       count <- count + 1
+    do count <- count + 1
 
     member this.Prop1 = x
     member this.Prop2 = y

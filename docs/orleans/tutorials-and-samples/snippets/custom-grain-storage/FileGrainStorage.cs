@@ -34,10 +34,10 @@ public sealed class FileGrainStorage : IGrainStorage, ILifecycleParticipant<ISil
         {
             if (fileInfo.LastWriteTimeUtc.ToString() != grainState.ETag)
             {
-                throw new InconsistentStateException($$"""
-                    Version conflict (ClearState): ServiceId={{_clusterOptions.ServiceId}}
-                    ProviderName={{_storageName}} GrainType={{typeof(T)}} 
-                    GrainReference={{grainId}}.
+                throw new InconsistentStateException($"""
+                    Version conflict (ClearState): ServiceId={_clusterOptions.ServiceId}
+                    ProviderName={_storageName} GrainType={typeof(T)}
+                    GrainReference={grainId}.
                     """);
             }
 
@@ -57,7 +57,7 @@ public sealed class FileGrainStorage : IGrainStorage, ILifecycleParticipant<ISil
         IGrainState<T> grainState)
     {
         var fName = GetKeyString(stateName, grainId);
-        var path = Path.Combine(_options.RootDirectory, fName!);        
+        var path = Path.Combine(_options.RootDirectory, fName!);
         var fileInfo = new FileInfo(path);
         if (fileInfo is { Exists: false })
         {
@@ -84,10 +84,10 @@ public sealed class FileGrainStorage : IGrainStorage, ILifecycleParticipant<ISil
         var fileInfo = new FileInfo(path);
         if (fileInfo.Exists && fileInfo.LastWriteTimeUtc.ToString() != grainState.ETag)
         {
-            throw new InconsistentStateException($$"""
-                Version conflict (WriteState): ServiceId={{_clusterOptions.ServiceId}}
-                ProviderName={{_storageName}} GrainType={{typeof(T)}} 
-                GrainReference={{grainId}}.
+            throw new InconsistentStateException($"""
+                Version conflict (WriteState): ServiceId={_clusterOptions.ServiceId}
+                ProviderName={_storageName} GrainType={typeof(T)}
+                GrainReference={grainId}.
                 """);
         }
 

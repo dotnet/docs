@@ -12,27 +12,19 @@ For Azure SQL DB, Entity Framework (EF) Core already provides internal database 
 For instance, the following code at the EF Core connection level enables resilient SQL connections that are retried if the connection fails.
 
 ```csharp
-// Startup.cs from any ASP.NET Core Web API
-public class Startup
-{
-    // Other code ...
-    public IServiceProvider ConfigureServices(IServiceCollection services)
+// Program.cs from any ASP.NET Core Web API
+// Other code ...
+builder.Services.AddDbContext<CatalogContext>(options =>
     {
-        // ...
-        services.AddDbContext<CatalogContext>(options =>
+        options.UseSqlServer(builder.Configuration["ConnectionString"],
+        sqlServerOptionsAction: sqlOptions =>
         {
-            options.UseSqlServer(Configuration["ConnectionString"],
-            sqlServerOptionsAction: sqlOptions =>
-            {
-                sqlOptions.EnableRetryOnFailure(
-                maxRetryCount: 10,
-                maxRetryDelay: TimeSpan.FromSeconds(30),
-                errorNumbersToAdd: null);
-            });
+            sqlOptions.EnableRetryOnFailure(
+            maxRetryCount: 10,
+            maxRetryDelay: TimeSpan.FromSeconds(30),
+            errorNumbersToAdd: null);
         });
-    }
-//...
-}
+    });
 ```
 
 ## Execution strategies and explicit transactions using BeginTransaction and multiple DbContexts

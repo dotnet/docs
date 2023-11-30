@@ -365,7 +365,6 @@ public override async Task<GetResponse> Get(GetRequest request, ServerCallContex
         Portfolio = Portfolio.FromRepositoryModel(portfolio)
     };
 }
-
 ```
 
 The implementation of the `GetAll` method is similar. Note that the `repeated` fields on Protobuf messages are generated as `readonly` properties of type `RepeatedField<T>`, so you have to add items to them by using the `AddRange` method, like in this example:

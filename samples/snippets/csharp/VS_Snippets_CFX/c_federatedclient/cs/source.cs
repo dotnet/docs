@@ -28,7 +28,7 @@ namespace Samples
             // Set the IssuedTokenRenewalThresholdPercentage property
             cf.Credentials.IssuedToken.IssuedTokenRenewalThresholdPercentage = renewalPercentage;
 
-            // Set the DefaulyKeyEntropyMode property
+            // Set the DefaultKeyEntropyMode property
             cf.Credentials.IssuedToken.DefaultKeyEntropyMode = entropyMode;
         }
 

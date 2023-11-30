@@ -94,7 +94,6 @@ namespace AppWithPlugin
         }
     }
 }
-
 ```
 
 ## Create the plugin interfaces

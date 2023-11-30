@@ -1,7 +1,7 @@
 ---
 title: Cross-platform targeting for .NET libraries
 description: Best practice recommendations for creating cross-platform .NET libraries.
-ms.date: 05/04/2021
+ms.date: 10/27/2023
 ---
 
 # Cross-platform targeting
@@ -68,7 +68,7 @@ public static class GpsLocation
     public static async Task<(double latitude, double longitude)> GetCoordinatesAsync()
     {
 #if NET461
-        return CallDotNetFramworkApi();
+        return CallDotNetFrameworkApi();
 #elif WINDOWS_UWP
         return CallUwpApi();
 #else
@@ -92,7 +92,11 @@ public static class GpsLocation
 }
 ```
 
-❌ AVOID multi-targeting as well as targeting .NET Standard, if your source code is the same for all targets.
+✔️ CONSIDER multi-targeting even if your source code is the same for all targets, when your project has any library / package dependencies.
+
+> Your project's dependent packages, either direct or downstream, may use the same code APIs while wrapped inside different versions of the dependent assembly per target framework. Adding specific targets ensures that your consumers do not need to add / update their assembly binding redirects.
+
+❌ AVOID multi-targeting as well as targeting .NET Standard, if your source code is the same for all targets and your project has no library / package dependencies.
 
 > The .NET Standard assembly will automatically be used by NuGet. Targeting individual .NET implementations increases the `*.nupkg` size for no benefit.
 
@@ -116,6 +120,8 @@ public static class GpsLocation
 ```
 
 ✔️ CONSIDER using [MSBuild.Sdk.Extras](https://github.com/onovotny/MSBuildSdkExtras) when multi-targeting for UWP and Xamarin as it greatly simplifies your project file.
+
+❌ AVOID changing the assembly name or using different assembly names for each TFM your library compiles. Due to dependencies between libraries, multi-targeting with different assembly names per TFM can break package consumers. An assembly should have the same name across all TFMs.
 
 ## Older targets
 

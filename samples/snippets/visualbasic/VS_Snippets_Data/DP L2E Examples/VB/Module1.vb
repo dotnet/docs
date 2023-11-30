@@ -56,7 +56,7 @@ Module Module1
         'Reverse() ' Reverse not supported in L2E
 
         '*** Grouping Operators ***'
-        ' GroupBySimple2() 
+        ' GroupBySimple2()
         'GroupBySimple2_MQ()
         'GroupBySimple3()
         ' GroupBySimple3_MQ()
@@ -1102,7 +1102,7 @@ Module Module1
 
     '*** Grouping Operators ***'
     '    GroupBySimple2()
-    ' GroupBySimple3() 
+    ' GroupBySimple3()
     ' GroupByNested()
 
 #End Region '"Grouping Operators"
@@ -1382,7 +1382,7 @@ Module Module1
         'Console.WriteLine("Fifth address where PostalCode = 'M4B 1V7': {0}", _
         '        fifthAddress)
         'End Using
-        ' 
+        '
     End Sub
 
 #End Region  '"Element Operators"
@@ -1451,7 +1451,7 @@ Module Module1
 
         'Console.WriteLine(nameList)
         'End Using
-        ' 
+        '
     End Sub
 
     Sub Average_MQ()
@@ -1649,7 +1649,7 @@ Module Module1
             For Each orderGroup In query
                 Console.WriteLine("ContactID: {0}", orderGroup.Category)
                 For Each ord In orderGroup.smallestTotalDue
-                    Console.WriteLine("Mininum TotalDue {0} for SalesOrderID {1}: ", _
+                    Console.WriteLine("Minimum TotalDue {0} for SalesOrderID {1}: ", _
                         ord.TotalDue, ord.SalesOrderID)
                 Next
                 Console.Write(vbNewLine)

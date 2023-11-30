@@ -26,7 +26,7 @@ Filtering refers to the operation of restricting the result set to contain only 
  The following example uses the `where` clause to filter from an array those strings that have a specific length.  
   
 ```csharp  
-string[] words = { "the", "quick", "brown", "fox", "jumps" };  
+string[] words = [ "the", "quick", "brown", "fox", "jumps" ];  
   
 IEnumerable<string> query = from word in words  
                             where word.Length == 3  
@@ -48,6 +48,6 @@ foreach (string str in query)
 - [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
 - [where clause](../../../language-reference/keywords/where-clause.md)
 - [Dynamically specify predicate filters at run time](../../../linq/dynamically-specify-predicate-filters-at-runtime.md)
-- [How to query an assembly's metadata with Reflection (LINQ) (C#)](./how-to-query-an-assembly-s-metadata-with-reflection-linq.md)
+- [How to query an assembly's metadata with Reflection (LINQ) (C#)](../../../advanced-topics/reflection-and-attributes/how-to-query-assembly-metadata-with-reflection-linq.md)
 - [How to query for files with a specified attribute or name (C#)](./how-to-query-for-files-with-a-specified-attribute-or-name.md)
 - [How to sort or filter text data by any word or field (LINQ) (C#)](./how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)

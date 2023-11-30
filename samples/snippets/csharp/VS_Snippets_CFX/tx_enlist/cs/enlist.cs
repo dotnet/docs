@@ -28,12 +28,12 @@ namespace Microsoft.Samples.Transactions.Quickstarts
 			{
 				using (TransactionScope scope = new TransactionScope())
 				{
-				
+
 					//Create an enlistment object
-					myEnlistmentClass myElistment = new myEnlistmentClass();
+					myEnlistmentClass myEnlistment = new myEnlistmentClass();
 
 					//Enlist on the current transaction with the enlistment object
-					Transaction.Current.EnlistVolatile(myElistment, EnlistmentOptions.None);
+					Transaction.Current.EnlistVolatile(myEnlistment, EnlistmentOptions.None);
 
 					//Perform transactional work here.
 
@@ -44,7 +44,7 @@ namespace Microsoft.Samples.Transactions.Quickstarts
 						Console.Write("Complete the transaction scope? [Y|N] ");
 						c = Console.ReadKey();
 						Console.WriteLine();
-				
+
 		                        			if ((c.KeyChar == 'Y') || (c.KeyChar == 'y'))
 						{
 							scope.Complete();
@@ -108,8 +108,8 @@ namespace Microsoft.Samples.Transactions.Quickstarts
 			{
 				Console.WriteLine("In doubt notification received");
 
-				//Do any work necessary when indout notification is received
-				
+				//Do any work necessary when in doubt notification is received
+
 				//Declare done on the enlistment
 				enlistment.Done();
 			}

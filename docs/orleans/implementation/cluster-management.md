@@ -14,9 +14,9 @@ In addition to the <xref:Orleans.IMembershipTable> each silo participates in a f
 
 ### The Basic Membership Protocol:
 
-1. Upon startup every silo writes itself into a well-known `IMembershipTable` (passed via config). A combination of silo identity (`ip:port:epoch`) and service deployment id is used as unique keys in the table. Epoch is just time in ticks when this silo started, and as such `ip:port:epoch` is guaranteed to be unique in a given Orleans deployment.
+1. Upon startup every silo adds an entry for itself into a well-known, shared table, using an implementation of <xref:Orleans.IMembershipTable>. A combination of silo identity (`ip:port:epoch`) and service deployment id is used as unique keys in the table. Epoch is just time in ticks when this silo started, and as such `ip:port:epoch` is guaranteed to be unique in a given Orleans deployment.
 
-1. Silos monitor each other directly, via application pings ("are you alive" `heartbeats`). Pings are sent as direct messages from silo to silo, over the same TCP sockets that silos communicate. That way, pings fully correlate with actual networking problems and server health. Every silo pings X other silos. A silo picks whom to ping by calculating consistent hashes on other silos' identity, forming a virtual ring of all identities, and picking X successor silos on the ring (this is a well-known distributed technique called [consistent hashing](https://en.wikipedia.org/wiki/Consistent_hashing) and is widely used in many distributed hash tables, like [Chord DHT](https://en.wikipedia.org/wiki/Chord_(peer-to-peer))).
+1. Silos monitor each other directly, via application pings ("are you alive" `heartbeats`). Pings are sent as direct messages from silo to silo, over the same TCP sockets that silos communicate. That way, pings fully correlate with actual networking problems and server health. Every silo pings a configurable set of other other silos. A silo picks whom to ping by calculating consistent hashes on other silos' identity, forming a virtual ring of all identities, and picking X successor silos on the ring (this is a well-known distributed technique called [consistent hashing](https://en.wikipedia.org/wiki/Consistent_hashing) and is widely used in many distributed hash tables, like [Chord DHT](https://en.wikipedia.org/wiki/Chord_(peer-to-peer))).
 
 1. If a silo S does not get Y ping replies from a monitored servers P, it suspects it by writing its timestamped suspicion into P's row in the `IMembershipTable`.
 
@@ -179,5 +179,5 @@ A natural question that might be asked is why not rely completely on [Apache Zoo
 
 ### Acknowledgements
 
-We would to acknowledge the contribution of [Alex Kogan](https://www.linkedin.com/in/alex-kogan-3a2b52) to the design and implementation of the first version of this protocol. This work was done as part of a summer internship in Microsoft Research in the Summer of 2011.
+We would to acknowledge the contribution of Alex Kogan to the design and implementation of the first version of this protocol. This work was done as part of a summer internship in Microsoft Research in the Summer of 2011.
 The implementation of ZooKeeper based `IMembershipTable` was done by [Shay Hazor](https://github.com/shayhatsor), the implementation of SQL `IMembershipTable` was done by [Veikko Eeva](https://github.com/veikkoeeva), the implementation of AWS DynamoDB `IMembershipTable` was done by [Gutemberg Ribeiro](https://github.com/galvesribeiro/) and the implementation of Consul based `IMembershipTable` was done by [Paul North](https://github.com/PaulNorth).

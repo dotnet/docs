@@ -18,15 +18,14 @@ if (args is { Length: 1 })
             CultureInfo.GetCultureInfo(args[0]);
 }
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
-    {
-        services.AddLocalization();
-        services.AddTransient<MessageService>();
-        services.AddTransient<ParameterizedMessageService>();
-    })
-    .ConfigureLogging(options => options.SetMinimumLevel(LogLevel.Warning))
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Services.AddLocalization();
+builder.Services.AddTransient<MessageService>();
+builder.Services.AddTransient<ParameterizedMessageService>();
+builder.Logging.SetMinimumLevel(LogLevel.Warning);
+
+using IHost host = builder.Build();
 
 IServiceProvider services = host.Services;
 

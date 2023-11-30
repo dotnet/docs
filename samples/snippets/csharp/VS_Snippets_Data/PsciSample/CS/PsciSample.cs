@@ -33,7 +33,7 @@ public class PsciSample
 
         // After compilation of the schema, the ElementSchemaType property of the
         // XmlSchemaElement will contain a reference to a valid object because the
-        // SchemaTypeName refered to a valid type.
+        // SchemaTypeName referred to a valid type.
         Console.WriteLine("After compilation the ElementSchemaType of Price is "
            + priceElem.ElementSchemaType);
     }

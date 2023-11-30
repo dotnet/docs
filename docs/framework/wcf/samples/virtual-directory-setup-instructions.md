@@ -6,7 +6,7 @@ ms.assetid: 3c62cab5-81a4-48b6-ac8c-9ce33a85a157
 ---
 # Virtual Directory Setup Instructions
 
-The Windows Communication Foundation (WCF) samples are intended to share a common virtual directory named servicemodelsamples that is mapped to the %SystemDrive%\inetpub\wwwroot\servicemodelsamples folder.
+The Windows Communication Foundation (WCF) samples are intended to share a common virtual directory named servicemodelsamples that's mapped to the *%SystemDrive%\inetpub\wwwroot\servicemodelsamples* folder.
 
 > [!NOTE]
 > %SystemDrive% is usually C: or D:, depending on the drive location where Internet Information Services (IIS) is installed.
@@ -15,7 +15,7 @@ You can run the Setupvroot.bat and Cleanupvroot.bat files from the [One-Time Set
 
 ## Procedures
 
-#### To create a virtual directory in IIS 7.0 or 7.5
+### To create a virtual directory in IIS 7.0 or 7.5
 
 1. From the **Start** menu, click **Run**, then type **inetmgr** to open the Internet Information Services (IIS) MMC snap-in.
 
@@ -39,7 +39,7 @@ You can run the Setupvroot.bat and Cleanupvroot.bat files from the [One-Time Set
 
      In addition to creating the virtual directory, you must also set its properties to enable WCF services to run. See below for details.
 
-#### To create a virtual directory in IIS 5.1 or 6.0
+### To create a virtual directory in IIS 5.1 or 6.0
 
 1. Open a command prompt window and type `start inetmgr` to open the Internet Information Services (IIS) MMC snap-in.
 
@@ -64,17 +64,17 @@ You can run the Setupvroot.bat and Cleanupvroot.bat files from the [One-Time Set
     > [!NOTE]
     > This task must be performed only once because all of the WCF samples use the same servicemodelsamples virtual directory.
 
-#### To set additional virtual directory properties in IIS 7.0 or 7.5
+### To set additional virtual directory properties in IIS 7.0 or 7.5
 
 1. Click the servicemodelsamples node. Along the bottom of the window, two views are listed. Select **Features View** if it isn't already selected.
 
 2. Double-click the entry for **Directory Browsing**.
 
-3. In the Actions pane, select the **Enable** option. This enables you to access the directory of the directory by using Internet Explorer, which helps when debugging a service.
+3. In the Actions pane, select the **Enable** option. This enables you to access the directory by using a browser, which helps when debugging a service.
 
 Finally, you must set the security properties of the servicemodelsamples folder to allow it to be accessed by others. See below for details.
 
-#### To set additional virtual directory properties in IIS 5.1 or 6.0
+### To set additional virtual directory properties in IIS 5.1 or 6.0
 
 1. Right-click the servicemodelsamples node and then click **Properties**.
 
@@ -86,9 +86,9 @@ Finally, you must set the security properties of the servicemodelsamples folder 
 
     - **Index this resource**
 
-3. Select the **Directory browsing** check box. This enables you to access the directory of the directory by using Internet Explorer, which helps when debugging a service.
+3. Select the **Directory browsing** check box. This enables you to access the directory by using a browser, which helps when debugging a service.
 
-#### To set security properties of the folder in IIS 7.0 or 7.5
+### To set security properties of the folder in IIS 7.0 or 7.5
 
 1. Navigate to %SystemDrive%\inetpub\wwwroot\servicemodelsamples.
 
@@ -114,7 +114,7 @@ Finally, you must set the security properties of the servicemodelsamples folder 
 
 12. After the changes to enable sharing are complete, click **Done** to close the **File Sharing** window.
 
-#### To set security properties of the folder in IIS 5.1 or 6.0
+### To set security properties of the folder in IIS 5.1 or 6.0
 
 1. Navigate to %SystemDrive%\inetpub\wwwroot\servicemodelsamples.
 

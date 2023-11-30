@@ -30,9 +30,9 @@ Now publish your application by using one of these methods:
 * From Visual Studio by right-clicking the project and selecting **Publish** on the shortcut menu.
 * From the .NET CLI.
 
-When you publish a .NET application, you can choose to create a *framework-dependent* deployment or a *self-contained* deployment. Framework-dependent deployments require the .NET Shared Runtime to be installed on the host where they are run. Self-contained deployments are published with a complete copy of the .NET runtime and framework and can be run on any host. For more information, including the advantages and disadvantages of each approach, see the [.NET application deployment](../../core/deploying/index.md) documentation.
+When you publish a .NET application, you can choose to create a *framework-dependent* deployment or a *self-contained* deployment. Framework-dependent deployments require the .NET Shared Runtime to be installed on the host where they're run. Self-contained deployments are published with a complete copy of the .NET runtime and framework and can be run on any host. For more information, including the advantages and disadvantages of each approach, see the [.NET application deployment](../../core/deploying/index.md) documentation.
 
-To publish a self-contained build of the application that does not require the .NET 5 runtime to be installed on the host, specify the runtime to be included with the application. Use the `-r` (or `--runtime`) flag.
+To publish a self-contained build of the application that doesn't require the .NET 5 runtime to be installed on the host, specify the runtime to be included with the application. Use the `-r` (or `--runtime`) flag.
 
 ```dotnetcli
 dotnet publish -c Release -r win-x64 -o ./publish
@@ -83,7 +83,7 @@ Now publish your application. The application can be either framework dependent 
   ```dotnetcli
   dotnet publish -c Release -r linux-x64 -o ./publish
   ```
-  
+
 Copy the complete contents of the `publish` directory to an installation folder on the Linux host. Registering the service requires a special file, called a *unit file*, to be added to the `/etc/systemd/system` directory. You'll need root permission to create a file in this folder. Name the file with the identifier that you want `systemd` to use and the `.service` extension. For example, use `/etc/systemd/system/myapp.service`.
 
 The service file uses INI format, as shown in this example:
@@ -100,7 +100,7 @@ ExecStart=/usr/sbin/myapp
 WantedBy=multi-user.target
 ```
 
-The `Type=notify` property tells `systemd` that the application will notify it on startup and shutdown. The `WantedBy=multi-user.target` setting will cause the service to start when the Linux system reaches "runlevel 2," which means a non-graphical, multi-user shell is active.
+The `Type=notify` property tells `systemd` that the application will notify it on startup and shutdown. The `WantedBy=multi-user.target` setting will cause the service to start when the Linux system reaches "runlevel 2," which means a nongraphical, multi-user shell is active.
 
 Before `systemd` will recognize the service, it needs to reload its configuration. You control `systemd` by using the `systemctl` command. After reloading, use the `status` subcommand to confirm that the application has registered successfully.
 
@@ -162,7 +162,7 @@ You can configure Kestrel to use a certificate in two ways: from configuration o
 
 ### Set HTTPS certificates by using configuration
 
-The configuration approach requires setting the path to the certificate `.pfx` file and the password in the Kestrel configuration section. In `appsettings.json`, that would look like this:
+The configuration approach requires setting the password and path to the certificate `.pfx` file in the Kestrel configuration section. In `appsettings.json`, that looks like this:
 
 ```json
 {

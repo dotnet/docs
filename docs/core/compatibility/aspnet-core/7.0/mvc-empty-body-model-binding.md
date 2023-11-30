@@ -21,7 +21,7 @@ The previous behavior performed a minimal validation of `Content-Length = 0`. In
 
 ## Version introduced
 
-ASP.NET Core 7.0 Preview 3
+ASP.NET Core 7.0
 
 ## Previous behavior
 

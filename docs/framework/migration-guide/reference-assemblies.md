@@ -51,3 +51,6 @@ After adding the **Microsoft.NETFramework.ReferenceAssemblies** NuGet package to
   01. Run _msbuild /t:restore_.
 
 - If your project is an SDK-style project, you don't need to do anything. The NuGet restore action is automatically run when the project is built.
+
+> [!IMPORTANT]
+> Using reference assemblies makes it possible to build projects that target unsupported versions of .NET Framework from the command line. However, you still can't load these projects in newer versions of Visual Studio. To continue building these apps in Visual Studio, the only workaround is to use [an older version of Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/).

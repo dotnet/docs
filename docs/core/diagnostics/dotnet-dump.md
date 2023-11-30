@@ -30,7 +30,6 @@ There are two ways to download and install `dotnet-dump`:
   | OS  | Platform |
   | --- | -------- |
   | Windows | [x86](https://aka.ms/dotnet-dump/win-x86) \| [x64](https://aka.ms/dotnet-dump/win-x64) \| [Arm](https://aka.ms/dotnet-dump/win-arm) \| [Arm-x64](https://aka.ms/dotnet-dump/win-arm64) |
-  | macOS   | [x64](https://aka.ms/dotnet-dump/osx-x64) |
   | Linux   | [x64](https://aka.ms/dotnet-dump/linux-x64) \| [Arm](https://aka.ms/dotnet-dump/linux-arm) \| [Arm64](https://aka.ms/dotnet-dump/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-dump/linux-musl-x64) \| [musl-Arm64](https://aka.ms/dotnet-dump/linux-musl-arm64) |
 
 > [!NOTE]
@@ -143,7 +142,7 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 
 - **`-c|--command <debug_command>`**
 
-  Specifies the [command](#analyze-sos-commands) to run in the shell on start.
+  Runs the [command](#analyze-sos-commands) on start. Multiple instances of this parameter can be used in an invocation to chain commands. Commands will get run in the order that they are provided on the command line. If you want dotnet dump to exit after the commands, your last command should be 'exit'.
 
 ### Analyze SOS commands
 
@@ -178,7 +177,6 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 | `dumpruntimetypes`                                  | Finds all System.RuntimeType objects in the GC heap and prints the type name and MethodTable they refer too.
 | `dumpsig`                                           | Dumps the signature of a method or field specified by `<sigaddr> <moduleaddr>`.
 | `dumpsigelem`                                       | Dumps a single element of a signature object.
-| `dumpstack`                                         | Displays a native and managed stack trace.
 | `dumpstackobjects`                                  | Displays all managed objects found within the bounds of the current stack.
 | `dumpvc`                                            | Displays info about the fields of a value class.
 | `eeheap`                                            | Displays info about process memory consumed by internal runtime data structures.

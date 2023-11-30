@@ -11,7 +11,7 @@ public class Example
                             "Shanghai, China\t13,831,900\n" +
                             "Karachi, Pakistan|12,991,000\n" +
                             "Delhi, India\t12,259,230\n" +
-                            "Istanbul, Turkey|11,372,613\n";
+                            "Istanbul, Türkiye|11,372,613\n";
       Console.WriteLine("Population of the World's Largest Cities, 2009");
       Console.WriteLine();
       Console.WriteLine("{0,-20} {1,10}", "City", "Population");
@@ -30,5 +30,5 @@ public class Example
 //       Shanghai, China      13,831,900
 //       Karachi, Pakistan    12,991,000
 //       Delhi, India         12,259,230
-//       Istanbul, Turkey     11,372,613
+//       Istanbul, Türkiye     11,372,613
 // </Snippet1>

@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Activities;
-using System.Threading;
 //<snippet14>
 using System.Activities.DurableInstancing;
+using System.Collections.Generic;
+using System.Threading;
 //</snippet14>
 namespace WorkflowConsoleApplication1
 {
@@ -27,18 +25,18 @@ namespace WorkflowConsoleApplication1
             WorkflowApplication wfApp =
                 new WorkflowApplication(new Workflow1());
 
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 syncEvent.Set();
             };
 
-            wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
+            wfApp.Aborted = delegate (WorkflowApplicationAbortedEventArgs e)
             {
                 Console.WriteLine(e.Reason);
                 syncEvent.Set();
             };
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 Console.WriteLine(e.UnhandledException.ToString());
                 return UnhandledExceptionAction.Terminate;
@@ -77,7 +75,7 @@ namespace WorkflowConsoleApplication1
             //    idleEvent.Set();
             //};
 
-            wfApp.PersistableIdle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.PersistableIdle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 idleEvent.Set();
                 return PersistableIdleAction.Persist;

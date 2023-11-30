@@ -33,5 +33,5 @@ This section provides introductory information about programming with LINQ to Da
 ## See also
 
 - [LINQ and ADO.NET](linq-and-ado-net.md)
-- [Language-Integrated Query (LINQ) - C#](../../../csharp/programming-guide/concepts/linq/index.md)  
+- [Language-Integrated Query (LINQ) - C#](/dotnet/csharp/linq/)  
 - [Language-Integrated Query (LINQ) - Visual Basic](../../../visual-basic/programming-guide/concepts/linq/index.md)  

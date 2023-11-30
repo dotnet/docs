@@ -26,7 +26,7 @@ The base class that is accessed is the base class specified in the class declara
 
 ## Example 1
 
-In this example, both the base class `Person` and the derived class `Employee` have a method named `Getinfo`. By using the `base` keyword, it is possible to call the `Getinfo` method of the base class from within the derived class.
+In this example, both the base class `Person` and the derived class `Employee` have a method named `GetInfo`. By using the `base` keyword, it is possible to call the `GetInfo` method of the base class from within the derived class.
 
 [!code-csharp[csrefKeywordsAccess#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsAccess/CS/csrefKeywordsAccess.cs#1)]
 

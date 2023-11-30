@@ -1,8 +1,7 @@
-// <Configuration>
-using Microsoft.AspNetCore.Http.Extensions;
+﻿// <configuration>
 using Orleans.Runtime;
 
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.Host.UseOrleans(siloBuilder =>
 {
@@ -10,24 +9,36 @@ builder.Host.UseOrleans(siloBuilder =>
     siloBuilder.AddMemoryGrainStorage("urls");
 });
 
-var app = builder.Build();
-// </Configuration>
+using WebApplication app = builder.Build();
+// </configuration>
 
-// <Endpoints>
+// <endpoints>
 app.MapGet("/", () => "Hello World!");
 
-app.MapGet("/shorten/{*path}",
-    async (IGrainFactory grains, HttpRequest request, string path) =>
+app.MapGet("/shorten",
+    async (IGrainFactory grains, HttpRequest request, string url) =>
     {
+        var host = $"{request.Scheme}://{request.Host.Value}";
+
+        // Validate the URL query string.
+        if (string.IsNullOrWhiteSpace(url) &&
+            Uri.IsWellFormedUriString(url, UriKind.Absolute) is false)
+        {
+            return Results.BadRequest($"""
+                The URL query string is required and needs to be well formed.
+                Consider, ${host}/shorten?url=https://www.microsoft.com.
+                """);
+        }
+
         // Create a unique, short ID
         var shortenedRouteSegment = Guid.NewGuid().GetHashCode().ToString("X");
 
         // Create and persist a grain with the shortened ID and full URL
         var shortenerGrain = grains.GetGrain<IUrlShortenerGrain>(shortenedRouteSegment);
-        await shortenerGrain.SetUrl(path);
+        await shortenerGrain.SetUrl(url);
 
         // Return the shortened URL for later use
-        var resultBuilder = new UriBuilder(request.GetEncodedUrl())
+        var resultBuilder = new UriBuilder(host)
         {
             Path = $"/go/{shortenedRouteSegment}"
         };
@@ -35,10 +46,10 @@ app.MapGet("/shorten/{*path}",
         return Results.Ok(resultBuilder.Uri);
     });
 
-app.MapGet("/go/{shortenedRouteSegment}",
+app.MapGet("/go/{shortenedRouteSegment:required}",
     async (IGrainFactory grains, string shortenedRouteSegment) =>
     {
-        // Retrieve the grain using the shortened ID and redirect to the original URL        
+        // Retrieve the grain using the shortened ID and url to the original URL        
         var shortenerGrain = grains.GetGrain<IUrlShortenerGrain>(shortenedRouteSegment);
         var url = await shortenerGrain.GetUrl();
 
@@ -46,46 +57,50 @@ app.MapGet("/go/{shortenedRouteSegment}",
     });
 
 app.Run();
-// </Endpoints>
+// </endpoints>
 
-// <GrainInterface>
+// <graininterface>
 public interface IUrlShortenerGrain : IGrainWithStringKey
 {
     Task SetUrl(string fullUrl);
+
     Task<string> GetUrl();
 }
-// </GrainInterface>
+// </graininterface>
 
-// <Grain>
-public class UrlShortenerGrain : Grain, IUrlShortenerGrain
+// <grain>
+public sealed class UrlShortenerGrain : Grain, IUrlShortenerGrain
 {
     private readonly IPersistentState<UrlDetails> _state;
 
     public UrlShortenerGrain(
         [PersistentState(
-                stateName: "url",
-                storageName: "urls")]
-                IPersistentState<UrlDetails> state)
-    {
-        _state = state;
-    }
+            stateName: "url",
+            storageName: "urls")]
+            IPersistentState<UrlDetails> state) => _state = state;
 
     public async Task SetUrl(string fullUrl)
     {
-        _state.State = new UrlDetails() { ShortenedRouteSegment = this.GetPrimaryKeyString(), FullUrl = fullUrl };
+        _state.State = new()
+        {
+            ShortenedRouteSegment = this.GetPrimaryKeyString(),
+            FullUrl = fullUrl
+        };
+
         await _state.WriteStateAsync();
     }
 
-    public Task<string> GetUrl()
-    {
-        return Task.FromResult(_state.State.FullUrl);
-    }
+    public Task<string> GetUrl() =>
+        Task.FromResult(_state.State.FullUrl);
 }
 
 [GenerateSerializer]
-public record UrlDetails
+public record class UrlDetails
 {
+    [Id(0)]
     public string FullUrl { get; set; }
+
+    [Id(1)]
     public string ShortenedRouteSegment { get; set; }
 }
 // </grain>

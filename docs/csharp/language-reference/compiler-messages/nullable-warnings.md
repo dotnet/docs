@@ -12,7 +12,6 @@ f1_keywords:
   - "CS8607" # WRN_DisallowNullAttributeForbidsMaybeNullAssignment: A possible null value may not be used for a type marked with [NotNull] or [DisallowNull]
   - "CS8608" # WRN_NullabilityMismatchInTypeOnOverride: Nullability of reference types in type doesn't match overridden member.
   - "CS8609" # WRN_NullabilityMismatchInReturnTypeOnOverride: Nullability of reference types in return type doesn't match overridden member.
-  - "CS8819" # WRN_NullabilityMismatchInReturnTypeOnPartial: Nullability of reference types in return type doesn't match partial method declaration.
   - "CS8610" # WRN_NullabilityMismatchInParameterTypeOnOverride: Nullability of reference types in type of parameter '{0}' doesn't match overridden member.
   - "CS8611" # WRN_NullabilityMismatchInParameterTypeOnPartial: Nullability of reference types in type of parameter '{0}' doesn't match partial method declaration.
   - "CS8612" # WRN_NullabilityMismatchInTypeOnImplicitImplementation: Nullability of reference types in type of '{0}' doesn't match implicitly implemented member '{1}'.
@@ -52,6 +51,7 @@ f1_keywords:
   - "CS8776" # WRN_MemberNotNullBadMember:  Member '{0}' cannot be used in this attribute.
   - "CS8775" # WRN_MemberNotNullWhen: Member '{0}' must have a non-null value when exiting with '{1}'.
   - "CS8777" # WRN_ParameterDisallowsNull: Parameter '{0}' must have a non-null value when exiting.
+  - "CS8819" # WRN_NullabilityMismatchInReturnTypeOnPartial: Nullability of reference types in return type doesn't match partial method declaration.
   - "CS8824" # WRN_ParameterNotNullIfNotNull: Parameter '{0}' must have a non-null value when exiting because parameter '{1}' is non-null.
   - "CS8825" # WRN_ReturnNotNullIfNotNull: Return value must be non-null because parameter '{0}' is non-null.
   - "CS8847" # WRN_SwitchExpressionNotExhaustiveForNullWithWhen: The switch expression does not handle some null inputs (it is not exhaustive). For example, the pattern '{0}' is not covered. However, a pattern with a 'when' clause might successfully match this value.
@@ -60,6 +60,7 @@ helpviewer_keywords:
   - "CS8600"
   - "CS8601"
   - "CS8602"
+  - "CS8603"
   - "CS8604"
   - "CS8605"
   - "CS8607"
@@ -82,22 +83,22 @@ helpviewer_keywords:
   - "CS8625"
   - "CS8629"
   - "CS8631"
-  - "CS8634"
-  - "CS8655"
   - "CS8633"
+  - "CS8634"
   - "CS8643"
   - "CS8644"
   - "CS8645"
+  - "CS8655"
+  - "CS8667"
+  - "CS8670"
+  - "CS8714"
   - "CS8762"
   - "CS8763"
   - "CS8764"
   - "CS8765"
   - "CS8766"
-  - "CS8667"
-  - "CS8768"
-  - "CS8670"
-  - "CS8714"
   - "CS8767"
+  - "CS8768"
   - "CS8769"
   - "CS8770"
   - "CS8774"
@@ -114,27 +115,16 @@ ms.date: 06/30/2022
 
 This article covers the following compiler warnings:
 
-- [**CS8602**](#possible-dereference-of-null) - *Dereference of a possibly null reference.*
-- [**CS8670**](#possible-dereference-of-null) - *Object or collection initializer implicitly dereferences possibly null member.*
+- [**CS8597**](#possible-null-assigned-to-a-nonnullable-reference) - *Thrown value may be null.*
+- [**CS8600**](#possible-null-assigned-to-a-nonnullable-reference) - *Converting null literal or possible null value to non-nullable type.*
 - [**CS8601**](#possible-null-assigned-to-a-nonnullable-reference) - *Possible null reference assignment.*
-- [**CS8605**](#possible-null-assigned-to-a-nonnullable-reference) - *Unboxing a possibly null value.*
+- [**CS8602**](#possible-dereference-of-null) - *Dereference of a possibly null reference.*
 - [**CS8603**](#possible-null-assigned-to-a-nonnullable-reference) - *Possible null reference return.*
 - [**CS8604**](#possible-null-assigned-to-a-nonnullable-reference) - *Possible null reference argument for parameter.*
-- [**CS8600**](#possible-null-assigned-to-a-nonnullable-reference) - *Converting null literal or possible null value to non-nullable type.*
-- [**CS8597**](#possible-null-assigned-to-a-nonnullable-reference) - *Thrown value may be null.*
-- [**CS8625**](#possible-null-assigned-to-a-nonnullable-reference) - *Cannot convert null literal to non-nullable reference type.*
-- [**CS8629**](#possible-null-assigned-to-a-nonnullable-reference) - *Nullable value type may be null.*
-- [**CS8618**](#nonnullable-reference-not-initialized) - *Non-nullable variable must contain a non-null value when exiting constructor. Consider declaring it as nullable.*
-- [**CS8762**](#nonnullable-reference-not-initialized) - *Parameter  must have a non-null value when exiting.*
-- [**CS8619**](#mismatch-in-nullability-declaration) - *Nullability of reference types in value doesn't match target type.*
-- [**CS8621**](#mismatch-in-nullability-declaration) - *Nullability of reference types in return type doesn't match the target delegate (possibly because of nullability attributes).*
-- [**CS8622**](#mismatch-in-nullability-declaration) - *Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).*
-- [**CS8631**](#mismatch-in-nullability-declaration) - *The type cannot be used as type parameter in the generic type or method. Nullability of type argument doesn't match constraint type.*
-- [**CS8634**](#mismatch-in-nullability-declaration) - *The type cannot be used as type parameter in the generic type or method. Nullability of type argument doesn't match 'class' constraint.*
-- [**CS8714**](#mismatch-in-nullability-declaration) - *The type cannot be used as type parameter in the generic type or method. Nullability of type argument doesn't match 'notnull' constraint.*
+- [**CS8605**](#possible-null-assigned-to-a-nonnullable-reference) - *Unboxing a possibly null value.*
+- [**CS8607**](#code-doesnt-match-attribute-declaration) - *A possible null value may not be used for a type marked with `[NotNull]` or `[DisallowNull]`*
 - [**CS8608**](#mismatch-in-nullability-declaration) - *Nullability of reference types in type doesn't match overridden member.*
 - [**CS8609**](#mismatch-in-nullability-declaration) - *Nullability of reference types in return type doesn't match overridden member.*
-- [**CS8819**](#mismatch-in-nullability-declaration) - *Nullability of reference types in return type doesn't match partial method declaration.*
 - [**CS8610**](#mismatch-in-nullability-declaration) - *Nullability of reference types in type parameter doesn't match overridden member.*
 - [**CS8611**](#mismatch-in-nullability-declaration) - *Nullability of reference types in type parameter doesn't match partial method declaration.*
 - [**CS8612**](#mismatch-in-nullability-declaration) - *Nullability of reference types in type doesn't match implicitly implemented member.*
@@ -143,29 +133,40 @@ This article covers the following compiler warnings:
 - [**CS8615**](#mismatch-in-nullability-declaration) - *Nullability of reference types in type doesn't match implemented member.*
 - [**CS8616**](#mismatch-in-nullability-declaration) - *Nullability of reference types in return type doesn't match implemented member.*
 - [**CS8617**](#mismatch-in-nullability-declaration) - *Nullability of reference types in type of parameter doesn't match implemented member.*
+- [**CS8618**](#nonnullable-reference-not-initialized) - *Non-nullable variable must contain a non-null value when exiting constructor. Consider declaring it as nullable.*
+- [**CS8619**](#mismatch-in-nullability-declaration) - *Nullability of reference types in value doesn't match target type.*
+- [**CS8620**](#mismatch-in-nullability-declaration) - *Argument cannot be used for parameter due to differences in the nullability of reference types.*
+- [**CS8621**](#mismatch-in-nullability-declaration) - *Nullability of reference types in return type doesn't match the target delegate (possibly because of nullability attributes).*
+- [**CS8622**](#mismatch-in-nullability-declaration) - *Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).*
+- [**CS8624**](#mismatch-in-nullability-declaration) - *Argument cannot be used as an output due to differences in the nullability of reference types.*
+- [**CS8625**](#possible-null-assigned-to-a-nonnullable-reference) - *Cannot convert null literal to non-nullable reference type.*
+- [**CS8629**](#possible-null-assigned-to-a-nonnullable-reference) - *Nullable value type may be null.*
+- [**CS8631**](#mismatch-in-nullability-declaration) - *The type cannot be used as type parameter in the generic type or method. Nullability of type argument doesn't match constraint type.*
 - [**CS8633**](#mismatch-in-nullability-declaration) - *Nullability in constraints for type parameter of method doesn't match the constraints for type parameter of interface method. Consider using an explicit interface implementation instead.*
+- [**CS8634**](#mismatch-in-nullability-declaration) - *The type cannot be used as type parameter in the generic type or method. Nullability of type argument doesn't match 'class' constraint.*
 - [**CS8643**](#mismatch-in-nullability-declaration) - *Nullability of reference types in explicit interface specifier doesn't match interface implemented by the type.*
 - [**CS8644**](#mismatch-in-nullability-declaration) - *Type does not implement interface member. Nullability of reference types in interface implemented by the base type doesn't match.*
-- [**CS8620**](#mismatch-in-nullability-declaration) - *Argument cannot be used for parameter due to differences in the nullability of reference types.*
-- [**CS8624**](#mismatch-in-nullability-declaration) - *Argument cannot be used as an output due to differences in the nullability of reference types.*
 - [**CS8645**](#mismatch-in-nullability-declaration) - *Member is already listed in the interface list on type with different nullability of reference types.*
+- [**CS8655**](#exhaustive-switch-expression) - *The switch expression does not handle some null inputs (it is not exhaustive).*
 - [**CS8667**](#mismatch-in-nullability-declaration) - *Partial method declarations have inconsistent nullability in constraints for type parameter.*
+- [**CS8670**](#possible-dereference-of-null) - *Object or collection initializer implicitly dereferences possibly null member.*
+- [**CS8714**](#mismatch-in-nullability-declaration) - *The type cannot be used as type parameter in the generic type or method. Nullability of type argument doesn't match 'notnull' constraint.*
+- [**CS8762**](#nonnullable-reference-not-initialized) - *Parameter  must have a non-null value when exiting.*
+- [**CS8763**](#code-doesnt-match-attribute-declaration) - *A method marked `[DoesNotReturn]` should not return.*
 - [**CS8764**](#mismatch-in-nullability-declaration) - *Nullability of return type doesn't match overridden member (possibly because of nullability attributes).*
 - [**CS8765**](#mismatch-in-nullability-declaration) - *Nullability of type of parameter doesn't match overridden member (possibly because of nullability attributes).*
-- [**CS8768**](#mismatch-in-nullability-declaration) - *Nullability of reference types in return type doesn't match implemented member (possibly because of nullability attributes).*
-- [**CS8767**](#mismatch-in-nullability-declaration) - *Nullability of reference types in type of parameter of doesn't match implicitly implemented member (possibly because of nullability attributes).*
 - [**CS8766**](#mismatch-in-nullability-declaration) - *Nullability of reference types in return type of doesn't match implicitly implemented member (possibly because of nullability attributes).*
+- [**CS8767**](#mismatch-in-nullability-declaration) - *Nullability of reference types in type of parameter of doesn't match implicitly implemented member (possibly because of nullability attributes).*
+- [**CS8768**](#mismatch-in-nullability-declaration) - *Nullability of reference types in return type doesn't match implemented member (possibly because of nullability attributes).*
 - [**CS8769**](#mismatch-in-nullability-declaration) - *Nullability of reference types in type of parameter doesn't match implemented member (possibly because of nullability attributes).*
-- [**CS8607**](#code-doesnt-match-attribute-declaration) - *A possible null value may not be used for a type marked with `[NotNull]` or `[DisallowNull]`*
-- [**CS8763**](#code-doesnt-match-attribute-declaration) - *A method marked `[DoesNotReturn]` should not return.*
 - [**CS8770**](#code-doesnt-match-attribute-declaration) - *Method lacks `[DoesNotReturn]` annotation to match implemented or overridden member.*
 - [**CS8774**](#code-doesnt-match-attribute-declaration) - *Member must have a non-null value when exiting.*
 - [**CS8776**](#code-doesnt-match-attribute-declaration) - *Member cannot be used in this attribute.*
 - [**CS8775**](#code-doesnt-match-attribute-declaration) - *Member must have a non-null value when exiting.*
 - [**CS8777**](#code-doesnt-match-attribute-declaration) - *Parameter must have a non-null value when exiting.*
+- [**CS8819**](#mismatch-in-nullability-declaration) - *Nullability of reference types in return type doesn't match partial method declaration.*
 - [**CS8824**](#code-doesnt-match-attribute-declaration) - *Parameter must have a non-null value when exiting because parameter is non-null.*
 - [**CS8825**](#code-doesnt-match-attribute-declaration) - *Return value must be non-null because parameter is non-null.*
-- [**CS8655**](#exhaustive-switch-expression) - *The switch expression does not handle some null inputs (it is not exhaustive).*
 - [**CS8847**](#exhaustive-switch-expression) - *The switch expression does not handle some null inputs (it is not exhaustive). However, a pattern with a 'when' clause might successfully match this value.*
 
 The purpose of nullable warnings is to minimize the chance that your application throws a <xref:System.NullReferenceException?displayProperty=nameWithType> when run. To achieve this goal, the compiler uses static analysis and issues warnings when your code has constructs that may lead to null reference exceptions. You provide the compiler with information for its static analysis by applying type annotations and attributes. These annotations and attributes describe the nullability of arguments, parameters, and members of your types. In this article, you'll learn different techniques to address the nullable warnings the compiler generates from its static analysis. The techniques described here are for general C# code. Learn to work with nullable reference types and Entity Framework core in [Working with nullable reference types](/ef/core/miscellaneous/nullable-reference-types).
@@ -225,12 +226,12 @@ Fixing a warning for dereferencing a *maybe-null* variable involves one of three
 
 This set of warnings alerts you that you're assigning a variable whose type is nonnullable to an expression whose *null-state* is *maybe-null*. These warnings are:
 
+- **CS8597** - *Thrown value may be null.*
+- **CS8600** - *Converting null literal or possible null value to non-nullable type.*
 - **CS8601** - *Possible null reference assignment.*
-- **CS8605** - *Unboxing a possibly null value.*
 - **CS8603** - *Possible null reference return.*
 - **CS8604** - *Possible null reference argument for parameter.*
-- **CS8600** - *Converting null literal or possible null value to non-nullable type.*
-- **CS8597** - *Thrown value may be null.*
+- **CS8605** - *Unboxing a possibly null value.*
 - **CS8625** - *Cannot convert null literal to non-nullable reference type.*
 - **CS8629** - *Nullable value type may be null.*
 
@@ -303,15 +304,8 @@ Fixing a warning for not initializing a nonnullable member involves one of four 
 
 Many warnings indicate nullability mismatches between signatures for methods, delegates, or type parameters.
 
-- **CS8619** - *Nullability of reference types in value doesn't match target type.*
-- **CS8621** - *Nullability of reference types in return type doesn't match the target delegate (possibly because of nullability attributes).*
-- **CS8622** - *Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).*
-- **CS8631** - *The type cannot be used as type parameter in the generic type or method. Nullability of type argument doesn't match constraint type.*
-- **CS8634** - *The type cannot be used as type parameter in the generic type or method. Nullability of type argument doesn't match 'class' constraint.*
-- **CS8714** - *The type cannot be used as type parameter in the generic type or method. Nullability of type argument doesn't match 'notnull' constraint.*
 - **CS8608** - *Nullability of reference types in type doesn't match overridden member.*
 - **CS8609** - *Nullability of reference types in return type doesn't match overridden member.*
-- **CS8819** - *Nullability of reference types in return type doesn't match partial method declaration.*
 - **CS8610** - *Nullability of reference types in type parameter doesn't match overridden member.*
 - **CS8611** - *Nullability of reference types in type parameter doesn't match partial method declaration.*
 - **CS8612** - *Nullability of reference types in type doesn't match implicitly implemented member.*
@@ -320,19 +314,26 @@ Many warnings indicate nullability mismatches between signatures for methods, de
 - **CS8615** - *Nullability of reference types in type doesn't match implemented member.*
 - **CS8616** - *Nullability of reference types in return type doesn't match implemented member.*
 - **CS8617** - *Nullability of reference types in type of parameter doesn't match implemented member.*
+- **CS8619** - *Nullability of reference types in value doesn't match target type.*
+- **CS8620** - *Argument cannot be used for parameter due to differences in the nullability of reference types.*
+- **CS8621** - *Nullability of reference types in return type doesn't match the target delegate (possibly because of nullability attributes).*
+- **CS8622** - *Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).*
+- **CS8624** - *Argument cannot be used as an output due to differences in the nullability of reference types.*
+- **CS8631** - *The type cannot be used as type parameter in the generic type or method. Nullability of type argument doesn't match constraint type.*
 - **CS8633** - *Nullability in constraints for type parameter of method doesn't match the constraints for type parameter of interface method. Consider using an explicit interface implementation instead.*
+- **CS8634** - *The type cannot be used as type parameter in the generic type or method. Nullability of type argument doesn't match 'class' constraint.*
 - **CS8643** - *Nullability of reference types in explicit interface specifier doesn't match interface implemented by the type.*
 - **CS8644** - *Type does not implement interface member. Nullability of reference types in interface implemented by the base type doesn't match.*
-- **CS8620** - *Argument cannot be used for parameter due to differences in the nullability of reference types.*
-- **CS8624** - *Argument cannot be used as an output due to differences in the nullability of reference types.*
 - **CS8645** - *Member is already listed in the interface list on type with different nullability of reference types.*
 - **CS8667** - *Partial method declarations have inconsistent nullability in constraints for type parameter.*
+- **CS8714** - *The type cannot be used as type parameter in the generic type or method. Nullability of type argument doesn't match 'notnull' constraint.*
 - **CS8764** - *Nullability of return type doesn't match overridden member (possibly because of nullability attributes).*
 - **CS8765** - *Nullability of type of parameter doesn't match overridden member (possibly because of nullability attributes).*
-- **CS8768** - *Nullability of reference types in return type doesn't match implemented member (possibly because of nullability attributes).*
-- **CS8767** - *Nullability of reference types in type of parameter of doesn't match implicitly implemented member (possibly because of nullability attributes).*
 - **CS8766** - *Nullability of reference types in return type of doesn't match implicitly implemented member (possibly because of nullability attributes).*
+- **CS8767** - *Nullability of reference types in type of parameter of doesn't match implicitly implemented member (possibly because of nullability attributes).*
+- **CS8768** - *Nullability of reference types in return type doesn't match implemented member (possibly because of nullability attributes).*
 - **CS8769** - *Nullability of reference types in type of parameter doesn't match implemented member (possibly because of nullability attributes).*
+- **CS8819** - *Nullability of reference types in return type doesn't match partial method declaration.*
 
 The following code demonstrates *CS8764*:
 
@@ -352,8 +353,8 @@ The preceding sections have discussed how you can use [Attributes for nullable s
 - **CS8763** - *A method marked `[DoesNotReturn]` should not return.*
 - **CS8770** - *Method lacks `[DoesNotReturn]` annotation to match implemented or overridden member.*
 - **CS8774** - *Member must have a non-null value when exiting.*
-- **CS8776** - *Member cannot be used in this attribute.*
 - **CS8775** - *Member must have a non-null value when exiting.*
+- **CS8776** - *Member cannot be used in this attribute.*
 - **CS8777** - *Parameter must have a non-null value when exiting.*
 - **CS8824** - *Parameter must have a non-null value when exiting because parameter is non-null.*
 - **CS8825** - *Return value must be non-null because parameter is non-null.*

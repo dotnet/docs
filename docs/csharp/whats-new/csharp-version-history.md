@@ -77,15 +77,17 @@ C# 10 also marks more of a shift to the yearly cadence for .NET releases. Becaus
 
 C# 9 was released with .NET 5. It's the default language version for any assembly that targets the .NET 5 release. It contains the following new and enhanced features:
 
-- [Records](./csharp-9.md#record-types)
-- [Init only setters](./csharp-9.md#init-only-setters)
-- [Top-level statements](./csharp-9.md#top-level-statements)
-- [Pattern matching enhancements](./csharp-9.md#pattern-matching-enhancements)
-- [Performance and interop](./csharp-9.md#performance-and-interop)
+- [Records](../language-reference/builtin-types/record.md)
+- [Init only setters](../language-reference/keywords/init.md)
+- [Top-level statements](../fundamentals/program-structure/top-level-statements.md)
+- Pattern matching enhancements: [relational patterns](../language-reference/operators/patterns.md#relational-patterns) and [logical patterns](../language-reference/operators/patterns.md#logical-patterns)
+- [Performance and interop](#performance-and-interop)
   - [Native sized integers](~/_csharplang/proposals/csharp-9.0/native-integers.md)
   - [Function pointers](~/_csharplang/proposals/csharp-9.0/function-pointers.md)
   - [Suppress emitting localsinit flag](~/_csharplang/proposals/csharp-9.0/skip-localsinit.md)
-- [Fit and finish features](./csharp-9.md#fit-and-finish-features)
+  - [Module initializers](~/_csharplang/proposals/csharp-9.0/module-initializers.md)
+  - [New features for partial methods](~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md)
+- [Fit and finish features](#fit-and-finish-features)
   - [Target-typed `new` expressions](~/_csharplang/proposals/csharp-9.0/target-typed-new.md)
   - [`static` anonymous functions](~/_csharplang/proposals/csharp-9.0/static-anonymous-functions.md)
   - [Target-typed conditional expressions](~/_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md)
@@ -93,17 +95,42 @@ C# 9 was released with .NET 5. It's the default language version for any assembl
   - [Extension `GetEnumerator` support for `foreach` loops](~/_csharplang/proposals/csharp-9.0/extension-getenumerator.md)
   - [Lambda discard parameters](~/_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md)
   - [Attributes on local functions](~/_csharplang/proposals/csharp-9.0/local-function-attributes.md)
-- [Support for code generators](./csharp-9.md#support-for-code-generators)
-  - [Module initializers](~/_csharplang/proposals/csharp-9.0/module-initializers.md)
-  - [New features for partial methods](~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md)
 
 C# 9 continues three of the themes from previous releases: removing ceremony, separating data from algorithms, and providing more patterns in more places.
 
 [Top level statements](../fundamentals/program-structure/top-level-statements.md) means your main program is simpler to read. There's less need for ceremony: a namespace, a `Program` class, and `static void Main()` are all unnecessary.
 
-The introduction of [`records`](../language-reference/builtin-types/record.md) provides a concise syntax for reference types that follow value semantics for equality. You'll use these types to define data containers that typically define minimal behavior. [Init-only setters](./csharp-9.md#init-only-setters) provide the capability for non-destructive mutation (`with` expressions) in records. C# 9 also adds [covariant return types](~/_csharplang/proposals/csharp-9.0/covariant-returns.md) so that derived records can override virtual methods and return a type derived from the base method's return type.
+The introduction of [`records`](../language-reference/builtin-types/record.md) provides a concise syntax for reference types that follow value semantics for equality. You'll use these types to define data containers that typically define minimal behavior. [Init-only setters](../language-reference/keywords/init.md) provide the capability for non-destructive mutation (`with` expressions) in records. C# 9 also adds [covariant return types](~/_csharplang/proposals/csharp-9.0/covariant-returns.md) so that derived records can override virtual methods and return a type derived from the base method's return type.
 
-The [pattern matching](../fundamentals/functional/pattern-matching.md) capabilities have been expanded in several ways. Numeric types now support *range patterns*. Patterns can be combined using `and`, `or`, and `not` patterns. Parentheses can be added to clarify more complex patterns.
+The [pattern matching](../fundamentals/functional/pattern-matching.md) capabilities have been expanded in several ways. Numeric types now support *range patterns*. Patterns can be combined using `and`, `or`, and `not` patterns. Parentheses can be added to clarify more complex patterns:
+
+C# 9 includes new pattern matching improvements:
+
+- ***Type patterns*** match an object matches a particular type
+- ***Parenthesized patterns*** enforce or emphasize the precedence of pattern combinations
+- ***Conjunctive `and` patterns*** require both patterns to match
+- ***Disjunctive `or` patterns*** require either pattern to match
+- ***Negated `not` patterns*** require that a pattern doesn't match
+- ***Relational patterns*** require the input be less than, greater than, less than or equal, or greater than or equal to a given constant.
+
+These patterns enrich the syntax for patterns. Consider these examples:
+
+:::code language="csharp" source="snippets/whats-new-csharp9/PatternUtilities.cs" ID="IsLetterPattern":::
+
+With optional parentheses to make it clear that `and` has higher precedence than `or`:
+
+:::code language="csharp" source="snippets/whats-new-csharp9/PatternUtilities.cs" ID="IsLetterOrSeparatorPattern":::
+
+One of the most common uses is a new syntax for a null check:
+
+```csharp
+if (e is not null)
+{
+    // ...
+}
+```
+
+Any of these patterns can be used in any context where patterns are allowed: `is` pattern expressions, `switch` expressions, nested patterns, and the pattern of a `switch` statement's `case` label.
 
 Another set of features supports high-performance computing in C#:
 
@@ -111,10 +138,14 @@ Another set of features supports high-performance computing in C#:
 - [Function pointers](../language-reference/unsafe-code.md#function-pointers) provide delegate-like functionality while avoiding the allocations necessary to create a delegate object.
 - The `localsinit` instruction can be omitted to save instructions.
 
+### Performance and interop
+
 Another set of improvements supports scenarios where *code generators* add functionality:
 
 - [Module initializers](../language-reference/attributes/general.md#moduleinitializer-attribute) are methods that the runtime calls when an assembly loads.
 - [Partial methods](../language-reference/keywords/partial-method.md) support new accessibly modifiers and non-void return types. In those cases, an implementation must be provided.
+
+### Fit and finish features
 
 C# 9 adds many other small features that improve developer productivity, both writing and reading code:
 
@@ -140,7 +171,7 @@ C# 8.0 is the first major C# release that specifically targets .NET Core. Some f
   - Property patterns
   - Tuple patterns
   - Positional patterns
-- [Using declarations](../language-reference/keywords/using-directive.md)
+- [Using declarations](../language-reference/statements/using.md)
 - [Static local functions](../programming-guide/classes-and-structs/local-functions.md)
 - [Disposable ref structs](../language-reference/builtin-types/ref-struct.md)
 - [Nullable reference types](../language-reference/builtin-types/nullable-reference-types.md)
@@ -235,14 +266,14 @@ C# version 7.0 was released with Visual Studio 2017. This version has some evolu
 - [Pattern matching](../fundamentals/functional/pattern-matching.md)
 - [Local functions](../programming-guide/classes-and-structs/local-functions.md)
 - [Expanded expression bodied members](../programming-guide/statements-expressions-operators/expression-bodied-members.md)
-- [Ref locals](../language-reference/statements/declarations.md#ref-locals)
+- [Ref locals](../language-reference/statements/declarations.md#reference-variables)
 - [Ref returns](../language-reference/statements/jump-statements.md#ref-returns)
 
 Other features included:
 
 - [Discards](../fundamentals/functional/discards.md)
 - Binary Literals and Digit Separators
-- [Throw expressions](../language-reference/keywords/throw.md#the-throw-expression)
+- [Throw expressions](../language-reference/statements/exception-handling-statements.md#the-throw-expression)
 
 All of these features offer new capabilities for developers and the opportunity to write cleaner code than ever. A highlight is condensing the declaration of variables to use with the `out` keyword and by allowing multiple return values via tuple. .NET Core now targets any operating system and has its eyes firmly on the cloud and on portability. These new capabilities certainly occupy the language designers' thoughts and time, in addition to coming up with new features.
 
@@ -311,7 +342,7 @@ C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full
 - [Anonymous types](../fundamentals/types/anonymous-types.md)
 - [Query expressions](../linq/query-expression-basics.md)
 - [Lambda expressions](../language-reference/operators/lambda-expressions.md)
-- [Expression trees](../expression-trees.md)
+- [Expression trees](/dotnet/csharp/advanced-topics/expression-trees)
 - [Extension methods](../programming-guide/classes-and-structs/extension-methods.md)
 - [Implicitly typed local variables](../language-reference/statements/declarations.md#implicitly-typed-local-variables)
 - [Partial methods](../language-reference/keywords/partial-method.md)
@@ -375,6 +406,6 @@ The major features of C# 1.0 included:
 - [Delegates](../delegates-overview.md)
 - [Operators and expressions](../language-reference/operators/index.md)
 - [Statements](../programming-guide/statements-expressions-operators/statements.md)
-- [Attributes](../programming-guide/concepts/attributes/index.md)
+- [Attributes](/dotnet/csharp/advanced-topics/reflection-and-attributes)
 
 _Article_ [_originally published on the NDepend blog_](https://blog.ndepend.com/c-versions-look-language-history/)_, courtesy of Erik Dietrich and Patrick Smacchia._

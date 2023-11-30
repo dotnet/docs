@@ -187,41 +187,6 @@
           "operator": "and",
           "operands": [
             {
-              "name": "prMatchesPattern",
-              "parameters": {
-                "matchRegex": "docs\\/[A-z\\/\\d\\-]*\\/[A-z\\-\\d]*\\.md"
-              }
-            }
-          ]
-        },
-        "eventType": "pull_request",
-        "eventNames": [
-          "pull_request",
-          "issues",
-          "project_card"
-        ],
-        "taskName": "Insert preview link",
-        "actions": [
-          {
-            "name": "addReply",
-            "parameters": {
-              "comment": "[Internal preview link](https://review.docs.microsoft.com/dotnet/fundamentals/?branch=pr-en-us-${number})"
-            }
-          }
-        ]
-      },
-      "disabled": true
-    },
-    {
-      "taskType": "trigger",
-      "capabilityId": "IssueResponder",
-      "subCapability": "PullRequestResponder",
-      "version": "1.0",
-      "config": {
-        "conditions": {
-          "operator": "and",
-          "operands": [
-            {
               "name": "isActivitySender",
               "parameters": {
                 "user": "azure-sdk"

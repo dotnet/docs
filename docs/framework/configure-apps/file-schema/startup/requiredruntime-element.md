@@ -65,9 +65,6 @@ None.
 
  The `version` attribute string must match the installation folder name for the specified version of the .NET Framework. This string is not interpreted. If the runtime startup code does not find a matching folder, the runtime is not loaded; the startup code shows an error message and quits.
 
-> [!NOTE]
-> The startup code for an application that is hosted in Microsoft Internet Explorer ignores the `<requiredRuntime>` element.
-
 ## Example
 
 The following example shows how to specify the runtime version in a configuration file.

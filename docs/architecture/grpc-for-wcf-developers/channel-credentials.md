@@ -166,6 +166,7 @@ var httpClient = new HttpClient(handler);
 var callCredentials = CallCredentials.FromInterceptor(((context, metadata) =>
     {
         metadata.Add("Authorization", $"Bearer {_token}");
+        return Task.CompletedTask;
     }));
 
 var channelCredentials = ChannelCredentials.Create(new SslCredentials(), callCredentials);

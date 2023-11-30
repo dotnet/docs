@@ -2,15 +2,15 @@ items:
 - name: Profiling
   href: index.md
   items:
-  - name: Profiling Overview
+  - name: Overview
     href: profiling-overview.md
-  - name: Setting Up a Profiling Environment
+  - name: Set up a profiling environment
     href: setting-up-a-profiling-environment.md
-  - name: CLR Profilers and Windows Store Apps
+  - name: CLR profilers and Windows Store apps
     href: clr-profilers-and-windows-store-apps.md
   - name: CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT
     href: corprof-e-unsupported-call-sequence-hresult.md
-  - name: Profiling Interfaces
+  - name: Profiling interfaces
     href: profiling-interfaces.md
     items:
     - name: ICLRProfiling Interface
@@ -243,13 +243,6 @@ items:
       items:
       - name: DynamicMethodUnloaded Method
         href: icorprofilercallback9-dynamicmethodunloaded-method.md
-    - name: ICorProfilerCallback10 Interface
-      href: icorprofilercallback10-interface.md
-      items:
-      - name: EventPipeEventDelivered Method
-        href: icorprofilercallback10-eventpipeeventdelivered-method.md
-      - name: EventPipeProviderCreated Method
-        href: icorprofilercallback10-eventpipeprovidercreated-method.md
     - name: ICorProfilerFunctionEnum Interface
       href: icorprofilerfunctionenum-interface.md
       items:
@@ -461,63 +454,6 @@ items:
         href: icorprofilerinfo8-getfunctionfromip3-method.md
       - name: IsFunctionDynamic Method
         href: icorprofilerinfo8-isfunctiondynamic-method.md
-    - name: ICorProfilerInfo9 Interface
-      href: icorprofilerinfo9-interface.md
-      items:
-      - name: GetCodeInfo4 Method
-        href: icorprofilerinfo9-getcodeinfo4-method.md
-      - name: GetILToNativeMapping3 Method
-        href: icorprofilerinfo9-getiltonativemapping3-method.md
-      - name: GetNativeCodeStartAddresses Method
-        href: icorprofilerinfo9-getnativecodestartaddresses-method.md
-    - name: ICorProfilerInfo10 Interface
-      href: icorprofilerinfo10-interface.md
-      items:
-      - name: EnumerateObjectReferences Method
-        href: icorprofilerinfo10-enumerateobjectreferences-method.md
-      - name: IsFrozenObject Method
-        href: icorprofilerinfo10-isfrozenobject-method.md
-      - name: GetLOHObjectSizeThreshold Method
-        href: icorprofilerinfo10-getlohobjectsizethreshold-method.md
-      - name: RequestReJITWithInliners Method
-        href: icorprofilerinfo10-requestrejitwithinliners-method.md
-      - name: ResumeRuntime Method
-        href: icorprofilerinfo10-resumeruntime-method.md
-      - name: SuspendRuntime Method
-        href: icorprofilerinfo10-suspendruntime-method.md
-    - name: ICorProfilerInfo11 Interface
-      href: icorprofilerinfo11-interface.md
-      items:
-      - name: GetEnvironmentVariable Method
-        href: icorprofilerinfo11-getenvironmentvariable-method.md
-      - name: SetEnvironmentVariable Method
-        href: icorprofilerinfo11-setenvironmentvariable-method.md
-    - name: ICorProfilerInfo12 Interface
-      href: icorprofilerinfo12-interface.md
-      items:
-      - name: EventPipeAddProviderToSession Method
-        href: icorprofilerinfo12-eventpipeaddprovidertosession-method.md
-      - name: EventPipeCreateProvider Method
-        href: icorprofilerinfo12-eventpipecreateprovider-method.md
-      - name: EventPipeDefineEvent Method
-        href: icorprofilerinfo12-eventpipedefineevent-method.md
-      - name: EventPipeGetProviderInfo Method
-        href: icorprofilerinfo12-eventpipegetproviderinfo-method.md
-      - name: EventPipeStartSession Method
-        href: icorprofilerinfo12-eventpipestartsession-method.md
-      - name: EventPipeStopSession Method
-        href: icorprofilerinfo12-eventpipestopsession-method.md
-      - name: EventPipeWriteEvent Method
-        href: icorprofilerinfo12-eventpipewriteevent-method.md
-    - name: ICorProfilerInfo13 Interface
-      href: icorprofilerinfo13-interface.md
-      items:
-      - name: CreateHandle Method
-        href: icorprofilerinfo13-createhandle-method.md
-      - name: DestroyHandle Method
-        href: icorprofilerinfo13-destroyhandle-method.md
-      - name: GetObjectIDFromHandle Method
-        href: icorprofilerinfo13-getobjectidfromhandle-method.md
     - name: ICorProfilerModuleEnum Interface
       href: icorprofilermoduleenum-interface.md
       items:
@@ -562,7 +498,7 @@ items:
       items:
       - name: Alloc Method
         href: imethodmalloc-alloc-method.md
-  - name: Profiling Global Static Functions
+  - name: Profiling global static functions
     href: profiling-global-static-functions.md
     items:
     - name: FunctionEnter Function
@@ -595,7 +531,7 @@ items:
       href: functiontailcall3withinfo-function.md
     - name: StackSnapshotCallback Function
       href: stacksnapshotcallback-function.md
-  - name: Profiling Enumerations
+  - name: Profiling enumerations
     href: profiling-enumerations.md
     items:
     - name: COR_PRF_CLAUSE_TYPE Enumeration
@@ -622,8 +558,6 @@ items:
       href: cor-prf-module-flags-enumeration.md
     - name: COR_PRF_MONITOR Enumeration
       href: cor-prf-monitor-enumeration.md
-    - name: COR_PRF_REJIT_FLAGS Enumeration
-      href: cor-prf-rejit-flags-enumeration.md
     - name: COR_PRF_RUNTIME_TYPE Enumeration
       href: cor-prf-runtime-type-enumeration.md
     - name: COR_PRF_SNAPSHOT_INFO Enumeration
@@ -634,25 +568,13 @@ items:
       href: cor-prf-suspend-reason-enumeration.md
     - name: COR_PRF_TRANSITION_REASON Enumeration
       href: cor-prf-transition-reason-enumeration.md
-    - name: COR_PRF_EVENTPIPE_LEVEL Enumeration
-      href: cor-prf-eventpipe-level-enumeration.md
-    - name: COR_PRF_EVENTPIPE_PARAM_TYPE Enumeration
-      href: cor-prf-eventpipe-param-type-enumeration.md
-    - name: COR_PRF_HANDLE_TYPE Enumeration
-      href: cor-prf-handle-type-enumeration.md
-  - name: Profiling Structures
+  - name: Profiling structures
     href: profiling-structures.md
     items:
     - name: COR_PRF_ASSEMBLY_REFERENCE_INFO Structure
       href: cor-prf-assembly-reference-info-structure.md
     - name: COR_PRF_CODE_INFO Structure
       href: cor-prf-code-info-structure.md
-    - name: COR_PRF_EVENT_DATA Structure
-      href: cor-prf-event-data-structure.md
-    - name: COR_PRF_EVENTPIPE_PARAM_DESC Structure
-      href: cor-prf-eventpipe-param-desc-structure.md
-    - name: COR_PRF_EVENTPIPE_PROVIDER_CONFIG Structure
-      href: cor-prf-eventpipe-provider-config-structure.md
     - name: COR_PRF_EX_CLAUSE_INFO Structure
       href: cor-prf-ex-clause-info-structure.md
     - name: COR_PRF_FUNCTION Structure
@@ -663,3 +585,5 @@ items:
       href: cor-prf-function-argument-range-structure.md
     - name: COR_PRF_GC_GENERATION_RANGE Structure
       href: cor-prf-gc-generation-range-structure.md
+  - name: .NET Core profiling
+    href: ../../../core/unmanaged-api/profiling/index.md

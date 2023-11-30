@@ -13,7 +13,7 @@ The most fundamental question teams must answer when it comes to porting their a
 
 ## Is migration to .NET Core appropriate?
 
-Let's start with some of the reasons why you might want to move to .NET Core/.NET 6. There are quite a few, so don't consider this list exhaustive.
+Let's start with some of the reasons why you might want to move to .NET Core/.NET 7. There are quite a few, so don't consider this list exhaustive.
 
 ### Cross-platform support
 
@@ -37,7 +37,7 @@ ASP.NET Core is modular, using NuGet packages as a first-class part of the frame
 
 ### Modern
 
-Staying on a modern, actively developed technology stack has a host of advantages. New features and C# language features will only be added to .NET Core. The .NET Framework has had its last release with version 4.8, and versions of C# beyond 8 won't target .NET Framework. While ASP.NET MVC will remain supported by Microsoft for many years, the best and brightest .NET software developers are likely looking to use the more modern .NET Core framework, with all of the advantages it offers (only some of which are summarized above). Finding developers with the skills to maintain an ASP.NET MVC app will start to become a challenge at some point, as will finding online training and troubleshooting assistance. There probably aren't that many new blog posts being written about ASP.NET MVC 5, while there are plenty being written for .NET 6, for example.
+Staying on a modern, actively developed technology stack has a host of advantages. New features and C# language features will only be added to .NET Core. The .NET Framework has had its last release with version 4.8, and versions of C# beyond 8 won't target .NET Framework. While ASP.NET MVC will remain supported by Microsoft for many years, the best and brightest .NET software developers are likely looking to use the more modern .NET Core framework, with all of the advantages it offers (only some of which are summarized above). Finding developers with the skills to maintain an ASP.NET MVC app will start to become a challenge at some point, as will finding online training and troubleshooting assistance. There probably aren't that many new blog posts being written about ASP.NET MVC 5, while there are plenty being written for .NET 7, for example.
 
 There are many compelling reasons to consider migrating to .NET Core, which presumably is why you're reading this book! But let's consider some disadvantages and reasons why it may make more sense to remain on the .NET Framework.
 

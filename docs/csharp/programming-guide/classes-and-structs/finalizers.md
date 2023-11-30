@@ -68,7 +68,7 @@ For more information about cleaning up resources, see the following articles:
 - [Cleaning Up Unmanaged Resources](../../../standard/garbage-collection/unmanaged.md)
 - [Implementing a Dispose Method](../../../standard/garbage-collection/implementing-dispose.md)
 - [Implementing a DisposeAsync Method](../../../standard/garbage-collection/implementing-disposeasync.md)
-- [using Statement](../../language-reference/keywords/using-statement.md)
+- [using statement](../../language-reference/statements/using.md)
 
 ## Example
 
@@ -81,7 +81,7 @@ The following example creates three classes that make a chain of inheritance. Th
   
 ## C# language specification  
 
-For more information, see the [Finalizers](~/_csharpstandard/standard/classes.md#1413-finalizers) section of the [C# Language Specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Finalizers](~/_csharpstandard/standard/classes.md#1513-finalizers) section of the [C# Language Specification](~/_csharpstandard/standard/README.md).
   
 ## See also
 

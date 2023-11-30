@@ -214,7 +214,7 @@
                 Console.WriteLine("RemoveAt is not implemented in ReadOnlyCollection<T>");
             }
 
-            //add name then interate private list
+            //add name then iterate private list
             List<string> badList = ro.BadProp;
             badList.Add("Ha ha");
 

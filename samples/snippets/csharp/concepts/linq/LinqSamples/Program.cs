@@ -1,7 +1,7 @@
 ﻿using LinqSamples;
-using l = LinqSamples;
+using LS = LinqSamples;
 
-l.Index.Intro();
+LS.Index.Intro();
 
 Basics.Basics1();
 Basics.Basics2();
@@ -54,9 +54,13 @@ RuntimeFiltering.RuntimeFiltering1();
 RuntimeFiltering.RuntimeFiltering2();
 
 InnerJoins.Basic();
+InnerJoins.BasicMethodSyntax();
 InnerJoins.CompositeKey();
+InnerJoins.CompositeKeyMethodSyntax();
 InnerJoins.MultipleJoin();
+InnerJoins.MultipleJoinMethodSyntax();
 InnerJoins.InnerGroupJoin();
+InnerJoins.InnerGroupJoinMethodSyntax();
 
 GroupJoins.GroupJoin1();
 GroupJoins.GroupJoinXml();

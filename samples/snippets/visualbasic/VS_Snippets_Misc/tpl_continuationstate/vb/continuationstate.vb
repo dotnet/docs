@@ -1,14 +1,14 @@
-﻿' <snippet1> 
+﻿' <snippet1>
 Imports System.Collections.Generic
 Imports System.Threading
 Imports System.Threading.Tasks
 
 ' Demonstrates how to associate state with task continuations.
 Public Module ContinuationState
-    ' Simluates a lengthy operation and returns the time at which
+    ' Simulates a lengthy operation and returns the time at which
     ' the operation completed.
     Public Function DoWork() As Date
-        ' Simulate work by suspending the current thread 
+        ' Simulate work by suspending the current thread
         ' for two seconds.
         Thread.Sleep(2000)
 

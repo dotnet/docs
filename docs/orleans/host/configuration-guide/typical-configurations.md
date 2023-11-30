@@ -1,7 +1,7 @@
 ---
 title: Typical configurations
 description: Learn about typical configurations in .NET Orleans.
-ms.date: 03/16/2022
+ms.date: 08/18/2023
 ---
 
 # Typical configurations
@@ -42,8 +42,9 @@ var silo = new HostBuilder()
             options.ClusterId = "Cluster42";
             options.ServiceId = "MyAwesomeService";
         })
-        .UseAzureStorageClustering(options => options.ConnectionString = connectionString)
-        .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
+        .UseAzureStorageClustering(
+            options => options.ConfigureTableServiceClient(connectionString))
+        .ConfigureEndpoints(siloPort: 11_111, gatewayPort: 30_000)
         .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Warning).AddConsole())
     })
     .Build();
@@ -59,7 +60,8 @@ var client = new ClientBuilder()
         options.ClusterId = "Cluster42";
         options.ServiceId = "MyAwesomeService";
     })
-    .UseAzureStorageClustering(options => options.ConnectionString = connectionString)
+    .UseAzureStorageClustering(
+        options => options.ConfigureTableServiceClient(connectionString))
     .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Warning).AddConsole())
     .Build();
 ```
@@ -117,18 +119,19 @@ For testing on a cluster of dedicated servers when reliability isn't a concern y
 On the silos:
 
 ```csharp
-var primarySiloEndpoint = new IPEndpoint(PRIMARY_SILO_IP_ADDRESS, 11111);
+var primarySiloEndpoint = new IPEndpoint(PRIMARY_SILO_IP_ADDRESS, 11_111);
 var silo = new HostBuilder()
     .UseOrleans(builder =>
     {
-        .UseDevelopmentClustering(primarySiloEndpoint)
-        .Configure<ClusterOptions>(options =>
-        {
-            options.ClusterId = "Cluster42";
-            options.ServiceId = "MyAwesomeService";
-        })
-        .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
-        .ConfigureLogging(logging => logging.AddConsole())
+        builder
+            .UseDevelopmentClustering(primarySiloEndpoint)
+            .Configure<ClusterOptions>(options =>
+            {
+                options.ClusterId = "Cluster42";
+                options.ServiceId = "MyAwesomeService";
+            })
+            .ConfigureEndpoints(siloPort: 11_111, gatewayPort: 30_000)
+            .ConfigureLogging(logging => logging.AddConsole())
     })
     .Build();
 ```
@@ -138,10 +141,10 @@ On the clients:
 ```csharp
 var gateways = new IPEndPoint[]
 {
-    new IPEndPoint(PRIMARY_SILO_IP_ADDRESS, 30000),
-    new IPEndPoint(OTHER_SILO__IP_ADDRESS_1, 30000),
+    new IPEndPoint(PRIMARY_SILO_IP_ADDRESS, 30_000),
+    new IPEndPoint(OTHER_SILO__IP_ADDRESS_1, 30_000),
     // ...
-    new IPEndPoint(OTHER_SILO__IP_ADDRESS_N, 30000),
+    new IPEndPoint(OTHER_SILO__IP_ADDRESS_N, 30_000),
 };
 var client = new ClientBuilder()
     .UseStaticClustering(gateways)

@@ -32,7 +32,7 @@ namespace Microsoft.ServiceModel.Samples
     // </Snippet3>
     // The callback interface is used to send messages from service back to client.
     // The Equals operation will return the current result after each operation.
-    // The Equation opertion will return the complete equation after Clear() is called.
+    // The Equation operation will return the complete equation after Clear() is called.
     // <Snippet4>
     public interface ICalculatorDuplexCallback
     {

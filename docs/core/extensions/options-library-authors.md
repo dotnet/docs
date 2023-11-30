@@ -1,9 +1,9 @@
 ---
 title: Options pattern guidance for .NET library authors
 author: IEvangelist
-description: Learn how to expose the options pattern as a library author in .NET.
+description: Learn how to expose the options pattern as a library author in .NET. Follow the guidance to ensure your library is correctly exposed to consumers.
 ms.author: dapine
-ms.date: 01/23/2023
+ms.date: 06/23/2023
 ---
 
 # Options pattern guidance for .NET library authors
@@ -59,9 +59,9 @@ In the preceding code, the `AddMyLibraryService`:
 
 Consumers in this pattern provide the scoped `IConfiguration` instance of the named section:
 
-:::code language="csharp" source="snippets/configuration/options-configparam/Program.cs" highlight="7-8":::
+:::code language="csharp" source="snippets/configuration/options-configparam/Program.cs" highlight="6-7":::
 
-The call to `.AddMyLibraryService` is made in the <xref:Microsoft.Extensions.Hosting.IHostBuilder.ConfigureServices%2A> method. The same is true when using a `Startup` class, the addition of services being registered occurs in `ConfigureServices`.
+The call to `.AddMyLibraryService` is made on the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> type.
 
 As the library author, specifying default values is up to you.
 
@@ -115,7 +115,7 @@ In the preceding code, the `AddMyLibraryService`:
 
 Consumers in this pattern provide a lambda expression (or a delegate that satisfies the `Action<LibraryOptions>` parameter):
 
-:::code language="csharp" source="snippets/configuration/options-action/Program.cs" highlight="7-11":::
+:::code language="csharp" source="snippets/configuration/options-action/Program.cs" highlight="6-10":::
 
 ## Options instance parameter
 
@@ -131,11 +131,14 @@ In the preceding code, the `AddMyLibraryService`:
 
 Consumers in this pattern provide an instance of the `LibraryOptions` class, defining desired property values inline:
 
-:::code language="csharp" source="snippets/configuration/options-object/Program.cs" highlight="7-11":::
+:::code language="csharp" source="snippets/configuration/options-object/Program.cs" highlight="6-10":::
 
 ## Post configuration
 
-After all configuration option values are bound or specified, post configuration functionality is available. Exposing the same [`Action<TOptions>` parameter](#actiontoptions-parameter) detailed earlier, you could choose to call <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure%2A>. Post configure runs after all `.Configure` calls.
+After all configuration option values are bound or specified, post configuration functionality is available. Exposing the same [`Action<TOptions>` parameter](#actiontoptions-parameter) detailed earlier, you could choose to call <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure%2A>. Post configure runs after all `.Configure` calls. There are few reasons why you'd want to consider using `PostConfigure`:
+
+- **Execution order**: You can override any configuration values that were set in the `.Configure` calls.
+- **Validation**: You can validate the default values have been set after all other configurations have been applied.
 
 :::code language="csharp" source="snippets/configuration/options-postconfig/ServiceCollectionExtensions.cs" highlight="9,11":::
 
@@ -147,7 +150,7 @@ In the preceding code, the `AddMyLibraryService`:
 
 Consumers in this pattern provide a lambda expression (or a delegate that satisfies the `Action<LibraryOptions>` parameter), just as they would with the [`Action<TOptions>` parameter](#actiontoptions-parameter) in a non-post configuration scenario:
 
-:::code language="csharp" source="snippets/configuration/options-postconfig/Program.cs" highlight="7-11":::
+:::code language="csharp" source="snippets/configuration/options-postconfig/Program.cs" highlight="6-10":::
 
 ## See also
 

@@ -1,13 +1,13 @@
 type Interface1 =
-    abstract member Method1 : int -> int
+    abstract member Method1: int -> int
 
 type Interface2 =
-    abstract member Method2 : int -> int
+    abstract member Method2: int -> int
 
 type Interface3 =
     inherit Interface1
     inherit Interface2
-    abstract member Method3 : int -> int
+    abstract member Method3: int -> int
 
 type MyClass() =
     interface Interface3 with

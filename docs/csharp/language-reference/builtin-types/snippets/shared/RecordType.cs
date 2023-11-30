@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Text;
+﻿using System.Text;
 using System.Text.Json.Serialization;
 
 namespace builtin_types
@@ -49,9 +46,9 @@ namespace builtin_types
         // <ImmutableRecordStruct>
         public record struct Point
         {
-            public double X {  get; init; }
-            public double Y {  get; init; }
-            public double Z {  get; init; }
+            public double X { get; init; }
+            public double Y { get; init; }
+            public double Z { get; init; }
         }
         // </ImmutableRecordStruct>
     }
@@ -86,7 +83,7 @@ namespace builtin_types
         // <MixedSyntax>
         public record Person(string FirstName, string LastName)
         {
-            public string[] PhoneNumbers { get; init; } = Array.Empty<string>();
+            public string[] PhoneNumbers { get; init; } = [];
         };
         // </MixedSyntax>
     }
@@ -105,8 +102,8 @@ namespace builtin_types
         /// map to the JSON elements "firstName" and "lastName" when
         /// serialized or deserialized.
         /// </remarks>
-        public record Person([property: JsonPropertyName("firstName")]string FirstName, 
-            [property: JsonPropertyName("lastName")]string LastName);
+        public record Person([property: JsonPropertyName("firstName")] string FirstName, 
+            [property: JsonPropertyName("lastName")] string LastName);
         // </PositionalAttributes>
 
     }

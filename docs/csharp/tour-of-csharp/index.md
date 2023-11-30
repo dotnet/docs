@@ -24,7 +24,7 @@ When the C# program is executed, the assembly is loaded into the CLR. The CLR pe
 
 Language interoperability is a key feature of .NET. IL code produced by the C# compiler conforms to the Common Type Specification (CTS). IL code generated from C# can interact with code that was generated from the .NET versions of F#, Visual Basic, C++. There are more than 20 other CTS-compliant languages. A single assembly may contain multiple modules written in different .NET languages. The types can reference each other as if they were written in the same language.
 
-In addition to the run time services, .NET also includes extensive libraries. These libraries support many different workloads. They're organized into namespaces that provide a wide variety of useful functionality. The libraries include everything from file input and output to string manipulation to XML parsing, to web application frameworks to Windows Forms controls. The typical C# application uses the .NET class library extensively to handle common "plumbing" chores.
+In addition to the runtime services, .NET also includes extensive libraries. These libraries support many different workloads. They're organized into namespaces that provide a wide variety of useful functionality. The libraries include everything from file input and output to string manipulation to XML parsing, to web application frameworks to Windows Forms controls. The typical C# application uses the .NET class library extensively to handle common "plumbing" chores.
 
 For more information about .NET, see [Overview of .NET](../../core/introduction.md).
 
@@ -39,6 +39,8 @@ The "Hello, World" program starts with a `using` directive that references the `
 The `Hello` class declared by the "Hello, World" program has a single member, the method named `Main`. The `Main` method is declared with the `static` modifier. While instance methods can reference a particular enclosing object instance using the keyword `this`, static methods operate without reference to a particular object. By convention, a static method named `Main` serves as the entry point of a C# program.
 
 The line starting with `//` is a *single line comment*. C# single line comments start with  `//` continue to the end of the current line. C# also supports *multi-line comments*. Multi-line comments start with `/*` and end with `*/`. The output of the program is produced by the `WriteLine` method of the `Console` class in the `System` namespace. This class is provided by the standard class libraries, which, by default, are automatically referenced by the compiler.
+
+You use the [.NET SDK](https://dotnet.microsoft.com/download) to build your own "Hello, World" program. Once you install the SDK, you run `dotnet new console` to create a basic "Hello, World" program that you can modify. For more information, see the [Hello, World tutorial](../../core/get-started.md) in the .NET Get started section.
 
 ## Types and variables
 
@@ -75,7 +77,7 @@ The following outline provides an overview of C#'s type system.
     - User-defined types of the form `class C {...}`
   - [Interface types](../language-reference/keywords/interface.md)
     - User-defined types of the form `interface I {...}`
-  - [Array types](../programming-guide/arrays/index.md)
+  - [Array types](../language-reference/builtin-types/arrays.md)
     - Single-dimensional, multi-dimensional, and jagged. For example: `int[]`, `int[,]`, and `int[][]`
   - [Delegate types](../language-reference/builtin-types/reference-types.md#the-delegate-type)
     - User-defined types of the form `delegate int D(...)`
@@ -122,7 +124,7 @@ There are several kinds of *variables* in C#, including fields, array elements, 
 
 The key organizational concepts in C# are [***programs***](../fundamentals/program-structure/index.md), [***namespaces***](../fundamentals/types/namespaces.md), [***types***](../fundamentals/types/index.md), [***members***](../programming-guide/classes-and-structs/members.md), and [***assemblies***](../../standard/assembly/index.md). Programs declare types, which contain members and can be organized into namespaces. Classes, structs, and interfaces are examples of types. Fields, methods, properties, and events are examples of members. When C# programs are compiled, they're physically packaged into assemblies. Assemblies typically have the file extension `.exe` or `.dll`, depending on whether they implement ***applications*** or ***libraries***, respectively.
 
-As a small example, consider an assembly that contains the following code:
+As a small example, consider the below C# code:
 
 :::code language="csharp" source="./snippets/shared/AcmeStack.cs":::
 

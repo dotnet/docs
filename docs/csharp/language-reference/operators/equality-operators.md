@@ -49,7 +49,7 @@ As the example shows, user-defined reference types support the `==` operator by 
 
 ### Record types equality
 
-Available in C# 9.0 and later, [record types](../builtin-types/record.md) support the `==` and `!=` operators that by default provide value equality semantics. That is, two record operands are equal when both of them are `null` or corresponding values of all fields and auto-implemented properties are equal.
+[Record types](../builtin-types/record.md) support the `==` and `!=` operators that by default provide value equality semantics. That is, two record operands are equal when both of them are `null` or corresponding values of all fields and auto-implemented properties are equal.
 
 :::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="RecordTypesEquality":::
 
@@ -69,7 +69,7 @@ Two [delegate](../../programming-guide/delegates/index.md) operands of the same 
 
 [!code-csharp-interactive[delegate equality](snippets/shared/EqualityOperators.cs#DelegateEquality)]
 
-For more information, see the [Delegate equality operators](~/_csharpstandard/standard/expressions.md#11119-delegate-equality-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Delegate equality operators](~/_csharpstandard/standard/expressions.md#12129-delegate-equality-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 Delegates that are produced from evaluation of semantically identical [lambda expressions](lambda-expressions.md) aren't equal, as the following example shows:
 
@@ -95,7 +95,7 @@ public virtual bool Equals(T? other);
 
 ## C# language specification
 
-For more information, see the [Relational and type-testing operators](~/_csharpstandard/standard/expressions.md#1111-relational-and-type-testing-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Relational and type-testing operators](~/_csharpstandard/standard/expressions.md#1212-relational-and-type-testing-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For more information about equality of record types, see the [Equality members](~/_csharplang/proposals/csharp-9.0/records.md#equality-members) section of the [records feature proposal note](~/_csharplang/proposals/csharp-9.0/records.md).
 

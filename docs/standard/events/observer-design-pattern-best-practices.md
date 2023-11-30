@@ -21,7 +21,7 @@ In .NET, the observer design pattern is implemented as a set of interfaces. The 
 
  Because of the loose coupling between a data provider and an observer, exceptions in the observer design pattern are intended to be informational. This affects how providers and observers handle exceptions in the observer design pattern.  
   
-### The Provider -- Calling the OnError Method  
+### The Provider &mdash; Calling the OnError Method  
 
  The <xref:System.IObserver%601.OnError%2A> method is intended as an informational message to observers, much like the <xref:System.IObserver%601.OnNext%2A?displayProperty=nameWithType> method. However, the <xref:System.IObserver%601.OnNext%2A> method is designed to provide an observer with current or updated data, whereas the <xref:System.IObserver%601.OnError%2A> method is designed to indicate that the provider is unable to provide valid data.  
   
@@ -35,7 +35,7 @@ In .NET, the observer design pattern is implemented as a set of interfaces. The 
   
  Once the provider calls the <xref:System.IObserver%601.OnError%2A> or <xref:System.IObserver%601.OnCompleted%2A?displayProperty=nameWithType> method, there should be no further notifications, and the provider can unsubscribe its observers. However, the observers can also unsubscribe themselves at any time, including both before and after they receive an <xref:System.IObserver%601.OnError%2A> or <xref:System.IObserver%601.OnCompleted%2A?displayProperty=nameWithType> notification. The observer design pattern does not dictate whether the provider or the observer is responsible for unsubscribing; therefore, there is a possibility that both may attempt to unsubscribe. Typically, when observers unsubscribe, they are removed from a subscribers collection. In a single-threaded application, the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation should ensure that an object reference is valid and that the object is a member of the subscribers collection before attempting to remove it. In a multithreaded application, a thread-safe collection object, such as a <xref:System.Collections.Concurrent.BlockingCollection%601?displayProperty=nameWithType> object, should be used.  
   
-### The Observer -- Implementing the OnError Method  
+### The Observer &mdash; Implementing the OnError Method  
 
  When an observer receives an error notification from a provider, the observer should treat the exception as informational and should not be required to take any particular action.  
   

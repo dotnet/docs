@@ -38,7 +38,7 @@ namespace cs_cascadeworkaround
             // Determine from Detail collection whether parent exists.
             if (ordDetailQuery.Any())
             {
-                Console.WriteLine("The parent is presesnt in the Orders collection.");
+                Console.WriteLine("The parent is present in the Orders collection.");
                 // Fetch Order.
                 try
                 {

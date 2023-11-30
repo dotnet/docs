@@ -3,12 +3,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(static services =>
-    {
-        services.AddMyLibraryService("Support");
-    })
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Services.AddMyLibraryService("Support");
+
+using IHost host = builder.Build();
 
 IOptionsMonitor<SupportOptions> options = host.Services
         .GetRequiredService<IOptionsMonitor<SupportOptions>>();

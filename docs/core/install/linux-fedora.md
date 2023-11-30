@@ -3,7 +3,7 @@ title: Install .NET on Fedora
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Fedora.
 author: adegeo
 ms.author: adegeo
-ms.date: 12/21/2022
+ms.date: 11/14/2023
 ---
 
 # Install the .NET SDK or the .NET Runtime on Fedora
@@ -14,7 +14,6 @@ ms.date: 12/21/2022
 
 For more information on installing .NET without a package manager, see one of the following articles:
 
-- [Install the .NET SDK or the .NET Runtime with Snap.](linux-snap.md)
 - [Install the .NET SDK or the .NET Runtime with a script.](linux-scripted-manual.md#scripted-install)
 - [Install the .NET SDK or the .NET Runtime manually.](linux-scripted-manual.md#manual-install)
 
@@ -24,10 +23,15 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Fedora | .NET      |
 |--------|-----------|
-| 37     | 7, 6      |
-| 36     | 7, 6      |
+| 39     | 8, 7, 6   |
+| 38     | 8, 7, 6   |
+| 37     | 8, 7, 6   |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
+
+## Install .NET 8
+
+[!INCLUDE [linux-dnf-install-80](includes/linux-install-80-dnf.md)]
 
 ## Install .NET 7
 
@@ -51,7 +55,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 ## Install on older distributions
 
-Older versions of Fedora don't contain .NET Core in the default package repositories. You can install .NET with [snap](linux-snap.md), through the [_dotnet-install.sh_ script](linux-scripted-manual.md#scripted-install), or use Microsoft's repository to install .NET:
+Older versions of Fedora don't contain .NET Core in the default package repositories. You can install .NET with the [_dotnet-install.sh_ script](linux-scripted-manual.md#scripted-install), or use Microsoft's repository to install .NET:
 
 01. First, add the Microsoft signing key to your list of trusted keys.
 
@@ -63,6 +67,7 @@ Older versions of Fedora don't contain .NET Core in the default package reposito
 
     | Fedora Version | Package repository |
     | -------------- | ------- |
+    | 36             | `https://packages.microsoft.com/config/fedora/36/prod.repo` |
     | 35             | `https://packages.microsoft.com/config/fedora/35/prod.repo` |
     | 34             | `https://packages.microsoft.com/config/fedora/34/prod.repo` |
     | 33             | `https://packages.microsoft.com/config/fedora/33/prod.repo` |
@@ -91,7 +96,6 @@ This section provides information on common errors you may get while using the p
 
 For more information on installing .NET without a package manager, see one of the following articles:
 
-- [Install the .NET SDK or the .NET Runtime with Snap.](linux-snap.md)
 - [Install the .NET SDK or the .NET Runtime with a script.](linux-scripted-manual.md#scripted-install)
 - [Install the .NET SDK or the .NET Runtime manually.](linux-scripted-manual.md#manual-install)
 

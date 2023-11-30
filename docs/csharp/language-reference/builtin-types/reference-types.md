@@ -239,7 +239,7 @@ Action<string> wrappedObjectAction = new Action<string>(objectAction);
 Action<string> combination = stringAction + wrappedObjectAction;
 ```
 
-Beginning with C# 9, you can declare [*function pointers*](../unsafe-code.md#function-pointers), which use similar syntax. A function pointer uses the `calli` instruction instead of instantiating a delegate type and calling the virtual `Invoke` method.
+You can declare [*function pointers*](../unsafe-code.md#function-pointers), which use similar syntax. A function pointer uses the `calli` instruction instead of instantiating a delegate type and calling the virtual `Invoke` method.
 
 ## The dynamic type
 
@@ -287,13 +287,13 @@ For more information, see the following sections of the [C# language specificati
 - [C# Reference](../index.md)
 - [C# Keywords](../keywords/index.md)
 - [Events](../../programming-guide/events/index.md)
-- [Using Type dynamic](../../programming-guide/types/using-type-dynamic.md)
+- [Using Type dynamic](../../advanced-topics/interop/using-type-dynamic.md)
 - [Best Practices for Using Strings](../../../standard/base-types/best-practices-strings.md)
 - [Basic String Operations](../../../standard/base-types/basic-string-operations.md)
 - [Creating New Strings](../../../standard/base-types/creating-new.md)
 - [Type-testing and cast operators](../operators/type-testing-and-cast.md)
 - [How to safely cast using pattern matching and the as and is operators](../../fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md)
-- [Walkthrough: creating and using dynamic objects](../../programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)
+- [Walkthrough: creating and using dynamic objects](../../advanced-topics/interop/walkthrough-creating-and-using-dynamic-objects.md)
 - <xref:System.Object?displayProperty=nameWithType>
 - <xref:System.String?displayProperty=nameWithType>
 - <xref:System.Dynamic.DynamicObject?displayProperty=nameWithType>

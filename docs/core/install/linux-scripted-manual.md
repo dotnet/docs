@@ -3,14 +3,12 @@ title: Install .NET on Linux without using a package manager
 description: Demonstrates how to install the .NET SDK and the .NET Runtime on Linux without a package manager. Use the install script or manually extract the binaries.
 author: adegeo
 ms.author: adegeo
-ms.date: 12/21/2022
+ms.date: 11/14/2023
 ---
 
 # Install .NET on Linux by using an install script or by extracting binaries
 
 This article demonstrates how to install the .NET SDK or the .NET Runtime on Linux by using the install script or by extracting the binaries. For a list of distributions that support the built-in package manager, see [Install .NET on Linux](linux.md).
-
-You can also install .NET with snap. For more information, see [Install the .NET SDK or the .NET Runtime with Snap](linux-snap.md).
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
@@ -22,9 +20,9 @@ The following table lists the support status of each version of .NET (and .NET C
 
 | ✔️ Supported | ❌ Unsupported |
 |-------------|---------------|
-| 7 (STS)     | 5             |
-| 6 (LTS)     | 3.1           |
-|             | 3.0           |
+| 8 (LTS)     | 5             |
+| 7 (STS)     | 3.1           |
+| 6 (LTS)     | 3.0           |
 |             | 2.2           |
 |             | 2.1           |
 |             | 2.0           |
@@ -53,7 +51,7 @@ If your distribution wasn't previously listed, and is RPM-based, you may need th
 - libicu
 - openssl-libs
 
-If the target runtime environment's OpenSSL version is 1.1 or newer, you'll need to install **compat-openssl10**.
+If the target runtime environment's OpenSSL version is 1.1 or newer, install `compat-openssl10`.
 
 ### DEB dependencies
 
@@ -75,18 +73,24 @@ You can usually install a recent version of *libgdiplus* by [adding the Mono rep
 
 ## Scripted install
 
-The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the **SDK** and **Runtime**. You can download the script from <https://dot.net/v1/dotnet-install.sh>.
+The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the **SDK** and **Runtime**. You can download the script from <https://dot.net/v1/dotnet-install.sh>. When .NET is installed in this way, you must install the dependencies required by your Linux distribution. Use the links in the [Install .NET on Linux](linux.md) article for your specific Linux distribution.
 
 > [!IMPORTANT]
 > Bash is required to run the script.
 
-Before running this script, you'll need to grant permission for this script to run as an executable:
+You can download the script with `wget`:
 
 ```bash
-sudo chmod +x ./dotnet-install.sh
+wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
 ```
 
-The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) SDK version, which is .NET 6. To install the latest release, which may not be an (LTS) version, use the `--version latest` parameter.
+Before running this script, make sure you grant permission for this script to run as an executable:
+
+```bash
+chmod +x ./dotnet-install.sh
+```
+
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) SDK version, which is .NET 8. To install the latest release, which might not be an (LTS) version, use the `--version latest` parameter.
 
 ```bash
 ./dotnet-install.sh --version latest
@@ -98,13 +102,15 @@ To install .NET Runtime instead of the SDK, use the `--runtime` parameter.
 ./dotnet-install.sh --version latest --runtime aspnetcore
 ```
 
-You can install a specific major version with the `--channel` parameter to indicate the specific version. The following command installs .NET 7.0 SDK.
+You can install a specific major version with the `--channel` parameter to indicate the specific version. The following command installs .NET 8.0 SDK.
 
 ```bash
-./dotnet-install.sh --channel 7.0
+./dotnet-install.sh --channel 8.0
 ```
 
 For more information, see [dotnet-install scripts reference](../tools/dotnet-install-script.md).
+
+To enable .NET on the command line, see [Set environment variables system-wide](#set-environment-variables-system-wide).
 
 ## Manual install
 
@@ -114,16 +120,24 @@ As an alternative to the package managers, you can download and manually install
 
 Download a **binary** release for either the SDK or the runtime from one of the following sites. The .NET SDK includes the corresponding runtime:
 
+- ✔️ [.NET 8 downloads](https://dotnet.microsoft.com/download/dotnet/8.0)
 - ✔️ [.NET 7 downloads](https://dotnet.microsoft.com/download/dotnet/7.0)
 - ✔️ [.NET 6 downloads](https://dotnet.microsoft.com/download/dotnet/6.0)
 - [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet)
 
-Extract the downloaded file and use the `export` command to set `DOTNET_ROOT` to the extracted folder's location and then ensure .NET is in PATH. Exporting `DOTNET_ROOT` makes the .NET CLI commands available in the terminal.
+Extract the downloaded file and use the `export` command to set `DOTNET_ROOT` to the extracted folder's location and then ensure .NET is in PATH. Exporting `DOTNET_ROOT` makes the .NET CLI commands available in the terminal. For more information about .NET environment variables, see [.NET SDK and CLI environment variables](../tools/dotnet-environment-variables.md#net-sdk-and-cli-environment-variables).
 
-Alternatively, after downloading the .NET binary, the following commands may be run from the directory where the file is saved to extract the runtime. Running the following commands makes the .NET CLI commands available at the terminal and sets the required environment variables. **Remember to change the `DOTNET_FILE` value to the name of the downloaded binary**:
+Different versions of .NET can be extracted to the same folder, which coexist side-by-side.
+
+### Example
+
+The following commands set the environment variable `DOTNET_ROOT` to the current working directory followed by `.dotnet`. They then create the directory if it doesn't exist and extract the contents of the file specified by the `DOTNET_FILE` environment variable to the `.dotnet` directory. Both the `.dotnet` directory and its `tools` subdirectory are added to the `PATH` environment variable.
+
+> [!IMPORTANT]
+> If you run these commands, remember to change the `DOTNET_FILE` value to the name of the .NET binary you downloaded.
 
 ```bash
-DOTNET_FILE=dotnet-sdk-7.0.100-linux-x64.tar.gz
+DOTNET_FILE=dotnet-sdk-8.0.100-linux-x64.tar.gz
 export DOTNET_ROOT=$(pwd)/.dotnet
 
 mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
@@ -131,11 +145,17 @@ mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 ```
 
-The preceeding install script approach allows installing different versions into separate locations so you can choose explicitly which one to use by which app.
+The preceding install script approach allows installing different versions into separate locations so you can choose explicitly which one to use by which app. However, you can still install multiple versions of .NET to the same folder.
 
-### Set environment variables system-wide
+## Verify downloaded binaries
 
-If you used the previous install script, the variables set only apply to your current terminal session. Add them to your shell profile. There are a number of different shells available for Linux and each has a different profile. For example:
+[!INCLUDE [verify-download-intro](includes/verify-download-intro.md)]
+
+[!INCLUDE [verify-download-macos-linux](includes/verify-download-macos-linux.md)]
+
+## Set environment variables system-wide
+
+If you used the previous install script, the variables set only apply to your current terminal session. Add them to your shell profile. There are many different shells available for Linux and each has a different profile. For example:
 
 - **Bash Shell**: *~/.bash_profile*, *~/.bashrc*
 - **Korn Shell**: *~/.kshrc* or *.profile*
@@ -156,7 +176,7 @@ Set the following two environment variables in your shell profile:
   This variable should include both the `DOTNET_ROOT` folder and the user's _.dotnet/tools_ folder:
 
   ```bash
-  export PATH=$PATH:$HOME/.dotnet:$HOME/.dotnet/tools
+  export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
   ```
 
 ## Next steps

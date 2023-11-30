@@ -149,7 +149,7 @@ namespace SDKSample
                 }
                 else
                 {
-                    Feedback("Wndow is not moveable.");
+                    Feedback("Window is not moveable.");
                 }
             }
             catch (ElementNotAvailableException)

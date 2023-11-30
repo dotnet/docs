@@ -22,7 +22,7 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides a set of methods that 
  [!code-csharp[XPathExtensionFunctions#2](../../../../samples/snippets/csharp/VS_Snippets_Data/xpathextensionfunctions/cs/xpathextensionfunctions.cs#2)]
  [!code-vb[XPathExtensionFunctions#2](../../../../samples/snippets/visualbasic/VS_Snippets_Data/xpathextensionfunctions/vb/xpathextensionfunctions.vb#2)]  
   
- The following code implements <xref:System.Xml.Xsl.IXsltContextFunction>. The class that implements <xref:System.Xml.Xsl.IXsltContextFunction> resolves and executes user-defined functions. This example uses the function identified by the declaration: `private int CountChar(string title, char charTocount)`.  
+ The following code implements <xref:System.Xml.Xsl.IXsltContextFunction>. The class that implements <xref:System.Xml.Xsl.IXsltContextFunction> resolves and executes user-defined functions. This example uses the function identified by the declaration: `private int CountChar(string title, char charToCount)`.  
   
  Code comments describe class members.  
   

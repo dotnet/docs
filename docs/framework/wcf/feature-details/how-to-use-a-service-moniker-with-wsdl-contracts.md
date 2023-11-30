@@ -8,11 +8,11 @@ ms.assetid: a88d9650-bb50-4f48-8c85-12f5ce98a83a
 
 There are situations when you may want to have a completely self-contained COM Interop client. The service you want to call may not expose a MEX endpoint, and the WCF client DLL may not be registered for COM interop. In these cases, you can create a WSDL file that describes the service and pass it into the WCF service moniker. This topic describes how to call the Getting Started WCF sample using a WCF WSDL moniker.  
   
-### Using the WSDL service moniker  
+## Use the WSDL service moniker  
   
 1. Open and build the GettingStarted sample solution.  
   
-2. Open Internet Explorer and browse to `http://localhost/ServiceModelSamples/Service.svc` to make sure that the service is working.  
+2. Open a browser and browse to `http://localhost/ServiceModelSamples/Service.svc` to make sure that the service is working.  
   
 3. In the Service.cs file, add the following attribute on the CalculatorService class:  
   
@@ -20,7 +20,7 @@ There are situations when you may want to have a completely self-contained COM I
   
 4. Add a binding namespace to the service App.config:  
 
-5. Create a WSDL file for the application to read. Because the namespaces were added in steps 3 and 4, you can use IE to query for the entire WSDL description of the service by browsing to `http://localhost/ServiceModelSamples/Service.svc?wsdl`. You can then save the file from Internet Explorer as serviceWSDL.xml. If you do not specify the namespaces in steps 3 and 4, the WSDL document returned from querying the above URL will not be the complete WSDL. The WSDL document returned will include several import statements that import other WSDL documents. You will have to go through each import statement and build the complete WSDL document, combining the WSDL returned from the service with the WSDL imported.  
+5. Create a WSDL file for the application to read. Because the namespaces were added in steps 3 and 4, you can use a browser to query for the entire WSDL description of the service by browsing to `http://localhost/ServiceModelSamples/Service.svc?wsdl`. You can then save the file as *serviceWSDL.xml*. If you do not specify the namespaces in steps 3 and 4, the WSDL document returned from querying the above URL will not be the complete WSDL. The WSDL document returned will include several import statements that import other WSDL documents. You will have to go through each import statement and build the complete WSDL document, combining the WSDL returned from the service with the WSDL imported.  
   
 6. Open Visual Basic 6.0 and create a new Standard .exe file. Add a button to the form and double-click the button to add the following code to the Click handler:  
   

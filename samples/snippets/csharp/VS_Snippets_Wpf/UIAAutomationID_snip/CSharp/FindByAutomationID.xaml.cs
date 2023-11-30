@@ -376,7 +376,7 @@ namespace UIAAutomationID_snip
         /// interactions in a volatile UI is the probability of catastrophic
         /// change in the UI. For example, the //Processes// dialog where items
         /// in the listbox container can change with no input from the user.
-        /// This mandates thtat a record and playback application must be
+        /// This mandates that a record and playback application must be
         /// reliant on the tester owning the UI being tested. In other words,
         /// there has to be a contract between the provider and client that
         /// excludes uncontrolled, external applications. The added benefit

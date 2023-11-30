@@ -1,10 +1,11 @@
 ---
 title: Use the Windows Compatibility Pack to port code
-description: Learn about the Windows Compatibility Pack and how can you use it to port existing .NET Framework code to .NET 5 and .NET Core 3.1.
+description: Learn about the Windows Compatibility Pack and how can you use it to port existing .NET Framework code to .NET.
 author: terrajobst
-ms.date: 05/04/2021
+ms.date: 05/25/2023
 ---
-# Use the Windows Compatibility Pack to port code to .NET 5+
+
+# Use the Windows Compatibility Pack to port code to .NET
 
 Some of the most common issues found when porting existing code from .NET Framework to .NET are dependencies on APIs and technologies that are only found in .NET Framework. The *Windows Compatibility Pack* provides many of these technologies, so it's much easier to build .NET applications and .NET Standard libraries.
 
@@ -69,10 +70,3 @@ For more information, see the [specification of the compatibility pack](https://
     ```
 
 For a demo, check out the [Channel 9 video of the Windows Compatibility Pack](/Events/Connect/2017/T123).
-
-## See also
-
-- [Overview of porting from .NET Framework to .NET](index.md)
-- [ASP.NET to ASP.NET Core migration](/aspnet/core/migration/proper-to-2x)
-- [Migrate .NET Framework WPF apps to .NET](/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-6.0&preserve-view=true)
-- [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/?view=netdesktop-6.0&preserve-view=true)

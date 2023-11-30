@@ -93,7 +93,7 @@ In a meaningful application, the continuation delegate could log detailed inform
 - `task.Result`
 - `task.GetAwaiter().GetResult()`
 
-Use a [`try-catch`](../../csharp/language-reference/keywords/try-catch.md) statement to handle and observe thrown exceptions. Alternatively, observe the exception by accessing the <xref:System.Threading.Tasks.Task.Exception%2A?displayProperty=nameWithType> property.
+Use a [`try-catch`](../../csharp/language-reference/statements/exception-handling-statements.md#the-try-catch-statement) statement to handle and observe thrown exceptions. Alternatively, observe the exception by accessing the <xref:System.Threading.Tasks.Task.Exception%2A?displayProperty=nameWithType> property.
 
 > [!IMPORTANT]
 > The <xref:System.AggregateException> cannot be explicitly caught when using the following expressions:

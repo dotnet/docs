@@ -1,7 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <StartupObject>CancelParallelLoops.Program</StartupObject>
+    <OutputType>exe</OutputType>
   </PropertyGroup>
   
-</Project>
+</Project>  

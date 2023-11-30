@@ -26,7 +26,7 @@ Module Example
         End If
     End Sub
 End Module
-' The example dosplays the following output:
+' The example displays the following output:
 '       Match: 'abcabcabc' at position 0
 '          Group 0: 'abcabcabc' at position 0
 '             Capture 0: 'abcabcabc' at position 0

@@ -44,10 +44,7 @@ The topics in this section discuss Windows Communication Foundation (WCF) suppor
  Explains how to handle message transfer and delivery failures using dead letter queues and how to process messages from the dead letter queue.  
   
  [Poison Message Handling](poison-message-handling.md)  
- Explains how to handle poison messages (messages that have exceeded the maximum number of delivery attempts to the receiving application).  
-  
- [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](diff-in-queue-in-vista-server-2003-windows-xp.md)  
- Summarizes the differences in the WCF queues feature between Windows Vista, Windows Server 2003, and Windows XP.  
+ Explains how to handle poison messages (messages that have exceeded the maximum number of delivery attempts to the receiving application).
   
  [Securing Messages Using Transport Security](securing-messages-using-transport-security.md)  
  Describes how to use transport security to secure queued messages.  

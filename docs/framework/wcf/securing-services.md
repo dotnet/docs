@@ -12,10 +12,7 @@ ms.assetid: f0ecc6f7-f4b5-42a4-9cb1-b02e28e26620
 
 Security of a Windows Communication Foundation (WCF) service consists of two primary requirements: transfer security and authorization. (A third requirement, auditing of security events, is described in [Auditing](./feature-details/auditing-security-events.md).) In brief, transfer security includes authentication (verifying the identity of both the service and the client), confidentiality (message encryption), and integrity (digital signing to detect tampering). Authorization is the control of access to resources, for example, allowing only privileged users to read a file. Using features of WCF, the two primary requirements are easily implemented.  
   
- With the exception of the <xref:System.ServiceModel.BasicHttpBinding> class (or the [\<basicHttpBinding>](../configure-apps/file-schema/wcf/basichttpbinding.md) element in configuration), transfer security is enabled by default for all of the predefined bindings. The topics in this section cover two basic scenarios: implementing transfer security and authorization on an intranet service hosted on Internet Information Services (IIS), and implementing transfer security and authorization on a service hosted on IIS.  
-  
-> [!NOTE]
-> Windows XP Home does not support Windows authentication. Therefore, you should not run a service on that system.  
+ With the exception of the <xref:System.ServiceModel.BasicHttpBinding> class (or the [\<basicHttpBinding>](../configure-apps/file-schema/wcf/basichttpbinding.md) element in configuration), transfer security is enabled by default for all of the predefined bindings. The topics in this section cover two basic scenarios: implementing transfer security and authorization on an intranet service hosted on Internet Information Services (IIS), and implementing transfer security and authorization on a service hosted on IIS.
   
 ## Security Basics  
 

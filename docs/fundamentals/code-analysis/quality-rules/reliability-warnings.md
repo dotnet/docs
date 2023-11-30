@@ -1,8 +1,7 @@
 ---
 title: Reliability rules (code analysis)
 description: "Learn about code analysis reliability rules."
-ms.date: 11/04/2016
-ms.topic: reference
+ms.date: 11/16/2023
 f1_keywords:
 - vs.codeanalysis.reliabilityrules
 helpviewer_keywords:
@@ -33,3 +32,4 @@ Reliability rules support library and application reliability, such as correct m
 | [CA2018: The `count` argument to `Buffer.BlockCopy` should specify the number of bytes to copy](ca2018.md) | When using `Buffer.BlockCopy`, the `count` argument specifies the number of bytes to copy. You should only use `Array.Length` for the `count` argument on arrays whose elements are exactly one byte in size. `byte`, `sbyte`, and `bool` arrays have elements that are one byte in size. |
 | [CA2019: `ThreadStatic` fields should not use inline initialization](ca2019.md) | A field that's annotated with <xref:System.ThreadStaticAttribute> is initialized inline or explicitly in a `static` (`Shared` in Visual Basic) constructor. |
 | [CA2020: Prevent behavioral change caused by built-in operators of IntPtr/UIntPtr](ca2020.md) | Some built-in operators added in .NET 7 behave differently than the user-defined operators in .NET 6 and earlier versions. Some operators that used to throw in unchecked context while overflowing don't throw anymore unless wrapped within checked context. Some operators that previously didn't throw in checked context now throw unless wrapped within unchecked context. |
+| [CA2021: Don't call Enumerable.Cast\<T> or Enumerable.OfType\<T> with incompatible types](ca2021.md) | A call to <xref:System.Linq.Enumerable.Cast%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> or <xref:System.Linq.Enumerable.OfType%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> specifies a type parameter that's incompatible with the type of the input collection. |

@@ -1,6 +1,6 @@
 ---
-title: Windows 10 migration
-description: Deep dive in Windows 10 features such as packaging and XAML Islands.
+title: Windows 10 or Windows 11 migration
+description: Deep dive in Windows 10 and Windows 11 features such as packaging and XAML Islands.
 ms.date: 12/29/2020
 ---
 
@@ -8,7 +8,7 @@ ms.date: 12/29/2020
 
 [!INCLUDE [download-alert](includes/download-alert.md)]
 
-Consider the following situation: You have a working desktop application that was developed in the Windows 7 days. It's using WPF technology available at that time and working fine but it has an outdated UI and behaviors when you run it on Windows 10. It is like when you watch a futuristic movie like Matrix and you see Neo using the Nokia 8110 device. The film works great after 20 years but it would rather benefit from a device modernization.
+Consider the following situation: You have a working desktop application that was developed in the Windows 7 days. It's using WPF technology available at that time and working fine but it has an outdated UI and behaviors when you run it on Windows 10 or Windows 11. It is like when you watch a futuristic movie like Matrix and you see Neo using the Nokia 8110 device. The film works great after 20 years but it would rather benefit from a device modernization.
 
 With the release of Windows 10, Microsoft introduced many innovations to support scenarios like tablets and touch devices and to provide the best experience for users for a Microsoft operating system ever. For example, you can:
 
@@ -18,11 +18,11 @@ With the release of Windows 10, Microsoft introduced many innovations to support
 
 All these features are enabled for Windows developers through Windows Runtime (WinRT) libraries. You can take advantage of these features in your existing desktop apps because the libraries are exposed to both the .NET Framework and .NET as well. You can even modernize your UI with the use of XAML Islands and improve the visuals and behavior of your apps according to the times.
 
-One important thing to note here is that you don't need to abandon .NET Framework technology to follow this modernization path. You can safely stay on there and have all the benefits of Windows 10 without the pressure to migrate to .NET. So, you get both the power and the flexibility to choose your modernization path.
+One important thing to note here is that you don't need to abandon .NET Framework technology to follow this modernization path. You can safely stay on there and have all the benefits of Windows 10 and Windows 11 without the pressure to migrate to .NET. So, you get both the power and the flexibility to choose your modernization path.
 
 ## WinRT APIs
 
-WinRT APIs are object-oriented, well-structured application programming interfaces (APIs) that give Windows 10 developers access to everything the operating system has to offer. Through WinRT APIs, you can integrate functionalities like Push Notifications, Device APIs, Microsoft Ink, and WinML, among others on your desktop apps.
+WinRT APIs are object-oriented, well-structured application programming interfaces (APIs) that give Windows 10 and Windows 11 developers access to everything the operating system has to offer. Through WinRT APIs, you can integrate functionalities like Push Notifications, Device APIs, Microsoft Ink, and WinML, among others on your desktop apps.
 
 In general, WinRT APIs can be called from a classic desktop app. However, two main areas present an exception to this rule:
 
@@ -64,7 +64,7 @@ Besides giving you access to these APIs, you get some additional benefits by cre
 
 * **Automatic updates and licensing**. Your application can participate in the Microsoft Store's built-in licensing and automatic update facilities. Automatic update is a highly reliable and efficient mechanism, because only the changed parts of files are downloaded.
 
-* **Increased reach and simplified monetization**. Maybe not your case but if you choose to distribute your application through the Microsoft Store you reach millions of Windows 10 users.
+* **Increased reach and simplified monetization**. Maybe not your case but if you choose to distribute your application through the Microsoft Store you reach millions of Windows 10 and Windows 11 users.
 
 * **Add UWP features**. You can add UWP features to your app's package at your own pace.
 
@@ -72,7 +72,7 @@ Besides giving you access to these APIs, you get some additional benefits by cre
 
 Before proceeding to package your desktop application, there are some points you have to address before starting the process. Your application must respect any of the Microsoft Store rules and policies and run in the UWP application model. For example, it has to run on the .NET Framework 4.6.2 or later and writes to the `HKEY_CURRENT_USER` registry hive and the AppData folders will be virtualized to a user-specific app-local location.
 
-The design goal for packaging is to separate the application state from system state while maintaining compatibility with other apps. Windows 10 accomplishes this goal by placing the application inside a UWP package. It detects and redirects some changes to the file system and registry at run time to fulfill the promise of a trusted and clean install and uninstall
+The design goal for packaging is to separate the application state from system state while maintaining compatibility with other apps. Windows 10 and Windows 11 accomplish this goal by placing the application inside a UWP package. It detects and redirects some changes to the file system and registry at run time to fulfill the promise of a trusted and clean install and uninstall
 behavior of an application provided by packaging.
 
 Packages that you create for your desktop application are desktop-only, full-trust applications that aren't sandboxed, although there's lightweight virtualization applied to the app for writes to `HKCU` and `AppData`. This virtualization allows
@@ -116,7 +116,7 @@ Let's take an existing WPF sample app that reads files and shows its contents on
 
 ![Screenshot of the sample application running](./media/windows-migration/sample-application.png)
 
-First, you should check in the following link whether the Windows 10 API that you'll use requires a Package Identity:
+First, you should check in the following link whether the Windows 10 or Windows 11 API that you'll use requires a Package Identity:
 
 [https://learn.microsoft.com/windows/apps/desktop/modernize/desktop-to-uwp-supported-api](/windows/apps/desktop/modernize/desktop-to-uwp-supported-api)
 
@@ -146,7 +146,7 @@ Although the project builds, there are errors because the Notifications API requ
 
 ![Screenshot of the Add New Project dialog in Visual Studio](./media/windows-migration/add-packaging-project.png)
 
-Select the minimum Windows version you want to support and the version you're targeting. Not all the WinRT APIs are supported in all Windows 10 versions. Each Windows 10 update adds new APIs that are only available from this version; down-level support isn't available.
+Select the minimum Windows version you want to support and the version you're targeting. Not all the WinRT APIs are supported in all Windows 10 and Windows 11 versions. Each Windows 10 or Windows 11 update adds new APIs that are only available from this version; down-level support isn't available.
 
 ![Selecting minimum Windows version](./media/windows-migration/select-versions.png)
 
@@ -184,11 +184,11 @@ XAML Islands are a set of components that enable Windows desktop developers to u
 
 ![Structure of XAML Islands](./media/windows-migration/xaml-islands.png)
 
-You can image your Win32 app with your standard controls and among them an "island" of UWP UI containing controls from the modern world. The concept is similar as having an iFrame inside a web page that shows content from a `different page.`
+You can image your Win32 app with your standard controls and among them an "island" of UWP UI containing controls from the modern world. The concept is similar to having an iFrame inside a web page that shows content from a `different page.`
 
-Besides adding functionality from the Windows 10 APIs, you can add pieces of UWP XAML inside of your app using XAML Islands.
+Besides adding functionality from the Windows 10 and Windows 11 APIs, you can add pieces of UWP XAML inside of your app using XAML Islands.
 
-Windows 10 1903 update introduces a set of APIs that allows hosting UWP XAML content in Win32 windows. Only apps running on Windows 10 1903 can use XAML Islands.
+Windows 10 1903 update introduced a set of APIs that allow hosting UWP XAML content in Win32 windows. Only apps running on Windows 10 1903 or later can use XAML Islands.
 
 ### The road to XAML Islands
 
@@ -202,7 +202,7 @@ At Build 2018, Microsoft announced a way for developers to use the new Windows 1
 
 ### How it works
 
-The Windows 10 1903 update introduces several XAML hosting APIs. Two of them are `WindowsXamlManager` and `DesktopWindowXamlSource`.
+The Windows 10 1903 update introduced several XAML hosting APIs. Two of them are `WindowsXamlManager` and `DesktopWindowXamlSource`.
 
 The `WindowsXamlManager` class handles the UWP XAML Framework. Its `InitializeForCurrentThread` method loads the UWP XAML Framework inside the current thread of the Win32 app.
 
@@ -244,12 +244,11 @@ Add the `Microsoft.Toolkit.Wpf.UI.Controls` package to your project, include the
 
 ##### Hosting controls
 
-The power of XAML Islands extends to most first-party controls, third-party controls, and custom controls developed for UWP, which can be integrated into Windows Forms and WPF as "Islands" with fully functional UI. The `WindowsXamlHost` control
-for WPF and Windows Forms allows doing this.
+The power of XAML Islands extends to most first-party controls, third-party controls, and custom controls developed for UWP, which can be integrated into Windows Forms and WPF as "Islands" with fully functional UI. The `WindowsXamlHost` control for WPF and Windows Forms allows doing this.
 
 For example, to use the `WindowsXamlHost` control in WPF, add a reference to the `Microsoft.Toolkit.Wpf.UI.XamlHost` package provided by the Windows Community Toolkit.
 
-Once you've placed your `WindowsXamlHost` into your UI code, specify which UWP type you want to load. You can choose to use a wrapped control like a `Button` or a more complex one composed by several different controls, which are a custom UWP control.
+Once you've placed your `WindowsXamlHost` into your UI code, specify which UWP type you want to load. You can choose to use a wrapped control like a `Button` or a more complex one composed of several different controls, which are a custom UWP control.
 
 The following example shows how to add a UWP `Button`:
 
@@ -288,7 +287,7 @@ You can check a detailed step-by-step process description at:
 
 #### The Windows UI Library (WinUI 2)
 
-Besides the inbox Windows 10 controls that comes with the OS, the same UWP XAML team also deliver additional controls in the Windows UI Library (**WinUI 2**). WinUI 2 provides official native Microsoft UI controls and features for Windows UWP apps and these controls can be used inside of XAML Islands.
+Besides the inbox Windows 10 controls that comes with the OS, the same UWP XAML team also delivers additional controls in the Windows UI Library (**WinUI 2**). WinUI 2 provides official native Microsoft UI controls and features for Windows UWP apps and these controls can be used inside of XAML Islands.
 
 WinUI 2 is open source and you can find information at <https://github.com/microsoft/microsoft-ui-xaml>.
 
@@ -296,7 +295,7 @@ The following article demonstrates how to host a UWP XAML control from the WinUI
 
 ### Do you need XAML Islands
 
-XAML Islands are intended for existing Win32 apps that want to improve their user experience by leveraging new UWP controls and behaviors without a full rewrite of the app. You could already [leverage Windows 10 APIs](/windows/uwp/porting/desktop-to-uwp-enhance), but up until XAML Islands, only non-UI related APIs.
+XAML Islands are intended for existing Win32 apps that want to improve their user experience by leveraging new UWP controls and behaviors without a full rewrite of the app. You could already [leverage Windows 10 and Windows 11 APIs](/windows/uwp/porting/desktop-to-uwp-enhance), but up until XAML Islands, only non-UI related APIs.
 
 If you're developing a new Windows App, a [UWP App](/windows/uwp/get-started/universal-application-platform-guide) is probably the right approach.
 

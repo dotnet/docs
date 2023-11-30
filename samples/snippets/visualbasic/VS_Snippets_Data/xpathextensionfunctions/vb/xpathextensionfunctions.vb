@@ -19,24 +19,24 @@ Module Program
             Try
                 ' Load source XML into an XPathDocument object instance.
                 Dim XmlDoc As New XPathDocument("Tasks.xml")
-                ' Create an XPathNavigator from the XPathDocument.                    
+                ' Create an XPathNavigator from the XPathDocument.
                 Dim Navigator As XPathNavigator = XmlDoc.CreateNavigator()
 
                 ' Create argument list and add the parameters.
                 Dim VarList As New XsltArgumentList()
                 VarList.AddParam("charToCount", "", KeyChar)
 
-                ' Create an instance of custom XsltContext object. 
-                ' Pass in the XsltArgumentList object in which 
-                ' the user-defined variable will be defined.                    
+                ' Create an instance of custom XsltContext object.
+                ' Pass in the XsltArgumentList object in which
+                ' the user-defined variable will be defined.
                 Dim Context As New CustomContext(New NameTable(), VarList)
 
-                ' Add a namespace definition for the namespace prefix that qualifies 
+                ' Add a namespace definition for the namespace prefix that qualifies
                 ' the user-defined function name in the query expression.
                 Context.AddNamespace("Extensions", "http://xpathExtensions")
 
                 ' Create the XPath expression using extension function select nodes
-                ' that contain 3 occurences of the character entered by user.
+                ' that contain 3 occurrences of the character entered by user.
                 Dim XPath As XPathExpression = _
                    XPathExpression.Compile("/Tasks/Name[Extensions:CountChar(., $charToCount) = 2]")
 
@@ -50,7 +50,7 @@ Module Program
                 Else
                     Console.WriteLine("Results that contain 2 instances of {0}: ", _
                         KeyChar.ToString())
-                    ' Iterate over the selected nodes and output 
+                    ' Iterate over the selected nodes and output
                     ' the results filtered by extension function.
                     While Iterator.MoveNext()
                         Console.WriteLine(Iterator.Current.Value)
@@ -124,7 +124,7 @@ Class CustomContext
 
     End Function
 
-    ' Function to resolve references to user-defined XPath 
+    ' Function to resolve references to user-defined XPath
     ' extension variables in XPath query.
     Public Overrides Function ResolveVariable(ByVal Prefix As String, ByVal Name As String) As IXsltContextVariable
         If LookupNamespace(Prefix) = ExtensionsNamespaceUri OrElse Len(Prefix) > 0 Then
@@ -133,14 +133,14 @@ Class CustomContext
 
         Select Case Name
             Case "charToCount", "left", "right", "text"
-                ' Create an instance of an XPathExtensionVariable 
-                ' (custom IXsltContextVariable implementation) object 
+                ' Create an instance of an XPathExtensionVariable
+                ' (custom IXsltContextVariable implementation) object
                 ' by supplying the name of the user-defined variable to resolve.
                 Return New XPathExtensionVariable(Prefix, Name)
 
                 ' The Evaluate method of the returned object will be used at run time
                 ' to resolve the user-defined variable that is referenced in the XPath
-                ' query expression. 
+                ' query expression.
             Case Else
 
         End Select
@@ -155,10 +155,10 @@ Class CustomContext
         End Get
     End Property
 
-    ' The XsltArgumentList property is accessed by the Evaluate method of the 
-    ' XPathExtensionVariable object that the ResolveVariable method returns. 
-    ' It is used to resolve references to user-defined variables in XPath query 
-    ' expressions. 
+    ' The XsltArgumentList property is accessed by the Evaluate method of the
+    ' XPathExtensionVariable object that the ResolveVariable method returns.
+    ' It is used to resolve references to user-defined variables in XPath query
+    ' expressions.
     Public ReadOnly Property ArgList() As XsltArgumentList
         Get
             Return m_ArgList
@@ -168,7 +168,7 @@ End Class
 
 '</snippet2>
 '<snippet3>
-' The interface that resolves and executes a specified user-defined function. 
+' The interface that resolves and executes a specified user-defined function.
 Public Class XPathExtensionFunctions
     Implements IXsltContextFunction
 
@@ -183,7 +183,7 @@ Public Class XPathExtensionFunctions
     ' The name of the extension function.
     Private m_FunctionName As String
 
-    ' Constructor used in the ResolveFunction method of the custom XsltContext 
+    ' Constructor used in the ResolveFunction method of the custom XsltContext
     ' class to return an instance of IXsltContextFunction at run time.
     Public Sub New(ByVal MinArgs As Integer, ByVal MaxArgs As Integer, ByVal ReturnType As XPathResultType, ByVal ArgTypes() As XPathResultType, ByVal FunctionName As String)
         m_MinArgs = MinArgs
@@ -218,7 +218,7 @@ Public Class XPathExtensionFunctions
         End Get
     End Property
 
-    ' Function to execute a specified user-defined XPath 
+    ' Function to execute a specified user-defined XPath
     ' extension function at run time.
     Public Function Invoke(ByVal Context As XsltContext, ByVal Args() As Object, ByVal DocContext As XPathNavigator) As Object Implements IXsltContextFunction.Invoke
 
@@ -254,7 +254,7 @@ Public Class XPathExtensionFunctions
 
     End Function
 
-    ' This overload will not force the user 
+    ' This overload will not force the user
     ' to cast to string in the xpath expression
     Private Function FindTaskBy(ByVal Node As XPathNodeIterator, ByVal Text As String) As String
 
@@ -271,8 +271,8 @@ End Class
 '</snippet3>
 '<snippet4>
 ' The interface used to resolve references to user-defined variables
-' in XPath query expressions at run time. An instance of this class 
-' is returned by the overridden ResolveVariable function of the 
+' in XPath query expressions at run time. An instance of this class
+' is returned by the overridden ResolveVariable function of the
 ' custom XsltContext class.
 Public Class XPathExtensionVariable
     Implements IXsltContextVariable

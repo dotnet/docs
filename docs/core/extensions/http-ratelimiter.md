@@ -1,9 +1,9 @@
 ---
 title: Rate limiting an HTTP handler in .NET
-description: Learn how to create a client-side HTTP handler that limits the number of requests.
+description: Learn how to create a client-side HTTP handler that limits the number of requests, with the inbuilt rate limiter API from .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/08/2022
+ms.date: 03/13/2023
 ---
 
 # Rate limit an HTTP handler in .NET

@@ -5,4 +5,4 @@ This method allows you to assign the specific resource permissions needed by the
 The downside of this approach is the need to create separate service principal objects for each developer that works on an application.<br>
 <br>
 > [!div class="nextstepaction"]
-> [Learn about auth from Azure hosted apps](../authentication-local-development-service-principal.md)
+> [Learn about auth from Azure-hosted apps](../authentication/local-development-service-principal.md)

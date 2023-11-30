@@ -91,10 +91,6 @@ class MergeStrings
             IEnumerable<string> nameMatchQuery =  
                 tempQuery1.Concat(tempQuery2).OrderBy(s => s);  
             OutputQueryResults(nameMatchQuery, $"Concat based on partial name match \"{nameMatch}\":");
-  
-            // Keep the console window open in debug mode.  
-            Console.WriteLine("Press any key to exit");  
-            Console.ReadKey();  
         }  
   
         static void OutputQueryResults(IEnumerable<string> query, string message)  
@@ -169,7 +165,3 @@ class MergeStrings
 
  Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.  
   
-## See also
-
-- [LINQ and Strings (C#)](./linq-and-strings.md)
-- [LINQ and File Directories (C#)](./linq-and-file-directories.md)

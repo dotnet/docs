@@ -116,7 +116,7 @@
             this.grpAsmKeys.Size = new System.Drawing.Size(160, 138);
             this.grpAsmKeys.TabIndex = 42;
             this.grpAsmKeys.TabStop = false;
-            this.grpAsmKeys.Text = "Asymetric Keys";
+            this.grpAsmKeys.Text = "Asymmetric Keys";
             //
             // buttonGetPrivateKey
             //

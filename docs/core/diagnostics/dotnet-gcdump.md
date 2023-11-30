@@ -27,7 +27,6 @@ There are two ways to download and install `dotnet-gcdump`:
   | OS  | Platform |
   | --- | -------- |
   | Windows | [x86](https://aka.ms/dotnet-gcdump/win-x86) \| [x64](https://aka.ms/dotnet-gcdump/win-x64) \| [Arm](https://aka.ms/dotnet-gcdump/win-arm) \| [Arm-x64](https://aka.ms/dotnet-gcdump/win-arm64) |
-  | macOS   | [x64](https://aka.ms/dotnet-gcdump/osx-x64) |
   | Linux   | [x64](https://aka.ms/dotnet-gcdump/linux-x64) \| [Arm](https://aka.ms/dotnet-gcdump/linux-arm) \| [Arm64](https://aka.ms/dotnet-gcdump/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-gcdump/linux-musl-x64) \| [musl-Arm64](https://aka.ms/dotnet-gcdump/linux-musl-arm64) |
 
 > [!NOTE]

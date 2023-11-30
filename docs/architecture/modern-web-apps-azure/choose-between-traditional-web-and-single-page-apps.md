@@ -22,6 +22,8 @@ Use traditional web applications when:
 
 - Your application needs to function in browsers without JavaScript support.
 
+- Your application is public-facing and benefits from search engine discovery and referrals.
+
 Use a SPA when:
 
 - Your application must expose a rich user interface with many features.
@@ -112,6 +114,14 @@ The following decision table summarizes some of the basic factors to consider wh
 | Support Browsers without Scripting                   | **Supported**           | **Not Supported**           | **Supported**   |
 | Minimal Client-Side Application Behavior             | **Well-Suited**         | **Overkill**                | **Viable**      |
 | Rich, Complex User Interface Requirements            | **Limited**             | **Well-Suited**             | **Well-Suited** |
+
+## Other considerations
+
+Traditional Web Apps tend to be simpler and have better Search Engine Optimization (SEO) criteria than SPA apps. Search engine bots can easily consume content from traditional apps, while support for indexing SPAs may be lacking or limited. If your app benefits from public discovery by search engines, this is often an important consideration.
+
+In addition, unless you've built a management tool for your SPA's content, it may require developers to make changes. Traditional Web Apps are often easier for non-developers to make changes to, since much of the content is simply HTML and may not require a build process to preview or even deploy. If non-developers in your organization are likely to need to maintain the content of the app, a traditional web app may be a better choice.
+
+SPAs shine when the app has complex interactive forms or other user interaction features. For complex apps that require authentication to use, and thus aren't accessible by public search engine spiders, SPAs are a great option in many cases.
 
 >[!div class="step-by-step"]
 >[Previous](modern-web-applications-characteristics.md)

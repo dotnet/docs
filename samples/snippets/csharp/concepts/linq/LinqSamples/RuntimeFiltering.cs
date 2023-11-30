@@ -7,7 +7,7 @@ public static class RuntimeFiltering
     public static void RuntimeFiltering1()
     {
         // <runtime_filtering_1>
-        int[] ids = { 111, 114, 112 };
+        int[] ids = [111, 114, 112];
 
         var queryNames =
             from student in students
@@ -30,7 +30,7 @@ public static class RuntimeFiltering
          */
 
         // Change the ids.
-        ids = new[] { 122, 117, 120, 115 };
+        ids = [122, 117, 120, 115];
 
         // The query will now return different results
         foreach (var name in queryNames)
@@ -52,23 +52,14 @@ public static class RuntimeFiltering
         // <runtime_filtering_2>
         void FilterByYearType(bool oddYear)
         {
-            IEnumerable<Student> studentQuery;
-            if (oddYear)
-            {
-                studentQuery =
-                    from student in students
-                    where student.Year == GradeLevel.FirstYear || student.Year == GradeLevel.ThirdYear
-                    select student;
-            }
-            else
-            {
-                studentQuery =
-                    from student in students
-                    where student.Year == GradeLevel.SecondYear || student.Year == GradeLevel.FourthYear
-                    select student;
-            }
-
-            string descr = oddYear ? "odd" : "even";
+            IEnumerable<Student> studentQuery = oddYear
+                ? (from student in students
+                   where student.Year is GradeLevel.FirstYear or GradeLevel.ThirdYear
+                   select student)
+                : (from student in students
+                   where student.Year is GradeLevel.SecondYear or GradeLevel.FourthYear
+                   select student);
+            var descr = oddYear ? "odd" : "even";
             Console.WriteLine($"The following students are at an {descr} year level:");
             foreach (Student name in studentQuery)
             {

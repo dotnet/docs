@@ -11,7 +11,7 @@ ms.date: 08/06/2020
 
 Figure 3-1 shows the main pillars in the life cycle of Docker apps classified by the type of work delivered by multiple teams (app-development, DevOps infrastructure processes, and IT management and operations). Usually, in the enterprise, the profiles of "the persona" responsible for each area are different. So are their skills.
 
-![Add new project window in Visual Studio, selecting ASP.NET Core Web Application.](media/index/microsoft-tools-contanerized-docker-app.png)
+![Add new project window in Visual Studio, selecting ASP.NET Core Web Application.](media/index/microsoft-tools-containerized-docker-app.png)
 
 **Figure 3-1.** Main pillars in the life cycle for containerized Docker applications with Microsoft platform and tools
 

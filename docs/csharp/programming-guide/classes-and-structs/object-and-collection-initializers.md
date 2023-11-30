@@ -31,7 +31,8 @@ You could initialize the identity matrix with the following code:
 Any accessible indexer that contains an accessible setter can be used as one of the expressions in an object initializer, regardless of the number or types of arguments. The index arguments form the left side of the assignment, and the value is the right side of the expression.  For example, these are all valid if `IndexersExample` has the appropriate indexers:
 
 ```csharp
-var thing = new IndexersExample {
+var thing = new IndexersExample
+{
     name = "object one",
     [1] = '1',
     [2] = '4',
@@ -73,6 +74,54 @@ Each object in the new anonymous type has two public properties that receive the
 ```csharp
 select new {p.ProductName, Price = p.UnitPrice};  
 ```
+
+## Object Initializers with the `required` modifier
+
+You use the `required` keyword to force callers to set the value of a property or field using an object initializer. Required properties don't need to be set as constructor parameters. The compiler ensures all callers initialize those values.
+
+```csharp
+public class Pet
+{
+    public required int Age;
+    public string Name;
+}
+
+// `Age` field is necessary to be initialized.
+// You don't need to initialize `Name` property
+var pet = new Pet() { Age = 10};
+
+// Compiler error:
+// Error CS9035 Required member 'Pet.Age' must be set in the object initializer or attribute constructor.
+// var pet = new Pet();
+```
+
+It's a typical practice to guarantee that your object is properly initialized, especially when you have multiple fields or properties to manage and don't want to include them all in the constructor.
+
+## Object Initializers with the `init` accessor
+
+Making sure no one changes the designed object could be limited by using an `init` accessor. It helps to restrict the setting of the property value.
+
+```csharp
+public class Person
+{
+    public string FirstName { get; set; }
+    public string LastName { get; init; }
+}
+
+// The `LastName` property can be set only during initialization. It CAN'T be modified afterwards.
+// The `FirstName` property can be modified after initialization.
+var pet = new Person() { FirstName = "Joe", LastName = "Doe"};
+
+// You can assign the FirstName property to a different value.
+pet.FirstName = "Jane";
+
+// Compiler error:
+// Error CS8852  Init - only property or indexer 'Person.LastName' can only be assigned in an object initializer,
+//               or on 'this' or 'base' in an instance constructor or an 'init' accessor.
+// pet.LastName = "Kowalski";
+```
+
+Required init-only properties support immutable structures while allowing natural syntax for users of the type.
 
 ## Collection initializers
 

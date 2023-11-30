@@ -36,7 +36,7 @@ Dim command As New SqlCommand( _
   "SELECT ShipperID, CompanyName, Phone FROM dbo.Shippers", connection)
 
 ' Create a SqlNotificationRequest object.
-Dim notifcationRequest As New SqlNotificationRequest()
+Dim notificationRequest As New SqlNotificationRequest()
 notificationRequest.id = "NotificationID"
 notificationRequest.Service = "mySSBQueue"
 

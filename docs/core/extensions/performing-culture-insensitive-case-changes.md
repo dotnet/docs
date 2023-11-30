@@ -1,7 +1,7 @@
 ---
 title: Perform culture-insensitive case changes
 description: "Learn how to perform culture-insensitive case changes"
-ms.date: 06/06/2022
+ms.date: 03/13/2023
 dev_langs:
     - "csharp"
     - "vb"
@@ -61,7 +61,7 @@ static object LookupKey(string key)
 
 ## Char.ToUpper and Char.ToLower
 
-Although the `Char.ToUpper` and `Char.ToLower` methods have the same characteristics as the `String.ToUpper` and `String.ToLower` methods, the only cultures that are affected are Turkish (Turkey) and Azerbaijani (Latin, Azerbaijan). These are the only two cultures with single-character casing differences. For more details about this unique case mapping, see the "Casing" section in the <xref:System.String> class documentation. For code clarity and to ensure consistent results, it's recommended that you always use the overloads of these methods that accept a <xref:System.Globalization.CultureInfo> parameter.
+Although the `Char.ToUpper` and `Char.ToLower` methods have the same characteristics as the `String.ToUpper` and `String.ToLower` methods, the only cultures that are affected are Turkish (Türkiye) and Azerbaijani (Latin, Azerbaijan). These are the only two cultures with single-character casing differences. For more details about this unique case mapping, see the "Casing" section in the <xref:System.String> class documentation. For code clarity and to ensure consistent results, it's recommended that you always use the overloads of these methods that accept a <xref:System.Globalization.CultureInfo> parameter.
 
 ## See also
 

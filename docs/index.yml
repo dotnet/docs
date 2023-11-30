@@ -12,7 +12,7 @@ metadata:
   ms.collection: collection
   author: BillWagner
   ms.author: wiwagn
-  ms.date: 11/05/2021
+  ms.date: 11/13/2023
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -32,10 +32,6 @@ highlightedContent:
       itemType: learn
       url: https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro
     # Card
-    - title: "Browse .NET learning paths"
-      itemType: learn
-      url: /training/dotnet/
-    # Card
     - title: "Interactive introduction to C#"
       itemType: get-started
       url: csharp/tour-of-csharp/tutorials/hello-world.yml
@@ -47,6 +43,10 @@ highlightedContent:
     - title: "Azure for .NET developers"
       itemType: overview
       url: azure/index.yml
+    # Card
+    - title: .NET Aspire (Preview)
+      itemType: overview
+      url: /dotnet/aspire
     # Card
     - title: "What's new in .NET docs"
       itemType: whats-new
@@ -67,9 +67,9 @@ conceptualContent:
         - url: core/tutorials/index.md
           itemType: tutorial
           text: .NET tutorials
-        - url: core/whats-new/dotnet-7.md
+        - url: core/whats-new/dotnet-8.md
           itemType: whats-new
-          text: What's new in .NET 7
+          text: What's new in .NET 8
         - url: https://dotnetfoundation.org
           itemType: overview
           text: .NET Foundation
@@ -111,7 +111,7 @@ conceptualContent:
     # Card
     - title: Develop .NET apps
       links:
-        - url: /dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0&preserve-view=true
+        - url: /dotnet/desktop/wpf/get-started/create-app-visual-studio
           itemType: tutorial
           text: Create .NET desktop apps for Windows
         - url: /aspnet/core/
@@ -120,6 +120,9 @@ conceptualContent:
         - url: orleans/index.yml
           itemType: overview
           text: Build cloud-native .NET apps with Orleans
+        - url: /dotnet/aspire/get-started/quickstart-build-your-first-aspire-app
+          itemType: quickstart
+          text: Build cloud-native apps with .NET Aspire
         - url: core/docker/build-container.md
           itemType: tutorial
           text: Containerize .NET apps with Docker
@@ -148,7 +151,7 @@ conceptualContent:
         - url: fundamentals/package-validation/overview.md
           itemType: overview
           text: Package validation
-          
+
     # Card
     - title: Migrate and upgrade
       links:
@@ -222,15 +225,15 @@ tools:
       url: fundamentals/languages.md
     # Card
     - title: "A modern, object-oriented, and type-safe language"
-      imageSrc: /media/logos/logo_Csharp.svg
+      imageSrc: ./media/logo_csharp.png
       url: csharp/index.yml
     # Card
     - title: "A simple language for succinct, robust, and performant code"
-      imageSrc: /media/logos/logo_Fsharp.svg
+      imageSrc: ./media/logo_fsharp.png
       url: fsharp/index.yml
     # Card
     - title: "An approachable language with readable syntax"
-      imageSrc: /media/logos/logo_VB.svg
+      imageSrc: ./media/logo_vb.png
       url: visual-basic/index.yml
 
 # Card with summary style
@@ -276,11 +279,11 @@ additionalContent:
         links:
           - url: /uwp
             text: Universal Windows apps
-          - url: /dotnet/desktop/wpf/?view=netdesktop-6.0&preserve-view=true
+          - url: /dotnet/desktop/wpf/
             text: Windows Presentation Foundation (.NET 5+)
           - url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8&preserve-view=true
             text: Windows Presentation Foundation (.NET Framework)
-          - url: /dotnet/desktop/winforms/?view=netdesktop-6.0&preserve-view=true
+          - url: /dotnet/desktop/winforms/
             text: Windows Forms (.NET 5+)
           - url: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8&preserve-view=true
             text: Windows Forms (.NET Framework)
@@ -306,6 +309,8 @@ additionalContent:
         links:
           - url: azure/index.yml
             text: Azure for .NET developers
+          - url: /dotnet/aspire
+            text: .NET Aspire (Preview)
           - url: ./azure/migration/app-service.md?preserve-view=true&view=azure-dotnet
             text: Migrate on-premises .NET web apps or services
           - url: ./azure/key-azure-services.md
@@ -323,8 +328,6 @@ additionalContent:
             text: Azure Cognitive Services
           - url: /azure/machine-learning
             text: Azure machine learning
-          - url: spark/index.yml
-            text: .NET for Apache Spark
           - url: fsharp/scenarios/machine-learning.md
             text: F# for Machine Leaning
       # Card
@@ -356,7 +359,7 @@ additionalContent:
       # Card
       - title: ".NET API reference"
         summary: API reference documentation for .NET
-        url: ../api/index.md?view=net-7.0
+        url: ../api/index.md?view=net-8.0
       # Card
       - title: ".NET Framework API reference"
         summary: API reference documentation for .NET Framework
@@ -364,15 +367,15 @@ additionalContent:
       # Card
       - title: "ASP.NET Core API reference"
         summary: API reference documentation for ASP.NET Core
-        url: ../api/index.md?view=aspnetcore-3.1&preserve-view=true
+        url: ../api/index.md?view=view=aspnetcore-8.0&preserve-view=true
       # Card
       - title: "ML.NET API reference"
         summary: API reference documentation for ML.NET
         url: ../api/index.md?view=ml-dotnet&preserve-view=true
       # Card
-      - title: ".NET for Apache Spark API reference"
-        summary: API reference documentation for .NET for Apache Spark
-        url: ../api/index.md?view=spark-dotnet&preserve-view=true
+      - title: ".NET Platform Extensions API reference"
+        summary: API reference documentation for .NET Platform Extensions
+        url: ../api/index.md?view=dotnet-plat-ext-8.0&preserve-view=true
       # Card
       - title: "C# language reference"
         summary: C# language reference and specification

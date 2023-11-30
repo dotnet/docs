@@ -7,7 +7,12 @@ class Example
         Memory<char> memory = new char[64];
 
         Console.Write("Enter a number: ");
-	    var value = Int32.Parse(Console.ReadLine());
+        string? s = Console.ReadLine();
+
+        if (s is null)
+            return;
+
+	    var value = Int32.Parse(s);
 
         WriteInt32ToBuffer(value, memory);
         DisplayBufferToConsole(memory);

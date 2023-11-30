@@ -362,7 +362,7 @@ This feature implements [F# RFC FS-1031](https://github.com/fsharp/fslang-design
 
 ## Default interface member consumption
 
-F# 5 lets you consume [interfaces with default implementations](../../csharp/tutorials/default-interface-methods-versions.md).
+F# 5 lets you consume [interfaces with default implementations](../../csharp/advanced-topics/interface-implementation/default-interface-methods-versions.md).
 
 Consider an interface defined in C# like this:
 

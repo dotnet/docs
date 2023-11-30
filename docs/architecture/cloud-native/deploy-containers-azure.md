@@ -50,7 +50,7 @@ After you push an image to the registry, it's a good idea to remove the image fr
 docker rmi myregistry.azurecr.io/mycontainer:v1
 ```
 
-As a best practice, developers shouldn't manually push images to a container registry. Instead, a build pipeline defined in a tool like GitHub or Azure DevOps should be responsible for this process. Learn more in the [Cloud-Native DevOps chapter](devops.md).
+As a best practice, you shouldn't manually push images to a container registry. Instead, use a build pipeline defined in a tool like GitHub or Azure DevOps. Learn more in the [Cloud-Native DevOps chapter](devops.md).
 
 ## ACR Tasks
 

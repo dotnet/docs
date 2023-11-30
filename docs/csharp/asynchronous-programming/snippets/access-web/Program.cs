@@ -1,7 +1,7 @@
 ﻿class Program
 {
     static async Task Main() =>
-        Console.WriteLine($"docs.microsoft.com/dotnet content length = {await AccessWeb.Example.GetUrlContentLengthAsync()}");
+        Console.WriteLine($"learn.microsoft.com/dotnet content length = {await AccessWeb.Example.GetUrlContentLengthAsync()}");
 }
 
 class AccessWeb
@@ -14,7 +14,7 @@ class AccessWeb
         var client = new HttpClient();
 
         Task<string> getStringTask =
-            client.GetStringAsync("https://docs.microsoft.com/dotnet");
+            client.GetStringAsync("https://learn.microsoft.com/dotnet");
 
         DoIndependentWork();
 

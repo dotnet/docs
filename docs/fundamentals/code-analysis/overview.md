@@ -2,7 +2,7 @@
 title: Code analysis in .NET
 titleSuffix: ""
 description: Learn about source code analysis in the .NET SDK.
-ms.date: 12/07/2022
+ms.date: 11/15/2023
 ms.topic: overview
 ms.custom: updateeachrelease
 helpviewer_keywords:
@@ -29,6 +29,37 @@ If rule violations are found by an analyzer, they're reported as a suggestion, w
 
 ### Enabled rules
 
+# [.NET 8](#tab/net-8)
+
+The following rules are enabled, by default, in .NET 8.
+
+| Diagnostic ID | Category | Severity | Description |
+| - | - | - | - |
+| [CA1416](quality-rules/ca1416.md) | Interoperability | Warning | Validate platform compatibility |
+| [CA1417](quality-rules/ca1417.md) | Interoperability | Warning | Do not use `OutAttribute` on string parameters for P/Invokes |
+| [CA1418](quality-rules/ca1418.md) | Interoperability | Warning | Use valid platform string |
+| [CA1420](quality-rules/ca1420.md) | Interoperability | Warning | Using features that require runtime marshalling when it's disabled will result in run-time exceptions |
+| [CA1422](quality-rules/ca1422.md) | Interoperability | Warning | Validate platform compatibility |
+| [CA1831](quality-rules/ca1831.md) | Performance | Warning | Use `AsSpan` instead of range-based indexers for string when appropriate |
+| [CA1856](quality-rules/ca1856.md) | Performance | Error | Incorrect usage of `ConstantExpected` attribute |
+| [CA1857](quality-rules/ca1857.md) | Performance | Warning | A constant is expected for the parameter |
+| [CA2013](quality-rules/ca2013.md) | Reliability | Warning | Do not use `ReferenceEquals` with value types |
+| [CA2014](quality-rules/ca2014.md) | Reliability | Warning | Do not use `stackalloc` in loops |
+| [CA2015](quality-rules/ca2015.md) | Reliability | Warning | Do not define finalizers for types derived from <xref:System.Buffers.MemoryManager%601> |
+| [CA2017](quality-rules/ca2017.md) | Reliability | Warning | Parameter count mismatch |
+| [CA2018](quality-rules/ca2018.md) | Reliability | Warning | The `count` argument to `Buffer.BlockCopy` should specify the number of bytes to copy |
+| [CA2021](quality-rules/ca2021.md) | Reliability | Warning | Do not call `Enumerable.Cast<T>` or `Enumerable.OfType<T>` with incompatible types |
+| [CA2200](quality-rules/ca2200.md) | Usage | Warning | Rethrow to preserve stack details |
+| [CA2247](quality-rules/ca2247.md) | Usage | Warning | Argument passed to `TaskCompletionSource` constructor should be <xref:System.Threading.Tasks.TaskCreationOptions> enum instead of <xref:System.Threading.Tasks.TaskContinuationOptions> |
+| [CA2252](quality-rules/ca2252.md) | Usage | Error | Opt in to preview features |
+| [CA2255](quality-rules/ca2255.md) | Usage | Warning | The `ModuleInitializer` attribute should not be used in libraries |
+| [CA2256](quality-rules/ca2256.md) | Usage | Warning | All members declared in parent interfaces must have an implementation in a `DynamicInterfaceCastableImplementation`-attributed interface |
+| [CA2257](quality-rules/ca2257.md) | Usage | Warning | Members defined on an interface with the `DynamicInterfaceCastableImplementationAttribute` should be `static` |
+| [CA2258](quality-rules/ca2258.md) | Usage | Warning | Providing a `DynamicInterfaceCastableImplementation` interface in Visual Basic is unsupported |
+| [CA2259](quality-rules/ca2259.md) | Usage | Warning | `ThreadStatic` only affects static fields |
+| [CA2260](quality-rules/ca2260.md) | Usage | Warning | Use correct type parameter |
+| [CA2261](quality-rules/ca2261.md) | Usage | Warning | Do not use `ConfigureAwaitOptions.SuppressThrowing` with `Task<TResult>` |
+
 # [.NET 7](#tab/net-7)
 
 The following rules are enabled, by default, in .NET 7.
@@ -47,8 +78,8 @@ The following rules are enabled, by default, in .NET 7.
 | [CA2017](quality-rules/ca2017.md) | Reliability | Warning | Parameter count mismatch |
 | [CA2018](quality-rules/ca2018.md) | Reliability | Warning | The `count` argument to `Buffer.BlockCopy` should specify the number of bytes to copy |
 | [CA2200](quality-rules/ca2200.md) | Usage | Warning | Rethrow to preserve stack details |
-| [CA2252](quality-rules/ca2252.md) | Usage | Error | Opt in to preview features |
 | [CA2247](quality-rules/ca2247.md) | Usage | Warning | Argument passed to `TaskCompletionSource` constructor should be <xref:System.Threading.Tasks.TaskCreationOptions> enum instead of <xref:System.Threading.Tasks.TaskContinuationOptions> |
+| [CA2252](quality-rules/ca2252.md) | Usage | Error | Opt in to preview features |
 | [CA2255](quality-rules/ca2255.md) | Usage | Warning | The `ModuleInitializer` attribute should not be used in libraries |
 | [CA2256](quality-rules/ca2256.md) | Usage | Warning | All members declared in parent interfaces must have an implementation in a `DynamicInterfaceCastableImplementation`-attributed interface |
 | [CA2257](quality-rules/ca2257.md) | Usage | Warning | Members defined on an interface with the `DynamicInterfaceCastableImplementationAttribute` should be `static` |

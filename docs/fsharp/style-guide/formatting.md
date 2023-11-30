@@ -1,7 +1,7 @@
 ---
 title: F# code formatting guidelines
 description: Learn guidelines for formatting F# code.
-ms.date: 09/19/2021
+ms.date: 11/01/2023
 ---
 # F# code formatting guidelines
 
@@ -505,7 +505,7 @@ let useAddEntry () =
          // foo
          bar ()
 
-// ❌ Not OK, code formatters will reformat to the above to avoid the vanity alignment.
+// ❌ Not OK, code formatters will reformat to the above to avoid reliance on whitespace alignment that is contingent to length of an identifier.
 let useAddEntry () =
     fun (input: {| name: string
                    amount: Amount
@@ -1300,6 +1300,14 @@ let comparer = {
 }
 ```
 
+Empty type definitions may be formatted on one line:
+
+```fsharp
+type AnEmptyType = class end
+```
+
+Regardless of the chosen page width, `= class end` should always be on the same line.
+
 ### Formatting index/slice expressions
 
 Index expressions shouldn't contain any spaces around the opening and closing brackets.
@@ -1961,7 +1969,7 @@ When these span multiple lines, use indentation and a new line to keep the inden
 
 ```fsharp
 // ✔️ OK
-type Foo () =
+type Foo() =
     let foo =
         fooBarBaz
         |> loremIpsumDolorSitAmet
@@ -1973,7 +1981,7 @@ type Foo () =
         |> theQuickBrownFoxJumpedOverTheLazyDog
 
 // ❌ Not OK - notice the "do" expression is indented one space less than the `let` expression
-type Foo () =
+type Foo() =
     let foo =
         fooBarBaz
         |> loremIpsumDolorSitAmet
@@ -2017,7 +2025,7 @@ When creating custom operations for [computation expressions](../language-refere
 
 ```fsharp
 // ✔️ OK
-type MathBuilder () =
+type MathBuilder() =
     member _.Yield _ = 0
 
     [<CustomOperation("addOne")>]
@@ -2090,7 +2098,7 @@ Always prefer the .NET style, except for five specific types:
 1. For F# Lists, use the postfix form: `int list` rather than `list<int>`.
 2. For F# Options, use the postfix form: `int option` rather than `option<int>`.
 3. For F# Value Options, use the postfix form: `int voption` rather than `voption<int>`.
-4. For F# arrays, use the syntactic name `int[]` rather than `int array` or `array<int>`.
+4. For F# arrays, use the postfix form: `int array` rather than `array<int>` or `int[]`.
 5. For Reference Cells, use `int ref` rather than `ref<int>` or `Ref<int>`.
 
 For all other types, use the prefix form.
@@ -2178,9 +2186,9 @@ For inline anonymous record types, you may also use `Stroustrup` style:
 
 ```fsharp
 let f
-    (x : {|
-        x : int
-        y : AReallyLongTypeThatIsMuchLongerThan40Characters
+    (x: {|
+        x: int
+        y: AReallyLongTypeThatIsMuchLongerThan40Characters
      |})
     =
     x
@@ -2307,7 +2315,7 @@ If both generic type arguments/constraints and function parameters don’t fit, 
 
 ```fsharp
 // ✔️ OK
-let f<'T1, 'T2 when 'T1 : equality and 'T2 : comparison>
+let f<'T1, 'T2 when 'T1: equality and 'T2: comparison>
     param
     =
     // function body
@@ -2318,9 +2326,9 @@ If the type parameters or constraints are too long, break and align them as show
 ```fsharp
 // ✔️ OK
 let inline f< ^T1, ^T2
-    when ^T1 : (static member Foo1: unit -> ^T2)
-    and ^T2 : (member Foo2: unit -> int)
-    and ^T2 : (member Foo3: string -> ^T1 option)>
+    when ^T1: (static member Foo1: unit -> ^T2)
+    and ^T2: (member Foo2: unit -> int)
+    and ^T2: (member Foo3: string -> ^T1 option)>
     arg1
     arg2
     =
@@ -2331,10 +2339,10 @@ If the type parameters/constraints are broken up, but there are no normal functi
 
 ```f#
 // ✔️ OK
-let inline f<^T1, ^T2
-    when ^T1 : (static member Foo1: unit -> ^T2)
-    and ^T2 : (member Foo2: unit -> int)
-    and ^T2 : (member Foo3: string -> ^T1 option)>
+let inline f< ^T1, ^T2
+    when ^T1: (static member Foo1: unit -> ^T2)
+    and ^T2: (member Foo2: unit -> int)
+    and ^T2: (member Foo3: string -> ^T1 option)>
     =
     // function body
 ```
@@ -2402,6 +2410,30 @@ type MyClassDerived(y: string) =
         """)
 ```
 
+#### Formatting the primary constructor
+
+In default formatting conventions, no space is added between the type name and the parentheses for the primary constructor.
+
+```fsharp
+// ✔️ OK
+type MyClass() =
+    class
+    end
+
+type MyClassWithParams(x: int, y: int) =
+    class
+    end
+        
+// ❌ Not OK
+type MyClass () =
+    class
+    end
+
+type MyClassWithParams (x: int, y: int) =
+    class
+    end
+```
+
 #### Multiple constructors
 
 When the `inherit` clause is part of a record, put it on the same line if it is short.
@@ -2409,14 +2441,14 @@ And put it on the next line, indented by one level, if it is long or multiline.
 
 ```fsharp
 type BaseClass =
-    val string1 : string
+    val string1: string
     new () = { string1 = "" }
     new (str) = { string1 = str }
 
 type DerivedClass =
     inherit BaseClass
 
-    val string2 : string
+    val string2: string
     new (str1, str2) = { inherit BaseClass(str1); string2 = str2 }
     new () = 
         { inherit 

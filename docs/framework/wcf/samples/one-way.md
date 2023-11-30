@@ -6,7 +6,7 @@ ms.assetid: 74e3e03d-cd15-4191-a6a5-1efa2dcb9e73
 ---
 # One-Way
 
-The [Oneway sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates a service contact with one-way service operations. The client does not wait for service operations to complete as is the case with two-way service operations. This sample is based on the [Getting Started](getting-started-sample.md) and uses the `wsHttpBinding` binding. The service in this sample is a self-hosted console application to enable you to observe the service that receives and processes requests. The client is also a console application.
+The [Oneway sample](https://github.com/dotnet/samples/tree/main/framework/wcf/Basic/Contract/Service/Oneway/CS) demonstrates a service contact with one-way service operations. The client does not wait for service operations to complete as is the case with two-way service operations. This sample is based on the [Getting Started](getting-started-sample.md) and uses the `wsHttpBinding` binding. The service in this sample is a self-hosted console application to enable you to observe the service that receives and processes requests. The client is also a console application.
 
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.

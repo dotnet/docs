@@ -38,7 +38,7 @@ The eShopOnContainers reference application has been widely accepted across the 
 
 ## eShopOnDapr
 
-An updated version of eShop accompanies this book. It's called [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr). The update evolves the earlier eShopOnContainers application by integrating Dapr building blocks. Figure 12-3 shows the new solution architecture:  
+An updated version of eShop accompanies this book. It's called [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr). The update evolves the earlier eShopOnContainers application by integrating Dapr building blocks. Figure 12-3 shows the new solution architecture:
 
 :::image type="content" source="./media/reference-application/eshop-on-dapr.png" alt-text="eShopOnDapr reference application architecture.":::
 
@@ -119,7 +119,7 @@ public class RedisBasketRepository : IBasketRepository
 
 This code uses the third party `StackExchange.Redis` NuGet package. The following steps are required to load the shopping basket for a given customer:
 
-1. Inject a Redis `ConnectionMultiplexer` into the constructor. The `ConnectionMultiplexer` is registered with the dependency injection framework in the `Startup.cs` file:
+1. Inject a Redis `ConnectionMultiplexer` into the constructor. The `ConnectionMultiplexer` is registered with the dependency injection framework in the _Program.cs_ file:
 
     ```csharp
     services.AddSingleton<ConnectionMultiplexer>(sp =>
@@ -162,7 +162,7 @@ public class DaprBasketRepository : IBasketRepository
 
 The updated code uses the Dapr .NET SDK to read and write data using the state management building block. The new steps to load the basket for a customer are dramatically simplified:
 
-1. Inject a `DaprClient` into the constructor. The `DaprClient` is registered with the dependency injection framework in the `Startup.cs` file.
+1. Inject a `DaprClient` into the constructor. The `DaprClient` is registered with the dependency injection framework in the _Program.cs_`_ file.
 1. Use the `DaprClient.GetStateAsync` method to load the customer's shopping basket items from the configured state store and return the result.
 
 The updated implementation still uses Redis as the underlying data store. But, note how Dapr abstracts the `StackExchange.Redis` references and complexity from the application. The application no longer requires a direct dependency on Redis. A Dapr configuration file is all that's needed:
@@ -604,7 +604,6 @@ public Task SendOrderConfirmationAsync(Order order)
             ["subject"] = $"Your eShopOnDapr Order #{order.OrderNumber}"
         });
 }
-
 ```
 
 As you can see in this example, `message` contains the message body. The `CreateEmailBody` method simply formats a string with the body text. The name of the binding to invoke is `sendmail` and the operation is `create`. The `metadata` specifies the email sender, recipient, and subject for the email message. If these values are static, they can also be included in the metadata fields in the configuration file.

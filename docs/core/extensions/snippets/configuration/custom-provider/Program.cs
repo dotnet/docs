@@ -4,18 +4,16 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using CustomProvider.Example;
 
-using IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureAppConfiguration((_, configuration) =>
-    {
-        configuration.Sources.Clear();
-        configuration.AddEntityConfiguration();
-    })
-    .ConfigureServices((context, services) =>
-        services.Configure<WidgetOptions>(
-            context.Configuration.GetSection("WidgetOptions")))
-    .Build();
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
-var options = host.Services.GetRequiredService<IOptions<WidgetOptions>>().Value;
+builder.Configuration.Sources.Clear();
+builder.Configuration.AddEntityConfiguration();
+builder.Services.Configure<WidgetOptions>(
+    builder.Configuration.GetSection("WidgetOptions"));
+
+using IHost host = builder.Build();
+
+WidgetOptions options = host.Services.GetRequiredService<IOptions<WidgetOptions>>().Value;
 Console.WriteLine($"DisplayLabel={options.DisplayLabel}");
 Console.WriteLine($"EndpointId={options.EndpointId}");
 Console.WriteLine($"WidgetRoute={options.WidgetRoute}");

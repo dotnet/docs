@@ -3,10 +3,12 @@ title: Install .NET on RHEL and CentOS Stream
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Red Hat Enterprise Linux.
 author: adegeo
 ms.author: adegeo
-ms.date: 12/21/2022
+ms.date: 11/14/2023
 ---
 
 # Install the .NET SDK or the .NET Runtime on RHEL and CentOS Stream
+
+[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
 .NET is supported on Red Hat Enterprise Linux (RHEL). This article describes how to install .NET on RHEL and CentOS Stream.
 
@@ -25,11 +27,11 @@ The following table is a list of currently supported .NET releases on both RHEL 
 
 | Distribution           | .NET      |
 | ---------------------- | --------- |
-| RHEL 9 (9.1)           | 7, 6      |
-| RHEL 8 (8.7)           | 7, 6      |
+| RHEL 9 (9.1)           | 8, 7, 6   |
+| RHEL 8 (8.7)           | 8, 7, 6   |
 | RHEL 7                 | 6         |
-| CentOS Stream 9        | 7, 6      |
-| CentOS Stream 8        | 7, 6      |
+| CentOS Stream 9        | 8, 7, 6   |
+| CentOS Stream 8        | 8, 7, 6   |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -45,13 +47,21 @@ The following table is a list of currently supported .NET releases on both RHEL 
 
 .NET is included in the AppStream repositories for RHEL 9.
 
-[!INCLUDE [linux-dnf-install-70](includes/linux-install-70-dnf.md)]
+[!INCLUDE [linux-dnf-install-80](includes/linux-install-80-dnf.md)]
 
 ## RHEL 8
 
 .NET is included in the AppStream repositories for RHEL 8.
 
-[!INCLUDE [linux-dnf-install-70](includes/linux-install-70-dnf.md)]
+[!INCLUDE [linux-dnf-install-80](includes/linux-install-80-dnf.md)]
+
+## RHEL 7 ❌ .NET 8
+
+.NET 8 isn't officially supported on RHEL 7. To install .NET 8, see [Install .NET on Linux by using an install script or by extracting binaries](linux-scripted-manual.md).
+
+## RHEL 7 ❌ .NET 7
+
+.NET 7 isn't officially supported on RHEL 7. To install .NET 7, see [Install .NET on Linux by using an install script or by extracting binaries](linux-scripted-manual.md).
 
 ## RHEL 7 ✔️ .NET 6
 
@@ -99,13 +109,16 @@ As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime 
 
 .NET is included in the AppStream repositories for CentOS Stream 9.
 
-[!INCLUDE [linux-dnf-install-70](includes/linux-install-70-dnf.md)]
+[!INCLUDE [linux-dnf-install-80](includes/linux-install-80-dnf.md)]
 
 ## CentOS Stream 8 ✔️
 
-.NET is included in the AppStream repositories for CentOS Stream 8.
+Use the Microsoft repository to install .NET:
 
-[!INCLUDE [linux-dnf-install-70](includes/linux-install-70-dnf.md)]
+```bash
+sudo rpm -Uvh https://packages.microsoft.com/config/centos/8/packages-microsoft-prod.rpm
+sudo yum install dotnet-sdk-8.0
+```
 
 ## Dependencies
 

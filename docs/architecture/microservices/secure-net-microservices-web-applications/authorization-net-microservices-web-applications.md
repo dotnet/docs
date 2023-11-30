@@ -108,6 +108,24 @@ In addition to registering custom policy requirements with `AddPolicy` calls, yo
 
 An example of a custom authorization requirement and handler for checking a user's age (based on a `DateOfBirth` claim) is available in the ASP.NET Core [authorization documentation](https://docs.asp.net/en/latest/security/authorization/policies.html).
 
+## Authorization and minimal apis
+
+ASP.NET supports minimal APIs as an alternative to controller-based APIs. Authorization policies are the recommended way to configure authorization for minimal APIs, as this example demonstrates:
+
+```csharp
+// Program.cs
+builder.Services.AddAuthorizationBuilder()
+  .AddPolicy("admin_greetings", policy =>
+        policy
+            .RequireRole("admin")
+            .RequireScope("greetings_api"));
+
+// build the app
+
+app.MapGet("/hello", () => "Hello world!")
+  .RequireAuthorization("admin_greetings");
+```
+
 ## Additional resources
 
 - **ASP.NET Core Authentication** \
@@ -121,6 +139,8 @@ An example of a custom authorization requirement and handler for checking a user
 
 - **Custom Policy-Based Authorization** \
   [https://learn.microsoft.com/aspnet/core/security/authorization/policies](/aspnet/core/security/authorization/policies)
+
+- **Authentication and authorization in minimal APIs** \ [https://learn.microsoft.com/aspnet/core/fundamentals/minimal-apis/security](/aspnet/core/fundamentals/minimal-apis/security)
 
 >[!div class="step-by-step"]
 >[Previous](index.md)

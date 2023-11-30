@@ -51,10 +51,10 @@ public class HelpAttribute : Attribute
 // </DefineAttribute>
 
 // <UseAttributes>
-[Help("https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/features")]
+[Help("https://learn.microsoft.com/dotnet/csharp/tour-of-csharp/features")]
 public class Widget
 {
-    [Help("https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/features",
+    [Help("https://learn.microsoft.com/dotnet/csharp/tour-of-csharp/features",
     Topic = "Display")]
     public void Display(string text) { }
 }
@@ -88,7 +88,7 @@ class Features
     public async Task<int> RetrieveDocsHomePage()
     {
         var client = new HttpClient();
-        byte[] content = await client.GetByteArrayAsync("https://docs.microsoft.com/");
+        byte[] content = await client.GetByteArrayAsync("https://learn.microsoft.com/");
 
         Console.WriteLine($"{nameof(RetrieveDocsHomePage)}: Finished downloading.");
         return content.Length;
@@ -140,33 +140,15 @@ class Features
 
     private static void InitializeArray()
     {
+        // <InitializeArray>
+        int[] a = [1, 2, 3];
+        // </InitializeArray>
+        // <EnumerateArray>
+        foreach (int item in a)
         {
-            // <InitializeArray>
-            int[] a = new int[] { 1, 2, 3 };
-            // </InitializeArray>
+            Console.WriteLine(item);
         }
-        {
-            // <InitializeShortened>
-            int[] a = { 1, 2, 3 };
-            // </InitializeShortened>
-        }
-        {
-            // <InitializeGenerated>
-            int[] t = new int[3];
-            t[0] = 1;
-            t[1] = 2;
-            t[2] = 3;
-            int[] a = t;
-            // </InitializeGenerated>
-
-            // <EnumerateArray>
-            foreach (int item in a)
-            {
-                Console.WriteLine(item);
-            }
-            // </EnumerateArray>
-        }
-
+        // </EnumerateArray>
     }
 
     private static void ArrayOfArrays()

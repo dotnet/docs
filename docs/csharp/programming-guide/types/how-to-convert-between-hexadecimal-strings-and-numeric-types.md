@@ -4,7 +4,7 @@ description: Learn how to convert between hexadecimal strings and numeric types.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "hexadecimal strings [C#], converting to numeric type"
-  - "conversions [C#], hexidecimal strings"
+  - "conversions [C#], hexadecimal strings"
   - "strings [C#], converting hexadecimal strings"
   - "hexadecimal strings [C#]"
 ms.topic: how-to

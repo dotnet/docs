@@ -35,7 +35,7 @@ This tutorial assumes you're familiar with C# and .NET, including either Visual 
 
 ## Run the starter application
 
-You can get the code for the starter application used in this tutorial from the [dotnet/docs](https://github.com/dotnet/docs) repository in the [csharp/whats-new/tutorials](https://github.com/dotnet/docs/tree/main/docs/csharp/tutorials/snippets/generate-consume-asynchronous-streams/start) folder.
+You can get the code for the starter application used in this tutorial from the [dotnet/docs](https://github.com/dotnet/docs) repository in the [asynchronous-programming/snippets](https://github.com/dotnet/docs/tree/main/docs/csharp/asynchronous-programming/snippets/generate-consume-asynchronous-streams/start) folder.
 
 The starter application is a console application that uses the [GitHub GraphQL](https://developer.github.com/v4/) interface to retrieve recent issues written in the [dotnet/docs](https://github.com/dotnet/docs) repository. Start by looking at the following code for the starter app `Main` method:
 
@@ -52,6 +52,12 @@ When you run the starter application, you can make some important observations a
 The implementation reveals why you observed the behavior discussed in the previous section. Examine the code for `RunPagedQueryAsync`:
 
 :::code language="csharp" source="snippets/generate-consume-asynchronous-streams/start/Program.cs" id="SnippetRunPagedQuery" :::
+
+The very first thing this method does is to create the POST object, using the `GraphQLRequest` class:
+
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/start/Program.cs" id="SnippetStarterGraphQLRequest":::
+
+which helps to form the POST object body, and correctly convert it to JSON presented as single string with the `ToJsonText` method, which removes all newline characters from your request body marking them with the `\` (backslash) escape character.
 
 Let's concentrate on the paging algorithm and async structure of the preceding code. (You can consult the [GitHub GraphQL documentation](https://developer.github.com/v4/guides/) for details on the GitHub GraphQL API.) The `RunPagedQueryAsync` method enumerates the issues from most recent to oldest. It requests 25 issues per page and examines the `pageInfo` structure of the response to continue with the previous page. That follows GraphQL's standard paging support for multi-page responses. The response includes a `pageInfo` object that includes a `hasPreviousPages` value and a `startCursor` value used to request the previous page. The issues are in the `nodes` array. The `RunPagedQueryAsync` method appends these nodes to an array that contains all the results from all pages.
 
@@ -109,7 +115,7 @@ The new interface <xref:System.Collections.Generic.IAsyncEnumerator%601> derives
 
 ```csharp
 int num = 0;
-var enumerator = RunPagedQueryAsync(client, PagedIssueQuery, "docs").GetEnumeratorAsync();
+var enumerator = RunPagedQueryAsync(client, PagedIssueQuery, "docs").GetAsyncEnumerator();
 try
 {
     while (await enumerator.MoveNextAsync())
@@ -137,7 +143,7 @@ You use another extension method, <xref:System.Threading.Tasks.TaskAsyncEnumerab
 
 :::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetEnumerateWithCancellation" :::
 
-You can get the code for the finished tutorial from the [dotnet/docs](https://github.com/dotnet/docs) repository in the [csharp/whats-new/tutorials](https://github.com/dotnet/docs/tree/main/docs/csharp/tutorials/snippets/generate-consume-asynchronous-streams/finished) folder.
+You can get the code for the finished tutorial from the [dotnet/docs](https://github.com/dotnet/docs) repository in the [asynchronous-programming/snippets](https://github.com/dotnet/docs/tree/main/docs/csharp/asynchronous-programming/snippets/generate-consume-asynchronous-streams/finished) folder.
 
 ## Run the finished application
 

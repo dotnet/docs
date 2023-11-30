@@ -1,7 +1,4 @@
-﻿Imports System.Diagnostics
-Imports System.Collections.Generic
-
-Public Class Class7
+﻿Public Class Class7
     ' f5fc0d51-67ce-4c36-9f09-31c9a91c94e9
     ' For...Next Statement (Visual Basic)
 
@@ -79,8 +76,6 @@ Public Class Class7
         '</Snippet115>
     End Sub
 
-
-
     '<Snippet116>
     Public Enum Mammals
         Buffalo
@@ -90,7 +85,6 @@ Public Class Class7
         Whale
     End Enum
 
-
     Public Sub ListSomeMammals()
         For mammal As Mammals = Mammals.Gazelle To Mammals.Rhinoceros
             Debug.Write(mammal.ToString & " ")
@@ -99,8 +93,6 @@ Public Class Class7
         ' Output: Gazelle Mongoose Rhinoceros
     End Sub
     '</Snippet116>
-
-
 
     '<Snippet117>
     Private Class Distance
@@ -128,7 +120,6 @@ Public Class Class7
         End Operator
     End Class
 
-
     Public Sub ListDistances()
         Dim distFrom As New Distance(10)
         Dim distTo As New Distance(25)
@@ -142,6 +133,5 @@ Public Class Class7
         ' Output: 10 14 18 22 
     End Sub
     '</Snippet117>
-
 
 End Class

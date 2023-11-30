@@ -474,7 +474,7 @@ Deserializing a `DataSet` or `DataTable` in this manner from an untrusted JSON b
 
 ## Deserialize a DataSet or DataTable via BinaryFormatter
 
-Developers must never use `BinaryFormatter`, `NetDataContractSerializer`, `SoapFormatter`, or related ***unsafe*** formatters to deserialize a `DataSet` or `DataTable` instance from an untrusted payload:
+You must never use `BinaryFormatter`, `NetDataContractSerializer`, `SoapFormatter`, or related **_unsafe_** formatters to deserialize a `DataSet` or `DataTable` instance from an untrusted payload:
 
 * This is susceptible to a full remote code execution attack.
 * Using a custom `SerializationBinder` is not sufficient to prevent such an attack.

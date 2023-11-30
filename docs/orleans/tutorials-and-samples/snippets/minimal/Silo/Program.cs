@@ -1,33 +1,14 @@
 ﻿using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-try
-{
-    using IHost host = await StartSiloAsync();
-    Console.WriteLine("\n\n Press Enter to terminate...\n\n");
-    Console.ReadLine();
+IHostBuilder builder = Host.CreateDefaultBuilder(args)
+    .UseOrleans(silo =>
+    {
+        silo.UseLocalhostClustering()
+            .ConfigureLogging(logging => logging.AddConsole());
+    })
+    .UseConsoleLifetime();
 
-    await host.StopAsync();
+using IHost host = builder.Build();
 
-    return 0;
-}
-catch (Exception ex)
-{
-    Console.WriteLine(ex);
-    return 1;
-}
-
-static async Task<IHost> StartSiloAsync()
-{
-    var builder = new HostBuilder()
-        .UseOrleans(silo =>
-        {
-            silo.UseLocalhostClustering()
-                .ConfigureLogging(logging => logging.AddConsole());
-        });
-
-    var host = builder.Build();
-    await host.StartAsync();
-
-    return host;
-}
+await host.RunAsync();

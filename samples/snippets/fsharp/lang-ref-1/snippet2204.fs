@@ -1,6 +1,5 @@
 type Incrementor(delta) =
-    member this.Increment(i : int byref) =
-        i <- i + delta
+    member this.Increment(i: int byref) = i <- i + delta
 
 let incrementor = new Incrementor(1)
 let mutable myDelta1 = 10

@@ -52,7 +52,7 @@ public class ClusterFixture : IDisposable
     public ClusterFixture()
     {
         var builder = new TestClusterBuilder();
-        var cluster = builder.Build();
+        Cluster = builder.Build();
         Cluster.Deploy();
     }
 

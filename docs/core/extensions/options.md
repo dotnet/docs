@@ -1,9 +1,9 @@
 ---
 title: Options pattern
 author: IEvangelist
-description: Learn how to use the options pattern to represent groups of related settings in .NET apps.
+description: Learn the options pattern to represent groups of related settings in .NET apps. The options pattern uses classes to provide strongly-typed access to settings.
 ms.author: dapine
-ms.date: 11/30/2022
+ms.date: 06/23/2023
 ---
 
 # Options pattern in .NET
@@ -38,18 +38,16 @@ The following code is part of the _Program.cs_ C# file and:
 * Calls [ConfigurationBinder.Bind](xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind%2A) to bind the `TransientFaultHandlingOptions` class to the `"TransientFaultHandlingOptions"` section.
 * Displays the configuration data.
 
-:::code language="csharp" source="snippets/configuration/console-json/Program.cs" highlight="16-23" range="1-29":::
+:::code language="csharp" source="snippets/configuration/console-json/Program.cs" highlight="15-20" range="1-29":::
 
 In the preceding code, the JSON configuration file has its `"TransientFaultHandlingOptions"` section bound to the `TransientFaultHandlingOptions` instance. This hydrates the C# objects properties with those corresponding values from the configuration.
 
 [`ConfigurationBinder.Get<T>`](xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Get%2A) binds and returns the specified type. `ConfigurationBinder.Get<T>` may be more convenient than using `ConfigurationBinder.Bind`. The following code shows how to use `ConfigurationBinder.Get<T>` with the `TransientFaultHandlingOptions` class:
 
 ```csharp
-IConfigurationRoot configurationRoot = configuration.Build();
-
 var options =
-    configurationRoot.GetSection(nameof(TransientFaultHandlingOptions))
-                     .Get<TransientFaultHandlingOptions>();
+    builder.Configuration.GetSection(nameof(TransientFaultHandlingOptions))
+        .Get<TransientFaultHandlingOptions>();
 
 Console.WriteLine($"TransientFaultHandlingOptions.Enabled={options.Enabled}");
 Console.WriteLine($"TransientFaultHandlingOptions.AutoRetryDelay={options.AutoRetryDelay}");
@@ -63,22 +61,14 @@ In the preceding code, the `ConfigurationBinder.Get<T>` is used to acquire an in
 An alternative approach when using the options pattern is to bind the `"TransientFaultHandlingOptions"` section and add it to the [dependency injection service container](dependency-injection.md). In the following code, `TransientFaultHandlingOptions` is added to the service container with <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%2A> and bound to configuration:
 
 ```csharp
-services.Configure<TransientFaultHandlingOptions>(
-    configurationRoot.GetSection(
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Services.Configure<TransientFaultHandlingOptions>(
+    builder.Configuration.GetSection(
         key: nameof(TransientFaultHandlingOptions)));
 ```
 
-To access both the `services` and the `configurationRoot` objects, you must use the <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureServices%2A> method &mdash; the <xref:Microsoft.Extensions.Configuration.IConfiguration> is available as the <xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration?displayProperty=nameWithType> property.
-
-```csharp
-Host.CreateDefaultBuilder(args)
-    .ConfigureServices((context, services) =>
-    {
-        var configurationRoot = context.Configuration;
-        services.Configure<TransientFaultHandlingOptions>(
-            configurationRoot.GetSection(nameof(TransientFaultHandlingOptions)));
-    });
-```
+The `builder` in the preceding example is an instance of <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder>.
 
 > [!TIP]
 > The `key` parameter is the name of the configuration section to search for. It does *not* have to match the name of the type that represents it. For example, you could have a section named `"FaultHandling"` and it could be represented by the `TransientFaultHandlingOptions` class. In this instance, you'd pass `"FaultHandling"` to the <xref:Microsoft.Extensions.Configuration.IConfiguration.GetSection%2A> function instead. The `nameof` operator is used as a convenience when the named section matches the type it corresponds to.
@@ -118,6 +108,8 @@ In the preceding code, changes to the JSON configuration file after the app has 
 
 <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601> is used by <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> to cache `TOptions` instances. The <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601> invalidates options instances in the monitor so that the value is recomputed (<xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601.TryRemove%2A>). Values can be manually introduced with <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601.TryAdd%2A>. The <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601.Clear%2A> method is used when all named instances should be recreated on demand.
 
+<xref:Microsoft.Extensions.Options.IOptionsChangeTokenSource%601> is used to fetch the <xref:Microsoft.Extensions.Primitives.IChangeToken> that tracks changes to the underlying `TOptions` instance. For more information on change-token primitives, see [Change notifications](primitives.md).
+
 ### Options interfaces benefits
 
 Using a generic wrapper type gives you the ability to decouple the lifetime of the option from the DI container. The <xref:Microsoft.Extensions.Options.IOptions%601.Value?displayProperty=nameWithType> interface provides a layer of abstraction, including generic constraints, on your options type. This provides the following benefits:
@@ -142,21 +134,23 @@ The following code uses <xref:Microsoft.Extensions.Options.IOptionsSnapshot%601>
 The following code registers a configuration instance which `TransientFaultHandlingOptions` binds against:
 
 ```csharp
-services.Configure<TransientFaultHandlingOptions>(
-    configurationRoot.GetSection(
-        nameof(TransientFaultHandlingOptions)));
+builder.Services
+    .Configure<TransientFaultHandlingOptions>(
+        configurationRoot.GetSection(
+            nameof(TransientFaultHandlingOptions)));
 ```
 
 In the preceding code, the `Configure<TOptions>` method is used to register a configuration instance that `TOptions` will bind against, and updates the options when the configuration changes.
 
 ## IOptionsMonitor
 
-The following code registers a configuration instance which `TransientFaultHandlingOptions` binds against.
+To use the options monitor, options objects are configured in the same way from a configuration section.
 
 ```csharp
-services.Configure<TransientFaultHandlingOptions>(
-    configurationRoot.GetSection(
-        nameof(TransientFaultHandlingOptions)));
+builder.Services
+    .Configure<TransientFaultHandlingOptions>(
+        configurationRoot.GetSection(
+            nameof(TransientFaultHandlingOptions)));
 ```
 
 The following example uses <xref:Microsoft.Extensions.Options.IOptionsMonitor%601>:
@@ -211,22 +205,23 @@ public class Features
 The following code configures the named options:
 
 ```csharp
-ConfigureServices(services =>
-{
-    services.Configure<Features>(
-        Features.Personalize,
-        Configuration.GetSection("Features:Personalize"));
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
-    services.Configure<Features>(
-        Features.WeatherStation,
-        Configuration.GetSection("Features:WeatherStation"));
-});
+// Omitted for brevity...
+
+builder.Services.Configure<Features>(
+    Features.Personalize,
+    builder.Configuration.GetSection("Features:Personalize"));
+
+builder.Services.Configure<Features>(
+    Features.WeatherStation,
+    builder.Configuration.GetSection("Features:WeatherStation"));
 ```
 
 The following code displays the named options:
 
 ```csharp
-public class Service
+public class sealed Service
 {
     private readonly Features _personalizeFeature;
     private readonly Features _weatherStationFeature;
@@ -254,7 +249,8 @@ Services can be accessed from dependency injection while configuring options in 
 - Pass a configuration delegate to [Configure](xref:Microsoft.Extensions.Options.OptionsBuilder%601.Configure%2A) on [OptionsBuilder\<TOptions>](xref:Microsoft.Extensions.Options.OptionsBuilder%601). `OptionsBuilder<TOptions>` provides overloads of [Configure](xref:Microsoft.Extensions.Options.OptionsBuilder%601.Configure%2A) that allow use of up to five services to configure options:
 
   ```csharp
-  services.AddOptions<MyOptions>("optionalName")
+  builder.Services
+      .AddOptions<MyOptions>("optionalName")
       .Configure<ExampleService, ScopedService, MonitorService>(
           (options, es, ss, ms) =>
               options.Property = DoSomethingWith(es, ss, ms));
@@ -295,7 +291,8 @@ The following code:
 - Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderDataAnnotationsExtensions.ValidateDataAnnotations%2A> to enable validation using `DataAnnotations`.
 
 ```csharp
-services.AddOptions<SettingsOptions>()
+builder.Services
+    .AddOptions<SettingsOptions>()
     .Bind(Configuration.GetSection(SettingsOptions.ConfigurationSectionName))
     .ValidateDataAnnotations();
 ```
@@ -309,7 +306,8 @@ The following code displays the configuration values or the validation errors:
 The following code applies a more complex validation rule using a delegate:
 
 ```csharp
-services.AddOptions<SettingsOptions>()
+builder.Services
+    .AddOptions<SettingsOptions>()
     .Bind(Configuration.GetSection(SettingsOptions.ConfigurationSectionName))
     .ValidateDataAnnotations()
     .Validate(config =>
@@ -334,13 +332,18 @@ The following class implements <xref:Microsoft.Extensions.Options.IValidateOptio
 > [!NOTE]
 > This example code relies on the [Microsoft.Extensions.Configuration.Json](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Json) NuGet package.
 
-Using the preceding code, validation is enabled in `ConfigureServices` with the following code:
+Using the preceding code, validation is enabled when configuring services with the following code:
 
 ```csharp
-services.Configure<SettingsOptions>(
-    Configuration.GetSection(
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+// Omitted for brevity...
+
+builder.Services.Configure<SettingsOptions>(
+    builder.Configuration.GetSection(
         SettingsOptions.ConfigurationSectionName));
-services.TryAddEnumerable(
+
+builder.Services.TryAddEnumerable(
     ServiceDescriptor.Singleton
         <IValidateOptions<SettingsOptions>, ValidateSettingsOptions>());
 ```
@@ -350,7 +353,7 @@ services.TryAddEnumerable(
 Set post-configuration with <xref:Microsoft.Extensions.Options.IPostConfigureOptions%601>. Post-configuration runs after all <xref:Microsoft.Extensions.Options.IConfigureOptions%601> configuration occurs, and can be useful in scenarios when you need to override configuration:
 
 ```csharp
-services.PostConfigure<CustomOptions>(customOptions =>
+builder.Services.PostConfigure<CustomOptions>(customOptions =>
 {
     customOptions.Option1 = "post_configured_option1_value";
 });
@@ -359,7 +362,7 @@ services.PostConfigure<CustomOptions>(customOptions =>
 <xref:Microsoft.Extensions.Options.IPostConfigureOptions%601.PostConfigure%2A> is available to post-configure named options:
 
 ```csharp
-services.PostConfigure<CustomOptions>("named_options_1", customOptions =>
+builder.Services.PostConfigure<CustomOptions>("named_options_1", customOptions =>
 {
     customOptions.Option1 = "post_configured_option1_value";
 });
@@ -368,7 +371,7 @@ services.PostConfigure<CustomOptions>("named_options_1", customOptions =>
 Use <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigureAll%2A> to post-configure all configuration instances:
 
 ```csharp
-services.PostConfigureAll<CustomOptions>(customOptions =>
+builder.Services.PostConfigureAll<CustomOptions>(customOptions =>
 {
     customOptions.Option1 = "post_configured_option1_value";
 });

@@ -3,7 +3,7 @@ title: TLS/SSL best practices
 description: Learn the best practices when using SslStream in .NET.
 author: rzikm
 ms.author: radekzikmund
-ms.date: 1/9/2023
+ms.date: 03/13/2023
 ---
 
 # TLS/SSL best practices

@@ -11,7 +11,7 @@ There are two primary concepts in F#: functions and types. This tour emphasizes 
 
 ## Executing the code online
 
-If you don't have F# installed on your machine, you can execute all of the samples in your browser with [Try F# in Fable](https://fable.io/repl3/). Fable is a dialect of F# that executes directly in your browser. To view the samples that follow in the REPL, check out **Samples > Learn > Tour of F#** in the left-hand menu bar of the Fable REPL.
+If you don't have F# installed on your machine, you can execute all of the samples in your browser with [Try F# in Fable](https://fable.io/repl/). Fable is a dialect of F# that executes directly in your browser. To view the samples that follow in the REPL, check out **Samples > Learn > Tour of F#** in the left-hand menu bar of the Fable REPL.
 
 ## Functions and Modules
 

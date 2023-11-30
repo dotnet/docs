@@ -1,7 +1,7 @@
 ---
 title: Transport Layer Security (TLS) best practices with the .NET Framework
 description: Describes best practices using Transport Layer Security (TLS) with the .NET Framework
-ms.date: 10/22/2018
+ms.date: 07/18/2023
 helpviewer_keywords: 
   - "sending data, Internet security"
   - "protocols, Internet security"
@@ -38,11 +38,11 @@ When your app lets the OS choose the TLS version:
 
 The section [Audit your code and make code changes](#audit-your-code-and-make-code-changes) covers auditing and updating your code.
 
-This article explains how to enable the strongest security available for the version of the .NET Framework that your app targets and runs on. When an app explicitly sets a security protocol and version, it opts out of any other alternative, and opts out of .NET Framework and OS default behavior. If you want your app to be able to negotiate a TLS 1.2 connection, explicitly setting to a lower TLS version prevents a TLS 1.2 connection.
+This article explains how to enable the strongest security available for the version of .NET Framework that your app targets and runs on. When an app explicitly sets a security protocol and version, it opts out of any other alternative, and opts out of .NET Framework and OS default behavior. If you want your app to be able to negotiate a TLS 1.2 connection, explicitly setting to a lower TLS version prevents a TLS 1.2 connection.
 
 If you can't avoid hardcoding a protocol version, we strongly recommend that you specify TLS 1.2. For guidance on identifying and removing TLS 1.0 dependencies, download the [Solving the TLS 1.0 Problem](https://www.microsoft.com/download/details.aspx?id=55266) white paper.
 
-WCF Supports TLS1.0, 1.1 and 1.2 as the default in .NET Framework 4.7. Starting with .NET Framework 4.7.1, WCF defaults to the operating system configured version. If an application is explicitly configured with `SslProtocols.None`, WCF uses the operating system default setting when using the NetTcp transport.
+WCF Supports TLS 1.0, 1.1, and 1.2 as the default in .NET Framework 4.7. Starting with .NET Framework 4.7.1, WCF defaults to the operating system configured version. If an application is explicitly configured with `SslProtocols.None`, WCF uses the operating system default setting when using the NetTcp transport.
 
 You can ask questions about this document in the GitHub issue [Transport Layer Security (TLS) best practices with the .NET Framework](https://github.com/dotnet/docs/issues/4675).
 
@@ -80,14 +80,14 @@ The remainder of this topic is not relevant when targeting .NET Framework 4.7 or
 
 ### For WCF TCP transport using transport security with certificate credentials
 
-WCF uses the same networking stack as the rest of the .NET Framework.
+WCF uses the same networking stack as the rest of .NET Framework.
 
-If you are targeting 4.7.1, WCF is configured to allow the OS to choose the best security protocol by default unless explicitly configured:
+If you're targeting 4.7.1, WCF is configured to allow the OS to choose the best security protocol by default unless explicitly configured:
 
 - In your application configuration file.
 - **Or**, in your application in the source code.
 
-By default, .NET Framework 4.7 and later versions is configured to use TLS 1.2 and allows connections using TLS 1.1 or TLS 1.0. Configure WCF to allow the OS to choose the best security protocol by configuring your binding to use <xref:System.Security.Authentication.SslProtocols.None?displayProperty=nameWithType>. This can be set on <xref:System.ServiceModel.TcpTransportSecurity.SslProtocols>. `SslProtocols.None` can be accessed from <xref:System.ServiceModel.NetTcpSecurity.Transport>. `NetTcpSecurity.Transport` can be accessed from <xref:System.ServiceModel.NetTcpBinding.Security>.
+By default, .NET Framework 4.7 and later versions are configured to use TLS 1.2 and allow connections using TLS 1.1 or TLS 1.0. Configure WCF to allow the OS to choose the best security protocol by configuring your binding to use <xref:System.Security.Authentication.SslProtocols.None?displayProperty=nameWithType>. This can be set on <xref:System.ServiceModel.TcpTransportSecurity.SslProtocols>. `SslProtocols.None` can be accessed from <xref:System.ServiceModel.NetTcpSecurity.Transport>. `NetTcpSecurity.Transport` can be accessed from <xref:System.ServiceModel.NetTcpBinding.Security>.
 
 If you're using a custom binding:
 
@@ -98,15 +98,15 @@ If you're **not** using a custom binding **and** you're setting your WCF binding
 
 ### For WCF Message Security with certificate credentials
 
-.NET Framework 4.7 and later versions by default uses the protocol specified in the <xref:System.Net.ServicePointManager.SecurityProtocol> property. When the [AppContextSwitch](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) `Switch.System.ServiceModel.DisableUsingServicePointManagerSecurityProtocols` is set to `true`, WCF chooses the best protocol, up to TLS 1.0.
+.NET Framework 4.7 and later versions by default use the protocol specified in the <xref:System.Net.ServicePointManager.SecurityProtocol> property. When the [AppContextSwitch](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) `Switch.System.ServiceModel.DisableUsingServicePointManagerSecurityProtocols` is set to `true`, WCF chooses the best protocol, up to TLS 1.0.
 
 ## If your app targets a .NET Framework version earlier than 4.7
 
-Audit your code to verify you're not setting a specific TLS or SSL version using the following sections:
+Audit your code to verify you're not setting a specific TLS or SSL version using the following sections.
 
 ### For .NET Framework 4.6 - 4.6.2 and not WCF
 
-Set the `DontEnableSystemDefaultTlsVersions` `AppContext` switch to `false`. See [Configuring security via AppContext switches](#configuring-security-via-appcontext-switches).
+Set the `DontEnableSystemDefaultTlsVersions` `AppContext` switch to `false`. See [Configuring security via AppContext switches](#configure-security-via-appcontext-switches).
 
 ### For WCF using .NET Framework 4.6 - 4.6.2 using TCP transport security with Certificate Credentials
 
@@ -116,17 +116,17 @@ The WCF framework automatically chooses the highest protocol available up to TLS
 
 ### For .NET Framework 3.5 - 4.5.2 and not WCF
 
-We recommend you upgrade your app to .NET Framework 4.7 or later versions. If you cannot upgrade, take the following steps.
+We recommend you upgrade your app to .NET Framework 4.7 or a later version. If you cannot upgrade, take the following steps:
 
-Set the [SchUseStrongCrypto](#schusestrongcrypto) and [SystemDefaultTlsVersions](#systemdefaulttlsversions) registry keys to 1. See [Configuring security via the Windows Registry](#configuring-security-via-the-windows-registry). The .NET Framework version 3.5 supports the `SchUseStrongCrypto` flag only when an explicit TLS value is passed.
+- Set the [SchUseStrongCrypto](#schusestrongcrypto) and [SystemDefaultTlsVersions](#systemdefaulttlsversions) registry keys to 1. See [Configuring security via the Windows Registry](#configure-security-via-the-windows-registry). .NET Framework 3.5 supports the `SchUseStrongCrypto` flag only when an explicit TLS value is passed.
 
-If you are running on .NET Framework 3.5, you need to install a hot patch so that TLS 1.2 can be specified by your program:
+- If you're running on .NET Framework 3.5, you need to install a hot patch so that TLS 1.2 can be specified by your program:
 
-| [KB3154518](https://support.microsoft.com/kb/3154518) | Reliability Rollup HR-1605 - Support for TLS System Default Versions included in the .NET Framework 3.5.1 on Windows 7 SP1 and Server 2008 R2 SP1 |
-| --- | --- |
-| [KB3154519](https://support.microsoft.com/kb/3154519) | Reliability Rollup HR-1605 - Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows Server 2012 |
-| [KB3154520](https://support.microsoft.com/kb/3154520) | Reliability Rollup HR-1605 -Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows 8.1 and Windows Server 2012 R2 |
-| [KB3156421](https://support.microsoft.com/kb/3156421) | 1605 Hotfix rollup 3154521 for the .NET Framework 4.5.2 and 4.5.1 on Windows |
+  | [KB3154518](https://support.microsoft.com/kb/3154518) | Reliability Rollup HR-1605 - Support for TLS System Default Versions included in the .NET Framework 3.5.1 on Windows 7 SP1 and Server 2008 R2 SP1 |
+  | --- | --- |
+  | [KB3154519](https://support.microsoft.com/kb/3154519) | Reliability Rollup HR-1605 - Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows Server 2012 |
+  | [KB3154520](https://support.microsoft.com/kb/3154520) | Reliability Rollup HR-1605 -Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows 8.1 and Windows Server 2012 R2 |
+  | [KB3156421](https://support.microsoft.com/kb/3156421) | 1605 Hotfix rollup 3154521 for the .NET Framework 4.5.2 and 4.5.1 on Windows |
 
 ### For WCF using .NET Framework 3.5 - 4.5.2 using TCP transport security with Certificate Credentials
 
@@ -136,9 +136,9 @@ These versions of the WCF framework are hardcoded to use values SSL 3.0 and TLS 
 
 If you must explicitly set a security protocol instead of letting .NET or the OS pick the security protocol, add `SecurityProtocolTypeExtensions` and `SslProtocolsExtension` enumerations to your code. `SecurityProtocolTypeExtensions` and `SslProtocolsExtension` include values for `Tls12`, `Tls11`, and the `SystemDefault` value. For more information, see [Support for TLS System Default Versions included in .NET Framework 3.5 on Windows 8.1 and Windows Server 2012 R2](https://support.microsoft.com/help/3154520/support-for-tls-system-default-versions-included-in-the--net-framework).
 
-<a name="configuring-security-via-appcontext-switches"></a>
+<a name="configure-security-via-appcontext-switches"></a>
 
-## Configuring security via AppContext switches (for .NET Framework 4.6 or later versions)
+## Configure security via AppContext switches (for .NET Framework 4.6 or later versions)
 
 The [AppContext](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) switches described in this section are relevant if your app targets, or runs on, .NET Framework 4.6 or later versions. Whether by default, or by setting them explicitly, the switches should be `false` if possible. If you want to configure security via one or both switches, then don't specify a security protocol value in your code; doing so would override the switch(es).
 
@@ -146,7 +146,7 @@ The switches have the same effect whether you're doing HTTP networking (<xref:Sy
 
 ### Switch.System.Net.DontEnableSchUseStrongCrypto
 
-A value of `false` for `Switch.System.Net.DontEnableSchUseStrongCrypto` causes your app to use strong cryptography. A value of `false` for `DontEnableSchUseStrongCrypto` uses more secure network protocols (TLS 1.2, TLS 1.1, and TLS 1.0) and blocks protocols that are not secure. For more info, see [The SCH_USE_STRONG_CRYPTO flag](#the-sch_use_strong_crypto-flag). A value of `true` disables strong cryptography for your app. This switch affects only client (outgoing) connections in your application.
+A value of `false` for `Switch.System.Net.DontEnableSchUseStrongCrypto` causes your app to use strong cryptography. A value of `false` for `DontEnableSchUseStrongCrypto` uses more secure network protocols (TLS 1.2 and TLS 1.1) and blocks protocols that are not secure. For more info, see [The SCH_USE_STRONG_CRYPTO flag](#the-sch_use_strong_crypto-flag). A value of `true` disables strong cryptography for your app. This switch affects only client (outgoing) connections in your application.
 
 If your app targets .NET Framework 4.6 or later versions, this switch defaults to `false`. That's a secure default, which we recommend. If your app runs on .NET Framework 4.6, but targets an earlier version, the switch defaults to `true`. In that case, you should explicitly set it to `false`.
 
@@ -172,7 +172,7 @@ For applications targeting .NET Framework 4.7.1 and later versions, this value d
 
 For more information about TLS protocols, see [Mitigation: TLS Protocols](../migration-guide/mitigation-tls-protocols.md). For more information about `AppContext` switches, see [`<AppContextSwitchOverrides> Element`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md).
 
-## Configuring security via the Windows Registry
+## Configure security via the Windows Registry
 
 > [!WARNING]
 > Setting registry keys affects all applications on the system. Use this option only if you are in full control of the machine and can control changes to the registry.
@@ -187,7 +187,7 @@ All of the registry keys described below have the same effect whether you're doi
 
 ### SchUseStrongCrypto
 
-The `HKEY_LOCAL_MACHINE\SOFTWARE\[Wow6432Node\]Microsoft\.NETFramework\<VERSION>: SchUseStrongCrypto` registry key has a value of type DWORD. A value of 1 causes your app to use strong cryptography. The strong cryptography uses more secure network protocols (TLS 1.2, TLS 1.1, and TLS 1.0) and blocks protocols that are not secure. A value of 0 disables strong cryptography. For more information, see [The SCH_USE_STRONG_CRYPTO flag](#the-sch_use_strong_crypto-flag). This registry setting affects only client (outgoing) connections in your application.
+The `HKEY_LOCAL_MACHINE\SOFTWARE\[Wow6432Node\]Microsoft\.NETFramework\<VERSION>: SchUseStrongCrypto` registry key has a value of type DWORD. A value of 1 causes your app to use strong cryptography. The strong cryptography uses more secure network protocols (TLS 1.2 and TLS 1.1) and blocks protocols that aren't secure. A value of 0 disables strong cryptography. For more information, see [The SCH_USE_STRONG_CRYPTO flag](#the-sch_use_strong_crypto-flag). This registry setting affects only client (outgoing) connections in your application.
 
 If your app targets .NET Framework 4.6 or later versions, this key defaults to a value of 1. That's a secure default that we recommend. If your app targets .NET Framework 4.5.2 or earlier versions, the key defaults to 0. In that case, you should explicitly set its value to 1.
 
@@ -227,26 +227,26 @@ Windows Registry Editor Version 5.00
 "SchUseStrongCrypto"=dword:00000001
 ```
 
-## Configuring Schannel protocols in the Windows Registry
+## Configure Schannel protocols in the Windows Registry
 
 You can use the registry for fine-grained control over the protocols that your client and/or server app negotiates. Your app's networking goes through Schannel (which is another name for [Secure Channel](/windows/desktop/SecAuthN/secure-channel). By configuring `Schannel`, you can configure your app's behavior.
 
-Start with the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols` registry key. Under that key you can create any subkeys in the set `SSL 2.0`, `SSL 3.0`, `TLS 1.0`, `TLS 1.1`, and `TLS 1.2`. Under each of those subkeys, you can create subkeys `Client` and/or `Server`. Under `Client` and `Server`, you can create DWORD values `DisabledByDefault` (0 or 1) and `Enabled` (0 or 1).
+Start with the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols` registry key. Under that key you can create any subkeys in the set `SSL 2.0`, `SSL 3.0`, `TLS 1.1`, and `TLS 1.2`. Under each of those subkeys, you can create subkeys `Client` and/or `Server`. Under `Client` and `Server`, you can create DWORD values `DisabledByDefault` (0 or 1) and `Enabled` (0 or 1).
 
 ## <a name="the-sch_use_strong_crypto-flag"></a>The SCH_USE_STRONG_CRYPTO flag
 
-When it's enabled (by default, by [an `AppContext` switch](#switchsystemnetdontenableschusestrongcrypto), or [by the Windows Registry](#schusestrongcrypto)), the .NET Framework uses the `SCH_USE_STRONG_CRYPTO` flag when your app initiates a TLS connection to a server. .NET Framework passes the flag to `Schannel` to instruct it to disable known weak cryptographic algorithms, cipher suites, and TLS/SSL protocol versions that may be otherwise enabled for better interoperability. For more information, see:
+When it's enabled (by default, by [an `AppContext` switch](#switchsystemnetdontenableschusestrongcrypto), or [by the Windows Registry](#schusestrongcrypto)), .NET Framework uses the `SCH_USE_STRONG_CRYPTO` flag when your app initiates a TLS connection to a server. .NET Framework passes the flag to `Schannel` to instruct it to disable known weak cryptographic algorithms, cipher suites, and TLS/SSL protocol versions that may be otherwise enabled for better interoperability. For more information, see:
 
 - [Secure Channel](/windows/desktop/SecAuthN/secure-channel)
 - [SCHANNEL_CRED structure](/windows/win32/api/schannel/ns-schannel-schannel_cred)
 
-The `SCH_USE_STRONG_CRYPTO` flag is also passed to `Schannel` for client (outgoing) connections when you explicitly use the `Tls` (TLS 1.0), `Tls11`, or `Tls12` enumerated values of <xref:System.Net.SecurityProtocolType> or <xref:System.Security.Authentication.SslProtocols>. The `SCH_USE_STRONG_CRYPTO` flag is used only for connections where your application acts the role of the client. You can disable weak protocols and algorithms when your applications acts the role of the server by configuring the machine-wide `Schannel` registry settings.
+The `SCH_USE_STRONG_CRYPTO` flag is also passed to `Schannel` for client (outgoing) connections when you explicitly use the `Tls11` or `Tls12` enumerated values of <xref:System.Net.SecurityProtocolType> or <xref:System.Security.Authentication.SslProtocols>. The `SCH_USE_STRONG_CRYPTO` flag is used only for connections where your application acts the role of the client. You can disable weak protocols and algorithms when your applications acts the role of the server by configuring the machine-wide `Schannel` registry settings.
 
 ## Security updates
 
 The best practices in this article depend on recent security updates being installed. These updates include the ability to use advanced .NET Framework 4.7 and later features. Recent security updates are important if your app runs on .NET Framework 4.7 and later versions (even if it targets an earlier version).
 
-To update the .NET Framework to allow the operating system to choose the best version of TLS to use, you must install at least:
+To update .NET Framework to allow the operating system to choose the best version of TLS to use, you must install at least:
 
 - The [.NET Framework August 2017 Preview of Quality Rollup](https://devblogs.microsoft.com/dotnet/net-framework-august-2017-preview-of-quality-rollup/).
 - **Or** the [.NET Framework September 2017 Security and Quality Rollup](https://devblogs.microsoft.com/dotnet/net-framework-september-2017-security-and-quality-rollup/).

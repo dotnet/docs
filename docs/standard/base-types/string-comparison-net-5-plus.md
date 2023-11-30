@@ -154,7 +154,7 @@ For a more detailed analysis of the default behavior of each <xref:System.String
 
 ## Ordinal vs. linguistic search and comparison
 
-*Ordinal* (also known as *non-linguistic*) search and comparison decomposes a string into its individual `char` elements and performs a char-by-char search or comparison. For example, the strings `"dog"` and `"dog"` compare as *equal* under an `Ordinal` comparer, since the two strings consist of the exact same sequence of chars. However, `"dog"` and `"Dog"` compare as *not equal* under an `Ordinal` comparer, because they don't consist of the exact same sequence of chars. That is, uppercase `'D'`'s code point `U+0044` occurs before lowercase `'d'`'s code point `U+0064`, resulting in `"dog"` sorting before `"Dog"`.
+*Ordinal* (also known as *non-linguistic*) search and comparison decomposes a string into its individual `char` elements and performs a char-by-char search or comparison. For example, the strings `"dog"` and `"dog"` compare as *equal* under an `Ordinal` comparer, since the two strings consist of the exact same sequence of chars. However, `"dog"` and `"Dog"` compare as *not equal* under an `Ordinal` comparer, because they don't consist of the exact same sequence of chars. That is, uppercase `'D'`'s code point `U+0044` occurs before lowercase `'d'`'s code point `U+0064`, resulting in `"Dog"` sorting before `"dog"`.
 
 An `OrdinalIgnoreCase` comparer still operates on a char-by-char basis, but it eliminates case differences while performing the operation. Under an `OrdinalIgnoreCase` comparer, the char pairs `'d'` and `'D'` compare as *equal*, as do the char pairs `'á'` and `'Á'`. But the unaccented char `'a'` compares as *not equal* to the accented char `'á'`.
 
@@ -229,7 +229,7 @@ For example, [in the Hungarian alphabet](https://en.wikipedia.org/wiki/Hungarian
 | `"endz"` | `"e" + "n" + "d" + "z"` | (using a standard linguistic comparer) |
 | `"endz"` | `"e" + "n" + "dz"` | (using a Hungarian culture-aware comparer) |
 
-When using a Hungarian culture-aware comparer, this means that the string `"endz"` *does not* end with the substring `"z"`, as <\dz\> and <\z\> are considered collation elements with different semantic meaning.
+When using a Hungarian culture-aware comparer, this means that the string `"endz"` *does not* end with the substring `"z"`, as \<dz\> and \<z\> are considered collation elements with different semantic meaning.
 
 ```cs
 // Set thread culture to Hungarian

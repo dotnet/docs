@@ -203,7 +203,7 @@ The options section of command help shows the valid values:
 
 ```output
 Options:
-  --language <csharp|fsharp|vb|pwsh|sql>  An option that that must be one of the values of a static list.
+  --language <csharp|fsharp|vb|pwsh|sql>  An option that must be one of the values of a static list.
   --version                               Show version information
   -?, -h, --help                          Show help and usage information
 ```

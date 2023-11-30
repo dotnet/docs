@@ -1,7 +1,7 @@
 ---
 title: Perform culture-insensitive string comparisons
 description: "Learn how to perform culture-insensitive string comparisons"
-ms.date: 08/11/2021
+ms.date: 03/13/2023
 dev_langs:
     - "csharp"
     - "vb"

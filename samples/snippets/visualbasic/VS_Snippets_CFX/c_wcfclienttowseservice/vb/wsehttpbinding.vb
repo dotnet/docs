@@ -1,5 +1,5 @@
 ﻿' Copyright (c) Microsoft Corporation.  All Rights Reserved.
-' <snipppet5>
+' <snippet5>
 Imports System.Text
 Imports System.Collections.Generic
 Imports System.Net.Security
@@ -53,7 +53,7 @@ Namespace Microsoft.ServiceModel.Samples
                 Case WseSecurityAssertion.UsernameForCertificate
                     transport = New HttpTransportBindingElement()
                     securityBinding = DirectCast(SecurityBindingElement.CreateUserNameForCertificateBindingElement(), SymmetricSecurityBindingElement)
-                    ' We want signatureconfirmation on the bootstrap process 
+                    ' We want signatureconfirmation on the bootstrap process
                     ' either for the application messages or for the RST/RSTR
                     DirectCast(securityBinding, SymmetricSecurityBindingElement).RequireSignatureConfirmation = m_requireSignatureConfirmation
                     DirectCast(securityBinding, SymmetricSecurityBindingElement).MessageProtectionOrder = m_messageProtectionOrder
@@ -88,16 +88,16 @@ Namespace Microsoft.ServiceModel.Samples
             ' Set the preference for derived keys before creating the binding for SecureConversation.
             securityBinding.SetKeyDerivation(m_requireDerivedKeys)
 
-            'Secure Conversation 
+            'Secure Conversation
             If m_establishSecurityContext = True Then
 
                 Dim secureconversation As SymmetricSecurityBindingElement = DirectCast(SymmetricSecurityBindingElement.CreateSecureConversationBindingElement(securityBinding, False), SymmetricSecurityBindingElement)
                 ' This is the default
-                'secureconversation.DefaultProtectionLevel = ProtectionLevel.EncryptAndSign;		
+                'secureconversation.DefaultProtectionLevel = ProtectionLevel.EncryptAndSign;
 
                 'Set defaults for the secure conversation binding
                 secureconversation.DefaultAlgorithmSuite = SecurityAlgorithmSuite.Basic256
-                ' We do not want signature confirmation on the application level messages 
+                ' We do not want signature confirmation on the application level messages
                 ' when secure conversation is enabled.
                 secureconversation.RequireSignatureConfirmation = False
                 secureconversation.MessageProtectionOrder = m_messageProtectionOrder
@@ -109,7 +109,7 @@ Namespace Microsoft.ServiceModel.Samples
             ' Add the security binding to the binding collection
             bec.Add(securityBinding)
 
-            ' Add the message encoder. 
+            ' Add the message encoder.
             Dim textelement As New TextMessageEncodingBindingElement()
             textelement.MessageVersion = System.ServiceModel.Channels.MessageVersion.Soap11WSAddressingAugust2004
             'These are the defaults required for WSE
@@ -318,4 +318,4 @@ Namespace Microsoft.ServiceModel.Samples
     End Class
 
 End Namespace
-' </snipppet5>
+' </snippet5>

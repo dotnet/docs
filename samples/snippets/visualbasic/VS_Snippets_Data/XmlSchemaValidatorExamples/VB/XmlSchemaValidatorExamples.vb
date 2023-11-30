@@ -40,7 +40,7 @@ Namespace Microsoft.Samples.Xml.Schema
             validator.GetUnspecifiedDefaultAttributes(New ArrayList())
             validator.ValidateEndOfAttributes(Nothing)
 
-            ' Get the next exptected element in the bookstore context.
+            ' Get the next expected element in the bookstore context.
             Dim particles() As XmlSchemaParticle = validator.GetExpectedParticles()
             Dim nextElement As XmlSchemaElement = particles(0)
             Console.WriteLine("Expected Element: '{0}'", nextElement.Name)
@@ -49,7 +49,7 @@ Namespace Microsoft.Samples.Xml.Schema
                 ' Validate the book element.
                 validator.ValidateElement("book", "http://www.contoso.com/books", Nothing)
 
-                ' Get the exptected attributes for the book element.
+                ' Get the expected attributes for the book element.
                 Console.Write(vbCrLf & "Expected attributes: ")
                 Dim attributes() As XmlSchemaAttribute = validator.GetExpectedAttributes()
                 For Each attribute As XmlSchemaAttribute In attributes

@@ -12,12 +12,15 @@ for x in seq1 do
     printf "%d " x
 
 let fib =
-    (1, 1) // Initial state
+    (0, 1)
     |> Seq.unfold (fun state ->
-        if (snd state > 1000) then
+        let cur, next = state
+        if cur < 0 then  // overflow
             None
         else
-            Some(fst state + snd state, (snd state, fst state + snd state)))
+            let next' = cur + next
+            let state' = next, next'
+            Some (cur, state') )
 
 printfn "\nThe sequence fib contains Fibonacci numbers."
 for x in fib do printf "%d " x

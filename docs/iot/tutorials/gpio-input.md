@@ -6,7 +6,6 @@ ms.author: casoper
 ms.date: 12/05/2022
 ms.topic: tutorial
 ms.prod: dotnet
-recommendations: false
 ---
 
 # Use GPIO for binary input
@@ -15,13 +14,17 @@ General-purpose I/O (GPIO) pins can be configured to receive electrical signals 
 
 In this tutorial, you'll use .NET and your Raspberry Pi's GPIO pins to detect the opening and closing of a circuit.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?show=dotnet-iot-for-beginners&ep=general-purpose-inputoutput-read-input-with-gpio-and-dotnet-dotnet-iot-for-beginners]
+
 ## Prerequisites
 
-- [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
+- [!INCLUDE [prereq-sbc](../includes/prereq-sbc.md)]
 - Jumper wires
 - Breadboard (optional)
 - Raspberry Pi GPIO breakout board (optional)
 - [!INCLUDE [tutorial-prereq-dotnet](../includes/tutorial-prereq-dotnet.md)]
+
+[!INCLUDE [rpi-note](../includes/rpi-note.md)]
 
 [!INCLUDE [ensure-ssh](../includes/ensure-ssh.md)]
 
@@ -56,7 +59,7 @@ Complete the following steps in your preferred development environment:
 
     In the preceding code:
 
-    - A [using declaration](../../csharp/language-reference/keywords/using-statement.md) creates an instance of `GpioController`. The `using` declaration ensures the object is disposed and hardware resources are released properly.
+    - A [using declaration](../../csharp/language-reference/statements/using.md) creates an instance of `GpioController`. The `using` declaration ensures the object is disposed and hardware resources are released properly.
         - `GpioController` is instantiated with no parameters, indicating that it should detect which hardware platform it's running on and use the [logical pin numbering scheme](/dotnet/api/system.device.gpio.pinnumberingscheme).
     - GPIO pin 21 is opened with `PinMode.InputPullUp`.
         - This opens the pin with a *PullUp* resistor engaged. In this mode, when the pin is connected to ground, it will return `PinValue.Low`. When the pin is disconnected from ground and the circuit is open, the pin returns `PinValue.High`.
@@ -101,9 +104,9 @@ Congratulations! You've used GPIO to detect input using the `System.Device.Gpio`
 
 Extending the previous example concept a bit further, let's take a look at how this could be applied to creating a laser tripwire. Building a laser tripwire requires the following additional components:
 
-* KY-008 laser transmitter module
-* Laser receiver sensor module *(see note below)*
-* 2 10K Ω resistors
+- KY-008 laser transmitter module
+- Laser receiver sensor module *(see note below)*
+- 2 10K Ω resistors
 
 > [!NOTE]
 > *Laser receiver sensor module* is the generic name applied to a common module found at many internet retailers. The device may vary in name or manufacturer, but should resemble this image.

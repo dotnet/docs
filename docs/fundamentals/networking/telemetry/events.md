@@ -1,12 +1,12 @@
 ---
-title: Networking Events in .NET
+title: Networking events
 description: Learn how to consume and correlate .NET networking telemetry events.
 author: MihaZupan
 ms.author: mizupan
 ms.date: 10/18/2022
 ---
 
-# Networking Events in .NET
+# Networking events in .NET
 
 Events give you access to:
 

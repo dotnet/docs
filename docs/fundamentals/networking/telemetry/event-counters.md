@@ -1,16 +1,16 @@
 ---
-title: Networking Event Counters in .NET
+title: Networking Event Counters
 description: Learn how to consume .NET networking event counters.
 author: MihaZupan
 ms.author: mizupan
 ms.date: 10/18/2022
 ---
 
-# Networking Event Counters in .NET
+# Networking event counters in .NET
 
 [EventCounters] are .NET APIs used for lightweight, cross-platform, and near real-time performance metric collection.
 
-Networking components are instrumented to publish basic diagnostics information using EventCounters.
+Networking components are instrumented to publish basic diagnostic information using EventCounters.
 They include information like the following:
 
 - `System.Net.Http` > `requests-started`
@@ -39,17 +39,17 @@ Networking information is split across the following providers:
 
 The telemetry has some performance overhead when enabled, so make sure to subscribe only to providers you're actually interested in.
 
-## Monitor Event Counters from outside the process
+## Monitor event counters from outside the process
 
 ### dotnet-counters
 
 [`dotnet-counters`][dotnet-counter docs] is a cross-platform performance monitoring tool for ad-hoc health monitoring and first-level performance investigation.
 
-```console
+```dotnetcli
 dotnet tool install --global dotnet-counters
 ```
 
-```console
+```dotnetcli
 dotnet-counters monitor --counters System.Net.Http,System.Net.Security --process-id 1234
 ```
 
@@ -89,7 +89,7 @@ services.ConfigureTelemetryModule<EventCounterCollectionModule>((module, options
 });
 ```
 
-See [this sample](https://github.com/dotnet/docs/tree/main/docs/fundamentals/networking/snippets/misc/RuntimeEventCounters.cs) for subscribing to many runtime and ASP.NET event counters. Simply add an `EventCounterCollectionRequest` for every entry.
+For an example of how to subscribe to many runtime and ASP.NET event counters, see the [RuntimeEventCounters sample](https://github.com/dotnet/docs/tree/main/docs/fundamentals/networking/snippets/misc/RuntimeEventCounters.cs). Simply add an `EventCounterCollectionRequest` for every entry.
 
 ```C#
 foreach (var (eventSource, counters) in RuntimeEventCounters.EventCounters)
@@ -101,9 +101,9 @@ foreach (var (eventSource, counters) in RuntimeEventCounters.EventCounters)
 }
 ```
 
-## Consume Event Counters in-process
+## Consume event counters in-process
 
-The [`Yarp.Telemetry.Consumption`] library makes it easy to consume Event Counters from within the process.
+The [`Yarp.Telemetry.Consumption`] library makes it easy to consume event counters from within the process.
 While the package is currently maintained as part of the [YARP] project, it can be used in any .NET application.
 
 To use it, implement the `IMetricsConsumer<TMetrics>` interface:

@@ -62,7 +62,7 @@ The `merge` command is used to merge several code coverage reports into one. Thi
 
 ```console
 dotnet-coverage merge
-    [--remove-input-files] [-r|--recursive]
+    [--remove-input-files]
     [-o|--output <output>] [-f|--output-format <output-format>]
     [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
     <files>
@@ -79,10 +79,6 @@ dotnet-coverage merge
 * **`--remove-input-files`**
 
   Removes all input coverage reports that were merged.
-
-* **`-r, --recursive`**
-
-  Search for coverage reports in subdirectories.
 
 * **`-o|--output <output>`**
 
@@ -671,7 +667,7 @@ dotnet-coverage merge -o merged.coverage a.coverage b.coverage
 For example, if you run a command like `dotnet test --collect "Code Coverage"`, the coverage report is stored into a folder that is named a random GUID. Such folders are hard to find and merge. Using this tool, you can merge all code coverage reports for all your projects as follows:
 
 ```console
-dotnet-coverage merge -o merged.cobertura.xml -f cobertura -r *.coverage
+dotnet-coverage merge -o merged.cobertura.xml -f cobertura **\*.coverage
 ```
 
 The preceding command merges all coverage reports from the current directory and all subdirectories and stores the result into a cobertura file. In Azure Pipelines, you can use [Publish Code Coverage Results task](/azure/devops/pipelines/tasks/test/publish-code-coverage-results) to publish a merged cobertura report.

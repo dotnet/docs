@@ -681,7 +681,7 @@ You can merge `a.coverage` and `b.coverage` and store the data in `merged.covera
 dotnet-coverage merge -o merged.coverage a.coverage b.coverage
 ```
 
-For example, if you run a command like `dotnet test --collect "Code Coverage"`, the coverage report is stored into a folder that is named a random GUID. Such folders are hard to find and merge. Using this tool, you can merge all code coverage reports for all your projects as follows:
+For example, if you run a command like `dotnet test --collect "Code Coverage"`, the coverage report is stored into a folder that is named a random GUID. Such folders are hard to find and merge. Using this tool, you can merge all code coverage reports for all your projects using globbing patterns as follows:
 
 ```console
 dotnet-coverage merge -o merged.cobertura.xml -f cobertura **\*.coverage

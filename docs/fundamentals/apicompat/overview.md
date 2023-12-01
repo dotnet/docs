@@ -7,7 +7,7 @@ ms.topic: overview
 
 # API compatibility tools
 
-Cross-platform compatibility has become a mainstream requirement for .NET library authors. However, without validation tooling for these packages, they often don't work well. As a library author, you need to ensure that multi-targeted packages are well formed. For example, for a package that multi-targets for .NET 6 and .NET Standard 2.0, you must ensure that code compiled against the .NET Standard 2.0 binary can run against the .NET 6 binary.
+Cross-platform compatibility has become a mainstream requirement for .NET library authors. However, without tooling to validate assemblies and packages, they might contain unintentional breaking changes. As a library author, you need to ensure that multi-targeted assemblies are compatible. For example, for a package that multi-targets for .NET 6 and .NET Standard 2.0, you must ensure that code compiled against the .NET Standard 2.0 binary can run against the .NET 6 binary.
 
 You might think that a change is safe and compatible if source consuming that change continues to compile without changes. However, the changes can still cause problems at run time if the consumer wasn't recompiled. For example, adding an optional parameter to a method or changing the value of a constant can cause these kinds of compatibility issues.
 

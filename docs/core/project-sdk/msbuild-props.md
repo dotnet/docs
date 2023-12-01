@@ -395,7 +395,7 @@ The `ApiCompatSuppressionOutputFile` property specifies the path to a suppressio
 
 ### EnablePackageValidation
 
-The `EnablePackageValidation` property enables a series of validations on the package after the `pack` task. For more information, see [package validation](../../fundamentals/apicompat/package-validation/overview.md).
+The `EnablePackageValidation` property enables a series of validations on the package after the `Pack` task. For more information, see [package validation](../../fundamentals/apicompat/package-validation/overview.md).
 
 ```xml
 <PropertyGroup>
@@ -431,7 +431,7 @@ The `PackageValidationBaselineFrameworkToIgnore` item specifies a target framewo
 
 ```xml
 <ItemGroup>
-  <PackageValidationBaselineFrameworkToIgnore Include="netcoreapp2.1;" />
+  <PackageValidationBaselineFrameworkToIgnore Include="netcoreapp2.1" />
 </ItemGroup>
 ```
 
@@ -445,7 +445,7 @@ The `PackageValidationBaselinePath` property specifies the path to a baseline pa
 
 ### PackageValidationReferencePath
 
-The `PackageValidationReferencePath` item specifies the directory path where the reference assembly can be found.
+The `PackageValidationReferencePath` item specifies the directory path where the reference assembly can be found per TFM.
 
 ```xml
 <ItemGroup>

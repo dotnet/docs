@@ -14,7 +14,7 @@ This page is a reference for the MSBuild properties and items that you can use t
 
 ## Assembly validation properties
 
-These properties and items are passed to the `ValidateAssemblies` task. For more information about assembly validation, see [Assembly validation](../../fundamentals/apicompat/assembly-validation/overview.md).
+These properties and items are passed to the `ValidateAssemblies` task. For more information about assembly validation, see [Assembly validation](../../fundamentals/apicompat/assembly-validation.md).
 
 The following MSBuild properties and items apply to assembly validation:
 
@@ -111,7 +111,7 @@ When set to `true`, the `ApiCompatStrictMode` property specifies that API compat
 
 ### ApiCompatValidateAssemblies
 
-The `ApiCompatValidateAssemblies` property enables a series of validations on the specified assemblies. For more information, see [Assembly validation](../../fundamentals/apicompat/assembly-validation/overview.md).
+The `ApiCompatValidateAssemblies` property enables a series of validations on the specified assemblies. For more information, see [Assembly validation](../../fundamentals/apicompat/assembly-validation.md).
 
 ```xml
 <PropertyGroup>

@@ -21,7 +21,7 @@ For more information about ways you can configure assembly validation, see [Asse
 
 ## Enable MSBuild task
 
-You enable assembly validation in your .NET project by setting the [`ApiCompatValidateAssemblies`](../../../core/project-sdk/msbuild-props.md#apicompatvalidateassemblies) property to `true`.
+You enable assembly validation in your .NET project by setting the [`ApiCompatValidateAssemblies`](../../core/project-sdk/msbuild-props.md#apicompatvalidateassemblies) property to `true`.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

@@ -101,7 +101,7 @@ public static HttpClient Connect(string url, TimeSpan timeout)
 }
 ```
 
-To suppress the `CP0002` error for this intentional breaking change, you can add a *CompatibilitySuppressions.xml* file to your project. You can generate the suppression file automatically by calling `dotnet pack /p:GenerateCompatibilitySuppressionFile=true` once. The file contains a suppression for each validation error that occurred during pack. For more information, see [Suppress compatibility errors](overview.md#suppress-compatibility-errors).
+To suppress the `CP0002` error for this intentional breaking change, you can add a *CompatibilitySuppressions.xml* file to your project. You can generate the suppression file automatically by calling `dotnet pack /p:GenerateCompatibilitySuppressionFile=true` once. The file contains a suppression for each validation error that occurred during pack. For more information, see [How to suppress](../diagnostic-ids.md#how-to-suppress).
 
 In this example, the *CompatibilitySuppressions.xml* contains the suppression for the `CP0002` error:
 

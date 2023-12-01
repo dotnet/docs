@@ -198,6 +198,52 @@ Most distributions require all artifacts to be built from source. This has some 
 
 Multiple `dotnet-sdk` packages may provide the same files for the `NuGetFallbackFolder`. To avoid issues with the package manager, these files should be identical (checksum, modification date, and so on).
 
+### Debug packages
+
+Debug content should be packaged in debug-named packages that follow the .NET package split described above. For instance, debug content for `dotnet-sdk-[major].[minor]` package should be included in a package named `dotnet-sdk-dbg-[major].[minor]`. Debug content should be installed to the same location as the binaries.
+
+Few binary examples:
+
+In `{dotnet_root}/sdk/<sdk version>` directory, we'd expect the following two files:
+- `dotnet.dll` - installed with `dotnet-sdk-[major].[minor]` package
+- `dotnet.pdb` - installed with `dotnet-sdk-dbg-[major].[minor]` package
+
+In `{dotnet_root}/shared/Microsoft.NETCore.App/<runtime version>` we'd expect the following two files:
+- `System.Text.Json.dll` - installed with `dotnet-runtime-[major].[minor]` package
+- `System.Text.Json.pdb` - installed with `dotnet-runtime-dbg-[major].[minor]` package
+
+In `{dotnet_root/shared/Microsoft.AspNetCore.App/<aspnetcore version>` we'd expect the following two files:
+- `Microsoft.AspNetCore.Routing.dll` - installed with `aspnetcore-runtime-[major].[minor]` packages
+- `Microsoft.AspNetCore.Routing.pdb` - installed with `aspnetcore-runtime-dbg-[major].[minor]` packages
+
+Starting with .NET 8.0, all .NET debug content (PDB files), produced by source-build, is available in a tarball named `dotnet-symbols-sdk-<version>-<rid>.tar.gz`. This archive contains PDBs in sub-directories that match directory structure of .NET SDK tarball - `dotnet-symbols-<version>-<rid>.tar.gz`.
+
+While all debug content is available in debug tarball, not all debug content is equally important. End users are mostly interested in content of `shared/Microsoft.AspNetCore.App/<aspnetcore version>` and `shared/Microsoft.NETCore.App/<runtime version>`.
+
+SDK content, under `sdk/<sdk version>` is useful for debugging of .NET SDK toolsets.
+
+The following lists the recommended debug packages:
+
+- `dotnet-sdk-dbg-[major].[minor]` - Installs debug content for a specific SDK version
+  - **Version:** \<sdk version>
+  - **Example:** dotnet-sdk-dbg-8.0
+  - **Contains:** debug content for (3),(4),(18)
+  - **Dependencies:** `dotnet-sdk-[major].[minor]`
+
+- `aspnetcore-runtime-dbg-[major].[minor]` - Installs debug content for a specific ASP.NET Core runtime
+  - **Version:** \<aspnetcore runtime version>
+  - **Example:** aspnetcore-runtime-dbg-8.0
+  - **Contains:** debug content for (6)
+  - **Dependencies:** `aspnetcore-runtime-[major].[minor]`
+
+- `dotnet-runtime-dbg-[major].[minor]` - Installs debug content for a specific runtime
+  - **Version:** \<runtime version>
+  - **Example:** dotnet-runtime-dbg-8.0
+  - **Contains:** debug content for (5)
+  - **Dependencies:** `dotnet-runtime-[major].[minor]`
+
+Debug tarball also contains some debug content under `packs` which represent copies of content under `shared`. In .NET layout, `packs` directory is used for building .NET applications - there are no debugging scenarios. Thus debug content under `packs`, in debug tarball, should not be packaged. 
+
 ## Building packages
 
 The [dotnet/source-build](https://github.com/dotnet/source-build) repository provides instructions on how to build a source tarball of the .NET SDK and all its components. The output of the source-build repository matches the layout described in the first section of this article.

@@ -245,7 +245,7 @@ The following lists the recommended debug packages:
   - **Contains:** debug content for (5)
   - **Dependencies:** `dotnet-runtime-[major].[minor]`
 
-Debug tarball also contains some debug content under `packs` which represent copies of content under `shared`. In .NET layout, `packs` directory is used for building .NET applications - there are no debugging scenarios. Thus debug content under `packs`, in debug tarball, should not be packaged.
+The debug tarball also contains some debug content under `packs` which represent copies of content under `shared`. In the .NET layout, the `packs` directory is used for building .NET applications - there are no debugging scenarios, therefore the debug content under `packs`, in the debug tarball, should not be packaged.
 
 ## Building packages
 

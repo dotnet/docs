@@ -674,35 +674,44 @@ Keyed dependency injection (DI) services provides a means for registering and re
 - Various new extension methods for <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> to support keyed services, for example, <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddKeyedScoped%2A?displayProperty=nameWithType>.
 - The <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider> implementation of <xref:Microsoft.Extensions.DependencyInjection.IKeyedServiceProvider>.
 
-The following example shows you to use keyed DI services.
+The following example shows you how to use keyed DI services.
 
 ```csharp
-using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.Options;
-
 var builder = WebApplication.CreateBuilder(args);
-
 builder.Services.AddSingleton<BigCacheConsumer>();
 builder.Services.AddSingleton<SmallCacheConsumer>();
-
-builder.Services.AddKeyedSingleton<IMemoryCache, BigCache>("big");
-builder.Services.AddKeyedSingleton<IMemoryCache, SmallCache>("small");
-
+builder.Services.AddKeyedSingleton<ICache, BigCache>("big");
+builder.Services.AddKeyedSingleton<ICache, SmallCache>("small");
 var app = builder.Build();
-
 app.MapGet("/big", (BigCacheConsumer data) => data.GetData());
 app.MapGet("/small", (SmallCacheConsumer data) => data.GetData());
-
+app.MapGet("/big-cache", ([FromKeyedServices("big")] ICache cache) => cache.Get("data"));
+app.MapGet("/small-cache", (HttpContext httpContext) => httpContext.RequestServices.GetRequiredKeyedService<ICache>("small").Get("data"));
 app.Run();
 
-class BigCacheConsumer([FromKeyedServices("big")] IMemoryCache cache)
+class BigCacheConsumer([FromKeyedServices("big")] ICache cache)
 {
     public object? GetData() => cache.Get("data");
 }
 
-class SmallCacheConsumer(IKeyedServiceProvider keyedServiceProvider)
+class SmallCacheConsumer(IServiceProvider serviceProvider)
 {
-    public object? GetData() => keyedServiceProvider.GetRequiredKeyedService<IMemoryCache>("small");
+    public object? GetData() => serviceProvider.GetRequiredKeyedService<ICache>("small").Get("data");
+}
+
+public interface ICache
+{
+    object Get(string key);
+}
+
+public class BigCache : ICache
+{
+    public object Get(string key) => $"Resolving {key} from big cache.";
+}
+
+public class SmallCache : ICache
+{
+    public object Get(string key) => $"Resolving {key} from small cache.";
 }
 ```
 

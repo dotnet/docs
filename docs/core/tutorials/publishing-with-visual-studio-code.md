@@ -196,7 +196,7 @@ In the following steps, you'll look at the files created by the publish process.
 
 1. On Windows or Linux, run the app by using the executable.
 
-   1. On Windows, enter `.\HelloWorld.exe` and press <kbd>Enter</kbd>.
+   1. On Windows, enter `.\HelloWorld.exe` and press <kbd>Enter</kbd>. On Windows with the Bash terminal, enter `./HelloWorld.exe`.
 
    1. On Linux, enter `./HelloWorld` and press <kbd>Enter</kbd>.
 

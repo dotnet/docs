@@ -32,7 +32,7 @@ The benefits of strong naming on .NET Framework are:
 2. The assembly can be stored in the Global Assembly Cache (GAC).
 3. The assembly can be loaded side by side with other versions of the assembly. Side-by-side assembly loading is commonly required by applications with plug-in architectures.
 
-Strong naming has no benefits on .NET Core/5+. C# compiler produces CS8002 warning for strong named assemblies referencing non-strong named assemblies. It is fine to suppress this warning for libraries that target .NET Core/5+ only.
+Strong naming has no benefits on .NET Core/5+. C# compiler produces CS8002 warning for strong-named assemblies referencing non-strong named assemblies. It is fine to suppress this warning for libraries that target .NET Core/5+ only.
 
 ## Create strong named .NET libraries
 

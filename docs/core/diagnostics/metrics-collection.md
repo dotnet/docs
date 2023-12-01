@@ -192,9 +192,9 @@ If the Prometheus server hasn't been scraping the example app for long, you may 
 
    ![Hats sold Grafana dashboard](~/docs/core/diagnostics/media/grafana-hats-sold-dashboard.png)]
 
-## Create a custom collection tool using the .NET <xref:System.Diagnostics.Metrics.MeterListener> API
+## Create a custom collection tool using the .NET MeterListener API
 
-The .NET <xref:System.Diagnostics.Metrics.MeterListener> API allows creating custom in-process logic to observe the measurements being recorded by <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType>. For guidance creating custom logic compatible with the older EventCounters instrumentation, see [EventCounters](event-counters.md).
+The .NET <xref:System.Diagnostics.Metrics.MeterListener> API allows you to create custom in-process logic to observe the measurements being recorded by <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType>. For guidance on creating custom logic compatible with the older EventCounters instrumentation, see [EventCounters](event-counters.md).
 
 Modify the code of `Program.cs` to use <xref:System.Diagnostics.Metrics.MeterListener>:
 

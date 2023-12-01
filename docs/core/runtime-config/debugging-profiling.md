@@ -52,15 +52,18 @@ This article details the settings you can use to configure .NET debugging and pr
 
 ## Export perf maps
 
-- Enables or disables emitting perf maps to */tmp/perf-$pid.map*. Perf maps allow third party tools, such as perf, to identify call sites from precompiled ReadyToRun (R2R) modules.
+- Enables or disables emitting perf maps to */tmp/perf-$pid.map*. Allows for selective enablement of Perf maps or Jit dumps, which both allow third party tools, such as perf, to identify call sites from precompiled ReadyToRun (R2R) modules.
 - If you omit this setting, writing the perf map is disabled. This is equivalent to setting the value to `0`.
 - When perf maps are disabled, not all managed callsites will be properly resolved.
 - Enabling perf maps causes a 10-20% overhead.
+- The JitDump format which includes highly detailed information for .NET method methods.
+- The PerfMap format is less verbose compared to the JitDump format.  
+- PerfMaps are supported on all known Linux kernel versions, and JitDumps requires Linux kernel 5.4 or later.
 
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `COMPlus_PerfMapEnabled` or `DOTNET_PerfMapEnabled` | `0` - disabled<br/>`1` - enabled |
+| **Environment variable** | `COMPlus_PerfMapEnabled` or `DOTNET_PerfMapEnabled` | `0` - disabled<br/>`1` - perfmaps and jitdumps both enabled<br/>`2` - jitdumps enabled<br/>`3` - perfmaps enabled |
 
 ## Perf log markers
 

@@ -6,7 +6,7 @@ ms.date: 11/29/2023
 
 # Microsoft.DotNet.ApiCompat.Tool global tool
 
-The Microsoft.DotNet.ApiCompat.Tool tool performs API compatibility checks on assemblies and packages. The tool has two modes:
+The Microsoft.DotNet.ApiCompat.Tool tool lets you perform API compatibility checks outside of MSBuild. The tool has two modes:
 
 - Compare a package against a baseline package.
 - Compare an assembly against a baseline assembly.
@@ -71,7 +71,7 @@ Some options apply to both assembly and package validation. Others apply to [ass
 
 - **`--noWarn <NOWARN_STRING>`**
 
-  Specifies the specific diagnostic IDs to suppress. For example, `"$(NoWarn);PKV0001"`.
+  Specifies the diagnostic IDs to suppress. For example, `"$(NoWarn);PKV0001"`.
 
 - **`--respect-internals`**
 
@@ -85,17 +85,17 @@ Some options apply to both assembly and package validation. Others apply to [ass
 
   Controls the log level verbosity. Allowable values are `high`, `normal`, and `low`. The default is `normal`.
 
+- **`--enable-rule-cannot-change-parameter-name`**
+
+  Enables the rule that checks whether parameter names have changed in public methods.
+
 - **`--enable-rule-attributes-must-match`**
 
   Enables the rule that checks if attributes match.
 
 - **`--exclude-attributes-file <FILE>`**
 
-  Specifies the path to one or more attribute exclusion files. These files contains types in [DocId](../../csharp/language-reference/xmldoc/index.md#id-strings) format.
-
-- **`--enable-rule-cannot-change-parameter-name`**
-
-  Enables the rule that checks whether parameter names have changed in public methods.
+  Specifies the path to one or more files that contain attributes to exclude in [DocId](../../csharp/language-reference/xmldoc/index.md#id-strings) format.
 
 ### Assembly-specific options
 
@@ -139,7 +139,7 @@ These options are only applicable when packages are compared.
 
 - **`--baseline-package`**
 
-  Specifies the path to a baseline package to validate against the current package.
+  Specifies the path to a baseline package to validate the current package against.
 
 - **`--runtime-graph`**
 
@@ -185,4 +185,13 @@ The following command compares the current and baseline versions of a package.
 
 ```dotnetcli
 apicompat package "bin\Release\LibApp5.1.0.0.nupkg" --baseline-package "bin\Release\LibApp5.2.0.0.nupkg"
+```
+
+The following example shows the command to compare the current and baseline versions of an assembly, including the check for parameter name changes. The example also shows what the output might look like if a parameter name has changed.
+
+```dotnetcli
+>apicompat -l LibApp5-baseline.dll -r LibApp5.dll --enable-rule-cannot-change-parameter-name
+API compatibility errors between 'LibApp5-baseline.dll' (left) and 'LibApp5.dll' (right):
+CP0017: Parameter name on member 'KitchenHelpers.ToastBreadAsync(int, int)' changed from 'slices' to 'numSlices'.
+API breaking changes found. If those are intentional, the APICompat suppression file can be updated by specifying the '--generate-suppression-file' parameter.
 ```

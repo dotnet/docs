@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 11/09/2023
+ms.date: 11/30/2023
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -11,6 +11,123 @@ This page is a reference for the MSBuild properties and items that you can use t
 
 > [!NOTE]
 > This page is a work in progress and does not list all of the useful MSBuild properties for the .NET SDK. For a list of common MSBuild properties, see [Common MSBuild properties](/visualstudio/msbuild/common-msbuild-project-properties).
+
+## Assembly validation properties
+
+These properties and items are passed to the `ValidateAssemblies` task. For more information about assembly validation, see [Assembly validation](../../fundamentals/apicompat/assembly-validation/overview.md).
+
+The following MSBuild properties and items apply to assembly validation:
+
+- [ApiCompatEnableRuleAttributesMustMatch](#apicompatenableruleattributesmustmatch)
+- [ApiCompatEnableRuleCannotChangeParameterName](#apicompatenablerulecannotchangeparametername)
+- [ApiCompatExcludeAttributesFile](#apicompatexcludeattributesfile)
+- [ApiCompatGenerateSuppressionFile](#apicompatgeneratesuppressionfile)
+- [ApiCompatLeftAssemblies](#apicompatleftassemblies)
+- [ApiCompatLeftAssembliesReferences](#apicompatleftassembliesreferences)
+- [ApiCompatLeftAssembliesTransformationPattern](#apicompatleftassembliestransformationpattern)
+- [ApiCompatRightAssemblies](#apicompatrightassemblies)
+- [ApiCompatRightAssembliesReferences](#apicompatrightassembliesreferences)
+- [ApiCompatRightAssembliesTransformationPattern](#apicompatrightassembliestransformationpattern)
+- [ApiCompatPermitUnnecessarySuppressions](#apicompatpermitunnecessarysuppressions)
+- [ApiCompatPreserveUnnecessarySuppressions](#apicompatpreserveunnecessarysuppressions)
+- [ApiCompatRespectInternals](#apicompatrespectinternals)
+- [ApiCompatStrictMode](#apicompatstrictmode)
+- [ApiCompatSuppressionFile](#apicompatsuppressionfile)
+- [ApiCompatSuppressionOutputFile](#apicompatsuppressionoutputfile)
+- [ApiCompatValidateAssemblies](#apicompatvalidateassemblies)
+- [ApiCompatValidateAssembliesSemaphoreFile](#apicompatvalidateassembliessemaphorefile)
+- [NoWarn](#nowarn)
+- [RoslynAssembliesPath](#roslynassembliespath)
+
+### ApiCompatLeftAssemblies
+
+The `ApiCompatLeftAssemblies` item specifies the path to one or more assemblies that serve as the *left side* to compare. This property is required when `ApiCompatValidateAssemblies` is set to `true`.
+
+```xml
+<ItemGroup>
+  <ApiCompatLeftAssemblies Include="path/to/left-assembly" />
+</ItemGroup>
+```
+
+### ApiCompatLeftAssembliesReferences
+
+The `ApiCompatLeftAssembliesReferences` item specifies the path to assembly references or the underlying directories for the left side of the comparison.
+
+```xml
+<ItemGroup>
+  <ApiCompatLeftAssembliesReferences Include="path/to/assembly-references" />
+</ItemGroup>
+```
+
+### ApiCompatLeftAssembliesTransformationPattern
+
+The `ApiCompatLeftAssembliesTransformationPattern` item specifies a transformation pattern for the left side assemblies.
+
+```xml
+<ItemGroup>
+  <ApiCompatLeftAssembliesTransformationPattern Include="$(_ApiCompatCaptureGroupPattern)" ReplacementString="ref/$1/$2" />
+</ItemGroup>
+```
+
+### ApiCompatRightAssemblies
+
+The `ApiCompatRightAssemblies` item specifies the path to one or more assemblies that serve as the *right side* to compare. This property is required when `ApiCompatValidateAssemblies` is set to `true`.
+
+```xml
+<ItemGroup>
+  <ApiCompatRightAssemblies Include="path/to/right-assembly" />
+</ItemGroup>
+```
+
+### ApiCompatRightAssembliesReferences
+
+The `ApiCompatRightAssembliesReferences` item specifies the path to assembly references or the underlying directories for the right side of the comparison.
+
+```xml
+<ItemGroup>
+  <ApiCompatRightAssembliesReferences Include="path/to/assembly-references" />
+</ItemGroup>
+```
+
+### ApiCompatRightAssembliesTransformationPattern
+
+The `ApiCompatLeftAssembliesTransformationPattern` item specifies a transformation pattern for the right side assemblies.
+
+```xml
+<ItemGroup>
+  <ApiCompatRightAssembliesTransformationPattern Include="$(_ApiCompatCaptureGroupPattern)" ReplacementString="lib/$1/$2" />
+</ItemGroup>
+```
+
+### ApiCompatStrictMode
+
+When set to `true`, the `ApiCompatStrictMode` property specifies that API compatibility checks should be performed in strict mode.
+
+```xml
+<PropertyGroup>
+  <ApiCompatStrictMode>true</ApiCompatStrictMode>
+</PropertyGroup>
+```
+
+### ApiCompatValidateAssemblies
+
+The `ApiCompatValidateAssemblies` property enables a series of validations on the specified assemblies. For more information, see [Assembly validation](../../fundamentals/apicompat/assembly-validation/overview.md).
+
+```xml
+<PropertyGroup>
+  <ApiCompatValidateAssemblies>true</ApiCompatValidateAssemblies>
+</PropertyGroup>
+```
+
+### ApiCompatValidateAssembliesSemaphoreFile
+
+The `ApiCompatValidateAssembliesSemaphoreFile` property specifies the path to the *.semaphore* file for the assembly validation.
+
+```xml
+<PropertyGroup>
+  <ApiCompatValidateAssembliesSemaphoreFile>path/to/semaphore-file</ApiCompatValidateAssembliesSemaphoreFile>
+</PropertyGroup>
+```
 
 ## Framework properties
 
@@ -159,6 +276,187 @@ The `PackRelease` property is similar to the [PublishRelease](#publishrelease) p
 > - Starting in the .NET 8 SDK, `PackRelease` defaults to `true`. For more information, see ['dotnet pack' uses Release configuration](../compatibility/sdk/8.0/dotnet-pack-config.md).
 > - .NET 7 SDK only: To use `PackRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PACK_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). For solutions that have many projects, setting this variable increases the time required to pack.
 
+## Package validation properties
+
+These properties and items are passed to the `ValidatePackage` task. For more information about package validation, see [Package validation overview](../../fundamentals/apicompat/package-validation/overview.md).
+
+For properties for the `ValidateAssemblies` task, see [Assembly validation properties](#assembly-validation-properties).
+
+The following MSBuild properties and items are documented in this section:
+
+- [ApiCompatEnableRuleAttributesMustMatch](#apicompatenableruleattributesmustmatch)
+- [ApiCompatEnableRuleCannotChangeParameterName](#apicompatenablerulecannotchangeparametername)
+- [ApiCompatExcludeAttributesFile](#apicompatexcludeattributesfile)
+- [ApiCompatGenerateSuppressionFile](#apicompatgeneratesuppressionfile)
+- [ApiCompatPermitUnnecessarySuppressions](#apicompatpermitunnecessarysuppressions)
+- [ApiCompatPreserveUnnecessarySuppressions](#apicompatpreserveunnecessarysuppressions)
+- [ApiCompatRespectInternals](#apicompatrespectinternals)
+- [ApiCompatSuppressionFile](#apicompatsuppressionfile)
+- [ApiCompatSuppressionOutputFile](#apicompatsuppressionoutputfile)
+- [EnablePackageValidation](#enablepackagevalidation)
+- [EnableStrictModeForBaselineValidation](#enablestrictmodeforbaselinevalidation)
+- [EnableStrictModeForCompatibleFrameworksInPackage](#enablestrictmodeforcompatibleframeworksinpackage)
+- [EnableStrictModeForCompatibleTfms](#enablestrictmodeforcompatibletfms)
+- [NoWarn](#nowarn)
+- [PackageValidationBaselineFrameworkToIgnore](#packagevalidationbaselineframeworktoignore)
+- [PackageValidationBaselineName](#packagevalidationbaselinename)
+- [PackageValidationBaselinePath](#packagevalidationbaselinepath)
+- [PackageValidationReferencePath](#packagevalidationreferencepath)
+- [RoslynAssembliesPath](#roslynassembliespath)
+
+### ApiCompatEnableRuleAttributesMustMatch
+
+When set to `true`, the `ApiCompatEnableRuleAttributesMustMatch` property enables the validation rule that checks if attributes match. The default is `false`.
+
+```xml
+<PropertyGroup>
+  <ApiCompatEnableRuleAttributesMustMatch>true</ApiCompatEnableRuleAttributesMustMatch>
+</PropertyGroup>
+```
+
+### ApiCompatEnableRuleCannotChangeParameterName
+
+When set to `true`, the `ApiCompatEnableRuleCannotChangeParameterName` property enables the validation rule that checks whether parameter names have changed in public methods. The default is `false`.
+
+```xml
+<PropertyGroup>
+  <ApiCompatEnableRuleCannotChangeParameterName>true</ApiCompatEnableRuleCannotChangeParameterName>
+</PropertyGroup>
+```
+
+### ApiCompatExcludeAttributesFile
+
+The `ApiCompatExcludeAttributesFile` item specifies the path to a file that contains attributes to exclude in [DocId](../../csharp/language-reference/xmldoc/index.md#id-strings) format.
+
+```xml
+<ItemGroup>
+  <ApiCompatExcludeAttributesFile Include="ApiCompatExcludedAttributes.txt" />
+  <ApiCompatExcludeAttributesFile Include="ApiCompatBaselineExcludedAttributes.txt" />
+</ItemGroup>
+```
+
+### ApiCompatGenerateSuppressionFile
+
+The `ApiCompatGenerateSuppressionFile` property specifies whether to generate a compatibility suppression file.
+
+```xml
+<PropertyGroup>
+  <ApiCompatGenerateSuppressionFile>true</ApiCompatGenerateSuppressionFile>
+</PropertyGroup>
+```
+
+### ApiCompatPermitUnnecessarySuppressions
+
+The `ApiCompatPermitUnnecessarySuppressions` property specifies whether to permit unnecessary suppressions in the suppression file.
+
+The default is `false`.
+
+```xml
+<PropertyGroup>
+  <ApiCompatPermitUnnecessarySuppressions>true</ApiCompatPermitUnnecessarySuppressions>
+</PropertyGroup>
+```
+
+### ApiCompatPreserveUnnecessarySuppressions
+
+The `ApiCompatPreserveUnnecessarySuppressions` property specifies whether to preserve unnecessary suppressions when regenerating the suppression file. When an existing suppression file is regenerated, its content is read, deserialized into a set of suppressions, and then stored in a list. Some of the suppressions might no longer be necessary if the incompatibility has been fixed. When the suppressions are serialized back to disk, you can choose to keep *all* the existing (deserialized) expressions by setting this property to `true`.
+
+The default is `false`.
+
+```xml
+<PropertyGroup>
+  <ApiCompatPreserveUnnecessarySuppressions>true</ApiCompatPreserveUnnecessarySuppressions>
+</PropertyGroup>
+```
+
+### ApiCompatRespectInternals
+
+The `ApiCompatRespectInternals` property specifies whether `internal` APIs should be checked for compatibility in addition to `public` APIs.
+
+```xml
+<PropertyGroup>
+  <ApiCompatRespectInternals>true</ApiCompatRespectInternals>
+</PropertyGroup>
+```
+
+### ApiCompatSuppressionFile
+
+The `ApiCompatSuppressionFile` item specifies the path to one or more suppression files to read from.
+
+```xml
+<ItemGroup>
+  <ApiCompatSuppressionFile Include="CompatibilitySuppressions.xml;CompatibilitySuppressions.WasmThreads.xml" />
+</ItemGroup>
+```
+
+### ApiCompatSuppressionOutputFile
+
+The `ApiCompatSuppressionOutputFile` property specifies the path to a suppression file to write to when `<ApiCompatGenerateSuppressionFile>` is `true`.
+
+### EnablePackageValidation
+
+The `EnablePackageValidation` property enables a series of validations on the package after the `pack` task. For more information, see [package validation](../../fundamentals/apicompat/package-validation/overview.md).
+
+```xml
+<PropertyGroup>
+  <EnablePackageValidation>true</EnablePackageValidation>
+</PropertyGroup>
+```
+
+### EnableStrictModeForBaselineValidation
+
+When set to `true`, the `EnableStrictModeForBaselineValidation` property enables strict mode for package baseline checks. The default is `false`.
+
+### EnableStrictModeForCompatibleFrameworksInPackage
+
+When set to `true`, the `EnableStrictModeForCompatibleFrameworksInPackage` property enables strict mode for assemblies that are compatible based on their target framework. The default is `false`.
+
+### EnableStrictModeForCompatibleTfms
+
+When set to `true`, the `EnableStrictModeForCompatibleTfms` property enables strict mode for contract and implementation assemblies for all compatible target frameworks. The default is `true`.
+
+### NoWarn
+
+The `NoWarn` property specifies the diagnostic IDs to suppress.
+
+```xml
+<PropertyGroup>
+  <NoWarn>$(NoWarn);PKV0001</NoWarn>
+</PropertyGroup>
+```
+
+### PackageValidationBaselineFrameworkToIgnore
+
+The `PackageValidationBaselineFrameworkToIgnore` item specifies a target framework to ignore from the baseline package. The framework string must exactly match the folder name in the baseline package.
+
+```xml
+<ItemGroup>
+  <PackageValidationBaselineFrameworkToIgnore Include="netcoreapp2.1;" />
+</ItemGroup>
+```
+
+### PackageValidationBaselineName
+
+The `PackageValidationBaselineName` property specifies the name of the baseline package to validate the current package against.
+
+### PackageValidationBaselinePath
+
+The `PackageValidationBaselinePath` property specifies the path to a baseline package to validate the current package against.
+
+### PackageValidationReferencePath
+
+The `PackageValidationReferencePath` item specifies the directory path where the reference assembly can be found.
+
+```xml
+<ItemGroup>
+  <PackageValidationReferencePath Include="path/to/reference-assembly" TargetFramework="net7.0" />
+</ItemGroup>
+```
+
+### RoslynAssembliesPath
+
+The `RoslynAssembliesPath` property specifies the path to the directory that contains the Microsoft.CodeAnalysis assemblies.
+
 ## Publish-related properties
 
 The following MSBuild properties are documented in this section:
@@ -166,7 +464,6 @@ The following MSBuild properties are documented in this section:
 - [AppendRuntimeIdentifierToOutputPath](#appendruntimeidentifiertooutputpath)
 - [AppendTargetFrameworkToOutputPath](#appendtargetframeworktooutputpath)
 - [CopyLocalLockFileAssemblies](#copylocallockfileassemblies)
-- [EnablePackageValidation](#enablepackagevalidation)
 - [ErrorOnDuplicatePublishOutputFiles](#erroronduplicatepublishoutputfiles)
 - [GenerateRuntimeConfigDevFile](#generateruntimeconfigdevfile)
 - [GenerateRuntimeConfigurationFiles](#generateruntimeconfigurationfiles)
@@ -232,18 +529,6 @@ The `ErrorOnDuplicatePublishOutputFiles` property relates to whether the SDK gen
 ```xml
 <PropertyGroup>
   <ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
-</PropertyGroup>
-```
-
-This property was introduced in .NET 6.
-
-### EnablePackageValidation
-
-The `EnablePackageValidation` property enables a series of validations on the package after the `pack` task. For more information, see [package validation](../../fundamentals/apicompat/package-validation/overview.md).
-
-```xml
-<PropertyGroup>
-  <EnablePackageValidation>true</EnablePackageValidation>
 </PropertyGroup>
 ```
 

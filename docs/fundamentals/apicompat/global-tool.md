@@ -127,11 +127,11 @@ These options are only applicable when assemblies are compared.
 
 - **`--left-assemblies-transformation-pattern <PATTERN>`**
 
-  Specifies a transformation pattern for the *left side* assemblies.
+  Specifies a transformation pattern for the *left side* assemblies. The input string expected to have the following format: `{regex-pattern};{replacement-string}`.
 
 - **`--right-assemblies-transformation-pattern <PATTERN>`**
 
-  Specifies a transformation pattern for the *right side* assemblies.
+  Specifies a transformation pattern for the *right side* assemblies. The input string expected to have the following format: `{regex-pattern};{replacement-string}`.
 
 ### Package-specific options
 

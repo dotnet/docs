@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 11/30/2023
+ms.date: 12/01/2023
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -16,98 +16,39 @@ This page is a reference for the MSBuild properties and items that you can use t
 
 These properties and items are passed to the `ValidateAssemblies` task. For more information about assembly validation, see [Assembly validation](../../fundamentals/apicompat/assembly-validation.md).
 
-The following MSBuild properties and items apply to assembly validation:
+The following MSBuild properties are documented in this section:
+
+- [ApiCompatStrictMode](#apicompatstrictmode)
+- [ApiCompatValidateAssemblies](#apicompatvalidateassemblies)
+
+> [!NOTE]
+> These properties aren't part of the .NET SDK (yet). To use them, you must also add a `PackageReference` to [Microsoft.DotNet.ApiCompat.Task](https://www.nuget.org/packages/Microsoft.DotNet.ApiCompat.Task).
+
+In addition, the following properties that are documented in the [Package validation properties](#package-validation-properties) also apply to assembly validation:
 
 - [ApiCompatEnableRuleAttributesMustMatch](#apicompatenableruleattributesmustmatch)
 - [ApiCompatEnableRuleCannotChangeParameterName](#apicompatenablerulecannotchangeparametername)
 - [ApiCompatExcludeAttributesFile](#apicompatexcludeattributesfile)
 - [ApiCompatGenerateSuppressionFile](#apicompatgeneratesuppressionfile)
-- [ApiCompatLeftAssemblies](#apicompatleftassemblies)
-- [ApiCompatLeftAssembliesReferences](#apicompatleftassembliesreferences)
-- [ApiCompatLeftAssembliesTransformationPattern](#apicompatleftassembliestransformationpattern)
-- [ApiCompatRightAssemblies](#apicompatrightassemblies)
-- [ApiCompatRightAssembliesReferences](#apicompatrightassembliesreferences)
-- [ApiCompatRightAssembliesTransformationPattern](#apicompatrightassembliestransformationpattern)
 - [ApiCompatPermitUnnecessarySuppressions](#apicompatpermitunnecessarysuppressions)
 - [ApiCompatPreserveUnnecessarySuppressions](#apicompatpreserveunnecessarysuppressions)
 - [ApiCompatRespectInternals](#apicompatrespectinternals)
-- [ApiCompatStrictMode](#apicompatstrictmode)
 - [ApiCompatSuppressionFile](#apicompatsuppressionfile)
 - [ApiCompatSuppressionOutputFile](#apicompatsuppressionoutputfile)
-- [ApiCompatValidateAssemblies](#apicompatvalidateassemblies)
-- [ApiCompatValidateAssembliesSemaphoreFile](#apicompatvalidateassembliessemaphorefile)
 - [NoWarn](#nowarn)
 - [RoslynAssembliesPath](#roslynassembliespath)
 
-### ApiCompatLeftAssemblies
-
-The `ApiCompatLeftAssemblies` item specifies the path to one or more assemblies that serve as the *left side* to compare. This property is required when `ApiCompatValidateAssemblies` is set to `true`.
-
-```xml
-<ItemGroup>
-  <ApiCompatLeftAssemblies Include="path/to/left-assembly" />
-</ItemGroup>
-```
-
-### ApiCompatLeftAssembliesReferences
-
-The `ApiCompatLeftAssembliesReferences` item specifies the path to assembly references or the underlying directories for the left side of the comparison.
-
-```xml
-<ItemGroup>
-  <ApiCompatLeftAssembliesReferences Include="path/to/assembly-references" />
-</ItemGroup>
-```
-
-### ApiCompatLeftAssembliesTransformationPattern
-
-The `ApiCompatLeftAssembliesTransformationPattern` item specifies a transformation pattern for the left side assemblies.
-
-```xml
-<ItemGroup>
-  <ApiCompatLeftAssembliesTransformationPattern Include="$(_ApiCompatCaptureGroupPattern)" ReplacementString="ref/$1/$2" />
-</ItemGroup>
-```
-
-### ApiCompatRightAssemblies
-
-The `ApiCompatRightAssemblies` item specifies the path to one or more assemblies that serve as the *right side* to compare. This property is required when `ApiCompatValidateAssemblies` is set to `true`.
-
-```xml
-<ItemGroup>
-  <ApiCompatRightAssemblies Include="path/to/right-assembly" />
-</ItemGroup>
-```
-
-### ApiCompatRightAssembliesReferences
-
-The `ApiCompatRightAssembliesReferences` item specifies the path to assembly references or the underlying directories for the right side of the comparison.
-
-```xml
-<ItemGroup>
-  <ApiCompatRightAssembliesReferences Include="path/to/assembly-references" />
-</ItemGroup>
-```
-
-### ApiCompatRightAssembliesTransformationPattern
-
-The `ApiCompatLeftAssembliesTransformationPattern` item specifies a transformation pattern for the right side assemblies.
-
-```xml
-<ItemGroup>
-  <ApiCompatRightAssembliesTransformationPattern Include="$(_ApiCompatCaptureGroupPattern)" ReplacementString="lib/$1/$2" />
-</ItemGroup>
-```
-
 ### ApiCompatStrictMode
 
-When set to `true`, the `ApiCompatStrictMode` property specifies that API compatibility checks should be performed in strict mode.
+When set to `true`, the `ApiCompatStrictMode` property specifies that API compatibility checks should be performed in *strict mode*.
 
 ```xml
 <PropertyGroup>
   <ApiCompatStrictMode>true</ApiCompatStrictMode>
 </PropertyGroup>
 ```
+
+For more information about strict mode, see [EnableStrictModeForBaselineValidation](#enablestrictmodeforbaselinevalidation).
 
 ### ApiCompatValidateAssemblies
 
@@ -116,16 +57,6 @@ The `ApiCompatValidateAssemblies` property enables a series of validations on th
 ```xml
 <PropertyGroup>
   <ApiCompatValidateAssemblies>true</ApiCompatValidateAssemblies>
-</PropertyGroup>
-```
-
-### ApiCompatValidateAssembliesSemaphoreFile
-
-The `ApiCompatValidateAssembliesSemaphoreFile` property specifies the path to the *.semaphore* file for the assembly validation.
-
-```xml
-<PropertyGroup>
-  <ApiCompatValidateAssembliesSemaphoreFile>path/to/semaphore-file</ApiCompatValidateAssembliesSemaphoreFile>
 </PropertyGroup>
 ```
 
@@ -300,7 +231,7 @@ The following MSBuild properties and items are documented in this section:
 - [NoWarn](#nowarn)
 - [PackageValidationBaselineFrameworkToIgnore](#packagevalidationbaselineframeworktoignore)
 - [PackageValidationBaselineName](#packagevalidationbaselinename)
-- [PackageValidationBaselinePath](#packagevalidationbaselinepath)
+- [PackageValidationBaselineVersion](#packagevalidationbaselineversion)
 - [PackageValidationReferencePath](#packagevalidationreferencepath)
 - [RoslynAssembliesPath](#roslynassembliespath)
 
@@ -381,7 +312,7 @@ The `ApiCompatRespectInternals` property specifies whether `internal` APIs shoul
 
 ### ApiCompatSuppressionFile
 
-The `ApiCompatSuppressionFile` item specifies the path to one or more suppression files to read from.
+The `ApiCompatSuppressionFile` item specifies the path to one or more suppression files to read from. If unspecified, the suppression file *\<project-directory>/CompatibilitySuppressions.xml* is read (if it exists).
 
 ```xml
 <ItemGroup>
@@ -391,7 +322,7 @@ The `ApiCompatSuppressionFile` item specifies the path to one or more suppressio
 
 ### ApiCompatSuppressionOutputFile
 
-The `ApiCompatSuppressionOutputFile` property specifies the path to a suppression file to write to when `<ApiCompatGenerateSuppressionFile>` is `true`.
+The `ApiCompatSuppressionOutputFile` property specifies the path to a suppression file to write to when `<ApiCompatGenerateSuppressionFile>` is `true`. If unspecified, the first `ApiCompatSuppressionFile` item is used.
 
 ### EnablePackageValidation
 
@@ -405,15 +336,24 @@ The `EnablePackageValidation` property enables a series of validations on the pa
 
 ### EnableStrictModeForBaselineValidation
 
-When set to `true`, the `EnableStrictModeForBaselineValidation` property enables strict mode for package baseline checks. The default is `false`.
+When set to `true`, the `EnableStrictModeForBaselineValidation` property enables *strict mode* for package baseline checks. The default is `false`. In strict mode, the validation performs equality checks instead of compatibility checks. Equality means that API additions and changing the assembly, even in a compatible way, are disallowed.
+
+The use cases for strict mode include the following:
+
+- Servicing, in which API additions are usually forbidden.
+- For tracking API changes. The API compatibility functionality records all compatibility differences in the suppression file if you set [ApiCompatGenerateSuppressionFile](#apicompatgeneratesuppressionfile) to `true`.
 
 ### EnableStrictModeForCompatibleFrameworksInPackage
 
-When set to `true`, the `EnableStrictModeForCompatibleFrameworksInPackage` property enables strict mode for assemblies that are compatible based on their target framework. The default is `false`.
+When set to `true`, the `EnableStrictModeForCompatibleFrameworksInPackage` property enables *strict mode* for assemblies that are compatible based on their target framework. The default is `false`.
+
+For more information about strict mode, see [EnableStrictModeForBaselineValidation](#enablestrictmodeforbaselinevalidation).
 
 ### EnableStrictModeForCompatibleTfms
 
-When set to `true`, the `EnableStrictModeForCompatibleTfms` property enables strict mode for contract and implementation assemblies for all compatible target frameworks. The default is `true`.
+When set to `true`, the `EnableStrictModeForCompatibleTfms` property enables *strict mode* for contract and implementation assemblies for all compatible target frameworks. The default is `true`.
+
+For more information about strict mode, see [EnableStrictModeForBaselineValidation](#enablestrictmodeforbaselinevalidation).
 
 ### NoWarn
 
@@ -437,11 +377,11 @@ The `PackageValidationBaselineFrameworkToIgnore` item specifies a target framewo
 
 ### PackageValidationBaselineName
 
-The `PackageValidationBaselineName` property specifies the name of the baseline package to validate the current package against.
+The `PackageValidationBaselineName` property specifies the name of the baseline package to validate the current package against. If unspecified, the `PackageId` value is used.
 
-### PackageValidationBaselinePath
+### PackageValidationBaselineVersion
 
-The `PackageValidationBaselinePath` property specifies the path to a baseline package to validate the current package against.
+The `PackageValidationBaselineVersion` property specifies the version of the baseline package to validate the current package against.
 
 ### PackageValidationReferencePath
 
@@ -455,7 +395,7 @@ The `PackageValidationReferencePath` item specifies the directory path where the
 
 ### RoslynAssembliesPath
 
-The `RoslynAssembliesPath` property specifies the path to the directory that contains the Microsoft.CodeAnalysis assemblies.
+The `RoslynAssembliesPath` property specifies the path to the directory that contains the Microsoft.CodeAnalysis assemblies you want to use. You only need to set this property if you want to test with a newer compiler than what's in the SDK.
 
 ## Publish-related properties
 

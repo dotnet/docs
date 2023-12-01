@@ -205,14 +205,17 @@ Debug content should be packaged in debug-named packages that follow the .NET pa
 Few binary examples:
 
 In `{dotnet_root}/sdk/<sdk version>` directory, we'd expect the following two files:
+
 - `dotnet.dll` - installed with `dotnet-sdk-[major].[minor]` package
 - `dotnet.pdb` - installed with `dotnet-sdk-dbg-[major].[minor]` package
 
 In `{dotnet_root}/shared/Microsoft.NETCore.App/<runtime version>` we'd expect the following two files:
+
 - `System.Text.Json.dll` - installed with `dotnet-runtime-[major].[minor]` package
 - `System.Text.Json.pdb` - installed with `dotnet-runtime-dbg-[major].[minor]` package
 
 In `{dotnet_root/shared/Microsoft.AspNetCore.App/<aspnetcore version>` we'd expect the following two files:
+
 - `Microsoft.AspNetCore.Routing.dll` - installed with `aspnetcore-runtime-[major].[minor]` packages
 - `Microsoft.AspNetCore.Routing.pdb` - installed with `aspnetcore-runtime-dbg-[major].[minor]` packages
 
@@ -242,7 +245,7 @@ The following lists the recommended debug packages:
   - **Contains:** debug content for (5)
   - **Dependencies:** `dotnet-runtime-[major].[minor]`
 
-Debug tarball also contains some debug content under `packs` which represent copies of content under `shared`. In .NET layout, `packs` directory is used for building .NET applications - there are no debugging scenarios. Thus debug content under `packs`, in debug tarball, should not be packaged. 
+Debug tarball also contains some debug content under `packs` which represent copies of content under `shared`. In .NET layout, `packs` directory is used for building .NET applications - there are no debugging scenarios. Thus debug content under `packs`, in debug tarball, should not be packaged.
 
 ## Building packages
 

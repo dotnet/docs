@@ -42,7 +42,6 @@ Welcome to what's new in the .NET docs for November 2023. This article lists som
 - [Networking event counters in .NET](../fundamentals/networking/telemetry/event-counters.md)
 - [Networking metrics in .NET](../fundamentals/networking/telemetry/metrics.md)
 - [Networking telemetry in .NET](../fundamentals/networking/telemetry/overview.md)
-- [Title not found in: #38422](../fundamentals/networking/telemetry/snippets/metrics/prometheus.yml)
 - [CA1862: Use the 'StringComparison' method overloads to perform case-insensitive string comparisons](../fundamentals/code-analysis/quality-rules/ca1862.md)
 - [CA1863: Use 'CompositeFormat'](../fundamentals/code-analysis/quality-rules/ca1863.md)
 - [Install .NET SDK or .NET Runtime on Ubuntu 23.10](../core/install/linux-ubuntu-2310.md)

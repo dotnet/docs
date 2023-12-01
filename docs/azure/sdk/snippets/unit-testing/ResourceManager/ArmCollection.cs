@@ -27,6 +27,6 @@ public abstract partial class ArmCollection
     public virtual T GetCachedClient<T>(Func<ArmClient, T> clientFactory)
         where T : class
     {
-        return _clientCache.GetOrAdd(typeof(T), type => clientFactory(Client)) as T;
+        return (T)_clientCache.GetOrAdd(typeof(T), type => clientFactory(Client));
     }
 }

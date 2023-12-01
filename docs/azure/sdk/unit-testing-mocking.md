@@ -235,11 +235,11 @@ This approach is useful when you would like to consolidate the dependency creati
 
 In ARM libraries, the clients were designed to emphasize their relationship to one another, mirroring the service hierarchy. To achieve that goal, extension methods are widely used to add additional features to clients.
 
-For example, an Azure virtual machine exists in an Azure resource group. The `Azure.ResourceManager.Compute` namespace models Azure virtual machine as `VirtualMachineResource` and `Azure.ResourceManager` namespace models Azure resource group as `ResourceGroupResource`. To query the virtual machines for a resource group, you would write:
+For example, an Azure virtual machine exists in an Azure resource group. The `Azure.ResourceManager.Compute` namespace models the Azure virtual machine as `VirtualMachineResource`. The `Azure.ResourceManager` namespace models the Azure resource group as `ResourceGroupResource`. To query the virtual machines for a resource group, you would write:
 
 :::code language="csharp" source="snippets/unit-testing/ResourceManager/ResourceManagerCodeStructure.cs" id="ParentOfVMIsRG" :::
 
-Because the virtual machine-related functionality such as `GetVirtualMachines` on `ResourceGroupResource` are implemented as extension methods, it's not possible to just create a mock of the type and override the method. Instead, you'll also have to create a mock class for the "mockable resource" and wire them together.
+Because the virtual machine-related functionality such as `GetVirtualMachines` on `ResourceGroupResource`, is implemented as extension methods, it's impossible to just create a mock of the type and override the method. Instead, you'll also have to create a mock class for the "mockable resource" and wire them together.
 
 The mockable resource type is always in the `Mocking` sub-namespace of the extension method. In the preceding example, the mockable resource type is in the `Azure.ResourceManager.Compute.Mocking` namespace. The mockable resource type is always named after the resource type with "Mockable" and the library name as prefixes. In the preceding example, the mockable resource type is named `MockableComputeResourceGroupResource`, where `ResourceGroupResource` is the resource type of the extension method, and `Compute` is the library name.
 

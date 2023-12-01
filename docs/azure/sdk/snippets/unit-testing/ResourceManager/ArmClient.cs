@@ -11,8 +11,8 @@ public partial class ArmClient
 
     [EditorBrowsable(EditorBrowsableState.Never)]
     public virtual T GetCachedClient<T>(Func<ArmClient, T> clientFactory)
-            where T : class
+        where T : class
     {
-        return _clientCache.GetOrAdd(typeof(T), type => clientFactory(this)) as T;
+        return (T)_clientCache.GetOrAdd(typeof(T), type => clientFactory(this));
     }
 }

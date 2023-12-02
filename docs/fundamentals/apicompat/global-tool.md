@@ -57,6 +57,8 @@ Some options apply to both assembly and package validation. Others apply to [ass
 
   Preserves unnecessary suppressions when regenerating the suppression file.
 
+  When an existing suppression file is regenerated, its content is read, deserialized into a set of suppressions, and then stored in a list. Some of the suppressions might no longer be necessary if the incompatibility has been fixed. When the suppressions are serialized back to disk, you can choose to keep *all* the existing (deserialized) expressions by specifying this option.
+
 - **`--permit-unnecessary-suppressions`**
 
   Permits unnecessary suppressions in the suppression file.
@@ -67,7 +69,7 @@ Some options apply to both assembly and package validation. Others apply to [ass
 
 - **`--suppression-output-file <FILE>`**
 
-  Specifies the path to a suppression file to write to when `--generate-suppression-file` is specified.
+  Specifies the path to a suppression file to write to when `--generate-suppression-file` is specified. If unspecified, the first `--suppression-file` path is used.
 
 - **`--noWarn <NOWARN_STRING>`**
 
@@ -79,7 +81,7 @@ Some options apply to both assembly and package validation. Others apply to [ass
 
 - **`--roslyn-assemblies-path <FILE>`**
 
-  Specifies the path to the directory that contains the Microsoft.CodeAnalysis assemblies.
+  Specifies the path to the directory that contains the Microsoft.CodeAnalysis assemblies you want to use. You only need to set this property if you want to test with a newer compiler than what's in the SDK.
 
 - **`-v, --verbosity [high|low|normal]`**
 
@@ -105,33 +107,13 @@ These options are only applicable when assemblies are compared.
 
   Specifies the path to one or more assemblies that serve as the *left side* to compare. This option is required when comparing assemblies.
 
-- **`-r, --right, --right-assembly`**
+- **`-r, --right, --right-assembly <PATH>`**
 
   Specifies the path to one or more assemblies that serve as the *right side* to compare. This option is required when comparing assemblies.
 
 - **`--strict-mode`**
 
-  Performs API compatibility checks in strict mode.
-
-- **`--left-assembly-references, --lref <FILE1,FILE2,...>`**
-
-  Specifies the paths to assembly references or the underlying directories for the *left side*. Separate multiple values with a comma.
-
-- **`--right-assembly-references, --rref <FILE1,FILE2,...>`**
-
-  Specifies the paths to assembly references or the underlying directories for the *right side*. Separate multiple values with a comma.
-
-- **`--create-work-item-per-assembly`**
-
-  Enqueues a work item for the specified *left* and *right* assemblies.
-
-- **`--left-assemblies-transformation-pattern <PATTERN>`**
-
-  Specifies a transformation pattern for the *left side* assemblies. The input string expected to have the following format: `{regex-pattern};{replacement-string}`.
-
-- **`--right-assemblies-transformation-pattern <PATTERN>`**
-
-  Specifies a transformation pattern for the *right side* assemblies. The input string expected to have the following format: `{regex-pattern};{replacement-string}`.
+  Performs API compatibility checks in [strict mode](overview.md#strict-mode).
 
 ### Package-specific options
 
@@ -141,25 +123,17 @@ These options are only applicable when packages are compared.
 
   Specifies the path to a baseline package to validate the current package against.
 
-- **`--runtime-graph`**
-
-  Specifies the path to the runtime graph to read from.
-
-- **`--run-api-compat`**
-
-  Performs API compatibility checks on the package assets. The default is `true`.
-
 - **`--enable-strict-mode-for-compatible-tfms`**
 
-  Validates API compatibility in strict mode for contract and implementation assemblies for all compatible target frameworks. The default is `true`.
+  Validates API compatibility in [strict mode](overview.md#strict-mode) for contract and implementation assemblies for all compatible target frameworks. The default is `true`.
 
 - **`--enable-strict-mode-for-compatible-frameworks-in-package`**
 
-  Validates API compatibility in strict mode for assemblies that are compatible based on their target framework.
+  Validates API compatibility in [strict mode](overview.md#strict-mode) for assemblies that are compatible based on their target framework.
 
 - **`--enable-strict-mode-for-baseline-validation`**
 
-  Validates API compatibility in strict mode for package baseline checks.
+  Validates API compatibility in [strict mode](overview.md#strict-mode) for package baseline checks.
 
 - **`--package-assembly-references`**
 
@@ -173,7 +147,7 @@ These options are only applicable when packages are compared.
 
   Specifies the set of target frameworks to ignore from the baseline package. The framework string must exactly match the folder name in the baseline package.
 
-## Example
+## Examples
 
 The following command compares the current and baseline versions of an assembly.
 
@@ -192,6 +166,8 @@ The following example shows the command to compare the current and baseline vers
 ```dotnetcli
 >apicompat -l LibApp5-baseline.dll -r LibApp5.dll --enable-rule-cannot-change-parameter-name
 API compatibility errors between 'LibApp5-baseline.dll' (left) and 'LibApp5.dll' (right):
-CP0017: Parameter name on member 'KitchenHelpers.ToastBreadAsync(int, int)' changed from 'slices' to 'numSlices'.
-API breaking changes found. If those are intentional, the APICompat suppression file can be updated by specifying the '--generate-suppression-file' parameter.
+CP0017: Parameter name on member 'KitchenHelpers.ToastBreadAsync(int, int)'
+changed from 'slices' to 'numSlices'.
+API breaking changes found. If those are intentional, the APICompat
+suppression file can be updated by specifying the '--generate-suppression-file' parameter.
 ```

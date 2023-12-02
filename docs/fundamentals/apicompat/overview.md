@@ -17,3 +17,14 @@ For more information about package validation, see [Package validation](package-
 
 > [!NOTE]
 > To run assembly validation as an MSBuild task, you must add a package reference to [Microsoft.DotNet.ApiCompat.Task](https://www.nuget.org/packages/Microsoft.DotNet.ApiCompat.Task). Similarly, you can also add a reference to this package when you want to test newer features that aren't yet available in the .NET SDK. For example, you can reference the 9.0.100-preview version of the [Microsoft.DotNet.ApiCompat.Task package](https://www.nuget.org/packages/Microsoft.DotNet.ApiCompat.Task) while using the .NET 8 SDK.
+
+## Strict mode
+
+By default, the validation performs *compatibility* checks. However, you can also opt into *strict mode*. In strict mode, where the validation performs *equality* checks. Equality means that no API additions or assembly changes, even compatible ones, have been made.
+
+The use cases for strict mode include the following:
+
+- Servicing, in which API additions are usually forbidden.
+- For tracking API changes. The API compatibility functionality records all compatibility differences in the suppression file if you set [ApiCompatGenerateSuppressionFile](#apicompatgeneratesuppressionfile) to `true`.
+
+To enable strict mode, use the 

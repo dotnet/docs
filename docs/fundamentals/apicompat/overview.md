@@ -25,6 +25,11 @@ By default, the validation performs *compatibility* checks. However, you can als
 The use cases for strict mode include the following:
 
 - Servicing, in which API additions are usually forbidden.
-- For tracking API changes. The API compatibility functionality records all compatibility differences in the suppression file if you set [ApiCompatGenerateSuppressionFile](#apicompatgeneratesuppressionfile) to `true`.
+- For tracking API changes. The API compatibility functionality records all compatibility differences in the suppression file if you set [ApiCompatGenerateSuppressionFile](../../core/project-sdk/msbuild-props.md#apicompatgeneratesuppressionfile) to `true`.
 
-To enable strict mode, use the 
+To enable strict mode for the command-line tool, specify the `--strict-mode` option or one of the `--enable-strict*` options. To enable strict mode for the MSBuild tasks, add one or more of the following MSBuild properties to your project file:
+
+- [ApiCompatStrictMode](../../core/project-sdk/msbuild-props.md#apicompatstrictmode)
+- [EnableStrictModeForBaselineValidation](../../core/project-sdk/msbuild-props.md#enablestrictmodeforbaselinevalidation)
+- [EnableStrictModeForCompatibleTfms](../../core/project-sdk/msbuild-props.md#enablestrictmodeforcompatibletfms)
+- [EnableStrictModeForCompatibleFrameworksInPackage](../../core/project-sdk/msbuild-props.md#enablestrictmodeforcompatibleframeworksinpackage)

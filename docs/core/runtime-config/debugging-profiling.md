@@ -66,7 +66,7 @@ This article details the settings you can use to configure .NET debugging and pr
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `COMPlus_PerfMapEnabled` or `DOTNET_PerfMapEnabled` | `0` - disabled<br/>`1` - perfmaps and jitdumps both enabled<br/>`2` - jitdumps enabled<br/>`3` - perfmaps enabled |
+| **Environment variable** | `COMPlus_PerfMapEnabled` or `DOTNET_PerfMapEnabled` | `0` - disabled<br/>`1` - perf maps and jit dumps both enabled<br/>`2` - jit dumps enabled<br/>`3` - perf maps enabled |
 
 ## Perf log markers
 

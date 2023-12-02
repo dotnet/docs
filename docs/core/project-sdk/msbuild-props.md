@@ -40,15 +40,13 @@ In addition, the following properties that are documented in the [Package valida
 
 ### ApiCompatStrictMode
 
-When set to `true`, the `ApiCompatStrictMode` property specifies that API compatibility checks should be performed in *strict mode*.
+When set to `true`, the `ApiCompatStrictMode` property specifies that API compatibility checks should be performed in [strict mode](../../fundamentals/apicompat/overview.md#strict-mode).
 
 ```xml
 <PropertyGroup>
   <ApiCompatStrictMode>true</ApiCompatStrictMode>
 </PropertyGroup>
 ```
-
-For more information about strict mode, see [Strict mode](../../fundamentals/apicompat/overview.md#strict-mode).
 
 ### ApiCompatValidateAssemblies
 
@@ -336,21 +334,15 @@ The `EnablePackageValidation` property enables a series of validations on the pa
 
 ### EnableStrictModeForBaselineValidation
 
-When set to `true`, the `EnableStrictModeForBaselineValidation` property enables *strict mode* for package baseline checks. The default is `false`.
-
-For more information about strict mode, see [Strict mode](../../fundamentals/apicompat/overview.md#strict-mode).
+When set to `true`, the `EnableStrictModeForBaselineValidation` property enables [strict mode](../../fundamentals/apicompat/overview.md#strict-mode) for package baseline checks. The default is `false`.
 
 ### EnableStrictModeForCompatibleFrameworksInPackage
 
-When set to `true`, the `EnableStrictModeForCompatibleFrameworksInPackage` property enables *strict mode* for assemblies that are compatible based on their target framework. The default is `false`.
-
-For more information about strict mode, see [Strict mode](../../fundamentals/apicompat/overview.md#strict-mode).
+When set to `true`, the `EnableStrictModeForCompatibleFrameworksInPackage` property enables [strict mode](../../fundamentals/apicompat/overview.md#strict-mode) for assemblies that are compatible based on their target framework. The default is `false`.
 
 ### EnableStrictModeForCompatibleTfms
 
-When set to `true`, the `EnableStrictModeForCompatibleTfms` property enables *strict mode* for contract and implementation assemblies for all compatible target frameworks. The default is `true`.
-
-For more information about strict mode, see [Strict mode](../../fundamentals/apicompat/overview.md#strict-mode).
+When set to `true`, the `EnableStrictModeForCompatibleTfms` property enables [strict mode](../../fundamentals/apicompat/overview.md#strict-mode) for contract and implementation assemblies for all compatible target frameworks. The default is `true`.
 
 ### NoWarn
 

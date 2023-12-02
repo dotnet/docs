@@ -79,4 +79,4 @@ This article details the settings you can use to configure .NET debugging and pr
 | **Environment variable** | `COMPlus_PerfMapIgnoreSignal` or `DOTNET_PerfMapIgnoreSignal` | `0` - disabled<br/>`1` - enabled |
 
 > [!NOTE]
-> This setting is ignored if [DOTNET_PerfMapEnabled](#export-perf-maps) is omitted or set to `0` (that is, disabled).
+> This setting is ignored if [DOTNET_PerfMapEnabled](#export-perf-maps-and-jit-dumps) is omitted or set to `0` (that is, disabled).

@@ -666,7 +666,7 @@ This section contains the following subtopics:
 
 ### Keyed DI services
 
-Keyed dependency injection (DI) services provides a means for registering and retrieving DI services using keys. By using keys, you can scope how your register and consume services. These are some of the new APIs:
+Keyed dependency injection (DI) services provide a means for registering and retrieving DI services using keys. By using keys, you can scope how you register and consume services. These are some of the new APIs:
 
 - The <xref:Microsoft.Extensions.DependencyInjection.IKeyedServiceProvider> interface.
 - The <xref:Microsoft.Extensions.DependencyInjection.ServiceKeyAttribute> attribute, which can be used to inject the key that was used for registration/resolution in the constructor.

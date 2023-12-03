@@ -13,7 +13,7 @@ You might think that a change is safe and compatible if source consuming that ch
 
 The .NET SDK provides various ways you can compare versions built for different target frameworks. You can also validate a newer version against a baseline version to ensure no breaking changes have been introduced. Enable MSBuild tasks to validate your assemblies at compile time or your packages when you [pack](../../core/tools/dotnet-pack.md). Or, use the [Microsoft.DotNet.ApiCompat.Tool global tool](global-tool.md) to validate outside of MSBuild.
 
-For more information about package validation, see [Package validation](package-validation/overview.md). For more information about assembly validation, see [Assembly validation](assembly-validation.md).
+For more information about package validation, see [Package validation](package-validation/overview.md).Assembly validation should be used when your app isn't packable. For more information about assembly validation, see [Assembly validation](assembly-validation.md).
 
 > [!NOTE]
 > To run assembly validation as an MSBuild task, you must add a package reference to [Microsoft.DotNet.ApiCompat.Task](https://www.nuget.org/packages/Microsoft.DotNet.ApiCompat.Task). Similarly, you can also add a reference to this package when you want to test newer features that aren't yet available in the .NET SDK. For example, you can reference the 9.0.100-preview version of the [Microsoft.DotNet.ApiCompat.Task package](https://www.nuget.org/packages/Microsoft.DotNet.ApiCompat.Task) while using the .NET 8 SDK.

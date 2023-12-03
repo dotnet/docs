@@ -74,7 +74,7 @@ Now when you pack the project, it succeeds.
 
 ![BaselineVersionSuccessful](media/baseline-version-successful.png)
 
-For version 2.0.0 you later decide you want to remove obsolete `Connect` method with the single `string` parameter and upon careful consideration deliberately decide to accept this breaking change.
+For version 2.0.0, you decide you want to remove the obsolete `Connect` method that has the single `string` parameter. After careful consideration, you decide to accept this breaking change.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -101,7 +101,7 @@ public static HttpClient Connect(string url, TimeSpan timeout)
 }
 ```
 
-To suppress the `CP0002` error for this intentional breaking change, you can add a *CompatibilitySuppressions.xml* file to your project. By calling `dotnet pack /p:GenerateCompatibilitySuppressionFile=true` once, this file can be generated automatically. It contains a suppression for each validation error that occurred during pack. For more information, see [Suppress compatibility errors](overview.md#suppress-compatibility-errors).
+To suppress the `CP0002` error for this intentional breaking change, you can add a *CompatibilitySuppressions.xml* file to your project. You can generate the suppression file automatically by calling `dotnet pack /p:GenerateCompatibilitySuppressionFile=true` once. The file contains a suppression for each validation error that occurred during pack. For more information, see [How to suppress](../diagnostic-ids.md#how-to-suppress).
 
 In this example, the *CompatibilitySuppressions.xml* contains the suppression for the `CP0002` error:
 
@@ -120,7 +120,7 @@ In this example, the *CompatibilitySuppressions.xml* contains the suppression fo
 
 This file should be checked into source control to document and review the breaking changes made in a PR and the upcoming release.
 
-After you have released version 2.0.0 of the package, you would delete the *CompatibilitySuppressions.xml* file and update the `PackageValidationBaselineVersion` property to validate future changes against the new release.
+After you've released version 2.0.0 of the package, you can delete the *CompatibilitySuppressions.xml* file and update the `PackageValidationBaselineVersion` property to validate future changes against the new release.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

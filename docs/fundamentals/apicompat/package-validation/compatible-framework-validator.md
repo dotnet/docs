@@ -83,4 +83,4 @@ You try to pack the project again, and it succeeds.
 
 ## Strict mode
 
-You can enable *strict mode* for this validator by setting the `EnableStrictModeForCompatibleTfms` property in your project file. Enabling strict mode changes some rules, and some other rules will be executed when getting the differences. This is useful when you want both sides you're comparing to be strictly the same on their surface area and identity.
+You can enable *strict mode* for this validator by setting the [`EnableStrictModeForCompatibleTfms` property](../../../core/project-sdk/msbuild-props.md#enablestrictmodeforcompatibletfms) in your project file. Enabling strict mode changes some rules, and some other rules will be executed when getting the differences. This is useful when you want both sides you're comparing to be strictly the same on their surface area and identity. For more information, see [Strict mode](../overview.md#strict-mode).

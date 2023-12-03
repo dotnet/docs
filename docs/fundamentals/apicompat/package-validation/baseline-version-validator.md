@@ -6,7 +6,7 @@ ms.date: 09/29/2021
 
 # Validate against a baseline package version
 
-Package Validation can help you validate your library project against a previously released, stable version of your package. To enable package validation, add the `PackageValidationBaselineVersion` or `PackageValidationBaselinePath` property to your project file.
+Package validation can help you validate your library project against a previously released, stable version of your package. To enable package validation, add the [`PackageValidationBaselineVersion`](../../../core/project-sdk/msbuild-props.md#packagevalidationbaselineversion) or [`PackageValidationBaselineName`](../../../core/project-sdk/msbuild-props.md#packagevalidationbaselinename) property to your project file.
 
 Package validation detects any breaking changes on any of the shipped target frameworks. It also detects if any target framework support has been dropped.
 

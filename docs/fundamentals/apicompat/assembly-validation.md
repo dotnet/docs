@@ -7,7 +7,9 @@ ms.topic: overview
 
 # Assembly validation
 
-Similar to [package validation](/dotnet/fundamentals/apicompat/package-validation/overview), assembly validation tooling allows you, as a library developer, to validate that your assemblies are consistent and well formed. It provides the following checks:
+Similar to [package validation](/dotnet/fundamentals/apicompat/package-validation/overview), assembly validation tooling allows you, as a library developer, to validate that your assemblies are consistent and well formed. Use assembly validation instead of package validation when your app isn't packable.
+
+Assembly validation provides the following checks:
 
 - Validates that there are no breaking changes across versions.
 - Validates that the assembly has the same set of public APIs for all the different runtime-specific implementations.
@@ -25,6 +27,7 @@ You enable assembly validation in your .NET project by setting the [`ApiCompatVa
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
     <ApiCompatValidateAssemblies>true</ApiCompatValidateAssemblies>
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(ApiCompatValidateAssemblies)' == 'true'">

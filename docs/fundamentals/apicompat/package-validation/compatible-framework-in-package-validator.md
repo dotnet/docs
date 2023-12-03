@@ -71,4 +71,6 @@ You try to pack the project again, and it succeeds.
 
 ![CompatibleFrameworksSuccessful](media/compatible-frameworks-successful.png)
 
-You can enable *strict mode* for this validator by setting the `EnableStrictModeForCompatibleFrameworksInPackage` property in your project file. Enabling strict mode changes some rules and executes some other rules when getting the differences. This is useful when you want both sides you're comparing to be strictly the same on their surface area and identity.
+## Strict mode
+
+You can enable *strict mode* for this validator by setting the [`EnableStrictModeForCompatibleFrameworksInPackage` property](../../../core/project-sdk/msbuild-props.md#enablestrictmodeforcompatibleframeworksinpackage) in your project file. Enabling strict mode changes some rules and executes some other rules when getting the differences. This is useful when you want both sides you're comparing to be strictly the same on their surface area and identity. For more information, see [Strict mode](../overview.md#strict-mode).

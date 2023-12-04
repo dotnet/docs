@@ -121,7 +121,7 @@ class Chunk<TKey, TSource> : IGrouping<TKey, TSource>
 
         // tail will be null if we are at the end of the chunk elements
         // This check is made in DoneCopyingChunk.
-        tail = tail!.Next!;
+        tail = tail!.Next;
     }
 
     // Called after the end of the last chunk was reached.

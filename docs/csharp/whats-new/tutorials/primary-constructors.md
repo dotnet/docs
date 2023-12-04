@@ -7,7 +7,7 @@ ms.date: 05/26/2023
 
 C# 12 introduces [*primary constructors*](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors), a concise syntax to declare constructors whose parameters are available anywhere in the body of the type.
 
-In this tutorial, you learn how to:
+In this tutorial, you will learn:
 
 > [!div class="checklist"]
 >

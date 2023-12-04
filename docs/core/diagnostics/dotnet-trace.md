@@ -98,7 +98,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 - **`--clreventlevel <clreventlevel>`**
 
   Verbosity of CLR events to be emitted.
-  The table belows show the list of avaiable event levels:
+  The following table shows the available event levels.
   
   | String value | Numeric value |
   | ------------ | ------------------- |

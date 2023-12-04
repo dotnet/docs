@@ -308,9 +308,9 @@ A disadvantage of this method is you can't pass in the original options instance
 
 :::code language="csharp" source="snippets/how-to/csharp/PersonConverterWithTypeDiscriminatorAlt.cs" id="ReadMethod":::
 
-### Support round trip for Stack\<T>
+### Support round trip for `Stack` types
 
-If you deserialize a JSON string into a <xref:System.Collections.Generic.Stack%601> object and then serialize that object, the contents of the stack are in reverse order. This behavior applies to the following types and interface, and user-defined types that derive from them:
+If you deserialize a JSON string into a `Stack` object and then serialize that object, the contents of the stack are in reverse order. This behavior applies to the following types and interfaces, and user-defined types that derive from them:
 
 * <xref:System.Collections.Stack>
 * <xref:System.Collections.Generic.Stack%601>

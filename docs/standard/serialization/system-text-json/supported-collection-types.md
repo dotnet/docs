@@ -48,7 +48,7 @@ The following sections are organized by namespace and show which types are suppo
 | <xref:System.Collections.SortedList>      | ✔️           | ✔️              |
 | <xref:System.Collections.Stack> \*        | ✔️           | ✔️              |
 
-\* See [Support round trip for Stack](converters-how-to.md#support-round-trip-for-stackt).
+\* See [Support round trip for `Stack` types](converters-how-to.md#support-round-trip-for-stack-types).
 
 ## System.Collections.Generic namespace
 
@@ -56,7 +56,7 @@ The following sections are organized by namespace and show which types are suppo
 |-----------------------------------------------------------|---------------|-----------------|
 | <xref:System.Collections.Generic.Dictionary%602> \*       | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.HashSet%601>             | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.IAsyncEnumerable%601> \*\* | ✔️         | ✔️              |
+| <xref:System.Collections.Generic.IAsyncEnumerable%601> †  | ✔️         | ✔️              |
 | <xref:System.Collections.Generic.ICollection%601>         | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.IDictionary%602> \*      | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.IEnumerable%601>         | ✔️           | ✔️              |
@@ -73,13 +73,13 @@ The following sections are organized by namespace and show which types are suppo
 | <xref:System.Collections.Generic.SortedDictionary%602> \* | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.SortedList%602> \*       | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.SortedSet%601>           | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.Stack%601> \*\*\*        | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.Stack%601> ‡             | ✔️           | ✔️              |
 
 \* See [Supported key types](#supported-key-types).
 
-\*\* See the following section on `IAsyncEnumerable<T>`.
+† See the following section on `IAsyncEnumerable<T>`.
 
-\*\*\* See [Support round trip for Stack\<T>](converters-how-to.md#support-round-trip-for-stackt).
+‡ See [Support round trip for `Stack` types](converters-how-to.md#support-round-trip-for-stack-types).
 
 ### IAsyncEnumerable\<T>
 
@@ -111,22 +111,22 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 
 | Type                                                              | Serialization | Deserialization |
 |-------------------------------------------------------------------|---------------|-----------------|
-| <xref:System.Collections.Immutable.IImmutableDictionary%602> \*\* | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.IImmutableDictionary%602> †    | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.IImmutableList%601>            | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.IImmutableQueue%601>           | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.IImmutableSet%601>             | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.IImmutableStack%601> \*        | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.ImmutableArray%601>            | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableDictionary%602> \*\*  | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.ImmutableDictionary%602> †     | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.ImmutableHashSet%601>          | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.ImmutableQueue%601>            | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableSortedDictionary%602> \*\* | ✔️      | ✔️              |
+| <xref:System.Collections.Immutable.ImmutableSortedDictionary%602> † | ✔️         | ✔️              |
 | <xref:System.Collections.Immutable.ImmutableSortedSet%601>        | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.ImmutableStack%601> \*         | ✔️           | ✔️              |
 
-\* See [Support round trip for Stack\<T>](converters-how-to.md#support-round-trip-for-stackt).
+\* See [Support round trip for `Stack` types](converters-how-to.md#support-round-trip-for-stack-types).
 
-\*\* See [Supported key types](#supported-key-types).
+† See [Supported key types](#supported-key-types).
 
 ## System.Collections.Specialized namespace
 
@@ -148,13 +148,13 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 |---------------------------------------------------------------|---------------|-----------------|
 | <xref:System.Collections.Concurrent.BlockingCollection%601>   | ✔️           | ❌              |
 | <xref:System.Collections.Concurrent.ConcurrentBag%601>        | ✔️           | ❌              |
-| <xref:System.Collections.Concurrent.ConcurrentDictionary%602> \*\* | ✔️      | ✔️              |
+| <xref:System.Collections.Concurrent.ConcurrentDictionary%602> † | ✔️      | ✔️              |
 | <xref:System.Collections.Concurrent.ConcurrentQueue%601>      | ✔️           | ✔️              |
 | <xref:System.Collections.Concurrent.ConcurrentStack%601> \*   | ✔️           | ✔️              |
 
-\* See [Support round trip for Stack\<T>](converters-how-to.md#support-round-trip-for-stackt).
+\* See [Support round trip for `Stack` types](converters-how-to.md#support-round-trip-for-stack-types).
 
-\*\* See [Supported key types](#supported-key-types).
+† See [Supported key types](#supported-key-types).
 
 ## System.Collections.ObjectModel namespace
 
@@ -187,7 +187,7 @@ A custom collection is supported for deserialization if it:
   * <xref:System.Collections.Concurrent.ConcurrentStack%601> \*
   * <xref:System.Collections.Generic.ICollection%601>
   * <xref:System.Collections.IDictionary>
-  * <xref:System.Collections.Generic.IDictionary%602> \*\*
+  * <xref:System.Collections.Generic.IDictionary%602> †
   * <xref:System.Collections.IList>
   * <xref:System.Collections.Generic.IList%601>
   * <xref:System.Collections.Queue>
@@ -195,9 +195,9 @@ A custom collection is supported for deserialization if it:
   * <xref:System.Collections.Stack> \*
   * <xref:System.Collections.Generic.Stack%601> \*
 
-  \* See [Support round trip for Stack\<T>](converters-how-to.md#support-round-trip-for-stackt).
+  \* See [Support round trip for `Stack` types](converters-how-to.md#support-round-trip-for-stack-types).
 
-  \*\* See [Supported key types](#supported-key-types).
+  † See [Supported key types](#supported-key-types).
 
 ### Custom collections with known issues
 

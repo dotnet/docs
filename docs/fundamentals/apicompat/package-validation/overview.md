@@ -13,7 +13,7 @@ Package validation tooling allows you, as a library developer, to validate that 
 - Validates that the package has the same set of public APIs for all the different runtime-specific implementations.
 - Catches any applicability holes.
 
-You can run package validation either as an [MSBuild task](#enable-msbuild-task) or using the [Microsoft.DotNet.ApiCompat.Tool global tool](../global-tool.md).
+You can run package validation either as an [MSBuild task](#enable-msbuild-task) or using the [Microsoft.DotNet.ApiCompat.Tool global tool](../global-tool.md). If your app isn't packable, use [assembly validation](../assembly-validation.md) instead.
 
 ## Enable MSBuild task
 

@@ -72,13 +72,13 @@ For more information, see [Behavior changes when comparing strings on .NET 5+](.
 #### String.EndsWith
 
 ```csharp
-            const string foo = "abc";
+const string foo = "abc";
 
-            Console.WriteLine(foo.EndsWith("\0"));
-            Console.WriteLine(foo.EndsWith("c"));
-            Console.WriteLine(foo.EndsWith("\0", StringComparison.CurrentCulture));
-            Console.WriteLine(foo.EndsWith("\0", StringComparison.Ordinal));
-            Console.WriteLine(foo.EndsWith('\0'));
+Console.WriteLine(foo.EndsWith("\0"));
+Console.WriteLine(foo.EndsWith("c"));
+Console.WriteLine(foo.EndsWith("\0", StringComparison.CurrentCulture));
+Console.WriteLine(foo.EndsWith("\0", StringComparison.Ordinal));
+Console.WriteLine(foo.EndsWith('\0'));
 ```
 
 - For .NET 5 and subsequent versions running on the Windows versions listed in the [ICU on Windows](#icu-on-windows) section table, the snippet prints True, True, True, False, False.

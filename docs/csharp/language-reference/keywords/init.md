@@ -46,7 +46,6 @@ The following example shows the distinction between a `private set`, readonly an
 
 :::code language="csharp" source="snippets/InitExample4.cs" id="SnippetUsage":::
 
-  
 ## C# language specification
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]

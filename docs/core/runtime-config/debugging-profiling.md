@@ -58,6 +58,8 @@ This article details the settings you can use to configure .NET debugging and pr
 - Depending on the Linux kernel version, both formats are supported by the `perf` tool.
 - Enabling perf maps or jit dumps causes a 10-20% overhead. To minimize performance impact, it's recommended to selectively enable either perf maps or jit dumps, but not both.
 
+The following table compares perf maps and jit maps.
+
 | Format | Description | Supported on |
 | - | - | - |
 | *Perf maps* | Emits `/tmp/perf-<pid>.map` which contains symbolic information for dynamically generated code.<br/>Emits `/tmp/perfinfo-<pid>.map` which includes ReadyToRun (R2R) module symbol information and is used by [PerfCollect](../diagnostics/trace-perfcollect-lttng.md). | Perf maps are supported on all Linux kernel versions.|

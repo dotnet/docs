@@ -28,7 +28,7 @@ You can also write custom converters to customize or extend `System.Text.Json` w
 
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
-* [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+* [Support round trip for `Stack` types](#support-round-trip-for-stack-types).
 * [Support enum string value deserialization](#support-enum-string-value-deserialization).
 * [Use default system converter](#use-default-system-converter).
 
@@ -38,7 +38,7 @@ You can also write custom converters to customize or extend `System.Text.Json` w
 
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
-* [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+* [Support round trip for `Stack` types](#support-round-trip-for-stack-types).
 * [Support enum string value deserialization](#support-enum-string-value-deserialization).
 
 ::: zone-end
@@ -105,7 +105,7 @@ If your converter is converting a JSON object, the `Utf8JsonReader` will be posi
 
 > The converter 'ConverterName' read too much or not enough.
 
-For an example, see the preceding factory pattern sample converter. The `Read` method starts by verifying that the reader is positioned on a start object token. It reads until it finds that it is positioned on the next end object token. It stops on the next end object token because there are no intervening start object tokens that would indicate an object within the object. The same rule about begin token and end token applies if you are converting an array. For an example, see the [`Stack<T>`](#support-round-trip-for-stackt) sample converter later in this article.
+For an example, see the preceding factory pattern sample converter. The `Read` method starts by verifying that the reader is positioned on a start object token. It reads until it finds that it is positioned on the next end object token. It stops on the next end object token because there are no intervening start object tokens that would indicate an object within the object. The same rule about begin token and end token applies if you are converting an array. For an example, see the [`Stack<T>`](#support-round-trip-for-stack-types) sample converter later in this article.
 
 ## Error handling
 
@@ -220,7 +220,7 @@ The following sections provide converter samples that address some common scenar
 ::: zone pivot="dotnet-7-0"
 
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
-* [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+* [Support round trip for `Stack` types](#support-round-trip-for-stack-types).
 * [Support enum string value deserialization](#support-enum-string-value-deserialization).
 * [Use default system converter](#use-default-system-converter).
 
@@ -230,7 +230,7 @@ The following sections provide converter samples that address some common scenar
 
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
-* [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+* [Support round trip for `Stack` types](#support-round-trip-for-stack-types).
 * [Support enum string value deserialization](#support-enum-string-value-deserialization).
 
 ::: zone-end

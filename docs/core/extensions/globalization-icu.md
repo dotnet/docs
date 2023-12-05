@@ -83,7 +83,7 @@ Console.WriteLine(foo.EndsWith('\0'));
 
 - For .NET 5 and subsequent versions running on the Windows versions listed in the [ICU on Windows](#icu-on-windows) section table, the snippet prints True, True, True, False, False.
 
-Solution: use _char_-parameter overload or StringComparison.Oridinal.
+To avoid this behavior, use the `char` parameter overload or `StringComparison.Oridinal`.
 
 #### String.StartsWith
 

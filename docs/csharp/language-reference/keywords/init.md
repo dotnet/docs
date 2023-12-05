@@ -28,9 +28,13 @@ var john = new Person_InitExample
 john.YearOfBirth = 1926; //Not allowed, as its value can only be set once in the constructor
 ```
 
-An `init` accessor doesn't force callers to set the property. Instead, it allows an object initializer to set the initial value while prohibiting later modification. You can add the `required` modifier to force callers to set a property. The following example shows the same behavior:
+An `init` accessor doesn't force callers to set the property. Instead, it allows callers to use an object initializer while prohibiting later modification. You can add the [`required`](required.md) modifier to force callers to set a property. The following example shows an `init` only property with a nullable value type as its backing field. If a caller doesn't initialize the `YearOfBirthProperty`, that property will have the default `null` value:
 
 :::code language="csharp" source="./snippets/InitNullablityExample.cs" id="Snippet4":::
+
+To force callers to set an initial non-null value, you add teh `required` modifier, as shown in the following example:
+
+:::code language="csharp" source="./snippets/InitNullablityExample.cs" id="SnippetNonNullable":::
 
 The `init` accessor can be used as an expression-bodied member. Example:
 
@@ -40,7 +44,7 @@ The `init` accessor can also be used in autoimplemented properties, as the follo
 
 :::code language="csharp" source="snippets/InitExample2.cs":::
 
-The following example shows the distinction between a `private set`, readonly and `init` properties. Both the private set version and the readonly version require callers to use the added constructor to set the name property. The `private set` version allows a person to change their name after the instance is constructed. The `init` version doesn't require a constructor. Callers can initialize the properties using an object initializer:
+The following example shows the distinction between a `private set`, read only, and `init` properties. Both the private set version and the read only version require callers to use the added constructor to set the name property. The `private set` version allows a person to change their name after the instance is constructed. The `init` version doesn't require a constructor. Callers can initialize the properties using an object initializer:
 
 :::code language="csharp" source="snippets/InitExample4.cs" id="SnippetClassDefinitions":::
 

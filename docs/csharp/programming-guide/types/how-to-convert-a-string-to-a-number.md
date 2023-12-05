@@ -26,6 +26,8 @@ The `Parse` and `TryParse` methods ignore white space at the beginning and at th
 
 The following example demonstrates both successful and unsuccessful calls to `Parse` and `TryParse`.
 
+<!-- :::replaycheck-task id="174b9bbe"::: -->
+<!-- :::replaycheck-task id="2df741b0"::: -->
 [!code-csharp[Parse and TryParse](~/samples/snippets/csharp/programming-guide/string-to-number/parse-tryparse/program.cs)]
 
 The following example illustrates one approach to parsing a string expected to include leading numeric characters (including hexadecimal characters) and trailing non-numeric characters. It assigns valid characters from the beginning of a string to a new string before calling the <xref:System.Int32.TryParse%2A> method. Because the strings to be parsed contain a few characters, the example calls the <xref:System.String.Concat%2A?displayProperty=nameWithType> method to assign valid characters to a new string. For a larger string, the <xref:System.Text.StringBuilder> class can be used instead.

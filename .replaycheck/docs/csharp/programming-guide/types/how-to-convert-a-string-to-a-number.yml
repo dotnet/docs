@@ -1,0 +1,12 @@
+# %version 1
+contentPath: docs\csharp\programming-guide\types\how-to-convert-a-string-to-a-number.md
+
+steps:
+- task: RunCodeSnippetReference@1
+  environment:
+    type: ""
+  uid: 174b9bbe
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-sdk
+  uid: 2df741b0

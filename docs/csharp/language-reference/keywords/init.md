@@ -28,11 +28,11 @@ var john = new Person_InitExample
 john.YearOfBirth = 1926; //Not allowed, as its value can only be set once in the constructor
 ```
 
-An `init` accessor doesn't force callers to set the property. Instead, it allows callers to use an object initializer while prohibiting later modification. You can add the [`required`](required.md) modifier to force callers to set a property. The following example shows an `init` only property with a nullable value type as its backing field. If a caller doesn't initialize the `YearOfBirthProperty`, that property will have the default `null` value:
+An `init` accessor doesn't force callers to set the property. Instead, it allows callers to use an object initializer while prohibiting later modification. You can add the [`required`](required.md) modifier to force callers to set a property. The following example shows an `init` only property with a nullable value type as its backing field. If a caller doesn't initialize the `YearOfBirth` property, that property will have the default `null` value:
 
 :::code language="csharp" source="./snippets/InitNullablityExample.cs" id="Snippet4":::
 
-To force callers to set an initial non-null value, you add teh `required` modifier, as shown in the following example:
+To force callers to set an initial non-null value, you add the `required` modifier, as shown in the following example:
 
 :::code language="csharp" source="./snippets/InitNullablityExample.cs" id="SnippetNonNullable":::
 

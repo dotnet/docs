@@ -227,12 +227,6 @@ SDK content, under `sdk/<sdk version>` is useful for debugging of .NET SDK tools
 
 The following lists the recommended debug packages:
 
-- `dotnet-sdk-dbg-[major].[minor]` - Installs debug content for a specific SDK version
-  - **Version:** \<sdk version>
-  - **Example:** dotnet-sdk-dbg-8.0
-  - **Contains:** debug content for (3),(4),(18)
-  - **Dependencies:** `dotnet-sdk-[major].[minor]`
-
 - `aspnetcore-runtime-dbg-[major].[minor]` - Installs debug content for a specific ASP.NET Core runtime
   - **Version:** \<aspnetcore runtime version>
   - **Example:** aspnetcore-runtime-dbg-8.0
@@ -244,6 +238,14 @@ The following lists the recommended debug packages:
   - **Example:** dotnet-runtime-dbg-8.0
   - **Contains:** debug content for (5)
   - **Dependencies:** `dotnet-runtime-[major].[minor]`
+
+The following debug package is optional:
+
+- `dotnet-sdk-dbg-[major].[minor]` - Installs debug content for a specific SDK version
+  - **Version:** \<sdk version>
+  - **Example:** dotnet-sdk-dbg-8.0
+  - **Contains:** debug content for (3),(4),(18)
+  - **Dependencies:** `dotnet-sdk-[major].[minor]`
 
 The debug tarball also contains some debug content under `packs` which represent copies of content under `shared`. In the .NET layout, the `packs` directory is used for building .NET applications - there are no debugging scenarios, therefore the debug content under `packs`, in the debug tarball, should not be packaged.
 

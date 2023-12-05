@@ -214,7 +214,7 @@ The `ProcessRepositoriesAsync` method can do the async work and return a collect
 1. Change the signature of `ProcessRepositoriesAsync` to return a task whose result is a list of `Repository` objects:
 
    ```csharp
-   static async Task<List<Repository>> ProcessRepositoriesAsync()
+   static async Task<List<Repository>> ProcessRepositoriesAsync(HttpClient client)
    ```
 
 1. Return the repositories after processing the JSON response:

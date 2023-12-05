@@ -3,14 +3,14 @@ title: Trimming options
 description: Learn how to control trimming of self-contained apps.
 author: sbomer
 ms.author: svbomer
-ms.date: 08/25/2020
+ms.date: 08/10/2023
 ms.topic: reference
 zone_pivot_groups: dotnet-version
 ---
 
 # Trimming options
 
-The following MSBuild properties and items influence the behavior of [trimmed self-contained deployments](trim-self-contained.md). Some of the options mention `ILLink`, which is the name of the underlying tool that implements trimming. For more information about the underlying tool, see the [Trimmer documentation](https://github.com/dotnet/linker/tree/main/docs).
+The following MSBuild properties and items influence the behavior of [trimmed self-contained deployments](trim-self-contained.md). Some of the options mention `ILLink`, which is the name of the underlying tool that implements trimming. For more information about the underlying tool, see the [Trimmer documentation](https://github.com/dotnet/runtime/tree/main/docs/tools/illink).
 
 Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other options are available only in .NET 5 and later versions.
 
@@ -25,7 +25,7 @@ Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other option
 
 Place this setting in the project file to ensure that the setting applies during `dotnet build`, not just `dotnet publish`.
 
-:::zone pivot="dotnet-7-0"
+:::zone pivot="dotnet-8-0,dotnet-7-0"
 
 This setting enables trimming and will trim all assemblies by default. In .NET 6, only assemblies that opted-in
 to trimming via `[AssemblyMetadata("IsTrimmable", "True")]` would be trimmed by default. You can return to the
@@ -43,9 +43,13 @@ This setting also enables the trim-compatibility [Roslyn analyzer](#roslyn-analy
 
 ## Trimming granularity
 
-:::zone pivot="dotnet-7-0"
+:::zone pivot="dotnet-8-0,dotnet-7-0"
 
-The default is to trim all assemblies in the app. This can be changed using the `TrimMode` property.
+Use the `TrimMode` property to set the trimming granularity to either `partial` or `full`. The default setting for console apps (and, starting in .NET 8, Web SDK apps) is `full`:
+
+```csharp
+<TrimMode>full</TrimMode>
+```
 
 To only trim assemblies that have opted-in to trimming, set the property to `partial`:
 
@@ -53,11 +57,15 @@ To only trim assemblies that have opted-in to trimming, set the property to `par
 <TrimMode>partial</TrimMode>
 ```
 
-The default setting is `full`:
+If you change the trim mode to `partial`, you can opt-in individual assemblies to trimming by using a `<TrimmableAssembly>` MSBuild item.
 
-```csharp
-<TrimMode>full</TrimMode>
+```xml
+<ItemGroup>
+  <TrimmableAssembly Include="MyAssembly" />
+</ItemGroup>
 ```
+
+This is equivalent to setting `[AssemblyMetadata("IsTrimmable", "True")]` when building the assembly.
 
 :::zone-end
 
@@ -84,20 +92,6 @@ In .NET 6+, `PublishTrimmed` trims assemblies with the following assembly-level 
 ```
 
 The framework libraries have this attribute. In .NET 6+, you can also opt in to trimming for a library without this attribute, specifying the assembly by name (without the `.dll` extension).
-
-:::zone-end
-
-:::zone pivot="dotnet-7-0"
-In .NET 7, `<TrimMode>full</TrimMode>` is the default, but if you change the trim mode to `partial`, you can
-opt-in individual assemblies to trimming.
-
-```xml
-<ItemGroup>
-  <TrimmableAssembly Include="MyAssembly" />
-</ItemGroup>
-```
-
-This is equivalent to setting `[AssemblyMetadata("IsTrimmable", "True")]` when building the assembly.
 
 :::zone-end
 
@@ -148,7 +142,7 @@ If an assembly is not trimmed it is considered "rooted", which means that it and
 
 ## Root descriptors
 
-Another way to specify roots for analysis is using an XML file that uses the trimmer [descriptor format](https://github.com/dotnet/linker/blob/main/docs/data-formats.md#descriptor-format). This lets you root specific members instead of a whole assembly.
+Another way to specify roots for analysis is using an XML file that uses the trimmer [descriptor format](https://github.com/dotnet/runtime/blob/main/docs/tools/illink/data-formats.md#descriptor-format). This lets you root specific members instead of a whole assembly.
 
 ```xml
 <ItemGroup>
@@ -186,7 +180,7 @@ Setting `PublishTrimmed` in .NET 6+ also enables a Roslyn analyzer that shows a 
 
 ## Suppress warnings
 
-You can suppress individual [warning codes](https://github.com/dotnet/linker/blob/main/docs/error-codes.md#warning-codes) using the usual MSBuild properties respected by the toolchain, including `NoWarn`, `WarningsAsErrors`, `WarningsNotAsErrors`, and `TreatWarningsAsErrors`. There is an additional option that controls the ILLink warn-as-error behavior independently:
+You can suppress individual [warning codes](https://github.com/dotnet/runtime/blob/main/docs/tools/illink/error-codes.md#warning-codes) using the usual MSBuild properties respected by the toolchain, including `NoWarn`, `WarningsAsErrors`, `WarningsNotAsErrors`, and `TreatWarningsAsErrors`. There is an additional option that controls the ILLink warn-as-error behavior independently:
 
 - `<ILLinkTreatWarningsAsErrors>false</ILLinkTreatWarningsAsErrors>`
 
@@ -245,6 +239,10 @@ Several feature areas of the framework libraries come with trimmer directives th
 - `<MetadataUpdaterSupport>false</MetadataUpdaterSupport>`
 
   Remove metadata update-specific logic related to hot reload.
+
+- `<StackTraceSupport>false</StackTraceSupport>` (.NET 8+)
+
+  Remove support for generating stack traces (for example, <xref:System.Environment.StackTrace?displayProperty=nameWithType>, or <xref:System.Exception.ToString%2A?displayProperty=nameWithType>) by the runtime. The amount of information that will be removed from stack trace strings may depend on other deployment options. This option does not affect stack traces generated by debuggers.
 
 - `<UseNativeHttpHandler>true</UseNativeHttpHandler>`
 

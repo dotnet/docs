@@ -2,9 +2,9 @@
 title: "Structure types - C# reference"
 description: Learn about the struct type in C#
 ms.date: 04/05/2023
-f1_keywords: 
+f1_keywords:
   - "struct_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "struct keyword [C#]"
   - "struct type [C#]"
   - "structure type [C#]"
@@ -28,14 +28,14 @@ Because structure types have value semantics, we recommend you define *immutable
 You use the `readonly` modifier to declare that a structure type is immutable. All data members of a `readonly` struct must be read-only as follows:
 
 - Any field declaration must have the [`readonly` modifier](../keywords/readonly.md)
-- Any property, including auto-implemented ones, must be read-only. In C# 9.0 and later, a property may have an [`init` accessor](../keywords/init.md).
+- Any property, including auto-implemented ones, must be read-only or [`init` only](../keywords/init.md).
 
 That guarantees that no member of a `readonly` struct modifies the state of the struct. That means that other instance members except constructors are implicitly [`readonly`](#readonly-instance-members).
 
 > [!NOTE]
 > In a `readonly` struct, a data member of a mutable reference type still can mutate its own state. For example, you can't replace a <xref:System.Collections.Generic.List%601> instance, but you can add new elements to it.
 
-The following code defines a `readonly` struct with init-only property setters, available in C# 9.0 and later:
+The following code defines a `readonly` struct with init-only property setters:
 
 [!code-csharp[readonly struct](snippets/shared/StructType.cs#ReadonlyStruct)]
 
@@ -64,7 +64,7 @@ Typically, you apply the `readonly` modifier to the following kinds of instance 
   > [!NOTE]
   > The compiler declares a `get` accessor of an [auto-implemented property](../../programming-guide/classes-and-structs/auto-implemented-properties.md) as `readonly`, regardless of presence of the `readonly` modifier in a property declaration.
 
-  In C# 9.0 and later, you may apply the `readonly` modifier to a property or indexer with an `init` accessor:
+  You may apply the `readonly` modifier to a property or indexer with an `init` accessor:
 
   :::code language="csharp" source="snippets/shared/StructType.cs" id="ReadonlyWithInit":::
 
@@ -102,7 +102,7 @@ In most cases, an inline array can be accessed like an array, both to read and w
 
 There are minimal restrictions on the type of the single field. It can't be a pointer type, but it can be any reference type, or any value type. You can use inline arrays with almost any C# data structure.
 
-Inline arrays are an advanced language feature. They're intended for high-performance scenarios where an inline, contiguous block of elements is faster than other alternative data structures. You can learn more about inline arrays from the [feature speclet](~/_csharplang/proposals/inline-arrays.md)
+Inline arrays are an advanced language feature. They're intended for high-performance scenarios where an inline, contiguous block of elements is faster than other alternative data structures. You can learn more about inline arrays from the [feature speclet](~/_csharplang/proposals/csharp-12.0/inline-arrays.md)
 
 ## Struct initialization and default values
 
@@ -145,12 +145,10 @@ Structs have most of the capabilities of a [class](../keywords/class.md) type. T
 - A structure type can't inherit from other class or structure type and it can't be the base of a class. However, a structure type can implement [interfaces](../keywords/interface.md).
 - You can't declare a [finalizer](../../programming-guide/classes-and-structs/finalizers.md) within a structure type.
 - Prior to C# 11, a constructor of a structure type must initialize all instance fields of the type.
-- Prior to C# 10, you can't declare a parameterless constructor.
-- Prior to C# 10, you can't initialize an instance field or property at its declaration.
 
 ## Passing structure-type variables by reference
 
-When you pass a structure-type variable to a method as an argument or return a structure-type value from a method, the whole instance of a structure type is copied. Pass by value can affect the performance of your code in high-performance scenarios that involve large structure types. You can avoid value copying by passing a structure-type variable by reference. Use the [`ref`](../keywords/ref.md#passing-an-argument-by-reference), [`out`](../keywords/out-parameter-modifier.md), or [`in`](../keywords/in-parameter-modifier.md) method parameter modifiers to indicate that an argument must be passed by reference. Use [ref returns](../statements/jump-statements.md#the-return-statement) to return a method result by reference. For more information, see [Avoid allocations](../../advanced-topics/performance/index.md).
+When you pass a structure-type variable to a method as an argument or return a structure-type value from a method, the whole instance of a structure type is copied. Pass by value can affect the performance of your code in high-performance scenarios that involve large structure types. You can avoid value copying by passing a structure-type variable by reference. Use the `ref`, `out`, `in`, or `ref readonly` method parameter modifiers to indicate that an argument must be [passed by reference](../keywords/method-parameters.md#reference-parameters). Use [ref returns](../statements/jump-statements.md#the-return-statement) to return a method result by reference. For more information, see [Avoid allocations](../../advanced-topics/performance/index.md).
 
 ## struct constraint
 
@@ -166,8 +164,8 @@ For more information, see the [Structs](~/_csharpstandard/standard/structs.md) s
 
 For more information about `struct` features, see the following feature proposal notes:
 
-- [C# 7.2 - Readonly structs](~/_csharplang/proposals/csharp-7.2/readonly-ref.md#readonly-structs)
-- [C# 8 - Readonly instance members](~/_csharplang/proposals/csharp-8.0/readonly-instance-members.md)
+- [Readonly structs](~/_csharplang/proposals/csharp-7.2/readonly-ref.md#readonly-structs)
+- [Readonly instance members](~/_csharplang/proposals/csharp-8.0/readonly-instance-members.md)
 - [C# 10 - Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md)
 - [C# 10 - Allow `with` expression on structs](~/_csharplang/proposals/csharp-10.0/record-structs.md#allow-with-expression-on-structs)
 - [C# 10 - Record structs](~/_csharplang/proposals/csharp-10.0/record-structs.md)

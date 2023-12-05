@@ -8,7 +8,7 @@ public class LeftOuterJoinTest
     [Fact]
     public void LeftOuterJoin1Test()
     {
-        var sw = InitTest();
+        StringWriter sw = InitTest();
 
         LeftOuterJoin.LeftOuterJoin1();
         Assert.Equal(

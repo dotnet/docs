@@ -60,7 +60,6 @@ f1_keywords:
 - NETSDK1077
 - NETSDK1078
 - NETSDK1081
-- NETSDK1083
 - NETSDK1084
 - NETSDK1085
 - NETSDK1086
@@ -161,18 +160,16 @@ f1_keywords:
 - NETSDK1198
 - NETSDK1200
 - NETSDK1201
-- NETSDK1202
 - NETSDK1203
 - NETSDK1204
 - NETSDK1205
-- NETSDK1206
 - NETSDK1207
 ---
 # .NET SDK error list
 
 **This article applies to:** ✔️ .NET 6 SDK and later versions
 
-This is a complete list of the errors that you might get from the .NET SDK while developing .NET apps. If more info is available for a particular error, the error number is a link.
+This list is a complete list of the errors that you might get from the .NET SDK while developing .NET apps. If more info is available for a particular error, the error number is a link.
 
 | SDK Message Number | Message            |
 |--------------------|--------------------|
@@ -245,7 +242,7 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |[NETSDK1080](netsdk1080.md)|A PackageReference to Microsoft.AspNetCore.App is not necessary when targeting .NET Core 3.0 or higher. If Microsoft.NET.Sdk.Web is used, the shared framework will be referenced automatically. Otherwise, the PackageReference should be replaced with a FrameworkReference.|
 |NETSDK1081|The targeting pack for {0} was not found. You may be able to resolve this by running a NuGet restore on the project.|
 |[NETSDK1082](netsdk1082.md)|There was no runtime pack for {0} available for the specified RuntimeIdentifier '{1}'.|
-|NETSDK1083|The specified RuntimeIdentifier '{0}' is not recognized.|
+|[NETSDK1083](netsdk1083.md)|The specified RuntimeIdentifier '{0}' is not recognized.|
 |NETSDK1084|There is no application host available for the specified RuntimeIdentifier '{0}'.|
 |NETSDK1085|The 'NoBuild' property was set to true but the 'Build' target was invoked.|
 |NETSDK1086|A FrameworkReference for '{0}' was included in the project. This is implicitly referenced by the .NET SDK and you do not typically need to reference it from your project. For more information, see {1}.|
@@ -361,9 +358,9 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1199|The ArtifactsPath and UseArtifactsOutput properties cannot be set in a project file, due to MSBuild ordering constraints. They must be set in a Directory.Build.props file or from the command line. See <https://aka.ms/netsdk1199> for more information.|
 |NETSDK1200|If UseArtifactsPath is set to true and ArtifactsPath is not set, there must be a Directory.Build.props file in order to determine where the artifacts folder should be located.|
 |NETSDK1201|For projects targeting .NET 8.0 and higher, specifying a RuntimeIdentifier will no longer produce a self contained app by default. To continue building self-contained apps, set the SelfContained property to true or use the --self-contained argument.|
-|NETSDK1202|The workload '{0}' is out of support and will not receive security updates in the future. Please refer to {1} for more information about the support policy.|
+|[NETSDK1202](netsdk1202.md)|The workload '{0}' is out of support and will not receive security updates in the future. Please refer to {1} for more information about the support policy.|
 |NETSDK1203|Ahead-of-time compilation is not supported for the target runtime identifier '{0}'.|
 |NETSDK1204|Ahead-of-time compilation is not supported on the current platform '{0}'.|
 |NETSDK1205|The Microsoft.Net.Compilers.Toolset.Framework package should not be set directly. Set the property 'BuildWithNetFrameworkHostedCompiler' to 'true' instead if you need it.|
-|NETSDK1206|Found version-specific or distribution-specific runtime identifier(s): {0}. Affected libraries: {1}. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See <https://aka.ms/dotnet/rid-usage> for details.|
+|[NETSDK1206](netsdk1206.md)|Found version-specific or distribution-specific runtime identifier(s): {0}. Affected libraries: {1}. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See <https://aka.ms/dotnet/rid-usage> for details.|
 |NETSDK1207|Ahead-of-time compilation is not supported for the target framework.|

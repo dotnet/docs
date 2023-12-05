@@ -12,7 +12,7 @@ C# programs consist of one or more files. Each file contains zero or more namesp
 
 :::code language="csharp" source="snippets/toplevel-structure/Program.cs":::
 
-The preceding example uses *top-level statements* for the program's entry point. This feature was added in C# 9. Prior to C# 9, the entry point was a static method named `Main`, as shown in the following example:
+The preceding example uses *top-level statements* for the program's entry point. You can also create a static method named `Main` as the program's entry point, as shown in the following example:
 
 :::code language="csharp" source="snippets/structure/Program.cs":::
 

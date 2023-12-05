@@ -27,6 +27,8 @@ The following example shows how to close a file automatically by using the `use`
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet6301.fs)]
 
+Multiple instances of `use` are disposed in the reverse order in which they are declared. That is, the first `use` will be the last one released.
+
 > [!NOTE]
 > You can use `use` in computation expressions, in which case a customized version of the `use` expression is used. For more information, see [Sequences](sequences.md), [Async expressions](async-expressions.md), [Task expressions](task-expressions.md), and [Computation Expressions](computation-expressions.md).
 

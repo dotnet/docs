@@ -72,9 +72,9 @@ Based upon specific data requirements, a cloud-native-based microservice can imp
 
 |  Consider a NoSQL datastore when: | Consider a relational database when: |
 | :-------- | :-------- |
-| You have high volume workloads that require predictable latency at large scale (e.g. latency measured in milliseconds while performing millions of transactions per second) | Your workload volume generally fits within thousands of transactions per second |
+| You have high volume workloads that require predictable latency at large scale (for example, latency measured in milliseconds while performing millions of transactions per second) | Your workload volume generally fits within thousands of transactions per second |
 | Your data is dynamic and frequently changes | Your data is highly structured and requires referential integrity |
-| Relationships can be de-normalized data models | Relationships are expressed through table joins on normalized data models |  
+| Relationships can be de-normalized data models | Relationships are expressed through table joins on normalized data models |
 | Data retrieval is simple and expressed without table joins | You work with complex queries and reports|
 | Data is typically replicated across geographies and requires finer control over consistency, availability, and performance | Data is typically centralized, or can be replicated regions asynchronously |
 | Your application will be deployed to commodity hardware, such as with public clouds | Your application will be deployed to large, high-end hardware |
@@ -112,7 +112,7 @@ Development teams with expertise in Microsoft SQL Server should consider
 For use with a cloud-native microservice, Azure SQL Database is available with three deployment options:
 
 - A Single Database represents a fully managed SQL Database running on an [Azure SQL Database server](/azure/sql-database/sql-database-servers) in the Azure cloud. The database is considered [*contained*](/sql/relational-databases/databases/contained-databases) as it has no configuration dependencies on the underlying database server.
-  
+
 - A [Managed Instance](/azure/sql-database/sql-database-managed-instance) is a fully managed instance of the Microsoft SQL Server Database Engine that provides near-100% compatibility with an on-premises SQL Server. This option supports larger databases, up to 35 TB and is placed in an [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) for better isolation.
 
 - [Azure SQL Database serverless](/azure/sql-database/sql-database-serverless) is a compute tier for a single database that automatically scales based on workload demand. It bills only for the amount of compute used per second. The service is well suited for workloads with intermittent, unpredictable usage patterns, interspersed with periods of inactivity. The serverless compute tier also automatically pauses databases during inactive periods so that only storage charges are billed. It automatically resumes when activity returns.
@@ -192,8 +192,8 @@ When replatforming monolithic applications to a cloud-native architecture, devel
 | NoSQL API | API for NoSQL stores data in document format |
 | Mongo DB API | Supports Mongo DB APIs and JSON documents|
 | Gremlin API | Supports Gremlin API with graph-based nodes and edge data representations |
-| Cassandra API | Supports Casandra API for wide-column data representations |  
-| Table API  | Supports Azure Table Storage with premium enhancements |  
+| Cassandra API | Supports Casandra API for wide-column data representations |
+| Table API  | Supports Azure Table Storage with premium enhancements |
 | PostgreSQL API | Managed service for running PostgreSQL at any scale |
 
 Development teams can migrate existing Mongo, Gremlin, or Cassandra databases into Cosmos DB with minimal changes to data or code. For new apps, development teams can choose among open-source options or the built-in SQL API model.
@@ -231,8 +231,8 @@ Azure Cosmos DB offers five well-defined [consistency models](/azure/cosmos-db/c
 | Eventual | No ordering guarantee for reads. Replicas will eventually converge. |
 | Constant Prefix | Reads are still eventual, but data is returned in the ordering in which it is written. |
 | Session | Guarantees you can read any data written during the current session. It is the default consistency level. |
-| Bounded Staleness | Reads trail writes by interval that you specify. |  
-| Strong  | Reads are guaranteed to return most recent committed version of an item. A client never sees an uncommitted or partial read. |  
+| Bounded Staleness | Reads trail writes by interval that you specify. |
+| Strong  | Reads are guaranteed to return most recent committed version of an item. A client never sees an uncommitted or partial read. |
 
 In the article [Getting Behind the 9-Ball: Cosmos DB Consistency Levels Explained](https://blog.jeremylikness.com/blog/2018-03-23_getting-behind-the-9ball-cosmosdb-consistency-levels/), Microsoft Program Manager Jeremy Likness provides an excellent explanation of the five models.
 
@@ -288,7 +288,7 @@ One of the more time-consuming tasks is migrating data from one data platform to
 - Azure Database for MariaDB
 - Azure Database for PostgreSQL
 - Azure Cosmos DB
-  
+
 The service provides recommendations to guide you through the changes required to execute a migration, both small or large.
 
 >[!div class="step-by-step"]

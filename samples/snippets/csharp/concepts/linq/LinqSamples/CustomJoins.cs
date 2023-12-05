@@ -7,15 +7,15 @@ public static class CustomJoins
     public static void CustomJoins1()
     {
         // <cross_join>
-        List<Category> categories = new()
-        {
+        List<Category> categories =
+        [
             new(Name: "Beverages", ID: 001),
             new("Condiments", 002),
             new("Vegetables", 003)
-        };
+        ];
 
-        List<Product> products = new()
-        {
+        List<Product> products =
+        [
             new(Name: "Tea", CategoryID: 001),
             new("Mustard", 002),
             new("Pickles", 002),
@@ -25,7 +25,7 @@ public static class CustomJoins
             new("Melons", 005),
             new("Ice Cream", 007),
             new("Mackerel", 012)
-        };
+        ];
 
         var crossJoinQuery =
             from c in categories
@@ -79,7 +79,7 @@ public static class CustomJoins
             let catIds =
                 from c in categories
                 select c.ID
-            where catIds.Contains(p.CategoryID) == true
+            where catIds.Contains(p.CategoryID)
             select new
             {
                 Product = p.Name,
@@ -106,11 +106,9 @@ public static class CustomJoins
     public static void MergeCsvFiles()
     {
         // <merge_csv_files>
-        string[] names = File.ReadAllLines(@"csv/names.csv");
-        string[] scores = File.ReadAllLines(@"csv/scores.csv");
+        var names = File.ReadAllLines("csv/names.csv");
+        var scores = File.ReadAllLines("csv/scores.csv");
 
-        // Merge the data sources using a named type.
-        // You could use var instead of an explicit type for the query.
         IEnumerable<Student> queryNamesScores =
             // Split each line in the data files into an array of strings.
             from name in names
@@ -130,11 +128,7 @@ public static class CustomJoins
                 ).ToList()
             );
 
-        // Optional. Store the newly created student objects in memory
-        // for faster access in future queries
-        List<Student> students = queryNamesScores.ToList();
-
-        foreach (var student in students)
+        foreach (var student in queryNamesScores)
         {
             Console.WriteLine($"The average score of {student.FirstName} {student.LastName} is {student.ExamScores.Average()}.");
         }
@@ -155,5 +149,4 @@ public static class CustomJoins
          */
         // </merge_csv_files>
     }
-
 }

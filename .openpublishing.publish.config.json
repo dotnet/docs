@@ -55,7 +55,7 @@
     {
       "path_to_root": "_csharpstandard",
       "url": "https://github.com/dotnet/csharpstandard",
-      "branch": "draft-v7",
+      "branch": "draft-v8",
       "include_in_build": true,
       "branch_mapping": {}
     },
@@ -82,6 +82,12 @@
     {
       "path_to_root": "iot-samples",
       "url": "https://github.com/MicrosoftDocs/dotnet-iot-assets",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "azure-dev-docs-pr",
+      "url": "https://github.com/MicrosoftDocs/azure-dev-docs-pr",
       "branch": "main",
       "branch_mapping": {}
     }

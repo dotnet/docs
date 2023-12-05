@@ -77,7 +77,7 @@ The following outline provides an overview of C#'s type system.
     - User-defined types of the form `class C {...}`
   - [Interface types](../language-reference/keywords/interface.md)
     - User-defined types of the form `interface I {...}`
-  - [Array types](../programming-guide/arrays/index.md)
+  - [Array types](../language-reference/builtin-types/arrays.md)
     - Single-dimensional, multi-dimensional, and jagged. For example: `int[]`, `int[,]`, and `int[][]`
   - [Delegate types](../language-reference/builtin-types/reference-types.md#the-delegate-type)
     - User-defined types of the form `delegate int D(...)`

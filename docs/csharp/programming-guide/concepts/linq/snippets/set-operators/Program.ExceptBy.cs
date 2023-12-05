@@ -8,20 +8,20 @@ public static partial class Program
 
         // <Planets>
         Planet[] planets =
-        {
+        [
             Planet.Mercury,
             Planet.Venus,
             Planet.Earth,
             Planet.Jupiter
-        };
+        ];
 
         Planet[] morePlanets =
-        {
+        [
             Planet.Mercury,
             Planet.Earth,
             Planet.Mars,
             Planet.Jupiter
-        };
+        ];
         // </Planets>
 
         // <ExceptBy>

@@ -6,7 +6,6 @@ ms.author: luquinta
 ms.date: 03/07/2022
 ms.topic: tutorial
 ms.custom: mvc
-recommendations: false
 #Customer intent: As a developer, I want to use ML.NET so that I can use a pre-trained model in an object detection scenario to detect objects in images using ONNX.
 ---
 

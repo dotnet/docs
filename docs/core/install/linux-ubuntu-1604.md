@@ -36,7 +36,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
+[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
 ## How to install other versions
 
@@ -57,6 +57,8 @@ When you install with a package manager, these libraries are installed for you. 
 - libssl1.0.0
 - libstdc++6
 - zlib1g
+
+[!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
 
 [!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 

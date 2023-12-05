@@ -8,7 +8,7 @@ public class CustomJoinsTest
     [Fact]
     public void CustomJoins1Test()
     {
-        var sw = InitTest();
+        StringWriter sw = InitTest();
 
         CustomJoins.CustomJoins1();
         Assert.Equal(
@@ -52,7 +52,7 @@ Non-equijoin query:
     [Fact]
     public void MergeCsvFilesTest()
     {
-        var sw = InitTest();
+        StringWriter sw = InitTest();
 
         CustomJoins.MergeCsvFiles();
         Assert.Equal(

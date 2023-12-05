@@ -72,7 +72,7 @@ An async method can have the following return types:
 - [void](../builtin-types/void.md). `async void` methods are generally discouraged for code other than event handlers because callers cannot `await` those methods and must implement a different mechanism to report successful completion or error conditions.
 - Any type that has an accessible `GetAwaiter` method. The `System.Threading.Tasks.ValueTask<TResult>` type is one such implementation. It is available by adding the NuGet package `System.Threading.Tasks.Extensions`.
 
-The async method can't declare any [in](./in-parameter-modifier.md), [ref](./ref.md) or [out](./out-parameter-modifier.md) parameters, nor can it have a [reference return value](../statements/jump-statements.md#ref-returns), but it can call methods that have such parameters.
+The async method can't declare any [in](method-parameters.md#in-parameter-modifier), [ref](./ref.md) or [out](method-parameters.md#out-parameter-modifier) parameters, nor can it have a [reference return value](../statements/jump-statements.md#ref-returns), but it can call methods that have such parameters.
 
 You specify `Task<TResult>` as the return type of an async method if the [return](../statements/jump-statements.md#the-return-statement) statement of the method specifies an operand of type `TResult`. You use `Task` if no meaningful value is returned when the method is completed. That is, a call to the method returns a `Task`, but when the `Task` is completed, any `await` expression that's awaiting the `Task` evaluates to `void`.
 

@@ -29,7 +29,7 @@ A .NET tool is a special NuGet package that contains a console application. You 
 > [!IMPORTANT]
 > .NET tools run in full trust. Don't install a .NET tool unless you trust the author.
 >
-> .NET tools might not work correctly if .NET was [installed via Snap](../install/linux-snap.md).
+> .NET tools might not work correctly if .NET was installed via Snap.
 
 ## Find a tool
 
@@ -190,6 +190,20 @@ dotnetsay       2.1.3        dotnetsay      /home/name/repository/.config/dotnet
 ```
 
 As shown in the preceding example, the list shows local tools. To see global tools, use the `--global` option. To see tool-path tools, use the `--tool-path` option.
+
+To list a specific tool, use the [dotnet tool list <PACKAGE_ID>](dotnet-tool-list.md) command:
+
+```dotnetcli
+dotnet tool list dotnetsay
+```
+
+The output will only list that tool if it's installed, similar to the following example:
+
+```console
+Package Id      Version      Commands       Manifest
+-------------------------------------------------------------------------------------------
+dotnetsay       2.1.3        dotnetsay      /home/name/repository/.config/dotnet-tools.json
+```
 
 ### Invoke a global tool
 

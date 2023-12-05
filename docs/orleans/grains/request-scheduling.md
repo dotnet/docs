@@ -207,6 +207,53 @@ public interface IMyGrain : IGrainWithIntegerKey
 }
 ```
 
+### Call chain reentrancy
+
+If a grain calls a method which on another grain which then calls back into the original grain, the call will result in a deadlock unless the call is reentrant. Reentrancy can be enabled on a per-call-site basis by using *call chain reentrancy*. To enable call chain reentrancy, call the <xref:Orleans.Runtime.RequestContext.AllowCallChainReentrancy> method, which returns a value that allows reentrance from any caller further down the call chain until it is disposed. This includes reentrance from the grain calling the method itself. Consider the following example:
+
+```csharp
+public interface IChatRoomGrain : IGrainWithStringKey
+{
+    ValueTask OnJoinRoom(IUserGrain user);
+}
+
+public interface IUserGrain : IGrainWithStringKey
+{
+    ValueTask JoinRoom(string roomName);
+    ValueTask<string> GetDisplayName();
+}
+
+public class ChatRoomGrain : Grain<List<(string DisplayName, IUserGrain User)>>, IChatRoomGrain
+{
+    public async ValueTask OnJoinRoom(IUserGrain user)
+    {
+        var displayName = await user.GetDisplayName();
+        State.Add((displayName, user));
+        await WriteStateAsync();
+    }
+}
+
+public class UserGrain : Grain, IUserGrain
+{
+    public ValueTask<string> GetDisplayName() => new(this.GetPrimaryKeyString());
+    public async ValueTask JoinRoom(string roomName)
+    {
+        // This prevents the call below from triggering a deadlock.
+        using var scope = RequestContext.AllowCallChainReentrancy();
+        var roomGrain = GrainFactory.GetGrain<IChatRoomGrain>(roomName);
+        await roomGrain.OnJoinRoom(this.AsReference<IUserGrain>());
+    }
+}
+```
+
+In the preceding example, `UserGrain.JoinRoom(roomName)` calls into `ChatRoomGrain.OnJoinRoom(user)`, which tries to call back into `UserGrain.GetDisplayName()` to get the user's display name. Since this call chain involves a cycle, this will result in a deadlock if the `UserGrain` doesn't allow reentrance using any of the supported mechanisms discussed in this article. In this instance, we are using <xref:Orleans.Runtime.RequestContext.AllowCallChainReentrancy>, which allows only `roomGrain` to call back into the `UserGrain`. This grants you fine grained control over where and how reentrancy is enabled.
+
+If you were to instead prevent the deadlock by annotating the `GetDisplayName()` method declaration on `IUserGrain` with `[AlwaysInterleave]`, you would allow any grain to interleave a `GetDisplayName` call with any other method. Instead, you are allowing *only* `roomGrain` to call methods on our grain and only until `scope` is disposed.
+
+#### Suppress call chain reentrancy
+
+Call chain reentrance can also be *suppressed* using the <xref:Orleans.Runtime.RequestContext.SuppressCallChainReentrancy> method. This has limited usefulness to end developers, but it is important for internal use by libraries which extend Orleans grain functionality, such as [streaming](../streaming/index.md) and [broadcast channels](../streaming/broadcast-channel.md) to ensure that developers retain full control over when call chain reentrancy is enabled.
+
 The `GetCount` method doesn't modify the grain state, so it's marked with `ReadOnly`. Callers awaiting this method invocation aren't blocked by other `ReadOnly` requests to the grain, and the method returns immediately.
 
 ### Reentrancy using a predicate

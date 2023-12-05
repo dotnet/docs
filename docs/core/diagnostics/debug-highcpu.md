@@ -3,7 +3,6 @@ title: Debug high CPU usage - .NET Core
 description: A tutorial that walks you through debugging high CPU usage in .NET Core.
 ms.topic: tutorial
 ms.date: 07/20/2020
-recommendations: false
 ---
 
 # Debug high CPU usage in .NET Core

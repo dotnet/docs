@@ -80,14 +80,6 @@ This tutorial demonstrates web communications, JSON serialization, and object-or
 
 This tutorial demonstrates many of the features of LINQ and the language elements that support it. The [completed sample](https://github.com/dotnet/samples/tree/main/csharp/getting-started/console-linq) is available in the dotnet/samples repository on GitHub.
 
-**[Tutorial: Create a .NET console application using Visual Studio for Mac](../core/tutorials/with-visual-studio-mac.md)**
-
-This tutorial shows you how to build a simple .NET console app using Visual Studio for Mac.
-
-**[Create a .NET class library on macOS using Visual Studio for Mac](../core/tutorials/library-with-visual-studio-mac.md)**
-
-This tutorial shows you how to build a .NET class library using Visual Studio for Mac.
-
 **[Creating a .NET Core application that supports plugins](../core/tutorials/creating-app-with-plugin-support.md)**
 
 This tutorial shows you how to build a simple application on .NET Core that supports a plugin architecture. The [completed sample](https://github.com/dotnet/samples/tree/main/core/extensions/AppWithPlugin) is available in the dotnet/samples repository on GitHub.

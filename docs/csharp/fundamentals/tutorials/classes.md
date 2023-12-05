@@ -107,8 +107,8 @@ private static int s_accountNumberSeed = 1234567890;
 The `accountNumberSeed` is a data member. It's `private`, which means it can only be accessed by code inside the `BankAccount` class. It's a way of separating the public responsibilities (like having an account number) from the private implementation (how account numbers are generated). It's also `static`, which means it's shared by all of the `BankAccount` objects. The value of a non-static variable is unique to each instance of the `BankAccount` object. The `accountNumberSeed` is a `private static` field and thus has the `s_` prefix as per C# naming conventions. The `s` denoting `static` and `_` denoting `private` field. Add the following two lines to the constructor to assign the account number. Place them after the line that says `this.Balance = initialBalance`:
 
 ```csharp
-this.Number = s_accountNumberSeed.ToString();
-accountNumberSeed++;
+Number = s_accountNumberSeed.ToString();
+s_accountNumberSeed++;
 ```
 
 Type `dotnet run` to see the results.

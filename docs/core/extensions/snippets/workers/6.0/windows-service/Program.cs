@@ -14,13 +14,6 @@ IHostBuilder builder = Host.CreateDefaultBuilder(args)
     
         services.AddSingleton<JokeService>();
         services.AddHostedService<WindowsBackgroundService>();
-
-        // See: https://github.com/dotnet/runtime/issues/47303
-        services.AddLogging(builder =>
-        {
-            builder.AddConfiguration(
-                context.Configuration.GetSection("Logging"));
-        });
     });
 
 IHost host = builder.Build();

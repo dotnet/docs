@@ -93,7 +93,7 @@ The *mytemplate* folder is an installable template package. Once the package is 
 
 ## Template localization
 
-The .NET templates are localizable. If a template is localized for the language matching the current locale, its elements will appear in the same language as the CLI. Localization is optional when creating new templates.
+The .NET templates are localizable. If a template is localized for the language matching the current locale, its elements appear in the same language as the CLI. Localization is optional when creating new templates.
 
 The localizable elements on a template are:
 
@@ -174,7 +174,7 @@ An easy way to exclude all code files from being compiled by your template proje
 
 An easy way to structure your template pack is to put all templates in individual folders, and then each template folder inside of a *templates* folder that is located in the same directory as your *.csproj* file. This way, you can use a single project item to include all files and folders in the *templates* as **content**. Inside of an `<ItemGroup>` element, create a `<Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />` item.
 
-Here's an example *.csproj* file that follows all of the guidelines above. It packs the *templates* child folder to the *content* package folder and excludes any code file from being compiled.
+Here's an example *.csproj* file that follows all of these guidelines. It packs the *templates* child folder to the *content* package folder and excludes any code file from being compiled.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -202,7 +202,7 @@ Here's an example *.csproj* file that follows all of the guidelines above. It pa
 </Project>
 ```
 
-The example below demonstrates the file and folder structure of using a *.csproj* to create a template package. The *MyDotnetTemplates.csproj* file and *templates* folder are both located at the root of a directory named *project_folder*. The *templates* folder contains two templates, *mytemplate1* and *mytemplate2*. Each template has content files and a *.template.config* folder with a *template.json* config file.
+The following example demonstrates the file and folder structure of using a *.csproj* to create a template package. The *MyDotnetTemplates.csproj* file and *templates* folder are both located at the root of a directory named *project_folder*. The *templates* folder contains two templates, *mytemplate1* and *mytemplate2*. Each template has content files and a *.template.config* folder with a *template.json* config file.
 
 ```text
 project_folder
@@ -264,7 +264,7 @@ dotnet new install <FILE_SYSTEM_DIRECTORY>
 
 ## Get a list of installed template packages
 
-The uninstall command, without any other parameters, will list all installed template packages and included templates.
+The uninstall command, without any other parameters, lists all installed template packages and included templates.
 
 ```dotnetcli
 dotnet new uninstall
@@ -287,7 +287,7 @@ Currently installed items:
 ...
 ```
 
-The first level of items after `Currently installed items:` are the identifiers used in uninstalling a template package. And in the previous example, `Microsoft.Azure.WebJobs.ProjectTemplates` is listed. If the template package was installed by using a file system path, this identifier will be the folder path of the *.template.config* folder. Only the template packages installed via `dotnet new install` are shown in the list. The template packages that are built into the .NET SDK aren't shown.
+The first level of items after `Currently installed items:` are the identifiers used in uninstalling a template package. And in the previous example, `Microsoft.Azure.WebJobs.ProjectTemplates` is listed. If the template package was installed by using a file system path, this identifier is the folder path of the *.template.config* folder. Only the template packages installed via `dotnet new install` are shown in the list. The template packages that are built into the .NET SDK aren't shown.
 
 ## Uninstall a template package
 
@@ -307,7 +307,7 @@ dotnet new uninstall <FILE_SYSTEM_DIRECTORY>
 
 ## Create a project using a custom template
 
-After a template is installed, use the template by executing the `dotnet new <TEMPLATE>` command as you would with any other pre-installed template. You can also specify [options](dotnet-new.md#options) to the `dotnet new` command, including template-specific options you configured in the template settings. Supply the template's short name directly to the command:
+After a template is installed, use the template by executing the `dotnet new <TEMPLATE>` command as you would with any other preinstalled template. You can also specify [options](dotnet-new.md#options) to the `dotnet new` command, including template-specific options you configured in the template settings. Supply the template's short name directly to the command:
 
 ```dotnetcli
 dotnet new <TEMPLATE>

@@ -17,7 +17,7 @@ readonly file record struct SampleObject { }
 
 public static partial class Log
 {
-    [LoggerMessage(EventId = 23, Message = "{name} lives in {city}.")]
+    [LoggerMessage(EventId = 23, Message = "{Name} lives in {City}.")]
     public static partial void PlaceOfResidence(
         this ILogger logger,
         LogLevel logLevel,

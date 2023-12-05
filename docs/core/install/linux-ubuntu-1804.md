@@ -58,6 +58,8 @@ When you install with a package manager, these libraries are installed for you. 
 - libstdc++6
 - zlib1g
 
+[!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
+
 [!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 
 You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).

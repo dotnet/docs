@@ -61,6 +61,10 @@ You cannot declare a field, a property, an event, or the return type of a method
 
 Because the <xref:System.Object.Equals%2A> and <xref:System.Object.GetHashCode%2A> methods on anonymous types are defined in terms of the `Equals` and `GetHashCode` methods of the properties, two instances of the same anonymous type are equal only if all their properties are equal.
 
+> [!NOTE]
+> The [accessibility level](../../programming-guide/classes-and-structs/access-modifiers.md#default-access-summary-table) of an anonymous type is `internal`, hence two anonymous types defined in different assemblies are not of the same type.
+> Therefore instances of anonymous types can't be equal to each other when defined in different assemblies, even when having all their properties equal.
+
 Anonymous types do override the <xref:System.Object.ToString%2A> method, concatenating the name and `ToString` output of every property surrounded by curly braces.
 
 ```

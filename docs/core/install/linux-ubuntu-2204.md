@@ -3,12 +3,12 @@ title: Install .NET on Ubuntu 22.04
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu 22.04.
 author: adegeo
 ms.author: adegeo
-ms.date: 05/24/2023
+ms.date: 11/14/2023
 ---
 
 # Install .NET SDK or .NET Runtime on Ubuntu 22.04
 
-This article discusses how to install .NET on Ubuntu 22.04; .NET 6 and .NET 7 are supported.
+This article discusses how to install .NET on Ubuntu 22.04; .NET 8, .NET 7, and .NET 6, are supported.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
@@ -22,7 +22,7 @@ The following versions of .NET are supported or available for Ubuntu 22.04:
 
 | Supported .NET versions | Available in Ubuntu feed | [Available in Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------|-----------------------------------|
-| 7.0, 6.0                | 7.0, 6.0                 | 7.0, 6.0, 3.1                     |
+| 8.0, 7.0, 6.0           | 7.0, 6.0                 | 8.0, 7.0, 6.0, 3.1                |
 
 [!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
 
@@ -32,7 +32,7 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 
 ## Install .NET
 
-[!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
+[!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
 
 ## How to install other versions
 
@@ -56,6 +56,8 @@ When you install with a package manager, these libraries are installed for you. 
 - libstdc++6
 - libunwind8
 - zlib1g
+
+[!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
 
 [!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 

@@ -8,7 +8,7 @@ public class ExceptionsTest
     [Fact]
     public void Exceptions2Test()
     {
-        var sw = InitTest();
+        StringWriter sw = InitTest();
 
         Exceptions.Exceptions2();
         Assert.Equal(

@@ -15,6 +15,8 @@ ms.assetid: b4496afe-5fa7-4bb0-85ca-70b0ef21e6fc
 ---
 # Constructor Design
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 There are two kinds of constructors: type constructors and instance constructors.
 
 Type constructors are static and are run by the CLR before the type is used. Instance constructors run when an instance of a type is created.

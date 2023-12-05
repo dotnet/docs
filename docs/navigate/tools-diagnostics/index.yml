@@ -7,7 +7,7 @@ metadata:
   title: .NET tools and diagnostics documentation
   description: Learn about .NET tools, including the SDK and .NET CLI, diagnostics and instrumentation, code analysis, and package validation.
   ms.topic: landing-page
-  ms.date: 01/17/2023
+  ms.date: 10/10/2023
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -92,6 +92,20 @@ landingContent:
             url: ../../core/diagnostics/metrics.md
           - text: Runtime events
             url: ../../fundamentals/diagnostics/runtime-events.md
+      - linkListType: concept
+        links:
+          - text: App health checks in C#
+            url: ../../core/diagnostics/diagnostic-health-checks.md
+          - text: Exception summary
+            url: ../../core/diagnostics/diagnostic-exception-summary.md
+          - text: Resource monitoring
+            url: ../../core/diagnostics/diagnostic-resource-monitoring.md
+      - linkListType: reference
+        links:
+          - text: Unmanaged API for debugging
+            url: ../../core/unmanaged-api/debugging/index.md
+          - text: Unmanaged API for profiling
+            url: ../../core/unmanaged-api/profiling/index.md
 
   # Card
   - title: Code analysis

@@ -2,15 +2,15 @@
 description: "Learn more about: ICorDebugModule4 Interface"
 title: "ICorDebugModule4 Interface"
 ms.date: "06/06/2022"
-api_name: 
+api_name:
   - "ICorDebugModule4"
-api_location: 
+api_location:
   - "CorDebug.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "ICorDebugModule4"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ICorDebugModule4 interface [.NET Framework debugging]"
 ms.assetid:
   - "apiref"
@@ -18,41 +18,41 @@ ms.assetid:
 # ICorDebugModule4 Interface
 
 Provides a method that determines whether the module is loaded into memory in mapped/hydrated format.
-  
-## Syntax  
-  
-```cpp  
-interface ICorDebugModule4 : IUnknown  
-{  
+
+## Syntax
+
+```cpp
+interface ICorDebugModule4 : IUnknown
+{
      HRESULT IsMappedLayout(
      [out] BOOL *pIsMapped
-     ); 
-};  
-```  
-  
-## Methods  
-  
-|Method|Description|  
-|------------|-----------------|  
-|[ICorDebugModule4::IsMappedLayout Method](icordebugmodule4-ismappedlayout-method.md)|Queries to see if the module is loaded into memory in mapped/hydrated format.|  
-  
-## Remarks  
+     );
+};
+```
 
- This interface logically extends the 'ICorDebugModule', 'ICorDebugModule2', and 'ICoreDebugModule3' interfaces.  
-  
+## Methods
+
+|Method|Description|
+|------------|-----------------|
+|[ICorDebugModule4::IsMappedLayout Method](icordebugmodule4-ismappedlayout-method.md)|Queries to see if the module is loaded into memory in mapped/hydrated format.|
+
+## Remarks
+
+ This interface logically extends the 'ICorDebugModule', 'ICorDebugModule2', and 'ICoreDebugModule3' interfaces.
+
 > [!NOTE]
-> This interface does not support being called remotely, either cross-machine or cross-process.  
-  
-## Requirements  
+> This interface does not support being called remotely, either cross-machine or cross-process.
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-  
- **Header:** CorDebug.idl, CorDebug.h  
-  
- **Library:** CorGuids.lib  
+## Requirements
 
- **.NET Versions:** [!INCLUDE[net-core-50-plus](../../../../includes/net-core-50-md.md)]  
-  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+
+ **Header:** CorDebug.idl, CorDebug.h
+
+ **Library:** CorGuids.lib
+
+ **.NET Versions:** Available since .NET 5.0
+
 ## See also
 
 - [ICorDebugRemoteTarget Interface](icordebugremotetarget-interface.md)

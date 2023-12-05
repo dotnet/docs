@@ -2,7 +2,6 @@
 title: Code-style naming rules
 description: Learn about the .NET code-style rules for naming code elements.
 ms.date: 09/25/2020
-ms.topic: reference
 author: gewarren
 ms.author: gewarren
 dev_langs:
@@ -75,12 +74,12 @@ You can set the following properties for symbol groups, to limit which symbols a
 | -- | -- | -- | -- |
 | `applicable_kinds` | Kinds of symbols in the group <sup>1</sup> | `*` (use this value to specify all symbols)<br/>`namespace`<br/>`class`<br/>`struct`<br/>`interface`<br/>`enum`<br/>`property`<br/>`method`<br/>`field`<br/>`event`<br/>`delegate`<br/>`parameter`<br/>`type_parameter`<br/>`local`<br/>`local_function` | Yes |
 | `applicable_accessibilities` | Accessibility levels of the symbols in the group | `*` (use this value to specify all accessibility levels)<br/>`public`<br/>`internal` or `friend`<br/>`private`<br/>`protected`<br/>`protected_internal` or `protected_friend`<br/>`private_protected`<br/>`local` (for symbols defined within a method) | Yes |
-| `required_modifiers` | Only match symbols with _all_ the specified modifiers <sup>2</sup> | `abstract` or `must_inherit`<br/>`async`<br/>`const`<br/>`readonly`<br/>`static` or `shared` <sup>3</sup> | No |
+| `required_modifiers` | Only match symbols with *all* the specified modifiers <sup>2</sup> | `abstract` or `must_inherit`<br/>`async`<br/>`const`<br/>`readonly`<br/>`static` or `shared` <sup>3</sup> | No |
 
 **Notes:**
 
 1. Tuple members aren't currently supported in `applicable_kinds`.
-2. The symbol group matches _all_ the modifiers in the `required_modifiers` property.  If you omit this property, no specific modifiers are required for a match. This means a symbol's modifiers have no effect on whether or not this rule is applied.
+2. The symbol group matches *all* the modifiers in the `required_modifiers` property.  If you omit this property, no specific modifiers are required for a match. This means a symbol's modifiers have no effect on whether or not this rule is applied.
 3. If your group has `static` or `shared` in the `required_modifiers` property, the group will also include `const` symbols because they are implicitly `static`/`Shared`. However, if you don't want the `static` naming rule to apply to `const` symbols, you can create a new naming rule with a symbol group of `const`. The new rule will take precedence according to the [rule order](#rule-order).
 4. `class` includes [C# records](../../../csharp/language-reference/builtin-types/record.md).
 
@@ -151,9 +150,9 @@ Rule 2 is more specific and takes precedence, so all non-public constant fields 
 
 If you don't specify any custom naming rules, the following default styles are used:
 
-- For classes, structs, enumerations, properties, methods, and events with any accessibility, the default naming style is Pascal case.
+* For classes, structs, enumerations, properties, methods, and events with any accessibility, the default naming style is Pascal case.
 
-- For interfaces with any accessibility, the default naming style is Pascal case with a required prefix of **I**.
+* For interfaces with any accessibility, the default naming style is Pascal case with a required prefix of **I**.
 
 ## <a name="rule-id-ide1006-naming-rule-violation"></a>Code Rule ID: `IDE1006 (Naming rule violation)`
 
@@ -229,7 +228,7 @@ This example also demonstrates that entity definitions can be reused. The `under
 
 ## See also
 
-- [Language rules](language-rules.md)
-- [Formatting rules](ide0055.md)
-- [Roslyn naming rules](https://github.com/dotnet/roslyn/blob/main/.editorconfig#L63)
-- [.NET code style rules reference](index.md)
+* [Language rules](language-rules.md)
+* [Formatting rules](ide0055.md)
+* [Roslyn naming rules](https://github.com/dotnet/roslyn/blob/main/.editorconfig#L63)
+* [C# identifier naming rules and conventions](../../../csharp/fundamentals/coding-style/identifier-names.md)

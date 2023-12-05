@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
@@ -223,6 +224,35 @@ namespace SystemTextJsonSamples
     }
     // </WFWithEnum>
 
+    // <WFWithConverterEnum>
+    public class WeatherForecastWithPrecipEnum
+    {
+        public DateTimeOffset Date { get; set; }
+        public int TemperatureCelsius { get; set; }
+        public Precipitation? Precipitation { get; set; }
+    }
+
+    [JsonConverter(typeof(JsonStringEnumConverter<Precipitation>))]
+    public enum Precipitation
+    {
+        Drizzle, Rain, Sleet, Hail, Snow
+    }
+    // </WFWithConverterEnum>
+
+    // <WFWithPrecipEnumNoConverter>
+    public class WeatherForecast2WithPrecipEnum
+    {
+        public DateTimeOffset Date { get; set; }
+        public int TemperatureCelsius { get; set; }
+        public Precipitation2? Precipitation { get; set; }
+    }
+
+    public enum Precipitation2
+    {
+        Drizzle, Rain, Sleet, Hail, Snow
+    }
+    // </WFWithPrecipEnumNoConverter>
+
     public static class WeatherForecastExtensions
     {
         public static void DisplayPropertyValues(this object obj)
@@ -315,6 +345,17 @@ namespace SystemTextJsonSamples
                 Date = DateTime.Parse("2019-08-01"),
                 TemperatureCelsius = 25,
                 Summary = Summary.Hot
+            };
+            return weatherForecast;
+        }
+
+        public static WeatherForecastWithPrecipEnum CreateWeatherForecastWithPrecipEnum()
+        {
+            var weatherForecast = new WeatherForecastWithPrecipEnum
+            {
+                Date = DateTime.Parse("2019-08-01"),
+                TemperatureCelsius = 25,
+                Precipitation = Precipitation.Sleet
             };
             return weatherForecast;
         }

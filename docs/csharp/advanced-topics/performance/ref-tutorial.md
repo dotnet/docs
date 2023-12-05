@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Reduce memory allocations using struct data types and ref language features."
 description: Learn to remove allocations from your code. Make use of `struct` types for fewer allocations. Use the `ref` and `in` modifiers to avoid copies and enable or disable modification. Use `ref struct` types like `Span<T>` to directly use memory efficiently.
-ms.date: 01/27/2023
+ms.date: 10/13/2023
 ms.technology: csharp-advanced-concepts
 ---
 # Tutorial: Reduce memory allocations with `ref` safety
@@ -163,7 +163,7 @@ Let's look again at `DebounceMeasurement.AddMeasurement`. You should add the `in
 
 :::code language="csharp" source="./snippets/ref-tutorial/IntruderAlert-finished/DebounceMeasurement.cs" id="InArgument":::
 
-That saves one copy operation. The `in` parameter is a reference to the copy already created by the caller. You can also save a copy with the `TakeMeasurement` method in the `Room` type. This method illustrates how the compiler provides safety when you pass arguments by `ref`. The initial `TakeMeasurement` method in the `Room` type takes an argument of `Func<SensorMeasurement, bool>`. If you try to add the `in` or `ref` modifier to that declaration, the compiler reports an error. You can't pass a `ref` argument to a lambda expression. The compiler can't guarantee that the called expression doesn't copy the reference. If the lambda expression *captures* the reference, the reference could have a lifetime longer than the value it refers to. Accessing it outside its *ref safe to escape scope* would result in memory corruption. The `ref` safety rules don't allow it. You can learn more in the overview of [ref safety features](index.md#ref-safe-to-escape-scope).
+That saves one copy operation. The `in` parameter is a reference to the copy already created by the caller. You can also save a copy with the `TakeMeasurement` method in the `Room` type. This method illustrates how the compiler provides safety when you pass arguments by `ref`. The initial `TakeMeasurement` method in the `Room` type takes an argument of `Func<SensorMeasurement, bool>`. If you try to add the `in` or `ref` modifier to that declaration, the compiler reports an error. You can't pass a `ref` argument to a lambda expression. The compiler can't guarantee that the called expression doesn't copy the reference. If the lambda expression *captures* the reference, the reference could have a lifetime longer than the value it refers to. Accessing it outside its *ref safe context* would result in memory corruption. The `ref` safety rules don't allow it. You can learn more in the overview of [ref safety features](index.md#ref-safe-context).
 
 ## Preserve semantics
 

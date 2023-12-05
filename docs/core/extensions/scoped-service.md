@@ -24,7 +24,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 - The [.NET 7.0 SDK or later](https://dotnet.microsoft.com/download/dotnet/7.0)
 - A .NET integrated development environment (IDE)
@@ -46,7 +46,7 @@ In this tutorial, you learn how to:
 
 To use [scoped services](dependency-injection.md#scoped) within a `BackgroundService`, create a scope. No scope is created for a hosted service by default. The scoped background service contains the background task's logic.
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code source="snippets/workers/7.0/scoped-service/IScopedProcessingService.cs":::
 
@@ -62,7 +62,7 @@ The preceding interface defines a single `DoWorkAsync` method. To define the def
 - The service is asynchronous. The `DoWorkAsync` method returns a `Task`. For demonstration purposes, a delay of ten seconds is awaited in the `DoWorkAsync` method.
 - An <xref:Microsoft.Extensions.Logging.ILogger> is injected into the service.:
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code source="snippets/workers/7.0/scoped-service/DefaultScopedProcessingService.cs":::
 
@@ -79,7 +79,7 @@ The hosted service creates a scope to resolve the scoped background service to c
 
 Replace the existing `Worker` class with the following C# code, and rename the file to *ScopedBackgroundService.cs*:
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code source="snippets/workers/7.0/scoped-service/ScopedBackgroundService.cs" highlight="26-32":::
 
@@ -94,7 +94,7 @@ In the preceding code, an explicit scope is created and the `IScopedProcessingSe
 
 Replace the template *Program.cs* file contents with the following C# code:
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
 
 :::code source="snippets/workers/7.0/scoped-service/Program.cs" highlight="4-5":::
 

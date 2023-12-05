@@ -7,12 +7,12 @@ ms.date: 05/26/2023
 
 C# 12 introduces [*primary constructors*](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors), a concise syntax to declare constructors whose parameters are available anywhere in the body of the type.
 
-In this tutorial, you learn how to:
+In this tutorial, you will learn:
 
 > [!div class="checklist"]
 >
 > - When to declare a primary constructor on your type
-> - How to call call primary constructors from other constructors
+> - How to call primary constructors from other constructors
 > - How to use primary constructor parameters in members of the type
 > - Where primary constructor parameters are stored
 
@@ -59,11 +59,11 @@ The preceding examples use primary constructor parameters to initialize readonly
 
 In the preceding example, the `Translate` method changes the `dx` and `dy` components. That requires the `Magnitude` and `Direction` properties be computed when accessed. The `=>` operator designates an expression-bodied `get` accessor, whereas the `=` operator designates an initializer. This version adds a parameterless constructor to the struct. The parameterless constructor must invoke the primary constructor, so that all the primary constructor parameters are initialized.
 
-In the previous example, the primary constructor properties are accessed in a method. Therefore the compiler creates hidden fields to represent each parameter. The following code shows approximately what the compiler generates. The actual field names are valid MSIL identifiers, but not valid C# identifiers.
+In the previous example, the primary constructor properties are accessed in a method. Therefore the compiler creates hidden fields to represent each parameter. The following code shows approximately what the compiler generates. The actual field names are valid CIL identifiers, but not valid C# identifiers.
 
 :::code source="./snippets/primary-constructors/Distance.cs" id="StructTwoLowered":::
 
-It's important to understand that the first example didn't require the compiler to create a field to store the value of the primary constructor parameters. The second example used the primary constructor parameter inside a method, and therefore required the compiler create storage for them. The compiler creates storage for any primary constructors only when that parameter is accessed in the body of a member of your type. Otherwise, the primary constructor parameters aren't stored in the object.
+It's important to understand that the first example didn't require the compiler to create a field to store the value of the primary constructor parameters. The second example used the primary constructor parameter inside a method, and therefore required the compiler to create storage for them. The compiler creates storage for any primary constructors only when that parameter is accessed in the body of a member of your type. Otherwise, the primary constructor parameters aren't stored in the object.
 
 ## Dependency injection
 
@@ -105,4 +105,4 @@ The highlighted line shows that the `ToString` method uses the *primary construc
 
 ## Summary
 
-You can use the primary constructors as best suits your design. For classes and structs, primary constructor parameters are parameters to a constructor that must be invoked. You can use them to initialize properties. You can initialize fields. Those properties or fields can be immutable, or mutable. You can use them in methods. They're parameters, and you use them in what manner suits your design best. You can learn more about primary constructors in the [C# programming guide article on instance constructors](../../programming-guide/classes-and-structs/instance-constructors.md#parameterless-constructors) and the [proposed primary constructor specification](~/_csharplang/proposals/primary-constructors.md).
+You can use the primary constructors as best suits your design. For classes and structs, primary constructor parameters are parameters to a constructor that must be invoked. You can use them to initialize properties. You can initialize fields. Those properties or fields can be immutable, or mutable. You can use them in methods. They're parameters, and you use them in what manner suits your design best. You can learn more about primary constructors in the [C# programming guide article on instance constructors](../../programming-guide/classes-and-structs/instance-constructors.md#parameterless-constructors) and the [proposed primary constructor specification](~/_csharplang/proposals/csharp-12.0/primary-constructors.md).

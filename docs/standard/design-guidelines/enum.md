@@ -12,6 +12,8 @@ ms.assetid: dd53c952-9d9a-4736-86ff-9540e815d545
 ---
 # Enum Design
 
+[!INCLUDE [not-current](includes/not-current.md)]
+
 Enums are a special kind of value type. There are two kinds of enums: simple enums and flag enums.
 
 Simple enums represent small closed sets of choices. A common example of the simple enum is a set of colors.

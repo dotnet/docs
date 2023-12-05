@@ -68,6 +68,21 @@ Enumeration members are always `public`, and no access modifiers can be applied.
 
 Delegates behave like classes and structs. By default, they have `internal` access when declared directly within a namespace, and `private` access when nested.
 
+## Default access summary table
+
+|  Type                                             | Default access |
+| ------------------------------------------------- | :------------: |
+| `class`                                           |    internal    |
+| `struct`                                          |    internal    |
+| `interface`                                       |    internal    |
+| `record`                                          |    internal    |
+| `enum`                                            |    internal    |
+| `interface` members                               |     public     |
+| Anonymous types                                   |    internal    |
+| [class, record, and struct members](./members.md) |    private     |
+
+For more details see the [Accessibility Levels](../../language-reference/keywords/accessibility-levels.md) page.
+
 ## C# language specification
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
@@ -78,12 +93,15 @@ Delegates behave like classes and structs. By default, they have `internal` acce
 - [C# Programming Guide](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)
 - [Interfaces](../../fundamentals/types/interfaces.md)
+- [Accessibility Levels](../../language-reference/keywords/accessibility-levels.md)
 - [private](../../language-reference/keywords/private.md)
 - [public](../../language-reference/keywords/public.md)
 - [internal](../../language-reference/keywords/internal.md)
 - [protected](../../language-reference/keywords/protected.md)
 - [protected internal](../../language-reference/keywords/protected-internal.md)
 - [private protected](../../language-reference/keywords/private-protected.md)
+- [sealed](../../programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md#sealed-classes-and-class-members)
 - [class](../../language-reference/keywords/class.md)
 - [struct](../../language-reference/builtin-types/struct.md)
 - [interface](../../language-reference/keywords/interface.md)
+- [Anonymous types](../../fundamentals/types/anonymous-types.md)

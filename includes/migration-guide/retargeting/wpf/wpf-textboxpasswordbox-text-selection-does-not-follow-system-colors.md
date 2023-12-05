@@ -6,7 +6,15 @@ In .NET Framework 4.7.1 and earlier versions, WPF `System.Windows.Controls.TextB
 
 #### Suggestion
 
-A developer who wants to utilize this change must set the following AppContext flag appropriately.  To utilize this feature, the installed .NET Framework version must be 4.7.2 or greater.To enabled the non-adorner-based selection, use the following AppContext flag.<pre><code class="lang-xml">&lt;configuration&gt;&#13;&#10;&lt;runtime&gt;&#13;&#10;&lt;AppContextSwitchOverrides value=&quot;Switch.System.Windows.Controls.Text.UseAdornerForTextboxSelectionRendering=false&quot;/&gt;&#13;&#10;&lt;/runtime&gt;&#13;&#10;&lt;/configuration&gt;&#13;&#10;</code></pre>
+A developer who wants to utilize this change must set the following AppContext flag appropriately.  To utilize this feature, the installed .NET Framework version must be 4.7.2 or greater.To enabled the non-adorner-based selection, use the following AppContext flag.
+
+```xml
+<configuration>
+<runtime>
+<AppContextSwitchOverrides value="Switch.System.Windows.Controls.Text.UseAdornerForTextboxSelectionRendering=false"/>
+</runtime>
+</configuration>
+```
 
 | Name    | Value       |
 |:--------|:------------|

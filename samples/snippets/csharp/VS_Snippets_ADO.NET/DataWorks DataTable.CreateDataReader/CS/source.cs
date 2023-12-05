@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data;
 
-class Program
+static class Program
 {
     // <Snippet1>
     static void Main()
@@ -11,7 +11,7 @@ class Program
         Console.ReadKey();
     }
 
-    private static void TestCreateDataReader(DataTable dt)
+    static void TestCreateDataReader(DataTable dt)
     {
         // Given a DataTable, retrieve a DataTableReader
         // allowing access to all the tables' data:
@@ -32,11 +32,11 @@ class Program
         }
     }
 
-    private static DataTable GetCustomers()
+    static DataTable GetCustomers()
     {
         // Create sample Customers table, in order
         // to demonstrate the behavior of the DataTableReader.
-        DataTable table = new DataTable();
+        DataTable table = new();
 
         // Create two columns, ID and Name.
         DataColumn idColumn = table.Columns.Add("ID", typeof(int));
@@ -52,12 +52,12 @@ class Program
         return table;
     }
 
-    private static void PrintColumns(DataTableReader reader)
+    static void PrintColumns(DataTableReader reader)
     {
         // Loop through all the rows in the DataTableReader
         while (reader.Read())
         {
-            for (int i = 0; i < reader.FieldCount; i++)
+            for (var i = 0; i < reader.FieldCount; i++)
             {
                 Console.Write(reader[i] + " ");
             }

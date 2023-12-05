@@ -2,7 +2,6 @@
 title: .NET formatting options
 description: Learn about the code-style options for formatting .NET code.
 ms.date: 12/20/2022
-ms.topic: reference
 dev_langs:
 - CSharp
 - VB
@@ -15,8 +14,8 @@ The formatting options in this article apply to both C# and Visual Basic. These 
 
 Use these options to customize how you want using directives to be sorted and grouped:
 
-- [dotnet\_sort\_system\_directives_first](#dotnet_sort_system_directives_first)
-- [dotnet\_separate\_import\_directive\_groups](#dotnet_separate_import_directive_groups)
+- [dotnet_sort_system_directives_first](#dotnet_sort_system_directives_first)
+- [dotnet_separate_import_directive_groups](#dotnet_separate_import_directive_groups)
 
 Example *.editorconfig* file:
 
@@ -30,16 +29,16 @@ dotnet_separate_import_directive_groups = true
 > [!TIP]
 > A separate C#-specific [`using` directive rule IDE0065](ide0065.md) is also available. That rule concerns whether `using` directives are placed inside or outside namespaces.
 
-### dotnet\_sort\_system\_directives_first
+### dotnet_sort_system_directives_first
 
 | Property                 | Value                               | Description                                                                                      |
 |--------------------------|-------------------------------------|--------------------------------------------------------------------------------------------------|
 | **Option name**          | dotnet_sort_system_directives_first |                                                                                                  |
 | **Applicable languages** | C# and Visual Basic                 |                                                                                                  |
-| **Introduced version**   | Visual Studio 2017     |                                                                                                  |
+| **Introduced version**   | Visual Studio 2017                  |                                                                                                  |
 | **Option values**        | `true`                              | Sort `System.*` `using` directives alphabetically, and place them before other using directives. |
 |                          | `false`                             | Do not place `System.*` `using` directives before other `using` directives.                      |
-| **Default value**        | `true`                              |                                                                                                  |
+| **Default option value** | `true`                              |                                                                                                  |
 
 Code examples:
 
@@ -55,16 +54,16 @@ using Octokit;
 using System.Threading.Tasks;
 ```
 
-### dotnet\_separate\_import\_directive\_groups
+### dotnet_separate_import_directive_groups
 
 | Property                 | Value                                   | Description                                                 |
 |--------------------------|-----------------------------------------|-------------------------------------------------------------|
 | **Option name**          | dotnet_separate_import_directive_groups |                                                             |
 | **Applicable languages** | C# and Visual Basic                     |                                                             |
-| **Introduced version**   | Visual Studio 2017         |                                                             |
+| **Introduced version**   | Visual Studio 2017                      |                                                             |
 | **Option values**        | `true`                                  | Place a blank line between `using` directive groups.        |
 |                          | `false`                                 | Do not place a blank line between `using` directive groups. |
-| **Default value**        | `false`                                 |                                                             |
+| **Default option value** | `false`                                 |                                                             |
 
 Code examples:
 

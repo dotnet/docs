@@ -2,7 +2,7 @@
 
 namespace LinqSamples;
 
-public class NestedGroups
+public static class NestedGroups
 {
     public static void NestedGroup1()
     {
@@ -10,15 +10,12 @@ public class NestedGroups
         var nestedGroupsQuery =
             from student in students
             group student by student.Year into newGroup1
-            from newGroup2 in (
-                from student in newGroup1
-                group student by student.LastName
-            )
+            from newGroup2 in
+            from student in newGroup1
+            group student by student.LastName
+
             group newGroup2 by newGroup1.Key;
 
-        // Three nested foreach loops are required to iterate
-        // over all elements of a grouped group. Hover the mouse
-        // cursor over the iteration variables to see their actual type.
         foreach (var outerGroup in nestedGroupsQuery)
         {
             Console.WriteLine($"DataClass.Student Level = {outerGroup.Key}");

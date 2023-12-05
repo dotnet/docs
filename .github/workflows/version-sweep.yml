@@ -35,3 +35,4 @@ jobs:
               uses: dotnet/docs-tools/actions/dotnet-version-updater@main
               with:
                   support: ${{ github.event.inputs.support }}
+                  token: ${{ secrets.GITHUB_TOKEN }}

@@ -99,7 +99,7 @@ IntelliSense uses brackets to indicate optional parameters, as shown in the foll
 ![Screenshot showing IntelliSense quick info for the ExampleMethod method.](./media/named-and-optional-arguments/optional-examplemethod-parameters.png)
 
 > [!NOTE]
-> You can also declare optional parameters by using the .NET <xref:System.Runtime.InteropServices.OptionalAttribute> class. `OptionalAttribute` parameters do not require a default value.
+> You can also declare optional parameters by using the .NET <xref:System.Runtime.InteropServices.OptionalAttribute> class. `OptionalAttribute` parameters do not require a default value. However, if a default value is desired, take a look at <xref:System.Runtime.InteropServices.DefaultParameterValueAttribute> class.
 
 ### Example
 

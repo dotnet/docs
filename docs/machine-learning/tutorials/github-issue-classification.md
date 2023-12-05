@@ -4,7 +4,6 @@ description: Discover how to use ML.NET in a multiclass classification scenario 
 ms.date: 11/11/2021
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0516
-recommendations: false
 #Customer intent: As a developer, I want to use ML.NET to apply a multiclass classification learning algorithm so that I can understand how to categorize support issues to assign them to a given area.
 ---
 # Tutorial: Categorize support issues using multiclass classification with ML.NET

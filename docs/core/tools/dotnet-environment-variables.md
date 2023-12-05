@@ -1,7 +1,7 @@
 ---
 title: .NET environment variables
 description: Learn about the environment variables that you can use to configure the .NET SDK, .NET CLI, and .NET runtime.
-ms.date: 04/04/2023
+ms.date: 11/08/2023
 ---
 
 # .NET environment variables
@@ -169,6 +169,18 @@ Configures the runtime to pause during startup and wait for the _Diagnostics IPC
 
 When set to `1`, enables debugging, profiling, and other diagnostics via the [Diagnostic Port](../diagnostics/diagnostic-port.md). Defaults to 1.
 
+### `DOTNET_EnableDiagnostics_IPC`
+
+Starting with .NET 8, when set to `1`, enables the [Diagnostic Port](../diagnostics/diagnostic-port.md). Defaults to 1.
+
+### `DOTNET_EnableDiagnostics_Debugger`
+
+Starting with .NET 8, when set to `1`, enables debugging. Defaults to 1.
+
+### `DOTNET_EnableDiagnostics_Profiler`
+
+Starting with .NET 8, when set to `1`, enables profiling. Defaults to 1.
+
 ### EventPipe variables
 
 See [EventPipe environment variables](../diagnostics/eventpipe.md#trace-using-environment-variables) for more information.
@@ -201,6 +213,64 @@ Tools that invoke `dotnet` during an SDK command should use the following algori
 > [!NOTE]
 > `DOTNET_HOST_PATH` is not a general solution for locating the `dotnet` host. It is only intended to be used by tools that are invoked by the .NET SDK.
 
+### `DOTNET_LAUNCH_PROFILE`
+
+The [dotnet run](dotnet-run.md) command sets this variable to the selected launch profile.
+
+Given the following *launchSettings.json* file:
+
+```json
+{
+  "profiles": {
+    "First": {
+      "commandName": "Project",
+    },
+    "Second": {
+      "commandName": "Project",
+    }
+  }
+}
+```
+
+And the following *Program.cs* file:
+
+```csharp
+var value = Environment.GetEnvironmentVariable("DOTNET_LAUNCH_PROFILE");
+Console.WriteLine($"DOTNET_LAUNCH_PROFILE={value}");
+```
+
+The following scenarios produce the output shown:
+
+* Launch profile specified and exists
+
+  ```dotnetcli
+  $ dotnet run --launch-profile First
+  DOTNET_LAUNCH_PROFILE=First
+  ```
+
+* Launch profile not specified, first one selected
+
+  ```dotnetcli
+  $ dotnet run
+  DOTNET_LAUNCH_PROFILE=First
+  ```
+
+* Launch profile specified but does not exist
+
+  ```dotnetcli
+  $ dotnet run --launch-profile Third
+  The launch profile "Third" could not be applied.
+  A launch profile with the name 'Third' doesn't exist.
+  DOTNET_LAUNCH_PROFILE=
+  ```
+
+* Launch with no profile
+  
+  ```dotnetcli
+  $ dotnet run --no-launch-profile
+  DOTNET_LAUNCH_PROFILE=
+  ```
+
 ### `NUGET_PACKAGES`
 
 The global packages folder. If not set, it defaults to `~/.nuget/packages` on Unix or `%userprofile%\.nuget\packages` on Windows.
@@ -232,6 +302,10 @@ Specifies whether data about the .NET tools usage is collected and sent to Micro
 ### `DOTNET_SKIP_FIRST_TIME_EXPERIENCE`
 
 If `DOTNET_SKIP_FIRST_TIME_EXPERIENCE` is set to `true`, the `NuGetFallbackFolder` won't be expanded to disk and a shorter welcome message and telemetry notice will be shown.
+
+> [!NOTE]
+> This environment variable is no longer supported in .NET Core 3.0 and later.
+> Use [`DOTNET_NOLOGO`](#dotnet_nologo) as a replacement.
 
 ### `DOTNET_MULTILEVEL_LOOKUP`
 

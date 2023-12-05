@@ -6,7 +6,6 @@ ms.author: casoper
 ms.date: 12/05/2022
 ms.topic: tutorial
 ms.prod: dotnet
-recommendations: false
 ---
 
 # Blink an LED

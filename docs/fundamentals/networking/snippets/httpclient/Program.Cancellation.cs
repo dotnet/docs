@@ -12,7 +12,7 @@
             using var response = await httpClient.GetAsync(
                 "http://localhost:5001/sleepFor?seconds=100", cts.Token);
         }
-        catch (TaskCanceledException ex) when (cts.IsCancellationRequested)
+        catch (OperationCanceledException ex) when (cts.IsCancellationRequested)
         {
             // When the token has been canceled, it is not a timeout.
             Console.WriteLine($"Canceled: {ex.Message}");

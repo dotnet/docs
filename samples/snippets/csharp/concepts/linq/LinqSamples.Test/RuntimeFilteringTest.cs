@@ -8,7 +8,7 @@ public class RuntimeFilteringTest
     [Fact]
     public void RuntimeFiltering1Test()
     {
-        var sw = InitTest();
+        StringWriter sw = InitTest();
 
         RuntimeFiltering.RuntimeFiltering1();
         Assert.Equal(
@@ -25,7 +25,7 @@ Tucker: 122
     [Fact]
     public void RuntimeFiltering2Test()
     {
-        var sw = InitTest();
+        StringWriter sw = InitTest();
 
         RuntimeFiltering.RuntimeFiltering2();
         Assert.Equal(

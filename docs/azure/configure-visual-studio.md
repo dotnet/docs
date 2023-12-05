@@ -6,11 +6,10 @@ ms.custom: devx-track-dotnet, engagement-fy23
 ms.date: 1/26/2023
 author: alexwolfmsft
 ms.author: alexwolf
-recommendations: false
 ---
 # Configure Visual Studio for Azure development with .NET
 
-Visual Studio includes tooling to help with the development and deployment of applications on Azure. This guide will help you make sure that Visual Studio is properly configured for Azure development.
+Visual Studio includes tooling to help with the development and deployment of applications on Azure. This guide helps you make sure that Visual Studio is properly configured for Azure development.
 
 ## Download Visual Studio
 
@@ -21,13 +20,13 @@ If you already have Visual Studio installed, you can skip this step.
 
 ## Install Azure workloads
 
-Open Visual Studio Installer and validate that the workloads **Azure development** and **ASP.NET and web development** are installed.  If either of these workloads is not installed, select them to be installed.
+Open Visual Studio Installer and validate that the workloads **Azure development** and **ASP.NET and web development** are installed.  If either of these workloads isn't installed, select them to be installed.
 
 ![Screenshot of the Visual Studio Installer showing the Azure development and ASP.NET and Web Development Workloads selected](./media/visual-studio-installer-azure-development.png)
 
 ## Authenticate Visual Studio with Azure
 
-When debugging apps through Visual Studio, Visual Studio can use your Azure account to authenticate and access Azure Resources.  This account is also used when you publish apps directly from Visual Studio to Azure.
+When you debug apps through Visual Studio, Visual Studio can use your Azure account to authenticate and access Azure Resources. This account is also used when you publish apps directly from Visual Studio to Azure.
 
 To authenticate your Azure account from Visual Studio, select the **Tools** > **Options** menu to launch the **Options** dialog. Navigate to the **Azure Service Authentication** options and sign in using your Azure account.
 

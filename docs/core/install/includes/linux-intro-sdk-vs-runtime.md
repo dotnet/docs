@@ -1,3 +1,9 @@
+---
+author: adegeo
+ms.author: adegeo
+ms.date: 11/14/2023
+ms.topic: include
+---
 
 Install the SDK (which includes the runtime) if you want to develop .NET apps. Or, if you only need to run apps, install the Runtime. If you're installing the Runtime, we suggest you install the **ASP.NET Core Runtime** as it includes both .NET and ASP.NET Core runtimes.
 

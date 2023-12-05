@@ -40,7 +40,7 @@ This is called *value assignment*: the value is assigned.
 
 In the preceding example, the [local reference variable](../statements/declarations.md#reference-variables) `arrayElement` is initialized as an alias to the first array element. Then, it's `ref` reassigned to refer to the last array element. As it's an alias, when you update its value with an ordinary assignment operator `=`, the corresponding array element is also updated.
 
-The left-hand operand of `ref` assignment can be a [local reference variable](../statements/declarations.md#reference-variables), a [`ref` field](../builtin-types/ref-struct.md#ref-fields), and a [`ref`](../keywords/ref.md), [`out`](../keywords/out-parameter-modifier.md), or [`in`](../keywords/in-parameter-modifier.md) method parameter. Both operands must be of the same type.
+The left-hand operand of `ref` assignment can be a [local reference variable](../statements/declarations.md#reference-variables), a [`ref` field](../builtin-types/ref-struct.md#ref-fields), and a [`ref`](../keywords/ref.md), [`out`](../keywords/method-parameters.md#out-parameter-modifier), or [`in`](../keywords/method-parameters.md#in-parameter-modifier) method parameter. Both operands must be of the same type.
 
 ## Compound assignment
 

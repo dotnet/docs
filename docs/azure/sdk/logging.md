@@ -154,7 +154,7 @@ Using the Azure Service Bus library as an example, complete the following steps:
 
 ### Logging without client registration
 
-There are scenarios in which [registering an Azure SDK library's client with the DI container](dependency-injection.md#register-clients) is either impossible or unnecessary:
+There are scenarios in which [registering an Azure SDK library's client with the DI container](dependency-injection.md#register-clients-and-subclients) is either impossible or unnecessary:
 
 - The Azure SDK library doesn't include an `IServiceCollection` extension method to register a client in the DI container.
 - Your app uses Azure extension libraries that depend on other Azure SDK libraries. Examples of such Azure extension libraries include:

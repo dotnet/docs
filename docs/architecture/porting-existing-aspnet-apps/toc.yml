@@ -1,8 +1,8 @@
 items:
-- name: "Port existing ASP.NET Apps to .NET 6"
+- name: "Port existing ASP.NET Apps to .NET 7"
   href: index.md
   items:
-    - name: Introduction to porting apps to .NET 6
+    - name: Introduction to porting apps to .NET 7
       href: introduction.md
       items:
         - name: Migration considerations
@@ -70,5 +70,5 @@ items:
           href: more-migration-scenarios.md
     - name: Deployment scenarios
       href: deployment-scenarios.md
-    - name: Summary - Port existing ASP.NET Apps to .NET 6
+    - name: Summary - Port existing ASP.NET Apps to .NET 7
       href: summary.md

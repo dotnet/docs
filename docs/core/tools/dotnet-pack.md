@@ -1,7 +1,7 @@
 ---
 title: dotnet pack command
 description: The dotnet pack command creates NuGet packages for your .NET project.
-ms.date: 08/23/2021
+ms.date: 11/27/2023
 ---
 # dotnet pack
 
@@ -18,7 +18,7 @@ dotnet pack [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
     [--force] [--include-source] [--include-symbols] [--interactive]
     [--no-build] [--no-dependencies] [--no-restore] [--nologo]
     [-o|--output <OUTPUT_DIRECTORY>] [--runtime <RUNTIME_IDENTIFIER>]
-    [-s|--serviceable] [-v|--verbosity <LEVEL>]
+    [-s|--serviceable] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
     [--version-suffix <VERSION_SUFFIX>]
 
 dotnet pack -h|--help
@@ -108,6 +108,8 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 - **`-s|--serviceable`**
 
   Sets the serviceable flag in the package. For more information, see [.NET Blog: .NET Framework 4.5.1 Supports Microsoft Security Updates for .NET NuGet Libraries](https://aka.ms/nupkgservicing).
+
+[!INCLUDE [tl](../../../includes/cli-tl.md)]
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 

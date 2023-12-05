@@ -15,14 +15,11 @@ body:
       label: Visual Studio release
       description: What Visual Studio (preview) contains this feature?
       options:
-        - "17.6"
-        - 17.7p1
-        - 17.7p2
-        - 17.7p3
-        - 17.7p4s
-        - Other (please put exact version in description textbox)
-    validations:
-      required: true
+        - "17.7"
+        - "17.8p1"
+        - "17.8p2"
+        - "17.8p3"
+        - "Other (please put exact version in description textbox)"
   - type: input
     id: Speclet
     attributes:

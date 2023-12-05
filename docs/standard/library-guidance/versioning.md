@@ -49,11 +49,11 @@ Strong naming combined with assembly version enables [strict assembly version lo
 
 ✔️ CONSIDER only including a major version in the AssemblyVersion.
 
-> e.g. Library 1.0 and Library 1.0.1 both have an AssemblyVersion of `1.0.0.0`, while Library 2.0 has AssemblyVersion of `2.0.0.0`. When the assembly version changes less often, it reduces binding redirects.
+> For example, Library 1.0 and Library 1.0.1 both have an AssemblyVersion of `1.0.0.0`, while Library 2.0 has AssemblyVersion of `2.0.0.0`. When the assembly version changes less often, it reduces binding redirects.
 
 ✔️ CONSIDER keeping the major version number of the AssemblyVersion and the NuGet package version in sync.
 
-> The AssemblyVersion is included in some informational messages displayed to the user, e.g. the assembly name and assembly qualified type names in exception messages. Maintaining a relationship between the versions provides more information to developers about which version they are using.
+> The AssemblyVersion is included in some informational messages displayed to the user, for example, the assembly name and assembly qualified type names in exception messages. Maintaining a relationship between the versions provides more information to developers about which version they are using.
 
 ❌ DO NOT have a fixed AssemblyVersion.
 

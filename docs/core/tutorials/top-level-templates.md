@@ -50,7 +50,7 @@ Both top-level statements and [implicit `using` directives](#implicit-using-dire
 
 If you'd prefer to use the older format, you can copy the code from the second example in this article, and continue the tutorial as before.
 
-You can learn more about top-level statements in the tutorial exploration on [top-level statements](../../csharp/whats-new/tutorials/top-level-statements.md).
+You can learn more about top-level statements in the tutorial exploration on [top-level statements](../../csharp/tutorials/top-level-statements.md).
 
 ## Implicit `using` directives
 

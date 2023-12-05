@@ -8,7 +8,6 @@ dev_langs:
 helpviewer_keywords:
   - "service contracts [WCF], implementing"
 ms.assetid: d5ab51ba-61ae-403e-b3c8-e2669e326806
-recommendations: false
 ---
 # Tutorial: Implement a Windows Communication Foundation service contract
 

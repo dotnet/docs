@@ -17,10 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.CloudService", "cloud-s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.SignalCompletionService", "signal-completion-service\App.SignalCompletionService\App.SignalCompletionService.csproj", "{28F3041E-09D9-43D5-9D69-7BAE9BBA2531}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "App.WindowsService.Installer", "windows-service-installer\App.WindowsService.Installer\App.WindowsService.Installer.vdproj", "{D0114B0A-E567-4B3D-BF56-398381706B0A}"
-EndProject
-Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "App.WindowsService.Setup", "windows-service-setup\App.WindowsService.Setup\App.WindowsService.Setup.wixproj", "{F1C524A1-B399-4808-925C-94A85619B019}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -145,30 +141,6 @@ Global
 		{28F3041E-09D9-43D5-9D69-7BAE9BBA2531}.Release|x64.Build.0 = Release|Any CPU
 		{28F3041E-09D9-43D5-9D69-7BAE9BBA2531}.Release|x86.ActiveCfg = Release|Any CPU
 		{28F3041E-09D9-43D5-9D69-7BAE9BBA2531}.Release|x86.Build.0 = Release|Any CPU
-		{D0114B0A-E567-4B3D-BF56-398381706B0A}.Debug|Any CPU.ActiveCfg = Debug
-		{D0114B0A-E567-4B3D-BF56-398381706B0A}.Debug|ARM64.ActiveCfg = Debug
-		{D0114B0A-E567-4B3D-BF56-398381706B0A}.Debug|x64.ActiveCfg = Debug
-		{D0114B0A-E567-4B3D-BF56-398381706B0A}.Debug|x86.ActiveCfg = Debug
-		{D0114B0A-E567-4B3D-BF56-398381706B0A}.Release|Any CPU.ActiveCfg = Release
-		{D0114B0A-E567-4B3D-BF56-398381706B0A}.Release|ARM64.ActiveCfg = Release
-		{D0114B0A-E567-4B3D-BF56-398381706B0A}.Release|x64.ActiveCfg = Release
-		{D0114B0A-E567-4B3D-BF56-398381706B0A}.Release|x86.ActiveCfg = Release
-		{F1C524A1-B399-4808-925C-94A85619B019}.Debug|Any CPU.ActiveCfg = Debug|x64
-		{F1C524A1-B399-4808-925C-94A85619B019}.Debug|Any CPU.Build.0 = Debug|x64
-		{F1C524A1-B399-4808-925C-94A85619B019}.Debug|ARM64.ActiveCfg = Debug|ARM64
-		{F1C524A1-B399-4808-925C-94A85619B019}.Debug|ARM64.Build.0 = Debug|ARM64
-		{F1C524A1-B399-4808-925C-94A85619B019}.Debug|x64.ActiveCfg = Debug|x64
-		{F1C524A1-B399-4808-925C-94A85619B019}.Debug|x64.Build.0 = Debug|x64
-		{F1C524A1-B399-4808-925C-94A85619B019}.Debug|x86.ActiveCfg = Debug|x86
-		{F1C524A1-B399-4808-925C-94A85619B019}.Debug|x86.Build.0 = Debug|x86
-		{F1C524A1-B399-4808-925C-94A85619B019}.Release|Any CPU.ActiveCfg = Release|x64
-		{F1C524A1-B399-4808-925C-94A85619B019}.Release|Any CPU.Build.0 = Release|x64
-		{F1C524A1-B399-4808-925C-94A85619B019}.Release|ARM64.ActiveCfg = Release|ARM64
-		{F1C524A1-B399-4808-925C-94A85619B019}.Release|ARM64.Build.0 = Release|ARM64
-		{F1C524A1-B399-4808-925C-94A85619B019}.Release|x64.ActiveCfg = Release|x64
-		{F1C524A1-B399-4808-925C-94A85619B019}.Release|x64.Build.0 = Release|x64
-		{F1C524A1-B399-4808-925C-94A85619B019}.Release|x86.ActiveCfg = Release|x86
-		{F1C524A1-B399-4808-925C-94A85619B019}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

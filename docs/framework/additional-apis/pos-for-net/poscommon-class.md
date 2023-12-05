@@ -80,7 +80,7 @@ The following table describes the **PosCommon** class events.
 The following code example demonstrates how to use the properties and methods common to all Service Objects to display information about a connected device.
 
 ```csharp
-// Create a dervied class of PosCommon
+// Create a derived class of PosCommon
 public class PosCommonSample: PosCommon
 {
     // Implement all base methods and properties.

@@ -5,7 +5,6 @@ author: IEvangelist
 ms.author: dapine
 ms.date: 11/16/2022
 ms.topic: tutorial
-recommendations: false
 ---
 
 # Tutorial: Create a GitHub Action with .NET
@@ -61,7 +60,7 @@ With the defined action inputs class, focus on the *Program.cs* file.
 
 The `Program` file is simplified for brevity, to explore the full sample source, see [*Program.cs*](https://github.com/dotnet/samples/blob/main/github-actions/DotNet.GitHubAction/DotNet.GitHubAction/Program.cs). The mechanics in place demonstrate the boilerplate code required to use:
 
-- [Top-level statements](../csharp/whats-new/tutorials/top-level-statements.md)
+- [Top-level statements](../csharp/tutorials/top-level-statements.md)
 - [Generic Host](../core/extensions/generic-host.md)
 - [Dependency injection](../core/extensions/dependency-injection.md)
 

@@ -178,7 +178,7 @@ Orleans supports serialization of types in type hierarchies (types which derive 
 
 ``` csharp
 // The foreign type is not sealed, allowing other types to inherit from it.
-public sealed class MyForeignLibraryType
+public class MyForeignLibraryType
 {
     public MyForeignLibraryType() { }
 

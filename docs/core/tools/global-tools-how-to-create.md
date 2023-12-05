@@ -3,7 +3,6 @@ title: "Tutorial: Create a .NET tool"
 description: Learn how to create a .NET tool. A tool is a console application that is installed by using the .NET CLI.
 ms.topic: tutorial
 ms.date: 10/27/2021
-recommendations: false
 ---
 
 # Tutorial: Create a .NET tool using the .NET CLI

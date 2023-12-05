@@ -35,7 +35,7 @@ A local function is defined as a nested method inside a containing member. Its d
 
 > [!NOTE]
 > The `<parameter-list>` shouldn't contain the parameters named with [contextual keyword](../../language-reference/keywords/index.md#contextual-keywords) `value`.
-> The compiler creates the temporary variable "value", which contains the referenced outter variables, which later causes ambiguity and may also cause an unexpected behaviour.
+> The compiler creates the temporary variable "value", which contains the referenced outer variables, which later causes ambiguity and may also cause an unexpected behaviour.
 
 You can use the following modifiers with a local function:
 
@@ -52,7 +52,7 @@ The following example defines a local function named `AppendPathSeparator` that 
 
 :::code language="csharp" source="snippets/local-functions/Program.cs" id="Basic" :::
 
-Beginning with C# 9.0, you can apply attributes to a local function, its parameters and type parameters, as the following example shows:
+You can apply attributes to a local function, its parameters and type parameters, as the following example shows:
 
 :::code language="csharp" source="snippets/local-functions/Program.cs" id="WithAttributes" :::
 

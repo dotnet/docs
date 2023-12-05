@@ -74,4 +74,17 @@ namespace Keywords
             Console.WriteLine(Origin);
         }
     }
+
+    // <SnippetReadonlyRefReadonly>
+    public struct ReadonlyRefReadonlyExample
+    {
+        private int _data;
+
+        public readonly ref readonly int ReadonlyRefReadonly(ref int reference)
+        {
+            // _data = 1; // Compile error if uncommented.
+            return ref reference;
+        }
+    }
+    // </SnippetReadonlyRefReadonly>
 }

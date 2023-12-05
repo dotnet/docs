@@ -8,7 +8,7 @@ public class GroupJoinsTest
     [Fact]
     public void GroupJoins1Test()
     {
-        var sw = InitTest();
+        StringWriter sw = InitTest();
 
         GroupJoins.GroupJoin1();
         Assert.Equal(
@@ -27,7 +27,7 @@ Arlene:
     [Fact]
     public void GroupJoinXmlTest()
     {
-        var sw = InitTest();
+        StringWriter sw = InitTest();
 
         GroupJoins.GroupJoinXml();
         Assert.Equal(

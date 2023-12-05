@@ -3,7 +3,7 @@ title: Install .NET on Debian
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Debian.
 author: adegeo
 ms.author: adegeo
-ms.date: 05/04/2023
+ms.date: 11/14/2023
 ---
 
 # Install the .NET SDK or the .NET Runtime on Debian
@@ -20,7 +20,8 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Debian  | .NET      |
 |---------|-----------|
-| 11      | 7, 6      |
+| 12      | 8, 7, 6   |
+| 11      | 8, 7, 6   |
 | 10      | 7, 6      |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
@@ -33,6 +34,18 @@ The following table is a list of currently supported .NET releases and the versi
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
+## Debian 12
+
+[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
+
+```bash
+wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
+
 ## Debian 11
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
@@ -43,7 +56,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
+[!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
 
 ## Debian 10
 
@@ -109,9 +122,16 @@ When you install with a package manager, these libraries are installed for you. 
 - libgssapi-krb5-2
 - libicu63 (for 10.x)
 - libicu67 (for 11.x)
+- libicu72 (for 12.x)
 - libssl1.1
 - libstdc++6
 - zlib1g
+
+Dependencies can be installed with the `apt install` command. The following snippet demonstrates installing the `libc6` library:
+
+```bash
+sudo apt install libc6
+```
 
 [!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
 

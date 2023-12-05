@@ -169,7 +169,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`-l|--logger <LOGGER>`**
 
-  Specifies a logger for test results and optionally switches for the logger. Specify this parameter multiple times to enable multiple loggers. For more information, see [Reporting test results](https://github.com/Microsoft/vstest-docs/blob/main/docs/report.md), [Switches for loggers](/visualstudio/msbuild/msbuild-command-line-reference#switches-for-loggers), and the [examples](#examples) later in this article.
+  Specifies a logger for test results and optionally switches for the logger. Specify this parameter multiple times to enable multiple loggers. For more information, see [Reporting test results](https://github.com/microsoft/vstest/blob/main/docs/report.md#available-test-loggers), [Switches for loggers](/visualstudio/msbuild/msbuild-command-line-reference#switches-for-loggers), and the [examples](#examples) later in this article.
   
   In order to pass command-line switches to the logger:
   
@@ -367,4 +367,4 @@ For more information and examples on how to use selective unit test filtering, s
 
 - [Frameworks and Targets](../../standard/frameworks.md)
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
-- [Passing runsettings arguments through commandline](https://github.com/Microsoft/vstest-docs/blob/main/docs/RunSettingsArguments.md)
+- [Passing runsettings arguments through commandline](https://github.com/microsoft/vstest/blob/main/docs/RunSettingsArguments.md)

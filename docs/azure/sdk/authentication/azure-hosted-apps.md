@@ -52,7 +52,6 @@ The output will look like the following.
   "type": "SystemAssigned",
   "userAssignedIdentities": null
 }
-
 ```
 
 The `principalId` value is the unique ID of the managed identity. Keep a copy of this output as you'll need these values in the next step.

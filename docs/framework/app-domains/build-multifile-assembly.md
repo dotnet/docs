@@ -95,7 +95,7 @@ This article explains how to create a multifile assembly and provides code that 
 
 3. Compile all other modules, using the necessary compiler options to indicate the other modules that are referenced in the code. This step uses the **/addmodule** compiler option.
 
-   In the following example, a code module called *Client* has an entry point `Main` method that references a method in the *Stringer.dll* module created in step 1.
+   In the following example, a code module called *Client* has an entry point `Main` method that references a method in the *Stringer.netmodule* module created in step 1.
 
    ```cpp
    #using "Stringer.netmodule"

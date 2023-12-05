@@ -25,10 +25,10 @@ The following C# expressions and statements support pattern matching:
 In those constructs, you can match an input expression against any of the following patterns:
 
 - [Declaration pattern](#declaration-and-type-patterns): to check the run-time type of an expression and, if a match succeeds, assign an expression result to a declared variable.
-- [Type pattern](#declaration-and-type-patterns): to check the run-time type of an expression. Introduced in C# 9.0.
+- [Type pattern](#declaration-and-type-patterns): to check the run-time type of an expression.
 - [Constant pattern](#constant-pattern): to test if an expression result equals a specified constant.
-- [Relational patterns](#relational-patterns): to compare an expression result with a specified constant. Introduced in C# 9.0.
-- [Logical patterns](#logical-patterns): to test if an expression matches a logical combination of patterns. Introduced in C# 9.0.
+- [Relational patterns](#relational-patterns): to compare an expression result with a specified constant.
+- [Logical patterns](#logical-patterns): to test if an expression matches a logical combination of patterns.
 - [Property pattern](#property-pattern): to test if an expression's properties or fields match nested patterns.
 - [Positional pattern](#positional-pattern): to deconstruct an expression result and test if the resulting values match nested patterns.
 - [`var` pattern](#var-pattern): to match any expression and assign its result to a declared variable.
@@ -67,7 +67,7 @@ If you want to check only the type of an expression, you can use a discard `_` i
 
 :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="DiscardVariable":::
 
-Beginning with C# 9.0, for that purpose you can use a *type pattern*, as the following example shows:
+For that purpose you can use a *type pattern*, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="TypePattern":::
 
@@ -103,7 +103,7 @@ Use a constant pattern to check for `null`, as the following example shows:
 
 The compiler guarantees that no user-overloaded equality operator `==` is invoked when expression `x is null` is evaluated.
 
-Beginning with C# 9.0, you can use a [negated](#logical-patterns) `null` constant pattern to check for non-null, as the following example shows:
+You can use a [negated](#logical-patterns) `null` constant pattern to check for non-null, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/ConstantPattern.cs" id="NonNullCheck":::
 
@@ -111,7 +111,7 @@ For more information, see the [Constant pattern](~/_csharplang/proposals/csharp-
 
 ## Relational patterns
 
-Beginning with C# 9.0, you use a *relational pattern* to compare an expression result with a constant, as the following example shows:
+You use a *relational pattern* to compare an expression result with a constant, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/RelationalPatterns.cs" id="BasicExample":::
 
@@ -127,7 +127,7 @@ For more information, see the [Relational patterns](~/_csharplang/proposals/csha
 
 ## Logical patterns
 
-Beginning with C# 9.0, you use the `not`, `and`, and `or` pattern combinators to create the following *logical patterns*:
+You use the `not`, `and`, and `or` pattern combinators to create the following *logical patterns*:
 
 - *Negation* `not` pattern that matches an expression when the negated pattern doesn't match the expression. The following example shows how you can negate a [constant](#constant-pattern) `null` pattern to check if an expression is non-null:
 
@@ -178,7 +178,7 @@ A property pattern is a recursive pattern. That is, you can use any pattern as a
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="RecursivePropertyPattern":::
 
-The preceding example uses two features available in C# 9.0 and later: `or` [pattern combinator](#logical-patterns) and [record types](../builtin-types/record.md).
+The preceding example uses the `or` [pattern combinator](#logical-patterns) and [record types](../builtin-types/record.md).
 
 Beginning with C# 10, you can reference nested properties or fields within a property pattern. This capability is known as an *extended property pattern*. For example, you can refactor the method from the preceding example into the following equivalent code:
 
@@ -199,7 +199,7 @@ At the preceding example, the type of an expression contains the [Deconstruct](.
 
 :::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="MatchTuple":::
 
-The preceding example uses [relational](#relational-patterns) and [logical](#logical-patterns) patterns, which are available in C# 9.0 and later.
+The preceding example uses [relational](#relational-patterns) and [logical](#logical-patterns) patterns.
 
 You can use the names of tuple elements and `Deconstruct` parameters in a positional pattern, as the following example shows:
 
@@ -255,7 +255,7 @@ For more information, see the [Discard pattern](~/_csharplang/proposals/csharp-8
 
 ## Parenthesized pattern
 
-Beginning with C# 9.0, you can put parentheses around any pattern. Typically, you do that to emphasize or change the precedence in [logical patterns](#logical-patterns), as the following example shows:
+You can put parentheses around any pattern. Typically, you do that to emphasize or change the precedence in [logical patterns](#logical-patterns), as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="ChangedPrecedence":::
 
@@ -287,8 +287,8 @@ For more information, see the [Patterns and pattern matching](~/_csharpstandard/
 
 For information about features added in C# 8 and later, see the following feature proposal notes:
 
-- [C# 8 - Recursive pattern matching](~/_csharplang/proposals/csharp-8.0/patterns.md)
-- [C# 9 - Pattern-matching updates](~/_csharplang/proposals/csharp-9.0/patterns3.md)
+- [Recursive pattern matching](~/_csharplang/proposals/csharp-8.0/patterns.md)
+- [Pattern-matching updates](~/_csharplang/proposals/csharp-9.0/patterns3.md)
 - [C# 10 - Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
 - [C# 11 - List patterns](~/_csharplang/proposals/csharp-11.0/list-patterns.md)
 - [C# 11 - Pattern match `Span<char>` on string literal](~/_csharplang/proposals/csharp-11.0/pattern-match-span-of-char-on-string.md)

@@ -24,7 +24,7 @@ You can use an [object or collection initializer](../../programming-guide/classe
 
 ### Target-typed `new`
 
-Beginning with C# 9.0, constructor invocation expressions are target-typed. That is, if a target type of an expression is known, you can omit a type name, as the following example shows:
+Constructor invocation expressions are target-typed. That is, if a target type of an expression is known, you can omit a type name, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/NewOperator.cs" id="SnippetTargetTyped":::
 
@@ -42,7 +42,7 @@ Use array initialization syntax to create an array instance and populate it with
 
 [!code-csharp-interactive[initialize array](snippets/shared/NewOperator.cs#ArrayInitialization)]
 
-For more information about arrays, see [Arrays](../../programming-guide/arrays/index.md).
+For more information about arrays, see [Arrays](../builtin-types/arrays.md).
 
 ## Instantiation of anonymous types
 

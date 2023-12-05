@@ -1,6 +1,5 @@
-﻿using SolarSystem;
-
-Program.DistinctByExample();
-Program.ExceptByExample();
-Program.IntersectByExample();
-Program.UnionByExample();
+﻿
+SolarSystem.Program.DistinctByExample();
+SolarSystem.Program.ExceptByExample();
+SolarSystem.Program.IntersectByExample();
+SolarSystem.Program.UnionByExample();

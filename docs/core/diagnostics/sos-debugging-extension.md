@@ -1,7 +1,7 @@
 ---
-title: "SOS Debugging Extension for .NET"
+title: "SOS debugging extension for .NET"
 description: Learn about the SOS debugging extension for .NET, which provides information about the internal CLR environment.
-ms.date: "12/21/2020"
+ms.date: 09/11/2023
 ms.topic: reference
 helpviewer_keywords:
   - "debugging extensions"
@@ -11,7 +11,7 @@ helpviewer_keywords:
 
 # SOS debugging extension
 
-The SOS Debugging Extension lets you view information about code that is running inside the .NET Core runtime, both on live processes and dumps. The extension is preinstalled with [dotnet-dump](dotnet-dump.md) and [Windbg/dbg](/windows-hardware/drivers/debugger/debugger-download-tools), and can be [downloaded](dotnet-sos.md) for use with LLDB. You can use the SOS Debugging Extension to:
+The SOS debugging extension lets you view information about code that's running inside the .NET runtime, both on live processes and dumps. The extension is preinstalled with [dotnet-dump](dotnet-dump.md) and [Windbg/dbg](/windows-hardware/drivers/debugger/debugger-download-tools), and can be [downloaded](dotnet-sos.md) for use with LLDB. You can use the SOS debugging extension to:
 
 - Collect information about the managed heap.
 - Look for heap corruptions.
@@ -20,17 +20,11 @@ The SOS Debugging Extension lets you view information about code that is running
 
 ## Syntax
 
-### Windows
+On Windows: `![command] [options]`
 
-`![command] [options]`
+On Linux and macOS: `sos [command] [options]`
 
-### Linux and macOS
-
-`sos [command] [options]`
-
-Many of the commands have aliases or shortcuts under lldb:
-
-`clrstack [options]`
+Many of the commands have aliases or shortcuts under lldb: `clrstack [options]`
 
 ## Commands
 
@@ -39,13 +33,13 @@ The following table of commands is also available under **Help** or **soshelp**.
 | Command | Description |
 |-------------|-----------------|
 | **bpmd** [**-nofuturemodule**] [\<*module name*> \<*method name*>] [**-md** <`MethodDesc`>] **-list** **-clear** \<*pending breakpoint number*> **-clearall** | Creates a breakpoint at the specified method in the specified module.<br /><br /> If the specified module and method have not been loaded, this command waits for a notification that the module was loaded and just-in-time (JIT) compiled before creating a breakpoint.<br /><br /> You can manage the list of pending breakpoints by using the **-list**, **-clear**, and **-clearall** options:<br /><br /> The **-list** option generates a list of all the pending breakpoints. If a pending breakpoint has a non-zero module ID, that breakpoint is specific to a function in that particular loaded module. If the pending breakpoint has a zero module ID, that breakpoint applies to modules that have not yet been loaded.<br /><br /> Use the **-clear** or **-clearall** option to remove pending breakpoints from the list. |
-| **CLRStack** [**-a**] [**-l**] [**-p**] [**-n**] [**-f**] [**-r**] [**-all**] | Provides a stack trace of managed code only.<br /><br /> The **-p** option shows arguments to the managed function.<br /><br /> The **-l** option shows information on local variables in a frame. The SOS Debugging Extension cannot retrieve local names, so the output for local names is in the format \<*local address*> **=** \<*value*>.<br /><br /> The **-a** option is a shortcut for **-l** and **-p** combined.<br /><br /> The **-n** option disables the display of source file names and line numbers. If the debugger has the option SYMOPT_LOAD_LINES specified, SOS will look up the symbols for every managed frame and if successful will display the corresponding source file name and line number. The **-n** (No line numbers) parameter can be specified to disable this behavior.<br /><br />The **-f** option (full mode) displays the native frames intermixing them with the managed frames and the assembly name and function offset for the managed frames.  This option does not display native frames when used with `dotnet-dump`.<br /><br />The **-r** option dumps the registers for each stack frame.<br /><br />The **-all** option dumps all the managed threads' stacks. |
+| **CLRStack** [**-a**] [**-l**] [**-p**] [**-n**] [**-f**] [**-r**] [**-all**] | Provides a stack trace of managed code only.<br /><br /> The **-p** option shows arguments to the managed function.<br /><br /> The **-l** option shows information on local variables in a frame. The SOS debugging extension cannot retrieve local names, so the output for local names is in the format \<*local address*> **=** \<*value*>.<br /><br /> The **-a** option is a shortcut for **-l** and **-p** combined.<br /><br /> The **-n** option disables the display of source file names and line numbers. If the debugger has the option SYMOPT_LOAD_LINES specified, SOS will look up the symbols for every managed frame and if successful will display the corresponding source file name and line number. The **-n** (No line numbers) parameter can be specified to disable this behavior.<br /><br />The **-f** option (full mode) displays the native frames intermixing them with the managed frames and the assembly name and function offset for the managed frames.  This option does not display native frames when used with `dotnet-dump`.<br /><br />The **-r** option dumps the registers for each stack frame.<br /><br />The **-all** option dumps all the managed threads' stacks. |
 | **COMState** | Lists the COM apartment model for each thread and a `Context` pointer, if available. This command is only supported on Windows. |
 | **DumpArray** [**-start** \<*startIndex*>] [**-length** \<*length*>] [**-details**] [**-nofields**] \<*array object address*><br /><br /> -or-<br /><br /> **DA** [**-start** \<*startIndex*>] [**-length** \<*length*>] [**-details**] [**-nofields**] *array object address*> | Examines elements of an array object.<br /><br /> The **-start** option specifies the starting index at which to display elements.<br /><br /> The **-length** option specifies how many elements to show.<br /><br /> The **-details** option displays details of the element using the **DumpObj** and **DumpVC** formats.<br /><br /> The **-nofields** option prevents arrays from displaying. This option is available only when the **-details** option is specified. |
 | **DumpAsync** (**dumpasync**) [**-mt** \<*MethodTable address*>] [**-type** \<*partial type name*>] [**-waiting**] [**-roots**] | DumpAsync traverses the garbage collected heap and looks for objects representing async state machines as created when an async method's state is transferred to the heap.  This command recognizes async state machines defined as `async void`, `async Task`, `async Task<T>`, `async ValueTask`, and `async ValueTask<T>`.<br /><br />The output includes a block of details for each async state machine object found. These details include:<br />- A line for the type of the async state machine object, including its MethodTable address, its object address, its size, and its type name.<br />- A line for the state machine type name as contained in the object.<br />- A listing of each field on the state machine.<br />- A line for a continuation from this state machine object, if one or more has been registered.<br />- Discovered GC roots for this async state machine object. |
 | **DumpAssembly** \<*assembly address*> | Displays information about an assembly.<br /><br /> The **DumpAssembly** command lists multiple modules, if they exist.<br /><br /> You can get an assembly address by using the **DumpDomain** command. |
 | **DumpClass** \<*EEClass address*> | Displays information about the `EEClass` structure associated with a type.<br /><br /> The **DumpClass** command displays static field values but does not display nonstatic field values.<br /><br /> Use the **DumpMT**, **DumpObj**, **Name2EE**, or **Token2EE** command to get an `EEClass` structure address. |
-| **DumpDomain** [\<*domain address*>] | Enumerates each <xref:System.Reflection.Assembly> object that is loaded within the specified <xref:System.AppDomain> object address.  When called with no parameters, the **DumpDomain** command lists all <xref:System.AppDomain> objects in a process. Since .NET Core only has one <xref:System.AppDomain>, **DumpDomain** will only return one object. |
+| **DumpDomain** [\<*domain address*>] | Enumerates each <xref:System.Reflection.Assembly> object that's loaded within the specified <xref:System.AppDomain> object address.  When called with no parameters, the **DumpDomain** command lists all <xref:System.AppDomain> objects in a process. Since .NET (Core) only has one <xref:System.AppDomain>, **DumpDomain** only returns one object. |
 | **DumpHeap** [**-stat**] [**-strings**] [**-short**] [**-min** \<*size*>] [**-max** \<*size*>] [**-thinlock**] [**-startAtLowerBound**] [**-mt** \<*MethodTable address*>] [**-type** \<*partial type name*>] [*start* [*end*]] | Displays information about the garbage-collected heap and collection statistics about objects.<br /><br /> The **DumpHeap** command displays a warning if it detects excessive fragmentation in the garbage collector heap.<br /><br /> The **-stat** option restricts the output to the statistical type summary.<br /><br /> The **-strings** option restricts the output to a statistical string value summary.<br /><br /> The **-short** option limits output to just the address of each object. This lets you easily pipe output from the command to another debugger command for automation.<br /><br /> The **-min** option ignores objects that are less than the `size` parameter, specified in bytes.<br /><br /> The **-max** option ignores objects that are larger than the `size` parameter, specified in bytes.<br /><br /> The **-thinlock** option reports ThinLocks.  For more information, see the **SyncBlk** command.<br /><br /> The `-startAtLowerBound` option forces the heap walk to begin at the lower bound of a supplied address range. During the planning phase, the heap is often not walkable because objects are being moved. This option forces **DumpHeap** to begin its walk at the specified lower bound. You must supply the address of a valid object as the lower bound for this option to work. You can display memory at the address of a bad object to manually find the next method table. If the garbage collection is currently in a call to `memcopy`, you may also be able to find the address of the next object by adding the size to the start address, which is supplied as a parameter.<br /><br /> The **-mt** option lists only those objects that correspond to the specified `MethodTable` structure.<br /><br />The **-type** option lists only those objects whose type name is a substring match of the specified string.<br /><br />The `start` parameter begins listing from the specified address.<br /><br />The `end` parameter stops listing at the specified address. |
 | **DumpIL** \<*Managed DynamicMethod object*> &#124;       \<*DynamicMethodDesc pointer*> &#124;        \<*MethodDesc pointer*> | Displays the Microsoft intermediate language (MSIL) that is associated with a managed method.<br /><br /> Dynamic MSIL is emitted differently than MSIL that's loaded from an assembly. Dynamic MSIL refers to objects in a managed object array rather than to metadata tokens. |
 | **DumpLog** [**-addr** \<*addressOfStressLog*>] [<*Filename*>] | Writes the contents of an in-memory stress log to the specified file. If you do not specify a name, this command creates a file called StressLog.txt in the current directory.<br /><br /> The in-memory stress log helps you diagnose stress failures without using locks or I/O. To enable the stress log, set the following registry keys under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework:<br /><br /> (DWORD) StressLog = 1<br /><br /> (DWORD) LogFacility = 0xffffffff<br /><br /> (DWORD) StressLogSize = 65536<br /><br /> The optional `-addr` option lets you specify a stress log other than the default log. |
@@ -87,8 +81,8 @@ The following table of commands is also available under **Help** or **soshelp**.
 | **ProcInfo** [**-env**] [**-time**] [**-mem**] | Displays environment variables for the process, kernel CPU time, and memory usage statistics. Only supported with Windbg. |
 | **RCWCleanupList** \<*RCWCleanupList address*> | Displays the list of runtime callable wrappers at the specified address that are awaiting cleanup. Only supported with Windbg. |
 | **SaveModule** \<*Base address*> \<*Filename*> | Writes an image, which is loaded in memory at the specified address, to the specified file. Only supported with Windbg. |
-| **SetHostRuntime** [\<runtime-directory\>] | This command sets the path to the .NET Core runtime to use to host the managed code that runs as part of SOS in the debugger (lldb). The runtime needs to be at least version 2.1.0 or greater. If there are spaces in directory, it needs to be single-quoted (').<br/><br/>Normally, SOS attempts to find an installed .NET Core runtime to run its managed code automatically but this command is available if it fails. The default is to use the same runtime (libcoreclr) being debugged. Use this command if the default runtime being debugged isn't working enough to run the SOS code or if the version is less than 2.1.0.<br/><br/>If you received the following error message when running a SOS command, use this command to set the path to 2.1.0 or greater .NET Core runtime. <br/><br/>`(lldb) clrstack`<br/>`Error: Fail to initialize CoreCLR 80004005 ClrStack failed`<br/><br/>`(lldb) sethostruntime /usr/share/dotnet/shared/Microsoft.NETCore.App/2.1.6`<br/><br/>You can use the "dotnet --info" in a command shell to find the path of an installed .NET Core runtime. |
-| **SetSymbolServer** [**-ms**] [**-disable**] [**-log**] [**-loadsymbols**] [**-cache** \<cache-path>] [**-directory** \<search-directory>] [**-sympath** \<windows-symbol-path>] [\<symbol-server-URL>] | Enables the symbol server downloading support.<br/><br/>The **-ms** option enables downloading from the public Microsoft symbol server.<br/><br/>The **-disable** option turns on the symbol download support.<br/><br/>The **-cache** \<cache-path> option specifies a symbol cache directory. The default is $HOME/.dotnet/symbolcache if not specified.<br/><br/>The **-directory** option adds a path to search for symbols. Can be more than one.<br/><br/>The **-sympath** option adds server, cache, and directory paths in the Windows symbol path format.<br/><br/>The **-log** option enables symbol download logging.<br/><br/>The **-loadsymbols** option attempts to download the native .NET Core symbols for the runtime. Supported on lldb and dotnet-dump. |
+| **SetHostRuntime** [\<runtime-directory\>] | This command sets the path to the .NET runtime to use to host the managed code that runs as part of SOS in the debugger (lldb). The runtime needs to be at least version 2.1.0 or greater. If there are spaces in directory, it needs to be single-quoted (').<br/><br/>Normally, SOS attempts to find an installed .NET runtime to run its managed code automatically but this command is available if it fails. The default is to use the same runtime (libcoreclr) being debugged. Use this command if the default runtime being debugged isn't working enough to run the SOS code or if the version is less than 2.1.0.<br/><br/>If you received the following error message when running a SOS command, use this command to set the path to 2.1.0 or greater .NET runtime. <br/><br/>`(lldb) clrstack`<br/>`Error: Fail to initialize CoreCLR 80004005 ClrStack failed`<br/><br/>`(lldb) sethostruntime /usr/share/dotnet/shared/Microsoft.NETCore.App/2.1.6`<br/><br/>You can use the "dotnet --info" in a command shell to find the path of an installed .NET runtime. |
+| **SetSymbolServer** [**-ms**] [**-disable**] [**-log**] [**-loadsymbols**] [**-cache** \<cache-path>] [**-directory** \<search-directory>] [**-sympath** \<windows-symbol-path>] [\<symbol-server-URL>] | Enables the symbol server downloading support.<br/><br/>The **-ms** option enables downloading from the public Microsoft symbol server.<br/><br/>The **-disable** option turns on the symbol download support.<br/><br/>The **-cache** \<cache-path> option specifies a symbol cache directory. The default is $HOME/.dotnet/symbolcache if not specified.<br/><br/>The **-directory** option adds a path to search for symbols. Can be more than one.<br/><br/>The **-sympath** option adds server, cache, and directory paths in the Windows symbol path format.<br/><br/>The **-log** option enables symbol download logging.<br/><br/>The **-loadsymbols** option attempts to download the native .NET symbols for the runtime. Supported on lldb and dotnet-dump. |
 | **SOSFlush** | Flushes an internal SOS cache. |
 | **SOSStatus** [**-reset**] | Displays internal SOS status or reset the internal cached state. |
 | **StopOnException** [**-derived**] [**-create** &#124; **-create2**] \<*Exception*> \<*Pseudo-register number*> | Causes the debugger to stop when the specified exception is thrown, but to continue running when other exceptions are thrown.<br /><br /> The **-derived** option catches the specified exception and every exception that derives from the specified exception. <br /><br /> Only supported with Windbg. |
@@ -109,9 +103,9 @@ For a list of available SOS commands with `dotnet-dump analyze`, see [dotnet-dum
 
 ### Windows Debugger
 
-You can also use the SOS Debugging Extension by loading it into the [WinDbg/dbg debugger](/windows-hardware/drivers/debugger/debugger-download-tools) and executing commands within the Windows debugger.  SOS commands can be used on live processes or dumps.
+You can also use the SOS debugging extension by loading it into the [WinDbg/dbg debugger](/windows-hardware/drivers/debugger/debugger-download-tools) and executing commands within the Windows debugger. SOS commands can be used on live processes or dumps.
 
-Windbg should load the SOS extension automatically whenever the process being debugged contains the .NET Core runtime (coreclr.dll or libcoreclr.so).
+Windbg should load the SOS extension automatically whenever the process being debugged contains the .NET runtime (coreclr.dll or libcoreclr.so).
 
 ### LLDB Debugger
 
@@ -173,7 +167,7 @@ By default you can reach all the SOS commands by entering: `sos [command_name]`.
 |    `histstats`                        | Displays stress log stats.
 |    `ip2md`                            | Displays the `MethodDesc` structure at the specified address in code that has been JIT-compiled.
 |    `listnearobj`                      | Displays the object preceding and succeeding the specified address.
-|    `loadsymbols`                      | Loads the .NET Core native module symbols.
+|    `loadsymbols`                      | Loads the .NET native module symbols.
 |    `logging`                          | Enables/disables internal SOS logging.
 |    `name2ee`                          | Displays the `MethodTable` and `EEClass` structures for the specified type or method in the specified module.
 |    `objsize`                          | Displays the size of the specified object.
@@ -184,7 +178,7 @@ By default you can reach all the SOS commands by entering: `sos [command_name]`.
 |    `runtimes`                         | Lists the runtimes in the target or change the default runtime.
 |    `stoponcatch`                      | Target process will break the next time a managed exception is caught during execution.
 |    `setclrpath`                       | Sets the path to load coreclr dac/dbi files. `setclrpath <path>`.
-|    `sethostruntime`                   | Sets or displays the .NET Core runtime directory to use to run managed code in SOS.
+|    `sethostruntime`                   | Sets or displays the .NET runtime directory to use to run managed code in SOS.
 |    `setsymbolserver`                  | Enables the symbol server support.
 |    `setsostid`                        | Sets the current OS tid/thread index instead of using the one lldb provides. `setsostid <tid> <index>`.
 |    `sos`                              | Executes various coreclr debugging commands. Use the syntax `sos <command-name> <args>`. For more information, see 'soshelp'.
@@ -204,7 +198,7 @@ By default you can reach all the SOS commands by entering: `sos [command_name]`.
 
 | Command  | Description
 | - | -
-| `!dumparray -start 2 -length 5 -details 00ad28d0` | Displays the contents of an array at the address `00ad28d0`.  The display starts from the second element and continues for five elements.
+| `!dumparray -start 2 -length 5 -details 00ad28d0` | Displays the contents of an array at the address `00ad28d0`. The display starts from the second element and continues for five elements.
 | `!dumpassembly 1ca248` | Displays the contents of an assembly at the address `1ca248`.
 | `!dumpheap` | Displays information about the garbage collector heap.
 | `!DumpLog` | Writes the contents of the in-memory stress log to a (default) file called StressLog.txt in the current directory.
@@ -241,7 +235,7 @@ By default you can reach all the SOS commands by entering: `sos [command_name]`.
 ## See also
 
 - [An introduction to dumps in .NET](dumps.md)
-- [Learn how to debug a memory leak in .NET Core](debug-memory-leak.md)
+- [Learn how to debug a memory leak in .NET](debug-memory-leak.md)
 - [Collecting and analyzing memory dumps blog](https://devblogs.microsoft.com/dotnet/collecting-and-analyzing-memory-dumps/)
 - [Dump analysis tool (dotnet-dump)](dotnet-dump.md)
 - [SOS Installation Tool (dotnet-sos)](dotnet-sos.md)

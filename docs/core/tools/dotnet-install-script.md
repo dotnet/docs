@@ -19,7 +19,7 @@ dotnet-install.ps1 [-Architecture <ARCHITECTURE>] [-AzureFeed]
     [-InstallDir <DIRECTORY>] [-JSonFile <JSONFILE>]
     [-NoCdn] [-NoPath] [-ProxyAddress] [-ProxyBypassList <LIST_OF_URLS>]
     [-ProxyUseDefaultCredentials] [-Quality <QUALITY>] [-Runtime <RUNTIME>]
-    [-SkipNonVersionedFiles] [-UncachedFeed] [-Verbose]
+    [-SkipNonVersionedFiles] [-UncachedFeed] [-KeepZip] [-ZipPath <PATH>] [-Verbose]
     [-Version <VERSION>]
 
 Get-Help ./dotnet-install.ps1
@@ -33,7 +33,7 @@ dotnet-install.sh  [--architecture <ARCHITECTURE>] [--azure-feed]
     [--install-dir <DIRECTORY>] [--jsonfile <JSONFILE>]
     [--no-cdn] [--no-path] [--quality <QUALITY>]
     [--runtime <RUNTIME>] [--runtime-id <RID>]
-    [--skip-non-versioned-files] [--uncached-feed] [--verbose]
+    [--skip-non-versioned-files] [--uncached-feed] [--keep-zip] [--zip-path <PATH>] [--verbose]
     [--version <VERSION>]
 
 dotnet-install.sh --help
@@ -71,6 +71,8 @@ We recommend that you use the stable version of the scripts:
 
 - Bash (Linux/macOS): <https://dot.net/v1/dotnet-install.sh>
 - PowerShell (Windows): <https://dot.net/v1/dotnet-install.ps1>
+
+The source for the scripts is in the [dotnet/install-scripts](https://github.com/dotnet/install-scripts) GitHub repository.
 
 ### Script behavior
 
@@ -183,7 +185,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`--os <OPERATING_SYSTEM>`**
 
-  Specifies the operating system for which the tools are being installed. Possible values are: `osx`, `linux`, `linux-musl`, `freebsd`.
+  Specifies the operating system for which the tools are being installed. Possible values are: `osx`, `macos`, `linux`, `linux-musl`, `freebsd`.
 
   The parameter is optional and should only be used when it's required to override the operating system that is detected by the script.
 
@@ -201,6 +203,14 @@ The install scripts do not update the registry on Windows. They just download th
 - **`-UncachedFeed|--uncached-feed`**
 
   For internal use only. Allows using a different storage to download SDK archives from. This parameter is only used if --no-cdn is true.
+
+- **`-KeepZip|--keep-zip`**
+
+  If set, the downloaded SDK archive is kept after installation.
+
+- **`-ZipPath|--zip-path <PATH>`**
+
+ If set, the downloaded SDK archive is stored at the specified path.
 
 - **`-Verbose|--verbose`**
 
@@ -304,6 +314,62 @@ Manually installing .NET doesn't add the environment variables system-wide, and 
 ## Uninstall
 
 There is no uninstall script. For information about manually uninstalling .NET, see [How to remove the .NET Runtime and SDK](../install/remove-runtime-sdk-versions.md#scripted-or-manual).
+
+## Signature validation of dotnet-install.sh
+
+Signature validation is an important security measure that helps ensure the authenticity and integrity of a script. By verifying the signature of a script, you can be sure that it has not been tampered with and that it comes from a trusted source.
+
+Here is a step-by-step guide on how to verify the authenticity of the `dotnet-install.sh` script using GPG:
+
+1. **Install GPG**: GPG (GNU Privacy Guard) is a free and open-source tool for encrypting and signing data. You can install it by following the [instructions on the GPG website](https://gnupg.org/download/).
+2. **Import our public key**: Download the install-scripts [public key](https://dot.net/v1/dotnet-install.asc) file, and then import it into your GPG keyring by running the command `gpg --import dotnet-install.asc`.
+3. **Download the signature file**: The signature file for our bash script is available at `https://dot.net/v1/dotnet-install.sig`. You can download it using a tool like `wget` or `curl`.
+4. **Verify the signature**: To verify the signature of our bash script, run the command `gpg --verify dotnet-install.sig dotnet-install.sh`. This will check the signature of the `dotnet-install.sh` file against the signature in the `dotnet-install.sig` file.
+5. **Check the result**: If the signature is valid, you will see a message containing `Good signature from "Microsoft DevUXTeamPrague <devuxteamprague@microsoft.com>"`. This means that the script has not been tampered with and can be trusted.
+
+### Preparing environment
+
+Installing GPG and importing our public key is a one time operation.
+
+```bash
+sudo apt install gpg
+wget https://dot.net/v1/dotnet-install.asc
+gpg --import dotnet-install.asc
+```
+
+When successful, you should see output like the following:
+
+```
+gpg: directory '/home/<user>/.gnupg' created
+gpg: keybox '/home/<user>/.gnupg/pubring.kbx' created
+gpg: /home/<user>/.gnupg/trustdb.gpg: trustdb created
+gpg: key B9CF1A51FC7D3ACF: public key "Microsoft DevUXTeamPrague <devuxteamprague@microsoft.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+```
+
+### Download and verification
+
+With the key imported, you can now download the script and the signature, then verify the script matches the signature:
+
+```bash
+wget https://dot.net/v1/dotnet-install.sh
+wget https://dot.net/v1/dotnet-install.sig
+gpg --verify dotnet-install.sig dotnet-install.sh
+```
+
+When successful, you should see output like the following:
+
+```
+gpg: Signature made <datetime>
+gpg:                using RSA key B9CF1A51FC7D3ACF
+gpg: Good signature from "Microsoft DevUXTeamPrague <devuxteamprague@microsoft.com>" [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 2B93 0AB1 228D 11D5 D7F6  B6AC B9CF 1A51 FC7D 3ACF
+```
+
+The warning means that you don't trust the public key in the keyring, but the script is still verified. The exit code returned by the verification command should be `0`, indicating success.
 
 ## See also
 

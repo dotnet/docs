@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Office Programming - C#"
-description: Learn about the features Visual Studio offers that improve Microsoft Office programming. 
+description: Learn about the features Visual Studio offers that improve Microsoft Office programming.
 ms.date: 02/15/2023
 ms.topic: tutorial
 dev_langs:
@@ -124,6 +124,7 @@ In Visual Studio, select **Clean Solution** on the **Build** menu. Otherwise, th
 
 - [Auto-Implemented Properties (C#)](../../programming-guide/classes-and-structs/auto-implemented-properties.md)
 - [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)
+- [Visual Studio Tools for Office (VSTO)](/visualstudio/vsto/visual-studio-tools-for-office-runtime-overview)
 - [Named and Optional Arguments](../../programming-guide/classes-and-structs/named-and-optional-arguments.md)
 - [dynamic](../../language-reference/builtin-types/reference-types.md)
 - [Using Type dynamic](using-type-dynamic.md)

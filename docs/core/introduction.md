@@ -1,9 +1,8 @@
 ---
 title: .NET (and .NET Core) - introduction and overview
 description: Learn about .NET (and .NET Core). .NET is a free, open-source development platform for building many kinds of apps.
-ms.date: 03/24/2023
+ms.date: 11/15/2023
 ms.custom: "updateeachrelease"
-recommendations: false
 ---
 # What is .NET? Introduction and overview
 
@@ -12,6 +11,7 @@ recommendations: false
 **Cloud apps**
 
 * [Cloud native apps](../architecture/cloud-native/index.md)
+* [.NET Aspire](/dotnet/aspire)
 * [Console apps](tutorials/with-visual-studio-code.md)
 * [Serverless functions in the cloud](/azure/azure-functions/functions-create-first-function-vs-code?pivots=programming-language-csharp)
 * [Web apps, web APIs, and microservices](/aspnet/core/introduction-to-aspnet-core#recommended-learning-path)
@@ -66,7 +66,7 @@ Project file:
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 </Project>
 ```
@@ -220,7 +220,7 @@ Apps can be [deployed in containers](docker/introduction.md). Microsoft provides
 
 In 2002, Microsoft released [.NET Framework](../framework/get-started/overview.md), a development platform for creating Windows apps. Today .NET Framework is at version 4.8 and remains [fully supported by Microsoft](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework).
 
-In 2014, Microsoft introduced .NET Core as a cross-platform, open-source successor to .NET Framework. This new [implementation of .NET](../standard/glossary.md#implementation-of-net) kept the name .NET Core through version 3.1. The next version after .NET Core 3.1 was named .NET 5.
+In 2014, Microsoft introduced .NET Core as a cross-platform, open-source successor to .NET Framework. This new [implementation of .NET](../standard/glossary.md#implementation-of-net) kept the name .NET Core through version 3.1. The next version after .NET Core 3.1 dropped the "Core" part of the name and was named .NET 5.
 
 New .NET versions continue to be released annually, each a major version number higher. They include significant new features and often enable new scenarios.
 

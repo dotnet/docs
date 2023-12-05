@@ -172,9 +172,9 @@ namespace Coding_Conventions_Examples
             Console.Write("Enter a divisor: ");
             int divisor = Convert.ToInt32(Console.ReadLine());
 
-            if ((divisor != 0) && (dividend / divisor > 0))
+            if ((divisor != 0) && (dividend / divisor) is var result)
             {
-                Console.WriteLine("Quotient: {0}", dividend / divisor);
+                Console.WriteLine("Quotient: {0}", result);
             }
             else
             {

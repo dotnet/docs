@@ -65,7 +65,7 @@ Executables are generated in these folders for each globally installed tool, alt
 
 ### `--tool-path` tools
 
-Local tools with explicit tool paths are stored wherever you specified the `--tool-path` parameter to point to. They're stored in the same way as global tools: an executable binary with the actual binaries in a sibling `.store` directory.
+Tools with explicit tool paths are stored wherever you specified the `--tool-path` parameter to point to. They're stored in the same way as global tools: an executable binary with the actual binaries in a sibling `.store` directory.
 
 ### Local tools
 
@@ -97,7 +97,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 - **`--create-manifest-if-needed`**
 
-  Applies to local tools. To find a manifest, the search algorithm searches up the directory tree for `dotnet-tools.json` or a `.config` folder that contains a `dotnet-tools.json` file.
+  Applies to local tools. Available starting with .NET 8 SDK. To find a manifest, the search algorithm searches up the directory tree for `dotnet-tools.json` or a `.config` folder that contains a `dotnet-tools.json` file.
 
   If a tool-manifest can't be found and the `--create-manifest-if-needed` option is set to false, the `CannotFindAManifestFile` error occurs.
 

@@ -1,8 +1,7 @@
 ---
 title: Compilation config settings
-description: Learn about run-time settings that configure how the JIT compiler works for .NET Core apps.
+description: Learn about run-time settings that configure how the JIT compiler works for .NET apps.
 ms.date: 10/29/2021
-ms.topic: reference
 ---
 # Runtime configuration options for compilation
 
@@ -35,6 +34,16 @@ This article details the settings you can use to configure .NET compilation.
       "configProperties": {
          "System.Runtime.TieredCompilation": false
       }
+   }
+}
+```
+
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Runtime.TieredCompilation": false
    }
 }
 ```
@@ -79,6 +88,16 @@ Project file:
 }
 ```
 
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Runtime.TieredCompilation.QuickJit": false
+   }
+}
+```
+
 Project file:
 
 ```xml
@@ -114,6 +133,16 @@ Project file:
       "configProperties": {
          "System.Runtime.TieredCompilation.QuickJitForLoops": false
       }
+   }
+}
+```
+
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Runtime.TieredCompilation.QuickJitForLoops": false
    }
 }
 ```

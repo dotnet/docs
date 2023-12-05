@@ -186,7 +186,7 @@ For more information on required members, See the [init-only](../properties.md#i
 
 You can declare `ref` fields inside a [`ref struct`](../language-reference/builtin-types/ref-struct.md). This supports types such as <xref:System.Span%601?displayProperty=nameWithType> without special attributes or hidden internal types.
 
-You can add the [`scoped`](../language-reference/statements/declarations.md#scoped-ref) modifier to any `ref` declaration. This limits the [scope](../language-reference/keywords/method-parameters.md#scope-of-references-and-values) where the reference can escape to.
+You can add the [`scoped`](../language-reference/statements/declarations.md#scoped-ref) modifier to any `ref` declaration. This limits the [scope](../language-reference/keywords/method-parameters.md#safe-context-of-references-and-values) where the reference can escape to.
 
 ## File local types
 

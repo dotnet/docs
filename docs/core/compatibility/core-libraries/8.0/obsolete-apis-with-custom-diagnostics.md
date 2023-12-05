@@ -2,7 +2,7 @@
 title: "Breaking change: .NET 8 obsoletions with custom IDs"
 titleSuffix: ""
 description: Learn about the .NET 8 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
-ms.date: 06/08/2023
+ms.date: 10/09/2023
 ---
 # API obsoletions with non-default diagnostic IDs (.NET 8)
 
@@ -15,10 +15,13 @@ In previous .NET versions, these APIs can be used without any build warning. In 
 The following table lists the custom diagnostic IDs and their corresponding warning messages for obsoleted APIs.
 
 | Diagnostic ID | Description | Severity |
-| - | - |
+| - | - | - |
+| [SYSLIB0011](../../../../fundamentals/syslib-diagnostics/syslib0011.md) | BinaryFormatter serialization is obsolete | Warning/error |
 | [SYSLIB0048](../../../../fundamentals/syslib-diagnostics/syslib0048.md) | <xref:System.Security.Cryptography.RSA.EncryptValue(System.Byte[])?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.DecryptValue(System.Byte[])?displayProperty=nameWithType> are obsolete. Use <xref:System.Security.Cryptography.RSA.Encrypt%2A?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.Decrypt%2A?displayProperty=nameWithType> instead. | Warning |
+| [SYSLIB0049](../../../../fundamentals/syslib-diagnostics/syslib0049.md) | JsonSerializerOptions.AddContext is obsolete. To register a JsonSerializerContext, use either the TypeInfoResolver or TypeInfoResolverChain property. | Warning |
 | [SYSLIB0050](../../../../fundamentals/syslib-diagnostics/syslib0050.md) | Formatter-based serialization is obsolete and should not be used. | Warning |
 | [SYSLIB0051](../../../../fundamentals/syslib-diagnostics/syslib0051.md) | APIs that support obsolete formatter-based serialization are obsolete. They should not be called or extended by application code. | Warning |
+| [SYSLIB0052](../../../../fundamentals/syslib-diagnostics/syslib0052.md) | APIs that support obsolete mechanisms for Regex extensibility are obsolete. | Warning |
 | [SYSLIB0053](../../../../fundamentals/syslib-diagnostics/syslib0053.md) | <xref:System.Security.Cryptography.AesGcm> should indicate the required tag size for encryption and decryption. Use a constructor that accepts the tag size. | Warning |
 
 ## Version introduced
@@ -37,12 +40,23 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 
 ## Affected APIs
 
+### SYSLIB0011
+
+- <xref:System.Resources.Extensions.PreserializedResourceWriter.AddBinaryFormattedResource(System.String,System.Byte[],System.String)?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.Formatter?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.IFormatter?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=fullName>
+
 ### SYSLIB0048
 
 - <xref:System.Security.Cryptography.RSA.EncryptValue(System.Byte[])?displayProperty=fullName>
 - <xref:System.Security.Cryptography.RSA.DecryptValue(System.Byte[])?displayProperty=fullName>
 - <xref:System.Security.Cryptography.RSACryptoServiceProvider.EncryptValue(System.Byte[])?displayProperty=fullName>
 - <xref:System.Security.Cryptography.RSACryptoServiceProvider.DecryptValue(System.Byte[])?displayProperty=fullName>
+
+### SYSLIB0049
+
+- <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=fullName>
 
 ### SYSLIB0050
 
@@ -531,6 +545,15 @@ The `SYSLIB0051` API obsoletions are organized here by namespace.
 - <xref:System.Xml.Xsl.XsltCompileException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.Xml.Xsl.XsltException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
 - <xref:System.Xml.Xsl.XsltException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=fullName>
+
+### SYSLIB0052
+
+- <xref:System.Text.RegularExpressions.Regex.InitializeReferences?displayProperty=fullName>
+- <xref:System.Text.RegularExpressions.Regex.UseOptionC?displayProperty=fullName>
+- <xref:System.Text.RegularExpressions.Regex.UseOptionR?displayProperty=fullName>
+- <xref:System.Text.RegularExpressions.RegexRunner.CharInSet(System.Char,System.String,System.String)?displayProperty=fullName>
+- <xref:System.Text.RegularExpressions.RegexRunner.Scan(System.Text.RegularExpressions.Regex,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)?displayProperty=fullName>
+- <xref:System.Text.RegularExpressions.RegexRunner.Scan(System.Text.RegularExpressions.Regex,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.TimeSpan)?displayProperty=fullName>
 
 ### SYSLIB0053
 

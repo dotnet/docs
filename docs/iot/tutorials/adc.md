@@ -6,7 +6,6 @@ ms.author: casoper
 ms.date: 12/05/2022
 ms.topic: tutorial
 ms.prod: dotnet
-recommendations: false
 ---
 <!--markdownlint-disable DOCSMD011 -->
 # Read values from an analog-to-digital converter

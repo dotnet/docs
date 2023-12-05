@@ -59,8 +59,13 @@ public static class NewOperator
 
     private static void Array()
     {
+        // This snippet is used with try.net,
+        // which doesn't support collection expressions yet.
         // <SnippetArray>
-        int[] numbers = [10, 20, 30];
+        var numbers = new int[3];
+        numbers[0] = 10;
+        numbers[1] = 20;
+        numbers[2] = 30;
         Console.WriteLine(string.Join(", ", numbers));
         // Output:
         // 10, 20, 30
@@ -69,10 +74,12 @@ public static class NewOperator
 
     private static void ArrayInitialization()
     {
+        // This snippet is used with try.net,
+        // which doesn't support collection expressions yet.
         // <SnippetArrayInitialization>
-        int[] a = [10, 20, 30];
-        int[] b = [10, 20, 30];
-        int[] c = [10, 20, 30];
+        var a = new int[3] { 10, 20, 30 };
+        var b = new int[] { 10, 20, 30 };
+        var c = new[] { 10, 20, 30 };
         Console.WriteLine(c.GetType());  // output: System.Int32[]
         // </SnippetArrayInitialization>
     }

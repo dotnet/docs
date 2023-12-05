@@ -63,7 +63,7 @@ The following table compares perf maps and jit maps.
 | Format | Description | Supported on |
 | - | - | - |
 | *Perf maps* | Emits `/tmp/perf-<pid>.map`, which contains symbolic information for dynamically generated code.<br/>Emits `/tmp/perfinfo-<pid>.map`, which includes ReadyToRun (R2R) module symbol information and is used by [PerfCollect](../diagnostics/trace-perfcollect-lttng.md). | Perf maps are supported on all Linux kernel versions. |
-| *Jit dumps* | The jit dump format supercedes perf maps and contains more detailed symbolic information. When enabled, jit dumps will be output to `/tmp/jit-<pid>.dump` files.|Linux kernel versions 5.4 or higher|
+| *Jit dumps* | The jit dump format supersedes perf maps and contains more detailed symbolic information. When enabled, jit dumps are output to `/tmp/jit-<pid>.dump` files. | Linux kernel versions 5.4 or higher. |
 
 | | Setting name | Values |
 | - | - | - |

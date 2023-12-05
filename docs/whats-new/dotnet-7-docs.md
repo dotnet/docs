@@ -148,7 +148,7 @@ Welcome to what's new in the .NET docs for the .NET 7 release. This article list
   - Add missing code-style rules
   - Add IDE0160 and IDE0161.
 - [.NET runtime contention events](../fundamentals/diagnostics/runtime-contention-events.md) - Update the doc with the new version of ContentionStart
-- [Error codes returned by package validation](../fundamentals/apicompat/package-validation/diagnostic-ids.md)
+- [Error codes returned by package validation](../fundamentals/apicompat/diagnostic-ids.md)
   - add docs for diagnostics CP0012 and CP0013
   - add docs for diagnostics CP0010 and CP0011
 - [.NET regular expressions](../standard/base-types/regular-expressions.md) - Ported as conceptual article from .NET dev blog: `Regex` enhancements with .NET 7

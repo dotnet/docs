@@ -31,6 +31,8 @@ The following table is a list of currently supported .NET releases and the versi
 
 ## Install .NET 8
 
+[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
+
 [!INCLUDE [linux-dnf-install-80](includes/linux-install-80-dnf.md)]
 
 ## Install .NET 7

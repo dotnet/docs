@@ -6,7 +6,7 @@ ms.date: 09/29/2021
 
 # Validate packages against different runtimes
 
-You may choose to have different implementation assemblies for different runtimes in your NuGet package. In that case, you'll need to make sure that these assemblies are compatible with each other and with the compile-time assemblies.
+You may choose to have different implementation assemblies for different runtimes in your NuGet package. In that case, you need to make sure that these assemblies are compatible with each other and with the compile-time assemblies.
 
 For example, consider the following scenario. You're working on a library involving some interop calls to Unix and Windows APIs, respectively. You have written the following code:
 
@@ -14,12 +14,12 @@ For example, consider the following scenario. You're working on a library involv
 #if Unix
     public static void Open(string path, bool securityDescriptor)
     {
-        // call unix specific stuff
+        // Call Unix specific stuff.
     }
 #else
     public static void Open(string path)
     {
-        // call windows specific stuff
+        // Call Windows specific stuff.
     }
 #endif
 ```
@@ -31,9 +31,9 @@ lib/net6.0/A.dll
 runtimes/unix/lib/net6.0/A.dll
 ```
 
-`lib\net6.0\A.dll` will always be used at compile time, regardless of the underlying operating system. `lib\net6.0\A.dll` will also be used at run time for non-Unix systems. However, `runtimes\unix\lib\net6.0\A.dll` will be used at run time for Unix systems.
+`lib\net6.0\A.dll` is always used at compile time, regardless of the underlying operating system. `lib\net6.0\A.dll` is also used at run time for non-Unix systems. However, `runtimes\unix\lib\net6.0\A.dll` is used at run time for Unix systems.
 
-When you try to pack this project, you'll get the following error:
+When you try to pack this project, you get the following error:
 
 ```cmd
 D:\demo>dotnet pack
@@ -57,7 +57,7 @@ You realize your mistake and add `A.B.Open(string)` to the Unix runtime as well.
 #if Unix
     public static void Open(string path, bool securityDescriptor)
     {
-        // call unix specific stuff
+        // Call Unix specific stuff.
     }
 
     public static void Open(string path)
@@ -67,7 +67,7 @@ You realize your mistake and add `A.B.Open(string)` to the Unix runtime as well.
 #else
     public static void Open(string path)
     {
-        // call windows specific stuff
+        // Call Windows specific stuff.
     }
 
     public static void Open(string path, bool securityDescriptor)
@@ -81,4 +81,6 @@ You try to pack the project again, and it succeeds.
 
 ![MultipleRuntimesSuccessful](media/multiple-runtimes-successful.png)
 
-You can enable *strict mode* for this validator by setting the `EnableStrictModeForCompatibleTfms` property in your project file. Enabling strict mode changes some rules, and some other rules will be executed when getting the differences. This is useful when you want both sides we are comparing to be strictly the same on their surface area and identity.
+## Strict mode
+
+You can enable *strict mode* for this validator by setting the [`EnableStrictModeForCompatibleTfms` property](../../../core/project-sdk/msbuild-props.md#enablestrictmodeforcompatibletfms) in your project file. Enabling strict mode changes some rules, and some other rules will be executed when getting the differences. This is useful when you want both sides you're comparing to be strictly the same on their surface area and identity. For more information, see [Strict mode](../overview.md#strict-mode).

@@ -1798,9 +1798,19 @@ items:
             displayProperty: syslib1220, syslib1221, syslib1222, syslib1223, syslib1224, syslib1225, syslib1226, syslib1227, syslib1228, syslib1229
   - name: API compatibility
     items:
+    - name: Overview
+      href: ../../fundamentals/apicompat/overview.md
+      displayName: api compatibility,apicompat
+    - name: Diagnostic IDs
+      href: ../../fundamentals/apicompat/diagnostic-ids.md
+    - name: Assembly validation
+      items:
+        - name: Overview
+          displayName: assembly validation
+          href: ../../fundamentals/apicompat/assembly-validation.md
     - name: Package validation
       items:
-        - name: Get started
+        - name: Overview
           displayName: package validation
           href: ../../fundamentals/apicompat/package-validation/overview.md
         - name: Baseline package validator
@@ -1809,7 +1819,5 @@ items:
           href: ../../fundamentals/apicompat/package-validation/compatible-framework-in-package-validator.md
         - name: Compatible framework validator
           href: ../../fundamentals/apicompat/package-validation/compatible-framework-validator.md
-        - name: Diagnostic IDs
-          href: ../../fundamentals/apicompat/package-validation/diagnostic-ids.md
     - name: Microsoft.DotNet.ApiCompat.Tool global tool
       href: ../../fundamentals/apicompat/global-tool.md

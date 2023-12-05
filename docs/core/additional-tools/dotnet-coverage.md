@@ -80,6 +80,10 @@ dotnet-coverage merge
 
   Removes all input coverage reports that were merged.
 
+* **`-r, --recursive`**
+
+  [.NET 7 SDK and earlier versions only] Search for coverage reports in subdirectories.
+
 * **`-o|--output <output>`**
 
   Sets the code coverage report output file.

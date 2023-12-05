@@ -88,13 +88,13 @@ Solution: use _char_-parameter overload or StringComparison.Oridinal.
 #### String.StartsWith
 
 ```csharp
-            const string foo = "abc";
+const string foo = "abc";
 
-            Console.WriteLine(foo.StartsWith("\0"));
-            Console.WriteLine(foo.StartsWith("a"));
-            Console.WriteLine(foo.StartsWith("\0", StringComparison.CurrentCulture));
-            Console.WriteLine(foo.StartsWith("\0", StringComparison.Ordinal));
-            Console.WriteLine(foo.StartsWith('\0'));
+Console.WriteLine(foo.StartsWith("\0"));
+Console.WriteLine(foo.StartsWith("a"));
+Console.WriteLine(foo.StartsWith("\0", StringComparison.CurrentCulture));
+Console.WriteLine(foo.StartsWith("\0", StringComparison.Ordinal));
+Console.WriteLine(foo.StartsWith('\0'));
 ```
 
 - For .NET 5 and subsequent versions running on the Windows versions listed in the [ICU on Windows](#icu-on-windows) section table, the snippet prints True, True, True, False, False.

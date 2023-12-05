@@ -17,7 +17,7 @@ Minimal API endpoints that bound a parameter from the form via <xref:Microsoft.A
 
 ## New behavior
 
-Minimal API endpoints that bind a parameter from the form via <xref:Microsoft.AspNetCore.Http.IFormFile> or <xref:Microsoft.AspNetCore.Http.IFormFileCollection> require anti-forgery validation. An exception is thrown at startup if the anti-forgery middleware is not registered for an API that defines these input types.
+Minimal API endpoints that bind a parameter from the form via <xref:Microsoft.AspNetCore.Http.IFormFile> or <xref:Microsoft.AspNetCore.Http.IFormFileCollection> require anti-forgery validation. An exception is thrown at startup if the anti-forgery middleware isn't registered for an API that defines these input types.
 
 ## Type of breaking change
 

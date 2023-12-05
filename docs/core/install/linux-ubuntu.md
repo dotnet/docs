@@ -157,7 +157,7 @@ sudo apt update
 
 ## Install .NET
 
-After you've [registered the Microsoft package repository](#register-the-microsoft-package-repository), or if your version of Ubuntu's default feed supports the .NET package, you can install .NET through the package manager with the `apt install <package-name>` command. Replace `<package-name>` with the name of the .NET package you want to install. For example, to install .NET SDK 8.0, use the command `apt install dotnet-sdk-8.0`. The following table lists the currently supported .NET packages:
+After you've [registered the Microsoft package repository](#register-the-microsoft-package-repository), or if your version of Ubuntu's default feed supports the .NET package, you can install .NET through the package manager with the `sudo apt install <package-name>` command. Replace `<package-name>` with the name of the .NET package you want to install. For example, to install .NET SDK 8.0, use the command `sudo apt install dotnet-sdk-8.0`. The following table lists the currently supported .NET packages:
 
 || Product      | Type    | Package                  |
 |---------|--------------|---------|--------------------------|

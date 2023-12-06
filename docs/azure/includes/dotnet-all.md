@@ -449,7 +449,7 @@
 | Microsoft.Azure.Functions.Worker.Core | NuGet [1.16.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/1.16.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Abstractions | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.3.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [4.4.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.4.2) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [4.5.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.5.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventGrid | NuGet [3.4.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.4.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [6.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/6.0.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.1.0) |  |  |
@@ -500,8 +500,8 @@
 | Hyak Common - Tracing Etw | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Etw/1.0.2) |  |  |
 | Hyak Common - Tracing Log4Net | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Log4Net/1.0.2) |  |  |
 | Microsoft.Azure.SignalR.Emulator | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.1.0)<br>NuGet [1.0.0-preview1-10809](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.0.0-preview1-10809) |  |  |
-| MSBuild | NuGet [0.20.0](https://www.nuget.org/packages/Microsoft.TypeSpec.MSBuild/0.20.0) |  |  |
-| ProviderHub Controller | NuGet [0.7.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Controller/0.7.0) |  |  |
-| ProviderHub Templates | NuGet [0.8.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Templates/0.8.0) |  |  |
+| MSBuild | NuGet [0.21.0](https://www.nuget.org/packages/Microsoft.TypeSpec.MSBuild/0.21.0) |  |  |
+| ProviderHub Controller | NuGet [0.8.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Controller/0.8.0) |  |  |
+| ProviderHub Templates | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Templates/1.0.0) |  |  |
 | Template | NuGet [1.0.2-preview1](https://www.nuget.org/packages/Microsoft.Azure.Template/1.0.2-preview1) |  |  |
 | Test HttpRecorder | NuGet [1.13.3](https://www.nuget.org/packages/Microsoft.Azure.Test.HttpRecorder/1.13.3) |  | GitHub [1.13.3](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/mgmtcommon/TestFramework/Microsoft.Azure.Test.HttpRecorder) |

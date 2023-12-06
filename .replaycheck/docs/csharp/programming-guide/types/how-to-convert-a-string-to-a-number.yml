@@ -3,10 +3,17 @@ contentPath: docs\csharp\programming-guide\types\how-to-convert-a-string-to-a-nu
 
 steps:
 - task: RunCodeSnippetReference@1
+  outputMarker: 'Output:'
   environment:
     type: dotnet-sdk
   uid: 2df741b0
 - task: RunCodeSnippetReference@1
+  outputMarker: 'Output:'
   environment:
     type: dotnet-sdk
   uid: b387c951
+- task: RunCodeSnippetReference@1
+  outputMarker: 'Sample Output:'
+  environment:
+    type: dotnet-sdk
+  uid: dee55bbc

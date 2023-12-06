@@ -98,7 +98,7 @@ dotnet add package Microsoft.NET.Build.Containers
 
 There are various configuration options available when publishing an app as a container. For more information, see [Configure container image](#configure-container-image).
 
-By default, the container image name is the `AssemblyName` of the project. If that name is invalid as a container image name, you can override it by specifying a `ContainerImageName` as shown in the following project file:
+By default, the container image name is the `AssemblyName` of the project. If that name is invalid as a container image name, you can override it by specifying a `ContainerImageName` or `ContainerRepository` as shown in the following project file:
 
 :::zone pivot="dotnet-8-0"
 
@@ -281,6 +281,9 @@ The container image name controls the name of the image itself, for example, `do
     <ContainerImageName>my-app</ContainerImageName>
 </PropertyGroup>
 ```
+
+> [!NOTE]
+> Starting with .NET 8, `ContainerImageName` is deprecated in favor of `ContainerRepository`.
 
 :::zone-end
 

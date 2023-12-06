@@ -14,7 +14,8 @@ public static class StringConversion
         {
             Console.WriteLine($"Unable to parse '{input}'");
         }
-        // Output: Unable to parse ''
+        // Output:
+        // Unable to parse ''
 
         try
         {
@@ -25,7 +26,8 @@ public static class StringConversion
         {
             Console.WriteLine(e.Message);
         }
-        // Output: -105
+        // Output: 
+        // -105
 
         if (Int32.TryParse("-105", out int j))
         {
@@ -35,7 +37,8 @@ public static class StringConversion
         {
             Console.WriteLine("String could not be parsed.");
         }
-        // Output: -105
+        // Output: 
+        // -105
 
         try
         {
@@ -45,7 +48,8 @@ public static class StringConversion
         {
             Console.WriteLine(e.Message);
         }
-        // Output: Input string was not in a correct format.
+        // Output: 
+        // Input string was not in a correct format.
 
         const string inputString = "abc";
         if (Int32.TryParse(inputString, out int numValue))
@@ -56,6 +60,7 @@ public static class StringConversion
         {
             Console.WriteLine($"Int32.TryParse could not parse '{inputString}' to an int.");
         }
-        // Output: Int32.TryParse could not parse 'abc' to an int.
+        // Output: 
+        // Int32.TryParse could not parse 'abc' to an int.
     }
 }

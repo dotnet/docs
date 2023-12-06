@@ -60,3 +60,6 @@ BenchmarkDotNet.Artifacts
 *.pfx
 /samples/snippets/csharp/concepts/.editorconfig
 /.gitignore
+
+# ReplayCheck (temporary)
+.replaycheck/

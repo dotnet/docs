@@ -5,13 +5,12 @@ public class ConvertStringExample1
     static void Main(string[] args)
     {
         int numVal = -1;
-        bool repeat = true;
+        Console.WriteLine($"Initial value: {numVal}");
+        string[] inputs = [ "473", "2147483647", "-1000"];
 
-        while (repeat)
+        foreach (string input in inputs)
         {
-            Console.Write("Enter a number between −2,147,483,648 and +2,147,483,647 (inclusive): ");
-
-            string? input = Console.ReadLine();
+            Console.WriteLine($"The next input is {input}.");
 
             // ToInt32 can throw FormatException or OverflowException.
             try
@@ -34,23 +33,14 @@ public class ConvertStringExample1
             {
                 Console.WriteLine("The number cannot fit in an Int32.");
             }
-
-            Console.Write("Go again? Y/N: ");
-            string? go = Console.ReadLine();
-            if (go?.ToUpper() != "Y")
-            {
-                repeat = false;
-            }
         }
     }
 }
-// Sample Output:
-//   Enter a number between -2,147,483,648 and +2,147,483,647 (inclusive): 473
+// Output:
+//   Initial value: -1
+//   The next input is 473.
 //   The new value is 474
-//   Go again? Y/N: y
-//   Enter a number between -2,147,483,648 and +2,147,483,647 (inclusive): 2147483647
+//   The next input is 2147483647.
 //   numVal cannot be incremented beyond its current value
-//   Go again? Y/N: y
-//   Enter a number between -2,147,483,648 and +2,147,483,647 (inclusive): -1000
+//   The next input is -1000.
 //   The new value is -999
-//   Go again? Y/N: n

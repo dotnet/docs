@@ -16,6 +16,8 @@ items:
         href: aspnet-core/8.0/problemdetails-custom-converters.md
       - name: ISystemClock is obsolete
         href: aspnet-core/8.0/isystemclock-obsolete.md
+      - name: "Minimal APIs: IFormFile parameters require anti-forgery checks"
+        href: aspnet-core/8.0/antiforgery-checks.md
       - name: Rate-limiting middleware requires AddRateLimiter
         href: aspnet-core/8.0/addratelimiter-requirement.md
       - name: Security token events return a JsonWebToken
@@ -882,6 +884,8 @@ items:
         href: aspnet-core/8.0/problemdetails-custom-converters.md
       - name: ISystemClock is obsolete
         href: aspnet-core/8.0/isystemclock-obsolete.md
+      - name: "Minimal APIs: IFormFile parameters require anti-forgery checks"
+        href: aspnet-core/8.0/antiforgery-checks.md
       - name: Rate-limiting middleware requires AddRateLimiter
         href: aspnet-core/8.0/addratelimiter-requirement.md
       - name: Security token events return a JsonWebToken

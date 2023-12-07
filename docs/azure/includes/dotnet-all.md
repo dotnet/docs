@@ -450,7 +450,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Abstractions | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.3.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [4.5.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.5.0) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.EventGrid | NuGet [3.4.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.4.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.EventGrid | NuGet [3.4.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.4.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [6.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/6.0.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.1.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [3.10.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/3.10.0) |  |  |
@@ -459,7 +459,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ/2.0.3) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Rpc | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Rpc/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.SendGrid | NuGet [3.0.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SendGrid/3.0.3) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.ServiceBus | NuGet [5.14.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ServiceBus/5.14.1) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.ServiceBus | NuGet [5.15.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ServiceBus/5.15.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.SignalRService | NuGet [1.12.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SignalRService/1.12.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Sql | NuGet [3.0.461](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Sql/3.0.461) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage | NuGet [6.2.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage/6.2.0) |  |  |

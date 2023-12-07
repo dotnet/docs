@@ -15,7 +15,7 @@ Resiliency is the ability of an app to recover from transient failures and conti
 | [📦 Microsoft.Extensions.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Resilience) | This NuGet package provides mechanisms to harden apps against transient failures. |
 | [📦 Microsoft.Extensions.Http.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience) | This NuGet package provides resilience mechanisms specifically for the <xref:System.Net.Http.HttpClient> class. |
 
-These two NuGet packages are built on top of [Polly](https://github.com/App-vNext/Polly), which is a popular open-source project. Polly is a .NET resilience and transient fault-handling library that allows developers to express strategies such as retry, circuit breaker, timeout, rate-limiting, fallback, and hedging in a fluent and thread-safe manner.
+These two NuGet packages are built on top of [Polly](https://github.com/App-vNext/Polly), which is a popular open-source project. Polly is a .NET resilience and transient fault-handling library that allows developers to express strategies such as [retry](/azure/architecture/patterns/retry), [circuit breaker](/azure/architecture/patterns/circuit-breaker), timeout, [bulkhead isolation](/azure/architecture/patterns/bulkhead), [rate-limiting](/azure/architecture/patterns/rate-limiting-pattern), fallback, and hedging in a fluent and thread-safe manner.
 
 > [!IMPORTANT]
 > The [Microsoft.Extensions.Http.Polly](https://www.nuget.org/packages/Microsoft.Extensions.Http.Polly) NuGet package is deprecated. Use either of the aforementioned packages instead.
@@ -122,3 +122,4 @@ The preceding code executes the delegate within the `ExecuteAsync` method. When 
 
 > [!div class="nextstepaction"]
 > [Build resilient HTTP apps: Key development patterns](http-resilience.md)
+> Consider the [challenges of idempotent handling of retried calls](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-data-platform#idempotent-message-processing)

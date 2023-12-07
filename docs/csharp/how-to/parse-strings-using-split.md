@@ -20,6 +20,7 @@ to split strings on other specific characters or strings.
 
 The following code splits a common phrase into an array of strings for each word.
 
+<!-- replaycheck-task id="54d6d90f" -->
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="Snippet1":::
 
 Every instance of a separator character produces a value in the
@@ -27,6 +28,7 @@ returned array. Consecutive separator characters produce the empty string
 as a value in the returned array. You can see how an empty string is created in the following example,
 which uses the space character as a separator.
 
+<!-- replaycheck-task id="56bddea1" -->
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="Snippet2":::
 
 This behavior makes it easier for formats like comma-separated values (CSV)
@@ -41,14 +43,17 @@ the result sequence.
 The following example uses spaces, commas, periods, colons, and tabs as separating characters, which are passed to <xref:System.String.Split%2A> in an array.
 The loop at the bottom of the code displays each of the words in the returned array.
 
+<!-- replaycheck-task id="cd358438" -->
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="Snippet3":::
 
 Consecutive instances of any separator produce the empty string in the output array:
 
+<!-- replaycheck-task id="c6bd73cc" -->
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="Snippet4":::
 
 <xref:System.String.Split%2A?displayProperty=nameWithType> can take an array of strings (character sequences that act as separators for parsing the target string, instead of single characters).
 
+<!-- replaycheck-task id="de9a9fb3" -->
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="Snippet5":::
 
 ## See also

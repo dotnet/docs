@@ -1,0 +1,66 @@
+# %version 1
+contentPath: docs\csharp\how-to\parse-strings-using-split.md
+
+steps:
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - value: > 
+     <The>
+     <quick>
+     <brown>
+     <fox>
+     <jumps>
+     <over>
+     <the>
+     <lazy>
+     <dog.>
+  uid: 54d6d90f
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - value: <The>\n<quick>\n<brown>\n<>\n<>\n<>\n<fox>\n<>\n<>\n<>\n<>\n<jumps>\n<over>\n<the>\n<lazy>\n<dog.>
+  uid: 56bddea1
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - value: >
+     Original text: 'one\ttwo three:four,five six seven'
+     7 words in text:
+     <one>
+     <two>
+     <three>
+     <four>
+     <five>
+     <six>
+     <seven>
+  uid: cd358438
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - value: >
+     Original text: 'one\ttwo :,five six seven'
+     7 words in text:
+     <one>
+     <two>
+     <>
+     <>
+     <five>
+     <six>
+     <seven>
+  uid: c6bd73cc
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - value: >
+     Original text: 'one<<two......three<four'
+     3 substrings in text:
+     one
+     two
+     three<four
+  uid: de9a9fb3

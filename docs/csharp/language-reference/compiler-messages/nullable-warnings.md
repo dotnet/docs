@@ -199,7 +199,7 @@ In many instances, you can fix these warnings by checking that a variable isn't 
 
 The following example initializes the backing storage for the `States` and removes the `set` accessor. Consumers of the class can modify the contents of the collection, and the storage for the collection is never `null`:
 
-:::code language="csharp" source="snippets/null-warnings/Program.cs" id="SnippetUpdatedDefinition":::
+:::code language="csharp" source="snippets/null-warnings/NullWarnings.cs" id="SnippetUpdatedDefinition":::
 
 Other instances when you get these warnings may be false positive. You may have a private utility method that tests for null. The compiler doesn't know that the method provides a null check. Consider the following example that uses a private utility method, `IsNotNull`:
 

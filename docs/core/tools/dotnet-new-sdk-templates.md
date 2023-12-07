@@ -3,7 +3,7 @@ title: .NET default templates for dotnet new
 description: The information about dotnet new templates shipped with dotnet SDK.
 ms.custom: updateeachrelease
 no-loc: [Blazor, WebAssembly]
-ms.date: 08/10/2023
+ms.date: 12/07/2023
 ---
 # .NET default templates for dotnet new
 
@@ -36,6 +36,7 @@ The following table shows the templates that come pre-installed with the .NET SD
 | MVC ViewStart                                | `viewstart`                           | [C#]         | Web/ASP.NET                           | 2.0              |
 | Blazor Server App                            | [`blazorserver`](#blazorserver)       | [C#]         | Web/Blazor                            | 3.0              |
 | Blazor Server App Empty                      | [`blazorserver-empty`](#blazorserver) | [C#]         | Web/Blazor                            | 7.0              |
+| Blazor Web App                               | [`blazor`](#blazorserver)             | [C#]         | Web/Blazor                            | 8.0.100          |
 | Blazor WebAssembly App                       | [`blazorwasm`](#blazorwasm)           | [C#]         | Web/Blazor/WebAssembly                | 3.1.300          |
 | Blazor WebAssembly App Empty                 | [`blazorwasm-empty`](#blazorwasm)     | [C#]         | Web/Blazor/WebAssembly                | 7.0              |
 | ASP.NET Core Empty                           | [`web`](#web)                         | [C#], F#     | Web/Empty                             | 1.0              |
@@ -72,6 +73,7 @@ The templates that ship with the .NET SDK have the following additional options:
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 8.0         | `net8.0`        |
   | 7.0         | `net7.0`        |
   | 6.0         | `net6.0`        |
   | 3.1         | `netcoreapp3.1` |
@@ -100,7 +102,7 @@ The templates that ship with the .NET SDK have the following additional options:
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. Values: `net7.0`, `net6.0`, or `netcoreapp3.1` to create a .NET Class Library or `netstandard2.1` or `netstandard2.0` to create a .NET Standard Class Library. The default value for .NET SDK 7.0.x is `net7.0`.
+  Specifies the [framework](../../standard/frameworks.md) to target. Values: `net8.0`, `net7.0`, `net6.0`, or `netcoreapp3.1` to create a .NET Class Library or `netstandard2.1` or `netstandard2.0` to create a .NET Standard Class Library. The default value for .NET SDK 8.0.x is `net8.0`.
 
   To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
@@ -120,7 +122,7 @@ The templates that ship with the .NET SDK have the following additional options:
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. For the .NET 6 SDK, the default value is `net6.0`. Available since .NET Core 3.1 SDK.
+  Specifies the [framework](../../standard/frameworks.md) to target. For the .NET 8 SDK, the default value is `net8.0`. Available since .NET Core 3.1 SDK.
 
 - **`--langVersion <VERSION_NUMBER>`**
 
@@ -152,7 +154,7 @@ The templates that ship with the .NET SDK have the following additional options:
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. The default value for .NET 7 SDK is `net7.0`. Available since .NET Core 3.1 SDK.
+  Specifies the [framework](../../standard/frameworks.md) to target. The default value for .NET 8 SDK is `net8.0`. Available since .NET Core 3.1 SDK.
 
   To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
@@ -180,6 +182,8 @@ The templates that ship with the .NET SDK have the following additional options:
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 8.0         | `net8.0`        |
+  | 7.0         | `net7.0`        |
   | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
@@ -206,6 +210,8 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 8.0         | `net8.0`        |
+  | 7.0         | `net7.0`        |
   | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
@@ -325,6 +331,64 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 ***
 
+## `blazor`
+
+- **`-f|--framework <FRAMEWORK>`**
+
+  Specifies the [framework](../../standard/frameworks.md) to target.
+
+  This template is new in .NET 8:
+
+  | SDK version | Default value   |
+  |-------------|-----------------|
+  | 8.0         | `net8.0`        |
+
+- **`--no-restore`**
+
+  Doesn't execute an implicit restore during project creation.
+
+- **`--exclude-launch-settings`**
+
+  Excludes *launchSettings.json* from the generated template.
+
+- **`-int|--interactivity <None|Server|Webassembly|Auto >`**
+
+  Which interactive render mode to use for interactive components. The possible values are:
+
+  - `None` - No interactivity (static server rendering only)
+  - `Server` - (Default) Runs on the server
+  - `WebAssembly` - Runs in the browser using WebAssembly
+  - `Auto` -Uses Server while downloading WebAssembly assets, then uses WebAssembly
+
+- **`--empty`**
+
+  Omits sample pages and styling that demonstrate basic usage patterns.
+
+- **`-au|--auth <AUTHENTICATION_TYPE>`**
+
+  The type of authentication to use. The possible values are:
+
+  - `None` - No authentication (Default).
+  - `Individual` - Individual authentication.
+
+- **`-uld|--use-local-db`**
+
+  Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` authentication.
+
+- **`-ai|--all-interactive`**
+
+  Makes every page interactive by applying an interactive render mode at the top level. If `false`, pages will use static server rendering by default and can be marked interactive on a per-page or per-component basis. Enabled if `InteractivityPlatform` is not "None".
+
+- **`--no-https`**
+
+  Turns off HTTPS. This option only applies if `Individual` isn't chosen for `--auth`.
+
+- **`--use-program-main`**
+
+  If specified, an explicit `Program` class and `Main` method is generated instead of top-level statements.
+
+***
+
 ## `blazorwasm`
 
 - **`-f|--framework <FRAMEWORK>`**
@@ -335,6 +399,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 8.0         | `net8.0`        |
   | 7.0         | `net7.0`        |
   | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
@@ -459,6 +524,8 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 8.0         | `net8.0`        |
+  | 7.0         | `net7.0`        |
   | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
@@ -562,6 +629,8 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 8.0         | `net8.0`        |
+  | 7.0         | `net7.0`        |
   | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
@@ -630,6 +699,8 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 8.0         | `net8.0`        |
+  | 7.0         | `net7.0`        |
   | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
@@ -763,6 +834,7 @@ Creates a web API project with AOT publish enabled. For more information, see [N
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 8.0         | `net8.0`        |
   | 7.0         | `net7.0`        |
   | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |

@@ -36,7 +36,7 @@ The following table shows the templates that come pre-installed with the .NET SD
 | MVC ViewStart                                | `viewstart`                           | [C#]         | Web/ASP.NET                           | 2.0              |
 | Blazor Server App                            | [`blazorserver`](#blazorserver)       | [C#]         | Web/Blazor                            | 3.0              |
 | Blazor Server App Empty                      | [`blazorserver-empty`](#blazorserver) | [C#]         | Web/Blazor                            | 7.0              |
-| Blazor Web App                               | [`blazor`](#blazorserver)             | [C#]         | Web/Blazor                            | 8.0.100          |
+| Blazor Web App                               | [`blazor`](#blazor)                   | [C#]         | Web/Blazor                            | 8.0.100          |
 | Blazor WebAssembly App                       | [`blazorwasm`](#blazorwasm)           | [C#]         | Web/Blazor/WebAssembly                | 3.1.300          |
 | Blazor WebAssembly App Empty                 | [`blazorwasm-empty`](#blazorwasm)     | [C#]         | Web/Blazor/WebAssembly                | 7.0              |
 | ASP.NET Core Empty                           | [`web`](#web)                         | [C#], F#     | Web/Empty                             | 1.0              |

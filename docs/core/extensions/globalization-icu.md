@@ -83,6 +83,7 @@ Console.WriteLine(foo.EndsWith('\0'));
 
 > [!IMPORTANT]
 > In .NET 5+ running on Windows versions listed in the [ICU on Windows](#icu-on-windows) table, the preceding snippet prints:
+>
 > ```Output
 > True
 > True
@@ -107,6 +108,7 @@ Console.WriteLine(foo.StartsWith('\0'));
 
 > [!IMPORTANT]
 > In .NET 5+ running on Windows versions listed in the [ICU on Windows](#icu-on-windows) table, the preceding snippet prints:
+>
 > ```Output
 > True
 > True

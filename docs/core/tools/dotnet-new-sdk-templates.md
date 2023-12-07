@@ -337,11 +337,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   Specifies the [framework](../../standard/frameworks.md) to target.
 
-  This template is new in .NET 8:
-
-  | SDK version | Default value   |
-  |-------------|-----------------|
-  | 8.0         | `net8.0`        |
+  This template is new in .NET 8. The default value is `net8.0`.
 
 - **`--no-restore`**
 

@@ -62,7 +62,7 @@ Subcommands can have their own subcommands. In `dotnet tool install`, `install` 
 
 ## Options
 
-An option is a named parameter that can be passed to a command. The [POSIX](https://en.wikipedia.org/wiki/POSIX) convention is to prefix the option name with two hyphens (`--`). The following example shows two options:
+An option is a named parameter that can be passed to a command. [POSIX](https://en.wikipedia.org/wiki/POSIX) CLIs typically prefix the option name with two hyphens (`--`). The following example shows two options:
 
 ```dotnetcli
 dotnet tool update dotnet-suggest --verbosity quiet --global

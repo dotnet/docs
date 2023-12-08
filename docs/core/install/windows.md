@@ -19,7 +19,7 @@ In this article, you'll learn how to install .NET on Windows. .NET is made up of
 The latest version of .NET is 8.
 
 > [!div class="button"]
-> [Download .NET](https://dotnet.microsoft.com/download/dotnet)
+> [Download .NET SDK](https://dotnet.microsoft.com/download/dotnet)
 
 There are two types of supported releases: Long Term Support (LTS) releases and Standard Term Support (STS) releases. The quality of all releases is the same. The only difference is the length of support. LTS releases get free support and patches for 3 years. STS releases get free support and patches for 18 months. For more information, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 

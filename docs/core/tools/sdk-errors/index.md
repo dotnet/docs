@@ -367,9 +367,9 @@ This list is a complete list of the errors that you might get from the .NET SDK 
 |NETSDK1207|Ahead-of-time compilation is not supported for the target framework.|
 |NETSDK1208|The target platform identifier {0} was not recognized. This is because MSBuildEnableWorkloadResolver is set to false which disables .NET SDK Workloads which is required for this identifier. Unset this environment variable or MSBuild property to enable workloads.|
 |NETSDK1209|The current Visual Studio version does not support targeting {0} {1}.  Either target {0} {2} or lower, or use Visual Studio version {3} or higher.|
-|NETSDK1210|IsAotCompatible and EnableAotAnalyzer are not supported for the target framework. Consider multi-targeting to a supported framework to enable ahead-of-time compilation analysis, and set IsAotCompatible only for the supported frameworks. For example:<br> \<IsAotCompatible Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', '{0}'))>true\</IsAotCompatible>
+|NETSDK1210|IsAotCompatible and EnableAotAnalyzer are not supported for the target framework. Consider multi-targeting to a supported framework to enable ahead-of-time compilation analysis, and set IsAotCompatible only for the supported frameworks. For example:<br> \<IsAotCompatible Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', '{0}'))>true\</IsAotCompatible>|
 |NETSDK1211|EnableSingleFileAnalyzer is not supported for the target framework. Consider multi-targeting to a supported framework to enable single-file analysis, and set EnableSingleFileAnalyzer only for the supported frameworks. For example:<br>
-\<EnableSingleFileAnalyzer Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', '{0}'))">true\</EnableSingleFileAnalyzer>
+\<EnableSingleFileAnalyzer Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', '{0}'))">true\</EnableSingleFileAnalyzer>|
 |NETSDK1212|IsTrimmable and EnableTrimAnalyzer are not supported for the target framework. Consider multi-targeting to a supported framework to enable trimming, and set IsTrimmable only for the supported frameworks. For example:<br>
-\<IsTrimmable Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', '{0}'))">true\</IsTrimmable>
+\<IsTrimmable Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', '{0}'))">true\</IsTrimmable>|
 |NETSDK1213|Targeting .NET 8.0 or higher in Visual Studio 2022 17.7 is not supported.|

@@ -202,7 +202,7 @@ Multiple `dotnet-sdk` packages may provide the same files for the `NuGetFallback
 
 Debug content should be packaged in debug-named packages that follow the .NET package split described above. For instance, debug content for `dotnet-sdk-[major].[minor]` package should be included in a package named `dotnet-sdk-dbg-[major].[minor]`. Debug content should be installed to the same location as the binaries.
 
-Few binary examples:
+Here are a few binary examples:
 
 In `{dotnet_root}/sdk/<sdk version>` directory, we'd expect the following two files:
 

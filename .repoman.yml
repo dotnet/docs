@@ -69,6 +69,14 @@ issues:
       pass:
         - prod_tech_labels: true
 
+    # Try to detect an empty issue
+    - check:
+        - type: comment-body
+          value: "### Description\n\n\n\n\[Enter feedback here\]\n\n\n###"
+      pass:
+        - labels-add: ["needs-more-info"]
+        - close
+
   reopened:
 
     # Remove won't fix label

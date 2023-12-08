@@ -7,7 +7,7 @@ namespace RoundtripToUtf8Bytes1
     {
         public class WeatherForecast
         {
-            public DateTimeOffset Date { get; set; }
+            public DateTime Date { get; set; }
             public int TemperatureCelsius { get; set; }
             public string? Summary { get; set; }
         }
@@ -29,7 +29,7 @@ namespace RoundtripToUtf8Bytes1
         }
     }
     // output:
-    //{"Date":"2019-08-01T00:00:00-07:00","TemperatureCelsius":25,"Summary":"Hot"}
+    //{"Date":"2019-08-01T00:00:00","TemperatureCelsius":25,"Summary":"Hot"}
 }
 
 namespace RoundtripToUtf8Bytes2
@@ -57,7 +57,7 @@ namespace RoundtripToUtf8Bytes2
 
             // <Deserialize1>
             var readOnlySpan = new ReadOnlySpan<byte>(jsonUtf8Bytes);
-            WeatherForecast deserializedWeatherForecast = 
+            WeatherForecast deserializedWeatherForecast =
                 JsonSerializer.Deserialize<WeatherForecast>(readOnlySpan)!;
             // </Deserialize1>
 
@@ -96,7 +96,7 @@ namespace RoundtripToUtf8Bytes3
 
             // <Deserialize2>
             var utf8Reader = new Utf8JsonReader(jsonUtf8Bytes);
-            WeatherForecast deserializedWeatherForecast = 
+            WeatherForecast deserializedWeatherForecast =
                 JsonSerializer.Deserialize<WeatherForecast>(ref utf8Reader)!;
             // </Deserialize2>
 

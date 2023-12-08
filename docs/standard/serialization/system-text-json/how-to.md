@@ -24,6 +24,7 @@ To write JSON to a string or to a file, call the <xref:System.Text.Json.JsonSeri
 
 The following example creates JSON as a string:
 
+<!-- replaycheck-task id="18c8862d" -->
 :::code language="csharp" source="snippets/how-to/csharp/SerializeBasic.cs" id="all" highlight="23":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripToString.vb" id="Serialize":::
 
@@ -31,16 +32,19 @@ The JSON output is minified (whitespace, indentation, and new-line characters ar
 
 The following example uses synchronous code to create a JSON file:
 
+<!-- replaycheck-task id="9062b0da" -->
 :::code language="csharp" source="snippets/how-to/csharp/SerializeToFile.cs" highlight="23-25":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripToFile.vb" id="Serialize":::
 
 The following example uses asynchronous code to create a JSON file:
 
+<!-- replaycheck-task id="a1e78a91" -->
 :::code language="csharp" source="snippets/how-to/csharp/SerializeToFileAsync.cs" highlight="23-26":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripToFileAsync.vb" id="Serialize":::
 
 The preceding examples use type inference for the type being serialized. An overload of `Serialize()` takes a generic type parameter:
 
+<!-- replaycheck-task id="b109883d" -->
 :::code language="csharp" source="snippets/how-to/csharp/SerializeWithGenericParameter.cs" highlight="23":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripToString.vb" id="SerializeWithGenericParameter":::
 
@@ -75,6 +79,7 @@ You can [implement custom converters](converters-how-to.md) to handle additional
 
 Here's an example showing how a class that contains collection properties and a user-defined type is serialized:
 
+<!-- replaycheck-task id="cff232be" -->
 :::code language="csharp" source="snippets/how-to/csharp/SerializeExtra.cs" highlight="42-43":::
 :::code language="vb" source="snippets/how-to/vb/WeatherForecast.vb" id="WFWithPOCOs":::
 
@@ -93,6 +98,7 @@ A <xref:System.Text.Json.JsonSerializer.Serialize%2A> overload that takes a <xre
 
 To pretty-print the JSON output, set <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> to `true`:
 
+<!-- replaycheck-task id="e8c48875" -->
 :::code language="csharp" source="snippets/how-to/csharp/SerializeWriteIndented.cs" highlight="24":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripToString.vb" id="SerializePrettyPrint":::
 

@@ -4,11 +4,11 @@ namespace SerializeExtra
 {
     public class WeatherForecast
     {
-        public DateTimeOffset Date { get; set; }
+        public DateTime Date { get; set; }
         public int TemperatureCelsius { get; set; }
         public string? Summary { get; set; }
         public string? SummaryField;
-        public IList<DateTimeOffset>? DatesAvailable { get; set; }
+        public IList<DateTime>? DatesAvailable { get; set; }
         public Dictionary<string, HighLowTemps>? TemperatureRanges { get; set; }
         public string[]? SummaryWords { get; set; }
     }
@@ -29,7 +29,7 @@ namespace SerializeExtra
                 TemperatureCelsius = 25,
                 Summary = "Hot",
                 SummaryField = "Hot",
-                DatesAvailable = new List<DateTimeOffset>() 
+                DatesAvailable = new List<DateTime>()
                     { DateTime.Parse("2019-08-01"), DateTime.Parse("2019-08-02") },
                 TemperatureRanges = new Dictionary<string, HighLowTemps>
                     {
@@ -48,12 +48,12 @@ namespace SerializeExtra
 }
 // output:
 //{
-//  "Date": "2019-08-01T00:00:00-07:00",
+//  "Date": "2019-08-01T00:00:00",
 //  "TemperatureCelsius": 25,
 //  "Summary": "Hot",
 //  "DatesAvailable": [
-//    "2019-08-01T00:00:00-07:00",
-//    "2019-08-02T00:00:00-07:00"
+//    "2019-08-01T00:00:00",
+//    "2019-08-02T00:00:00"
 //  ],
 //  "TemperatureRanges": {
 //    "Cold": {

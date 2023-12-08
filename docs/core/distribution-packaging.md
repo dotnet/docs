@@ -221,7 +221,7 @@ In the `{dotnet_root/shared/Microsoft.AspNetCore.App/<aspnetcore version>` direc
 
 Starting with .NET 8.0, all .NET debug content (PDB files), produced by source-build, is available in a tarball named `dotnet-symbols-sdk-<version>-<rid>.tar.gz`. This archive contains PDBs in subdirectories that match the directory structure of the .NET SDK tarball - `dotnet-symbols-<version>-<rid>.tar.gz`.
 
-While all debug content is available in debug tarball, not all debug content is equally important. End users are mostly interested in content of `shared/Microsoft.AspNetCore.App/<aspnetcore version>` and `shared/Microsoft.NETCore.App/<runtime version>`.
+While all debug content is available in the debug tarball, not all debug content is equally important. End users are mostly interested in the content of the `shared/Microsoft.AspNetCore.App/<aspnetcore version>` and `shared/Microsoft.NETCore.App/<runtime version>` directories.
 
 SDK content, under `sdk/<sdk version>` is useful for debugging of .NET SDK toolsets.
 

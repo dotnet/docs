@@ -204,7 +204,7 @@ Debug content should be packaged in debug-named packages that follow the .NET pa
 
 Here are a few binary examples:
 
-In `{dotnet_root}/sdk/<sdk version>` directory, we'd expect the following two files:
+In the `{dotnet_root}/sdk/<sdk version>` directory, the following two files are expected:
 
 - `dotnet.dll` - installed with `dotnet-sdk-[major].[minor]` package
 - `dotnet.pdb` - installed with `dotnet-sdk-dbg-[major].[minor]` package

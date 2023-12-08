@@ -10,10 +10,14 @@
 
 This repository contains the conceptual documentation for .NET. The [.NET documentation site](https://learn.microsoft.com/dotnet) is built from multiple repositories in addition to this one:
 
+- [.NET Desktop workloads](https://github.com/dotnet/docs-desktop)
+- [.NET Aspire](https://github.com/dotnet/docs-aspire)
 - [API reference](https://github.com/dotnet/dotnet-api-docs)
 - [.NET Compiler Platform SDK reference](https://github.com/dotnet/roslyn-api-docs)
+- [C# specification - draft](https://github.com/dotnet/csharpstandard)
+- [C# Language design](https://github.com/dotnet/csharplang)
 
-Issues and tasks for all but the API reference repository are tracked here. We have a large community using these resources. We make our best effort to respond to issues in a timely fashion. You can read more about our procedures for classifying and resolving issues in our [Issues policy](issues-policy.md) topic. To create a new issue, [choose from any of the available templates](https://github.com/dotnet/docs/issues/new/choose).
+Our teams tasks are tracked in our [project boards](https://github.com/dotnet/docs/projects?query=is%3Aopen). You'll see monthly sprint projects, along with long-running projects for major documentation updates. The projects contain documentation issues across the repositories that build .NET docs. Issues are tracked in the relevant repositories. We have a large community using these resources. We make our best effort to respond to issues in a timely fashion. You can read more about our procedures for classifying and resolving issues in our [Issues policy](issues-policy.md) topic. To create a new issue, click the "Open documentation issue" button at the bottom of any of our published docs, or [choose from any of the available templates](https://github.com/dotnet/docs/issues/new/choose). The control at the bottom of each article automatically routes you to the correct repo and fills in some relevant information based on the article.
 
 ## :purple_heart: Contribute
 

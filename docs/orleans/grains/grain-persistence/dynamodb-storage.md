@@ -21,11 +21,11 @@ siloBuilder.AddDynamoDBGrainStorage(
     name: "profileStore",
     configureOptions: options =>
     {
-        options.UseJson = true;
         options.AccessKey = "<DynamoDB access key>";
         options.SecretKey = "<DynamoDB secret key>";
         options.Service = "<DynamoDB region name>"; // Such as "us-west-2"
     });
+);
 ```
 
 If your authentication method requires a token or non-default profile name, you can define those properties using the following command:

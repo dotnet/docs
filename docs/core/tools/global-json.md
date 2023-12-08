@@ -209,7 +209,7 @@ The following rules apply when determining which version of the SDK to use:
 
 - If you are using global.json to stay on a specific version of the .NET SDK, note that Visual Studio only ever installs a single copy of the .NET SDK. So if you upgrade your Visual Studio version, it will remove the previous version of the .NET SDK it had installed to install the new version even across major .NET versions.
 
-To avoid Visual Studio removing versions of the .NET SDK, you will need to install the stand-alone .NET SDK from the [download page](https://dotnet.microsoft.com/download/dotnet) page. Note that if you do, you will not get automatic updates to that version of the .NET SDK anymore through Visual Studio and may be at risk for security issues.
+To avoid Visual Studio removing versions of the .NET SDK, you will need to install the stand-alone .NET SDK from the [download page](https://dotnet.microsoft.com/download/dotnet). Note that if you do, you will not get automatic updates to that version of the .NET SDK anymore through Visual Studio and may be at risk for security issues.
 
 ## See also
 

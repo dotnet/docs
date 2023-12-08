@@ -214,7 +214,7 @@ In the `{dotnet_root}/shared/Microsoft.NETCore.App/<runtime version>` directory,
 - `System.Text.Json.dll` - installed with `dotnet-runtime-[major].[minor]` package
 - `System.Text.Json.pdb` - installed with `dotnet-runtime-dbg-[major].[minor]` package
 
-In `{dotnet_root/shared/Microsoft.AspNetCore.App/<aspnetcore version>` we'd expect the following two files:
+In the `{dotnet_root/shared/Microsoft.AspNetCore.App/<aspnetcore version>` directory, the following two files are expected:
 
 - `Microsoft.AspNetCore.Routing.dll` - installed with `aspnetcore-runtime-[major].[minor]` packages
 - `Microsoft.AspNetCore.Routing.pdb` - installed with `aspnetcore-runtime-dbg-[major].[minor]` packages

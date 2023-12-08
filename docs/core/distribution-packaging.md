@@ -225,7 +225,7 @@ While all debug content is available in the debug tarball, not all debug content
 
 SDK content, under `sdk/<sdk version>` is useful for debugging of .NET SDK toolsets.
 
-The following lists the recommended debug packages:
+The following packages are the recommended debug packages:
 
 - `aspnetcore-runtime-dbg-[major].[minor]` - Installs debug content for a specific ASP.NET Core runtime
   - **Version:** \<aspnetcore runtime version>

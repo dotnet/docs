@@ -412,7 +412,7 @@ From the sample source code, you can see how implementations of <xref:Microsoft.
 
 .NET also supports service registrations and lookups based on a key, meaning it's possible to register multiple services with a different key, and use this key for the lookup.
 
-For example, let's consider you have different implementation of the interface `IMessageWriter`: `MemoryMessageWriter` and `QueueMessageWriter`.
+For example, let's consider the case where you have different implementations of the interface `IMessageWriter`: `MemoryMessageWriter` and `QueueMessageWriter`.
 
 You can register these services using the overload of the service registration methods (seen earlier) that supports a key as a parameter:
 

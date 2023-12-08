@@ -1,0 +1,34 @@
+# %version 1
+contentPath: docs\standard\serialization\system-text-json\how-to.md
+
+steps:
+- task: RunCodeSnippetReference@1
+  outputMarker: 'output:'
+  environment:
+    type: dotnet-sdk
+  uid: 18c8862d
+- task: RunCodeSnippetReference@1
+  outputMarker: 'output:'
+  environment:
+    type: dotnet-sdk
+  uid: 9062b0da
+- task: RunCodeSnippetReference@1
+  outputMarker: 'output:'
+  environment:
+    type: dotnet-sdk
+  uid: a1e78a91
+- task: RunCodeSnippetReference@1
+  outputMarker: 'output:'
+  environment:
+    type: dotnet-sdk
+  uid: b109883d
+- task: RunCodeSnippetReference@1
+  outputMarker: 'output:'
+  environment:
+    type: dotnet-sdk
+  uid: cff232be
+- task: RunCodeSnippetReference@1
+  outputMarker: 'output:'
+  environment:
+    type: dotnet-sdk
+  uid: e8c48875

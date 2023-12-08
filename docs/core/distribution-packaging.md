@@ -223,7 +223,7 @@ Starting with .NET 8.0, all .NET debug content (PDB files), produced by source-b
 
 While all debug content is available in the debug tarball, not all debug content is equally important. End users are mostly interested in the content of the `shared/Microsoft.AspNetCore.App/<aspnetcore version>` and `shared/Microsoft.NETCore.App/<runtime version>` directories.
 
-SDK content, under `sdk/<sdk version>` is useful for debugging of .NET SDK toolsets.
+The SDK content under `sdk/<sdk version>` is useful for debugging .NET SDK toolsets.
 
 The following packages are the recommended debug packages:
 

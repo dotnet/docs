@@ -247,7 +247,7 @@ The following debug package is optional:
   - **Contains:** debug content for (3),(4),(18)
   - **Dependencies:** `dotnet-sdk-[major].[minor]`
 
-The debug tarball also contains some debug content under `packs` which represent copies of content under `shared`. In the .NET layout, the `packs` directory is used for building .NET applications - there are no debugging scenarios, therefore the debug content under `packs`, in the debug tarball, should not be packaged.
+The debug tarball also contains some debug content under `packs`, which represents copies of content under `shared`. In the .NET layout, the `packs` directory is used for *building* .NET applications. There are no debugging scenarios, so you shouldn't package the debug content under `packs` in the debug tarball.
 
 ## Building packages
 

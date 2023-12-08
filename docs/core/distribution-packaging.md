@@ -209,7 +209,7 @@ In the `{dotnet_root}/sdk/<sdk version>` directory, the following two files are 
 - `dotnet.dll` - installed with `dotnet-sdk-[major].[minor]` package
 - `dotnet.pdb` - installed with `dotnet-sdk-dbg-[major].[minor]` package
 
-In `{dotnet_root}/shared/Microsoft.NETCore.App/<runtime version>` we'd expect the following two files:
+In the `{dotnet_root}/shared/Microsoft.NETCore.App/<runtime version>` directory, the following two files are expected:
 
 - `System.Text.Json.dll` - installed with `dotnet-runtime-[major].[minor]` package
 - `System.Text.Json.pdb` - installed with `dotnet-runtime-dbg-[major].[minor]` package

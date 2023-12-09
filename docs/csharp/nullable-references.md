@@ -173,7 +173,7 @@ You must explicitly opt in to use these features in your existing projects. That
 - *disable*: The code is *nullable oblivious*.
   - Nullable warnings are disabled.
   - All reference type variables are nullable reference types.
-  - You can't declare a variable as a nullable reference type using the `?` suffix on the type.
+  - Use of the `?` suffix to declare a nullable reference type produces a warning.
   - You can use the null forgiving operator, `!`, but it has no effect.
 - *enable*: The compiler enables all null reference analysis and all language features.
   - All new nullable warnings are enabled.
@@ -195,7 +195,7 @@ The nullable annotation context and nullable warning context can be set for a pr
 
 | Context | Dereference warnings | Assignment warnings | Reference types | `?` suffix | `!` operator |
 | - | - | - | - | - |
-| `disable` | Disabled | Disabled | All are nullable | Can't be used | Has no effect |
+| `disable` | Disabled | Disabled | All are nullable | Produces a warning | Has no effect |
 | `enable` | Enabled | Enabled | Non-nullable unless declared with `?` | Declares nullable type | Suppresses warnings for possible `null` assignment |
 | `warnings` | Enabled | Not applicable | All are nullable, but members are considered *not null* at opening brace of methods | Produces a warning |  Suppresses warnings for possible `null` assignment |
 | `annotations` | Disabled | Disabled | Non-nullable unless declared with `?` | Declares nullable type | Has no effect |

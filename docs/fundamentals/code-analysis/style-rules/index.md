@@ -56,7 +56,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0025](ide0025.md) | Use expression body for properties | [csharp_style_expression_bodied_properties](ide0025.md#csharp_style_expression_bodied_properties) |
 > | [IDE0026](ide0026.md) | Use expression body for indexers | [csharp_style_expression_bodied_indexers](ide0026.md#csharp_style_expression_bodied_indexers) |
 > | [IDE0027](ide0027.md) | Use expression body for accessors | [csharp_style_expression_bodied_accessors](ide0027.md#csharp_style_expression_bodied_accessors) |
-> | [IDE0028](ide0028.md) | Use collection initializers | [dotnet_style_collection_initializer](ide0028.md#dotnet_style_collection_initializer) |
+> | [IDE0028](ide0028.md) | Use collection initializers | [dotnet_style_collection_initializer](ide0028.md#dotnet_style_collection_initializer)<br/>[dotnet_style_prefer_collection_expression](ide0028.md#dotnet_style_prefer_collection_expression) |
 > | [IDE0029](ide0029-ide0030-ide0270.md) | Null check can be simplified | [dotnet_style_coalesce_expression](ide0029-ide0030-ide0270.md#dotnet_style_coalesce_expression) |
 > | [IDE0030](ide0029-ide0030-ide0270.md) | Null check can be simplified | [dotnet_style_coalesce_expression](ide0029-ide0030-ide0270.md#dotnet_style_coalesce_expression) |
 > | [IDE0031](ide0031.md) | Use null propagation | [dotnet_style_null_propagation](ide0031.md#dotnet_style_null_propagation) |
@@ -133,6 +133,12 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0270](ide0029-ide0030-ide0270.md) | Null check can be simplified | [dotnet_style_coalesce_expression](ide0029-ide0030-ide0270.md#dotnet_style_coalesce_expression) |
 > | [IDE0280](ide0280.md) | Use `nameof` | |
 > | [IDE0290](ide0290.md) | Use primary constructor | [csharp_style_prefer_primary_constructors](ide0290.md#csharp_style_prefer_primary_constructors) |
+> | [IDE0300](ide0300.md) | Use collection expression for array | [dotnet_style_prefer_collection_expression](ide0300.md#dotnet_style_prefer_collection_expression) |
+> | [IDE0301](ide0301.md) | Use collection expression for empty | [dotnet_style_prefer_collection_expression](ide0301.md#dotnet_style_prefer_collection_expression) |
+> | [IDE0302](ide0302.md) | Use collection expression for stack alloc | [dotnet_style_prefer_collection_expression](ide0302.md#dotnet_style_prefer_collection_expression) |
+> | [IDE0303](ide0303.md) | Use collection expression for `Create()` | [dotnet_style_prefer_collection_expression](ide0303.md#dotnet_style_prefer_collection_expression) |
+> | [IDE0304](ide0304.md) | Use collection expression for builder | [dotnet_style_prefer_collection_expression](ide0304.md#dotnet_style_prefer_collection_expression) |
+> | [IDE0305](ide0305.md) | Use collection expression for fluent | [dotnet_style_prefer_collection_expression](ide0305.md#dotnet_style_prefer_collection_expression) |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
 

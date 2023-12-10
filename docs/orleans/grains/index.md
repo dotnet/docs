@@ -151,9 +151,9 @@ public Task GrainMethod6()
 
 `ValueTask<T>` can be used instead of `Task<T>`.
 
-## Grain reference
+## Grain references
 
-A Grain Reference is a proxy object that implements the same grain interface as the corresponding grain class. It encapsulates the logical identity (type and unique key) of the target grain. A grain reference is used for making calls to the target grain. Each grain reference is to a single grain (a single instance of the grain class), but one can create multiple independent references to the same grain.
+A Grain reference is a proxy object that implements the same grain interface as the corresponding grain class. It encapsulates the logical identity (type and unique key) of the target grain. Grain references are used for making calls to the target grain. Each grain reference is to a single grain (a single instance of the grain class), but one can create multiple independent references to the same grain.
 
 Since a grain reference represents the logical identity of the target grain, it is independent of the physical location of the grain, and stays valid even after a complete restart of the system. Developers can use grain references like any other .NET object. It can be passed to a method, used as a method return value, etc., and even saved to persistent storage.
 
@@ -172,6 +172,8 @@ From Orleans client code.
 ```csharp
 IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
 ```
+
+For more information on grain references, see the [grain reference documentation](grain-references.md).
 
 ### Grain method invocation
 
@@ -223,6 +225,7 @@ While `OnActivateAsync`, if overridden, is always called as part of the grain ac
 
 - [Grain extensions](grain-extensions.md)
 - [Grain identity](grain-identity.md)
+- [Grain references](grain-references.md)
 - [Grain persistence](grain-persistence/index.md)
 - [Grain lifecycle overview](grain-lifecycle.md)
 - [Grain placement](grain-placement.md)

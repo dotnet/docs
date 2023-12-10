@@ -1,127 +1,52 @@
 ---
-title: Grain identity
-description: Learn about grain identities in .NET Orleans.
-ms.date: 03/16/2022
+title: Grain references
+description: Learn about grain references in .NET Orleans.
+ms.date: 12/10/2023
 ---
 
-# Grain identity
+# Grain references
 
-In object-oriented environments, the identity of an object is hard to distinguish from a reference to it. Thus, when an object is created using new, the reference you get back represents all aspects of its identity except those that map the object to some external entity that it represents.
+Before calling a method on grain, you first need a reference to that grain. A Grain reference is a proxy object that implements the same grain interface as the corresponding grain class. It encapsulates the logical identity (type and unique key) of the target grain. Grain references are used for making calls to the target grain. Each grain reference is to a single grain (a single instance of the grain class), but one can create multiple independent references to the same grain.
 
-In distributed systems, object references cannot represent instance identity, since references are typically limited to a single address space. That is certainly the case for .NET references. Furthermore, a grain must have an identity regardless of whether it is active, so that we can activate it on demand. Therefore grains have a primary key. The primary key can be a <xref:System.Guid>, a <xref:System.Int64>, or a <xref:System.String>.
+Since a grain reference represents the logical identity of the target grain, it is independent of the physical location of the grain, and stays valid even after a complete restart of the system. Developers can use grain references like any other .NET object. It can be passed to a method, used as a method return value, etc., and even saved to persistent storage.
 
-The primary key is scoped to the grain type.
-Therefore, the complete identity of a grain is formed from the grain's type and its key.
+A grain reference can be obtained by passing the identity of a grain to the <xref:Orleans.IGrainFactory.GetGrain%60%601(System.Type,System.Guid)?displayProperty=nameWithType> method, where `T` is the grain interface and `key` is the unique key of the grain within the type.
 
-The caller of the grain decides which scheme should be used. The options are:
+The following are examples of how to obtain a grain reference of the `IPlayerGrain` interface defined above.
 
-* long
-* GUID
-* string
-* GUID + string
-* long + string
-
-Because the underlying data is the same, the schemes can be used interchangeably. When a long integer is used, a GUID is actually created and padded with zeros.
-
-Situations that require a singleton grain instance, such as a dictionary or registry, benefit from using `Guid.Empty` as its key. This is merely a convention, but by adhering to this convention it becomes clear at the caller site that a singleton grain is in use, as we saw in the first tutorial.
-
-## Using globally unique identifiers (GUIDs)
-
-GUIDs are useful when several processes could request a grain, such as several web servers in a web farm. You don't need to coordinate the allocation of keys, which could introduce a single point of failure in the system, or a system-side lock on a resource that could present a bottleneck. There is a very low chance of GUIDs colliding, so they would probably be the default choice when architecting an Orleans system.
-
-Referencing a grain by GUID in client code:
+From inside a grain class:
 
 ```csharp
-var grain = grainFactory.GetGrain<IExample>(Guid.NewGuid());
+Guid playerId = Guid.NewGuid(); // This would typically be read from an HTTP request parameter or elsewhere.
+IPlayerGrain player = GrainFactory.GetGrain<IPlayerGrain>(playerId);
 ```
 
-Retrieving the primary key from grain code:
+From Orleans client code:
 
 ```csharp
-public override Task OnActivateAsync()
-{
-    Guid primaryKey = this.GetPrimaryKey();
-    return base.OnActivateAsync();
-}
+Guid playerId = Guid.NewGuid(); // This would typically be read from an HTTP request parameter or elsewhere.
+IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
 ```
 
-## Using integers
+Grain references contain three pieces of information:
 
-A long integer is also available, which would make sense if the grain is persisted to a relational database, where numerical indexes are preferred over GUIDs.
+1. The grain _type_, which uniquely identifies the grain class.
+2. The grain _key_, which uniquely identifies a logical instance of that grain class.
+2. The _interface_ which the grain reference must implement.
 
-Referencing a grain by a long integer in client code:
+Notice that the above calls to <xref:Orleans.IGrainFactory.GetGrain*?displayProperty=nameWithType> accepted only two of those three things:
 
-```csharp
-var grain = grainFactory.GetGrain<IExample>(1);
-```
+* The _interface_ implemented by the grain reference, `IPlayerGrain`.
+* The grain _key_, which is the value of `playerId`.
 
-Retrieving the primary key from grain code:
+Above, we said that a grain reference contains a grain _type_, _key_, and _interface_ but we have only provided Orleans with the _key_ and _interface_ in our example code. That is because Orleans maintains a mapping between grain interfaces and grain types. When you ask the grain factory for `IShoppingCartGrain`, Orleans consults its mapping to find the corresponding grain type so that it can create the reference. This works when there is only one implementation of a grain interface, but if there are multiple implementations, then you will need to disambiguate them in the `GetGrain` call. For more information, see the section titled [disambiguating grain types](#disambiguating-grain-types).
 
-```csharp
-public override Task OnActivateAsync()
-{
-    long primaryKey = this.GetPrimaryKeyLong();
-    return base.OnActivateAsync();
-}
-```
-
-## Using strings
-
-A string is also available.
-
-Referencing a grain by String in client code:
-
-```csharp
-var grain = grainFactory.GetGrain<IExample>("myGrainKey");
-```
-
-Retrieving the primary key from grain code:
-
-```csharp
-public override Task OnActivateAsync()
-{
-    string primaryKey = this.GetPrimaryKeyString();
-    return base.OnActivateAsync();
-}
-```
-
-## Using compound primary key
-
-If you have a system that doesn't fit well with either GUIDs or longs, you can opt for a compound primary key, which allows you to use a combination of a GUID or long and a string to reference a grain.
-
-You can inherit your interface from <xref:Orleans.IGrainWithGuidCompoundKey> or <xref:Orleans.IGrainWithIntegerCompoundKey> interface like this:
-
-```csharp
-public interface IExampleGrain : Orleans.IGrainWithIntegerCompoundKey
-{
-    Task Hello();
-}
-```
-
-In client code, this adds a second argument to the <xref:Orleans.IGrainFactory.GetGrain%2A?displayProperty=nameWithType> method on the grain factory:
-
-```csharp
-var grain = grainFactory.GetGrain<IExample>(0, "a string!", null);
-```
-
-To access the compound key in the grain, we can call an overload on the <xref:Orleans.GrainExtensions.GetPrimaryKey%2A?displayProperty=nameWithType> method (the <xref:Orleans.GrainExtensions.GetPrimaryKeyLong%2A?displayProperty=nameWithType>):
-
-```csharp
-public class ExampleGrain : Orleans.Grain, IExampleGrain
-{
-    public Task Hello()
-    {
-        long primaryKey = this.GetPrimaryKeyLong(out string keyExtension);
-        Console.WriteLine($"Hello from {keyExtension}");
-
-        Task.CompletedTask;
-    }
-}
-```
+> [!NOTE]
+> Orleans generates grain reference implementation types for each grain interface in your application  during compilation. These grain reference implementations inherit from the <xref:Orleans.Runtime.GrainReference?displayProperty=nameWithType> class. `GetGrain` returns instances of the generated <xref:Orleans.Runtime.GrainReference?displayProperty=nameWithType> implementation corresponding to the requested grain interface.
 
 ## Disambiguating grain types
 
-When you have multiple implementations of a grain interface, such as in the following example, you will need to tell Orleans which implementation you want when creating a grain reference.
+When there are multiple implementations of a grain interface, such as in the following example, Orleans attempts to determine the intended implementation when creating a grain reference. Consider the following example, in which there are two implementations of the `ICounterGrain` interface:
 
 ```csharp
 public interface ICounterGrain : IGrainWithStringKey
@@ -146,11 +71,13 @@ The following call to `GetGrain` will throw an exception because Orleans does no
 
 ```csharp
 // This will throw an exception: there is no unambiguous mapping from ICounterGrain to a grain class.
-ICounterGrain myCounter = grainFactory.GetGrain<IDeviceGrain>("my-device");
+ICounterGrain myCounter = grainFactory.GetGrain<ICounterGrain>("my-counter");
 ```
 
+An <xref:System.ArgumentException?displayProperty=nameWithType> will is thrown with the following message:
+
 ```
-System.ArgumentException: Unable to identify a single appropriate grain type for interface ICounterGrain. Candidates: upcounter (UpCounterGrain), downcounter (DownCounterGrain)
+Unable to identify a single appropriate grain type for interface ICounterGrain. Candidates: upcounter (UpCounterGrain), downcounter (DownCounterGrain)
 ```
 
 The error message tells us which grain implementations Orleans has which match the requested grain interface type, `ICounterGrain`. It shows us the grain type names (`upcounter` and `downcounter`) as well as the grain classes (`UpCounterGrain` and `DownCounterGrain`).

@@ -1,33 +1,71 @@
 ---
 title: Grain identity
 description: Learn about grain identities in .NET Orleans.
-ms.date: 03/16/2022
+ms.date: 12/12/2023
 ---
 
 # Grain identity
 
-In object-oriented environments, the identity of an object is hard to distinguish from a reference to it. Thus, when an object is created using new, the reference you get back represents all aspects of its identity except those that map the object to some external entity that it represents.
+Grains in Orleans each have a single, unique, user-defined identifier which consists of two parts:
 
-In distributed systems, object references cannot represent instance identity, since references are typically limited to a single address space. That is certainly the case for .NET references. Furthermore, a grain must have an identity regardless of whether it is active, so that we can activate it on demand. Therefore grains have a primary key. The primary key can be a <xref:System.Guid>, a <xref:System.Int64>, or a <xref:System.String>.
+1. The grain _type_ name, which uniquely identifies the grain class.
+2. The grain _key_, which uniquely identifies a logical instance of that grain class.
 
+The grain type and key are both represented as human-readable strings in Orleans and, by convention, the grain identity is written with the grain type and key separated by a `/` character. For example, `shoppingcart/bob65` represents the grain type named `shoppingcart` with a key `bob65`.
+
+It is not common to construct grain identities directly. Instead, it is more common to create [grain references](./grain-references.md) using <xref:Orleans.IGrainFactory?displayProperty=nameWithType>.
+
+The following sections discuss grain type names and grain keys in more detail.
+
+## Grain type names
+
+Orleans will create a grain type name for you based on your grain implementation class by removing the suffix "Grain" from the class name, if it's present, and converting the resulting string into its lower-case representation. For example, a class named `ShoppingCartGrain` will be given the grain type name `shoppingcart`. It is recommended that grain type names and keys consist only of printable characters such as alpha-numeric (`a`-`z`, `A`-`Z`, and `0`-`9`) characters and symbols such as `-`, `_`, `@`, `=`. Other characters may or may not be supported and will often need special treatment when printed in logs or appearing as identifiers in other systems such as databases.
+
+Alternatively, the <xref:Orleans.Runtime.GrainTypeAttribute?displayProperty=nameWithType> attribute can be used to customize the grain type name for the grain class which it is attached to, as in the following example:
+
+```csharp
+[GrainType("cart")]
+public class ShoppingCartGrain : IShoppingCartGrain
+{
+    // Add your grain implementation here
+}
+```
+
+In the above example, the grain class, `ShoppingCartGrain` has a grain type name of `cart`. Each grain can only have one grain type name.
+
+For generic grains, the generic arity must be included in the grain type name. For example, consider the following `DictionaryGrain<K, V>` class:
+
+```csharp
+[GrainType("dict`2")]
+public class DictionaryGrain<K, V> : IDictionaryGrain<K, V>
+{
+    // Add your grain implementation here
+}
+```
+
+The grain class has two generic parameters, so a backtick `` ` `` followed by the generic arity, 2, is added to the end of the grain type name, `dict` to create the grain type name ``dict`2``, as specified in the attribute on the grain class, ``[GrainType("dict`2")]``.
+
+## Grain keys
+
+For convenience, Orleans exposes methods which allow construction of grain keys from a <xref:System.Guid> or a <xref:System.Int64>, in addition to a <xref:System.String>.
 The primary key is scoped to the grain type.
 Therefore, the complete identity of a grain is formed from the grain's type and its key.
 
 The caller of the grain decides which scheme should be used. The options are:
 
-* long
-* GUID
-* string
-* GUID + string
-* long + string
+* <xref:System.Guid?displayProperty=nameWithType>
+* <xref:System.Int64?displayProperty=nameWithType>
+* <xref:System.String?displayProperty=nameWithType>
+* <xref:System.Guid?displayProperty=nameWithType> and <xref:System.String?displayProperty=nameWithType>
+* <xref:System.Int64?displayProperty=nameWithType> and <xref:System.String?displayProperty=nameWithType>
 
-Because the underlying data is the same, the schemes can be used interchangeably. When a long integer is used, a GUID is actually created and padded with zeros.
+Because the underlying data is the same, the schemes can be used interchangeably: they are all encoded as strings.
 
-Situations that require a singleton grain instance, such as a dictionary or registry, benefit from using `Guid.Empty` as its key. This is merely a convention, but by adhering to this convention it becomes clear at the caller site that a singleton grain is in use, as we saw in the first tutorial.
+Situations that require a singleton grain instance can use a well-known, fixed value such as `"default"`. This is merely a convention, but by adhering to this convention it becomes clear at the caller site that a singleton grain is in use.
 
-## Using globally unique identifiers (GUIDs)
+### Using globally unique identifiers (GUIDs) as keys
 
-GUIDs are useful when several processes could request a grain, such as several web servers in a web farm. You don't need to coordinate the allocation of keys, which could introduce a single point of failure in the system, or a system-side lock on a resource that could present a bottleneck. There is a very low chance of GUIDs colliding, so they would probably be the default choice when architecting an Orleans system.
+<xref:System.Guid?displayProperty=nameWithType> make useful keys when randomness and global uniqueness are desired, such as when creating a new job in a job processing system. You don't need to coordinate the allocation of keys, which could introduce a single point of failure in the system, or a system-side lock on a resource that could present a bottleneck. There is a very low chance of GUIDs colliding, so they are a common choice when architecting a system which needs to allocate random identifiers.
 
 Referencing a grain by GUID in client code:
 
@@ -45,7 +83,7 @@ public override Task OnActivateAsync()
 }
 ```
 
-## Using integers
+### Using integers as keys
 
 A long integer is also available, which would make sense if the grain is persisted to a relational database, where numerical indexes are preferred over GUIDs.
 
@@ -65,7 +103,7 @@ public override Task OnActivateAsync()
 }
 ```
 
-## Using strings
+### Using strings as keys
 
 A string is also available.
 
@@ -85,7 +123,7 @@ public override Task OnActivateAsync()
 }
 ```
 
-## Using compound primary key
+### Using compound keys
 
 If you have a system that doesn't fit well with either GUIDs or longs, you can opt for a compound primary key, which allows you to use a combination of a GUID or long and a string to reference a grain.
 
@@ -119,165 +157,6 @@ public class ExampleGrain : Orleans.Grain, IExampleGrain
 }
 ```
 
-## Disambiguating grain types
+## Why grains use logical identifiers
 
-When you have multiple implementations of a grain interface, such as in the following example, you will need to tell Orleans which implementation you want when creating a grain reference.
-
-```csharp
-public interface ICounterGrain : IGrainWithStringKey
-{
-  ValueTask<int> UpdateCount();
-}
-
-public class UpCounterGrain : ICounterGrain
-{
-  private int _count;
-  public ValueTask<string> UpdateCount() => new(++_count); // Increment count
-}
-
-public class DownCounterGrain : ICounterGrain
-{
-  private int _count;
-  public ValueTask<string> UpdateCount() => new(--_count); // Decrement count
-}
-```
-
-The following call to `GetGrain` will throw an exception because Orleans does not know how to unambiguously map `ICounterGrain` to one of the grain classes.
-
-```csharp
-// This will throw an exception: there is no unambiguous mapping from ICounterGrain to a grain class.
-ICounterGrain myCounter = grainFactory.GetGrain<IDeviceGrain>("my-device");
-```
-
-```
-System.ArgumentException: Unable to identify a single appropriate grain type for interface ICounterGrain. Candidates: upcounter (UpCounterGrain), downcounter (DownCounterGrain)
-```
-
-The error message tells us which grain implementations Orleans has which match the requested grain interface type, `ICounterGrain`. It shows us the grain type names (`upcounter` and `downcounter`) as well as the grain classes (`UpCounterGrain` and `DownCounterGrain`).
-
-> [!NOTE] The grain type names in the above error message, `upcounter` and `downcounter`, are derived from the grain class names, `UpCounterGrain` and `DownCounterGrain` respectively. This is the default behavior in Orleans and it can be customized by adding a `[GrainType(string)]` attribute to the grain class. For example:
-> ```csharp
-> [GrainType("up")]
-> public class UpCounterGrain : IUpCounterGrain { /* as above */ }
-> ```
-
-There are several ways to resolve this ambiguity and in the following subsections we will examine each.
-
-### Disambiguating grain types using unique marker interfaces
-
-The clearest way to disambiguate these grains is to give them unique grain interfaces. For example, if we add the interface `IUpCounterGrain` to the `UpCounterGrain` class and add the interface `IDownCounterGrain` to the `DownCounterGrain` class, like in the following example, then we can resolve the correct grain reference by passing `IUpCounterGrain` or `IDownCounterGrain` to the `GetGrain<T>` call instead of passing the ambiguous `ICounterGrain` type.
-
-```csharp
-public interface ICounterGrain : IGrainWithStringKey
-{
-  ValueTask<int> UpdateCount();
-}
-
-// Define unique interfaces for our implementations
-public interface IUpCounterGrain : ICounterGrain, IGrainWithStringKey {}
-public interface IDownCounterGrain : ICounterGrain, IGrainWithStringKey {}
-
-public class UpCounterGrain : IUpCounterGrain
-{
-  private int _count;
-  public ValueTask<string> UpdateCount() => new(++_count); // Increment count
-}
-
-public class DownCounterGrain : IDownCounterGrain
-{
-  private int _count;
-  public ValueTask<string> UpdateCount() => new(--_count); // Decrement count
-}
-```
-
-Now, we can create a reference to either grain as follows:
-
-```csharp
-// Get a reference to an UpCounterGrain.
-ICounterGrain myUpCounter = grainFactory.GetGrain<IUpCounterGrain>("my-counter");
-
-// Get a reference to a DownCounterGrain.
-ICounterGrain myDownCounter = grainFactory.GetGrain<IDownCounterGrain>("my-counter");
-```
-
-> [!NOTE] In the above example, we created two grain references with the same key, but different grain types. The first, stored in the `myUpCounter` variable, is a reference to the grain with the id `upcounter/my-counter`. The second, stored in the `myDownCounter` variable, is a reference to the grain with the id `downcounter/my-counter`. It is the combination of grain _type_ and grain _key_ which uniquely identify a grain. Therefore, `myUpCounter` and `myDownCounter` refer to different grains.
-
-#### Disambiguating grain types by providing a grain class prefix
-
-You can provide a grain class name prefix to <xref:Orleans.IGrainFactory.GetGrain*?displayProperty=nameWithType>, for example:
-
-```csharp
-ICounterGrain myUpCounter = grainFactory.GetGrain<ICounterGrain>("my-counter", grainClassNamePrefix: "Up");
-ICounterGrain myDownCounter = grainFactory.GetGrain<ICounterGrain>("my-counter", grainClassNamePrefix: "Down");
-```
-
-### Specifying the default grain implementation using the naming convention
-
-When disambiguating multiple implementations of the same grain interface, Orleans will select an implementation using the convention of stripping a leading 'I' from the interface name. For example, if the interface name is `ICounterGrain` and there are two implementations, `CounterGrain` and `DownCounterGrain`, Orleans will chose `CounterGrain` when asked for a reference to `ICounterGrain`, as in the following example:
-
-```csharp
-/// This will refer to an instance of CounterGrain, since that matches the convention.
-ICounterGrain myUpCounter = grainFactory.GetGrain<ICounterGrain>("my-counter");
-```
-
-### Specifying the default grain type using an attribute
-
-The <xref:Orleans.Metadata.DefaultGrainTypeAttribute?displayProperty=nameWithType> attribute can be added to a grain interface to specify the grain type of the default implementation for that interface, as in the following example:
-
-```csharp
-[DefaultGrainType("up-counter")]
-public interface ICounterGrain : IGrainWithStringKey
-{
-  ValueTask<int> UpdateCount();
-}
-
-[GrainType("up-counter")]
-public class UpCounterGrain : ICounterGrain
-{
-  private int _count;
-  public ValueTask<string> UpdateCount() => new(++_count); // Increment count
-}
-
-[GrainType("down-counter")]
-public class DownCounterGrain : ICounterGrain
-{
-  private int _count;
-  public ValueTask<string> UpdateCount() => new(--_count); // Decrement count
-}
-```
-
-```csharp
-/// This will refer to an instance of UpCounterGrain, due to the [DefaultGrainType("up-counter"')] attribute
-ICounterGrain myUpCounter = grainFactory.GetGrain<ICounterGrain>("my-counter");
-```
-
-### Disambiguating grain types by providing the resolved grain id
-
-Some overloads of <xref:Orleans.IGrainFactory.GetGrain*?displayProperty=nameWithType> accept an argument of type <xref:Orleans.Runtime.GrainId?displayProperty=nameWithType>. When using these overloads, Orleans does not need to map from an interface type to a grain type and therefore there is no ambiguity to be resolved. For example:
-
-```csharp
-public interface ICounterGrain : IGrainWithStringKey
-{
-  ValueTask<int> UpdateCount();
-}
-
-[GrainType("up-counter")]
-public class UpCounterGrain : ICounterGrain
-{
-  private int _count;
-  public ValueTask<string> UpdateCount() => new(++_count); // Increment count
-}
-
-[GrainType("down-counter")]
-public class DownCounterGrain : ICounterGrain
-{
-  private int _count;
-  public ValueTask<string> UpdateCount() => new(--_count); // Decrement count
-}
-```
-
-```csharp
-// This will refer to an instance of UpCounterGrain, since "up-counter" was specified as the grain type
-// and the UpCounterGrain uses [GrainType("up-counter")] to specify its grain type.
-ICounterGrain myUpCounter = grainFactory.GetGrain<ICounterGrain>(GrainId.Create("up-counter", "my-counter"));
-```
+In object-oriented environments, such as .NET, the identity of an object is hard to distinguish from a reference to it. When an object is created using the `new` keyword, the reference you get back represents all aspects of its identity except those that map the object to some external entity that it represents. Orleans is designed for distributed systems. In distributed systems, object references cannot represent instance identity since object references are limited to a single process' address space. Orleans uses logical identifiers to avoid this limitation. Grain use logical identifiers so that grain references remain valid across process lifetimes and are portable from one process to another, allowing them to be stored and later retrieved or to be sent across a network to another process in the application, all while still referring to the same entity: the grain which the reference was created for.

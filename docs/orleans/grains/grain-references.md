@@ -6,7 +6,7 @@ ms.date: 12/10/2023
 
 # Grain references
 
-Before calling a method on grain, you first need a reference to that grain. A Grain reference is a proxy object that implements the same grain interface as the corresponding grain class. It encapsulates the logical identity (type and unique key) of the target grain. Grain references are used for making calls to the target grain. Each grain reference is to a single grain (a single instance of the grain class), but one can create multiple independent references to the same grain.
+Before calling a method on grain, you first need a reference to that grain. A grain reference is a proxy object that implements the same grain interface as the corresponding grain class. It encapsulates the logical identity (type and unique key) of the target grain. Grain references are used for making calls to the target grain. Each grain reference is to a single grain (a single instance of the grain class), but one can create multiple independent references to the same grain.
 
 Since a grain reference represents the logical identity of the target grain, it is independent of the physical location of the grain, and stays valid even after a complete restart of the system. Developers can use grain references like any other .NET object. It can be passed to a method, used as a method return value, etc., and even saved to persistent storage.
 
@@ -14,7 +14,7 @@ A grain reference can be obtained by passing the identity of a grain to the <xre
 
 The following are examples of how to obtain a grain reference of the `IPlayerGrain` interface defined above.
 
-From inside a grain class:
+From within a grain class:
 
 ```csharp
 Guid playerId = Guid.NewGuid(); // This would typically be read from an HTTP request parameter or elsewhere.
@@ -32,7 +32,10 @@ Grain references contain three pieces of information:
 
 1. The grain _type_, which uniquely identifies the grain class.
 2. The grain _key_, which uniquely identifies a logical instance of that grain class.
-2. The _interface_ which the grain reference must implement.
+3. The _interface_ which the grain reference must implement.
+
+> [!NOTE]
+> The grain _type_ and _key_ form the [grain identity](grain-identity.md).
 
 Notice that the above calls to <xref:Orleans.IGrainFactory.GetGrain*?displayProperty=nameWithType> accepted only two of those three things:
 
@@ -44,7 +47,7 @@ Above, we said that a grain reference contains a grain _type_, _key_, and _inter
 > [!NOTE]
 > Orleans generates grain reference implementation types for each grain interface in your application  during compilation. These grain reference implementations inherit from the <xref:Orleans.Runtime.GrainReference?displayProperty=nameWithType> class. `GetGrain` returns instances of the generated <xref:Orleans.Runtime.GrainReference?displayProperty=nameWithType> implementation corresponding to the requested grain interface.
 
-## Disambiguating grain types
+## Disambiguating grain type resolution
 
 When there are multiple implementations of a grain interface, such as in the following example, Orleans attempts to determine the intended implementation when creating a grain reference. Consider the following example, in which there are two implementations of the `ICounterGrain` interface:
 
@@ -74,7 +77,7 @@ The following call to `GetGrain` will throw an exception because Orleans does no
 ICounterGrain myCounter = grainFactory.GetGrain<ICounterGrain>("my-counter");
 ```
 
-An <xref:System.ArgumentException?displayProperty=nameWithType> will is thrown with the following message:
+An <xref:System.ArgumentException?displayProperty=nameWithType> will thrown with the following message:
 
 ```
 Unable to identify a single appropriate grain type for interface ICounterGrain. Candidates: upcounter (UpCounterGrain), downcounter (DownCounterGrain)

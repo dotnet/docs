@@ -14,7 +14,7 @@ For more thorough instructions, see the [Project Setup](../tutorials-and-samples
 
 Grains interact with each other and get called from outside by invoking methods declared as part of the respective grain interfaces. A grain class implements one or more previously declared grain interfaces. All methods of a grain interface must return a <xref:System.Threading.Tasks.Task> (for `void` methods), a <xref:System.Threading.Tasks.Task%601> or a <xref:System.Threading.Tasks.ValueTask%601> (for methods returning values of type `T`).
 
-The following is an excerpt from the Orleans version 1.5 Presence Service sample:
+The following is an excerpt from the Orleans Presence Service sample:
 
 ```csharp
 public interface IPlayerGrain : IGrainWithGuidKey
@@ -173,7 +173,7 @@ From Orleans client code.
 IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
 ```
 
-For more information on grain references, see the [grain reference documentation](grain-references.md).
+For more information about grain references, see the [grain reference article](grain-references.md).
 
 ### Grain method invocation
 

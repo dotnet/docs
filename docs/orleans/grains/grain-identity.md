@@ -19,7 +19,7 @@ The following sections discuss grain type names and grain keys in more detail.
 
 ## Grain type names
 
-Orleans will create a grain type name for you based on your grain implementation class by removing the suffix "Grain" from the class name, if it's present, and converting the resulting string into its lower-case representation. For example, a class named `ShoppingCartGrain` will be given the grain type name `shoppingcart`. It is recommended that grain type names and keys consist only of printable characters such as alpha-numeric (`a`-`z`, `A`-`Z`, and `0`-`9`) characters and symbols such as `-`, `_`, `@`, `=`. Other characters may or may not be supported and will often need special treatment when printed in logs or appearing as identifiers in other systems such as databases.
+Orleans creates a grain type name for you based on your grain implementation class by removing the suffix "Grain" from the class name, if it's present, and converting the resulting string into its lower-case representation. For example, a class named `ShoppingCartGrain` will be given the grain type name `shoppingcart`. It's recommended that grain type names and keys consist only of printable characters such as alpha-numeric (`a`-`z`, `A`-`Z`, and `0`-`9`) characters and symbols such as `-`, `_`, `@`, `=`. Other characters may or may not be supported and will often need special treatment when printed in logs or appearing as identifiers in other systems such as databases.
 
 Alternatively, the <xref:Orleans.Runtime.GrainTypeAttribute?displayProperty=nameWithType> attribute can be used to customize the grain type name for the grain class which it is attached to, as in the following example:
 

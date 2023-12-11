@@ -17,7 +17,8 @@ The following are examples of how to obtain a grain reference of the `IPlayerGra
 From within a grain class:
 
 ```csharp
-Guid playerId = Guid.NewGuid(); // This would typically be read from an HTTP request parameter or elsewhere.
+// This would typically be read from an HTTP request parameter or elsewhere.
+Guid playerId = Guid.NewGuid();
 IPlayerGrain player = GrainFactory.GetGrain<IPlayerGrain>(playerId);
 ```
 

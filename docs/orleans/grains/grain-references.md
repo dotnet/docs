@@ -105,7 +105,7 @@ The clearest way to disambiguate these grains is to give them unique grain inter
 ```csharp
 public interface ICounterGrain : IGrainWithStringKey
 {
-  ValueTask<int> UpdateCount();
+    ValueTask<int> UpdateCount();
 }
 
 // Define unique interfaces for our implementations

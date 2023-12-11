@@ -131,10 +131,10 @@ Inject the <xref:Microsoft.Extensions.Hosting.IHostEnvironment> service into a c
 
 Additionally, the `IHostEnvironment` service exposes the ability to evaluate the environment with the help of these extension methods:
 
-- <xref:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions.IsDevelopment?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions.IsEnvironment?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions.IsProduction?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions.IsStaging?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions.IsDevelopment%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions.IsEnvironment%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions.IsProduction%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions.IsStaging%2A?displayProperty=nameWithType>
 
 ## Host configuration
 

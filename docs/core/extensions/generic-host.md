@@ -3,12 +3,12 @@ title: .NET Generic Host
 author: IEvangelist
 description: Learn about the .NET Generic Host, which is responsible for app startup and lifetime management.
 ms.author: dapine
-ms.date: 06/23/2023
+ms.date: 12/11/2023
 ---
 
 # .NET Generic Host
 
-The Worker Service templates create a .NET Generic Host, <xref:Microsoft.Extensions.Hosting.HostBuilder>. The Generic Host can be used with other types of .NET applications, such as Console apps.
+In this article, you learn about the various patterns for configuring and building a .NET Generic Host available in the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package. The .NET Generic Host is responsible for app startup and lifetime management. The Worker Service templates create a .NET Generic Host, <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder>. The Generic Host can be used with other types of .NET applications, such as Console apps.
 
 A *host* is an object that encapsulates an app's resources and lifetime functionality, such as:
 
@@ -20,14 +20,16 @@ A *host* is an object that encapsulates an app's resources and lifetime function
 
 When a host starts, it calls <xref:Microsoft.Extensions.Hosting.IHostedService.StartAsync%2A?displayProperty=nameWithType> on each implementation of <xref:Microsoft.Extensions.Hosting.IHostedService> registered in the service container's collection of hosted services. In a worker service app, all `IHostedService` implementations that contain <xref:Microsoft.Extensions.Hosting.BackgroundService> instances have their <xref:Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync%2A?displayProperty=nameWithType> methods called.
 
-The main reason for including all of the app's interdependent resources in one object is lifetime management: control over app startup and graceful shutdown. Reference the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package to achieve lifetime management.
+The main reason for including all of the app's interdependent resources in one object is lifetime management: control over app startup and graceful shutdown.
 
 ## Set up a host
 
 The host is typically configured, built, and run by code in the `Program` class. The `Main` method:
 
+# [IHostApplicationBuilder](#tab/appbuilder)
+
 - Calls a <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> method to create and configure a builder object.
-- Calls <xref:Microsoft.Extensions.Hosting.IHostBuilder.Build> to create an <xref:Microsoft.Extensions.Hosting.IHost> instance.
+- Calls <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Build> to create an <xref:Microsoft.Extensions.Hosting.IHost> instance.
 - Calls <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run%2A> or <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync%2A> method on the host object.
 
 The .NET Worker Service templates generate the following code to create a Generic Host:
@@ -42,7 +44,32 @@ IHost host = builder.Build();
 host.Run();
 ```
 
-## Default builder settings
+# [IHostBuilder](#tab/hostbuilder)
+
+- Calls a <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder> method to create and configure a builder object.
+- Calls <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Build> to create an <xref:Microsoft.Extensions.Hosting.IHost> instance.
+- Calls <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run%2A> or <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync%2A> method on the host object.
+
+The .NET Worker Service templates generate the following code to create a Generic Host:
+
+```csharp
+using Example.WorkerService;
+
+IHostBuilder builder = Host.CreateDefaultBuilder(args);
+builder.ConfigureServices(services =>
+{
+    services.AddHostedService<Worker>();
+});
+
+IHost host = builder.Build();
+host.Run();
+```
+
+---
+
+For more information on Worker Services, see [Worker Services in .NET](workers.md).
+
+## Host builder settings
 
 The <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> method:
 
@@ -67,7 +94,7 @@ The <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Services?displayPr
 
 ## Framework-provided services
 
-The following services are registered automatically:
+When you call either <xref:Microsoft.Extensions.Hosting.IHostBuilder.Build?displayProperty=nameWithType> or <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Build?displayProperty=nameWithType>, the following services are registered automatically:
 
 - [IHostApplicationLifetime](#ihostapplicationlifetime)
 - [IHostLifetime](#ihostlifetime)
@@ -102,9 +129,34 @@ Inject the <xref:Microsoft.Extensions.Hosting.IHostEnvironment> service into a c
 - <xref:Microsoft.Extensions.Hosting.IHostEnvironment.ContentRootPath?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Hosting.IHostEnvironment.EnvironmentName?displayProperty=nameWithType>
 
+Additionally, the `IHostEnvironment` service exposes the ability to evaluate the environment with the help of these extension methods:
+
+- <xref:Microsoft.Extensions.Hosting.IHostEnvironment.IsDevelopment?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.IHostEnvironment.IsEnvironment?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.IHostEnvironment.IsProduction?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.IHostEnvironment.IsStaging?displayProperty=nameWithType>
+
 ## Host configuration
 
 Host configuration is used to configure properties of the [IHostEnvironment](#ihostenvironment) implementation.
+
+# [IHostApplicationBuilder](#tab/appbuilder)
+
+The host configuration is available in [HostBuilderContext.Configuration](xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration) property and the environment implementation is available in [HostBuilderContext.Environment](xref:Microsoft.Extensions.Hosting.HostBuilderContext.Environment) property. To configure the host, access the `Configuration` property and call any of the available extension methods. It represents the configuration built from the host, whereas the `IConfigurationBuilder` is the builder object used to configure the app.
+
+To add host configuration, consider the following example:
+
+:::code language="csharp" source="snippets/configuration/console-host/Program.cs" highlight="6-9":::
+
+The preceding code:
+
+- Sets the content root to the path returned by <xref:System.IO.Directory.GetCurrentDirectory>.
+- Loads host configuration from:
+  - *hostsettings.json*.
+  - Environment variables prefixed with `PREFIX_`.
+  - Command-line arguments.
+
+# [IHostBuilder](#tab/hostbuilder)
 
 The host configuration is available in [HostBuilderContext.Configuration](xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration) within the <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A> method. When you call the `ConfigureAppConfiguration` method, the `HostBuilderContext` and `IConfigurationBuilder` are passed into the `configureDelegate`. The `configureDelegate` is defined as an `Action<HostBuilderContext, IConfigurationBuilder>`. The host builder context exposes the `Configuration` property, which is an instance of `IConfiguration`. It represents the configuration built from the host, whereas the `IConfigurationBuilder` is the builder object used to configure the app.
 
@@ -113,15 +165,23 @@ The host configuration is available in [HostBuilderContext.Configuration](xref:M
 
 To add host configuration, call <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureHostConfiguration%2A> on `IHostBuilder`. `ConfigureHostConfiguration` can be called multiple times with additive results. The host uses whichever option sets a value last on a given key.
 
-The following example creates host configuration:
-
-:::code language="csharp" source="snippets/configuration/console-host/Program.cs" highlight="6-9":::
+---
 
 ## App configuration
 
-App configuration is created by calling <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A> on `IHostBuilder`. `ConfigureAppConfiguration` can be called multiple times with additive results. The app uses whichever option sets a value last on a given key.
+# [IHostApplicationBuilder](#tab/appbuilder)
+
+App configuration is created by calling <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A> on an <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder>. The <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration?displayProperty=nameWithType> property is exposed to allow for .
 
 The configuration created by `ConfigureAppConfiguration` is available in [HostBuilderContext.Configuration](xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration%2A) for subsequent operations and as a service from DI. The host configuration is also added to the app configuration.
+
+# [IHostBuilder](#tab/hostbuilder)
+
+App configuration is created by calling <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A> on an <xref:Microsoft.Extensions.Hosting.IHostBuilder>. The `ConfigureAppConfiguration` method can be called multiple times with additive results. The app uses whichever option sets a value last on a given key.
+
+The configuration created by `ConfigureAppConfiguration` is available in [HostBuilderContext.Configuration](xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration%2A) for subsequent operations and as a service from DI. The host configuration is also added to the app configuration.
+
+---
 
 For more information, see [Configuration in .NET](configuration.md).
 

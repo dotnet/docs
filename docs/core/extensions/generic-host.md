@@ -71,6 +71,8 @@ For more information on Worker Services, see [Worker Services in .NET](workers.m
 
 ## Host builder settings
 
+# [IHostApplicationBuilder](#tab/appbuilder)
+
 The <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> method:
 
 - Sets the content root to the path returned by <xref:System.IO.Directory.GetCurrentDirectory>.
@@ -91,6 +93,31 @@ The <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> method:
 - Enables scope validation and [dependency validation](xref:Microsoft.Extensions.DependencyInjection.ServiceProviderOptions.ValidateOnBuild) when the environment is `Development`.
 
 The <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Services?displayProperty=nameWithType> is an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection?displayProperty=nameWithType> instance. These services are used to build an <xref:System.IServiceProvider> that's used with dependency injection to resolve the registered services.
+
+# [IHostBuilder](#tab/hostbuilder)
+
+The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder%2A> method:
+
+- Sets the content root to the path returned by <xref:System.IO.Directory.GetCurrentDirectory>.
+- Loads [host configuration](#host-configuration) from:
+  - Environment variables prefixed with `DOTNET_`.
+  - Command-line arguments.
+- Loads app configuration from:
+  - *appsettings.json*.
+  - *appsettings.{Environment}.json*.
+  - Secret Manager when the app runs in the `Development` environment.
+  - Environment variables.
+  - Command-line arguments.
+- Adds the following logging providers:
+  - Console
+  - Debug
+  - EventSource
+  - EventLog (only when running on Windows)
+- Enables scope validation and [dependency validation](xref:Microsoft.Extensions.DependencyInjection.ServiceProviderOptions.ValidateOnBuild) when the environment is `Development`.
+
+Use the <xref:Microsoft.Extensions.Hosting.IHostBuilder.ConfigureServices%2A> method to add services to the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection?displayProperty=nameWithType> instance. These services are used to build an <xref:System.IServiceProvider> that's used with dependency injection to resolve the registered services.
+
+---
 
 ## Framework-provided services
 

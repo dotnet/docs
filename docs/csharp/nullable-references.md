@@ -99,9 +99,11 @@ bool IsNull(string? s) => s == null;
 ```
 
 Based on inspection, any developer would consider this code safe, and one that shouldn't generate warnings. However the compiler doesn't know that `IsNull` provides a null check and will issue a warning for the `message.ToUpper()` statement, considering `message` to be a *maybe-null* variable. To fix this, we can use the [`NotNullWhen`](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute) attribute:
+
 ```csharp
 bool IsNull([NotNullWhen(false)] string? s) => s == null;
 ```
+
 This informs the compiler, that, if `IsNull` returns `false`, the parameter `s` is not null. This allows the compiler to change the *null-state* of `message` to *not-null* inside the `if (!IsNull(message)) {...}` block. Thanks to this, no warnings will be issued.
 
 Attributes provide detailed information about the null state of arguments, return values, and members of the object instance used to invoke a member. The details on each attribute can be found in the language reference article on [nullable reference attributes](language-reference/attributes/nullable-analysis.md). The .NET runtime APIs have all been annotated in .NET 5. You improve the static analysis by annotating your APIs to provide semantic information about the *null-state* of arguments and return values.

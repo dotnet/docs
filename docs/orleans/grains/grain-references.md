@@ -94,7 +94,7 @@ The error message tells you which grain implementation's Orleans has which match
 > public class UpCounterGrain : IUpCounterGrain { /* as above */ }
 > ```
 
-There are several ways to resolve this ambiguity and in the following subsections we will examine each.
+There are several ways to resolve this ambiguity detailed in the following subsections.
 
 ### Disambiguating grain types using unique marker interfaces
 

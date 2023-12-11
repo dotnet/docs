@@ -3,7 +3,7 @@ title: Localization
 description: Learn the concepts of localization while learning how to use the IStringLocalizer and IStringLocalizerFactory implementations in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/23/2023
+ms.date: 12/11/2023
 helpviewer_keywords:
   - "culture, localization"
   - "application development [.NET], localization"
@@ -155,7 +155,7 @@ In the preceding C# code:
 - The <xref:Microsoft.Extensions.Localization.RootNamespaceAttribute> sets `"Localization.Example"` as the root namespace.
 - The <xref:System.Console.OutputEncoding?displayProperty=nameWithType> is assigned to <xref:System.Text.Encoding.Unicode?displayProperty=nameWithType>.
 - When a single argument is passed to `args`, the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> and <xref:System.Globalization.CultureInfo.CurrentUICulture?displayProperty=nameWithType> are assigned the result of <xref:System.Globalization.CultureInfo.GetCultureInfo(System.String)?displayProperty=nameWithType> given the `arg[0]`.
-- The <xref:Microsoft.Extensions.Hosting.Host> is created with [defaults](generic-host.md#default-builder-settings).
+- The <xref:Microsoft.Extensions.Hosting.Host> is created with [defaults](generic-host.md#host-builder-settings).
 - The localization services, `MessageService`, and `ParameterizedMessageService` are registered to the `IServiceCollection` for DI.
 - To remove noise, logging is configured to ignore any log level lower than a warning.
 - The `MessageService` is resolved from the `IServiceProvider` instance and its resulting message is logged.

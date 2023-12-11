@@ -131,10 +131,10 @@ Inject the <xref:Microsoft.Extensions.Hosting.IHostEnvironment> service into a c
 
 Additionally, the `IHostEnvironment` service exposes the ability to evaluate the environment with the help of these extension methods:
 
-- <xref:Microsoft.Extensions.Hosting.IHostEnvironment.IsDevelopment?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Hosting.IHostEnvironment.IsEnvironment?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Hosting.IHostEnvironment.IsProduction?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Hosting.IHostEnvironment.IsStaging?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions.IsDevelopment?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions.IsEnvironment?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions.IsProduction?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions.IsStaging?displayProperty=nameWithType>
 
 ## Host configuration
 
@@ -142,7 +142,7 @@ Host configuration is used to configure properties of the [IHostEnvironment](#ih
 
 # [IHostApplicationBuilder](#tab/appbuilder)
 
-The host configuration is available in [HostBuilderContext.Configuration](xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration) property and the environment implementation is available in [HostBuilderContext.Environment](xref:Microsoft.Extensions.Hosting.HostBuilderContext.Environment) property. To configure the host, access the `Configuration` property and call any of the available extension methods. It represents the configuration built from the host, whereas the `IConfigurationBuilder` is the builder object used to configure the app.
+The host configuration is available in <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration?displayProperty=nameWithType> property and the environment implementation is available in <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Environment?displayProperty=nameWithType> property. To configure the host, access the `Configuration` property and call any of the available extension methods.
 
 To add host configuration, consider the following example:
 

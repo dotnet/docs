@@ -24,7 +24,8 @@ IPlayerGrain player = GrainFactory.GetGrain<IPlayerGrain>(playerId);
 From Orleans client code:
 
 ```csharp
-Guid playerId = Guid.NewGuid(); // This would typically be read from an HTTP request parameter or elsewhere.
+// This would typically be read from an HTTP request parameter or elsewhere.
+Guid playerId = Guid.NewGuid();
 IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
 ```
 

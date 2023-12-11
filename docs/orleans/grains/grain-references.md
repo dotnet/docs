@@ -115,14 +115,16 @@ public interface IDownCounterGrain : ICounterGrain, IGrainWithStringKey {}
 
 public class UpCounterGrain : IUpCounterGrain
 {
-  private int _count;
-  public ValueTask<string> UpdateCount() => new(++_count); // Increment count
+    private int _count;
+
+    public ValueTask<string> UpdateCount() => new(++_count); // Increment count
 }
 
 public class DownCounterGrain : IDownCounterGrain
 {
-  private int _count;
-  public ValueTask<string> UpdateCount() => new(--_count); // Decrement count
+    private int _count;
+
+    public ValueTask<string> UpdateCount() => new(--_count); // Decrement count
 }
 ```
 

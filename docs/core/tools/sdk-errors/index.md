@@ -2,7 +2,7 @@
 title: ".NET SDK error list"
 description: A complete list of NETSDKxxxx errors, with links to more info where more info is available.
 ms.topic: error-reference
-ms.date: 12/07/2023
+ms.date: 12/11/2023
 f1_keywords:
 - NETSDK1001
 - NETSDK1002
@@ -164,6 +164,11 @@ f1_keywords:
 - NETSDK1204
 - NETSDK1205
 - NETSDK1207
+- NETSDK1208
+- NETSDK1209
+- NETSDK1210
+- NETSDK1211
+- NETSDK1212
 - NETSDK1213
 ---
 # .NET SDK error list

@@ -213,6 +213,12 @@ await joinedTask;
 // asynchronously after joinedTask is resolve.
 ```
 
+### Error propagation
+
+When a grain method throws an exception, Orleans will propagate that exception up the calling stack, across hosts as necessary. For this to work as intended, exceptions must be serializable by Orleans and hosts which are handling the exception must have the exception type available. If an exception type is not available, the exception will be thrown as an instance of <xref:Orleans.Serialization.UnavailableExceptionFallbackException?displayProperty=nameWithType>, preserving the message, type, and stack trace of the original exception. 
+
+Exeptions thrown from grain methods do not cause the grain to be deactivated unless the exception inherits from <xref:Orleans.Storage.InconsistentStateException?displayProperty=nameWithType>. <xref:Orleans.Storage.InconsistentStateException?displayProperty=nameWithType> is thrown by storage operations which discover that the grain's in-memory state is inconsistent with the state in the database. Aside from the special-casing of <xref:Orleans.Storage.InconsistentStateException?displayProperty=nameWithType>, this behavior is similar to throwing an exception from any .NET object: exceptions do not cause an object to be destroyed.
+
 ### Virtual methods
 
 A grain class can optionally override <xref:Orleans.Grain.OnActivateAsync%2A> and <xref:Orleans.Grain.OnDeactivateAsync%2A> virtual methods; are invoked by the Orleans runtime upon activation and deactivation of each grain of the class. This gives the grain code a chance to perform additional initialization and cleanup operations. An exception thrown by `OnActivateAsync` fails the activation process.

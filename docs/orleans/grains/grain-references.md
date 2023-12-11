@@ -72,7 +72,7 @@ public class DownCounterGrain : ICounterGrain
 }
 ```
 
-The following call to `GetGrain` will throw an exception because Orleans does not know how to unambiguously map `ICounterGrain` to one of the grain classes.
+The following call to `GetGrain` will throw an exception because Orleans doesn't know how to unambiguously map `ICounterGrain` to one of the grain classes.
 
 ```csharp
 // This will throw an exception: there is no unambiguous mapping from ICounterGrain to a grain class.

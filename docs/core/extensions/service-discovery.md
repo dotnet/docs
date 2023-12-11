@@ -3,7 +3,7 @@ title: Service discovery in .NET
 description: Learn how to use the Microsoft.Extensions.ServiceDiscovery library to simplify the integration of service discovery patterns in .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/14/2023
+ms.date: 12/11/2023
 ms.topic: overview
 ---
 
@@ -34,7 +34,7 @@ For more information, see [dotnet add package](../tools/dotnet-add-package.md) o
 
 ## Example usage
 
-In the _Program.cs_ file of your project, call the `AddServiceDiscovery` extension method to add service discovery to the host, configuring default service endpoint resolvers:
+In the _Program.cs_ file of your project, call the <xref:Microsoft.Extensions.Hosting.HostingExtensions.AddServiceDiscovery%2A> extension method to add service discovery to the host, configuring default service endpoint resolvers:
 
 ```csharp
 builder.Services.AddServiceDiscovery();
@@ -78,13 +78,13 @@ Here's an example demonstrating how to configure endpoints for the service named
 }
 ```
 
-The preceding example adds two endpoints for the service named _catalog_: `localhost:8080`, and `"10.46.24.90:80"`. Each time the _catalog_ is resolved, one of these endpoints will be selected.
+The preceding example adds two endpoints for the service named _catalog_: `localhost:8080`, and `"10.46.24.90:80"`. Each time the _catalog_ is resolved, one of these endpoints is selected.
 
-If service discovery was added to the host using the `AddServiceDiscoveryCore` extension method on <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>, the configuration-based endpoint resolver can be added by calling the `AddConfigurationServiceEndPointResolver` extension method on `IServiceCollection`.
+If service discovery was added to the host using the <xref:Microsoft.Extensions.Hosting.HostingExtensions.AddServiceDiscoveryCore%2A> extension method on <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>, the configuration-based endpoint resolver can be added by calling the <xref:Microsoft.Extensions.Hosting.HostingExtensions.AddConfigurationServiceEndPointResolver%2A> extension method on `IServiceCollection`.
 
 ### Configuration
 
-The configuration resolver is configured using the `ConfigurationServiceEndPointResolverOptions` class, which offers these configuration options:
+The configuration resolver is configured using the <xref:Microsoft.Extensions.ServiceDiscovery.Abstractions.ConfigurationServiceEndPointResolverOptions> class, which offers these configuration options:
 
 - **SectionName**: The name of the configuration section that contains service endpoints. It defaults to `"Services"`.
 
@@ -101,7 +101,7 @@ builder.Services.Configure<ConfigurationServiceEndPointResolverOptions>(
         options.SectionName = "MyServiceEndpoints";
     
         // Configure the logic for applying host name metadata
-        options.ApplyHostNameMetadata = endpoint =>
+        options.ApplyHostNameMetadata = static endpoint =>
         {
             // Your custom logic here. For example:
             return endpoint.EndPoint is DnsEndPoint dnsEp
@@ -110,21 +110,21 @@ builder.Services.Configure<ConfigurationServiceEndPointResolverOptions>(
     });
 ```
 
-The preceding example demonstrates setting a custom section name for your service endpoints and providing a custom logic for applying host name metadata based on a condition.
+The preceding example demonstrates setting a custom section name for your service endpoints and providing custom conditional logic for applying host name metadata.
 
 ## Resolve service endpoints using platform-provided service discovery
 
 Certain platforms, like Azure Container Apps and Kubernetes (when configured accordingly), offer service discovery capabilities without necessitating a service discovery client library. In cases where an application is deployed in such environments, using the platform's built-in functionality can be advantageous. The pass-through resolver is designed to facilitate this scenario. It enables the utilization of alternative resolvers, such as configuration, in different environments, such as a developer's machine. Importantly, this flexibility is achieved without the need for any code modifications or the implementation of conditional guards.
 
-The pass-through resolver performs no external resolution and instead resolves endpoints by returning the input service name represented as a `DnsEndPoint`.
+The pass-through resolver performs no external resolution and instead resolves endpoints by returning the input service name represented as a <xref:System.Net.DnsEndPoint>.
 
 The pass-through provider is configured by-default when adding service discovery via the `AddServiceDiscovery` extension method.
 
-If service discovery was added to the host using the `AddServiceDiscoveryCore` extension method on `IServiceCollection`, the pass-through provider can be added by calling the `AddPassThroughServiceEndPointResolver` extension method on `IServiceCollection`.
+If service discovery was added to the host using the `AddServiceDiscoveryCore` extension method on `IServiceCollection`, the pass-through provider can be added by calling the <xref:Microsoft.Extensions.Hosting.HostingExtensions.AddPassThroughServiceEndPointResolver%2A> extension method on `IServiceCollection`.
 
 ## Load-balancing with endpoint selectors
 
-Each time an endpoint is resolved via the `HttpClient` pipeline, a single endpoint is selected from the set of all known endpoints for the requested service. If multiple endpoints are available, it may be desirable to balance traffic across all such endpoints. To accomplish this, a customizable _endpoint selector_ can be used. By default, endpoints are selected in round-robin order. To use a different endpoint selector, provide an `IServiceEndPointSelector` instance to the `UseServiceDiscovery` method call. For example, to select a random endpoint from the set of resolved endpoints, specify `RandomServiceEndPointSelectorProvider.Instance` as the endpoint selector:
+Each time an endpoint is resolved via the `HttpClient` pipeline, a single endpoint is selected from the set of all known endpoints for the requested service. If multiple endpoints are available, it may be desirable to balance traffic across all such endpoints. To accomplish this, a customizable _endpoint selector_ can be used. By default, endpoints are selected in round-robin order. To use a different endpoint selector, provide an <xref:Microsoft.Extensions.ServiceDiscovery.Abstractions.IServiceEndPointSelector> instance to the <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.UseServiceDiscovery%2A> method call. For example, to select a random endpoint from the set of resolved endpoints, specify <xref:Microsoft.Extensions.ServiceDiscovery.Abstractions.RandomServiceEndPointSelectorProvider.Instance?displayProperty=nameWithType> as the endpoint selector:
 
 ```csharp
 builder.Services.AddHttpClient<CatalogServiceClient>(
@@ -135,12 +135,12 @@ builder.Services.AddHttpClient<CatalogServiceClient>(
 
 The `Microsoft.Extensions.ServiceDiscovery` package includes the following endpoint selector providers:
 
-- Pick-first, which always selects the first endpoint: `PickFirstServiceEndPointSelectorProvider.Instance`
-- Round-robin, which cycles through endpoints: `RoundRobinServiceEndPointSelectorProvider.Instance`
-- Random, which selects endpoints randomly: `RandomServiceEndPointSelectorProvider.Instance`
-- Power-of-two-choices, which attempt to pick the least heavily loaded endpoint based on the _Power of Two Choices_ algorithm for distributed load balancing, degrading to randomly selecting an endpoint when either of the provided endpoints don't have the `IEndPointLoadFeature` feature: `PowerOfTwoChoicesServiceEndPointSelectorProvider.Instance`
+- <xref:Microsoft.Extensions.ServiceDiscovery.Abstractions.PickFirstServiceEndPointSelectorProvider.Instance?displayProperty=nameWithType>: Pick-first, which always selects the first endpoint.
+- <xref:Microsoft.Extensions.ServiceDiscovery.Abstractions.RoundRobinServiceEndPointSelectorProvider.Instance?displayProperty=nameWithType>: Round-robin, which cycles through endpoints.
+- <xref:Microsoft.Extensions.ServiceDiscovery.Abstractions.RandomServiceEndPointSelectorProvider.Instance?displayProperty=nameWithType>: Random, which selects endpoints randomly.
+- <xref:Microsoft.Extensions.ServiceDiscovery.Abstractions.PowerOfTwoChoicesServiceEndPointSelectorProvider.Instance?displayProperty=nameWithType>: Power-of-two-choices, which attempt to pick the least used endpoint based on the _Power of Two Choices_ algorithm for distributed load balancing, degrading to randomly selecting an endpoint when either of the provided endpoints don't have the <xref:Microsoft.Extensions.ServiceDiscovery.Abstractions.IEndPointLoadFeature> feature.
 
-Endpoint selectors are created via an `IServiceEndPointSelectorProvider` instance, such as the providers previously listed. The provider's `CreateSelector()` method is called to create a selector, which is an instance of `IServiceEndPointSelector`. The `IServiceEndPointSelector` instance is given the set of known endpoints when they're resolved, using the `SetEndPoints(ServiceEndPointCollection collection)` method. To choose an endpoint from the collection, the `GetEndPoint(object? context)` method is called, returning a single `ServiceEndPoint`. The `context` value passed to `GetEndPoint` is used to provide extra context that may be useful to the selector. For example, in the `HttpClient` case, the `HttpRequestMessage` is passed. None of the provided implementations of `IServiceEndPointSelector` inspect the context, and it can be ignored unless you're using a selector, which does make use of it.
+Endpoint selectors are created via an <xref:Microsoft.Extensions.ServiceDiscovery.Abstractions.IServiceEndPointSelectorProvider> instance, such as the providers previously listed. The provider's <xref:Microsoft.Extensions.ServiceDiscovery.Abstractions.IServiceEndPointSelectorProvider.CreateSelector> method is called to create a selector, which is an instance of <xref:Microsoft.Extensions.ServiceDiscovery.Abstractions.IServiceEndPointSelector>. The `IServiceEndPointSelector` instance is given the set of known endpoints when they're resolved, using the <xref:Microsoft.Extensions.ServiceDiscovery.Abstractions.IServiceEndPointSelector.SetEndPoints%2A?displayProperty=nameWithType> method. To choose an endpoint from the collection, the <xref:Microsoft.Extensions.ServiceDiscovery.Abstractions.IServiceEndPointSelector.GetEndPoint%2A?displayProperty=nameWithType> method is called, returning a single `ServiceEndPoint`. The `context` value passed to `GetEndPoint` is used to provide extra context that may be useful to the selector. For example, in the `HttpClient` case, the <xref:System.Net.Http.HttpRequestMessage> is passed. None of the provided implementations of `IServiceEndPointSelector` inspect the context, and it can be ignored unless you're using a selector, which does make use of it.
 
 ### Resolution order
 

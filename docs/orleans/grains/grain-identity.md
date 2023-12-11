@@ -13,7 +13,7 @@ Grains in Orleans each have a single, unique, user-defined identifier which cons
 
 The grain type and key are both represented as human-readable strings in Orleans and, by convention, the grain identity is written with the grain type and key separated by a `/` character. For example, `shoppingcart/bob65` represents the grain type named `shoppingcart` with a key `bob65`.
 
-It is not common to construct grain identities directly. Instead, it is more common to create [grain references](./grain-references.md) using <xref:Orleans.IGrainFactory?displayProperty=nameWithType>.
+It's not common to construct grain identities directly. Instead, it's more common to create [grain references](./grain-references.md) using <xref:Orleans.IGrainFactory?displayProperty=nameWithType>.
 
 The following sections discuss grain type names and grain keys in more detail.
 

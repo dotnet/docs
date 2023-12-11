@@ -54,19 +54,21 @@ When there are multiple implementations of a grain interface, such as in the fol
 ```csharp
 public interface ICounterGrain : IGrainWithStringKey
 {
-  ValueTask<int> UpdateCount();
+    ValueTask<int> UpdateCount();
 }
 
 public class UpCounterGrain : ICounterGrain
 {
-  private int _count;
-  public ValueTask<string> UpdateCount() => new(++_count); // Increment count
+    private int _count;
+
+    public ValueTask<string> UpdateCount() => new(++_count); // Increment count
 }
 
 public class DownCounterGrain : ICounterGrain
 {
-  private int _count;
-  public ValueTask<string> UpdateCount() => new(--_count); // Decrement count
+    private int _count;
+
+    public ValueTask<string> UpdateCount() => new(--_count); // Decrement count
 }
 ```
 

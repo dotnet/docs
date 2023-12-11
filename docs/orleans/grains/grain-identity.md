@@ -31,7 +31,7 @@ public class ShoppingCartGrain : IShoppingCartGrain
 }
 ```
 
-In the above example, the grain class, `ShoppingCartGrain` has a grain type name of `cart`. Each grain can only have one grain type name.
+In the preceding example, the grain class, `ShoppingCartGrain` has a grain type name of `cart`. Each grain can only have one grain type name.
 
 For generic grains, the generic arity must be included in the grain type name. For example, consider the following `DictionaryGrain<K, V>` class:
 

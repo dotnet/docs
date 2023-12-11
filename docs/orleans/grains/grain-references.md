@@ -133,7 +133,8 @@ ICounterGrain myUpCounter = grainFactory.GetGrain<IUpCounterGrain>("my-counter")
 ICounterGrain myDownCounter = grainFactory.GetGrain<IDownCounterGrain>("my-counter");
 ```
 
-> [!NOTE] In the above example, we created two grain references with the same key, but different grain types. The first, stored in the `myUpCounter` variable, is a reference to the grain with the id `upcounter/my-counter`. The second, stored in the `myDownCounter` variable, is a reference to the grain with the id `downcounter/my-counter`. It is the combination of grain _type_ and grain _key_ which uniquely identify a grain. Therefore, `myUpCounter` and `myDownCounter` refer to different grains.
+> [!NOTE]
+> In the preceding example, you created two grain references with the same key, but different grain types. The first, stored in the `myUpCounter` variable, is a reference to the grain with the id `upcounter/my-counter`. The second, stored in the `myDownCounter` variable, is a reference to the grain with the id `downcounter/my-counter`. It's the combination of grain _type_ and grain _key_ which uniquely identify a grain. Therefore, `myUpCounter` and `myDownCounter` refer to different grains.
 
 #### Disambiguating grain types by providing a grain class prefix
 

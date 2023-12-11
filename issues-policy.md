@@ -65,7 +65,7 @@ Priority levels are based on the following guidelines but are subjective. The mi
 
 Team members spend a limited amount of time on diagnosis and triage so they can make progress on scheduled tasks. Each team member spends at most 30 minutes per day in diagnosis and triage.
 
-The **help-wanted** label is applied when an issue is a good candidate for a community member (possibly the author) to submit a fix. The team member that applies the **help-wanted** label will help or find someone to help community members work through the PR creation process. Issues that are "up for grabs" are often added to the [Community Contribution projects](https://github.com/dotnet/docs/projects/35).
+The **help-wanted** label is applied when an issue is a good candidate for a community member (possibly the author) to submit a fix. The team member that applies the **help-wanted** label will help or find someone to help community members work through the PR creation process. These kinds of issues are often added to the [Community Contribution projects](https://github.com/dotnet/docs/projects/35).
 
 ## Resolution phase
 

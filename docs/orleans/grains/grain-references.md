@@ -189,7 +189,7 @@ ICounterGrain myUpCounter = grainFactory.GetGrain<ICounterGrain>("my-counter");
 
 ### Disambiguating grain types by providing the resolved grain id
 
-Some overloads of <xref:Orleans.IGrainFactory.GetGrain*?displayProperty=nameWithType> accept an argument of type <xref:Orleans.Runtime.GrainId?displayProperty=nameWithType>. When using these overloads, Orleans does not need to map from an interface type to a grain type and therefore there is no ambiguity to be resolved. For example:
+Some overloads of <xref:Orleans.IGrainFactory.GetGrain*?displayProperty=nameWithType> accept an argument of type <xref:Orleans.Runtime.GrainId?displayProperty=nameWithType>. When using these overloads, Orleans doesn't need to map from an interface type to a grain type and therefore there is no ambiguity to be resolved. For example:
 
 ```csharp
 public interface ICounterGrain : IGrainWithStringKey

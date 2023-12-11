@@ -193,7 +193,7 @@ In the example above, the warning is because the `Container`, `c`, may have a nu
 
 To remove these warnings, you need to add code to change that variable's *null-state* to *not-null* before dereferencing it. The collection initializer warning may be harder to spot. The compiler detects that the collection *maybe-null* when the initializer adds elements to it.
 
-In many instances, you can fix these warnings by checking that a variable isn't null before dereferencing it. For example, the following example adds a null check before dereferencing the `message` parameter:
+In many instances, you can fix these warnings by checking that a variable isn't null before dereferencing it. Consider the following that adds a null check before dereferencing the `message` parameter:
 
 :::code language="csharp" source="snippets/null-warnings/Program.cs" id="ProvideNullCheck":::
 

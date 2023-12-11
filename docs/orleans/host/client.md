@@ -124,7 +124,7 @@ await client.Connect();
 
 ### Make calls to grains
 
-Making calls to grain from a client is no different from [making such calls from within grain code](../grains/index.md). The same <xref:Orleans.IGrainFactory.GetGrain%60%601(System.Type,System.Guid)?displayProperty=nameWithType> method, where `T` is the target grain interface, is used in both cases [to obtain grain references](../grains/index.md#grain-reference). The difference is in what factory object is invoked <xref:Orleans.IGrainFactory.GetGrain%2A?displayProperty=nameWithType>. In client code, you do that through the connected client object as the following example shows:
+Making calls to grain from a client is no different from [making such calls from within grain code](../grains/index.md). The same <xref:Orleans.IGrainFactory.GetGrain%60%601(System.Type,System.Guid)?displayProperty=nameWithType> method, where `T` is the target grain interface, is used in both cases [to obtain grain references](../grains/grain-references.md). The difference is in what factory object is invoked <xref:Orleans.IGrainFactory.GetGrain%2A?displayProperty=nameWithType>. In client code, you do that through the connected client object as the following example shows:
 
 ```csharp
 IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);

@@ -1,7 +1,7 @@
 ---
 title: Develop a grain
 description: Learn how to develop a grain in .NET Orleans.
-ms.date: 10/16/2023
+ms.date: 12/10/2023
 ---
 
 # Develop a grain
@@ -14,7 +14,7 @@ For more thorough instructions, see the [Project Setup](../tutorials-and-samples
 
 Grains interact with each other and get called from outside by invoking methods declared as part of the respective grain interfaces. A grain class implements one or more previously declared grain interfaces. All methods of a grain interface must return a <xref:System.Threading.Tasks.Task> (for `void` methods), a <xref:System.Threading.Tasks.Task%601> or a <xref:System.Threading.Tasks.ValueTask%601> (for methods returning values of type `T`).
 
-The following is an excerpt from the Orleans version 1.5 Presence Service sample:
+The following is an excerpt from the Orleans Presence Service sample:
 
 ```csharp
 public interface IPlayerGrain : IGrainWithGuidKey
@@ -151,9 +151,9 @@ public Task GrainMethod6()
 
 `ValueTask<T>` can be used instead of `Task<T>`.
 
-## Grain reference
+## Grain references
 
-A Grain Reference is a proxy object that implements the same grain interface as the corresponding grain class. It encapsulates the logical identity (type and unique key) of the target grain. A grain reference is used for making calls to the target grain. Each grain reference is to a single grain (a single instance of the grain class), but one can create multiple independent references to the same grain.
+A Grain reference is a proxy object that implements the same grain interface as the corresponding grain class. It encapsulates the logical identity (type and unique key) of the target grain. Grain references are used for making calls to the target grain. Each grain reference is to a single grain (a single instance of the grain class), but one can create multiple independent references to the same grain.
 
 Since a grain reference represents the logical identity of the target grain, it is independent of the physical location of the grain, and stays valid even after a complete restart of the system. Developers can use grain references like any other .NET object. It can be passed to a method, used as a method return value, etc., and even saved to persistent storage.
 
@@ -172,6 +172,8 @@ From Orleans client code.
 ```csharp
 IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
 ```
+
+For more information about grain references, see the [grain reference article](grain-references.md).
 
 ### Grain method invocation
 
@@ -229,6 +231,7 @@ While `OnActivateAsync`, if overridden, is always called as part of the grain ac
 
 - [Grain extensions](grain-extensions.md)
 - [Grain identity](grain-identity.md)
+- [Grain references](grain-references.md)
 - [Grain persistence](grain-persistence/index.md)
 - [Grain lifecycle overview](grain-lifecycle.md)
 - [Grain placement](grain-placement.md)

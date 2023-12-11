@@ -168,15 +168,17 @@ public interface ICounterGrain : IGrainWithStringKey
 [GrainType("up-counter")]
 public class UpCounterGrain : ICounterGrain
 {
-  private int _count;
-  public ValueTask<string> UpdateCount() => new(++_count); // Increment count
+    private int _count;
+
+    public ValueTask<string> UpdateCount() => new(++_count); // Increment count
 }
 
 [GrainType("down-counter")]
 public class DownCounterGrain : ICounterGrain
 {
-  private int _count;
-  public ValueTask<string> UpdateCount() => new(--_count); // Decrement count
+    private int _count;
+
+    public ValueTask<string> UpdateCount() => new(--_count); // Decrement count
 }
 ```
 

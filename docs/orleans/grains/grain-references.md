@@ -128,7 +128,7 @@ public class DownCounterGrain : IDownCounterGrain
 }
 ```
 
-Now, we can create a reference to either grain as follows:
+To create a reference to either grain, consider the following code:
 
 ```csharp
 // Get a reference to an UpCounterGrain.

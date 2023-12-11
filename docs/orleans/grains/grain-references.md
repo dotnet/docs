@@ -162,7 +162,7 @@ The <xref:Orleans.Metadata.DefaultGrainTypeAttribute?displayProperty=nameWithTyp
 [DefaultGrainType("up-counter")]
 public interface ICounterGrain : IGrainWithStringKey
 {
-  ValueTask<int> UpdateCount();
+    ValueTask<int> UpdateCount();
 }
 
 [GrainType("up-counter")]

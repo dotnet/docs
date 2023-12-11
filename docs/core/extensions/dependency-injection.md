@@ -3,7 +3,7 @@ title: Dependency injection
 description: Learn how to use dependency injection within your .NET apps. Discover how to registration services, define service lifetimes, and express dependencies in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/13/2023
+ms.date: 12/11/2023
 ms.topic: overview
 ---
 
@@ -382,7 +382,7 @@ When services are resolved by `ActivatorUtilities`, constructor injection requir
 
 ## Scope validation
 
-When the app runs in the `Development` environment and calls [CreateApplicationBuilder](generic-host.md#default-builder-settings) to build the host, the default service provider performs checks to verify that:
+When the app runs in the `Development` environment and calls [CreateApplicationBuilder](generic-host.md#host-builder-settings) to build the host, the default service provider performs checks to verify that:
 
 - Scoped services aren't resolved from the root service provider.
 - Scoped services aren't injected into singletons.

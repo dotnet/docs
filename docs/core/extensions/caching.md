@@ -3,7 +3,7 @@ title: Caching in .NET
 description: Discover effective ways to implement in-memory and distributed caching in .NET. Boost app performance and scalability with .NET caching.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/23/2023
+ms.date: 12/11/2023
 ---
 
 # Caching in .NET
@@ -192,7 +192,7 @@ In the following example, you'll see several services being registered with DI. 
 
 In the preceding C# code:
 
-- The generic host is created with [defaults](generic-host.md#default-builder-settings).
+- The generic host is created with [defaults](generic-host.md#host-builder-settings).
 - In-memory caching services are registered with <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddMemoryCache%2A>.
 - An `HttpClient` instance is registered for the `CacheWorker` class with <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)>.
 - The `CacheWorker` class is registered with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)>.

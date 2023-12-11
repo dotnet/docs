@@ -81,7 +81,7 @@ ICounterGrain myCounter = grainFactory.GetGrain<ICounterGrain>("my-counter");
 
 An <xref:System.ArgumentException?displayProperty=nameWithType> will thrown with the following message:
 
-```
+```Output
 Unable to identify a single appropriate grain type for interface ICounterGrain. Candidates: upcounter (UpCounterGrain), downcounter (DownCounterGrain)
 ```
 

@@ -337,7 +337,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   Specifies the [framework](../../standard/frameworks.md) to target.
 
-  This template is new in .NET 8. The default value is `net8.0`.
+  This template is available for .NET 8 or later.
 
 - **`--no-restore`**
 
@@ -345,16 +345,16 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`--exclude-launch-settings`**
 
-  Excludes *launchSettings.json* from the generated template.
+  Excludes *launchSettings.json* from the generated app.
 
 - **`-int|--interactivity <None|Server|Webassembly|Auto >`**
 
   Which interactive render mode to use for interactive components. The possible values are:
 
-  - `None` - No interactivity (static server rendering only)
-  - `Server` - (Default) Runs on the server
-  - `WebAssembly` - Runs in the browser using WebAssembly
-  - `Auto` -Uses Server while downloading WebAssembly assets, then uses WebAssembly
+  - `None` - No interactivity (static server-side rendering only).
+  - `Server` - (Default) Runs the app on the server with interactive server-side rendering.
+  - `WebAssembly` - Runs the app using client-side rendering in the browser with WebAssembly.
+  - `Auto` - Uses interactive server-side rendering while downloading the Blazor bundle and activating the Blazor runtime on the client, then uses client-side rendering with WebAssembly.
 
 - **`--empty`**
 
@@ -373,11 +373,11 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`-ai|--all-interactive`**
 
-  Makes every page interactive by applying an interactive render mode at the top level. If `false`, pages will use static server rendering by default and can be marked interactive on a per-page or per-component basis. Enabled if `InteractivityPlatform` is not "None".
+  Makes every page interactive by applying an interactive render mode at the top level. If `false`, pages use static server-side rendering by default and can be marked interactive on a per-page or per-component basis. This option is only effective if the `-i|--interactivity` option isn't set to `None`.
 
 - **`--no-https`**
 
-  Turns off HTTPS. This option only applies if `Individual` isn't chosen for `--auth`.
+  Turns off HTTPS. This option only applies if `Individual` isn't chosen for the `-au|--auth` option.
 
 - **`--use-program-main`**
 

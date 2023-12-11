@@ -89,7 +89,8 @@ Unable to identify a single appropriate grain type for interface ICounterGrain. 
 
 The error message tells you which grain implementation's Orleans has which match the requested grain interface type, `ICounterGrain`. It shows you the grain type names (`upcounter` and `downcounter`) as well as the grain classes (`UpCounterGrain` and `DownCounterGrain`).
 
-> [!NOTE] The grain type names in the above error message, `upcounter` and `downcounter`, are derived from the grain class names, `UpCounterGrain` and `DownCounterGrain` respectively. This is the default behavior in Orleans and it can be customized by adding a `[GrainType(string)]` attribute to the grain class. For example:
+> [!NOTE]
+> The grain type names in the preceding error message, `upcounter` and `downcounter`, are derived from the grain class names, `UpCounterGrain` and `DownCounterGrain` respectively. This is the default behavior in Orleans and it can be customized by adding a `[GrainType(string)]` attribute to the grain class. For example:
 >
 > ```csharp
 > [GrainType("up")]

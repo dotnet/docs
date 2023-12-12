@@ -313,7 +313,7 @@ For more information about some of these settings, see the [Middle ground betwee
 
 ### Affinitize ranges
 
-- Specifies the list of processors to use for garbage collector threads. 
+- Specifies the list of processors to use for garbage collector threads.
 - This setting is similar to [System.GC.HeapAffinitizeMask](#affinitize-mask), except it allows you to specify more than 64 processors.
 - For Windows operating systems, prefix the processor number or range with the corresponding [CPU group](/windows/win32/procthread/processor-groups), for example, "0:1-10,0:12,1:50-52,1:7". If you don't actually have more than 1 CPU group, you can't use this setting. You must use the [Affinitize mask](#affinitize-mask) setting. And the numbers you specify are within that group, which means it cannot be >= 64.
 - For Linux operating systems, where the [CPU group](/windows/win32/procthread/processor-groups) concept doesn't exist, you can use both this setting and the [Affinitize mask](#affinitize-mask) setting to specify the same ranges. And instead of "0:1-10", specify "1-10" because you don't need to specify a group index.

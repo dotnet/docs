@@ -593,6 +593,7 @@ for(int i;i<x;i++) { ... }
 | **Option values**        | `control_flow_statements`        | Place space between parentheses of control flow statements |
 |                          | `expressions`                    | Place space between parentheses of expressions             |
 |                          | `type_casts`                     | Place space between parentheses in type casts              |
+|                          | `false` (or any other value)     | Never add spaces between parentheses                       |
 
 If you omit this rule or use a value other than `control_flow_statements`, `expressions`, or `type_casts`, the setting is not applied.
 
@@ -607,6 +608,9 @@ var z = ( x * y ) - ( ( y - x ) * 3 );
 
 // csharp_space_between_parentheses = type_casts
 int y = ( int )x;
+
+// csharp_space_between_parentheses = false
+int y = (int)x;
 ```
 
 ### csharp_space_before_colon_in_inheritance_clause

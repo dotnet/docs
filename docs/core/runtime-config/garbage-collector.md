@@ -315,16 +315,17 @@ For more information about some of these settings, see the [Middle ground betwee
 
 - Specifies the list of processors to use for garbage collector threads.
 - This setting is similar to [System.GC.HeapAffinitizeMask](#affinitize-mask), except it allows you to specify more than 64 processors.
-- For Windows operating systems, prefix the processor number or range with the corresponding [CPU group](/windows/win32/procthread/processor-groups), for example, "0:1-10,0:12,1:50-52,1:70".
+- For Windows operating systems, prefix the processor number or range with the corresponding [CPU group](/windows/win32/procthread/processor-groups), for example, "0:1-10,0:12,1:50-52,1:7". If you don't actually have more than 1 CPU group, you can't use this setting. You must use the [Affinitize mask](#affinitize-mask) setting. And the numbers you specify are within that group, which means it cannot be >= 64.
+- For Linux operating systems, where the [CPU group](/windows/win32/procthread/processor-groups) concept doesn't exist, you can use both this setting and the [Affinitize mask](#affinitize-mask) setting to specify the same ranges. And instead of "0:1-10", specify "1-10" because you don't need to specify a group index.
 - If [GC processor affinity](#affinitize) is disabled, this setting is ignored.
 - Applies to server garbage collection only.
 - For more information, see [Making CPU configuration better for GC on machines with > 64 CPUs](https://devblogs.microsoft.com/dotnet/making-cpu-configuration-better-for-gc-on-machines-with-64-cpus/) on Maoni Stephens' blog.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.GC.HeapAffinitizeRanges` | Comma-separated list of processor numbers or ranges of processor numbers.<br/>Unix example: "1-10,12,50-52,70"<br/>Windows example: "0:1-10,0:12,1:50-52,1:70" | .NET Core 3.0 |
-| **Environment variable** | `COMPlus_GCHeapAffinitizeRanges` | Comma-separated list of processor numbers or ranges of processor numbers.<br/>Unix example: "1-10,12,50-52,70"<br/>Windows example: "0:1-10,0:12,1:50-52,1:70" | .NET Core 3.0 |
-| **Environment variable** | `DOTNET_GCHeapAffinitizeRanges` | Comma-separated list of processor numbers or ranges of processor numbers.<br/>Unix example: "1-10,12,50-52,70"<br/>Windows example: "0:1-10,0:12,1:50-52,1:70" | .NET 6 |
+| **runtimeconfig.json** | `System.GC.HeapAffinitizeRanges` | Comma-separated list of processor numbers or ranges of processor numbers.<br/>Unix example: "1-10,12,50-52,70"<br/>Windows example: "0:1-10,0:12,1:50-52,1:7" | .NET Core 3.0 |
+| **Environment variable** | `COMPlus_GCHeapAffinitizeRanges` | Comma-separated list of processor numbers or ranges of processor numbers.<br/>Unix example: "1-10,12,50-52,70"<br/>Windows example: "0:1-10,0:12,1:50-52,1:7" | .NET Core 3.0 |
+| **Environment variable** | `DOTNET_GCHeapAffinitizeRanges` | Comma-separated list of processor numbers or ranges of processor numbers.<br/>Unix example: "1-10,12,50-52,70"<br/>Windows example: "0:1-10,0:12,1:50-52,1:7" | .NET 6 |
 
 [!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
 
@@ -357,6 +358,9 @@ For more information about some of these settings, see the [Middle ground betwee
 - Configures whether the garbage collector uses [CPU groups](/windows/win32/procthread/processor-groups) or not.
 
   When a 64-bit Windows computer has multiple CPU groups, that is, there are more than 64 processors, enabling this element extends garbage collection across all CPU groups. The garbage collector uses all cores to create and balance heaps.
+
+  > [!NOTE]
+  > This is a Windows-only concept. In older Windows versions, Windows limited a process to one CPU group. Thus, GC only used one CPU group unless you used this setting to enable multiple CPU groups. This OS limitation was lifted in Windows 11 and Server 2022. Also, starting in .NET 7, GC by default uses all CPU groups when running on Windows 11 or Server 2022.
 
 - Applies to server garbage collection on 64-bit Windows operating systems only.
 - Default: GC does not extend across CPU groups. This is equivalent to setting the value to `0`.

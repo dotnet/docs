@@ -359,7 +359,8 @@ For more information about some of these settings, see the [Middle ground betwee
 
   When a 64-bit Windows computer has multiple CPU groups, that is, there are more than 64 processors, enabling this element extends garbage collection across all CPU groups. The garbage collector uses all cores to create and balance heaps.
 
-  Note that this is a Windows only concept. By default Windows limited a process to one CPU group so by default GC only used one CPU group unless you use this setting to enable multiple CPU groups. This OS limitation was lifted in Windows 11 and Server 2022. And starting .NET 7 GC will by default using all CPU groups if you are running on Windows 11 or Server 2022.
+  > [!NOTE]
+  > This is a Windows-only concept. In older Windows versions, Windows limited a process to one CPU group. Thus, GC only used one CPU group unless you used this setting to enable multiple CPU groups. This OS limitation was lifted in Windows 11 and Server 2022. Also, starting in .NET 7, GC by default uses all CPU groups when running on Windows 11 or Server 2022.
 
 - Applies to server garbage collection on 64-bit Windows operating systems only.
 - Default: GC does not extend across CPU groups. This is equivalent to setting the value to `0`.

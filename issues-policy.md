@@ -49,8 +49,8 @@ Evaluating the correct course of action is subjective. The team members use thei
 For other issues, the team:
 
 - Assigns a priority
-- If high enough priority, assign to an upcoming monthly sprint.
-- If the fix is clear, add the "help-wanted" label.
+- If high enough priority, assigns to an upcoming monthly sprint.
+- If the fix is clear, adds the "help-wanted" label.
 
 Priority levels are based on the following guidelines but are subjective. The milestones are also subjective and are based on other priorities such as current product release schedules and upcoming launches.
 

@@ -85,7 +85,7 @@ Once your app has been upgraded, a status screen is displayed which shows all of
 
 :::image type="content" source="media/upgrade-assistant-overview/visual-studio-upgrade-results.png" alt-text="The .NET Upgrade Assistant's Upgrade results tab in Visual Studio.":::
 
-Additionally, the actions the Upgrade Assistant performed are logged to the **Output** window under the **Upgrade Assistant** source, as shown inthe following image:
+Additionally, the actions the Upgrade Assistant performed are logged to the **Output** window under the **Upgrade Assistant** source, as shown in the following image:
 
 :::image type="content" source="media/upgrade-assistant-overview/visual-studio-output-window.png" alt-text="The output window in Visual Studio showing the results from the .NET Upgrade Assistant.":::
 
@@ -100,7 +100,7 @@ After you've [installed the .NET Upgrade Assistant CLI tool](upgrade-assistant-i
 
 Run the tool with the `upgrade-assistant upgrade` command, all of the projects from the current folder and below, are listed. The CLI tool provides an interactive way of choosing which project to upgrade. Use the arrow keys to select an item, and press <kbd>Enter</kbd> to run the item. Select the project you want to upgrade. In the example provided by this article, there are four projects under the current folder:
 
-```
+```txt
  Selected options
 ───────────────────────────────────────────────────────────
  No options specified, follow steps below to continue
@@ -131,7 +131,7 @@ Depending on the project you upgrade, you may be presented with an option to spe
 
   This option is only available for .NET Framework projects. Copies your project and upgrades the copy, leaving your original project alone.
 
-```
+```txt
  Selected options
 ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
  Source project     C:\Code\winforms\MatchingGame\MatchingGame.csproj
@@ -153,7 +153,7 @@ How do you want to upgrade project MatchingGame?
 
 After this step, if there's more than one upgradable target framework, you'll choose a target:
 
-```
+```txt
  Selected options
 ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
  Source project     C:\Code\Work\dotnet\dotnet-docs\docs\core\porting\snippets\upgrade-assistant-wpf-framework\winforms\MatchingGame\MatchingGame.csproj

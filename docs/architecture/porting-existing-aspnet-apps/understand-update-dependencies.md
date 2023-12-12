@@ -9,11 +9,7 @@ ms.date: 12/10/2021
 
 [!INCLUDE [download-alert](includes/download-alert.md)]
 
-After identifying the sequence in which the app's individual projects must be migrated, the next step is to understand each project's dependencies and update them if necessary. For platform dependencies, the best way to start is to run the [.NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md) on the assembly in question, and then look at the detailed results that are generated. You configure the tool to specify one or more target platforms, such as .NET 7 or .NET Standard 2.0. Results are provided with details for each platform targeted. Figure 3-4 shows an example of the tool's output.
-
-![.NET Portability Analyzer report details](./media/Figure3-4.png)
-
-**Figure 3-4.** .NET Portability Analyzer report details.
+After identifying the sequence in which the app's individual projects must be migrated, the next step is to understand each project's dependencies and update them if necessary. For platform dependencies, you can see the Target Framework Monikers (TFMs) that each package supports on [nuget.org](https://www.nuget.org/) under the **Dependencies** section of the package page.
 
 ## Update class library dependencies
 
@@ -21,7 +17,7 @@ Large apps typically involve multiple projects, and most projects other than the
 
 Teams can consider the [try-convert tool](https://github.com/dotnet/try-convert) or the [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant) for migrating class libraries to .NET Core. These tools analyze a .NET Framework project file and attempt to migrate it to the .NET Core project file format, making any modifications it can safely perform in the process. The tools may require some manual assistance to work with ASP.NET projects, but can usually help speed up the process of migrating class libraries.
 
-The try-convert and Upgrade Assistant tools are deployed as .NET Core command line tools. They only run on Windows, since they're designed to work with .NET Framework apps. You can install try-convert by running the following command from a command prompt:
+The try-convert and Upgrade Assistant tools are deployed as .NET Core command-line tools. They only run on Windows, since they're designed to work with .NET Framework apps. You can install try-convert by running the following command from a command prompt:
 
 ```dotnetcli
 dotnet tool install -g try-convert
@@ -43,7 +39,7 @@ Analyze your use of third-party NuGet packages and determine if any of them don'
 
 If support exists using the version of the package the app currently uses, great! If not, see if a more recent version of the package has the support and research what would be involved in upgrading. There may be breaking changes in the package, especially if the major version of the package changes between your currently used version and the one to which you're upgrading.
 
-In some cases, no version of a given package works with .NET Core. In that case, teams have a couple options. They can continue depending on the .NET Framework version, but this has limitations. The app may only run on Windows, and the team may want to run Portability Analyzer on the package's binaries to see if there are any issues likely to be encountered. Certainly the team will want to test thoroughly, since if .NET Framework packages are used that reference APIs not available in .NET Core, a runtime exception will occur. The other option is to find a different package or, if the required package is open source, upgrade it to .NET Standard or .NET Core themselves.
+In some cases, no version of a given package works with .NET Core. In that case, you have a couple options. You can continue depending on the .NET Framework version, but this has limitations. The app may only run on Windows. You'll want to test thoroughly, since if .NET Framework packages are used that reference APIs not available in .NET Core, a run-time exception will occur. The other option is to find a different package or, if the required package is open source, upgrade it to .NET Standard or .NET Core yourself.
 
 ## Migrate ASP.NET MVC projects
 
@@ -57,7 +53,6 @@ The next chapter digs into details of how to migrate from ASP.NET MVC and Web AP
 
 - [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant)
 - [try-convert tool](https://github.com/dotnet/try-convert)
-- [apiport tool](https://github.com/microsoft/dotnet-apiport)
 
 >[!div class="step-by-step"]
 >[Previous](identify-migration-sequence.md)

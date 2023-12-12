@@ -7,7 +7,7 @@
         int[] array1 = new int[5];
 
         // Declare and set array element values.
-        int[] array2 = [1, 2, 3, 4, 5, 6];
+        int[] array2 = {1, 2, 3, 4, 5, 6};
 
         // Declare a two dimensional array.
         int[,] multiDimensionalArray1 = new int[2, 3];

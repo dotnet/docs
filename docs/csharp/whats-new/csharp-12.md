@@ -63,7 +63,7 @@ The *spread operator*, `..` in a collection expression replaces its argument wit
 int[] row0 = [1, 2, 3];
 int[] row1 = [4, 5, 6];
 int[] row2 = [7, 8, 9];
-int[] single = [..row0, ..row1, ..row2];
+int[] single = [.. row0, .. row1, .. row2];
 foreach (var element in single)
 {
     Console.Write($"{element}, ");
@@ -86,13 +86,13 @@ The addition of `ref readonly` parameters enables more clarity for APIs that mig
 - APIs that take an `in` parameter, but logically require a variable. A value expression doesn't work. An example is <xref:System.ReadOnlySpan%601.%23ctor(%600@)?displayProperty=fullName>.
 - APIs that use `ref` because they require a variable, but don't mutate that variable. An example is <xref:System.Runtime.CompilerServices.Unsafe.IsNullRef%2A?displayProperty=fullName>.
 
-To learn more about `ref readonly` parameters, see the article on [parameter modifiers](../language-reference/keywords/method-parameters.md#ref-readonly-modifier) in the language reference, or the [ref readonly parameters](~/_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md) feature specification.
+To learn more about `ref readonly` parameters, see the article on [parameter modifiers](/language-reference/keywords/method-parameters.md#ref-readonly-modifier) in the language reference, or the [ref readonly parameters](~/_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md) feature specification.
 
 ## Default lambda parameters
 
 You can now define default values for parameters on lambda expressions. The syntax and rules are the same as adding default values for arguments to any method or local function.
 
-You can learn more about default parameters on lambda expressions in the article on [lambda expressions](../language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression).
+You can learn more about default parameters on lambda expressions in the article on [lambda expressions](/language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression).
 
 ## Alias any type
 
@@ -127,11 +127,11 @@ foreach (var i in buffer)
 }
 ```
 
-The difference is that the compiler can take advantage of known information about an inline array. You likely consume inline arrays as you would any other array. For more information on how to declare inline arrays, see the language reference on [`struct` types](../language-reference/builtin-types/struct.md#inline-arrays).
+The difference is that the compiler can take advantage of known information about an inline array. You likely consume inline arrays as you would any other array. For more information on how to declare inline arrays, see the language reference on [`struct` types](/language-reference/builtin-types/struct.md#inline-arrays).
 
 ## Experimental attribute
 
-Types, methods, or assemblies can be marked with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=nameWithType> to indicate an experimental feature. The compiler issues a warning if you access a method or type annotated with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>. All types included in an assembly marked with the `Experimental` attribute are experimental. You can read more in the article on [General attributes read by the compiler](../language-reference/attributes/general.md#experimental-attribute), or the [feature specification](~/_csharplang/proposals/csharp-12.0/experimental-attribute.md).
+Types, methods, or assemblies can be marked with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=nameWithType> to indicate an experimental feature. The compiler issues a warning if you access a method or type annotated with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>. All types included in an assembly marked with the `Experimental` attribute are experimental. You can read more in the article on [General attributes read by the compiler](/language-reference/attributes/general.md#experimental-attribute), or the [feature specification](~/_csharplang/proposals/csharp-12.0/experimental-attribute.md).
 
 ## Interceptors
 

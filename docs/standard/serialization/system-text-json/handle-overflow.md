@@ -3,7 +3,6 @@ title: How to handle overflow JSON or use JsonElement or JsonNode in System.Text
 description: "Learn how to handle overflow JSON or use JsonElement or JsonNode while using System.Text.Json to serialize and deserialize JSON in .NET."
 ms.date: 07/21/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
-zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"

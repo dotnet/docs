@@ -3,7 +3,7 @@ title: Logging in C#
 author: IEvangelist
 description: Learn about app logging provided by the Microsoft.Extensions.Logging NuGet package in C#.
 ms.author: dapine
-ms.date: 10/15/2023
+ms.date: 12/11/2023
 ---
 
 # Logging in C# and .NET
@@ -62,7 +62,7 @@ The preceding example:
 
 ### Host-provided ILoggerFactory
 
-Host builders initialize [default configuration](generic-host.md#default-builder-settings),
+Host builders initialize [default configuration](generic-host.md#host-builder-settings),
 then add a configured `ILoggerFactory` object to the host's DI container when the host is built. Before the host is built you can adjust the logging configuration via <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Logging?displayProperty=nameWithType>, <xref:Microsoft.AspNetCore.Builder.WebApplicationBuilder.Logging?displayProperty=nameWithType>, or similar APIs on other hosts. Hosts also apply logging configuration from default configuration sources as _appsettings.json_ and environment variables. For more information, see [Configuration in .NET](configuration.md).
 
 This example expands on the previous one to customize the `ILoggerFactory` provided by `WebApplicationBuilder`. It adds [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet#getting-started) as a logging provider transmitting the logs over [OTLP (OpenTelemetry protocol)](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/README.md#enable-log-exporter):

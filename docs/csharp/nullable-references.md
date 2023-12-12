@@ -84,23 +84,27 @@ Nullable state analysis and the warnings the compiler generates help you avoid p
 
 ## Attributes on API signatures
 
-The null state analysis needs hints from developers to understand the semantics of APIs. Some APIs provide null checks, and should change the *null-state* of a variable from *maybe-null* to *not-null*. Other APIs return expressions that are *not-null* or *maybe-null* depending on the *null-state* of the input arguments. For example, consider the following code that displays a message:
+The null state analysis needs hints from developers to understand the semantics of APIs. Some APIs provide null checks, and should change the *null-state* of a variable from *maybe-null* to *not-null*. Other APIs return expressions that are *not-null* or *maybe-null* depending on the *null-state* of the input arguments. For example, consider the following code that displays a message in upper case:
 
 ```csharp
-public void PrintMessage(string message)
+void PrintMessageUpper(string? message)
 {
-    if (!string.IsNullOrWhiteSpace(message))
+    if (!IsNull(message))
     {
-        Console.WriteLine($"{DateTime.Now}: {message}");
+        Console.WriteLine($"{DateTime.Now}: {message.ToUpper()}");
     }
 }
+
+bool IsNull(string? s) => s == null;
 ```
 
-Based on inspection, any developer would consider this code safe, and shouldn't generate warnings. The compiler doesn't know that `IsNullOrWhiteSpace` provides a null check. When `IsNullOrWhitespace` returns `false,` the *null-state* of the string is *not-null*. When `IsNullOrWhitespace` returns `true`, the *null-state* isn't changed. In the previous example, the signature includes the [`NotNullWhen`](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute) to indicate the null state of `message`:
+Based on inspection, any developer would consider this code safe, and one that shouldn't generate warnings. However the compiler doesn't know that `IsNull` provides a null check and will issue a warning for the `message.ToUpper()` statement, considering `message` to be a *maybe-null* variable. To fix this, we can use the [`NotNullWhen`](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute) attribute:
 
 ```csharp
-public static bool IsNullOrWhiteSpace([NotNullWhen(false)] string message);
+bool IsNull([NotNullWhen(false)] string? s) => s == null;
 ```
+
+This informs the compiler, that, if `IsNull` returns `false`, the parameter `s` is not null. This allows the compiler to change the *null-state* of `message` to *not-null* inside the `if (!IsNull(message)) {...}` block. Thanks to this, no warnings will be issued.
 
 Attributes provide detailed information about the null state of arguments, return values, and members of the object instance used to invoke a member. The details on each attribute can be found in the language reference article on [nullable reference attributes](language-reference/attributes/nullable-analysis.md). The .NET runtime APIs have all been annotated in .NET 5. You improve the static analysis by annotating your APIs to provide semantic information about the *null-state* of arguments and return values.
 
@@ -173,7 +177,7 @@ You must explicitly opt in to use these features in your existing projects. That
 - *disable*: The code is *nullable oblivious*.
   - Nullable warnings are disabled.
   - All reference type variables are nullable reference types.
-  - You can't declare a variable as a nullable reference type using the `?` suffix on the type.
+  - Use of the `?` suffix to declare a nullable reference type produces a warning.
   - You can use the null forgiving operator, `!`, but it has no effect.
 - *enable*: The compiler enables all null reference analysis and all language features.
   - All new nullable warnings are enabled.
@@ -195,7 +199,7 @@ The nullable annotation context and nullable warning context can be set for a pr
 
 | Context | Dereference warnings | Assignment warnings | Reference types | `?` suffix | `!` operator |
 | - | - | - | - | - |
-| `disable` | Disabled | Disabled | All are nullable | Can't be used | Has no effect |
+| `disable` | Disabled | Disabled | All are nullable | Produces a warning | Has no effect |
 | `enable` | Enabled | Enabled | Non-nullable unless declared with `?` | Declares nullable type | Suppresses warnings for possible `null` assignment |
 | `warnings` | Enabled | Not applicable | All are nullable, but members are considered *not null* at opening brace of methods | Produces a warning |  Suppresses warnings for possible `null` assignment |
 | `annotations` | Disabled | Disabled | Non-nullable unless declared with `?` | Declares nullable type | Has no effect |

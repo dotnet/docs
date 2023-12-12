@@ -1,10 +1,9 @@
 ---
 title: "C# Features That Support LINQ"
 description: Learn about C# features to use with LINQ queries and in other contexts.
-ms.date: 07/20/2015
+ms.date: 12/13/2023
 helpviewer_keywords:
   - "LINQ [C#], features supporting LINQ"
-ms.assetid: 524b0078-ebfd-45a7-b390-f2ceb9d84797
 ---
 # C# Features That Support LINQ
 
@@ -21,11 +20,9 @@ var query = from str in stringArray
             select stringGroup;
 ```
 
-For more information, see [LINQ Query Expressions](../../../linq/index.md).
-
 ## Implicitly Typed Variables (var)
 
-Instead of explicitly specifying a type when you declare and initialize a variable, you can use the [var](../../../language-reference/statements/declarations.md#implicitly-typed-local-variables) modifier to instruct the compiler to infer and assign the type, as shown here:
+Instead of explicitly specifying a type when you declare and initialize a variable, you can use the [var](../../language-reference/statements/declarations.md#implicitly-typed-local-variables) modifier to instruct the compiler to infer and assign the type, as shown here:
 
 ```csharp
 var number = 5;
@@ -37,7 +34,7 @@ var query = from str in stringArray
 
 Variables declared as `var` are just as strongly typed as variables whose type you specify explicitly. The use of `var` makes it possible to create anonymous types, but it can be used only for local variables. Arrays can also be declared with implicit typing.
 
-For more information, see [Implicitly Typed Local Variables](../../classes-and-structs/implicitly-typed-local-variables.md).
+For more information, see [Implicitly Typed Local Variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
 
 ## Object and Collection Initializers
 
@@ -63,9 +60,8 @@ var newLargeOrderCustomers = IncomingOrders.Where(x => x.OrderSize > 5).Select(y
 
 For more information, see:
 
-- [Object and Collection Initializers](../../classes-and-structs/object-and-collection-initializers.md)
-
-- [Query Expression Syntax for Standard Query Operators](standard-query-operators-overview.md)
+- [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)
+- [Query Expression Syntax for Standard Query Operators](../../programming-guide/concepts/linq/standard-query-operators-overview.md)
 
 ## Anonymous Types
 
@@ -75,13 +71,13 @@ An anonymous type is constructed by the compiler and the type name is only avail
 select new {name = cust.Name, phone = cust.Phone};
 ```
 
-For more information, see [Anonymous Types](../../../fundamentals/types/anonymous-types.md).
+For more information, see [Anonymous Types](../../fundamentals/types/anonymous-types.md).
 
 ## Extension Methods
 
 An extension method is a static method that can be associated with a type, so that it can be called as if it were an instance method on the type. This feature enables you to, in effect, "add" new methods to existing types without actually modifying them. The standard query operators are a set of extension methods that provide LINQ query functionality for any type that implements <xref:System.Collections.Generic.IEnumerable%601>.
 
-For more information, see [Extension Methods](../../classes-and-structs/extension-methods.md).
+For more information, see [Extension Methods](../../programming-guide/classes-and-structs/extension-methods.md).
 
 ## Lambda Expressions
 
@@ -89,10 +85,5 @@ A lambda expression is an inline function that uses the `=>` operator to separat
 
 For more information, see:
 
-- [Lambda Expressions](../../../language-reference/operators/lambda-expressions.md)
-
-- [Expression Trees (C#)](../../../advanced-topics/expression-trees/index.md)
-
-## See also
-
-- [Language-Integrated Query (LINQ) (C#)](/dotnet/csharp/linq/)
+- [Lambda Expressions](../../language-reference/operators/lambda-expressions.md)
+- [Expression Trees (C#)](../../advanced-topics/expression-trees/index.md)

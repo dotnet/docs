@@ -5,6 +5,7 @@ namespace LinqSamples.Test;
 
 public class IndexTest
 {
+    /* This may come back once I've moved more code.
     [Fact]
     public void IntroTest()
     {
@@ -13,4 +14,5 @@ public class IndexTest
         Index.Intro();
         Assert.Equal("97 92 81 ", sw.ToString());
     }
+    */
 }

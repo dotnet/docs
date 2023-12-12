@@ -1,6 +1,6 @@
-﻿using LinqSamples.QueryExpressionBasics;
+﻿using QueryExpressionBasics;
 
-namespace LinqSamples;
+namespace Linq.GetStarted;
 
 public static class Basics
 {

@@ -209,15 +209,15 @@ items:
   - name: Getting Started with LINQ in C#
     items:
     - name: Introduction to LINQ queries
-      href: programming-guide/concepts/linq/introduction-to-linq-queries.md
+      href: linq/get-started/introduction-to-linq-queries.md
     - name: Query expression basics
-      href: linq/query-expression-basics.md
-    - name: Write LINQ queries in C#
-      href: linq/write-linq-queries.md
+      href: linq/get-started/query-expression-basics.md
+    - name: Write LINQ queries
+      href: linq/get-started/write-linq-queries.md
     - name: Type relationships in LINQ query operations
-      href: programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md
+      href: linq/get-started/type-relationships-in-linq-query-operations.md
     - name: C# features that support LINQ
-      href: programming-guide/concepts/linq/features-that-support-linq.md
+      href: linq/get-started/features-that-support-linq.md
   - name: Standard query operators
     items:
     - name: Overview

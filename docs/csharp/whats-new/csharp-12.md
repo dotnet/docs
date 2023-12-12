@@ -92,7 +92,7 @@ To learn more about `ref readonly` parameters, see the article on [parameter mod
 
 You can now define default values for parameters on lambda expressions. The syntax and rules are the same as adding default values for arguments to any method or local function.
 
-You can learn more about default parameters on lambda expressions in the article on [lambda expressions](/language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression).
+You can learn more about default parameters on lambda expressions in the article on [lambda expressions](../language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression).
 
 ## Alias any type
 

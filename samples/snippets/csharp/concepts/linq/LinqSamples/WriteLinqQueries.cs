@@ -74,7 +74,7 @@ public static class WriteLinqQueries
         // Using a query expression with method syntax
         var numCount1 = (
             from num in numbers1
-            where num is < 3 or > 7
+            where num is > 3 and < 7
             select num
         ).Count();
 
@@ -82,7 +82,7 @@ public static class WriteLinqQueries
         // the method call result
         IEnumerable<int> numbersQuery =
             from num in numbers1
-            where num is < 3 or > 7
+            where num is > 3 and < 7
             select num;
 
         var numCount2 = numbersQuery.Count();
@@ -92,14 +92,14 @@ public static class WriteLinqQueries
     public static void WriteLinqQueries5a()
     {
         // <write_linq_queries_5a>
-        var numCount = numbers.Count(n => n is < 3 or > 7);
+        var numCount = numbers.Count(n => n is > 3 and < 7);
         // </write_linq_queries_5a>
     }
 
     public static void WriteLinqQueries5b()
     {
         // <write_linq_queries_5b>
-        var numCount = numbers.Count(n => n is < 3 or > 7);
+        var numCount = numbers.Count(n => n is > 3 and < 7);
         // </write_linq_queries_5b>
     }
 }

@@ -15,6 +15,8 @@ The following example shows the complete query operation. The complete operation
 
 :::code language="csharp" source="../../../samples/snippets/csharp/concepts/linq/LinqSamples/Index.cs" id="intro":::
 
+You may need to add a [`using`](../language-reference/keywords/using-directive.md) directive, `using System.Ling;`, for the following example to compile. The most recent versions of .NET make use of [implicit usings](../../core/project-sdk/overview.md#implicit-using-directives) to add this directive as a [global using](../language-reference/keywords/using-directive.md#global-modifier).
+
 ## Query expression overview
 
 - Query expressions can be used to query and to transform data from any LINQ-enabled data source. For example, a single query can retrieve data from a SQL database, and produce an XML stream as output.

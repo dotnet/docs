@@ -349,7 +349,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`-int|--interactivity <None|Server|Webassembly|Auto >`**
 
-  Which interactive render mode to use for interactive components. The possible values are:
+  Specifies which interactive render mode to use for interactive components. The possible values are:
 
   - `None` - No interactivity (static server-side rendering only).
   - `Server` - (Default) Runs the app on the server with interactive server-side rendering.

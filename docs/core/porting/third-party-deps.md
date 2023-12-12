@@ -46,7 +46,7 @@ The easiest way to inspect NuGet package folders is to use the [NuGet Package Ex
 2. Click **Open package from online feed**.
 3. Search for the name of the package.
 4. Select the package name from the search results and click **open**.
-5. Expand the _lib_ folder on the right-hand side and look at folder names.
+5. Expand the *lib* folder on the right-hand side and look at folder names.
 
 Look for a folder with names using one the following patterns: `netstandardX.Y`, `netX.Y`, or `netcoreappX.Y`.
 

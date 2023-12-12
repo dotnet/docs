@@ -2,14 +2,14 @@
 title: Understand and update dependencies
 description: To migrate a .NET Framework project to .NET Core, its dependencies must be updated to work with .NET Core. This section examines tools and approaches that can be used to plan migrations for large apps.
 author: ardalis
-ms.date: 12/10/2021
+ms.date: 12/12/2023
 ---
 
 # Understand and update dependencies
 
 [!INCLUDE [download-alert](includes/download-alert.md)]
 
-After identifying the sequence in which the app's individual projects must be migrated, the next step is to understand each project's dependencies and update them if necessary. For platform dependencies, you can see the Target Framework Monikers (TFMs) that each package supports on [nuget.org](https://www.nuget.org/) under the **Dependencies** section of the package page.
+After identifying the sequence in which the app's individual projects must be migrated, the next step is to understand each project's dependencies and update them if necessary.
 
 ## Update class library dependencies
 

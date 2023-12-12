@@ -26,7 +26,7 @@ The MSTest runner uses known exit codes to communicate test failure or app error
 | [10](#10) | Test adapter test session failure. |
 
 To enable verbose logging in order to troubleshoot issues, see [troubleshooting](./unit-testing-mstest-runner-intro.md#troubleshooting).
-<!-- Setting special name so we can simply link to the number from here, and from error message that is built into TA source code. -->
+<!-- Setting special name so we can simply link to the number from here, and from error message that is built into Microsoft.Testing.Platform source code. -->
 
 ## <a name="0"></a>
 Success — 0

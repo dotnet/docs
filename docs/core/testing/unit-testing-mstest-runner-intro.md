@@ -22,8 +22,8 @@ To enable the MSTest Runner in an MSTest project, you need to add `UseMSTestRunn
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <!-- Enable the MSTest runner. -->
-    <UseMSTestRunner>true</UseMSTestRunner>
+    <!-- Enable the MSTest runner, this is an opt-in feature -->
+    <EnableMSTestRunner>true</EnableMSTestRunner>
 
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -34,16 +34,15 @@ To enable the MSTest Runner in an MSTest project, you need to add `UseMSTestRunn
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- Replace these 3 packages by reference to just MSTest 
-      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.2" />
-      <PackageReference Include="MSTest.TestAdapter" Version="3.2.0-preview.23570.1" />
-      <PackageReference Include="MSTest.TestFramework" Version="3.2.0-preview.23570.1" />
-    -->
-
+    <!-- 
+      MSTest meta package is the recommended way to reference MSTest. 
+      It's equivalent to referencing: Microsoft.NET.Test.Sdk, MSTest.TestAdapter, MSTest.TestFramework and MSTest.Analyzers
+    -->    
     <PackageReference Include="MSTest" Version="3.2.0-preview.23570.1" />
 
-    <!-- Replace coverlet collector 
-      <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <!-- 
+      Coverlet collector is not compatible with MSTest runner, you can either switch to Microsoft CodeCoverage (as shown below),
+      or switch to be using coverlet global tool https://github.com/coverlet-coverage/coverlet#net-global-tool-guide-suffers-from-possible-known-issue
     --> 
     <PackageReference Include="Microsoft.Testing.Platform.Extensions.CodeCoverage" 
                       Version="17.9.4-beta.23563.1" />
@@ -57,7 +56,7 @@ Building the application will generate an executable application for your test p
 ## Run and debug tests
 
 > [!IMPORTANT]
-> By default, the MStest runner collects telemetry. For more information and options on opting out, see [MSTest runner telemetery](unit-testing-mstest-runner-telemetry.md).
+> By default, the MStest runner collects telemetry. For more information and options on opting out, see [MSTest runner telemetry](unit-testing-mstest-runner-telemetry.md).
 
 MSTest runner test projects are built as executables that can be run (or debugged) directly. There's no additional test running console or command that's needed.
 
@@ -233,4 +232,3 @@ It can be configured using the following options:
 | `--crashdump` | Generated a dump file in case of test host process crash. Supported by .NET 6.0+ |
 | `⁠-⁠-⁠crashdump-⁠filename` | Specify the file name of the dump. |
 | `--crashdump-type` | Specify the type of the dump. Valid values are `Mini`, `Heap`, `Triage`, `Full`. Default type is `Full`. For more information visit [MS Learn Crash Dump Types](https://learn.microsoft.com/dotnet/core/diagnostics/collect-dumps-crash#types-of-mini-dumps) |
-

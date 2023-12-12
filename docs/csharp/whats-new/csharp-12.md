@@ -127,7 +127,7 @@ foreach (var i in buffer)
 }
 ```
 
-The difference is that the compiler can take advantage of known information about an inline array. You likely consume inline arrays as you would any other array. For more information on how to declare inline arrays, see the language reference on [`struct` types](/language-reference/builtin-types/struct.md#inline-arrays).
+The difference is that the compiler can take advantage of known information about an inline array. You likely consume inline arrays as you would any other array. For more information on how to declare inline arrays, see the language reference on [`struct` types](../language-reference/builtin-types/struct.md#inline-arrays).
 
 ## Experimental attribute
 

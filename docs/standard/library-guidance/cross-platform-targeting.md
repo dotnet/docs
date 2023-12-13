@@ -67,7 +67,7 @@ public static class GpsLocation
     // This project uses multi-targeting to expose device-specific APIs to .NET Standard.
     public static async Task<(double latitude, double longitude)> GetCoordinatesAsync()
     {
-#if NET461
+#if NET462
         return CallDotNetFrameworkApi();
 #elif WINDOWS_UWP
         return CallUwpApi();
@@ -82,7 +82,7 @@ public static class GpsLocation
     {
         get
         {
-#if NET461 || WINDOWS_UWP
+#if NET462 || WINDOWS_UWP
             return true;
 #else
             return false;
@@ -100,9 +100,9 @@ public static class GpsLocation
 
 > The .NET Standard assembly will automatically be used by NuGet. Targeting individual .NET implementations increases the `*.nupkg` size for no benefit.
 
-✔️ CONSIDER adding a target for `net461` when you're offering a `netstandard2.0` target.
+✔️ CONSIDER adding a target for `net462` when you're offering a `netstandard2.0` target.
 
-> Using .NET Standard 2.0 from .NET Framework has some issues that were addressed in .NET Framework 4.7.2. You can improve the experience for developers that are still on .NET Framework 4.6.1 - 4.7.1 by offering them a binary that's built for .NET Framework 4.6.1.
+> Using .NET Standard 2.0 from .NET Framework has some issues that were addressed in .NET Framework 4.7.2. You can improve the experience for developers that are still on .NET Framework 4.6.2 - 4.7.1 by offering them a binary that's built for .NET Framework 4.6.2.
 
 ✔️ DO distribute your library using a NuGet package.
 
@@ -113,8 +113,8 @@ public static class GpsLocation
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <!-- This project will output netstandard2.0 and net461 assemblies -->
-    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
+    <!-- This project will output netstandard2.0 and net462 assemblies -->
+    <TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
   </PropertyGroup>
 </Project>
 ```

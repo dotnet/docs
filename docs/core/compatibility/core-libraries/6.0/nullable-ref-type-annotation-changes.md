@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Nullable reference type annotation changes"
 description: Learn about the .NET 6 breaking change in core .NET libraries where some nullable reference type annotations have changed.
-ms.date: 06/17/2021
+ms.date: 12/13/2023
 ---
 # Changes to nullable reference type annotations
 
@@ -37,6 +37,7 @@ The following table lists the affected APIs:
 
 | API | What changed | Breaking or nonbreaking |
 | - | - |
+| <xref:System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider.GetTypeDescriptor(System.Type,System.Object)?displayProperty=nameWithType> | `instance` parameter type is nullable | Nonbreaking |
 | <xref:System.ComponentModel.ISite.Container?displayProperty=nameWithType> | Property type is nullable | Breaking |
 | <xref:System.Xml.Linq.XContainer.Add(System.Object[])?displayProperty=nameWithType> | Parameter type is nullable | Nonbreaking |
 | <xref:System.Xml.Linq.XContainer.AddFirst(System.Object[])?displayProperty=nameWithType> | Parameter type is nullable | Nonbreaking |
@@ -52,6 +53,7 @@ The following table lists the affected APIs:
 | <xref:System.Xml.Linq.XStreamingElement.%23ctor(System.Xml.Linq.XName,System.Object)> | Second parameter type is nullable | Nonbreaking |
 | <xref:System.Xml.Linq.XStreamingElement.%23ctor(System.Xml.Linq.XName,System.Object[])> | Second parameter type is nullable | Nonbreaking |
 | <xref:System.Xml.Linq.XStreamingElement.Add(System.Object[])?displayProperty=nameWithType> | Parameter type is nullable | Nonbreaking |
+| <xref:System.Xml.XmlDocument.XmlResolver?displayProperty=nameWithType> | The setter accepts a nullable reference | Breaking |
 | <xref:System.Net.Http.HttpClient.PatchAsync%2A?displayProperty=nameWithType> | `content` parameter type is nullable | Nonbreaking |
 | <xref:System.Net.Http.HttpClient.PostAsync%2A?displayProperty=nameWithType> | `content` parameter type is nullable  | Nonbreaking |
 | <xref:System.Net.Http.HttpClient.PutAsync%2A?displayProperty=nameWithType> | `content` parameter type is nullable  | Nonbreaking |

@@ -136,7 +136,7 @@ Right-click on the project in the **Solution Explorer**, and select **Publish...
 
 Leave the default **Location**, and then select **Finish**. Once the profile is created, select **Show all settings**, and verify your **Profile settings**.
 
-:::image type="content" source="media/profile-settings-7.0.png" lightbox="media/profile-settings-7.0.png" alt-text="The Visual Studio Profile settings":::
+:::image type="content" source="media/profile-settings.png" lightbox="media/profile-settings.png" alt-text="The Visual Studio Profile settings":::
 
 Ensure that the following settings are specified:
 
@@ -241,7 +241,7 @@ With .NET 6, [new hosting exception-handling behaviors](../compatibility/core-li
 
 The default behavior before .NET 6 is `Ignore`, which resulted in *zombie processes* (a running process that didn't do anything). With .NET 6, the default behavior is `StopHost`, which results in the host being stopped when an exception is thrown. But it stops cleanly, meaning that the Windows Service management system will not restart the service. To correctly allow the service to be restarted, you can call <xref:System.Environment.Exit%2A?displayProperty=nameWithType> with a non-zero exit code. Consider the following highlighted `catch` block:
 
-:::code source="snippets/workers/windows-service/WindowsBackgroundService.cs" highlight="30-43":::
+:::code source="snippets/workers/windows-service/WindowsBackgroundService.cs" highlight="24-37":::
 
 ## Verify service functionality
 

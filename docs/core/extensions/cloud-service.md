@@ -73,7 +73,7 @@ With the CLI, the *Dockerfile* is **not** created for you. Copy its contents int
 > [!NOTE]
 > You need to update the various lines in the *Dockerfile* that reference *App.CloudService—replace this with the name of your project.
 
-For more information on the official .NET images, see [Docker Hub: .NET Runtime](https://hub.docker.com/_/microsoft-dotnet-runtime?tab=description) and [Docker Hub: .NET SDK](https://hub.docker.com/_/microsoft-dotnet-sdk?tab=description).
+For more information on the official .NET images, see [Docker Hub: .NET Runtime](https://hub.docker.com/_/microsoft-dotnet-runtime) and [Docker Hub: .NET SDK](https://hub.docker.com/_/microsoft-dotnet-sdk).
 
 :::zone-end
 

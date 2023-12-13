@@ -36,7 +36,7 @@ The timer-based background service makes use of the <xref:System.Threading.Timer
 
 Replace the contents of the `Worker` from the template with the following C# code, and rename the file to *TimerService.cs*:
 
-:::code source="snippets/workers/timer-service/TimerService.cs" highlight="35,42-45":::
+:::code source="snippets/workers/timer-service/TimerService.cs" highlight="32,39-42":::
 
 > [!IMPORTANT]
 > The `Worker` was a subclass of <xref:Microsoft.Extensions.Hosting.BackgroundService>. Now, the `TimerService` implements both the <xref:Microsoft.Extensions.Hosting.IHostedService>, and <xref:System.IAsyncDisposable> interfaces.

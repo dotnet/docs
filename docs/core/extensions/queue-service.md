@@ -57,7 +57,7 @@ In the following `QueueHostedService` example:
 
 Replace the existing `Worker` class with the following C# code, and rename the file to *QueueHostedService.cs*.
 
-:::code source="snippets/workers/queue-service/QueuedHostedService.cs" highlight="29-30,32":::
+:::code source="snippets/workers/queue-service/QueuedHostedService.cs" highlight="25-26,28":::
 
 A `MonitorLoop` service handles enqueuing tasks for the hosted service whenever the `w` key is selected on an input device:
 
@@ -67,7 +67,7 @@ A `MonitorLoop` service handles enqueuing tasks for the hosted service whenever 
   - Three 5-second delays are executed <xref:System.Threading.Tasks.Task.Delay%2A>.
   - A `try-catch` statement traps <xref:System.OperationCanceledException> if the task is canceled.
 
-:::code source="snippets/workers/queue-service/MonitorLoop.cs" highlight="5,10,35":::
+:::code source="snippets/workers/queue-service/MonitorLoop.cs" highlight="4,26":::
 
 Replace the existing `Program` contents with the following C# code:
 

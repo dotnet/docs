@@ -49,7 +49,7 @@ The hosted service creates a scope to resolve the scoped background service to c
 
 Replace the existing `Worker` class with the following C# code, and rename the file to *ScopedBackgroundService.cs*:
 
-:::code source="snippets/workers/scoped-service/ScopedBackgroundService.cs" highlight="26-32":::
+:::code source="snippets/workers/scoped-service/ScopedBackgroundService.cs" highlight="22-28":::
 
 In the preceding code, an explicit scope is created and the `IScopedProcessingService` implementation is resolved from the dependency injection service provider. The resolved service instance is scoped, and its `DoWorkAsync` method is awaited.
 

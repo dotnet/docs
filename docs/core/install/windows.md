@@ -51,30 +51,38 @@ winget install Microsoft.DotNet.SDK.8
 
 ### Install the runtime
 
-For Windows, there are three .NET runtimes you can install. You should install both the .NET Desktop Runtime and the ASP.NET Core Runtime to ensure that you're compatible with all types of .NET apps.
+For Windows, there are three .NET runtimes you can install. You should install both the .NET Desktop Runtime and the ASP.NET Core Runtime to ensure that you're compatible with all types of .NET apps. The following table describes what is included with each runtime:
+
+|                          | Includes .NET Runtime         | Includes .NET Desktop Runtime | Includes ASP.NET Core Runtime |
+| ------------------------ | ----------------------------- | ----------------------------- | ----------------------------- |
+| **.NET Runtime**         | Yes                           | No                            | No                            |
+| **.NET Desktop Runtime** | Yes                           | Yes                           | No                            |
+| **ASP.NET Core Runtime** | No                            | No                            | Yes                           |
+
+The following list provides details about each runtime along with the **winget** commands to install them.
 
 - .NET Desktop Runtime
 
-  This runtime includes the base .NET runtime, and supports Windows Presentation Foundation (WPF) and Windows Forms apps that are built with .NET. This isn't the same as .NET Framework, which comes with Windows.
+  This runtime supports Windows Presentation Foundation (WPF) and Windows Forms apps that are built with .NET. This isn't the same as .NET Framework, which comes with Windows. This runtime includes .NET Runtime, but doesn't include ASP.NET Core Runtime, which must be installed separately.
 
   ```cmd
   winget install Microsoft.DotNet.DesktopRuntime.8
   ```
 
-- ASP.NET Core Runtime
-
-  This runtime includes the base .NET runtime, and runs web server apps. The ASP.NET Core Runtime allows you to run apps that were made with .NET that didn't provide the runtime. The following commands install the ASP.NET Core Runtime, which is the most compatible runtime for .NET. In your terminal, run the following commands:
-
-  ```cmd
-  winget install Microsoft.DotNet.AspNetCore.8
-  ```
-
 - .NET Runtime
 
-  This is the base runtime, and contains just the components needed to run a console app. Typically, you'd install the other runtimes.
+  This is the base runtime, and contains just the components needed to run a console app. Typically, you'd install both .NET Desktop Runtime and ASP.NET Core Runtime instead of this one.
 
   ```cmd
   winget install Microsoft.DotNet.Runtime.8
+  ```
+
+- ASP.NET Core Runtime
+
+  This runtime runs web server apps and provides a lot of web-related APIs. The ASP.NET Core Runtime allows you to run apps that were made with .NET that didn't provide the runtime. You must install .NET Runtime in addition to this runtime. The following commands install the ASP.NET Core Runtime,  In your terminal, run the following commands:
+
+  ```cmd
+  winget install Microsoft.DotNet.AspNetCore.8
   ```
 
 You can install preview versions of the runtimes by substituting the version number, such as `6`, with the word `Preview`. The following example installs the preview release of the .NET Desktop Runtime:

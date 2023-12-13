@@ -28,9 +28,7 @@ The MSTest runner uses known exit codes to communicate test failure or app error
 To enable verbose logging in order to troubleshoot issues, see [troubleshooting](./unit-testing-mstest-runner-intro.md#troubleshooting).
 <!-- Setting special name so we can simply link to the number from here, and from error message that is built into Microsoft.Testing.Platform source code. -->
 
-## <a name="0"></a>
-
-Success — 0
+## <a name="0"></a> Success — 0
 
 The `0` exit code indicates success. All tests that were chosen to run have run to completion and there were no errors.
 

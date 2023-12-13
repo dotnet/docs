@@ -146,10 +146,6 @@ In Blazor apps, use overloads of <xref:System.Net.Http.Json.HttpClientJsonExtens
 
 Starting with .NET 8, you can also use overloads of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsAsyncEnumerable%2A?displayProperty=nameWithType> extension methods that accept a source generation context or `TypeInfo<TValue>`.
 
-:::zone-end
-
-:::zone pivot="dotnet-8-0"
-
 In Razor Pages, MVC, SignalR, and Web API apps, use the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver?displayProperty=nameWithType> property to specify the context.
 
 ```csharp
@@ -207,6 +203,9 @@ services.AddControllers().AddJsonOptions(options =>
 ```
 
 :::zone-end
+
+> [!NOTE]
+> <xref:System.Text.Json.Serialization.JsonSourceGenerationMode.Serialization?displayProperty=nameWithType>, or fast-path serialization, isn't supported for asynchronous serialization. This includes synchronous overloads of <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> that accept a <xref:System.IO.Stream>.
 
 :::zone pivot="dotnet-8-0"
 

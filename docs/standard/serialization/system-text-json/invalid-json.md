@@ -3,7 +3,6 @@ title: How to allow some kinds of invalid JSON with System.Text.Json
 description: "Learn how to allow comments, trailing commas, and quoted numbers while serializing to and deserializing from JSON in .NET."
 ms.date: 12/03/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
-zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"

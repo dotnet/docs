@@ -12,7 +12,7 @@ The MSTest runner is a lightweight and portable alternative to [VSTest](https://
 
 The MSTest runner is embedded directly in your MSTest test projects, and there's no additional app dependencies, such as `vstest.console` or `dotnet test` needed to run your tests.
 
-The MSTest runner open source and you can view its code in the [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository. The MSTest runner comes bundled with MSTest in 3.2.0-preview. This preview is available in the [test-tools NuGet feed](https://pkgs.dev.azure.com/dnceng/public/_packaging/test-tools/nuget/v3/index.json).
+The MSTest runner is open source, and builds on a Microsoft.Testing.Platform library. You can find Microsoft.Testing.Platform code in [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository. The MSTest runner comes bundled with MSTest in 3.2.0-preview. This preview is available in the [test-tools NuGet feed](https://pkgs.dev.azure.com/dnceng/public/_packaging/test-tools/nuget/v3/index.json).
 
 ## Enable MSTest runner in a MSTest project
 
@@ -94,7 +94,7 @@ The `dotnet run` command can be used to build and run your test project. This is
 > > [!IMPORTANT]
 > The `dotnet test` command only works with MSTest, NUnit and xUnit tests.
 
-For tests authored with MSTest, NUnit or xUnit test framework, it's possible to run tests with `dotnet test`.
+For tests authored with MSTest, NUnit or xUnit test framework, it's possible to run tests with [dotnet test](https://learn.microsoft.com/dotnet/core/tools/dotnet-test).
 
 Provide a path to the tested dll, or to the project and your tests will run.
 

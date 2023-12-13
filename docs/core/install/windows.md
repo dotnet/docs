@@ -382,9 +382,9 @@ For more information about using .NET in a Docker container, see [Introduction t
 
 After installing the .NET SDK, you may run into problems trying to run .NET CLI commands. This section collects those common problems and provides solutions.
 
-- [It wasn't possible to find any installed .NET Core SDKs](#it-was-not-possible-to-find-any-installed-net-core-sdks)
+- [No .NET SDK was found](#no-net-sdk-was-found)
 
-### It wasn't possible to find any installed .NET Core SDKs
+### No .NET SDK was found
 
 Most likely you installed both the x86 (32-bit) and x64 (64-bit) versions of the .NET SDK. This is causing a conflict because when you run the `dotnet` command it's resolving to the x86 version when it should resolve to the x64 version. This is usually fixed by adjusting the `%PATH%` variable to resolve the x64 version first.
 

@@ -1,6 +1,5 @@
-﻿namespace DependencyInjection.AntiPatterns
+﻿namespace DependencyInjection.AntiPatterns;
+
+public class Bar
 {
-    public class Bar
-    {
-    }
 }

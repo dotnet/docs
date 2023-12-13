@@ -1,8 +1,12 @@
 ﻿var builder = WebApplication.CreateBuilder(args);
+
 builder.Services.AddSingleton<ExampleHandler>();
+
 var app = builder.Build();
+
 var handler = app.Services.GetRequiredService<ExampleHandler>();
 app.MapGet("/", handler.HandleRequest);
+
 app.Run();
 
 partial class ExampleHandler(ILogger<ExampleHandler> logger)

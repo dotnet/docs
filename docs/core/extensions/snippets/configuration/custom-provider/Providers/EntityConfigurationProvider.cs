@@ -3,16 +3,13 @@ using Microsoft.Extensions.Configuration;
 
 namespace CustomProvider.Example.Providers;
 
-public class EntityConfigurationProvider : ConfigurationProvider
+public class EntityConfigurationProvider(
+    string? connectionString)
+    : ConfigurationProvider
 {
-    private readonly string? _connectionString;
-
-    public EntityConfigurationProvider(string? connectionString) =>
-        _connectionString = connectionString;
-
     public override void Load()
     {
-        using var dbContext = new EntityConfigurationContext(_connectionString);
+        using var dbContext = new EntityConfigurationContext(connectionString);
 
         dbContext.Database.EnsureCreated();
 

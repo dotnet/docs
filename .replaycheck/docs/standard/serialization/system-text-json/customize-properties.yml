@@ -1,0 +1,11 @@
+# %version 1
+contentPath: docs\standard\serialization\system-text-json\customize-properties.md
+
+steps:
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-sdk
+  outputValidationRules:
+  - operator: contains
+    value: '"WindSpeed": 10,'
+  uid: 666a9c3f

@@ -3,9 +3,8 @@ title: Use scoped services within a BackgroundService
 description: Learn how to use scoped services within a BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/13/2023
+ms.date: 12/13/2023
 ms.topic: tutorial
-zone_pivot_groups: dotnet-version
 ---
 
 # Use scoped services within a `BackgroundService`
@@ -24,20 +23,9 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
-
-- The [.NET 7.0 SDK or later](https://dotnet.microsoft.com/download/dotnet/7.0)
+- The [.NET 8.0 SDK or later](https://dotnet.microsoft.com/download/dotnet/8.0)
 - A .NET integrated development environment (IDE)
   - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
-
-:::zone-end
-:::zone target="docs" pivot="dotnet-6-0"
-
-- The [.NET 6.0 SDK or later](https://dotnet.microsoft.com/download/dotnet/6.0)
-- A .NET integrated development environment (IDE)
-  - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
-
-:::zone-end
 
 <!-- ## Create a new project -->
 [!INCLUDE [file-new-worker](includes/file-new-worker.md)]
@@ -46,32 +34,14 @@ In this tutorial, you learn how to:
 
 To use [scoped services](dependency-injection.md#scoped) within a `BackgroundService`, create a scope. No scope is created for a hosted service by default. The scoped background service contains the background task's logic.
 
-:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
-
-:::code source="snippets/workers/7.0/scoped-service/IScopedProcessingService.cs":::
-
-:::zone-end
-:::zone target="docs" pivot="dotnet-6-0"
-
-:::code source="snippets/workers/6.0/scoped-service/IScopedProcessingService.cs":::
-
-:::zone-end
+:::code source="snippets/workers/scoped-service/IScopedProcessingService.cs":::
 
 The preceding interface defines a single `DoWorkAsync` method. To define the default implementation:
 
 - The service is asynchronous. The `DoWorkAsync` method returns a `Task`. For demonstration purposes, a delay of ten seconds is awaited in the `DoWorkAsync` method.
 - An <xref:Microsoft.Extensions.Logging.ILogger> is injected into the service.:
 
-:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
-
-:::code source="snippets/workers/7.0/scoped-service/DefaultScopedProcessingService.cs":::
-
-:::zone-end
-:::zone target="docs" pivot="dotnet-6-0"
-
-:::code source="snippets/workers/6.0/scoped-service/DefaultScopedProcessingService.cs":::
-
-:::zone-end
+:::code source="snippets/workers/scoped-service/DefaultScopedProcessingService.cs":::
 
 The hosted service creates a scope to resolve the scoped background service to call its `DoWorkAsync` method. `DoWorkAsync` returns a `Task`, which is awaited in `ExecuteAsync`:
 
@@ -79,31 +49,13 @@ The hosted service creates a scope to resolve the scoped background service to c
 
 Replace the existing `Worker` class with the following C# code, and rename the file to *ScopedBackgroundService.cs*:
 
-:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
-
-:::code source="snippets/workers/7.0/scoped-service/ScopedBackgroundService.cs" highlight="26-32":::
-
-:::zone-end
-:::zone target="docs" pivot="dotnet-6-0"
-
-:::code source="snippets/workers/6.0/scoped-service/ScopedBackgroundService.cs" highlight="26-32":::
-
-:::zone-end
+:::code source="snippets/workers/scoped-service/ScopedBackgroundService.cs" highlight="26-32":::
 
 In the preceding code, an explicit scope is created and the `IScopedProcessingService` implementation is resolved from the dependency injection service provider. The resolved service instance is scoped, and its `DoWorkAsync` method is awaited.
 
 Replace the template *Program.cs* file contents with the following C# code:
 
-:::zone target="docs" pivot="dotnet-8-0,dotnet-7-0"
-
-:::code source="snippets/workers/7.0/scoped-service/Program.cs" highlight="4-5":::
-
-:::zone-end
-:::zone target="docs" pivot="dotnet-6-0"
-
-:::code source="snippets/workers/6.0/scoped-service/Program.cs" highlight="4-8":::
-
-:::zone-end
+:::code source="snippets/workers/scoped-service/Program.cs" highlight="4-5":::
 
 The services are registered in (*Program.cs*). The hosted service is registered with the `AddHostedService` extension method.
 

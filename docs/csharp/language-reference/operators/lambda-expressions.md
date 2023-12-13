@@ -293,7 +293,7 @@ You can also add attributes to the input parameters or return value, as the foll
 
 ```csharp
 var concat = ([DisallowNull] string a, [DisallowNull] string b) => a + b;
-var inc = [return: NotNullifNotNull(nameof(s))] (int? s) => s.HasValue ? s++ : null;
+var inc = [return: NotNullIfNotNull(nameof(s))] (int? s) => s.HasValue ? s++ : null;
 ```
 
 As the preceding examples show, you must parenthesize the input parameters when you add attributes to a lambda expression or its parameters.

@@ -43,4 +43,3 @@ VSTest ships multiple executables, the most known `vstest.console.exe`, `testhos
 ### MSTest runner executables
 
 MSTest is embedded directly into your test project, and does not ship any additional executables. The executable of your test project is used to host all the testing tools, and carry out all the tasks that are needed for running tests.
-

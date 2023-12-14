@@ -205,7 +205,11 @@ services.AddControllers().AddJsonOptions(options =>
 :::zone-end
 
 > [!NOTE]
-> <xref:System.Text.Json.Serialization.JsonSourceGenerationMode.Serialization?displayProperty=nameWithType>, or fast-path serialization, isn't supported for asynchronous serialization. This limitation also applies to synchronous overloads of <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> that accept a <xref:System.IO.Stream>.
+> <xref:System.Text.Json.Serialization.JsonSourceGenerationMode.Serialization?displayProperty=nameWithType>, or fast-path serialization, isn't supported for asynchronous serialization.
+>
+> In .NET 7 and earlier versions, this limitation also applies to synchronous overloads of <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> that accept a <xref:System.IO.Stream>. Starting with .NET 8, even though streaming serialization requires metadata-based models, it will fall back to fast-path if the payloads are known to be small enough to fit in the predetermined buffer size.
+
+See https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-8/#json for more details.
 
 :::zone pivot="dotnet-8-0"
 

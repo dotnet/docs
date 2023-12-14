@@ -460,8 +460,6 @@ items:
         href: core-libraries/6.0/filestream-position-updates-after-readasync-writeasync-completion.md
       - name: New diagnostic IDs for obsoleted APIs
         href: core-libraries/6.0/diagnostic-id-change-for-obsoletions.md
-      - name: New nullable annotation in AssociatedMetadataTypeTypeDescriptionProvider
-        href: core-libraries/6.0/nullable-ref-type-annotations-added.md
       - name: New Queryable method overloads
         href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
       - name: Nullability annotation changes
@@ -600,8 +598,6 @@ items:
         href: windows-forms/6.0/treenodecollection-item-throws-argumentexception.md
     - name: XML and XSLT
       items:
-      - name: XmlDocument.XmlResolver nullability change
-        href: core-libraries/6.0/xmlresolver-nullable.md
       - name: XNodeReader.GetAttribute behavior for invalid index
         href: core-libraries/6.0/xnodereader-getattribute.md
   - name: .NET 5
@@ -1200,8 +1196,6 @@ items:
         href: core-libraries/6.0/filestream-position-updates-after-readasync-writeasync-completion.md
       - name: New diagnostic IDs for obsoleted APIs
         href: core-libraries/6.0/diagnostic-id-change-for-obsoletions.md
-      - name: New nullable annotation in AssociatedMetadataTypeTypeDescriptionProvider
-        href: core-libraries/6.0/nullable-ref-type-annotations-added.md
       - name: New Queryable method overloads
         href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
       - name: Nullability annotation changes
@@ -1798,8 +1792,6 @@ items:
         href: xml/7.0/xmlsecureresolver-obsolete.md
     - name: .NET 6
       items:
-      - name: XmlDocument.XmlResolver nullability change
-        href: core-libraries/6.0/xmlresolver-nullable.md
       - name: XNodeReader.GetAttribute behavior for invalid index
         href: core-libraries/6.0/xnodereader-getattribute.md
 - name: Resources

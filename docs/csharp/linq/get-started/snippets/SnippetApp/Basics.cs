@@ -1,6 +1,4 @@
-﻿using QueryExpressionBasics;
-
-namespace Linq.GetStarted;
+﻿namespace Linq.GetStarted;
 
 public static class Basics
 {

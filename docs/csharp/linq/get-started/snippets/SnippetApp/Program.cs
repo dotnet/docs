@@ -1,14 +1,84 @@
 ﻿using System.Xml.Linq;
 
+WriteSeparator(nameof(PartsOfAQuery));
 PartsOfAQuery();
 
-/*
-// <LoadXML>
-// Create a data source from an XML document.
-// using System.Xml.Linq;
-XElement contacts = XElement.Load(@"c:\myContactList.xml");
-// </LoadXML>
-*/
+WriteSeparator(nameof(Linq.GetStarted.Basics.Basics1));
+Linq.GetStarted.Basics.Basics1();
+WriteSeparator(nameof(Linq.GetStarted.Basics.Basics2));
+Linq.GetStarted.Basics.Basics2();
+WriteSeparator(nameof(Linq.GetStarted.Basics.Basics3));
+Linq.GetStarted.Basics.Basics3();
+WriteSeparator(nameof(Linq.GetStarted.Basics.Basics4));
+Linq.GetStarted.Basics.Basics4();
+WriteSeparator(nameof(Linq.GetStarted.Basics.Basics5));
+Linq.GetStarted.Basics.Basics5();
+WriteSeparator(nameof(Linq.GetStarted.Basics.Basics6));
+Linq.GetStarted.Basics.Basics6();
+WriteSeparator(nameof(Linq.GetStarted.Basics.Basics7));
+Linq.GetStarted.Basics.Basics7();
+WriteSeparator(nameof(Linq.GetStarted.Basics.Basics7a));
+Linq.GetStarted.Basics.Basics7a();
+WriteSeparator(nameof(Linq.GetStarted.Basics.Basics8));
+Linq.GetStarted.Basics.Basics8();
+WriteSeparator(nameof(Linq.GetStarted.Basics.Basics9));
+Linq.GetStarted.Basics.Basics9();
+WriteSeparator(nameof(Linq.GetStarted.Basics.Basics10));
+Linq.GetStarted.Basics.Basics10();
+WriteSeparator(nameof(Linq.GetStarted.Basics.Basics11));
+Linq.GetStarted.Basics.Basics11();
+WriteSeparator(nameof(Linq.GetStarted.Basics.Basics12));
+Linq.GetStarted.Basics.Basics12();
+WriteSeparator(nameof(Linq.GetStarted.Basics.Basics13));
+Linq.GetStarted.Basics.Basics13();
+WriteSeparator(nameof(Linq.GetStarted.Basics.Basics14));
+Linq.GetStarted.Basics.Basics14();
+WriteSeparator(nameof(Linq.GetStarted.Basics.Basics15));
+Linq.GetStarted.Basics.Basics15();
+WriteSeparator(nameof(Linq.GetStarted.Basics.Basics16));
+Linq.GetStarted.Basics.Basics16();
+WriteSeparator(nameof(Linq.GetStarted.Basics.Basics17));
+Linq.GetStarted.Basics.Basics17();
+WriteSeparator(nameof(Linq.GetStarted.Basics.Basics18));
+Linq.GetStarted.Basics.Basics18();
+WriteSeparator(nameof(Linq.GetStarted.Basics.Basics19));
+Linq.GetStarted.Basics.Basics19();
+
+WriteSeparator(nameof(Linq.GetStarted.WriteLinqQueries.MethodSyntax));
+Linq.GetStarted.WriteLinqQueries.MethodSyntax();
+WriteSeparator(nameof(Linq.GetStarted.WriteLinqQueries.WriteLinqQueries1));
+Linq.GetStarted.WriteLinqQueries.WriteLinqQueries1();
+WriteSeparator(nameof(Linq.GetStarted.WriteLinqQueries.WriteLinqQueries2));
+Linq.GetStarted.WriteLinqQueries.WriteLinqQueries2();
+WriteSeparator(nameof(Linq.GetStarted.WriteLinqQueries.WriteLinqQueries3));
+Linq.GetStarted.WriteLinqQueries.WriteLinqQueries3();
+WriteSeparator(nameof(Linq.GetStarted.WriteLinqQueries.WriteLinqQueries4));
+Linq.GetStarted.WriteLinqQueries.WriteLinqQueries4();
+WriteSeparator(nameof(Linq.GetStarted.WriteLinqQueries.WriteLinqQueries5));
+Linq.GetStarted.WriteLinqQueries.WriteLinqQueries5();
+WriteSeparator(nameof(Linq.GetStarted.WriteLinqQueries.WriteLinqQueries5a));
+Linq.GetStarted.WriteLinqQueries.WriteLinqQueries5a();
+WriteSeparator(nameof(Linq.GetStarted.WriteLinqQueries.WriteLinqQueries5b));
+Linq.GetStarted.WriteLinqQueries.WriteLinqQueries5b();
+
+WriteSeparator(nameof(Linq.GetStarted.TypeRelationships.ExplicitType));
+Linq.GetStarted.TypeRelationships.ExplicitType();
+WriteSeparator(nameof(Linq.GetStarted.TypeRelationships.ImplicitType));
+Linq.GetStarted.TypeRelationships.ImplicitType();
+
+void WriteSeparator(string symbol) => Console.WriteLine($"==========  {symbol} ==========");
+
+// This won't work, but we want to make sure it compiles.
+#pragma warning disable CS8321 // Local function is declared but never used
+void DontCallThis()
+{ 
+    // <LoadXML>
+    // Create a data source from an XML document.
+    // using System.Xml.Linq;
+    XElement contacts = XElement.Load(@"c:\myContactList.xml");
+    // </LoadXML>
+}
+#pragma warning restore CS8321 // Local function is declared but never used
 
 static void PartsOfAQuery()
 {

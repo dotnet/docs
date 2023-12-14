@@ -1,4 +1,4 @@
-namespace Linq.GetStarted;
+﻿namespace Linq.GetStarted;
 
 public class TypeRelationships
 {
@@ -26,7 +26,7 @@ public class TypeRelationships
         //</ExplicitType>
     }
 
-    static void ImplicitType()
+    public static void ImplicitType()
     {
         //<ImplicitType>
         var customerQuery2 =

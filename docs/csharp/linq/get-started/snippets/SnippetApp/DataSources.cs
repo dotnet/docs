@@ -1,4 +1,5 @@
-namespace QueryExpressionBasics;
+﻿namespace Linq.GetStarted;
+
 record City(long Population);
 record Country(string Name, List<City> Cities, long Area, long Population);
 record Product(string Name, string Category);

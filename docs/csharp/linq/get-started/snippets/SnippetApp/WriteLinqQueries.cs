@@ -1,12 +1,10 @@
-namespace Linq.GetStarted;
+﻿namespace Linq.GetStarted;
 
 public class WriteLinqQueries
 {
-
     static readonly List<int> numbers = [5, 4, 1, 3, 9, 8, 6, 7, 2, 0];
     static readonly List<int> numbers1 = [5, 4, 1, 3, 9, 8, 6, 7, 2, 0];
     static readonly List<int> numbers2 = [15, 14, 11, 13, 19, 18, 16, 17, 12, 10];
-
 
     public static void MethodSyntax()
     {

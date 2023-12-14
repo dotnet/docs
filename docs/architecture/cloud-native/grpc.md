@@ -3,7 +3,7 @@ title: gRPC
 description: Learn about gRPC, its role in cloud-native applications, and how it differs from HTTP RESTful communication.
 author: robvet
 no-loc: [Blazor, "Blazor WebAssembly"]
-ms.date: 04/06/2022
+ms.date: 12/14/2023
 ---
 
 # gRPC
@@ -45,8 +45,6 @@ Using the proto file, the Protobuf compiler, `protoc`, generates both client and
 - A client stub that contains the required plumbing to invoke the remote gRPC service.
 
 At run time, each message is serialized as a standard Protobuf representation and exchanged between the client and remote service. Unlike JSON or XML, Protobuf messages are serialized as compiled binary bytes.
-
-The book, [gRPC for WCF Developers](../grpc-for-wcf-developers/index.md), available from the Microsoft Architecture site, provides in-depth coverage of gRPC and Protocol Buffers.
 
 ## gRPC support in .NET
 

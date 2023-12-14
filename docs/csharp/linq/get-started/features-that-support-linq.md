@@ -1,17 +1,15 @@
 ---
 title: "C# Features That Support LINQ"
 description: Learn about C# features to use with LINQ queries and in other contexts.
-ms.date: 12/13/2023
+ms.date: 12/14/2023
 helpviewer_keywords:
   - "LINQ [C#], features supporting LINQ"
 ---
 # C# Features That Support LINQ
 
-These new features are all used to a degree with LINQ queries, they are not limited to LINQ and can be used in any context where you find them useful.
-
 ## Query Expressions
 
-Query expressions use a declarative syntax similar to SQL or XQuery to query over IEnumerable collections. At compile time query syntax is converted to method calls to a LINQ provider's implementation of the standard query operator extension methods. Applications control the standard query operators that are in scope by specifying the appropriate namespace with a `using` directive. The following query expression takes an array of strings, groups them according to the first character in the string, and orders the groups.
+Query expressions use a declarative syntax similar to SQL or XQuery to query over <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> collections. At compile time, query syntax is converted to method calls to a LINQ provider's implementation of the standard query methods. Applications control the standard query operators that are in scope by specifying the appropriate namespace with a [`using`](../../language-reference/keywords/using-directive.md) directive. The following query expression takes an array of strings, groups them according to the first character in the string, and orders the groups.
 
 ```csharp
 var query = from str in stringArray
@@ -22,7 +20,7 @@ var query = from str in stringArray
 
 ## Implicitly Typed Variables (var)
 
-Instead of explicitly specifying a type when you declare and initialize a variable, you can use the [var](../../language-reference/statements/declarations.md#implicitly-typed-local-variables) modifier to instruct the compiler to infer and assign the type, as shown here:
+You can use the [var](../../language-reference/statements/declarations.md#implicitly-typed-local-variables) modifier to instruct the compiler to infer and assign the type, as shown here:
 
 ```csharp
 var number = 5;
@@ -32,9 +30,7 @@ var query = from str in stringArray
             select str;
 ```
 
-Variables declared as `var` are just as strongly typed as variables whose type you specify explicitly. The use of `var` makes it possible to create anonymous types, but it can be used only for local variables. Arrays can also be declared with implicit typing.
-
-For more information, see [Implicitly Typed Local Variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
+Variables declared as `var` are strongly typed, just like variables whose type you specify explicitly. The use of `var` makes it possible to create anonymous types, but only for local variables. For more information, see [Implicitly Typed Local Variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
 
 ## Object and Collection Initializers
 
@@ -44,7 +40,7 @@ Object and collection initializers make it possible to initialize objects withou
 var cust = new Customer { Name = "Mike", Phone = "555-1212" };
 ```
 
-Continuing with our `Customer` class, assume that there is a data source called `IncomingOrders`, and that for each order with a large `OrderSize`, we would like to create a new `Customer` based off of that order. A LINQ query can be executed on this data source and use object initialization to fill a collection:
+Continuing with your `Customer` class, assume that there's a data source called `IncomingOrders`, and that for each order with a large `OrderSize`, you would like to create a new `Customer` based off of that order. A LINQ query can be executed on this data source and use object initialization to fill a collection:
 
 ```csharp
 var newLargeOrderCustomers = from o in IncomingOrders
@@ -52,11 +48,13 @@ var newLargeOrderCustomers = from o in IncomingOrders
                             select new Customer { Name = o.Name, Phone = o.Phone };
 ```
 
-The data source may have more properties lying under the hood than the `Customer` class such as `OrderSize`, but with object initialization, the data returned from the query is molded into the desired data type; we choose the data that is relevant to our class. As a result, we now have an `IEnumerable` filled with the new `Customer`s we wanted. The above can also be written in LINQ's method syntax:
+The data source might have more properties defined than the `Customer` class such as `OrderSize`, but with object initialization, the data returned from the query is molded into the desired data type; you choose the data that is relevant to your class. As a result, you now have an <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> filled with the new `Customer`s you wanted. The preceding example can also be written in LINQ's method syntax:
 
 ```csharp
 var newLargeOrderCustomers = IncomingOrders.Where(x => x.OrderSize > 5).Select(y => new Customer { Name = y.Name, Phone = y.Phone });
 ```
+
+Beginning with C# 12, you can use [collection expression](../../language-reference/operators/collection-expressions.md) to initialize a collection.
 
 For more information, see:
 
@@ -65,25 +63,18 @@ For more information, see:
 
 ## Anonymous Types
 
-An anonymous type is constructed by the compiler and the type name is only available to the compiler. Anonymous types provide a convenient way to group a set of properties temporarily in a query result without having to define a separate named type. Anonymous types are initialized with a new expression and an object initializer, as shown here:
+The compiler constructs an [anonymous type](../../fundamentals/types/anonymous-types.md). The type name is only available to the compiler. Anonymous types provide a convenient way to group a set of properties temporarily in a query result without having to define a separate named type. Anonymous types are initialized with a new expression and an object initializer, as shown here:
 
 ```csharp
 select new {name = cust.Name, phone = cust.Phone};
 ```
 
-For more information, see [Anonymous Types](../../fundamentals/types/anonymous-types.md).
+Beginning with C# 7, you can use [tuples](../../language-reference/builtin-types/value-tuples.md) to create unnamed types.
 
 ## Extension Methods
 
-An extension method is a static method that can be associated with a type, so that it can be called as if it were an instance method on the type. This feature enables you to, in effect, "add" new methods to existing types without actually modifying them. The standard query operators are a set of extension methods that provide LINQ query functionality for any type that implements <xref:System.Collections.Generic.IEnumerable%601>.
-
-For more information, see [Extension Methods](../../programming-guide/classes-and-structs/extension-methods.md).
+An [extension method](../../programming-guide/classes-and-structs/extension-methods.md) is a static method that can be associated with a type, so that it can be called as if it were an instance method on the type. This feature enables you to, in effect, "add" new methods to existing types without actually modifying them. The standard query operators are a set of extension methods that provide LINQ query functionality for any type that implements <xref:System.Collections.Generic.IEnumerable%601>.
 
 ## Lambda Expressions
 
-A lambda expression is an inline function that uses the `=>` operator to separate input parameters from the function body and can be converted at compile time to a delegate or an expression tree. In LINQ programming, you encounter lambda expressions when you make direct method calls to the standard query operators.
-
-For more information, see:
-
-- [Lambda Expressions](../../language-reference/operators/lambda-expressions.md)
-- [Expression Trees (C#)](../../advanced-topics/expression-trees/index.md)
+A [lambda expressions](../../language-reference/operators/lambda-expressions.md) is an inline function that uses the `=>` operator to separate input parameters from the function body and can be converted at compile time to a delegate or an expression tree. In LINQ programming, you encounter lambda expressions when you make direct method calls to the standard query operators.

@@ -1,7 +1,7 @@
 ---
 title: Query expression basics (LINQ in C#)
 description: Introduces concepts related to query expressions
-ms.date: 12/12/2023
+ms.date: 12/14/2023
 ---
 # Query expression basics
 
@@ -11,17 +11,17 @@ This article introduces the basic concepts related to query expressions in C#.
 
 A *query* is a set of instructions that describes what data to retrieve from a given data source (or sources) and what shape and organization the returned data should have. A query is distinct from the results that it produces.
 
-Generally, the source data is organized logically as a sequence of elements of the same kind. For example, a SQL database table contains a sequence of rows. In an XML file, there is a "sequence" of XML elements (although these are organized hierarchically in a tree structure). An in-memory collection contains a sequence of objects.
+Generally, the source data is organized logically as a sequence of elements of the same kind. For example, an SQL database table contains a sequence of rows. In an XML file, there's a "sequence" of XML elements (although XML elements are organized hierarchically in a tree structure). An in-memory collection contains a sequence of objects.
 
-From an application's viewpoint, the specific type and structure of the original source data is not important. The application always sees the source data as an <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Linq.IQueryable%601> collection. For example, in LINQ to XML, the source data is made visible as an `IEnumerable`\<<xref:System.Xml.Linq.XElement>>.
+From an application's viewpoint, the specific type and structure of the original source data isn't important. The application always sees the source data as an <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Linq.IQueryable%601> collection. For example, in LINQ to XML, the source data is made visible as an `IEnumerable`\<<xref:System.Xml.Linq.XElement>>.
 
-Given this source sequence, a query may do one of three things:
+Given this source sequence, a query might do one of three things:
 
-- Retrieve a subset of the elements to produce a new sequence without modifying the individual elements. The query may then sort or group the returned sequence in various ways, as shown in the following example (assume `scores` is an `int[]`):
+- Retrieve a subset of the elements to produce a new sequence without modifying the individual elements. The query might then sort or group the returned sequence in various ways, as shown in the following example (assume `scores` is an `int[]`):
 
   :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics1":::
 
-- Retrieve a sequence of elements as in the previous example but transform them to a new type of object. For example, a query may retrieve only the last names from certain customer records in a data source. Or it may retrieve the complete record and then use it to construct another in-memory object type or even XML data before generating the final result sequence. The following example shows a projection from an `int` to a `string`. Note the new type of `highScoresQuery`.
+- Retrieve a sequence of elements as in the previous example but transform them to a new type of object. For example, a query might retrieve only the last names from certain customer records in a data source. Or it might retrieve the complete record and then use it to construct another in-memory object type or even XML data before generating the final result sequence. The following example shows a projection from an `int` to a `string`. Note the new type of `highScoresQuery`.
 
   :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics2":::
 
@@ -35,7 +35,7 @@ Given this source sequence, a query may do one of three things:
 
     :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics3":::
 
-    In the previous example, note the use of parentheses around the query expression before the call to the `Count` method. You can also express this by using a new variable to store the concrete result. This technique is more readable because it keeps the variable that stores the query separate from the query that stores a result.
+    In the previous example, note the use of parentheses around the query expression before the call to the <xref:System.Linq.Enumerable.Count%2A?displayProperty=nameWithType> method. You can also use a new variable to store the concrete result.
 
     :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics4":::
 
@@ -43,25 +43,25 @@ In the previous example, the query is executed in the call to `Count`, because `
 
 ## What is a query expression?
 
-A *query expression* is a query expressed in query syntax. A query expression is a first-class language construct. It is just like any other expression and can be used in any context in which a C# expression is valid. A query expression consists of a set of clauses written in a declarative syntax similar to SQL or XQuery. Each clause in turn contains one or more C# expressions, and these expressions may themselves be either a query expression or contain a query expression.
+A *query expression* is a query expressed in query syntax. A query expression is a first-class language construct. It's just like any other expression and can be used in any context in which a C# expression is valid. A query expression consists of a set of clauses written in a declarative syntax similar to SQL or XQuery. Each clause in turn contains one or more C# expressions, and these expressions might themselves be either a query expression or contain a query expression.
 
-A query expression must begin with a [from](../../language-reference/keywords/from-clause.md) clause and must end with a [select](../../language-reference/keywords/select-clause.md) or [group](../../language-reference/keywords/group-clause.md) clause. Between the first `from` clause and the last `select` or `group` clause, it can contain one or more of these optional clauses: [where](../../language-reference/keywords/where-clause.md), [orderby](../../language-reference/keywords/orderby-clause.md), [join](../../language-reference/keywords/join-clause.md), [let](../../language-reference/keywords/let-clause.md) and even additional [from](../../language-reference/keywords/from-clause.md) clauses. You can also use the [into](../../language-reference/keywords/into.md) keyword to enable the result of a `join` or `group` clause to serve as the source for additional query clauses in the same query expression.
+A query expression must begin with a [from](../../language-reference/keywords/from-clause.md) clause and must end with a [select](../../language-reference/keywords/select-clause.md) or [group](../../language-reference/keywords/group-clause.md) clause. Between the first `from` clause and the last `select` or `group` clause, it can contain one or more of these optional clauses: [where](../../language-reference/keywords/where-clause.md), [orderby](../../language-reference/keywords/orderby-clause.md), [join](../../language-reference/keywords/join-clause.md), [let](../../language-reference/keywords/let-clause.md) and even another [from](../../language-reference/keywords/from-clause.md) clauses. You can also use the [into](../../language-reference/keywords/into.md) keyword to enable the result of a `join` or `group` clause to serve as the source for more query clauses in the same query expression.
 
 ### Query variable
 
-In LINQ, a query variable is any variable that stores a *query* instead of the *results* of a query. More specifically, a query variable is always an enumerable type that will produce a sequence of elements when it is iterated over in a `foreach` statement or a direct call to its `IEnumerator.MoveNext` method.
+In LINQ, a query variable is any variable that stores a *query* instead of the *results* of a query. More specifically, a query variable is always an enumerable type that produces a sequence of elements when iterated over in a `foreach` statement or a direct call to its <xref:System.Collections.IEnumerator.MoveNext?displayProperty=nameWithType> method.
 
 The following code example shows a simple query expression with one data source, one filtering clause, one ordering clause, and no transformation of the source elements. The `select` clause ends the query.
 
 :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics5":::
 
-In the previous example, `scoreQuery` is a *query variable,* which is sometimes referred to as just a *query*. The query variable stores no actual result data, which is produced in the `foreach` loop. And when the `foreach` statement executes, the query results are not returned through the query variable `scoreQuery`. Rather, they are returned through the iteration variable `testScore`. The `scoreQuery` variable can be iterated in a second `foreach` loop. It will produce the same results as long as neither it nor the data source has been modified.
+In the previous example, `scoreQuery` is a *query variable,* which is sometimes referred to as just a *query*. The query variable stores no actual result data, which is produced in the `foreach` loop. And when the `foreach` statement executes, the query results aren't returned through the query variable `scoreQuery`. Rather, they're returned through the iteration variable `testScore`. The `scoreQuery` variable can be iterated in a second `foreach` loop. It produces the same results as long as neither it nor the data source has been modified.
 
-A query variable may store a query that is expressed in query syntax or method syntax, or a combination of the two. In the following examples, both `queryMajorCities` and `queryMajorCities2` are query variables:
+A query variable might store a query that is expressed in query syntax or method syntax, or a combination of the two. In the following examples, both `queryMajorCities` and `queryMajorCities2` are query variables:
 
 :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics6":::
 
-On the other hand, the following two examples show variables that are not query variables even though each is initialized with a query. They are not query variables because they store results:
+On the other hand, the following two examples show variables that aren't query variables even though each is initialized with a query. They aren't query variables because they store results:
 
 :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics7":::
 
@@ -71,11 +71,11 @@ For more information about the different ways to express queries, see [Query syn
 
 #### Explicit and implicit typing of query variables
 
-This documentation usually provides the explicit type of the query variable in order to show the type relationship between the query variable and the [select clause](../../language-reference/keywords/select-clause.md). However, you can also use the [var](../../language-reference/statements/declarations.md#implicitly-typed-local-variables) keyword to instruct the compiler to infer the type of a query variable (or any other local variable) at compile time. For example, the query example that was shown previously in this topic can also be expressed by using implicit typing:
+This documentation usually provides the explicit type of the query variable in order to show the type relationship between the query variable and the [select clause](../../language-reference/keywords/select-clause.md). However, you can also use the [var](../../language-reference/statements/declarations.md#implicitly-typed-local-variables) keyword to instruct the compiler to infer the type of a query variable (or any other local variable) at compile time. For example, the query example that was shown previously in this article can also be expressed by using implicit typing:
 
 :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics8":::
 
-In the above, the use of var is optional here and in all queries. `queryCities` is an `IEnumerable<City>` just as when it is explicitly typed.
+In the preceding example, the use of var is optional. `queryCities` is an `IEnumerable<City>` whether implicitly or explicitly typed.
 
 For more information, see [Implicitly typed local variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md) and [Type relationships in LINQ query operations](../../programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md).
 
@@ -87,7 +87,7 @@ A query expression must begin with a `from` clause. It specifies a data source t
 
 The range variable is in scope until the query is exited either with a semicolon or with a [continuation](#continuations-with-into) clause.
 
-A query expression may contain multiple `from` clauses. Use additional `from` clauses when each element in the source sequence is itself a collection or contains a collection. For example, assume that you have a collection of `Country` objects, each of which contains a collection of `City` objects named `Cities`. To query the `City` objects in each `Country`, use two `from` clauses as shown here:
+A query expression might contain multiple `from` clauses. Use more `from` clauses when each element in the source sequence is itself a collection or contains a collection. For example, assume that you have a collection of `Country` objects, each of which contains a collection of `City` objects named `Cities`. To query the `City` objects in each `Country`, use two `from` clauses as shown here:
 
 :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics10":::
 
@@ -111,17 +111,17 @@ Use the `select` clause to produce all other types of sequences. A simple `selec
 
 :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics12":::
 
-The `select` clause can be used to transform source data into sequences of new types. This transformation is also named a *projection*. In the following example, the `select` clause *projects* a sequence of anonymous types which contains only a subset of the fields in the original element. Note that the new objects are initialized by using an object initializer.
+The `select` clause can be used to transform source data into sequences of new types. This transformation is also named a *projection*. In the following example, the `select` clause *projects* a sequence of anonymous types that contains only a subset of the fields in the original element. The new objects are initialized by using an object initializer.
 
 :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics13":::
 
-So in this example, the `var` is required because the query produces an anonymous type.
+So in this example, the [`var`](../../language-reference/statements/declarations.md#implicitly-typed-local-variables) is required because the query produces an anonymous type.
 
 For more information about all the ways that a `select` clause can be used to transform source data, see [select clause](../../language-reference/keywords/select-clause.md).
 
 #### Continuations with _into_
 
-You can use the `into` keyword in a `select` or `group` clause to create a temporary identifier that stores a query. Do this when you must perform additional query operations on a query after a grouping or select operation. In the following example `countries` are grouped according to population in ranges of 10 million. After these groups are created, additional clauses filter out some groups, and then to sort the groups in ascending order. To perform those additional operations, the continuation represented by `countryGroup` is required.
+You can use the `into` keyword in a `select` or `group` clause to create a temporary identifier that stores a query. Use the `into` clause when you must perform extra query operations on a query after a grouping or select operation. In the following example, `countries` are grouped according to population in ranges of 10 million. After these groups are created, more clauses filter out some groups, and then to sort the groups in ascending order. To perform those extra operations, the continuation represented by `countryGroup` is required.
 
 :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics14":::
 
@@ -129,7 +129,7 @@ For more information, see [into](../../language-reference/keywords/into.md).
 
 ### Filtering, ordering, and joining
 
-Between the starting `from` clause, and the ending `select` or `group` clause, all other clauses (`where`, `join`, `orderby`, `from`, `let`) are optional. Any of the optional clauses may be used zero times or multiple times in a query body.
+Between the starting `from` clause, and the ending `select` or `group` clause, all other clauses (`where`, `join`, `orderby`, `from`, `let`) are optional. Any of the optional clauses might be used zero times or multiple times in a query body.
 
 #### where clause
 
@@ -145,11 +145,11 @@ Use the `orderby` clause to sort the results in either ascending or descending o
 
 :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics16":::
 
-The `ascending` keyword is optional; it is the default sort order if no order is specified. For more information, see [orderby clause](../../language-reference/keywords/orderby-clause.md).
+The `ascending` keyword is optional; it's the default sort order if no order is specified. For more information, see [orderby clause](../../language-reference/keywords/orderby-clause.md).
 
 #### join clause
 
-Use the `join` clause to associate and/or combine elements from one data source with elements from another data source based on an equality comparison between specified keys in each element. In LINQ, join operations are performed on sequences of objects whose elements are different types. After you have joined two sequences, you must use a `select` or `group` statement to specify which element to store in the output sequence. You can also use an anonymous type to combine properties from each set of associated elements into a new type for the output sequence. The following example associates `prod` objects whose `Category` property matches one of the categories in the `categories` string array. Products whose `Category` does not match any string in `categories` are filtered out. The `select` statement projects a new type whose properties are taken from both `cat` and `prod`.
+Use the `join` clause to associate and/or combine elements from one data source with elements from another data source based on an equality comparison between specified keys in each element. In LINQ, join operations are performed on sequences of objects whose elements are different types. After you join two sequences, you must use a `select` or `group` statement to specify which element to store in the output sequence. You can also use an anonymous type to combine properties from each set of associated elements into a new type for the output sequence. The following example associates `prod` objects whose `Category` property matches one of the categories in the `categories` string array. Products whose `Category` doesn't match any string in `categories` are filtered out. The `select` statement projects a new type whose properties are taken from both `cat` and `prod`.
 
 :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics17":::
 
@@ -157,7 +157,7 @@ You can also perform a group join by storing the results of the `join` operation
 
 #### let clause
 
-Use the `let` clause to store the result of an expression, such as a method call, in a new range variable. In the following example, the range variable `firstName` stores the first element of the array of strings that is returned by `Split`.
+Use the `let` clause to store the result of an expression, such as a method call, in a new range variable. In the following example, the range variable `firstName` stores the first element of the array of strings returned by `Split`.
 
 :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics18":::
 
@@ -165,7 +165,7 @@ For more information, see [let clause](../../language-reference/keywords/let-cla
 
 ### Subqueries in a query expression
 
-A query clause may itself contain a query expression, which is sometimes referred to as a *subquery*. Each subquery starts with its own `from` clause that does not necessarily point to the same data source in the first `from` clause. For example, the following query shows a query expression that is used in the select statement to retrieve the results of a grouping operation.
+A query clause might itself contain a query expression, which is sometimes referred to as a *subquery*. Each subquery starts with its own `from` clause that doesn't necessarily point to the same data source in the first `from` clause. For example, the following query shows a query expression that is used in the select statement to retrieve the results of a grouping operation.
 
 :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics19":::
 

@@ -16,11 +16,11 @@ ms.assetid: 99118938-d47c-4d7e-bb22-2657a9f95268
 ---
 # Type Relationships in LINQ Query Operations (C#)
 
-To write queries effectively, you should understand how types of the variables in a complete query operation all relate to each other. If you understand these relationships you will more easily comprehend the LINQ samples and code examples in the documentation. Furthermore, you will understand what occurs behind the scenes when variables are implicitly typed by using `var`.
+To write queries effectively, you should understand how types of the variables in a complete query operation all relate to each other. If you understand these relationships you will more easily comprehend the LINQ samples and code examples in the documentation. Furthermore, you will understand what occurs when variables are implicitly typed by using [`var`](../../language-reference/statements/declarations.md#implicitly-typed-local-variables).
 
-LINQ query operations are strongly typed in the data source, in the query itself, and in the query execution. The type of the variables in the query must be compatible with the type of the elements in the data source and with the type of the iteration variable in the `foreach` statement. This strong typing guarantees that type errors are caught at compile time when they can be corrected before users encounter them.
+LINQ query operations are strongly typed in the data source, in the query itself, and in the query execution. The type of the variables in the query must be compatible with the type of the elements in the data source and with the type of the iteration variable in the [`foreach`](../../language-reference/statements/iteration-statements.md#the-foreach-statement) statement. This strong typing guarantees that type errors are caught at compile time when they can be corrected before users encounter them.
 
-In order to demonstrate these type relationships, most of the examples that follow use explicit typing for all variables. The last example shows how the same principles apply even when you use implicit typing by using [var](../../language-reference/statements/declarations.md#implicitly-typed-local-variables).
+In order to demonstrate these type relationships, most of the examples that follow use explicit typing for all variables. The last example shows how the same principles apply even when you use implicit typing by using `var`.
 
 ## Queries that do not Transform the Source Data
 

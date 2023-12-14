@@ -8,7 +8,7 @@ ms.date: 12/13/2023
 
 # MSTest runner and VSTest comparison
 
-The MSTest runner is a lightweight and portable alternative to [VSTest](https://github.com/microsoft/vstest) for running tests in continuous integration (CI) pipelines, and in Visual Studio Test Explorer.
+The MSTest runner is a lightweight and portable alternative to [VSTest](https://github.com/microsoft/vstest) for running tests in command line, in continuous integration (CI) pipelines, in Visual Studio Test Explorer, and in Visual Studio Code.
 
 The article below describes the main differences between VSTest and MSTest runner.
 
@@ -34,7 +34,6 @@ VSTest is extensible and common types are placed in `Microsoft.TestPlatform.Obje
 
 The MSTest runner is based on `Microsoft.Testing.Platform` library and additional libraries in `Microsoft.Testing.*` namespace. `Microsoft.Testing.Platform` code is placed in [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository.
 
-MSTest runner uses VSTest extensibility model `Microsoft.TestPlatform.ObjectModel` to extend MSTest testing framework.
 
 ## Executables
 

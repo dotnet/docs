@@ -51,8 +51,6 @@ To enable the MSTest Runner in an MSTest project, you need to add `UseMSTestRunn
 </Project>
 ```
 
-Building the application will generate an executable application for your test project. For example `Contoso.MyTests.exe` on Windows.
-
 ## Run and debug tests
 
 > [!IMPORTANT]

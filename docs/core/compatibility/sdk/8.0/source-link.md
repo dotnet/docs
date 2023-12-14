@@ -7,6 +7,9 @@ ms.date: 11/08/2023
 
 The [Source Link](https://github.com/dotnet/sourcelink) build tooling is now included in the .NET SDK. Source Link enables packages and applications to embed information about the source control information of the built artifacts. As a side effect, commit information is included in the `InformationalVersion` value of built libraries and applications.
 
+> [!NOTE]
+> This change affects any project that's built with the .NET 8 SDK, even those that target .NET 7 or an earlier version.
+
 ## Previous behavior
 
 Prior to this change, the default `InformationalVersion` of a library or application was the `Version` property.
@@ -30,3 +33,7 @@ Source Link enables rich editor tooling, like go-to-definition support for non-l
 ## Recommended action
 
 If your build process or code doesn't expect Source Revision information in `InformationalVersion`, you can disable the new behavior by setting the `IncludeSourceRevisionInInformationalVersion` property to `false` in your project file.
+
+## See also
+
+- <xref:System.Reflection.AssemblyInformationalVersionAttribute>

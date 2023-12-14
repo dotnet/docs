@@ -56,8 +56,6 @@ Although you should understand the type relationships in a query operation, you 
 
 ![Diagram that shows the type flow with implicit typing.](./media/type-relationships-in-linq-query-operations/linq-type-flow-implicit-typing.png)
 
-For more information about `var`, see [Implicitly Typed Local Variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md).
-
 ## LINQ and generic types (C#)
 
 LINQ queries are based on generic types. You do not need an in-depth knowledge of generics before you can start writing queries. However, you may want to understand two basic concepts:

@@ -1060,7 +1060,7 @@ The .NET SDK ships with all of the ["CA" code quality rules](../../fundamentals/
 
 The following table shows the available option values. They're listed in increasing order of the number of rules they enable.
 
-[!INCLUDE [analysis-model-levels](includes/analysis-model-levels.md)]
+[!INCLUDE [analysis-model-levels](../../fundamentals/code-analysis/includes/analysis-model-levels.md)]
 
 > [!NOTE]
 >

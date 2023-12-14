@@ -269,7 +269,7 @@ To fix the error, remove the reference variable where it isn't allowed:
 - Either both or neither [conditional operator expressions] must be `ref` variables. Either remove `ref` from one expression, or add it to the other. If it's a `ref` conditional expression, both expressions must be the same type.
 - `ref` and `out` parameters can't have [default values](../../programming-guide/classes-and-structs/named-and-optional-arguments.md). Either remove the `ref` or `out` modifier, or remove the default value.
 - You can't put reference variables in a `using` statement in `async` methods lambda expressions.
-- The range variable in a [LINQ query expression](/dotnet/csharp/linq/get-started/query-expression-basics) can't be passed by reference.
+- The range variable in a [LINQ query expression](../../linq/get-started/query-expression-basics.md) can't be passed by reference.
 - You can't deconstruct an object into reference variables. Replace the reference variables with value variables.
 - You can't implement multiple interfaces where method overloads differ only on `ref` and `out`. For example, one interface declares `void M(ref int i)` and another interface declares `void M(out int i)`. A class can't implement both interfaces because the methods aren't distinguishable. You can only implement one of those interfaces.
 - Methods attributed with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute?displayProperty=nameWithType> can't use reference parameters.

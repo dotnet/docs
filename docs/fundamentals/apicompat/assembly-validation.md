@@ -7,7 +7,7 @@ ms.topic: overview
 
 # Assembly validation
 
-Similar to [package validation](/dotnet/fundamentals/apicompat/package-validation/overview), assembly validation tooling allows you, as a library developer, to validate that your assemblies are consistent and well formed. Use assembly validation instead of package validation when your app isn't packable.
+Similar to [package validation](package-validation/overview.md), assembly validation tooling allows you, as a library developer, to validate that your assemblies are consistent and well formed. Use assembly validation instead of package validation when your app isn't packable.
 
 Assembly validation provides the following checks:
 

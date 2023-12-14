@@ -67,7 +67,7 @@ For more information, see [Implicitly typed local variables (C# Programming Guid
 deferred execution and lazy evaluation \
 The delaying of evaluation of an expression until its resolved value is actually required. Deferred execution is supported in collections.
 
-For more C# information, see [Introduction to LINQ Queries (C#)](/dotnet/csharp/linq/get-started/introduction-to-linq-queries) and [Deferred Execution and Lazy Evaluation in LINQ to XML (C#)](./deferred-execution-lazy-evaluation.md).
+For more C# information, see [Introduction to LINQ Queries (C#)](../../csharp/linq/get-started/introduction-to-linq-queries.md) and [Deferred Execution and Lazy Evaluation in LINQ to XML (C#)](./deferred-execution-lazy-evaluation.md).
 
 For more Visual Basic information, see [Basic Query Operations (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md) and [Deferred Execution and Lazy Evaluation in LINQ to XML (Visual Basic)](./deferred-execution-lazy-evaluation.md).
 

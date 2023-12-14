@@ -30,5 +30,5 @@ This section describes key concepts for designing LINQ queries in [!INCLUDE[vbte
  [Object Identity](object-identity.md)  
  Explains the concept of object identity in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
- [Introduction to LINQ Queries (C#)](/dotnet/csharp/linq/get-started/introduction-to-linq-queries)  
+ [Introduction to LINQ Queries (C#)](../../../../../csharp/linq/get-started/introduction-to-linq-queries.md)  
  Provides an introduction to query operations in LINQ.

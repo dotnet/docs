@@ -67,7 +67,7 @@ On the other hand, the following two examples show variables that aren't query v
 
 :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics7a":::
 
-For more information about the different ways to express queries, see [Query syntax and method syntax in LINQ](/dotnet/csharp/linq/get-started/write-linq-queries).
+For more information about the different ways to express queries, see [Query syntax and method syntax in LINQ](write-linq-queries.md).
 
 #### Explicit and implicit typing of query variables
 
@@ -77,7 +77,7 @@ This documentation usually provides the explicit type of the query variable in o
 
 In the preceding example, the use of var is optional. `queryCities` is an `IEnumerable<City>` whether implicitly or explicitly typed.
 
-For more information, see [Implicitly typed local variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md) and [Type relationships in LINQ query operations](/dotnet/csharp/linq/get-started/type-relationships-in-linq-query-operations).
+For more information, see [Implicitly typed local variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md) and [Type relationships in LINQ query operations](type-relationships-in-linq-query-operations.md).
 
 ### Starting a query expression
 

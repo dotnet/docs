@@ -30,7 +30,7 @@ The compiler infers the type of the range variable when the data source implemen
 
 In the previous example `num` is inferred to be of type `int`. Because the range variable is strongly typed, you can call methods on it or use it in other operations. For example, instead of writing `select num`, you could write `select num.ToString()` to cause the query expression to return a sequence of strings instead of integers. Or you could write `select num + 10` to cause the expression to return the sequence 14, 11, 13, 12, 10. For more information, see [select clause](select-clause.md).
 
-The range variable is like an iteration variable in a [foreach](../statements/iteration-statements.md#the-foreach-statement) statement except for one very important difference: a range variable never actually stores data from the source. It's just a syntactic convenience that enables the query to describe what will occur when the query is executed. For more information, see [Introduction to LINQ Queries (C#)](/dotnet/csharp/linq/get-started/introduction-to-linq-queries).
+The range variable is like an iteration variable in a [foreach](../statements/iteration-statements.md#the-foreach-statement) statement except for one very important difference: a range variable never actually stores data from the source. It's just a syntactic convenience that enables the query to describe what will occur when the query is executed. For more information, see [Introduction to LINQ Queries (C#)](../../linq/get-started/introduction-to-linq-queries.md).
 
 ## Compound from clauses
 

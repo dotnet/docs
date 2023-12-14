@@ -669,7 +669,7 @@ Project file:
 - Specifies the threshold size, in bytes, that causes objects to go on the large object heap (LOH).
 - The default threshold is 85,000 bytes.
 - The value you specify must be larger than the default threshold.
-- The value can be capped by the runtime to the maximum possible size for the current configuration. The value actually being used at runtime can be inspected through the [GC.GetConfigurationVariables](https://learn.microsoft.com/en-us/dotnet/api/system.gc.getconfigurationvariables) API.
+- The value might be capped by the runtime to the maximum possible size for the current configuration. You can inspect the value in use at run time through the <xref:System.GC.GetConfigurationVariables?displayProperty=nameWithType> API.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |

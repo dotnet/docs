@@ -34,6 +34,12 @@ Source Link enables rich editor tooling, like go-to-definition support for non-l
 
 If your build process or code doesn't expect Source Revision information in `InformationalVersion`, you can disable the new behavior by setting the `IncludeSourceRevisionInInformationalVersion` property to `false` in your project file.
 
+```xml
+<PropertyGroup>
+  <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+</PropertyGroup>
+```
+
 ## See also
 
 - <xref:System.Reflection.AssemblyInformationalVersionAttribute>

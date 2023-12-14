@@ -34,7 +34,6 @@ VSTest is extensible and common types are placed in `Microsoft.TestPlatform.Obje
 
 The MSTest runner is based on `Microsoft.Testing.Platform` library and additional libraries in `Microsoft.Testing.*` namespace. `Microsoft.Testing.Platform` code is placed in [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository.
 
-
 ## Executables
 
 ### VSTest executables

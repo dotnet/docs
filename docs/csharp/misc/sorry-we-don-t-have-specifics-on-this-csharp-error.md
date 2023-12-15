@@ -1,7 +1,7 @@
 ---
 title: "Sorry, we don't have specifics on this C# error"
 description: "List of possible resources for compiler errors and warnings that haven't been documented yet."
-ms.date: 08/04/2020
+ms.date: 12/18/2023
 f1_keywords:
   - "CS0190"
   - "CS0224"
@@ -141,7 +141,6 @@ f1_keywords:
   - "CS7033"
   - "CS7034"
   - "CS7035"
-  - "CS7036"
   - "CS7038"
   - "CS7041"
   - "CS7042"

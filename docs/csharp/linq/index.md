@@ -30,7 +30,7 @@ You might need to add a [`using`](../language-reference/keywords/using-directive
   
 ### In-memory data
 
- There are two ways you enable LINQ querying of in-memory data. If the data is of a type that implements <xref:System.Collections.Generic.IEnumerable%601>, you query the data by using LINQ to Objects. If it doesn't make sense to enable enumeration by implementing the <xref:System.Collections.Generic.IEnumerable%601> interface, you define LINQ standard query operator methods, either in that type as [extension methods](../programming-guide/classes-and-structs/extension-methods.md) for that type. Custom implementations of the standard query operators should use deferred execution to return the results.  
+ There are two ways you enable LINQ querying of in-memory data. If the data is of a type that implements <xref:System.Collections.Generic.IEnumerable%601>, you query the data by using LINQ to Objects. If it doesn't make sense to enable enumeration by implementing the <xref:System.Collections.Generic.IEnumerable%601> interface, you define LINQ standard query operator methods, either in that type or as [extension methods](../programming-guide/classes-and-structs/extension-methods.md) for that type. Custom implementations of the standard query operators should use deferred execution to return the results.  
   
 ### Remote data
 

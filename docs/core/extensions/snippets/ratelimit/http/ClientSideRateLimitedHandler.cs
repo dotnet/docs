@@ -1,15 +1,11 @@
-﻿internal sealed class ClientSideRateLimitedHandler
-    : DelegatingHandler, IAsyncDisposable
+﻿internal sealed class ClientSideRateLimitedHandler(
+    RateLimiter limiter)
+    : DelegatingHandler(new HttpClientHandler()), IAsyncDisposable
 {
-    private readonly RateLimiter _rateLimiter;
-
-    public ClientSideRateLimitedHandler(RateLimiter limiter)
-        : base(new HttpClientHandler()) => _rateLimiter = limiter;
-
     protected override async Task<HttpResponseMessage> SendAsync(
         HttpRequestMessage request, CancellationToken cancellationToken)
     {
-        using RateLimitLease lease = await _rateLimiter.AcquireAsync(
+        using RateLimitLease lease = await limiter.AcquireAsync(
             permitCount: 1, cancellationToken);
 
         if (lease.IsAcquired)
@@ -32,7 +28,7 @@
 
     async ValueTask IAsyncDisposable.DisposeAsync()
     { 
-        await _rateLimiter.DisposeAsync().ConfigureAwait(false);
+        await limiter.DisposeAsync().ConfigureAwait(false);
 
         Dispose(disposing: false);
         GC.SuppressFinalize(this);
@@ -44,7 +40,7 @@
 
         if (disposing)
         {
-            _rateLimiter.Dispose();
+            limiter.Dispose();
         }
     }
 }

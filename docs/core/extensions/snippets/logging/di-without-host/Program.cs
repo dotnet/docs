@@ -13,17 +13,10 @@ ExampleService service = serviceProvider.GetRequiredService<ExampleService>();
 // Do some pretend work
 service.DoSomeWork(10, 20);
 
-class ExampleService
+class ExampleService(ILogger<ExampleService> logger)
 {
-    private readonly ILogger<ExampleService> _logger;
-
-    public ExampleService(ILogger<ExampleService> logger)
-    {
-        _logger = logger;
-    }
-
     public void DoSomeWork(int x, int y)
     {
-        _logger.LogInformation("DoSomeWork was called. x={X}, y={Y}", x, y);
+        logger.LogInformation("DoSomeWork was called. x={X}, y={Y}", x, y);
     }
 }

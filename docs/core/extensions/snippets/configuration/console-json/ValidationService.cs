@@ -23,7 +23,7 @@ public sealed class ValidationService
         {
             foreach (string failure in ex.Failures)
             {
-                _logger.LogError(failure);
+                _logger.LogError("Validation error: {FailureMessage}", failure);
             }
         }
     }

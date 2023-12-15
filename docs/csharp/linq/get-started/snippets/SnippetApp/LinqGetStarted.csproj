@@ -3,7 +3,9 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
-
-    <StartupObject>LINQGettingStarted_1.Program</StartupObject>
+    <RootNamespace>Linq.GetStarted</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
+
 </Project>

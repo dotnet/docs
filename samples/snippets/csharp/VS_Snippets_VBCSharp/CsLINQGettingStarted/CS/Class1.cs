@@ -8,87 +8,19 @@ namespace LINQGettingStarted_1
 {
     class Customer { } //so that Table<Customer> compiles below
 
-    // <snippet1>
     class IntroToLINQ
     {
         static void Main()
         {
-            // The Three Parts of a LINQ Query:
-            // 1. Data source.
-            int[] numbers = [ 0, 1, 2, 3, 4, 5, 6 ];
-
-            // 2. Query creation.
-            // numQuery is an IEnumerable<int>
-            var numQuery =
-                from num in numbers
-                where (num % 2) == 0
-                select num;
-
-            // 3. Query execution.
-            foreach (int num in numQuery)
-            {
-                Console.Write("{0,1} ", num);
-            }
         }
     }
-    // </snippet1>
 
     class DummyClass
     {
         //The Three Parts of a LINQ Query
         static void CreateDataSources()
         {
-            // <snippet2>
-            // Create a data source from an XML document.
-            // using System.Xml.Linq;
-            XElement contacts = XElement.Load(@"c:\myContactList.xml");
-            // </snippet2>
 
-        }
-        //The Three Parts of a LINQ Query
-        static void DeferredExecution()
-        {
-
-            //  Data source.
-            int[] numbers = [ 0, 1, 2, 3, 4, 5, 6 ];
-
-            //  Query creation.
-            IEnumerable<int> numQuery =
-                from num in numbers
-                where (num % 2) == 0
-                select num;
-
-            // <snippet4>
-            //  Query execution.
-            foreach (int num in numQuery)
-            {
-                Console.Write("{0,1} ", num);
-            }
-            // </snippet4>
-
-            // <snippet5>
-            var evenNumQuery =
-                from num in numbers
-                where (num % 2) == 0
-                select num;
-
-            int evenNumCount = evenNumQuery.Count();
-            //</snippet5>
-
-            //<snippet6>
-            List<int> numQuery2 =
-                (from num in numbers
-                 where (num % 2) == 0
-                 select num).ToList();
-
-            // or like this:
-            // numQuery3 is still an int[]
-
-            var numQuery3 =
-                (from num in numbers
-                 where (num % 2) == 0
-                 select num).ToArray();
-            //</snippet6>
         }
     }
 
@@ -525,41 +457,6 @@ namespace LINQGettingStarted_1
             //</snippet21>
         }
 
-        //<snippet22>
-        class QueryVMethodSyntax
-        {
-            static void Main()
-            {
-                int[] numbers = [ 5, 10, 8, 3, 6, 12 ];
-
-                //Query syntax:
-                IEnumerable<int> numQuery1 =
-                    from num in numbers
-                    where num % 2 == 0
-                    orderby num
-                    select num;
-
-                //Method syntax:
-                IEnumerable<int> numQuery2 = numbers.Where(num => num % 2 == 0).OrderBy(n => n);
-
-                foreach (int i in numQuery1)
-                {
-                    Console.Write(i + " ");
-                }
-                Console.WriteLine(System.Environment.NewLine);
-                foreach (int i in numQuery2)
-                {
-                    Console.Write(i + " ");
-                }
-            }
-        }
-        /*
-            Output:
-            6 8 10 12
-            6 8 10 12
-         */
-        //</snippet22>
-
         //<snippet31>
         // Lightweight class with auto-implemented properties
         class NamePhone
@@ -691,41 +588,7 @@ namespace LINQGettingStarted_1
 
         class LINQAndGenericTypes
         {
-            class Customer
-            {
-                public string City { get; set; }
-                public string LastName { get; set; }
-                public string FirstName { get; set; }
-                public string Phone {get; set;}
-            }
-            static List<Customer> customers = new List<Customer>();
 
-            static void Main()
-            {
-                //<snippet34>
-                IEnumerable<Customer> customerQuery =
-                    from cust in customers
-                    where cust.City == "London"
-                    select cust;
-
-                foreach (Customer customer in customerQuery)
-                {
-                    Console.WriteLine(customer.LastName + ", " + customer.FirstName);
-                }
-                //</snippet34>
-
-                //<snippet35>
-                var customerQuery2 =
-                    from cust in customers
-                    where cust.City == "London"
-                    select cust;
-
-                foreach(var customer in customerQuery2)
-                {
-                    Console.WriteLine(customer.LastName + ", " + customer.FirstName);
-                }
-                //</snippet35>
-            }
         }
     }
 }

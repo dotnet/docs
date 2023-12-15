@@ -340,7 +340,7 @@ C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full
 
 - [Auto-implemented properties](../programming-guide/classes-and-structs/auto-implemented-properties.md)
 - [Anonymous types](../fundamentals/types/anonymous-types.md)
-- [Query expressions](../linq/query-expression-basics.md)
+- [Query expressions](../linq/get-started/query-expression-basics.md)
 - [Lambda expressions](../language-reference/operators/lambda-expressions.md)
 - [Expression trees](/dotnet/csharp/advanced-topics/expression-trees)
 - [Extension methods](../programming-guide/classes-and-structs/extension-methods.md)

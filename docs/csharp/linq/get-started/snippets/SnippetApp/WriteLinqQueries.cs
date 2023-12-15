@@ -1,10 +1,37 @@
-﻿namespace LinqSamples;
+﻿namespace Linq.GetStarted;
 
-public static class WriteLinqQueries
+public class WriteLinqQueries
 {
     static readonly List<int> numbers = [5, 4, 1, 3, 9, 8, 6, 7, 2, 0];
     static readonly List<int> numbers1 = [5, 4, 1, 3, 9, 8, 6, 7, 2, 0];
     static readonly List<int> numbers2 = [15, 14, 11, 13, 19, 18, 16, 17, 12, 10];
+
+    public static void MethodSyntax()
+    {
+        // <MethodSyntax>
+        int[] numbers = [ 5, 10, 8, 3, 6, 12 ];
+
+        //Query syntax:
+        IEnumerable<int> numQuery1 =
+            from num in numbers
+            where num % 2 == 0
+            orderby num
+            select num;
+
+        //Method syntax:
+        IEnumerable<int> numQuery2 = numbers.Where(num => num % 2 == 0).OrderBy(n => n);
+
+        foreach (int i in numQuery1)
+        {
+            Console.Write(i + " ");
+        }
+        Console.WriteLine(System.Environment.NewLine);
+        foreach (int i in numQuery2)
+        {
+            Console.Write(i + " ");
+        }
+        // </MethodSyntax>
+    }
 
     public static void WriteLinqQueries1()
     {
@@ -74,7 +101,7 @@ public static class WriteLinqQueries
         // Using a query expression with method syntax
         var numCount1 = (
             from num in numbers1
-            where num is < 3 or > 7
+            where num is > 3 and < 7
             select num
         ).Count();
 
@@ -82,7 +109,7 @@ public static class WriteLinqQueries
         // the method call result
         IEnumerable<int> numbersQuery =
             from num in numbers1
-            where num is < 3 or > 7
+            where num is > 3 and < 7
             select num;
 
         var numCount2 = numbersQuery.Count();
@@ -92,14 +119,15 @@ public static class WriteLinqQueries
     public static void WriteLinqQueries5a()
     {
         // <write_linq_queries_5a>
-        var numCount = numbers.Count(n => n is < 3 or > 7);
+        var numCount = numbers.Count(n => n is > 3 and < 7);
         // </write_linq_queries_5a>
     }
 
     public static void WriteLinqQueries5b()
     {
         // <write_linq_queries_5b>
-        var numCount = numbers.Count(n => n is < 3 or > 7);
+        var numCount = numbers.Count(n => n is > 3 and < 7);
         // </write_linq_queries_5b>
     }
+
 }

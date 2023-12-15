@@ -1,6 +1,4 @@
-﻿using LinqSamples.QueryExpressionBasics;
-
-namespace LinqSamples;
+﻿namespace Linq.GetStarted;
 
 public static class Basics
 {

@@ -54,7 +54,7 @@ The data source might have more properties defined than the `Customer` class suc
 var newLargeOrderCustomers = IncomingOrders.Where(x => x.OrderSize > 5).Select(y => new Customer { Name = y.Name, Phone = y.Phone });
 ```
 
-Beginning with C# 12, you can use [collection expression](../../language-reference/operators/collection-expressions.md) to initialize a collection.
+Beginning with C# 12, you can use a [collection expression](../../language-reference/operators/collection-expressions.md) to initialize a collection.
 
 For more information, see:
 

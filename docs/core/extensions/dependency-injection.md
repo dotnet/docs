@@ -3,7 +3,7 @@ title: Dependency injection
 description: Learn how to use dependency injection within your .NET apps. Discover how to registration services, define service lifetimes, and express dependencies in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/11/2023
+ms.date: 12/15/2023
 ms.topic: overview
 ---
 
@@ -397,7 +397,7 @@ The <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory> is alwa
 
 To achieve scoping services within implementations of <xref:Microsoft.Extensions.Hosting.IHostedService>, such as the <xref:Microsoft.Extensions.Hosting.BackgroundService>, do *not* inject the service dependencies via constructor injection. Instead, inject <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory>, create a scope, then resolve dependencies from the scope to use the appropriate service lifetime.
 
-:::code language="csharp" source="snippets/configuration/worker-scope/Worker.cs" highlight="6,8-9,15":::
+:::code language="csharp" source="snippets/configuration/worker-scope/Worker.cs":::
 
 In the preceding code, while the app is running, the background service:
 
@@ -417,8 +417,8 @@ For example, consider the case where you have different implementations of the i
 You can register these services using the overload of the service registration methods (seen earlier) that supports a key as a parameter:
 
 ```csharp
-services.AddSingleton<IMessageWriter, MemoryMessageWriter>("memory");
-services.AddSingleton<IMessageWriter, QueueMessageWriter>("queue");
+services.AddKeyedSingleton<IMessageWriter, MemoryMessageWriter>("memory");
+services.AddKeyedSingleton<IMessageWriter, QueueMessageWriter>("queue");
 ```
 
 The `key` isn't limited to `string`, it can be any `object` you want, as long as the type correctly implements `Equals`.

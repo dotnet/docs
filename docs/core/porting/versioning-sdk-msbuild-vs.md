@@ -46,9 +46,9 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 > Targeting `net7.0` is officially supported in Visual Studio 17.4+ only.
 > Targeting `net8.0` is officially supported in Visual Studio 17.8+ only.
 >
-> <sup>1</<sup>.1xx .NET SDK feature bands are supported throughout the lifecycle of major .NET versions. During the extended support period, support is limited to security fixes and minimal high-priority non-security fixes for Linux only. To learn more about the reasoning for this extended support, refer to this [document](https://github.com/dotnet/source-build#support).
+> <sup>1</<sup>.1xx .NET SDK feature bands are supported throughout the lifecycle of major .NET versions. During the extended support period, support is limited to security fixes and minimal high-priority non-security fixes for Linux only. To learn more about the reasoning for this extended support, see [Source-build support](https://github.com/dotnet/source-build#support).
 >
-> <sup>2</sup> .4xx .NET SDK feature bands will be supported for the life of the matching runtime as stand-alone installs.
+> <sup>2</sup> .4xx .NET SDK feature bands are supported for the life of the matching runtime as stand-alone installs.
 >
 > <sup>3</sup> 6.0.300, 7.0.200, and 8.0.200 require newer Visual Studio versions. For more information, see the [support rules](#targeting-and-support-rules).
 >

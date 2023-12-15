@@ -139,7 +139,7 @@ To run a test, navigate to **Test Explorer**, select the test (or tests) to run.
 > [!TIP]
 > Automatic update of tests without building the project isn't available.
 
-### [Continuous integration](#tab/visual-studio)
+### [Continuous integration (CI)](#tab/continuous-integration)
 
 There's no special pipeline task, or any extra tooling to run `Testing.Platform` tests. There's also no other tooling required to run multiple tests projects through a single command.
 

@@ -1,6 +1,6 @@
 ---
-title: Pattern matching errors and warnings
-description: There are several pattern matching warnings. Learn how to address these warnings.
+title: Errors and warnings for parameter / argument mismatches
+description: These errors and warnings are issued when either arguments are missing, or arguments can't be used for one or more parameters on a method. Learn how to diagnose them and fix them.
 f1_keywords:
   - "CS7036"
 helpviewer_keywords:

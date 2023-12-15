@@ -64,8 +64,6 @@ MSTest runner test projects are built as executables that can be run (or debugge
 
 ### [.NET CLI](#tab/dotnetcli)
 
-## Run the app with .NET CLI
-
 Publishing the test project using `dotnet publish` and running the app directly is another way to run your tests. For example, executing the `./Contoso.MyTests.exe`. In some scenarios it's also viable to use `dotnet build` to produce the executable, but there can be edge cases to consider, such [Native AOT](../deploying/native-aot/index.md).
 
 ### Use `dotnet run`
@@ -101,7 +99,7 @@ dotnet exec Contoso.MyTests.dll
 
 For more information on `dotnet exec`, see [dotnet exec](../tools/dotnet.md#options-for-running-an-application-with-the-exec-command).
 
-#### Use `dotnet test`
+### Use `dotnet test`
 
 For tests authored with MSTest, NUnit or xUnit test framework, it's possible to run tests with [dotnet test](../tools/dotnet-test.md). The `dotnet test` command only works with MSTest, NUnit and xUnit tests. Provide a path to the tested dll, or to the project and your tests run:
 
@@ -111,7 +109,7 @@ dotnet test Contoso.MyTests.dll
 
 ### [Visual Studio](#tab/visual-studio)
 
-`Testing.Platform` tests can be run (and debugged) in Visual Studio, they integrate with Test Explorer, and can also be run directly as startup project.
+The `Testing.Platform` tests can be run (and debugged) in Visual Studio, they integrate with Test Explorer, and can also be run directly as startup project.
 
 #### Run the app with Visual Studio
 
@@ -122,7 +120,7 @@ dotnet test Contoso.MyTests.dll
 
 Console window pops up with the execution and summary of your test run.
 
-#### Debug the app directly in Visual Studio
+### Debug the app directly in Visual Studio
 
 `Testing.Platform` test project can be debugged directly. To debug all the tests in the given executable, unless a filter is provided:
 
@@ -140,6 +138,8 @@ To run a test, navigate to **Test Explorer**, select the test (or tests) to run.
 
 > [!TIP]
 > Automatic update of tests without building the project isn't available.
+
+---
 
 ## In continuous integration (CI)
 

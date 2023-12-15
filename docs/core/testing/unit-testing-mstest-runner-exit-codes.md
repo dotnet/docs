@@ -25,4 +25,4 @@ The MSTest runner uses known exit codes to communicate test failure or app error
 | `9` | The exit code `9` indicates that the minimum execution policy for the executed tests was violated. |
 | `10` | The exit code `10` indicates that the test adapter, Testing.Platform Test Framework, MSTest, NUnit, or xUnit, failed to run tests for an infrastructure reason unrelated to the test's self. An example is failing to create a fixture needed by tests. |
 
-To enable verbose logging in order to troubleshoot issues, see [troubleshooting](./unit-testing-mstest-runner-intro.md#troubleshoot).
+To enable verbose logging and troubleshoot issues, see [MSTest runner extensions: Troubleshoot](unit-testing-mstest-runner-extensions.md#troubleshoot).

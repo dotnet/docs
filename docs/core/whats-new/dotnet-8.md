@@ -783,13 +783,13 @@ public class SecondModelNoNamespace
 }
 
 [OptionsValidator]
-public partial class FirstValidatorNoNamespace 
+public partial class FirstValidatorNoNamespace
     : IValidateOptions<FirstModelNoNamespace>
 {
 }
 
 [OptionsValidator]
-public partial class SecondValidatorNoNamespace 
+public partial class SecondValidatorNoNamespace
     : IValidateOptions<SecondModelNoNamespace>
 {
 }
@@ -1264,6 +1264,9 @@ The [template engine](https://github.com/dotnet/templating) provides a more secu
 ### Source Link
 
 [Source Link](../../standard/library-guidance/sourcelink.md) is now included in the .NET SDK. The goal is that by bundling Source Link into the SDK, instead of requiring a separate `<PackageReference>` for the package, more packages will include this information by default. That information will improve the IDE experience for developers.
+
+> [!NOTE]
+> As a side effect of this change, commit information is included in the `InformationalVersion` value of built libraries and applications, even those that target .NET 7 or an earlier version. For more information, see [Source Link included in the .NET SDK](../compatibility/sdk/8.0/source-link.md).
 
 ### Source-build SDK
 

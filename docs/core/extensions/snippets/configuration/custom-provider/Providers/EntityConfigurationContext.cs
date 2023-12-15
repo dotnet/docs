@@ -3,14 +3,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CustomProvider.Example.Providers;
 
-public class EntityConfigurationContext : DbContext
+public class EntityConfigurationContext(string? connectionString) : DbContext
 {
-    private readonly string _connectionString;
+    private readonly string _connectionString = connectionString ?? "";
 
     public DbSet<Settings> Settings => Set<Settings>();
-
-    public EntityConfigurationContext(string? connectionString) =>
-        _connectionString = connectionString ?? "";
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

@@ -3,12 +3,10 @@ using Microsoft.Extensions.Localization;
 
 namespace Localization.Example;
 
-public class ParameterizedMessageService
+public class ParameterizedMessageService(IStringLocalizerFactory factory)
 {
-    private readonly IStringLocalizer _localizer = null!;
-
-    public ParameterizedMessageService(IStringLocalizerFactory factory) =>
-        _localizer = factory.Create(typeof(ParameterizedMessageService));
+    private readonly IStringLocalizer _localizer =
+        factory.Create(typeof(ParameterizedMessageService));
 
     [return: NotNullIfNotNull(nameof(_localizer))]
     public string? GetFormattedMessage(DateTime dateTime, double dinnerPrice)

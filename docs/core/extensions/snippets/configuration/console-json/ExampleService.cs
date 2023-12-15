@@ -2,12 +2,9 @@
 
 namespace ConsoleJson.Example;
 
-public sealed class ExampleService
+public sealed class ExampleService(IOptions<TransientFaultHandlingOptions> options)
 {
-    private readonly TransientFaultHandlingOptions _options;
-
-    public ExampleService(IOptions<TransientFaultHandlingOptions> options) =>
-        _options = options.Value;
+    private readonly TransientFaultHandlingOptions _options = options.Value;
 
     public void DisplayValues()
     {

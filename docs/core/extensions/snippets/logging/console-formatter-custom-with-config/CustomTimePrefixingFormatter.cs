@@ -10,11 +10,14 @@ public sealed class CustomTimePrefixingFormatter : ConsoleFormatter, IDisposable
     private readonly IDisposable? _optionsReloadToken;
     private CustomWrappingConsoleFormatterOptions _formatterOptions;
 
-    public CustomTimePrefixingFormatter(IOptionsMonitor<CustomWrappingConsoleFormatterOptions> options)
+    public CustomTimePrefixingFormatter(
+        IOptionsMonitor<CustomWrappingConsoleFormatterOptions> options)
         // Case insensitive
-        : base(nameof(CustomTimePrefixingFormatter)) =>
-        (_optionsReloadToken, _formatterOptions) =
-            (options.OnChange(ReloadLoggerOptions), options.CurrentValue);
+        : base(nameof(CustomTimePrefixingFormatter))
+    {
+        _optionsReloadToken = options.OnChange(ReloadLoggerOptions);
+        _formatterOptions = options.CurrentValue;
+    }
 
     private void ReloadLoggerOptions(CustomWrappingConsoleFormatterOptions options) =>
         _formatterOptions = options;

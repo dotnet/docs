@@ -10,7 +10,7 @@ ms.assetid: 13ec5580-05ce-4a1f-9d3d-8660be7891a2
   
 - Aggregate queries are executed immediately.  
   
-     For more information, see [Introduction to LINQ Queries (C#)](../../../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md).  
+     For more information, see [Introduction to LINQ Queries (C#)](../../../../../csharp/linq/get-started/introduction-to-linq-queries.md).  
   
 - Aggregate queries typically return a number instead of a collection.  
   
@@ -45,5 +45,5 @@ ms.assetid: 13ec5580-05ce-4a1f-9d3d-8660be7891a2
  [Query Concepts](query-concepts.md)  
  Provides links to topics that explain concepts for designing LINQ queries in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
- [Introduction to LINQ Queries (C#)](../../../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)  
+ [Introduction to LINQ Queries (C#)](../../../../../csharp/linq/get-started/introduction-to-linq-queries.md)  
  Explains how queries work in LINQ.

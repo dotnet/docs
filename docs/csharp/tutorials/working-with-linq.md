@@ -348,5 +348,5 @@ For more information on LINQ, see:
 - [Introduction to LINQ](/dotnet/csharp/linq/)
 - [Basic LINQ Query Operations (C#)](../programming-guide/concepts/linq/standard-query-operators-overview.md)
 - [Data Transformations With LINQ (C#)](../programming-guide/concepts/linq/data-transformations-with-linq.md)
-- [Query Syntax and Method Syntax in LINQ (C#)](../linq/write-linq-queries.md)
-- [C# Features That Support LINQ](../programming-guide/concepts/linq/features-that-support-linq.md)
+- [Query Syntax and Method Syntax in LINQ (C#)](../linq/get-started/write-linq-queries.md)
+- [C# Features That Support LINQ](../linq/get-started/features-that-support-linq.md)

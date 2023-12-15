@@ -5,13 +5,13 @@ using Microsoft.Extensions.Options;
 
 namespace ConsoleJson.Example;
 
-sealed partial class ValidateSettingsOptions : IValidateOptions<SettingsOptions>
+sealed partial class ValidateSettingsOptions(
+    IConfiguration config)
+    : IValidateOptions<SettingsOptions>
 {
-    public SettingsOptions? _settings { get; private set; }
-
-    public ValidateSettingsOptions(IConfiguration config) =>
-        _settings = config.GetSection(SettingsOptions.ConfigurationSectionName)
-                          .Get<SettingsOptions>();
+    public SettingsOptions? Settings { get; private set; } =
+        config.GetSection(SettingsOptions.ConfigurationSectionName)
+              .Get<SettingsOptions>();
 
     public ValidateOptionsResult Validate(string? name, SettingsOptions options)
     {
@@ -27,12 +27,12 @@ sealed partial class ValidateSettingsOptions : IValidateOptions<SettingsOptions>
             (failure ??= new()).AppendLine($"{options.Scale} isn't within Range 0 - 1000");
         }
 
-        if (_settings is { Scale: 0 } && _settings.VerbosityLevel <= _settings.Scale)
+        if (Settings is { Scale: 0 } && Settings.VerbosityLevel <= Settings.Scale)
         {
             (failure ??= new()).AppendLine("VerbosityLevel must be > than Scale.");
         }
 
-        return failure is not null ?
+        return failure is not null
             ? ValidateOptionsResult.Fail(failure.ToString())
             : ValidateOptionsResult.Success;
     }

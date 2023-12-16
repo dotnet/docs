@@ -104,3 +104,11 @@ groups:
       title: Azure CLI
     - id: azure-bicep
       title: Azure Bicep
+- id: code-language
+  title: Code language
+  prompt: Choose a code language
+  pivots:
+    - id: lang-csharp-vb
+      title: C# and Visual Basic
+    - id: lang-fsharp
+      title: F#

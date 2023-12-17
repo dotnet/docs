@@ -84,7 +84,7 @@ The project or solution file to operate on. If not specified, the command search
   
 - **`-f|--framework <FRAMEWORK>`**
 
-  Displays only the packages applicable for the specified [target framework](../../standard/frameworks.md). To specify multiple frameworks, repeat the option multiple times. For example: `--framework net6.0 --framework netstandard2.0`.
+  Displays only the packages applicable for the specified [target framework](../../standard/frameworks.md). To specify multiple frameworks, repeat the option multiple times. For example: `--framework net6.0 --framework netstandard2.0`. The short form of the option (`-f`) is available starting in .NET 9 SDK.
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 

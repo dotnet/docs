@@ -101,6 +101,27 @@ In a call to a class constructor, you can set the values of properties of the cl
 
 For more information, see [Constructors (F#)](members/constructors.md).
 
+The same technique, meant to call property setters, also applies to any object-returning method (such as factory methods):
+
+```fsharp
+type Widget() =
+    member val Width = 1 with get,set
+    member val Height = 1 with get,set
+
+type WidgetFactory =
+    static member MakeNewWidget() =
+         new Widget()
+    static member AdjustWidget(w: Widget) =
+         w
+let w = WidgetFactory.MakeNewWidget(Width=10)
+w.Width // = 10
+w.Height // = 1
+WidgetFactory.AdjustWidget(w, Height=10)
+w.Height // = 10
+```
+
+Note that those members could perform any arbitrary work, the syntax is effectively a short hand to call property setters before returning the final value.
+
 ## Optional Parameters
 
 You can specify an optional parameter for a method by using a question mark in front of the parameter name. Optional parameters are interpreted as the F# option type, so you can query them in the regular way that option types are queried, by using a `match` expression with `Some` and `None`. Optional parameters are permitted only on members, not on functions created by using `let` bindings.

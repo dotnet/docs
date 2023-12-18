@@ -101,7 +101,7 @@ In a call to a class constructor, you can set the values of properties of the cl
 
 For more information, see [Constructors (F#)](members/constructors.md).
 
-The same technique, meant to call property setters, also applies to any object returning method (such as factory methods):
+The same technique, meant to call property setters, also applies to any object-returning method (such as factory methods):
 
 ```fsharp
 type Widget() =

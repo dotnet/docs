@@ -106,11 +106,11 @@ An attribute argument must be a constant expression, typeof expression or array 
 
 Certain restrictions apply to what kinds of arguments may be used with attributes. Note that in addition to the restrictions specified in the error message, the following types are NOT allowed as attribute arguments:
 
-- [sbyte](../language-reference/builtin-types/integral-numeric-types.md)
-- [ushort](../language-reference/builtin-types/integral-numeric-types.md)
-- [uint](../language-reference/builtin-types/integral-numeric-types.md)
-- [ulong](../language-reference/builtin-types/integral-numeric-types.md)
-- [decimal](../language-reference/builtin-types/floating-point-numeric-types.md)
+- [sbyte](../../language-reference/builtin-types/integral-numeric-types.md)
+- [ushort](../../language-reference/builtin-types/integral-numeric-types.md)
+- [uint](../../language-reference/builtin-types/integral-numeric-types.md)
+- [ulong](../../language-reference/builtin-types/integral-numeric-types.md)
+- [decimal](../../language-reference/builtin-types/floating-point-numeric-types.md)
 
 For more information, see [Attributes](/dotnet/csharp/advanced-topics/reflection-and-attributes).
 
@@ -170,7 +170,7 @@ An invalid argument was passed to an attribute.
 
 'reference' is not a valid named attribute argument because it is not a valid attribute parameter type
 
-An attempt was made to access a [private](../language-reference/keywords/private.md) member of an attribute class.
+An attempt was made to access a [private](../../language-reference/keywords/private.md) member of an attribute class.
 
 The following sample generates CS0617.
 

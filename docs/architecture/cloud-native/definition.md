@@ -2,7 +2,7 @@
 title: What is Cloud Native?
 description: Learn about the foundational pillars that provide the bedrock for cloud-native systems
 author: robvet
-ms.date: 04/06/2022
+ms.date: 12/14/2023
 ---
 
 # What is Cloud Native?
@@ -208,8 +208,6 @@ The blue boxes across the center of the figure represent the Dapr building block
 The components row represents a large set of pre-defined infrastructure components that your application can consume. Think of components as infrastructure code you don't have to write.
 
 The bottom row highlights the portability of Dapr and the diverse environments across which it can run.
-
-Microsoft features a free ebook [Dapr for .NET Developers](../dapr-for-net-developers/index.md) for learning Dapr.
 
 Looking ahead, Dapr has the potential to have a profound impact on cloud-native application development.
 

@@ -1,7 +1,7 @@
 ---
 title: When to choose .NET Framework for Docker containers
 description: .NET Microservices Architecture for Containerized .NET Applications | When to choose .NET Framework for Docker containers
-ms.date: 11/19/2021
+ms.date: 12/14/2023
 ---
 # When to choose .NET Framework for Docker containers
 
@@ -43,7 +43,7 @@ In the meantime, if any platform or service in Azure still doesn't support .NET 
 
 ## Porting existing ASP.NET application to .NET 7
 
-.NET Core is a revolutionary step forward from .NET Framework. It offers a host of advantages over .NET Framework across the board from productivity to performance, and from cross-platform support to developer satisfaction. If you are using .NET Framework and planning to migrate your application to .NET Core or .NET 5+, see [Porting Existing ASP.NET Apps to .NET Core](../../porting-existing-aspnet-apps/index.md).
+.NET Core is a revolutionary step forward from .NET Framework. It offers a host of advantages over .NET Framework across the board from productivity to performance, and from cross-platform support to developer satisfaction.
 
 ### Additional resources
 

@@ -27,11 +27,11 @@ The report is saved inside the default _TestResults_ folder that can be specifie
 
 ## Troubleshoot
 
-The Microsoft `Testing.Platform` offers some built-in functionalities and extensions that ease the troubleshooting of your test apps.
+The `Microsoft.Testing.Platform` offers some built-in functionalities and extensions that ease the troubleshooting of your test apps.
 
 ### `--info` option
 
-When you run your `Testing.Platform` test app with the `--info` switch, the platform displays advanced information about:
+When you run your `Microsoft.Testing.Platform` test app with the `--info` switch, the platform displays advanced information about:
 
 - The platform.
 - The environment.

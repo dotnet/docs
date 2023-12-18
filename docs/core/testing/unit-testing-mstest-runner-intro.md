@@ -8,13 +8,13 @@ ms.date: 12/15/2023
 
 # MSTest runner overview
 
-The MSTest runner is a lightweight and portable alternative to [VSTest](https://github.com/microsoft/vstest) for running tests in continuous integration (CI) pipelines, and in Visual Studio Test Explorer. The MSTest runner is embedded directly in your MSTest test projects, and there's no other app dependencies, such as `vstest.console` or `dotnet test` needed to run your tests.
+The MSTest runner is a lightweight and portable alternative to [VSTest](https://github.com/microsoft/vstest) for running tests in all contexts (continuous integration (CI) pipelines, CLI, Visual Studio Test Explorer, VS Code Text Explorer...). The MSTest runner is embedded directly in your MSTest test projects, and there's no other app dependencies, such as `vstest.console` or `dotnet test` needed to run your tests.
 
-The MSTest runner is open source, and builds on a Microsoft.`Testing.Platform` library. You can find Microsoft.`Testing.Platform` code in [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.`Testing.Platform`) GitHub repository. The MSTest runner comes bundled with MSTest in 3.2.0-preview. This preview is available in the [test-tools NuGet feed](https://pkgs.dev.azure.com/dnceng/public/_packaging/test-tools/nuget/v3/index.json).
+The MSTest runner is open source, and builds on a `Microsoft.Testing.Platform` library. You can find `Microsoft.Testing.Platform` code in [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository. The MSTest runner comes bundled with `MSTest in 3.2.0-preview`.
 
 ## Enable MSTest runner in a MSTest project
 
-To enable the MSTest runner in an MSTest project, you need to add the `UseMSTestRunner` in your project file, and unsure that you're using MSTest 3.2.0-preview or newer, consider the following example _*.csproj_ file:
+To enable the MSTest runner in a MSTest project, you need to add the `EnableMSTestRunner` property and set `OutputType` to `Exe` in your project file, and unsure that you're using `MSTest 3.2.0-preview` or newer, consider the following example _*.csproj_ file:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -22,6 +22,7 @@ To enable the MSTest runner in an MSTest project, you need to add the `UseMSTest
   <PropertyGroup>
     <!-- Enable the MSTest runner, this is an opt-in feature -->
     <EnableMSTestRunner>true</EnableMSTestRunner>
+    <OutputType>Exe</OutputType>
 
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -60,7 +61,7 @@ To enable the MSTest runner in an MSTest project, you need to add the `UseMSTest
 MSTest runner test projects are built as executables that can be run (or debugged) directly. There's no extra test running console or command. The app exits with a nonzero exit code if there's an error, as typical with most executables. For more information on the known exit codes, see [MStest runner exit codes](unit-testing-mstest-runner-exit-codes.md).
 
 > [!IMPORTANT]
-> By default, the MStest runner collects telemetry. For more information and options on opting out, see [MSTest runner telemetry](unit-testing-mstest-runner-telemetry.md).
+> By default, the MSTest runner collects telemetry. For more information and options on opting out, see [MSTest runner telemetry](unit-testing-mstest-runner-telemetry.md).
 
 ### [.NET CLI](#tab/dotnetcli)
 
@@ -78,10 +79,16 @@ For more information on `dotnet run`, see [dotnet run](../tools/dotnet-run.md).
 
 ### Use `dotnet exec`
 
-The `dotnet exec` command is used to execute (or run) an already built test project, this is an alternative to running the application directly. `dotnet exec` requires path to the built test project dll.
+The `dotnet exec` or `dotnet` command is used to execute (or run) an already built test project, this is an alternative to running the application directly. `dotnet exec` requires path to the built test project dll.
 
 ```dotnetcli
 dotnet exec Contoso.MyTests.dll
+```
+
+or
+
+```dotnetcli
+dotnet Contoso.MyTests.dll
 ```
 
 > [!NOTE]
@@ -101,7 +108,7 @@ For more information on `dotnet exec`, see [dotnet exec](../tools/dotnet.md#opti
 
 ### Use `dotnet test`
 
-For tests authored with MSTest, NUnit or xUnit test framework, it's possible to run tests with [dotnet test](../tools/dotnet-test.md). The `dotnet test` command only works with MSTest, NUnit and xUnit tests. Provide a path to the tested dll, or to the project and your tests run:
+MSTest runner offers a compatibility layer with `vstest.console.exe` and [`dotnet test`](../tools/dotnet-test.md) ensuring you can run your tests as before while enabling new execution scenario.
 
 ```dotnetcli
 dotnet test Contoso.MyTests.dll
@@ -109,11 +116,11 @@ dotnet test Contoso.MyTests.dll
 
 ### [Visual Studio](#tab/visual-studio)
 
-The `Testing.Platform` tests can be run (and debugged) in Visual Studio, they integrate with Test Explorer, and can also be run directly as startup project.
+The `Microsoft.Testing.Platform` tests can be run (and debugged) in Visual Studio, they integrate with Test Explorer, and can also be run directly as startup project.
 
 #### Run the app with Visual Studio
 
-`Testing.Platform` test project are built as executables, and can be run directly. This runs all the tests in the given executable, unless a filter is provided.
+`Microsoft.Testing.Platform` test project are built as executables, and can be run directly. This runs all the tests in the given executable, unless a filter is provided.
 
 1. Navigate the test project you want to run in Solution Explorer, right select it and select **Set as Startup Project**.
 1. Select **Debug** > **Start without Debugging** (or use <kbd>Ctrl</kbd>+<kbd>F5</kbd>) to run the selected test project.
@@ -122,7 +129,7 @@ Console window pops up with the execution and summary of your test run.
 
 ### Debug the app directly in Visual Studio
 
-`Testing.Platform` test project can be debugged directly. To debug all the tests in the given executable, unless a filter is provided:
+`Microsoft.Testing.Platform` test project can be debugged directly. To debug all the tests in the given executable, unless a filter is provided:
 
 1. Navigate the test project you want to run in Solution Explorer, right select it and select **Set as Startup Project**.
 1. Set breakpoint into the test that you'd like to debug.
@@ -132,7 +139,9 @@ All tests are executed until your test with a breakpoint is reached. Step throug
 
 ### Use Test Explorer
 
-`Testing.Platform` tests partially integrate with Visual Studio's **Test Explorer**. Tests can be run and debugged from **Test Explorer**.
+`Microsoft.Testing.Platform` tests integrate with Visual Studio's **Test Explorer**. Tests can be run and debugged from **Test Explorer**.
+
+To enable running tests with MSTest runner, go to **Tools** > **Options** > **Preview Features** and select `Use testing platform server mode`.
 
 To run a test, navigate to **Test Explorer**, select the test (or tests) to run. Right select it, and choose **Run**. Similarly to debug a test, select the test (or tests) in **Test Explorer**, right select and choose **Debug**.
 
@@ -147,7 +156,7 @@ To run a test project in CI add one step for each test executable that you wish 
 
 ```yml
 - task: CmdLine@2
-  displayName: "Run Contoso.MyTests.exe"
+  displayName: "Run Contoso.MyTests"
   inputs:
     script: '.\Contoso.MyTests\bin\Debug\net8.0\Contoso.MyTests.exe'
 ```

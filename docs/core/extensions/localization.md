@@ -3,7 +3,7 @@ title: Localization
 description: Learn the concepts of localization while learning how to use the IStringLocalizer and IStringLocalizerFactory implementations in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/11/2023
+ms.date: 12/19/2023
 helpviewer_keywords:
   - "culture, localization"
   - "application development [.NET], localization"
@@ -121,22 +121,22 @@ After you've [registered](#register-localization-services) (and optionally [conf
 
 To create a message service that is capable of returning localized strings, consider the following `MessageService`:
 
-:::code source="snippets/localization/example/MessageService.cs" highlight="8,10-11,16":::
+:::code source="snippets/localization/example/MessageService.cs":::
 
 In the preceding C# code:
 
-- A `IStringLocalizer<MessageService> _localizer` field is declared.
-- The constructor takes a `IStringLocalizer<MessageService>` parameter and assigns it to the `_localizer` field.
+- A `IStringLocalizer<MessageService> localizer` field is declared.
+- The primary constructor defines an `IStringLocalizer<MessageService>` parameter and captures it as a `localizer` argument.
 - The `GetGreetingMessage` method invokes the <xref:Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String)?displayProperty=nameWithType> passing `"GreetingMessage"` as an argument.
 
 The `IStringLocalizer` also supports parameterized string resources, consider the following `ParameterizedMessageService`:
 
-:::code source="snippets/localization/example/ParameterizedMessageService.cs" highlight="8,10-11,16":::
+:::code source="snippets/localization/example/ParameterizedMessageService.cs":::
 
 In the preceding C# code:
 
 - A `IStringLocalizer _localizer` field is declared.
-- The constructor takes an `IStringLocalizerFactory` parameter, which is used to create an `IStringLocalizer` from the `ParameterizedMessageService` type, and assigns it to the `_localizer` field.
+- The primary constructor takes an `IStringLocalizerFactory` parameter, which is used to create an `IStringLocalizer` from the `ParameterizedMessageService` type, and assigns it to the `_localizer` field.
 - The `GetFormattedMessage` method invokes <xref:Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String,System.Object[])?displayProperty=nameWithType>, passing `"DinnerPriceFormat"`, a `dateTime` object, and `dinnerPrice` as arguments.
 
 > [!IMPORTANT]

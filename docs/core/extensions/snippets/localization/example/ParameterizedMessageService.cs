@@ -12,6 +12,7 @@ public class ParameterizedMessageService(IStringLocalizerFactory factory)
     public string? GetFormattedMessage(DateTime dateTime, double dinnerPrice)
     {
         LocalizedString localizedString = _localizer["DinnerPriceFormat", dateTime, dinnerPrice];
+
         return localizedString;
     }
 }

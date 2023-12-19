@@ -1,6 +1,6 @@
 ---
-title: ".NET 8 breaking change: ProcessStartInfo.WindowsStyle honored when UseShellExecute is false"
-description: Learn about the .NET 8 breaking change in core .NET libraries where ProcessStartInfo.WindowsStyle is now honored even when UseShellExecute is false.
+title: ".NET 8 breaking change: ProcessStartInfo.WindowStyle honored when UseShellExecute is false"
+description: Learn about the .NET 8 breaking change in core .NET libraries where ProcessStartInfo.WindowStyle is now honored even when UseShellExecute is false.
 ms.date: 11/08/2023
 ---
 # ProcessStartInfo.WindowsStyle honored when UseShellExecute is false

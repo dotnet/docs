@@ -161,7 +161,7 @@ Check for the following causes of these errors:
 
 ## Interpolated string handler
 
-The compiler issues the following errors when you specified an [interpolated string handler](../../tokens/interpolated.md#compilation-of-interpolated-strings) incorrectly.
+The compiler issues the following errors when you specified an [interpolated string handler](../tokens/interpolated.md#compilation-of-interpolated-strings) incorrectly.
 
 - **CS8943**: *null is not a valid parameter name. To get access to the receiver of an instance method, use the empty string as the parameter name.*
 - **CS8944**: *Not an instance method, the receiver cannot be an interpolated string handler argument.*

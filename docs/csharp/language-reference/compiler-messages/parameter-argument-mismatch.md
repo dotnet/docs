@@ -65,6 +65,9 @@ ms.date: 12/19/2023
 
 The compiler generates the following errors when there's no argument supplied for a formal parameter, or the argument isn't valid for that parameter:
 
+<!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
+That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+ -->
 - [**CS0182**](#arguments-for-attributes): *An attribute argument must be a constant expression, typeof expression or array creation expression of an attribute parameter type*
 - [**CS0591**](#arguments-for-attributes): *Invalid value for argument to attribute*
 - [**CS0599**](#arguments-for-attributes): *Invalid value for named attribute argument 'argument'*
@@ -101,20 +104,20 @@ The following general errors are issued when the compiler can't match arguments 
 - **CS0839**: *Argument missing.*
 - **CS7036**: *There is no argument given that corresponds to the required parameter*
 
-These errors are general: The compiler can't match the arguments given in a method call to the required parameters of the method. Check the following:
+These errors are general: The compiler can't match the arguments given in a method call to the required parameters of the method. Check the following causes:
 
-- Make sure you've included all necessary arguments.
+- Make sure you included all necessary arguments.
 - Make sure the arguments are in the correct order.
 - Make sure all arguments are the correct type.
 - Make sure overload resolution rules chose the method you expected.
 
-You may also see *CS7036* if you've made overloaded local functions. Local functions can't be overloaded. The compiler only recognizes the first local function with that name. You may have meant to call a different local function.
+You might also see *CS7036* if you wrote overloaded local functions. Local functions can't be overloaded. The compiler only recognizes the first local function with that name. Check if you meant to call a different local function.
 
-These error often appear with additional diagnostics that can help diagnose the correct cause.
+These errors often appear with other diagnostics that can help diagnose the correct cause.
 
 ## Arguments for attributes
 
-The compiler issues the following errors when an argument to an attribute constructor is incorrect:
+The compiler issues these errors when an argument to an attribute constructor is incorrect:
 
 - **CS0182**: *An attribute argument must be a constant expression, `typeof` expression or array creation expression of an attribute parameter type*
 - **CS0591**: *Invalid value for argument to attribute*
@@ -124,7 +127,7 @@ The compiler issues the following errors when an argument to an attribute constr
 - **CS0643**: *Duplicate named attribute argument*
 - **CS0655**: *not a valid named attribute argument because it is not a valid attribute parameter type*
 
-If you use the <xref:System.AttributeUsageAttribute?displayProperty=nameWithType> on your attribute definition, make sure the allowed values aren't mutually exclusive. Check that the type and order of arguments to the attribute are correct. Make sure the text of string arguments is valid. For many attributes, the argument must be a valid C# identifier. Arguments to attribute constructors must be compile-time constants. Therefore, they are limited to types that support literal constants. In addition, the following types that allow literal constants are disallowed as attribute parameters:
+If you use the <xref:System.AttributeUsageAttribute?displayProperty=nameWithType> on your attribute definition, make sure the allowed values aren't mutually exclusive. Check that the type and order of arguments to the attribute are correct. Make sure the text of string arguments is valid. For many attributes, the argument must be a valid C# identifier. Arguments to attribute constructors must be compile-time constants. Therefore, they're limited to types that support literal constants. In addition, the following types that allow literal constants are disallowed as attribute parameters:
 
 - [sbyte](../../language-reference/builtin-types/integral-numeric-types.md)
 - [ushort](../../language-reference/builtin-types/integral-numeric-types.md)
@@ -132,7 +135,7 @@ If you use the <xref:System.AttributeUsageAttribute?displayProperty=nameWithType
 - [ulong](../../language-reference/builtin-types/integral-numeric-types.md)
 - [decimal](../../language-reference/builtin-types/floating-point-numeric-types.md)
 
-You can't repeat named arguments. That would set the same property twice. You can only set accessible properties when you initialize an attribute. You can't set private properties.
+You can't specify repeated named arguments with the same parameter name. You can only set accessible properties when you initialize an attribute. You can't set private properties.
 
 ## Named and optional parameters and arguments
 
@@ -148,7 +151,7 @@ The compiler issues the following errors for incorrect use of named and optional
 - **CS8324**: *Named argument specifications must appear after all fixed arguments have been specified in a dynamic invocation.*
 - **CS8905**: *A function pointer cannot be called with named arguments.*
 
-These errors are caused by one of the following:
+Check for the following causes of these errors:
 
 - The parameter name of the named argument is incorrect.
 - The chosen overload doesn't have a parameter matching the named argument.
@@ -158,7 +161,7 @@ These errors are caused by one of the following:
 
 ## Interpolated string handler
 
-The compiler issues the following errors when you've specified an [interpolated string handler](../../tokens/interpolated.md#compilation-of-interpolated-strings) incorrectly.
+The compiler issues the following errors when you specified an [interpolated string handler](../../tokens/interpolated.md#compilation-of-interpolated-strings) incorrectly.
 
 - **CS8943**: *null is not a valid parameter name. To get access to the receiver of an instance method, use the empty string as the parameter name.*
 - **CS8944**: *Not an instance method, the receiver cannot be an interpolated string handler argument.*
@@ -168,7 +171,7 @@ The compiler issues the following errors when you've specified an [interpolated 
 - **CS8950**: *Parameter is an argument to the interpolated string handler conversion on parameter, but the corresponding argument is specified after the interpolated string expression.*
 - **CS8951**: *Parameter is not explicitly provided, but is used as an argument to the interpolated string handler conversion on parameter.*
 
-An interpolated string handler is a pattern-based construct. It's important to get the pattern correct. Consult the [feature speclet](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md#the-handler-pattern), or follow the tutorial on [building an interpolated string handler](../../whats-new/tutorials/interpolated-string-handler.md).
+An interpolated string handler is a pattern-based construct. It's important to get the pattern correct. Consult the [feature spec](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md#the-handler-pattern), or follow the tutorial on [building an interpolated string handler](../../whats-new/tutorials/interpolated-string-handler.md).
 
 ## Caller debugging information
 

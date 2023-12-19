@@ -163,6 +163,28 @@ To run a test project in CI add one step for each test executable that you wish 
 
 ---
 
+## Options
+
+- **`--diagnostic`**, **`--diagnostic-filelogger-synchronouswrite`**, **`--diagnostic-output-directory`**, **`--diagnostic-output-fileprefix`**, **`--diagnostic-verbosity`**
+
+See [Troubleshooting/diagnostic](./unit-testing-mstest-runner-extensions.md#diagnostic-logs)
+
+- **`--help`**
+
+Prints out a description of how to use the command.
+
+- **`--info`**
+
+See [Troubleshooting/info](./unit-testing-mstest-runner-extensions.md#--info-option)
+
+- **`--list-tests`**
+
+List available tests. Tests will not be executed.
+
+- **`--results-directory`**
+
+The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the test application.
+
 ## See also
 
 - [MSTest runner and VSTest comparison](unit-testing-mstest-runner-vs-vstest.md)

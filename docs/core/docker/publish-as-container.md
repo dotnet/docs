@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with dotnet publish
 description: In this tutorial, you'll learn how to containerize a .NET application with dotnet publish.
-ms.date: 09/22/2023
+ms.date: 12/18/2023
 ms.topic: tutorial
 zone_pivot_groups: dotnet-version-7-8
 ---
@@ -83,6 +83,8 @@ Attempting to cancel the build...
 
 The worker template loops indefinitely. Use the cancel command <kbd>Ctrl+C</kbd> to stop it.
 
+:::zone pivot="dotnet-7-0"
+
 ## Add NuGet package
 
 The [Microsoft.NET.Build.Containers](https://www.nuget.org/packages/Microsoft.NET.Build.Containers) NuGet package is currently required to publish non-web projects as a container. To add the `Microsoft.NET.Build.Containers` NuGet package to the worker template, run the following [dotnet add package](../tools/dotnet-add-package.md) command:
@@ -94,20 +96,28 @@ dotnet add package Microsoft.NET.Build.Containers
 > [!TIP]
 > If you're building a web app and using .NET SDK 7.0.300 or later, then the package isn't required&mdash;the SDK contains the same functionality out of the box.
 
+:::zone-end
+
 ## Set the container image name
 
-There are various configuration options available when publishing an app as a container. For more information, see [Configure container image](#configure-container-image).
-
-By default, the container image name is the `AssemblyName` of the project. If that name is invalid as a container image name, you can override it by specifying a `ContainerImageName` or `ContainerRepository` as shown in the following project file:
+There are various configuration options available when publishing an app as a container.
 
 :::zone pivot="dotnet-8-0"
 
+By default, the container image name is the `AssemblyName` of the project. If that name is invalid as a container image name, you can override it by specifying a `ContainerRepository` as shown in the following project file:
+
 :::code language="xml" source="snippets/8.0/Worker/DotNet.ContainerImage.csproj" highlight="8":::
+
+For more information, see [ContainerRepository](#containerrepository).
 
 :::zone-end
 :::zone pivot="dotnet-7-0"
 
+By default, the container image name is the `AssemblyName` of the project. If that name is invalid as a container image name, you can override it by specifying a (`ContainerImageName` obsolete) or the preferred `ContainerRepository` as shown in the following project file:
+
 :::code language="xml" source="snippets/7.0/Worker/DotNet.ContainerImage.csproj" highlight="8":::
+
+For more information, see [ContainerImageName](#containerimagename).
 
 :::zone-end
 

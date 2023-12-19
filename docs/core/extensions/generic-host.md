@@ -198,7 +198,7 @@ To add host configuration, call <xref:Microsoft.Extensions.Hosting.HostBuilder.C
 
 # [IHostApplicationBuilder](#tab/appbuilder)
 
-App configuration is created by calling <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A> on an <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder>. The <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration?displayProperty=nameWithType> property is exposed to allow consumers to access existing configuration and make changes using the available extension methods.
+App configuration is created by calling <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A> on an <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder>. The public<xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration?displayProperty=nameWithType> property allows consumers to read from or make changes to the existing configuration using available extension methods.
 
 # [IHostBuilder](#tab/hostbuilder)
 

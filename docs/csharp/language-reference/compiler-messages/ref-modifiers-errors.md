@@ -22,6 +22,7 @@ f1_keywords:
   - "CS8167"
   - "CS8168"
   - "CS8169"
+  - "CS8196"
   - "CS8325"
   - "CS8326"
   - "CS8327"
@@ -87,6 +88,7 @@ helpviewer_keywords:
   - "CS8167"
   - "CS8168"
   - "CS8169"
+  - "CS8196"
   - "CS8325"
   - "CS8326"
   - "CS8327"
@@ -160,6 +162,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8167**](#ref-safety-violations): *Cannot return by reference a member of parameter because it is not a `ref` or `out` parameter*
 - [**CS8168**](#ref-safety-violations): *Cannot return local by reference because it is not a ref local*
 - [**CS8169**](#ref-safety-violations): *Cannot return a member of local variable by reference because it is not a ref local*
+- [**CS8196**](#reference-variable-restrictions): *Reference to an implicitly-typed out variable is not permitted in the same argument list.*
 - [**CS8325**](#reference-variable-restrictions): *'`await`' cannot be used in an expression containing a `ref` conditional operator*
 - [**CS8326**](#reference-variable-restrictions): *Both conditional operator values must be ref values or neither may be a ref value*
 - [**CS8327**](#reference-variable-restrictions): *The expression must be of correct type to match the alternative ref value*
@@ -243,6 +246,7 @@ The following errors indicate that a reference variable can't be used where you 
 - **CS1939**:  *Cannot pass the range variable as an `out` or `ref` parameter*
 - **CS1988**:  *Async methods cannot have `ref`, `in` or `out` parameters*
 - **CS7084**:  *A Windows Runtime event may not be passed as an `out` or `ref` parameter.*
+- **CS8196**:  *Reference to an implicitly-typed out variable is not permitted in the same argument list.*
 - **CS8325**:  *'await' cannot be used in an expression containing a `ref` conditional operator*
 - **CS8326**:  *Both conditional operator values must be ref values or neither may be a ref value*
 - **CS8327**:  *The expression must be of correct type to match the alternative ref value*
@@ -268,6 +272,7 @@ To fix the error, remove the reference variable where it isn't allowed:
 - Remove the `ref` modifier from the first parameter of a [extension method](../../programming-guide/classes-and-structs/extension-methods.md) where that type isn't a value type or a generic type constrained as a value type.
 - Either both or neither [conditional operator expressions] must be `ref` variables. Either remove `ref` from one expression, or add it to the other. If it's a `ref` conditional expression, both expressions must be the same type.
 - `ref` and `out` parameters can't have [default values](../../programming-guide/classes-and-structs/named-and-optional-arguments.md). Either remove the `ref` or `out` modifier, or remove the default value.
+- An implicitly typed `out` variable declaration can't also appear elsewhere in the same argument list.
 - You can't put reference variables in a `using` statement in `async` methods lambda expressions.
 - The range variable in a [LINQ query expression](../../linq/get-started/query-expression-basics.md) can't be passed by reference.
 - You can't deconstruct an object into reference variables. Replace the reference variables with value variables.

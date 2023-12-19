@@ -31,7 +31,7 @@ In the preceding `SettingsOptions` class, the `ConfigurationSectionName` propert
 - <xref:System.ComponentModel.DataAnnotations.RangeAttribute>: Specifies that the property value must be within a specified range.
 
 > [!TIP]
-> In addition to the `RequiredAttribute`, the properties also use the [required](../../csharp/language-reference/keywords/required.md) modifier. This helps to ensure that consumers of the options object don't forget to set the property value, although it doesn't relate to the source generation feature.
+> In addition to the `RequiredAttribute`, the properties also use the [required](../../csharp/language-reference/keywords/required.md) modifier. This helps to ensure that consumers of the options object don't forget to set the property value, although it doesn't relate to the validation source generation feature.
 
 The following code exemplifies how to bind the configuration section to the options object and validate the data annotations:
 

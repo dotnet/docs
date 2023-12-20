@@ -8,7 +8,7 @@ ms.date: 12/15/2023
 
 # MSTest runner extensions
 
-The MSTest runner supports extensions that can be used to customize the behavior of the test runner. These extensions are not part of the default bundle to offer biggest flexibility.
+The MSTest runner can be customized through extensions. These extension are either built-in or can be installed as NuGet packages. Extensions installed throught NuGet packages will auto-register the extensions they are holding to become available in test execution.
 
 ## Test reports
 

@@ -15,6 +15,7 @@ f1_keywords:
  - "CS8054" # ERR_EnumsCantContainDefaultConstructor
  - "CS8091" # ERR_ExternHasConstructorInitializer
  - "CS8358" # ERR_AttributeCtorInParameter
+ - "CS8861"
  - "CS8862" # ERR_UnexpectedOrMissingConstructorInitializerInRecord
  - "CS8867" # ERR_NoCopyConstructorInBaseType
  - "CS8868" # ERR_CopyConstructorMustInvokeBaseCopyConstructor 
@@ -58,6 +59,7 @@ helpviewer_keywords:
  - "CS8054"
  - "CS8091"
  - "CS8358"
+ - "CS8861"
  - "CS8862"
  - "CS8867"
  - "CS8868"
@@ -107,6 +109,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0768**](#constructor-calls-with-base-and-this): *Constructor cannot call itself through another constructor.*
 - [**CS8054**](#constructor-declaration): *Enums cannot contain explicit parameterless constructors.*
 - [**CS8091**](#constructor-declaration): *cannot be extern and have a constructor initializer.*
+- [**CS8861**](#primary-constructor-declaration): *Unexpected argument list.*
 - [**CS8862**](#primary-constructor-declaration): *A constructor declared in a type with parameter list must have 'this' constructor initializer.*
 - [**CS8358**](#constructor-declaration): *Cannot use attribute constructor because it has 'in' parameters.*
 - [**CS8867**](#records-and-copy-constructors): *No accessible copy constructor found in base type '{0}'.*
@@ -234,6 +237,7 @@ Adding the `record` modifier to a `struct` or `class` type creates a [record](..
 
 The compiler emits the following errors when a primary constructor violates one or more rules on primary constructors for classes and structs:
 
+- **CS8861**: *Unexpected argument list.*
 - **CS8862**: *A constructor declared in a type with parameter list must have 'this' constructor initializer.*
 - **CS9105**: *Cannot use primary constructor parameter in this context.*
 - **CS9106**: *Identifier is ambiguous between type and parameter in this context.*
@@ -274,6 +278,8 @@ Readonly only struct types have the following extra restrictions on primary cons
 - Primary constructor parameters and their members can't be `ref` or `out` arguments to any method.
 
 In all these cases, the restrictions on primary constructor parameters are consistent with restrictions on data fields in those types. The restrictions are because a primary constructor parameter may be transformed into a synthesized field in the type. Therefore primary constructor parameters must follow the rules that apply to that synthesized field.
+
+A derived primary constructor calls the base primary constructor by supplying the parameters to the base constructor. You must use the parameter names from the derived constructor declaration.
 
 The warnings provide guidance on captured or shadowed primary constructor parameters.
 

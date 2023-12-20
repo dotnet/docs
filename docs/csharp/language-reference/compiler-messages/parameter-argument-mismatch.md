@@ -1,6 +1,6 @@
 ---
 title: Errors and warnings for parameter / argument mismatches
-description: These errors and warnings are issued when either arguments are missing, or arguments can't be used for one or more parameters on a method. Learn how to diagnose them and fix them.
+description: These errors and warnings are issued when arguments are missing or arguments can't be used for one or more parameters on a method. Learn how to diagnose and fix them.
 f1_keywords:
   - "CS0182"
   - "CS0591"
@@ -68,7 +68,7 @@ The compiler generates the following errors when there's no argument supplied fo
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
-- [**CS0182**](#arguments-for-attributes): *An attribute argument must be a constant expression, typeof expression or array creation expression of an attribute parameter type*
+- [**CS0182**](#arguments-for-attributes): *An attribute argument must be a constant expression, `typeof` expression or array creation expression of an attribute parameter type*
 - [**CS0591**](#arguments-for-attributes): *Invalid value for argument to attribute*
 - [**CS0599**](#arguments-for-attributes): *Invalid value for named attribute argument 'argument'*
 - [**CS0617**](#arguments-for-attributes): *Not a valid named attribute argument. Named attribute arguments must be fields which are not readonly, static, or const, or read-write properties which are public and not static.*

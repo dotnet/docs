@@ -246,7 +246,7 @@ The following errors indicate that a reference variable can't be used where you 
 - **CS1939**:  *Cannot pass the range variable as an `out` or `ref` parameter*
 - **CS1988**:  *Async methods cannot have `ref`, `in` or `out` parameters*
 - **CS7084**:  *A Windows Runtime event may not be passed as an `out` or `ref` parameter.*
-- **CS8196**:  *Reference to an implicitly-typed out variable is not permitted in the same argument list.*
+- **CS8196**:  *Reference to an implicitly-typed `out` variable is not permitted in the same argument list.*
 - **CS8325**:  *'await' cannot be used in an expression containing a `ref` conditional operator*
 - **CS8326**:  *Both conditional operator values must be ref values or neither may be a ref value*
 - **CS8327**:  *The expression must be of correct type to match the alternative ref value*

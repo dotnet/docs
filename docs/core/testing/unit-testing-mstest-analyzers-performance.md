@@ -1,12 +1,12 @@
 ---
-title: Performance rules (code analysis)
-description: Learn about code analysis performance rules.
+title: MSTest Performance rules (code analysis)
+description: Learn about MSTest code analysis performance rules.
 author: evangelink
 ms.author: amauryleve
 ms.date: 12/20/2023
 ---
 
-# Performance rules
+# MSTest performance rules
 
 Rules that support high-performance testing.
 

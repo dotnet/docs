@@ -126,7 +126,7 @@ public class WriteLinqQueries
     public static void WriteLinqQueries5b()
     {
         // <write_linq_queries_5b>
-        var numCount = numbers.Count(n => n is > 3 and < 7);
+        int numCount = numbers.Count(n => n is > 3 and < 7);
         // </write_linq_queries_5b>
     }
 

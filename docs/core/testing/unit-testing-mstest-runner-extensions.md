@@ -33,7 +33,7 @@ The `Microsoft.Testing.Platform` offers some built-in functionalities and extens
 
 ### Platform options
 
-The following [platform options](./unit-testing-mstest-runner-intro.md#options):
+The following [platform options](./unit-testing-mstest-runner-intro.md#options) provide useful information for troubleshooting your test apps:
 
 - `--info`
 - `--diagnostic`
@@ -41,8 +41,6 @@ The following [platform options](./unit-testing-mstest-runner-intro.md#options):
 - `--diagnostic-verbosity`
 - `--diagnostic-output-fileprefix`
 - `--diagnostic-output-directory`
-
-provide useful information for troubleshooting your test apps.
 
 You can also enable the diagnostics logs using the environment variables:
 

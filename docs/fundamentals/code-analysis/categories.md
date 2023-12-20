@@ -113,7 +113,7 @@ The following table shows the different code analysis rule categories and provid
 | **EditorConfig value** | `dotnet_analyzer_diagnostic.category-Style.severity` |
 | [**MSBuild property value**](../../core/project-sdk/msbuild-props.md#analysismodecategory) | `<AnalysisModeStyle>` |
 
-\* Use the EditorConfig value `dotnet_analyzer_diagnostic.category-CodeQuality.severity` to enable the following rules: [IDE0051](style-rules/ide0051.md), [IDE0064](style-rules/ide0064.md), and [IDE0076](style-rules/ide0076.md). While these rules start with "IDE", they aren't technically part of the `Style` category.
+\* Use the EditorConfig value `dotnet_analyzer_diagnostic.category-CodeQuality.severity` to enable the following rules: [IDE0051](style-rules/ide0051.md), [IDE0052](style-rules/ide0052.md), [IDE0064](style-rules/ide0064.md), and [IDE0076](style-rules/ide0076.md). While these rules start with "IDE", they aren't technically part of the `Style` category.
 
 ## Usage rules
 

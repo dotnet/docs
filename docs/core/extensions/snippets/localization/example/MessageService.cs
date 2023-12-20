@@ -9,6 +9,7 @@ public sealed class MessageService(IStringLocalizer<MessageService> localizer)
     public string? GetGreetingMessage()
     {
         LocalizedString localizedString = localizer["GreetingMessage"];
+
         return localizedString;
     }
 }

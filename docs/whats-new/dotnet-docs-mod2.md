@@ -20,7 +20,7 @@ Welcome to what's new in the .NET docs for November 2023. This article lists som
 ### New articles
 
 - [Enumerable.Sum throws new OverflowException for some inputs](../core/compatibility/core-libraries/8.0/enumerable-sum.md)
-- [ProcessStartInfo.WindowsStyle honored when UseShellExecute is false](../core/compatibility/core-libraries/8.0/processstartinfo-windowstyle.md)
+- [ProcessStartInfo.WindowStyle honored when UseShellExecute is false](../core/compatibility/core-libraries/8.0/processstartinfo-windowstyle.md)
 - [PublishedTrimmed projects fail reflection-based serialization](../core/compatibility/serialization/8.0/publishtrimmed.md)
 - [Source Link included in the .NET SDK](../core/compatibility/sdk/8.0/source-link.md)
 - [Unlisted packages not installed by default for .NET tools](../core/compatibility/sdk/8.0/unlisted-versions.md)

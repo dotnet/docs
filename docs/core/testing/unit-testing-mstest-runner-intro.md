@@ -14,7 +14,7 @@ The MSTest runner is open source, and builds on a `Microsoft.Testing.Platform` l
 
 ## Enable MSTest runner in a MSTest project
 
-To enable the MSTest runner in a MSTest project, you need to add the `EnableMSTestRunner` property and set `OutputType` to `Exe` in your project file, and unsure that you're using `MSTest 3.2.0-preview` or newer, consider the following example _*.csproj_ file:
+To enable the MSTest runner in a MSTest project, you need to add the `EnableMSTestRunner` property and set `OutputType` to `Exe` in your project file, and ensure that you're using `MSTest 3.2.0-preview` or newer, consider the following example _*.csproj_ file:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -49,7 +49,7 @@ To enable the MSTest runner in a MSTest project, you need to add the `EnableMSTe
       or switch to be using coverlet global tool
       https://github.com/coverlet-coverage/coverlet#net-global-tool-guide-suffers-from-possible-known-issue
     --> 
-    <PackageReference Include="Microsoft.`Testing.Platform`.Extensions.CodeCoverage" 
+    <PackageReference Include="Microsoft.Testing.Platform.Extensions.CodeCoverage" 
                       Version="17.9.4-beta.23563.1" />
   </ItemGroup>
 
@@ -165,9 +165,25 @@ To run a test project in CI add one step for each test executable that you wish 
 
 ## Options
 
-- **`--diagnostic`**, **`--diagnostic-filelogger-synchronouswrite`**, **`--diagnostic-output-directory`**, **`--diagnostic-output-fileprefix`**, **`--diagnostic-verbosity`**
+- **`--diagnostic`**
 
-See [Troubleshooting/diagnostic](./unit-testing-mstest-runner-extensions.md#diagnostic-logs)
+Enables the diagnostic logging. The default log level is `Information`. The file is written in the output directory with the following name format, `log_[MMddHHssfff].diag`.
+
+- **`--diagnostic-filelogger-synchronouswrite`**
+
+Forces the built-in file logger to synchronously write logs. Useful for scenarios where you don't want to lose any log entries (if the process crashes). This does slow down the test execution.
+
+- **`--diagnostic-output-directory`**
+
+The output directory of the diagnostic logging, if not specified the file is generated in the default _TestResults_ directory.
+
+- **`--diagnostic-output-fileprefix`**
+
+The prefix for the log file name. Defaults to `"log_"`.
+
+- **`--diagnostic-verbosity`**
+
+Defines the verbosity level when the `--diagnostic` switch is used. The available values are `Trace`, `Debug`, `Information`, `Warning`, `Error`, or `Critical`.
 
 - **`--help`**
 
@@ -175,7 +191,14 @@ Prints out a description of how to use the command.
 
 - **`--info`**
 
-See [Troubleshooting/info](./unit-testing-mstest-runner-extensions.md#--info-option)
+Displays advanced information about the .NET Test Application such as:
+
+- The platform.
+- The environment.
+- Each registered command line provider, such as its, `name`, `version`, `description` and `options`.
+- Each registered tool, such as its, `command`, `name`, `version`, `description`, and all command line providers.
+
+This feature is used to understand extensions that would be registering the same command line option or the changes in available options between multiple versions of an extension (or the platform).
 
 - **`--list-tests`**
 

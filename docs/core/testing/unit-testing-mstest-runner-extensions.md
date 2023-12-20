@@ -31,30 +31,20 @@ The report is saved inside the default _TestResults_ folder that can be specifie
 
 The `Microsoft.Testing.Platform` offers some built-in functionalities and extensions that ease the troubleshooting of your test apps.
 
-### `--info` option
+### Platform options
 
-When you run your `Microsoft.Testing.Platform` test app with the `--info` switch, the platform displays advanced information about:
+The following [platform options](./unit-testing-mstest-runner-intro.md#options):
 
-- The platform.
-- The environment.
-- Each registered command line provider, such as its, `name`, `version`, `description` and `options`.
-- Each registered tool, such as its, `command`, `name`, `version`, `description`, and all command line providers.
+- `--info`
+- `--diagnostic`
+- `⁠-⁠-⁠diagnostic-⁠filelogger-⁠synchronouswrite`
+- `--diagnostic-verbosity`
+- `--diagnostic-output-fileprefix`
+- `--diagnostic-output-directory`
 
-This feature is used to understand extensions that would be registering the same command line option or the changes in available options between multiple versions of an extension (or the platform).
+provide useful information for troubleshooting your test apps.
 
-### Diagnostic logs
-
-The platform produces diagnostic logs that are helpful to understand what is happening during the execution of your test application. The following options are available to configure the produced diagnostic logs:
-
-| Option | Description |
-|--|--|
-| `--diagnostic` | Enables the diagnostic logging. The default log level is `Information`. The file is written in the output directory with the following name format, `log_[MMddHHssfff].diag`. |
-| `⁠-⁠-⁠diagnostic-⁠filelogger-⁠synchronouswrite` | Forces the built-in file logger to synchronously write logs. Useful for scenarios where you don't want to lose any log entries (if the process crashes). This does slow down the test execution. |
-| `--diagnostic-verbosity` | Defines the verbosity level when the `--diagnostic` switch is used. The available values are `Trace`, `Debug`, `Information`, `Warning`, `Error`, or `Critical`.|
-| `--diagnostic-output-fileprefix` | The prefix for the log file name. Defaults to `"log_"`. |
-| `--diagnostic-output-directory` | The output directory of the diagnostic logging, if not specified the file is generated in the default _TestResults_ directory. |
-
-You can enable the diagnostics logs also using the environment variables:
+You can also enable the diagnostics logs using the environment variables:
 
 | Environment variable name | Description |
 |--|--|

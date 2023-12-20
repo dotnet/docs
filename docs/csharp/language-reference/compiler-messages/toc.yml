@@ -15,6 +15,11 @@ items:
     CS0514, CS0515, CS0516, CS0517, CS0522, CS0526, CS0568, CS0710, CS0768, CS0824, CS8054, CS8091, CS8358, CS8862, CS8867,
     CS8868, CS8878, CS8910, CS8958, CS8982, CS8983, CS9105, CS9106, CS9107, CS9108, CS9109, CS9110, CS9111, CS9112, CS9113,
     CS9114, CS9115, CS9116, CS9117, CS9118, CS9119, CS9120, CS9121, CS9122, CS9124, CS9136, CS9179
+- name: Parameter / argument mismatch
+  href: parameter-argument-mismatch.md
+  displayName: > 
+    CS0182, CS0591, CS0599, CS0617, CS0633, CS0643, CS0655, CS0839, CS1016, CS1739, CS1740, CS1742, CS1744, CS1746, CS7036,
+    CS7067, CS8196, CS8324, CS8861, CS8905, CS8943, CS8944, CS8945, CS8948, CS8949, CS8950, CS8951, CS8964, CS8965, CS8966
 - name: Reference parameters
   href: ref-modifiers-errors.md
   displayName: >
@@ -326,8 +331,6 @@ items:
     href: ../../misc/cs0180.md
   - name: CS0181
     href: cs0181.md
-  - name: CS0182
-    href: ../../misc/cs0182.md
   - name: CS0185
     href: ../../misc/cs0185.md
   - name: CS0186
@@ -724,16 +727,12 @@ items:
     href: ../../misc/cs0589.md
   - name: CS0590
     href: ../../misc/cs0590.md
-  - name: CS0591
-    href: ../../misc/cs0591.md
   - name: CS0592
     href: cs0592.md
   - name: CS0594
     href: ../../misc/cs0594.md
   - name: CS0596
     href: ../../misc/cs0596.md
-  - name: CS0599
-    href: ../../misc/cs0599.md
   - name: CS0601
     href: ../../misc/cs0601.md
   - name: CS0609
@@ -742,8 +741,6 @@ items:
     href: ../../misc/cs0610.md
   - name: CS0616
     href: cs0616.md
-  - name: CS0617
-    href: ../../misc/cs0617.md
   - name: CS0619
     href: ../../misc/cs0619.md
   - name: CS0620
@@ -756,8 +753,6 @@ items:
     href: ../../misc/cs0625.md
   - name: CS0629
     href: ../../misc/cs0629.md
-  - name: CS0633
-    href: ../../misc/cs0633.md
   - name: CS0635
     href: ../../misc/cs0635.md
   - name: CS0636
@@ -766,8 +761,6 @@ items:
     href: ../../misc/cs0637.md
   - name: CS0641
     href: ../../misc/cs0641.md
-  - name: CS0643
-    href: ../../misc/cs0643.md
   - name: CS0644
     href: ../../misc/cs0644.md
   - name: CS0645
@@ -780,8 +773,6 @@ items:
     href: ../../misc/cs0648.md
   - name: CS0653
     href: ../../misc/cs0653.md
-  - name: CS0655
-    href: ../../misc/cs0655.md
   - name: CS0656
     href: ../../misc/cs0656.md
   - name: CS0662
@@ -958,8 +949,6 @@ items:
     href: ../../misc/cs0836.md
   - name: CS0837
     href: ../../misc/cs0837.md
-  - name: CS0839
-    href: ../../misc/cs0839.md
   - name: CS0840
     href: cs0840.md
   - name: CS0841
@@ -994,8 +983,6 @@ items:
     href: ../../misc/cs1014.md
   - name: CS1015
     href: ../../misc/cs1015.md
-  - name: CS1016
-    href: ../../misc/cs1016.md
   - name: CS1017
     href: ../../misc/cs1017.md
   - name: CS1018
@@ -1374,12 +1361,6 @@ items:
     href: cs1736.md
   - name: CS1737
     href: cs1737.md
-  - name: CS1739
-    href: cs1739.md
-  - name: CS1740
-    href: cs1740.md
-  - name: CS1742
-    href: cs1742.md
   - name: CS1750
     href: cs1750.md
   - name: CS1751
@@ -1630,8 +1611,6 @@ items:
     href: cs8515.md
   - name: CS8817
     href: CS8817.md
-  - name: CS8964
-    href: CS8964.md
   - name: CS9043
     href: cs9043.md
   - name: CS9050

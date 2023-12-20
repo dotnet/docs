@@ -72,7 +72,7 @@ To configure the hang dump file generation, use the following options:
 
 ### Crash dump files
 
-This extension allows you to create a crash dump file if the process crashes. This extension is shipped as part of `Microsoft.Testing.Platform.Extensions` package.
+This extension allows you to create a crash dump file if the process crashes. This extension is shipped as part of [Microsoft.Testing.Platform.Extensions](https://nuget.org/packages/Microsoft.Testing.Platform.Extensions) NuGet package.
 
 To configure the crash dump file generation, use the following options:
 
@@ -82,26 +82,26 @@ To configure the crash dump file generation, use the following options:
 | `⁠-⁠-⁠crashdump-⁠filename` | Specifies the file name of the dump. |
 | `--crashdump-type` | Specifies the type of the dump. Valid values are `Mini`, `Heap`, `Triage`, `Full`. Defaults as `Full`. For more information, see [Types of mini dumps](../diagnostics/collect-dumps-crash.md#types-of-mini-dumps).|
 
-## Code Coverage
+## Code coverage
 
 To determine what proportion of your project's code is being tested by coded tests such as unit tests, you can use the code coverage feature. To effectively guard against bugs, your tests should exercise or 'cover' a large proportion of your code.
 
-### Microsoft Code Coverage
+### Microsoft code coverage
 
-Microsoft Code Coverage analysis is possible for both managed (CLR) and unmanaged (native) code. Both static and dynamic instrumentation are supported. This extension is shipped as part of `Microsoft.Testing.Platform.Extensions.CodeCoverage` package.
+Microsoft Code Coverage analysis is possible for both managed (CLR) and unmanaged (native) code. Both static and dynamic instrumentation are supported. This extension is shipped as part of [Microsoft.Testing.Platform.Extensions.CodeCoverage](https://nuget.org/packages/Microsoft.Testing.Platform.Extensions.CodeCoverage) NuGet package.
 
 > [!NOTE]
-> Microsoft Code Coverage is closed source but is free to use.
+> Microsoft code coverage is closed source but it's free to use.
 
-You can find more information about Microsoft Code Coverage on its [GitHub page](https://github.com/microsoft/codecoverage).
+For more information about Microsoft code coverage, see its [GitHub page](https://github.com/microsoft/codecoverage).
 
 Microsoft Code Coverage provides the following options:
 
-| Option                         | Description                                                             |
-| ------------------------------ | ----------------------------------------------------------------------- |
-| `--ms-coverage`                | Collect the code coverage using dotnet-coverage tool                    |
-| `--ms-coverage-output`         | Output file                                                             |
-| `--ms-coverage-output-format`  | Output file format. Supported values: 'coverage', 'xml' and 'cobertura' |
-| `--ms-coverage-settings`       | XML code coverage settings                                              |
+| Option | Description |
+|--|--|
+| `--ms-coverage` | Collect the code coverage using dotnet-coverage tool |
+| `--ms-coverage-output` | Output file |
+| `--ms-coverage-output-format` | Output file format. Supported values: 'coverage', 'xml' and 'cobertura' |
+| `--ms-coverage-settings` | XML code coverage settings |
 
-You can find all the available options that you can use in the setting file [here](../additional-tools/dotnet-coverage.md#settings).
+For more information about the available options, see [settings](../additional-tools/dotnet-coverage.md#settings).

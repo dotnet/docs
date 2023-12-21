@@ -30,7 +30,31 @@ This layer runs test through VSTest and integrates with it on VSTest Test Framew
 
 ### `dotnet test` - MSTest runner mode
 
-By default VSTest is used to run MSTest runner tests. User can opt-in to a fully MSTest runner provided mode. This mode integrates directly with the `dotnet test` target at MSBuild target level. The user opts-in by specifying `<TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>` in their csproj file. When this mode is enabled, VSTest is not used to run tests at all.
+By default, VSTest is used to run MSTest runner tests. You can enable a full MSTest runner by specifying the `<TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>` setting in your project. This setting disables VSTest.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+
+    <OutputType>Exe</OutputType>
+    <EnableMSTestRunner>true</EnableMSTestRunner>
+
+    <!-- Add this to your project file. -->
+    <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
+
+  </PropertyGroup>
+
+  ...
+
+</Project>
+```
 
 In this mode additional parameters to the run are not provided directly through commandline. They need to be provided as MSBuild property `TestingPlatformCommandLineArguments`:
 

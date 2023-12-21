@@ -42,6 +42,8 @@ dotnet test -p:TestingPlatformCommandLineArguments=" --minimum-expected-tests 10
 
 The MSBuild integration provides options that can be specified in user project or through global properties on command line, such as `-p:TestingPlatformShowTestsFailure=true`.
 
+These are the available options:
+
 ### Show failure per test
 
 By default test failures are summarized into a _.log_ file, and a single failure per test project is reported to MSBuild.
@@ -74,8 +76,9 @@ Or in project file:
     <EnableMSTestRunner>true</EnableMSTestRunner>
 
     <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
+
+    <!-- Add this to your project file. -->
     <TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>
-    <TestingPlatformCaptureOutput>false</TestingPlatformCaptureOutput>
 
   </PropertyGroup>
 

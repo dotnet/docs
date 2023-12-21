@@ -12,10 +12,9 @@ This article describes how to use `dotnet test` to run tests and the various opt
 
 MSTest runner integrates with MSBuild and `dotnet test` to provide a simple way to run all tests in a solution (`.sln`) or in a single project.
 
-
 ## `dotnet test` integration
 
-
+`dotnet test` command is a way to run tests from solutions, projects or already built assemblies. MSTest runner hooks up into this infrastructure to provide a unified way to run tests. Especially when migrating from VSTest to MSTest runner.
 
 ### `dotnet test` integration - VSTest mode
 
@@ -70,10 +69,10 @@ Or in project file:
 
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
-    
+
     <OutputType>Exe</OutputType>
     <EnableMSTestRunner>true</EnableMSTestRunner>
-    
+
     <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
     <TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>
     <TestingPlatformCaptureOutput>false</TestingPlatformCaptureOutput>
@@ -114,10 +113,10 @@ Or in project file:
 
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
-    
+
     <OutputType>Exe</OutputType>
     <EnableMSTestRunner>true</EnableMSTestRunner>
-    
+
     <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
 
     <!-- Add this to your project file. -->

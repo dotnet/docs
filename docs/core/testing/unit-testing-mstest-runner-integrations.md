@@ -51,14 +51,14 @@ By default, VSTest is used to run MSTest runner tests. You can enable a full MST
 
   </PropertyGroup>
 
-  ...
+  <!-- ... -->
 
 </Project>
 ```
 
 In this mode additional parameters to the run are not provided directly through commandline. They need to be provided as MSBuild property `TestingPlatformCommandLineArguments`:
 
-```
+```dotnetcli
 dotnet test -p:TestingPlatformCommandLineArguments=" --minimum-expected-tests 10 "
 ```
 
@@ -79,7 +79,7 @@ To show errors per failed test, specify `-p:TestingPlatformShowTestsFailure=true
 
 On command line:
 
-```
+```dotnetcli
 dotnet test -p:TestingPlatformShowTestsFailure=true
 ```
 
@@ -106,7 +106,7 @@ Or in project file:
 
   </PropertyGroup>
 
-  ...
+  <!-- ... -->
 
 </Project>
 ```
@@ -124,7 +124,7 @@ This option doesn't impact how the testing framework captures user output writte
 
 On command line:
 
-```
+```dotnetcli
 dotnet test -p:TestingPlatformCaptureOutput=true
 ```
 
@@ -151,7 +151,7 @@ Or in project file:
 
   </PropertyGroup>
 
-  ...
+  <!-- ... -->
 
 </Project>
 ```

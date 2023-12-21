@@ -338,7 +338,7 @@
 | Image Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.ImageSearch/2.0.0) |  |  |
 | IoT Edge Function | NuGet [3.5.3](https://www.nuget.org/packages/Microsoft.Azure.IoT.Edge.Function/3.5.3) |  |  |
 | IoT Models Repository | NuGet [1.0.0-preview.5](https://www.nuget.org/packages/Azure.IoT.ModelsRepository/1.0.0-preview.5) |  |  |
-| IoT Plug and Play - Devices Client | NuGet [1.42.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/1.42.1)<br>NuGet [2.0.0-preview007](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/2.0.0-preview007) |  |  |
+| IoT Plug and Play - Devices Client | NuGet [1.42.2](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/1.42.2)<br>NuGet [2.0.0-preview007](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/2.0.0-preview007) |  |  |
 | Kusto Data | NuGet [9.3.1](https://www.nuget.org/packages/Microsoft.Azure.Kusto.Data/9.3.1) | [docs](https://learn.microsoft.com/azure/data-explorer/kusto/api/netfx/about-kusto-data) | GitHub [9.3.1](https://github.com/Azure/azure-kusto-dotnet) |
 | Kusto Ingest | NuGet [9.3.1](https://www.nuget.org/packages/Microsoft.Azure.Kusto.Ingest/9.3.1) | [docs](https://learn.microsoft.com/azure/data-explorer/kusto/api/netfx/about-kusto-ingest) | GitHub [9.3.1](https://github.com/Azure/azure-kusto-dotnet) |
 | Local Search | NuGet [1.0.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingLocalSearch/1.0.0-preview.1) |  | GitHub [1.0.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingLocalSearch_1.0.0-preview.1/sdk/cognitiveservices/Search.BingLocalSearch) |

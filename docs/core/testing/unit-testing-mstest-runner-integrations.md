@@ -45,7 +45,7 @@ The MSBuild integration provides options that can be specified in user project o
 
 ### Show failure per test
 
-By default test failures are summarized into an output file (`.log` file), and a single failure per test project is reported to MSBuild.
+By default test failures are summarized into a _.log_ file, and a single failure per test project is reported to MSBuild.
 
 > [!CAUTION]
 > Enabling this option adds overhead to test execution and may degrade performance.
@@ -87,14 +87,14 @@ Or in project file:
 
 ### Show complete platform output
 
-Be default all console output that the underlying test executable writes is captured and hidden from the user. This includes the banner, version information, and formatted test information.
+By default, all console output that the underlying test executable writes is captured and hidden from the user. This includes the banner, version information, and formatted test information.
 
 > [!CAUTION]
 > Enabling this option adds overhead to test execution and may degrade performance.
 
 To show this information together with MSBuild output use`<TestingPlatformCaptureOutput>false</TestingPlatformCaptureOutput>`.
 
-This option does not impact how the testing framework captures user output written by `Console.WriteLine` or other similar ways to write to the console.
+This option doesn't impact how the testing framework captures user output written by `Console.WriteLine` or other similar ways to write to the console.
 
 On command line:
 

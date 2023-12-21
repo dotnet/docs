@@ -8,15 +8,20 @@ ms.date: 12/20/2023
 
 # MSTest runner integrations
 
+This article describes how to use `dotnet test` to run tests and the various options that are available to configure the MSBuild output produced when running tests.
+
 MSTest runner integrates with MSBuild and `dotnet test` to provide a simple way to run all tests in a solution (`.sln`) or in a single project.
 
+
 ## `dotnet test` integration
+
+
 
 ### `dotnet test` integration - VSTest mode
 
 MSTest runner provides a compatibility layer to work with `dotnet test` seamlessly. This layer requires `Microsoft.Testing.Platform.MSBuild` NuGet package. This package is automatically installed as a dependency of `MSTest` and `MSTest.TestAdapter` package.
 
-Tests can be executed by running:
+Tests can be run by running:
 
 ```
 dotnet test
@@ -26,7 +31,7 @@ This layer runs test through VSTest and integrates with it on VSTest Test Framew
 
 ### `dotnet test` - MSTest runner mode
 
-By default VSTest is used to execute MSTest runner tests. User can opt-in to a fully MSTest runner provided mode. This mode integrates directly with the `dotnet test` target at MSBuild target level. The user opts-in by specifying `<TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>` in their csproj file. When this mode is enabled, VSTest is not used to run tests at all.
+By default VSTest is used to run MSTest runner tests. User can opt-in to a fully MSTest runner provided mode. This mode integrates directly with the `dotnet test` target at MSBuild target level. The user opts-in by specifying `<TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>` in their csproj file. When this mode is enabled, VSTest is not used to run tests at all.
 
 In this mode additional parameters to the run are not provided directly through commandline. They need to be provided as MSBuild property `TestingPlatformCommandLineArguments`:
 
@@ -36,12 +41,46 @@ dotnet test -p:TestingPlatformCommandLineArguments=" --minimum-expected-tests 10
 
 ## Additional MSBuild options
 
+The MSBuild integration provides options that can be specified in user project or through global properties on command line, such as `-p:TestingPlatformShowTestsFailure=true`.
+
 ### Show failure per test
 
 By default test failures are summarized into an output file (`.log` file), and a single failure per test project is reported to MSBuild.
 
-To show errors per failed test, specify
-`<TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>` in your project file.
+To show errors per failed test, specify `-p:TestingPlatformShowTestsFailure=true` on commandline, or add `<TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>` property to your project file.
+
+On command line:
+
+```
+dotnet test -p:TestingPlatformShowTestsFailure=true
+```
+
+Or in project file:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    
+    <OutputType>Exe</OutputType>
+    <EnableMSTestRunner>true</EnableMSTestRunner>
+    
+    <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
+    <TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>
+    <TestingPlatformCaptureOutput>false</TestingPlatformCaptureOutput>
+
+  </PropertyGroup>
+
+  ...
+
+</Project>
+```
 
 ### Show complete platform output
 
@@ -49,3 +88,37 @@ Be default all console output that the underlying test executable writes is capt
 `<TestingPlatformCaptureOutput>false</TestingPlatformCaptureOutput>`.
 
 This option does not impact how the testing framework captures user output written by `Console.WriteLine` or other similar ways to write to the console.
+
+On command line:
+
+```
+dotnet test -p:TestingPlatformCaptureOutput=true
+```
+
+Or in project file:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    
+    <OutputType>Exe</OutputType>
+    <EnableMSTestRunner>true</EnableMSTestRunner>
+    
+    <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
+
+    <!-- Add this to your project file. -->
+    <TestingPlatformCaptureOutput>false</TestingPlatformCaptureOutput>
+
+  </PropertyGroup>
+
+  ...
+
+</Project>
+```

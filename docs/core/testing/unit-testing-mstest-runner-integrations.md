@@ -8,9 +8,9 @@ ms.date: 12/20/2023
 
 # MSTest runner integrations
 
-This article describes how to use `dotnet test` to run tests and the various options that are available to configure the MSBuild output produced when running tests.
+This article describes how to use `dotnet test` to run tests when using MSTest runner, and the various options that are available to configure the MSBuild output produced when running tests through MSTest runner.
 
-MSTest runner integrates with MSBuild and `dotnet test` to provide a simple way to run all tests in a solution (`.sln`) or in a single project.
+This article shows how to use `dotnet test` to run all tests in a solution (`.sln`) that uses MSTest runner.
 
 ## `dotnet test` integration
 

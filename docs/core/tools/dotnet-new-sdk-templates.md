@@ -790,7 +790,7 @@ Creates a web API project with AOT publish enabled. For more information, see [N
 
   The Client ID for this project. Use with `IndividualB2C` or `SingleOrg` authentication. The default value is `11111111-1111-1111-11111111111111111`.
 
-- **`-controllers`**, **`--use-controllers`**
+- **`-controllers|--use-controllers`**
 
   Whether to use controllers instead of minimal APIs. If both this option and `-minimal` are specified, this option overrides the value specified by `-minimal`. Default is `false`. Available since .NET 8 SDK.
 

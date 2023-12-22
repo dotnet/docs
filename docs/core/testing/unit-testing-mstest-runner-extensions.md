@@ -8,15 +8,17 @@ ms.date: 12/15/2023
 
 # MSTest runner extensions
 
-The MSTest runner supports extensions that can be used to customize the behavior of the test runner.
+The MSTest runner can be customized through extensions. These extension are either built-in or can be installed as NuGet packages. Extensions installed through NuGet packages will auto-register the extensions they are holding to become available in test execution.
 
 ## Test reports
 
-A test report is a file that contains information about the execution and outcome of the tests
+A test report is a file that contains information about the execution and outcome of the tests.
 
 ### Visual Studio test reports
 
-The Visual Studio test result file (or TRX) is the default format for publishing test results. The available options as follows:
+The Visual Studio test result file (or TRX) is the default format for publishing test results. This extension is shipped as part of [Microsoft.Testing.Platform.Extensions](https://nuget.org/packages/Microsoft.Testing.Platform.Extensions) package.
+
+The available options as follows:
 
 | Option | Description |
 |--|--|
@@ -29,30 +31,18 @@ The report is saved inside the default _TestResults_ folder that can be specifie
 
 The `Microsoft.Testing.Platform` offers some built-in functionalities and extensions that ease the troubleshooting of your test apps.
 
-### `--info` option
+### Platform options
 
-When you run your `Microsoft.Testing.Platform` test app with the `--info` switch, the platform displays advanced information about:
+The following [platform options](./unit-testing-mstest-runner-intro.md#options) provide useful information for troubleshooting your test apps:
 
-- The platform.
-- The environment.
-- Each registered command line provider, such as its, `name`, `version`, `description` and `options`.
-- Each registered tool, such as its, `command`, `name`, `version`, `description`, and all command line providers.
+- `--info`
+- `--diagnostic`
+- `⁠-⁠-⁠diagnostic-⁠filelogger-⁠synchronouswrite`
+- `--diagnostic-verbosity`
+- `--diagnostic-output-fileprefix`
+- `--diagnostic-output-directory`
 
-This feature is used to understand extensions that would be registering the same command line option or the changes in available options between multiple versions of an extension (or the platform).
-
-## Diagnostic logs
-
-The platform produces diagnostic logs that are helpful to understand what is happening during the execution of your test application. The following options are available to configure the produced diagnostic logs:
-
-| Option | Description |
-|--|--|
-| `--diagnostic` | Enables the diagnostic logging. The default log level is `Information`. The file is written in the output directory with the following name format, `log_[MMddHHssfff].diag`. |
-| `⁠-⁠-⁠diagnostic-⁠filelogger-⁠synchronouswrite` | Forces the built-in file logger to synchronously write logs. Useful for scenarios where you don't want to lose any log entries (if the process crashes). This does slow down the test execution. |
-| `--diagnostic-verbosity` | Defines the verbosity level when the `--diagnostic` switch is used. The available values are `Trace`, `Debug`, `Information`, `Warning`, `Error`, or `Critical`.|
-| `--diagnostic-output-fileprefix` | The prefix for the log file name. Defaults to `"log_"`. |
-| `--diagnostic-output-directory` | The output directory of the diagnostic logging, if not specified the file is generated in the default _TestResults_ directory. |
-
-You can enable the diagnostics logs also using the environment variables:
+You can also enable the diagnostics logs using the environment variables:
 
 | Environment variable name | Description |
 |--|--|
@@ -65,9 +55,11 @@ You can enable the diagnostics logs also using the environment variables:
 > [!NOTE]
 > Environment variables take precedence over the command line arguments.
 
-## Hang dump files
+### Hang dump files
 
-This extension allows you to create a dump file after a given timeout. To configure the hang dump file generation, use the following options:
+This extension allows you to create a dump file after a given timeout. This extension is shipped as part of [Microsoft.Testing.Platform.Extensions.HangDump](https://nuget.org/packages/Microsoft.Testing.Platform.Extensions.HangDump) package.
+
+To configure the hang dump file generation, use the following options:
 
 | Option | Description |
 |--|--|
@@ -76,12 +68,38 @@ This extension allows you to create a dump file after a given timeout. To config
 | `--hangdump-timeout` | Specifies the timeout after which the dump is generated. The timeout value is specified in one of the following formats:<br/>`1.5h`, `1.5hour`, `1.5hours`<br/>`90m`, `90min`, `90minute`, `90minutes`<br/>`5400s`, `5400sec`, `5400second`, `5400seconds`. Defaults to `30m` (30 minutes). |
 | `--hangdump-type` | Specifies the type of the dump. Valid values are `Mini`, `Heap`, `Triage`, `Full`. Defaults as `Full`. For more information, see [Types of mini dumps](../diagnostics/collect-dumps-crash.md#types-of-mini-dumps).|
 
-## Crash dump files
+### Crash dump files
 
-This extension allows you to create a crash dump file if the process crashes. To configure the crash dump file generation, use the following options:
+This extension allows you to create a crash dump file if the process crashes. This extension is shipped as part of [Microsoft.Testing.Platform.Extensions](https://nuget.org/packages/Microsoft.Testing.Platform.Extensions) NuGet package.
+
+To configure the crash dump file generation, use the following options:
 
 | Option | Description |
 |--|--|
 | `--crashdump` | Generates a dump file when the test host process crashes. Supported in .NET 6.0+. |
 | `⁠-⁠-⁠crashdump-⁠filename` | Specifies the file name of the dump. |
 | `--crashdump-type` | Specifies the type of the dump. Valid values are `Mini`, `Heap`, `Triage`, `Full`. Defaults as `Full`. For more information, see [Types of mini dumps](../diagnostics/collect-dumps-crash.md#types-of-mini-dumps).|
+
+## Code coverage
+
+To determine what proportion of your project's code is being tested by coded tests such as unit tests, you can use the code coverage feature. To effectively guard against bugs, your tests should exercise or 'cover' a large proportion of your code.
+
+### Microsoft code coverage
+
+Microsoft Code Coverage analysis is possible for both managed (CLR) and unmanaged (native) code. Both static and dynamic instrumentation are supported. This extension is shipped as part of [Microsoft.Testing.Platform.Extensions.CodeCoverage](https://nuget.org/packages/Microsoft.Testing.Platform.Extensions.CodeCoverage) NuGet package.
+
+> [!NOTE]
+> Microsoft code coverage is closed source but it's free to use.
+
+For more information about Microsoft code coverage, see its [GitHub page](https://github.com/microsoft/codecoverage).
+
+Microsoft Code Coverage provides the following options:
+
+| Option | Description |
+|--|--|
+| `--ms-coverage` | Collect the code coverage using dotnet-coverage tool |
+| `--ms-coverage-output` | Output file |
+| `--ms-coverage-output-format` | Output file format. Supported values: 'coverage', 'xml' and 'cobertura' |
+| `--ms-coverage-settings` | XML code coverage settings |
+
+For more information about the available options, see [settings](../additional-tools/dotnet-coverage.md#settings).

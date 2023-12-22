@@ -16,7 +16,7 @@ A test report is a file that contains information about the execution and outcom
 
 ### Visual Studio test reports
 
-The Visual Studio test result file (or TRX) is the default format for publishing test results. This extension is shipped as part of `Microsoft.Testing.Platform.Extensions` package.
+The Visual Studio test result file (or TRX) is the default format for publishing test results. This extension is shipped as part of [Microsoft.Testing.Platform.Extensions](https://nuget.org/packages/Microsoft.Testing.Platform.Extensions) package.
 
 The available options as follows:
 
@@ -57,7 +57,7 @@ You can also enable the diagnostics logs using the environment variables:
 
 ### Hang dump files
 
-This extension allows you to create a dump file after a given timeout. This extension is shipped as part of `Microsoft.Testing.Platform.Extensions.HangDump` package.
+This extension allows you to create a dump file after a given timeout. This extension is shipped as part of [Microsoft.Testing.Platform.Extensions.HangDump](https://nuget.org/packages/Microsoft.Testing.Platform.Extensions.HangDump) package.
 
 To configure the hang dump file generation, use the following options:
 

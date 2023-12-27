@@ -36,7 +36,7 @@ This article assumes that you have the following prerequisites installed:
 > You are not required to have Kubernetes installed if you are not going to use it. Docker4X installer already includes Swarm so no extra installation is required to use it.
 
 > [!NOTE]
-> On Windows, Docker installer will enable Hyper-V at the installation process. As this article and its examples are using .NET Core, the container images used are based on **Windows Server NanoServer**. If you don't plan to use .NET Core and will target .NET 4.6.1 full framework, the image used should be **Windows Server Core** and the 1.4+ version of Orleans (which supports only .net full framework).
+> On Windows, Docker installer will enable Hyper-V at the installation process. As this article and its examples are using .NET Core, the container images used are based on **Windows Server NanoServer**. If you don't plan to use .NET Core and will target .NET 4.6.1 full framework, the image used should be **Windows Server Core** and the 1.4+ version of Orleans (which supports only .NET full framework).
 
 ## Create Orleans solution
 

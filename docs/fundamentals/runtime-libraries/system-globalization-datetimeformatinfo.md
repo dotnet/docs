@@ -177,7 +177,7 @@ The [standard date and time format strings](../../standard/base-types/standard-d
 
 You can change the result string produced by date and time format strings by modifying the associated properties of a writable <xref:System.Globalization.DateTimeFormatInfo> object. To determine if a <xref:System.Globalization.DateTimeFormatInfo> object is writable, use the <xref:System.Globalization.DateTimeFormatInfo.IsReadOnly%2A> property. To customize a <xref:System.Globalization.DateTimeFormatInfo> object in this way:
 
-1. Create a read/write copy of a <xref:System.Globalization.DateTimeFormatInfo> object whose formatting conventions you want to modify. (See the [Instantiating a DateTimeFormatInfo object](#instantiating) section.)
+1. Create a read/write copy of a <xref:System.Globalization.DateTimeFormatInfo> object whose formatting conventions you want to modify.
 
 2. Modify the property or properties that are used to produce the desired result string. (For information about how formatting methods use <xref:System.Globalization.DateTimeFormatInfo> properties to define result strings, see the previous section, [Format strings and DateTimeFormatInfo properties](#format-strings-and-datetimeformatinfo-properties).)
 
@@ -261,7 +261,7 @@ The following sections discuss these two operations in greater detail.
 
 ### Parse user strings
 
-When you parse date and time strings input by the user, you should always instantiate a <xref:System.Globalization.DateTimeFormatInfo> object that reflects the user's cultural settings, including any customizations the user may have made. Otherwise, the date and time object may have incorrect values. For information about how to instantiate a <xref:System.Globalization.DateTimeFormatInfo> object that reflects user cultural customizations, see the [DateTimeFormatInfo and dynamic data](#dynamic) section.
+When you parse date and time strings input by the user, you should always instantiate a <xref:System.Globalization.DateTimeFormatInfo> object that reflects the user's cultural settings, including any customizations the user may have made. Otherwise, the date and time object may have incorrect values. For information about how to instantiate a <xref:System.Globalization.DateTimeFormatInfo> object that reflects user cultural customizations, see the [DateTimeFormatInfo and dynamic data](#datetimeformatinfo-and-dynamic-data) section.
 
 The following example illustrates the difference between a parsing operation that reflects user cultural settings and one that does not. In this case, the default system culture is en-US, but the user has used Control Panel, **Region and Language** to change the short date pattern from its default of "M/d/yyyy" to "yy/MM/dd". When the user enters a string that reflects user settings, and the string is parsed by a <xref:System.Globalization.DateTimeFormatInfo> object that also reflects user settings (overrides), the parsing operation returns a correct result. However, when the string is parsed by a <xref:System.Globalization.DateTimeFormatInfo> object that reflects standard en-US cultural settings, the parsing method throws a <xref:System.FormatException> exception because it interprets 14 as the number of the month, not the last two digits of the year.
 

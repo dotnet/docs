@@ -5,7 +5,7 @@
 The Persian calendar is used in most countries/regions where Persian is spoken, although some regions use different month names. The Persian calendar is the official calendar of Iran and Afghanistan, and it is one of the alternative calendars in regions such as Kazakhstan and Tajikistan.
 
 > [!NOTE]
-> For information about using the <xref:System.Globalization.PersianCalendar> class and the other calendar classes in .NET, see [Working with Calendars](/dotnet/standard/datetime/working-with-calendars).
+> For information about using the <xref:System.Globalization.PersianCalendar> class and the other calendar classes in .NET, see [Working with Calendars](../../standard/datetime/working-with-calendars.md).
 
 The Persian calendar is a solar Hijri calendar, and starts from the year of the Hijra, which corresponds to 622 C.E. the year when Muhammad (PBUH) migrated from Mecca to Medina.
 

@@ -165,11 +165,11 @@ When you assign values to the <xref:System.Globalization.CultureInfo.DefaultThre
 :::code language="csharp" source="~/snippets/csharp/System.Globalization/CultureInfo/Overview/appdomainex1.cs" id="Snippet1":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureinfo.class.appdomain/vb/appdomainex1.vb" id="Snippet1":::
 
-For more information about cultures and application domains, see the "Application Domains and Threads" section in the [Application Domains](/dotnet/framework/app-domains/application-domains) topic.
+For more information about cultures and application domains, see the "Application Domains and Threads" section in the [Application Domains](../../framework/app-domains/application-domains.md) topic.
 
 ## Culture and task-based asynchronous operations
 
-The [task-based asynchronous programming pattern](/dotnet/standard/parallel-programming/task-based-asynchronous-programming) uses <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> objects to asynchronously execute delegates on thread pool threads. The specific thread on which a particular task runs is not known in advance, but is determined only at runtime.
+The [task-based asynchronous programming pattern](../../standard/parallel-programming/task-based-asynchronous-programming.md) uses <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> objects to asynchronously execute delegates on thread pool threads. The specific thread on which a particular task runs is not known in advance, but is determined only at runtime.
 
 For apps that target .NET Framework 4.6 or a later version, culture is part of an asynchronous operation's context. In other words, starting with apps that target .NET Framework 4.6, asynchronous operations by default inherit the values of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties of the thread from which they are launched. If the current culture or current UI culture differs from the system culture, the current culture crosses thread boundaries and becomes the current culture of the thread pool thread that is executing an asynchronous operation.
 

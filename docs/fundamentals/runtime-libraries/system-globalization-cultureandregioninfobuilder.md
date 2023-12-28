@@ -31,7 +31,6 @@ You use the <xref:System.Globalization.CultureAndRegionInfoBuilder> class to def
 2. If you're creating a new or supplemental culture:
 
    - Populate the <xref:System.Globalization.CultureAndRegionInfoBuilder> object's properties by calling the <xref:System.Globalization.CultureAndRegionInfoBuilder.LoadDataFromCultureInfo%2A> method and passing a <xref:System.Globalization.CultureInfo> object whose property values are similar to your new object.
-
    - Populate the <xref:System.Globalization.CultureAndRegionInfoBuilder> object's regional properties by calling the <xref:System.Globalization.CultureAndRegionInfoBuilder.LoadDataFromRegionInfo%2A> method and passing a <xref:System.Globalization.RegionInfo> object that represents the region of your custom culture.
 
 3. Modify the properties of the <xref:System.Globalization.CultureAndRegionInfoBuilder> object as necessary.
@@ -48,9 +47,7 @@ If you are developing a registration application for a custom culture that is se
 The registration process performs the following tasks:
 
 - Creates an .nlp file that contains the information that is defined in the <xref:System.Globalization.CultureAndRegionInfoBuilder> object.
-
 - Stores the .nlp file in the %windir%\Globalization system directory on the target computer. This enables the custom culture's settings to persist between sessions. (The <xref:System.Globalization.CultureAndRegionInfoBuilder> method requires administrative privileges because the .nlp file is stored in a system directory.)
-
 - Prepares .NET to search the %windir%\Globalization system directory instead of an internal cache the next time there's a request to create your new custom culture.
 
 When a custom culture is successfully registered, it's indistinguishable from the cultures that are predefined by .NET. The custom culture is available until a call to the <xref:System.Globalization.CultureAndRegionInfoBuilder> method removes the .nlp file from the local computer.
@@ -60,9 +57,7 @@ When a custom culture is successfully registered, it's indistinguishable from th
 You can create an instance of the custom culture in one of the following ways:
 
 - By invoking the <xref:System.Globalization.CultureInfo.%23ctor%2A?displayProperty=nameWithType> constructor with the culture name.
-
 - By calling the <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=nameWithType> method with the culture name.
-
 - By calling the <xref:System.Globalization.CultureInfo.GetCultureInfo%2A?displayProperty=nameWithType> method with the culture name.
 
 In addition, the array of <xref:System.Globalization.CultureInfo> objects that is returned by the <xref:System.Globalization.CultureInfo.GetCultures%2A?displayProperty=nameWithType> method includes the custom culture.

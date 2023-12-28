@@ -8,7 +8,7 @@ ms.topic: conceptual
 
 [!INCLUDE [context](includes/context.md)]
 
-These options denote case sensitivity or necessity to ignore types of characters.
+The <xref:System.Globalization.CompareOptions> options denote case sensitivity or necessity to ignore types of characters.
 
 .NET uses three distinct ways of sorting: word sort, string sort, and ordinal sort. Word sort performs a culture-sensitive comparison of strings. Certain nonalphanumeric characters might have special weights assigned to them. For example, the hyphen ("-") might have a very small weight assigned to it so that "coop" and "co-op" appear next to each other in a sorted list. String sort is similar to word sort, except that there are no special cases. Therefore, all nonalphanumeric symbols come before all alphanumeric characters. Ordinal sort compares strings based on the Unicode values of each element of the string.  For a downloadable set of text files that contain information on the character weights used in sorting and comparison operations for Windows operating systems, see [Sorting Weight Tables](https://www.microsoft.com/download/details.aspx?id=10921). For the sort weight table for Linux and macOS, see the [Default Unicode Collation Element Table](https://www.unicode.org/Public/UCA/latest/allkeys.txt). The specific version of the sort weight table on Linux and macOS depends on the version of the [International Components for Unicode](https://icu.unicode.org/) libraries installed on the system. For information on ICU versions and the Unicode versions that they implement, see [Downloading ICU](https://icu.unicode.org/download).
 

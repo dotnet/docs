@@ -131,7 +131,9 @@ Different versions of .NET can be extracted to the same folder, which coexist si
 
 ### Example
 
-The following commands set the environment variable `DOTNET_ROOT` to the current working directory followed by `.dotnet`. They then create the directory if it doesn't exist and extract the contents of the file specified by the `DOTNET_FILE` environment variable to the `.dotnet` directory. Both the `.dotnet` directory and its `tools` subdirectory are added to the `PATH` environment variable.
+<!-- Note, this content is taken from macos.md but changed for macOS. Any fixes should be applied there too, though content may be different -->
+
+The following commands set the environment variable `DOTNET_ROOT` to the current working directory followed by `.dotnet`. Then, creates the directory if it doesn't exist, and extracts the contents of the file specified by the `DOTNET_FILE` environment variable to the directory. Both the `.dotnet` directory and its `tools` subdirectory are added to the `PATH` environment variable.
 
 > [!IMPORTANT]
 > If you run these commands, remember to change the `DOTNET_FILE` value to the name of the .NET binary you downloaded.
@@ -145,7 +147,7 @@ mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 ```
 
-The preceding install script approach allows installing different versions into separate locations so you can choose explicitly which one to use by which app. However, you can still install multiple versions of .NET to the same folder.
+You can install more than one version of .NET in the same folder.
 
 ## Verify downloaded binaries
 

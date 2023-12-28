@@ -19,4 +19,4 @@ The `StringSort` value can only be used with <xref:System.Globalization.CompareI
 
 ## Culture-sensitive sorts
 
-[!INCLUDE[platform-note](~/includes/c-and-posix-cultures.md)]
+[!INCLUDE[platform-note](includes/c-and-posix-cultures.md)]

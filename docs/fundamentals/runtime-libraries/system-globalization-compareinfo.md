@@ -1,3 +1,9 @@
+---
+title: System.Globalization.CompareInfo class
+description: Learn more about the System.Globalization.CompareInfo class.
+ms.date: 12/28/2023
+ms.topic: conceptual
+---
 # <xref:System.Globalization.CompareInfo> class
 
 [!INCLUDE [context](includes/context.md)]
@@ -26,11 +32,3 @@ If a security decision depends on a string comparison or a case change, you shou
 
 > [!NOTE]
 > When possible, you should use string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions.Ordinal> or <xref:System.Globalization.CompareOptions.OrdinalIgnoreCase> for security comparisons.
-
-## Examples
-
-The following example shows how the <xref:System.Globalization.CompareInfo> object associated with a <xref:System.Globalization.CultureInfo> object affects string comparison.
-
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/CompareInfo/cpp/CompareInfo.cpp" id="Snippet1":::
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/CompareInfo/Overview/CompareInfo.cs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/CompareInfo/VB/CompareInfo.vb" id="Snippet1":::

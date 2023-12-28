@@ -1,3 +1,9 @@
+---
+title: System.Globalization.CultureInfo class
+description: Learn more about the System.Globalization.CultureInfo class.
+ms.date: 12/28/2023
+ms.topic: conceptual
+---
 # <xref:System.Globalization.CultureInfo> class
 
 [!INCLUDE [context](includes/context.md)]
@@ -60,13 +66,10 @@ On Windows, you can create custom locales. For more information, see [Custom loc
 
 .NET derives its cultural data from a one of a variety of sources, depending on implementation, platform, and version:
 
-- In .NET Framework 3.5 and earlier versions, cultural data is provided by both the Windows operating system and .NET Framework.
-
-- In .NET Framework 4 and later versions, cultural data is provided by the Windows operating system.
-
-- In all versions of .NET (Core) running on Windows 9 and earlier versions, cultural data is provided by the Windows operating system.
-
 - In all versions of .NET (Core) running on Unix platforms or Windows 10 and later versions, cultural data is provided by the [International Components for Unicode (ICU) Library](https://icu.unicode.org/). The specific version of the ICU Library depends on the individual operating system.
+- In all versions of .NET (Core) running on Windows 9 and earlier versions, cultural data is provided by the Windows operating system.
+- In .NET Framework 4 and later versions, cultural data is provided by the Windows operating system.
+- In .NET Framework 3.5 and earlier versions, cultural data is provided by both the Windows operating system and .NET Framework.
 
 Because of this, a culture available on a particular .NET implementation, platform, or version may not be available on a different .NET implementation, platform, or version.
 
@@ -77,31 +80,31 @@ Some `CultureInfo` objects differ depending on the underlying platform. In parti
 - On Windows systems, calling <xref:System.Globalization.CultureInfo.Equals%2A?displayProperty=nameWithType> on an instance that represents the "zh-CN" culture and passing it a "zh-Hans-CN" instance returns `true`. On Unix systems, the method call returns `false`. This behavior also applies to calling <xref:System.Globalization.CultureInfo.Equals%2A> on a "zh-TW" <xref:System.Globalization.CultureInfo> instance and passing it a "zh-Hant-Tw" instance.
 
 ## Dynamic culture data
+
 Except for the invariant culture, culture data is dynamic. This is true even for the predefined cultures. For example, countries or regions adopt new currencies, change their spellings of words, or change their preferred calendar, and culture definitions change to track this. Custom cultures are subject to change without notice, and any specific culture might be overridden by a custom replacement culture. Also, as discussed below, an individual user can override cultural preferences. Applications should always obtain culture data at run time.
 
 > [!CAUTION]
 > When saving data, your application should use the invariant culture, a binary format, or a specific culture-independent format. Data saved according to the current values associated with a particular culture, other than the invariant culture, might become unreadable or might change in meaning if that culture changes.
 
 ## The current culture and current UI culture
+
 Every thread in a .NET application has a current culture and a current UI culture. The current culture determines the formatting conventions for dates, times, numbers, and currency values, the sort order of text, casing conventions, and the ways in which strings are compared. The current UI culture is used to retrieve culture-specific resources at run time.
 
 > [!NOTE]
-> For information on how the current and current UI culture is determined on a per-thread basis, see the  [Culture and threads](#Threads) section. For information on how the current and current UI culture is determined on threads executing in a new application domain, and on threads that cross application domain boundaries, see the [Culture and application domains](#AppDomain) section. For information on how the current and current UI culture is determined on  threads performing task-based asynchronous operations, see the [Culture and task-based asynchronous operations](#Async) section.
+> For information on how the current and current UI culture is determined on a per-thread basis, see the  [Culture and threads](#culture-and-threads) section. For information on how the current and current UI culture is determined on threads executing in a new application domain, and on threads that cross application domain boundaries, see the [Culture and application domains](#culture-and-application-domains) section. For information on how the current and current UI culture is determined on  threads performing task-based asynchronous operations, see the [Culture and task-based asynchronous operations](#culture-and-task-based-asynchronous-operations) section.
 
-For more detailed information on the current culture, see the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property topic. For more detailed information on the current UI culture, see the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> property topic.
+For more detailed information on the current culture, see the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property. For more detailed information on the current UI culture, see the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> property topic.
 
 ### Retrieve the current and current UI cultures
 
 You can get a <xref:System.Globalization.CultureInfo> object that represents the current culture in either of two ways:
 
 - By retrieving the value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property.
-
 - By retrieving the value of the [Thread.CurrentThread.CurrentCulture](<xref:System.Threading.Thread.CurrentCulture>) property.
 
 The following example retrieves both property values, compares them to show that they are equal, and displays the name of the current culture.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/CultureInfo/Overview/Current1.cs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/System.Globalization.CultureInfo/vb/Current1.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Globalization/CultureInfo/csharp/Current1.cs" id="Snippet1":::
 
 You can get a <xref:System.Globalization.CultureInfo> object that represents the current UI culture in either of two ways:
 
@@ -111,8 +114,7 @@ You can get a <xref:System.Globalization.CultureInfo> object that represents the
 
 The following example retrieves both property values, compares them to show that they are equal, and displays the name of the current UI culture.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/CultureInfo/Overview/CurrentUI1.cs" id="Snippet2":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/System.Globalization.CultureInfo/vb/CurrentUI1.vb" id="Snippet2":::
+:::code language="csharp" source="./snippets/System.Globalization/CultureInfo/csharp/CurrentUI1.cs" id="Snippet2":::
 
 ### Set the current and current UI cultures
 
@@ -124,13 +126,11 @@ To change the culture and UI culture of a thread, do the following:
 
 The following example retrieves the current culture. If it is anything other than the French (France) culture, it changes the current culture to French (France). Otherwise, it changes the current culture to French (Luxembourg).
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/CultureInfo/Overview/Change1.cs" id="Snippet3":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/System.Globalization.CultureInfo/vb/Change1.vb" id="Snippet3":::
+:::code language="csharp" source="./snippets/System.Globalization/CultureInfo/csharp/Change1.cs" id="Snippet3":::
 
 The following example retrieves the current culture. If it is anything other the Slovenian (Slovenia) culture, it changes the current culture to Slovenian (Slovenia). Otherwise, it changes the current culture to Croatian (Croatia).
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/CultureInfo/Overview/ChangeUI1.cs" id="Snippet4":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/System.Globalization.CultureInfo/vb/ChangeUI1.vb" id="Snippet4":::
+:::code language="csharp" source="./snippets/System.Globalization/CultureInfo/csharp/ChangeUI1.cs" id="Snippet4":::
 
 ## Get all cultures
 
@@ -138,20 +138,17 @@ You can retrieve an array of specific categories of cultures or of all the cultu
 
 The following example calls the <xref:System.Globalization.CultureInfo.GetCultures%2A> method twice, first with the <xref:System.Globalization.CultureTypes?displayProperty=nameWithType> enumeration member to retrieve all custom cultures, and then with the <xref:System.Globalization.CultureTypes?displayProperty=nameWithType> enumeration member to retrieve all replacement cultures.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/CultureInfo/Overview/GetCultures1.cs" id="Snippet5":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/System.Globalization.CultureInfo/vb/GetCultures1.vb" id="Snippet5":::
+:::code language="csharp" source="./snippets/System.Globalization/CultureInfo/csharp/GetCultures1.cs" id="Snippet5":::
 
 ## Culture and threads
 
 When a new application thread is started, its current culture and current UI culture are defined by the current system culture, and not by the current thread culture. The following example illustrates the difference. It sets the current culture and current UI culture of an application thread to the French (France) culture (fr-FR). If the current culture is already fr-FR, the example sets it to the English (United States) culture (en-US). It displays three random numbers as currency values and then creates a new thread, which, in turn, displays three more random numbers as currency values. But as the output from the example shows, the currency values displayed by the new thread do not reflect the formatting conventions of the French (France) culture, unlike the output from the main application thread.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/CultureInfo/Overview/defaultthread1.cs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureinfo.class.thread/vb/defaultthread1.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Globalization/CultureInfo/csharp/defaultthread1.cs" id="Snippet1":::
 
 You can set the culture and UI culture of all threads in an application domain by assigning a <xref:System.Globalization.CultureInfo> object that represents that culture to the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture%2A> and <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A> properties. The following example uses these properties to ensure that all threads in the default application domain share the same culture.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/CultureInfo/Overview/setthreads1.cs" id="Snippet3":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureinfo.class.thread/vb/setthreads1.vb" id="Snippet3":::
+:::code language="csharp" source="./snippets/System.Globalization/CultureInfo/csharp/setthreads1.cs" id="Snippet3":::
 
 > [!WARNING]
 > Although the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture%2A> and <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A> properties are static members, they define the default culture and default UI culture only for the application domain that is current at the time these property values are set. For more information, see the next section, [Culture and application domains](#culture-and-application-domains).
@@ -162,8 +159,7 @@ When you assign values to the <xref:System.Globalization.CultureInfo.DefaultThre
 
 <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture%2A> and <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A> are static properties that explicitly define a default culture only for the application domain that is current when the property value is set or retrieved. The following example sets the default culture and default UI culture in the default application domain to French (France), and then uses the <xref:System.AppDomainSetup> class and the <xref:System.AppDomainInitializer> delegate to set the default culture and UI culture in a new application domain to Russian (Russia). A single thread then executes two methods in each application domain. Note that the thread's culture and UI culture are not explicitly set; they are derived from the default culture and UI culture of the application domain in which the thread is executing. Note also that the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture%2A> and <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A> properties return the default <xref:System.Globalization.CultureInfo> values of the application domain that is current when the method call is made.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/CultureInfo/Overview/appdomainex1.cs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureinfo.class.appdomain/vb/appdomainex1.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Globalization/CultureInfo/csharp/appdomainex1.cs" id="Snippet1":::
 
 For more information about cultures and application domains, see the "Application Domains and Threads" section in the [Application Domains](../../framework/app-domains/application-domains.md) topic.
 
@@ -171,9 +167,9 @@ For more information about cultures and application domains, see the "Applicatio
 
 The [task-based asynchronous programming pattern](../../standard/parallel-programming/task-based-asynchronous-programming.md) uses <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> objects to asynchronously execute delegates on thread pool threads. The specific thread on which a particular task runs is not known in advance, but is determined only at runtime.
 
-For apps that target .NET Framework 4.6 or a later version, culture is part of an asynchronous operation's context. In other words, starting with apps that target .NET Framework 4.6, asynchronous operations by default inherit the values of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties of the thread from which they are launched. If the current culture or current UI culture differs from the system culture, the current culture crosses thread boundaries and becomes the current culture of the thread pool thread that is executing an asynchronous operation.
+For apps that target .NET Framework 4.6 or a later version, culture is part of an asynchronous operation's context. In other words, asynchronous operations by default inherit the values of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties of the thread from which they are launched. If the current culture or current UI culture differs from the system culture, the current culture crosses thread boundaries and becomes the current culture of the thread pool thread that is executing an asynchronous operation.
 
-The following example provides a simple illustration. It uses the <xref:System.Runtime.Versioning.TargetFrameworkAttribute> attribute to target .NET Framework 4.6. The example defines a <xref:System.Func%601> delegate, `formatDelegate`, that returns some numbers formatted as currency values. The example changes the current system culture to either French (France) or, if French (France) is already the current culture, English (United States). It then:
+The following example provides a simple illustration. The example defines a <xref:System.Func%601> delegate, `formatDelegate`, that returns some numbers formatted as currency values. The example changes the current system culture to either French (France) or, if French (France) is already the current culture, English (United States). It then:
 
 - Invokes the delegate directly so that it runs synchronously on the main app thread.
 - Creates a task that executes the delegate asynchronously on a thread pool thread.
@@ -181,20 +177,13 @@ The following example provides a simple illustration. It uses the <xref:System.R
 
 As the output from the example shows, when the current culture is changed to French (France), the current culture of the thread from which tasks are invoked asynchronously becomes the current culture for that asynchronous operation.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/CultureInfo/Overview/asyncculture1.cs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureinfo.class.async/vb/asyncculture1.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Globalization/CultureInfo/csharp/asyncculture1.cs" id="Snippet1":::
 
 For apps that target versions of .NET Framework from .NET Framework 4.5 and later but prior to .NET Framework 4.6, you can use the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture%2A> and <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A> properties to ensure that the culture of the calling thread is used in asynchronous tasks that execute on thread pool threads. The following example is identical to the previous example, except that it uses the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture%2A> property to ensure that thread pool threads have the same culture as the main app thread.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/CultureInfo/Overview/asyncculture3.cs" id="Snippet3":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureinfo.class.async/vb/asyncculture3.vb" id="Snippet3":::
+:::code language="csharp" source="./snippets/System.Globalization/CultureInfo/csharp/asyncculture3.cs" id="Snippet3":::
 
 <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture%2A> and <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A> are per-app domain properties; that is, they establish a default culture for all threads not explicitly assigned a culture in a specific application domain. However, for apps that target .NET Framework 4.6 or later, the culture of the calling thread remains part of an asynchronous task's context even if the task crosses app domain boundaries.
-
-The following example shows that the calling thread's culture remains the current culture of a task-based asynchronous operation even if the method that the task is executing crosses application domain boundaries. It defines a class, `DataRetriever`, with a single method, `GetFormattedNumber`, that returns a random double-precision floating-point number between 1 and 1,000 formatted as a currency value. A first task is run that simply instantiates a `DataRetriever` instance and calls its `GetFormattedNumber` method. A second task reports its current application domain, creates a new application domain, instantiates a `DataRetriever` instance in the new application domain, and calls its `GetFormattedNumber` method. As the output from the example shows, the current culture has remained the same in the calling thread, the first task, and the second task both when it was executing in the main application domain and the second application domain.
-
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/CultureInfo/Overview/asyncculture4.cs" id="Snippet4":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureinfo.class.async/vb/asyncculture4.vb" id="Snippet4":::
 
 ## CultureInfo object serialization
 
@@ -241,11 +230,3 @@ The following table lists the cultures that support alternate sort orders and th
 In Universal Windows Platform (UWP) apps, the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties are read-write, just as they are in .NET Framework and .NET Core apps. However, UWP apps recognize a single culture. The <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties map to the first value in the [Windows.ApplicationModel.Resources.Core.ResourceManager.DefaultContext.Languages](https://docs.microsoft.com/uwp/api/windows.applicationmodel.resources.core.resourcecontext#properties_) collection.
 
 In .NET apps, the current culture is a per-thread setting, and the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties reflect the culture and UI culture of the current thread only. In UWP apps, the current culture maps to the [Windows.ApplicationModel.Resources.Core.ResourceManager.DefaultContext.Languages](https://docs.microsoft.com/uwp/api/windows.applicationmodel.resources.core.resourcecontext#properties_) collection, which is a global setting. Setting the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> or <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property changes the culture of the entire app; culture cannot be set on a per-thread basis.
-
-## Examples
-
-The following example shows how to create a <xref:System.Globalization.CultureInfo> object for Spanish (Spain) with the international sort and another <xref:System.Globalization.CultureInfo> object with the traditional sort.
-
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CultureInfo_esES/CPP/spanishspain.cpp" id="Snippet1":::
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/CultureInfo/Overview/spanishspain.cs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CultureInfo_esES/VB/spanishspain.vb" id="Snippet1":::

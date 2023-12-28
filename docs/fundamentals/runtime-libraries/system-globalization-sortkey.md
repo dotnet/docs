@@ -1,3 +1,9 @@
+---
+title: System.Globalization.SortKey class
+description: Learn more about the System.Globalization.SortKey class.
+ms.date: 12/28/2023
+ms.topic: conceptual
+---
 # <xref:System.Globalization.SortKey> class
 
 [!INCLUDE [context](includes/context.md)]
@@ -38,16 +44,3 @@ Working with the value of a <xref:System.Globalization.SortKey> object is equiva
 <xref:System.Globalization.SortKey> objects can be serialized, but only so that they can cross <xref:System.AppDomain> objects. If an application serializes a <xref:System.Globalization.SortKey> object, the application must regenerate all the sort keys when there is a new version of the .NET Framework.
 
 For more information about sort keys, see Unicode Technical Standard #10, "Unicode Collation Algorithm" on the [Unicode Consortium website](https://go.microsoft.com/fwlink/?linkid=37123).
-
-## Examples
-
-The following example compares the string "llama" using the "en-US" and "es-ES" cultures, and the "en-US" and "es-ES" traditional cultures.
-
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.SortKey.Compare/CPP/sortkey_compare.cpp" id="Snippet1":::
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/SortKey/Overview/sortkey_compare.cs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.SortKey.Compare/VB/sortkey_compare.vb" id="Snippet1":::
-
-The following example shows how you can use the <xref:System.Globalization.SortKey> class to improve performance in an application that relies extensively on sorting and searching a large array. The example creates an unordered array of names, which in this case has 13 elements. It then stores the sort key of each name in a parallel array, which it passes to the <xref:System.Array.Sort%28System.Array%2CSystem.Array%29?displayProperty=nameWithType> method. The result is a sorted array. The example then searches the array for three strings. For each search string, it calls the <xref:System.Globalization.CompareInfo.GetSortKey%28System.String%2CSystem.Globalization.CompareOptions%29?displayProperty=nameWithType> method to retrieve the string's sort key, and then calls the <xref:System.Array.FindIndex%2A?displayProperty=nameWithType> method to retrieve the index of that sort key in the array of sort keys. Because the name and sort key arrays are parallel, the returned index is also the index of the name in the `names` array.
-
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/SortKey/Overview/sortkey1.cs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.sortkey.class/vb/sortkey1.vb" id="Snippet1":::

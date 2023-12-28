@@ -1,3 +1,9 @@
+---
+title: System.Globalization.PersianCalendar class
+description: Learn more about the System.Globalization.PersianCalendar class.
+ms.date: 12/28/2023
+ms.topic: conceptual
+---
 # <xref:System.Globalization.PersianCalendar> class
 
 [!INCLUDE [context](includes/context.md)]
@@ -34,15 +40,3 @@ As a result of the changed algorithm:
 Applications use a <xref:System.Globalization.PersianCalendar> object to calculate dates in the Persian calendar or convert Persian dates to and from Gregorian dates.
 
 You cannot use a <xref:System.Globalization.PersianCalendar> object as the default calendar for a culture. The default calendar is specified by the <xref:System.Globalization.CultureInfo.Calendar%2A?displayProperty=nameWithType> property and must be one of the calendars returned by the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A?displayProperty=nameWithType> property. Currently, the <xref:System.Globalization.PersianCalendar> class is not an optional calendar for any culture supported by the <xref:System.Globalization.CultureInfo> class and consequently cannot be a default calendar.
-
-## Examples
-
-The following example instantiates <xref:System.DateTime> objects by using the <xref:System.DateTime.Now%2A?displayProperty=nameWithType> property, a <xref:System.DateTime> constructor, and the Persian calendar's <xref:System.Globalization.Calendar.ToDateTime%28System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%29> method. It then displays these dates in both the Gregorian and Persian calendars. It also displays the date range of the Persian calendar.
-
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/PersianCalendar/Overview/calendar2.cs" id="Snippet3":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/sys.glob.persianCal/vb/calendar2.vb" id="Snippet3":::
-
-The following example demonstrates the field, property, and method members of the <xref:System.Globalization.PersianCalendar> class.
-
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/PersianCalendar/Overview/pcal.cs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/sys.glob.persianCal/vb/pcal.vb" id="Snippet1":::

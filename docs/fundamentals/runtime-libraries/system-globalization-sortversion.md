@@ -1,3 +1,9 @@
+---
+title: System.Globalization.SortVersion class
+description: Learn more about the System.Globalization.SortVersion class.
+ms.date: 12/28/2023
+ms.topic: conceptual
+---
 # <xref:System.Globalization.SortVersion> class
 
 [!INCLUDE [context](includes/context.md)]
@@ -43,12 +49,3 @@ You typically use a <xref:System.Globalization.SortVersion> object when saving o
 3. This newly instantiated <xref:System.Globalization.SortVersion> object is compared with a <xref:System.Globalization.SortVersion> object that reflects the culture whose conventions are used to order the string data.
 
 4. If the two <xref:System.Globalization.SortVersion> objects are not equal, the string data must be reordered.
-
-The example provides an illustration.
-
-## Examples
-
-The following example contains a portion of the source code from an application that uses the <xref:System.Globalization.SortVersion> class to ensure that the native names of <xref:System.Globalization.RegionInfo> objects are ordered appropriately for the current system and current culture. It uses the <xref:System.IO.BinaryReader> and <xref:System.IO.BinaryWriter> objects to store and retrieve ordered data from a data file named `Regions.dat` rather than retrieving and ordering data each time the application is run. The example first checks to determine whether the data file exists. If it does not, it creates the data and sets the `reindex` flag, which indicates that the data must be resorted and saved again. Otherwise, it retrieves the data and compares the saved <xref:System.Globalization.SortVersion> object with the <xref:System.Globalization.SortVersion> object for the current culture on the current system. If they are not equal, or if the `reindex` flag had been set previously, it resorts the <xref:System.Globalization.RegionInfo> data.
-
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/SortVersion/Overview/example1.cs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.sortversion/vb/example1.vb" id="Snippet1":::

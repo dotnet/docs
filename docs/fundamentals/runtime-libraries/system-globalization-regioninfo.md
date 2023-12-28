@@ -1,3 +1,9 @@
+---
+title: System.Globalization.RegionInfo class
+description: Learn more about the System.Globalization.RegionInfo class.
+ms.date: 12/28/2023
+ms.topic: conceptual
+---
 # <xref:System.Globalization.RegionInfo> class
 
 [!INCLUDE [context](includes/context.md)]
@@ -14,8 +20,7 @@ To instantiate a <xref:System.Globalization.RegionInfo> object, you pass the <xr
 
 The following example illustrates the difference in <xref:System.Globalization.RegionInfo> property values for three objects that represent Belgium. The first is instantiated from a region name (`BE`) only, while the second and third are instantiated from culture names (`fr-BE` for French (Belgium) and `nl-BE` for Dutch (Belgium), respectively). The example uses reflection to retrieve the property values of each <xref:System.Globalization.RegionInfo> object.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/RegionInfo/Overview/propertyvalues1.cs" id="Snippet2":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo/VB/propertyvalues1.vb" id="Snippet2":::
+:::code language="csharp" source="./snippets/System.Globalization/RegionInfo/csharp/propertyvalues1.cs" id="Snippet2":::
 
 In scenarios such as the following, use culture names instead of country/region names when you instantiate a <xref:System.Globalization.RegionInfo> object:
 
@@ -31,11 +36,3 @@ In scenarios such as the following, use culture names instead of country/region 
   | <xref:System.Globalization.RegionInfo.Name>               | `US`            | `en-US`         | `es-US`           |
   | <xref:System.Globalization.RegionInfo.NativeName>         | `United States` | `United States` | `Estados Unidos`  |
   | <xref:System.Globalization.RegionInfo.ToString%2A>        | `US`            | `en-US`         | `es-US`           |
-
-## Examples
-
-The following example demonstrates several members of the <xref:System.Globalization.RegionInfo> class.
-
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo/CPP/regioninfo.cpp" id="Snippet1":::
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/RegionInfo/Overview/regioninfo.cs" interactive="try-dotnet" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo/VB/regioninfo.vb" id="Snippet1":::

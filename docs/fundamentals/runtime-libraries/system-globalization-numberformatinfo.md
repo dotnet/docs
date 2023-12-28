@@ -1,3 +1,9 @@
+---
+title: System.Globalization.NumberFormatInfo class
+description: Learn more about the System.Globalization.NumberFormatInfo class.
+ms.date: 12/28/2023
+ms.topic: conceptual
+---
 # <xref:System.Globalization.NumberFormatInfo> class
 
 [!INCLUDE [context](includes/context.md)]
@@ -20,8 +26,7 @@ You can instantiate a <xref:System.Globalization.NumberFormatInfo> object for th
 
 The following example uses these three ways to create <xref:System.Globalization.NumberFormatInfo> objects that represent the formatting conventions of the current culture. It also retrieves the value of the <xref:System.Globalization.NumberFormatInfo.IsReadOnly%2A> property to illustrate that each object is read-only.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/NumberFormatInfo/Overview/instantiate1.cs" interactive="try-dotnet" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/vb/instantiate1.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Globalization/NumberFormatInfo/csharp/instantiate1.cs" interactive="try-dotnet" id="Snippet1":::
 
 You can create a writable <xref:System.Globalization.NumberFormatInfo> object that represents the conventions of the current culture in any of the following ways:
 
@@ -31,13 +36,11 @@ You can create a writable <xref:System.Globalization.NumberFormatInfo> object th
 
 The following example illustrates these two ways of instantiating a <xref:System.Globalization.NumberFormatInfo> object, and displays the value of its <xref:System.Globalization.NumberFormatInfo.IsReadOnly%2A> property to illustrate that the object is not read-only.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/NumberFormatInfo/Overview/instantiate2.cs" id="Snippet2":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/vb/instantiate2.vb" id="Snippet2":::
+:::code language="csharp" source="./snippets/System.Globalization/NumberFormatInfo/csharp/instantiate2.cs" id="Snippet2":::
 
 Note that the Windows operating system allows the user to override some of the <xref:System.Globalization.NumberFormatInfo> property values used in numeric formatting and parsing operations through the **Region and Language** item in Control Panel. For example, a user whose culture is English (United States) might choose to display currency values as 1.1 USD instead of the default of $1.1. The <xref:System.Globalization.NumberFormatInfo> objects retrieved in the ways discussed previously all reflect these user overrides. If this is undesirable, you can create a <xref:System.Globalization.NumberFormatInfo> object that does not reflect user overrides (and that is also read/write rather than read-only) by calling the <xref:System.Globalization.CultureInfo.%23ctor(System.String,System.Boolean)?displayProperty=nameWithType> constructor and supplying a value of `false` for the `useUserOverride` argument. The following example provides an illustration for a system whose current culture is English (United States) and whose currency symbol has been changed from the default of $ to USD.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/NumberFormatInfo/Overview/instantiate3.cs" id="Snippet3":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/vb/instantiate3.vb" id="Snippet3":::
+:::code language="csharp" source="./snippets/System.Globalization/NumberFormatInfo/csharp/instantiate3.cs" id="Snippet3":::
 
 If the <xref:System.Globalization.CultureInfo.UseUserOverride%2A?displayProperty=nameWithType> property is set to `true`, the properties <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType>, <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=nameWithType>, and <xref:System.Globalization.CultureInfo.TextInfo%2A?displayProperty=nameWithType> are also retrieved from the user settings. If the user settings are incompatible with the culture associated with the <xref:System.Globalization.CultureInfo> object (for example, if the selected calendar is not one of the calendars listed by the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property), the results of the methods and the values of the properties are undefined.
 
@@ -55,8 +58,7 @@ You can instantiate a <xref:System.Globalization.NumberFormatInfo> object that r
 
 The following example uses each of these methods to instantiate a <xref:System.Globalization.NumberFormatInfo> object that represents the invariant culture. It then indicates whether the object is read-only,
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/NumberFormatInfo/Overview/instantiate4.cs" interactive="try-dotnet" id="Snippet4":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/vb/instantiate4.vb" id="Snippet4":::
+:::code language="csharp" source="./snippets/System.Globalization/NumberFormatInfo/csharp/instantiate4.cs" interactive="try-dotnet" id="Snippet4":::
 
 ### Instantiate a NumberFormatInfo object for a specific culture
 
@@ -72,8 +74,7 @@ A specific culture represents a language that is spoken in a particular country/
 
 The following example uses these four ways to create a <xref:System.Globalization.NumberFormatInfo> object that reflects the formatting conventions of the Indonesian (Indonesia) culture. It also indicates whether each object is read-only.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/NumberFormatInfo/Overview/instantiate5.cs" interactive="try-dotnet" id="Snippet5":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/vb/instantiate5.vb" id="Snippet5":::
+:::code language="csharp" source="./snippets/System.Globalization/NumberFormatInfo/csharp/instantiate5.cs" interactive="try-dotnet" id="Snippet5":::
 
 ### Instantiate a NumberFormatInfo object for a neutral culture
 
@@ -83,8 +84,7 @@ However, because it is independent of a specific country/region, a neutral cultu
 
 You can use code like the following to determine which specific culture's formatting conventions each neutral culture represents.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/NumberFormatInfo/Overview/instantiate6c.cs" id="Snippet6":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/vb/instantiate6c.vb" id="Snippet6":::
+:::code language="csharp" source="./snippets/System.Globalization/NumberFormatInfo/csharp/instantiate6.cs" id="Snippet6":::
 
 ## Dynamic data
 
@@ -133,8 +133,7 @@ If an <xref:System.IFormatProvider> implementation is not provided to a formatti
 
 The following example illustrates the relationship between the <xref:System.IFormatProvider> interface and the <xref:System.Globalization.NumberFormatInfo> class in formatting operations by defining a custom <xref:System.IFormatProvider> implementation. Its <xref:System.IFormatProvider.GetFormat%2A> method displays the type name of the object requested by the formatting operation. If the interface is requesting a <xref:System.Globalization.NumberFormatInfo> object, this method provides the <xref:System.Globalization.NumberFormatInfo> object for the current culture. As the output from the example shows, the <xref:System.Decimal.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method requests a <xref:System.Globalization.NumberFormatInfo> object to provide formatting information, whereas the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method requests <xref:System.Globalization.NumberFormatInfo> and <xref:System.Globalization.DateTimeFormatInfo> objects as well as an <xref:System.ICustomFormatter> implementation.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/NumberFormatInfo/Overview/formatprovider1.cs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/vb/formatprovider1.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Globalization/NumberFormatInfo/csharp/formatprovider1.cs" id="Snippet1":::
 
 If an <xref:System.IFormatProvider> implementation is not explicitly provided in a numeric formatting method call, the method calls the `CultureInfo.CurrentCulture.GetFormat` method, which returns the <xref:System.Globalization.NumberFormatInfo> object that corresponds to the current culture.
 
@@ -142,13 +141,11 @@ If an <xref:System.IFormatProvider> implementation is not explicitly provided in
 
 Every formatting operation uses either a standard or a custom numeric format string to produce a result string from a number. In some cases, the use of a format string to produce a result string is explicit, as in the following example. This code calls the <xref:System.Decimal.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method to convert a <xref:System.Decimal> value to a number of different string representations by using the formatting conventions of the en-US culture.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/NumberFormatInfo/Overview/properties1.cs" interactive="try-dotnet" id="Snippet2":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/vb/properties1.vb" id="Snippet2":::
+:::code language="csharp" source="./snippets/System.Globalization/NumberFormatInfo/csharp/properties1.cs" interactive="try-dotnet" id="Snippet2":::
 
 In other cases, the use of a format string is implicit. For example, in the following method calls to the default or parameterless <xref:System.Decimal.ToString?displayProperty=nameWithType> method, the value of the <xref:System.Decimal> instance is formatted by using the general ("G") format specifier and the conventions of the current culture, which in this case is the en-US culture.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/NumberFormatInfo/Overview/properties2.cs" interactive="try-dotnet" id="Snippet3":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/vb/properties2.vb" id="Snippet3":::
+:::code language="csharp" source="./snippets/System.Globalization/NumberFormatInfo/csharp/properties2.cs" interactive="try-dotnet" id="Snippet3":::
 
 Each standard numeric format string uses one or more <xref:System.Globalization.NumberFormatInfo> properties to determine the pattern or the symbols used in the result string. Similarly, each custom numeric format specifier except "0" and "#" insert symbols in the result string that are defined by <xref:System.Globalization.NumberFormatInfo> properties. The following table lists the standard and custom numeric format specifiers and their associated <xref:System.Globalization.NumberFormatInfo> properties. To change the appearance of the result string for a particular culture, see the [Modify NumberFormatInfo properties](#modify-numberformatinfo-properties) section. For details about the use of these format specifiers, see [Standard Numeric Format Strings](../../standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](../../standard/base-types/custom-numeric-format-strings.md).
 
@@ -190,15 +187,13 @@ The following sections provide some examples.
 
 The following example modifies a <xref:System.Globalization.NumberFormatInfo> object that represents the formatting conventions of the en-US culture. It assigns the ISO-4217 currency symbol to the <xref:System.Globalization.NumberFormatInfo.CurrencySymbol%2A> property and defines a pattern for currency values that consists of the currency symbol followed by a space and a numeric value.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/NumberFormatInfo/Overview/customize_currency1.cs" interactive="try-dotnet" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.customize/vb/customize_currency1.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Globalization/NumberFormatInfo/csharp/customize_currency1.cs" interactive="try-dotnet" id="Snippet1":::
 
 ### Format a national identification number
 
 Many national identification numbers consist exclusively of digits and so can easily be formatted by modifying the properties of a <xref:System.Globalization.NumberFormatInfo> object. For example, a social security number in the United States consists of 9 digits arranged as follows: `XXX-XX-XXXX`. The following example assumes that social security numbers are stored as integer values and formats them appropriately.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/NumberFormatInfo/Overview/customize_ssn1.cs" interactive="try-dotnet" id="Snippet2":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.customize/vb/customize_ssn1.vb" id="Snippet2":::
+:::code language="csharp" source="./snippets/System.Globalization/NumberFormatInfo/csharp/customize_ssn1.cs" interactive="try-dotnet" id="Snippet2":::
 
 ## Parse numeric strings
 
@@ -210,8 +205,7 @@ The parsing methods also implicitly or explicitly use a <xref:System.Globalizati
 
 The following example illustrates the culture-sensitive nature of parsing strings. It tries to parse a string that include thousands separators by using the conventions of the en-US, fr-FR, and invariant cultures. A string that includes the comma as a group separator and the period as a decimal separator fails to parse in the fr-FR culture, and a string with white space as a group separator and a comma as a decimal separator fails to parse in the en-US and invariant cultures.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/NumberFormatInfo/Overview/parse1.cs" interactive="try-dotnet" id="Snippet4":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/vb/parse1.vb" id="Snippet4":::
+:::code language="csharp" source="./snippets/System.Globalization/NumberFormatInfo/csharp/parse1.cs" interactive="try-dotnet" id="Snippet4":::
 
 Parsing generally occurs in two contexts:
 
@@ -227,8 +221,7 @@ When you are parsing numeric strings input by the user, you should always instan
 
 The following example illustrates the difference between a parsing operation that reflects user cultural settings and one that does not. In this case, the default system culture is en-US, but the user has defined "," as the decimal symbol and "." as the group separator in Control Panel, **Region and Language**. Ordinarily, these symbols are reversed in the default en-US culture. When the user enters a string that reflects user settings, and the string is parsed by a <xref:System.Globalization.NumberFormatInfo> object that also reflects user settings (overrides), the parsing operation returns a correct result. However, when the string is parsed by a <xref:System.Globalization.NumberFormatInfo> object that reflects standard en-US cultural settings, it mistakes the comma symbol for a group separator and returns an incorrect result.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/NumberFormatInfo/Overview/parseuser1.cs" interactive="try-dotnet" id="Snippet5":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/vb/parseuser1.vb" id="Snippet5":::
+:::code language="csharp" source="./snippets/System.Globalization/NumberFormatInfo/csharp/parseuser1.cs" interactive="try-dotnet" id="Snippet5":::
 
 ### Serialize and deserialize numeric data
 
@@ -238,13 +231,4 @@ The following example illustrates what can happen when this principle is violate
 The data is then parsed by a thread that uses the culture-specific settings of the pt-BR culture. In this case, although each parsing operation succeeds, the data doesn't round-trip successfully and data corruption occurs.
 In other cases, a parsing operation could fail and a <xref:System.FormatException> exception could be thrown.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/NumberFormatInfo/Overview/parsepersisted.cs" interactive="try-dotnet" id="Snippet6":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/vb/parsepersisted.vb" id="Snippet6":::
-
-## Examples
-
-The following example shows how to retrieve a <xref:System.Globalization.NumberFormatInfo> object for a corresponding <xref:System.Globalization.CultureInfo> object, and use the retrieved object to query number formatting information for the particular culture.
-
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/NumberFormatInfo/cpp/NumberFormatInfo.cpp" id="Snippet1":::
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/NumberFormatInfo/Overview/NumberFormatInfo.cs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/NumberFormatInfo/vb/numberformatinfo.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Globalization/NumberFormatInfo/csharp/parsepersisted.cs" interactive="try-dotnet" id="Snippet6":::

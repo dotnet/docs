@@ -1,3 +1,9 @@
+---
+title: System.Globalization.CompareOptions enum
+description: Learn more about the System.Globalization.CompareOptions enum.
+ms.date: 12/28/2023
+ms.topic: conceptual
+---
 # <xref:System.Globalization.CompareOptions> enum
 
 [!INCLUDE [context](includes/context.md)]
@@ -14,11 +20,3 @@ The `StringSort` value can only be used with <xref:System.Globalization.CompareI
 ## Culture-sensitive sorts
 
 [!INCLUDE[platform-note](~/includes/c-and-posix-cultures.md)]
-
-## Examples
-
-The following code example shows how sorting with StringSort differs from sorting without StringSort.
-
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareOptions.StringSort/CPP/compareoptions_stringsort.cpp" id="Snippet1":::
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/CompareOptions/Overview/compareoptions_stringsort.cs" interactive="try-dotnet" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareOptions.StringSort/VB/compareoptions_stringsort.vb" id="Snippet1":::

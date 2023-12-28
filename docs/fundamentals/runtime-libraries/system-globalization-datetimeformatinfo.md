@@ -1,3 +1,9 @@
+---
+title: System.Globalization.DateTimeFormatInfo class
+description: Learn more about the System.Globalization.DateTimeFormatInfo class.
+ms.date: 12/28/2023
+ms.topic: conceptual
+---
 # <xref:System.Globalization.DateTimeFormatInfo> class
 
 [!INCLUDE [context](includes/context.md)]
@@ -20,15 +26,12 @@ A <xref:System.Globalization.DateTimeFormatInfo> object can represent the format
 The invariant culture represents a culture that is culture-insensitive. It is based on the English language, but not on any specific English-speaking country/region. Although the data of specific cultures can be dynamic and can change to reflect new cultural conventions or user preferences, the data of the invariant culture does not change. You can instantiate a <xref:System.Globalization.DateTimeFormatInfo> object that represents the formatting conventions of the invariant culture in the following ways:
 
 - By retrieving the value of the <xref:System.Globalization.DateTimeFormatInfo.InvariantInfo%2A> property. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read-only.
-
 - By calling the parameterless <xref:System.Globalization.DateTimeFormatInfo.%23ctor%2A> constructor. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read/write.
-
 - By retrieving the value of the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A> property from the <xref:System.Globalization.CultureInfo> object that is returned by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read-only.
 
 The following example uses each of these methods to instantiate a <xref:System.Globalization.DateTimeFormatInfo> object that represents the invariant culture. It then indicates whether the object is read-only.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/DateTimeFormatInfo/Overview/create1.cs" interactive="try-dotnet-method" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/create1.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/create1.cs" interactive="try-dotnet-method" id="Snippet1":::
 
 ### Instantiate a DateTimeFormatInfo object for a specific culture
 
@@ -44,22 +47,19 @@ A specific culture represents a language that is spoken in a particular country/
 
 The following example illustrates each of these ways to instantiate a <xref:System.Globalization.DateTimeFormatInfo> object and indicates whether the resulting object is read-only.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/DateTimeFormatInfo/Overview/create1.cs" interactive="try-dotnet-method" id="Snippet3":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/create1.vb" id="Snippet3":::
+:::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/create1.cs" interactive="try-dotnet-method" id="Snippet3":::
 
 ### Instantiate a DateTimeFormatInfo object for a neutral culture
 
 A neutral culture represents a culture or language that is independent of a country/region; it is typically the parent of one or more specific cultures. For example, Fr is a neutral culture for the French language and the parent of the fr-FR culture. You can instantiate a <xref:System.Globalization.DateTimeFormatInfo> object that represents the formatting conventions of a neutral culture in the same ways that you create a <xref:System.Globalization.DateTimeFormatInfo> object that represents the formatting conventions of a specific culture. In addition, you can retrieve a neutral culture's <xref:System.Globalization.DateTimeFormatInfo> object by retrieving a neutral culture from a specific culture's <xref:System.Globalization.CultureInfo.Parent%2A?displayProperty=nameWithType> property and retrieving the <xref:System.Globalization.DateTimeFormatInfo> object returned by its <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property. Unless the parent culture represents the invariant culture, the returned <xref:System.Globalization.DateTimeFormatInfo> object is read/write. The following example illustrates these ways of instantiating a <xref:System.Globalization.DateTimeFormatInfo> object that represents a neutral culture.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/DateTimeFormatInfo/Overview/create1.cs" interactive="try-dotnet-method" id="Snippet2":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/create1.vb" id="Snippet2":::
+:::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/create1.cs" interactive="try-dotnet-method" id="Snippet2":::
 
 However, a neutral culture lacks culture-specific formatting information, because it is independent of a specific country/region. Instead of populating the <xref:System.Globalization.DateTimeFormatInfo> object with generic values, .NET returns a <xref:System.Globalization.DateTimeFormatInfo> object that reflects the formatting conventions of a specific culture that is a child of the neutral culture. For example, the <xref:System.Globalization.DateTimeFormatInfo> object for the neutral en culture reflects the formatting conventions of the en-US culture, and the <xref:System.Globalization.DateTimeFormatInfo> object for the fr culture reflects the formatting conventions of the fr-FR culture.
 
 You can use code like the following to determine which specific culture's formatting conventions a neutral culture represents. The example uses reflection to compare the <xref:System.Globalization.DateTimeFormatInfo> properties of a neutral culture with the properties of a specific child culture. It considers two calendars to be equivalent if they are the same calendar type and, for Gregorian calendars, if their <xref:System.Globalization.GregorianCalendar.CalendarType%2A?displayProperty=nameWithType> properties have identical values.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/DateTimeFormatInfo/Overview/instantiate6c.cs" interactive="try-dotnet" id="Snippet6":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/instantiate6c.vb" id="Snippet6":::
+:::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/instantiate6.cs" interactive="try-dotnet" id="Snippet6":::
 
 ### Instantiate a DateTimeFormatInfo object for the current culture
 
@@ -73,8 +73,7 @@ You can instantiate a <xref:System.Globalization.DateTimeFormatInfo> object that
 
 The following example uses each of these methods to instantiate a <xref:System.Globalization.DateTimeFormatInfo> object that represents the formatting conventions of the current culture. It then indicates whether the object is read-only.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/DateTimeFormatInfo/Overview/create2.cs" interactive="try-dotnet-method" id="Snippet4":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/create2.vb" id="Snippet4":::
+:::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/create2.cs" interactive="try-dotnet-method" id="Snippet4":::
 
 You can create a writable <xref:System.Globalization.DateTimeFormatInfo> object that represents the conventions of the current culture in one of these ways:
 
@@ -84,13 +83,11 @@ You can create a writable <xref:System.Globalization.DateTimeFormatInfo> object 
 
 The following example illustrates each way of instantiating a read/write <xref:System.Globalization.DateTimeFormatInfo> object and displays the value of its <xref:System.Globalization.DateTimeFormatInfo.IsReadOnly%2A> property.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/DateTimeFormatInfo/Overview/instantiate2.cs" id="Snippet7":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/instantiate2.vb" id="Snippet7":::
+:::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/instantiate2.cs" id="Snippet7":::
 
 In Windows, the user can override some of the <xref:System.Globalization.DateTimeFormatInfo> property values used in formatting and parsing operations through the **Region and Language** application in Control Panel. For example, a user whose culture is English (United States) might choose to display long time values using a 24-hour clock (in the format HH:mm:ss) instead of the default 12-hour clock (in the format h:mm:ss tt). The <xref:System.Globalization.DateTimeFormatInfo> objects retrieved in the ways discussed previously all reflect these user overrides. If this is undesirable, you can create a <xref:System.Globalization.NumberFormatInfo> object that does not reflect user overrides (and is also read/write instead of read-only) by calling the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> constructor and supplying a value of `false` for the `useUserOverride` argument. The following example illustrates this for a system whose current culture is English (United States) and whose long time pattern has been changed from the default of h:mm:ss tt to HH:mm:ss.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/DateTimeFormatInfo/Overview/instantiate3.cs" id="Snippet8":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/instantiate3.vb" id="Snippet8":::
+:::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/instantiate3.cs" id="Snippet8":::
 
 ## DateTimeFormatInfo and dynamic data
 
@@ -136,8 +133,7 @@ If an <xref:System.IFormatProvider> implementation is not provided to a formatti
 
 The following example illustrates the relationship between the <xref:System.IFormatProvider> interface and the <xref:System.Globalization.DateTimeFormatInfo> class in formatting operations. It defines a custom <xref:System.IFormatProvider> implementation whose <xref:System.IFormatProvider.GetFormat%2A> method displays the type of the object requested by the formatting operation. If it is requesting a <xref:System.Globalization.DateTimeFormatInfo> object, the method provides the <xref:System.Globalization.DateTimeFormatInfo> object for the current culture. As the output from the example shows, the <xref:System.Decimal.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method requests a <xref:System.Globalization.DateTimeFormatInfo> object to provide formatting information, whereas the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method requests <xref:System.Globalization.NumberFormatInfo> and <xref:System.Globalization.DateTimeFormatInfo> objects as well as an <xref:System.ICustomFormatter> implementation.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/DateTimeFormatInfo/Overview/formatprovider1.cs" id="Snippet9":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/formatprovider1.vb" id="Snippet9":::
+:::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/formatprovider1.cs" id="Snippet9":::
 
 ## Format strings and DateTimeFormatInfo properties
 
@@ -197,22 +193,19 @@ There are two other ways to change the format of a result string:
 
 The following example changes the format of a result string produced by the "d" (short date) standard format string. It changes the associated <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A> property for the en-US or English (United States) culture from its default of "M/d/yyyy" to "yyyy'-"MM"-"dd" and uses the "d" standard format string to display the date both before and after the <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A> property is changed.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/DateTimeFormatInfo/Overview/example1.cs" interactive="try-dotnet" id="Snippet10":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/example1.vb" id="Snippet10":::
+:::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/example1.cs" interactive="try-dotnet" id="Snippet10":::
 
 ### Change the date separator character
 
 The following example changes the date separator character in a <xref:System.Globalization.DateTimeFormatInfo> object that represents the formatting conventions of the fr-FR culture. The example uses the "g" standard format string to display the date both before and after the <xref:System.Globalization.DateTimeFormatInfo.DateSeparator%2A> property is changed.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/DateTimeFormatInfo/Overview/example3.cs" interactive="try-dotnet" id="Snippet12":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/example3.vb" id="Snippet12":::
+:::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/example3.cs" interactive="try-dotnet" id="Snippet12":::
 
 ### Change day name abbreviations and the long date pattern
 
 In some cases, the long date pattern, which typically displays the full day and month name along with the number of the day of the month and the year, may be too long. The following example shortens the long date pattern for the en-US culture to return a one-character or two-character day name abbreviation followed by the day number, the month name abbreviation, and the year. It does this by assigning shorter day name abbreviations to the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames%2A> array, and by modifying the custom format string assigned to the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> property. This affects the result strings returned by the "D" and "f" standard format strings.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/DateTimeFormatInfo/Overview/example2.cs" interactive="try-dotnet" id="Snippet13":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/example2.vb" id="Snippet13":::
+:::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/example2.cs" interactive="try-dotnet" id="Snippet13":::
 
 Ordinarily, the change to the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> property also affects the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A> property, which in turn defines the result string returned by the "F" standard format string. To preserve the original full date and time pattern, the example reassigns the original custom format string assigned to the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A> property after the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> property is modified.
 
@@ -220,8 +213,7 @@ Ordinarily, the change to the <xref:System.Globalization.DateTimeFormatInfo.Long
 
 For many cultures in .NET, the time is expressed by using a 12-hour clock and an AM/PM designator. The following example defines a `ReplaceWith24HourClock` method that replaces any time format that uses a 12-hour clock with a format that uses a 24-hour clock.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/DateTimeFormatInfo/Overview/example5.cs" interactive="try-dotnet" id="Snippet14":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/example5.vb" id="Snippet14":::
+:::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/example5.cs" interactive="try-dotnet" id="Snippet14":::
 
 The example uses a regular expression to modify the format string. The regular expression pattern `@"^(?<openAMPM>\s*t+\s*)? (?(openAMPM) h+(?<nonHours>[^ht]+)$ | \s*h+(?<nonHours>[^ht]+)\s*t+)` is defined as follows:
 
@@ -246,8 +238,7 @@ The following example adds the "g" custom format specifier to the  <xref:System.
 
 The example also shows how to change the era name for a culture whose calendar has a single era. In this case, the en-US culture uses the Gregorian calendar, which is represented by a <xref:System.Globalization.GregorianCalendar> object. The <xref:System.Globalization.GregorianCalendar> class supports a single era, which it names A.D. (Anno Domini). The example changes the era name to C.E. (Common Era) by replacing the "g" custom format specifier in the format string assigned to the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A> property with a literal string. The use of a literal string is necessary, because the era name is typically returned by the <xref:System.Globalization.DateTimeFormatInfo.GetEraName%2A> method from private data in the culture tables supplied by either .NET or the operating system.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/DateTimeFormatInfo/Overview/example4.cs" interactive="try-dotnet" id="Snippet11":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/example4.vb" id="Snippet11":::
+:::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/example4.cs" interactive="try-dotnet" id="Snippet11":::
 
 ## Parse date and time strings
 
@@ -259,8 +250,7 @@ The parsing methods also implicitly or explicitly use a <xref:System.Globalizati
 
 The following example illustrates the culture-sensitive nature of parsing date and time strings. It tries to parse two date strings by using the conventions of the en-US, en-GB, fr-FR, and fi-FI cultures. The date that is interpreted as 8/18/2014 in the en-US culture throws a <xref:System.FormatException> exception in the other three cultures because 18 is interpreted as the month number. 1/2/2015 is parsed as the second day of the first month in the en-US culture, but as the first day of the second month in the remaining cultures.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/DateTimeFormatInfo/Overview/parsing1.cs" interactive="try-dotnet" id="Snippet15":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/parsing1.vb" id="Snippet15":::
+:::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/parse1.cs" interactive="try-dotnet" id="Snippet15":::
 
 Date and time strings are typically parsed for two reasons:
 
@@ -275,8 +265,7 @@ When you parse date and time strings input by the user, you should always instan
 
 The following example illustrates the difference between a parsing operation that reflects user cultural settings and one that does not. In this case, the default system culture is en-US, but the user has used Control Panel, **Region and Language** to change the short date pattern from its default of "M/d/yyyy" to "yy/MM/dd". When the user enters a string that reflects user settings, and the string is parsed by a <xref:System.Globalization.DateTimeFormatInfo> object that also reflects user settings (overrides), the parsing operation returns a correct result. However, when the string is parsed by a <xref:System.Globalization.DateTimeFormatInfo> object that reflects standard en-US cultural settings, the parsing method throws a <xref:System.FormatException> exception because it interprets 14 as the number of the month, not the last two digits of the year.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/DateTimeFormatInfo/Overview/parse2.cs" id="Snippet16":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/parse2.vb" id="Snippet16":::
+:::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/parse2.cs" id="Snippet16":::
 
 ### Serialize and deserialize date and time data
 
@@ -286,17 +275,8 @@ If the time component of a date and time value is significant, it should also be
 
 The following example illustrates the process of round-tripping a date and time value. It serializes a date and time on a system that observes U.S. Pacific time and whose current culture is en-US.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/DateTimeFormatInfo/Overview/serialize1.cs" id="Snippet17":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/serialize1.vb" id="Snippet17":::
+:::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/serialize1.cs" id="Snippet17":::
 
 It deserializes the data on a system in the Brussels, Copenhagen, Madrid and Paris time zone and whose current culture is fr-FR. The restored date is nine hours later than the original date, which reflects the time zone adjustment from eight hours behind UTC to one hour ahead of UTC. Both the original date and the restored date represent the same moment in time.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/DateTimeFormatInfo/Overview/serialize2.cs" id="Snippet18":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/serialize2.vb" id="Snippet18":::
-
-## Examples
-
-The following example uses reflection to get the properties of the <xref:System.Globalization.DateTimeFormatInfo> object for the English (United States) culture. It displays the value of those properties that contain custom format strings and uses those strings to display formatted dates.
-
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/DateTimeFormatInfo/Overview/format1.cs" interactive="try-dotnet" id="Snippet5":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/format1.vb" id="Snippet5":::
+:::code language="csharp" source="./snippets/System.Globalization/DateTimeFormatInfo/csharp/serialize2.cs" id="Snippet18":::

@@ -1,3 +1,9 @@
+---
+title: System.Globalization.CultureAndRegionInfoBuilder class
+description: Learn more about the System.Globalization.CultureAndRegionInfoBuilder class.
+ms.date: 12/28/2023
+ms.topic: conceptual
+---
 # <xref:System.Globalization.CultureAndRegionInfoBuilder> class
 
 [!INCLUDE [context](includes/context.md)]
@@ -37,7 +43,7 @@ You use the <xref:System.Globalization.CultureAndRegionInfoBuilder> class to def
 If you are developing a registration application for a custom culture that is separate from the application that creates the culture, you call the <xref:System.Globalization.CultureAndRegionInfoBuilder.CreateFromLdml%2A> method to load the XML file that contains the custom culture's definition and instantiate the <xref:System.Globalization.CultureAndRegionInfoBuilder> object. To handle the registration, call the <xref:System.Globalization.CultureAndRegionInfoBuilder.Register%2A> method. For the registration to succeed, the application that registers the custom culture must be running with administrative privileges on the target system; otherwise, the call to <xref:System.Globalization.CultureAndRegionInfoBuilder.Register%2A> throws an <xref:System.UnauthorizedAccessException> exception.
 
 > [!WARNING]
-> Culture data can differ between systems. If you are using the <xref:System.Globalization.CultureAndRegionInfoBuilder> class to create a custom culture that is uniform across multiple systems and you are creating your custom culture by loading data from existing <xref:System.Globalization.CultureInfo> and <xref:System.Globalization.RegionInfo> objects and customizing it, you should develop two different utilities. The first creates the custom culture and saves it to an XML file. The second uses the <xref:System.Globalization.CultureAndRegionInfoBuilder.CreateFromLdml%2A> method to load the custom culture from an XML file and register it on the target computer.
+> Culture data can differ between systems. If you're using the <xref:System.Globalization.CultureAndRegionInfoBuilder> class to create a custom culture that is uniform across multiple systems and you are creating your custom culture by loading data from existing <xref:System.Globalization.CultureInfo> and <xref:System.Globalization.RegionInfo> objects and customizing it, you should develop two different utilities. The first creates the custom culture and saves it to an XML file. The second uses the <xref:System.Globalization.CultureAndRegionInfoBuilder.CreateFromLdml%2A> method to load the custom culture from an XML file and register it on the target computer.
 
 The registration process performs the following tasks:
 
@@ -45,9 +51,9 @@ The registration process performs the following tasks:
 
 - Stores the .nlp file in the %windir%\Globalization system directory on the target computer. This enables the custom culture's settings to persist between sessions. (The <xref:System.Globalization.CultureAndRegionInfoBuilder> method requires administrative privileges because the .nlp file is stored in a system directory.)
 
-- Prepares .NET to search the %windir%\Globalization system directory instead of an internal cache the next time there is a request to create your new custom culture.
+- Prepares .NET to search the %windir%\Globalization system directory instead of an internal cache the next time there's a request to create your new custom culture.
 
-When a custom culture is successfully registered, it is indistinguishable from the cultures that are predefined by .NET. The custom culture is available until a call to the <xref:System.Globalization.CultureAndRegionInfoBuilder> method removes the .nlp file from the local computer.
+When a custom culture is successfully registered, it's indistinguishable from the cultures that are predefined by .NET. The custom culture is available until a call to the <xref:System.Globalization.CultureAndRegionInfoBuilder> method removes the .nlp file from the local computer.
 
 ## Instantiate a custom culture
 
@@ -60,10 +66,3 @@ You can create an instance of the custom culture in one of the following ways:
 - By calling the <xref:System.Globalization.CultureInfo.GetCultureInfo%2A?displayProperty=nameWithType> method with the culture name.
 
 In addition, the array of <xref:System.Globalization.CultureInfo> objects that is returned by the <xref:System.Globalization.CultureInfo.GetCultures%2A?displayProperty=nameWithType> method includes the custom culture.
-
-## Examples
-
-The following example defines a custom ru-US culture that represents the Russian language in the United States. The example defines the custom culture by loading settings from the Russian (Russia) <xref:System.Globalization.CultureInfo> object and the U.S. <xref:System.Globalization.RegionInfo> object, and then sets a number of <xref:System.Globalization.CultureAndRegionInfoBuilder> properties. The example registers the custom culture, and then instantiates it and makes it the current culture.
-
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/CultureAndRegionInfoBuilder/Overview/car.cs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureandregioninfobuilder.class/vb/car.vb" id="Snippet1":::

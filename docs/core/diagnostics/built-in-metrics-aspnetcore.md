@@ -108,15 +108,6 @@ Available staring in: ASP.NET Core 8.0
 | `aspnetcore.diagnostics.handler.type` | string | Full type name of the [`IExceptionHandler`](/dotnet/api/microsoft.aspnetcore.diagnostics.iexceptionhandler) implementation that handled the exception. | `Contoso.MyHandler` | If the exception was handled by this handler. |
 | `exception.type` | string | The full name of exception type. | `System.OperationCanceledException`; `Contoso.MyException` | Always |
 
-`aspnetcore.diagnostics.exception.result` is one of the following:
-
-| Value  | Description |
-|---|---|
-| `handled` | Exception was handled by the exception handling middleware. |
-| `unhandled` | Exception wasn't handled by the exception handling middleware. |
-| `skipped` | Exception handling was skipped because the response had started. |
-| `aborted` | Exception handling didn't run because the request was aborted. |
-
 Available staring in: ASP.NET Core 8.0
 
 ## `Microsoft.AspNetCore.RateLimiting`
@@ -168,15 +159,6 @@ Available staring in: ASP.NET Core 8.0
 | `aspnetcore.rate_limiting.policy` | string | Rate limiting policy name. | `fixed`; `sliding`; `token` | If the matched endpoint for the request had a rate-limiting policy. |
 | `aspnetcore.rate_limiting.result` | string | The rate limiting result shows whether lease was acquired or contains a rejection reason. | `acquired`; `request_canceled` | Always |
 
-`aspnetcore.rate_limiting.result` is one of the following:
-
-| Value  | Description |
-|---|---|
-| `acquired` | Lease was acquired |
-| `endpoint_limiter` | Lease request was rejected by the endpoint limiter |
-| `global_limiter` | Lease request was rejected by the global limiter |
-| `request_canceled` | Lease request was canceled |
-
 Available staring in: ASP.NET Core 8.0
 
 ### Metric: `aspnetcore.rate_limiting.requests`
@@ -189,15 +171,6 @@ Available staring in: ASP.NET Core 8.0
 |---|---|---|---|---|
 | `aspnetcore.rate_limiting.policy` | string | Rate limiting policy name. | `fixed`; `sliding`; `token` | If the matched endpoint for the request had a rate-limiting policy. |
 | `aspnetcore.rate_limiting.result` | string | The rate limiting result shows whether lease was acquired or contains a rejection reason. | `acquired`; `request_canceled` | Always |
-
-`aspnetcore.rate_limiting.result` is one of the following:
-
-| Value  | Description |
-|---|---|
-| `acquired` | Lease was acquired |
-| `endpoint_limiter` | Lease request was rejected by the endpoint limiter |
-| `global_limiter` | Lease request was rejected by the global limiter |
-| `request_canceled` | Lease request was canceled |
 
 Available staring in: ASP.NET Core 8.0
 
@@ -228,13 +201,6 @@ The metric is emitted only for HTTP request header parsers that support caching.
 |---|---|---|---|---|
 | `aspnetcore.header_parsing.header.name` | string | The header name. | `Content-Type` | Always |
 | `aspnetcore.header_parsing.cache_access.type` | string | A value indicating whether the header's value was found in the cache or not. | `Hit`; `Miss` | Always |
-
-`aspnetcore.header_parsing.cache_access.type` is one of the following:
-
-| Value | Description |
-|---|---|
-| `Hit` | The header's value was found in the cache. |
-| `Miss` | The header's value wasn't found in the cache. |
 
 Available starting in: .NET 8.0.
 
@@ -385,22 +351,6 @@ Available staring in: ASP.NET Core 8.0
 | `signalr.connection.status` | string | SignalR HTTP connection closure status. | `app_shutdown`; `timeout` | Always |
 | `signalr.transport` | string | [SignalR transport type](https://github.com/dotnet/aspnetcore/blob/main/src/SignalR/docs/specs/TransportProtocols.md) | `web_sockets`; `long_polling` | Always |
 
-`signalr.connection.status` is one of the following:
-
-| Value  | Description |
-|---|---|
-| `normal_closure` | The connection was closed normally. |
-| `timeout` | The connection was closed due to a timeout. |
-| `app_shutdown` | The connection was closed because the app is shutting down. |
-
-`signalr.transport` is one of the following:
-
-| Value  | Protocol |
-|---|---|
-| `server_sent_events` | [server-sent events](https://developer.mozilla.org/docs/Web/API/Server-sent_events/Using_server-sent_events)  |
-| `long_polling` | [Long Polling](/archive/msdn-magazine/2012/april/cutting-edge-long-polling-and-signalr) |
-| `web_sockets` | [WebSocket](https://datatracker.ietf.org/doc/html/rfc6455) |
-
 Available staring in: ASP.NET Core 8.0
 
 ### Metric: `signalr.server.active_connections`
@@ -413,21 +363,5 @@ Available staring in: ASP.NET Core 8.0
 |---|---|---|---|---|
 | `signalr.connection.status` | string | SignalR HTTP connection closure status. | `app_shutdown`; `timeout` | Always |
 | `signalr.transport` | string | [SignalR transport type](https://github.com/dotnet/aspnetcore/blob/main/src/SignalR/docs/specs/TransportProtocols.md) | `web_sockets`; `long_polling` | Always |
-
-`signalr.connection.status` is one of the following:
-
-| Value  | Description |
-|---|---|
-| `normal_closure` | The connection was closed normally. |
-| `timeout` | The connection was closed due to a timeout. |
-| `app_shutdown` | The connection was closed because the app is shutting down. |
-
-`signalr.transport` is one of the following:
-
-| Value  | Description |
-|---|---|
-| `server_sent_events` | ServerSentEvents protocol |
-| `long_polling` | LongPolling protocol |
-| `web_sockets` | WebSockets protocol |
 
 Available staring in: ASP.NET Core 8.0

@@ -95,20 +95,20 @@ Microsoft.WindowsDesktop.App 8.0.0 [C:\Program Files\dotnet\shared\Microsoft.Win
 ::: zone pivot="os-linux"
 
 ```bash
-Microsoft.AspNetCore.All 2.1.7 [/home/user/dotnet/shared/Microsoft.AspNetCore.All]
-Microsoft.AspNetCore.All 2.1.13 [/home/user/dotnet/shared/Microsoft.AspNetCore.All]
-Microsoft.AspNetCore.App 2.1.7 [/home/user/dotnet/shared/Microsoft.AspNetCore.App]
-Microsoft.AspNetCore.App 2.1.13 [/home/user/dotnet/shared/Microsoft.AspNetCore.App]
-Microsoft.AspNetCore.App 3.1.0 [/home/user/dotnet/shared/Microsoft.AspNetCore.App]
-Microsoft.AspNetCore.App 5.0.0 [/home/user/dotnet/shared/Microsoft.AspNetCore.App]
-Microsoft.AspNetCore.App 6.0.0 [/home/user/dotnet/shared/Microsoft.AspNetCore.App]
-Microsoft.NETCore.App 2.1.7 [/home/user/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.1.13 [/home/user/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 3.1.0 [/home/user/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 5.0.0 [/home/user/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 6.0.0 [/home/user/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 7.0.0 [/home/user/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 8.0.0 [/home/user/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.AspNetCore.All 2.1.7 [/usr/lib/dotnet/shared/Microsoft.AspNetCore.All]
+Microsoft.AspNetCore.All 2.1.13 [/usr/lib/dotnet/shared/Microsoft.AspNetCore.All]
+Microsoft.AspNetCore.App 2.1.7 [/usr/lib/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 2.1.13 [/usr/lib/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 3.1.0 [/usr/lib/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 5.0.0 [/usr/lib/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 6.0.0 [/usr/lib/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.NETCore.App 2.1.7 [/usr/lib/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 2.1.13 [/usr/lib/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 3.1.0 [/usr/lib/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 5.0.0 [/usr/lib/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 6.0.0 [/usr/lib/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 7.0.0 [/usr/lib/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 8.0.0 [/usr/lib/dotnet/shared/Microsoft.NETCore.App]
 ```
 
 ::: zone-end
@@ -156,13 +156,19 @@ _C:\\program files\\dotnet\\shared\\{runtime-type}\\{version}\\_
 ::: zone pivot="os-linux"
 
 - **dotnet executable**\
-_/home/user/share/dotnet/dotnet_
+_/home/user/.dotnet/dotnet_\
+_/usr/lib/dotnet/dotnet_\
+_/usr/share/dotnet/dotnet_\
 
 - **.NET SDK**\
-_/home/user/share/dotnet/sdk/{version}/_
+_/home/user/.dotnet/sdk/{version}/_\
+_/usr/lib/dotnet/sdk/{version}/_\
+_/usr/share/dotnet/sdk/{version}/_\
 
 - **.NET Runtime**\
-_/home/user/share/dotnet/shared/{runtime-type}/{version}/_
+_/home/user/.dotnet/shared/{runtime-type}/{version}/_\
+_/usr/lib/dotnet/shared/{runtime-type}/{version}/_\
+_/usr/share/dotnet/shared/{runtime-type}/{version}/_\
 
 ::: zone-end
 

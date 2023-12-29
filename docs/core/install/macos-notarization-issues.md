@@ -12,7 +12,7 @@ Beginning with macOS Catalina (version 10.15), all software built after June 1, 
 
 ## Installing .NET
 
-The installers for .NET (both runtime and SDK) have been notarized since February 18, 2020. Prior released versions aren't notarized. You can manually install a non-notarized version of .NET by first downloading the installer, and then using the `sudo installer` command. For more information, see [Download and manually install for macOS](./macos.md#download-and-manually-install).
+The installers for .NET (both runtime and SDK) have been notarized since February 18, 2020. Prior released versions aren't notarized. You can manually install a non-notarized version of .NET by first downloading the installer, and then using the `sudo installer` command. For more information, see [Download and manually install for macOS](./macos.md#manual-install).
 
 ## Native appHost
 

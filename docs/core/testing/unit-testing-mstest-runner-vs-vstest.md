@@ -16,11 +16,11 @@ Tests are executed in different ways depending on the runner.
 
 ### Execute VSTest tests
 
-VSTest ships with Visual Studio, .NET SDK and also as a standalone tool in the [Microsoft.TestingPlatform](https://www.nuget.org/packages/Microsoft.TestingPlatform) NuGet package. VSTest uses a runner executable to run tests, this runner is called `vstest.console.exe`, and can be used directly or through `dotnet test`.
+VSTest ships with Visual Studio, the .NET SDK, and as a standalone tool in the [Microsoft.Testing.Platform](https://www.nuget.org/packages/Microsoft.Testing.Platform) NuGet package. VSTest uses a runner executable to run tests, called `vstest.console.exe`, which can be used directly or through `dotnet test`.
 
 ### Execute MSTest runner tests
 
-MSTest is embedded directly into your test project, and doesn't ship any extra executables. Running your project executable directly runs yours tests. For more information on running MSTest tests, see [MSTest runner overview: Run and debug tests](unit-testing-mstest-runner-intro.md#run-and-debug-tests).
+MSTest is embedded directly into your test project and doesn't ship any extra executables. When you run your project executable, your tests run. For more information on running MSTest tests, see [MSTest runner overview: Run and debug tests](unit-testing-mstest-runner-intro.md#run-and-debug-tests).
 
 ## Namespaces and NuGet packages
 
@@ -38,4 +38,4 @@ The MSTest runner is based on [Microsoft.Testing.Platform](https://www.nuget.org
 
 ## Executables
 
-VSTest ships multiple executables, the most known are `vstest.console.exe`, `testhost.exe`, and `datacollector.exe`. Whereas MSTest is embedded directly into your test project, and doesn't ship any other executables. The executable your test project compiles to, is used to host all the testing tools, and carry out all the tasks needed to run tests.
+VSTest ships multiple executables, notably `vstest.console.exe`, `testhost.exe`, and `datacollector.exe`. However, MSTest is embedded directly into your test project and doesn't ship any other executables. The executable your test project compiles to is used to host all the testing tools and carry out all the tasks needed to run tests.

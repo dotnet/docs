@@ -16,13 +16,13 @@ see [here](available-counters.md).
 
 ASP.NET Core metrics are grouped into meters:
 
-- [`Microsoft.AspNetCore.Hosting`](#meter-microsoftaspnetcorehosting)
-- [`Microsoft.AspNetCore.Routing`](#meter-microsoftaspnetcorerouting)
-- [`Microsoft.AspNetCore.Diagnostics`](#meter-microsoftaspnetcorediagnostics)
-- [`Microsoft.AspNetCore.RateLimiting`](#meter-microsoftaspnetcoreratelimiting)
-- [`Microsoft.AspNetCore.HeaderParsing`](#meter-microsoftaspnetcoreheaderparsing)
-- [`Microsoft.AspNetCore.Server.Kestrel`](#meter-microsoftaspnetcoreserverkestrel)
-- [`Microsoft.AspNetCore.Http.Connections`](#meter-microsoftaspnetcorehttpconnections)
+- [`Microsoft.AspNetCore.Hosting`](#microsoftaspnetcorehosting)
+- [`Microsoft.AspNetCore.Routing`](#microsoftaspnetcorerouting)
+- [`Microsoft.AspNetCore.Diagnostics`](#microsoftaspnetcorediagnostics)
+- [`Microsoft.AspNetCore.RateLimiting`](#microsoftaspnetcoreratelimiting)
+- [`Microsoft.AspNetCore.HeaderParsing`](#microsoftaspnetcoreheaderparsing)
+- [`Microsoft.AspNetCore.Server.Kestrel`](#microsoftaspnetcoreserverkestrel)
+- [`Microsoft.AspNetCore.Http.Connections`](#microsoftaspnetcorehttpconnections)
 
 ## `Microsoft.AspNetCore.Hosting`
 
@@ -58,6 +58,8 @@ The time ends when:
 - The ASP.NET Core handler pipeline is finished executing.
 - All response data has been sent.
 - The context data structures for the request are being disposed.
+
+Available staring in: ASP.NET Core 8.0
 
 ### Metric: `http.server.active_requests`
 

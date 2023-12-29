@@ -14,38 +14,24 @@ see [here](available-counters.md).
 > [!TIP]
 > For more information about how to collect, report, enrich, and test ASP.NET Core metrics, see [Using ASP.NET Core metrics](/aspnet/core/log-mon/metrics/metrics).
 
+ASP.NET Core metrics are grouped into meters:
+
 - [`Microsoft.AspNetCore.Hosting`](#meter-microsoftaspnetcorehosting)
-  - [`http.server.request.duration`](#instrument-httpserverrequestduration)
-  - [`http.server.active_requests`](#instrument-httpserveractive_requests)
 - [`Microsoft.AspNetCore.Routing`](#meter-microsoftaspnetcorerouting)
-  - [`aspnetcore.routing.match_attempts`](#instrument-aspnetcoreroutingmatch_attempts)
 - [`Microsoft.AspNetCore.Diagnostics`](#meter-microsoftaspnetcorediagnostics)
-  - [`aspnetcore.diagnostics.exceptions`](#instrument-aspnetcorediagnosticsexceptions)
 - [`Microsoft.AspNetCore.RateLimiting`](#meter-microsoftaspnetcoreratelimiting)
-  - [`aspnetcore.rate_limiting.active_request_leases`](#instrument-aspnetcorerate_limitingactive_request_leases)
-  - [`aspnetcore.rate_limiting.request_lease.duration`](#instrument-aspnetcorerate_limitingrequest_leaseduration)
-  - [`aspnetcore.rate_limiting.queued_requests`](#instrument-aspnetcorerate_limitingqueued_requests)
-  - [`aspnetcore.rate_limiting.request.time_in_queue`](#instrument-aspnetcorerate_limitingrequesttime_in_queue)
-  - [`aspnetcore.rate_limiting.requests`](#instrument-aspnetcorerate_limitingrequests)
 - [`Microsoft.AspNetCore.HeaderParsing`](#meter-microsoftaspnetcoreheaderparsing)
-  - [`aspnetcore.header_parsing.parse_errors`](#instrument-aspnetcoreheader_parsingparse_errors)
-  - [`aspnetcore.header_parsing.cache_accesses`](#instrument-aspnetcoreheader_parsingcache_accesses)
 - [`Microsoft.AspNetCore.Server.Kestrel`](#meter-microsoftaspnetcoreserverkestrel)
-  - [`kestrel.active_connections`](#instrument-kestrelactive_connections)
-  - [`kestrel.connection.duration`](#instrument-kestrelconnectionduration)
-  - [`kestrel.rejected_connections`](#instrument-kestrelrejected_connections)
-  - [`kestrel.queued_connections`](#instrument-kestrelqueued_connections)
-  - [`kestrel.queued_requests`](#instrument-kestrelqueued_requests)
-  - [`kestrel.upgraded_connections`](#instrument-kestrelupgraded_connections)
-  - [`kestrel.tls_handshake.duration`](#instrument-kestreltls_handshakeduration)
-  - [`kestrel.active_tls_handshakes`](#instrument-kestrelactive_tls_handshakes)
 - [`Microsoft.AspNetCore.Http.Connections`](#meter-microsoftaspnetcorehttpconnections)
-  - [`signalr.server.connection.duration`](#instrument-signalrserverconnectionduration)
-  - [`signalr.server.active_connections`](#instrument-signalrserveractive_connections)
 
-## Meter: `Microsoft.AspNetCore.Hosting`
+## `Microsoft.AspNetCore.Hosting`
 
-### Instrument: `http.server.request.duration`
+The `Microsoft.AspNetCore.Hosting` meter has instruments reporting high-level information about HTTP requests:
+
+- [`http.server.request.duration`](#metric-httpserverrequestduration)
+- [`http.server.active_requests`](#metric-httpserveractive_requests)
+
+### Metric: `http.server.request.duration`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -73,7 +59,7 @@ The time ends when:
 - All response data has been sent.
 - The context data structures for the request are being disposed.
 
-### Instrument: `http.server.active_requests`
+### Metric: `http.server.active_requests`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -86,9 +72,13 @@ The time ends when:
 
 Available staring in: ASP.NET Core 8.0
 
-## Meter: `Microsoft.AspNetCore.Routing`
+## `Microsoft.AspNetCore.Routing`
 
-### Instrument: `aspnetcore.routing.match_attempts`
+The `Microsoft.AspNetCore.Hosting` meter has instruments about [routing HTTP requests](/aspnet/core/fundamentals/routing) to ASP.NET Core endpoints:
+
+- [`aspnetcore.routing.match_attempts`](#metric-aspnetcoreroutingmatch_attempts)
+
+### Metric: `aspnetcore.routing.match_attempts`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -102,9 +92,9 @@ Available staring in: ASP.NET Core 8.0
 
 Available staring in: ASP.NET Core 8.0
 
-## Meter: `Microsoft.AspNetCore.Diagnostics`
+## `Microsoft.AspNetCore.Diagnostics`
 
-### Instrument: `aspnetcore.diagnostics.exceptions`
+### Metric: `aspnetcore.diagnostics.exceptions`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -127,9 +117,9 @@ Available staring in: ASP.NET Core 8.0
 
 Available staring in: ASP.NET Core 8.0
 
-## Meter: `Microsoft.AspNetCore.RateLimiting`
+## `Microsoft.AspNetCore.RateLimiting`
 
-### Instrument: `aspnetcore.rate_limiting.active_request_leases`
+### Metric: `aspnetcore.rate_limiting.active_request_leases`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -141,7 +131,7 @@ Available staring in: ASP.NET Core 8.0
 
 Available staring in: ASP.NET Core 8.0
 
-### Instrument: `aspnetcore.rate_limiting.request_lease.duration`
+### Metric: `aspnetcore.rate_limiting.request_lease.duration`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -153,7 +143,7 @@ Available staring in: ASP.NET Core 8.0
 
 Available staring in: ASP.NET Core 8.0
 
-### Instrument: `aspnetcore.rate_limiting.queued_requests`
+### Metric: `aspnetcore.rate_limiting.queued_requests`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -165,7 +155,7 @@ Available staring in: ASP.NET Core 8.0
 
 Available staring in: ASP.NET Core 8.0
 
-### Instrument: `aspnetcore.rate_limiting.request.time_in_queue`
+### Metric: `aspnetcore.rate_limiting.request.time_in_queue`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -187,7 +177,7 @@ Available staring in: ASP.NET Core 8.0
 
 Available staring in: ASP.NET Core 8.0
 
-### Instrument: `aspnetcore.rate_limiting.requests`
+### Metric: `aspnetcore.rate_limiting.requests`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -209,9 +199,9 @@ Available staring in: ASP.NET Core 8.0
 
 Available staring in: ASP.NET Core 8.0
 
-## Meter: `Microsoft.AspNetCore.HeaderParsing`
+## `Microsoft.AspNetCore.HeaderParsing`
 
-### Instrument: `aspnetcore.header_parsing.parse_errors`
+### Metric: `aspnetcore.header_parsing.parse_errors`
 
 | Name | Instrument Type | Unit (UCUM) | Description |
 |--|--|--|--|
@@ -224,7 +214,7 @@ Available staring in: ASP.NET Core 8.0
 
 Available starting in: .NET 8.0.
 
-### Instrument: `aspnetcore.header_parsing.cache_accesses`
+### Metric: `aspnetcore.header_parsing.cache_accesses`
 
 The metric is emitted only for HTTP request header parsers that support caching.
 
@@ -246,9 +236,9 @@ The metric is emitted only for HTTP request header parsers that support caching.
 
 Available starting in: .NET 8.0.
 
-## Meter: `Microsoft.AspNetCore.Server.Kestrel`
+## `Microsoft.AspNetCore.Server.Kestrel`
 
-### Instrument: `kestrel.active_connections`
+### Metric: `kestrel.active_connections`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -263,7 +253,7 @@ Available starting in: .NET 8.0.
 
 Available staring in: ASP.NET Core 8.0
 
-### Instrument: `kestrel.connection.duration`
+### Metric: `kestrel.connection.duration`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -282,7 +272,7 @@ Available staring in: ASP.NET Core 8.0
 
 Available staring in: ASP.NET Core 8.0
 
-### Instrument: `kestrel.rejected_connections`
+### Metric: `kestrel.rejected_connections`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -299,7 +289,7 @@ Connections are rejected when the currently active count exceeds the value confi
 
 Available staring in: ASP.NET Core 8.0
 
-### Instrument: `kestrel.queued_connections`
+### Metric: `kestrel.queued_connections`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -314,7 +304,7 @@ Available staring in: ASP.NET Core 8.0
 
 Available staring in: ASP.NET Core 8.0
 
-### Instrument: `kestrel.queued_requests`
+### Metric: `kestrel.queued_requests`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -331,7 +321,7 @@ Available staring in: ASP.NET Core 8.0
 
 Available staring in: ASP.NET Core 8.0
 
-### Instrument: `kestrel.upgraded_connections`
+### Metric: `kestrel.upgraded_connections`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -348,7 +338,7 @@ The counter only tracks HTTP/1.1 connections.
 
 Available staring in: ASP.NET Core 8.0
 
-### Instrument: `kestrel.tls_handshake.duration`
+### Metric: `kestrel.tls_handshake.duration`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -365,7 +355,7 @@ Available staring in: ASP.NET Core 8.0
 
 Available staring in: ASP.NET Core 8.0
 
-### Instrument: `kestrel.active_tls_handshakes`
+### Metric: `kestrel.active_tls_handshakes`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -380,9 +370,9 @@ Available staring in: ASP.NET Core 8.0
 
 Available staring in: ASP.NET Core 8.0
 
-## Meter: `Microsoft.AspNetCore.Http.Connections`
+## `Microsoft.AspNetCore.Http.Connections`
 
-### Instrument: `signalr.server.connection.duration`
+### Metric: `signalr.server.connection.duration`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -411,7 +401,7 @@ Available staring in: ASP.NET Core 8.0
 
 Available staring in: ASP.NET Core 8.0
 
-### Instrument: `signalr.server.active_connections`
+### Metric: `signalr.server.active_connections`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |

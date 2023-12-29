@@ -11,9 +11,6 @@ This article describes the metrics built-in for ASP.NET Core produced using the
 <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> API. For a listing of metrics based on the older [EventCounters](event-counters.md) API,
 see [here](available-counters.md).
 
-> [!TIP]
-> For more information about how to collect, report, enrich, and test ASP.NET Core metrics, see [Using ASP.NET Core metrics](/aspnet/core/log-mon/metrics/metrics).
-
 ASP.NET Core metrics are grouped into meters:
 
 - [`Microsoft.AspNetCore.Hosting`](#microsoftaspnetcorehosting)
@@ -24,9 +21,12 @@ ASP.NET Core metrics are grouped into meters:
 - [`Microsoft.AspNetCore.Server.Kestrel`](#microsoftaspnetcoreserverkestrel)
 - [`Microsoft.AspNetCore.Http.Connections`](#microsoftaspnetcorehttpconnections)
 
+> [!TIP]
+> For more information about how to collect, report, enrich, and test ASP.NET Core metrics, see [Using ASP.NET Core metrics](/aspnet/core/log-mon/metrics/metrics).
+
 ## `Microsoft.AspNetCore.Hosting`
 
-The `Microsoft.AspNetCore.Hosting` meter has instruments reporting high-level information about HTTP requests:
+The `Microsoft.AspNetCore.Hosting` metrics report high-level information about HTTP requests:
 
 - [`http.server.request.duration`](#metric-httpserverrequestduration)
 - [`http.server.active_requests`](#metric-httpserveractive_requests)
@@ -76,7 +76,7 @@ Available staring in: ASP.NET Core 8.0
 
 ## `Microsoft.AspNetCore.Routing`
 
-The `Microsoft.AspNetCore.Hosting` meter has instruments about [routing HTTP requests](/aspnet/core/fundamentals/routing) to ASP.NET Core endpoints:
+The `Microsoft.AspNetCore.Hosting` metrics report information about [routing HTTP requests](/aspnet/core/fundamentals/routing) to ASP.NET Core endpoints:
 
 - [`aspnetcore.routing.match_attempts`](#metric-aspnetcoreroutingmatch_attempts)
 

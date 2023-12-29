@@ -1,7 +1,7 @@
 let toPigLatin (word: string) =
     let isVowel (c: char) =
         match c with
-        | 'a' | 'e' | 'i' |'o' |'u'
+        | 'a' | 'e' | 'i' | 'o' | 'u'
         | 'A' | 'E' | 'I' | 'O' | 'U' -> true
         |_ -> false
     

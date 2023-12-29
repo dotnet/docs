@@ -923,12 +923,6 @@ items:
     - name: Globalization and ICU
       href: ../core/extensions/globalization-icu.md
       displayName: globalization,icu,culture
-    - name: Localizability review
-      href: ../core/extensions/localizability-review.md
-      displayName: localizability,localization,localization review,localizability review
-    - name: Localization
-      href: ../core/extensions/localization.md
-      displayName: localization,localization review,localizability review
     - name: Culture-insensitive string operations
       items:
       - name: Overview
@@ -943,6 +937,34 @@ items:
         href: ../core/extensions/performing-culture-insensitive-string-operations-in-arrays.md
     - name: Best practices for developing world-ready apps
       href: ../core/extensions/best-practices-for-developing-world-ready-apps.md
+    - name: Localizability review
+      href: ../core/extensions/localizability-review.md
+      displayName: localizability,localization,localization review,localizability review
+    - name: Localization
+      href: ../core/extensions/localization.md
+      displayName: localization,localization review,localizability review
+    - name: Supplemental API remarks
+      items:
+      - name: CompareInfo
+        href: runtime-libraries/system-globalization-compareinfo.md
+      - name: CompareOptions
+        href: runtime-libraries/system-globalization-compareoptions.md
+      - name: CultureAndRegionInfoBuilder
+        href: runtime-libraries/system-globalization-cultureandregioninfobuilder.md
+      - name: CultureInfo
+        href: runtime-libraries/system-globalization-cultureinfo.md
+      - name: DateTimeFormatInfo
+        href: runtime-libraries/system-globalization-datetimeformatinfo.md
+      - name: NumberFormatInfo
+        href: runtime-libraries/system-globalization-numberformatinfo.md
+      - name: PersianCalendar
+        href: runtime-libraries/system-globalization-persiancalendar.md
+      - name: RegionInfo
+        href: runtime-libraries/system-globalization-regioninfo.md
+      - name: SortKey
+        href: runtime-libraries/system-globalization-sortkey.md
+      - name: SortVersion
+        href: runtime-libraries/system-globalization-sortversion.md
   - name: Resources in .NET apps
     items:
     - name: Overview

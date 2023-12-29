@@ -9,11 +9,11 @@ The implicit public default constructor for `System.Runtime.InteropServices.Java
 
 ## Previous behavior
 
-Previously, you could create empty instances of <xref:System.Runtime.InteropServices.JavaScript.JSFunctionBinding>.
+Previously, you could create empty instances of `System.Runtime.InteropServices.JavaScript.JSFunctionBinding`.
 
 ## New behavior
 
-Starting in .NET 8, you can't instantiate a <xref:System.Runtime.InteropServices.JavaScript.JSFunctionBinding> object.
+Starting in .NET 8, you can't instantiate a `System.Runtime.InteropServices.JavaScript.JSFunctionBinding` object.
 
 ## Version introduced
 

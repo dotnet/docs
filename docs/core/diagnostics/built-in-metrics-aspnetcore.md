@@ -14,34 +14,34 @@ see [here](available-counters.md).
 > [!TIP]
 > For more information about how to collect, report, enrich, and test ASP.NET Core metrics, see [Using ASP.NET Core metrics](/aspnet/core/log-mon/metrics/metrics).
 
-- [Meter: `Microsoft.AspNetCore.Hosting`](#meter-microsoftaspnetcorehosting)
-  - [Instrument: `http.server.request.duration`](#instrument-httpserverrequestduration)
-  - [Instrument: `http.server.active_requests`](#instrument-httpserveractive_requests)
-- [Meter: `Microsoft.AspNetCore.Routing`](#meter-microsoftaspnetcorerouting)
-  - [Instrument: `aspnetcore.routing.match_attempts`](#instrument-aspnetcoreroutingmatch_attempts)
-- [Meter: `Microsoft.AspNetCore.Diagnostics`](#meter-microsoftaspnetcorediagnostics)
-  - [Instrument: `aspnetcore.diagnostics.exceptions`](#instrument-aspnetcorediagnosticsexceptions)
-- [Meter: `Microsoft.AspNetCore.RateLimiting`](#meter-microsoftaspnetcoreratelimiting)
-  - [Instrument: `aspnetcore.rate_limiting.active_request_leases`](#instrument-aspnetcorerate_limitingactive_request_leases)
-  - [Instrument: `aspnetcore.rate_limiting.request_lease.duration`](#instrument-aspnetcorerate_limitingrequest_leaseduration)
-  - [Instrument: `aspnetcore.rate_limiting.queued_requests`](#instrument-aspnetcorerate_limitingqueued_requests)
-  - [Instrument: `aspnetcore.rate_limiting.request.time_in_queue`](#instrument-aspnetcorerate_limitingrequesttime_in_queue)
-  - [Instrument: `aspnetcore.rate_limiting.requests`](#instrument-aspnetcorerate_limitingrequests)
-- [Meter: `Microsoft.AspNetCore.HeaderParsing`](#meter-microsoftaspnetcoreheaderparsing)
-  - [Instrument: `aspnetcore.header_parsing.parse_errors`](#instrument-aspnetcoreheader_parsingparse_errors)
-  - [Instrument: `aspnetcore.header_parsing.cache_accesses`](#instrument-aspnetcoreheader_parsingcache_accesses)
-- [Meter: `Microsoft.AspNetCore.Server.Kestrel`](#meter-microsoftaspnetcoreserverkestrel)
-  - [Instrument: `kestrel.active_connections`](#instrument-kestrelactive_connections)
-  - [Instrument: `kestrel.connection.duration`](#instrument-kestrelconnectionduration)
-  - [Instrument: `kestrel.rejected_connections`](#instrument-kestrelrejected_connections)
-  - [Instrument: `kestrel.queued_connections`](#instrument-kestrelqueued_connections)
-  - [Instrument: `kestrel.queued_requests`](#instrument-kestrelqueued_requests)
-  - [Instrument: `kestrel.upgraded_connections`](#instrument-kestrelupgraded_connections)
-  - [Instrument: `kestrel.tls_handshake.duration`](#instrument-kestreltls_handshakeduration)
-  - [Instrument: `kestrel.active_tls_handshakes`](#instrument-kestrelactive_tls_handshakes)
-- [Meter: `Microsoft.AspNetCore.Http.Connections`](#meter-microsoftaspnetcorehttpconnections)
-  - [Instrument: `signalr.server.connection.duration`](#instrument-signalrserverconnectionduration)
-  - [Instrument: `signalr.server.active_connections`](#instrument-signalrserveractive_connections)
+- [`Microsoft.AspNetCore.Hosting`](#meter-microsoftaspnetcorehosting)
+  - [`http.server.request.duration`](#instrument-httpserverrequestduration)
+  - [`http.server.active_requests`](#instrument-httpserveractive_requests)
+- [`Microsoft.AspNetCore.Routing`](#meter-microsoftaspnetcorerouting)
+  - [`aspnetcore.routing.match_attempts`](#instrument-aspnetcoreroutingmatch_attempts)
+- [`Microsoft.AspNetCore.Diagnostics`](#meter-microsoftaspnetcorediagnostics)
+  - [`aspnetcore.diagnostics.exceptions`](#instrument-aspnetcorediagnosticsexceptions)
+- [`Microsoft.AspNetCore.RateLimiting`](#meter-microsoftaspnetcoreratelimiting)
+  - [`aspnetcore.rate_limiting.active_request_leases`](#instrument-aspnetcorerate_limitingactive_request_leases)
+  - [`aspnetcore.rate_limiting.request_lease.duration`](#instrument-aspnetcorerate_limitingrequest_leaseduration)
+  - [`aspnetcore.rate_limiting.queued_requests`](#instrument-aspnetcorerate_limitingqueued_requests)
+  - [`aspnetcore.rate_limiting.request.time_in_queue`](#instrument-aspnetcorerate_limitingrequesttime_in_queue)
+  - [`aspnetcore.rate_limiting.requests`](#instrument-aspnetcorerate_limitingrequests)
+- [`Microsoft.AspNetCore.HeaderParsing`](#meter-microsoftaspnetcoreheaderparsing)
+  - [`aspnetcore.header_parsing.parse_errors`](#instrument-aspnetcoreheader_parsingparse_errors)
+  - [`aspnetcore.header_parsing.cache_accesses`](#instrument-aspnetcoreheader_parsingcache_accesses)
+- [`Microsoft.AspNetCore.Server.Kestrel`](#meter-microsoftaspnetcoreserverkestrel)
+  - [`kestrel.active_connections`](#instrument-kestrelactive_connections)
+  - [`kestrel.connection.duration`](#instrument-kestrelconnectionduration)
+  - [`kestrel.rejected_connections`](#instrument-kestrelrejected_connections)
+  - [`kestrel.queued_connections`](#instrument-kestrelqueued_connections)
+  - [`kestrel.queued_requests`](#instrument-kestrelqueued_requests)
+  - [`kestrel.upgraded_connections`](#instrument-kestrelupgraded_connections)
+  - [`kestrel.tls_handshake.duration`](#instrument-kestreltls_handshakeduration)
+  - [`kestrel.active_tls_handshakes`](#instrument-kestrelactive_tls_handshakes)
+- [`Microsoft.AspNetCore.Http.Connections`](#meter-microsoftaspnetcorehttpconnections)
+  - [`signalr.server.connection.duration`](#instrument-signalrserverconnectionduration)
+  - [`signalr.server.active_connections`](#instrument-signalrserveractive_connections)
 
 ## Meter: `Microsoft.AspNetCore.Hosting`
 
@@ -49,7 +49,7 @@ see [here](available-counters.md).
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `http.server.request.duration` | Histogram | `s` | Measures the duration of inbound HTTP requests. |
+| [`http.server.request.duration`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-http-metrics/#metric-httpclientrequestduration) | Histogram | `s` | Measures the duration of inbound HTTP requests. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -72,9 +72,6 @@ The time ends when:
 - The ASP.NET Core handler pipeline is finished executing.
 - All response data has been sent.
 - The context data structures for the request are being disposed.
-
-<!-- Once we migrate this doc to https://github.com/dotnet/AspNetCore.Docs we can remove the following version info -->
-Available staring in: ASP.NET Core 8.0
 
 ### Instrument: `http.server.active_requests`
 

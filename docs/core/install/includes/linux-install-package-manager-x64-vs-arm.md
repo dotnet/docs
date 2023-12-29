@@ -1,12 +1,12 @@
 ---
 author: adegeo
 ms.author: adegeo
-ms.date: 11/14/2023
+ms.date: 12/29/2023
 ms.topic: include
 ---
 
 > [!IMPORTANT]
-> Package manager installs are only supported on the **x64** architecture. Other architectures, such as **Arm**, must install .NET by some other means such as with an installer script or with manual binary installation.
+> Using a package manager to install .NET from the **Microsoft pacakge feed** only supports the **x64** architecture. Other architectures, such as **Arm**, aren't supported by the **Microsoft package feed**.
 
 For more information on installing .NET **without a package manager**, see one of the following articles:
 

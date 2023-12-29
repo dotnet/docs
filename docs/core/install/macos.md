@@ -81,7 +81,7 @@ brew update
 brew install mono-libgdiplus
 ```
 
-## Install with an installer
+## Automated install
 
 macOS has standalone installers that can be used to install .NET:
 
@@ -89,22 +89,29 @@ macOS has standalone installers that can be used to install .NET:
 - ✔️ [.NET 7 downloads](https://dotnet.microsoft.com/download/dotnet/7.0)
 - ✔️ [.NET 6 downloads](https://dotnet.microsoft.com/download/dotnet/6.0)
 
-## Download and manually install
+## Manual install
 
 <!-- Note, this content is taken from linux-scripted-manual.md but changed for macOS. Any fixes should be applied there too, though content may be different -->
 
 As an alternative to the macOS installers for .NET, you can download and manually install the SDK and runtime. Manual installation is usually performed as part of continuous integration testing. For a developer or user, it's generally better to use an [installer](https://dotnet.microsoft.com/download/dotnet).
 
-First, download a **binary** release for either the SDK or the runtime from one of the following sites. If you install the .NET SDK, you won't need to install the corresponding runtime:
+Download a **binary** release for either the SDK or the runtime from one of the following sites. The .NET SDK includes the corresponding runtime:
 
 - ✔️ [.NET 8 downloads](https://dotnet.microsoft.com/download/dotnet/8.0)
 - ✔️ [.NET 7 downloads](https://dotnet.microsoft.com/download/dotnet/7.0)
 - ✔️ [.NET 6 downloads](https://dotnet.microsoft.com/download/dotnet/6.0)
 - [All .NET downloads](https://dotnet.microsoft.com/download/dotnet)
 
-Next, extract the downloaded file and use the `export` command to set `DOTNET_ROOT` to the extracted folder's location and then ensure .NET is in PATH. This should make the .NET CLI commands available at the terminal. For more information about .NET environment variables, see [.NET SDK and CLI environment variables](../tools/dotnet-environment-variables.md#net-sdk-and-cli-environment-variables).
+Extract the downloaded file and use the `export` command to set `DOTNET_ROOT` to the extracted folder's location and then ensure .NET is in PATH. Exporting `DOTNET_ROOT` makes the .NET CLI commands available in the terminal. For more information about .NET environment variables, see [.NET SDK and CLI environment variables](../tools/dotnet-environment-variables.md#net-sdk-and-cli-environment-variables).
 
-Alternatively, after downloading the .NET binary, the following commands can be run from the directory where the file is saved to extract the runtime. These commands also make the .NET CLI commands available at the terminal and set the required environment variables. **Remember to change the `DOTNET_FILE` value to the name of the downloaded binary**:
+Different versions of .NET can be extracted to the same folder, which coexist side-by-side.
+
+### Example
+
+The following commands use Bash to set the environment variable `DOTNET_ROOT` to the current working directory followed by `.dotnet`. That directory is created if it doesn't exist. The `DOTNET_FILE` environment variable is the filename of the .NET binary release you want to install. This file is extracted to the `DOTNET_ROOT` directory. Both the `DOTNET_ROOT` directory and its `tools` subdirectory are added to the `PATH` environment variable.
+
+> [!IMPORTANT]
+> If you run these commands, remember to change the `DOTNET_FILE` value to the name of the .NET binary you downloaded.
 
 ```bash
 DOTNET_FILE=dotnet-sdk-8.0.100-osx-x64.tar.gz
@@ -115,26 +122,45 @@ mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
 export PATH=$PATH:$DOTNET_ROOT
 ```
 
-> [!TIP]
-> The preceding `export` commands only make the .NET CLI commands available for the terminal session in which it was run.
->
-> You can edit your shell profile to permanently add the commands. There are a number of different shells available for Linux and each has a different profile. For example:
->
-> - **Bash Shell**: *~/.bash_profile*, *~/.bashrc*
-> - **Korn Shell**: *~/.kshrc* or *.profile*
-> - **Z Shell**: *~/.zshrc* or *.zprofile*
->
-> Edit the appropriate source file for your shell and add `:$HOME/.dotnet` to the end of the existing `PATH` statement. If no `PATH` statement is included, add a new line with `export PATH=$PATH:$HOME/.dotnet`.
->
-> Also, add `export DOTNET_ROOT=$HOME/.dotnet` to the end of the file.
-
 You can install more than one version of .NET in the same folder.
+
+You can also install .NET to the home directory identified by the `HOME` variable or `~` path:
+
+```bash
+export DOTNET_ROOT=$HOME/.dotnet
+```
 
 ## Verify downloaded binaries
 
 [!INCLUDE [verify-download-intro](includes/verify-download-intro.md)]
 
 [!INCLUDE [verify-download-macos-linux](includes/verify-download-macos-linux.md)]
+
+## Set environment variables system-wide
+
+If you used the instructions in the [Manual install example](#example) section, the variables set only apply to your current terminal session. Add them to your shell profile. There are many different shells available for macOS and each has a different profile. For example:
+
+- **Bash Shell**: *~/.profile*, */etc/profile*
+- **Korn Shell**: *~/.kshrc* or *.profile*
+- **Z Shell**: *~/.zshrc* or *.zprofile*
+
+Set the following two environment variables in your shell profile:
+
+- `DOTNET_ROOT`
+
+  This variable is set to the folder .NET was installed to, such as `$HOME/.dotnet`:
+
+  ```bash
+  export DOTNET_ROOT=$HOME/.dotnet
+  ```
+
+- `PATH`
+
+  This variable should include both the `DOTNET_ROOT` folder and the `DOTNET_ROOT/tools` folder:
+
+  ```bash
+  export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+  ```
 
 ## Arm-based Macs
 

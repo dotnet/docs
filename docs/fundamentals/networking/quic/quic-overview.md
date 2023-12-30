@@ -34,6 +34,8 @@ From the implementation perspective, `System.Net.Quic` depends on [MsQuic](https
 
 ## Platform dependencies
 
+The following sections describe the platform dependencies for QUIC in .NET.
+
 ### Windows
 
 - Windows 11, Windows Server 2022, or later. (Earlier Windows versions are missing the cryptographic APIs required to support QUIC.)
@@ -42,20 +44,55 @@ On Windows, msquic.dll is distributed as part of the .NET runtime, and no other 
 
 ### Linux
 
+> [!NOTE]
+> .NET 7+ is only compatible with 2.2+ versions of libmsquic.
+
+The `libmsquic` package is required on Linux. This package is published in Microsoft's official Linux package repository, <https://packages.microsoft.com>. You must add this repository to your package manager before installing the package. For more information, see [Linux Software Repository for Microsoft Products](/linux/packages).
+
+> [!CAUTION]
+> Adding the Microsoft pacakge repository may conflict with your distribution's repository when your distribution's repository provides .NET and other Microsoft packages. To avoid or troubleshoot package mixups, review [Troubleshoot .NET errors related to missing files on Linux](../../../core/install/linux-package-mixup.md#whats-going-on).
+
+##### Examples
+
+Here are some examples of using a package manager to install `libmsquic`:
+
+- **APT**
+
+  ```bash
+  sudo apt-get libmsquic 
+  ```
+
+- **APK**
+
+  ```bash
+  sudo apk add libmsquic
+  ```
+
+- **DNF**
+
+  ```bash
+  sudo dnf install libmsquic
+  ```
+
+- **zypper**
+
+  ```bash
+  sudo zypper install libmsquic
+  ```
+
+- **YUM**
+
+  ```bash
+  sudo yum install libmsquic
+  ```
+
+##### Dependencies of libmsquic
+
 All the following dependencies are stated in the `libmsquic` package manifest and are automatically installed by the package manager:
 
 - OpenSSL 3+ or 1.1 - depends on the default OpenSSL version for the distribution version, for example, OpenSSL 3 for [Ubuntu 22](https://packages.ubuntu.com/jammy/openssl) and OpenSSL 1.1 for [Ubuntu 20](https://packages.ubuntu.com/focal/utils/openssl).
 
 - libnuma 1
-
-On Linux, libmsquic is published via Microsoft's official Linux package repository, <https://packages.microsoft.com>. To consume libmsquic, you must add it manually. For more information, see [Linux Software Repository for Microsoft Products](/windows-server/administration/linux-package-repository-for-microsoft-software). After configuring the package feed, it's installed via the package manager of your distro, for example, for Ubuntu:
-
-```bash
-sudo apt install libmsquic
-```
-
-> [!NOTE]
-> .NET 7 is only compatible with 2.2+ versions of libmsquic.
 
 ### macOS
 

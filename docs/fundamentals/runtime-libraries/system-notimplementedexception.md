@@ -1,4 +1,9 @@
-<xref:System.NotImplementedException> class
+---
+title: System.NotImplementedException class
+description: Learn about the System.NotImplementedException class.
+ms.date: 12/31/2023
+---
+# System.NotImplementedException class
 
 The <xref:System.NotImplementedException> exception is thrown when a particular method, get accessor, or set accessor is present as a member of a type but is not implemented.
 

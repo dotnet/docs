@@ -52,7 +52,7 @@ The following examples illustrate the <xref:System.InvalidOperationException> ex
 
 In each case, the `threadExampleBtn_Click` event handler calls the `DoSomeWork` method twice. The first call runs synchronously and succeeds. But the second call, because it runs asynchronously on a thread pool thread, attempts to update the UI from a non-UI thread. This results in a <xref:System.InvalidOperationException> exception.
 
-#### WPF and UWP apps
+#### WPF apps
 
 :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/WPF1/MainWindow.xaml.cs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/MainWindow.xaml.vb" id="Snippet1":::
@@ -61,11 +61,6 @@ The following version of the `DoSomeWork` method eliminates the exception in a W
 
 :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/WPF2/MainWindowDispatcher.xaml.cs" id="Snippet3":::
 :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/MainWindowDispatcher.xaml.vb" id="Snippet3":::
-
-The following version of the `DoSomeWork` method eliminates the exception in a UWP app.
-
-:::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/UWP/MainPage.xaml.cs" id="Snippet4":::
-:::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/MainPage.xaml.vb" id="Snippet4":::
 
 #### Windows Forms apps
 

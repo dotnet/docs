@@ -2,6 +2,10 @@
 title: System.NotSupportedException class
 description: Learn about the System.NotSupportedException class.
 ms.date: 12/31/2023
+dev_langs:
+  - CSharp
+  - VB
+  - FSharp
 ---
 # System.NotSupportedException class
 

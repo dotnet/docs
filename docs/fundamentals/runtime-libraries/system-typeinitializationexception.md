@@ -2,6 +2,10 @@
 title: System.TypeInitializationException class
 description: Learn about the System.TypeInitializationException class.
 ms.date: 12/31/2023
+dev_langs:
+  - CSharp
+  - VB
+  - FSharp
 ---
 # System.TypeInitializationException class
 

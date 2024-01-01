@@ -1,39 +1,38 @@
 ﻿// <Snippet2>
 using System;
 
-public class Example
+public class MissingEx1
 {
-   public static void Main()
-   {
-      Person p = new Person("John", "Doe");
-      Console.WriteLine(p);   
-   }
+    public static void Main()
+    {
+        Person p = new Person("John", "Doe");
+        Console.WriteLine(p);
+    }
 }
 
 public class Person
 {
-   static InfoModule infoModule;
-   
-   String fName;
-   String mName;
-   String lName;
-   
-   static Person()
-   {
-      infoModule = new InfoModule(DateTime.UtcNow);
-   }
-   
-   public Person(String fName, String lName)
-   {
-      this.fName = fName;
-      this.lName = lName;
-      infoModule.Increment();
-   }
-   
-   public override String ToString()
-   {
-      return String.Format("{0} {1}", fName, lName);
-   }
+    static readonly InfoModule s_infoModule;
+
+    readonly string _fName;
+    readonly string _lName;
+
+    static Person()
+    {
+        s_infoModule = new InfoModule(DateTime.UtcNow);
+    }
+
+    public Person(string fName, string lName)
+    {
+        _fName = fName;
+        _lName = lName;
+        s_infoModule.Increment();
+    }
+
+    public override string ToString()
+    {
+        return string.Format("{0} {1}", _fName, _lName);
+    }
 }
 // The example displays the following output if missing1a.dll is renamed or removed:
 //    Unhandled Exception: System.TypeInitializationException: 

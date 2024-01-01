@@ -2,19 +2,19 @@
 using System;
 using System.Text.RegularExpressions;
 
-public class Example
+public class RegexEx1
 {
-   public static void Main()
-   {
-      AppDomain domain = AppDomain.CurrentDomain;
-      // Set a timeout interval of -2 seconds.
-      domain.SetData("REGEX_DEFAULT_MATCH_TIMEOUT", TimeSpan.FromSeconds(-2));
+    public static void Main()
+    {
+        AppDomain domain = AppDomain.CurrentDomain;
+        // Set a timeout interval of -2 seconds.
+        domain.SetData("REGEX_DEFAULT_MATCH_TIMEOUT", TimeSpan.FromSeconds(-2));
 
-      Regex rgx = new Regex("[aeiouy]");
-      Console.WriteLine("Regular expression pattern: {0}", rgx.ToString());
-      Console.WriteLine("Timeout interval for this regex: {0} seconds",
-                        rgx.MatchTimeout.TotalSeconds);
-   }
+        Regex rgx = new Regex("[aeiouy]");
+        Console.WriteLine("Regular expression pattern: {0}", rgx.ToString());
+        Console.WriteLine("Timeout interval for this regex: {0} seconds",
+                          rgx.MatchTimeout.TotalSeconds);
+    }
 }
 // The example displays the following output:
 //    Unhandled Exception: System.TypeInitializationException: 

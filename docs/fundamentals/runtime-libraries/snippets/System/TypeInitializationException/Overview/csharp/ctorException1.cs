@@ -18,7 +18,7 @@ public class TestClass
    
    public TestClass(int value)
    {
-      if (value < 0 || value > 1) throw new ArgumentOutOfRangeException();
+      if (value < 0 || value > 1) throw new ArgumentOutOfRangeException(nameof(value));
       Value = value;
    }
 }

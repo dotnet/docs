@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 public class Example
 {
-   public static async Task Main()
-   {
-      Encoding enc = Encoding.Unicode;
-      String value = "This is a string to persist.";
-      Byte[] bytes  = enc.GetBytes(value);
+    public static async Task Main()
+    {
+        Encoding enc = Encoding.Unicode;
+        String value = "This is a string to persist.";
+        Byte[] bytes = enc.GetBytes(value);
 
-      FileStream fs = new FileStream(@".\TestFile.dat",
-                                     FileMode.Open,
-                                     FileAccess.Read);
-      Task t = fs.WriteAsync(enc.GetPreamble(), 0, enc.GetPreamble().Length);
-      Task t2 = t.ContinueWith( (a) => fs.WriteAsync(bytes, 0, bytes.Length) );
-      await t2;
-      fs.Close();
-   }
+        FileStream fs = new FileStream(@".\TestFile.dat",
+                                       FileMode.Open,
+                                       FileAccess.Read);
+        Task t = fs.WriteAsync(enc.GetPreamble(), 0, enc.GetPreamble().Length);
+        Task t2 = t.ContinueWith((a) => fs.WriteAsync(bytes, 0, bytes.Length));
+        await t2;
+        fs.Close();
+    }
 }
 // The example displays the following output:
 //    Unhandled Exception: System.NotSupportedException: Stream does not support writing.

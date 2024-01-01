@@ -48,27 +48,27 @@ In each case, the `threadExampleBtn_Click` event handler calls the `DoSomeWork` 
 
 #### WPF and UWP apps
 
-:::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/WPF1/MainWindow.xaml.cs" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/WPF1/MainWindow.xaml.cs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/MainWindow.xaml.vb" id="Snippet1":::
 
 The following version of the `DoSomeWork` method eliminates the exception in a WPF app.
 
-:::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/WPF2/MainWindowDispatcher.xaml.cs" id="Snippet3":::
+:::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/WPF2/MainWindowDispatcher.xaml.cs" id="Snippet3":::
 :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/MainWindowDispatcher.xaml.vb" id="Snippet3":::
 
 The following version of the `DoSomeWork` method eliminates the exception in a UWP app.
 
-:::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/UWP/MainPage.xaml.cs" id="Snippet4":::
+:::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/UWP/MainPage.xaml.cs" id="Snippet4":::
 :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/MainPage.xaml.vb" id="Snippet4":::
 
 #### Windows Forms apps
 
-:::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/WinForms/Form1.cs" id="Snippet2":::
+:::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/WinForms/Form1.cs" id="Snippet2":::
 :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/Form1.vb" id="Snippet2":::
 
 The following version of the `DoSomeWork` method eliminates the exception in a Windows Forms app.
 
-:::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/WinForms/Form11.cs" id="Snippet5":::
+:::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/WinForms/Form11.cs" id="Snippet5":::
 :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/Form11.vb" id="Snippet5":::
 
 ### Changing a collection while iterating it

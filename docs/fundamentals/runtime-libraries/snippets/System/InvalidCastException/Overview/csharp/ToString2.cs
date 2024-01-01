@@ -1,7 +1,7 @@
 ﻿// <Snippet5>
 using System;
 
-public class ToStringEx
+public class ToStringEx2
 {
     public static void Main()
     {

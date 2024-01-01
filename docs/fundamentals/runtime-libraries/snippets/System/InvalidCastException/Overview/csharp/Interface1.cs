@@ -2,15 +2,15 @@
 using System;
 using System.Globalization;
 
-public class Example
+public class InterfaceEx
 {
-   public static void Main()
-   {
-      var culture = CultureInfo.InvariantCulture;
-      IFormatProvider provider = culture;
+    public static void Main()
+    {
+        var culture = CultureInfo.InvariantCulture;
+        IFormatProvider provider = culture;
 
-      DateTimeFormatInfo dt = (DateTimeFormatInfo) provider;
-   }
+        DateTimeFormatInfo dt = (DateTimeFormatInfo)provider;
+    }
 }
 // The example displays the following output:
 //    Unhandled Exception: System.InvalidCastException:

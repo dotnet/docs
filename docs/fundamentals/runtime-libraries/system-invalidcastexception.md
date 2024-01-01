@@ -5,6 +5,8 @@ ms.date: 12/31/2023
 ---
 # System.InvalidCastException class
 
+[!INCLUDE [context](includes/context.md)]
+
 .NET supports automatic conversion from derived types to their base types and back to the derived type, as well as from types that present interfaces to interface objects and back. It also includes a variety of mechanisms that support custom conversions. For more information, see [Type Conversion in .NET](../../standard/base-types/type-conversion.md).
 
 An <xref:System.InvalidCastException> exception is thrown when the conversion of an instance of one type to another type is not supported. For example, attempting to convert a <xref:System.Char> value to a <xref:System.DateTime> value throws an <xref:System.InvalidCastException> exception. It differs from an <xref:System.OverflowException> exception, which is thrown when a conversion of one type to another is supported, but the value of the source type is outside the range of the target type. An <xref:System.InvalidCastException> exception is caused by developer error and should not be handled in a `try/catch` block. Instead, the cause of the exception should be eliminated.

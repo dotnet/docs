@@ -5,6 +5,8 @@ ms.date: 12/31/2023
 ---
 # System.NotImplementedException class
 
+[!INCLUDE [context](includes/context.md)]
+
 The <xref:System.NotImplementedException> exception is thrown when a particular method, get accessor, or set accessor is present as a member of a type but is not implemented.
 
 <xref:System.NotImplementedException> uses the default <xref:System.Object.Equals%2A?displayProperty=nameWithType> implementation, which supports reference equality. For a list of initial values for an instance of <xref:System.NotImplementedException>, see the <xref:System.NotImplementedException.%23ctor%2A> constructors.

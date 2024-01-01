@@ -5,6 +5,8 @@ ms.date: 12/31/2023
 ---
 # System.AccessViolationException class
 
+[!INCLUDE [context](includes/context.md)]
+
 An access violation occurs in unmanaged or unsafe code when the code attempts to read or write to memory that has not been allocated, or to which it does not have access. This usually occurs because a pointer has a bad value. Not all reads or writes through bad pointers lead to access violations, so an access violation usually indicates that several reads or writes have occurred through bad pointers, and that memory might be corrupted. Thus, access violations almost always indicate serious programming errors. An <xref:System.AccessViolationException> clearly identifies these serious errors.
 
 In programs consisting entirely of verifiable managed code, all references are either valid or null, and access violations are impossible. Any operation that attempts to reference a null reference in verifiable code throws a <xref:System.NullReferenceException> exception. An <xref:System.AccessViolationException> occurs only when verifiable managed code interacts with unmanaged code or with unsafe managed code.

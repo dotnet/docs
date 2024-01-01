@@ -5,6 +5,8 @@ ms.date: 12/31/2023
 ---
 # System.TypeInitializationException class
 
+[!INCLUDE [context](includes/context.md)]
+
 When a class initializer fails to initialize a type, a <xref:System.TypeInitializationException> is created and passed a reference to the exception thrown by the type's class initializer. The <xref:System.Exception.InnerException> property of <xref:System.TypeInitializationException> holds the underlying exception.
 
 Typically, the <xref:System.TypeInitializationException> exception reflects a catastrophic condition (the runtime is unable to instantiate a type) that prevents an application from continuing. Most commonly, the <xref:System.TypeInitializationException> is thrown in response to some change in the executing environment of the application. Consequently, other than possibly for troubleshooting debug code, the exception should not be handled in a `try`/`catch` block. Instead, the cause of the exception should be investigated and eliminated.

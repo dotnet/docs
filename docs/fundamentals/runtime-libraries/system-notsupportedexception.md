@@ -5,6 +5,8 @@ ms.date: 12/31/2023
 ---
 # System.NotSupportedException class
 
+[!INCLUDE [context](includes/context.md)]
+
 <xref:System.NotSupportedException> indicates that no implementation exists for an invoked method or property.
 
 <xref:System.NotSupportedException> uses the HRESULT `COR_E_NOTSUPPORTED`, which has the value 0x80131515.

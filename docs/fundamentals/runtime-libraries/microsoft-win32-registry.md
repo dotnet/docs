@@ -5,6 +5,8 @@ ms.date: 12/31/2023
 ---
 # The Microsoft.Win32.Registry class
 
+[!INCLUDE [context](includes/context.md)]
+
 The <xref:Microsoft.Win32.Registry> class provides the set of standard root keys found in the registry on machines running Windows. The registry is a storage facility for information about applications, users, and default system settings. Applications can use the registry for storing information that needs to be preserved after the application is closed, and access that same information when the application is reloaded. For example, you can store color preferences, screen locations, or the size of a window. You can control this data for each user by storing the information in a different location in the registry.
 
 The base, or root, <xref:Microsoft.Win32.RegistryKey> instances that are exposed by the `Registry` class delineate the basic storage mechanism for subkeys and values in the registry. All keys are read-only because the registry depends on their existence. The keys exposed by `Registry` are:

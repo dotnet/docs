@@ -2,17 +2,17 @@
 using System;
 using System.Linq;
 
-public class Example
+public class EnumerableEx5
 {
-   public static void Main()
-   {
-       int[] dbQueryResults = { 1, 2, 3, 4 };
+    public static void Main()
+    {
+        int[] dbQueryResults = { 1, 2, 3, 4 };
 
-       var singleObject = dbQueryResults.Single(value => value > 4);
+        var singleObject = dbQueryResults.Single(value => value > 4);
 
-       // Display results.
-       Console.WriteLine("{0} is the only value greater than 4", singleObject);
-   }
+        // Display results.
+        Console.WriteLine("{0} is the only value greater than 4", singleObject);
+    }
 }
 // The example displays the following output:
 //    Unhandled Exception: System.InvalidOperationException:

@@ -14,7 +14,7 @@ public class Person
    public String LastName { get; set; }
 }
 
-public class Example
+public class ListSortEx4
 {
    public static void Main()
    {

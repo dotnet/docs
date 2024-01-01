@@ -2,21 +2,21 @@
 using System;
 using System.Linq;
 
-public class Example
+public class EnumerableEx6
 {
-   public static void Main()
-   {
-       int[] dbQueryResults = { 1, 2, 3, 4 };
+    public static void Main()
+    {
+        int[] dbQueryResults = { 1, 2, 3, 4 };
 
-       var singleObject = dbQueryResults.SingleOrDefault(value => value > 2);
+        var singleObject = dbQueryResults.SingleOrDefault(value => value > 2);
 
-       if (singleObject != 0)
-           Console.WriteLine("{0} is the only value greater than 2",
-                             singleObject);
-       else
-           // Handle an empty collection.
-           Console.WriteLine("No value is greater than 2");
-   }
+        if (singleObject != 0)
+            Console.WriteLine("{0} is the only value greater than 2",
+                              singleObject);
+        else
+            // Handle an empty collection.
+            Console.WriteLine("No value is greater than 2");
+    }
 }
 // The example displays the following output:
 //    Unhandled Exception: System.InvalidOperationException:

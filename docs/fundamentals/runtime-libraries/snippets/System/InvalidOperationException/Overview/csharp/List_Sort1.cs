@@ -2,30 +2,30 @@
 using System;
 using System.Collections.Generic;
 
-public class Person
+public class Person1
 {
-   public Person(String fName, String lName)
-   {
-      FirstName = fName;
-      LastName = lName;
-   }
+    public Person1(string fName, string lName)
+    {
+        FirstName = fName;
+        LastName = lName;
+    }
 
-   public String FirstName { get; set; }
-   public String LastName { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
 }
 
-public class Example
+public class ListSortEx1
 {
-   public static void Main()
-   {
-      var people = new List<Person>();
+    public static void Main()
+    {
+        var people = new List<Person1>();
 
-      people.Add(new Person("John", "Doe"));
-      people.Add(new Person("Jane", "Doe"));
-      people.Sort();
-      foreach (var person in people)
-         Console.WriteLine("{0} {1}", person.FirstName, person.LastName);
-   }
+        people.Add(new Person1("John", "Doe"));
+        people.Add(new Person1("Jane", "Doe"));
+        people.Sort();
+        foreach (var person in people)
+            Console.WriteLine("{0} {1}", person.FirstName, person.LastName);
+    }
 }
 // The example displays the following output:
 //    Unhandled Exception: System.InvalidOperationException: Failed to compare two elements in the array. --->

@@ -2,18 +2,19 @@
 using System;
 using System.Collections.Generic;
 
-public class Example
+public class IteratingEx1
 {
-   public static void Main()
-   {
-      var numbers = new List<int>() { 1, 2, 3, 4, 5 };
-      foreach (var number in numbers) {
-         int square = (int) Math.Pow(number, 2);
-         Console.WriteLine("{0}^{1}", number, square);
-         Console.WriteLine("Adding {0} to the collection...\n", square);
-         numbers.Add(square);
-      }
-   }
+    public static void Main()
+    {
+        var numbers = new List<int>() { 1, 2, 3, 4, 5 };
+        foreach (var number in numbers)
+        {
+            int square = (int)Math.Pow(number, 2);
+            Console.WriteLine("{0}^{1}", number, square);
+            Console.WriteLine("Adding {0} to the collection...\n", square);
+            numbers.Add(square);
+        }
+    }
 }
 // The example displays the following output:
 //    1^1

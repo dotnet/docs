@@ -2,7 +2,7 @@
 using System;
 using System.Linq;
 
-public class Example
+public class NullableEx1
 {
    public static void Main()
    {

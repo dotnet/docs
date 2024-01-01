@@ -2,17 +2,17 @@
 using System;
 using System.Linq;
 
-public class Example
+public class EnumerableEx3
 {
-   public static void Main()
-   {
-      int[] dbQueryResults = { 1, 2, 3, 4 };
+    public static void Main()
+    {
+        int[] dbQueryResults = { 1, 2, 3, 4 };
 
-      var firstNum = dbQueryResults.First(n => n > 4);
+        var firstNum = dbQueryResults.First(n => n > 4);
 
-      Console.WriteLine("The first value greater than 4 is {0}",
-                        firstNum);
-   }
+        Console.WriteLine("The first value greater than 4 is {0}",
+                          firstNum);
+    }
 }
 // The example displays the following output:
 //    Unhandled Exception: System.InvalidOperationException:

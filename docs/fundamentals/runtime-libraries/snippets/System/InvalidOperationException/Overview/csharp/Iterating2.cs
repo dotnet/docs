@@ -2,24 +2,25 @@
 using System;
 using System.Collections.Generic;
 
-public class Example
+public class IteratingEx2
 {
-   public static void Main()
-   {
-      var numbers = new List<int>() { 1, 2, 3, 4, 5 };
+    public static void Main()
+    {
+        var numbers = new List<int>() { 1, 2, 3, 4, 5 };
 
-      int upperBound = numbers.Count - 1;
-      for (int ctr = 0; ctr <= upperBound; ctr++) {
-         int square = (int) Math.Pow(numbers[ctr], 2);
-         Console.WriteLine("{0}^{1}", numbers[ctr], square);
-         Console.WriteLine("Adding {0} to the collection...\n", square);
-         numbers.Add(square);
-      }
+        int upperBound = numbers.Count - 1;
+        for (int ctr = 0; ctr <= upperBound; ctr++)
+        {
+            int square = (int)Math.Pow(numbers[ctr], 2);
+            Console.WriteLine("{0}^{1}", numbers[ctr], square);
+            Console.WriteLine("Adding {0} to the collection...\n", square);
+            numbers.Add(square);
+        }
 
-      Console.WriteLine("Elements now in the collection: ");
-      foreach (var number in numbers)
-         Console.Write("{0}    ", number);
-   }
+        Console.WriteLine("Elements now in the collection: ");
+        foreach (var number in numbers)
+            Console.Write("{0}    ", number);
+    }
 }
 // The example displays the following output:
 //    1^1

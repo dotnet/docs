@@ -167,7 +167,7 @@ Configures the runtime to pause during startup and wait for the _Diagnostics IPC
 
 ### `DOTNET_EnableDiagnostics`
 
-When set to `0`, disables debugging, profiling, and other diagnostics via the [Diagnostic Port](../diagnostics/diagnostic-port.md) and cannot be overriden by other diagnostics settings. Defaults to 1.
+When set to `0`, disables debugging, profiling, and other diagnostics via the [Diagnostic Port](../diagnostics/diagnostic-port.md) and can't be overridden by other diagnostics settings. Defaults to `1`.
 
 ### `DOTNET_EnableDiagnostics_IPC`
 

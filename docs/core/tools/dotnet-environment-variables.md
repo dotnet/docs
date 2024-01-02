@@ -171,7 +171,7 @@ When set to `0`, disables debugging, profiling, and other diagnostics via the [D
 
 ### `DOTNET_EnableDiagnostics_IPC`
 
-Starting with .NET 8, when set to `0`, disables the [Diagnostic Port](../diagnostics/diagnostic-port.md) and cannot be overriden by other diagnostics settings. Defaults to 1.
+Starting with .NET 8, when set to `0`, disables the [Diagnostic Port](../diagnostics/diagnostic-port.md) and can't be overridden by other diagnostics settings. Defaults to `1`.
 
 ### `DOTNET_EnableDiagnostics_Debugger`
 

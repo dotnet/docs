@@ -179,7 +179,7 @@ Starting with .NET 8, when set to `0`, disables debugging and can't be overridde
 
 ### `DOTNET_EnableDiagnostics_Profiler`
 
-Starting with .NET 8, when set to `0`, disables profiling and cannot be overriden by other diagnostics settings. Defaults to 1.
+Starting with .NET 8, when set to `0`, disables profiling and can't be overridden by other diagnostics settings. Defaults to `1`.
 
 ### EventPipe variables
 

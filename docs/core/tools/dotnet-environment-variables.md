@@ -175,7 +175,7 @@ Starting with .NET 8, when set to `0`, disables the [Diagnostic Port](../diagnos
 
 ### `DOTNET_EnableDiagnostics_Debugger`
 
-Starting with .NET 8, when set to `0`, disables debugging and cannot be overriden by other diagnostics settings. Defaults to 1.
+Starting with .NET 8, when set to `0`, disables debugging and can't be overridden by other diagnostics settings. Defaults to `1`.
 
 ### `DOTNET_EnableDiagnostics_Profiler`
 

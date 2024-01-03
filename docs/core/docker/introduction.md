@@ -15,7 +15,7 @@ Docker provides a great [overview](https://docs.docker.com/engine/docker-overvie
 
 Official .NET container images are published to the [Microsoft Artifact Registry](https://mcr.microsoft.com/) and are discoverable on the [Docker Hub](https://hub.docker.com/_/microsoft-dotnet/). There are [runtime images](https://mcr.microsoft.com/product/dotnet/aspnet/) for production and [SDK images](https://mcr.microsoft.com/product/dotnet/sdk/) for building your code, for Linux (Alpine, Debian, Ubuntu, Mariner) and Windows. For more information, see [.NET container images](container-images.md).
 
-.NET images are regularly updated, whevever a new .NET patch is published or when an operating system base image is updated.
+.NET images are regularly updated whenever a new .NET patch is published or when an operating system base image is updated.
 
 [Chiseled container images](https://devblogs.microsoft.com/dotnet/announcing-dotnet-chiseled-containers/) are Ubuntu container images with a minimal set of components required by the .NET runtime. These images are ~100 MB smaller than the regular Ubuntu images and have fewer [CVEs](https://www.cve.org/) since they have fewer components. In particular, they don't contain a shell or package manager, which significantly improves their security profile. They also include a [non-root user](https://devblogs.microsoft.com/dotnet/securing-containers-with-rootless/) and are configured with that user enabled.
 

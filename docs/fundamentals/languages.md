@@ -7,7 +7,7 @@ ms.date: 02/06/2023
 ms.topic: conceptual
 ---
 
-# Microsoft .NET language strategyasdf 
+# Microsoft .NET language strategy
 
 Microsoft offers 3 languages on the .NET platform – C#, F# and Visual Basic. In this article, you’ll learn about our strategy for each language. Look for links to additional articles on how these strategies guide us and ways to learn more about each language.
 

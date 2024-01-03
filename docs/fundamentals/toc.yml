@@ -289,7 +289,7 @@ items:
     - name: Overview
       href: ../standard/exceptions/index.md
       displayName: exceptions
-    - name: Exception class and properties
+    - name: Exception class
       href: ../standard/exceptions/exception-class-and-properties.md
     - name: How-tos
       items:
@@ -311,6 +311,22 @@ items:
       href: ../standard/exceptions/handling-com-interop-exceptions.md
     - name: Best practices
       href: ../standard/exceptions/best-practices-for-exceptions.md
+    - name: Supplemental API remarks
+      items:
+      - name: System.AccessViolationException class
+        href: runtime-libraries/system-accessviolationexception.md
+      - name: System.Exception class
+        href: runtime-libraries/system-exception.md
+      - name: System.InvalidCastException class
+        href: runtime-libraries/system-invalidcastexception.md
+      - name: System.InvalidOperationException class
+        href: runtime-libraries/system-invalidoperationexception.md
+      - name: System.NotImplementedException class
+        href: runtime-libraries/system-notimplementedexception.md
+      - name: System.NotSupportedException class
+        href: runtime-libraries/system-notsupportedexception.md
+      - name: System.TypeInitializationException class
+        href: runtime-libraries/system-typeinitializationexception.md
   - name: Numeric types
     href: ../standard/numerics.md
   - name: Dates, times, and time zones
@@ -1003,25 +1019,7 @@ items:
     href: ../core/extensions/caching.md
   - name: Channels
     href: ../core/extensions/channels.md
-  - name: Exception types
-    items:
-    - name: Supplemental API remarks
-      items:
-      - name: System.AccessViolationException class
-        href: runtime-libraries/system-accessviolationexception.md
-      - name: System.Exception class
-        href: runtime-libraries/system-exception.md
-      - name: System.InvalidCastException class
-        href: runtime-libraries/system-invalidcastexception.md
-      - name: System.InvalidOperationException class
-        href: runtime-libraries/system-invalidoperationexception.md
-      - name: System.NotImplementedException class
-        href: runtime-libraries/system-notimplementedexception.md
-      - name: System.NotSupportedException class
-        href: runtime-libraries/system-notsupportedexception.md
-      - name: System.TypeInitializationException class
-        href: runtime-libraries/system-typeinitializationexception.md
-  - name: Registry
+  - name: Windows registry
     items:
     - name: Supplemental API remarks
       items:

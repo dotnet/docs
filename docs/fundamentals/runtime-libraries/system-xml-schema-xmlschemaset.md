@@ -44,8 +44,8 @@ The sample uses the following two input files.
 
 **booksSchemaFail.xml:**
 
-:::code language="xml" source="~/snippets/xml/VS_Snippets_Data/XmlReader_Validate_SchemaSet/XML/booksschemafail.xml" id="Snippet2":::
+:::code language="xml" source="./snippets/System.Xml.Schema/XmlSchemaSet/Overview/xml/booksschemafail.xml" id="Snippet2":::
 
 **books.xsd:**
 
-:::code language="xml" source="~/snippets/xml/VS_Snippets_Data/XmlReader_Validate_SchemaSet/XML/books.xsd" id="Snippet3":::
+:::code language="xml" source="./snippets/System.Xml.Schema/XmlSchemaSet/Overview/xml/books.xsd" id="Snippet3":::

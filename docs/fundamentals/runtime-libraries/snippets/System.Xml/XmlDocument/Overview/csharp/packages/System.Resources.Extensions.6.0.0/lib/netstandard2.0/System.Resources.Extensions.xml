@@ -1,0 +1,361 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Resources.Extensions</name>
+    </assembly>
+    <members>
+        <member name="M:System.Resources.Extensions.PreserializedResourceWriter.AddResource(System.String,System.String,System.String)">
+            <summary>
+            Adds a resource of specified type represented by a string value.
+            If the type is a primitive type, the value will be converted using TypeConverter by the writer
+            to that primitive type and stored in the resources in binary format.
+            If the type is not a primitive type, the string value will be stored in the resources as a
+            string and converted with a TypeConverter for the type when reading the resource.
+            This is done to avoid activating arbitrary types during resource writing.
+            </summary>
+            <param name="name">Resource name</param>
+            <param name="value">Value of the resource in string form understood by the type's TypeConverter</param>
+            <param name="typeName">Assembly qualified type name of the resource</param>
+        </member>
+        <member name="M:System.Resources.Extensions.PreserializedResourceWriter.AddTypeConverterResource(System.String,System.Byte[],System.String)">
+            <summary>
+            Adds a resource of specified type represented by a byte[] value which will be
+            passed to the type's TypeConverter when reading the resource.
+            </summary>
+            <param name="name">Resource name</param>
+            <param name="value">Value of the resource in byte[] form understood by the type's TypeConverter</param>
+            <param name="typeName">Assembly qualified type name of the resource</param>
+        </member>
+        <member name="M:System.Resources.Extensions.PreserializedResourceWriter.AddBinaryFormattedResource(System.String,System.Byte[],System.String)">
+            <summary>
+            Adds a resource of specified type represented by a byte[] value which will be
+            passed to BinaryFormatter when reading the resource.
+            </summary>
+            <param name="name">Resource name</param>
+            <param name="value">Value of the resource in byte[] form understood by BinaryFormatter</param>
+            <param name="typeName">Assembly qualified type name of the resource</param>
+        </member>
+        <member name="M:System.Resources.Extensions.PreserializedResourceWriter.AddActivatorResource(System.String,System.IO.Stream,System.String,System.Boolean)">
+            <summary>
+            Adds a resource of specified type represented by a Stream value which will be
+            passed to the type's constructor when reading the resource.
+            </summary>
+            <param name="name">Resource name</param>
+            <param name="value">Value of the resource in Stream form understood by the types constructor</param>
+            <param name="typeName">Assembly qualified type name of the resource</param>
+            <param name="closeAfterWrite">Indicates that the stream should be closed after resources have been written</param>
+        </member>
+        <member name="T:System.Resources.Extensions.TypeNameComparer">
+            <summary>
+            Compares type names as strings, ignoring version.
+            When type names are missing, mscorlib is assumed.
+            This comparer is not meant to capture all scenarios (eg: TypeForwards)
+            but is meant to serve as a best effort, avoiding false positives, in the
+            absense of real type metadata.
+            </summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute">
+            <summary>
+            Indicates that the specified method requires dynamic access to code that is not referenced
+            statically, for example through <see cref="N:System.Reflection"/>.
+            </summary>
+            <remarks>
+            This allows tools to understand which methods are unsafe to call when removing unreferenced
+            code from an application.
+            </remarks>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute"/> class
+            with the specified message.
+            </summary>
+            <param name="message">
+            A message that contains information about the usage of unreferenced code.
+            </param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute.Message">
+            <summary>
+            Gets a message that contains information about the usage of unreferenced code.
+            </summary>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute.Url">
+            <summary>
+            Gets or sets an optional URL that contains more information about the method,
+            why it requries unreferenced code, and what options a consumer has to deal with it.
+            </summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute">
+            <summary>
+            Suppresses reporting of a specific rule violation, allowing multiple suppressions on a
+            single code artifact.
+            </summary>
+            <remarks>
+            <see cref="T:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute"/> is different than
+            <see cref="T:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute"/> in that it doesn't have a
+            <see cref="T:System.Diagnostics.ConditionalAttribute"/>. So it is always preserved in the compiled assembly.
+            </remarks>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute"/>
+            class, specifying the category of the tool and the identifier for an analysis rule.
+            </summary>
+            <param name="category">The category for the attribute.</param>
+            <param name="checkId">The identifier of the analysis rule the attribute applies to.</param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Category">
+            <summary>
+            Gets the category identifying the classification of the attribute.
+            </summary>
+            <remarks>
+            The <see cref="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Category"/> property describes the tool or tool analysis category
+            for which a message suppression attribute applies.
+            </remarks>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.CheckId">
+            <summary>
+            Gets the identifier of the analysis tool rule to be suppressed.
+            </summary>
+            <remarks>
+            Concatenated together, the <see cref="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Category"/> and <see cref="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.CheckId"/>
+            properties form a unique check identifier.
+            </remarks>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Scope">
+            <summary>
+            Gets or sets the scope of the code that is relevant for the attribute.
+            </summary>
+            <remarks>
+            The Scope property is an optional argument that specifies the metadata scope for which
+            the attribute is relevant.
+            </remarks>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Target">
+            <summary>
+            Gets or sets a fully qualified path that represents the target of the attribute.
+            </summary>
+            <remarks>
+            The <see cref="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Target"/> property is an optional argument identifying the analysis target
+            of the attribute. An example value is "System.IO.Stream.ctor():System.Void".
+            Because it is fully qualified, it can be long, particularly for targets such as parameters.
+            The analysis tool user interface should be capable of automatically formatting the parameter.
+            </remarks>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.MessageId">
+            <summary>
+            Gets or sets an optional argument expanding on exclusion criteria.
+            </summary>
+            <remarks>
+            The <see cref="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.MessageId"/> property is an optional argument that specifies additional
+            exclusion where the literal metadata target is not sufficiently precise. For example,
+            the <see cref="T:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute"/> cannot be applied within a method,
+            and it may be desirable to suppress a violation against a statement in the method that will
+            give a rule violation, but not against all statements in the method.
+            </remarks>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Justification">
+            <summary>
+            Gets or sets the justification for suppressing the code analysis message.
+            </summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.AllowNullAttribute">
+            <summary>Specifies that null is allowed as an input even if the corresponding type disallows it.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.DisallowNullAttribute">
+            <summary>Specifies that null is disallowed as an input even if the corresponding type allows it.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.MaybeNullAttribute">
+            <summary>Specifies that an output may be null even if the corresponding type disallows it.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.NotNullAttribute">
+            <summary>Specifies that an output will not be null even if the corresponding type allows it. Specifies that an input argument was not null when the call returns.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute">
+            <summary>Specifies that when a method returns <see cref="P:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.ReturnValue"/>, the parameter may be null even if the corresponding type disallows it.</summary>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.#ctor(System.Boolean)">
+            <summary>Initializes the attribute with the specified return value condition.</summary>
+            <param name="returnValue">
+            The return value condition. If the method returns this value, the associated parameter may be null.
+            </param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.ReturnValue">
+            <summary>Gets the return value condition.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute">
+            <summary>Specifies that when a method returns <see cref="P:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.ReturnValue"/>, the parameter will not be null even if the corresponding type allows it.</summary>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.#ctor(System.Boolean)">
+            <summary>Initializes the attribute with the specified return value condition.</summary>
+            <param name="returnValue">
+            The return value condition. If the method returns this value, the associated parameter will not be null.
+            </param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.ReturnValue">
+            <summary>Gets the return value condition.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute">
+            <summary>Specifies that the output will be non-null if the named parameter is non-null.</summary>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute.#ctor(System.String)">
+            <summary>Initializes the attribute with the associated parameter name.</summary>
+            <param name="parameterName">
+            The associated parameter name.  The output will be non-null if the argument to the parameter specified is non-null.
+            </param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute.ParameterName">
+            <summary>Gets the associated parameter name.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute">
+            <summary>Applied to a method that will never return under any circumstance.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute">
+            <summary>Specifies that the method will not return if the associated Boolean parameter is passed the specified value.</summary>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute.#ctor(System.Boolean)">
+            <summary>Initializes the attribute with the specified parameter value.</summary>
+            <param name="parameterValue">
+            The condition parameter value. Code after the method will be considered unreachable by diagnostics if the argument to
+            the associated parameter matches this value.
+            </param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute.ParameterValue">
+            <summary>Gets the condition parameter value.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute">
+            <summary>Specifies that the method or property will ensure that the listed field and property members have not-null values.</summary>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.#ctor(System.String)">
+            <summary>Initializes the attribute with a field or property member.</summary>
+            <param name="member">
+            The field or property member that is promised to be not-null.
+            </param>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.#ctor(System.String[])">
+            <summary>Initializes the attribute with the list of field and property members.</summary>
+            <param name="members">
+            The list of field and property members that are promised to be not-null.
+            </param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.Members">
+            <summary>Gets field or property member names.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute">
+            <summary>Specifies that the method or property will ensure that the listed field and property members have not-null values when returning with the specified return value condition.</summary>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.#ctor(System.Boolean,System.String)">
+            <summary>Initializes the attribute with the specified return value condition and a field or property member.</summary>
+            <param name="returnValue">
+            The return value condition. If the method returns this value, the associated parameter will not be null.
+            </param>
+            <param name="member">
+            The field or property member that is promised to be not-null.
+            </param>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.#ctor(System.Boolean,System.String[])">
+            <summary>Initializes the attribute with the specified return value condition and list of field and property members.</summary>
+            <param name="returnValue">
+            The return value condition. If the method returns this value, the associated parameter will not be null.
+            </param>
+            <param name="members">
+            The list of field and property members that are promised to be not-null.
+            </param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.ReturnValue">
+            <summary>Gets the return value condition.</summary>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.Members">
+            <summary>Gets field or property member names.</summary>
+        </member>
+        <member name="P:System.SR.ArgumentOutOfRange_StreamLength">
+            <summary>Stream length must be non-negative and less than 2^31 - 1 - origin.</summary>
+        </member>
+        <member name="P:System.SR.Argument_StreamNotReadable">
+            <summary>Stream was not readable</summary>
+        </member>
+        <member name="P:System.SR.Argument_StreamNotWritable">
+            <summary>Stream was not writable.</summary>
+        </member>
+        <member name="P:System.SR.Arg_ResourceFileUnsupportedVersion">
+            <summary>The ResourceReader class does not know how to read this version of .resources files. Expected version: {0}  This file: {1}</summary>
+        </member>
+        <member name="P:System.SR.BadImageFormat_InvalidType">
+            <summary>Corrupt .resources file.  The specified type doesn't exist.</summary>
+        </member>
+        <member name="P:System.SR.BadImageFormat_NegativeStringLength">
+            <summary>Corrupt .resources file. String length must be non-negative.</summary>
+        </member>
+        <member name="P:System.SR.BadImageFormat_ResourceDataLengthInvalid">
+            <summary>Corrupt .resources file.  The specified data length '{0}' is not a valid position in the stream.</summary>
+        </member>
+        <member name="P:System.SR.BadImageFormat_ResourceNameCorrupted">
+            <summary>Corrupt .resources file. A resource name extends past the end of the stream.</summary>
+        </member>
+        <member name="P:System.SR.BadImageFormat_ResourceNameCorrupted_NameIndex">
+            <summary>Corrupt .resources file. The resource name for name index {0} extends past the end of the stream.</summary>
+        </member>
+        <member name="P:System.SR.BadImageFormat_ResourcesDataInvalidOffset">
+            <summary>Corrupt .resources file. Invalid offset '{0}' into data section.</summary>
+        </member>
+        <member name="P:System.SR.BadImageFormat_ResourcesHeaderCorrupted">
+            <summary>Corrupt .resources file. Unable to read resources from this file because of invalid header information. Try regenerating the .resources file.</summary>
+        </member>
+        <member name="P:System.SR.BadImageFormat_ResourcesIndexTooLong">
+            <summary>Corrupt .resources file. String for name index '{0}' extends past the end of the file.</summary>
+        </member>
+        <member name="P:System.SR.BadImageFormat_ResourcesNameInvalidOffset">
+            <summary>Corrupt .resources file. Invalid offset '{0}' into name section.</summary>
+        </member>
+        <member name="P:System.SR.BadImageFormat_ResourcesNameTooLong">
+            <summary>Corrupt .resources file. Resource name extends past the end of the file.</summary>
+        </member>
+        <member name="P:System.SR.BadImageFormat_ResType_SerBlobMismatch">
+            <summary>The type serialized in the .resources file was not the same type that the .resources file said it contained. Expected '{0}' but read '{1}'.</summary>
+        </member>
+        <member name="P:System.SR.BadImageFormat_TypeMismatch">
+            <summary>Corrupt .resources file.  The specified type doesn't match the available data in the stream.</summary>
+        </member>
+        <member name="P:System.SR.Format_Bad7BitInt32">
+            <summary>Too many bytes in what should have been a 7 bit encoded Int32.</summary>
+        </member>
+        <member name="P:System.SR.InvalidOperation_EnumEnded">
+            <summary>Enumeration already finished.</summary>
+        </member>
+        <member name="P:System.SR.InvalidOperation_EnumNotStarted">
+            <summary>Enumeration has not started. Call MoveNext.</summary>
+        </member>
+        <member name="P:System.SR.InvalidOperation_ResourceNotString_Type">
+            <summary>Resource was of type '{0}' instead of String - call GetObject instead.</summary>
+        </member>
+        <member name="P:System.SR.InvalidOperation_ResourceWriterSaved">
+            <summary>The resource writer has already been closed and cannot be edited.</summary>
+        </member>
+        <member name="P:System.SR.NotSupported_BinarySerializedResources">
+            <summary>This platform does not support binary serialized resources.</summary>
+        </member>
+        <member name="P:System.SR.NotSupported_ResourceObjectSerialization">
+            <summary>Cannot read resources that depend on serialization.</summary>
+        </member>
+        <member name="P:System.SR.NotSupported_UnseekableStream">
+            <summary>Stream does not support seeking.</summary>
+        </member>
+        <member name="P:System.SR.NotSupported_WrongResourceReader_Type">
+            <summary>This .resources file should not be read with this reader. The resource reader type is "{0}".</summary>
+        </member>
+        <member name="P:System.SR.ObjectDisposed_ResourceSet">
+            <summary>Cannot access a closed resource set.</summary>
+        </member>
+        <member name="P:System.SR.ResourceManager_ReflectionNotAllowed">
+            <summary>Use of ResourceManager for custom types is disabled. Set the MSBuild Property CustomResourceTypesSupport to true in order to enable it.</summary>
+        </member>
+        <member name="P:System.SR.ResourceReaderIsClosed">
+            <summary>ResourceReader is closed.</summary>
+        </member>
+        <member name="P:System.SR.Resources_StreamNotValid">
+            <summary>Stream is not a valid resource file.</summary>
+        </member>
+        <member name="P:System.SR.TypeLoadException_CannotLoadConverter">
+            <summary>Could not load a converter for type {0}.</summary>
+        </member>
+    </members>
+</doc>

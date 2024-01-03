@@ -128,7 +128,7 @@ The <xref:System.Xml.XmlReader> class provides these methods and properties to r
 |<xref:System.Xml.XmlReader.MoveToFirstAttribute%2A> method|Move to the first attribute in an element.|
 |<xref:System.Xml.XmlReader.MoveToNextAttribute%2A> method|Move to the next attribute in an element.|
 |<xref:System.Xml.XmlReader.MoveToAttribute%2A> method|Move to a specified attribute.|
-|<xref:System.Xml.XmlReader.GetAttribute%2A> method or <xref:System.Xml.XmlReader.Item> property|Get the value of a specified attribute.|
+|<xref:System.Xml.XmlReader.GetAttribute%2A> method or <xref:System.Xml.XmlReader.Item%2A> property|Get the value of a specified attribute.|
 |<xref:System.Xml.XmlReader.IsDefault> property|Check whether the current node is an attribute that was generated from the default value defined in the DTD or schema.|
 |<xref:System.Xml.XmlReader.MoveToElement%2A> method|Move to the element that owns the current attribute. Use this method to return to an element after navigating through its attributes.|
 |<xref:System.Xml.XmlReader.ReadAttributeValue%2A> method|Parse the attribute value into one or more `Text`, `EntityReference`, or `EndEntity` nodes.|
@@ -151,7 +151,7 @@ When the XML reader is positioned on an XML declaration node, the <xref:System.X
 
 **Reading attributes on document type nodes**
 
-When the XML reader is positioned on a document type node, the <xref:System.Xml.XmlReader.GetAttribute%2A> method and <xref:System.Xml.XmlReader.Item> property can be used to return the values for the SYSTEM and PUBLIC literals. For example, calling `reader.GetAttribute("PUBLIC")` returns the PUBLIC value.
+When the XML reader is positioned on a document type node, the <xref:System.Xml.XmlReader.GetAttribute%2A> method and <xref:System.Xml.XmlReader.Item%2A> property can be used to return the values for the SYSTEM and PUBLIC literals. For example, calling `reader.GetAttribute("PUBLIC")` returns the PUBLIC value.
 
 **Reading attributes on processing instruction nodes**
 
@@ -193,11 +193,11 @@ If an element can't easily be converted to a CLR type because of its format, you
 
 **Input (hireDate.xml):**
 
-:::code language="xml" source="~/snippets/xml/VS_Snippets_Data/XmlReader.ReadElementContentAs/XML/hireDate.xml" id="Snippet9":::
+:::code language="xml" source="./snippets/System.Xml/XmlReader/Overview/xml/hireDate.xml" id="Snippet9":::
 
 **Schema (hireDate.xsd):**
 
-:::code language="xml" source="~/snippets/xml/VS_Snippets_Data/XmlReader.ReadElementContentAs/XML/hireDate.xsd" id="Snippet10":::
+:::code language="xml" source="./snippets/System.Xml/XmlReader/Overview/xml/hireDate.xsd" id="Snippet10":::
 
 **Code:**
 

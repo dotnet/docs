@@ -41,9 +41,8 @@ Next, load this data into the DOM so that you can work with it in memory. The mo
 
 This example loads XML from a file. If the file doesn't exist, it just generates some XML and loads that.
 
-[!code-cpp[XMLProcessingApp#1](~/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#1)]
-[!code-csharp[XMLProcessingApp#1](~/snippets/csharp/System.Xml/XmlDocument/Overview/xmlhelpermethods.cs#1)]
-[!code-vb[XMLProcessingApp#1](~/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#1)]
+[!code-csharp[XMLProcessingApp#1](./snippets/System.Xml/XmlDocument/Overview/csharp/xmlhelpermethods.cs#1)]
+[!code-vb[XMLProcessingApp#1](./snippets/System.Xml/XmlDocument/Overview/vb/xmlhelpermethods.vb#1)]
 
 For more information, see [Reading an XML Document into the DOM](../../standard/data/xml/reading-an-xml-document-into-the-dom.md).
 
@@ -81,9 +80,8 @@ Create an <xref:System.Xml.XmlReader> object by using your schema, and then load
 
 These blocks of code show helper methods that do all of this.
 
-[!code-cpp[XMLProcessingApp#2](~/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#2)]
-[!code-csharp[XMLProcessingApp#2](~/snippets/csharp/System.Xml/XmlDocument/Overview/xmlhelpermethods.cs#2)]
-[!code-vb[XMLProcessingApp#2](~/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#2)]
+[!code-csharp[XMLProcessingApp#2](./snippets/System.Xml/XmlDocument/Overview/csharp/xmlhelpermethods.cs#2)]
+[!code-vb[XMLProcessingApp#2](./snippets/System.Xml/XmlDocument/Overview/vb/xmlhelpermethods.vb#2)]
 
 For more information, see [Validating an XML Document in the DOM](../../standard/data/xml/validating-an-xml-document-in-the-dom.md).
 
@@ -97,15 +95,15 @@ The following examples show you how to obtain the root node, jump to the first c
 
 This example gets the root node and then uses that node to output the contents of the document to the console.
 
-[!code-csharp[Classic WebData XmlDocument.DocumentElement Example#1](~/snippets/csharp/System.Xml/XmlDocument/Overview/source.cs#1)]
-[!code-vb[Classic WebData XmlDocument.DocumentElement Example#1](~/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.DocumentElement Example/VB/source.vb#1)]
+[!code-csharp[Classic WebData XmlDocument.DocumentElement Example#1](./snippets/System.Xml/XmlDocument/Overview/csharp/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.DocumentElement Example#1](./snippets/System.Xml/XmlDocument/Overview/vb/sourceelement.vb#1)]
 
 **Get child nodes**
 
 This example jumps to the first child node of the root node and then iterates through the child nodes of that node if any exist.
 
-[!code-csharp[Classic WebData XmlNode.HasChildNodes Example#1](~/snippets/csharp/System.Xml/XmlDocument/Overview/source2.cs#1)]
-[!code-vb[Classic WebData XmlNode.HasChildNodes Example#1](~/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.HasChildNodes Example/VB/source.vb#1)]
+[!code-csharp[Classic WebData XmlNode.HasChildNodes Example#1](./snippets/System.Xml/XmlDocument/Overview/csharp/source2.cs#1)]
+[!code-vb[Classic WebData XmlNode.HasChildNodes Example#1](./snippets/System.Xml/XmlDocument/Overview/vb/source2.vb#1)]
 
 **Get back to the parent node**
 
@@ -115,22 +113,22 @@ Use the <xref:System.Xml.XmlDocument.ParentNode> property.
 
 This example writes the price of a book to the console. The price node is the last child of a book node.
 
-[!code-csharp[Classic WebData XmlNode.LastChild Example#1](~/snippets/csharp/System.Xml/XmlDocument/Overview/source3.cs#1)]
-[!code-vb[Classic WebData XmlNode.LastChild Example#1](~/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.LastChild Example/VB/source.vb#1)]
+[!code-csharp[Classic WebData XmlNode.LastChild Example#1](./snippets/System.Xml/XmlDocument/Overview/csharp/source3.cs#1)]
+[!code-vb[Classic WebData XmlNode.LastChild Example#1](./snippets/System.Xml/XmlDocument/Overview/vb/source-lastchild.vb#1)]
 
 **Navigate forward across siblings**
 
 This example moves forward from book to book. Book nodes are siblings to one another.
 
-[!code-csharp[Classic WebData XmlNode.NextSibling Example#1](~/snippets/csharp/System.Xml/XmlDocument/Overview/source4.cs#1)]
-[!code-vb[Classic WebData XmlNode.NextSibling Example#1](~/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.NextSibling Example/VB/source.vb#1)]
+[!code-csharp[Classic WebData XmlNode.NextSibling Example#1](./snippets/System.Xml/XmlDocument/Overview/csharp/source4.cs#1)]
+[!code-vb[Classic WebData XmlNode.NextSibling Example#1](./snippets/System.Xml/XmlDocument/Overview/vb/source-nextsibling.vb#1)]
 
 **Navigate backwards across siblings**
 
 This example moves backwards from book to book.
 
 [!code-csharp[Classic WebData XmlNode.PreviousSibling Example#1](~/snippets/csharp/System.Xml/XmlLinkedNode/PreviousSibling/source.cs#1)]
-[!code-vb[Classic WebData XmlNode.PreviousSibling Example#1](~/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.PreviousSibling Example/VB/source.vb#1)]
+[!code-vb[Classic WebData XmlNode.PreviousSibling Example#1](./snippets/System.Xml/XmlDocument/Overview/vb/source5.vb#1)]
 
 ## Find nodes
 
@@ -140,9 +138,8 @@ The most popular way to find one or more nodes of data is to use an XPath query 
 
 This example locates a book by using the ISBN number.
 
-[!code-cpp[XMLProcessingApp#3](~/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#3)]
-[!code-csharp[XMLProcessingApp#3](~/snippets/csharp/System.Xml/XmlDocument/Overview/xmlhelpermethods.cs#3)]
-[!code-vb[XMLProcessingApp#3](~/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#3)]
+[!code-csharp[XMLProcessingApp#3](./snippets/System.Xml/XmlDocument/Overview/csharp/xmlhelpermethods.cs#3)]
+[!code-vb[XMLProcessingApp#3](./snippets/System.Xml/XmlDocument/Overview/vb/xmlhelpermethods.vb#3)]
 
 The string used in this example is an Xpath query. You can find more examples of them at [XPath examples](/previous-versions/dotnet/netframework-4.0/ms256086(v=vs.100)).
 
@@ -150,21 +147,20 @@ You can also use the <xref:System.Xml.XmlDocument.GetElementById%2A> to retrieve
 
 After you get a node, you get the value of attributes or child nodes. This example does that with a book node.
 
-[!code-cpp[XMLProcessingApp#4](~/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#4)]
-[!code-csharp[XMLProcessingApp#4](~/snippets/csharp/System.Xml/XmlDocument/Overview/xmlhelpermethods.cs#4)]
-[!code-vb[XMLProcessingApp#4](~/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#4)]
+[!code-csharp[XMLProcessingApp#4](./snippets/System.Xml/XmlDocument/Overview/csharp/xmlhelpermethods.cs#4)]
+[!code-vb[XMLProcessingApp#4](./snippets/System.Xml/XmlDocument/Overview/vb/xmlhelpermethods.vb#4)]
 
 **Get a collection of nodes**
 
 This example selects all books where the author's last name is **Austen**, and then changes the price of those books.
 
-[!code-csharp[Classic WebData XmlNode.SelectNodes Example#1](~/snippets/csharp/System.Xml/XmlDocument/Overview/source6.cs#1)]
-[!code-vb[Classic WebData XmlNode.SelectNodes Example#1](~/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.SelectNodes Example/VB/source.vb#1)]
+[!code-csharp[Classic WebData XmlNode.SelectNodes Example#1](./snippets/System.Xml/XmlDocument/Overview/csharp/source6.cs#1)]
+[!code-vb[Classic WebData XmlNode.SelectNodes Example#1](./snippets/System.Xml/XmlDocument/Overview/vb/source.vb#1)]
 
 You can also get a collection of nodes by using the name of the node. For example, this example gets a collection of all book titles.
 
-[!code-csharp[Classic WebData XmlDocument.GetElementsByTagName Example#1](~/snippets/csharp/System.Xml/XmlDocument/Overview/source1.cs#1)]
-[!code-vb[Classic WebData XmlDocument.GetElementsByTagName Example#1](~/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.GetElementsByTagName Example/VB/source.vb#1)]
+[!code-csharp[Classic WebData XmlDocument.GetElementsByTagName Example#1](./snippets/System.Xml/XmlDocument/Overview/csharp/source1.cs#1)]
+[!code-vb[Classic WebData XmlDocument.GetElementsByTagName Example#1](./snippets/System.Xml/XmlDocument/Overview/vb/source-tag.vb#1)]
 
 For more information, see [Select Nodes Using XPath Navigation](../../standard/data/xml/select-nodes-using-xpath-navigation.md).
 
@@ -172,9 +168,8 @@ For more information, see [Select Nodes Using XPath Navigation](../../standard/d
 
 This example edits a book node and its attributes.
 
-[!code-cpp[XMLProcessingApp#7](~/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#7)]
-[!code-csharp[XMLProcessingApp#7](~/snippets/csharp/System.Xml/XmlDocument/Overview/xmlhelpermethods.cs#7)]
-[!code-vb[XMLProcessingApp#7](~/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#7)]
+[!code-csharp[XMLProcessingApp#7](./snippets/System.Xml/XmlDocument/Overview/csharp/xmlhelpermethods.cs#7)]
+[!code-vb[XMLProcessingApp#7](./snippets/System.Xml/XmlDocument/Overview/vb/xmlhelpermethods.vb#7)]
 
 For more information, see [Modifying Nodes, Content, and Values in an XML Document](../../standard/data/xml/modifying-nodes-content-and-values-in-an-xml-document.md).
 
@@ -188,9 +183,8 @@ For any other type of node such as a comment, whitespace node, or CDATA node, us
 
 This example creates a book node, adds attributes to that node, and then adds that node to the document.
 
-[!code-cpp[XMLProcessingApp#5](~/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#5)]
-[!code-csharp[XMLProcessingApp#5](~/snippets/csharp/System.Xml/XmlDocument/Overview/xmlhelpermethods.cs#5)]
-[!code-vb[XMLProcessingApp#5](~/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#5)]
+[!code-csharp[XMLProcessingApp#5](./snippets/System.Xml/XmlDocument/Overview/csharp/xmlhelpermethods.cs#5)]
+[!code-vb[XMLProcessingApp#5](./snippets/System.Xml/XmlDocument/Overview/vb/xmlhelpermethods.vb#5)]
 
 For more information, see [Inserting Nodes into an XML Document](../../standard/data/xml/inserting-nodes-into-an-xml-document.md).
 
@@ -200,9 +194,8 @@ To remove a node, use the <xref:System.Xml.XmlNode.RemoveChild%2A> method.
 
 This example removes a book from the document and any whitespace that appears just before the book node.
 
-[!code-cpp[XMLProcessingApp#6](~/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#6)]
-[!code-csharp[XMLProcessingApp#6](~/snippets/csharp/System.Xml/XmlDocument/Overview/xmlhelpermethods.cs#6)]
-[!code-vb[XMLProcessingApp#6](~/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#6)]
+[!code-csharp[XMLProcessingApp#6](./snippets/System.Xml/XmlDocument/Overview/csharp/xmlhelpermethods.cs#6)]
+[!code-vb[XMLProcessingApp#6](./snippets/System.Xml/XmlDocument/Overview/vb/xmlhelpermethods.vb#6)]
 
 For more information, see [Removing Nodes, Content, and Values from an XML Document](../../standard/data/xml/removing-nodes-content-and-values-from-an-xml-document.md).
 
@@ -214,6 +207,5 @@ This example shows two helper methods. One of them moves a node higher in a list
 
 These methods could be used in an application that enables users to move books up and down in a list of books. When a user chooses a book and presses an up or down button, your code could call methods like these to position the corresponding book node before or after other book nodes.
 
-[!code-cpp[XMLProcessingApp#8](~/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#8)]
-[!code-csharp[XMLProcessingApp#8](~/snippets/csharp/System.Xml/XmlDocument/Overview/xmlhelpermethods.cs#8)]
-[!code-vb[XMLProcessingApp#8](~/snippets/visualbasic/VS_Snippets_Data/xmlprocessingapp/vb/xmlhelpermethods.vb#8)]
+[!code-csharp[XMLProcessingApp#8](./snippets/System.Xml/XmlDocument/Overview/csharp/xmlhelpermethods.cs#8)]
+[!code-vb[XMLProcessingApp#8](./snippets/System.Xml/XmlDocument/Overview/vb/xmlhelpermethods.vb#8)]

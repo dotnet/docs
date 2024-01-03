@@ -7,21 +7,21 @@ ms.custom: "mvc"
 
 # Introduction to .NET and Docker
 
-Containers are one of the most popular ways for deploying and hosting cloud applications, with tools like [Docker](https://www.docker.com/), [Kubernetes](https://kubernetes.io/), and [Podman](https://podman.io/). Many developers choose containers because it is straightforward to package an app with its required dependencies and then to get that app to reliably run on any container host. There is entensive support for [using .NET with containers](https://devblogs.microsoft.com/dotnet/category/containers/).
+Containers are one of the most popular ways for deploying and hosting cloud applications, with tools like [Docker](https://www.docker.com/), [Kubernetes](https://kubernetes.io/), and [Podman](https://podman.io/). Many developers choose containers because it's straightforward to package an app with its dependencies and get that app to reliably run on any container host. There's extensive support for [using .NET with containers](https://devblogs.microsoft.com/dotnet/category/containers/).
 
 Docker provides a great [overview](https://docs.docker.com/engine/docker-overview/) of containers. [Docker Desktop: Community Edition](https://www.docker.com/products/docker-desktop) is a good tool to use for using containers on developer desktop machine.
 
 ## .NET images
 
-Official .NET Docker images are published to the [Microsoft Artifact Registry](https://mcr.microsoft.com/) and are discoverable on the [Docker Hub](https://hub.docker.com/_/microsoft-dotnet/). There are [runtime images](https://mcr.microsoft.com/product/dotnet/aspnet/) for production and [SDK images](https://mcr.microsoft.com/product/dotnet/sdk/) for building your code, for Linux (Alpine, Debian, Ubuntu) and Windows. For more information, see [.NET container images](container-images.md).
+Official .NET container images are published to the [Microsoft Artifact Registry](https://mcr.microsoft.com/) and are discoverable on the [Docker Hub](https://hub.docker.com/_/microsoft-dotnet/). There are [runtime images](https://mcr.microsoft.com/product/dotnet/aspnet/) for production and [SDK images](https://mcr.microsoft.com/product/dotnet/sdk/) for building your code, for Linux (Alpine, Debian, Ubuntu, Mariner) and Windows. For more information, see [.NET container images](container-images.md).
 
 .NET images are regularly updated, whevever a new .NET patch is published or when an operating system base image is updated.
 
-[Chiseled container images](https://devblogs.microsoft.com/dotnet/announcing-dotnet-chiseled-containers/) are Ubuntu container images with only the few components required by the .NET runtime. These images are ~100MB smaller than the regular Ubuntu images and have fewer [CVEs](https://www.cve.org/) since they have fewer components. In particular, they do not container a shell or package manager, which significantly improves their security profile. They also include a [non-root user](https://devblogs.microsoft.com/dotnet/securing-containers-with-rootless/) and are configured with that user enabled.
+[Chiseled container images](https://devblogs.microsoft.com/dotnet/announcing-dotnet-chiseled-containers/) are Ubuntu container images with a minimal set of components required by the .NET runtime. These images are ~100 MB smaller than the regular Ubuntu images and have fewer [CVEs](https://www.cve.org/) since they have fewer components. In particular, they don't contain a shell or package manager, which significantly improves their security profile. They also include a [non-root user](https://devblogs.microsoft.com/dotnet/securing-containers-with-rootless/) and are configured with that user enabled.
 
 ## Building container images
 
-You can build a container image with a **Dockerfile** or rely on the [.NET SDK to produce an image](https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk/). For samples on building images, see [dotnet/dotnet-docker](https://github.com/dotnet/dotnet-docker/blob/main/samples/README.md) and [dotnet/sdk-container-builds](https://github.com/dotnet/sdk-container-builds).
+You can build a container image with a **Dockerfile** or rely on the [.NET SDK to produce an image](publish-as-container.md). For samples on building images, see [dotnet/dotnet-docker](https://github.com/dotnet/dotnet-docker/blob/main/samples/README.md) and [dotnet/sdk-container-builds](https://github.com/dotnet/sdk-container-builds).
 
 The following example demonstrates building and running a container image in a few quick steps.
 

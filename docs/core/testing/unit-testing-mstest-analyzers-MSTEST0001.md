@@ -27,11 +27,11 @@ dev_langs:
 
 ## Cause
 
-The assembly is not marked with `[Parallelize]` or `[DoNotParallelize]` attribute.
+The assembly is not marked with `[assembly: Parallelize]` or `[assembly: DoNotParallelize]` attribute.
 
 ## Rule description
 
-By default, MSTest runs tests within the same assembly sequentially, which can lead to severe performance limitations. It is recommended to enable assembly attribute `[Parallelize]` to run tests in parallel, or if the assembly is known to not be parallelizable, to use explicitly the assembly level attribute `[DoNotParallelize]`.
+By default, MSTest runs tests within the same assembly sequentially, which can lead to severe performance limitations. It is recommended to enable assembly attribute `[assembly: Parallelize]` to run tests in parallel, or if the assembly is known to not be parallelizable, to use explicitly the assembly level attribute `[assembly: DoNotParallelize]`.
 
 ## How to fix violations
 

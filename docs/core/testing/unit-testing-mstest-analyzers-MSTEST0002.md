@@ -33,9 +33,9 @@ A test class is not following one or multiple points of the required test class 
 
 Test classes (classes marked with the `[TestClass]` attribute) should follow the given layout to be considered valid by MSTest:
 
-- it should be `public` (or `internal` if the `[assembly: DiscoverInternals]` assembly attribute is set)
-- it should not be `static`
-- it should not be generic
+- they should be `public` (or `internal` if the `[assembly: DiscoverInternals]` assembly attribute is set)
+- they should not be `static`
+- they should not be generic
 
 ## How to fix violations
 

@@ -39,7 +39,7 @@ public class TestClass
 {
     [TestMethod]
     [ExpectedException(typeof(InvalidOperationException))] // Violation
-    public void InvalidTestMethod()
+    public void TestMethod()
     {
         // Arrange
         var person = new Person
@@ -52,9 +52,19 @@ public class TestClass
         // Act
         person.GrowOlder();
     }
+}
+```
 
+## How to fix violations
+
+Replace the usage of the `[ExpectedException]` attribute by a call to `Assert.ThrowsException` or `Assert.ThrowsExceptionAsync`.
+
+```csharp
+[TestClass]
+public class TestClass
+{
     [TestMethod]
-    public void ValidTestMethod()
+    public void TestMethod()
     {
         // Arrange
         var person = new Person
@@ -69,10 +79,6 @@ public class TestClass
     }
 }
 ```
-
-## How to fix violations
-
-Replace the usage of the `[ExpectedException]` attribute by a call to `Assert.ThrowsException` or `Assert.ThrowsExceptionAsync`.
 
 ## When to suppress warnings
 

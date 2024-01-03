@@ -4,9 +4,9 @@ description: "Learn about code analysis rule MSTEST0004: Public types should be 
 ms.date: 01/03/2024
 f1_keywords:
 - MSTEST0004
-- TestClassShouldBeValidAnalyzer
+- PublicTypeShouldBeTestClassAnalyzer
 helpviewer_keywords:
-- TestClassShouldBeValidAnalyzer
+- PublicTypeShouldBeTestClassAnalyzer
 - MSTEST0004
 author: evangelink
 ms.author: amauryleve

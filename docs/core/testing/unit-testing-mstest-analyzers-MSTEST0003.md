@@ -33,13 +33,13 @@ A test method is not following single or multiple points of the required test me
 
 Test methods (methods marked with the `[TestMethod]` attribute) should follow the given layout to be considered valid by MSTest:
 
-- it should be `public` (or `internal` if `[assembly: DiscoverInternals]` attribute is set)
-- it should not be `static`
-- it should not be generic
-- it should not be `abstract`
-- it should return `void` or `Task`
-- it should not be `async void`
-- it should not be a special method (constructor, finalizer, operator...)
+- they should be `public` (or `internal` if `[assembly: DiscoverInternals]` attribute is set)
+- they should not be `static`
+- they should not be generic
+- they should not be `abstract`
+- they should return `void` or `Task`
+- they should not be `async void`
+- they should not be a special method (constructor, finalizer, operator...)
 
 ## How to fix violations
 

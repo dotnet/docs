@@ -96,7 +96,7 @@ The following examples show you how to obtain the root node, jump to the first c
 This example gets the root node and then uses that node to output the contents of the document to the console.
 
 [!code-csharp[Classic WebData XmlDocument.DocumentElement Example#1](./snippets/System.Xml/XmlDocument/Overview/csharp/source.cs#1)]
-[!code-vb[Classic WebData XmlDocument.DocumentElement Example#1](./snippets/System.Xml/XmlDocument/Overview/vb/Non-WinForms/sourceelement.vb#1)]
+[!code-vb[Classic WebData XmlDocument.DocumentElement Example#1](./snippets/System.Xml/XmlDocument/Overview/vb/Non-WinForms/source-element.vb#1)]
 
 **Get child nodes**
 
@@ -155,7 +155,7 @@ After you get a node, you get the value of attributes or child nodes. This examp
 This example selects all books where the author's last name is **Austen**, and then changes the price of those books.
 
 [!code-csharp[Classic WebData XmlNode.SelectNodes Example#1](./snippets/System.Xml/XmlDocument/Overview/csharp/source6.cs#1)]
-[!code-vb[Classic WebData XmlNode.SelectNodes Example#1](./snippets/System.Xml/XmlDocument/Overview/vb/Non-WinForms/source.vb#1)]
+[!code-vb[Classic WebData XmlNode.SelectNodes Example#1](./snippets/System.Xml/XmlDocument/Overview/vb/WinForms/source.vb#1)]
 
 You can also get a collection of nodes by using the name of the node. For example, this example gets a collection of all book titles.
 

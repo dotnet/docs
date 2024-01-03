@@ -2,6 +2,9 @@
 title: System.Xml.Linq.XNamespace class
 description: Learn about the System.Xml.Linq.XNamespace class.
 ms.date: 12/31/2023
+dev_langs:
+  - CSharp
+  - VB
 ---
 # System.Xml.Linq.XNamespace class
 

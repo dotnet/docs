@@ -13,15 +13,10 @@ The <xref:System.Xml.XmlWriter> class writes XML data to a stream, file, text re
 The members of the <xref:System.Xml.XmlWriter> class enable you to:
 
 - Verify that the characters are legal XML characters and that element and attribute names are valid XML names.
-
 - Verify that the XML document is well-formed.
-
 - Encode binary bytes as Base64 or BinHex, and write out the resulting text.
-
 - Pass values by using common language runtime types instead of strings, to avoid having to manually perform value conversions.
-
 - Write multiple documents to one output stream.
-
 - Write valid names, qualified names, and name tokens.
 
 ## Create an XML writer

@@ -14,7 +14,7 @@ This article shows how to use `dotnet test` to run all tests in a solution (`.sl
 
 ## `dotnet test` integration
 
-`dotnet test` command is a way to run tests from solutions, projects or already built assemblies. MSTest runner hooks up into this infrastructure to provide a unified way to run tests. Especially when migrating from VSTest to MSTest runner.
+[dotnet test](https://learn.microsoft.com/dotnet/core/tools/dotnet-test) command is a way to run tests from solutions, projects or already built assemblies. [MSTest runner](https://learn.microsoft.com/dotnet/core/testing/unit-testing-mstest-runner-intro) hooks up into this infrastructure to provide a unified way to run tests. Especially when migrating from VSTest to MSTest runner.
 
 ### `dotnet test` integration - VSTest mode
 

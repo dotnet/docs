@@ -12,7 +12,7 @@ The following decision table summarizes whether to use .NET Framework or .NET 8.
 > [!IMPORTANT]
 > Your development machines will run one Docker host, either Linux or Windows. Related microservices that you want to run and test together in one solution will all need to run on the same container platform.
 
-| Architecture / App Type | Linux containers | Windows Containers |
+| Architecture / App type | Linux containers | Windows containers |
 |-------------------------|------------------|--------------------|
 | Microservices on containers | .NET 8 | .NET 8 |
 | Monolithic app | .NET 8 | .NET Framework <br/> .NET 8 |

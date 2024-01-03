@@ -13,11 +13,15 @@ ASP.NET Core 8.0 Preview 7
 
 ## Previous behavior
 
-Previously, the affected `SecurityToken` properties were implemented by <xref:System.IdentityModel.Tokens.Jwt.JwtSecurityToken>, which derives from <xref:System.IdentityModel.Tokens.SecurityToken>, <xref:System.IdentityModel.Tokens.Jwt.JwtSecurityToken> is the previous generation of JSON Web Token (JWT) implementation. The <xref:System.IdentityModel.Tokens.Jwt.JwtSecurityToken> tokens were produced by <xref:Microsoft.AspNetCore.Builder.JwtBearerOptions.SecurityTokenValidators>.
+Previously, the affected `SecurityToken` properties were implemented by <xref:System.IdentityModel.Tokens.Jwt.JwtSecurityToken>, which derives from <xref:System.IdentityModel.Tokens.SecurityToken>. <xref:System.IdentityModel.Tokens.Jwt.JwtSecurityToken> is the previous generation of JSON Web Token (JWT) implementation. The <xref:System.IdentityModel.Tokens.Jwt.JwtSecurityToken> tokens were produced by <xref:Microsoft.AspNetCore.Builder.JwtBearerOptions.SecurityTokenValidators>.
+
+In addition, the <xref:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.DefaultInboundClaimTypeMap?displayProperty=nameWithType> field provided the default claim type mapping for inbound claims.
 
 ## New behavior
 
 Starting in ASP.NET Core 8.0, the <xref:Microsoft.IdentityModel.JsonWebTokens> class, which also derives from <xref:System.IdentityModel.Tokens.SecurityToken>, implements the `SecurityToken` properties, by default. <xref:Microsoft.IdentityModel.JsonWebTokens> tokens are produced by more optimized <xref:Microsoft.IdentityModel.Tokens.TokenHandler> handlers.
+
+In addition, the <xref:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.DefaultInboundClaimTypeMap?displayProperty=nameWithType> field provides the default claim type mapping for inbound claims.
 
 ## Type of breaking change
 

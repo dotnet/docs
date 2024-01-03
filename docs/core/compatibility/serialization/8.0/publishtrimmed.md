@@ -12,7 +12,7 @@ Projects that enable the [PublishTrimmed](../../../deploying/trimming/trimming-o
 Prior to this change, projects that have the `PublishTrimmed` property enabled, that is, `<PublishTrimmed>true</PublishTrimmed>`, published a trimmed application. However, the reflection-based default serialization behavior wasn't necessarily disabled. Depending on what code got trimmed, the follow code might or might not succeed serialization, or might or might not output the correct serialization data.
 
 ```csharp
-JSonSerializer.Serialize(new { Value = 42 });
+JsonSerializer.Serialize(new { Value = 42 });
 ```
 
 ## New behavior

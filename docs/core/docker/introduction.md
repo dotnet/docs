@@ -23,12 +23,12 @@ Official .NET container images are published to the [Microsoft Artifact Registry
 
 You can build a container image with a **Dockerfile** or rely on the [.NET SDK to produce an image](publish-as-container.md). For samples on building images, see [dotnet/dotnet-docker](https://github.com/dotnet/dotnet-docker/blob/main/samples/README.md) and [dotnet/sdk-container-builds](https://github.com/dotnet/sdk-container-builds).
 
-The following example demonstrates building and running a container image in a few quick steps.
+The following example demonstrates building and running a container image in a few quick steps (supported with .NET 8 and .NET 7.0.300).
 
 ```bash
 $ dotnet new webapp -o webapp
 $ cd webapp/
-$ dotnet publish -p:PublishProfile=DefaultContainer
+$ dotnet publish -t:PublishContainer
 MSBuild version 17.8.3+195e7f5a3 for .NET
   Determining projects to restore...
   All projects are up-to-date for restore.
@@ -58,7 +58,7 @@ The `ASPNETCORE_HTTP_PORTS`, `ASPNETCORE_HTTPS_PORTS`, and `ASPNETCORE_URLS` env
 
 ## Users
 
-Starting with .NET 8 images, the `app` user is included. By default, chiseled images are configured with this user enabled. The publish app as .NET container feature (demonstrated in the [Building container images](#building-container-images) section) also configures images with this user enabled by default. In all other scenarios, the `app` user can be set manually, for example with the `USER` *Dockerfile* instruction. If an image has been configured with `app` and commands need to run as `root`, then the `USER` instruction can be used to set to the user to `root`.
+Starting with .NET 8, all images include a non-root user called `app`. By default, chiseled images are configured with this user enabled. The publish app as .NET container feature (demonstrated in the [Building container images](#building-container-images) section) also configures images with this user enabled by default. In all other scenarios, the `app` user can be set manually, for example with the `USER` *Dockerfile* instruction. If an image has been configured with `app` and commands need to run as `root`, then the `USER` instruction can be used to set to the user to `root`.
 
 ## Staying informed
 

@@ -17,7 +17,7 @@ The **RunConfiguration** element can include the following elements. None of the
 
 |Node|Description|Reason / workaround |
 |-|-|-|
-|**MaxCpuCount**|This setting controls the level of parallelism on process-level. Use 0 to enable the maximum process-level parallelism.| When MSTest runner is used with MSBuild, this option is [offloaded to MSBuild]. When a single executable is run, this option has no meaning for MSTest runner.
+|**MaxCpuCount**|This setting controls the level of parallelism on process-level. Use 0 to enable the maximum process-level parallelism.| When MSTest runner is used with MSBuild, this option is [offloaded to MSBuild](https://learn.microsoft.com/visualstudio/msbuild/building-multiple-projects-in-parallel-with-msbuild). When a single executable is run, this option has no meaning for MSTest runner.
 |**ResultsDirectory**|The directory where test results are placed. The path is relative to the directory that contains .runsettings file.| Use the commandline option `--results-directory` to determine the directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is TestResults in the directory that contains the test application.
 |**TargetFrameworkVersion**| This setting defines the framework version, or framework family to use to run tests.| This option is ignored. The `<TargetFramework>` or `<TargetFrameworks>` MSBuild property determines the target framework of the application. The tests are hosted in the final application.
 |**TargetPlatform**|This setting defines the architecture to use to run tests. | `<RuntimeIdentifier>` determines the architecture of the final application that hosts the tests.

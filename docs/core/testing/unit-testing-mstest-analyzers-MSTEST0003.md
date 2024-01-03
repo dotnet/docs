@@ -27,7 +27,7 @@ dev_langs:
 
 ## Cause
 
-A test method is not following one or multiple points of the required test method layout.
+A test method is not following single or multiple points of the required test method layout.
 
 ## Rule description
 
@@ -37,9 +37,9 @@ Test methods (methods marked with the `[TestMethod]` attribute) should follow th
 - it should not be `static`
 - it should not be generic
 - it should not be `abstract`
-- its return type should be `void` or `Task`
+- it should return `void` or `Task`
 - it should not be `async void`
-- it should not be a special method (finalizer, operator...)
+- it should not be a special method (constructor, finalizer, operator...)
 
 ## How to fix violations
 
@@ -47,4 +47,4 @@ Ensure that the test method matches the required layout described above.
 
 ## When to suppress warnings
 
-Do not suppress a warning from this rule. Ignoring this rule will result in tests being ignore as MSTest will not consider this test method.
+Do not suppress a warning from this rule. Ignoring this rule will result in tests being ignored, because MSTest will not consider this method to be a test method.

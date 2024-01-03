@@ -27,7 +27,7 @@ dev_langs:
 
 ## Cause
 
-A test context property is not following one or multiple points of the required test context layout.
+A test context property is not following single or multiple points of the required test context layout.
 
 ## Rule description
 

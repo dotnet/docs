@@ -31,7 +31,7 @@ A method is marked with the `[ExpectedException]` attribute.
 
 ## Rule description
 
-Prefer `Assert.ThrowsException` or `Assert.ThrowsExceptionAsync` over the `[ExpectedException]` attribute as it ensures that only the expected call throws the expected exception. The assert APIs also provide more flexibility and allow you to assert extra properties of the exception.
+Prefer `Assert.ThrowsException` or `Assert.ThrowsExceptionAsync` over the `[ExpectedException]` attribute as it ensures that only the expected line of code throws the expected exception, instead of acting on the whole body of the test. The assert APIs also provide more flexibility and allow you to assert extra properties of the exception.
 
 ```csharp
 [TestClass]

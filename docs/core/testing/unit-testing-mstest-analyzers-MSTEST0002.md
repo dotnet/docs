@@ -43,4 +43,4 @@ Ensure that the class matches the required layout described above.
 
 ## When to suppress warnings
 
-Do not suppress a warning from this rule. Ignoring this rule will result in tests being ignore as MSTest will not consider this test class.
+Do not suppress a warning from this rule. Ignoring this rule will result in tests being ignored, because MSTest will not consider this class to be a test class.

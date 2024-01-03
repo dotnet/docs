@@ -31,7 +31,7 @@ A public type is not a test class (class marked with the `[TestClass]` attribute
 
 ## Rule description
 
-It's considered a good practice to have only test classes marked `public` in a test project.
+It's considered a good practice to keep all helper and base classes `internal` and have only test classes marked `public` in a test project.
 
 ## How to fix violations
 

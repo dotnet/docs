@@ -21,9 +21,8 @@ namespace SerializeToFileAsync
             };
 
             string fileName = "WeatherForecast.json";
-            using FileStream createStream = File.Create(fileName);
+            await using FileStream createStream = File.Create(fileName);
             await JsonSerializer.SerializeAsync(createStream, weatherForecast);
-            await createStream.DisposeAsync();
 
             Console.WriteLine(File.ReadAllText(fileName));
         }

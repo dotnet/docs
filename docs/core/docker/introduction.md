@@ -58,7 +58,7 @@ The `ASPNETCORE_HTTP_PORTS`, `ASPNETCORE_HTTPS_PORTS`, and `ASPNETCORE_URLS` env
 
 ## Users
 
-All .NET 8+ images include the `app` user. Chiseled images are configured to use this user. The SDK container builds feature (demonstrated above) also configures images to use this user. In all other scenarios, this user can be set manually, for example with the `USER` **Dockerfile** instruction. If an image has been configured with `app` and commands need to run as `root`, the then `USER` instruction can be used to set to the user to `root`.
+Starting with .NET 8 images, the `app` user is included. By default, chiseled images are configured with this user enabled. The publish app as .NET container feature (demonstrated in the [Building container images](#building-container-images) section) also configures images with this user enabled by default. In all other scenarios, the `app` user can be set manually, for example with the `USER` *Dockerfile* instruction. If an image has been configured with `app` and commands need to run as `root`, then the `USER` instruction can be used to set to the user to `root`.
 
 ## Staying informed
 

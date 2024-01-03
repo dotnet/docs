@@ -127,7 +127,7 @@ This example moves forward from book to book. Book nodes are siblings to one ano
 
 This example moves backwards from book to book.
 
-[!code-csharp[Classic WebData XmlNode.PreviousSibling Example#1](~/snippets/csharp/System.Xml/XmlLinkedNode/PreviousSibling/source.cs#1)]
+[!code-csharp[Classic WebData XmlNode.PreviousSibling Example#1](./snippets/System.Xml/XmlLinkedNode/csharp/PreviousSibling/source.cs#1)]
 [!code-vb[Classic WebData XmlNode.PreviousSibling Example#1](./snippets/System.Xml/XmlDocument/Overview/vb/Non-WinForms/source5.vb#1)]
 
 ## Find nodes

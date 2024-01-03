@@ -18,7 +18,7 @@ This article shows how to use `dotnet test` to run all tests in a solution (`.sl
 
 ### `dotnet test` integration - VSTest mode
 
-MSTest runner provides a compatibility layer to work with `dotnet test` seamlessly. This layer requires `Microsoft.Testing.Platform.MSBuild` NuGet package. This package is automatically installed as a dependency of `MSTest` and `MSTest.TestAdapter` package.
+MSTest runner provides a compatibility layer to work with `dotnet test` seamlessly. This layer requires [Microsoft.Testing.Platform.MSBuild](https://nuget.org/packages/Microsoft.Testing.Platform.MSBuild) NuGet package. This package is automatically installed as a dependency of [MSTest](https://nuget.org/packages/MSTest) and [MSTest.TestAdapter](https://nuget.org/packages/MSTest.TestAdapter) package.
 
 Tests can be run by running:
 

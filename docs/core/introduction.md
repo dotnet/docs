@@ -66,15 +66,9 @@ NuGet is the package manager for .NET. It contains hundreds of thousands of pack
 
 ## Support
 
-[Microsoft supports .NET](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) on Android, Apple, Linux, and Windows operating systems. It can be used on Arm64, x64, and x86 architectures. It's also supported in emulated environments, like [macOS Rosetta 2](https://support.apple.com/HT211861).
+.NET is [supported by multiple organizations](https://github.com/dotnet/core/blob/main/support.md) that work to ensure .NET is supported on [multiple operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md), and kept up to date. It can be used on Arm64, x64, and x86 architectures.
 
-New versions of .NET are released annually in November. .NET releases in odd-numbered years are Long-Term Support (LTS) releases and are supported for three years. Releases in even-numbered years are Standard-Term Support (STS) releases and are supported for 18 months. The quality level, breaking change policies, and all other aspects of the releases are the same. For more information, see [Releases and support](releases-and-support.md).
-
-The .NET Team at Microsoft works collaboratively with other organizations to distribute and support .NET in various ways.
-
-[Red Hat supports .NET](https://developers.redhat.com/topics/dotnet/) on Red Hat Enterprise Linux (RHEL).
-
-[Samsung supports .NET](https://developer.tizen.org/development/training/.net-application) on Tizen platforms.
+New versions of .NET are released annually in November, per our [releases and support policies](releases-and-support.md). It is [updated monthly](https://github.com/dotnet/announcements/labels/Monthly-Update) on Patch Tuesday (second Tuesday), typically at 10AM Pacific time.
 
 ## .NET ecosystem
 

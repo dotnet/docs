@@ -68,8 +68,8 @@ The limited precision of a floating-point number has several consequences:
 - <xref:System.Single> values have less precision than <xref:System.Double> values. A <xref:System.Single> value that is converted to a seemingly equivalent <xref:System.Double> often does not equal the <xref:System.Double> value because of differences in precision. In the following example, the result of identical division operations is assigned to a <xref:System.Double> value and a <xref:System.Single> value. After the <xref:System.Single> value is cast to a <xref:System.Double>, a comparison of the two values shows that they are unequal.
 
      :::code language="csharp" source="./snippets/System/Double/Overview/csharp/precisionlist1.cs" interactive="try-dotnet" id="Snippet5":::
-     :::code language="fsharp" source="~/snippets/fsharp/System/Double/Overview/precisionlist1.fs" id="Snippet5":::
-     :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.double.structure/vb/precisionlist1.vb" id="Snippet5":::
+     :::code language="fsharp" source="./snippets/System/Double/Overview/fsharp/precisionlist1.fs" id="Snippet5":::
+     :::code language="vb" source="./snippets/System/Double/Overview/vb/precisionlist1.vb" id="Snippet5":::
 
      To avoid this problem, either use the <xref:System.Double> data type in place of the <xref:System.Single> data type, or use the <xref:System.Math.Round%2A> method so that both values have the same precision.
 

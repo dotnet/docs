@@ -7,14 +7,14 @@ ms.date: 12/31/2023
 
 [!INCLUDE [context](includes/context.md)]
 
-Languages typically don't require a class to declare inheritance from <xref:System.Object> because the inheritance is implicit.
-
 Because all classes in .NET are derived from <xref:System.Object>, every method defined in the <xref:System.Object> class is available in all objects in the system. Derived classes can and do override some of these methods, including:
 
 - <xref:System.Object.Equals%2A>: Supports comparisons between objects.
 - <xref:System.Object.Finalize%2A>: Performs cleanup operations before an object is automatically reclaimed.
 - <xref:System.Object.GetHashCode%2A>: Generates a number corresponding to the value of the object to support the use of a hash table.
 - <xref:System.Object.ToString%2A>: Manufactures a human-readable text string that describes an instance of the class.
+
+Languages typically don't require a class to declare inheritance from <xref:System.Object> because the inheritance is implicit.
 
 ## Performance considerations
 

@@ -45,8 +45,8 @@ When it wraps an array, `Span<T>` can wrap an entire array, as it did in the exa
 
 The following example creates a slice of the middle five elements of a 10-element integer array. Note that the code doubles the values of each integer in the slice. As the output shows, the changes made by the span are reflected in the values of the array.
 
-:::code language="csharp" source="./snippets/System/Span/Slice/csharp/Program.cs":::
-:::code language="fsharp" source="~/snippets/fsharp/System/Span/Slice/Program.fs":::
+:::code language="csharp" source="./snippets/System/Span/Overview/csharp/Program.cs":::
+:::code language="fsharp" source="./snippets/System/Span/Overview/fsharp/Program.fs":::
 
 ## Slices
 
@@ -57,5 +57,5 @@ The following example creates a slice of the middle five elements of a 10-elemen
 
 This allocation and copy operation can be eliminated by using either `Span<T>` or <xref:System.ReadOnlySpan%601>, as the following example shows:
 
-:::code language="csharp" source="./snippets/System/Span/Slice/csharp/Program2.cs":::
-:::code language="fsharp" source="~/snippets/fsharp/System/Span/Slice/Program2.fs":::
+:::code language="csharp" source="./snippets/System/Span/Overview/csharp/Program2.cs":::
+:::code language="fsharp" source="./snippets/System/Span/Overview/fsharp/Program2.fs":::

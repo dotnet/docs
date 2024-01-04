@@ -40,13 +40,13 @@ The following example illustrates the use of the <xref:System.AppContext> class 
 
 :::code language="csharp" source="./snippets/System/AppContext/Overview/csharp/Example4.cs" id="Snippet4":::
 :::code language="fsharp" source="./snippets/VS_Snippets_CLR_System/System.AppContext.Class/fs/fsharp/Example4.fs" id="Snippet4":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/System.AppContext.Class/vb/Example4.vb" id="Snippet4":::
+:::code language="vb" source="./snippets/System/AppContext/Overview/vb/Example4.vb" id="Snippet4":::
 
 The following example then uses the library to find the starting index of the substring "archæ" in "The archaeologist". Because the method performs an ordinal comparison, the substring cannot be found.
 
 :::code language="csharp" source="./snippets/System/AppContext/Overview/csharp/Example4.cs" id="Snippet5":::
 :::code language="fsharp" source="./snippets/VS_Snippets_CLR_System/System.AppContext.Class/fs/fsharp/Example4.fs" id="Snippet5":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/System.AppContext.Class/vb/Example4.vb" id="Snippet5":::
+:::code language="vb" source="./snippets/System/AppContext/Overview/vb/Example4.vb" id="Snippet5":::
 
 Version 2.0 of the library, however, changes the `SubstringStartsAt` method to use culture-sensitive comparison.
 

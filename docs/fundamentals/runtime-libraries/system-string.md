@@ -23,31 +23,31 @@ You can instantiate a <xref:System.String> object in the following ways:
 
      :::code language="csharp" source="./snippets/System/String/Overview/csharp/program.cs" interactive="try-dotnet-method" id="Snippet1":::
      :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/program.fs" id="Snippet1":::
-     :::code language="vb" source="./snippets/System/StringOverview/vb/instantiate1.vb" id="Snippet1":::
+     :::code language="vb" source="./snippets/System/String/Overview/vb/instantiate1.vb" id="Snippet1":::
 
 - By calling a <xref:System.String> class constructor. The following example instantiates strings by calling several class constructors. Note that some of the constructors include pointers to character arrays or signed byte arrays as parameters. Visual Basic does not support calls to these constructors. For detailed information about <xref:System.String> constructors, see the <xref:System.String.%23ctor%2A> constructor summary.
 
      :::code language="csharp" source="./snippets/System/String/Overview/csharp/program.cs" id="Snippet2":::
      :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/program.fs" id="Snippet2":::
-     :::code language="vb" source="./snippets/System/StringOverview/vb/instantiate1.vb" id="Snippet2":::
+     :::code language="vb" source="./snippets/System/String/Overview/vb/instantiate1.vb" id="Snippet2":::
 
 - By using the string concatenation operator (+ in C# and F#, and & or + in Visual Basic) to create a single string from any combination of <xref:System.String> instances and string literals. The following example illustrates the use of the string concatenation operator.
 
      :::code language="csharp" source="./snippets/System/String/Overview/csharp/program.cs" interactive="try-dotnet-method" id="Snippet3":::
      :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/program.fs" id="Snippet3":::
-     :::code language="vb" source="./snippets/System/StringOverview/vb/instantiate1.vb" id="Snippet3":::
+     :::code language="vb" source="./snippets/System/String/Overview/vb/instantiate1.vb" id="Snippet3":::
 
 - By retrieving a property or calling a method that returns a string. The following example uses the methods of the <xref:System.String> class to extract a substring from a larger string.
 
      :::code language="csharp" source="./snippets/System/String/Overview/csharp/program.cs" interactive="try-dotnet-method" id="Snippet4":::
      :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/program.fs" id="Snippet4":::
-     :::code language="vb" source="./snippets/System/StringOverview/vb/instantiate1.vb" id="Snippet4":::
+     :::code language="vb" source="./snippets/System/String/Overview/vb/instantiate1.vb" id="Snippet4":::
 
 - By calling a formatting method to convert a value or object to its string representation. The following example uses the [composite formatting](../../standard/base-types/composite-formatting.md) feature to embed the string representation of two objects into a string.
 
      :::code language="csharp" source="./snippets/System/String/Overview/csharp/program.cs" id="Snippet5":::
      :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/program.fs" id="Snippet5":::
-     :::code language="vb" source="./snippets/System/StringOverview/vb/instantiate1.vb" id="Snippet5":::
+     :::code language="vb" source="./snippets/System/String/Overview/vb/instantiate1.vb" id="Snippet5":::
 
 ## Char objects and Unicode characters
 
@@ -62,13 +62,13 @@ A single <xref:System.Char> object usually represents a single code point; that 
 
      :::code language="csharp" source="./snippets/System/String/Overview/csharp/grapheme1.cs" id="Snippet2":::
      :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/grapheme1.fs" id="Snippet2":::
-     :::code language="vb" source="./snippets/System/StringOverview/vb/grapheme1.vb" id="Snippet2":::
+     :::code language="vb" source="./snippets/System/String/Overview/vb/grapheme1.vb" id="Snippet2":::
 
 - A Unicode supplementary code point (a surrogate pair) is represented by a <xref:System.Char> object whose code point is a high surrogate followed by a <xref:System.Char> object whose code point is a low surrogate. The code units of high surrogates range from U+D800 to U+DBFF. The code units of low surrogates range from U+DC00 to U+DFFF. Surrogate pairs are used to represent characters in the 16 Unicode supplementary planes. The following example creates a surrogate character and passes it to the <xref:System.Char.IsSurrogatePair(System.Char%2CSystem.Char)?displayProperty=nameWithType> method to determine whether it is a surrogate pair.
 
      :::code language="csharp" source="./snippets/System/String/Overview/csharp/surrogate1.cs" interactive="try-dotnet-method" id="Snippet3":::
      :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/surrogate1.fs" id="Snippet3":::
-     :::code language="vb" source="./snippets/System/StringOverview/vb/surrogate1.vb" id="Snippet3":::
+     :::code language="vb" source="./snippets/System/String/Overview/vb/surrogate1.vb" id="Snippet3":::
 
 ## The Unicode standard
 
@@ -106,23 +106,23 @@ Embedded null characters in a string are also treated differently when a string 
 
 An index is the position of a <xref:System.Char> object (not a Unicode character) in a <xref:System.String>. An index is a zero-based, nonnegative number that starts from the first position in the string, which is index position zero. A number of search methods, such as <xref:System.String.IndexOf%2A> and <xref:System.String.LastIndexOf%2A>, return the index of a character or substring in the string instance.
 
-The <xref:System.String.Chars> property lets you access individual <xref:System.Char> objects by their index position in the string. Because the <xref:System.String.Chars> property is the default property (in Visual Basic) or the indexer (in C# and F#), you can access the individual <xref:System.Char> objects in a string by using code such as the following. This code looks for white space or punctuation characters in a string to determine how many words the string contains.
+The <xref:System.String.Chars%2A> property lets you access individual <xref:System.Char> objects by their index position in the string. Because the <xref:System.String.Chars%2A> property is the default property (in Visual Basic) or the indexer (in C# and F#), you can access the individual <xref:System.Char> objects in a string by using code such as the following. This code looks for white space or punctuation characters in a string to determine how many words the string contains.
 
 :::code language="csharp" source="./snippets/System/String/Overview/csharp/index11.cs" interactive="try-dotnet-method" id="Snippet4":::
 :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/index11.fs" id="Snippet4":::
-:::code language="vb" source="./snippets/System/StringOverview/vb/index1.vb" id="Snippet4":::
+:::code language="vb" source="./snippets/System/String/Overview/vb/index1.vb" id="Snippet4":::
 
 Because the <xref:System.String> class implements the <xref:System.Collections.IEnumerable> interface, you can also iterate through the <xref:System.Char> objects in a string by using a `foreach` construct, as the following example shows.
 
 :::code language="csharp" source="./snippets/System/String/Overview/csharp/index2.cs" interactive="try-dotnet-method" id="Snippet5":::
 :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/index2.fs" id="Snippet5":::
-:::code language="vb" source="./snippets/System/StringOverview/vb/index2.vb" id="Snippet5":::
+:::code language="vb" source="./snippets/System/String/Overview/vb/index2.vb" id="Snippet5":::
 
 Consecutive index values might not correspond to consecutive Unicode characters, because a Unicode character might be encoded as more than one <xref:System.Char> object. In particular, a string may contain multi-character units of text that are formed by a base character followed by one or more combining characters or by surrogate pairs. To work with Unicode characters instead of <xref:System.Char> objects, use the <xref:System.Globalization.StringInfo?displayProperty=nameWithType> and <xref:System.Globalization.TextElementEnumerator> classes, or the <xref:System.String.EnumerateRunes%2A?displayProperty=nameWithType> method and the <xref:System.Text.Rune> struct. The following example illustrates the difference between code that works with <xref:System.Char> objects and code that works with Unicode characters. It compares the number of characters or text elements in each word of a sentence. The string includes two sequences of a base character followed by a combining character.
 
 :::code language="csharp" source="./snippets/System/String/Overview/csharp/index3.cs" interactive="try-dotnet-method" id="Snippet6":::
 :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/index3.fs" id="Snippet6":::
-:::code language="vb" source="./snippets/System/StringOverview/vb/index3.vb" id="Snippet6":::
+:::code language="vb" source="./snippets/System/String/Overview/vb/index3.vb" id="Snippet6":::
 
 This example works with text elements by using the <xref:System.Globalization.StringInfo.GetTextElementEnumerator%2A?displayProperty=nameWithType> method and the <xref:System.Globalization.TextElementEnumerator> class to enumerate all the text elements in a string. You can also retrieve an array that contains the starting index of each text element by calling the <xref:System.Globalization.StringInfo.ParseCombiningCharacters%2A?displayProperty=nameWithType> method.
 
@@ -138,19 +138,19 @@ The <xref:System.String> class includes the following two convenience methods th
 
      :::code language="csharp" source="./snippets/System/String/Overview/csharp/nullorempty1.cs" id="Snippet1":::
      :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/nullorempty1.fs" id="Snippet1":::
-     :::code language="vb" source="./snippets/System/StringOverview/vb/nullorempty1.vb" id="Snippet1":::
+     :::code language="vb" source="./snippets/System/String/Overview/vb/nullorempty1.vb" id="Snippet1":::
 
 - <xref:System.String.IsNullOrWhiteSpace%2A>, which indicates whether a string is `null`, equals <xref:System.String.Empty?displayProperty=nameWithType>, or consists exclusively of white-space characters. This method eliminates the need to use code such as the following:
 
      :::code language="csharp" source="./snippets/System/String/Overview/csharp/nullorempty1.cs" id="Snippet2":::
      :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/nullorempty1.fs" id="Snippet2":::
-     :::code language="vb" source="./snippets/System/StringOverview/vb/nullorempty1.vb" id="Snippet2":::
+     :::code language="vb" source="./snippets/System/String/Overview/vb/nullorempty1.vb" id="Snippet2":::
 
 The following example uses the <xref:System.String.IsNullOrEmpty%2A> method in the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation of a custom `Temperature` class. The method supports the "G", "C", "F", and "K" format strings. If an empty format string or a format string whose value is `null` is passed to the method, its value is changed to the "G" format string.
 
 :::code language="csharp" source="./snippets/System/String/Overview/csharp/nullorempty1.cs" id="Snippet3":::
 :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/nullorempty1.fs" id="Snippet3":::
-:::code language="vb" source="./snippets/System/StringOverview/vb/nullorempty1.vb" id="Snippet3":::
+:::code language="vb" source="./snippets/System/String/Overview/vb/nullorempty1.vb" id="Snippet3":::
 
 ## Immutability and the StringBuilder class
 
@@ -266,7 +266,7 @@ Sort rules determine the alphabetic order of Unicode characters and how two stri
 
 - An ordinal sort compares strings based on the numeric value of each <xref:System.Char> object in the string. An ordinal comparison is automatically case-sensitive because the lowercase and uppercase versions of a character have different code points. However, if case is not important, you can specify an ordinal comparison that ignores case. This is equivalent to converting the string to uppercase by using the invariant culture and then performing an ordinal comparison on the result. For a list of the <xref:System.String> methods that compare two strings using ordinal sort rules, see the [String operations by category](#string-operations-by-category) section.
 
-A culture-sensitive comparison is any comparison that explicitly or implicitly uses a <xref:System.Globalization.CultureInfo> object, including the invariant culture that is specified by the <xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType> property. The implicit culture is the current culture, which is specified by the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> and <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> properties. There is considerable variation in the sort order of alphabetic characters (that is, characters for which the <xref:System.Char.IsLetter?displayProperty=nameWithType> property returns `true`) across cultures. You can specify a culture-sensitive comparison that uses the conventions of a specific culture by supplying a <xref:System.Globalization.CultureInfo> object to a string comparison method such as <xref:System.String.Compare(System.String%2CSystem.String%2CSystem.Globalization.CultureInfo%2CSystem.Globalization.CompareOptions)>. You can specify a culture-sensitive comparison that uses the conventions of the current culture by supplying <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType>, <xref:System.StringComparison.CurrentCultureIgnoreCase?displayProperty=nameWithType>, or any member of the <xref:System.Globalization.CompareOptions> enumeration other than <xref:System.Globalization.CompareOptions.Ordinal?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions.OrdinalIgnoreCase?displayProperty=nameWithType> to an appropriate overload of the <xref:System.String.Compare%2A> method. A culture-sensitive comparison is generally appropriate for sorting whereas an ordinal comparison is not. An ordinal comparison is generally appropriate for determining whether two strings are equal (that is, for determining identity) whereas a culture-sensitive comparison is not.
+A culture-sensitive comparison is any comparison that explicitly or implicitly uses a <xref:System.Globalization.CultureInfo> object, including the invariant culture that is specified by the <xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType> property. The implicit culture is the current culture, which is specified by the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> and <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> properties. There is considerable variation in the sort order of alphabetic characters (that is, characters for which the <xref:System.Char.IsLetter%2A?displayProperty=nameWithType> property returns `true`) across cultures. You can specify a culture-sensitive comparison that uses the conventions of a specific culture by supplying a <xref:System.Globalization.CultureInfo> object to a string comparison method such as <xref:System.String.Compare(System.String%2CSystem.String%2CSystem.Globalization.CultureInfo%2CSystem.Globalization.CompareOptions)>. You can specify a culture-sensitive comparison that uses the conventions of the current culture by supplying <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType>, <xref:System.StringComparison.CurrentCultureIgnoreCase?displayProperty=nameWithType>, or any member of the <xref:System.Globalization.CompareOptions> enumeration other than <xref:System.Globalization.CompareOptions.Ordinal?displayProperty=nameWithType> or <xref:System.Globalization.CompareOptions.OrdinalIgnoreCase?displayProperty=nameWithType> to an appropriate overload of the <xref:System.String.Compare%2A> method. A culture-sensitive comparison is generally appropriate for sorting whereas an ordinal comparison is not. An ordinal comparison is generally appropriate for determining whether two strings are equal (that is, for determining identity) whereas a culture-sensitive comparison is not.
 
 The following example illustrates the difference between culture-sensitive and ordinal comparison. The example evaluates three strings, "Apple", "Æble", and "AEble", using ordinal comparison and the conventions of the da-DK and en-US cultures (each of which is the default culture at the time the <xref:System.String.Compare%2A> method is called). Because the Danish language treats the character "Æ" as an individual letter and sorts it after "Z" in the alphabet, the string "Æble" is greater than "Apple". However, "Æble" is not considered equivalent to "AEble", so "Æble" is also greater than "AEble". The en-US culture doesn't include the letter"Æ" but treats it as equivalent to "AE", which explains why  "Æble" is less than "Apple" but equal to "AEble". Ordinal comparison, on the other hand, considers "Apple" to be less than "Æble", and "Æble" to be greater than "AEble".
 

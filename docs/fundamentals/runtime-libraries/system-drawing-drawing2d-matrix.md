@@ -12,7 +12,7 @@ dev_langs:
 
 In GDI+, you can store an affine transformation in a <xref:System.Drawing.Drawing2D.Matrix> object. Because the third column of a matrix that represents an affine transformation is always (0, 0, 1), you specify only the six numbers in the first two columns when you construct a <xref:System.Drawing.Drawing2D.Matrix> object. The statement `Matrix myMatrix = new Matrix(0, 1, -1, 0, 3, 4)` constructs the matrix shown in the following figure.
 
-![Transformations](~/add/media/aboutgdip05-art10.gif)
+![Matrix.](./media/gdip-art10.gif)
 
 [!INCLUDE[System.Drawing.Common note](./includes/system-drawing-common.md)]
 
@@ -36,7 +36,7 @@ Rather than store the three parts of the composite transformation in three separ
 
 The following illustration shows the matrices A, B, C, and D.
 
-![Transformations](~/add/media/aboutgdip05-art12.gif)
+![Matrices A, B, C, and D](./media/gdip-art12.gif)
 
 The fact that the matrix of a composite transformation can be formed by multiplying the individual transformation matrices means that any sequence of affine transformations can be stored in a single <xref:System.Drawing.Drawing2D.Matrix> object.
 

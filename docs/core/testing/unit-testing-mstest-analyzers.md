@@ -19,7 +19,7 @@ The rules are organized into categories such as performance usage...
 
 **[Design rules](unit-testing-mstest-analyzers-design.md)**
 
-Design rules support adherence to proper design of test suites.
+Design rules will help you create and maintain test suites that adhere to proper design and good practices.
 
 **[Performance rules](unit-testing-mstest-analyzers-performance.md)**
 

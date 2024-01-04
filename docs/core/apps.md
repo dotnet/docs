@@ -11,25 +11,19 @@ ms.custom: "updateeachrelease"
 
 ## Cloud apps
 
-* [Cloud native apps](../architecture/cloud-native/index.md)
 * [.NET Aspire](/dotnet/aspire)
-* [Console apps](tutorials/with-visual-studio-code.md)
-* [Serverless functions in the cloud](/azure/azure-functions/functions-create-first-function-vs-code?pivots=programming-language-csharp)
-* [Web apps, web APIs, and microservices](/aspnet/core/introduction-to-aspnet-core#recommended-learning-path)
+* [Serverless functions](/azure/azure-functions/functions-create-first-function-vs-code?pivots=programming-language-csharp)
+* [Web and microservices](/aspnet/core/introduction-to-aspnet-core#recommended-learning-path)
 
-## Cross-platform client apps
+## Client apps
 
-* [Desktop and Mobile apps](/dotnet/maui)
+* [Mobile](/dotnet/maui)
 * [Games](https://dotnet.microsoft.com/apps/games)
-
-## Windows apps
-
-* [Windows Forms](/dotnet/desktop/winforms/)
-* [Windows WPF](/dotnet/desktop/wpf/)
-* [Universal Windows Platform (UWP)](/windows/uwp/get-started/create-a-hello-world-app-xaml-universal)
-* [Windows services](/aspnet/core/host-and-deploy/windows-service)
+* [Desktop apps](/dotnet/desktop/)
 
 ## Other app types
 
-* [Machine learning](../machine-learning/index.yml)
+* [Console apps](tutorials/with-visual-studio-code.md)
 * [Internet of Things (IoT)](../iot/index.yml)
+* [Machine learning](../machine-learning/index.yml)
+* [Windows services](/aspnet/core/host-and-deploy/windows-service)

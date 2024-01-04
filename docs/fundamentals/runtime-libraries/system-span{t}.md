@@ -41,7 +41,7 @@ Because `Span<T>` is an abstraction over an arbitrary block of memory, methods o
 
 ## Arrays
 
-When it wraps an array, `Span<T>` can wrap an entire array, as it did in the examples in the [Span\<T> and memory](#spant-and-memory) section. Because it supports slicing, `Span<T>` can also point to any contiguous range within the array.
+When it wraps an array, `Span<T>` can wrap an entire array, as it did in the examples in the [Memory](#memory) section. Because it supports slicing, `Span<T>` can also point to any contiguous range within the array.
 
 The following example creates a slice of the middle five elements of a 10-element integer array. Note that the code doubles the values of each integer in the slice. As the output shows, the changes made by the span are reflected in the values of the array.
 

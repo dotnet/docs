@@ -133,7 +133,7 @@ All types that appear in member signatures, including a method's return type or 
 
 * All types used as constraints on generic parameters must be CLS-compliant.
 
-The .NET [common type system](common-type-system.md) includes many built-in types that are supported directly by the common language runtime and are specially encoded in an assembly's metadata. Of these intrinsic types, the types listed in the following table are CLS-compliant.
+The .NET [common type system](base-types/common-type-system.md) includes many built-in types that are supported directly by the common language runtime and are specially encoded in an assembly's metadata. Of these intrinsic types, the types listed in the following table are CLS-compliant.
 
 CLS-compliant type | Description
 ------------------ | -----------

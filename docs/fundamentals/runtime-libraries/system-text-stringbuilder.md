@@ -33,7 +33,7 @@ Consider using the <xref:System.String> class under these conditions:
 
 - When you are performing a fixed number of concatenation operations, particularly with string literals. In this case, the compiler might combine the concatenation operations into a single operation.
 
-- When you have to perform extensive search operations while you are building your string. The <xref:System.Text.StringBuilder> class lacks search methods such as `IndexOf` or `StartsWith`. You'll have to convert the <xref:System.Text.StringBuilder> object to a <xref:System.String> for these operations, and this can negate the performance benefit from using <xref:System.Text.StringBuilder>. For more information, see the [Searching the text in a StringBuilder object](#searching-the-text-in-a-stringbuilder-object) section.
+- When you have to perform extensive search operations while you are building your string. The <xref:System.Text.StringBuilder> class lacks search methods such as `IndexOf` or `StartsWith`. You'll have to convert the <xref:System.Text.StringBuilder> object to a <xref:System.String> for these operations, and this can negate the performance benefit from using <xref:System.Text.StringBuilder>. For more information, see the [Search the text in a StringBuilder object](#search-the-text-in-a-stringbuilder-object) section.
 
 Consider using the <xref:System.Text.StringBuilder> class under these conditions:
 

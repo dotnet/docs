@@ -184,7 +184,7 @@ The <xref:System.Double> structure and related types provide methods to perform 
   The <xref:System.Double> structure also supports a complete set of comparison operators. For example, you can test for equality or inequality, or determine whether one value is greater than or equal to another. If one of the operands is a numeric type other than a <xref:System.Double>, it is converted to a <xref:System.Double> before performing the comparison.
 
   > [!WARNING]
-  > Because of differences in precision, two <xref:System.Double> values that you expect to be equal may turn out to be unequal, which affects the result of the comparison. See the [Testing for Equality](#Equality) section for more information about comparing two <xref:System.Double> values.
+  > Because of differences in precision, two <xref:System.Double> values that you expect to be equal may turn out to be unequal, which affects the result of the comparison. See the [Test for equality](#test-for-equality) section for more information about comparing two <xref:System.Double> values.
 
   You can also call the <xref:System.Double.IsNaN%2A>, <xref:System.Double.IsInfinity%2A>, <xref:System.Double.IsPositiveInfinity%2A>, and <xref:System.Double.IsNegativeInfinity%2A> methods to test for these special values.
 

@@ -61,7 +61,7 @@ You can do the following to avoid the assumption that a <xref:System.Char> objec
 
 - You can use <xref:System.String.EnumerateRunes%2A?displayProperty=nameWithType> as shown in the following example:
 
-  :::code language="csharp" source="~/snippets/csharp/System.Text/Rune/Overview/CountLettersInString.cs" id="SnippetGoodExample":::
+  :::code language="csharp" source="./snippets/System.Text/Rune/Overview/csharp/CountLettersInString.cs" id="SnippetGoodExample":::
   :::code language="fsharp" source="./snippets/System.Text/Rune/Overview/fsharp/CountLettersInString.fs" id="SnippetGoodExample":::
 
 - You can use the <xref:System.Globalization.StringInfo> class to work with text elements instead of individual <xref:System.Char> objects. The following example uses the <xref:System.Globalization.StringInfo> object to count the number of text elements in a string that consists of the Aegean numbers zero through nine. Because it considers a surrogate pair a single character, it correctly reports that the string contains ten characters.

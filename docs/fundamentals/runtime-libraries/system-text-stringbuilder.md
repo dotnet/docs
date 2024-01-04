@@ -123,7 +123,7 @@ The following example illustrates the <xref:System.Text.StringBuilder.Chars> pro
 :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/chars1.fs" id="Snippet7":::
 :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/chars1.vb" id="Snippet7":::
 
-[!INCLUDE[stringbuilder-performance-note](~/includes/stringbuilder-perf-note.md)]
+[!INCLUDE[stringbuilder-performance-note](./includes/stringbuilder-perf-note.md)]
 
 ### Add text to a StringBuilder object
 

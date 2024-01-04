@@ -38,7 +38,7 @@ If your code iterates through the `char` instances in a `string` or a `ReadOnlyS
 
 The following example shows code that won't work correctly if any of the `char` instances are surrogate code points:
 
-:::code language="csharp" source="~/snippets/csharp/System.Text/Rune/Overview/CountLettersInString.cs" id="SnippetBadExample":::
+:::code language="csharp" source="./snippets/System.Text/Rune/Overview/csharp/CountLettersInString.cs" id="SnippetBadExample":::
 :::code language="fsharp" source="~/snippets/fsharp/System.Text/Rune/Overview/CountLettersInString.fs" id="SnippetBadExample":::
 
 Here's equivalent code that works with a `ReadOnlySpan<char>`:
@@ -63,7 +63,7 @@ The reason this method returns incorrect results for Osage text is that the `cha
 
 If you change this code to use `Rune` instead of `char`, the method works correctly with code points outside the Basic Multilingual Plane:
 
-:::code language="csharp" source="~/snippets/csharp/System.Text/Rune/Overview/CountLettersInString.cs" id="SnippetGoodExample":::
+:::code language="csharp" source="./snippets/System.Text/Rune/Overview/csharp/CountLettersInString.cs" id="SnippetGoodExample":::
 :::code language="fsharp" source="~/snippets/fsharp/System.Text/Rune/Overview/CountLettersInString.fs" id="SnippetGoodExample":::
 
 Here's equivalent code that works with a `ReadOnlySpan<char>`:

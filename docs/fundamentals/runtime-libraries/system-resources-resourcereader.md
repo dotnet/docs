@@ -10,7 +10,7 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
-[!INCLUDE [untrusted-data-class-note](~/includes/untrusted-data-class-note.md)]
+[!INCLUDE [untrusted-data-class-note](./includes/untrusted-data-class-note.md)]
 
 The <xref:System.Resources.ResourceReader> class provides a standard implementation of the <xref:System.Resources.IResourceReader> interface. A <xref:System.Resources.ResourceReader> instance represents either a standalone .resources file or a .resources file that is embedded in an assembly. It is used to enumerate the resources in a .resources file and retrieve its name/value pairs. It differs from the <xref:System.Resources.ResourceManager> class, which is used to retrieve specified named resources from a .resources file that is embedded in an assembly. The <xref:System.Resources.ResourceManager> class is used to retrieve resources whose names are known in advance, whereas the <xref:System.Resources.ResourceReader> class is useful for retrieving resources whose number or precise names are not known at compile time. For example, an application may use a resources file to store configuration information that is organized into sections and items in a section, where the number of sections or items in a section is not known in advance. Resources can then be named generically (such as `Section1`, `Section1Item1`, `Section1Item2`, and so on) and retrieved by using a <xref:System.Resources.ResourceReader> object.
 

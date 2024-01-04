@@ -14,7 +14,7 @@ In GDI+, you can store an affine transformation in a <xref:System.Drawing.Drawin
 
 ![Transformations](~/add/media/aboutgdip05-art10.gif)
 
-[!INCLUDE[System.Drawing.Common note](~/includes/system-drawing-common.md)]
+[!INCLUDE[System.Drawing.Common note](./includes/system-drawing-common.md)]
 
 ## Composite transformations
 

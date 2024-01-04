@@ -76,7 +76,7 @@ Characters in a string are represented by UTF-16 encoded code units, which corre
 
 Each character in a string has an associated Unicode character category, which is represented in .NET by the <xref:System.Globalization.UnicodeCategory> enumeration. The category of a character or a surrogate pair can be determined by calling the <xref:System.Globalization.CharUnicodeInfo.GetUnicodeCategory%2A?displayProperty=nameWithType> method.
 
-[!INCLUDE[character-categories](~/includes/unicode-categories.md)]
+[!INCLUDE[character-categories](./includes/unicode-categories.md)]
 
 In addition, .NET supports string comparison and sorting based on the Unicode standard. .NET Framework 4 and previous versions maintain their own table of string data. This is also true of versions of .NET Framework starting with .NET Framework 4.5 running on Windows 7. Starting with .NET Framework 4.5 running on Windows 8 and later versions of the Windows operating system, the runtime delegates string comparison and sorting operations to the operating system. On .NET Core and .NET 5+, string comparison and sorting information is provided by [International Components for Unicode](https://icu.unicode.org/) libraries (except on Windows versions prior to Windows 10 May 2019 Update). The following table lists the versions of .NET and the versions of the Unicode Standard on which character comparison and sorting are based.
 
@@ -194,7 +194,7 @@ You can download the sorting weight tables, a set of text files that contain inf
 
 Casing rules determine how to change the capitalization of a Unicode character; for example, from lowercase to uppercase. Often, a casing operation is performed before a string comparison. For example, a string might be converted to uppercase so that it can be compared with another uppercase string. You can convert the characters in a string to lowercase by calling the <xref:System.String.ToLower%2A> or <xref:System.String.ToLowerInvariant%2A> method, and you can convert them to uppercase by calling the <xref:System.String.ToUpper%2A> or <xref:System.String.ToUpperInvariant%2A> method. In addition, you can use the <xref:System.Globalization.TextInfo.ToTitleCase%2A?displayProperty=nameWithType> method to convert a string to title case.
 
-[!INCLUDE[platform-note](~/includes/c-and-posix-cultures.md)]
+[!INCLUDE[platform-note](./includes/c-and-posix-cultures.md)]
 
 Casing operations can be based on the rules of the current culture, a specified culture, or the invariant culture. Because case mappings can vary depending on the culture used, the result of casing operations can vary based on culture. The actual differences in casing are of three kinds:
 

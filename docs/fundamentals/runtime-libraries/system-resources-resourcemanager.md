@@ -11,7 +11,7 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
-[!INCLUDE [untrusted-data-class-note](~/includes/untrusted-data-class-note.md)]
+[!INCLUDE [untrusted-data-class-note](./includes/untrusted-data-class-note.md)]
 
 The <xref:System.Resources.ResourceManager> class retrieves resources from a binary .resources file that is embedded in an assembly or from a standalone .resources file. If an app has been localized and localized resources have been deployed in [satellite assemblies](/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps), it looks up culture-specific resources, provides resource fallback when a localized resource does not exist, and supports resource serialization.
 
@@ -185,7 +185,7 @@ The exception is typically thrown under the following conditions:
 
 - The `baseName` parameter in the <xref:System.Resources.ResourceManager.%23ctor%28System.String%2CSystem.Reflection.Assembly%29> constructor does not specify the name of a .resources file. The name should include the resource file's fully qualified namespace but not its file name extension. Typically, resource files that are created in Visual Studio include namespace names, but resource files that are created and compiled at the command prompt do not. You can determine the names of embedded .resources files by compiling and running the following utility. This is a console app that accepts the name of a main assembly or satellite assembly as a command-line parameter. It displays the strings that should be provided as the `baseName` parameter so that the resource manager can correctly identify the resource.
 
-     :::code language="csharp" source="~/snippets/csharp/System.Resources/MissingManifestResourceException/Overview/resourcenames.cs" id="Snippet4":::
+     :::code language="csharp" source="./snippets/System.Resources/MissingManifestResourceException/Overview/csharp/resourcenames.cs" id="Snippet4":::
      :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resourcemanager.class/vb/resourcenames.vb" id="Snippet4":::
 
 If you are changing the current culture of your application explicitly, you should also remember that the resource manager retrieves a resource set based on the value of the <xref:System.Globalization.CultureInfo.CurrentUICulture?displayProperty=nameWithType> property, and not the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> property. Typically, if you change one value, you should also change the other.

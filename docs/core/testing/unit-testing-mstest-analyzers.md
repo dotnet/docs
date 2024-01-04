@@ -17,6 +17,14 @@ The rules are organized into categories such as performance usage...
 
 ## Categories
 
+**[Design rules](unit-testing-mstest-analyzers-design.md)**
+
+Design rules support adherence to proper design of test suites.
+
 **[Performance rules](unit-testing-mstest-analyzers-performance.md)**
 
 Rules that support high-performance testing.
+
+**[Usage rules](unit-testing-mstest-analyzers-usage.md)**
+
+Rules that support proper usage of MSTest.

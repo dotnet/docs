@@ -104,7 +104,7 @@ The following example uses a regular expression to check for repeated occurrence
 |`(\k<word>)`|Match the captured group that is named `word`.|
 |`\b`|Match a word boundary.|
 
-:::code language="csharp" source="./snippets/System.Text.RegularExpressions/MatchCollection/Overview/cs/words.cs" interactive="try-dotnet" id="Snippet0":::
+:::code language="csharp" source="./snippets/System.Text.RegularExpressions/Regex/Overview/csharp/words.cs" interactive="try-dotnet" id="Snippet0":::
 :::code language="vb" source="./snippets/System.Text.RegularExpressions/Regex/Overview/vb/words.vb" id="Snippet0":::
 
 The following example illustrates the use of a regular expression to check whether a string either represents a currency value or has the correct format to represent a currency value. In this case, the regular expression is built dynamically from the <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator%2A?displayProperty=nameWithType>, <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits%2A>, <xref:System.Globalization.NumberFormatInfo.CurrencySymbol%2A?displayProperty=nameWithType>, <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A?displayProperty=nameWithType>, and <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A?displayProperty=nameWithType> properties for the en-US culture. The resulting regular expression is `^\s*[\+-]?\s?\$?\s?(\d*\.?\d{2}?){1}$`. This regular expression can be interpreted as shown in the following table.
@@ -125,7 +125,7 @@ The following example illustrates the use of a regular expression to check wheth
 
 In this case, the regular expression assumes that a valid currency string does not contain group separator symbols, and that it has either no fractional digits or the number of fractional digits defined by the specified culture's <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits> property.
 
-:::code language="csharp" source="./snippets/System.Text.RegularExpressions/Regex/Overview/cs/regex_example1.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Text.RegularExpressions/Regex/Overview/csharp/regex_example1.cs" interactive="try-dotnet" id="Snippet1":::
 :::code language="vb" source="./snippets/System.Text.RegularExpressions/Regex/Overview/vb/regex_example1.vb" id="Snippet1":::
 
 Because the regular expression in this example is built dynamically, you don't know at design time whether the currency symbol, decimal sign, or positive and negative signs of the specified culture (en-US in this example) might be misinterpreted by the regular expression engine as regular expression language operators. To prevent any misinterpretation, the example passes each dynamically generated string to the <xref:System.Text.RegularExpressions.Regex.Escape%2A> method.

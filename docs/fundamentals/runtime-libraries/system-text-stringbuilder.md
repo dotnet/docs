@@ -46,7 +46,7 @@ The <xref:System.Text.StringBuilder.Length?displayProperty=nameWithType> propert
 
 The following example illustrates how a <xref:System.Text.StringBuilder> object allocates new memory and increases its capacity dynamically as the string assigned to the object expands. The code creates a <xref:System.Text.StringBuilder> object by calling its default (parameterless) constructor. The default capacity of this object is 16 characters, and its maximum capacity is more than 2 billion characters. Appending the string "This is a sentence." results in a new memory allocation because the string length (19 characters) exceeds the default capacity of the <xref:System.Text.StringBuilder> object. The capacity of the object doubles to 32 characters, the new string is added, and the length of the object now equals 19 characters. The code then appends the string "This is an additional sentence." to the value of the <xref:System.Text.StringBuilder> object 11 times. Whenever the append operation causes the length of the <xref:System.Text.StringBuilder> object to exceed its capacity, its existing capacity is doubled and the <xref:System.Text.StringBuilder.Append%2A> operation succeeds.
 
-:::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/cs/default1.cs" interactive="try-dotnet" id="Snippet3":::
+:::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/default1.cs" interactive="try-dotnet" id="Snippet3":::
 :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/default1.fs" id="Snippet3":::
 :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/default1.vb" id="Snippet3":::
 
@@ -89,7 +89,7 @@ You instantiate a <xref:System.Text.StringBuilder> object by calling one of its 
 
 The following example uses three of these constructor overloads to instantiate <xref:System.Text.StringBuilder> objects.
 
-:::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/cs/instantiate1.cs" interactive="try-dotnet" id="Snippet6":::
+:::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/instantiate1.cs" interactive="try-dotnet" id="Snippet6":::
 :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/instantiate1.fs" id="Snippet6":::
 :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/instantiate1.vb" id="Snippet6":::
 
@@ -99,13 +99,13 @@ Most of the methods that modify the string in a <xref:System.Text.StringBuilder>
 
 - You can make individual method calls and ignore the return value, as the following example does.
 
-     :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/cs/call1.cs" interactive="try-dotnet" id="Snippet4":::
+     :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/call1.cs" interactive="try-dotnet" id="Snippet4":::
      :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/call1.fs" id="Snippet4":::
      :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/call1.vb" id="Snippet4":::
 
 - You can make a series of method calls in a single statement. This can be convenient if you want to write a single statement that chains successive operations. The following example consolidates three method calls from the previous example into a single line of code.
 
-     :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/cs/call2.cs" interactive="try-dotnet" id="Snippet5":::
+     :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/call2.cs" interactive="try-dotnet" id="Snippet5":::
      :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/call2.fs" id="Snippet5":::
      :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/call2.vb" id="Snippet5":::
 
@@ -119,7 +119,7 @@ You can access the characters in a <xref:System.Text.StringBuilder> object by us
 
 The following example illustrates the <xref:System.Text.StringBuilder.Chars%2A> property. It appends ten random numbers to a <xref:System.Text.StringBuilder> object, and then iterates each character. If the character's Unicode category is <xref:System.Globalization.UnicodeCategory.DecimalDigitNumber?displayProperty=nameWithType>, it decreases the number by 1 (or changes the number to 9 if its value is 0). The example displays the contents of the <xref:System.Text.StringBuilder> object both before and after the values of individual characters were changed.
 
-:::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/cs/chars1.cs" interactive="try-dotnet" id="Snippet7":::
+:::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/chars1.cs" interactive="try-dotnet" id="Snippet7":::
 :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/chars1.fs" id="Snippet7":::
 :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/chars1.vb" id="Snippet7":::
 
@@ -139,7 +139,7 @@ The <xref:System.Text.StringBuilder> class includes the following methods for ex
 
 The following example uses the <xref:System.Text.StringBuilder.Append%2A>, <xref:System.Text.StringBuilder.AppendLine%2A>, <xref:System.Text.StringBuilder.AppendFormat%2A>, and <xref:System.Text.StringBuilder.Insert%2A> methods to expand the text of a <xref:System.Text.StringBuilder> object.
 
-  :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/cs/expand1.cs" interactive="try-dotnet" id="Snippet9":::
+  :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/expand1.cs" interactive="try-dotnet" id="Snippet9":::
   :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/expand1.fs" id="Snippet9":::
   :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/expand1.vb" id="Snippet9":::
 
@@ -149,7 +149,7 @@ The <xref:System.Text.StringBuilder> class includes methods that can reduce the 
 
 The following example removes some of the text from a <xref:System.Text.StringBuilder> object, displays its resulting capacity, maximum capacity, and length property values, and then calls the <xref:System.Text.StringBuilder.Clear%2A> method to remove all the characters from the <xref:System.Text.StringBuilder> object.
 
-:::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/cs/delete1.cs" interactive="try-dotnet" id="Snippet10":::
+:::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/delete1.cs" interactive="try-dotnet" id="Snippet10":::
 :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/delete1.fs" id="Snippet10":::
 :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/delete1.vb" id="Snippet10":::
 
@@ -157,7 +157,7 @@ The following example removes some of the text from a <xref:System.Text.StringBu
 
 The <xref:System.Text.StringBuilder.Replace%2A?displayProperty=nameWithType> method replaces all occurrences of a character or a string in the entire <xref:System.Text.StringBuilder> object or in a particular character range. The following example uses the <xref:System.Text.StringBuilder.Replace%2A> method to replace all exclamation points (!) with question marks (?) in the <xref:System.Text.StringBuilder> object.
 
-:::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/cs/replace1.cs" interactive="try-dotnet" id="Snippet11":::
+:::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/replace1.cs" interactive="try-dotnet" id="Snippet11":::
 :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/replace1.fs" id="Snippet11":::
 :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/replace1.vb" id="Snippet11":::
 
@@ -176,7 +176,7 @@ Let's examine these techniques in greater detail.
 
 - If the goal of the search is to determine whether a particular substring exists (that is, if you aren't interested in the position of the substring), you can search strings before storing them in the <xref:System.Text.StringBuilder> object. The following example provides one possible implementation. It defines a `StringBuilderFinder` class whose constructor is passed a reference to a <xref:System.Text.StringBuilder> object and the substring to find in the string. In this case, the example tries to determine whether recorded temperatures are in Fahrenheit or Celsius, and adds the appropriate introductory text to the beginning of the <xref:System.Text.StringBuilder> object. A random number generator is used to select an array that contains data in either degrees Celsius or degrees Fahrenheit.
 
-     :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/cs/pattern1.cs" interactive="try-dotnet" id="Snippet12":::
+     :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/pattern1.cs" interactive="try-dotnet" id="Snippet12":::
      :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/pattern1.fs" id="Snippet12":::
      :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/pattern1.vb" id="Snippet12":::
 
@@ -187,7 +187,7 @@ Let's examine these techniques in greater detail.
 
      The following example illustrates this approach. It stores four occurrences of each letter of the English alphabet in a <xref:System.Text.StringBuilder> object. It then converts the text to a <xref:System.String> object and uses a regular expression to identify the starting position of each four-character sequence. Finally, it adds an underscore before each four-character sequence except for the first sequence, and converts the first character of the sequence to uppercase.
 
-     :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/cs/pattern2.cs" interactive="try-dotnet" id="Snippet13":::
+     :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/pattern2.cs" interactive="try-dotnet" id="Snippet13":::
      :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/pattern2.fs" id="Snippet13":::
      :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/pattern2.vb" id="Snippet13":::
 
@@ -195,7 +195,7 @@ Let's examine these techniques in greater detail.
 
      The following example is identical in functionality to the previous example but differs in implementation. It uses the <xref:System.Text.StringBuilder.Chars%2A> property to detect when a character value has changed, inserts an underscore at that position, and converts the first character in the new sequence to uppercase.
 
-     :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/cs/pattern3.cs" interactive="try-dotnet" id="Snippet14":::
+     :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/pattern3.cs" interactive="try-dotnet" id="Snippet14":::
      :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/pattern3.fs" id="Snippet14":::
      :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/pattern3.vb" id="Snippet14":::
 
@@ -203,7 +203,7 @@ Let's examine these techniques in greater detail.
 
      The following example is identical in functionality to the previous two examples but differs in implementation. It creates a <xref:System.Text.StringBuilder> object, converts it to a <xref:System.String> object, and then uses a regular expression to perform all remaining modifications on the string. The <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.MatchEvaluator%29?displayProperty=nameWithType> method uses a lambda expression to perform the replacement on each match.
 
-     :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/cs/pattern4.cs" interactive="try-dotnet" id="Snippet15":::
+     :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/pattern4.cs" interactive="try-dotnet" id="Snippet15":::
      :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/pattern4.fs" id="Snippet15":::
      :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/pattern4.vb" id="Snippet15":::
 

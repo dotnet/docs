@@ -93,14 +93,14 @@ You call any of the overloads of the <xref:System.DateTime> constructor that spe
 <a name="initialization-01"></a>
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/Instantiation.vb" id="Snippet1":::
 :::code language="csharp" source="./snippets/System/DateTime/Overview/csharp/Instantiation.cs" id="Snippet1":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/Instantiation.fs" id="Snippet1":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/Instantiation.fs" id="Snippet1":::
 
 You invoke the `DateTime` structure's implicit parameterless constructor when you want a `DateTime` initialized to its default value. (For details on the implicit parameterless constructor of a value type, see [Value Types](/dotnet/csharp/language-reference/keywords/value-types).) Some compilers also support declaring a <xref:System.DateTime> value without explicitly assigning a value to it. Creating a value without an explicit initialization also results in the default value. The following example illustrates the <xref:System.DateTime> implicit parameterless constructor in C# and Visual Basic, as well as a <xref:System.DateTime> declaration without assignment in Visual Basic.
 
 <a name="initialization-02"></a>
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/Instantiation.vb" id="Snippet5":::
 :::code language="csharp" source="./snippets/System/DateTime/Overview/csharp/Instantiation.cs" interactive="try-dotnet-method" id="Snippet5":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/Instantiation.fs" id="Snippet5":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/Instantiation.fs" id="Snippet5":::
 
 ### Assign a computed value
 
@@ -109,7 +109,7 @@ You can assign the <xref:System.DateTime> object a date and time value returned 
 <a name="initialization-03"></a>
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/Instantiation.vb" id="Snippet3":::
 :::code language="csharp" source="./snippets/System/DateTime/Overview/csharp/Instantiation.cs" id="Snippet3":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/Instantiation.fs" id="Snippet3":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/Instantiation.fs" id="Snippet3":::
 
 ### Parse a string that represents a DateTime
 
@@ -118,7 +118,7 @@ The <xref:System.DateTime.Parse%2A>, <xref:System.DateTime.ParseExact%2A>, <xref
 <a name="initialization-04"></a>
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/Instantiation.vb" id="Snippet4":::
 :::code language="csharp" source="./snippets/System/DateTime/Overview/csharp/Instantiation.cs" id="Snippet4":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/Instantiation.fs" id="Snippet4":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/Instantiation.fs" id="Snippet4":::
 
 The <xref:System.DateTime.TryParse%2A> and <xref:System.DateTime.TryParseExact%2A> methods indicate whether a string is a valid representation of a <xref:System.DateTime> value and, if it is, performs the conversion.
 
@@ -137,35 +137,35 @@ The appearance of date and time values is dependent on culture, international st
 
 <a name="formatting-01"></a>
 :::code language="csharp" source="./snippets/System.DateTime/Overview/csharp/StringFormat.cs" id="Snippet1":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/StringFormat.fs" id="Snippet1":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/StringFormat.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/StringFormat.vb" id="Snippet1":::
 
 You may need to format dates in a specific culture to support web scenarios where the server may be in a different culture from the client. You specify the culture using the <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method to create the short date and long time representation in a specific culture. The following example uses the <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method to display the date and time using the short date and long time pattern for the fr-FR culture.
 
 <a name="formatting-02"></a>
 :::code language="csharp" source="./snippets/System.DateTime/Overview/csharp/StringFormat.cs" interactive="try-dotnet-method" id="Snippet2":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/StringFormat.fs" id="Snippet2":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/StringFormat.fs" id="Snippet2":::
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/StringFormat.vb" id="Snippet2":::
 
 Other applications may require different string representations of a date. The <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method returns the string representation defined by a standard or custom format specifier using the formatting conventions of the current culture. The following example uses the <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method to display the full date and time pattern for the en-US culture, the current culture on the computer on which the example was run.
 
 <a name="formatting-03"></a>
 :::code language="csharp" source="./snippets/System.DateTime/Overview/csharp/StringFormat.cs" id="Snippet3":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/StringFormat.fs" id="Snippet3":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/StringFormat.fs" id="Snippet3":::
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/StringFormat.vb" id="Snippet3":::
 
 Finally, you can specify both the culture and the format using the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method. The following example uses the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method to display the full date and time pattern for the fr-FR culture.
 
 <a name="formatting-04"></a>
 :::code language="csharp" source="./snippets/System.DateTime/Overview/csharp/StringFormat.cs" interactive="try-dotnet-method" id="Snippet4":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/StringFormat.fs" id="Snippet4":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/StringFormat.fs" id="Snippet4":::
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/StringFormat.vb" id="Snippet4":::
 
 The <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> overload can also be used with a custom format string to specify other formats. The following example shows how to format a string using the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) standard format often used for web services. The Iso 8601 format does not have a corresponding standard format string.
 
 <a name="formatting-05"></a>
 :::code language="csharp" source="./snippets/System.DateTime/Overview/csharp/StringFormat.cs" interactive="try-dotnet-method" id="Snippet5":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/StringFormat.fs" id="Snippet5":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/StringFormat.fs" id="Snippet5":::
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/StringFormat.vb" id="Snippet5":::
 
 For more information about formatting <xref:System.DateTime> values, see  [Standard Date and Time Format Strings](../../standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](../../standard/base-types/custom-date-and-time-format-strings.md).
@@ -182,21 +182,21 @@ You use the <xref:System.DateTime.Parse%2A> or <xref:System.DateTime.TryParse%2A
 
 <a name="parsing-01"></a>
 :::code language="csharp" source="./snippets/System.DateTime/Overview/csharp/Parsing.cs" interactive="try-dotnet-method" id="Snippet1":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/Parsing.fs" id="Snippet1":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/Parsing.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/Parsing.vb" id="Snippet1":::
 
 You use the <xref:System.DateTime.ParseExact%2A> and <xref:System.DateTime.TryParseExact%2A> methods to convert a string that must match a particular format or formats to a <xref:System.DateTime> value. You specify one or more date and time format strings as a parameter to the parsing method. The following example uses the <xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29> method to convert strings that must be either in a "yyyyMMdd" format or a "HHmmss" format to <xref:System.DateTime> values.
 
 <a name="parsing-02"></a>
 :::code language="csharp" source="./snippets/System.DateTime/Overview/csharp/Parsing.cs" id="Snippet2":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/Parsing.fs" id="Snippet2":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/Parsing.fs" id="Snippet2":::
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/Parsing.vb" id="Snippet2":::
 
 One common use for <xref:System.DateTime.ParseExact%2A> is to convert a string representation from a web service, usually in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) standard format. The following code shows the correct format string to use:
 
 <a name="parsing-03"></a>
 :::code language="csharp" source="./snippets/System.DateTime/Overview/csharp/Parsing.cs" interactive="try-dotnet-method" id="Snippet3":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/Parsing.fs" id="Snippet3":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/Parsing.fs" id="Snippet3":::
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/Parsing.vb" id="Snippet3":::
 
 If a string cannot be parsed, the <xref:System.DateTime.Parse%2A> and <xref:System.DateTime.ParseExact%2A> methods throw an exception. The <xref:System.DateTime.TryParse%2A> and <xref:System.DateTime.TryParseExact%2A> methods return a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed. You should use the <xref:System.DateTime.TryParse%2A> or <xref:System.DateTime.TryParseExact%2A> methods in scenarios where performance is important. The parsing operation for date and time strings tends to have a high failure rate, and exception handling is expensive. Use these methods if strings are input by users or coming from an unknown source.
@@ -224,7 +224,7 @@ The following example illustrates the dependence of current date and time values
 
 <a name="resolution-01"></a>
 :::code language="csharp" source="./snippets/System.DateTime/Overview/csharp/Resolution.cs" interactive="try-dotnet-method" id="Snippet1":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/Resolution.fs" id="Snippet1":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/Resolution.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/Resolution.vb" id="Snippet1":::
 
 ## DateTime operations
@@ -269,21 +269,21 @@ A culture's current calendar is used in all formatting operations for that cultu
 
 <a name="calendars-01"></a>
 :::code language="csharp" source="./snippets/System.DateTime/Overview/csharp/Calendar.cs" id="Snippet1":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/Calendar.fs" id="Snippet1":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/Calendar.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/Calendar.vb" id="Snippet1":::
 
 A culture's current calendar is also used in all parsing operations for that culture, as the following example shows.
 
 <a name="calendars-02"></a>
 :::code language="csharp" source="./snippets/System.DateTime/Overview/csharp/Calendar.cs" id="Snippet2":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/Calendar.fs" id="Snippet2":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/Calendar.fs" id="Snippet2":::
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/Calendar.vb" id="Snippet2":::
 
 You instantiate a <xref:System.DateTime> value using the date and time elements (number of the year, month, and day) of a specific calendar by calling a [DateTime constructor](xref:System.DateTime.%23ctor%2A) that includes a `calendar` parameter and passing it a <xref:System.Globalization.CultureInfo.Calendar%2A> object that represents that calendar. The following example uses the date and time elements from the <xref:System.Globalization.ThaiBuddhistCalendar> calendar.
 
 <a name="calendars-03"></a>
 :::code language="csharp" source="./snippets/System.DateTime/Overview/csharp/Calendar.cs" id="Snippet3":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/Calendar.fs" id="Snippet3":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/Calendar.fs" id="Snippet3":::
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/Calendar.vb" id="Snippet3":::
 
 <xref:System.DateTime> constructors that do not include a `calendar` parameter assume that the date and time elements are expressed as units in the Gregorian calendar.
@@ -292,14 +292,14 @@ All other <xref:System.DateTime> properties and methods use the Gregorian calend
 
 <a name="calendars-04"></a>
 :::code language="csharp" source="./snippets/System.DateTime/Overview/csharp/Calendar.cs" id="Snippet4":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/Calendar.fs" id="Snippet4":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/Calendar.fs" id="Snippet4":::
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/Calendar.vb" id="Snippet4":::
 
 The <xref:System.DateTime> structure includes a <xref:System.DateTime.DayOfWeek> property that returns the day of the week in the Gregorian calendar. It does not include a member that allows you to retrieve the week number of the year. To retrieve the week of the year, call the individual calendar's <xref:System.Globalization.Calendar.GetWeekOfYear%2A?displayProperty=nameWithType> method. The following example provides an illustration.
 
 <a name="calendars-05"></a>
 :::code language="csharp" source="./snippets/System.DateTime/Overview/csharp/Calendar.cs" id="Snippet5":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/Calendar.fs" id="Snippet5":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/Calendar.fs" id="Snippet5":::
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/Calendar.vb" id="Snippet5":::
 
 For more information on dates and calendars, see [Working with Calendars](../../standard/datetime/working-with-calendars.md).
@@ -326,7 +326,7 @@ The most common error made when persisting <xref:System.DateTime> values as stri
 
 <a name="persistence-01"></a>
 :::code language="csharp" source="./snippets/System.DateTime/Overview/csharp/Persistence.cs" id="Snippet1":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/Persistence.fs" id="Snippet1":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/Persistence.fs" id="Snippet1":::
 
 To round-trip <xref:System.DateTime> values successfully, follow these steps:
 
@@ -342,7 +342,7 @@ The following example uses the invariant culture and the "O" standard format str
 
 <a name="persistence-02"></a>
 :::code language="csharp" source="./snippets/System.DateTime/Overview/csharp/Persistence.cs" id="Snippet2":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/Persistence.fs" id="Snippet2":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/Persistence.fs" id="Snippet2":::
 
 ### Persist values as integers
 
@@ -362,7 +362,7 @@ The following example persists an array of <xref:System.DateTime> values as inte
 
 <a name="persistence-03"></a>
 :::code language="csharp" source="./snippets/System.DateTime/Overview/csharp/Persistence.cs" id="Snippet3":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/Persistence.fs" id="Snippet3":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/Persistence.fs" id="Snippet3":::
 
 <a name="serializing-datetime-values"></a>
 
@@ -374,7 +374,7 @@ The following example uses the <xref:System.Xml.Serialization.XmlSerializer> cla
 
 <a name="persistence-04"></a>
 :::code language="csharp" source="./snippets/System.DateTime/Overview/csharp/Persistence.cs" id="Snippet4":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/Persistence.fs" id="Snippet4":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/Persistence.fs" id="Snippet4":::
 
 The previous example doesn't include time information. If a <xref:System.DateTime> value represents a moment in time and is expressed as a local time, convert it from local time to UTC before serializing it by calling the <xref:System.DateTime.ToUniversalTime%2A> method. After you deserialize it, convert it from UTC to local time by calling the <xref:System.DateTime.ToLocalTime%2A> method.
 
@@ -392,7 +392,7 @@ The following example demonstrates how to compare roughly equivalent <xref:Syste
 
 <a name="comparison-01"></a>
 :::code language="csharp" source="./snippets/System.DateTime/Overview/csharp/DateTimeComparisons.cs" id="Snippet1":::
-:::code language="fsharp" source="./snippets/fsharp/System.DateTime/fsharp/DateTimeComparisons.fs" id="Snippet1":::
+:::code language="fsharp" source="./snippets/fsharp/System/DateTime/Overview/fsharp/DateTimeComparisons.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/DateTimeComparisons.vb" id="Snippet1":::
 
 ## COM interop considerations

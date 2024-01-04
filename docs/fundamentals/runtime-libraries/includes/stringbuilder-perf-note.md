@@ -6,7 +6,7 @@ Using character-based indexing with the <xref:System.Text.StringBuilder.Chars%2A
 Performance is severely impacted because each character access walks the entire linked list of chunks to find the correct buffer to index into.
 
 > [!NOTE]
->  Even for a large "chunky" <xref:System.Text.StringBuilder> object, using the <xref:System.Text.StringBuilder.Chars%2A> property for index-based access to one or a small number of characters has a negligible performance impact; typically, it is an **O(n)** operation. The significant performance impact occurs when iterating the characters in the <xref:System.Text.StringBuilder> object, which is an **O(n^2)** operation. 
+> Even for a large "chunky" <xref:System.Text.StringBuilder> object, using the <xref:System.Text.StringBuilder.Chars%2A> property for index-based access to one or a small number of characters has a negligible performance impact; typically, it is an **O(n)** operation. The significant performance impact occurs when iterating the characters in the <xref:System.Text.StringBuilder> object, which is an **O(n^2)** operation.
 
 If you encounter performance issues when using character-based indexing with <xref:System.Text.StringBuilder> objects, you can use any of the following workarounds:
 
@@ -18,8 +18,10 @@ If you encounter performance issues when using character-based indexing with <xr
    // sbOriginal is the existing StringBuilder object
    var sbNew = new StringBuilder(sbOriginal.ToString(), sbOriginal.Length);
    ```
+
    ```vb
    ' sbOriginal is the existing StringBuilder object
    Dim sbNew = New StringBuilder(sbOriginal.ToString(), sbOriginal.Length)
    ```
+
 - Set the initial capacity of the <xref:System.Text.StringBuilder> object to a value that is approximately equal to its maximum expected size by calling the <xref:System.Text.StringBuilder.%23ctor(System.Int32)> constructor. Note that this allocates the entire block of memory even if the <xref:System.Text.StringBuilder> rarely reaches its maximum capacity.

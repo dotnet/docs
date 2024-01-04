@@ -51,7 +51,7 @@ The following example demonstrates how to add, remove, and insert a simple busin
 
 :::code language="csharp" source="./snippets/System.Collections.Generic/ListT/Overview/csharp/program.cs" interactive="try-dotnet" id="snippet1":::
 :::code language="vb" source="./snippets/System.Collections.Generic/List/Overview/vb/module1.vb" id="snippet1":::
-:::code language="fsharp" source="./snippets/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/fs/fsharp/addremoveinsert.fs" id="snippet1":::
+:::code language="fsharp" source="./snippets/System.Collections.Generic/ListT/Overview/fsharp/addremoveinsert.fs" id="snippet1":::
 
 The following example demonstrates several properties and methods of the <xref:System.Collections.Generic.List%601> generic class of type string. (For an example of a <xref:System.Collections.Generic.List%601> of complex types, see the <xref:System.Collections.Generic.List%601.Contains%2A> method.)
 
@@ -67,4 +67,4 @@ Finally, the <xref:System.Collections.Generic.List%601.Clear%2A> method is used 
 
 :::code language="csharp" source="./snippets/System.Collections.Generic/ListT/Overview/csharp/source.cs" interactive="try-dotnet-method" id="Snippet1":::
 :::code language="vb" source="./snippets/System.Collections.Generic/List/Overview/vb/source.vb" id="Snippet1":::
-:::code language="fsharp" source="./snippets/VS_Snippets_CLR/List`1_Class/fs/fsharp/listclass.fs" id="Snippet1":::
+:::code language="fsharp" source="./snippets/System.Collections.Generic/ListT/Overview/fsharp/listclass.fs" id="Snippet1":::

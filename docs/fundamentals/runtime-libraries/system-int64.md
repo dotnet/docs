@@ -20,31 +20,31 @@ You can instantiate an <xref:System.Int64> value in several ways:
 - You can declare an <xref:System.Int64> variable and assign it a literal integer value that is within the range of the <xref:System.Int64> data type. The following example declares two <xref:System.Int64> variables and assigns them values in this way.
 
   :::code language="csharp" source="./snippets/System/Int64/Overview/csharp/instantiate1.cs" id="Snippet1":::
-  :::code language="fsharp" source="./snippets/VS_Snippets_CLR_System/system.int64.instantiation/fs/fsharp/instantiate1.fs" id="Snippet1":::
+  :::code language="fsharp" source="./snippets/System/Int64/Overview/fsharp/instantiate1.fs" id="Snippet1":::
   :::code language="vb" source="./snippets/System/Int64/Overview/vb/instantiate1.vb" id="Snippet1":::
 
 - You can assign the value of an integral type whose range is a subset of the <xref:System.Int64> type. This is a widening conversion that does not require a cast operator in C# or a conversion method in Visual Basic. In F#, only the <xref:System.Int32> type can be widened automatically.
 
   :::code language="csharp" source="./snippets/System/Int64/Overview/csharp/instantiate1.cs" id="Snippet4":::
-  :::code language="fsharp" source="./snippets/VS_Snippets_CLR_System/system.int64.instantiation/fs/fsharp/instantiate1.fs" id="Snippet4":::
+  :::code language="fsharp" source="./snippets/System/Int64/Overview/fsharp/instantiate1.fs" id="Snippet4":::
   :::code language="vb" source="./snippets/System/Int64/Overview/vb/instantiate1.vb" id="Snippet4":::
 
 - You can assign the value of a numeric type whose range exceeds that of the <xref:System.Int64> type. This is a narrowing conversion, so it requires a cast operator in C# or F# and a conversion method in Visual Basic if `Option Strict` is on. If the numeric value is a <xref:System.Single>, <xref:System.Double>, or <xref:System.Decimal> value that includes a fractional component, the handling of its fractional part depends on the compiler performing the conversion. The following example performs narrowing conversions to assign several numeric values to <xref:System.Int64> variables.
 
   :::code language="csharp" source="./snippets/System/Int64/Overview/csharp/instantiate1.cs" id="Snippet2":::
-  :::code language="fsharp" source="./snippets/VS_Snippets_CLR_System/system.int64.instantiation/fs/fsharp/instantiate1.fs" id="Snippet2":::
+  :::code language="fsharp" source="./snippets/System/Int64/Overview/fsharp/instantiate1.fs" id="Snippet2":::
   :::code language="vb" source="./snippets/System/Int64/Overview/vb/instantiate1.vb" id="Snippet2":::
 
 - You can call a method of the <xref:System.Convert> class to convert any supported type to an <xref:System.Int64> value. This is possible because <xref:System.Int64> supports the <xref:System.IConvertible> interface. The following example illustrates the conversion of an array of <xref:System.Decimal> values to <xref:System.Int64> values.
 
   :::code language="csharp" source="./snippets/System/Convert/ToInt64/csharp/toint64_1.cs" interactive="try-dotnet-method" id="Snippet4":::
-  :::code language="fsharp" source="./snippets/VS_Snippets_CLR_System/system.convert.toint64/fs/fsharp/toint64_1.fs" id="Snippet4":::
+  :::code language="fsharp" source="./snippets/System/Convert/ToInt64/fsharp/toint64_1.fs" id="Snippet4":::
   :::code language="vb" source="./snippets/System/Convert/Overview/vb/toint64_1.vb" id="Snippet4":::
 
 - You can call the <xref:System.Int64.Parse%2A> or <xref:System.Int64.TryParse%2A> method to convert the string representation of an <xref:System.Int64> value to an <xref:System.Int64>. The string can contain either decimal or hexadecimal digits. The following example illustrates the parse operation by using both a decimal and a hexadecimal string.
 
   :::code language="csharp" source="./snippets/System/Int64/Overview/csharp/instantiate1.cs" interactive="try-dotnet-method" id="Snippet3":::
-  :::code language="fsharp" source="./snippets/VS_Snippets_CLR_System/system.int64.instantiation/fs/fsharp/instantiate1.fs" id="Snippet3":::
+  :::code language="fsharp" source="./snippets/System/Int64/Overview/fsharp/instantiate1.fs" id="Snippet3":::
   :::code language="vb" source="./snippets/System/Int64/Overview/vb/instantiate1.vb" id="Snippet3":::
 
 ## Perform operations on Int64 values
@@ -62,13 +62,13 @@ The <xref:System.Int64> type provides full support for standard and custom numer
 To format an <xref:System.Int64> value as an integral string with no leading zeros, you can call the parameterless <xref:System.Int64.ToString> method. By using the "D" format specifier, you can also include a specified number of leading zeros in the string representation. By using the "N" format specifier, you can include group separators and specify the number of decimal digits to appear in the string representation of the number. By using the "X" format specifier, you can represent an <xref:System.Int64> value as a hexadecimal string. The following example formats the elements in an array of <xref:System.Int64> values in these four ways.
 
 :::code language="csharp" source="./snippets/System/Int64/Overview/csharp/formatting1.cs" interactive="try-dotnet-method" id="Snippet1":::
-:::code language="fsharp" source="./snippets/VS_Snippets_CLR_System/system.int64.formatting/fs/fsharp/formatting1.fs" id="Snippet1":::
+:::code language="fsharp" source="./snippets/System/Convert/ToInt64/fsharp/formatting1.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/Int64/Overview/vb/formatting1.vb" id="Snippet1":::
 
 You can also format an <xref:System.Int64> value as a binary, octal, decimal, or hexadecimal string by calling the <xref:System.Convert.ToString%28System.Int64%2CSystem.Int32%29> method and supplying the base as the method's second parameter. The following example calls this method to display the binary, octal, and hexadecimal representations of an array of integer values.
 
 :::code language="csharp" source="./snippets/System/Int64/Overview/csharp/formatting1.cs" interactive="try-dotnet-method" id="Snippet2":::
-:::code language="fsharp" source="./snippets/VS_Snippets_CLR_System/system.int64.formatting/fs/fsharp/formatting1.fs" id="Snippet2":::
+:::code language="fsharp" source="./snippets/System/Convert/ToInt64/fsharp/formatting1.fs" id="Snippet2":::
 :::code language="vb" source="./snippets/System/Int64/Overview/vb/formatting1.vb" id="Snippet2":::
 
 ## Work with non-decimal 32-bit integer values

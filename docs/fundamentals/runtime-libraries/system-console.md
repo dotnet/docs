@@ -50,7 +50,7 @@ In general, the console reads input and writes output by using the current conso
 
 :::code language="csharp" source="./snippets/System/Console/Overview/csharp/unicode1.cs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/Console/Overview/vb/unicode1.vb" id="Snippet1":::
-:::code language="fsharp" source="./snippets/VS_Snippets_CLR_System/system.console.class/fs/fsharp/unicode1.fs" id="Snippet1":::
+:::code language="fsharp" source="./snippets/System/Console/Overview/fsharp/unicode1.fs" id="Snippet1":::
 
 In addition to supporting code pages, the <xref:System.Console> class supports UTF-8 encoding with the <xref:System.Text.UTF8Encoding> class. Beginning with the .NET Framework 4.5, the <xref:System.Console> class also supports UTF-16 encoding with the <xref:System.Text.UnicodeEncoding> class. To display Unicode characters to the console. you set the <xref:System.Console.OutputEncoding%2A> property to either <xref:System.Text.UTF8Encoding> or  <xref:System.Text.UnicodeEncoding>.
 
@@ -58,7 +58,7 @@ Support for Unicode characters requires the encoder to recognize a particular Un
 
 :::code language="csharp" source="./snippets/System/Console/Overview/csharp/setfont1.cs" id="Snippet3":::
 :::code language="vb" source="./snippets/System/Console/Overview/vb/setfont1.vb" id="Snippet3":::
-:::code language="fsharp" source="./snippets/VS_Snippets_CLR_System/system.console.class.unsafe/fs/fsharp/setfont1.fs" id="Snippet3":::
+:::code language="fsharp" source="./snippets/System/Console/Overview/fsharp/setfont1.fs" id="Snippet3":::
 
 However, TrueType fonts can display only a subset of glyphs. For example, the Lucida Console font displays only 643 of the approximately 64,000 available characters from U+0021 to U+FB02. To see which characters a particular font supports, open the **Fonts** applet in Control Panel, choose the **Find a character** option, and choose the font whose character set you'd like to examine in the **Font** list of the **Character Map** window.
 
@@ -66,7 +66,7 @@ Windows uses font linking to display glyphs that are not available in a particul
 
 :::code language="csharp" source="./snippets/System/Console/Overview/csharp/fontlink1.cs" id="Snippet2":::
 :::code language="vb" source="./snippets/System/Console/Overview/vb/fontlink1.vb" id="Snippet2":::
-:::code language="fsharp" source="./snippets/VS_Snippets_CLR_System/system.console.class/fs/fsharp/fontlink1.fs" id="Snippet2":::
+:::code language="fsharp" source="./snippets/System/Console/Overview/fsharp/fontlink1.fs" id="Snippet2":::
 
 Unicode support for the console has the following limitations:
 
@@ -82,7 +82,7 @@ Unicode support for the console has the following limitations:
 
   :::code language="csharp" source="./snippets/System/Console/Overview/csharp/normalize1.cs" id="Snippet5":::
   :::code language="vb" source="./snippets/System/Console/Overview/vb/normalize1.vb" id="Snippet5":::
-  :::code language="fsharp" source="./snippets/VS_Snippets_CLR_System/system.console.class/fs/fsharp/normalize1.fs" id="Snippet5":::
+  :::code language="fsharp" source="./snippets/System/Console/Overview/fsharp/normalize1.fs" id="Snippet5":::
 
   Normalization is a viable solution only if the Unicode standard for the character includes a pre-composed form that corresponds to a particular combining character sequence.
 
@@ -92,7 +92,7 @@ The following example displays a range of Unicode characters to the console. The
 
 :::code language="csharp" source="./snippets/System/Console/Overview/csharp/example3.cs" id="Snippet4":::
 :::code language="vb" source="./snippets/System/Console/Overview/vb/example3.vb" id="Snippet4":::
-:::code language="fsharp" source="./snippets/VS_Snippets_CLR_System/system.console.class/fs/fsharp/example3.fs" id="Snippet4":::
+:::code language="fsharp" source="./snippets/System/Console/Overview/fsharp/example3.fs" id="Snippet4":::
 
 ## Common operations
 
@@ -142,4 +142,4 @@ The following example demonstrates how to read data from, and write data to, the
 
 :::code language="csharp" source="./snippets/System/Console/Overview/csharp/source.cs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/Console/Overview/vb/source.vb" id="Snippet1":::
-:::code language="fsharp" source="./snippets/VS_Snippets_CLR_Classic/classic Console Example/FS/fsharp/source.fs" id="Snippet1":::
+:::code language="fsharp" source="./snippets/System/Console/Overview/fsharp/source.fs" id="Snippet1":::

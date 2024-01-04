@@ -35,7 +35,7 @@ You can assign a value to a complex number in one of the following ways:
 
 The following example demonstrates each of these five ways of assigning a value to a complex number.
 
-:::code language="csharp" source="~/snippets/csharp/System.Numerics/Complex/Overview/create1.cs" interactive="try-dotnet" id="Snippet2":::
+:::code language="csharp" source="./snippets/System.Numerics/Complex/Overview/cs/create1.cs" interactive="try-dotnet" id="Snippet2":::
 :::code language="vb" source="./snippets/System.Numerics/Complex/Overview/vb/create1.vb" id="Snippet2":::
 
 ## Operations with complex numbers

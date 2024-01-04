@@ -49,7 +49,7 @@ The <xref:System.Collections.Generic.List%601> class is used infrequently in F# 
 
 The following example demonstrates how to add, remove, and insert a simple business object in a <xref:System.Collections.Generic.List%601>.
 
-:::code language="csharp" source="~/snippets/csharp/System.Collections.Generic/ListT/Overview/program.cs" interactive="try-dotnet" id="snippet1":::
+:::code language="csharp" source="./snippets/System.Collections.Generic/ListT/Overview/cs/program.cs" interactive="try-dotnet" id="snippet1":::
 :::code language="vb" source="./snippets/System.Collections.Generic/List/Overview/vb/module1.vb" id="snippet1":::
 :::code language="fsharp" source="./snippets/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/fs/fsharp/addremoveinsert.fs" id="snippet1":::
 
@@ -65,6 +65,6 @@ The <xref:System.Collections.Generic.List%601.TrimExcess%2A> method is used to r
 
 Finally, the <xref:System.Collections.Generic.List%601.Clear%2A> method is used to remove all items from the list, and the <xref:System.Collections.Generic.List%601.Capacity%2A> and <xref:System.Collections.Generic.List%601.Count%2A> properties are displayed.
 
-:::code language="csharp" source="~/snippets/csharp/System.Collections.Generic/ListT/Overview/source.cs" interactive="try-dotnet-method" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Collections.Generic/ListT/Overview/cs/source.cs" interactive="try-dotnet-method" id="Snippet1":::
 :::code language="vb" source="./snippets/System.Collections.Generic/List/Overview/vb/source.vb" id="Snippet1":::
 :::code language="fsharp" source="./snippets/VS_Snippets_CLR/List`1_Class/fs/fsharp/listclass.fs" id="Snippet1":::

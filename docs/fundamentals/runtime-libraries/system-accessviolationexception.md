@@ -22,7 +22,7 @@ In either case, you can identify and correct the cause of the <xref:System.Acces
 
 - Make sure that the memory that you're attempting to access has been allocated. An <xref:System.AccessViolationException> exception is always thrown by an attempt to access protected memory&mdash;that is, to access memory that's not allocated or that's not owned by a process.
 
-  Automatic memory management is one of the services that the .NET runtime provides. If managed code provides the same functionality as your unmanaged code, you may wish to move to managed code to take advantage of this functionality. For more information, see [Automatic Memory Management](/dotnet/standard/automatic-memory-management).
+  Automatic memory management is one of the services that the .NET runtime provides. If managed code provides the same functionality as your unmanaged code, you may wish to move to managed code to take advantage of this functionality. For more information, see [Automatic Memory Management](../../standard/automatic-memory-management.md).
 
 - Make sure that the memory that you're attempting to access has not been corrupted. If several read or write operations have occurred through bad pointers, memory might be corrupted. This typically occurs when reading or writing to addresses outside of a predefined buffer.
 

@@ -8,7 +8,7 @@ ms.date: 01/03/2024
 
 # MSTest design rules
 
-Design rules support adherence to proper design of test suites.
+Design rules will help you create and maintain test suites that adhere to proper design and good practices.
 
 Identifier | Name | Description
 -----------|------|------------

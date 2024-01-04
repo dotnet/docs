@@ -1,10 +1,10 @@
 ---
-title: .NET - introduction and overview
-description: Learn about .NET (and .NET Core). .NET is a free, open-source development platform for building many kinds of apps.
-ms.date: 11/15/2023
+title: Introduction to .NET
+description: Learn about .NET. .NET is a free, open-source development platform for building many kinds of apps.
+ms.date: 1/5/2024
 ms.custom: "updateeachrelease"
 ---
-# What is .NET? Introduction and overview
+# Introduction to NET
 
 .NET is a free, cross-platform, [open-source developer platform](https://github.com/dotnet/core) for building [many kinds of applications](apps.md). It can run programs written in [multiple languages](../fundamentals/languages.md), with [C#](../csharp/index.yml) being the most popular. It relies on a [high-performance](https://devblogs.microsoft.com/dotnet/category/performance/) runtime that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/).
 
@@ -24,7 +24,7 @@ The .NET platform has been designed to deliver productivity, performance, securi
 
 .NET is maintained by Microsoft and the community. It is regularly updated to ensure users deploy secure and reliable applications to production.
 
-## Overview
+## Components
 
 .NET includes the following components:
 

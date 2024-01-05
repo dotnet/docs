@@ -11,16 +11,6 @@ This article describes the metrics built-in for ASP.NET Core produced using the
 <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> API. For a listing of metrics based on the older [EventCounters](event-counters.md) API,
 see [here](available-counters.md).
 
-ASP.NET Core metrics are grouped into meters:
-
-- [`Microsoft.AspNetCore.Hosting`](#microsoftaspnetcorehosting)
-- [`Microsoft.AspNetCore.Routing`](#microsoftaspnetcorerouting)
-- [`Microsoft.AspNetCore.Diagnostics`](#microsoftaspnetcorediagnostics)
-- [`Microsoft.AspNetCore.RateLimiting`](#microsoftaspnetcoreratelimiting)
-- [`Microsoft.AspNetCore.HeaderParsing`](#microsoftaspnetcoreheaderparsing)
-- [`Microsoft.AspNetCore.Server.Kestrel`](#microsoftaspnetcoreserverkestrel)
-- [`Microsoft.AspNetCore.Http.Connections`](#microsoftaspnetcorehttpconnections)
-
 > [!TIP]
 > For more information about how to collect, report, enrich, and test ASP.NET Core metrics, see [Using ASP.NET Core metrics](/aspnet/core/log-mon/metrics/metrics).
 
@@ -43,7 +33,6 @@ The `Microsoft.AspNetCore.Hosting` metrics report high-level information about H
 | `error.type` | string | Describes a class of error the operation ended with. | `timeout`; `name_resolution_error`; `500` | If request has ended with an error. |
 | `http.request.method` | string | HTTP request method. | `GET`; `POST`; `HEAD` | Always |
 | `http.response.status_code` | int | [HTTP response status code](https://tools.ietf.org/html/rfc7231#section-6). | `200` | If one was sent. |
-| `network.protocol.name` | string | [OSI application layer](https://osi-model.com/application-layer/) or non-OSI equivalent. | `amqp`; `http`; `mqtt` | Always |
 | `network.protocol.version` | string | Version of the protocol specified in `network.protocol.name`. | `3.1.1` | Always |
 | `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https` | Always |
 | `aspnetcore.request.is_unhandled` | boolean | True when the request wasn't handled by the application pipeline. | `true` | If the request was unhandled. |
@@ -65,7 +54,7 @@ Available staring in: ASP.NET Core 8.0
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `http.server.active_requests` | UpDownCounter | `{request}` | Measures the number of concurrent HTTP requests that are currently in-flight. |
+| [`http.server.active_requests`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-http-metrics/#metric-httpclientactive_requests) | UpDownCounter | `{request}` | Measures the number of concurrent HTTP requests that are currently in-flight. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -84,7 +73,7 @@ The `Microsoft.AspNetCore.Hosting` metrics report information about [routing HTT
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `aspnetcore.routing.match_attempts` | Counter | `{match_attempt}` | Number of requests that were attempted to be matched to an endpoint. |
+| [`aspnetcore.routing.match_attempts`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-aspnetcore-metrics/#metric-aspnetcoreroutingmatch_attempts) | Counter | `{match_attempt}` | Number of requests that were attempted to be matched to an endpoint. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -96,11 +85,15 @@ Available staring in: ASP.NET Core 8.0
 
 ## `Microsoft.AspNetCore.Diagnostics`
 
+The `Microsoft.AspNetCore.Diagnostics` metrics report information about ASP.NET Core diagnostics:
+
+- [`aspnetcore.diagnostics.exceptions`](#metric-aspnetcorediagnosticsexceptions)
+
 ### Metric: `aspnetcore.diagnostics.exceptions`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `aspnetcore.diagnostics.exceptions` | Counter | `{exception}` | Number of exceptions caught by exception handling middleware. |
+| [`aspnetcore.diagnostics.exceptions`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-aspnetcore-metrics/#metric-aspnetcorediagnosticsexceptions) | Counter | `{exception}` | Number of exceptions caught by exception handling middleware. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -112,11 +105,19 @@ Available staring in: ASP.NET Core 8.0
 
 ## `Microsoft.AspNetCore.RateLimiting`
 
+The `Microsoft.AspNetCore.RateLimiting` metrics report information about [ASP.NET Core rate-limiting middleware](/aspnet/core/performance/rate-limit):
+
+  - [`aspnetcore.rate_limiting.active_request_leases`](#metric-aspnetcorerate_limitingactive_request_leases)
+  - [`aspnetcore.rate_limiting.request_lease.duration`](#metric-aspnetcorerate_limitingrequest_leaseduration)
+  - [`aspnetcore.rate_limiting.queued_requests`](#metric-aspnetcorerate_limitingqueued_requests)
+  - [`aspnetcore.rate_limiting.request.time_in_queue`](#metric-aspnetcorerate_limitingrequesttime_in_queue)
+  - [`aspnetcore.rate_limiting.requests`](#metric-aspnetcorerate_limitingrequests)
+
 ### Metric: `aspnetcore.rate_limiting.active_request_leases`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `aspnetcore.rate_limiting.active_request_leases` | UpDownCounter | `{request}` | Number of requests that are currently active on the server that hold a rate limiting lease. |
+| [`aspnetcore.rate_limiting.active_request_leases`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-aspnetcore-metrics/#metric-aspnetcorerate_limitingactive_request_leases) | UpDownCounter | `{request}` | Number of requests that are currently active on the server that hold a rate limiting lease. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -128,7 +129,7 @@ Available staring in: ASP.NET Core 8.0
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `aspnetcore.rate_limiting.request_lease.duration` | Histogram | `s` | The duration of the rate limiting lease held by requests on the server. |
+| [`aspnetcore.rate_limiting.request_lease.duration`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-aspnetcore-metrics/#metric-aspnetcorerate_limitingrequest_leaseduration) | Histogram | `s` | The duration of the rate limiting lease held by requests on the server. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -140,7 +141,7 @@ Available staring in: ASP.NET Core 8.0
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `aspnetcore.rate_limiting.queued_requests` | UpDownCounter | `{request}` | Number of requests that are currently queued waiting to acquire a rate limiting lease. |
+| [`aspnetcore.rate_limiting.queued_requests`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-aspnetcore-metrics/#metric-aspnetcorerate_limitingqueued_requests) | UpDownCounter | `{request}` | Number of requests that are currently queued waiting to acquire a rate limiting lease. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -152,7 +153,7 @@ Available staring in: ASP.NET Core 8.0
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `aspnetcore.rate_limiting.request.time_in_queue` | Histogram | `s` | The time a request spent in a queue waiting to acquire a rate limiting lease. |
+| [`aspnetcore.rate_limiting.request.time_in_queue`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-aspnetcore-metrics/#metric-aspnetcorerate_limitingrequesttime_in_queue) | Histogram | `s` | The time a request spent in a queue waiting to acquire a rate limiting lease. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -165,7 +166,7 @@ Available staring in: ASP.NET Core 8.0
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `aspnetcore.rate_limiting.requests` | Counter | `{request}` | Number of requests that tried to acquire a rate limiting lease. |
+| [`aspnetcore.rate_limiting.requests`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-aspnetcore-metrics/#metric-aspnetcorerate_limitingrequests) | Counter | `{request}` | Number of requests that tried to acquire a rate limiting lease. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -175,6 +176,11 @@ Available staring in: ASP.NET Core 8.0
 Available staring in: ASP.NET Core 8.0
 
 ## `Microsoft.AspNetCore.HeaderParsing`
+
+The `Microsoft.AspNetCore.HeaderParsing` metrics report information about [ASP.NET Core header parsing](https://www.nuget.org/packages/Microsoft.AspNetCore.HeaderParsing):
+
+  - [`aspnetcore.header_parsing.parse_errors`](#metric-aspnetcoreheader_parsingparse_errors)
+  - [`aspnetcore.header_parsing.cache_accesses`](#metric-aspnetcoreheader_parsingcache_accesses)
 
 ### Metric: `aspnetcore.header_parsing.parse_errors`
 
@@ -206,11 +212,22 @@ Available starting in: .NET 8.0.
 
 ## `Microsoft.AspNetCore.Server.Kestrel`
 
+The `Microsoft.AspNetCore.Server.Kestrel` metrics report information about [ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel):
+
+  - [`kestrel.active_connections`](#metric-kestrelactive_connections)
+  - [`kestrel.connection.duration`](#metric-kestrelconnectionduration)
+  - [`kestrel.rejected_connections`](#metric-kestrelrejected_connections)
+  - [`kestrel.queued_connections`](#metric-kestrelqueued_connections)
+  - [`kestrel.queued_requests`](#metric-kestrelqueued_requests)
+  - [`kestrel.upgraded_connections`](#metric-kestrelupgraded_connections)
+  - [`kestrel.tls_handshake.duration`](#metric-kestreltls_handshakeduration)
+  - [`kestrel.active_tls_handshakes`](#metric-kestrelactive_tls_handshakes)
+
 ### Metric: `kestrel.active_connections`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `kestrel.active_connections` | UpDownCounter | `{connection}` | Number of connections that are currently active on the server. |
+| [`kestrel.active_connections`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-kestrel-metrics/#metric-kestrelactive_connections) | UpDownCounter | `{connection}` | Number of connections that are currently active on the server. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -225,7 +242,7 @@ Available staring in: ASP.NET Core 8.0
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `kestrel.connection.duration` | Histogram | `s` | The duration of connections on the server. |
+| [`kestrel.connection.duration`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-kestrel-metrics/#metric-kestrelconnectionduration) | Histogram | `s` | The duration of connections on the server. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -244,7 +261,7 @@ Available staring in: ASP.NET Core 8.0
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `kestrel.rejected_connections` | Counter | `{connection}` | Number of connections rejected by the server. |
+| [`kestrel.rejected_connections`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-kestrel-metrics/#metric-kestrelrejected_connections) | Counter | `{connection}` | Number of connections rejected by the server. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -261,7 +278,7 @@ Available staring in: ASP.NET Core 8.0
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `kestrel.queued_connections` | UpDownCounter | `{connection}` | Number of connections that are currently queued and are waiting to start. |
+| [`kestrel.queued_connections`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-kestrel-metrics/#metric-kestrelqueued_connections) | UpDownCounter | `{connection}` | Number of connections that are currently queued and are waiting to start. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -276,7 +293,7 @@ Available staring in: ASP.NET Core 8.0
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `kestrel.queued_requests` | UpDownCounter | `{request}` | Number of HTTP requests on multiplexed connections (HTTP/2 and HTTP/3) that are currently queued and are waiting to start. |
+| [`kestrel.queued_requests`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-kestrel-metrics/#metric-kestrelqueued_requests) | UpDownCounter | `{request}` | Number of HTTP requests on multiplexed connections (HTTP/2 and HTTP/3) that are currently queued and are waiting to start. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -293,7 +310,7 @@ Available staring in: ASP.NET Core 8.0
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `kestrel.upgraded_connections` | UpDownCounter | `{connection}` | Number of connections that are currently upgraded (WebSockets). |
+| [`kestrel.upgraded_connections`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-kestrel-metrics/#metric-kestrelupgraded_connections) | UpDownCounter | `{connection}` | Number of connections that are currently upgraded (WebSockets). |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -310,7 +327,7 @@ Available staring in: ASP.NET Core 8.0
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `kestrel.tls_handshake.duration` | Histogram | `s` | The duration of TLS handshakes on the server. |
+| [`kestrel.tls_handshake.duration`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-kestrel-metrics/#metric-kestreltls_handshakeduration) | Histogram | `s` | The duration of TLS handshakes on the server. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -327,7 +344,7 @@ Available staring in: ASP.NET Core 8.0
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `kestrel.active_tls_handshakes` | UpDownCounter | `{handshake}` | Number of TLS handshakes that are currently in progress on the server. |
+| [`kestrel.active_tls_handshakes`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-kestrel-metrics/#metric-kestrelactive_tls_handshakes) | UpDownCounter | `{handshake}` | Number of TLS handshakes that are currently in progress on the server. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -340,11 +357,16 @@ Available staring in: ASP.NET Core 8.0
 
 ## `Microsoft.AspNetCore.Http.Connections`
 
+The `Microsoft.AspNetCore.Http.Connections` metrics report information about [ASP.NET Core SignalR connections](/aspnet/core/signalr/introduction):
+
+  - [`signalr.server.connection.duration`](#instrument-signalrserverconnectionduration)
+  - [`signalr.server.active_connections`](#instrument-signalrserveractive_connections)
+
 ### Metric: `signalr.server.connection.duration`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `signalr.server.connection.duration` | Histogram | `s` | The duration of connections on the server. |
+| [`signalr.server.connection.duration`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-signalr-metrics/#metric-signalrserverconnectionduration) | Histogram | `s` | The duration of connections on the server. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -357,7 +379,7 @@ Available staring in: ASP.NET Core 8.0
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `signalr.server.active_connections` | UpDownCounter | `{connection}` | Number of connections that are currently active on the server. |
+| [`signalr.server.active_connections`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-signalr-metrics/#metric-signalrserveractive_connections) | UpDownCounter | `{connection}` | Number of connections that are currently active on the server. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|

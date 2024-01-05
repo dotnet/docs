@@ -11,7 +11,7 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
-`Type` is the root of the <xref:System.Reflection> functionality and is the primary way to access metadata. Use the members of <xref:System.Type> to get information about a type declaration, about the members of a type (such as the constructors, methods, fields, properties, and events of a class), as well as the module and the assembly in which the class is deployed.
+The <xref:System.Type> class is the root of the <xref:System.Reflection> functionality and is the primary way to access metadata. Use the members of <xref:System.Type> to get information about a type declaration, about the members of a type (such as the constructors, methods, fields, properties, and events of a class), as well as the module and the assembly in which the class is deployed.
 
 No permissions are required for code to use reflection to get information about types and their members, regardless of their access levels. No permissions are required for code to use reflection to access public members, or other members whose access levels would make them visible during normal compilation. However, in order for your code to use reflection to access members that would normally be inaccessible, such as private or internal methods, or protected fields of a type your class does not inherit, your code must have <xref:System.Security.Permissions.ReflectionPermission>. See [Security Considerations for Reflection](../../framework/reflection-and-codedom/security-considerations-for-reflection.md).
 

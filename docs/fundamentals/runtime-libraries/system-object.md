@@ -7,6 +7,8 @@ ms.date: 12/31/2023
 
 [!INCLUDE [context](includes/context.md)]
 
+The <xref:System.Object> class is the ultimate base class of all .NET classes; it is the root of the type hierarchy.
+
 Because all classes in .NET are derived from <xref:System.Object>, every method defined in the <xref:System.Object> class is available in all objects in the system. Derived classes can and do override some of these methods, including:
 
 - <xref:System.Object.Equals%2A>: Supports comparisons between objects.

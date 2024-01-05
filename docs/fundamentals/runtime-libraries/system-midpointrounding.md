@@ -7,7 +7,7 @@ ms.date: 12/31/2023
 
 [!INCLUDE [context](includes/context.md)]
 
-Use the `MidpointRounding` enumeration with appropriate overloads of <xref:System.Math.Round%2A?displayProperty=nameWithType>, <xref:System.MathF.Round%2A?displayProperty=nameWithType>, and <xref:System.Decimal.Round%2A?displayProperty=nameWithType> to provide more control of the rounding process.
+Use the <xref:System.MidpointRounding> enumeration with appropriate overloads of <xref:System.Math.Round%2A?displayProperty=nameWithType>, <xref:System.MathF.Round%2A?displayProperty=nameWithType>, and <xref:System.Decimal.Round%2A?displayProperty=nameWithType> to provide more control of the rounding process.
 
 There are two overall rounding strategies&mdash;*round to nearest* and *directed rounding*&mdash;and each enumeration field participates in exactly one of these strategies.
 

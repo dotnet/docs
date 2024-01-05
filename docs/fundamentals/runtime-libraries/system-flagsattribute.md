@@ -11,6 +11,8 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
+The <xref:System.FlagsAttribute> attribute indicates that an enumeration can be treated as a bit field; that is, a set of flags.
+
 Bit fields are generally used for lists of elements that might occur in combination, whereas enumeration constants are generally used for lists of mutually exclusive elements. Therefore, bit fields are designed to be combined with a bitwise `OR` operation to generate unnamed values, whereas enumerated constants are not. Languages vary in their use of bit fields compared to enumeration constants.
 
 ## Attributes of the FlagsAttribute

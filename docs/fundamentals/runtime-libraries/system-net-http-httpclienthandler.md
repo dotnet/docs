@@ -7,7 +7,7 @@ ms.date: 12/31/2023
 
 [!INCLUDE [context](includes/context.md)]
 
-The `HttpClientHandler` class and classes derived from it enable developers to configure a variety of options ranging from proxies to authentication.
+The <xref:System.Net.Http.HttpClientHandler> class and classes derived from it enable developers to configure a variety of options ranging from proxies to authentication.
 
 ## HttpClientHandler in .NET Core
 

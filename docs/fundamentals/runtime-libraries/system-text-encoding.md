@@ -10,9 +10,11 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
+The <xref:System.Text.Encoding> class represents a character encoding.
+
 Encoding is the process of transforming a set of Unicode characters into a sequence of bytes. In contrast, decoding is the process of transforming a sequence of encoded bytes into a set of Unicode characters. For information about the Unicode Transformation Formats (UTFs) and other encodings supported by <xref:System.Text.Encoding>, see [Character Encoding in .NET](../../standard/base-types/character-encoding.md).
 
-Note that <xref:System.Text.Encoding> is intended to operate on Unicode characters instead of arbitrary binary data, such as byte arrays. If you must encode arbitrary binary data into text, you should use a protocol such as uuencode, which is implemented by methods such as <xref:System.Convert.ToBase64CharArray%2A?displayProperty=nameWithType>.
+<xref:System.Text.Encoding> is intended to operate on Unicode characters instead of arbitrary binary data, such as byte arrays. If you must encode arbitrary binary data into text, you should use a protocol such as uuencode, which is implemented by methods such as <xref:System.Convert.ToBase64CharArray%2A?displayProperty=nameWithType>.
 
 .NET provides the following implementations of the <xref:System.Text.Encoding> class to support current Unicode encodings and other encodings:
 

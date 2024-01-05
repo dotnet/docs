@@ -10,6 +10,8 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
+The <xref:System.Drawing.Drawing2D.Matrix> class encapsulates a 3-by-3 affine matrix that represents a geometric transform.
+
 In GDI+, you can store an affine transformation in a <xref:System.Drawing.Drawing2D.Matrix> object. Because the third column of a matrix that represents an affine transformation is always (0, 0, 1), you specify only the six numbers in the first two columns when you construct a <xref:System.Drawing.Drawing2D.Matrix> object. The statement `Matrix myMatrix = new Matrix(0, 1, -1, 0, 3, 4)` constructs the matrix shown in the following figure.
 
 ![Matrix.](./media/gdip-art10.gif)

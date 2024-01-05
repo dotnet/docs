@@ -7,11 +7,13 @@ ms.date: 01/02/2024
 
 [!INCLUDE [context](includes/context.md)]
 
+The <xref:System.Collections.ObjectModel.ObservableCollection%601> class represents a dynamic data collection that provides notifications when items get added or removed, or when the whole list is refreshed.
+
 In many cases, the data that you work with is a collection of objects. For example, a common scenario in data binding is to use an <xref:System.Windows.Controls.ItemsControl> such as a <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.ListView>, or <xref:System.Windows.Controls.TreeView> to display a collection of records.
 
 You can enumerate over any collection that implements the <xref:System.Collections.IEnumerable> interface. However, to set up dynamic bindings so that insertions or deletions in the collection update the UI automatically, the collection must implement the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface. This interface exposes the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event, an event that should be raised whenever the underlying collection changes.
 
-WPF provides the <xref:System.Collections.ObjectModel.ObservableCollection%601> class, which is a built-in implementation of a data collection that implements the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface.
+The <xref:System.Collections.ObjectModel.ObservableCollection%601> class is a data collection type that implements the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface.
 
 Before implementing your own collection, consider using <xref:System.Collections.ObjectModel.ObservableCollection%601> or one of the existing collection classes, such as <xref:System.Collections.Generic.List%601>, <xref:System.Collections.ObjectModel.Collection%601>, and <xref:System.ComponentModel.BindingList%601>, among many others. If you have an advanced scenario and want to implement your own collection, consider using <xref:System.Collections.IList>, which provides a non-generic collection of objects that can be individually accessed by index. Implementing <xref:System.Collections.IList> provides the best performance with the data binding engine.
 

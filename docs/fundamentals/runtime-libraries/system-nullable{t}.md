@@ -7,6 +7,8 @@ ms.date: 12/31/2023
 
 [!INCLUDE [context](includes/context.md)]
 
+The <xref:System.Nullable> class represents a value type that can be assigned `null`.
+
 A type is said to be nullable if it can be assigned a value or can be assigned `null`, which means the type has no value whatsoever. By default, all reference types, such as <xref:System.String>, are nullable, but all value types, such as <xref:System.Int32>, are not.
 
 In C# and Visual Basic, you mark a value type as nullable by using the `?` notation after the value type. For example, `int?` in C# or `Integer?` in Visual Basic declares an integer value type that can be assigned `null`.

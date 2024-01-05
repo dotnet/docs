@@ -11,7 +11,7 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
-This class represents a string-like object whose value is a mutable sequence of characters.
+The <xref:System.Text.StringBuilder> class represents a string-like object whose value is a mutable sequence of characters.
 
 ## StringBuilder versus String type
 

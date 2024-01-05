@@ -11,7 +11,7 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
-The static methods of the <xref:System.Convert> class are primarily used to support conversion to and from the base data types in .NET. The supported base types are <xref:System.Boolean>, <xref:System.Char>, <xref:System.SByte>, <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, <xref:System.Single>, <xref:System.Double>, <xref:System.Decimal>, <xref:System.DateTime> and <xref:System.String>. In addition, the <xref:System.Convert> class includes methods to support other kinds of conversions.
+The static <xref:System.Convert> class contains methods that are primarily used to support conversion to and from the base data types in .NET. The supported base types are <xref:System.Boolean>, <xref:System.Char>, <xref:System.SByte>, <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, <xref:System.Single>, <xref:System.Double>, <xref:System.Decimal>, <xref:System.DateTime> and <xref:System.String>. In addition, the <xref:System.Convert> class includes methods to support other kinds of conversions.
 
 ## Conversions to and from base types
 

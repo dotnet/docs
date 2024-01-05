@@ -13,6 +13,20 @@ dev_langs:
 
 [!INCLUDE[japanese-era-note](./includes/calendar-era.md)]
 
+## Overview
+
+The <xref:System.DateTime> value type represents dates and times with values ranging from 00:00:00 (midnight), January 1, 0001 Anno Domini (Common Era) through 11:59:59 P.M., December 31, 9999 A.D. (C.E.) in the Gregorian calendar.
+
+Time values are measured in 100-nanosecond units called ticks. A particular date is the number of ticks since 12:00 midnight, January 1, 0001 A.D. (C.E.) in the <xref:System.Globalization.GregorianCalendar> calendar. The number excludes ticks that would be added by leap seconds. For example, a ticks value of 31241376000000000L represents the date Friday, January 01, 0100 12:00:00 midnight. A <xref:System.DateTime> value is always expressed in the context of an explicit or default calendar.
+
+> [!NOTE]
+> If you're working with a ticks value that you want to convert to some other time interval, such as minutes or seconds, you should use the <xref:System.TimeSpan.TicksPerDay?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerHour?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerMinute?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerSecond?displayProperty=nameWithType>, or <xref:System.TimeSpan.TicksPerMillisecond?displayProperty=nameWithType> constant to perform the conversion. For example, to add the number of seconds represented by a specified number of ticks to the <xref:System.DateTime.Second> component of a <xref:System.DateTime> value, you can use the expression `dateValue.Second + nTicks/Timespan.TicksPerSecond`.
+
+You can view the source for the entire set of examples from this article in either [Visual Basic](https://github.com/dotnet/dotnet-api-docs/tree/main/snippets/visualbasic/System.DateTime/), [F#](https://github.com/dotnet/dotnet-api-docs/tree/main/snippets/System.DateTime/), or [C#](https://github.com/dotnet/dotnet-api-docs/tree/main/snippets/csharp/System.DateTime/).
+
+> [!NOTE]
+> An alternative to the <xref:System.DateTime> structure for working with date and time values in particular time zones is the <xref:System.DateTimeOffset> structure. The <xref:System.DateTimeOffset> structure stores date and time information in a private <xref:System.DateTime> field and the number of minutes by which that date and time differs from UTC in a private <xref:System.Int16> field. This makes it possible for a <xref:System.DateTimeOffset> value to reflect the time in a particular time zone, whereas a <xref:System.DateTime> value can unambiguously reflect only UTC and the local time zone's time. For a discussion about when to use the <xref:System.DateTime> structure or the <xref:System.DateTimeOffset> structure when working with date and time values, see [Choosing Between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo](../../standard/datetime/choosing-between-datetime.md).
+
 ## Quick links to example code
 
 [!INCLUDE[interactive-note](./includes/csharp-interactive-with-utc-note.md)]
@@ -60,20 +74,6 @@ This article includes several examples that use the `DateTime` type:
 - [Persisting date and time values as strings in a culture and time invariant format](#persistence-02)
 - [Persisting date and time values as integers](#persistence-03)
 - [Persisting date and time values using the `XmlSerializer`](#persistence-04)
-
-## Overview
-
-The <xref:System.DateTime> value type represents dates and times with values ranging from 00:00:00 (midnight), January 1, 0001 Anno Domini (Common Era) through 11:59:59 P.M., December 31, 9999 A.D. (C.E.) in the Gregorian calendar.
-
-Time values are measured in 100-nanosecond units called ticks. A particular date is the number of ticks since 12:00 midnight, January 1, 0001 A.D. (C.E.) in the <xref:System.Globalization.GregorianCalendar> calendar. The number excludes ticks that would be added by leap seconds. For example, a ticks value of 31241376000000000L represents the date Friday, January 01, 0100 12:00:00 midnight. A <xref:System.DateTime> value is always expressed in the context of an explicit or default calendar.
-
-> [!NOTE]
-> If you're working with a ticks value that you want to convert to some other time interval, such as minutes or seconds, you should use the <xref:System.TimeSpan.TicksPerDay?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerHour?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerMinute?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerSecond?displayProperty=nameWithType>, or <xref:System.TimeSpan.TicksPerMillisecond?displayProperty=nameWithType> constant to perform the conversion. For example, to add the number of seconds represented by a specified number of ticks to the <xref:System.DateTime.Second> component of a <xref:System.DateTime> value, you can use the expression `dateValue.Second + nTicks/Timespan.TicksPerSecond`.
-
-You can view the source for the entire set of examples from this article in either [Visual Basic](https://github.com/dotnet/dotnet-api-docs/tree/main/snippets/visualbasic/System.DateTime/), [F#](https://github.com/dotnet/dotnet-api-docs/tree/main/snippets/System.DateTime/), or [C#](https://github.com/dotnet/dotnet-api-docs/tree/main/snippets/csharp/System.DateTime/).
-
-> [!NOTE]
-> An alternative to the <xref:System.DateTime> structure for working with date and time values in particular time zones is the <xref:System.DateTimeOffset> structure. The <xref:System.DateTimeOffset> structure stores date and time information in a private <xref:System.DateTime> field and the number of minutes by which that date and time differs from UTC in a private <xref:System.Int16> field. This makes it possible for a <xref:System.DateTimeOffset> value to reflect the time in a particular time zone, whereas a <xref:System.DateTime> value can unambiguously reflect only UTC and the local time zone's time. For a discussion about when to use the <xref:System.DateTime> structure or the <xref:System.DateTimeOffset> structure when working with date and time values, see [Choosing Between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo](../../standard/datetime/choosing-between-datetime.md).
 
 ## Initialize a DateTime object
 

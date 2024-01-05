@@ -56,10 +56,3 @@ The following table shows the <xref:System.Collections.Generic.HashSet%601> oper
 |<xref:System.Collections.Generic.HashSet%601.IsSupersetOf%2A>|Not provided.|
 |<xref:System.Collections.Generic.HashSet%601.IsProperSupersetOf%2A>|Not provided.|
 |<xref:System.Collections.Generic.HashSet%601.SetEquals%2A>|Not provided.|
-
-## Examples
-
-The following example demonstrates how to merge two disparate sets. This example creates two <xref:System.Collections.Generic.HashSet%601> objects and populates them with even and odd numbers, respectively. A third <xref:System.Collections.Generic.HashSet%601> object is created from the set that contains the even numbers. The example then calls the <xref:System.Collections.Generic.HashSet%601.UnionWith%2A> method, which adds the odd number set to the third set.
-
-:::code language="csharp" source="./snippets/System.Collections.Generic/HashSetT/Overview/csharp/Program.cs" interactive="try-dotnet-method" id="Snippet01":::
-:::code language="vb" source="./snippets/System.Collections.Generic/HashSet/Overview/vb/Program.vb" id="Snippet01":::

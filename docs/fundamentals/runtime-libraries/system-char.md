@@ -11,7 +11,7 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
-.NET uses the <xref:System.Char> structure to represent Unicode code points by using UTF-16 encoding. The value of a <xref:System.Char> object is its 16-bit numeric (ordinal) value.
+The <xref:System.Char> structure represents Unicode code points by using UTF-16 encoding. The value of a <xref:System.Char> object is its 16-bit numeric (ordinal) value.
 
 If you aren't familiar with Unicode, scalar values, code points, surrogate pairs, UTF-16, and the <xref:System.Text.Rune> type, see [Introduction to character encoding in .NET](../../standard/base-types/character-encoding-introduction.md).
 
@@ -95,11 +95,3 @@ The <xref:System.Char> structure provides methods to compare <xref:System.Char> 
 ## Char values and interop
 
 When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16 encoded code unit, is passed to unmanaged code, the interop marshaller converts the character set to ANSI by default. You can apply the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute to platform invoke declarations and the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute to a COM interop declaration to control which character set a marshaled <xref:System.Char> type uses.
-
-## Examples
-
-The following code example demonstrates some of the methods in <xref:System.Char>.
-
-:::code language="csharp" source="./snippets/System/Char/Overview/csharp/charstructure.cs" interactive="try-dotnet" id="Snippet23":::
-:::code language="fsharp" source="./snippets/System/Char/Overview/fsharp/charstructure.fs" id="Snippet23":::
-:::code language="vb" source="./snippets/System/Char/Overview/vb/charstructure.vb" id="Snippet23":::

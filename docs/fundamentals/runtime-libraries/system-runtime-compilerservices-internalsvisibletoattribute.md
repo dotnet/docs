@@ -10,6 +10,8 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
+The <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute specifies that types that are ordinarily visible only within the current assembly are visible to a specified assembly.
+
 Ordinarily, types and members with [`internal` scope in C#](../../csharp/language-reference/keywords/internal.md) or [`Friend` scope in Visual Basic](../../visual-basic/language-reference/modifiers/friend.md) are visible only in the assembly in which they are defined. Types and members with [`protected internal`](../../csharp/language-reference/keywords/protected-internal.md) scope ([`Protected Friend`](../../visual-basic/language-reference/modifiers/protected-friend.md) scope in Visual Basic) are visible only in their own assembly or to types that derive from their containing class. Types and members with [`private protected`](../../csharp/language-reference/keywords/private-protected.md) scope ([`Private Protected`](../../visual-basic/language-reference/modifiers/private-protected.md) scope in Visual Basic) are visible in the containing class or in types that derive from their containing class within the current assembly
 
 The <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute makes these types and members also visible to the types in a specified assembly, which is known as a friend assembly. This applies only to `internal` (`Friend` in Visual Basic), `protected internal`(`Protected Friend` in Visual Basic), and `private protected` (`Private Protected` in Visual Basic) members, but not `private` ones.

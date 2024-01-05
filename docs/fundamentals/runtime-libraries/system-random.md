@@ -11,6 +11,8 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
+The <xref:System.Random> class represents a pseudo-random number generator, which is an algorithm that produces a sequence of numbers that meet certain statistical requirements for randomness.
+
 Pseudo-random numbers are chosen with equal probability from a finite set of numbers. The chosen numbers are not completely random because a mathematical algorithm is used to select them, but they are sufficiently random for practical purposes. The implementation of the <xref:System.Random> class is based on a modified version of Donald E. Knuth's subtractive random number generator algorithm. For more information, see D. E. Knuth. *The Art of Computer Programming, Volume 2: Seminumerical Algorithms*. Addison-Wesley, Reading, MA, third edition, 1997.
 
 To generate a cryptographically secure random number, such as one that's suitable for creating a random password, use the <xref:System.Security.Cryptography.RNGCryptoServiceProvider> class or derive a class from <xref:System.Security.Cryptography.RandomNumberGenerator?displayProperty=nameWithType>.

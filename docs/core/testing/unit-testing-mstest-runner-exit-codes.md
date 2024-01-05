@@ -26,3 +26,9 @@ The MSTest runner uses known exit codes to communicate test failure or app error
 | `10` | The exit code `10` indicates that the test adapter, Testing.Platform Test Framework, MSTest, NUnit, or xUnit, failed to run tests for an infrastructure reason unrelated to the test's self. An example is failing to create a fixture needed by tests. |
 
 To enable verbose logging and troubleshoot issues, see [MSTest runner extensions: Troubleshoot](unit-testing-mstest-runner-extensions.md#troubleshoot).
+
+## Ignoring specific exit codes
+
+MSTest runner is designed to be strict by default but allows for configurability. As such, it is possible for users to decide that some exit codes should be ignored (an exit code of `0` will be returned instead of the original exit code).
+
+You can use the `--ignore-exit-code` command line option or the `TESTINGPLATFORM_EXITCODE_IGNORE` environment variable, that accept a semi-colon separated list of exit codes to ignore (e.g. `--ignore-exit-code 2;3;8`). A common scenario is to consider that test failures should not result in a non-zero exit code (which corresponds to ignoring exit-code `2`).

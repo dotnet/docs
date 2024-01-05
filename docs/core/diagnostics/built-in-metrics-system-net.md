@@ -15,7 +15,7 @@ This article describes the networking metrics built-in for <xref:System.Net> pro
 
 ## `System.Net.NameResolution`
 
-The `System.Net.NameResolution` metrics report information about DNS name resolution by <xref:System.Net.Dns>:
+The `System.Net.NameResolution` metrics report DNS name resolution from <xref:System.Net.Dns>:
 
 - [`dns.lookup.duration`](#metric-dnslookupduration)
 
@@ -48,7 +48,7 @@ Available starting in: .NET 8
 
 ## `System.Net.Http`
 
-The `System.Net.Http` metrics report information about HTTP requests by <xref:System.Net.Http>:
+The `System.Net.Http` metrics report HTTP request and connection information from <xref:System.Net.Http>:
 
 - [`http.client.open_connections`](#metric-httpclientopen_connections)
 - [`http.client.connection.duration`](#metric-httpclientconnectionduration)

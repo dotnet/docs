@@ -12,7 +12,7 @@ This article describes the built-in metrics for diagnostic .NET extensions libra
 
 ## `Microsoft.Extensions.Diagnostics.HealthChecks`
 
-The `Microsoft.Extensions.Diagnostics.HealthChecks` metrics report health check information by [Microsoft.Extensions.Diagnostics.HealthChecks.Common](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks.Common):
+The `Microsoft.Extensions.Diagnostics.HealthChecks` metrics report health check information from [.NET health checks](diagnostic-health-checks.md):
 
 - [`dotnet.health_check.reports`](#metric-dotnethealth_checkreports)
 - [`dotnet.health_check.unhealthy_checks`](#metric-dotnethealth_checkunhealthy_checks)
@@ -60,7 +60,7 @@ Available starting in: .NET 8.0.
 
 ## `Microsoft.Extensions.Diagnostics.ResourceMonitoring`
 
-The `Microsoft.Extensions.Diagnostics.ResourceMonitoring` metrics report information resource by [resource monitoring](/dotnet/core/diagnostics/diagnostic-resource-monitoring):
+The `Microsoft.Extensions.Diagnostics.ResourceMonitoring` metrics report resource information from [resource monitoring](diagnostic-resource-monitoring.md):
 
 - [`process.cpu.utilization`](#metric-processcpuutilization)
 - [`dotnet.process.memory.virtual.utilization`](#metric-dotnetprocessmemoryvirtualutilization)

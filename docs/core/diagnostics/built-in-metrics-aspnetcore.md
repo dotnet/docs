@@ -16,7 +16,7 @@ see [here](available-counters.md).
 
 ## `Microsoft.AspNetCore.Hosting`
 
-The `Microsoft.AspNetCore.Hosting` metrics report high-level information about HTTP requests:
+The `Microsoft.AspNetCore.Hosting` metrics report high-level information about HTTP requests received by ASP.NET Core:
 
 - [`http.server.request.duration`](#metric-httpserverrequestduration)
 - [`http.server.active_requests`](#metric-httpserveractive_requests)
@@ -85,7 +85,7 @@ Available starting in: .NET 8.0.
 
 ## `Microsoft.AspNetCore.Diagnostics`
 
-The `Microsoft.AspNetCore.Diagnostics` metrics report information about ASP.NET Core diagnostics:
+The `Microsoft.AspNetCore.Diagnostics` metrics report diagnostics information from [ASP.NET Core error handling middleware](/aspnet/core/fundamentals/error-handling):
 
 - [`aspnetcore.diagnostics.exceptions`](#metric-aspnetcorediagnosticsexceptions)
 
@@ -105,7 +105,7 @@ Available starting in: .NET 8.0.
 
 ## `Microsoft.AspNetCore.RateLimiting`
 
-The `Microsoft.AspNetCore.RateLimiting` metrics report information about [ASP.NET Core rate-limiting middleware](/aspnet/core/performance/rate-limit):
+The `Microsoft.AspNetCore.RateLimiting` metrics report rate limiting information from [ASP.NET Core rate-limiting middleware](/aspnet/core/performance/rate-limit):
 
 - [`aspnetcore.rate_limiting.active_request_leases`](#metric-aspnetcorerate_limitingactive_request_leases)
 - [`aspnetcore.rate_limiting.request_lease.duration`](#metric-aspnetcorerate_limitingrequest_leaseduration)
@@ -212,7 +212,7 @@ Available starting in: .NET 8.0.
 
 ## `Microsoft.AspNetCore.Server.Kestrel`
 
-The `Microsoft.AspNetCore.Server.Kestrel` metrics report information about [ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel):
+The `Microsoft.AspNetCore.Server.Kestrel` metrics report HTTP connection information from [ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel):
 
 - [`kestrel.active_connections`](#metric-kestrelactive_connections)
 - [`kestrel.connection.duration`](#metric-kestrelconnectionduration)
@@ -357,7 +357,7 @@ Available starting in: .NET 8.0.
 
 ## `Microsoft.AspNetCore.Http.Connections`
 
-The `Microsoft.AspNetCore.Http.Connections` metrics report information about [ASP.NET Core SignalR connections](/aspnet/core/signalr/introduction):
+The `Microsoft.AspNetCore.Http.Connections` metrics report connection information from [ASP.NET Core SignalR](/aspnet/core/signalr/introduction):
 
 - [`signalr.server.connection.duration`](#metric-signalrserverconnectionduration)
 - [`signalr.server.active_connections`](#metric-signalrserveractive_connections)

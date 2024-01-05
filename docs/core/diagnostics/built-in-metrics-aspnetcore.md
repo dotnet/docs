@@ -359,8 +359,8 @@ Available starting in: .NET 8.0.
 
 The `Microsoft.AspNetCore.Http.Connections` metrics report information about [ASP.NET Core SignalR connections](/aspnet/core/signalr/introduction):
 
-- [`signalr.server.connection.duration`](#instrument-signalrserverconnectionduration)
-- [`signalr.server.active_connections`](#instrument-signalrserveractive_connections)
+- [`signalr.server.connection.duration`](#metric-signalrserverconnectionduration)
+- [`signalr.server.active_connections`](#metric-signalrserveractive_connections)
 
 ### Metric: `signalr.server.connection.duration`
 

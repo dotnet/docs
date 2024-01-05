@@ -146,7 +146,7 @@ sum by(http_connection_state) (http_client_open_connections{network_protocol_ver
 ## Enrichment
 
 *Enrichment* is the addition of custom tags (a.k.a. attributes or labels) to a metric. This is useful if an app wants to add a custom categorization to dashboards or alerts built with metrics.
-The [`http.client.request.duration`](../../../core/diagnostics/built-in-metrics-system-net.md#instrument-httpclientrequestduration) instrument supports enrichment by registering callbacks with the <xref:System.Net.Http.Metrics.HttpMetricsEnrichmentContext>.
+The [`http.client.request.duration`](../../../core/diagnostics/built-in-metrics-system-net.md#httpclientrequestduration) instrument supports enrichment by registering callbacks with the <xref:System.Net.Http.Metrics.HttpMetricsEnrichmentContext>.
 Note that this is a low-level API and a separate callback registration is needed for each `HttpRequestMessage`.
 
 A simple way to do the callback registration at a single place is to implement a custom <xref:System.Net.Http.DelegatingHandler>.
@@ -189,7 +189,7 @@ Nevertheless, as of .NET 8, only the `System.Net.Http` and the `System.Net.NameR
 
 Moreover, there are some semantical differences between Metrics and their matching EventCounters.
 For example, when using `HttpCompletionOption.ResponseContentRead`, the [`current-requests` EventCounter](../../../core/diagnostics/available-counters.md) considers a request to be active until the moment when the last byte of the request body has been read.
-Its metrics counterpart [`http.client.active_requests`](../../../core/diagnostics/built-in-metrics-system-net.md#instrument-httpclientactive_requests) doesn't include the time spent reading the response body when counting the active requests.
+Its metrics counterpart [`http.client.active_requests`](../../../core/diagnostics/built-in-metrics-system-net.md#httpclientactive_requests) doesn't include the time spent reading the response body when counting the active requests.
 
 ## Need more metrics?
 

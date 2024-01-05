@@ -147,6 +147,6 @@ Available starting in: .NET 8
 | `server.port` | int | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | If not default (`80` for `http` scheme, `443` for `https`) |
 | `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
 
-This metric counts how many requests are considered active. Requests are active for the same time period that is measured by the [http.client.request.duration](#instrument-httpclientrequestduration) instrument.
+This metric counts how many requests are considered active. Requests are active for the same time period that is measured by the [http.client.request.duration](#metric-httpclientrequestduration) instrument.
 
 Available starting in: .NET 8

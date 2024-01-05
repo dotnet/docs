@@ -107,11 +107,11 @@ Available starting in: .NET 8.0.
 
 The `Microsoft.AspNetCore.RateLimiting` metrics report information about [ASP.NET Core rate-limiting middleware](/aspnet/core/performance/rate-limit):
 
-  - [`aspnetcore.rate_limiting.active_request_leases`](#metric-aspnetcorerate_limitingactive_request_leases)
-  - [`aspnetcore.rate_limiting.request_lease.duration`](#metric-aspnetcorerate_limitingrequest_leaseduration)
-  - [`aspnetcore.rate_limiting.queued_requests`](#metric-aspnetcorerate_limitingqueued_requests)
-  - [`aspnetcore.rate_limiting.request.time_in_queue`](#metric-aspnetcorerate_limitingrequesttime_in_queue)
-  - [`aspnetcore.rate_limiting.requests`](#metric-aspnetcorerate_limitingrequests)
+- [`aspnetcore.rate_limiting.active_request_leases`](#metric-aspnetcorerate_limitingactive_request_leases)
+- [`aspnetcore.rate_limiting.request_lease.duration`](#metric-aspnetcorerate_limitingrequest_leaseduration)
+- [`aspnetcore.rate_limiting.queued_requests`](#metric-aspnetcorerate_limitingqueued_requests)
+- [`aspnetcore.rate_limiting.request.time_in_queue`](#metric-aspnetcorerate_limitingrequesttime_in_queue)
+- [`aspnetcore.rate_limiting.requests`](#metric-aspnetcorerate_limitingrequests)
 
 ### Metric: `aspnetcore.rate_limiting.active_request_leases`
 
@@ -179,8 +179,8 @@ Available starting in: .NET 8.0.
 
 The `Microsoft.AspNetCore.HeaderParsing` metrics report information about [ASP.NET Core header parsing](https://www.nuget.org/packages/Microsoft.AspNetCore.HeaderParsing):
 
-  - [`aspnetcore.header_parsing.parse_errors`](#metric-aspnetcoreheader_parsingparse_errors)
-  - [`aspnetcore.header_parsing.cache_accesses`](#metric-aspnetcoreheader_parsingcache_accesses)
+- [`aspnetcore.header_parsing.parse_errors`](#metric-aspnetcoreheader_parsingparse_errors)
+- [`aspnetcore.header_parsing.cache_accesses`](#metric-aspnetcoreheader_parsingcache_accesses)
 
 ### Metric: `aspnetcore.header_parsing.parse_errors`
 
@@ -214,14 +214,14 @@ Available starting in: .NET 8.0.
 
 The `Microsoft.AspNetCore.Server.Kestrel` metrics report information about [ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel):
 
-  - [`kestrel.active_connections`](#metric-kestrelactive_connections)
-  - [`kestrel.connection.duration`](#metric-kestrelconnectionduration)
-  - [`kestrel.rejected_connections`](#metric-kestrelrejected_connections)
-  - [`kestrel.queued_connections`](#metric-kestrelqueued_connections)
-  - [`kestrel.queued_requests`](#metric-kestrelqueued_requests)
-  - [`kestrel.upgraded_connections`](#metric-kestrelupgraded_connections)
-  - [`kestrel.tls_handshake.duration`](#metric-kestreltls_handshakeduration)
-  - [`kestrel.active_tls_handshakes`](#metric-kestrelactive_tls_handshakes)
+- [`kestrel.active_connections`](#metric-kestrelactive_connections)
+- [`kestrel.connection.duration`](#metric-kestrelconnectionduration)
+- [`kestrel.rejected_connections`](#metric-kestrelrejected_connections)
+- [`kestrel.queued_connections`](#metric-kestrelqueued_connections)
+- [`kestrel.queued_requests`](#metric-kestrelqueued_requests)
+- [`kestrel.upgraded_connections`](#metric-kestrelupgraded_connections)
+- [`kestrel.tls_handshake.duration`](#metric-kestreltls_handshakeduration)
+- [`kestrel.active_tls_handshakes`](#metric-kestrelactive_tls_handshakes)
 
 ### Metric: `kestrel.active_connections`
 
@@ -359,8 +359,8 @@ Available starting in: .NET 8.0.
 
 The `Microsoft.AspNetCore.Http.Connections` metrics report information about [ASP.NET Core SignalR connections](/aspnet/core/signalr/introduction):
 
-  - [`signalr.server.connection.duration`](#instrument-signalrserverconnectionduration)
-  - [`signalr.server.active_connections`](#instrument-signalrserveractive_connections)
+- [`signalr.server.connection.duration`](#instrument-signalrserverconnectionduration)
+- [`signalr.server.active_connections`](#instrument-signalrserveractive_connections)
 
 ### Metric: `signalr.server.connection.duration`
 

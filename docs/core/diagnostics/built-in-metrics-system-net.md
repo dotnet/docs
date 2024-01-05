@@ -50,11 +50,11 @@ Available starting in: .NET 8
 
 The `System.Net.Http` metrics report information about HTTP requests by <xref:System.Net.Http>:
 
-  * [`http.client.open_connections`](#metric-httpclientopen_connections)
-  * [`http.client.connection.duration`](#metric-httpclientconnectionduration)
-  * [`http.client.request.duration`](#metric-httpclientrequestduration)
-  * [`http.client.request.time_in_queue`](#metric-httpclientrequesttime_in_queue)
-  * [`http.client.active_requests`](#metric-httpclientactive_requests)
+- [`http.client.open_connections`](#metric-httpclientopen_connections)
+- [`http.client.connection.duration`](#metric-httpclientconnectionduration)
+- [`http.client.request.duration`](#metric-httpclientrequestduration)
+- [`http.client.request.time_in_queue`](#metric-httpclientrequesttime_in_queue)
+- [`http.client.active_requests`](#metric-httpclientactive_requests)
 
 ### Metric: `http.client.open_connections`
 

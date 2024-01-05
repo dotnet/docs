@@ -1,5 +1,4 @@
-﻿
-using System.Text;
+﻿using System.Text;
 
 StringBuilder builder = new();
 builder.AppendLine("Hello");

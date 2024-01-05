@@ -48,7 +48,7 @@ The time ends when:
 - All response data has been sent.
 - The context data structures for the request are being disposed.
 
-Available staring in: ASP.NET Core 8.0
+Available starting in: .NET 8.0.
 
 ### Metric: `http.server.active_requests`
 
@@ -61,7 +61,7 @@ Available staring in: ASP.NET Core 8.0
 | `http.request.method` | string | HTTP request method. [1] | `GET`; `POST`; `HEAD` | Always |
 | `url.scheme`| string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https` | Always |
 
-Available staring in: ASP.NET Core 8.0
+Available starting in: .NET 8.0.
 
 ## `Microsoft.AspNetCore.Routing`
 
@@ -81,7 +81,7 @@ The `Microsoft.AspNetCore.Hosting` metrics report information about [routing HTT
 | `aspnetcore.routing.is_fallback_route` | boolean | A value that indicates whether the matched route is a fallback route. | `True` | If a route was successfully matched. |
 | `http.route` | string | The matched route | `{controller}/{action}/{id?}` | If a route was successfully matched. |
 
-Available staring in: ASP.NET Core 8.0
+Available starting in: .NET 8.0.
 
 ## `Microsoft.AspNetCore.Diagnostics`
 
@@ -101,7 +101,7 @@ The `Microsoft.AspNetCore.Diagnostics` metrics report information about ASP.NET 
 | `aspnetcore.diagnostics.handler.type` | string | Full type name of the [`IExceptionHandler`](/dotnet/api/microsoft.aspnetcore.diagnostics.iexceptionhandler) implementation that handled the exception. | `Contoso.MyHandler` | If the exception was handled by this handler. |
 | `exception.type` | string | The full name of exception type. | `System.OperationCanceledException`; `Contoso.MyException` | Always |
 
-Available staring in: ASP.NET Core 8.0
+Available starting in: .NET 8.0.
 
 ## `Microsoft.AspNetCore.RateLimiting`
 
@@ -123,7 +123,7 @@ The `Microsoft.AspNetCore.RateLimiting` metrics report information about [ASP.NE
 |---|---|---|---|---|
 | `aspnetcore.rate_limiting.policy` | string | Rate limiting policy name. | `fixed`; `sliding`; `token` | If the matched endpoint for the request had a rate-limiting policy. |
 
-Available staring in: ASP.NET Core 8.0
+Available starting in: .NET 8.0.
 
 ### Metric: `aspnetcore.rate_limiting.request_lease.duration`
 
@@ -135,7 +135,7 @@ Available staring in: ASP.NET Core 8.0
 |---|---|---|---|---|
 | `aspnetcore.rate_limiting.policy` | string | Rate limiting policy name. | `fixed`; `sliding`; `token` | If the matched endpoint for the request had a rate-limiting policy. |
 
-Available staring in: ASP.NET Core 8.0
+Available starting in: .NET 8.0.
 
 ### Metric: `aspnetcore.rate_limiting.queued_requests`
 
@@ -147,7 +147,7 @@ Available staring in: ASP.NET Core 8.0
 |---|---|---|---|---|
 | `aspnetcore.rate_limiting.policy` | string | Rate limiting policy name. | `fixed`; `sliding`; `token` | If the matched endpoint for the request had a rate-limiting policy. |
 
-Available staring in: ASP.NET Core 8.0
+Available starting in: .NET 8.0.
 
 ### Metric: `aspnetcore.rate_limiting.request.time_in_queue`
 
@@ -160,7 +160,7 @@ Available staring in: ASP.NET Core 8.0
 | `aspnetcore.rate_limiting.policy` | string | Rate limiting policy name. | `fixed`; `sliding`; `token` | If the matched endpoint for the request had a rate-limiting policy. |
 | `aspnetcore.rate_limiting.result` | string | The rate limiting result shows whether lease was acquired or contains a rejection reason. | `acquired`; `request_canceled` | Always |
 
-Available staring in: ASP.NET Core 8.0
+Available starting in: .NET 8.0.
 
 ### Metric: `aspnetcore.rate_limiting.requests`
 
@@ -173,7 +173,7 @@ Available staring in: ASP.NET Core 8.0
 | `aspnetcore.rate_limiting.policy` | string | Rate limiting policy name. | `fixed`; `sliding`; `token` | If the matched endpoint for the request had a rate-limiting policy. |
 | `aspnetcore.rate_limiting.result` | string | The rate limiting result shows whether lease was acquired or contains a rejection reason. | `acquired`; `request_canceled` | Always |
 
-Available staring in: ASP.NET Core 8.0
+Available starting in: .NET 8.0.
 
 ## `Microsoft.AspNetCore.HeaderParsing`
 
@@ -236,7 +236,7 @@ The `Microsoft.AspNetCore.Server.Kestrel` metrics report information about [ASP.
 | `server.address` | string | Server address domain name if available without reverse DNS lookup;  otherwise, IP address or Unix domain socket name. | `example.com` | Always |
 | `server.port`| int | Server port number | `80`; `8080`; `443` | If the transport is `tcp` or `udp`. |
 
-Available staring in: ASP.NET Core 8.0
+Available starting in: .NET 8.0.
 
 ### Metric: `kestrel.connection.duration`
 
@@ -255,7 +255,7 @@ Available staring in: ASP.NET Core 8.0
 | `server.port` | int | Server port number | `80`; `8080`; `443` | If the transport is `tcp` or `udp`. |
 | `tls.protocol.version` | string | TLS protocol version. | `1.2`; `1.3` | If the connection is secured with TLS. |
 
-Available staring in: ASP.NET Core 8.0
+Available starting in: .NET 8.0.
 
 ### Metric: `kestrel.rejected_connections`
 
@@ -272,7 +272,7 @@ Available staring in: ASP.NET Core 8.0
 
 Connections are rejected when the currently active count exceeds the value configured with `MaxConcurrentConnections`.
 
-Available staring in: ASP.NET Core 8.0
+Available starting in: .NET 8.0.
 
 ### Metric: `kestrel.queued_connections`
 
@@ -287,7 +287,7 @@ Available staring in: ASP.NET Core 8.0
 | `server.address` | string | Server address domain name if available without reverse DNS lookup;  otherwise, IP address or Unix domain socket name. | `example.com` | Always |
 | `server.port` | int | Server port number | `80`; `8080`; `443` | If the transport is `tcp` or `udp`. |
 
-Available staring in: ASP.NET Core 8.0
+Available starting in: .NET 8.0.
 
 ### Metric: `kestrel.queued_requests`
 
@@ -304,7 +304,7 @@ Available staring in: ASP.NET Core 8.0
 | `server.address` | string | Server address domain name if available without reverse DNS lookup;  otherwise, IP address or Unix domain socket name. | `example.com` | Always |
 | `server.port` | int | Server port number | `80`; `8080`; `443` | If the transport is `tcp` or `udp`. |
 
-Available staring in: ASP.NET Core 8.0
+Available starting in: .NET 8.0.
 
 ### Metric: `kestrel.upgraded_connections`
 
@@ -321,7 +321,7 @@ Available staring in: ASP.NET Core 8.0
 
 The counter only tracks HTTP/1.1 connections.
 
-Available staring in: ASP.NET Core 8.0
+Available starting in: .NET 8.0.
 
 ### Metric: `kestrel.tls_handshake.duration`
 
@@ -338,7 +338,7 @@ Available staring in: ASP.NET Core 8.0
 | `server.port` | int | Server port number | `80`; `8080`; `443` | If the transport is `tcp` or `udp`. |
 | `tls.protocol.version` | string | TLS protocol version. | `1.2`; `1.3` | If the connection is secured with TLS. |
 
-Available staring in: ASP.NET Core 8.0
+Available starting in: .NET 8.0.
 
 ### Metric: `kestrel.active_tls_handshakes`
 
@@ -353,7 +353,7 @@ Available staring in: ASP.NET Core 8.0
 | `server.address` | string | Server address domain name if available without reverse DNS lookup;  otherwise, IP address or Unix domain socket name. | `example.com` | Always |
 | `server.port` | int | Server port number | `80`; `8080`; `443` | If the transport is `tcp` or `udp`. |
 
-Available staring in: ASP.NET Core 8.0
+Available starting in: .NET 8.0.
 
 ## `Microsoft.AspNetCore.Http.Connections`
 
@@ -373,7 +373,7 @@ The `Microsoft.AspNetCore.Http.Connections` metrics report information about [AS
 | `signalr.connection.status` | string | SignalR HTTP connection closure status. | `app_shutdown`; `timeout` | Always |
 | `signalr.transport` | string | [SignalR transport type](https://github.com/dotnet/aspnetcore/blob/main/src/SignalR/docs/specs/TransportProtocols.md) | `web_sockets`; `long_polling` | Always |
 
-Available staring in: ASP.NET Core 8.0
+Available starting in: .NET 8.0.
 
 ### Metric: `signalr.server.active_connections`
 
@@ -386,4 +386,4 @@ Available staring in: ASP.NET Core 8.0
 | `signalr.connection.status` | string | SignalR HTTP connection closure status. | `app_shutdown`; `timeout` | Always |
 | `signalr.transport` | string | [SignalR transport type](https://github.com/dotnet/aspnetcore/blob/main/src/SignalR/docs/specs/TransportProtocols.md) | `web_sockets`; `long_polling` | Always |
 
-Available staring in: ASP.NET Core 8.0
+Available starting in: .NET 8.0.

@@ -13,22 +13,17 @@ This article describes the networking metrics built-in for <xref:System.Net> pro
 > [!TIP]
 > For more information about how to collect, report, enrich, and test System.Net metrics, see [Networking metrics in .NET](../../fundamentals/networking/telemetry/metrics.md).
 
-- [Meter: `System.Net.NameResolution`](#meter-systemnetnameresolution) - Metrics for DNS lookups
-  * [Instrument: `dns.lookup.duration`](#instrument-dnslookupduration)
-- [Meter: `System.Net.Http`](#meter-systemnethttp) - Metrics for outbound networking requests using HttpClient
-  * [Instrument: `http.client.open_connections`](#instrument-httpclientopen_connections)
-  * [Instrument: `http.client.connection.duration`](#instrument-httpclientconnectionduration)
-  * [Instrument: `http.client.request.duration`](#instrument-httpclientrequestduration)
-  * [Instrument: `http.client.request.time_in_queue`](#instrument-httpclientrequesttime_in_queue)
-  * [Instrument: `http.client.active_requests`](#instrument-httpclientactive_requests)
+## `System.Net.NameResolution`
 
-## Meter: `System.Net.NameResolution`
+The `System.Net.NameResolution` metrics report information about DNS name resolution by <xref:System.Net.Dns>:
 
-### Instrument: `dns.lookup.duration`
+- [`dns.lookup.duration`](#metric-dnslookupduration)
+
+### Metric: `dns.lookup.duration`
 
 | Name     | Instrument Type | Unit | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `dns.lookup.duration` | Histogram | `s` | Measures the time taken to perform a DNS lookup. |
+| [`dns.lookup.duration`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-dns-metrics/#metric-dnslookupduration) | Histogram | `s` | Measures the time taken to perform a DNS lookup. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -51,13 +46,21 @@ Socket exceptions with any other `SocketError` value are reported as `System.Net
 
 Available starting in: .NET 8
 
-## Meter: `System.Net.Http`
+## `System.Net.Http`
 
-### Instrument: `http.client.open_connections`
+The `System.Net.Http` metrics report information about HTTP requests by <xref:System.Net.Http>:
+
+  * [`http.client.open_connections`](#metric-httpclientopen_connections)
+  * [`http.client.connection.duration`](#metric-httpclientconnectionduration)
+  * [`http.client.request.duration`](#metric-httpclientrequestduration)
+  * [`http.client.request.time_in_queue`](#metric-httpclientrequesttime_in_queue)
+  * [`http.client.active_requests`](#metric-httpclientactive_requests)
+
+### Metric: `http.client.open_connections`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `http.client.open_connections` | UpDownCounter | `{connection}` | Number of outbound HTTP connections that are currently active or idle on the client |
+| [`http.client.open_connections`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-http-metrics/#metric-httpclientopen_connections) | UpDownCounter | `{connection}` | Number of outbound HTTP connections that are currently active or idle on the client |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -72,11 +75,11 @@ Available starting in: .NET 8
 
 Available starting in: .NET 8
 
-### Instrument: `http.client.connection.duration`
+### Metric: `http.client.connection.duration`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `http.client.connection.duration` | Histogram | `s` | The duration of successfully established outbound HTTP connections. |
+| [`http.client.connection.duration`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-http-metrics/#metric-httpclientconnectionduration) | Histogram | `s` | The duration of successfully established outbound HTTP connections. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -90,11 +93,11 @@ This metric is only captured when <xref:System.Net.Http.HttpClient> is configure
 
 Available starting in: .NET 8
 
-### Instrument: `http.client.request.duration`
+### Metric: `http.client.request.duration`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `http.client.request.duration` | Histogram | `s` | The duration of outbound HTTP requests. |
+| [`http.client.request.duration`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-http-metrics/#metric-httpserverrequestduration) | Histogram | `s` | The duration of outbound HTTP requests. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -113,11 +116,11 @@ Available starting in: .NET 8
 > [!TIP]
 > [Enrichment](../../fundamentals/networking/telemetry/metrics.md#enrichment) is possible for this metric.
 
-### Instrument: `http.client.request.time_in_queue`
+### Metric: `http.client.request.time_in_queue`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `http.client.request.time_in_queue` | Histogram | `s` | The amount of time requests spent on a queue waiting for an available connection. |
+| [`http.client.request.time_in_queue`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-http-metrics/#metric-httpclientrequesttime_in_queue) | Histogram | `s` | The amount of time requests spent on a queue waiting for an available connection. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
@@ -131,11 +134,11 @@ Available starting in: .NET 8
 
 Available starting in: .NET 8
 
-### Instrument: `http.client.active_requests`
+### Metric: `http.client.active_requests`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
-| `http.client.active_requests` | UpDownCounter | `{request}` | Number of active HTTP requests. |
+| [`http.client.active_requests`](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-http-metrics/#metric-httpserveractive_requests) | UpDownCounter | `{request}` | Number of active HTTP requests. |
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|

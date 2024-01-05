@@ -2,7 +2,7 @@
 using System;
 using System.Threading;
 
-public class Example
+public class Example1
 {
    static Object obj = new Object();
    

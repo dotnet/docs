@@ -3,7 +3,7 @@ using System;
 using System.Globalization;
 using System.IO;
 
-public class Example
+public class Example5
 {
    public static void Main()
    {

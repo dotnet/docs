@@ -4,27 +4,28 @@ using System.Globalization;
 using System.Resources;
 using System.Threading;
 
-[assembly:NeutralResourcesLanguage("en")]
+[assembly: NeutralResourcesLanguage("en")]
 
-public class Example
+public class ShowDateEx
 {
-   public static void Main()
-   {
-      string[] cultureNames = { "en-US", "fr-FR", "ru-RU", "sv-SE" };
-      ResourceManager rm = new ResourceManager("DateStrings",
-                                               typeof(Example).Assembly);
-      
-      foreach (var cultureName in cultureNames) {
-         CultureInfo culture = CultureInfo.CreateSpecificCulture(cultureName);
-         Thread.CurrentThread.CurrentCulture = culture; 
-         Thread.CurrentThread.CurrentUICulture = culture;
+    public static void Main()
+    {
+        string[] cultureNames = { "en-US", "fr-FR", "ru-RU", "sv-SE" };
+        ResourceManager rm = new ResourceManager("DateStrings",
+                                                 typeof(Example).Assembly);
 
-         Console.WriteLine("Current UI Culture: {0}", 
-                           CultureInfo.CurrentUICulture.Name);
-         string dateString = rm.GetString("DateStart");
-         Console.WriteLine("{0} {1:M}.\n", dateString, DateTime.Now);                           
-      }                                           
-   }
+        foreach (var cultureName in cultureNames)
+        {
+            CultureInfo culture = CultureInfo.CreateSpecificCulture(cultureName);
+            Thread.CurrentThread.CurrentCulture = culture;
+            Thread.CurrentThread.CurrentUICulture = culture;
+
+            Console.WriteLine("Current UI Culture: {0}",
+                              CultureInfo.CurrentUICulture.Name);
+            string dateString = rm.GetString("DateStart");
+            Console.WriteLine("{0} {1:M}.\n", dateString, DateTime.Now);
+        }
+    }
 }
 // The example displays output similar to the following:
 //       Current UI Culture: en-US

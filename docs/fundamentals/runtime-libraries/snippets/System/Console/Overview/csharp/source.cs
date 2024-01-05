@@ -1,7 +1,8 @@
-// <Snippet1>
+﻿// <Snippet1>
 using System;
 
-public class Example {
+public class Example4
+{
     public static void Main()
     {
         Console.Write("Hello ");

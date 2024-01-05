@@ -2,101 +2,108 @@
 using System;
 using System.Threading;
 
-public class Example
+public class Example13
 {
-   [ThreadStatic] static double previous = 0.0;
-   [ThreadStatic] static int perThreadCtr = 0;
-   [ThreadStatic] static double perThreadTotal = 0.0;
-   static CancellationTokenSource source;
-   static CountdownEvent countdown;
-   static Object randLock, numericLock;
-   static Random rand;
-   double totalValue = 0.0;
-   int totalCount = 0;
+    [ThreadStatic] static double previous = 0.0;
+    [ThreadStatic] static int perThreadCtr = 0;
+    [ThreadStatic] static double perThreadTotal = 0.0;
+    static CancellationTokenSource source;
+    static CountdownEvent countdown;
+    static Object randLock, numericLock;
+    static Random rand;
+    double totalValue = 0.0;
+    int totalCount = 0;
 
-   public Example()
-   {
-      rand = new Random();
-      randLock = new Object();
-      numericLock = new Object();
-      countdown = new CountdownEvent(1);
-      source = new CancellationTokenSource();
-   }
+    public Example13()
+    {
+        rand = new Random();
+        randLock = new Object();
+        numericLock = new Object();
+        countdown = new CountdownEvent(1);
+        source = new CancellationTokenSource();
+    }
 
-   public static void Main()
-   {
-      Example ex = new Example();
-      Thread.CurrentThread.Name = "Main";
-      ex.Execute();
-   }
+    public static void Main()
+    {
+        Example13 ex = new Example13();
+        Thread.CurrentThread.Name = "Main";
+        ex.Execute();
+    }
 
-   private void Execute()
-   {
-      CancellationToken token = source.Token;
+    private void Execute()
+    {
+        CancellationToken token = source.Token;
 
-      for (int threads = 1; threads <= 10; threads++)
-      {
-         Thread newThread = new Thread(this.GetRandomNumbers);
-         newThread.Name = threads.ToString();
-         newThread.Start(token);
-      }
-      this.GetRandomNumbers(token);
+        for (int threads = 1; threads <= 10; threads++)
+        {
+            Thread newThread = new Thread(this.GetRandomNumbers);
+            newThread.Name = threads.ToString();
+            newThread.Start(token);
+        }
+        this.GetRandomNumbers(token);
 
-      countdown.Signal();
-      // Make sure all threads have finished.
-      countdown.Wait();
-      source.Dispose();
+        countdown.Signal();
+        // Make sure all threads have finished.
+        countdown.Wait();
+        source.Dispose();
 
-      Console.WriteLine("\nTotal random numbers generated: {0:N0}", totalCount);
-      Console.WriteLine("Total sum of all random numbers: {0:N2}", totalValue);
-      Console.WriteLine("Random number mean: {0:N4}", totalValue/totalCount);
-   }
+        Console.WriteLine("\nTotal random numbers generated: {0:N0}", totalCount);
+        Console.WriteLine("Total sum of all random numbers: {0:N2}", totalValue);
+        Console.WriteLine("Random number mean: {0:N4}", totalValue / totalCount);
+    }
 
-   private void GetRandomNumbers(Object o)
-   {
-      CancellationToken token = (CancellationToken) o;
-      double result = 0.0;
-      countdown.AddCount(1);
+    private void GetRandomNumbers(Object o)
+    {
+        CancellationToken token = (CancellationToken)o;
+        double result = 0.0;
+        countdown.AddCount(1);
 
-      try {
-         for (int ctr = 0; ctr < 2000000; ctr++)
-         {
-            // Make sure there's no corruption of Random.
-            token.ThrowIfCancellationRequested();
+        try
+        {
+            for (int ctr = 0; ctr < 2000000; ctr++)
+            {
+                // Make sure there's no corruption of Random.
+                token.ThrowIfCancellationRequested();
 
-            lock (randLock) {
-               result = rand.NextDouble();
+                lock (randLock)
+                {
+                    result = rand.NextDouble();
+                }
+                // Check for corruption of Random instance.
+                if ((result == previous) && result == 0)
+                {
+                    source.Cancel();
+                }
+                else
+                {
+                    previous = result;
+                }
+                perThreadCtr++;
+                perThreadTotal += result;
             }
-            // Check for corruption of Random instance.
-            if ((result == previous) && result == 0) {
-               source.Cancel();
-            }
-            else {
-               previous = result;
-            }
-            perThreadCtr++;
-            perThreadTotal += result;
-         }
 
-         Console.WriteLine("Thread {0} finished execution.",
-                           Thread.CurrentThread.Name);
-         Console.WriteLine("Random numbers generated: {0:N0}", perThreadCtr);
-         Console.WriteLine("Sum of random numbers: {0:N2}", perThreadTotal);
-         Console.WriteLine("Random number mean: {0:N4}\n", perThreadTotal/perThreadCtr);
+            Console.WriteLine("Thread {0} finished execution.",
+                              Thread.CurrentThread.Name);
+            Console.WriteLine("Random numbers generated: {0:N0}", perThreadCtr);
+            Console.WriteLine("Sum of random numbers: {0:N2}", perThreadTotal);
+            Console.WriteLine("Random number mean: {0:N4}\n", perThreadTotal / perThreadCtr);
 
-         // Update overall totals.
-         lock (numericLock) {
-            totalCount += perThreadCtr;
-            totalValue += perThreadTotal;
-         }
-      }
-      catch (OperationCanceledException e) {
-         Console.WriteLine("Corruption in Thread {1}", e.GetType().Name, Thread.CurrentThread.Name);
-      }
-      finally {
-         countdown.Signal();
-      }
-   }
+            // Update overall totals.
+            lock (numericLock)
+            {
+                totalCount += perThreadCtr;
+                totalValue += perThreadTotal;
+            }
+        }
+        catch (OperationCanceledException e)
+        {
+            Console.WriteLine("Corruption in Thread {1}", e.GetType().Name, Thread.CurrentThread.Name);
+        }
+        finally
+        {
+            countdown.Signal();
+        }
+    }
 }
 // The example displays output like the following:
 //       Thread 6 finished execution.

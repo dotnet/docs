@@ -2,15 +2,15 @@
 using System;
 using System.Collections.Generic;
 
-public struct Path : IEquatable<Path>
+public struct Path2 : IEquatable<Path2>
 {
     public IReadOnlyList<string> Segments { get; }
 
-    public Path(params string[] segments) => Segments = segments;
+    public Path2(params string[] segments) => Segments = segments;
 
-    public override bool Equals(object obj) => obj is Path o && Equals(o);
+    public override bool Equals(object obj) => obj is Path2 o && Equals(o);
 
-    public bool Equals(Path other)
+    public bool Equals(Path2 other)
     {
         if (ReferenceEquals(Segments, other.Segments)) return true;
         if (Segments is null || other.Segments is null) return false;
@@ -18,7 +18,7 @@ public struct Path : IEquatable<Path>
 
         for (var i = 0; i < Segments.Count; i++)
         {
-            if (!PlatformUtils.PathEquals(Segments[i], other.Segments[i]))
+            if (!PlatformUtils.Path2Equals(Segments[i], other.Segments[i]))
                 return false;
         }
 
@@ -30,7 +30,7 @@ public struct Path : IEquatable<Path>
         var hash = new HashCode();
 
         for (var i = 0; i < Segments?.Count; i++)
-            PlatformUtils.AddPath(ref hash, Segments[i]);
+            PlatformUtils.AddPath2(ref hash, Segments[i]);
 
         return hash.ToHashCode();
     }
@@ -38,19 +38,19 @@ public struct Path : IEquatable<Path>
 
 internal static class PlatformUtils
 {
-    public static bool PathEquals(string a, string b) => string.Equals(a, b, StringComparison.OrdinalIgnoreCase);
-    public static void AddPath(ref HashCode hash, string path) => hash.Add(path, StringComparer.OrdinalIgnoreCase);
+    public static bool Path2Equals(string a, string b) => string.Equals(a, b, StringComparison.OrdinalIgnoreCase);
+    public static void AddPath2(ref HashCode hash, string Path2) => hash.Add(Path2, StringComparer.OrdinalIgnoreCase);
 }
 
-class Program
+class Program4
 {
     static void Main(string[] args)
     {
-        var set = new HashSet<Path>
+        var set = new HashSet<Path2>
         {
-            new Path("C:", "tmp", "file.txt"),
-            new Path("C:", "TMP", "file.txt"),
-            new Path("C:", "tmp", "FILE.TXT")
+            new Path2("C:", "tmp", "file.txt"),
+            new Path2("C:", "TMP", "file.txt"),
+            new Path2("C:", "tmp", "FILE.TXT")
         };
 
         Console.WriteLine($"Item count: {set.Count}.");

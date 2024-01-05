@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class Example
+public class Example2
 {
     public static void Main()
     {
@@ -18,7 +18,7 @@ public class Example
         dinosaurs.Add("Compsognathus");
         //</snippet2>
         Console.WriteLine();
-        foreach(string dinosaur in dinosaurs)
+        foreach (string dinosaur in dinosaurs)
         {
             Console.WriteLine(dinosaur);
         }
@@ -33,21 +33,21 @@ public class Example
         dinosaurs.Insert(2, "Compsognathus");
 
         Console.WriteLine();
-        foreach(string dinosaur in dinosaurs)
+        foreach (string dinosaur in dinosaurs)
         {
             Console.WriteLine(dinosaur);
         }
 
-	    //<snippet3>
+        //<snippet3>
         // Shows accessing the list using the Item property.
         Console.WriteLine("\ndinosaurs[3]: {0}", dinosaurs[3]);
-	    //</snippet3>
+        //</snippet3>
 
         Console.WriteLine("\nRemove(\"Compsognathus\")");
         dinosaurs.Remove("Compsognathus");
 
         Console.WriteLine();
-        foreach(string dinosaur in dinosaurs)
+        foreach (string dinosaur in dinosaurs)
         {
             Console.WriteLine(dinosaur);
         }

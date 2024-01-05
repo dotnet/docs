@@ -3,7 +3,7 @@ using System;
 using System.IO;
 using System.Text;
 
-public class Example
+public class Example10
 {
    public static void Main()
    {

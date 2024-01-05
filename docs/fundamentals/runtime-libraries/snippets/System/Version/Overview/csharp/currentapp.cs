@@ -2,7 +2,7 @@
 using System;
 using System.Reflection;
 
-public class Example
+public class Example4
 {
    public static void Main()
    {

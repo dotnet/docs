@@ -13,53 +13,53 @@ public interface INew
 // <Snippet2>
 public interface ICustomMarshaler
 {
-     Object MarshalNativeToManaged( IntPtr pNativeData );
-     IntPtr MarshalManagedToNative( Object ManagedObj );
-     void CleanUpNativeData( IntPtr pNativeData );
-     void CleanUpManagedData( Object ManagedObj );
-     int GetNativeDataSize();
+    Object MarshalNativeToManaged(IntPtr pNativeData);
+    IntPtr MarshalManagedToNative(Object ManagedObj);
+    void CleanUpNativeData(IntPtr pNativeData);
+    void CleanUpManagedData(Object ManagedObj);
+    int GetNativeDataSize();
 }
 // </Snippet2>
 
 namespace scope1
 {
-// <Snippet3>
-interface IUserData
-{
-    void DoSomeStuff(INew pINew);
-}
-// </Snippet3>
+    // <Snippet3>
+    interface IUserData
+    {
+        void DoSomeStuff(INew pINew);
+    }
+    // </Snippet3>
 }
 
 namespace scope2
 {
-// <Snippet5>
-interface IUserData
-{
-    void DoSomeStuff(
-        [MarshalAs(UnmanagedType.CustomMarshaler,
+    // <Snippet5>
+    interface IUserData
+    {
+        void DoSomeStuff(
+            [MarshalAs(UnmanagedType.CustomMarshaler,
              MarshalType="NewOldMarshaler")]
         INew pINew
-    );
-}
-// </Snippet5>
+        );
+    }
+    // </Snippet5>
 }
 
 // <Snippet6>
-public NewOldMarshaler : ICustomMarshaler
+public class NewOldMarshaler : ICustomMarshaler
 {
     public static ICustomMarshaler GetInstance(string pstrCookie)
-        => return new NewOldMarshaler();
+        => new NewOldMarshaler();
 
-    public Object MarshalNativeToManaged( IntPtr pNativeData ) => throw new NotImplementedException();
-    public IntPtr MarshalManagedToNative( Object ManagedObj ) => throw new NotImplementedException();
-    public void CleanUpNativeData( IntPtr pNativeData ) => throw new NotImplementedException();
-    public void CleanUpManagedData( Object ManagedObj ) => throw new NotImplementedException();
+    public Object MarshalNativeToManaged(IntPtr pNativeData) => throw new NotImplementedException();
+    public IntPtr MarshalManagedToNative(Object ManagedObj) => throw new NotImplementedException();
+    public void CleanUpNativeData(IntPtr pNativeData) => throw new NotImplementedException();
+    public void CleanUpManagedData(Object ManagedObj) => throw new NotImplementedException();
     public int GetNativeDataSize() => throw new NotImplementedException();
 }
 // </Snippet6>
 
 class StubClass
 {
-    public static void Main() {}
+    public static void Main() { }
 }

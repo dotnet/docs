@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFrameworks>net8</TargetFrameworks>
+    <AllowUnSafeBlocks>true</AllowUnSafeBlocks>
   </PropertyGroup>
 
  </Project>

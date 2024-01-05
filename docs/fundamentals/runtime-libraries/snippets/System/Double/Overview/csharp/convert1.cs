@@ -1,28 +1,29 @@
 ﻿// <Snippet20>
 using System;
 
-public class Example
+public class Example4
 {
-   public static void Main()
-   {
-      dynamic[] values = { Byte.MinValue, Byte.MaxValue, Decimal.MinValue,
+    public static void Main()
+    {
+        dynamic[] values = { Byte.MinValue, Byte.MaxValue, Decimal.MinValue,
                            Decimal.MaxValue, Int16.MinValue, Int16.MaxValue,
                            Int32.MinValue, Int32.MaxValue, Int64.MinValue,
                            Int64.MaxValue, SByte.MinValue, SByte.MaxValue,
                            Single.MinValue, Single.MaxValue, UInt16.MinValue,
                            UInt16.MaxValue, UInt32.MinValue, UInt32.MaxValue,
                            UInt64.MinValue, UInt64.MaxValue };
-      double dblValue;
-      foreach (var value in values) {
-         if (value.GetType() == typeof(Decimal))
-            dblValue = (Double) value;
-         else
-            dblValue = value;
-         Console.WriteLine("{0} ({1}) --> {2:R} ({3})",
-                           value, value.GetType().Name,
-                           dblValue, dblValue.GetType().Name);
-      }
-   }
+        double dblValue;
+        foreach (var value in values)
+        {
+            if (value.GetType() == typeof(Decimal))
+                dblValue = (Double)value;
+            else
+                dblValue = value;
+            Console.WriteLine("{0} ({1}) --> {2:R} ({3})",
+                              value, value.GetType().Name,
+                              dblValue, dblValue.GetType().Name);
+        }
+    }
 }
 // The example displays the following output:
 //    0 (Byte) --> 0 (Double)

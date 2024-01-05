@@ -1,8 +1,8 @@
-// <Snippet5>
+﻿// <Snippet5>
 using System;
 using System.Globalization;
 
-public class Example
+public class Example4
 {
    public static void Main()
    {

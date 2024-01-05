@@ -1,40 +1,41 @@
 ﻿// <Snippet9>
 using System;
 
-public class Example
+public class Example3
 {
-   public static void Main()
-   {
-       Random2 rnd = new Random2();
-       Byte[] bytes = new Byte[10000];
-       int[] total = new int[101];
-       rnd.NextBytes(bytes, 0, 101);
+    public static void Main()
+    {
+        Random2 rnd = new Random2();
+        Byte[] bytes = new Byte[10000];
+        int[] total = new int[101];
+        rnd.NextBytes(bytes, 0, 101);
 
-       // Calculate how many of each value we have.
-       foreach (var value in bytes)
-          total[value]++;
+        // Calculate how many of each value we have.
+        foreach (var value in bytes)
+            total[value]++;
 
-       // Display the results.
-       for (int ctr = 0; ctr < total.Length; ctr++) {
-           Console.Write("{0,3}: {1,-3}   ", ctr, total[ctr]);
-           if ((ctr + 1) % 5 == 0) Console.WriteLine();
-       }
-   }
+        // Display the results.
+        for (int ctr = 0; ctr < total.Length; ctr++)
+        {
+            Console.Write("{0,3}: {1,-3}   ", ctr, total[ctr]);
+            if ((ctr + 1) % 5 == 0) Console.WriteLine();
+        }
+    }
 }
 
 public class Random2 : Random
 {
-   public Random2() : base()
-   {}
+    public Random2() : base()
+    { }
 
-   public Random2(int seed) : base(seed)
-   {}
+    public Random2(int seed) : base(seed)
+    { }
 
-   public void NextBytes(byte[] bytes, byte minValue, byte maxValue)
-   {
-      for (int ctr = bytes.GetLowerBound(0); ctr <= bytes.GetUpperBound(0); ctr++)
-         bytes[ctr] = (byte) Next(minValue, maxValue);
-   }
+    public void NextBytes(byte[] bytes, byte minValue, byte maxValue)
+    {
+        for (int ctr = bytes.GetLowerBound(0); ctr <= bytes.GetUpperBound(0); ctr++)
+            bytes[ctr] = (byte)Next(minValue, maxValue);
+    }
 }
 // The example displays output like the following:
 //         0: 115     1: 119     2: 92      3: 98      4: 92

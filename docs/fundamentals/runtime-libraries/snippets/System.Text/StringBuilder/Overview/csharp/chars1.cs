@@ -3,33 +3,35 @@ using System;
 using System.Globalization;
 using System.Text;
 
-public class Example
+public class Example3
 {
-   public static void Main()
-   {
-      Random rnd = new Random();
-      StringBuilder sb = new StringBuilder();
-      
-      // Generate 10 random numbers and store them in a StringBuilder.
-      for (int ctr = 0; ctr <= 9; ctr++)
-         sb.Append(rnd.Next().ToString("N5"));    
+    public static void Main()
+    {
+        Random rnd = new Random();
+        StringBuilder sb = new StringBuilder();
 
-      Console.WriteLine("The original string:");
-      Console.WriteLine(sb.ToString());
-            
-      // Decrease each number by one.
-      for (int ctr = 0; ctr < sb.Length; ctr++) {
-         if (Char.GetUnicodeCategory(sb[ctr]) == UnicodeCategory.DecimalDigitNumber) {
-            int number = (int) Char.GetNumericValue(sb[ctr]);
-            number--;
-            if (number < 0) number = 9;
-         
-            sb[ctr] = number.ToString()[0];
-         }
-      }
-      Console.WriteLine("\nThe new string:");
-      Console.WriteLine(sb.ToString());
-   }
+        // Generate 10 random numbers and store them in a StringBuilder.
+        for (int ctr = 0; ctr <= 9; ctr++)
+            sb.Append(rnd.Next().ToString("N5"));
+
+        Console.WriteLine("The original string:");
+        Console.WriteLine(sb.ToString());
+
+        // Decrease each number by one.
+        for (int ctr = 0; ctr < sb.Length; ctr++)
+        {
+            if (Char.GetUnicodeCategory(sb[ctr]) == UnicodeCategory.DecimalDigitNumber)
+            {
+                int number = (int)Char.GetNumericValue(sb[ctr]);
+                number--;
+                if (number < 0) number = 9;
+
+                sb[ctr] = number.ToString()[0];
+            }
+        }
+        Console.WriteLine("\nThe new string:");
+        Console.WriteLine(sb.ToString());
+    }
 }
 // The example displays the following output:
 //    The original string:

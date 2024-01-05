@@ -3,7 +3,7 @@ using System;
 using System.Globalization;
 using System.Threading;
 
-public class Example
+public class Example2
 {
    public static void Main()
    {

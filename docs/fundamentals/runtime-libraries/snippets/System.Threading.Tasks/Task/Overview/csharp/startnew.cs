@@ -3,15 +3,15 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-class Example
+class Example1
 {
     static void Main()
     {
         Action<object> action = (object obj) =>
                                 {
-                                   Console.WriteLine("Task={0}, obj={1}, Thread={2}",
-                                   Task.CurrentId, obj,
-                                   Thread.CurrentThread.ManagedThreadId);
+                                    Console.WriteLine("Task={0}, obj={1}, Thread={2}",
+                                    Task.CurrentId, obj,
+                                    Thread.CurrentThread.ManagedThreadId);
                                 };
 
         // Create a task but do not start it.
@@ -31,10 +31,12 @@ class Example
 
         // Construct a started task using Task.Run.
         String taskData = "delta";
-        Task t3 = Task.Run( () => {Console.WriteLine("Task={0}, obj={1}, Thread={2}",
+        Task t3 = Task.Run(() =>
+        {
+            Console.WriteLine("Task={0}, obj={1}, Thread={2}",
                                                      Task.CurrentId, taskData,
                                                       Thread.CurrentThread.ManagedThreadId);
-                                   });
+        });
         // Wait for the task to finish.
         t3.Wait();
 

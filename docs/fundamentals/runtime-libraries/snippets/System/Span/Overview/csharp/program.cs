@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using static Program2;
+using static ProgramB;
 
 class Program
 {
@@ -13,7 +13,7 @@ class Program
         CreateSpanFromStack();
         WorkWithSpans();
         Console.WriteLine("-----");
-        Program2.WorkWithSpans();
+        ProgramB.WorkWithSpans();
     }
 
     private static void CreateSpanFromArray()
@@ -79,7 +79,7 @@ class Program
     }
 }
 
-public class Program2
+public class ProgramB
 {
     // <Snippet4>
     public static void WorkWithSpans()

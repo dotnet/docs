@@ -1,56 +1,66 @@
 ﻿// <Snippet21>
 using System;
 
-public class Example
+public class Example5
 {
-   public static void Main()
-   {
-      Double[] values = { Double.MinValue, -67890.1234, -12345.6789,
+    public static void Main()
+    {
+        Double[] values = { Double.MinValue, -67890.1234, -12345.6789,
                           12345.6789, 67890.1234, Double.MaxValue,
                           Double.NaN, Double.PositiveInfinity,
                           Double.NegativeInfinity };
-      checked {
-         foreach (var value in values) {
-            try {
-                Int64 lValue = (long) value;
-                Console.WriteLine("{0} ({1}) --> {2} (0x{2:X16}) ({3})",
-                                  value, value.GetType().Name,
-                                  lValue, lValue.GetType().Name);
+        checked
+        {
+            foreach (var value in values)
+            {
+                try
+                {
+                    Int64 lValue = (long)value;
+                    Console.WriteLine("{0} ({1}) --> {2} (0x{2:X16}) ({3})",
+                                      value, value.GetType().Name,
+                                      lValue, lValue.GetType().Name);
+                }
+                catch (OverflowException)
+                {
+                    Console.WriteLine("Unable to convert {0} to Int64.", value);
+                }
+                try
+                {
+                    UInt64 ulValue = (ulong)value;
+                    Console.WriteLine("{0} ({1}) --> {2} (0x{2:X16}) ({3})",
+                                      value, value.GetType().Name,
+                                      ulValue, ulValue.GetType().Name);
+                }
+                catch (OverflowException)
+                {
+                    Console.WriteLine("Unable to convert {0} to UInt64.", value);
+                }
+                try
+                {
+                    Decimal dValue = (decimal)value;
+                    Console.WriteLine("{0} ({1}) --> {2} ({3})",
+                                      value, value.GetType().Name,
+                                      dValue, dValue.GetType().Name);
+                }
+                catch (OverflowException)
+                {
+                    Console.WriteLine("Unable to convert {0} to Decimal.", value);
+                }
+                try
+                {
+                    Single sValue = (float)value;
+                    Console.WriteLine("{0} ({1}) --> {2} ({3})",
+                                      value, value.GetType().Name,
+                                      sValue, sValue.GetType().Name);
+                }
+                catch (OverflowException)
+                {
+                    Console.WriteLine("Unable to convert {0} to Single.", value);
+                }
+                Console.WriteLine();
             }
-            catch (OverflowException) {
-               Console.WriteLine("Unable to convert {0} to Int64.", value);
-            }
-            try {
-                UInt64 ulValue = (ulong) value;
-                Console.WriteLine("{0} ({1}) --> {2} (0x{2:X16}) ({3})",
-                                  value, value.GetType().Name,
-                                  ulValue, ulValue.GetType().Name);
-            }
-            catch (OverflowException) {
-               Console.WriteLine("Unable to convert {0} to UInt64.", value);
-            }
-            try {
-                Decimal dValue = (decimal) value;
-                Console.WriteLine("{0} ({1}) --> {2} ({3})",
-                                  value, value.GetType().Name,
-                                  dValue, dValue.GetType().Name);
-            }
-            catch (OverflowException) {
-               Console.WriteLine("Unable to convert {0} to Decimal.", value);
-            }
-            try {
-                Single sValue = (float) value;
-                Console.WriteLine("{0} ({1}) --> {2} ({3})",
-                                  value, value.GetType().Name,
-                                  sValue, sValue.GetType().Name);
-            }
-            catch (OverflowException) {
-               Console.WriteLine("Unable to convert {0} to Single.", value);
-            }
-            Console.WriteLine();
-         }
-      }
-   }
+        }
+    }
 }
 // The example displays the following output for conversions performed
 // in a checked context:

@@ -2,18 +2,18 @@
 using System;
 using System.IO;
 
-public class Example
+public class Example1
 {
-   public static void Main()
-   {
-      char[] chars = { '\u0061', '\u0308' };
+    public static void Main()
+    {
+        char[] chars = { '\u0061', '\u0308' };
 
-      string combining = new String(chars);
-      Console.WriteLine(combining);
+        string combining = new String(chars);
+        Console.WriteLine(combining);
 
-      combining = combining.Normalize();
-      Console.WriteLine(combining);
-   }
+        combining = combining.Normalize();
+        Console.WriteLine(combining);
+    }
 }
 // The example displays the following output:
 //       a"

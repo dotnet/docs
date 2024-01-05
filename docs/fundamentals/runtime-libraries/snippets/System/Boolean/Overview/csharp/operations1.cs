@@ -3,7 +3,7 @@ using System;
 using System.IO;
 using System.Threading;
 
-public class Example
+public class Example5
 {
    public static void Main()
    {

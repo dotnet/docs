@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
  
-public class Example
+public class Example3
 {
    public static void Main()
    {

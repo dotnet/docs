@@ -3,7 +3,7 @@ using System;
 using System.Diagnostics;
 using System.Threading;
 
-public class Example
+public class Example3
 {
    public static void Main()
    {

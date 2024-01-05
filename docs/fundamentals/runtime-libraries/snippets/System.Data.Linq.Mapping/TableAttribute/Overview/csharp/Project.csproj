@@ -2,7 +2,11 @@
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFrameworks>net8</TargetFrameworks>
+    <TargetFrameworks>net481</TargetFrameworks>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Data.Linq" />
+  </ItemGroup>
 
  </Project>

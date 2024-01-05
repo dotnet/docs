@@ -1,7 +1,7 @@
 ﻿using System;
 
 // <Snippet1>
-public enum ArrivalStatus { Late=-1, OnTime=0, Early=1 };
+public enum ArrivalStatus { Unknown=-3, Late=-1, OnTime=0, Early=1 };
 // </Snippet1>
 
 // <Snippet2>

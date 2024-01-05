@@ -2,45 +2,45 @@
 using System;
 using System.IO;
 
-public class Example
+public class Example12
 {
-   public static void Main()
-   {
-      int seed = 100100;
-      ShowRandomNumbers(seed);
-      Console.WriteLine();
+    public static void Main()
+    {
+        int seed = 100100;
+        ShowRandomNumbers(seed);
+        Console.WriteLine();
 
-      PersistSeed(seed);
+        PersistSeed(seed);
 
-      DisplayNewRandomNumbers();
-   }
+        DisplayNewRandomNumbers();
+    }
 
-   private static void ShowRandomNumbers(int seed)
-   {
-      Random rnd = new Random(seed);
-      for (int ctr = 0; ctr <= 20; ctr++)
-         Console.WriteLine(rnd.NextDouble());
-   }
+    private static void ShowRandomNumbers(int seed)
+    {
+        Random rnd = new Random(seed);
+        for (int ctr = 0; ctr <= 20; ctr++)
+            Console.WriteLine(rnd.NextDouble());
+    }
 
-   private static void PersistSeed(int seed)
-   {
-      FileStream fs = new FileStream(@".\seed.dat", FileMode.Create);
-      BinaryWriter bin = new BinaryWriter(fs);
-      bin.Write(seed);
-      bin.Close();
-   }
+    private static void PersistSeed(int seed)
+    {
+        FileStream fs = new FileStream(@".\seed.dat", FileMode.Create);
+        BinaryWriter bin = new BinaryWriter(fs);
+        bin.Write(seed);
+        bin.Close();
+    }
 
-   private static void DisplayNewRandomNumbers()
-   {
-      FileStream fs = new FileStream(@".\seed.dat", FileMode.Open);
-      BinaryReader bin = new BinaryReader(fs);
-      int seed = bin.ReadInt32();
-      bin.Close();
+    private static void DisplayNewRandomNumbers()
+    {
+        FileStream fs = new FileStream(@".\seed.dat", FileMode.Open);
+        BinaryReader bin = new BinaryReader(fs);
+        int seed = bin.ReadInt32();
+        bin.Close();
 
-      Random rnd = new Random(seed);
-      for (int ctr = 0; ctr <= 20; ctr++)
-         Console.WriteLine(rnd.NextDouble());
-   }
+        Random rnd = new Random(seed);
+        for (int ctr = 0; ctr <= 20; ctr++)
+            Console.WriteLine(rnd.NextDouble());
+    }
 }
 // The example displays output like the following:
 //       0.500193602172748

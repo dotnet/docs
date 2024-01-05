@@ -10,7 +10,7 @@ public struct BoolStruct
    public bool flag5;
 }
 
-public class Example
+public class Example9
 {
    public static void Main()
    {

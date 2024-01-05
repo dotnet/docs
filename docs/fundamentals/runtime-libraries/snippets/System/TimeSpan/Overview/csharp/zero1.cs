@@ -1,31 +1,31 @@
 ﻿using System;
 
-public class Example
+public class Example4
 {
-   public static void Main()
-   {
-      // <Snippet6>
-      Random rnd = new Random();
-   
-      TimeSpan timeSpent = TimeSpan.Zero;
+    public static void Main()
+    {
+        // <Snippet6>
+        Random rnd = new Random();
 
-      timeSpent += GetTimeBeforeLunch();
-      timeSpent += GetTimeAfterLunch();
+        TimeSpan timeSpent = TimeSpan.Zero;
 
-      Console.WriteLine("Total time: {0}", timeSpent);
+        timeSpent += GetTimeBeforeLunch();
+        timeSpent += GetTimeAfterLunch();
 
-      TimeSpan GetTimeBeforeLunch()
-      {
-         return new TimeSpan(rnd.Next(3, 6), 0, 0);
-      }
-      
-      TimeSpan GetTimeAfterLunch()
-      {
-         return new TimeSpan(rnd.Next(3, 6), 0, 0);
-      }
+        Console.WriteLine("Total time: {0}", timeSpent);
 
-      // The example displays output like the following:
-      //        Total time: 08:00:00
-      // </Snippet6>
-   }
+        TimeSpan GetTimeBeforeLunch()
+        {
+            return new TimeSpan(rnd.Next(3, 6), 0, 0);
+        }
+
+        TimeSpan GetTimeAfterLunch()
+        {
+            return new TimeSpan(rnd.Next(3, 6), 0, 0);
+        }
+
+        // The example displays output like the following:
+        //        Total time: 08:00:00
+        // </Snippet6>
+    }
 }

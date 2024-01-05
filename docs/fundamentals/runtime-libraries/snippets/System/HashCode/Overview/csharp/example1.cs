@@ -16,7 +16,7 @@ public struct OrderOrderLine : IEquatable<OrderOrderLine>
     public override int GetHashCode() => HashCode.Combine(OrderId, OrderLineId);
 }
 
-class Program
+class Program2
 {
     static void Main(string[] args)
     {

@@ -3,7 +3,7 @@ using System;
 
 enum VersionTime {Earlier = -1, Same = 0, Later = 1 };
 
-public class Example
+public class Example2
 {
    public static void Main()
    {

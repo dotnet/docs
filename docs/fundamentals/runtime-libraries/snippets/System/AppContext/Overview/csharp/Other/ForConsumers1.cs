@@ -1,16 +1,16 @@
-// <Snippet10>
+﻿// <Snippet10>
 using System;
 using System.IO;
 using System.Runtime.Versioning;
 
-[assembly:TargetFramework(".NETFramework,Version=v4.6.2")]
+//[assembly: TargetFramework(".NETFramework,Version=v4.6.2")]
 
 public class Example
 {
-   public static void Main()
-   {
-      Console.WriteLine(Path.GetDirectoryName("file://c/temp/dirlist.txt"));
-   }
+    public static void Main()
+    {
+        Console.WriteLine(Path.GetDirectoryName("file://c/temp/dirlist.txt"));
+    }
 }
 // The example displays the following output:
 //    Unhandled Exception: System.ArgumentException: The path is not of a legal form.

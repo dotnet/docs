@@ -38,31 +38,31 @@ You can check if a consumer has declared the value of the switch and act appropr
 
 The following example illustrates the use of the <xref:System.AppContext> class to allow the customer to choose the original behavior of a library method. The following is version 1.0 of a library named `StringLibrary`. It defines a `SubstringStartsAt` method that performs an ordinal comparison to determine the starting index of a substring within a larger string.
 
-:::code language="csharp" source="./snippets/System/AppContext/Overview/csharp/Example4.cs" id="Snippet4":::
+:::code language="csharp" source="./snippets/System/AppContext/Overview/csharp/V1/Example4.cs" id="Snippet4":::
 :::code language="fsharp" source="./snippets/System/AppContext/Overview/fsharp/Example4.fs" id="Snippet4":::
 :::code language="vb" source="./snippets/System/AppContext/Overview/vb/Example4.vb" id="Snippet4":::
 
 The following example then uses the library to find the starting index of the substring "archæ" in "The archaeologist". Because the method performs an ordinal comparison, the substring cannot be found.
 
-:::code language="csharp" source="./snippets/System/AppContext/Overview/csharp/Example4.cs" id="Snippet5":::
+:::code language="csharp" source="./snippets/System/AppContext/Overview/csharp/V1/Example4.cs" id="Snippet5":::
 :::code language="fsharp" source="./snippets/System/AppContext/Overview/fsharp/Example4.fs" id="Snippet5":::
 :::code language="vb" source="./snippets/System/AppContext/Overview/vb/Example4.vb" id="Snippet5":::
 
 Version 2.0 of the library, however, changes the `SubstringStartsAt` method to use culture-sensitive comparison.
 
-:::code language="csharp" source="./snippets/System/AppContext/Overview/csharp/Example6.cs" id="Snippet6":::
+:::code language="csharp" source="./snippets/System/AppContext/Overview/csharp/V2/Example6.cs" id="Snippet6":::
 :::code language="fsharp" source="./snippets/System/AppContext/Overview/fsharp/Example6.fs" id="Snippet6":::
 :::code language="vb" source="./snippets/System/AppContext/Overview/vb/Example6.vb" id="Snippet6":::
 
 When the app is recompiled to run against the new version of the library, it now reports that the substring "archæ" is found at index 4 in "The archaeologist".
 
-:::code language="csharp" source="./snippets/System/AppContext/Overview/csharp/Example6.cs" id="Snippet7":::
+:::code language="csharp" source="./snippets/System/AppContext/Overview/csharp/V2/Example6.cs" id="Snippet7":::
 :::code language="fsharp" source="./snippets/System/AppContext/Overview/fsharp/Example6.fs" id="Snippet7":::
 :::code language="vb" source="./snippets/System/AppContext/Overview/vb/Example6.vb" id="Snippet7":::
 
-This change can be prevented from breaking the applications that depend on the original behavior by defining a switch. In this case, the switch is named `StringLibrary.DoNotUseCultureSensitiveComparison`. Its default value, `false`, indicates that the library should perform its version 2.0 culture-sensitive comparison. `true` indicates that the library should perform its version 1.0 ordinal comparison.  A slight modification of the previous code allows the library consumer to set the switch to determine the kind of comparison the method performs.
+This change can be prevented from breaking the applications that depend on the original behavior by defining a switch. In this case, the switch is named `StringLibrary.DoNotUseCultureSensitiveComparison`. Its default value, `false`, indicates that the library should perform its version 2.0 culture-sensitive comparison. `true` indicates that the library should perform its version 1.0 ordinal comparison. A slight modification of the previous code allows the library consumer to set the switch to determine the kind of comparison the method performs.
 
-:::code language="csharp" source="./snippets/System/AppContext/Overview/csharp/Example8.cs" id="Snippet8":::
+:::code language="csharp" source="./snippets/System/AppContext/Overview/csharp/V3/Example8.cs" id="Snippet8":::
 :::code language="fsharp" source="./snippets/System/AppContext/Overview/fsharp/Example8.fs" id="Snippet8":::
 :::code language="vb" source="./snippets/System/AppContext/Overview/vb/Example8.vb" id="Snippet8":::
 
@@ -128,7 +128,7 @@ If you set the same switch in more than one way, the order of precedence for det
 
 The following is a simple application that passes a file URI to the <xref:System.IO.Path.GetDirectoryName%2A?displayProperty=nameWithType> method. It throws an <xref:System.ArgumentException> because `file://` is no longer a valid part of a file path.
 
-:::code language="csharp" source="./snippets/System/AppContext/Overview/csharp/ForConsumers1.cs" id="Snippet10":::
+:::code language="csharp" source="./snippets/System/AppContext/Overview/csharp/Other/ForConsumers1.cs" id="Snippet10":::
 :::code language="fsharp" source="./snippets/System/AppContext/Overview/fsharp/ForConsumers1.fs" id="Snippet10":::
 :::code language="vb" source="./snippets/System/AppContext/Overview/vb/ForConsumers1.vb" id="Snippet10":::
 

@@ -191,7 +191,7 @@ Prints out a description of how to use the command.
 
 - **`-ignore-exit-code`**
 
-Allows to consider some non-zero exit codes as `0`. For more information, refer to [Ignoring specific exit codes](./unit-testing-mstest-runner-exit-codes.md#ignoring-specific-exit-codes).
+Allows some non-zero exit codes to be ignored, and instead returned as `0`. For more information, see [Ignore specific exit codes](./unit-testing-mstest-runner-exit-codes.md#ignore-specific-exit-codes).
 
 - **`--info`**
 

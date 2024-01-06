@@ -7,7 +7,7 @@ ms.date: 12/31/2023
 
 [!INCLUDE [context](includes/context.md)]
 
-The <xref:System.Runtime.InteropServices.SafeHandle> class provides critical finalization of handle resources, preventing handles from being reclaimed prematurely by garbage collection and from being recycled by Windows to reference unintended unmanaged objects.
+The <xref:System.Runtime.InteropServices.SafeHandle> class provides critical finalization of handle resources, preventing handles from being reclaimed prematurely by garbage collection and from being recycled by the operating system to reference unintended unmanaged objects.
 
 ## Why SafeHandle?
 

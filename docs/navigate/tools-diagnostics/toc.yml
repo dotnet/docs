@@ -450,6 +450,14 @@ items:
         items:
         - name: Get started
           href: ../../core/diagnostics/diagnosticsource-diagnosticlistener.md
+      - name: Supplemental API remarks
+        items:
+        - name: The EventSource class
+          href: ../../fundamentals/runtime-libraries/system-diagnostics-tracing-eventsource.md
+        - name: The EventWrittenEventArgs class
+          href: ../../fundamentals/runtime-libraries/system-diagnostics-tracing-eventwritteneventargs.md
+        - name: The PerformanceCounterType enum
+          href: ../../fundamentals/runtime-libraries/system-diagnostics-performancecountertype.md
     - name: .NET CLI global tools
       items:
       - name: Overview

@@ -63,12 +63,12 @@ Traditionally, user-defined <xref:System.Diagnostics.Tracing.EventSource> object
 
 The following example shows an implementation of <xref:System.Diagnostics.Tracing.EventSource> that uses an interface.
 
-:::code language="csharp" source="./snippets/System.Diagnostics.Tracing/EventSource/Overview/csharp/program.cs" id="InterfaceSource":::
+:::code language="csharp" source="./snippets/System.Diagnostics.Tracing/EventSource/Overview/csharp/program2.cs" id="InterfaceSource":::
 
 The following example shows an implementation of <xref:System.Diagnostics.Tracing.EventSource> that uses the Utility EventSource pattern.
 
-:::code language="csharp" source="./snippets/System.Diagnostics.Tracing/EventSource/Overview/csharp/program.cs" id="UtilitySource":::
+:::code language="csharp" source="./snippets/System.Diagnostics.Tracing/EventSource/Overview/csharp/program2.cs" id="UtilitySource":::
 
 The following example shows an implementation of <xref:System.Diagnostics.Tracing.EventSource> for tracing information about a component in a library.
 
-:::code language="csharp" source="./snippets/System.Diagnostics.Tracing/EventSource/Overview/csharp/program.cs" id="ComplexSource":::
+:::code language="csharp" source="./snippets/System.Diagnostics.Tracing/EventSource/Overview/csharp/program2.cs" id="ComplexSource":::

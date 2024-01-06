@@ -128,14 +128,12 @@ public class App
 //<Snippet2>
 
 using System;
-using System.Collections;
-using System.Collections.Specialized;
 using System.Diagnostics;
-using System.Runtime.InteropServices;
+using System.Runtime.Versioning;
 
+[SupportedOSPlatform("Windows")]
 public class App
 {
-
     public static void Main()
     {	
         CollectSamples();

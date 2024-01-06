@@ -190,16 +190,14 @@ public class App
 // Build sample for Whidbey or higher.
 
 //<snippet2>
-
 using System;
 using System.Collections;
-using System.Collections.Specialized;
 using System.Diagnostics;
-using System.Runtime.InteropServices;
+using System.Runtime.Versioning;
 
-public class App
+[SupportedOSPlatform("Windows")]
+public class App2
 {
-
     private static PerformanceCounter PC;
     private static PerformanceCounter BPC;
 
@@ -225,7 +223,6 @@ public class App
 
     private static bool SetupCategory()
     {
-
         if (!PerformanceCounterCategory.Exists(categoryName))
         {
 

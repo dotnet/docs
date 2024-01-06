@@ -1,10 +1,11 @@
 ﻿//<snippet1>
 using System;
 using System.Collections;
-using System.Collections.Specialized;
 using System.Diagnostics;
+using System.Runtime.Versioning;
 
-public class App
+[SupportedOSPlatform("Windows")]
+public class App5
 {
     private static PerformanceCounter PC;
     private static PerformanceCounter BPC;

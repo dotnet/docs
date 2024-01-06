@@ -1,18 +1,17 @@
 ﻿//<snippet1>
-
 using System;
 using System.Collections;
-using System.Collections.Specialized;
 using System.Diagnostics;
+using System.Runtime.Versioning;
 
-public class App {
-
+[SupportedOSPlatform("Windows")]
+public class App
+{
     private static PerformanceCounter avgCounter64Sample;
     private static PerformanceCounter avgCounter64SampleBase;
 
     public static void Main()
     {
-
         ArrayList samplesList = new ArrayList();
 
         // If the category does not exist, create the category and exit.
@@ -29,9 +28,8 @@ public class App {
 
     private static bool SetupCategory()
     {
-        if ( !PerformanceCounterCategory.Exists("AverageCounter64SampleCategory") )
+        if (!PerformanceCounterCategory.Exists("AverageCounter64SampleCategory"))
         {
-
             CounterCreationDataCollection counterDataCollection = new CounterCreationDataCollection();
 
             // Add the counter.
@@ -51,12 +49,12 @@ public class App {
                 "Demonstrates usage of the AverageCounter64 performance counter type.",
                 PerformanceCounterCategoryType.SingleInstance, counterDataCollection);
 
-            return(true);
+            return (true);
         }
         else
         {
             Console.WriteLine("Category exists - AverageCounter64SampleCategory");
-            return(false);
+            return (false);
         }
     }
 
@@ -75,14 +73,14 @@ public class App {
             "AverageCounter64SampleBase",
             false);
 
-        avgCounter64Sample.RawValue=0;
-        avgCounter64SampleBase.RawValue=0;
+        avgCounter64Sample.RawValue = 0;
+        avgCounter64SampleBase.RawValue = 0;
     }
-//<Snippet3>
+    //<Snippet3>
     private static void CollectSamples(ArrayList samplesList)
     {
 
-        Random r = new Random( DateTime.Now.Millisecond );
+        Random r = new Random(DateTime.Now.Millisecond);
 
         // Loop for the samples.
         for (int j = 0; j < 100; j++)
@@ -98,7 +96,7 @@ public class App {
             if ((j % 10) == 9)
             {
                 OutputSample(avgCounter64Sample.NextSample());
-                samplesList.Add( avgCounter64Sample.NextSample() );
+                samplesList.Add(avgCounter64Sample.NextSample());
             }
             else
             {
@@ -112,21 +110,21 @@ public class App {
 
     private static void CalculateResults(ArrayList samplesList)
     {
-        for(int i = 0; i < (samplesList.Count - 1); i++)
+        for (int i = 0; i < (samplesList.Count - 1); i++)
         {
             // Output the sample.
-            OutputSample( (CounterSample)samplesList[i] );
-            OutputSample( (CounterSample)samplesList[i+1] );
+            OutputSample((CounterSample)samplesList[i]);
+            OutputSample((CounterSample)samplesList[i + 1]);
 
             // Use .NET to calculate the counter value.
             Console.WriteLine(".NET computed counter value = " +
                 CounterSampleCalculator.ComputeCounterValue((CounterSample)samplesList[i],
-                (CounterSample)samplesList[i+1]) );
+                (CounterSample)samplesList[i + 1]));
 
             // Calculate the counter value manually.
             Console.WriteLine("My computed counter value = " +
                 MyComputeCounterValue((CounterSample)samplesList[i],
-                (CounterSample)samplesList[i+1]) );
+                (CounterSample)samplesList[i + 1]));
         }
     }
 
@@ -149,7 +147,7 @@ public class App {
         Single numerator = (Single)s1.RawValue - (Single)s0.RawValue;
         Single denomenator = (Single)s1.BaseValue - (Single)s0.BaseValue;
         Single counterValue = numerator / denomenator;
-        return(counterValue);
+        return (counterValue);
     }
 
     // Output information about the counter sample.

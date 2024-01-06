@@ -10,17 +10,14 @@ ms.date: 11/02/2023
 This article describes the built-in metrics for diagnostic .NET extensions libraries that are produced using the
 <xref:System.Diagnostics.Metrics?displayProperty=nameWithType> API. For a listing of metrics based on the older [EventCounters](event-counters.md) API, see [Available counters](available-counters.md).
 
-- [Meter: `Microsoft.Extensions.Diagnostics.HealthChecks`](#meter-microsoftextensionsdiagnosticshealthchecks)
-  - [Instrument: `dotnet.health_check.reports`](#instrument-dotnethealth_checkreports)
-  - [Instrument: `dotnet.health_check.unhealthy_checks`](#instrument-dotnethealth_checkunhealthy_checks)
-- [Meter: `Microsoft.Extensions.Diagnostics.ResourceMonitoring`](#meter-microsoftextensionsdiagnosticsresourcemonitoring)
-  - [Instrument: `process.cpu.utilization`](#instrument-processcpuutilization)
-  - [Instrument: `dotnet.process.memory.virtual.utilization`](#instrument-dotnetprocessmemoryvirtualutilization)
-  - [Instrument: `system.network.connections`](#instrument-systemnetworkconnections)
+## `Microsoft.Extensions.Diagnostics.HealthChecks`
 
-## Meter: `Microsoft.Extensions.Diagnostics.HealthChecks`
+The `Microsoft.Extensions.Diagnostics.HealthChecks` metrics report health check information from [.NET health checks](diagnostic-health-checks.md):
 
-### Instrument: `dotnet.health_check.reports`
+- [`dotnet.health_check.reports`](#metric-dotnethealth_checkreports)
+- [`dotnet.health_check.unhealthy_checks`](#metric-dotnethealth_checkunhealthy_checks)
+
+### Metric: `dotnet.health_check.reports`
 
 | Name | Instrument Type | Unit (UCUM) | Description |
 | ---- | --------------- | ----------- | ----------- |
@@ -40,7 +37,7 @@ This article describes the built-in metrics for diagnostic .NET extensions libra
 
 Available starting in: .NET 8.0.
 
-### Instrument: `dotnet.health_check.unhealthy_checks`
+### Metric: `dotnet.health_check.unhealthy_checks`
 
 | Name | Instrument Type | Unit (UCUM) | Description |
 | ---- | --------------- | ----------- | ----------- |
@@ -61,12 +58,18 @@ Available starting in: .NET 8.0.
 
 Available starting in: .NET 8.0.
 
-## Meter: `Microsoft.Extensions.Diagnostics.ResourceMonitoring`
+## `Microsoft.Extensions.Diagnostics.ResourceMonitoring`
+
+The `Microsoft.Extensions.Diagnostics.ResourceMonitoring` metrics report resource information from [resource monitoring](diagnostic-resource-monitoring.md):
+
+- [`process.cpu.utilization`](#metric-processcpuutilization)
+- [`dotnet.process.memory.virtual.utilization`](#metric-dotnetprocessmemoryvirtualutilization)
+- [`system.network.connections`](#metric-systemnetworkconnections)
 
 > [!NOTE]
 > Metrics emitted by the `Microsoft.Extensions.Diagnostics.ResourceMonitoring` meter are in experimental stage. This means that there could be breaking changes to them.
 
-### Instrument: `process.cpu.utilization`
+### Metric: `process.cpu.utilization`
 
 The instrument is available only on Linux.
 
@@ -76,7 +79,7 @@ The instrument is available only on Linux.
 
 Available starting in: .NET 8.0.
 
-### Instrument: `dotnet.process.memory.virtual.utilization`
+### Metric: `dotnet.process.memory.virtual.utilization`
 
 The instrument is available only on Linux.
 
@@ -86,7 +89,7 @@ The instrument is available only on Linux.
 
 Available starting in: .NET 8.0.
 
-### Instrument: `system.network.connections`
+### Metric: `system.network.connections`
 
 The instrument is available only on Windows.
 
@@ -98,29 +101,5 @@ The instrument is available only on Windows.
 |---|---|---|---|---|
 | `network.type` | string | OSI network layer or non-OSI equivalent. | `ipv4`; `ipv6` | Always |
 | `system.network.state` | string | The state of a network connection. | `close`; `listen` | Always |
-
-`network.type` is one of the following:
-
-| Value  | Description |
-|---|---|
-| `ipv4` | IPv4 |
-| `ipv6` | IPv6 |
-
-`system.network.state` is one of the following:
-
-| Value  | Description |
-|---|---|
-| `close` | A connection is closed. |
-| `close_wait` | A connection is in the close wait state. |
-| `closing` | A connection is closing. |
-| `delete` | A connection is in the delete TCB state. |
-| `established` | A connection is established. |
-| `fin_wait_1` | A connection is waiting for a FIN packet 1. |
-| `fin_wait_2` | A connection is waiting for a FIN packet 2. |
-| `last_ack` | A connection is in the last ACK state. |
-| `listen` | A connection is in the listen state. |
-| `syn_recv` | A connection has received a SYN packet. |
-| `syn_sent` | A connection has sent a SYN packet. |
-| `time_wait` | A connection is in the time wait state. |
 
 Available starting in: .NET 8.0.

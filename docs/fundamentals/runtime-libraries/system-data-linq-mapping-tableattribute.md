@@ -32,5 +32,5 @@ You can optionally use the schema name to qualify a table name. By default, the 
 
 ## Examples
 
-:::code language="csharp" source="./snippets/csharp/System.Data.Linq.Mapping/TableAttribute/Overview/cs/Program.cs" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Data.Linq.Mapping/TableAttribute/Overview/csharp/Program.cs" id="Snippet1":::
 :::code language="vb" source="./snippets/System.Data.Linq.Mapping/TableAttribute/Overview/vb/Module1.vb" id="Snippet1":::

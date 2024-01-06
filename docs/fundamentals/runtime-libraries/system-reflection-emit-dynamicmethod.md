@@ -22,12 +22,12 @@ A dynamic method can be anonymously hosted, or it can be logically associated wi
 
 The following table shows which types and members are accessible to an anonymously hosted dynamic method, with and without JIT visibility checks, depending on whether <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess> flag is granted.
 
-||Without <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess>|With <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess>|
-|-|-|-|
+| Visibility checks | Without `RestrictedMemberAccess` | With `RestrictedMemberAccess` |
+|-------------------|----------------------------------|-------------------------------|
 |Without skipping JIT visibility checks|Public members of public types in any assembly.|Public members of public types in any assembly.|
 |Skipping JIT visibility checks, with restrictions|Public members of public types in any assembly.|All members of all types, only in assemblies whose trust levels are equal to or less than the trust level of the assembly that emitted the dynamic method.|
 
-The following table shows which types and members are accessible to a dynamic method that is associated with a module or with a type in a module.
+The following table shows which types and members are accessible to a dynamic method that's associated with a module or with a type in a module.
 
 | Skip JIT visibility checks | Associated with module | Associated with type |
 |----------------------------|------------------------|----------------------|

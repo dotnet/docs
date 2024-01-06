@@ -43,12 +43,12 @@ In practice, these event format settings only affect usage with readers based on
 
 The following example shows a simple implementation of the <xref:System.Diagnostics.Tracing.EventSource> class.
 
-:::code language="csharp" source="./snippets/System.Diagnostics.Tracing/EventSource/Overview/csharp/program1.cs" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Diagnostics.Tracing/EventSource/Overview/csharp/program.cs" id="Snippet1":::
 :::code language="vb" source="./snippets/System.Diagnostics.Tracing/EventSource/Overview/vb/program.vb" id="Snippet1":::
 
 The following example shows a more complex implementation of the <xref:System.Diagnostics.Tracing.EventSource> class.
 
-:::code language="csharp" source="./snippets/System.Diagnostics.Tracing/EventAttribute/Overview/csharp/program.cs" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Diagnostics.Tracing/EventSource/Overview/csharp/program1.cs" id="Snippet1":::
 :::code language="vb" source="./snippets/System.Diagnostics.Tracing/EventSource/Overview/vb/program1.vb" id="Snippet1":::
 
 ## Advanced usage

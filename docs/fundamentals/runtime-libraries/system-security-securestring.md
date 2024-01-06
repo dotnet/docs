@@ -62,7 +62,7 @@ The .NET Class Library commonly uses <xref:System.Security.SecureString> instanc
 
 - To provide password information for SQL Server Authentication by calling the <xref:System.Data.SqlClient.SqlCredential.%23ctor%2A?displayProperty=nameWithType> constructor or retrieving the value of the <xref:System.Data.SqlClient.SqlCredential.Password?displayProperty=nameWithType> property.
 
-- To pass a string to unmanaged code. For more information, see the [SecureString and interop](#interop) section.
+- To pass a string to unmanaged code. For more information, see the [SecureString and interop](#securestring-and-interop) section.
 
 ## SecureString and interop
 

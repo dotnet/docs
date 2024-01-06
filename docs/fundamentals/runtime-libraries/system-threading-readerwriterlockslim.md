@@ -93,8 +93,8 @@ You may find it useful to think of the lock in terms of its states. A <xref:Syst
 
 The following table describes the transitions between lock states, for locks that do not allow recursion, when a thread `t` takes the action described in the leftmost column. At the time it takes the action, `t` has no mode. (The special case where `t` is in upgradeable mode is described in the table footnotes.) The top row describes the starting state of the lock. The cells describe what happens to the thread, and show changes to the lock state in parentheses.
 
-||Not entered (N)|Read (R)|Upgrade (U)|Write (W)|
-|-|-----------------------|----------------|-------------------|-----------------|
+| Transition | Not entered (N) | Read (R) | Upgrade (U) | Write (W) |
+|------------|-----------------|----------|-------------|-----------|
 |`t` enters read mode|`t` enters (R).|`t` blocks if threads are waiting for write mode; otherwise, `t` enters.|`t` blocks if threads are waiting for write mode; otherwise, `t` enters.<sup>1</sup>|`t` blocks.|
 |`t` enters upgradeable mode|`t` enters (U).|`t` blocks if threads are waiting for write mode or upgrade mode; otherwise, `t` enters (U).|`t` blocks.|`t` blocks.|
 |`t` enters write mode|`t` enters (W).|`t` blocks.|`t` blocks.<sup>2</sup>|`t` blocks.|

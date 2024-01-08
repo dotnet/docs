@@ -189,6 +189,10 @@ Defines the verbosity level when the `--diagnostic` switch is used. The availabl
 
 Prints out a description of how to use the command.
 
+- **`-ignore-exit-code`**
+
+Allows some non-zero exit codes to be ignored, and instead returned as `0`. For more information, see [Ignore specific exit codes](./unit-testing-mstest-runner-exit-codes.md#ignore-specific-exit-codes).
+
 - **`--info`**
 
 Displays advanced information about the .NET Test Application such as:

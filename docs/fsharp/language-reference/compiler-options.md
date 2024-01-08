@@ -60,7 +60,7 @@ The following table shows compiler options listed alphabetically. Some of the F#
 |`--times`|Displays timing information for compilation.|
 |`--utf8output`|Enables printing compiler output in the UTF-8 encoding.|
 |`--warn:warning-level`|Sets a warning level (0 to 5). The default level is 3. Each warning is given a level based on its severity. Level 5 gives more, but less severe, warnings than level 1.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;warn &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/errors-warnings.md#warninglevel).|
-|`--warnon:warning-number-list`|Enable specific warnings that might be off by default or disabled by another command-line option.|
+|`--warnon:warning-number-list`|Enable specific warnings that might be off by default or disabled by another command-line option. The list is comma-separated.|
 |<code>--warnaserror[+&#124;-] [warning-number-list]</code>|Enables or disables the option to report warnings as errors. You can provide specific warning numbers to be disabled or enabled. Options later in the command line override options earlier in the command line. For example, to specify the warnings that you don't want reported as errors, specify `--warnaserror+` `--warnaserror-:warning-number-list`.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;warnaserror &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/errors-warnings.md#treatwarningsaserrors).|
 |`--win32manifest:manifest-filename`|Adds a Win32 manifest file to the compilation. This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;win32manifest &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/resources.md#win32manifest).|
 |`--win32res:resource-filename`|Adds a Win32 resource file to the compilation.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;win32res (&#40;C&#35;) Compiler Options&#41;](../../csharp/language-reference/compiler-options/resources.md#win32resource).|
@@ -85,6 +85,8 @@ The F# compiler supports several opt-in warnings:
 | 3390  | Malformed XML doc comments      |  n/a  | Warn when XML doc comments are malformed in various ways. |
 
 You can enable these warnings by using  `/warnon:NNNN` or `<WarnOn>NNNN</WarnOn>` where `NNNN` is the relevant warning number.
+(You may also use the syntax `<WarnOn>FSNNNN</WarnOn>`, e.g. `<WarnOn>FS3388</WarnOn>`.)
+Note that if the `WarnOn` property is specified multiple times, only the last occurrence is used. To specify multiple warnings, provide the `WarnOn` property once with a comma-separated string as its contents: `<WarnOn>3388,3559</WarnOn>`.
 
 ## Related articles
 

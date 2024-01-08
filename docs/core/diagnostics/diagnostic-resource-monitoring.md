@@ -10,7 +10,7 @@ Resource monitoring involves the continuous measurement of resource utilization 
 
 The <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor> interface furnishes methods for retrieving real-time information concerning process resource utilization. This interface supports the retrieval of data related to CPU and memory usage and is currently compatible with both Windows and Linux platforms. All resource monitoring diagnostic information is published to OpenTelemetry by default, so there's no need to manually publish this yourself.
 
-In addition, the resource monitoring library reports various diagnostic metrics. For more information, see [Diagnostic Metrics: `Microsoft.Extensions.Diagnostics.ResourceMonitoring`](built-in-metrics-diagnostics.md#meter-microsoftextensionsdiagnosticsresourcemonitoring).
+In addition, the resource monitoring library reports various diagnostic metrics. For more information, see [Diagnostic Metrics: `Microsoft.Extensions.Diagnostics.ResourceMonitoring`](built-in-metrics-diagnostics.md#microsoftextensionsdiagnosticsresourcemonitoring).
 
 ## Example resource monitoring usage
 

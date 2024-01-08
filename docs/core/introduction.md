@@ -8,9 +8,9 @@ ms.custom: "updateeachrelease"
 
 .NET is a free, cross-platform, [open-source developer platform](https://github.com/dotnet/core) for building [many kinds of applications](apps.md). It can run programs written in [multiple languages](../fundamentals/languages.md), with [C#](../csharp/index.yml) being the most popular. It relies on a [high-performance](https://devblogs.microsoft.com/dotnet/category/performance/) runtime that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/).
 
-See [Getting started](./get-started.md) to learn how to [download](https://dotnet.microsoft.com/download/) and start writing your first app.
+To learn how to [download .NET](https://dotnet.microsoft.com/download/) and start writing your first app, see [Getting started](./get-started.md).
 
-The .NET platform has been designed to deliver productivity, performance, security, and reliability. It provides automatic memory management via a [garbage collector (GC)](../standard/automatic-memory-management.md). It is type- and memory-safe, due to using a GC and strict language compilers. It offers [concurrency](../csharp/asynchronous-programming/index.md) via `async`/`await` and `Task` primitives. It includes a large set of libraries that have broad functionality and have been optimized for performance on multiple operating systems and chip architectures.
+The .NET platform has been designed to deliver productivity, performance, security, and reliability. It provides automatic memory management via a [garbage collector (GC)](../standard/automatic-memory-management.md). It is type-safe and memory-safe, due to using a GC and strict language compilers. It offers [concurrency](../csharp/asynchronous-programming/index.md) via `async`/`await` and `Task` primitives. It includes a large set of libraries that have broad functionality and have been optimized for performance on multiple operating systems and chip architectures.
 
 .NET has the following [design points](https://devblogs.microsoft.com/dotnet/why-dotnet/):
 
@@ -18,7 +18,7 @@ The .NET platform has been designed to deliver productivity, performance, securi
 * **Safe code** is the primary compute model, while [unsafe code](../csharp/language-reference/unsafe-code.md) enables additional manual optimizations.
 * **Static and dynamic code** are both supported, enabling a broad set of distinct scenarios.
 * **Native code interop and hardware intrinsics** are low cost and high-fidelity (raw API and instruction access).
-* **Code is portable across platforms** (OS, chip architecture), while platform targeting enables specialization and optimization.
+* **Code is portable across platforms** (OS and chip architecture), while platform targeting enables specialization and optimization.
 * **Adaptability across programming domains** (cloud, client, gaming) is enabled with specialized implementations of the general-purpose programming model.
 * **Industry standards** like OpenTelemetry and gRPC are favored over bespoke solutions.
 
@@ -34,27 +34,27 @@ The .NET platform has been designed to deliver productivity, performance, securi
 - SDK and other tools -- enable building and monitoring apps with modern workflows.
 - App stacks -- like ASP.NET Core and Windows Forms, that enable writing apps.
 
-The runtime, libraries, and languages are the pillars of the .NET stack. Higher-level components, like .NET tools and app stacks like ASP.NET Core, build on top of these pillars. C# is the primary programming language for .NET and much of .NET is written in C#.
+The runtime, libraries, and languages are the pillars of the .NET stack. Higher-level components, like .NET tools, and app stacks, like ASP.NET Core, build on top of these pillars. C# is the primary programming language for .NET and much of .NET is written in C#.
 
 C# is object-oriented and the runtime supports object orientation. C# requires garbage collection and the runtime provides a tracing garbage collector. The libraries (and also the app stacks) shape those capabilities into concepts and object models that enable developers to productively write algorithms in intuitive workflows.
 
-The core libraries expose thousands of types, many of which integrate with and fuel the C# language. For example, C#’s `foreach` enables enumerating arbitrary collections, with pattern-based optimizations that enable collections like `List<T>` to be processed simply and efficiently. Resource management may be left up to garbage collection, but prompt cleanup is possible via `IDisposable` and direct language support in `using`.
+The core libraries expose thousands of types, many of which integrate with and fuel the C# language. For example, C#’s `foreach` statement lets you enumerate arbitrary collections. Pattern-based optimizations enable collections like `List<T>` to be processed simply and efficiently. You can leave resource management up to garbage collection, but prompt cleanup is possible via `IDisposable` and direct language support in the `using` statement.
 
-Support for doing multiple things at the same time is fundamental to practically all workloads, whether it be client applications doing background processing while keeping the UI responsive, services handling many thousands of simultaneous requests, devices responding to a multitude of simultaneous stimuli, or high-powered machines parallelizing the processing of compute-intensive operations. Asynchronous programming support is a first-class feature of the C# programming language, which provides the `async` and `await` keywords that make it easy to write and compose asynchronous operations while still enjoying the full benefits of all the control flow constructs the language has to offer.
+Support for doing multiple things at the same time is fundamental to practically all workloads. That could be client applications doing background processing while keeping the UI responsive, services handling many thousands of simultaneous requests, devices responding to a multitude of simultaneous stimuli, or high-powered machines parallelizing the processing of compute-intensive operations. Asynchronous programming support is a first-class feature of the C# programming language, which provides the `async` and `await` keywords that make it easy to write and compose asynchronous operations while still enjoying the full benefits of all the control flow constructs the language has to offer.
 
-The [type system](../standard/base-types/common-type-system.md) offers significant breadth, catering somewhat equally to safety, descriptiveness, dynamism, and native interop. First and foremost, the type system enables an object-oriented programming model. It includes types, (single base class) inheritance, interfaces (including default method implementations), and virtual method dispatch to provide a sensible behavior for all the type layering that object orientation allows. [Generic types](../standard/generics.md) are a pervasive feature that allow specializing classes to one or more types.
+The [type system](../standard/base-types/common-type-system.md) offers significant breadth, catering somewhat equally to safety, descriptiveness, dynamism, and native interop. First and foremost, the type system enables an object-oriented programming model. It includes types, (single base class) inheritance, interfaces (including default method implementations), and virtual method dispatch to provide a sensible behavior for all the type layering that object orientation allows. [Generic types](../standard/generics.md) are a pervasive feature that let you specialize classes to one or more types.
 
 The .NET runtime provides automatic memory management via a garbage collector. For any language, its memory management model is likely its most defining characteristic. This is true for .NET languages. .NET has a self-tuning, tracing GC. It aims to deliver “hands off” operation in the general case while offering configuration options for more extreme workloads. The GC is the result of many years of investment, improving and learning from many kinds of workloads.
 
-Value types and stack-allocated memory blocks offer more direct, low-level control over data and native platform interop, in contrast to .NET’s GC-managed types. Most of the primitive types in .NET, like integer types, are value types, and users can define their own types with similar semantics. Value types are fully supported through .NET’s generics system, meaning that generic types like `List<T>` can provide flat, no-overhead memory representations of value type collections.
+Value types and stack-allocated memory blocks offer more direct, low-level control over data and native platform interop, in contrast to .NET's GC-managed types. Most of the primitive types in .NET, like integer types, are value types, and users can define their own types with similar semantics. Value types are fully supported through .NET's generics system, meaning that generic types like `List<T>` can provide flat, no-overhead memory representations of value type collections.
 
-[Reflection](/dotnet/csharp/advanced-topics/reflection-and-attributes/) is a “programs as data” paradigm, allowing one part of a program to dynamically query and/or invoke another, in terms of assemblies, types and members. It is particularly useful for late-bound programming models and tools.
+[Reflection](../csharp/advanced-topics/reflection-and-attributes/index.md) is a "programs as data" paradigm, allowing one part of a program to dynamically query and invoke another, in terms of assemblies, types, and members. It's particularly useful for late-bound programming models and tools.
 
 Exceptions are the primary error handling model in .NET. Exceptions have the benefit that error information does not need to be represented in method signatures or handled by every method. Proper exception handling is essential for application reliability. Expected exceptions can be intentionally handled in user code, otherwise an app will crash. A crashed app is more reliable and diagnosable than an app with undefined behavior.
 
 App stacks, like ASP.NET Core and Windows Forms, build on and take advantage of low-level libraries, language, and runtime. The app stacks define the way that apps are constructed and their lifecycle of execution.
 
-The SDK and other tools enable a modern developer experience, both on a developer desktop and for Continuous Integration (CI). This includes being able to build, analyze, and test code. .NET projects can often be built by a single `dotnet build` command, which orchestrates restoring NuGet packages and building dependencies.
+The SDK and other tools enable a modern developer experience, both on a developer desktop and for continuous integration (CI). The modern developer experience includes being able to build, analyze, and test code. .NET projects can often be built by a single `dotnet build` command, which orchestrates restoring NuGet packages and building dependencies.
 
 NuGet is the package manager for .NET. It contains hundreds of thousands of packages that implement functionality for many scenarios. The majority of apps rely on NuGet packages for some functionality. The [NuGet Gallery](https://nuget.org/) is maintained by Microsoft.
 
@@ -66,7 +66,7 @@ NuGet is the package manager for .NET. It contains hundreds of thousands of pack
 
 ## Support
 
-.NET is [supported by multiple organizations](https://github.com/dotnet/core/blob/main/support.md) that work to ensure .NET is supported on [multiple operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md), and kept up to date. It can be used on Arm64, x64, and x86 architectures.
+.NET is [supported by multiple organizations](https://github.com/dotnet/core/blob/main/support.md) that work to ensure that .NET can run on [multiple operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) and kept up to date. It can be used on Arm64, x64, and x86 architectures.
 
 New versions of .NET are released annually in November, per our [releases and support policies](releases-and-support.md). It is [updated monthly](https://github.com/dotnet/announcements/labels/Monthly-Update) on Patch Tuesday (second Tuesday), typically at 10AM Pacific time.
 

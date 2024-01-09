@@ -11,7 +11,18 @@ ms.date: 01/03/2024
 
 MSTest runner allows you to provide a [VSTest *.runsettings* file](https://learn.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file), but not all options in this file are picked up by the runner. This article will teach you about the supported and unsupported settings, and configuration options. This article will show you alternatives for the most used VSTest configuration options.
 
-## RunConfiguration
+## Supported runsettings
+
+### MSTest runsettings
+
+All runsettings in `<MSTest>` section of the configuration file are supported by MSTest runner. 
+
+Their full description can be [found here](https://learn.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file?view=vs-2022#mstest-element).
+
+
+## Unsupported runsettings
+
+### RunConfiguration
 
 The **RunConfiguration** element can include the following elements. None of these settings are respected by the MSTest runner:
 
@@ -28,127 +39,13 @@ The **RunConfiguration** element can include the following elements. None of the
 |**DotnetHostPath**|Specify a custom path to dotnet host that is used to run the testhost. | MSTest runner is not doing any additional resolving of dotnet. It depends fully on how dotnet resolves itself, which can be controlled by environment variables such as [`DOTNET_HOST_PATH`](https://learn.microsoft.com/dotnet/core/tools/dotnet-environment-variables#dotnet_host_path)
 |**TreatNoTestsAsError**| Exit with non-zero exit code when no tests are discovered. | MSTest runner will error by default when no tests are discovered or run in a test application. You can set how many tests you expect to find in the assembly by using `--minimum-expected-tests` command line parameter, which defaults to 1.
 
-DataCollectionRunSettings?
 
-LoggerRunSettings?
+### DataCollectionRunSettings
 
-MSTest?
+MSTest runner is not using data collectors. Instead it has the concept of in-process and out-of-process extensions. Each extension is configured by its respective configuration file, or through commandline.
 
-**WILL DELETE** Example runsettings:
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<RunSettings>
-  <!-- Configurations that affect the Test Framework -->
-  <RunConfiguration>
-    <!-- Use 0 for maximum process-level parallelization. This does not force parallelization within the test DLL (on the thread-level). You can also change it from the Test menu; choose "Run tests in parallel". Unchecked = 1 (only 1), checked = 0 (max). -->
-    <MaxCpuCount>1</MaxCpuCount>
-    <!-- Path relative to directory that contains .runsettings file-->
-    <ResultsDirectory>.\TestResults</ResultsDirectory>
+Most importantly [hang](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-runner-extensions#hang-dump-files) and [crash](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-runner-extensions#crash-dump-files) extension, and [code coverage](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-runner-extensions#microsoft-code-coverage) extension.
 
-    <!-- Omit the whole tag for auto-detection. -->
-    <!-- [x86] or x64, ARM, ARM64, s390x  -->
-    <!-- You can also change it from the Test menu; choose "Processor Architecture for AnyCPU Projects" -->
-    <TargetPlatform>x86</TargetPlatform>
+### LoggerRunSettings
 
-    <!-- Any TargetFramework moniker or omit the whole tag for auto-detection. -->
-    <!-- net48, [net40], net6.0, net5.0, netcoreapp3.1, uap10.0 etc. -->
-    <TargetFrameworkVersion>net40</TargetFrameworkVersion>
-
-    <!-- Path to Test Adapters -->
-    <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
-
-    <!-- TestCaseFilter expression -->
-    <TestCaseFilter>(TestCategory != Integration) &amp; (TestCategory != UnfinishedFeature)</TestCaseFilter>
-
-    <!-- TestSessionTimeout was introduced in Visual Studio 2017 version 15.5 -->
-    <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
-    <TestSessionTimeout>10000</TestSessionTimeout>
-
-    <!-- true or false -->
-    <!-- Value that specifies the exit code when no tests are discovered -->
-    <TreatNoTestsAsError>true</TreatNoTestsAsError>
-  </RunConfiguration>
-
-  <!-- Configurations for data collectors -->
-  <DataCollectionRunSettings>
-    <DataCollectors>
-      <DataCollector friendlyName="Code Coverage" uri="datacollector://Microsoft/CodeCoverage/2.0" assemblyQualifiedName="Microsoft.VisualStudio.Coverage.DynamicCoverageDataCollector, Microsoft.VisualStudio.TraceCollector, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-        <Configuration>
-          <CodeCoverage>
-            <ModulePaths>
-              <Exclude>
-                <ModulePath>.*CPPUnitTestFramework.*</ModulePath>
-              </Exclude>
-            </ModulePaths>
-
-            <!-- We recommend you do not change the following values: -->
-            <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
-            <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
-            <CollectFromChildProcesses>True</CollectFromChildProcesses>
-            <CollectAspDotNet>False</CollectAspDotNet>
-
-          </CodeCoverage>
-        </Configuration>
-      </DataCollector>
-
-      <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
-        <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
-        <Configuration>
-          <!-- Set "sendRecordedMediaForPassedTestCase" to "false" to add video attachments to failed tests only -->
-          <MediaRecorder sendRecordedMediaForPassedTestCase="true"  xmlns="">           ​
-            <ScreenCaptureVideo bitRate="512" frameRate="2" quality="20" />​
-          </MediaRecorder>​
-        </Configuration>
-      </DataCollector>
-
-      <!-- Configuration for blame data collector -->
-      <DataCollector friendlyName="blame" enabled="True">
-      </DataCollector>
-
-    </DataCollectors>
-  </DataCollectionRunSettings>
-
-  <!-- Parameters used by tests at run time -->
-  <TestRunParameters>
-    <Parameter name="webAppUrl" value="http://localhost" />
-    <Parameter name="webAppUserName" value="Admin" />
-    <Parameter name="webAppPassword" value="Password" />
-  </TestRunParameters>
-
-  <!-- Configuration for loggers -->
-  <LoggerRunSettings>
-    <Loggers>
-      <Logger friendlyName="console" enabled="True">
-        <Configuration>
-            <Verbosity>quiet</Verbosity>
-        </Configuration>
-      </Logger>
-      <Logger friendlyName="trx" enabled="True">
-        <Configuration>
-          <LogFileName>foo.trx</LogFileName>
-        </Configuration>
-      </Logger>
-      <Logger friendlyName="html" enabled="True">
-        <Configuration>
-          <LogFileName>foo.html</LogFileName>
-        </Configuration>
-      </Logger>
-      <Logger friendlyName="blame" enabled="True" />
-    </Loggers>
-  </LoggerRunSettings>
-
-  <!-- Adapter Specific sections -->
-
-  <!-- MSTest adapter -->
-  <MSTest>
-    <MapInconclusiveToFailed>True</MapInconclusiveToFailed>
-    <CaptureTraceOutput>false</CaptureTraceOutput>
-    <DeleteDeploymentDirectoryAfterTestRunIsComplete>False</DeleteDeploymentDirectoryAfterTestRunIsComplete>
-    <DeploymentEnabled>False</DeploymentEnabled>
-    <AssemblyResolution>
-      <Directory path="D:\myfolder\bin\" includeSubDirectories="false"/>
-    </AssemblyResolution>
-  </MSTest>
-
-</RunSettings>
-```
+Loggers in MSTest runner are configured through commandline parameters, or by settings in code.

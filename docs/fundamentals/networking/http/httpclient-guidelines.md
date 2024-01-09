@@ -72,7 +72,7 @@ var retryPipeline = new ResiliencePipelineBuilder<HttpResponseMessage>()
     .Build();
 
 var socketHandler = new SocketsHttpHandler { PooledConnectionLifetime = TimeSpan.FromMinutes(15) };
-var resilienceHandler = new ResilienceHandler(retryPolicy)
+var resilienceHandler = new ResilienceHandler(retryPipeline)
 {
     InnerHandler = socketHandler,
 };

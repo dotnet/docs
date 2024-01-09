@@ -35,7 +35,7 @@ End Module
 '       FILE:\\\c:\users\user001\documents\FinancialInfo.txt
 '       Access allowed: False
 '       
-'       Culture: Turkish (Turkey)
+'       Culture: Turkish (Türkiye)
 '       FILE:\\\c:\users\user001\documents\FinancialInfo.txt
 '       Access allowed: True
 ' </Snippet17>

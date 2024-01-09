@@ -175,6 +175,10 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a local tool for the current directory.
 
+- **`dotnet tool install -g --verbosity minimal`**
+
+  Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool with the verbosity of minimal. The default verbosity for global tool is quiet. 
+
 ## See also
 
 - [.NET tools](global-tools.md)

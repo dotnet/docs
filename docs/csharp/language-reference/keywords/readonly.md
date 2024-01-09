@@ -1,7 +1,7 @@
 ---
 description: "readonly keyword - C# Reference"
 title: "readonly keyword - C# Reference"
-ms.date: 09/25/2023
+ms.date: 01/09/2024
 f1_keywords:
   - "readonly_CSharpKeyword"
   - "readonly"
@@ -32,7 +32,7 @@ The `readonly` keyword is a modifier that can be used in five contexts:
 
 In this example, the value of the field `year` can't be changed in the method `ChangeYear`, even though it's assigned a value in the class constructor:
 
-[!code-csharp[Readonly Field example](snippets/ReadonlyKeywordExamples.cs#ReadonlyField)]
+:::code language="csharp" source="snippets/ReadonlyKeywordExamples.cs" id="ReadonlyField":::
 
 You can assign a value to a `readonly` field only in the following contexts:
 
@@ -54,7 +54,7 @@ These constructor contexts are also the only contexts in which it's valid to pas
 > public static readonly uint timeStamp = (uint)DateTime.Now.Ticks;
 > ```
 
-[!code-csharp[Initialize readonly Field example](snippets/ReadonlyKeywordExamples.cs#InitReadonlyField)]
+:::code language="csharp" source="snippets/ReadonlyKeywordExamples.cs" id="InitReadonlyField":::
 
 In the preceding example, if you use a statement like the following example:
 
@@ -72,11 +72,14 @@ You can also use the `readonly` modifier to declare that an instance member does
 
 :::code language="csharp" source="../builtin-types/snippets/shared/StructType.cs" id="SnippetReadonlyMethod":::
 
+> [!NOTE]
+> In the case of a read/write property, you can add the `readonly` modifier to the `get` accessor. Some `get` accessors may perform a calculation and cache the result, rather than simply returning the value of a private field. Adding the `readonly` modifier to the `get` accessor guarantees that the `get` accessor doesn't modify the internal state of the object by caching any result.
+
 ## Ref readonly return example
 
 The `readonly` modifier on a `ref return` indicates that the returned reference can't be modified. The following example returns a reference to the origin. It uses the `readonly` modifier to indicate that callers can't modify the origin:
 
-[!code-csharp[readonly return example](snippets/ReadonlyKeywordExamples.cs#ReadonlyReturn)]
+:::code language="csharp" source="snippets/ReadonlyKeywordExamples.cs" id="ReadonlyReturn":::
 
 The type returned doesn't need to be a `readonly struct`. Any type that can be returned by `ref` can be returned by `ref readonly`.
 

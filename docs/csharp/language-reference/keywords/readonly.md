@@ -18,7 +18,7 @@ The `readonly` keyword is a modifier that can be used in five contexts:
   A `readonly` field can't be assigned after the constructor exits. This rule has different implications for value types and reference types:
 
   - Because value types directly contain their data, a field that is a  `readonly` value type is immutable.
-  - Because reference types contain a reference to their data, a field that is a `readonly` reference type must always refer to the same object. That object isn't immutable. The `readonly` modifier prevents the field from being replaced by a different instance of the reference type. However, the modifier doesn't prevent the instance data of the field from being modified through the read-only field.
+  - Because reference types contain a reference to their data, a field that is a `readonly` reference type must always refer to the same object. That object might not be immutable. The `readonly` modifier prevents replacing the field value with a different instance of the reference type. However, the modifier doesn't prevent the instance data of the field from being modified through the read-only field.
 
   > [!WARNING]
   > An externally visible type that contains an externally visible read-only field that is a mutable reference type may be a security vulnerability and may trigger warning [CA2104](/visualstudio/code-quality/ca2104) : "Do not declare read only mutable reference types."
@@ -30,7 +30,7 @@ The `readonly` keyword is a modifier that can be used in five contexts:
 
 ## Readonly field example
 
-In this example, the value of the field `year` can't be changed in the method `ChangeYear`, even though it's assigned a value in the class constructor:
+In this example, the value of the field `year` can't be changed in the method `ChangeYear`, even though it was assigned a value in the class constructor:
 
 :::code language="csharp" source="snippets/ReadonlyKeywordExamples.cs" id="ReadonlyField":::
 
@@ -62,7 +62,7 @@ In the preceding example, if you use a statement like the following example:
 p2.y = 66;        // Error
 ```
 
-you'll get the compiler error message:
+you get the compiler error message:
 
 **A readonly field cannot be assigned to (except in a constructor or a variable initializer)**
 
@@ -75,6 +75,8 @@ You can also use the `readonly` modifier to declare that an instance member does
 > [!NOTE]
 > In the case of a read/write property, you can add the `readonly` modifier to the `get` accessor. Some `get` accessors may perform a calculation and cache the result, rather than simply returning the value of a private field. Adding the `readonly` modifier to the `get` accessor guarantees that the `get` accessor doesn't modify the internal state of the object by caching any result.
 
+You can find more examples in the [`readonly` instance members](../builtin-types/struct.md#readonly-instance-members) section of the [Structure types](../builtin-types/struct.md) article.
+
 ## Ref readonly return example
 
 The `readonly` modifier on a `ref return` indicates that the returned reference can't be modified. The following example returns a reference to the origin. It uses the `readonly` modifier to indicate that callers can't modify the origin:
@@ -85,7 +87,7 @@ The type returned doesn't need to be a `readonly struct`. Any type that can be r
 
 ## Readonly ref readonly return example
 
-Ref readonly return can also be used in conjunction with `readonly` instance members on `struct` types:
+Ref readonly return can also be used with `readonly` instance members on `struct` types:
 
 :::code language="csharp" source="./snippets/ReadonlyKeywordExamples.cs" id="SnippetReadonlyRefReadonly":::
 

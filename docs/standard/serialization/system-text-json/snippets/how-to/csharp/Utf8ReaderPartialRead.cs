@@ -9,16 +9,16 @@ namespace SystemTextJsonSamples
         {
 
             var jsonString = """
-    {
-        "Date": "2019-08-01T00:00:00-07:00",
-        "Temperature": 25,
-        "TemperatureRanges": {
-            "Cold": { "High": 20, "Low": -10 },
-            "Hot": { "High": 60, "Low": 20
-        },
-        "Summary": "Hot"
-    }
-    """u8;
+            {
+                "Date": "2019-08-01T00:00:00-07:00",
+                "Temperature": 25,
+                "TemperatureRanges": {
+                    "Cold": { "High": 20, "Low": -10 },
+                    "Hot": { "High": 60, "Low": 20 }
+                },
+                "Summary": "Hot"
+            }
+            """u8;
 
             // Buffer size wouldn't typically be this small
             // Using a small size to demonstrate refilling buffer given small payload
@@ -64,7 +64,7 @@ namespace SystemTextJsonSamples
                 var isFinal = read < bytesConsumed;
                 Console.WriteLine($"Updating buffer ... leftOver bytes: {bufferStart}; bytes read: {read}; isFinalBlock: {isFinal}");
 
-                if (read is 0)
+                if (read == 0)
                 {
                     return false;
                 }

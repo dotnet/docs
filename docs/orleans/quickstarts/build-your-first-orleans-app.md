@@ -1,7 +1,7 @@
 ---
 title: 'Quickstart: Build your first Orleans app with ASP.NET Core'
 description: Learn how to use Orleans to build a scalable, distributed ASP.NET Core application
-ms.date: 10/11/2023
+ms.date: 01/09/2024
 ms.topic: quickstart
 ms.devlang: csharp
 ---
@@ -109,11 +109,11 @@ At the top of the _Program.cs_ file, refactor the code to use Orleans. The follo
 
 [Grains](../overview.md) are the most essential primitives and building blocks of Orleans applications. A grain is a class that inherits from the <xref:Orleans.Grain> base class, which manages various internal behaviors and integration points with Orleans. Grains should also implement one of the following interfaces to define their grain key identifier. Each of these interfaces defines a similar contract, but marks your class with a different data type for the identifier that Orleans uses to track the grain, such as a string or integer.
 
-- `IGrainWithGuidKey`
-- `IGrainWithIntegerKey`
-- `IGrainWithStringKey`
-- `IGrainWithGuidCompoundKey`
-- `IGrainWithIntegerCompoundKey`
+- <xref:Orleans.IGrainWithGuidKey>
+- <xref:Orleans.IGrainWithIntegerKey>
+- <xref:Orleans.IGrainWithStringKey>
+- <xref:Orleans.IGrainWithGuidCompoundKey>
+- <xref:Orleans.IGrainWithIntegerCompoundKey>
 
 For this quickstart, you use the `IGrainWithStringKey`, since strings are a logical choice for working with URL values and short codes.
 

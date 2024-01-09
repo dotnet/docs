@@ -10,7 +10,7 @@ ms.date: 12/20/2023
 
 This article describes how to use `dotnet test` to run tests when using MSTest runner, and the various options that are available to configure the MSBuild output produced when running tests through MSTest runner.
 
-This article shows how to use `dotnet test` to run all tests in a solution (`.sln`) that uses MSTest runner.
+This article shows how to use `dotnet test` to run all tests in a solution (_*.sln_) that uses MSTest runner.
 
 ## `dotnet test` integration
 
@@ -22,7 +22,7 @@ MSTest runner provides a compatibility layer to work with `dotnet test` seamless
 
 Tests can be run by running:
 
-```
+```dotnetcli
 dotnet test
 ```
 

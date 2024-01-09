@@ -19,7 +19,6 @@ All runsettings in `<MSTest>` section of the configuration file are supported by
 
 Their full description can be [found here](https://learn.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file?view=vs-2022#mstest-element).
 
-
 ## Unsupported runsettings
 
 ### RunConfiguration

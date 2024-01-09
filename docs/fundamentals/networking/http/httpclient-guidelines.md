@@ -52,7 +52,7 @@ To summarize recommended `HttpClient` use in terms of lifetime management, you s
 
 For more information about managing `HttpClient` lifetime with `IHttpClientFactory`, see [`IHttpClientFactory` guidelines](../../../core/extensions/httpclient-factory.md#httpclient-lifetime-management).
 
-## Resilience pipelines with static clients
+## Resilience with static clients
 
 It's possible to configure a `static` or *singleton* client to use any number of resilience pipelines using the following pattern:
 

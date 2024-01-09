@@ -247,7 +247,7 @@ For more information regarding the runtime identifiers supported by .NET, see [R
 
 ### `ContainerRegistry`
 
-The container registry property controls the destination registry, the place that the newly created image will be pushed to. Be default it's pushed to the local Docker daemon, but you can also specify a remote registry.  When using a remote registry that requires authentication, you authenticate using the well-known `docker login` mechanisms. For more information, See [authenticating to container registries](https://aka.ms/dotnet/containers/auth) for more details. For a concrete example of using this property, consider the following XML example:
+The container registry property controls the destination registry, the place that the newly created image will be pushed to. By default it's pushed to the local Docker daemon, but you can also specify a remote registry.  When using a remote registry that requires authentication, you authenticate using the well-known `docker login` mechanisms. For more information, See [authenticating to container registries](https://aka.ms/dotnet/containers/auth) for more details. For a concrete example of using this property, consider the following XML example:
 
 ```xml
 <PropertyGroup>

@@ -356,6 +356,10 @@ items:
             href: ../../standard/linq/reference.md
       - name: Supplemental API remarks
         items:
+        - name: System.Data.Linq.DataLoadOptions class
+          href: ../../fundamentals/runtime-libraries/system-data-linq-dataloadoptions.md
+        - name: System.Data.Linq.Mapping.TableAttribute class
+          href: ../../fundamentals/runtime-libraries/system-data-linq-mapping-tableattribute.md
         - name: System.Xml.Linq.XName class
           href: ../../fundamentals/runtime-libraries/system-xml-linq-xname.md
         - name: System.Xml.Linq.XNamespace class
@@ -697,6 +701,12 @@ items:
             href: ../../standard/data/sqlite/compare.md
           - name: Xamarin
             href: ../../standard/data/sqlite/xamarin.md
+  - name: Supplemental API remarks
+    items:
+    - name: System.Data.DataSet class
+      href: ../../fundamentals/runtime-libraries/system-data-dataset.md
+    - name: System.Data.DataTable class
+      href: ../../fundamentals/runtime-libraries/system-data-datatable.md
   - name: Entity Framework
     href: /ef/core/?toc=/dotnet/navigate/data-access/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: Azure Storage

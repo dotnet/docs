@@ -10,6 +10,8 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
+The <xref:System.Runtime.InteropServices.ICustomMarshaler> interface provides custom wrappers for handling method calls.
+
 A marshaller provides a bridge between the functionality of old and new interfaces. Custom marshaling provides the following benefits:
 
 - It enables client applications that were designed to work with an old interface to also work with servers that implement a new interface.

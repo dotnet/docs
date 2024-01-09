@@ -78,7 +78,8 @@ When you install with a package manager, these libraries are installed for you. 
 - libgcc
 - libgdiplus (if the .NET app requires the *System.Drawing.Common* assembly)
 - libintl
-- libssl1.1
+- libssl1.1 (for 3.14.x and older)
+- libssl3 (for 3.15.x and newer)
 - libstdc++
 - zlib
 

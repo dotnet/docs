@@ -15,7 +15,7 @@ ms.date: 11/19/2021
 
 Whether you prefer a full and powerful IDE or a lightweight and agile editor, Microsoft has tools that you can use for developing Docker applications.
 
-**Visual Studio (for Windows).** Docker-based .NET 7 application development with Visual Studio requires Visual Studio 2022 version 17.0 or later. Visual Studio 2022 comes with tools for Docker already built in. The tools for Docker let you develop, run, and validate your applications directly in the target Docker environment. You can press <kbd>F5</kbd> to run and debug your application (single container or multiple containers) directly into a Docker host, or press <kbd>CTRL</kbd> + <kbd>F5</kbd> to edit and refresh your application without having to rebuild the container. This IDE is the most powerful development choice for Docker-based apps.
+**Visual Studio (for Windows).** Docker-based .NET 8 application development with Visual Studio requires Visual Studio 2022 version 17.0 or later. Visual Studio 2022 comes with tools for Docker already built in. The tools for Docker let you develop, run, and validate your applications directly in the target Docker environment. You can press <kbd>F5</kbd> to run and debug your application (single container or multiple containers) directly into a Docker host, or press <kbd>CTRL</kbd> + <kbd>F5</kbd> to edit and refresh your application without having to rebuild the container. This IDE is the most powerful development choice for Docker-based apps.
 
 **Visual Studio for Mac.** It's an IDE, evolution of Xamarin Studio, running in macOS. This tool should be the preferred choice for developers working in macOS machines who also want to use a powerful IDE.
 
@@ -39,7 +39,7 @@ By installing [Docker Desktop](https://hub.docker.com/search/?type=edition&offer
 
 ## .NET languages and frameworks for Docker containers
 
-As mentioned in earlier sections of this guide, you can use .NET Framework, .NET 7, or the open-source Mono project when developing Docker containerized .NET applications. You can develop in C\#, F\#, or Visual Basic when targeting Linux or Windows Containers, depending on which .NET framework is in use. For more details about.NET languages, see the blog post [The .NET Language Strategy](https://devblogs.microsoft.com/dotnet/the-net-language-strategy/).
+As mentioned in earlier sections of this guide, you can use .NET Framework, .NET 8, or the open-source Mono project when developing Docker containerized .NET applications. You can develop in C\#, F\#, or Visual Basic when targeting Linux or Windows Containers, depending on which .NET framework is in use. For more details about.NET languages, see the blog post [The .NET Language Strategy](https://devblogs.microsoft.com/dotnet/the-net-language-strategy/).
 
 >[!div class="step-by-step"]
 >[Previous](../architect-microservice-container-applications/scalable-available-multi-container-microservice-applications.md)

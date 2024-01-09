@@ -33,7 +33,7 @@ In most cases when you restore a package, you want to know whether the restored 
 
 - If you want to set a different security audit level, add the `<NuGetAuditLevel>` property to your project file with possible values of `low`, `moderate`, `high`, and `critical`.
 
-- If you want to ignore these warnings, you can use `<NoWarn>` to suppress `NU1091-NU104` warnings.
+- If you want to ignore these warnings, you can use `<NoWarn>` to suppress `NU1901-NU1904` warnings.
 
 - To disable the new behavior entirely, you can set the `<NuGetAudit>` project property to `false`.
 

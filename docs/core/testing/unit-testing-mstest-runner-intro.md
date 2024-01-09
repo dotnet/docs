@@ -10,11 +10,11 @@ ms.date: 12/15/2023
 
 The MSTest runner is a lightweight and portable alternative to [VSTest](https://github.com/microsoft/vstest) for running tests in all contexts (continuous integration (CI) pipelines, CLI, Visual Studio Test Explorer, VS Code Text Explorer...). The MSTest runner is embedded directly in your MSTest test projects, and there's no other app dependencies, such as `vstest.console` or `dotnet test` needed to run your tests.
 
-The MSTest runner is open source, and builds on a `Microsoft.Testing.Platform` library. You can find `Microsoft.Testing.Platform` code in [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository. The MSTest runner comes bundled with `MSTest in 3.2.0-preview`.
+The MSTest runner is open source, and builds on a `Microsoft.Testing.Platform` library. You can find `Microsoft.Testing.Platform` code in [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository. The MSTest runner comes bundled with `MSTest in 3.2.0-preview.23623.1` or newer.
 
 ## Enable MSTest runner in a MSTest project
 
-To enable the MSTest runner in a MSTest project, you need to add the `EnableMSTestRunner` property and set `OutputType` to `Exe` in your project file, and unsure that you're using `MSTest 3.2.0-preview` or newer, consider the following example _*.csproj_ file:
+To enable the MSTest runner in a MSTest project, you need to add the `EnableMSTestRunner` property and set `OutputType` to `Exe` in your project file, and ensure that you're using `MSTest 3.2.0-preview.23623.1` or newer, consider the following example _*.csproj_ file:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -41,7 +41,7 @@ To enable the MSTest runner in a MSTest project, you need to add the `EnableMSTe
           MSTest.TestFramework
           MSTest.Analyzers
     -->    
-    <PackageReference Include="MSTest" Version="3.2.0-preview.23570.1" />
+    <PackageReference Include="MSTest" Version="3.2.0-preview.23623.1" />
 
     <!-- 
       Coverlet collector isn't compatible with MSTest runner, you can 
@@ -49,8 +49,8 @@ To enable the MSTest runner in a MSTest project, you need to add the `EnableMSTe
       or switch to be using coverlet global tool
       https://github.com/coverlet-coverage/coverlet#net-global-tool-guide-suffers-from-possible-known-issue
     --> 
-    <PackageReference Include="Microsoft.`Testing.Platform`.Extensions.CodeCoverage" 
-                      Version="17.9.4-beta.23563.1" />
+    <PackageReference Include="Microsoft.Testing.Platform.Extensions.CodeCoverage" 
+                      Version="17.10.0-preview.23622.1" />
   </ItemGroup>
 
 </Project>
@@ -162,6 +162,55 @@ To run a test project in CI add one step for each test executable that you wish 
 ```
 
 ---
+
+## Options
+
+- **`--diagnostic`**
+
+Enables the diagnostic logging. The default log level is `Information`. The file is written in the output directory with the following name format, `log_[MMddHHssfff].diag`.
+
+- **`--diagnostic-filelogger-synchronouswrite`**
+
+Forces the built-in file logger to synchronously write logs. Useful for scenarios where you don't want to lose any log entries (if the process crashes). This does slow down the test execution.
+
+- **`--diagnostic-output-directory`**
+
+The output directory of the diagnostic logging, if not specified the file is generated in the default _TestResults_ directory.
+
+- **`--diagnostic-output-fileprefix`**
+
+The prefix for the log file name. Defaults to `"log_"`.
+
+- **`--diagnostic-verbosity`**
+
+Defines the verbosity level when the `--diagnostic` switch is used. The available values are `Trace`, `Debug`, `Information`, `Warning`, `Error`, or `Critical`.
+
+- **`--help`**
+
+Prints out a description of how to use the command.
+
+- **`-ignore-exit-code`**
+
+Allows some non-zero exit codes to be ignored, and instead returned as `0`. For more information, see [Ignore specific exit codes](./unit-testing-mstest-runner-exit-codes.md#ignore-specific-exit-codes).
+
+- **`--info`**
+
+Displays advanced information about the .NET Test Application such as:
+
+- The platform.
+- The environment.
+- Each registered command line provider, such as its, `name`, `version`, `description` and `options`.
+- Each registered tool, such as its, `command`, `name`, `version`, `description`, and all command line providers.
+
+This feature is used to understand extensions that would be registering the same command line option or the changes in available options between multiple versions of an extension (or the platform).
+
+- **`--list-tests`**
+
+List available tests. Tests will not be executed.
+
+- **`--results-directory`**
+
+The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the test application.
 
 ## See also
 

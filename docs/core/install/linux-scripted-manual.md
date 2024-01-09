@@ -131,7 +131,9 @@ Different versions of .NET can be extracted to the same folder, which coexist si
 
 ### Example
 
-The following commands set the environment variable `DOTNET_ROOT` to the current working directory followed by `.dotnet`. They then create the directory if it doesn't exist and extract the contents of the file specified by the `DOTNET_FILE` environment variable to the `.dotnet` directory. Both the `.dotnet` directory and its `tools` subdirectory are added to the `PATH` environment variable.
+<!-- Note, this content is copied in macos.md. Any fixes should be applied there too, though content may be different -->
+
+The following commands use Bash to set the environment variable `DOTNET_ROOT` to the current working directory followed by `.dotnet`. That directory is created if it doesn't exist. The `DOTNET_FILE` environment variable is the filename of the .NET binary release you want to install. This file is extracted to the `DOTNET_ROOT` directory. Both the `DOTNET_ROOT` directory and its `tools` subdirectory are added to the `PATH` environment variable.
 
 > [!IMPORTANT]
 > If you run these commands, remember to change the `DOTNET_FILE` value to the name of the .NET binary you downloaded.
@@ -145,7 +147,13 @@ mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 ```
 
-The preceding install script approach allows installing different versions into separate locations so you can choose explicitly which one to use by which app. However, you can still install multiple versions of .NET to the same folder.
+You can install more than one version of .NET in the same folder.
+
+You can also install .NET to the home directory identified by the `HOME` variable or `~` path:
+
+```bash
+export DOTNET_ROOT=$HOME/.dotnet
+```
 
 ## Verify downloaded binaries
 
@@ -157,7 +165,7 @@ The preceding install script approach allows installing different versions into 
 
 If you used the previous install script, the variables set only apply to your current terminal session. Add them to your shell profile. There are many different shells available for Linux and each has a different profile. For example:
 
-- **Bash Shell**: *~/.bash_profile*, *~/.bashrc*
+- **Bash Shell**: *~/.bash_profile* or *~/.bashrc*
 - **Korn Shell**: *~/.kshrc* or *.profile*
 - **Z Shell**: *~/.zshrc* or *.zprofile*
 
@@ -173,7 +181,7 @@ Set the following two environment variables in your shell profile:
 
 - `PATH`
 
-  This variable should include both the `DOTNET_ROOT` folder and the user's _.dotnet/tools_ folder:
+  This variable should include both the `DOTNET_ROOT` folder and the `DOTNET_ROOT/tools` folder:
 
   ```bash
   export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools

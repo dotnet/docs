@@ -354,6 +354,16 @@ items:
                     href: ../../standard/linq/sample-xml-file-consolidated-purchase-orders.md
           - name: Reference
             href: ../../standard/linq/reference.md
+      - name: Supplemental API remarks
+        items:
+        - name: System.Data.Linq.DataLoadOptions class
+          href: ../../fundamentals/runtime-libraries/system-data-linq-dataloadoptions.md
+        - name: System.Data.Linq.Mapping.TableAttribute class
+          href: ../../fundamentals/runtime-libraries/system-data-linq-mapping-tableattribute.md
+        - name: System.Xml.Linq.XName class
+          href: ../../fundamentals/runtime-libraries/system-xml-linq-xname.md
+        - name: System.Xml.Linq.XNamespace class
+          href: ../../fundamentals/runtime-libraries/system-xml-linq-xnamespace.md
   - name: XML documents and data
     href: ../../standard/data/xml/index.md
     items:
@@ -508,7 +518,7 @@ items:
             href: ../../standard/data/xml/process-xml-data-using-linq-to-xml.md
       - name: XML serialization
         href: ../../standard/serialization/xml-and-soap-serialization.md?toc=/dotnet/navigate/data-access/toc.json&bc=/dotnet/breadcrumb/toc.json
-      - name: XSLT Transformations
+      - name: XSLT transformations
         href: ../../standard/data/xml/xslt-transformations.md
         items:
           - name: Use the XslCompiledTransform Class
@@ -545,7 +555,7 @@ items:
             items:
               - name: Perform an XSLT Transformation by Using an Assembly
                 href: ../../standard/data/xml/how-to-perform-an-xslt-transformation-by-using-an-assembly.md
-      - name: Work with XML Schemas
+      - name: Work with XML schemas
         href: ../../standard/data/xml/working-with-xml-schemas.md
         items:
           - name: XML Schema Object Model (SOM)
@@ -588,11 +598,11 @@ items:
                 href: ../../standard/data/xml/rules-for-inferring-schema-node-types-and-structure.md
               - name: Rules for Inferring Simple Types
                 href: ../../standard/data/xml/rules-for-inferring-simple-types.md
-      - name: XML Integration with Relational Data and ADO.NET
+      - name: XML integration with relational data and ADO.NET
         href: ../../standard/data/xml/xml-integration-with-relational-data-and-adonet.md
-      - name: Manage Namespaces in an XML Document
+      - name: Manage namespaces in an XML document
         href: ../../standard/data/xml/managing-namespaces-in-an-xml-document.md
-      - name: Type Support in the System.Xml Classes
+      - name: Type support in the System.Xml classes
         href: ../../standard/data/xml/type-support-in-the-system-xml-classes.md
         items:
           - name: Map XML Data Types to CLR Types
@@ -606,6 +616,34 @@ items:
                 href: ../../standard/data/xml/converting-strings-to-dotnet-data-types.md
               - name: Convert .NET Framework Types to Strings
                 href: ../../standard/data/xml/converting-dotnet-types-to-strings.md
+      - name: Supplemental API remarks
+        items:
+        - name: System.Xml.Schema.XmlSchemaSet class
+          href: ../../fundamentals/runtime-libraries/system-xml-schema-xmlschemaset.md
+        - name: System.Xml.Serialization.CodeGenerationOptions class
+          href: ../../fundamentals/runtime-libraries/system-xml-serialization-codegenerationoptions.md
+        - name: System.Xml.Serialization.XmlSerializer class
+          href: ../../fundamentals/runtime-libraries/system-xml-serialization-xmlserializer.md
+        - name: System.Xml.XmlConvert class
+          href: ../../fundamentals/runtime-libraries/system-xml-xmlconvert.md
+        - name: System.Xml.XmlDocument class
+          href: ../../fundamentals/runtime-libraries/system-xml-xmldocument.md
+        - name: System.Xml.XmlReader class
+          href: ../../fundamentals/runtime-libraries/system-xml-xmlreader.md
+        - name: System.Xml.XmlReaderSettings class
+          href: ../../fundamentals/runtime-libraries/system-xml-xmlreadersettings.md
+        - name: System.Xml.XmlResolver class
+          href: ../../fundamentals/runtime-libraries/system-xml-xmlresolver.md
+        - name: System.Xml.XmlSecureResolver class
+          href: ../../fundamentals/runtime-libraries/system-xml-xmlsecureresolver.md
+        - name: System.Xml.XmlTextReader class
+          href: ../../fundamentals/runtime-libraries/system-xml-xmltextreader.md
+        - name: System.Xml.XmlTextWriter class
+          href: ../../fundamentals/runtime-libraries/system-xml-xmltextwriter.md
+        - name: System.Xml.XmlWriter class
+          href: ../../fundamentals/runtime-libraries/system-xml-xmlwriter.md
+        - name: System.Xml.Xsl.XslCompiledTransform class
+          href: ../../fundamentals/runtime-libraries/system-xml-xsl-xslcompiledtransform.md
   - name: Microsoft.Data.Sqlite
     items:
       - name: Overview
@@ -663,6 +701,12 @@ items:
             href: ../../standard/data/sqlite/compare.md
           - name: Xamarin
             href: ../../standard/data/sqlite/xamarin.md
+  - name: Supplemental API remarks
+    items:
+    - name: System.Data.DataSet class
+      href: ../../fundamentals/runtime-libraries/system-data-dataset.md
+    - name: System.Data.DataTable class
+      href: ../../fundamentals/runtime-libraries/system-data-datatable.md
   - name: Entity Framework
     href: /ef/core/?toc=/dotnet/navigate/data-access/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: Azure Storage

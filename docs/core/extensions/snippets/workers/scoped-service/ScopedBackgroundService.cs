@@ -1,7 +1,7 @@
 ﻿namespace App.ScopedService;
 
 public sealed class ScopedBackgroundService(
-    IServiceProvider serviceProvider,
+    IServiceScopeFactory serviceScopeFactory,
     ILogger<ScopedBackgroundService> logger) : BackgroundService
 {
     private const string ClassName = nameof(ScopedBackgroundService);
@@ -19,7 +19,7 @@ public sealed class ScopedBackgroundService(
         logger.LogInformation(
             "{Name} is working.", ClassName);
 
-        using (IServiceScope scope = serviceProvider.CreateScope())
+        using (IServiceScope scope = serviceScopeFactory.CreateScope())
         {
             IScopedProcessingService scopedProcessingService =
                 scope.ServiceProvider.GetRequiredService<IScopedProcessingService>();

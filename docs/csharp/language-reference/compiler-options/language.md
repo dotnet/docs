@@ -107,7 +107,7 @@ For information about how to set this compiler option programmatically, see <xre
 | C# 1.0           | [Download DOC][csharp-1]   | Standard ECMA-334 1st Edition                                |
 
 [csharp-8]: /dotnet/csharp/language-reference/language-specification/introduction
-[csharp-7]: https://ecma-international.org/wp-content/uploads/ECMA-334_7th_edition_december_2023.pdfn
+[csharp-7]: https://ecma-international.org/wp-content/uploads/ECMA-334_7th_edition_december_2023.pdf
 [csharp-6]: https://www.ecma-international.org/wp-content/uploads/ECMA-334_6th_edition_june_2022.pdf
 [csharp-5]: https://www.ecma-international.org/wp-content/uploads/ECMA-334_5th_edition_december_2017.pdf
 [csharp-3]: https://download.microsoft.com/download/3/8/8/388e7205-bc10-4226-b2a8-75351c669b09/CSharp%20Language%20Specification.doc

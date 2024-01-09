@@ -1,7 +1,7 @@
 ﻿---
 title: Transactions in Orleans
 description: Learn how to use transactions in .NET Orleans.
-ms.date: 10/26/2022
+ms.date: 01/09/2024
 ---
 
 # Orleans transactions
@@ -25,7 +25,7 @@ var builder = Host.CreateDefaultBuilder(args)
     });
 ```
 
-Likewise, to enable transactions on the client, call `UseTransactions` <!-- <xref:Orleans.Hosting.ClientBuilderExtensions.UseTransactions%2A?displayProperty=nameWithType> --> on the client host builder:
+Likewise, to enable transactions on the client, call <xref:Orleans.Hosting.ClientBuilderExtensions.UseTransactions%2A?displayProperty=nameWithType> on the client host builder:
 
 ```csharp
 var builder = Host.CreateDefaultBuilder(args)

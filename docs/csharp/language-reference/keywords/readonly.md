@@ -87,7 +87,7 @@ The type returned doesn't need to be a `readonly struct`. Any type that can be r
 
 ## Readonly ref readonly return example
 
-Ref readonly return can also be used with `readonly` instance members on `struct` types:
+A `ref readonly return` can also be used with `readonly` instance members on `struct` types:
 
 :::code language="csharp" source="./snippets/ReadonlyKeywordExamples.cs" id="SnippetReadonlyRefReadonly":::
 

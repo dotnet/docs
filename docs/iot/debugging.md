@@ -5,7 +5,6 @@ author: camsoper
 ms.author: casoper
 ms.date: 10/07/2022
 ms.topic: how-to
-ms.prod: dotnet
 zone_pivot_groups: ide-set-one
 ---
 

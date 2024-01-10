@@ -5,7 +5,6 @@ author: camsoper
 ms.author: casoper
 ms.date: 12/05/2022
 ms.topic: tutorial
-ms.prod: dotnet
 ---
 <!--markdownlint-disable DOCSMD011 -->
 # Display text on an LCD

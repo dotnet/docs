@@ -2,7 +2,7 @@
 title: The Updated .NET Core Event Pattern
 description: Learn how the .NET Core event pattern enables flexibility with backwards compatibility and how to implement safe event processing with async subscribers.
 ms.date: 06/20/2016
-ms.technology: csharp-fundamentals
+ms.subservice: fundamentals
 ms.assetid: 9aa627c3-3222-4094-9ca8-7e88e1071e06
 ---
 

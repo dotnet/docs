@@ -386,6 +386,13 @@ Tags can only contain up to 127 alphanumeric characters, periods, underscores, a
 >
 > This results in two images being generated: `my-app:1.2.3-alpha2` and `my-app:latest`.
 
+> [!TIP]
+> If you experience issues with the `ContainerImageTags` property, consider scoping an environment variable `ContainerImageTags` instead:
+>
+> ```dotnetcli
+> ContainerImageTags='1.2.3;latest' dotnet publish
+> ```
+
 ### `ContainerLabel`
 
 The container label adds a metadata label to the container. Labels have no impact on the container at run time, but are often used to store version and authoring metadata for use by security scanners and other infrastructure tools. You can specify any number of container labels.

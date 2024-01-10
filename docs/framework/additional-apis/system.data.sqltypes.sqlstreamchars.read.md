@@ -3,7 +3,7 @@ description: "Learn more about: SqlStreamChars.Read(Char[], Int32, Int32) Method
 title: SqlStreamChars.Read(Char[], Int32, Int32) Method (System.Data.SqlTypes)
 author: stevestein
 ms.date: 12/20/2018
-ms.subservice: "data"
+ms.subservice: "data-access"
 topic_type:
   - "apiref"
 api_name:

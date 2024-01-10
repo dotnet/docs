@@ -196,29 +196,26 @@ Some properties described in the following sections correspond to managing parts
 
 :::zone pivot="dotnet-8-0"
 
-| Image name part   | MSBuild property      | Example                                       |
-|-------------------|-----------------------|-----------------------------------------------|
-| `REGISTRY[:PORT]` | `ContainerRegistry`   | `mcr.microsoft.com:443`                       |
-| `PORT`            | `ContainerPort`       | `:443`                                        |
-| `REPOSITORY`      | `ContainerRepository` | `dotnet/runtime`                              |
-| `REPOSITORY`      | `ContainerImageName` | `dotnet/runtime`                              |
-| `TAG`             | `ContainerImageTag`   | `8.0`                                         |
-| `TAGS`            | `ContainerImageTags`  | `8.0;latest`                                  |
-| `FAMILY`          | `ContainerFamily`     | `-alpine`                                     |
-| `*`               | `ContainerImageName`  | `mcr.microsoft.com/dotnet/runtime:8.0-alpine` |
+| Image name part   | MSBuild property      | Example values          |
+|-------------------|-----------------------|-------------------------|
+| `REGISTRY[:PORT]` | `ContainerRegistry`   | `mcr.microsoft.com:443` |
+| `PORT`            | `ContainerPort`       | `:443`                  |
+| `REPOSITORY`      | `ContainerRepository` | `dotnet/runtime`        |
+| `TAG`             | `ContainerImageTag`   | `8.0`                   |
+| `TAGS`            | `ContainerImageTags`  | `8.0;latest`            |
+| `FAMILY`          | `ContainerFamily`     | `-alpine`               |
 
 :::zone-end
 :::zone pivot="dotnet-7-0"
 
-| Image name part   | MSBuild property      | Example                                       |
-|-------------------|-----------------------|-----------------------------------------------|
-| `REGISTRY[:PORT]` | `ContainerRegistry`   | `mcr.microsoft.com:443`                       |
-| `PORT`            | `ContainerPort`       | `:443`                                        |
-| `REPOSITORY`      | `ContainerImageName`  | `dotnet/runtime`                              |
-| `TAG`             | `ContainerImageTag`   | `8.0`                                         |
-| `TAGS`            | `ContainerImageTags`  | `8.0;latest`                                  |
-| `FAMILY`          | `ContainerFamily`     | `-alpine`                                     |
-| `*`               | `ContainerImageName`  | `mcr.microsoft.com/dotnet/runtime:8.0-alpine` |
+| Image name part   | MSBuild property     | Example values          |
+|-------------------|----------------------|-------------------------|
+| `REGISTRY[:PORT]` | `ContainerRegistry`  | `mcr.microsoft.com:443` |
+| `PORT`            | `ContainerPort`      | `:443`                  |
+| `REPOSITORY`      | `ContainerImageName` | `dotnet/runtime`        |
+| `TAG`             | `ContainerImageTag`  | `8.0`                   |
+| `TAGS`            | `ContainerImageTags` | `8.0;latest`            |
+| `FAMILY`          | `ContainerFamily`    | `-alpine`               |
 
 :::zone-end
 
@@ -341,7 +338,12 @@ Image names consist of one or more slash-delimited segments, each of which can o
 
 ### `ContainerImageTag(s)`
 
-The container image tag property controls the tags that are generated for the image. To specify a single tag use `ContainerImageTag` and for multiple tags use `ContainerImageTags`. Tags are often used to refer to different versions of an app, but they can also refer to different operating system distributions, or even different configurations.
+The container image tag property controls the tags that are generated for the image. To specify a single tag use `ContainerImageTag` and for multiple tags use `ContainerImageTags`.
+
+> [!IMPORTANT]
+> When you use `ContainerImageTags`, you'll end up with multiple images, one per unique tag.
+
+Tags are often used to refer to different versions of an app, but they can also refer to different operating system distributions, or even different configurations.
 
 :::zone pivot="dotnet-8-0"
 
@@ -378,6 +380,8 @@ Tags can only contain up to 127 alphanumeric characters, periods, underscores, a
 > ```dotnetcli
 > dotnet publish -p ContainerImageTags='"1.2.3-alpha2;latest"'
 > ```
+>
+> This results in two images being generated: `my-app:1.2.3-alpha2` and `my-app:latest`.
 
 ### `ContainerLabel`
 

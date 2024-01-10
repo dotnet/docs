@@ -190,9 +190,13 @@ Container images follow a specific naming convention. The name of the image is c
 REGISTRY[:PORT]/REPOSITORY[:TAG(S)[-FAMILY]]
 ```
 
-For example, `mcr.microsoft.com/dotnet/runtime:8.0-alpine`.
+For example, consider the fully qualified `mcr.microsoft.com/dotnet/runtime:8.0-alpine` image name:
 
-Some properties described in the following sections correspond to managing parts of the image name. Consider the following table that maps the relationship between the image name and the properties:
+- `mcr.microsoft.com` is the registry (and in this case represents the Microsoft container registry).
+- `dotnet/runtime` is the repository (but some consider this the `user/repository`).
+- `8.0-alpine` is the tag and family (the family is an optional specifier that helps disambiguate OS packaging).
+
+Some properties described in the following sections correspond to managing parts of the generated image name. Consider the following table that maps the relationship between the image name and the build properties:
 
 :::zone pivot="dotnet-8-0"
 

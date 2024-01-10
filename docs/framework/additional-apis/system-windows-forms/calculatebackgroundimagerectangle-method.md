@@ -2,7 +2,7 @@
 description: Learn more about the CalculateBackgroundImageRectangle method
 title: CalculateBackgroundImageRectangle method
 ms.date: 11/10/2021
-ms.subservice: dotnet-winforms
+ms.subservice: winforms
 api_name:
   - System.Windows.Forms.ControlPaint.CalculateBackgroundImageRectangle
 api_location:

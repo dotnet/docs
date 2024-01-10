@@ -3,7 +3,7 @@ description: "Learn more about: SqlStreamChars.Length Property"
 title: SqlStreamChars.Length Property (System.Data.SqlTypes)
 author: stevestein
 ms.date: 12/19/2018
-ms.subservice: "dotnet-data"
+ms.subservice: "data"
 topic_type:
   - "apiref"
 api_name:

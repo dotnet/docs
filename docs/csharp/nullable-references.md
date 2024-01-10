@@ -1,7 +1,7 @@
 ---
 title: Nullable reference types
 description: This article provides an overview of nullable reference types. You'll learn how the feature provides safety against null reference exceptions, for new and existing projects.
-ms.subservice: csharp-null-safety
+ms.subservice: null-safety
 ms.date: 09/01/2021
 ---
 # Nullable reference types

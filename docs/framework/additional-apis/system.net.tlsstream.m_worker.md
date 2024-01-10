@@ -2,7 +2,7 @@
 description: "Learn more about: TlsStream.m_Worker Field"
 title: TlsStream.m_Worker Field (System.Net)
 ms.date: 10/21/2019
-ms.subservice: "dotnet-networking"
+ms.subservice: "networking"
 topic_type:
   - "apiref"
 api_name:

@@ -3,7 +3,7 @@ description: "Learn more about: SqlStreamChars.Dispose(Boolean) Method"
 title: SqlStreamChars.Dispose(Boolean) Method (System.Data.SqlTypes)
 author: stevestein
 ms.date: 12/20/2018
-ms.subservice: "dotnet-data"
+ms.subservice: "data"
 topic_type:
   - "apiref"
 api_name:

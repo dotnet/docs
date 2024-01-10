@@ -3,7 +3,7 @@ description: "Learn more about: SqlMoney Constructor"
 title: SqlMoney Constructor (System.Data.SqlTypes)
 author: grabyourpitchforks
 ms.date: 04/04/2022
-ms.subservice: "dotnet-data"
+ms.subservice: "data"
 topic_type:
   - "apiref"
 api_name:

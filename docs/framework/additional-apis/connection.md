@@ -2,7 +2,7 @@
 title: "Connection Class (System.Net)"
 description: Learn about the Connection class in .NET. This class parses server responses, queue requests, and pipeline requests. It is in the System.NET namespace.
 ms.date: "05/01/2017"
-ms.subservice: "dotnet-networking"
+ms.subservice: "networking"
 topic_type:
   - "apiref"
 api_name:

@@ -3,7 +3,7 @@ description: "Learn more about: SqlMoney.ToSqlInternalRepresentation Method"
 title: SqlMoney.ToSqlInternalRepresentation Method (System.Data.SqlTypes)
 author: grabyourpitchforks
 ms.date: 06/16/2022
-ms.subservice: "dotnet-data"
+ms.subservice: "data"
 topic_type:
   - "apiref"
 api_name:

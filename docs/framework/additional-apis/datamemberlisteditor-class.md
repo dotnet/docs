@@ -2,7 +2,7 @@
 description: "Learn more about: DataMemberListEditor Class"
 title: "DataMemberListEditor Class"
 ms.date: "03/30/2017"
-ms.subservice: "dotnet-winforms"
+ms.subservice: "winforms"
 api_name:
   - "System.Windows.Forms.Design.DataMemberListEditor"
 api_location:

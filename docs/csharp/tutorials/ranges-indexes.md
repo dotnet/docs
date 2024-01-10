@@ -2,7 +2,7 @@
 title: Explore ranges of data using indices and ranges
 description: This advanced tutorial teaches you to explore data using indices and ranges to examine a continuous range of a sequential data set.
 ms.date: 11/14/2023
-ms.subservice: csharp-fundamentals
+ms.subservice: fundamentals
 ms.custom: mvc
 ---
 # Indices and ranges

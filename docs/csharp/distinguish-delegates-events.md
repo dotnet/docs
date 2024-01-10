@@ -2,7 +2,7 @@
 title: Delegates vs. events
 description: Learn the difference between delegates and events and when to use each of these features of .NET Core.
 ms.date: 06/20/2016
-ms.subservice: csharp-fundamentals
+ms.subservice: fundamentals
 ms.assetid: 0fdc8629-2fdb-4a7c-a433-5b9d04eaf911
 ---
 

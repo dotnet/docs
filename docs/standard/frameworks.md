@@ -4,7 +4,7 @@ description: Learn about target frameworks for .NET apps and libraries.
 ms.date: 12/12/2023
 ms.service: dotnet
 ms.custom: updateeachrelease
-ms.subservice: dotnet-standard
+ms.subservice: standard-library
 ---
 # Target frameworks in SDK-style projects
 

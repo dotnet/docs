@@ -3,7 +3,7 @@ description: "Learn more about: SqlStreamChars.Write(Char[], Int32, Int32) Metho
 title: SqlStreamChars.Write(Char[], Int32, Int32) Method (System.Data.SqlTypes)
 author: stevestein
 ms.date: 12/20/2018
-ms.subservice: "dotnet-data"
+ms.subservice: "data"
 topic_type:
   - "apiref"
 api_name:

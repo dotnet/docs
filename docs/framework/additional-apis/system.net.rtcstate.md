@@ -2,7 +2,7 @@
 description: "Learn more about: RtcState Class"
 title: "RtcState Class (System.Net)"
 ms.date: "11/01/2019"
-ms.subservice: "dotnet-networking"
+ms.subservice: "networking"
 topic_type:
   - "apiref"
 api_name:

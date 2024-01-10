@@ -2,7 +2,7 @@
 title: "Dispose Pattern"
 description: Learn about the Dispose Pattern, which standardizes the usage and implementation of finalizers and the `IDisposable` interface to release unmanaged resources.
 ms.date: "10/22/2008"
-ms.subservice: dotnet-standard
+ms.subservice: standard-library
 helpviewer_keywords:
   - "Dispose method"
   - "class library design guidelines [.NET Framework], Dispose method"

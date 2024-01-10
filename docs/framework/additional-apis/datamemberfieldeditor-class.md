@@ -2,7 +2,7 @@
 description: "Learn more about: DataMemberFieldEditor Class"
 title: "DataMemberFieldEditor Class"
 ms.date: "03/30/2017"
-ms.subservice: "dotnet-winforms"
+ms.subservice: "winforms"
 api_name:
   - "System.Windows.Forms.Design.DataMemberFieldEditor"
 api_location:

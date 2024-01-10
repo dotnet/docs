@@ -1,0 +1,19 @@
+# This GitHub Action workflow is triggered on label changes for pull requests.
+# When a pull request is labeled with "DO NOT MERGE", the workflow will fails, 
+# preventing the pull request from being merged.
+# Otherwise, the workflow will succeed, allowing the pull request to be merged.
+
+name: "Do not merge check"
+on:
+  pull_request:
+    branches: [main]
+    types: [labeled, unlabeled]
+
+jobs:
+  do-not-merge-check:
+    if: ${{ github.event.label.name == 'DO NOT MERGE' && github.event.action == 'labeled' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Remove the "DO NOT MERGE" label to allow merging'
+        # Fail the workflow if the pull request is labeled with "DO NOT MERGE"
+        run: exit 1

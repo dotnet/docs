@@ -37,7 +37,7 @@ Note that the default configuration of `[assembly: Parallelize]` is equivalent t
 
 ## How to fix violations
 
-To fix a violation of this rule, add `[assembly: Parallelize]` or `[assembly: DoNotParallelize]` attribute. We recommend to use `[assembly: Parallelize(Scope = ExecutionScope.MethodLevel, Workers = 0)]` to have best parallelization.
+To fix a violation of this rule, add `[assembly: Parallelize]` or `[assembly: DoNotParallelize]` attribute. We recommend to use `[assembly: Parallelize(Scope = ExecutionScope.MethodLevel)]` to have best parallelization.
 
 ## When to suppress warnings
 

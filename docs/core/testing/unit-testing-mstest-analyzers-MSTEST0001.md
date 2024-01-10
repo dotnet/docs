@@ -23,7 +23,7 @@ dev_langs:
 | **Category**                        | Performance                                        |
 | **Fix is breaking or non-breaking** | Non-breaking                                       |
 | **Enabled by default**              | Yes                                                |
-| **Default severity**                | Warning                                            |
+| **Default severity**                | Info                                            |
 
 ## Cause
 
@@ -31,11 +31,13 @@ The assembly is not marked with `[assembly: Parallelize]` or `[assembly: DoNotPa
 
 ## Rule description
 
-By default, MSTest runs tests within the same assembly sequentially, which can lead to severe performance limitations. It is recommended to enable assembly attribute `[assembly: Parallelize]` to run tests in parallel, or if the assembly is known to not be parallelizable, to use explicitly the assembly level attribute `[assembly: DoNotParallelize]`.
+By default, MSTest runs tests within the same assembly sequentially, which can lead to severe performance limitations. It is recommended to enable assembly attribute [`[assembly: Parallelize]`](https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting.parallelizeattribute) to run tests in parallel, or if the assembly is known to not be parallelizable, to use explicitly the assembly level attribute [`[assembly: DoNotParallelize]`](https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting.donotparallelizeattribute).
+
+Note that the default configuration of `[assembly: Parallelize]` is equivalent to `[assembly: Parallelize(Scope = ExecutionScope.ClassLevel, Workers = 0)]` meaning that the parallelization will be set at class level (not method level) and will as many threads as possible (depending on internal implementation).
 
 ## How to fix violations
 
-To fix a violation of this rule, add `[assembly: Parallelize]` or `[assembly: DoNotParallelize]` attribute.
+To fix a violation of this rule, add `[assembly: Parallelize]` or `[assembly: DoNotParallelize]` attribute. We recommend to use `[assembly: Parallelize(Scope = ExecutionScope.MethodLevel, Workers = 0)]` to have best parallelization.
 
 ## When to suppress warnings
 

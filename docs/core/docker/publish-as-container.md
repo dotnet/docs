@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with dotnet publish
 description: In this tutorial, you'll learn how to containerize a .NET application with dotnet publish.
-ms.date: 12/18/2023
+ms.date: 01/10/2024
 ms.topic: tutorial
 zone_pivot_groups: dotnet-version-7-8
 ---
@@ -182,6 +182,46 @@ You can control many aspects of the generated container through MSBuild properti
 > [!NOTE]
 > The only exceptions to this are `RUN` commands. Due to the way containers are built, those cannot be emulated. If you need this functionality, you'll need to use a _Dockerfile_ to build your container images.
 
+### Container image naming configuration
+
+Container images follow a specific naming convention. The name of the image is composed of several parts, the registry, optional port, repository, and optional tag and family.
+
+```dockerfile
+REGISTRY[:PORT]/REPOSITORY[:TAG(S)[-FAMILY]]
+```
+
+For example, `mcr.microsoft.com/dotnet/runtime:8.0-alpine`.
+
+Some properties described in the following sections correspond to managing parts of the image name. Consider the following table that maps the relationship between the image name and the properties:
+
+:::zone pivot="dotnet-8-0"
+
+| Image name part   | MSBuild property      | Example                                       |
+|-------------------|-----------------------|-----------------------------------------------|
+| `REGISTRY[:PORT]` | `ContainerRegistry`   | `mcr.microsoft.com:443`                       |
+| `PORT`            | `ContainerPort`       | `:443`                                        |
+| `REPOSITORY`      | `ContainerRepository` | `dotnet/runtime`                              |
+| `REPOSITORY`      | `ContainerImageName` | `dotnet/runtime`                              |
+| `TAG`             | `ContainerImageTag`   | `8.0`                                         |
+| `TAGS`            | `ContainerImageTags`  | `8.0;latest`                                  |
+| `FAMILY`          | `ContainerFamily`     | `-alpine`                                     |
+| `*`               | `ContainerImageName`  | `mcr.microsoft.com/dotnet/runtime:8.0-alpine` |
+
+:::zone-end
+:::zone pivot="dotnet-7-0"
+
+| Image name part   | MSBuild property      | Example                                       |
+|-------------------|-----------------------|-----------------------------------------------|
+| `REGISTRY[:PORT]` | `ContainerRegistry`   | `mcr.microsoft.com:443`                       |
+| `PORT`            | `ContainerPort`       | `:443`                                        |
+| `REPOSITORY`      | `ContainerImageName`  | `dotnet/runtime`                              |
+| `TAG`             | `ContainerImageTag`   | `8.0`                                         |
+| `TAGS`            | `ContainerImageTags`  | `8.0;latest`                                  |
+| `FAMILY`          | `ContainerFamily`     | `-alpine`                                     |
+| `*`               | `ContainerImageName`  | `mcr.microsoft.com/dotnet/runtime:8.0-alpine` |
+
+:::zone-end
+
 ### `ContainerBaseImage`
 
 The container base image property controls the image used as the basis for your image. By default, the following values are inferred based on the properties of your project:
@@ -215,7 +255,7 @@ If you set a value here, you should set the fully qualified name of the image to
 
 :::zone pivot="dotnet-8-0"
 
-### ContainerFamily
+### `ContainerFamily`
 
 Starting with .NET 8, you can use the `ContainerFamily` MSBuild property to choose a different family of Microsoft-provided container images as the base image for your app. When set, this value is appended to the end of the selected TFM-specific tag, changing the tag provided. For example, to use the Alpine Linux variants of the .NET base images, you can set `ContainerFamily` to `alpine`:
 
@@ -247,7 +287,7 @@ For more information regarding the runtime identifiers supported by .NET, see [R
 
 ### `ContainerRegistry`
 
-The container registry property controls the destination registry, the place that the newly created image will be pushed to. By default it's pushed to the local Docker daemon, but you can also specify a remote registry.  When using a remote registry that requires authentication, you authenticate using the well-known `docker login` mechanisms. For more information, See [authenticating to container registries](https://aka.ms/dotnet/containers/auth) for more details. For a concrete example of using this property, consider the following XML example:
+The container registry property controls the destination registry, the place that the newly created image will be pushed to. By default it's pushed to the local Docker daemon, but you can also specify a remote registry. When using a remote registry that requires authentication, you authenticate using the well-known `docker login` mechanisms. For more information, See [authenticating to container registries](https://aka.ms/dotnet/containers/auth) for more details. For a concrete example of using this property, consider the following XML example:
 
 ```xml
 <PropertyGroup>
@@ -255,7 +295,7 @@ The container registry property controls the destination registry, the place tha
 </PropertyGroup>
 ```
 
-This tooling supports publishing to any registry that supports the [Docker Registry HTTP API V2](https://docs.docker.com/registry/spec/api/).  This includes the following registries explicitly (and likely many more implicitly):
+This tooling supports publishing to any registry that supports the [Docker Registry HTTP API V2](https://docs.docker.com/registry/spec/api/). This includes the following registries explicitly (and likely many more implicitly):
 
 * [Azure Container Registry](https://azure.microsoft.com/products/container-registry)
 * [Amazon Elastic Container Registry](https://aws.amazon.com/ecr/)

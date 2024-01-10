@@ -2,7 +2,7 @@
 title: "Tutorial: Reduce memory allocations using struct data types and ref language features."
 description: Learn to remove allocations from your code. Make use of `struct` types for fewer allocations. Use the `ref` and `in` modifiers to avoid copies and enable or disable modification. Use `ref struct` types like `Span<T>` to directly use memory efficiently.
 ms.date: 10/13/2023
-ms.technology: csharp-advanced-concepts
+ms.subservice: csharp-advanced-concepts
 ---
 # Tutorial: Reduce memory allocations with `ref` safety
 
@@ -117,7 +117,7 @@ Changing from a `class` to `struct` introduces a few compiler errors because the
 The `DebounceMeasurement` type contains an array of 50 measurements. The readings for a sensor are reported as the average of the last 50 measurements. That reduces the noise in the readings. Before a full 50 readings have been taken, these values are `null`. The code checks for `null` reference to report the correct average on system startup. After changing the `SensorMeasurement` type to a struct, you must use a different test. The `SensorMeasurement` type includes a `string` for the room identifier, so you can use that test instead:
 
 ```csharp
-if (recentMeasurements[i].Room is not null)         
+if (recentMeasurements[i].Room is not null)
 ```
 
 The other three compiler errors are all in the method that repeatedly takes measurements in a room:

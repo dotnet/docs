@@ -2,7 +2,7 @@
 title: Introduction to delegates and events in C#
 description: The first in a series of articles about C# delegates and events. This article introduces basic concepts and discusses language design goals for delegates.
 ms.date: 03/24/2022
-ms.technology: csharp-fundamentals
+ms.subservice: csharp-fundamentals
 ---
 
 # Introduction to delegates and events in C\#

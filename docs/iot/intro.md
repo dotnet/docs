@@ -5,7 +5,6 @@ author: camsoper
 ms.author: casoper
 ms.date: 10/14/2022
 ms.topic: overview
-ms.prod: dotnet
 ---
 
 # Develop apps for IoT devices with the .NET IoT Libraries

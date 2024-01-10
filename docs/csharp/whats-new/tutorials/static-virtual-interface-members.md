@@ -2,7 +2,7 @@
 title: Explore static virtual members in interfaces
 description: This advanced tutorial demonstrates scenarios for operators and other static members in interfaces.
 ms.date: 07/08/2022
-ms.technology: csharp-advanced-concepts
+ms.subservice: csharp-advanced-concepts
 ---
 # Tutorial: Explore C# 11 feature - static virtual members in interfaces
 

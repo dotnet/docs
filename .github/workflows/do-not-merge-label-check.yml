@@ -20,10 +20,10 @@ jobs:
     steps:
       - name: 'Check "${{ matrix.label }}" label'
         run: |
-          echo "Merging permission is diabled for PRs when the `${{ matrix.label }}` label is applied."
+          echo "::notice::Merging permission is diabled for PRs when the '${{ matrix.label }}' label is applied."
 
           if [ "${{ contains(github.event.pull_request.labels.*.name, matrix.label) }}" = "true" ]; then
-            echo "::error:: Pull request is labeled as '${{ matrix.label }}'. Please remove the label before merging."
+            echo "::error::Pull request is labeled as '${{ matrix.label }}'. Please remove the label before merging."
             exit 1
           else
             exit 0

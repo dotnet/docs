@@ -42,7 +42,7 @@ The **RunConfiguration** element can include the following elements. None of the
 
 MSTest runner is not using data collectors. Instead it has the concept of in-process and out-of-process extensions. Each extension is configured by its respective configuration file, or through commandline.
 
-Most importantly [hang](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-runner-extensions#hang-dump-files) and [crash](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-runner-extensions#crash-dump-files) extension, and [code coverage](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-runner-extensions#microsoft-code-coverage) extension.
+Most importantly [hang](https://learn.microsoft.com/dotnet/core/testing/unit-testing-mstest-runner-extensions#hang-dump-files) and [crash](https://learn.microsoft.com/dotnet/core/testing/unit-testing-mstest-runner-extensions#crash-dump-files) extension, and [code coverage](https://learn.microsoft.com/dotnet/core/testing/unit-testing-mstest-runner-extensions#microsoft-code-coverage) extension.
 
 ### LoggerRunSettings
 

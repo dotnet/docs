@@ -4,6 +4,14 @@ items:
 - name: Breaking changes by version
   expanded: true
   items:
+  - name: .NET 9
+    items:
+    - name: Overview
+      href: 9.0.md
+    - name: SDK and MSBuild
+      items:
+      - name: "'dotnet workload' commands output change"
+        href: sdk/9.0/dotnet-workload-output.md
   - name: .NET 8
     items:
     - name: Overview
@@ -1518,6 +1526,10 @@ items:
         href: reflection/8.0/function-pointer-reflection.md
   - name: SDK and MSBuild
     items:
+    - name: .NET 9
+      items:
+      - name: "'dotnet workload' commands output change"
+        href: sdk/9.0/dotnet-workload-output.md
     - name: .NET 8
       items:
       - name: CLI console output uses UTF-8

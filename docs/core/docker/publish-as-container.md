@@ -187,7 +187,7 @@ You can control many aspects of the generated container through MSBuild properti
 Container images follow a specific naming convention. The name of the image is composed of several parts, the registry, optional port, repository, and optional tag and family.
 
 ```dockerfile
-REGISTRY[:PORT]/REPOSITORY[:TAG(S)[-FAMILY]]
+REGISTRY[:PORT]/REPOSITORY[:TAG[-FAMILY]]
 ```
 
 For example, consider the fully qualified `mcr.microsoft.com/dotnet/runtime:8.0-alpine` image name:
@@ -206,7 +206,6 @@ Some properties described in the following sections correspond to managing parts
 | `PORT`            | `ContainerPort`       | `:443`                  |
 | `REPOSITORY`      | `ContainerRepository` | `dotnet/runtime`        |
 | `TAG`             | `ContainerImageTag`   | `8.0`                   |
-| `TAGS`            | `ContainerImageTags`  | `8.0;latest`            |
 | `FAMILY`          | `ContainerFamily`     | `-alpine`               |
 
 :::zone-end
@@ -218,10 +217,10 @@ Some properties described in the following sections correspond to managing parts
 | `PORT`            | `ContainerPort`      | `:443`                  |
 | `REPOSITORY`      | `ContainerImageName` | `dotnet/runtime`        |
 | `TAG`             | `ContainerImageTag`  | `8.0`                   |
-| `TAGS`            | `ContainerImageTags` | `8.0;latest`            |
-| `FAMILY`          | `ContainerFamily`    | `-alpine`               |
 
 :::zone-end
+
+The following sections describe the various properties that can be used to control the generated container image.
 
 ### `ContainerBaseImage`
 

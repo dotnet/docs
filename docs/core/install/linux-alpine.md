@@ -3,7 +3,7 @@ title: Install .NET on Alpine
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Alpine.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/14/2023
+ms.date: 01/09/2024
 ---
 
 # Install the .NET SDK or the .NET Runtime on Alpine
@@ -23,7 +23,10 @@ The Alpine package manager supports installing some versions of .NET. If the .NE
 
 ## Install .NET 8
 
-[!INCLUDE [linux-apk-install-80](includes/linux-install-80-apk.md)]
+.NET 8 isn't yet available in the official Alpine package repository. Use one of the following ways to install .NET 8:
+
+- [Use the .NET install script.](linux-scripted-manual.md#scripted-install)
+- [Download and install .NET manually.](linux-scripted-manual.md#manual-install)
 
 ## Install .NET 7
 

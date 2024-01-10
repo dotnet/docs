@@ -12,7 +12,7 @@ Namespace PrimeService.Tests
         Sub IsPrime_ValuesLessThan2_ReturnFalse(value As Integer)
             Dim result As Boolean = _primeService.IsPrime(value)
 
-            Assert.IsFalse(result, $"{value} should not be prime")
+            Assert.That(result, [Is].False, $"{value} should not be prime")
         End Sub
 
         <TestCase(2)>
@@ -22,7 +22,7 @@ Namespace PrimeService.Tests
         Public Sub IsPrime_PrimesLessThan10_ReturnTrue(value As Integer)
             Dim result As Boolean = _primeService.IsPrime(value)
 
-            Assert.IsTrue(result, $"{value} should be prime")
+            Assert.That(result, [Is].True, $"{value} should be prime")
         End Sub
 
         <TestCase(4)>
@@ -32,7 +32,7 @@ Namespace PrimeService.Tests
         Public Sub IsPrime_NonPrimesLessThan10_ReturnFalse(value As Integer)
             Dim result As Boolean = _primeService.IsPrime(value)
 
-            Assert.IsFalse(result, $"{value} should not be prime")
+            Assert.That(result, [Is].False, $"{value} should not be prime")
         End Sub
     End Class
     '</Sample_TestCode>

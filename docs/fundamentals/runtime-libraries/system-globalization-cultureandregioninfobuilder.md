@@ -1,19 +1,22 @@
 ---
 title: System.Globalization.CultureAndRegionInfoBuilder class
 description: Learn more about the System.Globalization.CultureAndRegionInfoBuilder class.
-ms.date: 12/28/2023
+ms.date: 01/09/2024
 ms.topic: conceptual
 ---
 # <xref:System.Globalization.CultureAndRegionInfoBuilder> class
 
 [!INCLUDE [context](includes/context.md)]
 
+> [!NOTE]
+> The <xref:System.Globalization.CultureAndRegionInfoBuilder> class is useful only for Windows operating systems. The generated *.nlp* files aren't supported on non-Windows operating systems. Also, even on Windows, the generated *.nlp* files are supported only on .NET Framework (or in .NET Core when using [NLS globalization mode](../../core/runtime-config/globalization.md#nls)).
+
 The <xref:System.Globalization.CultureInfo> class holds culture-specific information, such as the associated language, sublanguage, country/region, calendar, and cultural conventions. This class also provides culture-specific instances of the <xref:System.Globalization.DateTimeFormatInfo>, <xref:System.Globalization.NumberFormatInfo>, <xref:System.Globalization.CompareInfo>, and <xref:System.Globalization.TextInfo> classes, which are required for culture-specific operations such as casing, formatting and parsing dates and numbers, and comparing strings.
 
 By default, .NET supports <xref:System.Globalization.CultureInfo> objects that represent a predefined set of cultures. For a list of these cultures available on Windows systems, see the **Language tag** column in the [list of language/region names supported by Windows](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c). Culture names follow the standard defined by [BCP 47](https://tools.ietf.org/html/bcp47). The <xref:System.Globalization.CultureAndRegionInfoBuilder> class enables you to create a custom culture that is completely new or that overrides a predefined culture. When a custom culture is installed and registered on a particular computer, it becomes indistinguishable from predefined <xref:System.Globalization.CultureInfo> objects, and can be instantiated and used just like those objects.
 
 > [!IMPORTANT]
-> Note that the <xref:System.Globalization.CultureAndRegionInfoBuilder> class is found in an assembly named sysglobl.dll. Successfully compiling code that uses this type requires that you add a reference to sysglobl.dll.
+> The <xref:System.Globalization.CultureAndRegionInfoBuilder> class is found in an assembly named *sysglobl.dll*. To successfully compile code that uses this type, you must add a reference to *sysglobl.dll*.
 
 A custom culture can be registered on a computer only by a user who has administrative rights on that computer. Consequently, apps typically do not create and install custom cultures. Instead, you can use the <xref:System.Globalization.CultureAndRegionInfoBuilder> class to create a special-purpose tool that an administrator can use to create, install, and register a custom culture. After the custom culture is registered on a computer, you can use the <xref:System.Globalization.CultureInfo> class in your app to create instances of the custom culture just as you would for a predefined culture.
 
@@ -46,11 +49,11 @@ If you are developing a registration application for a custom culture that is se
 
 The registration process performs the following tasks:
 
-- Creates an .nlp file that contains the information that is defined in the <xref:System.Globalization.CultureAndRegionInfoBuilder> object.
-- Stores the .nlp file in the %windir%\Globalization system directory on the target computer. This enables the custom culture's settings to persist between sessions. (The <xref:System.Globalization.CultureAndRegionInfoBuilder> method requires administrative privileges because the .nlp file is stored in a system directory.)
+- Creates an *.nlp* file that contains the information that's defined in the <xref:System.Globalization.CultureAndRegionInfoBuilder> object.
+- Stores the *.nlp* file in the %windir%\Globalization system directory on the target computer. This enables the custom culture's settings to persist between sessions. (The <xref:System.Globalization.CultureAndRegionInfoBuilder> method requires administrative privileges because the *.nlp* file is stored in a system directory.)
 - Prepares .NET to search the %windir%\Globalization system directory instead of an internal cache the next time there's a request to create your new custom culture.
 
-When a custom culture is successfully registered, it's indistinguishable from the cultures that are predefined by .NET. The custom culture is available until a call to the <xref:System.Globalization.CultureAndRegionInfoBuilder> method removes the .nlp file from the local computer.
+When a custom culture is successfully registered, it's indistinguishable from the cultures that are predefined by .NET. The custom culture is available until a call to the <xref:System.Globalization.CultureAndRegionInfoBuilder> method removes the *.nlp* file from the local computer.
 
 ## Instantiate a custom culture
 

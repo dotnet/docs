@@ -1,7 +1,7 @@
 # This GitHub Action workflow is triggered on label changes for pull requests.
-# When a pull request is labeled with "DO NOT MERGE", the workflow will fails, 
-# preventing the pull request from being merged.
-# Otherwise, the workflow will succeed, allowing the pull request to be merged.
+# When a pull request is labeled with "DO NOT MERGE", the workflow fails, thus
+# preventing the pull request from being merged. Otherwise, the workflow will
+# succeeds (being skipped), allowing the pull request to be merged.
 
 name: "Do not merge check"
 on:

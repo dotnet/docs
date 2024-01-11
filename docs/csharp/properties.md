@@ -1,7 +1,7 @@
 ---
 title: Properties in C#
 description: Learn about C# properties, which include features for validation, computed values, lazy evaluation, and property changed notifications.
-ms.technology: csharp-fundamentals
+ms.subservice: fundamentals
 ms.date: 07/20/2022
 ---
 # Properties

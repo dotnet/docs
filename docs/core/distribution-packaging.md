@@ -170,7 +170,7 @@ The following lists the recommended packages:
 
 - `dotnet-templates-[major].[minor]`
   - **Version:** \<sdk version>
-  - **Contains:** (15)
+  - **Contains:** (17)
 
 The following two meta packages are optional. They bring value for end users in that they abstract the top-level package (dotnet-sdk), which simplifies the installation of the full set of .NET packages. These meta packages reference a specific .NET SDK version.
 

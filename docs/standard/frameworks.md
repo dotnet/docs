@@ -1,10 +1,10 @@
 ---
 title: Target frameworks in SDK-style projects - .NET
 description: Learn about target frameworks for .NET apps and libraries.
-ms.date: 11/14/2023
-ms.prod: "dotnet"
-ms.custom: "updateeachrelease"
-ms.technology: dotnet-standard
+ms.date: 12/12/2023
+ms.service: dotnet
+ms.custom: updateeachrelease
+ms.subservice: standard-library
 ---
 # Target frameworks in SDK-style projects
 
@@ -103,6 +103,10 @@ You can also specify an optional OS version at the end of an OS-specific TFM, fo
 When an OS-specific TFM doesn't specify the platform version explicitly, it has an implied value that can be inferred from the base TFM and platform name. For example, the default platform value for iOS in .NET 6 is `15.0`, which means that `net6.0-ios` is shorthand for the canonical `net6.0-ios15.0` TFM. The implied platform version for a newer base TFM may be higher, for example, a future `net8.0-ios` TFM could map to `net8.0-ios16.0`. The shorthand form is intended for use in project files only, and is expanded to the canonical form by the .NET SDK's MSBuild targets before being passed to other tools, such as NuGet.
 
 The .NET SDK is designed to be able to support newly released APIs for an individual platform without a new version of the base TFM. This enables you to access platform-specific functionality without waiting for a major release of .NET. You can gain access to these newly released APIs by incrementing the platform version in the TFM. For example, if the iOS platform added iOS 15.1 APIs in a .NET 6.0.x SDK update, you could access them by using the TFM `net6.0-ios15.1`.
+
+#### Precedence
+
+If your app references a package that has multiple assets for different TFMs, the assets that are closer in version number are preferred. For example, if your app targets `net6.0-ios` and the package offers assets for `net6.0` and `net5.0-ios`, the `net6.0` assets are used. For more information, see [Precedences](https://github.com/dotnet/designs/blob/main/accepted/2020/net5/net5.md#precedences).
 
 #### Support older OS versions
 

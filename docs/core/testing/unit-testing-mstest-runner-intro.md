@@ -50,7 +50,7 @@ To enable the MSTest runner in a MSTest project, you need to add the `EnableMSTe
       https://github.com/coverlet-coverage/coverlet#net-global-tool-guide-suffers-from-possible-known-issue
     --> 
     <PackageReference Include="Microsoft.Testing.Platform.Extensions.CodeCoverage" 
-                      Version="17.9.4-beta.23563.1" />
+                      Version="17.10.0-preview.23622.1" />
   </ItemGroup>
 
 </Project>
@@ -188,6 +188,10 @@ Defines the verbosity level when the `--diagnostic` switch is used. The availabl
 - **`--help`**
 
 Prints out a description of how to use the command.
+
+- **`-ignore-exit-code`**
+
+Allows some non-zero exit codes to be ignored, and instead returned as `0`. For more information, see [Ignore specific exit codes](./unit-testing-mstest-runner-exit-codes.md#ignore-specific-exit-codes).
 
 - **`--info`**
 

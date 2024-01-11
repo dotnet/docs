@@ -5,7 +5,7 @@ ms.date: 02/01/2022
 ---
 # Publishing a ReadyToRun project with --no-restore requires changes to the restore
 
-If you publish a project with `-p:PublishReadyToRun=true` in addition to `--no-restore`, the project will only build with packages that were restored in a prior `dotnet restore` operation. In .NET 5, this process worked and resulted in a crossgen'd binary. In .NET 6, this same process will fail with the NETSDK1095 error.
+If you publish a project with `-p:PublishReadyToRun=true` in addition to `--no-restore`, the project will only build with packages that were restored in a prior `dotnet restore` operation. In .NET 5, this process worked and resulted in a crossgen'd binary. In .NET 6, this same process will fail with the NETSDK1094 error.
 
 ## Version introduced
 
@@ -17,7 +17,7 @@ In previous versions, the crossgen application was packaged with the runtime. As
 
 ## New behavior
 
-In .NET 6, `dotnet restore` followed by `dotnet publish -p:PublishReadyToRun=true --no-restore` will fail with the NETSDK1095 error. This is because the crossgen binary is now shipped as a separate NuGet package, and so needs to be part of the restore operation for publishing to succeed.
+In .NET 6, `dotnet restore` followed by `dotnet publish -p:PublishReadyToRun=true --no-restore` will fail with the NETSDK1094 error. This is because the crossgen binary is now shipped as a separate NuGet package, and so needs to be part of the restore operation for publishing to succeed.
 
 ## Reason for change
 

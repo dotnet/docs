@@ -3,7 +3,7 @@ title: Asynchronous programming scenarios - C#
 description: Learn about the C# language-level asynchronous programming model provided by .NET Core.
 author: BillWagner
 ms.date: 02/08/2023
-ms.technology: csharp-async
+ms.subservice: async-task-programming
 ---
 # Asynchronous programming scenarios
 

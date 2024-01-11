@@ -18,7 +18,7 @@ This article shows how to use `dotnet test` to run all tests in a solution (_*.s
 
 ### `dotnet test` integration - VSTest mode
 
-MSTest runner provides a compatibility layer to work with `dotnet test` seamlessly. This layer requires [Microsoft.Testing.Platform.MSBuild](https://nuget.org/packages/Microsoft.Testing.Platform.MSBuild) NuGet package. This package is automatically installed as a dependency of [MSTest](https://nuget.org/packages/MSTest) and [MSTest.TestAdapter](https://nuget.org/packages/MSTest.TestAdapter) package.
+MSTest runner provides a compatibility layer to work with `dotnet test` seamlessly.
 
 Tests can be run by running:
 
@@ -30,7 +30,7 @@ This layer runs test through VSTest and integrates with it on VSTest Test Framew
 
 ### `dotnet test` - MSTest runner mode
 
-By default, VSTest is used to run MSTest runner tests. You can enable a full MSTest runner by specifying the `<TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>` setting in your project. This setting disables VSTest.
+By default, VSTest is used to run MSTest runner tests. You can enable a full MSTest runner by specifying the `<TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>` setting in your project. This setting disables VSTest and thanks to the transitive dependency to the [Microsoft.Testing.Platform.MSBuild](https://nuget.org/packages/Microsoft.Testing.Platform.MSBuild) NuGet package it will directly run all `MSTest runner` empowered tests project in your solution. It works seamlessly if you pass a direct `MSTest runner` test project.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -72,9 +72,6 @@ These are the available options:
 
 By default test failures are summarized into a _.log_ file, and a single failure per test project is reported to MSBuild.
 
-> [!CAUTION]
-> Enabling this option adds overhead to test execution and may degrade performance.
-
 To show errors per failed test, specify `-p:TestingPlatformShowTestsFailure=true` on commandline, or add `<TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>` property to your project file.
 
 On command line:
@@ -114,9 +111,6 @@ Or in project file:
 ### Show complete platform output
 
 By default, all console output that the underlying test executable writes is captured and hidden from the user. This includes the banner, version information, and formatted test information.
-
-> [!CAUTION]
-> Enabling this option adds overhead to test execution and may degrade performance.
 
 To show this information together with MSBuild output use`<TestingPlatformCaptureOutput>false</TestingPlatformCaptureOutput>`.
 

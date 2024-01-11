@@ -244,7 +244,7 @@ items:
         items:
         - name: Nullable class
           href: runtime-libraries/system-nullable.md
-        - name: Nullable\<T> class
+        - name: Nullable<T> class
           href: runtime-libraries/system-nullable{t}.md
   - name: Generic types
     items:
@@ -283,11 +283,11 @@ items:
       href: ../standard/collections/thread-safe/index.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Supplemental API remarks
       items:
-      - name: HashSet\<T> class
+      - name: HashSet<T> class
         href: runtime-libraries/system-collections-generic-hashset{t}.md
-      - name: List\<T> class
+      - name: List<T> class
         href: runtime-libraries/system-collections-generic-list{t}.md
-      - name: ObservableCollection\<T> class
+      - name: ObservableCollection<T> class
         href: runtime-libraries/system-collections-objectmodel-observablecollection{t}.md
   - name: Delegates and lambdas
     href: ../standard/delegates-lambdas.md
@@ -469,7 +469,7 @@ items:
         href: ../standard/memory-and-spans/memory-t-usage-guidelines.md
       - name: Supplemental API remarks
         items:
-        - name: Span\<T> struct
+        - name: Span<T> struct
           href: runtime-libraries/system-span{t}.md
     - name: SIMD-enabled types
       href: ../standard/simd.md

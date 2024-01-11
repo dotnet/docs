@@ -12,6 +12,8 @@ items:
       items:
       - name: "'dotnet workload' commands output change"
         href: sdk/9.0/dotnet-workload-output.md
+      - name: Terminal logger is default
+        href: sdk/9.0/terminal-logger.md
   - name: .NET 8
     items:
     - name: Overview
@@ -1530,6 +1532,8 @@ items:
       items:
       - name: "'dotnet workload' commands output change"
         href: sdk/9.0/dotnet-workload-output.md
+      - name: Terminal logger is default
+        href: sdk/9.0/terminal-logger.md
     - name: .NET 8
       items:
       - name: CLI console output uses UTF-8

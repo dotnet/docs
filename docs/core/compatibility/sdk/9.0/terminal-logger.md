@@ -5,7 +5,7 @@ ms.date: 01/10/2024
 ---
 # Terminal logger is default
 
-The terminal logger is now enabled by default for all "interactive" terminal sessions. The terminal logger formats the console output for builds differently to the console logger. For more information about the terminal logger, see ['dotnet build' options](../tools/dotnet-build.md#options), specifically the `--tl` option.
+The terminal logger is now enabled by default for all "interactive" terminal sessions. The terminal logger formats the console output for builds differently to the console logger. For more information about the terminal logger, see ['dotnet build' options](../../../tools/dotnet-build.md#options), specifically the `--tl` option.
 
 ## Previous behavior
 
@@ -40,4 +40,4 @@ N/A
 
 ## See also
 
-- ['dotnet build' options](../tools/dotnet-build.md#options)
+- ['dotnet build' options](../../../tools/dotnet-build.md#options)

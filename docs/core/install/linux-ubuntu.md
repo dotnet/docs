@@ -110,7 +110,7 @@ The following table is a list of currently supported .NET releases and the versi
 | [23.10](linux-ubuntu-2310.md)       | 8.0, 7.0, 6.0           | 8.0, 7.0, 6.0            | 8.0, 7.0, 6.0                     |
 | [23.04](linux-ubuntu-2304.md)       | 8.0, 7.0, 6.0           | 7.0, 6.0                 | 8.0, 7.0, 6.0                     |
 | [22.10](linux-ubuntu-2210.md)       | 7.0, 6.0                | 7.0, 6.0                 | 7.0, 6.0, 3.1                     |
-| [22.04 (LTS)](linux-ubuntu-2204.md) | 8.0, 7.0, 6.0           | 6.0                      | 8.0, 7.0, 6.0, 3.1                |
+| [22.04 (LTS)](linux-ubuntu-2204.md) | 8.0, 7.0, 6.0           | 7.0, 6.0                 | 8.0, 7.0, 6.0, 3.1                |
 | [20.04 (LTS)](linux-ubuntu-2004.md) | 8.0, 7.0, 6.0           | None                     | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1      |
 | [18.04 (LTS)](linux-ubuntu-1804.md) | 7.0, 6.0                | None                     | 7.0. 6.0, 5.0, 3.1, 2.2, 2.1      |
 | [16.04 (LTS)](linux-ubuntu-1604.md) | 6.0                     | None                     | 6.0, 5.0, 3.1, 3.0, 2.2, 2.1, 2.0 |

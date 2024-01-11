@@ -2,7 +2,7 @@
 title: Working with LINQ
 description: This tutorial teaches you how to generate sequences with LINQ, write methods for use in LINQ queries, and distinguish between eager and lazy evaluation.
 ms.date: 10/29/2018
-ms.technology: csharp-linq
+ms.subservice: csharp-linq
 ms.assetid: 0db12548-82cb-4903-ac88-13103d70aa77
 ---
 

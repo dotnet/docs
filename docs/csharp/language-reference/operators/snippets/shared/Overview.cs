@@ -45,7 +45,7 @@ public static class Overview
     private static void Lambda()
     {
         // <SnippetLambda>
-        int[] numbers = [2, 3, 4, 5];
+        int[] numbers = { 2, 3, 4, 5 };
         var maximumSquare = numbers.Max(x => x * x);
         Console.WriteLine(maximumSquare);
         // Output:
@@ -56,7 +56,7 @@ public static class Overview
     private static void Query()
     {
         // <SnippetQuery>
-        int[] scores = [90, 97, 78, 68, 85];
+        int[] scores = { 90, 97, 78, 68, 85 };
         IEnumerable<int> highScoresQuery =
             from score in scores
             where score > 80

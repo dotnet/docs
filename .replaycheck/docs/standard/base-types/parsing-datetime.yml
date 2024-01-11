@@ -1,0 +1,44 @@
+# %version 1
+contentPath: docs\standard\base-types\parsing-datetime.md
+
+steps:
+- task: RunCodeSnippetReference@1
+  outputMarker: Chonk
+  environment:
+    type: dotnet-try
+  uid: d52b6848
+- task: RunCodeSnippetReference@1
+  outputMarker: 1/1/2009 00:00:00
+  environment:
+    type: dotnet-sdk
+  uid: ea473259
+- task: RunCodeSnippetReference@1
+  outputMarker: example displays
+  environment:
+    type: dotnet-try
+  uid: 266680f1
+- task: RunCodeSnippetReference@1
+  outputMarker: example displays
+  environment:
+    type: dotnet-sdk
+  uid: "27270424"
+- task: RunCodeSnippetReference@1
+  outputMarker: example displays
+  environment:
+    type: dotnet-try
+  uid: 47eebc87
+- task: RunCodeSnippetReference@1
+  outputMarker: example displays
+  environment:
+    type: dotnet-sdk
+  uid: 58d2b2d0
+- task: RunCodeSnippetReference@1
+  outputMarker: example displays
+  environment:
+    type: dotnet-try
+  uid: 5c89e019
+- task: RunCodeSnippetReference@1
+  outputMarker: example displays
+  environment:
+    type: dotnet-sdk
+  uid: 5e4c81f5

@@ -39,6 +39,8 @@ Here's an example type to serialize and resulting JSON:
 :::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithPropertyNameAttribute":::
 :::code language="vb" source="snippets/how-to/vb/WeatherForecast.vb" id="WFWithPropertyNameAttribute":::
 
+The serialized output is as follows:
+
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
@@ -78,6 +80,8 @@ Here's an example class to serialize and JSON output:
 :::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithPropertyNameAttribute":::
 :::code language="vb" source="snippets/how-to/vb/WeatherForecast.vb" id="WFWithPropertyNameAttribute":::
 
+The serialized output is as follows:
+
 ```json
 {
   "date": "2019-08-01T00:00:00-07:00",
@@ -111,6 +115,8 @@ Here's an example class to serialize and JSON output:
 
 :::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithPropertyNameAttribute":::
 :::code language="vb" source="snippets/how-to/vb/WeatherForecast.vb" id="WFWithPropertyNameAttribute":::
+
+The serialized output is as follows:
 
 ```json
 {
@@ -226,6 +232,7 @@ To use the converter with source generation, see [Serialize enum fields as strin
 
 By default, properties are serialized in the order in which they're defined in their class. The [`[JsonPropertyOrder]`](xref:System.Text.Json.Serialization.JsonPropertyOrderAttribute) attribute lets you specify the order of properties in the JSON output from serialization. The default value of the `Order` property is zero. Set `Order` to a positive number to position a property after those that have the default value. A negative `Order` positions a property before those that have the default value. Properties are written in order from the lowest `Order` value to the highest. Here's an example:
 
+<!-- replaycheck-task id="666a9c3f" -->
 :::code language="csharp" source="snippets/how-to-6-0/csharp/PropertyOrder.cs":::
 
 ## See also

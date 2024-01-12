@@ -1651,6 +1651,16 @@ type TypeWithLongConstructor
         aThirdVeryLongCtorParam: AVeryLongTypeThatYouNeedToUse
     ) =
     // ... the body of the class follows
+
+// ✔️ OK
+type TypeWithLongSecondaryConstructor () =
+    new
+        (
+            aVeryLongCtorParam: AVeryLongTypeThatYouNeedToUse,
+            aSecondVeryLongCtorParam: AVeryLongTypeThatYouNeedToUse,
+            aThirdVeryLongCtorParam: AVeryLongTypeThatYouNeedToUse
+        ) =
+        // ... the body of the constructor follows
 ```
 
 If the parameters are curried, place the `=` character along with any return type on a new line:

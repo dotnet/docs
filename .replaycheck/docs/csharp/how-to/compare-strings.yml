@@ -1,0 +1,84 @@
+# %version 1
+contentPath: docs\csharp\how-to\compare-strings.md
+
+steps:
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - operator: contains
+    value: <C:\users> and <C:\Users> are not equal.
+  uid: 4e1e8dc0
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - operator: contains
+    value: <C:\users> and <C:\Users> are equal.
+  uid: 7da496db
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - operator: contains
+    value: The two strings are not equal.
+  - operator: contains
+    value: <Sie tanzen auf der Straße.> is greater than <Sie tanzen auf der Strasse.>
+  - operator: contains
+    value: <coop> is greater than <co-op> using invariant culture
+  - operator: contains
+    value: <coop> is greater than <co-op> using ordinal comparison
+  - operator: contains
+    value: <coop> is less than <cop> using invariant culture
+  - operator: contains
+    value: <coop> is less than <cop> using ordinal comparison
+  - operator: contains
+    value: <co-op> is less than <cop> using invariant culture
+  - operator: contains
+    value: <co-op> is less than <cop> using ordinal comparison
+  uid: ab18e1d5
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - operator: contains
+    value: Comparing in en-US returns 1.
+  - operator: contains
+    value: Comparing in de-DE returns 1.
+  - operator: contains
+    value: using en-US culture
+  - operator: contains
+    value: using ordinal comparison
+  uid: 1d34f31e
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - operator: contains
+    value: 'Non-sorted order:'
+  - operator: contains
+    value: 'Sorted order:'
+  uid: 43b69738
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - operator: contains
+    value: 'Not found. Sorts between: '
+  uid: 650bcfa4
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - operator: contains
+    value: 'Non-sorted order:'
+  - operator: contains
+    value: 'Sorted order:'
+  uid: 8814f550
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - operator: contains
+    value: 'Did not find c:\public\TEXTFILE.TXT'
+  uid: a9bcaaaa

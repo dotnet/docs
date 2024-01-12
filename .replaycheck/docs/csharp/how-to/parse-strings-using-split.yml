@@ -1,0 +1,113 @@
+# %version 1
+contentPath: docs\csharp\how-to\parse-strings-using-split.md
+
+steps:
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - operator: contains
+    value: <The>
+  - operator: contains
+    value: <quick>
+  - operator: contains
+    value: <brown>
+  - operator: contains
+    value: <fox>
+  - operator: contains
+    value: <jumps>
+  - operator: contains
+    value: <over>
+  - operator: contains
+    value: <the>
+  - operator: contains
+    value: <lazy>
+  - operator: contains
+    value: <dog.>
+  uid: 54d6d90f
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - operator: contains
+    value: <The>
+  - operator: contains
+    value: <quick>
+  - operator: contains
+    value: <brown>
+  - operator: contains
+    value: <fox>
+  - operator: contains
+    value: <jumps>
+  - operator: contains
+    value: <over>
+  - operator: contains
+    value: <>
+  - operator: contains
+    value: <the>
+  - operator: contains
+    value: <lazy>
+  - operator: contains
+    value: <dog.>
+  uid: 56bddea1
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - operator: contains
+    value: "Original text: 'one"
+  - operator: contains
+    value: "two three:four,five six seven'"
+  - operator: contains
+    value: "7 words in text:"
+  - operator: contains
+    value: "<one>"
+  - operator: contains
+    value: "<two>"
+  - operator: contains
+    value: "<three>"
+  - operator: contains
+    value: "<four>"
+  - operator: contains
+    value: "<five>"
+  - operator: contains
+    value: "<six>"
+  - operator: contains
+    value: "<seven>"
+  uid: cd358438
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - operator: contains
+    value: "Original text: 'one"
+  - operator: contains
+    value: "two :,five six seven'"
+  - operator: contains
+    value: "7 words in text:"
+  - operator: contains
+    value: "<one>"
+  - operator: contains
+    value: "<two>"
+  - operator: contains
+    value: "<>"
+  - operator: contains
+    value: "<five>"
+  - operator: contains
+    value: "<six>"
+  - operator: contains
+    value: "<seven>"
+  uid: c6bd73cc
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - operator: contains
+    value: "3 substrings in text:"
+  - operator: contains
+    value: "one"
+  - operator: contains
+    value: "two"
+  - operator: contains
+    value: "three<four"
+  uid: de9a9fb3

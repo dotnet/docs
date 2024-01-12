@@ -1,0 +1,82 @@
+# %version 1
+contentPath: docs\csharp\how-to\concatenate-multiple-strings.md
+
+steps:
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - value: Historically, the world of data and the world of objects have not been well integrated. Programmers work in C# or Visual Basic and also in SQL or XQuery. On the one side are concepts such as classes, objects, fields, inheritance, and .NET Framework APIs. On the other side are tables, columns, rows, nodes, and separate languages for dealing with them. Data types often require translation between the two worlds; there are different standard functions. Because the object world has no notion of query, a query can only be represented as a string without compile-time type checking or IntelliSense support in the IDE. Transferring data from SQL tables or XML trees to objects in memory is often tedious and error-prone.
+  uid: 2188bcb6
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - operator: contains
+    value: Hello <Type your name here>. Today is 12/11/2023. How are you today?
+  uid: ad6bee3a
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  uid: c83a9cd1
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - operator: contains
+    value: "0"
+  - operator: contains
+    value: "1"
+  - operator: contains
+    value: "2"
+  - operator: contains
+    value: "3"
+  - operator: contains
+    value: "4"
+  - operator: contains
+    value: "5"
+  - operator: contains
+    value: "6"
+  - operator: contains
+    value: "7"
+  - operator: contains
+    value: "8"
+  - operator: contains
+    value: "9"
+  - operator: contains
+    value: "10"
+  - operator: contains
+    value: "11"
+  - operator: contains
+    value: "12"
+  - operator: contains
+    value: "13"
+  - operator: contains
+    value: "14"
+  - operator: contains
+    value: "15"
+  - operator: contains
+    value: "16"
+  - operator: contains
+    value: "17"
+  - operator: contains
+    value: "18"
+  - operator: contains
+    value: "19"
+  uid: c64c5369
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - operator: contains
+    value: The quick brown fox jumps over the lazy dog.
+  uid: f46833ff
+- task: RunCodeSnippetReference@1
+  environment:
+    type: dotnet-try
+  outputValidationRules:
+  - operator: contains
+    value: Thequickbrownfoxjumpsoverthelazydog.
+  - operator: contains
+    value: The quick brown fox jumps over the lazy dog.
+  uid: 296f3ae0

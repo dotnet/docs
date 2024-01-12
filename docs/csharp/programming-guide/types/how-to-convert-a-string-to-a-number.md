@@ -26,10 +26,12 @@ The `Parse` and `TryParse` methods ignore white space at the beginning and at th
 
 The following example demonstrates both successful and unsuccessful calls to `Parse` and `TryParse`.
 
+<!-- :::replaycheck-task id="2df741b0"::: -->
 [!code-csharp[Parse and TryParse](~/samples/snippets/csharp/programming-guide/string-to-number/parse-tryparse/program.cs)]
 
 The following example illustrates one approach to parsing a string expected to include leading numeric characters (including hexadecimal characters) and trailing non-numeric characters. It assigns valid characters from the beginning of a string to a new string before calling the <xref:System.Int32.TryParse%2A> method. Because the strings to be parsed contain a few characters, the example calls the <xref:System.String.Concat%2A?displayProperty=nameWithType> method to assign valid characters to a new string. For a larger string, the <xref:System.Text.StringBuilder> class can be used instead.
 
+<!-- :::replaycheck-task id="b387c951"::: -->
 [!code-csharp[Removing invalid characters](~/samples/snippets/csharp/programming-guide/string-to-number/parse-tryparse2/program.cs)]
 
 ## Call Convert methods
@@ -50,4 +52,5 @@ The following table lists some of the methods from the <xref:System.Convert> cla
 
 The following example calls the <xref:System.Convert.ToInt32%28System.String%29?displayProperty=nameWithType> method to convert an input string to an [int](../../language-reference/builtin-types/integral-numeric-types.md). The example catches the two most common exceptions that can be thrown by this method, <xref:System.FormatException> and <xref:System.OverflowException>. If the resulting number can be incremented without exceeding <xref:System.Int32.MaxValue?displayProperty=nameWithType>, the example adds 1 to the result and displays the output.
 
+<!-- :::replaycheck-task id="dee55bbc"::: -->
 [!code-csharp[Parsing with Convert methods](~/samples/snippets/csharp/programming-guide/string-to-number/convert/program.cs)]

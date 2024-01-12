@@ -23,7 +23,8 @@ public static class StringConversion
         {
             Console.WriteLine($"'{str}' --> '{numericString}' --> {i}");
         }
-        // Output: '  10FFxxx' --> '  10FF' --> 4351
+        // Output: 
+        // '  10FFxxx' --> '  10FF' --> 4351
 
         str = "   -10FFXXX";
         numericString = "";
@@ -44,6 +45,7 @@ public static class StringConversion
         {
             Console.WriteLine($"'{str}' --> '{numericString}' --> {j}");
         }
-        // Output: '   -10FFXXX' --> '   -10' --> -10
+        // Output: 
+        // '   -10FFXXX' --> '   -10' --> -10
     }
 }

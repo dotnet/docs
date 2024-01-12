@@ -10,7 +10,7 @@ zone_pivot_groups: orleans-persistence-option
 
 # Deploy and scale an Orleans app on Azure
 
-In this quickstart, you deploy and scale an Orleans URL shortener app on Azure Container Apps. The app allows users to submit a full URL to the app, which returns a shortened version they can share with others to direct them to the original site.  Orleans and Azure provide the scalability features necessary to host high traffic apps like URL shorteners. Orleans is also compatible with any other hosting service that supports .NET.
+In this quickstart, you deploy and scale an Orleans URL shortener app on Azure Container Apps. The app allows users to submit a full URL to the app, which returns a shortened version they can share with others to direct them to the original site. Orleans and Azure provide the scalability features necessary to host high traffic apps like URL shorteners. Orleans is also compatible with any other hosting service that supports .NET.
 
 At the end of this quickstart, you have a scalable app running in Azure to provide URL shortener functionality. Along the way you learn to:
 
@@ -33,13 +33,13 @@ The sample application is available as an Azure Developer CLI template. Through 
 
 1. Authenticate to the Azure Developer CLI using `azd auth login`. Follow the steps specified by the tool to authenticate to the CLI using your preferred Azure credentials.
 
-    ```azurecli
+    ```azuredeveloper
     azd auth login
     ```
 
 1. Get the sample application using the AZD template `orleans-url-shortener` and the `azd init` command.
 
-    ```azure-cli
+    ```azuredeveloper
     azd init --template orleans-url-shortener
     ```
 
@@ -50,7 +50,7 @@ The sample application is available as an Azure Developer CLI template. Through 
 
 1. Deploy the Azure Cosmos DB for NoSQL account using `azd up`. The Bicep templates also deploy a sample web application.
 
-    ```azurecli
+    ```azuredeveloper
     azd up
     ```
 
@@ -90,7 +90,7 @@ The original deployment only deployed the minimal services necessary to host the
 
 1. Using the terminal, run `azd env set` to configure the `DEPLOY_AZURE_COSMOS_DB_NOSQL` environment variable to enable deployment of Azure Cosmos DB for NoSQL.
 
-    ```azurecli
+    ```azuredeveloper
     azd env set DEPLOY_AZURE_COSMOS_DB_NOSQL true
     ```
 
@@ -100,7 +100,7 @@ The original deployment only deployed the minimal services necessary to host the
 
 1. Using the terminal, run `azd env set` to configure the `DEPLOY_AZURE_COSMOS_DB_NOSQL` environment variable to enable deployment of Azure Cosmos DB for NoSQL.
 
-    ```azurecli
+    ```azuredeveloper
     azd env set DEPLOY_AZURE_TABLE_STORAGE true
     ```
 
@@ -108,7 +108,7 @@ The original deployment only deployed the minimal services necessary to host the
 
 1. Run `azd provision` to redeploy your application architecture with the new configuration. Wait for the provisioning process to complete. The process can take **approximately two minutes**.
 
-    ```azurecli
+    ```azuredeveloper
     azd provision
     ```
 
@@ -283,7 +283,7 @@ The sample app is currently configured to create a localhost cluster and persist
 
 1. Run `azd deploy` to redeploy your application code as a Docker container. Wait for the deployment process to complete. The process can take **approximately one minute**.
 
-    ```azurecli
+    ```azuredeveloper
     azd deploy
     ```
 

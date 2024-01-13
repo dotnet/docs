@@ -23,21 +23,21 @@ Additionally, by highlighting the most important features, model builders can fo
 
 The features in the dataset being used for this sample are in columns 1-12. The goal is to predict `Price`.
 
-| Column | Feature | Description
-| --- | --- | --- |
-| 1 | CrimeRate | Per capita crime rate
-| 2 | ResidentialZones | Residential zones in town
-| 3 | CommercialZones | Non-residential zones in town
-| 4 | NearWater | Proximity to body of water
-| 5 | ToxicWasteLevels | Toxicity levels (PPM)
-| 6 | AverageRoomNumber | Average number of rooms in house
-| 7 | HomeAge | Age of home
-| 8 | BusinessCenterDistance | Distance to nearest business district
-| 9 | HighwayAccess | Proximity to highways
-| 10 | TaxRate | Property tax rate
-| 11 | StudentTeacherRatio | Ratio of students to teachers
-| 12 | PercentPopulationBelowPoverty | Percent of population living below poverty
-| 13 | Price | Price of the home
+| Column | Feature                       | Description                                |
+|--------|-------------------------------|--------------------------------------------|
+| 1      | CrimeRate                     | Per capita crime rate                      |
+| 2      | ResidentialZones              | Residential zones in town                  |
+| 3      | CommercialZones               | Non-residential zones in town              |
+| 4      | NearWater                     | Proximity to body of water                 |
+| 5      | ToxicWasteLevels              | Toxicity levels (PPM)                      |
+| 6      | AverageRoomNumber             | Average number of rooms in house           |
+| 7      | HomeAge                       | Age of home                                |
+| 8      | BusinessCenterDistance        | Distance to nearest business district      |
+| 9      | HighwayAccess                 | Proximity to highways                      |
+| 10     | TaxRate                       | Property tax rate                          |
+| 11     | StudentTeacherRatio           | Ratio of students to teachers              |
+| 12     | PercentPopulationBelowPoverty | Percent of population living below poverty |
+| 13     | Price                         | Price of the home                          |
 
 A sample of the dataset is shown below:
 
@@ -153,20 +153,20 @@ foreach (var feature in featureImportanceMetrics)
 
 Printing the values for each of the features in `featureImportanceMetrics` would generate output similar to that below. Keep in mind that you should expect to see different results because these values vary based on the data that they are given.
 
-| Feature | Change to R-Squared |
-|:--|:--:|
-HighwayAccess       |   -0.042731
-StudentTeacherRatio |   -0.012730
-BusinessCenterDistance| -0.010491
-TaxRate             |   -0.008545
-AverageRoomNumber   |   -0.003949
-CrimeRate           |   -0.003665
-CommercialZones     |   0.002749
-HomeAge             |   -0.002426
-ResidentialZones    |   -0.002319
-NearWater           |   0.000203
-PercentPopulationLivingBelowPoverty|    0.000031
-ToxicWasteLevels    |   -0.000019
+| Feature                             | Change to R-Squared |
+|:------------------------------------|:-------------------:|
+| HighwayAccess                       | -0.042731           |
+| StudentTeacherRatio                 | -0.012730           |
+| BusinessCenterDistance              | -0.010491           |
+| TaxRate                             | -0.008545           |
+| AverageRoomNumber                   | -0.003949           |
+| CrimeRate                           | -0.003665           |
+| CommercialZones                     | 0.002749            |
+| HomeAge                             | -0.002426           |
+| ResidentialZones                    | -0.002319           |
+| NearWater                           | 0.000203            |
+| PercentPopulationLivingBelowPoverty | 0.000031            |
+| ToxicWasteLevels                    | -0.000019           |
 
 Taking a look at the five most important features for this dataset, the price of a house predicted by this model is influenced by its proximity to highways, student teacher ratio of schools in the area, proximity to major employment centers, property tax rate and average number of rooms in the home.
 

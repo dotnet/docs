@@ -16,7 +16,7 @@ For all operating systems in .NET 5.0.1 and later versions, the values for <xref
 The following table summarizes the changes for <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> values.
 
 | | .NET Framework<br/>.NET Core 1.0 - 3.1 | .NET 5 | .NET 5.0.1 |
--|-|-|-
+|-|-|-|-|
 | **Windows** | Obtain from NLS | Decimal separator from ICU.<br/>Can switch back to NLS. | Equivalent to NLS |
 | **Linux and macOS** | Decimal separator from ICU | Decimal separator from ICU | Equivalent to NLS |
 

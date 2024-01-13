@@ -39,11 +39,11 @@ AutoML provides several defaults for quickly training machine learning models. I
 
 Given a dataset stored in a comma-separated file called *taxi-fare-train.csv* that looks like the following:  
 
-| vendor_id | rate_code | passenger_count | trip_time_in_secs | trip_distance|payment_type | fare_amount |
-|---|---|---|---|---|---|---|
-CMT|1|1|1271|3.8|CRD|17.5
-CMT|1|1|474|1.5|CRD|8
-CMT|1|1|637|1.4|CRD|8.5
+| vendor_id | rate_code | passenger_count | trip_time_in_secs | trip_distance | payment_type | fare_amount |
+|-----------|-----------|-----------------|-------------------|---------------|--------------|-------------|
+| CMT       | 1         | 1               | 1271              | 3.8           | CRD          | 17.5        |
+| CMT       | 1         | 1               | 474               | 1.5           | CRD          | 8           |
+| CMT       | 1         | 1               | 637               | 1.4           | CRD          | 8.5         |
 
 ### Load your data
 

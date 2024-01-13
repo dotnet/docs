@@ -121,6 +121,12 @@ Prior to using the grain, you must install the corresponding `Microsoft.Orleans.
 
 ::: zone pivot="azure-storage"
 
+1. Change your current working directory to _./src/web/_.
+
+    ```bash
+    cd ./src/web
+    ```
+
 1. Import the `Azure.Identity` package from NuGet using `dotnet add package`.
 
     ```dotnetcli

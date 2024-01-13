@@ -693,10 +693,10 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   The following table lists the default values according to the SDK version number you're using:
 
+  NOTE: There is not a template for net7.0 or net8.0 for react.
+
   | SDK version | Default value   |
-  |-------------|-----------------|
-  | 8.0         | `net8.0`        |
-  | 7.0         | `net7.0`        |
+  |-------------|-----------------| 
   | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |

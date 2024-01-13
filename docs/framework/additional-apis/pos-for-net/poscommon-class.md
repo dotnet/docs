@@ -42,27 +42,22 @@ The following table describes the methods of the **PosCommon** class available t
 | Method | Return Type | Description |
 |--------|-------------|-------------|
 | CheckHealth | string | Performs a health check on the device. The type of check to be performed is indicated by the HealthCheckLevel parameter. The method also updates the CheckHealthText property. |
-| Claim | void | Requests exclusive access to the device. |
-| Service Object writers are advised to only throw exceptions in unexpected conditions; for example, OutOfMemory. Otherwise, Service Objects should return True if the device was claimed and False if a time-out occurred. |
+| Claim | void | Requests exclusive access to the device. Service Object writers are advised to only throw exceptions in unexpected conditions; for example, OutOfMemory. Otherwise, Service Objects should return True if the device was claimed and False if a time-out occurred. |
 | Close | void | Releases the device and its resources. |
 | CompareFirmwareVersion | CompareFirmwareResult | Determines whether the version of the specified firmware is newer than, older than, or the same as the version of firmware in the physical device. |
-| DirectIO | DirectIOData | Used to communicate directly with the Service Object. |
-| In the UnifiedPOS specification, it has two in/out parameters. As used by POS for .NET, this method returns a structure and no in/out parameters. |
+| DirectIO | DirectIOData | Used to communicate directly with the Service Object. In the UnifiedPOS specification, it has two in/out parameters. As used by POS for .NET, this method returns a structure and no in/out parameters. |
 | Open | void | Opens a device for subsequent input/output processing. |
 | Release | void | Releases exclusive access to the device. |
-| ResetStatistic | void | Resets the specified statistic to zero. |
-| Used in POS for .NET for operations on a single statistic. |
+| ResetStatistic | void | Resets the specified statistic to zero. Used in POS for .NET for operations on a single statistic. |
 | ResetStatistics | void | Resets all statistics for a specified category to 0 (zero). |
 | ResetStatistics | void | Resets the specified statistics to 0 (zero). |
 | ResetStatistics | void | Resets all statistics associated with a device to 0 (zero). |
-| RetrieveStatistic | string | Retrieves the specified device statistic. |
-| Used in POS for .NET for operations on a single statistic. |
+| RetrieveStatistic | string | Retrieves the specified device statistic. Used in POS for .NET for operations on a single statistic. |
 | RetrieveStatistics | string | Retrieves all device statistics. |
 | RetrieveStatistics | void | Retrieves the statistics for the specified category. |
 | RetrieveStatistics | void | Retrieves the specified statistics. |
 | UpdateFirmware | void | Updates the firmware of a device with the version of the firmware contained in the specified filename. |
-| UpdateStatistic | void | Updates a statistic. |
-| Added to POS for .NET for operations on a single statistic. |
+| UpdateStatistic | void | Updates a statistic. Added to POS for .NET for operations on a single statistic. |
 | UpdateStatistics | void | Updates a list of statistics with the corresponding specified values. |
 | UpdateStatistics | void | Updates the specified category of statistics with the specified value. |
 

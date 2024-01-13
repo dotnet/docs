@@ -18,8 +18,8 @@ The following SDKs are available:
 | - | - | - |
 | `Microsoft.NET.Sdk` | The .NET SDK | <https://github.com/dotnet/sdk> |
 | `Microsoft.NET.Sdk.Web` | The .NET [Web SDK](/aspnet/core/razor-pages/web-sdk) | <https://github.com/dotnet/sdk> |
-| `Microsoft.NET.Sdk.BlazorWebAssembly` | The .NET [Blazor WebAssembly](/aspnet/core/blazor#blazor-webassembly) SDK | https://github.com/dotnet/aspnetcore |
-| `Microsoft.NET.Sdk.Razor` | The .NET [Razor SDK](/aspnet/core/razor-pages/sdk) | https://github.com/dotnet/aspnetcore |
+| `Microsoft.NET.Sdk.BlazorWebAssembly` | The .NET [Blazor WebAssembly](/aspnet/core/blazor#blazor-webassembly) SDK | <https://github.com/dotnet/aspnetcore> |
+| `Microsoft.NET.Sdk.Razor` | The .NET [Razor SDK](/aspnet/core/razor-pages/sdk) | <https://github.com/dotnet/aspnetcore> |
 | `Microsoft.NET.Sdk.Worker` | The .NET [Worker Service](../extensions/workers.md) SDK | |
 | `Microsoft.NET.Sdk.WindowsDesktop` | The .NET [Desktop SDK](msbuild-props-desktop.md), which includes Windows Forms (WinForms) and Windows Presentation Foundation (WPF).\* | <https://github.com/dotnet/winforms> and <https://github.com/dotnet/wpf> |
 

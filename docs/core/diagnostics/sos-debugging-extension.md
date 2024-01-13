@@ -202,7 +202,7 @@ By default you can reach all the SOS commands by entering: `sos [command_name]`.
 | `!dumpassembly 1ca248` | Displays the contents of an assembly at the address `1ca248`. |
 | `!dumpheap` | Displays information about the garbage collector heap. |
 | `!DumpLog` | Writes the contents of the in-memory stress log to a (default) file called StressLog.txt in the current directory. |
- `!dumpmd 902f40` | Displays the `MethodDesc` structure at the address `902f40`. |
+| `!dumpmd 902f40` | Displays the `MethodDesc` structure at the address `902f40`. |
 | `!dumpmodule 1caa50` | Displays information about a module at the address `1caa50`. |
 | `!DumpObj a79d40` | Displays information about an object at the address `a79d40`. |
 | `!DumpVC 0090320c 00a79d9c` | Displays the fields of a value class at the address `00a79d9c` using the method table at the address `0090320c`. |

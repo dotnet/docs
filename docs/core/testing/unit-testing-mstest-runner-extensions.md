@@ -16,7 +16,9 @@ A test report is a file that contains information about the execution and outcom
 
 ### Visual Studio test reports
 
-The Visual Studio test result file (or TRX) is the default format for publishing test results. This extension is shipped as part of [Microsoft.Testing.Platform.Extensions](https://nuget.org/packages/Microsoft.Testing.Platform.Extensions) package.
+The Visual Studio test result file (or TRX) is the default format for publishing test results. This extension is shipped as part of [Microsoft.Testing.Extensions.TrxReport](https://nuget.org/packages/Microsoft.Testing.Extensions.TrxReport) package.
+
+The package is shipped with Microsoft .NET LIBRARY closed-source free to use licensing model.
 
 The available options as follows:
 
@@ -57,7 +59,9 @@ You can also enable the diagnostics logs using the environment variables:
 
 ### Hang dump files
 
-This extension allows you to create a dump file after a given timeout. This extension is shipped as part of [Microsoft.Testing.Platform.Extensions.HangDump](https://nuget.org/packages/Microsoft.Testing.Platform.Extensions.HangDump) package.
+This extension allows you to create a dump file after a given timeout. This extension is shipped as part of [Microsoft.Testing.Extensions.HangDump](https://nuget.org/packages/Microsoft.Testing.Extensions.HangDump) package.
+
+The package is shipped with Microsoft .NET LIBRARY closed-source free to use licensing model.
 
 To configure the hang dump file generation, use the following options:
 
@@ -70,7 +74,9 @@ To configure the hang dump file generation, use the following options:
 
 ### Crash dump files
 
-This extension allows you to create a crash dump file if the process crashes. This extension is shipped as part of [Microsoft.Testing.Platform.Extensions](https://nuget.org/packages/Microsoft.Testing.Platform.Extensions) NuGet package.
+This extension allows you to create a crash dump file if the process crashes. This extension is shipped as part of [Microsoft.Testing.Extensions.CrashDump](https://nuget.org/packages/Microsoft.Testing.Extensions.CrashDump) NuGet package.
+
+The package is shipped with Microsoft .NET LIBRARY closed-source free to use licensing model.
 
 To configure the crash dump file generation, use the following options:
 
@@ -86,7 +92,9 @@ To determine what proportion of your project's code is being tested by coded tes
 
 ### Microsoft code coverage
 
-Microsoft Code Coverage analysis is possible for both managed (CLR) and unmanaged (native) code. Both static and dynamic instrumentation are supported. This extension is shipped as part of [Microsoft.Testing.Platform.Extensions.CodeCoverage](https://nuget.org/packages/Microsoft.Testing.Platform.Extensions.CodeCoverage) NuGet package.
+Microsoft Code Coverage analysis is possible for both managed (CLR) and unmanaged (native) code. Both static and dynamic instrumentation are supported. This extension is shipped as part of [Microsoft.Testing..Extensions.CodeCoverage](https://nuget.org/packages/Microsoft.Testing.Extensions.CodeCoverage) NuGet package.
+
+The package is shipped with Microsoft .NET LIBRARY closed-source free to use licensing model.
 
 > [!NOTE]
 > Microsoft code coverage is closed source but it's free to use.
@@ -97,9 +105,9 @@ Microsoft Code Coverage provides the following options:
 
 | Option | Description |
 |--|--|
-| `--ms-coverage` | Collect the code coverage using dotnet-coverage tool |
-| `--ms-coverage-output` | Output file |
-| `--ms-coverage-output-format` | Output file format. Supported values: 'coverage', 'xml' and 'cobertura' |
-| `--ms-coverage-settings` | XML code coverage settings |
+| `--coverage` | Collect the code coverage using dotnet-coverage tool |
+| `--coverage-output` | Output file |
+| `--coverage-output-format` | Output file format. Supported values: 'coverage', 'xml' and 'cobertura' |
+| `--coverage-settings` | XML code coverage settings |
 
 For more information about the available options, see [settings](../additional-tools/dotnet-coverage.md#settings).

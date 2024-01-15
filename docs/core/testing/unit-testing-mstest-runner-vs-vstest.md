@@ -36,6 +36,12 @@ VSTest is extensible and common types are placed in [Microsoft.TestPlatform.Obje
 
 The MSTest runner is based on [Microsoft.Testing.Platform](https://www.nuget.org/packages/Microsoft.Testing.Platform) NuGet package and other libraries in the `Microsoft.Testing.*` namespace. Like VSTest, the `Microsoft.Testing.Platform` is open-source and has a [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository.
 
+## Communication protocol
+
+The MSTest runner uses a JSON-RPC based protocol to communicate between Visual Studio and the test runner process. The protocol is documented in the [MSTest github repository](https://github.com/microsoft/testfx/tree/main/docs/mstest-runner-protocol).
+
+VSTest also uses a JSON based communication protocol, but it's not JSON-RPC based.
+
 ## Executables
 
 VSTest ships multiple executables, notably `vstest.console.exe`, `testhost.exe`, and `datacollector.exe`. However, MSTest is embedded directly into your test project and doesn't ship any other executables. The executable your test project compiles to is used to host all the testing tools and carry out all the tasks needed to run tests.

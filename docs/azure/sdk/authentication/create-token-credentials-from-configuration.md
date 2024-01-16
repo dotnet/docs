@@ -12,9 +12,9 @@ The `Microsoft.Extensions.Azure` library supports creating different <xref:Azure
 
 ## Support for credentials through configuration
 
-The `Microsoft.Extensions.Azure` library can automatically create and provide Azure service clients with a _TokenCredential_ class by searching _appsettings.json_ or other configuration files for credentials. The configuration files are searched using the default `IConfiguration` service for .NET. This approach provides the option for developers to explicitly set credential values across different environments through configuration rather than through app code directly.
+The `Microsoft.Extensions.Azure` library can automatically create and provide Azure service clients with a `TokenCredential` class by searching _appsettings.json_ or other configuration files for credentials. The configuration files are searched using the default `IConfiguration` service for .NET. This approach allows developers to explicitly set credential values across different environments through configuration rather than through app code directly.
 
-The following credential types are supported:
+The following credential types are supported via configuration:
 
 * <xref:Azure.Identity.ManagedIdentityCredential?displayProperty=fullName>
 * <xref:Azure.Identity.WorkloadIdentityCredential?displayProperty=fullName>
@@ -22,17 +22,17 @@ The following credential types are supported:
 * <xref:Azure.Identity.ClientCertificateCredential?displayProperty=fullName>
 * <xref:Azure.Identity.DefaultAzureCredential?displayProperty=fullName>
 
-The configuration file values are only used if the service client does not explicitly set an authentication mechanism. For example, the following code *will* initiate a search for values in _appsettings.json_ because the <xref:Azure.Storage.Blobs.BlobServiceClient?displayProperty=fullName> is created without specifying any credentials:
+The configuration file values are only used if the service client does *not* explicitly set an authentication mechanism. For example, the following code *will* initiate a search for values in _appsettings.json_ because the <xref:Azure.Storage.Blobs.BlobServiceClient?displayProperty=fullName> is created without specifying any credentials:
 
 ```csharp
-// No TokenCredential or access key provided, configuration files will be searched
+// No TokenCredential or access key provided - configuration files will be searched
 var blobServiceClient = new BlobServiceClient("<storage-account-name>");
 ```
 
 However, the following code will *not* initiate a search for configuration values in _appsettings.json_, because `DefaultAzureCredential` is already provided directly:
 
 ```csharp
-// Configuration files will not be searched because DefaultAzureCredential is already provided
+// Configuration files will not be searched - DefaultAzureCredential is already provided
 var blobServiceClient = new BlobServiceClient("<storage-account-name>", new DefaultAzureCredential());
 ```
 
@@ -41,7 +41,7 @@ var blobServiceClient = new BlobServiceClient("<storage-account-name>", new Defa
 
 ### Create a `ManagedIdentityCredential` type
 
-Add the following configuration values to your _appsettings.json_ file to create a <xref:Azure.Identity.ManagedIdentityCredential?displayProperty=fullName>:
+Add the following configuration values to your _appsettings.json_ file to create an <xref:Azure.Identity.ManagedIdentityCredential?displayProperty=fullName>:
 
 ```json
 {
@@ -52,7 +52,7 @@ Add the following configuration values to your _appsettings.json_ file to create
 
 ### Create a `WorkloadIdentityCredential` type
 
-Add the following configuration values to your _appsettings.json_ file to create a <xref:Azure.Identity.WorkloadIdentityCredential?displayProperty=fullName>:
+Add the following configuration values to your _appsettings.json_ file to create an <xref:Azure.Identity.WorkloadIdentityCredential?displayProperty=fullName>:
 
 ```json
 {
@@ -65,7 +65,7 @@ Add the following configuration values to your _appsettings.json_ file to create
 
 ### Create a `ClientSecretCredential` type
 
-Add the following configuration values to your _appsettings.json_ file to create a <xref:Azure.Identity.ClientSecretCredential?displayProperty=fullName>:
+Add the following configuration values to your _appsettings.json_ file to create an <xref:Azure.Identity.ClientSecretCredential?displayProperty=fullName>:
 
 ```json
 {
@@ -77,7 +77,7 @@ Add the following configuration values to your _appsettings.json_ file to create
 
 ### Create a `ClientCertificateCredential` type
 
-Add the following configuration values to your _appsettings.json_ file to create a <xref:Azure.Identity.ClientCertificateCredential?displayProperty=fullName>:
+Add the following configuration values to your _appsettings.json_ file to create an <xref:Azure.Identity.ClientCertificateCredential?displayProperty=fullName>:
 
 ```json
 {
@@ -89,7 +89,7 @@ Add the following configuration values to your _appsettings.json_ file to create
 
 ### Create a `DefaultAzureCredential` type
 
-Add the following configuration values to your _appsettings.json_ file to create a <xref:Azure.Identity.DefaultAzureCredential?displayProperty=fullName>:
+Add the following configuration values to your _appsettings.json_ file to create an <xref:Azure.Identity.DefaultAzureCredential?displayProperty=fullName>:
 
 ```json
 {

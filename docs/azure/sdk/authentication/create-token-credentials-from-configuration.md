@@ -12,7 +12,9 @@ The `Microsoft.Extensions.Azure` library supports creating different <xref:Azure
 
 ## Support for credentials through configuration
 
-The `Microsoft.Extensions.Azure` library can automatically create and provide Azure service clients with a _TokenCredential_ class by searching _appsettings.json_ or other configuration files for credentials. The configuration files are searched using the default `IConfiguration` service for .NET. The following credential types are supported:
+The `Microsoft.Extensions.Azure` library can automatically create and provide Azure service clients with a _TokenCredential_ class by searching _appsettings.json_ or other configuration files for credentials. The configuration files are searched using the default `IConfiguration` service for .NET. This approach provides the option for developers to explicitly set credential values across different environments through configuration rather than through app code directly.
+
+The following credential types are supported:
 
 * <xref:Azure.Identity.ManagedIdentityCredential?displayProperty=fullName>
 * <xref:Azure.Identity.WorkloadIdentityCredential?displayProperty=fullName>
@@ -27,7 +29,7 @@ The configuration file values are only used if the service client does not expli
 var blobServiceClient = new BlobServiceClient("<storage-account-name>");
 ```
 
-However, the following code will *not* initiate a search for configuration values in _appsettings.json_, because `DefaultAzureCredential` is already provided:
+However, the following code will *not* initiate a search for configuration values in _appsettings.json_, because `DefaultAzureCredential` is already provided directly:
 
 ```csharp
 // Configuration files will not be searched because DefaultAzureCredential is already provided

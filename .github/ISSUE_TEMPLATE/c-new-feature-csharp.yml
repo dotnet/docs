@@ -1,8 +1,8 @@
-name: "C# 12 - New feature"
+name: "C# 13 - New feature"
 description: Create the task list of a new feature in C# 12. Intended mostly for docs / product-team use.
-title: "[C# 12]: New Feature - "
+title: "[C# 13]: New Feature - "
 labels:
-  - ":checkered_flag: Release: .NET 8" 
+  - ":checkered_flag: Release: .NET 9" 
   - Pri1
   - csharp-whats-new/tech
   - dotnet-csharp/prod
@@ -15,10 +15,20 @@ body:
       label: Visual Studio release
       description: What Visual Studio (preview) contains this feature?
       options:
-        - "17.7"
-        - "17.8p1"
-        - "17.8p2"
-        - "17.8p3"
+        - "17.9p3"
+        - "17.9p4"
+        - "17.9p5"
+        - "17.9"
+        - "17.10p1"
+        - "17.10p2"
+        - "17.10p3"
+        - "17.10p4"
+        - "17.10p6"
+        - "17.10"
+        - "17.11p1"
+        - "17.11p2"
+        - "17.11p3"
+        - "17.11p4"
         - "Other (please put exact version in description textbox)"
   - type: input
     id: Speclet
@@ -49,7 +59,7 @@ body:
       label: Areas affected
       description: Check all areas that must be updated. Some are always updated.
       options:
-        - label: "**Add to What's new in C# 12**: Add links to updated docs in the What's new in C# 12 article."
+        - label: "**Add to What's new in C# 13**: Add links to updated docs in the What's new in C# 12 article."
           required: true
         - label:  "**Update language reference**: Detail the areas in the language reference that will be updated for this feature."
           required: true

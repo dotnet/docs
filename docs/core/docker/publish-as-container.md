@@ -196,7 +196,7 @@ dotnet publish \
   -p ContainerArchiveOutputPath=./images/sdk-container-demo.tar.gz
 ```
 
-You can specify either a folder name or a path with a specific file name.
+You can specify either a folder name or a path with a specific file name. If you specify the folder name, the filename generated for the image archive file will be `$(ContainerRepository).tar.gz`. These archives can contain multiple tags inside them, only as single file is created for all `ContainerImageTags`.
 
 :::zone-end
 

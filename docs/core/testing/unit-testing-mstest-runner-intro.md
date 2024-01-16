@@ -50,7 +50,7 @@ To enable the MSTest runner in a MSTest project, you need to add the `EnableMSTe
       https://github.com/coverlet-coverage/coverlet#net-global-tool-guide-suffers-from-possible-known-issue
     --> 
     <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" 
-                      Version="17.10.0" />
+                      Version="17.10.1" />
   </ItemGroup>
 
 </Project>

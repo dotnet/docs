@@ -14,9 +14,9 @@ This article details the settings you can use to configure Windows Presentation 
 - Configures whether hardware acceleration is used for WPF apps that are accessed through Remote Desktop Protocol (RDP). Hardware acceleration refers to the use of a computer's graphics processing unit (GPU) to speed up the rendering of graphics and visual effects in an application. This can result in improved performance and more seamless, responsive graphics.
 - If you omit this setting, graphics are rendered by software instead. This is equivalent to setting the value to `false`.
 
-| | Setting name | Values | Version introduced
-| - | - | - | - |
+| Setting type | Setting name | Values | Version introduced |
+|--------------|--------------|--------|--------------------|
 | **runtimeconfig.json** | `Switch.System.Windows.Media.EnableHardwareAccelerationInRdp` | `true` - enabled<br/>`false` - disabled | .NET 8 |
-| **Environment variable** | N/A | N/A | |
+| **Environment variable** | N/A | | |
 
 [!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]

@@ -17,6 +17,6 @@ Examples:
 | Option Value | Summary |
 | --- | --- |
 |`dotnet_code_quality.CAXXXX.excluded_symbol_names = MyType` | Matches all symbols named `MyType`. |
-|`dotnet_code_quality.CAXXXX.excluded_symbol_names = MyType1|MyType2` | Matches all symbols named either `MyType1` or `MyType2`. |
+|'dotnet_code_quality.CAXXXX.excluded_symbol_names = MyType1&#124;MyType2' | Matches all symbols named either `MyType1` or `MyType2`. |
 |`dotnet_code_quality.CAXXXX.excluded_symbol_names = M:NS.MyType.MyMethod(ParamType)` | Matches specific method `MyMethod` with the specified fully qualified signature. |
-|`dotnet_code_quality.CAXXXX.excluded_symbol_names = M:NS1.MyType1.MyMethod1(ParamType)|M:NS2.MyType2.MyMethod2(ParamType)` | Matches specific methods `MyMethod1` and `MyMethod2` with the respective fully qualified signatures. |
+|'dotnet_code_quality.CAXXXX.excluded_symbol_names = M:NS1.MyType1.MyMethod1(ParamType)&#124;M:NS2.MyType2.MyMethod2(ParamType)' | Matches specific methods `MyMethod1` and `MyMethod2` with the respective fully qualified signatures. |

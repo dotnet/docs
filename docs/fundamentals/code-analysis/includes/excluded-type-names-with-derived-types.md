@@ -16,6 +16,6 @@ Examples:
 | Option Value | Summary |
 | --- | --- |
 |`dotnet_code_quality.CAXXXX.excluded_type_names_with_derived_types = MyType` | Matches all types named `MyType` and all of their derived types. |
-|`dotnet_code_quality.CAXXXX.excluded_type_names_with_derived_types = MyType1|MyType2` | Matches all types named either `MyType1` or `MyType2` and all of their derived types. |
+|'dotnet_code_quality.CAXXXX.excluded_type_names_with_derived_types = MyType1&#124;MyType2' | Matches all types named either `MyType1` or `MyType2` and all of their derived types. |
 |`dotnet_code_quality.CAXXXX.excluded_type_names_with_derived_types = M:NS.MyType` | Matches specific type `MyType` with given fully qualified name and all of its derived types. |
-|`dotnet_code_quality.CAXXXX.excluded_type_names_with_derived_types = M:NS1.MyType1|M:NS2.MyType2` | Matches specific types `MyType1` and `MyType2` with the respective fully qualified names, and all of their derived types. |
+|'dotnet_code_quality.CAXXXX.excluded_type_names_with_derived_types = M:NS1.MyType1&#124;M:NS2.MyType2' | Matches specific types `MyType1` and `MyType2` with the respective fully qualified names, and all of their derived types. |

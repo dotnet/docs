@@ -67,14 +67,14 @@ For more information on developing apps that target .NET Framework, see the [Dev
 
 ## Related articles
 
-| Title | Description |
-| ----- |------------ |
-| [Overview](overview.md) | Provides detailed information for developers who build apps that target .NET Framework. |
-| [Installation guide](../install/index.md) | Provides information about installing .NET Framework. |
+| Title                                     | Description                                                                             |
+|-------------------------------------------|-----------------------------------------------------------------------------------------|
+| [Overview](overview.md)                   | Provides detailed information for developers who build apps that target .NET Framework. |
+| [Installation guide](../install/index.md) | Provides information about installing .NET Framework.                                   |
 | [.NET Framework and Out-of-Band Releases](the-net-framework-and-out-of-band-releases.md) | Describes the .NET Framework out-of-band releases and how to use them in your app. |
 | [System Requirements](system-requirements.md) | Lists the hardware and software requirements for running .NET Framework. |
 | [.NET Core documentation](../../core/introduction.md) | Provides the conceptual and API reference documentation for .NET Core. |
-| [.NET Standard](../../standard/net-standard.md) | Discusses .NET Standard, a versioned specification that individual .NET implementations support to guarantee that a consistent set of APIs is available on multiple platforms.
+| [.NET Standard](../../standard/net-standard.md) | Discusses .NET Standard, a versioned specification that individual .NET implementations support to guarantee that a consistent set of APIs is available on multiple platforms. |
 
 ## See also
 

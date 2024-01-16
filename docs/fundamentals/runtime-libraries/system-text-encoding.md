@@ -84,7 +84,7 @@ The following table lists the encodings supported by .NET. It lists each encodin
 |1201|unicodeFFFE|Unicode (Big endian)|✓|✓|✓|
 |1250|windows-1250|Central European (Windows)||||
 |1251|windows-1251|Cyrillic (Windows)||||
-|1252|Windows-1252|Western European (Windows)|✓||||
+|1252|Windows-1252|Western European (Windows)|✓|||
 |1253|windows-1253|Greek (Windows)||||
 |1254|windows-1254|Turkish (Windows)||||
 |1255|windows-1255|Hebrew (Windows)||||

@@ -136,18 +136,22 @@ Alternately, you can download a runtime from the [.NET downloads](https://dotnet
 The following table shows the frameworks that each runtime contains.
 
 ::: zone pivot="os-windows"
+
 | Runtime download     | Included frameworks                                    |
 | -------------------- | ------------------------------------------------------ |
 | ASP.NET Core Runtime | Microsoft.NETCore.App<br/>Microsoft.AspNetCore.App     |
 | .NET Desktop Runtime | Microsoft.NETCore.App<br/>Microsoft.WindowsDesktop.App |
 | .NET Runtime         | Microsoft.NETCore.App                                  |
+
 ::: zone-end
 
 ::: zone pivot="os-linux,os-macos"
+
 | Runtime download     | Included frameworks                                |
 | -------------------- | -------------------------------------------------- |
 | ASP.NET Core Runtime | Microsoft.NETCore.App<br/>Microsoft.AspNetCore.App |
 | .NET Runtime         | Microsoft.NETCore.App                              |
+
 ::: zone-end
 
 Select a runtime download that contains the missing framework, and then install it.

@@ -6,7 +6,7 @@ ms.date: 01/16/2024
 ---
 # Nullable reference types
 
-In a nullable oblivious context, all reference types were nullable. *Nullable reference types* refers to a group of features enabled in a nullable aware context that minimize the likelihood that your code causes the runtime to throw <xref:System.NullReferenceException?displayProperty=nameWithType>. *Nullable reference types* includes three features that help you avoid these exceptions, including the ability to explicitly mark a reference type as *nullable*:
+In a nullable-oblivious context, all reference types were nullable. *Nullable reference types* refers to a group of features enabled in a nullable aware context that minimize the likelihood that your code causes the runtime to throw <xref:System.NullReferenceException?displayProperty=nameWithType>. *Nullable reference types* includes three features that help you avoid these exceptions, including the ability to explicitly mark a reference type as *nullable*:
 
 - Improved static flow analysis that determines if a variable might be `null` before dereferencing it.
 - Attributes that annotate APIs so that the flow analysis determines *null-state*.
@@ -39,21 +39,21 @@ When you dereference a variable whose value is `null`, the runtime throws a <xre
 
 You'll learn about:
 
-- The compiler's [null state analysis](#null-state-analysis): how the compiler determines if an expression is not null, or maybe null.
-- [Attributes](#attributes-on-api-signatures) that are applied to APIs that provide more context for the compiler's null state analysis.
-- [Nullable variable annotations](#nullable-variable-annotations) that provide information about your intent for variables.  Annotations are useful for fields to set the default null state at the beginning of member methods.
+- The compiler's [null-state analysis](#null-state-analysis): how the compiler determines if an expression is not-null, or maybe-null.
+- [Attributes](#attributes-on-api-signatures) that are applied to APIs that provide more context for the compiler's null-state analysis.
+- [Nullable variable annotations](#nullable-variable-annotations) that provide information about your intent for variables.  Annotations are useful for fields to set the default null-state at the beginning of member methods.
 - The rules governing [generic type arguments](#generics). New constraints were added because type parameters can be reference types or value types. The `?` suffix is implemented differently for nullable value types and nullable reference types.
 - [Nullable contexts](#nullable-contexts) help you migrate large projects. You can enable nullable contexts or warnings in parts of your app as you migrate. After you address more warnings, you can enable nullable reference types for the entire project.
 
-Finally, you learn known pitfalls for null state analysis in `struct` types and arrays.
+Finally, you learn known pitfalls for null-state analysis in `struct` types and arrays.
 
 You can also explore these concepts in our Learn module on [Nullable safety in C#](/training/modules/csharp-null-safety).
 
-## Null state analysis
+## null-state analysis
 
 When nullable reference types are enabled, ***Null-state analysis*** tracks the *null-state* of references. An expression is either *not-null* or *maybe-null*. The compiler determines that a variable is *not-null* in two ways:
 
-1. The variable has been assigned a value that is known to be *not null*.
+1. The variable has been assigned a value that is known to be *not-null*.
 1. The variable has been checked against `null` and hasn't been modified since that check.
 
 When nullable reference types aren't enabled, all expressions have the null-state of *oblivious*. The rest of the section describes the behavior when nullable reference types are enabled.
@@ -74,7 +74,7 @@ Console.WriteLine($"The length of the message is {message.Length}");
 var originalMessage = message;
 message = "Hello, World!";
 
-// No warning. Analysis determined "message" is not null.
+// No warning. Analysis determined "message" is not-null.
 Console.WriteLine($"The length of the message is {message.Length}");
 
 // warning!
@@ -95,7 +95,7 @@ void FindRoot(Node node, Action<Node> processNode)
 
 The previous code doesn't generate any warnings for dereferencing the variable `current`. Static analysis determines that `current` is never dereferenced when it's *maybe-null*. The variable `current` is checked against `null` before `current.Parent` is accessed, and before passing `current` to the `ProcessNode` action. The previous examples show how the compiler determines *null-state* for local variables when initialized, assigned, or compared to `null`.
 
-The null state analysis doesn't trace into called methods. As a result, fields initialized in a common helper method called by all constructors generates a warning with the following template:
+The null-state analysis doesn't trace into called methods. As a result, fields initialized in a common helper method called by all constructors generates a warning with the following template:
 
 > Non-nullable property '*name*' must contain a non-null value when exiting constructor.
 
@@ -104,13 +104,13 @@ You can address these warnings in one of two ways: *Constructor chaining*, or *n
 :::code language="csharp" source="./language-reference/compiler-messages/snippets/null-warnings/PersonExamples.cs" id="ConstructorChainingAndMemberNotNull":::
 
 > [!NOTE]
-> A number of improvements to definite assignment and null state analysis were added in C# 10. When you upgrade to C# 10, you may find fewer nullable warnings that are false positives. You can learn more about the improvements in the [features specification for definite assignment improvements](~/_csharplang/proposals/csharp-10.0/improved-definite-assignment.md).
+> A number of improvements to definite assignment and null-state analysis were added in C# 10. When you upgrade to C# 10, you may find fewer nullable warnings that are false positives. You can learn more about the improvements in the [features specification for definite assignment improvements](~/_csharplang/proposals/csharp-10.0/improved-definite-assignment.md).
 
 Nullable state analysis and the warnings the compiler generates help you avoid program errors by dereferencing `null`. The article on [resolving nullable warnings](language-reference/compiler-messages/nullable-warnings.md) provides techniques for correcting the warnings most likely seen in your code.
 
 ## Attributes on API signatures
 
-The null state analysis needs hints from developers to understand the semantics of APIs. Some APIs provide null checks, and should change the *null-state* of a variable from *maybe-null* to *not-null*. Other APIs return expressions that are *not-null* or *maybe-null* depending on the *null-state* of the input arguments. For example, consider the following code that displays a message in upper case:
+The null-state analysis needs hints from developers to understand the semantics of APIs. Some APIs provide null checks, and should change the *null-state* of a variable from *maybe-null* to *not-null*. Other APIs return expressions that are *not-null* or *maybe-null* depending on the *null-state* of the input arguments. For example, consider the following code that displays a message in upper case:
 
 ```csharp
 void PrintMessageUpper(string? message)
@@ -132,7 +132,7 @@ bool IsNull([NotNullWhen(false)] string? s) => s == null;
 
 This attribute informs the compiler, that, if `IsNull` returns `false`, the parameter `s` isn't null. The compiler changes the *null-state* of `message` to *not-null* inside the `if (!IsNull(message)) {...}` block. No warnings are issued.
 
-Attributes provide detailed information about the null state of arguments, return values, and members of the object instance used to invoke a member. The details on each attribute can be found in the language reference article on [nullable reference attributes](language-reference/attributes/nullable-analysis.md). As of .NET 5, all .NET runtime APIs are annotated. You improve the static analysis by annotating your APIs to provide semantic information about the *null-state* of arguments and return values.
+Attributes provide detailed information about the null-state of arguments, return values, and members of the object instance used to invoke a member. The details on each attribute can be found in the language reference article on [nullable reference attributes](language-reference/attributes/nullable-analysis.md). As of .NET 5, all .NET runtime APIs are annotated. You improve the static analysis by annotating your APIs to provide semantic information about the *null-state* of arguments and return values.
 
 ## Nullable variable annotations
 
@@ -173,7 +173,7 @@ Nullable reference types are a compile time feature. That means it's possible fo
 
 ## Generics
 
-Generics requires detailed rules to handle `T?` for any type parameter `T`. The rules are necessarily detailed because of history and the different implementation for a nullable value type and a nullable reference type. [Nullable value types](language-reference/builtin-types/nullable-value-types.md) are implemented using the <xref:System.Nullable%601?displayProperty=nameWithType> struct. [Nullable reference types](language-reference/builtin-types/nullable-reference-types.md) are implemented as type annotations that provide semantic rules to the compiler.
+Generics require detailed rules to handle `T?` for any type parameter `T`. The rules are necessarily detailed because of history and the different implementation for a nullable value type and a nullable reference type. [Nullable value types](language-reference/builtin-types/nullable-value-types.md) are implemented using the <xref:System.Nullable%601?displayProperty=nameWithType> struct. [Nullable reference types](language-reference/builtin-types/nullable-reference-types.md) are implemented as type annotations that provide semantic rules to the compiler.
 
 - If the type argument for `T` is a reference type, `T?` references the corresponding nullable reference type. For example, if `T` is a `string`, then `T?` is a `string?`.
 - If the type argument for `T` is a value type, `T?` references the same value type, `T`. For example, if `T` is an `int`, the `T?` is also an `int`.
@@ -200,7 +200,7 @@ For small projects, you can enable nullable reference types, fix warnings, and c
 
 The **nullable annotation context** determines the compiler's behavior. There are four values for the **nullable annotation context**:
 
-- *disable*: The code is *nullable oblivious*. *Disable* matches the behavior before nullable reference types were enabled, except the new syntax produces warnings instead of errors.
+- *disable*: The code is *nullable-oblivious*. *Disable* matches the behavior before nullable reference types were enabled, except the new syntax produces warnings instead of errors.
   - Nullable warnings are disabled.
   - All reference type variables are nullable reference types.
   - Use of the `?` suffix to declare a nullable reference type produces a warning.
@@ -215,7 +215,7 @@ The **nullable annotation context** determines the compiler's behavior. There ar
   - Use of the `?` suffix to declare a nullable reference type produces a warning.
   - All reference type variables are allowed to be null. However, members have the *null-state* of *not-null* at the opening brace of all methods unless declared with the `?` suffix.
   - You can use the null forgiving operator, `!`.
-- *annotations*: The compiler doesn't emit warnings when code might dereference `null`, or when you assign a maybe null expression to a non-nullable variable.
+- *annotations*: The compiler doesn't emit warnings when code might dereference `null`, or when you assign a maybe-null expression to a non-nullable variable.
   - All new nullable warnings are disabled.
   - You can use the `?` suffix to declare a nullable reference type.
   - Reference type variables without the `?` suffix are non-nullable reference types.
@@ -227,10 +227,10 @@ The nullable annotation context and nullable warning context can be set for a pr
 | - | - | - | - | - |
 | `disable` | Disabled | Disabled | All are nullable | Produces a warning | Has no effect |
 | `enable` | Enabled | Enabled | Non-nullable unless declared with `?` | Declares nullable type | Suppresses warnings for possible `null` assignment |
-| `warnings` | Enabled | Not applicable | All are nullable, but members are considered *not null* at opening brace of methods | Produces a warning |  Suppresses warnings for possible `null` assignment |
+| `warnings` | Enabled | Not applicable | All are nullable, but members are considered *not-null* at opening brace of methods | Produces a warning |  Suppresses warnings for possible `null` assignment |
 | `annotations` | Disabled | Disabled | Non-nullable unless declared with `?` | Declares nullable type | Has no effect |
 
-Reference type variables in code compiled in a *disabled* context are *nullable-oblivious*. You can assign a `null` literal or a *maybe-null* variable to a variable that is *nullable oblivious*. However, the default state of a *nullable-oblivious* variable is *not-null*.
+Reference type variables in code compiled in a *disabled* context are *nullable-oblivious*. You can assign a `null` literal or a *maybe-null* variable to a variable that is *nullable-oblivious*. However, the default state of a *nullable-oblivious* variable is *not-null*.
 
 You can choose which setting is best for your project:
 

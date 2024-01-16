@@ -18,11 +18,11 @@ issues:
   
   labeled:
 
-    # Handle issues with /prod /tech labels from label bot
+    # Handle issues with /svc /subsvc labels from label bot
     # Manages the Not Triaged label for issues missing/having an org category issue
     - check:
         - type: query
-          value: "length(Issue.labels[?contains(name, '/prod') || contains(name, '/tech')]) != `0`"
+          value: "length(Issue.labels[?contains(name, '/svc') || contains(name, '/subsvc')]) != `0`"
       pass:
         - check:
           - type: query
@@ -111,269 +111,269 @@ pull_request:
             # csharplang
             - path: "(?i).*_csharplang.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-spec/tech"]
+                - labels-add: ["dotnet-csharp/svc", "lang-spec/subsvc"]
 
             # csharpstandard
             - path: "(?i).*_csharpstandard.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-spec/tech"]
+                - labels-add: ["dotnet-csharp/svc", "lang-spec/subsvc"]
 
             # vbspec
             - path: "(?i).*_vblang\/spec.*"
               run:
-                - labels-add: ["dotnet-visualbasic/prod", "vb-spec/tech"]
+                - labels-add: ["dotnet-visualbasic/svc", "vb-spec/subsvc"]
 
             # architecture
             - path: "(?i).*docs\/architecture.*"
               run:
-                - labels-add: ["dotnet-architecture/prod"]
+                - labels-add: ["dotnet-architecture/svc"]
             - path: "(?i).*docs\/architecture\/blazor-for-web-forms-developers.*"
               run:
-                - labels-add: ["dotnet-architecture/prod", "blazor/tech"]
+                - labels-add: ["dotnet-architecture/svc", "blazor/subsvc"]
             - path: "(?i).*docs\/architecture\/cloud-native.*"
               run:
-                - labels-add: ["dotnet-architecture/prod", "cloud-native/tech"]
+                - labels-add: ["dotnet-architecture/svc", "cloud-native/subsvc"]
             - path: "(?i).*docs\/architecture\/containerized-lifecycle.*"
               run:
-                - labels-add: ["dotnet-architecture/prod", "containerized-lifecycle/tech"]
+                - labels-add: ["dotnet-architecture/svc", "containerized-lifecycle/subsvc"]
             - path: "(?i).*docs\/architecture\/grpc-for-wcf-developers.*"
               run:
-                - labels-add: ["dotnet-architecture/prod", "grpc/tech"]
+                - labels-add: ["dotnet-architecture/svc", "grpc/subsvc"]
             - path: "(?i).*docs\/architecture\/microservices.*"
               run:
-                - labels-add: ["dotnet-architecture/prod", "microservices/tech"]
+                - labels-add: ["dotnet-architecture/svc", "microservices/subsvc"]
             - path: "(?i).*docs\/architecture\/modernize-with-azure-containers.*"
               run:
-              - labels-add: ["dotnet-architecture/prod", "modernize-with-azure-containers/tech"]
+              - labels-add: ["dotnet-architecture/svc", "modernize-with-azure-containers/subsvc"]
             - path: "(?i).*docs\/architecture\/modern-web-apps-azure.*"
               run:
-                - labels-add: ["dotnet-architecture/prod", "modern-web-apps-azure/tech"]
+                - labels-add: ["dotnet-architecture/svc", "modern-web-apps-azure/subsvc"]
             - path: "(?i).*docs\/architecture\/serverless.*"
               run:
-                - labels-add: ["dotnet-architecture/prod", "serverless/tech"]
+                - labels-add: ["dotnet-architecture/svc", "serverless/subsvc"]
 
             # azure
             - path: "(?i).*docs\/azure.*"
               run:
-                - labels-add: ["dotnet-azure/prod"]
+                - labels-add: ["dotnet-azure/svc"]
             
             # core
             - path: "(?i).*docs\/core.*"
               run:
-                - labels-add: ["dotnet-fundamentals/prod"]
+                - labels-add: ["dotnet-fundamentals/svc"]
             - path: "(?i).*docs\/core\/tools.*"
               run:
-                - labels-add: ["dotnet-fundamentals/prod", "dotnet-cli/tech"]
+                - labels-add: ["dotnet-fundamentals/svc", "dotnet-cli/subsvc"]
             - path: "(?i).*docs\/core\/docker.*"
               run:
-                - labels-add: ["dotnet-fundamentals/prod", "dotnet-docker/tech"]
+                - labels-add: ["dotnet-fundamentals/svc", "dotnet-docker/subsvc"]
             
             # core/install
             - path: "(?i).*docs\/core\/install.*"
               run:
-                - labels-add: ["dotnet/prod", "dotnet-install/tech"]
+                - labels-add: ["dotnet-fundamentals/svc", "install/subsvc"]
 
             # csharp
             - path: "(?i).*docs\/csharp.*"
               run:
-                - labels-add: ["dotnet-csharp/prod"]
+                - labels-add: ["dotnet-csharp/svc"]
             - path: "(?i).*docs\/csharp\/fundamentals.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+                - labels-add: ["dotnet-csharp/svc", "fundamentals/subsvc"]
             - path: "(?i).*docs\/csharp\/misc.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-diagnostics/tech"]
+                - labels-add: ["dotnet-csharp/svc", "csharp-errors-warnings/subsvc"]
             - path: "(?i).*docs\/csharp\/whats-new.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-whats-new/tech"]
+                - labels-add: ["dotnet-csharp/svc", "whats-new/subsvc"]
             - path: "(?i).*docs\/csharp\/how-to.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+                - labels-add: ["dotnet-csharp/svc", "fundamentals/subsvc"]
             - path: "(?i).*docs\/csharp\/linq.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-linq/tech"]
+                - labels-add: ["dotnet-csharp/svc", "csharp-linq/subsvc"]
             - path: "(?i).*docs\/csharp\/programming-guide\/indexers.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+                - labels-add: ["dotnet-csharp/svc", "fundamentals/subsvc"]
             - path: "(?i).*docs\/csharp\/programming-guide\/generics.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+                - labels-add: ["dotnet-csharp/svc", "fundamentals/subsvc"]
             - path: "(?i).*docs\/csharp\/programming-guide\/strings.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+                - labels-add: ["dotnet-csharp/svc", "fundamentals/subsvc"]
             - path: "(?i).*docs\/csharp\/programming-guide\/types.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+                - labels-add: ["dotnet-csharp/svc", "fundamentals/subsvc"]
             - path: "(?i).*docs\/csharp\/programming-guide\/statements-expressions-operators.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+                - labels-add: ["dotnet-csharp/svc", "fundamentals/subsvc"]
             - path: "(?i).*docs\/csharp\/programming-guide\/interop.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-advanced-concepts/tech"]
+                - labels-add: ["dotnet-csharp/svc", "advanced-concepts/subsvc"]
             - path: "(?i).*docs\/csharp\/language-reference\/unsafe-code.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-advanced-concepts/tech"]
+                - labels-add: ["dotnet-csharp/svc", "advanced-concepts/subsvc"]
             - path: "(?i).*docs\/csharp\/programming-guide\/namespaces.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+                - labels-add: ["dotnet-csharp/svc", "fundamentals/subsvc"]
             - path: "(?i).*docs\/csharp\/programming-guide\/arrays.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+                - labels-add: ["dotnet-csharp/svc", "fundamentals/subsvc"]
             - path: "(?i).*docs\/csharp\/programming-guide\/concepts\/covariance-contravariance.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-advanced-concepts/tech"]
+                - labels-add: ["dotnet-csharp/svc", "advanced-concepts/subsvc"]
             - path: "(?i).*docs\/csharp\/programming-guide\/concepts\/serialization.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+                - labels-add: ["dotnet-csharp/svc", "fundamentals/subsvc"]
             - path: "(?i).*docs\/csharp\/programming-guide\/concepts\/expression-trees.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-advanced-concepts/tech"]
+                - labels-add: ["dotnet-csharp/svc", "advanced-concepts/subsvc"]
             - path: "(?i).*docs\/csharp\/asynchronous-programming\/.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-async/tech"]
+                - labels-add: ["dotnet-csharp/svc", "async-task-programming/subsvc"]
             - path: "(?i).*docs\/csharp\/programming-guide\/concepts\/linq.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-linq/tech"]
+                - labels-add: ["dotnet-csharp/svc", "csharp-linq/subsvc"]
             - path: "(?i).*docs\/csharp\/programming-guide\/concepts\/attributes.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+                - labels-add: ["dotnet-csharp/svc", "fundamentals/subsvc"]
             - path: "(?i).*docs\/csharp\/programming-guide\/xmldoc.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+                - labels-add: ["dotnet-csharp/svc", "fundamentals/subsvc"]
             - path: "(?i).*docs\/csharp\/programming-guide\/classes-and-structs.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+                - labels-add: ["dotnet-csharp/svc", "fundamentals/subsvc"]
             - path: "(?i).*docs\/csharp\/programming-guide\/delegates.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+                - labels-add: ["dotnet-csharp/svc", "fundamentals/subsvc"]
             - path: "(?i).*docs\/csharp\/programming-guide\/file-system.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+                - labels-add: ["dotnet-csharp/svc", "fundamentals/subsvc"]
             - path: "(?i).*docs\/csharp\/programming-guide\/events.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+                - labels-add: ["dotnet-csharp/svc", "fundamentals/subsvc"]
             - path: "(?i).*docs\/csharp\/programming-guide\/interfaces.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+                - labels-add: ["dotnet-csharp/svc", "fundamentals/subsvc"]
             - path: "(?i).*docs\/csharp\/tutorials.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-fundamentals/tech"]
+                - labels-add: ["dotnet-csharp/svc", "fundamentals/subsvc"]
             - path: "(?i).*docs\/csharp\/tutorials\/exploration.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-get-started/tech"]
+                - labels-add: ["dotnet-csharp/svc", "get-started/subsvc"]
             - path: "(?i).*docs\/csharp\/language-reference.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-language-reference/tech"]
+                - labels-add: ["dotnet-csharp/svc", "lang-reference/subsvc"]
             - path: "(?i).*docs\/csharp\/language-reference\/compiler-messages.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-diagnostics/tech"]
+                - labels-add: ["dotnet-csharp/svc", "csharp-diagnostics/subsvc"]
             - path: "(?i).*docs\/csharp\/roslyn-sdk.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-roslyn/tech"]
+                - labels-add: ["dotnet-csharp/svc", "roslyn-sdk/subsvc"]
             - path: "(?i).*docs\/csharp\/tour-of-csharp.*"
               run:
-                - labels-add: ["dotnet-csharp/prod", "csharp-get-started/tech"]
+                - labels-add: ["dotnet-csharp/svc", "get-started/subsvc"]
 
             # framework
             - path: "(?i).*docs\/framework.*"
               run:
-                - labels-add: ["dotnet-framework/prod"]
+                - labels-add: ["dotnet-framework/svc"]
             - path: "(?i).*docs\/framework\/configure-apps\/file-schema\/network.*"
               run:
-                - labels-add: [ "dotnet-framework/prod", "dotnet-networking/tech" ]
+                - labels-add: [ "dotnet-framework/svc", "networking/subsvc" ]
             - path: "(?i).*docs\/framework\/configure-apps\/file-schema\/wcf.*"
               run:
-                - labels-add: [ "dotnet-framework/prod", "dotnet-wcf/tech" ]
+                - labels-add: [ "dotnet-framework/svc", "wcf/subsvc" ]
             - path: "(?i).*docs\/framework\/data\/adonet.*"
               run:
-                - labels-add: [ "dotnet-framework/prod", "dotnet-data/tech" ]
+                - labels-add: [ "dotnet-framework/svc", "data-access/subsvc" ]
             - path: "(?i).*docs\/framework\/data\/wcf.*"
               run:
-                - labels-add: [ "dotnet-framework/prod", "dotnet-wcf/tech" ]
+                - labels-add: [ "dotnet-framework/svc", "wcf/subsvc" ]
             - path: "(?i).*docs\/framework\/docker.*"
               run:
-                - labels-add: [ "dotnet-framework/prod", "dotnet-docker/tech" ]
+                - labels-add: [ "dotnet-framework/svc", "dotnet-docker/subsvc" ]
             - path: "(?i).*docs\/framework\/install.*"
               run:
-                - labels-add: [ "dotnet-framework/prod", "dotnet-install/tech" ]
+                - labels-add: [ "dotnet-framework/svc", "install/subsvc" ]
             - path: "(?i).*docs\/framework\/migration-guide.*"
               run:
-                - labels-add: [ "dotnet-framework/prod", "dotnet-appcompat/tech" ]
+                - labels-add: [ "dotnet-framework/svc", "app-compat/subsvc" ]
             - path: "(?i).*docs\/framework\/network-programming.*"
               run:
-                - labels-add: [ "dotnet-framework/prod", "dotnet-networking/tech" ]
+                - labels-add: [ "dotnet-framework/svc", "dotnet-networking/subsvc" ]
             - path: "(?i).*docs\/fundamentals\/networking.*"
               run:
-                - labels-add: [ "dotnet-fundamentals/prod", "dotnet-networking/tech" ]
+                - labels-add: [ "dotnet-fundamentals/svc", "dotnet-networking/subsvc" ]
             - path: "(?i).*docs\/core\/extensions\/http.*"
               run:
-                - labels-add: [ "dotnet-fundamentals/prod", "dotnet-networking/tech" ]
+                - labels-add: [ "dotnet-fundamentals/svc", "dotnet-networking/subsvc" ]
             - path: "(?i).*docs\/framework\/wcf.*"
               run:
-                - labels-add: [ "dotnet-framework/prod", "dotnet-wcf/tech" ]
+                - labels-add: [ "dotnet-framework/svc", "dotnet-wcf/subsvc" ]
             - path: "(?i).*docs\/framework\/windows-workflow-foundation.*"
               run:
-                - labels-add: [ "dotnet-framework/prod", "dotnet-wf/tech" ]
+                - labels-add: [ "dotnet-framework/svc", "wf/subsvc" ]
             
             # fsharp
             - path: "(?i).*docs\/fsharp.*"
               run:
-                - labels-add: ["dotnet-fsharp/prod"]
+                - labels-add: ["dotnet-fsharp/svc"]
             
             # fundamentals
             - path: "(?i).*docs\/fundamentals.*"
               run:
-                - labels-add: ["dotnet-fundamentals/prod"]
+                - labels-add: ["dotnet-fundamentals/svc"]
             
             # standard
             - path: "(?i).*docs\/standard.*"
               run:
-                - labels-add: ["dotnet-fundamentals/prod"]
+                - labels-add: ["dotnet-fundamentals/svc"]
             
             # analyzers
             - path: "(?i).*docs\/standard\/analyzers.*"
               run:
-                - labels-add: [ "dotnet-fundamentals/prod", "dotnet-analyzers/tech" ]
+                - labels-add: [ "dotnet-fundamentals/svc", "code-analyzers/subsvc" ]
             
             # machine learning
             - path: "(?i).*docs\/machine-learning.*"
               run:
-                - labels-add: ["dotnet-ml/prod"]
+                - labels-add: ["dotnet-ml/svc"]
             
             # spark
             - path: "(?i).*docs\/spark.*"
               run:
-                - labels-add: ["dotnet-spark/prod"]
+                - labels-add: ["dotnet-spark/svc"]
             
             # data
             - path: "(?i).*docs\/standard\/data.*"
               run:
-                - labels-add: ["dotnet-data/prod"]
+                - labels-add: ["dotnet-data/svc"]
             
             # design guidelines
             - path: "(?i).*docs\/standard\/design-guidelines.*"
               run:
-                - labels-add: [ "dotnet/prod", "dotnet-standard/tech" ]
+                - labels-add: [ "dotnet/svc", "standard-library/subsvc" ]
             
             # security
             - path: "(?i).*docs\/standard\/security.*"
               run:
-                - labels-add: [ "dotnet/prod", "dotnet-security/tech" ]
+                - labels-add: [ "dotnet/svc", "security-practices/subsvc" ]
             
             # visual-basic
             - path: "(?i).*docs\/visual-basic.*"
               run:
-                - labels-add: ["dotnet-visualbasic/prod"]
+                - labels-add: ["dotnet-visualbasic/svc"]
             
             # visual-basic lang ref error messages
             - path: "(?i).*docs\/visual-basic\/language-reference\/error-messages.*"
               run:
-                - labels-add: [ "dotnet-visualbasic/prod", "vb-diagnostics/tech" ]
+                - labels-add: [ "dotnet-visualbasic/svc", "errors-warnings/subsvc" ]
             
             # visual-basic misc
             - path: "(?i).*docs\/visual-basic\/misc.*"
               run:
-                - labels-add: ["dotnet-visualbasic/prod", "vb-diagnostics/tech"]
+                - labels-add: ["dotnet-visualbasic/svc", "errors-warnings/subsvc"]
 
   labeled:
 

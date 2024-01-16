@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with dotnet publish
 description: In this tutorial, you'll learn how to containerize a .NET application with dotnet publish.
-ms.date: 01/10/2024
+ms.date: 01/16/2024
 ms.topic: tutorial
 zone_pivot_groups: dotnet-version-7-8
 ---
@@ -181,6 +181,24 @@ You can control many aspects of the generated container through MSBuild properti
 
 > [!NOTE]
 > The only exceptions to this are `RUN` commands. Due to the way containers are built, those cannot be emulated. If you need this functionality, you'll need to use a _Dockerfile_ to build your container images.
+
+:::zone pivot="dotnet-8-0"
+
+### `ContainerArchiveOutputPath`
+
+Starting in .NET 8, you can create a container directly as a _tar.gz_ archive. This feature is useful if your workflow isn't straightforward and requires that you, for example, run a scanning tool over your images before pushing them. Once the archive is created, you can move it, scan it, or load it into a local Docker toolchain.
+
+To publish to an archive, add the `ContainerArchiveOutputPath` property to your `dotnet publish` command, for example:
+
+```dotnetcli
+dotnet publish \
+  -p PublishProfile=DefaultContainer \
+  -p ContainerArchiveOutputPath=./images/sdk-container-demo.tar.gz
+```
+
+You can specify either a folder name or a path with a specific file name. If you specify the folder name, the filename generated for the image archive file will be `$(ContainerRepository).tar.gz`. These archives can contain multiple tags inside them, only as single file is created for all `ContainerImageTags`.
+
+:::zone-end
 
 ### Container image naming configuration
 

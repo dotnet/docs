@@ -377,12 +377,12 @@ pull_request:
 
   labeled:
 
-    # Add to .NET 6 project if .NET 6 label added
+    # Add to .NET 9 project if .NET 6 label added
     - check:
         - type: query
-          value: "length(Issue.labels[?name == ':checkered_flag: Release: .NET 6']) != `0`"
+          value: "length(Issue.labels[?name == ':checkered_flag: Release: .NET 9']) != `0`"
       pass:
-        - projects-add: [132]
+        - projects-add: [362]
 
 issue_comment:
 

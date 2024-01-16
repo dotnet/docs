@@ -22,7 +22,7 @@ The following credential types are supported:
 * <xref:Azure.Identity.ClientCertificateCredential?displayProperty=fullName>
 * <xref:Azure.Identity.DefaultAzureCredential?displayProperty=fullName>
 
-The configuration file values are only used if the service client does not explicitly set an authentication mechanism. For example, the following code *will* initiate a search for values in _appsettings.json_ because the <xref:azure.storage.blob.BlobServiceClient?displayProperty=fullName> is created without specifying any credentials:
+The configuration file values are only used if the service client does not explicitly set an authentication mechanism. For example, the following code *will* initiate a search for values in _appsettings.json_ because the <xref:Azure.Storage.Blobs.BlobServiceClient?displayProperty=fullName> is created without specifying any credentials:
 
 ```csharp
 // No TokenCredential or access key provided, configuration files will be searched
@@ -52,7 +52,7 @@ Add the following configuration values to your _appsettings.json_ file to create
 
 ### Create a `WorkloadIdentityCredential` type
 
-Add the following configuration values to your _appsettings.json_ file to create a <xref:Azure.Identity.WorkloadCredentialId?displayProperty=fullName>:
+Add the following configuration values to your _appsettings.json_ file to create a <xref:Azure.Identity.WorkloadIdentityCredential?displayProperty=fullName>:
 
 ```json
 {
@@ -83,7 +83,7 @@ Add the following configuration values to your _appsettings.json_ file to create
 {
     "tenantId":  "<tenantId>",
     "clientId":  "<clientId>",
-    "clientCertificate": "<managedIdentityResourceId>"
+    "clientCertificate": "<clientCertificate>"
 }
 ```
 
@@ -95,6 +95,6 @@ Add the following configuration values to your _appsettings.json_ file to create
 {
     "tenantId":  "<tenantId>",
     "clientId":  "<clientId>",
-    "clientCertificate": "<clientCertificate>"
+    "clientCertificate": "<managedIdentityResourceId>"
 }
 ```

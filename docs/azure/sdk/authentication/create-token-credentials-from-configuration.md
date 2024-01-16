@@ -8,11 +8,11 @@ ms.date: 1/16/2024
 
 # Create credential types using configuration files
 
-The `Microsoft.Extensions.Azure` library supports creating different <xref:Azure.Core.TokenCredential?displayProperty=fullName> types from values defined in _appsettings.json_ and other configuration files. This article describes which `TokenCredential` types can be created and how to configure the required values.
+The `Microsoft.Extensions.Azure` library supports creating different <xref:Azure.Core.TokenCredential?displayProperty=fullName> types from values defined in _appsettings.json_ and other configuration files. This article describes the support for different `TokenCredential` types and how to configure the required values for each type.
 
 ## Support for authentication credentials through configuration
 
-The `Microsoft.Extensions.Azure` library can automatically create and provide Azure service clients with a `TokenCredential` class by searching _appsettings.json_ or other configuration files for credentials. The configuration files are searched using the default `IConfiguration` service for .NET. This approach allows developers to explicitly set credential values across different environments through configuration rather than through app code directly.
+The `Microsoft.Extensions.Azure` library can automatically provide Azure service clients with a `TokenCredential` class by searching _appsettings.json_ or other configuration files for credential values using the default `IConfiguration` service for .NET. This approach allows developers to explicitly set credential values across different environments through configuration rather than through app code directly.
 
 The following credential types are supported via configuration:
 
@@ -22,14 +22,14 @@ The following credential types are supported via configuration:
 * <xref:Azure.Identity.ClientCertificateCredential?displayProperty=fullName>
 * <xref:Azure.Identity.DefaultAzureCredential?displayProperty=fullName>
 
-The configuration file values are only used if the service client doesn't* explicitly set an authentication mechanism. For example, the following code initiates a search for values in _appsettings.json_ because the <xref:Azure.Storage.Blobs.BlobServiceClient?displayProperty=fullName> is created without specifying any credentials:
+The configuration file values are only used if the service client doesn't* explicitly set an authentication mechanism. For example, the following code initiates a search for values in _appsettings.json_ because the <xref:Azure.Storage.Blobs.BlobServiceClient?displayProperty=fullName> does not specify any credentials during instantiation:
 
 ```csharp
 // No TokenCredential or access key provided - configuration files will be searched
 var blobServiceClient = new BlobServiceClient("<storage-account-name>");
 ```
 
-However, the following code does *not* initiate a search for configuration values in _appsettings.json_, because `DefaultAzureCredential` is already provided directly:
+In comparison, the following code provides `DefaultAzureCredential` directly and therefore does *not* initiate a search for configuration values in _appsettings.json_:
 
 ```csharp
 // Configuration files will not be searched - DefaultAzureCredential is already provided

@@ -8,7 +8,7 @@ ms.date: 1/16/2024
 
 # Create TokenCredential types using configuration files
 
-The `Microsoft.Extensions.Azure` library supports creating different <xref:Azure.Core.TokenCredential?displayProperty=fullName> types from configuration files such as _appsettings.json_. This article describes which `TokenCredential` types can be created and how to configure the required values.
+The `Microsoft.Extensions.Azure` library supports creating different <xref:Azure.Core.TokenCredential?displayProperty=fullName> types from values defined in _appsettings.json_ and other configuration files. This article describes which `TokenCredential` types can be created and how to configure the required values.
 
 ## Support for credentials through configuration
 

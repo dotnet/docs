@@ -43,7 +43,7 @@ You'll learn about:
 - [Attributes](#attributes-on-api-signatures) that are applied to APIs that provide more context for the compiler's null state analysis.
 - [Nullable variable annotations](#nullable-variable-annotations) that provide information about your intent for variables.  Annotations are useful for fields to set the default null state at the beginning of member methods.
 - The rules governing [generic type arguments](#generics). New constraints were added because type parameters can be reference types or value types. The `?` suffix is implemented differently for nullable value types and nullable reference types.
-- [Nullable contexts](#nullable-contexts) help you migrate large projects. You can enable nullable contexts or warnings in parts of your app as migrate. After you address more warnings, you can enable nullable reference types for the entire project.
+- [Nullable contexts](#nullable-contexts) help you migrate large projects. You can enable nullable contexts or warnings in parts of your app as you migrate. After you address more warnings, you can enable nullable reference types for the entire project.
 
 Finally, you learn known pitfalls for null state analysis in `struct` types and arrays.
 
@@ -192,7 +192,7 @@ These constraints help provide more information to the compiler on how `T` is us
 
 ## Nullable contexts
 
-For small projects, you can enable nullable reference types, fix warnings, and continue. However, for larger projects and multi-project solutions, that might generate a large number of warnings. You can use pragmas to enable nullable reference file-by-file as you begin using nullable reference types. The new features that protect against throwing a <xref:System.NullReferenceException?displayProperty=nameWithType> can be disruptive when turned on in an existing codebase:
+For small projects, you can enable nullable reference types, fix warnings, and continue. However, for larger projects and multi-project solutions, that might generate a large number of warnings. You can use pragmas to enable nullable reference types file-by-file as you begin using nullable reference types. The new features that protect against throwing a <xref:System.NullReferenceException?displayProperty=nameWithType> can be disruptive when turned on in an existing codebase:
 
 - All explicitly typed reference variables are interpreted as non-nullable reference types.
 - The meaning of the `class` constraint in generics changed to mean a non-nullable reference type.

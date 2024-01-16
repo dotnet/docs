@@ -95,6 +95,6 @@ Add the following configuration values to your _appsettings.json_ file to create
 {
     "tenantId":  "<tenantId>",
     "clientId":  "<clientId>",
-    "clientCertificate": "<managedIdentityResourceId>"
+    "resourceId": "<managedIdentityResourceId>"
 }
 ```

@@ -183,6 +183,12 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/configuration/console-validation-gen" #console-validation-gen.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
     directory: "/docs/core/extensions/snippets/configuration/console-xml" #console-xml.csproj
     schedule:
       interval: "weekly"
@@ -399,85 +405,43 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/6.0/background-service" #App.WorkerService.csproj
+    directory: "/docs/core/extensions/snippets/workers/background-service" #App.WorkerService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/6.0/cloud-service" #App.CloudService.csproj
+    directory: "/docs/core/extensions/snippets/workers/cloud-service" #App.CloudService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/6.0/queue-service" #App.QueueService.csproj
+    directory: "/docs/core/extensions/snippets/workers/queue-service" #App.QueueService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/6.0/scoped-service" #App.ScopedService.csproj
+    directory: "/docs/core/extensions/snippets/workers/scoped-service" #App.ScopedService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/6.0/signal-completion-service/App.SignalCompletionService" #App.SignalCompletionService.csproj
+    directory: "/docs/core/extensions/snippets/workers/signal-completion-service/App.SignalCompletionService" #App.SignalCompletionService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/6.0/timer-service" #App.TimerHostedService.csproj
+    directory: "/docs/core/extensions/snippets/workers/timer-service" #App.TimerHostedService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/6.0/windows-service" #App.WindowsService.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/7.0/background-service" #App.WorkerService.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/7.0/cloud-service" #App.CloudService.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/7.0/queue-service" #App.QueueService.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/7.0/scoped-service" #App.ScopedService.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/7.0/signal-completion-service/App.SignalCompletionService" #App.SignalCompletionService.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/7.0/timer-service" #App.TimerHostedService.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-  - package-ecosystem: "nuget"
-    directory: "/docs/core/extensions/snippets/workers/7.0/windows-service" #App.WindowsService.csproj
+    directory: "/docs/core/extensions/snippets/workers/windows-service" #App.WindowsService.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -585,6 +549,12 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
+    directory: "/docs/csharp/linq/get-started/snippets/SnippetTests" #LinqGetStarted.Test.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
     directory: "/docs/csharp/roslyn-sdk/snippets/source-generators/SourceGenerator" #SourceGenerator.csproj
     schedule:
       interval: "weekly"
@@ -652,6 +622,30 @@ updates:
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
     directory: "/docs/fundamentals/networking/telemetry/snippets/metrics" #HelloBuiltinMetrics.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/fundamentals/runtime-libraries/snippets/System.Diagnostics/CounterCreationData/Overview/csharp" #Project.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/fundamentals/runtime-libraries/snippets/System.Diagnostics/PerformanceCounter/NextValue/csharp" #Project.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/fundamentals/runtime-libraries/snippets/System.Diagnostics/PerformanceCounterType/Overview/csharp" #Project.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "nuget"
+    directory: "/docs/fundamentals/runtime-libraries/snippets/System.Resources/ResourceReader/Overview/csharp" #Project.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -1203,7 +1197,7 @@ updates:
       day: "wednesday"
     open-pull-requests-limit: 5
   - package-ecosystem: "nuget"
-    directory: "/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClient.CAS/CS" #Project.csproj
+    directory: "/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlBulkCopy.SqlTransaction/CS" #Project.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"

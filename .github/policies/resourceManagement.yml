@@ -8,7 +8,7 @@ where:
 configuration:
   resourceManagementConfiguration:
     scheduledSearches:
-    - description: 
+    - description: Label doc-bug issues with okr-health (scheduled search)
       frequencies:
       - hourly:
           hour: 3
@@ -34,9 +34,6 @@ configuration:
       - isAction:
           action: Opened
       - and:
-        - not:
-            activitySenderHasPermission:
-              permission: Admin
         - not:
             activitySenderHasPermission:
               permission: Admin
@@ -142,4 +139,4 @@ configuration:
           label: okr-health
       description: Label PRs with okr-health
 onFailure: 
-onSuccess: 
+onSuccess:

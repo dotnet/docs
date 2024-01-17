@@ -92,7 +92,7 @@ To determine what proportion of your project's code is being tested by coded tes
 
 ### Microsoft code coverage
 
-Microsoft Code Coverage analysis is possible for both managed (CLR) and unmanaged (native) code. Both static and dynamic instrumentation are supported. This extension is shipped as part of [Microsoft.Testing.Extensions.CodeCoverage](https://nuget.org/packages/Microsoft.Testing.Extensions.CodeCoverage) NuGet package.
+Microsoft Code Coverage analysis is possible for both managed (CLR) and unmanaged (native) code. Both static and dynamic instrumentation are supported. This extension is shipped as part of [Microsoft.Testing.Extensions.CodeCoverage](https://nuget.org/packages/Microsoft.Testing.Extensions.CodeCoverage) NuGet package. Unmanaged (native) code coverage is disabled in the extension by default. Use flags `EnableStaticNativeInstrumentation` and `EnableDynamicNativeInstrumentation` to enable it if needed. For more information about unmanaged code coverage, see [Static and dynamic native instrumentation](/visualstudio/test/customizing-code-coverage-analysis?#static-and-dynamic-native-instrumentation).
 
 The package is shipped with Microsoft .NET LIBRARY closed-source free to use licensing model.
 
@@ -110,4 +110,4 @@ Microsoft Code Coverage provides the following options:
 | `--coverage-output-format` | Output file format. Supported values: 'coverage', 'xml' and 'cobertura' |
 | `--coverage-settings` | XML code coverage settings |
 
-For more information about the available options, see [settings](../additional-tools/dotnet-coverage.md#settings).
+For more information about the available options, see [settings](../additional-tools/dotnet-coverage.md#settings) and [samples](https://github.com/microsoft/codecoverage/tree/main/samples/Algorithms).

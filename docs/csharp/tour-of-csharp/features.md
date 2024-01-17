@@ -84,7 +84,7 @@ This small sample shows the major features for asynchronous programming:
 - The body of the method `await`s the return of the `GetByteArrayAsync` method.
 - The type specified in the `return` statement matches the type argument in the `Task<T>` declaration for the method. (A method that returns a `Task` would use `return` statements without any argument).
 
-The [`async`](../language-reference/keywords/async.md) and [`await`](../language-reference/operators/await.md) provide a language-level abstraction over lower-level primitives that support asynchronous operations. The compiler and library may rely on network interrupts, OS events, hardware interrupts, or other primitives to trigger the completion of an asynchronous operation. The compiler generates code to update the state of any <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> object and transfer control to code that should execute when the awaited task completes.
+The [`async`](../language-reference/keywords/async.md) keyword and [`await`](../language-reference/operators/await.md) operator provide a language-level abstraction over lower-level primitives that support asynchronous operations. The compiler and library might rely on network interrupts, OS events, hardware interrupts, or other primitives to trigger the completion of an asynchronous operation. The compiler generates code to update the state of any <xref:System.Threading.Tasks.Task> object and transfer control to code that should execute when the awaited task completes.
 
 You can learn more about the mechanisms used in the section on [asynchronous programming in C#](../asynchronous-programming/index.md).
 

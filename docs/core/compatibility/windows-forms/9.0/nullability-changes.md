@@ -1,9 +1,9 @@
 ---
-title: "Breaking change: Nullable reference type annotation changes"
+title: "Breaking change: Changes to nullability annotations (Windows Forms)"
 description: Learn about the .NET 9 breaking change in Windows Forms where some nullable reference type annotations have changed.
 ms.date: 01/16/2024
 ---
-# Changes to nullability annotations
+# Changes to nullability annotations (Windows Forms)
 
 In .NET 9, some nullability annotations on the Windows Forms APIs have changed.
 

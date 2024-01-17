@@ -693,10 +693,12 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   The following table lists the default values according to the SDK version number you're using:
 
-  NOTE: There is not a template for net7.0 or net8.0 for react.
+  > [!NOTE]
+  > There isn't a React template for `net8.0`, however, if you're interested in developing React apps with ASP.NET Core, see [Overview of Single Page Apps (SPAs) in ASP.NET Core](/aspnet/core/client-side/spa/intro?view=aspnetcore-8.0&preserve-view=true).
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 7.0         | `net7.0`        |
   | 6.0         | `net6.0`        |
   | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |

@@ -2,46 +2,44 @@
 title: "Quantifier Operations (C#)"
 titleSuffix: LINQ
 description: Learn about quantifier operations in LINQ. These methods, 'All', 'Any', and 'Contains', return a Boolean value indicating whether some or all elements in a sequence satisfy a condition.
-ms.date: 03/30/2022
+ms.date: 01/22/2024
 ---
 # Quantifier operations in LINQ (C#)
 
-Quantifier operations return a <xref:System.Boolean> value that indicates whether some or all of the elements in a sequence satisfy a condition.  
-  
- The following illustration depicts two different quantifier operations on two different source sequences. The first operation asks if any of the elements are the character 'A'. The second operation asks if all the elements are the character 'A'. Both methods return `true` in this example.  
-  
- ![LINQ Quantifier Operations](./media/quantifier-operations/linq-quantifier-operations.png)  
-  
- The standard query operator methods that perform quantifier operations are listed in the following section.  
-  
-## Methods  
-  
-|Method Name|Description|C# Query Expression Syntax|More Information|  
-|-----------------|-----------------|---------------------------------|----------------------|  
-|All|Determines whether all the elements in a sequence satisfy a condition.|Not applicable.|<xref:System.Linq.Enumerable.All%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.All%2A?displayProperty=nameWithType>|  
-|Any|Determines whether any elements in a sequence satisfy a condition.|Not applicable.|<xref:System.Linq.Enumerable.Any%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Any%2A?displayProperty=nameWithType>|  
-|Contains|Determines whether a sequence contains a specified element.|Not applicable.|<xref:System.Linq.Enumerable.Contains%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Contains%2A?displayProperty=nameWithType>|  
+Quantifier operations return a <xref:System.Boolean> value that indicates whether some or all of the elements in a sequence satisfy a condition.
 
-## Query Expression Syntax Examples  
-  
-### All  
+The following illustration depicts two different quantifier operations on two different source sequences. The first operation asks if any of the elements are the character 'A'. The second operation asks if all the elements are the character 'A'. Both methods return `true` in this example.
+
+:::image type="content" source="./media/quantifier-operations/linq-quantifier-operations.png" alt-text="LINQ Quantifier Operations":::
+
+The standard query operator methods that perform quantifier operations are listed in the following section.
+
+## Methods
+
+|Method Name|Description|C# Query Expression Syntax|More Information|
+|-----------------|-----------------|---------------------------------|----------------------|
+|All|Determines whether all the elements in a sequence satisfy a condition.|Not applicable.|<xref:System.Linq.Enumerable.All%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.All%2A?displayProperty=nameWithType>|
+|Any|Determines whether any elements in a sequence satisfy a condition.|Not applicable.|<xref:System.Linq.Enumerable.Any%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Any%2A?displayProperty=nameWithType>|
+|Contains|Determines whether a sequence contains a specified element.|Not applicable.|<xref:System.Linq.Enumerable.Contains%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Contains%2A?displayProperty=nameWithType>|
+
+## All
 
 The following example uses the `All` to check that all strings are of a specific length.
-  
-[!code-csharp[All](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQQuantifier/CS/Quantifier.cs#All)]  
-  
-### Any  
 
-The following example uses the `Any` to check that any strings are start with 'o'.  
+:::code language="csharp" source="./snippets/standard-query-operators/QuantifierExamples.cs" id="AllQuantifier":::
   
-[!code-csharp[Any](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQQuantifier/CS/Quantifier.cs#Any)]  
-  
-### Contains  
+## Any
 
-The following example uses the `Contains` to check an array have a specific element.  
-  
-[!code-csharp[Contains](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQQuantifier/CS/Quantifier.cs#Contains)]  
-  
+The following example uses the `Any` to check that any strings are start with 'o'.
+
+:::code language="csharp" source="./snippets/standard-query-operators/QuantifierExamples.cs" id="AnyQuantifier":::
+
+## Contains
+
+The following example uses the `Contains` to check an array have a specific element.
+
+:::code language="csharp" source="./snippets/standard-query-operators/QuantifierExamples.cs" id="ContainsQuantifier":::
+
 ## See also
 
 - <xref:System.Linq>

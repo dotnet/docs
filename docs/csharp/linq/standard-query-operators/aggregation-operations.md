@@ -1,17 +1,15 @@
 ---
 title: "Aggregation operations (C#)"
 description: Learn about methods for performing an aggregation operation. An aggregation operation computes a single value from a collection of values.
-ms.date: 09/07/2021
-ms.assetid: 6fc035e5-7639-48b8-bc7f-b093dd31b039
+ms.date: 01/22/2024
 ---
-
 # Aggregation operations (C#)
 
 An aggregation operation computes a single value from a collection of values. An example of an aggregation operation is calculating the average daily temperature from a month's worth of daily temperature values.
 
 The following illustration shows the results of two different aggregation operations on a sequence of numbers. The first operation sums the numbers. The second operation returns the maximum value in the sequence.
 
-![Illustration that shows LINQ aggregation operations.](./media/aggregation-operations/linq-aggregation-operations.png)
+:::image type="content" source="./media/aggregation-operations/linq-aggregation-operations.png" alt-text="Illustration that shows LINQ aggregation operations.":::
 
 The standard query operator methods that perform aggregation operations are listed in the following section.
 
@@ -26,6 +24,8 @@ The standard query operator methods that perform aggregation operations are list
 | Max or MaxBy | Determines the maximum value in a collection. | Not applicable. | <xref:System.Linq.Enumerable.Max%2A?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.MaxBy%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Max%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.MaxBy%2A?displayProperty=nameWithType> |
 | Min or MinBy | Determines the minimum value in a collection. | Not applicable. | <xref:System.Linq.Enumerable.Min%2A?displayProperty=nameWithType><br /><xref:System.Linq.Enumerable.MinBy%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Min%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.MinBy%2A?displayProperty=nameWithType> |
 | Sum | Calculates the sum of the values in a collection. | Not applicable. | <xref:System.Linq.Enumerable.Sum%2A?displayProperty=nameWithType><br /> <xref:System.Linq.Queryable.Sum%2A?displayProperty=nameWithType> |
+
+TODO:  Add sample making average, max, min scores for all students.
 
 ## See also
 

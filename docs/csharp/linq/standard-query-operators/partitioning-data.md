@@ -1,17 +1,15 @@
 ---
 title: "Partitioning data (C#)"
 description: Learn how to partition data in LINQ. View an illustration showing the results of partitioning operations.
-ms.date: 09/10/2021
-ms.assetid: 2a5c507b-fe22-443c-a768-dec7f9ec568d
+ms.date: 01/22/2024
 ---
-
 # Partitioning data (C#)
 
 Partitioning in LINQ refers to the operation of dividing an input sequence into two sections, without rearranging the elements, and then returning one of the sections.
 
 The following illustration shows the results of three different partitioning operations on a sequence of characters. The first operation returns the first three elements in the sequence. The second operation skips the first three elements and returns the remaining elements. The third operation skips the first two elements in the sequence and returns the next three elements.
 
-![Illustration that shows three LINQ partitioning operations.](./media/partitioning-data/linq-partitioning-operations.png)
+:::image type="content" source="./media/partitioning-data/linq-partitioning-operations.png" alt-text="Illustration that shows three LINQ partitioning operations.":::
 
 The standard query operator methods that partition sequences are listed in the following section.
 
@@ -29,7 +27,7 @@ The standard query operator methods that partition sequences are listed in the f
 
 The `Chunk` operator is used to split elements of a sequence based on a given `size`.
 
-:::code source="snippets/partition/Program.cs":::
+:::code source="snippets/standard-query-operators/PartitionExamples.cs" id="Chunk":::
 
 The preceding C# code:
 

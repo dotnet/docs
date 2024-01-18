@@ -249,31 +249,27 @@ items:
     - name: Join Operations
       items:
       - name: Overview
-        href: programming-guide/concepts/linq/join-operations.md
+        href: linq/standard-query-operators/joins/index.md
       - name: Perform inner joins
-        href: linq/perform-inner-joins.md
+        href: linq/standard-query-operators/joins/perform-inner-joins.md
       - name: Perform grouped joins
-        href: linq/perform-grouped-joins.md
+        href: linq/standard-query-operators/joins/perform-grouped-joins.md
       - name: Perform left outer joins
-        href: linq/perform-left-outer-joins.md
+        href: linq/standard-query-operators/joins/perform-left-outer-joins.md
       - name: Order the results of a join clause
-        href: linq/order-the-results-of-a-join-clause.md
+        href: linq/standard-query-operators/joins/order-the-results-of-a-join-clause.md
       - name: Join by using composite keys
-        href: linq/join-by-using-composite-keys.md
-      - name: Perform custom join operations
-        href: linq/perform-custom-join-operations.md
+        href: linq/standard-query-operators/joins/join-by-using-composite-keys.md
     - name: Grouping Data
       items:
       - name: Overview
-        href: programming-guide/concepts/linq/grouping-data.md
+        href: linq/standard-query-operators/grouping/index.md
       - name: Group query results
-        href: linq/group-query-results.md
+        href: linq/standard-query-operators/grouping/group-query-results.md
       - name: Create a nested group
-        href: linq/create-a-nested-group.md
+        href: linq/standard-query-operators/grouping/create-a-nested-group.md
       - name: Perform a subquery on a grouping operation
-        href: linq/perform-a-subquery-on-a-grouping-operation.md
-      - name: Group results by contiguous keys
-        href: linq/group-results-by-contiguous-keys.md
+        href: linq/standard-query-operators/grouping/perform-a-subquery-on-a-grouping-operation.md
   - name: LINQ to objects
     href: linq/query-a-collection-of-objects.md
   - name: "Walkthrough: Writing Queries in C# (LINQ)"
@@ -336,10 +332,8 @@ items:
       href: programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md
     - name: "How to add custom methods for LINQ queries"
       href: programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md
-    - name: The Expression class
-      items:
-      - name: Add method
-        href: ../fundamentals/runtime-libraries/system-linq-expressions-expression-add.md
+    - name: How to group results by contiguous keys
+      href: linq/group-results-by-contiguous-keys.md
 - name: Asynchronous programming
   items:
   - name: Overview
@@ -461,6 +455,8 @@ items:
       href: advanced-topics/expression-trees/debugging-expression-trees-in-visual-studio.md
     - name: DebugView Syntax
       href: advanced-topics/expression-trees/debugview-syntax.md
+    - name: Supplemental API - Expression class add method
+      href: ../fundamentals/runtime-libraries/system-linq-expressions-expression-add.md
     - name: Supplemental API - BinaryExpression class
       href: ../fundamentals/runtime-libraries/system-linq-expressions-binaryexpression.md
   - name: Native interoperability

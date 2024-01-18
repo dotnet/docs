@@ -1,10 +1,8 @@
 ---
 title: "Element operations (C#)"
 description: Learn about the standard query operator methods that do element operations, which return a single element from a sequence in C#.
-ms.date: 09/07/2021
-ms.assetid: 283206c9-3246-4c48-b01a-d9de409a7231
+ms.date: 01/22/2024
 ---
-
 # Element operations (C#)
 
 Element operations return a single, specific element from a sequence.

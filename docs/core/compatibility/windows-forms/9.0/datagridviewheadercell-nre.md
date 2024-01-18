@@ -5,7 +5,7 @@ ms.date: 01/16/2024
 ---
 # No exception if DataGridView is null
 
-Previously, a <xref:System.NullReferenceException> was thrown in <xref:System.Windows.Forms.DataGridViewHeaderCell.MouseDownUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)?displayProperty=nameWithType>, <xref:System.Windows.Forms.DataGridViewHeaderCell.MouseEnterUnsharesRow(System.Int32)?displayProperty=nameWithType>, <xref:System.Windows.Forms.DataGridViewHeaderCell.MouseLeaveUnsharesRow(System.Int32)?displayProperty=nameWithType>, and <xref:System.Windows.Forms.DataGridViewHeaderCell.MouseUpUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)?displayProperty=nameWithType> if the <xref:System.Windows.Forms.DataGridViewElement.DataGridView> property was null. That behavior was unexpected and incorrect. We've updated these methods to simply return `false` if `DataGridView` is `null`.
+Previously, a <xref:System.NullReferenceException> was thrown in <xref:System.Windows.Forms.DataGridViewHeaderCell.MouseDownUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)?displayProperty=nameWithType>, <xref:System.Windows.Forms.DataGridViewHeaderCell.MouseEnterUnsharesRow(System.Int32)?displayProperty=nameWithType>, <xref:System.Windows.Forms.DataGridViewHeaderCell.MouseLeaveUnsharesRow(System.Int32)?displayProperty=nameWithType>, and <xref:System.Windows.Forms.DataGridViewHeaderCell.MouseUpUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)?displayProperty=nameWithType> if the <xref:System.Windows.Forms.DataGridViewElement.DataGridView> property was null. That behavior was unexpected and incorrect. These methods have been updated to simply return `false` if `DataGridView` is `null`.
 
 ## Version introduced
 

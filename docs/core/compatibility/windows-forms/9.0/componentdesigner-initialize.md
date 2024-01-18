@@ -25,7 +25,7 @@ This change is a [*behavioral change*](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-When we enabled nullability in the code file, we found that many methods and properties, both in <xref:System.ComponentModel.Design.ComponentDesigner> and its subclasses, relied on the passed-in component to be initialized to non-`null`. These methods and properties resulted in a <xref:System.NullReferenceException> or another exception later on if they were initialized with a `null` value.
+During the process of enabling nullability in the code file, it was discovered that many methods and properties, both in <xref:System.ComponentModel.Design.ComponentDesigner> and its subclasses, relied on the passed-in component to be initialized to non-`null`. These methods and properties resulted in a <xref:System.NullReferenceException> or another exception later on if they were initialized with a `null` value.
 
 ## Recommended action
 

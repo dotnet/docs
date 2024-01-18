@@ -50,8 +50,8 @@ public static class StackallocOperator
         ReadOnlySpan<int> third = stackalloc[] { 1, 2, 3 };
 
         // Using collection expressions:
-        Span<int> fourth= [1, 2, 3];
-        ReadOnlySpan<int> fifth= [1, 2, 3];
+        Span<int> fourth = [1, 2, 3];
+        ReadOnlySpan<int> fifth = [1, 2, 3];
         // </SnippetStackallocInit>
     }
 

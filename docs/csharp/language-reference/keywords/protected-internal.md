@@ -89,8 +89,9 @@ public class DerivedClassSameAssembly : BaseClass
 // Compile with: /reference:Assembly1.dll
 class DerivedClassDifferentAssembly : BaseClass
 {
-    // Override to return a different example value, since this override method is defined in another assembly, the accessibility
-    // modifiers are only protected, instead of protected internal.
+    // Override to return a different example value, since this override
+    // method is defined in another assembly, the accessibility modifiers
+    // are only protected, instead of protected internal.
     protected override int GetExampleValue()
     {
         return 2;

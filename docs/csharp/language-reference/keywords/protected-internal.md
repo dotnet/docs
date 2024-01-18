@@ -58,6 +58,46 @@ In the second file, an attempt to access `myValue` through an instance of `BaseC
 
 Struct members cannot be `protected internal` because the struct cannot be inherited.
 
+## Override
+
+When overriding a virtual member, the accessibility modifier of the overriden method will depend on if it defined in the same assembly as the class it is deriving from.
+If the derived class is defined in the same assembly that the base class is defined in, all overriden members will have the accessibility modifier `protected internal`. If the derived class is defined in a different assembly from where the base class is defined, overriden members will only have the `protected` accessibility modifier.
+
+```csharp
+// Assembly1.cs
+// Compile with: /target:library
+public class BaseClass
+{
+    protected internal virtual int GetExampleValue()
+    {
+        return 5;
+    }
+}
+
+public class DerivedClassSameAssembly : BaseClass
+{
+    // Override to return a different example value, accessibility modifiers remain the same.
+    protected internal override int GetExampleValue()
+    {
+        return 9;
+    }
+}
+```
+
+```csharp
+// Assembly2.cs
+// Compile with: /reference:Assembly1.dll
+class DerivedClassDifferentAssembly : BaseClass
+{
+    // Override to return a different example value, since this override method is defined in another assembly, the accessibility
+    // modifiers are only protected, instead of protected internal.
+    protected override int GetExampleValue()
+    {
+        return 2;
+    }
+}
+```
+
 ## C# language specification
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]

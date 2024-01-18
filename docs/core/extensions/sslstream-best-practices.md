@@ -89,22 +89,22 @@ static bool CustomCertificateValidationCallback(
     
     Debug.Assert(chain is not null);
 
-    // In case of `RemoteCertificateChainErrors`, it is possible that the chain is empty
-    if (chain.ChainStatus.Length > 0)
+    // If the reason for RemoteCertificateChainError is that the chain built empty, don't trust it.
+    if (chain.ChainStatus.Length == 0)
     {
-        foreach (X509ChainStatus status in chain.ChainStatus)
-        {
-            // If an error other than `NotTimeValid` (or `NoError`) is present, don't trust it.
-            if ((status.Status & ~X509ChainStatusFlags.NotTimeValid) != X509ChainStatusFlags.NoError)
-            {
-                return false;
-            }
-        }
-
-        return true;
+        return false;
     }
 
-    return false;
+    foreach (X509ChainStatus status in chain.ChainStatus)
+    {
+        // If an error other than `NotTimeValid` (or `NoError`) is present, don't trust it.
+        if ((status.Status & ~X509ChainStatusFlags.NotTimeValid) != X509ChainStatusFlags.NoError)
+        {
+            return false;
+        }
+    }
+
+    return true;
 }
 ```
 

@@ -141,14 +141,14 @@ All tests are executed until your test with a breakpoint is reached. Step throug
 
 To run a test, navigate to **Test Explorer**, select the test (or tests) to run. Right select it, and choose **Run**. Similarly to debug a test, select the test (or tests) in **Test Explorer**, right select and choose **Debug**.
 
-> [!TIP]
+> [!NOTE]
 > Automatic update of tests without building the project isn't available.
 
 ### [Visual Studio Code](#tab/visual-studio-code)
 
 The C# extension along with [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) allows you to debug/run tests in Visual Studio code, as well as adds integration with Visual Studio Code's Test Explorer.
 
-#### Run the app with Visual Studio
+#### Run the app with Visual Studio Code
 
 `Microsoft.Testing.Platform` test project are built as executables, and can be run directly. This runs all the tests in the given executable, unless a filter is provided.
 
@@ -174,7 +174,7 @@ As the project is run the output tab pops up with the execution and summary of y
 
 To run a test, navigate to **Test Explorer**, select the test (or tests) to run. Right select it, and choose **Run**. Similarly to debug a test, select the test (or tests) in **Test Explorer**, right select and choose **Debug**.
 
-> [!TIP]
+> [!NOTE]
 > Automatic update of tests without building the project isn't available.
 
 ### [Continuous integration (CI)](#tab/continuous-integration)

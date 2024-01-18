@@ -8,6 +8,16 @@ items:
     items:
     - name: Overview
       href: 9.0.md
+    - name: Core .NET libraries
+      items:
+      - name: Creating type of array of System.Void not allowed
+        href: core-libraries/9.0/type-instance.md
+      - name: RuntimeHelpers.GetSubArray returns different type
+        href: core-libraries/9.0/getsubarray-return.md
+    - name: Networking
+      items:
+      - name: HttpListenerRequest.UserAgent is nullable
+        href: networking/9.0/useragent-nullable.md
     - name: SDK and MSBuild
       items:
       - name: "'dotnet workload' commands output change"
@@ -1124,6 +1134,12 @@ items:
         href: containers/8.0/app-user.md
   - name: Core .NET libraries
     items:
+    - name: .NET 9
+      items:
+      - name: Creating type of array of System.Void not allowed
+        href: core-libraries/9.0/type-instance.md
+      - name: RuntimeHelpers.GetSubArray returns different type
+        href: core-libraries/9.0/getsubarray-return.md
     - name: .NET 8
       items:
       - name: Activity operation name when null
@@ -1500,6 +1516,10 @@ items:
         href: maui/7.0/iwindowstatemanager-apis-removed.md
   - name: Networking
     items:
+    - name: .NET 9
+      items:
+      - name: HttpListenerRequest.UserAgent is nullable
+        href: networking/9.0/useragent-nullable.md
     - name: .NET 8
       items:
       - name: SendFile throws NotSupportedException for connectionless sockets

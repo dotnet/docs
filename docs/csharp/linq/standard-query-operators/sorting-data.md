@@ -129,7 +129,5 @@ foreach (string str in query)
 ## See also
 
 - <xref:System.Linq>
-- [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
-- [orderby clause](../../../language-reference/keywords/orderby-clause.md)
-- [Order the results of a join clause](../../../linq/order-the-results-of-a-join-clause.md)
-- [How to sort or filter text data by any word or field (LINQ) (C#)](./how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)
+- [orderby clause](../../language-reference/keywords/orderby-clause.md)
+- [How to sort or filter text data by any word or field (LINQ) (C#)](../../programming-guide/concepts/linq//how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)

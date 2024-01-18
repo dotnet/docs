@@ -221,35 +221,31 @@ items:
   - name: Standard query operators
     items:
     - name: Overview
-      href: programming-guide/concepts/linq/standard-query-operators-overview.md
-    - name: Data Transformations with LINQ
-      href: programming-guide/concepts/linq/data-transformations-with-linq.md
-    - name: Store the results of a query in memory
-      href: linq/store-the-results-of-a-query-in-memory.md
+      href: linq/standard-query-operators/index.md
     - name: Filtering Data
-      href: programming-guide/concepts/linq/filtering-data.md
+      href: linq/standard-query-operators/filtering-data.md
     - name: Projection Operations
-      href: programming-guide/concepts/linq/projection-operations.md
+      href: linq/standard-query-operators/projection-operations.md
     - name: Set Operations
-      href: programming-guide/concepts/linq/set-operations.md
+      href: linq/standard-query-operators/set-operations.md
     - name: Sorting Data
-      href: programming-guide/concepts/linq/sorting-data.md
+      href: linq/standard-query-operators/sorting-data.md
     - name: Quantifier Operations
-      href: programming-guide/concepts/linq/quantifier-operations.md
+      href: linq/standard-query-operators/quantifier-operations.md
     - name: Partitioning Data
-      href: programming-guide/concepts/linq/partitioning-data.md
+      href: linq/standard-query-operators/partitioning-data.md
     - name: Generation Operations
-      href: programming-guide/concepts/linq/generation-operations.md
+      href: linq/standard-query-operators/generation-operations.md
     - name: Equality Operations
-      href: programming-guide/concepts/linq/equality-operations.md
+      href: linq/standard-query-operators/equality-operations.md
     - name: Element Operations
-      href: programming-guide/concepts/linq/element-operations.md
+      href: linq/standard-query-operators/element-operations.md
     - name: Converting Data Types
-      href: programming-guide/concepts/linq/converting-data-types.md
+      href: linq/standard-query-operators/converting-data-types.md
     - name: Concatenation Operations
-      href: programming-guide/concepts/linq/concatenation-operations.md
+      href: linq/standard-query-operators/concatenation-operations.md
     - name: Aggregation Operations
-      href: programming-guide/concepts/linq/aggregation-operations.md
+      href: linq/standard-query-operators/aggregation-operations.md
     - name: Join Operations
       items:
       - name: Overview
@@ -340,10 +336,6 @@ items:
       href: programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md
     - name: "How to add custom methods for LINQ queries"
       href: programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md
-  - name: Supplemental API remarks
-    items:
-    - name: The BinaryExpression class
-      href: ../fundamentals/runtime-libraries/system-linq-expressions-binaryexpression.md
     - name: The Expression class
       items:
       - name: Add method
@@ -469,6 +461,8 @@ items:
       href: advanced-topics/expression-trees/debugging-expression-trees-in-visual-studio.md
     - name: DebugView Syntax
       href: advanced-topics/expression-trees/debugview-syntax.md
+    - name: Supplemental API - BinaryExpression class
+      href: ../fundamentals/runtime-libraries/system-linq-expressions-binaryexpression.md
   - name: Native interoperability
     items:
     - name: Overview

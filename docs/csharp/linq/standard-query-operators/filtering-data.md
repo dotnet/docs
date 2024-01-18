@@ -45,9 +45,7 @@ foreach (string str in query)
 ## See also
 
 - <xref:System.Linq>
-- [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
-- [where clause](../../../language-reference/keywords/where-clause.md)
-- [Dynamically specify predicate filters at run time](../../../linq/dynamically-specify-predicate-filters-at-runtime.md)
-- [How to query an assembly's metadata with Reflection (LINQ) (C#)](../../../advanced-topics/reflection-and-attributes/how-to-query-assembly-metadata-with-reflection-linq.md)
-- [How to query for files with a specified attribute or name (C#)](./how-to-query-for-files-with-a-specified-attribute-or-name.md)
-- [How to sort or filter text data by any word or field (LINQ) (C#)](./how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)
+- [where clause](../../language-reference/keywords/where-clause.md)
+- [How to query an assembly's metadata with Reflection (LINQ) (C#)](../../advanced-topics/reflection-and-attributes/how-to-query-assembly-metadata-with-reflection-linq.md)
+- [How to query for files with a specified attribute or name (C#)](../../programming-guide/concepts/linq/how-to-query-for-files-with-a-specified-attribute-or-name.md)
+- [How to sort or filter text data by any word or field (LINQ) (C#)](../../programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)

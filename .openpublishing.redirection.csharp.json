@@ -1910,6 +1910,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/aggregation-operations.md",
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators/aggregation-operations",
+            "redirect_document_id": true
+        },
+        {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/applicability-of-functional-transformation.md",
             "redirect_url": "/dotnet/standard/linq/applicability-functional-transformation",
             "redirect_document_id": true
@@ -1957,8 +1962,18 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/concatenation-operations.md",
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators/concatenation-operations",
+            "redirect_document_id": true
+        },
+        {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/concepts-and-terminology-functional-transformation.md",
             "redirect_url": "/dotnet/standard/linq/concepts-terminology-functional-transformation",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/converting-data-types.md",
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators/converting-data-types",
             "redirect_document_id": true
         },
         {
@@ -1977,6 +1992,10 @@
             "redirect_document_id": false
         },
         {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/data-transformations-with-linq.md",
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators"
+        },
+        {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md",
             "redirect_url": "/dotnet/standard/linq/deferred-execution-lazy-evaluation",
             "redirect_document_id": true
@@ -1987,8 +2006,23 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/element-operations.md",
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators/element-operations",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/equality-operations.md",
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators/equality-operations",
+            "redirect_document_id": true
+        },
+        {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/example-that-outputs-office-open-xml-document-parts.md",
             "redirect_url": "/dotnet/standard/linq/example-outputs-office-open-xml-document-parts",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/filtering-data.md",
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators/filtering-data",
             "redirect_document_id": true
         },
         {
@@ -2019,6 +2053,11 @@
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/functional-vs-procedural-programming-linq-to-xml.md",
             "redirect_url": "/dotnet/standard/linq/functional-vs-procedural-programming",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/generation-operations.md",
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators/generation-operations",
             "redirect_document_id": true
         },
         {
@@ -2537,6 +2576,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/partitioning-data.md",
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators/partitioning-data",
+            "redirect_document_id": true
+        },
+        {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/performance-of-chained-queries-linq-to-xml.md",
             "redirect_url": "/dotnet/standard/linq/performance-chained-queries",
             "redirect_document_id": true
@@ -2572,6 +2616,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/projection-operations.md",
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators/projection-operations",
+            "redirect_document_id": true
+        },
+        {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md",
             "redirect_url": "/dotnet/standard/linq/work-dictionaries-linq-xml",
             "redirect_document_id": false
@@ -2580,6 +2629,11 @@
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md",
             "redirect_url": "/dotnet/standard/linq/introduction-pure-functional-transformations",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/quantifier-operations.md",
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators/quantifier-operations",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md",
@@ -2727,9 +2781,23 @@
             "redirect_document_id": false
         },
         {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/set-operations.md",
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators/set-operations",
+            "redirect_document_id": true
+        },
+        {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/shape-of-wordprocessingml-documents.md",
             "redirect_url": "/dotnet/standard/linq/xml-shape-wordprocessingml-documents",
             "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/sorting-data.md",
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators/sorting-data",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/standard-query-operators-overview.md",
+            "redirect_url": "/dotnet/csharp/linq/standard-query-operators"
         },
         {
             "source_path_from_root": "/docs/csharp/programming-guide/concepts/linq/statically-compiled-queries-linq-to-xml.md",

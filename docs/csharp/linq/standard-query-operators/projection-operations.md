@@ -191,7 +191,6 @@ static void SelectVsSelectMany()
 ## See also
 
 - <xref:System.Linq>
-- [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
-- [select clause](../../../language-reference/keywords/select-clause.md)
-- [How to populate object collections from multiple sources (LINQ) (C#)](./how-to-populate-object-collections-from-multiple-sources-linq.md)
-- [How to split a file into many files by using groups (LINQ) (C#)](./how-to-split-a-file-into-many-files-by-using-groups-linq.md)
+- [select clause](../../language-reference/keywords/select-clause.md)
+- [How to populate object collections from multiple sources (LINQ) (C#)](../../programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md)
+- [How to split a file into many files by using groups (LINQ) (C#)](../../programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md)

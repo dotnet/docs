@@ -30,7 +30,6 @@ The standard query operator methods that perform aggregation operations are list
 ## See also
 
 - <xref:System.Linq>
-- [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
-- [How to compute column values in a CSV text file (LINQ) (C#)](./how-to-compute-column-values-in-a-csv-text-file-linq.md)
-- [How to query for the largest file or files in a directory tree (LINQ) (C#)](./how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq.md)
-- [How to query for the total number of bytes in a set of folders (LINQ) (C#)](./how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders-linq.md)
+- [How to compute column values in a CSV text file (LINQ) (C#)](../../programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md)
+- [How to query for the largest file or files in a directory tree (LINQ) (C#)](../../programming-guide/concepts/linq/how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq.md)
+- [How to query for the total number of bytes in a set of folders (LINQ) (C#)](../../programming-guide/concepts/linq/how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders-linq.md)

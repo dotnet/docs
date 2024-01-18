@@ -14,6 +14,18 @@ items:
         href: sdk/9.0/dotnet-workload-output.md
       - name: Terminal logger is default
         href: sdk/9.0/terminal-logger.md
+    - name: Windows Forms
+      items:
+      - name: BindingSource.SortDescriptions doesn't return null
+        href: windows-forms/9.0/sortdescriptions-return-value.md
+      - name: Changes to nullability annotations
+        href: windows-forms/9.0/nullability-changes.md
+      - name: ComponentDesigner.Initialize throws ArgumentNullException
+        href: windows-forms/9.0/componentdesigner-initialize.md
+      - name: DataGridViewRowAccessibleObject.Name starting row index
+        href: windows-forms/9.0/datagridviewrowaccessibleobject-name-row.md
+      - name: No exception if DataGridView is null
+        href: windows-forms/9.0/datagridviewheadercell-nre.md
   - name: .NET 8
     items:
     - name: Overview
@@ -1724,6 +1736,18 @@ items:
         href: wcf-client/6.0/duplex-synchronization-context.md
   - name: Windows Forms
     items:
+    - name: .NET 9
+      items:
+      - name: BindingSource.SortDescriptions doesn't return null
+        href: windows-forms/9.0/sortdescriptions-return-value.md
+      - name: Changes to nullability annotations
+        href: windows-forms/9.0/nullability-changes.md
+      - name: ComponentDesigner.Initialize throws ArgumentNullException
+        href: windows-forms/9.0/componentdesigner-initialize.md
+      - name: DataGridViewRowAccessibleObject.Name starting row index
+        href: windows-forms/9.0/datagridviewrowaccessibleobject-name-row.md
+      - name: No exception if DataGridView is null
+        href: windows-forms/9.0/datagridviewheadercell-nre.md
     - name: .NET 8
       items:
       - name: Anchor layout changes

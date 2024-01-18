@@ -39,7 +39,7 @@ There's no CLI command to add a reference to an assembly that isn't in a project
 ```xml
 <ItemGroup>
   <Reference Include="MyAssembly">
-    <HintPath>".\MyDLLFolder\MyAssembly.dll</HintPath>
+    <HintPath>.\MyDLLFolder\MyAssembly.dll</HintPath>
   </Reference>
 </ItemGroup>
 ```

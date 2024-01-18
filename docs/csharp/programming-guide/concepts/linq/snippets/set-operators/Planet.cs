@@ -1,6 +1,6 @@
 ﻿namespace SolarSystem;
 
-record Planet(
+public record class Planet(
     string Name,
     PlanetType Type,
     int OrderFromSun)

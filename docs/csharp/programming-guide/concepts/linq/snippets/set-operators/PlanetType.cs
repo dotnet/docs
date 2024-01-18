@@ -1,6 +1,6 @@
 ﻿namespace SolarSystem;
 
-enum PlanetType
+public enum PlanetType
 {
     Rock,
     Ice,

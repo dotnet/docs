@@ -105,7 +105,7 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
   The version range of the tool package to update to. This cannot be used to downgrade versions, you must `uninstall` newer versions first.
 
-  For .NET 8.0, --version Major.Minor.Patch refers to a specific Major.Minor.Patch version, including unlisted versions. To get the latest version of a certain major/minor version instead, use --version Major.Minor.*.
+  Starting in .NET 8.0, `--version Major.Minor.Patch` refers to a specific major.minor.patch version, including unlisted versions. To get the latest version of a certain major.minor version instead, use `--version Major.Minor.*`.
 
 ## Examples
 

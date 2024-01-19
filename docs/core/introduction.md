@@ -1,6 +1,9 @@
 ---
 
 
+title: test file
+description: test file
+ms.date: 01/17/2024
 ---
 ---
 # Introduction to NET2

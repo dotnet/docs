@@ -69,7 +69,7 @@ This item tells the .NET SDK to emit the following C# (or equivalent F# or Visua
 
 (The actual date string would be whatever you provided at the time of the build.)
 
-## Migrating from .NET Framework
+## Migrate from .NET Framework
 
 If you migrate your .NET Framework project to .NET 6 or later, you might encounter an error related to duplicate assembly info files. That's because .NET Framework project templates create a code file with assembly info attributes set. The file is typically located at *.\Properties\AssemblyInfo.cs* or *.\Properties\AssemblyInfo.vb*. However, SDK-style projects also *generate* this file for you based on the project settings.
 

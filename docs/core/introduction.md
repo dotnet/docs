@@ -1,6 +1,11 @@
 ---
 
 
+title: Introduction to .NET
+description: Learn about .NET. .NET is a free, open-source development platform for building many kinds of apps.
+ms.date: 1/5/2024
+ms.custom: updateeachrelease
+ms.topic: episode
 ---
 ---
 # Introduction to NET

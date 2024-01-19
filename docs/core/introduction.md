@@ -11,9 +11,9 @@ author: gewarren2
 
 To learn how to [download .NET](https://dotnet.microsoft.com/download/) and start writing your first app, see [Getting started](./get-started.md).
 
-The .NET platform has been designed to deliver productivity, performance, security, and reliability. It provides automatic memory management via a [garbage collector (GC)](../standard/automatic-memory-management.md). It is type-safe and memory-safe, due to using a GC and strict language compilers. It offers [concurrency](../csharp/asynchronous-programming/index.md) via `async`/`await` and `Task` primitives. It includes a large set of libraries that have broad functionality and have been optimized for performance on multiple operating systems and chip architectures.
+The .NET platform has been designed to deliver productivity, performance, security, and reliability. It provides automatic memory management via a [garbage collector (GC)](../standard/automatic-memory-management.md). It is type-safe and memory-safe, due to using a GC and strict language compilers. It offers [concurrency](../csharp/asynchronous-programming/index.md) via `async`/`await` and `Task` primitives. It includes a large set of libraries that have broad functionality and have been optimized for performance dfgon multiple operating systems and chip architectures.
 
-.NET has the following [design points](https://devblogs.microsoft.com/dotnet/why-dotnet/):
+.NET has the following [design pointsg](https://devblogs.microsoft.com/dotnet/why-dotnet/):
 
 * **Productivity is full-stack** with runtime, libraries, language, and tools all contributing to developer user experience.
 * **Safe code** is the primary compute model, while [unsafe code](../csharp/language-reference/unsafe-code.md) enables additional manual optimizations.

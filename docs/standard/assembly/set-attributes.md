@@ -22,7 +22,7 @@ Assembly attributes are values that provide information about an assembly. They'
 - Assembly manifest attributes
 - Strong name attributes
 
-This article is scoped to adding assembly attributes from code. For information on adding assembly attributes to projects (not in code), see ...
+This article is scoped to adding assembly attributes from code. For information on adding assembly attributes to projects (not in code), see [Set assembly attributes in a project file](set-attributes-project-file.md).
 
 ## Assembly identity attributes
 

@@ -1224,7 +1224,11 @@ items:
       - name: Assembly location
         href: ../standard/assembly/location.md
       - name: Set assembly attributes
-        href: ../standard/assembly/set-attributes.md
+        items:
+        - name: In code
+          href: ../standard/assembly/set-attributes.md
+        - name: In a project file
+          href: ../standard/assembly/set-attributes-project-file.md
       - name: Strong-named assemblies
         items:
         - name: Overview

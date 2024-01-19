@@ -124,42 +124,9 @@ The `GenerateAssemblyInfo` property controls `AssemblyInfo` attribute generation
 
 The [GeneratedAssemblyInfoFile](#generatedassemblyinfofile) setting controls the name of the generated file.
 
-When the `GenerateAssemblyInfo` value is `true`, [package-related project properties](#package-properties) are transformed into assembly attributes. The following table lists the project properties that generate the attributes. It also lists the properties that you can use to disable that generation on a per-attribute basis, for example:
+When the `GenerateAssemblyInfo` value is `true`, [package-related project properties](#package-properties) are transformed into assembly attributes.
 
-```xml
-<PropertyGroup>
-  <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
-</PropertyGroup>
-```
-
-| MSBuild property       | Assembly attribute                                             | Property to disable attribute generation        |
-| ---------------------- | -------------------------------------------------------------- | ----------------------------------------------- |
-| `Company`              | <xref:System.Reflection.AssemblyCompanyAttribute>              | `GenerateAssemblyCompanyAttribute`              |
-| `Configuration`        | <xref:System.Reflection.AssemblyConfigurationAttribute>        | `GenerateAssemblyConfigurationAttribute`        |
-| `Copyright`            | <xref:System.Reflection.AssemblyCopyrightAttribute>            | `GenerateAssemblyCopyrightAttribute`            |
-| `Description`          | <xref:System.Reflection.AssemblyDescriptionAttribute>          | `GenerateAssemblyDescriptionAttribute`          |
-| `FileVersion`          | <xref:System.Reflection.AssemblyFileVersionAttribute>          | `GenerateAssemblyFileVersionAttribute`          |
-| `InformationalVersion` | <xref:System.Reflection.AssemblyInformationalVersionAttribute> | `GenerateAssemblyInformationalVersionAttribute` |
-| `Product`              | <xref:System.Reflection.AssemblyProductAttribute>              | `GenerateAssemblyProductAttribute`              |
-| `AssemblyTitle`        | <xref:System.Reflection.AssemblyTitleAttribute>                | `GenerateAssemblyTitleAttribute`                |
-| `AssemblyVersion`      | <xref:System.Reflection.AssemblyVersionAttribute>              | `GenerateAssemblyVersionAttribute`              |
-| `NeutralLanguage`      | <xref:System.Resources.NeutralResourcesLanguageAttribute>      | `GenerateNeutralResourcesLanguageAttribute`     |
-
-Notes about these settings:
-
-- `AssemblyVersion` and `FileVersion` default to the value of `$(Version)` without the suffix. For example, if `$(Version)` is `1.2.3-beta.4`, then the value would be `1.2.3`.
-- `InformationalVersion` defaults to the value of `$(Version)`.
-- If the `$(SourceRevisionId)` property is present, it's appended to `InformationalVersion`. You can disable this behavior using `IncludeSourceRevisionInInformationalVersion`.
-- `Copyright` and `Description` properties are also used for NuGet metadata.
-- `Configuration`, which defaults to `Debug`, is shared with all MSBuild targets. You can set it via the `--configuration` option of `dotnet` commands, for example, [dotnet pack](../tools/dotnet-pack.md).
-- Some of the properties are used when creating a NuGet package. For more information, see [Package properties](#package-properties).
-
-#### Migrating from .NET Framework
-
-.NET Framework project templates create a code file with these assembly info attributes set. The file is typically located at *.\Properties\AssemblyInfo.cs* or *.\Properties\AssemblyInfo.vb*. SDK-style projects generate this file for you based on the project settings. **You can't have both.** When porting your code to .NET 6 or later, do one of the following:
-
-- Disable the generation of the temporary code file that contains the assembly info attributes by setting `GenerateAssemblyInfo` to `false` in your project file. This enables you to keep your *AssemblyInfo* file.
-- Migrate the settings in the `AssemblyInfo` file to the project file, and then delete the `AssemblyInfo` file.
+For more information about generating assembly attributes using a project file, see [Set assembly attributes in a project file](../../standard/assembly/set-attributes-project-file.md).
 
 ### GeneratedAssemblyInfoFile
 

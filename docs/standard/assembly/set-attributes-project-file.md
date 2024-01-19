@@ -37,8 +37,8 @@ Notes about these settings:
 - `InformationalVersion` defaults to the value of `$(Version)`.
 - If the `$(SourceRevisionId)` property is present, it's appended to `InformationalVersion`. You can disable this behavior using `IncludeSourceRevisionInInformationalVersion`.
 - `Copyright` and `Description` properties are also used for NuGet metadata.
-- `Configuration`, which defaults to `Debug`, is shared with all MSBuild targets. You can set it via the `--configuration` option of `dotnet` commands, for example, [dotnet pack](../tools/dotnet-pack.md).
-- Some of the properties are used when creating a NuGet package. For more information, see [Package properties](#package-properties).
+- `Configuration`, which defaults to `Debug`, is shared with all MSBuild targets. You can set it via the `--configuration` option of `dotnet` commands, for example, [dotnet pack](../../core/tools/dotnet-pack.md).
+- Some of the properties are used when creating a NuGet package. For more information, see [Package properties](../../core/project-sdk/msbuild-props.md#package-properties).
 
 ## Set arbitrary attributes
 

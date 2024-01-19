@@ -5,7 +5,7 @@ ms.date: 1/5/2024
 ms.custom: "updateeachrelease"
 author: gewarren2
 ---
-# Introduction to NET13
+# Introduction to NET134
 
 .NET is a free, cross-platform, [open-source developer platform](https://github.com/dotnet/core) for building [many kinds of applications](apps.md). It can run programs written in [multiple languages](../fundamentals/languages.md), with [C#](../csharp/index.yml) being the most popular. It relies on a [high-performance](https://devblogs.microsoft.com/dotnet/category/performance/) runtime that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/).
 

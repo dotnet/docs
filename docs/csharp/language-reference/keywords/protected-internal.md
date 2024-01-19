@@ -60,8 +60,9 @@ Struct members cannot be `protected internal` because the struct cannot be inher
 
 ## Overriding protected internal members
 
-When overriding a virtual member, the accessibility modifier of the overriden method will depend on if it defined in the same assembly as the class it is deriving from.
-If the derived class is defined in the same assembly that the base class is defined in, all overriden members will have the accessibility modifier `protected internal`. If the derived class is defined in a different assembly from where the base class is defined, overriden members will only have the `protected` accessibility modifier.
+When overriding a virtual member, the accessibility modifier of the overridden method depends on the assembly where the derived class is defined.
+
+When the derived class is defined in the same assembly as the base class, all overridden members have `protected internal` access. If the derived class is defined in a different assembly from the base class, overridden members have `protected` access.
 
 ```csharp
 // Assembly1.cs

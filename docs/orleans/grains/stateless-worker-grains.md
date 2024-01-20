@@ -11,8 +11,7 @@ By default, the Orleans runtime creates no more than one activation of a grain w
 When the <xref:Orleans.Concurrency.StatelessWorkerAttribute> is applied to a grain class, it indicates to the Orleans runtime that grains of that class should be treated as stateless worker grains. Stateless worker grains have the following properties that make their execution very different from that of normal grain classes.
 
 1. The Orleans runtime can and will create multiple activations of a stateless worker grain on different silos of the cluster.
-1. Requests made to stateless worker grains are always executed locally, that is on the same silo where the request originated, either made by a grain running on the silo or received by the silo's client gateway.
-Hence, calls to stateless worker grains from other grains or client gateways never incur a remote message.
+1. Requests made to stateless worker grains are executed locally as long as the silo is compatible, and therefore they will not incur networking or serialization costs. If the local silo is not compatible, requests are forwarded to a compatible silo.
 1. The Orleans Runtime automatically creates additional activations of a stateless worker grain if the already existing ones are busy.
 The maximum number of activations of a stateless worker grain the runtime creates per silo is limited by default by the number of CPU cores on the machine, unless specified explicitly by the optional `maxLocalWorkers` argument.
 1. Because of 2 and 3, stateless worker grain activations are not individually addressable. Two subsequent requests to a stateless worker grain may be processed by different activations of it.
@@ -30,7 +29,7 @@ public class MyStatelessWorkerGrain : Grain, IMyStatelessWorkerGrain
 ```
 
 Making a call to a stateless worker grain is the same as to any other grain.
-The only difference is that in most cases a single grain ID is used, `0` or <xref:System.Guid.Empty?displayProperty=nameWithType>.
+The only difference is that in most cases a single grain ID is used, e.g. `0` or <xref:System.Guid.Empty?displayProperty=nameWithType>.
 Multiple grain IDs can be used when having multiple stateless worker grain pools, one per ID is desirable.
 
 ```csharp

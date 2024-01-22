@@ -19,7 +19,7 @@ The `System.Net.NameResolution` metrics report DNS name resolution from <xref:Sy
 
 - [`dns.lookup.duration`](#metric-dnslookupduration)
 
-### Metric: `dns.lookup.duration`
+##### Metric: `dns.lookup.duration`
 
 | Name     | Instrument Type | Unit | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -56,7 +56,7 @@ The `System.Net.Http` metrics report HTTP request and connection information fro
 - [`http.client.request.time_in_queue`](#metric-httpclientrequesttime_in_queue)
 - [`http.client.active_requests`](#metric-httpclientactive_requests)
 
-### Metric: `http.client.open_connections`
+##### Metric: `http.client.open_connections`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -75,7 +75,7 @@ The `System.Net.Http` metrics report HTTP request and connection information fro
 
 Available starting in: .NET 8
 
-### Metric: `http.client.connection.duration`
+##### Metric: `http.client.connection.duration`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -93,7 +93,7 @@ This metric is only captured when <xref:System.Net.Http.HttpClient> is configure
 
 Available starting in: .NET 8
 
-### Metric: `http.client.request.duration`
+##### Metric: `http.client.request.duration`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -116,7 +116,7 @@ Available starting in: .NET 8
 > [!TIP]
 > [Enrichment](../../fundamentals/networking/telemetry/metrics.md#enrichment) is possible for this metric.
 
-### Metric: `http.client.request.time_in_queue`
+##### Metric: `http.client.request.time_in_queue`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
@@ -134,7 +134,7 @@ Available starting in: .NET 8
 
 Available starting in: .NET 8
 
-### Metric: `http.client.active_requests`
+##### Metric: `http.client.active_requests`
 
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |

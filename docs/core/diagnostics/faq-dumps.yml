@@ -36,4 +36,4 @@ sections:
       - question: |
            How can I solve "It was not possible to find any compatible framework version"
         answer: |
-            On Linux, the DOTNET_ROOT environment variable must point to the correct folder when set. When it points to another .net version, dotnet-dump will always show this error. When the DOTNET_ROOT environment variable is not set, another error occurs: "You must install .NET to run this application."
+            On Linux, the `DOTNET_ROOT` environment variable must point to the correct folder when set. When it points to another .NET version, `dotnet-dump` always produces this error. When the `DOTNET_ROOT` environment variable isn't set, a different error is produced ("You must install .NET to run this application").

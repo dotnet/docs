@@ -29,7 +29,7 @@ public class MyStatelessWorkerGrain : Grain, IMyStatelessWorkerGrain
 ```
 
 Making a call to a stateless worker grain is the same as to any other grain.
-The only difference is that in most cases a single grain ID is used, e.g. `0` or <xref:System.Guid.Empty?displayProperty=nameWithType>.
+The only difference is that in most cases a single grain ID is used, for example `0` or <xref:System.Guid.Empty?displayProperty=nameWithType>.
 Multiple grain IDs can be used when having multiple stateless worker grain pools, one per ID is desirable.
 
 ```csharp

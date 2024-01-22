@@ -196,7 +196,7 @@ To run a test project in CI add one step for each test executable that you wish 
 
 - **`--diagnostic`**
 
-Enables the diagnostic logging. The default log level is `Information`. The file is written in the output directory with the following name format, `log_[MMddHHssfff].diag`.
+Enables the diagnostic logging. The default log level is `Trace`. The file is written in the output directory with the following name format, `log_[MMddHHssfff].diag`.
 
 - **`--diagnostic-filelogger-synchronouswrite`**
 

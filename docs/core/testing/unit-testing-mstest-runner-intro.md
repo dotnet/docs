@@ -139,13 +139,42 @@ All tests are executed until your test with a breakpoint is reached. Step throug
 
 ### Use Test Explorer
 
-`Microsoft.Testing.Platform` tests integrate with Visual Studio's **Test Explorer**. Tests can be run and debugged from **Test Explorer**.
+To run a test, navigate to **Test Explorer**, select the test (or tests) to run. Right select it, and choose **Run**. Similarly to debug a test, select the test (or tests) in **Test Explorer**, right select and choose **Debug**.
 
-To enable running tests with MSTest runner, go to **Tools** > **Options** > **Preview Features** and select `Use testing platform server mode`.
+> [!NOTE]
+> Automatic update of tests without building the project isn't available.
+
+### [Visual Studio Code](#tab/visual-studio-code)
+
+The C# extension along with [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) allows you to debug/run tests in Visual Studio code, as well as adds integration with Visual Studio Code's Test Explorer.
+
+#### Run the app with Visual Studio Code
+
+`Microsoft.Testing.Platform` test project are built as executables, and can be run directly. This runs all the tests in the given executable, unless a filter is provided.
+
+1. Navigate to a test file that you want to run tests for.
+1. Use <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the selected test project. If you have multiple projects a popup will ask you to select the one to run.
+
+Console window pops up with the execution and summary of your test run.
+
+#### Debug the app directly in Visual Studio Code
+
+`Microsoft.Testing.Platform` test project are built as executables, and can be run directly. This runs all the tests in the given executable, unless a filter is provided.
+
+1. Navigate to a test file that you want to run tests for.
+1. Use <kbd>F5</kbd> to debug the selected test project. If you have multiple projects a popup will ask you to select the one to run.
+
+> [!TIP]
+> There are several other ways to run a dotnet project using C# DevKit, such as running from solution explorer
+> or creating corresponding launch configurations. These are specified in the [Visual Studio Code documentation](https://code.visualstudio.com/docs/csharp/debugging).
+
+As the project is run the output tab pops up with the execution and summary of your test run.
+
+### Use Test Explorer
 
 To run a test, navigate to **Test Explorer**, select the test (or tests) to run. Right select it, and choose **Run**. Similarly to debug a test, select the test (or tests) in **Test Explorer**, right select and choose **Debug**.
 
-> [!TIP]
+> [!NOTE]
 > Automatic update of tests without building the project isn't available.
 
 ### [Continuous integration (CI)](#tab/continuous-integration)

@@ -65,7 +65,7 @@ Available starting in: .NET 8.0.
 
 ## `Microsoft.AspNetCore.Routing`
 
-The `Microsoft.AspNetCore.Hosting` metrics report information about [routing HTTP requests](/aspnet/core/fundamentals/routing) to ASP.NET Core endpoints:
+The `Microsoft.AspNetCore.Routing` metrics report information about [routing HTTP requests](/aspnet/core/fundamentals/routing) to ASP.NET Core endpoints:
 
 - [`aspnetcore.routing.match_attempts`](#metric-aspnetcoreroutingmatch_attempts)
 

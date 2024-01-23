@@ -31,11 +31,13 @@ In the preceding code, the `FtCommon.GetDevices()` method returns a list of all 
 
 ## Create a GPIO device
 
-Here's an implementation of the [Blink an LED](../tutorials/blink-led.md) tutorial that uses the FTDI FT232H adapter to control an LED:
+Here's a hardware implementation of the [Blink an LED](../tutorials/blink-led.md) tutorial that uses the FTDI FT232H adapter to control an LED:
 
 :::image type="content" source="./media/usb-to-gpio-thumb.png" alt-text="A picture of a breadboard with an FT232H adapter, a resister, an LED, and connecting wires." lightbox="../media/usb-to-gpio.png":::
 
 In the preceding image, the LED circuit is very similar to the original tutorial. The only difference is that the LED is connected to pin *D7* on the FT232H adapter instead of pin **18** on the Raspberry Pi.
+
+The code for the tutorial is also very similar to the original tutorial.
 
 :::code language="csharp" source="~/iot-samples/tutorials/ft232h/ft232h.gpio/Program.cs" :::
 
@@ -48,3 +50,42 @@ In the preceding code:
 
 ## Create an I<sup>2</sup>C device
 
+For I<sup>2</sup>C communication, the *D0* and *D1* pins on the FT232H adapter are used for the SDL and SCA lines, respectively. The *I2C* selector switch on the FT232H adapter must be set to *On*. Here's a hardware implementation of the [Read environmental conditions from a sensor](../tutorials/temp-sensor.md) tutorial that uses the FTDI FT232H adapter to read temperature, humidity, and barometric pressure from a BME280 sensor:
+
+:::image type="content" source="./media/usb-to-i2c-thumb.png" alt-text="A picture of a breadboard with an FT232H adapter, a BME280 breakout board, and connecting wires." lightbox="../media/usb-to-i2c.png":::
+
+In the preceding image:
+
+- The *D0* and *D1* pins on the FT232H adapter are connected to the *SDL* and *SCA* pins on the BME280 breakout board, respectively. 
+- The *I2C* selector switch on the BME280 breakout board is set to *On*. 
+
+:::code language="csharp" source="~/iot-samples/tutorials/ft232h/ft232h.i2c/Program.cs" :::
+
+In the preceding code:
+
+- An instance `Ft232HDevice` is created by passing the first device ID returned by `FtCommon.GetDevices()` to the constructor.
+- An instance of `I2cDevice` is created by calling `CreateI2cDevice()` on the `Ft232HDevice` instance. This `I2cDevice` instance performs the same functions as the `I2cDevice` instance in the original tutorial.
+- The rest of the code is identical to the original tutorial.
+
+## Create an SPI device
+
+For SPI communication, the *D0*, *D1*, *D2*, and *D3* pins on the FT232H adapter are used for the SCK, MOSI, MISO, and CS lines, respectively. The *I2C* selector switch on the FT232H adapter must be set to *Off*.
+
+:::image type="content" source="./media/usb-spi-pins-thumb.png" alt-text="A picture of the back of the FT232H breakout depicting the SPI pins." lightbox="../media/usb-spi-pins.png":::
+
+Here's a hardware implementation of the [Read values from an analog-to-digital converter](../tutorials/adc.md) tutorial that uses the FTDI FT232H adapter to read values from an MCP3008 ADC:
+
+:::image type="content" source="./media/usb-to-spi-thumb.png" alt-text="A picture of a breadboard with an FT232H adapter, an MCP3008 breakout board, and connecting wires." lightbox="../media/usb-to-spi.png":::
+
+In the preceding image:
+
+- The *D0*, *D1*, *D2*, and *D3* pins on the FT232H adapter are connected to the *CLK*, *DIN*,  *DOUT*,and *CS/SHDN* pins on the MCP3008, respectively.
+- The *I2C* selector switch on the MCP3008 breakout board is set to *Off*.
+
+:::code language="csharp" source="~/iot-samples/tutorials/ft232h/ft232h.spi/Program.cs" :::
+
+In the preceding code:
+
+- An instance `Ft232HDevice` is created by passing the first device ID returned by `FtCommon.GetDevices()` to the constructor.
+- An instance of `SpiDevice` is created by calling `CreateSpiDevice()` on the `Ft232HDevice` instance. This `SpiDevice` instance performs the same functions as the `SpiDevice` instance in the original tutorial.
+- The rest of the code is identical to the original tutorial.

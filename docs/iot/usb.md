@@ -37,7 +37,7 @@ Here's a hardware implementation of the [Blink an LED](tutorials/blink-led.md) t
 
 In the preceding image, the LED circuit is very similar to the original tutorial. The only difference is that the LED is connected to pin *D7* on the FT232H adapter instead of pin **18** on the Raspberry Pi.
 
-The code for the tutorial is also very similar to the original tutorial.
+The code for the tutorial is also similar to the original tutorial:
 
 :::code language="csharp" source="~/iot-samples/tutorials/ft232h/ft232h.gpio/Program.cs" :::
 

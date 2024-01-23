@@ -46,6 +46,16 @@ The MSTest runner uses a JSON-RPC based protocol to communicate between Visual S
 
 VSTest also uses a JSON based communication protocol, but it's not JSON-RPC based.
 
+### Disabling the new protocol
+
+To disable the use of the new protocol in Test Explorer, you can edit the csproj and remove the `TestingPlatformServer` capability.
+
+```xml
+<ItemGroup>
+    <ProjectCapability Remove="TestingPlatformServer" />
+</ItemGroup>
+```
+
 ## Executables
 
 VSTest ships multiple executables, notably `vstest.console.exe`, `testhost.exe`, and `datacollector.exe`. However, MSTest is embedded directly into your test project and doesn't ship any other executables. The executable your test project compiles to is used to host all the testing tools and carry out all the tasks needed to run tests.

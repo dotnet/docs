@@ -91,3 +91,7 @@ In the preceding code:
 - An instance `Ft232HDevice` is created by passing the first device ID returned by `FtCommon.GetDevices()` to the constructor.
 - An instance of `SpiDevice` is created by calling `CreateSpiDevice()` on the `Ft232HDevice` instance. This `SpiDevice` instance performs the same functions as the `SpiDevice` instance in the original tutorial.
 - The rest of the code is identical to the original tutorial.
+
+## Get the code
+
+The code for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/main/tutorials/ft232h).

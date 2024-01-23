@@ -9,7 +9,7 @@ ms.topic: how-to
 
 # Use .NET IoT Libraries on Windows, Linux, and macOS computers
 
-The .NET IoT libraries are commonly used to develop code for Raspberry Pi and other IoT devices. However, you can also use them to develop code for Windows, Linux, and macOS PCs using a USB-to-serial adapter such as the [FTDI FT232H](https://www.adafruit.com/product/2264). This article shows you how to set up your PC to use the .NET IoT libraries.
+The .NET IoT libraries are commonly used to develop code for Raspberry Pi and other IoT devices. However, you can also use them to develop code for Windows, Linux, and macOS PCs using a USB-to-serial adapter such as the [FTDI FT232H](https://www.adafruit.com/product/2264). This article shows you how to use the .NET IoT libraries to communicate with devices connected to the FT232H adapter.
 
 > [!TIP]
 > This article uses an FTDI FT232H adapter, but you can use any USB-to-serial adapter that is supported by the .NET IoT libraries, such as the FT2232H, FT4232H, and FT4222. Check the [list of supported device bindings](https://github.com/dotnet/iot/blob/main/src/devices/README.md#usb-devices) for more information.

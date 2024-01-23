@@ -1,0 +1,50 @@
+---
+title: Use .NET IoT Libraries on Windows, Linux, and macOS PCs
+description: Learn how to develop GPIO, I2C, and SPI code with .NET on PCs.
+author: camsoper
+ms.author: casoper
+ms.date: 01/19/2024
+ms.topic: how-to
+---
+
+# Use .NET IoT Libraries on Windows, Linux, and macOS PCs
+
+The .NET IoT libraries are commonly used to develop code for Raspberry Pi and other IoT devices. However, you can also use them to develop code for Windows, Linux, and macOS PCs using a USB-to-serial adapter such as the [FTDI FT232H](https://www.adafruit.com/product/2264). This article shows you how to set up your PC to use the .NET IoT libraries.
+
+> [TIP!]
+> This article uses an FTDI FT232H adapter, but you can use any USB-to-serial adapter that is supported by the .NET IoT libraries, such as the FT2232H, FT4232H, and FT4222. Check the [list of supported device bindings](https://github.com/dotnet/iot/blob/main/src/devices/README.md#usb-devices) for more information.
+
+## Prerequisites
+
+Ensure you have installed the D2XX drivers for your USB-to-serial adapter, which are found on the [FTDI website](https://ftdichip.com/drivers/d2xx-drivers/). 
+
+> [NOTE!]
+> Windows devices may automatically install the drivers when you plug in the adapter. Check Device Manager for a device named *USB Serial Converter* listed under *Universal Serial Bus controllers*. The device's driver provider should be *FTDI*.
+
+## List available devices
+
+Before you can create a GPIO, I<sup>2</sup>C, or SPI device, you must know the device ID of the USB-to-serial adapter. The following code lists the connected FTDI devices:
+
+:::code language="csharp" source="~/iot-samples/tutorials/ft232h/ft232h.list/Program.cs" :::
+
+In the preceding code, the `FtCommon.GetDevices()` method returns a list of all connected FTDI devices.
+
+## Create a GPIO device
+
+Here's an implementation of the [Blink an LED](../tutorials/blink-led.md) tutorial that uses the FTDI FT232H adapter to control an LED:
+
+:::image type="content" source="./media/usb-to-gpio-thumb.png" alt-text="A picture of a breadboard with an FT232H adapter, a resister, an LED, and connecting wires." lightbox="../media/usb-to-gpio.png":::
+
+In the preceding image, the LED circuit is very similar to the original tutorial. The only difference is that the LED is connected to pin *D7* on the FT232H adapter instead of pin **18** on the Raspberry Pi.
+
+:::code language="csharp" source="~/iot-samples/tutorials/ft232h/ft232h.gpio/Program.cs" :::
+
+In the preceding code:
+
+- An instance `Ft232HDevice` is created by passing the first device ID returned by `FtCommon.GetDevices()` to the constructor.
+- An instance of `GpioController` named *controller* is created by calling `CreateGpioController()` on the `Ft232HDevice` instance. This `GpioController` instance performs the same functions as the `GpioController` instance in the original tutorial.
+- The integer value of the pin is retrieved by calling `GetPinNumberFromString()` on the `Ft232HDevice` instance and passing in the alphanumeric pin name *D7*.
+- The rest of the code is identical to the original tutorial.
+
+## Create an I<sup>2</sup>C device
+

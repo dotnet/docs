@@ -38,6 +38,10 @@ The MSTest runner is based on [Microsoft.Testing.Platform](https://www.nuget.org
 
 ## Communication protocol
 
+> [!NOTE]
+> Test Explorer supports the MSTest Runner protocol from version 17.10. If you run/debug your tests using earlier versions of Visual Studio,
+> Test Explorer will use `vstest.console.exe` and the old protocol to run these tests.
+
 The MSTest runner uses a JSON-RPC based protocol to communicate between Visual Studio and the test runner process. The protocol is documented in the [MSTest github repository](https://github.com/microsoft/testfx/tree/main/docs/mstest-runner-protocol).
 
 VSTest also uses a JSON based communication protocol, but it's not JSON-RPC based.

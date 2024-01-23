@@ -16,7 +16,7 @@ The .NET IoT libraries are commonly used to develop code for Raspberry Pi and ot
 
 ## Prerequisites
 
-Ensure you have installed the D2XX drivers for your USB-to-serial adapter, which are found on the [FTDI website](https://ftdichip.com/drivers/d2xx-drivers/). 
+Ensure you have installed the D2XX drivers for your USB-to-serial adapter, which are found on the [FTDI website](https://ftdichip.com/drivers/d2xx-drivers/).
 
 > [!NOTE]
 > Windows devices may automatically install the drivers when you plug in the adapter. Check Device Manager for a device named *USB Serial Converter* listed under *Universal Serial Bus controllers*. The device's driver provider should be *FTDI*.
@@ -50,7 +50,7 @@ In the preceding code:
 
 ## Use an I<sup>2</sup>C device
 
-For I<sup>2</sup>C communication, the *D0* and *D1* pins on the FT232H adapter are used for the SDL and SCA lines, respectively. The *I2C* selector switch on the FT232H adapter must be set to *On*. 
+For I<sup>2</sup>C communication, the *D0* and *D1* pins on the FT232H adapter are used for the SDL and SCA lines, respectively. The *I2C* selector switch on the FT232H adapter must be set to *On*.
 
 Here's a hardware implementation of the [Read environmental conditions from a sensor](tutorials/temp-sensor.md) tutorial that uses the FTDI FT232H adapter to read temperature, humidity, and barometric pressure from a BME280 sensor:
 
@@ -58,8 +58,8 @@ Here's a hardware implementation of the [Read environmental conditions from a se
 
 In the preceding image:
 
-- The *D0* and *D1* pins on the FT232H adapter are connected to the *SDL* and *SCA* pins on the BME280 breakout board, respectively. 
-- The *I2C* selector switch on the BME280 breakout board is set to *On*. 
+- The *D0* and *D1* pins on the FT232H adapter are connected to the *SDL* and *SCA* pins on the BME280 breakout board, respectively.
+- The *I2C* selector switch on the BME280 breakout board is set to *On*.
 
 :::code language="csharp" source="~/iot-samples/tutorials/ft232h/ft232h.i2c/Program.cs" :::
 

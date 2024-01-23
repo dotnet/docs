@@ -1,5 +1,5 @@
 ---
-title: Use .NET IoT Libraries on Windows, Linux, and macOS PCs
+title: Use .NET IoT Libraries on Windows, Linux, and macOS computers
 description: Learn how to develop GPIO, I2C, and SPI code with .NET on PCs.
 author: camsoper
 ms.author: casoper
@@ -7,18 +7,18 @@ ms.date: 01/19/2024
 ms.topic: how-to
 ---
 
-# Use .NET IoT Libraries on Windows, Linux, and macOS PCs
+# Use .NET IoT Libraries on Windows, Linux, and macOS computers
 
 The .NET IoT libraries are commonly used to develop code for Raspberry Pi and other IoT devices. However, you can also use them to develop code for Windows, Linux, and macOS PCs using a USB-to-serial adapter such as the [FTDI FT232H](https://www.adafruit.com/product/2264). This article shows you how to set up your PC to use the .NET IoT libraries.
 
-> [TIP!]
+> [!TIP]
 > This article uses an FTDI FT232H adapter, but you can use any USB-to-serial adapter that is supported by the .NET IoT libraries, such as the FT2232H, FT4232H, and FT4222. Check the [list of supported device bindings](https://github.com/dotnet/iot/blob/main/src/devices/README.md#usb-devices) for more information.
 
 ## Prerequisites
 
 Ensure you have installed the D2XX drivers for your USB-to-serial adapter, which are found on the [FTDI website](https://ftdichip.com/drivers/d2xx-drivers/). 
 
-> [NOTE!]
+> [!NOTE]
 > Windows devices may automatically install the drivers when you plug in the adapter. Check Device Manager for a device named *USB Serial Converter* listed under *Universal Serial Bus controllers*. The device's driver provider should be *FTDI*.
 
 ## List available devices
@@ -29,7 +29,7 @@ Before you can create a GPIO, I<sup>2</sup>C, or SPI device, you must know the d
 
 In the preceding code, the `FtCommon.GetDevices()` method returns a list of all connected FTDI devices.
 
-## Create a GPIO device
+## Use a GPIO device
 
 Here's a hardware implementation of the [Blink an LED](tutorials/blink-led.md) tutorial that uses the FTDI FT232H adapter to control an LED:
 
@@ -48,9 +48,11 @@ In the preceding code:
 - The integer value of the pin is retrieved by calling `GetPinNumberFromString()` on the `Ft232HDevice` instance and passing in the alphanumeric pin name *D7*.
 - The rest of the code is identical to the original tutorial.
 
-## Create an I<sup>2</sup>C device
+## Use an I<sup>2</sup>C device
 
-For I<sup>2</sup>C communication, the *D0* and *D1* pins on the FT232H adapter are used for the SDL and SCA lines, respectively. The *I2C* selector switch on the FT232H adapter must be set to *On*. Here's a hardware implementation of the [Read environmental conditions from a sensor](tutorials/temp-sensor.md) tutorial that uses the FTDI FT232H adapter to read temperature, humidity, and barometric pressure from a BME280 sensor:
+For I<sup>2</sup>C communication, the *D0* and *D1* pins on the FT232H adapter are used for the SDL and SCA lines, respectively. The *I2C* selector switch on the FT232H adapter must be set to *On*. 
+
+Here's a hardware implementation of the [Read environmental conditions from a sensor](tutorials/temp-sensor.md) tutorial that uses the FTDI FT232H adapter to read temperature, humidity, and barometric pressure from a BME280 sensor:
 
 :::image type="content" source="./media/usb-to-i2c-thumb.png" alt-text="A picture of a breadboard with an FT232H adapter, a BME280 breakout board, and connecting wires." lightbox="./media/usb-to-i2c.png":::
 
@@ -67,7 +69,7 @@ In the preceding code:
 - An instance of `I2cDevice` is created by calling `CreateI2cDevice()` on the `Ft232HDevice` instance. This `I2cDevice` instance performs the same functions as the `I2cDevice` instance in the original tutorial.
 - The rest of the code is identical to the original tutorial.
 
-## Create an SPI device
+## Use an SPI device
 
 For SPI communication, the *D0*, *D1*, *D2*, and *D3* pins on the FT232H adapter are used for the SCK, MOSI, MISO, and CS lines, respectively. The *I2C* selector switch on the FT232H adapter must be set to *Off*.
 
@@ -75,7 +77,7 @@ For SPI communication, the *D0*, *D1*, *D2*, and *D3* pins on the FT232H adapter
 
 Here's a hardware implementation of the [Read values from an analog-to-digital converter](tutorials/adc.md) tutorial that uses the FTDI FT232H adapter to read values from an MCP3008 ADC:
 
-:::image type="content" source="./media/usb-to-spi-thumb.png" alt-text="A picture of a breadboard with an FT232H adapter, an MCP3008 breakout board, and connecting wires." lightbox="./media/usb-to-spi.png":::
+:::image type="content" source="./media/usb-to-spi-thumb.png" alt-text="A picture of a breadboard with an FT232H adapter, an MCP3008 chip, and connecting wires." lightbox="./media/usb-to-spi.png":::
 
 In the preceding image:
 

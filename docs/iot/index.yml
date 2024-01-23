@@ -38,6 +38,10 @@ landingContent:
         links:
           - text: Debug .NET apps on Single Board Computers
             url: debugging.md
+      - linkListType: how-to-guide
+        links:
+          - text: Use the IoT libraries on Windows, Linux, and macOS computers
+            url: usb.md
       - linkListType: reference
         links:
           - text: Available device bindings (GitHub)

@@ -60,7 +60,7 @@ Some commonly used device bindings include:
 
 `System.Device.Gpio` is compatible with most single-board platforms. Recommended platforms are Raspberry Pi (2 and greater) and Hummingboard. Other platforms known to be compatible are BeagleBoard and ODROID.
 
-PC platforms are supported via the use of a USB to SPI/I<sup>2</sup>C bridge.
+Windows, macOS, and Linux computers and PCs are supported via [the use of a USB to SPI/I<sup>2</sup>C bridge](usb.md).
 
 > [!IMPORTANT]
 > .NET is not supported on devices prior to ARMv7, including Raspberry Pi Zero and Raspberry Pi devices prior to Raspberry Pi 2.

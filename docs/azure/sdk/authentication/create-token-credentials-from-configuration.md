@@ -16,11 +16,11 @@ The [`Microsoft.Extensions.Azure`](https://www.nuget.org/packages/Microsoft.Exte
 
 The following credential types are supported via configuration:
 
-* [ClientCertificateCredential](#create-a-ClientCertificateCredential-type)
-* [ClientSecretCredential](#create-a-ClientSecretCredential-type)
-* [DefaultAzureCredential](#create-a-DefaultAzureCredential-type)
-* [ManagedIdentityCredential](#create-a-ManagedIdentityCredential-type)
-* [WorkloadIdentityCredential](#create-a-WorkloadIdentityCredential-type)
+* [ClientCertificateCredential](#create-a-clientcertificatecredential-type)
+* [ClientSecretCredential](#create-a-clientsecretcredential-type)
+* [DefaultAzureCredential](#create-a-defaultazurecredential-type)
+* [ManagedIdentityCredential](#create-a-managedidentitycredential-type)
+* [WorkloadIdentityCredential](#create-a-workloadidentitycredential-type)
 
 ## Configuring Azure credentials
 

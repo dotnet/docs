@@ -45,11 +45,11 @@ The <xref:System.Type> object associated with a particular type can be obtained 
 
 - The instance <xref:System.Object.GetType%2A?displayProperty=nameWithType> method returns a <xref:System.Type> object that represents the type of an instance. Because all managed types derive from <xref:System.Object>, the <xref:System.Object.GetType%2A> method can be called on an instance of any type.
 
-     The following example calls the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method to determine the runtime type of each object in an object array.
+  The following example calls the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method to determine the runtime type of each object in an object array.
 
-     :::code language="csharp" source="./snippets/System/Type/Overview/csharp/GetType1.cs" interactive="try-dotnet-method" id="Snippet2":::
-     :::code language="fsharp" source="./snippets/System/Type/Overview/fsharp/GetType1.fs" id="Snippet2":::
-     :::code language="vb" source="./snippets/System/Type/Overview/vb/GetType1.vb" id="Snippet2":::
+  :::code language="csharp" source="./snippets/System/Type/Overview/csharp/GetType1.cs" interactive="try-dotnet-method" id="Snippet2":::
+  :::code language="fsharp" source="./snippets/System/Type/Overview/fsharp/GetType1.fs" id="Snippet2":::
+  :::code language="vb" source="./snippets/System/Type/Overview/vb/GetType1.vb" id="Snippet2":::
 
 - The static <xref:System.Type.GetType%2A?displayProperty=nameWithType> methods return a <xref:System.Type> object that represents a type specified by its fully qualified name.
 

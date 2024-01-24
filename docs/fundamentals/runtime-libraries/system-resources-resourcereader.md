@@ -96,9 +96,9 @@ The following example illustrates how to use this approach to retrieve resources
 
 1. Compile and execute the following source code, which creates a .resources file named ContactResources.resources.
 
-     :::code language="csharp" source="./snippets/System.Resources/ResourceReader/Overview/csharp/createresourceex1.cs" id="Snippet5":::
+   :::code language="csharp" source="./snippets/System.Resources/ResourceReader/Overview/csharp/createresourceex1.cs" id="Snippet5":::
 
-     The source code file is named CreateResources.cs. You can compile it in C# by using the following command:
+   The source code file is named CreateResources.cs. You can compile it in C# by using the following command:
 
     ```
     csc CreateResources.cs /r:library.dll
@@ -106,6 +106,6 @@ The following example illustrates how to use this approach to retrieve resources
 
 2. Compile and run the following code to enumerate the resources in the ContactResources.resources file.
 
-     :::code language="csharp" source="./snippets/System.Resources/ResourceReader/Overview/csharp/readresourceex1.cs" id="Snippet6":::
+   :::code language="csharp" source="./snippets/System.Resources/ResourceReader/Overview/csharp/readresourceex1.cs" id="Snippet6":::
 
-     After modifying the source code (for example, by deliberately throwing a <xref:System.FormatException> at the end of the `try` block), you can run the example to see how calls to <xref:System.Resources.ResourceReader.GetResourceData%2A> enable you to retrieve or recreate some resource information.
+   After modifying the source code (for example, by deliberately throwing a <xref:System.FormatException> at the end of the `try` block), you can run the example to see how calls to <xref:System.Resources.ResourceReader.GetResourceData%2A> enable you to retrieve or recreate some resource information.

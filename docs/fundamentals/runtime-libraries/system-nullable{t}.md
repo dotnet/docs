@@ -27,6 +27,6 @@ When a nullable type is boxed, the common language runtime automatically boxes t
 
 If the `HasValue` property of a nullable type is `false`, the result of a boxing operation is `null`. Consequently, if a boxed nullable type is passed to a method that expects an object argument, that method must be prepared to handle the case where the argument is `null`. When `null` is unboxed into a nullable type, the common language runtime creates a new <xref:System.Nullable%601> structure and initializes its `HasValue` property to `false`.
 
-## .NET Framework 4.5.1 and Windows runtime components
+## Windows runtime components
 
-Starting with .NET Framework 4.5.1, you can include a <xref:System.Nullable%601> type as a member of a structure exported in a WinMD library. Previously, this was not supported.
+You can include a <xref:System.Nullable%601> type as a member of a structure exported in a WinMD library.

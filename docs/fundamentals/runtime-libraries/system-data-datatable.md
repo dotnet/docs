@@ -25,7 +25,7 @@ There are many <xref:System.Data.DataTable> events that can be used to determine
 When an instance of <xref:System.Data.DataTable> is created, some of the read/write properties are set to initial values. For a list of these values, see the <xref:System.Data.DataTable.%23ctor%2A> constructor.
 
 > [!NOTE]
-> The <xref:System.Data.DataSet> and <xref:System.Data.DataTable> objects inherit from <xref:System.ComponentModel.MarshalByValueComponent> and support the <xref:System.Runtime.Serialization.ISerializable> interface for .NET Framework remoting. These are the only ADO.NET objects that you can use for .NET Framework remoting.
+> The <xref:System.Data.DataSet> and <xref:System.Data.DataTable> objects inherit from <xref:System.ComponentModel.MarshalByValueComponent> and support the <xref:System.Runtime.Serialization.ISerializable> interface for .NET remoting. These are the only ADO.NET objects that you can use for .NET remoting.
 
 ## Security considerations
 

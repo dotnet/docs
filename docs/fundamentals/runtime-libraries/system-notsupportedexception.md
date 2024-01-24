@@ -49,25 +49,25 @@ You're attempting to invoke a member whose functionality is unavailable because 
 
 - You know the state of the object in advance (usually because your code has instantiated it), but the object is mis-configured. The following example illustrates this issue. It creates a read-only <xref:System.IO.FileStream> object and then attempts to write to it.
 
-     :::code language="csharp" source="./snippets/System/NotSupportedException/Overview/csharp/BadState1.cs" id="Snippet1":::
-     :::code language="fsharp" source="./snippets/System/NotSupportedException/Overview/fsharp/BadState1.fs" id="Snippet1":::
-     :::code language="vb" source="./snippets/System/NotSupportedException/Overview/vb/BadState1.vb" id="Snippet1":::
+  :::code language="csharp" source="./snippets/System/NotSupportedException/Overview/csharp/BadState1.cs" id="Snippet1":::
+  :::code language="fsharp" source="./snippets/System/NotSupportedException/Overview/fsharp/BadState1.fs" id="Snippet1":::
+  :::code language="vb" source="./snippets/System/NotSupportedException/Overview/vb/BadState1.vb" id="Snippet1":::
 
-     You can eliminate the exception by ensuring that the instantiated object supports the functionality you intend. The following example addresses the problem of the read-only <xref:System.IO.FileStream> object by providing the correct arguments to the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%29?displayProperty=nameWithType> constructor.
+  Ycan eliminate the exception by ensuring that the instantiated object supports the functionality you intend. The following example addresses the problem of the read-only <xref:System.IO.FileStream> object by providing the correct arguments to the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%29?displayProperty=nameWithType> constructor.
 
 - You don't know the state of the object in advance, and the object doesn't support a particular operation. In most cases, the object should include a property or method that indicates whether it supports a particular set of operations. You can eliminate the exception by checking the value of the object and invoking the member only if appropriate.
 
-     The following example defines a `DetectEncoding` method that throws a <xref:System.NotSupportedException> exception when it attempts to read from the beginning of a stream that does not support read access.
+  The following example defines a `DetectEncoding` method that throws a <xref:System.NotSupportedException> exception when it attempts to read from the beginning of a stream that does not support read access.
 
-     :::code language="csharp" source="./snippets/System/NotSupportedException/Overview/csharp/TestProp1.cs" id="Snippet3":::
-     :::code language="fsharp" source="./snippets/System/NotSupportedException/Overview/fsharp/TestProp1.fs" id="Snippet3":::
-     :::code language="vb" source="./snippets/System/NotSupportedException/Overview/vb/TestProp1.vb" id="Snippet3":::
+  :::code language="csharp" source="./snippets/System/NotSupportedException/Overview/csharp/TestProp1.cs" id="Snippet3":::
+  :::code language="fsharp" source="./snippets/System/NotSupportedException/Overview/fsharp/TestProp1.fs" id="Snippet3":::
+  :::code language="vb" source="./snippets/System/NotSupportedException/Overview/vb/TestProp1.vb" id="Snippet3":::
 
-     You can eliminate the exception by examining the value of the <xref:System.IO.FileStream.CanRead?displayProperty=nameWithType> property and exiting the method if the stream is read-only.
+  You can eliminate the exception by examining the value of the <xref:System.IO.FileStream.CanRead?displayProperty=nameWithType> property and exiting the method if the stream is read-only.
 
-     :::code language="csharp" source="./snippets/System/NotSupportedException/Overview/csharp/TestProp2.cs" id="Snippet4":::
-     :::code language="fsharp" source="./snippets/System/NotSupportedException/Overview/fsharp/TestProp2.fs" id="Snippet4":::
-     :::code language="vb" source="./snippets/System/NotSupportedException/Overview/vb/TestProp2.vb" id="Snippet4":::
+  :::code language="csharp" source="./snippets/System/NotSupportedException/Overview/csharp/TestProp2.cs" id="Snippet4":::
+  :::code language="fsharp" source="./snippets/System/NotSupportedException/Overview/fsharp/TestProp2.fs" id="Snippet4":::
+  :::code language="vb" source="./snippets/System/NotSupportedException/Overview/vb/TestProp2.vb" id="Snippet4":::
 
 ## Related exception types
 

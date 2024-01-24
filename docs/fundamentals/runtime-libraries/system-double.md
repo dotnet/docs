@@ -200,7 +200,7 @@ The <xref:System.Double> structure and related types provide methods to perform 
 
 - **Parsing strings**. You can convert the string representation of a floating-point value to a <xref:System.Double> value by calling either the <xref:System.Double.Parse%2A> or <xref:System.Double.TryParse%2A> method. If the parse operation fails, the <xref:System.Double.Parse%2A> method throws an exception, whereas the <xref:System.Double.TryParse%2A> method returns `false`.
 
-- **Type conversion**. The <xref:System.Double> structure provides an explicit interface implementation for the <xref:System.IConvertible> interface, which supports conversion between any two standard .NET Framework data types. Language compilers also support the implicit conversion of values of all other standard numeric types to <xref:System.Double> values. Conversion of a value of any standard numeric type to a <xref:System.Double> is a widening conversion and does not require the user of a casting operator or conversion method,
+- **Type conversion**. The <xref:System.Double> structure provides an explicit interface implementation for the <xref:System.IConvertible> interface, which supports conversion between any two standard .NET data types. Language compilers also support the implicit conversion of values of all other standard numeric types to <xref:System.Double> values. Conversion of a value of any standard numeric type to a <xref:System.Double> is a widening conversion and does not require the user of a casting operator or conversion method,
 
   However, conversion of <xref:System.Int64> and <xref:System.Single> values can involve a loss of precision. The following table lists the differences in precision for each of these types:
 

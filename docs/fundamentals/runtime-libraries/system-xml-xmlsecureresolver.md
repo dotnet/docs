@@ -30,13 +30,13 @@ When you construct an <xref:System.Xml.XmlSecureResolver> object, you provide a 
 
 2. Create an <xref:System.Xml.XmlReaderSettings> object that uses the <xref:System.Xml.XmlSecureResolver> object.
 
-     :::code language="csharp" source="./snippets/System.Xml/XmlSecureResolver/Overview/csharp/XmlSecureResolver_ex.cs" id="Snippet5a":::
-     :::code language="vb" source="./snippets/System.Xml/XmlSecureResolver/Overview/vb/XmlSecureResolver_ex.vb" id="Snippet5a":::
+   :::code language="csharp" source="./snippets/System.Xml/XmlSecureResolver/Overview/csharp/XmlSecureResolver_ex.cs" id="Snippet5a":::
+   :::code language="vb" source="./snippets/System.Xml/XmlSecureResolver/Overview/vb/XmlSecureResolver_ex.vb" id="Snippet5a":::
 
 3. Pass the <xref:System.Xml.XmlReaderSettings> object to the <xref:System.Xml.XmlReader.Create%2A> method when you're creating the <xref:System.Xml.XmlReader> object.
 
-     :::code language="csharp" source="./snippets/System.Xml/XmlSecureResolver/Overview/csharp/XmlSecureResolver_ex.cs" id="Snippet5b":::
-     :::code language="vb" source="./snippets/System.Xml/XmlSecureResolver/Overview/vb/XmlSecureResolver_ex.vb" id="Snippet5b":::
+   :::code language="csharp" source="./snippets/System.Xml/XmlSecureResolver/Overview/csharp/XmlSecureResolver_ex.cs" id="Snippet5b":::
+   :::code language="vb" source="./snippets/System.Xml/XmlSecureResolver/Overview/vb/XmlSecureResolver_ex.vb" id="Snippet5b":::
 
 ## To restrict access by using a URL
 
@@ -49,25 +49,25 @@ Use the <xref:System.Xml.XmlSecureResolver.%23ctor%28System.Xml.XmlResolver%2CSy
 
 1. Create a <xref:System.Net.WebPermission> object.
 
-     :::code language="csharp" source="./snippets/System.Xml/XmlSecureResolver/Overview/csharp/XmlSecureResolver_ex.cs" id="Snippet4a":::
-     :::code language="vb" source="./snippets/System.Xml/XmlSecureResolver/Overview/vb/XmlSecureResolver_ex.vb" id="Snippet4a":::
+   :::code language="csharp" source="./snippets/System.Xml/XmlSecureResolver/Overview/csharp/XmlSecureResolver_ex.cs" id="Snippet4a":::
+   :::code language="vb" source="./snippets/System.Xml/XmlSecureResolver/Overview/vb/XmlSecureResolver_ex.vb" id="Snippet4a":::
 
 2. Specify the URLs that you want to allow access to.
 
-     :::code language="csharp" source="./snippets/System.Xml/XmlSecureResolver/Overview/csharp/XmlSecureResolver_ex.cs" id="Snippet4b":::
-     :::code language="vb" source="./snippets/System.Xml/XmlSecureResolver/Overview/vb/XmlSecureResolver_ex.vb" id="Snippet4b":::
+   :::code language="csharp" source="./snippets/System.Xml/XmlSecureResolver/Overview/csharp/XmlSecureResolver_ex.cs" id="Snippet4b":::
+   :::code language="vb" source="./snippets/System.Xml/XmlSecureResolver/Overview/vb/XmlSecureResolver_ex.vb" id="Snippet4b":::
 
 3. Add the web permissions to the <xref:System.Security.PermissionSet> object.
 
-     :::code language="csharp" source="./snippets/System.Xml/XmlSecureResolver/Overview/csharp/XmlSecureResolver_ex.cs" id="Snippet4c":::
-     :::code language="vb" source="./snippets/System.Xml/XmlSecureResolver/Overview/vb/XmlSecureResolver_ex.vb" id="Snippet4c":::
+   :::code language="csharp" source="./snippets/System.Xml/XmlSecureResolver/Overview/csharp/XmlSecureResolver_ex.cs" id="Snippet4c":::
+   :::code language="vb" source="./snippets/System.Xml/XmlSecureResolver/Overview/vb/XmlSecureResolver_ex.vb" id="Snippet4c":::
 
 4. Use the <xref:System.Xml.XmlSecureResolver.%23ctor%28System.Xml.XmlResolver%2CSystem.Security.PermissionSet%29> constructor to create an <xref:System.Xml.XmlSecureResolver> object by using the permission set.
 
-     :::code language="csharp" source="./snippets/System.Xml/XmlSecureResolver/Overview/csharp/XmlSecureResolver_ex.cs" id="Snippet4d":::
-     :::code language="vb" source="./snippets/System.Xml/XmlSecureResolver/Overview/vb/XmlSecureResolver_ex.vb" id="Snippet4d":::
+   :::code language="csharp" source="./snippets/System.Xml/XmlSecureResolver/Overview/csharp/XmlSecureResolver_ex.cs" id="Snippet4d":::
+   :::code language="vb" source="./snippets/System.Xml/XmlSecureResolver/Overview/vb/XmlSecureResolver_ex.vb" id="Snippet4d":::
 
-     See the <xref:System.Xml.XmlSecureResolver.%23ctor%2A> reference page for another example.
+   See the <xref:System.Xml.XmlSecureResolver.%23ctor%2A> reference page for another example.
 
 ## To restrict access by using evidence
 
@@ -77,21 +77,21 @@ Here are some common scenarios and the type of evidence to provide for each:
 
 - If you are working in a fully trusted environment, use your assembly to create the evidence:
 
-     :::code language="csharp" source="./snippets/System.Xml/XmlSecureResolver/Overview/csharp/XmlSecureResolver_ex.cs" id="Snippet1":::
-     :::code language="vb" source="./snippets/System.Xml/XmlSecureResolver/Overview/vb/XmlSecureResolver_ex.vb" id="Snippet1":::
+  :::code language="csharp" source="./snippets/System.Xml/XmlSecureResolver/Overview/csharp/XmlSecureResolver_ex.cs" id="Snippet1":::
+  :::code language="vb" source="./snippets/System.Xml/XmlSecureResolver/Overview/vb/XmlSecureResolver_ex.vb" id="Snippet1":::
 
 - If you are working in a semi-trusted environment, you have code or data coming from an outside source, and you know the origin of the outside source and have a verifiable URI, use the URI to create the evidence:
 
-     :::code language="csharp" source="./snippets/System.Xml/XmlSecureResolver/Overview/csharp/XmlSecureResolver_ex.cs" id="Snippet2":::
-     :::code language="vb" source="./snippets/System.Xml/XmlSecureResolver/Overview/vb/XmlSecureResolver_ex.vb" id="Snippet2":::
+  :::code language="csharp" source="./snippets/System.Xml/XmlSecureResolver/Overview/csharp/XmlSecureResolver_ex.cs" id="Snippet2":::
+  :::code language="vb" source="./snippets/System.Xml/XmlSecureResolver/Overview/vb/XmlSecureResolver_ex.vb" id="Snippet2":::
 
 - If you are working in a semi-trusted environment and you have code or data coming from an outside source, but you don't know the origin of the outside source, either:
 
-     Set the `evidence` parameter to `null`. This allows no access to resources.
+  Set the `evidence` parameter to `null`. This allows no access to resources.
 
      -or-
 
-     If your application requires some access to resources, request evidence from the caller.
+  If your application requires some access to resources, request evidence from the caller.
 
 ## To use the secure resolver to load an XSLT style sheet
 
@@ -99,5 +99,5 @@ Here are some common scenarios and the type of evidence to provide for each:
 
 2. Pass the <xref:System.Xml.XmlSecureResolver> to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method.
 
-     :::code language="csharp" source="./snippets/System.Xml/XmlSecureResolver/Overview/csharp/XmlSecureResolver_ex.cs" id="Snippet6":::
-     :::code language="vb" source="./snippets/System.Xml/XmlSecureResolver/Overview/vb/XmlSecureResolver_ex.vb" id="Snippet6":::
+   :::code language="csharp" source="./snippets/System.Xml/XmlSecureResolver/Overview/csharp/XmlSecureResolver_ex.cs" id="Snippet6":::
+   :::code language="vb" source="./snippets/System.Xml/XmlSecureResolver/Overview/vb/XmlSecureResolver_ex.vb" id="Snippet6":::

@@ -15,7 +15,7 @@ Through .NET Framework 4, each version of .NET Framework included tables that co
 - On Windows 7 and previous versions, the tables continue to be used for comparing and ordering strings.
 - On Windows 8, .NET Framework delegates string comparison and ordering operations to the operating system.
 
-Consequently, the result of a string comparison can depend not only on the .NET Framework version, but also on the operating system version, as the following table shows. Note that this list of supported Unicode versions applies to character comparison and sorting only; it does not apply to classification of Unicode characters by category.
+Consequently, the result of a string comparison can depend not only on .NET Framework version, but also on the operating system version, as the following table shows. Note that this list of supported Unicode versions applies to character comparison and sorting only; it does not apply to classification of Unicode characters by category.
 
 | .NET Framework version | Operating system             | Unicode version |
 |------------------------|------------------------------|-----------------|

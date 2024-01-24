@@ -43,35 +43,35 @@ The limited precision of a floating-point number has several consequences:
 
 - Two floating-point numbers that appear equal for a particular precision might not compare equal because their least significant digits are different. In the following example, a series of numbers are added together, and their total is compared with their expected total. Although the two values appear to be the same, a call to the `Equals` method indicates that they are not.
 
-     :::code language="csharp" source="./snippets/System/Single/Overview/csharp/precisionlist3.cs" interactive="try-dotnet" id="Snippet6":::
-     :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/precisionlist3.fs" id="Snippet6":::
-     :::code language="vb" source="./snippets/System/Single/Overview/vb/precisionlist3.vb" id="Snippet6":::
+  :::code language="csharp" source="./snippets/System/Single/Overview/csharp/precisionlist3.cs" interactive="try-dotnet" id="Snippet6":::
+  :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/precisionlist3.fs" id="Snippet6":::
+  :::code language="vb" source="./snippets/System/Single/Overview/vb/precisionlist3.vb" id="Snippet6":::
 
-     If you change the format items in the <xref:System.Console.WriteLine%28System.String%2CSystem.Object%2CSystem.Object%29?displayProperty=nameWithType> statement from `{0}` and `{1}` to `{0:R}` and `{1:R}` to display all significant digits of the two <xref:System.Single> values, it is clear that the two values are unequal because of a loss of precision during the addition operations. In this case, the issue can be resolved by calling the <xref:System.Math.Round%28System.Double%2CSystem.Int32%29?displayProperty=nameWithType> method to round the <xref:System.Single> values to the desired precision before performing the comparison.
+  If you change the format items in the <xref:System.Console.WriteLine%28System.String%2CSystem.Object%2CSystem.Object%29?displayProperty=nameWithType> statement from `{0}` and `{1}` to `{0:R}` and `{1:R}` to display all significant digits of the two <xref:System.Single> values, it is clear that the two values are unequal because of a loss of precision during the addition operations. In this case, the issue can be resolved by calling the <xref:System.Math.Round%28System.Double%2CSystem.Int32%29?displayProperty=nameWithType> method to round the <xref:System.Single> values to the desired precision before performing the comparison.
 
 - A mathematical or comparison operation that uses a floating-point number might not yield the same result if a decimal number is used, because the binary floating-point number might not equal the decimal number. A previous example illustrated this by displaying the result of multiplying .3 by 10 and adding .3 to .3 nine times.
 
-     When accuracy in numeric operations with fractional values is important, use the <xref:System.Decimal> type instead of the <xref:System.Single> type. When accuracy in numeric operations with integral values beyond the range of the <xref:System.Int64> or <xref:System.UInt64> types is important, use the <xref:System.Numerics.BigInteger> type.
+  When accuracy in numeric operations with fractional values is important, use the <xref:System.Decimal> type instead of the <xref:System.Single> type. When accuracy in numeric operations with integral values beyond the range of the <xref:System.Int64> or <xref:System.UInt64> types is important, use the <xref:System.Numerics.BigInteger> type.
 
 - A value might not round-trip if a floating-point number is involved. A value is said to round-trip if an operation converts an original floating-point number to another form, an inverse operation transforms the converted form back to a floating-point number, and the final floating-point number is equal to the original floating-point number. The round trip might fail because one or more least significant digits are lost or changed in a conversion. In the following example, three <xref:System.Single> values are converted to strings and saved in a file. As the output shows, although the values appear to be identical, the restored values are not equal to the original values.
 
-     :::code language="csharp" source="./snippets/System/Single/Overview/csharp/precisionlist4a.cs" id="Snippet17":::
-     :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/precisionlist4a.fs" id="Snippet17":::
-     :::code language="vb" source="./snippets/System/Single/Overview/vb/PrecisionList4a.vb" id="Snippet17":::
+  :::code language="csharp" source="./snippets/System/Single/Overview/csharp/precisionlist4a.cs" id="Snippet17":::
+  :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/precisionlist4a.fs" id="Snippet17":::
+  :::code language="vb" source="./snippets/System/Single/Overview/vb/PrecisionList4a.vb" id="Snippet17":::
 
-     In this case, the values can be successfully round-tripped by using the "G9" [standard numeric format string](../../standard/base-types/standard-numeric-format-strings.md) to preserve the full precision of <xref:System.Single> values, as the following example shows.
+  In this case, the values can be successfully round-tripped by using the "G9" [standard numeric format string](../../standard/base-types/standard-numeric-format-strings.md) to preserve the full precision of <xref:System.Single> values, as the following example shows.
 
-     :::code language="csharp" source="./snippets/System/Single/Overview/csharp/PrecisionList5a.cs" id="Snippet18":::
-     :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/PrecisionList5a.fs" id="Snippet18":::
-     :::code language="vb" source="./snippets/System/Single/Overview/vb/PrecisionList5a.vb" id="Snippet18":::
+  :::code language="csharp" source="./snippets/System/Single/Overview/csharp/PrecisionList5a.cs" id="Snippet18":::
+  :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/PrecisionList5a.fs" id="Snippet18":::
+  :::code language="vb" source="./snippets/System/Single/Overview/vb/PrecisionList5a.vb" id="Snippet18":::
 
 - <xref:System.Single> values have less precision than <xref:System.Double> values. A <xref:System.Single> value that is converted to a seemingly equivalent <xref:System.Double> often does not equal the <xref:System.Double> value because of differences in precision. In the following example, the result of identical division operations is assigned to a <xref:System.Double> value and a <xref:System.Single> value. After the <xref:System.Single> value is cast to a <xref:System.Double>, a comparison of the two values shows that they are unequal.
 
-     :::code language="csharp" source="./snippets/System/Double/Overview/csharp/precisionlist1.cs" interactive="try-dotnet" id="Snippet5":::
-     :::code language="fsharp" source="./snippets/System/Double/Overview/fsharp/precisionlist1.fs" id="Snippet5":::
-     :::code language="vb" source="./snippets/System/Double/Overview/vb/precisionlist1.vb" id="Snippet5":::
+  :::code language="csharp" source="./snippets/System/Double/Overview/csharp/precisionlist1.cs" interactive="try-dotnet" id="Snippet5":::
+  :::code language="fsharp" source="./snippets/System/Double/Overview/fsharp/precisionlist1.fs" id="Snippet5":::
+  :::code language="vb" source="./snippets/System/Double/Overview/vb/precisionlist1.vb" id="Snippet5":::
 
-     To avoid this problem, either use the <xref:System.Double> data type in place of the <xref:System.Single> data type, or use the <xref:System.Math.Round%2A> method so that both values have the same precision.
+  To avoid this problem, either use the <xref:System.Double> data type in place of the <xref:System.Single> data type, or use the <xref:System.Math.Round%2A> method so that both values have the same precision.
 
 ## Test for equality
 
@@ -91,22 +91,22 @@ In cases where a loss of precision is likely to affect the result of a compariso
 
 - Call the <xref:System.Math.Round%2A?displayProperty=nameWithType> method to ensure that both values have the same precision. The following example modifies a previous example to use this approach so that two fractional values are equivalent.
 
-     :::code language="csharp" source="./snippets/System/Single/Overview/csharp/comparison3.cs" interactive="try-dotnet" id="Snippet11":::
-     :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/comparison3.fs" id="Snippet11":::
-     :::code language="vb" source="./snippets/System/Single/Overview/vb/comparison3.vb" id="Snippet11":::
+  :::code language="csharp" source="./snippets/System/Single/Overview/csharp/comparison3.cs" interactive="try-dotnet" id="Snippet11":::
+  :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/comparison3.fs" id="Snippet11":::
+  :::code language="vb" source="./snippets/System/Single/Overview/vb/comparison3.vb" id="Snippet11":::
 
-     The problem of precision still applies to rounding of midpoint values. For more information, see the <xref:System.Math.Round%28System.Double%2CSystem.Int32%2CSystem.MidpointRounding%29?displayProperty=nameWithType> method.
+  The problem of precision still applies to rounding of midpoint values. For more information, see the <xref:System.Math.Round%28System.Double%2CSystem.Int32%2CSystem.MidpointRounding%29?displayProperty=nameWithType> method.
 
 - Test for approximate equality instead of equality. This technique requires that you define either an absolute amount by which the two values can differ but still be equal, or that you define a relative amount by which the smaller value can diverge from the larger value.
 
     > [!WARNING]
     >  <xref:System.Single.Epsilon?displayProperty=nameWithType> is sometimes used as an absolute measure of the distance between two <xref:System.Single> values when testing for equality. However, <xref:System.Single.Epsilon?displayProperty=nameWithType> measures the smallest possible value that can be added to, or subtracted from, a <xref:System.Single> whose value is zero. For most positive and negative <xref:System.Single> values, the value of <xref:System.Single.Epsilon?displayProperty=nameWithType> is too small to be detected. Therefore, except for values that are zero, we do not recommend its use in tests for equality.
 
-     The following example uses the latter approach to define an `IsApproximatelyEqual` method that tests the relative difference between two values. It also contrasts the result of calls to the `IsApproximatelyEqual` method and the <xref:System.Single.Equals%28System.Single%29> method.
+  The following example uses the latter approach to define an `IsApproximatelyEqual` method that tests the relative difference between two values. It also contrasts the result of calls to the `IsApproximatelyEqual` method and the <xref:System.Single.Equals%28System.Single%29> method.
 
-     :::code language="csharp" source="./snippets/System/Single/Overview/csharp/comparison4.cs" interactive="try-dotnet" id="Snippet12":::
-     :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/comparison4.fs" id="Snippet12":::
-     :::code language="vb" source="./snippets/System/Single/Overview/vb/comparison4.vb" id="Snippet12":::
+  :::code language="csharp" source="./snippets/System/Single/Overview/csharp/comparison4.cs" interactive="try-dotnet" id="Snippet12":::
+  :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/comparison4.fs" id="Snippet12":::
+  :::code language="vb" source="./snippets/System/Single/Overview/vb/comparison4.vb" id="Snippet12":::
 
 ## Floating-point values and exceptions
 
@@ -114,15 +114,15 @@ Operations with floating-point values do not throw exceptions, unlike operations
 
 - If the result of a floating-point operation is too small for the destination format, the result is zero. This can occur when two very small floating-point numbers are multiplied, as the following example shows.
 
-     :::code language="csharp" source="./snippets/System/Single/Overview/csharp/exceptional1.cs" interactive="try-dotnet" id="Snippet1":::
-     :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/exceptional1.fs" id="Snippet1":::
-     :::code language="vb" source="./snippets/System/Single/Overview/vb/exceptional1.vb" id="Snippet1":::
+  :::code language="csharp" source="./snippets/System/Single/Overview/csharp/exceptional1.cs" interactive="try-dotnet" id="Snippet1":::
+  :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/exceptional1.fs" id="Snippet1":::
+  :::code language="vb" source="./snippets/System/Single/Overview/vb/exceptional1.vb" id="Snippet1":::
 
 - If the magnitude of the result of a floating-point operation exceeds the range of the destination format, the result of the operation is <xref:System.Single.PositiveInfinity> or <xref:System.Single.NegativeInfinity>, as appropriate for the sign of the result. The result of an operation that overflows <xref:System.Single.MaxValue?displayProperty=nameWithType> is <xref:System.Single.PositiveInfinity>, and the result of an operation that overflows <xref:System.Single.MinValue?displayProperty=nameWithType> is <xref:System.Single.NegativeInfinity>, as the following example shows.
 
-     :::code language="csharp" source="./snippets/System/Single/Overview/csharp/exceptional2.cs" interactive="try-dotnet" id="Snippet2":::
-     :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/exceptional2.fs" id="Snippet2":::
-     :::code language="vb" source="./snippets/System/Single/Overview/vb/exceptional2.vb" id="Snippet2":::
+  :::code language="csharp" source="./snippets/System/Single/Overview/csharp/exceptional2.cs" interactive="try-dotnet" id="Snippet2":::
+  :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/exceptional2.fs" id="Snippet2":::
+  :::code language="vb" source="./snippets/System/Single/Overview/vb/exceptional2.vb" id="Snippet2":::
 
      <xref:System.Single.PositiveInfinity> also results from a division by zero with a positive dividend, and <xref:System.Single.NegativeInfinity> results from a division by zero with a negative dividend.
 
@@ -207,7 +207,7 @@ The <xref:System.Single> structure and related types provide methods to perform 
 
 - **Parsing strings**. You can convert the string representation of a floating-point value to a <xref:System.Single> value by calling the <xref:System.Single.Parse%2A> or <xref:System.Single.TryParse%2A> method. If the parse operation fails, the <xref:System.Single.Parse%2A> method throws an exception, whereas the <xref:System.Single.TryParse%2A> method returns `false`.
 
-- **Type conversion**. The <xref:System.Single> structure provides an explicit interface implementation for the <xref:System.IConvertible> interface, which supports conversion between any two standard .NET Framework data types. Language compilers also support the implicit conversion of values for all other standard numeric types except for the conversion of <xref:System.Double> to <xref:System.Single> values. Conversion of a value of any standard numeric type other than a <xref:System.Double> to a <xref:System.Single> is a widening conversion and does not require the use of a casting operator or conversion method.
+- **Type conversion**. The <xref:System.Single> structure provides an explicit interface implementation for the <xref:System.IConvertible> interface, which supports conversion between any two standard .NET data types. Language compilers also support the implicit conversion of values for all other standard numeric types except for the conversion of <xref:System.Double> to <xref:System.Single> values. Conversion of a value of any standard numeric type other than a <xref:System.Double> to a <xref:System.Single> is a widening conversion and does not require the use of a casting operator or conversion method.
 
   However, conversion of 32-bit and 64-bit integer values can involve a loss of precision. The following table lists the differences in precision for 32-bit, 64-bit, and <xref:System.Double> types:
 

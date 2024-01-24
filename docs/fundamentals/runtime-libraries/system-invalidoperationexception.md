@@ -86,17 +86,17 @@ You can eliminate the exception in one of two ways, depending on your applicatio
 
 - If elements must be added to the collection while iterating it, you can iterate it by index using the `for` (`for..to` in F#) statement instead of `foreach`, `for...in`, or `For Each`. The following example uses the for statement to add the square of numbers in the collection to the collection.
 
-     :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Iterating2.cs" interactive="try-dotnet" id="Snippet2":::
-     :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/Iterating2.fs" id="Snippet2":::
-     :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/Iterating2.vb" id="Snippet2":::
+  :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Iterating2.cs" interactive="try-dotnet" id="Snippet2":::
+  :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/Iterating2.fs" id="Snippet2":::
+  :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/Iterating2.vb" id="Snippet2":::
 
-     Note that you must establish the number of iterations before iterating the collection either by using a counter inside the loop that will exit the loop appropriately, by iterating backward, from `Count` - 1 to 0, or, as the example does, by assigning the number of elements in the array to a variable and using it to establish the upper bound of the loop. Otherwise, if an element is added to the collection on every iteration, an endless loop results.
+  Note that you must establish the number of iterations before iterating the collection either by using a counter inside the loop that will exit the loop appropriately, by iterating backward, from `Count` - 1 to 0, or, as the example does, by assigning the number of elements in the array to a variable and using it to establish the upper bound of the loop. Otherwise, if an element is added to the collection on every iteration, an endless loop results.
 
 - If it is not necessary to add elements to the collection while iterating it, you can store the elements to be added in a temporary collection that you add when iterating the collection has finished. The following example uses this approach to add the square of numbers in a collection to a temporary collection, and then to combine the collections into a single array object.
 
-     :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Iterating3.cs" interactive="try-dotnet" id="Snippet3":::
-     :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/Iterating3.fs" id="Snippet3":::
-     :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/Iterating3.vb" id="Snippet3":::
+  :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Iterating3.cs" interactive="try-dotnet" id="Snippet3":::
+  :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/Iterating3.fs" id="Snippet3":::
+  :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/Iterating3.vb" id="Snippet3":::
 
 ### Sorting an array or collection whose objects cannot be compared
 
@@ -110,19 +110,19 @@ You can eliminate the exception in any of three ways:
 
 - If you can own the type that you are trying to sort (that is, if you control its source code), you can modify it to implement the <xref:System.IComparable%601> or the <xref:System.IComparable> interface. This requires that you implement either the <xref:System.IComparable%601.CompareTo%2A?displayProperty=nameWithType> or the <xref:System.IComparable.CompareTo%2A> method. Adding an interface implementation to an existing type is not a breaking change.
 
-     The following example uses this approach to provide an <xref:System.IComparable%601> implementation for the `Person` class. You can still call the collection or array's general sorting method and, as the output from the example shows, the collection sorts successfully.
+  The following example uses this approach to provide an <xref:System.IComparable%601> implementation for the `Person` class. You can still call the collection or array's general sorting method and, as the output from the example shows, the collection sorts successfully.
 
-     :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/List_Sort2.cs" interactive="try-dotnet" id="Snippet13":::
-     :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/List_Sort2.fs" id="Snippet13":::
-     :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/List_Sort2.vb" id="Snippet13":::
+  :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/List_Sort2.cs" interactive="try-dotnet" id="Snippet13":::
+  :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/List_Sort2.fs" id="Snippet13":::
+  :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/List_Sort2.vb" id="Snippet13":::
 
 - If you cannot modify the source code for the type you are trying to sort, you can define a special-purpose sorting class that implements the <xref:System.Collections.Generic.IComparer%601> interface. You can call an overload of the `Sort` method that includes an  <xref:System.Collections.Generic.IComparer%601> parameter. This approach is especially useful if you want to develop a specialized sorting class that can sort objects based on multiple criteria.
 
-     The following example uses the approach by developing a custom `PersonComparer` class that is used to sort `Person` collections. It then passes an instance of this class to the <xref:System.Collections.Generic.List%601.Sort%28System.Collections.Generic.IComparer%7B%600%7D%29?displayProperty=nameWithType> method.
+  The following example uses the approach by developing a custom `PersonComparer` class that is used to sort `Person` collections. It then passes an instance of this class to the <xref:System.Collections.Generic.List%601.Sort%28System.Collections.Generic.IComparer%7B%600%7D%29?displayProperty=nameWithType> method.
 
-     :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/List_Sort3.cs" interactive="try-dotnet" id="Snippet14":::
-     :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/List_Sort3.fs" id="Snippet14":::
-     :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/List_Sort3.vb" id="Snippet14":::
+  :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/List_Sort3.cs" interactive="try-dotnet" id="Snippet14":::
+  :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/List_Sort3.fs" id="Snippet14":::
+  :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/List_Sort3.vb" id="Snippet14":::
 
 - If you cannot modify the source code for the type you are trying to sort, you can create a  <xref:System.Comparison%601> delegate to perform the sorting. The delegate signature is
 
@@ -134,11 +134,11 @@ You can eliminate the exception in any of three ways:
     int Comparison<T>(T x, T y)
     ```
 
-     The following example uses the approach by defining a  `PersonComparison` method that matches the  <xref:System.Comparison%601> delegate signature. It then passes this delegate to the <xref:System.Collections.Generic.List%601.Sort%28System.Comparison%7B%600%7D%29?displayProperty=nameWithType> method.
+  The following example uses the approach by defining a  `PersonComparison` method that matches the  <xref:System.Comparison%601> delegate signature. It then passes this delegate to the <xref:System.Collections.Generic.List%601.Sort%28System.Comparison%7B%600%7D%29?displayProperty=nameWithType> method.
 
-     :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/List_Sort4.cs" interactive="try-dotnet" id="Snippet15":::
-     :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/List_Sort4.fs" id="Snippet15":::
-     :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/List_Sort4.vb" id="Snippet15":::
+  :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/List_Sort4.cs" interactive="try-dotnet" id="Snippet15":::
+  :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/List_Sort4.fs" id="Snippet15":::
+  :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/List_Sort4.vb" id="Snippet15":::
 
 ### Casting a Nullable\<T> that's null to its underlying type
 

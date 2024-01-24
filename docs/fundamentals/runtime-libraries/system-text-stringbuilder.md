@@ -99,15 +99,15 @@ Most of the methods that modify the string in a <xref:System.Text.StringBuilder>
 
 - You can make individual method calls and ignore the return value, as the following example does.
 
-     :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/call1.cs" interactive="try-dotnet" id="Snippet4":::
-     :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/call1.fs" id="Snippet4":::
-     :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/call1.vb" id="Snippet4":::
+  :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/call1.cs" interactive="try-dotnet" id="Snippet4":::
+  :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/call1.fs" id="Snippet4":::
+  :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/call1.vb" id="Snippet4":::
 
 - You can make a series of method calls in a single statement. This can be convenient if you want to write a single statement that chains successive operations. The following example consolidates three method calls from the previous example into a single line of code.
 
-     :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/call2.cs" interactive="try-dotnet" id="Snippet5":::
-     :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/call2.fs" id="Snippet5":::
-     :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/call2.vb" id="Snippet5":::
+  :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/call2.cs" interactive="try-dotnet" id="Snippet5":::
+  :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/call2.fs" id="Snippet5":::
+  :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/call2.vb" id="Snippet5":::
 
 ## Perform StringBuilder operations
 
@@ -176,36 +176,36 @@ Let's examine these techniques in greater detail.
 
 - If the goal of the search is to determine whether a particular substring exists (that is, if you aren't interested in the position of the substring), you can search strings before storing them in the <xref:System.Text.StringBuilder> object. The following example provides one possible implementation. It defines a `StringBuilderFinder` class whose constructor is passed a reference to a <xref:System.Text.StringBuilder> object and the substring to find in the string. In this case, the example tries to determine whether recorded temperatures are in Fahrenheit or Celsius, and adds the appropriate introductory text to the beginning of the <xref:System.Text.StringBuilder> object. A random number generator is used to select an array that contains data in either degrees Celsius or degrees Fahrenheit.
 
-     :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/pattern1.cs" interactive="try-dotnet" id="Snippet12":::
-     :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/pattern1.fs" id="Snippet12":::
-     :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/pattern1.vb" id="Snippet12":::
+  :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/pattern1.cs" interactive="try-dotnet" id="Snippet12":::
+  :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/pattern1.fs" id="Snippet12":::
+  :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/pattern1.vb" id="Snippet12":::
 
 - Call the <xref:System.Text.StringBuilder.ToString%2A?displayProperty=nameWithType> method to convert the <xref:System.Text.StringBuilder> object to a <xref:System.String> object. You can search the string by using methods such as <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> or <xref:System.String.StartsWith%2A?displayProperty=nameWithType>, or you can use regular expressions and the <xref:System.Text.RegularExpressions.Regex> class to search for patterns. Because both <xref:System.Text.StringBuilder> and <xref:System.String> objects use UTF-16 encoding to store characters, the index positions of characters, substrings, and regular expression matches are the same in both objects. This enables you to use <xref:System.Text.StringBuilder> methods to make changes at the same position at which that text is found in the <xref:System.String> object.
 
     > [!NOTE]
     >  If you adopt this approach, you should work from the end of the <xref:System.Text.StringBuilder> object to its beginning so that you don't have to repeatedly convert the <xref:System.Text.StringBuilder> object to a string.
 
-     The following example illustrates this approach. It stores four occurrences of each letter of the English alphabet in a <xref:System.Text.StringBuilder> object. It then converts the text to a <xref:System.String> object and uses a regular expression to identify the starting position of each four-character sequence. Finally, it adds an underscore before each four-character sequence except for the first sequence, and converts the first character of the sequence to uppercase.
+  The following example illustrates this approach. It stores four occurrences of each letter of the English alphabet in a <xref:System.Text.StringBuilder> object. It then converts the text to a <xref:System.String> object and uses a regular expression to identify the starting position of each four-character sequence. Finally, it adds an underscore before each four-character sequence except for the first sequence, and converts the first character of the sequence to uppercase.
 
-     :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/pattern2.cs" interactive="try-dotnet" id="Snippet13":::
-     :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/pattern2.fs" id="Snippet13":::
-     :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/pattern2.vb" id="Snippet13":::
+  :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/pattern2.cs" interactive="try-dotnet" id="Snippet13":::
+  :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/pattern2.fs" id="Snippet13":::
+  :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/pattern2.vb" id="Snippet13":::
 
 - Use the <xref:System.Text.StringBuilder.Chars%2A?displayProperty=nameWithType> property to sequentially search a range of characters in a <xref:System.Text.StringBuilder> object. This approach may not be practical if the number of characters to be searched is large or the search logic is particularly complex. For the performance implications of character-by-character index-based access for very large, chunked <xref:System.Text.StringBuilder> objects, see the documentation for the <xref:System.Text.StringBuilder.Chars%2A?displayProperty=nameWithType> property.
 
-     The following example is identical in functionality to the previous example but differs in implementation. It uses the <xref:System.Text.StringBuilder.Chars%2A> property to detect when a character value has changed, inserts an underscore at that position, and converts the first character in the new sequence to uppercase.
+  The following example is identical in functionality to the previous example but differs in implementation. It uses the <xref:System.Text.StringBuilder.Chars%2A> property to detect when a character value has changed, inserts an underscore at that position, and converts the first character in the new sequence to uppercase.
 
-     :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/pattern3.cs" interactive="try-dotnet" id="Snippet14":::
-     :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/pattern3.fs" id="Snippet14":::
-     :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/pattern3.vb" id="Snippet14":::
+  :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/pattern3.cs" interactive="try-dotnet" id="Snippet14":::
+  :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/pattern3.fs" id="Snippet14":::
+  :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/pattern3.vb" id="Snippet14":::
 
 - Store all the unmodified text in the <xref:System.Text.StringBuilder> object, call the <xref:System.Text.StringBuilder.ToString%2A?displayProperty=nameWithType> method to convert the <xref:System.Text.StringBuilder> object to a <xref:System.String> object, and perform the modifications on the <xref:System.String> object. You can use this approach if you have only a few modifications; otherwise, the cost of working with immutable strings may negate the performance benefits of using a <xref:System.Text.StringBuilder> object.
 
-     The following example is identical in functionality to the previous two examples but differs in implementation. It creates a <xref:System.Text.StringBuilder> object, converts it to a <xref:System.String> object, and then uses a regular expression to perform all remaining modifications on the string. The <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.MatchEvaluator%29?displayProperty=nameWithType> method uses a lambda expression to perform the replacement on each match.
+  The following example is identical in functionality to the previous two examples but differs in implementation. It creates a <xref:System.Text.StringBuilder> object, converts it to a <xref:System.String> object, and then uses a regular expression to perform all remaining modifications on the string. The <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.MatchEvaluator%29?displayProperty=nameWithType> method uses a lambda expression to perform the replacement on each match.
 
-     :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/pattern4.cs" interactive="try-dotnet" id="Snippet15":::
-     :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/pattern4.fs" id="Snippet15":::
-     :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/pattern4.vb" id="Snippet15":::
+  :::code language="csharp" source="./snippets/System.Text/StringBuilder/Overview/csharp/pattern4.cs" interactive="try-dotnet" id="Snippet15":::
+  :::code language="fsharp" source="./snippets/System.Text/StringBuilder/Overview/fsharp/pattern4.fs" id="Snippet15":::
+  :::code language="vb" source="./snippets/System.Text/StringBuilder/Overview/vb/pattern4.vb" id="Snippet15":::
 
 ## Convert the StringBuilder object to a string
 

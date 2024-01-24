@@ -21,13 +21,13 @@ Each of the first six months in the Persian calendar has 31 days, each of the ne
 
 ## The PersianCalendar class and .NET Framework versions
 
-Starting with .NET Framework 4.6, the <xref:System.Globalization.PersianCalendar> class uses the Hijri solar astronomical algorithm rather than an observational algorithm to calculate dates. This makes the <xref:System.Globalization.PersianCalendar> implementation consistent with the Persian calendar in use in Iran and Afghanistan, the two countries in which the Persian calendar is in most widespread use. The change affects all apps running on the .NET Framework 4 or later if the .NET Framework 4.6 is installed.
+Starting with .NET Framework 4.6, the <xref:System.Globalization.PersianCalendar> class uses the Hijri solar astronomical algorithm rather than an observational algorithm to calculate dates. This makes the <xref:System.Globalization.PersianCalendar> implementation consistent with the Persian calendar in use in Iran and Afghanistan, the two countries in which the Persian calendar is in most widespread use. The change affects all apps running on .NET Framework 4 or later if .NET Framework 4.6 is installed.
 
 As a result of the changed algorithm:
 
 - The two algorithms should return identical results when converting dates between 1800 and 2123 in the Gregorian calendar.
 
-- The two algorithms may return different results when converting dates before 1800 and after 2123 in the Gregorian calendar.
+- The two algorithms might return differentresults when converting dates before 1800 and after 2123 in the Gregorian calendar.
 
 - The <xref:System.Globalization.PersianCalendar.MinSupportedDateTime%2A> property value has changed from March 21, 0622 in the Gregorian calendar to March 22, 0622 in the Gregorian calendar.
 

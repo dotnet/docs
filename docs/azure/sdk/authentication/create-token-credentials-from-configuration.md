@@ -29,10 +29,10 @@ Azure service clients registered with the `AddAzureClients` method are automatic
 ```csharp
 builder.Services.AddAzureClients(clientBuilder =>
 {
-    // Register BlobServiceClient and initialize it using the Storage configuration section of appsettings.json
+    // Register BlobServiceClient using credentials from appsettings.json
     clientBuilder.AddBlobServiceClient(builder.Configuration.GetSection("Storage"));
 
-    // ServiceBusClient registered without specific credentials will use the fallback DefaultAzureCredential
+    // Register ServiceBusClient using fallback DefaultAzureCredential credentials
     clientBuilder.AddServiceBusClientWithNamespace(
         "<your_namespace>.servicebus.windows.net");
 });

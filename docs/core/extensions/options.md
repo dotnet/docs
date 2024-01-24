@@ -299,7 +299,7 @@ builder.Services
 
 The `ValidateDataAnnotations` extension method is defined in the [Microsoft.Extensions.Options.DataAnnotations](https://www.nuget.org/packages/Microsoft.Extensions.Options.DataAnnotations) NuGet package.
 
-The following code displays the configuration values or the validation errors:
+The following code displays the configuration values or reports validation errors:
 
 :::code language="csharp" source="snippets/configuration/console-json/ValidationService.cs":::
 
@@ -321,7 +321,44 @@ builder.Services
     }, "VerbosityLevel must be > than Scale.");
 ```
 
-### IValidateOptions for complex validation
+The validation occurs at runtime, but you can configure it to occur at startup by instead chaining a call to `ValidateOnStart`:
+
+```csharp
+builder.Services
+    .AddOptions<SettingsOptions>()
+    .Bind(Configuration.GetSection(SettingsOptions.ConfigurationSectionName))
+    .ValidateDataAnnotations()
+    .Validate(config =>
+    {
+        if (config.Scale != 0)
+        {
+            return config.VerbosityLevel > config.Scale;
+        }
+
+        return true;
+    }, "VerbosityLevel must be > than Scale.")
+    .ValidateOnStart();
+```
+
+Starting with .NET 8 you can use an alternate API <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)>, that enabled validation on start for a specific options type:
+
+```csharp
+builder.Services
+    .AddOptionsWithValidateOnStart<SettingsOptions>()
+    .Bind(Configuration.GetSection(SettingsOptions.ConfigurationSectionName))
+    .ValidateDataAnnotations()
+    .Validate(config =>
+    {
+        if (config.Scale != 0)
+        {
+            return config.VerbosityLevel > config.Scale;
+        }
+
+        return true;
+    }, "VerbosityLevel must be > than Scale.");
+```
+
+### `IValidateOptions` for complex validation
 
 The following class implements <xref:Microsoft.Extensions.Options.IValidateOptions%601>:
 

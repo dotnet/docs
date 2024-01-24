@@ -12,43 +12,78 @@ The `Microsoft.Extensions.Azure` library supports creating different <xref:Azure
 
 ## Support for Azure credentials through configuration
 
-The `Microsoft.Extensions.Azure` library can automatically provide Azure service clients with a `TokenCredential` class by searching _appsettings.json_ or other configuration files for credential values using the default `IConfiguration` service for .NET. This approach allows developers to explicitly set credential values across different environments through configuration rather than through app code directly.
+The [`Microsoft.Extensions.Azure`](https://www.nuget.org/packages/Microsoft.Extensions.Azure) library can automatically provide Azure service clients with a `TokenCredential` class by searching _appsettings.json_ or other configuration files for credential values using the default `IConfiguration` service for .NET. This approach allows developers to explicitly set credential values across different environments through configuration rather than through app code directly.
 
 The following credential types are supported via configuration:
 
-* <xref:Azure.Identity.ManagedIdentityCredential?displayProperty=fullName>
-* <xref:Azure.Identity.WorkloadIdentityCredential?displayProperty=fullName>
-* <xref:Azure.Identity.ClientSecretCredential?displayProperty=fullName>
-* <xref:Azure.Identity.ClientCertificateCredential?displayProperty=fullName>
-* <xref:Azure.Identity.DefaultAzureCredential?displayProperty=fullName>
+* [ClientCertificateCredential](#create-a-ClientCertificateCredential-type)
+* [ClientSecretCredential](#create-a-ClientSecretCredential-type)
+* [DefaultAzureCredential](#create-a-DefaultAzureCredential-type)
+* [ManagedIdentityCredential](#create-a-ManagedIdentityCredential-type)
+* [WorkloadIdentityCredential](#create-a-WorkloadIdentityCredential-type)
 
-The configuration file values are only used when the service client doesn't explicitly set an authentication mechanism. For example, the following code uses `IConfiguration` to search for values in _appsettings.json_ at run time because the <xref:Azure.Storage.Blobs.BlobServiceClient?displayProperty=fullName> does not specify credentials during instantiation:
+## Configuring Azure credentials
 
-```csharp
-// No TokenCredential or access key provided - configuration files will be searched
-var blobServiceClient = new BlobServiceClient("<storage-account-name>");
-```
-
-In comparison, the following code provides `DefaultAzureCredential` directly and therefore does *not* initiate a search for configuration values in _appsettings.json_:
+Azure service clients registered with the `AddAzureClients` method are automatically configured with an instance of `DefaultAzureCredential`. You can override the global `DefaultAzureCredential` using additional methods or configuration files when registering a client:
 
 ```csharp
-// Configuration files will not be searched - DefaultAzureCredential is already provided
-var blobServiceClient = new BlobServiceClient("<storage-account-name>", new DefaultAzureCredential());
+builder.Services.AddAzureClients(clientBuilder =>
+{
+    // Register BlobServiceClient and initialize it using the Storage configuration section of appsettings.json
+    clientBuilder.AddBlobServiceClient(builder.Configuration.GetSection("Storage"));
+
+    // ServiceBusClient registered without specific credentials will use the fallback DefaultAzureCredential
+    clientBuilder.AddServiceBusClientWithNamespace(
+        "<your_namespace>.servicebus.windows.net");
+});
 ```
 
-> [!NOTE]
-> The examples in this article use `BlobServiceClient`, but the concepts apply to other Azure service clients as well, such as `CosmosClient` or `SecretClient`.
+The associated _appsettings.json_ file:
+
+```json
+"Storage": {
+    "serviceUri": "<service_uri>",
+    "credential": "managedidentity",
+    "clientid":  "<clientId>"
+}
+```
 
 ### Create a `ManagedIdentityCredential` type
 
-Add the following configuration values to your _appsettings.json_ file to create an <xref:Azure.Identity.ManagedIdentityCredential?displayProperty=fullName>:
+You can create both user-assigned and system-assigned managed identities using configuration values. Add the following configuration values to your _appsettings.json_ file to create an <xref:Azure.Identity.ManagedIdentityCredential?displayProperty=fullName>.
 
-```json
-{
-  "credential": "managedidentity",
-  "resourceId":  "<managedIdentityResourceId>"
-}
-```
+#### User-assigned identities
+
+1. Authenticate using a client ID:
+
+    ```json
+    {
+        "credential": "managedidentity",
+        "clientId":  "<clientId>"
+    }
+    ```
+
+1. Authenticate using a resource ID:
+
+    ```json
+    {
+        "credential": "managedidentity",
+        "resourceId":  "<managedIdentityResourceId>"
+    }
+    ```
+
+    The resource ID takes the form `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}`.
+
+#### System-assigned identities
+
+1. Authenticate using a client ID:
+
+    ```json
+    {
+        "credential": "managedidentity",
+        "clientid":  "<clientId>"
+    }
+    ```
 
 ### Create a `WorkloadIdentityCredential` type
 

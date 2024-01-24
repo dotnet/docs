@@ -24,7 +24,7 @@ The following credential types are supported via configuration:
 
 ## Configuring Azure credentials
 
-Azure service clients registered with the `AddAzureClients` method are automatically configured with an instance of `DefaultAzureCredential`. You can override the global `DefaultAzureCredential` using additional methods or configuration files when registering a client:
+Azure service clients registered with the `AddAzureClients` method are automatically configured with an instance of `DefaultAzureCredential`. You can override the global `DefaultAzureCredential` using  credential values from configuration files when registering a client:
 
 ```csharp
 builder.Services.AddAzureClients(clientBuilder =>
@@ -32,7 +32,7 @@ builder.Services.AddAzureClients(clientBuilder =>
     // Register BlobServiceClient using credentials from appsettings.json
     clientBuilder.AddBlobServiceClient(builder.Configuration.GetSection("Storage"));
 
-    // Register ServiceBusClient using fallback DefaultAzureCredential credentials
+    // Register ServiceBusClient using the fallback DefaultAzureCredential credentials
     clientBuilder.AddServiceBusClientWithNamespace(
         "<your_namespace>.servicebus.windows.net");
 });

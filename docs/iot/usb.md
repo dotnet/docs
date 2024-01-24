@@ -35,7 +35,7 @@ Here's a hardware implementation of the [Blink an LED](tutorials/blink-led.md) t
 
 :::image type="content" source="./media/usb-to-gpio-thumb.png" alt-text="A picture of a breadboard with an FT232H adapter, a resister, an LED, and connecting wires." lightbox="./media/usb-to-gpio.png":::
 
-In the preceding image, the LED circuit is very similar to the original tutorial. The only difference is that the LED is connected to pin *D7* on the FT232H adapter instead of pin **18** on the Raspberry Pi.
+In the preceding image, the LED circuit is very similar to the original tutorial. The only difference is that the LED is connected to pin *D7* on the FT232H adapter instead of pin *18* on the Raspberry Pi.
 
 The code for the tutorial is also similar to the original tutorial:
 

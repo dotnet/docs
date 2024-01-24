@@ -61,17 +61,23 @@ Examples:
 </ItemGroup>
 ```
 
-To specify additional flags to the native linker, use the `<LinkerArg>` item.
+To specify additional dependencies and flags to the native linker, use the `<NativeSystemLibrary>`, `<NativeFramework>` and `<ExtraLinkerArg>`.
 
 Examples:
 
 ```xml
 <ItemGroup>
   <!-- link.exe is used as the linker on Windows -->
-  <LinkerArg Include="/DEPENDENTLOADFLAG:0x800" Condition="$(RuntimeIdentifier.StartsWith('win'))" />
+  <ExtraLinkerArg Include="/DEPENDENTLOADFLAG:0x800" Condition="$(RuntimeIdentifier.StartsWith('win'))" />
 
-  <!-- Native AOT invokes clang/gcc as the linker, so arguments need to be prefixed with "-Wl," -->
-  <LinkerArg Include="-Wl,-rpath,'/bin/'" Condition="$(RuntimeIdentifier.StartsWith('linux'))" />
+  <!-- Native AOT invokes clang/gcc as the linker, ExtraLinkerArg values are automatically prefixed with "-Wl," -->
+  <ExtraLinkerArg Include="-rpath,'/bin/'" Condition="$(RuntimeIdentifier.StartsWith('linux'))" />
+
+  <!-- Link to cURL library, the following results in a linker argument: "-lcurl"  -->
+  <NativeSystemLibrary Include="curl" Condition="$(RuntimeIdentifier.StartsWith('linux'))" />
+
+  <!-- Link to CoreFoundation framework, the following results in a linker argument: "-Wl,-framework,CoreFoundation" -->
+  <NativeFramework Include="CoreFoundation" Condition="$(RuntimeIdentifier.StartsWith('macos'))"/>
 </ItemGroup>
 ```
 

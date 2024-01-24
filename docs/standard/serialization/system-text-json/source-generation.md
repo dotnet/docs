@@ -156,7 +156,7 @@ internal partial class MyJsonContext : JsonSerializerContext { }
 ```csharp
 var serializerOptions = new JsonSerializerOptions
 {
-    TypeInfoResolver = MyJsonContext.Default;
+    TypeInfoResolver = MyJsonContext.Default
 };
 
 services.AddControllers().AddJsonOptions(
@@ -178,7 +178,7 @@ internal partial class MyJsonContext : JsonSerializerContext { }
 ```csharp
 var serializerOptions = new JsonSerializerOptions
 {
-    TypeInfoResolver = MyJsonContext.Default;
+    TypeInfoResolver = MyJsonContext.Default
 };
 
 services.AddControllers().AddJsonOptions(

@@ -13,12 +13,12 @@ Beginning with Visual Studio 2019, [C++/CLI projects](/cpp/dotnet/dotnet-program
 
 There are some important limitations with C++/CLI projects and .NET compared to .NET Framework:
 
+- Compiling a C++/CLI project to an executable isn't supported. You must compile to a DLL.
 - C++/CLI support for .NET is Windows only.
 - C++/CLI projects can't target .NET Standard.
-- C++/CLI projects don't support the newer SDK-style project file format. Instead, C++/CLI projects use the _.vcxproj_ file format.
+- C++/CLI projects don't support the newer SDK-style project file format. Instead, C++/CLI projects use the same _.vcxproj_ file format that other Visual Studio C++ projects use.
 - C++/CLI projects can't target multiple .NET platforms. If you need to build a C++/CLI project for both .NET and .NET Framework, use separate project files.
 - .NET doesn't support `-clr:pure` or `-clr:safe` compilation, only the newer `-clr:netcore` option (which is equivalent to `-clr` for .NET Framework).
-- Compiling a C++/CLI project to an executable isn't supported. You must compile to a DLL.
 
 ## Port a C++/CLI project
 

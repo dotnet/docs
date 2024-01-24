@@ -248,7 +248,8 @@ sudo apt-get update && \
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you must install these dependencies to run your app:
 
 - libc6
-- libgcc-s1
+- libgcc1 (for 16.x and 18.x)
+- libgcc-s1 (for 20.x or later)
 - libgssapi-krb5-2
 - libicu55 (for 16.x)
 - libicu60 (for 18.x)

@@ -3,7 +3,7 @@ title: Options pattern
 author: IEvangelist
 description: Learn the options pattern to represent groups of related settings in .NET apps. The options pattern uses classes to provide strongly-typed access to settings.
 ms.author: dapine
-ms.date: 06/23/2023
+ms.date: 01/24/2024
 ---
 
 # Options pattern in .NET

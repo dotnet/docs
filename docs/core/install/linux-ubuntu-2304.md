@@ -49,7 +49,6 @@ If you run into issues installing or even running .NET, see [Troubleshooting](li
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
 - libc6
-- libgcc1
 - libgcc-s1
 - libgssapi-krb5-2
 - libicu72

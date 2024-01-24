@@ -25,7 +25,7 @@ Ensure you have installed the D2XX drivers for your USB-to-serial adapter, which
 
 Before you can create a GPIO, I<sup>2</sup>C, or SPI device, you must get be able to identify the connected USB-to-serial adapter. The following code lists the connected FTDI devices:
 
-:::code language="csharp" source="~/iot-samples/tutorials/ft232h/ft232h.list/Program.cs" :::
+:::code language="csharp" source="~/iot-samples/tutorials/ft232h/ft232h.list/Program.cs" highlight="3" :::
 
 In the preceding code, the `FtCommon.GetDevices()` method returns a list of all connected FTDI devices.
 
@@ -39,7 +39,7 @@ In the preceding image, the LED circuit is very similar to the original tutorial
 
 The code for the tutorial is also similar to the original tutorial:
 
-:::code language="csharp" source="~/iot-samples/tutorials/ft232h/ft232h.gpio/Program.cs" :::
+:::code language="csharp" source="~/iot-samples/tutorials/ft232h/ft232h.gpio/Program.cs" highlight="7-10" :::
 
 In the preceding code:
 
@@ -61,7 +61,7 @@ In the preceding image:
 - The *D0* and *D1* pins on the FT232H adapter are connected to the *SDL* and *SCA* pins on the BME280 breakout board, respectively.
 - The *I2C* selector switch on the BME280 breakout board is set to *On*.
 
-:::code language="csharp" source="~/iot-samples/tutorials/ft232h/ft232h.i2c/Program.cs" :::
+:::code language="csharp" source="~/iot-samples/tutorials/ft232h/ft232h.i2c/Program.cs" highlight="7-10" :::
 
 In the preceding code:
 
@@ -84,7 +84,7 @@ In the preceding image:
 - The *D0*, *D1*, *D2*, and *D3* pins on the FT232H adapter are connected to the *CLK*, *DIN*,  *DOUT*,and *CS/SHDN* pins on the MCP3008, respectively.
 - The *I2C* selector switch on the MCP3008 breakout board is set to *Off*.
 
-:::code language="csharp" source="~/iot-samples/tutorials/ft232h/ft232h.spi/Program.cs" :::
+:::code language="csharp" source="~/iot-samples/tutorials/ft232h/ft232h.spi/Program.cs" highlight="7-10" :::
 
 In the preceding code:
 

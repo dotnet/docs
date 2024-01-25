@@ -17,7 +17,7 @@ JsonSerializer.Serialize(new { Value = 42 });
 
 ## New behavior
 
-Starting in .NET 8, projects that have the `PublishTrimmed` property enabled fail serialization outright. The code `JSonSerializer.Serialize(new { Value = 42 });` throws the following exception:
+Starting in .NET 8, projects that have the `PublishTrimmed` property enabled fail serialization outright. The code `JsonSerializer.Serialize(new { Value = 42 });` throws the following exception:
 
 > **System.InvalidOperationException: Reflection-based serialization has been disabled for this application.**
 

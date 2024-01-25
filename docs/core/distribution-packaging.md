@@ -170,7 +170,7 @@ The following lists the recommended packages:
 
 - `dotnet-templates-[major].[minor]`
   - **Version:** \<sdk version>
-  - **Contains:** (15)
+  - **Contains:** (17)
 
 The following two meta packages are optional. They bring value for end users in that they abstract the top-level package (dotnet-sdk), which simplifies the installation of the full set of .NET packages. These meta packages reference a specific .NET SDK version.
 
@@ -197,6 +197,57 @@ Most distributions require all artifacts to be built from source. This has some 
 - The `NuGetFallbackFolder` is populated using binary artifacts from `nuget.org`. It should remain empty.
 
 Multiple `dotnet-sdk` packages may provide the same files for the `NuGetFallbackFolder`. To avoid issues with the package manager, these files should be identical (checksum, modification date, and so on).
+
+### Debug packages
+
+Debug content should be packaged in debug-named packages that follow the .NET package split described previously in this article. For instance, debug content for the `dotnet-sdk-[major].[minor]` package should be included in a package named `dotnet-sdk-dbg-[major].[minor]`. You should install debug content to the same location as the binaries.
+
+Here are a few binary examples:
+
+In the `{dotnet_root}/sdk/<sdk version>` directory, the following two files are expected:
+
+- `dotnet.dll` - installed with `dotnet-sdk-[major].[minor]` package
+- `dotnet.pdb` - installed with `dotnet-sdk-dbg-[major].[minor]` package
+
+In the `{dotnet_root}/shared/Microsoft.NETCore.App/<runtime version>` directory, the following two files are expected:
+
+- `System.Text.Json.dll` - installed with `dotnet-runtime-[major].[minor]` package
+- `System.Text.Json.pdb` - installed with `dotnet-runtime-dbg-[major].[minor]` package
+
+In the `{dotnet_root/shared/Microsoft.AspNetCore.App/<aspnetcore version>` directory, the following two files are expected:
+
+- `Microsoft.AspNetCore.Routing.dll` - installed with `aspnetcore-runtime-[major].[minor]` packages
+- `Microsoft.AspNetCore.Routing.pdb` - installed with `aspnetcore-runtime-dbg-[major].[minor]` packages
+
+Starting with .NET 8.0, all .NET debug content (PDB files), produced by source-build, is available in a tarball named `dotnet-symbols-sdk-<version>-<rid>.tar.gz`. This archive contains PDBs in subdirectories that match the directory structure of the .NET SDK tarball - `dotnet-sdk-<version>-<rid>.tar.gz`.
+
+While all debug content is available in the debug tarball, not all debug content is equally important. End users are mostly interested in the content of the `shared/Microsoft.AspNetCore.App/<aspnetcore version>` and `shared/Microsoft.NETCore.App/<runtime version>` directories.
+
+The SDK content under `sdk/<sdk version>` is useful for debugging .NET SDK toolsets.
+
+The following packages are the recommended debug packages:
+
+- `aspnetcore-runtime-dbg-[major].[minor]` - Installs debug content for a specific ASP.NET Core runtime
+  - **Version:** \<aspnetcore runtime version>
+  - **Example:** aspnetcore-runtime-dbg-8.0
+  - **Contains:** debug content for (6)
+  - **Dependencies:** `aspnetcore-runtime-[major].[minor]`
+
+- `dotnet-runtime-dbg-[major].[minor]` - Installs debug content for a specific runtime
+  - **Version:** \<runtime version>
+  - **Example:** dotnet-runtime-dbg-8.0
+  - **Contains:** debug content for (5)
+  - **Dependencies:** `dotnet-runtime-[major].[minor]`
+
+The following debug package is optional:
+
+- `dotnet-sdk-dbg-[major].[minor]` - Installs debug content for a specific SDK version
+  - **Version:** \<sdk version>
+  - **Example:** dotnet-sdk-dbg-8.0
+  - **Contains:** debug content for (3),(4),(18)
+  - **Dependencies:** `dotnet-sdk-[major].[minor]`
+
+The debug tarball also contains some debug content under `packs`, which represents copies of content under `shared`. In the .NET layout, the `packs` directory is used for *building* .NET applications. There are no debugging scenarios, so you shouldn't package the debug content under `packs` in the debug tarball.
 
 ## Building packages
 

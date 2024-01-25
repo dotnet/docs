@@ -4,6 +4,38 @@ items:
 - name: Breaking changes by version
   expanded: true
   items:
+  - name: .NET 9
+    items:
+    - name: Overview
+      href: 9.0.md
+    - name: Core .NET libraries
+      items:
+      - name: Creating type of array of System.Void not allowed
+        href: core-libraries/9.0/type-instance.md
+      - name: RuntimeHelpers.GetSubArray returns different type
+        href: core-libraries/9.0/getsubarray-return.md
+    - name: Networking
+      items:
+      - name: HttpListenerRequest.UserAgent is nullable
+        href: networking/9.0/useragent-nullable.md
+    - name: SDK and MSBuild
+      items:
+      - name: "'dotnet workload' commands output change"
+        href: sdk/9.0/dotnet-workload-output.md
+      - name: Terminal logger is default
+        href: sdk/9.0/terminal-logger.md
+    - name: Windows Forms
+      items:
+      - name: BindingSource.SortDescriptions doesn't return null
+        href: windows-forms/9.0/sortdescriptions-return-value.md
+      - name: Changes to nullability annotations
+        href: windows-forms/9.0/nullability-changes.md
+      - name: ComponentDesigner.Initialize throws ArgumentNullException
+        href: windows-forms/9.0/componentdesigner-initialize.md
+      - name: DataGridViewRowAccessibleObject.Name starting row index
+        href: windows-forms/9.0/datagridviewrowaccessibleobject-name-row.md
+      - name: No exception if DataGridView is null
+        href: windows-forms/9.0/datagridviewheadercell-nre.md
   - name: .NET 8
     items:
     - name: Overview
@@ -16,9 +48,11 @@ items:
         href: aspnet-core/8.0/problemdetails-custom-converters.md
       - name: ISystemClock is obsolete
         href: aspnet-core/8.0/isystemclock-obsolete.md
+      - name: "Minimal APIs: IFormFile parameters require anti-forgery checks"
+        href: aspnet-core/8.0/antiforgery-checks.md
       - name: Rate-limiting middleware requires AddRateLimiter
         href: aspnet-core/8.0/addratelimiter-requirement.md
-      - name: Security token events return a JSonWebToken
+      - name: Security token events return a JsonWebToken
         href: aspnet-core/8.0/securitytoken-events.md
       - name: TrimMode defaults to full for Web SDK projects
         href: aspnet-core/8.0/trimmode-full.md
@@ -66,7 +100,7 @@ items:
         href: core-libraries/8.0/console-readkey-legacy.md
       - name: Method builders generate parameters with HasDefaultValue=false
         href: core-libraries/8.0/parameterinfo-hasdefaultvalue.md
-      - name: ProcessStartInfo.WindowsStyle honored when UseShellExecute is false
+      - name: ProcessStartInfo.WindowStyle honored when UseShellExecute is false
         href: core-libraries/8.0/processstartinfo-windowstyle.md
       - name: RuntimeIdentifier returns platform for which runtime was built
         href: core-libraries/8.0/runtimeidentifier.md
@@ -80,6 +114,8 @@ items:
       items:
       - name: Host determines RID-specific assets
         href: deployment/8.0/rid-asset-list.md
+      - name: .NET Monitor only includes distroless images
+        href: deployment/8.0/monitor-image.md
       - name: StripSymbols defaults to true
         href: deployment/8.0/stripsymbols-default.md
     - name: Entity Framework Core
@@ -168,6 +204,8 @@ items:
       items:
       - name: BinaryFormatter disabled for most projects
         href: serialization/8.0/binaryformatter-disabled.md
+      - name: PublishedTrimmed projects fail reflection-based serialization
+        href: serialization/8.0/publishtrimmed.md
       - name: Reflection-based deserializer resolves metadata eagerly
         href: serialization/8.0/metadata-resolving.md
     - name: Windows Forms
@@ -254,6 +292,8 @@ items:
         href: core-libraries/7.0/max-precision-numeric-format-strings.md
       - name: Reflection invoke API exceptions
         href: core-libraries/7.0/reflection-invoke-exceptions.md
+      - name: Regex patterns with ranges corrected
+        href: core-libraries/7.0/regex-ranges.md
       - name: System.Drawing.Common config switch removed
         href: core-libraries/7.0/system-drawing.md
       - name: System.Runtime.CompilerServices.Unsafe NuGet package
@@ -452,8 +492,6 @@ items:
         href: core-libraries/6.0/filestream-position-updates-after-readasync-writeasync-completion.md
       - name: New diagnostic IDs for obsoleted APIs
         href: core-libraries/6.0/diagnostic-id-change-for-obsoletions.md
-      - name: New nullable annotation in AssociatedMetadataTypeTypeDescriptionProvider
-        href: core-libraries/6.0/nullable-ref-type-annotations-added.md
       - name: New Queryable method overloads
         href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
       - name: Nullability annotation changes
@@ -592,8 +630,6 @@ items:
         href: windows-forms/6.0/treenodecollection-item-throws-argumentexception.md
     - name: XML and XSLT
       items:
-      - name: XmlDocument.XmlResolver nullability change
-        href: core-libraries/6.0/xmlresolver-nullable.md
       - name: XNodeReader.GetAttribute behavior for invalid index
         href: core-libraries/6.0/xnodereader-getattribute.md
   - name: .NET 5
@@ -880,9 +916,11 @@ items:
         href: aspnet-core/8.0/problemdetails-custom-converters.md
       - name: ISystemClock is obsolete
         href: aspnet-core/8.0/isystemclock-obsolete.md
+      - name: "Minimal APIs: IFormFile parameters require anti-forgery checks"
+        href: aspnet-core/8.0/antiforgery-checks.md
       - name: Rate-limiting middleware requires AddRateLimiter
         href: aspnet-core/8.0/addratelimiter-requirement.md
-      - name: Security token events return a JSonWebToken
+      - name: Security token events return a JsonWebToken
         href: aspnet-core/8.0/securitytoken-events.md
       - name: TrimMode defaults to full for Web SDK projects
         href: aspnet-core/8.0/trimmode-full.md
@@ -1096,6 +1134,12 @@ items:
         href: containers/8.0/app-user.md
   - name: Core .NET libraries
     items:
+    - name: .NET 9
+      items:
+      - name: Creating type of array of System.Void not allowed
+        href: core-libraries/9.0/type-instance.md
+      - name: RuntimeHelpers.GetSubArray returns different type
+        href: core-libraries/9.0/getsubarray-return.md
     - name: .NET 8
       items:
       - name: Activity operation name when null
@@ -1126,7 +1170,7 @@ items:
         href: core-libraries/8.0/console-readkey-legacy.md
       - name: Method builders generate parameters with HasDefaultValue=false
         href: core-libraries/8.0/parameterinfo-hasdefaultvalue.md
-      - name: ProcessStartInfo.WindowsStyle honored when UseShellExecute is false
+      - name: ProcessStartInfo.WindowStyle honored when UseShellExecute is false
         href: core-libraries/8.0/processstartinfo-windowstyle.md
       - name: RuntimeIdentifier returns platform for which runtime was built
         href: core-libraries/8.0/runtimeidentifier.md
@@ -1158,6 +1202,8 @@ items:
         href: core-libraries/7.0/max-precision-numeric-format-strings.md
       - name: Reflection invoke API exceptions
         href: core-libraries/7.0/reflection-invoke-exceptions.md
+      - name: Regex patterns with ranges corrected
+        href: core-libraries/7.0/regex-ranges.md
       - name: System.Drawing.Common config switch removed
         href: core-libraries/7.0/system-drawing.md
       - name: System.Runtime.CompilerServices.Unsafe NuGet package
@@ -1188,8 +1234,6 @@ items:
         href: core-libraries/6.0/filestream-position-updates-after-readasync-writeasync-completion.md
       - name: New diagnostic IDs for obsoleted APIs
         href: core-libraries/6.0/diagnostic-id-change-for-obsoletions.md
-      - name: New nullable annotation in AssociatedMetadataTypeTypeDescriptionProvider
-        href: core-libraries/6.0/nullable-ref-type-annotations-added.md
       - name: New Queryable method overloads
         href: core-libraries/6.0/additional-linq-queryable-method-overloads.md
       - name: Nullability annotation changes
@@ -1318,6 +1362,8 @@ items:
       items:
       - name: Host determines RID-specific assets
         href: deployment/8.0/rid-asset-list.md
+      - name: .NET Monitor only includes distroless images
+        href: deployment/8.0/monitor-image.md
       - name: StripSymbols defaults to true
         href: deployment/8.0/stripsymbols-default.md
     - name: .NET 7
@@ -1470,6 +1516,10 @@ items:
         href: maui/7.0/iwindowstatemanager-apis-removed.md
   - name: Networking
     items:
+    - name: .NET 9
+      items:
+      - name: HttpListenerRequest.UserAgent is nullable
+        href: networking/9.0/useragent-nullable.md
     - name: .NET 8
       items:
       - name: SendFile throws NotSupportedException for connectionless sockets
@@ -1510,6 +1560,12 @@ items:
         href: reflection/8.0/function-pointer-reflection.md
   - name: SDK and MSBuild
     items:
+    - name: .NET 9
+      items:
+      - name: "'dotnet workload' commands output change"
+        href: sdk/9.0/dotnet-workload-output.md
+      - name: Terminal logger is default
+        href: sdk/9.0/terminal-logger.md
     - name: .NET 8
       items:
       - name: CLI console output uses UTF-8
@@ -1636,6 +1692,8 @@ items:
       items:
       - name: BinaryFormatter disabled for most projects
         href: serialization/8.0/binaryformatter-disabled.md
+      - name: PublishedTrimmed projects fail reflection-based serialization
+        href: serialization/8.0/publishtrimmed.md
       - name: Reflection-based deserializer resolves metadata eagerly
         href: serialization/8.0/metadata-resolving.md
     - name: .NET 7
@@ -1698,6 +1756,18 @@ items:
         href: wcf-client/6.0/duplex-synchronization-context.md
   - name: Windows Forms
     items:
+    - name: .NET 9
+      items:
+      - name: BindingSource.SortDescriptions doesn't return null
+        href: windows-forms/9.0/sortdescriptions-return-value.md
+      - name: Changes to nullability annotations
+        href: windows-forms/9.0/nullability-changes.md
+      - name: ComponentDesigner.Initialize throws ArgumentNullException
+        href: windows-forms/9.0/componentdesigner-initialize.md
+      - name: DataGridViewRowAccessibleObject.Name starting row index
+        href: windows-forms/9.0/datagridviewrowaccessibleobject-name-row.md
+      - name: No exception if DataGridView is null
+        href: windows-forms/9.0/datagridviewheadercell-nre.md
     - name: .NET 8
       items:
       - name: Anchor layout changes
@@ -1782,8 +1852,6 @@ items:
         href: xml/7.0/xmlsecureresolver-obsolete.md
     - name: .NET 6
       items:
-      - name: XmlDocument.XmlResolver nullability change
-        href: core-libraries/6.0/xmlresolver-nullable.md
       - name: XNodeReader.GetAttribute behavior for invalid index
         href: core-libraries/6.0/xnodereader-getattribute.md
 - name: Resources

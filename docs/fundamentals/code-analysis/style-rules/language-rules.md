@@ -99,7 +99,7 @@ C# style rules:
 
 - [Use expression body for constructors (IDE0021)](ide0021.md)
 - [Use expression body for methods (IDE0022)](ide0022.md)
-- [Use expression body for operators (IDE0023](ide0023-ide0024.md)
+- [Use expression body for operators (IDE0023)](ide0023-ide0024.md)
 - [Use expression body for operators (IDE0024)](ide0023-ide0024.md)
 - [Use expression body for properties (IDE0025)](ide0025.md)
 - [Use expression body for indexers (IDE0026)](ide0026.md)
@@ -159,6 +159,12 @@ C# style rules:
 - [Use UTF-8 string literal (IDE0230)](ide0230.md)
 - [Nullable directive is redundant (IDE0240)](ide0240.md)
 - [Nullable directive is unnecessary (IDE0241)](ide0241.md)
+- [Use collection expression for array (IDE0300)](ide0300.md)
+- [Use collection expression for empty (IDE0301)](ide0301.md)
+- [Use collection expression for stack alloc (IDE0302)](ide0302.md)
+- [Use collection expression for `Create()` (IDE0303)](ide0303.md)
+- [Use collection expression for builder (IDE0304](ide0304.md)
+- [Use collection expression for fluent (IDE0305)](ide0305.md)
 
 Visual Basic style rules:
 

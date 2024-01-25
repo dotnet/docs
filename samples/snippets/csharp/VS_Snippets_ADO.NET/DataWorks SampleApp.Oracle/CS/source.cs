@@ -1,18 +1,17 @@
 ﻿// <Snippet1>
 using System;
-using System.Data;
 using System.Data.OracleClient;
 
-class Program
+static class Program
 {
     static void Main()
     {
-        string connectionString =
+        const string connectionString =
             "Data Source=ThisOracleServer;Integrated Security=yes;";
-        string queryString =
+        const string queryString =
             "SELECT CUSTOMER_ID, NAME FROM DEMO.CUSTOMER";
         using (OracleConnection connection =
-                   new OracleConnection(connectionString))
+                   new(connectionString))
         {
             OracleCommand command = connection.CreateCommand();
             command.CommandText = queryString;

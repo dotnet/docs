@@ -4,7 +4,6 @@ description: "Learn how to ignore properties when serializing with System.Text.J
 ms.date: 07/22/2022
 ms.custom: devdivchpfy22
 no-loc: [System.Text.Json, Newtonsoft.Json]
-zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"

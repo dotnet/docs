@@ -1,9 +1,9 @@
 ---
 title: .NET Standard
 description: Learn about .NET Standard, its versions, and the .NET implementations that support it.
-ms.date: 11/14/2022
-ms.prod: dotnet
-ms.technology: dotnet-standard
+ms.date: 11/15/2023
+ms.service: dotnet
+ms.subservice: standard-library
 ms.custom: "updateeachrelease"
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
 ---
@@ -79,7 +79,7 @@ For more information, see [.NET Framework compatibility mode](../core/porting/th
 
 ## .NET Standard libraries and Visual Studio
 
-In order to build .NET Standard libraries in Visual Studio, make sure you have [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022), [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or Visual Studio 2017 version 15.3 or later installed on Windows, or [Visual Studio for Mac version 7.1](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link) or later installed on macOS.
+To build .NET Standard libraries in Visual Studio, make sure you have [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022), [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or Visual Studio 2017 version 15.3 or later installed on Windows, or [Visual Studio for Mac version 7.1](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link) or later installed on macOS.
 
 If you only need to consume .NET Standard 2.0 libraries in your projects, you can also do that in Visual Studio 2015. However, you need NuGet client 3.6 or higher installed. You can download the NuGet client for Visual Studio 2015 from the [NuGet downloads](https://www.nuget.org/downloads) page.
 

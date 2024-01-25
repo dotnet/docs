@@ -30,7 +30,73 @@ The QUIC implementation was introduced in .NET 5 as the `System.Net.Quic` librar
 > [!NOTE]
 > In .NET 7.0, the APIs are published as [preview features](https://github.com/dotnet/designs/blob/main/accepted/2021/preview-features/preview-features.md).
 
-From the implementation perspective, `System.Net.Quic` depends on [MsQuic](https://github.com/microsoft/msquic), the native implementation of QUIC protocol. As a result, `System.Net.Quic` platform support and dependencies are inherited from `MsQuic` and documented in [HTTP/3 Platform dependencies](../../../core/extensions/httpclient-http3.md#platform-dependencies). In short, the `MsQuic` library is shipped as part of .NET for Windows. But for Linux, `libmsquic` must be manually installed via an appropriate package manager. For the other platforms, it's still possible to build `MsQuic` manually, whether against SChannel or OpenSSL, and use it with `System.Net.Quic`. However, these scenarios are not part of our testing matrix and unforeseen problems might occur.
+From the implementation perspective, `System.Net.Quic` depends on [MsQuic](https://github.com/microsoft/msquic), the native implementation of QUIC protocol. As a result, `System.Net.Quic` platform support and dependencies are inherited from MsQuic and documented in the [Platform dependencies](#platform-dependencies) section. In short, the MsQuic library is shipped as part of .NET for Windows. But for Linux, you must manually install `libmsquic` via an appropriate package manager. For the other platforms, it's still possible to build MsQuic manually, whether against SChannel or OpenSSL, and use it with `System.Net.Quic`. However, these scenarios are not part of our testing matrix and unforeseen problems might occur.
+
+## Platform dependencies
+
+The following sections describe the platform dependencies for QUIC in .NET.
+
+### Windows
+
+- Windows 11, Windows Server 2022, or later. (Earlier Windows versions are missing the cryptographic APIs required to support QUIC.)
+
+On Windows, msquic.dll is distributed as part of the .NET runtime, and no other steps are required to install it.
+
+### Linux
+
+> [!NOTE]
+> .NET 7+ is only compatible with 2.2+ versions of libmsquic.
+
+The `libmsquic` package is required on Linux. This package is published in Microsoft's official Linux package repository, <https://packages.microsoft.com>. You must add this repository to your package manager before installing the package. For more information, see [Linux Software Repository for Microsoft Products](/linux/packages).
+
+> [!CAUTION]
+> Adding the Microsoft pacakge repository may conflict with your distribution's repository when your distribution's repository provides .NET and other Microsoft packages. To avoid or troubleshoot package mixups, review [Troubleshoot .NET errors related to missing files on Linux](../../../core/install/linux-package-mixup.md#whats-going-on).
+
+##### Examples
+
+Here are some examples of using a package manager to install `libmsquic`:
+
+- **APT**
+
+  ```bash
+  sudo apt-get libmsquic 
+  ```
+
+- **APK**
+
+  ```bash
+  sudo apk add libmsquic
+  ```
+
+- **DNF**
+
+  ```bash
+  sudo dnf install libmsquic
+  ```
+
+- **zypper**
+
+  ```bash
+  sudo zypper install libmsquic
+  ```
+
+- **YUM**
+
+  ```bash
+  sudo yum install libmsquic
+  ```
+
+##### Dependencies of libmsquic
+
+All the following dependencies are stated in the `libmsquic` package manifest and are automatically installed by the package manager:
+
+- OpenSSL 3+ or 1.1 - depends on the default OpenSSL version for the distribution version, for example, OpenSSL 3 for [Ubuntu 22](https://packages.ubuntu.com/jammy/openssl) and OpenSSL 1.1 for [Ubuntu 20](https://packages.ubuntu.com/focal/utils/openssl).
+
+- libnuma 1
+
+### macOS
+
+QUIC isn't currently supported on macOS but may be available in a future release.
 
 ## API overview
 

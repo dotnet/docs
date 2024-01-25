@@ -96,12 +96,12 @@ to fill at least six characters. If width is `*`, then an extra integer argument
 
 Valid flags are:
 
-| Flag   | Effect        | Remarks                      |
-|:-------------------|:---------------|:-----------------------------|
-| `0`  | Add zeros instead of spaces to make up the required width |    |
-| `-` |  Left justify the result within the specified width |   |
-| `+`  | Add a `+` character if the number is positive (to match a `-` sign for negatives) |   |
-| space character | Add an extra space if the number is positive (to match a '-' sign for negatives) |
+| Flag            | Effect                                                                            |
+|:----------------|:----------------------------------------------------------------------------------|
+| `0`             | Add zeros instead of spaces to make up the required width                         |
+| `-`             | Left justify the result within the specified width                                |
+| `+`             | Add a `+` character if the number is positive (to match a `-` sign for negatives) |
+| space character | Add an extra space if the number is positive (to match a '-' sign for negatives)  |
 
 The printf `#` flag is invalid and a compile-time error will be reported if it is used.
 

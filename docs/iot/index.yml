@@ -6,7 +6,7 @@ summary: .NET 💜 Internet of Things
 metadata:
   title: .NET IoT Libraries documentation
   description: Learn how .NET can be used to build applications for IoT devices and scenarios.
-  ms.prod: dotnet
+  ms.service: dotnet
   ms.topic: landing-page
   ms.collection: collection
   author: camsoper
@@ -50,7 +50,7 @@ landingContent:
       - linkListType: learn
         links:
           - text: Construct Internet of Things devices using the .NET IoT Libraries
-            url: /training/modules/create-iot-device-dotnet/ 
+            url: /training/modules/create-iot-device-dotnet/
       - linkListType: tutorial
         links:
           - text: Blink an LED
@@ -76,7 +76,7 @@ landingContent:
             url: https://github.com/dotnet/iot
           - text: Device bindings with samples on GitHub
             url: https://github.com/dotnet/iot/tree/main/src/devices
-  
+
   - title: Video learning
     linkLists:
       - linkListType: video

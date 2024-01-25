@@ -65,7 +65,7 @@ Executables are generated in these folders for each globally installed tool, alt
 
 ### `--tool-path` tools
 
-Local tools with explicit tool paths are stored wherever you specified the `--tool-path` parameter to point to. They're stored in the same way as global tools: an executable binary with the actual binaries in a sibling `.store` directory.
+Tools with explicit tool paths are stored wherever you specified the `--tool-path` parameter to point to. They're stored in the same way as global tools: an executable binary with the actual binaries in a sibling `.store` directory.
 
 ### Local tools
 
@@ -153,6 +153,8 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   The version of the tool to install. By default, the latest stable package version is installed. Use this option to install preview or older versions of the tool.
 
+  Starting with .NET 8.0, `--version Major.Minor.Patch` refers to a specific major/minor/patch version, including unlisted versions. To get the latest version of a certain major/minor version instead, use `--version Major.Minor.*`.
+
 ## Examples
 
 - **`dotnet tool install -g dotnetsay`**
@@ -174,6 +176,10 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 - **`dotnet tool install dotnetsay`**
 
   Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a local tool for the current directory.
+
+- **`dotnet tool install -g --verbosity minimal`**
+
+  Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool with the verbosity of minimal. The default verbosity for global tool is quiet.
 
 ## See also
 

@@ -7,7 +7,7 @@ brand: dotnet
 metadata:
   title: .NET documentation
   description: Learn to use .NET to create applications on any platform using C#, F#, and Visual Basic. Browse API reference, sample code, tutorials, and more.
-  ms.product: dotnet
+  ms.service: dotnet
   ms.topic: hub-page
   ms.collection: collection
   author: BillWagner
@@ -120,7 +120,7 @@ conceptualContent:
         - url: orleans/index.yml
           itemType: overview
           text: Build cloud-native .NET apps with Orleans
-        - url: /dotnet/aspire/quickstart-build-your-first-aspire-app
+        - url: /dotnet/aspire/get-started/quickstart-build-your-first-aspire-app
           itemType: quickstart
           text: Build cloud-native apps with .NET Aspire
         - url: core/docker/build-container.md

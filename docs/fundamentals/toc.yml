@@ -25,6 +25,8 @@ items:
         items:
         - name: Overview
           href: ../core/install/linux-ubuntu.md
+        - name: "23.10"
+          href: ../core/install/linux-ubuntu-2310.md
         - name: "23.04"
           href: ../core/install/linux-ubuntu-2304.md
         - name: "22.10"
@@ -71,6 +73,8 @@ items:
   items:
   - name: Introduction to .NET
     href: ../core/introduction.md
+  - name: Build apps with .NET
+    href: ../core/apps.md
   - name: .NET languages
     href: ../fundamentals/languages.md
   - name: .NET implementations
@@ -211,20 +215,37 @@ items:
   items:
   - name: Base types overview
     items:
-    - name: Common type system & common language specification
-      href: ../standard/common-type-system.md
     - name: Common type system
       href: ../standard/base-types/common-type-system.md
     - name: Language independence
       href: ../standard/language-independence.md
     - name: Type conversion
-      href: ../standard/base-types/type-conversion.md
-    - name: Type conversion tables
-      href: ../standard/base-types/conversion-tables.md
+      items:
+      - name: Overview
+        displayName: type conversion
+        href: ../standard/base-types/type-conversion.md
+      - name: Type conversion tables
+        href: ../standard/base-types/conversion-tables.md
+      - name: Supplemental API remarks
+        items:
+        - name: Convert class
+          href: runtime-libraries/system-convert.md
     - name: Choose between anonymous and tuple types
       href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
     - name: Class library overview
       href: ../standard/class-library-overview.md
+    - name: Supplemental API remarks
+      items:
+      - name: System.Object class
+        href: runtime-libraries/system-object.md
+    - name: Nullability
+      items:
+      - name: Supplemental API remarks
+        items:
+        - name: Nullable class
+          href: runtime-libraries/system-nullable.md
+        - name: Nullable<T> class
+          href: runtime-libraries/system-nullable{t}.md
   - name: Generic types
     items:
     - name: Overview
@@ -260,8 +281,24 @@ items:
       href: ../standard/collections/hashtable-and-dictionary-collection-types.md
     - name: Thread-safe collections
       href: ../standard/collections/thread-safe/index.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+    - name: Supplemental API remarks
+      items:
+      - name: HashSet<T> class
+        href: runtime-libraries/system-collections-generic-hashset{t}.md
+      - name: List<T> class
+        href: runtime-libraries/system-collections-generic-list{t}.md
+      - name: ObservableCollection<T> class
+        href: runtime-libraries/system-collections-objectmodel-observablecollection{t}.md
   - name: Delegates and lambdas
     href: ../standard/delegates-lambdas.md
+  - name: Enumerations
+    items:
+    - name: Supplemental API remarks
+      items:
+      - name: Enum class
+        href: runtime-libraries/system-enum.md
+      - name: FlagsAttribute class
+        href: runtime-libraries/system-flagsattribute.md
   - name: Events
     items:
     - name: Overview
@@ -287,7 +324,7 @@ items:
     - name: Overview
       href: ../standard/exceptions/index.md
       displayName: exceptions
-    - name: Exception class and properties
+    - name: Exception class
       href: ../standard/exceptions/exception-class-and-properties.md
     - name: How-tos
       items:
@@ -309,8 +346,47 @@ items:
       href: ../standard/exceptions/handling-com-interop-exceptions.md
     - name: Best practices
       href: ../standard/exceptions/best-practices-for-exceptions.md
+    - name: Supplemental API remarks
+      items:
+      - name: AccessViolationException class
+        href: runtime-libraries/system-accessviolationexception.md
+      - name: Exception class
+        href: runtime-libraries/system-exception.md
+      - name: InvalidCastException class
+        href: runtime-libraries/system-invalidcastexception.md
+      - name: InvalidOperationException class
+        href: runtime-libraries/system-invalidoperationexception.md
+      - name: NotImplementedException class
+        href: runtime-libraries/system-notimplementedexception.md
+      - name: NotSupportedException class
+        href: runtime-libraries/system-notsupportedexception.md
+      - name: TypeInitializationException class
+        href: runtime-libraries/system-typeinitializationexception.md
   - name: Numeric types
-    href: ../standard/numerics.md
+    items:
+    - name: Overview
+      displayName: numeric types
+      href: ../standard/numerics.md
+    - name: Supplemental API remarks
+      items:
+      - name: Boolean struct
+        href: runtime-libraries/system-boolean.md
+      - name: Byte struct
+        href: runtime-libraries/system-byte.md
+      - name: Decimal struct
+        href: runtime-libraries/system-decimal.md
+      - name: Double struct
+        href: runtime-libraries/system-double.md
+      - name: Int32 struct
+        href: runtime-libraries/system-int32.md
+      - name: Int64 struct
+        href: runtime-libraries/system-int64.md
+      - name: BigInteger struct
+        href: runtime-libraries/system-numerics-biginteger.md
+      - name: Complex struct
+        href: runtime-libraries/system-numerics-complex.md
+      - name: Single struct
+        href: runtime-libraries/system-single.md
   - name: Dates, times, and time zones
     items:
     - name: Overview
@@ -366,6 +442,12 @@ items:
           href: ../standard/datetime/save-time-zones-to-an-embedded-resource.md
         - name: Restore time zones from an embedded resource
           href: ../standard/datetime/restore-time-zones-from-an-embedded-resource.md
+    - name: Supplemental API remarks
+      items:
+      - name: DateTime struct
+        href: runtime-libraries/system-datetime.md
+      - name: TimeSpan struct
+        href: runtime-libraries/system-timespan.md
   - name: Attributes
     items:
     - name: Overview
@@ -385,8 +467,14 @@ items:
         href: ../standard/memory-and-spans/index.md
       - name: Memory<T> and Span<T> usage guidelines
         href: ../standard/memory-and-spans/memory-t-usage-guidelines.md
+      - name: Supplemental API remarks
+        items:
+        - name: Span<T> struct
+          href: runtime-libraries/system-span{t}.md
     - name: SIMD-enabled types
       href: ../standard/simd.md
+  - name: Value tuples
+    href: ../standard/value-tuples.md
 - name: Runtime libraries
   items:
   - name: Overview
@@ -470,6 +558,22 @@ items:
         href: ../standard/base-types/parsing-datetime.md
       - name: Parse other strings
         href: ../standard/base-types/parsing-other.md
+    - name: Supplemental API remarks
+      items:
+      - name: String class
+        href: runtime-libraries/system-string.md
+      - name: Char struct
+        href: runtime-libraries/system-char.md
+      - name: StringComparer class
+        href: runtime-libraries/system-stringcomparer.md
+      - name: Encoding class
+        href: runtime-libraries/system-text-encoding.md
+      - name: Regex class
+        href: runtime-libraries/system-text-regularexpressions-regex.md
+      - name: Rune struct
+        href: runtime-libraries/system-text-rune.md
+      - name: StringBuilder class
+        href: runtime-libraries/system-text-stringbuilder.md
   - name: Regular expressions
     items:
     - name: Overview
@@ -665,6 +769,16 @@ items:
         href: ../standard/serialization/binaryformatter-security-guide.md
       - name: BinaryFormatter event source
         href: ../standard/serialization/binaryformatter-event-source.md
+    - name: Supplemental API remarks
+      items:
+      - name: DataContractAttribute class
+        href: runtime-libraries/system-runtime-serialization-datacontractattribute.md
+      - name: DataContractSerializer class
+        href: runtime-libraries/system-runtime-serialization-datacontractserializer.md
+      - name: IExtensibleDataObject class
+        href: runtime-libraries/system-runtime-serialization-iextensibledataobject.md
+      - name: XsdDataContractExporter class
+        href: runtime-libraries/system-runtime-serialization-xsddatacontractexporter.md
   - name: System.CommandLine
     items:
     - name: Overview
@@ -758,8 +872,22 @@ items:
       href: ../standard/io/buffers.md
     - name: Memory-mapped files
       href: ../standard/io/memory-mapped-files.md
+    - name: Supplemental API remarks
+      items:
+      - name: FileStream class
+        href: runtime-libraries/system-io-filestream.md
+      - name: FileSystemWatcher class
+        href: runtime-libraries/system-io-filesystemwatcher.md
+  - name: The System.AppContext class
+    href: runtime-libraries/system-appcontext.md
   - name: The System.Console class
-    href: ../standard/building-console-apps.md
+    items:
+    - name: Console apps
+      href: ../standard/building-console-apps.md
+    - name: Supplemental API remarks
+      href: runtime-libraries/system-console.md
+  - name: The System.Random class
+    href: runtime-libraries/system-random.md
   - name: Dependency injection
     items:
     - name: Overview
@@ -830,9 +958,6 @@ items:
     - name: IPv6 overview
       href: networking/ipv6-overview.md
       displayName: ipv6,ipv
-    - name: Telemetry
-      href: networking/networking-telemetry.md
-      displayName: networking telemetry
     - name: Service discovery in .NET
       href: ../core/extensions/service-discovery.md
     - name: HTTP
@@ -861,6 +986,14 @@ items:
       - name: Customize SNI in HTTP requests
         href: ../core/extensions/httpclient-sni.md
         displayName: networking,http,httpclient,sni,server name indication,server name indication http,server name indication httpclient,server name indication http client
+      - name: Supplemental API remarks
+        items:
+        - name: HttpClient class
+          href: runtime-libraries/system-net-http-httpclient.md
+        - name: HttpClientHandler class
+          href: runtime-libraries/system-net-http-httpclienthandler.md
+        - name: HttpListener class
+          href: runtime-libraries/system-net-httplistener.md
     - name: Sockets
       items:
       - name: Sockets support
@@ -872,6 +1005,10 @@ items:
       - name: Use TcpClient and TcpListener
         href: networking/sockets/tcp-classes.md
         displayName: networking,tcp,tcp listener,tcp client
+      - name: Supplemental API remarks
+        items:
+        - name: Socket class
+          href: runtime-libraries/system-net-sockets-socket.md
     - name: WebSockets
       items:
       - name: WebSockets support
@@ -893,6 +1030,20 @@ items:
         href: networking/quic/quic-overview.md
       - name: QUIC troubleshooting
         href: networking/quic/quic-troubleshooting.md
+    - name: Telemetry
+      items:
+      - name: Networking telemetry
+        href: networking/telemetry/overview.md
+        displayName: networking telemetry
+      - name: Metrics
+        href: networking/telemetry/metrics.md
+        displayName: networking metrics
+      - name: Events
+        href: networking/telemetry/events.md
+        displayName: networking events
+      - name: Event counters
+        href: networking/telemetry/event-counters.md
+        displayName: networking event counters
   - name: File globbing
     href: ../core/extensions/file-globbing.md
     displayName: file globbing,globbing,globbing patterns,globbing pattern,globbing
@@ -910,12 +1061,6 @@ items:
     - name: Globalization and ICU
       href: ../core/extensions/globalization-icu.md
       displayName: globalization,icu,culture
-    - name: Localizability review
-      href: ../core/extensions/localizability-review.md
-      displayName: localizability,localization,localization review,localizability review
-    - name: Localization
-      href: ../core/extensions/localization.md
-      displayName: localization,localization review,localizability review
     - name: Culture-insensitive string operations
       items:
       - name: Overview
@@ -930,6 +1075,34 @@ items:
         href: ../core/extensions/performing-culture-insensitive-string-operations-in-arrays.md
     - name: Best practices for developing world-ready apps
       href: ../core/extensions/best-practices-for-developing-world-ready-apps.md
+    - name: Localizability review
+      href: ../core/extensions/localizability-review.md
+      displayName: localizability,localization,localization review,localizability review
+    - name: Localization
+      href: ../core/extensions/localization.md
+      displayName: localization,localization review,localizability review
+    - name: Supplemental API remarks
+      items:
+      - name: CompareInfo
+        href: runtime-libraries/system-globalization-compareinfo.md
+      - name: CompareOptions
+        href: runtime-libraries/system-globalization-compareoptions.md
+      - name: CultureAndRegionInfoBuilder
+        href: runtime-libraries/system-globalization-cultureandregioninfobuilder.md
+      - name: CultureInfo
+        href: runtime-libraries/system-globalization-cultureinfo.md
+      - name: DateTimeFormatInfo
+        href: runtime-libraries/system-globalization-datetimeformatinfo.md
+      - name: NumberFormatInfo
+        href: runtime-libraries/system-globalization-numberformatinfo.md
+      - name: PersianCalendar
+        href: runtime-libraries/system-globalization-persiancalendar.md
+      - name: RegionInfo
+        href: runtime-libraries/system-globalization-regioninfo.md
+      - name: SortKey
+        href: runtime-libraries/system-globalization-sortkey.md
+      - name: SortVersion
+        href: runtime-libraries/system-globalization-sortversion.md
   - name: Resources in .NET apps
     items:
     - name: Overview
@@ -946,6 +1119,18 @@ items:
       href: ../core/extensions/package-and-deploy-resources.md
     - name: Retrieve resources
       href: ../core/extensions/retrieve-resources.md
+    - name: Supplemental API remarks
+      items:
+      - name: MissingManifestResourceException class
+        href: runtime-libraries/system-resources-missingmanifestresourceexception.md
+      - name: NeutralResourcesLanguageAttribute class
+        href: runtime-libraries/system-resources-neutralresourceslanguageattribute.md
+      - name: ResourceManager class
+        href: runtime-libraries/system-resources-resourcemanager.md
+      - name: ResourceReader class
+        href: runtime-libraries/system-resources-resourcereader.md
+      - name: SatelliteContractVersionAttribute class
+        href: runtime-libraries/system-resources-satellitecontractversionattribute.md
   - name: Worker Services
     items:
     - name: Overview
@@ -968,6 +1153,34 @@ items:
     href: ../core/extensions/caching.md
   - name: Channels
     href: ../core/extensions/channels.md
+  - name: Math operations
+    items:
+    - name: Supplemental API remarks
+      items:
+      - name: MidpointRounding enum
+        href: runtime-libraries/system-midpointrounding.md
+  - name: The Win32.Registry class
+    href: runtime-libraries/microsoft-win32-registry.md
+  - name: The Uri class
+    href: runtime-libraries/system-uri.md
+  - name: Reflection
+    items:
+    - name: Supplemental API remarks
+      items:
+      - name: Type class
+        href: runtime-libraries/system-type.md
+  - name: Graphics
+    items:
+    - name: Supplemental API remarks
+      items:
+      - name: Matrix class
+        href: runtime-libraries/system-drawing-drawing2d-matrix.md
+  - name: The InternalsVisibleToAttribute class
+    href: runtime-libraries/system-runtime-compilerservices-internalsvisibletoattribute.md
+  - name: The ComponentGuaranteesAttribute class
+    href: runtime-libraries/system-runtime-versioning-componentguaranteesattribute.md
+  - name: The AssemblyLoadContext class
+    href: runtime-libraries/system-runtime-loader-assemblyloadcontext.md
 - name: Execution model
   items:
   - name: Common Language Runtime (CLR)
@@ -986,7 +1199,12 @@ items:
       - name: Security considerations
         href: ../standard/assembly/security-considerations.md
       - name: Versioning
-        href: ../standard/assembly/versioning.md
+        items:
+        - name: Overview
+          displayName: versioning
+          href: ../standard/assembly/versioning.md
+        - name: The System.Version class
+          href: runtime-libraries/system-version.md
       - name: Side-by-side execution
         href: ../standard/assembly/side-by-side-execution.md
       - name: Assembly file format
@@ -1006,7 +1224,11 @@ items:
       - name: Assembly location
         href: ../standard/assembly/location.md
       - name: Set assembly attributes
-        href: ../standard/assembly/set-attributes.md
+        items:
+        - name: In code
+          href: ../standard/assembly/set-attributes.md
+        - name: In a project file
+          href: ../standard/assembly/set-attributes-project-file.md
       - name: Strong-named assemblies
         items:
         - name: Overview
@@ -1047,7 +1269,21 @@ items:
       - name: Inspect assembly contents using MetadataLoadContext
         href: ../standard/assembly/inspect-contents-using-metadataloadcontext.md
   - name: Metadata and self-describing components
-    href: ../standard/metadata-and-self-describing-components.md
+    items:
+    - name: Overview
+      href: ../standard/metadata-and-self-describing-components.md
+    - name: Supplemental API remarks
+      items:
+      - name: The AssemblyBuilder class
+        href: runtime-libraries/system-reflection-emit-assemblybuilder.md
+      - name: The MethodBuilder class
+        href: runtime-libraries/system-reflection-emit-methodbuilder.md
+      - name: The TypeBuilder class
+        href: runtime-libraries/system-reflection-emit-typebuilder.md
+      - name: The DynamicMethod class
+        href: runtime-libraries/system-reflection-emit-dynamicmethod.md
+      - name: The DebugDirectoryEntryType enum
+        href: runtime-libraries/system-reflection-portableexecutable-debugdirectoryentrytype.md
   - name: Dependency loading
     items:
     - name: Overview

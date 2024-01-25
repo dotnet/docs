@@ -1,8 +1,7 @@
-﻿namespace DependencyInjection.AntiPatterns
+﻿namespace DependencyInjection.AntiPatterns;
+
+public class ExampleDisposable : IDisposable
 {
-    public class ExampleDisposable : IDisposable
-    {
-        public void Dispose() =>
-            Console.WriteLine($"Disposed: {GetHashCode(),12}");
-    }
+    public void Dispose() =>
+        Console.WriteLine($"Disposed: {GetHashCode(),12}");
 }

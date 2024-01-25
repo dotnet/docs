@@ -1,11 +1,11 @@
 ﻿namespace LinqSamples;
 
-public class StoreResultsOfQueryInMemory
+public static class StoreResultsOfQueryInMemory
 {
     public static void StoreResultsOfQueryInMemory1()
     {
         // <store_results_of_query_in_memory_1>
-        List<int> numbers = new() { 1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 };
+        List<int> numbers = [1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
 
         IEnumerable<int> queryFactorsOfFour =
             from num in numbers
@@ -14,7 +14,7 @@ public class StoreResultsOfQueryInMemory
 
         // Store the results in a new variable
         // without executing a foreach loop.
-        List<int> factorsofFourList = queryFactorsOfFour.ToList();
+        var factorsofFourList = queryFactorsOfFour.ToList();
 
         // Read and write from the newly created list to demonstrate that it holds data.
         Console.WriteLine(factorsofFourList[2]);

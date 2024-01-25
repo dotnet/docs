@@ -1,7 +1,7 @@
 ---
 title: A tour of C# - Major language areas
 description: New to C#? Learn the basics of the language. This article contains a survey of major language features.
-ms.date: 03/14/2022
+ms.date: 11/14/2023
 ---
 # C# major language areas
 
@@ -32,19 +32,11 @@ The element type of an array can be any type, including an array type. An array 
 
 The first line creates an array with three elements, each of type `int[]` and each with an initial value of `null`. The next lines then initialize the three elements with references to individual array instances of varying lengths.
 
-The `new` operator permits the initial values of the array elements to be specified using an ***array initializer***, which is a list of expressions written between the delimiters `{` and `}`. The following example allocates and initializes an `int[]` with three elements.
+Collection initializers provide a consistent syntax to initialize elements in an array or a collection. The following example allocates and initializes an `int[]` with three elements.
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="InitializeArray":::
 
-The length of the array is inferred from the number of expressions between `{` and `}`. Array initialization can be shortened further such that the array type doesn't have to be restated.
-
-:::code language="csharp" source="./snippets/shared/Features.cs" ID="InitializeShortened":::
-
-Both of the previous examples are equivalent to the following code:
-
-:::code language="csharp" source="./snippets/shared/Features.cs" ID="InitializeGenerated":::
-
-The `foreach` statement can be used to enumerate the elements of any collection. The following code enumerates the array from the preceding example:
+The length of the array is inferred from the expressions between `[` and `]`. The `foreach` statement can be used to enumerate the elements of any collection. The following code enumerates the array from the preceding example:
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="EnumerateArray":::
 
@@ -91,6 +83,10 @@ This small sample shows the major features for asynchronous programming:
 - The method declaration includes the `async` modifier.
 - The body of the method `await`s the return of the `GetByteArrayAsync` method.
 - The type specified in the `return` statement matches the type argument in the `Task<T>` declaration for the method. (A method that returns a `Task` would use `return` statements without any argument).
+
+The [`async`](../language-reference/keywords/async.md) keyword and [`await`](../language-reference/operators/await.md) operator provide a language-level abstraction over lower-level primitives that support asynchronous operations. The compiler and library might rely on network interrupts, OS events, hardware interrupts, or other primitives to trigger the completion of an asynchronous operation. The compiler generates code to update the state of any <xref:System.Threading.Tasks.Task> object and transfer control to code that should execute when the awaited task completes.
+
+You can learn more about the mechanisms used in the section on [asynchronous programming in C#](../asynchronous-programming/index.md).
 
 ## Attributes
 

@@ -118,7 +118,8 @@ sudo apt-get update && \
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
 - libc6
-- libgcc-s1
+- libgcc1 (for 10.x)
+- libgcc-s1 (for 11.x and 12.x)
 - libgssapi-krb5-2
 - libicu63 (for 10.x)
 - libicu67 (for 11.x)

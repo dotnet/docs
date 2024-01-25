@@ -121,7 +121,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1099][1099] | COM Interop APIs on `System.Runtime.InteropServices.Marshal` do not support source-generated COM and will fail at run time. |
 | [SYSLIB1100][1100] | Configuration binding generator: Type is not supported. |
 | [SYSLIB1101][1101] | Configuration binding generator: Property on type is not supported. |
-| [SYSLIB1102][1102] | Configuration binding generator: Project's language version must be at least C# 11. |
+| [SYSLIB1102][1102] | Configuration binding generator: Project's language version must be at least C# 12. |
 | [SYSLIB1103][1103] | Configuration binding generator: Value types are invalid inputs to configuration 'Bind' methods. |
 | [SYSLIB1104][1104] | Configuration binding generator: Generator cannot determine the target configuration type. |
 | [SYSLIB1105][1105] | (Reserved for Microsoft.Extensions.Configuration.Binder.SourceGeneration.) |

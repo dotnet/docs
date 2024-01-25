@@ -33,13 +33,13 @@ public sealed class TodoService
                 $"todos?userId={userId}",
                 new JsonSerializerOptions(JsonSerializerDefaults.Web));
 
-            return todos ?? Array.Empty<Todo>();
+            return todos ?? [];
         }
         catch (Exception ex)
         {
             _logger.LogError("Error getting something fun to say: {Error}", ex);
         }
 
-        return Array.Empty<Todo>();
+        return [];
     }
 }

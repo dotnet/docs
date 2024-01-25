@@ -1,7 +1,7 @@
 ---
 title: Usage rules (code analysis)
 description: "Learn about code analysis usage rules."
-ms.date: 11/04/2016
+ms.date: 11/16/2023
 f1_keywords:
 - vs.codeanalysis.usagerules
 helpviewer_keywords:
@@ -62,3 +62,4 @@ Usage rules support proper usage of .NET.
 |[CA2258: Providing a 'DynamicInterfaceCastableImplementation' interface in Visual Basic is unsupported](ca2258.md) | Providing a functional `DynamicInterfaceCastableImplementationAttribute`-attributed interface requires the Default Interface Members feature, which is unsupported in Visual Basic. |
 | [CA2259: Ensure `ThreadStatic` is only used with static fields](ca2259.md) | <xref:System.ThreadStaticAttribute> only affects `static` (`Shared` in Visual Basic) fields. When applied to instance fields, the attribute has no impact on behavior. |
 | [CA2260: Implement generic math interfaces correctly](ca2260.md) | Generic math interfaces require the derived type itself to be used for the self-recurring type parameter. |
+| [CA2261: Do not use `ConfigureAwaitOptions.SuppressThrowing` with `Task<TResult>`](ca2261.md) | The `ConfigureAwaitOptions.SuppressThrowing` option isn't supported by the generic `Task<TResult>`, since that might lead to returning an invalid `TResult`. |

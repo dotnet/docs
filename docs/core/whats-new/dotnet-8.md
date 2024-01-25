@@ -481,7 +481,7 @@ IDataView predictions = model.Transform(split.TestSet);
   }
   ```
 
-- The new <xref:System.Buffers.SearchValues%601?displayProperty=fullName> type is designed to be passed to methods that look for the first occurrence of any value in the passed collection. For example, <xref:System.String.IndexOfAny(System.Char[])?displayProperty=nameWithType> looks for the first occurrence of any character in the specified array in the `string` it's called on. NET 8 adds new overloads of methods like <xref:System.String.IndexOfAny%2A?displayProperty=nameWithType> and <xref:System.MemoryExtensions.IndexOfAny%2A?displayProperty=nameWithType> that accept an instance of the new type. When you create an instance of <xref:System.Buffers.SearchValues%601?displayProperty=fullName>, all the data that's necessary to optimize subsequent searches is derived *at that time*, meaning the work is done up front.
+- Methods like <xref:System.MemoryExtensions.IndexOfAny%2A?displayProperty=nameWithType> look for the first occurrence of *any value in the passed collection*. The new <xref:System.Buffers.SearchValues%601?displayProperty=fullName> type is designed to be passed to such methods. Correspondingly, .NET 8 adds new overloads of methods like <xref:System.MemoryExtensions.IndexOfAny%2A?displayProperty=nameWithType> that accept an instance of the new type. When you create an instance of <xref:System.Buffers.SearchValues%601>, all the data that's necessary to optimize subsequent searches is derived *at that time*, meaning the work is done up front.
 - The new <xref:System.Text.CompositeFormat?displayProperty=fullName> type is useful for optimizing format strings that aren't known at compile time (for example, if the format string is loaded from a resource file). A little extra time is spent up front to do work such as parsing the string, but it saves the work from being done on each use.
 
   ```csharp
@@ -666,7 +666,7 @@ This section contains the following subtopics:
 
 ### Keyed DI services
 
-Keyed dependency injection (DI) services provides a means for registering and retrieving DI services using keys. By using keys, you can scope how your register and consume services. These are some of the new APIs:
+Keyed dependency injection (DI) services provide a means for registering and retrieving DI services using keys. By using keys, you can scope how you register and consume services. These are some of the new APIs:
 
 - The <xref:Microsoft.Extensions.DependencyInjection.IKeyedServiceProvider> interface.
 - The <xref:Microsoft.Extensions.DependencyInjection.ServiceKeyAttribute> attribute, which can be used to inject the key that was used for registration/resolution in the constructor.
@@ -674,35 +674,44 @@ Keyed dependency injection (DI) services provides a means for registering and re
 - Various new extension methods for <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> to support keyed services, for example, <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddKeyedScoped%2A?displayProperty=nameWithType>.
 - The <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider> implementation of <xref:Microsoft.Extensions.DependencyInjection.IKeyedServiceProvider>.
 
-The following example shows you to use keyed DI services.
+The following example shows you how to use keyed DI services.
 
 ```csharp
-using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.Options;
-
 var builder = WebApplication.CreateBuilder(args);
-
 builder.Services.AddSingleton<BigCacheConsumer>();
 builder.Services.AddSingleton<SmallCacheConsumer>();
-
-builder.Services.AddKeyedSingleton<IMemoryCache, BigCache>("big");
-builder.Services.AddKeyedSingleton<IMemoryCache, SmallCache>("small");
-
+builder.Services.AddKeyedSingleton<ICache, BigCache>("big");
+builder.Services.AddKeyedSingleton<ICache, SmallCache>("small");
 var app = builder.Build();
-
 app.MapGet("/big", (BigCacheConsumer data) => data.GetData());
 app.MapGet("/small", (SmallCacheConsumer data) => data.GetData());
-
+app.MapGet("/big-cache", ([FromKeyedServices("big")] ICache cache) => cache.Get("data"));
+app.MapGet("/small-cache", (HttpContext httpContext) => httpContext.RequestServices.GetRequiredKeyedService<ICache>("small").Get("data"));
 app.Run();
 
-class BigCacheConsumer([FromKeyedServices("big")] IMemoryCache cache)
+class BigCacheConsumer([FromKeyedServices("big")] ICache cache)
 {
     public object? GetData() => cache.Get("data");
 }
 
-class SmallCacheConsumer(IKeyedServiceProvider keyedServiceProvider)
+class SmallCacheConsumer(IServiceProvider serviceProvider)
 {
-    public object? GetData() => keyedServiceProvider.GetRequiredKeyedService<IMemoryCache>("small");
+    public object? GetData() => serviceProvider.GetRequiredKeyedService<ICache>("small").Get("data");
+}
+
+public interface ICache
+{
+    object Get(string key);
+}
+
+public class BigCache : ICache
+{
+    public object Get(string key) => $"Resolving {key} from big cache.";
+}
+
+public class SmallCache : ICache
+{
+    public object Get(string key) => $"Resolving {key} from small cache.";
 }
 ```
 
@@ -774,13 +783,13 @@ public class SecondModelNoNamespace
 }
 
 [OptionsValidator]
-public partial class FirstValidatorNoNamespace 
+public partial class FirstValidatorNoNamespace
     : IValidateOptions<FirstModelNoNamespace>
 {
 }
 
 [OptionsValidator]
-public partial class SecondValidatorNoNamespace 
+public partial class SecondValidatorNoNamespace
     : IValidateOptions<SecondModelNoNamespace>
 {
 }
@@ -1161,12 +1170,12 @@ MSBuild includes a new feature that makes it easier to incorporate data from MSB
 Values are written to the standard output. Multiple or complex values are output as JSON, as shown in the following examples.
 
 ```dotnetcli
-dotnet publish --getProperty:OutputPath
+>dotnet publish --getProperty:OutputPath
 bin\Release\net8.0\
 ```
 
 ```dotnetcli
-dotnet publish -p PublishProfile=DefaultContainer --getProperty:GeneratedContainerDigest --getProperty:GeneratedContainerConfiguration
+>dotnet publish -p PublishProfile=DefaultContainer --getProperty:GeneratedContainerDigest --getProperty:GeneratedContainerConfiguration
 {
   "Properties": {
     "GeneratedContainerDigest": "sha256:ef880a503bbabcb84bbb6a1aa9b41b36dc1ba08352e7cd91c0993646675174c4",
@@ -1176,7 +1185,7 @@ dotnet publish -p PublishProfile=DefaultContainer --getProperty:GeneratedContain
 ```
 
 ```dotnetcli
-dotnet publish -p PublishProfile=DefaultContainer --getItem:ContainerImageTags
+>dotnet publish -p PublishProfile=DefaultContainer --getItem:ContainerImageTags
 {
   "Items": {
     "ContainerImageTags": [
@@ -1255,6 +1264,9 @@ The [template engine](https://github.com/dotnet/templating) provides a more secu
 ### Source Link
 
 [Source Link](../../standard/library-guidance/sourcelink.md) is now included in the .NET SDK. The goal is that by bundling Source Link into the SDK, instead of requiring a separate `<PackageReference>` for the package, more packages will include this information by default. That information will improve the IDE experience for developers.
+
+> [!NOTE]
+> As a side effect of this change, commit information is included in the `InformationalVersion` value of built libraries and applications, even those that target .NET 7 or an earlier version. For more information, see [Source Link included in the .NET SDK](../compatibility/sdk/8.0/source-link.md).
 
 ### Source-build SDK
 

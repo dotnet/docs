@@ -122,7 +122,7 @@ Other data transformations don't require training data. For example: the <xref:M
 | Transform | Definition | ONNX Exportable |
 | --- | --- | --- |
 | <xref:Microsoft.ML.KernelExpansionCatalog.ApproximatedKernelMap%2A> | Map each input vector onto a lower dimensional feature space, where inner products approximate a kernel function, so that the features can be used as inputs to the linear algorithms | No |
-| <xref:Microsoft.ML.PcaCatalog.ProjectToPrincipalComponents%2A> | Reduce the dimensions of the input feature vector by applying the Principal Component Analysis algorithm |
+| <xref:Microsoft.ML.PcaCatalog.ProjectToPrincipalComponents%2A> | Reduce the dimensions of the input feature vector by applying the Principal Component Analysis algorithm | |
 
 ## Explainability transformations
 

@@ -65,6 +65,50 @@ items:
             href: ../../core/testing/unit-testing-fsharp-with-mstest.md
           - name: VB unit testing
             href: ../../core/testing/unit-testing-visual-basic-with-mstest.md
+          - name: MSTest runner
+            items:
+              - name: Overview
+                href: ../../core/testing/unit-testing-mstest-runner-intro.md
+              - name: Comparison with VSTest
+                href: ../../core/testing/unit-testing-mstest-runner-vs-vstest.md
+              - name: Extensions
+                href: ../../core/testing/unit-testing-mstest-runner-extensions.md
+              - name: Optional telemetry
+                href: ../../core/testing/unit-testing-mstest-runner-telemetry.md
+              - name: Known exit codes
+                href: ../../core/testing/unit-testing-mstest-runner-exit-codes.md
+              - name: Usage with dotnet test
+                href: ../../core/testing/unit-testing-mstest-runner-integrations.md
+              - name: Runsettings
+                href: ../../core/testing/unit-testing-mstest-runner-runsettings.md
+          - name: Code analysis
+            items:
+              - name: Overview
+                href: ../../core/testing/unit-testing-mstest-analyzers.md
+              - name: Design
+                items:
+                  - name: Overview
+                    href: ../../core/testing/unit-testing-mstest-analyzers-design.md
+                  - name: MSTEST0004
+                    href: ../../core/testing/unit-testing-mstest-analyzers-MSTEST0004.md
+                  - name: MSTEST0006
+                    href: ../../core/testing/unit-testing-mstest-analyzers-MSTEST0006.md
+              - name: Performance
+                items:
+                  - name: Overview
+                    href: ../../core/testing/unit-testing-mstest-analyzers-performance.md
+                  - name: MSTEST0001
+                    href: ../../core/testing/unit-testing-mstest-analyzers-MSTEST0001.md
+              - name: Usage
+                items:
+                  - name: Overview
+                    href: ../../core/testing/unit-testing-mstest-analyzers-usage.md
+                  - name: MSTEST0002
+                    href: ../../core/testing/unit-testing-mstest-analyzers-MSTEST0002.md
+                  - name: MSTEST0003
+                    href: ../../core/testing/unit-testing-mstest-analyzers-MSTEST0003.md
+                  - name: MSTEST0005
+                    href: ../../core/testing/unit-testing-mstest-analyzers-MSTEST0005.md
       - name: Run selective unit tests
         href: ../../core/testing/selective-unit-tests.md
       - name: Order unit tests

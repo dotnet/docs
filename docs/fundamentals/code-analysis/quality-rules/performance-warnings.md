@@ -1,7 +1,7 @@
 ---
 title: Performance rules (code analysis)
 description: "Learn about code analysis performance rules."
-ms.date: 11/04/2016
+ms.date: 11/15/2023
 f1_keywords:
 - vs.codeanalysis.performancerules
 helpviewer_keywords:
@@ -65,10 +65,14 @@ Performance rules support high-performance libraries and applications.
 | [CA1853: Unnecessary call to 'Dictionary.ContainsKey(key)'](ca1853.md) | There's no need to guard `Dictionary.Remove(key)` with `Dictionary.ContainsKey(key)`. <xref:System.Collections.Generic.Dictionary%602.Remove(%600)?displayProperty=nameWithType> already checks whether the key exists and doesn't throw if it doesn't exist. |
 | [CA1854: Prefer the 'IDictionary.TryGetValue(TKey, out TValue)' method](ca1854.md) | Prefer 'TryGetValue' over a Dictionary indexer access guarded by a 'ContainsKey' check. 'ContainsKey' and the indexer both look up the key, so using 'TryGetValue' avoids the extra lookup. |
 | [CA1855: Use Span\<T>.Clear() instead of Span\<T>.Fill()](ca1855.md) | It's more efficient to call <xref:System.Span%601.Clear?displayProperty=nameWithType> than to call <xref:System.Span%601.Fill(%600)?displayProperty=nameWithType> to fill the elements of the span with a default value. |
+| [CA1856: Incorrect usage of ConstantExpected attribute](ca1856.md) | The <xref:System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute> attribute is not applied correctly on a parameter. |
+| [CA1857: The parameter expects a constant for optimal performance](ca1857.md) | An invalid argument is passed to a parameter that's annotated with <xref:System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute>. |
 | [CA1858: Use StartsWith instead of IndexOf](ca1858.md) | It's more efficient to call <xref:System.String.StartsWith%2A?displayProperty=nameWithType> than to call <xref:System.String.IndexOf%2A?displayProperty=nameWithType> to check whether a string starts with a given prefix. |
 | [CA1859: Use concrete types when possible for improved performance](ca1859.md) | Code uses interface types or abstract types, leading to unnecessary interface calls or virtual calls. |
 | [CA1860: Avoid using 'Enumerable.Any()' extension method](ca1860.md) | It's more efficient and clearer to use `Length`, `Count`, or `IsEmpty` (if possible) than to call <xref:System.Linq.Enumerable.Any%2A?displayProperty=nameWithType> to determine whether a collection type has any elements. |
 | [CA1861: Avoid constant arrays as arguments](ca1861.md) | Constant arrays passed as arguments are not reused which implies a performance overhead. Consider extracting them to 'static readonly' fields to improve performance. |
+| [CA1862: Use the 'StringComparison' method overloads to perform case-insensitive string comparisons](ca1862.md) | When code calls <xref:System.String.ToLower> or <xref:System.String.ToUpper> to perform a case-insensitive string comparison, an unnecessary allocation is performed. |
+| [CA1863: Use 'CompositeFormat'](ca1863.md) | To reduce the formatting cost, cache and use a <xref:System.Text.CompositeFormat> instance as the argument to `String.Format` or `StringBuilder.AppendFormat`. |
 | [CA1864: Prefer the 'IDictionary.TryAdd(TKey, TValue)' method](ca1864.md) | Both <xref:System.Collections.Generic.Dictionary%602.ContainsKey(%600)?displayProperty=nameWithType> and <xref:System.Collections.Generic.Dictionary%602.Add%2A?displayProperty=nameWithType> perform a lookup, which is redundant. It's is more efficient to call <xref:System.Collections.Generic.Dictionary%602.TryAdd%2A?displayProperty=nameWithType>, which returns a `bool` indicating if the value was added or not. `TryAdd` doesn't overwrite the key's value if the key is already present. |
 | [CA1865-CA1867: Use char overload](ca1865-ca1867.md) | The char overload is a better performing overload for a string with a single char. |
 | [CA1868: Unnecessary call to 'Contains' for sets](ca1868.md) | Both <xref:System.Collections.Generic.ISet%601.Add(%600)?displayProperty=nameWithType> and <xref:System.Collections.Generic.ICollection%601.Remove(%600)?displayProperty=nameWithType> perform a lookup, which makes it redundant to call <xref:System.Collections.Generic.ICollection%601.Contains(%600)?displayProperty=nameWithType> beforehand. It's more efficient to call <xref:System.Collections.Generic.ISet%601.Add(%600)> or <xref:System.Collections.Generic.ICollection%601.Remove(%600)> directly, which returns a Boolean value indicating whether the item was added or removed. |

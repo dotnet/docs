@@ -3,7 +3,7 @@ title: Use dependency injection
 description: Learn how to use dependency injection in your .NET apps with this comprehensive tutorial. Follow along with this pragmatic guide to understand DI in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/13/2023
+ms.date: 12/11/2023
 ms.topic: tutorial
 no-loc: [Transient, Scoped, Singleton, Example]
 ---
@@ -105,7 +105,7 @@ Each `services.Add{LIFETIME}<{SERVICE}>` extension method adds (and potentially 
 
 The app:
 
-- Creates an <xref:Microsoft.Extensions.Hosting.IHostBuilder> instance with the [default binder settings](generic-host.md#default-builder-settings).
+- Creates an <xref:Microsoft.Extensions.Hosting.IHostBuilder> instance with [host builder settings](generic-host.md#host-builder-settings).
 - Configures services and adds them with their corresponding service lifetime.
 - Calls <xref:Microsoft.Extensions.Hosting.IHostBuilder.Build> and assigns an instance of <xref:Microsoft.Extensions.Hosting.IHost>.
 - Calls `ExemplifyScoping`, passing in the <xref:Microsoft.Extensions.Hosting.IHost.Services?displayProperty=nameWithType>.

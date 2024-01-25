@@ -8,29 +8,25 @@ public static partial class Program
 
         // <Planets>
         Planet[] planets =
-        {
+        [
             Planet.Mercury,
             Planet.Venus,
             Planet.Earth,
             Planet.Jupiter
-        };
+        ];
 
-        Planet[] morePlanets =
-        {
-            Planet.Mercury,
-            Planet.Earth,
-            Planet.Mars,
-            Planet.Jupiter
-        };
+        int[] planetsToExclude =
+        [
+            1, // Mercury
+            2, // Venus
+            5, // Jupiter
+        ];
         // </Planets>
 
         // <ExceptBy>
-        // A shared "keySelector"
-        static string PlanetNameSelector(Planet planet) => planet.Name;
-
         foreach (Planet planet in
             planets.ExceptBy(
-                morePlanets.Select(PlanetNameSelector), PlanetNameSelector))
+                planetsToExclude, static planet => planet.OrderFromSun))
         {
             Console.WriteLine(planet);
         }

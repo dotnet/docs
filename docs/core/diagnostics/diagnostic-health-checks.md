@@ -14,30 +14,30 @@ The following heath check status results are possible:
 - <xref:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Degraded?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy?displayProperty=nameWithType>
 
-In addition, health checks often report various diagnostic metrics. For more information, see [Diagnostic Metrics: `Microsoft.Extensions.Diagnostics.HealthChecks`](built-in-metrics-diagnostics.md#meter-microsoftextensionsdiagnosticshealthchecks).
+In addition, health checks often report various diagnostic metrics. For more information, see [Diagnostic Metrics: `Microsoft.Extensions.Diagnostics.HealthChecks`](built-in-metrics-diagnostics.md#microsoftextensionsdiagnosticshealthchecks).
 
 ## Resource utilization health checks
 
-To perform health checks on the resource utilization of your .NET apps, add a package reference to [Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilization](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilization). On an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> instance, chain a call from <xref:Microsoft.Extensions.DependencyInjection.HealthCheckServiceCollectionExtensions.AddHealthChecks%2A> to <xref:Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilizationHealthCheckExtensions.AddResourceUtilizationHealthCheck%2A>. The following example demonstrates how to use the `AddResourceUtilizationHealthCheck` extension method to add a resource utilization health check to an `IServiceCollection` instance:
+To perform health checks on the resource utilization of your .NET apps, add a package reference to [Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilization](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilization). On an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> instance, chain a call from <xref:Microsoft.Extensions.DependencyInjection.HealthCheckServiceCollectionExtensions.AddHealthChecks%2A> to <xref:Microsoft.Extensions.DependencyInjection.ResourceUtilizationHealthCheckExtensions.AddResourceUtilizationHealthCheck%2A>. The following example demonstrates how to use the `AddResourceUtilizationHealthCheck` extension method to add a resource utilization health check to an `IServiceCollection` instance:
 
 :::code source="snippets/health-checks/Program.cs":::
 
 The preceding code:
 
 - Creates a new <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder> instance.
-- Adds resource monitoring by calling <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceMonitoringExtensions.AddResourceMonitoring%2A>.
-- Adds a health check for resource utilization by chaining a call from the <xref:Microsoft.Extensions.DependencyInjection.HealthCheckServiceCollectionExtensions.AddHealthChecks%2A> call to the <xref:Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilizationHealthCheckExtensions.AddResourceUtilizationHealthCheck%2A> extension method.
+- Adds resource monitoring by calling <xref:Microsoft.Extensions.DependencyInjection.ResourceMonitoringServiceCollectionExtensions.AddResourceMonitoring%2A>.
+- Adds a health check for resource utilization by chaining a call from the <xref:Microsoft.Extensions.DependencyInjection.HealthCheckServiceCollectionExtensions.AddHealthChecks%2A> call to the <xref:Microsoft.Extensions.DependencyInjection.ResourceUtilizationHealthCheckExtensions.AddResourceUtilizationHealthCheck%2A> extension method.
 - Builds the <xref:Microsoft.Extensions.Hosting.IHost> instance as the `app` variable.
 - Gets an instance of the <xref:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService> class from the service provider.
 - Performs a health check and displays the result.
 - Runs the application.
 
 > [!NOTE]
-> The `Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilization` library assumes that the consumer will register the dependent call to <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceMonitoringExtensions.AddResourceMonitoring%2A>. If you don't register this, when resolving the `HealthCheckService` an exception is thrown.
+> The `Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilization` library assumes that the consumer will register the dependent call to <xref:Microsoft.Extensions.DependencyInjection.ResourceMonitoringServiceCollectionExtensions.AddResourceMonitoring%2A>. If you don't register this, when resolving the `HealthCheckService` an exception is thrown.
 
 ## Application lifetime health checks
 
-To perform health checks on the application lifetime events of <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime>, use the <xref:Microsoft.Extensions.Diagnostics.HealthChecks.CommonHealthChecksExtensions.AddApplicationLifecycleHealthCheck%2A> extension method available in the [Microsoft.Extensions.Diagnostics.HealthChecks.Common](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks.Common) NuGet package.
+To perform health checks on the application lifetime events of <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime>, use the <xref:Microsoft.Extensions.DependencyInjection.CommonHealthChecksExtensions.AddApplicationLifecycleHealthCheck%2A> extension method available in the [Microsoft.Extensions.Diagnostics.HealthChecks.Common](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks.Common) NuGet package.
 
 This provider will indicate that the application is healthy only when it is fully active. Until the lifetime object indicates the application has started, the provider will report the application as not healthy. When the application starts shutting down, the provider will report the application as unhealthy.
 
@@ -63,7 +63,7 @@ The preceding code:
 
 - Creates a new <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder> instance assigning to as the `builder` variable.
 - Registers the `ExampleService` as the app's only <xref:Microsoft.Extensions.Hosting.IHostedService>.
-- Adds a health check for the application lifetime events of <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime> by chaining a call from the <xref:Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder> instance returned by the <xref:Microsoft.Extensions.DependencyInjection.HealthCheckServiceCollectionExtensions.AddHealthChecks%2A> call to the <xref:Microsoft.Extensions.Diagnostics.HealthChecks.CommonHealthChecksExtensions.AddApplicationLifecycleHealthCheck%2A> extension method.
+- Adds a health check for the application lifetime events of <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime> by chaining a call from the <xref:Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder> instance returned by the <xref:Microsoft.Extensions.DependencyInjection.HealthCheckServiceCollectionExtensions.AddHealthChecks%2A> call to the <xref:Microsoft.Extensions.DependencyInjection.CommonHealthChecksExtensions.AddApplicationLifecycleHealthCheck%2A> extension method.
   - The `healthChecksBuilder` instance can be used to add more health checks.
 - Builds the <xref:Microsoft.Extensions.Hosting.IHost> instance as the `app` variable.
 - Gets an `IHostedService` from the service provider, this is the `ExampleService` instance.

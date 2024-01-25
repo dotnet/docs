@@ -219,7 +219,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   The `.runsettings` file to use for running the tests. The `TargetPlatform` element (x86|x64) has no effect for `dotnet test`. To run tests that target x86, install the x86 version of .NET Core. The bitness of the *dotnet.exe* that is on the path is what will be used for running tests. For more information, see the following resources:
 
   - [Configure unit tests by using a `.runsettings` file.](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
-  - [Configure a test run](https://github.com/Microsoft/vstest-docs/blob/main/docs/configure.md)
+  - [Configure a test run](https://github.com/microsoft/vstest/blob/main/docs/configure.md)
 
 - **`-t|--list-tests`**
 

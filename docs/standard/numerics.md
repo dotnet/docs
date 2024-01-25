@@ -69,9 +69,9 @@ The <xref:System.Numerics.BigInteger?displayProperty=nameWithType> structure is 
 | Type                                               | Size (in bytes) | Approximate range         | Primitive? | Notes                |
 |----------------------------------------------------|-----------------|---------------------------|------------|----------------------|
 | <xref:System.Half?displayProperty=nameWithType>    | 2               | ±65504                    | No         | Introduced in .NET 5 |
-| <xref:System.Single?displayProperty=nameWithType>  | 4               | ±3.4 x 10<sup>38</sup>    | Yes        |
-| <xref:System.Double?displayProperty=nameWithType>  | 8               | ±1.7 × 10<sup>308</sup>   | Yes        |
-| <xref:System.Decimal?displayProperty=nameWithType> | 16              | ±7.9228 x 10<sup>28</sup> | No         |
+| <xref:System.Single?displayProperty=nameWithType>  | 4               | ±3.4 x 10<sup>38</sup>    | Yes        |                      |
+| <xref:System.Double?displayProperty=nameWithType>  | 8               | ±1.7 × 10<sup>308</sup>   | Yes        |                      |
+| <xref:System.Decimal?displayProperty=nameWithType> | 16              | ±7.9228 x 10<sup>28</sup> | No         |                      |
 
 The <xref:System.Half>, <xref:System.Single>, and <xref:System.Double> types support special values that represent not-a-number and infinity. For example, the <xref:System.Double> type provides the following values: <xref:System.Double.NaN?displayProperty=nameWithType>, <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, and <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>. You use the <xref:System.Double.IsNaN%2A?displayProperty=nameWithType>, <xref:System.Double.IsInfinity%2A?displayProperty=nameWithType>, <xref:System.Double.IsPositiveInfinity%2A?displayProperty=nameWithType>, and <xref:System.Double.IsNegativeInfinity%2A?displayProperty=nameWithType> methods to test for these special values.
 

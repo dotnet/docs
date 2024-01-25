@@ -13,7 +13,7 @@ Azure Migrate application and code assessment for .NET helps you to identify any
 
 The tool is available as a Visual Studio extension and a [CLI tool](./dotnet-cli.md).
 
-This guide describes how to use the CLI tool to scan your application for possible incompatibilities with Azure.
+This guide describes how to use the Visual Studio extension to scan your application for possible incompatibilities with Azure.
 
 If you have not installed the Visual Studio extension, please follow [these instructions first](./install.md).
 

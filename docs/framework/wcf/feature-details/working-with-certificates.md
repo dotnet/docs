@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "certificates [WCF]"
 ms.assetid: 6ffb8682-8f07-4a45-afbb-8d2487e9dbc3
 ---
-# Working with Certificates
+# Working with certificates
 
 To program Windows Communication Foundation (WCF) security, X.509 digital certificates are commonly used to authenticate clients and servers, encrypt, and digitally sign messages. This topic briefly explains X.509 digital certificate features and how to use them in WCF, and includes links to topics that explain these concepts further or that show how to accomplish common tasks using WCF and certificates.
 
@@ -19,11 +19,11 @@ The primary function of a certificate is to authenticate the identity of the own
 
 Certificates must be issued by a certification authority, which is often a third-party  issuer of certificates. On a Windows domain, a certification authority is included that can be used to issue certificates to computers on the domain.
 
-## Viewing Certificates
+## View certificates
 
 To work with certificates, it is often necessary to view them and examine their properties. This is easily done with the Microsoft Management Console (MMC) snap-in tool. For more information, see [How to: View Certificates with the MMC Snap-in](how-to-view-certificates-with-the-mmc-snap-in.md).
 
-## Certificate Stores
+## Certificate stores
 
 Certificates are found in stores. Two major store locations exist that are further divided into sub-stores. If you are the administrator on a computer, you can view both major stores by using the MMC snap-in tool. Non-administrators can view only the current user store.
 
@@ -42,7 +42,7 @@ These two stores are further divided into sub-stores. The most important of thes
 
 For more information about certificate stores, see [Certificate Stores](/windows/desktop/secauthn/certificate-stores).
 
-### Selecting a Store
+### Select a store
 
 Selecting where to store a certificate depends how and when the service or client runs. The following general rules apply:
 
@@ -50,11 +50,11 @@ Selecting where to store a certificate depends how and when the service or clien
 
 - If the service or client is an application that runs under a user account, then use the **current user** store.
 
-### Accessing Stores
+### Access stores
 
 Stores are protected by access control lists (ACLs), just like folders on a computer. When creating a service hosted by Internet Information Services (IIS), the ASP.NET process runs under the ASP.NET account. That account must have access to the store that contains the certificates a service uses. Each of the major stores is protected with a default access list, but the lists can be modified. If you create a separate role to access a store, you must grant that role access permission. To learn how to modify the access list using the WinHttpCertConfig.exe tool, see [How to: Create Temporary Certificates for Use During Development](how-to-create-temporary-certificates-for-use-during-development.md).
 
-## Chain Trust and Certificate Authorities
+## Chain trust and certificate authorities
 
 Certificates are created in a hierarchy where each individual certificate is linked to the CA that issued the certificate. This link is to the CA’s certificate. The CA’s certificate then links to the CA that issued the original CA’s certificate. This process is repeated up until the Root CA’s certificate is reached. The Root CA’s certificate is inherently trusted.
 
@@ -63,7 +63,7 @@ Digital certificates are used to authenticate an entity by relying on this hiera
 > [!NOTE]
 > Any issuer can be designated a trusted root authority by placing the issuer's certificate in the trusted root authority certificate store.
 
-### Disabling Chain Trust
+### Disable chain trust
 
 When creating a new service, you may be using a certificate that is not issued by a trusted root certificate, or the issuing certificate itself may not be in the Trusted Root Certification Authorities store. For development purposes only, you can temporarily disable the mechanism that checks the chain of trust for a certificate. To do this, set the `CertificateValidationMode` property to either `PeerTrust` or `PeerOrChainTrust`. Either mode specifies that the certificate can either be self-issued (peer trust) or part of a chain of trust. You can set the property on any of the following classes.
 
@@ -82,17 +82,15 @@ You can also set the property using configuration. The following elements are us
 
 - [\<messageSenderAuthentication>](../../configure-apps/file-schema/wcf/messagesenderauthentication-element.md)
 
-## Custom Authentication
+## Custom authentication
 
 The `CertificateValidationMode` property also enables you to customize how certificates are authenticated. By default, the level is set to `ChainTrust`. To use the <xref:System.ServiceModel.Security.X509CertificateValidationMode.Custom> value, you must also set the `CustomCertificateValidatorType` attribute to an assembly and type used to validate the certificate. To create a custom validator, you must inherit from the abstract <xref:System.IdentityModel.Selectors.X509CertificateValidator> class.
 
 When creating a custom authenticator, the most important method to override is the <xref:System.IdentityModel.Selectors.X509CertificateValidator.Validate%2A> method. For an example of custom authentication, see the [X.509 Certificate Validator](../samples/x-509-certificate-validator.md) sample. For more information, see [Custom Credential and Credential Validation](../extending/custom-credential-and-credential-validation.md).
 
-## Using the PowerShell New-SelfSignedCertificate Cmdlet to Build a Certificate Chain
+## Use the PowerShell New-SelfSignedCertificate cmdlet to build a certificate chain
 
 The PowerShell New-SelfSignedCertificate cmdlet creates X.509 certificates and private key/public key pairs. You can save the private key to disk and then use it to issue and sign new certificates, thus simulating a hierarchy of chained certificates. The cmdlet is intended for use only as an aid when developing services and should never be used to create certificates for actual deployment. When developing a WCF service, use the following steps to build a chain of trust with the New-SelfSignedCertificate cmdlet.
-
-#### To build a chain of trust with the New-SelfSignedCertificate cmdlet
 
 1. Create a temporary root authority (self-signed) certificate using the New-SelfSignedCertificate cmdlet. Save the private key to the disk.
 
@@ -102,11 +100,11 @@ The PowerShell New-SelfSignedCertificate cmdlet creates X.509 certificates and p
 
 4. For step-by-step instructions, see [How to: Create Temporary Certificates for Use During Development](how-to-create-temporary-certificates-for-use-during-development.md).
 
-## Which Certificate to Use?
+## Which certificate to use?
 
 Common questions about certificates are which certificate to use, and why. The answer depends on whether you are programming a client or service. The following information provides a general guideline and is not an exhaustive answer to these questions.
 
-### Service Certificates
+### Service certificates
 
 Service certificates have the primary task of authenticating the server to clients. One of the initial checks when a client authenticates a server is to compare the value of the **Subject** field to the Uniform Resource Identifier (URI) used to contact the service: the DNS of both must match. For example, if the URI of the service is `http://www.contoso.com/endpoint/` then the **Subject** field must also contain the value `www.contoso.com`.
 
@@ -114,17 +112,17 @@ Note that the field can contain several values, each prefixed with an initializa
 
 Also note the value of the **Intended Purposes** field of the certificate should include an appropriate value, such as "Server Authentication" or "Client Authentication".
 
-### Client Certificates
+### Client certificates
 
 Client certificates are not typically issued by a third-party certification authority. Instead, the Personal store of the current user location typically contains certificates placed there by a root authority, with an intended purpose of "Client Authentication". The client can use such a certificate when mutual authentication is required.
 
-## Online Revocation and Offline Revocation
+## Online revocation and offline revocation
 
-### Certificate Validity
+### Certificate validity
 
 Every certificate is valid only for a given period of time, called the *validity period*. The validity period is defined by the **Valid from** and **Valid to** fields of an X.509 certificate. During authentication, the certificate is checked to determine whether the certificate is still within the validity period.
 
-### Certificate Revocation List
+### Certificate revocation list
 
 At any time during the validity period, the certification authority can revoke a certificate. This can occur for many reasons, such as a compromise of the private key of the certificate.
 
@@ -132,32 +130,32 @@ When this occurs, any chains that descend from the revoked certificate are also 
 
 You can also set the mode in configuration using the `revocationMode` attribute of both the [\<authentication>](../../configure-apps/file-schema/wcf/authentication-of-clientcertificate-element.md) (of the [\<serviceBehaviors>](../../configure-apps/file-schema/wcf/servicebehaviors.md)) and the [\<authentication>](../../configure-apps/file-schema/wcf/authentication-of-clientcertificate-element.md) (of the [\<endpointBehaviors>](../../configure-apps/file-schema/wcf/endpointbehaviors.md)).
 
-## The SetCertificate Method
+## The SetCertificate method
 
 In WCF, you must often specify a certificate or set of certificates a service or client is to use to authenticate, encrypt, or digitally sign a message. You can do this programmatically by using the `SetCertificate` method of various classes that represent X.509 certificates. The following classes use the `SetCertificate` method to specify a certificate.
 
-|Class|Method|
-|-----------|------------|
+| Class | Method |
+|-------|--------|
 |<xref:System.ServiceModel.Security.PeerCredential>|<xref:System.ServiceModel.Security.PeerCredential.SetCertificate%2A>|
 |<xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential>|<xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A>|
 |<xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential>|<xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential.SetCertificate%2A>|
-|<xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential>|
-|<xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.SetCertificate%2A>|
+|<xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential>| |
+|<xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.SetCertificate%2A>| |
 
 The `SetCertificate` method works by designating a store location and store, a "find" type (`x509FindType` parameter) that specifies a field of the certificate, and a value to find in the field. For example, the following code creates a <xref:System.ServiceModel.ServiceHost> instance and sets the service certificate used to authenticate the service to clients with the `SetCertificate` method.
 
 [!code-csharp[c_WorkingWithCertificates#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_workingwithcertificates/cs/source.cs#1)]
 [!code-vb[c_WorkingWithCertificates#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_workingwithcertificates/vb/source.vb#1)]
 
-### Multiple Certificates with the Same Value
+### Multiple certificates with the same value
 
 A store may contain multiple certificates with the same subject name. This means that if you specify that the `x509FindType` is <xref:System.Security.Cryptography.X509Certificates.X509FindType.FindBySubjectName> or <xref:System.Security.Cryptography.X509Certificates.X509FindType.FindBySubjectDistinguishedName>, and more than one certificate has the same value, an exception is thrown because there is no way to distinguish which certificate is required. You can mitigate this by setting the `x509FindType` to <xref:System.Security.Cryptography.X509Certificates.X509FindType.FindByThumbprint>. The thumbprint field contains a unique value that can be used to find a specific certificate in a store. However, this has its own disadvantage: if the certificate is revoked or renewed, the `SetCertificate` method fails because the thumbprint is also gone. Or, if the certificate is no longer valid, authentication fails. The way to mitigate this is to set the `x590FindType` parameter to <xref:System.Security.Cryptography.X509Certificates.X509FindType.FindByIssuerName> and specify the issuer's name. If no particular issuer is required, you can also set one of the other <xref:System.Security.Cryptography.X509Certificates.X509FindType> enumeration values, such as <xref:System.Security.Cryptography.X509Certificates.X509FindType.FindByTimeValid>.
 
-## Certificates in Configuration
+## Certificates in configuration
 
 You can also set certificates by using configuration. If you are creating a service, credentials, including certificates, are specified under the [\<serviceBehaviors>](../../configure-apps/file-schema/wcf/servicebehaviors.md). When you are programming a client, certificates are specified under the [\<endpointBehaviors>](../../configure-apps/file-schema/wcf/endpointbehaviors.md).
 
-## Mapping a Certificate to a User Account
+## Map a certificate to a user account
 
 A feature of IIS and Active Directory is the ability to map a certificate to a Windows user account. For more information about the feature, see [Map certificates to user accounts](/previous-versions/windows/it-pro/windows-server-2003/cc736706(v=ws.10)).
 

@@ -233,6 +233,9 @@ namespace CustomMarshalling
             public static ErrorData ConvertToManaged(ErrorDataUnmanaged unmanaged)
                 => throw new NotImplementedException();
 
+            public static ErrorDataUnmanaged ConvertToUnmanaged(ErrorData managed)
+                => throw new NotImplementedException();
+
             public static void Free(ErrorDataUnmanaged unmanaged)
                 => throw new NotImplementedException();
         }
@@ -240,7 +243,7 @@ namespace CustomMarshalling
 }
 ```
 
-The conversion from `ErrorDataUnmanaged` to `ErrorData` is the inverse of what you did for the "in" mode. Remember that you also need to clean up any allocations that the unmanaged environment expected you to perform. It's also important to note the functions here are marked `static` and are therefore "stateless", being stateless is a requirement for all "Element" modes.
+The conversion from `ErrorDataUnmanaged` to `ErrorData` is the inverse of what you did for the "in" mode. Remember that you also need to clean up any allocations that the unmanaged environment expected you to perform. It's also important to note the functions here are marked `static` and are therefore "stateless", being stateless is a requirement for all "Element" modes. You'll also notice that there is a `ConvertToUnmanaged` method like in the "in" mode. All "Element" modes require handling for both "in" and "out" modes.
 
 For the managed to unmanaged "out" marshaller, you're going to do something special. The name of the data type you're marshalling is called `error_data` and .NET typically expresses errors as exceptions. Some errors are more impactful than others and errors identified as "fatal" usually indicate a catastrophic or unrecoverable error. Notice the `error_data` has a field to check if the error is fatal. You'll marshal an `error_data` into managed code, and if it's fatal, you'll throw an exception rather than just converting it into an `ErrorData` and returning it.
 

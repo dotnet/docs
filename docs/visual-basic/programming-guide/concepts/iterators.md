@@ -38,26 +38,8 @@ A Visual Basic iterator function or `get` accessor declaration includes an [Iter
 
 Iterators were introduced in Visual Basic in Visual Studio 2012.
 
-**In this topic**
-
-- [Simple Iterator](#BKMK_SimpleIterator)
-
-- [Creating a Collection Class](#BKMK_CollectionClass)
-
-- [Try Blocks](#BKMK_TryBlocks)
-
-- [Anonymous Methods](#BKMK_AnonymousMethods)
-
-- [Using Iterators with a Generic List](#BKMK_GenericList)
-
-- [Syntax Information](#BKMK_SyntaxInformation)
-
-- [Technical Implementation](#BKMK_Technical)
-
-- [Use of Iterators](#BKMK_UseOfIterators)
-
 > [!NOTE]
-> For all examples in the topic except the Simple Iterator example, include [Imports](../../language-reference/statements/imports-statement-net-namespace-and-type.md) statements for the `System.Collections` and `System.Collections.Generic` namespaces.
+> For all examples in the article except the Simple Iterator example, include [Imports](../../language-reference/statements/imports-statement-net-namespace-and-type.md) statements for the `System.Collections` and `System.Collections.Generic` namespaces.
 
 ## <a name="BKMK_SimpleIterator"></a> Simple Iterator
 
@@ -211,7 +193,7 @@ Public Class Zoo
 End Class
 ```
 
-## <a name="BKMK_TryBlocks"></a> Try Blocks
+## Try Blocks
 
 Visual Basic allows a `Yield` statement in the `Try` block of a [Try...Catch...Finally Statement](../../language-reference/statements/try-catch-finally-statement.md). A `Try` block that has a `Yield` statement can have `Catch` blocks, and can have a `Finally` block.
 

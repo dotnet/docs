@@ -207,6 +207,10 @@ The following rules apply when determining which version of the SDK to use:
 
   Starting with .NET Core 2.1 SDK (version 2.1.300), the `dotnet ef` command comes included in the SDK. To compile your project, install .NET Core 2.0 SDK (version 2.1.201) or earlier on your machine and define the desired SDK version using the *global.json* file. For more information about the `dotnet ef` command, see [EF Core .NET Command-line Tools](/ef/core/miscellaneous/cli/dotnet).
 
+- If you're using *global.json* to stay on a specific version of the .NET SDK, note that Visual Studio only ever installs a single copy of the .NET SDK. So if you upgrade your Visual Studio version, it removes the previous version of the .NET SDK it had used to install the new version. It removes the old version even if it's a different major .NET version.
+
+To avoid Visual Studio removing versions of the .NET SDK, you will need to install the stand-alone .NET SDK from the [download page](https://dotnet.microsoft.com/download/dotnet). Note that if you do, you will not get automatic updates to that version of the .NET SDK anymore through Visual Studio and may be at risk for security issues.
+
 ## See also
 
 - [How project SDKs are resolved](/visualstudio/msbuild/how-to-use-project-sdk#how-project-sdks-are-resolved)

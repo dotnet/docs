@@ -3,7 +3,7 @@ title: .NET and Ubuntu overview
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/14/2023
+ms.date: 01/24/2024
 ms.custom: updateeachrelease
 ---
 
@@ -248,8 +248,8 @@ sudo apt-get update && \
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you must install these dependencies to run your app:
 
 - libc6
-- libgcc1
-- libgcc-s1 (for 22.x)
+- libgcc1 (for 16.x and 18.x)
+- libgcc-s1 (for 20.x or later)
 - libgssapi-krb5-2
 - libicu55 (for 16.x)
 - libicu60 (for 18.x)

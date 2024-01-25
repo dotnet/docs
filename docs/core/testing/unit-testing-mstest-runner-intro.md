@@ -41,7 +41,7 @@ To enable the MSTest runner in a MSTest project, you need to add the `EnableMSTe
           MSTest.TestFramework
           MSTest.Analyzers
     -->    
-    <PackageReference Include="MSTest" Version="3.2.0-preview.23623.1" />
+    <PackageReference Include="MSTest" Version="3.2.0" />
 
     <!-- 
       Coverlet collector isn't compatible with MSTest runner, you can 
@@ -49,8 +49,8 @@ To enable the MSTest runner in a MSTest project, you need to add the `EnableMSTe
       or switch to be using coverlet global tool
       https://github.com/coverlet-coverage/coverlet#net-global-tool-guide-suffers-from-possible-known-issue
     --> 
-    <PackageReference Include="Microsoft.Testing.Platform.Extensions.CodeCoverage" 
-                      Version="17.10.0-preview.23622.1" />
+    <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" 
+                      Version="17.10.1" />
   </ItemGroup>
 
 </Project>

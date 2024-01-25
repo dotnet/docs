@@ -51,7 +51,7 @@ At the end of the quickstart, you have an app that creates and handles redirects
 1. Run the following commands:
 
    ```dotnetcli
-   dotnet new webapp -o OrleansURLShortener
+   dotnet new webapi -o OrleansURLShortener
    code -r OrleansURLShortener
    ```
 

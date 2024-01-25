@@ -2,14 +2,14 @@
 title: "stackalloc expression - Allocate variable storage on the stack instead of the heap"
 description: "The C# stackalloc expression allocates a block of memory on the stack. Stackalloc memory is automatically discarded when that method returns."
 ms.date: 11/28/2022
-f1_keywords: 
+f1_keywords:
   - "stackalloc_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "stackalloc expression [C#]"
 ---
 # stackalloc expression (C# reference)
 
-A `stackalloc` expression allocates a block of memory on the stack. A stack allocated memory block created during the method execution is automatically discarded when that method returns. You can't explicitly free the memory allocated with `stackalloc`. A stack allocated memory block isn't subject to [garbage collection](../../../standard/garbage-collection/index.md) and doesn't have to be pinned with a [`fixed` statement](../statements/fixed.md).
+A `stackalloc` expression allocates a block of memory on the stack. A stack-allocated memory block created during the method execution is automatically discarded when that method returns. You can't explicitly free the memory allocated with `stackalloc`. A stack allocated memory block isn't subject to [garbage collection](../../../standard/garbage-collection/index.md) and doesn't have to be pinned with a [`fixed` statement](../statements/fixed.md).
 
 You can assign the result of a `stackalloc` expression to a variable of one of the following types:
 

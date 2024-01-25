@@ -17,7 +17,7 @@ The `Microsoft.Extensions.Diagnostics.HealthChecks` metrics report health check 
 - [`dotnet.health_check.reports`](#metric-dotnethealth_checkreports)
 - [`dotnet.health_check.unhealthy_checks`](#metric-dotnethealth_checkunhealthy_checks)
 
-### Metric: `dotnet.health_check.reports`
+##### Metric: `dotnet.health_check.reports`
 
 | Name | Instrument Type | Unit (UCUM) | Description |
 | ---- | --------------- | ----------- | ----------- |
@@ -37,7 +37,7 @@ The `Microsoft.Extensions.Diagnostics.HealthChecks` metrics report health check 
 
 Available starting in: .NET 8.0.
 
-### Metric: `dotnet.health_check.unhealthy_checks`
+##### Metric: `dotnet.health_check.unhealthy_checks`
 
 | Name | Instrument Type | Unit (UCUM) | Description |
 | ---- | --------------- | ----------- | ----------- |
@@ -69,7 +69,7 @@ The `Microsoft.Extensions.Diagnostics.ResourceMonitoring` metrics report resourc
 > [!NOTE]
 > Metrics emitted by the `Microsoft.Extensions.Diagnostics.ResourceMonitoring` meter are in experimental stage. This means that there could be breaking changes to them.
 
-### Metric: `process.cpu.utilization`
+##### Metric: `process.cpu.utilization`
 
 The instrument is available only on Linux.
 
@@ -79,7 +79,7 @@ The instrument is available only on Linux.
 
 Available starting in: .NET 8.0.
 
-### Metric: `dotnet.process.memory.virtual.utilization`
+##### Metric: `dotnet.process.memory.virtual.utilization`
 
 The instrument is available only on Linux.
 
@@ -89,7 +89,7 @@ The instrument is available only on Linux.
 
 Available starting in: .NET 8.0.
 
-### Metric: `system.network.connections`
+##### Metric: `system.network.connections`
 
 The instrument is available only on Windows.
 

@@ -337,7 +337,7 @@ For more information about some of these settings, see the [Middle ground betwee
 {
    "runtimeOptions": {
       "configProperties": {
-         "System.GC.HeapAffinitizeRanges": "0:1-10,0:12,1:50-52,1:70"
+         "System.GC.HeapAffinitizeRanges": "0:1-10,0:12,1:50-52,1:7"
       }
    }
 }
@@ -348,7 +348,7 @@ For more information about some of these settings, see the [Middle ground betwee
 ```json
 {
    "configProperties": {
-      "System.GC.HeapAffinitizeRanges": "0:1-10,0:12,1:50-52,1:70"
+      "System.GC.HeapAffinitizeRanges": "0:1-10,0:12,1:50-52,1:7"
    }
 }
 ```

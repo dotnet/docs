@@ -321,7 +321,6 @@ builder.Services
     }, "VerbosityLevel must be > than Scale.");
 ```
 
-
 The validation occurs at run time, but you can configure it to occur at startup by instead chaining a call to `ValidateOnStart`:
 
 ```csharp

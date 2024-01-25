@@ -3,7 +3,7 @@ title: Dependency injection
 description: Learn how to use dependency injection within your .NET apps. Discover how to registration services, define service lifetimes, and express dependencies in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/15/2023
+ms.date: 01/25/2024
 ms.topic: overview
 ---
 
@@ -410,7 +410,7 @@ From the sample source code, you can see how implementations of <xref:Microsoft.
 
 ## Keyed services
 
-.NET also supports service registrations and lookups based on a key, meaning it's possible to register multiple services with a different key, and use this key for the lookup.
+Starting with .NET 8, there is support for service registrations and lookups based on a key, meaning it's possible to register multiple services with a different key, and use this key for the lookup.
 
 For example, consider the case where you have different implementations of the interface `IMessageWriter`: `MemoryMessageWriter` and `QueueMessageWriter`.
 

@@ -11,6 +11,8 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
+The <xref:System.Delegate.CreateDelegate%2A> methods create a delegate of a specified type.
+
 ## <xref:System.Delegate.CreateDelegate(System.Type,System.Reflection.MethodInfo)> method
 
 This method overload is equivalent to calling the <xref:System.Delegate.CreateDelegate(System.Type,System.Reflection.MethodInfo,System.Boolean)> method overload and specifying `true` for `throwOnBindFailure`.

@@ -321,7 +321,8 @@ builder.Services
     }, "VerbosityLevel must be > than Scale.");
 ```
 
-The validation occurs at runtime, but you can configure it to occur at startup by instead chaining a call to `ValidateOnStart`:
+
+The validation occurs at run time, but you can configure it to occur at startup by instead chaining a call to `ValidateOnStart`:
 
 ```csharp
 builder.Services
@@ -340,7 +341,7 @@ builder.Services
     .ValidateOnStart();
 ```
 
-Starting with .NET 8 you can use an alternate API <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)>, that enabled validation on start for a specific options type:
+Starting with .NET 8, you can use an alternate API, <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)>, that enables validation on start for a specific options type:
 
 ```csharp
 builder.Services

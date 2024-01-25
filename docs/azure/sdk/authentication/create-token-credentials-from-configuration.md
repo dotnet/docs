@@ -12,7 +12,7 @@ The `Microsoft.Extensions.Azure` library supports creating different <xref:Azure
 
 ## Support for Azure credentials through configuration
 
-The [`Microsoft.Extensions.Azure`](https://www.nuget.org/packages/Microsoft.Extensions.Azure) library can automatically provide Azure service clients with a `TokenCredential` class by searching _appsettings.json_ or other configuration files for credential values using the default `IConfiguration` service for .NET. This approach allows developers to explicitly set credential values across different environments through configuration rather than through app code directly.
+The [`Microsoft.Extensions.Azure`](https://www.nuget.org/packages/Microsoft.Extensions.Azure) library can automatically provide Azure service clients with a `TokenCredential` class by searching _appsettings.json_ or other configuration files for credential values using the `IConfiguration` abstraction for .NET. This approach allows developers to explicitly set credential values across different environments through configuration rather than through app code directly.
 
 The following credential types are supported via configuration:
 
@@ -24,7 +24,7 @@ The following credential types are supported via configuration:
 
 ## Configure Azure credentials
 
-Azure service clients registered with the `AddAzureClients` method are automatically configured with an instance of `DefaultAzureCredential`. You can override the global `DefaultAzureCredential` using credential values from configuration files when registering a client:
+Azure service clients registered with the `AddAzureClients` method are automatically configured with an instance of `DefaultAzureCredential` if no explicit credential is supplied via the `WithCredential` extension method. You can also override the global `DefaultAzureCredential` using credential values from configuration files when registering a client:
 
 ```csharp
 builder.Services.AddAzureClients(clientBuilder =>
@@ -54,7 +54,7 @@ You can create both user-assigned and system-assigned managed identities using c
 
 #### User-assigned identities
 
-1. Authenticate using a client ID:
+1. Specify a user-assigned managed identity via a client ID:
 
     ```json
     {
@@ -63,7 +63,7 @@ You can create both user-assigned and system-assigned managed identities using c
     }
     ```
 
-1. Authenticate using a resource ID:
+1. Specify a user-assigned managed identity via a resource ID:
 
     ```json
     {
@@ -76,7 +76,7 @@ You can create both user-assigned and system-assigned managed identities using c
 
 #### System-assigned identities
 
-1. Authenticate using a client ID:
+1. Configure managed identity with a system-assigned identity:
 
     ```json
     {
@@ -106,7 +106,7 @@ Add the following configuration values to your _appsettings.json_ file to create
 {
     "tenantId":  "<tenantId>",
     "clientId":  "<clientId>",
-    "tokenFilePath": "<clientSecret>"
+    "clientSecret": "<clientSecret>"
 }
 ```
 

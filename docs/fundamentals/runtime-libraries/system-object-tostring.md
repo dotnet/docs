@@ -2,6 +2,10 @@
 title: System.Object.ToString method
 description: Learn about the System.Object.ToString method.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - FSharp
+  - VB
 ---
 # System.Object.ToString method
 
@@ -18,14 +22,12 @@ Types frequently override the <xref:System.Object.ToString%2A?displayProperty=na
 
 The default implementation of the <xref:System.Object.ToString%2A> method returns the fully qualified name of the type of the <xref:System.Object>, as the following example shows.
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.object.tostring/cpp/tostring1.cpp" id="Snippet1":::
 :::code language="csharp" source="~/snippets/csharp/System/Object/ToString/tostring1.cs" interactive="try-dotnet-method" id="Snippet1":::
 :::code language="fsharp" source="~/snippets/fsharp/System/Object/ToString/tostring1.fs" id="Snippet1":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.object.tostring/vb/tostring1.vb" id="Snippet1":::
 
 Because <xref:System.Object> is the base class of all reference types in .NET, this behavior is inherited by reference types that do not override the <xref:System.Object.ToString%2A> method. The following example illustrates this. It defines a class named `Object1` that accepts the default implementation of all <xref:System.Object> members. Its <xref:System.Object.ToString%2A> method returns the object's fully qualified type name.
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.object.tostring/cpp/tostring2.cpp" id="Snippet2":::
 :::code language="csharp" source="~/snippets/csharp/System/Object/ToString/tostring2.cs" interactive="try-dotnet" id="Snippet2":::
 :::code language="fsharp" source="~/snippets/fsharp/System/Object/ToString/tostring2.fs" id="Snippet2":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.object.tostring/vb/tostring2.vb" id="Snippet2":::
@@ -34,7 +36,6 @@ Because <xref:System.Object> is the base class of all reference types in .NET, t
 
 Types commonly override the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method to return a string that represents the object instance. For example, the base types such as <xref:System.Char>, <xref:System.Int32>, and <xref:System.String> provide <xref:System.Object.ToString%2A> implementations that return the string form of the value that the object represents. The following example defines a class, `Object2`, that overrides the <xref:System.Object.ToString%2A> method to return the type name along with its value.
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.object.tostring/cpp/tostring3.cpp" id="Snippet3":::
 :::code language="csharp" source="~/snippets/csharp/System/Object/ToString/tostring3.cs" interactive="try-dotnet" id="Snippet3":::
 :::code language="fsharp" source="~/snippets/fsharp/System/Object/ToString/tostring3.fs" id="Snippet3":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.object.tostring/vb/tostring3.vb" id="Snippet3":::

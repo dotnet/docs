@@ -2,6 +2,10 @@
 title: System.String.Format method
 description: Learn about the System.String.Format method.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - FSharp
+  - VB
 ---
 # System.String.Format method
 
@@ -13,14 +17,12 @@ ms.date: 01/24/2024
 
 Use <xref:System.String.Format%2A?displayProperty=nameWithType> if you need to insert the value of an object, variable, or expression into another string. For example, you can insert the value of a <xref:System.Decimal> value into a string to display it to the user as a single string:
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting2.cpp" id="Snippet35":::
 :::code language="csharp" source="~/snippets/csharp/System/FormatException/Overview/starting2.cs" interactive="try-dotnet-method" id="Snippet35":::
 :::code language="fsharp" source="~/snippets/fsharp/System/FormatException/Overview/starting2.fs" id="Snippet35":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting2.vb" id="Snippet35":::
 
 And you can control that value's formatting:
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting2.cpp" id="Snippet36":::
 :::code language="csharp" source="~/snippets/csharp/System/FormatException/Overview/starting2.cs" id="Snippet36":::
 :::code language="fsharp" source="~/snippets/fsharp/System/FormatException/Overview/starting2.fs" id="Snippet36":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting2.vb" id="Snippet36":::
@@ -31,7 +33,6 @@ Besides formatting, you can also control alignment and spacing.
 
 <xref:System.String.Format%2A?displayProperty=nameWithType> starts with a format string, followed by one or more objects or expressions that will be converted to strings and inserted at a specified place in the format string. For example:
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp" id="Snippet30":::
 :::code language="csharp" source="~/snippets/csharp/System/FormatException/Overview/starting1.cs" interactive="try-dotnet-method" id="Snippet30":::
 :::code language="fsharp" source="~/snippets/fsharp/System/FormatException/Overview/starting1.fs" id="Snippet30":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb" id="Snippet30":::
@@ -40,7 +41,6 @@ The `{0}` in the format string is a format item. `0` is the index of the object 
 
 Here's another example that uses two format items and two objects in the object list:
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp" id="Snippet31":::
 :::code language="csharp" source="~/snippets/csharp/System/FormatException/Overview/starting1.cs" id="Snippet31":::
 :::code language="fsharp" source="~/snippets/fsharp/System/FormatException/Overview/starting1.fs" id="Snippet31":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb" id="Snippet31":::
@@ -51,7 +51,6 @@ You can have as many format items and as many objects in the object list as you 
 
 You can follow the index in a format item with a format string to control how an object is formatted. For example, `{0:d}` applies the "d" format string to the first object in the object list. Here is an example with a single object and two format items:
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp" id="Snippet32":::
 :::code language="csharp" source="~/snippets/csharp/System/FormatException/Overview/starting1.cs" id="Snippet32":::
 :::code language="fsharp" source="~/snippets/fsharp/System/FormatException/Overview/starting1.fs" id="Snippet32":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb" id="Snippet32":::
@@ -64,7 +63,6 @@ You can define the width of the string that is inserted into the result string b
 
 The following example defines a 6-character field to hold the string "Year" and some year strings, as well as an 15-character field to hold the string "Population" and some population data. Note that the characters are right-aligned in the field.
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp" id="Snippet33":::
 :::code language="csharp" source="~/snippets/csharp/System/FormatException/Overview/starting3.cs" id="Snippet33":::
 :::code language="fsharp" source="~/snippets/fsharp/System/FormatException/Overview/starting3.fs" id="Snippet33":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb" id="Snippet33":::
@@ -75,7 +73,6 @@ By default, strings are right-aligned within their field if you specify a field 
 
 The following example is similar to the previous one, except that it left-aligns both labels and data.
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp" id="Snippet34":::
 :::code language="csharp" source="~/snippets/csharp/System/FormatException/Overview/starting1.cs" id="Snippet34":::
 :::code language="fsharp" source="~/snippets/fsharp/System/FormatException/Overview/starting1.fs" id="Snippet34":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb" id="Snippet34":::
@@ -94,7 +91,6 @@ The following example is similar to the previous one, except that it left-aligns
 
 Each overload of the <xref:System.String.Format%2A> method uses the [composite formatting feature](../../standard/base-types/composite-formatting.md) to include zero-based indexed placeholders, called *format items*, in a composite format string. At run time, each format item is replaced with the string representation of the corresponding argument in a parameter list. If the value of the argument is `null`, the format item is replaced with <xref:System.String.Empty?displayProperty=nameWithType>. For example, the following call to the <xref:System.String.Format(System.String,System.Object,System.Object,System.Object)> method includes a format string with three format items, {0}, {1}, and {2}, and an argument list with three items.
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatoverload1.cpp" id="Snippet8":::
 :::code language="csharp" source="~/snippets/csharp/System/FormatException/Overview/formatoverload1.cs" id="Snippet8":::
 :::code language="fsharp" source="~/snippets/fsharp/System/FormatException/Overview/formatoverload1.fs" id="Snippet8":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/formatoverload1.vb" id="Snippet8":::
@@ -111,7 +107,6 @@ Brackets denote optional elements. The opening and closing braces are required. 
 
 For example, a format item to format a currency value might appear like this:
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatsyntax1.cpp" id="Snippet12":::
 :::code language="csharp" source="~/snippets/csharp/System/FormatException/Overview/formatsyntax1.cs" id="Snippet12":::
 :::code language="fsharp" source="~/snippets/fsharp/System/FormatException/Overview/formatsyntax1.fs" id="Snippet12":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/formatsyntax1.vb" id="Snippet12":::
@@ -143,7 +138,6 @@ However, note that any custom type can implement <xref:System.IFormattable> or e
 
 The following example uses the `alignment` and `formatString` arguments to produce formatted output.
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatoverload2.cpp" id="Snippet9":::
 :::code language="csharp" source="~/snippets/csharp/System/FormatException/Overview/formatoverload2.cs" interactive="try-dotnet-method" id="Snippet9":::
 :::code language="fsharp" source="~/snippets/fsharp/System/FormatException/Overview/formatoverload2.fs" id="Snippet9":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/formatoverload2.vb" id="Snippet9":::
@@ -194,7 +188,6 @@ For more information about providing custom formatting solutions, see [How to: D
 
 This example defines a format provider that formats an integer value as a customer account number in the form x-xxxxx-xx.
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatexample2.cpp" id="Snippet2":::
 :::code language="csharp" source="~/snippets/csharp/System/FormatException/Overview/FormatExample2.cs" interactive="try-dotnet" id="Snippet2":::
 :::code language="fsharp" source="~/snippets/fsharp/System/FormatException/Overview/FormatExample2.fs" id="Snippet2":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/FormatExample2.vb" id="Snippet2":::
@@ -207,7 +200,6 @@ This example defines a custom format provider that implements the <xref:System.I
 
 - If the object to be formatted is an unsigned byte value that is to be formatted by using the "R" standard format string, the custom formatter formats the numeric value as a Roman numeral.
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/interceptor2.cpp" id="Snippet11":::
 :::code language="csharp" source="~/snippets/csharp/System/FormatException/Overview/interceptor2.cs" id="Snippet11":::
 :::code language="fsharp" source="~/snippets/fsharp/System/FormatException/Overview/interceptor2.fs" id="Snippet11":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/interceptor2.vb" id="Snippet11":::

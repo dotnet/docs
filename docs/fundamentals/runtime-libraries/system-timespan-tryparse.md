@@ -2,6 +2,10 @@
 title: System.TimeSpan.TryParse methods
 description: Learn about the System.TimeSpan.TryParse methods.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - FSharp
+  - VB
 ---
 # System.TimeSpan.TryParse methods
 

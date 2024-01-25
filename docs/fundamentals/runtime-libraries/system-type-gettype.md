@@ -50,7 +50,7 @@ The `assemblyResolver` method should return `null` if the assembly cannot be res
 
 If the <xref:System.Reflection.AssemblyName> that is passed to `assemblyResolver` is a partial name, one or more of its parts are `null`. For example, if it has no version, the <xref:System.Reflection.AssemblyName.Version> property is `null`. If the <xref:System.Reflection.AssemblyName.Version> property, the <xref:System.Reflection.AssemblyName.CultureInfo> property, and the <xref:System.Reflection.AssemblyName.GetPublicKeyToken%2A> method all return `null`, then only the simple name of the assembly was supplied. The `assemblyResolver` method can use or ignore all parts of the assembly name.
 
-The effects of different assembly resolution options are displayed as a table in the [Mixed Name Resolution](#mixed_name_resolution) section, for simple and assembly-qualified type names.
+The effects of different assembly resolution options are displayed as a table in the [Mixed name resolution](#mixed-name-resolution) section, for simple and assembly-qualified type names.
 
 ### Resolve types
 

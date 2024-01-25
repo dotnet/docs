@@ -2,6 +2,9 @@
 title: System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode method
 description: Learn about the System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode method.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - VB
 ---
 # System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode method
 

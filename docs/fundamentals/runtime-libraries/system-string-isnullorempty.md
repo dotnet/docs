@@ -2,6 +2,10 @@
 title: System.String.IsNullOrEmpty method
 description: Learn about the System.String.IsNullOrEmpty method.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - FSharp
+  - VB
 ---
 # System.String.IsNullOrEmpty method
 
@@ -9,7 +13,6 @@ ms.date: 01/24/2024
 
 <xref:System.String.IsNullOrEmpty%2A> is a convenience method that enables you to simultaneously test whether a <xref:System.String> is `null` or its value is <xref:System.String.Empty?displayProperty=nameWithType>. It is equivalent to the following code:
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.string.isnullorempty/cpp/isnullorempty1.cpp" id="Snippet1":::
 :::code language="csharp" source="~/snippets/csharp/System/String/IsNullOrEmpty/isnullorempty1.cs" interactive="try-dotnet-method" id="Snippet1":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.string.isnullorempty/vb/isnullorempty1.vb" id="Snippet1":::
 :::code language="fsharp" source="~/snippets/fsharp/System/String/IsNullOrEmpty/isnullorempty1.fs" id="Snippet1":::
@@ -20,7 +23,6 @@ You can use the <xref:System.String.IsNullOrWhiteSpace%2A> method to test whethe
 
 A string is `null` if it has not been assigned a value (in C++ and Visual Basic) or if it has explicitly been assigned a value of `null`. Although the [composite formatting](../../standard/base-types/composite-formatting.md) feature can gracefully handle a null string, as the following example shows, attempting to call one if its members throws a <xref:System.NullReferenceException>.
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.string.isnullorempty/cpp/NullString1.cpp" id="Snippet2":::
 :::code language="csharp" source="~/snippets/csharp/System/String/IsNullOrEmpty/NullString1.cs" interactive="try-dotnet-method" id="Snippet2":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.string.isnullorempty/vb/NullString1.vb" id="Snippet2":::
 :::code language="fsharp" source="~/snippets/fsharp/System/String/IsNullOrEmpty/NullString1.fs" id="Snippet2":::
@@ -29,7 +31,6 @@ A string is `null` if it has not been assigned a value (in C++ and Visual Basic)
 
 A string is empty if it  is explicitly assigned an empty string ("") or <xref:System.String.Empty?displayProperty=nameWithType>. An empty string has a <xref:System.String.Length%2A> of 0.  The following example creates an empty string and displays its value and its length.
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.string.isnullorempty/cpp/NullString1.cpp" id="Snippet3":::
 :::code language="csharp" source="~/snippets/csharp/System/String/IsNullOrEmpty/NullString1.cs" interactive="try-dotnet-method" id="Snippet3":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.string.isnullorempty/vb/NullString1.vb" id="Snippet3":::
 :::code language="fsharp" source="~/snippets/fsharp/System/String/IsNullOrEmpty/NullString2.fs" id="Snippet3":::

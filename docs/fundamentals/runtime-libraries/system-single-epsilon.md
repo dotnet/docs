@@ -2,6 +2,10 @@
 title: System.Single.Epsilon property
 description: Learn about the System.Single.Epsilon property.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - FSharp
+  - VB
 ---
 # System.Single.Epsilon property
 

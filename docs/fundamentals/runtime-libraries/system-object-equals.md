@@ -2,6 +2,10 @@
 title: System.Object.Equals method
 description: Learn about the System.Object.Equals method.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - FSharp
+  - VB
 ---
 # System.Object.Equals method
 

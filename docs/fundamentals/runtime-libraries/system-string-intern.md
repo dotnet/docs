@@ -2,6 +2,10 @@
 title: System.String.Intern method
 description: Learn about the System.String.Intern method.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - FSharp
+  - VB
 ---
 # System.String.Intern method
 

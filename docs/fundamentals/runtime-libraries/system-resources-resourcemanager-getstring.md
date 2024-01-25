@@ -2,6 +2,9 @@
 title: System.Resources.ResourceManager.GetString methods
 description: Learn about the System.Resources.ResourceManager.GetString methods.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - VB
 ---
 # System.Resources.ResourceManager.GetString methods
 

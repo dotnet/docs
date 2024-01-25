@@ -2,6 +2,9 @@
 title: System.Resources.ResourceManager.GetObject methods
 description: Learn about the System.Resources.ResourceManager.GetObject methods.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - FSharp
 ---
 # System.Resources.ResourceManager.GetObject methods
 

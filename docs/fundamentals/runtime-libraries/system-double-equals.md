@@ -2,6 +2,10 @@
 title: System.Double.Equals method
 description: Learn about the System.Double.Equals method.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - FSharp
+  - VB
 ---
 # System.Double.Equals method
 

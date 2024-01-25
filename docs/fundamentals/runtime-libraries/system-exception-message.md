@@ -2,6 +2,10 @@
 title: System.Exception.Message property
 description: Learn about the System.Exception.Message property.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - FSharp
+  - VB
 ---
 # System.Exception.Message property
 
@@ -18,7 +22,6 @@ The value of the <xref:System.Exception.Message> property is included in the inf
 
 The following code example throws and then catches an <xref:System.Exception> exception and displays the exception's text message using the <xref:System.Exception.Message> property.
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Exception.Properties/CPP/properties.cpp" id="Snippet1":::
 :::code language="csharp" source="~/snippets/csharp/System/Exception/HelpLink/properties.cs" interactive="try-dotnet" id="Snippet1":::
 :::code language="fsharp" source="~/snippets/fsharp/System/Exception/HelpLink/properties.fs" id="Snippet1":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Exception.Properties/VB/properties.vb" id="Snippet1":::

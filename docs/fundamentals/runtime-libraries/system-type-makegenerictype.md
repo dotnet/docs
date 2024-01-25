@@ -2,6 +2,10 @@
 title: System.Type.MakeGenericType method
 description: Learn about the System.Type.MakeGenericType method.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - FSharp
+  - VB
 ---
 # System.Type.MakeGenericType method
 
@@ -11,7 +15,6 @@ The <xref:System.Type.MakeGenericType%2A> method allows you to write code that a
 
 Types constructed with <xref:System.Type.MakeGenericType%2A> can be open, that is, some of their type arguments can be type parameters of enclosing generic methods or types. You might use such open constructed types when you emit dynamic assemblies. For example, consider the classes `Base` and `Derived` in the following code.
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.type.makegenerictype/cpp/remarks.cpp" id="Snippet1":::
 :::code language="csharp" source="~/snippets/csharp/System/Type/MakeGenericType/remarks.cs" id="Snippet1":::
 :::code language="fsharp" source="~/snippets/fsharp/System/Type/MakeGenericType/remarks.fs" id="Snippet1":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.type.makegenerictype/vb/remarks.vb" id="Snippet1":::
@@ -32,7 +35,6 @@ For a list of the invariant conditions for terms used in generic reflection, see
 
 If a generic type is defined using C#, C++, or Visual Basic, then its nested types are all generic. This is true even if the nested types have no type parameters of their own, because all three languages include the type parameters of enclosing types in the type parameter lists of nested types. Consider the following classes:
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.type.makegenerictype/cpp/remarks.cpp" id="Snippet2":::
 :::code language="csharp" source="~/snippets/csharp/System/Type/MakeGenericType/remarks.cs" id="Snippet2":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.type.makegenerictype/vb/remarks.vb" id="Snippet2":::
 

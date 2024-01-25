@@ -2,6 +2,10 @@
 title: System.Delegate.CreateDelegate methods
 description: Learn about the System.Delegate.CreateDelegate methods.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - FSharp
+  - VB
 ---
 # System.Delegate.CreateDelegate methods
 
@@ -48,7 +52,6 @@ The code example demonstrates that the delegate named `Example` can be used to r
 
 The code example produces no output.
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/Delegate.CreateDelegate_RelaxedFit/cpp/source.cpp" id="Snippet1":::
 :::code language="csharp" source="~/snippets/csharp/System/Delegate/CreateDelegate/source1.cs" id="Snippet1":::
 :::code language="fsharp" source="~/snippets/fsharp/System/Delegate/CreateDelegate/source1.fs" id="Snippet1":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/Delegate.CreateDelegate_RelaxedFit/vb/source.vb" id="Snippet1":::

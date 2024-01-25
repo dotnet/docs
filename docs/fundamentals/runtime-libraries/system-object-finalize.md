@@ -2,6 +2,10 @@
 title: System.Object.Finalize method
 description: Learn about the System.Object.Finalize method.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - FSharp
+  - VB
 ---
 # System.Object.Finalize method
 
@@ -40,7 +44,7 @@ If <xref:System.Object.Finalize%2A> or an override of <xref:System.Object.Finali
 You should override <xref:System.Object.Finalize%2A> for a class that uses unmanaged resources, such as file handles or database connections that must be released when the managed object that uses them is discarded during garbage collection. You shouldn't implement a <xref:System.Object.Finalize%2A> method for managed objects because the garbage collector releases managed resources automatically.
 
 > [!IMPORTANT]
-> If a <xref:System.Runtime.InteropServices.SafeHandle> object is available that wraps your unmanaged resource, the recommended alternative is to implement the dispose pattern with a safe handle and not override <xref:System.Object.Finalize%2A>. For more information, see [The SafeHandle alternative](#SafeHandle) section.
+> If a <xref:System.Runtime.InteropServices.SafeHandle> object is available that wraps your unmanaged resource, the recommended alternative is to implement the dispose pattern with a safe handle and not override <xref:System.Object.Finalize%2A>. For more information, see [The SafeHandle alternative](#the-safehandle-alternative) section.
 
 The <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method does nothing by default, but you should override <xref:System.Object.Finalize%2A> only if necessary, and only to release unmanaged resources. Reclaiming memory tends to take much longer if a finalization operation runs, because it requires at least two garbage collections. In addition, you should override the <xref:System.Object.Finalize%2A> method for reference types only. The common language runtime only finalizes reference types. It ignores finalizers on value types.
 

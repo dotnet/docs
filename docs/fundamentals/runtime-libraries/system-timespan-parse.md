@@ -2,6 +2,10 @@
 title: System.TimeSpan.Parse method
 description: Learn about the System.TimeSpan.Parse method.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - FSharp
+  - VB
 ---
 # System.TimeSpan.Parse method
 

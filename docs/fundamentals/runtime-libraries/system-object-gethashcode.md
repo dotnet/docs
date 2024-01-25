@@ -2,6 +2,10 @@
 title: System.Object.GetHashCode method
 description: Learn about the System.Object.GetHashCode method.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - FSharp
+  - VB
 ---
 # System.Object.GetHashCode method
 

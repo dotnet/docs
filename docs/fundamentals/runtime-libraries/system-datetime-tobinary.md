@@ -2,6 +2,10 @@
 title: System.DateTime.ToBinary and FromBinary methods
 description: Learn about the System.DateTime.ToBinary and System.DateTime.FromBinary methods.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - FSharp
+  - VB
 ---
 # System.DateTime.ToBinary and FromBinary methods
 

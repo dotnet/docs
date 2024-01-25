@@ -2,6 +2,10 @@
 title: System.Double.Epsilon property
 description: Learn about the System.Double.Epsilon property.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - FSharp
+  - VB
 ---
 # System.Double.Epsilon property
 

@@ -2,6 +2,9 @@
 title: System.Xml.XmlReader.Create methods
 description: Learn about the System.Xml.XmlReader.Create methods.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - VB
 ---
 # System.Xml.XmlReader.Create methods
 
@@ -72,11 +75,9 @@ This example creates an XML reader that strips insignificant white space, strips
 
 The following example uses an <xref:System.Xml.XmlUrlResolver> with default credentials to access a file.
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_Data/XmlReaderSettings.cctor/CPP/XmlReaderSettings.cctor.cpp" id="Snippet1":::
 :::code language="csharp" source="~/snippets/csharp/System.Xml/XmlReader/Create/factory_rdr_cctor2.cs" id="Snippet1":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Data/XmlReaderSettings.cctor/VB/factory_rdr_cctor2.vb" id="Snippet1":::
 
-:::code language="cpp" source="~/snippets/cpp/VS_Snippets_Data/XmlReaderSettings.cctor/CPP/XmlReaderSettings.cctor.cpp" id="Snippet2":::
 :::code language="csharp" source="~/snippets/csharp/System.Xml/XmlReader/Create/factory_rdr_cctor2.cs" id="Snippet2":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Data/XmlReaderSettings.cctor/VB/factory_rdr_cctor2.vb" id="Snippet2":::
 

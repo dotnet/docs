@@ -2,6 +2,10 @@
 title: System.Single.CompareTo methods
 description: Learn about the System.Single.CompareTo methods.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - FSharp
+  - VB
 ---
 # System.Single.CompareTo methods
 

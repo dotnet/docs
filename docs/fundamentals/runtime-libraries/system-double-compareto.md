@@ -2,6 +2,10 @@
 title: System.Double.CompareTo methods
 description: Learn about the System.Double.CompareTo methods.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - FSharp
+  - VB
 ---
 # System.Double.CompareTo methods
 

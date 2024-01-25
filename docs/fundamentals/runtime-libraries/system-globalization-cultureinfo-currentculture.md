@@ -2,6 +2,9 @@
 title: System.Globalization.CultureInfo.CurrentCulture property
 description: Learn about the System.Globalization.CultureInfo.CurrentCulture property.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - VB
 ---
 # System.Globalization.CultureInfo.CurrentCulture property
 

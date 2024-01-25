@@ -1,12 +1,12 @@
 ---
 title: Create token credentials from configuration
-description: This article describes how to create token credentials from configuration files
+description: This article describes how to create Microsoft Entra token credentials from configuration files.
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23
 ms.date: 1/16/2024
 ---
 
-# Create Azure credential types using configuration files
+# Create Microsoft Entra credential types using configuration files
 
 The `Microsoft.Extensions.Azure` library supports creating different <xref:Azure.Core.TokenCredential?displayProperty=fullName> types from values defined in _appsettings.json_ and other configuration files. This article describes the support for different `TokenCredential` types and how to configure the required values for each type.
 
@@ -22,9 +22,9 @@ The following credential types are supported via configuration:
 * [ManagedIdentityCredential](#create-a-managedidentitycredential-type)
 * [WorkloadIdentityCredential](#create-a-workloadidentitycredential-type)
 
-## Configuring Azure credentials
+## Configure Azure credentials
 
-Azure service clients registered with the `AddAzureClients` method are automatically configured with an instance of `DefaultAzureCredential`. You can override the global `DefaultAzureCredential` using  credential values from configuration files when registering a client:
+Azure service clients registered with the `AddAzureClients` method are automatically configured with an instance of `DefaultAzureCredential`. You can override the global `DefaultAzureCredential` using credential values from configuration files when registering a client:
 
 ```csharp
 builder.Services.AddAzureClients(clientBuilder =>

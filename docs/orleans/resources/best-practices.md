@@ -214,7 +214,7 @@ Scaling out and in:
 Testing:
 
 - `Microsoft.Orleans.TestingHost` NuGet package contains <xref:Orleans.TestingHost.TestCluster> which can be used to create an in-memory cluster, comprised of two silos by default, which can be used to test grains.
-- Additional information can be found [here](../implementation/testing.md).
+- For more information, see [Unit testing with Orleans](../implementation/testing.md).
 
 Troubleshooting:
 

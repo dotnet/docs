@@ -28,7 +28,7 @@ You can now reuse a `TestCluster` in your test cases:
 
 :::code source="snippets/testing/Orleans-testing/Sample.OrleansTesting/HelloGrainTestsWithFixture.cs":::
 
-xUnit will call the <xref:System.IDisposable.Dispose> method of the `ClusterFixture` type when all tests have been completed and the in-memory cluster silos are stopped. `TestCluster` also has a constructor that accepts <xref:Orleans.TestingHost.TestClusterOptions> that can be used to configure the silos in the cluster.
+xUnit calls the <xref:System.IDisposable.Dispose> method of the `ClusterFixture` type when all tests have been completed and the in-memory cluster silos are stopped. `TestCluster` also has a constructor that accepts <xref:Orleans.TestingHost.TestClusterOptions> that can be used to configure the silos in the cluster.
 
 If you're using Dependency Injection in your Silo to make services available to Grains, you can use this pattern as well:
 
@@ -38,7 +38,7 @@ If you're using Dependency Injection in your Silo to make services available to 
 
 Orleans also makes it possible to mock many parts of the system, and for many scenarios, this is the easiest way to unit test grains. This approach does have limitations (for example, around scheduling reentrancy and serialization) and may require that grains include code used only by your unit tests. The [Orleans TestKit](https://github.com/OrleansContrib/OrleansTestKit) provides an alternative approach, which side-steps many of these limitations.
 
-For example, let us imagine that the grain we're testing interacts with other grains. To be able to mock those other grains, we also need to mock the <xref:Orleans.Grain.GrainFactory> member of the grain under test. By default `GrainFactory` is a normal `protected` property, but most mocking frameworks require properties to be `public` and `virtual` to be able to mock them. So the first thing we need to do is make `GrainFactory` both `public` and `virtual` property:
+For example, imagine that the grain you're testing interacts with other grains. To be able to mock those other grains, you also need to mock the <xref:Orleans.Grain.GrainFactory> member of the grain under test. By default `GrainFactory` is a normal `protected` property, but most mocking frameworks require properties to be `public` and `virtual` to be able to mock them. So the first thing you need to do is make `GrainFactory` both a `public` and `virtual` property:
 
 ```csharp
 public new virtual IGrainFactory GrainFactory
@@ -47,7 +47,7 @@ public new virtual IGrainFactory GrainFactory
 }
 ```
 
-Now we can create our grain outside of the Orleans runtime and use mocking to control the behavior of `GrainFactory`:
+Now you can create your grain outside of the Orleans runtime and use mocking to control the behavior of `GrainFactory`:
 
 ```csharp
 using Xunit;
@@ -74,4 +74,4 @@ public class WorkerGrainTests
 }
 ```
 
-Here we create our grain under test, `WorkerGrain`, using Moq that means we can then override the behavior of the `GrainFactory` so that it returns a mocked `IJournalGrain`. We can then verify that our `WorkerGrain` interacts with the `IJournalGrain` as we expect.
+Here you create the grain under test, `WorkerGrain`, using Moq, which means you can override the behavior of the `GrainFactory` so that it returns a mocked `IJournalGrain`. You can then verify that the `WorkerGrain` interacts with the `IJournalGrain` as you expect.

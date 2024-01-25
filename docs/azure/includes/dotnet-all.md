@@ -400,7 +400,7 @@
 | App Service - API Apps Service | NuGet [0.9.64](https://www.nuget.org/packages/Microsoft.Azure.AppService.ApiApps.Service/0.9.64) |  |  |
 | Code Analyzers for Durable Functions | NuGet [0.5.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask.Analyzers/0.5.0) |  | GitHub [0.5.0](https://github.com/Azure/azure-functions-durable-extension/tree/Analyzer-v0.3.0/src/WebJobs.Extensions.DurableTask.Analyzers) |
 | Cosmos DB - BulkExecutor | NuGet [2.5.1-preview](https://www.nuget.org/packages/Microsoft.Azure.CosmosDB.BulkExecutor/2.5.1-preview) |  | GitHub [2.5.1-preview](https://github.com/Azure/azure-cosmosdb-bulkexecutor-dotnet-getting-started) |
-| Cosmos DB - Direct | NuGet [3.32.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Direct/3.32.0) |  | GitHub [3.32.0](https://github.com/Azure/azure-cosmos-dotnet-v3) |
+| Cosmos DB - Direct | NuGet [3.32.1](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Direct/3.32.1) |  | GitHub [3.32.1](https://github.com/Azure/azure-cosmos-dotnet-v3) |
 | Cosmos DB - Encryption | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption/2.0.3)<br>NuGet [2.1.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption/2.1.0-preview4) |  | GitHub [2.0.3](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/encryption/1.0.0-preview4/Microsoft.Azure.Cosmos.Encryption) |
 | Cosmos DB - Encryption | NuGet [1.0.0-preview06](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption.Custom/1.0.0-preview06) |  |  |
 | Extensions - Caching Cosmos | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Cosmos/1.6.0) |  | GitHub [1.6.0](https://github.com/Azure/Microsoft.Extensions.Caching.Cosmos/tree/v1.0.0-preview4) |
@@ -501,8 +501,8 @@
 | Hyak Common - Tracing Etw | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Etw/1.0.2) |  |  |
 | Hyak Common - Tracing Log4Net | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Log4Net/1.0.2) |  |  |
 | Microsoft.Azure.SignalR.Emulator | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.1.0)<br>NuGet [1.0.0-preview1-10809](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.0.0-preview1-10809) |  |  |
-| MSBuild | NuGet [0.21.0](https://www.nuget.org/packages/Microsoft.TypeSpec.MSBuild/0.21.0) |  |  |
-| ProviderHub Controller | NuGet [0.8.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Controller/0.8.0) |  |  |
-| ProviderHub Templates | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Templates/1.0.0) |  |  |
+| MSBuild | NuGet [0.22.0](https://www.nuget.org/packages/Microsoft.TypeSpec.MSBuild/0.22.0) |  |  |
+| ProviderHub Controller | NuGet [0.9.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Controller/0.9.0) |  |  |
+| ProviderHub Templates | NuGet [1.1.1](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Templates/1.1.1) |  |  |
 | Template | NuGet [1.0.2-preview1](https://www.nuget.org/packages/Microsoft.Azure.Template/1.0.2-preview1) |  |  |
 | Test HttpRecorder | NuGet [1.13.3](https://www.nuget.org/packages/Microsoft.Azure.Test.HttpRecorder/1.13.3) |  | GitHub [1.13.3](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/mgmtcommon/TestFramework/Microsoft.Azure.Test.HttpRecorder) |

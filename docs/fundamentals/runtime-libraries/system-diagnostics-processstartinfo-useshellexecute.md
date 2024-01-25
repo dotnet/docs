@@ -7,6 +7,8 @@ ms.date: 01/24/2024
 
 [!INCLUDE [context](includes/context.md)]
 
+The <xref:System.Diagnostics.ProcessStartInfo> class specifies a set of values that are used when you start a process.
+
 Setting the <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute> property to `false` enables you to redirect input, output, and error streams.
 
 The word "shell" in this context (`UseShellExecute`) refers to a graphical shell (similar to the Windows shell) rather than command shells (for example, `bash` or `sh`) and lets users launch graphical applications or open documents.

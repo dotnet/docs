@@ -7,9 +7,11 @@ ms.date: 01/24/2024
 
 [!INCLUDE [context](includes/context.md)]
 
+The <xref:System.Environment.GetEnvironmentVariable%2A> method retrieves the value of an environment variable from the current process.
+
 ## <xref:System.Environment.GetEnvironmentVariable(System.String)> method
 
-The <xref:System.Environment.GetEnvironmentVariable(System.String)> method retrieves an environment variable from the environment block of the current process only. It is equivalent to calling the <xref:System.Environment.GetEnvironmentVariable(System.String,System.EnvironmentVariableTarget)> method with a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>.
+The <xref:System.Environment.GetEnvironmentVariable(System.String)> method retrieves an environment variable from the environment block of the current process only. It's equivalent to calling the <xref:System.Environment.GetEnvironmentVariable(System.String,System.EnvironmentVariableTarget)> method with a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>.
 
 To retrieve all environment variables along with their values, call the <xref:System.Environment.GetEnvironmentVariables%2A> method.
 

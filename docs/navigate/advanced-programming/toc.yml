@@ -316,7 +316,12 @@ items:
     - name: The Task class
       href: ../../fundamentals/runtime-libraries/system-threading-tasks-task.md
     - name: The Monitor class
-      href: ../../fundamentals/runtime-libraries/system-threading-monitor.md
+      items:
+      - name: Type remarks
+        href: ../../fundamentals/runtime-libraries/system-threading-monitor.md
+        displayName: monitor
+      - name: Wait method
+        href: ../../fundamentals/runtime-libraries/system-threading-monitor-wait.md
     - name: The ReaderWriterLockSlim class
       href: ../../fundamentals/runtime-libraries/system-threading-readerwriterlockslim.md
     - name: The TaskScheduler class
@@ -388,15 +393,20 @@ items:
     href: ../../standard/native-interop/exceptions-interoperability.md
   - name: Supplemental API remarks
     items:
-    - name: The System.Runtime.InteropServices.ComException class
+    - name: The ComException class
       href: ../../fundamentals/runtime-libraries/system-runtime-interopservices-comexception.md
-    - name: The System.Runtime.InteropServices.ComWrappers class
+    - name: The ComWrappers class
       href: ../../fundamentals/runtime-libraries/system-runtime-interopservices-comwrappers.md
     - name: The ICustomMarshaler interface
       href: ../../fundamentals/runtime-libraries/system-runtime-interopservices-icustommarshaler.md
-    - name: The System.Runtime.InteropServices.SafeHandle class
+    - name: The Marshal class
+      items:
+      - name: GetActiveObject method
+        href: ../../fundamentals/runtime-libraries/system-runtime-interopservices-marshal-getactiveobject.md
+        displayName: marshal
+    - name: The SafeHandle class
       href: ../../fundamentals/runtime-libraries/system-runtime-interopservices-safehandle.md
-    - name: The ExpandoObject class
+    - name: The System.Dynamic.ExpandoObject class
       href: ../../fundamentals/runtime-libraries/system-dynamic-expandoobject.md
 - name: Memory management
   items:

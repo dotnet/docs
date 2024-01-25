@@ -230,6 +230,11 @@ items:
         items:
         - name: Convert class
           href: runtime-libraries/system-convert.md
+        - name: ValueType class
+          items:
+          - name: GetHashCode method
+            href: runtime-libraries/system-valuetype-gethashcode.md
+            displayName: valuetype
     - name: Choose between anonymous and tuple types
       href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
     - name: Class library overview
@@ -237,7 +242,18 @@ items:
     - name: Supplemental API remarks
       items:
       - name: System.Object class
-        href: runtime-libraries/system-object.md
+        items:
+        - name: Type remarks
+          href: runtime-libraries/system-object.md
+          displayName: object
+        - name: Equals method
+          href: runtime-libraries/system-object-equals.md
+        - name: Finalize method
+          href: runtime-libraries/system-object-finalize.md
+        - name: GetHashCode method
+          href: runtime-libraries/system-object-gethashcode.md
+        - name: ToString method
+          href: runtime-libraries/system-object-tostring.md
     - name: Nullability
       items:
       - name: Supplemental API remarks
@@ -285,12 +301,23 @@ items:
       items:
       - name: HashSet<T> class
         href: runtime-libraries/system-collections-generic-hashset{t}.md
+      - name: KeyedCollection<TKey,TItem> class
+        items:
+        - name: ChangeItemKey method
+          href: runtime-libraries/system-collections-objectmodel-keyedcollection{tkey,titem}-changeitemkey.md
       - name: List<T> class
         href: runtime-libraries/system-collections-generic-list{t}.md
       - name: ObservableCollection<T> class
         href: runtime-libraries/system-collections-objectmodel-observablecollection{t}.md
   - name: Delegates and lambdas
-    href: ../standard/delegates-lambdas.md
+    items:
+    - name: Overview
+      href: ../standard/delegates-lambdas.md
+      displayName: delegates,lambdas
+    - name: Supplemental API remarks
+      items:
+      - name: Delegate.CreateDelegate method
+        href: runtime-libraries/system-delegate-createdelegate.md
   - name: Enumerations
     items:
     - name: Supplemental API remarks
@@ -351,7 +378,14 @@ items:
       - name: AccessViolationException class
         href: runtime-libraries/system-accessviolationexception.md
       - name: Exception class
-        href: runtime-libraries/system-exception.md
+        items:
+        - name: Type remarks
+          href: runtime-libraries/system-exception.md
+          displayName: exception
+        - name: Data property
+          href: runtime-libraries/system-exception-data.md
+        - name: Message property
+          href: runtime-libraries/system-exception-message.md
       - name: InvalidCastException class
         href: runtime-libraries/system-invalidcastexception.md
       - name: InvalidOperationException class
@@ -376,7 +410,16 @@ items:
       - name: Decimal struct
         href: runtime-libraries/system-decimal.md
       - name: Double struct
-        href: runtime-libraries/system-double.md
+        items:
+        - name: Type remarks
+          href: runtime-libraries/system-double.md
+          displayName: system.double,double
+        - name: CompareTo method
+          href: runtime-libraries/system-double-compareto.md
+        - name: Equals method
+          href: runtime-libraries/system-double-equals.md
+        - name: Epsilon property
+          href: runtime-libraries/system-double-epsilon.md
       - name: Int32 struct
         href: runtime-libraries/system-int32.md
       - name: Int64 struct
@@ -386,7 +429,16 @@ items:
       - name: Complex struct
         href: runtime-libraries/system-numerics-complex.md
       - name: Single struct
-        href: runtime-libraries/system-single.md
+        items:
+        - name: Type remarks
+          href: runtime-libraries/system-single.md
+          displayName: single
+        - name: CompareTo method
+          href: runtime-libraries/system-single-compareto.md
+        - name: Epsilon property
+          href: runtime-libraries/system-single-epsilon.md
+        - name: Equals method
+          href: runtime-libraries/system-single-equals.md
   - name: Dates, times, and time zones
     items:
     - name: Overview
@@ -445,9 +497,23 @@ items:
     - name: Supplemental API remarks
       items:
       - name: DateTime struct
-        href: runtime-libraries/system-datetime.md
+        items:
+        - name: Type remarks
+          href: runtime-libraries/system-datetime.md
+          displayName: datetime
+        - name: ToBinary method
+          href: runtime-libraries/system-datetime-tobinary.md
+        - name: TryParse method
+          href: runtime-libraries/system-datetime-tryparse.md
       - name: TimeSpan struct
-        href: runtime-libraries/system-timespan.md
+        items:
+        - name: Type remarks
+          href: runtime-libraries/system-timespan.md
+          displayName: timespan
+        - name: Parse method
+          href: runtime-libraries/system-timespan-parse.md
+        - name: TryParse method
+          href: runtime-libraries/system-timespan-tryparse.md
   - name: Attributes
     items:
     - name: Overview
@@ -561,15 +627,36 @@ items:
     - name: Supplemental API remarks
       items:
       - name: String class
-        href: runtime-libraries/system-string.md
+        items:
+        - name: Type remarks
+          href: runtime-libraries/system-string.md
+          displayName: string
+        - name: Constructor
+          href: runtime-libraries/system-string-ctor.md
+        - name: Format method
+          href: runtime-libraries/system-string-format.md
+        - name: Intern method
+          href: runtime-libraries/system-string-intern.md
+        - name: IsNullOrEmpty method
+          href: runtime-libraries/system-string-isnullorempty.md
       - name: Char struct
         href: runtime-libraries/system-char.md
       - name: StringComparer class
         href: runtime-libraries/system-stringcomparer.md
       - name: Encoding class
-        href: runtime-libraries/system-text-encoding.md
+        items:
+        - name: Type remarks
+          href: runtime-libraries/system-text-encoding.md
+          displayName: encoding
+        - name: Default property
+          href: runtime-libraries/system-text-encoding-default.md
       - name: Regex class
-        href: runtime-libraries/system-text-regularexpressions-regex.md
+        items:
+        - name: Type remarks
+          href: runtime-libraries/system-text-regularexpressions-regex.md
+          displayName: regex
+        - name: Match method
+          href: runtime-libraries/system-text-regularexpressions-regex-match.md
       - name: Rune struct
         href: runtime-libraries/system-text-rune.md
       - name: StringBuilder class
@@ -1088,9 +1175,23 @@ items:
       - name: CompareOptions
         href: runtime-libraries/system-globalization-compareoptions.md
       - name: CultureAndRegionInfoBuilder
-        href: runtime-libraries/system-globalization-cultureandregioninfobuilder.md
+        items:
+        - name: Type remarks
+          href: runtime-libraries/system-globalization-cultureandregioninfobuilder.md
+          displayName: cultureandregioninfobuilder
+        - name: Constructor
+          href: runtime-libraries/system-globalization-cultureandregioninfobuilder-ctor.md
       - name: CultureInfo
-        href: runtime-libraries/system-globalization-cultureinfo.md
+        items:
+        - name: Type remarks
+          href: runtime-libraries/system-globalization-cultureinfo.md
+          displayName: cultureinfo
+        - name: CurrentCulture property
+          href: runtime-libraries/system-globalization-cultureinfo-currentculture.md
+        - name: CurrentUICulture property
+          href: runtime-libraries/system-globalization-cultureinfo-currentuiculture.md
+        - name: InvariantCulture property
+          href: runtime-libraries/system-globalization-cultureinfo-invariantculture.md
       - name: DateTimeFormatInfo
         href: runtime-libraries/system-globalization-datetimeformatinfo.md
       - name: NumberFormatInfo
@@ -1126,7 +1227,16 @@ items:
       - name: NeutralResourcesLanguageAttribute class
         href: runtime-libraries/system-resources-neutralresourceslanguageattribute.md
       - name: ResourceManager class
-        href: runtime-libraries/system-resources-resourcemanager.md
+        items:
+        - name: Type remarks
+          href: runtime-libraries/system-resources-resourcemanager.md
+          displayName: resourcemanager
+        - name: Constructor
+          href: runtime-libraries/system-resources-resourcemanager-ctor.md
+        - name: GetObject method
+          href: runtime-libraries/system-resources-resourcemanager-getobject.md
+        - name: GetString method
+          href: runtime-libraries/system-resources-resourcemanager-getstring.md
       - name: ResourceReader class
         href: runtime-libraries/system-resources-resourcereader.md
       - name: SatelliteContractVersionAttribute class
@@ -1168,7 +1278,16 @@ items:
     - name: Supplemental API remarks
       items:
       - name: Type class
-        href: runtime-libraries/system-type.md
+        items:
+        - name: Type remarks
+          href: runtime-libraries/system-type.md
+          displayName: type
+        - name: GetProperty method
+          href: runtime-libraries/system-type-getproperty.md
+        - name: GetType method
+          href: runtime-libraries/system-type-gettype.md
+        - name: MakeGenericType method
+          href: runtime-libraries/system-type-makegenerictype.md
   - name: Graphics
     items:
     - name: Supplemental API remarks
@@ -1177,10 +1296,27 @@ items:
         href: runtime-libraries/system-drawing-drawing2d-matrix.md
   - name: The InternalsVisibleToAttribute class
     href: runtime-libraries/system-runtime-compilerservices-internalsvisibletoattribute.md
+  - name: The RuntimeHelpers class
+    items:
+    - name: GetHashCode method
+      href: runtime-libraries/system-runtime-compilerservices-runtimehelpers-gethashcode.md
+      displayName: runtimehelpers
   - name: The ComponentGuaranteesAttribute class
     href: runtime-libraries/system-runtime-versioning-componentguaranteesattribute.md
   - name: The AssemblyLoadContext class
     href: runtime-libraries/system-runtime-loader-assemblyloadcontext.md
+  - name: The ProcessStartInfo class
+    items:
+    - name: Supplemental API remarks
+      items:
+      - name: UseShellExecute method
+        href: runtime-libraries/system-diagnostics-processstartinfo-useshellexecute.md
+  - name: The Environment class
+    items:
+    - name: Supplemental API remarks
+      items:
+      - name: GetEnvironmentVariable method
+        href: runtime-libraries/system-environment-getenvironmentvariable.md
 - name: Execution model
   items:
   - name: Common Language Runtime (CLR)

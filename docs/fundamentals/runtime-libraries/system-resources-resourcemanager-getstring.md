@@ -55,8 +55,8 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
 
 Here's the source code for the example (ShowDate.vb for the Visual Basic version or ShowDate.cs for the C# version).
 
-:::code language="csharp" source="~/snippets/csharp/System.Resources/MissingManifestResourceException/Overview/showdate.cs" id="Snippet2":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resourcemanager.class/vb/showdate.vb" id="Snippet2":::
+:::code language="csharp" source="./snippets/System.Resources/MissingManifestResourceException/Overview/csharp/showdate1.cs" id="Snippet2":::
+:::code language="vb" source="./snippets/System.Resources/ResourceManager/GetString/vb/showdate.vb" id="Snippet2":::
 
 ## xref:System.Resources.ResourceManager.GetString(System.String,System.Globalization.CultureInfo)> method
 
@@ -102,5 +102,5 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
 
 Here's the source code for the example (ShowDate.vb for the Visual Basic version or ShowDate.cs for the C# version).
 
-:::code language="csharp" source="~/snippets/csharp/System.Resources/MissingManifestResourceException/Overview/showdate2.cs" id="Snippet3":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resourcemanager.class/vb/showdate2.vb" id="Snippet3":::
+:::code language="csharp" source="./snippets/System.Resources/MissingManifestResourceException/Overview/csharp/showdate2.cs" id="Snippet3":::
+:::code language="vb" source="./snippets/System.Resources/ResourceManager/GetString/vb/showdate2.vb" id="Snippet3":::

@@ -15,9 +15,9 @@ The <xref:System.Type.MakeGenericType%2A> method allows you to write code that a
 
 Types constructed with <xref:System.Type.MakeGenericType%2A> can be open, that is, some of their type arguments can be type parameters of enclosing generic methods or types. You might use such open constructed types when you emit dynamic assemblies. For example, consider the classes `Base` and `Derived` in the following code.
 
-:::code language="csharp" source="~/snippets/csharp/System/Type/MakeGenericType/remarks.cs" id="Snippet1":::
-:::code language="fsharp" source="~/snippets/fsharp/System/Type/MakeGenericType/remarks.fs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.type.makegenerictype/vb/remarks.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/Type/MakeGenericType/csharp/remarks.cs" id="Snippet1":::
+:::code language="fsharp" source="./snippets/System/Type/MakeGenericType/fsharp/remarks.fs" id="Snippet1":::
+:::code language="vb" source="./snippets/System/Type/MakeGenericType/vb/remarks.vb" id="Snippet1":::
 
 To generate `Derived` in a dynamic assembly, it is necessary to construct its base type. To do this, call the <xref:System.Type.MakeGenericType%2A> method on a <xref:System.Type> object representing the class `Base`, using the generic type arguments <xref:System.Int32> and the type parameter `V` from `Derived`. Because types and generic type parameters are both represented by <xref:System.Type> objects, an array containing both can be passed to the <xref:System.Type.MakeGenericType%2A> method.
 
@@ -35,8 +35,8 @@ For a list of the invariant conditions for terms used in generic reflection, see
 
 If a generic type is defined using C#, C++, or Visual Basic, then its nested types are all generic. This is true even if the nested types have no type parameters of their own, because all three languages include the type parameters of enclosing types in the type parameter lists of nested types. Consider the following classes:
 
-:::code language="csharp" source="~/snippets/csharp/System/Type/MakeGenericType/remarks.cs" id="Snippet2":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.type.makegenerictype/vb/remarks.vb" id="Snippet2":::
+:::code language="csharp" source="./snippets/System/Type/MakeGenericType/csharp/remarks.cs" id="Snippet2":::
+:::code language="vb" source="./snippets/System/Type/MakeGenericType/vb/remarks.vb" id="Snippet2":::
 
 The type parameter list of the nested class `Inner` has two type parameters, `T` and `U`, the first of which is the type parameter of its enclosing class. Similarly, the type parameter list of the nested class `Innermost1` has three type parameters, `T`, `U`, and `V`, with `T` and `U` coming from its enclosing classes. The nested class `Innermost2` has two type parameters, `T` and `U`, which come from its enclosing classes.
 

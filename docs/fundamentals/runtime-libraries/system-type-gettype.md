@@ -82,8 +82,8 @@ The combination of `assemblyResolver` and `typeResolver` that you provide must b
 
 Notice that `MyType` is the only assembly-qualified type argument. The names of the <xref:System.Collections.Generic.Dictionary%602> and <xref:System.String> classes are not assembly-qualified. Your `typeResolver` must be able handle either an assembly or `null`, because it will receive `null` for <xref:System.Collections.Generic.Dictionary%602> and <xref:System.String>. It can handle that case by calling an overload of the <xref:System.Type.GetType%2A> method that takes a string, because both of the unqualified type names are in mscorlib.dll/System.Private.CoreLib.dll:
 
-:::code language="csharp" source="~/snippets/csharp/System/Type/GetType/source.cs" id="Snippet1":::
-:::code language="fsharp" source="~/snippets/fsharp/System/Type/GetType/source.fs" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/Type/GetType/csharp/source.cs" id="Snippet1":::
+:::code language="fsharp" source="./snippets/System/Type/GetType/fsharp/source.fs" id="Snippet1":::
 
 The `assemblyResolver` method is not called for the dictionary type and the string type, because those type names are not assembly-qualified.
 
@@ -95,8 +95,8 @@ Now suppose that instead of `System.String`, the first generic argument type is 
 
 Because this assembly is neither mscorlib.dll/System.Private.CoreLib.dll nor the currently executing assembly, you cannot resolve `YourType` without an assembly-qualified name. Because your `assemblyResolve` will be called recursively, it must be able to handle this case. Instead of returning `null` for assemblies other than `MyAssembly`, it now performs an assembly load using the supplied <xref:System.Reflection.AssemblyName> object.
 
-:::code language="csharp" source="~/snippets/csharp/System/Type/GetType/source.cs" id="Snippet2":::
-:::code language="fsharp" source="~/snippets/fsharp/System/Type/GetType/source.fs" id="Snippet2":::
+:::code language="csharp" source="./snippets/System/Type/GetType/csharp/source.cs" id="Snippet2":::
+:::code language="fsharp" source="./snippets/System/Type/GetType/fsharp/source.fs" id="Snippet2":::
 
 #### Resolve type names with special characters
 

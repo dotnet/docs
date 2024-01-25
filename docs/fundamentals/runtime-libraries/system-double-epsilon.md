@@ -13,15 +13,15 @@ dev_langs:
 
 The value of the <xref:System.Double.Epsilon> property reflects the smallest positive <xref:System.Double> value that is significant in numeric operations or comparisons when the value of the <xref:System.Double> instance is zero. For example, the following code shows that zero and <xref:System.Double.Epsilon> are considered to be unequal values, whereas zero and half the value of <xref:System.Double.Epsilon> are considered to be equal.
 
-:::code language="csharp" source="~/snippets/csharp/System/Double/Epsilon/epsilon.cs" interactive="try-dotnet" id="Snippet5":::
-:::code language="fsharp" source="~/snippets/fsharp/System/Double/Epsilon/epsilon.fs" id="Snippet5":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Double.Epsilon/vb/epsilon.vb" id="Snippet5":::
+:::code language="csharp" source="./snippets/System/Double/Epsilon/csharp/epsilon.cs" interactive="try-dotnet" id="Snippet5":::
+:::code language="fsharp" source="./snippets/System/Double/Epsilon/fsharp/epsilon.fs" id="Snippet5":::
+:::code language="vb" source="./snippets/System/Double/Epsilon/vb/epsilon.vb" id="Snippet5":::
 
 More precisely, the floating point format consists of a sign, a 52-bit mantissa or significand, and an 11-bit exponent. As the following example shows, zero has an exponent of -1022 and a mantissa of 0. <xref:System.Double.Epsilon> has an exponent of -1022 and a mantissa of 1. This means that <xref:System.Double.Epsilon> is the smallest positive <xref:System.Double> value greater than zero and represents the smallest possible value and the smallest possible increment for a <xref:System.Double> whose exponent is -1022.
 
-:::code language="csharp" source="~/snippets/csharp/System/Double/Epsilon/epsilon1.cs" interactive="try-dotnet" id="Snippet6":::
-:::code language="fsharp" source="~/snippets/fsharp/System/Double/Epsilon/epsilon1.fs" id="Snippet6":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Double.Epsilon/vb/epsilon1.vb" id="Snippet6":::
+:::code language="csharp" source="./snippets/System/Double/Epsilon/csharp/epsilon1.cs" interactive="try-dotnet" id="Snippet6":::
+:::code language="fsharp" source="./snippets/System/Double/Epsilon/fsharp/epsilon1.fs" id="Snippet6":::
+:::code language="vb" source="./snippets/System/Double/Epsilon/vb/epsilon1.vb" id="Snippet6":::
 
 However, the <xref:System.Double.Epsilon> property is not a general measure of precision of the <xref:System.Double> type; it applies only to <xref:System.Double> instances that have a value of zero or an exponent of -1022.
 

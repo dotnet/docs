@@ -26,8 +26,8 @@ For example, if you choose to persist date and time data in string form, you can
 
 The following example uses the invariant culture to persist a <xref:System.DateTime> value as a string. It then parses the string and displays its value by using the formatting conventions of the French (France) and German (Germany) cultures.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/CultureInfo/InvariantCulture/persist1.cs" interactive="try-dotnet" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureinfo.invariantculture/vb/persist1.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Globalization/CultureInfo/InvariantCulture/csharp/persist1.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="vb" source="./snippets/System.Globalization/CultureInfo/InvariantCulture/vb/persist1.vb" id="Snippet1":::
 
 ## Security decisions
 

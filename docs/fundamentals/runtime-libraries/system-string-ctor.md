@@ -116,8 +116,8 @@ The most commonly used technique for creating strings programmatically is simple
 
   If the array contains any embedded null characters (U+0000 or '\0') and the <xref:System.String.%23ctor(System.Char%2A,System.Int32,System.Int32)> overload is called, the string instance contains `length` characters including any embedded nulls. The following example shows what happens when a pointer to an array of 10 elements that includes two null characters is passed to the <xref:System.String.%23ctor(System.Char%2A,System.Int32,System.Int32)> method. Because the address is the beginning of the array and all elements in the array are to be added to the string, the constructor instantiates a string with ten characters, including two embedded nulls. On the other hand, if the same array is passed to the <xref:System.String.%23ctor(System.Char%2A)> constructor, the result is a four-character string that does not include the first null character.
 
-  :::code language="csharp" source="~/snippets/csharp/System/String/.ctor/chptrctor_null.cs" id="Snippet5":::
-  :::code language="fsharp" source="~/snippets/fsharp/System/String/.ctor/chptrctor_null.fs" id="Snippet5":::
+  :::code language="csharp" source="./snippets/System/String/.ctor/csharp/chptrctor_null.cs" id="Snippet5":::
+  :::code language="fsharp" source="./snippets/System/String/.ctor/fsharp/chptrctor_null.fs" id="Snippet5":::
 
   The array must contain Unicode characters. In C++, this means that the character array must be defined either as the managed <xref:System.Char>[] type or the unmanaged`wchar_t`[] type.
 
@@ -127,12 +127,12 @@ The most commonly used technique for creating strings programmatically is simple
 
   The three constructors that include a signed byte array as a parameter are designed primarily to convert a C++ `char` array to a string, as shown in this example:
 
-  :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.string.ctor/cpp/sbyte_ctor1.cpp" id="Snippet4":::
+  :::code language="cpp" source="./snippets/System/String/.ctor/cpp/sbyte_ctor1.cpp" id="Snippet4":::
 
   If the array contains any null characters ('\0') or bytes whose value is 0 and the <xref:System.String.%23ctor(System.SByte%2A,System.Int32,System.Int32)> overload is called, the string instance contains `length` characters including any embedded nulls. The following example shows what happens when a pointer to an array of 10 elements that includes two null characters is passed to the <xref:System.String.%23ctor(System.SByte%2A,System.Int32,System.Int32)> method. Because the address is the beginning of the array and all elements in the array are to be added to the string, the constructor instantiates a string with ten characters, including two embedded nulls. On the other hand, if the same array is passed to the <xref:System.String.%23ctor(System.SByte%2A)> constructor, the result is a four-character string that does not include the first null character.
 
-  :::code language="csharp" source="~/snippets/csharp/System/String/.ctor/ptrctor_null.cs" id="Snippet6":::
-  :::code language="fsharp" source="~/snippets/fsharp/System/String/.ctor/ptrctor_null.fs" id="Snippet6":::
+  :::code language="csharp" source="./snippets/System/String/.ctor/csharp/ptrctor_null.cs" id="Snippet6":::
+  :::code language="fsharp" source="./snippets/System/String/.ctor/fsharp/ptrctor_null.fs" id="Snippet6":::
 
   Because the <xref:System.String.%23ctor(System.SByte%2A)> and <xref:System.String.%23ctor(System.SByte%2A,System.Int32,System.Int32)> constructors interpret `value` by using the default ANSI code page, calling these constructors with identical byte arrays may create strings that have different values on different systems.
 
@@ -148,43 +148,43 @@ Instead of converting each token into a new string, you can create a <xref:Syste
 
 The following example creates a new string by assigning it a string literal. It creates a second string by assigning the value of the first string to it. These are the two most common ways to instantiate a new <xref:System.String> object.
 
-:::code language="csharp" source="~/snippets/csharp/System/String/.ctor/ctor1.cs" interactive="try-dotnet" id="Snippet1":::
-:::code language="fsharp" source="~/snippets/fsharp/System/String/.ctor/ctor1.fs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.string.ctor/vb/ctor1.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/String/.ctor/csharp/ctor1.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="fsharp" source="./snippets/System/String/.ctor/fsharp/ctor1.fs" id="Snippet1":::
+:::code language="vb" source="./snippets/System/String/.ctor/vb/ctor1.vb" id="Snippet1":::
 
 ## Example 2: Use a character array
 
 The following example demonstrates how to create a new <xref:System.String> object from a character array.
 
-:::code language="csharp" source="~/snippets/csharp/System/String/.ctor/source.cs" interactive="try-dotnet-method" id="Snippet1":::
-:::code language="fsharp" source="~/snippets/fsharp/System/String/.ctor/source.fs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/stringexample1/VB/source.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/String/.ctor/csharp/source.cs" interactive="try-dotnet-method" id="Snippet1":::
+:::code language="fsharp" source="./snippets/System/String/.ctor/fsharp/source.fs" id="Snippet1":::
+:::code language="vb" source="./snippets/System/String/.ctor/vb/source.vb" id="Snippet1":::
 
 ## Example 3: Use a portion of a character array and repeating a single character
 
 The following example demonstrates how to create a new <xref:System.String> object from a portion of a character array, and how to create a new <xref:System.String> object that contains multiple occurrences of a single character.
 
-:::code language="csharp" source="~/snippets/csharp/System/String/.ctor/source.cs" interactive="try-dotnet-method" id="Snippet3":::
-:::code language="fsharp" source="~/snippets/fsharp/System/String/.ctor/source.fs" id="Snippet3":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/stringexample1/VB/source.vb" id="Snippet3":::
+:::code language="csharp" source="./snippets/System/String/.ctor/csharp/source.cs" interactive="try-dotnet-method" id="Snippet3":::
+:::code language="fsharp" source="./snippets/System/String/.ctor/fsharp/source.fs" id="Snippet3":::
+:::code language="vb" source="./snippets/System/String/.ctor/vb/source.vb" id="Snippet3":::
 
 ## Example 4: Use a pointer to a character array
 
 The following example demonstrates how to create a new <xref:System.String> object from a pointer to an array of characters. The C# example must be compiled by using the `/unsafe` compiler switch.
 
-:::code language="csharp" source="~/snippets/csharp/System/String/.ctor/ctor2.cs" id="Snippet2":::
-:::code language="fsharp" source="~/snippets/fsharp/System/String/.ctor/ctor2.fs" id="Snippet2":::
+:::code language="csharp" source="./snippets/System/String/.ctor/csharp/ctor2.cs" id="Snippet2":::
+:::code language="fsharp" source="./snippets/System/String/.ctor/fsharp/ctor2.fs" id="Snippet2":::
 
 ## Example 5: Instantiate a string from a pointer and a range of an array
 
 The following example examines the elements of a character array for either a period or an exclamation point. If one is found, it instantiates a string from the characters in the array that precede the punctuation symbol. If not, it instantiates a string with the entire contents of the array. The C# example must be compiled using the `/unsafe` compiler switch.
 
-:::code language="csharp" source="~/snippets/csharp/System/String/.ctor/char2_ctor.cs" id="Snippet3":::
-:::code language="fsharp" source="~/snippets/fsharp/System/String/.ctor/char2_ctor.fs" id="Snippet3":::
+:::code language="csharp" source="./snippets/System/String/.ctor/csharp/char2_ctor.cs" id="Snippet3":::
+:::code language="fsharp" source="./snippets/System/String/.ctor/fsharp/char2_ctor.fs" id="Snippet3":::
 
 ## Example 6: Instantiate a string from a pointer to a signed byte array
 
 The following example demonstrates how you can create an instance of the <xref:System.String> class with the <xref:System.String.%23ctor(System.SByte%2A)> constructor.
 
-:::code language="csharp" source="~/snippets/csharp/System/String/.ctor/source.cs" id="Snippet2":::
-:::code language="fsharp" source="~/snippets/fsharp/System/String/.ctor/source.fs" id="Snippet2":::
+:::code language="csharp" source="./snippets/System/String/.ctor/csharp/source.cs" id="Snippet2":::
+:::code language="fsharp" source="./snippets/System/String/.ctor/fsharp/source.fs" id="Snippet2":::

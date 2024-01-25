@@ -25,18 +25,18 @@ The returned resource is localized for the UI culture of the current thread, whi
 
 The following example uses the <xref:System.Resources.ResourceManager.GetObject(System.String)> method to deserialize a custom object. The example includes a source code file named UIElements.cs (UIElements.vb if you're using Visual Basic) that defines the following structure named `PersonTable`. This structure is intended to be used by a general table display routine that displays the localized names of table columns. Note that the `PersonTable` structure is marked with the <xref:System.SerializableAttribute> attribute.
 
-:::code language="csharp" source="~/snippets/csharp/System.Resources/ResourceManager/Overview/example1.cs" id="Snippet6":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.retrieving/vb/example.vb" id="Snippet6":::
+:::code language="csharp" source="./snippets/System.Resources/ResourceManager/Overview/csharp/example1.cs" id="Snippet6":::
+:::code language="vb" source="./snippets/System.Resources/ResourceManager/GetObject/vb/example.vb" id="Snippet6":::
 
 The following code from a file named CreateResources.cs (or CreateResources.vb for Visual Basic) creates an XML resource file named UIResources.resx that stores a table title and a `PersonTable` object that contains information for an app that is localized for the English language.
 
-:::code language="csharp" source="~/snippets/csharp/System.Resources/ResourceManager/Overview/example11.cs" id="Snippet7":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.retrieving/vb/example.vb" id="Snippet7":::
+:::code language="csharp" source="./snippets/System.Resources/ResourceManager/Overview/csharp/example11.cs" id="Snippet7":::
+:::code language="vb" source="./snippets/System.Resources/ResourceManager/GetObject/vb/example.vb" id="Snippet7":::
 
 The following code in a source code file named GetObject.cs (or GetObject.vb) then retrieves the resources and displays them to the console.
 
-:::code language="csharp" source="~/snippets/csharp/System.Resources/ResourceManager/Overview/example2.cs" id="Snippet8":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.retrieving/vb/example2.vb" id="Snippet8":::
+:::code language="csharp" source="./snippets/System.Resources/ResourceManager/Overview/csharp/example2.cs" id="Snippet8":::
+:::code language="vb" source="./snippets/System.Resources/ResourceManager/GetObject/vb/example2.vb" id="Snippet8":::
 
 You can build the necessary resource file and assemblies and run the app by executing the following batch file. You must use the `/r` option to supply Resgen.exe with a reference to UIElements.dll so that it can access information about the `PersonTable` structure. If you're using C#, replace the `vbc` compiler name with `csc`, and replace the `.vb` extension with `.cs`.
 
@@ -59,18 +59,18 @@ The returned resource is localized for the culture that is specified by `culture
 
 The following example uses the <xref:System.Resources.ResourceManager.GetObject(System.String,System.Globalization.CultureInfo)> method to deserialize a custom object. The example includes a source code file named NumberInfo.cs (NumberInfo.vb if you're using Visual Basic) that defines the following structure named `Numbers`. This structure is intended to be used by a simple educational app that teaches non-English speaking students to count to ten in English. Note that the `Numbers` class is marked with the <xref:System.SerializableAttribute> attribute.
 
-:::code language="csharp" source="~/snippets/csharp/System.Resources/ResourceManager/GetObject/numberinfo.cs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resourcemanager.getobject/vb/numberinfo.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Resources/ResourceManager/GetObject/csharp/numberinfo.cs" id="Snippet1":::
+:::code language="vb" source="./snippets/System.Resources/ResourceManager/GetObject/vb/numberinfo.vb" id="Snippet1":::
 
 The following source code from a file named CreateResources.cs (CreateResources.vb for Visual Basic) creates XML resource files for the default English language, as well as for the French, Portuguese, and Russian languages.
 
-:::code language="csharp" source="~/snippets/csharp/System.Resources/ResourceManager/GetObject/createresources.cs" id="Snippet2":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resourcemanager.getobject/vb/createresources.vb" id="Snippet2":::
+:::code language="csharp" source="./snippets/System.Resources/ResourceManager/GetObject/csharp/createresources.cs" id="Snippet2":::
+:::code language="vb" source="./snippets/System.Resources/ResourceManager/GetObject/vb/createresources.vb" id="Snippet2":::
 
 The resources are consumed by the following app, which sets the current UI culture to French (France), Portuguese (Brazil), or Russian (Russia). It calls the <xref:System.Resources.ResourceManager.GetObject(System.String)> method to get a `Numbers` object that contains localized numbers and the <xref:System.Resources.ResourceManager.GetObject(System.String,System.Globalization.CultureInfo)> method to get a `Numbers` object that contains English language numbers. It then displays odd numbers using the current UI culture and the English language. The source code file is named ShowNumbers.cs (ShowNumbers.vb).
 
-:::code language="csharp" source="~/snippets/csharp/System.Resources/ResourceManager/GetObject/shownumbers.cs" id="Snippet3":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resourcemanager.getobject/vb/shownumbers.vb" id="Snippet3":::
+:::code language="csharp" source="./snippets/System.Resources/ResourceManager/GetObject/csharp/shownumbers.cs" id="Snippet3":::
+:::code language="vb" source="./snippets/System.Resources/ResourceManager/GetObject/vb/shownumbers.vb" id="Snippet3":::
 
 You can use the following batch file to build and execute the Visual Basic version of the example. If you're using C#, replace `vbc` with `csc`, and replace the `.vb` extension with `.cs`.
 

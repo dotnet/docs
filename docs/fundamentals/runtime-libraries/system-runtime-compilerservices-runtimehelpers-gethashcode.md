@@ -45,5 +45,5 @@ The following example demonstrates the difference between the <xref:System.Objec
 
 - In the case of the third string, the hash codes produced by <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> for both strings are identical, as are the hash codes produced by <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode%2A?displayProperty=nameWithType>. This is because the compiler has treated the value assigned to both strings as a single string literal, and so the string variables refer to the same interned string.
 
-:::code language="csharp" source="~/snippets/csharp/System.Runtime.CompilerServices/RuntimeHelpers/GetHashCode/gethashcodeex1.cs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.compilerservices.runtimehelpers.gethashcode/vb/gethashcodeex1.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Runtime.CompilerServices/RuntimeHelpers/GetHashCode/csharp/gethashcodeex1.cs" id="Snippet1":::
+:::code language="vb" source="./snippets/System.Runtime.CompilerServices/RuntimeHelpers/GetHashCode/vb/gethashcodeex1.vb" id="Snippet1":::

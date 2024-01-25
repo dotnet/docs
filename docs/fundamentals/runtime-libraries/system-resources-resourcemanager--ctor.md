@@ -26,7 +26,7 @@ For example, given a type named `MyCompany.MyProduct.MyType`, the resource manag
 
 In Visual Studio, the Resource Designer automatically generates code that defines an `internal` (in C#) or `Friend` (in Visual Basic) class whose name is the same as the base name of the *.resources* file for the default culture. This makes it possible to instantiate a <xref:System.Resources.ResourceManager> object and couple it with a particular set of resources by getting a type object whose name corresponds to the name of the resource, because as long as the class is visible to the compiler, the resources must be as well. For example, if a *.resources* file is named Resource1, the following statement instantiates a <xref:System.Resources.ResourceManager> object to manage the *.resources* file named Resource1:
 
-:::code language="csharp" source="~/snippets/csharp/System.Resources/ResourceManager/.ctor/ctor1.cs" id="Snippet2":::
+:::code language="csharp" source="./snippets/System.Resources/ResourceManager/.ctor/csharp/ctor1.cs" id="Snippet2":::
 
 If you're not using Visual Studio, you can create a class with no members whose namespace and name are the same as that of the default *.resources* file. The example provides an illustration.
 
@@ -72,8 +72,8 @@ al /out:ru-RU\Greet.resources.dll /culture:ru-RU /embed: GreetingResources.ru-RU
 
 Here's the source code for the example (ShowDate.vb for the Visual Basic version or ShowDate.cs for the C# version of the code).
 
-:::code language="csharp" source="~/snippets/csharp/System.Resources/ResourceManager/.ctor/greet.cs" id="Snippet3":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resourcemanager.ctor/vb/greet.vb" id="Snippet3":::
+:::code language="csharp" source="./snippets/System.Resources/ResourceManager/.ctor/csharp/greet.cs" id="Snippet3":::
+:::code language="vb" source="./snippets/System.Resources/ResourceManager/.ctor/vb/greet.vb" id="Snippet3":::
 
 In addition to defining an app class named `Example`, the source code defines an internal class whose name, `GreetingResources`, is the same as the base name of the resource files. This makes it possible to successfully instantiate a <xref:System.Resources.ResourceManager> object by calling the <xref:System.Resources.ResourceManager.%23ctor(System.Type)> constructor.
 
@@ -111,8 +111,8 @@ resgen ExampleResources.txt
 
 The following example provides the executable code that instantiates a <xref:System.Resources.ResourceManager> object, prompts the user to enter a name, and displays a greeting.
 
-:::code language="csharp" source="~/snippets/csharp/System.Resources/ResourceManager/.ctor/example.cs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resourcemanager.ctor/vb/example.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Resources/ResourceManager/.ctor/csharp/example.cs" id="Snippet1":::
+:::code language="vb" source="./snippets/System.Resources/ResourceManager/.ctor/vb/example.vb" id="Snippet1":::
 
 It can be compiled by using the following command in C#:
 

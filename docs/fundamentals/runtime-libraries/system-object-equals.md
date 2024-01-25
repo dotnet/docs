@@ -17,23 +17,23 @@ The type of comparison between the current instance and the `obj` parameter depe
 
 - If the current instance is a reference type, the <xref:System.Object.Equals(System.Object)> method tests for reference equality, and a call to the <xref:System.Object.Equals(System.Object)> method is equivalent to a call to the <xref:System.Object.ReferenceEquals%2A> method. Reference equality means that the object variables that are compared refer to the same object. The following example illustrates the result of such a comparison. It defines a `Person` class, which is a reference type, and calls the `Person` class constructor to instantiate two new `Person` objects, `person1a` and `person2`, which have the same value. It also assigns `person1a` to another object variable, `person1b`. As the output from the example shows, `person1a` and `person1b` are equal because they reference the same object. However, `person1a` and `person2` are not equal, although they have the same value.
 
-  :::code language="csharp" source="~/snippets/csharp/System/Object/Equals/equals_ref.cs" interactive="try-dotnet" id="Snippet2":::
-  :::code language="fsharp" source="~/snippets/fsharp/System/Object/Equals/equals_ref.fs" id="Snippet2":::
-  :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.object.equals/vb/equals_ref.vb" id="Snippet2":::
+  :::code language="csharp" source="./snippets/System/Object/Equals/csharp/equals_ref.cs" interactive="try-dotnet" id="Snippet2":::
+  :::code language="fsharp" source="./snippets/System/Object/Equals/fsharp/equals_ref.fs" id="Snippet2":::
+  :::code language="vb" source="./snippets/System/Object/Equals/vb/equals_ref.vb" id="Snippet2":::
 
 - If the current instance is a value type, the <xref:System.Object.Equals(System.Object)> method tests for value equality. Value equality means the following:
 
   - The two objects are of the same type. As the following example shows, a <xref:System.Byte> object that has a value of 12 does not equal an <xref:System.Int32> object that has a value of 12, because the two objects have different run-time types.
 
-         :::code language="csharp" source="~/snippets/csharp/System/Object/Equals/equals_val1.cs" interactive="try-dotnet-method" id="Snippet3":::
-         :::code language="fsharp" source="~/snippets/fsharp/System/Object/Equals/equals_val1.fs" id="Snippet3":::
-         :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.object.equals/vb/equals_val1.vb" id="Snippet3":::
+         :::code language="csharp" source="./snippets/System/Object/Equals/csharp/equals_val1.cs" interactive="try-dotnet-method" id="Snippet3":::
+         :::code language="fsharp" source="./snippets/System/Object/Equals/fsharp/equals_val1.fs" id="Snippet3":::
+         :::code language="vb" source="./snippets/System/Object/Equals/vb/equals_val1.vb" id="Snippet3":::
 
   - The values of the public and private fields of the two objects are equal. The following example tests for value equality. It defines a `Person` structure, which is a value type, and calls the `Person` class constructor to instantiate two new `Person` objects, `person1` and `person2`, which have the same value. As the output from the example shows, although the two object variables refer to different objects, `person1` and `person2` are equal because they have the same value for the private `personName` field.
 
-         :::code language="csharp" source="~/snippets/csharp/System/Object/Equals/equals_val2.cs" id="Snippet4":::
-         :::code language="fsharp" source="~/snippets/fsharp/System/Object/Equals/equals_val2.fs" id="Snippet4":::
-         :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.object.equals/vb/equals_val2.vb" id="Snippet4":::
+         :::code language="csharp" source="./snippets/System/Object/Equals/csharp/equals_val2.cs" id="Snippet4":::
+         :::code language="fsharp" source="./snippets/System/Object/Equals/fsharp/equals_val2.fs" id="Snippet4":::
+         :::code language="vb" source="./snippets/System/Object/Equals/vb/equals_val2.vb" id="Snippet4":::
 
 Because the <xref:System.Object> class is the base class for all types in .NET, the <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType> method provides the default equality comparison for all other types. However, types often override the <xref:System.Object.Equals%2A> method to implement value equality. For more information, see the Notes for Callers and Notes for Inheritors sections.
 
@@ -50,9 +50,9 @@ Derived classes frequently override the <xref:System.Object.Equals(System.Object
 
 The following example provides an illustration. It instantiates three <xref:System.Text.StringBuilder> objects with identical strings, and then makes four calls to `Equals` methods. The first method call returns `true`, and the remaining three return `false`.
 
-:::code language="csharp" source="~/snippets/csharp/System/Object/Equals/equalssb1.cs" interactive="try-dotnet" id="Snippet5":::
-:::code language="fsharp" source="~/snippets/fsharp/System/Object/Equals/equalssb1.fs" id="Snippet5":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.object.equals/vb/equalssb1.vb" id="Snippet5":::
+:::code language="csharp" source="./snippets/System/Object/Equals/csharp/equalssb1.cs" interactive="try-dotnet" id="Snippet5":::
+:::code language="fsharp" source="./snippets/System/Object/Equals/fsharp/equalssb1.fs" id="Snippet5":::
+:::code language="vb" source="./snippets/System/Object/Equals/vb/equalssb1.vb" id="Snippet5":::
 
 In the first case, the strongly typed <xref:System.Text.StringBuilder.Equals(System.Text.StringBuilder)?displayProperty=nameWithType> method overload, which tests for value equality, is called. Because the strings assigned to the two <xref:System.Text.StringBuilder> objects are equal, the method returns `true`. However, <xref:System.Text.StringBuilder> does not override <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>. Because of this, when the <xref:System.Text.StringBuilder> object is cast to an <xref:System.Object>, when a <xref:System.Text.StringBuilder> instance is assigned to a variable of type <xref:System.Object>, and when the <xref:System.Object.Equals(System.Object,System.Object)?displayProperty=nameWithType> method is passed two <xref:System.Text.StringBuilder> objects, the default <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType> method is called. Because <xref:System.Text.StringBuilder> is a reference type, this is equivalent to passing the two <xref:System.Text.StringBuilder> objects to the <xref:System.Object.ReferenceEquals%2A> method. Although all three <xref:System.Text.StringBuilder> objects contain identical strings, they refer to three distinct objects. As a result, these three method calls return `false`.
 
@@ -74,9 +74,9 @@ For a value type, you should always override <xref:System.Object.Equals%2A>, bec
 
 The following example shows how to override the <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType> method to test for value equality. It overrides the <xref:System.Object.Equals%2A> method for the `Person` class. If `Person` accepted its base class implementation of equality, two `Person` objects would be equal only if they referenced a single object. However, in this case, two `Person` objects are equal if they have the same value for the `Person.Id` property.
 
-:::code language="csharp" source="~/snippets/csharp/System/Object/Equals/equalsoverride.cs" id="Snippet6":::
-:::code language="fsharp" source="~/snippets/fsharp/System/Object/Equals/equalsoverride.fs" id="Snippet6":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.object.equals/vb/equalsoverride.vb" id="Snippet6":::
+:::code language="csharp" source="./snippets/System/Object/Equals/csharp/equalsoverride.cs" id="Snippet6":::
+:::code language="fsharp" source="./snippets/System/Object/Equals/fsharp/equalsoverride.fs" id="Snippet6":::
+:::code language="vb" source="./snippets/System/Object/Equals/vb/equalsoverride.vb" id="Snippet6":::
 
 In addition to overriding <xref:System.Object.Equals%2A>, you can implement the <xref:System.IEquatable%601> interface to provide a strongly typed test for equality.
 
@@ -130,9 +130,9 @@ The following guidelines apply to overriding <xref:System.Object.Equals(System.O
 
 The following example shows a `Point` class that overrides the <xref:System.Object.Equals%2A> method to provide value equality, and a `Point3D` class that is derived from `Point`. Because `Point` overrides <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType> to test for value equality, the <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType> method is not called. However, `Point3D.Equals` calls `Point.Equals` because `Point` implements <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType> in a manner that provides value equality.
 
-:::code language="csharp" source="~/snippets/csharp/System/Object/Equals/equals2.cs" interactive="try-dotnet" id="Snippet1":::
-:::code language="fsharp" source="~/snippets/fsharp/System/Object/Equals/equals2.fs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/ECMA-System.Object.Equals2/VB/equals2.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/Object/Equals/csharp/equals2.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="fsharp" source="./snippets/System/Object/Equals/fsharp/equals2.fs" id="Snippet1":::
+:::code language="vb" source="./snippets/System/Object/Equals/vb/equals2.vb" id="Snippet1":::
 
 The `Point.Equals` method checks to make sure that the `obj` argument is not **null** and that it references an instance of the same type as this object. If either check fails, the method returns `false`.
 
@@ -142,14 +142,14 @@ In `Point3D.Equals`, the inherited `Point.Equals` method, which overrides <xref:
 
 The following example defines a `Rectangle` class that internally implements a rectangle as two `Point` objects. The `Rectangle` class also overrides <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType> to provide for value equality.
 
-:::code language="csharp" source="~/snippets/csharp/System/Object/Equals/equals3.cs" interactive="try-dotnet" id="Snippet1":::
-:::code language="fsharp" source="~/snippets/fsharp/System/Object/Equals/equals3.fs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/ECMA-System.Object.Equals3/VB/equals3.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/Object/Equals/csharp/equals3.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="fsharp" source="./snippets/System/Object/Equals/fsharp/equals3.fs" id="Snippet1":::
+:::code language="vb" source="./snippets/System/Object/Equals/vb/equals3.vb" id="Snippet1":::
 
 Some languages such as C# and Visual Basic support operator overloading. When a type overloads the equality operator, it must also override the <xref:System.Object.Equals(System.Object)> method to provide the same functionality. This is typically accomplished by writing the <xref:System.Object.Equals(System.Object)> method in terms of the overloaded equality operator, as in the following example.
 
-:::code language="csharp" source="~/snippets/csharp/System/Object/Equals/equals4.cs" interactive="try-dotnet" id="Snippet1":::
-:::code language="fsharp" source="~/snippets/fsharp/System/Object/Equals/equals4.fs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/ECMA-System.Object.Equals4/vb/equals4.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/Object/Equals/csharp/equals4.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="fsharp" source="./snippets/System/Object/Equals/fsharp/equals4.fs" id="Snippet1":::
+:::code language="vb" source="./snippets/System/Object/Equals/vb/equals4.vb" id="Snippet1":::
 
 Because `Complex` is a value type, it cannot be derived from.  Therefore, the override to <xref:System.Object.Equals(System.Object)> method need not call <xref:System.Object.GetType%2A> to determine the precise run-time type of each object, but can instead use the `is` operator in C# or the `TypeOf` operator in Visual Basic to check the type of the `obj` parameter.

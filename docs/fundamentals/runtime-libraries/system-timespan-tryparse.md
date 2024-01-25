@@ -77,6 +77,6 @@ If `formatProvider` is `null`, the <xref:System.Globalization.DateTimeFormatInfo
 
 In some cases, when a time interval component in the string to be parsed contains more than seven digits, parsing operations that succeeded and returned `true` in .NET Framework 3.5 and earlier versions may fail and return `false` in .NET Framework 4 and later versions. The following example illustrates this scenario:
 
-:::code language="csharp" source="~/snippets/csharp/System/TimeSpan/TryParse/tryparsefailure1.cs" id="Snippet3":::
-:::code language="fsharp" source="~/snippets/fsharp/System/TimeSpan/TryParse/tryparsefailure1.fs" id="Snippet3":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeSpan.TryParse/vb/tryparsefailure1.vb" id="Snippet3":::
+:::code language="csharp" source="./snippets/System/TimeSpan/TryParse/csharp/tryparsefailure1.cs" id="Snippet3":::
+:::code language="fsharp" source="./snippets/System/TimeSpan/TryParse/fsharp/tryparsefailure1.fs" id="Snippet3":::
+:::code language="vb" source="./snippets/System/TimeSpan/TryParse/vb/tryparsefailure1.vb" id="Snippet3":::

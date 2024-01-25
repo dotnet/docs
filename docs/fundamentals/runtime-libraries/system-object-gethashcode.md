@@ -48,30 +48,30 @@ When you call the <xref:System.Object.GetHashCode%2A> method on a class in the W
 
 One of the simplest ways to compute a hash code for a numeric value that has the same or a smaller range than the <xref:System.Int32> type is to simply return that value. The following example shows such an implementation for a `Number` structure.
 
-:::code language="csharp" source="~/snippets/csharp/System/Object/GetHashCode/direct1.cs" interactive="try-dotnet" id="Snippet1":::
-:::code language="fsharp" source="~/snippets/fsharp/System/Object/GetHashCode/direct1.fs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.object.gethashcode/vb/direct1.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/Object/GetHashCode/csharp/direct1.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="fsharp" source="./snippets/System/Object/GetHashCode/fsharp/direct1.fs" id="Snippet1":::
+:::code language="vb" source="./snippets/System/Object/GetHashCode/vb/direct1.vb" id="Snippet1":::
 
 Frequently, a type has multiple data fields that can participate in generating the hash code. One way to generate a hash code is to combine these fields using an `XOR (eXclusive OR)` operation, as shown in the following example.
 
-:::code language="csharp" source="~/snippets/csharp/System/Object/GetHashCode/xor1.cs" interactive="try-dotnet" id="Snippet2":::
-:::code language="fsharp" source="~/snippets/fsharp/System/Object/GetHashCode/xor1.fs" id="Snippet2":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.object.gethashcode/vb/xor1.vb" id="Snippet2":::
+:::code language="csharp" source="./snippets/System/Object/GetHashCode/csharp/xor1.cs" interactive="try-dotnet" id="Snippet2":::
+:::code language="fsharp" source="./snippets/System/Object/GetHashCode/fsharp/xor1.fs" id="Snippet2":::
+:::code language="vb" source="./snippets/System/Object/GetHashCode/vb/xor1.vb" id="Snippet2":::
 
 The previous example returns the same hash code for (n1, n2) and (n2, n1), and so may generate more collisions than are desirable. A number of solutions are available so that hash codes in these cases are not identical. One is to return the hash code of a `Tuple` object that reflects the order of each field. The following example shows a possible implementation that uses the <xref:System.Tuple%602> class. Note, though, that the performance overhead of instantiating a `Tuple` object may significantly impact the overall performance of an application that stores large numbers of objects in hash tables.
 
-:::code language="csharp" source="~/snippets/csharp/System/Object/GetHashCode/xor2.cs" interactive="try-dotnet" id="Snippet3":::
-:::code language="fsharp" source="~/snippets/fsharp/System/Object/GetHashCode/xor2.fs" id="Snippet3":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.object.gethashcode/vb/xor2.vb" id="Snippet3":::
+:::code language="csharp" source="./snippets/System/Object/GetHashCode/csharp/xor2.cs" interactive="try-dotnet" id="Snippet3":::
+:::code language="fsharp" source="./snippets/System/Object/GetHashCode/fsharp/xor2.fs" id="Snippet3":::
+:::code language="vb" source="./snippets/System/Object/GetHashCode/vb/xor2.vb" id="Snippet3":::
 
 A second alternative solution involves weighting the individual hash codes by left-shifting the hash codes of successive fields by two or more bits. Optimally, bits shifted beyond bit 31 should wrap around rather than be discarded. Since bits are discarded by the left-shift operators in both C# and Visual Basic, this requires creating a left shift-and-wrap method like the following:
 
-:::code language="csharp" source="~/snippets/csharp/System/Object/GetHashCode/shift1.cs" id="Snippet4":::
-:::code language="fsharp" source="~/snippets/fsharp/System/Object/GetHashCode/shift1.fs" id="Snippet4":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.object.gethashcode/vb/shift1.vb" id="Snippet4":::
+:::code language="csharp" source="./snippets/System/Object/GetHashCode/csharp/shift1.cs" id="Snippet4":::
+:::code language="fsharp" source="./snippets/System/Object/GetHashCode/fsharp/shift1.fs" id="Snippet4":::
+:::code language="vb" source="./snippets/System/Object/GetHashCode/vb/shift1.vb" id="Snippet4":::
 
 The following example then uses this shift-and-wrap method to compute the hash code of the `Point` structure used in the previous examples.
 
-:::code language="csharp" source="~/snippets/csharp/System/Object/GetHashCode/shift1.cs" interactive="try-dotnet" id="Snippet5":::
-:::code language="fsharp" source="~/snippets/fsharp/System/Object/GetHashCode/shift1.fs" id="Snippet5":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.object.gethashcode/vb/shift1.vb" id="Snippet5":::
+:::code language="csharp" source="./snippets/System/Object/GetHashCode/csharp/shift1.cs" interactive="try-dotnet" id="Snippet5":::
+:::code language="fsharp" source="./snippets/System/Object/GetHashCode/fsharp/shift1.fs" id="Snippet5":::
+:::code language="vb" source="./snippets/System/Object/GetHashCode/vb/shift1.vb" id="Snippet5":::

@@ -23,24 +23,24 @@ Consult your programming language's documentation to determine if its compiler p
 
 The <xref:System.Double.Equals%2A> method should be used with caution, because two apparently equivalent values can be unequal due to the differing precision of the two values. The following example reports that the <xref:System.Double> value .333333 and the <xref:System.Double> value returned by dividing 1 by 3 are unequal.
 
-:::code language="csharp" source="~/snippets/csharp/System/Double/Epsilon/Equals_25051.cs" interactive="try-dotnet-method" id="Snippet1":::
-:::code language="fsharp" source="~/snippets/fsharp/System/Double/Epsilon/Equals_25051.fs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Double.Epsilon/vb/Equals_25051.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/Double/Epsilon/csharp/Equals_25051.cs" interactive="try-dotnet-method" id="Snippet1":::
+:::code language="fsharp" source="./snippets/System/Double/Epsilon/fsharp/Equals_25051.fs" id="Snippet1":::
+:::code language="vb" source="./snippets/System/Double/Epsilon/vb/Equals_25051.vb" id="Snippet1":::
 
 Rather than comparing for equality, one technique involves defining an acceptable relative margin of difference between two values (such as .001% of one of the values). If the absolute value of the difference between the two values is less than or equal to that margin, the difference is likely to be due to differences in precision and, therefore, the values are likely to be equal. The following example uses this technique to compare .33333 and 1/3, the two <xref:System.Double> values that the previous code example found to be unequal. In this case, the values are equal.
 
-:::code language="csharp" source="~/snippets/csharp/System/Double/Epsilon/Equals_25051.cs" interactive="try-dotnet-method" id="Snippet2":::
-:::code language="fsharp" source="~/snippets/fsharp/System/Double/Epsilon/Equals_25051.fs" id="Snippet2":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Double.Epsilon/vb/Equals_25051.vb" id="Snippet2":::
+:::code language="csharp" source="./snippets/System/Double/Epsilon/csharp/Equals_25051.cs" interactive="try-dotnet-method" id="Snippet2":::
+:::code language="fsharp" source="./snippets/System/Double/Epsilon/fsharp/Equals_25051.fs" id="Snippet2":::
+:::code language="vb" source="./snippets/System/Double/Epsilon/vb/Equals_25051.vb" id="Snippet2":::
 
 > [!NOTE]
 > Because <xref:System.Double.Epsilon> defines the minimum expression of a positive value whose range is near zero, the margin of difference between two similar values must be greater than <xref:System.Double.Epsilon>. Typically, it is many times greater than <xref:System.Double.Epsilon>. Because of this, we recommend that you do not use <xref:System.Double.Epsilon> when comparing <xref:System.Double> values for equality.
 
 A second technique involves comparing the difference between two floating-point numbers with some absolute value. If the difference is less than or equal to that absolute value, the numbers are equal. If it is greater, the numbers are not equal. One alternative is to arbitrarily select an absolute value. This is problematic, however, because an acceptable margin of difference depends on the magnitude of the <xref:System.Double> values. A second alternative takes advantage of a design feature of the floating-point format: The difference between the integer representation of two floating-point values indicates the number of possible floating-point values that separates them. For example, the difference between 0.0 and <xref:System.Double.Epsilon> is 1, because <xref:System.Double.Epsilon> is the smallest representable value when working with a <xref:System.Double> whose value is zero. The following example uses this technique to compare .33333 and 1/3, which are the two <xref:System.Double> values that the previous code example with the <xref:System.Double.Equals(System.Double)> method found to be unequal. Note that the example uses the <xref:System.BitConverter.DoubleToInt64Bits%2A?displayProperty=nameWithType> method to convert a double-precision floating-point value to its integer representation.
 
-:::code language="csharp" source="~/snippets/csharp/System/Double/Equals/equalsabs1.cs" interactive="try-dotnet" id="Snippet1":::
-:::code language="fsharp" source="~/snippets/fsharp/System/Double/Equals/equalsabs1.fs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.double.equals/vb/equalsabs1.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/Double/Equals/csharp/equalsabs1.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="fsharp" source="./snippets/System/Double/Equals/fsharp/equalsabs1.fs" id="Snippet1":::
+:::code language="vb" source="./snippets/System/Double/Equals/vb/equalsabs1.vb" id="Snippet1":::
 
 The precision of floating-point numbers beyond the documented precision is specific to the implementation and version of the .NET Framework. Consequently, a comparison of two particular numbers might change between versions of the .NET Framework because the precision of the numbers' internal representation might change.
 

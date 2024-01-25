@@ -76,6 +76,6 @@ Creating reliable finalizers is often difficult, because you cannot make assumpt
 
 The following example uses the [dispose pattern](../../standard/garbage-collection/implementing-dispose.md) with safe handles instead of overriding the <xref:System.Object.Finalize%2A> method. It defines a `FileAssociation` class that wraps registry information about the application that handles files with a particular file extension. The two registry handles returned as `out` parameters by Windows [RegOpenKeyEx](/windows/win32/api/winreg/nf-winreg-regopenkeyexa) function calls are passed to the <xref:Microsoft.Win32.SafeHandles.SafeRegistryHandle> constructor. The type's protected `Dispose` method then calls the `SafeRegistryHandle.Dispose` method to free these two handles.
 
-:::code language="csharp" source="~/snippets/csharp/System/Object/Finalize/finalize_safe.cs" id="Snippet2":::
-:::code language="fsharp" source="~/snippets/fsharp/System/Object/Finalize/finalize_safe.fs" id="Snippet2":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.object.finalize/vb/finalize_safe.vb" id="Snippet2":::
+:::code language="csharp" source="./snippets/System/Object/Finalize/csharp/finalize_safe.cs" id="Snippet2":::
+:::code language="fsharp" source="./snippets/System/Object/Finalize/fsharp/finalize_safe.fs" id="Snippet2":::
+:::code language="vb" source="./snippets/System/Object/Finalize/vb/finalize_safe.vb" id="Snippet2":::

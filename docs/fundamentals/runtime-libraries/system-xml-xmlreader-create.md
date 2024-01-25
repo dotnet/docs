@@ -70,23 +70,23 @@ By default, the <xref:System.Xml.XmlReader> uses an <xref:System.Xml.XmlUrlResol
 
 This example creates an XML reader that strips insignificant white space, strips comments, and performs fragment-level conformance checking.
 
-:::code language="csharp" source="~/snippets/csharp/System.Xml/XmlParserContext/Overview/XmlReader_Create.cs" id="Snippet11":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Data/XmlReader.Create/VB/XmlReader_Create.vb" id="Snippet11":::
+:::code language="csharp" source="./snippets/System.Xml/XmlParserContext/Overview/csharp/XmlReader_Create.cs" id="Snippet11":::
+:::code language="vb" source="./snippets/System.Xml/XmlReader/Create/vb/XmlReader_Create.vb" id="Snippet11":::
 
 The following example uses an <xref:System.Xml.XmlUrlResolver> with default credentials to access a file.
 
-:::code language="csharp" source="~/snippets/csharp/System.Xml/XmlReader/Create/factory_rdr_cctor2.cs" id="Snippet1":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Data/XmlReaderSettings.cctor/VB/factory_rdr_cctor2.vb" id="Snippet1":::
+:::code language="csharp" source="./snippets/System.Xml/XmlReader/Create/csharp/factory_rdr_cctor21.cs" id="Snippet1":::
+:::code language="vb" source="./snippets/System.Xml/XmlReader/Create/vb/factory_rdr_cctor2.vb" id="Snippet1":::
 
-:::code language="csharp" source="~/snippets/csharp/System.Xml/XmlReader/Create/factory_rdr_cctor2.cs" id="Snippet2":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Data/XmlReaderSettings.cctor/VB/factory_rdr_cctor2.vb" id="Snippet2":::
+:::code language="csharp" source="./snippets/System.Xml/XmlReader/Create/csharp/factory_rdr_cctor21.cs" id="Snippet2":::
+:::code language="vb" source="./snippets/System.Xml/XmlReader/Create/vb/factory_rdr_cctor2.vb" id="Snippet2":::
 
 The following code wraps a reader instance within another reader.
 
-:::code language="csharp" source="~/snippets/csharp/System.Xml/XmlParserContext/Overview/XmlReader_Create.cs" id="Snippet13":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Data/XmlReader.Create/VB/XmlReader_Create.vb" id="Snippet13":::
+:::code language="csharp" source="./snippets/System.Xml/XmlParserContext/Overview/csharp/XmlReader_Create.cs" id="Snippet13":::
+:::code language="vb" source="./snippets/System.Xml/XmlReader/Create/vb/XmlReader_Create.vb" id="Snippet13":::
 
 This example chains readers to add DTD and XML schema validation.
 
-:::code language="csharp" source="~/snippets/csharp/System.Xml/XmlParserContext/Overview/XmlReader_Create.cs" id="Snippet12":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Data/XmlReader.Create/VB/XmlReader_Create.vb" id="Snippet12":::
+:::code language="csharp" source="./snippets/System.Xml/XmlParserContext/Overview/csharp/XmlReader_Create.cs" id="Snippet12":::
+:::code language="vb" source="./snippets/System.Xml/XmlReader/Create/vb/XmlReader_Create.vb" id="Snippet12":::

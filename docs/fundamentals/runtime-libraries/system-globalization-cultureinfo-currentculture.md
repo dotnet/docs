@@ -24,8 +24,8 @@ When a thread is started, its culture is initially determined as follows:
 
 - If the thread is a thread pool thread that is executing a task-based asynchronous operation, its culture is determined by the culture of the calling thread.  The following example changes the current culture to Portuguese (Brazil) and launches six tasks, each of which displays its thread ID, its task ID, and its current culture. Each of the tasks (and the threads) has inherited the culture of the calling thread.
 
-  :::code language="csharp" source="~/snippets/csharp/System.Globalization/CultureInfo/CurrentCulture/Async1.cs" id="Snippet14":::
-  :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureinfo.currentculture/vb/Async1.vb" id="Snippet14":::
+  :::code language="csharp" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/csharp/Async1.cs" id="Snippet14":::
+  :::code language="vb" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/vb/Async1.vb" id="Snippet14":::
 
   For more information, see the "Culture and task-based asynchronous operations" section in the <xref:System.Globalization.CultureInfo> topic.
 
@@ -39,28 +39,28 @@ For more information about how the culture of a thread is determined, see the "C
 
 The <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property is a per-thread setting; that is, each thread can have its own culture. You get the culture of the current thread by retrieving the value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property, as the following example illustrates.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/CultureInfo/CurrentCulture/Get1.cs" id="Snippet5":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureinfo.currentculture/vb/Get1.vb" id="Snippet5":::
+:::code language="csharp" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/csharp/Get1.cs" id="Snippet5":::
+:::code language="vb" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/vb/Get1.vb" id="Snippet5":::
 
 ## Set the CurrentCulture property explicitly
 
 To change the culture that's used by an existing thread, you set the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property to the new culture. If you explicitly change a thread's culture in this way, that change persists if the thread crosses application domain boundaries. The following example changes the current thread culture to Dutch (Netherlands). It also shows that, when the current thread crosses application domain boundaries, its current culture remains changed.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/CultureInfo/CurrentCulture/changeculture11.cs" id="Snippet11":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureinfo.currentculture/vb/changeculture11.vb" id="Snippet11":::
+:::code language="csharp" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/csharp/changeculture11.cs" id="Snippet11":::
+:::code language="vb" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/vb/changeculture11.vb" id="Snippet11":::
 
 > [!NOTE]
 > Changing the culture by using the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property requires a <xref:System.Security.Permissions.SecurityPermission> permission with the <xref:System.Security.Permissions.SecurityPermissionFlag.ControlThread> value set. Manipulating threads is dangerous because of the security state associated with threads. Therefore, this permission should be given only to trustworthy code, and then only as necessary. You cannot change thread culture in semi-trusted code.
 
 Starting with .NET Framework 4, you can explicitly change the current thread culture to either a specific culture (such as French (Canada)) or a neutral culture (such as French). When a <xref:System.Globalization.CultureInfo> object represents a neutral culture, the values of <xref:System.Globalization.CultureInfo> properties such as <xref:System.Globalization.CultureInfo.Calendar%2A>, <xref:System.Globalization.CultureInfo.CompareInfo%2A>, <xref:System.Globalization.CultureInfo.DateTimeFormat%2A>, <xref:System.Globalization.CultureInfo.NumberFormat%2A>, and <xref:System.Globalization.CultureInfo.TextInfo%2A> reflect the specific culture that is associated with the neutral culture. For example, the dominant culture for the English neutral culture is English (United States); the dominant culture for the German culture is German (Germany). The following example illustrates the difference in formatting when the current culture is set to a specific culture, French (Canada), and a neutral culture, French.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/CultureInfo/CurrentCulture/specific12.cs" id="Snippet12":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureinfo.currentculture/vb/specific12.vb" id="Snippet12":::
+:::code language="csharp" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/csharp/specific12.cs" id="Snippet12":::
+:::code language="vb" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/vb/specific12.vb" id="Snippet12":::
 
 You can also use the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property along with the <xref:System.Web.HttpRequest.UserLanguages%2A?displayProperty=nameWithType> property to set the <xref:System.Globalization.CultureInfo.CurrentCulture> property of an ASP.NET application to the user's preferred culture, as the following example illustrates.
 
-:::code language="csharp" source="~/snippets/csharp/System.Globalization/CultureInfo/CurrentCulture/aspculture13.cs" id="Snippet13":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureinfo.currentculture/vb/aspculture13.vb" id="Snippet13":::
+:::code language="csharp" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/csharp/aspculture13.cs" id="Snippet13":::
+:::code language="vb" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/vb/aspculture13.vb" id="Snippet13":::
 
 ## The current culture and user overrides
 

@@ -40,6 +40,6 @@ The <xref:System.TimeSpan.Parse(System.String)> method tries to parse the input 
 
 When a time interval component in the string to be parsed contains more than seven digits, parsing operations in .NET Framework 3.5 and earlier versions may behave differently from parsing operations in .NET Framework 4 and later versions. In some cases, parsing operations that succeed in .NET Framework 3.5 and earlier versions may fail and throw an <xref:System.OverflowException> in .NET Framework 4 and later. In other cases, parsing operations that throw a <xref:System.FormatException> in .NET Framework 3.5 and earlier versions may fail and throw an <xref:System.OverflowException> in .NET Framework 4 and later. The following example illustrates both scenarios.
 
-:::code language="csharp" source="~/snippets/csharp/System/TimeSpan/Parse/parsefailure1.cs" interactive="try-dotnet-method" id="Snippet3":::
-:::code language="fsharp" source="~/snippets/fsharp/System/TimeSpan/Parse/parsefailure1.fs" id="Snippet3":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.timespan.parse/vb/parsefailure1.vb" id="Snippet3":::
+:::code language="csharp" source="./snippets/System/TimeSpan/Parse/csharp/parsefailure1.cs" interactive="try-dotnet-method" id="Snippet3":::
+:::code language="fsharp" source="./snippets/System/TimeSpan/Parse/fsharp/parsefailure1.fs" id="Snippet3":::
+:::code language="vb" source="./snippets/System/TimeSpan/Parse/vb/parsefailure1.vb" id="Snippet3":::

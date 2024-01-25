@@ -120,7 +120,7 @@ For more information on resource cleanup, see [Implement a `Dispose` method](../
 The built-in service container is designed to serve the needs of the framework and most consumer apps. We recommend using the built-in container unless you need a specific feature that it doesn't support, such as:
 
 - Property injection
-- Prior to .NET 8, injection based on name—for more information, see [Keyed services](dependency-injection.md#keyed-services)
+- Injection based on name (.NET 7 and earlier versions only. For more information, see [Keyed services](dependency-injection.md#keyed-services).)
 - Child containers
 - Custom lifetime management
 - `Func<T>` support for lazy initialization

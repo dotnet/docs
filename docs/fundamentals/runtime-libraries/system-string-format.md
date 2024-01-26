@@ -216,13 +216,13 @@ A comparison of the following two code examples illustrates the superiority of i
 
 :::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/qa-interpolated1.cs" id="SnippetQAInterpolated":::
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/qa-interpolated1.fs" id="SnippetQAInterpolated":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa-interpolated1.vb":::
+:::code language="vb" source="./snippets/System/String/Format/vb/qa-interpolated1.vb":::
 
 In contrast, the use of interpolated strings in the following example produces much clearer, more concise code than the string concatenation statement and the call to the <xref:System.String.Format%2A> method in the previous example.
 
 :::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/qa-interpolated2.cs" id="SnippetQAInterpolated2":::
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/qa-interpolated2.fs" id="SnippetQAInterpolated2":::
-:::code language="vb" source="./snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa-interpolated2.vb":::
+:::code language="vb" source="./snippets/System/String/Format/vb/qa-interpolated2.vb":::
 
 ### Where can I find the predefined format strings?
 

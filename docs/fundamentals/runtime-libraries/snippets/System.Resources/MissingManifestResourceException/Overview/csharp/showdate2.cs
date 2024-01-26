@@ -11,7 +11,7 @@ public class Example2
         Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("ru-RU");
         Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("ru-RU");
 
-        string[] cultureNames = { "fr-FR", "sv-SE" };
+        string[] cultureNames = [ "fr-FR", "sv-SE" ];
         ResourceManager rm = new ResourceManager("DateStrings",
                                                  typeof(Example).Assembly);
 
@@ -27,6 +27,6 @@ public class Example2
 }
 // The example displays output similar to the following:
 //       French (France): Aujourd'hui, c'est le 7 février.
-//       
+//
 //       Swedish (Sweden): Today is den 7 februari.
 // </Snippet3>

@@ -1,6 +1,4 @@
 ﻿//<Snippet1>
-// Example for the Exception.HelpLink, Exception.Source,
-// Exception.StackTrace, and Exception.TargetSite properties.
 using System;
 
 namespace NDP_UE_CS
@@ -12,40 +10,40 @@ namespace NDP_UE_CS
         const string overflowMessage = "The log table has overflowed.";
 
         public LogTableOverflowException(
-            string auxMessage, Exception inner ) :
-                base( String.Format( "{0} - {1}",
-                    overflowMessage, auxMessage ), inner )
+            string auxMessage, Exception inner) :
+                base(String.Format("{0} - {1}",
+                    overflowMessage, auxMessage), inner)
         {
-            this.HelpLink = "https://docs.microsoft.com";
+            this.HelpLink = "https://learn.microsoft.com";
             this.Source = "Exception_Class_Samples";
         }
     }
 
     class LogTable
     {
-        public LogTable( int numElements )
+        public LogTable(int numElements)
         {
-            logArea = new string[ numElements ];
+            logArea = new string[numElements];
             elemInUse = 0;
         }
 
-        protected string[ ] logArea;
-        protected int       elemInUse;
+        protected string[] logArea;
+        protected int elemInUse;
 
         // The AddRecord method throws a derived exception if
         // the array bounds exception is caught.
-        public    int       AddRecord( string newRecord )
+        public int AddRecord(string newRecord)
         {
             try
             {
-                logArea[ elemInUse ] = newRecord;
+                logArea[elemInUse] = newRecord;
                 return elemInUse++;
             }
-            catch( Exception e )
+            catch (Exception e)
             {
                 throw new LogTableOverflowException(
-                    String.Format( "Record \"{0}\" was not logged.",
-                        newRecord ), e );
+                    String.Format("Record \"{0}\" was not logged.",
+                        newRecord), e);
             }
         }
     }
@@ -55,33 +53,33 @@ namespace NDP_UE_CS
         // Create a log table and force an overflow.
         public static void Main()
         {
-            LogTable log = new LogTable( 4 );
+            LogTable log = new LogTable(4);
 
             Console.WriteLine(
                 "This example of \n   Exception.Message, \n" +
                 "   Exception.HelpLink, \n   Exception.Source, \n" +
                 "   Exception.StackTrace, and \n   Exception." +
-                "TargetSite \ngenerates the following output." );
+                "TargetSite \ngenerates the following output.");
 
             try
             {
-                for( int count = 1; ; count++ )
+                for (int count = 1; ; count++)
                 {
                     log.AddRecord(
                         String.Format(
-                            "Log record number {0}", count ) );
+                            "Log record number {0}", count));
                 }
             }
-            catch( Exception ex )
+            catch (Exception ex)
             {
-                Console.WriteLine( "\nMessage ---\n{0}", ex.Message );
+                Console.WriteLine("\nMessage ---\n{0}", ex.Message);
                 Console.WriteLine(
-                    "\nHelpLink ---\n{0}", ex.HelpLink );
-                Console.WriteLine( "\nSource ---\n{0}", ex.Source );
+                    "\nHelpLink ---\n{0}", ex.HelpLink);
+                Console.WriteLine("\nSource ---\n{0}", ex.Source);
                 Console.WriteLine(
-                    "\nStackTrace ---\n{0}", ex.StackTrace );
+                    "\nStackTrace ---\n{0}", ex.StackTrace);
                 Console.WriteLine(
-                    "\nTargetSite ---\n{0}", ex.TargetSite );
+                    "\nTargetSite ---\n{0}", ex.TargetSite);
             }
         }
     }
@@ -100,7 +98,7 @@ Message ---
 The log table has overflowed. - Record "Log record number 5" was not logged.
 
 HelpLink ---
-https://docs.microsoft.com
+https://learn.microsoft.com
 
 Source ---
 Exception_Class_Samples

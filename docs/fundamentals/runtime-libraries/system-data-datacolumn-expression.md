@@ -211,7 +211,7 @@ This function converts an expression to a specified .NET type.
 
 |             | **Value**                                                 |
 |-------------|-----------------------------------------------------------|
-| Syntax      | `Convert(expression, type) `                              |
+| Syntax      | `Convert(expression, type)`                              |
 | Arguments   | `expression` -- The expression to convert.                |
 |             | `type` -- .NET type to which the value will be converted. |
 

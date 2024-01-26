@@ -10,7 +10,7 @@ public class Example2
 {
     public static void Main()
     {
-        string[] cultureNames = { "en-US", "fr-FR", "ru-RU", "sv-SE" };
+        string[] cultureNames = [ "en-US", "fr-FR", "ru-RU", "sv-SE" ];
         DateTime noon = new DateTime(DateTime.Now.Year, DateTime.Now.Month,
                                      DateTime.Now.Day, 12, 0, 0);
         DateTime evening = new DateTime(DateTime.Now.Year, DateTime.Now.Month,
@@ -40,13 +40,13 @@ public class Example2
 // The example displays output like the following:
 //       The current UI culture is en-US
 //       Good afternoon!
-//       
+//
 //       The current UI culture is fr-FR
 //       Bonjour!
-//       
+//
 //       The current UI culture is ru-RU
 //       Добрый день!
-//       
+//
 //       The current UI culture is sv-SE
 //       Good afternoon!
 // </Snippet3>

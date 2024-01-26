@@ -40,31 +40,31 @@ The following example illustrates the use of the <xref:System.AppContext> class 
 
 :::code language="csharp" source="./snippets/System/AppContext/Overview/csharp/V1/Example4.cs" id="Snippet4":::
 :::code language="fsharp" source="./snippets/System/AppContext/Overview/fsharp/Example4.fs" id="Snippet4":::
-:::code language="vb" source="./snippets/System/AppContext/Overview/vb/Example4.vb" id="Snippet4":::
+:::code language="vb" source="./snippets/System/AppContext/Overview/vb/V1/Example4.vb" id="Snippet4":::
 
 The following example then uses the library to find the starting index of the substring "archæ" in "The archaeologist". Because the method performs an ordinal comparison, the substring cannot be found.
 
 :::code language="csharp" source="./snippets/System/AppContext/Overview/csharp/V1/Example4.cs" id="Snippet5":::
 :::code language="fsharp" source="./snippets/System/AppContext/Overview/fsharp/Example4.fs" id="Snippet5":::
-:::code language="vb" source="./snippets/System/AppContext/Overview/vb/Example4.vb" id="Snippet5":::
+:::code language="vb" source="./snippets/System/AppContext/Overview/vb/V1/Example4.vb" id="Snippet5":::
 
 Version 2.0 of the library, however, changes the `SubstringStartsAt` method to use culture-sensitive comparison.
 
 :::code language="csharp" source="./snippets/System/AppContext/Overview/csharp/V2/Example6.cs" id="Snippet6":::
 :::code language="fsharp" source="./snippets/System/AppContext/Overview/fsharp/Example6.fs" id="Snippet6":::
-:::code language="vb" source="./snippets/System/AppContext/Overview/vb/Example6.vb" id="Snippet6":::
+:::code language="vb" source="./snippets/System/AppContext/Overview/vb/V2/Example6.vb" id="Snippet6":::
 
 When the app is recompiled to run against the new version of the library, it now reports that the substring "archæ" is found at index 4 in "The archaeologist".
 
 :::code language="csharp" source="./snippets/System/AppContext/Overview/csharp/V2/Example6.cs" id="Snippet7":::
 :::code language="fsharp" source="./snippets/System/AppContext/Overview/fsharp/Example6.fs" id="Snippet7":::
-:::code language="vb" source="./snippets/System/AppContext/Overview/vb/Example6.vb" id="Snippet7":::
+:::code language="vb" source="./snippets/System/AppContext/Overview/vb/V2/Example6.vb" id="Snippet7":::
 
 This change can be prevented from breaking the applications that depend on the original behavior by defining a switch. In this case, the switch is named `StringLibrary.DoNotUseCultureSensitiveComparison`. Its default value, `false`, indicates that the library should perform its version 2.0 culture-sensitive comparison. `true` indicates that the library should perform its version 1.0 ordinal comparison. A slight modification of the previous code allows the library consumer to set the switch to determine the kind of comparison the method performs.
 
 :::code language="csharp" source="./snippets/System/AppContext/Overview/csharp/V3/Example8.cs" id="Snippet8":::
 :::code language="fsharp" source="./snippets/System/AppContext/Overview/fsharp/Example8.fs" id="Snippet8":::
-:::code language="vb" source="./snippets/System/AppContext/Overview/vb/Example8.vb" id="Snippet8":::
+:::code language="vb" source="./snippets/System/AppContext/Overview/vb/V3/Example8.vb" id="Snippet8":::
 
 A .NET Framework application can then use the following configuration file to restore the version 1.0 behavior.
 
@@ -130,7 +130,7 @@ The following is a simple application that passes a file URI to the <xref:System
 
 :::code language="csharp" source="./snippets/System/AppContext/Overview/csharp/Other/ForConsumers1.cs" id="Snippet10":::
 :::code language="fsharp" source="./snippets/System/AppContext/Overview/fsharp/ForConsumers1.fs" id="Snippet10":::
-:::code language="vb" source="./snippets/System/AppContext/Overview/vb/ForConsumers1.vb" id="Snippet10":::
+:::code language="vb" source="./snippets/System/AppContext/Overview/vb/Other/ForConsumers1.vb" id="Snippet10":::
 
 To restore the method's previous behavior and prevent the exception, you can add the `Switch.System.IO.UseLegacyPathHandling` switch to the application configuration file for the example:
 

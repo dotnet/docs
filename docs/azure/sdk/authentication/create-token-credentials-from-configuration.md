@@ -48,13 +48,13 @@ The associated _appsettings.json_ file:
 }
 ```
 
-The following credential types also support the `AdditionallyAllowedTenants` property, which specifies tenants in addition to the specified TenantId for which the credential may acquire tokens:
+The following credential types also support the `AdditionallyAllowedTenants` property, which specifies additional tenants beyond the default tenant for which the credential may acquire tokens:
 
 * [ClientCertificateCredential](#create-a-clientcertificatecredential-type)
 * [ClientSecretCredential](#create-a-clientsecretcredential-type)
 * [DefaultAzureCredential](#create-a-defaultazurecredential-type)
 
- Add the wildcard value "*" to allow the credential to acquire tokens for any tenant the logged in account can access. If no value is specified for TenantId, this option will have no effect on that authentication method, and the credential will acquire tokens for any requested tenant when using that method.
+ Add the wildcard value "*" to allow the credential to acquire tokens for any tenant the logged in account can access. If no value tenant Ids are specified, this option will have no effect on that authentication method, and the credential will acquire tokens for any requested tenant when using that method.
 
 ```json
 {

@@ -44,7 +44,7 @@ The associated _appsettings.json_ file:
 "Storage": {
     "serviceUri": "<service_uri>",
     "credential": "managedidentity",
-    "clientid":  "<clientId>"
+    "clientId":  "<clientId>"
 }
 ```
 
@@ -64,7 +64,7 @@ The following credential types also support the `AdditionallyAllowedTenants` pro
 
 ### Create a `ManagedIdentityCredential` type
 
-You can create both user-assigned and system-assigned managed identities using configuration values. Add the following configuration values to your _appsettings.json_ file to create an <xref:Azure.Identity.ManagedIdentityCredential?displayProperty=fullName>.
+You can create both user-assigned and system-assigned managed identities using configuration values. Add the following configuration values to your _appsettings.json_ file to create an instance of <xref:Azure.Identity.ManagedIdentityCredential?displayProperty=fullName>.
 
 #### User-assigned identities
 

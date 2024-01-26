@@ -16,7 +16,6 @@ This tutorial shows how to create and run a .NET console application by using Vi
 
 * [Visual Studio Code](https://code.visualstudio.com/) with the [C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) installed. For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
 
-
 ## Create the app
 
 Create a .NET console app project named "HelloWorld".

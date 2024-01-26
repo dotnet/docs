@@ -68,7 +68,7 @@ You can create both user-assigned and system-assigned managed identities using c
     ```json
     {
         "credential": "managedidentity",
-        "resourceId":  "<managedIdentityResourceId>"
+        "managedIdentityResourceId":  "<managedIdentityResourceId>"
     }
     ```
 
@@ -80,8 +80,7 @@ You can create both user-assigned and system-assigned managed identities using c
 
     ```json
     {
-        "credential": "managedidentity",
-        "clientid":  "<clientId>"
+        "credential": "managedidentity"
     }
     ```
 
@@ -118,9 +117,14 @@ Add the following configuration values to your _appsettings.json_ file to create
 {
     "tenantId":  "<tenantId>",
     "clientId":  "<clientId>",
-    "clientCertificate": "<clientCertificate>"
+    "clientCertificate": "<clientCertificate>",
+    "clientCertificateStoreLocation": "<clientCertificateStoreLocation>",
+    "additionallyAllowedTenants": "<additionallyAllowedTenants>"
 }
 ```
+
+> [!NOTE]
+> The `clientCertificateStoreLocation` and `additionallyAllowedTenants` values are optional.
 
 ### Create a `DefaultAzureCredential` type
 
@@ -130,6 +134,6 @@ Add the following configuration values to your _appsettings.json_ file to create
 {
     "tenantId":  "<tenantId>",
     "clientId":  "<clientId>",
-    "resourceId": "<managedIdentityResourceId>"
+    "managedIdentityResourceId": "<managedIdentityResourceId>"
 }
 ```

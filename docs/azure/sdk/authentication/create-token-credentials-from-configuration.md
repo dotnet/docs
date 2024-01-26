@@ -24,7 +24,7 @@ The following credential types are supported via configuration:
 
 ## Configure Azure credentials
 
-Azure service clients registered with the `AddAzureClients` method are automatically configured with an instance of `DefaultAzureCredential` if no explicit credential is supplied via the `WithCredential` extension method. You can also override the global `DefaultAzureCredential` using credential values from configuration files when registering a client:
+Azure service clients registered with the `AddAzureClients` method are automatically configured with an instance of `DefaultAzureCredential` if no explicit credential is supplied via the `WithCredential` extension method. You can also override the global `DefaultAzureCredential` using credential values from configuration files when registering a client to create a specific credential type:
 
 ```csharp
 builder.Services.AddAzureClients(clientBuilder =>
@@ -45,6 +45,20 @@ The associated _appsettings.json_ file:
     "serviceUri": "<service_uri>",
     "credential": "managedidentity",
     "clientid":  "<clientId>"
+}
+```
+
+The following credential types also support the `AdditionallyAllowedTenants` property, which specifies tenants in addition to the specified TenantId for which the credential may acquire tokens:
+
+* [ClientCertificateCredential](#create-a-clientcertificatecredential-type)
+* [ClientSecretCredential](#create-a-clientsecretcredential-type)
+* [DefaultAzureCredential](#create-a-defaultazurecredential-type)
+
+ Add the wildcard value "*" to allow the credential to acquire tokens for any tenant the logged in account can access. If no value is specified for TenantId, this option will have no effect on that authentication method, and the credential will acquire tokens for any requested tenant when using that method.
+
+```json
+{
+    "additionallyAllowedTenants":  "<tenant-ids-separated-by-semicolon>"
 }
 ```
 

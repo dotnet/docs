@@ -473,9 +473,9 @@
 | Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.15.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.15.0) |  |  |
 | Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.2945](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.2945) |  |  |
 | Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.2945](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.2945) |  |  |
-| Microsoft.Azure.Functions.Worker.Sdk | NuGet [1.16.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.16.4)<br>NuGet [1.17.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.17.0-preview1) |  |  |
+| Microsoft.Azure.Functions.Worker.Sdk | NuGet [1.16.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.16.4)<br>NuGet [1.17.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.17.0-preview2) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.2.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.2.1) |  |  |
-| Microsoft.Azure.Functions.Worker.Sdk.Generators | NuGet [1.1.6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Generators/1.1.6) |  |  |
+| Microsoft.Azure.Functions.Worker.Sdk.Generators | NuGet [1.1.7](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Generators/1.1.7) |  |  |
 | Microsoft.Azure.WebJobs.CosmosDb.ChangeProcessor | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.ChangeProcessor/1.0.4) |  |  |
 | Microsoft.Azure.WebJobs.CosmosDb.Mongo | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.CosmosDb.Mongo/1.0.4) |  |  |
 | Microsoft.Azure.WebJobs.Extensions.Kusto | NuGet [1.0.9-Preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kusto/1.0.9-Preview) |  |  |

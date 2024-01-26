@@ -48,7 +48,7 @@ The associated _appsettings.json_ file:
 }
 ```
 
-The following credential types also support the `AdditionallyAllowedTenants` property, which specifies additional tenants beyond the default tenant for which the credential may acquire tokens:
+The following credential types also support the `AdditionallyAllowedTenants` property, which specifies additional Microsoft Entra tenants beyond the default tenant for which the credential may acquire tokens:
 
 * [ClientCertificateCredential](#create-a-clientcertificatecredential-type)
 * [ClientSecretCredential](#create-a-clientsecretcredential-type)

@@ -67,7 +67,7 @@ In the following steps, you'll look at the files created by the publish process.
 
       This is the [framework-dependent deployment](../deploying/deploy-with-cli.md#framework-dependent-deployment) version of the application. To run this dynamic link library, enter `dotnet HelloWorld.dll` at a command prompt. This method of running the app works on any platform that has the .NET runtime installed.
 
-   - *HelloWorld.exe* (*HelloWorld* on Linux, not created on macOS.)
+   - *HelloWorld.exe* (*HelloWorld* on Linux or macOS.)
 
       This is the [framework-dependent executable](../deploying/deploy-with-cli.md#framework-dependent-executable) version of the application. The file is operating-system-specific.
 

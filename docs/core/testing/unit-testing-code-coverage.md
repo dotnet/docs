@@ -164,7 +164,7 @@ There are two types of code coverage tools:
 
 In this section, the focus is on data collector tools.
 
-.NET includes a built-in code coverage data collector, which is also available in Visual Studio. This data collector generates a binary *.coverage* file that can be used to generate reports in Visual Studio. The binary file is not human-readable, and it must be converted to a human-readable format before it can be used to generate reports outside of Visual Studio. 
+.NET includes a built-in code coverage data collector, which is also available in Visual Studio. This data collector generates a binary *.coverage* file that can be used to generate reports in Visual Studio. The binary file is not human-readable, and it must be converted to a human-readable format before it can be used to generate reports outside of Visual Studio.
 
 > [!TIP]
 > The `dotnet-coverage` tool is a cross-platform tool that can be used to convert the binary coverage test results file to a human-readable format. For more information, see [dotnet-coverage](../additional-tools/dotnet-coverage.md).

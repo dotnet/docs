@@ -24,7 +24,7 @@ The following credential types are supported via configuration:
 
 ## Configure Azure credentials
 
-Azure service clients registered with the `AddAzureClients` method are automatically configured with an instance of `DefaultAzureCredential` if no explicit credential is supplied via the `WithCredential` extension method. You can also override the global `DefaultAzureCredential` using credential values from configuration files when registering a client to create a specific credential type:
+Azure service clients registered with the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> method are automatically configured with an instance of `DefaultAzureCredential` if no explicit credential is supplied via the <xref:Microsoft.Extensions.Azure.AzureClientBuilderExtensions.WithCredential%2A> extension method. You can also override the global `DefaultAzureCredential` using credential values from configuration files when registering a client to create a specific credential type:
 
 ```csharp
 builder.Services.AddAzureClients(clientBuilder =>
@@ -90,13 +90,11 @@ You can create both user-assigned and system-assigned managed identities using c
 
 #### System-assigned identities
 
-1. Configure managed identity with a system-assigned identity:
-
-    ```json
-    {
-        "credential": "managedidentity"
-    }
-    ```
+```json
+{
+    "credential": "managedidentity"
+}
+```
 
 ### Create a `WorkloadIdentityCredential` type
 

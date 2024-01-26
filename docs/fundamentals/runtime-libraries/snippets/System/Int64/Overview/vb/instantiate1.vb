@@ -1,5 +1,5 @@
 ﻿' Visual Basic .NET Document
-Option Strict On
+Option Strict Off
 
 Imports System.Numerics
 

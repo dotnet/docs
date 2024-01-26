@@ -303,11 +303,11 @@ In the following steps, you'll look at the files created by the publish process.
 
    :::image type="content" source="media/publishing-with-visual-studio-code/open-in-terminal.png" alt-text="Context menu showing Open in Terminal":::
 
-1. On Windows or Linux, run the app by using the executable.
+1. Run the app by using the executable.
 
    1. On Windows, enter `.\HelloWorld.exe` and press <kbd>Enter</kbd>.
 
-   1. On Linux, enter `./HelloWorld` and press <kbd>Enter</kbd>.
+   1. On Linux or macOS, enter `./HelloWorld` and press <kbd>Enter</kbd>.
 
    1. Enter a name in response to the prompt, and press any key to exit.
 

@@ -22,12 +22,12 @@ When a thread is started, its culture is initially determined as follows:
 
 - By retrieving the culture that is specified by the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture> property in the application domain in which the thread is executing, if the property value is not `null`.
 
-- If the thread is a thread pool thread that is executing a task-based asynchronous operation, its culture is determined by the culture of the calling thread.  The following example changes the current culture to Portuguese (Brazil) and launches six tasks, each of which displays its thread ID, its task ID, and its current culture. Each of the tasks (and the threads) has inherited the culture of the calling thread.
+- If the thread is a thread pool thread that is executing a task-based asynchronous operation, its culture is determined by the culture of the calling thread. The following example changes the current culture to Portuguese (Brazil) and launches six tasks, each of which displays its thread ID, its task ID, and its current culture. Each of the tasks (and the threads) has inherited the culture of the calling thread.
 
   :::code language="csharp" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/csharp/Async1.cs" id="Snippet14":::
   :::code language="vb" source="./snippets/System.Globalization/CultureInfo/CurrentCulture/vb/Async1.vb" id="Snippet14":::
 
-  For more information, see the "Culture and task-based asynchronous operations" section in the <xref:System.Globalization.CultureInfo> topic.
+  For more information, see [Culture and task-based asynchronous operations](system-globalization-cultureinfo.md#culture-and-task-based-asynchronous-operations).
 
 - By calling the `GetUserDefaultLocaleName` function on Windows or the `uloc_getDefault` function from [ICU](https://icu-project.org/), which currently calls the POSIX `setlocale` function with category `LC_MESSAGES`, on Unix-like systems.
 

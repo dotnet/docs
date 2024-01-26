@@ -32,15 +32,15 @@ Public Structure Number
    End Function
 End Structure
 
-Module Example
-   Public Sub Main()
-      Dim rnd As New Random()
-      For ctr As Integer = 0 To 9
-         Dim randomN As Integer = rnd.Next(Int32.MinValue, Int32.MaxValue)
-         Dim n As New Number(randomN)
-         Console.WriteLine("n = {0,12}, hash code = {1,12}", n, n.GetHashCode())
-      Next
-   End Sub
+Module Example1
+    Public Sub Main()
+        Dim rnd As New Random()
+        For ctr As Integer = 0 To 9
+            Dim randomN As Integer = rnd.Next(Int32.MinValue, Int32.MaxValue)
+            Dim n As New Number(randomN)
+            Console.WriteLine("n = {0,12}, hash code = {1,12}", n, n.GetHashCode())
+        Next
+    End Sub
 End Module
 ' The example displays output like the following:
 '       n =   -634398368, hash code =   -634398368

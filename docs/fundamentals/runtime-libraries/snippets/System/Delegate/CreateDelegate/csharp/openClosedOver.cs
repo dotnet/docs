@@ -3,7 +3,6 @@
 //<Snippet1>
 using System;
 using System.Reflection;
-using System.Security.Permissions;
 
 // Declare three delegate types for demonstrating the combinations
 // of static versus instance methods and open versus closed
@@ -32,7 +31,7 @@ public class C
     }
 }
 
-public class Example
+public class Example2
 {
     public static void Main()
     {
@@ -65,7 +64,7 @@ public class Example
         //
         if (test != null)
         {
-            d2 = (D2) test;
+            d2 = (D2)test;
 
             // The same instance of C is used every time the
             // delegate is invoked.
@@ -80,7 +79,7 @@ public class Example
         // argument of the instance method. Use delegate type D1
         // with instance method M1.
         //
-        d1 = (D1) Delegate.CreateDelegate(typeof(D1), null, mi1);
+        d1 = (D1)Delegate.CreateDelegate(typeof(D1), null, mi1);
 
         // An instance of C must be passed in each time the
         // delegate is invoked.
@@ -93,7 +92,7 @@ public class Example
         // have the same list of argument types; use delegate type
         // D2 with static method M2.
         //
-        d2 = (D2) Delegate.CreateDelegate(typeof(D2), null, mi2);
+        d2 = (D2)Delegate.CreateDelegate(typeof(D2), null, mi2);
 
         // No instances of C are involved, because this is a static
         // method.
@@ -107,7 +106,7 @@ public class Example
         // the delegate is bound to this string. Use delegate type
         // D3 with static method M2.
         //
-        d3 = (D3) Delegate.CreateDelegate(typeof(D3),
+        d3 = (D3)Delegate.CreateDelegate(typeof(D3),
             "Hello, World!", mi2);
 
         // Each time the delegate is invoked, the same string is

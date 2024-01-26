@@ -2,9 +2,9 @@
 Imports System.Collections
 Imports System.Collections.Specialized
 Imports System.Diagnostics
+Imports System.Runtime.Versioning
 
- _
-
+<SupportedOSPlatform("Windows")>
 Public Class NumberOfItems64
 
     Private Shared PC As PerformanceCounter

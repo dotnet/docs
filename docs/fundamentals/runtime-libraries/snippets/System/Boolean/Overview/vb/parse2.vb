@@ -2,34 +2,34 @@
 Option Strict On
 
 ' <Snippet2>
-Module Example
-   Public Sub Main()
-      Dim values() As String = { Nothing, String.Empty, "True", "False", 
-                                 "true", "false", "    true    ", 
-                                 "TrUe", "fAlSe", "fa lse", "0", 
-                                 "1", "-1", "string" }
-      ' Parse strings using the Boolean.Parse method.                    
-      For Each value In values
-         Try
-            Dim flag As Boolean = Boolean.Parse(value)
-            Console.WriteLine("'{0}' --> {1}", value, flag)
-         Catch e As ArgumentException
-            Console.WriteLine("Cannot parse a null string.")
-         Catch e As FormatException
-            Console.WriteLine("Cannot parse '{0}'.", value)
-         End Try         
-      Next  
-      Console.WriteLine()
-      ' Parse strings using the Boolean.TryParse method.                    
-      For Each value In values
-         Dim flag As Boolean = False
-         If Boolean.TryParse(value, flag)
-            Console.WriteLine("'{0}' --> {1}", value, flag)
-         Else
-            Console.WriteLine("Cannot parse '{0}'.", value)
-         End If         
-      Next  
-   End Sub
+Module Example7
+    Public Sub Main()
+        Dim values() As String = {Nothing, String.Empty, "True", "False",
+                                 "true", "false", "    true    ",
+                                 "TrUe", "fAlSe", "fa lse", "0",
+                                 "1", "-1", "string"}
+        ' Parse strings using the Boolean.Parse method.                    
+        For Each value In values
+            Try
+                Dim flag As Boolean = Boolean.Parse(value)
+                Console.WriteLine("'{0}' --> {1}", value, flag)
+            Catch e As ArgumentException
+                Console.WriteLine("Cannot parse a null string.")
+            Catch e As FormatException
+                Console.WriteLine("Cannot parse '{0}'.", value)
+            End Try
+        Next
+        Console.WriteLine()
+        ' Parse strings using the Boolean.TryParse method.                    
+        For Each value In values
+            Dim flag As Boolean = False
+            If Boolean.TryParse(value, flag) Then
+                Console.WriteLine("'{0}' --> {1}", value, flag)
+            Else
+                Console.WriteLine("Cannot parse '{0}'.", value)
+            End If
+        Next
+    End Sub
 End Module
 ' The example displays the following output:
 '       Cannot parse a null string.

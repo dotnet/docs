@@ -5,7 +5,7 @@ using System.Reflection;
 // Define two classes to use in the demonstration, a base class and
 // a class that derives from it.
 //
-public class Base {}
+public class Base { }
 
 public class Derived : Base
 {
@@ -24,7 +24,7 @@ public class Derived : Base
 // Define a delegate that takes an instance of Derived and returns an
 // instance of Base.
 //
-public delegate Base Example(Derived arg);
+public delegate Base Example5(Derived arg);
 
 class Test
 {
@@ -37,20 +37,20 @@ class Test
         MethodInfo minfo = typeof(Derived).GetMethod("MyMethod", flags);
 
         // Demonstrate contravariance of parameter types and covariance
-        // of return types by using the delegate Example to represent
+        // of return types by using the delegate Example5 to represent
         // MyMethod. The delegate binds to the method because the
         // parameter of the delegate is more restrictive than the
         // parameter of the method (that is, the delegate accepts an
         // instance of Derived, which can always be safely passed to
         // a parameter of type Base), and the return type of MyMethod
-        // is more restrictive than the return type of Example (that
+        // is more restrictive than the return type of Example5 (that
         // is, the method returns an instance of Derived, which can
         // always be safely cast to type Base).
         //
-        Example ex =
-            (Example) Delegate.CreateDelegate(typeof(Example), minfo);
+        Example5 ex =
+            (Example5)Delegate.CreateDelegate(typeof(Example5), minfo);
 
-        // Execute MyMethod using the delegate Example.
+        // Execute MyMethod using the delegate Example5.
         //
         Base b = ex(new Derived());
     }

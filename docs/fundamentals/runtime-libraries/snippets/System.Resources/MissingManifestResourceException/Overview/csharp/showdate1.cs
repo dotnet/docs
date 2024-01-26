@@ -4,8 +4,6 @@ using System.Globalization;
 using System.Resources;
 using System.Threading;
 
-[assembly:NeutralResourcesLanguage("en")]
-
 public class Example
 {
    public static void Main()

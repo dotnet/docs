@@ -2,13 +2,12 @@
 Imports System.Collections
 Imports System.Collections.Specialized
 Imports System.Diagnostics
+Imports System.Runtime.Versioning
 
- _
-
-Public Class NumberOfItems64
+<SupportedOSPlatform("Windows")>
+Public Class NumberOfItems64_1
 
     Private Shared PC As PerformanceCounter
-
 
     Public Shared Sub Main()
         Dim samplesList As New ArrayList()
@@ -39,8 +38,8 @@ Public Class NumberOfItems64
             CCDC.Add(NOI64)
 
             ' Create the category.
-            PerformanceCounterCategory.Create("NumberOfItems64SampleCategory", _
-            "Demonstrates usage of the NumberOfItems64 performance counter type.", _
+            PerformanceCounterCategory.Create("NumberOfItems64SampleCategory",
+            "Demonstrates usage of the NumberOfItems64_1 performance counter type.",
                    PerformanceCounterCategoryType.SingleInstance, CCDC)
 
             Return True

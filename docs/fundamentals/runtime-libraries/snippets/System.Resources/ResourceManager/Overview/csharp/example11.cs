@@ -17,7 +17,7 @@ public class CreateResource
 }
 // </Snippet7>
 
-[Serializable] public struct PersonTable
+[Serializable] public struct PersonTable2
 {
    public readonly int nColumns;
    public readonly string column1;
@@ -27,7 +27,7 @@ public class CreateResource
    public readonly int width2;
    public readonly int width3;
 
-   public PersonTable(string column1, string column2, string column3,
+   public PersonTable2(string column1, string column2, string column3,
                   int width1, int width2, int width3)
    {
       this.column1 = column1;

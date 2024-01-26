@@ -2,17 +2,17 @@
 using System;
 using System.Globalization;
 
-public class Example
+public class Example1
 {
-   public static void Main()
-   {
-      Console.WriteLine("The current UI culture: {0}",
-                        CultureInfo.CurrentUICulture.Name);
+    public static void Main()
+    {
+        Console.WriteLine("The current UI culture: {0}",
+                          CultureInfo.CurrentUICulture.Name);
 
-      CultureInfo.CurrentUICulture = CultureInfo.CreateSpecificCulture("fr-FR");
-      Console.WriteLine("The current UI culture: {0}",
-                        CultureInfo.CurrentUICulture.Name);
-   }
+        CultureInfo.CurrentUICulture = CultureInfo.CreateSpecificCulture("fr-FR");
+        Console.WriteLine("The current UI culture: {0}",
+                          CultureInfo.CurrentUICulture.Name);
+    }
 }
 // The example displays output like the following:
 //       The current UI culture: en-US

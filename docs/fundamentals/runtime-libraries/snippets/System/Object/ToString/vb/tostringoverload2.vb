@@ -4,17 +4,17 @@ Option Strict On
 ' <Snippet5>
 Imports System.Globalization
 
-Module Example
-   Public Sub Main()
-      Dim cultureNames() As String = { "en-US", "en-GB", "fr-FR",
-                                       "hr-HR", "ja-JP" }
-      Dim value As Decimal = 1603.49d
-      For Each cultureName In cultureNames
-         Dim culture As New CultureInfo(cultureName)
-         Console.WriteLine("{0}: {1}", culture.Name,
+Module Example7
+    Public Sub Main()
+        Dim cultureNames() As String = {"en-US", "en-GB", "fr-FR",
+                                       "hr-HR", "ja-JP"}
+        Dim value As Decimal = 1603.49D
+        For Each cultureName In cultureNames
+            Dim culture As New CultureInfo(cultureName)
+            Console.WriteLine("{0}: {1}", culture.Name,
                            value.ToString("C2", culture))
-      Next
-   End Sub
+        Next
+    End Sub
 End Module
 ' The example displays the following output:
 '       en-US: $1,603.49

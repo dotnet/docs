@@ -14,7 +14,7 @@ The <xref:System.Globalization.CultureInfo.CurrentUICulture> property is a per-t
 
 - By retrieving the culture that is specified by the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture> property in the application domain in which the thread is executing, if the property value is not `null`.
 
-- If the thread is a thread pool thread that is executing a task-based asynchronous operation and the app targets the .NET Framework 4.6 or a later version of the .NET Framework, its UI culture is determined by the UI culture of the calling thread.  The following example changes the current UI culture to Portuguese (Brazil) and launches six tasks, each of which displays its thread ID, its task ID, and its current UI culture. Each of the tasks (and the threads) has inherited the UI culture of the calling thread.
+- If the thread is a thread pool thread that is executing a task-based asynchronous operation and the app targets the .NET Framework 4.6 or a later version of the .NET Framework, its UI culture is determined by the UI culture of the calling thread. The following example changes the current UI culture to Portuguese (Brazil) and launches six tasks, each of which displays its thread ID, its task ID, and its current UI culture. Each of the tasks (and the threads) has inherited the UI culture of the calling thread.
 
   :::code language="csharp" source="./snippets/System.Globalization/CultureInfo/CurrentUICulture/csharp/Async1.cs" id="Snippet14":::
   :::code language="vb" source="./snippets/System.Globalization/CultureInfo/CurrentUICulture/vb/Async1.vb" id="Snippet14":::

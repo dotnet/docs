@@ -1,8 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Library</OutputType>
-    <TargetFrameworks>net8</TargetFrameworks>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworks>net8-windows</TargetFrameworks>
+    <UseWPF>true</UseWPF>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Page Include="Application.xaml" />
+  </ItemGroup>
 
  </Project>

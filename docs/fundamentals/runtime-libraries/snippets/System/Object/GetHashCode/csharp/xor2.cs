@@ -1,12 +1,12 @@
 ﻿// <Snippet3>
 using System;
 
-public struct Point
+public struct Point3
 {
     private int x;
     private int y;
 
-    public Point(int x, int y)
+    public Point3(int x, int y)
     {
        this.x = x;
        this.y = y;
@@ -14,9 +14,9 @@ public struct Point
 
     public override bool Equals(Object obj)
     {
-        if (obj is Point)
+        if (obj is Point3)
         {
-            Point p = (Point) obj;
+            Point3 p = (Point3) obj;
             return x == p.x & y == p.y;
         }
         else
@@ -35,10 +35,10 @@ public class Example
 {
    public static void Main()
    {
-        Point pt = new Point(5, 8);
+        Point3 pt = new Point3(5, 8);
         Console.WriteLine(pt.GetHashCode());
 
-        pt = new Point(8, 5);
+        pt = new Point3(8, 5);
         Console.WriteLine(pt.GetHashCode());
    }
 }

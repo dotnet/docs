@@ -5,16 +5,16 @@ Option Strict On
 Imports System.Collections
 Imports System.Resources
 
-Module Example
-   Public Sub Main()
-      Console.WriteLine("Resources in ApplicationResources.resources:")
-      Dim res As New ResourceReader(".\ApplicationResources.resources")
-      Dim dict As IDictionaryEnumerator = res.GetEnumerator()
-      Do While dict.MoveNext()
-         Console.WriteLine("   {0}: '{1}' (Type {2})", dict.Key, dict.Value, dict.Value.GetType().Name)
-      Loop
-      res.Close()
-   End Sub
+Module Example2
+    Public Sub Main()
+        Console.WriteLine("Resources in ApplicationResources.resources:")
+        Dim res As New ResourceReader(".\ApplicationResources.resources")
+        Dim dict As IDictionaryEnumerator = res.GetEnumerator()
+        Do While dict.MoveNext()
+            Console.WriteLine("   {0}: '{1}' (Type {2})", dict.Key, dict.Value, dict.Value.GetType().Name)
+        Loop
+        res.Close()
+    End Sub
 End Module
 ' The example displays output like the following:
 '       Resources in ApplicationResources.resources:

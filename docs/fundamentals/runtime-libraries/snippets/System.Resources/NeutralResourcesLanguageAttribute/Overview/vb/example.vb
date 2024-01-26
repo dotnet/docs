@@ -3,7 +3,6 @@ Option Strict On
 
 ' <Snippet1>
 Imports System.Globalization
-Imports System.Reflection
 Imports System.Resources
 Imports System.Threading 
 

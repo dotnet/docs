@@ -7,7 +7,7 @@ ms.date: 01/24/2024
 
 [!INCLUDE [context](includes/context.md)]
 
-The <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey(%601,%600)> method does not modify the key embedded in `item`; it simply replaces the key saved in the lookup dictionary.  Therefore, if `newKey` is different from the key that is embedded in `item`, you cannot access `item` by using the key returned by <xref:System.Collections.ObjectModel.KeyedCollection%602.GetKeyForItem%2A>.
+The <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey(%601,%600)> method does not modify the key embedded in `item`; it simply replaces the key saved in the lookup dictionary. Therefore, if `newKey` is different from the key that is embedded in `item`, you cannot access `item` by using the key returned by <xref:System.Collections.ObjectModel.KeyedCollection%602.GetKeyForItem%2A>.
 
 This method does nothing if the <xref:System.Collections.ObjectModel.KeyedCollection%602> does not have a lookup dictionary.
 

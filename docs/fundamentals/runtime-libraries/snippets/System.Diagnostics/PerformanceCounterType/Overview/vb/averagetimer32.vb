@@ -205,6 +205,9 @@ Imports System.Collections
 Imports System.Collections.Specialized
 Imports System.Diagnostics
 Imports System.Runtime.InteropServices
+Imports System.Runtime.Versioning
+
+<SupportedOSPlatform("Windows")>
 Public Class App
 
     Private Const categoryName As String = "AverageTimer32SampleCategory"

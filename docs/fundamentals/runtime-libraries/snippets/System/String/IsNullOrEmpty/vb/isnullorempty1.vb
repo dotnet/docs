@@ -1,7 +1,7 @@
 ﻿' Visual Basic .NET Document
 Option Strict On
 
-Module Example
+Module Example1
    Public Sub Main()
       Dim s1 As String = Nothing
       Dim s2 As String = ""

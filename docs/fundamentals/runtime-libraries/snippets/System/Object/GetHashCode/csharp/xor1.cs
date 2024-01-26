@@ -2,12 +2,12 @@
 using System;
 
 // A type that represents a 2-D point.
-public struct Point
+public struct Point2
 {
     private int x;
     private int y;
 
-    public Point(int x, int y)
+    public Point2(int x, int y)
     {
        this.x = x;
        this.y = y;
@@ -15,9 +15,9 @@ public struct Point
 
     public override bool Equals(Object obj)
     {
-       if (! (obj is Point)) return false;
+       if (! (obj is Point2)) return false;
 
-       Point p = (Point) obj;
+       Point2 p = (Point2) obj;
        return x == p.x & y == p.y;
     }
 
@@ -27,14 +27,14 @@ public struct Point
     }
 }
 
-public class Example
+public class Example3
 {
    public static void Main()
    {
-      Point pt = new Point(5, 8);
+      Point2 pt = new Point2(5, 8);
       Console.WriteLine(pt.GetHashCode());
 
-      pt = new Point(8, 5);
+      pt = new Point2(8, 5);
       Console.WriteLine(pt.GetHashCode());
    }
 }

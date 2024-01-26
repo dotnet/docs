@@ -1,12 +1,12 @@
 ﻿using System;
 
 // <Snippet6>
-public class Person
+public class Person6
 {
    private string idNumber;
    private string personName;
 
-   public Person(string name, string id)
+   public Person6(string name, string id)
    {
       this.personName = name;
       this.idNumber = id;
@@ -14,7 +14,7 @@ public class Person
 
    public override bool Equals(Object obj)
    {
-      Person personObj = obj as Person;
+      Person6 personObj = obj as Person6;
       if (personObj == null)
          return false;
       else
@@ -27,12 +27,12 @@ public class Person
    }
 }
 
-public class Example
+public class Example6
 {
    public static void Main()
    {
-      Person p1 = new Person("John", "63412895");
-      Person p2 = new Person("Jack", "63412895");
+      Person6 p1 = new Person6("John", "63412895");
+      Person6 p2 = new Person6("Jack", "63412895");
       Console.WriteLine(p1.Equals(p2));
       Console.WriteLine(Object.Equals(p1, p2));
    }

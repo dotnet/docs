@@ -2,7 +2,7 @@
 Option Strict On
 
 ' <Snippet2>
-Module Example
+Module Example1
    Public Sub Main()
       Dim values() As Object = { "word", True, 120, 136.34, "a"c }
       For Each value In values

@@ -1,8 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Library</OutputType>
-    <TargetFrameworks>net8</TargetFrameworks>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworks>net48</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
  </Project>

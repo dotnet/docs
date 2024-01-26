@@ -30,13 +30,13 @@ Public Class CList(Of T) : Inherits List(Of T)
    End Function
 End Class
 
-Module Example
-   Public Sub Main()
-      Dim list2 As New CList(Of Integer)
-      list2.Add(1000)
-      list2.Add(2000)
-      Console.WriteLine(list2.ToString())
-   End Sub
+Module Example1
+    Public Sub Main()
+        Dim list2 As New CList(Of Integer)
+        list2.Add(1000)
+        list2.Add(2000)
+        Console.WriteLine(list2.ToString())
+    End Sub
 End Module
 ' The example displays the following output:
 '       1000, 2000

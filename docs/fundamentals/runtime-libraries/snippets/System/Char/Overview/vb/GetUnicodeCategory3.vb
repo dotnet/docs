@@ -4,15 +4,15 @@ Option Strict On
 ' <Snippet6>
 Imports System.Globalization
 
-Module Example
-   Public Sub Main()
-      ' Define a string with a variety of character categories.
-      Dim s As String = "The car drove down the narrow, secluded road."
-      ' Determine the category of each character.
-      For Each ch In s
-         Console.WriteLine("'{0}': {1}", ch, Char.GetUnicodeCategory(ch)) 
-      Next
-   End Sub
+Module Example1
+    Public Sub Main()
+        ' Define a string with a variety of character categories.
+        Dim s As String = "The car drove down the narrow, secluded road."
+        ' Determine the category of each character.
+        For Each ch In s
+            Console.WriteLine("'{0}': {1}", ch, Char.GetUnicodeCategory(ch))
+        Next
+    End Sub
 End Module
 ' The example displays the following output:
 '       'T': UppercaseLetter

@@ -2,48 +2,48 @@
 Option Strict On
 
 ' <Snippet21>
-Module Example
-   Public Sub Main()
-      Dim values() As Double = { Double.MinValue, -67890.1234, -12345.6789,
+Module Example6
+    Public Sub Main()
+        Dim values() As Double = {Double.MinValue, -67890.1234, -12345.6789,
                                  12345.6789, 67890.1234, Double.MaxValue,
                                  Double.NaN, Double.PositiveInfinity,
-                                 Double.NegativeInfinity }
-      For Each value In values
-         Try
-             Dim lValue As Int64 = CLng(value)
-             Console.WriteLine("{0} ({1}) --> {2} (0x{2:X16}) ({3})",
+                                 Double.NegativeInfinity}
+        For Each value In values
+            Try
+                Dim lValue As Int64 = CLng(value)
+                Console.WriteLine("{0} ({1}) --> {2} (0x{2:X16}) ({3})",
                                value, value.GetType().Name,
                                lValue, lValue.GetType().Name)
-         Catch e As OverflowException
-            Console.WriteLine("Unable to convert {0} to Int64.", value)
-         End Try
-         Try
-             Dim ulValue As UInt64 = CULng(value)
-             Console.WriteLine("{0} ({1}) --> {2} (0x{2:X16}) ({3})",
+            Catch e As OverflowException
+                Console.WriteLine("Unable to convert {0} to Int64.", value)
+            End Try
+            Try
+                Dim ulValue As UInt64 = CULng(value)
+                Console.WriteLine("{0} ({1}) --> {2} (0x{2:X16}) ({3})",
                                value, value.GetType().Name,
                                ulValue, ulValue.GetType().Name)
-         Catch e As OverflowException
-            Console.WriteLine("Unable to convert {0} to UInt64.", value)
-         End Try
-         Try
-             Dim dValue As Decimal = CDec(value)
-             Console.WriteLine("{0} ({1}) --> {2} ({3})",
+            Catch e As OverflowException
+                Console.WriteLine("Unable to convert {0} to UInt64.", value)
+            End Try
+            Try
+                Dim dValue As Decimal = CDec(value)
+                Console.WriteLine("{0} ({1}) --> {2} ({3})",
                                value, value.GetType().Name,
                                dValue, dValue.GetType().Name)
-         Catch e As OverflowException
-            Console.WriteLine("Unable to convert {0} to Decimal.", value)
-         End Try
-         Try
-             Dim sValue As Single = CSng(value)
-             Console.WriteLine("{0} ({1}) --> {2} ({3})",
+            Catch e As OverflowException
+                Console.WriteLine("Unable to convert {0} to Decimal.", value)
+            End Try
+            Try
+                Dim sValue As Single = CSng(value)
+                Console.WriteLine("{0} ({1}) --> {2} ({3})",
                                value, value.GetType().Name,
                                sValue, sValue.GetType().Name)
-         Catch e As OverflowException
-            Console.WriteLine("Unable to convert {0} to Single.", value)
-         End Try
-         Console.WriteLine()
-      Next
-   End Sub
+            Catch e As OverflowException
+                Console.WriteLine("Unable to convert {0} to Single.", value)
+            End Try
+            Console.WriteLine()
+        Next
+    End Sub
 End Module
 ' The example displays the following output for conversions performed
 ' in a checked context:

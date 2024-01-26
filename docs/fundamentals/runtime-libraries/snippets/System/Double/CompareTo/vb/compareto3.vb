@@ -2,7 +2,7 @@
 Option Strict On
 
 ' <Snippet2>
-Module Example
+Module Example2
    Public Sub Main()
        Dim value1 As Double = 6.185
        Dim value2 As Object = value1 * .1 / .1

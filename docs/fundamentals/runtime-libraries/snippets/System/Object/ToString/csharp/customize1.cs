@@ -23,7 +23,7 @@ public class CList<T> : List<T>
    }
 }
 
-public class Example
+public class Example2
 {
    public static void Main()
    {

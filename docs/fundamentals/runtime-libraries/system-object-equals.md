@@ -152,4 +152,4 @@ Some languages such as C# and Visual Basic support operator overloading. When a 
 :::code language="fsharp" source="./snippets/System/Object/Equals/fsharp/equals4.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/Object/Equals/vb/equals4.vb" id="Snippet1":::
 
-Because `Complex` is a value type, it cannot be derived from.  Therefore, the override to <xref:System.Object.Equals(System.Object)> method need not call <xref:System.Object.GetType%2A> to determine the precise run-time type of each object, but can instead use the `is` operator in C# or the `TypeOf` operator in Visual Basic to check the type of the `obj` parameter.
+Because `Complex` is a value type, it cannot be derived from. Therefore, the override to <xref:System.Object.Equals(System.Object)> method need not call <xref:System.Object.GetType%2A> to determine the precise run-time type of each object, but can instead use the `is` operator in C# or the `TypeOf` operator in Visual Basic to check the type of the `obj` parameter.

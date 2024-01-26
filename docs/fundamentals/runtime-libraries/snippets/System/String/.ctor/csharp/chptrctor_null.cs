@@ -1,7 +1,7 @@
 ﻿// <Snippet5>
 using System;
 
-public class Example
+public class Example2
 {
    public unsafe static void Main()
    {

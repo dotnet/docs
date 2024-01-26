@@ -16,7 +16,7 @@ public class Object2
    }
 }
 
-public class Example
+public class Example6
 {
    public static void Main()
    {

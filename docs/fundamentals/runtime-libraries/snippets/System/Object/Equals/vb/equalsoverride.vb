@@ -25,13 +25,13 @@ Public Class Person
    End Function
 End Class
 
-Module Example
-   Public Sub Main()
-      Dim p1 As New Person("John", "63412895")
-      Dim p2 As New Person("Jack", "63412895")
-      Console.WriteLine(p1.Equals(p2))
-      Console.WriteLine(Object.Equals(p1, p2))
-   End Sub
+Module Example6
+    Public Sub Main()
+        Dim p1 As New Person("John", "63412895")
+        Dim p2 As New Person("Jack", "63412895")
+        Console.WriteLine(p1.Equals(p2))
+        Console.WriteLine(Object.Equals(p1, p2))
+    End Sub
 End Module
 ' The example displays the following output:
 '       True

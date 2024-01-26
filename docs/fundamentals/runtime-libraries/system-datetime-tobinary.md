@@ -31,5 +31,5 @@ A local time, which is a Coordinated Universal Time adjusted to the local time z
   For example, the transition from standard time to daylight saving time occurs in the Pacific Time zone of the United States on March 14, 2010, at 2:00 A.M., when the time advances by one hour, to 3:00 A.M. This hour interval is an invalid time, that is, a time interval that does not exist in this time zone. The following example shows that when a time that falls within this range is converted to a binary value by the <xref:System.DateTime.ToBinary%2A> method and is then restored by the <xref:System.DateTime.FromBinary%2A> method, the original value is adjusted to become a valid time. You can determine whether a particular date and time value may be subject to modification by passing it to the <xref:System.TimeZoneInfo.IsInvalidTime%2A?displayProperty=nameWithType> method, as the example illustrates.
 
   :::code language="csharp" source="./snippets/System/DateTime/FromBinary/csharp/frombinary1.cs" id="Snippet1":::
-  :::code language="fsharp" source="./snippets/VS_Snippets_CLR_System/system.datetime.frombinary/fs/fsharp/frombinary1.fs" id="Snippet1":::
+  :::code language="fsharp" source="./snippets/System/DateTime/FromBinary/fsharp/frombinary1.fs" id="Snippet1":::
   :::code language="vb" source="./snippets/System/DateTime/FromBinary/vb/frombinary1.vb" id="Snippet1":::

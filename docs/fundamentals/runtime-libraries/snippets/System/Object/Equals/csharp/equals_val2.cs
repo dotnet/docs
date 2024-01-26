@@ -2,11 +2,11 @@
 using System;
 
 // Define a value type that does not override Equals.
-public struct Person
+public struct Person3
 {
    private string personName;
 
-   public Person(string name)
+   public Person3(string name)
    {
       this.personName = name;
    }
@@ -17,12 +17,12 @@ public struct Person
    }
 }
 
-public struct Example
+public struct Example3
 {
    public static void Main()
    {
-      Person person1 = new Person("John");
-      Person person2 = new Person("John");
+      Person3 person1 = new Person3("John");
+      Person3 person2 = new Person3("John");
 
       Console.WriteLine("Calling Equals:");
       Console.WriteLine(person1.Equals(person2));

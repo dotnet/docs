@@ -41,7 +41,7 @@ Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trus
 Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.
 
 `String(SByte* value, Int32 startIndex, Int32 length)`\
-**(Not CLS-compliant)** Initializes the new instance to the value indicated by a pointer to an array of 8-bit signed integers, a starting position within that array, and a length.  The array is assumed to represent a string encoded using the current system code page (that is, the encoding specified by <xref:System.Text.Encoding.Default%2A?displayProperty=nameWithType>). The constructor processes characters from value starting at `startIndex` and ending at `startIndex` + `length` - 1 ([Example 6: Instantiate a string from a pointer to a signed byte array](#example-6-instantiate-a-string-from-a-pointer-to-a-signed-byte-array)).
+**(Not CLS-compliant)** Initializes the new instance to the value indicated by a pointer to an array of 8-bit signed integers, a starting position within that array, and a length. The array is assumed to represent a string encoded using the current system code page (that is, the encoding specified by <xref:System.Text.Encoding.Default%2A?displayProperty=nameWithType>). The constructor processes characters from value starting at `startIndex` and ending at `startIndex` + `length` - 1 ([Example 6: Instantiate a string from a pointer to a signed byte array](#example-6-instantiate-a-string-from-a-pointer-to-a-signed-byte-array)).
 
 Permission: <xref:System.Security.SecurityCriticalAttribute>, requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.
 

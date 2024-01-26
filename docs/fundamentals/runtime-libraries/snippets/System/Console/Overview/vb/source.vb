@@ -1,5 +1,5 @@
 ﻿' <Snippet1>
-Public Class Example
+Public Class Example4
     Public Shared Sub Main()
         Console.Write("Hello ")
         Console.WriteLine("World!")
@@ -9,7 +9,7 @@ Public Class Example
         Console.Write(name)
         Console.WriteLine("!")
     End Sub
-End Class 
+End Class
 ' The example displays output similar to the following:
 '        Hello World!
 '        Enter your name: James

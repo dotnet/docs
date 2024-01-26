@@ -61,16 +61,16 @@ Public Class F
     End Sub
 End Class
 
-Public Class Example
-    
-    Public Shared Sub Main() 
+Public Class Example5
+
+    Public Shared Sub Main()
 
         Dim c1 As New C(42)
         Dim c2 As New C(1491)
         Dim f1 As New F()
-        
+
         Dim d As D
-        
+
         ' Instance method with one argument of type C.
         Dim cmi1 As MethodInfo = GetType(C).GetMethod("M1")
         ' Instance method with no arguments.
@@ -79,7 +79,7 @@ Public Class Example
         Dim cmi3 As MethodInfo = GetType(C).GetMethod("M3")
         ' Shared method with two arguments of type C.
         Dim cmi4 As MethodInfo = GetType(C).GetMethod("M4")
-        
+
         ' Instance method with one argument of type C.
         Dim fmi1 As MethodInfo = GetType(F).GetMethod("M1")
         ' Shared method with one argument of type C.
@@ -87,7 +87,7 @@ Public Class Example
         ' Shared method with an argument of type F and an 
         ' argument of type C.
         Dim fmi4 As MethodInfo = GetType(F).GetMethod("M4")
-        
+
         Console.WriteLine(vbLf & "An instance method on any type, with an argument of type C.")
         ' D can represent any instance method that exactly matches its
         ' signature. Methods on C and F are shown here.
@@ -96,7 +96,7 @@ Public Class Example
         d(c2)
         d = CType([Delegate].CreateDelegate(GetType(D), f1, fmi1), D)
         d(c2)
-        
+
         Console.WriteLine(vbLf & "An instance method on C with no arguments.")
         ' D can represent an instance method on C that has no arguments;
         ' in this case, the argument of D represents the hidden first
@@ -106,7 +106,7 @@ Public Class Example
         '
         d = CType([Delegate].CreateDelegate(GetType(D), Nothing, cmi2), D)
         d(c1)
-        
+
         Console.WriteLine(vbLf & "A Shared method on any type, with an argument of type C.")
         ' D can represent any Shared method with the same signature.
         ' Methods on F and C are shown here.
@@ -115,7 +115,7 @@ Public Class Example
         d(c1)
         d = CType([Delegate].CreateDelegate(GetType(D), Nothing, fmi3), D)
         d(c1)
-        
+
         Console.WriteLine(vbLf & "A Shared method on any type, with an argument of")
         Console.WriteLine("    that type and an argument of type C.")
         ' D can represent any Shared method with one argument of the
@@ -126,8 +126,8 @@ Public Class Example
         '
         d = CType([Delegate].CreateDelegate(GetType(D), c1, cmi4), D)
         d(c2)
-        Dim test As [Delegate] = _
-            [Delegate].CreateDelegate(GetType(D), f1, fmi4, false)
+        Dim test As [Delegate] =
+            [Delegate].CreateDelegate(GetType(D), f1, fmi4, False)
 
         ' This final example specifies False for throwOnBindFailure 
         ' in the call to CreateDelegate, so the variable 'test'
@@ -139,7 +139,7 @@ Public Class Example
             d = CType(test, D)
             d(c2)
         End If
-    
+
     End Sub
 End Class
 

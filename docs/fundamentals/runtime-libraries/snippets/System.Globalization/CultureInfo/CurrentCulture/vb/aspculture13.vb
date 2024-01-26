@@ -5,11 +5,11 @@ Imports System.Globalization
 Imports System.Threading
 
 Module Example
-   Public Sub Main()
-      ' <Snippet13>
-      Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(Request.UserLanguages(0))
-      ' </Snippet13>
-   End Sub
+    Public Sub S1()
+        ' <Snippet13>
+        Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(Request.UserLanguages(0))
+        ' </Snippet13>
+    End Sub
 End Module
 
 

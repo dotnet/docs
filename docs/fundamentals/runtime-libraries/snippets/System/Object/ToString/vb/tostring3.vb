@@ -14,11 +14,11 @@ Public Class Object2
    End Function
 End Class
 
-Module Example
-   Public Sub Main()
-      Dim obj2 As New Object2("a"c)
-      Console.WriteLine(obj2.ToString())
-   End Sub
+Module Example5
+    Public Sub Main()
+        Dim obj2 As New Object2("a"c)
+        Console.WriteLine(obj2.ToString())
+    End Sub
 End Module
 ' The example displays the following output:
 '       Object2: a

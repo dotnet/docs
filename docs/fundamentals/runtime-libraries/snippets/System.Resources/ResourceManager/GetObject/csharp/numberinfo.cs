@@ -1,7 +1,7 @@
 ﻿// <Snippet1>
 using System;
 
-[Serializable] public class Numbers
+[Serializable] public class Numbers2
 {
    public readonly string One;
    public readonly string Two;
@@ -14,7 +14,7 @@ using System;
    public readonly string Nine;
    public readonly string Ten;
 
-   public Numbers(string one, string two, string three, string four, 
+   public Numbers2(string one, string two, string three, string four, 
                   string five, string six, string seven, string eight,
                   string nine, string ten)
    {                     

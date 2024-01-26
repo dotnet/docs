@@ -2,7 +2,7 @@
 using System;
 using System.Text;
 
-public class Example
+public class Example5
 {
    public static void Main()
    {

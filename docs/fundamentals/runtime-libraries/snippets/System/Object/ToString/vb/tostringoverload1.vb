@@ -67,12 +67,12 @@ Public Class Automobile
    End Function
 End Class
 
-Module Example
-   Public Sub Main()
-      Dim auto As New Automobile("Lynx", 2016, 4, "V8")
-      Console.WriteLine(auto.ToString())
-      Console.WriteLine(auto.ToString("A"))
-   End Sub
+Module Example6
+    Public Sub Main()
+        Dim auto As New Automobile("Lynx", 2016, 4, "V8")
+        Console.WriteLine(auto.ToString())
+        Console.WriteLine(auto.ToString("A"))
+    End Sub
 End Module
 ' The example displays the following output:
 '       2016 Lynx

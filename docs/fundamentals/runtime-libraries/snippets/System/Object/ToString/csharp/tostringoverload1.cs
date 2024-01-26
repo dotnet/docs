@@ -60,7 +60,7 @@ public class Automobile
    }
 }
 
-public class Example
+public class Example7
 {
    public static void Main()
    {

@@ -25,15 +25,15 @@ The type of comparison between the current instance and the `obj` parameter depe
 
   - The two objects are of the same type. As the following example shows, a <xref:System.Byte> object that has a value of 12 does not equal an <xref:System.Int32> object that has a value of 12, because the two objects have different run-time types.
 
-         :::code language="csharp" source="./snippets/System/Object/Equals/csharp/equals_val1.cs" interactive="try-dotnet-method" id="Snippet3":::
-         :::code language="fsharp" source="./snippets/System/Object/Equals/fsharp/equals_val1.fs" id="Snippet3":::
-         :::code language="vb" source="./snippets/System/Object/Equals/vb/equals_val1.vb" id="Snippet3":::
+    :::code language="csharp" source="./snippets/System/Object/Equals/csharp/equals_val1.cs" interactive="try-dotnet-method" id="Snippet3":::
+    :::code language="fsharp" source="./snippets/System/Object/Equals/fsharp/equals_val1.fs" id="Snippet3":::
+    :::code language="vb" source="./snippets/System/Object/Equals/vb/equals_val1.vb" id="Snippet3":::
 
   - The values of the public and private fields of the two objects are equal. The following example tests for value equality. It defines a `Person` structure, which is a value type, and calls the `Person` class constructor to instantiate two new `Person` objects, `person1` and `person2`, which have the same value. As the output from the example shows, although the two object variables refer to different objects, `person1` and `person2` are equal because they have the same value for the private `personName` field.
 
-         :::code language="csharp" source="./snippets/System/Object/Equals/csharp/equals_val2.cs" id="Snippet4":::
-         :::code language="fsharp" source="./snippets/System/Object/Equals/fsharp/equals_val2.fs" id="Snippet4":::
-         :::code language="vb" source="./snippets/System/Object/Equals/vb/equals_val2.vb" id="Snippet4":::
+    :::code language="csharp" source="./snippets/System/Object/Equals/csharp/equals_val2.cs" id="Snippet4":::
+    :::code language="fsharp" source="./snippets/System/Object/Equals/fsharp/equals_val2.fs" id="Snippet4":::
+    :::code language="vb" source="./snippets/System/Object/Equals/vb/equals_val2.vb" id="Snippet4":::
 
 Because the <xref:System.Object> class is the base class for all types in .NET, the <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType> method provides the default equality comparison for all other types. However, types often override the <xref:System.Object.Equals%2A> method to implement value equality. For more information, see the Notes for Callers and Notes for Inheritors sections.
 

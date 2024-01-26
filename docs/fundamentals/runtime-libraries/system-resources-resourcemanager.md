@@ -256,53 +256,53 @@ To run this example:
 
 1. In the app directory, create a file named rmc.txt that contains the following resource strings:
 
-    ```
-    day=Friday
-    year=2006
-    holiday="Cinco de Mayo"
-    ```
+   ```
+   day=Friday
+   year=2006
+   holiday="Cinco de Mayo"
+   ```
 
 2. Use the [Resource File Generator](../../framework/tools/resgen-exe-resource-file-generator.md) to generate the rmc.resources resource file from the rmc.txt input file as follows:
 
-    ```
-    resgen rmc.txt
-    ```
+   ```
+   resgen rmc.txt
+   ```
 
 3. Create a subdirectory of the app directory and name it "es-MX". This is the culture name of the satellite assembly that you will create in the next three steps.
 
 4. Create a file named rmc.es-MX.txt in the es-MX directory that contains the following resource strings:
 
-    ```
-    day=Viernes
-    year=2006
-    holiday="Cinco de Mayo"
-    ```
+   ```
+   day=Viernes
+   year=2006
+   holiday="Cinco de Mayo"
+   ```
 
 5. Use the [Resource File Generator](../../framework/tools/resgen-exe-resource-file-generator.md) to generate the rmc.es-MX.resources resource file from the rmc.es-MX.txt input file as follows:
 
-    ```
-    resgen rmc.es-MX.txt
-    ```
+   ```
+   resgen rmc.es-MX.txt
+   ```
 
 6. Assume that the filename for this example is rmc.vb or rmc.cs. Copy the following source code into a file. Then compile it and embed the main assembly resource file, rmc.resources, in the executable assembly. If you are using the Visual Basic compiler, the syntax is:
 
-    ```
-    vbc rmc.vb /resource:rmc.resources
-    ```
+   ```
+   vbc rmc.vb /resource:rmc.resources
+   ```
 
-  The corresponding syntax for the C# compiler is:
+   The corresponding syntax for the C# compiler is:
 
-    ```
-    csc /resource:rmc.resources rmc.cs
-    ```
+  ```
+   csc /resource:rmc.resources rmc.cs
+   ```
 
 7. Use the [Assembly Linker](../../framework/tools/al-exe-assembly-linker.md) to create a satellite assembly. If the base name of the app is rmc, the satellite assembly name must be rmc.resources.dll. The satellite assembly should be created in the es-MX directory. If es-MX is the current directory, use this command:
 
-    ```
-    al /embed:rmc.es-MX.resources /c:es-MX /out:rmc.resources.dll
-    ```
+   ```
+   al /embed:rmc.es-MX.resources /c:es-MX /out:rmc.resources.dll
+   ```
 
 8. Run rmc.exe to obtain and display the embedded resource strings.
 
-:::code language="csharp" source="./snippets/System.Resources/ResourceManager/Overview/csharp/rmc.cs" id="Snippet1":::
-:::code language="vb" source="./snippets/System.Resources/ResourceManager/Overview/vb/rmc.vb" id="Snippet1":::
+   :::code language="csharp" source="./snippets/System.Resources/ResourceManager/Overview/csharp/rmc.cs" id="Snippet1":::
+   :::code language="vb" source="./snippets/System.Resources/ResourceManager/Overview/vb/rmc.vb" id="Snippet1":::

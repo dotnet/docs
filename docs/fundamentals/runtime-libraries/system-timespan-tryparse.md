@@ -17,7 +17,7 @@ The <xref:System.TimeSpan.TryParse(System.String,System.TimeSpan@)?displayProper
 
 The `s` parameter contains a time interval specification in the form:
 
-[*ws*][-]{ *d* &#124; *d*.*hh*:*mm*[:*ss*[.*ff*]] &#124; *hh*:*mm*[:*ss*[.*ff*]] }[*ws*]
+`[ws][-]{ d | d.hh:mm[:ss[.ff]] | hh:mm[:ss[.ff]] }[ws]`
 
 Elements in square brackets ([ and ]) are optional. One selection from the list of alternatives enclosed in braces ({ and }) and separated by vertical bars (&#124;) is required. The following table describes each element.
 
@@ -44,7 +44,7 @@ The <xref:System.TimeSpan.TryParse(System.String,System.IFormatProvider,System.T
 
 The `input` parameter contains a time interval specification in the form:
 
-[*ws*][-]{ *d* &#124; *d*.*hh*:*mm*[:*ss*[.*ff*]] &#124; *hh*:*mm*[:*ss*[.*ff*]] }[*ws*]
+`[ws][-]{ d | d.hh:mm[:ss[.ff]] | hh:mm[:ss[.ff]] }[ws]`
 
 Elements in square brackets ([ and ]) are optional. One selection from the list of alternatives enclosed in braces ({ and }) and separated by vertical bars (&#124;) is required. The following table describes each element.
 

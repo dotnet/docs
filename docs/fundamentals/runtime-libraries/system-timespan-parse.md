@@ -13,7 +13,7 @@ dev_langs:
 
 The input string to the <xref:System.TimeSpan.Parse%2A> methods contains a time interval specification in the form:
 
-[*ws*][-]{ *d* &#124; [*d*.]*hh*:*mm*[:*ss*[.*ff*]] }[*ws*]
+`[ws][-]{ d | [d.]hh:mm[:ss[.ff]] }[ws]`
 
 Elements in square brackets (`[` and `]`) are optional. One selection from the list of alternatives enclosed in braces (`{` and `}`) and separated by vertical bars (&#124;) is required. The following table describes each element.
 

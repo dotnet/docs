@@ -22,7 +22,7 @@ Situations in which <xref:System.Reflection.AmbiguousMatchException> occurs incl
 - A type contains two indexed properties that have the same name but different numbers of parameters. To resolve the ambiguity, use an overload of the <xref:System.Type.GetProperty%2A> method that specifies parameter types.
 - A derived type declares a property that hides an inherited property with the same name, by using the `new` modifier (`Shadows` in Visual Basic). To resolve the ambiguity, use the <xref:System.Type.GetProperty(System.String,System.Reflection.BindingFlags)> method overload and add the <xref:System.Reflection.BindingFlags.DeclaredOnly?displayProperty=nameWithType> flag to restrict the search to members that aren't inherited.
 
-## <xref:GetProperty(System.String,System.Reflection.BindingFlags)> method
+## <xref:System.Type.GetProperty(System.String,System.Reflection.BindingFlags)> method
 
 A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> (in Visual Basic, combine the values using ` Or `) to get it.
 

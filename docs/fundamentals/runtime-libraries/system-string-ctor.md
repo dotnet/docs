@@ -12,7 +12,7 @@ dev_langs:
 
 ## Overloaded constructor syntax
 
-[String constructors](xref:System.String.#ctor%2A) fall into two categories: those without pointer parameters, and those with pointer parameters. The constructors that use pointers are not CLS-compliant. In addition, Visual Basic does not support the use of pointers, and C# requires code that uses pointers to run in an unsafe context. For more information, see [unsafe](../../csharp/language-reference/keywords/unsafe.md).
+[String constructors](xref:System.String.%23ctor%2A) fall into two categories: those without pointer parameters, and those with pointer parameters. The constructors that use pointers are not CLS-compliant. In addition, Visual Basic does not support the use of pointers, and C# requires code that uses pointers to run in an unsafe context. For more information, see [unsafe](../../csharp/language-reference/keywords/unsafe.md).
 
 For additional guidance on choosing an overload, see [Which method do I call?](#which-method-do-i-call).
 

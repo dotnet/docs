@@ -292,7 +292,7 @@ To run this example:
 
    The corresponding syntax for the C# compiler is:
 
-  ```
+   ```
    csc /resource:rmc.resources rmc.cs
    ```
 

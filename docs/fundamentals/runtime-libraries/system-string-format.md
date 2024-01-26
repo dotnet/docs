@@ -11,7 +11,7 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
-[!INCLUDE[interpolated-strings](~/includes/interpolated-strings.md)]
+[!INCLUDE[interpolated-strings](includes/interpolated-strings.md)]
 
 ## Get started with the String.Format method
 
@@ -173,10 +173,8 @@ Generally, objects in the argument list are converted to their string representa
 The <xref:System.IFormatProvider> interface has a single member, <xref:System.IFormatProvider.GetFormat%2A>, which is responsible for returning the object that provides formatting information. .NET has three <xref:System.IFormatProvider> implementations that provide culture-specific formatting:
 
 - <xref:System.Globalization.CultureInfo>. Its <xref:System.Globalization.CultureInfo.GetFormat%2A> method returns a culture-specific <xref:System.Globalization.NumberFormatInfo> object for formatting numeric values and a culture-specific <xref:System.Globalization.DateTimeFormatInfo> object for formatting date and time values.
-
 - <xref:System.Globalization.DateTimeFormatInfo>, which is used for culture-specific formatting of date and time values. Its <xref:System.Globalization.DateTimeFormatInfo.GetFormat%2A> method returns itself.
-
-- <xref:System.Globalization.NumberFormatInfo>, which is used for culture-specific formatting of numeric values. Its <xref:System.Globalization.NumberFormatInfo.GetFormat> property returns itself.
+- <xref:System.Globalization.NumberFormatInfo>, which is used for culture-specific formatting of numeric values. Its <xref:System.Globalization.NumberFormatInfo.GetFormat(System.Type)> method returns itself.
 
 ## Custom formatting operations
 
@@ -220,13 +218,13 @@ A comparison of the following two code examples illustrates the superiority of i
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/qa-interpolated1.fs" id="SnippetQAInterpolated":::
 :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa-interpolated1.vb":::
 
-In contrast, the use of interpolated strings in the following example produce much clearer, more concise code than the string concatenation statement and the call to the <xref:System.String.Format%2A> method in the previous example.
+In contrast, the use of interpolated strings in the following example produces much clearer, more concise code than the string concatenation statement and the call to the <xref:System.String.Format%2A> method in the previous example.
 
 :::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/qa-interpolated2.cs" id="SnippetQAInterpolated2":::
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/qa-interpolated2.fs" id="SnippetQAInterpolated2":::
-:::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa-interpolated2.vb":::
+:::code language="vb" source="./snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa-interpolated2.vb":::
 
-### Where can I find a list of the predefined format strings that can be used with format items?
+### Where can I find the predefined format strings?
 
 - For all integral and floating-point types, see [Standard Numeric Format Strings](../../standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](../../standard/base-types/custom-numeric-format-strings.md).
 

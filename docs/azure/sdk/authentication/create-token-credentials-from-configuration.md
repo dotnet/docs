@@ -54,7 +54,7 @@ The following credential types also support the `AdditionallyAllowedTenants` pro
 * [ClientSecretCredential](#create-a-clientsecretcredential-type)
 * [DefaultAzureCredential](#create-a-defaultazurecredential-type)
 
- Add the wildcard value "*" to allow the credential to acquire tokens for any tenant the logged in account can access. If no value tenant Ids are specified, this option will have no effect on that authentication method, and the credential will acquire tokens for any requested tenant when using that method.
+ Add the wildcard value "*" to allow the credential to acquire tokens for any Microsoft Entra tenant the logged in account can access. If no tenant IDs are specified, this option will have no effect on that authentication method, and the credential will acquire tokens for any requested tenant when using that method.
 
 ```json
 {
@@ -66,7 +66,7 @@ The following credential types also support the `AdditionallyAllowedTenants` pro
 
 You can create both user-assigned and system-assigned managed identities using configuration values. Add the following configuration values to your _appsettings.json_ file to create an instance of <xref:Azure.Identity.ManagedIdentityCredential?displayProperty=fullName>.
 
-#### User-assigned identities
+#### User-assigned managed identities
 
 1. Specify a user-assigned managed identity via a client ID:
 
@@ -88,7 +88,7 @@ You can create both user-assigned and system-assigned managed identities using c
 
     The resource ID takes the form `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}`.
 
-#### System-assigned identities
+#### System-assigned managed identities
 
 1. Configure managed identity with a system-assigned identity:
 
@@ -133,7 +133,7 @@ Add the following configuration values to your _appsettings.json_ file to create
     "clientId":  "<clientId>",
     "clientCertificate": "<clientCertificate>",
     "clientCertificateStoreLocation": "<clientCertificateStoreLocation>",
-    "additionallyAllowedTenants": "<additionallyAllowedTenants>"
+    "additionallyAllowedTenants": "<tenant-ids-separated-by-semicolon>"
 }
 ```
 

@@ -3,7 +3,7 @@ title: Dependency injection guidelines
 description: Discover effective dependency injection guidelines and best practices for developing .NET apps. Deepen your understanding of inversion of control.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/23/2023
+ms.date: 01/25/2024
 ms.topic: conceptual
 ---
 
@@ -120,7 +120,7 @@ For more information on resource cleanup, see [Implement a `Dispose` method](../
 The built-in service container is designed to serve the needs of the framework and most consumer apps. We recommend using the built-in container unless you need a specific feature that it doesn't support, such as:
 
 - Property injection
-- Injection based on name
+- Injection based on name (.NET 7 and earlier versions only. For more information, see [Keyed services](dependency-injection.md#keyed-services).)
 - Child containers
 - Custom lifetime management
 - `Func<T>` support for lazy initialization

@@ -103,7 +103,7 @@ sudo rm -rf /usr/share/dotnet/sdk/6.0.406
 
 ::: zone pivot="os-macos"
 
-When you manually install .NET, it's generally installed to the `/usr/local/share/dotnet/` or the `$HOME/.dotnet` directory. The SDK, runtime, and .NET host are installed into separate sub directories. These "component" directories contain a directory for each version of .NET. By removing the versioned directories, you remove that version of .NET from your system. These directories may vary depending on your Linux distribution.
+When you manually install .NET, it's generally installed to the `/usr/local/share/dotnet/` or the `$HOME/.dotnet` directory. The SDK, runtime, and .NET host are installed into separate sub directories. These "component" directories contain a directory for each version of .NET. By removing the versioned directories, you remove that version of .NET from your system. These directories may vary depending on your macOS version.
 
 There are three commands you can use to discover where .NET is installed: `dotnet --list-sdks` for SDKs, `dotnet --list-runtimes` for runtimes, and `dotnet --info` for everything. These commands don't list the .NET host. To determine which hosts are installed, check the `/usr/local/share/dotnet/host/fxr/` directory. The following list represents the directories of a specific version of .NET, where the `$version` variable represents the version of the .NET:
 

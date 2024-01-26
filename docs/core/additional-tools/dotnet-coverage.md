@@ -82,7 +82,7 @@ dotnet-coverage merge
 
 * **`-r, --recursive`**
 
-  [.NET 7 SDK and earlier versions only] Search for coverage reports in subdirectories.
+  .NET 7 SDK and earlier versions only Search for coverage reports in subdirectories.
 
 * **`-o|--output <output>`**
 

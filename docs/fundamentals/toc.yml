@@ -1302,16 +1302,12 @@ items:
     href: runtime-libraries/system-runtime-loader-assemblyloadcontext.md
   - name: The ProcessStartInfo class
     items:
-    - name: Supplemental API remarks
-      items:
-      - name: UseShellExecute method
-        href: runtime-libraries/system-diagnostics-processstartinfo-useshellexecute.md
+    - name: UseShellExecute method
+    href: runtime-libraries/system-diagnostics-processstartinfo-useshellexecute.md
   - name: The Environment class
     items:
-    - name: Supplemental API remarks
-      items:
-      - name: GetEnvironmentVariable method
-        href: runtime-libraries/system-environment-getenvironmentvariable.md
+    - name: GetEnvironmentVariable method
+      href: runtime-libraries/system-environment-getenvironmentvariable.md
 - name: Execution model
   items:
   - name: Common Language Runtime (CLR)

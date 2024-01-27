@@ -58,7 +58,7 @@ Here's the source code for the example (ShowDate.vb for the Visual Basic version
 :::code language="csharp" source="./snippets/System.Resources/MissingManifestResourceException/Overview/csharp/showdate1.cs" id="Snippet2":::
 :::code language="vb" source="./snippets/System.Resources/ResourceManager/GetString/vb/showdate.vb" id="Snippet2":::
 
-## xref:System.Resources.ResourceManager.GetString(System.String,System.Globalization.CultureInfo)> method
+## <xref:System.Resources.ResourceManager.GetString(System.String,System.Globalization.CultureInfo)> method
 
 ### Desktop apps
 

@@ -4,27 +4,27 @@ Option Strict On
 ' <Snippet12>
 Imports System.Collections.Generic
 
-Public Class Person
-   Public Sub New(fName As String, lName As String)
-      FirstName = fName
-      LastName = lName
-   End Sub
-   
-   Public Property FirstName As String
-   Public Property LastName As String
+Public Class Person9
+    Public Sub New(fName As String, lName As String)
+        FirstName = fName
+        LastName = lName
+    End Sub
+
+    Public Property FirstName As String
+    Public Property LastName As String
 End Class
 
-Module Example
-   Public Sub Main()
-      Dim people As New List(Of Person)()
-      
-      people.Add(New Person("John", "Doe"))
-      people.Add(New Person("Jane", "Doe"))
-      people.Sort()
-      For Each person In people
-         Console.WriteLine("{0} {1}", person.FirstName, person.LastName)
-      Next
-   End Sub
+Module Example9
+    Public Sub Main()
+        Dim people As New List(Of Person9)()
+
+        people.Add(New Person9("John", "Doe"))
+        people.Add(New Person9("Jane", "Doe"))
+        people.Sort()
+        For Each person In people
+            Console.WriteLine("{0} {1}", person.FirstName, person.LastName)
+        Next
+    End Sub
 End Module
 ' The example displays the following output:
 '    Unhandled Exception: System.InvalidOperationException: Failed to compare two elements in the array. ---> 

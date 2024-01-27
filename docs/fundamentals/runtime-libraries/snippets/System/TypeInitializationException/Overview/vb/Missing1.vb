@@ -2,11 +2,11 @@
 Option Strict On
 
 ' <Snippet2>
-Module Example
-   Public Sub Main()
-      Dim p As New Person("John", "Doe")
-      Console.WriteLine(p)   
-   End Sub
+Module Example3
+    Public Sub Main()
+        Dim p As New Person("John", "Doe")
+        Console.WriteLine(p)
+    End Sub
 End Module
 
 Public Class Person

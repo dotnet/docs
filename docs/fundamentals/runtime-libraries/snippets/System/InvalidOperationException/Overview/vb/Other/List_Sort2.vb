@@ -20,17 +20,17 @@ Public Class Person : Implements IComparable(Of Person)
    End Function
 End Class
 
-Module Example
-   Public Sub Main()
-      Dim people As New List(Of Person)()
-      
-      people.Add(New Person("John", "Doe"))
-      people.Add(New Person("Jane", "Doe"))
-      people.Sort()
-      For Each person In people
-         Console.WriteLine("{0} {1}", person.FirstName, person.LastName)
-      Next
-   End Sub
+Module Example10
+    Public Sub Main()
+        Dim people As New List(Of Person)()
+
+        people.Add(New Person("John", "Doe"))
+        people.Add(New Person("Jane", "Doe"))
+        people.Sort()
+        For Each person In people
+            Console.WriteLine("{0} {1}", person.FirstName, person.LastName)
+        Next
+    End Sub
 End Module
 ' The example displays the following output:
 '       Jane Doe

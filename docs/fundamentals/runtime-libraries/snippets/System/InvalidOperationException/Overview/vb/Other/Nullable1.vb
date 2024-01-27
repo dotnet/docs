@@ -4,17 +4,17 @@ Option Strict On
 ' <Snippet4>
 Imports System.Linq
 
-Module Example
-   Public Sub Main()
-      Dim queryResult = New Integer?() { 1, 2, Nothing, 4 }
-      Dim map = queryResult.Select(Function(nullableInt) CInt(nullableInt))
-      
-      ' Display list.
-      For Each num In map
-         Console.Write("{0} ", num)
-      Next
-      Console.WriteLine()   
-   End Sub
+Module Example13
+    Public Sub Main()
+        Dim queryResult = New Integer?() {1, 2, Nothing, 4}
+        Dim map = queryResult.Select(Function(nullableInt) CInt(nullableInt))
+
+        ' Display list.
+        For Each num In map
+            Console.Write("{0} ", num)
+        Next
+        Console.WriteLine()
+    End Sub
 End Module
 ' The example displays thIe following output:
 '    1 2

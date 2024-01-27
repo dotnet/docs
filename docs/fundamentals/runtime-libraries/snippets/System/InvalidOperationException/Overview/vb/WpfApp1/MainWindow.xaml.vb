@@ -3,7 +3,7 @@ Imports System.Threading.Tasks
 
 Class MainWindow
     ' <Snippet1>
-    Private Async Sub threadExampleBtn_Click(sender As Object, e As RoutedEventArgs) Handles threadExampleBtn.Click
+    Private Async Sub threadExampleBtn_Click(sender As Object, e As RoutedEventArgs) Handles button1.Click
         textBox1.Text = String.Empty
 
         textBox1.Text = "Simulating work on UI thread." + vbCrLf

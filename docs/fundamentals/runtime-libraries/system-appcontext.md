@@ -121,26 +121,8 @@ For ASP.NET and ASP.NET Core applications, you set a switch by adding an [\<Add>
 If you set the same switch in more than one way, the order of precedence for determining which setting overrides the others is:
 
 1. The programmatic setting.
-
 2. The setting in the app.config file (for .NET Framework apps) or the web.config file (for ASP.NET Core apps).
-
 3. The registry setting (for .NET Framework apps only).
-
-The following is a simple application that passes a file URI to the <xref:System.IO.Path.GetDirectoryName%2A?displayProperty=nameWithType> method. It throws an <xref:System.ArgumentException> because `file://` is no longer a valid part of a file path.
-
-:::code language="csharp" source="./snippets/System/AppContext/Overview/csharp/Other/ForConsumers1.cs" id="Snippet10":::
-:::code language="fsharp" source="./snippets/System/AppContext/Overview/fsharp/ForConsumers1.fs" id="Snippet10":::
-:::code language="vb" source="./snippets/System/AppContext/Overview/vb/Other/ForConsumers1.vb" id="Snippet10":::
-
-To restore the method's previous behavior and prevent the exception, you can add the `Switch.System.IO.UseLegacyPathHandling` switch to the application configuration file for the example:
-
-```xml
-<configuration>
-   <runtime>
-      <AppContextSwitchOverrides value="Switch.System.IO.UseLegacyPathHandling=true" />
-   </runtime>
-</configuration>
-```
 
 ## See also
 

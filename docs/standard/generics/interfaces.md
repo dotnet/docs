@@ -26,7 +26,7 @@ Generic interfaces provide type-safe counterparts to nongeneric interfaces for o
 
   These interfaces are used by methods and constructors of many of the generic collection classes. For example, you can pass a generic <xref:System.Collections.Generic.IComparer%601> object to the constructor of the <xref:System.Collections.Generic.SortedDictionary%602> class to specify a sort order for a type that does not implement generic <xref:System.IComparable%601?displayProperty=nameWithType>. There are overloads of the <xref:System.Array.Sort%2A?displayProperty=nameWithType> generic static method and the <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=nameWithType> instance method for sorting arrays and lists using generic <xref:System.Collections.Generic.IComparer%601> implementations.  
   
-  The <xref:System.Collections.Generic.Comparer%601> and <xref:System.Collections.Generic.EqualityComparer%601> generic classes provide base classes for implementations of the <xref:System.Collections.Generic.IComparer%601> and <xref:System.Collections.Generic.IEqualityComparer%601> generic interfaces, and also provide default ordering and equality comparisons through their respective <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> and <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> properties.  
+  The <xref:System.Collections.Generic.Comparer%601> and <xref:System.Collections.Generic.EqualityComparer%601> generic classes provide base classes for implementations of the <xref:System.Collections.Generic.IComparer%601> and <xref:System.Collections.Generic.IEqualityComparer%601> generic interfaces and also provide default ordering and equality comparisons through their respective <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> and <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> properties.  
   
 ## Collection functionality  
 
@@ -40,7 +40,7 @@ Generic interfaces provide type-safe counterparts to nongeneric interfaces for o
 
 ## Mathematical functionality
 
-.NET 7 introduces generic interfaces in the <xref:System.Numerics?displayProperty=fullName> namespace that describe number-like types and the functionality available to them. The 20 numeric types that the .NET base class library provides, for example, <xref:System.Int32> and <xref:System.Double>, have been updated to implement these interfaces. The most prominent of these interfaces is <xref:System.Numerics.INumber%601>, which roughly corresponds to a "real" number.
+.NET 7 introduces generic interfaces in the <xref:System.Numerics?displayProperty=fullName> namespace that describes number-like types and the functionality available to them. The 20 numeric types that the .NET base class library provides, for example, <xref:System.Int32> and <xref:System.Double>, has been updated to implement these interfaces. The most prominent of these interfaces is <xref:System.Numerics.INumber%601>, which roughly corresponds to a "real" number.
 
 For more information about these interfaces, see [Generic math](math.md).
   

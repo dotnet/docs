@@ -113,20 +113,17 @@ Enhance the application to prompt the user for their name and display it along w
 
 1. Save your changes.
 
-1. Run the program again:
-
-   ```dotnetcli
-   dotnet run
-   ```
+1. From the menu select **Run** > **Run Without Debugging** to run the program again.
 
 1. Respond to the prompt by entering a name and pressing the <kbd>Enter</kbd> key.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/run-modified-program.png" alt-text="Terminal window with modified program output":::
 
-1. Press any key to exit the program.
+1. Press <kbd>Enter</kbd> to exit the program.
 
 ## Additional resources
 
+* [Getting Started with C# in VS Code](https://code.visualstudio.com/docs/csharp/get-started)
 * [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
 
 ## Next steps

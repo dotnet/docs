@@ -307,7 +307,7 @@
 | Azure Stack - Azure Consistent Storage | NuGet [0.10.8-preview](https://www.nuget.org/packages/Microsoft.AzureStack.AzureConsistentStorage/0.10.8-preview) |  |  |
 | Azure.FX | NuGet [0.0.22-alpha](https://www.nuget.org/packages/Azure.FX/0.0.22-alpha) |  |  |
 | Azure.FX.Templates | NuGet [1.2.0](https://www.nuget.org/packages/Azure.FX.Templates/1.2.0) |  |  |
-| Batch | NuGet [16.0.0](https://www.nuget.org/packages/Microsoft.Azure.Batch/16.0.0) |  | GitHub [16.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Batch_16.0.0/sdk/batch/Microsoft.Azure.Batch/) |
+| Batch | NuGet [16.1.0](https://www.nuget.org/packages/Microsoft.Azure.Batch/16.1.0) |  | GitHub [16.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Batch_16.1.0/sdk/batch/Microsoft.Azure.Batch/) |
 | Batch - Apps Cryptography | NuGet [1.1.1.4](https://www.nuget.org/packages/Microsoft.Azure.Batch.Apps.Cryptography/1.1.1.4) |  |  |
 | Batch - Conventions Files | NuGet [4.0.0](https://www.nuget.org/packages/Microsoft.Azure.Batch.Conventions.Files/4.0.0) |  | GitHub [4.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Batch.Conventions.Files_4.0.0/sdk/batch/Microsoft.Azure.Batch.Conventions.Files/) |
 | Batch - File Staging | NuGet [9.0.0](https://www.nuget.org/packages/Microsoft.Azure.Batch.FileStaging/9.0.0) |  | GitHub [9.0.0](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/batch/Microsoft.Azure.Batch.FileStaging) |

@@ -1,7 +1,7 @@
 ---
 title: Create a .NET console application using Visual Studio Code
 description: Learn how to create a .NET console application using Visual Studio Code and the .NET CLI.
-ms.date: 01/26/2024
+ms.date: 01/28/2024
 zone_pivot_groups: dotnet-version
 ---
 # Tutorial: Create a .NET console application using Visual Studio Code
@@ -115,9 +115,9 @@ Enhance the application to prompt the user for their name and display it along w
 
 1. From the menu select **Run** > **Run Without Debugging** to run the program again.
 
-1. Respond to the prompt by entering a name and pressing the <kbd>Enter</kbd> key.
+1. in the **Terminal**, respond to the prompt by entering a name and pressing the <kbd>Enter</kbd> key.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/run-modified-program.png" alt-text="Terminal window with modified program output":::
+   :::image type="content" source="media/with-visual-studio-code/run-modified-program-8-0.png" alt-text="Terminal window with modified program output":::
 
 1. Press <kbd>Enter</kbd> to exit the program.
 

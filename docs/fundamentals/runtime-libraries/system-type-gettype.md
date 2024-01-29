@@ -2,6 +2,9 @@
 title: System.Type.GetType methods
 description: Learn about the System.Type.GetType methods.
 ms.date: 01/24/2024
+dev_langs:
+  - CSharp
+  - FSharp
 ---
 # System.Type.GetType methods
 

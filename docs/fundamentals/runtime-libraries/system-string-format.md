@@ -13,6 +13,36 @@ dev_langs:
 
 [!INCLUDE[interpolated-strings](includes/interpolated-strings.md)]
 
+## Examples
+
+Numerous examples that call the <xref:System.String.Format%2A> method are interspersed throughout this article. You can also download a complete set of `String.Format` examples, which are included a [.NET Core project for C#](/samples/dotnet/samples/string-format/).
+
+The following are some of the examples included in the article:
+
+### Create a format string
+
+[Insert a string](#insert-a-string)\
+[The format item](#the-format-item)\
+[Format items that have the same index](#format-items-that-have-the-same-index)
+
+### Control formatted output
+
+[Control formatting](#control-formatting)\
+[Control spacing](#control-spacing)\
+[Control alignment](#control-alignment)\
+[Control the number of integral digits](#how-do-i-control-the-number-of-integral-digits)\
+[Control the number of digits after the decimal separator](#how-do-i-control-the-number-of-digits-after-the-decimal-separator)\
+[Include literal braces in the result string](#how-do-i-include-literal-braces--and--in-the-result-string)
+
+### Make format strings culture-sensitive
+
+[Make format strings culture-sensitive](#make-format-strings-culture-sensitive)
+
+### Customize the formatting operation
+
+[A custom formatting operation](#example-a-custom-formatting-operation)\
+[An intercept provider and Roman numeral formatter](#example-an-intercept-provider-and-roman-numeral-formatter)
+
 ## Get started with the String.Format method
 
 Use <xref:System.String.Format%2A?displayProperty=nameWithType> if you need to insert the value of an object, variable, or expression into another string. For example, you can insert the value of a <xref:System.Decimal> value into a string to display it to the user as a single string:
@@ -317,33 +347,3 @@ Because neither Visual Basic nor C# can convert an integer array to an object ar
 :::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/qa21.cs" interactive="try-dotnet-method" id="Snippet22":::
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/qa21.fs" id="Snippet22":::
 :::code language="vb" source="./snippets/System/String/Format/vb/qa2.vb" id="Snippet22":::
-
-## Examples
-
-Numerous examples that call the <xref:System.String.Format%2A> method are interspersed throughout this article. You can also download a complete set of `String.Format` examples, which are included a [.NET Core project for C#](/samples/dotnet/samples/string-format/).
-
-The following are some of the examples included in the article:
-
-### Create a format string
-
-[Inserting a string](#insert-a-string)\
-[The format item](#the-format-item)\
-[Format items that have the same index](#format-items-that-have-the-same-index)
-
-### Control formatted output
-
-[Controlling formatting](#control-formatting)\
-[Controlling spacing](#control-spacing)\
-[Controlling alignment](#control-alignment)\
-[Controlling the number of integral digits](#how-do-i-control-the-number-of-integral-digits)\
-[Controlling the number of digits after the decimal separator](#how-do-i-control-the-number-of-digits-after-the-decimal-separator)\
-[Include literal braces in the result string](#how-do-i-include-literal-braces--and--in-the-result-string)
-
-### Make format strings culture-sensitive
-
-[Make format strings culture-sensitive](#make-format-strings-culture-sensitive)
-
-### Customize the formatting operation
-
-[A custom formatting operation](#example-a-custom-formatting-operation)\
-[An intercept provider and Roman numeral formatter](#example-an-intercept-provider-and-roman-numeral-formatter)

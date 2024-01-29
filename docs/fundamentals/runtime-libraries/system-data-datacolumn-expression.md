@@ -132,10 +132,10 @@ When you create comparison expressions, the following operators are allowed:
 - \>
 - \<=
 - \>=
-- >
+- \>
 - =
-- IN
-- LIKE
+- `IN`
+- `LIKE`
 
 The following arithmetic operators are also supported in expressions:
 

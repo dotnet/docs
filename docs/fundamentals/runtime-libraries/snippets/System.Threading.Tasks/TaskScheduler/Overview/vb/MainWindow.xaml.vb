@@ -1,10 +1,6 @@
 ﻿Option Infer On
 
 ' <Snippet01>
-Imports System.Threading.Tasks
-Imports System.Windows
-Imports System.Windows.Media
-Imports System.Windows.Media.Imaging
 
 Partial Public Class MainWindow : Inherits Window
     Dim fileCount As Integer

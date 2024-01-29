@@ -2,24 +2,24 @@
 Option Strict On
 
 ' <Snippet9>
-Module Example
-   Public Sub Main()
-       Dim rnd As New Random2()
-       Dim bytes(9999) As Byte
-       Dim total(100) As Integer
-       rnd.NextBytes(bytes, 0, 101)
-       
-       ' Calculate how many of each value we have.
-       For Each value In bytes
-          total(value) += 1
-       Next
-       
-       ' Display the results.
-       For ctr As Integer = 0 To total.Length - 1
-           Console.Write("{0,3}: {1,-3}   ", ctr, total(ctr))
-           If (ctr + 1) Mod 5 = 0 Then Console.WriteLine()
-       Next   
-   End Sub
+Module Example4
+    Public Sub Main()
+        Dim rnd As New Random2()
+        Dim bytes(9999) As Byte
+        Dim total(100) As Integer
+        rnd.NextBytes(bytes, 0, 101)
+
+        ' Calculate how many of each value we have.
+        For Each value In bytes
+            total(value) += 1
+        Next
+
+        ' Display the results.
+        For ctr As Integer = 0 To total.Length - 1
+            Console.Write("{0,3}: {1,-3}   ", ctr, total(ctr))
+            If (ctr + 1) Mod 5 = 0 Then Console.WriteLine()
+        Next
+    End Sub
 End Module
 
 Public Class Random2 : Inherits Random

@@ -45,7 +45,7 @@ To determine the Unicode category of a character, call the <xref:System.Char.Get
 :::code language="fsharp" source="./snippets/System/Char/Overview/fsharp/GetUnicodeCategory3.fs" id="Snippet6":::
 :::code language="vb" source="./snippets/System/Char/Overview/vb/GetUnicodeCategory3.vb" id="Snippet6":::
 
-Internally, for characters outside the ASCII range (U+0000 through U+00FF), the <xref:System.Char.GetUnicodeCategory%2A> method depends on Unicode categories reported by the <xref:System.Globalization.CharUnicodeInfo> class. Starting with .NET Framework 4.6.2, Unicode characters are classified based on [The Unicode Standard, Version 8.0.0](https://www.unicode.org/versions/Unicode8.0.0/). In versions of the .NET Framework from .NET Framework 4 to .NET Framework 4.6.1, they are classified based on [The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/).
+Internally, for characters outside the ASCII range (U+0000 through U+00FF), the <xref:System.Char.GetUnicodeCategory%2A> method depends on Unicode categories reported by the <xref:System.Globalization.CharUnicodeInfo> class. Starting with .NET Framework 4.6.2, Unicode characters are classified based on [The Unicode Standard, Version 8.0.0](https://www.unicode.org/versions/Unicode8.0.0/). In versions of .NET Framework from .NET Framework 4 to .NET Framework 4.6.1, they are classified based on [The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/).
 
 ## Characters and text elements
 

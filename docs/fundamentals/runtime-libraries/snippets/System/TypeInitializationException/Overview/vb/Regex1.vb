@@ -4,17 +4,17 @@ Option Strict On
 ' <Snippet4>
 Imports System.Text.RegularExpressions
 
-Module Example
-   Public Sub Main()
-      Dim domain As AppDomain = AppDomain.CurrentDomain
-      ' Set a timeout interval of -2 seconds.
-      domain.SetData("REGEX_DEFAULT_MATCH_TIMEOUT", TimeSpan.FromSeconds(-2))
+Module Example4
+    Public Sub Main()
+        Dim domain As AppDomain = AppDomain.CurrentDomain
+        ' Set a timeout interval of -2 seconds.
+        domain.SetData("REGEX_DEFAULT_MATCH_TIMEOUT", TimeSpan.FromSeconds(-2))
 
-      Dim rgx As New Regex("[aeiouy]")
-      Console.WriteLine("Regular expression pattern: {0}", rgx.ToString())
-      Console.WriteLine("Timeout interval for this regex: {0} seconds",
+        Dim rgx As New Regex("[aeiouy]")
+        Console.WriteLine("Regular expression pattern: {0}", rgx.ToString())
+        Console.WriteLine("Timeout interval for this regex: {0} seconds",
                         rgx.MatchTimeout.TotalSeconds)
-   End Sub
+    End Sub
 End Module
 ' The example displays the following output:
 '    Unhandled Exception: System.TypeInitializationException: 

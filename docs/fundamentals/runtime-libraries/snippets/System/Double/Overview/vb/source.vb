@@ -61,10 +61,10 @@ Namespace Snippets
         Public Shared Function Parse(ByVal s As String, ByVal styles As NumberStyles, ByVal provider As IFormatProvider) As Temperature
             Dim temp As New Temperature()
 
-            If s.TrimEnd(Nothing).EndsWith("'F") Then
+            If s.TrimEnd().EndsWith("'F") Then
                 temp.Value = Double.Parse(s.Remove(s.LastIndexOf("'"c), 2), styles, provider)
             Else
-                If s.TrimEnd(Nothing).EndsWith("'C") Then
+                If s.TrimEnd().EndsWith("'C") Then
                     temp.Celsius = Double.Parse(s.Remove(s.LastIndexOf("'"c), 2), styles, provider)
                 Else
                     temp.Value = Double.Parse(s, styles, provider)
@@ -230,10 +230,10 @@ Namespace Snippets5
         Public Shared Function Parse(ByVal s As String) As Temperature
             Dim temp As New Temperature()
 
-            If s.TrimEnd(Nothing).EndsWith("'F") Then
+            If s.TrimEnd().EndsWith("'F") Then
                 temp.Value = Double.Parse(s.Remove(s.LastIndexOf("'"c), 2))
             Else
-                If s.TrimEnd(Nothing).EndsWith("'C") Then
+                If s.TrimEnd().EndsWith("'C") Then
                     temp.Celsius = Double.Parse(s.Remove(s.LastIndexOf("'"c), 2))
                 Else
                     temp.Value = Double.Parse(s)
@@ -274,10 +274,10 @@ Namespace Snippets6
         Public Shared Function Parse(ByVal s As String, ByVal provider As IFormatProvider) As Temperature
             Dim temp As New Temperature()
 
-            If s.TrimEnd(Nothing).EndsWith("'F") Then
+            If s.TrimEnd().EndsWith("'F") Then
                 temp.Value = Double.Parse(s.Remove(s.LastIndexOf("'"c), 2), provider)
             Else
-                If s.TrimEnd(Nothing).EndsWith("'C") Then
+                If s.TrimEnd().EndsWith("'C") Then
                     temp.Celsius = Double.Parse(s.Remove(s.LastIndexOf("'"c), 2), provider)
                 Else
                     temp.Value = Double.Parse(s, provider)
@@ -318,10 +318,10 @@ Namespace Snippets7
         Public Shared Function Parse(ByVal s As String, ByVal styles As NumberStyles) As Temperature
             Dim temp As New Temperature()
 
-            If s.TrimEnd(Nothing).EndsWith("'F") Then
+            If s.TrimEnd().EndsWith("'F") Then
                 temp.Value = Double.Parse(s.Remove(s.LastIndexOf("'"c), 2), styles)
             Else
-                If s.TrimEnd(Nothing).EndsWith("'C") Then
+                If s.TrimEnd().EndsWith("'C") Then
                     temp.Celsius = Double.Parse(s.Remove(s.LastIndexOf("'"c), 2), styles)
                 Else
                     temp.Value = Double.Parse(s, styles)
@@ -362,10 +362,10 @@ Namespace Snippets8
         Public Shared Function Parse(ByVal s As String, ByVal styles As NumberStyles, ByVal provider As IFormatProvider) As Temperature
             Dim temp As New Temperature()
 
-            If s.TrimEnd(Nothing).EndsWith("'F") Then
+            If s.TrimEnd().EndsWith("'F") Then
                 temp.Value = Double.Parse(s.Remove(s.LastIndexOf("'"c), 2), styles, provider)
             Else
-                If s.TrimEnd(Nothing).EndsWith("'C") Then
+                If s.TrimEnd().EndsWith("'C") Then
                     temp.Celsius = Double.Parse(s.Remove(s.LastIndexOf("'"c), 2), styles, provider)
                 Else
                     temp.Value = Double.Parse(s, styles, provider)

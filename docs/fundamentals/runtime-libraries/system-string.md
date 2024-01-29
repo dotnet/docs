@@ -21,33 +21,33 @@ You can instantiate a <xref:System.String> object in the following ways:
 
 - By assigning a string literal to a <xref:System.String> variable. This is the most commonly used method for creating a string. The following example uses assignment to create several strings. Note that in C# and F#, because the backslash (\\) is an escape character, literal backslashes in a string must be escaped or the entire string must be @-quoted.
 
-     :::code language="csharp" source="./snippets/System/String/Overview/csharp/program.cs" interactive="try-dotnet-method" id="Snippet1":::
-     :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/program.fs" id="Snippet1":::
-     :::code language="vb" source="./snippets/System/String/Overview/vb/instantiate1.vb" id="Snippet1":::
+  :::code language="csharp" source="./snippets/System/String/Overview/csharp/program.cs" interactive="try-dotnet-method" id="Snippet1":::
+  :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/program.fs" id="Snippet1":::
+  :::code language="vb" source="./snippets/System/String/Overview/vb/instantiate1.vb" id="Snippet1":::
 
 - By calling a <xref:System.String> class constructor. The following example instantiates strings by calling several class constructors. Note that some of the constructors include pointers to character arrays or signed byte arrays as parameters. Visual Basic does not support calls to these constructors. For detailed information about <xref:System.String> constructors, see the <xref:System.String.%23ctor%2A> constructor summary.
 
-     :::code language="csharp" source="./snippets/System/String/Overview/csharp/program.cs" id="Snippet2":::
-     :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/program.fs" id="Snippet2":::
-     :::code language="vb" source="./snippets/System/String/Overview/vb/instantiate1.vb" id="Snippet2":::
+  :::code language="csharp" source="./snippets/System/String/Overview/csharp/program.cs" id="Snippet2":::
+  :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/program.fs" id="Snippet2":::
+  :::code language="vb" source="./snippets/System/String/Overview/vb/instantiate1.vb" id="Snippet2":::
 
 - By using the string concatenation operator (+ in C# and F#, and & or + in Visual Basic) to create a single string from any combination of <xref:System.String> instances and string literals. The following example illustrates the use of the string concatenation operator.
 
-     :::code language="csharp" source="./snippets/System/String/Overview/csharp/program.cs" interactive="try-dotnet-method" id="Snippet3":::
-     :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/program.fs" id="Snippet3":::
-     :::code language="vb" source="./snippets/System/String/Overview/vb/instantiate1.vb" id="Snippet3":::
+  :::code language="csharp" source="./snippets/System/String/Overview/csharp/program.cs" interactive="try-dotnet-method" id="Snippet3":::
+  :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/program.fs" id="Snippet3":::
+  :::code language="vb" source="./snippets/System/String/Overview/vb/instantiate1.vb" id="Snippet3":::
 
 - By retrieving a property or calling a method that returns a string. The following example uses the methods of the <xref:System.String> class to extract a substring from a larger string.
 
-     :::code language="csharp" source="./snippets/System/String/Overview/csharp/program.cs" interactive="try-dotnet-method" id="Snippet4":::
-     :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/program.fs" id="Snippet4":::
-     :::code language="vb" source="./snippets/System/String/Overview/vb/instantiate1.vb" id="Snippet4":::
+  :::code language="csharp" source="./snippets/System/String/Overview/csharp/program.cs" interactive="try-dotnet-method" id="Snippet4":::
+  :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/program.fs" id="Snippet4":::
+  :::code language="vb" source="./snippets/System/String/Overview/vb/instantiate1.vb" id="Snippet4":::
 
 - By calling a formatting method to convert a value or object to its string representation. The following example uses the [composite formatting](../../standard/base-types/composite-formatting.md) feature to embed the string representation of two objects into a string.
 
-     :::code language="csharp" source="./snippets/System/String/Overview/csharp/program.cs" id="Snippet5":::
-     :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/program.fs" id="Snippet5":::
-     :::code language="vb" source="./snippets/System/String/Overview/vb/instantiate1.vb" id="Snippet5":::
+  :::code language="csharp" source="./snippets/System/String/Overview/csharp/program.cs" id="Snippet5":::
+  :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/program.fs" id="Snippet5":::
+  :::code language="vb" source="./snippets/System/String/Overview/vb/instantiate1.vb" id="Snippet5":::
 
 ## Char objects and Unicode characters
 
@@ -60,15 +60,15 @@ A single <xref:System.Char> object usually represents a single code point; that 
 
 - A grapheme is represented by a base character followed by one or more combining characters. For example, the character ä is represented by a <xref:System.Char> object whose code point is U+0061 followed by a <xref:System.Char> object whose code point is U+0308. This character can also be defined by a single <xref:System.Char> object that has a code point of U+00E4. As the following example shows, a culture-sensitive comparison for equality indicates that these two representations are equal, although an ordinary ordinal comparison does not. However, if the two strings are normalized, an ordinal comparison also indicates that they are equal. (For more information on normalizing strings, see the [Normalization](#normalization) section.)
 
-     :::code language="csharp" source="./snippets/System/String/Overview/csharp/grapheme1.cs" id="Snippet2":::
-     :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/grapheme1.fs" id="Snippet2":::
-     :::code language="vb" source="./snippets/System/String/Overview/vb/grapheme1.vb" id="Snippet2":::
+  :::code language="csharp" source="./snippets/System/String/Overview/csharp/grapheme1.cs" id="Snippet2":::
+  :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/grapheme1.fs" id="Snippet2":::
+  :::code language="vb" source="./snippets/System/String/Overview/vb/grapheme1.vb" id="Snippet2":::
 
 - A Unicode supplementary code point (a surrogate pair) is represented by a <xref:System.Char> object whose code point is a high surrogate followed by a <xref:System.Char> object whose code point is a low surrogate. The code units of high surrogates range from U+D800 to U+DBFF. The code units of low surrogates range from U+DC00 to U+DFFF. Surrogate pairs are used to represent characters in the 16 Unicode supplementary planes. The following example creates a surrogate character and passes it to the <xref:System.Char.IsSurrogatePair(System.Char%2CSystem.Char)?displayProperty=nameWithType> method to determine whether it is a surrogate pair.
 
-     :::code language="csharp" source="./snippets/System/String/Overview/csharp/surrogate1.cs" interactive="try-dotnet-method" id="Snippet3":::
-     :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/surrogate1.fs" id="Snippet3":::
-     :::code language="vb" source="./snippets/System/String/Overview/vb/surrogate1.vb" id="Snippet3":::
+  :::code language="csharp" source="./snippets/System/String/Overview/csharp/surrogate1.cs" interactive="try-dotnet-method" id="Snippet3":::
+  :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/surrogate1.fs" id="Snippet3":::
+  :::code language="vb" source="./snippets/System/String/Overview/vb/surrogate1.vb" id="Snippet3":::
 
 ## The Unicode standard
 
@@ -78,14 +78,10 @@ Each character in a string has an associated Unicode character category, which i
 
 [!INCLUDE[character-categories](./includes/unicode-categories.md)]
 
-In addition, .NET supports string comparison and sorting based on the Unicode standard. .NET Framework 4 and previous versions maintain their own table of string data. This is also true of versions of .NET Framework starting with .NET Framework 4.5 running on Windows 7. Starting with .NET Framework 4.5 running on Windows 8 and later versions of the Windows operating system, the runtime delegates string comparison and sorting operations to the operating system. On .NET Core and .NET 5+, string comparison and sorting information is provided by [International Components for Unicode](https://icu.unicode.org/) libraries (except on Windows versions prior to Windows 10 May 2019 Update). The following table lists the versions of .NET and the versions of the Unicode Standard on which character comparison and sorting are based.
+In addition, .NET supports string comparison and sorting based on the Unicode standard. Starting with .NET Framework 4.5 running on Windows 8 and later versions of the Windows operating system, the runtime delegates string comparison and sorting operations to the operating system. On .NET Core and .NET 5+, string comparison and sorting information is provided by [International Components for Unicode](https://icu.unicode.org/) libraries (except on Windows versions prior to Windows 10 May 2019 Update). The following table lists the versions of .NET and the versions of the Unicode Standard on which character comparison and sorting are based.
 
 |.NET version|Version of the Unicode Standard|
 |----------------------------|-------------------------------------|
-|.NET Framework 1.1|[The Unicode Standard, Version 4.0.0](https://www.unicode.org/versions/Unicode4.0.0/)|
-|.NET Framework 2.0|[The Unicode Standard, Version 5.0.0](https://www.unicode.org/versions/Unicode5.0.0)|
-|.NET Framework 3.5|[The Unicode Standard, Version 5.0.0](https://www.unicode.org/versions/Unicode5.0.0)|
-|.NET Framework 4|[The Unicode Standard, Version 5.0.0](https://www.unicode.org/versions/Unicode5.0.0)|
 |.NET Framework 4.5 and later on Windows 7|[The Unicode Standard, Version 5.0.0](https://www.unicode.org/versions/Unicode5.0.0)|
 |.NET Framework 4.5 and later on Windows 8 and later Windows operating systems|[The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/)|
 |.NET Core and .NET 5+|Depends on the version of the Unicode Standard supported by the underlying operating system.|
@@ -136,15 +132,15 @@ The <xref:System.String> class includes the following two convenience methods th
 
 - <xref:System.String.IsNullOrEmpty%2A>, which indicates whether a string is either `null` or is equal to  <xref:System.String.Empty?displayProperty=nameWithType>. This method eliminates the need to use code such as the following:
 
-     :::code language="csharp" source="./snippets/System/String/Overview/csharp/nullorempty1.cs" id="Snippet1":::
-     :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/nullorempty1.fs" id="Snippet1":::
-     :::code language="vb" source="./snippets/System/String/Overview/vb/nullorempty1.vb" id="Snippet1":::
+  :::code language="csharp" source="./snippets/System/String/Overview/csharp/nullorempty1.cs" id="Snippet1":::
+  :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/nullorempty1.fs" id="Snippet1":::
+  :::code language="vb" source="./snippets/System/String/Overview/vb/nullorempty1.vb" id="Snippet1":::
 
 - <xref:System.String.IsNullOrWhiteSpace%2A>, which indicates whether a string is `null`, equals <xref:System.String.Empty?displayProperty=nameWithType>, or consists exclusively of white-space characters. This method eliminates the need to use code such as the following:
 
-     :::code language="csharp" source="./snippets/System/String/Overview/csharp/nullorempty1.cs" id="Snippet2":::
-     :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/nullorempty1.fs" id="Snippet2":::
-     :::code language="vb" source="./snippets/System/String/Overview/vb/nullorempty1.vb" id="Snippet2":::
+  :::code language="csharp" source="./snippets/System/String/Overview/csharp/nullorempty1.cs" id="Snippet2":::
+  :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/nullorempty1.fs" id="Snippet2":::
+  :::code language="vb" source="./snippets/System/String/Overview/vb/nullorempty1.vb" id="Snippet2":::
 
 The following example uses the <xref:System.String.IsNullOrEmpty%2A> method in the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation of a custom `Temperature` class. The method supports the "G", "C", "F", and "K" format strings. If an empty format string or a format string whose value is `null` is passed to the method, its value is changed to the "G" format string.
 
@@ -200,11 +196,11 @@ Casing operations can be based on the rules of the current culture, a specified 
 
 - Differences in the case mapping of LATIN CAPITAL LETTER I (U+0049), LATIN SMALL LETTER I (U+0069), LATIN CAPITAL LETTER I WITH DOT ABOVE (U+0130), and LATIN SMALL LETTER DOTLESS I (U+0131). In the tr-TR (Turkish (Turkey)) and az-Latn-AZ (Azerbaijan, Latin) cultures, and in the tr, az, and az-Latn neutral cultures, the lowercase equivalent of LATIN CAPITAL LETTER I is LATIN SMALL LETTER DOTLESS I, and the uppercase equivalent of LATIN SMALL LETTER I is LATIN CAPITAL LETTER I WITH DOT ABOVE. In all other cultures, including the invariant culture, LATIN SMALL LETTER I and LATIN CAPITAL LETTER I are lowercase and uppercase equivalents.
 
-     The following example demonstrates how a string comparison designed to prevent file system access can fail if it relies on a culture-sensitive casing comparison. (The casing conventions of the invariant culture should have been used.)
+  The following example demonstrates how a string comparison designed to prevent file system access can fail if it relies on a culture-sensitive casing comparison. (The casing conventions of the invariant culture should have been used.)
 
-     :::code language="csharp" source="./snippets/System/String/Overview/csharp/case2.cs" id="Snippet17":::
-     :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/case2.fs" id="Snippet17":::
-     :::code language="vb" source="./snippets/System/String/Overview/vb/case2.vb" id="Snippet17":::
+  :::code language="csharp" source="./snippets/System/String/Overview/csharp/case2.cs" id="Snippet17":::
+  :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/case2.fs" id="Snippet17":::
+  :::code language="vb" source="./snippets/System/String/Overview/vb/case2.vb" id="Snippet17":::
 
 - Differences in case mappings between the invariant culture and all other cultures. In these cases, using the casing rules of the invariant culture to change a character to uppercase or lowercase returns the same character. For all other cultures, it returns a different character. Some of the affected characters are listed in the following table.
 

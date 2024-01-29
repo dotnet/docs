@@ -43,7 +43,7 @@ The following are things to consider when using the <xref:System.Xml.XmlTextRead
 
 - DTD processing is enabled by default. Disable DTD processing if you are concerned about Denial of Service issues or if you are dealing with untrusted sources. Set the <xref:System.Xml.XmlTextReader.DtdProcessing> property to <xref:System.Xml.DtdProcessing.Prohibit> to disable DTD processing.
 
-     If you have DTD processing enabled, you can use the <xref:System.Xml.XmlSecureResolver> to restrict the resources that the <xref:System.Xml.XmlTextReader> can access. You can also design your application so that the XML processing is memory and time constrained. For example, configure time-out limits in your ASP.NET application.
+  If you have DTD processing enabled, you can use the <xref:System.Xml.XmlSecureResolver> to restrict the resources that the <xref:System.Xml.XmlTextReader> can access. You can also design your application so that the XML processing is memory and time constrained. For example, configure time-out limits in your ASP.NET application.
 
 - XML data can include references to external resources such as a DTD file. By default external resources are resolved using an <xref:System.Xml.XmlUrlResolver> object with no user credentials. You can secure this further by doing one of the following:
 

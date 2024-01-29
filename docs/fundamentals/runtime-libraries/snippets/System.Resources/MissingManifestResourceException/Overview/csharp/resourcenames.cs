@@ -2,9 +2,8 @@
 using System;
 using System.IO;
 using System.Reflection;
-using System.Resources;
 
-public class Example
+public class Example0
 {
    public static void Main()
    {

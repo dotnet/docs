@@ -260,7 +260,7 @@ Consider the following when working with the <xref:System.Xml.XmlReader> class:
 
 - Do not enable DTD processing if you're concerned about denial of service issues or if you're dealing with untrusted sources. DTD processing is disabled by default for <xref:System.Xml.XmlReader> objects created by the <xref:System.Xml.XmlReader.Create%2A> method.
 
-     If you have DTD processing enabled, you can use the <xref:System.Xml.XmlSecureResolver> to restrict the resources that the <xref:System.Xml.XmlReader> can access. You can also design your app so that the XML processing is memory and time constrained. For example, you can configure time-out limits in your ASP.NET app.
+  If you have DTD processing enabled, you can use the <xref:System.Xml.XmlSecureResolver> to restrict the resources that the <xref:System.Xml.XmlReader> can access. You can also design your app so that the XML processing is memory and time constrained. For example, you can configure time-out limits in your ASP.NET app.
 
 - XML data can include references to external resources such as a schema file. By default, external resources are resolved by using an <xref:System.Xml.XmlUrlResolver> object with no user credentials. You can secure this further by doing one of the following:
 
@@ -270,9 +270,9 @@ Consider the following when working with the <xref:System.Xml.XmlReader> class:
 
 - The <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema> and <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessSchemaLocation> validation flags of an <xref:System.Xml.XmlReaderSettings> object aren't set by default. This helps to protect the <xref:System.Xml.XmlReader> against schema-based attacks when it is processing XML data from an untrusted source. When these flags are set, the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> of the <xref:System.Xml.XmlReaderSettings> object is used to resolve schema locations encountered in the instance document in the <xref:System.Xml.XmlReader>. If the <xref:System.Xml.XmlReaderSettings.XmlResolver> property is set to `null`, schema locations aren't resolved even if the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema> and <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessSchemaLocation> validation flags are set.
 
-     Schemas added during validation add new types and can change the validation outcome of the document being validated. As a result, external schemas should only be resolved from trusted sources.
+  Schemas added during validation add new types and can change the validation outcome of the document being validated. As a result, external schemas should only be resolved from trusted sources.
 
-     We recommend disabling the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessIdentityConstraints> flag when validating untrusted, large XML documents in high availability scenarios against a schema that has identity constraints over a large part of the document. This flag is enabled by default.
+  We recommend disabling the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessIdentityConstraints> flag when validating untrusted, large XML documents in high availability scenarios against a schema that has identity constraints over a large part of the document. This flag is enabled by default.
 
 - XML data can contain a large number of attributes, namespace declarations, nested elements and so on that require a substantial amount of time to process. To limit the size of the input that is sent to the <xref:System.Xml.XmlReader>, you can:
 

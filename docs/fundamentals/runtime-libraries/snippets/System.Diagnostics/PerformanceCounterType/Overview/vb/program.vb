@@ -2,12 +2,14 @@
 Imports System.Collections
 Imports System.Collections.Specialized
 Imports System.Diagnostics
+Imports System.Runtime.Versioning
 
 
 ' Provides a SampleFraction counter to measure the percentage of the user processor 
 ' time for this process to total processor time for the process.
 
-Public Class App
+<SupportedOSPlatform("Windows")>
+Public Class App3
 
     Private Shared perfCounter As PerformanceCounter
     Private Shared basePerfCounter As PerformanceCounter

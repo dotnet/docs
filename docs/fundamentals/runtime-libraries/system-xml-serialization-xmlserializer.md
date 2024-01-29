@@ -192,10 +192,10 @@ public enum LargeNumbers: ulong
 {
     a = 9223372036854775808
 }
-// At runtime, the following code will fail.
+// At run time, the following code will fail.
 xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
 ```
 
 ## Obsolete types
 
-Starting in .NET Framework 3.5, the <xref:System.Xml.Serialization.XmlSerializer> class no longer serializes objects that are marked as `[Obsolete]`.
+The <xref:System.Xml.Serialization.XmlSerializer> class does not serializes objects that are marked as `[Obsolete]`.

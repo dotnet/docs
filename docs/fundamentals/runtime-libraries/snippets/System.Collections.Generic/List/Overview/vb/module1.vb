@@ -1,5 +1,4 @@
 ﻿'<snippet1>
-Imports System.Collections.Generic
 
 ' Simple business object. A PartId is used to identify the type of part 
 ' but the part name can change. 
@@ -10,7 +9,7 @@ Public Class Part
             Return m_PartName
         End Get
         Set(value As String)
-            m_PartName = Value
+            m_PartName = value
         End Set
     End Property
     Private m_PartName As String
@@ -20,7 +19,7 @@ Public Class Part
             Return m_PartId
         End Get
         Set(value As Integer)
-            m_PartId = Value
+            m_PartId = value
         End Set
     End Property
     Private m_PartId As Integer
@@ -58,29 +57,29 @@ Public Class Example
         Dim parts As New List(Of Part)()
 
         ' Add parts to the list.
-        parts.Add(New Part() With { _
-             .PartName = "crank arm", _
-             .PartId = 1234 _
+        parts.Add(New Part() With {
+             .PartName = "crank arm",
+             .PartId = 1234
         })
-        parts.Add(New Part() With { _
-             .PartName = "chain ring", _
-             .PartId = 1334 _
+        parts.Add(New Part() With {
+             .PartName = "chain ring",
+             .PartId = 1334
         })
-        parts.Add(New Part() With { _
-             .PartName = "regular seat", _
-             .PartId = 1434 _
+        parts.Add(New Part() With {
+             .PartName = "regular seat",
+             .PartId = 1434
         })
-        parts.Add(New Part() With { _
-             .PartName = "banana seat", _
-             .PartId = 1444 _
+        parts.Add(New Part() With {
+             .PartName = "banana seat",
+             .PartId = 1444
         })
-        parts.Add(New Part() With { _
-             .PartName = "cassette", _
-             .PartId = 1534 _
+        parts.Add(New Part() With {
+             .PartName = "cassette",
+             .PartId = 1534
         })
-        parts.Add(New Part() With { _
-             .PartName = "shift lever", _
-             .PartId = 1634 _
+        parts.Add(New Part() With {
+             .PartName = "shift lever",
+             .PartId = 1634
         })
 
 
@@ -95,16 +94,16 @@ Public Class Example
 
         ' Check the list for part #1734. This calls the IEquatable.Equals method
         ' of the Part class, which checks the PartId for equality.
-        Console.WriteLine(vbLf & "Contains(""1734""): {0}", parts.Contains(New Part() With { _
-             .PartId = 1734, _
-             .PartName = "" _
+        Console.WriteLine(vbLf & "Contains(""1734""): {0}", parts.Contains(New Part() With {
+             .PartId = 1734,
+             .PartName = ""
         }))
 
         ' Insert a new item at position 2.
         Console.WriteLine(vbLf & "Insert(2, ""1834"")")
-        parts.Insert(2, New Part() With { _
-             .PartName = "brake lever", _
-             .PartId = 1834 _
+        parts.Insert(2, New Part() With {
+             .PartName = "brake lever",
+             .PartId = 1834
         })
 
 
@@ -119,9 +118,9 @@ Public Class Example
 
         ' This will remove part 1534 even though the PartName is different,
         ' because the Equals method only checks PartId for equality.
-        parts.Remove(New Part() With { _
-             .PartId = 1534, _
-             .PartName = "cogs" _
+        parts.Remove(New Part() With {
+             .PartId = 1534,
+             .PartName = "cogs"
         })
 
         Console.WriteLine()

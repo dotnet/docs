@@ -42,38 +42,38 @@ Ordinarily, the <xref:System.Version> class is not used to assign a version numb
 
 - Retrieving the operating system version. The following example uses the <xref:System.OperatingSystem.Version?displayProperty=nameWithType> property to retrieve the version number of the operating system.
 
-     :::code language="csharp" source="./snippets/System/Version/Overview/csharp/GettingVersions1.cs" id="Snippet1":::
-     :::code language="fsharp" source="./snippets/System/Version/Overview/fsharp/GettingVersions1.fs" id="Snippet1":::
-     :::code language="vb" source="./snippets/System/TypeInitializationException/Overview/vb/GettingVersions1.vb" id="Snippet1":::
+  :::code language="csharp" source="./snippets/System/Version/Overview/csharp/GettingVersions1.cs" id="Snippet1":::
+  :::code language="fsharp" source="./snippets/System/Version/Overview/fsharp/GettingVersions1.fs" id="Snippet1":::
+  :::code language="vb" source="./snippets/System/TypeInitializationException/Overview/vb/GettingVersions1.vb" id="Snippet1":::
 
 - Retrieving the version of the common language runtime. The following example uses the <xref:System.Environment.Version?displayProperty=nameWithType> property to retrieve version information about the common language runtime.
 
-     :::code language="csharp" source="./snippets/System/Version/Overview/csharp/GettingVersions1.cs" id="Snippet2":::
-     :::code language="fsharp" source="./snippets/System/Version/Overview/fsharp/GettingVersions1.fs" id="Snippet2":::
-     :::code language="vb" source="./snippets/System/TypeInitializationException/Overview/vb/GettingVersions1.vb" id="Snippet2":::
+  :::code language="csharp" source="./snippets/System/Version/Overview/csharp/GettingVersions1.cs" id="Snippet2":::
+  :::code language="fsharp" source="./snippets/System/Version/Overview/fsharp/GettingVersions1.fs" id="Snippet2":::
+  :::code language="vb" source="./snippets/System/TypeInitializationException/Overview/vb/GettingVersions1.vb" id="Snippet2":::
 
 - Retrieving the current application's assembly version. The following example uses the <xref:System.Reflection.Assembly.GetEntryAssembly%2A?displayProperty=nameWithType> method to obtain a reference to an <xref:System.Reflection.Assembly> object that represents the application executable and then retrieves its assembly version number.
 
-     :::code language="csharp" source="./snippets/System/Version/Overview/csharp/currentapp.cs" id="Snippet5":::
-     :::code language="fsharp" source="./snippets/System/Version/Overview/fsharp/currentapp.fs" id="Snippet5":::
-     :::code language="vb" source="./snippets/System/Version/Overview/vb/currentapp.vb" id="Snippet5":::
+  :::code language="csharp" source="./snippets/System/Version/Overview/csharp/currentapp.cs" id="Snippet5":::
+  :::code language="fsharp" source="./snippets/System/Version/Overview/fsharp/currentapp.fs" id="Snippet5":::
+  :::code language="vb" source="./snippets/System/Version/Overview/vb/currentapp.vb" id="Snippet5":::
 
 - Retrieving the current assembly's assembly version. The following example uses the <xref:System.Type.Assembly?displayProperty=nameWithType> property to obtain a reference to an <xref:System.Reflection.Assembly> object that represents the assembly that contains the application entry point, and then retrieves its version information.
 
-     :::code language="csharp" source="./snippets/System/Version/Overview/csharp/currentassem.cs" id="Snippet4":::
-     :::code language="fsharp" source="./snippets/System/Version/Overview/fsharp/currentassem.fs" id="Snippet4":::
-     :::code language="vb" source="./snippets/System/Version/Overview/vb/currentassem.vb" id="Snippet4":::
+  :::code language="csharp" source="./snippets/System/Version/Overview/csharp/currentassem.cs" id="Snippet4":::
+  :::code language="fsharp" source="./snippets/System/Version/Overview/fsharp/currentassem.fs" id="Snippet4":::
+  :::code language="vb" source="./snippets/System/Version/Overview/vb/currentassem.vb" id="Snippet4":::
 
 - Retrieving the version of a specific assembly. The following example uses the <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A?displayProperty=nameWithType> method to obtain a reference to an <xref:System.Reflection.Assembly> object that has a particular file name, and then retrieves its version information. Note that several other methods also exist to instantiate an <xref:System.Reflection.Assembly> object by file name or by strong name.
 
-     :::code language="csharp" source="./snippets/System/Version/Overview/csharp/specificassem.cs" id="Snippet3":::
-     :::code language="fsharp" source="./snippets/System/Version/Overview/fsharp/specificassem.fs" id="Snippet3":::
-     :::code language="vb" source="./snippets/System/Version/Overview/vb/specificassem.vb" id="Snippet3":::
+  :::code language="csharp" source="./snippets/System/Version/Overview/csharp/specificassem.cs" id="Snippet3":::
+  :::code language="fsharp" source="./snippets/System/Version/Overview/fsharp/specificassem.fs" id="Snippet3":::
+  :::code language="vb" source="./snippets/System/Version/Overview/vb/specificassem.vb" id="Snippet3":::
 
 - Retrieving the Publish Version of a ClickOnce application. The following example uses the <xref:System.Deployment.Application.ApplicationDeployment.CurrentVersion?displayProperty=nameWithType> property to display an application's Publish Version. Note that its successful execution requires the example's application identity to be set. This is handled automatically by the Visual Studio Publish Wizard.
 
-     :::code language="csharp" source="./snippets/System/Version/Overview/csharp/clickonce.cs" id="Snippet7":::
-     :::code language="vb" source="./snippets/System/Version/Overview/vb/clickonce.vb" id="Snippet7":::
+  :::code language="csharp" source="./snippets/System/Version/Overview/csharp/clickonce.cs" id="Snippet7":::
+  :::code language="vb" source="./snippets/System/Version/Overview/vb/clickonce.vb" id="Snippet7":::
 
     > [!IMPORTANT]
     >  The Publish Version of an application for ClickOnce deployment is completely independent of its assembly version.

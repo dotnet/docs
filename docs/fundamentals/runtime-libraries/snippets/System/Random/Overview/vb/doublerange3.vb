@@ -2,24 +2,24 @@
 Option Strict On
 
 ' <Snippet19>
-Module Example
-   Public Sub Main()
-      Dim rnd As New Random()
-      Dim lowerBound As Integer = 10
-      Dim upperBound As Integer = 11
-      Dim range(9) As Integer
-      For ctr As Integer = 1 To 1000000
-         Dim value As Double = rnd.NextDouble() * (upperBound - lowerBound) + lowerBound
-         range(CInt(Math.Truncate((value - lowerBound) * 10))) += 1 
-      Next
-      
-      For ctr As Integer = 0 To 9
-         Dim lowerRange As Double = 10 + ctr * .1
-         Console.WriteLine("{0:N1} to {1:N1}: {2,8:N0}  ({3,7:P2})", 
-                           lowerRange, lowerRange + .1, range(ctr), 
+Module Example7
+    Public Sub Main()
+        Dim rnd As New Random()
+        Dim lowerBound As Integer = 10
+        Dim upperBound As Integer = 11
+        Dim range(9) As Integer
+        For ctr As Integer = 1 To 1000000
+            Dim value As Double = rnd.NextDouble() * (upperBound - lowerBound) + lowerBound
+            range(CInt(Math.Truncate((value - lowerBound) * 10))) += 1
+        Next
+
+        For ctr As Integer = 0 To 9
+            Dim lowerRange As Double = 10 + ctr * 0.1
+            Console.WriteLine("{0:N1} to {1:N1}: {2,8:N0}  ({3,7:P2})",
+                           lowerRange, lowerRange + 0.1, range(ctr),
                            range(ctr) / 1000000.0)
-      Next 
-   End Sub
+        Next
+    End Sub
 End Module
 ' The example displays output like the following:
 '       10.0 to 10.1:   99,929  ( 9.99 %)

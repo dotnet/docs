@@ -6,44 +6,44 @@ Imports System.Collections
 Imports System.Collections.Generic
 Imports System.Globalization
 
-Module Example
-   Public Sub Main()
-      Dim strings() As String = { "coop", "co-op", "cooperative", 
-                                  "co" + ChrW(&h00AD) + "operative", 
-                                  "cœur", "coeur" }
+Module Example4
+    Public Sub Main()
+        Dim strings() As String = {"coop", "co-op", "cooperative",
+                                  "co" + ChrW(&HAD) + "operative",
+                                  "cœur", "coeur"}
 
-      ' Perform a word sort using the current (en-US) culture.
-      Dim current(strings.Length - 1) As String  
-      strings.CopyTo(current, 0) 
-      Array.Sort(current, StringComparer.CurrentCulture)
+        ' Perform a word sort using the current (en-US) culture.
+        Dim current(strings.Length - 1) As String
+        strings.CopyTo(current, 0)
+        Array.Sort(current, StringComparer.CurrentCulture)
 
-      ' Perform a word sort using the invariant culture.
-      Dim invariant(strings.Length - 1) As String
-      strings.CopyTo(invariant, 0) 
-      Array.Sort(invariant, StringComparer.InvariantCulture)
+        ' Perform a word sort using the invariant culture.
+        Dim invariant(strings.Length - 1) As String
+        strings.CopyTo(invariant, 0)
+        Array.Sort(invariant, StringComparer.InvariantCulture)
 
-      ' Perform an ordinal sort.
-      Dim ordinal(strings.Length - 1) As String
-      strings.CopyTo(ordinal, 0) 
-      Array.Sort(ordinal, StringComparer.Ordinal)
+        ' Perform an ordinal sort.
+        Dim ordinal(strings.Length - 1) As String
+        strings.CopyTo(ordinal, 0)
+        Array.Sort(ordinal, StringComparer.Ordinal)
 
-      ' Perform a string sort using the current culture.
-      Dim stringSort(strings.Length - 1) As String
-      strings.CopyTo(stringSort, 0) 
-      Array.Sort(stringSort, new SCompare())
+        ' Perform a string sort using the current culture.
+        Dim stringSort(strings.Length - 1) As String
+        strings.CopyTo(stringSort, 0)
+        Array.Sort(stringSort, New SCompare())
 
-      ' Display array values
-      Console.WriteLine("{0,13} {1,13} {2,15} {3,13} {4,13}", 
-                        "Original", "Word Sort", "Invariant Word", 
+        ' Display array values
+        Console.WriteLine("{0,13} {1,13} {2,15} {3,13} {4,13}",
+                        "Original", "Word Sort", "Invariant Word",
                         "Ordinal Sort", "String Sort")
-      Console.WriteLine()
-                                                      
-      For ctr As Integer = 0 To strings.Length - 1
-         Console.WriteLine("{0,13} {1,13} {2,15} {3,13} {4,13}", 
-                           strings(ctr), current(ctr), invariant(ctr), 
-                           ordinal(ctr), stringSort(ctr))   
-      Next                                  
-   End Sub
+        Console.WriteLine()
+
+        For ctr As Integer = 0 To strings.Length - 1
+            Console.WriteLine("{0,13} {1,13} {2,15} {3,13} {4,13}",
+                           strings(ctr), current(ctr), invariant(ctr),
+                           ordinal(ctr), stringSort(ctr))
+        Next
+    End Sub
 End Module
 
 ' IComparer<String> implementation to perform string sort.

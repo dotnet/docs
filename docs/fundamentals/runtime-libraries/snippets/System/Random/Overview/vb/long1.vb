@@ -2,29 +2,29 @@
 Option Strict On
 
 ' <Snippet14>
-Module Example
-   Public Sub Main()
-      Const ONE_TENTH As Long = 922337203685477581
+Module Example8
+    Public Sub Main()
+        Const ONE_TENTH As Long = 922337203685477581
 
-      Dim rnd As New Random()
-      Dim number As Long
-      Dim count(9) As Integer
-      
-      ' Generate 20 million long integers.
-      For ctr As Integer = 1 To 20000000
-         number = CLng(rnd.NextDouble() * Int64.MaxValue)
-         ' Categorize random numbers.
-         count(CInt(number \ ONE_TENTH)) += 1
-      Next
-      ' Display breakdown by range.
-      Console.WriteLine("{0,28} {1,32}   {2,7}", "Range", "Count", "Pct.")
-      Console.WriteLine()
-      For ctr As Integer = 0 To 9
-         Console.WriteLine("{0,25:N0}-{1,25:N0}  {2,8:N0}   {3,7:P2}", ctr * ONE_TENTH,
-                            If(ctr < 9, ctr * ONE_TENTH + ONE_TENTH - 1, Int64.MaxValue), 
-                            count(ctr), count(ctr)/20000000)
-      Next
-   End Sub
+        Dim rnd As New Random()
+        Dim number As Long
+        Dim count(9) As Integer
+
+        ' Generate 20 million long integers.
+        For ctr As Integer = 1 To 20000000
+            number = CLng(rnd.NextDouble() * Int64.MaxValue)
+            ' Categorize random numbers.
+            count(CInt(number \ ONE_TENTH)) += 1
+        Next
+        ' Display breakdown by range.
+        Console.WriteLine("{0,28} {1,32}   {2,7}", "Range", "Count", "Pct.")
+        Console.WriteLine()
+        For ctr As Integer = 0 To 9
+            Console.WriteLine("{0,25:N0}-{1,25:N0}  {2,8:N0}   {3,7:P2}", ctr * ONE_TENTH,
+                            If(ctr < 9, ctr * ONE_TENTH + ONE_TENTH - 1, Int64.MaxValue),
+                            count(ctr), count(ctr) / 20000000)
+        Next
+    End Sub
 End Module
 ' The example displays output like the following:
 '                           Range                            Count      Pct.

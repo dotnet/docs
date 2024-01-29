@@ -1,7 +1,5 @@
 ﻿' <Snippet1>
-Imports System.Collections.Generic
-
-Public Class Example
+Public Class Example2
 
     Public Shared Sub Main()
         ' <snippet2>
@@ -24,7 +22,7 @@ Public Class Example
         Console.WriteLine(vbLf & "Capacity: {0}", dinosaurs.Capacity)
         Console.WriteLine("Count: {0}", dinosaurs.Count)
 
-        Console.WriteLine(vbLf & "Contains(""Deinonychus""): {0}", _
+        Console.WriteLine(vbLf & "Contains(""Deinonychus""): {0}",
             dinosaurs.Contains("Deinonychus"))
 
         Console.WriteLine(vbLf & "Insert(2, ""Compsognathus"")")

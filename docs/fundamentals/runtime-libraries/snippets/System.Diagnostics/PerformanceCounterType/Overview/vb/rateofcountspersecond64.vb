@@ -2,10 +2,10 @@
 Imports System.Collections
 Imports System.Collections.Specialized
 Imports System.Diagnostics
+Imports System.Runtime.Versioning
 
- _
-
-Public Class App
+<SupportedOSPlatform("Windows")>
+Public Class App5
     Private Shared PC As PerformanceCounter
 
 
@@ -14,7 +14,7 @@ Public Class App
         'If the category does not exist, create the category and exit.
         'Performance counters should not be created and immediately used.
         'There is a latency time to enable the counters, they should be created
-        'prior to executing the application that uses the counters.
+        'prior to executing the App5lication that uses the counters.
         'Execute this sample a second time to use the counters.
         If Not (SetupCategory()) Then
             CreateCounters()

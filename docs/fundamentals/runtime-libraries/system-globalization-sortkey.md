@@ -41,6 +41,6 @@ Use the following steps to obtain a sort key:
 
 Working with the value of a <xref:System.Globalization.SortKey> object is equivalent to calling the Windows `LCMapString` method with the LCMAP_SORTKEY value specified. However, for the <xref:System.Globalization.SortKey> object, the sort keys for English characters precede the sort keys for Korean characters.
 
-<xref:System.Globalization.SortKey> objects can be serialized, but only so that they can cross <xref:System.AppDomain> objects. If an application serializes a <xref:System.Globalization.SortKey> object, the application must regenerate all the sort keys when there is a new version of the .NET Framework.
+<xref:System.Globalization.SortKey> objects can be serialized, but only so that they can cross <xref:System.AppDomain> objects. If an application serializes a <xref:System.Globalization.SortKey> object, the application must regenerate all the sort keys when there is a new version of .NET.
 
 For more information about sort keys, see Unicode Technical Standard #10, "Unicode Collation Algorithm" on the [Unicode Consortium website](https://go.microsoft.com/fwlink/?linkid=37123).

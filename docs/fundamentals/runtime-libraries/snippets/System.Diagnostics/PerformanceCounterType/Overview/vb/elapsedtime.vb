@@ -11,7 +11,7 @@ Imports System.Collections.Specialized
 Imports System.Diagnostics
 Imports System.Runtime.InteropServices
 
-Public Class App
+Public Class App2
    Private Shared PC As PerformanceCounter
 
    Public Shared Sub Main()
@@ -20,7 +20,7 @@ Public Class App
       'If the category does not exist, create the category and exit.
       'Performance counters should not be created and immediately used.
       'There is a latency time to enable the counters, they should be created
-      'prior to executing the application that uses the counters.
+      'prior to executing the App2lication that uses the counters.
       'Execute this sample a second time to use the counters.
       If Not (SetupCategory()) Then
         CreateCounters()
@@ -138,8 +138,10 @@ Imports System.Collections
 Imports System.Collections.Specialized
 Imports System.Diagnostics
 Imports System.Runtime.InteropServices
+Imports System.Runtime.Versioning
 
-Public Class App
+<SupportedOSPlatform("Windows")>
+Public Class App2
 
     Public Shared Sub Main()
         CollectSamples()
@@ -161,8 +163,8 @@ Public Class App
             CCDC.Add(ETimeData)
 
             ' Create the category.
-            PerformanceCounterCategory.Create(categoryName, _
-               "Demonstrates ElapsedTime performance counter usage.", _
+            PerformanceCounterCategory.Create(categoryName,
+               "Demonstrates ElapsedTime performance counter usage.",
                    PerformanceCounterCategoryType.SingleInstance, CCDC)
 
         Else
@@ -200,7 +202,7 @@ Public Class App
             System.Threading.Thread.Sleep(50)
         Next j
 
-        Console.WriteLine(("Elapsed time = " + _
+        Console.WriteLine(("Elapsed time = " +
               DateTime.Now.Subtract(Start).ToString()))
     End Sub
 
@@ -212,19 +214,19 @@ Public Class App
               + ControlChars.Lf)
         Console.WriteLine(("   BaseValue        = " _
               + s.BaseValue.ToString()))
-        Console.WriteLine(("   CounterFrequency = " + _
+        Console.WriteLine(("   CounterFrequency = " +
               s.CounterFrequency.ToString()))
-        Console.WriteLine(("   CounterTimeStamp = " + _
+        Console.WriteLine(("   CounterTimeStamp = " +
               s.CounterTimeStamp.ToString()))
-        Console.WriteLine(("   CounterType      = " + _
+        Console.WriteLine(("   CounterType      = " +
               s.CounterType.ToString()))
-        Console.WriteLine(("   RawValue         = " + _
+        Console.WriteLine(("   RawValue         = " +
               s.RawValue.ToString()))
-        Console.WriteLine(("   SystemFrequency  = " + _
+        Console.WriteLine(("   SystemFrequency  = " +
               s.SystemFrequency.ToString()))
-        Console.WriteLine(("   TimeStamp        = " + _
+        Console.WriteLine(("   TimeStamp        = " +
               s.TimeStamp.ToString()))
-        Console.WriteLine(("   TimeStamp100nSec = " + _
+        Console.WriteLine(("   TimeStamp100nSec = " +
               s.TimeStamp100nSec.ToString()))
 
         Console.WriteLine("+++++++")

@@ -2,11 +2,11 @@
 Imports System.Threading
 Imports System.Threading.Tasks
 
-Module Example
+Module Example2
     Public Sub Main()
-        Dim action As Action(Of Object) = 
+        Dim action As Action(Of Object) =
               Sub(obj As Object)
-                 Console.WriteLine("Task={0}, obj={1}, Thread={2}", 
+                  Console.WriteLine("Task={0}, obj={1}, Thread={2}",
                  Task.CurrentId, obj,
                  Thread.CurrentThread.ManagedThreadId)
               End Sub
@@ -29,13 +29,13 @@ Module Example
         ' Construct a started task using Task.Run.
         Dim taskData As String = "delta"
         Dim t3 As Task = Task.Run(Sub()
-                                     Console.WriteLine("Task={0}, obj={1}, Thread={2}",
+                                      Console.WriteLine("Task={0}, obj={1}, Thread={2}",
                                      Task.CurrentId, taskData,
                                      Thread.CurrentThread.ManagedThreadId)
                                   End Sub)
         ' Wait for the task to finish.
         t3.Wait()
-        
+
         ' Construct an unstarted task
         Dim t4 As New Task(action, "gamma")
         ' Run it synchronously

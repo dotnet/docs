@@ -5,32 +5,32 @@ Option Strict On
 Imports System.Globalization
 Imports System.Text
 
-Module Example
-   Public Sub Main()
-      Dim rnd As New Random()
-      Dim sb As New StringBuilder()
-      
-      ' Generate 10 random numbers and store them in a StringBuilder.
-      For ctr As Integer = 0 To 9
-         sb.Append(rnd.Next().ToString("N5"))    
-      Next
-      Console.WriteLine("The original string:")
-      Console.WriteLine(sb.ToString())
-      Console.WriteLine()
-            
-      ' Decrease each number by one.
-      For ctr As Integer = 0 To sb.Length - 1
-         If Char.GetUnicodeCategory(sb(ctr)) = UnicodeCategory.DecimalDigitNumber Then
-            Dim number As Integer = CType(Char.GetNumericValue(sb(ctr)), Integer)
-            number -= 1
-            If number < 0 Then number = 9
-         
-            sb(ctr) = number.ToString()(0)
-         End If
-      Next
-      Console.WriteLine("The new string:")
-      Console.WriteLine(sb.ToString())
-   End Sub
+Module Example4
+    Public Sub Main()
+        Dim rnd As New Random()
+        Dim sb As New StringBuilder()
+
+        ' Generate 10 random numbers and store them in a StringBuilder.
+        For ctr As Integer = 0 To 9
+            sb.Append(rnd.Next().ToString("N5"))
+        Next
+        Console.WriteLine("The original string:")
+        Console.WriteLine(sb.ToString())
+        Console.WriteLine()
+
+        ' Decrease each number by one.
+        For ctr As Integer = 0 To sb.Length - 1
+            If Char.GetUnicodeCategory(sb(ctr)) = UnicodeCategory.DecimalDigitNumber Then
+                Dim number As Integer = CType(Char.GetNumericValue(sb(ctr)), Integer)
+                number -= 1
+                If number < 0 Then number = 9
+
+                sb(ctr) = number.ToString()(0)
+            End If
+        Next
+        Console.WriteLine("The new string:")
+        Console.WriteLine(sb.ToString())
+    End Sub
 End Module
 ' The example displays the following output:
 '    The original string:

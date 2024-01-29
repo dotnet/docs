@@ -8,24 +8,24 @@ Imports System.Threading
 
 <Assembly:NeutralResourcesLanguage("en")>
 
-Module Example
-   Public Sub Main()
-      Dim cultureNames() As String = { "en-US", "fr-FR", "ru-RU", "sv-SE" }
-      Dim rm As New ResourceManager("DateStrings",
-                                    GetType(Example).Assembly)
-      
-      For Each cultureName In cultureNames
-         Dim culture As CultureInfo = CultureInfo.CreateSpecificCulture(cultureName)
-         Thread.CurrentThread.CurrentCulture = culture 
-         Thread.CurrentThread.CurrentUICulture = culture
+Module Example5
+    Public Sub Main()
+        Dim cultureNames() As String = {"en-US", "fr-FR", "ru-RU", "sv-SE"}
+        Dim rm As New ResourceManager("DateStrings",
+                                    GetType(Example5).Assembly)
 
-         Console.WriteLine("Current UI Culture: {0}", 
+        For Each cultureName In cultureNames
+            Dim culture As CultureInfo = CultureInfo.CreateSpecificCulture(cultureName)
+            Thread.CurrentThread.CurrentCulture = culture
+            Thread.CurrentThread.CurrentUICulture = culture
+
+            Console.WriteLine("Current UI Culture: {0}",
                            CultureInfo.CurrentUICulture.Name)
-         Dim dateString As String = rm.GetString("DateStart")
-         Console.WriteLine("{0} {1:M}.", dateString, Date.Now)                           
-         Console.WriteLine()
-      Next                                           
-   End Sub
+            Dim dateString As String = rm.GetString("DateStart")
+            Console.WriteLine("{0} {1:M}.", dateString, Date.Now)
+            Console.WriteLine()
+        Next
+    End Sub
 End Module
 ' The example displays output similar to the following:
 '       Current UI Culture: en-US

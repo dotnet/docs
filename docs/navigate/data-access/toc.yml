@@ -356,10 +356,6 @@ items:
             href: ../../standard/linq/reference.md
       - name: Supplemental API remarks
         items:
-        - name: System.Data.Linq.DataLoadOptions class
-          href: ../../fundamentals/runtime-libraries/system-data-linq-dataloadoptions.md
-        - name: System.Data.Linq.Mapping.TableAttribute class
-          href: ../../fundamentals/runtime-libraries/system-data-linq-mapping-tableattribute.md
         - name: System.Xml.Linq.XName class
           href: ../../fundamentals/runtime-libraries/system-xml-linq-xname.md
         - name: System.Xml.Linq.XNamespace class
@@ -629,9 +625,21 @@ items:
         - name: System.Xml.XmlDocument class
           href: ../../fundamentals/runtime-libraries/system-xml-xmldocument.md
         - name: System.Xml.XmlReader class
-          href: ../../fundamentals/runtime-libraries/system-xml-xmlreader.md
+          items:
+          - name: Type remarks
+            href: ../../fundamentals/runtime-libraries/system-xml-xmlreader.md
+            displayName: xmlreader
+          - name: Create method
+            href: ../../fundamentals/runtime-libraries/system-xml-xmlreader-create.md
         - name: System.Xml.XmlReaderSettings class
-          href: ../../fundamentals/runtime-libraries/system-xml-xmlreadersettings.md
+          items:
+          - name: Type remarks
+            href: ../../fundamentals/runtime-libraries/system-xml-xmlreadersettings.md
+            displayName: xmlreadersettings
+          - name: DtdProcessing property
+            href: ../../fundamentals/runtime-libraries/system-xml-xmlreadersettings-dtdprocessing.md
+          - name: Schemas property
+            href: ../../fundamentals/runtime-libraries/system-xml-xmlreadersettings-schemas.md
         - name: System.Xml.XmlResolver class
           href: ../../fundamentals/runtime-libraries/system-xml-xmlresolver.md
         - name: System.Xml.XmlSecureResolver class
@@ -701,13 +709,15 @@ items:
             href: ../../standard/data/sqlite/compare.md
           - name: Xamarin
             href: ../../standard/data/sqlite/xamarin.md
-  - name: Supplemental API remarks
+  - name: Supplemental API remarks for System.Data types
     items:
-    - name: System.Data.CommandBehavior enum
+    - name: CommandBehavior enum
       href: ../../fundamentals/runtime-libraries/system-data-commandbehavior.md
-    - name: System.Data.DataSet class
+    - name: DataColumn.Expression property
+      href: ../../fundamentals/runtime-libraries/system-data-datacolumn-expression.md
+    - name: DataSet class
       href: ../../fundamentals/runtime-libraries/system-data-dataset.md
-    - name: System.Data.DataTable class
+    - name: DataTable class
       href: ../../fundamentals/runtime-libraries/system-data-datatable.md
   - name: Entity Framework
     href: /ef/core/?toc=/dotnet/navigate/data-access/toc.json&bc=/dotnet/breadcrumb/toc.json

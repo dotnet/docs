@@ -2,13 +2,13 @@
 Option Strict On
 
 ' <Snippet17>
-Module Example
-   Public Sub Main()
-      Dim rnd As New Random()
-      For ctr As Integer = 1 To 10
-         Console.WriteLine(rnd.NextDouble() - 1)
-      Next
-   End Sub
+Module Example6
+    Public Sub Main()
+        Dim rnd As New Random()
+        For ctr As Integer = 1 To 10
+            Console.WriteLine(rnd.NextDouble() - 1)
+        Next
+    End Sub
 End Module
 ' The example displays output like the following:
 '       -0.930412760437658

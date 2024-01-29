@@ -2,14 +2,12 @@
 Imports System.Collections
 Imports System.Collections.Specialized
 Imports System.Diagnostics
+Imports System.Runtime.Versioning
 
- _
-
-
-Public Class App
+<SupportedOSPlatform("Windows")>
+Public Class App6
     Private Shared PC As PerformanceCounter
     Private Shared BPC As PerformanceCounter
-
 
     Public Shared Sub Main()
         Dim samplesList As New ArrayList()
@@ -17,7 +15,7 @@ Public Class App
         'If the category does not exist, create the category and exit.
         'Performance counters should not be created and immediately used.
         'There is a latency time to enable the counters, they should be created
-        'prior to executing the application that uses the counters.
+        'prior to executing the App6lication that uses the counters.
         'Execute this sample a second time to use the counters.
         If Not (SetupCategory()) Then
             CreateCounters()
@@ -26,7 +24,6 @@ Public Class App
         End If
 
     End Sub
-
 
     Private Shared Function SetupCategory() As Boolean
 
@@ -49,8 +46,8 @@ Public Class App
             CCDC.Add(rfBase)
 
             ' Create the category.
-            PerformanceCounterCategory.Create("RawFractionSampleCategory", _
-            "Demonstrates usage of the RawFraction performance counter type.", _
+            PerformanceCounterCategory.Create("RawFractionSampleCategory",
+            "Demonstrates usage of the RawFraction performance counter type.",
                 PerformanceCounterCategoryType.SingleInstance, CCDC)
 
             Return True

@@ -2,28 +2,28 @@
 Option Strict On
 
 ' <Snippet8>
-Module Example
-   Public Sub Main()
-      ' Instantiate the Boolean generator.
-      Dim boolGen As New BooleanGenerator()
-      Dim totalTrue, totalFalse As Integer 
-      
-      ' Generate 1,0000 random Booleans, and keep a running total.
-      For ctr As Integer = 0 To 9999999
-          Dim value As Boolean = boolGen.NextBoolean()
-          If value Then
-             totalTrue += 1
-          Else
-             totalFalse += 1
-          End If
-      Next
-      Console.WriteLine("Number of true values:  {0,7:N0} ({1:P3})", 
-                        totalTrue, 
-                        totalTrue/(totalTrue + totalFalse))
-      Console.WriteLine("Number of false values: {0,7:N0} ({1:P3})", 
-                        totalFalse, 
-                        totalFalse/(totalTrue + totalFalse))
-   End Sub                     
+Module Example2
+    Public Sub Main()
+        ' Instantiate the Boolean generator.
+        Dim boolGen As New BooleanGenerator()
+        Dim totalTrue, totalFalse As Integer
+
+        ' Generate 1,0000 random Booleans, and keep a running total.
+        For ctr As Integer = 0 To 9999999
+            Dim value As Boolean = boolGen.NextBoolean()
+            If value Then
+                totalTrue += 1
+            Else
+                totalFalse += 1
+            End If
+        Next
+        Console.WriteLine("Number of true values:  {0,7:N0} ({1:P3})",
+                        totalTrue,
+                        totalTrue / (totalTrue + totalFalse))
+        Console.WriteLine("Number of false values: {0,7:N0} ({1:P3})",
+                        totalFalse,
+                        totalFalse / (totalTrue + totalFalse))
+    End Sub
 End Module
 
 Public Class BooleanGenerator

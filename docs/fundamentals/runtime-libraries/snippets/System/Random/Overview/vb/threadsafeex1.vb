@@ -4,81 +4,81 @@ Option Strict On
 ' <Snippet3>
 Imports System.Threading
 
-Module Example
-   <ThreadStatic> Dim previous As Double = 0.0
-   <ThreadStatic> Dim perThreadCtr As Integer = 0
-   <ThreadStatic> Dim perThreadTotal As Double = 0.0  
-   Dim source As New CancellationTokenSource()
-   Dim countdown As New CountdownEvent(1) 
-   Dim randLock As New Object()
-   Dim numericLock As New Object()
-   Dim rand As New Random()
-   Dim totalValue As Double = 0.0
-   Dim totalCount As Integer = 0
-   
-   Public Sub Main()
-      Thread.CurrentThread.Name = "Main"
+Module Example15
+    <ThreadStatic> Dim previous As Double = 0.0
+    <ThreadStatic> Dim perThreadCtr As Integer = 0
+    <ThreadStatic> Dim perThreadTotal As Double = 0.0
+    Dim source As New CancellationTokenSource()
+    Dim countdown As New CountdownEvent(1)
+    Dim randLock As New Object()
+    Dim numericLock As New Object()
+    Dim rand As New Random()
+    Dim totalValue As Double = 0.0
+    Dim totalCount As Integer = 0
 
-      Dim token As CancellationToken = source.Token 
-      For threads As Integer = 1 To 10
-         Dim newThread As New Thread(AddressOf GetRandomNumbers)
-         newThread.Name = threads.ToString()
-         newThread.Start(token)
-      Next
-      GetRandomNumbers(token)
-      
-      countdown.Signal()
-      ' Make sure all threads have finished.
-      countdown.Wait()
+    Public Sub Main()
+        Thread.CurrentThread.Name = "Main"
 
-      Console.WriteLine()
-      Console.WriteLine("Total random numbers generated: {0:N0}", totalCount)
-      Console.WriteLine("Total sum of all random numbers: {0:N2}", totalValue)
-      Console.WriteLine("Random number mean: {0:N4}", totalValue/totalCount)
-   End Sub
+        Dim token As CancellationToken = source.Token
+        For threads As Integer = 1 To 10
+            Dim newThread As New Thread(AddressOf GetRandomNumbers)
+            newThread.Name = threads.ToString()
+            newThread.Start(token)
+        Next
+        GetRandomNumbers(token)
 
-   Private Sub GetRandomNumbers(o As Object)
-      Dim token As CancellationToken = CType(o, CancellationToken)
-      Dim result As Double = 0.0
-      countdown.AddCount(1)
-         
-      Try  
-         For ctr As Integer = 1 To 2000000
-            ' Make sure there's no corruption of Random.
-            token.ThrowIfCancellationRequested()
+        countdown.Signal()
+        ' Make sure all threads have finished.
+        countdown.Wait()
 
-            SyncLock randLock
-               result = rand.NextDouble()
-            End SyncLock
-            ' Check for corruption of Random instance.
-            If result = previous AndAlso result = 0 Then 
-               source.Cancel()
-            Else 
-               previous = result
-            End If
-            perThreadCtr += 1
-            perThreadTotal += result
-         Next      
-       
-         Console.WriteLine("Thread {0} finished execution.", 
+        Console.WriteLine()
+        Console.WriteLine("Total random numbers generated: {0:N0}", totalCount)
+        Console.WriteLine("Total sum of all random numbers: {0:N2}", totalValue)
+        Console.WriteLine("Random number mean: {0:N4}", totalValue / totalCount)
+    End Sub
+
+    Private Sub GetRandomNumbers(o As Object)
+        Dim token As CancellationToken = CType(o, CancellationToken)
+        Dim result As Double = 0.0
+        countdown.AddCount(1)
+
+        Try
+            For ctr As Integer = 1 To 2000000
+                ' Make sure there's no corruption of Random.
+                token.ThrowIfCancellationRequested()
+
+                SyncLock randLock
+                    result = rand.NextDouble()
+                End SyncLock
+                ' Check for corruption of Random instance.
+                If result = previous AndAlso result = 0 Then
+                    source.Cancel()
+                Else
+                    previous = result
+                End If
+                perThreadCtr += 1
+                perThreadTotal += result
+            Next
+
+            Console.WriteLine("Thread {0} finished execution.",
                            Thread.CurrentThread.Name)
-         Console.WriteLine("Random numbers generated: {0:N0}", perThreadCtr)
-         Console.WriteLine("Sum of random numbers: {0:N2}", perThreadTotal)
-         Console.WriteLine("Random number mean: {0:N4}", perThreadTotal/perThreadCtr)
-         Console.WriteLine()
-         
-         ' Update overall totals.
-         SyncLock numericLock
-            totalCount += perThreadCtr
-            totalValue += perThreadTotal  
-         End SyncLock
-      Catch e As OperationCanceledException
-         Console.WriteLine("Corruption in Thread {1}", e.GetType().Name, Thread.CurrentThread.Name)
-      Finally 
-         countdown.Signal()
-         source.Dispose()
-      End Try
-   End Sub
+            Console.WriteLine("Random numbers generated: {0:N0}", perThreadCtr)
+            Console.WriteLine("Sum of random numbers: {0:N2}", perThreadTotal)
+            Console.WriteLine("Random number mean: {0:N4}", perThreadTotal / perThreadCtr)
+            Console.WriteLine()
+
+            ' Update overall totals.
+            SyncLock numericLock
+                totalCount += perThreadCtr
+                totalValue += perThreadTotal
+            End SyncLock
+        Catch e As OperationCanceledException
+            Console.WriteLine("Corruption in Thread {1}", e.GetType().Name, Thread.CurrentThread.Name)
+        Finally
+            countdown.Signal()
+            source.Dispose()
+        End Try
+    End Sub
 End Module
 ' The example displays output like the following:
 '       Thread 6 finished execution.

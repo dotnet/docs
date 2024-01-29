@@ -15,7 +15,7 @@ A bitwise combination of these values may be used.
 
 ## Notes on individual enumeration members
 
-When using `KeyInfo`, the .NET Framework Data Provider for SQL Server precedes the statement being executed with `SET FMTONLY OFF` and `SET NO_BROWSETABLE ON`. Users should be aware of potential side effects, such as interference with the use of `SET FMTONLY ON` statements. For more information, see [SET FMTONLY (Transact-SQL)](/sql/t-sql/statements/set-fmtonly-transact-sql).
+When using `KeyInfo`, .NET Framework Data Provider for SQL Server precedes the statement being executed with `SET FMTONLY OFF` and `SET NO_BROWSETABLE ON`. Users should be aware of potential side effects, such as interference with the use of `SET FMTONLY ON` statements. For more information, see [SET FMTONLY (Transact-SQL)](/sql/t-sql/statements/set-fmtonly-transact-sql).
 
 > [!NOTE]
 > Use `SequentialAccess` to retrieve large values and binary data. Otherwise, an <xref:System.OutOfMemoryException> might occur and the connection will be closed.

@@ -2,16 +2,16 @@
 Option Strict On
 
 ' <Snippet3>
-Module Example
-   Public Sub Main()
-      Dim surrogate As String = ChrW(&hD800) + ChrW(&hDC03)
-      For ctr As Integer = 0 To surrogate.Length - 1
-         Console.Write("U+{0:X2} ", Convert.ToUInt16(surrogate(ctr)))
-      Next   
-      Console.WriteLine()
-      Console.WriteLine("   Is Surrogate Pair: {0}", 
+Module Example20
+    Public Sub Main()
+        Dim surrogate As String = ChrW(&HD800) + ChrW(&HDC03)
+        For ctr As Integer = 0 To surrogate.Length - 1
+            Console.Write("U+{0:X2} ", Convert.ToUInt16(surrogate(ctr)))
+        Next
+        Console.WriteLine()
+        Console.WriteLine("   Is Surrogate Pair: {0}",
                         Char.IsSurrogatePair(surrogate(0), surrogate(1)))
-   End Sub
+    End Sub
 End Module
 
 ' The example displays the following output:

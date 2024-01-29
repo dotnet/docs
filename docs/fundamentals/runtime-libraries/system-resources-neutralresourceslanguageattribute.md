@@ -16,7 +16,9 @@ In desktop apps, the <xref:System.Resources.NeutralResourcesLanguageAttribute> a
 [assembly: NeutralResourcesLanguage("en-US")]
 ```
 
-:::code language="vb" source="./snippets/System.Resources/NeutralResourcesLanguageAttribute/Overview/vb/example1.vb" id="Snippet1":::
+```vb
+<Assembly:NeutralResourcesLanguage("en-US")>
+```
 
 You can also use the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to indicate where <xref:System.Resources.ResourceManager> can find the resources of the default culture by providing an <xref:System.Resources.UltimateResourceFallbackLocation> enumeration value in the attribute statement. This is most commonly done to indicate that the resources reside in a satellite assembly. For example, the following statement specifies that English (United States) is the app's default or neutral culture and that its resources reside in a satellite assembly. The <xref:System.Resources.ResourceManager> object will look for them in a subdirectory named en-US.
 
@@ -24,7 +26,9 @@ You can also use the <xref:System.Resources.NeutralResourcesLanguageAttribute> a
 [assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
 ```
 
-:::code language="vb" source="./snippets/System.Resources/NeutralResourcesLanguageAttribute/Overview/vb/example2.vb" id="Snippet2":::
+```vb
+<Assembly:NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)>
+```
 
 > [!TIP]
 > We recommend that you always use the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to define the default culture of your app.

@@ -44,13 +44,13 @@ The two most commonly called constructors are:
 
 - <xref:System.Resources.ResourceManager.%23ctor%28System.String%2CSystem.Reflection.Assembly%29> looks up resources based on two pieces of information that you supply: the base name of the .resources file, and the assembly in which the default .resources file resides. The base name includes the namespace and root name of the .resources file, without its culture or extension. Note that .resources files that are compiled from the command line typically do not include a namespace name, whereas .resources files that are created in the Visual Studio environment do. For example, if a resource file is named MyCompany.StringResources.resources and the <xref:System.Resources.ResourceManager> constructor is called from a static method named `Example.Main`, the following code instantiates a <xref:System.Resources.ResourceManager> object that can retrieve resources from the .resources file:
 
-     :::code language="csharp" source="./snippets/System.Resources/ResourceManager/Overview/csharp/ctor1.cs" id="Snippet1":::
-     :::code language="vb" source="./snippets/System.Resources/ResourceManager/Overview/vb/ctor1.vb" id="Snippet1":::
+  :::code language="csharp" source="./snippets/System.Resources/ResourceManager/Overview/csharp/ctor1.cs" id="Snippet1":::
+  :::code language="vb" source="./snippets/System.Resources/ResourceManager/Overview/vb/ctor1.vb" id="Snippet1":::
 
 - <xref:System.Resources.ResourceManager.%23ctor%28System.Type%29> looks up resources in satellite assemblies based on information from a type object. The type's fully qualified name corresponds to the base name of the .resources file without its file name extension. In desktop apps that are created by using the Visual Studio Resource Designer, Visual Studio creates a wrapper class whose fully qualified name is the same as the root name of the .resources file. For example, if a resource file is named MyCompany.StringResources.resources and there is a wrapper class named `MyCompany.StringResources`, the following code instantiates a <xref:System.Resources.ResourceManager> object that can retrieve resources from the .resources file:
 
-     :::code language="csharp" source="./snippets/System.Resources/ResourceManager/Overview/csharp/ctor1.cs" id="Snippet2":::
-     :::code language="vb" source="./snippets/System.Resources/ResourceManager/Overview/vb/ctor1.vb" id="Snippet2":::
+  :::code language="csharp" source="./snippets/System.Resources/ResourceManager/Overview/csharp/ctor1.cs" id="Snippet2":::
+  :::code language="vb" source="./snippets/System.Resources/ResourceManager/Overview/vb/ctor1.vb" id="Snippet2":::
 
 If the appropriate resources cannot be found, the constructor call creates a valid <xref:System.Resources.ResourceManager> object. However, the attempt to retrieve a resource throws a <xref:System.Resources.MissingManifestResourceException> exception. For information about dealing with the exception, see the [Handle MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions](#handle-missingmanifestresourceexception-and-missingsatelliteassemblyexception-exceptions) section later in this article.
 
@@ -85,9 +85,9 @@ You can set the <xref:System.Globalization.CultureInfo.CurrentUICulture> propert
 
 - If you explicitly set the <xref:System.Threading.Thread.CurrentUICulture?displayProperty=nameWithType> property to a specific culture, the resource manager always retrieves the resources for that culture, regardless of the user's browser or operating system language. Consider an app that is compiled with default English language resources and three satellite assemblies that contain resources for English (United States), French (France), and Russian (Russia). If the <xref:System.Globalization.CultureInfo.CurrentUICulture> property is set to fr-FR, the <xref:System.Resources.ResourceManager> object always retrieves the French (France) resources, even if the user's operating system language is not French. Make sure that this is the desired behavior before you set the property explicitly.
 
-     In ASP.NET apps, you must set the <xref:System.Threading.Thread.CurrentUICulture?displayProperty=nameWithType> property explicitly, because it is unlikely that the setting on the server will match incoming client requests. An ASP.NET app can set the <xref:System.Threading.Thread.CurrentUICulture?displayProperty=nameWithType> property explicitly to the user's browser accept language.
+  In ASP.NET apps, you must set the <xref:System.Threading.Thread.CurrentUICulture?displayProperty=nameWithType> property explicitly, because it is unlikely that the setting on the server will match incoming client requests. An ASP.NET app can set the <xref:System.Threading.Thread.CurrentUICulture?displayProperty=nameWithType> property explicitly to the user's browser accept language.
 
-     Explicitly setting the <xref:System.Threading.Thread.CurrentUICulture?displayProperty=nameWithType> property defines the current UI culture for that thread. It does not affect the current UI culture of any other threads in an app.
+  Explicitly setting the <xref:System.Threading.Thread.CurrentUICulture?displayProperty=nameWithType> property defines the current UI culture for that thread. It does not affect the current UI culture of any other threads in an app.
 
 - You can set the UI culture of all threads in an app domain by assigning a <xref:System.Globalization.CultureInfo> object that represents that culture to the static <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture?displayProperty=nameWithType> property.
 
@@ -185,8 +185,8 @@ The exception is typically thrown under the following conditions:
 
 - The `baseName` parameter in the <xref:System.Resources.ResourceManager.%23ctor%28System.String%2CSystem.Reflection.Assembly%29> constructor does not specify the name of a .resources file. The name should include the resource file's fully qualified namespace but not its file name extension. Typically, resource files that are created in Visual Studio include namespace names, but resource files that are created and compiled at the command prompt do not. You can determine the names of embedded .resources files by compiling and running the following utility. This is a console app that accepts the name of a main assembly or satellite assembly as a command-line parameter. It displays the strings that should be provided as the `baseName` parameter so that the resource manager can correctly identify the resource.
 
-     :::code language="csharp" source="./snippets/System.Resources/MissingManifestResourceException/Overview/csharp/resourcenames.cs" id="Snippet4":::
-     :::code language="vb" source="./snippets/System.Resources/MissingManifestResourceException/Overview/vb/resourcenames.vb" id="Snippet4":::
+  :::code language="csharp" source="./snippets/System.Resources/MissingManifestResourceException/Overview/csharp/resourcenames.cs" id="Snippet4":::
+  :::code language="vb" source="./snippets/System.Resources/MissingManifestResourceException/Overview/vb/resourcenames.vb" id="Snippet4":::
 
 If you are changing the current culture of your application explicitly, you should also remember that the resource manager retrieves a resource set based on the value of the <xref:System.Globalization.CultureInfo.CurrentUICulture?displayProperty=nameWithType> property, and not the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> property. Typically, if you change one value, you should also change the other.
 
@@ -225,13 +225,13 @@ Edit this configuration information as follows:
 
 - Specify one or more `<assembly>` nodes for each main assembly that you deploy, where each node specifies a fully qualified assembly name. Specify the name of your main assembly in place of *MainAssemblyName*, and specify the `Version`, `PublicKeyToken`, and `Culture` attribute values that correspond to your main assembly.
 
-     For the `Version` attribute, specify the version number of your assembly. For example, the first release of your assembly might be version number 1.0.0.0.
+  For the `Version` attribute, specify the version number of your assembly. For example, the first release of your assembly might be version number 1.0.0.0.
 
-     For the `PublicKeyToken` attribute, specify the keyword `null` if you have not signed your assembly with a strong name, or specify your public key token if you have signed your assembly.
+  For the `PublicKeyToken` attribute, specify the keyword `null` if you have not signed your assembly with a strong name, or specify your public key token if you have signed your assembly.
 
-     For the `Culture` attribute, specify the keyword `neutral` to designate the main assembly and cause the <xref:System.Resources.ResourceManager> class to probe only for the cultures listed in the `<culture>` nodes.
+  For the `Culture` attribute, specify the keyword `neutral` to designate the main assembly and cause the <xref:System.Resources.ResourceManager> class to probe only for the cultures listed in the `<culture>` nodes.
 
-     For more information about fully qualified assembly names, see the article [Assembly Names](../../standard/assembly/names.md). For more information about strong-named assemblies, see the article [Create and use strong-named assemblies](../../standard/assembly/create-use-strong-named.md).
+  For more information about fully qualified assembly names, see the article [Assembly Names](../../standard/assembly/names.md). For more information about strong-named assemblies, see the article [Create and use strong-named assemblies](../../standard/assembly/create-use-strong-named.md).
 
 - Specify one or more `<culture>` nodes with a specific culture name, such as "fr-FR", or a neutral culture name, such as "fr".
 
@@ -256,53 +256,53 @@ To run this example:
 
 1. In the app directory, create a file named rmc.txt that contains the following resource strings:
 
-    ```
-    day=Friday
-    year=2006
-    holiday="Cinco de Mayo"
-    ```
+   ```
+   day=Friday
+   year=2006
+   holiday="Cinco de Mayo"
+   ```
 
 2. Use the [Resource File Generator](../../framework/tools/resgen-exe-resource-file-generator.md) to generate the rmc.resources resource file from the rmc.txt input file as follows:
 
-    ```
-    resgen rmc.txt
-    ```
+   ```
+   resgen rmc.txt
+   ```
 
 3. Create a subdirectory of the app directory and name it "es-MX". This is the culture name of the satellite assembly that you will create in the next three steps.
 
 4. Create a file named rmc.es-MX.txt in the es-MX directory that contains the following resource strings:
 
-    ```
-    day=Viernes
-    year=2006
-    holiday="Cinco de Mayo"
-    ```
+   ```
+   day=Viernes
+   year=2006
+   holiday="Cinco de Mayo"
+   ```
 
 5. Use the [Resource File Generator](../../framework/tools/resgen-exe-resource-file-generator.md) to generate the rmc.es-MX.resources resource file from the rmc.es-MX.txt input file as follows:
 
-    ```
-    resgen rmc.es-MX.txt
-    ```
+   ```
+   resgen rmc.es-MX.txt
+   ```
 
 6. Assume that the filename for this example is rmc.vb or rmc.cs. Copy the following source code into a file. Then compile it and embed the main assembly resource file, rmc.resources, in the executable assembly. If you are using the Visual Basic compiler, the syntax is:
 
-    ```
-    vbc rmc.vb /resource:rmc.resources
-    ```
+   ```
+   vbc rmc.vb /resource:rmc.resources
+   ```
 
-     The corresponding syntax for the C# compiler is:
+   The corresponding syntax for the C# compiler is:
 
-    ```
-    csc /resource:rmc.resources rmc.cs
-    ```
+   ```
+   csc /resource:rmc.resources rmc.cs
+   ```
 
 7. Use the [Assembly Linker](../../framework/tools/al-exe-assembly-linker.md) to create a satellite assembly. If the base name of the app is rmc, the satellite assembly name must be rmc.resources.dll. The satellite assembly should be created in the es-MX directory. If es-MX is the current directory, use this command:
 
-    ```
-    al /embed:rmc.es-MX.resources /c:es-MX /out:rmc.resources.dll
-    ```
+   ```
+   al /embed:rmc.es-MX.resources /c:es-MX /out:rmc.resources.dll
+   ```
 
 8. Run rmc.exe to obtain and display the embedded resource strings.
 
-:::code language="csharp" source="./snippets/System.Resources/ResourceManager/Overview/csharp/rmc.cs" id="Snippet1":::
-:::code language="vb" source="./snippets/System.Resources/ResourceManager/Overview/vb/rmc.vb" id="Snippet1":::
+   :::code language="csharp" source="./snippets/System.Resources/ResourceManager/Overview/csharp/rmc.cs" id="Snippet1":::
+   :::code language="vb" source="./snippets/System.Resources/ResourceManager/Overview/vb/rmc.vb" id="Snippet1":::

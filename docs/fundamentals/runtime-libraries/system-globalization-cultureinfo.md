@@ -12,7 +12,7 @@ The <xref:System.Globalization.CultureInfo> class provides culture-specific info
 
 ## Culture names and identifiers
 
-The <xref:System.Globalization.CultureInfo> class specifies a unique name for each culture, based on RFC 4646. The name is a combination of an ISO 639 two-letter or three-letter lowercase culture code associated with a language and an ISO 3166 two-letter uppercase subculture code associated with a country or region. In addition, for apps that target .NET Framework 4 or later and are running under Windows 10 or later, culture names that correspond to valid BCP-47 language tags are supported.
+The <xref:System.Globalization.CultureInfo> class specifies a unique name for each culture, based on RFC 4646. The name is a combination of an ISO 639 two-letter or three-letter lowercase culture code associated with a language and an ISO 3166 two-letter uppercase subculture code associated with a country or region. In addition, for apps that are running under Windows 10 or later, culture names that correspond to valid BCP-47 language tags are supported.
 
 > [!NOTE]
 > When a culture name is passed to a class constructor or a method such as <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A> or <xref:System.Globalization.CultureInfo>, its case is not significant.
@@ -69,7 +69,6 @@ On Windows, you can create custom locales. For more information, see [Custom loc
 - In all versions of .NET (Core) running on Unix platforms or Windows 10 and later versions, cultural data is provided by the [International Components for Unicode (ICU) Library](https://icu.unicode.org/). The specific version of the ICU Library depends on the individual operating system.
 - In all versions of .NET (Core) running on Windows 9 and earlier versions, cultural data is provided by the Windows operating system.
 - In .NET Framework 4 and later versions, cultural data is provided by the Windows operating system.
-- In .NET Framework 3.5 and earlier versions, cultural data is provided by both the Windows operating system and .NET Framework.
 
 Because of this, a culture available on a particular .NET implementation, platform, or version may not be available on a different .NET implementation, platform, or version.
 
@@ -122,7 +121,7 @@ To change the culture and UI culture of a thread, do the following:
 
 1. Instantiate a <xref:System.Globalization.CultureInfo> object that represents that culture by calling a <xref:System.Globalization.CultureInfo> class constructor and passing it the name of the culture. The <xref:System.Globalization.CultureInfo.%23ctor%28System.String%29> constructor instantiates a  <xref:System.Globalization.CultureInfo> object that reflects user overrides if the new culture is the same as the current Windows culture.   The <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29> constructor allows you to specify whether the newly instantiated <xref:System.Globalization.CultureInfo> object reflects user overrides if the new culture is the same as the current Windows culture.
 
-2. Assign the <xref:System.Globalization.CultureInfo> object to the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> or <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> property on .NET Core and .NET Framework 4.6 and later versions. (On .NET Framework 4.5.2 and earlier versions, you can assign the `CultureInfo` object to the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> or <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=nameWithType> property.)
+2. Assign the <xref:System.Globalization.CultureInfo> object to the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> or <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> property on .NET Core and .NET Framework 4.6 and later versions.
 
 The following example retrieves the current culture. If it is anything other than the French (France) culture, it changes the current culture to French (France). Otherwise, it changes the current culture to French (Luxembourg).
 
@@ -178,10 +177,6 @@ The following example provides a simple illustration. The example defines a <xre
 As the output from the example shows, when the current culture is changed to French (France), the current culture of the thread from which tasks are invoked asynchronously becomes the current culture for that asynchronous operation.
 
 :::code language="csharp" source="./snippets/System.Globalization/CultureInfo/csharp/asyncculture1.cs" id="Snippet1":::
-
-For apps that target versions of .NET Framework from .NET Framework 4.5 and later but prior to .NET Framework 4.6, you can use the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture%2A> and <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A> properties to ensure that the culture of the calling thread is used in asynchronous tasks that execute on thread pool threads. The following example is identical to the previous example, except that it uses the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture%2A> property to ensure that thread pool threads have the same culture as the main app thread.
-
-:::code language="csharp" source="./snippets/System.Globalization/CultureInfo/csharp/asyncculture3.cs" id="Snippet3":::
 
 <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture%2A> and <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A> are per-app domain properties; that is, they establish a default culture for all threads not explicitly assigned a culture in a specific application domain. However, for apps that target .NET Framework 4.6 or later, the culture of the calling thread remains part of an asynchronous task's context even if the task crosses app domain boundaries.
 

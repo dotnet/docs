@@ -13,8 +13,8 @@ Module modMain
       Console.WriteLine()
       GetSpecificAssemblyVersion()
       Console.WriteLine()
-      Example1.GetExecutingAssemblyVersion()
-      Console.WriteLine()
+        Example2.GetExecutingAssemblyVersion()
+        Console.WriteLine()
       GetApplicationVersion()
    End Sub
    
@@ -53,12 +53,12 @@ Module modMain
    End Sub
 End Module
 
-Public Module Example1
-   Public Sub GetExecutingAssemblyVersion()
-      ' Get the version of the current assembly.
-      Dim assem As Assembly = Assembly.GetExecutingAssembly()
-      Dim assemName As AssemblyName = assem.GetName()
-      Dim ver As Version = assemName.Version
-      Console.WriteLine("{0}, Version {1}", assemName.Name, ver.ToString())
-   End Sub
+Public Module Example2
+    Public Sub GetExecutingAssemblyVersion()
+        ' Get the version of the current assembly.
+        Dim assem As Assembly = Assembly.GetExecutingAssembly()
+        Dim assemName As AssemblyName = assem.GetName()
+        Dim ver As Version = assemName.Version
+        Console.WriteLine("{0}, Version {1}", assemName.Name, ver.ToString())
+    End Sub
 End Module

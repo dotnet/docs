@@ -8,7 +8,7 @@ ms.date: 1/16/2024
 
 # Create Microsoft Entra credential types using configuration files
 
-The `Microsoft.Extensions.Azure` library supports creating different <xref:Azure.Core.TokenCredential?displayProperty=fullName> types from values defined in _appsettings.json_ and other configuration files. This article describes the support for different `TokenCredential` types and how to configure the required values for each type.
+The `Microsoft.Extensions.Azure` library supports creating different <xref:Azure.Core.TokenCredential?displayProperty=fullName> types from key-value pairs defined in _appsettings.json_ and other configuration files. The credential types correspond to a subset of the [credential classes](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet#credential-classes) in the Azure Identity client library. This article describes the support for different `TokenCredential` types and how to configure the required values for each type.
 
 ## Support for Azure credentials through configuration
 
@@ -54,7 +54,7 @@ The following credential types also support the `AdditionallyAllowedTenants` pro
 * [ClientSecretCredential](#create-a-clientsecretcredential-type)
 * [DefaultAzureCredential](#create-a-defaultazurecredential-type)
 
- Add the wildcard value "*" to allow the credential to acquire tokens for any Microsoft Entra tenant the logged in account can access. If no tenant IDs are specified, this option will have no effect on that authentication method, and the credential will acquire tokens for any requested tenant when using that method.
+Add the wildcard value "*" to allow the credential to acquire tokens for any Microsoft Entra tenant the logged in account can access. If no tenant IDs are specified, this option will have no effect on that authentication method, and the credential will acquire tokens for any requested tenant when using that method.
 
 ```json
 {

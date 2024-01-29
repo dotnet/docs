@@ -136,7 +136,7 @@ Add the following configuration values to your _appsettings.json_ file to create
 ```
 
 > [!NOTE]
-> The `clientCertificateStoreLocation` and `additionallyAllowedTenants` values are optional.
+> The `clientCertificateStoreLocation` and `additionallyAllowedTenants` values are optional. If no `clientCertificateStoreLocation` is specified, the default `CurrentUser` is used from the <xref:System.Fabric.X509Credentials.StoreLocation?displayProperty=nameWithType> enum.
 
 ### Create a `DefaultAzureCredential` type
 

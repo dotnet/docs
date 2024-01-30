@@ -2,14 +2,14 @@
 Option Strict On
 
 ' <Snippet16>
-Module Example
-   Public Sub Main()
-      Dim rnd As New Random()
-      For ctr As Integer = 1 To 50
-         Console.Write("{0,3}    ", rnd.Next(1000, 10000))
-         If ctr Mod 10 = 0 Then Console.WriteLine()
-      Next   
-   End Sub
+Module Example13
+    Public Sub Main()
+        Dim rnd As New Random()
+        For ctr As Integer = 1 To 50
+            Console.Write("{0,3}    ", rnd.Next(1000, 10000))
+            If ctr Mod 10 = 0 Then Console.WriteLine()
+        Next
+    End Sub
 End Module
 ' The example displays output like the following:
 '    9570    8979    5770    1606    3818    4735    8495    7196    7070    2313

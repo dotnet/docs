@@ -28,37 +28,37 @@ Public Class PersonWithID : Inherits Person
    End Property
 End Class
 
-Module Example
-   Public Sub Main()
-      Dim p As New Person()
-      p.Name = "John"
-      Try
-         Dim pid As PersonWithId = CType(p, PersonWithId)
-         Console.WriteLine("Conversion succeeded.")
-      Catch e As InvalidCastException
-         Console.WriteLine("Conversion failed.")
-      End Try 
-      
-      Dim pid1 As New PersonWithId()
-      pid1.Name = "John"
-      pid1.Id = "246"
-      Dim p1 As Person = pid1
-      
-      Try   
-         Dim pid1a As PersonWithId = CType(p1, PersonWithId)
-         Console.WriteLine("Conversion succeeded.")
-      Catch e As InvalidCastException
-         Console.WriteLine("Conversion failed.")
-      End Try 
-      
-      Dim p2 As Person = Nothing
-      Try   
-         Dim pid2 As PersonWithId = CType(p2, PersonWithId)
-         Console.WriteLine("Conversion succeeded.")
-      Catch e As InvalidCastException
-         Console.WriteLine("Conversion failed.")
-      End Try 
-   End Sub
+Module Example1
+    Public Sub Main()
+        Dim p As New Person()
+        p.Name = "John"
+        Try
+            Dim pid As PersonWithID = CType(p, PersonWithID)
+            Console.WriteLine("Conversion succeeded.")
+        Catch e As InvalidCastException
+            Console.WriteLine("Conversion failed.")
+        End Try
+
+        Dim pid1 As New PersonWithID()
+        pid1.Name = "John"
+        pid1.Id = "246"
+        Dim p1 As Person = pid1
+
+        Try
+            Dim pid1a As PersonWithID = CType(p1, PersonWithID)
+            Console.WriteLine("Conversion succeeded.")
+        Catch e As InvalidCastException
+            Console.WriteLine("Conversion failed.")
+        End Try
+
+        Dim p2 As Person = Nothing
+        Try
+            Dim pid2 As PersonWithID = CType(p2, PersonWithID)
+            Console.WriteLine("Conversion succeeded.")
+        Catch e As InvalidCastException
+            Console.WriteLine("Conversion failed.")
+        End Try
+    End Sub
 End Module
 ' The example displays the following output:
 '       Conversion failed.

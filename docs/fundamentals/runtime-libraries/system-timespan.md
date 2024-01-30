@@ -26,37 +26,37 @@ You can instantiate a <xref:System.TimeSpan> value in a number of ways:
 
 - By calling its implicit parameterless constructor. This creates an object whose value is <xref:System.TimeSpan.Zero?displayProperty=nameWithType>, as the following example shows.
 
-     :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/instantiate1.cs" interactive="try-dotnet-method" id="Snippet2":::
-     :::code language="fsharp" source="./snippets/System/TimeSpan/Overview/fsharp/instantiate1.fs" id="Snippet2":::
-     :::code language="vb" source="./snippets/System/TimeSpan/Overview/vb/instantiate1.vb" id="Snippet2":::
+  :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/instantiate1.cs" interactive="try-dotnet-method" id="Snippet2":::
+  :::code language="fsharp" source="./snippets/System/TimeSpan/Overview/fsharp/instantiate1.fs" id="Snippet2":::
+  :::code language="vb" source="./snippets/System/TimeSpan/Overview/vb/instantiate1.vb" id="Snippet2":::
 
 - By calling one of its explicit constructors. The following example initializes a <xref:System.TimeSpan> value to a specified number of hours, minutes, and seconds.
 
-     :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/instantiate1.cs" interactive="try-dotnet-method" id="Snippet3":::
-     :::code language="fsharp" source="./snippets/System/TimeSpan/Overview/fsharp/instantiate1.fs" id="Snippet3":::
-     :::code language="vb" source="./snippets/System/TimeSpan/Overview/vb/instantiate1.vb" id="Snippet3":::
+  :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/instantiate1.cs" interactive="try-dotnet-method" id="Snippet3":::
+  :::code language="fsharp" source="./snippets/System/TimeSpan/Overview/fsharp/instantiate1.fs" id="Snippet3":::
+  :::code language="vb" source="./snippets/System/TimeSpan/Overview/vb/instantiate1.vb" id="Snippet3":::
 
 - By calling a method or performing an operation that returns a <xref:System.TimeSpan> value. For example, you can instantiate a <xref:System.TimeSpan> value that represents the interval between two date and time values, as the following example shows.
 
-     :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/instantiate1.cs" interactive="try-dotnet-method" id="Snippet4":::
-     :::code language="fsharp" source="./snippets/System/TimeSpan/Overview/fsharp/instantiate1.fs" id="Snippet4":::
-     :::code language="vb" source="./snippets/System/TimeSpan/Overview/vb/instantiate1.vb" id="Snippet4":::
+  :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/instantiate1.cs" interactive="try-dotnet-method" id="Snippet4":::
+  :::code language="fsharp" source="./snippets/System/TimeSpan/Overview/fsharp/instantiate1.fs" id="Snippet4":::
+  :::code language="vb" source="./snippets/System/TimeSpan/Overview/vb/instantiate1.vb" id="Snippet4":::
 
-     You can also initialize a <xref:System.TimeSpan> object to a zero time value in this way, as the following example shows.
+  You can also initialize a <xref:System.TimeSpan> object to a zero time value in this way, as the following example shows.
 
-     :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/zero1.cs" interactive="try-dotnet-method" id="Snippet6":::
-     :::code language="fsharp" source="./snippets/System/TimeSpan/Overview/fsharp/zero1.fs" id="Snippet6":::
-     :::code language="vb" source="./snippets/System/TimeSpan/Overview/vb/zero1.vb" id="Snippet6":::
+  :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/zero1.cs" interactive="try-dotnet-method" id="Snippet6":::
+  :::code language="fsharp" source="./snippets/System/TimeSpan/Overview/fsharp/zero1.fs" id="Snippet6":::
+  :::code language="vb" source="./snippets/System/TimeSpan/Overview/vb/zero1.vb" id="Snippet6":::
 
      <xref:System.TimeSpan> values are returned by arithmetic operators and methods of the <xref:System.DateTime>, <xref:System.DateTimeOffset>, and <xref:System.TimeSpan> structures.
 
 - By parsing the string representation of a <xref:System.TimeSpan> value. You can use the <xref:System.TimeSpan.Parse%2A> and <xref:System.TimeSpan.TryParse%2A> methods to convert strings that contain time intervals to <xref:System.TimeSpan> values. The following example uses the <xref:System.TimeSpan.Parse%2A> method to convert an array of strings to <xref:System.TimeSpan> values.
 
-     :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/instantiate1.cs" interactive="try-dotnet-method" id="Snippet5":::
-     :::code language="fsharp" source="./snippets/System/TimeSpan/Overview/fsharp/instantiate1.fs" id="Snippet5":::
-     :::code language="vb" source="./snippets/System/TimeSpan/Overview/vb/instantiate1.vb" id="Snippet5":::
+  :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/instantiate1.cs" interactive="try-dotnet-method" id="Snippet5":::
+  :::code language="fsharp" source="./snippets/System/TimeSpan/Overview/fsharp/instantiate1.fs" id="Snippet5":::
+  :::code language="vb" source="./snippets/System/TimeSpan/Overview/vb/instantiate1.vb" id="Snippet5":::
 
-     In addition, you can define the precise format of the input string to be parsed and converted to a <xref:System.TimeSpan> value by calling the <xref:System.TimeSpan.ParseExact%2A> or <xref:System.TimeSpan.TryParseExact%2A> method.
+  In addition, you can define the precise format of the input string to be parsed and converted to a <xref:System.TimeSpan> value by calling the <xref:System.TimeSpan.ParseExact%2A> or <xref:System.TimeSpan.TryParseExact%2A> method.
 
 ## Perform operations on TimeSpan values
 
@@ -84,12 +84,12 @@ If you cannot modify the code, you can restore the legacy formatting of <xref:Sy
 
 - By setting the "NetFx40_TimeSpanLegacyFormatMode" compatibility switch when you create an application domain. This enables legacy <xref:System.TimeSpan> formatting on a per-application-domain basis. The following example creates an application domain that uses legacy <xref:System.TimeSpan> formatting.
 
-     :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/perappdomain1.cs" id="Snippet1":::
-     :::code language="fsharp" source="./snippets/System/TimeSpan/Overview/fsharp/perappdomain1.fs" id="Snippet1":::
-     :::code language="vb" source="./snippets/System/TimeSpan/Overview/vb/perappdomain1.vb" id="Snippet1":::
+  :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/perappdomain1.cs" id="Snippet1":::
+  :::code language="fsharp" source="./snippets/System/TimeSpan/Overview/fsharp/perappdomain1.fs" id="Snippet1":::
+  :::code language="vb" source="./snippets/System/TimeSpan/Overview/vb/perappdomain1.vb" id="Snippet1":::
 
-     When the following code executes in the new application domain, it reverts to legacy <xref:System.TimeSpan> formatting behavior.
+  When the following code executes in the new application domain, it reverts to legacy <xref:System.TimeSpan> formatting behavior.
 
-     :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/showtimespan.cs" id="Snippet2":::
-     :::code language="fsharp" source="./snippets/System/TimeSpan/Overview/fsharp/showtimespan.fs" id="Snippet2":::
-     :::code language="vb" source="./snippets/System/TimeSpan/Overview/vb/showtimespan.vb" id="Snippet2":::
+  :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/showtimespan.cs" id="Snippet2":::
+  :::code language="fsharp" source="./snippets/System/TimeSpan/Overview/fsharp/showtimespan.fs" id="Snippet2":::
+  :::code language="vb" source="./snippets/System/TimeSpan/Overview/vb/showtimespan.vb" id="Snippet2":::

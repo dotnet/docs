@@ -1,9 +1,9 @@
 ﻿' Visual Basic .NET Document
-Option Strict On
+Option Strict Off
 
 Imports System.Numerics
 
-Module Example
+Module Example1
    Public Sub Main()
       InstantiateByAssignment()
       Console.WriteLine("----")

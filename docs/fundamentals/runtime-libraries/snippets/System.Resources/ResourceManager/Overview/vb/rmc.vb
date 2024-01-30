@@ -4,15 +4,15 @@ Imports System.Reflection
 Imports System.Threading
 Imports System.Globalization
 
-Class Example
-    Public Shared Sub Main() 
+Class Example4
+    Public Shared Sub Main()
         Dim day As String
         Dim year As String
         Dim holiday As String
         Dim celebrate As String = "{0} will occur on {1} in {2}." & vbCrLf
 
         ' Create a resource manager. 
-        Dim rm As New ResourceManager("rmc", GetType(Example).Assembly)
+        Dim rm As New ResourceManager("rmc", GetType(Example4).Assembly)
 
         Console.WriteLine("Obtain resources using the current UI culture.")
 
@@ -50,7 +50,7 @@ Class Example
         ' Regardless of the alternative that you choose, display a message 
         ' using the retrieved resource strings.
         Console.WriteLine(celebrate, holiday, day, year)
-    End Sub 
+    End Sub
 End Class
 ' This example displays the following output:
 'Obtain resources using the current UI culture.

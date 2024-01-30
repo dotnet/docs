@@ -45,13 +45,13 @@ The regular expression engine must compile a particular pattern before the patte
 
 - When you instantiate new <xref:System.Text.RegularExpressions.Regex> objects with regular expressions that have previously been compiled. For example, the following code defines a regular expression to locate duplicated words in a text stream. Although the example uses a single regular expression, it instantiates a new <xref:System.Text.RegularExpressions.Regex> object to process each line of text. This results in the recompilation of the regular expression with each iteration of the loop.
 
-     :::code language="csharp" source="./snippets/System.Text.RegularExpressions/Regex/Overview/csharp/caching1.cs" id="Snippet1":::
-     :::code language="vb" source="./snippets/System.Text/RegularExpressions/Overview/vb/caching1.vb" id="Snippet1":::
+  :::code language="csharp" source="./snippets/System.Text.RegularExpressions/Regex/Overview/csharp/caching1.cs" id="Snippet1":::
+  :::code language="vb" source="./snippets/System.Text/RegularExpressions/Overview/vb/caching1.vb" id="Snippet1":::
 
-     To prevent recompilation, you should instantiate a single <xref:System.Text.RegularExpressions.Regex> object that is accessible to all code that requires it, as shown in the following rewritten example.
+  To prevent recompilation, you should instantiate a single <xref:System.Text.RegularExpressions.Regex> object that is accessible to all code that requires it, as shown in the following rewritten example.
 
-     :::code language="csharp" source="./snippets/System.Text.RegularExpressions/Regex/Overview/csharp/caching1.cs" id="Snippet2":::
-     :::code language="vb" source="./snippets/System.Text/RegularExpressions/Overview/vb/caching1.vb" id="Snippet2":::
+  :::code language="csharp" source="./snippets/System.Text.RegularExpressions/Regex/Overview/csharp/caching1.cs" id="Snippet2":::
+  :::code language="vb" source="./snippets/System.Text/RegularExpressions/Overview/vb/caching1.vb" id="Snippet2":::
 
 ## Perform regular expression operations
 

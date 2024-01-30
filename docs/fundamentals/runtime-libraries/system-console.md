@@ -52,7 +52,7 @@ In general, the console reads input and writes output by using the current conso
 :::code language="vb" source="./snippets/System/Console/Overview/vb/unicode1.vb" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/Console/Overview/fsharp/unicode1.fs" id="Snippet1":::
 
-In addition to supporting code pages, the <xref:System.Console> class supports UTF-8 encoding with the <xref:System.Text.UTF8Encoding> class. Beginning with the .NET Framework 4.5, the <xref:System.Console> class also supports UTF-16 encoding with the <xref:System.Text.UnicodeEncoding> class. To display Unicode characters to the console. you set the <xref:System.Console.OutputEncoding%2A> property to either <xref:System.Text.UTF8Encoding> or  <xref:System.Text.UnicodeEncoding>.
+In addition to supporting code pages, the <xref:System.Console> class supports UTF-8 encoding with the <xref:System.Text.UTF8Encoding> class. Beginning with .NET Framework 4.5, the <xref:System.Console> class also supports UTF-16 encoding with the <xref:System.Text.UnicodeEncoding> class. To display Unicode characters to the console. you set the <xref:System.Console.OutputEncoding%2A> property to either <xref:System.Text.UTF8Encoding> or  <xref:System.Text.UnicodeEncoding>.
 
 Support for Unicode characters requires the encoder to recognize a particular Unicode character, and also requires a font that has the glyphs needed to render that character. To successfully display Unicode characters to the console, the console font must be set to a non-raster or TrueType font such as Consolas or Lucida Console. The following example shows how you can programmatically change the font from a raster font to Lucida Console.
 

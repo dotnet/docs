@@ -12,7 +12,7 @@ Public Enum PhoneService As Integer
    Other = 16
 End Enum
 
-Module Example
+Module Example1
    Public Sub Main()
       ' Define three variables representing the types of phone service
       ' in three households.

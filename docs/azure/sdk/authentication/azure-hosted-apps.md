@@ -3,14 +3,14 @@ title: Authenticating Azure-hosted apps to Azure resources with the Azure SDK fo
 description: This article covers how to configure authentication for apps to Azure services when the app is hosted in an Azure service like Azure App Service, Azure Functions, or Azure Virtual Machines.
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-azurecli
-ms.date: 2/28/2023
+ms.date: 02/28/2023
 ---
 
 # Authenticating Azure-hosted apps to Azure resources with the Azure SDK for .NET
 
 When an app is hosted in Azure using a service like Azure App Service, Azure Virtual Machines, or Azure Container Instances, the recommended approach to authenticating an app to Azure resources is to use a [managed identity](/azure/active-directory/managed-identities-azure-resources/overview).
 
-A managed identity provides an identity for your app such that it can connect to other Azure resources without the need to use a secret key or other application secret.  Internally, Azure knows the identity of your app and what resources it's allowed to connect to.  Azure uses this information to automatically obtain Azure AD tokens for the app to allow it to connect to other Azure resources, all without you having to manage any application secrets.
+A managed identity provides an identity for your app such that it can connect to other Azure resources without the need to use a secret key or other application secret. Internally, Azure knows the identity of your app and what resources it's allowed to connect to. Azure uses this information to automatically obtain Microsoft Entra tokens for the app to allow it to connect to other Azure resources, all without you having to manage any application secrets.
 
 ## Managed identity types
 
@@ -60,7 +60,7 @@ The `principalId` value is the unique ID of the managed identity. Keep a copy of
 
 ## 2 - Assign roles to the managed identity
 
-Next, you need to determine what roles (permissions) your app needs and assign the managed identity to those roles in Azure.  A managed identity can be assigned  roles at a resource, resource group, or subscription scope.  This example will show how to assign roles at the resource group scope since most applications group all their Azure resources into a single resource group.
+Next, you need to determine what roles (permissions) your app needs and assign the managed identity to those roles in Azure.  A managed identity can be assigned roles at a resource, resource group, or subscription scope.  This example will show how to assign roles at the resource group scope since most applications group all their Azure resources into a single resource group.
 
 ### [Azure portal](#tab/azure-portal)
 
@@ -76,12 +76,12 @@ Next, you need to determine what roles (permissions) your app needs and assign t
 
 ### [Azure CLI](#tab/azure-cli)
 
-A managed identity is assigned a role in Azure using the [az role assignment create] command.
+A managed identity is assigned a role in Azure using the [az role assignment create](/cli/azure/role/assignment#az-role-assignment-create) command.
 
 ```azurecli
 az role assignment create --assignee "{managedIdentityId}" \
     --role "{roleName}" \
-    --resource-group "{resourceGroupName}"
+    --scope "{scope}"
 ```
 
 To get the role names that a service principal can be assigned to, use the [az role definition list](/cli/azure/role/definition#az-role-definition-list) command.
@@ -97,7 +97,7 @@ For example, to allow the managed identity with the ID of `99999999-9999-9999-99
 ```azurecli
 az role assignment create --assignee 99999999-9999-9999-9999-999999999999 \
     --role "Storage Blob Data Contributor" \
-    --resource-group "msdocs-dotnet-sdk-auth-example"
+    --scope "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/msdocs-dotnet-sdk-auth-example"
 ```
 
 For information on assigning permissions at the resource or subscription level using the Azure CLI, see the article [Assign Azure roles using the Azure CLI](/azure/role-based-access-control/role-assignments-cli).

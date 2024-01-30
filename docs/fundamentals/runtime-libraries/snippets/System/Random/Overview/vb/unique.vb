@@ -4,25 +4,25 @@ Option Strict On
 ' <Snippet13>
 Imports System.Threading
 
-Module Example
-   Public Sub Main()
-      Console.WriteLine("Instantiating two random number generators...")
-      Dim rnd1 As New Random()
-      Thread.Sleep(2000)
-      Dim rnd2 As New Random()
-      Console.WriteLine()
-      
-      Console.WriteLine("The first random number generator:")
-      For ctr As Integer = 1 To 10
-         Console.WriteLine("   {0}", rnd1.Next())
-      Next  
-      Console.WriteLine()
-       
-      Console.WriteLine("The second random number generator:")
-      For ctr As Integer = 1 To 10
-         Console.WriteLine("   {0}", rnd2.Next())
-      Next   
-   End Sub
+Module Example17
+    Public Sub Main()
+        Console.WriteLine("Instantiating two random number generators...")
+        Dim rnd1 As New Random()
+        Thread.Sleep(2000)
+        Dim rnd2 As New Random()
+        Console.WriteLine()
+
+        Console.WriteLine("The first random number generator:")
+        For ctr As Integer = 1 To 10
+            Console.WriteLine("   {0}", rnd1.Next())
+        Next
+        Console.WriteLine()
+
+        Console.WriteLine("The second random number generator:")
+        For ctr As Integer = 1 To 10
+            Console.WriteLine("   {0}", rnd2.Next())
+        Next
+    End Sub
 End Module
 ' The example displays output like the following:
 '       Instantiating two random number generators...

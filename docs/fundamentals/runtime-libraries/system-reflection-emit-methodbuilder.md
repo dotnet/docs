@@ -40,4 +40,4 @@ Members of the <xref:System.Reflection.MethodAttributes> enumeration define the 
 ## Known issues
 
 - Although <xref:System.Reflection.Emit.MethodBuilder> is derived from <xref:System.Reflection.MethodInfo>, some of the abstract methods defined in the <xref:System.Reflection.MethodInfo> class are not fully implemented in <xref:System.Reflection.Emit.MethodBuilder>. These <xref:System.Reflection.Emit.MethodBuilder> methods throw the <xref:System.NotSupportedException>. For example the <xref:System.Reflection.Emit.MethodBuilder.Invoke%2A?displayProperty=nameWithType> method is not fully implemented. You can reflect on these methods by retrieving the enclosing type using the <xref:System.Type.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> methods.
-- Custom modifiers are supported Starting with .NET Framework version 2.0. They are not supported in earlier versions.
+- Custom modifiers are supported.

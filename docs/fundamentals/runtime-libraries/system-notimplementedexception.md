@@ -17,7 +17,7 @@ You might choose to throw a  <xref:System.NotImplementedException> exception in 
 
 ## Handle the exception
 
-The <xref:System.NotImplementedException> exception indicates that the method or property that you are attempting to invoke has no implementation and therefore provides no functionality. As a result, you should not handle this error in a `try/catch` block.  Instead, you should remove the member invocation from your code. You can include a call to the member when it is implemented in the production version of a library.
+The <xref:System.NotImplementedException> exception indicates that the method or property that you are attempting to invoke has no implementation and therefore provides no functionality. As a result, you should not handle this error in a `try/catch` block. Instead, you should remove the member invocation from your code. You can include a call to the member when it is implemented in the production version of a library.
 
 In some cases, a <xref:System.NotImplementedException> exception may not be used to indicate functionality that is still in development in a pre-production library. However, this still indicates that the functionality is unavailable, and you should remove the member invocation from your code.
 

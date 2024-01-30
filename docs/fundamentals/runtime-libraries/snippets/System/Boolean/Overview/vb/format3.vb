@@ -4,18 +4,18 @@ Option Strict On
 ' <Snippet5>
 Imports System.Globalization
 
-Module Example
-   Public Sub Main()
-      Dim cultureNames() As String = { "", "en-US", "fr-FR", "ru-RU" }
-      For Each cultureName In cultureNames
-         Dim value As Boolean = True
-         Dim culture As CultureInfo = CultureInfo.CreateSpecificCulture(cultureName)
-         Dim formatter As New BooleanFormatter(culture)
-         
-         Dim result As String = String.Format(formatter, "Value for '{0}': {1}", culture.Name, value)
-         Console.WriteLine(result)
-      Next
-   End Sub
+Module Example4
+    Public Sub Main()
+        Dim cultureNames() As String = {"", "en-US", "fr-FR", "ru-RU"}
+        For Each cultureName In cultureNames
+            Dim value As Boolean = True
+            Dim culture As CultureInfo = CultureInfo.CreateSpecificCulture(cultureName)
+            Dim formatter As New BooleanFormatter(culture)
+
+            Dim result As String = String.Format(formatter, "Value for '{0}': {1}", culture.Name, value)
+            Console.WriteLine(result)
+        Next
+    End Sub
 End Module
 
 Public Class BooleanFormatter 

@@ -5,26 +5,26 @@ Option Strict On
 Imports System.Reflection
 Imports System.Text
 
-Module Example
-   Public Sub Main()
-      Dim sb As New StringBuilder()
-      ShowSBInfo(sb)
-      sb.Append("This is a sentence.")
-      ShowSbInfo(sb)
-      For ctr As Integer = 0 To 10
-         sb.Append("This is an additional sentence.")
-         ShowSbInfo(sb)
-      Next   
-   End Sub
-   
-   Public Sub ShowSBInfo(sb As StringBuilder)
-      For Each prop In sb.GetType().GetProperties
-         If prop.GetIndexParameters().Length = 0 Then
-            Console.Write("{0}: {1:N0}    ", prop.Name, prop.GetValue(sb))
-         End If   
-      Next
-      Console.WriteLine()
-   End Sub
+Module Example5
+    Public Sub Main()
+        Dim sb As New StringBuilder()
+        ShowSBInfo(sb)
+        sb.Append("This is a sentence.")
+        ShowSBInfo(sb)
+        For ctr As Integer = 0 To 10
+            sb.Append("This is an additional sentence.")
+            ShowSBInfo(sb)
+        Next
+    End Sub
+
+    Public Sub ShowSBInfo(sb As StringBuilder)
+        For Each prop In sb.GetType().GetProperties
+            If prop.GetIndexParameters().Length = 0 Then
+                Console.Write("{0}: {1:N0}    ", prop.Name, prop.GetValue(sb))
+            End If
+        Next
+        Console.WriteLine()
+    End Sub
 End Module
 ' The example displays the following output:
 '    Capacity: 16    MaxCapacity: 2,147,483,647    Length: 0

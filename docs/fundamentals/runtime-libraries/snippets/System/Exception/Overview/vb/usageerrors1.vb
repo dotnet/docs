@@ -22,14 +22,14 @@ Public Class Person
    End Function
 End Class
 
-Module Example
-   Public Sub Main()
-      Dim p1 As New Person()
-      p1.Name = "John"
-      Dim p2 As Person = Nothing
-      
-      ' The following throws a NullReferenceException.
-      Console.WriteLine("p1 = p2: {0}", p1.Equals(p2))   
-   End Sub
+Module Example2
+    Public Sub Main()
+        Dim p1 As New Person()
+        p1.Name = "John"
+        Dim p2 As Person = Nothing
+
+        ' The following throws a NullReferenceException.
+        Console.WriteLine("p1 = p2: {0}", p1.Equals(p2))
+    End Sub
 End Module
 ' </Snippet4>

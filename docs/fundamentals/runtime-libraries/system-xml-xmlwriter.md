@@ -91,10 +91,10 @@ The <xref:System.Xml.XmlWriter> maintains a namespace stack that corresponds to 
 
 - Override the current namespace declaration with a new namespace. In the following code, the <xref:System.Xml.XmlWriter.WriteAttributeString%2A> method changes the namespace URI for the `"x"` prefix from `"123"` to `"abc"`.
 
-     :::code language="csharp" source="./snippets/System.Xml/XmlWriter/Overview/csharp/writer_v2.cs" id="Snippet18":::
-     :::code language="vb" source="./snippets/System.Xml/XmlWriter/Overview/vb/writer_v2.vb" id="Snippet18":::
+  :::code language="csharp" source="./snippets/System.Xml/XmlWriter/Overview/csharp/writer_v2.cs" id="Snippet18":::
+  :::code language="vb" source="./snippets/System.Xml/XmlWriter/Overview/vb/writer_v2.vb" id="Snippet18":::
 
-     The code generates the following XML string:
+  The code generates the following XML string:
 
     ```xml
     <x:root xmlns:x="123">

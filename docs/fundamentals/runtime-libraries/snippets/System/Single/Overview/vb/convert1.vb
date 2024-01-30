@@ -2,27 +2,27 @@
 'Option Strict On
 
 ' <Snippet20>
-Module Example
-   Public Sub Main()
-      Dim values() As Object = { Byte.MinValue, Byte.MaxValue, Decimal.MinValue,
+Module Example5
+    Public Sub Main()
+        Dim values() As Object = {Byte.MinValue, Byte.MaxValue, Decimal.MinValue,
                                  Decimal.MaxValue, Double.MinValue, Double.MaxValue,
                                  Int16.MinValue, Int16.MaxValue, Int32.MinValue,
                                  Int32.MaxValue, Int64.MinValue, Int64.MaxValue,
                                  SByte.MinValue, SByte.MaxValue, UInt16.MinValue,
                                  UInt16.MaxValue, UInt32.MinValue, UInt32.MaxValue,
-                                 UInt64.MinValue, UInt64.MaxValue }
-      Dim sngValue As Single
-      For Each value In values
-         If value.GetType() = GetType(Double) Then
-            sngValue = CSng(value)
-         Else
-            sngValue = value
-         End If
-         Console.WriteLine("{0} ({1}) --> {2:R} ({3})",
+                                 UInt64.MinValue, UInt64.MaxValue}
+        Dim sngValue As Single
+        For Each value In values
+            If value.GetType() = GetType(Double) Then
+                sngValue = CSng(value)
+            Else
+                sngValue = value
+            End If
+            Console.WriteLine("{0} ({1}) --> {2:R} ({3})",
                            value, value.GetType().Name,
                            sngValue, sngValue.GetType().Name)
-      Next
-   End Sub
+        Next
+    End Sub
 End Module
 ' The example displays the following output:
 '       0 (Byte) --> 0 (Single)

@@ -23,7 +23,7 @@ Ensure you have installed the D2XX drivers for your USB-to-serial adapter, which
 
 ## List available devices
 
-Before you can create a GPIO, I<sup>2</sup>C, or SPI device, you must get be able to identify the connected USB-to-serial adapter. The following code lists the connected FTDI devices:
+Before you can create a GPIO, I<sup>2</sup>C, or SPI device, you must identify the connected USB-to-serial adapter. The following code lists the connected FTDI devices:
 
 :::code language="csharp" source="~/iot-samples/tutorials/ft232h/ft232h.list/Program.cs" highlight="3" :::
 

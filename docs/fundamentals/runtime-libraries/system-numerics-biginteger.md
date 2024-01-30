@@ -21,35 +21,35 @@ You can instantiate a <xref:System.Numerics.BigInteger> object in several ways:
 
 - You can use the `new` keyword and provide any integral or floating-point value as a parameter to the <xref:System.Numerics.BigInteger> constructor. (Floating-point values are truncated before they are assigned to the <xref:System.Numerics.BigInteger>.) The following example illustrates how to use the `new` keyword to instantiate <xref:System.Numerics.BigInteger> values.
 
-     :::code language="csharp" source="./snippets/System.Numerics/BigInteger/Overview/csharp/BigInteger_Examples.cs" id="Snippet1":::
-     :::code language="vb" source="./snippets/System.Numerics/BigInteger/Overview/vb/BigInteger_Examples.vb" id="Snippet1":::
+  :::code language="csharp" source="./snippets/System.Numerics/BigInteger/Overview/csharp/BigInteger_Examples.cs" id="Snippet1":::
+  :::code language="vb" source="./snippets/System.Numerics/BigInteger/Overview/vb/BigInteger_Examples.vb" id="Snippet1":::
 
 - You can declare a <xref:System.Numerics.BigInteger> variable and assign it a value just as you would any numeric type, as long as that value is an integral type. The following example uses assignment to create a <xref:System.Numerics.BigInteger> value from an <xref:System.Int64>.
 
-     :::code language="csharp" source="./snippets/System.Numerics/BigInteger/Overview/csharp/BigInteger_Examples.cs" id="Snippet2":::
-     :::code language="vb" source="./snippets/System.Numerics/BigInteger/Overview/vb/BigInteger_Examples.vb" id="Snippet2":::
+  :::code language="csharp" source="./snippets/System.Numerics/BigInteger/Overview/csharp/BigInteger_Examples.cs" id="Snippet2":::
+  :::code language="vb" source="./snippets/System.Numerics/BigInteger/Overview/vb/BigInteger_Examples.vb" id="Snippet2":::
 
 - You can assign a decimal or floating-point value to a <xref:System.Numerics.BigInteger> object if you cast the value or convert it first. The following example explicitly casts (in C#) or converts (in Visual Basic) a <xref:System.Double> and a <xref:System.Decimal> value to a <xref:System.Numerics.BigInteger>.
 
-     :::code language="csharp" source="./snippets/System.Numerics/BigInteger/Overview/csharp/BigInteger_Examples.cs" id="Snippet3":::
-     :::code language="vb" source="./snippets/System.Numerics/BigInteger/Overview/vb/BigInteger_Examples.vb" id="Snippet3":::
+  :::code language="csharp" source="./snippets/System.Numerics/BigInteger/Overview/csharp/BigInteger_Examples.cs" id="Snippet3":::
+  :::code language="vb" source="./snippets/System.Numerics/BigInteger/Overview/vb/BigInteger_Examples.vb" id="Snippet3":::
 
 These methods enable you to instantiate a <xref:System.Numerics.BigInteger> object whose value is in the range of one of the existing numeric types only. You can instantiate a <xref:System.Numerics.BigInteger> object whose value can exceed the range of the existing numeric types in one of three ways:
 
 - You can use the `new` keyword and provide a byte array of any size to the <xref:System.Numerics.BigInteger.%23ctor%2A?displayProperty=nameWithType> constructor. For example:
 
-     :::code language="csharp" source="./snippets/System.Numerics/BigInteger/Overview/csharp/BigInteger_Examples.cs" id="Snippet4":::
-     :::code language="vb" source="./snippets/System.Numerics/BigInteger/Overview/vb/BigInteger_Examples.vb" id="Snippet4":::
+  :::code language="csharp" source="./snippets/System.Numerics/BigInteger/Overview/csharp/BigInteger_Examples.cs" id="Snippet4":::
+  :::code language="vb" source="./snippets/System.Numerics/BigInteger/Overview/vb/BigInteger_Examples.vb" id="Snippet4":::
 
 - You can call the <xref:System.Numerics.BigInteger.Parse%2A> or <xref:System.Numerics.BigInteger.TryParse%2A> methods to convert the string representation of a number to a <xref:System.Numerics.BigInteger>. For example:
 
-     :::code language="csharp" source="./snippets/System.Numerics/BigInteger/Overview/csharp/BigInteger_Examples.cs" id="Snippet5":::
-     :::code language="vb" source="./snippets/System.Numerics/BigInteger/Overview/vb/BigInteger_Examples.vb" id="Snippet5":::
+  :::code language="csharp" source="./snippets/System.Numerics/BigInteger/Overview/csharp/BigInteger_Examples.cs" id="Snippet5":::
+  :::code language="vb" source="./snippets/System.Numerics/BigInteger/Overview/vb/BigInteger_Examples.vb" id="Snippet5":::
 
 - You can call a `static` (`Shared` in Visual Basic) <xref:System.Numerics.BigInteger> method that performs some operation on a numeric expression and returns a calculated <xref:System.Numerics.BigInteger> result. The following example does this by cubing <xref:System.UInt64.MaxValue?displayProperty=nameWithType> and assigning the result to a <xref:System.Numerics.BigInteger>.
 
-     :::code language="csharp" source="./snippets/System.Numerics/BigInteger/Overview/csharp/BigInteger_Examples.cs" id="Snippet6":::
-     :::code language="vb" source="./snippets/System.Numerics/BigInteger/Overview/vb/BigInteger_Examples.vb" id="Snippet6":::
+  :::code language="csharp" source="./snippets/System.Numerics/BigInteger/Overview/csharp/BigInteger_Examples.cs" id="Snippet6":::
+  :::code language="vb" source="./snippets/System.Numerics/BigInteger/Overview/vb/BigInteger_Examples.vb" id="Snippet6":::
 
 The uninitialized value of a <xref:System.Numerics.BigInteger> is <xref:System.Numerics.BigInteger.Zero%2A>.
 

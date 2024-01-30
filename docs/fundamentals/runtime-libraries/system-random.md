@@ -26,7 +26,7 @@ You instantiate the random number generator by providing a seed value (a startin
 
 In .NET Framework, the default seed value is time-dependent. In .NET Core, the default seed value is produced by the thread-static, pseudo-random number generator.
 
-If the same seed is used for separate <xref:System.Random> objects, they will generate the same series of random numbers. This can be useful for creating a test suite that processes random values, or for replaying games that derive their data from random numbers. However, note that <xref:System.Random> objects in processes running under different versions of .NET Framework may return different series of random numbers even if they're instantiated with identical seed values.
+If the same seed is used for separate <xref:System.Random> objects, they will generate the same series of random numbers. This can be useful for creating a test suite that processes random values, or for replaying games that derive their data from random numbers. However, note that <xref:System.Random> objects in processes running under different versions of .NET Framework might return differentseries of random numbers even if they're instantiated with identical seed values.
 
 To produce different sequences of random numbers, you can make the seed value time-dependent, thereby producing a different series with each new instance of <xref:System.Random>. The parameterized <xref:System.Random.%23ctor%28System.Int32%29> constructor can take an <xref:System.Int32> value based on the number of ticks in the current time, whereas the parameterless <xref:System.Random.%23ctor> constructor uses the system clock to generate its seed value. However, on .NET Framework only, because the clock has finite resolution, using the parameterless constructor to create different <xref:System.Random> objects in close succession creates random number generators that produce identical sequences of random numbers. The following example illustrates how two <xref:System.Random> objects that are instantiated in close succession in a .NET Framework application generate an identical series of random numbers. On most Windows systems, <xref:System.Random> objects created within 15 milliseconds of one another are likely to have identical seed values.
 
@@ -80,23 +80,23 @@ The random number generator provides methods that let you generate the following
 
 - A series of <xref:System.Byte> values. You determine the number of byte values by passing an array initialized to the number of elements you want the method to return to the <xref:System.Random.NextBytes%2A> method. The following example generates 20 bytes.
 
-     :::code language="csharp" source="./snippets/System/Random/Overview/csharp/nextbytes1.cs" interactive="try-dotnet-method" id="Snippet5":::
-     :::code language="fsharp" source="./snippets/System/Random/Overview/fsharp/nextbytes1.fs" id="Snippet5":::
-     :::code language="vb" source="./snippets/System/Random/Overview/vb/nextbytes1.vb" id="Snippet5":::
+  :::code language="csharp" source="./snippets/System/Random/Overview/csharp/nextbytes1.cs" interactive="try-dotnet-method" id="Snippet5":::
+  :::code language="fsharp" source="./snippets/System/Random/Overview/fsharp/nextbytes1.fs" id="Snippet5":::
+  :::code language="vb" source="./snippets/System/Random/Overview/vb/nextbytes1.vb" id="Snippet5":::
 
 - A single integer. You can choose whether you want an integer from 0 to a maximum value (<xref:System.Int32.MaxValue?displayProperty=nameWithType> - 1) by calling the <xref:System.Random.Next> method, an integer between 0 and a specific value by calling the <xref:System.Random.Next%28System.Int32%29> method, or an integer within a range of values by calling the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29> method. In the parameterized overloads, the specified maximum value is exclusive; that is, the actual maximum number generated is one less than the specified value.
 
-     The following example calls the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29> method to generate 10 random numbers between -10 and 10. Note that the second argument to the method specifies the exclusive upper bound of the range of random values returned by the method. In other words, the largest integer that the method can return is one less than this value.
+  The following example calls the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29> method to generate 10 random numbers between -10 and 10. Note that the second argument to the method specifies the exclusive upper bound of the range of random values returned by the method. In other words, the largest integer that the method can return is one less than this value.
 
-     :::code language="csharp" source="./snippets/System/Random/Overview/csharp/nextex1.cs" interactive="try-dotnet-method" id="Snippet6":::
-     :::code language="fsharp" source="./snippets/System/Random/Overview/fsharp/nextex1.fs" id="Snippet6":::
-     :::code language="vb" source="./snippets/System/Random/Overview/vb/nextex1.vb" id="Snippet6":::
+  :::code language="csharp" source="./snippets/System/Random/Overview/csharp/nextex1.cs" interactive="try-dotnet-method" id="Snippet6":::
+  :::code language="fsharp" source="./snippets/System/Random/Overview/fsharp/nextex1.fs" id="Snippet6":::
+  :::code language="vb" source="./snippets/System/Random/Overview/vb/nextex1.vb" id="Snippet6":::
 
 - A single floating-point value from 0.0 to less than 1.0 by calling the <xref:System.Random.NextDouble%2A> method. The exclusive upper bound of the random number returned by the method is 1, so its actual upper bound is 0.99999999999999978. The following example generates 10 random floating-point numbers.
 
-     :::code language="csharp" source="./snippets/System/Random/Overview/csharp/nextdoubleex1.cs" interactive="try-dotnet-method" id="Snippet7":::
-     :::code language="fsharp" source="./snippets/System/Random/Overview/fsharp/nextdoubleex1.fs" id="Snippet7":::
-     :::code language="vb" source="./snippets/System/Random/Overview/vb/nextdoubleex1.vb" id="Snippet7":::
+  :::code language="csharp" source="./snippets/System/Random/Overview/csharp/nextdoubleex1.cs" interactive="try-dotnet-method" id="Snippet7":::
+  :::code language="fsharp" source="./snippets/System/Random/Overview/fsharp/nextdoubleex1.fs" id="Snippet7":::
+  :::code language="vb" source="./snippets/System/Random/Overview/vb/nextdoubleex1.vb" id="Snippet7":::
 
 > [!IMPORTANT]
 > The <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29> method allows you to specify the range of the returned random number. However, the `maxValue` parameter, which specifies the upper range returned number, is an exclusive, not an inclusive, value. This means that the method call `Next(0, 100)` returns a value between 0 and 99, and not between 0 and 100.

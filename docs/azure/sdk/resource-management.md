@@ -1,7 +1,7 @@
 ---
 title: Resource management
 description: Learn how to use the Azure SDK for .NET to manage Azure resources.
-ms.date: 07/27/2022
+ms.date: 01/26/2024
 ---
 
 # Resource management using the Azure SDK for .NET
@@ -29,11 +29,12 @@ Those packages follow the [new Azure SDK guidelines](https://azure.github.io/azu
 
 ### Install the package
 
-Install the Azure resource management NuGet packages for .NET. For example:
+Install the Azure Identity and Azure resource management NuGet packages for .NET. For example:
 
 # [PowerShell](#tab/PowerShell)
 
 ```PowerShell
+Install-Package Azure.Identity
 Install-Package Azure.ResourceManager
 Install-Package Azure.ResourceManager.Resources
 Install-Package Azure.ResourceManager.Compute
@@ -43,6 +44,7 @@ Install-Package Azure.ResourceManager.Network
 # [.NET CLI](#tab/dotnetcli)
 
 ```dotnetcli
+dotnet add package Azure.Identity
 dotnet add package Azure.ResourceManager
 dotnet add package Azure.ResourceManager.Resources
 dotnet add package Azure.ResourceManager.Compute

@@ -28,4 +28,4 @@ COM is used to communicate between Visual Studio and the [hosting process](/visu
 
 ## Throw a COMException exception
 
-Although you can use the <xref:System.Runtime.InteropServices.COMException> class to return specific HRESULTs to unmanaged clients, throwing a specific .NET Framework exception is better than using a generic exception. Consider that managed clients as well as unmanaged clients can use your .NET Framework object, and throwing an HRESULT to a managed caller is less comprehensible than throwing an exception.
+Although you can use the <xref:System.Runtime.InteropServices.COMException> class to return specific HRESULTs to unmanaged clients, throwing a specific .NET exception is better than using a generic exception. Consider that managed clients as well as unmanaged clients can use your .NET object, and throwing an HRESULT to a managed caller is less comprehensible than throwing an exception.

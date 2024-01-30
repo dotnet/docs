@@ -31,11 +31,11 @@ The <xref:System.Threading.Thread> constructors can take either of two delegate 
     Public Delegate Sub ThreadStart()
     ```
 
-     The following example creates and starts a thread that executes the `ExecuteInForeground` method. The method displays information about some thread properties, then executes a loop in which it pauses for half a second and displays the elapsed number of seconds. When the thread has executed for at least five seconds, the loop ends and the thread terminates execution.
+  The following example creates and starts a thread that executes the `ExecuteInForeground` method. The method displays information about some thread properties, then executes a loop in which it pauses for half a second and displays the elapsed number of seconds. When the thread has executed for at least five seconds, the loop ends and the thread terminates execution.
 
-     :::code language="csharp" source="./snippets/System.Threading/Thread/Overview/csharp/ThreadStart1.cs" id="Snippet1":::
-     :::code language="fsharp" source="./snippets/System.Threading/Thread/Overview/fsharp/ThreadStart1.fs" id="Snippet1":::
-     :::code language="vb" source="./snippets/System.Threading/Thread/Overview/vb/ThreadStart1.vb" id="Snippet1":::
+  :::code language="csharp" source="./snippets/System.Threading/Thread/Overview/csharp/ThreadStart1.cs" id="Snippet1":::
+  :::code language="fsharp" source="./snippets/System.Threading/Thread/Overview/fsharp/ThreadStart1.fs" id="Snippet1":::
+  :::code language="vb" source="./snippets/System.Threading/Thread/Overview/vb/ThreadStart1.vb" id="Snippet1":::
 
 - If the method has an argument, you pass a <xref:System.Threading.ParameterizedThreadStart> delegate to the constructor. It has the signature:
 
@@ -47,13 +47,13 @@ The <xref:System.Threading.Thread> constructors can take either of two delegate 
     Public Delegate Sub ParameterizedThreadStart(obj As Object)
     ```
 
-     The method executed by the delegate can then cast (in C#) or convert (in Visual Basic) the parameter to the appropriate type.
+  The method executed by the delegate can then cast (in C#) or convert (in Visual Basic) the parameter to the appropriate type.
 
-     The following example is identical to the previous one, except that it calls the <xref:System.Threading.Thread.%23ctor%28System.Threading.ParameterizedThreadStart%29> constructor. This version of the `ExecuteInForeground` method has a single parameter that represents the approximate number of milliseconds the loop is to execute.
+  The following example is identical to the previous one, except that it calls the <xref:System.Threading.Thread.%23ctor%28System.Threading.ParameterizedThreadStart%29> constructor. This version of the `ExecuteInForeground` method has a single parameter that represents the approximate number of milliseconds the loop is to execute.
 
-     :::code language="csharp" source="./snippets/System.Threading/Thread/Overview/csharp/ThreadStart2.cs" id="Snippet2":::
-     :::code language="fsharp" source="./snippets/System.Threading/Thread/Overview/fsharp/ThreadStart2.fs" id="Snippet2":::
-     :::code language="vb" source="./snippets/System.Threading/Thread/Overview/vb/ThreadStart2.vb" id="Snippet2":::
+  :::code language="csharp" source="./snippets/System.Threading/Thread/Overview/csharp/ThreadStart2.cs" id="Snippet2":::
+  :::code language="fsharp" source="./snippets/System.Threading/Thread/Overview/fsharp/ThreadStart2.fs" id="Snippet2":::
+  :::code language="vb" source="./snippets/System.Threading/Thread/Overview/vb/ThreadStart2.vb" id="Snippet2":::
 
 It isn't necessary to retain a reference to a <xref:System.Threading.Thread> object once you've started the thread. The thread continues to execute until the thread procedure is complete.
 

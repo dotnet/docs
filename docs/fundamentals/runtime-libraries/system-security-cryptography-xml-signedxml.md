@@ -127,7 +127,7 @@ Using an embedded signing certificate can provide useful key rotation strategies
 
 - The certificate was issued directly or via a chain by a Certificate Authority (CA) whose public certificate is embedded in the application.
 
-     Using the OS-provided trust list without additional checks, such as a known subject name, is not sufficient to prevent tampering in <xref:System.Security.Cryptography.Xml.SignedXml>.
+  Using the OS-provided trust list without additional checks, such as a known subject name, is not sufficient to prevent tampering in <xref:System.Security.Cryptography.Xml.SignedXml>.
 
 - The certificate is verified to have not been expired at the time of document signing (or "now" for near real-time document processing).
 

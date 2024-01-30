@@ -8,7 +8,7 @@ ms.date: 1/16/2024
 
 # Create Microsoft Entra credential types using configuration files
 
-The `Microsoft.Extensions.Azure` library supports creating different <xref:Azure.Core.TokenCredential?displayProperty=fullName> types from key-value pairs defined in _appsettings.json_ and other configuration files. The credential types correspond to a subset of the [credential classes](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet#credential-classes) in the Azure Identity client library. This article describes the support for different `TokenCredential` types and how to configure the required key-value pairs for each type.
+The `Microsoft.Extensions.Azure` library supports creating different <xref:Azure.Core.TokenCredential?displayProperty=fullName> types from key-value pairs defined in _appsettings.json_ and other configuration files. The credential types correspond to a subset of the [credential classes](/dotnet/api/overview/azure/identity-readme) in the Azure Identity client library. This article describes the support for different `TokenCredential` types and how to configure the required key-value pairs for each type.
 
 ## Support for Azure credentials through configuration
 

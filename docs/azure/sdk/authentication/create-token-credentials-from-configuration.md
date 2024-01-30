@@ -68,7 +68,7 @@ You can create both user-assigned and system-assigned managed identities using c
 
 #### User-assigned managed identities
 
-1. Specify a user-assigned managed identity via a client ID:
+- Specify a user-assigned managed identity via a client ID:
 
     ```json
     {
@@ -77,7 +77,7 @@ You can create both user-assigned and system-assigned managed identities using c
     }
     ```
 
-1. Specify a user-assigned managed identity via a resource ID:
+- Specify a user-assigned managed identity via a resource ID:
 
     ```json
     {

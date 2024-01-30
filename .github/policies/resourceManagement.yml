@@ -87,19 +87,6 @@ configuration:
       - disableAutoMerge
       description: Auto-merge Azure SDK PRs with green builds
     - if:
-      - payloadType: Issues
-      - titleContains:
-          pattern: (T|t)ypo
-          isRegex: True
-      then:
-      - addLabel:
-          label: doc-bug
-      - addLabel:
-          label: help wanted
-      - addLabel:
-          label: good first issue
-      description: Label typo issues as help wanted
-    - if:
       - payloadType: Pull_Request
       then:
       - labelSync:

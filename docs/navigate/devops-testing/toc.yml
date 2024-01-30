@@ -84,31 +84,31 @@ items:
           - name: Code analysis
             items:
               - name: Overview
-                href: ../../core/testing/unit-testing-mstest-analyzers.md
+                href: ../../core/testing/mstest-analyzers/overview.md
               - name: Design
                 items:
                   - name: Overview
-                    href: ../../core/testing/unit-testing-mstest-analyzers-design.md
+                    href: ../../core/testing/mstest-analyzers/design-rules.md
                   - name: MSTEST0004
-                    href: ../../core/testing/unit-testing-mstest-analyzers-MSTEST0004.md
+                    href: ../../core/testing/mstest-analyzers/mstest0004.md
                   - name: MSTEST0006
-                    href: ../../core/testing/unit-testing-mstest-analyzers-MSTEST0006.md
+                    href: ../../core/testing/mstest-analyzers/mstest0006.md
               - name: Performance
                 items:
                   - name: Overview
-                    href: ../../core/testing/unit-testing-mstest-analyzers-performance.md
+                    href: ../../core/testing/mstest-analyzers/performance-rules.md
                   - name: MSTEST0001
-                    href: ../../core/testing/unit-testing-mstest-analyzers-MSTEST0001.md
+                    href: ../../core/testing/mstest-analyzers/mstest0001.md
               - name: Usage
                 items:
                   - name: Overview
-                    href: ../../core/testing/unit-testing-mstest-analyzers-usage.md
+                    href: ../../core/testing/mstest-analyzers/usage-rules.md
                   - name: MSTEST0002
-                    href: ../../core/testing/unit-testing-mstest-analyzers-MSTEST0002.md
+                    href: ../../core/testing/mstest-analyzers/mstest002.md
                   - name: MSTEST0003
-                    href: ../../core/testing/unit-testing-mstest-analyzers-MSTEST0003.md
+                    href: ../../core/testing/mstest-analyzers/mstest0003.md
                   - name: MSTEST0005
-                    href: ../../core/testing/unit-testing-mstest-analyzers-MSTEST0005.md
+                    href: ../../core/testing/mstest-analyzers/mstest0005.md
       - name: Run selective unit tests
         href: ../../core/testing/selective-unit-tests.md
       - name: Order unit tests

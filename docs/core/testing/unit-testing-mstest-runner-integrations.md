@@ -14,7 +14,7 @@ This article shows how to use `dotnet test` to run all tests in a solution (_*.s
 
 ## `dotnet test` integration
 
-[dotnet test](https://learn.microsoft.com/dotnet/core/tools/dotnet-test) command is a way to run tests from solutions, projects or already built assemblies. [MSTest runner](https://learn.microsoft.com/dotnet/core/testing/unit-testing-mstest-runner-intro) hooks up into this infrastructure to provide a unified way to run tests. Especially when migrating from VSTest to MSTest runner.
+The [dotnet test](../tools/dotnet-test.md) command is a way to run tests from solutions, projects, or already built assemblies. [MSTest runner](unit-testing-mstest-runner-intro.md) hooks up into this infrastructure to provide a unified way to run tests, especially when migrating from VSTest to MSTest runner.
 
 ### `dotnet test` integration - VSTest mode
 
@@ -56,7 +56,7 @@ By default, VSTest is used to run MSTest runner tests. You can enable a full MST
 </Project>
 ```
 
-In this mode additional parameters to the run are not provided directly through commandline. They need to be provided as MSBuild property `TestingPlatformCommandLineArguments`:
+In this mode, additional parameters to the run aren't provided directly through the command line. They need to be provided as an MSBuild property named `TestingPlatformCommandLineArguments`:
 
 ```dotnetcli
 dotnet test -p:TestingPlatformCommandLineArguments=" --minimum-expected-tests 10 "
@@ -64,15 +64,18 @@ dotnet test -p:TestingPlatformCommandLineArguments=" --minimum-expected-tests 10
 
 ## Additional MSBuild options
 
-The MSBuild integration provides options that can be specified in user project or through global properties on command line, such as `-p:TestingPlatformShowTestsFailure=true`.
+The MSBuild integration provides options that can be specified in user project or through global properties on the command line, such as `-p:TestingPlatformShowTestsFailure=true`.
 
 These are the available options:
+
+- [Show failure per test](#show-failure-per-test)
+- [Show complete platform output](#show-complete-platform-output)
 
 ### Show failure per test
 
 By default test failures are summarized into a _.log_ file, and a single failure per test project is reported to MSBuild.
 
-To show errors per failed test, specify `-p:TestingPlatformShowTestsFailure=true` on commandline, or add `<TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>` property to your project file.
+To show errors per failed test, specify `-p:TestingPlatformShowTestsFailure=true` on the command line, or add `<TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>` property to your project file.
 
 On command line:
 

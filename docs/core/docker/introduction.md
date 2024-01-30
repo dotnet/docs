@@ -50,7 +50,7 @@ $ docker kill 7c7ad33409e5
 
 ## Ports
 
-[Port mapping](https://docs.docker.com/network/#published-ports) is a key part of using containers. Ports must be published outside the container in order to respond to external web requests. [ASP.NET Core container images changed in .NET 8](https://learn.microsoft.com/dotnet/core/compatibility/containers/8.0/aspnet-port) to listen on port `8080`, by default. .NET 6 and 7 listen on port `80`.
+[Port mapping](https://docs.docker.com/network/#published-ports) is a key part of using containers. Ports must be published outside the container in order to respond to external web requests. ASP.NET Core container images [changed in .NET 8](../compatibility/containers/8.0/aspnet-port.md) to listen on port `8080`, by default. .NET 6 and 7 listen on port `80`.
 
 In the prior example with `docker run`, the host port `8000` is mapped to the container port `8080`. Kubernetes works in a similar way.
 

@@ -64,7 +64,7 @@ Add the wildcard value "*" to allow the credential to acquire tokens for any Mic
 
 ### Create a `ManagedIdentityCredential` type
 
-You can create both user-assigned and system-assigned managed identities using configuration values. Add the following configuration values to your _appsettings.json_ file to create an instance of <xref:Azure.Identity.ManagedIdentityCredential?displayProperty=fullName>.
+You can create both user-assigned and system-assigned managed identities using configuration values. Add the following key-value pairs to your _appsettings.json_ file to create an instance of <xref:Azure.Identity.ManagedIdentityCredential?displayProperty=fullName>.
 
 #### User-assigned managed identities
 
@@ -77,7 +77,7 @@ Specify a user-assigned managed identity via a client ID:
 }
 ```
 
-Specify a user-assigned managed identity via a resource ID:
+Alternatively, specify a user-assigned managed identity via a resource ID:
 
 ```json
 {
@@ -98,7 +98,7 @@ The resource ID takes the form `/subscriptions/{subscriptionId}/resourceGroups/{
 
 ### Create a `WorkloadIdentityCredential` type
 
-Add the following configuration values to your _appsettings.json_ file to create an <xref:Azure.Identity.WorkloadIdentityCredential?displayProperty=fullName>:
+Add the following key-value pairs to your _appsettings.json_ file to create an <xref:Azure.Identity.WorkloadIdentityCredential?displayProperty=fullName>:
 
 ```json
 {
@@ -111,7 +111,7 @@ Add the following configuration values to your _appsettings.json_ file to create
 
 ### Create a `ClientSecretCredential` type
 
-Add the following configuration values to your _appsettings.json_ file to create an <xref:Azure.Identity.ClientSecretCredential?displayProperty=fullName>:
+Add the following key-value pairs to your _appsettings.json_ file to create an <xref:Azure.Identity.ClientSecretCredential?displayProperty=fullName>:
 
 ```json
 {
@@ -123,7 +123,7 @@ Add the following configuration values to your _appsettings.json_ file to create
 
 ### Create a `ClientCertificateCredential` type
 
-Add the following configuration values to your _appsettings.json_ file to create an <xref:Azure.Identity.ClientCertificateCredential?displayProperty=fullName>:
+Add the following key-value pairs to your _appsettings.json_ file to create an <xref:Azure.Identity.ClientCertificateCredential?displayProperty=fullName>:
 
 ```json
 {
@@ -140,7 +140,7 @@ Add the following configuration values to your _appsettings.json_ file to create
 
 ### Create a `DefaultAzureCredential` type
 
-Add the following configuration values to your _appsettings.json_ file to create an <xref:Azure.Identity.DefaultAzureCredential?displayProperty=fullName>:
+Add the following key-value pairs to your _appsettings.json_ file to create an <xref:Azure.Identity.DefaultAzureCredential?displayProperty=fullName>:
 
 ```json
 {

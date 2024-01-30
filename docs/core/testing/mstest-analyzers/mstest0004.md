@@ -24,6 +24,7 @@ dev_langs:
 | **Fix is breaking or non-breaking** | Breaking                                           |
 | **Enabled by default**              | No                                                 |
 | **Default severity**                | Disabled                                           |
+| **Introduced in version**           | 3.2.0                                              |
 
 ## Cause
 

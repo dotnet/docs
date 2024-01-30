@@ -89,7 +89,7 @@ The code defines a class, `Program`, with a single method, `Main`, that takes a 
 
    :::image type="content" source="media/with-visual-studio-code/debug-console-output.png" alt-text="Debug Console window with 'Hello, World!' output.":::
 
-   By default, console output is routed to the **Debug console** the first time you run the app. After that first time, the console output destination depends on whether you're running in debug mode. In debug mode, console output is routed to the **Debug console**. In run mode, console output is routed to the **Terminal** window.
+   By default, console output is routed to the **Debug console** the first time you run the app. After that first time, the console output destination depends on whether you're running in debug mode. In debug mode, console output is routed to the **Debug console**. In run mode, console output is routed to the **Terminal** window. For more information, see <https://aka.ms/VSCode-CS-LaunchJson-Console>.
 
 ## Enhance the app
 

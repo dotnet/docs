@@ -136,7 +136,7 @@ Add the following key-value pairs to your _appsettings.json_ file to create an <
 ```
 
 > [!NOTE]
-> The `clientCertificateStoreLocation` and `additionallyAllowedTenants` key-value pairs are optional and are ignored if the key is set without an empty value. If no `clientCertificateStoreLocation` is specified, the default `CurrentUser` is used from the <xref:System.Fabric.X509Credentials.StoreLocation?displayProperty=nameWithType> enum.
+> The `clientCertificateStoreLocation` and `additionallyAllowedTenants` key-value pairs are optional and ignored if the key is set without an empty value. If no `clientCertificateStoreLocation` is specified, the default `CurrentUser` is used from the <xref:System.Fabric.X509Credentials.StoreLocation?displayProperty=nameWithType> enum.
 
 ### Create a `DefaultAzureCredential` type
 

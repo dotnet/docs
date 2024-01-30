@@ -68,25 +68,25 @@ You can create both user-assigned and system-assigned managed identities using c
 
 #### User-assigned managed identities
 
-- Specify a user-assigned managed identity via a client ID:
+Specify a user-assigned managed identity via a client ID:
 
-    ```json
-    {
-        "credential": "managedidentity",
-        "clientId":  "<clientId>"
-    }
-    ```
+```json
+{
+    "credential": "managedidentity",
+    "clientId":  "<clientId>"
+}
+```
 
-- Specify a user-assigned managed identity via a resource ID:
+Specify a user-assigned managed identity via a resource ID:
 
-    ```json
-    {
-        "credential": "managedidentity",
-        "managedIdentityResourceId":  "<managedIdentityResourceId>"
-    }
-    ```
+```json
+{
+    "credential": "managedidentity",
+    "managedIdentityResourceId":  "<managedIdentityResourceId>"
+}
+```
 
-    The resource ID takes the form `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}`.
+The resource ID takes the form `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}`.
 
 #### System-assigned managed identities
 

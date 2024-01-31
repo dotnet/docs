@@ -3,7 +3,7 @@ title: Use dependency injection
 description: Learn how to use dependency injection in your .NET apps with this comprehensive tutorial. Follow along with this pragmatic guide to understand DI in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/11/2023
+ms.date: 1/31/2024
 ms.topic: tutorial
 no-loc: [Transient, Scoped, Singleton, Example]
 ---
@@ -98,10 +98,10 @@ Update *Program.cs* with the following code:
 
 :::code source="snippets/configuration/console-di/Program.cs" id="Program" highlight="8-11":::
 
-Each `services.Add{LIFETIME}<{SERVICE}>` extension method adds (and potentially configures) services. We recommend that apps follow this convention. Place extension methods in the <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> namespace to encapsulate groups of service registrations. Including the namespace portion `Microsoft.Extensions.DependencyInjection` for DI extension methods also:
+Each `services.Add{LIFETIME}<{SERVICE}>` extension method adds (and potentially configures) services. We recommend that apps follow this convention. Don't place extension methods in the <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> namespace unless you're authoring an official Microsoft package. Extension methods that are defined within the `Microsoft.Extensions.DependencyInjection` namespace:
 
-- Allows them to be displayed in [IntelliSense](/visualstudio/ide/using-intellisense) without adding additional `using` blocks.
-- Prevents excessive `using` statements in the `Program` or `Startup` classes where these extension methods are typically called.
+- Are displayed in [IntelliSense](/visualstudio/ide/using-intellisense) without requiring additional `using` blocks.
+- Reduce the number of required `using` statements in the `Program` or `Startup` classes where these extension methods are typically called.
 
 The app:
 

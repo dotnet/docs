@@ -29,7 +29,7 @@ If you would like to use .NET Core global CLI diagnostic tools to diagnose proce
 
 The [`PerfCollect`](./trace-perfcollect-lttng.md) script is useful for collecting performance traces and is the recommended tool for collecting traces prior to .NET Core 3.0. If using `PerfCollect` in a container, keep the following requirements in mind:
 
-- `PerfCollect` requires the [`SYS_ADMIN` capability](https://man7.org/linux/man-pages/man7/capabilities.7.html) (in order to run the `perf` tool), so be sure the container is [started with that capability](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
+- `PerfCollect` requires additional capabilities to run the `perf` tool. The minimal set of capabilities required is [`PERFMON`](https://man7.org/linux/man-pages/man7/capabilities.7.html) and [`SYS_PTRACE`](https://man7.org/linux/man-pages/man7/capabilities.7.html). Some environments require [`SYS_ADMIN`](https://man7.org/linux/man-pages/man7/capabilities.7.html). Be sure to start the container with [the necessary capabilities](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities). If the minimal set doesn't work, then try with the full set.
 
 - `PerfCollect` requires some environment variables be set prior to the app it is profiling starting. These can be set either in a [Dockerfile](https://docs.docker.com/engine/reference/builder/#env) or when [starting the container](https://docs.docker.com/engine/reference/run/#env-environment-variables). Because these variables shouldn't be set in normal production environments, it's common to just add them when starting a container that will be profiled. The two variables that PerfCollect requires are:
 

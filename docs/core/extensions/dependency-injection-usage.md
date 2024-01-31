@@ -98,10 +98,10 @@ Update *Program.cs* with the following code:
 
 :::code source="snippets/configuration/console-di/Program.cs" id="Program" highlight="8-11":::
 
-Each `services.Add{LIFETIME}<{SERVICE}>` extension method adds (and potentially configures) services. We recommend that apps follow this convention. Don't place extension methods in the <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> namespace unless you're authoring an official Microsoft package. When extension methods are defined within the `Microsoft.Extensions.DependencyInjection` namespace it:
+Each `services.Add{LIFETIME}<{SERVICE}>` extension method adds (and potentially configures) services. We recommend that apps follow this convention. Don't place extension methods in the <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> namespace unless you're authoring an official Microsoft package. Extension methods that are defined within the `Microsoft.Extensions.DependencyInjection` namespace:
 
-- allows them to be displayed in [IntelliSense](/visualstudio/ide/using-intellisense) without adding additional `using` blocks
-- prevents excessive `using` statements in the `Program` or `Startup` classes where these extension methods are typically called
+- Are displayed in [IntelliSense](/visualstudio/ide/using-intellisense) without requiring additional `using` blocks.
+- Reduce the number of required `using` statements in the `Program` or `Startup` classes where these extension methods are typically called.
 
 The app:
 

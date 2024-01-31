@@ -18,7 +18,7 @@ When performance problems are encountered on Linux, collecting a trace with `per
 Follow these steps to prepare your machine to collect a performance trace with `perfcollect`.
 
 > [!NOTE]
-> If you are in a container environment, your container needs to have `SYS_ADMIN` capability. For more information on tracing applications inside containers using PerfCollect, see [Collect diagnostics in containers](./diagnostics-in-containers.md).
+> If you are capturing from inside a container, your container must have the appropriate capabilities.  The minimal set of capabilities required are `PERFMON` and `SYS_PTRACE`.  If the capture fails with the minimal set, add the `SYS_ADMIN` capability to the container.  For more information on tracing applications inside containers using PerfCollect, see [Collect diagnostics in containers](./diagnostics-in-containers.md).
 
 1. Download `perfcollect`.
 

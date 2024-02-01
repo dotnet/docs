@@ -11,8 +11,12 @@ helpviewer_keywords:
 
 # new (C# Reference)
 
-The `new` keyword is used in the following contexts:
-  
+The `new` keyword is used as:
+
+- [new operator](../operators/new-operator.md)
+- [new modifier](new-modifier.md)
+- [new constraint](new-constraint.md)
+
 ## See also
 
 - [C# Keywords](index.md)

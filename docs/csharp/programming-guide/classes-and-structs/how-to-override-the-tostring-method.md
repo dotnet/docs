@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "ToString method, overriding in C#"
   - "inheritance [C#], overriding OnPaint and ToString"
 ms.topic: how-to
-ms.custom: contperf-fy21q2
 ms.assetid: 8016db69-1f19-420c-8e17-98e8bebb7749
 ---
 # How to override the ToString method (C# Programming Guide)

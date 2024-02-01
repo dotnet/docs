@@ -79,4 +79,5 @@ Examples:
 
 The Native AOT compiler exports methods annotated with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> with a nonempty `EntryPoint` property as
 public C entry points. This makes it possible to either dynamically or statically link the AOT compiled modules into external
-programs. For more information, see [NativeLibrary sample](https://github.com/dotnet/samples/tree/main/core/nativeaot/NativeLibrary/README.md).
+programs. Only methods marked `UnmanagedCallersOnly` in the published assembly are considered: methods in project references or NuGet packages will not be exported.
+For more information, see [NativeLibrary sample](https://github.com/dotnet/samples/tree/main/core/nativeaot/NativeLibrary/README.md).

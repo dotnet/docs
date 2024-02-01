@@ -63,16 +63,7 @@ Welcome to what's new in the .NET docs for January 2024. This article lists some
 - [Build apps with .NET](../core/apps.md)
 - [Use runsettings with MSTest runner](../core/testing/unit-testing-mstest-runner-runsettings.md)
 - [Use MSTest runner with `dotnet test`](../core/testing/unit-testing-mstest-runner-integrations.md)
-- [Title not found in: #38845](../core/testing/unit-testing-mstest-analyzers-mstest0001.md)
-- [Title not found in: #38845](../core/testing/unit-testing-mstest-analyzers-mstest0002.md)
-- [Title not found in: #38845](../core/testing/unit-testing-mstest-analyzers-mstest0003.md)
-- [Title not found in: #38845](../core/testing/unit-testing-mstest-analyzers-mstest0004.md)
-- [Title not found in: #38845](../core/testing/unit-testing-mstest-analyzers-mstest0005.md)
-- [Title not found in: #38845](../core/testing/unit-testing-mstest-analyzers-mstest0006.md)
-- [Title not found in: #38845](../core/testing/unit-testing-mstest-analyzers-design.md)
-- [Title not found in: #38845](../core/testing/unit-testing-mstest-analyzers-performance.md)
-- [Title not found in: #38845](../core/testing/unit-testing-mstest-analyzers-usage.md)
-- [Title not found in: #38845](../core/testing/unit-testing-mstest-analyzers.md)
+- [MSTest code analysis](..//core/testing/unit-testing-mstest-analyzers.md)
 
 ### Updated articles
 
@@ -115,7 +106,6 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [0liver](https://github.com/0liver) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [ar1k](https://github.com/ar1k) - Aleksandr Ananin ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [chaojian-zhang](https://github.com/chaojian-zhang) - Charles Zhang ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [dotnet-policy-service](https://github.com/dotnet-policy-service) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [dragica](https://github.com/dragica) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [fnicollier](https://github.com/fnicollier) - Fabian Nicollier ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [gurustron](https://github.com/gurustron) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
